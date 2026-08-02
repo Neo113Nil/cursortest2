@@ -6,8 +6,8 @@ import java.io.IOException;
 public final class i extends IOException {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f8127a = 0;
+    public static final int f8913a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f8128b = 0;
+    public final int f8914b = 0;
 }

@@ -14,18 +14,18 @@ import java.util.ArrayList;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f20597a = "WebViewRenderManager";
+    private static final String f21384a = "WebViewRenderManager";
 
     /* renamed from: b, reason: collision with root package name */
-    private boolean f20598b;
+    private boolean f21385b;
 
     /* renamed from: c, reason: collision with root package name */
-    private boolean f20599c;
+    private boolean f21386c;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private static final g f20604a = new g(0);
+        private static final g f21391a = new g(0);
     }
 
     public interface b {
@@ -39,80 +39,80 @@ public final class g {
     public static class c {
 
         /* renamed from: a, reason: collision with root package name */
-        private String f20605a;
+        private String f21392a;
 
         /* renamed from: b, reason: collision with root package name */
-        private String f20606b;
+        private String f21393b;
 
         /* renamed from: c, reason: collision with root package name */
-        private com.anythink.expressad.foundation.d.d f20607c;
+        private com.anythink.expressad.foundation.d.d f21394c;
 
         /* renamed from: d, reason: collision with root package name */
-        private String f20608d;
+        private String f21395d;
 
         /* renamed from: e, reason: collision with root package name */
-        private boolean f20609e;
+        private boolean f21396e;
 
         /* renamed from: f, reason: collision with root package name */
-        private int f20610f;
+        private int f21397f;
 
         /* renamed from: g, reason: collision with root package name */
-        private boolean f20611g;
+        private boolean f21398g;
 
         private boolean g() {
-            return this.f20611g;
+            return this.f21398g;
         }
 
-        public final void a(boolean z3) {
-            this.f20611g = z3;
+        public final void a(boolean z6) {
+            this.f21398g = z6;
         }
 
         public final String b() {
-            return this.f20605a;
+            return this.f21392a;
         }
 
         public final String c() {
-            return this.f20606b;
+            return this.f21393b;
         }
 
         public final com.anythink.expressad.foundation.d.d d() {
-            return this.f20607c;
+            return this.f21394c;
         }
 
         public final boolean e() {
-            return this.f20609e;
+            return this.f21396e;
         }
 
         public final int f() {
-            return this.f20610f;
+            return this.f21397f;
         }
 
         public final String a() {
-            return this.f20608d;
+            return this.f21395d;
         }
 
         public final void b(String str) {
-            this.f20605a = str;
+            this.f21392a = str;
         }
 
         public final void c(String str) {
-            this.f20606b = str;
+            this.f21393b = str;
         }
 
         public final void a(String str) {
-            this.f20608d = str;
+            this.f21395d = str;
         }
 
-        public final void b(boolean z3) {
-            this.f20609e = z3;
+        public final void b(boolean z6) {
+            this.f21396e = z6;
         }
 
         public final void a(com.anythink.expressad.foundation.d.d dVar) {
-            this.f20607c = dVar;
+            this.f21394c = dVar;
         }
 
         public final void a(int i) {
-            this.f20610f = i;
+            this.f21397f = i;
         }
     }
 
@@ -121,22 +121,22 @@ public final class g {
     }
 
     public static /* synthetic */ boolean a(g gVar) {
-        gVar.f20599c = true;
+        gVar.f21386c = true;
         return true;
     }
 
     private static g b() {
-        return a.f20604a;
+        return a.f21391a;
     }
 
     private g() {
-        this.f20598b = false;
-        this.f20599c = false;
+        this.f21385b = false;
+        this.f21386c = false;
     }
 
     public final void a() {
-        this.f20598b = false;
-        this.f20599c = false;
+        this.f21385b = false;
+        this.f21386c = false;
     }
 
     public final void a(final ATSplashView aTSplashView, c cVar, final b bVar) {
@@ -144,28 +144,28 @@ public final class g {
         if (aTSplashView != null) {
             String c9 = cVar.c();
             String b9 = cVar.b();
-            final com.anythink.expressad.foundation.d.d d2 = cVar.d();
+            final com.anythink.expressad.foundation.d.d d9 = cVar.d();
             String a9 = cVar.a();
             boolean e9 = cVar.e();
-            int f3 = cVar.f();
+            int f2 = cVar.f();
             ATSplashWebview splashWebview = aTSplashView.getSplashWebview();
             if (splashWebview == null) {
                 return;
             }
             SplashJSBridgeImpl splashJSBridgeImpl = new SplashJSBridgeImpl(aTSplashView.getContext(), b9, c9);
             ArrayList arrayList = new ArrayList();
-            arrayList.add(d2);
+            arrayList.add(d9);
             splashJSBridgeImpl.setCampaignList(arrayList);
             splashJSBridgeImpl.setAllowSkip(e9 ? 1 : 0);
-            splashJSBridgeImpl.setCountdownS(f3);
+            splashJSBridgeImpl.setCountdownS(f2);
             aTSplashView.setSplashJSBridgeImpl(splashJSBridgeImpl);
-            if (TextUtils.isEmpty(d2.aa())) {
-                aa = d2.ac();
+            if (TextUtils.isEmpty(d9.aa())) {
+                aa = d9.ac();
             } else {
-                aa = d2.aa();
+                aa = d9.aa();
             }
             String requestId = splashWebview.getRequestId();
-            if (!TextUtils.isEmpty(requestId) && requestId.equals(aa) && (this.f20598b || this.f20599c)) {
+            if (!TextUtils.isEmpty(requestId) && requestId.equals(aa) && (this.f21385b || this.f21386c)) {
                 aTSplashView.setH5Ready(true);
                 if (bVar != null) {
                     bVar.a(1);
@@ -185,7 +185,7 @@ public final class g {
                         bVar2.a();
                     }
                     g.a(g.this);
-                    if (!d2.t()) {
+                    if (!d9.t()) {
                         aTSplashView.setH5Ready(true);
                     }
                     SplashJsUtils.fireOnJSBridgeConnected(webView);
@@ -221,10 +221,10 @@ public final class g {
                         bVar2.a(i);
                     }
                     if (i == 1) {
-                        g.this.f20598b = true;
+                        g.this.f21385b = true;
                         aTSplashView.setH5Ready(true);
                     } else {
-                        g.this.f20598b = false;
+                        g.this.f21385b = false;
                         aTSplashView.setH5Ready(false);
                     }
                 }

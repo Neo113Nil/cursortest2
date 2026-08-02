@@ -21,38 +21,38 @@ import org.json.JSONObject;
 public final class k {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f18236a = "SocketSpider";
+    private static final String f19023a = "SocketSpider";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final byte f18237b = 2;
+    private static final byte f19024b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    private static final byte f18238c = 3;
+    private static final byte f19025c = 3;
 
     /* renamed from: d, reason: collision with root package name */
-    private static volatile AtomicInteger f18239d = new AtomicInteger(1);
+    private static volatile AtomicInteger f19026d = new AtomicInteger(1);
 
     /* renamed from: e, reason: collision with root package name */
-    private com.anythink.expressad.f.a f18240e;
+    private com.anythink.expressad.f.a f19027e;
 
     /* renamed from: f, reason: collision with root package name */
-    private String f18241f;
+    private String f19028f;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f18242g = j.g.b.f12473a;
+    private int f19029g = j.g.b.f13259a;
 
     public k() {
         com.anythink.expressad.f.b.a();
         com.anythink.expressad.foundation.b.a.c().f();
         com.anythink.expressad.f.a b9 = com.anythink.expressad.f.b.b();
-        this.f18240e = b9;
+        this.f19027e = b9;
         if (b9 == null) {
             com.anythink.expressad.f.b.a();
-            this.f18240e = com.anythink.expressad.f.b.c();
+            this.f19027e = com.anythink.expressad.f.b.c();
         }
     }
 
-    private JSONObject b(String str, com.anythink.expressad.foundation.d.d dVar, boolean z3, boolean z6) {
+    private JSONObject b(String str, com.anythink.expressad.foundation.d.d dVar, boolean z6, boolean z9) {
         JSONObject jSONObject = new JSONObject();
         try {
             Uri parse = Uri.parse(str);
@@ -60,7 +60,7 @@ public final class k {
                 String host = parse.getHost();
                 String path = parse.getPath();
                 String encodedQuery = parse.getEncodedQuery();
-                this.f18241f = host;
+                this.f19028f = host;
                 jSONObject.put("uri", "https://" + host + path);
                 jSONObject.put("data", encodedQuery);
             }
@@ -69,58 +69,58 @@ public final class k {
         }
         try {
             JSONObject jSONObject2 = new JSONObject();
-            if (!z3 && !z6) {
+            if (!z6 && !z9) {
                 jSONObject2.put("User-Agent", com.anythink.core.common.v.m.h());
             }
             if (dVar != null) {
-                if (z3 && dVar.F() == 1) {
+                if (z6 && dVar.F() == 1) {
                     jSONObject2.put("User-Agent", com.anythink.core.common.v.m.h());
                 }
-                if (z6 && dVar.E() == 1) {
+                if (z9 && dVar.E() == 1) {
                     jSONObject2.put("User-Agent", com.anythink.core.common.v.m.h());
                 }
             } else {
                 jSONObject2.put("User-Agent", com.anythink.core.common.v.m.h());
             }
-            jSONObject2.put("Accept-Encoding", com.anythink.expressad.foundation.g.f.g.b.f19341d);
-            if (this.f18240e.u() && !TextUtils.isEmpty(str)) {
+            jSONObject2.put("Accept-Encoding", com.anythink.expressad.foundation.g.f.g.b.f20128d);
+            if (this.f19027e.u() && !TextUtils.isEmpty(str)) {
                 jSONObject2.put("referer", str);
             }
-            jSONObject.put(com.anythink.expressad.foundation.d.g.f18705j, jSONObject2);
+            jSONObject.put(com.anythink.expressad.foundation.d.g.f19492j, jSONObject2);
         } catch (Throwable th2) {
             th2.getMessage();
         }
         return jSONObject;
     }
 
-    public final com.anythink.expressad.b.a.a a(String str, com.anythink.expressad.foundation.d.d dVar, boolean z3, boolean z6) {
+    public final com.anythink.expressad.b.a.a a(String str, com.anythink.expressad.foundation.d.d dVar, boolean z6, boolean z9) {
         com.anythink.expressad.b.a.a aVar = new com.anythink.expressad.b.a.a();
-        aVar.f18123g = str;
+        aVar.f18910g = str;
         if (TextUtils.isEmpty(str)) {
-            aVar.f18124h = "request url can not null.";
+            aVar.f18911h = "request url can not null.";
             return aVar;
         }
         String replace = str.replace(" ", "%20");
-        JSONObject b9 = b(replace, dVar, z3, z6);
+        JSONObject b9 = b(replace, dVar, z6, z9);
         if (b9.length() == 0) {
-            aVar.f18124h = "request content generation failed.";
+            aVar.f18911h = "request content generation failed.";
             return aVar;
         }
         if (TextUtils.isEmpty(b9.optString("uri"))) {
-            aVar.f18124h = "request url parse error.";
+            aVar.f18911h = "request url parse error.";
             return aVar;
         }
         if (dVar != null) {
             int aM = dVar.aM();
             if (aM == 0) {
-                aM = j.g.b.f12473a;
+                aM = j.g.b.f13259a;
             }
-            this.f18242g = aM;
+            this.f19029g = aM;
         }
-        if (!TextUtils.isEmpty(this.f18241f)) {
+        if (!TextUtils.isEmpty(this.f19028f)) {
             return a(replace, b9.toString());
         }
-        aVar.f18124h = "request url parse error.";
+        aVar.f18911h = "request url parse error.";
         return aVar;
     }
 
@@ -130,7 +130,7 @@ public final class k {
         Socket socket;
         InputStream inputStream;
         int i;
-        boolean z3;
+        boolean z6;
         Object[] objArr;
         byte[] bArr;
         String str3;
@@ -139,9 +139,9 @@ public final class k {
         byte[] byteArray = null;
         try {
             try {
-                socket = new Socket(this.f18241f, this.f18242g);
+                socket = new Socket(this.f19028f, this.f19029g);
                 try {
-                    socket.setSoTimeout(com.anythink.basead.exoplayer.d.f6762a);
+                    socket.setSoTimeout(com.anythink.basead.exoplayer.d.f7548a);
                     outputStream = socket.getOutputStream();
                     try {
                         ByteBuffer wrap = ByteBuffer.wrap(new byte[8]);
@@ -149,7 +149,7 @@ public final class k {
                         wrap.order(byteOrder);
                         wrap.put((byte) 2);
                         wrap.put((byte) 3);
-                        wrap.putShort((short) f18239d.getAndIncrement());
+                        wrap.putShort((short) f19026d.getAndIncrement());
                         if (TextUtils.isEmpty(str2)) {
                             wrap.putInt(0);
                             outputStream.write(wrap.array());
@@ -173,22 +173,22 @@ public final class k {
                         ByteBuffer wrap2 = ByteBuffer.wrap(bArr2);
                         wrap2.order(byteOrder);
                         i = wrap2.getInt(4);
-                        z3 = true;
+                        z6 = true;
                         byte b9 = bArr2[1];
-                        boolean z6 = b9 == 3;
+                        boolean z9 = b9 == 3;
                         objArr = b9 == 2;
                         Arrays.toString(bArr2);
                         bArr = new byte[i];
                         new DataInputStream(socket.getInputStream()).readFully(bArr);
-                        if (z6 || i <= 2 || ((bArr[0] << 8) | (bArr[1] & 255)) != 8075) {
-                            z3 = z6;
+                        if (z9 || i <= 2 || ((bArr[0] << 8) | (bArr[1] & 255)) != 8075) {
+                            z6 = z9;
                         }
                     } catch (Throwable th) {
                         th = th;
                         socket2 = socket;
                         try {
                             th.getMessage();
-                            aVar.f18124h = th.getMessage();
+                            aVar.f18911h = th.getMessage();
                             if (socket2 != null) {
                                 socket2.close();
                                 if (outputStream != null) {
@@ -222,42 +222,42 @@ public final class k {
             outputStream = null;
         }
         if (objArr == true && i == 0) {
-            aVar.f18122f = 200;
-            aVar.f18123g = str;
-            aVar.f18121e = 0;
+            aVar.f18909f = 200;
+            aVar.f18910g = str;
+            aVar.f18908e = 0;
             socket.close();
             outputStream.close();
             return aVar;
         }
         if (i <= 0) {
-            aVar.f18122f = 200;
-            aVar.f18123g = str;
-            aVar.f18121e = 0;
+            aVar.f18909f = 200;
+            aVar.f18910g = str;
+            aVar.f18908e = 0;
             socket.close();
             outputStream.close();
             return aVar;
         }
         try {
-            if (z3) {
+            if (z6) {
                 str3 = a(bArr);
             } else {
                 str3 = new String(bArr);
             }
         } catch (Throwable th5) {
             th5.getMessage();
-            aVar.f18124h = th5.getMessage();
+            aVar.f18911h = th5.getMessage();
         }
         if (!TextUtils.isEmpty(str3)) {
-            aVar.f18122f = 200;
-            aVar.f18123g = str;
-            aVar.f18121e = 0;
+            aVar.f18909f = 200;
+            aVar.f18910g = str;
+            aVar.f18908e = 0;
             try {
                 JSONObject optJSONObject = new JSONObject(str3).optJSONObject("data");
                 if (optJSONObject != null) {
                     String optString = optJSONObject.optString("location");
                     if (!TextUtils.isEmpty(optString)) {
-                        aVar.f18122f = 302;
-                        aVar.f18117a = optString;
+                        aVar.f18909f = 302;
+                        aVar.f18904a = optString;
                     }
                 }
             } catch (Throwable th6) {

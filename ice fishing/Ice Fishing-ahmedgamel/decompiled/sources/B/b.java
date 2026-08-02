@@ -23,7 +23,7 @@ public abstract class b {
         return false;
     }
 
-    public boolean h(CoordinatorLayout coordinatorLayout, View view, int i, int i6, int i9) {
+    public boolean h(CoordinatorLayout coordinatorLayout, View view, int i, int i4, int i6) {
         return false;
     }
 
@@ -31,16 +31,16 @@ public abstract class b {
         return false;
     }
 
-    public void k(CoordinatorLayout coordinatorLayout, View view, int i, int i6, int i9, int[] iArr) {
-        iArr[0] = iArr[0] + i6;
-        iArr[1] = iArr[1] + i9;
+    public void k(CoordinatorLayout coordinatorLayout, View view, int i, int i4, int i6, int[] iArr) {
+        iArr[0] = iArr[0] + i4;
+        iArr[1] = iArr[1] + i6;
     }
 
     public Parcelable n(View view) {
         return View.BaseSavedState.EMPTY_STATE;
     }
 
-    public boolean o(int i, int i6, View view) {
+    public boolean o(int i, int i4, View view) {
         return false;
     }
 
@@ -66,6 +66,6 @@ public abstract class b {
     public void p(View view, View view2, int i) {
     }
 
-    public void j(CoordinatorLayout coordinatorLayout, View view, View view2, int i, int i6, int[] iArr, int i9) {
+    public void j(CoordinatorLayout coordinatorLayout, View view, View view2, int i, int i4, int[] iArr, int i6) {
     }
 }

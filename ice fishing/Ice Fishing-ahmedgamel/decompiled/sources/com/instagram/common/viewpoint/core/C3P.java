@@ -4,23 +4,23 @@ package com.instagram.common.viewpoint.core;
 /* loaded from: assets/audience_network/classes2.dex */
 public final class C3P {
     public static final int[] A01 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 31, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30};
-    public final C05882m A00 = new C05882m();
+    public final C06082m A00 = new C06082m();
 
     public final C3P A00(int i) {
         this.A00.A00(i);
         return this;
     }
 
-    public final C3P A01(int i, boolean z3) {
-        this.A00.A01(i, z3);
+    public final C3P A01(int i, boolean z6) {
+        this.A00.A01(i, z6);
         return this;
     }
 
-    public final C3P A02(C2377pv c2377pv) {
-        C05892n c05892n;
-        C05882m c05882m = this.A00;
-        c05892n = c2377pv.A00;
-        c05882m.A02(c05892n);
+    public final C3P A02(C2397pv c2397pv) {
+        C06092n c06092n;
+        C06082m c06082m = this.A00;
+        c06092n = c2397pv.A00;
+        c06082m.A02(c06092n);
         return this;
     }
 
@@ -29,7 +29,7 @@ public final class C3P {
         return this;
     }
 
-    public final C2377pv A04() {
-        return new C2377pv(this.A00.A04());
+    public final C2397pv A04() {
+        return new C2397pv(this.A00.A04());
     }
 }

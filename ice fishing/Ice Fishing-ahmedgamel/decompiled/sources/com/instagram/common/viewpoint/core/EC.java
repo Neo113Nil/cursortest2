@@ -7,11 +7,11 @@ public abstract class EC extends UL {
     public long A02;
     public long A03;
 
-    public EC(long j6, long j9, long j10, float f3) {
+    public EC(long j6, long j9, long j10, float f2) {
         this.A03 = j6;
         this.A01 = j9;
         this.A02 = j10;
-        this.A00 = f3;
+        this.A00 = f2;
     }
 
     public final float A00() {

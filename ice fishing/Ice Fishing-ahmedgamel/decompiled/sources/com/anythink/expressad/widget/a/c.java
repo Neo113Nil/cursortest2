@@ -14,35 +14,34 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.anythink.basead.exoplayer.f.f;
 import com.anythink.expressad.foundation.h.k;
 
 /* loaded from: classes.dex */
 public final class c extends Dialog {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f22506a = "ATFeedBackDialog";
+    private static final String f23293a = "ATFeedBackDialog";
 
     /* renamed from: b, reason: collision with root package name */
-    private b f22507b;
+    private b f23294b;
 
     /* renamed from: c, reason: collision with root package name */
-    private TextView f22508c;
+    private TextView f23295c;
 
     /* renamed from: d, reason: collision with root package name */
-    private LinearLayout f22509d;
+    private LinearLayout f23296d;
 
     /* renamed from: e, reason: collision with root package name */
-    private Button f22510e;
+    private Button f23297e;
 
     /* renamed from: f, reason: collision with root package name */
-    private Button f22511f;
+    private Button f23298f;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f22512g;
+    private int f23299g;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f22513h;
+    private int f23300h;
 
     /* renamed from: com.anythink.expressad.widget.a.c$1, reason: invalid class name */
     public class AnonymousClass1 implements View.OnClickListener {
@@ -51,8 +50,8 @@ public final class c extends Dialog {
 
         @Override // android.view.View.OnClickListener
         public final void onClick(View view) {
-            if (c.this.f22507b != null) {
-                c.this.f22507b.a();
+            if (c.this.f23294b != null) {
+                c.this.f23294b.a();
             }
             c.this.dismiss();
         }
@@ -65,8 +64,8 @@ public final class c extends Dialog {
 
         @Override // android.view.View.OnClickListener
         public final void onClick(View view) {
-            if (c.this.f22507b != null) {
-                c.this.f22507b.b();
+            if (c.this.f23294b != null) {
+                c.this.f23294b.b();
             }
             c.this.dismiss();
         }
@@ -79,8 +78,8 @@ public final class c extends Dialog {
 
         @Override // android.content.DialogInterface.OnCancelListener
         public final void onCancel(DialogInterface dialogInterface) {
-            if (c.this.f22507b != null) {
-                c.this.f22507b.b();
+            if (c.this.f23294b != null) {
+                c.this.f23294b.b();
             }
         }
     }
@@ -92,45 +91,45 @@ public final class c extends Dialog {
         View inflate = LayoutInflater.from(context).inflate(k.a(context, "anythink_cm_feedbackview", "layout"), (ViewGroup) null);
         DisplayMetrics displayMetrics = getContext().getResources().getDisplayMetrics();
         if (getContext().getResources().getConfiguration().orientation == 1) {
-            this.f22513h = displayMetrics.widthPixels;
-            this.f22512g = displayMetrics.heightPixels;
+            this.f23300h = displayMetrics.widthPixels;
+            this.f23299g = displayMetrics.heightPixels;
             WindowManager.LayoutParams attributes = getWindow().getAttributes();
             attributes.width = -1;
-            attributes.height = (int) (this.f22512g * 0.8f);
+            attributes.height = (int) (this.f23299g * 0.8f);
             attributes.gravity = 80;
             getWindow().setAttributes(attributes);
         } else {
-            this.f22513h = displayMetrics.heightPixels;
-            this.f22512g = displayMetrics.widthPixels;
+            this.f23300h = displayMetrics.heightPixels;
+            this.f23299g = displayMetrics.widthPixels;
             WindowManager.LayoutParams attributes2 = getWindow().getAttributes();
-            attributes2.width = (int) (this.f22512g * 0.5f);
+            attributes2.width = (int) (this.f23299g * 0.5f);
             attributes2.height = -1;
             attributes2.gravity = 17;
             getWindow().setAttributes(attributes2);
         }
-        this.f22507b = bVar;
+        this.f23294b = bVar;
         if (inflate != null) {
             setContentView(inflate);
             try {
-                this.f22508c = (TextView) inflate.findViewById(k.a(context, "anythink_video_common_alertview_titleview", "id"));
+                this.f23295c = (TextView) inflate.findViewById(k.a(context, "anythink_video_common_alertview_titleview", "id"));
             } catch (Exception e9) {
                 e9.getMessage();
             }
             try {
-                this.f22509d = (LinearLayout) inflate.findViewById(k.a(context, "anythink_video_common_alertview_contentview", "id"));
-                this.f22510e = (Button) inflate.findViewById(k.a(context, "anythink_video_common_alertview_confirm_button", "id"));
-                this.f22511f = (Button) inflate.findViewById(k.a(context, "anythink_video_common_alertview_cancel_button", "id"));
+                this.f23296d = (LinearLayout) inflate.findViewById(k.a(context, "anythink_video_common_alertview_contentview", "id"));
+                this.f23297e = (Button) inflate.findViewById(k.a(context, "anythink_video_common_alertview_confirm_button", "id"));
+                this.f23298f = (Button) inflate.findViewById(k.a(context, "anythink_video_common_alertview_cancel_button", "id"));
             } catch (Exception e10) {
                 e10.getMessage();
             }
         }
         setCanceledOnTouchOutside(false);
         setCancelable(false);
-        Button button = this.f22511f;
+        Button button = this.f23298f;
         if (button != null) {
             button.setOnClickListener(new AnonymousClass1());
         }
-        Button button2 = this.f22510e;
+        Button button2 = this.f23297e;
         if (button2 != null) {
             button2.setOnClickListener(new AnonymousClass2());
         }
@@ -138,32 +137,32 @@ public final class c extends Dialog {
     }
 
     private void b() {
-        if (this.f22507b != null) {
-            this.f22507b = null;
+        if (this.f23294b != null) {
+            this.f23294b = null;
         }
     }
 
     private b c() {
-        return this.f22507b;
+        return this.f23294b;
     }
 
     private void d() {
         DisplayMetrics displayMetrics = getContext().getResources().getDisplayMetrics();
         if (getContext().getResources().getConfiguration().orientation != 1) {
-            this.f22513h = displayMetrics.heightPixels;
-            this.f22512g = displayMetrics.widthPixels;
+            this.f23300h = displayMetrics.heightPixels;
+            this.f23299g = displayMetrics.widthPixels;
             WindowManager.LayoutParams attributes = getWindow().getAttributes();
-            attributes.width = (int) (this.f22512g * 0.5f);
+            attributes.width = (int) (this.f23299g * 0.5f);
             attributes.height = -1;
             attributes.gravity = 17;
             getWindow().setAttributes(attributes);
             return;
         }
-        this.f22513h = displayMetrics.widthPixels;
-        this.f22512g = displayMetrics.heightPixels;
+        this.f23300h = displayMetrics.widthPixels;
+        this.f23299g = displayMetrics.heightPixels;
         WindowManager.LayoutParams attributes2 = getWindow().getAttributes();
         attributes2.width = -1;
-        attributes2.height = (int) (this.f22512g * 0.8f);
+        attributes2.height = (int) (this.f23299g * 0.8f);
         attributes2.gravity = 80;
         getWindow().setAttributes(attributes2);
     }
@@ -201,11 +200,11 @@ public final class c extends Dialog {
     }
 
     private void a() {
-        Button button = this.f22511f;
+        Button button = this.f23298f;
         if (button != null) {
             button.setOnClickListener(new AnonymousClass1());
         }
-        Button button2 = this.f22510e;
+        Button button2 = this.f23297e;
         if (button2 != null) {
             button2.setOnClickListener(new AnonymousClass2());
         }
@@ -213,39 +212,39 @@ public final class c extends Dialog {
     }
 
     public final void c(String str) {
-        Button button = this.f22511f;
+        Button button = this.f23298f;
         if (button != null) {
             button.setText(str);
         }
     }
 
     public final void b(String str) {
-        Button button = this.f22510e;
+        Button button = this.f23297e;
         if (button != null) {
             button.setText(str);
         }
     }
 
-    public final void a(boolean z3) {
-        Button button = this.f22511f;
+    public final void a(boolean z6) {
+        Button button = this.f23298f;
         if (button != null) {
-            button.setClickable(z3);
+            button.setClickable(z6);
         }
     }
 
     public final void a(b bVar) {
-        this.f22507b = bVar;
+        this.f23294b = bVar;
     }
 
     public final void a(String str) {
-        TextView textView = this.f22508c;
+        TextView textView = this.f23295c;
         if (textView != null) {
             textView.setText(str);
         }
     }
 
     public final void a(ViewGroup viewGroup) {
-        LinearLayout linearLayout = this.f22509d;
+        LinearLayout linearLayout = this.f23296d;
         if (linearLayout != null) {
             linearLayout.removeAllViews();
             ViewGroup viewGroup2 = (ViewGroup) viewGroup.getParent();
@@ -253,11 +252,11 @@ public final class c extends Dialog {
                 viewGroup2.removeView(viewGroup);
             }
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, -1);
-            layoutParams.leftMargin = f.e(38.0f);
-            layoutParams.rightMargin = f.e(38.0f);
-            layoutParams.topMargin = f.e(20.0f);
-            layoutParams.bottomMargin = f.e(24.0f);
-            this.f22509d.addView(viewGroup, layoutParams);
+            layoutParams.leftMargin = com.IceFishing.LiveIceFishing.k.e(38.0f);
+            layoutParams.rightMargin = com.IceFishing.LiveIceFishing.k.e(38.0f);
+            layoutParams.topMargin = com.IceFishing.LiveIceFishing.k.e(20.0f);
+            layoutParams.bottomMargin = com.IceFishing.LiveIceFishing.k.e(24.0f);
+            this.f23296d.addView(viewGroup, layoutParams);
         }
     }
 

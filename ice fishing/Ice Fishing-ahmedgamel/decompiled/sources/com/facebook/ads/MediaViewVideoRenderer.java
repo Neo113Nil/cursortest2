@@ -95,8 +95,8 @@ public abstract class MediaViewVideoRenderer extends AdComponentFrameLayout {
     public void onVolumeChanged() {
     }
 
-    public final void pause(boolean z3) {
-        this.mMediaViewVideoRendererApi.pause(z3);
+    public final void pause(boolean z6) {
+        this.mMediaViewVideoRendererApi.pause(z6);
     }
 
     public final void play(VideoStartReason videoStartReason) {
@@ -117,8 +117,8 @@ public abstract class MediaViewVideoRenderer extends AdComponentFrameLayout {
         this.videoAutoplayBehavior = nativeAd.getVideoAutoplayBehavior();
     }
 
-    public final void setVolume(float f3) {
-        this.mMediaViewVideoRendererApi.setVolume(f3);
+    public final void setVolume(float f2) {
+        this.mMediaViewVideoRendererApi.setVolume(f2);
     }
 
     public boolean shouldAllowBackgroundPlayback() {
@@ -145,7 +145,7 @@ public abstract class MediaViewVideoRenderer extends AdComponentFrameLayout {
     }
 
     @Override // com.facebook.ads.internal.api.AdComponentFrameLayout, android.view.ViewGroup, com.facebook.ads.internal.api.AdComponentView
-    public void addView(View view, int i, int i6) {
+    public void addView(View view, int i, int i4) {
     }
 
     @Override // com.facebook.ads.internal.api.AdComponentFrameLayout, android.view.ViewGroup, com.facebook.ads.internal.api.AdComponentView
@@ -161,8 +161,8 @@ public abstract class MediaViewVideoRenderer extends AdComponentFrameLayout {
     public void addView(View view, ViewGroup.LayoutParams layoutParams) {
     }
 
-    public MediaViewVideoRenderer(Context context, AttributeSet attributeSet, int i, int i6) {
-        super(context, attributeSet, i, i6);
-        initialize(new AdViewConstructorParams(context, attributeSet, i, i6));
+    public MediaViewVideoRenderer(Context context, AttributeSet attributeSet, int i, int i4) {
+        super(context, attributeSet, i, i4);
+        initialize(new AdViewConstructorParams(context, attributeSet, i, i4));
     }
 }

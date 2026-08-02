@@ -4,10 +4,10 @@ package g8;
 public abstract class s {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String[] f37744a;
+    public static final String[] f37770a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final byte[] f37745b;
+    public static final byte[] f37771b;
 
     static {
         String[] strArr = new String[93];
@@ -21,10 +21,10 @@ public abstract class s {
         strArr[10] = "\\n";
         strArr[13] = "\\r";
         strArr[12] = "\\f";
-        f37744a = strArr;
+        f37770a = strArr;
         byte[] bArr = new byte[93];
-        for (int i6 = 0; i6 < 32; i6++) {
-            bArr[i6] = 1;
+        for (int i4 = 0; i4 < 32; i4++) {
+            bArr[i4] = 1;
         }
         bArr[34] = 34;
         bArr[92] = 92;
@@ -33,7 +33,7 @@ public abstract class s {
         bArr[10] = 110;
         bArr[13] = 114;
         bArr[12] = 102;
-        f37745b = bArr;
+        f37771b = bArr;
     }
 
     public static final void a(StringBuilder sb, String value) {
@@ -41,13 +41,13 @@ public abstract class s {
         sb.append('\"');
         int length = value.length();
         int i = 0;
-        for (int i6 = 0; i6 < length; i6++) {
-            char charAt = value.charAt(i6);
-            String[] strArr = f37744a;
+        for (int i4 = 0; i4 < length; i4++) {
+            char charAt = value.charAt(i4);
+            String[] strArr = f37770a;
             if (charAt < strArr.length && strArr[charAt] != null) {
-                sb.append((CharSequence) value, i, i6);
+                sb.append((CharSequence) value, i, i4);
                 sb.append(strArr[charAt]);
-                i = i6 + 1;
+                i = i4 + 1;
             }
         }
         if (i != 0) {
@@ -59,7 +59,7 @@ public abstract class s {
     }
 
     public static final char b(int i) {
-        int i6 = i & 15;
-        return (char) (i6 < 10 ? i6 + 48 : i6 + 87);
+        int i4 = i & 15;
+        return (char) (i4 < 10 ? i4 + 48 : i4 + 87);
     }
 }

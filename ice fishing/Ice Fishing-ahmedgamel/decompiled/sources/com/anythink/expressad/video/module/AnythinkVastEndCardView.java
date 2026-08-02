@@ -13,56 +13,56 @@ import com.anythink.expressad.video.signal.factory.b;
 public class AnythinkVastEndCardView extends AnythinkBaseView implements f {
 
     /* renamed from: n, reason: collision with root package name */
-    private static final String f21619n = "anythink_reward_endcard_vast";
+    private static final String f22406n = "anythink_reward_endcard_vast";
 
     /* renamed from: o, reason: collision with root package name */
-    private ViewGroup f21620o;
+    private ViewGroup f22407o;
 
     /* renamed from: p, reason: collision with root package name */
-    private View f21621p;
+    private View f22408p;
 
     /* renamed from: q, reason: collision with root package name */
-    private View f21622q;
+    private View f22409q;
 
     public AnythinkVastEndCardView(Context context) {
         super(context);
     }
 
     private void a() {
-        if (this.f21446f) {
+        if (this.f22233f) {
             setMatchParent();
             setBackgroundResource(findColor("anythink_reward_endcard_vast_bg"));
             setClickable(true);
-            ((RelativeLayout.LayoutParams) this.f21620o.getLayoutParams()).addRule(13, -1);
+            ((RelativeLayout.LayoutParams) this.f22407o.getLayoutParams()).addRule(13, -1);
         }
     }
 
     private boolean b() {
-        this.f21620o = (ViewGroup) findViewById(findID("anythink_rl_content"));
-        this.f21621p = findViewById(findID("anythink_iv_vastclose"));
+        this.f22407o = (ViewGroup) findViewById(findID("anythink_rl_content"));
+        this.f22408p = findViewById(findID("anythink_iv_vastclose"));
         View findViewById = findViewById(findID("anythink_iv_vastok"));
-        this.f21622q = findViewById;
-        return isNotNULL(this.f21620o, this.f21621p, findViewById);
+        this.f22409q = findViewById;
+        return isNotNULL(this.f22407o, this.f22408p, findViewById);
     }
 
     @Override // com.anythink.expressad.video.module.AnythinkBaseView
     public final void c() {
         super.c();
-        if (this.f21446f) {
-            this.f21621p.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.video.module.AnythinkVastEndCardView.1
+        if (this.f22233f) {
+            this.f22408p.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.video.module.AnythinkVastEndCardView.1
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    a aVar = AnythinkVastEndCardView.this.f21445e;
+                    a aVar = AnythinkVastEndCardView.this.f22232e;
                     if (aVar != null) {
                         aVar.a(104, "");
                     }
                 }
             });
-            this.f21622q.setOnClickListener(new com.anythink.expressad.widget.a() { // from class: com.anythink.expressad.video.module.AnythinkVastEndCardView.2
+            this.f22409q.setOnClickListener(new com.anythink.expressad.widget.a() { // from class: com.anythink.expressad.video.module.AnythinkVastEndCardView.2
                 @Override // com.anythink.expressad.widget.a
                 public final void a(View view) {
                     AnythinkVastEndCardView anythinkVastEndCardView = AnythinkVastEndCardView.this;
-                    a aVar = anythinkVastEndCardView.f21445e;
+                    a aVar = anythinkVastEndCardView.f22232e;
                     if (aVar != null) {
                         aVar.a(108, anythinkVastEndCardView.d());
                     }
@@ -73,26 +73,26 @@ public class AnythinkVastEndCardView extends AnythinkBaseView implements f {
 
     @Override // com.anythink.expressad.video.module.AnythinkBaseView
     public void init(Context context) {
-        int findLayout = findLayout(f21619n);
+        int findLayout = findLayout(f22406n);
         if (findLayout >= 0) {
-            this.f21443c.inflate(findLayout, this);
-            this.f21620o = (ViewGroup) findViewById(findID("anythink_rl_content"));
-            this.f21621p = findViewById(findID("anythink_iv_vastclose"));
+            this.f22230c.inflate(findLayout, this);
+            this.f22407o = (ViewGroup) findViewById(findID("anythink_rl_content"));
+            this.f22408p = findViewById(findID("anythink_iv_vastclose"));
             View findViewById = findViewById(findID("anythink_iv_vastok"));
-            this.f21622q = findViewById;
-            this.f21446f = isNotNULL(this.f21620o, this.f21621p, findViewById);
+            this.f22409q = findViewById;
+            this.f22233f = isNotNULL(this.f22407o, this.f22408p, findViewById);
             c();
-            if (this.f21446f) {
+            if (this.f22233f) {
                 setMatchParent();
                 setBackgroundResource(findColor("anythink_reward_endcard_vast_bg"));
                 setClickable(true);
-                ((RelativeLayout.LayoutParams) this.f21620o.getLayoutParams()).addRule(13, -1);
+                ((RelativeLayout.LayoutParams) this.f22407o.getLayoutParams()).addRule(13, -1);
             }
         }
     }
 
     public void notifyShowListener() {
-        this.f21445e.a(111, "");
+        this.f22232e.a(111, "");
     }
 
     @Override // com.anythink.expressad.video.signal.f

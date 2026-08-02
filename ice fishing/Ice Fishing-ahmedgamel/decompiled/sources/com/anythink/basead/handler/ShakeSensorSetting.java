@@ -7,51 +7,51 @@ import java.util.List;
 public class ShakeSensorSetting {
 
     /* renamed from: a, reason: collision with root package name */
-    List<Double> f9062a;
+    List<Double> f9848a;
 
     /* renamed from: b, reason: collision with root package name */
-    long f9063b;
+    long f9849b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f9064c;
+    private int f9850c;
 
     /* renamed from: d, reason: collision with root package name */
-    private int f9065d;
+    private int f9851d;
 
     /* renamed from: e, reason: collision with root package name */
-    private long f9066e;
+    private long f9852e;
 
     public ShakeSensorSetting(y yVar) {
-        this.f9065d = 0;
-        this.f9066e = 0L;
-        this.f9064c = yVar.aK();
-        this.f9065d = yVar.aN();
-        this.f9062a = yVar.aM();
-        this.f9063b = yVar.aL();
-        this.f9066e = yVar.Y();
+        this.f9851d = 0;
+        this.f9852e = 0L;
+        this.f9850c = yVar.aK();
+        this.f9851d = yVar.aN();
+        this.f9848a = yVar.aM();
+        this.f9849b = yVar.aL();
+        this.f9852e = yVar.Y();
     }
 
     public long getShakeDetectDurationTime() {
-        return this.f9063b;
+        return this.f9849b;
     }
 
     public int getShakeStrength() {
-        return this.f9065d;
+        return this.f9851d;
     }
 
     public List<Double> getShakeStrengthList() {
-        return this.f9062a;
+        return this.f9848a;
     }
 
     public long getShakeTimeMs() {
-        return this.f9066e;
+        return this.f9852e;
     }
 
     public int getShakeWay() {
-        return this.f9064c;
+        return this.f9850c;
     }
 
     public String toString() {
-        return "ShakeSensorSetting{shakeWay=" + this.f9064c + ", shakeStrength=" + this.f9065d + ", shakeStrengthList=" + this.f9062a + ", shakeDetectDurationTime=" + this.f9063b + ", shakeTimeMs=" + this.f9066e + '}';
+        return "ShakeSensorSetting{shakeWay=" + this.f9850c + ", shakeStrength=" + this.f9851d + ", shakeStrengthList=" + this.f9848a + ", shakeDetectDurationTime=" + this.f9849b + ", shakeTimeMs=" + this.f9852e + '}';
     }
 }

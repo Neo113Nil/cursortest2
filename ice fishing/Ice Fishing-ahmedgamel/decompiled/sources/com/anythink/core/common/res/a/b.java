@@ -14,13 +14,13 @@ import java.util.Map;
 public final class b extends com.anythink.core.common.res.image.b {
 
     /* renamed from: a, reason: collision with root package name */
-    e f16142a;
+    e f16929a;
 
     /* renamed from: b, reason: collision with root package name */
-    a f16143b;
+    a f16930b;
 
     /* renamed from: c, reason: collision with root package name */
-    String f16144c;
+    String f16931c;
 
     public interface a {
         void a(e eVar);
@@ -29,9 +29,9 @@ public final class b extends com.anythink.core.common.res.image.b {
     }
 
     public b(e eVar) {
-        super(eVar.f16235h);
-        this.f16142a = eVar;
-        this.f16144c = d.a(t.b().g()).c(eVar.f16234g, o.a(eVar.f16235h));
+        super(eVar.f17022h);
+        this.f16929a = eVar;
+        this.f16931c = d.a(t.b().g()).c(eVar.f17021g, o.a(eVar.f17022h));
     }
 
     @Override // com.anythink.core.common.res.image.b
@@ -45,24 +45,24 @@ public final class b extends com.anythink.core.common.res.image.b {
 
     @Override // com.anythink.core.common.res.image.b
     public final void c() {
-        a aVar = this.f16143b;
+        a aVar = this.f16930b;
         if (aVar != null) {
-            aVar.a(this.f16142a);
+            aVar.a(this.f16929a);
         }
     }
 
     private void a(a aVar) {
-        this.f16143b = aVar;
+        this.f16930b = aVar;
     }
 
     @Override // com.anythink.core.common.res.image.b
     public final boolean a(InputStream inputStream) {
-        if (TextUtils.isEmpty(this.f16144c)) {
+        if (TextUtils.isEmpty(this.f16931c)) {
             return false;
         }
         FileOutputStream fileOutputStream = null;
         try {
-            String a9 = d.a(t.b().g()).a(this.f16142a.f16234g);
+            String a9 = d.a(t.b().g()).a(this.f16929a.f17021g);
             if (TextUtils.isEmpty(a9)) {
                 return false;
             }
@@ -70,7 +70,7 @@ public final class b extends com.anythink.core.common.res.image.b {
             if (!file.exists()) {
                 file.mkdirs();
             }
-            FileOutputStream fileOutputStream2 = new FileOutputStream(this.f16144c);
+            FileOutputStream fileOutputStream2 = new FileOutputStream(this.f16931c);
             try {
                 byte[] bArr = new byte[2048];
                 while (true) {
@@ -125,9 +125,9 @@ public final class b extends com.anythink.core.common.res.image.b {
 
     @Override // com.anythink.core.common.res.image.b
     public final void a(String str, String str2) {
-        a aVar = this.f16143b;
+        a aVar = this.f16930b;
         if (aVar != null) {
-            aVar.a(this.f16142a, str2);
+            aVar.a(this.f16929a, str2);
         }
     }
 }

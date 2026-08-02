@@ -6,17 +6,17 @@ import java.util.List;
 /* loaded from: assets/audience_network/classes2.dex */
 public final class L9 {
     public static byte[] A02;
-    public final List<C2400qI> A00;
-    public final InterfaceC0947Hd[] A01;
+    public final List<C2420qI> A00;
+    public final InterfaceC0967Hd[] A01;
 
     static {
         A01();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 29);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 29);
         }
         return new String(copyOfRange);
     }
@@ -25,13 +25,13 @@ public final class L9 {
         A02 = new byte[]{119, -100, -92, -113, -102, -105, -110, 78, -111, -102, -99, -95, -109, -110, 78, -111, -113, -98, -94, -105, -99, -100, 78, -101, -105, -101, -109, 78, -94, -89, -98, -109, 78, -98, -96, -99, -92, -105, -110, -109, -110, 104, 78, -123, -108, -108, -112, -115, -121, -123, -104, -115, -109, -110, 83, -121, -119, -123, 81, 90, 84, 92, -49, -34, -34, -38, -41, -47, -49, -30, -41, -35, -36, -99, -47, -45, -49, -101, -91, -98, -90};
     }
 
-    public L9(List<C2400qI> list) {
+    public L9(List<C2420qI> list) {
         this.A00 = list;
-        this.A01 = new InterfaceC0947Hd[list.size()];
+        this.A01 = new InterfaceC0967Hd[list.size()];
     }
 
-    public final void A02(long j6, C06474v c06474v) {
-        H3.A03(j6, c06474v, this.A01);
+    public final void A02(long j6, C06674v c06674v) {
+        H3.A03(j6, c06674v, this.A01);
     }
 
     /* JADX WARN: Incorrect condition in loop: B:3:0x0004 */
@@ -41,15 +41,15 @@ public final class L9 {
     public final void A03(HA ha, LG lg) {
         for (int i = 0; i < i; i++) {
             lg.A05();
-            InterfaceC0947Hd AKS = ha.AKS(lg.A03(), 3);
-            C2400qI c2400qI = this.A00.get(i);
-            String str = c2400qI.A0W;
-            AbstractC06243y.A09(A00(43, 19, 7).equals(str) || A00(62, 19, 81).equals(str), A00(0, 43, 17) + str);
-            C05912p A11 = new C05912p().A0y(c2400qI.A0T != null ? c2400qI.A0T : lg.A04()).A11(str);
-            int i6 = c2400qI.A0H;
-            C05912p A10 = A11.A0n(i6).A10(c2400qI.A0V);
-            int i9 = c2400qI.A03;
-            AKS.A6e(A10.A0Z(i9).A12(c2400qI.A0X).A14());
+            InterfaceC0967Hd AKS = ha.AKS(lg.A03(), 3);
+            C2420qI c2420qI = this.A00.get(i);
+            String str = c2420qI.A0W;
+            AbstractC06443y.A09(A00(43, 19, 7).equals(str) || A00(62, 19, 81).equals(str), A00(0, 43, 17) + str);
+            C06112p A11 = new C06112p().A0y(c2420qI.A0T != null ? c2420qI.A0T : lg.A04()).A11(str);
+            int i4 = c2420qI.A0H;
+            C06112p A10 = A11.A0n(i4).A10(c2420qI.A0V);
+            int i6 = c2420qI.A03;
+            AKS.A6e(A10.A0Z(i6).A12(c2420qI.A0X).A14());
             this.A01[i] = AKS;
         }
     }

@@ -7,7 +7,7 @@ import java.util.List;
 public abstract class f {
 
     /* renamed from: b, reason: collision with root package name */
-    protected e f19184b;
+    protected e f19971b;
 
     public f(String str) {
         e eVar = new e();
@@ -17,7 +17,7 @@ public abstract class f {
         if (a9.size() > 0) {
             eVar.a(a9);
         }
-        this.f19184b = eVar;
+        this.f19971b = eVar;
     }
 
     public static e a(ArrayList<e> arrayList, a aVar, String str) {
@@ -31,6 +31,6 @@ public abstract class f {
     public abstract List<e> a();
 
     public final e b() {
-        return this.f19184b;
+        return this.f19971b;
     }
 }

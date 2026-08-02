@@ -13,16 +13,16 @@ public final class ZX extends FrameLayout {
     public static byte[] A03;
     public RelativeLayout A00;
     public ScrollView A01;
-    public final C1840gi A02;
+    public final C1860gi A02;
 
     static {
         A04();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 39);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 39);
         }
         return new String(copyOfRange);
     }
@@ -31,9 +31,9 @@ public final class ZX extends FrameLayout {
         A03 = new byte[]{98, 94, 83, 22, 119, 82, 22, 95, 69, 22, 94, 95, 82, 82, 83, 88, 94, 101, 111, 100};
     }
 
-    public ZX(C1840gi c1840gi) {
-        super(c1840gi);
-        this.A02 = c1840gi;
+    public ZX(C1860gi c1860gi) {
+        super(c1860gi);
+        this.A02 = c1860gi;
         this.A02.A0F().AB1();
         A03();
         A02();
@@ -65,9 +65,9 @@ public final class ZX extends FrameLayout {
         addView(scrollView, mainLayoutParams);
     }
 
-    public final /* synthetic */ void A05(C1407Zh c1407Zh, View view) {
+    public final /* synthetic */ void A05(C1427Zh c1427Zh, View view) {
         this.A02.A0F().AB2();
-        c1407Zh.A01();
+        c1427Zh.A01();
         A01();
     }
 
@@ -81,18 +81,18 @@ public final class ZX extends FrameLayout {
         textView.setGravity(17);
         LinearLayout.LayoutParams undoAdHideParams = new LinearLayout.LayoutParams(-2, -2);
         undoAdHideParams.setMargins(XV.A00, XV.A00, XV.A00, XV.A09);
-        final C1407Zh c1407Zh = new C1407Zh(this.A02);
-        c1407Zh.setData(A00(16, 4, 44), null);
+        final C1427Zh c1427Zh = new C1427Zh(this.A02);
+        c1427Zh.setData(A00(16, 4, 44), null);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-2, -2);
         layoutParams.gravity = 17;
-        c1407Zh.setOnClickListener(new View.OnClickListener() { // from class: com.facebook.ads.redexgen.X.ZV
+        c1427Zh.setOnClickListener(new View.OnClickListener() { // from class: com.facebook.ads.redexgen.X.ZV
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                ZX.this.A05(c1407Zh, view);
+                ZX.this.A05(c1427Zh, view);
             }
         });
         linearLayout.addView(textView, undoAdHideParams);
-        linearLayout.addView(c1407Zh, layoutParams);
+        linearLayout.addView(c1427Zh, layoutParams);
         return linearLayout;
     }
 }

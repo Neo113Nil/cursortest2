@@ -6,9 +6,9 @@ public final class J9 {
     public final long A01;
     public final boolean A02;
 
-    public J9(long j6, boolean z3, int i) {
+    public J9(long j6, boolean z6, int i) {
         this.A01 = j6;
-        this.A02 = z3;
+        this.A02 = z6;
         this.A00 = i;
     }
 }

@@ -7,10 +7,10 @@ import java.util.Objects;
 public class d implements com.anythink.expressad.video.signal.e, com.anythink.expressad.video.signal.h {
 
     /* renamed from: j, reason: collision with root package name */
-    protected static final String f21797j = "DefaultJSContainerModule";
+    protected static final String f22584j = "DefaultJSContainerModule";
 
     @Override // com.anythink.expressad.video.signal.e
-    public void configurationChanged(int i, int i6, int i9) {
+    public void configurationChanged(int i, int i4, int i6) {
     }
 
     @Override // com.anythink.expressad.video.signal.e
@@ -63,7 +63,7 @@ public class d implements com.anythink.expressad.video.signal.e, com.anythink.ex
     }
 
     @Override // com.anythink.expressad.video.signal.e
-    public void resizeMiniCard(int i, int i6, int i9) {
+    public void resizeMiniCard(int i, int i4, int i6) {
     }
 
     @Override // com.anythink.expressad.video.signal.e
@@ -76,7 +76,7 @@ public class d implements com.anythink.expressad.video.signal.e, com.anythink.ex
     }
 
     @Override // com.anythink.expressad.video.signal.e
-    public void showMiniCard(int i, int i6, int i9, int i10, int i11) {
+    public void showMiniCard(int i, int i4, int i6, int i9, int i10) {
     }
 
     @Override // com.anythink.expressad.video.signal.e

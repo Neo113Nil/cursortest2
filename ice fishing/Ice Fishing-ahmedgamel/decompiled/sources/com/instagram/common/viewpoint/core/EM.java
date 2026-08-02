@@ -13,16 +13,16 @@ public class EM extends UN<C4A> {
     @Override // com.instagram.common.viewpoint.core.UN
     /* renamed from: A00, reason: merged with bridge method [inline-methods] */
     public final void A03(C4A c4a) {
-        C0877Ek c0877Ek;
-        C0877Ek c0877Ek2;
+        C0897Ek c0897Ek;
+        C0897Ek c0897Ek2;
         int A00 = c4a.A00();
         int currentPositionMS = this.A00.A00;
         if (currentPositionMS > 0) {
-            c0877Ek = this.A00.A0C;
-            int currentPositionMS2 = c0877Ek.getDuration();
+            c0897Ek = this.A00.A0C;
+            int currentPositionMS2 = c0897Ek.getDuration();
             if (A00 == currentPositionMS2) {
-                c0877Ek2 = this.A00.A0C;
-                int duration = c0877Ek2.getDuration();
+                c0897Ek2 = this.A00.A0C;
+                int duration = c0897Ek2.getDuration();
                 int currentPositionMS3 = this.A00.A00;
                 if (duration > currentPositionMS3) {
                     return;

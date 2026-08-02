@@ -1,6 +1,6 @@
 package B0;
 
-import D.y;
+import D.x;
 import android.os.Parcel;
 
 /* loaded from: classes.dex */
@@ -27,6 +27,6 @@ public class c extends RuntimeException {
     }
 
     public c(int i) {
-        super(y.m(i, "r: ", new StringBuilder(String.valueOf(i).length() + 3)));
+        super(x.k(i, "r: ", new StringBuilder(String.valueOf(i).length() + 3)));
     }
 }

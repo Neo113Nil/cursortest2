@@ -11,7 +11,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-@Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0016\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\u0006\u0010\u0007\u001a\u00020\bH\u0007¨\u0006\t"}, d2 = {"Lcom/facebook/video/heroplayer/exocustom/ImfSpecParser;", "", "<init>", "()V", "parseImfSpec", "", "Lcom/facebook/video/heroplayer/exocustom/ImfDataTrack;", "imfInlineSpec", "", "fbandroid.java.com.facebook.video.heroplayer.exocustom.exocustom"}, k = 1, mv = {2, 1, 0}, xi = j.f5816W)
+@Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0016\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\u0006\u0010\u0007\u001a\u00020\bH\u0007¨\u0006\t"}, d2 = {"Lcom/facebook/video/heroplayer/exocustom/ImfSpecParser;", "", "<init>", "()V", "parseImfSpec", "", "Lcom/facebook/video/heroplayer/exocustom/ImfDataTrack;", "imfInlineSpec", "", "fbandroid.java.com.facebook.video.heroplayer.exocustom.exocustom"}, k = 1, mv = {2, 1, 0}, xi = j.f6602W)
 /* renamed from: com.facebook.ads.redexgen.X.j9, reason: from Kotlin metadata */
 /* loaded from: assets/audience_network/classes2.dex */
 public final class ImfSpecParser {
@@ -23,10 +23,10 @@ public final class ImfSpecParser {
         A01 = new ImfSpecParser();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 122);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 122);
         }
         return new String(copyOfRange);
     }
@@ -37,7 +37,7 @@ public final class ImfSpecParser {
 
     @JvmStatic
     public static final List<ImfDataTrack> A01(String str) throws JSONException {
-        C2414qY.A09(str, A00(29, 13, 101));
+        C2434qY.A09(str, A00(29, 13, 101));
         ArrayList arrayList = new ArrayList();
         JSONArray jSONArray = new JSONObject(str).getJSONObject(A00(169, 17, 123)).getJSONArray(A00(0, 1, 105));
         int length = jSONArray.length();
@@ -46,22 +46,22 @@ public final class ImfSpecParser {
             String string = imfTrack.getString(A00(199, 9, 6));
             JSONObject jSONObject = new JSONObject(imfTrack.getString(A00(186, 13, 66)));
             String string2 = jSONObject.getString(A00(140, 11, 39));
-            String string3 = jSONObject.getString(A00(a.f21727Q, 14, 42));
-            C2414qY.A06(string2);
-            C2414qY.A06(string3);
-            C1982j7 c1982j7 = new C1982j7(string2, string3);
+            String string3 = jSONObject.getString(A00(a.f22514Q, 14, 42));
+            C2434qY.A06(string2);
+            C2434qY.A06(string3);
+            C2002j7 c2002j7 = new C2002j7(string2, string3);
             JSONArray jSONArray2 = imfTrack.getJSONArray(A00(1, 12, 63));
             int length2 = jSONArray2.length();
-            for (int i6 = 0; i6 < length2; i6++) {
-                JSONObject dataTrack = jSONArray2.getJSONObject(i6);
+            for (int i4 = 0; i4 < length2; i4++) {
+                JSONObject dataTrack = jSONArray2.getJSONObject(i4);
                 String A002 = A00(151, 9, 122);
-                JSONObject jSONObject2 = dataTrack.getJSONObject(A002).getJSONObject(A00(117, 9, a.f21728R));
+                JSONObject jSONObject2 = dataTrack.getJSONObject(A002).getJSONObject(A00(117, 9, a.f22515R));
                 String A003 = A00(160, 9, 124);
                 long j6 = jSONObject2.getLong(A003);
                 long j9 = dataTrack.getJSONObject(A002).getJSONObject(A00(22, 7, 94)).getLong(A003);
                 JSONObject jSONObject3 = new JSONObject(dataTrack.getString(A00(102, 15, 77)));
-                C2414qY.A06(string);
-                arrayList.add(new ImfDataTrack(string, j6, j9, c1982j7, new C1981j6(jSONObject3.getDouble(A00(69, 9, 118)), jSONObject3.getDouble(A00(78, 9, 61)), jSONObject3.getDouble(A00(56, 13, 67)), jSONObject3.getDouble(A00(42, 14, 35)), jSONObject3.getDouble(A00(87, 15, 35)))));
+                C2434qY.A06(string);
+                arrayList.add(new ImfDataTrack(string, j6, j9, c2002j7, new C2001j6(jSONObject3.getDouble(A00(69, 9, 118)), jSONObject3.getDouble(A00(78, 9, 61)), jSONObject3.getDouble(A00(56, 13, 67)), jSONObject3.getDouble(A00(42, 14, 35)), jSONObject3.getDouble(A00(87, 15, 35)))));
             }
         }
         return arrayList;

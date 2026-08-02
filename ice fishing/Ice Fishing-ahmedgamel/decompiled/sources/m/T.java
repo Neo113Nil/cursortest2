@@ -8,8 +8,8 @@ public abstract class T {
         return textView.getAutoSizeStepGranularity();
     }
 
-    public static void b(TextView textView, int i, int i6, int i9, int i10) {
-        textView.setAutoSizeTextTypeUniformWithConfiguration(i, i6, i9, i10);
+    public static void b(TextView textView, int i, int i4, int i6, int i9) {
+        textView.setAutoSizeTextTypeUniformWithConfiguration(i, i4, i6, i9);
     }
 
     public static void c(TextView textView, int[] iArr, int i) {

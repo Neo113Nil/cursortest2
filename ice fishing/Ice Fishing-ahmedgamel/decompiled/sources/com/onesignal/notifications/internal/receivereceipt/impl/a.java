@@ -1,15 +1,15 @@
 package com.onesignal.notifications.internal.receivereceipt.impl;
 
 import C4.c;
-import com.bumptech.glide.d;
+import Q3.b;
 import kotlin.jvm.internal.h;
-import l5.InterfaceC4665a;
+import l5.InterfaceC4677a;
 import u7.v;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class a implements B5.a {
-    private final InterfaceC4665a _backend;
+    private final InterfaceC4677a _backend;
     private final c _deviceService;
 
     /* renamed from: com.onesignal.notifications.internal.receivereceipt.impl.a$a, reason: collision with other inner class name */
@@ -17,8 +17,8 @@ public final class a implements B5.a {
         int label;
         /* synthetic */ Object result;
 
-        public C0238a(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public C0238a(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -29,7 +29,7 @@ public final class a implements B5.a {
         }
     }
 
-    public a(c _deviceService, InterfaceC4665a _backend) {
+    public a(c _deviceService, InterfaceC4677a _backend) {
         h.e(_deviceService, "_deviceService");
         h.e(_backend, "_backend");
         this._deviceService = _deviceService;
@@ -51,42 +51,42 @@ public final class a implements B5.a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object sendReceiveReceipt(String str, String str2, String str3, InterfaceC5267d interfaceC5267d) {
+    public Object sendReceiveReceipt(String str, String str2, String str3, InterfaceC5240d interfaceC5240d) {
         C0238a c0238a;
         int i;
-        if (interfaceC5267d instanceof C0238a) {
-            c0238a = (C0238a) interfaceC5267d;
-            int i6 = c0238a.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                c0238a.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof C0238a) {
+            c0238a = (C0238a) interfaceC5240d;
+            int i4 = c0238a.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                c0238a.label = i4 - Integer.MIN_VALUE;
                 C0238a c0238a2 = c0238a;
                 Object obj = c0238a2.result;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 i = c0238a2.label;
                 if (i != 0) {
-                    d.k(obj);
+                    b.s(obj);
                     C4.a deviceType = this._deviceService.getDeviceType();
-                    InterfaceC4665a interfaceC4665a = this._backend;
+                    InterfaceC4677a interfaceC4677a = this._backend;
                     c0238a2.label = 1;
-                    if (interfaceC4665a.updateNotificationAsReceived(str, str3, str2, deviceType, c0238a2) == aVar) {
+                    if (interfaceC4677a.updateNotificationAsReceived(str, str3, str2, deviceType, c0238a2) == aVar) {
                         return aVar;
                     }
                 } else {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    d.k(obj);
+                    b.s(obj);
                 }
-                return v.f41353a;
+                return v.f41073a;
             }
         }
-        c0238a = new C0238a(interfaceC5267d);
+        c0238a = new C0238a(interfaceC5240d);
         C0238a c0238a22 = c0238a;
         Object obj2 = c0238a22.result;
-        A7.a aVar2 = A7.a.f58n;
+        A7.a aVar2 = A7.a.f215n;
         i = c0238a22.label;
         if (i != 0) {
         }
-        return v.f41353a;
+        return v.f41073a;
     }
 }

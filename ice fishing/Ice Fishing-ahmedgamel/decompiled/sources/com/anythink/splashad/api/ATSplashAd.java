@@ -76,14 +76,14 @@ public class ATSplashAd {
             }
 
             @Override // com.anythink.splashad.a.b
-            public void onAdLoaded(String str, final boolean z3) {
+            public void onAdLoaded(String str, final boolean z6) {
                 t.b().b(new Runnable() { // from class: com.anythink.splashad.api.ATSplashAd.2.1.1
                     @Override // java.lang.Runnable
                     public final void run() {
                         AnonymousClass1 anonymousClass1 = AnonymousClass1.this;
                         ATSplashAdListener aTSplashAdListener = ATSplashAd.this.mListener;
                         if (aTSplashAdListener != null) {
-                            aTSplashAdListener.onAdLoaded(!anonymousClass1.hasCacheWhenTimeout && z3);
+                            aTSplashAdListener.onAdLoaded(!anonymousClass1.hasCacheWhenTimeout && z6);
                         }
                     }
                 });
@@ -105,9 +105,9 @@ public class ATSplashAd {
             @Override // com.anythink.splashad.a.b
             public void onTimeout(final String str) {
                 final g a9 = ATSplashAd.this.mAdLoadManager.a(str);
-                c.a h9 = a9 != null ? a9.h() : null;
-                if (h9 != null) {
-                    h9.b();
+                c.a h3 = a9 != null ? a9.h() : null;
+                if (h3 != null) {
+                    h3.b();
                 }
                 ae aeVar = new ae();
                 aeVar.a(AnonymousClass2.this.val$finalTkExtraMap);
@@ -117,7 +117,7 @@ public class ATSplashAd {
                 if (a10 != null) {
                     this.hasCacheWhenTimeout = true;
                     if (a9 != null) {
-                        if (h9 == null || h9.e() != a10) {
+                        if (h3 == null || h3.e() != a10) {
                             String str2 = ATSplashAd.this.mPlacementId;
                             a9.a(9, a10.o());
                         } else {
@@ -167,8 +167,8 @@ public class ATSplashAd {
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public void run() {
-            boolean z3;
             boolean z6;
+            boolean z9;
             Activity activity;
             int i = ATSplashAd.this.mFetchAdTimeout;
             long elapsedRealtime = SystemClock.elapsedRealtime();
@@ -180,20 +180,20 @@ public class ATSplashAd {
             int bq = lVar != null ? lVar.bq() : -1;
             if (i <= 0) {
                 if (bq <= 0) {
-                    z3 = false;
+                    z6 = false;
                     if (i > 0) {
                         i = 5000;
-                        z6 = false;
+                        z9 = false;
                     } else {
-                        z6 = z3;
+                        z9 = z6;
                     }
-                    int i6 = i;
+                    int i4 = i;
                     WeakReference<Activity> weakReference = ATSplashAd.this.mActivityWeakRef;
                     AnonymousClass1 anonymousClass1 = null;
                     activity = weakReference == null ? weakReference.get() : null;
                     if (this.val$loadType == 0) {
-                        anonymousClass1 = new AnonymousClass1(i6);
-                        anonymousClass1.startCountDown(i6);
+                        anonymousClass1 = new AnonymousClass1(i4);
+                        anonymousClass1.startCountDown(i4);
                     }
                     AnonymousClass1 anonymousClass12 = anonymousClass1;
                     ATSplashAd aTSplashAd = ATSplashAd.this;
@@ -201,16 +201,16 @@ public class ATSplashAd {
                     if (activity == null) {
                         activity = aTSplashAd.mContext;
                     }
-                    cVar.a(activity, anonymousClass12, aTSplashAd.adMultipleLoadedListener, i6, z6, this.val$loadType, aTSplashAd.mAdSourceEventListener, this.val$finalTkExtraMap, this.val$adRequest, this.val$startLoadTime, elapsedRealtime);
+                    cVar.a(activity, anonymousClass12, aTSplashAd.adMultipleLoadedListener, i4, z9, this.val$loadType, aTSplashAd.mAdSourceEventListener, this.val$finalTkExtraMap, this.val$adRequest, this.val$startLoadTime, elapsedRealtime);
                     ATSplashAd aTSplashAd2 = ATSplashAd.this;
-                    e.a(aTSplashAd2.mPlacementId, lVar, aTSplashAd2.mFetchAdTimeout, bq, i6, this.val$adRequest);
+                    e.a(aTSplashAd2.mPlacementId, lVar, aTSplashAd2.mFetchAdTimeout, bq, i4, this.val$adRequest);
                 }
             }
             i = bq;
-            z3 = true;
+            z6 = true;
             if (i > 0) {
             }
-            int i62 = i;
+            int i42 = i;
             WeakReference<Activity> weakReference2 = ATSplashAd.this.mActivityWeakRef;
             AnonymousClass1 anonymousClass13 = null;
             if (weakReference2 == null) {
@@ -222,9 +222,9 @@ public class ATSplashAd {
             com.anythink.splashad.a.c cVar2 = aTSplashAd3.mAdLoadManager;
             if (activity == null) {
             }
-            cVar2.a(activity, anonymousClass122, aTSplashAd3.adMultipleLoadedListener, i62, z6, this.val$loadType, aTSplashAd3.mAdSourceEventListener, this.val$finalTkExtraMap, this.val$adRequest, this.val$startLoadTime, elapsedRealtime);
+            cVar2.a(activity, anonymousClass122, aTSplashAd3.adMultipleLoadedListener, i42, z9, this.val$loadType, aTSplashAd3.mAdSourceEventListener, this.val$finalTkExtraMap, this.val$adRequest, this.val$startLoadTime, elapsedRealtime);
             ATSplashAd aTSplashAd22 = ATSplashAd.this;
-            e.a(aTSplashAd22.mPlacementId, lVar, aTSplashAd22.mFetchAdTimeout, bq, i62, this.val$adRequest);
+            e.a(aTSplashAd22.mPlacementId, lVar, aTSplashAd22.mFetchAdTimeout, bq, i42, this.val$adRequest);
         }
     }
 
@@ -249,7 +249,7 @@ public class ATSplashAd {
         if (adStatus == null) {
             return new ATAdStatusInfo(false, false, null);
         }
-        ab.b(this.mPlacementId, j.r.f12547t, j.r.f12525C, adStatus.toString(), "");
+        ab.b(this.mPlacementId, j.r.f13333t, j.r.f13311C, adStatus.toString(), "");
         return adStatus;
     }
 
@@ -267,7 +267,7 @@ public class ATSplashAd {
             return false;
         }
         boolean isReady = adStatus.isReady();
-        ab.b(this.mPlacementId, j.r.f12547t, j.r.f12524B, String.valueOf(isReady), "");
+        ab.b(this.mPlacementId, j.r.f13333t, j.r.f13310B, String.valueOf(isReady), "");
         return isReady;
     }
 
@@ -383,7 +383,7 @@ public class ATSplashAd {
 
     private void loadAd(ATAdRequest aTAdRequest, int i) {
         HashMap hashMap;
-        ab.a(this.mPlacementId, j.r.f12547t, j.r.f12552y, j.r.f12542o, "", true);
+        ab.a(this.mPlacementId, j.r.f13333t, j.r.f13338y, j.r.f13328o, "", true);
         long elapsedRealtime = SystemClock.elapsedRealtime();
         this.adRequest = aTAdRequest;
         if (this.mTKExtraMap != null) {
@@ -397,7 +397,7 @@ public class ATSplashAd {
     }
 
     public void show(Activity activity, ViewGroup viewGroup, ATSplashSkipInfo aTSplashSkipInfo, ATShowConfig aTShowConfig) {
-        ab.b(this.mPlacementId, j.r.f12547t, j.r.f12523A, j.r.f12542o, "");
+        ab.b(this.mPlacementId, j.r.f13333t, j.r.f13309A, j.r.f13328o, "");
         if (t.b().g() == null || TextUtils.isEmpty(t.b().p()) || TextUtils.isEmpty(t.b().q())) {
             Log.e(this.TAG, "SDK init error!");
             return;
@@ -453,7 +453,7 @@ public class ATSplashAd {
                 }
 
                 @Override // com.anythink.splashad.a.a
-                public void onDeeplinkCallback(final ATAdInfo aTAdInfo, final boolean z3) {
+                public void onDeeplinkCallback(final ATAdInfo aTAdInfo, final boolean z6) {
                     t.b().b(new Runnable() { // from class: com.anythink.splashad.api.ATSplashAd.3.1
                         @Override // java.lang.Runnable
                         public final void run() {
@@ -461,7 +461,7 @@ public class ATSplashAd {
                             if (aTSplashAdListener == null || !(aTSplashAdListener instanceof ATSplashExListener)) {
                                 return;
                             }
-                            ((ATSplashExListener) aTSplashAdListener).onDeeplinkCallback(aTAdInfo, z3);
+                            ((ATSplashExListener) aTSplashAdListener).onDeeplinkCallback(aTAdInfo, z6);
                         }
                     });
                 }

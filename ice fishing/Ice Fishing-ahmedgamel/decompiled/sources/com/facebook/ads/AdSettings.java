@@ -100,8 +100,8 @@ public class AdSettings {
         AdInternalSettings.setDataProcessingOptions(strArr, null, null);
     }
 
-    public static void setDebugBuild(boolean z3) {
-        AdInternalSettings.setDebugBuild(z3);
+    public static void setDebugBuild(boolean z6) {
+        AdInternalSettings.setDebugBuild(z6);
     }
 
     public static void setIntegrationErrorMode(IntegrationErrorMode integrationErrorMode) {
@@ -112,39 +112,39 @@ public class AdSettings {
         AdInternalSettings.setMediationService(str);
     }
 
-    public static void setMixedAudience(boolean z3) {
-        AdInternalSettings.sSettingsBundle.putBoolean(AdInternalSettings.BOOL_MIXED_AUDIENCE_KEY, z3);
+    public static void setMixedAudience(boolean z6) {
+        AdInternalSettings.sSettingsBundle.putBoolean(AdInternalSettings.BOOL_MIXED_AUDIENCE_KEY, z6);
     }
 
     public static void setTestAdType(TestAdType testAdType) {
         AdInternalSettings.sSettingsBundle.putSerializable(AdInternalSettings.TEST_AD_TYPE_KEY, testAdType);
     }
 
-    public static void setTestMode(boolean z3) {
-        AdInternalSettings.setTestMode(z3);
+    public static void setTestMode(boolean z6) {
+        AdInternalSettings.setTestMode(z6);
     }
 
     public static void setUrlPrefix(String str) {
         AdInternalSettings.setUrlPrefix(str);
     }
 
-    public static void setVideoAutoplay(boolean z3) {
-        AdInternalSettings.setVideoAutoplay(z3);
+    public static void setVideoAutoplay(boolean z6) {
+        AdInternalSettings.setVideoAutoplay(z6);
     }
 
-    public static void setVideoAutoplayOnMobile(boolean z3) {
-        AdInternalSettings.setVideoAutoplayOnMobile(z3);
+    public static void setVideoAutoplayOnMobile(boolean z6) {
+        AdInternalSettings.setVideoAutoplayOnMobile(z6);
     }
 
-    public static void setVisibleAnimation(boolean z3) {
-        AdInternalSettings.setVisibleAnimation(z3);
+    public static void setVisibleAnimation(boolean z6) {
+        AdInternalSettings.setVisibleAnimation(z6);
     }
 
     public static void turnOnSDKDebugger(Context context) {
         AdInternalSettings.turnOnSDKDebugger(context);
     }
 
-    public static void setDataProcessingOptions(String[] strArr, int i, int i6) {
-        AdInternalSettings.setDataProcessingOptions(strArr, Integer.valueOf(i), Integer.valueOf(i6));
+    public static void setDataProcessingOptions(String[] strArr, int i, int i4) {
+        AdInternalSettings.setDataProcessingOptions(strArr, Integer.valueOf(i), Integer.valueOf(i4));
     }
 }

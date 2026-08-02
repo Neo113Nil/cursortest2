@@ -12,10 +12,10 @@ import java.io.PrintWriter;
 public final class a implements AudienceNetworkActivityApi {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ AudienceNetworkActivity f23500a;
+    public final /* synthetic */ AudienceNetworkActivity f24285a;
 
     public a(AudienceNetworkActivity audienceNetworkActivity) {
-        this.f23500a = audienceNetworkActivity;
+        this.f24285a = audienceNetworkActivity;
     }
 
     @Override // com.facebook.ads.internal.api.AudienceNetworkActivityApi
@@ -29,8 +29,8 @@ public final class a implements AudienceNetworkActivityApi {
     }
 
     @Override // com.facebook.ads.internal.api.AudienceNetworkActivityApi
-    public final void onActivityResult(int i, int i6, Intent intent) {
-        super/*android.app.Activity*/.onActivityResult(i, i6, intent);
+    public final void onActivityResult(int i, int i4, Intent intent) {
+        super/*android.app.Activity*/.onActivityResult(i, i4, intent);
     }
 
     @Override // com.facebook.ads.internal.api.AudienceNetworkActivityApi

@@ -17,13 +17,13 @@ import javax.net.ssl.SSLSession;
 public final class e implements HostnameVerifier {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final e f15375a = new e();
+    public static final e f16162a = new e();
 
     /* renamed from: b, reason: collision with root package name */
-    private static final int f15376b = 2;
+    private static final int f16163b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    private static final int f15377c = 7;
+    private static final int f16164c = 7;
 
     private e() {
     }
@@ -93,12 +93,12 @@ public final class e implements HostnameVerifier {
     }
 
     private static boolean a(String str, String str2) {
-        if (str != null && str.length() != 0 && !str.startsWith(j.f12378z) && !str.endsWith("..") && str2 != null && str2.length() != 0 && !str2.startsWith(j.f12378z) && !str2.endsWith("..")) {
-            if (!str.endsWith(j.f12378z)) {
-                str = str.concat(j.f12378z);
+        if (str != null && str.length() != 0 && !str.startsWith(j.f13164z) && !str.endsWith("..") && str2 != null && str2.length() != 0 && !str2.startsWith(j.f13164z) && !str2.endsWith("..")) {
+            if (!str.endsWith(j.f13164z)) {
+                str = str.concat(j.f13164z);
             }
-            if (!str2.endsWith(j.f12378z)) {
-                str2 = str2.concat(j.f12378z);
+            if (!str2.endsWith(j.f13164z)) {
+                str2 = str2.concat(j.f13164z);
             }
             String lowerCase = str2.toLowerCase(Locale.US);
             if (!lowerCase.contains("*")) {

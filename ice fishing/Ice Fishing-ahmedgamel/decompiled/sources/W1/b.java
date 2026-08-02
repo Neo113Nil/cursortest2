@@ -1,33 +1,63 @@
 package W1;
 
+import android.graphics.Canvas;
+import android.graphics.ColorFilter;
+import android.graphics.Paint;
+
 /* loaded from: classes.dex */
-public final class b {
+public abstract class b extends e {
 
-    /* renamed from: a, reason: collision with root package name */
-    public final Integer f3405a;
+    /* renamed from: U, reason: collision with root package name */
+    public final Paint f3534U;
 
-    public b(Integer num) {
-        this.f3405a = num;
+    /* renamed from: V, reason: collision with root package name */
+    public int f3535V;
+
+    /* renamed from: W, reason: collision with root package name */
+    public int f3536W;
+
+    public b() {
+        e(-1);
+        Paint paint = new Paint();
+        this.f3534U = paint;
+        paint.setAntiAlias(true);
+        paint.setColor(this.f3535V);
     }
 
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (!(obj instanceof b)) {
-            return false;
-        }
-        b bVar = (b) obj;
-        Integer num = this.f3405a;
-        return num == null ? bVar.f3405a == null : num.equals(bVar.f3405a);
+    @Override // W1.e
+    public final void b(Canvas canvas) {
+        Paint paint = this.f3534U;
+        paint.setColor(this.f3535V);
+        h(canvas, paint);
     }
 
-    public final int hashCode() {
-        Integer num = this.f3405a;
-        return (num == null ? 0 : num.hashCode()) ^ 1000003;
+    @Override // W1.e
+    public final int c() {
+        return this.f3536W;
     }
 
-    public final String toString() {
-        return "ProductData{productId=" + this.f3405a + "}";
+    @Override // W1.e
+    public final void e(int i) {
+        this.f3536W = i;
+        i();
+    }
+
+    public abstract void h(Canvas canvas, Paint paint);
+
+    public final void i() {
+        int i = this.f3555H;
+        int i4 = this.f3536W;
+        this.f3535V = ((((i4 >>> 24) * (i + (i >> 7))) >> 8) << 24) | ((i4 << 8) >>> 8);
+    }
+
+    @Override // W1.e, android.graphics.drawable.Drawable
+    public final void setAlpha(int i) {
+        this.f3555H = i;
+        i();
+    }
+
+    @Override // W1.e, android.graphics.drawable.Drawable
+    public final void setColorFilter(ColorFilter colorFilter) {
+        this.f3534U.setColorFilter(colorFilter);
     }
 }

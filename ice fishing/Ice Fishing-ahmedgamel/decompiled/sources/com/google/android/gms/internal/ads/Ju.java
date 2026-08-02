@@ -36,9 +36,9 @@ public enum Ju {
 
 
     /* renamed from: n, reason: collision with root package name */
-    public final String f25810n;
+    public final String f26562n;
 
     Ju(String str) {
-        this.f25810n = str;
+        this.f26562n = str;
     }
 }

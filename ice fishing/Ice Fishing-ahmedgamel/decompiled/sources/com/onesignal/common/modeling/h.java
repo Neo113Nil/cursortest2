@@ -5,9 +5,9 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
-import v7.AbstractC5129j;
-import v7.AbstractC5131l;
-import w7.C5158e;
+import v7.AbstractC5119j;
+import v7.AbstractC5121l;
+import w7.C5157e;
 
 /* loaded from: classes2.dex */
 public class h extends i implements Map, J7.d {
@@ -52,11 +52,11 @@ public class h extends i implements Map, J7.d {
         Set<Map.Entry<String, Object>> entrySet = getData().entrySet();
         ArrayList arrayList = new ArrayList();
         for (Object obj : entrySet) {
-            if ((obj instanceof Map.Entry) && (!(obj instanceof J7.a) || (obj instanceof C5158e))) {
+            if ((obj instanceof Map.Entry) && (!(obj instanceof J7.a) || (obj instanceof C5157e))) {
                 arrayList.add(obj);
             }
         }
-        return AbstractC5129j.O(arrayList);
+        return AbstractC5119j.M(arrayList);
     }
 
     public Set<String> getKeys() {
@@ -69,12 +69,12 @@ public class h extends i implements Map, J7.d {
 
     public Collection<Object> getValues() {
         Collection<Object> values = getData().values();
-        ArrayList arrayList = new ArrayList(AbstractC5131l.y(values, 10));
+        ArrayList arrayList = new ArrayList(AbstractC5121l.w(values, 10));
         Iterator<T> it = values.iterator();
         while (it.hasNext()) {
             arrayList.add(it.next());
         }
-        return AbstractC5129j.M(arrayList);
+        return AbstractC5119j.K(arrayList);
     }
 
     @Override // java.util.Map

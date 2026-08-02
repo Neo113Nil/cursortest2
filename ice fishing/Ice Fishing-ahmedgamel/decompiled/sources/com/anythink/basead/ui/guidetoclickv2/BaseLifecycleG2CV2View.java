@@ -12,7 +12,7 @@ import com.anythink.core.common.d.t;
 public abstract class BaseLifecycleG2CV2View extends BaseG2CV2View {
 
     /* renamed from: d, reason: collision with root package name */
-    private GTCV2InnerCountDownView f10853d;
+    private GTCV2InnerCountDownView f11639d;
 
     public BaseLifecycleG2CV2View(Context context) {
         super(context);
@@ -20,7 +20,7 @@ public abstract class BaseLifecycleG2CV2View extends BaseG2CV2View {
 
     @Override // com.anythink.basead.ui.guidetoclickv2.BaseG2CV2View
     public void a() {
-        GTCV2InnerCountDownView gTCV2InnerCountDownView = this.f10853d;
+        GTCV2InnerCountDownView gTCV2InnerCountDownView = this.f11639d;
         if (gTCV2InnerCountDownView != null) {
             gTCV2InnerCountDownView.onResume();
         } else {
@@ -30,7 +30,7 @@ public abstract class BaseLifecycleG2CV2View extends BaseG2CV2View {
 
     @Override // com.anythink.basead.ui.guidetoclickv2.BaseG2CV2View
     public void b() {
-        GTCV2InnerCountDownView gTCV2InnerCountDownView = this.f10853d;
+        GTCV2InnerCountDownView gTCV2InnerCountDownView = this.f11639d;
         if (gTCV2InnerCountDownView != null) {
             gTCV2InnerCountDownView.onPause();
         } else {
@@ -39,14 +39,14 @@ public abstract class BaseLifecycleG2CV2View extends BaseG2CV2View {
     }
 
     public final void d() {
-        if (this.f10853d == null) {
-            this.f10853d = new GTCV2InnerCountDownView(getContext());
-            addView(this.f10853d, new ViewGroup.MarginLayoutParams(-1, -1));
-            this.f10853d.initSetting(new GTCV2InnerCountDownView.a() { // from class: com.anythink.basead.ui.guidetoclickv2.BaseLifecycleG2CV2View.1
+        if (this.f11639d == null) {
+            this.f11639d = new GTCV2InnerCountDownView(getContext());
+            addView(this.f11639d, new ViewGroup.MarginLayoutParams(-1, -1));
+            this.f11639d.initSetting(new GTCV2InnerCountDownView.a() { // from class: com.anythink.basead.ui.guidetoclickv2.BaseLifecycleG2CV2View.1
                 @Override // com.anythink.basead.ui.guidetoclickv2.GTCV2InnerCountDownView.a
                 public final void a() {
                     BaseLifecycleG2CV2View baseLifecycleG2CV2View = BaseLifecycleG2CV2View.this;
-                    c.a aVar = baseLifecycleG2CV2View.f10834c;
+                    c.a aVar = baseLifecycleG2CV2View.f11620c;
                     if (aVar != null) {
                         aVar.a(11, baseLifecycleG2CV2View.e());
                     }
@@ -58,15 +58,15 @@ public abstract class BaseLifecycleG2CV2View extends BaseG2CV2View {
                 }
             });
         }
-        t.b().d(this.f10833b);
+        t.b().d(this.f11619b);
     }
 
     public abstract int e();
 
     @Override // com.anythink.basead.ui.guidetoclickv2.BaseG2CV2View
-    public void init(long j6, int i, int i6, c.a aVar, BaseG2CV2View.b bVar) {
-        super.init(j6, i, i6, aVar, bVar);
-        c.a aVar2 = this.f10834c;
+    public void init(long j6, int i, int i4, c.a aVar, BaseG2CV2View.b bVar) {
+        super.init(j6, i, i4, aVar, bVar);
+        c.a aVar2 = this.f11620c;
         if (aVar2 instanceof c.b) {
             ((c.b) aVar2).b();
         }
@@ -74,7 +74,7 @@ public abstract class BaseLifecycleG2CV2View extends BaseG2CV2View {
 
     @Override // com.anythink.basead.ui.guidetoclickv2.BaseG2CV2View
     public void pauseAnimPlay() {
-        GTCV2InnerCountDownView gTCV2InnerCountDownView = this.f10853d;
+        GTCV2InnerCountDownView gTCV2InnerCountDownView = this.f11639d;
         if (gTCV2InnerCountDownView != null) {
             gTCV2InnerCountDownView.onPause();
         } else {
@@ -85,11 +85,11 @@ public abstract class BaseLifecycleG2CV2View extends BaseG2CV2View {
     @Override // com.anythink.basead.ui.guidetoclickv2.BaseG2CV2View
     public void release() {
         super.release();
-        GTCV2InnerCountDownView gTCV2InnerCountDownView = this.f10853d;
+        GTCV2InnerCountDownView gTCV2InnerCountDownView = this.f11639d;
         if (gTCV2InnerCountDownView != null) {
             gTCV2InnerCountDownView.release();
         }
-        c.a aVar = this.f10834c;
+        c.a aVar = this.f11620c;
         if (aVar instanceof c.b) {
             ((c.b) aVar).a();
         }
@@ -97,7 +97,7 @@ public abstract class BaseLifecycleG2CV2View extends BaseG2CV2View {
 
     @Override // com.anythink.basead.ui.guidetoclickv2.BaseG2CV2View
     public void resumeAnimPlay() {
-        GTCV2InnerCountDownView gTCV2InnerCountDownView = this.f10853d;
+        GTCV2InnerCountDownView gTCV2InnerCountDownView = this.f11639d;
         if (gTCV2InnerCountDownView != null) {
             gTCV2InnerCountDownView.onResume();
         } else {

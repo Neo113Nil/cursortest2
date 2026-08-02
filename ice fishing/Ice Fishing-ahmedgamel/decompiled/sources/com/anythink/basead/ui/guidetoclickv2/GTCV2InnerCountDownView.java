@@ -1,6 +1,5 @@
 package com.anythink.basead.ui.guidetoclickv2;
 
-import D.y;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.text.TextUtils;
@@ -10,6 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import com.IceFishing.LiveIceFishing.k;
 import com.anythink.core.common.a.b;
 import com.anythink.core.common.res.b;
 import com.anythink.core.common.res.e;
@@ -21,32 +21,32 @@ import com.anythink.core.common.v.s;
 public class GTCV2InnerCountDownView extends RelativeLayout {
 
     /* renamed from: a, reason: collision with root package name */
-    s f10899a;
+    s f11685a;
 
     /* renamed from: b, reason: collision with root package name */
-    TextView f10900b;
+    TextView f11686b;
 
     /* renamed from: c, reason: collision with root package name */
-    TextView f10901c;
+    TextView f11687c;
 
     /* renamed from: d, reason: collision with root package name */
-    TextView f10902d;
+    TextView f11688d;
 
     /* renamed from: e, reason: collision with root package name */
-    ImageView f10903e;
+    ImageView f11689e;
 
     /* renamed from: f, reason: collision with root package name */
-    ImageView f10904f;
+    ImageView f11690f;
 
     /* renamed from: g, reason: collision with root package name */
-    ImageView f10905g;
+    ImageView f11691g;
 
     /* renamed from: h, reason: collision with root package name */
-    final long f10906h;
+    final long f11692h;
     final long i;
 
     /* renamed from: j, reason: collision with root package name */
-    private a f10907j;
+    private a f11693j;
 
     public interface a {
         void a();
@@ -56,47 +56,47 @@ public class GTCV2InnerCountDownView extends RelativeLayout {
 
     public GTCV2InnerCountDownView(Context context) {
         super(context);
-        this.f10906h = 120000L;
+        this.f11692h = 120000L;
         this.i = 500L;
         a();
     }
 
     private void a() {
         LayoutInflater.from(getContext()).inflate(q.a(getContext(), "myoffer_g2c_inner_count_down_view", "layout"), this);
-        this.f10903e = (ImageView) findViewById(q.a(getContext(), "myoffer_g2c_item_close_iv", "id"));
-        this.f10904f = (ImageView) findViewById(q.a(getContext(), "myoffer_g2c_item_gift_icon", "id"));
-        this.f10905g = (ImageView) findViewById(q.a(getContext(), "myoffer_g2c_item_ribbon", "id"));
-        this.f10900b = (TextView) findViewById(q.a(getContext(), "myoffer_g2c_ct_min", "id"));
-        this.f10901c = (TextView) findViewById(q.a(getContext(), "myoffer_g2c_ct_sec", "id"));
-        this.f10902d = (TextView) findViewById(q.a(getContext(), "myoffer_g2c_ct_cta", "id"));
-        String a9 = g.a().a(b.d.f12122g);
+        this.f11689e = (ImageView) findViewById(q.a(getContext(), "myoffer_g2c_item_close_iv", "id"));
+        this.f11690f = (ImageView) findViewById(q.a(getContext(), "myoffer_g2c_item_gift_icon", "id"));
+        this.f11691g = (ImageView) findViewById(q.a(getContext(), "myoffer_g2c_item_ribbon", "id"));
+        this.f11686b = (TextView) findViewById(q.a(getContext(), "myoffer_g2c_ct_min", "id"));
+        this.f11687c = (TextView) findViewById(q.a(getContext(), "myoffer_g2c_ct_sec", "id"));
+        this.f11688d = (TextView) findViewById(q.a(getContext(), "myoffer_g2c_ct_cta", "id"));
+        String a9 = g.a().a(b.d.f12908g);
         if (!TextUtils.isEmpty(a9)) {
-            y.f().a(new e(3, a9), new b.a() { // from class: com.anythink.basead.ui.guidetoclickv2.GTCV2InnerCountDownView.1
+            k.j().a(new e(3, a9), new b.a() { // from class: com.anythink.basead.ui.guidetoclickv2.GTCV2InnerCountDownView.1
                 @Override // com.anythink.core.common.res.b.a
                 public final void onFail(String str, String str2) {
                 }
 
                 @Override // com.anythink.core.common.res.b.a
                 public final void onSuccess(String str, Bitmap bitmap) {
-                    ImageView imageView = GTCV2InnerCountDownView.this.f10904f;
+                    ImageView imageView = GTCV2InnerCountDownView.this.f11690f;
                     if (imageView != null) {
                         imageView.setImageBitmap(bitmap);
                     }
                 }
             });
         }
-        String a10 = g.a().a(b.d.f12123h);
+        String a10 = g.a().a(b.d.f12909h);
         if (TextUtils.isEmpty(a10)) {
             return;
         }
-        y.f().a(new e(3, a10), new b.a() { // from class: com.anythink.basead.ui.guidetoclickv2.GTCV2InnerCountDownView.2
+        k.j().a(new e(3, a10), new b.a() { // from class: com.anythink.basead.ui.guidetoclickv2.GTCV2InnerCountDownView.2
             @Override // com.anythink.core.common.res.b.a
             public final void onFail(String str, String str2) {
             }
 
             @Override // com.anythink.core.common.res.b.a
             public final void onSuccess(String str, Bitmap bitmap) {
-                ImageView imageView = GTCV2InnerCountDownView.this.f10905g;
+                ImageView imageView = GTCV2InnerCountDownView.this.f11691g;
                 if (imageView != null) {
                     imageView.setImageBitmap(bitmap);
                 }
@@ -105,7 +105,7 @@ public class GTCV2InnerCountDownView extends RelativeLayout {
     }
 
     public void initSetting(final a aVar) {
-        this.f10907j = aVar;
+        this.f11693j = aVar;
         s sVar = new s() { // from class: com.anythink.basead.ui.guidetoclickv2.GTCV2InnerCountDownView.3
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             {
@@ -116,14 +116,14 @@ public class GTCV2InnerCountDownView extends RelativeLayout {
             public final void a(long j6) {
                 long j9 = j6 / 1000;
                 int i = (int) (j9 / 60);
-                int i6 = (int) (j9 % 60);
-                TextView textView = GTCV2InnerCountDownView.this.f10900b;
+                int i4 = (int) (j9 % 60);
+                TextView textView = GTCV2InnerCountDownView.this.f11686b;
                 if (textView != null) {
                     textView.setText(String.format("%02d", Integer.valueOf(i)));
                 }
-                TextView textView2 = GTCV2InnerCountDownView.this.f10901c;
+                TextView textView2 = GTCV2InnerCountDownView.this.f11687c;
                 if (textView2 != null) {
-                    textView2.setText(String.format("%02d", Integer.valueOf(i6)));
+                    textView2.setText(String.format("%02d", Integer.valueOf(i4)));
                 }
             }
 
@@ -135,14 +135,14 @@ public class GTCV2InnerCountDownView extends RelativeLayout {
                 }
             }
         };
-        this.f10899a = sVar;
+        this.f11685a = sVar;
         sVar.b();
         setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.guidetoclickv2.GTCV2InnerCountDownView.4
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
             }
         });
-        this.f10902d.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.guidetoclickv2.GTCV2InnerCountDownView.5
+        this.f11688d.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.guidetoclickv2.GTCV2InnerCountDownView.5
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 a aVar2 = aVar;
@@ -151,7 +151,7 @@ public class GTCV2InnerCountDownView extends RelativeLayout {
                 }
             }
         });
-        this.f10903e.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.guidetoclickv2.GTCV2InnerCountDownView.6
+        this.f11689e.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.guidetoclickv2.GTCV2InnerCountDownView.6
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 a aVar2 = aVar;
@@ -169,21 +169,21 @@ public class GTCV2InnerCountDownView extends RelativeLayout {
     }
 
     public final void onPause() {
-        s sVar = this.f10899a;
+        s sVar = this.f11685a;
         if (sVar != null) {
             sVar.d();
         }
     }
 
     public final void onResume() {
-        s sVar = this.f10899a;
+        s sVar = this.f11685a;
         if (sVar != null) {
             sVar.e();
         }
     }
 
     public final void release() {
-        s sVar = this.f10899a;
+        s sVar = this.f11685a;
         if (sVar != null) {
             sVar.c();
         }
@@ -191,14 +191,14 @@ public class GTCV2InnerCountDownView extends RelativeLayout {
 
     public GTCV2InnerCountDownView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f10906h = 120000L;
+        this.f11692h = 120000L;
         this.i = 500L;
         a();
     }
 
     public GTCV2InnerCountDownView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f10906h = 120000L;
+        this.f11692h = 120000L;
         this.i = 500L;
         a();
     }

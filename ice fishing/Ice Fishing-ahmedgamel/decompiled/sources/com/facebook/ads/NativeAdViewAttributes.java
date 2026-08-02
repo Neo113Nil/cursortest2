@@ -73,12 +73,12 @@ public class NativeAdViewAttributes {
     }
 
     @Deprecated
-    public NativeAdViewAttributes setAutoplay(boolean z3) {
+    public NativeAdViewAttributes setAutoplay(boolean z6) {
         return this;
     }
 
     @Deprecated
-    public NativeAdViewAttributes setAutoplayOnMobile(boolean z3) {
+    public NativeAdViewAttributes setAutoplayOnMobile(boolean z6) {
         return this;
     }
 

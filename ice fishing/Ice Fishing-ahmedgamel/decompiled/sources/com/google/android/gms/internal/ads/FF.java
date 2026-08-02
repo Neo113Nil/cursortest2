@@ -4,20 +4,20 @@ import java.security.GeneralSecurityException;
 import javax.crypto.Cipher;
 
 /* loaded from: classes2.dex */
-public abstract class FF implements InterfaceC3394jE {
+public abstract class FF implements InterfaceC3417jE {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final L7.b f24777a = new L7.b(4);
+    public static final L7.b f25533a = new L7.b(4);
 
-    public static C3719pF b(OE oe) {
-        byte[] bArr = C3719pF.f33046d;
+    public static C3742pF b(OE oe) {
+        byte[] bArr = C3742pF.f33836d;
         try {
-            Cipher cipher = (Cipher) f24777a.get();
+            Cipher cipher = (Cipher) f25533a.get();
             if (cipher == null) {
                 throw new GeneralSecurityException("AES GCM SIV cipher is invalid.");
             }
-            if (C3719pF.b(cipher)) {
-                return new C3719pF(((C3240gK) oe.f26592c.f29859u).b(), oe.f26593d.b());
+            if (C3742pF.b(cipher)) {
+                return new C3742pF(((C3263gK) oe.f27374c.f30647u).b(), oe.f27375d.b());
             }
             throw new IllegalStateException("Cipher does not implement AES GCM SIV.");
         } catch (IllegalStateException e9) {

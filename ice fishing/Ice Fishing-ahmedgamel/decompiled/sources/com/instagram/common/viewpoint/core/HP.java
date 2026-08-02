@@ -16,19 +16,19 @@ public final class HP {
     public final boolean A0B;
     public final int[] A0C;
 
-    public HP(int i, boolean z3, int i6, int i9, int[] iArr, int i10, int i11, int i12, int i13, float f3, int i14, int i15, int i16) {
+    public HP(int i, boolean z6, int i4, int i6, int[] iArr, int i9, int i10, int i11, int i12, float f2, int i13, int i14, int i15) {
         this.A07 = i;
-        this.A0B = z3;
-        this.A06 = i6;
-        this.A05 = i9;
+        this.A0B = z6;
+        this.A06 = i4;
+        this.A05 = i6;
         this.A0C = iArr;
-        this.A04 = i10;
-        this.A09 = i11;
-        this.A0A = i12;
-        this.A08 = i13;
-        this.A00 = f3;
-        this.A02 = i14;
-        this.A01 = i15;
-        this.A03 = i16;
+        this.A04 = i9;
+        this.A09 = i10;
+        this.A0A = i11;
+        this.A08 = i12;
+        this.A00 = f2;
+        this.A02 = i13;
+        this.A01 = i14;
+        this.A03 = i15;
     }
 }

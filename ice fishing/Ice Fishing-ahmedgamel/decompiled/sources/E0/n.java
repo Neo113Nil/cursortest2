@@ -11,42 +11,42 @@ import android.graphics.drawable.Drawable;
 public final class n extends Drawable.ConstantState {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f709a;
+    public int f689a;
 
     /* renamed from: b, reason: collision with root package name */
-    public m f710b;
+    public m f690b;
 
     /* renamed from: c, reason: collision with root package name */
-    public ColorStateList f711c;
+    public ColorStateList f691c;
 
     /* renamed from: d, reason: collision with root package name */
-    public PorterDuff.Mode f712d;
+    public PorterDuff.Mode f692d;
 
     /* renamed from: e, reason: collision with root package name */
-    public boolean f713e;
+    public boolean f693e;
 
     /* renamed from: f, reason: collision with root package name */
-    public Bitmap f714f;
+    public Bitmap f694f;
 
     /* renamed from: g, reason: collision with root package name */
-    public ColorStateList f715g;
+    public ColorStateList f695g;
 
     /* renamed from: h, reason: collision with root package name */
-    public PorterDuff.Mode f716h;
+    public PorterDuff.Mode f696h;
     public int i;
 
     /* renamed from: j, reason: collision with root package name */
-    public boolean f717j;
+    public boolean f697j;
 
     /* renamed from: k, reason: collision with root package name */
-    public boolean f718k;
+    public boolean f698k;
 
     /* renamed from: l, reason: collision with root package name */
-    public Paint f719l;
+    public Paint f699l;
 
     @Override // android.graphics.drawable.Drawable.ConstantState
     public int getChangingConfigurations() {
-        return this.f709a;
+        return this.f689a;
     }
 
     @Override // android.graphics.drawable.Drawable.ConstantState

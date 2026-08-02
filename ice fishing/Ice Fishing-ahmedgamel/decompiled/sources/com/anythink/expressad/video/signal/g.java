@@ -6,46 +6,46 @@ import com.anythink.expressad.video.module.AnythinkVideoView;
 public interface g {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f22179a = 1;
+    public static final int f22966a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f22180b = 2;
+    public static final int f22967b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f22181c = 3;
+    public static final int f22968c = 3;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f22182d = 4;
+    public static final int f22969d = 4;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f22183e = 5;
+    public static final int f22970e = 5;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final int f22184f = 6;
+    public static final int f22971f = 6;
 
     /* renamed from: g, reason: collision with root package name */
-    public static final int f22185g = 7;
+    public static final int f22972g = 7;
 
     /* renamed from: h, reason: collision with root package name */
-    public static final int f22186h = 8;
+    public static final int f22973h = 8;
     public static final int i = -1;
 
     /* renamed from: j, reason: collision with root package name */
-    public static final int f22187j = 0;
+    public static final int f22974j = 0;
 
     /* renamed from: k, reason: collision with root package name */
-    public static final int f22188k = 1;
+    public static final int f22975k = 1;
 
     /* renamed from: l, reason: collision with root package name */
-    public static final int f22189l = 2;
+    public static final int f22976l = 2;
 
     void a();
 
-    void a(int i6);
+    void a(int i4);
 
-    void a(int i6, int i9, int i10, int i11);
+    void a(int i4, int i6, int i9, int i10);
 
-    void a(int i6, String str);
+    void a(int i4, String str);
 
     void a(AnythinkVideoView.a aVar);
 

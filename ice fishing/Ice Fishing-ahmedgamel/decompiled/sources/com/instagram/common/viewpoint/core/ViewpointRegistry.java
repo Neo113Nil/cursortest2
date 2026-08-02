@@ -13,31 +13,31 @@ import java.util.Set;
 import java.util.WeakHashMap;
 import kotlin.Metadata;
 
-@Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010#\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0010\u001f\n\u0000\n\u0002\u0010!\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0000\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u001e\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\b2\u000e\u0010\u0011\u001a\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\tJ&\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\b2\u0006\u0010\u0012\u001a\u00020\r2\u000e\u0010\u0011\u001a\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\tJ\u000e\u0010\u0013\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\bJ\u0016\u0010\u0013\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\b2\u0006\u0010\u0012\u001a\u00020\rJ*\u0010\u0014\u001a\u00020\u000f2\f\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\b0\u00162\u0014\u0010\u0017\u001a\u0010\u0012\f\u0012\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\t0\u0018J\u0016\u0010\u0019\u001a\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\t2\u0006\u0010\u0010\u001a\u00020\bJ*\u0010\u001a\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\b2\u001a\u0010\u001b\u001a\u0016\u0012\f\u0012\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\t\u0012\u0004\u0012\u00020\u000f0\u001cJ\u0018\u0010\u001d\u001a\u00020\u000f2\u000e\u0010\u0011\u001a\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\tH\u0002J\u0018\u0010\u001e\u001a\u00020\u000f2\u000e\u0010\u0011\u001a\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\tH\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\"\u0010\u0006\u001a\u0016\u0012\u0004\u0012\u00020\b\u0012\f\u0012\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\t0\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u001c\u0010\n\u001a\u0010\u0012\f\u0012\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\t0\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R.\u0010\f\u001a\"\u0012\u0004\u0012\u00020\b\u0012\u0018\u0012\u0016\u0012\u0004\u0012\u00020\r\u0012\f\u0012\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\t0\u00070\u0007X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001f"}, d2 = {"Lcom/instagram/common/viewpoint/core/ViewpointRegistry;", "", "qeConfig", "Lcom/instagram/common/viewpoint/core/ViewpointQeConfig;", "<init>", "(Lcom/instagram/common/viewpoint/core/ViewpointQeConfig;)V", "viewpointDataMap", "", "Lcom/meta/analytics/dsp/uinode/DspViewableNode;", "Lcom/instagram/common/viewpoint/core/ViewpointData;", "recentlyUnregistered", "", "multiViewpointDataMap", "Lcom/instagram/common/viewpoint/core/SharedViewpointManager$UniqueKey;", "registerView", "", "node", "viewpointData", "key", "unregisterView", "getEligibleViews", "result", "", "toUnregister", "", "getViewpointData", "iterateMultiViewpointData", NativeAdvancedJsUtils.f17906p, "Lkotlin/Function1;", "addToRecentlyUnregistered", "markAsRegisteredAndThrowOnReuse", "fbandroid.java.com.instagram.common.viewpoint.core.core_an"}, k = 1, mv = {2, 1, 0}, xi = j.f5816W)
+@Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010#\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0010\u001f\n\u0000\n\u0002\u0010!\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0000\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u001e\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\b2\u000e\u0010\u0011\u001a\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\tJ&\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\b2\u0006\u0010\u0012\u001a\u00020\r2\u000e\u0010\u0011\u001a\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\tJ\u000e\u0010\u0013\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\bJ\u0016\u0010\u0013\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\b2\u0006\u0010\u0012\u001a\u00020\rJ*\u0010\u0014\u001a\u00020\u000f2\f\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\b0\u00162\u0014\u0010\u0017\u001a\u0010\u0012\f\u0012\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\t0\u0018J\u0016\u0010\u0019\u001a\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\t2\u0006\u0010\u0010\u001a\u00020\bJ*\u0010\u001a\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\b2\u001a\u0010\u001b\u001a\u0016\u0012\f\u0012\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\t\u0012\u0004\u0012\u00020\u000f0\u001cJ\u0018\u0010\u001d\u001a\u00020\u000f2\u000e\u0010\u0011\u001a\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\tH\u0002J\u0018\u0010\u001e\u001a\u00020\u000f2\u000e\u0010\u0011\u001a\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\tH\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\"\u0010\u0006\u001a\u0016\u0012\u0004\u0012\u00020\b\u0012\f\u0012\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\t0\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u001c\u0010\n\u001a\u0010\u0012\f\u0012\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\t0\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R.\u0010\f\u001a\"\u0012\u0004\u0012\u00020\b\u0012\u0018\u0012\u0016\u0012\u0004\u0012\u00020\r\u0012\f\u0012\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\t0\u00070\u0007X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001f"}, d2 = {"Lcom/instagram/common/viewpoint/core/ViewpointRegistry;", "", "qeConfig", "Lcom/instagram/common/viewpoint/core/ViewpointQeConfig;", "<init>", "(Lcom/instagram/common/viewpoint/core/ViewpointQeConfig;)V", "viewpointDataMap", "", "Lcom/meta/analytics/dsp/uinode/DspViewableNode;", "Lcom/instagram/common/viewpoint/core/ViewpointData;", "recentlyUnregistered", "", "multiViewpointDataMap", "Lcom/instagram/common/viewpoint/core/SharedViewpointManager$UniqueKey;", "registerView", "", "node", "viewpointData", "key", "unregisterView", "getEligibleViews", "result", "", "toUnregister", "", "getViewpointData", "iterateMultiViewpointData", NativeAdvancedJsUtils.f18693p, "Lkotlin/Function1;", "addToRecentlyUnregistered", "markAsRegisteredAndThrowOnReuse", "fbandroid.java.com.instagram.common.viewpoint.core.core_an"}, k = 1, mv = {2, 1, 0}, xi = j.f6602W)
 /* renamed from: com.facebook.ads.redexgen.X.rH, reason: from Kotlin metadata */
 /* loaded from: assets/audience_network/classes2.dex */
 public final class ViewpointRegistry {
     public static byte[] A04;
     public static String[] A05 = {"hdmlO0", "Pao0VUuQuwhiUKXn89wfKbyo9VlN", "lRas", "TeEMb6eZZD5whrU9be0IX5ZV1M9RKr26", "Qnqbn5lACluJ2ApCqm5BpSPW4vhAMGtg", "gvJZrbHq4P5HQU5ufyPQZZXTOJgB", "vCidj0D7LJg5PqPuMk2VvvwKDqfmQpdZ", "0ZH2VL3AtCsRULFWGVsN9oD"};
     public final ViewpointQeConfig A00;
-    public final Map<DspViewableNode, Map<C2453rU, C2449rN<?, ?>>> A01;
-    public final Map<DspViewableNode, C2449rN<?, ?>> A02;
-    public final Set<C2449rN<?, ?>> A03;
+    public final Map<DspViewableNode, Map<C2473rU, C2469rN<?, ?>>> A01;
+    public final Map<DspViewableNode, C2469rN<?, ?>> A02;
+    public final Set<C2469rN<?, ?>> A03;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        int i10 = 0;
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             if (A05[2].length() == 16) {
                 throw new RuntimeException();
             }
             A05[4] = "98jXpaahab3bDGJdYqYLl1lSw3QVyboZ";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 47);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 47);
+            i9++;
         }
     }
 
@@ -48,18 +48,18 @@ public final class ViewpointRegistry {
     /* JADX WARN: Failed to parse debug info
     java.lang.ArrayIndexOutOfBoundsException
      */
-    public final synchronized void A07(DspViewableNode dspViewableNode, C2453rU c2453rU, C2449rN<?, ?> c2449rN) {
-        C2414qY.A09(dspViewableNode, A00(82, 4, 112));
-        C2414qY.A09(c2453rU, A00(79, 3, 83));
-        C2414qY.A09(c2449rN, A00(112, 13, 8));
-        A03(c2449rN);
-        Map<DspViewableNode, Map<C2453rU, C2449rN<?, ?>>> map = this.A01;
+    public final synchronized void A07(DspViewableNode dspViewableNode, C2473rU c2473rU, C2469rN<?, ?> c2469rN) {
+        C2434qY.A09(dspViewableNode, A00(82, 4, 112));
+        C2434qY.A09(c2473rU, A00(79, 3, 83));
+        C2434qY.A09(c2469rN, A00(112, 13, 8));
+        A03(c2469rN);
+        Map<DspViewableNode, Map<C2473rU, C2469rN<?, ?>>> map = this.A01;
         WeakHashMap weakHashMap = map.get(dspViewableNode);
         if (weakHashMap == null) {
             weakHashMap = new WeakHashMap();
             map.put(dspViewableNode, weakHashMap);
         }
-        C2449rN<?, ?> put = weakHashMap.put(c2453rU, c2449rN);
+        C2469rN<?, ?> put = weakHashMap.put(c2473rU, c2469rN);
         if (put != null) {
             A02(put);
         }
@@ -68,19 +68,19 @@ public final class ViewpointRegistry {
     /* JADX WARN: Failed to parse debug info
     java.lang.ArrayIndexOutOfBoundsException
      */
-    public final synchronized void A09(DspViewableNode dspViewableNode, AZ<? super C2449rN<?, ?>, C2427qq> az) {
-        Collection<C2449rN<?, ?>> values;
-        C2414qY.A09(dspViewableNode, A00(82, 4, 112));
-        C2414qY.A09(az, A00(73, 6, 8));
-        C2449rN<?, ?> c2449rN = this.A02.get(dspViewableNode);
-        if (c2449rN != null) {
-            az.AAK(c2449rN);
+    public final synchronized void A09(DspViewableNode dspViewableNode, AZ<? super C2469rN<?, ?>, C2447qq> az) {
+        Collection<C2469rN<?, ?>> values;
+        C2434qY.A09(dspViewableNode, A00(82, 4, 112));
+        C2434qY.A09(az, A00(73, 6, 8));
+        C2469rN<?, ?> c2469rN = this.A02.get(dspViewableNode);
+        if (c2469rN != null) {
+            az.AAK(c2469rN);
         }
-        Map<C2453rU, C2449rN<?, ?>> map = this.A01.get(dspViewableNode);
+        Map<C2473rU, C2469rN<?, ?>> map = this.A01.get(dspViewableNode);
         if (map != null && (values = map.values()) != null) {
             Iterator<T> it = values.iterator();
             while (it.hasNext()) {
-                az.AAK((C2449rN) it.next());
+                az.AAK((C2469rN) it.next());
             }
         }
     }
@@ -93,9 +93,9 @@ public final class ViewpointRegistry {
     	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    public final synchronized void A0A(Collection<DspViewableNode> collection, List<C2449rN<?, ?>> list) {
-        C2414qY.A09(collection, A00(94, 6, 42));
-        C2414qY.A09(list, A00(100, 12, 77));
+    public final synchronized void A0A(Collection<DspViewableNode> collection, List<C2469rN<?, ?>> list) {
+        C2434qY.A09(collection, A00(94, 6, 42));
+        C2434qY.A09(list, A00(100, 12, 77));
         collection.addAll(this.A02.keySet());
         if (this.A00.A00) {
             Set<DspViewableNode> keySet = this.A01.keySet();
@@ -121,58 +121,58 @@ public final class ViewpointRegistry {
     }
 
     public ViewpointRegistry(ViewpointQeConfig viewpointQeConfig) {
-        C2414qY.A09(viewpointQeConfig, A00(86, 8, 82));
+        C2434qY.A09(viewpointQeConfig, A00(86, 8, 82));
         this.A00 = viewpointQeConfig;
         this.A02 = new WeakHashMap();
         this.A03 = new LinkedHashSet();
         this.A01 = new WeakHashMap();
     }
 
-    private final void A02(C2449rN<?, ?> c2449rN) {
-        if (c2449rN.A04) {
-            c2449rN.A00 = EnumC2450rO.A04;
-            this.A03.add(c2449rN);
+    private final void A02(C2469rN<?, ?> c2469rN) {
+        if (c2469rN.A04) {
+            c2469rN.A00 = EnumC2470rO.A04;
+            this.A03.add(c2469rN);
         }
     }
 
-    private final void A03(C2449rN<?, ?> c2449rN) {
-        if (!c2449rN.A04 || c2449rN.A00 == EnumC2450rO.A02) {
-            EnumC2450rO enumC2450rO = EnumC2450rO.A03;
+    private final void A03(C2469rN<?, ?> c2469rN) {
+        if (!c2469rN.A04 || c2469rN.A00 == EnumC2470rO.A02) {
+            EnumC2470rO enumC2470rO = EnumC2470rO.A03;
             if (A05[4].charAt(11) == 'f') {
                 throw new RuntimeException();
             }
             A05[0] = "Mg2SmI";
-            c2449rN.A00 = enumC2450rO;
+            c2469rN.A00 = enumC2470rO;
             return;
         }
         throw new IllegalArgumentException(A00(5, 68, 14));
     }
 
-    public final synchronized C2449rN<?, ?> A04(DspViewableNode dspViewableNode) {
-        C2449rN<?, ?> c2449rN;
-        C2414qY.A09(dspViewableNode, A00(82, 4, 112));
-        c2449rN = this.A02.get(dspViewableNode);
-        if (c2449rN == null) {
-            c2449rN = C2449rN.A0B;
-            C2414qY.A08(c2449rN, A00(0, 5, 122));
+    public final synchronized C2469rN<?, ?> A04(DspViewableNode dspViewableNode) {
+        C2469rN<?, ?> c2469rN;
+        C2434qY.A09(dspViewableNode, A00(82, 4, 112));
+        c2469rN = this.A02.get(dspViewableNode);
+        if (c2469rN == null) {
+            c2469rN = C2469rN.A0B;
+            C2434qY.A08(c2469rN, A00(0, 5, 122));
         }
-        return c2449rN;
+        return c2469rN;
     }
 
     public final synchronized void A05(DspViewableNode dspViewableNode) {
-        C2414qY.A09(dspViewableNode, A00(82, 4, 112));
-        C2449rN it = this.A02.remove(dspViewableNode);
+        C2434qY.A09(dspViewableNode, A00(82, 4, 112));
+        C2469rN it = this.A02.remove(dspViewableNode);
         if (it != null) {
             A02(it);
         }
     }
 
-    public final synchronized void A06(DspViewableNode dspViewableNode, C2453rU c2453rU) {
-        C2414qY.A09(dspViewableNode, A00(82, 4, 112));
-        C2414qY.A09(c2453rU, A00(79, 3, 83));
-        Map<C2453rU, C2449rN<?, ?>> map = this.A01.get(dspViewableNode);
+    public final synchronized void A06(DspViewableNode dspViewableNode, C2473rU c2473rU) {
+        C2434qY.A09(dspViewableNode, A00(82, 4, 112));
+        C2434qY.A09(c2473rU, A00(79, 3, 83));
+        Map<C2473rU, C2469rN<?, ?>> map = this.A01.get(dspViewableNode);
         if (map != null) {
-            C2449rN<?, ?> remove = map.remove(c2453rU);
+            C2469rN<?, ?> remove = map.remove(c2473rU);
             if (remove != null) {
                 A02(remove);
             }
@@ -183,11 +183,11 @@ public final class ViewpointRegistry {
         }
     }
 
-    public final synchronized void A08(DspViewableNode dspViewableNode, C2449rN<?, ?> c2449rN) {
-        C2414qY.A09(dspViewableNode, A00(82, 4, 112));
-        C2414qY.A09(c2449rN, A00(112, 13, 8));
-        A03(c2449rN);
-        C2449rN it = this.A02.put(dspViewableNode, c2449rN);
+    public final synchronized void A08(DspViewableNode dspViewableNode, C2469rN<?, ?> c2469rN) {
+        C2434qY.A09(dspViewableNode, A00(82, 4, 112));
+        C2434qY.A09(c2469rN, A00(112, 13, 8));
+        A03(c2469rN);
+        C2469rN it = this.A02.put(dspViewableNode, c2469rN);
         if (it != null) {
             A02(it);
         }

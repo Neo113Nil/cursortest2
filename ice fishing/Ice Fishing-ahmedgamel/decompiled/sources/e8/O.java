@@ -2,54 +2,54 @@ package e8;
 
 import java.util.LinkedHashMap;
 import java.util.Locale;
-import u7.C5089g;
-import u7.C5095m;
-import u7.C5096n;
-import u7.C5097o;
-import u7.C5098p;
-import u7.C5099q;
-import u7.C5100r;
+import u7.C5081g;
+import u7.C5087m;
+import u7.C5088n;
+import u7.C5089o;
+import u7.C5090p;
+import u7.C5091q;
+import u7.C5092r;
 
 /* loaded from: classes2.dex */
 public abstract class O {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Object f37260a;
+    public static final Object f37336a;
 
     static {
-        C5089g c5089g = new C5089g(kotlin.jvm.internal.s.a(String.class), T.f37266a);
-        C5089g c5089g2 = new C5089g(kotlin.jvm.internal.s.a(Character.TYPE), C4480l.f37304a);
-        C5089g c5089g3 = new C5089g(kotlin.jvm.internal.s.a(char[].class), C4479k.f37303c);
-        C5089g c5089g4 = new C5089g(kotlin.jvm.internal.s.a(Double.TYPE), C4484p.f37310a);
-        C5089g c5089g5 = new C5089g(kotlin.jvm.internal.s.a(double[].class), C4483o.f37309c);
-        C5089g c5089g6 = new C5089g(kotlin.jvm.internal.s.a(Float.TYPE), C4488u.f37322a);
-        C5089g c5089g7 = new C5089g(kotlin.jvm.internal.s.a(float[].class), C4487t.f37321c);
-        C5089g c5089g8 = new C5089g(kotlin.jvm.internal.s.a(Long.TYPE), F.f37247a);
-        C5089g c5089g9 = new C5089g(kotlin.jvm.internal.s.a(long[].class), E.f37246c);
-        C5089g c5089g10 = new C5089g(kotlin.jvm.internal.s.a(C5099q.class), c0.f37282a);
-        C5089g c5089g11 = new C5089g(kotlin.jvm.internal.s.a(C5100r.class), b0.f37280c);
-        C5089g c5089g12 = new C5089g(kotlin.jvm.internal.s.a(Integer.TYPE), C4493z.f37337a);
-        C5089g c5089g13 = new C5089g(kotlin.jvm.internal.s.a(int[].class), C4492y.f37336c);
-        C5089g c5089g14 = new C5089g(kotlin.jvm.internal.s.a(C5097o.class), Z.f37276a);
-        C5089g c5089g15 = new C5089g(kotlin.jvm.internal.s.a(C5098p.class), Y.f37275c);
-        C5089g c5089g16 = new C5089g(kotlin.jvm.internal.s.a(Short.TYPE), S.f37264a);
-        C5089g c5089g17 = new C5089g(kotlin.jvm.internal.s.a(short[].class), Q.f37263c);
-        C5089g c5089g18 = new C5089g(kotlin.jvm.internal.s.a(u7.t.class), f0.f37292a);
-        C5089g c5089g19 = new C5089g(kotlin.jvm.internal.s.a(u7.u.class), e0.f37289c);
-        C5089g c5089g20 = new C5089g(kotlin.jvm.internal.s.a(Byte.TYPE), C4477i.f37299a);
-        C5089g c5089g21 = new C5089g(kotlin.jvm.internal.s.a(byte[].class), C4476h.f37298c);
-        C5089g c5089g22 = new C5089g(kotlin.jvm.internal.s.a(C5095m.class), W.f37271a);
-        C5089g c5089g23 = new C5089g(kotlin.jvm.internal.s.a(C5096n.class), V.f37270c);
-        C5089g c5089g24 = new C5089g(kotlin.jvm.internal.s.a(Boolean.TYPE), C4474f.f37290a);
-        C5089g c5089g25 = new C5089g(kotlin.jvm.internal.s.a(boolean[].class), C4473e.f37288c);
-        C5089g c5089g26 = new C5089g(kotlin.jvm.internal.s.a(u7.v.class), g0.f37296b);
-        C5089g c5089g27 = new C5089g(kotlin.jvm.internal.s.a(Void.class), H.f37250a);
+        C5081g c5081g = new C5081g(kotlin.jvm.internal.s.a(String.class), T.f37342a);
+        C5081g c5081g2 = new C5081g(kotlin.jvm.internal.s.a(Character.TYPE), C4497l.f37380a);
+        C5081g c5081g3 = new C5081g(kotlin.jvm.internal.s.a(char[].class), C4496k.f37379c);
+        C5081g c5081g4 = new C5081g(kotlin.jvm.internal.s.a(Double.TYPE), C4501p.f37386a);
+        C5081g c5081g5 = new C5081g(kotlin.jvm.internal.s.a(double[].class), C4500o.f37385c);
+        C5081g c5081g6 = new C5081g(kotlin.jvm.internal.s.a(Float.TYPE), C4505u.f37398a);
+        C5081g c5081g7 = new C5081g(kotlin.jvm.internal.s.a(float[].class), C4504t.f37397c);
+        C5081g c5081g8 = new C5081g(kotlin.jvm.internal.s.a(Long.TYPE), F.f37323a);
+        C5081g c5081g9 = new C5081g(kotlin.jvm.internal.s.a(long[].class), E.f37322c);
+        C5081g c5081g10 = new C5081g(kotlin.jvm.internal.s.a(C5091q.class), c0.f37358a);
+        C5081g c5081g11 = new C5081g(kotlin.jvm.internal.s.a(C5092r.class), b0.f37356c);
+        C5081g c5081g12 = new C5081g(kotlin.jvm.internal.s.a(Integer.TYPE), C4510z.f37413a);
+        C5081g c5081g13 = new C5081g(kotlin.jvm.internal.s.a(int[].class), C4509y.f37412c);
+        C5081g c5081g14 = new C5081g(kotlin.jvm.internal.s.a(C5089o.class), Z.f37352a);
+        C5081g c5081g15 = new C5081g(kotlin.jvm.internal.s.a(C5090p.class), Y.f37351c);
+        C5081g c5081g16 = new C5081g(kotlin.jvm.internal.s.a(Short.TYPE), S.f37340a);
+        C5081g c5081g17 = new C5081g(kotlin.jvm.internal.s.a(short[].class), Q.f37339c);
+        C5081g c5081g18 = new C5081g(kotlin.jvm.internal.s.a(u7.t.class), f0.f37368a);
+        C5081g c5081g19 = new C5081g(kotlin.jvm.internal.s.a(u7.u.class), e0.f37365c);
+        C5081g c5081g20 = new C5081g(kotlin.jvm.internal.s.a(Byte.TYPE), C4494i.f37375a);
+        C5081g c5081g21 = new C5081g(kotlin.jvm.internal.s.a(byte[].class), C4493h.f37374c);
+        C5081g c5081g22 = new C5081g(kotlin.jvm.internal.s.a(C5087m.class), W.f37347a);
+        C5081g c5081g23 = new C5081g(kotlin.jvm.internal.s.a(C5088n.class), V.f37346c);
+        C5081g c5081g24 = new C5081g(kotlin.jvm.internal.s.a(Boolean.TYPE), C4491f.f37366a);
+        C5081g c5081g25 = new C5081g(kotlin.jvm.internal.s.a(boolean[].class), C4490e.f37364c);
+        C5081g c5081g26 = new C5081g(kotlin.jvm.internal.s.a(u7.v.class), g0.f37372b);
+        C5081g c5081g27 = new C5081g(kotlin.jvm.internal.s.a(Void.class), H.f37326a);
         kotlin.jvm.internal.d a9 = kotlin.jvm.internal.s.a(R7.a.class);
-        int i = R7.a.f2760w;
-        C5089g[] c5089gArr = {c5089g, c5089g2, c5089g3, c5089g4, c5089g5, c5089g6, c5089g7, c5089g8, c5089g9, c5089g10, c5089g11, c5089g12, c5089g13, c5089g14, c5089g15, c5089g16, c5089g17, c5089g18, c5089g19, c5089g20, c5089g21, c5089g22, c5089g23, c5089g24, c5089g25, c5089g26, c5089g27, new C5089g(a9, C4485q.f37312a)};
-        LinkedHashMap linkedHashMap = new LinkedHashMap(v7.t.P(28));
-        v7.t.R(linkedHashMap, c5089gArr);
-        f37260a = linkedHashMap;
+        int i = R7.a.f2887w;
+        C5081g[] c5081gArr = {c5081g, c5081g2, c5081g3, c5081g4, c5081g5, c5081g6, c5081g7, c5081g8, c5081g9, c5081g10, c5081g11, c5081g12, c5081g13, c5081g14, c5081g15, c5081g16, c5081g17, c5081g18, c5081g19, c5081g20, c5081g21, c5081g22, c5081g23, c5081g24, c5081g25, c5081g26, c5081g27, new C5081g(a9, C4502q.f37388a)};
+        LinkedHashMap linkedHashMap = new LinkedHashMap(v7.t.t(28));
+        v7.t.v(linkedHashMap, c5081gArr);
+        f37336a = linkedHashMap;
     }
 
     public static final String a(String str) {

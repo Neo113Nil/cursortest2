@@ -6,14 +6,14 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
-import q4.C4926b;
-import r4.EnumC4958a;
-import t4.C5040a;
-import u7.C5089g;
-import v7.AbstractC5129j;
-import v7.AbstractC5130k;
+import q4.C4875b;
+import r4.EnumC4908a;
+import t4.C5041a;
+import u7.C5081g;
+import v7.AbstractC5119j;
+import v7.AbstractC5120k;
 import v7.t;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class n implements H4.d {
@@ -49,8 +49,8 @@ public final class n implements H4.d {
         int label;
         /* synthetic */ Object result;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -67,8 +67,8 @@ public final class n implements H4.d {
         int label;
         /* synthetic */ Object result;
 
-        public c(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public c(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -83,8 +83,8 @@ public final class n implements H4.d {
         int label;
         /* synthetic */ Object result;
 
-        public d(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public d(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -102,8 +102,8 @@ public final class n implements H4.d {
         int label;
         /* synthetic */ Object result;
 
-        public e(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public e(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -145,7 +145,7 @@ public final class n implements H4.d {
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Code restructure failed: missing block: B:77:0x01b2, code lost:
     
-        if (r3.resolveConditionsWithID(q4.C4925a.ID, r11) == r4) goto L77;
+        if (r3.resolveConditionsWithID(q4.C4874a.ID, r11) == r4) goto L77;
      */
     /* JADX WARN: Removed duplicated region for block: B:19:0x01c4 A[Catch: a -> 0x01d0, TryCatch #1 {a -> 0x01d0, blocks: (B:17:0x01b5, B:19:0x01c4, B:20:0x01d3, B:22:0x01e9, B:23:0x01f4), top: B:16:0x01b5 }] */
     /* JADX WARN: Removed duplicated region for block: B:22:0x01e9 A[Catch: a -> 0x01d0, TryCatch #1 {a -> 0x01d0, blocks: (B:17:0x01b5, B:19:0x01c4, B:20:0x01d3, B:22:0x01e9, B:23:0x01f4), top: B:16:0x01b5 }] */
@@ -156,7 +156,7 @@ public final class n implements H4.d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object createSubscription(V5.a aVar, List<? extends H4.g> list, InterfaceC5267d interfaceC5267d) {
+    public final Object createSubscription(V5.a aVar, List<? extends H4.g> list, InterfaceC5240d interfaceC5240d) {
         b bVar;
         int i;
         H4.g gVar;
@@ -164,20 +164,20 @@ public final class n implements H4.d {
         Z5.f status;
         n nVar;
         n nVar2;
-        C5089g c5089g;
+        C5081g c5081g;
         String str;
         String str2;
         n nVar3;
         Z5.d dVar;
         V5.a aVar2 = aVar;
-        if (interfaceC5267d instanceof b) {
-            bVar = (b) interfaceC5267d;
-            int i6 = bVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                bVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof b) {
+            bVar = (b) interfaceC5240d;
+            int i4 = bVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                bVar.label = i4 - Integer.MIN_VALUE;
                 b bVar2 = bVar;
                 Object obj = bVar2.result;
-                A7.a aVar3 = A7.a.f58n;
+                A7.a aVar3 = A7.a.f215n;
                 i = bVar2.label;
                 if (i == 0) {
                     if (i != 1) {
@@ -194,7 +194,7 @@ public final class n implements H4.d {
                             nVar = (n) bVar2.L$0;
                         }
                         try {
-                            com.bumptech.glide.d.k(obj);
+                            Q3.b.s(obj);
                             str2 = str;
                             nVar3 = nVar;
                             try {
@@ -205,35 +205,35 @@ public final class n implements H4.d {
                                 if (kotlin.jvm.internal.h.a(((com.onesignal.core.internal.config.b) nVar3._configModelStore.getModel()).getPushSubscriptionId(), aVar2.getSubscriptionId())) {
                                     ((com.onesignal.core.internal.config.b) nVar3._configModelStore.getModel()).setPushSubscriptionId(str2);
                                 }
-                                return new H4.a(H4.b.SUCCESS, t.Q(new C5089g(aVar2.getSubscriptionId(), str2)), null, null, 12, null);
-                            } catch (C5040a e9) {
+                                return new H4.a(H4.b.SUCCESS, t.u(new C5081g(aVar2.getSubscriptionId(), str2)), null, null, 12, null);
+                            } catch (C5041a e9) {
                                 e = e9;
                                 nVar = nVar3;
                             }
-                        } catch (C5040a e10) {
+                        } catch (C5041a e10) {
                             e = e10;
                         }
                     } else {
                         aVar2 = (V5.a) bVar2.L$1;
                         nVar2 = (n) bVar2.L$0;
                         try {
-                            com.bumptech.glide.d.k(obj);
-                        } catch (C5040a e11) {
+                            Q3.b.s(obj);
+                        } catch (C5041a e11) {
                             e = e11;
                             nVar = nVar2;
                         }
                     }
-                    int i9 = o.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
-                    if (i9 == 1) {
+                    int i6 = o.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
+                    if (i6 == 1) {
                         return new H4.a(H4.b.FAIL_RETRY, null, null, e.getRetryAfterSeconds(), 6, null);
                     }
-                    if (i9 == 2 || i9 == 3) {
+                    if (i6 == 2 || i6 == 3) {
                         return new H4.a(H4.b.FAIL_NORETRY, null, null, null, 14, null);
                     }
-                    if (i9 == 4) {
+                    if (i6 == 4) {
                         return new H4.a(H4.b.FAIL_UNAUTHORIZED, null, null, e.getRetryAfterSeconds(), 6, null);
                     }
-                    if (i9 != 5) {
+                    if (i6 != 5) {
                         throw new B0.c();
                     }
                     if (e.getStatusCode() == 404 && nVar._newRecordState.isInMissingRetryWindow(aVar2.getOnesignalId())) {
@@ -242,7 +242,7 @@ public final class n implements H4.d {
                     List<H4.g> rebuildOperationsIfCurrentUser = nVar._buildUserService.getRebuildOperationsIfCurrentUser(aVar2.getAppId(), aVar2.getOnesignalId());
                     return rebuildOperationsIfCurrentUser == null ? new H4.a(H4.b.FAIL_NORETRY, null, null, null, 14, null) : new H4.a(H4.b.FAIL_RETRY, null, rebuildOperationsIfCurrentUser, e.getRetryAfterSeconds(), 2, null);
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 if (list == null || !list.isEmpty()) {
                     Iterator<T> it = list.iterator();
                     while (it.hasNext()) {
@@ -295,25 +295,25 @@ public final class n implements H4.d {
                         nVar2 = this;
                     }
                     return aVar3;
-                } catch (C5040a e12) {
+                } catch (C5041a e12) {
                     e = e12;
                     nVar = this;
                 }
-                c5089g = (C5089g) obj;
-                if (c5089g != null) {
+                c5081g = (C5081g) obj;
+                if (c5081g != null) {
                     return new H4.a(H4.b.SUCCESS, null, null, null, 14, null);
                 }
-                str = (String) c5089g.f41332n;
-                C4926b c4926b = (C4926b) c5089g.f41333u;
-                if (c4926b != null) {
+                str = (String) c5081g.f41052n;
+                C4875b c4875b = (C4875b) c5081g.f41053u;
+                if (c4875b != null) {
                     s4.c cVar3 = nVar2._consistencyManager;
                     String onesignalId = aVar2.getOnesignalId();
-                    EnumC4958a enumC4958a = EnumC4958a.SUBSCRIPTION;
+                    EnumC4908a enumC4908a = EnumC4908a.SUBSCRIPTION;
                     bVar2.L$0 = nVar2;
                     bVar2.L$1 = aVar2;
                     bVar2.L$2 = str;
                     bVar2.label = 2;
-                    if (cVar3.setRywData(onesignalId, enumC4958a, c4926b, bVar2) == aVar3) {
+                    if (cVar3.setRywData(onesignalId, enumC4908a, c4875b, bVar2) == aVar3) {
                         return aVar3;
                     }
                     nVar = nVar2;
@@ -331,18 +331,18 @@ public final class n implements H4.d {
                 }
                 if (kotlin.jvm.internal.h.a(((com.onesignal.core.internal.config.b) nVar3._configModelStore.getModel()).getPushSubscriptionId(), aVar2.getSubscriptionId())) {
                 }
-                return new H4.a(H4.b.SUCCESS, t.Q(new C5089g(aVar2.getSubscriptionId(), str2)), null, null, 12, null);
+                return new H4.a(H4.b.SUCCESS, t.u(new C5081g(aVar2.getSubscriptionId(), str2)), null, null, 12, null);
             }
         }
-        bVar = new b(interfaceC5267d);
+        bVar = new b(interfaceC5240d);
         b bVar22 = bVar;
         Object obj2 = bVar22.result;
-        A7.a aVar32 = A7.a.f58n;
+        A7.a aVar32 = A7.a.f215n;
         i = bVar22.label;
         if (i == 0) {
         }
-        c5089g = (C5089g) obj2;
-        if (c5089g != null) {
+        c5081g = (C5081g) obj2;
+        if (c5081g != null) {
         }
     }
 
@@ -354,22 +354,22 @@ public final class n implements H4.d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object deleteSubscription(V5.c cVar, InterfaceC5267d interfaceC5267d) {
+    public final Object deleteSubscription(V5.c cVar, InterfaceC5240d interfaceC5240d) {
         c cVar2;
         int i;
-        C5040a c5040a;
+        C5041a c5041a;
         n nVar;
-        int i6;
-        if (interfaceC5267d instanceof c) {
-            cVar2 = (c) interfaceC5267d;
-            int i9 = cVar2.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                cVar2.label = i9 - Integer.MIN_VALUE;
+        int i4;
+        if (interfaceC5240d instanceof c) {
+            cVar2 = (c) interfaceC5240d;
+            int i6 = cVar2.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                cVar2.label = i6 - Integer.MIN_VALUE;
                 Object obj = cVar2.result;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 i = cVar2.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     String resolveJwt = com.onesignal.user.internal.operations.impl.executors.c.resolveJwt(cVar, this._jwtTokenStore, this._identityVerificationService);
                     try {
                         Q5.c cVar3 = this._subscriptionBackend;
@@ -382,11 +382,11 @@ public final class n implements H4.d {
                             return aVar;
                         }
                         nVar = this;
-                    } catch (C5040a e9) {
-                        c5040a = e9;
+                    } catch (C5041a e9) {
+                        c5041a = e9;
                         nVar = this;
-                        i6 = o.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(c5040a.getStatusCode()).ordinal()];
-                        if (i6 != 1) {
+                        i4 = o.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(c5041a.getStatusCode()).ordinal()];
+                        if (i4 != 1) {
                         }
                     }
                 } else {
@@ -396,26 +396,26 @@ public final class n implements H4.d {
                     cVar = (V5.c) cVar2.L$1;
                     nVar = (n) cVar2.L$0;
                     try {
-                        com.bumptech.glide.d.k(obj);
-                    } catch (C5040a e10) {
-                        c5040a = e10;
-                        i6 = o.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(c5040a.getStatusCode()).ordinal()];
-                        if (i6 != 1) {
-                            return new H4.a(H4.b.FAIL_RETRY, null, null, c5040a.getRetryAfterSeconds(), 6, null);
+                        Q3.b.s(obj);
+                    } catch (C5041a e10) {
+                        c5041a = e10;
+                        i4 = o.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(c5041a.getStatusCode()).ordinal()];
+                        if (i4 != 1) {
+                            return new H4.a(H4.b.FAIL_RETRY, null, null, c5041a.getRetryAfterSeconds(), 6, null);
                         }
-                        if (i6 == 4) {
-                            return new H4.a(H4.b.FAIL_UNAUTHORIZED, null, null, c5040a.getRetryAfterSeconds(), 6, null);
+                        if (i4 == 4) {
+                            return new H4.a(H4.b.FAIL_UNAUTHORIZED, null, null, c5041a.getRetryAfterSeconds(), 6, null);
                         }
-                        if (i6 != 5) {
+                        if (i4 != 5) {
                             return new H4.a(H4.b.FAIL_NORETRY, null, null, null, 14, null);
                         }
-                        if (c5040a.getStatusCode() == 404) {
-                            List v9 = AbstractC5130k.v(cVar.getOnesignalId(), cVar.getSubscriptionId());
-                            if (!v9.isEmpty()) {
-                                Iterator it = v9.iterator();
+                        if (c5041a.getStatusCode() == 404) {
+                            List t6 = AbstractC5120k.t(cVar.getOnesignalId(), cVar.getSubscriptionId());
+                            if (!t6.isEmpty()) {
+                                Iterator it = t6.iterator();
                                 while (it.hasNext()) {
                                     if (nVar._newRecordState.isInMissingRetryWindow((String) it.next())) {
-                                        return new H4.a(H4.b.FAIL_RETRY, null, null, c5040a.getRetryAfterSeconds(), 6, null);
+                                        return new H4.a(H4.b.FAIL_RETRY, null, null, c5041a.getRetryAfterSeconds(), 6, null);
                                     }
                                 }
                             }
@@ -427,9 +427,9 @@ public final class n implements H4.d {
                 return new H4.a(H4.b.SUCCESS, null, null, null, 14, null);
             }
         }
-        cVar2 = new c(interfaceC5267d);
+        cVar2 = new c(interfaceC5240d);
         Object obj2 = cVar2.result;
-        A7.a aVar2 = A7.a.f58n;
+        A7.a aVar2 = A7.a.f215n;
         i = cVar2.label;
         if (i != 0) {
         }
@@ -443,21 +443,21 @@ public final class n implements H4.d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object transferSubscription(V5.p pVar, InterfaceC5267d interfaceC5267d) {
+    public final Object transferSubscription(V5.p pVar, InterfaceC5240d interfaceC5240d) {
         d dVar;
         int i;
         try {
-            if (interfaceC5267d instanceof d) {
-                dVar = (d) interfaceC5267d;
-                int i6 = dVar.label;
-                if ((i6 & Integer.MIN_VALUE) != 0) {
-                    dVar.label = i6 - Integer.MIN_VALUE;
+            if (interfaceC5240d instanceof d) {
+                dVar = (d) interfaceC5240d;
+                int i4 = dVar.label;
+                if ((i4 & Integer.MIN_VALUE) != 0) {
+                    dVar.label = i4 - Integer.MIN_VALUE;
                     d dVar2 = dVar;
                     Object obj = dVar2.result;
-                    A7.a aVar = A7.a.f58n;
+                    A7.a aVar = A7.a.f215n;
                     i = dVar2.label;
                     if (i != 0) {
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                         f resolveBackendParams = com.onesignal.user.internal.operations.impl.executors.c.resolveBackendParams(pVar, pVar.getOnesignalId(), this._jwtTokenStore, this._identityVerificationService);
                         Q5.c cVar = this._subscriptionBackend;
                         String appId = pVar.getAppId();
@@ -473,7 +473,7 @@ public final class n implements H4.d {
                         if (i != 1) {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                     }
                     return new H4.a(H4.b.SUCCESS, null, null, null, 14, null);
                 }
@@ -481,19 +481,19 @@ public final class n implements H4.d {
             if (i != 0) {
             }
             return new H4.a(H4.b.SUCCESS, null, null, null, 14, null);
-        } catch (C5040a e9) {
-            int i9 = o.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e9.getStatusCode()).ordinal()];
-            return i9 != 1 ? i9 != 4 ? new H4.a(H4.b.FAIL_NORETRY, null, null, null, 14, null) : new H4.a(H4.b.FAIL_UNAUTHORIZED, null, null, e9.getRetryAfterSeconds(), 6, null) : new H4.a(H4.b.FAIL_RETRY, null, null, e9.getRetryAfterSeconds(), 6, null);
+        } catch (C5041a e9) {
+            int i6 = o.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e9.getStatusCode()).ordinal()];
+            return i6 != 1 ? i6 != 4 ? new H4.a(H4.b.FAIL_NORETRY, null, null, null, 14, null) : new H4.a(H4.b.FAIL_UNAUTHORIZED, null, null, e9.getRetryAfterSeconds(), 6, null) : new H4.a(H4.b.FAIL_RETRY, null, null, e9.getRetryAfterSeconds(), 6, null);
         }
-        dVar = new d(interfaceC5267d);
+        dVar = new d(interfaceC5240d);
         d dVar22 = dVar;
         Object obj2 = dVar22.result;
-        A7.a aVar2 = A7.a.f58n;
+        A7.a aVar2 = A7.a.f215n;
         i = dVar22.label;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final Object updateExistingSubscriptionFromCreate(V5.a aVar, List<? extends H4.g> list, InterfaceC5267d interfaceC5267d) {
+    public final Object updateExistingSubscriptionFromCreate(V5.a aVar, List<? extends H4.g> list, InterfaceC5240d interfaceC5240d) {
         H4.g gVar;
         String address;
         Z5.f status;
@@ -531,14 +531,14 @@ public final class n implements H4.d {
             status = aVar.getStatus();
         }
         V5.q qVar2 = new V5.q(appId, onesignalId, externalId, subscriptionId, type, enabled, str, status);
-        return updateSubscription(qVar2, d6.c.k(qVar2), interfaceC5267d);
+        return updateSubscription(qVar2, Z2.d.n(qVar2), interfaceC5240d);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Can't wrap try/catch for region: R(10:0|1|(2:3|(7:5|6|7|(3:(5:(1:(1:12)(2:54|55))(1:56)|13|14|15|16)(4:57|58|59|60)|20|(2:22|(2:24|(2:26|27)(8:28|(2:30|(3:32|(3:35|(3:37|38|39)(1:40)|33)|41))|42|(1:44)|45|(1:47)|48|49))(2:50|51))(2:52|53))(5:76|77|78|(1:80)|67)|61|62|(4:64|(2:66|67)|15|16)(1:68)))|84|6|7|(0)(0)|61|62|(0)(0)) */
     /* JADX WARN: Code restructure failed: missing block: B:69:0x012c, code lost:
     
-        if (r0.resolveConditionsWithID(q4.C4925a.ID, r8) == r2) goto L42;
+        if (r0.resolveConditionsWithID(q4.C4874a.ID, r8) == r2) goto L42;
      */
     /* JADX WARN: Code restructure failed: missing block: B:70:0x0118, code lost:
     
@@ -557,7 +557,7 @@ public final class n implements H4.d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object updateSubscription(V5.q qVar, List<? extends H4.g> list, InterfaceC5267d interfaceC5267d) {
+    public final Object updateSubscription(V5.q qVar, List<? extends H4.g> list, InterfaceC5240d interfaceC5240d) {
         e eVar;
         int i;
         V5.q qVar2;
@@ -566,16 +566,16 @@ public final class n implements H4.d {
         Object updateSubscription;
         n nVar2;
         V5.q qVar4;
-        C4926b c4926b;
-        int i6;
-        if (interfaceC5267d instanceof e) {
-            eVar = (e) interfaceC5267d;
-            int i9 = eVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                eVar.label = i9 - Integer.MIN_VALUE;
+        C4875b c4875b;
+        int i4;
+        if (interfaceC5240d instanceof e) {
+            eVar = (e) interfaceC5240d;
+            int i6 = eVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                eVar.label = i6 - Integer.MIN_VALUE;
                 e eVar2 = eVar;
                 Object obj = eVar2.result;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 i = eVar2.label;
                 if (i == 0) {
                     if (i != 1) {
@@ -590,9 +590,9 @@ public final class n implements H4.d {
                             nVar = (n) eVar2.L$0;
                         }
                         try {
-                            com.bumptech.glide.d.k(obj);
+                            Q3.b.s(obj);
                             return new H4.a(H4.b.SUCCESS, null, null, null, 14, null);
-                        } catch (C5040a e9) {
+                        } catch (C5041a e9) {
                             e = e9;
                         }
                     } else {
@@ -600,30 +600,30 @@ public final class n implements H4.d {
                         V5.q qVar6 = (V5.q) eVar2.L$1;
                         nVar2 = (n) eVar2.L$0;
                         try {
-                            com.bumptech.glide.d.k(obj);
+                            Q3.b.s(obj);
                             qVar2 = qVar5;
                             updateSubscription = obj;
                             qVar3 = qVar6;
-                        } catch (C5040a e10) {
+                        } catch (C5041a e10) {
                             e = e10;
                             qVar4 = qVar5;
                             nVar = nVar2;
                         }
                     }
-                    i6 = o.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
-                    if (i6 == 1) {
+                    i4 = o.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
+                    if (i4 == 1) {
                         return new H4.a(H4.b.FAIL_RETRY, null, null, e.getRetryAfterSeconds(), 6, null);
                     }
-                    if (i6 == 4) {
+                    if (i4 == 4) {
                         return new H4.a(H4.b.FAIL_UNAUTHORIZED, null, null, e.getRetryAfterSeconds(), 6, null);
                     }
-                    if (i6 != 5) {
+                    if (i4 != 5) {
                         return new H4.a(H4.b.FAIL_NORETRY, null, null, null, 14, null);
                     }
                     if (e.getStatusCode() == 404) {
-                        List v9 = AbstractC5130k.v(qVar4.getOnesignalId(), qVar4.getSubscriptionId());
-                        if (!v9.isEmpty()) {
-                            Iterator it = v9.iterator();
+                        List t6 = AbstractC5120k.t(qVar4.getOnesignalId(), qVar4.getSubscriptionId());
+                        if (!t6.isEmpty()) {
+                            Iterator it = t6.iterator();
                             while (it.hasNext()) {
                                 if (nVar._newRecordState.isInMissingRetryWindow((String) it.next())) {
                                     return new H4.a(H4.b.FAIL_RETRY, null, null, e.getRetryAfterSeconds(), 6, null);
@@ -640,12 +640,12 @@ public final class n implements H4.d {
                     if (kotlin.jvm.internal.h.a(((com.onesignal.core.internal.config.b) nVar._configModelStore.getModel()).getPushSubscriptionId(), subscriptionId)) {
                         ((com.onesignal.core.internal.config.b) nVar._configModelStore.getModel()).setPushSubscriptionId(createLocalId);
                     }
-                    return new H4.a(H4.b.FAIL_NORETRY, null, d6.c.k(new V5.a(qVar4.getAppId(), qVar4.getOnesignalId(), qVar4.getExternalId(), createLocalId, qVar4.getType(), qVar4.getEnabled(), qVar4.getAddress(), qVar4.getStatus())), null, 10, null);
+                    return new H4.a(H4.b.FAIL_NORETRY, null, Z2.d.n(new V5.a(qVar4.getAppId(), qVar4.getOnesignalId(), qVar4.getExternalId(), createLocalId, qVar4.getType(), qVar4.getEnabled(), qVar4.getAddress(), qVar4.getStatus())), null, 10, null);
                 }
-                com.bumptech.glide.d.k(obj);
-                Object F8 = AbstractC5129j.F(list);
-                kotlin.jvm.internal.h.c(F8, "null cannot be cast to non-null type com.onesignal.user.internal.operations.UpdateSubscriptionOperation");
-                qVar2 = (V5.q) F8;
+                Q3.b.s(obj);
+                Object D8 = AbstractC5119j.D(list);
+                kotlin.jvm.internal.h.c(D8, "null cannot be cast to non-null type com.onesignal.user.internal.operations.UpdateSubscriptionOperation");
+                qVar2 = (V5.q) D8;
                 try {
                     Q5.j convert = convert(qVar2.getType());
                     String address = qVar2.getAddress();
@@ -671,24 +671,24 @@ public final class n implements H4.d {
                         nVar2 = this;
                     }
                     return aVar;
-                } catch (C5040a e11) {
+                } catch (C5041a e11) {
                     e = e11;
                     nVar = this;
                     qVar4 = qVar2;
-                    i6 = o.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
-                    if (i6 == 1) {
+                    i4 = o.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
+                    if (i4 == 1) {
                     }
                 }
-                c4926b = (C4926b) updateSubscription;
-                if (c4926b == null) {
+                c4875b = (C4875b) updateSubscription;
+                if (c4875b == null) {
                     s4.c cVar3 = nVar2._consistencyManager;
                     String onesignalId = qVar3.getOnesignalId();
-                    EnumC4958a enumC4958a = EnumC4958a.SUBSCRIPTION;
+                    EnumC4908a enumC4908a = EnumC4908a.SUBSCRIPTION;
                     eVar2.L$0 = nVar2;
                     eVar2.L$1 = qVar2;
                     eVar2.L$2 = null;
                     eVar2.label = 2;
-                    if (cVar3.setRywData(onesignalId, enumC4958a, c4926b, eVar2) == aVar) {
+                    if (cVar3.setRywData(onesignalId, enumC4908a, c4875b, eVar2) == aVar) {
                         return aVar;
                     }
                     return new H4.a(H4.b.SUCCESS, null, null, null, 14, null);
@@ -700,25 +700,25 @@ public final class n implements H4.d {
                 eVar2.label = 3;
             }
         }
-        eVar = new e(interfaceC5267d);
+        eVar = new e(interfaceC5240d);
         e eVar22 = eVar;
         Object obj2 = eVar22.result;
-        A7.a aVar2 = A7.a.f58n;
+        A7.a aVar2 = A7.a.f215n;
         i = eVar22.label;
         if (i == 0) {
         }
-        c4926b = (C4926b) updateSubscription;
-        if (c4926b == null) {
+        c4875b = (C4875b) updateSubscription;
+        if (c4875b == null) {
         }
     }
 
     @Override // H4.d
-    public Object execute(List<? extends H4.g> list, InterfaceC5267d interfaceC5267d) {
+    public Object execute(List<? extends H4.g> list, InterfaceC5240d interfaceC5240d) {
         com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "SubscriptionOperationExecutor(operations: " + list + ')');
-        H4.g gVar = (H4.g) AbstractC5129j.A(list);
+        H4.g gVar = (H4.g) AbstractC5119j.y(list);
         if (gVar instanceof V5.a) {
             V5.a aVar = (V5.a) gVar;
-            return !com.onesignal.common.d.INSTANCE.isLocalId(aVar.getSubscriptionId()) ? updateExistingSubscriptionFromCreate(aVar, list, interfaceC5267d) : createSubscription(aVar, list, interfaceC5267d);
+            return !com.onesignal.common.d.INSTANCE.isLocalId(aVar.getSubscriptionId()) ? updateExistingSubscriptionFromCreate(aVar, list, interfaceC5240d) : createSubscription(aVar, list, interfaceC5240d);
         }
         if (!list.isEmpty()) {
             Iterator<T> it = list.iterator();
@@ -733,24 +733,24 @@ public final class n implements H4.d {
                             arrayList.add(obj);
                         }
                     }
-                    return deleteSubscription((V5.c) AbstractC5129j.A(arrayList), interfaceC5267d);
+                    return deleteSubscription((V5.c) AbstractC5119j.y(arrayList), interfaceC5240d);
                 }
             }
         }
         if (gVar instanceof V5.q) {
-            return updateSubscription((V5.q) gVar, list, interfaceC5267d);
+            return updateSubscription((V5.q) gVar, list, interfaceC5240d);
         }
         if (!(gVar instanceof V5.p)) {
             throw new Exception("Unrecognized operation: " + gVar);
         }
         if (list.size() <= 1) {
-            return transferSubscription((V5.p) gVar, interfaceC5267d);
+            return transferSubscription((V5.p) gVar, interfaceC5240d);
         }
         throw new Exception("TransferSubscriptionOperation only supports one operation! Attempted operations:\n" + list);
     }
 
     @Override // H4.d
     public List<String> getOperations() {
-        return AbstractC5130k.v(CREATE_SUBSCRIPTION, UPDATE_SUBSCRIPTION, DELETE_SUBSCRIPTION, TRANSFER_SUBSCRIPTION);
+        return AbstractC5120k.t(CREATE_SUBSCRIPTION, UPDATE_SUBSCRIPTION, DELETE_SUBSCRIPTION, TRANSFER_SUBSCRIPTION);
     }
 }

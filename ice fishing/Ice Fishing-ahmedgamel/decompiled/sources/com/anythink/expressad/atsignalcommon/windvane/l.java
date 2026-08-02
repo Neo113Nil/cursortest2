@@ -10,20 +10,20 @@ import android.webkit.WebView;
 public class l extends WebChromeClient {
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f18086b = "H5_ENTRY";
+    private static final String f18873b = "H5_ENTRY";
 
     /* renamed from: a, reason: collision with root package name */
-    WindVaneWebView f18087a;
+    WindVaneWebView f18874a;
 
     /* renamed from: c, reason: collision with root package name */
-    private com.anythink.core.express.web.c f18088c;
+    private com.anythink.core.express.web.c f18875c;
 
     public l(WindVaneWebView windVaneWebView) {
-        this.f18087a = windVaneWebView;
+        this.f18874a = windVaneWebView;
     }
 
     public final void a(com.anythink.core.express.web.c cVar) {
-        this.f18088c = cVar;
+        this.f18875c = cVar;
     }
 
     @Override // android.webkit.WebChromeClient
@@ -31,7 +31,7 @@ public class l extends WebChromeClient {
         if (consoleMessage.messageLevel() != ConsoleMessage.MessageLevel.LOG) {
             return super.onConsoleMessage(consoleMessage);
         }
-        d signalCommunication = this.f18087a.getSignalCommunication();
+        d signalCommunication = this.f18874a.getSignalCommunication();
         if (signalCommunication != null) {
             String message = consoleMessage.message();
             if (TextUtils.isEmpty(message) || !message.startsWith("mv://")) {
@@ -47,7 +47,7 @@ public class l extends WebChromeClient {
 
     @Override // android.webkit.WebChromeClient
     public boolean onJsPrompt(WebView webView, String str, String str2, String str3, JsPromptResult jsPromptResult) {
-        d signalCommunication = this.f18087a.getSignalCommunication();
+        d signalCommunication = this.f18874a.getSignalCommunication();
         if (signalCommunication == null || str3 == null || !signalCommunication.a(str3)) {
             return false;
         }
@@ -59,7 +59,7 @@ public class l extends WebChromeClient {
     @Override // android.webkit.WebChromeClient
     public void onProgressChanged(WebView webView, int i) {
         super.onProgressChanged(webView, i);
-        com.anythink.core.express.web.c cVar = this.f18088c;
+        com.anythink.core.express.web.c cVar = this.f18875c;
         if (cVar != null) {
             cVar.onProgressChanged(webView, i);
         }

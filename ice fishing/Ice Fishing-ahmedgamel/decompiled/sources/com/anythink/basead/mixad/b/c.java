@@ -7,7 +7,7 @@ public final class c extends a implements com.anythink.core.common.l.c.a.b {
     @Override // com.anythink.core.common.l.c.a.b
     public final View a() {
         try {
-            com.anythink.core.common.l.e.a.a aVar = this.f9501a;
+            com.anythink.core.common.l.e.a.a aVar = this.f10287a;
             if (aVar != null) {
                 return (View) aVar.a();
             }

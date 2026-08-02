@@ -23,41 +23,41 @@ import org.json.JSONObject;
 public final class d implements b {
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f12049b = "PlacementStatisticRecord";
+    private static final String f12835b = "PlacementStatisticRecord";
 
     /* renamed from: a, reason: collision with root package name */
-    a f12050a;
+    a f12836a;
 
     /* renamed from: c, reason: collision with root package name */
-    private final n f12051c = n.a(t.b().g());
+    private final n f12837c = n.a(t.b().g());
 
     /* renamed from: d, reason: collision with root package name */
-    private final e f12052d;
+    private final e f12838d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final f f12053e;
+    private final f f12839e;
 
     /* renamed from: f, reason: collision with root package name */
-    private final ConcurrentHashMap<String, com.anythink.core.c.a.b> f12054f;
+    private final ConcurrentHashMap<String, com.anythink.core.c.a.b> f12840f;
 
     /* renamed from: g, reason: collision with root package name */
-    private final ConcurrentHashMap<String, Boolean> f12055g;
+    private final ConcurrentHashMap<String, Boolean> f12841g;
 
     public d() {
         e a9 = e.a();
-        this.f12052d = a9;
-        this.f12053e = new f(a9);
-        this.f12054f = new ConcurrentHashMap<>();
-        this.f12055g = new ConcurrentHashMap<>();
-        this.f12050a = new a(a9);
+        this.f12838d = a9;
+        this.f12839e = new f(a9);
+        this.f12840f = new ConcurrentHashMap<>();
+        this.f12841g = new ConcurrentHashMap<>();
+        this.f12836a = new a(a9);
     }
 
     private com.anythink.core.c.a.b c(String str) {
-        l b9 = this.f12051c.b(str);
-        com.anythink.core.c.a.b bVar = this.f12054f.get(str);
+        l b9 = this.f12837c.b(str);
+        com.anythink.core.c.a.b bVar = this.f12840f.get(str);
         if (bVar == null) {
             bVar = new com.anythink.core.c.a.b();
-            String c9 = af.c(t.b().g(), u.b.f12848b, str, "");
+            String c9 = af.c(t.b().g(), u.b.f13634b, str, "");
             if (!TextUtils.isEmpty(c9)) {
                 try {
                     bVar.a(Double.parseDouble(c9));
@@ -65,7 +65,7 @@ public final class d implements b {
                     e9.getMessage();
                 }
             }
-            this.f12054f.put(str, bVar);
+            this.f12840f.put(str, bVar);
         }
         if (b9 != null) {
             bVar.a(b9.aV());
@@ -81,8 +81,8 @@ public final class d implements b {
         com.anythink.core.common.v.b.b.a().a(new Runnable() { // from class: com.anythink.core.c.b.d.1
             @Override // java.lang.Runnable
             public final void run() {
-                d.this.f12054f.remove(str);
-                d.this.f12052d.a(str);
+                d.this.f12840f.remove(str);
+                d.this.f12838d.a(str);
             }
         }, 13);
     }
@@ -98,7 +98,7 @@ public final class d implements b {
                 aVar.b(bvVar.z());
                 ad R8 = bvVar.R();
                 if (R8 != null) {
-                    cd cdVar = R8.f13439v;
+                    cd cdVar = R8.f14225v;
                     aVar.c(cdVar != null ? cdVar.f() : "");
                 }
                 aVar.a(bvVar.D());
@@ -111,7 +111,7 @@ public final class d implements b {
             aVar.c(10);
             aVar.a(i);
             if (bvVar != null) {
-                com.anythink.core.c.a.c cVar = this.f12050a.f12034a.get(str);
+                com.anythink.core.c.a.c cVar = this.f12836a.f12820a.get(str);
                 aVar.a();
                 aVar.toString();
                 if (cVar != null) {
@@ -129,22 +129,22 @@ public final class d implements b {
 
     private boolean b(String str, int i) {
         com.anythink.core.c.a.b c9 = c(str);
-        boolean z3 = c9.c() || c9.h();
-        Boolean bool = this.f12055g.get(str);
+        boolean z6 = c9.c() || c9.h();
+        Boolean bool = this.f12841g.get(str);
         if (bool != null) {
             boolean equals = Boolean.TRUE.equals(bool);
-            if (!z3 && equals) {
+            if (!z6 && equals) {
                 d(str);
             }
-        } else if (!z3) {
+        } else if (!z6) {
             d(str);
         }
-        this.f12055g.put(str, Boolean.valueOf(z3));
-        return i == 4 ? c9.c() : z3;
+        this.f12841g.put(str, Boolean.valueOf(z6));
+        return i == 4 ? c9.c() : z6;
     }
 
-    private JSONArray b(int i, String str, int i6) {
-        List<com.anythink.core.c.a.a> a9 = a(i, str, i6);
+    private JSONArray b(int i, String str, int i4) {
+        List<com.anythink.core.c.a.a> a9 = a(i, str, i4);
         if (a9 == null || a9.size() == 0) {
             return null;
         }
@@ -169,7 +169,7 @@ public final class d implements b {
             aVar.b(bvVar.z());
             ad R8 = bvVar.R();
             if (R8 != null) {
-                cd cdVar = R8.f13439v;
+                cd cdVar = R8.f14225v;
                 aVar.c(cdVar != null ? cdVar.f() : "");
             }
             aVar.a(bvVar.aC() > 0.0d ? bvVar.aC() : bvVar.D());
@@ -203,7 +203,7 @@ public final class d implements b {
             aVar.b(bvVar.z());
             ad R8 = bvVar.R();
             if (R8 != null) {
-                cd cdVar = R8.f13439v;
+                cd cdVar = R8.f14225v;
                 aVar.c(cdVar != null ? cdVar.f() : "");
             }
             aVar.a(bvVar.aC() > 0.0d ? bvVar.aC() : bvVar.D());
@@ -216,10 +216,10 @@ public final class d implements b {
     }
 
     @Override // com.anythink.core.c.b.b
-    public final List<com.anythink.core.c.a.a> a(int i, String str, int i6) {
-        e eVar = this.f12052d;
+    public final List<com.anythink.core.c.a.a> a(int i, String str, int i4) {
+        e eVar = this.f12838d;
         if (eVar != null) {
-            return eVar.a(i, str, i6);
+            return eVar.a(i, str, i4);
         }
         return null;
     }
@@ -242,28 +242,28 @@ public final class d implements b {
     }
 
     @Override // com.anythink.core.c.b.b
-    public final JSONObject a(String str, int i, int i6) {
+    public final JSONObject a(String str, int i, int i4) {
         if (TextUtils.isEmpty(str)) {
             return null;
         }
         try {
             JSONObject jSONObject = new JSONObject();
             if (i == 4) {
-                JSONArray b9 = b(4, str, i6);
+                JSONArray b9 = b(4, str, i4);
                 if (b9 != null) {
                     jSONObject.put("imp", b9);
                 }
             } else if (i == 10) {
-                JSONArray b10 = b(10, str, i6);
+                JSONArray b10 = b(10, str, i4);
                 if (b10 != null) {
                     jSONObject.put("fill", b10);
                 }
             } else {
-                JSONArray b11 = b(10, str, i6);
+                JSONArray b11 = b(10, str, i4);
                 if (b11 != null) {
                     jSONObject.put("fill", b11);
                 }
-                JSONArray b12 = b(4, str, i6);
+                JSONArray b12 = b(4, str, i4);
                 if (b12 != null) {
                     jSONObject.put("imp", b12);
                 }
@@ -281,10 +281,10 @@ public final class d implements b {
 
     @Override // com.anythink.core.c.b.b
     public final com.anythink.core.c.a.d a(String str, int i, com.anythink.core.d.f fVar) {
-        a aVar = this.f12050a;
-        com.anythink.core.c.a.c cVar = aVar.f12034a.get(str);
-        int i6 = fVar.a() == 1 ? i : -1;
-        if (cVar != null && cVar.b(fVar) && cVar.a(i6) != null) {
+        a aVar = this.f12836a;
+        com.anythink.core.c.a.c cVar = aVar.f12820a.get(str);
+        int i4 = fVar.a() == 1 ? i : -1;
+        if (cVar != null && cVar.b(fVar) && cVar.a(i4) != null) {
             cVar.c(i);
         } else {
             cVar = new com.anythink.core.c.a.c();
@@ -297,17 +297,17 @@ public final class d implements b {
             calendar.set(12, 0);
             calendar.set(13, 0);
             calendar.set(14, 0);
-            cVar.a(i6, aVar.f12035b.a(str, i6, calendar.getTimeInMillis(), c9));
-            aVar.f12034a.put(str, cVar);
+            cVar.a(i4, aVar.f12821b.a(str, i4, calendar.getTimeInMillis(), c9));
+            aVar.f12820a.put(str, cVar);
         }
-        return cVar.b(i6);
+        return cVar.b(i4);
     }
 
     private void a(com.anythink.core.c.a.a aVar, ATAdRequest aTAdRequest) {
         aVar.toString();
         String j6 = aVar.j();
         com.anythink.core.c.a.b c9 = c(j6);
-        e eVar = this.f12052d;
+        e eVar = this.f12838d;
         if (eVar != null) {
             eVar.a(aVar);
         }
@@ -327,7 +327,7 @@ public final class d implements b {
         }
         try {
             if (jSONArray.length() > 0) {
-                return jSONArray.getJSONObject(0).getDouble(k.f14285H);
+                return jSONArray.getJSONObject(0).getDouble(k.f15071H);
             }
             return -1.0d;
         } catch (Exception e9) {
@@ -337,8 +337,8 @@ public final class d implements b {
     }
 
     private void a(String str, com.anythink.core.c.a.b bVar, ATAdRequest aTAdRequest) {
-        double[][] f3;
-        if (bVar == null || (f3 = bVar.f()) == null) {
+        double[][] f2;
+        if (bVar == null || (f2 = bVar.f()) == null) {
             return;
         }
         if (bVar.e()) {
@@ -346,13 +346,13 @@ public final class d implements b {
             return;
         }
         double[] a9 = a(str, bVar);
-        double d2 = a9[0];
-        double d9 = a9[1];
-        if (d2 == d9) {
+        double d9 = a9[0];
+        double d10 = a9[1];
+        if (d9 == d10) {
             return;
         }
-        double[] a10 = d2 > 0.0d ? a(f3, d2) : null;
-        double[] a11 = d9 > 0.0d ? a(f3, d9) : null;
+        double[] a10 = d9 > 0.0d ? a(f2, d9) : null;
+        double[] a11 = d10 > 0.0d ? a(f2, d10) : null;
         if (a10 == null) {
             if (a11 == null) {
                 return;
@@ -369,7 +369,7 @@ public final class d implements b {
             aVar.b(bvVar.z());
             ad R8 = bvVar.R();
             if (R8 != null) {
-                cd cdVar = R8.f13439v;
+                cd cdVar = R8.f14225v;
                 aVar.c(cdVar != null ? cdVar.f() : "");
             }
             aVar.a(bvVar.D());
@@ -386,24 +386,24 @@ public final class d implements b {
 
     private double[] a(String str, com.anythink.core.c.a.b bVar) {
         if (bVar != null && !bVar.e()) {
-            double a9 = this.f12053e.a(bVar.d(), str);
-            double g4 = bVar.g();
-            if (g4 != a9) {
+            double a9 = this.f12839e.a(bVar.d(), str);
+            double g9 = bVar.g();
+            if (g9 != a9) {
                 bVar.a(a9);
-                this.f12054f.put(str, bVar);
-                af.b(t.b().g(), u.b.f12848b, str, String.valueOf(a9));
+                this.f12840f.put(str, bVar);
+                af.b(t.b().g(), u.b.f13634b, str, String.valueOf(a9));
             }
-            return new double[]{a9, g4};
+            return new double[]{a9, g9};
         }
         return new double[]{-1.0d, -1.0d};
     }
 
-    private static double[] a(double[][] dArr, double d2) {
+    private static double[] a(double[][] dArr, double d9) {
         for (double[] dArr2 : dArr) {
             if (dArr2.length == 2) {
-                double d9 = dArr2[0];
-                double d10 = dArr2[1];
-                if (d2 >= d9 && d2 <= d10) {
+                double d10 = dArr2[0];
+                double d11 = dArr2[1];
+                if (d9 >= d10 && d9 <= d11) {
                     return dArr2;
                 }
             }
@@ -413,6 +413,6 @@ public final class d implements b {
 
     private void a(String str, ATAdRequest aTAdRequest) {
         t b9 = t.b();
-        this.f12051c.a(this.f12051c.e(str), b9.p(), b9.q(), str, null, null, 2, true, aTAdRequest);
+        this.f12837c.a(this.f12837c.e(str), b9.p(), b9.q(), str, null, null, 2, true, aTAdRequest);
     }
 }

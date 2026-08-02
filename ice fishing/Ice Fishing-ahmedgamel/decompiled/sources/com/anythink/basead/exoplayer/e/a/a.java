@@ -11,155 +11,155 @@ import java.util.List;
 abstract class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f6919a = 8;
+    public static final int f7705a = 8;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f6920b = 12;
+    public static final int f7706b = 12;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f6921c = 16;
+    public static final int f7707c = 16;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f6922d = 1;
+    public static final int f7708d = 1;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f6923e = 0;
+    public static final int f7709e = 0;
     public final int aU;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final int f6924f = af.f("ftyp");
+    public static final int f7710f = af.f("ftyp");
 
     /* renamed from: g, reason: collision with root package name */
-    public static final int f6925g = af.f("avc1");
+    public static final int f7711g = af.f("avc1");
 
     /* renamed from: h, reason: collision with root package name */
-    public static final int f6926h = af.f("avc3");
+    public static final int f7712h = af.f("avc3");
     public static final int i = af.f("hvc1");
 
     /* renamed from: j, reason: collision with root package name */
-    public static final int f6927j = af.f("hev1");
+    public static final int f7713j = af.f("hev1");
 
     /* renamed from: k, reason: collision with root package name */
-    public static final int f6928k = af.f("s263");
+    public static final int f7714k = af.f("s263");
 
     /* renamed from: l, reason: collision with root package name */
-    public static final int f6929l = af.f("d263");
+    public static final int f7715l = af.f("d263");
 
     /* renamed from: m, reason: collision with root package name */
-    public static final int f6930m = af.f("mdat");
+    public static final int f7716m = af.f("mdat");
 
     /* renamed from: n, reason: collision with root package name */
-    public static final int f6931n = af.f("mp4a");
+    public static final int f7717n = af.f("mp4a");
 
     /* renamed from: o, reason: collision with root package name */
-    public static final int f6932o = af.f(".mp3");
+    public static final int f7718o = af.f(".mp3");
 
     /* renamed from: p, reason: collision with root package name */
-    public static final int f6933p = af.f("wave");
+    public static final int f7719p = af.f("wave");
 
     /* renamed from: q, reason: collision with root package name */
-    public static final int f6934q = af.f("lpcm");
+    public static final int f7720q = af.f("lpcm");
 
     /* renamed from: r, reason: collision with root package name */
-    public static final int f6935r = af.f("sowt");
+    public static final int f7721r = af.f("sowt");
 
     /* renamed from: s, reason: collision with root package name */
-    public static final int f6936s = af.f("ac-3");
+    public static final int f7722s = af.f("ac-3");
 
     /* renamed from: t, reason: collision with root package name */
-    public static final int f6937t = af.f("dac3");
+    public static final int f7723t = af.f("dac3");
 
     /* renamed from: u, reason: collision with root package name */
-    public static final int f6938u = af.f("ec-3");
+    public static final int f7724u = af.f("ec-3");
 
     /* renamed from: v, reason: collision with root package name */
-    public static final int f6939v = af.f("dec3");
+    public static final int f7725v = af.f("dec3");
 
     /* renamed from: w, reason: collision with root package name */
-    public static final int f6940w = af.f("dtsc");
+    public static final int f7726w = af.f("dtsc");
 
     /* renamed from: x, reason: collision with root package name */
-    public static final int f6941x = af.f("dtsh");
+    public static final int f7727x = af.f("dtsh");
 
     /* renamed from: y, reason: collision with root package name */
-    public static final int f6942y = af.f("dtsl");
+    public static final int f7728y = af.f("dtsl");
 
     /* renamed from: z, reason: collision with root package name */
-    public static final int f6943z = af.f("dtse");
+    public static final int f7729z = af.f("dtse");
 
     /* renamed from: A, reason: collision with root package name */
-    public static final int f6895A = af.f("ddts");
+    public static final int f7681A = af.f("ddts");
 
     /* renamed from: B, reason: collision with root package name */
-    public static final int f6896B = af.f("tfdt");
+    public static final int f7682B = af.f("tfdt");
 
     /* renamed from: C, reason: collision with root package name */
-    public static final int f6897C = af.f("tfhd");
+    public static final int f7683C = af.f("tfhd");
 
     /* renamed from: D, reason: collision with root package name */
-    public static final int f6898D = af.f("trex");
+    public static final int f7684D = af.f("trex");
 
     /* renamed from: E, reason: collision with root package name */
-    public static final int f6899E = af.f("trun");
+    public static final int f7685E = af.f("trun");
 
     /* renamed from: F, reason: collision with root package name */
-    public static final int f6900F = af.f("sidx");
+    public static final int f7686F = af.f("sidx");
 
     /* renamed from: G, reason: collision with root package name */
-    public static final int f6901G = af.f("moov");
+    public static final int f7687G = af.f("moov");
 
     /* renamed from: H, reason: collision with root package name */
-    public static final int f6902H = af.f("mvhd");
+    public static final int f7688H = af.f("mvhd");
 
     /* renamed from: I, reason: collision with root package name */
-    public static final int f6903I = af.f("trak");
+    public static final int f7689I = af.f("trak");
     public static final int J = af.f("mdia");
 
     /* renamed from: K, reason: collision with root package name */
-    public static final int f6904K = af.f("minf");
+    public static final int f7690K = af.f("minf");
 
     /* renamed from: L, reason: collision with root package name */
-    public static final int f6905L = af.f("stbl");
+    public static final int f7691L = af.f("stbl");
 
     /* renamed from: M, reason: collision with root package name */
-    public static final int f6906M = af.f("avcC");
+    public static final int f7692M = af.f("avcC");
 
     /* renamed from: N, reason: collision with root package name */
-    public static final int f6907N = af.f("hvcC");
+    public static final int f7693N = af.f("hvcC");
 
     /* renamed from: O, reason: collision with root package name */
-    public static final int f6908O = af.f("esds");
+    public static final int f7694O = af.f("esds");
 
     /* renamed from: P, reason: collision with root package name */
-    public static final int f6909P = af.f("moof");
+    public static final int f7695P = af.f("moof");
 
     /* renamed from: Q, reason: collision with root package name */
-    public static final int f6910Q = af.f("traf");
+    public static final int f7696Q = af.f("traf");
 
     /* renamed from: R, reason: collision with root package name */
-    public static final int f6911R = af.f("mvex");
+    public static final int f7697R = af.f("mvex");
 
     /* renamed from: S, reason: collision with root package name */
-    public static final int f6912S = af.f("mehd");
+    public static final int f7698S = af.f("mehd");
 
     /* renamed from: T, reason: collision with root package name */
-    public static final int f6913T = af.f("tkhd");
+    public static final int f7699T = af.f("tkhd");
 
     /* renamed from: U, reason: collision with root package name */
-    public static final int f6914U = af.f("edts");
+    public static final int f7700U = af.f("edts");
 
     /* renamed from: V, reason: collision with root package name */
-    public static final int f6915V = af.f("elst");
+    public static final int f7701V = af.f("elst");
 
     /* renamed from: W, reason: collision with root package name */
-    public static final int f6916W = af.f("mdhd");
+    public static final int f7702W = af.f("mdhd");
 
     /* renamed from: X, reason: collision with root package name */
-    public static final int f6917X = af.f("hdlr");
+    public static final int f7703X = af.f("hdlr");
     public static final int Y = af.f("stsd");
 
     /* renamed from: Z, reason: collision with root package name */
-    public static final int f6918Z = af.f("pssh");
+    public static final int f7704Z = af.f("pssh");
     public static final int aa = af.f("sinf");
     public static final int ab = af.f("schm");
     public static final int ac = af.f("schi");
@@ -222,19 +222,19 @@ abstract class a {
 
         private int f(int i) {
             int size = this.aW.size();
-            int i6 = 0;
-            for (int i9 = 0; i9 < size; i9++) {
-                if (this.aW.get(i9).aU == i) {
-                    i6++;
+            int i4 = 0;
+            for (int i6 = 0; i6 < size; i6++) {
+                if (this.aW.get(i6).aU == i) {
+                    i4++;
                 }
             }
             int size2 = this.aX.size();
-            for (int i10 = 0; i10 < size2; i10++) {
-                if (this.aX.get(i10).aU == i) {
-                    i6++;
+            for (int i9 = 0; i9 < size2; i9++) {
+                if (this.aX.get(i9).aU == i) {
+                    i4++;
                 }
             }
-            return i6;
+            return i4;
         }
 
         public final void a(b bVar) {
@@ -243,8 +243,8 @@ abstract class a {
 
         public final b d(int i) {
             int size = this.aW.size();
-            for (int i6 = 0; i6 < size; i6++) {
-                b bVar = this.aW.get(i6);
+            for (int i4 = 0; i4 < size; i4++) {
+                b bVar = this.aW.get(i4);
                 if (bVar.aU == i) {
                     return bVar;
                 }
@@ -254,8 +254,8 @@ abstract class a {
 
         public final C0021a e(int i) {
             int size = this.aX.size();
-            for (int i6 = 0; i6 < size; i6++) {
-                C0021a c0021a = this.aX.get(i6);
+            for (int i4 = 0; i4 < size; i4++) {
+                C0021a c0021a = this.aX.get(i4);
                 if (c0021a.aU == i) {
                     return c0021a;
                 }
@@ -282,24 +282,24 @@ abstract class a {
         }
     }
 
-    public a(int i6) {
-        this.aU = i6;
+    public a(int i4) {
+        this.aU = i4;
     }
 
-    public static int a(int i6) {
-        return (i6 >> 24) & p.f8473b;
+    public static int a(int i4) {
+        return (i4 >> 24) & p.f9259b;
     }
 
-    public static int b(int i6) {
-        return i6 & 16777215;
+    public static int b(int i4) {
+        return i4 & 16777215;
     }
 
-    public static String c(int i6) {
+    public static String c(int i4) {
         StringBuilder sb = new StringBuilder();
-        sb.append((char) ((i6 >> 24) & p.f8473b));
-        sb.append((char) ((i6 >> 16) & p.f8473b));
-        sb.append((char) ((i6 >> 8) & p.f8473b));
-        sb.append((char) (i6 & p.f8473b));
+        sb.append((char) ((i4 >> 24) & p.f9259b));
+        sb.append((char) ((i4 >> 16) & p.f9259b));
+        sb.append((char) ((i4 >> 8) & p.f9259b));
+        sb.append((char) (i4 & p.f9259b));
         return sb.toString();
     }
 

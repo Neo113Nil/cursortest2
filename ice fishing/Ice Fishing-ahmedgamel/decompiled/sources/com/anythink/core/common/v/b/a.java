@@ -13,34 +13,34 @@ import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
-import u1.h;
+import w.AbstractC5128c;
 
 /* loaded from: classes.dex */
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f16682a = "TaskBusinessThreads";
+    private static final String f17469a = "TaskBusinessThreads";
 
     /* renamed from: b, reason: collision with root package name */
-    private final ExecutorService f16683b;
+    private final ExecutorService f17470b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final ExecutorService f16684c;
+    private final ExecutorService f17471c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final ExecutorService f16685d;
+    private final ExecutorService f17472d;
 
     /* renamed from: e, reason: collision with root package name */
-    private volatile ExecutorService f16686e;
+    private volatile ExecutorService f17473e;
 
     /* renamed from: f, reason: collision with root package name */
-    private volatile ExecutorService f16687f;
+    private volatile ExecutorService f17474f;
 
     /* renamed from: g, reason: collision with root package name */
-    private final ExecutorService f16688g;
+    private final ExecutorService f17475g;
 
     /* renamed from: h, reason: collision with root package name */
-    private final ConcurrentHashMap<String, Handler> f16689h = new ConcurrentHashMap<>();
+    private final ConcurrentHashMap<String, Handler> f17476h = new ConcurrentHashMap<>();
 
     /* renamed from: com.anythink.core.common.v.b.a$a, reason: collision with other inner class name */
     public class RejectedExecutionHandlerC0100a implements RejectedExecutionHandler {
@@ -50,7 +50,7 @@ public class a {
         @Override // java.util.concurrent.RejectedExecutionHandler
         public final void rejectedExecution(Runnable runnable, ThreadPoolExecutor threadPoolExecutor) {
             Objects.toString(threadPoolExecutor);
-            a.this.f16683b.execute(runnable);
+            a.this.f17470b.execute(runnable);
         }
 
         public /* synthetic */ RejectedExecutionHandlerC0100a(a aVar, byte b9) {
@@ -60,17 +60,17 @@ public class a {
 
     public a() {
         TimeUnit timeUnit = TimeUnit.SECONDS;
-        this.f16683b = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 30L, timeUnit, new SynchronousQueue(), new c());
+        this.f17470b = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 30L, timeUnit, new SynchronousQueue(), new c());
         int availableProcessors = Runtime.getRuntime().availableProcessors();
         byte b9 = 0;
-        this.f16684c = new ThreadPoolExecutor(availableProcessors + 1, availableProcessors * 2, 60L, timeUnit, new LinkedBlockingQueue(100), new c(), new RejectedExecutionHandlerC0100a(this, b9));
-        this.f16685d = new ThreadPoolExecutor(0, 5, 60L, timeUnit, new LinkedBlockingQueue(), new c(), new RejectedExecutionHandlerC0100a(this, b9));
-        this.f16688g = new ThreadPoolExecutor(0, 1, 30L, timeUnit, new LinkedBlockingQueue(), new c(), new RejectedExecutionHandlerC0100a(this, b9));
+        this.f17471c = new ThreadPoolExecutor(availableProcessors + 1, availableProcessors * 2, 60L, timeUnit, new LinkedBlockingQueue(100), new c(), new RejectedExecutionHandlerC0100a(this, b9));
+        this.f17472d = new ThreadPoolExecutor(0, 5, 60L, timeUnit, new LinkedBlockingQueue(), new c(), new RejectedExecutionHandlerC0100a(this, b9));
+        this.f17475g = new ThreadPoolExecutor(0, 1, 30L, timeUnit, new LinkedBlockingQueue(), new c(), new RejectedExecutionHandlerC0100a(this, b9));
     }
 
     private synchronized Handler b(String str) {
         Handler handler;
-        Handler handler2 = this.f16689h.get(str);
+        Handler handler2 = this.f17476h.get(str);
         if (handler2 != null) {
             return handler2;
         }
@@ -82,7 +82,7 @@ public class a {
             Thread.currentThread().getName();
             handler = new Handler(handlerThread.getLooper());
             try {
-                this.f16689h.put(str, handler);
+                this.f17476h.put(str, handler);
             } catch (Throwable th) {
                 th = th;
                 handler2 = handler;
@@ -114,7 +114,7 @@ public class a {
             if (i != 13) {
                 if (i != 3) {
                     if (i == 4) {
-                        this.f16685d.execute(dVar);
+                        this.f17472d.execute(dVar);
                         return;
                     }
                     if (i != 5) {
@@ -122,24 +122,24 @@ public class a {
                             if (i != 8) {
                                 if (i != 16) {
                                     if (i != 17) {
-                                        this.f16683b.execute(dVar);
+                                        this.f17470b.execute(dVar);
                                         return;
                                     } else {
-                                        this.f16688g.execute(dVar);
+                                        this.f17475g.execute(dVar);
                                         return;
                                     }
                                 }
-                                if (this.f16687f == null) {
+                                if (this.f17474f == null) {
                                     synchronized (a.class) {
                                         try {
-                                            if (this.f16687f == null) {
-                                                this.f16687f = new ThreadPoolExecutor(0, 1, 30L, TimeUnit.SECONDS, new LinkedBlockingQueue(), new c());
+                                            if (this.f17474f == null) {
+                                                this.f17474f = new ThreadPoolExecutor(0, 1, 30L, TimeUnit.SECONDS, new LinkedBlockingQueue(), new c());
                                             }
                                         } finally {
                                         }
                                     }
                                 }
-                                this.f16687f.execute(dVar);
+                                this.f17474f.execute(dVar);
                                 return;
                             }
                         }
@@ -152,21 +152,21 @@ public class a {
                 }
                 return;
             }
-            this.f16684c.execute(dVar);
+            this.f17471c.execute(dVar);
             return;
         }
-        if (this.f16686e == null) {
+        if (this.f17473e == null) {
             synchronized (a.class) {
                 try {
-                    if (this.f16686e == null) {
-                        this.f16686e = new ThreadPoolExecutor(0, 1, 60L, TimeUnit.SECONDS, new LinkedBlockingQueue(), new c());
+                    if (this.f17473e == null) {
+                        this.f17473e = new ThreadPoolExecutor(0, 1, 60L, TimeUnit.SECONDS, new LinkedBlockingQueue(), new c());
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        this.f16686e.execute(dVar);
+        this.f17473e.execute(dVar);
     }
 
     public static String b(int i) {
@@ -227,7 +227,7 @@ public class a {
                 concat = "h_a_d_u";
                 break;
         }
-        return h.f("anythink_", concat);
+        return AbstractC5128c.f("anythink_", concat);
     }
 
     private Handler a(String str) {
@@ -235,7 +235,7 @@ public class a {
     }
 
     public final Executor a() {
-        return this.f16684c;
+        return this.f17471c;
     }
 
     private void a(d dVar, String str) {
@@ -246,6 +246,6 @@ public class a {
     }
 
     public final ExecutorService b() {
-        return this.f16683b;
+        return this.f17470b;
     }
 }

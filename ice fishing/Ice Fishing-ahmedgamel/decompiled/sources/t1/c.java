@@ -1,300 +1,230 @@
 package t1;
 
-import android.content.ContentResolver;
-import android.content.Context;
-import android.database.Cursor;
-import android.net.Uri;
-import android.os.ParcelFileDescriptor;
-import android.text.TextUtils;
 import android.util.Log;
-import com.bumptech.glide.j;
-import com.bumptech.glide.load.data.h;
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import y1.z;
+import com.google.android.gms.internal.ads.Wv;
+import java.nio.BufferUnderflowException;
+import java.nio.ByteBuffer;
 
 /* loaded from: classes.dex */
-public final class c implements com.bumptech.glide.load.data.d {
+public final class c {
 
-    /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f40792n;
+    /* renamed from: b, reason: collision with root package name */
+    public ByteBuffer f40858b;
 
-    /* renamed from: u, reason: collision with root package name */
-    public final Comparable f40793u;
+    /* renamed from: c, reason: collision with root package name */
+    public b f40859c;
 
-    /* renamed from: v, reason: collision with root package name */
-    public final Object f40794v;
+    /* renamed from: a, reason: collision with root package name */
+    public final byte[] f40857a = new byte[256];
 
-    /* renamed from: w, reason: collision with root package name */
-    public Object f40795w;
+    /* renamed from: d, reason: collision with root package name */
+    public int f40860d = 0;
 
-    public /* synthetic */ c(Comparable comparable, Object obj, int i) {
-        this.f40792n = i;
-        this.f40793u = comparable;
-        this.f40794v = obj;
+    public final boolean a() {
+        return this.f40859c.f40848b != 0;
     }
 
-    public static c c(Context context, Uri uri, d dVar) {
-        return new c(uri, new e(com.bumptech.glide.c.a(context).f23374v.a().e(), dVar, com.bumptech.glide.c.a(context).f23375w, context.getContentResolver()), 0);
-    }
-
-    @Override // com.bumptech.glide.load.data.d
-    public final Class a() {
-        switch (this.f40792n) {
-            case 0:
-                return InputStream.class;
-            case 1:
-                ((z) this.f40794v).getClass();
-                return InputStream.class;
-            default:
-                return ((z) this.f40794v).b();
+    public final b b() {
+        byte[] bArr;
+        if (this.f40858b == null) {
+            throw new IllegalStateException("You must call setData() before parseHeader()");
         }
-    }
-
-    @Override // com.bumptech.glide.load.data.d
-    public final void b() {
-        switch (this.f40792n) {
-            case 0:
-                InputStream inputStream = (InputStream) this.f40795w;
-                if (inputStream != null) {
-                    try {
-                        inputStream.close();
-                        break;
-                    } catch (IOException unused) {
-                        return;
-                    }
-                }
-                break;
-            case 1:
-                try {
-                    ((ByteArrayInputStream) this.f40795w).close();
-                    break;
-                } catch (IOException unused2) {
-                    return;
-                }
-            default:
-                Object obj = this.f40795w;
-                if (obj != null) {
-                    try {
-                        switch (((z) this.f40794v).f41845n) {
-                            case 8:
-                                ((ParcelFileDescriptor) obj).close();
-                                break;
-                            default:
-                                ((InputStream) obj).close();
-                                break;
+        if (a()) {
+            return this.f40859c;
+        }
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < 6; i++) {
+            sb.append((char) c());
+        }
+        if (sb.toString().startsWith("GIF")) {
+            this.f40859c.f40852f = this.f40858b.getShort();
+            this.f40859c.f40853g = this.f40858b.getShort();
+            int c9 = c();
+            b bVar = this.f40859c;
+            bVar.f40854h = (c9 & 128) != 0;
+            bVar.i = (int) Math.pow(2.0d, (c9 & 7) + 1);
+            this.f40859c.f40855j = c();
+            b bVar2 = this.f40859c;
+            c();
+            bVar2.getClass();
+            if (this.f40859c.f40854h && !a()) {
+                b bVar3 = this.f40859c;
+                bVar3.f40847a = e(bVar3.i);
+                b bVar4 = this.f40859c;
+                bVar4.f40856k = bVar4.f40847a[bVar4.f40855j];
+            }
+        } else {
+            this.f40859c.f40848b = 1;
+        }
+        if (!a()) {
+            boolean z6 = false;
+            while (!z6 && !a() && this.f40859c.f40849c <= Integer.MAX_VALUE) {
+                int c10 = c();
+                if (c10 == 33) {
+                    int c11 = c();
+                    if (c11 == 1) {
+                        f();
+                    } else if (c11 == 249) {
+                        this.f40859c.f40850d = new C5031a();
+                        c();
+                        int c12 = c();
+                        C5031a c5031a = this.f40859c.f40850d;
+                        int i4 = (c12 & 28) >> 2;
+                        c5031a.f40843g = i4;
+                        if (i4 == 0) {
+                            c5031a.f40843g = 1;
                         }
-                        break;
-                    } catch (IOException unused3) {
-                        return;
-                    }
-                }
-                break;
-        }
-    }
-
-    @Override // com.bumptech.glide.load.data.d
-    public final void cancel() {
-        int i = this.f40792n;
-    }
-
-    @Override // com.bumptech.glide.load.data.d
-    public final int d() {
-        switch (this.f40792n) {
-        }
-        return 1;
-    }
-
-    @Override // com.bumptech.glide.load.data.d
-    public final void e(j jVar, com.bumptech.glide.load.data.c cVar) {
-        Object open;
-        switch (this.f40792n) {
-            case 0:
-                try {
-                    InputStream i = i();
-                    this.f40795w = i;
-                    cVar.f(i);
-                    break;
-                } catch (FileNotFoundException e9) {
-                    if (Log.isLoggable("MediaStoreThumbFetcher", 3)) {
-                        Log.d("MediaStoreThumbFetcher", "Failed to find thumbnail file", e9);
-                    }
-                    cVar.c(e9);
-                    return;
-                }
-            case 1:
-                try {
-                    ByteArrayInputStream a9 = z.a((String) this.f40793u);
-                    this.f40795w = a9;
-                    cVar.f(a9);
-                    break;
-                } catch (IllegalArgumentException e10) {
-                    cVar.c(e10);
-                }
-            default:
-                try {
-                    z zVar = (z) this.f40794v;
-                    File file = (File) this.f40793u;
-                    switch (zVar.f41845n) {
-                        case 8:
-                            open = ParcelFileDescriptor.open(file, 268435456);
-                            break;
-                        default:
-                            open = new FileInputStream(file);
-                            break;
-                    }
-                    this.f40795w = open;
-                    cVar.f(open);
-                    break;
-                } catch (FileNotFoundException e11) {
-                    if (Log.isLoggable("FileLoader", 3)) {
-                        Log.d("FileLoader", "Failed to open file", e11);
-                    }
-                    cVar.c(e11);
-                    return;
-                }
-        }
-    }
-
-    /* JADX WARN: Code restructure failed: missing block: B:5:0x002b, code lost:
-    
-        if (r6 != null) goto L14;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:65:0x004c, code lost:
-    
-        if (r6 != null) goto L14;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:6:0x002d, code lost:
-    
-        r6.close();
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:7:0x0030, code lost:
-    
-        r3 = null;
-     */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Not initialized variable reg: 6, insn: 0x0026: MOVE (r5 I:??[OBJECT, ARRAY]) = (r6 I:??[OBJECT, ARRAY]) (LINE:39), block:B:68:0x0026 */
-    /* JADX WARN: Removed duplicated region for block: B:13:0x009d  */
-    /* JADX WARN: Removed duplicated region for block: B:18:0x00da  */
-    /* JADX WARN: Removed duplicated region for block: B:21:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Removed duplicated region for block: B:70:0x00e3  */
-    /* JADX WARN: Type inference failed for: r2v3, types: [java.io.IOException, java.lang.Throwable] */
-    /* JADX WARN: Type inference failed for: r5v0, types: [java.io.InputStream] */
-    /* JADX WARN: Type inference failed for: r5v1, types: [android.database.Cursor] */
-    /* JADX WARN: Type inference failed for: r5v2 */
-    /* JADX WARN: Type inference failed for: r6v1 */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-    */
-    public InputStream i() {
-        Cursor cursor;
-        ?? r62;
-        InputStream openInputStream;
-        int i;
-        Uri uri = (Uri) this.f40793u;
-        e eVar = (e) this.f40794v;
-        ?? r52 = 0;
-        InputStream inputStream = null;
-        try {
-            try {
-                cursor = eVar.f40796a.a(uri);
-            } catch (Throwable th) {
-                th = th;
-                r52 = r62;
-                if (r52 != 0) {
-                    r52.close();
-                }
-                throw th;
-            }
-        } catch (SecurityException e9) {
-            e = e9;
-            cursor = null;
-        } catch (Throwable th2) {
-            th = th2;
-            if (r52 != 0) {
-            }
-            throw th;
-        }
-        if (cursor != null) {
-            try {
-            } catch (SecurityException e10) {
-                e = e10;
-                if (Log.isLoggable("ThumbStreamOpener", 3)) {
-                    Log.d("ThumbStreamOpener", "Failed to query for thumbnail for Uri: " + uri, e);
-                }
-            }
-            if (cursor.moveToFirst()) {
-                String str = cursor.getString(0);
-                cursor.close();
-                boolean isEmpty = TextUtils.isEmpty(str);
-                ContentResolver contentResolver = eVar.f40798c;
-                if (!isEmpty) {
-                    File file = new File(str);
-                    if (file.exists() && 0 < file.length()) {
-                        Uri fromFile = Uri.fromFile(file);
-                        try {
-                            openInputStream = contentResolver.openInputStream(fromFile);
-                            if (openInputStream != null) {
-                                try {
-                                    try {
-                                        inputStream = contentResolver.openInputStream(uri);
-                                        i = com.bumptech.glide.e.d(eVar.f40799d, inputStream, eVar.f40797b);
-                                        if (inputStream != null) {
-                                            try {
-                                                inputStream.close();
-                                            } catch (IOException unused) {
-                                            }
-                                        }
-                                    } catch (Throwable th3) {
-                                        if (0 != 0) {
-                                            try {
-                                                r52.close();
-                                            } catch (IOException unused2) {
-                                            }
-                                        }
-                                        throw th3;
-                                    }
-                                } catch (IOException | NullPointerException e11) {
-                                    if (Log.isLoggable("ThumbStreamOpener", 3)) {
-                                        Log.d("ThumbStreamOpener", "Failed to open uri: " + uri, e11);
-                                    }
-                                    if (inputStream != null) {
-                                        try {
-                                            inputStream.close();
-                                        } catch (IOException unused3) {
-                                        }
-                                    }
+                        c5031a.f40842f = (c12 & 1) != 0;
+                        short s9 = this.f40858b.getShort();
+                        if (s9 < 2) {
+                            s9 = 10;
+                        }
+                        C5031a c5031a2 = this.f40859c.f40850d;
+                        c5031a2.i = s9 * 10;
+                        c5031a2.f40844h = c();
+                        c();
+                    } else if (c11 == 254) {
+                        f();
+                    } else if (c11 != 255) {
+                        f();
+                    } else {
+                        d();
+                        StringBuilder sb2 = new StringBuilder();
+                        int i6 = 0;
+                        while (true) {
+                            bArr = this.f40857a;
+                            if (i6 >= 11) {
+                                break;
+                            }
+                            sb2.append((char) bArr[i6]);
+                            i6++;
+                        }
+                        if (sb2.toString().equals("NETSCAPE2.0")) {
+                            do {
+                                d();
+                                if (bArr[0] == 1) {
+                                    byte b9 = bArr[1];
+                                    byte b10 = bArr[2];
+                                    this.f40859c.getClass();
                                 }
-                                return i != -1 ? new h(openInputStream, i) : openInputStream;
-                            }
-                            i = -1;
-                            if (i != -1) {
-                            }
-                        } catch (NullPointerException e12) {
-                            throw ((FileNotFoundException) new FileNotFoundException("NPE opening uri: " + uri + " -> " + fromFile).initCause(e12));
+                                if (this.f40860d > 0) {
+                                }
+                            } while (!a());
+                        } else {
+                            f();
                         }
                     }
+                } else if (c10 == 44) {
+                    b bVar5 = this.f40859c;
+                    if (bVar5.f40850d == null) {
+                        bVar5.f40850d = new C5031a();
+                    }
+                    bVar5.f40850d.f40837a = this.f40858b.getShort();
+                    this.f40859c.f40850d.f40838b = this.f40858b.getShort();
+                    this.f40859c.f40850d.f40839c = this.f40858b.getShort();
+                    this.f40859c.f40850d.f40840d = this.f40858b.getShort();
+                    int c13 = c();
+                    boolean z9 = (c13 & 128) != 0;
+                    int pow = (int) Math.pow(2.0d, (c13 & 7) + 1);
+                    C5031a c5031a3 = this.f40859c.f40850d;
+                    c5031a3.f40841e = (c13 & 64) != 0;
+                    if (z9) {
+                        c5031a3.f40846k = e(pow);
+                    } else {
+                        c5031a3.f40846k = null;
+                    }
+                    this.f40859c.f40850d.f40845j = this.f40858b.position();
+                    c();
+                    f();
+                    if (!a()) {
+                        b bVar6 = this.f40859c;
+                        bVar6.f40849c++;
+                        bVar6.f40851e.add(bVar6.f40850d);
+                    }
+                } else if (c10 != 59) {
+                    this.f40859c.f40848b = 1;
+                } else {
+                    z6 = true;
                 }
-                openInputStream = null;
-                if (openInputStream != null) {
+            }
+            b bVar7 = this.f40859c;
+            if (bVar7.f40849c < 0) {
+                bVar7.f40848b = 1;
+            }
+        }
+        return this.f40859c;
+    }
+
+    public final int c() {
+        try {
+            return this.f40858b.get() & 255;
+        } catch (Exception unused) {
+            this.f40859c.f40848b = 1;
+            return 0;
+        }
+    }
+
+    public final void d() {
+        int c9 = c();
+        this.f40860d = c9;
+        if (c9 <= 0) {
+            return;
+        }
+        int i = 0;
+        int i4 = 0;
+        while (true) {
+            try {
+                i4 = this.f40860d;
+                if (i >= i4) {
+                    return;
                 }
-                i = -1;
-                if (i != -1) {
+                i4 -= i;
+                this.f40858b.get(this.f40857a, i, i4);
+                i += i4;
+            } catch (Exception e9) {
+                if (Log.isLoggable("GifHeaderParser", 3)) {
+                    StringBuilder j6 = Wv.j(i, i4, "Error Reading Block n: ", " count: ", " blockSize: ");
+                    j6.append(this.f40860d);
+                    Log.d("GifHeaderParser", j6.toString(), e9);
                 }
+                this.f40859c.f40848b = 1;
+                return;
             }
         }
     }
 
-    private final void f() {
+    public final int[] e(int i) {
+        byte[] bArr = new byte[i * 3];
+        int[] iArr = null;
+        try {
+            this.f40858b.get(bArr);
+            iArr = new int[256];
+            int i4 = 0;
+            int i6 = 0;
+            while (i4 < i) {
+                int i9 = bArr[i6] & 255;
+                int i10 = i6 + 2;
+                int i11 = bArr[i6 + 1] & 255;
+                i6 += 3;
+                int i12 = i4 + 1;
+                iArr[i4] = (i11 << 8) | (i9 << 16) | (-16777216) | (bArr[i10] & 255);
+                i4 = i12;
+            }
+            return iArr;
+        } catch (BufferUnderflowException e9) {
+            if (Log.isLoggable("GifHeaderParser", 3)) {
+                Log.d("GifHeaderParser", "Format Error Reading Color Table", e9);
+            }
+            this.f40859c.f40848b = 1;
+            return iArr;
+        }
     }
 
-    private final void g() {
-    }
-
-    private final void h() {
+    public final void f() {
+        int c9;
+        do {
+            c9 = c();
+            this.f40858b.position(Math.min(this.f40858b.position() + c9, this.f40858b.limit()));
+        } while (c9 > 0);
     }
 }

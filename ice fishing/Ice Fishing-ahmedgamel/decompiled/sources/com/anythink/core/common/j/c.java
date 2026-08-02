@@ -4,46 +4,46 @@ package com.anythink.core.common.j;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    protected static final int f14264a = 1;
+    protected static final int f15050a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    protected static final int f14265b = 2;
+    protected static final int f15051b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f14266c;
+    private int f15052c;
 
     /* renamed from: d, reason: collision with root package name */
-    private int f14267d;
+    private int f15053d;
 
     /* renamed from: e, reason: collision with root package name */
-    private int f14268e;
+    private int f15054e;
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f14269f = false;
+    private boolean f15055f = false;
 
-    public c(int i, int i6, int i9) {
-        this.f14266c = i;
-        this.f14267d = i6;
-        this.f14268e = i9;
+    public c(int i, int i4, int i6) {
+        this.f15052c = i;
+        this.f15053d = i4;
+        this.f15054e = i6;
     }
 
     public final int a() {
-        return this.f14266c;
+        return this.f15052c;
     }
 
     public final int b() {
-        return this.f14267d;
+        return this.f15053d;
     }
 
     public final int c() {
-        return this.f14268e;
+        return this.f15054e;
     }
 
     public final boolean d() {
-        return this.f14269f;
+        return this.f15055f;
     }
 
-    public final void a(boolean z3) {
-        this.f14269f = z3;
+    public final void a(boolean z6) {
+        this.f15055f = z6;
     }
 }

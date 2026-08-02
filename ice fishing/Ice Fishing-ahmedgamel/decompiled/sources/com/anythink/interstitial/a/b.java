@@ -1,6 +1,5 @@
 package com.anythink.interstitial.a;
 
-import D.y;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -14,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.IceFishing.LiveIceFishing.k;
 import com.anythink.core.api.ATAdInfo;
 import com.anythink.core.api.ATAdMultipleLoadedListener;
 import com.anythink.core.api.ATAdRequest;
@@ -37,7 +37,6 @@ import com.anythink.core.common.v.m;
 import com.anythink.core.common.v.p;
 import com.anythink.core.common.v.q;
 import com.anythink.core.common.v.r;
-import com.anythink.expressad.foundation.h.k;
 import com.anythink.interstitial.api.ATInterstitialListener;
 import com.anythink.interstitial.unitgroup.api.CustomInterstitialAdapter;
 import java.lang.ref.WeakReference;
@@ -51,28 +50,28 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f22656a = "b";
+    public static final String f23443a = "b";
 
     /* renamed from: g, reason: collision with root package name */
-    private static Map<String, b> f22657g = new ConcurrentHashMap(3);
+    private static Map<String, b> f23444g = new ConcurrentHashMap(3);
 
     /* renamed from: b, reason: collision with root package name */
-    private View f22658b;
+    private View f23445b;
 
     /* renamed from: c, reason: collision with root package name */
-    private AtomicBoolean f22659c = new AtomicBoolean(false);
+    private AtomicBoolean f23446c = new AtomicBoolean(false);
 
     /* renamed from: d, reason: collision with root package name */
-    private Context f22660d;
+    private Context f23447d;
 
     /* renamed from: e, reason: collision with root package name */
-    private String f22661e;
+    private String f23448e;
 
     /* renamed from: f, reason: collision with root package name */
-    private final com.anythink.core.common.f f22662f;
+    private final com.anythink.core.common.f f23449f;
 
     /* renamed from: h, reason: collision with root package name */
-    private a f22663h;
+    private a f23450h;
 
     /* renamed from: com.anythink.interstitial.a.b$1, reason: invalid class name */
     public class AnonymousClass1 implements View.OnTouchListener {
@@ -89,34 +88,34 @@ public class b {
     public class AnonymousClass2 implements b.a {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ WeakReference f22665a;
+        final /* synthetic */ WeakReference f23452a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ String f22666b;
+        final /* synthetic */ String f23453b;
 
         /* renamed from: c, reason: collision with root package name */
-        final /* synthetic */ int f22667c;
+        final /* synthetic */ int f23454c;
 
         public AnonymousClass2(WeakReference weakReference, String str, int i) {
-            this.f22665a = weakReference;
-            this.f22666b = str;
-            this.f22667c = i;
+            this.f23452a = weakReference;
+            this.f23453b = str;
+            this.f23454c = i;
         }
 
         @Override // com.anythink.core.common.res.b.a
         public final void onFail(String str, String str2) {
-            Log.e(b.f22656a, "load: image load fail:".concat(String.valueOf(str2)));
-            ImageView imageView = (ImageView) this.f22665a.get();
-            if (!TextUtils.equals(this.f22666b, str) || imageView == null) {
+            Log.e(b.f23443a, "load: image load fail:".concat(String.valueOf(str2)));
+            ImageView imageView = (ImageView) this.f23452a.get();
+            if (!TextUtils.equals(this.f23453b, str) || imageView == null) {
                 return;
             }
-            imageView.setImageResource(this.f22667c);
+            imageView.setImageResource(this.f23454c);
         }
 
         @Override // com.anythink.core.common.res.b.a
         public final void onSuccess(String str, Bitmap bitmap) {
-            ImageView imageView = (ImageView) this.f22665a.get();
-            if (!TextUtils.equals(this.f22666b, str) || imageView == null) {
+            ImageView imageView = (ImageView) this.f23452a.get();
+            if (!TextUtils.equals(this.f23453b, str) || imageView == null) {
                 return;
             }
             imageView.setImageBitmap(bitmap);
@@ -127,18 +126,18 @@ public class b {
     public class AnonymousClass4 extends com.anythink.core.common.l.e.a {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ f f22683a;
+        final /* synthetic */ f f23470a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public AnonymousClass4(com.anythink.core.common.h.c cVar, f fVar) {
             super(cVar);
-            this.f22683a = fVar;
+            this.f23470a = fVar;
         }
 
         @Override // com.anythink.core.common.l.e.a, com.anythink.core.common.l.e.a.b
         public final void onAdClicked(View view) {
             super.onAdClicked(view);
-            f fVar = this.f22683a;
+            f fVar = this.f23470a;
             if (fVar != null) {
                 fVar.onInterstitialAdClicked();
             }
@@ -146,7 +145,7 @@ public class b {
 
         @Override // com.anythink.core.common.l.e.a, com.anythink.core.common.l.e.a.b
         public final void onAdImpressed() {
-            f fVar = this.f22683a;
+            f fVar = this.f23470a;
             if (fVar != null) {
                 fVar.onInterstitialAdShow();
             }
@@ -154,7 +153,7 @@ public class b {
 
         @Override // com.anythink.core.common.l.e.a, com.anythink.core.common.l.e.a.b
         public final void onAdVideoEnd() {
-            f fVar = this.f22683a;
+            f fVar = this.f23470a;
             if (fVar != null) {
                 fVar.onInterstitialAdVideoEnd();
             }
@@ -162,7 +161,7 @@ public class b {
 
         @Override // com.anythink.core.common.l.e.a, com.anythink.core.common.l.e.a.b
         public final void onAdVideoStart() {
-            f fVar = this.f22683a;
+            f fVar = this.f23470a;
             if (fVar != null) {
                 fVar.onInterstitialAdVideoStart();
             }
@@ -170,23 +169,23 @@ public class b {
 
         @Override // com.anythink.core.common.l.e.a, com.anythink.core.common.l.e.a.b
         public final void onClose() {
-            f fVar = this.f22683a;
+            f fVar = this.f23470a;
             if (fVar != null) {
                 fVar.onInterstitialAdClose();
             }
         }
 
         @Override // com.anythink.core.common.l.e.a, com.anythink.core.common.l.e.a.b
-        public final void onDeeplinkCallback(boolean z3) {
-            f fVar = this.f22683a;
+        public final void onDeeplinkCallback(boolean z6) {
+            f fVar = this.f23470a;
             if (fVar != null) {
-                fVar.onDeeplinkCallback(z3);
+                fVar.onDeeplinkCallback(z6);
             }
         }
 
         @Override // com.anythink.core.common.l.e.a, com.anythink.core.common.l.e.a.b
         public final void onVideoError(String str, String str2) {
-            f fVar = this.f22683a;
+            f fVar = this.f23470a;
             if (fVar != null) {
                 fVar.onInterstitialAdVideoError(str, str2);
             }
@@ -197,16 +196,16 @@ public class b {
     public class AnonymousClass5 implements a.InterfaceC0083a {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ CustomInterstitialAdapter f22685a;
+        final /* synthetic */ CustomInterstitialAdapter f23472a;
 
         public AnonymousClass5(CustomInterstitialAdapter customInterstitialAdapter) {
-            this.f22685a = customInterstitialAdapter;
+            this.f23472a = customInterstitialAdapter;
         }
 
         @Override // com.anythink.core.common.l.e.a.a.InterfaceC0083a
         public final void a(Activity activity) {
-            if (b.this.f22663h != null) {
-                b.this.f22663h.a(this.f22685a, activity);
+            if (b.this.f23450h != null) {
+                b.this.f23450h.a(this.f23472a, activity);
             }
         }
     }
@@ -215,22 +214,22 @@ public class b {
     public class AnonymousClass6 implements a.InterfaceC0084a {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ CustomInterstitialAdapter f22687a;
+        final /* synthetic */ CustomInterstitialAdapter f23474a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ f f22688b;
+        final /* synthetic */ f f23475b;
 
         public AnonymousClass6(CustomInterstitialAdapter customInterstitialAdapter, f fVar) {
-            this.f22687a = customInterstitialAdapter;
-            this.f22688b = fVar;
+            this.f23474a = customInterstitialAdapter;
+            this.f23475b = fVar;
         }
 
         @Override // com.anythink.core.common.l.f.a.a.InterfaceC0084a
         public final void a(final Activity activity, ViewGroup viewGroup) {
-            if (b.this.f22663h != null) {
-                b.this.f22663h.a(this.f22687a, activity);
+            if (b.this.f23450h != null) {
+                b.this.f23450h.a(this.f23474a, activity);
             }
-            this.f22687a.internalShow(activity, viewGroup, new c(this.f22688b) { // from class: com.anythink.interstitial.a.b.6.1
+            this.f23474a.internalShow(activity, viewGroup, new c(this.f23475b) { // from class: com.anythink.interstitial.a.b.6.1
                 @Override // com.anythink.interstitial.a.c, com.anythink.core.api.ATCommonImpressionListener
                 public final void onAdDismiss() {
                     t.b().b(new Runnable() { // from class: com.anythink.interstitial.a.b.6.1.1
@@ -250,9 +249,9 @@ public class b {
     }
 
     private b(Context context, String str) {
-        this.f22660d = context.getApplicationContext();
-        this.f22661e = str;
-        this.f22662f = com.anythink.core.common.f.a(context, str, "3");
+        this.f23447d = context.getApplicationContext();
+        this.f23448e = str;
+        this.f23449f = com.anythink.core.common.f.a(context, str, "3");
     }
 
     private static void b() {
@@ -265,7 +264,7 @@ public class b {
     }
 
     public static b a(Context context, String str) {
-        b bVar = f22657g.get(str);
+        b bVar = f23444g.get(str);
         if (bVar != null) {
             return bVar;
         }
@@ -273,7 +272,7 @@ public class b {
             if (bVar == null) {
                 try {
                     bVar = new b(context, str);
-                    f22657g.put(str, bVar);
+                    f23444g.put(str, bVar);
                 } catch (Throwable th) {
                     throw th;
                 }
@@ -286,15 +285,15 @@ public class b {
         if (activity == null) {
             return;
         }
-        com.anythink.core.d.b g4 = y.g(com.anythink.core.d.d.a(this.f22660d));
-        String z3 = g4.z();
-        String y7 = g4.y();
-        if (this.f22658b == null) {
-            this.f22658b = LayoutInflater.from(activity.getApplicationContext()).inflate(q.a(activity, "interstitial_loading_layout", "layout"), (ViewGroup) null);
+        com.anythink.core.d.b k9 = k.k(com.anythink.core.d.d.a(this.f23447d));
+        String z6 = k9.z();
+        String y7 = k9.y();
+        if (this.f23445b == null) {
+            this.f23445b = LayoutInflater.from(activity.getApplicationContext()).inflate(q.a(activity, "interstitial_loading_layout", "layout"), (ViewGroup) null);
         }
-        this.f22658b.setOnTouchListener(new AnonymousClass1());
-        ImageView imageView = (ImageView) this.f22658b.findViewById(q.a(activity, "interstitial_iv_loading", "id"));
-        TextView textView = (TextView) this.f22658b.findViewById(q.a(activity, "interstitial_tv_loading", "id"));
+        this.f23445b.setOnTouchListener(new AnonymousClass1());
+        ImageView imageView = (ImageView) this.f23445b.findViewById(q.a(activity, "interstitial_iv_loading", "id"));
+        TextView textView = (TextView) this.f23445b.findViewById(q.a(activity, "interstitial_tv_loading", "id"));
         int a9 = q.a((Context) activity, 30.0f);
         imageView.setMinimumWidth(a9);
         imageView.setMinimumHeight(a9);
@@ -302,93 +301,93 @@ public class b {
         imageView.setMaxWidth(a10);
         imageView.setMaxHeight(a10);
         imageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-        int a11 = q.a(activity, "interstitial_loading_default", k.f19632c);
-        if (TextUtils.isEmpty(z3)) {
+        int a11 = q.a(activity, "interstitial_loading_default", com.anythink.expressad.foundation.h.k.f20419c);
+        if (TextUtils.isEmpty(z6)) {
             imageView.setImageResource(a11);
         } else {
-            com.anythink.core.common.res.b.a(activity.getApplicationContext()).a(new com.anythink.core.common.res.e(3, z3), new AnonymousClass2(new WeakReference(imageView), z3, a11));
+            com.anythink.core.common.res.b.a(activity.getApplicationContext()).a(new com.anythink.core.common.res.e(3, z6), new AnonymousClass2(new WeakReference(imageView), z6, a11));
         }
         if (!TextUtils.isEmpty(y7)) {
             textView.setText(y7);
         } else {
-            textView.setText(q.a(activity, "interstitial_text_loading_default", k.f19636g));
+            textView.setText(q.a(activity, "interstitial_text_loading_default", com.anythink.expressad.foundation.h.k.f20423g));
         }
-        View view = this.f22658b;
+        View view = this.f23445b;
         if (view != null && view.getParent() != null) {
-            ((ViewGroup) this.f22658b.getParent()).removeView(this.f22658b);
+            ((ViewGroup) this.f23445b.getParent()).removeView(this.f23445b);
         }
-        ((ViewGroup) activity.getWindow().getDecorView()).addView(this.f22658b, new FrameLayout.LayoutParams(-1, -1));
+        ((ViewGroup) activity.getWindow().getDecorView()).addView(this.f23445b, new FrameLayout.LayoutParams(-1, -1));
     }
 
     public final void a(Context context, int i, com.anythink.core.common.d.a aVar, com.anythink.core.common.d.c cVar, ATAdMultipleLoadedListener aTAdMultipleLoadedListener, Map<String, Object> map, ATAdRequest aTAdRequest) {
         ar arVar = new ar();
         arVar.a(context);
         arVar.a(aTAdRequest);
-        arVar.f13547c = i;
-        arVar.f13548d = cVar;
-        arVar.f13550f = aTAdMultipleLoadedListener;
+        arVar.f14333c = i;
+        arVar.f14334d = cVar;
+        arVar.f14336f = aTAdMultipleLoadedListener;
         if (map != null) {
             try {
-                arVar.f13551g = new HashMap(map);
+                arVar.f14337g = new HashMap(map);
             } catch (Throwable unused) {
             }
         }
         if (aTAdRequest != null) {
-            arVar.f13555l = aTAdRequest.getATAdxBidFloorInfo();
+            arVar.f14341l = aTAdRequest.getATAdxBidFloorInfo();
         }
-        this.f22662f.b(this.f22660d, "3", this.f22661e, arVar, aVar);
+        this.f23449f.b(this.f23447d, "3", this.f23448e, arVar, aVar);
     }
 
     public final List<ATAdInfo> a(Context context) {
-        return this.f22662f.a(context);
+        return this.f23449f.a(context);
     }
 
     public final ATAdStatusInfo a(Context context, Map<String, Object> map) {
-        return this.f22662f.a(context, map);
+        return this.f23449f.a(context, map);
     }
 
     private com.anythink.core.common.h.c a(Context context, ae aeVar) {
-        return this.f22662f.b(context, false, true, aeVar);
+        return this.f23449f.b(context, false, true, aeVar);
     }
 
     public final synchronized void a(Activity activity, ATShowConfig aTShowConfig, ATInterstitialListener aTInterstitialListener, ATEventInterface aTEventInterface, Map<String, Object> map, ATNativeAdCustomRender aTNativeAdCustomRender) {
         try {
-            if (this.f22659c.get()) {
+            if (this.f23446c.get()) {
                 return;
             }
-            a aVar = this.f22663h;
+            a aVar = this.f23450h;
             if (aVar != null) {
                 aVar.a();
-                this.f22663h = null;
+                this.f23450h = null;
             }
-            this.f22663h = new a(activity, aTShowConfig, aTInterstitialListener, aTEventInterface, map, aTNativeAdCustomRender, this.f22661e, this);
+            this.f23450h = new a(activity, aTShowConfig, aTInterstitialListener, aTEventInterface, map, aTNativeAdCustomRender, this.f23448e, this);
             ae aeVar = new ae();
             aeVar.a(map);
-            com.anythink.core.common.f fVar = this.f22662f;
+            com.anythink.core.common.f fVar = this.f23449f;
             if (fVar != null) {
                 aeVar.a(fVar.i());
             }
             if (aTShowConfig != null) {
                 aeVar.a(aTShowConfig.getATAdInfo());
             }
-            a(activity, this.f22662f.b((Context) activity, false, true, aeVar), aTShowConfig, aTInterstitialListener, aTEventInterface, map, aTNativeAdCustomRender);
+            a(activity, this.f23449f.b((Context) activity, false, true, aeVar), aTShowConfig, aTInterstitialListener, aTEventInterface, map, aTNativeAdCustomRender);
         } catch (Throwable th) {
             throw th;
         }
     }
 
     public final com.anythink.core.common.f a() {
-        return this.f22662f;
+        return this.f23449f;
     }
 
     public final void a(final Activity activity, final com.anythink.core.common.h.c cVar, final ATShowConfig aTShowConfig, final ATInterstitialListener aTInterstitialListener, final ATEventInterface aTEventInterface, final Map<String, Object> map, final ATNativeAdCustomRender aTNativeAdCustomRender) {
         if (cVar != null && (cVar.e() instanceof CustomInterstitialAdapter)) {
             final long elapsedRealtime = SystemClock.elapsedRealtime();
-            this.f22662f.a(cVar);
+            this.f23449f.a(cVar);
             cVar.a(cVar.c() + 1);
             final int aq = cVar.e().getUnitGroupInfo().aq();
             if (aq > 0) {
-                this.f22659c.set(true);
+                this.f23446c.set(true);
             }
             com.anythink.core.common.v.b.b.a().a(new Runnable() { // from class: com.anythink.interstitial.a.b.3
                 @Override // java.lang.Runnable
@@ -412,16 +411,16 @@ public class b {
                         str2 = "";
                     }
                     if (trackingInfo != null) {
-                        trackingInfo.f14011F = str;
+                        trackingInfo.f14797F = str;
                         trackingInfo.z(str2);
                         trackingInfo.n(p.a(trackingInfo.aJ(), trackingInfo.M(), currentTimeMillis));
-                        aj.a(b.this.f22660d, trackingInfo);
+                        aj.a(b.this.f23447d, trackingInfo);
                         aj.a((Map<String, Object>) map, trackingInfo);
-                        aj.a(b.this.f22661e, trackingInfo);
+                        aj.a(b.this.f23448e, trackingInfo);
                     }
-                    com.anythink.core.common.a.a().a(b.this.f22660d, cVar);
-                    com.anythink.core.common.u.c.a(b.this.f22660d).a(13, trackingInfo, cVar.e().getUnitGroupInfo(), currentTimeMillis);
-                    com.anythink.core.common.v.d.a().a(trackingInfo, cVar.e().getUnitGroupInfo(), com.anythink.core.common.v.d.f16729b);
+                    com.anythink.core.common.a.a().a(b.this.f23447d, cVar);
+                    com.anythink.core.common.u.c.a(b.this.f23447d).a(13, trackingInfo, cVar.e().getUnitGroupInfo(), currentTimeMillis);
+                    com.anythink.core.common.v.d.a().a(trackingInfo, cVar.e().getUnitGroupInfo(), com.anythink.core.common.v.d.f17516b);
                     if (aq > 0) {
                         t.b().b(new Runnable() { // from class: com.anythink.interstitial.a.b.3.1
                             @Override // java.lang.Runnable
@@ -442,7 +441,7 @@ public class b {
                             }
                             CustomInterstitialAdapter customInterstitialAdapter3 = customInterstitialAdapter;
                             AnonymousClass3 anonymousClass3 = AnonymousClass3.this;
-                            f fVar = new f(customInterstitialAdapter3, aTInterstitialListener, b.this.f22663h);
+                            f fVar = new f(customInterstitialAdapter3, aTInterstitialListener, b.this.f23450h);
                             if (customInterstitialAdapter.isMixNative()) {
                                 AnonymousClass3 anonymousClass32 = AnonymousClass3.this;
                                 b.a(b.this, customInterstitialAdapter, activity, fVar, cVar, trackingInfo, str, aTNativeAdCustomRender);
@@ -455,20 +454,20 @@ public class b {
                             n trackingInfo2 = customInterstitialAdapter.getTrackingInfo();
                             com.anythink.core.common.u.e.a("4", trackingInfo2, trackingInfo2.aJ(), trackingInfo2.aI(), trackingInfo2.M(), trackingInfo2.Y(), 4, SystemClock.elapsedRealtime() - elapsedRealtime);
                             AnonymousClass3 anonymousClass34 = AnonymousClass3.this;
-                            if (aq <= 0 || !b.this.f22659c.get()) {
+                            if (aq <= 0 || !b.this.f23446c.get()) {
                                 return;
                             }
-                            if (b.this.f22658b != null) {
-                                ((ViewGroup) b.this.f22658b.getParent()).removeView(b.this.f22658b);
+                            if (b.this.f23445b != null) {
+                                ((ViewGroup) b.this.f23445b.getParent()).removeView(b.this.f23445b);
                             }
-                            b.this.f22659c.set(false);
+                            b.this.f23446c.set(false);
                         }
                     }, aq);
                 }
             });
             return;
         }
-        if (this.f22662f.a((ATAdStatusInfo) null, 7)) {
+        if (this.f23449f.a((ATAdStatusInfo) null, 7)) {
             a(t.b().M(), 7, (com.anythink.core.common.d.a) null, (com.anythink.core.common.d.c) null, (ATAdMultipleLoadedListener) null, map, (ATAdRequest) null);
         }
     }
@@ -476,7 +475,7 @@ public class b {
     private ae a(ATShowConfig aTShowConfig, Map<String, Object> map) {
         ae aeVar = new ae();
         aeVar.a(map);
-        com.anythink.core.common.f fVar = this.f22662f;
+        com.anythink.core.common.f fVar = this.f23449f;
         if (fVar != null) {
             aeVar.a(fVar.i());
         }
@@ -488,15 +487,15 @@ public class b {
 
     private void a(CustomInterstitialAdapter customInterstitialAdapter, Activity activity, f fVar, com.anythink.core.common.h.c cVar, n nVar, String str, ATNativeAdCustomRender aTNativeAdCustomRender) {
         String str2;
-        BaseAd f3 = cVar.f();
-        if (f3 == null) {
+        BaseAd f2 = cVar.f();
+        if (f2 == null) {
             if (fVar != null) {
                 fVar.onInterstitialAdVideoError("", "showThirdPartyNativeInterstitial fail, no ad cache.");
                 return;
             }
             return;
         }
-        com.anythink.core.common.l.c.a.a a9 = com.anythink.basead.mixad.b.b.a(customInterstitialAdapter, new a.C0082a().a(activity).a(f3).a(nVar).a(aTNativeAdCustomRender).a(new AnonymousClass4(cVar, fVar)).a());
+        com.anythink.core.common.l.c.a.a a9 = com.anythink.basead.mixad.b.b.a(customInterstitialAdapter, new a.C0082a().a(activity).a(f2).a(nVar).a(aTNativeAdCustomRender).a(new AnonymousClass4(cVar, fVar)).a());
         if (!(a9 instanceof com.anythink.core.common.l.c.a.c)) {
             if (fVar != null) {
                 fVar.onInterstitialAdVideoError("", "create interstitial bridge with unknow error.");
@@ -505,7 +504,7 @@ public class b {
             return;
         }
         com.anythink.core.basead.b.c cVar2 = new com.anythink.core.basead.b.c();
-        if (nVar == null || this.f22662f == null) {
+        if (nVar == null || this.f23449f == null) {
             str2 = "";
         } else {
             str2 = com.anythink.core.common.f.a(nVar.aI(), nVar.M(), String.valueOf(nVar.Y()));
@@ -515,10 +514,10 @@ public class b {
                 fVar.onInterstitialAdVideoError("", "create interstitial bridge with error: eventId is empty.");
             }
         } else {
-            cVar2.f11920d = str2;
-            cVar2.f11921e = m.f(activity);
-            cVar2.f11918b = str;
-            cVar2.f11917a = Integer.parseInt("3");
+            cVar2.f12706d = str2;
+            cVar2.f12707e = m.f(activity);
+            cVar2.f12704b = str;
+            cVar2.f12703a = Integer.parseInt("3");
             ((com.anythink.core.common.l.c.a.c) a9).a(activity, cVar2, new AnonymousClass5(customInterstitialAdapter));
         }
     }
@@ -531,7 +530,7 @@ public class b {
         }
         com.anythink.core.common.l.c.a.a a9 = com.anythink.basead.mixad.b.b.a(customInterstitialAdapter, null);
         if (a9 instanceof com.anythink.core.common.l.c.a.c) {
-            cVar.f11920d = com.anythink.core.common.f.a(this.f22661e, unitGroupInfo.z(), String.valueOf(unitGroupInfo.g()));
+            cVar.f12706d = com.anythink.core.common.f.a(this.f23448e, unitGroupInfo.z(), String.valueOf(unitGroupInfo.g()));
             ((com.anythink.core.common.l.c.a.c) a9).a(activity, cVar, new AnonymousClass6(customInterstitialAdapter, fVar));
         } else if (fVar != null) {
             fVar.onInterstitialAdVideoError("", "create interstitial bridge with unknow error.");
@@ -540,15 +539,15 @@ public class b {
 
     public static /* synthetic */ void a(b bVar, Activity activity) {
         if (activity != null) {
-            com.anythink.core.d.b g4 = y.g(com.anythink.core.d.d.a(bVar.f22660d));
-            String z3 = g4.z();
-            String y7 = g4.y();
-            if (bVar.f22658b == null) {
-                bVar.f22658b = LayoutInflater.from(activity.getApplicationContext()).inflate(q.a(activity, "interstitial_loading_layout", "layout"), (ViewGroup) null);
+            com.anythink.core.d.b k9 = k.k(com.anythink.core.d.d.a(bVar.f23447d));
+            String z6 = k9.z();
+            String y7 = k9.y();
+            if (bVar.f23445b == null) {
+                bVar.f23445b = LayoutInflater.from(activity.getApplicationContext()).inflate(q.a(activity, "interstitial_loading_layout", "layout"), (ViewGroup) null);
             }
-            bVar.f22658b.setOnTouchListener(bVar.new AnonymousClass1());
-            ImageView imageView = (ImageView) bVar.f22658b.findViewById(q.a(activity, "interstitial_iv_loading", "id"));
-            TextView textView = (TextView) bVar.f22658b.findViewById(q.a(activity, "interstitial_tv_loading", "id"));
+            bVar.f23445b.setOnTouchListener(bVar.new AnonymousClass1());
+            ImageView imageView = (ImageView) bVar.f23445b.findViewById(q.a(activity, "interstitial_iv_loading", "id"));
+            TextView textView = (TextView) bVar.f23445b.findViewById(q.a(activity, "interstitial_tv_loading", "id"));
             int a9 = q.a((Context) activity, 30.0f);
             imageView.setMinimumWidth(a9);
             imageView.setMinimumHeight(a9);
@@ -556,39 +555,39 @@ public class b {
             imageView.setMaxWidth(a10);
             imageView.setMaxHeight(a10);
             imageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-            int a11 = q.a(activity, "interstitial_loading_default", k.f19632c);
-            if (TextUtils.isEmpty(z3)) {
+            int a11 = q.a(activity, "interstitial_loading_default", com.anythink.expressad.foundation.h.k.f20419c);
+            if (TextUtils.isEmpty(z6)) {
                 imageView.setImageResource(a11);
             } else {
-                com.anythink.core.common.res.b.a(activity.getApplicationContext()).a(new com.anythink.core.common.res.e(3, z3), bVar.new AnonymousClass2(new WeakReference(imageView), z3, a11));
+                com.anythink.core.common.res.b.a(activity.getApplicationContext()).a(new com.anythink.core.common.res.e(3, z6), bVar.new AnonymousClass2(new WeakReference(imageView), z6, a11));
             }
             if (!TextUtils.isEmpty(y7)) {
                 textView.setText(y7);
             } else {
-                textView.setText(q.a(activity, "interstitial_text_loading_default", k.f19636g));
+                textView.setText(q.a(activity, "interstitial_text_loading_default", com.anythink.expressad.foundation.h.k.f20423g));
             }
-            View view = bVar.f22658b;
+            View view = bVar.f23445b;
             if (view != null && view.getParent() != null) {
-                ((ViewGroup) bVar.f22658b.getParent()).removeView(bVar.f22658b);
+                ((ViewGroup) bVar.f23445b.getParent()).removeView(bVar.f23445b);
             }
-            ((ViewGroup) activity.getWindow().getDecorView()).addView(bVar.f22658b, new FrameLayout.LayoutParams(-1, -1));
+            ((ViewGroup) activity.getWindow().getDecorView()).addView(bVar.f23445b, new FrameLayout.LayoutParams(-1, -1));
         }
     }
 
     public static /* synthetic */ void a(b bVar, CustomInterstitialAdapter customInterstitialAdapter, Activity activity, f fVar, com.anythink.core.common.h.c cVar, n nVar, String str, ATNativeAdCustomRender aTNativeAdCustomRender) {
         String str2;
-        BaseAd f3 = cVar.f();
-        if (f3 == null) {
+        BaseAd f2 = cVar.f();
+        if (f2 == null) {
             fVar.onInterstitialAdVideoError("", "showThirdPartyNativeInterstitial fail, no ad cache.");
             return;
         }
-        com.anythink.core.common.l.c.a.a a9 = com.anythink.basead.mixad.b.b.a(customInterstitialAdapter, new a.C0082a().a(activity).a(f3).a(nVar).a(aTNativeAdCustomRender).a(bVar.new AnonymousClass4(cVar, fVar)).a());
+        com.anythink.core.common.l.c.a.a a9 = com.anythink.basead.mixad.b.b.a(customInterstitialAdapter, new a.C0082a().a(activity).a(f2).a(nVar).a(aTNativeAdCustomRender).a(bVar.new AnonymousClass4(cVar, fVar)).a());
         if (!(a9 instanceof com.anythink.core.common.l.c.a.c)) {
             fVar.onInterstitialAdVideoError("", "create interstitial bridge with unknow error.");
             return;
         }
         com.anythink.core.basead.b.c cVar2 = new com.anythink.core.basead.b.c();
-        if (nVar == null || bVar.f22662f == null) {
+        if (nVar == null || bVar.f23449f == null) {
             str2 = "";
         } else {
             str2 = com.anythink.core.common.f.a(nVar.aI(), nVar.M(), String.valueOf(nVar.Y()));
@@ -597,10 +596,10 @@ public class b {
             fVar.onInterstitialAdVideoError("", "create interstitial bridge with error: eventId is empty.");
             return;
         }
-        cVar2.f11920d = str2;
-        cVar2.f11921e = m.f(activity);
-        cVar2.f11918b = str;
-        cVar2.f11917a = Integer.parseInt("3");
+        cVar2.f12706d = str2;
+        cVar2.f12707e = m.f(activity);
+        cVar2.f12704b = str;
+        cVar2.f12703a = Integer.parseInt("3");
         ((com.anythink.core.common.l.c.a.c) a9).a(activity, cVar2, bVar.new AnonymousClass5(customInterstitialAdapter));
     }
 
@@ -612,7 +611,7 @@ public class b {
             if (!(a9 instanceof com.anythink.core.common.l.c.a.c)) {
                 fVar.onInterstitialAdVideoError("", "create interstitial bridge with unknow error.");
             } else {
-                cVar.f11920d = com.anythink.core.common.f.a(bVar.f22661e, unitGroupInfo.z(), String.valueOf(unitGroupInfo.g()));
+                cVar.f12706d = com.anythink.core.common.f.a(bVar.f23448e, unitGroupInfo.z(), String.valueOf(unitGroupInfo.g()));
                 ((com.anythink.core.common.l.c.a.c) a9).a(activity, cVar, bVar.new AnonymousClass6(customInterstitialAdapter, fVar));
             }
         }

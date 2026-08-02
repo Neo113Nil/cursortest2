@@ -1,114 +1,114 @@
 package com.anythink.core.common.o;
 
-import D.y;
+import D.x;
 
 /* loaded from: classes.dex */
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    protected int f15952a;
+    protected int f16739a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected int f15953b;
+    protected int f16740b;
 
     /* renamed from: c, reason: collision with root package name */
-    protected int f15954c;
+    protected int f16741c;
 
     /* renamed from: d, reason: collision with root package name */
-    protected int f15955d;
+    protected int f16742d;
 
     /* renamed from: e, reason: collision with root package name */
-    protected int f15956e;
+    protected int f16743e;
 
     /* renamed from: f, reason: collision with root package name */
-    protected long f15957f;
+    protected long f16744f;
 
     /* renamed from: g, reason: collision with root package name */
-    protected long f15958g;
+    protected long f16745g;
 
     /* renamed from: h, reason: collision with root package name */
-    protected int f15959h;
+    protected int f16746h;
 
     public final int a() {
-        return this.f15952a;
+        return this.f16739a;
     }
 
     public final int b() {
-        return this.f15953b;
+        return this.f16740b;
     }
 
     public final int c() {
-        return this.f15954c;
+        return this.f16741c;
     }
 
     public final int d() {
-        return this.f15955d;
+        return this.f16742d;
     }
 
     public final int e() {
-        return this.f15956e;
+        return this.f16743e;
     }
 
     public final long f() {
-        return this.f15957f;
+        return this.f16744f;
     }
 
     public final long g() {
-        return this.f15958g;
+        return this.f16745g;
     }
 
     public final int h() {
-        return this.f15959h;
+        return this.f16746h;
     }
 
     public final String toString() {
         StringBuilder sb = new StringBuilder("PerformaceEntry{totalMemory=");
-        sb.append(this.f15952a);
+        sb.append(this.f16739a);
         sb.append(", phoneVailMemory=");
-        sb.append(this.f15953b);
+        sb.append(this.f16740b);
         sb.append(", appJavaMemory=");
-        sb.append(this.f15954c);
+        sb.append(this.f16741c);
         sb.append(", appMaxJavaMemory=");
-        sb.append(this.f15955d);
+        sb.append(this.f16742d);
         sb.append(", cpuNum=");
-        sb.append(this.f15956e);
+        sb.append(this.f16743e);
         sb.append(", totalStorage=");
-        sb.append(this.f15957f);
+        sb.append(this.f16744f);
         sb.append(", lastStorage=");
-        sb.append(this.f15958g);
+        sb.append(this.f16745g);
         sb.append(", cpuRate=");
-        return y.q(sb, this.f15959h, '}');
+        return x.n(sb, this.f16746h, '}');
     }
 
     private void a(int i) {
-        this.f15952a = i;
+        this.f16739a = i;
     }
 
     private void b(int i) {
-        this.f15953b = i;
+        this.f16740b = i;
     }
 
     private void c(int i) {
-        this.f15954c = i;
+        this.f16741c = i;
     }
 
     private void d(int i) {
-        this.f15955d = i;
+        this.f16742d = i;
     }
 
     private void e(int i) {
-        this.f15956e = i;
+        this.f16743e = i;
     }
 
     private void f(int i) {
-        this.f15959h = i;
+        this.f16746h = i;
     }
 
     private void a(long j6) {
-        this.f15957f = j6;
+        this.f16744f = j6;
     }
 
     private void b(long j6) {
-        this.f15958g = j6;
+        this.f16745g = j6;
     }
 }

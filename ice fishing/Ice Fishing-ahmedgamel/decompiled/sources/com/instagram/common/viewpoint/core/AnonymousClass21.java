@@ -7,9 +7,9 @@ public final class AnonymousClass21 {
     public final float A00;
     public final int A01;
 
-    public AnonymousClass21(int i, float f3) {
+    public AnonymousClass21(int i, float f2) {
         this.A01 = i;
-        this.A00 = f3;
+        this.A00 = f2;
     }
 
     public final boolean equals(Object obj) {

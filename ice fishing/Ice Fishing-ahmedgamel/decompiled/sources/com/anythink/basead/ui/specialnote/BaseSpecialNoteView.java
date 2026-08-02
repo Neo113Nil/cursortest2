@@ -20,53 +20,53 @@ public abstract class BaseSpecialNoteView extends LinearLayout {
     public static final long SEPECIAL_NOTE_INTERVAL_TIME = 500;
 
     /* renamed from: a, reason: collision with root package name */
-    final String f11287a;
+    final String f12073a;
 
     /* renamed from: b, reason: collision with root package name */
-    final long f11288b;
+    final long f12074b;
 
     /* renamed from: c, reason: collision with root package name */
-    final int f11289c;
+    final int f12075c;
 
     /* renamed from: d, reason: collision with root package name */
-    long f11290d;
+    long f12076d;
 
     /* renamed from: e, reason: collision with root package name */
-    long f11291e;
+    long f12077e;
 
     /* renamed from: f, reason: collision with root package name */
-    long f11292f;
+    long f12078f;
 
     /* renamed from: g, reason: collision with root package name */
-    long f11293g;
+    long f12079g;
 
     /* renamed from: h, reason: collision with root package name */
-    a f11294h;
+    a f12080h;
     Runnable i;
 
     /* renamed from: j, reason: collision with root package name */
-    c f11295j;
+    c f12081j;
 
     /* renamed from: k, reason: collision with root package name */
-    f.b f11296k;
+    f.b f12082k;
 
     /* renamed from: l, reason: collision with root package name */
-    TextView f11297l;
+    TextView f12083l;
 
     /* renamed from: m, reason: collision with root package name */
-    TextView f11298m;
+    TextView f12084m;
 
     /* renamed from: n, reason: collision with root package name */
-    String f11299n;
+    String f12085n;
 
     /* renamed from: o, reason: collision with root package name */
-    private View f11300o;
+    private View f12086o;
 
     /* renamed from: p, reason: collision with root package name */
-    private int f11301p;
+    private int f12087p;
 
     /* renamed from: q, reason: collision with root package name */
-    private boolean f11302q;
+    private boolean f12088q;
 
     /* renamed from: com.anythink.basead.ui.specialnote.BaseSpecialNoteView$4, reason: invalid class name */
     public class AnonymousClass4 extends com.anythink.core.common.v.a.a {
@@ -90,39 +90,39 @@ public abstract class BaseSpecialNoteView extends LinearLayout {
 
     public BaseSpecialNoteView(Context context) {
         super(context);
-        this.f11287a = getClass().getSimpleName();
-        this.f11288b = 500L;
-        this.f11289c = 50;
-        this.f11299n = "";
-        this.f11302q = false;
+        this.f12073a = getClass().getSimpleName();
+        this.f12074b = 500L;
+        this.f12075c = 50;
+        this.f12085n = "";
+        this.f12088q = false;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void e() {
-        if (this.f11294h == null) {
+        if (this.f12080h == null) {
             return;
         }
         postDelayed(this.i, 500L);
     }
 
     private void f() {
-        View view = this.f11300o;
+        View view = this.f12086o;
         if (view == null) {
             return;
         }
-        this.f11295j.a(view, new AnonymousClass4());
+        this.f12081j.a(view, new AnonymousClass4());
     }
 
     private void g() {
         if (getWindowVisibility() == 0) {
             if (j()) {
-                long j6 = this.f11291e;
+                long j6 = this.f12077e;
                 if (j6 > 0) {
-                    this.f11291e = j6 - 500;
+                    this.f12077e = j6 - 500;
                 } else {
-                    long j9 = this.f11293g;
+                    long j9 = this.f12079g;
                     if (j9 > 0) {
-                        this.f11293g = j9 - 500;
+                        this.f12079g = j9 - 500;
                     }
                 }
                 h();
@@ -132,38 +132,38 @@ public abstract class BaseSpecialNoteView extends LinearLayout {
         } else if (d()) {
             k();
         }
-        View view = this.f11300o;
+        View view = this.f12086o;
         if (view != null) {
-            this.f11295j.a(view, new AnonymousClass4());
+            this.f12081j.a(view, new AnonymousClass4());
         }
     }
 
     private void h() {
-        if (this.f11291e > 0) {
+        if (this.f12077e > 0) {
             if (getVisibility() == 0) {
                 setVisibility(4);
                 return;
             }
             return;
         }
-        long j6 = this.f11293g;
+        long j6 = this.f12079g;
         if (j6 <= 0) {
             i();
             return;
         }
-        this.f11297l.setText(Html.fromHtml(String.format(this.f11299n, Integer.valueOf(((int) (j6 / 1000)) + 1))));
+        this.f12083l.setText(Html.fromHtml(String.format(this.f12085n, Integer.valueOf(((int) (j6 / 1000)) + 1))));
         if (getVisibility() != 0) {
-            this.f11302q = true;
+            this.f12088q = true;
             c();
         }
     }
 
     private void i() {
-        if (this.f11300o == null) {
+        if (this.f12086o == null) {
             return;
         }
-        int i = this.f11301p;
-        a aVar = this.f11294h;
+        int i = this.f12087p;
+        a aVar = this.f12080h;
         if (aVar != null) {
             aVar.a(i);
         }
@@ -171,25 +171,25 @@ public abstract class BaseSpecialNoteView extends LinearLayout {
     }
 
     private boolean j() {
-        View view = this.f11300o;
+        View view = this.f12086o;
         if (view != null && view.getParent() != null) {
-            Object parent = this.f11300o.getParent();
+            Object parent = this.f12086o.getParent();
             if (parent instanceof View) {
-                return this.f11296k.a((View) parent, this.f11300o, 50, 0);
+                return this.f12082k.a((View) parent, this.f12086o, 50, 0);
             }
         }
         return false;
     }
 
     private void k() {
-        this.f11291e = this.f11290d;
-        this.f11293g = this.f11292f;
+        this.f12077e = this.f12076d;
+        this.f12079g = this.f12078f;
         setVisibility(4);
-        this.f11302q = false;
+        this.f12088q = false;
     }
 
     public void a() {
-        this.f11299n = getContext().getString(q.a(t.b().g(), "myoffer_special_note_delay_click", k.f19636g));
+        this.f12085n = getContext().getString(q.a(t.b().g(), "myoffer_special_note_delay_click", k.f20423g));
     }
 
     public abstract void b();
@@ -223,22 +223,22 @@ public abstract class BaseSpecialNoteView extends LinearLayout {
     public abstract boolean d();
 
     public boolean hasBeenShow() {
-        return this.f11302q;
+        return this.f12088q;
     }
 
     public void initSetting(View view, int i, a aVar, long j6, long j9) {
-        this.f11301p = i;
+        this.f12087p = i;
         a();
         b();
         setVisibility(4);
-        this.f11295j = com.anythink.basead.b.k.a().b();
-        this.f11296k = com.anythink.basead.b.k.a().c();
-        this.f11300o = view;
-        this.f11294h = aVar;
-        this.f11290d = j6;
-        this.f11292f = j9;
-        this.f11291e = j6;
-        this.f11293g = j9;
+        this.f12081j = com.anythink.basead.b.k.a().b();
+        this.f12082k = com.anythink.basead.b.k.a().c();
+        this.f12086o = view;
+        this.f12080h = aVar;
+        this.f12076d = j6;
+        this.f12078f = j9;
+        this.f12077e = j6;
+        this.f12079g = j9;
         this.i = new Runnable() { // from class: com.anythink.basead.ui.specialnote.BaseSpecialNoteView.1
             @Override // java.lang.Runnable
             public final void run() {
@@ -250,7 +250,7 @@ public abstract class BaseSpecialNoteView extends LinearLayout {
             public final void onClick(View view2) {
             }
         });
-        TextView textView = this.f11298m;
+        TextView textView = this.f12084m;
         if (textView != null) {
             textView.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.specialnote.BaseSpecialNoteView.3
                 @Override // android.view.View.OnClickListener
@@ -259,9 +259,9 @@ public abstract class BaseSpecialNoteView extends LinearLayout {
                 }
             });
         }
-        TextView textView2 = this.f11297l;
+        TextView textView2 = this.f12083l;
         if (textView2 != null) {
-            textView2.setText(Html.fromHtml(String.format(this.f11299n, Integer.valueOf(((int) (this.f11293g / 1000)) + 1))));
+            textView2.setText(Html.fromHtml(String.format(this.f12085n, Integer.valueOf(((int) (this.f12079g / 1000)) + 1))));
         }
     }
 
@@ -283,24 +283,24 @@ public abstract class BaseSpecialNoteView extends LinearLayout {
         if (runnable != null) {
             removeCallbacks(runnable);
         }
-        View view = this.f11300o;
+        View view = this.f12086o;
         if (view != null) {
-            this.f11295j.a(view);
+            this.f12081j.a(view);
         }
     }
 
     public void release() {
-        if (this.f11294h != null) {
+        if (this.f12080h != null) {
             pause();
-            this.f11294h = null;
-            this.f11300o = null;
+            this.f12080h = null;
+            this.f12086o = null;
         }
     }
 
     public void reset(int i, long j6, long j9) {
-        this.f11301p = i;
-        this.f11290d = j6;
-        this.f11292f = j9;
+        this.f12087p = i;
+        this.f12076d = j6;
+        this.f12078f = j9;
         k();
     }
 
@@ -314,13 +314,13 @@ public abstract class BaseSpecialNoteView extends LinearLayout {
     public static /* synthetic */ void a(BaseSpecialNoteView baseSpecialNoteView) {
         if (baseSpecialNoteView.getWindowVisibility() == 0) {
             if (baseSpecialNoteView.j()) {
-                long j6 = baseSpecialNoteView.f11291e;
+                long j6 = baseSpecialNoteView.f12077e;
                 if (j6 > 0) {
-                    baseSpecialNoteView.f11291e = j6 - 500;
+                    baseSpecialNoteView.f12077e = j6 - 500;
                 } else {
-                    long j9 = baseSpecialNoteView.f11293g;
+                    long j9 = baseSpecialNoteView.f12079g;
                     if (j9 > 0) {
-                        baseSpecialNoteView.f11293g = j9 - 500;
+                        baseSpecialNoteView.f12079g = j9 - 500;
                     }
                 }
                 baseSpecialNoteView.h();
@@ -330,18 +330,18 @@ public abstract class BaseSpecialNoteView extends LinearLayout {
         } else if (baseSpecialNoteView.d()) {
             baseSpecialNoteView.k();
         }
-        View view = baseSpecialNoteView.f11300o;
+        View view = baseSpecialNoteView.f12086o;
         if (view != null) {
-            baseSpecialNoteView.f11295j.a(view, baseSpecialNoteView.new AnonymousClass4());
+            baseSpecialNoteView.f12081j.a(view, baseSpecialNoteView.new AnonymousClass4());
         }
     }
 
     public BaseSpecialNoteView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f11287a = getClass().getSimpleName();
-        this.f11288b = 500L;
-        this.f11289c = 50;
-        this.f11299n = "";
-        this.f11302q = false;
+        this.f12073a = getClass().getSimpleName();
+        this.f12074b = 500L;
+        this.f12075c = 50;
+        this.f12085n = "";
+        this.f12088q = false;
     }
 }

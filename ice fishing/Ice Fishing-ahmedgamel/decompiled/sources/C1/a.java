@@ -1,43 +1,23 @@
 package C1;
 
-import B1.j;
-import android.os.ParcelFileDescriptor;
-import com.bumptech.glide.load.data.e;
-import com.bumptech.glide.load.data.f;
-import com.bumptech.glide.load.data.g;
-import java.nio.ByteBuffer;
+import android.graphics.ImageDecoder;
+import android.graphics.drawable.AnimatedImageDrawable;
+import android.graphics.drawable.Drawable;
 
 /* loaded from: classes.dex */
-public final class a implements e {
-
-    /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f244a;
-
-    public /* synthetic */ a(int i) {
-        this.f244a = i;
+public abstract /* synthetic */ class a {
+    public static /* bridge */ /* synthetic */ ImageDecoder.Source f(Object obj) {
+        return (ImageDecoder.Source) obj;
     }
 
-    @Override // com.bumptech.glide.load.data.e
-    public final Class a() {
-        switch (this.f244a) {
-            case 0:
-                return ByteBuffer.class;
-            case 1:
-                throw new UnsupportedOperationException("Not implemented");
-            default:
-                return ParcelFileDescriptor.class;
-        }
+    public static /* bridge */ /* synthetic */ AnimatedImageDrawable i(Drawable drawable) {
+        return (AnimatedImageDrawable) drawable;
     }
 
-    @Override // com.bumptech.glide.load.data.e
-    public final f b(Object obj) {
-        switch (this.f244a) {
-            case 0:
-                return new j(1, (ByteBuffer) obj);
-            case 1:
-                return new g(obj);
-            default:
-                return new g((ParcelFileDescriptor) obj);
-        }
+    public static /* bridge */ /* synthetic */ void w(Object obj) {
+    }
+
+    public static /* bridge */ /* synthetic */ boolean x(Drawable drawable) {
+        return drawable instanceof AnimatedImageDrawable;
     }
 }

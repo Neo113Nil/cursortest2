@@ -41,8 +41,8 @@ public final class MediaViewVideoRendererWithBackgroundPlayback extends MediaVie
         initialize(context);
     }
 
-    public MediaViewVideoRendererWithBackgroundPlayback(Context context, AttributeSet attributeSet, int i, int i6) {
-        super(context, attributeSet, i, i6);
+    public MediaViewVideoRendererWithBackgroundPlayback(Context context, AttributeSet attributeSet, int i, int i4) {
+        super(context, attributeSet, i, i4);
         initialize(context);
     }
 }

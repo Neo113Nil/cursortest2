@@ -27,22 +27,22 @@ public final class e extends h {
     };
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f7298a = "COMM";
+    public static final String f8084a = "COMM";
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f7299b;
+    public final String f8085b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final String f7300c;
+    public final String f8086c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f7301d;
+    public final String f8087d;
 
     public e(String str, String str2, String str3) {
-        super(f7298a);
-        this.f7299b = str;
-        this.f7300c = str2;
-        this.f7301d = str3;
+        super(f8084a);
+        this.f8085b = str;
+        this.f8086c = str2;
+        this.f8087d = str3;
     }
 
     public final boolean equals(Object obj) {
@@ -51,7 +51,7 @@ public final class e extends h {
         }
         if (obj != null && e.class == obj.getClass()) {
             e eVar = (e) obj;
-            if (af.a((Object) this.f7300c, (Object) eVar.f7300c) && af.a((Object) this.f7299b, (Object) eVar.f7299b) && af.a((Object) this.f7301d, (Object) eVar.f7301d)) {
+            if (af.a((Object) this.f8086c, (Object) eVar.f8086c) && af.a((Object) this.f8085b, (Object) eVar.f8085b) && af.a((Object) this.f8087d, (Object) eVar.f8087d)) {
                 return true;
             }
         }
@@ -59,30 +59,30 @@ public final class e extends h {
     }
 
     public final int hashCode() {
-        String str = this.f7299b;
+        String str = this.f8085b;
         int hashCode = ((str != null ? str.hashCode() : 0) + 527) * 31;
-        String str2 = this.f7300c;
+        String str2 = this.f8086c;
         int hashCode2 = (hashCode + (str2 != null ? str2.hashCode() : 0)) * 31;
-        String str3 = this.f7301d;
+        String str3 = this.f8087d;
         return hashCode2 + (str3 != null ? str3.hashCode() : 0);
     }
 
     @Override // com.anythink.basead.exoplayer.g.b.h
     public final String toString() {
-        return this.f7326g + ": language=" + this.f7299b + ", description=" + this.f7300c;
+        return this.f8112g + ": language=" + this.f8085b + ", description=" + this.f8086c;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(this.f7326g);
-        parcel.writeString(this.f7299b);
-        parcel.writeString(this.f7301d);
+        parcel.writeString(this.f8112g);
+        parcel.writeString(this.f8085b);
+        parcel.writeString(this.f8087d);
     }
 
     public e(Parcel parcel) {
-        super(f7298a);
-        this.f7299b = parcel.readString();
-        this.f7300c = parcel.readString();
-        this.f7301d = parcel.readString();
+        super(f8084a);
+        this.f8085b = parcel.readString();
+        this.f8086c = parcel.readString();
+        this.f8087d = parcel.readString();
     }
 }

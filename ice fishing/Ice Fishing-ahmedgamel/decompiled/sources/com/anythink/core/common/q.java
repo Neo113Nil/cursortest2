@@ -1,6 +1,5 @@
 package com.anythink.core.common;
 
-import D.y;
 import android.content.Context;
 import android.content.Intent;
 import android.text.TextUtils;
@@ -14,37 +13,37 @@ import org.json.JSONObject;
 public class q {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f15984a = "MsgManager";
+    public static final String f16771a = "MsgManager";
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile q f15985b;
+    private static volatile q f16772b;
 
     /* renamed from: c, reason: collision with root package name */
-    private Context f15986c;
+    private Context f16773c;
 
     /* renamed from: d, reason: collision with root package name */
-    private boolean f15987d;
+    private boolean f16774d;
 
     private q(Context context) {
         if (context != null) {
-            this.f15986c = context.getApplicationContext();
+            this.f16773c = context.getApplicationContext();
         }
-        this.f15987d = false;
+        this.f16774d = false;
     }
 
     public static q a(Context context) {
-        if (f15985b == null) {
+        if (f16772b == null) {
             synchronized (q.class) {
                 try {
-                    if (f15985b == null) {
-                        f15985b = new q(context);
+                    if (f16772b == null) {
+                        f16772b = new q(context);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f15985b;
+        return f16772b;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:18:0x008a A[Catch: all -> 0x010c, TryCatch #1 {all -> 0x010c, blocks: (B:2:0x0000, B:7:0x001d, B:15:0x0036, B:18:0x008a, B:20:0x0090, B:26:0x0109, B:29:0x003b, B:32:0x0046, B:34:0x004c, B:35:0x0055, B:38:0x0060, B:40:0x0066, B:41:0x006f, B:44:0x007a, B:46:0x0080), top: B:1:0x0000 }] */
@@ -58,15 +57,15 @@ public class q {
             System.currentTimeMillis();
         } catch (Throwable unused) {
         }
-        if (com.anythink.core.d.n.a(com.anythink.core.common.d.t.b().g()).a(oVar.f14033b.aI()) == null) {
+        if (com.anythink.core.d.n.a(com.anythink.core.common.d.t.b().g()).a(oVar.f14819b.aI()) == null) {
             return;
         }
-        String M8 = ((com.anythink.core.common.h.n) oVar.f14033b).M();
+        String M8 = ((com.anythink.core.common.h.n) oVar.f14819b).M();
         if (TextUtils.isEmpty(M8)) {
             return;
         }
         if (i == 4) {
-            r3 = ((com.anythink.core.common.h.n) oVar.f14033b).H() == 1;
+            r3 = ((com.anythink.core.common.h.n) oVar.f14819b).H() == 1;
             Map<String, String> Y = bVar.Y();
             if (Y != null) {
                 str = Y.get("show");
@@ -84,7 +83,7 @@ public class q {
                 case 18:
                 case 19:
                 case 20:
-                    r3 = ((com.anythink.core.common.h.n) oVar.f14033b).l() == 1;
+                    r3 = ((com.anythink.core.common.h.n) oVar.f14819b).l() == 1;
                     Map<String, String> Y7 = bVar.Y();
                     if (Y7 != null) {
                         str = Y7.get("dl");
@@ -100,8 +99,8 @@ public class q {
                 oVar.a().toString();
                 String jSONObject = a9.toString();
                 String jSONObject2 = oVar.a().toString();
-                com.anythink.core.common.h.n nVar = (com.anythink.core.common.h.n) oVar.f14033b;
-                if (this.f15986c != null) {
+                com.anythink.core.common.h.n nVar = (com.anythink.core.common.h.n) oVar.f14819b;
+                if (this.f16773c != null) {
                     try {
                         Intent intent = new Intent(str);
                         intent.putExtra(com.anythink.core.common.m.e.Y, jSONObject);
@@ -111,16 +110,16 @@ public class q {
                         intent.putExtra("format", nVar.aK());
                         intent.putExtra("showid", nVar.z());
                         intent.putExtra("tktype", i);
-                        intent.putExtra(b.a.f12930f, com.anythink.core.common.d.l.a(nVar, (com.anythink.core.common.d.f) null).toString());
-                        intent.setPackage(this.f15986c.getPackageName());
-                        com.anythink.core.common.d.n.a(this.f15986c).a(intent);
+                        intent.putExtra(b.a.f13716f, com.anythink.core.common.d.l.a(nVar, (com.anythink.core.common.d.f) null).toString());
+                        intent.setPackage(this.f16773c.getPackageName());
+                        com.anythink.core.common.d.n.a(this.f16773c).a(intent);
                     } catch (Throwable unused2) {
                     }
                 }
             }
             System.currentTimeMillis();
         }
-        r3 = ((com.anythink.core.common.h.n) oVar.f14033b).I() == 1;
+        r3 = ((com.anythink.core.common.h.n) oVar.f14819b).I() == 1;
         Map<String, String> Y8 = bVar.Y();
         if (Y8 != null) {
             str = Y8.get("click");
@@ -130,8 +129,8 @@ public class q {
                 oVar.a().toString();
                 String jSONObject3 = a92.toString();
                 String jSONObject22 = oVar.a().toString();
-                com.anythink.core.common.h.n nVar2 = (com.anythink.core.common.h.n) oVar.f14033b;
-                if (this.f15986c != null) {
+                com.anythink.core.common.h.n nVar2 = (com.anythink.core.common.h.n) oVar.f14819b;
+                if (this.f16773c != null) {
                 }
             }
             System.currentTimeMillis();
@@ -147,10 +146,10 @@ public class q {
             @Override // java.lang.Runnable
             public final void run() {
                 try {
-                    if (q.this.f15986c == null) {
+                    if (q.this.f16773c == null) {
                         return;
                     }
-                    String packageName = q.this.f15986c.getPackageName();
+                    String packageName = q.this.f16773c.getPackageName();
                     String str = "";
                     for (int i = 0; i < 2; i++) {
                         str = str + packageName;
@@ -162,7 +161,7 @@ public class q {
                     intent.putExtra("denied", com.anythink.core.common.d.t.b().f());
                     intent.putExtra("tksw", bVar.r());
                     intent.setPackage(packageName);
-                    com.anythink.core.common.d.n.a(q.this.f15986c).a(intent);
+                    com.anythink.core.common.d.n.a(q.this.f16773c).a(intent);
                     com.anythink.core.common.u.e.a(bVar.r());
                 } catch (Throwable unused) {
                 }
@@ -171,7 +170,7 @@ public class q {
     }
 
     private void a(int i, String str, String str2, String str3, String str4, com.anythink.core.common.h.n nVar) {
-        if (this.f15986c == null) {
+        if (this.f16773c == null) {
             return;
         }
         try {
@@ -183,23 +182,23 @@ public class q {
             intent.putExtra("format", nVar.aK());
             intent.putExtra("showid", nVar.z());
             intent.putExtra("tktype", i);
-            intent.putExtra(b.a.f12930f, com.anythink.core.common.d.l.a(nVar, (com.anythink.core.common.d.f) null).toString());
-            intent.setPackage(this.f15986c.getPackageName());
-            com.anythink.core.common.d.n.a(this.f15986c).a(intent);
+            intent.putExtra(b.a.f13716f, com.anythink.core.common.d.l.a(nVar, (com.anythink.core.common.d.f) null).toString());
+            intent.setPackage(this.f16773c.getPackageName());
+            com.anythink.core.common.d.n.a(this.f16773c).a(intent);
         } catch (Throwable unused) {
         }
     }
 
-    public final void a(boolean z3) {
-        this.f15987d = z3;
+    public final void a(boolean z6) {
+        this.f16774d = z6;
     }
 
     public final void a(com.anythink.core.common.h.w wVar, com.anythink.core.common.h.n nVar, int i) {
         String str;
-        if (this.f15987d) {
-            com.anythink.core.d.b g4 = y.g(y.h());
+        if (this.f16774d) {
+            com.anythink.core.d.b k9 = com.IceFishing.LiveIceFishing.k.k(com.IceFishing.LiveIceFishing.k.l());
             if (i == 4) {
-                Map<String, String> Y = g4.Y();
+                Map<String, String> Y = k9.Y();
                 if (Y != null) {
                     str = Y.get("show");
                 }
@@ -209,7 +208,7 @@ public class q {
                     case 18:
                     case 19:
                     case 20:
-                        Map<String, String> Y7 = g4.Y();
+                        Map<String, String> Y7 = k9.Y();
                         if (Y7 != null) {
                             str = Y7.get("dl");
                             break;
@@ -219,18 +218,18 @@ public class q {
                         break;
                 }
             } else {
-                Map<String, String> Y8 = g4.Y();
+                Map<String, String> Y8 = k9.Y();
                 if (Y8 != null) {
                     str = Y8.get("click");
                 }
                 str = null;
             }
-            if (this.f15986c == null) {
+            if (this.f16773c == null) {
                 return;
             }
             if (str == null) {
                 if (com.anythink.core.common.d.t.b().F()) {
-                    Log.d(f15984a, "sendAdxTraminiInfo: fail with empty action,businessType is ".concat(String.valueOf(i)));
+                    Log.d(f16771a, "sendAdxTraminiInfo: fail with empty action,businessType is ".concat(String.valueOf(i)));
                     return;
                 }
                 return;
@@ -251,11 +250,11 @@ public class q {
                     jSONObject.put("ad_package_name", wVar.I());
                 }
                 intent.putExtra("adx_extra_info", jSONObject.toString());
-                intent.setPackage(this.f15986c.getPackageName());
-                com.anythink.core.common.d.n.a(this.f15986c).a(intent);
+                intent.setPackage(this.f16773c.getPackageName());
+                com.anythink.core.common.d.n.a(this.f16773c).a(intent);
             } catch (Throwable th) {
                 if (com.anythink.core.common.d.t.b().F()) {
-                    Log.d(f15984a, "sendAdxTraminiInfo: fail with throwable" + th.getMessage());
+                    Log.d(f16771a, "sendAdxTraminiInfo: fail with throwable" + th.getMessage());
                 }
             }
         }

@@ -13,30 +13,30 @@ import java.util.Iterator;
 public final class f implements ViewTreeObserver.OnPreDrawListener {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f85n = 1;
+    public final /* synthetic */ int f243n = 1;
 
     /* renamed from: u, reason: collision with root package name */
-    public final Object f86u;
+    public final Object f244u;
 
-    public f(K1.d dVar) {
-        this.f86u = new WeakReference(dVar);
+    public f(M1.d dVar) {
+        this.f244u = new WeakReference(dVar);
     }
 
     @Override // android.view.ViewTreeObserver.OnPreDrawListener
     public final boolean onPreDraw() {
-        switch (this.f85n) {
+        switch (this.f243n) {
             case 0:
-                ((CoordinatorLayout) this.f86u).p(0);
+                ((CoordinatorLayout) this.f244u).p(0);
                 break;
             default:
                 if (Log.isLoggable("ViewTarget", 2)) {
                     Log.v("ViewTarget", "OnGlobalLayoutListener called attachStateListener=" + this);
                 }
-                K1.d dVar = (K1.d) ((WeakReference) this.f86u).get();
+                M1.d dVar = (M1.d) ((WeakReference) this.f244u).get();
                 if (dVar != null) {
-                    ArrayList arrayList = dVar.f1565b;
+                    ArrayList arrayList = dVar.f1860b;
                     if (!arrayList.isEmpty()) {
-                        ImageView imageView = dVar.f1564a;
+                        ImageView imageView = dVar.f1859a;
                         int paddingRight = imageView.getPaddingRight() + imageView.getPaddingLeft();
                         ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
                         int a9 = dVar.a(imageView.getWidth(), layoutParams != null ? layoutParams.width : 0, paddingRight);
@@ -47,13 +47,13 @@ public final class f implements ViewTreeObserver.OnPreDrawListener {
                             if (a10 > 0 || a10 == Integer.MIN_VALUE) {
                                 Iterator it = new ArrayList(arrayList).iterator();
                                 while (it.hasNext()) {
-                                    ((J1.f) ((K1.b) it.next())).l(a9, a10);
+                                    ((L1.f) ((M1.b) it.next())).l(a9, a10);
                                 }
                                 ViewTreeObserver viewTreeObserver = imageView.getViewTreeObserver();
                                 if (viewTreeObserver.isAlive()) {
-                                    viewTreeObserver.removeOnPreDrawListener(dVar.f1566c);
+                                    viewTreeObserver.removeOnPreDrawListener(dVar.f1861c);
                                 }
-                                dVar.f1566c = null;
+                                dVar.f1861c = null;
                                 arrayList.clear();
                                 break;
                             }
@@ -66,6 +66,6 @@ public final class f implements ViewTreeObserver.OnPreDrawListener {
     }
 
     public f(CoordinatorLayout coordinatorLayout) {
-        this.f86u = coordinatorLayout;
+        this.f244u = coordinatorLayout;
     }
 }

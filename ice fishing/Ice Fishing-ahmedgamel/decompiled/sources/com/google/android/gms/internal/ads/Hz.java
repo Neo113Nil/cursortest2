@@ -10,38 +10,38 @@ import java.util.HashSet;
 public final class Hz {
 
     /* renamed from: a, reason: collision with root package name */
-    public final File f25416a;
+    public final File f26159a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final File f25417b;
+    public final File f26160b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final SharedPreferences f25418c;
+    public final SharedPreferences f26161c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final InterfaceC3135eN f25419d;
+    public final InterfaceC3158eN f26162d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final C3983uA f25420e;
+    public final C4006uA f26163e;
 
-    public Hz(Context context, SharedPreferences sharedPreferences, InterfaceC3135eN interfaceC3135eN, C3983uA c3983uA) {
-        this.f25418c = sharedPreferences;
+    public Hz(Context context, SharedPreferences sharedPreferences, InterfaceC3158eN interfaceC3158eN, C4006uA c4006uA) {
+        this.f26161c = sharedPreferences;
         File dir = context.getDir("pccache2", 0);
         MA.G(dir, false);
-        this.f25416a = dir;
+        this.f26159a = dir;
         File dir2 = context.getDir("tmppccache2", 0);
         MA.G(dir2, true);
-        this.f25417b = dir2;
-        this.f25419d = interfaceC3135eN;
-        this.f25420e = c3983uA;
+        this.f26160b = dir2;
+        this.f26162d = interfaceC3158eN;
+        this.f26163e = c4006uA;
     }
 
     public final void a(Ky ky, byte[] bArr, byte[] bArr2) {
         String A9 = ky.A().A();
         boolean isEmpty = TextUtils.isEmpty(A9);
-        C3983uA c3983uA = this.f25420e;
+        C4006uA c4006uA = this.f26163e;
         if (!isEmpty && bArr2.length != 0) {
-            File file = this.f25417b;
+            File file = this.f26160b;
             MA.N(file);
             file.mkdirs();
             File y7 = MA.y(A9, file);
@@ -64,19 +64,19 @@ public final class Hz {
                         File c14 = MA.c(A10, "pcbc", c());
                         c14.getClass();
                         if (c11.exists() && !c11.renameTo(c13)) {
-                            c3983uA.b(15318);
+                            c4006uA.b(15318);
                         } else if (c12.exists() && c12.renameTo(c14)) {
                             Ky b9 = b(1);
-                            SharedPreferences.Editor edit = this.f25418c.edit();
+                            SharedPreferences.Editor edit = this.f26161c.edit();
                             if (b9 != null && !ky.A().A().equals(b9.A().A())) {
-                                edit.putString(d(), T2.b.b(b9.b()));
+                                edit.putString(d(), V2.b.b(b9.b()));
                             }
-                            edit.putString(e(), T2.b.b(ky.b()));
+                            edit.putString(e(), V2.b.b(ky.b()));
                             if (!edit.commit()) {
-                                c3983uA.b(15320);
+                                c4006uA.b(15320);
                             }
                         } else {
-                            c3983uA.b(15319);
+                            c4006uA.b(15319);
                         }
                     }
                     HashSet hashSet = new HashSet();
@@ -104,15 +104,15 @@ public final class Hz {
                 }
             }
         }
-        c3983uA.b(15316);
+        c4006uA.b(15316);
     }
 
     public final Ky b(int i) {
-        SharedPreferences sharedPreferences = this.f25418c;
+        SharedPreferences sharedPreferences = this.f26161c;
         String string = i == 1 ? sharedPreferences.getString(e(), null) : sharedPreferences.getString(d(), null);
         if (!TextUtils.isEmpty(string)) {
             try {
-                byte[] j6 = T2.b.j(string);
+                byte[] j6 = V2.b.j(string);
                 Ky E8 = Ky.E(JK.s(j6, 0, j6.length));
                 String A9 = E8.A().A();
                 File c9 = MA.c(A9, "pcam.jar", c());
@@ -129,15 +129,15 @@ public final class Hz {
                 if (c9.exists() && c10.exists()) {
                     return E8;
                 }
-            } catch (C3295hL unused) {
-                this.f25420e.b(15317);
+            } catch (C3318hL unused) {
+                this.f26163e.b(15317);
             }
         }
         return null;
     }
 
     public final File c() {
-        File file = new File(this.f25416a, Integer.toString(((EnumC2960b8) this.f25419d.f()).f29227n));
+        File file = new File(this.f26159a, Integer.toString(((EnumC2983b8) this.f26162d.f()).f30015n));
         if (!file.exists()) {
             file.mkdir();
         }
@@ -145,12 +145,12 @@ public final class Hz {
     }
 
     public final String d() {
-        int i = ((EnumC2960b8) this.f25419d.f()).f29227n;
-        return D.y.m(i, "FBAMTD", new StringBuilder(String.valueOf(i).length() + 6));
+        int i = ((EnumC2983b8) this.f26162d.f()).f30015n;
+        return D.x.k(i, "FBAMTD", new StringBuilder(String.valueOf(i).length() + 6));
     }
 
     public final String e() {
-        int i = ((EnumC2960b8) this.f25419d.f()).f29227n;
-        return D.y.m(i, "LATMTD", new StringBuilder(String.valueOf(i).length() + 6));
+        int i = ((EnumC2983b8) this.f26162d.f()).f30015n;
+        return D.x.k(i, "LATMTD", new StringBuilder(String.valueOf(i).length() + 6));
     }
 }

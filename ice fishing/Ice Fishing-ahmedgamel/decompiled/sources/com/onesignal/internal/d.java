@@ -20,19 +20,19 @@ public final class d {
         }
     }
 
-    public d(boolean z3, M4.c cVar) {
-        this.isEnabled = z3;
+    public d(boolean z6, M4.c cVar) {
+        this.isEnabled = z6;
         this.logLevel = cVar;
     }
 
-    public static /* synthetic */ d copy$default(d dVar, boolean z3, M4.c cVar, int i, Object obj) {
+    public static /* synthetic */ d copy$default(d dVar, boolean z6, M4.c cVar, int i, Object obj) {
         if ((i & 1) != 0) {
-            z3 = dVar.isEnabled;
+            z6 = dVar.isEnabled;
         }
         if ((i & 2) != 0) {
             cVar = dVar.logLevel;
         }
-        return dVar.copy(z3, cVar);
+        return dVar.copy(z6, cVar);
     }
 
     public final boolean component1() {
@@ -43,8 +43,8 @@ public final class d {
         return this.logLevel;
     }
 
-    public final d copy(boolean z3, M4.c cVar) {
-        return new d(z3, cVar);
+    public final d copy(boolean z6, M4.c cVar) {
+        return new d(z6, cVar);
     }
 
     public boolean equals(Object obj) {

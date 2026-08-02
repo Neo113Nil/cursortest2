@@ -8,14 +8,14 @@ import java.util.logging.Logger;
 public abstract class AbstractC4843d {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final ArrayList f39776a;
+    public static final ArrayList f39823a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final Object f39777b;
+    public static final Object f39824b;
 
     static {
         Logger.getLogger(AbstractC4843d.class.getName());
-        f39776a = new ArrayList();
-        f39777b = new Object();
+        f39823a = new ArrayList();
+        f39824b = new Object();
     }
 }

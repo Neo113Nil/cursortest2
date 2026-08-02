@@ -6,28 +6,28 @@ package G;
 public final class a {
 
     /* renamed from: A, reason: collision with root package name */
-    public static final /* synthetic */ a[] f995A;
+    public static final /* synthetic */ a[] f1021A;
 
     /* renamed from: n, reason: collision with root package name */
-    public static final a f996n;
+    public static final a f1022n;
 
     /* renamed from: u, reason: collision with root package name */
-    public static final a f997u;
+    public static final a f1023u;
 
     /* renamed from: v, reason: collision with root package name */
-    public static final a f998v;
+    public static final a f1024v;
 
     /* renamed from: w, reason: collision with root package name */
-    public static final a f999w;
+    public static final a f1025w;
 
     /* renamed from: x, reason: collision with root package name */
-    public static final a f1000x;
+    public static final a f1026x;
 
     /* renamed from: y, reason: collision with root package name */
-    public static final a f1001y;
+    public static final a f1027y;
 
     /* renamed from: z, reason: collision with root package name */
-    public static final a f1002z;
+    public static final a f1028z;
 
     /* JADX INFO: Fake field, exist only in values array */
     a EF1;
@@ -46,17 +46,17 @@ public final class a {
         a aVar11 = new a("DST_ATOP", 10);
         a aVar12 = new a("XOR", 11);
         a aVar13 = new a("PLUS", 12);
-        f996n = aVar13;
+        f1022n = aVar13;
         a aVar14 = new a("MODULATE", 13);
-        f997u = aVar14;
+        f1023u = aVar14;
         a aVar15 = new a("SCREEN", 14);
-        f998v = aVar15;
+        f1024v = aVar15;
         a aVar16 = new a("OVERLAY", 15);
-        f999w = aVar16;
+        f1025w = aVar16;
         a aVar17 = new a("DARKEN", 16);
-        f1000x = aVar17;
+        f1026x = aVar17;
         a aVar18 = new a("LIGHTEN", 17);
-        f1001y = aVar18;
+        f1027y = aVar18;
         a aVar19 = new a("COLOR_DODGE", 18);
         a aVar20 = new a("COLOR_BURN", 19);
         a aVar21 = new a("HARD_LIGHT", 20);
@@ -64,8 +64,8 @@ public final class a {
         a aVar23 = new a("DIFFERENCE", 22);
         a aVar24 = new a("EXCLUSION", 23);
         a aVar25 = new a("MULTIPLY", 24);
-        f1002z = aVar25;
-        f995A = new a[]{aVar, aVar2, aVar3, aVar4, aVar5, aVar6, aVar7, aVar8, aVar9, aVar10, aVar11, aVar12, aVar13, aVar14, aVar15, aVar16, aVar17, aVar18, aVar19, aVar20, aVar21, aVar22, aVar23, aVar24, aVar25, new a("HUE", 25), new a("SATURATION", 26), new a("COLOR", 27), new a("LUMINOSITY", 28)};
+        f1028z = aVar25;
+        f1021A = new a[]{aVar, aVar2, aVar3, aVar4, aVar5, aVar6, aVar7, aVar8, aVar9, aVar10, aVar11, aVar12, aVar13, aVar14, aVar15, aVar16, aVar17, aVar18, aVar19, aVar20, aVar21, aVar22, aVar23, aVar24, aVar25, new a("HUE", 25), new a("SATURATION", 26), new a("COLOR", 27), new a("LUMINOSITY", 28)};
     }
 
     public static a valueOf(String str) {
@@ -73,6 +73,6 @@ public final class a {
     }
 
     public static a[] values() {
-        return (a[]) f995A.clone();
+        return (a[]) f1021A.clone();
     }
 }

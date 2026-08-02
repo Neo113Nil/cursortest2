@@ -1,5 +1,8 @@
 package m;
 
 /* loaded from: classes.dex */
-public interface d1 {
+public abstract class d1 extends J0 {
+
+    /* renamed from: a, reason: collision with root package name */
+    public static final /* synthetic */ int f39199a = 0;
 }

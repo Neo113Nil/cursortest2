@@ -6,13 +6,13 @@ import com.anythink.core.api.AdError;
 public final class m extends IllegalStateException {
 
     /* renamed from: a, reason: collision with root package name */
-    public AdError f13988a;
+    public AdError f14774a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f13989b;
+    public String f14775b;
 
     public m(AdError adError, String str) {
-        this.f13988a = adError;
-        this.f13989b = str;
+        this.f14774a = adError;
+        this.f14775b = str;
     }
 }

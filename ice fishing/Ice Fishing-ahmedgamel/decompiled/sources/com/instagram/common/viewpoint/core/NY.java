@@ -27,7 +27,7 @@ public final class NY implements Serializable {
     public NY(NX nx) {
         this.A0H = nx.A0H;
         this.A0G = nx.A0G;
-        this.A04 = nx.A04;
+        this.A04 = NX.A0B(nx);
         this.A0D = nx.A0D;
         this.A0A = nx.A0A;
         this.A02 = nx.A02;

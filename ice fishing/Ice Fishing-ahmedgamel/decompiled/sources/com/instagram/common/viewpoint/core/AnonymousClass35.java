@@ -12,10 +12,10 @@ public final class AnonymousClass35 {
     public static String[] A03 = {"xIpC", "lOutcBeb", "y6lcWPY0M5vgnnr832pPoLFOGrBEwJN", "eNaaWw40USiw6vcri4oIxijcBQWus6T9", "W", "oHSXRLDm", "pbRsDBVUOoB3mv", "LvjaTOAqlauNDNt2xP6XrUFLIm1SBtnY"};
     public static final HashSet<String> A04;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 95);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 95);
         }
         return new String(copyOfRange);
     }

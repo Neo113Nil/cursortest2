@@ -23,7 +23,7 @@ public abstract class a {
         onAdDismiss(aTAdInfo, aTSplashAdExtraInfo);
     }
 
-    public abstract void onDeeplinkCallback(ATAdInfo aTAdInfo, boolean z3);
+    public abstract void onDeeplinkCallback(ATAdInfo aTAdInfo, boolean z6);
 
     public abstract void onDownloadConfirm(Context context, ATAdInfo aTAdInfo, ATNetworkConfirmInfo aTNetworkConfirmInfo);
 }

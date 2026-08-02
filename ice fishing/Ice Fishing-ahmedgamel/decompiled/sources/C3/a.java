@@ -1,40 +1,47 @@
 package C3;
 
+import Q3.b;
 import android.R;
 import android.content.res.ColorStateList;
-import android.graphics.Color;
-import android.os.Build;
-import android.util.Log;
+import com.IceFishing.LiveIceFishing.C5248R;
+import m.C4680B;
 
 /* loaded from: classes2.dex */
-public abstract class a {
+public final class a extends C4680B {
 
-    /* renamed from: a, reason: collision with root package name */
-    public static final int[] f430a = {R.attr.state_enabled, R.attr.state_pressed};
+    /* renamed from: z, reason: collision with root package name */
+    public static final int[][] f326z = {new int[]{R.attr.state_enabled, R.attr.state_checked}, new int[]{R.attr.state_enabled, -16842912}, new int[]{-16842910, R.attr.state_checked}, new int[]{-16842910, -16842912}};
 
-    /* renamed from: b, reason: collision with root package name */
-    public static final String f431b = a.class.getSimpleName();
+    /* renamed from: x, reason: collision with root package name */
+    public ColorStateList f327x;
 
-    public static ColorStateList a(ColorStateList colorStateList) {
-        if (colorStateList == null) {
-            return ColorStateList.valueOf(0);
+    /* renamed from: y, reason: collision with root package name */
+    public boolean f328y;
+
+    private ColorStateList getMaterialThemeColorsTintList() {
+        if (this.f327x == null) {
+            int h3 = b.h(C5248R.attr.colorControlActivated, this);
+            int h9 = b.h(C5248R.attr.colorOnSurface, this);
+            int h10 = b.h(C5248R.attr.colorSurface, this);
+            this.f327x = new ColorStateList(f326z, new int[]{b.l(h10, h3, 1.0f), b.l(h10, h9, 0.54f), b.l(h10, h9, 0.38f), b.l(h10, h9, 0.38f)});
         }
-        if (Build.VERSION.SDK_INT <= 27 && Color.alpha(colorStateList.getDefaultColor()) == 0 && Color.alpha(colorStateList.getColorForState(f430a, 0)) != 0) {
-            Log.w(f431b, "Use a non-transparent color for the default color as it will be used to finish ripple animations.");
-        }
-        return colorStateList;
+        return this.f327x;
     }
 
-    public static boolean b(int[] iArr) {
-        boolean z3 = false;
-        boolean z6 = false;
-        for (int i : iArr) {
-            if (i == 16842910) {
-                z3 = true;
-            } else if (i == 16842908 || i == 16842919 || i == 16843623) {
-                z6 = true;
-            }
+    @Override // android.widget.TextView, android.view.View
+    public final void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        if (this.f328y && U.b.a(this) == null) {
+            setUseMaterialThemeColors(true);
         }
-        return z3 && z6;
+    }
+
+    public void setUseMaterialThemeColors(boolean z6) {
+        this.f328y = z6;
+        if (z6) {
+            U.b.c(this, getMaterialThemeColorsTintList());
+        } else {
+            U.b.c(this, null);
+        }
     }
 }

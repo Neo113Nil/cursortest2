@@ -6,7 +6,7 @@ import com.anythink.core.api.AdError;
 
 /* loaded from: classes.dex */
 public interface CustomSplashEventListener {
-    void onDeeplinkCallback(boolean z3);
+    void onDeeplinkCallback(boolean z6);
 
     void onDownloadConfirm(Context context, ATNetworkConfirmInfo aTNetworkConfirmInfo);
 

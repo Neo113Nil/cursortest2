@@ -16,8 +16,8 @@ public class NoticeUtils {
         public static final String LOSS_TO_NORMAL = "103";
     }
 
-    public static void notifyLoss(String str, String str2, String str3, double d2, Map<String, Object> map) {
-        r.a(str, str2, str3, d2, map);
+    public static void notifyLoss(String str, String str2, String str3, double d9, Map<String, Object> map) {
+        r.a(str, str2, str3, d9, map);
     }
 
     public static void notifyWin(String str, String str2, Map<String, Object> map) {

@@ -4,43 +4,43 @@ package com.anythink.core.common.h;
 public final class bh {
 
     /* renamed from: a, reason: collision with root package name */
-    public long f13630a;
+    public long f14416a;
 
     /* renamed from: b, reason: collision with root package name */
-    public long f13631b;
+    public long f14417b;
 
     /* renamed from: c, reason: collision with root package name */
-    public long f13632c;
+    public long f14418c;
 
     /* renamed from: d, reason: collision with root package name */
-    public long f13633d;
+    public long f14419d;
 
     /* renamed from: e, reason: collision with root package name */
-    public long f13634e;
+    public long f14420e;
 
     /* renamed from: f, reason: collision with root package name */
-    public long f13635f;
+    public long f14421f;
 
     /* renamed from: g, reason: collision with root package name */
-    public long f13636g;
+    public long f14422g;
 
     private long c() {
-        return this.f13631b - this.f13630a;
+        return this.f14417b - this.f14416a;
     }
 
     private long d() {
-        return this.f13632c - this.f13630a;
+        return this.f14418c - this.f14416a;
     }
 
     private long e() {
-        return this.f13631b - this.f13632c;
+        return this.f14417b - this.f14418c;
     }
 
     public final long a() {
-        return this.f13634e - this.f13633d;
+        return this.f14420e - this.f14419d;
     }
 
     public final long b() {
-        return this.f13636g - this.f13635f;
+        return this.f14422g - this.f14421f;
     }
 }

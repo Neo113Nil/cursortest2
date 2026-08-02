@@ -1,9 +1,9 @@
 package com.anythink.core.common.u;
 
-import D.y;
 import android.content.Context;
 import android.os.Handler;
 import android.text.TextUtils;
+import com.IceFishing.LiveIceFishing.k;
 import com.anythink.core.common.d.t;
 import com.anythink.core.common.h.ad;
 import com.anythink.core.common.h.bu;
@@ -27,7 +27,7 @@ import org.json.JSONArray;
 public class c extends m<o> {
 
     /* renamed from: g, reason: collision with root package name */
-    private static volatile c f16455g;
+    private static volatile c f17242g;
 
     private c(Context context) {
         super(context);
@@ -42,7 +42,7 @@ public class c extends m<o> {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private o b(int i, bu buVar, bv bvVar, long j6) {
-        com.anythink.core.d.b g4;
+        com.anythink.core.d.b k9;
         List<String> S8;
         List<com.anythink.core.common.h.c> a9;
         ad R8;
@@ -55,14 +55,14 @@ public class c extends m<o> {
             if (buVar instanceof n) {
                 n nVar = (n) buVar;
                 String aI = nVar.aI();
-                l a10 = com.anythink.core.d.n.a(this.f14394d).a(aI);
+                l a10 = com.anythink.core.d.n.a(this.f15180d).a(aI);
                 if (a10 != null && (S8 = a10.S()) != null && S8.size() != 0 && (a9 = com.anythink.core.common.a.a().a(aI)) != null) {
                     for (com.anythink.core.common.h.c cVar : a9) {
                         if (cVar != null && cVar.c() == 0) {
-                            n i6 = cVar.i();
+                            n i4 = cVar.i();
                             bv unitGroupInfo = cVar.e().getUnitGroupInfo();
                             boolean s9 = (!ak.b(unitGroupInfo) || unitGroupInfo.R() == null) ? false : unitGroupInfo.R().s();
-                            if (S8.contains(String.valueOf(unitGroupInfo.g())) && !TextUtils.equals(nVar.x(), i6.x()) && (R8 = unitGroupInfo.R()) != null) {
+                            if (S8.contains(String.valueOf(unitGroupInfo.g())) && !TextUtils.equals(nVar.x(), i4.x()) && (R8 = unitGroupInfo.R()) != null) {
                                 com.anythink.core.b.d.c.a(R8, false, p.a(bvVar), nVar.J() == 1, s9);
                             }
                         }
@@ -88,17 +88,17 @@ public class c extends m<o> {
                 if (i == 6 && (buVar instanceof n)) {
                     com.anythink.core.common.d.a().b(buVar.aI(), buVar.aJ(), ((n) buVar).M());
                 }
-                g4 = y.g(y.h());
+                k9 = k.k(k.l());
                 o oVar = new o();
-                oVar.f14032a = i;
-                oVar.f14033b = buVar;
-                oVar.f14034c = j6 <= 0 ? j6 : System.currentTimeMillis();
-                q.a(t.b().g()).a(i, oVar, g4);
+                oVar.f14818a = i;
+                oVar.f14819b = buVar;
+                oVar.f14820c = j6 <= 0 ? j6 : System.currentTimeMillis();
+                q.a(t.b().g()).a(i, oVar, k9);
                 if (4 == i && (buVar instanceof n)) {
                     com.anythink.core.common.p.a();
                     com.anythink.core.common.p.a((n) buVar);
                 }
-                if (a(i, buVar, g4)) {
+                if (a(i, buVar, k9)) {
                     return oVar;
                 }
                 return null;
@@ -109,17 +109,17 @@ public class c extends m<o> {
         if (i == 6) {
             com.anythink.core.common.d.a().b(buVar.aI(), buVar.aJ(), ((n) buVar).M());
         }
-        g4 = y.g(y.h());
+        k9 = k.k(k.l());
         o oVar2 = new o();
-        oVar2.f14032a = i;
-        oVar2.f14033b = buVar;
-        oVar2.f14034c = j6 <= 0 ? j6 : System.currentTimeMillis();
-        q.a(t.b().g()).a(i, oVar2, g4);
+        oVar2.f14818a = i;
+        oVar2.f14819b = buVar;
+        oVar2.f14820c = j6 <= 0 ? j6 : System.currentTimeMillis();
+        q.a(t.b().g()).a(i, oVar2, k9);
         if (4 == i) {
             com.anythink.core.common.p.a();
             com.anythink.core.common.p.a((n) buVar);
         }
-        if (a(i, buVar, g4)) {
+        if (a(i, buVar, k9)) {
         }
     }
 
@@ -137,7 +137,7 @@ public class c extends m<o> {
         if (!TextUtils.isEmpty(nVar.au()) || !TextUtils.isEmpty(nVar.av())) {
             return true;
         }
-        Map<String, String> a9 = y.h().b(t.b().p()).a(i);
+        Map<String, String> a9 = k.l().b(t.b().p()).a(i);
         if (a9 != null) {
             if (a9.containsKey("0")) {
                 String str = a9.get("0");
@@ -170,7 +170,7 @@ public class c extends m<o> {
                 ((n) buVar).n();
             } else if (i == 10) {
                 n nVar2 = (n) buVar;
-                com.anythink.core.common.e.a(buVar.ay(), com.anythink.core.common.e.f12884c, nVar2);
+                com.anythink.core.common.e.a(buVar.ay(), com.anythink.core.common.e.f13670c, nVar2);
                 a(buVar);
                 e.b(nVar2, 1);
             } else if (i == 21) {
@@ -182,24 +182,24 @@ public class c extends m<o> {
 
     @Override // com.anythink.core.common.m
     public final void a(List<o> list) {
-        com.anythink.core.d.b g4 = y.g(y.h());
-        if (g4 == null) {
-            new v(this.f14394d, 0, list).a(0, (com.anythink.core.common.m.q) null);
+        com.anythink.core.d.b k9 = k.k(k.l());
+        if (k9 == null) {
+            new v(this.f15180d, 0, list).a(0, (com.anythink.core.common.m.q) null);
             return;
         }
-        int G7 = g4.G();
-        if (G7 == 1) {
+        int G2 = k9.G();
+        if (G2 == 1) {
             com.anythink.core.common.m.d.f fVar = new com.anythink.core.common.m.d.f(list);
-            fVar.a(1, g4.F());
+            fVar.a(1, k9.F());
             fVar.a((d.a) null);
         } else {
-            if (G7 != 2) {
-                new v(this.f14394d, g4.G(), list).a(0, (com.anythink.core.common.m.q) null);
+            if (G2 != 2) {
+                new v(this.f15180d, k9.G(), list).a(0, (com.anythink.core.common.m.q) null);
                 return;
             }
-            new v(this.f14394d, g4.G(), list).a(0, (com.anythink.core.common.m.q) null);
+            new v(this.f15180d, k9.G(), list).a(0, (com.anythink.core.common.m.q) null);
             com.anythink.core.common.m.d.f fVar2 = new com.anythink.core.common.m.d.f(list);
-            fVar2.a(2, g4.F());
+            fVar2.a(2, k9.F());
             fVar2.a((d.a) null);
         }
     }
@@ -225,18 +225,18 @@ public class c extends m<o> {
     }
 
     public static c a(Context context) {
-        if (f16455g == null) {
+        if (f17242g == null) {
             synchronized (c.class) {
                 try {
-                    if (f16455g == null) {
-                        f16455g = new c(context);
+                    if (f17242g == null) {
+                        f17242g = new c(context);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16455g;
+        return f17242g;
     }
 
     public final void a(int i, bu buVar) {
@@ -255,7 +255,7 @@ public class c extends m<o> {
             a(i, bvVar, true);
             e(i, buVar);
         }
-        Handler handler = this.f14395e;
+        Handler handler = this.f15181e;
         if (handler != null) {
             handler.post(new Runnable() { // from class: com.anythink.core.common.u.c.1
                 @Override // java.lang.Runnable
@@ -270,20 +270,20 @@ public class c extends m<o> {
         }
     }
 
-    private static void a(int i, bv bvVar, boolean z3) {
+    private static void a(int i, bv bvVar, boolean z6) {
         if (bvVar != null) {
-            int g4 = bvVar.g();
-            if (z3) {
-                if (g4 == 79 || (g4 == 50 && bvVar.bg() == 1)) {
+            int g9 = bvVar.g();
+            if (z6) {
+                if (g9 == 79 || (g9 == 50 && bvVar.bg() == 1)) {
                     a(i, bvVar);
                     return;
                 }
                 return;
             }
-            if (g4 == 79) {
+            if (g9 == 79) {
                 return;
             }
-            if (g4 == 50 && bvVar.bg() == 1) {
+            if (g9 == 50 && bvVar.bg() == 1) {
                 return;
             }
             a(i, bvVar);
@@ -309,8 +309,8 @@ public class c extends m<o> {
                 JSONArray jSONArray = new JSONArray(az);
                 int length = jSONArray.length();
                 String valueOf = String.valueOf(((n) buVar).Y());
-                for (int i6 = 0; i6 < length; i6++) {
-                    if (TextUtils.equals(valueOf, jSONArray.optString(i6))) {
+                for (int i4 = 0; i4 < length; i4++) {
+                    if (TextUtils.equals(valueOf, jSONArray.optString(i4))) {
                         return true;
                     }
                 }
@@ -342,15 +342,15 @@ public class c extends m<o> {
             if (R9 != null) {
                 com.anythink.core.b.d.c.a(R9, true, R9.getSortPrice(), true, false);
             }
-            if (!(buVar instanceof n) || (a9 = com.anythink.core.d.n.a(this.f14394d).a((aI = (nVar = (n) buVar).aI()))) == null || (S8 = a9.S()) == null || S8.size() == 0 || (a10 = com.anythink.core.common.a.a().a(aI)) == null) {
+            if (!(buVar instanceof n) || (a9 = com.anythink.core.d.n.a(this.f15180d).a((aI = (nVar = (n) buVar).aI()))) == null || (S8 = a9.S()) == null || S8.size() == 0 || (a10 = com.anythink.core.common.a.a().a(aI)) == null) {
                 return;
             }
             for (com.anythink.core.common.h.c cVar : a10) {
                 if (cVar != null && cVar.c() == 0) {
-                    n i6 = cVar.i();
+                    n i4 = cVar.i();
                     bv unitGroupInfo = cVar.e().getUnitGroupInfo();
                     boolean s9 = (!ak.b(unitGroupInfo) || unitGroupInfo.R() == null) ? false : unitGroupInfo.R().s();
-                    if (S8.contains(String.valueOf(unitGroupInfo.g())) && !TextUtils.equals(nVar.x(), i6.x()) && (R8 = unitGroupInfo.R()) != null) {
+                    if (S8.contains(String.valueOf(unitGroupInfo.g())) && !TextUtils.equals(nVar.x(), i4.x()) && (R8 = unitGroupInfo.R()) != null) {
                         com.anythink.core.b.d.c.a(R8, false, p.a(bvVar), nVar.J() == 1, s9);
                     }
                 }
@@ -363,7 +363,7 @@ public class c extends m<o> {
         List<com.anythink.core.common.h.c> a9;
         ad R8;
         String aI = nVar.aI();
-        l a10 = com.anythink.core.d.n.a(this.f14394d).a(aI);
+        l a10 = com.anythink.core.d.n.a(this.f15180d).a(aI);
         if (a10 == null || (S8 = a10.S()) == null || S8.size() == 0 || (a9 = com.anythink.core.common.a.a().a(aI)) == null) {
             return;
         }
@@ -389,7 +389,7 @@ public class c extends m<o> {
                 if (!TextUtils.isEmpty(nVar.au()) || !TextUtils.isEmpty(nVar.av())) {
                     return true;
                 }
-                Map<String, String> a9 = y.h().b(t.b().p()).a(i);
+                Map<String, String> a9 = k.l().b(t.b().p()).a(i);
                 if (a9 != null) {
                     if (a9.containsKey("0")) {
                         String str = a9.get("0");
@@ -424,13 +424,13 @@ public class c extends m<o> {
             if (R9 != null) {
                 com.anythink.core.b.d.c.a(R9, true, R9.getSortPrice(), true, false);
             }
-            if ((buVar instanceof n) && (a9 = com.anythink.core.d.n.a(cVar.f14394d).a((aI = (nVar = (n) buVar).aI()))) != null && (S8 = a9.S()) != null && S8.size() != 0 && (a10 = com.anythink.core.common.a.a().a(aI)) != null) {
+            if ((buVar instanceof n) && (a9 = com.anythink.core.d.n.a(cVar.f15180d).a((aI = (nVar = (n) buVar).aI()))) != null && (S8 = a9.S()) != null && S8.size() != 0 && (a10 = com.anythink.core.common.a.a().a(aI)) != null) {
                 for (com.anythink.core.common.h.c cVar2 : a10) {
                     if (cVar2 != null && cVar2.c() == 0) {
-                        n i6 = cVar2.i();
+                        n i4 = cVar2.i();
                         bv unitGroupInfo = cVar2.e().getUnitGroupInfo();
                         boolean s9 = (!ak.b(unitGroupInfo) || unitGroupInfo.R() == null) ? false : unitGroupInfo.R().s();
-                        if (S8.contains(String.valueOf(unitGroupInfo.g())) && !TextUtils.equals(nVar.x(), i6.x()) && (R8 = unitGroupInfo.R()) != null) {
+                        if (S8.contains(String.valueOf(unitGroupInfo.g())) && !TextUtils.equals(nVar.x(), i4.x()) && (R8 = unitGroupInfo.R()) != null) {
                             com.anythink.core.b.d.c.a(R8, false, p.a(bvVar), nVar.J() == 1, s9);
                         }
                     }
@@ -457,17 +457,17 @@ public class c extends m<o> {
         if (i == 6 && (buVar instanceof n)) {
             com.anythink.core.common.d.a().b(buVar.aI(), buVar.aJ(), ((n) buVar).M());
         }
-        com.anythink.core.d.b g4 = y.g(y.h());
+        com.anythink.core.d.b k9 = k.k(k.l());
         o oVar = new o();
-        oVar.f14032a = i;
-        oVar.f14033b = buVar;
-        oVar.f14034c = j6 > 0 ? j6 : System.currentTimeMillis();
-        q.a(t.b().g()).a(i, oVar, g4);
+        oVar.f14818a = i;
+        oVar.f14819b = buVar;
+        oVar.f14820c = j6 > 0 ? j6 : System.currentTimeMillis();
+        q.a(t.b().g()).a(i, oVar, k9);
         if (4 == i && (buVar instanceof n)) {
             com.anythink.core.common.p.a();
             com.anythink.core.common.p.a((n) buVar);
         }
-        if (a(i, buVar, g4)) {
+        if (a(i, buVar, k9)) {
             return null;
         }
         return oVar;

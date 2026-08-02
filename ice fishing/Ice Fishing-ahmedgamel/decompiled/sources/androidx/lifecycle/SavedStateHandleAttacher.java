@@ -1,22 +1,22 @@
 package androidx.lifecycle;
 
 /* loaded from: classes.dex */
-public final class SavedStateHandleAttacher implements InterfaceC0501t {
+public final class SavedStateHandleAttacher implements InterfaceC0505t {
 
     /* renamed from: n, reason: collision with root package name */
-    public final M f5144n;
+    public final M f5111n;
 
-    public SavedStateHandleAttacher(M m4) {
-        this.f5144n = m4;
+    public SavedStateHandleAttacher(M m9) {
+        this.f5111n = m9;
     }
 
-    @Override // androidx.lifecycle.InterfaceC0501t
-    public final void a(InterfaceC0503v interfaceC0503v, EnumC0496n enumC0496n) {
-        if (enumC0496n == EnumC0496n.ON_CREATE) {
-            interfaceC0503v.getLifecycle().b(this);
-            this.f5144n.b();
+    @Override // androidx.lifecycle.InterfaceC0505t
+    public final void a(InterfaceC0507v interfaceC0507v, EnumC0500n enumC0500n) {
+        if (enumC0500n == EnumC0500n.ON_CREATE) {
+            interfaceC0507v.getLifecycle().b(this);
+            this.f5111n.b();
         } else {
-            throw new IllegalStateException(("Next event must be ON_CREATE, it was " + enumC0496n).toString());
+            throw new IllegalStateException(("Next event must be ON_CREATE, it was " + enumC0500n).toString());
         }
     }
 }

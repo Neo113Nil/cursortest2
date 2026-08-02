@@ -4,21 +4,21 @@ package com.anythink.basead.exoplayer.e.a;
 final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f6976a;
+    public final int f7762a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f6977b;
+    public final int f7763b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f6978c;
+    public final int f7764c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f6979d;
+    public final int f7765d;
 
-    public c(int i, int i6, int i9, int i10) {
-        this.f6976a = i;
-        this.f6977b = i6;
-        this.f6978c = i9;
-        this.f6979d = i10;
+    public c(int i, int i4, int i6, int i9) {
+        this.f7762a = i;
+        this.f7763b = i4;
+        this.f7764c = i6;
+        this.f7765d = i9;
     }
 }

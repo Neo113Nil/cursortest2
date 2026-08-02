@@ -4,25 +4,25 @@ package f8;
 public final class s extends C {
 
     /* renamed from: n, reason: collision with root package name */
-    public final boolean f37576n;
+    public final boolean f37538n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final String f37577u;
+    public final String f37539u;
 
-    public s(String body, boolean z3) {
+    public s(String body, boolean z6) {
         kotlin.jvm.internal.h.e(body, "body");
-        this.f37576n = z3;
-        this.f37577u = body.toString();
+        this.f37538n = z6;
+        this.f37539u = body.toString();
     }
 
     @Override // f8.C
     public final String a() {
-        return this.f37577u;
+        return this.f37539u;
     }
 
     @Override // f8.C
     public final boolean c() {
-        return this.f37576n;
+        return this.f37538n;
     }
 
     public final boolean equals(Object obj) {
@@ -33,18 +33,18 @@ public final class s extends C {
             return false;
         }
         s sVar = (s) obj;
-        return this.f37576n == sVar.f37576n && kotlin.jvm.internal.h.a(this.f37577u, sVar.f37577u);
+        return this.f37538n == sVar.f37538n && kotlin.jvm.internal.h.a(this.f37539u, sVar.f37539u);
     }
 
     public final int hashCode() {
-        return this.f37577u.hashCode() + (Boolean.hashCode(this.f37576n) * 31);
+        return this.f37539u.hashCode() + (Boolean.hashCode(this.f37538n) * 31);
     }
 
     @Override // f8.C
     public final String toString() {
-        boolean z3 = this.f37576n;
-        String str = this.f37577u;
-        if (!z3) {
+        boolean z6 = this.f37538n;
+        String str = this.f37539u;
+        if (!z6) {
             return str;
         }
         StringBuilder sb = new StringBuilder();

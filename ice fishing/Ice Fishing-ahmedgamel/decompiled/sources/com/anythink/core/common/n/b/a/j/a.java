@@ -13,13 +13,13 @@ import javax.net.ssl.SSLPeerUnverifiedException;
 public final class a extends c {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final int f15365a = 9;
+    private static final int f16152a = 9;
 
     /* renamed from: b, reason: collision with root package name */
-    private final f f15366b;
+    private final f f16153b;
 
     public a(f fVar) {
-        this.f15366b = fVar;
+        this.f16153b = fVar;
     }
 
     @Override // com.anythink.core.common.n.b.a.j.c
@@ -27,10 +27,10 @@ public final class a extends c {
         ArrayDeque arrayDeque = new ArrayDeque(list);
         ArrayList arrayList = new ArrayList();
         arrayList.add((Certificate) arrayDeque.removeFirst());
-        boolean z3 = false;
+        boolean z6 = false;
         for (int i = 0; i < 9; i++) {
             X509Certificate x509Certificate = (X509Certificate) arrayList.get(arrayList.size() - 1);
-            X509Certificate a9 = this.f15366b.a(x509Certificate);
+            X509Certificate a9 = this.f16153b.a(x509Certificate);
             if (a9 == null) {
                 Iterator it = arrayDeque.iterator();
                 while (it.hasNext()) {
@@ -40,7 +40,7 @@ public final class a extends c {
                         arrayList.add(x509Certificate2);
                     }
                 }
-                if (!z3) {
+                if (!z6) {
                     throw new SSLPeerUnverifiedException("Failed to find a trusted cert that signed ".concat(String.valueOf(x509Certificate)));
                 }
                 return arrayList;
@@ -51,7 +51,7 @@ public final class a extends c {
             if (a(a9, a9)) {
                 return arrayList;
             }
-            z3 = true;
+            z6 = true;
         }
         throw new SSLPeerUnverifiedException("Certificate chain too long: ".concat(String.valueOf(arrayList)));
     }
@@ -60,11 +60,11 @@ public final class a extends c {
         if (obj == this) {
             return true;
         }
-        return (obj instanceof a) && ((a) obj).f15366b.equals(this.f15366b);
+        return (obj instanceof a) && ((a) obj).f16153b.equals(this.f16153b);
     }
 
     public final int hashCode() {
-        return this.f15366b.hashCode();
+        return this.f16153b.hashCode();
     }
 
     private static boolean a(X509Certificate x509Certificate, X509Certificate x509Certificate2) {

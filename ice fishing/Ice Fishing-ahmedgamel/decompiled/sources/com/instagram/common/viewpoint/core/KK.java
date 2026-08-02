@@ -6,9 +6,9 @@ public final class KK {
     public final int A01;
     public final int A02;
 
-    public KK(float f3, int i, int i6) {
-        this.A00 = f3;
+    public KK(float f2, int i, int i4) {
+        this.A00 = f2;
         this.A01 = i;
-        this.A02 = i6;
+        this.A02 = i4;
     }
 }

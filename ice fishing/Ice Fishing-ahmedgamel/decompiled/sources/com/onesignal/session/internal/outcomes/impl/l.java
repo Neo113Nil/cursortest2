@@ -2,17 +2,18 @@ package com.onesignal.session.internal.outcomes.impl;
 
 import I7.p;
 import K5.d;
-import S7.AbstractC0406y;
+import S7.AbstractC0410y;
 import S7.F;
-import S7.InterfaceC0404w;
+import S7.InterfaceC0408w;
 import android.content.ContentValues;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import org.json.JSONArray;
 import org.json.JSONException;
 import u7.v;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class l implements com.onesignal.session.internal.outcomes.impl.d {
@@ -25,30 +26,30 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
         final /* synthetic */ l this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public a(String str, String str2, l lVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public a(String str, String str2, l lVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$notificationTableName = str;
             this.$notificationIdColumnName = str2;
             this.this$0 = lVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return new a(this.$notificationTableName, this.$notificationIdColumnName, this.this$0, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return new a(this.$notificationTableName, this.$notificationIdColumnName, this.this$0, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((a) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((a) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             StringBuilder sb = new StringBuilder("NOT EXISTS(SELECT NULL FROM ");
             sb.append(this.$notificationTableName);
             sb.append(" n WHERE n.");
@@ -59,8 +60,8 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
             kotlin.jvm.internal.h.d(ROOT, "ROOT");
             String lowerCase = cVar.toLowerCase(ROOT);
             kotlin.jvm.internal.h.d(lowerCase, "toLowerCase(...)");
-            this.this$0._databaseProvider.getOs().delete("cached_unique_outcome", u1.h.g(sb, lowerCase, "\")"), null);
-            return v.f41353a;
+            this.this$0._databaseProvider.getOs().delete("cached_unique_outcome", Wv.i(sb, lowerCase, "\")"), null);
+            return v.f41073a;
         }
     }
 
@@ -69,30 +70,30 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public b(com.onesignal.session.internal.outcomes.impl.f fVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public b(com.onesignal.session.internal.outcomes.impl.f fVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$event = fVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return l.this.new b(this.$event, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return l.this.new b(this.$event, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((b) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((b) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             l.this._databaseProvider.getOs().delete("outcome", "timestamp = ?", new String[]{String.valueOf(this.$event.getTimestamp())});
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
@@ -101,8 +102,8 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
         int label;
         /* synthetic */ Object result;
 
-        public c(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public c(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -131,7 +132,7 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
             @Override // I7.l
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 invoke((A4.a) obj);
-                return v.f41353a;
+                return v.f41073a;
             }
 
             public final void invoke(A4.a cursor) {
@@ -149,8 +150,8 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
                         String optString2 = cursor.getOptString("iam_ids");
                         String str = optString2 == null ? "[]" : optString2;
                         String string2 = cursor.getString("name");
-                        float f3 = cursor.getFloat("weight");
-                        long j6 = cursor.getLong(com.anythink.expressad.foundation.d.d.f18596u);
+                        float f2 = cursor.getFloat("weight");
+                        long j6 = cursor.getLong(com.anythink.expressad.foundation.d.d.f19383u);
                         long j9 = cursor.getLong("session_time");
                         try {
                             n nVar = new n(null, null, 3, null);
@@ -160,7 +161,7 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
                             if (notificationInfluenceSource == null) {
                                 notificationInfluenceSource = new m(null, null);
                             }
-                            this.$events.add(new com.onesignal.session.internal.outcomes.impl.f(string2, notificationInfluenceSource, f3, j9, j6));
+                            this.$events.add(new com.onesignal.session.internal.outcomes.impl.f(string2, notificationInfluenceSource, f2, j9, j6));
                         } catch (JSONException e9) {
                             com.onesignal.debug.internal.logging.b.error("Generating JSONArray from notifications ids outcome:JSON Failed.", e9);
                         }
@@ -170,31 +171,31 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public d(List<com.onesignal.session.internal.outcomes.impl.f> list, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public d(List<com.onesignal.session.internal.outcomes.impl.f> list, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$events = list;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return l.this.new d(this.$events, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return l.this.new d(this.$events, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((d) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((d) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             N5.a.INSTANCE.run(l.this._databaseProvider);
             A4.b.query$default(l.this._databaseProvider.getOs(), "outcome", null, null, null, null, null, null, null, new a(l.this, this.$events), 254, null);
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
@@ -203,8 +204,8 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
         int label;
         /* synthetic */ Object result;
 
-        public e(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public e(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -236,7 +237,7 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
             @Override // I7.l
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 invoke((A4.a) obj);
-                return v.f41353a;
+                return v.f41073a;
             }
 
             public final void invoke(A4.a it) {
@@ -248,8 +249,8 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public f(List<K5.b> list, String str, l lVar, List<K5.b> list2, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public f(List<K5.b> list, String str, l lVar, List<K5.b> list2, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$influences = list;
             this.$name = str;
             this.this$0 = lVar;
@@ -257,22 +258,22 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return new f(this.$influences, this.$name, this.this$0, this.$uniqueInfluences, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return new f(this.$influences, this.$name, this.this$0, this.$uniqueInfluences, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((f) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((f) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             try {
                 for (K5.b bVar : this.$influences) {
                     JSONArray jSONArray = new JSONArray();
@@ -293,7 +294,7 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
             } catch (JSONException e9) {
                 e9.printStackTrace();
             }
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
@@ -303,20 +304,20 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
         final /* synthetic */ l this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public g(com.onesignal.session.internal.outcomes.impl.f fVar, l lVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public g(com.onesignal.session.internal.outcomes.impl.f fVar, l lVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$eventParams = fVar;
             this.this$0 = lVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return new g(this.$eventParams, this.this$0, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return new g(this.$eventParams, this.this$0, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((g) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((g) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
@@ -325,11 +326,11 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
             n indirectBody;
             n directBody;
             K5.d dVar2;
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             JSONArray jSONArray = new JSONArray();
             JSONArray jSONArray2 = new JSONArray();
             K5.d dVar3 = K5.d.UNATTRIBUTED;
@@ -382,7 +383,7 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
             contentValues.put("iam_influence_type", lowerCase2);
             contentValues.put("name", fVar.getOutcomeId());
             contentValues.put("weight", new Float(fVar.getWeight()));
-            contentValues.put(com.anythink.expressad.foundation.d.d.f18596u, new Long(fVar.getTimestamp()));
+            contentValues.put(com.anythink.expressad.foundation.d.d.f19383u, new Long(fVar.getTimestamp()));
             contentValues.put("session_time", new Long(fVar.getSessionTime()));
             this.this$0._databaseProvider.getOs().insert("outcome", null, contentValues);
             return contentValues;
@@ -395,29 +396,29 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
         final /* synthetic */ l this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public h(com.onesignal.session.internal.outcomes.impl.f fVar, l lVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public h(com.onesignal.session.internal.outcomes.impl.f fVar, l lVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$eventParams = fVar;
             this.this$0 = lVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return new h(this.$eventParams, this.this$0, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return new h(this.$eventParams, this.this$0, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((h) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((h) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             String outcomeId = this.$eventParams.getOutcomeId();
             ArrayList<com.onesignal.session.internal.outcomes.impl.a> arrayList = new ArrayList();
             m outcomeSource = this.$eventParams.getOutcomeSource();
@@ -433,7 +434,7 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
                 contentValues.put("name", outcomeId);
                 this.this$0._databaseProvider.getOs().insert("cached_unique_outcome", null, contentValues);
             }
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
@@ -498,15 +499,15 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
     }
 
     @Override // com.onesignal.session.internal.outcomes.impl.d
-    public Object cleanCachedUniqueOutcomeEventNotifications(InterfaceC5267d interfaceC5267d) {
-        Object y7 = AbstractC0406y.y(F.f2917c, new a("notification", L5.e.NOTIFICATION_ID_TAG, this, null), interfaceC5267d);
-        return y7 == A7.a.f58n ? y7 : v.f41353a;
+    public Object cleanCachedUniqueOutcomeEventNotifications(InterfaceC5240d interfaceC5240d) {
+        Object y7 = AbstractC0410y.y(F.f3000c, new a("notification", L5.e.NOTIFICATION_ID_TAG, this, null), interfaceC5240d);
+        return y7 == A7.a.f215n ? y7 : v.f41073a;
     }
 
     @Override // com.onesignal.session.internal.outcomes.impl.d
-    public Object deleteOldOutcomeEvent(com.onesignal.session.internal.outcomes.impl.f fVar, InterfaceC5267d interfaceC5267d) {
-        Object y7 = AbstractC0406y.y(F.f2917c, new b(fVar, null), interfaceC5267d);
-        return y7 == A7.a.f58n ? y7 : v.f41353a;
+    public Object deleteOldOutcomeEvent(com.onesignal.session.internal.outcomes.impl.f fVar, InterfaceC5240d interfaceC5240d) {
+        Object y7 = AbstractC0410y.y(F.f3000c, new b(fVar, null), interfaceC5240d);
+        return y7 == A7.a.f215n ? y7 : v.f41073a;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:14:0x0033  */
@@ -515,37 +516,37 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object getAllEventsToSend(InterfaceC5267d interfaceC5267d) {
+    public Object getAllEventsToSend(InterfaceC5240d interfaceC5240d) {
         c cVar;
         int i;
-        if (interfaceC5267d instanceof c) {
-            cVar = (c) interfaceC5267d;
-            int i6 = cVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                cVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof c) {
+            cVar = (c) interfaceC5240d;
+            int i4 = cVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                cVar.label = i4 - Integer.MIN_VALUE;
                 Object obj = cVar.result;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 i = cVar.label;
                 if (i == 0) {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     List list = (List) cVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     return list;
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 ArrayList arrayList = new ArrayList();
-                Z7.d dVar = F.f2917c;
+                Z7.d dVar = F.f3000c;
                 d dVar2 = new d(arrayList, null);
                 cVar.L$0 = arrayList;
                 cVar.label = 1;
-                return AbstractC0406y.y(dVar, dVar2, cVar) == aVar ? aVar : arrayList;
+                return AbstractC0410y.y(dVar, dVar2, cVar) == aVar ? aVar : arrayList;
             }
         }
-        cVar = new c(interfaceC5267d);
+        cVar = new c(interfaceC5240d);
         Object obj2 = cVar.result;
-        A7.a aVar2 = A7.a.f58n;
+        A7.a aVar2 = A7.a.f215n;
         i = cVar.label;
         if (i == 0) {
         }
@@ -557,52 +558,52 @@ public final class l implements com.onesignal.session.internal.outcomes.impl.d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object getNotCachedUniqueInfluencesForOutcome(String str, List<K5.b> list, InterfaceC5267d interfaceC5267d) {
+    public Object getNotCachedUniqueInfluencesForOutcome(String str, List<K5.b> list, InterfaceC5240d interfaceC5240d) {
         e eVar;
         int i;
-        if (interfaceC5267d instanceof e) {
-            eVar = (e) interfaceC5267d;
-            int i6 = eVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                eVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof e) {
+            eVar = (e) interfaceC5240d;
+            int i4 = eVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                eVar.label = i4 - Integer.MIN_VALUE;
                 Object obj = eVar.result;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 i = eVar.label;
                 if (i == 0) {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     List list2 = (List) eVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     return list2;
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 ArrayList arrayList = new ArrayList();
-                Z7.d dVar = F.f2917c;
+                Z7.d dVar = F.f3000c;
                 f fVar = new f(list, str, this, arrayList, null);
                 eVar.L$0 = arrayList;
                 eVar.label = 1;
-                return AbstractC0406y.y(dVar, fVar, eVar) == aVar ? aVar : arrayList;
+                return AbstractC0410y.y(dVar, fVar, eVar) == aVar ? aVar : arrayList;
             }
         }
-        eVar = new e(interfaceC5267d);
+        eVar = new e(interfaceC5240d);
         Object obj2 = eVar.result;
-        A7.a aVar2 = A7.a.f58n;
+        A7.a aVar2 = A7.a.f215n;
         i = eVar.label;
         if (i == 0) {
         }
     }
 
     @Override // com.onesignal.session.internal.outcomes.impl.d
-    public Object saveOutcomeEvent(com.onesignal.session.internal.outcomes.impl.f fVar, InterfaceC5267d interfaceC5267d) {
-        Object y7 = AbstractC0406y.y(F.f2917c, new g(fVar, this, null), interfaceC5267d);
-        return y7 == A7.a.f58n ? y7 : v.f41353a;
+    public Object saveOutcomeEvent(com.onesignal.session.internal.outcomes.impl.f fVar, InterfaceC5240d interfaceC5240d) {
+        Object y7 = AbstractC0410y.y(F.f3000c, new g(fVar, this, null), interfaceC5240d);
+        return y7 == A7.a.f215n ? y7 : v.f41073a;
     }
 
     @Override // com.onesignal.session.internal.outcomes.impl.d
-    public Object saveUniqueOutcomeEventParams(com.onesignal.session.internal.outcomes.impl.f fVar, InterfaceC5267d interfaceC5267d) {
+    public Object saveUniqueOutcomeEventParams(com.onesignal.session.internal.outcomes.impl.f fVar, InterfaceC5240d interfaceC5240d) {
         com.onesignal.debug.internal.logging.b.debug$default("OutcomeEventsCache.saveUniqueOutcomeEventParams(eventParams: " + fVar + ')', null, 2, null);
-        Object y7 = AbstractC0406y.y(F.f2917c, new h(fVar, this, null), interfaceC5267d);
-        return y7 == A7.a.f58n ? y7 : v.f41353a;
+        Object y7 = AbstractC0410y.y(F.f3000c, new h(fVar, this, null), interfaceC5240d);
+        return y7 == A7.a.f215n ? y7 : v.f41073a;
     }
 }

@@ -7,7 +7,7 @@ import java.util.Arrays;
 public enum M5 {
     A0D(A00(191, 5, 106)),
     A0B(A00(178, 5, 95)),
-    A04(A00(a.f21756z, 8, 91)),
+    A04(A00(a.f22543z, 8, 91)),
     A0C(A00(183, 8, 25)),
     A08(A00(150, 10, 89)),
     A0A(A00(169, 9, 102)),
@@ -21,10 +21,10 @@ public enum M5 {
     public static String[] A02 = {"oCsQT6uSz7ndvPMuhNCnHwcy1cykmRIP", "dxQgW1fHfG7Li9QwjA", "TlDnXloLJlBDv", "qrnaS13DqrzNxoM4SqOtGSj6SkXXKDQP", "QLSlnpUZPESqj81ZgNRIADff9IPI", "BL2v8T5j9auQgeZuOiJA3Si6ird26Og", "iKYEyte3TNWgl6dOfYC56N4OH", "66RXzOK8gCySKfU5jrDKZ2dh9bBiLsuP"};
     public final String A00;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 93);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 93);
         }
         return new String(copyOfRange);
     }

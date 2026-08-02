@@ -1,6 +1,5 @@
 package com.anythink.core.common.m;
 
-import D.y;
 import android.content.Context;
 import android.location.Location;
 import android.text.TextUtils;
@@ -18,81 +17,81 @@ import org.json.JSONObject;
 public final class e {
 
     /* renamed from: A, reason: collision with root package name */
-    public static final String f14610A = "ps_id";
+    public static final String f15396A = "ps_id";
 
     /* renamed from: B, reason: collision with root package name */
-    public static final String f14611B = "it_src";
+    public static final String f15397B = "it_src";
 
     /* renamed from: C, reason: collision with root package name */
-    public static final String f14612C = "lat";
+    public static final String f15398C = "lat";
 
     /* renamed from: D, reason: collision with root package name */
-    public static final String f14613D = "lon";
+    public static final String f15399D = "lon";
 
     /* renamed from: E, reason: collision with root package name */
-    public static final String f14614E = "inst_wx";
+    public static final String f15400E = "inst_wx";
 
     /* renamed from: F, reason: collision with root package name */
-    public static final String f14615F = "mini_sdk";
+    public static final String f15401F = "mini_sdk";
 
     /* renamed from: G, reason: collision with root package name */
-    public static final String f14616G = "ms_type";
+    public static final String f15402G = "ms_type";
 
     /* renamed from: H, reason: collision with root package name */
-    public static final String f14617H = "device_set";
+    public static final String f15403H = "device_set";
 
     /* renamed from: I, reason: collision with root package name */
-    public static final String f14618I = "gdpr_cs";
+    public static final String f15404I = "gdpr_cs";
     public static final String J = "abtest_id";
 
     /* renamed from: K, reason: collision with root package name */
-    public static final String f14619K = "first_init_time";
+    public static final String f15405K = "first_init_time";
 
     /* renamed from: L, reason: collision with root package name */
-    public static final String f14620L = "days_from_first_init";
+    public static final String f15406L = "days_from_first_init";
 
     /* renamed from: M, reason: collision with root package name */
-    public static final String f14621M = "cs_cl";
+    public static final String f15407M = "cs_cl";
 
     /* renamed from: N, reason: collision with root package name */
-    public static final String f14622N = "is_ofm";
+    public static final String f15408N = "is_ofm";
 
     /* renamed from: O, reason: collision with root package name */
-    public static final String f14623O = "app_id";
+    public static final String f15409O = "app_id";
 
     /* renamed from: P, reason: collision with root package name */
-    public static final String f14624P = "api_ver";
+    public static final String f15410P = "api_ver";
 
     /* renamed from: Q, reason: collision with root package name */
-    public static final String f14625Q = "custom";
+    public static final String f15411Q = "custom";
 
     /* renamed from: R, reason: collision with root package name */
-    public static final String f14626R = "data";
+    public static final String f15412R = "data";
 
     /* renamed from: S, reason: collision with root package name */
-    public static final String f14627S = "tcp_tk_da_type";
+    public static final String f15413S = "tcp_tk_da_type";
 
     /* renamed from: T, reason: collision with root package name */
-    public static final String f14628T = "ofl";
+    public static final String f15414T = "ofl";
 
     /* renamed from: U, reason: collision with root package name */
-    public static final String f14629U = "tcp_rate";
+    public static final String f15415U = "tcp_rate";
 
     /* renamed from: V, reason: collision with root package name */
-    public static final String f14630V = "p";
+    public static final String f15416V = "p";
 
     /* renamed from: W, reason: collision with root package name */
-    public static final String f14631W = "p2";
+    public static final String f15417W = "p2";
 
     /* renamed from: X, reason: collision with root package name */
-    public static final String f14632X = "sign";
+    public static final String f15418X = "sign";
     public static final String Y = "common";
 
     /* renamed from: Z, reason: collision with root package name */
-    public static final int f14633Z = 1;
+    public static final int f15419Z = 1;
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f14634a = "platform";
+    public static final String f15420a = "platform";
     public static final String aA = "b_p";
     public static final String aB = "d_s";
     public static final String aC = "s_d";
@@ -147,7 +146,7 @@ public final class e {
     public static final String az = "u_a";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f14635b = "os_vn";
+    public static final String f15421b = "os_vn";
     public static final String ba = "bld_version_codes";
     public static final String bb = "bld_board";
     public static final String bc = "ps";
@@ -174,100 +173,100 @@ public final class e {
     public static final String bx = "sp_nw";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f14636c = "os_vc";
+    public static final String f15422c = "os_vc";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final String f14637d = "package_name";
+    public static final String f15423d = "package_name";
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f14638e = "app_vn";
+    public static final String f15424e = "app_vn";
 
     /* renamed from: f, reason: collision with root package name */
-    public static final String f14639f = "app_vc";
+    public static final String f15425f = "app_vc";
 
     /* renamed from: g, reason: collision with root package name */
-    public static final String f14640g = "brand";
+    public static final String f15426g = "brand";
 
     /* renamed from: h, reason: collision with root package name */
-    public static final String f14641h = "model";
+    public static final String f15427h = "model";
     public static final String i = "screen";
 
     /* renamed from: j, reason: collision with root package name */
-    public static final String f14642j = "network_type";
+    public static final String f15428j = "network_type";
 
     /* renamed from: k, reason: collision with root package name */
-    public static final String f14643k = "mnc";
+    public static final String f15429k = "mnc";
 
     /* renamed from: l, reason: collision with root package name */
-    public static final String f14644l = "mcc";
+    public static final String f15430l = "mcc";
 
     /* renamed from: m, reason: collision with root package name */
-    public static final String f14645m = "language";
+    public static final String f15431m = "language";
 
     /* renamed from: n, reason: collision with root package name */
-    public static final String f14646n = "timezone";
+    public static final String f15432n = "timezone";
 
     /* renamed from: o, reason: collision with root package name */
-    public static final String f14647o = "sdk_ver";
+    public static final String f15433o = "sdk_ver";
 
     /* renamed from: p, reason: collision with root package name */
-    public static final String f14648p = "gp_ver";
+    public static final String f15434p = "gp_ver";
 
     /* renamed from: q, reason: collision with root package name */
-    public static final String f14649q = "nw_ver";
+    public static final String f15435q = "nw_ver";
 
     /* renamed from: r, reason: collision with root package name */
-    public static final String f14650r = "ua";
+    public static final String f15436r = "ua";
 
     /* renamed from: s, reason: collision with root package name */
-    public static final String f14651s = "orient";
+    public static final String f15437s = "orient";
 
     /* renamed from: t, reason: collision with root package name */
-    public static final String f14652t = "system";
+    public static final String f15438t = "system";
 
     /* renamed from: u, reason: collision with root package name */
-    public static final String f14653u = "oaid";
+    public static final String f15439u = "oaid";
 
     /* renamed from: v, reason: collision with root package name */
-    public static final String f14654v = "android_id";
+    public static final String f15440v = "android_id";
 
     /* renamed from: w, reason: collision with root package name */
-    public static final String f14655w = "gaid";
+    public static final String f15441w = "gaid";
 
     /* renamed from: x, reason: collision with root package name */
-    public static final String f14656x = "channel";
+    public static final String f15442x = "channel";
 
     /* renamed from: y, reason: collision with root package name */
-    public static final String f14657y = "sub_channel";
+    public static final String f15443y = "sub_channel";
 
     /* renamed from: z, reason: collision with root package name */
-    public static final String f14658z = "upid";
+    public static final String f15444z = "upid";
 
-    public static JSONObject a(int i6) {
+    public static JSONObject a(int i4) {
         JSONObject aV2;
         com.anythink.core.common.v.m.s(com.anythink.core.common.d.t.b().g());
         JSONObject jSONObject = new JSONObject();
-        Context g4 = com.anythink.core.common.d.t.b().g();
+        Context g9 = com.anythink.core.common.d.t.b().g();
         try {
             jSONObject.put("cpu", com.anythink.core.common.v.m.q());
             jSONObject.put("platform", 1);
             jSONObject.put("os_vn", com.anythink.core.common.v.m.e());
             jSONObject.put("os_vc", com.anythink.core.common.v.m.d());
-            jSONObject.put("package_name", com.anythink.core.common.v.m.m(g4));
-            jSONObject.put("app_vn", com.anythink.core.common.v.m.i(g4));
-            jSONObject.put("app_vc", com.anythink.core.common.v.m.h(g4));
+            jSONObject.put("package_name", com.anythink.core.common.v.m.m(g9));
+            jSONObject.put("app_vn", com.anythink.core.common.v.m.i(g9));
+            jSONObject.put("app_vc", com.anythink.core.common.v.m.h(g9));
             jSONObject.put("brand", com.anythink.core.common.v.m.b());
             jSONObject.put("model", com.anythink.core.common.v.m.a());
-            jSONObject.put("screen", com.anythink.core.common.v.m.l(g4));
-            jSONObject.put("network_type", com.anythink.core.common.v.m.o(g4));
-            jSONObject.put("mnc", com.anythink.core.common.v.m.c(g4));
-            jSONObject.put("mcc", com.anythink.core.common.v.m.b(g4));
-            jSONObject.put("language", com.anythink.core.common.v.m.e(g4));
+            jSONObject.put("screen", com.anythink.core.common.v.m.l(g9));
+            jSONObject.put("network_type", com.anythink.core.common.v.m.o(g9));
+            jSONObject.put("mnc", com.anythink.core.common.v.m.c(g9));
+            jSONObject.put("mcc", com.anythink.core.common.v.m.b(g9));
+            jSONObject.put("language", com.anythink.core.common.v.m.e(g9));
             jSONObject.put("timezone", com.anythink.core.common.v.m.c());
             jSONObject.put("sdk_ver", com.anythink.core.common.v.p.a());
-            jSONObject.put("gp_ver", com.anythink.core.common.v.m.p(g4));
+            jSONObject.put("gp_ver", com.anythink.core.common.v.m.p(g9));
             jSONObject.put("ua", com.anythink.core.common.v.m.h());
-            jSONObject.put("orient", com.anythink.core.common.v.m.f(g4));
+            jSONObject.put("orient", com.anythink.core.common.v.m.f(g9));
             jSONObject.put("system", 1);
             if (!TextUtils.isEmpty(com.anythink.core.common.d.t.b().n())) {
                 jSONObject.put("channel", com.anythink.core.common.d.t.b().n());
@@ -276,35 +275,35 @@ public final class e {
                 jSONObject.put("sub_channel", com.anythink.core.common.d.t.b().o());
             }
             String str = "";
-            jSONObject.put("upid", com.anythink.core.common.d.v.a(g4).b() ? com.anythink.core.common.d.t.b().B() : "");
+            jSONObject.put("upid", com.anythink.core.common.d.v.a(g9).b() ? com.anythink.core.common.d.t.b().B() : "");
             jSONObject.put("ps_id", com.anythink.core.common.d.t.b().r());
-            com.anythink.core.d.b b9 = com.anythink.core.d.d.a(g4).b(com.anythink.core.common.d.t.b().p());
+            com.anythink.core.d.b b9 = com.anythink.core.d.d.a(g9).b(com.anythink.core.common.d.t.b().p());
             if (b9 != null) {
                 if (!TextUtils.isEmpty(b9.M())) {
                     str = b9.M();
                 }
                 jSONObject.put(J, str);
             }
-            jSONObject.put(f14619K, com.anythink.core.common.d.t.b().h());
-            jSONObject.put(f14620L, com.anythink.core.common.d.t.b().i());
+            jSONObject.put(f15405K, com.anythink.core.common.d.t.b().h());
+            jSONObject.put(f15406L, com.anythink.core.common.d.t.b().i());
             StringBuilder sb = new StringBuilder();
             sb.append(com.anythink.core.common.d.t.b().e());
-            sb.append(com.anythink.core.common.d.v.a(g4).a());
-            jSONObject.put(f14618I, sb.toString());
+            sb.append(com.anythink.core.common.d.v.a(g9).a());
+            jSONObject.put(f15404I, sb.toString());
             if (com.anythink.core.common.d.t.b().j() == 1) {
-                jSONObject.put(f14622N, 1);
+                jSONObject.put(f15408N, 1);
             }
             jSONObject.put(bx, 1);
             jSONObject.put(ad, com.anythink.core.common.d.t.b().K() ? com.anythink.core.common.d.t.b().L() ? "1" : "3" : com.anythink.core.common.d.t.b().L() ? "2" : "4");
             com.anythink.core.common.d.s c9 = com.anythink.core.common.d.t.b().c();
             if (c9 != null) {
-                c9.fillRequestDeviceData(jSONObject, i6);
+                c9.fillRequestDeviceData(jSONObject, i4);
             }
             String k9 = com.anythink.core.common.v.m.k();
             if (!TextUtils.isEmpty(k9)) {
                 jSONObject.put(ae, Integer.parseInt(k9));
             }
-            if ((i6 & 4) == 4) {
+            if ((i4 & 4) == 4) {
                 try {
                     com.anythink.core.d.b b10 = com.anythink.core.d.d.a(com.anythink.core.common.d.t.b().g()).b(com.anythink.core.common.d.t.b().p());
                     if (b10 != null && (aV2 = b10.aV()) != null) {
@@ -313,28 +312,28 @@ public final class e {
                 } catch (Exception unused) {
                 }
             }
-            if ((i6 & 16) == 16) {
-                List<com.anythink.core.common.c.c> d2 = com.anythink.core.common.c.b.a().d();
-                if (d2.size() > 0) {
-                    for (int i9 = 0; i9 < d2.size(); i9++) {
-                        com.anythink.core.common.c.c cVar = d2.get(i9);
+            if ((i4 & 16) == 16) {
+                List<com.anythink.core.common.c.c> d9 = com.anythink.core.common.c.b.a().d();
+                if (d9.size() > 0) {
+                    for (int i6 = 0; i6 < d9.size(); i6++) {
+                        com.anythink.core.common.c.c cVar = d9.get(i6);
                         if (cVar != null && !TextUtils.isEmpty(cVar.e()) && !TextUtils.isEmpty(cVar.c())) {
                             jSONObject.put(cVar.e(), cVar.c());
                         }
                     }
                 }
             }
-            if ((i6 & 64) == 64) {
+            if ((i4 & 64) == 64) {
                 jSONObject.put("isroot", com.anythink.core.common.v.m.r());
-                jSONObject.put("isagent", com.anythink.core.common.v.m.v(g4));
-                jSONObject.put(aJ, com.anythink.core.common.v.m.x(g4));
-                jSONObject.put(aK, com.anythink.core.common.v.m.y(g4));
-                jSONObject.put(aL, com.anythink.core.common.v.m.w(g4));
-                jSONObject.put(aM, com.anythink.core.common.v.m.z(g4));
-                jSONObject.put("battery", com.anythink.core.common.v.m.A(g4));
+                jSONObject.put("isagent", com.anythink.core.common.v.m.v(g9));
+                jSONObject.put(aJ, com.anythink.core.common.v.m.x(g9));
+                jSONObject.put(aK, com.anythink.core.common.v.m.y(g9));
+                jSONObject.put(aL, com.anythink.core.common.v.m.w(g9));
+                jSONObject.put(aM, com.anythink.core.common.v.m.z(g9));
+                jSONObject.put("battery", com.anythink.core.common.v.m.A(g9));
                 jSONObject.put(aO, com.anythink.core.common.v.m.s());
             }
-            if ((i6 & 128) == 128) {
+            if ((i4 & 128) == 128) {
                 JSONArray[] c10 = com.anythink.core.common.c.b.a().c();
                 JSONArray jSONArray = c10[0];
                 if (jSONArray != null && jSONArray.length() > 0) {
@@ -345,15 +344,15 @@ public final class e {
                     jSONObject.put(bi, jSONArray2);
                 }
             }
-            jSONObject.put(bc, com.anythink.core.common.v.o.b(com.anythink.core.common.v.m.c(g4, bc)));
-            jSONObject.put(bd, com.anythink.core.common.v.o.b(com.anythink.core.common.v.m.d(g4, bd)));
+            jSONObject.put(bc, com.anythink.core.common.v.o.b(com.anythink.core.common.v.m.c(g9, bc)));
+            jSONObject.put(bd, com.anythink.core.common.v.o.b(com.anythink.core.common.v.m.d(g9, bd)));
         } catch (Exception unused2) {
         }
         return jSONObject;
     }
 
-    public static JSONObject b(int i6) {
-        return a(i6, (List<String>) null);
+    public static JSONObject b(int i4) {
+        return a(i4, (List<String>) null);
     }
 
     private static void b(JSONObject jSONObject) {
@@ -372,7 +371,7 @@ public final class e {
             if (!TextUtils.isEmpty(devOaid)) {
                 jSONObject2.put("set_oaid", devOaid);
             }
-            jSONObject.put(f14617H, jSONObject2);
+            jSONObject.put(f15403H, jSONObject2);
             String devUID2Token = Q8.getDevUID2Token();
             if (TextUtils.isEmpty(devUID2Token)) {
                 return;
@@ -412,26 +411,26 @@ public final class e {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static JSONObject a(int i6, List<String> list) {
+    public static JSONObject a(int i4, List<String> list) {
         String R8;
         JSONObject jSONObject;
-        boolean z3;
+        boolean z6;
         ?? c9;
         Location s9;
         String t6;
+        int i6;
         int i9;
-        int i10;
         ATUserDeviceInfo Q8;
-        String o6;
+        String o4;
         int p9;
         Object obj;
         Object obj2;
-        Context g4 = com.anythink.core.common.d.t.b().g();
+        Context g9 = com.anythink.core.common.d.t.b().g();
         ?? jSONObject2 = new JSONObject();
-        com.anythink.core.d.b g9 = y.g(com.anythink.core.d.d.a(g4));
-        if (g9 != null) {
+        com.anythink.core.d.b k9 = com.IceFishing.LiveIceFishing.k.k(com.anythink.core.d.d.a(g9));
+        if (k9 != null) {
             try {
-                R8 = g9.R();
+                R8 = k9.R();
             } catch (Throwable unused) {
             }
         } else {
@@ -444,54 +443,54 @@ public final class e {
             }
             if (!jSONObject.isNull("a")) {
                 if (jSONObject.optInt("a") != 1) {
-                    z3 = false;
-                    jSONObject2.put("android_id", !z3 ? com.anythink.core.common.v.m.d(g4) : "");
+                    z6 = false;
+                    jSONObject2.put("android_id", !z6 ? com.anythink.core.common.v.m.d(g9) : "");
                     jSONObject2.put("gaid", com.anythink.core.common.v.m.f());
                     c9 = com.anythink.core.common.d.t.b().c();
                     if (c9 != 0) {
-                        c9.fillRequestData(jSONObject2, g9, i6);
+                        c9.fillRequestData(jSONObject2, k9, i4);
                     }
                     if (!ATSDK.isCnSDK()) {
                         jSONObject2.put("is_cn_sdk", "1");
                     } else {
                         jSONObject2.put("is_cn_sdk", "0");
                     }
-                    String n9 = com.anythink.core.common.v.m.n(g4);
+                    String n9 = com.anythink.core.common.v.m.n(g9);
                     s9 = com.anythink.core.common.d.t.b().s();
                     if (s9 != null) {
                         jSONObject2.put("lat", s9.getLatitude());
-                        jSONObject2.put(f14613D, s9.getLongitude());
+                        jSONObject2.put(f15399D, s9.getLongitude());
                     }
                     t6 = com.anythink.core.common.d.t.b().t();
                     if (!TextUtils.isEmpty(t6)) {
-                        jSONObject2.put(f14614E, Integer.parseInt(t6));
+                        jSONObject2.put(f15400E, Integer.parseInt(t6));
                     }
                     jSONObject2.put("it_src", TextUtils.isEmpty(n9) ? "" : n9);
-                    jSONObject2.put(ac, j.f.f12461a);
-                    i9 = aj;
-                    if (i9 != -1) {
-                        boolean c10 = com.anythink.core.common.v.p.c(g4);
-                        boolean b9 = com.anythink.core.common.v.p.b(g4);
+                    jSONObject2.put(ac, j.f.f13247a);
+                    i6 = aj;
+                    if (i6 != -1) {
+                        boolean c10 = com.anythink.core.common.v.p.c(g9);
+                        boolean b9 = com.anythink.core.common.v.p.b(g9);
                         ?? r62 = b9 ? 2 : c10;
                         if (c10 && b9) {
                             r62 = 3;
                         }
                         if (r62 > 0) {
-                            jSONObject2.put(f14616G, r62);
+                            jSONObject2.put(f15402G, r62);
                         }
                         aj = r62;
-                    } else if (i9 > 0) {
-                        jSONObject2.put(f14616G, i9);
+                    } else if (i6 > 0) {
+                        jSONObject2.put(f15402G, i6);
                     }
-                    i10 = ak;
-                    if (i10 != -1) {
+                    i9 = ak;
+                    if (i9 != -1) {
                         boolean c11 = com.anythink.core.common.v.p.c();
                         if (c11) {
-                            jSONObject2.put(f14615F, 1);
+                            jSONObject2.put(f15401F, 1);
                         }
                         ak = c11 ? 1 : 0;
-                    } else if (i10 == 1) {
-                        jSONObject2.put(f14615F, i10);
+                    } else if (i9 == 1) {
+                        jSONObject2.put(f15401F, i9);
                     }
                     Q8 = com.anythink.core.common.d.t.b().Q();
                     if (Q8 != null) {
@@ -508,30 +507,30 @@ public final class e {
                         if (!TextUtils.isEmpty(devOaid)) {
                             jSONObject3.put("set_oaid", devOaid);
                         }
-                        jSONObject2.put(f14617H, jSONObject3);
+                        jSONObject2.put(f15403H, jSONObject3);
                         String devUID2Token = Q8.getDevUID2Token();
                         if (!TextUtils.isEmpty(devUID2Token)) {
                             jSONObject2.put(bo, devUID2Token);
                         }
                     }
-                    Map<String, Object> m4 = com.anythink.core.common.d.t.b().m();
-                    obj2 = m4.get(ATCustomRuleKeys.USER_NUMBER);
+                    Map<String, Object> m9 = com.anythink.core.common.d.t.b().m();
+                    obj2 = m9.get(ATCustomRuleKeys.USER_NUMBER);
                     if (obj2 != null) {
                         jSONObject2.put(ag, Long.parseLong(obj2.toString()));
                     }
-                    obj = m4.get(ATCustomRuleKeys.USER_DEVICE_ID);
+                    obj = m9.get(ATCustomRuleKeys.USER_DEVICE_ID);
                     if (obj != null) {
                         jSONObject2.put(ah, obj.toString());
                     }
-                    o6 = com.anythink.core.common.v.m.o();
-                    if (!TextUtils.isEmpty(o6)) {
-                        jSONObject2.put("amazon_id", o6);
+                    o4 = com.anythink.core.common.v.m.o();
+                    if (!TextUtils.isEmpty(o4)) {
+                        jSONObject2.put("amazon_id", o4);
                     }
                     p9 = com.anythink.core.common.v.m.p();
                     if (p9 > 0) {
                         jSONObject2.put(au, p9);
                     }
-                    if ((i6 & 32) == 32) {
+                    if ((i4 & 32) == 32) {
                         if (com.anythink.core.common.o.e.a().f() > 0) {
                             jSONObject2.put("t_mem", com.anythink.core.common.o.e.a().f());
                         }
@@ -542,22 +541,22 @@ public final class e {
                             jSONObject2.put("t_store", com.anythink.core.common.o.e.a().h());
                         }
                     }
-                    if ((i6 & 64) == 64) {
+                    if ((i4 & 64) == 64) {
                         String t9 = com.anythink.core.common.v.m.t();
                         if (!TextUtils.isEmpty(t9)) {
                             jSONObject2.put("bld_type", t9);
                         }
-                        String u3 = com.anythink.core.common.v.m.u();
-                        if (!TextUtils.isEmpty(u3)) {
-                            jSONObject2.put("bld_tags", u3);
+                        String u6 = com.anythink.core.common.v.m.u();
+                        if (!TextUtils.isEmpty(u6)) {
+                            jSONObject2.put("bld_tags", u6);
                         }
                         String v9 = com.anythink.core.common.v.m.v();
                         if (!TextUtils.isEmpty(v9)) {
                             jSONObject2.put("bld_user", v9);
                         }
-                        String w6 = com.anythink.core.common.v.m.w();
-                        if (!TextUtils.isEmpty(w6)) {
-                            jSONObject2.put("bld_radio", w6);
+                        String w3 = com.anythink.core.common.v.m.w();
+                        if (!TextUtils.isEmpty(w3)) {
+                            jSONObject2.put("bld_radio", w3);
                         }
                         String x9 = com.anythink.core.common.v.m.x();
                         if (!TextUtils.isEmpty(x9)) {
@@ -567,17 +566,17 @@ public final class e {
                         if (!TextUtils.isEmpty(y7)) {
                             jSONObject2.put("bld_hardware", y7);
                         }
-                        String z6 = com.anythink.core.common.v.m.z();
-                        if (!TextUtils.isEmpty(z6)) {
-                            jSONObject2.put("bld_host", z6);
+                        String z9 = com.anythink.core.common.v.m.z();
+                        if (!TextUtils.isEmpty(z9)) {
+                            jSONObject2.put("bld_host", z9);
                         }
                         String A9 = com.anythink.core.common.v.m.A();
                         if (!TextUtils.isEmpty(A9)) {
                             jSONObject2.put("bld_codename", A9);
                         }
-                        String B9 = com.anythink.core.common.v.m.B();
-                        if (!TextUtils.isEmpty(B9)) {
-                            jSONObject2.put("bld_incremental", B9);
+                        String B3 = com.anythink.core.common.v.m.B();
+                        if (!TextUtils.isEmpty(B3)) {
+                            jSONObject2.put("bld_incremental", B3);
                         }
                         String C8 = com.anythink.core.common.v.m.C();
                         if (!TextUtils.isEmpty(C8)) {
@@ -596,14 +595,14 @@ public final class e {
                             jSONObject2.put("bld_board", F8);
                         }
                     }
-                    if (list != null && list.contains(j.aa.f12391a)) {
-                        jSONObject2.put("s_c", com.anythink.core.common.v.m.C(g4));
-                        jSONObject2.put("u_a", com.anythink.core.common.v.m.D(g4));
-                        jSONObject2.put(aA, com.anythink.core.common.v.m.E(g4));
-                        jSONObject2.put("d_s", com.anythink.core.common.v.m.F(g4));
+                    if (list != null && list.contains(j.aa.f13177a)) {
+                        jSONObject2.put("s_c", com.anythink.core.common.v.m.C(g9));
+                        jSONObject2.put("u_a", com.anythink.core.common.v.m.D(g9));
+                        jSONObject2.put(aA, com.anythink.core.common.v.m.E(g9));
+                        jSONObject2.put("d_s", com.anythink.core.common.v.m.F(g9));
                         try {
-                            jSONObject2.put(aC, Integer.parseInt(com.anythink.core.common.v.m.x(g4)));
-                            jSONObject2.put(aD, Integer.parseInt(com.anythink.core.common.v.m.y(g4)));
+                            jSONObject2.put(aC, Integer.parseInt(com.anythink.core.common.v.m.x(g9)));
+                            jSONObject2.put(aD, Integer.parseInt(com.anythink.core.common.v.m.y(g9)));
                         } catch (Exception e9) {
                             e9.printStackTrace();
                         }
@@ -614,15 +613,15 @@ public final class e {
                 }
             }
         }
-        z3 = true;
-        jSONObject2.put("android_id", !z3 ? com.anythink.core.common.v.m.d(g4) : "");
+        z6 = true;
+        jSONObject2.put("android_id", !z6 ? com.anythink.core.common.v.m.d(g9) : "");
         jSONObject2.put("gaid", com.anythink.core.common.v.m.f());
         c9 = com.anythink.core.common.d.t.b().c();
         if (c9 != 0) {
         }
         if (!ATSDK.isCnSDK()) {
         }
-        String n92 = com.anythink.core.common.v.m.n(g4);
+        String n92 = com.anythink.core.common.v.m.n(g9);
         s9 = com.anythink.core.common.d.t.b().s();
         if (s9 != null) {
         }
@@ -630,40 +629,40 @@ public final class e {
         if (!TextUtils.isEmpty(t6)) {
         }
         jSONObject2.put("it_src", TextUtils.isEmpty(n92) ? "" : n92);
-        jSONObject2.put(ac, j.f.f12461a);
-        i9 = aj;
-        if (i9 != -1) {
+        jSONObject2.put(ac, j.f.f13247a);
+        i6 = aj;
+        if (i6 != -1) {
         }
-        i10 = ak;
-        if (i10 != -1) {
+        i9 = ak;
+        if (i9 != -1) {
         }
         Q8 = com.anythink.core.common.d.t.b().Q();
         if (Q8 != null) {
         }
-        Map<String, Object> m42 = com.anythink.core.common.d.t.b().m();
-        obj2 = m42.get(ATCustomRuleKeys.USER_NUMBER);
+        Map<String, Object> m92 = com.anythink.core.common.d.t.b().m();
+        obj2 = m92.get(ATCustomRuleKeys.USER_NUMBER);
         if (obj2 != null) {
         }
-        obj = m42.get(ATCustomRuleKeys.USER_DEVICE_ID);
+        obj = m92.get(ATCustomRuleKeys.USER_DEVICE_ID);
         if (obj != null) {
         }
-        o6 = com.anythink.core.common.v.m.o();
-        if (!TextUtils.isEmpty(o6)) {
+        o4 = com.anythink.core.common.v.m.o();
+        if (!TextUtils.isEmpty(o4)) {
         }
         p9 = com.anythink.core.common.v.m.p();
         if (p9 > 0) {
         }
-        if ((i6 & 32) == 32) {
+        if ((i4 & 32) == 32) {
         }
-        if ((i6 & 64) == 64) {
+        if ((i4 & 64) == 64) {
         }
         if (list != null) {
-            jSONObject2.put("s_c", com.anythink.core.common.v.m.C(g4));
-            jSONObject2.put("u_a", com.anythink.core.common.v.m.D(g4));
-            jSONObject2.put(aA, com.anythink.core.common.v.m.E(g4));
-            jSONObject2.put("d_s", com.anythink.core.common.v.m.F(g4));
-            jSONObject2.put(aC, Integer.parseInt(com.anythink.core.common.v.m.x(g4)));
-            jSONObject2.put(aD, Integer.parseInt(com.anythink.core.common.v.m.y(g4)));
+            jSONObject2.put("s_c", com.anythink.core.common.v.m.C(g9));
+            jSONObject2.put("u_a", com.anythink.core.common.v.m.D(g9));
+            jSONObject2.put(aA, com.anythink.core.common.v.m.E(g9));
+            jSONObject2.put("d_s", com.anythink.core.common.v.m.F(g9));
+            jSONObject2.put(aC, Integer.parseInt(com.anythink.core.common.v.m.x(g9)));
+            jSONObject2.put(aD, Integer.parseInt(com.anythink.core.common.v.m.y(g9)));
         }
         jSONObject2.put("ip_v4", com.anythink.core.common.v.m.H());
         jSONObject2.put("ip_v6", com.anythink.core.common.v.m.I());
@@ -671,30 +670,30 @@ public final class e {
     }
 
     private static void a(Context context, JSONObject jSONObject) {
-        int i6 = aj;
-        if (i6 == -1) {
+        int i4 = aj;
+        if (i4 == -1) {
             boolean c9 = com.anythink.core.common.v.p.c(context);
             boolean b9 = com.anythink.core.common.v.p.b(context);
-            int i9 = b9 ? 2 : c9 ? 1 : 0;
+            int i6 = b9 ? 2 : c9 ? 1 : 0;
             if (c9 && b9) {
-                i9 = 3;
+                i6 = 3;
             }
-            if (i9 > 0) {
-                jSONObject.put(f14616G, i9);
+            if (i6 > 0) {
+                jSONObject.put(f15402G, i6);
             }
-            aj = i9;
-        } else if (i6 > 0) {
-            jSONObject.put(f14616G, i6);
+            aj = i6;
+        } else if (i4 > 0) {
+            jSONObject.put(f15402G, i4);
         }
-        int i10 = ak;
-        if (i10 != -1) {
-            if (i10 == 1) {
-                jSONObject.put(f14615F, i10);
+        int i9 = ak;
+        if (i9 != -1) {
+            if (i9 == 1) {
+                jSONObject.put(f15401F, i9);
             }
         } else {
             boolean c10 = com.anythink.core.common.v.p.c();
             if (c10) {
-                jSONObject.put(f14615F, 1);
+                jSONObject.put(f15401F, 1);
             }
             ak = c10 ? 1 : 0;
         }
@@ -704,11 +703,11 @@ public final class e {
         try {
             by R8 = com.anythink.core.common.d.t.b().R();
             JSONObject jSONObject2 = new JSONObject();
-            int i6 = 1;
+            int i4 = 1;
             if (R8.b() != 1) {
-                i6 = 0;
+                i4 = 0;
             }
-            jSONObject2.put("has_sdk", i6);
+            jSONObject2.put("has_sdk", i4);
             jSONObject2.put("sdk_ver", String.valueOf(R8.c()));
             jSONObject2.put("sdk_api_ver", String.valueOf(R8.d()));
             jSONObject2.put("open_app_id", com.anythink.core.common.v.m.m());

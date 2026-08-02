@@ -6,17 +6,17 @@ import androidx.work.impl.WorkDatabase;
 public final class h extends s.j {
 
     /* renamed from: d, reason: collision with root package name */
-    public final /* synthetic */ int f2786d;
+    public final /* synthetic */ int f2915d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public /* synthetic */ h(WorkDatabase workDatabase, int i) {
         super(workDatabase);
-        this.f2786d = i;
+        this.f2915d = i;
     }
 
     @Override // s.j
     public final String l() {
-        switch (this.f2786d) {
+        switch (this.f2915d) {
             case 0:
                 return "DELETE FROM SystemIdInfo where work_spec_id=? AND generation=?";
             case 1:

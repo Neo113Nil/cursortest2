@@ -11,11 +11,11 @@ import java.util.List;
 public final class i {
 
     /* renamed from: a, reason: collision with root package name */
-    private List<bv> f17131a;
+    private List<bv> f17918a;
 
     public i(List<bv> list) {
         ArrayList arrayList = new ArrayList();
-        this.f17131a = arrayList;
+        this.f17918a = arrayList;
         if (list != null) {
             arrayList.addAll(list);
         }
@@ -31,42 +31,42 @@ public final class i {
     public final synchronized List<bv> a() {
         ArrayList arrayList;
         arrayList = new ArrayList();
-        arrayList.addAll(this.f17131a);
+        arrayList.addAll(this.f17918a);
         return arrayList;
     }
 
     public final synchronized void a(bv bvVar) {
-        List<bv> list = this.f17131a;
+        List<bv> list = this.f17918a;
         if (list != null) {
             if (list.size() == 0) {
                 bvVar.H(0);
-                this.f17131a.add(bvVar);
+                this.f17918a.add(bvVar);
                 a(bvVar, 0, null);
                 return;
             }
-            for (int i = 0; i < this.f17131a.size(); i++) {
-                bv bvVar2 = this.f17131a.get(i);
+            for (int i = 0; i < this.f17918a.size(); i++) {
+                bv bvVar2 = this.f17918a.get(i);
                 if (l.a(bvVar, bvVar2) < 0) {
                     bvVar.H(i);
-                    this.f17131a.add(i, bvVar);
+                    this.f17918a.add(i, bvVar);
                     a(bvVar, i, bvVar2);
-                    int i6 = i + 1;
-                    List<bv> list2 = this.f17131a;
-                    if (list2 != null && i6 < list2.size()) {
-                        while (i6 < list2.size()) {
-                            bv bvVar3 = list2.get(i6);
+                    int i4 = i + 1;
+                    List<bv> list2 = this.f17918a;
+                    if (list2 != null && i4 < list2.size()) {
+                        while (i4 < list2.size()) {
+                            bv bvVar3 = list2.get(i4);
                             if (bvVar3 != null) {
-                                bvVar3.H(i6);
+                                bvVar3.H(i4);
                             }
-                            i6++;
+                            i4++;
                         }
                     }
                     return;
                 }
             }
-            bvVar.H(this.f17131a.size());
-            this.f17131a.add(bvVar);
-            a(bvVar, this.f17131a.size() - 1, null);
+            bvVar.H(this.f17918a.size());
+            this.f17918a.add(bvVar);
+            a(bvVar, this.f17918a.size() - 1, null);
         }
     }
 
@@ -93,7 +93,7 @@ public final class i {
             }
         }
         if (i > 0) {
-            bv bvVar3 = this.f17131a.get(i - 1);
+            bv bvVar3 = this.f17918a.get(i - 1);
             if (!bvVar3.o() || (R8 = bvVar3.R()) == null) {
                 return;
             }

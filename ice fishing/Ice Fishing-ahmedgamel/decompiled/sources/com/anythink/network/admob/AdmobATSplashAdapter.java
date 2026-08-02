@@ -22,92 +22,92 @@ import com.google.android.gms.internal.ads.K8;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
-import k2.C4631a;
-import k2.b;
-import k2.f;
-import k2.g;
-import k2.i;
-import k2.m;
-import k2.n;
-import k2.p;
-import m2.AbstractC4730a;
-import m2.AbstractC4731b;
-import q2.E0;
-import q2.U0;
+import m2.C4741a;
+import m2.b;
+import m2.f;
+import m2.g;
+import m2.i;
+import m2.m;
+import m2.n;
+import m2.p;
+import o2.AbstractC4801a;
+import o2.AbstractC4802b;
+import s2.E0;
+import s2.U0;
 
 /* loaded from: classes.dex */
 public class AdmobATSplashAdapter extends CustomSplashAdapter {
     public static final String TAG = "AdmobATSplashAdapter";
 
     /* renamed from: c, reason: collision with root package name */
-    AbstractC4730a f22883c;
+    AbstractC4801a f23670c;
 
     /* renamed from: d, reason: collision with root package name */
-    m f22884d;
+    m f23671d;
 
     /* renamed from: e, reason: collision with root package name */
-    AbstractC4731b f22885e;
+    AbstractC4802b f23672e;
 
     /* renamed from: f, reason: collision with root package name */
-    Map<String, Object> f22886f;
+    Map<String, Object> f23673f;
 
     /* renamed from: h, reason: collision with root package name */
-    private String f22888h;
+    private String f23675h;
     private int i;
 
     /* renamed from: g, reason: collision with root package name */
-    private String f22887g = "";
+    private String f23674g = "";
 
     /* renamed from: a, reason: collision with root package name */
-    Bundle f22881a = new Bundle();
+    Bundle f23668a = new Bundle();
 
     /* renamed from: b, reason: collision with root package name */
-    boolean f22882b = false;
+    boolean f23669b = false;
 
     /* renamed from: j, reason: collision with root package name */
-    private boolean f22889j = false;
+    private boolean f23676j = false;
 
     /* renamed from: k, reason: collision with root package name */
-    private boolean f22890k = false;
+    private boolean f23677k = false;
 
     /* renamed from: com.anythink.network.admob.AdmobATSplashAdapter$2, reason: invalid class name */
-    public class AnonymousClass2 extends AbstractC4730a {
+    public class AnonymousClass2 extends AbstractC4801a {
         public AnonymousClass2() {
         }
 
-        @Override // k2.x
+        @Override // m2.x
         public final void onAdFailedToLoad(n nVar) {
             if (((ATBaseAdInternalAdapter) AdmobATSplashAdapter.this).mLoadListener != null) {
-                ((ATBaseAdInternalAdapter) AdmobATSplashAdapter.this).mLoadListener.onAdLoadError(String.valueOf(nVar.f38568a), nVar.f38569b);
+                ((ATBaseAdInternalAdapter) AdmobATSplashAdapter.this).mLoadListener.onAdLoadError(String.valueOf(nVar.f39357a), nVar.f39358b);
             }
         }
 
-        @Override // k2.x
-        public final void onAdLoaded(AbstractC4731b abstractC4731b) {
-            AdmobATSplashAdapter.this.f22885e = abstractC4731b;
-            AdmobATSplashAdapter.this.f22886f.put("response_info", abstractC4731b.a());
-            if (AdmobATSplashAdapter.this.f22889j) {
-                AbstractC4731b abstractC4731b2 = AdmobATSplashAdapter.this.f22885e;
+        @Override // m2.x
+        public final void onAdLoaded(AbstractC4802b abstractC4802b) {
+            AdmobATSplashAdapter.this.f23672e = abstractC4802b;
+            AdmobATSplashAdapter.this.f23673f.put("response_info", abstractC4802b.a());
+            if (AdmobATSplashAdapter.this.f23676j) {
+                AbstractC4802b abstractC4802b2 = AdmobATSplashAdapter.this.f23672e;
                 p pVar = new p() { // from class: com.anythink.network.admob.AdmobATSplashAdapter.2.1
-                    @Override // k2.p
+                    @Override // m2.p
                     public final void onPaidEvent(i iVar) {
-                        if (AdmobATSplashAdapter.this.f22890k) {
+                        if (AdmobATSplashAdapter.this.f23677k) {
                             return;
                         }
                         AdmobATSplashAdapter.e(AdmobATSplashAdapter.this);
                         AdMobATInitManager.getInstance();
-                        AdMobATInitManager.a(AdmobATSplashAdapter.this.f22886f, iVar);
+                        AdMobATInitManager.a(AdmobATSplashAdapter.this.f23673f, iVar);
                         if (((CustomSplashAdapter) AdmobATSplashAdapter.this).mImpressionListener != null) {
                             ((CustomSplashAdapter) AdmobATSplashAdapter.this).mImpressionListener.onSplashAdShow();
                         }
                     }
                 };
-                K8 k82 = (K8) abstractC4731b2;
+                K8 k82 = (K8) abstractC4802b2;
                 k82.getClass();
                 try {
-                    k82.f25871a.N0(new U0(pVar));
+                    k82.f26623a.c3(new U0(pVar));
                 } catch (RemoteException e9) {
-                    v2.i.i("#007 Could not call remote method.", e9);
+                    x2.i.i("#007 Could not call remote method.", e9);
                 }
             }
             if (((ATBaseAdInternalAdapter) AdmobATSplashAdapter.this).mLoadListener != null) {
@@ -120,33 +120,33 @@ public class AdmobATSplashAdapter extends CustomSplashAdapter {
     public class AnonymousClass3 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ Context f22897a;
+        final /* synthetic */ Context f23684a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ g f22898b;
+        final /* synthetic */ g f23685b;
 
         /* renamed from: c, reason: collision with root package name */
-        final /* synthetic */ Method f22899c;
+        final /* synthetic */ Method f23686c;
 
         public AnonymousClass3(Context context, g gVar, Method method) {
-            this.f22897a = context;
-            this.f22898b = gVar;
-            this.f22899c = method;
+            this.f23684a = context;
+            this.f23685b = gVar;
+            this.f23686c = method;
         }
 
         @Override // java.lang.Runnable
         public final void run() {
             if (!AdMobATInitManager.getInstance().isLowestFor2400()) {
-                AbstractC4731b.b(this.f22897a, AdmobATSplashAdapter.this.f22887g, this.f22898b, AdmobATSplashAdapter.this.f22883c);
+                AbstractC4802b.b(this.f23684a, AdmobATSplashAdapter.this.f23674g, this.f23685b, AdmobATSplashAdapter.this.f23670c);
                 return;
             }
-            Method method = this.f22899c;
+            Method method = this.f23686c;
             if (method == null) {
                 AdmobATSplashAdapter.this.notifyATLoadFail("", "can not found the load method");
                 return;
             }
             try {
-                method.invoke(null, this.f22897a, AdmobATSplashAdapter.this.f22887g, this.f22898b, Integer.valueOf(AdmobATSplashAdapter.this.i), AdmobATSplashAdapter.this.f22883c);
+                method.invoke(null, this.f23684a, AdmobATSplashAdapter.this.f23674g, this.f23685b, Integer.valueOf(AdmobATSplashAdapter.this.i), AdmobATSplashAdapter.this.f23670c);
             } catch (Throwable th) {
                 Log.e(AdmobATSplashAdapter.TAG, "startLoadSplashAd() >>> network version: +" + AdmobATSplashAdapter.this.getNetworkSDKVersion() + ", load error: " + th.getMessage());
                 AdmobATSplashAdapter admobATSplashAdapter = AdmobATSplashAdapter.this;
@@ -162,14 +162,14 @@ public class AdmobATSplashAdapter extends CustomSplashAdapter {
         public AnonymousClass4() {
         }
 
-        @Override // k2.m
+        @Override // m2.m
         public final void onAdClicked() {
             if (((CustomSplashAdapter) AdmobATSplashAdapter.this).mImpressionListener != null) {
                 ((CustomSplashAdapter) AdmobATSplashAdapter.this).mImpressionListener.onSplashAdClicked();
             }
         }
 
-        @Override // k2.m
+        @Override // m2.m
         public final void onAdDismissedFullScreenContent() {
             try {
                 AdMobATInitManager.getInstance().a(AdmobATSplashAdapter.this.getTrackingInfo().z());
@@ -180,38 +180,38 @@ public class AdmobATSplashAdapter extends CustomSplashAdapter {
             }
         }
 
-        @Override // k2.m
-        public final void onAdFailedToShowFullScreenContent(C4631a c4631a) {
+        @Override // m2.m
+        public final void onAdFailedToShowFullScreenContent(C4741a c4741a) {
             String str = AdmobATSplashAdapter.TAG;
             StringBuilder sb = new StringBuilder("Admob splash show fail: ");
-            sb.append(c4631a.f38568a);
+            sb.append(c4741a.f39357a);
             sb.append(", ");
-            String str2 = c4631a.f38569b;
+            String str2 = c4741a.f39358b;
             sb.append(str2);
             Log.e(str, sb.toString());
             AdmobATSplashAdapter.n(AdmobATSplashAdapter.this);
             if (((CustomSplashAdapter) AdmobATSplashAdapter.this).mImpressionListener != null) {
                 CustomSplashEventListener customSplashEventListener = ((CustomSplashAdapter) AdmobATSplashAdapter.this).mImpressionListener;
                 StringBuilder sb2 = new StringBuilder();
-                sb2.append(c4631a.f38568a);
+                sb2.append(c4741a.f39357a);
                 customSplashEventListener.onSplashAdShowFail(ErrorCode.getErrorCode(ErrorCode.adShowError, sb2.toString(), str2));
                 ((CustomSplashAdapter) AdmobATSplashAdapter.this).mImpressionListener.onSplashAdDismiss();
             }
         }
 
-        @Override // k2.m
+        @Override // m2.m
         public final void onAdShowedFullScreenContent() {
             try {
-                if (AdmobATSplashAdapter.this.f22885e != null) {
-                    AdMobATInitManager.getInstance().a(AdmobATSplashAdapter.this.getTrackingInfo().z(), AdmobATSplashAdapter.this.f22885e);
+                if (AdmobATSplashAdapter.this.f23672e != null) {
+                    AdMobATInitManager.getInstance().a(AdmobATSplashAdapter.this.getTrackingInfo().z(), AdmobATSplashAdapter.this.f23672e);
                 }
             } catch (Throwable unused) {
             }
-            if (AdmobATSplashAdapter.this.f22889j) {
+            if (AdmobATSplashAdapter.this.f23676j) {
                 AdmobATSplashAdapter.this.postOnMainThreadDelayed(new Runnable() { // from class: com.anythink.network.admob.AdmobATSplashAdapter.4.1
                     @Override // java.lang.Runnable
                     public final void run() {
-                        if (AdmobATSplashAdapter.this.f22890k) {
+                        if (AdmobATSplashAdapter.this.f23677k) {
                             return;
                         }
                         AdmobATSplashAdapter.e(AdmobATSplashAdapter.this);
@@ -227,7 +227,7 @@ public class AdmobATSplashAdapter extends CustomSplashAdapter {
     }
 
     public static /* synthetic */ boolean e(AdmobATSplashAdapter admobATSplashAdapter) {
-        admobATSplashAdapter.f22890k = true;
+        admobATSplashAdapter.f23677k = true;
         return true;
     }
 
@@ -238,10 +238,10 @@ public class AdmobATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
-        this.f22883c = null;
-        this.f22884d = null;
-        this.f22881a = null;
-        this.f22882b = true;
+        this.f23670c = null;
+        this.f23671d = null;
+        this.f23668a = null;
+        this.f23669b = true;
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
@@ -260,7 +260,7 @@ public class AdmobATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public Map<String, Object> getNetworkInfoMap() {
-        return this.f22886f;
+        return this.f23673f;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -270,7 +270,7 @@ public class AdmobATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        return this.f22887g;
+        return this.f23674g;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -280,15 +280,15 @@ public class AdmobATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public boolean isAdReady() {
-        return this.f22885e != null;
+        return this.f23672e != null;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void loadCustomNetworkAd(Context context, final Map<String, Object> map, final Map<String, Object> map2) {
-        this.f22887g = ATInitMediation.getStringFromMap(map, "unit_id");
-        this.f22888h = ATInitMediation.getStringFromMap(map, "payload");
-        this.f22889j = ATInitMediation.getIntFromMap(map, j.w.f12629q, 2) == 1;
-        if (!TextUtils.isEmpty(this.f22887g)) {
+        this.f23674g = ATInitMediation.getStringFromMap(map, "unit_id");
+        this.f23675h = ATInitMediation.getStringFromMap(map, "payload");
+        this.f23676j = ATInitMediation.getIntFromMap(map, j.w.f13415q, 2) == 1;
+        if (!TextUtils.isEmpty(this.f23674g)) {
             this.i = ATInitMediation.getIntFromMap(map, "orientation", 1);
             final Context applicationContext = context.getApplicationContext();
             AdMobATInitManager.getInstance().initSDK(applicationContext, map, new MediationInitCallback() { // from class: com.anythink.network.admob.AdmobATSplashAdapter.1
@@ -313,25 +313,25 @@ public class AdmobATSplashAdapter extends CustomSplashAdapter {
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
-    public boolean setUserDataConsent(Context context, boolean z3, boolean z6) {
-        return AdMobATInitManager.getInstance().setUserDataConsent(context, z3, z6);
+    public boolean setUserDataConsent(Context context, boolean z6, boolean z9) {
+        return AdMobATInitManager.getInstance().setUserDataConsent(context, z6, z9);
     }
 
     @Override // com.anythink.splashad.unitgroup.api.CustomSplashAdapter
     public void show(Activity activity, ViewGroup viewGroup) {
         AnonymousClass4 anonymousClass4 = new AnonymousClass4();
-        this.f22884d = anonymousClass4;
-        AbstractC4731b abstractC4731b = this.f22885e;
-        ((K8) abstractC4731b).f25872b.f26067n = anonymousClass4;
-        abstractC4731b.c(activity);
+        this.f23671d = anonymousClass4;
+        AbstractC4802b abstractC4802b = this.f23672e;
+        ((K8) abstractC4802b).f26624b.f26867n = anonymousClass4;
+        abstractC4802b.c(activity);
     }
 
     private void a(Context context, Map<String, Object> map, Map<String, Object> map2) {
-        this.f22886f = new HashMap();
-        this.f22883c = new AnonymousClass2();
-        f a9 = AdMobATInitManager.getInstance().a(context, map, map2, b.APP_OPEN_AD, !TextUtils.isEmpty(this.f22888h));
-        if (!TextUtils.isEmpty(this.f22888h)) {
-            ((E0) a9.f1720u).f40022m = this.f22888h;
+        this.f23673f = new HashMap();
+        this.f23670c = new AnonymousClass2();
+        f a9 = AdMobATInitManager.getInstance().a(context, map, map2, b.APP_OPEN_AD, !TextUtils.isEmpty(this.f23675h));
+        if (!TextUtils.isEmpty(this.f23675h)) {
+            ((E0) a9.f67u).f40321m = this.f23675h;
         }
         a9.getClass();
         postOnMainThread(new AnonymousClass3(context, new g(a9), AdMobATInitManager.getInstance().getAppOpenLoadMethod()));
@@ -339,18 +339,18 @@ public class AdmobATSplashAdapter extends CustomSplashAdapter {
 
     private void a(Activity activity) {
         AnonymousClass4 anonymousClass4 = new AnonymousClass4();
-        this.f22884d = anonymousClass4;
-        AbstractC4731b abstractC4731b = this.f22885e;
-        ((K8) abstractC4731b).f25872b.f26067n = anonymousClass4;
-        abstractC4731b.c(activity);
+        this.f23671d = anonymousClass4;
+        AbstractC4802b abstractC4802b = this.f23672e;
+        ((K8) abstractC4802b).f26624b.f26867n = anonymousClass4;
+        abstractC4802b.c(activity);
     }
 
     public static void a(AdmobATSplashAdapter admobATSplashAdapter, Context context, Map map, Map map2) {
-        admobATSplashAdapter.f22886f = new HashMap();
-        admobATSplashAdapter.f22883c = admobATSplashAdapter.new AnonymousClass2();
-        f a9 = AdMobATInitManager.getInstance().a(context, (Map<String, Object>) map, (Map<String, Object>) map2, b.APP_OPEN_AD, !TextUtils.isEmpty(admobATSplashAdapter.f22888h));
-        if (!TextUtils.isEmpty(admobATSplashAdapter.f22888h)) {
-            ((E0) a9.f1720u).f40022m = admobATSplashAdapter.f22888h;
+        admobATSplashAdapter.f23673f = new HashMap();
+        admobATSplashAdapter.f23670c = admobATSplashAdapter.new AnonymousClass2();
+        f a9 = AdMobATInitManager.getInstance().a(context, (Map<String, Object>) map, (Map<String, Object>) map2, b.APP_OPEN_AD, !TextUtils.isEmpty(admobATSplashAdapter.f23675h));
+        if (!TextUtils.isEmpty(admobATSplashAdapter.f23675h)) {
+            ((E0) a9.f67u).f40321m = admobATSplashAdapter.f23675h;
         }
         a9.getClass();
         admobATSplashAdapter.postOnMainThread(admobATSplashAdapter.new AnonymousClass3(context, new g(a9), AdMobATInitManager.getInstance().getAppOpenLoadMethod()));

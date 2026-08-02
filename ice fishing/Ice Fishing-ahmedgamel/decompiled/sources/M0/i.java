@@ -9,63 +9,63 @@ import android.view.View;
 import android.widget.TextView;
 import androidx.work.impl.foreground.SystemForegroundService;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import p.BinderC4815e;
+import p.BinderC4819e;
 
 /* loaded from: classes.dex */
 public final class i implements Runnable {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f1807n;
+    public final /* synthetic */ int f1840n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final int f1808u;
+    public final int f1841u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final Object f1809v;
+    public final Object f1842v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final Object f1810w;
+    public final Object f1843w;
 
-    public /* synthetic */ i(int i, int i6, Object obj, Object obj2) {
-        this.f1807n = i6;
-        this.f1809v = obj;
-        this.f1810w = obj2;
-        this.f1808u = i;
+    public /* synthetic */ i(int i, int i4, Object obj, Object obj2) {
+        this.f1840n = i4;
+        this.f1842v = obj;
+        this.f1843w = obj2;
+        this.f1841u = i;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
-        switch (this.f1807n) {
+        switch (this.f1840n) {
             case 0:
-                Intent intent = (Intent) this.f1810w;
-                ((j) this.f1809v).a(this.f1808u, intent);
+                Intent intent = (Intent) this.f1843w;
+                ((j) this.f1842v).a(this.f1841u, intent);
                 break;
             case 1:
-                ((SystemForegroundService) this.f1810w).f5396x.notify(this.f1808u, (Notification) this.f1809v);
+                ((SystemForegroundService) this.f1843w).f5361x.notify(this.f1841u, (Notification) this.f1842v);
                 break;
             case 2:
-                ((TextView) this.f1809v).setTypeface((Typeface) this.f1810w, this.f1808u);
+                ((TextView) this.f1842v).setTypeface((Typeface) this.f1843w, this.f1841u);
                 break;
             case 3:
-                ((BinderC4815e) this.f1810w).f39688u.e(this.f1808u, (Bundle) this.f1809v);
+                ((BinderC4819e) this.f1843w).f39796u.e(this.f1841u, (Bundle) this.f1842v);
                 break;
             default:
-                ((BottomSheetBehavior) this.f1810w).E((View) this.f1809v, this.f1808u, false);
+                ((BottomSheetBehavior) this.f1843w).E((View) this.f1842v, this.f1841u, false);
                 break;
         }
     }
 
-    public /* synthetic */ i(Object obj, int i, Parcelable parcelable, int i6) {
-        this.f1807n = i6;
-        this.f1810w = obj;
-        this.f1808u = i;
-        this.f1809v = parcelable;
+    public /* synthetic */ i(Object obj, int i, Parcelable parcelable, int i4) {
+        this.f1840n = i4;
+        this.f1843w = obj;
+        this.f1841u = i;
+        this.f1842v = parcelable;
     }
 
     public i(BottomSheetBehavior bottomSheetBehavior, View view, int i) {
-        this.f1807n = 4;
-        this.f1810w = bottomSheetBehavior;
-        this.f1809v = view;
-        this.f1808u = i;
+        this.f1840n = 4;
+        this.f1843w = bottomSheetBehavior;
+        this.f1842v = view;
+        this.f1841u = i;
     }
 }

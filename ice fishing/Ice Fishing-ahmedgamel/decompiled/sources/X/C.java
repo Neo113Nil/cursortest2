@@ -7,36 +7,36 @@ import java.io.FileOutputStream;
 public final class C extends B7.c {
 
     /* renamed from: n, reason: collision with root package name */
-    public D f3473n;
+    public D f3635n;
 
     /* renamed from: u, reason: collision with root package name */
-    public File f3474u;
+    public File f3636u;
 
     /* renamed from: v, reason: collision with root package name */
-    public FileOutputStream f3475v;
+    public FileOutputStream f3637v;
 
     /* renamed from: w, reason: collision with root package name */
-    public FileOutputStream f3476w;
+    public FileOutputStream f3638w;
 
     /* renamed from: x, reason: collision with root package name */
-    public /* synthetic */ Object f3477x;
+    public /* synthetic */ Object f3639x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final /* synthetic */ D f3478y;
+    public final /* synthetic */ D f3640y;
 
     /* renamed from: z, reason: collision with root package name */
-    public int f3479z;
+    public int f3641z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public C(D d2, B7.c cVar) {
+    public C(D d9, B7.c cVar) {
         super(cVar);
-        this.f3478y = d2;
+        this.f3640y = d9;
     }
 
     @Override // B7.a
     public final Object invokeSuspend(Object obj) {
-        this.f3477x = obj;
-        this.f3479z |= Integer.MIN_VALUE;
-        return this.f3478y.j(null, this);
+        this.f3639x = obj;
+        this.f3641z |= Integer.MIN_VALUE;
+        return this.f3640y.j(null, this);
     }
 }

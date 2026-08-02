@@ -1,6 +1,5 @@
 package com.anythink.core.common.n.b.a;
 
-import D.y;
 import com.anythink.basead.exoplayer.k.p;
 import com.anythink.core.common.d.j;
 import com.anythink.core.common.n.b.ae;
@@ -11,7 +10,7 @@ import com.anythink.core.common.n.b.x;
 import com.anythink.core.common.n.c.f;
 import com.anythink.core.common.n.c.o;
 import com.anythink.core.common.n.c.w;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.io.Closeable;
 import java.io.IOException;
 import java.io.InterruptedIOException;
@@ -42,57 +41,57 @@ import java.util.regex.Pattern;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.TrustManagerFactory;
 import javax.net.ssl.X509TrustManager;
-import u.AbstractC5049e;
+import u.AbstractC5050e;
 
 /* loaded from: classes.dex */
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final byte[] f15036a;
+    public static final byte[] f15823a;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final ag f15039d;
+    public static final ag f15826d;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final ae f15040e;
+    public static final ae f15827e;
 
     /* renamed from: k, reason: collision with root package name */
-    private static final Method f15045k;
+    private static final Method f15832k;
 
     /* renamed from: l, reason: collision with root package name */
-    private static final Pattern f15046l;
+    private static final Pattern f15833l;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String[] f15037b = new String[0];
+    public static final String[] f15824b = new String[0];
 
     /* renamed from: c, reason: collision with root package name */
-    public static final u f15038c = u.a(new String[0]);
+    public static final u f15825c = u.a(new String[0]);
 
     /* renamed from: h, reason: collision with root package name */
-    private static final o f15043h = o.a(f.c("efbbbf"), f.c("feff"), f.c("fffe"), f.c("0000ffff"), f.c("ffff0000"));
+    private static final o f15830h = o.a(f.c("efbbbf"), f.c("feff"), f.c("fffe"), f.c("0000ffff"), f.c("ffff0000"));
     private static final Charset i = Charset.forName("UTF-32BE");
 
     /* renamed from: j, reason: collision with root package name */
-    private static final Charset f15044j = Charset.forName("UTF-32LE");
+    private static final Charset f15831j = Charset.forName("UTF-32LE");
 
     /* renamed from: f, reason: collision with root package name */
-    public static final TimeZone f15041f = TimeZone.getTimeZone("GMT");
+    public static final TimeZone f15828f = TimeZone.getTimeZone("GMT");
 
     /* renamed from: g, reason: collision with root package name */
-    public static final Comparator<String> f15042g = new L.b(1);
+    public static final Comparator<String> f15829g = new L.b(1);
 
     static {
         byte[] bArr = new byte[0];
-        f15036a = bArr;
+        f15823a = bArr;
         Method method = null;
-        f15039d = ag.a((x) null, bArr);
-        f15040e = ae.a((x) null, bArr);
+        f15826d = ag.a((x) null, bArr);
+        f15827e = ae.a((x) null, bArr);
         try {
             method = Throwable.class.getDeclaredMethod("addSuppressed", Throwable.class);
         } catch (Exception unused) {
         }
-        f15045k = method;
-        f15046l = Pattern.compile("([0-9a-fA-F]*:[0-9a-fA-F:.]*)|([\\d.]+)");
+        f15832k = method;
+        f15833l = Pattern.compile("([0-9a-fA-F]*:[0-9a-fA-F:.]*)|([\\d.]+)");
     }
 
     private c() {
@@ -111,14 +110,14 @@ public final class c {
         return c9 - '7';
     }
 
-    public static String c(String str, int i6, int i9) {
-        int a9 = a(str, i6, i9);
-        return str.substring(a9, b(str, a9, i9));
+    public static String c(String str, int i4, int i6) {
+        int a9 = a(str, i4, i6);
+        return str.substring(a9, b(str, a9, i6));
     }
 
     private static boolean d(String str) {
-        for (int i6 = 0; i6 < str.length(); i6++) {
-            char charAt = str.charAt(i6);
+        for (int i4 = 0; i4 < str.length(); i4++) {
+            char charAt = str.charAt(i4);
             if (charAt <= 31 || charAt >= 127 || " #%/:?@[\\]".indexOf(charAt) != -1) {
                 return true;
             }
@@ -127,7 +126,7 @@ public final class c {
     }
 
     public static void a(Throwable th, Throwable th2) {
-        Method method = f15045k;
+        Method method = f15832k;
         if (method != null) {
             try {
                 method.invoke(th, th2);
@@ -156,7 +155,7 @@ public final class c {
     }
 
     public static boolean c(String str) {
-        return f15046l.matcher(str).matches();
+        return f15833l.matcher(str).matches();
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:25:0x00d7, code lost:
@@ -182,36 +181,36 @@ public final class c {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static InetAddress d(String str, int i6, int i9) {
+    private static InetAddress d(String str, int i4, int i6) {
         InetAddress inetAddress;
         InetAddress inetAddress2;
-        int i10;
+        int i9;
         byte[] bArr = new byte[16];
-        int i11 = i6;
-        int i12 = 0;
+        int i10 = i4;
+        int i11 = 0;
+        int i12 = -1;
         int i13 = -1;
-        int i14 = -1;
         while (true) {
             InetAddress inetAddress3 = null;
-            if (i11 >= i9) {
+            if (i10 >= i6) {
                 inetAddress = null;
                 break;
             }
-            if (i12 != 16) {
-                int i15 = i11 + 2;
-                if (i15 <= i9 && str.regionMatches(i11, "::", 0, 2)) {
-                    if (i13 == -1) {
-                        i12 += 2;
-                        i13 = i12;
+            if (i11 != 16) {
+                int i14 = i10 + 2;
+                if (i14 <= i6 && str.regionMatches(i10, "::", 0, 2)) {
+                    if (i12 == -1) {
+                        i11 += 2;
+                        i12 = i11;
                         inetAddress = null;
-                        if (i15 != i9) {
-                            i14 = i15;
-                            int i16 = 0;
-                            i11 = i14;
-                            while (i11 < i9) {
+                        if (i14 != i6) {
+                            i13 = i14;
+                            int i15 = 0;
+                            i10 = i13;
+                            while (i10 < i6) {
                             }
-                            i10 = i11 - i14;
-                            if (i10 == 0) {
+                            i9 = i10 - i13;
+                            if (i9 == 0) {
                                 break;
                             }
                             break;
@@ -220,81 +219,81 @@ public final class c {
                     }
                     return null;
                 }
-                if (i12 == 0) {
+                if (i11 == 0) {
                     inetAddress = null;
-                    i14 = i11;
-                } else if (str.regionMatches(i11, ":", 0, 1)) {
-                    i14 = i11 + 1;
+                    i13 = i10;
+                } else if (str.regionMatches(i10, ":", 0, 1)) {
+                    i13 = i10 + 1;
                     inetAddress = null;
                 } else {
-                    if (!str.regionMatches(i11, j.f12378z, 0, 1)) {
+                    if (!str.regionMatches(i10, j.f13164z, 0, 1)) {
                         return null;
                     }
-                    int i17 = i12 - 2;
-                    int i18 = i17;
-                    while (i14 < i9) {
-                        if (i18 != 16) {
-                            if (i18 != i17) {
-                                if (str.charAt(i14) == '.') {
-                                    i14++;
+                    int i16 = i11 - 2;
+                    int i17 = i16;
+                    while (i13 < i6) {
+                        if (i17 != 16) {
+                            if (i17 != i16) {
+                                if (str.charAt(i13) == '.') {
+                                    i13++;
                                 }
                             }
-                            int i19 = 0;
-                            int i20 = i14;
+                            int i18 = 0;
+                            int i19 = i13;
                             while (true) {
-                                if (i20 >= i9) {
+                                if (i19 >= i6) {
                                     inetAddress2 = inetAddress3;
                                     break;
                                 }
-                                char charAt = str.charAt(i20);
+                                char charAt = str.charAt(i19);
                                 inetAddress2 = inetAddress3;
                                 if (charAt < '0' || charAt > '9') {
                                     break;
                                 }
-                                if ((i19 == 0 && i14 != i20) || ((i19 * 10) + charAt) - 48 > 255) {
+                                if ((i18 == 0 && i13 != i19) || ((i18 * 10) + charAt) - 48 > 255) {
                                     return inetAddress2;
                                 }
-                                i20++;
+                                i19++;
                                 inetAddress3 = inetAddress2;
                             }
                         }
                         return inetAddress3;
                     }
                     inetAddress = inetAddress3;
-                    if (i18 != i12 + 2) {
+                    if (i17 != i11 + 2) {
                         return inetAddress;
                     }
-                    i12 += 2;
+                    i11 += 2;
                 }
-                int i162 = 0;
-                i11 = i14;
-                while (i11 < i9) {
-                    int a9 = a(str.charAt(i11));
+                int i152 = 0;
+                i10 = i13;
+                while (i10 < i6) {
+                    int a9 = a(str.charAt(i10));
                     if (a9 == -1) {
                         break;
                     }
-                    i162 = (i162 << 4) + a9;
-                    i11++;
+                    i152 = (i152 << 4) + a9;
+                    i10++;
                 }
-                i10 = i11 - i14;
-                if (i10 == 0 || i10 > 4) {
+                i9 = i10 - i13;
+                if (i9 == 0 || i9 > 4) {
                     break;
                 }
-                int i21 = i12 + 1;
-                bArr[i12] = (byte) (255 & (i162 >>> 8));
-                i12 += 2;
-                bArr[i21] = (byte) (i162 & p.f8473b);
+                int i20 = i11 + 1;
+                bArr[i11] = (byte) (255 & (i152 >>> 8));
+                i11 += 2;
+                bArr[i20] = (byte) (i152 & p.f9259b);
             } else {
                 return null;
             }
         }
-        if (i12 != 16) {
-            if (i13 == -1) {
+        if (i11 != 16) {
+            if (i12 == -1) {
                 return inetAddress;
             }
-            int i22 = i12 - i13;
-            System.arraycopy(bArr, i13, bArr, 16 - i22, i22);
-            Arrays.fill(bArr, i13, (16 - i12) + i13, (byte) 0);
+            int i21 = i11 - i12;
+            System.arraycopy(bArr, i12, bArr, 16 - i21, i21);
+            Arrays.fill(bArr, i12, (16 - i11) + i12, (byte) 0);
         }
         try {
             return InetAddress.getByAddress(bArr);
@@ -314,14 +313,14 @@ public final class c {
         }
     }
 
-    public static int b(String str, int i6, int i9) {
-        for (int i10 = i9 - 1; i10 >= i6; i10--) {
-            char charAt = str.charAt(i10);
+    public static int b(String str, int i4, int i6) {
+        for (int i9 = i6 - 1; i9 >= i4; i9--) {
+            char charAt = str.charAt(i9);
             if (charAt != '\t' && charAt != '\n' && charAt != '\f' && charAt != '\r' && charAt != ' ') {
-                return i10 + 1;
+                return i9 + 1;
             }
         }
-        return i6;
+        return i4;
     }
 
     public static void a(Socket socket) {
@@ -341,10 +340,10 @@ public final class c {
 
     public static int b(String str) {
         int length = str.length();
-        for (int i6 = 0; i6 < length; i6++) {
-            char charAt = str.charAt(i6);
+        for (int i4 = 0; i4 < length; i4++) {
+            char charAt = str.charAt(i4);
             if (charAt <= 31 || charAt >= 127) {
-                return i6;
+                return i4;
             }
         }
         return -1;
@@ -353,7 +352,7 @@ public final class c {
     public static u b(List<com.anythink.core.common.n.b.a.e.c> list) {
         u.a aVar = new u.a();
         for (com.anythink.core.common.n.b.a.e.c cVar : list) {
-            a.f14869a.a(aVar, cVar.f15133l.a(), cVar.f15134m.a());
+            a.f15656a.a(aVar, cVar.f15920l.a(), cVar.f15921m.a());
         }
         return aVar.a();
     }
@@ -377,10 +376,10 @@ public final class c {
         }
     }
 
-    public static boolean a(w wVar, int i6, TimeUnit timeUnit) {
+    public static boolean a(w wVar, int i4, TimeUnit timeUnit) {
         long nanoTime = System.nanoTime();
         long g_ = wVar.a().f_() ? wVar.a().g_() - nanoTime : Long.MAX_VALUE;
-        wVar.a().a(Math.min(g_, timeUnit.toNanos(i6)) + nanoTime);
+        wVar.a().a(Math.min(g_, timeUnit.toNanos(i4)) + nanoTime);
         try {
             com.anythink.core.common.n.c.c cVar = new com.anythink.core.common.n.c.c();
             while (wVar.a_(cVar, 8192L) != -1) {
@@ -425,14 +424,14 @@ public final class c {
         return Collections.unmodifiableList(Arrays.asList((Object[]) tArr.clone()));
     }
 
-    public static ThreadFactory a(String str, boolean z3) {
-        return new e(0, str, z3);
+    public static ThreadFactory a(String str, boolean z6) {
+        return new e(0, str, z6);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static /* synthetic */ Thread a(String str, boolean z3, Runnable runnable) {
+    public static /* synthetic */ Thread a(String str, boolean z6, Runnable runnable) {
         Thread thread = new Thread(runnable, str);
-        thread.setDaemon(z3);
+        thread.setDaemon(z6);
         return thread;
     }
 
@@ -440,32 +439,32 @@ public final class c {
         ArrayList arrayList = new ArrayList();
         for (String str : strArr) {
             int length = strArr2.length;
-            int i6 = 0;
+            int i4 = 0;
             while (true) {
-                if (i6 >= length) {
+                if (i4 >= length) {
                     break;
                 }
-                if (comparator.compare(str, strArr2[i6]) == 0) {
+                if (comparator.compare(str, strArr2[i4]) == 0) {
                     arrayList.add(str);
                     break;
                 }
-                i6++;
+                i4++;
             }
         }
         return (String[]) arrayList.toArray(new String[arrayList.size()]);
     }
 
-    public static String a(v vVar, boolean z3) {
-        String f3;
+    public static String a(v vVar, boolean z6) {
+        String f2;
         if (vVar.f().contains(":")) {
-            f3 = "[" + vVar.f() + "]";
+            f2 = "[" + vVar.f() + "]";
         } else {
-            f3 = vVar.f();
+            f2 = vVar.f();
         }
-        if (!z3 && vVar.g() == v.a(vVar.b())) {
-            return f3;
+        if (!z6 && vVar.g() == v.a(vVar.b())) {
+            return f2;
         }
-        StringBuilder c9 = AbstractC5049e.c(f3, ":");
+        StringBuilder c9 = AbstractC5050e.c(f2, ":");
         c9.append(vVar.g());
         return c9.toString();
     }
@@ -476,9 +475,9 @@ public final class c {
 
     public static int a(Comparator<String> comparator, String[] strArr, String str) {
         int length = strArr.length;
-        for (int i6 = 0; i6 < length; i6++) {
-            if (comparator.compare(strArr[i6], str) == 0) {
-                return i6;
+        for (int i4 = 0; i4 < length; i4++) {
+            if (comparator.compare(strArr[i4], str) == 0) {
+                return i4;
             }
         }
         return -1;
@@ -492,88 +491,88 @@ public final class c {
         return strArr2;
     }
 
-    public static int a(String str, int i6, int i9) {
-        while (i6 < i9) {
-            char charAt = str.charAt(i6);
+    public static int a(String str, int i4, int i6) {
+        while (i4 < i6) {
+            char charAt = str.charAt(i4);
             if (charAt != '\t' && charAt != '\n' && charAt != '\f' && charAt != '\r' && charAt != ' ') {
-                return i6;
+                return i4;
             }
-            i6++;
+            i4++;
         }
-        return i9;
+        return i6;
     }
 
-    public static int a(String str, int i6, int i9, String str2) {
-        while (i6 < i9) {
-            if (str2.indexOf(str.charAt(i6)) != -1) {
-                return i6;
+    public static int a(String str, int i4, int i6, String str2) {
+        while (i4 < i6) {
+            if (str2.indexOf(str.charAt(i4)) != -1) {
+                return i4;
             }
-            i6++;
+            i4++;
         }
-        return i9;
+        return i6;
     }
 
-    public static int a(String str, int i6, int i9, char c9) {
-        while (i6 < i9) {
-            if (str.charAt(i6) == c9) {
-                return i6;
+    public static int a(String str, int i4, int i6, char c9) {
+        while (i4 < i6) {
+            if (str.charAt(i4) == c9) {
+                return i4;
             }
-            i6++;
+            i4++;
         }
-        return i9;
+        return i6;
     }
 
     public static String a(String str) {
-        InetAddress d2;
+        InetAddress d9;
         if (str.contains(":")) {
-            int i6 = 0;
+            int i4 = 0;
             if (str.startsWith("[") && str.endsWith("]")) {
-                d2 = d(str, 1, str.length() - 1);
+                d9 = d(str, 1, str.length() - 1);
             } else {
-                d2 = d(str, 0, str.length());
+                d9 = d(str, 0, str.length());
             }
-            if (d2 == null) {
+            if (d9 == null) {
                 return null;
             }
-            byte[] address = d2.getAddress();
+            byte[] address = d9.getAddress();
             if (address.length == 16) {
-                int i9 = -1;
+                int i6 = -1;
+                int i9 = 0;
                 int i10 = 0;
-                int i11 = 0;
-                while (i10 < address.length) {
-                    int i12 = i10;
-                    while (i12 < 16 && address[i12] == 0 && address[i12 + 1] == 0) {
-                        i12 += 2;
+                while (i9 < address.length) {
+                    int i11 = i9;
+                    while (i11 < 16 && address[i11] == 0 && address[i11 + 1] == 0) {
+                        i11 += 2;
                     }
-                    int i13 = i12 - i10;
-                    if (i13 > i11 && i13 >= 4) {
-                        i9 = i10;
-                        i11 = i13;
+                    int i12 = i11 - i9;
+                    if (i12 > i10 && i12 >= 4) {
+                        i6 = i9;
+                        i10 = i12;
                     }
-                    i10 = i12 + 2;
+                    i9 = i11 + 2;
                 }
                 com.anythink.core.common.n.c.c cVar = new com.anythink.core.common.n.c.c();
-                while (i6 < address.length) {
-                    if (i6 == i9) {
+                while (i4 < address.length) {
+                    if (i4 == i6) {
                         cVar.l(58);
-                        i6 += i11;
-                        if (i6 == 16) {
+                        i4 += i10;
+                        if (i4 == 16) {
                             cVar.l(58);
                         }
                     } else {
-                        if (i6 > 0) {
+                        if (i4 > 0) {
                             cVar.l(58);
                         }
-                        cVar.n(((address[i6] & 255) << 8) | (address[i6 + 1] & 255));
-                        i6 += 2;
+                        cVar.n(((address[i4] & 255) << 8) | (address[i4 + 1] & 255));
+                        i4 += 2;
                     }
                 }
                 return cVar.u();
             }
             if (address.length == 4) {
-                return d2.getHostAddress();
+                return d9.getHostAddress();
             }
-            throw new AssertionError(y.o("Invalid IPv6 address: '", str, "'"));
+            throw new AssertionError(D.x.l("Invalid IPv6 address: '", str, "'"));
         }
         try {
             String lowerCase = IDN.toASCII(str).toLowerCase(Locale.US);
@@ -594,7 +593,7 @@ public final class c {
     }
 
     public static Charset a(com.anythink.core.common.n.c.e eVar, Charset charset) {
-        int a9 = eVar.a(f15043h);
+        int a9 = eVar.a(f15830h);
         if (a9 == -1) {
             return charset;
         }
@@ -611,93 +610,93 @@ public final class c {
             return i;
         }
         if (a9 == 4) {
-            return f15044j;
+            return f15831j;
         }
         throw new AssertionError();
     }
 
     public static int a(String str, long j6, TimeUnit timeUnit) {
         if (j6 < 0) {
-            throw new IllegalArgumentException(AbstractC4404f.f(str, " < 0"));
+            throw new IllegalArgumentException(Wv.g(str, " < 0"));
         }
         if (timeUnit != null) {
             long millis = timeUnit.toMillis(j6);
             if (millis > 2147483647L) {
-                throw new IllegalArgumentException(AbstractC4404f.f(str, " too large."));
+                throw new IllegalArgumentException(Wv.g(str, " too large."));
             }
             if (millis != 0 || j6 <= 0) {
                 return (int) millis;
             }
-            throw new IllegalArgumentException(AbstractC4404f.f(str, " too small."));
+            throw new IllegalArgumentException(Wv.g(str, " too small."));
         }
         throw new NullPointerException("unit == null");
     }
 
-    private static boolean a(String str, int i6, int i9, byte[] bArr, int i10) {
-        int i11 = i10;
-        while (i6 < i9) {
-            if (i11 == 16) {
+    private static boolean a(String str, int i4, int i6, byte[] bArr, int i9) {
+        int i10 = i9;
+        while (i4 < i6) {
+            if (i10 == 16) {
                 return false;
             }
-            if (i11 != i10) {
-                if (str.charAt(i6) != '.') {
+            if (i10 != i9) {
+                if (str.charAt(i4) != '.') {
                     return false;
                 }
-                i6++;
+                i4++;
             }
-            int i12 = i6;
-            int i13 = 0;
-            while (i12 < i9) {
-                char charAt = str.charAt(i12);
+            int i11 = i4;
+            int i12 = 0;
+            while (i11 < i6) {
+                char charAt = str.charAt(i11);
                 if (charAt < '0' || charAt > '9') {
                     break;
                 }
-                if ((i13 == 0 && i6 != i12) || (i13 = ((i13 * 10) + charAt) - 48) > 255) {
+                if ((i12 == 0 && i4 != i11) || (i12 = ((i12 * 10) + charAt) - 48) > 255) {
                     return false;
                 }
-                i12++;
+                i11++;
             }
-            if (i12 - i6 == 0) {
+            if (i11 - i4 == 0) {
                 return false;
             }
-            bArr[i11] = (byte) i13;
-            i11++;
-            i6 = i12;
+            bArr[i10] = (byte) i12;
+            i10++;
+            i4 = i11;
         }
-        return i11 == i10 + 4;
+        return i10 == i9 + 4;
     }
 
     private static String a(byte[] bArr) {
-        int i6 = -1;
+        int i4 = -1;
+        int i6 = 0;
         int i9 = 0;
         int i10 = 0;
-        int i11 = 0;
-        while (i10 < bArr.length) {
-            int i12 = i10;
-            while (i12 < 16 && bArr[i12] == 0 && bArr[i12 + 1] == 0) {
-                i12 += 2;
+        while (i9 < bArr.length) {
+            int i11 = i9;
+            while (i11 < 16 && bArr[i11] == 0 && bArr[i11 + 1] == 0) {
+                i11 += 2;
             }
-            int i13 = i12 - i10;
-            if (i13 > i11 && i13 >= 4) {
-                i6 = i10;
-                i11 = i13;
+            int i12 = i11 - i9;
+            if (i12 > i10 && i12 >= 4) {
+                i4 = i9;
+                i10 = i12;
             }
-            i10 = i12 + 2;
+            i9 = i11 + 2;
         }
         com.anythink.core.common.n.c.c cVar = new com.anythink.core.common.n.c.c();
-        while (i9 < bArr.length) {
-            if (i9 == i6) {
+        while (i6 < bArr.length) {
+            if (i6 == i4) {
                 cVar.l(58);
-                i9 += i11;
-                if (i9 == 16) {
+                i6 += i10;
+                if (i6 == 16) {
                     cVar.l(58);
                 }
             } else {
-                if (i9 > 0) {
+                if (i6 > 0) {
                     cVar.l(58);
                 }
-                cVar.n(((bArr[i9] & 255) << 8) | (bArr[i9 + 1] & 255));
-                i9 += 2;
+                cVar.n(((bArr[i6] & 255) << 8) | (bArr[i6 + 1] & 255));
+                i6 += 2;
             }
         }
         return cVar.u();
@@ -722,8 +721,8 @@ public final class c {
 
     public static List<com.anythink.core.common.n.b.a.e.c> a(u uVar) {
         ArrayList arrayList = new ArrayList();
-        for (int i6 = 0; i6 < uVar.a(); i6++) {
-            arrayList.add(new com.anythink.core.common.n.b.a.e.c(uVar.a(i6), uVar.b(i6)));
+        for (int i4 = 0; i4 < uVar.a(); i4++) {
+            arrayList.add(new com.anythink.core.common.n.b.a.e.c(uVar.a(i4), uVar.b(i4)));
         }
         return arrayList;
     }

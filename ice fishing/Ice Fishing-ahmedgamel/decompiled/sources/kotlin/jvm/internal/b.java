@@ -7,7 +7,7 @@ import java.util.Map;
 
 /* loaded from: classes2.dex */
 public abstract class b implements O7.b, Serializable {
-    public static final Object NO_RECEIVER = a.f38708n;
+    public static final Object NO_RECEIVER = a.f38635n;
     private final boolean isTopLevel;
     private final String name;
     private final Class owner;
@@ -15,12 +15,12 @@ public abstract class b implements O7.b, Serializable {
     private transient O7.b reflected;
     private final String signature;
 
-    public b(Object obj, Class cls, String str, String str2, boolean z3) {
+    public b(Object obj, Class cls, String str, String str2, boolean z6) {
         this.receiver = obj;
         this.owner = cls;
         this.name = str;
         this.signature = str2;
-        this.isTopLevel = z3;
+        this.isTopLevel = z6;
     }
 
     @Override // O7.b
@@ -67,7 +67,7 @@ public abstract class b implements O7.b, Serializable {
         if (!this.isTopLevel) {
             return s.a(cls);
         }
-        s.f38718a.getClass();
+        s.f38645a.getClass();
         return new l(cls);
     }
 

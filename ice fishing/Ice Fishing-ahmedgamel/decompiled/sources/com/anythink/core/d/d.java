@@ -1,6 +1,5 @@
 package com.anythink.core.d;
 
-import D.y;
 import android.content.Context;
 import android.text.TextUtils;
 import com.anythink.core.api.AdError;
@@ -22,32 +21,32 @@ import org.json.JSONObject;
 public class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f17247a = "d";
+    public static final String f18034a = "d";
 
     /* renamed from: c, reason: collision with root package name */
-    private static volatile d f17248c;
+    private static volatile d f18035c;
 
     /* renamed from: d, reason: collision with root package name */
-    private static volatile b f17249d;
+    private static volatile b f18036d;
 
     /* renamed from: e, reason: collision with root package name */
-    private Context f17251e;
+    private Context f18038e;
 
     /* renamed from: g, reason: collision with root package name */
-    private Object f17253g = new Object();
+    private Object f18040g = new Object();
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f17252f = false;
+    private boolean f18039f = false;
 
     /* renamed from: b, reason: collision with root package name */
-    List<a> f17250b = Collections.synchronizedList(new ArrayList(3));
+    List<a> f18037b = Collections.synchronizedList(new ArrayList(3));
 
     /* renamed from: h, reason: collision with root package name */
-    private String f17254h = u.a.f12830j;
+    private String f18041h = u.a.f13616j;
     private final r i = new r();
 
     /* renamed from: j, reason: collision with root package name */
-    private final c f17255j = new c();
+    private final c f18042j = new c();
 
     /* renamed from: com.anythink.core.d.d$4, reason: invalid class name */
     public class AnonymousClass4 implements Runnable {
@@ -56,8 +55,8 @@ public class d {
 
         @Override // java.lang.Runnable
         public final void run() {
-            com.anythink.core.common.c.b.a().a(d.f17249d.u(), d.f17249d.aD(), d.f17249d.aE(), d.f17249d.aJ());
-            com.anythink.core.common.o.e.a().a(d.f17249d);
+            com.anythink.core.common.c.b.a().a(d.f18036d.u(), d.f18036d.aD(), d.f18036d.aE(), d.f18036d.aJ());
+            com.anythink.core.common.o.e.a().a(d.f18036d);
         }
     }
 
@@ -68,31 +67,31 @@ public class d {
     }
 
     private d(Context context) {
-        this.f17251e = context;
+        this.f18038e = context;
     }
 
     public static b a() {
-        return y.g(y.h());
+        return com.IceFishing.LiveIceFishing.k.k(com.IceFishing.LiveIceFishing.k.l());
     }
 
     public static /* synthetic */ boolean b(d dVar) {
-        dVar.f17252f = false;
+        dVar.f18039f = false;
         return false;
     }
 
     private Context e() {
-        return this.f17251e;
+        return this.f18038e;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void f() {
-        synchronized (this.f17253g) {
+        synchronized (this.f18040g) {
             try {
-                Iterator<a> it = this.f17250b.iterator();
+                Iterator<a> it = this.f18037b.iterator();
                 while (it.hasNext()) {
                     it.next();
                 }
-                this.f17250b.clear();
+                this.f18037b.clear();
             } catch (Throwable th) {
                 throw th;
             }
@@ -100,20 +99,20 @@ public class d {
     }
 
     private boolean g() {
-        return this.f17252f;
+        return this.f18039f;
     }
 
     private static void h() {
     }
 
     private void b(Context context) {
-        this.f17251e = context;
+        this.f18038e = context;
     }
 
     private b c(Context context) {
         r rVar;
         b bVar = new b();
-        bVar.f17169b = true;
+        bVar.f17956b = true;
         bVar.ag();
         bVar.c("0");
         bVar.a(0L);
@@ -145,10 +144,10 @@ public class d {
     }
 
     private void b(a aVar) {
-        synchronized (this.f17253g) {
+        synchronized (this.f18040g) {
             if (aVar != null) {
                 try {
-                    this.f17250b.remove(aVar);
+                    this.f18037b.remove(aVar);
                 } catch (Throwable th) {
                     throw th;
                 }
@@ -158,21 +157,21 @@ public class d {
 
     public final b b(String str) {
         r rVar;
-        if (f17249d == null) {
+        if (f18036d == null) {
             synchronized (this) {
                 try {
-                    if (f17249d == null) {
+                    if (f18036d == null) {
                         try {
-                            if (this.f17251e == null) {
-                                this.f17251e = com.anythink.core.common.d.t.b().g();
+                            if (this.f18038e == null) {
+                                this.f18038e = com.anythink.core.common.d.t.b().g();
                             }
-                            f17249d = a(this.f17251e, str);
+                            f18036d = a(this.f18038e, str);
                         } catch (Throwable unused) {
                         }
-                        if (f17249d == null) {
-                            Context context = this.f17251e;
+                        if (f18036d == null) {
+                            Context context = this.f18038e;
                             b bVar = new b();
-                            bVar.f17169b = true;
+                            bVar.f17956b = true;
                             bVar.ag();
                             bVar.c("0");
                             bVar.a(0L);
@@ -200,7 +199,7 @@ public class d {
                                     bVar.a(b9.h());
                                 }
                             }
-                            f17249d = bVar;
+                            f18036d = bVar;
                         }
                     }
                 } catch (Throwable th) {
@@ -208,29 +207,29 @@ public class d {
                 }
             }
         }
-        return f17249d;
+        return f18036d;
     }
 
     public static d a(Context context) {
-        if (f17248c == null) {
+        if (f18035c == null) {
             synchronized (d.class) {
                 try {
-                    if (f17248c == null) {
-                        f17248c = new d(context);
+                    if (f18035c == null) {
+                        f18035c = new d(context);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f17248c;
+        return f18035c;
     }
 
     private void a(a aVar) {
-        synchronized (this.f17253g) {
+        synchronized (this.f18040g) {
             try {
-                if (this.f17253g != null) {
-                    this.f17250b.add(aVar);
+                if (this.f18040g != null) {
+                    this.f18037b.add(aVar);
                 }
             } catch (Throwable th) {
                 throw th;
@@ -244,36 +243,36 @@ public class d {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final boolean a(String str) {
-        boolean z3;
-        Map<String, Object> map;
         boolean z6;
+        Map<String, Object> map;
+        boolean z9;
         b b9 = b(str);
         if (b9 != null) {
-            j d2 = b9.d();
+            j d9 = b9.d();
             long af = b9.af();
             long currentTimeMillis = System.currentTimeMillis();
-            boolean z9 = b9.X() + af <= currentTimeMillis;
-            if (d2 != null) {
-                if (d2.a() + b9.X() <= currentTimeMillis) {
-                    z3 = true;
-                    map = b9.f17170c;
-                    Map<String, Object> m4 = com.anythink.core.common.d.t.b().m();
+            boolean z10 = b9.X() + af <= currentTimeMillis;
+            if (d9 != null) {
+                if (d9.a() + b9.X() <= currentTimeMillis) {
+                    z6 = true;
+                    map = b9.f17957c;
+                    Map<String, Object> m9 = com.anythink.core.common.d.t.b().m();
                     if (map == null) {
-                        z6 = !map.equals(m4);
+                        z9 = !map.equals(m9);
                     } else {
-                        z6 = m4 != null;
+                        z9 = m9 != null;
                     }
-                    if (z9 && !z3 && !z6) {
+                    if (z10 && !z6 && !z9) {
                         return false;
                     }
                 }
             }
-            z3 = false;
-            map = b9.f17170c;
-            Map<String, Object> m42 = com.anythink.core.common.d.t.b().m();
+            z6 = false;
+            map = b9.f17957c;
+            Map<String, Object> m92 = com.anythink.core.common.d.t.b().m();
             if (map == null) {
             }
-            if (z9) {
+            if (z10) {
             }
         }
         return true;
@@ -283,13 +282,13 @@ public class d {
         com.anythink.core.common.d.t b9 = com.anythink.core.common.d.t.b();
         final String p9 = b9.p();
         String q8 = b9.q();
-        final Context context = this.f17251e;
+        final Context context = this.f18038e;
         if (context == null || TextUtils.isEmpty(p9) || TextUtils.isEmpty(q8)) {
             return;
         }
         b b10 = b(p9);
         Map<String, String> hashMap = new HashMap<>();
-        if (!b10.f17169b) {
+        if (!b10.f17956b) {
             hashMap = b10.bb();
         }
         v vVar = new v(p9, q8);
@@ -318,7 +317,7 @@ public class d {
 
     private b a(Context context, String str) {
         bs bsVar;
-        List<bs> a9 = com.anythink.core.common.e.f.a(com.anythink.core.common.e.e.a(context)).a(str, this.f17254h);
+        List<bs> a9 = com.anythink.core.common.e.f.a(com.anythink.core.common.e.e.a(context)).a(str, this.f18041h);
         if (a9 != null && a9.size() > 0 && (bsVar = a9.get(0)) != null) {
             try {
                 b a10 = b.a(new JSONObject(bsVar.d()));
@@ -345,8 +344,8 @@ public class d {
         com.anythink.core.common.v.b.b.a().a(new Runnable() { // from class: com.anythink.core.d.d.1
             @Override // java.lang.Runnable
             public final void run() {
-                com.anythink.core.common.e.f.a(com.anythink.core.common.e.e.a(context)).a(str, jSONObject.toString(), d.this.f17254h);
-                af.a(context, u.b.f12847a, u.a.f12843w, a9.ak());
+                com.anythink.core.common.e.f.a(com.anythink.core.common.e.e.a(context)).a(str, jSONObject.toString(), d.this.f18041h);
+                af.a(context, u.b.f13633a, u.a.f13629w, a9.ak());
             }
         });
         return a9;
@@ -360,24 +359,24 @@ public class d {
     }
 
     public static long b() {
-        if (f17249d == null || f17249d.V() == 0) {
+        if (f18036d == null || f18036d.V() == 0) {
             return 204800L;
         }
-        return f17249d.V();
+        return f18036d.V();
     }
 
     public final synchronized void a(final String str, String str2) {
         try {
-            if (this.f17252f) {
+            if (this.f18039f) {
                 return;
             }
-            this.f17252f = true;
+            this.f18039f = true;
             v vVar = new v(str, str2);
             vVar.f();
-            if (f17249d != null) {
-                vVar.a(f17249d.bb());
+            if (f18036d != null) {
+                vVar.a(f18036d.bb());
             }
-            this.f17255j.a(this.f17251e, vVar, new com.anythink.core.common.m.q() { // from class: com.anythink.core.d.d.2
+            this.f18042j.a(this.f18038e, vVar, new com.anythink.core.common.m.q() { // from class: com.anythink.core.d.d.2
                 @Override // com.anythink.core.common.m.q
                 public final void onLoadCanceled(int i) {
                     d.b(d.this);
@@ -394,7 +393,7 @@ public class d {
                 public final void onLoadFinish(int i, Object obj) {
                     d.b(d.this);
                     d dVar = d.this;
-                    d.a(dVar, dVar.f17251e, obj, str);
+                    d.a(dVar, dVar.f18038e, obj, str);
                 }
 
                 @Override // com.anythink.core.common.m.q
@@ -410,11 +409,11 @@ public class d {
         if (bVar == null) {
             return;
         }
-        String z3 = bVar.z();
-        if (TextUtils.isEmpty(z3)) {
+        String z6 = bVar.z();
+        if (TextUtils.isEmpty(z6)) {
             return;
         }
-        com.anythink.core.common.res.b.a(context).a(new com.anythink.core.common.res.e(3, z3), (b.a) null);
+        com.anythink.core.common.res.b.a(context).a(new com.anythink.core.common.res.e(3, z6), (b.a) null);
     }
 
     private void a(JSONObject jSONObject) {
@@ -433,22 +432,22 @@ public class d {
         if (obj instanceof JSONObject) {
             b a9 = a(context, str, (JSONObject) obj);
             if (a9 != null) {
-                f17249d = a9;
+                f18036d = a9;
                 String E8 = a9.E();
                 if (!TextUtils.isEmpty(E8) && TextUtils.isEmpty(com.anythink.core.common.d.t.b().C())) {
                     com.anythink.core.common.d.t.b().j(E8);
                 }
-                com.anythink.core.common.q.a(context).a(f17249d);
-                b bVar = f17249d;
+                com.anythink.core.common.q.a(context).a(f18036d);
+                b bVar = f18036d;
                 if (bVar != null) {
-                    String z3 = bVar.z();
-                    if (!TextUtils.isEmpty(z3)) {
-                        com.anythink.core.common.res.b.a(context).a(new com.anythink.core.common.res.e(3, z3), (b.a) null);
+                    String z6 = bVar.z();
+                    if (!TextUtils.isEmpty(z6)) {
+                        com.anythink.core.common.res.b.a(context).a(new com.anythink.core.common.res.e(3, z6), (b.a) null);
                     }
                 }
                 com.anythink.core.common.v.b.b.a().a(new AnonymousClass4());
-                w.a().a(f17249d.h());
-                com.anythink.core.common.c.a().b(f17249d.j());
+                w.a().a(f18036d.h());
+                com.anythink.core.common.c.a().b(f18036d.j());
                 com.anythink.core.common.a.o.a().e();
                 com.anythink.core.common.d.t.b();
                 com.anythink.core.a.b.a(context.getApplicationContext()).a(a9.aI());
@@ -465,22 +464,22 @@ public class d {
         if (obj instanceof JSONObject) {
             b a9 = dVar.a(context, str, (JSONObject) obj);
             if (a9 != null) {
-                f17249d = a9;
+                f18036d = a9;
                 String E8 = a9.E();
                 if (!TextUtils.isEmpty(E8) && TextUtils.isEmpty(com.anythink.core.common.d.t.b().C())) {
                     com.anythink.core.common.d.t.b().j(E8);
                 }
-                com.anythink.core.common.q.a(context).a(f17249d);
-                b bVar = f17249d;
+                com.anythink.core.common.q.a(context).a(f18036d);
+                b bVar = f18036d;
                 if (bVar != null) {
-                    String z3 = bVar.z();
-                    if (!TextUtils.isEmpty(z3)) {
-                        com.anythink.core.common.res.b.a(context).a(new com.anythink.core.common.res.e(3, z3), (b.a) null);
+                    String z6 = bVar.z();
+                    if (!TextUtils.isEmpty(z6)) {
+                        com.anythink.core.common.res.b.a(context).a(new com.anythink.core.common.res.e(3, z6), (b.a) null);
                     }
                 }
                 com.anythink.core.common.v.b.b.a().a(dVar.new AnonymousClass4());
-                w.a().a(f17249d.h());
-                com.anythink.core.common.c.a().b(f17249d.j());
+                w.a().a(f18036d.h());
+                com.anythink.core.common.c.a().b(f18036d.j());
                 com.anythink.core.common.a.o.a().e();
                 com.anythink.core.common.d.t.b();
                 com.anythink.core.a.b.a(context.getApplicationContext()).a(a9.aI());

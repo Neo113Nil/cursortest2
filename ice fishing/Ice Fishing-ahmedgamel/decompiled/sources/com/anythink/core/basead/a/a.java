@@ -17,24 +17,24 @@ import org.json.JSONObject;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static String f11864a = "anythink_adx_context";
+    private static String f12650a = "anythink_adx_context";
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile a f11865b;
+    private static volatile a f12651b;
 
     public static a a() {
-        if (f11865b == null) {
+        if (f12651b == null) {
             synchronized (t.class) {
                 try {
-                    if (f11865b == null) {
-                        f11865b = new a();
+                    if (f12651b == null) {
+                        f12651b = new a();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f11865b;
+        return f12651b;
     }
 
     public final void a(Context context, String str, Map<String, Object> map, final ATAdxAdapterConfigListener aTAdxAdapterConfigListener) {
@@ -93,7 +93,7 @@ public final class a {
                 }
             }
         }
-        Log.e(f11864a, "SDK init error!");
+        Log.e(f12650a, "SDK init error!");
         if (aTAdxAdapterConfigListener != null) {
             aTAdxAdapterConfigListener.onLoadFailed("SDK init error!");
         }

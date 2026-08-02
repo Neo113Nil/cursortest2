@@ -13,62 +13,62 @@ import y8.z;
 public abstract class a implements x {
 
     /* renamed from: n, reason: collision with root package name */
-    public final n f39654n;
+    public final n f39762n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final i f39655u;
+    public final i f39763u;
 
     /* renamed from: v, reason: collision with root package name */
-    public boolean f39656v;
+    public boolean f39764v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final /* synthetic */ g f39657w;
+    public final /* synthetic */ g f39765w;
 
     public a(g gVar, n url) {
         h.e(url, "url");
-        this.f39657w = gVar;
-        this.f39654n = url;
-        this.f39655u = new i(((r) gVar.f39673c.f38405v).f41984n.L());
+        this.f39765w = gVar;
+        this.f39762n = url;
+        this.f39763u = new i(((r) gVar.f39781c.f38917v).f41955n.L());
     }
 
     @Override // y8.x
     public final z L() {
-        return this.f39655u;
+        return this.f39763u;
     }
 
     public final void a(l trailers) {
         i8.r rVar;
         i8.b bVar;
         h.e(trailers, "trailers");
-        g gVar = this.f39657w;
-        int i = gVar.f39674d;
+        g gVar = this.f39765w;
+        int i = gVar.f39782d;
         if (i == 6) {
             return;
         }
         if (i != 5) {
-            throw new IllegalStateException("state: " + gVar.f39674d);
+            throw new IllegalStateException("state: " + gVar.f39782d);
         }
-        i iVar = this.f39655u;
-        z zVar = iVar.f41958e;
-        iVar.f41958e = z.f41999d;
+        i iVar = this.f39763u;
+        z zVar = iVar.f41929e;
+        iVar.f41929e = z.f41970d;
         zVar.a();
         zVar.b();
-        gVar.f39674d = 6;
-        if (trailers.size() <= 0 || (rVar = gVar.f39671a) == null || (bVar = rVar.f38203j) == null) {
+        gVar.f39782d = 6;
+        if (trailers.size() <= 0 || (rVar = gVar.f39779a) == null || (bVar = rVar.f38322j) == null) {
             return;
         }
-        n8.g.b(bVar, this.f39654n, trailers);
+        n8.g.b(bVar, this.f39762n, trailers);
     }
 
     @Override // y8.x
     public long d(long j6, y8.e sink) {
-        g gVar = this.f39657w;
+        g gVar = this.f39765w;
         h.e(sink, "sink");
         try {
-            return ((r) gVar.f39673c.f38405v).d(j6, sink);
+            return ((r) gVar.f39781c.f38917v).d(j6, sink);
         } catch (IOException e9) {
-            gVar.f39672b.d();
-            a(g.f39670f);
+            gVar.f39780b.d();
+            a(g.f39778f);
             throw e9;
         }
     }

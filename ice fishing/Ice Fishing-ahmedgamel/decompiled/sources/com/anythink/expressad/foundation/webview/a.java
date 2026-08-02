@@ -6,5 +6,5 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static ConcurrentHashMap<String, BrowserView> f19786a = new ConcurrentHashMap<>();
+    public static ConcurrentHashMap<String, BrowserView> f20573a = new ConcurrentHashMap<>();
 }

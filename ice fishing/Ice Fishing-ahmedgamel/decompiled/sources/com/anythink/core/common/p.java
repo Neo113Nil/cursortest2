@@ -12,30 +12,30 @@ import org.json.JSONObject;
 public class p {
 
     /* renamed from: c, reason: collision with root package name */
-    private static volatile p f15972c;
+    private static volatile p f16759c;
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f15973a = "1";
+    private final String f16760a = "1";
 
     /* renamed from: b, reason: collision with root package name */
-    private final String f15974b = "2";
+    private final String f16761b = "2";
 
     private p() {
     }
 
     public static p a() {
-        if (f15972c == null) {
+        if (f16759c == null) {
             synchronized (p.class) {
                 try {
-                    if (f15972c == null) {
-                        f15972c = new p();
+                    if (f16759c == null) {
+                        f16759c = new p();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f15972c;
+        return f16759c;
     }
 
     public static void a(com.anythink.core.common.h.n nVar) {
@@ -55,12 +55,12 @@ public class p {
                     String optString = optJSONObject.optString("token");
                     if (!TextUtils.isEmpty(optString)) {
                         String D8 = nVar.D();
-                        double L6 = nVar.L() / 1000.0d;
-                        String z3 = nVar.z();
+                        double L2 = nVar.L() / 1000.0d;
+                        String z6 = nVar.z();
                         try {
                             AdjustEvent adjustEvent = new AdjustEvent(optString);
-                            adjustEvent.setRevenue(L6, D8);
-                            adjustEvent.setOrderId(z3);
+                            adjustEvent.setRevenue(L2, D8);
+                            adjustEvent.setOrderId(z6);
                             Adjust.trackEvent(adjustEvent);
                         } catch (Throwable unused) {
                         }
@@ -74,7 +74,7 @@ public class p {
                     hashMap.put("af_content_id", nVar.aI());
                     hashMap.put("af_content_type", nVar.aK());
                     hashMap.put("af_revenue", Double.valueOf(optInt == 2 ? nVar.L() : nVar.L() / 1000.0d));
-                    hashMap.put("af_currency", j.C0076j.f12485a);
+                    hashMap.put("af_currency", j.C0076j.f13271a);
                     AppsFlyerLib.getInstance().trackEvent(com.anythink.core.common.d.t.b().g(), "af_ad_view", hashMap);
                 }
             }
@@ -82,10 +82,10 @@ public class p {
         }
     }
 
-    private static void a(String str, double d2, String str2, String str3) {
+    private static void a(String str, double d9, String str2, String str3) {
         try {
             AdjustEvent adjustEvent = new AdjustEvent(str);
-            adjustEvent.setRevenue(d2, str2);
+            adjustEvent.setRevenue(d9, str2);
             adjustEvent.setOrderId(str3);
             Adjust.trackEvent(adjustEvent);
         } catch (Throwable unused) {

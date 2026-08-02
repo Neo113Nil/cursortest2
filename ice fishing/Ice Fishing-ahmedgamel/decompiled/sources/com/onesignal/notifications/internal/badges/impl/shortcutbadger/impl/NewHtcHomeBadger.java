@@ -5,12 +5,12 @@ import android.content.Context;
 import android.content.Intent;
 import java.util.Arrays;
 import java.util.List;
-import n5.InterfaceC4758a;
+import n5.InterfaceC4774a;
 import n5.b;
-import o5.C4800a;
+import o5.C4804a;
 
 /* loaded from: classes2.dex */
-public class NewHtcHomeBadger implements InterfaceC4758a {
+public class NewHtcHomeBadger implements InterfaceC4774a {
     public static final String COUNT = "count";
     public static final String EXTRA_COMPONENT = "com.htc.launcher.extra.COMPONENT";
     public static final String EXTRA_COUNT = "com.htc.launcher.extra.COUNT";
@@ -18,7 +18,7 @@ public class NewHtcHomeBadger implements InterfaceC4758a {
     public static final String INTENT_UPDATE_SHORTCUT = "com.htc.launcher.action.UPDATE_SHORTCUT";
     public static final String PACKAGENAME = "packagename";
 
-    @Override // n5.InterfaceC4758a
+    @Override // n5.InterfaceC4774a
     public void executeBadge(Context context, ComponentName componentName, int i) {
         Intent intent = new Intent(INTENT_SET_NOTIFICATION);
         intent.putExtra(EXTRA_COMPONENT, componentName.flattenToShortString());
@@ -26,7 +26,7 @@ public class NewHtcHomeBadger implements InterfaceC4758a {
         Intent intent2 = new Intent(INTENT_UPDATE_SHORTCUT);
         intent2.putExtra(PACKAGENAME, componentName.getPackageName());
         intent2.putExtra(COUNT, i);
-        if (C4800a.canResolveBroadcast(context, intent) || C4800a.canResolveBroadcast(context, intent2)) {
+        if (C4804a.canResolveBroadcast(context, intent) || C4804a.canResolveBroadcast(context, intent2)) {
             context.sendBroadcast(intent);
             context.sendBroadcast(intent2);
         } else {
@@ -34,7 +34,7 @@ public class NewHtcHomeBadger implements InterfaceC4758a {
         }
     }
 
-    @Override // n5.InterfaceC4758a
+    @Override // n5.InterfaceC4774a
     public List<String> getSupportLaunchers() {
         return Arrays.asList("com.htc.launcher");
     }

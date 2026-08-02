@@ -6,15 +6,15 @@ import java.math.BigDecimal;
 public final class OF extends Number {
 
     /* renamed from: n, reason: collision with root package name */
-    public final String f26595n;
+    public final String f27377n;
 
     public OF(String str) {
-        this.f26595n = str;
+        this.f27377n = str;
     }
 
     @Override // java.lang.Number
     public final double doubleValue() {
-        return Double.parseDouble(this.f26595n);
+        return Double.parseDouble(this.f27377n);
     }
 
     public final boolean equals(Object obj) {
@@ -22,23 +22,23 @@ public final class OF extends Number {
             return true;
         }
         if (obj instanceof OF) {
-            return this.f26595n.equals(((OF) obj).f26595n);
+            return this.f27377n.equals(((OF) obj).f27377n);
         }
         return false;
     }
 
     @Override // java.lang.Number
     public final float floatValue() {
-        return Float.parseFloat(this.f26595n);
+        return Float.parseFloat(this.f27377n);
     }
 
     public final int hashCode() {
-        return this.f26595n.hashCode();
+        return this.f27377n.hashCode();
     }
 
     @Override // java.lang.Number
     public final int intValue() {
-        String str = this.f26595n;
+        String str = this.f27377n;
         try {
             try {
                 return Integer.parseInt(str);
@@ -52,7 +52,7 @@ public final class OF extends Number {
 
     @Override // java.lang.Number
     public final long longValue() {
-        String str = this.f26595n;
+        String str = this.f27377n;
         try {
             return Long.parseLong(str);
         } catch (NumberFormatException unused) {
@@ -61,6 +61,6 @@ public final class OF extends Number {
     }
 
     public final String toString() {
-        return this.f26595n;
+        return this.f27377n;
     }
 }

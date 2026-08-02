@@ -8,18 +8,18 @@ public class UY extends N4 {
         this.A00 = uk;
     }
 
-    public /* synthetic */ UY(UK uk, C1322Vx c1322Vx) {
+    public /* synthetic */ UY(UK uk, C1342Vx c1342Vx) {
         this(uk);
     }
 
     @Override // com.instagram.common.viewpoint.core.N4
     public final void A00() {
-        InterfaceC1270Tv interfaceC1270Tv;
-        InterfaceC1270Tv interfaceC1270Tv2;
-        interfaceC1270Tv = this.A00.A0I;
-        if (interfaceC1270Tv != null) {
-            interfaceC1270Tv2 = this.A00.A0I;
-            interfaceC1270Tv2.AEl();
+        InterfaceC1290Tv interfaceC1290Tv;
+        InterfaceC1290Tv interfaceC1290Tv2;
+        interfaceC1290Tv = this.A00.A0I;
+        if (interfaceC1290Tv != null) {
+            interfaceC1290Tv2 = this.A00.A0I;
+            interfaceC1290Tv2.AEl();
         }
     }
 }

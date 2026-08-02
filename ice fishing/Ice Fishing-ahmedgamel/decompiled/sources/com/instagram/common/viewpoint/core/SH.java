@@ -19,14 +19,14 @@ public final class SH implements RewardedVideoAdApi, Repairable {
     public static byte[] A04;
     public static String[] A05 = {"k8yEFjaDDmJNEMKVrce3vEWkKDhb9GrD", "5HJZEEaowyWiZ6x5JcW91LnqKILZK9iv", "JCdbC5zohUOjfclxz", "cbOkRGwJ0he66t85Zev39Ck1DLyP", "QnWh1EoQaEskbAIVlUx7Y0ywxM6b", "GMmjAnpO", "8CCIVLGxcMAoQXrfALv1hDyohO9DfryR", "UYxyoZ6BjjTfNK3ar4eEie7WMpDsFwCV"};
     public final Ad A00;
-    public final C1935iI A01;
+    public final C1955iI A01;
     public final C7X A02;
-    public final C1840gi A03;
+    public final C1860gi A03;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 9);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 9);
         }
         return new String(copyOfRange);
     }
@@ -42,17 +42,17 @@ public final class SH implements RewardedVideoAdApi, Repairable {
     public SH(Context context, String str, Ad ad) {
         String uuid;
         this.A00 = ad;
-        if (context instanceof C1840gi) {
-            this.A03 = (C1840gi) context;
+        if (context instanceof C1860gi) {
+            this.A03 = (C1860gi) context;
             uuid = this.A03.A0F().getId();
         } else {
             uuid = UUID.randomUUID().toString();
-            this.A03 = C1213Rp.A07(context, uuid);
+            this.A03 = C1233Rp.A07(context, uuid);
         }
-        InterfaceC1066Lt A0F = this.A03.A0F();
+        InterfaceC1086Lt A0F = this.A03.A0F();
         String adId = AdPlacementType.REWARDED_VIDEO.toString();
         A0F.A3T(adId, str);
-        this.A01 = new C1935iI(this.A03, str, this.A00, new C1959ij());
+        this.A01 = new C1955iI(this.A03, str, this.A00, new C1979ij());
         this.A03.A0O(this);
         this.A02 = new C7X(this.A01, uuid);
     }
@@ -70,7 +70,7 @@ public final class SH implements RewardedVideoAdApi, Repairable {
     }
 
     public final void A04() {
-        if (C1290Up.A2M(this.A03)) {
+        if (C1310Up.A2M(this.A03)) {
             return;
         }
         this.A02.A08();
@@ -91,20 +91,20 @@ public final class SH implements RewardedVideoAdApi, Repairable {
         A05[6] = "1SRpemADNZd8xb9i9fuLSYNF0AwY2Tu2";
     }
 
-    public final void A07(String str, AdExperienceType adExperienceType, boolean z3) {
+    public final void A07(String str, AdExperienceType adExperienceType, boolean z6) {
         if (str == null) {
             this.A03.A0F().A3Q();
         } else {
-            C1840gi c1840gi = this.A03;
+            C1860gi c1860gi = this.A03;
             if (A05[6].charAt(25) == 'H') {
                 throw new RuntimeException();
             }
             String[] strArr = A05;
             strArr[3] = "67CWYk6q7caxeYWX3cgidRuGJDEH";
             strArr[4] = "JzT9b8y5FiDfchRrDecE58hhFV9F";
-            c1840gi.A0F().A3P();
+            c1860gi.A0F().A3P();
         }
-        this.A02.A0F(this.A00, str, adExperienceType, z3);
+        this.A02.A0F(this.A00, str, adExperienceType, z6);
         this.A03.A0F().A3O();
     }
 
@@ -117,7 +117,7 @@ public final class SH implements RewardedVideoAdApi, Repairable {
 
     @Override // com.facebook.ads.internal.api.RewardedVideoAdApi, com.facebook.ads.Ad
     public final void destroy() {
-        AbstractC1323Vy.A05(A00(136, 7, 47), A00(48, 27, 50), A00(0, 8, 64));
+        AbstractC1343Vy.A05(A00(136, 7, 47), A00(48, 27, 50), A00(0, 8, 64));
         A04();
     }
 
@@ -149,7 +149,7 @@ public final class SH implements RewardedVideoAdApi, Repairable {
 
     @Override // com.facebook.ads.internal.api.RewardedVideoAdApi, com.facebook.ads.Ad
     public final void loadAd() {
-        AbstractC1323Vy.A05(A00(143, 6, 44), A00(75, 32, 96), A00(24, 8, 30));
+        AbstractC1343Vy.A05(A00(143, 6, 44), A00(75, 32, 96), A00(24, 8, 30));
         A07(null, null, true);
     }
 
@@ -161,7 +161,7 @@ public final class SH implements RewardedVideoAdApi, Repairable {
     @Override // com.facebook.ads.internal.context.Repairable
     public final void repair(Throwable th) {
         if (this.A01.A04 != null) {
-            this.A01.A04.onError(this.A00, new AdError(AdError.INTERNAL_ERROR_CODE, A00(32, 16, 116) + AbstractC1367Xt.A03(this.A01.A0B, th)));
+            this.A01.A04.onError(this.A00, new AdError(AdError.INTERNAL_ERROR_CODE, A00(32, 16, 116) + AbstractC1387Xt.A03(this.A01.A0B, th)));
         }
     }
 
@@ -174,13 +174,13 @@ public final class SH implements RewardedVideoAdApi, Repairable {
 
     @Override // com.facebook.ads.internal.api.RewardedVideoAdApi, com.facebook.ads.FullScreenAd
     public final boolean show() {
-        AbstractC1323Vy.A05(A00(149, 4, 108), A00(107, 29, 122), A00(8, 8, 38));
+        AbstractC1343Vy.A05(A00(149, 4, 108), A00(107, 29, 122), A00(8, 8, 38));
         return A08(new SJ().withAppOrientation(-1).build());
     }
 
     @Override // com.facebook.ads.internal.api.RewardedVideoAdApi
     public final boolean show(RewardedVideoAd.RewardedVideoShowAdConfig rewardedVideoShowAdConfig) {
-        AbstractC1323Vy.A05(A00(149, 4, 108), A00(107, 29, 122), A00(16, 8, 88));
+        AbstractC1343Vy.A05(A00(149, 4, 108), A00(107, 29, 122), A00(16, 8, 88));
         return A08(rewardedVideoShowAdConfig);
     }
 }

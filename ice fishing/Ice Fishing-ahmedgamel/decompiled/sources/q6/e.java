@@ -4,16 +4,16 @@ package q6;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public Object f40251a;
+    public Object f40062a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f40252b;
+    public int f40063b;
 
     public final boolean equals(Object obj) {
-        return obj instanceof e ? ((e) obj).f40251a == this.f40251a : ((C4930c) obj).get() == this.f40251a;
+        return obj instanceof e ? ((e) obj).f40062a == this.f40062a : ((C4879c) obj).get() == this.f40062a;
     }
 
     public final int hashCode() {
-        return this.f40252b;
+        return this.f40063b;
     }
 }

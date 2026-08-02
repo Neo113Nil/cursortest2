@@ -20,71 +20,71 @@ import java.util.WeakHashMap;
 public class f {
 
     /* renamed from: c, reason: collision with root package name */
-    private static String f16572c = "f";
+    private static String f17359c = "f";
 
     /* renamed from: a, reason: collision with root package name */
-    final int f16573a;
+    final int f17360a;
 
     /* renamed from: b, reason: collision with root package name */
-    final ViewTreeObserver.OnPreDrawListener f16574b;
+    final ViewTreeObserver.OnPreDrawListener f17361b;
 
     /* renamed from: d, reason: collision with root package name */
-    private int f16575d;
+    private int f17362d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final ArrayList<View> f16576e;
+    private final ArrayList<View> f17363e;
 
     /* renamed from: f, reason: collision with root package name */
-    private long f16577f;
+    private long f17364f;
 
     /* renamed from: g, reason: collision with root package name */
-    private final Map<View, a> f16578g;
+    private final Map<View, a> f17365g;
 
     /* renamed from: h, reason: collision with root package name */
-    private final b f16579h;
+    private final b f17366h;
     private d i;
 
     /* renamed from: j, reason: collision with root package name */
-    private final c f16580j;
+    private final c f17367j;
 
     /* renamed from: k, reason: collision with root package name */
-    private final Handler f16581k;
+    private final Handler f17368k;
 
     /* renamed from: l, reason: collision with root package name */
-    private boolean f16582l;
+    private boolean f17369l;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        int f16584a;
+        int f17371a;
 
         /* renamed from: b, reason: collision with root package name */
-        int f16585b;
+        int f17372b;
 
         /* renamed from: c, reason: collision with root package name */
-        long f16586c;
+        long f17373c;
 
         /* renamed from: d, reason: collision with root package name */
-        View f16587d;
+        View f17374d;
 
         /* renamed from: e, reason: collision with root package name */
-        Integer f16588e;
+        Integer f17375e;
     }
 
     public static class b {
 
         /* renamed from: a, reason: collision with root package name */
-        private static String f16589a = "b";
+        private static String f17376a = "b";
 
         /* renamed from: b, reason: collision with root package name */
-        private final Rect f16590b;
+        private final Rect f17377b;
 
         /* renamed from: c, reason: collision with root package name */
-        private int f16591c;
+        private int f17378c;
 
         public b() {
-            this.f16590b = new Rect();
-            this.f16591c = 1;
+            this.f17377b = new Rect();
+            this.f17378c = 1;
         }
 
         private static boolean a(long j6, int i) {
@@ -95,10 +95,10 @@ public class f {
             if (view2 != null && view != null) {
                 try {
                     if (view.getParent() != null && view2.getWindowVisibility() == 0) {
-                        if ((this.f16591c == 1 && !view2.hasWindowFocus()) || !view2.getGlobalVisibleRect(this.f16590b)) {
+                        if ((this.f17378c == 1 && !view2.hasWindowFocus()) || !view2.getGlobalVisibleRect(this.f17377b)) {
                             return false;
                         }
-                        long height = this.f16590b.height() * this.f16590b.width();
+                        long height = this.f17377b.height() * this.f17377b.width();
                         long height2 = view2.getHeight() * view2.getWidth();
                         if (height2 <= 0) {
                             return false;
@@ -109,7 +109,7 @@ public class f {
                         return false;
                     }
                 } catch (Throwable th) {
-                    Log.e(f16589a, "checkVisibilityPercent error: " + th.getMessage());
+                    Log.e(f17376a, "checkVisibilityPercent error: " + th.getMessage());
                     th.printStackTrace();
                 }
             }
@@ -117,8 +117,8 @@ public class f {
         }
 
         public b(int i) {
-            this.f16590b = new Rect();
-            this.f16591c = i;
+            this.f17377b = new Rect();
+            this.f17378c = i;
         }
 
         public static int a(View view) {
@@ -134,37 +134,37 @@ public class f {
     public class c implements Runnable {
 
         /* renamed from: c, reason: collision with root package name */
-        private final ArrayList<View> f16594c = new ArrayList<>();
+        private final ArrayList<View> f17381c = new ArrayList<>();
 
         /* renamed from: b, reason: collision with root package name */
-        private final ArrayList<View> f16593b = new ArrayList<>();
+        private final ArrayList<View> f17380b = new ArrayList<>();
 
         public c() {
         }
 
         @Override // java.lang.Runnable
         public final void run() {
-            for (Map.Entry entry : f.this.f16578g.entrySet()) {
+            for (Map.Entry entry : f.this.f17365g.entrySet()) {
                 View view = (View) entry.getKey();
-                int i = ((a) entry.getValue()).f16584a;
-                int i6 = ((a) entry.getValue()).f16585b;
-                Integer num = ((a) entry.getValue()).f16588e;
-                View view2 = ((a) entry.getValue()).f16587d;
-                if (f.this.f16579h.a(view2, view, i, num)) {
-                    this.f16593b.add(view);
+                int i = ((a) entry.getValue()).f17371a;
+                int i4 = ((a) entry.getValue()).f17372b;
+                Integer num = ((a) entry.getValue()).f17375e;
+                View view2 = ((a) entry.getValue()).f17374d;
+                if (f.this.f17366h.a(view2, view, i, num)) {
+                    this.f17380b.add(view);
                     try {
-                        view.getViewTreeObserver().removeOnPreDrawListener(f.this.f16574b);
+                        view.getViewTreeObserver().removeOnPreDrawListener(f.this.f17361b);
                     } catch (Throwable unused) {
                     }
-                } else if (!f.this.f16579h.a(view2, view, i6, null)) {
-                    this.f16594c.add(view);
+                } else if (!f.this.f17366h.a(view2, view, i4, null)) {
+                    this.f17381c.add(view);
                 }
             }
             if (f.this.i != null) {
-                f.this.i.a(this.f16593b);
+                f.this.i.a(this.f17380b);
             }
-            this.f16593b.clear();
-            this.f16594c.clear();
+            this.f17380b.clear();
+            this.f17381c.clear();
             f.d(f.this);
         }
     }
@@ -178,7 +178,7 @@ public class f {
     }
 
     public static /* synthetic */ boolean d(f fVar) {
-        fVar.f16582l = false;
+        fVar.f17369l = false;
         return false;
     }
 
@@ -192,41 +192,41 @@ public class f {
     }
 
     public final void c() {
-        if (this.f16582l) {
+        if (this.f17369l) {
             return;
         }
-        this.f16582l = true;
-        this.f16581k.postDelayed(this.f16580j, this.f16575d);
+        this.f17369l = true;
+        this.f17368k.postDelayed(this.f17367j, this.f17362d);
     }
 
     private void a(View view, View view2, int i, Integer num) {
         a(view, view2, i, i, num);
     }
 
-    public f(int i, int i6) {
-        this(new WeakHashMap(10), new b(i6), new Handler(Looper.getMainLooper()));
-        this.f16575d = i;
+    public f(int i, int i4) {
+        this(new WeakHashMap(10), new b(i4), new Handler(Looper.getMainLooper()));
+        this.f17362d = i;
     }
 
-    public final void a(View view, View view2, int i, int i6, Integer num) {
+    public final void a(View view, View view2, int i, int i4, Integer num) {
         try {
             if (a(view2.getContext(), view2)) {
-                a aVar = this.f16578g.get(view2);
+                a aVar = this.f17365g.get(view2);
                 if (aVar == null) {
                     aVar = new a();
-                    this.f16578g.put(view2, aVar);
+                    this.f17365g.put(view2, aVar);
                     c();
                 }
-                int min = Math.min(i6, i);
-                aVar.f16587d = view;
-                aVar.f16584a = i;
-                aVar.f16585b = min;
-                aVar.f16586c = this.f16577f;
-                aVar.f16588e = num;
-                view2.getViewTreeObserver().addOnPreDrawListener(this.f16574b);
-                long j6 = this.f16577f;
+                int min = Math.min(i4, i);
+                aVar.f17374d = view;
+                aVar.f17371a = i;
+                aVar.f17372b = min;
+                aVar.f17373c = this.f17364f;
+                aVar.f17375e = num;
+                view2.getViewTreeObserver().addOnPreDrawListener(this.f17361b);
+                long j6 = this.f17364f;
                 long j9 = 1 + j6;
-                this.f16577f = j9;
+                this.f17364f = j9;
                 if (j9 % 50 == 0) {
                     a(j6 - 49);
                 }
@@ -236,15 +236,15 @@ public class f {
     }
 
     private f(Map<View, a> map, b bVar, Handler handler) {
-        this.f16575d = 100;
-        this.f16573a = 50;
-        this.f16577f = 0L;
-        this.f16578g = map;
-        this.f16579h = bVar;
-        this.f16581k = handler;
-        this.f16580j = new c();
-        this.f16576e = new ArrayList<>(50);
-        this.f16574b = new ViewTreeObserver.OnPreDrawListener() { // from class: com.anythink.core.common.v.a.f.1
+        this.f17362d = 100;
+        this.f17360a = 50;
+        this.f17364f = 0L;
+        this.f17365g = map;
+        this.f17366h = bVar;
+        this.f17368k = handler;
+        this.f17367j = new c();
+        this.f17363e = new ArrayList<>(50);
+        this.f17361b = new ViewTreeObserver.OnPreDrawListener() { // from class: com.anythink.core.common.v.a.f.1
             @Override // android.view.ViewTreeObserver.OnPreDrawListener
             public final boolean onPreDraw() {
                 f.this.c();
@@ -254,26 +254,26 @@ public class f {
     }
 
     private void a(long j6) {
-        for (Map.Entry<View, a> entry : this.f16578g.entrySet()) {
-            if (entry.getValue().f16586c < j6) {
-                this.f16576e.add(entry.getKey());
+        for (Map.Entry<View, a> entry : this.f17365g.entrySet()) {
+            if (entry.getValue().f17373c < j6) {
+                this.f17363e.add(entry.getKey());
             }
         }
-        Iterator<View> it = this.f16576e.iterator();
+        Iterator<View> it = this.f17363e.iterator();
         while (it.hasNext()) {
             a(it.next());
         }
-        this.f16576e.clear();
+        this.f17363e.clear();
     }
 
     public final void a(View view) {
-        this.f16578g.remove(view);
+        this.f17365g.remove(view);
     }
 
     public final void a() {
-        this.f16578g.clear();
-        this.f16581k.removeMessages(0);
-        this.f16582l = false;
+        this.f17365g.clear();
+        this.f17368k.removeMessages(0);
+        this.f17369l = false;
     }
 
     private static boolean a(Context context, View view) {

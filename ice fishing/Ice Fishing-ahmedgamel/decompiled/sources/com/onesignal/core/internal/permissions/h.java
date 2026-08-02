@@ -1,23 +1,23 @@
 package com.onesignal.core.internal.permissions;
 
 import I7.p;
-import S7.AbstractC0406y;
+import N3.C;
+import S7.AbstractC0410y;
 import S7.F;
-import S7.InterfaceC0404w;
+import S7.InterfaceC0408w;
 import S7.o0;
 import V7.k;
 import V7.l;
 import V7.n;
 import X7.o;
-import a.AbstractC0422a;
 import android.app.Activity;
-import androidx.lifecycle.C0487e;
+import androidx.lifecycle.C0491e;
 import androidx.lifecycle.S;
-import g1.C4522b;
 import kotlin.jvm.internal.i;
-import u7.InterfaceC5087e;
+import u7.InterfaceC5079e;
 import u7.v;
-import z7.InterfaceC5267d;
+import w.AbstractC5128c;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class h extends S {
@@ -33,8 +33,8 @@ public final class h extends S {
     private String permissionRequestType;
     private final l shouldFinish;
     private final l waiting;
-    private final InterfaceC5087e requestPermissionService$delegate = AbstractC0422a.q(e.INSTANCE);
-    private final InterfaceC5087e preferenceService$delegate = AbstractC0422a.q(d.INSTANCE);
+    private final InterfaceC5079e requestPermissionService$delegate = C.O(e.INSTANCE);
+    private final InterfaceC5079e preferenceService$delegate = C.O(d.INSTANCE);
 
     public static final class a {
         public /* synthetic */ a(kotlin.jvm.internal.e eVar) {
@@ -52,8 +52,8 @@ public final class h extends S {
         int label;
         /* synthetic */ Object result;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -72,61 +72,61 @@ public final class h extends S {
         final /* synthetic */ h this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public c(String[] strArr, int[] iArr, h hVar, boolean z3, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public c(String[] strArr, int[] iArr, h hVar, boolean z6, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$permissions = strArr;
             this.$grantResults = iArr;
             this.this$0 = hVar;
-            this.$shouldShowRationaleAfter = z3;
+            this.$shouldShowRationaleAfter = z6;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return new c(this.$permissions, this.$grantResults, this.this$0, this.$shouldShowRationaleAfter, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return new c(this.$permissions, this.$grantResults, this.this$0, this.$shouldShowRationaleAfter, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((c) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((c) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            boolean z3;
-            A7.a aVar = A7.a.f58n;
+            boolean z6;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 this.label = 1;
-                if (AbstractC0406y.f(500L, this) == aVar) {
+                if (AbstractC0410y.f(500L, this) == aVar) {
                     return aVar;
                 }
             } else {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
             String[] strArr = this.$permissions;
-            boolean z6 = false;
+            boolean z9 = false;
             if (strArr.length == 0) {
-                z3 = false;
+                z6 = false;
             } else {
                 String str = strArr[0];
                 int[] iArr = this.$grantResults;
-                boolean z9 = !(iArr.length == 0) && iArr[0] == 0;
-                if (z9) {
-                    this.this$0.getPreferenceService().saveBool(com.onesignal.common.threading.b.BASE_THREAD_NAME, u1.h.f("USER_RESOLVED_PERMISSION_", str), Boolean.TRUE);
+                boolean z10 = !(iArr.length == 0) && iArr[0] == 0;
+                if (z10) {
+                    this.this$0.getPreferenceService().saveBool(com.onesignal.common.threading.b.BASE_THREAD_NAME, AbstractC5128c.f("USER_RESOLVED_PERMISSION_", str), Boolean.TRUE);
                 } else {
-                    z6 = this.this$0.shouldShowSettings(str, this.$shouldShowRationaleAfter);
+                    z9 = this.this$0.shouldShowSettings(str, this.$shouldShowRationaleAfter);
                 }
-                this.this$0.getPreferenceService().saveBool(com.onesignal.common.threading.b.BASE_THREAD_NAME, u1.h.f("PROMPTED_PERMISSION_", str), Boolean.TRUE);
-                z3 = z6;
+                this.this$0.getPreferenceService().saveBool(com.onesignal.common.threading.b.BASE_THREAD_NAME, AbstractC5128c.f("PROMPTED_PERMISSION_", str), Boolean.TRUE);
                 z6 = z9;
+                z9 = z10;
             }
-            this.this$0.executeCallback(z6, z3);
+            this.this$0.executeCallback(z9, z6);
             ((n) this.this$0._shouldFinish).F(Boolean.TRUE);
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
@@ -160,14 +160,14 @@ public final class h extends S {
         Boolean bool = Boolean.FALSE;
         n nVar = new n(bool);
         this._shouldFinish = nVar;
-        this.shouldFinish = new C4522b(9, nVar);
+        this.shouldFinish = new n4.c(15, nVar);
         n nVar2 = new n(bool);
         this._waiting = nVar2;
-        this.waiting = new C4522b(9, nVar2);
+        this.waiting = new n4.c(15, nVar2);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final void executeCallback(boolean z3, boolean z6) {
+    public final void executeCallback(boolean z6, boolean z9) {
         v vVar;
         String str = this.permissionRequestType;
         if (str != null) {
@@ -175,12 +175,12 @@ public final class h extends S {
             if (callback == null) {
                 throw new RuntimeException("Missing handler for permissionRequestType: ".concat(str));
             }
-            if (z3) {
+            if (z6) {
                 callback.onAccept();
             } else {
-                callback.onReject(z6);
+                callback.onReject(z9);
             }
-            vVar = v.f41353a;
+            vVar = v.f41073a;
         } else {
             vVar = null;
         }
@@ -199,33 +199,33 @@ public final class h extends S {
         return (com.onesignal.core.internal.permissions.impl.a) this.requestPermissionService$delegate.getValue();
     }
 
-    public static /* synthetic */ void onRequestPermissionsResult$default(h hVar, String[] strArr, int[] iArr, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void onRequestPermissionsResult$default(h hVar, String[] strArr, int[] iArr, boolean z6, int i, Object obj) {
         if ((i & 4) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        hVar.onRequestPermissionsResult(strArr, iArr, z3);
+        hVar.onRequestPermissionsResult(strArr, iArr, z6);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final boolean shouldShowSettings(String str, boolean z3) {
+    public final boolean shouldShowSettings(String str, boolean z6) {
         if (!getRequestPermissionService().getFallbackToSettings()) {
             return false;
         }
-        String f3 = u1.h.f("USER_RESOLVED_PERMISSION_", str);
+        String f2 = AbstractC5128c.f("USER_RESOLVED_PERMISSION_", str);
         boolean shouldShowRequestPermissionRationaleBeforeRequest = getRequestPermissionService().getShouldShowRequestPermissionRationaleBeforeRequest();
-        if (shouldShowRequestPermissionRationaleBeforeRequest && !z3) {
-            getPreferenceService().saveBool(com.onesignal.common.threading.b.BASE_THREAD_NAME, f3, Boolean.TRUE);
+        if (shouldShowRequestPermissionRationaleBeforeRequest && !z6) {
+            getPreferenceService().saveBool(com.onesignal.common.threading.b.BASE_THREAD_NAME, f2, Boolean.TRUE);
             return false;
         }
         J4.b preferenceService = getPreferenceService();
-        String f9 = u1.h.f("PROMPTED_PERMISSION_", str);
+        String f9 = AbstractC5128c.f("PROMPTED_PERMISSION_", str);
         Boolean bool = Boolean.FALSE;
         Boolean bool2 = preferenceService.getBool(com.onesignal.common.threading.b.BASE_THREAD_NAME, f9, bool);
-        if ((bool2 != null ? bool2.booleanValue() : false) && !shouldShowRequestPermissionRationaleBeforeRequest && !z3) {
-            getPreferenceService().saveBool(com.onesignal.common.threading.b.BASE_THREAD_NAME, f3, Boolean.TRUE);
+        if ((bool2 != null ? bool2.booleanValue() : false) && !shouldShowRequestPermissionRationaleBeforeRequest && !z6) {
+            getPreferenceService().saveBool(com.onesignal.common.threading.b.BASE_THREAD_NAME, f2, Boolean.TRUE);
             return true;
         }
-        Boolean bool3 = getPreferenceService().getBool(com.onesignal.common.threading.b.BASE_THREAD_NAME, f3, bool);
+        Boolean bool3 = getPreferenceService().getBool(com.onesignal.common.threading.b.BASE_THREAD_NAME, f2, bool);
         if (bool3 != null) {
             return bool3.booleanValue();
         }
@@ -251,21 +251,21 @@ public final class h extends S {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object initialize(Activity activity, String str, String str2, InterfaceC5267d interfaceC5267d) {
+    public final Object initialize(Activity activity, String str, String str2, InterfaceC5240d interfaceC5240d) {
         b bVar;
         Object obj;
         int i;
         h hVar;
-        if (interfaceC5267d instanceof b) {
-            bVar = (b) interfaceC5267d;
-            int i6 = bVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                bVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof b) {
+            bVar = (b) interfaceC5240d;
+            int i4 = bVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                bVar.label = i4 - Integer.MIN_VALUE;
                 obj = bVar.result;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 i = bVar.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     bVar.L$0 = this;
                     bVar.L$1 = str;
                     bVar.L$2 = str2;
@@ -282,7 +282,7 @@ public final class h extends S {
                     str2 = (String) bVar.L$2;
                     str = (String) bVar.L$1;
                     hVar = (h) bVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 if (((Boolean) obj).booleanValue()) {
                     ((n) hVar._shouldFinish).F(Boolean.TRUE);
@@ -297,9 +297,9 @@ public final class h extends S {
                 return Boolean.FALSE;
             }
         }
-        bVar = new b(interfaceC5267d);
+        bVar = new b(interfaceC5240d);
         obj = bVar.result;
-        A7.a aVar2 = A7.a.f58n;
+        A7.a aVar2 = A7.a.f215n;
         i = bVar.label;
         if (i != 0) {
         }
@@ -311,23 +311,23 @@ public final class h extends S {
     public void onCleared() {
     }
 
-    public final void onRequestPermissionsResult(String[] permissions, int[] grantResults, boolean z3) {
+    public final void onRequestPermissionsResult(String[] permissions, int[] grantResults, boolean z6) {
         kotlin.jvm.internal.h.e(permissions, "permissions");
         kotlin.jvm.internal.h.e(grantResults, "grantResults");
         ((n) this._waiting).F(Boolean.FALSE);
-        InterfaceC0404w interfaceC0404w = (InterfaceC0404w) getTag("androidx.lifecycle.ViewModelCoroutineScope.JOB_KEY");
-        if (interfaceC0404w == null) {
+        InterfaceC0408w interfaceC0408w = (InterfaceC0408w) getTag("androidx.lifecycle.ViewModelCoroutineScope.JOB_KEY");
+        if (interfaceC0408w == null) {
             o0 o0Var = new o0();
-            Z7.e eVar = F.f2915a;
-            Object tagIfAbsent = setTagIfAbsent("androidx.lifecycle.ViewModelCoroutineScope.JOB_KEY", new C0487e(A8.b.r(o0Var, o.f3856a.f3100x)));
+            Z7.e eVar = F.f2998a;
+            Object tagIfAbsent = setTagIfAbsent("androidx.lifecycle.ViewModelCoroutineScope.JOB_KEY", new C0491e(A8.b.t(o0Var, o.f3811a.f3217x)));
             kotlin.jvm.internal.h.d(tagIfAbsent, "setTagIfAbsent(\n        …Main.immediate)\n        )");
-            interfaceC0404w = (InterfaceC0404w) tagIfAbsent;
+            interfaceC0408w = (InterfaceC0408w) tagIfAbsent;
         }
-        AbstractC0406y.o(interfaceC0404w, null, new c(permissions, grantResults, this, z3, null), 3);
+        AbstractC0410y.o(interfaceC0408w, null, new c(permissions, grantResults, this, z6, null), 3);
     }
 
-    public final void recordRationaleState(boolean z3) {
-        getRequestPermissionService().setShouldShowRequestPermissionRationaleBeforeRequest(z3);
+    public final void recordRationaleState(boolean z6) {
+        getRequestPermissionService().setShouldShowRequestPermissionRationaleBeforeRequest(z6);
     }
 
     public final void resetWaitingState() {

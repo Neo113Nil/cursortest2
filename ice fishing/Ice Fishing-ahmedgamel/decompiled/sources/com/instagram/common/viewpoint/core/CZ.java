@@ -4,20 +4,20 @@ import java.util.Arrays;
 import java.util.Locale;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class CZ implements InterfaceC1822gQ {
+public final class CZ implements InterfaceC1842gQ {
     public static boolean A03;
     public static byte[] A04;
     public static String[] A05 = {"HV3bjOQFG6hG19mK6btv5ZItymBNR4jb", "f8frJPlJVlZQfTmtqYpYtimfJzE", "snhVz6l74gACRZpxcVOl8ZhDE", "ioIXRoWDB2y5rIxXUVMK", "pJOGedThy6U23H0Dqr8MrVjxKTkAUTUw", "Z2sPBilUji", "eoagJWSpw9dhQ5uILEfDMJsGfxbL2OXR", "ioOrVGKFmPeoWtk9SUaiMK94AxkbTfSp"};
-    public static final InterfaceC1820gO A06;
+    public static final InterfaceC1840gO A06;
     public static final String A07;
     public long A00 = 0;
-    public final InterfaceC1821gP A01;
-    public final InterfaceC1827gV A02;
+    public final InterfaceC1841gP A01;
+    public final InterfaceC1847gV A02;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            int i11 = copyOfRange[i10] - i9;
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            int i10 = copyOfRange[i9] - i6;
             String[] strArr = A05;
             if (strArr[2].length() == strArr[3].length()) {
                 throw new RuntimeException();
@@ -25,7 +25,7 @@ public final class CZ implements InterfaceC1822gQ {
             String[] strArr2 = A05;
             strArr2[6] = "SjioWZFjItKuhqld4sWZUQTfHHPQcsy5";
             strArr2[4] = "wEt2AMMlWwKWRpacJrxPlGBsPjvVn5Jo";
-            copyOfRange[i10] = (byte) (i11 - 117);
+            copyOfRange[i9] = (byte) (i10 - 117);
         }
         return new String(copyOfRange);
     }
@@ -41,7 +41,7 @@ public final class CZ implements InterfaceC1822gQ {
     /* JADX WARN: Failed to parse debug info
     java.lang.ArrayIndexOutOfBoundsException
      */
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1822gQ
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1842gQ
     public final synchronized void A6b(int i) {
         long A5m = this.A02.A5m() + (i * 1000000 * (A03 ? 1 : 1000));
         if (this.A00 == 0 || this.A00 > A5m) {
@@ -57,10 +57,10 @@ public final class CZ implements InterfaceC1822gQ {
         A03 = false;
     }
 
-    public CZ(InterfaceC1821gP interfaceC1821gP, InterfaceC1827gV interfaceC1827gV) {
-        this.A01 = interfaceC1821gP;
-        this.A02 = interfaceC1827gV;
-        Thread scheduler = new Thread(new RunnableC1823gR(this));
+    public CZ(InterfaceC1841gP interfaceC1841gP, InterfaceC1847gV interfaceC1847gV) {
+        this.A01 = interfaceC1841gP;
+        this.A02 = interfaceC1847gV;
+        Thread scheduler = new Thread(new RunnableC1843gR(this));
         scheduler.start();
     }
 
@@ -107,7 +107,7 @@ public final class CZ implements InterfaceC1822gQ {
         throw null;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1822gQ
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1842gQ
     public final synchronized void A6c() {
         this.A00 = this.A02.A5m();
         String str = A00(0, 21, 61) + this.A00;

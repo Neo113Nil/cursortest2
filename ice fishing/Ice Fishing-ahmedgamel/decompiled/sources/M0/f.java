@@ -1,6 +1,6 @@
 package M0;
 
-import J0.s;
+import J0.r;
 import T0.t;
 import T0.u;
 import android.os.Handler;
@@ -9,43 +9,43 @@ import android.os.Handler;
 public final /* synthetic */ class f implements Runnable {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f1790n;
+    public final /* synthetic */ int f1823n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final /* synthetic */ g f1791u;
+    public final /* synthetic */ g f1824u;
 
     public /* synthetic */ f(g gVar, int i) {
-        this.f1790n = i;
-        this.f1791u = gVar;
+        this.f1823n = i;
+        this.f1824u = gVar;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
-        switch (this.f1790n) {
+        switch (this.f1823n) {
             case 0:
-                g.a(this.f1791u);
+                g.a(this.f1824u);
                 return;
             default:
-                g gVar = this.f1791u;
-                if (gVar.f1804z != 0) {
-                    s.d().a(g.f1792F, "Already started work for " + gVar.f1800v);
+                g gVar = this.f1824u;
+                if (gVar.f1837z != 0) {
+                    r.d().a(g.f1825F, "Already started work for " + gVar.f1833v);
                     return;
                 }
-                gVar.f1804z = 1;
-                s.d().a(g.f1792F, "onAllConstraintsMet for " + gVar.f1800v);
-                if (!gVar.f1801w.f1817w.h(gVar.f1797E, null)) {
+                gVar.f1837z = 1;
+                r.d().a(g.f1825F, "onAllConstraintsMet for " + gVar.f1833v);
+                if (!gVar.f1834w.f1850w.h(gVar.f1830E, null)) {
                     gVar.b();
                     return;
                 }
-                u uVar = gVar.f1801w.f1816v;
-                S0.j jVar = gVar.f1800v;
-                synchronized (uVar.f3074d) {
-                    s.d().a(u.f3070e, "Starting timer for " + jVar);
+                u uVar = gVar.f1834w.f1849v;
+                S0.j jVar = gVar.f1833v;
+                synchronized (uVar.f3157d) {
+                    r.d().a(u.f3153e, "Starting timer for " + jVar);
                     uVar.a(jVar);
                     t tVar = new t(uVar, jVar);
-                    uVar.f3072b.put(jVar, tVar);
-                    uVar.f3073c.put(jVar, gVar);
-                    ((Handler) uVar.f3071a.f37627u).postDelayed(tVar, 600000L);
+                    uVar.f3155b.put(jVar, tVar);
+                    uVar.f3156c.put(jVar, gVar);
+                    ((Handler) uVar.f3154a.f38154u).postDelayed(tVar, 600000L);
                 }
                 return;
         }

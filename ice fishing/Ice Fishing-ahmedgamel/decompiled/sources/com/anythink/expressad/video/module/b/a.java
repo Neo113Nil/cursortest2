@@ -7,7 +7,7 @@ import com.anythink.core.common.e.g;
 import com.anythink.expressad.foundation.d.d;
 import com.anythink.expressad.foundation.g.f.h.b;
 import com.anythink.expressad.videocommon.c.c;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,10 +20,10 @@ import org.json.JSONObject;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static HashMap<String, ArrayList<String>> f21771a = new HashMap<>();
+    public static HashMap<String, ArrayList<String>> f22558a = new HashMap<>();
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f21772b = "VideoViewReport";
+    private static final String f22559b = "VideoViewReport";
 
     public static void a() {
     }
@@ -95,11 +95,11 @@ public final class a {
         if (dVar == null || dVar.M() == null || dVar.M().l() == null) {
             return;
         }
-        String L6 = dVar.L();
-        ArrayList<String> arrayList = f21771a.get(L6);
+        String L2 = dVar.L();
+        ArrayList<String> arrayList = f22558a.get(L2);
         if (arrayList == null) {
             arrayList = new ArrayList<>();
-            f21771a.put(L6, arrayList);
+            f22558a.put(L2, arrayList);
         }
         if (arrayList.contains(dVar.bh())) {
             return;
@@ -109,7 +109,7 @@ public final class a {
     }
 
     public static void a(String str) {
-        f21771a.remove(str);
+        f22558a.remove(str);
     }
 
     public static void a(Context context, d dVar) {
@@ -119,15 +119,15 @@ public final class a {
         com.anythink.expressad.b.a.a(context, dVar, dVar.L(), dVar.M().o(), false);
     }
 
-    public static void a(Context context, d dVar, int i, int i6) {
+    public static void a(Context context, d dVar, int i, int i4) {
         try {
             String[] p9 = dVar.M().p();
             if (dVar.M() == null || p9 == null) {
                 return;
             }
             String[] strArr = new String[p9.length];
-            for (int i9 = 0; i9 < p9.length; i9++) {
-                String str = p9[i9];
+            for (int i6 = 0; i6 < p9.length; i6++) {
+                String str = p9[i6];
                 JSONObject jSONObject = new JSONObject();
                 jSONObject.put("endscreen_type", i);
                 String jSONObject2 = jSONObject.toString();
@@ -137,25 +137,25 @@ public final class a {
                 if (!TextUtils.isEmpty(jSONObject2)) {
                     str = str + "&value=" + URLEncoder.encode(jSONObject2);
                 }
-                strArr[i9] = dVar.n() == 1 ? str + "&to=1&cbt=" + dVar.aB() + "&tmorl=" + i6 : str + "&to=0&cbt=" + dVar.aB() + "&tmorl=" + i6;
+                strArr[i6] = dVar.n() == 1 ? str + "&to=1&cbt=" + dVar.aB() + "&tmorl=" + i4 : str + "&to=0&cbt=" + dVar.aB() + "&tmorl=" + i4;
             }
             com.anythink.expressad.b.a.a(context, dVar, dVar.L(), strArr, true);
         } catch (Throwable unused) {
         }
     }
 
-    public static void a(Context context, d dVar, int i, int i6, int i9) {
+    public static void a(Context context, d dVar, int i, int i4, int i6) {
         String str;
-        if (i6 == 0 || context == null || dVar == null) {
+        if (i4 == 0 || context == null || dVar == null) {
             return;
         }
         try {
-            List<Map<Integer, String>> i10 = dVar.M().i();
-            int i11 = ((i + 1) * 100) / i6;
-            if (i10 != null) {
-                int i12 = 0;
-                while (i12 < i10.size()) {
-                    Map<Integer, String> map = i10.get(i12);
+            List<Map<Integer, String>> i9 = dVar.M().i();
+            int i10 = ((i + 1) * 100) / i4;
+            if (i9 != null) {
+                int i11 = 0;
+                while (i11 < i9.size()) {
+                    Map<Integer, String> map = i9.get(i11);
                     if (map != null && map.size() > 0) {
                         Iterator<Map.Entry<Integer, String>> it = map.entrySet().iterator();
                         while (it.hasNext()) {
@@ -163,19 +163,19 @@ public final class a {
                             int intValue = next.getKey().intValue();
                             String value = next.getValue();
                             if (dVar.n() == 1) {
-                                str = value + "&to=1&cbt=" + dVar.aB() + "&tmorl=" + i9;
+                                str = value + "&to=1&cbt=" + dVar.aB() + "&tmorl=" + i6;
                             } else {
-                                str = value + "&to=0&cbt=" + dVar.aB() + "&tmorl=" + i9;
+                                str = value + "&to=0&cbt=" + dVar.aB() + "&tmorl=" + i6;
                             }
-                            if (intValue <= i11 && !TextUtils.isEmpty(str)) {
+                            if (intValue <= i10 && !TextUtils.isEmpty(str)) {
                                 com.anythink.expressad.b.a.a(context, dVar, dVar.L(), new String[]{str}, true);
                                 it.remove();
-                                i10.remove(i12);
-                                i12--;
+                                i9.remove(i11);
+                                i11--;
                             }
                         }
                     }
-                    i12++;
+                    i11++;
                 }
             }
         } catch (Throwable unused) {
@@ -237,7 +237,7 @@ public final class a {
             sb.append(cVar.b());
             bVar.a("reward_amount", sb.toString());
             bVar.a("unit_id", str);
-            bVar.a(g.a.f12963c, dVar.ac());
+            bVar.a(g.a.f13749c, dVar.ac());
             if (!TextUtils.isEmpty(str3)) {
                 bVar.a("extra", str3);
             }
@@ -268,7 +268,7 @@ public final class a {
             if (!str.endsWith("?") && !str.endsWith("&")) {
                 str = str.concat(str.contains("?") ? "&" : "?");
             }
-            return AbstractC4404f.f(str, trim);
+            return Wv.g(str, trim);
         }
         return "";
     }

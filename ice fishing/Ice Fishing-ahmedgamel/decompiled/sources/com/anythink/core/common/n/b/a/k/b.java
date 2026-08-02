@@ -1,6 +1,6 @@
 package com.anythink.core.common.n.b.a.k;
 
-import D.y;
+import D.x;
 import com.anythink.core.common.n.c.c;
 import com.anythink.core.common.n.c.f;
 
@@ -8,68 +8,68 @@ import com.anythink.core.common.n.c.f;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    static final String f15416a = "258EAFA5-E914-47DA-95CA-C5AB0DC85B11";
+    static final String f16203a = "258EAFA5-E914-47DA-95CA-C5AB0DC85B11";
 
     /* renamed from: b, reason: collision with root package name */
-    static final int f15417b = 128;
+    static final int f16204b = 128;
 
     /* renamed from: c, reason: collision with root package name */
-    static final int f15418c = 64;
+    static final int f16205c = 64;
 
     /* renamed from: d, reason: collision with root package name */
-    static final int f15419d = 32;
+    static final int f16206d = 32;
 
     /* renamed from: e, reason: collision with root package name */
-    static final int f15420e = 16;
+    static final int f16207e = 16;
 
     /* renamed from: f, reason: collision with root package name */
-    static final int f15421f = 15;
+    static final int f16208f = 15;
 
     /* renamed from: g, reason: collision with root package name */
-    static final int f15422g = 8;
+    static final int f16209g = 8;
 
     /* renamed from: h, reason: collision with root package name */
-    static final int f15423h = 128;
+    static final int f16210h = 128;
     static final int i = 127;
 
     /* renamed from: j, reason: collision with root package name */
-    static final int f15424j = 0;
+    static final int f16211j = 0;
 
     /* renamed from: k, reason: collision with root package name */
-    static final int f15425k = 1;
+    static final int f16212k = 1;
 
     /* renamed from: l, reason: collision with root package name */
-    static final int f15426l = 2;
+    static final int f16213l = 2;
 
     /* renamed from: m, reason: collision with root package name */
-    static final int f15427m = 8;
+    static final int f16214m = 8;
 
     /* renamed from: n, reason: collision with root package name */
-    static final int f15428n = 9;
+    static final int f16215n = 9;
 
     /* renamed from: o, reason: collision with root package name */
-    static final int f15429o = 10;
+    static final int f16216o = 10;
 
     /* renamed from: p, reason: collision with root package name */
-    static final long f15430p = 125;
+    static final long f16217p = 125;
 
     /* renamed from: q, reason: collision with root package name */
-    static final long f15431q = 123;
+    static final long f16218q = 123;
 
     /* renamed from: r, reason: collision with root package name */
-    static final int f15432r = 126;
+    static final int f16219r = 126;
 
     /* renamed from: s, reason: collision with root package name */
-    static final long f15433s = 65535;
+    static final long f16220s = 65535;
 
     /* renamed from: t, reason: collision with root package name */
-    static final int f15434t = 127;
+    static final int f16221t = 127;
 
     /* renamed from: u, reason: collision with root package name */
-    static final int f15435u = 1001;
+    static final int f16222u = 1001;
 
     /* renamed from: v, reason: collision with root package name */
-    static final int f15436v = 1005;
+    static final int f16223v = 1005;
 
     private b() {
         throw new AssertionError("No instances.");
@@ -77,38 +77,38 @@ public final class b {
 
     public static void a(c.a aVar, byte[] bArr) {
         int length = bArr.length;
-        int i6 = 0;
+        int i4 = 0;
         do {
-            byte[] bArr2 = aVar.f15853d;
-            int i9 = aVar.f15854e;
-            int i10 = aVar.f15855f;
-            while (i9 < i10) {
-                int i11 = i6 % length;
-                bArr2[i9] = (byte) (bArr2[i9] ^ bArr[i11]);
-                i9++;
-                i6 = i11 + 1;
+            byte[] bArr2 = aVar.f16640d;
+            int i6 = aVar.f16641e;
+            int i9 = aVar.f16642f;
+            while (i6 < i9) {
+                int i10 = i4 % length;
+                bArr2[i6] = (byte) (bArr2[i6] ^ bArr[i10]);
+                i6++;
+                i4 = i10 + 1;
             }
         } while (aVar.a() != -1);
     }
 
-    public static void b(int i6) {
-        String a9 = a(i6);
+    public static void b(int i4) {
+        String a9 = a(i4);
         if (a9 != null) {
             throw new IllegalArgumentException(a9);
         }
     }
 
-    public static String a(int i6) {
-        if (i6 < 1000 || i6 >= 5000) {
-            return "Code must be in range [1000,5000): ".concat(String.valueOf(i6));
+    public static String a(int i4) {
+        if (i4 < 1000 || i4 >= 5000) {
+            return "Code must be in range [1000,5000): ".concat(String.valueOf(i4));
         }
-        if ((i6 < 1004 || i6 > 1006) && (i6 < 1012 || i6 > 2999)) {
+        if ((i4 < 1004 || i4 > 1006) && (i4 < 1012 || i4 > 2999)) {
             return null;
         }
-        return y.k(i6, "Code ", " is reserved and may not be used.");
+        return x.j(i4, "Code ", " is reserved and may not be used.");
     }
 
     private static String a(String str) {
-        return f.a(str + f15416a).d().b();
+        return f.a(str + f16203a).d().b();
     }
 }

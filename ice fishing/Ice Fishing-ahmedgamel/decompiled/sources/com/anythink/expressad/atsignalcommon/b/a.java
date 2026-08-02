@@ -9,7 +9,7 @@ import android.webkit.WebView;
 public class a implements com.anythink.expressad.atsignalcommon.windvane.c {
 
     /* renamed from: a, reason: collision with root package name */
-    protected static final String f17944a = "RVWindVaneWebView";
+    protected static final String f18731a = "RVWindVaneWebView";
 
     @Override // com.anythink.expressad.atsignalcommon.windvane.c
     public void a(Object obj) {
@@ -57,7 +57,7 @@ public class a implements com.anythink.expressad.atsignalcommon.windvane.c {
     }
 
     @Override // com.anythink.expressad.atsignalcommon.windvane.c
-    public void a(String str, int i, int i6) {
+    public void a(String str, int i, int i4) {
     }
 
     @Override // com.anythink.expressad.atsignalcommon.windvane.c

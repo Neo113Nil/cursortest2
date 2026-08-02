@@ -3,9 +3,9 @@ package com.onesignal.common.events;
 import B7.h;
 import I7.l;
 import I7.p;
-import S7.AbstractC0406y;
+import S7.AbstractC0410y;
 import S7.F;
-import S7.InterfaceC0404w;
+import S7.InterfaceC0408w;
 import X7.o;
 import Z7.e;
 import java.util.ArrayList;
@@ -13,8 +13,8 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import u7.v;
-import v7.AbstractC5129j;
-import z7.InterfaceC5267d;
+import v7.AbstractC5119j;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public class b implements d {
@@ -25,39 +25,39 @@ public class b implements d {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public a(l lVar, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public a(l lVar, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$callback = lVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return b.this.new a(this.$callback, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return b.this.new a(this.$callback, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            List L6;
-            A7.a aVar = A7.a.f58n;
+            List J;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             List list = b.this.subscribers;
             b bVar = b.this;
             synchronized (list) {
-                L6 = AbstractC5129j.L(bVar.subscribers);
+                J = AbstractC5119j.J(bVar.subscribers);
             }
-            Iterator it = L6.iterator();
+            Iterator it = J.iterator();
             while (it.hasNext()) {
                 this.$callback.invoke(it.next());
             }
-            return v.f41353a;
+            return v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((a) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((a) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -68,8 +68,8 @@ public class b implements d {
         int label;
         /* synthetic */ Object result;
 
-        public C0177b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public C0177b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -86,41 +86,41 @@ public class b implements d {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public c(p pVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public c(p pVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$callback = pVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return b.this.new c(this.$callback, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return b.this.new c(this.$callback, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((c) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((c) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            List L6;
+            List J;
             Iterator it;
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 List list = b.this.subscribers;
                 b bVar = b.this;
                 synchronized (list) {
-                    L6 = AbstractC5129j.L(bVar.subscribers);
+                    J = AbstractC5119j.J(bVar.subscribers);
                 }
-                it = L6.iterator();
+                it = J.iterator();
             } else {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 it = (Iterator) this.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
             while (it.hasNext()) {
                 Object next = it.next();
@@ -131,7 +131,7 @@ public class b implements d {
                     return aVar;
                 }
             }
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
@@ -142,12 +142,12 @@ public class b implements d {
     }
 
     public final void fire(l callback) {
-        List L6;
+        List J;
         kotlin.jvm.internal.h.e(callback, "callback");
         synchronized (this.subscribers) {
-            L6 = AbstractC5129j.L(this.subscribers);
+            J = AbstractC5119j.J(this.subscribers);
         }
-        Iterator it = L6.iterator();
+        Iterator it = J.iterator();
         while (it.hasNext()) {
             callback.invoke(it.next());
         }
@@ -187,34 +187,34 @@ public class b implements d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object suspendingFire(p pVar, InterfaceC5267d interfaceC5267d) {
+    public final Object suspendingFire(p pVar, InterfaceC5240d interfaceC5240d) {
         C0177b c0177b;
         int i;
-        List L6;
+        List J;
         p pVar2;
         Iterator it;
-        if (interfaceC5267d instanceof C0177b) {
-            c0177b = (C0177b) interfaceC5267d;
-            int i6 = c0177b.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                c0177b.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof C0177b) {
+            c0177b = (C0177b) interfaceC5240d;
+            int i4 = c0177b.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                c0177b.label = i4 - Integer.MIN_VALUE;
                 Object obj = c0177b.result;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 i = c0177b.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     synchronized (this.subscribers) {
-                        L6 = AbstractC5129j.L(this.subscribers);
+                        J = AbstractC5119j.J(this.subscribers);
                     }
                     pVar2 = pVar;
-                    it = L6.iterator();
+                    it = J.iterator();
                 } else {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     it = (Iterator) c0177b.L$1;
                     p pVar3 = (p) c0177b.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     pVar2 = pVar3;
                 }
                 while (it.hasNext()) {
@@ -226,24 +226,24 @@ public class b implements d {
                         return aVar;
                     }
                 }
-                return v.f41353a;
+                return v.f41073a;
             }
         }
-        c0177b = new C0177b(interfaceC5267d);
+        c0177b = new C0177b(interfaceC5240d);
         Object obj2 = c0177b.result;
-        A7.a aVar2 = A7.a.f58n;
+        A7.a aVar2 = A7.a.f215n;
         i = c0177b.label;
         if (i != 0) {
         }
         while (it.hasNext()) {
         }
-        return v.f41353a;
+        return v.f41073a;
     }
 
-    public final Object suspendingFireOnMain(p pVar, InterfaceC5267d interfaceC5267d) {
-        e eVar = F.f2915a;
-        Object y7 = AbstractC0406y.y(o.f3856a, new c(pVar, null), interfaceC5267d);
-        return y7 == A7.a.f58n ? y7 : v.f41353a;
+    public final Object suspendingFireOnMain(p pVar, InterfaceC5240d interfaceC5240d) {
+        e eVar = F.f2998a;
+        Object y7 = AbstractC0410y.y(o.f3811a, new c(pVar, null), interfaceC5240d);
+        return y7 == A7.a.f215n ? y7 : v.f41073a;
     }
 
     @Override // com.onesignal.common.events.d

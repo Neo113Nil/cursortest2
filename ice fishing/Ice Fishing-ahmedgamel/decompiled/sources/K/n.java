@@ -8,7 +8,7 @@ import android.util.Log;
 public abstract class n {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final /* synthetic */ int f1485a = 0;
+    public static final /* synthetic */ int f1594a = 0;
 
     static {
         if (Build.VERSION.SDK_INT < 29) {

@@ -14,26 +14,26 @@ public final class Cq {
     public final long A02;
     public final long A03;
     public final Uri A04;
-    public final C06605i A05;
+    public final C06805i A05;
     public final Map<String, List<String>> A06;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Cq(long j6, C06605i c06605i, long j9) {
-        this(j6, c06605i, r4, Collections.emptyMap(), j9, 0L, 0L);
+    public Cq(long j6, C06805i c06805i, long j9) {
+        this(j6, c06805i, r4, Collections.emptyMap(), j9, 0L, 0L);
         Uri uri;
-        if (c06605i != null) {
-            uri = c06605i.A06;
+        if (c06805i != null) {
+            uri = c06805i.A06;
         } else {
             uri = null;
         }
     }
 
-    public Cq(long j6, C06605i c06605i, Uri uri, Map<String, List<String>> responseHeaders, long j9, long j10, long j11) {
+    public Cq(long j6, C06805i c06805i, Uri uri, Map<String, List<String>> responseHeaders, long j9, long j10, long j11) {
         this.A03 = j6;
-        this.A05 = c06605i;
+        this.A05 = c06805i;
         this.A04 = uri;
         this.A06 = responseHeaders;
         this.A01 = j9;

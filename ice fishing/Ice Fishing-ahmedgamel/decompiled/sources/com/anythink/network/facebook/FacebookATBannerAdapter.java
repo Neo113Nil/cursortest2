@@ -25,19 +25,19 @@ import java.util.Map;
 public class FacebookATBannerAdapter extends CustomBannerAdapter {
 
     /* renamed from: a, reason: collision with root package name */
-    AdView f23056a;
+    AdView f23843a;
 
     /* renamed from: c, reason: collision with root package name */
-    String f23058c;
+    String f23845c;
 
     /* renamed from: d, reason: collision with root package name */
-    Map<String, Object> f23059d;
+    Map<String, Object> f23846d;
 
     /* renamed from: e, reason: collision with root package name */
-    private String f23060e = "";
+    private String f23847e = "";
 
     /* renamed from: b, reason: collision with root package name */
-    String f23057b = "";
+    String f23844b = "";
 
     /* renamed from: com.anythink.network.facebook.FacebookATBannerAdapter$1, reason: invalid class name */
     public class AnonymousClass1 implements AdListener {
@@ -55,7 +55,7 @@ public class FacebookATBannerAdapter extends CustomBannerAdapter {
         @Override // com.facebook.ads.AdListener
         public final void onAdLoaded(Ad ad) {
             FacebookATBannerAdapter facebookATBannerAdapter = FacebookATBannerAdapter.this;
-            facebookATBannerAdapter.f23056a = (AdView) ad;
+            facebookATBannerAdapter.f23843a = (AdView) ad;
             if (((ATBaseAdInternalAdapter) facebookATBannerAdapter).mLoadListener != null) {
                 ((ATBaseAdInternalAdapter) FacebookATBannerAdapter.this).mLoadListener.onAdCacheLoaded(new BaseAd[0]);
             }
@@ -82,16 +82,16 @@ public class FacebookATBannerAdapter extends CustomBannerAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
-        AdView adView = this.f23056a;
+        AdView adView = this.f23843a;
         if (adView != null) {
             adView.destroy();
-            this.f23056a = null;
+            this.f23843a = null;
         }
     }
 
     @Override // com.anythink.banner.unitgroup.api.CustomBannerAdapter
     public View getBannerView() {
-        return this.f23056a;
+        return this.f23843a;
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter
@@ -102,7 +102,7 @@ public class FacebookATBannerAdapter extends CustomBannerAdapter {
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public void getBidRequestInfo(Context context, Map<String, Object> map, Map<String, Object> map2, ATBidRequestInfoListener aTBidRequestInfoListener) {
         try {
-            this.f23060e = (String) map.get("unit_id");
+            this.f23847e = (String) map.get("unit_id");
         } catch (Throwable th) {
             th.printStackTrace();
         }
@@ -123,7 +123,7 @@ public class FacebookATBannerAdapter extends CustomBannerAdapter {
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public Map<String, Object> getNetworkInfoMap() {
-        return this.f23059d;
+        return this.f23846d;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -133,7 +133,7 @@ public class FacebookATBannerAdapter extends CustomBannerAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        return this.f23060e;
+        return this.f23847e;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -153,46 +153,46 @@ public class FacebookATBannerAdapter extends CustomBannerAdapter {
             }
             return;
         }
-        this.f23060e = (String) map.get("unit_id");
+        this.f23847e = (String) map.get("unit_id");
         FacebookATInitManager.getInstance().initSDK(context.getApplicationContext(), map);
         if (map.containsKey("size")) {
-            this.f23057b = map.get("size").toString();
+            this.f23844b = map.get("size").toString();
         }
         if (map.containsKey("payload")) {
-            this.f23058c = map.get("payload").toString();
+            this.f23845c = map.get("payload").toString();
             HashMap hashMap = new HashMap();
-            this.f23059d = hashMap;
+            this.f23846d = hashMap;
             FacebookATInitManager.getInstance();
-            hashMap.put(AdSDKNotificationListener.ENCRYPTED_CPM_KEY, FacebookATInitManager.a(this.f23058c));
+            hashMap.put(AdSDKNotificationListener.ENCRYPTED_CPM_KEY, FacebookATInitManager.a(this.f23845c));
         }
         AnonymousClass1 anonymousClass1 = new AnonymousClass1();
         applicationContext = context.getApplicationContext();
-        String str = this.f23057b;
+        String str = this.f23844b;
         str.getClass();
         switch (str) {
             case "300x250":
             case "320x250":
-                adView = new AdView(applicationContext, this.f23060e, AdSize.RECTANGLE_HEIGHT_250);
+                adView = new AdView(applicationContext, this.f23847e, AdSize.RECTANGLE_HEIGHT_250);
                 break;
             case "320x50":
-                adView = new AdView(applicationContext, this.f23060e, AdSize.BANNER_HEIGHT_50);
+                adView = new AdView(applicationContext, this.f23847e, AdSize.BANNER_HEIGHT_50);
                 break;
             case "320x90":
-                adView = new AdView(applicationContext, this.f23060e, AdSize.BANNER_HEIGHT_90);
+                adView = new AdView(applicationContext, this.f23847e, AdSize.BANNER_HEIGHT_90);
                 break;
             default:
-                adView = new AdView(applicationContext, this.f23060e, AdSize.BANNER_HEIGHT_50);
+                adView = new AdView(applicationContext, this.f23847e, AdSize.BANNER_HEIGHT_50);
                 break;
         }
-        if (TextUtils.isEmpty(this.f23058c)) {
+        if (TextUtils.isEmpty(this.f23845c)) {
             adView.loadAd(adView.buildLoadAdConfig().withAdListener(anonymousClass1).build());
         } else {
-            adView.loadAd(adView.buildLoadAdConfig().withBid(this.f23058c).withAdListener(anonymousClass1).build());
+            adView.loadAd(adView.buildLoadAdConfig().withBid(this.f23845c).withAdListener(anonymousClass1).build());
         }
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
-    public boolean setUserDataConsent(Context context, boolean z3, boolean z6) {
+    public boolean setUserDataConsent(Context context, boolean z6, boolean z9) {
         return false;
     }
 
@@ -200,38 +200,38 @@ public class FacebookATBannerAdapter extends CustomBannerAdapter {
         Context applicationContext;
         AdView adView;
         if (map.containsKey("size")) {
-            this.f23057b = map.get("size").toString();
+            this.f23844b = map.get("size").toString();
         }
         if (map.containsKey("payload")) {
-            this.f23058c = map.get("payload").toString();
+            this.f23845c = map.get("payload").toString();
             HashMap hashMap = new HashMap();
-            this.f23059d = hashMap;
+            this.f23846d = hashMap;
             FacebookATInitManager.getInstance();
-            hashMap.put(AdSDKNotificationListener.ENCRYPTED_CPM_KEY, FacebookATInitManager.a(this.f23058c));
+            hashMap.put(AdSDKNotificationListener.ENCRYPTED_CPM_KEY, FacebookATInitManager.a(this.f23845c));
         }
         AnonymousClass1 anonymousClass1 = new AnonymousClass1();
         applicationContext = context.getApplicationContext();
-        String str = this.f23057b;
+        String str = this.f23844b;
         str.getClass();
         switch (str) {
             case "300x250":
             case "320x250":
-                adView = new AdView(applicationContext, this.f23060e, AdSize.RECTANGLE_HEIGHT_250);
+                adView = new AdView(applicationContext, this.f23847e, AdSize.RECTANGLE_HEIGHT_250);
                 break;
             case "320x50":
-                adView = new AdView(applicationContext, this.f23060e, AdSize.BANNER_HEIGHT_50);
+                adView = new AdView(applicationContext, this.f23847e, AdSize.BANNER_HEIGHT_50);
                 break;
             case "320x90":
-                adView = new AdView(applicationContext, this.f23060e, AdSize.BANNER_HEIGHT_90);
+                adView = new AdView(applicationContext, this.f23847e, AdSize.BANNER_HEIGHT_90);
                 break;
             default:
-                adView = new AdView(applicationContext, this.f23060e, AdSize.BANNER_HEIGHT_50);
+                adView = new AdView(applicationContext, this.f23847e, AdSize.BANNER_HEIGHT_50);
                 break;
         }
-        if (TextUtils.isEmpty(this.f23058c)) {
+        if (TextUtils.isEmpty(this.f23845c)) {
             adView.loadAd(adView.buildLoadAdConfig().withAdListener(anonymousClass1).build());
         } else {
-            adView.loadAd(adView.buildLoadAdConfig().withBid(this.f23058c).withAdListener(anonymousClass1).build());
+            adView.loadAd(adView.buildLoadAdConfig().withBid(this.f23845c).withAdListener(anonymousClass1).build());
         }
     }
 }

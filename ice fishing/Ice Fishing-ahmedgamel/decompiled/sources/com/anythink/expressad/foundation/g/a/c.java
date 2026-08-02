@@ -10,20 +10,20 @@ import java.util.Map;
 public final class c implements e<String, Bitmap> {
 
     /* renamed from: a, reason: collision with root package name */
-    private final LinkedHashMap<String, Bitmap> f19113a;
+    private final LinkedHashMap<String, Bitmap> f19900a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final int f19114b;
+    private final int f19901b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f19115c;
+    private int f19902c;
 
     public c(int i) {
         if (i <= 0) {
             throw new IllegalArgumentException("maxSize <= 0");
         }
-        this.f19114b = i;
-        this.f19113a = new LinkedHashMap<>(0, 0.75f, true);
+        this.f19901b = i;
+        this.f19900a = new LinkedHashMap<>(0, 0.75f, true);
     }
 
     @Override // com.anythink.expressad.foundation.g.a.e
@@ -34,9 +34,9 @@ public final class c implements e<String, Bitmap> {
         }
         synchronized (this) {
             try {
-                Bitmap remove = this.f19113a.remove(str2);
+                Bitmap remove = this.f19900a.remove(str2);
                 if (remove != null) {
-                    this.f19115c -= a(remove);
+                    this.f19902c -= a(remove);
                 }
             } catch (Throwable th) {
                 throw th;
@@ -45,7 +45,7 @@ public final class c implements e<String, Bitmap> {
     }
 
     public final synchronized String toString() {
-        return String.format("LruCache[maxSize=%d]", Integer.valueOf(this.f19114b));
+        return String.format("LruCache[maxSize=%d]", Integer.valueOf(this.f19901b));
     }
 
     /* renamed from: b, reason: avoid collision after fix types in other method */
@@ -55,9 +55,9 @@ public final class c implements e<String, Bitmap> {
         }
         synchronized (this) {
             try {
-                Bitmap remove = this.f19113a.remove(str);
+                Bitmap remove = this.f19900a.remove(str);
                 if (remove != null) {
-                    this.f19115c -= a(remove);
+                    this.f19902c -= a(remove);
                 }
             } catch (Throwable th) {
                 throw th;
@@ -76,7 +76,7 @@ public final class c implements e<String, Bitmap> {
     public Bitmap b(String str) {
         if (str != null) {
             synchronized (this) {
-                Bitmap bitmap = this.f19113a.get(str);
+                Bitmap bitmap = this.f19900a.get(str);
                 if (bitmap == null || bitmap.isRecycled()) {
                     return null;
                 }
@@ -92,16 +92,16 @@ public final class c implements e<String, Bitmap> {
         if (str != null && bitmap != null) {
             synchronized (this) {
                 try {
-                    this.f19115c += a(bitmap);
-                    Bitmap put = this.f19113a.put(str, bitmap);
+                    this.f19902c += a(bitmap);
+                    Bitmap put = this.f19900a.put(str, bitmap);
                     if (put != null) {
-                        this.f19115c -= a(put);
+                        this.f19902c -= a(put);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
-            a(this.f19114b);
+            a(this.f19901b);
             return true;
         }
         throw new NullPointerException("key == null || value == null");
@@ -118,21 +118,21 @@ public final class c implements e<String, Bitmap> {
         while (true) {
             synchronized (this) {
                 try {
-                    if (this.f19115c < 0 || (this.f19113a.isEmpty() && this.f19115c != 0)) {
+                    if (this.f19902c < 0 || (this.f19900a.isEmpty() && this.f19902c != 0)) {
                         break;
                     }
-                    if (this.f19115c <= i || this.f19113a.isEmpty()) {
+                    if (this.f19902c <= i || this.f19900a.isEmpty()) {
                         break;
                     }
-                    Map.Entry<String, Bitmap> next = this.f19113a.entrySet().iterator().next();
+                    Map.Entry<String, Bitmap> next = this.f19900a.entrySet().iterator().next();
                     if (next == null) {
                         return;
                     }
                     String key = next.getKey();
                     try {
                         int a9 = a(next.getValue());
-                        this.f19113a.remove(key).recycle();
-                        this.f19115c -= a9;
+                        this.f19900a.remove(key).recycle();
+                        this.f19902c -= a9;
                     } catch (Throwable unused) {
                     }
                 } catch (Throwable th) {
@@ -146,7 +146,7 @@ public final class c implements e<String, Bitmap> {
     public final Collection<String> a() {
         HashSet hashSet;
         synchronized (this) {
-            hashSet = new HashSet(this.f19113a.keySet());
+            hashSet = new HashSet(this.f19900a.keySet());
         }
         return hashSet;
     }

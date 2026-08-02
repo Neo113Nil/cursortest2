@@ -22,7 +22,7 @@ public enum a {
     /* JADX INFO: Fake field, exist only in values array */
     DATA_TOO_BIG(108, "Number of pixels bigger than width * height"),
     /* JADX INFO: Fake field, exist only in values array */
-    NOT_ENOUGH_MEM(com.anythink.expressad.video.module.a.a.f21756z, "Failed to allocate required memory"),
+    NOT_ENOUGH_MEM(com.anythink.expressad.video.module.a.a.f22543z, "Failed to allocate required memory"),
     /* JADX INFO: Fake field, exist only in values array */
     CLOSE_FAILED(110, "Failed to close given input"),
     /* JADX INFO: Fake field, exist only in values array */
@@ -47,13 +47,13 @@ public enum a {
 
 
     /* renamed from: n, reason: collision with root package name */
-    public final String f226n;
+    public final String f292n;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f227u;
+    public int f293u;
 
     a(int i, String str) {
-        this.f227u = i;
-        this.f226n = str;
+        this.f293u = i;
+        this.f292n = str;
     }
 }

@@ -8,21 +8,21 @@ import com.anythink.basead.exoplayer.m;
 public final class j extends a {
 
     /* renamed from: k, reason: collision with root package name */
-    private final int f7581k;
+    private final int f8367k;
 
     /* renamed from: l, reason: collision with root package name */
-    private final m f7582l;
+    private final m f8368l;
 
     /* renamed from: m, reason: collision with root package name */
-    private volatile int f7583m;
+    private volatile int f8369m;
 
     /* renamed from: n, reason: collision with root package name */
-    private volatile boolean f7584n;
+    private volatile boolean f8370n;
 
-    private j(com.anythink.basead.exoplayer.j.h hVar, k kVar, m mVar, int i, Object obj, long j6, long j9, long j10, int i6, m mVar2) {
-        super(hVar, kVar, mVar, i, obj, j6, j9, com.anythink.basead.exoplayer.b.f6382b, j10);
-        this.f7581k = i6;
-        this.f7582l = mVar2;
+    private j(com.anythink.basead.exoplayer.j.h hVar, k kVar, m mVar, int i, Object obj, long j6, long j9, long j10, int i4, m mVar2) {
+        super(hVar, kVar, mVar, i, obj, j6, j9, com.anythink.basead.exoplayer.b.f7168b, j10);
+        this.f8367k = i4;
+        this.f8368l = mVar2;
     }
 
     @Override // com.anythink.basead.exoplayer.j.t.c
@@ -32,21 +32,21 @@ public final class j extends a {
     @Override // com.anythink.basead.exoplayer.j.t.c
     public final void b() {
         try {
-            long a9 = this.i.a(this.f7526b.a(this.f7583m));
+            long a9 = this.i.a(this.f8312b.a(this.f8369m));
             if (a9 != -1) {
-                a9 += this.f7583m;
+                a9 += this.f8369m;
             }
-            com.anythink.basead.exoplayer.e.b bVar = new com.anythink.basead.exoplayer.e.b(this.i, this.f7583m, a9);
+            com.anythink.basead.exoplayer.e.b bVar = new com.anythink.basead.exoplayer.e.b(this.i, this.f8369m, a9);
             b c9 = c();
             c9.a(0L);
-            com.anythink.basead.exoplayer.e.m a10 = c9.a(this.f7581k);
-            a10.a(this.f7582l);
+            com.anythink.basead.exoplayer.e.m a10 = c9.a(this.f8367k);
+            a10.a(this.f8368l);
             for (int i = 0; i != -1; i = a10.a(bVar, Integer.MAX_VALUE, true)) {
-                this.f7583m += i;
+                this.f8369m += i;
             }
-            a10.a(this.f7531g, 1, this.f7583m, 0, null);
+            a10.a(this.f8317g, 1, this.f8369m, 0, null);
             af.a(this.i);
-            this.f7584n = true;
+            this.f8370n = true;
         } catch (Throwable th) {
             af.a(this.i);
             throw th;
@@ -55,11 +55,11 @@ public final class j extends a {
 
     @Override // com.anythink.basead.exoplayer.h.b.c
     public final long d() {
-        return this.f7583m;
+        return this.f8369m;
     }
 
     @Override // com.anythink.basead.exoplayer.h.b.i
     public final boolean f() {
-        return this.f7584n;
+        return this.f8370n;
     }
 }

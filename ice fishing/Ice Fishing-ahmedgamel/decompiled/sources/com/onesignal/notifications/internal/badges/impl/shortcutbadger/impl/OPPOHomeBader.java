@@ -8,11 +8,11 @@ import android.net.Uri;
 import android.os.Bundle;
 import java.util.Collections;
 import java.util.List;
-import n5.InterfaceC4758a;
-import o5.C4800a;
+import n5.InterfaceC4774a;
+import o5.C4804a;
 
 /* loaded from: classes2.dex */
-public class OPPOHomeBader implements InterfaceC4758a {
+public class OPPOHomeBader implements InterfaceC4774a {
     private static final String INTENT_ACTION = "com.oppo.unsettledevent";
     private static final String INTENT_EXTRA_BADGEUPGRADE_COUNT = "app_badge_count";
     private static final String INTENT_EXTRA_BADGE_COUNT = "number";
@@ -29,7 +29,7 @@ public class OPPOHomeBader implements InterfaceC4758a {
         intent.putExtra(INTENT_EXTRA_PACKAGENAME, componentName.getPackageName());
         intent.putExtra(INTENT_EXTRA_BADGE_COUNT, i);
         intent.putExtra(INTENT_EXTRA_BADGE_UPGRADENUMBER, i);
-        C4800a.sendIntentExplicitly(context, intent);
+        C4804a.sendIntentExplicitly(context, intent);
     }
 
     @TargetApi(11)
@@ -39,7 +39,7 @@ public class OPPOHomeBader implements InterfaceC4758a {
         context.getContentResolver().call(Uri.parse(PROVIDER_CONTENT_URI), "setAppBadgeCount", (String) null, bundle);
     }
 
-    @Override // n5.InterfaceC4758a
+    @Override // n5.InterfaceC4774a
     public void executeBadge(Context context, ComponentName componentName, int i) {
         if (this.mCurrentTotalCount == i) {
             return;
@@ -48,7 +48,7 @@ public class OPPOHomeBader implements InterfaceC4758a {
         executeBadgeByContentProvider(context, i);
     }
 
-    @Override // n5.InterfaceC4758a
+    @Override // n5.InterfaceC4774a
     public List<String> getSupportLaunchers() {
         return Collections.singletonList("com.oppo.launcher");
     }

@@ -11,24 +11,24 @@ import kotlin.jvm.internal.h;
 public final class b implements e {
 
     /* renamed from: n, reason: collision with root package name */
-    public final R6.b f1225n;
+    public final R6.b f1250n;
 
     public b(R6.b bVar) {
-        this.f1225n = bVar;
+        this.f1250n = bVar;
     }
 
     @Override // e7.e
     public final c f(Collection logs) {
         h.e(logs, "logs");
         Log.d("OneSignalOtel", "OTEL export request sent to backend. count=" + logs.size());
-        c f3 = this.f1225n.f(logs);
-        f3.f(new n(1, f3, this));
-        return f3;
+        c f2 = this.f1250n.f(logs);
+        f2.f(new n(1, f2, this));
+        return f2;
     }
 
     @Override // e7.e
     public final c shutdown() {
-        c shutdown = this.f1225n.shutdown();
+        c shutdown = this.f1250n.shutdown();
         h.d(shutdown, "shutdown(...)");
         return shutdown;
     }

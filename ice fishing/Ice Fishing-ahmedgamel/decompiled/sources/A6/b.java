@@ -13,20 +13,20 @@ import java.util.concurrent.TimeUnit;
 public final class b implements Closeable {
 
     /* renamed from: n, reason: collision with root package name */
-    public final File f37n;
+    public final File f194n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final E6.a f38u;
+    public final E6.a f195u;
 
     /* renamed from: v, reason: collision with root package name */
-    public B6.a f39v;
+    public B6.a f196v;
 
     /* renamed from: w, reason: collision with root package name */
-    public B6.b f40w;
+    public B6.b f197w;
 
     public b(File file, E6.a aVar) {
-        this.f37n = file;
-        this.f38u = aVar;
+        this.f194n = file;
+        this.f195u = aVar;
     }
 
     public final File b() {
@@ -43,21 +43,21 @@ public final class b implements Closeable {
         long nanos = timeUnit2.toNanos(epochSecond);
         nano = instant.getNano();
         long millis = timeUnit.toMillis(nanos + nano);
-        File[] listFiles = this.f37n.listFiles();
+        File[] listFiles = this.f194n.listFiles();
         File file = null;
         if (listFiles != null) {
             long j6 = 0;
             for (File file2 : listFiles) {
                 long parseLong = Long.parseLong(file2.getName());
-                E6.a aVar = this.f38u;
-                if (millis >= aVar.f835b + parseLong && millis <= aVar.f836c + parseLong && (file == null || parseLong < j6)) {
+                E6.a aVar = this.f195u;
+                if (millis >= aVar.f898b + parseLong && millis <= aVar.f899c + parseLong && (file == null || parseLong < j6)) {
                     file = file2;
                     j6 = parseLong;
                 }
             }
         }
-        if (file != null && (bVar = this.f40w) != null && file.equals(bVar.f213n)) {
-            this.f40w.close();
+        if (file != null && (bVar = this.f197w) != null && file.equals(bVar.f279n)) {
+            this.f197w.close();
         }
         return file;
     }
@@ -66,11 +66,11 @@ public final class b implements Closeable {
     public final void close() {
         synchronized (this) {
             try {
-                B6.a aVar = this.f39v;
+                B6.a aVar = this.f196v;
                 if (aVar != null) {
                     aVar.close();
                 }
-                B6.b bVar = this.f40w;
+                B6.b bVar = this.f197w;
                 if (bVar != null) {
                     bVar.close();
                 }
@@ -86,7 +86,7 @@ public final class b implements Closeable {
             for (File file : fileArr) {
                 i += (int) file.length();
             }
-            if (i + o.f7742d > 10485760) {
+            if (i + o.f8528d > 10485760) {
                 File file2 = null;
                 for (File file3 : fileArr) {
                     if (file2 == null || file3.getName().compareTo(file2.getName()) < 0) {
@@ -94,9 +94,9 @@ public final class b implements Closeable {
                     }
                 }
                 Objects.requireNonNull(file2);
-                B6.a aVar = this.f39v;
-                if (aVar != null && file2.equals(aVar.f207n)) {
-                    this.f39v.close();
+                B6.a aVar = this.f196v;
+                if (aVar != null && file2.equals(aVar.f273n)) {
+                    this.f196v.close();
                 }
                 if (file2.delete()) {
                     return;

@@ -8,66 +8,66 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 
 /* loaded from: classes2.dex */
-public final class Ht implements InterfaceC3297hN {
+public final class Ht implements InterfaceC3320hN {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f25402a;
+    public final /* synthetic */ int f26145a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final C3351iN f25403b;
+    public final C3374iN f26146b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final C3243gN f25404c;
+    public final C3266gN f26147c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final C3243gN f25405d;
+    public final C3266gN f26148d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final C3351iN f25406e;
+    public final C3374iN f26149e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final C3243gN f25407f;
+    public final C3266gN f26150f;
 
-    public Ht(C3351iN c3351iN, C3243gN c3243gN, C3243gN c3243gN2, C3243gN c3243gN3, C3351iN c3351iN2) {
-        this.f25402a = 4;
-        this.f25403b = c3351iN;
-        this.f25404c = c3243gN;
-        this.f25405d = c3243gN2;
-        this.f25407f = c3243gN3;
-        this.f25406e = c3351iN2;
+    public Ht(C3374iN c3374iN, C3266gN c3266gN, C3266gN c3266gN2, C3266gN c3266gN3, C3374iN c3374iN2) {
+        this.f26145a = 4;
+        this.f26146b = c3374iN;
+        this.f26147c = c3266gN;
+        this.f26148d = c3266gN2;
+        this.f26150f = c3266gN3;
+        this.f26149e = c3374iN2;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3511lN
+    @Override // com.google.android.gms.internal.ads.InterfaceC3534lN
     public final Object f() {
-        switch (this.f25402a) {
+        switch (this.f26145a) {
             case 0:
-                return new Gt((Context) this.f25403b.f31039a, (Executor) this.f25404c.f(), (C3309hi) this.f25406e.f31039a, (Dr) this.f25405d.f(), (Jt) this.f25407f.f(), new C2999bu());
+                return new Gt((Context) this.f26146b.f31812a, (Executor) this.f26147c.f(), (C3332hi) this.f26149e.f31812a, (Dr) this.f26148d.f(), (Jt) this.f26150f.f(), new C3022bu());
             case 1:
-                return new Py((C2949ay) this.f25403b.f31039a, (Oy) this.f25404c.f(), (My) this.f25405d.f(), (ExecutorService) this.f25406e.f31039a, (C3983uA) this.f25407f.f());
+                return new Py((C2972ay) this.f26146b.f31812a, (Oy) this.f26147c.f(), (My) this.f26148d.f(), (ExecutorService) this.f26149e.f31812a, (C4006uA) this.f26150f.f());
             case 2:
-                return new C3702oz((C3979u6) this.f25403b.f31039a, (C3218fz) this.f25404c.f(), (Map) this.f25406e.f31039a, (DisplayMetrics) this.f25405d.f(), (C3983uA) this.f25407f.f());
+                return new C3725oz((C4002u6) this.f26146b.f31812a, (C3241fz) this.f26147c.f(), (Map) this.f26149e.f31812a, (DisplayMetrics) this.f26148d.f(), (C4006uA) this.f26150f.f());
             case 3:
-                return new C3326hz((C3979u6) this.f25403b.f31039a, (C3218fz) this.f25404c.f(), (DisplayMetrics) this.f25405d.f(), (View) this.f25406e.f31039a, (C3983uA) this.f25407f.f());
+                return new C3349hz((C4002u6) this.f26146b.f31812a, (C3241fz) this.f26147c.f(), (DisplayMetrics) this.f26148d.f(), (View) this.f26149e.f31812a, (C4006uA) this.f26150f.f());
             default:
-                return new C3002bx((Context) this.f25403b.f31039a, (InterfaceC3055cx) this.f25404c.f(), (Cw) this.f25405d.f(), (Bw) this.f25407f.f(), ((C2949ay) this.f25406e.f31039a).g0());
+                return new C3025bx((Context) this.f26146b.f31812a, (InterfaceC3078cx) this.f26147c.f(), (Cw) this.f26148d.f(), (Bw) this.f26150f.f(), ((C2972ay) this.f26149e.f31812a).g0());
         }
     }
 
-    public /* synthetic */ Ht(C3351iN c3351iN, C3243gN c3243gN, C3243gN c3243gN2, C3351iN c3351iN2, C3243gN c3243gN3, int i) {
-        this.f25402a = i;
-        this.f25403b = c3351iN;
-        this.f25404c = c3243gN;
-        this.f25405d = c3243gN2;
-        this.f25406e = c3351iN2;
-        this.f25407f = c3243gN3;
+    public /* synthetic */ Ht(C3374iN c3374iN, C3266gN c3266gN, C3266gN c3266gN2, C3374iN c3374iN2, C3266gN c3266gN3, int i) {
+        this.f26145a = i;
+        this.f26146b = c3374iN;
+        this.f26147c = c3266gN;
+        this.f26148d = c3266gN2;
+        this.f26149e = c3374iN2;
+        this.f26150f = c3266gN3;
     }
 
-    public /* synthetic */ Ht(C3351iN c3351iN, C3243gN c3243gN, C3351iN c3351iN2, C3243gN c3243gN2, C3243gN c3243gN3, int i) {
-        this.f25402a = i;
-        this.f25403b = c3351iN;
-        this.f25404c = c3243gN;
-        this.f25406e = c3351iN2;
-        this.f25405d = c3243gN2;
-        this.f25407f = c3243gN3;
+    public /* synthetic */ Ht(C3374iN c3374iN, C3266gN c3266gN, C3374iN c3374iN2, C3266gN c3266gN2, C3266gN c3266gN3, int i) {
+        this.f26145a = i;
+        this.f26146b = c3374iN;
+        this.f26147c = c3266gN;
+        this.f26149e = c3374iN2;
+        this.f26148d = c3266gN2;
+        this.f26150f = c3266gN3;
     }
 }

@@ -20,16 +20,16 @@ import org.json.JSONObject;
 public final class c extends a {
 
     /* renamed from: a, reason: collision with root package name */
-    private final com.anythink.core.common.h.t f14531a;
+    private final com.anythink.core.common.h.t f15317a;
 
     /* renamed from: b, reason: collision with root package name */
-    private long f14532b;
+    private long f15318b;
 
     /* renamed from: c, reason: collision with root package name */
-    private long f14533c;
+    private long f15319c;
 
     public c(com.anythink.core.common.h.t tVar) {
-        this.f14531a = tVar;
+        this.f15317a = tVar;
     }
 
     @Override // com.anythink.core.common.m.a
@@ -46,7 +46,7 @@ public final class c extends a {
     @Override // com.anythink.core.common.m.a
     public final Map<String, String> c() {
         HashMap hashMap = new HashMap();
-        hashMap.put("Accept-Encoding", com.anythink.expressad.foundation.g.f.g.b.f19341d);
+        hashMap.put("Accept-Encoding", com.anythink.expressad.foundation.g.f.g.b.f20128d);
         hashMap.put("Content-Type", "application/json;charset=utf-8");
         return hashMap;
     }
@@ -70,7 +70,7 @@ public final class c extends a {
         Object obj;
         JSONObject e9 = super.e();
         try {
-            com.anythink.core.common.h.t tVar = this.f14531a;
+            com.anythink.core.common.h.t tVar = this.f15317a;
             e9.put("app_id", tVar != null ? tVar.b() : "");
             e9.put("nw_ver", com.anythink.core.common.v.m.g());
             String C8 = com.anythink.core.common.d.t.b().C();
@@ -119,10 +119,10 @@ public final class c extends a {
             HashMap hashMap = new HashMap();
             String a9 = com.anythink.core.common.v.k.a(e().toString());
             String a10 = com.anythink.core.common.v.k.a(f().toString());
-            hashMap.put(e.f14624P, o());
+            hashMap.put(e.f15410P, o());
             hashMap.put("p", a9);
-            hashMap.put(e.f14631W, a10);
-            com.anythink.core.common.h.t tVar = this.f14531a;
+            hashMap.put(e.f15417W, a10);
+            com.anythink.core.common.h.t tVar = this.f15317a;
             byte[] a11 = tVar != null ? tVar.a() : null;
             if (a11 != null && a11.length > 0) {
                 JSONObject jSONObject = new JSONObject();
@@ -152,7 +152,7 @@ public final class c extends a {
 
     @Override // com.anythink.core.common.m.a
     public final String h() {
-        com.anythink.core.common.h.t tVar = this.f14531a;
+        com.anythink.core.common.h.t tVar = this.f15317a;
         return tVar != null ? tVar.b() : "";
     }
 
@@ -163,7 +163,7 @@ public final class c extends a {
 
     @Override // com.anythink.core.common.m.a
     public final String j() {
-        com.anythink.core.common.h.t tVar = this.f14531a;
+        com.anythink.core.common.h.t tVar = this.f15317a;
         return tVar != null ? tVar.c() : "";
     }
 
@@ -180,7 +180,7 @@ public final class c extends a {
     @Override // com.anythink.core.common.m.a
     public final List<String> q() {
         ArrayList arrayList = new ArrayList();
-        arrayList.add(j.aa.f12391a);
+        arrayList.add(j.aa.f13177a);
         return arrayList;
     }
 
@@ -190,19 +190,19 @@ public final class c extends a {
 
     @Override // com.anythink.core.common.m.a
     public final void b(AdError adError) {
-        com.anythink.core.common.u.e.a(b.a.f17192A, adError.getPlatformCode(), adError.getPlatformMSG(), b(), "", "", "", (ATAdRequest) null);
+        com.anythink.core.common.u.e.a(b.a.f17979A, adError.getPlatformCode(), adError.getPlatformMSG(), b(), "", "", "", (ATAdRequest) null);
     }
 
     @Override // com.anythink.core.common.m.a
     public final Object a(Object obj) {
-        com.anythink.core.common.u.e.a(b.a.f17192A, (String) null, this.f14532b, System.currentTimeMillis(), SystemClock.elapsedRealtime() - this.f14533c, (ATAdRequest) null);
+        com.anythink.core.common.u.e.a(b.a.f17979A, (String) null, this.f15318b, System.currentTimeMillis(), SystemClock.elapsedRealtime() - this.f15319c, (ATAdRequest) null);
         return obj;
     }
 
     @Override // com.anythink.core.common.m.a
     public final void a(int i, q qVar) {
-        this.f14532b = System.currentTimeMillis();
-        this.f14533c = SystemClock.elapsedRealtime();
+        this.f15318b = System.currentTimeMillis();
+        this.f15319c = SystemClock.elapsedRealtime();
         super.a(i, qVar);
     }
 }

@@ -98,8 +98,8 @@ public abstract class ATBaseAdInternalAdapter extends f implements IATBaseAdAdap
         this.mBaseAdAdapterProxy.loadCustomNetworkAd(context, map, map2, aTCustomLoadListener);
     }
 
-    public final boolean internalSetUserDataConsent(Context context, boolean z3, boolean z6) {
-        return this.mBaseAdAdapterProxy.setUserDataConsent(context, z3, z6);
+    public final boolean internalSetUserDataConsent(Context context, boolean z6, boolean z9) {
+        return this.mBaseAdAdapterProxy.setUserDataConsent(context, z6, z9);
     }
 
     public final void internalShow(Activity activity, ViewGroup viewGroup, ATCommonImpressionListener aTCommonImpressionListener) {

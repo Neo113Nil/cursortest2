@@ -8,7 +8,7 @@ public interface k {
 
     k c();
 
-    default k k() {
+    default k g() {
         return this;
     }
 }

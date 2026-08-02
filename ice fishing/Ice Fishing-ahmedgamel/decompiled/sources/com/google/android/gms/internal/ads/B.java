@@ -13,98 +13,98 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.Executor;
 
 /* loaded from: classes2.dex */
-public final class B implements InterfaceC4188y, InterfaceC3727pN {
+public final class B implements InterfaceC4211y, InterfaceC3750pN {
 
     /* renamed from: G, reason: collision with root package name */
-    public static final C3500lC f23777G = RB.l(4300000L, 3200000L, 2400000L, 1700000L, 860000L);
+    public static final C3523lC f24549G = RB.l(4300000L, 3200000L, 2400000L, 1700000L, 860000L);
 
     /* renamed from: H, reason: collision with root package name */
-    public static final C3500lC f23778H = RB.l(1500000L, 980000L, 750000L, 520000L, 290000L);
+    public static final C3523lC f24550H = RB.l(1500000L, 980000L, 750000L, 520000L, 290000L);
 
     /* renamed from: I, reason: collision with root package name */
-    public static final C3500lC f23779I = RB.l(2000000L, 1300000L, 1000000L, 860000L, 610000L);
-    public static final C3500lC J = RB.l(2500000L, 1700000L, 1200000L, 970000L, 680000L);
+    public static final C3523lC f24551I = RB.l(2000000L, 1300000L, 1000000L, 860000L, 610000L);
+    public static final C3523lC J = RB.l(2500000L, 1700000L, 1200000L, 970000L, 680000L);
 
     /* renamed from: K, reason: collision with root package name */
-    public static final C3500lC f23780K = RB.l(4700000L, 2800000L, 2100000L, 1700000L, 980000L);
+    public static final C3523lC f24552K = RB.l(4700000L, 2800000L, 2100000L, 1700000L, 980000L);
 
     /* renamed from: L, reason: collision with root package name */
-    public static final C3500lC f23781L = RB.l(2700000L, 2000000L, 1600000L, 1300000L, 1000000L);
+    public static final C3523lC f24553L = RB.l(2700000L, 2000000L, 1600000L, 1300000L, 1000000L);
 
     /* renamed from: M, reason: collision with root package name */
-    public static B f23782M;
+    public static B f24554M;
 
     /* renamed from: A, reason: collision with root package name */
-    public long f23783A;
+    public long f24555A;
 
     /* renamed from: B, reason: collision with root package name */
-    public long f23784B;
+    public long f24556B;
 
     /* renamed from: C, reason: collision with root package name */
-    public long f23785C;
+    public long f24557C;
 
     /* renamed from: D, reason: collision with root package name */
-    public long f23786D;
+    public long f24558D;
 
     /* renamed from: E, reason: collision with root package name */
-    public int f23787E;
+    public int f24559E;
 
     /* renamed from: F, reason: collision with root package name */
-    public String f23788F;
+    public String f24560F;
 
     /* renamed from: n, reason: collision with root package name */
-    public final Context f23789n;
+    public final Context f24561n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final C3770qC f23790u;
+    public final C3793qC f24562u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final Qx f23791v;
+    public final Qx f24563v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final I f23792w;
+    public final I f24564w;
 
     /* renamed from: x, reason: collision with root package name */
-    public int f23793x;
+    public int f24565x;
 
     /* renamed from: y, reason: collision with root package name */
-    public long f23794y;
+    public long f24566y;
 
     /* renamed from: z, reason: collision with root package name */
-    public long f23795z;
+    public long f24567z;
 
     public B(Context context, HashMap hashMap) {
-        boolean z3;
-        this.f23789n = context == null ? null : context.getApplicationContext();
-        this.f23790u = C3770qC.a(hashMap);
-        this.f23791v = new Qx(1);
-        this.f23792w = new I();
+        boolean z6;
+        this.f24561n = context == null ? null : context.getApplicationContext();
+        this.f24562u = C3793qC.a(hashMap);
+        this.f24563v = new Qx(1);
+        this.f24564w = new I();
         if (context == null) {
-            this.f23787E = 0;
-            this.f23785C = 1000000L;
+            this.f24559E = 0;
+            this.f24557C = 1000000L;
             return;
         }
-        C3640nr a9 = C3640nr.a(context);
+        C3663nr a9 = C3663nr.a(context);
         int b9 = a9.b();
-        this.f23787E = b9;
-        this.f23785C = b(b9);
+        this.f24559E = b9;
+        this.f24557C = b(b9);
         A a10 = new A(this);
-        Executor j6 = AbstractC3043cl.j();
-        CopyOnWriteArrayList copyOnWriteArrayList = a9.f32787b;
+        Executor j6 = AbstractC3066cl.j();
+        CopyOnWriteArrayList copyOnWriteArrayList = a9.f33574b;
         Iterator it = copyOnWriteArrayList.iterator();
         while (it.hasNext()) {
-            C2496Bq c2496Bq = (C2496Bq) it.next();
-            if (c2496Bq.f23969a.get() == null) {
-                copyOnWriteArrayList.remove(c2496Bq);
+            C2516Bq c2516Bq = (C2516Bq) it.next();
+            if (c2516Bq.f24732a.get() == null) {
+                copyOnWriteArrayList.remove(c2516Bq);
             }
         }
-        C2496Bq c2496Bq2 = new C2496Bq(a9, a10, j6);
-        synchronized (a9.f32788c) {
-            a9.f32787b.add(c2496Bq2);
-            z3 = a9.f32790e;
+        C2516Bq c2516Bq2 = new C2516Bq(a9, a10, j6);
+        synchronized (a9.f33575c) {
+            a9.f33574b.add(c2516Bq2);
+            z6 = a9.f33577e;
         }
-        if (z3) {
-            c2496Bq2.f23970b.execute(new RunnableC3470kj(17, c2496Bq2));
+        if (z6) {
+            c2516Bq2.f24733b.execute(new RunnableC3493kj(17, c2516Bq2));
         }
     }
 
@@ -403,7 +403,7 @@ public final class B implements InterfaceC4188y, InterfaceC3727pN {
      */
     /* JADX WARN: Code restructure failed: missing block: B:472:0x0622, code lost:
     
-        if (r3.equals(com.anythink.core.common.h.ad.f13394A) != false) goto L916;
+        if (r3.equals(com.anythink.core.common.h.ad.f14180A) != false) goto L916;
      */
     /* JADX WARN: Code restructure failed: missing block: B:474:0x0c36, code lost:
     
@@ -1085,7 +1085,7 @@ public final class B implements InterfaceC4188y, InterfaceC3727pN {
                                                                         return new int[]{2, 2, 4, 3, 2, 2};
                                                                     }
                                                                     break;
-                                                                case com.anythink.basead.exoplayer.d.f6764c /* 2500 */:
+                                                                case com.anythink.basead.exoplayer.d.f7550c /* 2500 */:
                                                                     break;
                                                                 case 2503:
                                                                     break;
@@ -1599,38 +1599,38 @@ public final class B implements InterfaceC4188y, InterfaceC3727pN {
     }
 
     public final void a(int i, long j6, final long j9) {
-        final int i6;
+        final int i4;
         final long j10;
         if (i == 0) {
             if (j6 != 0) {
                 j10 = j6;
-            } else if (j9 == this.f23786D) {
+            } else if (j9 == this.f24558D) {
                 return;
             } else {
                 j10 = 0;
             }
-            i6 = 0;
+            i4 = 0;
         } else {
-            i6 = i;
+            i4 = i;
             j10 = j6;
         }
-        this.f23786D = j9;
-        Iterator it = ((CopyOnWriteArrayList) this.f23791v.f27139u).iterator();
+        this.f24558D = j9;
+        Iterator it = ((CopyOnWriteArrayList) this.f24563v.f27895u).iterator();
         while (it.hasNext()) {
-            final C4134x c4134x = (C4134x) it.next();
-            if (!c4134x.f34918c) {
-                c4134x.f34916a.post(new Runnable() { // from class: com.google.android.gms.internal.ads.w
+            final C4157x c4157x = (C4157x) it.next();
+            if (!c4157x.f35699c) {
+                c4157x.f35697a.post(new Runnable() { // from class: com.google.android.gms.internal.ads.w
                     @Override // java.lang.Runnable
                     public final void run() {
                         Object next;
                         Object obj;
-                        C3676oQ c3676oQ;
-                        BO bo = C4134x.this.f34917b;
-                        T8 t82 = bo.f23898d;
-                        if (((RB) t82.f27696u).isEmpty()) {
-                            c3676oQ = null;
+                        C3860rQ c3860rQ;
+                        BO bo = C4157x.this.f35698b;
+                        T8 t82 = bo.f24669d;
+                        if (((RB) t82.f28479u).isEmpty()) {
+                            c3860rQ = null;
                         } else {
-                            List list = (RB) t82.f27696u;
+                            List list = (RB) t82.f28479u;
                             if (list != null) {
                                 if (list.isEmpty()) {
                                     throw new NoSuchElementException();
@@ -1645,10 +1645,10 @@ public final class B implements InterfaceC4188y, InterfaceC3727pN {
                                 } while (listIterator.hasNext());
                                 obj = next;
                             }
-                            c3676oQ = (C3676oQ) obj;
+                            c3860rQ = (C3860rQ) obj;
                         }
-                        C4159xO v9 = bo.v(c3676oQ);
-                        bo.s(v9, 1006, new X1.b(v9, i6, j10, j9));
+                        C4182xO v9 = bo.v(c3860rQ);
+                        bo.s(v9, 1006, new Z1.b(v9, i4, j10, j9));
                     }
                 });
             }
@@ -1658,29 +1658,29 @@ public final class B implements InterfaceC4188y, InterfaceC3727pN {
     public final long b(int i) {
         long longValue;
         Integer valueOf = Integer.valueOf(i);
-        C3770qC c3770qC = this.f23790u;
-        Long l9 = (Long) c3770qC.get(valueOf);
+        C3793qC c3793qC = this.f24562u;
+        Long l9 = (Long) c3793qC.get(valueOf);
         if (l9 == null) {
-            l9 = (Long) c3770qC.get(0);
-        } else if (l9.longValue() == com.anythink.basead.exoplayer.b.f6382b) {
-            String str = this.f23788F;
+            l9 = (Long) c3793qC.get(0);
+        } else if (l9.longValue() == com.anythink.basead.exoplayer.b.f7168b) {
+            String str = this.f24560F;
             if (str == null) {
                 str = "";
             }
-            int[] d2 = d(str);
+            int[] d9 = d(str);
             if (i != 2) {
                 if (i == 3) {
-                    longValue = ((Long) f23778H.get(d2[1])).longValue();
+                    longValue = ((Long) f24550H.get(d9[1])).longValue();
                 } else if (i == 4) {
-                    longValue = ((Long) f23779I.get(d2[2])).longValue();
+                    longValue = ((Long) f24551I.get(d9[2])).longValue();
                 } else if (i == 5) {
-                    longValue = ((Long) J.get(d2[3])).longValue();
+                    longValue = ((Long) J.get(d9[3])).longValue();
                 } else if (i != 7) {
-                    longValue = i != 9 ? i != 10 ? 1000000L : ((Long) f23780K.get(d2[4])).longValue() : ((Long) f23781L.get(d2[5])).longValue();
+                    longValue = i != 9 ? i != 10 ? 1000000L : ((Long) f24552K.get(d9[4])).longValue() : ((Long) f24553L.get(d9[5])).longValue();
                 }
                 l9 = Long.valueOf(longValue);
             }
-            longValue = ((Long) f23777G.get(d2[0])).longValue();
+            longValue = ((Long) f24549G.get(d9[0])).longValue();
             l9 = Long.valueOf(longValue);
         }
         if (l9 == null) {
@@ -1689,74 +1689,74 @@ public final class B implements InterfaceC4188y, InterfaceC3727pN {
         return l9.longValue();
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3727pN
-    public final synchronized void c(AbstractC3557mF abstractC3557mF, C2971bJ c2971bJ, boolean z3) {
-        boolean z6;
-        if (z3) {
+    @Override // com.google.android.gms.internal.ads.InterfaceC3750pN
+    public final synchronized void c(AbstractC3580mF abstractC3580mF, C2994bJ c2994bJ, boolean z6) {
+        boolean z9;
+        if (z6) {
             try {
-                c2971bJ.getClass();
-                z6 = true;
+                c2994bJ.getClass();
+                z9 = true;
             } catch (Throwable th) {
                 throw th;
             }
         } else {
-            z6 = false;
+            z9 = false;
         }
-        if (z6) {
-            if (this.f23793x == 0) {
-                this.f23794y = SystemClock.elapsedRealtime();
+        if (z9) {
+            if (this.f24565x == 0) {
+                this.f24566y = SystemClock.elapsedRealtime();
             }
-            this.f23793x++;
+            this.f24565x++;
         }
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:21:0x0052, code lost:
     
-        if (r10.f23784B >= 524288) goto L26;
+        if (r10.f24556B >= 524288) goto L26;
      */
-    @Override // com.google.android.gms.internal.ads.InterfaceC3727pN
+    @Override // com.google.android.gms.internal.ads.InterfaceC3750pN
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final synchronized void e(C2971bJ c2971bJ, boolean z3) {
+    public final synchronized void e(C2994bJ c2994bJ, boolean z6) {
         Throwable th;
-        boolean z6;
+        boolean z9;
         B b9;
         try {
-            if (z3) {
+            if (z6) {
                 try {
-                    c2971bJ.getClass();
-                    z6 = true;
+                    c2994bJ.getClass();
+                    z9 = true;
                 } catch (Throwable th2) {
                     th = th2;
                     throw th;
                 }
             } else {
-                z6 = false;
+                z9 = false;
             }
-            if (z6) {
+            if (z9) {
                 try {
-                    AbstractC2772Sd.H(this.f23793x > 0);
+                    AbstractC2792Sd.H(this.f24565x > 0);
                     long elapsedRealtime = SystemClock.elapsedRealtime();
-                    int i = (int) (elapsedRealtime - this.f23794y);
-                    this.f23783A += i;
-                    long j6 = this.f23784B;
-                    long j9 = this.f23795z;
-                    this.f23784B = j6 + j9;
+                    int i = (int) (elapsedRealtime - this.f24566y);
+                    this.f24555A += i;
+                    long j6 = this.f24556B;
+                    long j9 = this.f24567z;
+                    this.f24556B = j6 + j9;
                     if (i > 0) {
-                        I i6 = this.f23792w;
-                        i6.i((j9 * 8000.0f) / i, (int) Math.sqrt(j9));
-                        if (this.f23783A < com.anythink.basead.exoplayer.i.a.f7883f) {
+                        I i4 = this.f24564w;
+                        i4.i((j9 * 8000.0f) / i, (int) Math.sqrt(j9));
+                        if (this.f24555A < com.anythink.basead.exoplayer.i.a.f8669f) {
                         }
-                        this.f23785C = (long) i6.j();
+                        this.f24557C = (long) i4.j();
                         b9 = this;
-                        b9.a(i, this.f23795z, this.f23785C);
-                        b9.f23794y = elapsedRealtime;
-                        b9.f23795z = 0L;
+                        b9.a(i, this.f24567z, this.f24557C);
+                        b9.f24566y = elapsedRealtime;
+                        b9.f24567z = 0L;
                     } else {
                         b9 = this;
                     }
-                    b9.f23793x--;
+                    b9.f24565x--;
                 } catch (Throwable th3) {
                     th = th3;
                     th = th;
@@ -1768,17 +1768,17 @@ public final class B implements InterfaceC4188y, InterfaceC3727pN {
         }
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3727pN
-    public final synchronized void l(C2971bJ c2971bJ, boolean z3, int i) {
-        boolean z6;
-        if (z3) {
-            c2971bJ.getClass();
-            z6 = true;
-        } else {
-            z6 = false;
-        }
+    @Override // com.google.android.gms.internal.ads.InterfaceC3750pN
+    public final synchronized void l(C2994bJ c2994bJ, boolean z6, int i) {
+        boolean z9;
         if (z6) {
-            this.f23795z += i;
+            c2994bJ.getClass();
+            z9 = true;
+        } else {
+            z9 = false;
+        }
+        if (z9) {
+            this.f24567z += i;
         }
     }
 }

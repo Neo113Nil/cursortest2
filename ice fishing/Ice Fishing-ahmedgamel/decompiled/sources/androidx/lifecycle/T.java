@@ -4,8 +4,8 @@ package androidx.lifecycle;
 public final class T {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final T f5148a = new T();
+    public static final T f5115a = new T();
 
     /* renamed from: b, reason: collision with root package name */
-    public static final T f5149b = new T();
+    public static final T f5116b = new T();
 }

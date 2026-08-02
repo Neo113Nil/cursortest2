@@ -1,21 +1,21 @@
 package t;
 
 /* loaded from: classes.dex */
-public final class j extends AbstractC4985g {
+public final class j extends AbstractC4984g {
 
     /* renamed from: A, reason: collision with root package name */
-    public final /* synthetic */ k f40530A;
+    public final /* synthetic */ k f40583A;
 
     public j(k kVar) {
-        this.f40530A = kVar;
+        this.f40583A = kVar;
     }
 
-    @Override // t.AbstractC4985g
+    @Override // t.AbstractC4984g
     public final String h() {
-        h hVar = (h) this.f40530A.f40531n.get();
+        h hVar = (h) this.f40583A.f40584n.get();
         if (hVar == null) {
             return "Completer object has been garbage collected, future will fail soon";
         }
-        return "tag=[" + hVar.f40526a + "]";
+        return "tag=[" + hVar.f40579a + "]";
     }
 }

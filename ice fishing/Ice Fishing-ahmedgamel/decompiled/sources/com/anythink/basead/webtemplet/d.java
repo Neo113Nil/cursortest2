@@ -4,12 +4,12 @@ package com.anythink.basead.webtemplet;
 public class d {
 
     /* renamed from: a, reason: collision with root package name */
-    protected Object f11489a;
+    protected Object f12275a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected WTWebView f11490b;
+    protected WTWebView f12276b;
 
     public void initialize(WTWebView wTWebView) {
-        this.f11490b = wTWebView;
+        this.f12276b = wTWebView;
     }
 }

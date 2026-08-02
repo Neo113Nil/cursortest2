@@ -2,7 +2,7 @@ package com.onesignal.notifications.internal.registration.impl;
 
 import com.onesignal.common.AndroidUtils;
 import java.io.IOException;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public abstract class e implements C5.b, com.onesignal.notifications.internal.registration.impl.c {
@@ -28,8 +28,8 @@ public abstract class e implements C5.b, com.onesignal.notifications.internal.re
         int label;
         /* synthetic */ Object result;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -45,8 +45,8 @@ public abstract class e implements C5.b, com.onesignal.notifications.internal.re
         int label;
         /* synthetic */ Object result;
 
-        public c(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public c(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -64,8 +64,8 @@ public abstract class e implements C5.b, com.onesignal.notifications.internal.re
         int label;
         /* synthetic */ Object result;
 
-        public d(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public d(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -93,21 +93,21 @@ public abstract class e implements C5.b, com.onesignal.notifications.internal.re
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object attemptRegistration(String str, int i, InterfaceC5267d interfaceC5267d) {
+    public final Object attemptRegistration(String str, int i, InterfaceC5240d interfaceC5240d) {
         b bVar;
-        int i6;
+        int i4;
         e eVar;
         String rootCauseMessage;
-        if (interfaceC5267d instanceof b) {
-            bVar = (b) interfaceC5267d;
-            int i9 = bVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                bVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof b) {
+            bVar = (b) interfaceC5240d;
+            int i6 = bVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                bVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = bVar.result;
-                A7.a aVar = A7.a.f58n;
-                i6 = bVar.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar = A7.a.f215n;
+                i4 = bVar.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     try {
                         bVar.L$0 = this;
                         bVar.I$0 = i;
@@ -135,13 +135,13 @@ public abstract class e implements C5.b, com.onesignal.notifications.internal.re
                         return new C5.a(null, Z5.f.FIREBASE_FCM_ERROR_MISC_EXCEPTION);
                     }
                 } else {
-                    if (i6 != 1) {
+                    if (i4 != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     i = bVar.I$0;
                     eVar = (e) bVar.L$0;
                     try {
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                     } catch (IOException e10) {
                         e = e10;
                         Z5.f pushStatusFromThrowable2 = eVar.pushStatusFromThrowable(e);
@@ -171,18 +171,18 @@ public abstract class e implements C5.b, com.onesignal.notifications.internal.re
                 return new C5.a(str2, Z5.f.SUBSCRIBED);
             }
         }
-        bVar = new b(interfaceC5267d);
+        bVar = new b(interfaceC5240d);
         Object obj2 = bVar.result;
-        A7.a aVar2 = A7.a.f58n;
-        i6 = bVar.label;
-        if (i6 != 0) {
+        A7.a aVar2 = A7.a.f215n;
+        i4 = bVar.label;
+        if (i4 != 0) {
         }
         String str22 = (String) obj2;
         com.onesignal.debug.internal.logging.b.info$default("Device registered, push token = " + str22, null, 2, null);
         return new C5.a(str22, Z5.f.SUBSCRIBED);
     }
 
-    public static /* synthetic */ Object fireCallback$suspendImpl(e eVar, String str, InterfaceC5267d interfaceC5267d) {
+    public static /* synthetic */ Object fireCallback$suspendImpl(e eVar, String str, InterfaceC5240d interfaceC5240d) {
         throw new Exception("Google has no callback mechanism for push registration!");
     }
 
@@ -197,31 +197,31 @@ public abstract class e implements C5.b, com.onesignal.notifications.internal.re
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object internalRegisterForPush(String str, InterfaceC5267d interfaceC5267d) {
+    public final Object internalRegisterForPush(String str, InterfaceC5240d interfaceC5240d) {
         c cVar;
         int i;
         try {
-            if (interfaceC5267d instanceof c) {
-                cVar = (c) interfaceC5267d;
-                int i6 = cVar.label;
-                if ((i6 & Integer.MIN_VALUE) != 0) {
-                    cVar.label = i6 - Integer.MIN_VALUE;
+            if (interfaceC5240d instanceof c) {
+                cVar = (c) interfaceC5240d;
+                int i4 = cVar.label;
+                if ((i4 & Integer.MIN_VALUE) != 0) {
+                    cVar.label = i4 - Integer.MIN_VALUE;
                     Object obj = cVar.result;
-                    A7.a aVar = A7.a.f58n;
+                    A7.a aVar = A7.a.f215n;
                     i = cVar.label;
                     if (i == 0) {
                         if (i == 1) {
-                            com.bumptech.glide.d.k(obj);
+                            Q3.b.s(obj);
                             return (C5.a) obj;
                         }
                         if (i != 2) {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                         com.onesignal.debug.internal.logging.b.warn$default("'Google Play services' app not installed or disabled on the device.", null, 2, null);
                         return new C5.a(null, Z5.f.OUTDATED_GOOGLE_PLAY_SERVICES_APP);
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     try {
                         if (this._deviceService.isGMSInstalledAndEnabled()) {
                             cVar.L$0 = this;
@@ -253,9 +253,9 @@ public abstract class e implements C5.b, com.onesignal.notifications.internal.re
         } catch (Throwable th2) {
             th = th2;
         }
-        cVar = new c(interfaceC5267d);
+        cVar = new c(interfaceC5240d);
         Object obj2 = cVar.result;
-        A7.a aVar3 = A7.a.f58n;
+        A7.a aVar3 = A7.a.f215n;
         i = cVar.label;
     }
 
@@ -274,7 +274,7 @@ public abstract class e implements C5.b, com.onesignal.notifications.internal.re
         return th instanceof IOException ? kotlin.jvm.internal.h.a(rootCauseMessage, "SERVICE_NOT_AVAILABLE") ? Z5.f.FIREBASE_FCM_ERROR_IOEXCEPTION_SERVICE_NOT_AVAILABLE : kotlin.jvm.internal.h.a(rootCauseMessage, "AUTHENTICATION_FAILED") ? Z5.f.FIREBASE_FCM_ERROR_IOEXCEPTION_AUTHENTICATION_FAILED : Z5.f.FIREBASE_FCM_ERROR_IOEXCEPTION_OTHER : Z5.f.FIREBASE_FCM_ERROR_MISC_EXCEPTION;
     }
 
-    public static /* synthetic */ Object registerForPush$suspendImpl(e eVar, InterfaceC5267d interfaceC5267d) {
+    public static /* synthetic */ Object registerForPush$suspendImpl(e eVar, InterfaceC5240d interfaceC5240d) {
         if (!((com.onesignal.core.internal.config.b) eVar._configModelStore.getModel()).isInitializedWithRemote()) {
             return new C5.a(null, Z5.f.FIREBASE_FCM_INIT_ERROR);
         }
@@ -288,13 +288,13 @@ public abstract class e implements C5.b, com.onesignal.notifications.internal.re
         }
         String googleProjectNumber = ((com.onesignal.core.internal.config.b) eVar._configModelStore.getModel()).getGoogleProjectNumber();
         kotlin.jvm.internal.h.b(googleProjectNumber);
-        return eVar.internalRegisterForPush(googleProjectNumber, interfaceC5267d);
+        return eVar.internalRegisterForPush(googleProjectNumber, interfaceC5240d);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x007c, code lost:
     
-        if (S7.AbstractC0406y.f((r10 + 1) * 10000, r0) == r1) goto L28;
+        if (S7.AbstractC0410y.f((r10 + 1) * 10000, r0) == r1) goto L28;
      */
     /* JADX WARN: Removed duplicated region for block: B:14:0x0052  */
     /* JADX WARN: Removed duplicated region for block: B:19:0x006a A[RETURN] */
@@ -306,53 +306,53 @@ public abstract class e implements C5.b, com.onesignal.notifications.internal.re
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object registerInBackground(String str, InterfaceC5267d interfaceC5267d) {
+    public final Object registerInBackground(String str, InterfaceC5240d interfaceC5240d) {
         d dVar;
         int i;
-        int i6;
+        int i4;
         e eVar;
-        int i9;
+        int i6;
         e eVar2;
         String str2;
         C5.a aVar;
-        if (interfaceC5267d instanceof d) {
-            dVar = (d) interfaceC5267d;
-            int i10 = dVar.label;
-            if ((i10 & Integer.MIN_VALUE) != 0) {
-                dVar.label = i10 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof d) {
+            dVar = (d) interfaceC5240d;
+            int i9 = dVar.label;
+            if ((i9 & Integer.MIN_VALUE) != 0) {
+                dVar.label = i9 - Integer.MIN_VALUE;
                 Object obj = dVar.result;
-                A7.a aVar2 = A7.a.f58n;
+                A7.a aVar2 = A7.a.f215n;
                 i = dVar.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
-                    i6 = 0;
+                    Q3.b.s(obj);
+                    i4 = 0;
                     eVar = this;
-                    if (i6 < 5) {
+                    if (i4 < 5) {
                     }
                 } else {
                     if (i != 1) {
                         if (i != 2) {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
-                        i9 = dVar.I$0;
+                        i6 = dVar.I$0;
                         str2 = (String) dVar.L$1;
                         eVar2 = (e) dVar.L$0;
-                        com.bumptech.glide.d.k(obj);
-                        i6 = i9 + 1;
+                        Q3.b.s(obj);
+                        i4 = i6 + 1;
                         str = str2;
                         eVar = eVar2;
-                        if (i6 < 5) {
+                        if (i4 < 5) {
                             return new C5.a(null, Z5.f.FIREBASE_FCM_INIT_ERROR);
                         }
                         dVar.L$0 = eVar;
                         dVar.L$1 = str;
-                        dVar.I$0 = i6;
+                        dVar.I$0 = i4;
                         dVar.label = 1;
-                        Object attemptRegistration = eVar.attemptRegistration(str, i6, dVar);
+                        Object attemptRegistration = eVar.attemptRegistration(str, i4, dVar);
                         if (attemptRegistration != aVar2) {
                             e eVar3 = eVar;
                             str2 = str;
-                            i9 = i6;
+                            i6 = i4;
                             obj = attemptRegistration;
                             eVar2 = eVar3;
                             aVar = (C5.a) obj;
@@ -361,40 +361,40 @@ public abstract class e implements C5.b, com.onesignal.notifications.internal.re
                             }
                             dVar.L$0 = eVar2;
                             dVar.L$1 = str2;
-                            dVar.I$0 = i9;
+                            dVar.I$0 = i6;
                             dVar.label = 2;
                         }
                         return aVar2;
                     }
-                    i9 = dVar.I$0;
+                    i6 = dVar.I$0;
                     str2 = (String) dVar.L$1;
                     eVar2 = (e) dVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     aVar = (C5.a) obj;
                     if (aVar == null) {
                     }
                 }
             }
         }
-        dVar = new d(interfaceC5267d);
+        dVar = new d(interfaceC5240d);
         Object obj2 = dVar.result;
-        A7.a aVar22 = A7.a.f58n;
+        A7.a aVar22 = A7.a.f215n;
         i = dVar.label;
         if (i != 0) {
         }
     }
 
     @Override // com.onesignal.notifications.internal.registration.impl.c
-    public Object fireCallback(String str, InterfaceC5267d interfaceC5267d) {
-        return fireCallback$suspendImpl(this, str, interfaceC5267d);
+    public Object fireCallback(String str, InterfaceC5240d interfaceC5240d) {
+        return fireCallback$suspendImpl(this, str, interfaceC5240d);
     }
 
     public abstract String getProviderName();
 
-    public abstract Object getToken(String str, InterfaceC5267d interfaceC5267d);
+    public abstract Object getToken(String str, InterfaceC5240d interfaceC5240d);
 
     @Override // C5.b
-    public Object registerForPush(InterfaceC5267d interfaceC5267d) {
-        return registerForPush$suspendImpl(this, interfaceC5267d);
+    public Object registerForPush(InterfaceC5240d interfaceC5240d) {
+        return registerForPush$suspendImpl(this, interfaceC5240d);
     }
 }

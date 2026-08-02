@@ -15,8 +15,8 @@ public class o extends k {
     private Map<Integer, String> ao;
     private int ap;
 
-    public o(com.anythink.expressad.foundation.d.d dVar, com.anythink.expressad.videocommon.c.c cVar, com.anythink.expressad.videocommon.b.c cVar2, String str, String str2, com.anythink.expressad.video.module.a.a aVar, int i, boolean z3) {
-        super(dVar, cVar2, cVar, str, str2, aVar, i, z3);
+    public o(com.anythink.expressad.foundation.d.d dVar, com.anythink.expressad.videocommon.c.c cVar, com.anythink.expressad.videocommon.b.c cVar2, String str, String str2, com.anythink.expressad.video.module.a.a aVar, int i, boolean z6) {
+        super(dVar, cVar2, cVar, str, str2, aVar, i, z6);
         this.an = false;
         this.aj = 0;
         this.ap = -1;
@@ -35,14 +35,14 @@ public class o extends k {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void a(int i, Object obj) {
-        int i6;
+        int i4;
         com.anythink.expressad.foundation.d.d dVar;
         try {
             if (i != 2) {
                 if (i != 130) {
                     if (i != 6) {
                         if (i != 7) {
-                            int i9 = 0;
+                            int i6 = 0;
                             if (i == 11) {
                                 com.anythink.expressad.videocommon.b.e.a().a(false);
                                 b();
@@ -54,43 +54,43 @@ public class o extends k {
                                 d();
                                 c();
                                 if (obj == null || !(obj instanceof AnythinkVideoView.a)) {
-                                    i6 = 0;
+                                    i4 = 0;
                                 } else {
-                                    int i10 = ((AnythinkVideoView.a) obj).f21695a;
-                                    i9 = ((AnythinkVideoView.a) obj).f21696b;
-                                    i6 = i10;
+                                    int i9 = ((AnythinkVideoView.a) obj).f22482a;
+                                    i6 = ((AnythinkVideoView.a) obj).f22483b;
+                                    i4 = i9;
                                 }
-                                if (i9 == 0 && (dVar = this.f21769Z) != null) {
-                                    i9 = dVar.bq();
+                                if (i6 == 0 && (dVar = this.f22556Z) != null) {
+                                    i6 = dVar.bq();
                                 }
-                                com.anythink.expressad.video.module.b.a.a(t.b().g(), this.f21769Z, i6, i9, this.ah);
-                                com.anythink.expressad.video.module.b.a.a(this.f21769Z, this.ao, this.ae, i6);
+                                com.anythink.expressad.video.module.b.a.a(t.b().g(), this.f22556Z, i4, i6, this.ah);
+                                com.anythink.expressad.video.module.b.a.a(this.f22556Z, this.ao, this.ae, i4);
                                 if (!this.am) {
                                     this.am = true;
-                                    com.anythink.expressad.video.module.b.a.a(this.f21769Z, this.ae);
+                                    com.anythink.expressad.video.module.b.a.a(this.f22556Z, this.ae);
                                 }
                                 if (!this.an) {
-                                    int i11 = this.aj;
-                                    if (i11 != 0) {
-                                        i9 = i11;
+                                    int i10 = this.aj;
+                                    if (i10 != 0) {
+                                        i6 = i10;
                                     }
-                                    if (i6 >= i9) {
+                                    if (i4 >= i6) {
                                         this.an = true;
                                         i = 17;
                                     }
                                 }
-                                this.ap = i6;
+                                this.ap = i4;
                             }
                         } else if (this.Y && obj != null && (obj instanceof Integer)) {
                             int intValue = ((Integer) obj).intValue();
                             if (intValue == 2) {
                                 if (!this.ak) {
                                     this.ak = true;
-                                    com.anythink.expressad.video.module.b.a.b(t.b().g(), this.f21769Z);
+                                    com.anythink.expressad.video.module.b.a.b(t.b().g(), this.f22556Z);
                                 }
                             } else if (intValue == 1 && !this.ai) {
                                 this.ai = true;
-                                com.anythink.expressad.video.module.b.a.c(t.b().g(), this.f21769Z);
+                                com.anythink.expressad.video.module.b.a.c(t.b().g(), this.f22556Z);
                             }
                         }
                     }
@@ -102,7 +102,7 @@ public class o extends k {
             if (this.Y && !this.al) {
                 this.al = true;
                 b();
-                com.anythink.expressad.video.module.b.a.d(t.b().g(), this.f21769Z);
+                com.anythink.expressad.video.module.b.a.d(t.b().g(), this.f22556Z);
             }
             this.ag.a(i, obj);
         } catch (Throwable th) {

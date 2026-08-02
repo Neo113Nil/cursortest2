@@ -25,19 +25,19 @@ import java.util.concurrent.CopyOnWriteArraySet;
 public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a, h, w.c {
 
     /* renamed from: b, reason: collision with root package name */
-    private final com.anythink.basead.exoplayer.k.c f6290b;
+    private final com.anythink.basead.exoplayer.k.c f7076b;
 
     /* renamed from: e, reason: collision with root package name */
-    private w f6293e;
+    private w f7079e;
 
     /* renamed from: a, reason: collision with root package name */
-    private final CopyOnWriteArraySet<com.anythink.basead.exoplayer.a.b> f6289a = new CopyOnWriteArraySet<>();
+    private final CopyOnWriteArraySet<com.anythink.basead.exoplayer.a.b> f7075a = new CopyOnWriteArraySet<>();
 
     /* renamed from: d, reason: collision with root package name */
-    private final b f6292d = new b();
+    private final b f7078d = new b();
 
     /* renamed from: c, reason: collision with root package name */
-    private final ae.b f6291c = new ae.b();
+    private final ae.b f7077c = new ae.b();
 
     /* renamed from: com.anythink.basead.exoplayer.a.a$a, reason: collision with other inner class name */
     public static class C0014a {
@@ -49,47 +49,47 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
     public static final class b {
 
         /* renamed from: c, reason: collision with root package name */
-        private c f6296c;
+        private c f7082c;
 
         /* renamed from: d, reason: collision with root package name */
-        private c f6297d;
+        private c f7083d;
 
         /* renamed from: f, reason: collision with root package name */
-        private boolean f6299f;
+        private boolean f7085f;
 
         /* renamed from: a, reason: collision with root package name */
-        private final ArrayList<c> f6294a = new ArrayList<>();
+        private final ArrayList<c> f7080a = new ArrayList<>();
 
         /* renamed from: b, reason: collision with root package name */
-        private final ae.a f6295b = new ae.a();
+        private final ae.a f7081b = new ae.a();
 
         /* renamed from: e, reason: collision with root package name */
-        private ae f6298e = ae.f6341a;
+        private ae f7084e = ae.f7127a;
 
         private void i() {
-            if (this.f6294a.isEmpty()) {
+            if (this.f7080a.isEmpty()) {
                 return;
             }
-            this.f6296c = this.f6294a.get(0);
+            this.f7082c = this.f7080a.get(0);
         }
 
         public final c b() {
-            return this.f6296c;
+            return this.f7082c;
         }
 
         public final c c() {
-            return this.f6297d;
+            return this.f7083d;
         }
 
         public final c d() {
-            if (this.f6294a.isEmpty()) {
+            if (this.f7080a.isEmpty()) {
                 return null;
             }
-            return this.f6294a.get(r0.size() - 1);
+            return this.f7080a.get(r0.size() - 1);
         }
 
         public final boolean e() {
-            return this.f6299f;
+            return this.f7085f;
         }
 
         public final void f() {
@@ -97,69 +97,69 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
         }
 
         public final void g() {
-            this.f6299f = true;
+            this.f7085f = true;
         }
 
         public final void h() {
-            this.f6299f = false;
+            this.f7085f = false;
             i();
         }
 
         public final c a() {
-            if (this.f6294a.isEmpty() || this.f6298e.a() || this.f6299f) {
+            if (this.f7080a.isEmpty() || this.f7084e.a() || this.f7085f) {
                 return null;
             }
-            return this.f6294a.get(0);
+            return this.f7080a.get(0);
         }
 
         public final void b(int i, s.a aVar) {
             c cVar = new c(i, aVar);
-            this.f6294a.remove(cVar);
-            if (cVar.equals(this.f6297d)) {
-                this.f6297d = this.f6294a.isEmpty() ? null : this.f6294a.get(0);
+            this.f7080a.remove(cVar);
+            if (cVar.equals(this.f7083d)) {
+                this.f7083d = this.f7080a.isEmpty() ? null : this.f7080a.get(0);
             }
         }
 
         public final void c(int i, s.a aVar) {
-            this.f6297d = new c(i, aVar);
+            this.f7083d = new c(i, aVar);
         }
 
         public final s.a a(int i) {
-            ae aeVar = this.f6298e;
+            ae aeVar = this.f7084e;
             if (aeVar == null) {
                 return null;
             }
             int c9 = aeVar.c();
             s.a aVar = null;
-            for (int i6 = 0; i6 < this.f6294a.size(); i6++) {
-                c cVar = this.f6294a.get(i6);
-                int i9 = cVar.f6301b.f7767a;
-                if (i9 < c9 && this.f6298e.a(i9, this.f6295b, false).f6344c == i) {
+            for (int i4 = 0; i4 < this.f7080a.size(); i4++) {
+                c cVar = this.f7080a.get(i4);
+                int i6 = cVar.f7087b.f8553a;
+                if (i6 < c9 && this.f7084e.a(i6, this.f7081b, false).f7130c == i) {
                     if (aVar != null) {
                         return null;
                     }
-                    aVar = cVar.f6301b;
+                    aVar = cVar.f7087b;
                 }
             }
             return aVar;
         }
 
         public final void a(ae aeVar) {
-            for (int i = 0; i < this.f6294a.size(); i++) {
-                ArrayList<c> arrayList = this.f6294a;
+            for (int i = 0; i < this.f7080a.size(); i++) {
+                ArrayList<c> arrayList = this.f7080a;
                 arrayList.set(i, a(arrayList.get(i), aeVar));
             }
-            c cVar = this.f6297d;
+            c cVar = this.f7083d;
             if (cVar != null) {
-                this.f6297d = a(cVar, aeVar);
+                this.f7083d = a(cVar, aeVar);
             }
-            this.f6298e = aeVar;
+            this.f7084e = aeVar;
             i();
         }
 
         public final void a(int i, s.a aVar) {
-            this.f6294a.add(new c(i, aVar));
-            if (this.f6294a.size() != 1 || this.f6298e.a()) {
+            this.f7080a.add(new c(i, aVar));
+            if (this.f7080a.size() != 1 || this.f7084e.a()) {
                 return;
             }
             i();
@@ -167,21 +167,21 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
 
         private c a(c cVar, ae aeVar) {
             int a9;
-            return (aeVar.a() || this.f6298e.a() || (a9 = aeVar.a(this.f6298e.a(cVar.f6301b.f7767a, this.f6295b, true).f6343b)) == -1) ? cVar : new c(aeVar.a(a9, this.f6295b, false).f6344c, cVar.f6301b.a(a9));
+            return (aeVar.a() || this.f7084e.a() || (a9 = aeVar.a(this.f7084e.a(cVar.f7087b.f8553a, this.f7081b, true).f7129b)) == -1) ? cVar : new c(aeVar.a(a9, this.f7081b, false).f7130c, cVar.f7087b.a(a9));
         }
     }
 
     public static final class c {
 
         /* renamed from: a, reason: collision with root package name */
-        public final int f6300a;
+        public final int f7086a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final s.a f6301b;
+        public final s.a f7087b;
 
         public c(int i, s.a aVar) {
-            this.f6300a = i;
-            this.f6301b = aVar;
+            this.f7086a = i;
+            this.f7087b = aVar;
         }
 
         public final boolean equals(Object obj) {
@@ -190,7 +190,7 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
             }
             if (obj != null && c.class == obj.getClass()) {
                 c cVar = (c) obj;
-                if (this.f6300a == cVar.f6300a && this.f6301b.equals(cVar.f6301b)) {
+                if (this.f7086a == cVar.f7086a && this.f7087b.equals(cVar.f7087b)) {
                     return true;
                 }
             }
@@ -198,47 +198,47 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
         }
 
         public final int hashCode() {
-            return this.f6301b.hashCode() + (this.f6300a * 31);
+            return this.f7087b.hashCode() + (this.f7086a * 31);
         }
     }
 
     public a(w wVar, com.anythink.basead.exoplayer.k.c cVar) {
-        this.f6293e = wVar;
-        this.f6290b = (com.anythink.basead.exoplayer.k.c) com.anythink.basead.exoplayer.k.a.a(cVar);
+        this.f7079e = wVar;
+        this.f7076b = (com.anythink.basead.exoplayer.k.c) com.anythink.basead.exoplayer.k.a.a(cVar);
     }
 
     private Set<com.anythink.basead.exoplayer.a.b> g() {
-        return Collections.unmodifiableSet(this.f6289a);
+        return Collections.unmodifiableSet(this.f7075a);
     }
 
     private b.a h() {
-        return a(this.f6292d.b());
+        return a(this.f7078d.b());
     }
 
     private b.a i() {
-        return a(this.f6292d.a());
+        return a(this.f7078d.a());
     }
 
     private b.a j() {
-        return a(this.f6292d.c());
+        return a(this.f7078d.c());
     }
 
     private b.a k() {
-        return a(this.f6292d.d());
+        return a(this.f7078d.d());
     }
 
     public final void a(com.anythink.basead.exoplayer.a.b bVar) {
-        this.f6289a.add(bVar);
+        this.f7075a.add(bVar);
     }
 
     public final void b(com.anythink.basead.exoplayer.a.b bVar) {
-        this.f6289a.remove(bVar);
+        this.f7075a.remove(bVar);
     }
 
     @Override // com.anythink.basead.exoplayer.b.g
     public final void c(com.anythink.basead.exoplayer.c.d dVar) {
         b.a i = i();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().d(i, 1);
         }
@@ -246,17 +246,17 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
 
     @Override // com.anythink.basead.exoplayer.b.g
     public final void d(com.anythink.basead.exoplayer.c.d dVar) {
-        b.a h9 = h();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        b.a h3 = h();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
-            it.next().e(h9, 1);
+            it.next().e(h3, 1);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.d.c
     public final void e() {
         b.a j6 = j();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().g(j6);
         }
@@ -265,25 +265,25 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
     @Override // com.anythink.basead.exoplayer.d.c
     public final void f() {
         b.a j6 = j();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().h(j6);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.w.c
-    public final void onLoadingChanged(boolean z3) {
+    public final void onLoadingChanged(boolean z6) {
         b.a i = i();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
-            it.next().b(i, z3);
+            it.next().b(i, z6);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.w.c
     public final void onPlaybackParametersChanged(v vVar) {
         b.a i = i();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().a(i, vVar);
         }
@@ -292,46 +292,46 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
     @Override // com.anythink.basead.exoplayer.w.c
     public final void onPlayerError(com.anythink.basead.exoplayer.g gVar) {
         b.a i = i();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().a(i, gVar);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.w.c
-    public final void onPlayerStateChanged(boolean z3, int i) {
-        b.a i6 = i();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+    public final void onPlayerStateChanged(boolean z6, int i) {
+        b.a i4 = i();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
-            it.next().a(i6, z3, i);
+            it.next().a(i4, z6, i);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.w.c
     public final void onPositionDiscontinuity(int i) {
-        this.f6292d.f();
-        b.a i6 = i();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        this.f7078d.f();
+        b.a i4 = i();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
-            it.next().b(i6, i);
+            it.next().b(i4, i);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.w.c
     public final void onRepeatModeChanged(int i) {
-        b.a i6 = i();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        b.a i4 = i();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
-            it.next().c(i6, i);
+            it.next().c(i4, i);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.w.c
     public final void onSeekProcessed() {
-        if (this.f6292d.e()) {
-            this.f6292d.h();
+        if (this.f7078d.e()) {
+            this.f7078d.h();
             b.a i = i();
-            Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+            Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
             while (it.hasNext()) {
                 it.next().b(i);
             }
@@ -339,53 +339,53 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
     }
 
     @Override // com.anythink.basead.exoplayer.w.c
-    public final void onShuffleModeEnabledChanged(boolean z3) {
+    public final void onShuffleModeEnabledChanged(boolean z6) {
         b.a i = i();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
-            it.next().a(i, z3);
+            it.next().a(i, z6);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.w.c
     public final void onTimelineChanged(ae aeVar, Object obj, int i) {
-        this.f6292d.a(aeVar);
-        b.a i6 = i();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        this.f7078d.a(aeVar);
+        b.a i4 = i();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
-            it.next().a(i6, i);
+            it.next().a(i4, i);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.w.c
     public final void onTracksChanged(af afVar, com.anythink.basead.exoplayer.i.g gVar) {
         b.a i = i();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().a(i, gVar);
         }
     }
 
     private void a(w wVar) {
-        com.anythink.basead.exoplayer.k.a.b(this.f6293e == null);
-        this.f6293e = (w) com.anythink.basead.exoplayer.k.a.a(wVar);
+        com.anythink.basead.exoplayer.k.a.b(this.f7079e == null);
+        this.f7079e = (w) com.anythink.basead.exoplayer.k.a.a(wVar);
     }
 
     public final void b() {
-        Iterator it = new ArrayList(this.f6292d.f6294a).iterator();
+        Iterator it = new ArrayList(this.f7078d.f7080a).iterator();
         while (it.hasNext()) {
             c cVar = (c) it.next();
-            b(cVar.f6300a, cVar.f6301b);
+            b(cVar.f7086a, cVar.f7087b);
         }
     }
 
     public final void a() {
-        if (this.f6292d.e()) {
+        if (this.f7078d.e()) {
             return;
         }
         b.a i = i();
-        this.f6292d.g();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        this.f7078d.g();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().a(i);
         }
@@ -394,7 +394,7 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
     @Override // com.anythink.basead.exoplayer.h.t
     public final void c(int i, s.a aVar, t.b bVar, t.c cVar) {
         d(i, aVar);
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next();
         }
@@ -403,7 +403,7 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
     @Override // com.anythink.basead.exoplayer.d.c
     public final void d() {
         b.a j6 = j();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().f(j6);
         }
@@ -412,7 +412,7 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
     @Override // com.anythink.basead.exoplayer.b.g
     public final void b(String str, long j6, long j9) {
         b.a j10 = j();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().a(j10, 1, str);
         }
@@ -420,45 +420,45 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
 
     @Override // com.anythink.basead.exoplayer.h.t
     public final void c(int i, s.a aVar) {
-        this.f6292d.c(i, aVar);
-        b.a d2 = d(i, aVar);
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        this.f7078d.c(i, aVar);
+        b.a d9 = d(i, aVar);
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
-            it.next().e(d2);
+            it.next().e(d9);
         }
     }
 
     private b.a d(int i, s.a aVar) {
-        com.anythink.basead.exoplayer.k.a.a(this.f6293e);
-        long a9 = this.f6290b.a();
-        ae F8 = this.f6293e.F();
+        com.anythink.basead.exoplayer.k.a.a(this.f7079e);
+        long a9 = this.f7076b.a();
+        ae F8 = this.f7079e.F();
         long j6 = 0;
-        if (i == this.f6293e.p()) {
+        if (i == this.f7079e.p()) {
             if (aVar != null && aVar.a()) {
-                if (this.f6293e.z() == aVar.f7768b && this.f6293e.A() == aVar.f7769c) {
-                    j6 = this.f6293e.t();
+                if (this.f7079e.z() == aVar.f8554b && this.f7079e.A() == aVar.f8555c) {
+                    j6 = this.f7079e.t();
                 }
             } else {
-                j6 = this.f6293e.B();
+                j6 = this.f7079e.B();
             }
         } else if (i < F8.b() && (aVar == null || !aVar.a())) {
-            j6 = com.anythink.basead.exoplayer.b.a(F8.a(i, this.f6291c, false).f6355h);
+            j6 = com.anythink.basead.exoplayer.b.a(F8.a(i, this.f7077c, false).f7141h);
         }
-        return new b.a(a9, F8, i, aVar, j6, this.f6293e.t(), this.f6293e.u() - this.f6293e.B());
+        return new b.a(a9, F8, i, aVar, j6, this.f7079e.t(), this.f7079e.u() - this.f7079e.B());
     }
 
-    private void a(int i, int i6) {
-        b.a i9 = i();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+    private void a(int i, int i4) {
+        b.a i6 = i();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
-            it.next().a(i9, i, i6);
+            it.next().a(i6, i, i4);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.b.g
     public final void b(m mVar) {
         b.a j6 = j();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().a(j6, 1, mVar);
         }
@@ -466,8 +466,8 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
 
     @Override // com.anythink.basead.exoplayer.j.d.a
     public final void c() {
-        a(this.f6292d.d());
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        a(this.f7078d.d());
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next();
         }
@@ -475,7 +475,7 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
 
     private void a(NetworkInfo networkInfo) {
         b.a i = i();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().a(i, networkInfo);
         }
@@ -483,17 +483,17 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
 
     @Override // com.anythink.basead.exoplayer.l.h
     public final void b(com.anythink.basead.exoplayer.c.d dVar) {
-        b.a h9 = h();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        b.a h3 = h();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
-            it.next().e(h9, 2);
+            it.next().e(h3, 2);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.g.f
     public final void a(com.anythink.basead.exoplayer.g.a aVar) {
         b.a i = i();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().a(i, aVar);
         }
@@ -501,18 +501,18 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
 
     @Override // com.anythink.basead.exoplayer.h.t
     public final void b(int i, s.a aVar) {
-        this.f6292d.b(i, aVar);
-        b.a d2 = d(i, aVar);
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        this.f7078d.b(i, aVar);
+        b.a d9 = d(i, aVar);
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
-            it.next().d(d2);
+            it.next().d(d9);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.b.g
     public final void a(int i) {
         b.a j6 = j();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().f(j6, i);
         }
@@ -521,7 +521,7 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
     @Override // com.anythink.basead.exoplayer.h.t
     public final void b(int i, s.a aVar, t.b bVar, t.c cVar) {
         d(i, aVar);
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next();
         }
@@ -530,7 +530,7 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
     @Override // com.anythink.basead.exoplayer.b.g
     public final void a(int i, long j6, long j9) {
         b.a j10 = j();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().a(j10, i, j6, j9);
         }
@@ -538,17 +538,17 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
 
     @Override // com.anythink.basead.exoplayer.h.t
     public final void b(int i, s.a aVar, t.c cVar) {
-        b.a d2 = d(i, aVar);
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        b.a d9 = d(i, aVar);
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
-            it.next().a(d2, cVar);
+            it.next().a(d9, cVar);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.l.h
     public final void a(com.anythink.basead.exoplayer.c.d dVar) {
         b.a i = i();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().d(i, 2);
         }
@@ -557,7 +557,7 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
     @Override // com.anythink.basead.exoplayer.l.h
     public final void a(String str, long j6, long j9) {
         b.a j10 = j();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().a(j10, 2, str);
         }
@@ -566,7 +566,7 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
     @Override // com.anythink.basead.exoplayer.l.h
     public final void a(m mVar) {
         b.a j6 = j();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().a(j6, 2, mVar);
         }
@@ -574,26 +574,26 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
 
     @Override // com.anythink.basead.exoplayer.l.h
     public final void a(int i, long j6) {
-        b.a h9 = h();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        b.a h3 = h();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
-            it.next().g(h9, i);
+            it.next().g(h3, i);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.l.h
-    public final void a(int i, int i6, int i9, float f3) {
+    public final void a(int i, int i4, int i6, float f2) {
         b.a j6 = j();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
-            it.next().b(j6, i, i6);
+            it.next().b(j6, i, i4);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.l.h
     public final void a(Surface surface) {
         b.a j6 = j();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().a(j6, surface);
         }
@@ -601,45 +601,45 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
 
     @Override // com.anythink.basead.exoplayer.h.t
     public final void a(int i, s.a aVar) {
-        this.f6292d.a(i, aVar);
-        b.a d2 = d(i, aVar);
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        this.f7078d.a(i, aVar);
+        b.a d9 = d(i, aVar);
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
-            it.next().c(d2);
+            it.next().c(d9);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.h.t
     public final void a(int i, s.a aVar, t.b bVar, t.c cVar) {
         d(i, aVar);
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next();
         }
     }
 
     @Override // com.anythink.basead.exoplayer.h.t
-    public final void a(int i, s.a aVar, t.b bVar, t.c cVar, IOException iOException, boolean z3) {
-        b.a d2 = d(i, aVar);
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+    public final void a(int i, s.a aVar, t.b bVar, t.c cVar, IOException iOException, boolean z6) {
+        b.a d9 = d(i, aVar);
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
-            it.next().a(d2, iOException);
+            it.next().a(d9, iOException);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.h.t
     public final void a(int i, s.a aVar, t.c cVar) {
-        b.a d2 = d(i, aVar);
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        b.a d9 = d(i, aVar);
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
-            it.next().b(d2, cVar);
+            it.next().b(d9, cVar);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.d.c
     public final void a(Exception exc) {
         b.a j6 = j();
-        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f6289a.iterator();
+        Iterator<com.anythink.basead.exoplayer.a.b> it = this.f7075a.iterator();
         while (it.hasNext()) {
             it.next().a(j6, exc);
         }
@@ -647,9 +647,9 @@ public final class a implements g, com.anythink.basead.exoplayer.d.c, f, t, d.a,
 
     private b.a a(c cVar) {
         if (cVar == null) {
-            int p9 = ((w) com.anythink.basead.exoplayer.k.a.a(this.f6293e)).p();
-            return d(p9, this.f6292d.a(p9));
+            int p9 = ((w) com.anythink.basead.exoplayer.k.a.a(this.f7079e)).p();
+            return d(p9, this.f7078d.a(p9));
         }
-        return d(cVar.f6300a, cVar.f6301b);
+        return d(cVar.f7086a, cVar.f7087b);
     }
 }

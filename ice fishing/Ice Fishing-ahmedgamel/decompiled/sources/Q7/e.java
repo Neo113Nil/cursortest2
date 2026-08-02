@@ -4,14 +4,14 @@ package Q7;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f2679a;
+    public final String f2716a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final N7.c f2680b;
+    public final N7.c f2717b;
 
     public e(String str, N7.c cVar) {
-        this.f2679a = str;
-        this.f2680b = cVar;
+        this.f2716a = str;
+        this.f2717b = cVar;
     }
 
     public final boolean equals(Object obj) {
@@ -22,14 +22,14 @@ public final class e {
             return false;
         }
         e eVar = (e) obj;
-        return kotlin.jvm.internal.h.a(this.f2679a, eVar.f2679a) && kotlin.jvm.internal.h.a(this.f2680b, eVar.f2680b);
+        return kotlin.jvm.internal.h.a(this.f2716a, eVar.f2716a) && kotlin.jvm.internal.h.a(this.f2717b, eVar.f2717b);
     }
 
     public final int hashCode() {
-        return this.f2680b.hashCode() + (this.f2679a.hashCode() * 31);
+        return this.f2717b.hashCode() + (this.f2716a.hashCode() * 31);
     }
 
     public final String toString() {
-        return "MatchGroup(value=" + this.f2679a + ", range=" + this.f2680b + ')';
+        return "MatchGroup(value=" + this.f2716a + ", range=" + this.f2717b + ')';
     }
 }

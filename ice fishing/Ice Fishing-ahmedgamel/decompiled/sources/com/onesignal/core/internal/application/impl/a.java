@@ -1,6 +1,6 @@
 package com.onesignal.core.internal.application.impl;
 
-import D.RunnableC0282a;
+import A3.p;
 import android.app.Activity;
 import android.app.Application;
 import android.content.ComponentCallbacks;
@@ -9,14 +9,13 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewTreeObserver;
-import androidx.fragment.app.AbstractComponentCallbacksC0475s;
+import androidx.fragment.app.AbstractComponentCallbacksC0479s;
 import androidx.fragment.app.C;
-import androidx.fragment.app.DialogInterfaceOnCancelListenerC0471n;
+import androidx.fragment.app.DialogInterfaceOnCancelListenerC0475n;
 import androidx.fragment.app.J;
 import androidx.fragment.app.N;
-import com.google.android.gms.internal.ads.C2991bm;
 import com.onesignal.common.AndroidUtils;
-import h.AbstractActivityC4551k;
+import h.AbstractActivityC4555k;
 import java.lang.ref.WeakReference;
 import java.util.Collections;
 import java.util.List;
@@ -24,9 +23,9 @@ import java.util.Set;
 import java.util.WeakHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 import u7.v;
-import v7.AbstractC5129j;
-import x4.C5197a;
-import z7.InterfaceC5267d;
+import v7.AbstractC5119j;
+import x4.C5192a;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class a implements x4.f, Application.ActivityLifecycleCallbacks, ViewTreeObserver.OnGlobalLayoutListener {
@@ -113,7 +112,7 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((x4.d) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(x4.d it) {
@@ -122,7 +121,7 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
         }
     }
 
-    public static final class d extends C5197a {
+    public static final class d extends C5192a {
         final /* synthetic */ Runnable $runnable;
         final /* synthetic */ a this$0;
 
@@ -131,7 +130,7 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
             this.this$0 = aVar;
         }
 
-        @Override // x4.C5197a, x4.d
+        @Override // x4.C5192a, x4.d
         public void onActivityAvailable(Activity currentActivity) {
             kotlin.jvm.internal.h.e(currentActivity, "currentActivity");
             a.this.removeActivityLifecycleHandler(this);
@@ -153,7 +152,7 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((x4.e) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(x4.e it) {
@@ -172,7 +171,7 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((x4.e) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(x4.e it) {
@@ -193,7 +192,7 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((x4.d) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(x4.d it) {
@@ -212,7 +211,7 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((com.onesignal.core.internal.application.impl.b) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(com.onesignal.core.internal.application.impl.b it) {
@@ -233,7 +232,7 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((x4.d) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(x4.d it) {
@@ -254,7 +253,7 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((x4.d) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(x4.d it) {
@@ -267,8 +266,8 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
         int label;
         /* synthetic */ Object result;
 
-        public k(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public k(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -286,8 +285,8 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
         int label;
         /* synthetic */ Object result;
 
-        public l(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public l(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -307,21 +306,21 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
             this.$waiter = eVar;
         }
 
-        public void onFragmentDetached(N fm, AbstractComponentCallbacksC0475s fragmentDetached) {
+        public void onFragmentDetached(N fm, AbstractComponentCallbacksC0479s fragmentDetached) {
             kotlin.jvm.internal.h.e(fm, "fm");
             kotlin.jvm.internal.h.e(fragmentDetached, "fragmentDetached");
-            if (fragmentDetached instanceof DialogInterfaceOnCancelListenerC0471n) {
-                C2991bm c2991bm = this.$manager.f4860l;
-                synchronized (((CopyOnWriteArrayList) c2991bm.f29323u)) {
+            if (fragmentDetached instanceof DialogInterfaceOnCancelListenerC0475n) {
+                S0.e eVar = this.$manager.f4828l;
+                synchronized (((CopyOnWriteArrayList) eVar.f2908u)) {
                     try {
-                        int size = ((CopyOnWriteArrayList) c2991bm.f29323u).size();
+                        int size = ((CopyOnWriteArrayList) eVar.f2908u).size();
                         int i = 0;
                         while (true) {
                             if (i >= size) {
                                 break;
                             }
-                            if (((C) ((CopyOnWriteArrayList) c2991bm.f29323u).get(i)).f4817a == this) {
-                                ((CopyOnWriteArrayList) c2991bm.f29323u).remove(i);
+                            if (((C) ((CopyOnWriteArrayList) eVar.f2908u).get(i)).f4785a == this) {
+                                ((CopyOnWriteArrayList) eVar.f2908u).remove(i);
                                 break;
                             }
                             i++;
@@ -366,14 +365,14 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
         self.addActivityLifecycleHandler(self.new d(runnable, this$0));
     }
 
-    private final void decrementStartedActivity(Activity activity, boolean z3) {
+    private final void decrementStartedActivity(Activity activity, boolean z6) {
         if (this.startedActivities.remove(activity)) {
-            int i6 = this.activityReferences - 1;
-            this.activityReferences = i6;
-            if (i6 <= 0) {
+            int i4 = this.activityReferences - 1;
+            this.activityReferences = i4;
+            if (i4 <= 0) {
                 this.activityReferences = 0;
-                if (z3 && getCurrent() == null) {
-                    resetStaleNotificationEntryIfBackgrounded(z3);
+                if (z6 && getCurrent() == null) {
+                    resetStaleNotificationEntryIfBackgrounded(z6);
                     return;
                 } else {
                     setCurrent(null);
@@ -382,7 +381,7 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
                 }
             }
         }
-        resetStaleNotificationEntryIfBackgrounded(z3);
+        resetStaleNotificationEntryIfBackgrounded(z6);
     }
 
     private final boolean getWasInBackground() {
@@ -413,11 +412,11 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final void onOrientationChanged(int i6, Activity activity) {
-        if (i6 == 1) {
-            com.onesignal.debug.internal.logging.b.debug$default("ApplicationService.onOrientationChanged: Configuration Orientation Change: PORTRAIT (" + i6 + ") on activity: " + activity, null, 2, null);
-        } else if (i6 == 2) {
-            com.onesignal.debug.internal.logging.b.debug$default("ApplicationService.onOrientationChanged: Configuration Orientation Change: LANDSCAPE (" + i6 + ") on activity: " + activity, null, 2, null);
+    public final void onOrientationChanged(int i4, Activity activity) {
+        if (i4 == 1) {
+            com.onesignal.debug.internal.logging.b.debug$default("ApplicationService.onOrientationChanged: Configuration Orientation Change: PORTRAIT (" + i4 + ") on activity: " + activity, null, 2, null);
+        } else if (i4 == 2) {
+            com.onesignal.debug.internal.logging.b.debug$default("ApplicationService.onOrientationChanged: Configuration Orientation Change: LANDSCAPE (" + i4 + ") on activity: " + activity, null, 2, null);
         }
         handleLostFocus();
         this.activityLifecycleNotifier.fire(new i(activity));
@@ -426,22 +425,22 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
         handleFocus();
     }
 
-    private final void resetStaleNotificationEntryIfBackgrounded(boolean z3) {
-        if (z3 && getCurrent() == null && getEntryState() == x4.b.NOTIFICATION_CLICK) {
+    private final void resetStaleNotificationEntryIfBackgrounded(boolean z6) {
+        if (z6 && getCurrent() == null && getEntryState() == x4.b.NOTIFICATION_CLICK) {
             setEntryState(x4.b.APP_CLOSE);
         }
     }
 
     private final void seedFocusFromInitContext(Context context) {
-        boolean z3 = context instanceof Activity;
-        boolean z6 = getCurrent() == null;
-        if (z6 && !z3) {
+        boolean z6 = context instanceof Activity;
+        boolean z9 = getCurrent() == null;
+        if (z9 && !z6) {
             this.nextResumeIsFirstActivity = true;
             setEntryState(x4.b.APP_CLOSE);
             return;
         }
         setEntryState(x4.b.APP_OPEN);
-        if (z6 && z3) {
+        if (z9 && z6) {
             kotlin.jvm.internal.h.c(context, "null cannot be cast to non-null type android.app.Activity");
             Activity activity = (Activity) context;
             setCurrent(activity);
@@ -569,23 +568,23 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
         if (kotlin.jvm.internal.h.a(getCurrent(), activity) && this.startedActivities.contains(activity)) {
             return;
         }
-        boolean z3 = activity instanceof x4.g;
-        boolean z6 = this.isActivityChangingConfigurations;
-        if (!z3 && getCurrent() == null && !z6) {
+        boolean z6 = activity instanceof x4.g;
+        boolean z9 = this.isActivityChangingConfigurations;
+        if (!z6 && getCurrent() == null && !z9) {
             this.nextResumeIsFirstActivity = true;
         }
-        if (!z3 && !kotlin.jvm.internal.h.a(getCurrent(), activity)) {
+        if (!z6 && !kotlin.jvm.internal.h.a(getCurrent(), activity)) {
             setCurrent(activity);
         }
         boolean add = this.startedActivities.add(activity);
-        if (!z3 && getWasInBackground() && !this.isActivityChangingConfigurations) {
+        if (!z6 && getWasInBackground() && !this.isActivityChangingConfigurations) {
             this.startedActivities.clear();
             this.startedActivities.add(activity);
             this.activityReferences = 1;
             handleFocus();
             return;
         }
-        if (!z3 && z6) {
+        if (!z6 && z9) {
             this.isActivityChangingConfigurations = false;
         } else if (add) {
             this.activityReferences++;
@@ -596,12 +595,12 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
     public void onActivityStopped(Activity activity) {
         kotlin.jvm.internal.h.e(activity, "activity");
         com.onesignal.debug.internal.logging.b.debug$default("ApplicationService.onActivityStopped(" + this.activityReferences + ',' + getEntryState() + "): " + activity, null, 2, null);
-        boolean z3 = activity instanceof x4.g;
-        if (!z3) {
+        boolean z6 = activity instanceof x4.g;
+        if (!z6) {
             this.isActivityChangingConfigurations = activity.isChangingConfigurations();
         }
-        if (z3 || !this.isActivityChangingConfigurations) {
-            decrementStartedActivity(activity, z3);
+        if (z6 || !this.isActivityChangingConfigurations) {
+            decrementStartedActivity(activity, z6);
         }
         this.activityLifecycleNotifier.fire(new g(activity));
     }
@@ -644,12 +643,12 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
 
     public final void start(Context context) {
         kotlin.jvm.internal.h.e(context, "context");
-        boolean z3 = this.lifecycleObserverInstalled;
+        boolean z6 = this.lifecycleObserverInstalled;
         this._appContext = context;
         Context applicationContext = context.getApplicationContext();
         kotlin.jvm.internal.h.c(applicationContext, "null cannot be cast to non-null type android.app.Application");
         attachToApplication((Application) applicationContext);
-        if (!z3) {
+        if (!z6) {
             seedFocusFromInitContext(context);
         }
         com.onesignal.debug.internal.logging.b.debug$default("ApplicationService.init: entryState=" + getEntryState(), null, 2, null);
@@ -661,50 +660,50 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object waitUntilActivityReady(InterfaceC5267d interfaceC5267d) {
+    public Object waitUntilActivityReady(InterfaceC5240d interfaceC5240d) {
         k kVar;
-        int i6;
-        if (interfaceC5267d instanceof k) {
-            kVar = (k) interfaceC5267d;
-            int i9 = kVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                kVar.label = i9 - Integer.MIN_VALUE;
+        int i4;
+        if (interfaceC5240d instanceof k) {
+            kVar = (k) interfaceC5240d;
+            int i6 = kVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                kVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = kVar.result;
-                A7.a aVar = A7.a.f58n;
-                i6 = kVar.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar = A7.a.f215n;
+                i4 = kVar.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     Activity current = getCurrent();
                     if (current == null) {
                         return Boolean.FALSE;
                     }
                     com.onesignal.common.threading.e eVar = new com.onesignal.common.threading.e();
-                    decorViewReady(current, new RunnableC0282a(17, eVar));
+                    decorViewReady(current, new p(18, eVar));
                     kVar.label = 1;
                     if (eVar.waitForWake(kVar) == aVar) {
                         return aVar;
                     }
                 } else {
-                    if (i6 != 1) {
+                    if (i4 != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 return Boolean.TRUE;
             }
         }
-        kVar = new k(interfaceC5267d);
+        kVar = new k(interfaceC5240d);
         Object obj2 = kVar.result;
-        A7.a aVar2 = A7.a.f58n;
-        i6 = kVar.label;
-        if (i6 != 0) {
+        A7.a aVar2 = A7.a.f215n;
+        i4 = kVar.label;
+        if (i4 != 0) {
         }
         return Boolean.TRUE;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:40:0x008c, code lost:
     
-        if (S7.AbstractC0406y.f(100, r0) == r1) goto L66;
+        if (S7.AbstractC0410y.f(100, r0) == r1) goto L66;
      */
     /* JADX WARN: Removed duplicated region for block: B:24:0x0137  */
     /* JADX WARN: Removed duplicated region for block: B:35:0x0074  */
@@ -716,11 +715,11 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object waitUntilSystemConditionsAvailable(InterfaceC5267d interfaceC5267d) {
+    public Object waitUntilSystemConditionsAvailable(InterfaceC5240d interfaceC5240d) {
         l lVar;
-        int i6;
+        int i4;
         Activity current;
-        int i9;
+        int i6;
         a aVar;
         a aVar2;
         l lVar2;
@@ -728,31 +727,31 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
         View view;
         n nVar;
         n nVar2;
-        if (interfaceC5267d instanceof l) {
-            lVar = (l) interfaceC5267d;
-            int i10 = lVar.label;
-            if ((i10 & Integer.MIN_VALUE) != 0) {
-                lVar.label = i10 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof l) {
+            lVar = (l) interfaceC5240d;
+            int i9 = lVar.label;
+            if ((i9 & Integer.MIN_VALUE) != 0) {
+                lVar.label = i9 - Integer.MIN_VALUE;
                 Object obj = lVar.result;
-                A7.a aVar4 = A7.a.f58n;
-                i6 = lVar.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar4 = A7.a.f215n;
+                i4 = lVar.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     current = getCurrent();
-                    i9 = AndroidUtils.INSTANCE.isRunningOnMainThread() ? 50 : 0;
+                    i6 = AndroidUtils.INSTANCE.isRunningOnMainThread() ? 50 : 0;
                     aVar = this;
                     if (current != null) {
                     }
                     return aVar4;
                 }
-                if (i6 != 1) {
-                    if (i6 != 2) {
-                        if (i6 != 3) {
+                if (i4 != 1) {
+                    if (i4 != 2) {
+                        if (i4 != 3) {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
                         nVar2 = (n) lVar.L$1;
                         aVar3 = (a) lVar.L$0;
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                         nVar = nVar2;
                         aVar3.systemConditionNotifier.unsubscribe(nVar);
                         return Boolean.TRUE;
@@ -760,7 +759,7 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
                     current = (Activity) lVar.L$1;
                     aVar2 = (a) lVar.L$0;
                     try {
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                     } catch (NoClassDefFoundError e9) {
                         e = e9;
                         com.onesignal.debug.internal.logging.b.info$default("ApplicationService.waitUntilSystemConditionsAvailable: AppCompatActivity is not used in this app, skipping 'isDialogFragmentShowing' check: " + e, null, 2, null);
@@ -793,10 +792,10 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
                     aVar3.systemConditionNotifier.unsubscribe(nVar);
                     return Boolean.TRUE;
                 }
-                int i11 = lVar.I$0;
+                int i10 = lVar.I$0;
                 aVar = (a) lVar.L$0;
-                com.bumptech.glide.d.k(obj);
-                i9 = i11;
+                Q3.b.s(obj);
+                i6 = i10;
                 current = aVar.getCurrent();
                 if (current != null) {
                     try {
@@ -814,15 +813,15 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
                         aVar3.systemConditionNotifier.unsubscribe(nVar);
                         return Boolean.TRUE;
                     }
-                    if (current instanceof AbstractActivityC4551k) {
-                        N supportFragmentManager = ((AbstractActivityC4551k) current).getSupportFragmentManager();
+                    if (current instanceof AbstractActivityC4555k) {
+                        N supportFragmentManager = ((AbstractActivityC4555k) current).getSupportFragmentManager();
                         kotlin.jvm.internal.h.d(supportFragmentManager, "getSupportFragmentManager(...)");
-                        List l9 = supportFragmentManager.f4852c.l();
-                        kotlin.jvm.internal.h.d(l9, "getFragments(...)");
-                        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = (AbstractComponentCallbacksC0475s) AbstractC5129j.G(l9);
-                        if (abstractComponentCallbacksC0475s != null && abstractComponentCallbacksC0475s.i() && !abstractComponentCallbacksC0475s.j() && (view = abstractComponentCallbacksC0475s.f5050X) != null && view.getWindowToken() != null && abstractComponentCallbacksC0475s.f5050X.getVisibility() == 0 && (abstractComponentCallbacksC0475s instanceof DialogInterfaceOnCancelListenerC0471n)) {
+                        List f2 = supportFragmentManager.f4820c.f();
+                        kotlin.jvm.internal.h.d(f2, "getFragments(...)");
+                        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = (AbstractComponentCallbacksC0479s) AbstractC5119j.E(f2);
+                        if (abstractComponentCallbacksC0479s != null && abstractComponentCallbacksC0479s.i() && !abstractComponentCallbacksC0479s.j() && (view = abstractComponentCallbacksC0479s.f5018X) != null && view.getWindowToken() != null && abstractComponentCallbacksC0479s.f5018X.getVisibility() == 0 && (abstractComponentCallbacksC0479s instanceof DialogInterfaceOnCancelListenerC0475n)) {
                             com.onesignal.common.threading.e eVar3 = new com.onesignal.common.threading.e();
-                            ((CopyOnWriteArrayList) supportFragmentManager.f4860l.f29323u).add(new C(new m(supportFragmentManager, eVar3)));
+                            ((CopyOnWriteArrayList) supportFragmentManager.f4828l.f2908u).add(new C(new m(supportFragmentManager, eVar3)));
                             lVar.L$0 = aVar;
                             lVar.L$1 = current;
                             lVar.label = 2;
@@ -850,22 +849,22 @@ public final class a implements x4.f, Application.ActivityLifecycleCallbacks, Vi
                     aVar3.systemConditionNotifier.unsubscribe(nVar);
                     return Boolean.TRUE;
                 }
-                i11 = i9 + 1;
-                if (i11 > 50) {
+                i10 = i6 + 1;
+                if (i10 > 50) {
                     com.onesignal.debug.internal.logging.b.warn$default("ApplicationService.waitUntilSystemConditionsAvailable: current is null", null, 2, null);
                     return Boolean.FALSE;
                 }
                 lVar.L$0 = aVar;
-                lVar.I$0 = i11;
+                lVar.I$0 = i10;
                 lVar.label = 1;
                 return aVar4;
             }
         }
-        lVar = new l(interfaceC5267d);
+        lVar = new l(interfaceC5240d);
         Object obj2 = lVar.result;
-        A7.a aVar42 = A7.a.f58n;
-        i6 = lVar.label;
-        if (i6 != 0) {
+        A7.a aVar42 = A7.a.f215n;
+        i4 = lVar.label;
+        if (i4 != 0) {
         }
     }
 }

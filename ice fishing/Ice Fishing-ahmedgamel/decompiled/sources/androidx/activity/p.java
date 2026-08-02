@@ -1,13 +1,12 @@
 package androidx.activity;
 
-import D.AbstractActivityC0295n;
-import D.C0296o;
-import D.O;
-import O.C0337l;
-import O.C0338m;
-import O.C0339n;
-import O.InterfaceC0341p;
-import a.AbstractC0422a;
+import D.AbstractActivityC0283m;
+import D.C0284n;
+import D.N;
+import O.C0342l;
+import O.C0343m;
+import O.C0344n;
+import O.InterfaceC0346p;
 import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
@@ -19,52 +18,52 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import androidx.lifecycle.AbstractC0498p;
-import androidx.lifecycle.C0494l;
-import androidx.lifecycle.C0505x;
-import androidx.lifecycle.EnumC0496n;
-import androidx.lifecycle.EnumC0497o;
-import androidx.lifecycle.InterfaceC0492j;
-import androidx.lifecycle.InterfaceC0501t;
-import androidx.lifecycle.InterfaceC0503v;
+import androidx.lifecycle.AbstractC0502p;
+import androidx.lifecycle.C0498l;
+import androidx.lifecycle.C0509x;
+import androidx.lifecycle.EnumC0500n;
+import androidx.lifecycle.EnumC0501o;
+import androidx.lifecycle.InterfaceC0496j;
+import androidx.lifecycle.InterfaceC0505t;
+import androidx.lifecycle.InterfaceC0507v;
 import androidx.lifecycle.J;
 import androidx.lifecycle.L;
 import androidx.lifecycle.T;
 import androidx.lifecycle.V;
 import androidx.lifecycle.X;
 import androidx.lifecycle.Y;
-import com.icefishingapp.icefishing.C5275R;
-import d.C4432a;
-import d.InterfaceC4433b;
-import e.AbstractC4457c;
-import e.InterfaceC4456b;
-import f.AbstractC4494a;
-import h0.AbstractC4554b;
-import h0.C4556d;
+import com.IceFishing.LiveIceFishing.C5248R;
+import d.C4447a;
+import d.InterfaceC4448b;
+import e.AbstractC4468c;
+import e.InterfaceC4467b;
+import f.AbstractC4511a;
+import h0.AbstractC4559b;
+import h0.C4561d;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
-import u7.InterfaceC5087e;
-import x0.C5181c;
-import x0.C5182d;
-import x0.InterfaceC5183e;
+import u7.InterfaceC5079e;
+import x0.C5180c;
+import x0.C5181d;
+import x0.InterfaceC5182e;
 
 /* loaded from: classes.dex */
-public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0492j, InterfaceC5183e {
+public abstract class p extends AbstractActivityC0283m implements Y, InterfaceC0496j, InterfaceC5182e {
     private static final String ACTIVITY_RESULT_TAG = "android:support:activity-result";
-    private static final C0457i Companion = new C0457i();
+    private static final C0461i Companion = new C0461i();
     private X _viewModelStore;
     private final e.i activityResultRegistry;
     private int contentLayoutId;
-    private final InterfaceC5087e defaultViewModelProviderFactory$delegate;
+    private final InterfaceC5079e defaultViewModelProviderFactory$delegate;
     private boolean dispatchingOnMultiWindowModeChanged;
     private boolean dispatchingOnPictureInPictureModeChanged;
-    private final InterfaceC5087e fullyDrawnReporter$delegate;
+    private final InterfaceC5079e fullyDrawnReporter$delegate;
     private final AtomicInteger nextLocalRequestCode;
-    private final InterfaceC5087e onBackPressedDispatcher$delegate;
+    private final InterfaceC5079e onBackPressedDispatcher$delegate;
     private final CopyOnWriteArrayList<N.a> onConfigurationChangedListeners;
     private final CopyOnWriteArrayList<N.a> onMultiWindowModeChangedListeners;
     private final CopyOnWriteArrayList<N.a> onNewIntentListeners;
@@ -72,15 +71,15 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
     private final CopyOnWriteArrayList<N.a> onTrimMemoryListeners;
     private final CopyOnWriteArrayList<Runnable> onUserLeaveHintListeners;
     private final k reportFullyDrawnExecutor;
-    private final C5182d savedStateRegistryController;
-    private final C4432a contextAwareHelper = new C4432a();
-    private final C0339n menuHostHelper = new C0339n(new RunnableC0452d(this, 0));
+    private final C5181d savedStateRegistryController;
+    private final C4447a contextAwareHelper = new C4447a();
+    private final C0344n menuHostHelper = new C0344n(new RunnableC0456d(this, 0));
 
     public p() {
-        C5182d c5182d = new C5182d(this);
-        this.savedStateRegistryController = c5182d;
+        C5181d c5181d = new C5181d(this);
+        this.savedStateRegistryController = c5181d;
         this.reportFullyDrawnExecutor = new l(this);
-        this.fullyDrawnReporter$delegate = AbstractC0422a.q(new o(this, 2));
+        this.fullyDrawnReporter$delegate = N3.C.O(new o(this, 2));
         this.nextLocalRequestCode = new AtomicInteger();
         this.activityResultRegistry = new n(this);
         this.onConfigurationChangedListeners = new CopyOnWriteArrayList<>();
@@ -92,27 +91,27 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
         if (getLifecycle() == null) {
             throw new IllegalStateException("getLifecycle() returned null in ComponentActivity's constructor. Please make sure you are lazily constructing your Lifecycle in the first call to getLifecycle() rather than relying on field initialization.");
         }
-        getLifecycle().a(new C0453e(0, this));
-        getLifecycle().a(new C0453e(1, this));
-        getLifecycle().a(new InterfaceC0501t() { // from class: androidx.activity.ComponentActivity$4
-            @Override // androidx.lifecycle.InterfaceC0501t
-            public final void a(InterfaceC0503v interfaceC0503v, EnumC0496n enumC0496n) {
+        getLifecycle().a(new C0457e(0, this));
+        getLifecycle().a(new C0457e(1, this));
+        getLifecycle().a(new InterfaceC0505t() { // from class: androidx.activity.ComponentActivity$4
+            @Override // androidx.lifecycle.InterfaceC0505t
+            public final void a(InterfaceC0507v interfaceC0507v, EnumC0500n enumC0500n) {
                 p pVar = p.this;
                 p.access$ensureViewModelStore(pVar);
                 pVar.getLifecycle().b(this);
             }
         });
-        c5182d.a();
+        c5181d.a();
         L.d(this);
-        getSavedStateRegistry().c(ACTIVITY_RESULT_TAG, new C0454f(0, this));
-        addOnContextAvailableListener(new InterfaceC4433b() { // from class: androidx.activity.g
-            @Override // d.InterfaceC4433b
+        getSavedStateRegistry().c(ACTIVITY_RESULT_TAG, new C0458f(0, this));
+        addOnContextAvailableListener(new InterfaceC4448b() { // from class: androidx.activity.g
+            @Override // d.InterfaceC4448b
             public final void a(p pVar) {
                 p.a(p.this, pVar);
             }
         });
-        this.defaultViewModelProviderFactory$delegate = AbstractC0422a.q(new o(this, 0));
-        this.onBackPressedDispatcher$delegate = AbstractC0422a.q(new o(this, 3));
+        this.defaultViewModelProviderFactory$delegate = N3.C.O(new o(this, 0));
+        this.onBackPressedDispatcher$delegate = N3.C.O(new o(this, 3));
     }
 
     public static void a(p pVar, p it) {
@@ -128,19 +127,19 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
             }
             ArrayList<String> stringArrayList2 = a9.getStringArrayList("KEY_COMPONENT_ACTIVITY_LAUNCHED_KEYS");
             if (stringArrayList2 != null) {
-                iVar.f37094d.addAll(stringArrayList2);
+                iVar.f37202d.addAll(stringArrayList2);
             }
             Bundle bundle = a9.getBundle("KEY_COMPONENT_ACTIVITY_PENDING_RESULT");
-            Bundle bundle2 = iVar.f37097g;
+            Bundle bundle2 = iVar.f37205g;
             if (bundle != null) {
                 bundle2.putAll(bundle);
             }
             int size = stringArrayList.size();
             for (int i = 0; i < size; i++) {
                 String str = stringArrayList.get(i);
-                LinkedHashMap linkedHashMap = iVar.f37092b;
+                LinkedHashMap linkedHashMap = iVar.f37200b;
                 boolean containsKey = linkedHashMap.containsKey(str);
-                LinkedHashMap linkedHashMap2 = iVar.f37091a;
+                LinkedHashMap linkedHashMap2 = iVar.f37199a;
                 if (containsKey) {
                     Integer num = (Integer) linkedHashMap.remove(str);
                     if (bundle2.containsKey(str)) {
@@ -169,7 +168,7 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
         if (pVar._viewModelStore == null) {
             j jVar = (j) pVar.getLastNonConfigurationInstance();
             if (jVar != null) {
-                pVar._viewModelStore = jVar.f4449b;
+                pVar._viewModelStore = jVar.f4417b;
             }
             if (pVar._viewModelStore == null) {
                 pVar._viewModelStore = new X();
@@ -177,14 +176,14 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
         }
     }
 
-    public static void b(p pVar, InterfaceC0503v interfaceC0503v, EnumC0496n enumC0496n) {
-        if (enumC0496n == EnumC0496n.ON_DESTROY) {
-            pVar.contextAwareHelper.f36964b = null;
+    public static void b(p pVar, InterfaceC0507v interfaceC0507v, EnumC0500n enumC0500n) {
+        if (enumC0500n == EnumC0500n.ON_DESTROY) {
+            pVar.contextAwareHelper.f37117b = null;
             if (!pVar.isChangingConfigurations()) {
                 pVar.getViewModelStore().a();
             }
             l lVar = (l) pVar.reportFullyDrawnExecutor;
-            p pVar2 = lVar.f4453w;
+            p pVar2 = lVar.f4421w;
             pVar2.getWindow().getDecorView().removeCallbacks(lVar);
             pVar2.getWindow().getDecorView().getViewTreeObserver().removeOnDrawListener(lVar);
         }
@@ -194,11 +193,11 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
         Bundle bundle = new Bundle();
         e.i iVar = pVar.activityResultRegistry;
         iVar.getClass();
-        LinkedHashMap linkedHashMap = iVar.f37092b;
+        LinkedHashMap linkedHashMap = iVar.f37200b;
         bundle.putIntegerArrayList("KEY_COMPONENT_ACTIVITY_REGISTERED_RCS", new ArrayList<>(linkedHashMap.values()));
         bundle.putStringArrayList("KEY_COMPONENT_ACTIVITY_REGISTERED_KEYS", new ArrayList<>(linkedHashMap.keySet()));
-        bundle.putStringArrayList("KEY_COMPONENT_ACTIVITY_LAUNCHED_KEYS", new ArrayList<>(iVar.f37094d));
-        bundle.putBundle("KEY_COMPONENT_ACTIVITY_PENDING_RESULT", new Bundle(iVar.f37097g));
+        bundle.putStringArrayList("KEY_COMPONENT_ACTIVITY_LAUNCHED_KEYS", new ArrayList<>(iVar.f37202d));
+        bundle.putBundle("KEY_COMPONENT_ACTIVITY_PENDING_RESULT", new Bundle(iVar.f37205g));
         return bundle;
     }
 
@@ -215,11 +214,11 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
         super.addContentView(view, layoutParams);
     }
 
-    public void addMenuProvider(InterfaceC0341p provider) {
+    public void addMenuProvider(InterfaceC0346p provider) {
         kotlin.jvm.internal.h.e(provider, "provider");
-        C0339n c0339n = this.menuHostHelper;
-        c0339n.f2112b.add(provider);
-        c0339n.f2111a.run();
+        C0344n c0344n = this.menuHostHelper;
+        c0344n.f2200b.add(provider);
+        c0344n.f2199a.run();
     }
 
     public final void addOnConfigurationChangedListener(N.a listener) {
@@ -227,15 +226,15 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
         this.onConfigurationChangedListeners.add(listener);
     }
 
-    public final void addOnContextAvailableListener(InterfaceC4433b listener) {
+    public final void addOnContextAvailableListener(InterfaceC4448b listener) {
         kotlin.jvm.internal.h.e(listener, "listener");
-        C4432a c4432a = this.contextAwareHelper;
-        c4432a.getClass();
-        p pVar = c4432a.f36964b;
+        C4447a c4447a = this.contextAwareHelper;
+        c4447a.getClass();
+        p pVar = c4447a.f37117b;
         if (pVar != null) {
             listener.a(pVar);
         }
-        c4432a.f36963a.add(listener);
+        c4447a.f37116a.add(listener);
     }
 
     public final void addOnMultiWindowModeChangedListener(N.a listener) {
@@ -267,25 +266,25 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
         return this.activityResultRegistry;
     }
 
-    @Override // androidx.lifecycle.InterfaceC0492j
-    public AbstractC4554b getDefaultViewModelCreationExtras() {
-        C4556d c4556d = new C4556d(0);
+    @Override // androidx.lifecycle.InterfaceC0496j
+    public AbstractC4559b getDefaultViewModelCreationExtras() {
+        C4561d c4561d = new C4561d(0);
         Application application = getApplication();
-        LinkedHashMap linkedHashMap = c4556d.f37943a;
+        LinkedHashMap linkedHashMap = c4561d.f37969a;
         if (application != null) {
-            T t6 = T.f5148a;
+            T t6 = T.f5115a;
             Application application2 = getApplication();
             kotlin.jvm.internal.h.d(application2, "application");
             linkedHashMap.put(t6, application2);
         }
-        linkedHashMap.put(L.f5120a, this);
-        linkedHashMap.put(L.f5121b, this);
+        linkedHashMap.put(L.f5087a, this);
+        linkedHashMap.put(L.f5088b, this);
         Intent intent = getIntent();
         Bundle extras = intent != null ? intent.getExtras() : null;
         if (extras != null) {
-            linkedHashMap.put(L.f5122c, extras);
+            linkedHashMap.put(L.f5089c, extras);
         }
-        return c4556d;
+        return c4561d;
     }
 
     public V getDefaultViewModelProviderFactory() {
@@ -299,13 +298,13 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
     public Object getLastCustomNonConfigurationInstance() {
         j jVar = (j) getLastNonConfigurationInstance();
         if (jVar != null) {
-            return jVar.f4448a;
+            return jVar.f4416a;
         }
         return null;
     }
 
-    @Override // D.AbstractActivityC0295n, androidx.lifecycle.InterfaceC0503v
-    public AbstractC0498p getLifecycle() {
+    @Override // D.AbstractActivityC0283m, androidx.lifecycle.InterfaceC0507v
+    public AbstractC0502p getLifecycle() {
         return super.getLifecycle();
     }
 
@@ -313,9 +312,9 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
         return (G) this.onBackPressedDispatcher$delegate.getValue();
     }
 
-    @Override // x0.InterfaceC5183e
-    public final C5181c getSavedStateRegistry() {
-        return this.savedStateRegistryController.f41757b;
+    @Override // x0.InterfaceC5182e
+    public final C5180c getSavedStateRegistry() {
+        return this.savedStateRegistryController.f41812b;
     }
 
     @Override // androidx.lifecycle.Y
@@ -326,7 +325,7 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
         if (this._viewModelStore == null) {
             j jVar = (j) getLastNonConfigurationInstance();
             if (jVar != null) {
-                this._viewModelStore = jVar.f4449b;
+                this._viewModelStore = jVar.f4417b;
             }
             if (this._viewModelStore == null) {
                 this._viewModelStore = new X();
@@ -340,19 +339,19 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
     public void initializeViewTreeOwners() {
         View decorView = getWindow().getDecorView();
         kotlin.jvm.internal.h.d(decorView, "window.decorView");
-        decorView.setTag(C5275R.id.view_tree_lifecycle_owner, this);
+        decorView.setTag(C5248R.id.view_tree_lifecycle_owner, this);
         View decorView2 = getWindow().getDecorView();
         kotlin.jvm.internal.h.d(decorView2, "window.decorView");
-        decorView2.setTag(C5275R.id.view_tree_view_model_store_owner, this);
+        decorView2.setTag(C5248R.id.view_tree_view_model_store_owner, this);
         View decorView3 = getWindow().getDecorView();
         kotlin.jvm.internal.h.d(decorView3, "window.decorView");
-        decorView3.setTag(C5275R.id.view_tree_saved_state_registry_owner, this);
+        decorView3.setTag(C5248R.id.view_tree_saved_state_registry_owner, this);
         View decorView4 = getWindow().getDecorView();
         kotlin.jvm.internal.h.d(decorView4, "window.decorView");
-        decorView4.setTag(C5275R.id.view_tree_on_back_pressed_dispatcher_owner, this);
+        decorView4.setTag(C5248R.id.view_tree_on_back_pressed_dispatcher_owner, this);
         View decorView5 = getWindow().getDecorView();
         kotlin.jvm.internal.h.d(decorView5, "window.decorView");
-        decorView5.setTag(C5275R.id.report_drawn, this);
+        decorView5.setTag(C5248R.id.report_drawn, this);
     }
 
     public void invalidateMenu() {
@@ -360,11 +359,11 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
     }
 
     @Override // android.app.Activity
-    public void onActivityResult(int i, int i6, Intent intent) {
-        if (this.activityResultRegistry.a(i, i6, intent)) {
+    public void onActivityResult(int i, int i4, Intent intent) {
+        if (this.activityResultRegistry.a(i, i4, intent)) {
             return;
         }
-        super.onActivityResult(i, i6, intent);
+        super.onActivityResult(i, i4, intent);
     }
 
     @Override // android.app.Activity
@@ -382,22 +381,22 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
         }
     }
 
-    @Override // D.AbstractActivityC0295n, android.app.Activity
+    @Override // D.AbstractActivityC0283m, android.app.Activity
     public void onCreate(Bundle bundle) {
         this.savedStateRegistryController.b(bundle);
-        C4432a c4432a = this.contextAwareHelper;
-        c4432a.getClass();
-        c4432a.f36964b = this;
-        Iterator it = c4432a.f36963a.iterator();
+        C4447a c4447a = this.contextAwareHelper;
+        c4447a.getClass();
+        c4447a.f37117b = this;
+        Iterator it = c4447a.f37116a.iterator();
         while (it.hasNext()) {
-            ((InterfaceC4433b) it.next()).a(this);
+            ((InterfaceC4448b) it.next()).a(this);
         }
         super.onCreate(bundle);
-        int i = J.f5112u;
+        int i = J.f5079u;
         androidx.lifecycle.H.b(this);
-        int i6 = this.contentLayoutId;
-        if (i6 != 0) {
-            setContentView(i6);
+        int i4 = this.contentLayoutId;
+        if (i4 != 0) {
+            setContentView(i4);
         }
     }
 
@@ -408,11 +407,11 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
             return true;
         }
         super.onCreatePanelMenu(i, menu);
-        C0339n c0339n = this.menuHostHelper;
+        C0344n c0344n = this.menuHostHelper;
         getMenuInflater();
-        Iterator it = c0339n.f2112b.iterator();
+        Iterator it = c0344n.f2200b.iterator();
         while (it.hasNext()) {
-            ((androidx.fragment.app.F) ((InterfaceC0341p) it.next())).f4824a.j();
+            ((androidx.fragment.app.F) ((InterfaceC0346p) it.next())).f4792a.j();
         }
         return true;
     }
@@ -430,13 +429,13 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
     }
 
     @Override // android.app.Activity
-    public void onMultiWindowModeChanged(boolean z3) {
+    public void onMultiWindowModeChanged(boolean z6) {
         if (this.dispatchingOnMultiWindowModeChanged) {
             return;
         }
         Iterator<N.a> it = this.onMultiWindowModeChangedListeners.iterator();
         while (it.hasNext()) {
-            it.next().accept(new C0296o(z3));
+            it.next().accept(new C0284n(z6));
         }
     }
 
@@ -453,21 +452,21 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
     @Override // android.app.Activity, android.view.Window.Callback
     public void onPanelClosed(int i, Menu menu) {
         kotlin.jvm.internal.h.e(menu, "menu");
-        Iterator it = this.menuHostHelper.f2112b.iterator();
+        Iterator it = this.menuHostHelper.f2200b.iterator();
         while (it.hasNext()) {
-            ((androidx.fragment.app.F) ((InterfaceC0341p) it.next())).f4824a.p();
+            ((androidx.fragment.app.F) ((InterfaceC0346p) it.next())).f4792a.p();
         }
         super.onPanelClosed(i, menu);
     }
 
     @Override // android.app.Activity
-    public void onPictureInPictureModeChanged(boolean z3) {
+    public void onPictureInPictureModeChanged(boolean z6) {
         if (this.dispatchingOnPictureInPictureModeChanged) {
             return;
         }
         Iterator<N.a> it = this.onPictureInPictureModeChangedListeners.iterator();
         while (it.hasNext()) {
-            it.next().accept(new O(z3));
+            it.next().accept(new N(z6));
         }
     }
 
@@ -478,9 +477,9 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
             return true;
         }
         super.onPreparePanel(i, view, menu);
-        Iterator it = this.menuHostHelper.f2112b.iterator();
+        Iterator it = this.menuHostHelper.f2200b.iterator();
         while (it.hasNext()) {
-            ((androidx.fragment.app.F) ((InterfaceC0341p) it.next())).f4824a.s();
+            ((androidx.fragment.app.F) ((InterfaceC0346p) it.next())).f4792a.s();
         }
         return true;
     }
@@ -505,24 +504,24 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
         Object onRetainCustomNonConfigurationInstance = onRetainCustomNonConfigurationInstance();
         X x9 = this._viewModelStore;
         if (x9 == null && (jVar = (j) getLastNonConfigurationInstance()) != null) {
-            x9 = jVar.f4449b;
+            x9 = jVar.f4417b;
         }
         if (x9 == null && onRetainCustomNonConfigurationInstance == null) {
             return null;
         }
         j jVar2 = new j();
-        jVar2.f4448a = onRetainCustomNonConfigurationInstance;
-        jVar2.f4449b = x9;
+        jVar2.f4416a = onRetainCustomNonConfigurationInstance;
+        jVar2.f4417b = x9;
         return jVar2;
     }
 
-    @Override // D.AbstractActivityC0295n, android.app.Activity
+    @Override // D.AbstractActivityC0283m, android.app.Activity
     public void onSaveInstanceState(Bundle outState) {
         kotlin.jvm.internal.h.e(outState, "outState");
-        if (getLifecycle() instanceof C0505x) {
-            AbstractC0498p lifecycle = getLifecycle();
+        if (getLifecycle() instanceof C0509x) {
+            AbstractC0502p lifecycle = getLifecycle();
             kotlin.jvm.internal.h.c(lifecycle, "null cannot be cast to non-null type androidx.lifecycle.LifecycleRegistry");
-            ((C0505x) lifecycle).g();
+            ((C0509x) lifecycle).g();
         }
         super.onSaveInstanceState(outState);
         this.savedStateRegistryController.c(outState);
@@ -547,69 +546,69 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
     }
 
     public Context peekAvailableContext() {
-        return this.contextAwareHelper.f36964b;
+        return this.contextAwareHelper.f37117b;
     }
 
-    public final <I, O> AbstractC4457c registerForActivityResult(final AbstractC4494a contract, final e.i registry, final InterfaceC4456b callback) {
+    public final <I, O> AbstractC4468c registerForActivityResult(final AbstractC4511a contract, final e.i registry, final InterfaceC4467b callback) {
         kotlin.jvm.internal.h.e(contract, "contract");
         kotlin.jvm.internal.h.e(registry, "registry");
         kotlin.jvm.internal.h.e(callback, "callback");
         final String key = "activity_rq#" + this.nextLocalRequestCode.getAndIncrement();
         kotlin.jvm.internal.h.e(key, "key");
-        AbstractC0498p lifecycle = getLifecycle();
-        C0505x c0505x = (C0505x) lifecycle;
-        if (c0505x.f5178d.compareTo(EnumC0497o.f5167w) >= 0) {
-            throw new IllegalStateException(("LifecycleOwner " + this + " is attempting to register while current state is " + c0505x.f5178d + ". LifecycleOwners must call register before they are STARTED.").toString());
+        AbstractC0502p lifecycle = getLifecycle();
+        C0509x c0509x = (C0509x) lifecycle;
+        if (c0509x.f5145d.compareTo(EnumC0501o.f5134w) >= 0) {
+            throw new IllegalStateException(("LifecycleOwner " + this + " is attempting to register while current state is " + c0509x.f5145d + ". LifecycleOwners must call register before they are STARTED.").toString());
         }
         registry.d(key);
-        LinkedHashMap linkedHashMap = registry.f37093c;
+        LinkedHashMap linkedHashMap = registry.f37201c;
         e.f fVar = (e.f) linkedHashMap.get(key);
         if (fVar == null) {
             fVar = new e.f(lifecycle);
         }
-        InterfaceC0501t interfaceC0501t = new InterfaceC0501t() { // from class: e.d
-            @Override // androidx.lifecycle.InterfaceC0501t
-            public final void a(InterfaceC0503v interfaceC0503v, EnumC0496n enumC0496n) {
-                EnumC0496n enumC0496n2 = EnumC0496n.ON_START;
+        InterfaceC0505t interfaceC0505t = new InterfaceC0505t() { // from class: e.d
+            @Override // androidx.lifecycle.InterfaceC0505t
+            public final void a(InterfaceC0507v interfaceC0507v, EnumC0500n enumC0500n) {
+                EnumC0500n enumC0500n2 = EnumC0500n.ON_START;
                 i iVar = i.this;
                 String str = key;
-                LinkedHashMap linkedHashMap2 = iVar.f37095e;
-                if (enumC0496n2 != enumC0496n) {
-                    if (EnumC0496n.ON_STOP == enumC0496n) {
+                LinkedHashMap linkedHashMap2 = iVar.f37203e;
+                if (enumC0500n2 != enumC0500n) {
+                    if (EnumC0500n.ON_STOP == enumC0500n) {
                         linkedHashMap2.remove(str);
                         return;
                     } else {
-                        if (EnumC0496n.ON_DESTROY == enumC0496n) {
+                        if (EnumC0500n.ON_DESTROY == enumC0500n) {
                             iVar.e(str);
                             return;
                         }
                         return;
                     }
                 }
-                InterfaceC4456b interfaceC4456b = callback;
-                AbstractC4494a abstractC4494a = contract;
-                linkedHashMap2.put(str, new C4459e(abstractC4494a, interfaceC4456b));
-                LinkedHashMap linkedHashMap3 = iVar.f37096f;
+                InterfaceC4467b interfaceC4467b = callback;
+                AbstractC4511a abstractC4511a = contract;
+                linkedHashMap2.put(str, new C4470e(abstractC4511a, interfaceC4467b));
+                LinkedHashMap linkedHashMap3 = iVar.f37204f;
                 if (linkedHashMap3.containsKey(str)) {
                     Object obj = linkedHashMap3.get(str);
                     linkedHashMap3.remove(str);
-                    interfaceC4456b.g(obj);
+                    interfaceC4467b.f(obj);
                 }
-                Bundle bundle = iVar.f37097g;
-                C4455a c4455a = (C4455a) com.bumptech.glide.f.g(bundle, str, C4455a.class);
-                if (c4455a != null) {
+                Bundle bundle = iVar.f37205g;
+                C4466a c4466a = (C4466a) com.bumptech.glide.g.o(bundle, str, C4466a.class);
+                if (c4466a != null) {
                     bundle.remove(str);
-                    interfaceC4456b.g(abstractC4494a.c(c4455a.f37078n, c4455a.f37079u));
+                    interfaceC4467b.f(abstractC4511a.c(c4466a.f37186n, c4466a.f37187u));
                 }
             }
         };
-        fVar.f37086a.a(interfaceC0501t);
-        fVar.f37087b.add(interfaceC0501t);
+        fVar.f37194a.a(interfaceC0505t);
+        fVar.f37195b.add(interfaceC0505t);
         linkedHashMap.put(key, fVar);
         return new e.g();
     }
 
-    public void removeMenuProvider(InterfaceC0341p provider) {
+    public void removeMenuProvider(InterfaceC0346p provider) {
         kotlin.jvm.internal.h.e(provider, "provider");
         this.menuHostHelper.b(provider);
     }
@@ -619,11 +618,11 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
         this.onConfigurationChangedListeners.remove(listener);
     }
 
-    public final void removeOnContextAvailableListener(InterfaceC4433b listener) {
+    public final void removeOnContextAvailableListener(InterfaceC4448b listener) {
         kotlin.jvm.internal.h.e(listener, "listener");
-        C4432a c4432a = this.contextAwareHelper;
-        c4432a.getClass();
-        c4432a.f36963a.remove(listener);
+        C4447a c4447a = this.contextAwareHelper;
+        c4447a.getClass();
+        c4447a.f37116a.remove(listener);
     }
 
     public final void removeOnMultiWindowModeChangedListener(N.a listener) {
@@ -654,19 +653,19 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
     @Override // android.app.Activity
     public void reportFullyDrawn() {
         try {
-            if (AbstractC0422a.o()) {
+            if (S0.f.o()) {
                 Trace.beginSection("reportFullyDrawn() for ComponentActivity");
             }
             super.reportFullyDrawn();
             x fullyDrawnReporter = getFullyDrawnReporter();
-            synchronized (fullyDrawnReporter.f4466a) {
+            synchronized (fullyDrawnReporter.f4434a) {
                 try {
-                    fullyDrawnReporter.f4467b = true;
-                    Iterator it = fullyDrawnReporter.f4468c.iterator();
+                    fullyDrawnReporter.f4435b = true;
+                    Iterator it = fullyDrawnReporter.f4436c.iterator();
                     while (it.hasNext()) {
                         ((I7.a) it.next()).invoke();
                     }
-                    fullyDrawnReporter.f4468c.clear();
+                    fullyDrawnReporter.f4436c.clear();
                 } finally {
                 }
             }
@@ -694,9 +693,9 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
     }
 
     @Override // android.app.Activity
-    public void startIntentSenderForResult(IntentSender intent, int i, Intent intent2, int i6, int i9, int i10) {
+    public void startIntentSenderForResult(IntentSender intent, int i, Intent intent2, int i4, int i6, int i9) {
         kotlin.jvm.internal.h.e(intent, "intent");
-        super.startIntentSenderForResult(intent, i, intent2, i6, i9, i10);
+        super.startIntentSenderForResult(intent, i, intent2, i4, i6, i9);
     }
 
     @Override // android.app.Activity
@@ -706,21 +705,21 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
     }
 
     @Override // android.app.Activity
-    public void startIntentSenderForResult(IntentSender intent, int i, Intent intent2, int i6, int i9, int i10, Bundle bundle) {
+    public void startIntentSenderForResult(IntentSender intent, int i, Intent intent2, int i4, int i6, int i9, Bundle bundle) {
         kotlin.jvm.internal.h.e(intent, "intent");
-        super.startIntentSenderForResult(intent, i, intent2, i6, i9, i10, bundle);
+        super.startIntentSenderForResult(intent, i, intent2, i4, i6, i9, bundle);
     }
 
     @Override // android.app.Activity
-    public void onMultiWindowModeChanged(boolean z3, Configuration newConfig) {
+    public void onMultiWindowModeChanged(boolean z6, Configuration newConfig) {
         kotlin.jvm.internal.h.e(newConfig, "newConfig");
         this.dispatchingOnMultiWindowModeChanged = true;
         try {
-            super.onMultiWindowModeChanged(z3, newConfig);
+            super.onMultiWindowModeChanged(z6, newConfig);
             this.dispatchingOnMultiWindowModeChanged = false;
             Iterator<N.a> it = this.onMultiWindowModeChangedListeners.iterator();
             while (it.hasNext()) {
-                it.next().accept(new C0296o(z3));
+                it.next().accept(new C0284n(z6));
             }
         } catch (Throwable th) {
             this.dispatchingOnMultiWindowModeChanged = false;
@@ -729,15 +728,15 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
     }
 
     @Override // android.app.Activity
-    public void onPictureInPictureModeChanged(boolean z3, Configuration newConfig) {
+    public void onPictureInPictureModeChanged(boolean z6, Configuration newConfig) {
         kotlin.jvm.internal.h.e(newConfig, "newConfig");
         this.dispatchingOnPictureInPictureModeChanged = true;
         try {
-            super.onPictureInPictureModeChanged(z3, newConfig);
+            super.onPictureInPictureModeChanged(z6, newConfig);
             this.dispatchingOnPictureInPictureModeChanged = false;
             Iterator<N.a> it = this.onPictureInPictureModeChangedListeners.iterator();
             while (it.hasNext()) {
-                it.next().accept(new O(z3));
+                it.next().accept(new N(z6));
             }
         } catch (Throwable th) {
             this.dispatchingOnPictureInPictureModeChanged = false;
@@ -755,20 +754,20 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
         super.setContentView(view);
     }
 
-    public void addMenuProvider(InterfaceC0341p provider, InterfaceC0503v owner) {
+    public void addMenuProvider(InterfaceC0346p provider, InterfaceC0507v owner) {
         kotlin.jvm.internal.h.e(provider, "provider");
         kotlin.jvm.internal.h.e(owner, "owner");
-        C0339n c0339n = this.menuHostHelper;
-        c0339n.f2112b.add(provider);
-        c0339n.f2111a.run();
-        AbstractC0498p lifecycle = owner.getLifecycle();
-        HashMap hashMap = c0339n.f2113c;
-        C0338m c0338m = (C0338m) hashMap.remove(provider);
-        if (c0338m != null) {
-            c0338m.f2105a.b(c0338m.f2106b);
-            c0338m.f2106b = null;
+        C0344n c0344n = this.menuHostHelper;
+        c0344n.f2200b.add(provider);
+        c0344n.f2199a.run();
+        AbstractC0502p lifecycle = owner.getLifecycle();
+        HashMap hashMap = c0344n.f2201c;
+        C0343m c0343m = (C0343m) hashMap.remove(provider);
+        if (c0343m != null) {
+            c0343m.f2193a.b(c0343m.f2194b);
+            c0343m.f2194b = null;
         }
-        hashMap.put(provider, new C0338m(lifecycle, new C0337l(0, c0339n, provider)));
+        hashMap.put(provider, new C0343m(lifecycle, new C0342l(0, c0344n, provider)));
     }
 
     @Override // android.app.Activity
@@ -781,60 +780,60 @@ public abstract class p extends AbstractActivityC0295n implements Y, InterfaceC0
         super.setContentView(view, layoutParams);
     }
 
-    public void addMenuProvider(final InterfaceC0341p provider, InterfaceC0503v owner, final EnumC0497o state) {
+    public void addMenuProvider(final InterfaceC0346p provider, InterfaceC0507v owner, final EnumC0501o state) {
         kotlin.jvm.internal.h.e(provider, "provider");
         kotlin.jvm.internal.h.e(owner, "owner");
         kotlin.jvm.internal.h.e(state, "state");
-        final C0339n c0339n = this.menuHostHelper;
-        c0339n.getClass();
-        AbstractC0498p lifecycle = owner.getLifecycle();
-        HashMap hashMap = c0339n.f2113c;
-        C0338m c0338m = (C0338m) hashMap.remove(provider);
-        if (c0338m != null) {
-            c0338m.f2105a.b(c0338m.f2106b);
-            c0338m.f2106b = null;
+        final C0344n c0344n = this.menuHostHelper;
+        c0344n.getClass();
+        AbstractC0502p lifecycle = owner.getLifecycle();
+        HashMap hashMap = c0344n.f2201c;
+        C0343m c0343m = (C0343m) hashMap.remove(provider);
+        if (c0343m != null) {
+            c0343m.f2193a.b(c0343m.f2194b);
+            c0343m.f2194b = null;
         }
-        hashMap.put(provider, new C0338m(lifecycle, new InterfaceC0501t() { // from class: O.k
-            @Override // androidx.lifecycle.InterfaceC0501t
-            public final void a(InterfaceC0503v interfaceC0503v, EnumC0496n enumC0496n) {
-                C0339n c0339n2 = C0339n.this;
-                c0339n2.getClass();
-                C0494l c0494l = EnumC0496n.Companion;
-                EnumC0497o enumC0497o = state;
-                c0494l.getClass();
-                int ordinal = enumC0497o.ordinal();
-                EnumC0496n enumC0496n2 = null;
-                EnumC0496n enumC0496n3 = ordinal != 2 ? ordinal != 3 ? ordinal != 4 ? null : EnumC0496n.ON_RESUME : EnumC0496n.ON_START : EnumC0496n.ON_CREATE;
-                InterfaceC0341p interfaceC0341p = provider;
-                Runnable runnable = c0339n2.f2111a;
-                CopyOnWriteArrayList copyOnWriteArrayList = c0339n2.f2112b;
-                if (enumC0496n == enumC0496n3) {
-                    copyOnWriteArrayList.add(interfaceC0341p);
+        hashMap.put(provider, new C0343m(lifecycle, new InterfaceC0505t() { // from class: O.k
+            @Override // androidx.lifecycle.InterfaceC0505t
+            public final void a(InterfaceC0507v interfaceC0507v, EnumC0500n enumC0500n) {
+                C0344n c0344n2 = C0344n.this;
+                c0344n2.getClass();
+                C0498l c0498l = EnumC0500n.Companion;
+                EnumC0501o enumC0501o = state;
+                c0498l.getClass();
+                int ordinal = enumC0501o.ordinal();
+                EnumC0500n enumC0500n2 = null;
+                EnumC0500n enumC0500n3 = ordinal != 2 ? ordinal != 3 ? ordinal != 4 ? null : EnumC0500n.ON_RESUME : EnumC0500n.ON_START : EnumC0500n.ON_CREATE;
+                InterfaceC0346p interfaceC0346p = provider;
+                Runnable runnable = c0344n2.f2199a;
+                CopyOnWriteArrayList copyOnWriteArrayList = c0344n2.f2200b;
+                if (enumC0500n == enumC0500n3) {
+                    copyOnWriteArrayList.add(interfaceC0346p);
                     runnable.run();
                     return;
                 }
-                EnumC0496n enumC0496n4 = EnumC0496n.ON_DESTROY;
-                if (enumC0496n == enumC0496n4) {
-                    c0339n2.b(interfaceC0341p);
+                EnumC0500n enumC0500n4 = EnumC0500n.ON_DESTROY;
+                if (enumC0500n == enumC0500n4) {
+                    c0344n2.b(interfaceC0346p);
                     return;
                 }
-                int ordinal2 = enumC0497o.ordinal();
+                int ordinal2 = enumC0501o.ordinal();
                 if (ordinal2 == 2) {
-                    enumC0496n2 = enumC0496n4;
+                    enumC0500n2 = enumC0500n4;
                 } else if (ordinal2 == 3) {
-                    enumC0496n2 = EnumC0496n.ON_STOP;
+                    enumC0500n2 = EnumC0500n.ON_STOP;
                 } else if (ordinal2 == 4) {
-                    enumC0496n2 = EnumC0496n.ON_PAUSE;
+                    enumC0500n2 = EnumC0500n.ON_PAUSE;
                 }
-                if (enumC0496n == enumC0496n2) {
-                    copyOnWriteArrayList.remove(interfaceC0341p);
+                if (enumC0500n == enumC0500n2) {
+                    copyOnWriteArrayList.remove(interfaceC0346p);
                     runnable.run();
                 }
             }
         }));
     }
 
-    public final <I, O> AbstractC4457c registerForActivityResult(AbstractC4494a contract, InterfaceC4456b callback) {
+    public final <I, O> AbstractC4468c registerForActivityResult(AbstractC4511a contract, InterfaceC4467b callback) {
         kotlin.jvm.internal.h.e(contract, "contract");
         kotlin.jvm.internal.h.e(callback, "callback");
         return registerForActivityResult(contract, this.activityResultRegistry, callback);

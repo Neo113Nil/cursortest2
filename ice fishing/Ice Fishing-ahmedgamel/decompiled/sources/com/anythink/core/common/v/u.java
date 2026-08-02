@@ -14,13 +14,13 @@ import java.util.concurrent.TimeUnit;
 public class u {
 
     /* renamed from: a, reason: collision with root package name */
-    protected static u f16889a = new u();
+    protected static u f17676a = new u();
 
     /* renamed from: b, reason: collision with root package name */
-    protected static final String f16890b = k.b(com.anythink.core.common.d.j.f12376x);
+    protected static final String f17677b = k.b(com.anythink.core.common.d.j.f13162x);
 
     /* renamed from: c, reason: collision with root package name */
-    protected static final String f16891c = ah.a(com.anythink.core.common.d.j.f12377y);
+    protected static final String f17678c = ah.a(com.anythink.core.common.d.j.f13163y);
 
     private static boolean a(int i) {
         return 6 == i;
@@ -59,7 +59,7 @@ public class u {
                 });
             }
             try {
-                countDownLatch.await(com.anythink.basead.exoplayer.i.a.f7883f, TimeUnit.MILLISECONDS);
+                countDownLatch.await(com.anythink.basead.exoplayer.i.a.f8669f, TimeUnit.MILLISECONDS);
             } catch (Exception e9) {
                 e9.printStackTrace();
             }
@@ -88,13 +88,13 @@ public class u {
     private static String b(String str) {
         try {
             String a9 = a();
-            String[] split = str.replace(a9 + com.anythink.core.common.d.j.f12378z, "").split("\\.");
+            String[] split = str.replace(a9 + com.anythink.core.common.d.j.f13164z, "").split("\\.");
             if (split != null && split.length > 1) {
                 String str2 = split[split.length - 1];
-                String str3 = f16891c;
-                String str4 = f16890b;
+                String str3 = f17678c;
+                String str4 = f17677b;
                 Locale locale = Locale.ENGLISH;
-                return a9 + com.anythink.core.common.d.j.f12378z + split[0] + com.anythink.core.common.d.j.f12378z + str4.toLowerCase(locale) + com.anythink.core.common.d.j.f12378z + str2.replace(str3, str4.toUpperCase(locale));
+                return a9 + com.anythink.core.common.d.j.f13164z + split[0] + com.anythink.core.common.d.j.f13164z + str4.toLowerCase(locale) + com.anythink.core.common.d.j.f13164z + str2.replace(str3, str4.toUpperCase(locale));
             }
         } catch (Throwable unused) {
         }
@@ -114,13 +114,13 @@ public class u {
         com.anythink.core.common.h.p c9;
         com.anythink.core.common.d.s c10;
         if (ATSDK.isCnSDK()) {
-            int g4 = bvVar.g();
-            if (g4 == 46) {
+            int g9 = bvVar.g();
+            if (g9 == 46) {
                 return d(bvVar);
             }
-            if (g4 > 100000) {
-                String m4 = bvVar.m();
-                if (!TextUtils.isEmpty(m4) && (c10 = com.anythink.core.common.d.t.b().c()) != null && c10.isContainsPlStr(m4)) {
+            if (g9 > 100000) {
+                String m9 = bvVar.m();
+                if (!TextUtils.isEmpty(m9) && (c10 = com.anythink.core.common.d.t.b().c()) != null && c10.isContainsPlStr(m9)) {
                     return d(bvVar);
                 }
                 c9 = null;
@@ -152,7 +152,7 @@ public class u {
         if (split != null) {
             try {
                 if (split.length > 1) {
-                    return split[0] + com.anythink.core.common.d.j.f12378z + split[1];
+                    return split[0] + com.anythink.core.common.d.j.f13164z + split[1];
                 }
                 return "";
             } catch (Throwable unused) {

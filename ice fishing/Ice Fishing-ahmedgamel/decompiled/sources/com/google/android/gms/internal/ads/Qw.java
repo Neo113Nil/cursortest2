@@ -1,44 +1,44 @@
 package com.google.android.gms.internal.ads;
 
-import P2.InterfaceC0372b;
-import P2.InterfaceC0373c;
+import R2.InterfaceC0376b;
+import R2.InterfaceC0377c;
 import android.content.Context;
 import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Looper;
-import p2.AbstractC4827b;
+import r2.AbstractC4897b;
 
 /* loaded from: classes2.dex */
-public final class Qw extends AbstractC4827b {
+public final class Qw extends AbstractC4897b {
 
     /* renamed from: W, reason: collision with root package name */
-    public final int f27136W;
+    public final int f27892W;
 
-    public Qw(Context context, Looper looper, InterfaceC0372b interfaceC0372b, InterfaceC0373c interfaceC0373c, int i) {
-        super(context, looper, 116, interfaceC0372b, interfaceC0373c);
-        this.f27136W = i;
+    public Qw(Context context, Looper looper, InterfaceC0376b interfaceC0376b, InterfaceC0377c interfaceC0377c, int i) {
+        super(context, looper, 116, interfaceC0376b, interfaceC0377c);
+        this.f27892W = i;
     }
 
-    @Override // P2.AbstractC0376f, N2.c
-    public final int j() {
-        return this.f27136W;
+    @Override // R2.AbstractC0380f, P2.c
+    public final int i() {
+        return this.f27892W;
     }
 
-    @Override // P2.AbstractC0376f
+    @Override // R2.AbstractC0380f
     public final IInterface p(IBinder iBinder) {
         if (iBinder == null) {
             return null;
         }
         IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.gass.internal.IGassService");
-        return queryLocalInterface instanceof Tw ? (Tw) queryLocalInterface : new Tw(iBinder, "com.google.android.gms.gass.internal.IGassService", 2);
+        return queryLocalInterface instanceof Tw ? (Tw) queryLocalInterface : new Tw(iBinder, "com.google.android.gms.gass.internal.IGassService", 1);
     }
 
-    @Override // P2.AbstractC0376f
+    @Override // R2.AbstractC0380f
     public final String v() {
         return "com.google.android.gms.gass.internal.IGassService";
     }
 
-    @Override // P2.AbstractC0376f
+    @Override // R2.AbstractC0380f
     public final String w() {
         return "com.google.android.gms.gass.START";
     }

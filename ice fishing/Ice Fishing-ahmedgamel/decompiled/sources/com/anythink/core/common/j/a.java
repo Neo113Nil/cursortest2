@@ -22,82 +22,82 @@ public class a {
     private static final String i = "anythink_ump";
 
     /* renamed from: j, reason: collision with root package name */
-    private static volatile a f14227j;
+    private static volatile a f15013j;
 
     /* renamed from: k, reason: collision with root package name */
-    private Map<Integer, c> f14236k;
+    private Map<Integer, c> f15022k;
 
     /* renamed from: l, reason: collision with root package name */
-    private Map<Integer, c> f14237l;
+    private Map<Integer, c> f15023l;
 
     /* renamed from: q, reason: collision with root package name */
-    private List<Integer> f14242q;
+    private List<Integer> f15028q;
 
     /* renamed from: a, reason: collision with root package name */
-    final int f14228a = -1;
+    final int f15014a = -1;
 
     /* renamed from: b, reason: collision with root package name */
-    final int f14229b = 100;
+    final int f15015b = 100;
 
     /* renamed from: c, reason: collision with root package name */
-    final int f14230c = 101;
+    final int f15016c = 101;
 
     /* renamed from: d, reason: collision with root package name */
-    final int f14231d = 102;
+    final int f15017d = 102;
 
     /* renamed from: e, reason: collision with root package name */
-    final int f14232e = 103;
+    final int f15018e = 103;
 
     /* renamed from: f, reason: collision with root package name */
-    final int f14233f = 104;
+    final int f15019f = 104;
 
     /* renamed from: g, reason: collision with root package name */
-    final int f14234g = 105;
+    final int f15020g = 105;
 
     /* renamed from: h, reason: collision with root package name */
-    final int f14235h = 106;
+    final int f15021h = 106;
 
     /* renamed from: n, reason: collision with root package name */
-    private String f14239n = "";
+    private String f15025n = "";
 
     /* renamed from: o, reason: collision with root package name */
-    private String f14240o = "";
+    private String f15026o = "";
 
     /* renamed from: p, reason: collision with root package name */
-    private String f14241p = "";
+    private String f15027p = "";
 
     /* renamed from: m, reason: collision with root package name */
-    private boolean f14238m = false;
+    private boolean f15024m = false;
 
     private a() {
         HashMap hashMap = new HashMap();
-        this.f14236k = hashMap;
+        this.f15022k = hashMap;
         hashMap.put(2, new c(2, 755, 1));
-        this.f14236k.put(33, new c(33, 755, 1));
-        this.f14236k.put(6, new c(6, 867, 1));
-        this.f14236k.put(3, new c(3, 333, 1));
-        this.f14236k.put(37, new c(37, 262, 1));
-        this.f14236k.put(13, new c(13, 667, 1));
-        this.f14236k.put(36, new c(36, 31, 1));
-        this.f14236k.put(58, new c(58, 512, 1));
-        this.f14236k.put(75, new c(75, 793, 1));
-        this.f14236k.put(1, new c(1, 89, 2));
-        this.f14236k.put(12, new c(12, 3234, 2));
-        this.f14236k.put(5, new c(5, 1301, 2));
-        this.f14236k.put(9, new c(9, 2898, 2));
-        this.f14236k.put(11, new c(11, 2878, 2));
-        this.f14236k.put(23, new c(23, 1782, 2));
-        this.f14236k.put(59, new c(59, 16831, 2));
-        this.f14236k.put(45, new c(45, 3183, 2));
-        this.f14236k.put(14, new c(14, 2710, 2));
-        this.f14236k.put(10, new c(10, 1985, 2));
-        this.f14236k.put(25, new c(25, 2312, 2));
-        this.f14237l = new HashMap();
-        this.f14242q = new ArrayList();
+        this.f15022k.put(33, new c(33, 755, 1));
+        this.f15022k.put(6, new c(6, 867, 1));
+        this.f15022k.put(3, new c(3, 333, 1));
+        this.f15022k.put(37, new c(37, 262, 1));
+        this.f15022k.put(13, new c(13, 667, 1));
+        this.f15022k.put(36, new c(36, 31, 1));
+        this.f15022k.put(58, new c(58, 512, 1));
+        this.f15022k.put(75, new c(75, 793, 1));
+        this.f15022k.put(1, new c(1, 89, 2));
+        this.f15022k.put(12, new c(12, 3234, 2));
+        this.f15022k.put(5, new c(5, 1301, 2));
+        this.f15022k.put(9, new c(9, 2898, 2));
+        this.f15022k.put(11, new c(11, 2878, 2));
+        this.f15022k.put(23, new c(23, 1782, 2));
+        this.f15022k.put(59, new c(59, 16831, 2));
+        this.f15022k.put(45, new c(45, 3183, 2));
+        this.f15022k.put(14, new c(14, 2710, 2));
+        this.f15022k.put(10, new c(10, 1985, 2));
+        this.f15022k.put(25, new c(25, 2312, 2));
+        this.f15023l = new HashMap();
+        this.f15028q = new ArrayList();
     }
 
     public final String c() {
-        return this.f14239n;
+        return this.f15025n;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -111,7 +111,7 @@ public class a {
     }
 
     public final synchronized boolean b() {
-        return this.f14238m;
+        return this.f15024m;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -122,22 +122,22 @@ public class a {
     }
 
     public static a a() {
-        if (f14227j == null) {
+        if (f15013j == null) {
             synchronized (a.class) {
                 try {
-                    if (f14227j == null) {
-                        f14227j = new a();
+                    if (f15013j == null) {
+                        f15013j = new a();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f14227j;
+        return f15013j;
     }
 
     public final void a(final Activity activity, final ATGDPRConsentDismissListener aTGDPRConsentDismissListener) {
-        boolean z3;
+        boolean z6;
         t.b();
         if (activity == null) {
             if (t.b().F()) {
@@ -149,23 +149,23 @@ public class a {
         final Context applicationContext = activity.getApplicationContext();
         try {
             d.a(applicationContext);
-            z3 = true;
+            z6 = true;
         } catch (Throwable unused) {
-            z3 = false;
+            z6 = false;
         }
-        final boolean z6 = z3;
+        final boolean z9 = z6;
         if (t.b().F()) {
-            b("Has UMP SDK:".concat(String.valueOf(z6)));
+            b("Has UMP SDK:".concat(String.valueOf(z9)));
         }
         com.anythink.core.common.v.b.b.a().b(new Runnable() { // from class: com.anythink.core.common.j.a.1
             @Override // java.lang.Runnable
             public final void run() {
                 if (!TextUtils.isEmpty(b.a(applicationContext).b())) {
-                    if (z6) {
+                    if (z9) {
                         d.a(applicationContext).a(activity, new d.a() { // from class: com.anythink.core.common.j.a.1.1
                             @Override // com.anythink.core.common.j.d.a
-                            public final void a(boolean z9) {
-                                a.b("(UMP Update)UMP onConsentSuccess isRealTimeDialogDismiss:".concat(String.valueOf(z9)));
+                            public final void a(boolean z10) {
+                                a.b("(UMP Update)UMP onConsentSuccess isRealTimeDialogDismiss:".concat(String.valueOf(z10)));
                             }
 
                             @Override // com.anythink.core.common.j.d.a
@@ -176,21 +176,21 @@ public class a {
                     }
                     a.this.a(aTGDPRConsentDismissListener, "", 101);
                 } else {
-                    if (!z6) {
+                    if (!z9) {
                         a.this.a(applicationContext, aTGDPRConsentDismissListener);
                         return;
                     }
                     d.a(applicationContext).a(activity, new d.a() { // from class: com.anythink.core.common.j.a.1.2
                         @Override // com.anythink.core.common.j.d.a
-                        public final void a(boolean z9) {
+                        public final void a(boolean z10) {
                             if (t.b().F()) {
-                                a.b("UMP onConsentSuccess isRealTimeDialogDismiss:".concat(String.valueOf(z9)));
+                                a.b("UMP onConsentSuccess isRealTimeDialogDismiss:".concat(String.valueOf(z10)));
                             }
-                            if (z9) {
+                            if (z10) {
                                 a.c(applicationContext);
                             }
                             AnonymousClass1 anonymousClass1 = AnonymousClass1.this;
-                            a.this.a(aTGDPRConsentDismissListener, "", z9 ? 105 : 103);
+                            a.this.a(aTGDPRConsentDismissListener, "", z10 ? 105 : 103);
                         }
 
                         @Override // com.anythink.core.common.j.d.a
@@ -228,11 +228,11 @@ public class a {
                 }
 
                 @Override // com.anythink.core.api.NetTrafficeCallback
-                public final void onResultCallback(boolean z3) {
-                    if (z3) {
+                public final void onResultCallback(boolean z6) {
+                    if (z6) {
                         v.a(context).a(context, new ATGDPRAuthCallback() { // from class: com.anythink.core.common.j.a.2.1
                             @Override // com.anythink.core.api.ATGDPRAuthCallback
-                            public final void onAuthResult(int i6) {
+                            public final void onAuthResult(int i4) {
                                 AnonymousClass2 anonymousClass2 = AnonymousClass2.this;
                                 a.this.a(aTGDPRConsentDismissListener, "", 100);
                             }
@@ -252,15 +252,15 @@ public class a {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(final ATGDPRConsentDismissListener aTGDPRConsentDismissListener, final String str, final int i6) {
+    public void a(final ATGDPRConsentDismissListener aTGDPRConsentDismissListener, final String str, final int i4) {
         t.b().b(new Runnable() { // from class: com.anythink.core.common.j.a.3
             @Override // java.lang.Runnable
             public final void run() {
-                if (aTGDPRConsentDismissListener == null || a.this.f14242q.contains(Integer.valueOf(aTGDPRConsentDismissListener.hashCode()))) {
+                if (aTGDPRConsentDismissListener == null || a.this.f15028q.contains(Integer.valueOf(aTGDPRConsentDismissListener.hashCode()))) {
                     return;
                 }
-                a.this.f14242q.add(Integer.valueOf(aTGDPRConsentDismissListener.hashCode()));
-                aTGDPRConsentDismissListener.onDismiss(new ATGDPRConsentDismissListener.ConsentDismissInfo(str, i6));
+                a.this.f15028q.add(Integer.valueOf(aTGDPRConsentDismissListener.hashCode()));
+                aTGDPRConsentDismissListener.onDismiss(new ATGDPRConsentDismissListener.ConsentDismissInfo(str, i4));
             }
         });
     }
@@ -268,24 +268,24 @@ public class a {
     public final synchronized void a(Context context) {
         boolean a9;
         try {
-            if (TextUtils.isEmpty(this.f14239n)) {
-                this.f14239n = b.a(context).b();
-                this.f14241p = b.a(context).d();
-                this.f14240o = b.a(context).c();
+            if (TextUtils.isEmpty(this.f15025n)) {
+                this.f15025n = b.a(context).b();
+                this.f15027p = b.a(context).d();
+                this.f15026o = b.a(context).c();
             }
-            b("IABTCF_TCString:" + this.f14239n);
-            b("IABTCF_VendorConsents:" + this.f14241p);
-            b("IABTCF_AddtlConsent:" + this.f14240o);
-            if (TextUtils.isEmpty(this.f14239n)) {
-                this.f14238m = true;
+            b("IABTCF_TCString:" + this.f15025n);
+            b("IABTCF_VendorConsents:" + this.f15027p);
+            b("IABTCF_AddtlConsent:" + this.f15026o);
+            if (TextUtils.isEmpty(this.f15025n)) {
+                this.f15024m = true;
                 return;
             }
-            this.f14238m = false;
-            this.f14237l.clear();
+            this.f15024m = false;
+            this.f15023l.clear();
             ArrayList arrayList = new ArrayList();
-            if (!TextUtils.isEmpty(this.f14240o)) {
+            if (!TextUtils.isEmpty(this.f15026o)) {
                 try {
-                    String[] split = this.f14240o.split("~");
+                    String[] split = this.f15026o.split("~");
                     if (split.length >= 2) {
                         for (String str : split[1].split("\\.")) {
                             arrayList.add(Integer.valueOf(Integer.parseInt(str)));
@@ -295,45 +295,45 @@ public class a {
                     th.getMessage();
                 }
             }
-            for (Map.Entry<Integer, c> entry : this.f14236k.entrySet()) {
+            for (Map.Entry<Integer, c> entry : this.f15022k.entrySet()) {
                 Integer key = entry.getKey();
                 c value = entry.getValue();
                 int c9 = value.c();
                 if (c9 == 1) {
-                    a9 = a(this.f14241p, value.b());
+                    a9 = a(this.f15027p, value.b());
                 } else if (c9 == 2) {
                     a9 = arrayList.size() == 0 ? false : arrayList.contains(Integer.valueOf(value.b()));
                 } else {
-                    this.f14237l.put(key, value);
+                    this.f15023l.put(key, value);
                     b("initNetworkConsentMap " + value.a() + ":" + value.d());
                 }
                 value.a(a9);
-                this.f14237l.put(key, value);
+                this.f15023l.put(key, value);
                 b("initNetworkConsentMap " + value.a() + ":" + value.d());
             }
             c(context);
             StringBuilder sb = new StringBuilder("initNetworkConsentMap others:");
             sb.append(v.a(context).a() == 0);
             b(sb.toString());
-            this.f14238m = true;
+            this.f15024m = true;
         } catch (Throwable th2) {
             throw th2;
         }
     }
 
-    public final synchronized boolean a(Context context, int i6) {
+    public final synchronized boolean a(Context context, int i4) {
         c cVar;
-        if (this.f14237l.size() > 0 && (cVar = this.f14237l.get(Integer.valueOf(i6))) != null) {
+        if (this.f15023l.size() > 0 && (cVar = this.f15023l.get(Integer.valueOf(i4))) != null) {
             return cVar.d();
         }
         return v.a(context).c();
     }
 
-    private static boolean a(String str, int i6) {
-        if (!TextUtils.isEmpty(str) && i6 > 0) {
+    private static boolean a(String str, int i4) {
+        if (!TextUtils.isEmpty(str) && i4 > 0) {
             try {
-                if (str.length() >= i6) {
-                    if (str.charAt(i6 - 1) == '1') {
+                if (str.length() >= i4) {
+                    if (str.charAt(i4 - 1) == '1') {
                         return true;
                     }
                 }
@@ -343,25 +343,25 @@ public class a {
         return false;
     }
 
-    private static boolean a(List<Integer> list, int i6) {
+    private static boolean a(List<Integer> list, int i4) {
         if (list.size() == 0) {
             return false;
         }
-        return list.contains(Integer.valueOf(i6));
+        return list.contains(Integer.valueOf(i4));
     }
 
     public final synchronized JSONObject a(JSONObject jSONObject) {
-        if (!b() && TextUtils.isEmpty(this.f14239n)) {
-            this.f14239n = b.a(t.b().g()).b();
-            this.f14241p = b.a(t.b().g()).d();
-            this.f14240o = b.a(t.b().g()).c();
+        if (!b() && TextUtils.isEmpty(this.f15025n)) {
+            this.f15025n = b.a(t.b().g()).b();
+            this.f15027p = b.a(t.b().g()).d();
+            this.f15026o = b.a(t.b().g()).c();
         }
         try {
-            if (!TextUtils.isEmpty(this.f14239n)) {
-                jSONObject.put("tc_string", this.f14239n);
+            if (!TextUtils.isEmpty(this.f15025n)) {
+                jSONObject.put("tc_string", this.f15025n);
             }
-            if (!TextUtils.isEmpty(this.f14240o)) {
-                jSONObject.put("addtl_consent", this.f14240o);
+            if (!TextUtils.isEmpty(this.f15026o)) {
+                jSONObject.put("addtl_consent", this.f15026o);
             }
         } catch (Throwable unused) {
         }

@@ -13,35 +13,35 @@ import org.json.JSONObject;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    private boolean f16071a;
+    private boolean f16858a;
 
     /* renamed from: b, reason: collision with root package name */
-    private long f16072b;
+    private long f16859b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f16073c;
+    private int f16860c;
 
     /* renamed from: d, reason: collision with root package name */
-    private long f16074d;
+    private long f16861d;
 
     /* renamed from: e, reason: collision with root package name */
-    private int f16075e;
+    private int f16862e;
 
     /* renamed from: f, reason: collision with root package name */
-    private long f16076f;
+    private long f16863f;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f16077g;
+    private int f16864g;
 
     /* renamed from: h, reason: collision with root package name */
-    private long f16078h;
+    private long f16865h;
     private int[] i;
 
     /* renamed from: j, reason: collision with root package name */
-    private final List<h> f16079j = Collections.synchronizedList(new ArrayList());
+    private final List<h> f16866j = Collections.synchronizedList(new ArrayList());
 
     /* renamed from: k, reason: collision with root package name */
-    private final Map<String, h> f16080k = new ConcurrentHashMap();
+    private final Map<String, h> f16867k = new ConcurrentHashMap();
 
     public static g a(JSONObject jSONObject) {
         if (jSONObject == null) {
@@ -49,13 +49,13 @@ public final class g {
         }
         try {
             g gVar = new g();
-            gVar.f16072b = jSONObject.optLong("pre_load_time", 30000L);
-            gVar.f16073c = jSONObject.optInt("pre_load_num", 1);
-            gVar.f16074d = jSONObject.optLong("pre_load_timeout", 30000L);
-            gVar.f16075e = jSONObject.optInt("pre_load_mode", 1);
-            gVar.f16076f = jSONObject.optLong("shared_delay_time_in_wf", com.anythink.basead.exoplayer.i.a.f7883f);
-            gVar.f16078h = jSONObject.optLong("shared_retry_time_in_loadfailed", 15000L);
-            gVar.f16077g = jSONObject.optInt("shared_retry_count_in_loadfailed", 6);
+            gVar.f16859b = jSONObject.optLong("pre_load_time", 30000L);
+            gVar.f16860c = jSONObject.optInt("pre_load_num", 1);
+            gVar.f16861d = jSONObject.optLong("pre_load_timeout", 30000L);
+            gVar.f16862e = jSONObject.optInt("pre_load_mode", 1);
+            gVar.f16863f = jSONObject.optLong("shared_delay_time_in_wf", com.anythink.basead.exoplayer.i.a.f8669f);
+            gVar.f16865h = jSONObject.optLong("shared_retry_time_in_loadfailed", 15000L);
+            gVar.f16864g = jSONObject.optInt("shared_retry_count_in_loadfailed", 6);
             gVar.i = b(jSONObject);
             JSONArray optJSONArray = jSONObject.optJSONArray("formats");
             if (optJSONArray != null) {
@@ -65,14 +65,14 @@ public final class g {
                         JSONObject optJSONObject = optJSONArray.optJSONObject(i);
                         if (optJSONObject != null) {
                             h hVar = new h();
-                            hVar.f16081a = optJSONObject.optInt("format");
-                            hVar.f16082b = optJSONObject.optString(com.anythink.core.common.m.e.bk, "");
-                            hVar.f16083c = optJSONObject.optInt("req_pacing");
-                            hVar.f16084d = optJSONObject.optInt("ad_cache", 1);
-                            hVar.f16085e = optJSONObject.optDouble("ad_ecpm", -1.0d);
-                            hVar.f16089j = gVar;
-                            gVar.f16079j.add(hVar);
-                            gVar.f16080k.put(hVar.f16082b, hVar);
+                            hVar.f16868a = optJSONObject.optInt("format");
+                            hVar.f16869b = optJSONObject.optString(com.anythink.core.common.m.e.bk, "");
+                            hVar.f16870c = optJSONObject.optInt("req_pacing");
+                            hVar.f16871d = optJSONObject.optInt("ad_cache", 1);
+                            hVar.f16872e = optJSONObject.optDouble("ad_ecpm", -1.0d);
+                            hVar.f16876j = gVar;
+                            gVar.f16866j.add(hVar);
+                            gVar.f16867k.put(hVar.f16869b, hVar);
                         }
                     } catch (Throwable unused) {
                     }
@@ -105,46 +105,46 @@ public final class g {
     }
 
     private int k() {
-        return this.f16075e;
+        return this.f16862e;
     }
 
     public final long c() {
-        return this.f16074d;
+        return this.f16861d;
     }
 
     public final Map<String, h> d() {
-        return this.f16080k;
+        return this.f16867k;
     }
 
     public final List<h> e() {
-        return this.f16079j;
+        return this.f16866j;
     }
 
     public final long f() {
-        return this.f16076f;
+        return this.f16863f;
     }
 
     public final int g() {
-        if (this.f16077g <= 0) {
-            this.f16077g = 6;
+        if (this.f16864g <= 0) {
+            this.f16864g = 6;
         }
-        return this.f16077g;
+        return this.f16864g;
     }
 
     public final long h() {
-        return this.f16078h;
+        return this.f16865h;
     }
 
     public final boolean i() {
-        return this.f16071a;
+        return this.f16858a;
     }
 
     public final void j() {
-        this.f16071a = true;
+        this.f16858a = true;
     }
 
     public final String toString() {
-        return "SharedPlaceConfig{isPreLocalConfig=" + this.f16071a + ", delayPreloadTime=" + this.f16072b + ", parallelReqNum=" + this.f16073c + ", preLoadTimeout=" + this.f16074d + ", preloadMode=" + this.f16075e + ", loadDelayTimeInWF=" + this.f16076f + ", retryLoadCountInFailed=" + this.f16077g + ", retryLoadDelayTimeInfFailed=" + this.f16078h + ", loadModes=" + Arrays.toString(this.i) + ", sharedPlaceInfoList=" + this.f16079j + ", placementIdToSharedPlaceInfoMap=" + this.f16080k + '}';
+        return "SharedPlaceConfig{isPreLocalConfig=" + this.f16858a + ", delayPreloadTime=" + this.f16859b + ", parallelReqNum=" + this.f16860c + ", preLoadTimeout=" + this.f16861d + ", preloadMode=" + this.f16862e + ", loadDelayTimeInWF=" + this.f16863f + ", retryLoadCountInFailed=" + this.f16864g + ", retryLoadDelayTimeInfFailed=" + this.f16865h + ", loadModes=" + Arrays.toString(this.i) + ", sharedPlaceInfoList=" + this.f16866j + ", placementIdToSharedPlaceInfoMap=" + this.f16867k + '}';
     }
 
     private static int[] b(JSONObject jSONObject) {
@@ -168,18 +168,18 @@ public final class g {
     }
 
     public final int b() {
-        return this.f16073c;
+        return this.f16860c;
     }
 
     public final long a() {
-        return this.f16072b;
+        return this.f16859b;
     }
 
     public final boolean a(int i) {
         int[] iArr = this.i;
         if (iArr != null) {
-            for (int i6 : iArr) {
-                if (i6 == i) {
+            for (int i4 : iArr) {
+                if (i4 == i) {
                     return true;
                 }
             }

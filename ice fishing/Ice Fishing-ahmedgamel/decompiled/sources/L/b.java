@@ -6,16 +6,16 @@ import java.util.Comparator;
 public final /* synthetic */ class b implements Comparator {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f1583n;
+    public final /* synthetic */ int f1692n;
 
     public /* synthetic */ b(int i) {
-        this.f1583n = i;
+        this.f1692n = i;
     }
 
     @Override // java.util.Comparator
     public final int compare(Object obj, Object obj2) {
         int a9;
-        switch (this.f1583n) {
+        switch (this.f1692n) {
             case 0:
                 byte[] bArr = (byte[]) obj;
                 byte[] bArr2 = (byte[]) obj2;

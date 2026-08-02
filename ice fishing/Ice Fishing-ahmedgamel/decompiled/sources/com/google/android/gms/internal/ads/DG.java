@@ -7,13 +7,13 @@ import java.security.GeneralSecurityException;
 public abstract class DG {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final /* synthetic */ int f24377a = 0;
+    public static final /* synthetic */ int f25122a = 0;
 
     static {
         Charset.forName("UTF-8");
     }
 
-    public static final C3240gK a(String str) {
+    public static final C3263gK a(String str) {
         byte[] bArr = new byte[str.length()];
         for (int i = 0; i < str.length(); i++) {
             char charAt = str.charAt(i);
@@ -25,10 +25,10 @@ public abstract class DG {
             }
             bArr[i] = (byte) charAt;
         }
-        return C3240gK.a(bArr);
+        return C3263gK.a(bArr);
     }
 
-    public static final C3240gK b(String str) {
+    public static final C3263gK b(String str) {
         byte[] bArr = new byte[str.length()];
         for (int i = 0; i < str.length(); i++) {
             char charAt = str.charAt(i);
@@ -40,7 +40,7 @@ public abstract class DG {
             }
             bArr[i] = (byte) charAt;
         }
-        return C3240gK.a(bArr);
+        return C3263gK.a(bArr);
     }
 
     public static boolean c(byte[] bArr, byte[] bArr2) {

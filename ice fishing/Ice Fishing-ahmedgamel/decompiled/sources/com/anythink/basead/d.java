@@ -47,16 +47,16 @@ public final class d {
                 hashMap.put(ATAdConst.NETWORK_CUSTOM_KEY.WS_ACTION, new ad.a() { // from class: com.anythink.basead.d.1
 
                     /* renamed from: b, reason: collision with root package name */
-                    private j f6107b;
+                    private j f6893b;
 
                     {
-                        this.f6107b = new j(w.this.q(), "");
+                        this.f6893b = new j(w.this.q(), "");
                     }
 
                     @Override // com.anythink.core.common.h.ad.a
                     public final void a(Map<String, Object> map) {
-                        j jVar = this.f6107b;
-                        jVar.f6222r = map;
+                        j jVar = this.f6893b;
+                        jVar.f7008r = map;
                         com.anythink.basead.b.b.a(10, w.this, jVar);
                         com.anythink.core.common.a.a.a();
                         com.anythink.core.common.a.a.c(t.b().g(), ((r) w.this).e());
@@ -64,8 +64,8 @@ public final class d {
 
                     @Override // com.anythink.core.common.h.ad.a
                     public final void b(Map<String, Object> map) {
-                        j jVar = this.f6107b;
-                        jVar.f6222r = map;
+                        j jVar = this.f6893b;
+                        jVar.f7008r = map;
                         com.anythink.basead.b.b.a(36, w.this, jVar);
                     }
                 });
@@ -84,7 +84,7 @@ public final class d {
                 hashMap.put("app_version", rVar.N());
                 hashMap.put("app_privacy", rVar.O());
                 hashMap.put("app_permission", rVar.P());
-                hashMap.put(g.a.f12959N, rVar.h());
+                hashMap.put(g.a.f13745N, rVar.h());
                 hashMap.put("app_url", rVar.H());
             }
         }

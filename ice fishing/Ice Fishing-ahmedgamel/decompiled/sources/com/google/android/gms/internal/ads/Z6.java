@@ -13,25 +13,25 @@ import java.util.concurrent.TimeUnit;
 public abstract class Z6 {
 
     /* renamed from: a, reason: collision with root package name */
-    public static boolean f28839a = false;
+    public static boolean f29619a = false;
 
     /* renamed from: b, reason: collision with root package name */
-    public static MessageDigest f28840b;
+    public static MessageDigest f29620b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final Object f28841c = new Object();
+    public static final Object f29621c = new Object();
 
     /* renamed from: d, reason: collision with root package name */
-    public static final Object f28842d = new Object();
+    public static final Object f29622d = new Object();
 
     /* renamed from: e, reason: collision with root package name */
-    public static final CountDownLatch f28843e = new CountDownLatch(1);
+    public static final CountDownLatch f29623e = new CountDownLatch(1);
 
     public static void a() {
-        synchronized (f28842d) {
+        synchronized (f29622d) {
             try {
-                if (!f28839a) {
-                    f28839a = true;
+                if (!f29619a) {
+                    f29619a = true;
                     new Thread(new Y6(0)).start();
                 }
             } catch (Throwable th) {
@@ -46,14 +46,14 @@ public abstract class Z6 {
         if (length > 0) {
             int i = length + 254;
             vector = new Vector();
-            for (int i6 = 0; i6 < i / com.anythink.basead.exoplayer.k.p.f8473b; i6++) {
-                int i9 = i6 * com.anythink.basead.exoplayer.k.p.f8473b;
+            for (int i4 = 0; i4 < i / com.anythink.basead.exoplayer.k.p.f9259b; i4++) {
+                int i6 = i4 * com.anythink.basead.exoplayer.k.p.f9259b;
                 try {
                     int length2 = bArr.length;
-                    if (length2 - i9 > 255) {
-                        length2 = i9 + com.anythink.basead.exoplayer.k.p.f8473b;
+                    if (length2 - i6 > 255) {
+                        length2 = i6 + com.anythink.basead.exoplayer.k.p.f9259b;
                     }
-                    vector.add(Arrays.copyOfRange(bArr, i9, length2));
+                    vector.add(Arrays.copyOfRange(bArr, i6, length2));
                 } catch (IndexOutOfBoundsException unused) {
                 }
             }
@@ -62,16 +62,16 @@ public abstract class Z6 {
             }
             R6 A9 = S6.A();
             int size = vector.size();
-            for (int i10 = 0; i10 < size; i10++) {
-                HK s9 = JK.s(d((byte[]) vector.get(i10), str, false), 0, 256);
+            for (int i9 = 0; i9 < size; i9++) {
+                HK s9 = JK.s(d((byte[]) vector.get(i9), str, false), 0, 256);
                 A9.h();
-                ((S6) A9.f27721u).B(s9);
+                ((S6) A9.f28504u).B(s9);
             }
             byte[] c9 = c(bArr);
-            HK hk = JK.f25675u;
+            HK hk = JK.f26428u;
             HK s10 = JK.s(c9, 0, c9.length);
             A9.h();
-            ((S6) A9.f27721u).C(s10);
+            ((S6) A9.f28504u).C(s10);
             return A9;
         }
         vector = null;
@@ -84,7 +84,7 @@ public abstract class Z6 {
     
         r1.reset();
         r1.update(r6);
-        r6 = com.google.android.gms.internal.ads.Z6.f28840b.digest();
+        r6 = com.google.android.gms.internal.ads.Z6.f29620b.digest();
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -92,12 +92,12 @@ public abstract class Z6 {
     public static byte[] c(byte[] bArr) {
         byte[] digest;
         MessageDigest messageDigest;
-        synchronized (f28841c) {
+        synchronized (f29621c) {
             try {
                 a();
                 MessageDigest messageDigest2 = null;
                 try {
-                    if (f28843e.await(2L, TimeUnit.SECONDS) && (messageDigest = f28840b) != null) {
+                    if (f29623e.await(2L, TimeUnit.SECONDS) && (messageDigest = f29620b) != null) {
                         messageDigest2 = messageDigest;
                     }
                 } catch (InterruptedException unused) {
@@ -110,49 +110,49 @@ public abstract class Z6 {
         throw new NoSuchAlgorithmException("Cannot compute hash");
     }
 
-    public static byte[] d(byte[] bArr, String str, boolean z3) {
+    public static byte[] d(byte[] bArr, String str, boolean z6) {
         byte[] array;
         int length = bArr.length;
-        int i = true != z3 ? 255 : 239;
+        int i = true != z6 ? 255 : 239;
         if (length > i) {
-            C3979u6 C0 = H6.C0();
+            C4002u6 C0 = H6.C0();
             C0.n(4096L);
             bArr = ((H6) C0.j()).b();
         }
-        int i6 = i + 1;
+        int i4 = i + 1;
         int length2 = bArr.length;
         byte b9 = (byte) length2;
         if (length2 < i) {
             byte[] bArr2 = new byte[i - length2];
             new SecureRandom().nextBytes(bArr2);
-            array = ByteBuffer.allocate(i6).put(b9).put(bArr).put(bArr2).array();
+            array = ByteBuffer.allocate(i4).put(b9).put(bArr).put(bArr2).array();
         } else {
-            array = ByteBuffer.allocate(i6).put(b9).put(bArr).array();
+            array = ByteBuffer.allocate(i4).put(b9).put(bArr).array();
         }
-        if (z3) {
+        if (z6) {
             array = ByteBuffer.allocate(256).put(c(array)).put(array).array();
         }
         byte[] bArr3 = new byte[256];
-        InterfaceC2905a7[] interfaceC2905a7Arr = (InterfaceC2905a7[]) new C3173f7(0).f30088K2;
-        int length3 = interfaceC2905a7Arr.length;
-        for (int i9 = 0; i9 < 12; i9++) {
-            interfaceC2905a7Arr[i9].a(array, bArr3);
+        InterfaceC2928a7[] interfaceC2928a7Arr = (InterfaceC2928a7[]) new C3196f7(0).f30875K2;
+        int length3 = interfaceC2928a7Arr.length;
+        for (int i6 = 0; i6 < 12; i6++) {
+            interfaceC2928a7Arr[i6].a(array, bArr3);
         }
         if (str != null && str.length() > 0) {
             if (str.length() > 32) {
                 str = str.substring(0, 32);
             }
             T6 t6 = new T6(str.getBytes("UTF-8"), 0);
+            int i9 = 0;
             int i10 = 0;
-            int i11 = 0;
-            for (int i12 = 0; i12 < 256; i12++) {
-                i10 = (i10 + 1) & com.anythink.basead.exoplayer.k.p.f8473b;
-                byte[] bArr4 = t6.f27694a;
-                byte b10 = bArr4[i10];
-                i11 = (i11 + b10) & com.anythink.basead.exoplayer.k.p.f8473b;
-                bArr4[i10] = bArr4[i11];
-                bArr4[i11] = b10;
-                bArr3[i12] = (byte) (bArr4[(bArr4[i10] + b10) & com.anythink.basead.exoplayer.k.p.f8473b] ^ bArr3[i12]);
+            for (int i11 = 0; i11 < 256; i11++) {
+                i9 = (i9 + 1) & com.anythink.basead.exoplayer.k.p.f9259b;
+                byte[] bArr4 = t6.f28477a;
+                byte b10 = bArr4[i9];
+                i10 = (i10 + b10) & com.anythink.basead.exoplayer.k.p.f9259b;
+                bArr4[i9] = bArr4[i10];
+                bArr4[i10] = b10;
+                bArr3[i11] = (byte) (bArr4[(bArr4[i9] + b10) & com.anythink.basead.exoplayer.k.p.f9259b] ^ bArr3[i11]);
             }
         }
         return bArr3;

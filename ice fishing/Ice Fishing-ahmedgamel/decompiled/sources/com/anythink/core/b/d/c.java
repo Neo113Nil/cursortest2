@@ -1,8 +1,8 @@
 package com.anythink.core.b.d;
 
-import D.y;
 import android.text.TextUtils;
 import android.util.Log;
+import com.IceFishing.LiveIceFishing.k;
 import com.anythink.core.api.ATAdConst;
 import com.anythink.core.api.ATAdMixBidInfo;
 import com.anythink.core.api.ATBaseAdAdapter;
@@ -19,7 +19,6 @@ import com.anythink.core.common.h.aw;
 import com.anythink.core.common.h.bv;
 import com.anythink.core.common.h.cd;
 import com.anythink.core.common.h.n;
-import com.anythink.core.common.k;
 import com.anythink.core.common.m.i;
 import com.anythink.core.common.m.q;
 import com.anythink.core.common.u.e;
@@ -40,193 +39,193 @@ import org.json.JSONObject;
 public class c {
 
     /* renamed from: A, reason: collision with root package name */
-    public static final int f11740A = 7;
+    public static final int f12526A = 7;
 
     /* renamed from: B, reason: collision with root package name */
-    public static final int f11741B = 8;
+    public static final int f12527B = 8;
 
     /* renamed from: C, reason: collision with root package name */
-    public static final int f11742C = 9;
+    public static final int f12528C = 9;
 
     /* renamed from: D, reason: collision with root package name */
-    public static final int f11743D = 10;
+    public static final int f12529D = 10;
 
     /* renamed from: E, reason: collision with root package name */
-    public static final int f11744E = 11;
+    public static final int f12530E = 11;
 
     /* renamed from: F, reason: collision with root package name */
-    public static final String f11745F = "100";
+    public static final String f12531F = "100";
 
     /* renamed from: G, reason: collision with root package name */
-    public static final String f11746G = "102";
+    public static final String f12532G = "102";
 
     /* renamed from: H, reason: collision with root package name */
-    public static final String f11747H = "103";
+    public static final String f12533H = "103";
 
     /* renamed from: I, reason: collision with root package name */
-    public static final String f11748I = "103";
+    public static final String f12534I = "103";
     public static final String J = "2";
 
     /* renamed from: K, reason: collision with root package name */
-    public static final String f11749K = "1";
+    public static final String f12535K = "1";
 
     /* renamed from: a, reason: collision with root package name */
-    static final String f11750a = "c";
+    static final String f12536a = "c";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f11751b = "${AUCTION_PRICE}";
+    public static final String f12537b = "${AUCTION_PRICE}";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f11752c = "${AUCTION_PRICE_INT}";
+    public static final String f12538c = "${AUCTION_PRICE_INT}";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final String f11753d = "${AUCTION_LOSS}";
+    public static final String f12539d = "${AUCTION_LOSS}";
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f11754e = "${AUCTION_SEAT_ID}";
+    public static final String f12540e = "${AUCTION_SEAT_ID}";
 
     /* renamed from: f, reason: collision with root package name */
-    public static final String f11755f = "${AUCTION_BID_TO_WIN}";
+    public static final String f12541f = "${AUCTION_BID_TO_WIN}";
 
     /* renamed from: g, reason: collision with root package name */
-    public static final String f11756g = "${AUCTION_CURRENCY}";
+    public static final String f12542g = "${AUCTION_CURRENCY}";
 
     /* renamed from: h, reason: collision with root package name */
-    public static final String f11757h = "${SECOND_PRICE}";
+    public static final String f12543h = "${SECOND_PRICE}";
     public static final String i = "{__BIDDER__}";
 
     /* renamed from: j, reason: collision with root package name */
-    public static final String f11758j = "${AUCTION_LOSS_BD}";
+    public static final String f12544j = "${AUCTION_LOSS_BD}";
 
     /* renamed from: k, reason: collision with root package name */
-    public static final String f11759k = "{__TS__}";
+    public static final String f12545k = "{__TS__}";
 
     /* renamed from: l, reason: collision with root package name */
-    public static final String f11760l = "__ADN_TYPE__";
+    public static final String f12546l = "__ADN_TYPE__";
 
     /* renamed from: m, reason: collision with root package name */
-    public static final String f11761m = "__ADN_NAME__";
+    public static final String f12547m = "__ADN_NAME__";
 
     /* renamed from: n, reason: collision with root package name */
-    public static final String f11762n = "__AD_N__";
+    public static final String f12548n = "__AD_N__";
 
     /* renamed from: o, reason: collision with root package name */
-    public static final String f11763o = "__AD_TI__";
+    public static final String f12549o = "__AD_TI__";
 
     /* renamed from: p, reason: collision with root package name */
-    public static final String f11764p = "__AD_REQID__";
+    public static final String f12550p = "__AD_REQID__";
 
     /* renamed from: q, reason: collision with root package name */
-    public static final String f11765q = "__IS_S__";
+    public static final String f12551q = "__IS_S__";
 
     /* renamed from: r, reason: collision with root package name */
-    public static final String f11766r = "__IS_C__";
+    public static final String f12552r = "__IS_C__";
 
     /* renamed from: s, reason: collision with root package name */
-    public static final String f11767s = "__AD_ECPM__";
+    public static final String f12553s = "__AD_ECPM__";
 
     /* renamed from: t, reason: collision with root package name */
-    public static final String f11768t = "${WIN_PRICE}";
+    public static final String f12554t = "${WIN_PRICE}";
 
     /* renamed from: u, reason: collision with root package name */
-    public static final int f11769u = 1;
+    public static final int f12555u = 1;
 
     /* renamed from: v, reason: collision with root package name */
-    public static final int f11770v = 2;
+    public static final int f12556v = 2;
 
     /* renamed from: w, reason: collision with root package name */
-    public static final int f11771w = 3;
+    public static final int f12557w = 3;
 
     /* renamed from: x, reason: collision with root package name */
-    public static final int f11772x = 4;
+    public static final int f12558x = 4;
 
     /* renamed from: y, reason: collision with root package name */
-    public static final int f11773y = 5;
+    public static final int f12559y = 5;
 
     /* renamed from: z, reason: collision with root package name */
-    public static final int f11774z = 6;
+    public static final int f12560z = 6;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final int f11795a = 1;
+        public static final int f12581a = 1;
 
         /* renamed from: b, reason: collision with root package name */
-        public static final int f11796b = 2;
+        public static final int f12582b = 2;
     }
 
     public static class b {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final int f11797a = 1;
+        public static final int f12583a = 1;
 
         /* renamed from: b, reason: collision with root package name */
-        public static final int f11798b = 2;
+        public static final int f12584b = 2;
 
         /* renamed from: c, reason: collision with root package name */
-        public static final int f11799c = 3;
+        public static final int f12585c = 3;
 
         /* renamed from: d, reason: collision with root package name */
-        public static final int f11800d = 4;
+        public static final int f12586d = 4;
 
         /* renamed from: e, reason: collision with root package name */
-        public static final int f11801e = 21;
+        public static final int f12587e = 21;
 
         /* renamed from: f, reason: collision with root package name */
-        public static final int f11802f = 22;
+        public static final int f12588f = 22;
 
         /* renamed from: g, reason: collision with root package name */
-        public static final int f11803g = 23;
+        public static final int f12589g = 23;
 
         /* renamed from: h, reason: collision with root package name */
-        public static final int f11804h = 24;
+        public static final int f12590h = 24;
         public static final int i = 25;
 
         /* renamed from: j, reason: collision with root package name */
-        public static final int f11805j = 26;
+        public static final int f12591j = 26;
 
         /* renamed from: k, reason: collision with root package name */
-        public static final int f11806k = 27;
+        public static final int f12592k = 27;
 
         /* renamed from: l, reason: collision with root package name */
-        public static final int f11807l = 28;
+        public static final int f12593l = 28;
 
         /* renamed from: m, reason: collision with root package name */
-        public static final int f11808m = 29;
+        public static final int f12594m = 29;
 
         /* renamed from: n, reason: collision with root package name */
-        public static final int f11809n = 30;
+        public static final int f12595n = 30;
 
         /* renamed from: o, reason: collision with root package name */
-        public static final int f11810o = 31;
+        public static final int f12596o = 31;
 
         /* renamed from: p, reason: collision with root package name */
-        public static final int f11811p = 32;
+        public static final int f12597p = 32;
 
         /* renamed from: q, reason: collision with root package name */
-        public static final int f11812q = 33;
+        public static final int f12598q = 33;
 
         /* renamed from: r, reason: collision with root package name */
-        public static final int f11813r = 34;
+        public static final int f12599r = 34;
 
         /* renamed from: s, reason: collision with root package name */
-        public static final int f11814s = 35;
+        public static final int f12600s = 35;
 
         /* renamed from: t, reason: collision with root package name */
-        public static final int f11815t = 36;
+        public static final int f12601t = 36;
 
-        public static boolean a(int i6) {
-            return i6 == 34 || i6 == 35;
+        public static boolean a(int i4) {
+            return i4 == 34 || i4 == 35;
         }
     }
 
-    public static void a(com.anythink.core.common.h.c cVar, boolean z3, int i6) {
+    public static void a(com.anythink.core.common.h.c cVar, boolean z6, int i4) {
         try {
             bv unitGroupInfo = cVar.e().getUnitGroupInfo();
-            n i9 = cVar.i();
+            n i6 = cVar.i();
             ad R8 = unitGroupInfo.R();
             if (R8 != null) {
-                a(R8, new aw(z3 ? 2 : 1, unitGroupInfo, i9), true, i6);
+                a(R8, new aw(z6 ? 2 : 1, unitGroupInfo, i6), true, i4);
             }
         } catch (Throwable unused) {
         }
@@ -243,35 +242,35 @@ public class c {
         a(cVar, false, 25);
     }
 
-    public static void a(com.anythink.core.common.h.c cVar, int i6) {
+    public static void a(com.anythink.core.common.h.c cVar, int i4) {
         try {
             bv unitGroupInfo = cVar.e().getUnitGroupInfo();
-            n i9 = cVar.i();
+            n i6 = cVar.i();
             ad R8 = unitGroupInfo.R();
             if (R8 != null) {
-                aw awVar = new aw(i6, unitGroupInfo, i9);
-                int i10 = i6 == 2 ? 34 : i6 == 11 ? 36 : 30;
+                aw awVar = new aw(i4, unitGroupInfo, i6);
+                int i9 = i4 == 2 ? 34 : i4 == 11 ? 36 : 30;
                 unitGroupInfo.u();
-                a(R8, awVar, true, i10);
+                a(R8, awVar, true, i9);
             }
         } catch (Throwable unused) {
         }
     }
 
-    public static void a(final n nVar, final List<bv> list, final long j6, final int i6, final int i9) {
+    public static void a(final n nVar, final List<bv> list, final long j6, final int i4, final int i6) {
         com.anythink.core.common.v.b.b.a().a(new Runnable() { // from class: com.anythink.core.b.d.c.1
             @Override // java.lang.Runnable
             public final void run() {
                 if (n.this == null) {
-                    y.w("BiddingUtil#sendFinishHBTracking", "placementTrackingInfo is null.");
+                    k.x("BiddingUtil#sendFinishHBTracking", "placementTrackingInfo is null.");
                     return;
                 }
                 JSONArray jSONArray = new JSONArray();
                 n.this.s(j6);
                 n.this.t(System.currentTimeMillis());
-                n.this.f14025t = i6;
-                for (int i10 = 0; i10 < list.size(); i10++) {
-                    bv bvVar = (bv) list.get(i10);
+                n.this.f14811t = i4;
+                for (int i9 = 0; i9 < list.size(); i9++) {
+                    bv bvVar = (bv) list.get(i9);
                     if (bvVar.q() != 7 && bvVar.o()) {
                         try {
                             int t6 = bvVar.t();
@@ -283,13 +282,13 @@ public class c {
                             jSONObject.put("bid_start_t", bvVar.b());
                             jSONObject.put("bidprice", bvVar.Q() ? String.valueOf(bvVar.D()) : "0");
                             jSONObject.put("bidprice_cny", bvVar.Q() ? String.valueOf(bvVar.c()) : "0");
-                            jSONObject.put(k.ap, bvVar.Q() ? String.valueOf(bvVar.at()) : "0");
+                            jSONObject.put(com.anythink.core.common.k.ap, bvVar.Q() ? String.valueOf(bvVar.at()) : "0");
                             jSONObject.put("nw_firm_id", String.valueOf(bvVar.g()));
-                            jSONObject.put("tp_bid_id", bvVar.R() != null ? bvVar.R().f13425g : null);
+                            jSONObject.put("tp_bid_id", bvVar.R() != null ? bvVar.R().f14211g : null);
                             jSONObject.put("rl_bid_status", bvVar.T());
                             jSONObject.put("errormsg", bvVar.F());
                             int ae = bvVar.ae();
-                            String valueOf = String.valueOf(i9);
+                            String valueOf = String.valueOf(i6);
                             if (!valueOf.equals("0")) {
                                 if (ae == -1) {
                                     try {
@@ -303,8 +302,8 @@ public class c {
                             jSONObject.put("unit_type", bvVar.aM());
                             ad R8 = bvVar.R();
                             jSONObject.put("dd_ori_price", R8 != null ? String.valueOf(R8.originPrice) : "0");
-                            jSONObject.put(k.aN, bvVar.aQ());
-                            jSONObject.put(k.aQ, bvVar.aS());
+                            jSONObject.put(com.anythink.core.common.k.aN, bvVar.aQ());
+                            jSONObject.put(com.anythink.core.common.k.aQ, bvVar.aS());
                             jSONObject.put("bid_floor", bvVar.ar());
                             jSONObject.put("en_p", R8 != null ? R8.getExtra() : "");
                             if (R8 != null && R8.t() != 0) {
@@ -313,8 +312,8 @@ public class c {
                                 n.this.B(R8.u());
                                 n.this.C(R8.v());
                             }
-                            jSONObject.put(k.bi, bvVar.bq());
-                            jSONObject.put(k.bj, bvVar.bp());
+                            jSONObject.put(com.anythink.core.common.k.bi, bvVar.bq());
+                            jSONObject.put(com.anythink.core.common.k.bj, bvVar.bp());
                             jSONObject.put("network_pl_id", ak.a(bvVar, (ATBaseAdAdapter) null));
                             jSONArray.put(jSONObject);
                         } catch (Exception unused2) {
@@ -331,42 +330,42 @@ public class c {
                         }
                     }
                 }
-                n.this.K(String.valueOf(i9));
+                n.this.K(String.valueOf(i6));
                 n.this.x(jSONArray.toString());
                 com.anythink.core.common.u.c.a(t.b().g()).a(11, n.this);
             }
         });
     }
 
-    public static void a(ad adVar, boolean z3, double d2, boolean z6, boolean z9) {
+    public static void a(ad adVar, boolean z6, double d9, boolean z9, boolean z10) {
         if (adVar == null) {
             return;
         }
-        double d9 = adVar.f13429l;
-        String str = adVar.f13427j;
-        int i6 = adVar.f13422d;
-        if (d9 > 0.0d) {
-            d2 *= d9;
+        double d10 = adVar.f14215l;
+        String str = adVar.f14213j;
+        int i4 = adVar.f14208d;
+        if (d10 > 0.0d) {
+            d9 *= d10;
         }
-        if (z3) {
+        if (z6) {
             if (TextUtils.isEmpty(str)) {
                 str = adVar.displayNoticeUrl;
             }
             if (!TextUtils.isEmpty(str)) {
-                a(str.replace(f11751b, com.anythink.core.b.d.a.a(adVar, d2)), (q) null);
+                a(str.replace(f12537b, com.anythink.core.b.d.a.a(adVar, d9)), (q) null);
             }
         } else {
             String str2 = adVar.displayNoticeUrl;
             if (!TextUtils.isEmpty(str2)) {
-                a(str2.replace(f11751b, com.anythink.core.b.d.a.a(adVar, d2)).replace(f11753d, com.anythink.core.b.d.a.a(z6, 2, i6, z9)), (q) null);
+                a(str2.replace(f12537b, com.anythink.core.b.d.a.a(adVar, d9)).replace(f12539d, com.anythink.core.b.d.a.a(z9, 2, i4, z10)), (q) null);
             }
         }
         synchronized (adVar) {
             try {
                 ATBiddingNotice aTBiddingNotice = adVar.biddingNotice;
                 if (aTBiddingNotice != null) {
-                    aTBiddingNotice.notifyBidDisplay(z3, d2);
-                    if (z3) {
+                    aTBiddingNotice.notifyBidDisplay(z6, d9);
+                    if (z6) {
                         adVar.e();
                     }
                 }
@@ -402,40 +401,40 @@ public class c {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static void a(final ad adVar, final aw awVar, boolean z3, int i6) {
-        boolean z6;
+    public static void a(final ad adVar, final aw awVar, boolean z6, int i4) {
         boolean z9;
-        int i9;
         boolean z10;
+        int i6;
+        boolean z11;
         double sortPrice;
         String str;
-        double d2;
+        double d9;
         String a9;
+        int i9;
+        boolean z12;
         int i10;
-        boolean z11;
-        int i11;
         final String str2;
         bv bvVar;
-        final double d9;
-        int i12;
+        final double d10;
+        int i11;
         ad adVar2;
-        int i13;
-        double d10;
-        boolean z12;
-        int i14;
-        int i15;
-        Map<String, Object> map;
-        boolean z13;
+        int i12;
         double d11;
+        boolean z13;
+        int i13;
+        int i14;
+        Map<String, Object> map;
+        boolean z14;
+        double d12;
         String a10;
         aw awVar2;
         ad.a k9;
-        double d12;
+        double d13;
         Map<String, Object> aX;
         if (adVar == null) {
             return;
         }
-        if (z3) {
+        if (z6) {
             f.a().a(awVar.j(), adVar);
             if (awVar.f()) {
                 com.anythink.core.common.a.a.a().b(t.b().g(), adVar.token);
@@ -444,24 +443,24 @@ public class c {
         if ((awVar.h() != 8 && adVar.d()) || adVar.useType == 2) {
             return;
         }
-        awVar.b(i6);
+        awVar.b(i4);
         double sortPrice2 = adVar.getSortPrice();
         double rmbPrice = adVar.getRmbPrice();
-        int i16 = adVar.f13422d;
-        bv f3 = adVar.f();
-        boolean z14 = false;
-        if (f3 != null) {
-            boolean z15 = ak.b(f3) && f3.R() != null && f3.R().s();
-            double a11 = p.a(f3);
-            double b9 = p.b(f3);
-            int g4 = f3.g();
-            z9 = f3.o();
+        int i15 = adVar.f14208d;
+        bv f2 = adVar.f();
+        boolean z15 = false;
+        if (f2 != null) {
+            boolean z16 = ak.b(f2) && f2.R() != null && f2.R().s();
+            double a11 = p.a(f2);
+            double b9 = p.b(f2);
+            int g9 = f2.g();
+            z10 = f2.o();
             try {
-                if (awVar.h() != 8 && (aX = f3.aX()) != null) {
+                if (awVar.h() != 8 && (aX = f2.aX()) != null) {
                     ATAdMixBidInfo.BidEntity bidEntity = new ATAdMixBidInfo.BidEntity();
-                    Object obj = aX.get(j.w.f12604A);
-                    Object obj2 = aX.get(j.w.f12605B);
-                    Object obj3 = aX.get(j.w.f12606C);
+                    Object obj = aX.get(j.w.f13390A);
+                    Object obj2 = aX.get(j.w.f13391B);
+                    Object obj3 = aX.get(j.w.f13392C);
                     if (obj != null) {
                         bidEntity.setAdTittle((String) obj);
                     }
@@ -476,129 +475,129 @@ public class c {
             } catch (Exception e9) {
                 e9.printStackTrace();
             }
-            z6 = z15;
+            z9 = z16;
             sortPrice2 = a11;
-            i16 = g4;
+            i15 = g9;
             rmbPrice = b9;
         } else {
-            z6 = false;
-            z9 = true;
+            z9 = false;
+            z10 = true;
         }
         if (awVar.g() > 0.0d && awVar.g() > sortPrice2) {
             sortPrice2 = awVar.g();
-            i16 = adVar.f13422d;
-            z9 = true;
+            i15 = adVar.f14208d;
+            z10 = true;
         }
         double c9 = awVar.c();
         String e10 = awVar.e();
         if (c9 > 0.0d) {
             sortPrice2 = c9;
-            z10 = TextUtils.equals("102", e10) || TextUtils.equals("100", e10);
-            i9 = -1;
+            z11 = TextUtils.equals("102", e10) || TextUtils.equals("100", e10);
+            i6 = -1;
         } else {
-            i9 = i16;
-            z10 = z9;
+            i6 = i15;
+            z11 = z10;
         }
-        int h9 = awVar.h();
-        double d13 = sortPrice2;
-        if (adVar.f13422d == 28) {
+        int h3 = awVar.h();
+        double d14 = sortPrice2;
+        if (adVar.f14208d == 28) {
             sortPrice = adVar.originPrice;
         } else {
             sortPrice = adVar.getSortPrice();
         }
-        double d14 = sortPrice;
-        int i17 = adVar.f13422d;
+        double d15 = sortPrice;
+        int i16 = adVar.f14208d;
         double rmbPrice2 = adVar.getRmbPrice();
-        if (d13 <= d14) {
-            awVar.a(Double.valueOf(d13));
-            double d15 = 0.01d;
-            if (z6) {
+        if (d14 <= d15) {
+            awVar.a(Double.valueOf(d14));
+            double d16 = 0.01d;
+            if (z9) {
                 bv a12 = a(adVar);
                 if (a12 != null) {
-                    d12 = p.a(a12);
+                    d13 = p.a(a12);
                 }
-                d12 = d14;
+                d13 = d15;
                 int D8 = awVar.D();
                 if (D8 == 2) {
                     str = e10;
                 } else if (D8 != 3) {
                     if (D8 == 4) {
                         str = e10;
-                        d2 = 0.0d;
+                        d9 = 0.0d;
                     } else if (D8 != 5) {
                         str = e10;
-                        d15 = d12 + 0.01d;
-                        d12 = ((d12 * 1.3d) - d15) * new Random(System.currentTimeMillis()).nextDouble();
+                        d16 = d13 + 0.01d;
+                        d13 = ((d13 * 1.3d) - d16) * new Random(System.currentTimeMillis()).nextDouble();
                     } else {
                         str = e10;
-                        d2 = -1.0d;
+                        d9 = -1.0d;
                     }
                 }
-                d2 = d12 + d15;
+                d9 = d13 + d16;
             } else {
                 str = e10;
-                d2 = d14 + 0.01d;
+                d9 = d15 + 0.01d;
             }
-            a9 = com.anythink.core.b.d.a.a(z10, h9, i17, z6);
+            a9 = com.anythink.core.b.d.a.a(z11, h3, i16, z9);
             if (str != null) {
                 a9 = str;
             }
-            if (b.a(i6)) {
+            if (b.a(i4)) {
                 double a13 = a(awVar.F());
-                if (a13 > 0.0d && a13 > d2) {
-                    d2 = a13;
+                if (a13 > 0.0d && a13 > d9) {
+                    d9 = a13;
                 }
             }
-            awVar.a(d2);
+            awVar.a(d9);
             awVar.a(a9);
-            awVar.c(i9);
+            awVar.c(i6);
             awVar.b(rmbPrice);
             awVar.c(rmbPrice2);
-            n z16 = awVar.z();
-            z16.a(ab.a(awVar));
-            com.anythink.core.common.u.c.a(t.b().g()).a(24, z16);
+            n z17 = awVar.z();
+            z17.a(ab.a(awVar));
+            com.anythink.core.common.u.c.a(t.b().g()).a(24, z17);
             awVar.a(adVar.biddingNotice != null);
             if (awVar.u() && a9.equals("-1")) {
-                double d16 = d2;
-                boolean z17 = z6;
-                i12 = 1;
+                double d17 = d9;
+                boolean z18 = z9;
+                i11 = 1;
                 String str3 = a9;
-                i11 = i17;
-                bvVar = f3;
-                z11 = z10;
-                i10 = i9;
-                e.a(awVar, d16, str3, 0.0d, d16, adVar.getSortPrice(), adVar.j(), "200", "", z17);
-                d9 = d16;
+                i10 = i16;
+                bvVar = f2;
+                z12 = z11;
+                i9 = i6;
+                e.a(awVar, d17, str3, 0.0d, d17, adVar.getSortPrice(), adVar.j(), "200", "", z18);
+                d10 = d17;
                 str2 = str3;
-                z6 = z17;
+                z9 = z18;
             } else {
-                i10 = i9;
-                z11 = z10;
-                i11 = i17;
+                i9 = i6;
+                z12 = z11;
+                i10 = i16;
                 str2 = a9;
-                bvVar = f3;
-                d9 = d2;
-                i12 = 1;
+                bvVar = f2;
+                d10 = d9;
+                i11 = 1;
             }
-            double a14 = a(adVar, d9);
-            com.anythink.core.common.v.d.a().a(awVar.z(), awVar.A(), com.anythink.core.common.v.d.f16731d, "2");
+            double a14 = a(adVar, d10);
+            com.anythink.core.common.v.d.a().a(awVar.z(), awVar.A(), com.anythink.core.common.v.d.f17518d, "2");
             if (awVar.f()) {
                 com.anythink.core.common.a.a.a().a(adVar);
             }
             if (awVar.u() || str2.equals("-1")) {
                 adVar2 = adVar;
-                i13 = i11;
+                i12 = i10;
             } else {
                 bv bvVar2 = bvVar;
-                boolean z18 = z11;
+                boolean z19 = z12;
+                int i17 = i9;
                 int i18 = i10;
-                int i19 = i11;
-                Map<String, Object> a15 = com.anythink.core.b.d.a.a(z18, i18, i19, bvVar2, adVar);
+                Map<String, Object> a15 = com.anythink.core.b.d.a.a(z19, i17, i18, bvVar2, adVar);
                 if (awVar.h() == 8) {
-                    a15.put(ATBiddingNotice.ADN_REQUEST_IS_SHOW, Integer.valueOf(i12));
-                    int i20 = i12;
-                    if (awVar.b() == i20) {
-                        a15.put(ATBiddingNotice.ADN_REQUEST_IS_CLICK, Integer.valueOf(i20));
+                    a15.put(ATBiddingNotice.ADN_REQUEST_IS_SHOW, Integer.valueOf(i11));
+                    int i19 = i11;
+                    if (awVar.b() == i19) {
+                        a15.put(ATBiddingNotice.ADN_REQUEST_IS_CLICK, Integer.valueOf(i19));
                     } else {
                         a15.put(ATBiddingNotice.ADN_REQUEST_IS_CLICK, 0);
                     }
@@ -608,8 +607,8 @@ public class c {
                             aX2 = new HashMap<>();
                         }
                         ATAdMixBidInfo.BidEntity a16 = awVar.a();
-                        aX2.put(j.w.f12604A, a16.getAdTittle());
-                        aX2.put(j.w.f12605B, a16.getAdUserName());
+                        aX2.put(j.w.f13390A, a16.getAdTittle());
+                        aX2.put(j.w.f13391B, a16.getAdUserName());
                         a15.put(ATBiddingNotice.ADN_EXTRA_NATIVE_MATERIAL_INFO, aX2);
                     }
                 }
@@ -618,28 +617,28 @@ public class c {
                         ATBiddingNotice aTBiddingNotice = adVar.biddingNotice;
                         if (aTBiddingNotice != null) {
                             try {
-                                String a17 = com.anythink.core.b.d.a.a(z18, h9);
-                                final double d17 = d9;
-                                z12 = z18;
-                                z13 = true;
-                                final boolean z19 = z6;
+                                String a17 = com.anythink.core.b.d.a.a(z19, h3);
+                                final double d18 = d10;
+                                z13 = z19;
+                                z14 = true;
+                                final boolean z20 = z9;
                                 try {
                                     ATIBiddingResultListener aTIBiddingResultListener = new ATIBiddingResultListener() { // from class: com.anythink.core.b.d.c.2
 
                                         /* renamed from: d, reason: collision with root package name */
-                                        final /* synthetic */ double f11783d = 0.0d;
+                                        final /* synthetic */ double f12569d = 0.0d;
 
                                         @Override // com.anythink.core.api.ATIBiddingResultListener
-                                        public final void reportFailed(int i21, String str4, Map<String, Object> map2) {
+                                        public final void reportFailed(int i20, String str4, Map<String, Object> map2) {
                                             if (isNeedWait()) {
-                                                e.a(aw.this, d9, str2, this.f11783d, d17, adVar.getSortPrice(), adVar.j(), String.valueOf(i21), str4, z19);
+                                                e.a(aw.this, d10, str2, this.f12569d, d18, adVar.getSortPrice(), adVar.j(), String.valueOf(i20), str4, z20);
                                             }
                                         }
 
                                         @Override // com.anythink.core.api.ATIBiddingResultListener
                                         public final void reportSuccess(Map<String, Object> map2) {
                                             if (isNeedWait()) {
-                                                e.a(aw.this, d9, str2, this.f11783d, d17, adVar.getSortPrice(), adVar.j(), "200", "", z19);
+                                                e.a(aw.this, d10, str2, this.f12569d, d18, adVar.getSortPrice(), adVar.j(), "200", "", z20);
                                             }
                                         }
                                     };
@@ -649,33 +648,33 @@ public class c {
                                     } catch (Throwable unused) {
                                     }
                                     if (aTIBiddingResultListener.isNeedWait()) {
-                                        z6 = z19;
-                                        d10 = a14;
+                                        z9 = z20;
+                                        d11 = a14;
+                                        i13 = i17;
                                         i14 = i18;
-                                        i15 = i19;
                                         map = a15;
-                                        d11 = d9;
+                                        d12 = d10;
                                     } else {
                                         try {
-                                            i14 = i18;
+                                            i13 = i17;
                                             try {
-                                                z6 = z19;
+                                                z9 = z20;
                                                 map = a15;
-                                                i15 = i19;
-                                                d10 = a14;
+                                                i14 = i18;
+                                                d11 = a14;
                                                 try {
-                                                    e.a(awVar, d9, str2, 0.0d, d9, adVar.getSortPrice(), adVar.j(), "200", "", z6);
-                                                    d11 = d9;
+                                                    e.a(awVar, d10, str2, 0.0d, d10, adVar.getSortPrice(), adVar.j(), "200", "", z9);
+                                                    d12 = d10;
                                                 } catch (Throwable th) {
                                                     th = th;
-                                                    d11 = d9;
+                                                    d12 = d10;
                                                     try {
                                                         th.printStackTrace();
                                                         Log.e("anythink", "notifyBidLoss: error: " + th.getMessage());
-                                                        z14 = z13;
+                                                        z15 = z14;
                                                         String str4 = str2;
-                                                        final double d18 = d10;
-                                                        a10 = com.anythink.core.b.d.a.a(adVar, awVar, i14, z12, d18, d14, str4, map);
+                                                        final double d19 = d11;
+                                                        a10 = com.anythink.core.b.d.a.a(adVar, awVar, i13, z13, d19, d15, str4, map);
                                                         final String str5 = str4;
                                                         if (TextUtils.isEmpty(a10)) {
                                                         }
@@ -684,8 +683,8 @@ public class c {
                                                         adVar2 = adVar;
                                                         if (k9 != null) {
                                                         }
-                                                        i13 = i15;
-                                                        if (i13 != 28) {
+                                                        i12 = i14;
+                                                        if (i12 != 28) {
                                                         }
                                                     } catch (Throwable th2) {
                                                         th = th2;
@@ -694,17 +693,17 @@ public class c {
                                                 }
                                             } catch (Throwable th3) {
                                                 th = th3;
-                                                d10 = a14;
-                                                z6 = z19;
-                                                i15 = i19;
+                                                d11 = a14;
+                                                z9 = z20;
+                                                i14 = i18;
                                                 map = a15;
-                                                d11 = d9;
+                                                d12 = d10;
                                                 th.printStackTrace();
                                                 Log.e("anythink", "notifyBidLoss: error: " + th.getMessage());
-                                                z14 = z13;
+                                                z15 = z14;
                                                 String str42 = str2;
-                                                final double d182 = d10;
-                                                a10 = com.anythink.core.b.d.a.a(adVar, awVar, i14, z12, d182, d14, str42, map);
+                                                final double d192 = d11;
+                                                a10 = com.anythink.core.b.d.a.a(adVar, awVar, i13, z13, d192, d15, str42, map);
                                                 final String str52 = str42;
                                                 if (TextUtils.isEmpty(a10)) {
                                                 }
@@ -713,24 +712,24 @@ public class c {
                                                 adVar2 = adVar;
                                                 if (k9 != null) {
                                                 }
-                                                i13 = i15;
-                                                if (i13 != 28) {
+                                                i12 = i14;
+                                                if (i12 != 28) {
                                                 }
                                             }
                                         } catch (Throwable th4) {
                                             th = th4;
-                                            d10 = a14;
-                                            z6 = z19;
+                                            d11 = a14;
+                                            z9 = z20;
+                                            i13 = i17;
                                             i14 = i18;
-                                            i15 = i19;
                                             map = a15;
-                                            d11 = d9;
+                                            d12 = d10;
                                             th.printStackTrace();
                                             Log.e("anythink", "notifyBidLoss: error: " + th.getMessage());
-                                            z14 = z13;
+                                            z15 = z14;
                                             String str422 = str2;
-                                            final double d1822 = d10;
-                                            a10 = com.anythink.core.b.d.a.a(adVar, awVar, i14, z12, d1822, d14, str422, map);
+                                            final double d1922 = d11;
+                                            a10 = com.anythink.core.b.d.a.a(adVar, awVar, i13, z13, d1922, d15, str422, map);
                                             final String str522 = str422;
                                             if (TextUtils.isEmpty(a10)) {
                                             }
@@ -739,90 +738,90 @@ public class c {
                                             adVar2 = adVar;
                                             if (k9 != null) {
                                             }
-                                            i13 = i15;
-                                            if (i13 != 28) {
+                                            i12 = i14;
+                                            if (i12 != 28) {
                                             }
                                         }
                                     }
                                 } catch (Throwable th5) {
                                     th = th5;
-                                    z6 = z19;
-                                    d10 = a14;
+                                    z9 = z20;
+                                    d11 = a14;
                                 }
                             } catch (Throwable th6) {
                                 th = th6;
-                                d10 = a14;
-                                z12 = z18;
+                                d11 = a14;
+                                z13 = z19;
+                                i13 = i17;
                                 i14 = i18;
-                                i15 = i19;
                                 map = a15;
-                                z13 = true;
+                                z14 = true;
                             }
-                            z14 = z13;
+                            z15 = z14;
                         } else {
-                            d10 = a14;
-                            z12 = z18;
+                            d11 = a14;
+                            z13 = z19;
+                            i13 = i17;
                             i14 = i18;
-                            i15 = i19;
                             map = a15;
-                            d11 = d9;
+                            d12 = d10;
                         }
                         String str4222 = str2;
-                        final double d18222 = d10;
-                        a10 = com.anythink.core.b.d.a.a(adVar, awVar, i14, z12, d18222, d14, str4222, map);
+                        final double d19222 = d11;
+                        a10 = com.anythink.core.b.d.a.a(adVar, awVar, i13, z13, d19222, d15, str4222, map);
                         final String str5222 = str4222;
                         if (TextUtils.isEmpty(a10)) {
-                            final double d19 = d11;
-                            final boolean z20 = z6;
-                            final boolean z21 = z14;
-                            final double d20 = d11;
+                            final double d20 = d12;
+                            final boolean z21 = z9;
+                            final boolean z22 = z15;
+                            final double d21 = d12;
                             com.anythink.core.common.m.b bVar = new com.anythink.core.common.m.b() { // from class: com.anythink.core.b.d.c.3
 
                                 /* renamed from: f, reason: collision with root package name */
-                                final /* synthetic */ double f11792f = 0.0d;
+                                final /* synthetic */ double f12578f = 0.0d;
 
                                 @Override // com.anythink.core.common.m.q
-                                public final void onLoadError(int i21, String str6, AdError adError) {
+                                public final void onLoadError(int i20, String str6, AdError adError) {
                                     String str7;
                                     String str8;
-                                    if (ad.this.biddingNotice != null || z21) {
+                                    if (ad.this.biddingNotice != null || z22) {
                                         return;
                                     }
                                     if (adError != null) {
                                         str7 = adError.getPlatformCode();
                                         str8 = !TextUtils.isEmpty(adError.getPlatformMSG()) ? adError.getPlatformMSG() : adError.toString();
                                     } else {
-                                        str7 = com.anythink.core.common.res.image.c.f16246a;
+                                        str7 = com.anythink.core.common.res.image.c.f17033a;
                                         str8 = "";
                                     }
-                                    e.a(awVar, d20, str5222, this.f11792f, d19, ad.this.getSortPrice(), ad.this.j(), str7, str8, z20, d18222);
+                                    e.a(awVar, d21, str5222, this.f12578f, d20, ad.this.getSortPrice(), ad.this.j(), str7, str8, z21, d19222);
                                 }
 
                                 @Override // com.anythink.core.common.m.q
-                                public final void onLoadFinish(int i21, Object obj4) {
+                                public final void onLoadFinish(int i20, Object obj4) {
                                     ad adVar3 = ad.this;
-                                    if (adVar3.biddingNotice != null || z21) {
+                                    if (adVar3.biddingNotice != null || z22) {
                                         return;
                                     }
-                                    e.a(awVar, d20, str5222, this.f11792f, d19, adVar3.getSortPrice(), ad.this.j(), "200", "", z20, d18222);
+                                    e.a(awVar, d21, str5222, this.f12578f, d20, adVar3.getSortPrice(), ad.this.j(), "200", "", z21, d19222);
                                 }
                             };
                             str5222 = str5222;
-                            d18222 = d18222;
+                            d19222 = d19222;
                             a(a10, bVar);
                         } else {
-                            double d21 = d11;
-                            boolean z22 = z14;
-                            if (adVar.biddingNotice == null && !z22) {
+                            double d22 = d12;
+                            boolean z23 = z15;
+                            if (adVar.biddingNotice == null && !z23) {
                                 awVar2 = awVar;
-                                e.a(awVar2, d21, str5222, 0.0d, d21, adVar.getSortPrice(), adVar.j(), "200", "", z6, d18222);
-                                d18222 = d18222;
+                                e.a(awVar2, d22, str5222, 0.0d, d22, adVar.getSortPrice(), adVar.j(), "200", "", z9, d19222);
+                                d19222 = d19222;
                                 k9 = adVar.k();
                                 adVar2 = adVar;
                                 if (k9 != null) {
-                                    k9.b(com.anythink.core.b.d.a.a(adVar2, awVar2, d18222, str5222));
+                                    k9.b(com.anythink.core.b.d.a.a(adVar2, awVar2, d19222, str5222));
                                 }
-                                i13 = i15;
+                                i12 = i14;
                             }
                         }
                         awVar2 = awVar;
@@ -830,13 +829,13 @@ public class c {
                         adVar2 = adVar;
                         if (k9 != null) {
                         }
-                        i13 = i15;
+                        i12 = i14;
                     } catch (Throwable th7) {
                         th = th7;
                     }
                 }
             }
-            if (i13 != 28) {
+            if (i12 != 28) {
                 adVar2.e();
                 adVar2.h();
                 return;
@@ -844,39 +843,39 @@ public class c {
             return;
         }
         str = e10;
-        d2 = d13;
-        a9 = com.anythink.core.b.d.a.a(z10, h9, i17, z6);
+        d9 = d14;
+        a9 = com.anythink.core.b.d.a.a(z11, h3, i16, z9);
         if (str != null) {
         }
-        if (b.a(i6)) {
+        if (b.a(i4)) {
         }
-        awVar.a(d2);
+        awVar.a(d9);
         awVar.a(a9);
-        awVar.c(i9);
+        awVar.c(i6);
         awVar.b(rmbPrice);
         awVar.c(rmbPrice2);
-        n z162 = awVar.z();
-        z162.a(ab.a(awVar));
-        com.anythink.core.common.u.c.a(t.b().g()).a(24, z162);
+        n z172 = awVar.z();
+        z172.a(ab.a(awVar));
+        com.anythink.core.common.u.c.a(t.b().g()).a(24, z172);
         awVar.a(adVar.biddingNotice != null);
         if (awVar.u()) {
         }
-        i10 = i9;
-        z11 = z10;
-        i11 = i17;
+        i9 = i6;
+        z12 = z11;
+        i10 = i16;
         str2 = a9;
-        bvVar = f3;
-        d9 = d2;
-        i12 = 1;
-        double a142 = a(adVar, d9);
-        com.anythink.core.common.v.d.a().a(awVar.z(), awVar.A(), com.anythink.core.common.v.d.f16731d, "2");
+        bvVar = f2;
+        d10 = d9;
+        i11 = 1;
+        double a142 = a(adVar, d10);
+        com.anythink.core.common.v.d.a().a(awVar.z(), awVar.A(), com.anythink.core.common.v.d.f17518d, "2");
         if (awVar.f()) {
         }
         if (awVar.u()) {
         }
         adVar2 = adVar;
-        i13 = i11;
-        if (i13 != 28) {
+        i12 = i10;
+        if (i12 != 28) {
         }
     }
 
@@ -918,7 +917,7 @@ public class c {
         if (cdVar.d() != 0) {
             bvVar.F(cdVar.d());
         }
-        R8.f13439v = cdVar;
+        R8.f14225v = cdVar;
         if (internalNetworkInfoMap != null) {
             Object obj = internalNetworkInfoMap.get(ATAdConst.NETWORK_CUSTOM_KEY.WS_ACTION);
             if (obj instanceof ad.a) {
@@ -930,26 +929,26 @@ public class c {
         }
     }
 
-    private static double a(ad adVar, double d2) {
-        double d9 = adVar.f13429l;
-        return d9 > 0.0d ? d2 * d9 : d2;
+    private static double a(ad adVar, double d9) {
+        double d10 = adVar.f14215l;
+        return d10 > 0.0d ? d9 * d10 : d9;
     }
 
-    private static double a(int i6, double d2, double d9) {
-        if (i6 == 2) {
-            return d9 + 0.01d;
+    private static double a(int i4, double d9, double d10) {
+        if (i4 == 2) {
+            return d10 + 0.01d;
         }
-        if (i6 == 3) {
-            return d2;
+        if (i4 == 3) {
+            return d9;
         }
-        if (i6 == 4) {
+        if (i4 == 4) {
             return 0.0d;
         }
-        if (i6 == 5) {
+        if (i4 == 5) {
             return -1.0d;
         }
-        double d10 = 0.01d + d9;
-        return (((d9 * 1.3d) - d10) * new Random(System.currentTimeMillis()).nextDouble()) + d10;
+        double d11 = 0.01d + d10;
+        return (((d10 * 1.3d) - d11) * new Random(System.currentTimeMillis()).nextDouble()) + d11;
     }
 
     private static double a(MgComparedResult mgComparedResult) {
@@ -968,57 +967,57 @@ public class c {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static void a(ad adVar, bv bvVar, int i6) {
+    public static void a(ad adVar, bv bvVar, int i4) {
         cd cdVar;
         ad adVar2;
         ad.a k9;
-        if (adVar == null || bvVar == null || (cdVar = adVar.f13439v) == null || adVar.d()) {
+        if (adVar == null || bvVar == null || (cdVar = adVar.f14225v) == null || adVar.d()) {
             return;
         }
-        cdVar.a(i6);
+        cdVar.a(i4);
         double a9 = p.a(bvVar);
         double b9 = p.b(bvVar);
-        double d2 = adVar.f13435r;
+        double d9 = adVar.f14221r;
         Double a10 = cdVar.a();
-        double doubleValue = a10 != null ? a10.doubleValue() : d2;
+        double doubleValue = a10 != null ? a10.doubleValue() : d9;
         if (adVar.s() || (doubleValue <= a9 && doubleValue > 0.0d)) {
-            d2 = doubleValue;
-        } else if (d2 != 0.0d) {
+            d9 = doubleValue;
+        } else if (d9 != 0.0d) {
             cdVar.a(Double.valueOf(doubleValue));
-            d2 = a9 - 0.01d;
-            if (d2 < 0.0d) {
-                d2 = 0.0d;
+            d9 = a9 - 0.01d;
+            if (d9 < 0.0d) {
+                d9 = 0.0d;
             }
         }
         if (bvVar.g() == 8) {
             double ar = bvVar.ar();
-            if (ar > 0.0d && ar > d2) {
-                d2 = ar;
+            if (ar > 0.0d && ar > d9) {
+                d9 = ar;
             }
         }
-        if (b.a(i6)) {
+        if (b.a(i4)) {
             double a11 = a(cdVar.C());
             if (a11 > 0.0d) {
-                if (a11 <= d2) {
-                    String z3 = bvVar.z();
+                if (a11 <= d9) {
+                    String z6 = bvVar.z();
                     bv l9 = adVar.l();
-                    String z6 = l9 != null ? l9.z() : "";
-                    if (!TextUtils.isEmpty(z3)) {
+                    String z9 = l9 != null ? l9.z() : "";
+                    if (!TextUtils.isEmpty(z6)) {
                     }
                 }
-                d2 = a11;
+                d9 = a11;
             }
         }
         cdVar.a(a9);
-        cdVar.b(d2);
+        cdVar.b(d9);
         cdVar.c(b9);
         cdVar.s();
-        cdVar.d(d2);
+        cdVar.d(d9);
         cdVar.b(Double.valueOf(adVar.j()));
         double a12 = a(adVar, a9);
-        double a13 = a(adVar, d2);
+        double a13 = a(adVar, d9);
         boolean v9 = cdVar.v();
-        com.anythink.core.common.v.d.a().a(cdVar.y(), bvVar, com.anythink.core.common.v.d.f16731d, "1");
+        com.anythink.core.common.v.d.a().a(cdVar.y(), bvVar, com.anythink.core.common.v.d.f17518d, "1");
         if (bvVar.am()) {
             com.anythink.core.common.a.a.a().a(adVar);
         }

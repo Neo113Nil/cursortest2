@@ -43,16 +43,16 @@ public final class f {
         return this.timezoneId;
     }
 
-    public f(Map<String, String> map, String str, String str2, String str3, Double d2, Double d9) {
+    public f(Map<String, String> map, String str, String str2, String str3, Double d9, Double d10) {
         this.tags = map;
         this.language = str;
         this.timezoneId = str2;
         this.country = str3;
-        this.latitude = d2;
-        this.longitude = d9;
+        this.latitude = d9;
+        this.longitude = d10;
     }
 
-    public /* synthetic */ f(Map map, String str, String str2, String str3, Double d2, Double d9, int i, kotlin.jvm.internal.e eVar) {
-        this((i & 1) != 0 ? null : map, (i & 2) != 0 ? null : str, (i & 4) != 0 ? null : str2, (i & 8) != 0 ? null : str3, (i & 16) != 0 ? null : d2, (i & 32) != 0 ? null : d9);
+    public /* synthetic */ f(Map map, String str, String str2, String str3, Double d9, Double d10, int i, kotlin.jvm.internal.e eVar) {
+        this((i & 1) != 0 ? null : map, (i & 2) != 0 ? null : str, (i & 4) != 0 ? null : str2, (i & 8) != 0 ? null : str3, (i & 16) != 0 ? null : d9, (i & 32) != 0 ? null : d10);
     }
 }

@@ -7,31 +7,31 @@ import java.util.List;
 public final class f extends c6.f {
 
     /* renamed from: y, reason: collision with root package name */
-    public static final e f1330y;
+    public static final e f1360y;
 
     /* renamed from: v, reason: collision with root package name */
-    public final H6.h f1331v;
+    public final H6.h f1361v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final List f1332w;
+    public final List f1362w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final String f1333x;
+    public final String f1363x;
 
     static {
-        c6.d dVar = c6.d.f5578u;
-        n nVar = n.f5618u;
-        f1330y = new e(f.class);
+        c6.d dVar = c6.d.f5754u;
+        n nVar = n.f5794u;
+        f1360y = new e(f.class);
     }
 
     public f(H6.h hVar, d6.d dVar, String str, y8.h hVar2) {
-        super(f1330y, hVar2);
-        this.f1331v = hVar;
-        this.f1332w = V2.a.o("log_records", dVar);
+        super(f1360y, hVar2);
+        this.f1361v = hVar;
+        this.f1362w = A8.b.m("log_records", dVar);
         if (str == null) {
             throw new IllegalArgumentException("schema_url == null");
         }
-        this.f1333x = str;
+        this.f1363x = str;
     }
 
     public final boolean equals(Object obj) {
@@ -42,39 +42,39 @@ public final class f extends c6.f {
             return false;
         }
         f fVar = (f) obj;
-        return a().equals(fVar.a()) && V2.a.i(this.f1331v, fVar.f1331v) && this.f1332w.equals(fVar.f1332w) && V2.a.i(this.f1333x, fVar.f1333x);
+        return a().equals(fVar.a()) && A8.b.i(this.f1361v, fVar.f1361v) && this.f1362w.equals(fVar.f1362w) && A8.b.i(this.f1363x, fVar.f1363x);
     }
 
     public final int hashCode() {
-        int i = this.f5587u;
+        int i = this.f5763u;
         if (i != 0) {
             return i;
         }
         int hashCode = a().hashCode() * 37;
-        H6.h hVar = this.f1331v;
-        int hashCode2 = (this.f1332w.hashCode() + ((hashCode + (hVar != null ? hVar.hashCode() : 0)) * 37)) * 37;
-        String str = this.f1333x;
+        H6.h hVar = this.f1361v;
+        int hashCode2 = (this.f1362w.hashCode() + ((hashCode + (hVar != null ? hVar.hashCode() : 0)) * 37)) * 37;
+        String str = this.f1363x;
         int hashCode3 = hashCode2 + (str != null ? str.hashCode() : 0);
-        this.f5587u = hashCode3;
+        this.f5763u = hashCode3;
         return hashCode3;
     }
 
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        H6.h hVar = this.f1331v;
+        H6.h hVar = this.f1361v;
         if (hVar != null) {
             sb.append(", scope=");
             sb.append(hVar);
         }
-        List list = this.f1332w;
+        List list = this.f1362w;
         if (!list.isEmpty()) {
             sb.append(", log_records=");
             sb.append(list);
         }
-        String str = this.f1333x;
+        String str = this.f1363x;
         if (str != null) {
             sb.append(", schema_url=");
-            sb.append(V2.a.t(str));
+            sb.append(A8.b.u(str));
         }
         StringBuilder replace = sb.replace(0, 2, "ScopeLogs{");
         replace.append('}');

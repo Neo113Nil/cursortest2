@@ -17,10 +17,10 @@ public final class h {
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public int f5978a;
+        public int f6764a;
 
         /* renamed from: b, reason: collision with root package name */
-        public int f5979b;
+        public int f6765b;
     }
 
     public static a a(String str) {
@@ -36,8 +36,8 @@ public final class h {
                 String extractMetadata = mediaMetadataRetriever.extractMetadata(18);
                 String extractMetadata2 = mediaMetadataRetriever.extractMetadata(19);
                 mediaMetadataRetriever.release();
-                aVar2.f5978a = Integer.parseInt(extractMetadata);
-                aVar2.f5979b = Integer.parseInt(extractMetadata2);
+                aVar2.f6764a = Integer.parseInt(extractMetadata);
+                aVar2.f6765b = Integer.parseInt(extractMetadata2);
                 return aVar2;
             } catch (Exception e9) {
                 e = e9;
@@ -67,8 +67,8 @@ public final class h {
             String extractMetadata = mediaMetadataRetriever.extractMetadata(18);
             String extractMetadata2 = mediaMetadataRetriever.extractMetadata(19);
             mediaMetadataRetriever.release();
-            aVar.f5978a = Integer.parseInt(extractMetadata);
-            aVar.f5979b = Integer.parseInt(extractMetadata2);
+            aVar.f6764a = Integer.parseInt(extractMetadata);
+            aVar.f6765b = Integer.parseInt(extractMetadata2);
             return aVar;
         } catch (Exception e10) {
             e = e10;
@@ -78,34 +78,34 @@ public final class h {
         }
     }
 
-    private static a a(int i, int i6, int i9, int i10) {
-        if (i == 0 || i6 == 0) {
+    private static a a(int i, int i4, int i6, int i9) {
+        if (i == 0 || i4 == 0) {
             return null;
         }
         a aVar = new a();
-        float f3 = (i * 1.0f) / i6;
-        if (f3 < (i9 * 1.0f) / i10) {
-            aVar.f5979b = i10;
-            aVar.f5978a = (int) (i10 * f3);
+        float f2 = (i * 1.0f) / i4;
+        if (f2 < (i6 * 1.0f) / i9) {
+            aVar.f6765b = i9;
+            aVar.f6764a = (int) (i9 * f2);
             return aVar;
         }
-        aVar.f5978a = i9;
-        aVar.f5979b = (int) (i9 / f3);
+        aVar.f6764a = i6;
+        aVar.f6765b = (int) (i6 / f2);
         return aVar;
     }
 
-    private static a a(FileDescriptor fileDescriptor, int i, int i6) {
+    private static a a(FileDescriptor fileDescriptor, int i, int i4) {
         a a9 = a(fileDescriptor);
         if (a9 == null) {
             return null;
         }
-        if ((a9.f5978a * 1.0f) / a9.f5979b < (i * 1.0f) / i6) {
-            a9.f5979b = i6;
-            a9.f5978a = (int) Math.ceil(i6 * r0);
+        if ((a9.f6764a * 1.0f) / a9.f6765b < (i * 1.0f) / i4) {
+            a9.f6765b = i4;
+            a9.f6764a = (int) Math.ceil(i4 * r0);
             return a9;
         }
-        a9.f5978a = i;
-        a9.f5979b = (int) Math.ceil(i / r0);
+        a9.f6764a = i;
+        a9.f6765b = (int) Math.ceil(i / r0);
         return a9;
     }
 
@@ -129,8 +129,8 @@ public final class h {
                                             try {
                                                 a a9 = h.a(com.anythink.core.common.res.d.a(t.b().g()).c(4, o.a(w.this.E())));
                                                 if (a9 != null) {
-                                                    w.this.k(a9.f5978a);
-                                                    w.this.l(a9.f5979b);
+                                                    w.this.k(a9.f6764a);
+                                                    w.this.l(a9.f6765b);
                                                 }
                                             } catch (Throwable unused) {
                                             }
@@ -144,7 +144,7 @@ public final class h {
                                     });
                                     try {
                                         synchronized (newFixedThreadPool) {
-                                            newFixedThreadPool.wait(com.anythink.basead.exoplayer.f.f7187a);
+                                            newFixedThreadPool.wait(com.anythink.basead.exoplayer.f.f7973a);
                                         }
                                         newFixedThreadPool.shutdownNow();
                                     } catch (Throwable unused) {

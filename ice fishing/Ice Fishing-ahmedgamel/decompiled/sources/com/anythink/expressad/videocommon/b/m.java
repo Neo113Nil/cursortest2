@@ -14,7 +14,7 @@ public final class m {
 
     private static String b(String str) {
         try {
-            return j.a.f22310a.c(str);
+            return j.a.f23097a.c(str);
         } catch (Exception unused) {
             return null;
         }

@@ -24,66 +24,66 @@ import java.util.TimerTask;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19894a = "b";
+    private static final String f20681a = "b";
 
     /* renamed from: b, reason: collision with root package name */
-    private Context f19895b;
+    private Context f20682b;
 
     /* renamed from: d, reason: collision with root package name */
-    private e f19897d;
+    private e f20684d;
 
     /* renamed from: e, reason: collision with root package name */
-    private com.anythink.expressad.mbbanner.a.e.a f19898e;
+    private com.anythink.expressad.mbbanner.a.e.a f20685e;
 
     /* renamed from: f, reason: collision with root package name */
-    private com.anythink.expressad.mbbanner.a.c.b f19899f;
+    private com.anythink.expressad.mbbanner.a.c.b f20686f;
 
     /* renamed from: g, reason: collision with root package name */
-    private d f19900g;
+    private d f20687g;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f19896c = 0;
+    private int f20683c = 0;
 
     /* renamed from: h, reason: collision with root package name */
-    private volatile boolean f19901h = false;
+    private volatile boolean f20688h = false;
     private Timer i = new Timer();
 
     /* renamed from: j, reason: collision with root package name */
-    private volatile List<String> f19902j = new ArrayList();
+    private volatile List<String> f20689j = new ArrayList();
 
     /* renamed from: k, reason: collision with root package name */
-    private volatile boolean f19903k = false;
+    private volatile boolean f20690k = false;
 
     /* renamed from: l, reason: collision with root package name */
-    private volatile boolean f19904l = false;
+    private volatile boolean f20691l = false;
 
     /* renamed from: m, reason: collision with root package name */
-    private volatile boolean f19905m = false;
+    private volatile boolean f20692m = false;
 
     /* renamed from: n, reason: collision with root package name */
-    private String f19906n = "";
+    private String f20693n = "";
 
     /* renamed from: com.anythink.expressad.mbbanner.a.d.b$1, reason: invalid class name */
     public class AnonymousClass1 extends TimerTask {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ String f19907a;
+        final /* synthetic */ String f20694a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ com.anythink.expressad.foundation.d.d f19908b;
+        final /* synthetic */ com.anythink.expressad.foundation.d.d f20695b;
 
         public AnonymousClass1(String str, com.anythink.expressad.foundation.d.d dVar) {
-            this.f19907a = str;
-            this.f19908b = dVar;
+            this.f20694a = str;
+            this.f20695b = dVar;
         }
 
         @Override // java.util.TimerTask, java.lang.Runnable
         public final void run() {
-            if (b.this.f19901h) {
+            if (b.this.f20688h) {
                 return;
             }
             b.b(b.this);
-            b.this.a(this.f19907a, -1, "", false, this.f19908b);
+            b.this.a(this.f20694a, -1, "", false, this.f20695b);
         }
     }
 
@@ -91,67 +91,67 @@ public class b {
     public class AnonymousClass2 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ com.anythink.expressad.foundation.d.e f19910a;
+        final /* synthetic */ com.anythink.expressad.foundation.d.e f20697a;
 
         public AnonymousClass2(com.anythink.expressad.foundation.d.e eVar) {
-            this.f19910a = eVar;
+            this.f20697a = eVar;
         }
 
         @Override // java.lang.Runnable
         public final void run() {
             ArrayList<com.anythink.expressad.foundation.d.d> arrayList;
-            String unused = b.f19894a;
-            com.anythink.expressad.foundation.d.e eVar = this.f19910a;
-            if (eVar != null && (arrayList = eVar.f18680K) != null && arrayList.size() > 0) {
-                Context unused2 = b.this.f19895b;
+            String unused = b.f20681a;
+            com.anythink.expressad.foundation.d.e eVar = this.f20697a;
+            if (eVar != null && (arrayList = eVar.f19467K) != null && arrayList.size() > 0) {
+                Context unused2 = b.this.f20682b;
                 com.anythink.expressad.mbbanner.a.e.b.a();
             }
-            String unused3 = b.f19894a;
+            String unused3 = b.f20681a;
         }
     }
 
     public b(Context context, e eVar, com.anythink.expressad.mbbanner.a.c.b bVar, com.anythink.expressad.mbbanner.a.e.a aVar) {
-        this.f19895b = context.getApplicationContext();
-        this.f19897d = eVar;
-        this.f19899f = bVar;
-        this.f19898e = aVar;
+        this.f20682b = context.getApplicationContext();
+        this.f20684d = eVar;
+        this.f20686f = bVar;
+        this.f20685e = aVar;
     }
 
     public static /* synthetic */ boolean b(b bVar) {
-        bVar.f19901h = true;
+        bVar.f20688h = true;
         return true;
     }
 
     public static class a implements com.anythink.expressad.foundation.g.d.c {
 
         /* renamed from: a, reason: collision with root package name */
-        private b f19912a;
+        private b f20699a;
 
         /* renamed from: b, reason: collision with root package name */
-        private String f19913b;
+        private String f20700b;
 
         /* renamed from: c, reason: collision with root package name */
-        private com.anythink.expressad.foundation.d.d f19914c;
+        private com.anythink.expressad.foundation.d.d f20701c;
 
         public a(b bVar, String str, com.anythink.expressad.foundation.d.d dVar) {
-            this.f19912a = bVar;
-            this.f19913b = str;
-            this.f19914c = dVar;
+            this.f20699a = bVar;
+            this.f20700b = str;
+            this.f20701c = dVar;
         }
 
         @Override // com.anythink.expressad.foundation.g.d.c
         public final void a(Bitmap bitmap, String str) {
-            b bVar = this.f19912a;
+            b bVar = this.f20699a;
             if (bVar != null) {
-                bVar.a(this.f19913b, 1, str, true, this.f19914c);
+                bVar.a(this.f20700b, 1, str, true, this.f20701c);
             }
         }
 
         @Override // com.anythink.expressad.foundation.g.d.c
         public final void a(String str, String str2) {
-            b bVar = this.f19912a;
+            b bVar = this.f20699a;
             if (bVar != null) {
-                bVar.a(this.f19913b, 1, str2, false, this.f19914c);
+                bVar.a(this.f20700b, 1, str2, false, this.f20701c);
             }
         }
     }
@@ -162,8 +162,8 @@ public class b {
 
     private int c() {
         try {
-            int b9 = this.f19897d.b();
-            if (b9 > this.f19897d.c()) {
+            int b9 = this.f20684d.b();
+            if (b9 > this.f20684d.c()) {
                 return 0;
             }
             return b9;
@@ -174,15 +174,15 @@ public class b {
     }
 
     private void a(String str) {
-        if (this.f19905m) {
+        if (this.f20692m) {
             return;
         }
-        if ((this.f19903k || this.f19904l) && this.f19902j.size() == 0) {
-            this.f19901h = true;
-            this.f19905m = true;
+        if ((this.f20690k || this.f20691l) && this.f20689j.size() == 0) {
+            this.f20688h = true;
+            this.f20692m = true;
             this.i.cancel();
-            this.f19898e.a(this.f19899f, str);
-            this.f19900g.a(str);
+            this.f20685e.a(this.f20686f, str);
+            this.f20687g.a(str);
         }
     }
 
@@ -200,24 +200,24 @@ public class b {
     }
 
     private void a(String str, com.anythink.expressad.foundation.d.d dVar) {
-        this.f19901h = true;
-        com.anythink.expressad.foundation.e.c cVar = new com.anythink.expressad.foundation.e.c(com.anythink.expressad.foundation.e.b.f18955A);
+        this.f20688h = true;
+        com.anythink.expressad.foundation.e.c cVar = new com.anythink.expressad.foundation.e.c(com.anythink.expressad.foundation.e.b.f19742A);
         cVar.b(str);
         cVar.a(dVar);
-        this.f19898e.b(this.f19899f, cVar);
-        this.f19900g.a(str);
+        this.f20685e.b(this.f20686f, cVar);
+        this.f20687g.a(str);
     }
 
     private String b() {
-        return this.f19897d.a();
+        return this.f20684d.a();
     }
 
     private void b(String str) {
-        this.f19897d.a(str);
+        this.f20684d.a(str);
     }
 
     private void b(String str, List<com.anythink.expressad.foundation.d.d> list) {
-        int i = this.f19896c;
+        int i = this.f20683c;
         if (list != null) {
             try {
                 if (list.size() > 0) {
@@ -228,30 +228,30 @@ public class b {
                 return;
             }
         }
-        if (i > this.f19897d.c()) {
+        if (i > this.f20684d.c()) {
             i = 0;
         }
         if (y.b(str)) {
-            this.f19897d.a(i);
+            this.f20684d.a(i);
         }
     }
 
-    public final void a(String str, int i, String str2, boolean z3, com.anythink.expressad.foundation.d.d dVar) {
-        if (!z3) {
+    public final void a(String str, int i, String str2, boolean z6, com.anythink.expressad.foundation.d.d dVar) {
+        if (!z6) {
             this.i.cancel();
-            this.f19901h = true;
-            com.anythink.expressad.foundation.e.c cVar = new com.anythink.expressad.foundation.e.c(com.anythink.expressad.foundation.e.b.f18955A);
+            this.f20688h = true;
+            com.anythink.expressad.foundation.e.c cVar = new com.anythink.expressad.foundation.e.c(com.anythink.expressad.foundation.e.b.f19742A);
             cVar.b(str);
             cVar.a(dVar);
-            this.f19898e.b(this.f19899f, cVar);
-            this.f19900g.a(str);
+            this.f20685e.b(this.f20686f, cVar);
+            this.f20687g.a(str);
             return;
         }
         if (i == 1) {
             synchronized (this) {
                 try {
-                    this.f19902j.remove(str2);
-                    if (this.f19902j.size() == 0) {
+                    this.f20689j.remove(str2);
+                    if (this.f20689j.size() == 0) {
                         a(str);
                     }
                 } catch (Throwable th) {
@@ -261,10 +261,10 @@ public class b {
             return;
         }
         if (i == 2) {
-            this.f19904l = true;
+            this.f20691l = true;
             a(str);
         } else if (i == 3) {
-            this.f19903k = true;
+            this.f20690k = true;
             a(str);
         }
     }
@@ -272,45 +272,45 @@ public class b {
     public final void a(String str, com.anythink.expressad.foundation.d.e eVar, d dVar) {
         com.anythink.expressad.foundation.e.c cVar;
         com.anythink.expressad.foundation.d.d dVar2;
-        this.f19900g = dVar;
+        this.f20687g = dVar;
         if (eVar == null) {
-            com.anythink.expressad.foundation.e.c cVar2 = new com.anythink.expressad.foundation.e.c(com.anythink.expressad.foundation.e.b.f18982d);
+            com.anythink.expressad.foundation.e.c cVar2 = new com.anythink.expressad.foundation.e.c(com.anythink.expressad.foundation.e.b.f19769d);
             cVar2.b(str);
-            this.f19898e.a(this.f19899f, cVar2);
-            this.f19900g.a(str);
+            this.f20685e.a(this.f20686f, cVar2);
+            this.f20687g.a(str);
             return;
         }
         List<com.anythink.expressad.foundation.d.d> a9 = a(eVar);
         new Thread(new AnonymousClass2(eVar)).start();
         int i = 0;
         if (a9.size() == 0) {
-            if (this.f19906n.contains("INSTALLED")) {
-                cVar = new com.anythink.expressad.foundation.e.c(com.anythink.expressad.foundation.e.b.f18998u, com.anythink.expressad.reward.a.d.f20234a);
+            if (this.f20693n.contains("INSTALLED")) {
+                cVar = new com.anythink.expressad.foundation.e.c(com.anythink.expressad.foundation.e.b.f19785u, com.anythink.expressad.reward.a.d.f21021a);
             } else {
-                cVar = new com.anythink.expressad.foundation.e.c(com.anythink.expressad.foundation.e.b.f18982d);
+                cVar = new com.anythink.expressad.foundation.e.c(com.anythink.expressad.foundation.e.b.f19769d);
             }
             cVar.b(str);
-            ArrayList<com.anythink.expressad.foundation.d.d> arrayList = eVar.f18680K;
-            if (arrayList != null && arrayList.size() > 0 && (dVar2 = eVar.f18680K.get(0)) != null) {
+            ArrayList<com.anythink.expressad.foundation.d.d> arrayList = eVar.f19467K;
+            if (arrayList != null && arrayList.size() > 0 && (dVar2 = eVar.f19467K.get(0)) != null) {
                 cVar.a(dVar2);
             }
-            this.f19898e.a(this.f19899f, cVar);
-            this.f19900g.a(str);
+            this.f20685e.a(this.f20686f, cVar);
+            this.f20687g.a(str);
             return;
         }
         com.anythink.expressad.foundation.d.d dVar3 = a9.get(0);
         this.i.schedule(new AnonymousClass1(str, dVar3), 60000L);
-        this.f19897d.a(eVar.c());
-        int i6 = this.f19896c;
+        this.f20684d.a(eVar.c());
+        int i4 = this.f20683c;
         try {
             if (a9.size() > 0) {
-                i6 += a9.size();
+                i4 += a9.size();
             }
-            if (i6 > this.f19897d.c()) {
-                i6 = 0;
+            if (i4 > this.f20684d.c()) {
+                i4 = 0;
             }
             if (y.b(str)) {
-                this.f19897d.a(i6);
+                this.f20684d.a(i4);
             }
         } catch (Exception e9) {
             e9.printStackTrace();
@@ -341,8 +341,8 @@ public class b {
                     }
                 }
             } else {
-                this.f19904l = true;
-                this.f19903k = true;
+                this.f20691l = true;
+                this.f20690k = true;
             }
         }
         a(str, a9);
@@ -352,9 +352,9 @@ public class b {
         ArrayList arrayList = new ArrayList();
         if (eVar != null) {
             try {
-                ArrayList<com.anythink.expressad.foundation.d.d> arrayList2 = eVar.f18680K;
+                ArrayList<com.anythink.expressad.foundation.d.d> arrayList2 = eVar.f19467K;
                 if (arrayList2 != null && arrayList2.size() > 0) {
-                    ArrayList<com.anythink.expressad.foundation.d.d> arrayList3 = eVar.f18680K;
+                    ArrayList<com.anythink.expressad.foundation.d.d> arrayList3 = eVar.f19467K;
                     arrayList3.size();
                     for (int i = 0; i < arrayList3.size(); i++) {
                         com.anythink.expressad.foundation.d.d dVar = arrayList3.get(i);
@@ -363,12 +363,12 @@ public class b {
                                 if (TextUtils.isEmpty(dVar.p()) && TextUtils.isEmpty(dVar.q()) && TextUtils.isEmpty(dVar.bm())) {
                                 }
                                 if (v.a(dVar)) {
-                                    dVar.k(v.a(this.f19895b, dVar.bi()) ? 1 : 2);
+                                    dVar.k(v.a(this.f20682b, dVar.bi()) ? 1 : 2);
                                 }
-                                if (l.a(this.f19895b, dVar)) {
+                                if (l.a(this.f20682b, dVar)) {
                                     arrayList.add(dVar);
                                 } else {
-                                    this.f19906n = com.anythink.expressad.reward.a.d.f20234a;
+                                    this.f20693n = com.anythink.expressad.reward.a.d.f21021a;
                                 }
                             }
                         }
@@ -389,8 +389,8 @@ public class b {
         }
         for (com.anythink.expressad.foundation.d.d dVar : list) {
             if (!TextUtils.isEmpty(dVar.bm())) {
-                this.f19902j.add(dVar.bm());
-                com.anythink.expressad.foundation.g.d.b.a(this.f19895b).a(dVar.bm(), new a(this, str, dVar));
+                this.f20689j.add(dVar.bm());
+                com.anythink.expressad.foundation.g.d.b.a(this.f20682b).a(dVar.bm(), new a(this, str, dVar));
             }
         }
     }

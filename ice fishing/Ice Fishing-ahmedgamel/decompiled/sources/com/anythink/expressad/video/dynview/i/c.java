@@ -64,25 +64,25 @@ public final class c {
 
     private static String a(long j6, Context context) {
         String e9 = m.e(context);
-        if (!e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21096S) && !e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21097T)) {
-            if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21098U)) {
-                return com.anythink.expressad.video.dynview.a.a.f21087I + j6 + " Sekunden";
+        if (!e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21883S) && !e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21884T)) {
+            if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21885U)) {
+                return com.anythink.expressad.video.dynview.a.a.f21874I + j6 + " Sekunden";
             }
-            if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21099V)) {
+            if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21886V)) {
                 return j6 + com.anythink.expressad.video.dynview.a.a.J;
             }
-            if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21100W)) {
-                return com.anythink.expressad.video.dynview.a.a.f21088K + j6 + " secondes";
+            if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21887W)) {
+                return com.anythink.expressad.video.dynview.a.a.f21875K + j6 + " secondes";
             }
-            if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21101X)) {
-                return " ثوان" + j6 + com.anythink.expressad.video.dynview.a.a.f21089L;
+            if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21888X)) {
+                return " ثوان" + j6 + com.anythink.expressad.video.dynview.a.a.f21876L;
             }
             if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.Y)) {
-                return com.anythink.expressad.video.dynview.a.a.f21090M + j6 + " секунд";
+                return com.anythink.expressad.video.dynview.a.a.f21877M + j6 + " секунд";
             }
-            return com.anythink.expressad.video.dynview.a.a.f21086H + j6 + " s";
+            return com.anythink.expressad.video.dynview.a.a.f21873H + j6 + " s";
         }
-        return j6 + " " + context.getString(k.a(context, "anythink_cm_video_auto_play_after", k.f19636g));
+        return j6 + " " + context.getString(k.a(context, "anythink_cm_video_auto_play_after", k.f20423g));
     }
 
     public static boolean a(String str) {
@@ -118,7 +118,7 @@ public final class c {
             }
             return "";
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.printStackTrace();
             }
             return "";

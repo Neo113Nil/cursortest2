@@ -15,7 +15,7 @@ import java.util.Map;
 public class FacebookATSplashAdapter extends CustomSplashAdapter {
 
     /* renamed from: a, reason: collision with root package name */
-    String f23109a = "";
+    String f23896a = "";
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
@@ -29,7 +29,7 @@ public class FacebookATSplashAdapter extends CustomSplashAdapter {
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public void getBidRequestInfo(Context context, Map<String, Object> map, Map<String, Object> map2, ATBidRequestInfoListener aTBidRequestInfoListener) {
         try {
-            this.f23109a = (String) map.get("unit_id");
+            this.f23896a = (String) map.get("unit_id");
         } catch (Throwable th) {
             th.printStackTrace();
         }
@@ -56,7 +56,7 @@ public class FacebookATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        return this.f23109a;
+        return this.f23896a;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -71,12 +71,12 @@ public class FacebookATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void loadCustomNetworkAd(Context context, Map<String, Object> map, Map<String, Object> map2) {
-        this.f23109a = ATInitMediation.getStringFromMap(map, "unit_id");
+        this.f23896a = ATInitMediation.getStringFromMap(map, "unit_id");
         notifyATLoadFail("", "not support facebook splash");
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
-    public boolean setUserDataConsent(Context context, boolean z3, boolean z6) {
+    public boolean setUserDataConsent(Context context, boolean z6, boolean z9) {
         return false;
     }
 

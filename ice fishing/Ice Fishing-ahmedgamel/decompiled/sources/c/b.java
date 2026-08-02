@@ -6,5 +6,5 @@ import android.os.Binder;
 public abstract class b extends Binder implements c {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final /* synthetic */ int f5472n = 0;
+    public static final /* synthetic */ int f5620n = 0;
 }

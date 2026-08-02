@@ -23,16 +23,16 @@ import java.util.Map;
 public class MyOfferATSplashAdapter extends CustomSplashAdapter {
 
     /* renamed from: a, reason: collision with root package name */
-    String f23182a;
+    String f23969a;
 
     /* renamed from: b, reason: collision with root package name */
-    g f23183b;
+    g f23970b;
 
     /* renamed from: c, reason: collision with root package name */
-    x f23184c;
+    x f23971c;
 
     /* renamed from: d, reason: collision with root package name */
-    Map<String, Object> f23185d;
+    Map<String, Object> f23972d;
 
     /* renamed from: com.anythink.network.myoffer.MyOfferATSplashAdapter$2, reason: invalid class name */
     public class AnonymousClass2 implements a {
@@ -43,8 +43,8 @@ public class MyOfferATSplashAdapter extends CustomSplashAdapter {
         public final void onAdClick(j jVar) {
             n trackingInfo = MyOfferATSplashAdapter.this.getTrackingInfo();
             if (trackingInfo != null) {
-                trackingInfo.I(jVar.f8982a);
-                trackingInfo.J(jVar.f8983b);
+                trackingInfo.I(jVar.f9768a);
+                trackingInfo.J(jVar.f9769b);
             }
             if (((CustomSplashAdapter) MyOfferATSplashAdapter.this).mImpressionListener != null) {
                 ((CustomSplashAdapter) MyOfferATSplashAdapter.this).mImpressionListener.onSplashAdClicked();
@@ -66,7 +66,7 @@ public class MyOfferATSplashAdapter extends CustomSplashAdapter {
         }
 
         @Override // com.anythink.basead.g.a
-        public final void onDeeplinkCallback(boolean z3) {
+        public final void onDeeplinkCallback(boolean z6) {
         }
 
         @Override // com.anythink.basead.g.a
@@ -79,17 +79,17 @@ public class MyOfferATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
-        g gVar = this.f23183b;
+        g gVar = this.f23970b;
         if (gVar != null) {
             gVar.g();
-            this.f23183b = null;
+            this.f23970b = null;
         }
-        this.f23184c = null;
+        this.f23971c = null;
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public Map<String, Object> getNetworkInfoMap() {
-        return this.f23185d;
+        return this.f23972d;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -99,7 +99,7 @@ public class MyOfferATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        return this.f23182a;
+        return this.f23969a;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -109,12 +109,12 @@ public class MyOfferATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public boolean isAdReady() {
-        g gVar = this.f23183b;
-        boolean z3 = gVar != null && gVar.a();
-        if (z3 && this.f23185d == null) {
-            this.f23185d = d.a(this.f23183b);
+        g gVar = this.f23970b;
+        boolean z6 = gVar != null && gVar.a();
+        if (z6 && this.f23972d == null) {
+            this.f23972d = d.a(this.f23970b);
         }
-        return z3;
+        return z6;
     }
 
     @Override // com.anythink.splashad.unitgroup.api.CustomSplashAdapter
@@ -125,19 +125,19 @@ public class MyOfferATSplashAdapter extends CustomSplashAdapter {
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void loadCustomNetworkAd(Context context, Map<String, Object> map, Map<String, Object> map2) {
         if (map.containsKey("my_oid")) {
-            this.f23182a = map.get("my_oid").toString();
+            this.f23969a = map.get("my_oid").toString();
         }
-        if (map.containsKey(j.w.f12614a)) {
-            this.f23184c = (x) map.get(j.w.f12614a);
+        if (map.containsKey(j.w.f13400a)) {
+            this.f23971c = (x) map.get(j.w.f13400a);
         }
-        g gVar = new g(context, this.f23184c, this.f23182a);
-        this.f23183b = gVar;
+        g gVar = new g(context, this.f23971c, this.f23969a);
+        this.f23970b = gVar;
         gVar.a(new AnonymousClass2());
-        this.f23183b.a(new c() { // from class: com.anythink.network.myoffer.MyOfferATSplashAdapter.1
+        this.f23970b.a(new c() { // from class: com.anythink.network.myoffer.MyOfferATSplashAdapter.1
             @Override // com.anythink.basead.g.c
             public final void onAdCacheLoaded() {
                 if (MyOfferATSplashAdapter.this.getTrackingInfo() != null) {
-                    MyOfferATSplashAdapter.this.getTrackingInfo().M(MyOfferATSplashAdapter.this.f23183b.f());
+                    MyOfferATSplashAdapter.this.getTrackingInfo().M(MyOfferATSplashAdapter.this.f23970b.f());
                 }
                 if (((ATBaseAdInternalAdapter) MyOfferATSplashAdapter.this).mLoadListener != null) {
                     ((ATBaseAdInternalAdapter) MyOfferATSplashAdapter.this).mLoadListener.onAdCacheLoaded(new BaseAd[0]);
@@ -159,17 +159,17 @@ public class MyOfferATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.splashad.unitgroup.api.CustomSplashAdapter
     public void show(Activity activity, ViewGroup viewGroup) {
-        if (this.f23183b != null) {
+        if (this.f23970b != null) {
             if (isCustomSkipView()) {
-                this.f23183b.b();
+                this.f23970b.b();
             }
-            this.f23183b.a(viewGroup);
+            this.f23970b.a(viewGroup);
         }
     }
 
     private void a(Context context) {
-        g gVar = new g(context, this.f23184c, this.f23182a);
-        this.f23183b = gVar;
+        g gVar = new g(context, this.f23971c, this.f23969a);
+        this.f23970b = gVar;
         gVar.a(new AnonymousClass2());
     }
 }

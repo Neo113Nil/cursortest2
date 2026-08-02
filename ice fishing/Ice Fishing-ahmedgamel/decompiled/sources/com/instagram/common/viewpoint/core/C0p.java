@@ -6,12 +6,12 @@ import android.view.accessibility.AccessibilityNodeInfo;
 /* loaded from: assets/audience_network/classes2.dex */
 public class C0p extends C0y {
     @Override // com.instagram.common.viewpoint.core.Q2
-    public final Object A00(int i, int i6, int i9, int i10, boolean z3, boolean z6) {
-        return AccessibilityNodeInfo.CollectionItemInfo.obtain(i, i6, i9, i10, z3, z6);
+    public final Object A00(int i, int i4, int i6, int i9, boolean z6, boolean z9) {
+        return AccessibilityNodeInfo.CollectionItemInfo.obtain(i, i4, i6, i9, z6, z9);
     }
 
     @Override // com.instagram.common.viewpoint.core.Q2
-    public final Object A01(int i, int i6, boolean z3, int i9) {
-        return AccessibilityNodeInfo.CollectionInfo.obtain(i, i6, z3, i9);
+    public final Object A01(int i, int i4, boolean z6, int i6) {
+        return AccessibilityNodeInfo.CollectionInfo.obtain(i, i4, z6, i6);
     }
 }

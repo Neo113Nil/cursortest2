@@ -28,25 +28,25 @@ public final class b implements Parcelable {
     };
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f8549a;
+    public final int f9335a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f8550b;
+    public final int f9336b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f8551c;
+    public final int f9337c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final byte[] f8552d;
+    public final byte[] f9338d;
 
     /* renamed from: e, reason: collision with root package name */
-    private int f8553e;
+    private int f9339e;
 
-    private b(int i, int i6, int i9, byte[] bArr) {
-        this.f8549a = i;
-        this.f8550b = i6;
-        this.f8551c = i9;
-        this.f8552d = bArr;
+    private b(int i, int i4, int i6, byte[] bArr) {
+        this.f9335a = i;
+        this.f9336b = i4;
+        this.f9337c = i6;
+        this.f9338d = bArr;
     }
 
     @Override // android.os.Parcelable
@@ -60,7 +60,7 @@ public final class b implements Parcelable {
         }
         if (obj != null && b.class == obj.getClass()) {
             b bVar = (b) obj;
-            if (this.f8549a == bVar.f8549a && this.f8550b == bVar.f8550b && this.f8551c == bVar.f8551c && Arrays.equals(this.f8552d, bVar.f8552d)) {
+            if (this.f9335a == bVar.f9335a && this.f9336b == bVar.f9336b && this.f9337c == bVar.f9337c && Arrays.equals(this.f9338d, bVar.f9338d)) {
                 return true;
             }
         }
@@ -68,41 +68,41 @@ public final class b implements Parcelable {
     }
 
     public final int hashCode() {
-        if (this.f8553e == 0) {
-            this.f8553e = Arrays.hashCode(this.f8552d) + ((((((this.f8549a + 527) * 31) + this.f8550b) * 31) + this.f8551c) * 31);
+        if (this.f9339e == 0) {
+            this.f9339e = Arrays.hashCode(this.f9338d) + ((((((this.f9335a + 527) * 31) + this.f9336b) * 31) + this.f9337c) * 31);
         }
-        return this.f8553e;
+        return this.f9339e;
     }
 
     public final String toString() {
         StringBuilder sb = new StringBuilder("ColorInfo(");
-        sb.append(this.f8549a);
+        sb.append(this.f9335a);
         sb.append(", ");
-        sb.append(this.f8550b);
+        sb.append(this.f9336b);
         sb.append(", ");
-        sb.append(this.f8551c);
+        sb.append(this.f9337c);
         sb.append(", ");
-        sb.append(this.f8552d != null);
+        sb.append(this.f9338d != null);
         sb.append(")");
         return sb.toString();
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeInt(this.f8549a);
-        parcel.writeInt(this.f8550b);
-        parcel.writeInt(this.f8551c);
-        af.a(parcel, this.f8552d != null);
-        byte[] bArr = this.f8552d;
+        parcel.writeInt(this.f9335a);
+        parcel.writeInt(this.f9336b);
+        parcel.writeInt(this.f9337c);
+        af.a(parcel, this.f9338d != null);
+        byte[] bArr = this.f9338d;
         if (bArr != null) {
             parcel.writeByteArray(bArr);
         }
     }
 
     public b(Parcel parcel) {
-        this.f8549a = parcel.readInt();
-        this.f8550b = parcel.readInt();
-        this.f8551c = parcel.readInt();
-        this.f8552d = af.a(parcel) ? parcel.createByteArray() : null;
+        this.f9335a = parcel.readInt();
+        this.f9336b = parcel.readInt();
+        this.f9337c = parcel.readInt();
+        this.f9338d = af.a(parcel) ? parcel.createByteArray() : null;
     }
 }

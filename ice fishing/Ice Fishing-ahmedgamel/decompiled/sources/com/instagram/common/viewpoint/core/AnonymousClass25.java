@@ -11,24 +11,24 @@ public final class AnonymousClass25<E> extends BO<E> {
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.25 != com.google.common.collect.SingletonImmutableSet<E> */
     public AnonymousClass25(E e9) {
-        this.A00 = (E) AbstractC2070ki.A04(e9);
+        this.A00 = (E) AbstractC2090ki.A04(e9);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.25 != com.google.common.collect.SingletonImmutableSet<E> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
     public final int A0I(Object[] dst, int offset) {
         dst[offset] = this.A00;
         return offset + 1;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.25 != com.google.common.collect.SingletonImmutableSet<E> */
-    @Override // com.instagram.common.viewpoint.core.BO, com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.BO, com.instagram.common.viewpoint.core.AbstractC2303oO
     public final BP<E> A0J() {
         return BP.A04(this.A00);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.25 != com.google.common.collect.SingletonImmutableSet<E> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
     public final boolean A0K() {
         return false;
     }
@@ -37,11 +37,11 @@ public final class AnonymousClass25<E> extends BO<E> {
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     /* renamed from: A0N, reason: merged with bridge method [inline-methods] */
     public final C4C<E> iterator() {
-        return AbstractC2330p9.A03(this.A00);
+        return AbstractC2350p9.A03(this.A00);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.25 != com.google.common.collect.SingletonImmutableSet<E> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO, java.util.AbstractCollection, java.util.Collection, java.util.Set
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO, java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean contains(@CheckForNull Object target) {
         return this.A00.equals(target);
     }

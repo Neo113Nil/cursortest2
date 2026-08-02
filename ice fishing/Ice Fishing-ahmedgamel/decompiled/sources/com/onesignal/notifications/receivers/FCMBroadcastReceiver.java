@@ -6,13 +6,12 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import com.bumptech.glide.d;
 import com.onesignal.common.threading.c;
 import kotlin.jvm.internal.e;
 import p4.g;
 import p5.C4839a;
 import u7.v;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class FCMBroadcastReceiver extends BroadcastReceiver {
@@ -48,8 +47,8 @@ public final class FCMBroadcastReceiver extends BroadcastReceiver {
         final /* synthetic */ FCMBroadcastReceiver this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public b(Context context, BroadcastReceiver.PendingResult pendingResult, Intent intent, FCMBroadcastReceiver fCMBroadcastReceiver, Bundle bundle, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public b(Context context, BroadcastReceiver.PendingResult pendingResult, Intent intent, FCMBroadcastReceiver fCMBroadcastReceiver, Bundle bundle, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$context = context;
             this.$pendingResult = pendingResult;
             this.$intent = intent;
@@ -58,16 +57,16 @@ public final class FCMBroadcastReceiver extends BroadcastReceiver {
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return new b(this.$context, this.$pendingResult, this.$intent, this.this$0, this.$bundle, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return new b(this.$context, this.$pendingResult, this.$intent, this.this$0, this.$bundle, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                d.k(obj);
+                Q3.b.s(obj);
                 Context applicationContext = this.$context.getApplicationContext();
                 kotlin.jvm.internal.h.d(applicationContext, "getApplicationContext(...)");
                 this.label = 1;
@@ -79,10 +78,10 @@ public final class FCMBroadcastReceiver extends BroadcastReceiver {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                d.k(obj);
+                Q3.b.s(obj);
             }
             boolean booleanValue = ((Boolean) obj).booleanValue();
-            v vVar = v.f41353a;
+            v vVar = v.f41073a;
             if (!booleanValue) {
                 com.onesignal.debug.internal.logging.b.warn$default("FCMBroadcastReceiver skipped due to failed OneSignal init", null, 2, null);
                 this.$pendingResult.finish();
@@ -106,8 +105,8 @@ public final class FCMBroadcastReceiver extends BroadcastReceiver {
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((b) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((b) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 

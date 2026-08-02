@@ -11,11 +11,11 @@ public class C7V {
     public int A02;
     public final /* synthetic */ C7W A03;
 
-    public C7V(C7W c7w, int i, int i6, int i9) {
+    public C7V(C7W c7w, int i, int i4, int i6) {
         this.A03 = c7w;
         this.A00 = i;
-        this.A01 = i6;
-        this.A02 = i9;
+        this.A01 = i4;
+        this.A02 = i6;
     }
 
     public final int A00() {

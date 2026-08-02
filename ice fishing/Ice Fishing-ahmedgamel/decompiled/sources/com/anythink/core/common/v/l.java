@@ -39,49 +39,49 @@ public final class l {
         if (aVar == null) {
             return 1;
         }
-        return a(aVar.f13864j, aVar.f13859d, aVar2.f13864j, aVar2.f13859d);
+        return a(aVar.f14650j, aVar.f14645d, aVar2.f14650j, aVar2.f14645d);
     }
 
-    private static int a(com.anythink.core.common.h.ad adVar, double d2, com.anythink.core.common.h.ad adVar2, double d9) {
+    private static int a(com.anythink.core.common.h.ad adVar, double d9, com.anythink.core.common.h.ad adVar2, double d10) {
         int i;
+        int i4;
         int i6;
         int i9;
-        int i10;
         if (adVar == null || !adVar.s()) {
             i = 0;
-            i6 = 0;
+            i4 = 0;
         } else {
-            i6 = adVar.t();
+            i4 = adVar.t();
             i = adVar.w();
         }
         if (adVar2 == null || !adVar2.s()) {
+            i6 = 0;
             i9 = 0;
-            i10 = 0;
         } else {
-            i10 = adVar2.t();
-            i9 = adVar2.w();
+            i9 = adVar2.t();
+            i6 = adVar2.w();
         }
-        if (i6 == 0 || i10 == 0) {
-            if (i6 > 0) {
+        if (i4 == 0 || i9 == 0) {
+            if (i4 > 0) {
                 return -1;
             }
-            if (i10 > 0) {
+            if (i9 > 0) {
                 return 1;
             }
-            if (d2 > d9) {
+            if (d9 > d10) {
                 return -1;
             }
-            return d2 == d9 ? 0 : 1;
+            return d9 == d10 ? 0 : 1;
         }
-        if (i6 != i10) {
-            return -(i6 - i10);
+        if (i4 != i9) {
+            return -(i4 - i9);
         }
-        if (i6 == 3) {
-            return i - i9;
+        if (i4 == 3) {
+            return i - i6;
         }
-        if (d2 > d9) {
+        if (d9 > d10) {
             return -1;
         }
-        return d2 == d9 ? 0 : 1;
+        return d9 == d10 ? 0 : 1;
     }
 }

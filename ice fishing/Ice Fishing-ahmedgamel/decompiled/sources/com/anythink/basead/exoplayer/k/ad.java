@@ -8,7 +8,7 @@ public final class ad {
     }
 
     public static void a(String str) {
-        if (af.f8346a >= 18) {
+        if (af.f9132a >= 18) {
             Trace.beginSection(str);
         }
     }
@@ -22,7 +22,7 @@ public final class ad {
     }
 
     public static void a() {
-        if (af.f8346a >= 18) {
+        if (af.f9132a >= 18) {
             Trace.endSection();
         }
     }

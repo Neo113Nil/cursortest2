@@ -6,15 +6,16 @@ import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.Map;
+import w.AbstractC5128c;
 
 /* loaded from: classes.dex */
 public final class h {
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f15614a;
+    private final String f16401a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final Map<String, String> f15615b;
+    private final Map<String, String> f16402b;
 
     public h(String str, Map<String, String> map) {
         if (str == null) {
@@ -23,33 +24,33 @@ public final class h {
         if (map == null) {
             throw new NullPointerException("authParams == null");
         }
-        this.f15614a = str;
+        this.f16401a = str;
         LinkedHashMap linkedHashMap = new LinkedHashMap();
         for (Map.Entry<String, String> entry : map.entrySet()) {
             linkedHashMap.put(entry.getKey() == null ? null : entry.getKey().toLowerCase(Locale.US), entry.getValue());
         }
-        this.f15615b = Collections.unmodifiableMap(linkedHashMap);
+        this.f16402b = Collections.unmodifiableMap(linkedHashMap);
     }
 
     private h a(Charset charset) {
         if (charset == null) {
             throw new NullPointerException("charset == null");
         }
-        LinkedHashMap linkedHashMap = new LinkedHashMap(this.f15615b);
+        LinkedHashMap linkedHashMap = new LinkedHashMap(this.f16402b);
         linkedHashMap.put("charset", charset.name());
-        return new h(this.f15614a, linkedHashMap);
+        return new h(this.f16401a, linkedHashMap);
     }
 
     private Map<String, String> b() {
-        return this.f15615b;
+        return this.f16402b;
     }
 
     private String c() {
-        return this.f15615b.get("realm");
+        return this.f16402b.get("realm");
     }
 
     private Charset d() {
-        String str = this.f15615b.get("charset");
+        String str = this.f16402b.get("charset");
         if (str != null) {
             try {
                 return Charset.forName(str);
@@ -64,19 +65,19 @@ public final class h {
             return false;
         }
         h hVar = (h) obj;
-        return hVar.f15614a.equals(this.f15614a) && hVar.f15615b.equals(this.f15615b);
+        return hVar.f16401a.equals(this.f16401a) && hVar.f16402b.equals(this.f16402b);
     }
 
     public final int hashCode() {
-        return this.f15615b.hashCode() + u1.h.k(899, 31, this.f15614a);
+        return this.f16402b.hashCode() + AbstractC5128c.a(899, 31, this.f16401a);
     }
 
     public final String toString() {
-        return this.f15614a + " authParams=" + this.f15615b;
+        return this.f16401a + " authParams=" + this.f16402b;
     }
 
     private String a() {
-        return this.f15614a;
+        return this.f16401a;
     }
 
     private h(String str, String str2) {
@@ -84,8 +85,8 @@ public final class h {
             throw new NullPointerException("scheme == null");
         }
         if (str2 != null) {
-            this.f15614a = str;
-            this.f15615b = Collections.singletonMap("realm", str2);
+            this.f16401a = str;
+            this.f16402b = Collections.singletonMap("realm", str2);
             return;
         }
         throw new NullPointerException("realm == null");

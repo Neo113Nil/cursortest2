@@ -24,31 +24,31 @@ public final class C5 {
     public int A03;
     public int A04;
     public CX A05;
-    public List<C0802Bk> A06;
+    public List<C0822Bk> A06;
     public boolean A07;
     public boolean A08;
     public boolean A09;
     public final Context A0A;
     public final Handler A0B;
     public final C2 A0C;
-    public final InterfaceC2256nw A0D;
+    public final InterfaceC2276nw A0D;
     public final CT A0E;
     public final CopyOnWriteArraySet<C4> A0F;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0G, i, i + i6);
-        int i10 = 0;
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0G, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             if (A0H[0].charAt(31) != 'e') {
                 throw new RuntimeException();
             }
             A0H[1] = "Q4q55Cq4Bi7IKuCSPoembBRK5ZQkCbyv";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 123);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 123);
+            i9++;
         }
     }
 
@@ -62,12 +62,12 @@ public final class C5 {
     }
 
     public C5(Context context, C5O c5o, MP mp, C5Y c5y, Executor executor) {
-        this(context, new C9w(c5o), new C2262o3(new C2056kT().A06(mp).A05(c5y), executor));
+        this(context, new C9w(c5o), new C2282o3(new C2076kT().A06(mp).A05(c5y), executor));
     }
 
-    public C5(Context context, InterfaceC2256nw interfaceC2256nw, CJ cj) {
+    public C5(Context context, InterfaceC2276nw interfaceC2276nw, CJ cj) {
         this.A0A = context.getApplicationContext();
-        this.A0D = interfaceC2256nw;
+        this.A0D = interfaceC2276nw;
         this.A01 = 3;
         this.A02 = 5;
         this.A07 = true;
@@ -84,7 +84,7 @@ public final class C5 {
         this.A0B = A0b;
         HandlerThread handlerThread = new HandlerThread(A01(0, 25, 28));
         handlerThread.start();
-        this.A0C = new C2(handlerThread, interfaceC2256nw, cj, A0b, this.A01, this.A02, this.A07);
+        this.A0C = new C2(handlerThread, interfaceC2276nw, cj, A0b, this.A01, this.A02, this.A07);
         CT requirementsListener = new CT() { // from class: com.facebook.ads.redexgen.X.o2
             @Override // com.instagram.common.viewpoint.core.CT
             public final void AFh(CX cx, int i) {
@@ -98,23 +98,23 @@ public final class C5 {
         this.A0C.obtainMessage(0, this.A03, 0).sendToTarget();
     }
 
-    public static C0802Bk A00(C0802Bk c0802Bk, DownloadRequest downloadRequest, int i, long j6) {
+    public static C0822Bk A00(C0822Bk c0822Bk, DownloadRequest downloadRequest, int i, long j6) {
         long j9;
-        int i6;
-        int i9 = c0802Bk.A02;
-        if (i9 == 5 || c0802Bk.A02()) {
+        int i4;
+        int i6 = c0822Bk.A02;
+        if (i6 == 5 || c0822Bk.A02()) {
             j9 = j6;
         } else {
-            j9 = c0802Bk.A05;
+            j9 = c0822Bk.A05;
         }
-        if (i9 == 5 || i9 == 7) {
-            i6 = 7;
+        if (i6 == 5 || i6 == 7) {
+            i4 = 7;
         } else if (i != 0) {
-            i6 = 1;
+            i4 = 1;
         } else {
-            i6 = 0;
+            i4 = 0;
         }
-        return new C0802Bk(c0802Bk.A07.A02(downloadRequest), i6, j9, j6, -1L, i, 0);
+        return new C0822Bk(c0822Bk.A07.A02(downloadRequest), i4, j9, j6, -1L, i, 0);
     }
 
     private void A02() {
@@ -136,9 +136,9 @@ public final class C5 {
         }
     }
 
-    private void A04(int i, int i6) {
+    private void A04(int i, int i4) {
         this.A04 -= i;
-        this.A00 = i6;
+        this.A00 = i4;
         if (A0I()) {
             Iterator<C4> it = this.A0F.iterator();
             while (it.hasNext()) {
@@ -149,12 +149,12 @@ public final class C5 {
 
     private void A05(C0 c02) {
         this.A06 = Collections.unmodifiableList(c02.A02);
-        C0802Bk c0802Bk = c02.A00;
+        C0822Bk c0822Bk = c02.A00;
         boolean A0A = A0A();
         if (c02.A03) {
             Iterator<C4> it = this.A0F.iterator();
             while (it.hasNext()) {
-                it.next().ADi(this, c0802Bk);
+                it.next().ADi(this, c0822Bk);
             }
         } else {
             Iterator<C4> it2 = this.A0F.iterator();
@@ -167,7 +167,7 @@ public final class C5 {
                 if (!hasNext) {
                     break;
                 } else {
-                    it2.next().ADh(this, c0802Bk, c02.A01);
+                    it2.next().ADh(this, c0822Bk, c02.A01);
                 }
             }
         }
@@ -198,7 +198,7 @@ public final class C5 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private void A08(List<C0802Bk> list) {
+    private void A08(List<C0822Bk> list) {
         this.A08 = true;
         this.A06 = Collections.unmodifiableList(list);
         boolean A0A = A0A();
@@ -211,13 +211,13 @@ public final class C5 {
         }
     }
 
-    private void A09(boolean z3) {
-        if (this.A07 == z3) {
+    private void A09(boolean z6) {
+        if (this.A07 == z6) {
             return;
         }
-        this.A07 = z3;
+        this.A07 = z6;
         this.A04++;
-        this.A0C.obtainMessage(1, z3 ? 1 : 0, 0).sendToTarget();
+        this.A0C.obtainMessage(1, z6 ? 1 : 0, 0).sendToTarget();
         boolean A0A = A0A();
         Iterator<C4> it = this.A0F.iterator();
         while (it.hasNext()) {
@@ -229,7 +229,7 @@ public final class C5 {
     }
 
     private boolean A0A() {
-        boolean z3 = false;
+        boolean z6 = false;
         boolean waitingForRequirements = this.A07;
         if (!waitingForRequirements && this.A03 != 0) {
             int i = 0;
@@ -238,15 +238,15 @@ public final class C5 {
                     break;
                 }
                 if (this.A06.get(i).A02 == 0) {
-                    z3 = true;
+                    z6 = true;
                     break;
                 }
                 i++;
             }
         }
         boolean waitingForRequirements2 = this.A09;
-        boolean z6 = waitingForRequirements2 != z3;
-        this.A09 = z3;
+        boolean z9 = waitingForRequirements2 != z6;
+        this.A09 = z6;
         String[] strArr = A0H;
         if (strArr[4].length() != strArr[7].length()) {
             throw new RuntimeException();
@@ -254,7 +254,7 @@ public final class C5 {
         String[] strArr2 = A0H;
         strArr2[4] = "HT4e9GATQ3DYWsFwZyJzXpwOkn6HfQP";
         strArr2[7] = "eDZDx6DsGZ1y85uRp2IzKIBDtNa9GCG";
-        return z6;
+        return z9;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -265,14 +265,14 @@ public final class C5 {
                 return true;
             case 1:
                 int i = message.arg1;
-                int i6 = message.arg2;
+                int i4 = message.arg2;
                 if (A0H[2].charAt(11) == 'k') {
                     throw new RuntimeException();
                 }
                 String[] strArr = A0H;
                 strArr[3] = "sxyw1qPQ7JLPTOY8e9sgs42WDZnpuN2t";
                 strArr[6] = "KeBMIxstq15Te8zzUw5dJy9ueqCuctUt";
-                A04(i, i6);
+                A04(i, i4);
                 return true;
             case 2:
                 C0 update = (C0) message.obj;
@@ -283,7 +283,7 @@ public final class C5 {
         }
     }
 
-    public final List<C0802Bk> A0D() {
+    public final List<C0822Bk> A0D() {
         return this.A06;
     }
 
@@ -292,7 +292,7 @@ public final class C5 {
     }
 
     public final void A0F(C4 c42) {
-        AbstractC06243y.A01(c42);
+        AbstractC06443y.A01(c42);
         this.A0F.add(c42);
     }
 

@@ -10,9 +10,9 @@ public class MixNativeAdNetworkShakeView extends FrameLayout implements com.anyt
         super(context);
     }
 
-    public MixNativeAdNetworkShakeView(Context context, View view, int i, int i6) {
+    public MixNativeAdNetworkShakeView(Context context, View view, int i, int i4) {
         super(context);
-        FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(i, i6);
+        FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(i, i4);
         layoutParams.gravity = 17;
         addView(view, layoutParams);
     }

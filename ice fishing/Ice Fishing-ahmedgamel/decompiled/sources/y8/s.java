@@ -1,101 +1,101 @@
 package y8;
 
-import v7.AbstractC5128i;
+import v7.AbstractC5118i;
 
 /* loaded from: classes2.dex */
 public final class s {
 
     /* renamed from: a, reason: collision with root package name */
-    public final byte[] f41987a;
+    public final byte[] f41958a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f41988b;
+    public int f41959b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f41989c;
+    public int f41960c;
 
     /* renamed from: d, reason: collision with root package name */
-    public boolean f41990d;
+    public boolean f41961d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final boolean f41991e;
+    public final boolean f41962e;
 
     /* renamed from: f, reason: collision with root package name */
-    public s f41992f;
+    public s f41963f;
 
     /* renamed from: g, reason: collision with root package name */
-    public s f41993g;
+    public s f41964g;
 
     public s() {
-        this.f41987a = new byte[8192];
-        this.f41991e = true;
-        this.f41990d = false;
+        this.f41958a = new byte[8192];
+        this.f41962e = true;
+        this.f41961d = false;
     }
 
     public final s a() {
-        s sVar = this.f41992f;
+        s sVar = this.f41963f;
         if (sVar == this) {
             sVar = null;
         }
-        s sVar2 = this.f41993g;
+        s sVar2 = this.f41964g;
         kotlin.jvm.internal.h.b(sVar2);
-        sVar2.f41992f = this.f41992f;
-        s sVar3 = this.f41992f;
+        sVar2.f41963f = this.f41963f;
+        s sVar3 = this.f41963f;
         kotlin.jvm.internal.h.b(sVar3);
-        sVar3.f41993g = this.f41993g;
-        this.f41992f = null;
-        this.f41993g = null;
+        sVar3.f41964g = this.f41964g;
+        this.f41963f = null;
+        this.f41964g = null;
         return sVar;
     }
 
     public final void b(s segment) {
         kotlin.jvm.internal.h.e(segment, "segment");
-        segment.f41993g = this;
-        segment.f41992f = this.f41992f;
-        s sVar = this.f41992f;
+        segment.f41964g = this;
+        segment.f41963f = this.f41963f;
+        s sVar = this.f41963f;
         kotlin.jvm.internal.h.b(sVar);
-        sVar.f41993g = segment;
-        this.f41992f = segment;
+        sVar.f41964g = segment;
+        this.f41963f = segment;
     }
 
     public final s c() {
-        this.f41990d = true;
-        return new s(this.f41987a, this.f41988b, this.f41989c, true);
+        this.f41961d = true;
+        return new s(this.f41958a, this.f41959b, this.f41960c, true);
     }
 
     public final void d(s sink, int i) {
         kotlin.jvm.internal.h.e(sink, "sink");
-        if (!sink.f41991e) {
+        if (!sink.f41962e) {
             throw new IllegalStateException("only owner can write");
         }
-        int i6 = sink.f41989c;
-        int i9 = i6 + i;
-        byte[] bArr = sink.f41987a;
-        if (i9 > 8192) {
-            if (sink.f41990d) {
+        int i4 = sink.f41960c;
+        int i6 = i4 + i;
+        byte[] bArr = sink.f41958a;
+        if (i6 > 8192) {
+            if (sink.f41961d) {
                 throw new IllegalArgumentException();
             }
-            int i10 = sink.f41988b;
-            if (i9 - i10 > 8192) {
+            int i9 = sink.f41959b;
+            if (i6 - i9 > 8192) {
                 throw new IllegalArgumentException();
             }
-            AbstractC5128i.s(bArr, 0, bArr, i10, i6);
-            sink.f41989c -= sink.f41988b;
-            sink.f41988b = 0;
+            AbstractC5118i.v(bArr, 0, bArr, i9, i4);
+            sink.f41960c -= sink.f41959b;
+            sink.f41959b = 0;
         }
-        int i11 = sink.f41989c;
-        int i12 = this.f41988b;
-        AbstractC5128i.s(this.f41987a, i11, bArr, i12, i12 + i);
-        sink.f41989c += i;
-        this.f41988b += i;
+        int i10 = sink.f41960c;
+        int i11 = this.f41959b;
+        AbstractC5118i.v(this.f41958a, i10, bArr, i11, i11 + i);
+        sink.f41960c += i;
+        this.f41959b += i;
     }
 
-    public s(byte[] data, int i, int i6, boolean z3) {
+    public s(byte[] data, int i, int i4, boolean z6) {
         kotlin.jvm.internal.h.e(data, "data");
-        this.f41987a = data;
-        this.f41988b = i;
-        this.f41989c = i6;
-        this.f41990d = z3;
-        this.f41991e = false;
+        this.f41958a = data;
+        this.f41959b = i;
+        this.f41960c = i4;
+        this.f41961d = z6;
+        this.f41962e = false;
     }
 }

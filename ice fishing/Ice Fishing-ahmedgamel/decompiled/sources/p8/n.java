@@ -4,7 +4,7 @@ package p8;
 public abstract class n {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final m f39868a = new m();
+    public static final m f39915a = new m();
 
     public void a(r connection, D settings) {
         kotlin.jvm.internal.h.e(connection, "connection");

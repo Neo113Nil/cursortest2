@@ -9,10 +9,10 @@ public class ZA implements View.OnClickListener {
     public static String[] A02 = {"IOR0l14leYwQNQq2I2rEV1zfIXqFKI0a", "zW7tVYcZ3dM5iQVsFi8VOfvAOil8nrCv", "ieKj8", "GAk2VDgzwLQ7mEx4yT9NQx4ape", "m3zKFeg", "MHRS5EwiRnbElfi8E", "iluOaWOCUNCvaeFHk", "XDQmqUnzQcQqnZe226mcFYKNf4olT5Vx"};
     public final /* synthetic */ MW A00;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 18);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 18);
         }
         return new String(copyOfRange);
     }

@@ -7,9 +7,9 @@ public final class C3I {
     public final int A00;
     public final int A01;
 
-    public C3I(int i, int i6) {
+    public C3I(int i, int i4) {
         this.A01 = i;
-        this.A00 = i6;
+        this.A00 = i4;
     }
 
     public final int A00() {

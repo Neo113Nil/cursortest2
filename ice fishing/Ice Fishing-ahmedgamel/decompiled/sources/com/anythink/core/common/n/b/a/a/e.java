@@ -8,7 +8,7 @@ import java.io.IOException;
 class e extends h {
 
     /* renamed from: a, reason: collision with root package name */
-    private boolean f14945a;
+    private boolean f15732a;
 
     public e(v vVar) {
         super(vVar);
@@ -16,14 +16,14 @@ class e extends h {
 
     @Override // com.anythink.core.common.n.c.h, com.anythink.core.common.n.c.v
     public final void a(com.anythink.core.common.n.c.c cVar, long j6) {
-        if (this.f14945a) {
+        if (this.f15732a) {
             cVar.i(j6);
             return;
         }
         try {
             super.a(cVar, j6);
         } catch (IOException unused) {
-            this.f14945a = true;
+            this.f15732a = true;
             b();
         }
     }
@@ -33,26 +33,26 @@ class e extends h {
 
     @Override // com.anythink.core.common.n.c.h, com.anythink.core.common.n.c.v, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        if (this.f14945a) {
+        if (this.f15732a) {
             return;
         }
         try {
             super.close();
         } catch (IOException unused) {
-            this.f14945a = true;
+            this.f15732a = true;
             b();
         }
     }
 
     @Override // com.anythink.core.common.n.c.h, com.anythink.core.common.n.c.v, java.io.Flushable
     public void flush() {
-        if (this.f14945a) {
+        if (this.f15732a) {
             return;
         }
         try {
             super.flush();
         } catch (IOException unused) {
-            this.f14945a = true;
+            this.f15732a = true;
             b();
         }
     }

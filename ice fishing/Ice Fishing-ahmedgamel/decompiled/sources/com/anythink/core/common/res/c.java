@@ -7,35 +7,35 @@ import java.util.Map;
 public class c<K, V> {
 
     /* renamed from: a, reason: collision with root package name */
-    private final LinkedHashMap<K, V> f16207a;
+    private final LinkedHashMap<K, V> f16994a;
 
     /* renamed from: b, reason: collision with root package name */
-    private int f16208b;
+    private int f16995b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f16209c;
+    private int f16996c;
 
     /* renamed from: d, reason: collision with root package name */
-    private int f16210d;
+    private int f16997d;
 
     /* renamed from: e, reason: collision with root package name */
-    private int f16211e;
+    private int f16998e;
 
     /* renamed from: f, reason: collision with root package name */
-    private int f16212f;
+    private int f16999f;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f16213g;
+    private int f17000g;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f16214h;
+    private int f17001h;
 
     public c(int i) {
         if (i <= 0) {
             throw new IllegalArgumentException("maxSize <= 0");
         }
-        this.f16209c = i;
-        this.f16207a = new LinkedHashMap<>(0, 0.75f, true);
+        this.f16996c = i;
+        this.f16994a = new LinkedHashMap<>(0, 0.75f, true);
     }
 
     private static V b() {
@@ -51,31 +51,31 @@ public class c<K, V> {
     }
 
     private synchronized int d() {
-        return this.f16209c;
+        return this.f16996c;
     }
 
     private synchronized int e() {
-        return this.f16213g;
+        return this.f17000g;
     }
 
     private synchronized int f() {
-        return this.f16214h;
+        return this.f17001h;
     }
 
     private synchronized int g() {
-        return this.f16211e;
+        return this.f16998e;
     }
 
     private synchronized int h() {
-        return this.f16210d;
+        return this.f16997d;
     }
 
     private synchronized int i() {
-        return this.f16212f;
+        return this.f16999f;
     }
 
     private synchronized Map<K, V> j() {
-        return new LinkedHashMap(this.f16207a);
+        return new LinkedHashMap(this.f16994a);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0088, code lost:
@@ -88,21 +88,21 @@ public class c<K, V> {
     private void k() {
         K key;
         V value;
-        synchronized (this.f16207a) {
+        synchronized (this.f16994a) {
             while (true) {
                 synchronized (this) {
                     try {
-                        if (this.f16208b < 0 || (this.f16207a.isEmpty() && this.f16208b != 0)) {
+                        if (this.f16995b < 0 || (this.f16994a.isEmpty() && this.f16995b != 0)) {
                             break;
                         }
-                        if (this.f16208b != 0) {
-                            Map.Entry<K, V> next = this.f16207a.entrySet().size() > 0 ? this.f16207a.entrySet().iterator().next() : null;
+                        if (this.f16995b != 0) {
+                            Map.Entry<K, V> next = this.f16994a.entrySet().size() > 0 ? this.f16994a.entrySet().iterator().next() : null;
                             if (next != null) {
                                 key = next.getKey();
                                 value = next.getValue();
-                                this.f16207a.remove(key);
-                                this.f16208b -= c(key, value);
-                                this.f16212f++;
+                                this.f16994a.remove(key);
+                                this.f16995b -= c(key, value);
+                                this.f16999f++;
                             }
                         }
                     } finally {
@@ -110,7 +110,7 @@ public class c<K, V> {
                 }
                 a(true, key, value, null);
             }
-            this.f16207a.clear();
+            this.f16994a.clear();
         }
     }
 
@@ -120,17 +120,17 @@ public class c<K, V> {
 
     public final synchronized String toString() {
         int i;
-        int i6;
+        int i4;
         try {
-            i = this.f16213g;
-            i6 = this.f16214h + i;
+            i = this.f17000g;
+            i4 = this.f17001h + i;
         } catch (Throwable th) {
             throw th;
         }
-        return String.format("LruCache[maxSize=%d,hits=%d,misses=%d,hitRate=%d%%]", Integer.valueOf(this.f16209c), Integer.valueOf(this.f16213g), Integer.valueOf(this.f16214h), Integer.valueOf(i6 != 0 ? (i * 100) / i6 : 0));
+        return String.format("LruCache[maxSize=%d,hits=%d,misses=%d,hitRate=%d%%]", Integer.valueOf(this.f16996c), Integer.valueOf(this.f17000g), Integer.valueOf(this.f17001h), Integer.valueOf(i4 != 0 ? (i * 100) / i4 : 0));
     }
 
-    public void a(boolean z3, K k9, V v9, V v10) {
+    public void a(boolean z6, K k9, V v9, V v10) {
     }
 
     public final V b(K k9, V v9) {
@@ -140,11 +140,11 @@ public class c<K, V> {
         }
         synchronized (this) {
             try {
-                this.f16210d++;
-                this.f16208b += c(k9, v9);
-                put = this.f16207a.put(k9, v9);
+                this.f16997d++;
+                this.f16995b += c(k9, v9);
+                put = this.f16994a.put(k9, v9);
                 if (put != null) {
-                    this.f16208b -= c(k9, put);
+                    this.f16995b -= c(k9, put);
                 }
             } catch (Throwable th) {
                 throw th;
@@ -153,14 +153,14 @@ public class c<K, V> {
         if (put != null) {
             a(false, k9, put, v9);
         }
-        b(this.f16209c);
+        b(this.f16996c);
         return put;
     }
 
     private void a(int i) {
         if (i > 0) {
             synchronized (this) {
-                this.f16209c = i;
+                this.f16996c = i;
             }
             b(i);
             return;
@@ -169,19 +169,19 @@ public class c<K, V> {
     }
 
     private synchronized int c() {
-        return this.f16208b;
+        return this.f16995b;
     }
 
     public final V a(K k9) {
         if (k9 != null) {
             synchronized (this) {
                 try {
-                    V v9 = this.f16207a.get(k9);
+                    V v9 = this.f16994a.get(k9);
                     if (v9 != null) {
-                        this.f16213g++;
+                        this.f17000g++;
                         return v9;
                     }
-                    this.f16214h++;
+                    this.f17001h++;
                     return null;
                 } catch (Throwable th) {
                     throw th;
@@ -193,11 +193,11 @@ public class c<K, V> {
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0063, code lost:
     
-        r5.f16208b = 0;
+        r5.f16995b = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0096, code lost:
     
-        throw new java.lang.IllegalStateException(getClass().getName() + ".sizeOf() is reporting inconsistent results! --> size: " + r5.f16208b + ", map.isEmpty(): " + r5.f16207a.isEmpty());
+        throw new java.lang.IllegalStateException(getClass().getName() + ".sizeOf() is reporting inconsistent results! --> size: " + r5.f16995b + ", map.isEmpty(): " + r5.f16994a.isEmpty());
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -208,21 +208,21 @@ public class c<K, V> {
         while (true) {
             synchronized (this) {
                 try {
-                    if (this.f16208b < 0 || (this.f16207a.isEmpty() && this.f16208b != 0)) {
+                    if (this.f16995b < 0 || (this.f16994a.isEmpty() && this.f16995b != 0)) {
                         break;
                     }
-                    if (this.f16208b <= i) {
+                    if (this.f16995b <= i) {
                         return;
                     }
-                    Map.Entry<K, V> next = this.f16207a.entrySet().size() > 0 ? this.f16207a.entrySet().iterator().next() : null;
+                    Map.Entry<K, V> next = this.f16994a.entrySet().size() > 0 ? this.f16994a.entrySet().iterator().next() : null;
                     if (next == null) {
                         return;
                     }
                     key = next.getKey();
                     value = next.getValue();
-                    this.f16207a.remove(key);
-                    this.f16208b -= c(key, value);
-                    this.f16212f++;
+                    this.f16994a.remove(key);
+                    this.f16995b -= c(key, value);
+                    this.f16999f++;
                 } catch (Exception e9) {
                     e9.printStackTrace();
                     return;
@@ -241,9 +241,9 @@ public class c<K, V> {
         if (k9 != null) {
             synchronized (this) {
                 try {
-                    remove = this.f16207a.remove(k9);
+                    remove = this.f16994a.remove(k9);
                     if (remove != null) {
-                        this.f16208b -= c(k9, remove);
+                        this.f16995b -= c(k9, remove);
                     }
                 } catch (Throwable th) {
                     throw th;

@@ -4,5 +4,5 @@ import java.util.Map;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public interface TS {
-    Map<String, String> A97(C1836ge c1836ge);
+    Map<String, String> A97(C1856ge c1856ge);
 }

@@ -14,32 +14,32 @@ public final class AnonymousClass50 {
     public final int A02;
     public final Surface A03;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 33);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 33);
         }
         return new String(copyOfRange);
     }
 
     public static void A01() {
-        A04 = new byte[]{66, 95, 68, 72, 67, 89, 76, 89, 68, 66, 67, 105, 72, 74, 95, 72, 72, 94, 13, c.f16317b, 88, 94, 89, 13, 79, 72, 13, 29, 1, 13, 20, 29, 1, 13, 28, 21, 29, 1, 13, 66, 95, 13, 31, 26, 29};
+        A04 = new byte[]{66, 95, 68, 72, 67, 89, 76, 89, 68, 66, 67, 105, 72, 74, 95, 72, 72, 94, 13, c.f17104b, 88, 94, 89, 13, 79, 72, 13, 29, 1, 13, 20, 29, 1, 13, 28, 21, 29, 1, 13, 66, 95, 13, 31, 26, 29};
     }
 
     static {
         A01();
     }
 
-    public AnonymousClass50(Surface surface, int i, int i6) {
-        this(surface, i, i6, 0);
+    public AnonymousClass50(Surface surface, int i, int i4) {
+        this(surface, i, i4, 0);
     }
 
-    public AnonymousClass50(Surface surface, int i, int i6, int i9) {
-        AbstractC06243y.A09(i9 == 0 || i9 == 90 || i9 == 180 || i9 == 270, A00(0, 45, 12));
+    public AnonymousClass50(Surface surface, int i, int i4, int i6) {
+        AbstractC06443y.A09(i6 == 0 || i6 == 90 || i6 == 180 || i6 == 270, A00(0, 45, 12));
         this.A03 = surface;
         this.A02 = i;
-        this.A00 = i6;
-        this.A01 = i9;
+        this.A00 = i4;
+        this.A01 = i6;
     }
 
     public final boolean equals(Object obj) {
@@ -52,14 +52,14 @@ public final class AnonymousClass50 {
         AnonymousClass50 anonymousClass50 = (AnonymousClass50) obj;
         if (this.A02 == anonymousClass50.A02 && this.A00 == anonymousClass50.A00) {
             int i = this.A01;
-            int i6 = anonymousClass50.A01;
+            int i4 = anonymousClass50.A01;
             if (A05[7].charAt(29) == 'q') {
                 throw new RuntimeException();
             }
             String[] strArr = A05;
             strArr[2] = "IfmXZsmHB8xObc4DA1o6c";
             strArr[3] = "9bmF1UX1T4riDJeOAx7tH";
-            if (i == i6 && this.A03.equals(anonymousClass50.A03)) {
+            if (i == i4 && this.A03.equals(anonymousClass50.A03)) {
                 return true;
             }
         }

@@ -6,5 +6,5 @@ import java.util.concurrent.ThreadPoolExecutor;
 public abstract class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final c f228a = new c(1, new ThreadPoolExecutor.DiscardPolicy());
+    public static final c f294a = new c(1, new ThreadPoolExecutor.DiscardPolicy());
 }

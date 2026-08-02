@@ -36,8 +36,8 @@ public final class DefaultMediaViewVideoRenderer extends MediaViewVideoRenderer 
         initializeSelf(context);
     }
 
-    public DefaultMediaViewVideoRenderer(Context context, AttributeSet attributeSet, int i, int i6) {
-        super(context, attributeSet, i, i6);
+    public DefaultMediaViewVideoRenderer(Context context, AttributeSet attributeSet, int i, int i4) {
+        super(context, attributeSet, i, i4);
         initializeSelf(context);
     }
 }

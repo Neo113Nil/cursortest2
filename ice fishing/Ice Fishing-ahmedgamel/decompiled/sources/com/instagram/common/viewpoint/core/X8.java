@@ -6,12 +6,12 @@ import android.view.animation.Interpolator;
 public final class X8 implements Interpolator {
     public final float A00;
 
-    public X8(float f3) {
-        this.A00 = f3;
+    public X8(float f2) {
+        this.A00 = f2;
     }
 
     @Override // android.animation.TimeInterpolator
-    public final float getInterpolation(float f3) {
-        return (float) (1.0d - Math.pow(1.0f - f3, this.A00));
+    public final float getInterpolation(float f2) {
+        return (float) (1.0d - Math.pow(1.0f - f2, this.A00));
     }
 }

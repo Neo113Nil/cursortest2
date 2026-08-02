@@ -1,6 +1,6 @@
 package com.anythink.core.d;
 
-import D.y;
+import D.x;
 import android.content.Context;
 import android.text.TextUtils;
 import com.anythink.core.api.ErrorCode;
@@ -10,7 +10,7 @@ import com.anythink.core.common.h.v;
 public class c {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f17241a = "c";
+    private static final String f18028a = "c";
 
     public static void b(Context context, v vVar, com.anythink.core.common.m.q qVar) {
         if (context == null) {
@@ -30,18 +30,18 @@ public class c {
                 final com.anythink.core.common.m.n nVar = new com.anythink.core.common.m.n(qVar);
                 com.anythink.core.common.i.a();
                 String b9 = com.anythink.core.common.i.b();
-                final String f3 = com.anythink.core.common.v.q.f(b9);
+                final String f2 = com.anythink.core.common.v.q.f(b9);
                 new com.anythink.core.common.m.f(context, vVar).a(b9).a(0, (com.anythink.core.common.m.q) nVar);
                 com.anythink.core.common.g.c.a().a(new com.anythink.core.common.g.d() { // from class: com.anythink.core.d.c.1
                     @Override // com.anythink.core.common.g.d
                     public final void a(String str) {
-                        String unused = c.f17241a;
-                        if (TextUtils.isEmpty(str) || str.equals(f3)) {
-                            nVar.onLoadError(0, y.p("The cdnDomain(", str, ") is not equal to curAppDomain(", f3, ")."), ErrorCode.getErrorCode(ErrorCode.appIdError, "", ""));
+                        String unused = c.f18028a;
+                        if (TextUtils.isEmpty(str) || str.equals(f2)) {
+                            nVar.onLoadError(0, x.m("The cdnDomain(", str, ") is not equal to curAppDomain(", f2, ")."), ErrorCode.getErrorCode(ErrorCode.appIdError, "", ""));
                             return;
                         }
                         boolean a9 = nVar.a();
-                        String unused2 = c.f17241a;
+                        String unused2 = c.f18028a;
                         vVar.a();
                         if (a9) {
                             return;

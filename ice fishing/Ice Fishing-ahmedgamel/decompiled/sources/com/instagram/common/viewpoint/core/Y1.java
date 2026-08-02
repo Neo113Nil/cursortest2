@@ -11,16 +11,16 @@ public final class Y1 {
     public static String[] A01 = {"kzsYhm9LKsU0BkYF5GBD4cHOfO5I2S", "FiiX6q", "juV27aOscABEXHLMFQmBucT", "1EXxaj", "f1sOyyKe81qkTfSynlEtElAllv4GRKo", "lzeqJRba", "GXB72S", "F9UQYukVDOEwI1lxcupNtKixpZh4OtVr"};
     public static final Y0 A02 = null;
 
-    public static String A04(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 22);
+    public static String A04(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 22);
         }
         return new String(copyOfRange);
     }
 
     public static void A08() {
-        A00 = new byte[]{c.f16317b, 75, 86, 3, 23, 8, 20, 21, 18, 16, 50, 61, 116, 39, 115, 53, 60, 33, 62, 50, 39, 115, 39, 58, 62, 54, 125};
+        A00 = new byte[]{c.f17104b, 75, 86, 3, 23, 8, 20, 21, 18, 16, 50, 61, 116, 39, 115, 53, 60, 33, 62, 50, 39, 115, 39, 58, 62, 54, 125};
     }
 
     static {
@@ -45,9 +45,9 @@ public final class Y1 {
         return j9 - j6;
     }
 
-    public static String A03(double d2) {
+    public static String A03(double d9) {
         try {
-            return String.format(Locale.US, A04(0, 4, 115), Double.valueOf(d2));
+            return String.format(Locale.US, A04(0, 4, 115), Double.valueOf(d9));
         } catch (Exception e9) {
             String simpleName = Y1.class.getSimpleName();
             if (A01[3].length() == 20) {

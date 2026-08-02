@@ -15,6 +15,7 @@ import com.anythink.core.common.h.z;
 import com.anythink.core.common.m.q;
 import com.anythink.core.common.v.ab;
 import com.anythink.core.common.v.ae;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -29,69 +30,69 @@ import org.json.JSONObject;
 public abstract class e extends d {
 
     /* renamed from: j, reason: collision with root package name */
-    public static final double f11816j = 10000.0d;
+    public static final double f12602j = 10000.0d;
 
     /* renamed from: k, reason: collision with root package name */
-    final String f11817k;
+    final String f12603k;
 
     /* renamed from: l, reason: collision with root package name */
-    protected final List<JSONObject> f11818l;
+    protected final List<JSONObject> f12604l;
 
     /* renamed from: m, reason: collision with root package name */
-    List<bv> f11819m;
+    List<bv> f12605m;
 
     /* renamed from: n, reason: collision with root package name */
-    List<bv> f11820n;
+    List<bv> f12606n;
 
     /* renamed from: o, reason: collision with root package name */
-    String f11821o;
+    String f12607o;
 
     /* renamed from: p, reason: collision with root package name */
-    String f11822p;
+    String f12608p;
 
     /* renamed from: q, reason: collision with root package name */
-    String f11823q;
+    String f12609q;
 
     /* renamed from: r, reason: collision with root package name */
-    com.anythink.core.b.b.b f11824r;
+    com.anythink.core.b.b.b f12610r;
 
     /* renamed from: s, reason: collision with root package name */
-    long f11825s;
+    long f12611s;
 
     /* renamed from: t, reason: collision with root package name */
-    protected AtomicBoolean f11826t;
+    protected AtomicBoolean f12612t;
 
     /* renamed from: u, reason: collision with root package name */
-    protected AtomicBoolean f11827u;
+    protected AtomicBoolean f12613u;
 
     /* renamed from: v, reason: collision with root package name */
-    ConcurrentHashMap<String, bv> f11828v;
+    ConcurrentHashMap<String, bv> f12614v;
 
     /* renamed from: w, reason: collision with root package name */
-    ConcurrentHashMap<String, bv> f11829w;
+    ConcurrentHashMap<String, bv> f12615w;
 
     /* renamed from: x, reason: collision with root package name */
-    ConcurrentHashMap<String, bv> f11830x;
+    ConcurrentHashMap<String, bv> f12616x;
 
     /* renamed from: y, reason: collision with root package name */
-    ConcurrentHashMap<String, bv> f11831y;
+    ConcurrentHashMap<String, bv> f12617y;
 
     /* renamed from: z, reason: collision with root package name */
-    com.anythink.core.common.t.b f11832z;
+    com.anythink.core.common.t.b f12618z;
 
     public e(com.anythink.core.common.h.a aVar) {
         super(aVar);
-        this.f11817k = getClass().getSimpleName().concat(":");
-        this.f11818l = new ArrayList();
-        this.f11819m = new ArrayList();
-        this.f11820n = new ArrayList();
-        this.f11826t = new AtomicBoolean(false);
-        this.f11827u = new AtomicBoolean(false);
-        this.f11828v = new ConcurrentHashMap<>();
-        this.f11829w = new ConcurrentHashMap<>();
-        this.f11830x = new ConcurrentHashMap<>();
-        this.f11831y = new ConcurrentHashMap<>();
-        this.f11832z = new com.anythink.core.common.t.b() { // from class: com.anythink.core.b.e.1
+        this.f12603k = getClass().getSimpleName().concat(":");
+        this.f12604l = new ArrayList();
+        this.f12605m = new ArrayList();
+        this.f12606n = new ArrayList();
+        this.f12612t = new AtomicBoolean(false);
+        this.f12613u = new AtomicBoolean(false);
+        this.f12614v = new ConcurrentHashMap<>();
+        this.f12615w = new ConcurrentHashMap<>();
+        this.f12616x = new ConcurrentHashMap<>();
+        this.f12617y = new ConcurrentHashMap<>();
+        this.f12618z = new com.anythink.core.common.t.b() { // from class: com.anythink.core.b.e.1
             @Override // java.lang.Runnable
             public final void run() {
                 com.anythink.core.common.v.b.b.a().a(new Runnable() { // from class: com.anythink.core.b.e.1.1
@@ -102,58 +103,58 @@ public abstract class e extends d {
                 });
             }
         };
-        List<bv> list = aVar.f13334j;
+        List<bv> list = aVar.f14120j;
         if (list != null && list.size() > 0) {
-            for (bv bvVar : aVar.f13334j) {
+            for (bv bvVar : aVar.f14120j) {
                 if (bvVar != null) {
-                    this.f11828v.put(bvVar.z(), bvVar);
-                    this.f11830x.put(bvVar.z(), bvVar);
+                    this.f12614v.put(bvVar.z(), bvVar);
+                    this.f12616x.put(bvVar.z(), bvVar);
                 }
             }
         }
-        List<bv> list2 = aVar.f13335k;
+        List<bv> list2 = aVar.f14121k;
         if (list2 != null && list2.size() > 0) {
-            for (bv bvVar2 : aVar.f13335k) {
-                this.f11829w.put(bvVar2.z(), bvVar2);
-                this.f11831y.put(bvVar2.z(), bvVar2);
+            for (bv bvVar2 : aVar.f14121k) {
+                this.f12615w.put(bvVar2.z(), bvVar2);
+                this.f12617y.put(bvVar2.z(), bvVar2);
             }
         }
-        JSONObject jSONObject = aVar.f13342r;
+        JSONObject jSONObject = aVar.f14128r;
         if (jSONObject != null) {
-            this.f11818l.add(jSONObject);
+            this.f12604l.add(jSONObject);
         }
-        this.f11821o = aVar.f13329d;
-        this.f11822p = aVar.f13330e;
-        this.f11823q = b();
+        this.f12607o = aVar.f14115d;
+        this.f12608p = aVar.f14116e;
+        this.f12609q = b();
     }
 
     private void b(long j6) {
-        com.anythink.core.common.t.d.a().a(this.f11832z, j6, false);
+        com.anythink.core.common.t.d.a().a(this.f12618z, j6, false);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public synchronized void c(final long j6) {
         try {
             try {
-                if (this.f11827u.get()) {
+                if (this.f12613u.get()) {
                     return;
                 }
                 ArrayList arrayList = new ArrayList();
                 final ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
                 final ConcurrentHashMap concurrentHashMap2 = new ConcurrentHashMap();
                 a(arrayList, concurrentHashMap, concurrentHashMap2);
-                this.f11827u.set(true);
+                this.f12613u.set(true);
                 a(arrayList, new q() { // from class: com.anythink.core.b.e.3
                     @Override // com.anythink.core.common.m.q
                     public final void onLoadCanceled(int i) {
                         synchronized (e.this) {
                             try {
-                                if (e.this.f11738h.get()) {
+                                if (e.this.f12524h.get()) {
                                     e eVar = e.this;
-                                    String str = eVar.f11817k;
-                                    String str2 = eVar.f11736f.f13330e;
+                                    String str = eVar.f12603k;
+                                    String str2 = eVar.f12522f.f14116e;
                                 } else {
-                                    e.this.f11827u.set(false);
+                                    e.this.f12613u.set(false);
                                     e.this.d();
                                     e.this.a(null, SystemClock.elapsedRealtime() - j6, "onLoadCanceled.", concurrentHashMap, concurrentHashMap2);
                                 }
@@ -167,12 +168,12 @@ public abstract class e extends d {
                     public final void onLoadError(int i, String str, AdError adError) {
                         synchronized (e.this) {
                             try {
-                                if (e.this.f11738h.get()) {
+                                if (e.this.f12524h.get()) {
                                     e eVar = e.this;
-                                    String str2 = eVar.f11817k;
-                                    String str3 = eVar.f11736f.f13330e;
+                                    String str2 = eVar.f12603k;
+                                    String str3 = eVar.f12522f.f14116e;
                                 } else {
-                                    e.this.f11827u.set(false);
+                                    e.this.f12613u.set(false);
                                     e.this.d();
                                     e.this.a(null, SystemClock.elapsedRealtime() - j6, adError != null ? adError.getPlatformMSG() : "", concurrentHashMap, concurrentHashMap2);
                                 }
@@ -186,12 +187,12 @@ public abstract class e extends d {
                     public final void onLoadFinish(int i, Object obj) {
                         synchronized (e.this) {
                             try {
-                                if (e.this.f11738h.get()) {
+                                if (e.this.f12524h.get()) {
                                     e eVar = e.this;
-                                    String str = eVar.f11817k;
-                                    String str2 = eVar.f11736f.f13330e;
+                                    String str = eVar.f12603k;
+                                    String str2 = eVar.f12522f.f14116e;
                                 } else {
-                                    e.this.f11827u.set(false);
+                                    e.this.f12613u.set(false);
                                     long elapsedRealtime = SystemClock.elapsedRealtime() - j6;
                                     e.this.a(e.a(obj), elapsedRealtime, null, concurrentHashMap, concurrentHashMap2);
                                     e.this.d();
@@ -216,33 +217,33 @@ public abstract class e extends d {
     }
 
     private void f() {
-        com.anythink.core.common.t.d.a().b(this.f11832z);
+        com.anythink.core.common.t.d.a().b(this.f12618z);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public synchronized void g() {
-        if (this.f11738h.get()) {
+        if (this.f12524h.get()) {
             return;
         }
-        this.f11826t.set(true);
-        if (this.f11818l.size() > 0) {
+        this.f12612t.set(true);
+        if (this.f12604l.size() > 0) {
             c(SystemClock.elapsedRealtime());
         }
     }
 
     private boolean h() {
-        return this.f11826t.get() && !this.f11827u.get();
+        return this.f12612t.get() && !this.f12613u.get();
     }
 
     private synchronized void i() {
         try {
             try {
-                if (!this.f11738h.get()) {
-                    this.f11738h.set(true);
+                if (!this.f12524h.get()) {
+                    this.f12524h.set(true);
                     f();
-                    this.f11830x.clear();
-                    a(0L, -3, ATBidRequestInfo.BIDDING_REQUEST_TIMEOUT_TYPE, this.f11828v);
-                    a(0L, -3, ATBidRequestInfo.BIDDING_REQUEST_TIMEOUT_TYPE, this.f11829w);
+                    this.f12616x.clear();
+                    a(0L, -3, ATBidRequestInfo.BIDDING_REQUEST_TIMEOUT_TYPE, this.f12614v);
+                    a(0L, -3, ATBidRequestInfo.BIDDING_REQUEST_TIMEOUT_TYPE, this.f12615w);
                     l();
                     k();
                     j();
@@ -259,39 +260,39 @@ public abstract class e extends d {
 
     private void j() {
         com.anythink.core.b.b.b bVar;
-        if ((this.f11820n.size() > 0 || this.f11819m.size() > 0) && (bVar = this.f11824r) != null) {
-            bVar.a(this.f11820n, this.f11819m);
+        if ((this.f12606n.size() > 0 || this.f12605m.size() > 0) && (bVar = this.f12610r) != null) {
+            bVar.a(this.f12606n, this.f12605m);
         }
-        this.f11820n.clear();
-        this.f11819m.clear();
+        this.f12606n.clear();
+        this.f12605m.clear();
     }
 
     private synchronized void k() {
         if (m()) {
-            this.f11738h.set(true);
+            this.f12524h.set(true);
         }
     }
 
     private void l() {
         if (ATSDK.isNetworkLogDebug()) {
-            if (this.f11820n.size() > 0 || this.f11819m.size() > 0) {
+            if (this.f12606n.size() > 0 || this.f12605m.size() > 0) {
                 JSONObject jSONObject = new JSONObject();
                 try {
-                    jSONObject.put("PlacementId", this.f11736f.f13330e);
-                    if (this.f11736f.f13343s.ah()) {
+                    jSONObject.put("PlacementId", this.f12522f.f14116e);
+                    if (this.f12522f.f14129s.ah()) {
                         jSONObject.put("isAdxNetworkMode", true);
                     }
-                    jSONObject.put("S2S HeadBidding Success List", d.a(this.f11820n));
-                    jSONObject.put("S2S HeadBidding Fail List", d.a(this.f11819m));
+                    jSONObject.put("S2S HeadBidding Success List", d.a(this.f12606n));
+                    jSONObject.put("S2S HeadBidding Fail List", d.a(this.f12605m));
                 } catch (Exception unused) {
                 }
-                ab.a(ab.f16621a, jSONObject.toString(), false);
+                ab.a(ab.f17408a, jSONObject.toString(), false);
             }
         }
     }
 
     private boolean m() {
-        return this.f11828v.size() == 0 && this.f11829w.size() == 0 && this.f11830x.size() == 0;
+        return this.f12614v.size() == 0 && this.f12615w.size() == 0 && this.f12616x.size() == 0;
     }
 
     public abstract void a(List<JSONObject> list, q qVar);
@@ -318,7 +319,7 @@ public abstract class e extends d {
     }
 
     public final boolean e() {
-        return !this.f11827u.get() && this.f11818l.size() > 0;
+        return !this.f12613u.get() && this.f12604l.size() > 0;
     }
 
     private static List<ad> b(Object obj) {
@@ -333,55 +334,55 @@ public abstract class e extends d {
     }
 
     @Override // com.anythink.core.b.d
-    public final void a(boolean z3) {
-        this.f11737g = z3;
+    public final void a(boolean z6) {
+        this.f12523g = z6;
     }
 
     @Override // com.anythink.core.b.d
     public final void a(com.anythink.core.b.b.b bVar) {
         List<bv> list;
-        this.f11825s = SystemClock.elapsedRealtime();
-        this.f11824r = bVar;
+        this.f12611s = SystemClock.elapsedRealtime();
+        this.f12610r = bVar;
         if (ATSDK.isNetworkLogDebug()) {
             JSONObject jSONObject = new JSONObject();
             try {
-                jSONObject.put("PlacementId", this.f11736f.f13330e);
-                if (this.f11736f.f13343s.ah()) {
+                jSONObject.put("PlacementId", this.f12522f.f14116e);
+                if (this.f12522f.f14129s.ah()) {
                     jSONObject.put("isAdxNetworkMode", true);
                 }
-                jSONObject.put("S2S Start HeadBidding List", d.a(this.f11736f.f13334j));
-                jSONObject.put("S2S Start HeadBidding List(Directly)", d.b(this.f11818l));
+                jSONObject.put("S2S Start HeadBidding List", d.a(this.f12522f.f14120j));
+                jSONObject.put("S2S Start HeadBidding List(Directly)", d.b(this.f12604l));
             } catch (Exception unused) {
             }
-            ab.a(ab.f16621a, jSONObject.toString(), false);
+            ab.a(ab.f17408a, jSONObject.toString(), false);
         }
-        if (this.f11736f.f13334j.size() == 0 && (list = this.f11736f.f13335k) != null && list.size() > 0) {
-            c(this.f11825s);
+        if (this.f12522f.f14120j.size() == 0 && (list = this.f12522f.f14121k) != null && list.size() > 0) {
+            c(this.f12611s);
             return;
         }
-        long n9 = this.f11736f.f13338n.n();
+        long n9 = this.f12522f.f14124n.n();
         if (n9 <= 0) {
             n9 = 500;
         }
-        com.anythink.core.common.t.d.a().a(this.f11832z, n9, false);
-        Iterator<Map.Entry<String, bv>> it = this.f11828v.entrySet().iterator();
+        com.anythink.core.common.t.d.a().a(this.f12618z, n9, false);
+        Iterator<Map.Entry<String, bv>> it = this.f12614v.entrySet().iterator();
         while (it.hasNext()) {
             bv value = it.next().getValue();
             if (value.g() == 66) {
-                com.anythink.core.common.a.i.a(this.f11736f.f13327b).a(value.z(), System.currentTimeMillis());
+                com.anythink.core.common.a.i.a(this.f12522f.f14113b).a(value.z(), System.currentTimeMillis());
             }
-            new i(this.f11736f).a(value, new i.a() { // from class: com.anythink.core.b.e.2
+            new i(this.f12522f).a(value, new i.a() { // from class: com.anythink.core.b.e.2
                 @Override // com.anythink.core.b.i.a
                 public final void onBidTokenObtainFail(String str, bv bvVar) {
-                    if (e.this.f11738h.get()) {
+                    if (e.this.f12524h.get()) {
                         return;
                     }
-                    bvVar.m(SystemClock.elapsedRealtime() - e.this.f11825s);
+                    bvVar.m(SystemClock.elapsedRealtime() - e.this.f12611s);
                     if (str == null) {
                         str = "";
                     }
-                    e.this.f11830x.remove(bvVar.z());
-                    e.this.f11828v.remove(bvVar.z());
+                    e.this.f12616x.remove(bvVar.z());
+                    e.this.f12614v.remove(bvVar.z());
                     e.a(e.this, str, bvVar);
                     switch (str) {
                         case "This network don't support header bidding in current TopOn's version.":
@@ -403,7 +404,7 @@ public abstract class e extends d {
 
                 @Override // com.anythink.core.b.i.a
                 public final void onBidTokenObtainStart(bv bvVar, ATBaseAdAdapter aTBaseAdAdapter) {
-                    com.anythink.core.b.b.b bVar2 = e.this.f11824r;
+                    com.anythink.core.b.b.b bVar2 = e.this.f12610r;
                     if (bVar2 != null) {
                         bVar2.a(bvVar, aTBaseAdAdapter);
                     }
@@ -411,15 +412,15 @@ public abstract class e extends d {
 
                 @Override // com.anythink.core.b.i.a
                 public final void onBidTokenObtainSuccess(bv bvVar, JSONObject jSONObject2) {
-                    if (e.this.f11738h.get()) {
+                    if (e.this.f12524h.get()) {
                         return;
                     }
                     long elapsedRealtime = SystemClock.elapsedRealtime();
-                    bvVar.m(elapsedRealtime - e.this.f11825s);
+                    bvVar.m(elapsedRealtime - e.this.f12611s);
                     bvVar.a(elapsedRealtime);
-                    e.this.f11830x.remove(bvVar.z());
+                    e.this.f12616x.remove(bvVar.z());
                     e.a(e.this, bvVar);
-                    if (!e.this.f11826t.get() || e.this.f11826t.get()) {
+                    if (!e.this.f12612t.get() || e.this.f12612t.get()) {
                         e.a(e.this, jSONObject2, bvVar);
                     } else {
                         onBidTokenObtainFail(ATBidRequestInfo.BIDTOKEN_OBTAIN_TIMEOUT_TYPE, bvVar);
@@ -430,9 +431,9 @@ public abstract class e extends d {
     }
 
     private void b(bv bvVar) {
-        int g4 = bvVar.g();
-        com.anythink.core.common.u.e.a(bvVar, this.f11736f, bvVar.X(), true, f.a().b(g4));
-        f.a().a(g4);
+        int g9 = bvVar.g();
+        com.anythink.core.common.u.e.a(bvVar, this.f12522f, bvVar.X(), true, f.a().b(g9));
+        f.a().a(g9);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -446,7 +447,7 @@ public abstract class e extends d {
             }
         }
         d.a(bvVar, str, j9, i);
-        this.f11819m.add(bvVar);
+        this.f12605m.add(bvVar);
     }
 
     private static void b(bv bvVar, ad adVar) {
@@ -464,28 +465,28 @@ public abstract class e extends d {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private void a(JSONObject jSONObject, bv bvVar) {
-        boolean z3;
+        boolean z6;
         Throwable th;
-        if (this.f11830x.size() == 0) {
+        if (this.f12616x.size() == 0) {
             f();
-            if (!this.f11827u.get()) {
-                z3 = true;
+            if (!this.f12613u.get()) {
+                z6 = true;
                 synchronized (this) {
                     if (jSONObject != null && bvVar != null) {
                         try {
-                            this.f11818l.add(jSONObject);
-                            this.f11831y.put(bvVar.z(), bvVar);
+                            this.f12604l.add(jSONObject);
+                            this.f12617y.put(bvVar.z(), bvVar);
                         } catch (Throwable th2) {
                             th = th2;
                             throw th;
                         }
                     }
                     try {
-                        if (this.f11818l.size() > 0 && (z3 || (this.f11826t.get() && !this.f11827u.get()))) {
-                            c(this.f11825s);
+                        if (this.f12604l.size() > 0 && (z6 || (this.f12612t.get() && !this.f12613u.get()))) {
+                            c(this.f12611s);
                             return;
                         } else {
-                            if (this.f11819m.size() <= 0 || !m()) {
+                            if (this.f12605m.size() <= 0 || !m()) {
                                 return;
                             }
                             a(null, 0L, "", null, null);
@@ -498,19 +499,19 @@ public abstract class e extends d {
                 }
             }
         }
-        z3 = false;
+        z6 = false;
         synchronized (this) {
         }
     }
 
     public synchronized void a(List<JSONObject> list, Map<String, bv> map, Map<String, JSONObject> map2) {
         try {
-            for (JSONObject jSONObject : this.f11818l) {
+            for (JSONObject jSONObject : this.f12604l) {
                 list.add(jSONObject);
                 map2.put(jSONObject.optString("ad_source_id"), jSONObject);
             }
-            this.f11818l.clear();
-            ConcurrentHashMap<String, bv> concurrentHashMap = this.f11831y;
+            this.f12604l.clear();
+            ConcurrentHashMap<String, bv> concurrentHashMap = this.f12617y;
             if (concurrentHashMap != null) {
                 Iterator<Map.Entry<String, bv>> it = concurrentHashMap.entrySet().iterator();
                 while (it.hasNext()) {
@@ -520,8 +521,8 @@ public abstract class e extends d {
                     }
                 }
             }
-            map.putAll(this.f11831y);
-            this.f11831y.clear();
+            map.putAll(this.f12617y);
+            this.f12617y.clear();
         } catch (Throwable th) {
             throw th;
         }
@@ -530,7 +531,7 @@ public abstract class e extends d {
     private void a(long j6, int i, String str, Map<String, bv> map) {
         for (bv bvVar : map.values()) {
             if (a(bvVar, str, i)) {
-                this.f11820n.add(bvVar);
+                this.f12606n.add(bvVar);
             } else {
                 b(bvVar, str, j6, i);
             }
@@ -548,12 +549,12 @@ public abstract class e extends d {
                     Collections.sort(list);
                     for (int i = 0; i < list.size(); i++) {
                         ad adVar = list.get(i);
-                        this.f11828v.remove(adVar.f13428k);
-                        bv remove = map.remove(adVar.f13428k);
-                        if (this.f11829w.containsKey(adVar.f13428k)) {
+                        this.f12614v.remove(adVar.f14214k);
+                        bv remove = map.remove(adVar.f14214k);
+                        if (this.f12615w.containsKey(adVar.f14214k)) {
                             try {
-                                remove = this.f11829w.remove(adVar.f13428k);
-                                this.f11829w.clear();
+                                remove = this.f12615w.remove(adVar.f14214k);
+                                this.f12615w.clear();
                             } catch (Throwable th2) {
                                 th = th2;
                                 throw th;
@@ -561,8 +562,8 @@ public abstract class e extends d {
                         }
                         if (remove != null) {
                             if (adVar.isSuccessWithUseType()) {
-                                int i6 = i + 1;
-                                double sortPrice = i6 < list.size() ? list.get(i6).getSortPrice() : 0.0d;
+                                int i4 = i + 1;
+                                double sortPrice = i4 < list.size() ? list.get(i4).getSortPrice() : 0.0d;
                                 eVar = this;
                                 try {
                                     eVar.a(remove.g(), adVar, sortPrice, adVar.isSamePrice());
@@ -591,7 +592,7 @@ public abstract class e extends d {
                             }
                             a(remove, adVar, j6);
                             if (remove.g() == 66) {
-                                com.anythink.core.common.a.i.a(eVar.f11736f.f13327b).a(remove.z(), adVar.f13440w);
+                                com.anythink.core.common.a.i.a(eVar.f12522f.f14113b).a(remove.z(), adVar.f14226w);
                             }
                         }
                     }
@@ -603,10 +604,10 @@ public abstract class e extends d {
         if (map != null) {
             for (String str2 : map.keySet()) {
                 if (str2 != null) {
-                    this.f11828v.remove(str2);
+                    this.f12614v.remove(str2);
                 }
-                if (this.f11829w.containsKey(str2)) {
-                    this.f11829w.clear();
+                if (this.f12615w.containsKey(str2)) {
+                    this.f12615w.clear();
                 }
             }
         }
@@ -619,8 +620,8 @@ public abstract class e extends d {
                 throw th;
             }
         }
-        if (this.f11820n.size() >= 2) {
-            Collections.sort(this.f11820n);
+        if (this.f12606n.size() >= 2) {
+            Collections.sort(this.f12606n);
         }
         l();
         k();
@@ -644,29 +645,29 @@ public abstract class e extends d {
         if (TextUtils.equals(str, ATBidRequestInfo.NO_ADAPTER_ERROR_TYPE) || TextUtils.equals(str, ATBidRequestInfo.NO_SUPPORT_BIDDING_TYPE)) {
             return;
         }
-        int g4 = bvVar.g();
-        com.anythink.core.common.u.e.a(bvVar, this.f11736f, bvVar.X(), false, f.a().b(g4));
-        f.a().a(g4);
+        int g9 = bvVar.g();
+        com.anythink.core.common.u.e.a(bvVar, this.f12522f, bvVar.X(), false, f.a().b(g9));
+        f.a().a(g9);
     }
 
     @Override // com.anythink.core.b.d
     public void a(bv bvVar, z zVar, long j6) {
-        String g4;
+        String i;
         if (zVar instanceof ad) {
             ad adVar = (ad) zVar;
             boolean isSuccessWithUseType = adVar.isSuccessWithUseType();
             boolean a9 = d.a(isSuccessWithUseType, bvVar, zVar);
-            int i = 0;
-            AdError a10 = ae.a(0, this.f11736f.f13343s, bvVar, zVar);
+            int i4 = 0;
+            AdError a10 = ae.a(0, this.f12522f.f14129s, bvVar, zVar);
             int i6 = 1;
-            boolean z3 = a10 != null;
-            if (isSuccessWithUseType && !a9 && !z3) {
+            boolean z6 = a10 != null;
+            if (isSuccessWithUseType && !a9 && !z6) {
                 bvVar.c(j6 > 0 ? bvVar.X() + j6 : 0L);
-                this.f11820n.add(bvVar);
+                this.f12606n.add(bvVar);
                 if (bvVar.q() == 3 || bvVar.q() == 7) {
-                    adVar.f13424f = System.currentTimeMillis() + adVar.f13423e;
+                    adVar.f14210f = System.currentTimeMillis() + adVar.f14209e;
                 } else {
-                    adVar.f13424f = System.currentTimeMillis() + bvVar.s();
+                    adVar.f14210f = System.currentTimeMillis() + bvVar.s();
                 }
                 a(bvVar, adVar);
                 return;
@@ -678,7 +679,7 @@ public abstract class e extends d {
                 a(adVar, bvVar);
                 return;
             }
-            if (z3) {
+            if (z6) {
                 b(bvVar, a10.getPlatformMSG(), j6, -13);
                 bvVar.b(zVar.getPrice());
                 bvVar.e(zVar.getSortPrice());
@@ -687,19 +688,19 @@ public abstract class e extends d {
             }
             if (adVar.useType == 2) {
                 bvVar.V();
-                g4 = "filter by s2s bid max count";
+                i = "filter by s2s bid max count";
             } else {
                 StringBuilder sb = new StringBuilder("errorCode:[");
-                sb.append(adVar.f13419a);
+                sb.append(adVar.f14205a);
                 sb.append("],errorMsg:[");
-                g4 = u1.h.g(sb, adVar.errorMsg, "]");
+                i = Wv.i(sb, adVar.errorMsg, "]");
                 i6 = 0;
-                i = -1;
+                i4 = -1;
             }
-            if (a(bvVar, g4, i, i6)) {
-                this.f11820n.add(bvVar);
+            if (a(bvVar, i, i4, i6)) {
+                this.f12606n.add(bvVar);
             } else {
-                b(bvVar, g4, j6, i);
+                b(bvVar, i, j6, i4);
             }
         }
     }
@@ -710,9 +711,9 @@ public abstract class e extends d {
     }
 
     public static /* synthetic */ void a(e eVar, bv bvVar) {
-        int g4 = bvVar.g();
-        com.anythink.core.common.u.e.a(bvVar, eVar.f11736f, bvVar.X(), true, f.a().b(g4));
-        f.a().a(g4);
+        int g9 = bvVar.g();
+        com.anythink.core.common.u.e.a(bvVar, eVar.f12522f, bvVar.X(), true, f.a().b(g9));
+        f.a().a(g9);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:7:0x0019  */
@@ -720,19 +721,19 @@ public abstract class e extends d {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static /* synthetic */ void a(e eVar, JSONObject jSONObject, bv bvVar) {
-        boolean z3;
+        boolean z6;
         e eVar2;
         Throwable th;
-        String str = eVar.f11817k;
-        if (eVar.f11830x.size() == 0) {
+        String str = eVar.f12603k;
+        if (eVar.f12616x.size() == 0) {
             eVar.f();
-            if (!eVar.f11827u.get()) {
-                z3 = true;
+            if (!eVar.f12613u.get()) {
+                z6 = true;
                 synchronized (eVar) {
                     if (jSONObject != null && bvVar != null) {
                         try {
-                            eVar.f11818l.add(jSONObject);
-                            eVar.f11831y.put(bvVar.z(), bvVar);
+                            eVar.f12604l.add(jSONObject);
+                            eVar.f12617y.put(bvVar.z(), bvVar);
                         } catch (Throwable th2) {
                             th = th2;
                             eVar2 = eVar;
@@ -740,11 +741,11 @@ public abstract class e extends d {
                         }
                     }
                     try {
-                        if (eVar.f11818l.size() > 0 && (z3 || (eVar.f11826t.get() && !eVar.f11827u.get()))) {
-                            eVar.c(eVar.f11825s);
+                        if (eVar.f12604l.size() > 0 && (z6 || (eVar.f12612t.get() && !eVar.f12613u.get()))) {
+                            eVar.c(eVar.f12611s);
                             return;
                         } else {
-                            if (eVar.f11819m.size() <= 0 || !eVar.m()) {
+                            if (eVar.f12605m.size() <= 0 || !eVar.m()) {
                                 return;
                             }
                             eVar.a(null, 0L, "", null, null);
@@ -758,7 +759,7 @@ public abstract class e extends d {
                 }
             }
         }
-        z3 = false;
+        z6 = false;
         synchronized (eVar) {
         }
     }
@@ -767,9 +768,9 @@ public abstract class e extends d {
         if (TextUtils.equals(str, ATBidRequestInfo.NO_ADAPTER_ERROR_TYPE) || TextUtils.equals(str, ATBidRequestInfo.NO_SUPPORT_BIDDING_TYPE)) {
             return;
         }
-        int g4 = bvVar.g();
-        com.anythink.core.common.u.e.a(bvVar, eVar.f11736f, bvVar.X(), false, f.a().b(g4));
-        f.a().a(g4);
+        int g9 = bvVar.g();
+        com.anythink.core.common.u.e.a(bvVar, eVar.f12522f, bvVar.X(), false, f.a().b(g9));
+        f.a().a(g9);
     }
 
     public static /* synthetic */ List a(Object obj) {

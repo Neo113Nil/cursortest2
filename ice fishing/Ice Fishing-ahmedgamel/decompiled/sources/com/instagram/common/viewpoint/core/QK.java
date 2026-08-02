@@ -5,19 +5,19 @@ import java.util.Collection;
 import java.util.Iterator;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class QK implements InterfaceC1365Xr {
+public class QK implements InterfaceC1385Xr {
     public final Collection<String> A00;
 
     public QK() {
         this.A00 = new ArrayList();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1365Xr
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1385Xr
     public final void AH8(String str) {
         this.A00.add(str);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1365Xr
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1385Xr
     public final void flush() {
     }
 

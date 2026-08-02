@@ -12,11 +12,11 @@ public final class LO {
         this.A01 = j6;
     }
 
-    public static LO A00(InterfaceC2191ms interfaceC2191ms, C06474v c06474v) throws IOException {
-        interfaceC2191ms.AGt(c06474v.A0l(), 0, 8);
-        c06474v.A0f(0);
-        int A0C = c06474v.A0C();
-        long size = c06474v.A0O();
+    public static LO A00(InterfaceC2211ms interfaceC2211ms, C06674v c06674v) throws IOException {
+        interfaceC2211ms.AGt(c06674v.A0l(), 0, 8);
+        c06674v.A0f(0);
+        int A0C = c06674v.A0C();
+        long size = c06674v.A0O();
         return new LO(A0C, size);
     }
 }

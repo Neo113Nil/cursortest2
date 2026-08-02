@@ -6,7 +6,7 @@ import javax.annotation.CheckForNull;
 
 @ElementTypesAreNonnullByDefault
 /* loaded from: assets/audience_network/classes2.dex */
-public abstract class CB extends AbstractC2047kK {
+public abstract class CB extends AbstractC2067kK {
     public static int A00(@CheckForNull Object... objects) {
         return Arrays.hashCode(objects);
     }

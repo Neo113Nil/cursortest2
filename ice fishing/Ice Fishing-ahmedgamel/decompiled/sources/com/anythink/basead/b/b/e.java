@@ -10,14 +10,14 @@ public enum e {
 
 
     /* renamed from: f, reason: collision with root package name */
-    private final int f5788f;
+    private final int f6574f;
 
     e(int i) {
-        this.f5788f = i;
+        this.f6574f = i;
     }
 
     private int a() {
-        return this.f5788f;
+        return this.f6574f;
     }
 
     private static /* synthetic */ e[] b() {
@@ -26,7 +26,7 @@ public enum e {
 
     private static e a(int i) {
         for (e eVar : values()) {
-            if (eVar.f5788f == i) {
+            if (eVar.f6574f == i) {
                 return eVar;
             }
         }

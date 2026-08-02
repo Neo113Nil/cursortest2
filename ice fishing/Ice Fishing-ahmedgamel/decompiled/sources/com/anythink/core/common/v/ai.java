@@ -10,7 +10,7 @@ public final class ai {
     public static JSONObject a(Map<String, Object> map) {
         Object obj = map.get(ATAdConst.KEY.M_S);
         if (obj instanceof JSONObject) {
-            return ((JSONObject) obj).optJSONObject(h.b.f17298a);
+            return ((JSONObject) obj).optJSONObject(h.b.f18085a);
         }
         return null;
     }

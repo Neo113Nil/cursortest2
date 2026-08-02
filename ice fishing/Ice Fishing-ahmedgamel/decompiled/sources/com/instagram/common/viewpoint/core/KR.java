@@ -4,7 +4,7 @@ import android.text.TextUtils;
 import java.util.Arrays;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class KR implements InterfaceC1478aq {
+public class KR implements InterfaceC1498aq {
     public static byte[] A01;
     public final /* synthetic */ KE A00;
 
@@ -12,10 +12,10 @@ public class KR implements InterfaceC1478aq {
         A01();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 104);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 104);
         }
         return new String(copyOfRange);
     }
@@ -28,23 +28,23 @@ public class KR implements InterfaceC1478aq {
         this.A00 = ke;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1478aq
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1498aq
     public final void AF7(String str) {
-        C1469ah c1469ah;
-        AbstractC2005jd abstractC2005jd;
+        C1489ah c1489ah;
+        AbstractC2025jd abstractC2025jd;
         M3 m32;
-        AbstractC2005jd abstractC2005jd2;
+        AbstractC2025jd abstractC2025jd2;
         M3 m33;
         this.A00.A0T = false;
         this.A00.setBrowserProgressBarValue(100);
-        c1469ah = this.A00.A0H;
-        YB.A0O(c1469ah, 8);
-        abstractC2005jd = this.A00.A0E;
-        if (abstractC2005jd.A1l()) {
+        c1489ah = this.A00.A0H;
+        YB.A0O(c1489ah, 8);
+        abstractC2025jd = this.A00.A0E;
+        if (abstractC2025jd.A1l()) {
             m32 = this.A00.A0I;
             if (m32 != null) {
-                abstractC2005jd2 = this.A00.A0E;
-                String A14 = abstractC2005jd2.A14();
+                abstractC2025jd2 = this.A00.A0E;
+                String A14 = abstractC2025jd2.A14();
                 if (!TextUtils.isEmpty(A14)) {
                     m33 = this.A00.A0I;
                     m33.loadUrl(A14);
@@ -53,17 +53,17 @@ public class KR implements InterfaceC1478aq {
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1478aq
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1498aq
     public final void AF9(String str) {
-        C1469ah c1469ah;
-        boolean z3;
+        C1489ah c1489ah;
+        boolean z6;
         int i;
         this.A00.A0T = true;
-        c1469ah = this.A00.A0H;
-        YB.A0O(c1469ah, 0);
+        c1489ah = this.A00.A0H;
+        YB.A0O(c1489ah, 0);
         this.A00.setUrlToBrowser(str);
-        z3 = this.A00.A0R;
-        if (!z3) {
+        z6 = this.A00.A0R;
+        if (!z6) {
             i = this.A00.A01;
             if (i > 1) {
                 this.A00.A0R = true;
@@ -73,24 +73,24 @@ public class KR implements InterfaceC1478aq {
         KE.A03(this.A00);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1478aq
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1498aq
     public final void AFY(int i) {
-        boolean z3;
-        z3 = this.A00.A0T;
-        if (z3) {
+        boolean z6;
+        z6 = this.A00.A0T;
+        if (z6) {
             this.A00.setBrowserProgressBarValue(i);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1478aq
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1498aq
     public final void AFb(String str) {
         this.A00.setTitleToBrowser(str);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1478aq
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1498aq
     public final void AFe() {
-        C1557c7 c1557c7;
-        c1557c7 = this.A00.A0J;
-        c1557c7.A0C().ADJ(14);
+        C1577c7 c1577c7;
+        c1577c7 = this.A00.A0J;
+        c1577c7.A0C().ADJ(14);
     }
 }

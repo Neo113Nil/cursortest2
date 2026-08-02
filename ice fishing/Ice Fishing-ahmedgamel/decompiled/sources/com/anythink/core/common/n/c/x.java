@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 public class x {
 
     /* renamed from: c, reason: collision with root package name */
-    public static final x f15925c = new x() { // from class: com.anythink.core.common.n.c.x.1
+    public static final x f16712c = new x() { // from class: com.anythink.core.common.n.c.x.1
         @Override // com.anythink.core.common.n.c.x
         public final x a(long j6) {
             return this;
@@ -24,13 +24,13 @@ public class x {
     };
 
     /* renamed from: a, reason: collision with root package name */
-    private boolean f15926a;
+    private boolean f16713a;
 
     /* renamed from: b, reason: collision with root package name */
-    private long f15927b;
+    private long f16714b;
 
     /* renamed from: d, reason: collision with root package name */
-    private long f15928d;
+    private long f16715d;
 
     private static long a(long j6, long j9) {
         return (j6 != 0 && (j9 == 0 || j6 < j9)) ? j6 : j9;
@@ -47,12 +47,12 @@ public class x {
     }
 
     public x f() {
-        this.f15926a = false;
+        this.f16713a = false;
         return this;
     }
 
     public boolean f_() {
-        return this.f15926a;
+        return this.f16713a;
     }
 
     public void g() {
@@ -60,25 +60,25 @@ public class x {
             Thread.currentThread().interrupt();
             throw new InterruptedIOException("interrupted");
         }
-        if (this.f15926a && this.f15927b - System.nanoTime() <= 0) {
+        if (this.f16713a && this.f16714b - System.nanoTime() <= 0) {
             throw new InterruptedIOException("deadline reached");
         }
     }
 
     public long g_() {
-        if (this.f15926a) {
-            return this.f15927b;
+        if (this.f16713a) {
+            return this.f16714b;
         }
         throw new IllegalStateException("No deadline");
     }
 
     public x h_() {
-        this.f15928d = 0L;
+        this.f16715d = 0L;
         return this;
     }
 
     public long i_() {
-        return this.f15928d;
+        return this.f16715d;
     }
 
     public x a(long j6, TimeUnit timeUnit) {
@@ -88,13 +88,13 @@ public class x {
         if (timeUnit == null) {
             throw new IllegalArgumentException("unit == null");
         }
-        this.f15928d = timeUnit.toNanos(j6);
+        this.f16715d = timeUnit.toNanos(j6);
         return this;
     }
 
     public x a(long j6) {
-        this.f15926a = true;
-        this.f15927b = j6;
+        this.f16713a = true;
+        this.f16714b = j6;
         return this;
     }
 

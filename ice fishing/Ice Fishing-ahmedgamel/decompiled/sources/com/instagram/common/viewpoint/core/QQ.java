@@ -14,10 +14,10 @@ public final class QQ {
     public final QO A00 = new QO();
     public final List<View> A02 = new ArrayList();
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 96);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 96);
         }
         return new String(copyOfRange);
     }
@@ -85,8 +85,8 @@ public final class QQ {
 
     public final View A08(int i) {
         int size = this.A02.size();
-        for (int i6 = 0; i6 < size; i6++) {
-            View view = this.A02.get(i6);
+        for (int i4 = 0; i4 < size; i4++) {
+            View view = this.A02.get(i4);
             RK A7L = this.A01.A7L(view);
             int count = A7L.A0O();
             if (count == i && !A7L.A0f() && !A7L.A0g()) {
@@ -171,21 +171,21 @@ public final class QQ {
         throw new IllegalArgumentException(A01(57, 33, 85) + view);
     }
 
-    public final void A0H(View view, int i, ViewGroup.LayoutParams layoutParams, boolean z3) {
+    public final void A0H(View view, int i, ViewGroup.LayoutParams layoutParams, boolean z6) {
         int A00;
         if (i < 0) {
             A00 = this.A01.A7I();
         } else {
             A00 = A00(i);
         }
-        this.A00.A07(A00, z3);
-        if (z3) {
+        this.A00.A07(A00, z6);
+        if (z6) {
             A03(view);
         }
         this.A01.A4K(view, A00, layoutParams);
     }
 
-    public final void A0I(View view, int i, boolean z3) {
+    public final void A0I(View view, int i, boolean z6) {
         int A00;
         if (i < 0) {
             QP qp = this.A01;
@@ -199,10 +199,10 @@ public final class QQ {
             throw new RuntimeException();
         }
         A00 = A00(i);
-        this.A00.A07(A00, z3);
+        this.A00.A07(A00, z6);
         if (A04[7].charAt(2) != 'x') {
             A04[4] = "lrFB";
-            if (z3) {
+            if (z6) {
                 A03(view);
             }
             this.A01.addView(view, A00);
@@ -211,8 +211,8 @@ public final class QQ {
         throw new RuntimeException();
     }
 
-    public final void A0J(View view, boolean z3) {
-        A0I(view, -1, z3);
+    public final void A0J(View view, boolean z6) {
+        A0I(view, -1, z6);
     }
 
     public final boolean A0K(View view) {

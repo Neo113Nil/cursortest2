@@ -11,55 +11,55 @@ import org.json.JSONArray;
 public class r {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f16037a = 35;
+    public static final int f16824a = 35;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f16038b = "isDefaultOffer";
+    public static final String f16825b = "isDefaultOffer";
 
     /* renamed from: g, reason: collision with root package name */
-    private static volatile r f16039g;
+    private static volatile r f16826g;
 
     /* renamed from: c, reason: collision with root package name */
-    Method f16040c;
+    Method f16827c;
 
     /* renamed from: d, reason: collision with root package name */
-    Method f16041d;
+    Method f16828d;
 
     /* renamed from: e, reason: collision with root package name */
-    Method f16042e;
+    Method f16829e;
 
     /* renamed from: f, reason: collision with root package name */
-    Method f16043f;
+    Method f16830f;
 
     private r() {
         try {
-            this.f16040c = MyOfferAPI.class.getDeclaredMethod("preloadTopOnOffer", Context.class, az.class);
-            this.f16041d = MyOfferAPI.class.getDeclaredMethod("getOutOfCapOfferIds", Context.class);
-            this.f16042e = MyOfferAPI.class.getDeclaredMethod("getDefaultOfferId", Context.class, String.class);
-            this.f16043f = MyOfferAPI.class.getDeclaredMethod("checkOffersOutOfCap", Context.class, String.class);
+            this.f16827c = MyOfferAPI.class.getDeclaredMethod("preloadTopOnOffer", Context.class, az.class);
+            this.f16828d = MyOfferAPI.class.getDeclaredMethod("getOutOfCapOfferIds", Context.class);
+            this.f16829e = MyOfferAPI.class.getDeclaredMethod("getDefaultOfferId", Context.class, String.class);
+            this.f16830f = MyOfferAPI.class.getDeclaredMethod("checkOffersOutOfCap", Context.class, String.class);
         } catch (Exception e9) {
             e9.printStackTrace();
         }
     }
 
     public static r a() {
-        if (f16039g == null) {
+        if (f16826g == null) {
             synchronized (r.class) {
                 try {
-                    if (f16039g == null) {
-                        f16039g = new r();
+                    if (f16826g == null) {
+                        f16826g = new r();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16039g;
+        return f16826g;
     }
 
     public final boolean b(Context context, String str) {
         try {
-            Method method = this.f16043f;
+            Method method = this.f16830f;
             if (method != null) {
                 return ((Boolean) method.invoke(null, context, str)).booleanValue();
             }
@@ -72,11 +72,11 @@ public class r {
 
     public final void a(Context context, String str, ATAdRequest aTAdRequest) {
         try {
-            if (this.f16040c != null) {
+            if (this.f16827c != null) {
                 az azVar = new az();
-                azVar.f13602b = str;
-                azVar.f13601a = aTAdRequest;
-                this.f16040c.invoke(null, context, azVar);
+                azVar.f14388b = str;
+                azVar.f14387a = aTAdRequest;
+                this.f16827c.invoke(null, context, azVar);
             }
         } catch (Exception e9) {
             e9.printStackTrace();
@@ -85,7 +85,7 @@ public class r {
 
     public final JSONArray a(Context context) {
         try {
-            Method method = this.f16041d;
+            Method method = this.f16828d;
             if (method != null) {
                 return new JSONArray(method.invoke(null, context).toString());
             }
@@ -97,7 +97,7 @@ public class r {
 
     public final String a(Context context, String str) {
         try {
-            Method method = this.f16042e;
+            Method method = this.f16829e;
             if (method != null) {
                 return method.invoke(null, context, str).toString();
             }

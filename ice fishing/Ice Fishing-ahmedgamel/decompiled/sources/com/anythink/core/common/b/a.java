@@ -23,28 +23,28 @@ import org.json.JSONObject;
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f12231a = "a";
+    private static final String f13017a = "a";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final long f12232b = 1800000;
+    private static final long f13018b = 1800000;
 
     /* renamed from: c, reason: collision with root package name */
-    private static volatile a f12233c;
+    private static volatile a f13019c;
 
     /* renamed from: f, reason: collision with root package name */
-    private volatile Handler f12236f;
+    private volatile Handler f13022f;
 
     /* renamed from: h, reason: collision with root package name */
-    private C0075a f12238h;
+    private C0075a f13024h;
 
     /* renamed from: e, reason: collision with root package name */
-    private final Object f12235e = new Object();
+    private final Object f13021e = new Object();
 
     /* renamed from: g, reason: collision with root package name */
-    private final AtomicLong f12237g = new AtomicLong(0);
+    private final AtomicLong f13023g = new AtomicLong(0);
 
     /* renamed from: d, reason: collision with root package name */
-    private final c f12234d = new b();
+    private final c f13020d = new b();
 
     /* renamed from: com.anythink.core.common.b.a$2, reason: invalid class name */
     public class AnonymousClass2 extends com.anythink.core.common.m.b {
@@ -80,9 +80,9 @@ public class a {
         }
 
         @Override // com.anythink.core.common.d.m
-        public final void a(boolean z3) {
-            String unused = a.f12231a;
-            if (z3) {
+        public final void a(boolean z6) {
+            String unused = a.f13017a;
+            if (z6) {
                 a.a(a.this, true);
             }
         }
@@ -99,12 +99,12 @@ public class a {
         try {
             com.anythink.core.d.b a9 = d.a();
             if (a9 != null && !a9.S() && jSONObject != null) {
-                String f3 = a9.f();
+                String f2 = a9.f();
                 jSONObject.toString();
-                if (TextUtils.isEmpty(f3)) {
+                if (TextUtils.isEmpty(f2)) {
                     return;
                 }
-                JSONObject jSONObject2 = new JSONObject(f3);
+                JSONObject jSONObject2 = new JSONObject(f2);
                 JSONArray optJSONArray = jSONObject2.optJSONArray("tags");
                 ArrayList arrayList = new ArrayList();
                 if (optJSONArray != null) {
@@ -143,13 +143,13 @@ public class a {
     }
 
     private void c() {
-        if (this.f12236f != null) {
-            long j6 = this.f12237g.get();
+        if (this.f13022f != null) {
+            long j6 = this.f13023g.get();
             if (j6 <= 0) {
-                j6 = f12232b;
+                j6 = f13018b;
             }
-            this.f12236f.removeCallbacksAndMessages(null);
-            this.f12236f.postDelayed(new AnonymousClass3(), j6);
+            this.f13022f.removeCallbacksAndMessages(null);
+            this.f13022f.postDelayed(new AnonymousClass3(), j6);
         }
     }
 
@@ -157,12 +157,12 @@ public class a {
         try {
             com.anythink.core.d.b a9 = d.a();
             if (a9 != null && !a9.S() && jSONObject != null) {
-                String f3 = a9.f();
+                String f2 = a9.f();
                 jSONObject.toString();
-                if (TextUtils.isEmpty(f3)) {
+                if (TextUtils.isEmpty(f2)) {
                     return;
                 }
-                JSONObject jSONObject2 = new JSONObject(f3);
+                JSONObject jSONObject2 = new JSONObject(f2);
                 JSONArray optJSONArray = jSONObject2.optJSONArray("tags");
                 ArrayList arrayList = new ArrayList();
                 if (optJSONArray != null) {
@@ -201,38 +201,38 @@ public class a {
     }
 
     public static a a() {
-        if (f12233c == null) {
+        if (f13019c == null) {
             synchronized (a.class) {
                 try {
-                    if (f12233c == null) {
-                        f12233c = new a();
+                    if (f13019c == null) {
+                        f13019c = new a();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f12233c;
+        return f13019c;
     }
 
     public final void a(com.anythink.core.d.b bVar) {
-        boolean z3;
+        boolean z6;
         if (bVar == null || bVar.S()) {
             return;
         }
         if (!bVar.aQ()) {
-            this.f12237g.set(0L);
-            if (this.f12236f != null) {
-                this.f12236f.removeCallbacksAndMessages(null);
+            this.f13023g.set(0L);
+            if (this.f13022f != null) {
+                this.f13022f.removeCallbacksAndMessages(null);
                 return;
             }
             return;
         }
-        if (this.f12236f == null) {
-            synchronized (this.f12235e) {
+        if (this.f13022f == null) {
+            synchronized (this.f13021e) {
                 try {
-                    if (this.f12236f == null) {
-                        this.f12236f = com.anythink.core.common.v.b.b.a().a(18);
+                    if (this.f13022f == null) {
+                        this.f13022f = com.anythink.core.common.v.b.b.a().a(18);
                     }
                 } catch (Throwable th) {
                     throw th;
@@ -240,16 +240,16 @@ public class a {
             }
         }
         int aR = bVar.aR();
-        synchronized (this.f12235e) {
-            long j6 = this.f12237g.get();
-            this.f12237g.set(aR);
-            z3 = j6 == 0;
+        synchronized (this.f13021e) {
+            long j6 = this.f13023g.get();
+            this.f13023g.set(aR);
+            z6 = j6 == 0;
         }
-        if (!z3 || this.f12236f == null) {
+        if (!z6 || this.f13022f == null) {
             return;
         }
-        this.f12236f.removeCallbacksAndMessages(null);
-        this.f12236f.post(new Runnable() { // from class: com.anythink.core.common.b.a.1
+        this.f13022f.removeCallbacksAndMessages(null);
+        this.f13022f.post(new Runnable() { // from class: com.anythink.core.common.b.a.1
             @Override // java.lang.Runnable
             public final void run() {
                 a.a(a.this, t.b().x());
@@ -257,37 +257,37 @@ public class a {
         });
     }
 
-    private void a(boolean z3) {
-        synchronized (this.f12235e) {
+    private void a(boolean z6) {
+        synchronized (this.f13021e) {
             byte b9 = 0;
             try {
-                if (!z3) {
-                    if (this.f12238h != null) {
-                        t.b().b(this.f12238h);
+                if (!z6) {
+                    if (this.f13024h != null) {
+                        t.b().b(this.f13024h);
                     }
-                    this.f12238h = new C0075a(this, b9);
-                    t.b().a(this.f12238h);
+                    this.f13024h = new C0075a(this, b9);
+                    t.b().a(this.f13024h);
                     i.a();
-                    e.a(b.a.f17192A, com.anythink.core.common.res.image.c.f16246a, "The application is in the background and cannot be obtained", i.q(), "", "", "", (ATAdRequest) null);
+                    e.a(b.a.f17979A, com.anythink.core.common.res.image.c.f17033a, "The application is in the background and cannot be obtained", i.q(), "", "", "", (ATAdRequest) null);
                     return;
                 }
-                if (this.f12238h != null) {
-                    t.b().b(this.f12238h);
-                    this.f12238h = null;
+                if (this.f13024h != null) {
+                    t.b().b(this.f13024h);
+                    this.f13024h = null;
                 }
-                byte[] a9 = this.f12234d.a(t.b().g());
+                byte[] a9 = this.f13020d.a(t.b().g());
                 if (a9 == null || a9.length == 0) {
                     return;
                 }
-                this.f12237g.get();
+                this.f13023g.get();
                 new com.anythink.core.common.m.c(new com.anythink.core.common.h.t(a9)).a(0, (q) new AnonymousClass2());
-                if (this.f12236f != null) {
-                    long j6 = this.f12237g.get();
+                if (this.f13022f != null) {
+                    long j6 = this.f13023g.get();
                     if (j6 <= 0) {
-                        j6 = f12232b;
+                        j6 = f13018b;
                     }
-                    this.f12236f.removeCallbacksAndMessages(null);
-                    this.f12236f.postDelayed(new AnonymousClass3(), j6);
+                    this.f13022f.removeCallbacksAndMessages(null);
+                    this.f13022f.postDelayed(new AnonymousClass3(), j6);
                 }
             } catch (Throwable th) {
                 throw th;
@@ -295,37 +295,37 @@ public class a {
         }
     }
 
-    public static /* synthetic */ void a(a aVar, boolean z3) {
-        synchronized (aVar.f12235e) {
+    public static /* synthetic */ void a(a aVar, boolean z6) {
+        synchronized (aVar.f13021e) {
             byte b9 = 0;
             try {
-                if (!z3) {
-                    if (aVar.f12238h != null) {
-                        t.b().b(aVar.f12238h);
+                if (!z6) {
+                    if (aVar.f13024h != null) {
+                        t.b().b(aVar.f13024h);
                     }
-                    aVar.f12238h = new C0075a(aVar, b9);
-                    t.b().a(aVar.f12238h);
+                    aVar.f13024h = new C0075a(aVar, b9);
+                    t.b().a(aVar.f13024h);
                     i.a();
-                    e.a(b.a.f17192A, com.anythink.core.common.res.image.c.f16246a, "The application is in the background and cannot be obtained", i.q(), "", "", "", (ATAdRequest) null);
+                    e.a(b.a.f17979A, com.anythink.core.common.res.image.c.f17033a, "The application is in the background and cannot be obtained", i.q(), "", "", "", (ATAdRequest) null);
                     return;
                 }
-                if (aVar.f12238h != null) {
-                    t.b().b(aVar.f12238h);
-                    aVar.f12238h = null;
+                if (aVar.f13024h != null) {
+                    t.b().b(aVar.f13024h);
+                    aVar.f13024h = null;
                 }
-                byte[] a9 = aVar.f12234d.a(t.b().g());
+                byte[] a9 = aVar.f13020d.a(t.b().g());
                 if (a9 == null || a9.length == 0) {
                     return;
                 }
-                aVar.f12237g.get();
+                aVar.f13023g.get();
                 new com.anythink.core.common.m.c(new com.anythink.core.common.h.t(a9)).a(0, (q) aVar.new AnonymousClass2());
-                if (aVar.f12236f != null) {
-                    long j6 = aVar.f12237g.get();
+                if (aVar.f13022f != null) {
+                    long j6 = aVar.f13023g.get();
                     if (j6 <= 0) {
-                        j6 = f12232b;
+                        j6 = f13018b;
                     }
-                    aVar.f12236f.removeCallbacksAndMessages(null);
-                    aVar.f12236f.postDelayed(aVar.new AnonymousClass3(), j6);
+                    aVar.f13022f.removeCallbacksAndMessages(null);
+                    aVar.f13022f.postDelayed(aVar.new AnonymousClass3(), j6);
                 }
             } catch (Throwable th) {
                 throw th;

@@ -24,16 +24,16 @@ import java.util.Map;
 public class OnlineApiATSplashAdapter extends CustomSplashAdapter {
 
     /* renamed from: a, reason: collision with root package name */
-    h f23218a;
+    h f24005a;
 
     /* renamed from: b, reason: collision with root package name */
-    x f23219b;
+    x f24006b;
 
     /* renamed from: c, reason: collision with root package name */
-    String f23220c;
+    String f24007c;
 
     /* renamed from: d, reason: collision with root package name */
-    Map<String, Object> f23221d;
+    Map<String, Object> f24008d;
 
     /* renamed from: com.anythink.network.onlineapi.OnlineApiATSplashAdapter$2, reason: invalid class name */
     public class AnonymousClass2 implements a {
@@ -44,8 +44,8 @@ public class OnlineApiATSplashAdapter extends CustomSplashAdapter {
         public final void onAdClick(j jVar) {
             n trackingInfo = OnlineApiATSplashAdapter.this.getTrackingInfo();
             if (trackingInfo != null) {
-                trackingInfo.I(jVar.f8982a);
-                trackingInfo.J(jVar.f8983b);
+                trackingInfo.I(jVar.f9768a);
+                trackingInfo.J(jVar.f9769b);
             }
             if (((CustomSplashAdapter) OnlineApiATSplashAdapter.this).mImpressionListener != null) {
                 ((CustomSplashAdapter) OnlineApiATSplashAdapter.this).mImpressionListener.onSplashAdClicked();
@@ -67,9 +67,9 @@ public class OnlineApiATSplashAdapter extends CustomSplashAdapter {
         }
 
         @Override // com.anythink.basead.g.a
-        public final void onDeeplinkCallback(boolean z3) {
+        public final void onDeeplinkCallback(boolean z6) {
             if (((CustomSplashAdapter) OnlineApiATSplashAdapter.this).mImpressionListener != null) {
-                ((CustomSplashAdapter) OnlineApiATSplashAdapter.this).mImpressionListener.onDeeplinkCallback(z3);
+                ((CustomSplashAdapter) OnlineApiATSplashAdapter.this).mImpressionListener.onDeeplinkCallback(z6);
             }
         }
 
@@ -83,17 +83,17 @@ public class OnlineApiATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
-        h hVar = this.f23218a;
+        h hVar = this.f24005a;
         if (hVar != null) {
             hVar.b();
-            this.f23218a = null;
+            this.f24005a = null;
         }
-        this.f23219b = null;
+        this.f24006b = null;
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public Map<String, Object> getNetworkInfoMap() {
-        return this.f23221d;
+        return this.f24008d;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -103,7 +103,7 @@ public class OnlineApiATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        return this.f23220c;
+        return this.f24007c;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -113,12 +113,12 @@ public class OnlineApiATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public boolean isAdReady() {
-        h hVar = this.f23218a;
-        boolean z3 = hVar != null && hVar.c();
-        if (z3 && this.f23221d == null) {
-            this.f23221d = d.a(this.f23218a);
+        h hVar = this.f24005a;
+        boolean z6 = hVar != null && hVar.c();
+        if (z6 && this.f24008d == null) {
+            this.f24008d = d.a(this.f24005a);
         }
-        return z3;
+        return z6;
     }
 
     @Override // com.anythink.splashad.unitgroup.api.CustomSplashAdapter
@@ -132,24 +132,24 @@ public class OnlineApiATSplashAdapter extends CustomSplashAdapter {
         int parseInt;
         Object obj2;
         Object obj3;
-        this.f23220c = map.get("unit_id") != null ? map.get("unit_id").toString() : "";
+        this.f24007c = map.get("unit_id") != null ? map.get("unit_id").toString() : "";
         int i = 1;
         int parseInt2 = (!map.containsKey("orientation") || (obj3 = map.get("orientation")) == null) ? 1 : Integer.parseInt(obj3.toString());
         int parseInt3 = (!map.containsKey(b.dl) || (obj2 = map.get(b.dl)) == null) ? 5 : Integer.parseInt(obj2.toString()) * 1000;
         if (map.containsKey("allows_skip") && (obj = map.get("allows_skip")) != null && (parseInt = Integer.parseInt(obj.toString())) != 0) {
             i = parseInt == 1 ? 0 : parseInt;
         }
-        x xVar = (x) map.get(j.w.f12614a);
-        this.f23219b = xVar;
+        x xVar = (x) map.get(j.w.f13400a);
+        this.f24006b = xVar;
         h hVar = new h(context, c.b.ONLINE_API_OFFER_REQUEST_TYPE, xVar);
-        this.f23218a = hVar;
+        this.f24005a = hVar;
         hVar.a(new d.a().d(parseInt2).e(parseInt3).f(i).a());
-        this.f23218a.a(new AnonymousClass2());
-        this.f23218a.a(new com.anythink.basead.g.c() { // from class: com.anythink.network.onlineapi.OnlineApiATSplashAdapter.1
+        this.f24005a.a(new AnonymousClass2());
+        this.f24005a.a(new com.anythink.basead.g.c() { // from class: com.anythink.network.onlineapi.OnlineApiATSplashAdapter.1
             @Override // com.anythink.basead.g.c
             public final void onAdCacheLoaded() {
                 OnlineApiATSplashAdapter onlineApiATSplashAdapter = OnlineApiATSplashAdapter.this;
-                onlineApiATSplashAdapter.f23221d = com.anythink.basead.d.a(onlineApiATSplashAdapter.f23218a);
+                onlineApiATSplashAdapter.f24008d = com.anythink.basead.d.a(onlineApiATSplashAdapter.f24005a);
                 if (((ATBaseAdInternalAdapter) OnlineApiATSplashAdapter.this).mLoadListener != null) {
                     ((ATBaseAdInternalAdapter) OnlineApiATSplashAdapter.this).mLoadListener.onAdCacheLoaded(new BaseAd[0]);
                 }
@@ -173,11 +173,11 @@ public class OnlineApiATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.splashad.unitgroup.api.CustomSplashAdapter
     public void show(Activity activity, ViewGroup viewGroup) {
-        if (this.f23218a != null) {
+        if (this.f24005a != null) {
             if (isCustomSkipView()) {
-                this.f23218a.a();
+                this.f24005a.a();
             }
-            this.f23218a.a(viewGroup);
+            this.f24005a.a(viewGroup);
         }
     }
 
@@ -186,18 +186,18 @@ public class OnlineApiATSplashAdapter extends CustomSplashAdapter {
         int parseInt;
         Object obj2;
         Object obj3;
-        this.f23220c = map.get("unit_id") != null ? map.get("unit_id").toString() : "";
+        this.f24007c = map.get("unit_id") != null ? map.get("unit_id").toString() : "";
         int i = 1;
         int parseInt2 = (!map.containsKey("orientation") || (obj3 = map.get("orientation")) == null) ? 1 : Integer.parseInt(obj3.toString());
         int parseInt3 = (!map.containsKey(b.dl) || (obj2 = map.get(b.dl)) == null) ? 5 : Integer.parseInt(obj2.toString()) * 1000;
         if (map.containsKey("allows_skip") && (obj = map.get("allows_skip")) != null && (parseInt = Integer.parseInt(obj.toString())) != 0) {
             i = parseInt == 1 ? 0 : parseInt;
         }
-        x xVar = (x) map.get(j.w.f12614a);
-        this.f23219b = xVar;
+        x xVar = (x) map.get(j.w.f13400a);
+        this.f24006b = xVar;
         h hVar = new h(context, c.b.ONLINE_API_OFFER_REQUEST_TYPE, xVar);
-        this.f23218a = hVar;
+        this.f24005a = hVar;
         hVar.a(new d.a().d(parseInt2).e(parseInt3).f(i).a());
-        this.f23218a.a(new AnonymousClass2());
+        this.f24005a.a(new AnonymousClass2());
     }
 }

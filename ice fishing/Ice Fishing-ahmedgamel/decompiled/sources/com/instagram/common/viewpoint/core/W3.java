@@ -6,10 +6,10 @@ import com.facebook.ads.internal.api.MediaViewVideoRendererApi;
 /* loaded from: assets/audience_network/classes2.dex */
 public class W3 implements VX {
     public final /* synthetic */ MediaViewVideoRendererApi A00;
-    public final /* synthetic */ C1324Vz A01;
+    public final /* synthetic */ C1344Vz A01;
 
-    public W3(C1324Vz c1324Vz, MediaViewVideoRendererApi mediaViewVideoRendererApi) {
-        this.A01 = c1324Vz;
+    public W3(C1344Vz c1344Vz, MediaViewVideoRendererApi mediaViewVideoRendererApi) {
+        this.A01 = c1344Vz;
         this.A00 = mediaViewVideoRendererApi;
     }
 

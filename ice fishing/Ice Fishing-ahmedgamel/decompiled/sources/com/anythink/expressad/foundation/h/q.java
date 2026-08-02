@@ -30,12 +30,12 @@ public final class q {
             Paint paint = new Paint();
             Rect rect = new Rect(0, 0, width, height);
             RectF rectF = new RectF(rect);
-            float f3 = i;
+            float f2 = i;
             paint.setAntiAlias(true);
             paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_OVER));
             canvas.drawARGB(0, 0, 0, 0);
             paint.setColor(-12434878);
-            canvas.drawRoundRect(rectF, f3, f3, paint);
+            canvas.drawRoundRect(rectF, f2, f2, paint);
             paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
             canvas.drawBitmap(bitmap, rect, rect, paint);
             return bitmap2;

@@ -9,22 +9,22 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class a {
 
     /* renamed from: b, reason: collision with root package name */
-    e f12035b;
+    e f12821b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final String f12036c = "a";
+    private final String f12822c = "a";
 
     /* renamed from: a, reason: collision with root package name */
-    Map<String, com.anythink.core.c.a.c> f12034a = new ConcurrentHashMap();
+    Map<String, com.anythink.core.c.a.c> f12820a = new ConcurrentHashMap();
 
     public a(e eVar) {
-        this.f12035b = eVar;
+        this.f12821b = eVar;
     }
 
     private com.anythink.core.c.a.d a(String str, int i, com.anythink.core.d.f fVar) {
-        com.anythink.core.c.a.c cVar = this.f12034a.get(str);
-        int i6 = fVar.a() == 1 ? i : -1;
-        if (cVar == null || !cVar.b(fVar) || cVar.a(i6) == null) {
+        com.anythink.core.c.a.c cVar = this.f12820a.get(str);
+        int i4 = fVar.a() == 1 ? i : -1;
+        if (cVar == null || !cVar.b(fVar) || cVar.a(i4) == null) {
             cVar = new com.anythink.core.c.a.c();
             cVar.a(fVar);
             int c9 = fVar.c();
@@ -35,16 +35,16 @@ public final class a {
             calendar.set(12, 0);
             calendar.set(13, 0);
             calendar.set(14, 0);
-            cVar.a(i6, this.f12035b.a(str, i6, calendar.getTimeInMillis(), c9));
-            this.f12034a.put(str, cVar);
+            cVar.a(i4, this.f12821b.a(str, i4, calendar.getTimeInMillis(), c9));
+            this.f12820a.put(str, cVar);
         } else {
             cVar.c(i);
         }
-        return cVar.b(i6);
+        return cVar.b(i4);
     }
 
     private void a(String str, com.anythink.core.c.a.a aVar) {
-        com.anythink.core.c.a.c cVar = this.f12034a.get(str);
+        com.anythink.core.c.a.c cVar = this.f12820a.get(str);
         aVar.a();
         aVar.toString();
         if (cVar != null) {
@@ -52,7 +52,7 @@ public final class a {
         }
     }
 
-    private List<com.anythink.core.c.a.a> a(String str, int i, com.anythink.core.d.f fVar, int i6) {
+    private List<com.anythink.core.c.a.a> a(String str, int i, com.anythink.core.d.f fVar, int i4) {
         long currentTimeMillis = System.currentTimeMillis() - ((fVar.b() * 86400) * 1000);
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(currentTimeMillis);
@@ -60,6 +60,6 @@ public final class a {
         calendar.set(12, 0);
         calendar.set(13, 0);
         calendar.set(14, 0);
-        return this.f12035b.a(str, i, calendar.getTimeInMillis(), i6);
+        return this.f12821b.a(str, i, calendar.getTimeInMillis(), i4);
     }
 }

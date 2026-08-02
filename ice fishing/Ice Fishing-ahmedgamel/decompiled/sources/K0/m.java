@@ -6,5 +6,5 @@ import java.util.concurrent.TimeUnit;
 public abstract class m {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final long f1526a = TimeUnit.DAYS.toMillis(1);
+    public static final long f1635a = TimeUnit.DAYS.toMillis(1);
 }

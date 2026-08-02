@@ -3,7 +3,6 @@ package com.onesignal.notifications.internal.open.impl;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import com.bumptech.glide.d;
 import com.onesignal.common.f;
 import kotlin.jvm.internal.h;
 import org.json.JSONArray;
@@ -11,11 +10,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import t5.e;
 import u7.v;
-import z5.InterfaceC5263b;
-import z7.InterfaceC5267d;
+import z5.InterfaceC5236b;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
-public final class c implements InterfaceC5263b {
+public final class c implements InterfaceC5236b {
     private final x5.b _lifecycleService;
 
     public static final class a extends B7.c {
@@ -25,8 +24,8 @@ public final class c implements InterfaceC5263b {
         int label;
         /* synthetic */ Object result;
 
-        public a(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public a(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -63,22 +62,22 @@ public final class c implements InterfaceC5263b {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object handleProcessJsonOpenData(Activity activity, JSONObject jSONObject, InterfaceC5267d interfaceC5267d) {
+    public final Object handleProcessJsonOpenData(Activity activity, JSONObject jSONObject, InterfaceC5240d interfaceC5240d) {
         a aVar;
         Object obj;
         int i;
         c cVar;
-        if (interfaceC5267d instanceof a) {
-            aVar = (a) interfaceC5267d;
-            int i6 = aVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                aVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof a) {
+            aVar = (a) interfaceC5240d;
+            int i4 = aVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                aVar.label = i4 - Integer.MIN_VALUE;
                 obj = aVar.result;
-                A7.a aVar2 = A7.a.f58n;
+                A7.a aVar2 = A7.a.f215n;
                 i = aVar.label;
-                v vVar = v.f41353a;
+                v vVar = v.f41073a;
                 if (i != 0) {
-                    d.k(obj);
+                    Q3.b.s(obj);
                     x5.b bVar = this._lifecycleService;
                     aVar.L$0 = this;
                     aVar.L$1 = activity;
@@ -91,14 +90,14 @@ public final class c implements InterfaceC5263b {
                 }
                 if (i != 1) {
                     if (i == 2) {
-                        d.k(obj);
+                        Q3.b.s(obj);
                     }
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 jSONObject = (JSONObject) aVar.L$2;
                 activity = (Activity) aVar.L$1;
                 cVar = (c) aVar.L$0;
-                d.k(obj);
+                Q3.b.s(obj);
                 if (((Boolean) obj).booleanValue()) {
                     return vVar;
                 }
@@ -111,11 +110,11 @@ public final class c implements InterfaceC5263b {
                 return bVar2.notificationOpened(activity, wrapInJsonArray, aVar) == aVar2 ? aVar2 : vVar;
             }
         }
-        aVar = new a(interfaceC5267d);
+        aVar = new a(interfaceC5240d);
         obj = aVar.result;
-        A7.a aVar22 = A7.a.f58n;
+        A7.a aVar22 = A7.a.f215n;
         i = aVar.label;
-        v vVar2 = v.f41353a;
+        v vVar2 = v.f41073a;
         if (i != 0) {
         }
         if (((Boolean) obj).booleanValue()) {
@@ -134,9 +133,9 @@ public final class c implements InterfaceC5263b {
         }
     }
 
-    @Override // z5.InterfaceC5263b
-    public Object handleHMSNotificationOpenIntent(Activity activity, Intent intent, InterfaceC5267d interfaceC5267d) {
-        v vVar = v.f41353a;
+    @Override // z5.InterfaceC5236b
+    public Object handleHMSNotificationOpenIntent(Activity activity, Intent intent, InterfaceC5240d interfaceC5240d) {
+        v vVar = v.f41073a;
         if (intent == null) {
             return vVar;
         }
@@ -144,7 +143,7 @@ public final class c implements InterfaceC5263b {
         if (covertHMSOpenIntentToJson == null) {
             return vVar;
         }
-        Object handleProcessJsonOpenData = handleProcessJsonOpenData(activity, covertHMSOpenIntentToJson, interfaceC5267d);
-        return handleProcessJsonOpenData == A7.a.f58n ? handleProcessJsonOpenData : vVar;
+        Object handleProcessJsonOpenData = handleProcessJsonOpenData(activity, covertHMSOpenIntentToJson, interfaceC5240d);
+        return handleProcessJsonOpenData == A7.a.f215n ? handleProcessJsonOpenData : vVar;
     }
 }

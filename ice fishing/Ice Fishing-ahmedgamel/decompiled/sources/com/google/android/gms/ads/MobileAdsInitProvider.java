@@ -6,17 +6,17 @@ import android.content.Context;
 import android.content.pm.ProviderInfo;
 import android.database.Cursor;
 import android.net.Uri;
-import q2.K0;
+import s2.K0;
 
 /* loaded from: classes.dex */
 public class MobileAdsInitProvider extends ContentProvider {
 
     /* renamed from: n, reason: collision with root package name */
-    public final K0 f23554n = new K0();
+    public final K0 f24334n = new K0();
 
     @Override // android.content.ContentProvider
     public final void attachInfo(Context context, ProviderInfo providerInfo) {
-        this.f23554n.attachInfo(context, providerInfo);
+        this.f24334n.attachInfo(context, providerInfo);
     }
 
     @Override // android.content.ContentProvider

@@ -4,7 +4,7 @@ package O6;
 public final class f implements b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final f f2377a = new f();
+    public static final f f2308a = new f();
 
     @Override // O6.b
     public final a a(int i) {

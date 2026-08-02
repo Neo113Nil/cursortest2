@@ -31,7 +31,7 @@ public abstract class k implements t {
     }
 
     @Override // com.anythink.basead.exoplayer.h.t
-    public void a(int i, s.a aVar, t.b bVar, t.c cVar, IOException iOException, boolean z3) {
+    public void a(int i, s.a aVar, t.b bVar, t.c cVar, IOException iOException, boolean z6) {
     }
 
     @Override // com.anythink.basead.exoplayer.h.t

@@ -13,7 +13,7 @@ public interface DD {
 
     long A7a();
 
-    void AAB(InterfaceC2336pF interfaceC2336pF, Uri uri, Map<String, List<String>> map, long j6, long j9, HA ha) throws IOException;
+    void AAB(InterfaceC2356pF interfaceC2356pF, Uri uri, Map<String, List<String>> map, long j6, long j9, HA ha) throws IOException;
 
     int AHM(HV hv) throws IOException;
 

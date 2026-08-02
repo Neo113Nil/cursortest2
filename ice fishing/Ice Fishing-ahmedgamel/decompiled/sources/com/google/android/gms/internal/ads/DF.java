@@ -10,16 +10,16 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 /* loaded from: classes2.dex */
-public final class DF implements InterfaceC3394jE {
+public final class DF implements InterfaceC3417jE {
 
     /* renamed from: a, reason: collision with root package name */
-    public final byte[] f24374a;
+    public final byte[] f25119a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final byte[] f24375b;
+    public final byte[] f25120b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Provider f24376c;
+    public final Provider f25121c;
 
     public DF(byte[] bArr, byte[] bArr2, Provider provider) {
         if (!WC.c(1)) {
@@ -28,18 +28,18 @@ public final class DF implements InterfaceC3394jE {
         if (bArr.length != 32) {
             throw new InvalidKeyException("The key length in bytes must be 32.");
         }
-        this.f24374a = bArr;
-        this.f24375b = bArr2;
-        this.f24376c = provider;
+        this.f25119a = bArr;
+        this.f25120b = bArr2;
+        this.f25121c = provider;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3394jE
+    @Override // com.google.android.gms.internal.ads.InterfaceC3417jE
     public final byte[] a(byte[] bArr, byte[] bArr2) {
         if (bArr == null) {
             throw new NullPointerException("ciphertext is null");
         }
         int length = bArr.length;
-        byte[] bArr3 = this.f24375b;
+        byte[] bArr3 = this.f25120b;
         int length2 = bArr3.length;
         if (length < length2 + 40) {
             throw new GeneralSecurityException("ciphertext too short");
@@ -49,15 +49,15 @@ public final class DF implements InterfaceC3394jE {
         }
         byte[] bArr4 = new byte[24];
         System.arraycopy(bArr, length2, bArr4, 0, 24);
-        int[] d2 = AbstractC3988uF.d(AbstractC3988uF.c(this.f24374a), AbstractC3988uF.c(bArr4));
-        ByteBuffer order = ByteBuffer.allocate(d2.length * 4).order(ByteOrder.LITTLE_ENDIAN);
-        order.asIntBuffer().put(d2);
+        int[] d9 = AbstractC4011uF.d(AbstractC4011uF.c(this.f25119a), AbstractC4011uF.c(bArr4));
+        ByteBuffer order = ByteBuffer.allocate(d9.length * 4).order(ByteOrder.LITTLE_ENDIAN);
+        order.asIntBuffer().put(d9);
         SecretKeySpec secretKeySpec = new SecretKeySpec(order.array(), "ChaCha20");
         byte[] bArr5 = new byte[12];
         System.arraycopy(bArr4, 16, bArr5, 4, 8);
         IvParameterSpec ivParameterSpec = new IvParameterSpec(bArr5);
-        byte[] bArr6 = C3826rF.f33544d;
-        Cipher cipher = Cipher.getInstance("ChaCha20-Poly1305", this.f24376c);
+        byte[] bArr6 = C3849rF.f34312d;
+        Cipher cipher = Cipher.getInstance("ChaCha20-Poly1305", this.f25121c);
         cipher.init(2, secretKeySpec, ivParameterSpec);
         if (bArr2 != null && bArr2.length != 0) {
             cipher.updateAAD(bArr2);

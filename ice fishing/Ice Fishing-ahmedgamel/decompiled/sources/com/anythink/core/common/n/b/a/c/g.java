@@ -10,53 +10,53 @@ import java.util.concurrent.TimeUnit;
 public final class g implements w.a {
 
     /* renamed from: a, reason: collision with root package name */
-    private final List<w> f15056a;
+    private final List<w> f15843a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final com.anythink.core.common.n.b.a.b.j f15057b;
+    private final com.anythink.core.common.n.b.a.b.j f15844b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final com.anythink.core.common.n.b.a.b.c f15058c;
+    private final com.anythink.core.common.n.b.a.b.c f15845c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final int f15059d;
+    private final int f15846d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final ad f15060e;
+    private final ad f15847e;
 
     /* renamed from: f, reason: collision with root package name */
-    private final com.anythink.core.common.n.b.e f15061f;
+    private final com.anythink.core.common.n.b.e f15848f;
 
     /* renamed from: g, reason: collision with root package name */
-    private final int f15062g;
+    private final int f15849g;
 
     /* renamed from: h, reason: collision with root package name */
-    private final int f15063h;
+    private final int f15850h;
     private final int i;
 
     /* renamed from: j, reason: collision with root package name */
-    private int f15064j;
+    private int f15851j;
 
-    public g(List<w> list, com.anythink.core.common.n.b.a.b.j jVar, com.anythink.core.common.n.b.a.b.c cVar, int i, ad adVar, com.anythink.core.common.n.b.e eVar, int i6, int i9, int i10) {
-        this.f15056a = list;
-        this.f15057b = jVar;
-        this.f15058c = cVar;
-        this.f15059d = i;
-        this.f15060e = adVar;
-        this.f15061f = eVar;
-        this.f15062g = i6;
-        this.f15063h = i9;
-        this.i = i10;
+    public g(List<w> list, com.anythink.core.common.n.b.a.b.j jVar, com.anythink.core.common.n.b.a.b.c cVar, int i, ad adVar, com.anythink.core.common.n.b.e eVar, int i4, int i6, int i9) {
+        this.f15843a = list;
+        this.f15844b = jVar;
+        this.f15845c = cVar;
+        this.f15846d = i;
+        this.f15847e = adVar;
+        this.f15848f = eVar;
+        this.f15849g = i4;
+        this.f15850h = i6;
+        this.i = i9;
     }
 
     @Override // com.anythink.core.common.n.b.w.a
     public final w.a a(int i, TimeUnit timeUnit) {
-        return new g(this.f15056a, this.f15057b, this.f15058c, this.f15059d, this.f15060e, this.f15061f, com.anythink.core.common.n.b.a.c.a("timeout", i, timeUnit), this.f15063h, this.i);
+        return new g(this.f15843a, this.f15844b, this.f15845c, this.f15846d, this.f15847e, this.f15848f, com.anythink.core.common.n.b.a.c.a("timeout", i, timeUnit), this.f15850h, this.i);
     }
 
     @Override // com.anythink.core.common.n.b.w.a
     public final com.anythink.core.common.n.b.j b() {
-        com.anythink.core.common.n.b.a.b.c cVar = this.f15058c;
+        com.anythink.core.common.n.b.a.b.c cVar = this.f15845c;
         if (cVar != null) {
             return cVar.a();
         }
@@ -65,17 +65,17 @@ public final class g implements w.a {
 
     @Override // com.anythink.core.common.n.b.w.a
     public final w.a c(int i, TimeUnit timeUnit) {
-        return new g(this.f15056a, this.f15057b, this.f15058c, this.f15059d, this.f15060e, this.f15061f, this.f15062g, this.f15063h, com.anythink.core.common.n.b.a.c.a("timeout", i, timeUnit));
+        return new g(this.f15843a, this.f15844b, this.f15845c, this.f15846d, this.f15847e, this.f15848f, this.f15849g, this.f15850h, com.anythink.core.common.n.b.a.c.a("timeout", i, timeUnit));
     }
 
     @Override // com.anythink.core.common.n.b.w.a
     public final int d() {
-        return this.f15062g;
+        return this.f15849g;
     }
 
     @Override // com.anythink.core.common.n.b.w.a
     public final int e() {
-        return this.f15063h;
+        return this.f15850h;
     }
 
     @Override // com.anythink.core.common.n.b.w.a
@@ -84,11 +84,11 @@ public final class g implements w.a {
     }
 
     public final com.anythink.core.common.n.b.a.b.j g() {
-        return this.f15057b;
+        return this.f15844b;
     }
 
     public final com.anythink.core.common.n.b.a.b.c h() {
-        com.anythink.core.common.n.b.a.b.c cVar = this.f15058c;
+        com.anythink.core.common.n.b.a.b.c cVar = this.f15845c;
         if (cVar != null) {
             return cVar;
         }
@@ -97,38 +97,38 @@ public final class g implements w.a {
 
     @Override // com.anythink.core.common.n.b.w.a
     public final w.a b(int i, TimeUnit timeUnit) {
-        return new g(this.f15056a, this.f15057b, this.f15058c, this.f15059d, this.f15060e, this.f15061f, this.f15062g, com.anythink.core.common.n.b.a.c.a("timeout", i, timeUnit), this.i);
+        return new g(this.f15843a, this.f15844b, this.f15845c, this.f15846d, this.f15847e, this.f15848f, this.f15849g, com.anythink.core.common.n.b.a.c.a("timeout", i, timeUnit), this.i);
     }
 
     @Override // com.anythink.core.common.n.b.w.a
     public final ad a() {
-        return this.f15060e;
+        return this.f15847e;
     }
 
     @Override // com.anythink.core.common.n.b.w.a
     public final com.anythink.core.common.n.b.e c() {
-        return this.f15061f;
+        return this.f15848f;
     }
 
     @Override // com.anythink.core.common.n.b.w.a
     public final af a(ad adVar) {
-        return a(adVar, this.f15057b, this.f15058c);
+        return a(adVar, this.f15844b, this.f15845c);
     }
 
     public final af a(ad adVar, com.anythink.core.common.n.b.a.b.j jVar, com.anythink.core.common.n.b.a.b.c cVar) {
-        if (this.f15059d < this.f15056a.size()) {
-            this.f15064j++;
-            com.anythink.core.common.n.b.a.b.c cVar2 = this.f15058c;
+        if (this.f15846d < this.f15843a.size()) {
+            this.f15851j++;
+            com.anythink.core.common.n.b.a.b.c cVar2 = this.f15845c;
             if (cVar2 != null && !cVar2.a().a(adVar.a())) {
-                throw new IllegalStateException("network interceptor " + this.f15056a.get(this.f15059d - 1) + " must retain the same host and port");
+                throw new IllegalStateException("network interceptor " + this.f15843a.get(this.f15846d - 1) + " must retain the same host and port");
             }
-            if (this.f15058c != null && this.f15064j > 1) {
-                throw new IllegalStateException("network interceptor " + this.f15056a.get(this.f15059d - 1) + " must call proceed() exactly once");
+            if (this.f15845c != null && this.f15851j > 1) {
+                throw new IllegalStateException("network interceptor " + this.f15843a.get(this.f15846d - 1) + " must call proceed() exactly once");
             }
-            g gVar = new g(this.f15056a, jVar, cVar, this.f15059d + 1, adVar, this.f15061f, this.f15062g, this.f15063h, this.i);
-            w wVar = this.f15056a.get(this.f15059d);
+            g gVar = new g(this.f15843a, jVar, cVar, this.f15846d + 1, adVar, this.f15848f, this.f15849g, this.f15850h, this.i);
+            w wVar = this.f15843a.get(this.f15846d);
             af a9 = wVar.a(gVar);
-            if (cVar != null && this.f15059d + 1 < this.f15056a.size() && gVar.f15064j != 1) {
+            if (cVar != null && this.f15846d + 1 < this.f15843a.size() && gVar.f15851j != 1) {
                 throw new IllegalStateException("network interceptor " + wVar + " must call proceed() exactly once");
             }
             if (a9 == null) {

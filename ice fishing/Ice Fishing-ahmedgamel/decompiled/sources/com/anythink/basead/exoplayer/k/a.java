@@ -8,32 +8,32 @@ public final class a {
     private a() {
     }
 
-    public static void a(boolean z3) {
-        if (!z3) {
+    public static void a(boolean z6) {
+        if (!z6) {
             throw new IllegalArgumentException();
         }
     }
 
-    public static void b(boolean z3) {
-        if (!z3) {
+    public static void b(boolean z6) {
+        if (!z6) {
             throw new IllegalStateException();
         }
     }
 
-    public static void a(boolean z3, Object obj) {
-        if (!z3) {
+    public static void a(boolean z6, Object obj) {
+        if (!z6) {
             throw new IllegalArgumentException(String.valueOf(obj));
         }
     }
 
-    public static void b(boolean z3, Object obj) {
-        if (!z3) {
+    public static void b(boolean z6, Object obj) {
+        if (!z6) {
             throw new IllegalStateException(String.valueOf(obj));
         }
     }
 
-    public static int a(int i, int i6) {
-        if (i < 0 || i >= i6) {
+    public static int a(int i, int i4) {
+        if (i < 0 || i >= i4) {
             throw new IndexOutOfBoundsException();
         }
         return i;

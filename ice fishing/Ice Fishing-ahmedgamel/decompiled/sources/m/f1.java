@@ -1,21 +1,14 @@
 package m;
 
-import android.os.Build;
-import java.lang.reflect.Method;
+import android.graphics.Insets;
+import android.graphics.Rect;
+import android.view.View;
+import android.view.WindowInsets;
 
 /* loaded from: classes.dex */
 public abstract class f1 {
-
-    /* renamed from: a, reason: collision with root package name */
-    public static boolean f39146a;
-
-    /* renamed from: b, reason: collision with root package name */
-    public static Method f39147b;
-
-    /* renamed from: c, reason: collision with root package name */
-    public static final boolean f39148c;
-
-    static {
-        f39148c = Build.VERSION.SDK_INT >= 27;
+    public static void a(View view, Rect rect, Rect rect2) {
+        Insets systemWindowInsets = view.computeSystemWindowInsets(new WindowInsets.Builder().setSystemWindowInsets(Insets.of(rect)).build(), rect2).getSystemWindowInsets();
+        rect.set(systemWindowInsets.left, systemWindowInsets.top, systemWindowInsets.right, systemWindowInsets.bottom);
     }
 }

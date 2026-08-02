@@ -10,36 +10,36 @@ public final class C7B {
     public final long A01;
     public final long A02;
     public final long A03;
-    public final C2248no A04;
+    public final C2268no A04;
     public final boolean A05;
     public final boolean A06;
     public final boolean A07;
     public final boolean A08;
 
     @MetaExoPlayerCustomization(type = {"TEMPORARY"}, value = "Must be removed when ExoPlayerImpl V1 is deprecated")
-    public C7B(C2248no c2248no, long j6, long j9, long j10, long j11, boolean z3, boolean z6) {
-        this.A04 = c2248no;
+    public C7B(C2268no c2268no, long j6, long j9, long j10, long j11, boolean z6, boolean z9) {
+        this.A04 = c2268no;
         this.A03 = j6;
         this.A01 = j9;
         this.A02 = j10;
         this.A00 = j11;
-        this.A07 = z3;
-        this.A05 = z6;
+        this.A07 = z6;
+        this.A05 = z9;
         this.A06 = false;
         this.A08 = false;
     }
 
     @MetaExoPlayerCustomization(type = {"TEMPORARY"}, value = "Disable Assertions for now as the ones related to isFollowedByTransitionToSameStream & isLastInTimelineWindow are not applicable toExoPlayerImpl v1")
-    public C7B(C2248no c2248no, long j6, long j9, long j10, long j11, boolean z3, boolean z6, boolean z9, boolean z10) {
-        this.A04 = c2248no;
+    public C7B(C2268no c2268no, long j6, long j9, long j10, long j11, boolean z6, boolean z9, boolean z10, boolean z11) {
+        this.A04 = c2268no;
         this.A03 = j6;
         this.A02 = j9;
         this.A01 = j10;
         this.A00 = j11;
-        this.A06 = z3;
-        this.A07 = z6;
-        this.A08 = z9;
-        this.A05 = z10;
+        this.A06 = z6;
+        this.A07 = z9;
+        this.A08 = z10;
+        this.A05 = z11;
     }
 
     public final C7B A00(long j6) {

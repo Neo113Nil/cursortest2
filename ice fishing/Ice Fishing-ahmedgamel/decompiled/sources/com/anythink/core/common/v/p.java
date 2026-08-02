@@ -10,6 +10,7 @@ import com.anythink.core.common.d.j;
 import com.anythink.core.common.h.bj;
 import com.anythink.core.common.h.bo;
 import com.anythink.core.common.h.bv;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -21,21 +22,21 @@ import java.util.UUID;
 import java.util.regex.Pattern;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import u.AbstractC5049e;
+import u.AbstractC5050e;
 
 /* loaded from: classes.dex */
 public class p {
 
     /* renamed from: a, reason: collision with root package name */
-    static Random f16846a = new Random();
+    static Random f17633a = new Random();
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f16847b = "CommonSDKUtil";
+    private static final String f17634b = "CommonSDKUtil";
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f16848a = "com.android.vending";
+        public static final String f17635a = "com.android.vending";
     }
 
     public static boolean a(String str) {
@@ -68,15 +69,15 @@ public class p {
         str.getClass();
         switch (str) {
             case "0":
-                return j.n.f12505a;
+                return j.n.f13291a;
             case "1":
-                return j.n.f12506b;
+                return j.n.f13292b;
             case "2":
-                return j.n.f12507c;
+                return j.n.f13293c;
             case "3":
                 return "Interstitial";
             case "4":
-                return j.n.f12509e;
+                return j.n.f13295e;
             default:
                 return "";
         }
@@ -120,29 +121,29 @@ public class p {
     }
 
     private static String d(Context context) {
-        String B9 = com.anythink.core.common.d.t.b().B();
-        if (TextUtils.isEmpty(B9)) {
-            B9 = m.d(context) + m.f();
+        String B3 = com.anythink.core.common.d.t.b().B();
+        if (TextUtils.isEmpty(B3)) {
+            B3 = m.d(context) + m.f();
         }
-        StringBuilder b9 = AbstractC5049e.b(B9);
+        StringBuilder b9 = AbstractC5050e.b(B3);
         b9.append(UUID.randomUUID().toString());
         return o.a(b9.toString());
     }
 
-    public static JSONObject a(Context context, String str, String str2, int i, int i6) {
+    public static JSONObject a(Context context, String str, String str2, int i, int i4) {
         int[] a9 = com.anythink.core.a.a.a(context).a(i);
-        int i9 = a9[0];
-        int i10 = a9[1];
+        int i6 = a9[0];
+        int i9 = a9[1];
         bo a10 = com.anythink.core.a.a.a(context).a(str2, i);
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("sr", "tp");
             jSONObject.put("rid", str);
-            jSONObject.put(com.anythink.expressad.foundation.d.e.f18662h, i9);
-            jSONObject.put("ahs", i10);
-            jSONObject.put("pds", a10 != null ? a10.f13722c : 0);
-            jSONObject.put("phs", a10 != null ? a10.f13723d : 0);
-            jSONObject.put("ap", i6);
+            jSONObject.put(com.anythink.expressad.foundation.d.e.f19449h, i6);
+            jSONObject.put("ahs", i9);
+            jSONObject.put("pds", a10 != null ? a10.f14508c : 0);
+            jSONObject.put("phs", a10 != null ? a10.f14509d : 0);
+            jSONObject.put("ap", i4);
             jSONObject.put("tpl", str2);
         } catch (Exception unused) {
         }
@@ -150,7 +151,7 @@ public class p {
     }
 
     public static String b(String str, String str2, long j6) {
-        return u1.h.g(new StringBuilder(), a(str, str2, j6), "_refresh");
+        return Wv.i(new StringBuilder(), a(str, str2, j6), "_refresh");
     }
 
     public static double c(bv bvVar) {
@@ -203,24 +204,24 @@ public class p {
 
     public static boolean b() {
         try {
-            Map<String, Object> m4 = com.anythink.core.common.d.t.b().m();
-            if (m4 == null || !m4.containsKey(ATCustomRuleKeys.AGE)) {
+            Map<String, Object> m9 = com.anythink.core.common.d.t.b().m();
+            if (m9 == null || !m9.containsKey(ATCustomRuleKeys.AGE)) {
                 return false;
             }
-            return Integer.parseInt(m4.get(ATCustomRuleKeys.AGE).toString()) <= 13;
+            return Integer.parseInt(m9.get(ATCustomRuleKeys.AGE).toString()) <= 13;
         } catch (Throwable unused) {
             return false;
         }
     }
 
     public static String a(Context context) {
-        String B9 = com.anythink.core.common.d.t.b().B();
+        String B3 = com.anythink.core.common.d.t.b().B();
         StringBuffer stringBuffer = new StringBuffer();
         stringBuffer.append(m.d(context));
         stringBuffer.append("&");
         stringBuffer.append(m.f());
         stringBuffer.append("&");
-        stringBuffer.append(B9);
+        stringBuffer.append(B3);
         stringBuffer.append("&");
         stringBuffer.append(System.currentTimeMillis());
         stringBuffer.append("&");
@@ -246,12 +247,12 @@ public class p {
             return;
         }
         int i = size - 1;
-        for (int i6 = 0; i6 < size; i6++) {
-            if (l.a(bvVar, list.get(i6)) <= 0) {
-                list.add(i6, bvVar);
+        for (int i4 = 0; i4 < size; i4++) {
+            if (l.a(bvVar, list.get(i4)) <= 0) {
+                list.add(i4, bvVar);
                 return;
             } else {
-                if (i6 == i) {
+                if (i4 == i) {
                     list.add(bvVar);
                     return;
                 }
@@ -259,8 +260,8 @@ public class p {
         }
     }
 
-    private static boolean a(List<bv> list, bv bvVar, bv bvVar2, int i, int i6, boolean z3) {
-        if (z3 && bvVar.e() == -1) {
+    private static boolean a(List<bv> list, bv bvVar, bv bvVar2, int i, int i4, boolean z6) {
+        if (z6 && bvVar.e() == -1) {
             list.add(i, bvVar2);
             return true;
         }
@@ -268,7 +269,7 @@ public class p {
             list.add(i, bvVar2);
             return true;
         }
-        if (i != i6) {
+        if (i != i4) {
             return false;
         }
         list.add(bvVar2);
@@ -356,18 +357,18 @@ public class p {
             return;
         }
         map.put(j.w.i, nVar);
-        map.put(j.w.f12622j, nVar.aI());
+        map.put(j.w.f13408j, nVar.aI());
     }
 
-    private static int a(int i, int[] iArr, int i6) {
+    private static int a(int i, int[] iArr, int i4) {
         if (iArr != null) {
-            for (int i9 : iArr) {
-                if (i == i9) {
+            for (int i6 : iArr) {
+                if (i == i6) {
                     return i;
                 }
             }
         }
-        return i6;
+        return i4;
     }
 
     public static List<bv> a(List<bv> list, com.anythink.core.common.k.f fVar) {
@@ -392,7 +393,7 @@ public class p {
         for (Map.Entry entry : linkedHashMap.entrySet()) {
             List list3 = (List) entry.getValue();
             int intValue = ((Integer) hashMap.get(entry.getKey())).intValue();
-            int i6 = -1;
+            int i4 = -1;
             while (true) {
                 if (list3.size() <= 0) {
                     break;
@@ -402,30 +403,30 @@ public class p {
                     arrayList.add(bvVar2);
                     list3.remove(0);
                     if (fVar != null) {
-                        fVar.a(bvVar2, i, i6);
+                        fVar.a(bvVar2, i, i4);
                     }
                     i++;
                 } else {
-                    int nextInt = f16846a.nextInt(intValue) + 1;
+                    int nextInt = f17633a.nextInt(intValue) + 1;
                     Iterator it = list3.iterator();
-                    int i9 = 0;
+                    int i6 = 0;
                     while (true) {
                         if (it.hasNext()) {
                             bv bvVar3 = (bv) it.next();
-                            if (bvVar3.Z() + i9 >= nextInt) {
+                            if (bvVar3.Z() + i6 >= nextInt) {
                                 arrayList.add(bvVar3);
                                 list3.remove(bvVar3);
                                 intValue -= bvVar3.Z();
-                                if (i6 == -1) {
-                                    i6 = 0;
+                                if (i4 == -1) {
+                                    i4 = 0;
                                 }
                                 if (fVar != null) {
-                                    fVar.a(bvVar3, i, i6);
+                                    fVar.a(bvVar3, i, i4);
                                 }
-                                i6++;
+                                i4++;
                                 i++;
                             } else {
-                                i9 += bvVar3.Z();
+                                i6 += bvVar3.Z();
                             }
                         }
                     }

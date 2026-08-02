@@ -7,10 +7,10 @@ import java.util.LinkedHashMap;
 public final class X {
 
     /* renamed from: a, reason: collision with root package name */
-    public final LinkedHashMap f5153a = new LinkedHashMap();
+    public final LinkedHashMap f5120a = new LinkedHashMap();
 
     public final void a() {
-        LinkedHashMap linkedHashMap = this.f5153a;
+        LinkedHashMap linkedHashMap = this.f5120a;
         Iterator it = linkedHashMap.values().iterator();
         while (it.hasNext()) {
             ((S) it.next()).clear();

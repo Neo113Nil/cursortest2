@@ -1,87 +1,87 @@
 package com.anythink.expressad.foundation.g;
 
 import android.os.Environment;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 
 /* loaded from: classes.dex */
 public final class a {
 
     /* renamed from: A, reason: collision with root package name */
-    public static final int f19054A = 4;
+    public static final int f19841A = 4;
 
     /* renamed from: B, reason: collision with root package name */
-    public static final int f19055B = 3;
+    public static final int f19842B = 3;
 
     /* renamed from: C, reason: collision with root package name */
-    public static final int f19056C = 2;
+    public static final int f19843C = 2;
 
     /* renamed from: D, reason: collision with root package name */
-    public static final String f19057D = "m_device_info";
+    public static final String f19844D = "m_device_info";
 
     /* renamed from: E, reason: collision with root package name */
-    public static final String f19058E = "m_action";
+    public static final String f19845E = "m_action";
 
     /* renamed from: F, reason: collision with root package name */
-    public static final String f19059F = "m_data";
+    public static final String f19846F = "m_data";
 
     /* renamed from: G, reason: collision with root package name */
-    public static final String f19060G = "m_sdk";
+    public static final String f19847G = "m_sdk";
 
     /* renamed from: H, reason: collision with root package name */
-    public static final String f19061H = "msdk";
+    public static final String f19848H = "msdk";
 
     /* renamed from: I, reason: collision with root package name */
-    public static final String f19062I = "pf";
+    public static final String f19849I = "pf";
     public static final String J = "ov";
 
     /* renamed from: K, reason: collision with root package name */
-    public static final String f19063K = "pn";
+    public static final String f19850K = "pn";
 
     /* renamed from: L, reason: collision with root package name */
-    public static final String f19064L = "vn";
+    public static final String f19851L = "vn";
 
     /* renamed from: M, reason: collision with root package name */
-    public static final String f19065M = "vc";
+    public static final String f19852M = "vc";
 
     /* renamed from: N, reason: collision with root package name */
-    public static final String f19066N = "ot";
+    public static final String f19853N = "ot";
 
     /* renamed from: O, reason: collision with root package name */
-    public static final String f19067O = "dm";
+    public static final String f19854O = "dm";
 
     /* renamed from: P, reason: collision with root package name */
-    public static final String f19068P = "bd";
+    public static final String f19855P = "bd";
 
     /* renamed from: Q, reason: collision with root package name */
-    public static final String f19069Q = "d3";
+    public static final String f19856Q = "d3";
 
     /* renamed from: R, reason: collision with root package name */
-    public static final String f19070R = "d1";
+    public static final String f19857R = "d1";
 
     /* renamed from: S, reason: collision with root package name */
-    public static final String f19071S = "d2";
+    public static final String f19858S = "d2";
 
     /* renamed from: T, reason: collision with root package name */
-    public static final String f19072T = "gaid";
+    public static final String f19859T = "gaid";
 
     /* renamed from: U, reason: collision with root package name */
-    public static final String f19073U = "mnc";
+    public static final String f19860U = "mnc";
 
     /* renamed from: V, reason: collision with root package name */
-    public static final String f19074V = "mcc";
+    public static final String f19861V = "mcc";
 
     /* renamed from: W, reason: collision with root package name */
-    public static final String f19075W = "nt";
+    public static final String f19862W = "nt";
 
     /* renamed from: X, reason: collision with root package name */
-    public static final String f19076X = "nts";
+    public static final String f19863X = "nts";
     public static final String Y = "l";
 
     /* renamed from: Z, reason: collision with root package name */
-    public static final String f19077Z = "tz";
+    public static final String f19864Z = "tz";
 
     /* renamed from: a, reason: collision with root package name */
-    public static String f19078a = "anythink";
+    public static String f19865a = "anythink";
     public static final String aA = "event";
     public static final String aB = "net_time_stats";
     public static final String aC = "click_duration";
@@ -136,7 +136,7 @@ public final class a {
     public static final String az = "crashlog";
 
     /* renamed from: b, reason: collision with root package name */
-    public static String f19079b = "";
+    public static String f19866b = "";
     public static final String bA = "last_req_unit_setting";
     public static final String bB = "lst_req_app_wall_setting";
     public static final int bC = 1;
@@ -191,7 +191,7 @@ public final class a {
     public static final String bz = "last_req_setting";
 
     /* renamed from: c, reason: collision with root package name */
-    public static String f19080c = "";
+    public static String f19867c = "";
     public static int cA = 2;
     public static int cB = 3;
     public static String cC = "0";
@@ -246,7 +246,7 @@ public final class a {
     public static int cz = 1;
 
     /* renamed from: d, reason: collision with root package name */
-    public static String f19081d = "";
+    public static String f19868d = "";
     public static final int da = 2;
     public static final int db = 3;
     public static final int dc = 4;
@@ -255,87 +255,87 @@ public final class a {
     public static int df = 2;
 
     /* renamed from: e, reason: collision with root package name */
-    public static String f19082e = "";
+    public static String f19869e = "";
 
     /* renamed from: f, reason: collision with root package name */
-    public static String f19083f = "2.3";
+    public static String f19870f = "2.3";
 
     /* renamed from: g, reason: collision with root package name */
-    public static String f19084g = "1";
+    public static String f19871g = "1";
 
     /* renamed from: h, reason: collision with root package name */
-    public static final String f19085h = "status";
+    public static final String f19872h = "status";
     public static final String i = "version";
 
     /* renamed from: j, reason: collision with root package name */
-    public static final String f19086j = "v5";
+    public static final String f19873j = "v5";
 
     /* renamed from: k, reason: collision with root package name */
-    public static final String f19087k = "v3";
+    public static final String f19874k = "v3";
 
     /* renamed from: l, reason: collision with root package name */
-    public static final int f19088l = 1;
+    public static final int f19875l = 1;
 
     /* renamed from: m, reason: collision with root package name */
-    public static final int f19089m = 200;
+    public static final int f19876m = 200;
 
     /* renamed from: n, reason: collision with root package name */
-    public static final int f19090n = 3;
+    public static final int f19877n = 3;
 
     /* renamed from: o, reason: collision with root package name */
-    public static final int f19091o = 1;
+    public static final int f19878o = 1;
 
     /* renamed from: p, reason: collision with root package name */
-    public static final int f19092p = 0;
+    public static final int f19879p = 0;
 
     /* renamed from: q, reason: collision with root package name */
-    public static final String f19093q = "msg";
+    public static final String f19880q = "msg";
 
     /* renamed from: r, reason: collision with root package name */
-    public static final String f19094r = "data";
+    public static final String f19881r = "data";
 
     /* renamed from: s, reason: collision with root package name */
-    public static final String f19095s = "anythink_expressad";
+    public static final String f19882s = "anythink_expressad";
 
     /* renamed from: t, reason: collision with root package name */
-    public static final String f19096t = "anythink_h5_cachesp";
+    public static final String f19883t = "anythink_h5_cachesp";
 
     /* renamed from: u, reason: collision with root package name */
-    public static final String f19097u = "both";
+    public static final String f19884u = "both";
 
     /* renamed from: v, reason: collision with root package name */
-    public static final String f19098v = "NativePromoAd";
+    public static final String f19885v = "NativePromoAd";
 
     /* renamed from: w, reason: collision with root package name */
-    public static final int f19099w = -1;
+    public static final int f19886w = -1;
 
     /* renamed from: x, reason: collision with root package name */
-    public static final int f19100x = 0;
+    public static final int f19887x = 0;
 
     /* renamed from: y, reason: collision with root package name */
-    public static final int f19101y = 9;
+    public static final int f19888y = 9;
 
     /* renamed from: z, reason: collision with root package name */
-    public static final int f19102z = 5;
+    public static final int f19889z = 5;
 
     /* renamed from: com.anythink.expressad.foundation.g.a$a, reason: collision with other inner class name */
     public static class C0121a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f19103a;
+        public static final String f19890a;
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f19104b;
+        public static final String f19891b;
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f19105c;
+        public static final String f19892c;
 
         static {
             String file = Environment.getExternalStorageDirectory().toString();
-            f19103a = file;
-            String f3 = AbstractC4404f.f(file, "/.anythink700/");
-            f19104b = f3;
-            f19105c = AbstractC4404f.f(f3, "download/");
+            f19890a = file;
+            String g9 = Wv.g(file, "/.anythink700/");
+            f19891b = g9;
+            f19892c = Wv.g(g9, "download/");
         }
     }
 }

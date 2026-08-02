@@ -10,7 +10,7 @@ import com.anythink.expressad.advanced.d.c;
 public class ATOutNativeAdvancedViewGroup extends RelativeLayout {
 
     /* renamed from: a, reason: collision with root package name */
-    private c f17923a;
+    private c f18710a;
 
     public ATOutNativeAdvancedViewGroup(Context context) {
         super(context);
@@ -19,7 +19,7 @@ public class ATOutNativeAdvancedViewGroup extends RelativeLayout {
     @Override // android.view.ViewGroup, android.view.View
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        if (this.f17923a != null) {
+        if (this.f18710a != null) {
             a(1);
             if (getVisibility() == 0) {
                 a(2);
@@ -30,7 +30,7 @@ public class ATOutNativeAdvancedViewGroup extends RelativeLayout {
     @Override // android.view.ViewGroup, android.view.View
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        c cVar = this.f17923a;
+        c cVar = this.f18710a;
         if (cVar != null) {
             cVar.e(1);
         }
@@ -47,14 +47,14 @@ public class ATOutNativeAdvancedViewGroup extends RelativeLayout {
             }
             return;
         }
-        c cVar = this.f17923a;
+        c cVar = this.f18710a;
         if (cVar != null) {
             cVar.e(2);
         }
     }
 
     public void setProvider(c cVar) {
-        this.f17923a = cVar;
+        this.f18710a = cVar;
     }
 
     public ATOutNativeAdvancedViewGroup(Context context, AttributeSet attributeSet) {
@@ -65,8 +65,8 @@ public class ATOutNativeAdvancedViewGroup extends RelativeLayout {
         postDelayed(new Runnable() { // from class: com.anythink.expressad.advanced.view.ATOutNativeAdvancedViewGroup.1
             @Override // java.lang.Runnable
             public final void run() {
-                if (ATOutNativeAdvancedViewGroup.this.f17923a != null) {
-                    ATOutNativeAdvancedViewGroup.this.f17923a.d(i);
+                if (ATOutNativeAdvancedViewGroup.this.f18710a != null) {
+                    ATOutNativeAdvancedViewGroup.this.f18710a.d(i);
                 }
             }
         }, 200L);

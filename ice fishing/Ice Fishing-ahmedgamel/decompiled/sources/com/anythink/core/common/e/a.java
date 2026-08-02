@@ -12,106 +12,106 @@ import java.util.List;
 public class a extends c<com.anythink.core.common.h.f> {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f12885a = "1";
+    public static final String f13671a = "1";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f12886b = "2";
+    public static final String f13672b = "2";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f12887c = "3";
+    public static final String f13673c = "3";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final String f12888d = "4";
+    public static final String f13674d = "4";
 
     /* renamed from: g, reason: collision with root package name */
-    private static volatile a f12889g;
+    private static volatile a f13675g;
 
     /* renamed from: f, reason: collision with root package name */
-    private final String f12890f;
+    private final String f13676f;
 
     /* renamed from: com.anythink.core.common.e.a$a, reason: collision with other inner class name */
     public static class C0077a implements BaseColumns {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f12903a = "ad_frequency";
+        public static final String f13689a = "ad_frequency";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f12904b = "event_type";
+        public static final String f13690b = "event_type";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f12905c = "app";
+        public static final String f13691c = "app";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f12906d = "format";
+        public static final String f13692d = "format";
 
         /* renamed from: e, reason: collision with root package name */
-        public static final String f12907e = "network_id";
+        public static final String f13693e = "network_id";
 
         /* renamed from: f, reason: collision with root package name */
-        public static final String f12908f = "network_format";
+        public static final String f13694f = "network_format";
 
         /* renamed from: g, reason: collision with root package name */
-        public static final String f12909g = "placement_id";
+        public static final String f13695g = "placement_id";
 
         /* renamed from: h, reason: collision with root package name */
-        public static final String f12910h = "source_id";
+        public static final String f13696h = "source_id";
         public static final String i = "extra";
 
         /* renamed from: j, reason: collision with root package name */
-        public static final String f12911j = "month";
+        public static final String f13697j = "month";
 
         /* renamed from: k, reason: collision with root package name */
-        public static final String f12912k = "day";
+        public static final String f13698k = "day";
 
         /* renamed from: l, reason: collision with root package name */
-        public static final String f12913l = "hour";
+        public static final String f13699l = "hour";
 
         /* renamed from: m, reason: collision with root package name */
-        public static final String f12914m = "time_stamp";
+        public static final String f13700m = "time_stamp";
 
         /* renamed from: n, reason: collision with root package name */
-        public static final String f12915n = "req_num";
+        public static final String f13701n = "req_num";
 
         /* renamed from: o, reason: collision with root package name */
-        public static final String f12916o = "rule_id";
+        public static final String f13702o = "rule_id";
 
         /* renamed from: p, reason: collision with root package name */
-        public static final String f12917p = "fail_count";
+        public static final String f13703p = "fail_count";
 
         /* renamed from: q, reason: collision with root package name */
-        public static final String f12918q = "next_req_timestamp";
+        public static final String f13704q = "next_req_timestamp";
 
         /* renamed from: r, reason: collision with root package name */
-        public static final String f12919r = "CREATE TABLE IF NOT EXISTS ad_frequency(_id INTEGER PRIMARY KEY AUTOINCREMENT ,event_type TEXT ,app TEXT ,network_id TEXT ,format TEXT ,network_format TEXT ,placement_id TEXT ,source_id TEXT ,extra TEXT ,month INTEGER ,day INTEGER ,hour INTEGER , req_num INTEGER , time_stamp INTEGER)";
+        public static final String f13705r = "CREATE TABLE IF NOT EXISTS ad_frequency(_id INTEGER PRIMARY KEY AUTOINCREMENT ,event_type TEXT ,app TEXT ,network_id TEXT ,format TEXT ,network_format TEXT ,placement_id TEXT ,source_id TEXT ,extra TEXT ,month INTEGER ,day INTEGER ,hour INTEGER , req_num INTEGER , time_stamp INTEGER)";
 
         /* renamed from: s, reason: collision with root package name */
-        public static final String f12920s = "ALTER TABLE ad_frequency ADD COLUMN rule_id INTEGER;";
+        public static final String f13706s = "ALTER TABLE ad_frequency ADD COLUMN rule_id INTEGER;";
 
         /* renamed from: t, reason: collision with root package name */
-        public static final String f12921t = "ALTER TABLE ad_frequency ADD COLUMN fail_count INTEGER;";
+        public static final String f13707t = "ALTER TABLE ad_frequency ADD COLUMN fail_count INTEGER;";
 
         /* renamed from: u, reason: collision with root package name */
-        public static final String f12922u = "ALTER TABLE ad_frequency ADD COLUMN next_req_timestamp INTEGER;";
+        public static final String f13708u = "ALTER TABLE ad_frequency ADD COLUMN next_req_timestamp INTEGER;";
     }
 
     private a(d dVar) {
         super(dVar);
-        this.f12890f = "AdFrequencyDao";
+        this.f13676f = "AdFrequencyDao";
     }
 
     public static a a(d dVar) {
-        if (f12889g == null) {
+        if (f13675g == null) {
             synchronized (a.class) {
                 try {
-                    if (f12889g == null) {
-                        f12889g = new a(dVar);
+                    if (f13675g == null) {
+                        f13675g = new a(dVar);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f12889g;
+        return f13675g;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0047, code lost:
@@ -164,11 +164,11 @@ public class a extends c<com.anythink.core.common.h.f> {
                 th = th2;
             }
             try {
-                Cursor query = c().query(C0077a.f12903a, null, "event_type = ? and " + str2 + " = ?", new String[]{"1", str}, null, null, null, "1");
+                Cursor query = c().query(C0077a.f13689a, null, "event_type = ? and " + str2 + " = ?", new String[]{"1", str}, null, null, null, "1");
                 while (query.moveToNext()) {
                     try {
                         String str3 = str2;
-                        fVar2 = new com.anythink.core.common.h.f(query.getString(query.getColumnIndex(C0077a.f12904b)), query.getString(query.getColumnIndex(str2)), str3, query.getLong(query.getColumnIndex(C0077a.f12914m)), query.getInt(query.getColumnIndex(C0077a.f12915n)));
+                        fVar2 = new com.anythink.core.common.h.f(query.getString(query.getColumnIndex(C0077a.f13690b)), query.getString(query.getColumnIndex(str2)), str3, query.getLong(query.getColumnIndex(C0077a.f13700m)), query.getInt(query.getColumnIndex(C0077a.f13701n)));
                         str2 = str3;
                     } catch (Throwable th3) {
                         th = th3;
@@ -208,7 +208,7 @@ public class a extends c<com.anythink.core.common.h.f> {
             if (d() == null) {
                 return;
             }
-            d().delete(C0077a.f12903a, "event_type = ? and month != ? or day != ?", new String[]{"2", str, str2});
+            d().delete(C0077a.f13689a, "event_type = ? and month != ? or day != ?", new String[]{"2", str, str2});
         }
     }
 
@@ -217,18 +217,18 @@ public class a extends c<com.anythink.core.common.h.f> {
             try {
                 try {
                     ContentValues contentValues = new ContentValues();
-                    contentValues.put(C0077a.f12904b, "2");
+                    contentValues.put(C0077a.f13690b, "2");
                     contentValues.put("app", fVar.j());
                     contentValues.put("placement_id", fVar.d());
                     contentValues.put("network_id", fVar.b());
                     contentValues.put("format", fVar.c());
-                    contentValues.put(C0077a.f12908f, fVar.k());
-                    contentValues.put(C0077a.f12910h, fVar.e());
-                    contentValues.put(C0077a.f12911j, Integer.valueOf(fVar.f()));
-                    contentValues.put(C0077a.f12912k, Integer.valueOf(fVar.g()));
-                    contentValues.put(C0077a.f12913l, Integer.valueOf(fVar.h()));
-                    contentValues.put(C0077a.f12914m, Long.valueOf(fVar.i()));
-                    d().insert(C0077a.f12903a, null, contentValues);
+                    contentValues.put(C0077a.f13694f, fVar.k());
+                    contentValues.put(C0077a.f13696h, fVar.e());
+                    contentValues.put(C0077a.f13697j, Integer.valueOf(fVar.f()));
+                    contentValues.put(C0077a.f13698k, Integer.valueOf(fVar.g()));
+                    contentValues.put(C0077a.f13699l, Integer.valueOf(fVar.h()));
+                    contentValues.put(C0077a.f13700m, Long.valueOf(fVar.i()));
+                    d().insert(C0077a.f13689a, null, contentValues);
                 } finally {
                 }
             } catch (Throwable th) {
@@ -274,7 +274,7 @@ public class a extends c<com.anythink.core.common.h.f> {
             list = null;
             try {
                 try {
-                    cursor = c().query(C0077a.f12903a, null, "event_type = ? and " + str2 + " = ? and month = ? and day = ?", new String[]{"2", str, com.anythink.core.a.b.a(date), com.anythink.core.a.b.b(date)}, null, null, null);
+                    cursor = c().query(C0077a.f13689a, null, "event_type = ? and " + str2 + " = ? and month = ? and day = ?", new String[]{"2", str, com.anythink.core.a.b.a(date), com.anythink.core.a.b.b(date)}, null, null, null);
                     try {
                         list = a(cursor);
                     } catch (Throwable th2) {
@@ -302,19 +302,19 @@ public class a extends c<com.anythink.core.common.h.f> {
             try {
                 try {
                     ContentValues contentValues = new ContentValues();
-                    contentValues.put(C0077a.f12904b, "1");
-                    contentValues.put(C0077a.f12915n, Integer.valueOf(i));
-                    contentValues.put(C0077a.f12914m, Long.valueOf(j6));
+                    contentValues.put(C0077a.f13690b, "1");
+                    contentValues.put(C0077a.f13701n, Integer.valueOf(i));
+                    contentValues.put(C0077a.f13700m, Long.valueOf(j6));
                     switch (str2.hashCode()) {
                         case -1928631512:
-                            if (str2.equals(C0077a.f12908f)) {
+                            if (str2.equals(C0077a.f13694f)) {
                                 c9 = 3;
                                 break;
                             }
                             c9 = 65535;
                             break;
                         case -1698410561:
-                            if (str2.equals(C0077a.f12910h)) {
+                            if (str2.equals(C0077a.f13696h)) {
                                 c9 = 5;
                                 break;
                             }
@@ -359,13 +359,13 @@ public class a extends c<com.anythink.core.common.h.f> {
                     } else if (c9 == 2) {
                         contentValues.put("network_id", str);
                     } else if (c9 == 3) {
-                        contentValues.put(C0077a.f12908f, str);
+                        contentValues.put(C0077a.f13694f, str);
                     } else if (c9 == 4) {
                         contentValues.put("placement_id", str);
                     } else if (c9 == 5) {
-                        contentValues.put(C0077a.f12910h, str);
+                        contentValues.put(C0077a.f13696h, str);
                     }
-                    d().insert(C0077a.f12903a, null, contentValues);
+                    d().insert(C0077a.f13689a, null, contentValues);
                 } finally {
                 }
             } catch (Throwable th) {
@@ -378,11 +378,11 @@ public class a extends c<com.anythink.core.common.h.f> {
         synchronized (this) {
             try {
                 ContentValues contentValues = new ContentValues();
-                contentValues.put(C0077a.f12914m, Long.valueOf(fVar.i()));
-                contentValues.put(C0077a.f12918q, Long.valueOf(fVar.n()));
-                contentValues.put(C0077a.f12917p, Integer.valueOf(fVar.m()));
-                contentValues.put(C0077a.f12915n, Integer.valueOf(fVar.f13944a));
-                if (d().update(C0077a.f12903a, contentValues, "event_type = ? and source_id = ? and rule_id = ?", new String[]{fVar.a(), fVar.e(), String.valueOf(fVar.l())}) < 0) {
+                contentValues.put(C0077a.f13700m, Long.valueOf(fVar.i()));
+                contentValues.put(C0077a.f13704q, Long.valueOf(fVar.n()));
+                contentValues.put(C0077a.f13703p, Integer.valueOf(fVar.m()));
+                contentValues.put(C0077a.f13701n, Integer.valueOf(fVar.f14730a));
+                if (d().update(C0077a.f13689a, contentValues, "event_type = ? and source_id = ? and rule_id = ?", new String[]{fVar.a(), fVar.e(), String.valueOf(fVar.l())}) < 0) {
                     fVar.e();
                 }
             } catch (Throwable unused) {
@@ -417,7 +417,7 @@ public class a extends c<com.anythink.core.common.h.f> {
                 th = th2;
             }
             try {
-                cursor = c().query(C0077a.f12903a, null, "event_type = ? and " + str2 + " = ? and month = ? and day = ? and hour = ?", new String[]{"2", str, com.anythink.core.a.b.a(date), com.anythink.core.a.b.b(date), com.anythink.core.a.b.c(date)}, null, null, null);
+                cursor = c().query(C0077a.f13689a, null, "event_type = ? and " + str2 + " = ? and month = ? and day = ? and hour = ?", new String[]{"2", str, com.anythink.core.a.b.a(date), com.anythink.core.a.b.b(date), com.anythink.core.a.b.c(date)}, null, null, null);
                 try {
                     list = a(cursor);
                 } catch (Throwable th3) {
@@ -441,7 +441,7 @@ public class a extends c<com.anythink.core.common.h.f> {
         if (cursor != null) {
             while (cursor.moveToNext()) {
                 try {
-                    arrayList.add(new com.anythink.core.common.h.f(cursor.getString(cursor.getColumnIndex(C0077a.f12904b)), cursor.getString(cursor.getColumnIndex("app")), cursor.getString(cursor.getColumnIndex("network_id")), cursor.getString(cursor.getColumnIndex("format")), cursor.getString(cursor.getColumnIndex(C0077a.f12908f)), cursor.getString(cursor.getColumnIndex("placement_id")), cursor.getString(cursor.getColumnIndex(C0077a.f12910h)), cursor.getInt(cursor.getColumnIndex(C0077a.f12911j)), cursor.getInt(cursor.getColumnIndex(C0077a.f12912k)), cursor.getInt(cursor.getColumnIndex(C0077a.f12913l)), cursor.getLong(cursor.getColumnIndex(C0077a.f12914m))));
+                    arrayList.add(new com.anythink.core.common.h.f(cursor.getString(cursor.getColumnIndex(C0077a.f13690b)), cursor.getString(cursor.getColumnIndex("app")), cursor.getString(cursor.getColumnIndex("network_id")), cursor.getString(cursor.getColumnIndex("format")), cursor.getString(cursor.getColumnIndex(C0077a.f13694f)), cursor.getString(cursor.getColumnIndex("placement_id")), cursor.getString(cursor.getColumnIndex(C0077a.f13696h)), cursor.getInt(cursor.getColumnIndex(C0077a.f13697j)), cursor.getInt(cursor.getColumnIndex(C0077a.f13698k)), cursor.getInt(cursor.getColumnIndex(C0077a.f13699l)), cursor.getLong(cursor.getColumnIndex(C0077a.f13700m))));
                 } catch (Throwable th) {
                     th.printStackTrace();
                 }
@@ -455,14 +455,14 @@ public class a extends c<com.anythink.core.common.h.f> {
             try {
                 try {
                     ContentValues contentValues = new ContentValues();
-                    contentValues.put(C0077a.f12904b, fVar.a());
-                    contentValues.put(C0077a.f12916o, Integer.valueOf(fVar.l()));
-                    contentValues.put(C0077a.f12910h, fVar.e());
-                    contentValues.put(C0077a.f12914m, Long.valueOf(fVar.i()));
-                    contentValues.put(C0077a.f12918q, Long.valueOf(fVar.n()));
-                    contentValues.put(C0077a.f12917p, Integer.valueOf(fVar.m()));
-                    contentValues.put(C0077a.f12915n, Integer.valueOf(fVar.f13944a));
-                    if (d().insert(C0077a.f12903a, null, contentValues) < 0) {
+                    contentValues.put(C0077a.f13690b, fVar.a());
+                    contentValues.put(C0077a.f13702o, Integer.valueOf(fVar.l()));
+                    contentValues.put(C0077a.f13696h, fVar.e());
+                    contentValues.put(C0077a.f13700m, Long.valueOf(fVar.i()));
+                    contentValues.put(C0077a.f13704q, Long.valueOf(fVar.n()));
+                    contentValues.put(C0077a.f13703p, Integer.valueOf(fVar.m()));
+                    contentValues.put(C0077a.f13701n, Integer.valueOf(fVar.f14730a));
+                    if (d().insert(C0077a.f13689a, null, contentValues) < 0) {
                         fVar.e();
                     }
                 } catch (Throwable th) {
@@ -496,14 +496,14 @@ public class a extends c<com.anythink.core.common.h.f> {
             try {
                 try {
                     ContentValues contentValues = new ContentValues();
-                    contentValues.put(C0077a.f12904b, fVar.a());
-                    contentValues.put(C0077a.f12916o, Integer.valueOf(fVar.l()));
-                    contentValues.put(C0077a.f12910h, fVar.e());
-                    contentValues.put(C0077a.f12914m, Long.valueOf(fVar.i()));
-                    contentValues.put(C0077a.f12918q, Long.valueOf(fVar.n()));
-                    contentValues.put(C0077a.f12917p, Integer.valueOf(fVar.m()));
-                    contentValues.put(C0077a.f12915n, Integer.valueOf(fVar.f13944a));
-                    if (aVar.d().insert(C0077a.f12903a, null, contentValues) < 0) {
+                    contentValues.put(C0077a.f13690b, fVar.a());
+                    contentValues.put(C0077a.f13702o, Integer.valueOf(fVar.l()));
+                    contentValues.put(C0077a.f13696h, fVar.e());
+                    contentValues.put(C0077a.f13700m, Long.valueOf(fVar.i()));
+                    contentValues.put(C0077a.f13704q, Long.valueOf(fVar.n()));
+                    contentValues.put(C0077a.f13703p, Integer.valueOf(fVar.m()));
+                    contentValues.put(C0077a.f13701n, Integer.valueOf(fVar.f14730a));
+                    if (aVar.d().insert(C0077a.f13689a, null, contentValues) < 0) {
                         fVar.e();
                     }
                 } catch (Throwable th) {
@@ -520,9 +520,9 @@ public class a extends c<com.anythink.core.common.h.f> {
             try {
                 try {
                     ContentValues contentValues = new ContentValues();
-                    contentValues.put(C0077a.f12915n, Integer.valueOf(i));
-                    contentValues.put(C0077a.f12914m, Long.valueOf(j6));
-                    d().update(C0077a.f12903a, contentValues, "event_type = ? and " + str2 + " = ?", new String[]{"1", str});
+                    contentValues.put(C0077a.f13701n, Integer.valueOf(i));
+                    contentValues.put(C0077a.f13700m, Long.valueOf(j6));
+                    d().update(C0077a.f13689a, contentValues, "event_type = ? and " + str2 + " = ?", new String[]{"1", str});
                 } finally {
                 }
             } catch (Throwable th) {
@@ -551,7 +551,7 @@ public class a extends c<com.anythink.core.common.h.f> {
         return new Pair<>(sb.toString(), strArr);
     }
 
-    public final void a(final com.anythink.core.common.h.f fVar, final boolean z3) {
+    public final void a(final com.anythink.core.common.h.f fVar, final boolean z6) {
         if (fVar == null) {
             return;
         }
@@ -559,7 +559,7 @@ public class a extends c<com.anythink.core.common.h.f> {
             com.anythink.core.common.v.b.b.a().c(new Runnable() { // from class: com.anythink.core.common.e.a.3
                 @Override // java.lang.Runnable
                 public final void run() {
-                    if (z3) {
+                    if (z6) {
                         a.a(a.this, fVar);
                     } else {
                         a.b(a.this, fVar);
@@ -583,19 +583,19 @@ public class a extends c<com.anythink.core.common.h.f> {
         synchronized (this) {
             try {
                 Pair<String, String[]> c9 = c(list);
-                cursor = i > 0 ? c().query(C0077a.f12903a, null, (String) c9.first, (String[]) c9.second, null, null, "time_stamp DESC", String.valueOf(i)) : c().query(C0077a.f12903a, null, (String) c9.first, (String[]) c9.second, null, null, "time_stamp DESC", null);
+                cursor = i > 0 ? c().query(C0077a.f13689a, null, (String) c9.first, (String[]) c9.second, null, null, "time_stamp DESC", String.valueOf(i)) : c().query(C0077a.f13689a, null, (String) c9.first, (String[]) c9.second, null, null, "time_stamp DESC", null);
                 while (cursor.moveToNext()) {
                     try {
-                        String string = cursor.getString(cursor.getColumnIndex(C0077a.f12904b));
-                        long j6 = cursor.getLong(cursor.getColumnIndex(C0077a.f12914m));
-                        int i6 = cursor.getInt(cursor.getColumnIndex(C0077a.f12915n));
-                        String string2 = cursor.getString(cursor.getColumnIndex(C0077a.f12910h));
-                        int i9 = cursor.getInt(cursor.getColumnIndex(C0077a.f12916o));
-                        int i10 = cursor.getInt(cursor.getColumnIndex(C0077a.f12917p));
-                        long j9 = cursor.getLong(cursor.getColumnIndex(C0077a.f12918q));
-                        com.anythink.core.common.h.f fVar = new com.anythink.core.common.h.f(string, string2, C0077a.f12910h, j6, i6);
-                        fVar.a(i9);
-                        fVar.b(i10);
+                        String string = cursor.getString(cursor.getColumnIndex(C0077a.f13690b));
+                        long j6 = cursor.getLong(cursor.getColumnIndex(C0077a.f13700m));
+                        int i4 = cursor.getInt(cursor.getColumnIndex(C0077a.f13701n));
+                        String string2 = cursor.getString(cursor.getColumnIndex(C0077a.f13696h));
+                        int i6 = cursor.getInt(cursor.getColumnIndex(C0077a.f13702o));
+                        int i9 = cursor.getInt(cursor.getColumnIndex(C0077a.f13703p));
+                        long j9 = cursor.getLong(cursor.getColumnIndex(C0077a.f13704q));
+                        com.anythink.core.common.h.f fVar = new com.anythink.core.common.h.f(string, string2, C0077a.f13696h, j6, i4);
+                        fVar.a(i6);
+                        fVar.b(i9);
                         fVar.b(j9);
                         arrayList.add(fVar);
                     } catch (Throwable unused) {
@@ -619,7 +619,7 @@ public class a extends c<com.anythink.core.common.h.f> {
                 synchronized (this) {
                     try {
                         Pair c9 = a.c((List<Pair<String, String>>) list);
-                        a.this.d().delete(C0077a.f12903a, (String) c9.first, (String[]) c9.second);
+                        a.this.d().delete(C0077a.f13689a, (String) c9.first, (String[]) c9.second);
                     } catch (Throwable unused) {
                     }
                 }
@@ -631,11 +631,11 @@ public class a extends c<com.anythink.core.common.h.f> {
         synchronized (aVar) {
             try {
                 ContentValues contentValues = new ContentValues();
-                contentValues.put(C0077a.f12914m, Long.valueOf(fVar.i()));
-                contentValues.put(C0077a.f12918q, Long.valueOf(fVar.n()));
-                contentValues.put(C0077a.f12917p, Integer.valueOf(fVar.m()));
-                contentValues.put(C0077a.f12915n, Integer.valueOf(fVar.f13944a));
-                if (aVar.d().update(C0077a.f12903a, contentValues, "event_type = ? and source_id = ? and rule_id = ?", new String[]{fVar.a(), fVar.e(), String.valueOf(fVar.l())}) < 0) {
+                contentValues.put(C0077a.f13700m, Long.valueOf(fVar.i()));
+                contentValues.put(C0077a.f13704q, Long.valueOf(fVar.n()));
+                contentValues.put(C0077a.f13703p, Integer.valueOf(fVar.m()));
+                contentValues.put(C0077a.f13701n, Integer.valueOf(fVar.f14730a));
+                if (aVar.d().update(C0077a.f13689a, contentValues, "event_type = ? and source_id = ? and rule_id = ?", new String[]{fVar.a(), fVar.e(), String.valueOf(fVar.l())}) < 0) {
                     fVar.e();
                 }
             } catch (Throwable unused) {

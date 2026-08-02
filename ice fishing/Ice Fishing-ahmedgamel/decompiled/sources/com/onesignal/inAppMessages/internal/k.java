@@ -1,12 +1,12 @@
 package com.onesignal.inAppMessages.internal;
 
-import S7.C0395m;
-import S7.InterfaceC0394l;
-import a8.InterfaceC0447a;
+import S7.C0399m;
+import S7.InterfaceC0398l;
+import a8.InterfaceC0451a;
 import android.R;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import b6.InterfaceC0520b;
+import b6.InterfaceC0528b;
 import com.onesignal.common.AndroidUtils;
 import com.onesignal.inAppMessages.internal.prompt.impl.b;
 import java.util.ArrayList;
@@ -20,11 +20,11 @@ import java.util.Map;
 import java.util.Set;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import q4.C4925a;
-import q4.C4926b;
-import t4.C5040a;
-import u7.C5094l;
-import z7.InterfaceC5267d;
+import q4.C4874a;
+import q4.C4875b;
+import t4.C5041a;
+import u7.C5086l;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.a, com.onesignal.common.modeling.g, T4.a, Z4.b, O5.a, x4.e, com.onesignal.user.internal.jwt.a {
@@ -52,7 +52,7 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     private final Set<String> clickedClickIds;
     private final Set<String> dismissedMessages;
     private final Set<String> earlySessionTriggers;
-    private final InterfaceC0447a fetchIAMMutex;
+    private final InterfaceC0451a fetchIAMMutex;
     private boolean hasCompletedFirstFetch;
     private final C0206k identityModelChangeHandler;
     private final Set<String> impressionedMessages;
@@ -60,10 +60,10 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     private final com.onesignal.common.events.b lifecycleCallback;
     private final com.onesignal.common.events.b messageClickCallback;
     private final List<a> messageDisplayQueue;
-    private final InterfaceC0447a messageDisplayQueueMutex;
+    private final InterfaceC0451a messageDisplayQueueMutex;
     private List<a> messages;
     private volatile String pendingJwtRetryExternalId;
-    private volatile C4926b pendingJwtRetryRywData;
+    private volatile C4875b pendingJwtRetryRywData;
     private final List<a> redisplayedInAppMessages;
     private final Set<String> viewedPageIds;
 
@@ -73,8 +73,8 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         int label;
         /* synthetic */ Object result;
 
-        public A(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public A(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -92,8 +92,8 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         int label;
         /* synthetic */ Object result;
 
-        public B(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public B(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -111,23 +111,23 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         /* JADX WARN: Multi-variable type inference failed */
-        public C(a aVar, List<? extends com.onesignal.inAppMessages.internal.prompt.impl.b> list, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public C(a aVar, List<? extends com.onesignal.inAppMessages.internal.prompt.impl.b> list, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$inAppMessage = aVar;
             this.$prompts = list;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return k.this.new C(this.$inAppMessage, this.$prompts, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return k.this.new C(this.$inAppMessage, this.$prompts, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 k kVar = k.this;
                 a aVar2 = this.$inAppMessage;
                 List<com.onesignal.inAppMessages.internal.prompt.impl.b> list = this.$prompts;
@@ -139,14 +139,14 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((C) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((C) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
@@ -158,8 +158,8 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         int label;
         /* synthetic */ Object result;
 
-        public D(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public D(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -174,13 +174,13 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         Object L$0;
         int label;
 
-        public E(InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public E(InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return k.this.new E(interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return k.this.new E(interfaceC5240d);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:22:0x002f, code lost:
@@ -195,10 +195,10 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         public final Object invokeSuspend(Object obj) {
             List list;
             Iterator it;
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 X4.a aVar2 = k.this._repository;
                 this.label = 1;
             } else {
@@ -207,15 +207,15 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     list = (List) this.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     list.addAll((Collection) obj);
                     it = k.this.redisplayedInAppMessages.iterator();
                     while (it.hasNext()) {
                         ((a) it.next()).setDisplayedInSession(false);
                     }
-                    return u7.v.f41353a;
+                    return u7.v.f41073a;
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
             List list2 = k.this.redisplayedInAppMessages;
             X4.a aVar3 = k.this._repository;
@@ -229,27 +229,27 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                 it = k.this.redisplayedInAppMessages.iterator();
                 while (it.hasNext()) {
                 }
-                return u7.v.f41353a;
+                return u7.v.f41073a;
             }
             return aVar;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((E) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((E) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
     /* renamed from: com.onesignal.inAppMessages.internal.k$a, reason: case insensitive filesystem */
-    public static final class C4408a extends B7.c {
+    public static final class C4423a extends B7.c {
         Object L$0;
         Object L$1;
         Object L$2;
         int label;
         /* synthetic */ Object result;
 
-        public C4408a(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public C4423a(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -261,14 +261,14 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     }
 
     /* renamed from: com.onesignal.inAppMessages.internal.k$b, reason: case insensitive filesystem */
-    public static final class C4409b extends B7.c {
+    public static final class C4424b extends B7.c {
         Object L$0;
         Object L$1;
         int label;
         /* synthetic */ Object result;
 
-        public C4409b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public C4424b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -280,15 +280,15 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     }
 
     /* renamed from: com.onesignal.inAppMessages.internal.k$c, reason: case insensitive filesystem */
-    public static final class C4410c extends B7.c {
+    public static final class C4425c extends B7.c {
         Object L$0;
         Object L$1;
         boolean Z$0;
         int label;
         /* synthetic */ Object result;
 
-        public C4410c(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public C4425c(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -300,7 +300,7 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     }
 
     /* renamed from: com.onesignal.inAppMessages.internal.k$d, reason: case insensitive filesystem */
-    public static final class C4411d extends B7.c {
+    public static final class C4426d extends B7.c {
         Object L$0;
         Object L$1;
         Object L$2;
@@ -309,8 +309,8 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         int label;
         /* synthetic */ Object result;
 
-        public C4411d(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public C4426d(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -322,8 +322,8 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     }
 
     /* renamed from: com.onesignal.inAppMessages.internal.k$e, reason: case insensitive filesystem */
-    public static final class C4412e extends kotlin.jvm.internal.i implements I7.a {
-        public C4412e() {
+    public static final class C4427e extends kotlin.jvm.internal.i implements I7.a {
+        public C4427e() {
             super(0);
         }
 
@@ -336,13 +336,13 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     public static final class f extends B7.h implements I7.l {
         int label;
 
-        public f(InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public f(InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return k.this.new f(interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return k.this.new f(interfaceC5240d);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:16:0x005d, code lost:
@@ -366,41 +366,41 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 String onesignalId = k.this._userManager.getOnesignalId();
                 s4.c cVar = k.this._consistencyManager;
-                C4925a c4925a = new C4925a(onesignalId);
+                C4874a c4874a = new C4874a(onesignalId);
                 this.label = 1;
-                obj = cVar.getRywDataFromAwaitableCondition(c4925a, this);
+                obj = cVar.getRywDataFromAwaitableCondition(c4874a, this);
             } else {
                 if (i != 1) {
                     if (i != 2) {
                         if (i != 3) {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
-                        com.bumptech.glide.d.k(obj);
-                        return u7.v.f41353a;
+                        Q3.b.s(obj);
+                        return u7.v.f41073a;
                     }
-                    com.bumptech.glide.d.k(obj);
-                    C4926b c4926b = (C4926b) obj;
-                    if (c4926b != null) {
+                    Q3.b.s(obj);
+                    C4875b c4875b = (C4875b) obj;
+                    if (c4875b != null) {
                         k kVar = k.this;
                         this.label = 3;
                     }
-                    return u7.v.f41353a;
+                    return u7.v.f41073a;
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
             this.label = 2;
-            obj = ((C0395m) ((InterfaceC0394l) obj)).U(this);
+            obj = ((C0399m) ((InterfaceC0398l) obj)).U(this);
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((f) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((f) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
@@ -410,8 +410,8 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         int label;
         /* synthetic */ Object result;
 
-        public g(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public g(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -428,36 +428,36 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public h(b bVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public h(b bVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$result = bVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            h hVar = new h(this.$result, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            h hVar = new h(this.$result, interfaceC5240d);
             hVar.L$0 = obj;
             return hVar;
         }
 
-        public final Object invoke(O4.c cVar, InterfaceC5267d interfaceC5267d) {
-            return ((h) create(cVar, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(O4.c cVar, InterfaceC5240d interfaceC5240d) {
+            return ((h) create(cVar, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
-            throw D.y.i(this.L$0);
+            Q3.b.s(obj);
+            throw D.x.h(this.L$0);
         }
 
         @Override // I7.p
         public /* synthetic */ Object invoke(Object obj, Object obj2) {
             if (obj == null) {
-                return invoke((O4.c) null, (InterfaceC5267d) obj2);
+                return invoke((O4.c) null, (InterfaceC5240d) obj2);
             }
             throw new ClassCastException();
         }
@@ -470,8 +470,8 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         int label;
         /* synthetic */ Object result;
 
-        public i(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public i(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -488,8 +488,8 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         int label;
         /* synthetic */ Object result;
 
-        public j(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public j(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -510,15 +510,15 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
             final /* synthetic */ k this$0;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public a(k kVar, String str, InterfaceC5267d interfaceC5267d) {
-                super(1, interfaceC5267d);
+            public a(k kVar, String str, InterfaceC5240d interfaceC5240d) {
+                super(1, interfaceC5240d);
                 this.this$0 = kVar;
                 this.$newOneSignalId = str;
             }
 
             @Override // B7.a
-            public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-                return new a(this.this$0, this.$newOneSignalId, interfaceC5267d);
+            public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+                return new a(this.this$0, this.$newOneSignalId, interfaceC5240d);
             }
 
             /* JADX WARN: Code restructure failed: missing block: B:16:0x0055, code lost:
@@ -542,40 +542,40 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                 Code decompiled incorrectly, please refer to instructions dump.
             */
             public final Object invokeSuspend(Object obj) {
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 int i = this.label;
                 if (i == 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     s4.c cVar = this.this$0._consistencyManager;
-                    C4925a c4925a = new C4925a(this.$newOneSignalId);
+                    C4874a c4874a = new C4874a(this.$newOneSignalId);
                     this.label = 1;
-                    obj = cVar.getRywDataFromAwaitableCondition(c4925a, this);
+                    obj = cVar.getRywDataFromAwaitableCondition(c4874a, this);
                 } else {
                     if (i != 1) {
                         if (i != 2) {
                             if (i != 3) {
                                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                             }
-                            com.bumptech.glide.d.k(obj);
-                            return u7.v.f41353a;
+                            Q3.b.s(obj);
+                            return u7.v.f41073a;
                         }
-                        com.bumptech.glide.d.k(obj);
-                        C4926b c4926b = (C4926b) obj;
-                        if (c4926b != null) {
+                        Q3.b.s(obj);
+                        C4875b c4875b = (C4875b) obj;
+                        if (c4875b != null) {
                             k kVar = this.this$0;
                             this.label = 3;
                         }
-                        return u7.v.f41353a;
+                        return u7.v.f41073a;
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 this.label = 2;
-                obj = ((C0395m) ((InterfaceC0394l) obj)).U(this);
+                obj = ((C0399m) ((InterfaceC0398l) obj)).U(this);
             }
 
             @Override // I7.l
-            public final Object invoke(InterfaceC5267d interfaceC5267d) {
-                return ((a) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+            public final Object invoke(InterfaceC5240d interfaceC5240d) {
+                return ((a) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
             }
         }
 
@@ -615,8 +615,8 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         int label;
         /* synthetic */ Object result;
 
-        public l(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public l(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -642,7 +642,7 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                 throw new ClassCastException();
             }
             invoke((O4.g) null);
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
 
         public final void invoke(O4.g it) {
@@ -653,44 +653,44 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     }
 
     public static final class n extends B7.h implements I7.l {
-        final /* synthetic */ C4926b $pendingRyw;
+        final /* synthetic */ C4875b $pendingRyw;
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public n(C4926b c4926b, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
-            this.$pendingRyw = c4926b;
+        public n(C4875b c4875b, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
+            this.$pendingRyw = c4875b;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return k.this.new n(this.$pendingRyw, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return k.this.new n(this.$pendingRyw, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 k kVar = k.this;
-                C4926b c4926b = this.$pendingRyw;
+                C4875b c4875b = this.$pendingRyw;
                 this.label = 1;
-                if (kVar.fetchMessages(c4926b, this) == aVar) {
+                if (kVar.fetchMessages(c4875b, this) == aVar) {
                     return aVar;
                 }
             } else {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((n) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((n) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
@@ -701,16 +701,16 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         final /* synthetic */ k this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public o(c cVar, a aVar, k kVar, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public o(c cVar, a aVar, k kVar, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$action = cVar;
             this.$message = aVar;
             this.this$0 = kVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return new o(this.$action, this.$message, this.this$0, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return new o(this.$action, this.$message, this.this$0, interfaceC5240d);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:15:0x008c, code lost:
@@ -738,19 +738,19 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 this.$action.setFirstClick(this.$message.takeActionAsUnique());
                 k kVar = this.this$0;
                 a aVar2 = this.$message;
                 c cVar = this.$action;
                 this.label = 1;
             } else if (i == 1) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             } else if (i == 2) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 this.this$0.fireClickAction(this.$action);
                 k kVar2 = this.this$0;
                 a aVar3 = this.$message;
@@ -761,10 +761,10 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                     if (i != 4) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
-                    return u7.v.f41353a;
+                    Q3.b.s(obj);
+                    return u7.v.f41073a;
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 this.this$0.fireTagCallForClick(this.$action);
                 k kVar3 = this.this$0;
                 String messageId = this.$message.getMessageId();
@@ -778,8 +778,8 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((o) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((o) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
@@ -790,16 +790,16 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         final /* synthetic */ k this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public p(c cVar, a aVar, k kVar, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public p(c cVar, a aVar, k kVar, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$action = cVar;
             this.$message = aVar;
             this.this$0 = kVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return new p(this.$action, this.$message, this.this$0, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return new p(this.$action, this.$message, this.this$0, interfaceC5240d);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:13:0x0049, code lost:
@@ -819,10 +819,10 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 this.$action.setFirstClick(this.$message.takeActionAsUnique());
                 k kVar = this.this$0;
                 a aVar2 = this.$message;
@@ -833,12 +833,12 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                     if (i != 2) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     this.this$0.fireClickAction(this.$action);
                     this.this$0.logInAppMessagePreviewActions(this.$action);
-                    return u7.v.f41353a;
+                    return u7.v.f41073a;
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
             k kVar2 = this.this$0;
             a aVar3 = this.$message;
@@ -847,8 +847,8 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((p) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((p) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
@@ -858,23 +858,23 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public q(a aVar, com.onesignal.inAppMessages.internal.g gVar, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public q(a aVar, com.onesignal.inAppMessages.internal.g gVar, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$message = aVar;
             this.$page = gVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return k.this.new q(this.$message, this.$page, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return k.this.new q(this.$message, this.$page, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 k kVar = k.this;
                 a aVar2 = this.$message;
                 com.onesignal.inAppMessages.internal.g gVar = this.$page;
@@ -886,14 +886,14 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((q) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((q) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
@@ -902,22 +902,22 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public r(a aVar, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public r(a aVar, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$message = aVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return k.this.new r(this.$message, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return k.this.new r(this.$message, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 k kVar = k.this;
                 a aVar2 = this.$message;
                 this.label = 1;
@@ -928,14 +928,14 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((r) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((r) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
@@ -954,7 +954,7 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                 throw new ClassCastException();
             }
             invoke((O4.g) null);
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
 
         public final void invoke(O4.g it) {
@@ -970,25 +970,25 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public t(String str, a aVar, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public t(String str, a aVar, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$variantId = str;
             this.$message = aVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return k.this.new t(this.$variantId, this.$message, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return k.this.new t(this.$variantId, this.$message, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
             t tVar;
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             try {
                 if (i == 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     P4.b bVar = k.this._backend;
                     String appId = ((com.onesignal.core.internal.config.b) k.this._configModelStore.getModel()).getAppId();
                     String id = k.this._subscriptionManager.getSubscriptions().getPush().getId();
@@ -1000,27 +1000,27 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                         if (bVar.sendIAMImpression(appId, id, str, messageId, tVar) == aVar) {
                             return aVar;
                         }
-                    } catch (C5040a unused) {
+                    } catch (C5041a unused) {
                         k.this.impressionedMessages.remove(tVar.$message.getMessageId());
-                        return u7.v.f41353a;
+                        return u7.v.f41073a;
                     }
                 } else {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     tVar = this;
                 }
                 k.this._prefs.setImpressionesMessagesId(k.this.impressionedMessages);
-            } catch (C5040a unused2) {
+            } catch (C5041a unused2) {
                 tVar = this;
             }
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((t) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((t) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
@@ -1039,7 +1039,7 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                 throw new ClassCastException();
             }
             invoke((O4.g) null);
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
 
         public final void invoke(O4.g it) {
@@ -1064,7 +1064,7 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                 throw new ClassCastException();
             }
             invoke((O4.g) null);
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
 
         public final void invoke(O4.g it) {
@@ -1077,21 +1077,21 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     public static final class w extends B7.h implements I7.l {
         int label;
 
-        public w(InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public w(InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return k.this.new w(interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return k.this.new w(interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 k kVar = k.this;
                 this.label = 1;
                 if (kVar.evaluateInAppMessages(this) == aVar) {
@@ -1101,35 +1101,35 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((w) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((w) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
     public static final class x extends B7.h implements I7.l {
         int label;
 
-        public x(InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public x(InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return k.this.new x(interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return k.this.new x(interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 k kVar = k.this;
                 this.label = 1;
                 if (kVar.evaluateInAppMessages(this) == aVar) {
@@ -1139,64 +1139,64 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((x) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((x) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
     public static final class y extends B7.h implements I7.l {
         int label;
 
-        public y(InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public y(InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return k.this.new y(interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return k.this.new y(interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             k.this._displayer.dismissCurrentInAppMessage();
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((y) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((y) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
     public static final class z extends B7.h implements I7.l {
         int label;
 
-        public z(InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public z(InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return k.this.new z(interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return k.this.new z(interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 k kVar = k.this;
                 this.label = 1;
                 if (kVar.evaluateInAppMessages(this) == aVar) {
@@ -1206,14 +1206,14 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((z) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((z) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
@@ -1294,79 +1294,79 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object attemptToShowInAppMessage(InterfaceC5267d interfaceC5267d) {
-        C4408a c4408a;
+    public final Object attemptToShowInAppMessage(InterfaceC5240d interfaceC5240d) {
+        C4423a c4423a;
         Object obj;
-        int i6;
+        int i4;
         k kVar;
         kotlin.jvm.internal.r rVar;
         a8.d dVar;
         kotlin.jvm.internal.r rVar2;
         Boolean bool;
-        if (interfaceC5267d instanceof C4408a) {
-            c4408a = (C4408a) interfaceC5267d;
-            int i9 = c4408a.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                c4408a.label = i9 - Integer.MIN_VALUE;
-                obj = c4408a.result;
-                A7.a aVar = A7.a.f58n;
-                i6 = c4408a.label;
-                u7.v vVar = u7.v.f41353a;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+        if (interfaceC5240d instanceof C4423a) {
+            c4423a = (C4423a) interfaceC5240d;
+            int i6 = c4423a.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                c4423a.label = i6 - Integer.MIN_VALUE;
+                obj = c4423a.result;
+                A7.a aVar = A7.a.f215n;
+                i4 = c4423a.label;
+                u7.v vVar = u7.v.f41073a;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     x4.f fVar = this._applicationService;
-                    c4408a.L$0 = this;
-                    c4408a.label = 1;
-                    obj = fVar.waitUntilSystemConditionsAvailable(c4408a);
+                    c4423a.L$0 = this;
+                    c4423a.label = 1;
+                    obj = fVar.waitUntilSystemConditionsAvailable(c4423a);
                     if (obj != aVar) {
                         kVar = this;
                     }
                 }
-                if (i6 != 1) {
-                    if (i6 != 2) {
-                        if (i6 != 3) {
-                            if (i6 == 4) {
-                                com.bumptech.glide.d.k(obj);
+                if (i4 != 1) {
+                    if (i4 != 2) {
+                        if (i4 != 3) {
+                            if (i4 == 4) {
+                                Q3.b.s(obj);
                                 return vVar;
                             }
-                            if (i6 != 5) {
+                            if (i4 != 5) {
                                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                             }
-                            com.bumptech.glide.d.k(obj);
+                            Q3.b.s(obj);
                             return vVar;
                         }
-                        rVar2 = (kotlin.jvm.internal.r) c4408a.L$1;
-                        kVar = (k) c4408a.L$0;
-                        com.bumptech.glide.d.k(obj);
+                        rVar2 = (kotlin.jvm.internal.r) c4423a.L$1;
+                        kVar = (k) c4423a.L$0;
+                        Q3.b.s(obj);
                         bool = (Boolean) obj;
                         if (bool != null) {
                             kVar._state.setInAppMessageIdShowing(null);
-                            Object obj2 = rVar2.f38717n;
+                            Object obj2 = rVar2.f38644n;
                             kotlin.jvm.internal.h.b(obj2);
-                            c4408a.L$0 = null;
-                            c4408a.L$1 = null;
-                            c4408a.label = 4;
-                            return kVar.queueMessageForDisplay((a) obj2, c4408a) == aVar ? aVar : vVar;
+                            c4423a.L$0 = null;
+                            c4423a.L$1 = null;
+                            c4423a.label = 4;
+                            return kVar.queueMessageForDisplay((a) obj2, c4423a) == aVar ? aVar : vVar;
                         }
                         if (bool.equals(Boolean.FALSE)) {
                             kVar._state.setInAppMessageIdShowing(null);
                             List<a> list = kVar.messages;
-                            Object obj3 = rVar2.f38717n;
+                            Object obj3 = rVar2.f38644n;
                             kotlin.jvm.internal.u.a(list);
                             list.remove(obj3);
-                            Object obj4 = rVar2.f38717n;
+                            Object obj4 = rVar2.f38644n;
                             kotlin.jvm.internal.h.b(obj4);
-                            c4408a.L$0 = null;
-                            c4408a.L$1 = null;
-                            c4408a.label = 5;
-                            if (kVar.messageWasDismissed((a) obj4, true, c4408a) == aVar) {
+                            c4423a.L$0 = null;
+                            c4423a.L$1 = null;
+                            c4423a.label = 5;
+                            if (kVar.messageWasDismissed((a) obj4, true, c4423a) == aVar) {
                             }
                         }
                     }
-                    ?? r32 = (InterfaceC0447a) c4408a.L$2;
-                    kotlin.jvm.internal.r rVar3 = (kotlin.jvm.internal.r) c4408a.L$1;
-                    k kVar2 = (k) c4408a.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    ?? r32 = (InterfaceC0451a) c4423a.L$2;
+                    kotlin.jvm.internal.r rVar3 = (kotlin.jvm.internal.r) c4423a.L$1;
+                    k kVar2 = (k) c4423a.L$0;
+                    Q3.b.s(obj);
                     rVar = rVar3;
                     dVar = r32;
                     kVar = kVar2;
@@ -1381,19 +1381,19 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                         } else {
                             com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.attemptToShowInAppMessage: No IAM showing currently, showing first item in the queue!", null, 2, null);
                             a remove = kVar.messageDisplayQueue.remove(0);
-                            rVar.f38717n = remove;
+                            rVar.f38644n = remove;
                             Y4.a aVar2 = kVar._state;
                             kotlin.jvm.internal.h.b(remove);
                             aVar2.setInAppMessageIdShowing(remove.getMessageId());
                         }
                         dVar.d(null);
-                        Object obj5 = rVar.f38717n;
+                        Object obj5 = rVar.f38644n;
                         if (obj5 != null) {
-                            c4408a.L$0 = kVar;
-                            c4408a.L$1 = rVar;
-                            c4408a.L$2 = null;
-                            c4408a.label = 3;
-                            Object displayMessage = kVar._displayer.displayMessage((a) obj5, c4408a);
+                            c4423a.L$0 = kVar;
+                            c4423a.L$1 = rVar;
+                            c4423a.L$2 = null;
+                            c4423a.label = 3;
+                            Object displayMessage = kVar._displayer.displayMessage((a) obj5, c4423a);
                             if (displayMessage != aVar) {
                                 rVar2 = rVar;
                                 obj = displayMessage;
@@ -1407,41 +1407,41 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                         throw th;
                     }
                 }
-                kVar = (k) c4408a.L$0;
-                com.bumptech.glide.d.k(obj);
+                kVar = (k) c4423a.L$0;
+                Q3.b.s(obj);
                 if (((Boolean) obj).booleanValue()) {
                     com.onesignal.debug.internal.logging.b.warn$default("InAppMessagesManager.attemptToShowInAppMessage: In app message not showing due to system condition not correct", null, 2, null);
                     return vVar;
                 }
                 rVar = new kotlin.jvm.internal.r();
-                InterfaceC0447a interfaceC0447a = kVar.messageDisplayQueueMutex;
-                c4408a.L$0 = kVar;
-                c4408a.L$1 = rVar;
-                c4408a.L$2 = interfaceC0447a;
-                c4408a.label = 2;
-                dVar = (a8.d) interfaceC0447a;
+                InterfaceC0451a interfaceC0451a = kVar.messageDisplayQueueMutex;
+                c4423a.L$0 = kVar;
+                c4423a.L$1 = rVar;
+                c4423a.L$2 = interfaceC0451a;
+                c4423a.label = 2;
+                dVar = (a8.d) interfaceC0451a;
             }
         }
-        c4408a = new C4408a(interfaceC5267d);
-        obj = c4408a.result;
-        A7.a aVar3 = A7.a.f58n;
-        i6 = c4408a.label;
-        u7.v vVar2 = u7.v.f41353a;
-        if (i6 != 0) {
+        c4423a = new C4423a(interfaceC5240d);
+        obj = c4423a.result;
+        A7.a aVar3 = A7.a.f215n;
+        i4 = c4423a.label;
+        u7.v vVar2 = u7.v.f41073a;
+        if (i4 != 0) {
         }
         if (((Boolean) obj).booleanValue()) {
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final Object beginProcessingPrompts(a aVar, List<? extends com.onesignal.inAppMessages.internal.prompt.impl.b> list, InterfaceC5267d interfaceC5267d) {
+    public final Object beginProcessingPrompts(a aVar, List<? extends com.onesignal.inAppMessages.internal.prompt.impl.b> list, InterfaceC5240d interfaceC5240d) {
         boolean isEmpty = list.isEmpty();
-        u7.v vVar = u7.v.f41353a;
+        u7.v vVar = u7.v.f41073a;
         if (!isEmpty) {
             com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.beginProcessingPrompts: IAM showing prompts from IAM: " + aVar, null, 2, null);
             this._displayer.dismissCurrentInAppMessage();
-            Object showMultiplePrompts = showMultiplePrompts(aVar, list, interfaceC5267d);
-            if (showMultiplePrompts == A7.a.f58n) {
+            Object showMultiplePrompts = showMultiplePrompts(aVar, list, interfaceC5240d);
+            if (showMultiplePrompts == A7.a.f215n) {
                 return showMultiplePrompts;
             }
         }
@@ -1455,21 +1455,21 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object evaluateInAppMessages(InterfaceC5267d interfaceC5267d) {
-        C4409b c4409b;
-        int i6;
+    public final Object evaluateInAppMessages(InterfaceC5240d interfaceC5240d) {
+        C4424b c4424b;
+        int i4;
         k kVar;
         Iterator it;
-        if (interfaceC5267d instanceof C4409b) {
-            c4409b = (C4409b) interfaceC5267d;
-            int i9 = c4409b.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                c4409b.label = i9 - Integer.MIN_VALUE;
-                Object obj = c4409b.result;
-                A7.a aVar = A7.a.f58n;
-                i6 = c4409b.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+        if (interfaceC5240d instanceof C4424b) {
+            c4424b = (C4424b) interfaceC5240d;
+            int i6 = c4424b.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                c4424b.label = i6 - Integer.MIN_VALUE;
+                Object obj = c4424b.result;
+                A7.a aVar = A7.a.f215n;
+                i4 = c4424b.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.evaluateInAppMessages()", null, 2, null);
                     ArrayList arrayList = new ArrayList();
                     synchronized (this.messages) {
@@ -1485,34 +1485,34 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                     kVar = this;
                     it = arrayList.iterator();
                 } else {
-                    if (i6 != 1) {
+                    if (i4 != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    it = (Iterator) c4409b.L$1;
-                    kVar = (k) c4409b.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    it = (Iterator) c4424b.L$1;
+                    kVar = (k) c4424b.L$0;
+                    Q3.b.s(obj);
                 }
                 while (it.hasNext()) {
                     a aVar3 = (a) it.next();
-                    c4409b.L$0 = kVar;
-                    c4409b.L$1 = it;
-                    c4409b.label = 1;
-                    if (kVar.queueMessageForDisplay(aVar3, c4409b) == aVar) {
+                    c4424b.L$0 = kVar;
+                    c4424b.L$1 = it;
+                    c4424b.label = 1;
+                    if (kVar.queueMessageForDisplay(aVar3, c4424b) == aVar) {
                         return aVar;
                     }
                 }
-                return u7.v.f41353a;
+                return u7.v.f41073a;
             }
         }
-        c4409b = new C4409b(interfaceC5267d);
-        Object obj2 = c4409b.result;
-        A7.a aVar4 = A7.a.f58n;
-        i6 = c4409b.label;
-        if (i6 != 0) {
+        c4424b = new C4424b(interfaceC5240d);
+        Object obj2 = c4424b.result;
+        A7.a aVar4 = A7.a.f215n;
+        i4 = c4424b.label;
+        if (i4 != 0) {
         }
         while (it.hasNext()) {
         }
-        return u7.v.f41353a;
+        return u7.v.f41073a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1521,56 +1521,56 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object fetchIvOrSaveRetry(String str, String str2, C4926b c4926b, I7.a aVar, InterfaceC5267d interfaceC5267d) {
-        C4410c c4410c;
-        int i6;
-        C4926b c4926b2;
+    public final Object fetchIvOrSaveRetry(String str, String str2, C4875b c4875b, I7.a aVar, InterfaceC5240d interfaceC5240d) {
+        C4425c c4425c;
+        int i4;
+        C4875b c4875b2;
         k kVar;
-        boolean z3;
+        boolean z6;
         String str3;
-        if (interfaceC5267d instanceof C4410c) {
-            c4410c = (C4410c) interfaceC5267d;
-            int i9 = c4410c.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                c4410c.label = i9 - Integer.MIN_VALUE;
-                C4410c c4410c2 = c4410c;
-                Object obj = c4410c2.result;
-                A7.a aVar2 = A7.a.f58n;
-                i6 = c4410c2.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+        if (interfaceC5240d instanceof C4425c) {
+            c4425c = (C4425c) interfaceC5240d;
+            int i6 = c4425c.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                c4425c.label = i6 - Integer.MIN_VALUE;
+                C4425c c4425c2 = c4425c;
+                Object obj = c4425c2.result;
+                A7.a aVar2 = A7.a.f215n;
+                i4 = c4425c2.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     boolean ivBehaviorActive = this._identityVerificationService.getIvBehaviorActive();
                     String externalId = ((U5.a) this._identityModelStore.getModel()).getExternalId();
-                    C5094l c5094l = (!ivBehaviorActive || externalId == null) ? new C5094l("onesignal_id", ((U5.a) this._identityModelStore.getModel()).getOnesignalId(), null) : new C5094l("external_id", externalId, this._jwtTokenStore.getJwt(externalId));
-                    String str4 = c5094l.f41341n;
-                    String str5 = c5094l.f41342u;
-                    String str6 = c5094l.f41343v;
+                    C5086l c5086l = (!ivBehaviorActive || externalId == null) ? new C5086l("onesignal_id", ((U5.a) this._identityModelStore.getModel()).getOnesignalId(), null) : new C5086l("external_id", externalId, this._jwtTokenStore.getJwt(externalId));
+                    String str4 = c5086l.f41061n;
+                    String str5 = c5086l.f41062u;
+                    String str6 = c5086l.f41063v;
                     if (!ivBehaviorActive || externalId == null) {
-                        c4926b2 = c4926b;
+                        c4875b2 = c4875b;
                     } else {
                         this.pendingJwtRetryExternalId = externalId;
-                        c4926b2 = c4926b;
-                        this.pendingJwtRetryRywData = c4926b2;
+                        c4875b2 = c4875b;
+                        this.pendingJwtRetryRywData = c4875b2;
                     }
                     try {
                         P4.b bVar = this._backend;
-                        c4410c2.L$0 = this;
-                        c4410c2.L$1 = externalId;
-                        c4410c2.Z$0 = ivBehaviorActive;
-                        c4410c2.label = 1;
-                        obj = bVar.listInAppMessagesIv(str, str4, str5, str2, c4926b2, aVar, str6, c4410c2);
+                        c4425c2.L$0 = this;
+                        c4425c2.L$1 = externalId;
+                        c4425c2.Z$0 = ivBehaviorActive;
+                        c4425c2.label = 1;
+                        obj = bVar.listInAppMessagesIv(str, str4, str5, str2, c4875b2, aVar, str6, c4425c2);
                         if (obj == aVar2) {
                             return aVar2;
                         }
                         kVar = this;
-                        z3 = ivBehaviorActive;
+                        z6 = ivBehaviorActive;
                         str3 = externalId;
-                    } catch (C5040a e9) {
+                    } catch (C5041a e9) {
                         e = e9;
                         kVar = this;
-                        z3 = ivBehaviorActive;
+                        z6 = ivBehaviorActive;
                         str3 = externalId;
-                        if (z3 || str3 == null) {
+                        if (z6 || str3 == null) {
                             com.onesignal.debug.internal.logging.b.warn$default("InAppMessagesManager: IAM fetch returned " + e.getStatusCode() + ": " + e.getResponse(), null, 2, null);
                         } else {
                             com.onesignal.debug.internal.logging.b.info$default("InAppMessagesManager: IAM fetch returned " + e.getStatusCode() + ", awaiting JWT refresh for " + str3, null, 2, null);
@@ -1579,17 +1579,17 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                         return null;
                     }
                 } else {
-                    if (i6 != 1) {
+                    if (i4 != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    z3 = c4410c2.Z$0;
-                    str3 = (String) c4410c2.L$1;
-                    kVar = (k) c4410c2.L$0;
+                    z6 = c4425c2.Z$0;
+                    str3 = (String) c4425c2.L$1;
+                    kVar = (k) c4425c2.L$0;
                     try {
-                        com.bumptech.glide.d.k(obj);
-                    } catch (C5040a e10) {
+                        Q3.b.s(obj);
+                    } catch (C5041a e10) {
                         e = e10;
-                        if (z3) {
+                        if (z6) {
                         }
                         com.onesignal.debug.internal.logging.b.warn$default("InAppMessagesManager: IAM fetch returned " + e.getStatusCode() + ": " + e.getResponse(), null, 2, null);
                         return null;
@@ -1601,12 +1601,12 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                 return list;
             }
         }
-        c4410c = new C4410c(interfaceC5267d);
-        C4410c c4410c22 = c4410c;
-        Object obj2 = c4410c22.result;
-        A7.a aVar22 = A7.a.f58n;
-        i6 = c4410c22.label;
-        if (i6 != 0) {
+        c4425c = new C4425c(interfaceC5240d);
+        C4425c c4425c22 = c4425c;
+        Object obj2 = c4425c22.result;
+        A7.a aVar22 = A7.a.f215n;
+        i4 = c4425c22.label;
+        if (i4 != 0) {
         }
         List list2 = (List) obj2;
         kVar.pendingJwtRetryExternalId = null;
@@ -1629,80 +1629,80 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object fetchMessages(C4926b c4926b, InterfaceC5267d interfaceC5267d) {
-        C4411d c4411d;
-        int i6;
+    public final Object fetchMessages(C4875b c4875b, InterfaceC5240d interfaceC5240d) {
+        C4426d c4426d;
+        int i4;
         String id;
-        InterfaceC0447a interfaceC0447a;
+        InterfaceC0451a interfaceC0451a;
         String str;
-        C4926b c4926b2;
+        C4875b c4875b2;
         k kVar;
         k kVar2;
         List<a> list;
         try {
-            if (interfaceC5267d instanceof C4411d) {
-                c4411d = (C4411d) interfaceC5267d;
-                int i9 = c4411d.label;
-                if ((i9 & Integer.MIN_VALUE) != 0) {
-                    c4411d.label = i9 - Integer.MIN_VALUE;
-                    C4411d c4411d2 = c4411d;
-                    Object obj = c4411d2.result;
-                    A7.a aVar = A7.a.f58n;
-                    i6 = c4411d2.label;
-                    if (i6 != 0) {
-                        com.bumptech.glide.d.k(obj);
+            if (interfaceC5240d instanceof C4426d) {
+                c4426d = (C4426d) interfaceC5240d;
+                int i6 = c4426d.label;
+                if ((i6 & Integer.MIN_VALUE) != 0) {
+                    c4426d.label = i6 - Integer.MIN_VALUE;
+                    C4426d c4426d2 = c4426d;
+                    Object obj = c4426d2.result;
+                    A7.a aVar = A7.a.f215n;
+                    i4 = c4426d2.label;
+                    if (i4 != 0) {
+                        Q3.b.s(obj);
                         if (!this._applicationService.isInForeground()) {
-                            return u7.v.f41353a;
+                            return u7.v.f41073a;
                         }
                         String appId = ((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getAppId();
                         id = this._subscriptionManager.getSubscriptions().getPush().getId();
                         if (id.length() == 0 || com.onesignal.common.d.INSTANCE.isLocalId(id) || appId.length() == 0) {
-                            return u7.v.f41353a;
+                            return u7.v.f41073a;
                         }
-                        InterfaceC0447a interfaceC0447a2 = this.fetchIAMMutex;
-                        c4411d2.L$0 = this;
-                        c4411d2.L$1 = c4926b;
-                        c4411d2.L$2 = appId;
-                        c4411d2.L$3 = id;
-                        c4411d2.L$4 = interfaceC0447a2;
-                        c4411d2.label = 1;
-                        a8.d dVar = (a8.d) interfaceC0447a2;
-                        if (dVar.c(c4411d2) != aVar) {
-                            interfaceC0447a = dVar;
+                        InterfaceC0451a interfaceC0451a2 = this.fetchIAMMutex;
+                        c4426d2.L$0 = this;
+                        c4426d2.L$1 = c4875b;
+                        c4426d2.L$2 = appId;
+                        c4426d2.L$3 = id;
+                        c4426d2.L$4 = interfaceC0451a2;
+                        c4426d2.label = 1;
+                        a8.d dVar = (a8.d) interfaceC0451a2;
+                        if (dVar.c(c4426d2) != aVar) {
+                            interfaceC0451a = dVar;
                             str = appId;
-                            c4926b2 = c4926b;
+                            c4875b2 = c4875b;
                             kVar = this;
                         }
                         return aVar;
                     }
-                    if (i6 == 1) {
-                        interfaceC0447a = (InterfaceC0447a) c4411d2.L$4;
-                        id = (String) c4411d2.L$3;
-                        String str2 = (String) c4411d2.L$2;
-                        C4926b c4926b3 = (C4926b) c4411d2.L$1;
-                        kVar = (k) c4411d2.L$0;
-                        com.bumptech.glide.d.k(obj);
+                    if (i4 == 1) {
+                        interfaceC0451a = (InterfaceC0451a) c4426d2.L$4;
+                        id = (String) c4426d2.L$3;
+                        String str2 = (String) c4426d2.L$2;
+                        C4875b c4875b3 = (C4875b) c4426d2.L$1;
+                        kVar = (k) c4426d2.L$0;
+                        Q3.b.s(obj);
                         str = str2;
-                        c4926b2 = c4926b3;
-                    } else if (i6 == 2) {
-                        kVar2 = (k) c4411d2.L$0;
-                        com.bumptech.glide.d.k(obj);
+                        c4875b2 = c4875b3;
+                    } else if (i4 == 2) {
+                        kVar2 = (k) c4426d2.L$0;
+                        Q3.b.s(obj);
                         list = (List) obj;
                         if (list != null) {
                         }
                     } else {
-                        if (i6 != 3) {
-                            if (i6 != 4) {
+                        if (i4 != 3) {
+                            if (i4 != 4) {
                                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                             }
-                            com.bumptech.glide.d.k(obj);
-                            return u7.v.f41353a;
+                            Q3.b.s(obj);
+                            return u7.v.f41073a;
                         }
-                        kVar2 = (k) c4411d2.L$0;
-                        com.bumptech.glide.d.k(obj);
+                        kVar2 = (k) c4426d2.L$0;
+                        Q3.b.s(obj);
                         list = (List) obj;
                         if (list != null) {
-                            return u7.v.f41353a;
+                            return u7.v.f41073a;
                         }
                         if ((list instanceof J7.a) && !(list instanceof J7.c)) {
                             kotlin.jvm.internal.u.d(list, "kotlin.collections.MutableList");
@@ -1728,29 +1728,29 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                                 throw th;
                             }
                         }
-                        c4411d2.L$0 = null;
-                        c4411d2.label = 4;
+                        c4426d2.L$0 = null;
+                        c4426d2.label = 4;
                     }
                     long currentTimeMillis = kVar._time.getCurrentTimeMillis();
                     if (kVar.lastTimeFetchedIAMs != null) {
                         Long l9 = kVar.lastTimeFetchedIAMs;
                         kotlin.jvm.internal.h.b(l9);
                         if (currentTimeMillis - l9.longValue() < ((com.onesignal.core.internal.config.b) kVar._configModelStore.getModel()).getFetchIAMMinInterval()) {
-                            return u7.v.f41353a;
+                            return u7.v.f41073a;
                         }
                     }
                     kVar.lastTimeFetchedIAMs = new Long(currentTimeMillis);
-                    ((a8.d) interfaceC0447a).d(null);
-                    C4412e c4412e = kVar.new C4412e();
+                    ((a8.d) interfaceC0451a).d(null);
+                    C4427e c4427e = kVar.new C4427e();
                     if (kVar._identityVerificationService.getNewCodePathsRun()) {
                         P4.b bVar = kVar._backend;
-                        c4411d2.L$0 = kVar;
-                        c4411d2.L$1 = null;
-                        c4411d2.L$2 = null;
-                        c4411d2.L$3 = null;
-                        c4411d2.L$4 = null;
-                        c4411d2.label = 3;
-                        obj = bVar.listInAppMessages(str, id, c4926b2, c4412e, c4411d2);
+                        c4426d2.L$0 = kVar;
+                        c4426d2.L$1 = null;
+                        c4426d2.L$2 = null;
+                        c4426d2.L$3 = null;
+                        c4426d2.L$4 = null;
+                        c4426d2.label = 3;
+                        obj = bVar.listInAppMessages(str, id, c4875b2, c4427e, c4426d2);
                         if (obj != aVar) {
                             kVar2 = kVar;
                             list = (List) obj;
@@ -1758,13 +1758,13 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                             }
                         }
                     } else {
-                        c4411d2.L$0 = kVar;
-                        c4411d2.L$1 = null;
-                        c4411d2.L$2 = null;
-                        c4411d2.L$3 = null;
-                        c4411d2.L$4 = null;
-                        c4411d2.label = 2;
-                        obj = kVar.fetchIvOrSaveRetry(str, id, c4926b2, c4412e, c4411d2);
+                        c4426d2.L$0 = kVar;
+                        c4426d2.L$1 = null;
+                        c4426d2.L$2 = null;
+                        c4426d2.L$3 = null;
+                        c4426d2.L$4 = null;
+                        c4426d2.label = 2;
+                        obj = kVar.fetchIvOrSaveRetry(str, id, c4875b2, c4427e, c4426d2);
                         if (obj != aVar) {
                             kVar2 = kVar;
                             list = (List) obj;
@@ -1779,20 +1779,20 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
             if (kVar.lastTimeFetchedIAMs != null) {
             }
             kVar.lastTimeFetchedIAMs = new Long(currentTimeMillis2);
-            ((a8.d) interfaceC0447a).d(null);
-            C4412e c4412e2 = kVar.new C4412e();
+            ((a8.d) interfaceC0451a).d(null);
+            C4427e c4427e2 = kVar.new C4427e();
             if (kVar._identityVerificationService.getNewCodePathsRun()) {
             }
             return aVar;
         } finally {
-            ((a8.d) interfaceC0447a).d(null);
+            ((a8.d) interfaceC0451a).d(null);
         }
-        c4411d = new C4411d(interfaceC5267d);
-        C4411d c4411d22 = c4411d;
-        Object obj2 = c4411d22.result;
-        A7.a aVar3 = A7.a.f58n;
-        i6 = c4411d22.label;
-        if (i6 != 0) {
+        c4426d = new C4426d(interfaceC5240d);
+        C4426d c4426d22 = c4426d;
+        Object obj2 = c4426d22.result;
+        A7.a aVar3 = A7.a.f215n;
+        i4 = c4426d22.label;
+        if (i4 != 0) {
         }
     }
 
@@ -1819,31 +1819,31 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object fireOutcomesForClick(String str, List<com.onesignal.inAppMessages.internal.f> list, InterfaceC5267d interfaceC5267d) {
+    public final Object fireOutcomesForClick(String str, List<com.onesignal.inAppMessages.internal.f> list, InterfaceC5240d interfaceC5240d) {
         g gVar;
-        int i6;
+        int i4;
         Iterator<com.onesignal.inAppMessages.internal.f> it;
         k kVar;
-        if (interfaceC5267d instanceof g) {
-            gVar = (g) interfaceC5267d;
-            int i9 = gVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                gVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof g) {
+            gVar = (g) interfaceC5240d;
+            int i6 = gVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                gVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = gVar.result;
-                A7.a aVar = A7.a.f58n;
-                i6 = gVar.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar = A7.a.f215n;
+                i4 = gVar.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     this._influenceManager.onDirectInfluenceFromIAM(str);
                     it = list.iterator();
                     kVar = this;
                 } else {
-                    if (i6 != 1 && i6 != 2 && i6 != 3) {
+                    if (i4 != 1 && i4 != 2 && i4 != 3) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     it = (Iterator) gVar.L$1;
                     kVar = (k) gVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 while (it.hasNext()) {
                     com.onesignal.inAppMessages.internal.f next = it.next();
@@ -1875,30 +1875,30 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                         }
                     }
                 }
-                return u7.v.f41353a;
+                return u7.v.f41073a;
             }
         }
-        gVar = new g(interfaceC5267d);
+        gVar = new g(interfaceC5240d);
         Object obj2 = gVar.result;
-        A7.a aVar2 = A7.a.f58n;
-        i6 = gVar.label;
-        if (i6 != 0) {
+        A7.a aVar2 = A7.a.f215n;
+        i4 = gVar.label;
+        if (i4 != 0) {
         }
         while (it.hasNext()) {
         }
-        return u7.v.f41353a;
+        return u7.v.f41073a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final Object firePublicClickHandler(a aVar, c cVar, InterfaceC5267d interfaceC5267d) {
+    public final Object firePublicClickHandler(a aVar, c cVar, InterfaceC5240d interfaceC5240d) {
         boolean hasSubscribers = this.messageClickCallback.getHasSubscribers();
-        u7.v vVar = u7.v.f41353a;
+        u7.v vVar = u7.v.f41073a;
         if (!hasSubscribers) {
             return vVar;
         }
         this._influenceManager.onDirectInfluenceFromIAM(aVar.getMessageId());
-        Object suspendingFireOnMain = this.messageClickCallback.suspendingFireOnMain(new h(new b(aVar, cVar), null), interfaceC5267d);
-        return suspendingFireOnMain == A7.a.f58n ? suspendingFireOnMain : vVar;
+        Object suspendingFireOnMain = this.messageClickCallback.suspendingFireOnMain(new h(new b(aVar, cVar), null), interfaceC5240d);
+        return suspendingFireOnMain == A7.a.f215n ? suspendingFireOnMain : vVar;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1913,25 +1913,25 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object fireRESTCallForClick(a aVar, c cVar, InterfaceC5267d interfaceC5267d) {
+    public final Object fireRESTCallForClick(a aVar, c cVar, InterfaceC5240d interfaceC5240d) {
         i iVar;
-        int i6;
+        int i4;
         String clickId;
         k kVar;
         a aVar2;
         String str;
-        if (interfaceC5267d instanceof i) {
-            iVar = (i) interfaceC5267d;
-            int i9 = iVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                iVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof i) {
+            iVar = (i) interfaceC5240d;
+            int i6 = iVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                iVar.label = i6 - Integer.MIN_VALUE;
                 i iVar2 = iVar;
                 Object obj = iVar2.result;
-                A7.a aVar3 = A7.a.f58n;
-                i6 = iVar2.label;
-                u7.v vVar = u7.v.f41353a;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar3 = A7.a.f215n;
+                i4 = iVar2.label;
+                u7.v vVar = u7.v.f41073a;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     String variantIdForMessage = Q4.a.INSTANCE.variantIdForMessage(aVar, this._languageContext);
                     if (variantIdForMessage != null) {
                         clickId = cVar.getClickId();
@@ -1957,7 +1957,7 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                                 return aVar3;
                             }
                             kVar = this;
-                        } catch (C5040a unused) {
+                        } catch (C5041a unused) {
                             kVar = this;
                             aVar2 = aVar;
                             str = clickId;
@@ -1972,17 +1972,17 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                     }
                     return vVar;
                 }
-                if (i6 != 1) {
+                if (i4 != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 str = (String) iVar2.L$2;
                 aVar2 = (a) iVar2.L$1;
                 kVar = (k) iVar2.L$0;
                 try {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     clickId = str;
                     aVar = aVar2;
-                } catch (C5040a unused2) {
+                } catch (C5041a unused2) {
                     Set<String> set22 = kVar.clickedClickIds;
                     kotlin.jvm.internal.u.a(set22);
                     set22.remove(str);
@@ -1994,13 +1994,13 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                 return vVar;
             }
         }
-        iVar = new i(interfaceC5267d);
+        iVar = new i(interfaceC5240d);
         i iVar22 = iVar;
         Object obj2 = iVar22.result;
-        A7.a aVar32 = A7.a.f58n;
-        i6 = iVar22.label;
-        u7.v vVar2 = u7.v.f41353a;
-        if (i6 != 0) {
+        A7.a aVar32 = A7.a.f215n;
+        i4 = iVar22.label;
+        u7.v vVar2 = u7.v.f41073a;
+        if (i4 != 0) {
         }
         kVar._prefs.setClickedMessagesId(kVar.clickedClickIds);
         return vVar2;
@@ -2012,23 +2012,23 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object fireRESTCallForPageChange(a aVar, com.onesignal.inAppMessages.internal.g gVar, InterfaceC5267d interfaceC5267d) {
+    public final Object fireRESTCallForPageChange(a aVar, com.onesignal.inAppMessages.internal.g gVar, InterfaceC5240d interfaceC5240d) {
         j jVar;
-        int i6;
+        int i4;
         String str;
         k kVar;
-        if (interfaceC5267d instanceof j) {
-            jVar = (j) interfaceC5267d;
-            int i9 = jVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                jVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof j) {
+            jVar = (j) interfaceC5240d;
+            int i6 = jVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                jVar.label = i6 - Integer.MIN_VALUE;
                 j jVar2 = jVar;
                 Object obj = jVar2.result;
-                A7.a aVar2 = A7.a.f58n;
-                i6 = jVar2.label;
-                u7.v vVar = u7.v.f41353a;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar2 = A7.a.f215n;
+                i4 = jVar2.label;
+                u7.v vVar = u7.v.f41073a;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     String variantIdForMessage = Q4.a.INSTANCE.variantIdForMessage(aVar, this._languageContext);
                     if (variantIdForMessage == null) {
                         return vVar;
@@ -2053,21 +2053,21 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                         }
                         str = str2;
                         kVar = this;
-                    } catch (C5040a unused) {
+                    } catch (C5041a unused) {
                         str = str2;
                         kVar = this;
                         kVar.viewedPageIds.remove(str);
                         return vVar;
                     }
                 } else {
-                    if (i6 != 1) {
+                    if (i4 != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     str = (String) jVar2.L$1;
                     kVar = (k) jVar2.L$0;
                     try {
-                        com.bumptech.glide.d.k(obj);
-                    } catch (C5040a unused2) {
+                        Q3.b.s(obj);
+                    } catch (C5041a unused2) {
                         kVar.viewedPageIds.remove(str);
                         return vVar;
                     }
@@ -2076,13 +2076,13 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                 return vVar;
             }
         }
-        jVar = new j(interfaceC5267d);
+        jVar = new j(interfaceC5240d);
         j jVar22 = jVar;
         Object obj2 = jVar22.result;
-        A7.a aVar22 = A7.a.f58n;
-        i6 = jVar22.label;
-        u7.v vVar2 = u7.v.f41353a;
-        if (i6 != 0) {
+        A7.a aVar22 = A7.a.f215n;
+        i4 = jVar22.label;
+        u7.v vVar2 = u7.v.f41073a;
+        if (i4 != 0) {
         }
         kVar._prefs.setViewPageImpressionedIds(kVar.viewedPageIds);
         return vVar2;
@@ -2124,13 +2124,13 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         }
     }
 
-    private final void makeRedisplayMessagesAvailableWithTriggers(Collection<String> collection, boolean z3) {
+    private final void makeRedisplayMessagesAvailableWithTriggers(Collection<String> collection, boolean z6) {
         synchronized (this.messages) {
             for (a aVar : this.messages) {
                 boolean contains = this.redisplayedInAppMessages.contains(aVar);
                 boolean isTriggerOnMessage = this._triggerController.isTriggerOnMessage(aVar, collection);
                 boolean messageHasOnlyDynamicTriggers = this._triggerController.messageHasOnlyDynamicTriggers(aVar);
-                if (!aVar.isTriggerChanged() && contains && (isTriggerOnMessage || (z3 && messageHasOnlyDynamicTriggers))) {
+                if (!aVar.isTriggerChanged() && contains && (isTriggerOnMessage || (z6 && messageHasOnlyDynamicTriggers))) {
                     com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.makeRedisplayMessagesAvailableWithTriggers: Trigger changed for message: " + aVar, null, 2, null);
                     aVar.setTriggerChanged(true);
                 }
@@ -2150,21 +2150,21 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object messageWasDismissed(a aVar, boolean z3, InterfaceC5267d interfaceC5267d) {
+    public final Object messageWasDismissed(a aVar, boolean z6, InterfaceC5240d interfaceC5240d) {
         l lVar;
-        int i6;
+        int i4;
         k kVar;
-        if (interfaceC5267d instanceof l) {
-            lVar = (l) interfaceC5267d;
-            int i9 = lVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                lVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof l) {
+            lVar = (l) interfaceC5240d;
+            int i6 = lVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                lVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = lVar.result;
-                A7.a aVar2 = A7.a.f58n;
-                i6 = lVar.label;
-                u7.v vVar = u7.v.f41353a;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar2 = A7.a.f215n;
+                i4 = lVar.label;
+                u7.v vVar = u7.v.f41073a;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     if (aVar.isPreview()) {
                         kVar = this;
                         kVar._influenceManager.onInAppMessageDismissed();
@@ -2196,7 +2196,7 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                         return aVar2;
                     }
                     this.dismissedMessages.add(aVar.getMessageId());
-                    if (!z3) {
+                    if (!z6) {
                         this._prefs.setDismissedMessagesId(this.dismissedMessages);
                         this._state.setLastTimeInAppDismissed(new Long(this._time.getCurrentTimeMillis()));
                         lVar.L$0 = this;
@@ -2205,20 +2205,20 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                     }
                     kVar = this;
                 } else {
-                    if (i6 != 1) {
-                        if (i6 == 2) {
-                            com.bumptech.glide.d.k(obj);
+                    if (i4 != 1) {
+                        if (i4 == 2) {
+                            Q3.b.s(obj);
                             return vVar;
                         }
-                        if (i6 != 3) {
+                        if (i4 != 3) {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                         return vVar;
                     }
                     aVar = (a) lVar.L$1;
                     kVar = (k) lVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.messageWasDismissed: dismissedMessages: " + kVar.dismissedMessages, null, 2, null);
                 kVar._influenceManager.onInAppMessageDismissed();
@@ -2226,12 +2226,12 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                 }
             }
         }
-        lVar = new l(interfaceC5267d);
+        lVar = new l(interfaceC5240d);
         Object obj2 = lVar.result;
-        A7.a aVar22 = A7.a.f58n;
-        i6 = lVar.label;
-        u7.v vVar2 = u7.v.f41353a;
-        if (i6 != 0) {
+        A7.a aVar22 = A7.a.f215n;
+        i4 = lVar.label;
+        u7.v vVar2 = u7.v.f41073a;
+        if (i4 != 0) {
         }
         com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.messageWasDismissed: dismissedMessages: " + kVar.dismissedMessages, null, 2, null);
         kVar._influenceManager.onInAppMessageDismissed();
@@ -2239,11 +2239,11 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         }
     }
 
-    public static /* synthetic */ Object messageWasDismissed$default(k kVar, a aVar, boolean z3, InterfaceC5267d interfaceC5267d, int i6, Object obj) {
-        if ((i6 & 2) != 0) {
-            z3 = false;
+    public static /* synthetic */ Object messageWasDismissed$default(k kVar, a aVar, boolean z6, InterfaceC5240d interfaceC5240d, int i4, Object obj) {
+        if ((i4 & 2) != 0) {
+            z6 = false;
         }
-        return kVar.messageWasDismissed(aVar, z3, interfaceC5267d);
+        return kVar.messageWasDismissed(aVar, z6, interfaceC5240d);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -2254,21 +2254,21 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object persistInAppMessage(a aVar, InterfaceC5267d interfaceC5267d) {
+    public final Object persistInAppMessage(a aVar, InterfaceC5240d interfaceC5240d) {
         A a9;
-        int i6;
+        int i4;
         k kVar;
         int indexOf;
-        if (interfaceC5267d instanceof A) {
-            a9 = (A) interfaceC5267d;
-            int i9 = a9.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                a9.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof A) {
+            a9 = (A) interfaceC5240d;
+            int i6 = a9.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                a9.label = i6 - Integer.MIN_VALUE;
                 Object obj = a9.result;
-                A7.a aVar2 = A7.a.f58n;
-                i6 = a9.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar2 = A7.a.f215n;
+                i4 = a9.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     aVar.getRedisplayStats().setLastDisplayTime(this._time.getCurrentTimeMillis() / 1000);
                     aVar.getRedisplayStats().incrementDisplayQuantity();
                     aVar.setTriggerChanged(false);
@@ -2282,12 +2282,12 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                     }
                     kVar = this;
                 } else {
-                    if (i6 != 1) {
+                    if (i4 != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     aVar = (a) a9.L$1;
                     kVar = (k) a9.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 kVar._prefs.setLastTimeInAppDismissed(kVar._state.getLastTimeInAppDismissed());
                 indexOf = kVar.redisplayedInAppMessages.indexOf(aVar);
@@ -2297,21 +2297,21 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                     kVar.redisplayedInAppMessages.add(aVar);
                 }
                 com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.persistInAppMessage: " + aVar + " with msg array data: " + kVar.redisplayedInAppMessages, null, 2, null);
-                return u7.v.f41353a;
+                return u7.v.f41073a;
             }
         }
-        a9 = new A(interfaceC5267d);
+        a9 = new A(interfaceC5240d);
         Object obj2 = a9.result;
-        A7.a aVar22 = A7.a.f58n;
-        i6 = a9.label;
-        if (i6 != 0) {
+        A7.a aVar22 = A7.a.f215n;
+        i4 = a9.label;
+        if (i4 != 0) {
         }
         kVar._prefs.setLastTimeInAppDismissed(kVar._state.getLastTimeInAppDismissed());
         indexOf = kVar.redisplayedInAppMessages.indexOf(aVar);
         if (indexOf == -1) {
         }
         com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.persistInAppMessage: " + aVar + " with msg array data: " + kVar.redisplayedInAppMessages, null, 2, null);
-        return u7.v.f41353a;
+        return u7.v.f41073a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -2326,44 +2326,44 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object queueMessageForDisplay(a aVar, InterfaceC5267d interfaceC5267d) {
+    public final Object queueMessageForDisplay(a aVar, InterfaceC5240d interfaceC5240d) {
         B b9;
-        int i6;
+        int i4;
         a8.d dVar;
         k kVar;
         try {
-            if (interfaceC5267d instanceof B) {
-                b9 = (B) interfaceC5267d;
-                int i9 = b9.label;
-                if ((i9 & Integer.MIN_VALUE) != 0) {
-                    b9.label = i9 - Integer.MIN_VALUE;
+            if (interfaceC5240d instanceof B) {
+                b9 = (B) interfaceC5240d;
+                int i6 = b9.label;
+                if ((i6 & Integer.MIN_VALUE) != 0) {
+                    b9.label = i6 - Integer.MIN_VALUE;
                     Object obj = b9.result;
-                    A7.a aVar2 = A7.a.f58n;
-                    i6 = b9.label;
-                    if (i6 != 0) {
-                        com.bumptech.glide.d.k(obj);
-                        InterfaceC0447a interfaceC0447a = this.messageDisplayQueueMutex;
+                    A7.a aVar2 = A7.a.f215n;
+                    i4 = b9.label;
+                    if (i4 != 0) {
+                        Q3.b.s(obj);
+                        InterfaceC0451a interfaceC0451a = this.messageDisplayQueueMutex;
                         b9.L$0 = this;
                         b9.L$1 = aVar;
-                        b9.L$2 = interfaceC0447a;
+                        b9.L$2 = interfaceC0451a;
                         b9.label = 1;
-                        dVar = (a8.d) interfaceC0447a;
+                        dVar = (a8.d) interfaceC0451a;
                         if (dVar.c(b9) != aVar2) {
                             kVar = this;
                         }
                         return aVar2;
                     }
-                    if (i6 != 1) {
-                        if (i6 != 2) {
+                    if (i4 != 1) {
+                        if (i4 != 2) {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
-                        com.bumptech.glide.d.k(obj);
-                        return u7.v.f41353a;
+                        Q3.b.s(obj);
+                        return u7.v.f41073a;
                     }
-                    ?? r9 = (InterfaceC0447a) b9.L$2;
+                    ?? r9 = (InterfaceC0451a) b9.L$2;
                     a aVar3 = (a) b9.L$1;
                     kVar = (k) b9.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     dVar = r9;
                     aVar = aVar3;
                     if (!kVar.messageDisplayQueue.contains(aVar) && !kotlin.jvm.internal.h.a(kVar._state.getInAppMessageIdShowing(), aVar.getMessageId())) {
@@ -2390,11 +2390,11 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
             dVar.d(null);
             throw th;
         }
-        b9 = new B(interfaceC5267d);
+        b9 = new B(interfaceC5240d);
         Object obj2 = b9.result;
-        A7.a aVar22 = A7.a.f58n;
-        i6 = b9.label;
-        if (i6 != 0) {
+        A7.a aVar22 = A7.a.f215n;
+        i4 = b9.label;
+        if (i4 != 0) {
         }
     }
 
@@ -2426,14 +2426,14 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
         kotlin.jvm.internal.h.d(string2, "getString(...)");
         new AlertDialog.Builder(this._applicationService.getCurrent()).setTitle(string).setMessage(string2).setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() { // from class: com.onesignal.inAppMessages.internal.j
             @Override // android.content.DialogInterface.OnClickListener
-            public final void onClick(DialogInterface dialogInterface, int i6) {
-                k.showAlertDialogMessage$lambda$11(k.this, aVar, list, dialogInterface, i6);
+            public final void onClick(DialogInterface dialogInterface, int i4) {
+                k.showAlertDialogMessage$lambda$11(k.this, aVar, list, dialogInterface, i4);
             }
         }).show();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final void showAlertDialogMessage$lambda$11(k this$0, a inAppMessage, List prompts, DialogInterface dialogInterface, int i6) {
+    public static final void showAlertDialogMessage$lambda$11(k this$0, a inAppMessage, List prompts, DialogInterface dialogInterface, int i4) {
         kotlin.jvm.internal.h.e(this$0, "this$0");
         kotlin.jvm.internal.h.e(inAppMessage, "$inAppMessage");
         kotlin.jvm.internal.h.e(prompts, "$prompts");
@@ -2449,31 +2449,31 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object showMultiplePrompts(a aVar, List<? extends com.onesignal.inAppMessages.internal.prompt.impl.b> list, InterfaceC5267d interfaceC5267d) {
-        D d2;
-        k kVar;
-        int i6;
-        Iterator<? extends com.onesignal.inAppMessages.internal.prompt.impl.b> it;
+    public final Object showMultiplePrompts(a aVar, List<? extends com.onesignal.inAppMessages.internal.prompt.impl.b> list, InterfaceC5240d interfaceC5240d) {
         D d9;
+        k kVar;
+        int i4;
+        Iterator<? extends com.onesignal.inAppMessages.internal.prompt.impl.b> it;
+        D d10;
         k kVar2;
         a aVar2;
         List<? extends com.onesignal.inAppMessages.internal.prompt.impl.b> list2;
         a aVar3;
         k kVar3;
-        if (interfaceC5267d instanceof D) {
-            d2 = (D) interfaceC5267d;
-            int i9 = d2.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                d2.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof D) {
+            d9 = (D) interfaceC5240d;
+            int i6 = d9.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                d9.label = i6 - Integer.MIN_VALUE;
                 kVar = this;
-                Object obj = d2.result;
-                A7.a aVar4 = A7.a.f58n;
-                i6 = d2.label;
-                u7.v vVar = u7.v.f41353a;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                Object obj = d9.result;
+                A7.a aVar4 = A7.a.f215n;
+                i4 = d9.label;
+                u7.v vVar = u7.v.f41073a;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     it = list.iterator();
-                    d9 = d2;
+                    d10 = d9;
                     kVar2 = kVar;
                     aVar2 = aVar;
                     list2 = list;
@@ -2485,19 +2485,19 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                     }
                     return vVar;
                 }
-                if (i6 != 1) {
-                    if (i6 != 2) {
+                if (i4 != 1) {
+                    if (i4 != 2) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     return vVar;
                 }
-                Iterator<? extends com.onesignal.inAppMessages.internal.prompt.impl.b> it2 = (Iterator) d2.L$3;
-                List<? extends com.onesignal.inAppMessages.internal.prompt.impl.b> list3 = (List) d2.L$2;
-                a aVar5 = (a) d2.L$1;
-                kVar2 = (k) d2.L$0;
-                com.bumptech.glide.d.k(obj);
-                d9 = d2;
+                Iterator<? extends com.onesignal.inAppMessages.internal.prompt.impl.b> it2 = (Iterator) d9.L$3;
+                List<? extends com.onesignal.inAppMessages.internal.prompt.impl.b> list3 = (List) d9.L$2;
+                a aVar5 = (a) d9.L$1;
+                kVar2 = (k) d9.L$0;
+                Q3.b.s(obj);
+                d10 = d9;
                 list2 = list3;
                 it = it2;
                 b.a aVar6 = (b.a) obj;
@@ -2522,12 +2522,12 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                         currentPrompt.setPrompted(true);
                         com.onesignal.inAppMessages.internal.prompt.impl.b currentPrompt2 = kVar2._state.getCurrentPrompt();
                         kotlin.jvm.internal.h.b(currentPrompt2);
-                        d9.L$0 = kVar2;
-                        d9.L$1 = aVar2;
-                        d9.L$2 = list2;
-                        d9.L$3 = it;
-                        d9.label = 1;
-                        Object handlePrompt = currentPrompt2.handlePrompt(d9);
+                        d10.L$0 = kVar2;
+                        d10.L$1 = aVar2;
+                        d10.L$2 = list2;
+                        d10.L$3 = it;
+                        d10.label = 1;
+                        Object handlePrompt = currentPrompt2.handlePrompt(d10);
                         if (handlePrompt != aVar4) {
                             aVar5 = aVar2;
                             obj = handlePrompt;
@@ -2547,12 +2547,12 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
                 kVar3 = kVar2;
                 if (kVar3._state.getCurrentPrompt() == null) {
                     com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.showMultiplePrompts: No IAM prompt to handle, dismiss message: " + aVar3.getMessageId(), null, 2, null);
-                    d9.L$0 = null;
-                    d9.L$1 = null;
-                    d9.L$2 = null;
-                    d9.L$3 = null;
-                    d9.label = 2;
-                    if (messageWasDismissed$default(kVar3, aVar3, false, d9, 2, null) == aVar4) {
+                    d10.L$0 = null;
+                    d10.L$1 = null;
+                    d10.L$2 = null;
+                    d10.L$3 = null;
+                    d10.label = 2;
+                    if (messageWasDismissed$default(kVar3, aVar3, false, d10, 2, null) == aVar4) {
                         return aVar4;
                     }
                 }
@@ -2560,18 +2560,18 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
             }
         }
         kVar = this;
-        d2 = kVar.new D(interfaceC5267d);
-        Object obj2 = d2.result;
-        A7.a aVar42 = A7.a.f58n;
-        i6 = d2.label;
-        u7.v vVar2 = u7.v.f41353a;
-        if (i6 != 0) {
+        d9 = kVar.new D(interfaceC5240d);
+        Object obj2 = d9.result;
+        A7.a aVar42 = A7.a.f215n;
+        i4 = d9.label;
+        u7.v vVar2 = u7.v.f41073a;
+        if (i4 != 0) {
         }
     }
 
     @Override // O4.j
     /* renamed from: addClickListener */
-    public void mo21addClickListener(O4.c listener) {
+    public void mo20addClickListener(O4.c listener) {
         kotlin.jvm.internal.h.e(listener, "listener");
         com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.addClickListener(listener: " + listener + ')', null, 2, null);
         this.messageClickCallback.subscribe(listener);
@@ -2579,7 +2579,7 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
 
     @Override // O4.j
     /* renamed from: addLifecycleListener */
-    public void mo22addLifecycleListener(O4.g listener) {
+    public void mo21addLifecycleListener(O4.g listener) {
         kotlin.jvm.internal.h.e(listener, "listener");
         com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.addLifecycleListener(listener: " + listener + ')', null, 2, null);
         this.lifecycleCallback.subscribe(listener);
@@ -2587,7 +2587,7 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
 
     @Override // O4.j
     /* renamed from: addTrigger */
-    public void mo23addTrigger(String key, String value) {
+    public void mo22addTrigger(String key, String value) {
         kotlin.jvm.internal.h.e(key, "key");
         kotlin.jvm.internal.h.e(value, "value");
         com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.addTrigger(key: " + key + ", value: " + value + ')', null, 2, null);
@@ -2611,17 +2611,17 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
 
     @Override // O4.j
     /* renamed from: addTriggers */
-    public void mo24addTriggers(Map<String, String> triggers) {
+    public void mo23addTriggers(Map<String, String> triggers) {
         kotlin.jvm.internal.h.e(triggers, "triggers");
         com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.addTriggers(triggers: " + triggers + ')', null, 2, null);
         for (Map.Entry<String, String> entry : triggers.entrySet()) {
-            mo23addTrigger(entry.getKey(), entry.getValue());
+            mo22addTrigger(entry.getKey(), entry.getValue());
         }
     }
 
     @Override // O4.j
     /* renamed from: clearTriggers */
-    public void mo25clearTriggers() {
+    public void mo24clearTriggers() {
         com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.clearTriggers()", null, 2, null);
         synchronized (this.earlySessionTriggers) {
             if (!this.hasCompletedFirstFetch) {
@@ -2637,21 +2637,21 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     }
 
     @Override // x4.e
-    public void onFocus(boolean z3) {
+    public void onFocus(boolean z6) {
     }
 
     @Override // com.onesignal.user.internal.jwt.a
     public void onJwtUpdated(String externalId) {
         kotlin.jvm.internal.h.e(externalId, "externalId");
         String str = this.pendingJwtRetryExternalId;
-        C4926b c4926b = this.pendingJwtRetryRywData;
-        if (str == null || !str.equals(externalId) || c4926b == null) {
+        C4875b c4875b = this.pendingJwtRetryRywData;
+        if (str == null || !str.equals(externalId) || c4875b == null) {
             return;
         }
         this.pendingJwtRetryExternalId = null;
         this.pendingJwtRetryRywData = null;
-        com.onesignal.debug.internal.logging.b.info$default(D.y.o("InAppMessagesManager: JWT refreshed for ", externalId, ", retrying IAM fetch"), null, 2, null);
-        com.onesignal.common.threading.c.suspendifyOnIO(new n(c4926b, null));
+        com.onesignal.debug.internal.logging.b.info$default(D.x.l("InAppMessagesManager: JWT refreshed for ", externalId, ", retrying IAM fetch"), null, 2, null);
+        com.onesignal.common.threading.c.suspendifyOnIO(new n(c4875b, null));
     }
 
     @Override // T4.a
@@ -2727,7 +2727,7 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     public void onModelUpdated(com.onesignal.common.modeling.j args, String tag) {
         kotlin.jvm.internal.h.e(args, "args");
         kotlin.jvm.internal.h.e(tag, "tag");
-        if (kotlin.jvm.internal.h.a(args.getProperty(), com.anythink.expressad.videocommon.e.b.f22407u)) {
+        if (kotlin.jvm.internal.h.a(args.getProperty(), com.anythink.expressad.videocommon.e.b.f23194u)) {
             fetchMessagesWhenConditionIsMet();
         }
     }
@@ -2758,7 +2758,7 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     public void onSubscriptionChanged(b6.e subscription, com.onesignal.common.modeling.j args) {
         kotlin.jvm.internal.h.e(subscription, "subscription");
         kotlin.jvm.internal.h.e(args, "args");
-        if ((subscription instanceof InterfaceC0520b) && kotlin.jvm.internal.h.a(args.getPath(), "id")) {
+        if ((subscription instanceof InterfaceC0528b) && kotlin.jvm.internal.h.a(args.getPath(), "id")) {
             fetchMessagesWhenConditionIsMet();
         }
     }
@@ -2772,7 +2772,7 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     public void onTriggerChanged(String newTriggerKey) {
         kotlin.jvm.internal.h.e(newTriggerKey, "newTriggerKey");
         com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.onTriggerChanged(newTriggerKey: " + newTriggerKey + ')', null, 2, null);
-        makeRedisplayMessagesAvailableWithTriggers(d6.c.k(newTriggerKey), true);
+        makeRedisplayMessagesAvailableWithTriggers(Z2.d.n(newTriggerKey), true);
         com.onesignal.common.threading.c.suspendifyOnDefault(new w(null));
     }
 
@@ -2787,7 +2787,7 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
     public void onTriggerConditionChanged(String triggerId) {
         kotlin.jvm.internal.h.e(triggerId, "triggerId");
         com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.onTriggerConditionChanged()", null, 2, null);
-        makeRedisplayMessagesAvailableWithTriggers(d6.c.k(triggerId), false);
+        makeRedisplayMessagesAvailableWithTriggers(Z2.d.n(triggerId), false);
         com.onesignal.common.threading.c.suspendifyOnDefault(new x(null));
     }
 
@@ -2797,7 +2797,7 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
 
     @Override // O4.j
     /* renamed from: removeClickListener */
-    public void mo26removeClickListener(O4.c listener) {
+    public void mo25removeClickListener(O4.c listener) {
         kotlin.jvm.internal.h.e(listener, "listener");
         com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.removeClickListener(listener: " + listener + ')', null, 2, null);
         this.messageClickCallback.unsubscribe(listener);
@@ -2805,7 +2805,7 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
 
     @Override // O4.j
     /* renamed from: removeLifecycleListener */
-    public void mo27removeLifecycleListener(O4.g listener) {
+    public void mo26removeLifecycleListener(O4.g listener) {
         kotlin.jvm.internal.h.e(listener, "listener");
         com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.removeLifecycleListener(listener: " + listener + ')', null, 2, null);
         this.lifecycleCallback.unsubscribe(listener);
@@ -2813,7 +2813,7 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
 
     @Override // O4.j
     /* renamed from: removeTrigger */
-    public void mo28removeTrigger(String key) {
+    public void mo27removeTrigger(String key) {
         kotlin.jvm.internal.h.e(key, "key");
         com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.removeTrigger(key: " + key + ')', null, 2, null);
         synchronized (this.earlySessionTriggers) {
@@ -2826,23 +2826,23 @@ public final class k implements O4.j, com.onesignal.core.internal.startup.b, Z5.
 
     @Override // O4.j
     /* renamed from: removeTriggers */
-    public void mo29removeTriggers(Collection<String> keys) {
+    public void mo28removeTriggers(Collection<String> keys) {
         kotlin.jvm.internal.h.e(keys, "keys");
         com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.removeTriggers(keys: " + keys + ')', null, 2, null);
         Iterator<T> it = keys.iterator();
         while (it.hasNext()) {
-            mo28removeTrigger((String) it.next());
+            mo27removeTrigger((String) it.next());
         }
     }
 
     @Override // O4.j
-    public void setPaused(boolean z3) {
-        com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.setPaused(value: " + z3 + ')', null, 2, null);
-        this._state.setPaused(z3);
-        if (z3 && this._state.getInAppMessageIdShowing() != null) {
+    public void setPaused(boolean z6) {
+        com.onesignal.debug.internal.logging.b.debug$default("InAppMessagesManager.setPaused(value: " + z6 + ')', null, 2, null);
+        this._state.setPaused(z6);
+        if (z6 && this._state.getInAppMessageIdShowing() != null) {
             com.onesignal.common.threading.c.suspendifyOnMain(new y(null));
         }
-        if (z3) {
+        if (z6) {
             return;
         }
         com.onesignal.common.threading.c.suspendifyOnDefault(new z(null));

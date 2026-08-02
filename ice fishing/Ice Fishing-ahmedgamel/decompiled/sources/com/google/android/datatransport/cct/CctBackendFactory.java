@@ -1,14 +1,14 @@
 package com.google.android.datatransport.cct;
 
-import X1.c;
-import a2.AbstractC0431c;
-import a2.C0430b;
-import a2.g;
+import Z1.c;
+import c2.AbstractC0548c;
+import c2.C0547b;
+import c2.f;
 
 /* loaded from: classes.dex */
 public class CctBackendFactory {
-    public g create(AbstractC0431c abstractC0431c) {
-        C0430b c0430b = (C0430b) abstractC0431c;
-        return new c(c0430b.f4316a, c0430b.f4317b, c0430b.f4318c);
+    public f create(AbstractC0548c abstractC0548c) {
+        C0547b c0547b = (C0547b) abstractC0548c;
+        return new c(c0547b.f5711a, c0547b.f5712b, c0547b.f5713c);
     }
 }

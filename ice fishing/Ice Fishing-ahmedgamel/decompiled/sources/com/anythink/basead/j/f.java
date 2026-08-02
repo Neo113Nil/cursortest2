@@ -10,31 +10,31 @@ import com.anythink.core.common.h.x;
 public class f {
 
     /* renamed from: a, reason: collision with root package name */
-    private static volatile f f9121a;
+    private static volatile f f9907a;
 
     /* renamed from: b, reason: collision with root package name */
-    private c f9122b;
+    private c f9908b;
 
     private f() {
     }
 
     public static f a() {
-        if (f9121a == null) {
+        if (f9907a == null) {
             synchronized (f.class) {
                 try {
-                    if (f9121a == null) {
-                        f9121a = new f();
+                    if (f9907a == null) {
+                        f9907a = new f();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f9121a;
+        return f9907a;
     }
 
     public final boolean b() {
-        c cVar = this.f9122b;
+        c cVar = this.f9908b;
         if (cVar != null) {
             return cVar.a();
         }
@@ -42,7 +42,7 @@ public class f {
     }
 
     public final String c() {
-        return b() ? this.f9122b.b() : "";
+        return b() ? this.f9908b.b() : "";
     }
 
     private static boolean b(w wVar, x xVar) {
@@ -50,27 +50,27 @@ public class f {
     }
 
     public final void a(c cVar) {
-        this.f9122b = cVar;
+        this.f9908b = cVar;
     }
 
     public final String a(String str, w wVar, x xVar) {
-        return (b() && b(wVar, xVar)) ? this.f9122b.a(str, wVar, xVar) : str;
+        return (b() && b(wVar, xVar)) ? this.f9908b.a(str, wVar, xVar) : str;
     }
 
     public final boolean a(w wVar, x xVar) {
         return b() && !TextUtils.isEmpty(wVar.av()) && b(wVar, xVar);
     }
 
-    public final b a(Context context, boolean z3, w wVar, x xVar) {
+    public final b a(Context context, boolean z6, w wVar, x xVar) {
         if (b()) {
-            return this.f9122b.a(context, z3, wVar, xVar);
+            return this.f9908b.a(context, z6, wVar, xVar);
         }
         return null;
     }
 
     public final b a(Context context, WebView webView, w wVar, x xVar) {
         if (b()) {
-            return this.f9122b.a(context, webView, wVar, xVar);
+            return this.f9908b.a(context, webView, wVar, xVar);
         }
         return null;
     }

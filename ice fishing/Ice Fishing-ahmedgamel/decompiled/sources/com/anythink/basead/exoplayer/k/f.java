@@ -6,42 +6,42 @@ import android.os.SystemClock;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    private boolean f8388a;
+    private boolean f9174a;
 
     public final synchronized boolean a() {
-        if (this.f8388a) {
+        if (this.f9174a) {
             return false;
         }
-        this.f8388a = true;
+        this.f9174a = true;
         notifyAll();
         return true;
     }
 
     public final synchronized boolean b() {
-        boolean z3;
-        z3 = this.f8388a;
-        this.f8388a = false;
-        return z3;
+        boolean z6;
+        z6 = this.f9174a;
+        this.f9174a = false;
+        return z6;
     }
 
     public final synchronized void c() {
-        while (!this.f8388a) {
+        while (!this.f9174a) {
             wait();
         }
     }
 
     private synchronized boolean a(long j6) {
-        boolean z3;
+        boolean z6;
         long elapsedRealtime = SystemClock.elapsedRealtime();
         long j9 = j6 + elapsedRealtime;
         while (true) {
-            z3 = this.f8388a;
-            if (z3 || elapsedRealtime >= j9) {
+            z6 = this.f9174a;
+            if (z6 || elapsedRealtime >= j9) {
                 break;
             }
             wait(j9 - elapsedRealtime);
             elapsedRealtime = SystemClock.elapsedRealtime();
         }
-        return z3;
+        return z6;
     }
 }

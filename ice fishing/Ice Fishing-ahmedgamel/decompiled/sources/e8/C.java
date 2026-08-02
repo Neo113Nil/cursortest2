@@ -1,32 +1,32 @@
 package e8;
 
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.List;
-import v7.C5135p;
+import v7.C5125p;
 
 /* loaded from: classes2.dex */
 public abstract class C implements c8.e {
 
     /* renamed from: a, reason: collision with root package name */
-    public final c8.e f37243a;
+    public final c8.e f37319a;
 
     public C(c8.e eVar) {
-        this.f37243a = eVar;
+        this.f37319a = eVar;
     }
 
     @Override // c8.e
     public final int c(String name) {
         kotlin.jvm.internal.h.e(name, "name");
-        Integer S8 = Q7.q.S(name);
-        if (S8 != null) {
-            return S8.intValue();
+        Integer i02 = Q7.q.i0(name);
+        if (i02 != null) {
+            return i02.intValue();
         }
         throw new IllegalArgumentException(name.concat(" is not a valid list index"));
     }
 
     @Override // c8.e
-    public final t8.g d() {
-        return c8.i.f5652c;
+    public final com.bumptech.glide.h d() {
+        return c8.i.f5828c;
     }
 
     @Override // c8.e
@@ -42,7 +42,7 @@ public abstract class C implements c8.e {
             return false;
         }
         C c9 = (C) obj;
-        return kotlin.jvm.internal.h.a(this.f37243a, c9.f37243a) && kotlin.jvm.internal.h.a(a(), c9.a());
+        return kotlin.jvm.internal.h.a(this.f37319a, c9.f37319a) && kotlin.jvm.internal.h.a(a(), c9.a());
     }
 
     @Override // c8.e
@@ -57,33 +57,33 @@ public abstract class C implements c8.e {
 
     @Override // c8.e
     public final List getAnnotations() {
-        return C5135p.f41442n;
+        return C5125p.f41221n;
     }
 
     @Override // c8.e
     public final List h(int i) {
         if (i >= 0) {
-            return C5135p.f41442n;
+            return C5125p.f41221n;
         }
-        StringBuilder i6 = AbstractC4404f.i(i, "Illegal index ", ", ");
-        i6.append(a());
-        i6.append(" expects only non-negative indices");
-        throw new IllegalArgumentException(i6.toString().toString());
+        StringBuilder k9 = Wv.k(i, "Illegal index ", ", ");
+        k9.append(a());
+        k9.append(" expects only non-negative indices");
+        throw new IllegalArgumentException(k9.toString().toString());
     }
 
     public final int hashCode() {
-        return a().hashCode() + (this.f37243a.hashCode() * 31);
+        return a().hashCode() + (this.f37319a.hashCode() * 31);
     }
 
     @Override // c8.e
     public final c8.e i(int i) {
         if (i >= 0) {
-            return this.f37243a;
+            return this.f37319a;
         }
-        StringBuilder i6 = AbstractC4404f.i(i, "Illegal index ", ", ");
-        i6.append(a());
-        i6.append(" expects only non-negative indices");
-        throw new IllegalArgumentException(i6.toString().toString());
+        StringBuilder k9 = Wv.k(i, "Illegal index ", ", ");
+        k9.append(a());
+        k9.append(" expects only non-negative indices");
+        throw new IllegalArgumentException(k9.toString().toString());
     }
 
     @Override // c8.e
@@ -91,14 +91,14 @@ public abstract class C implements c8.e {
         if (i >= 0) {
             return false;
         }
-        StringBuilder i6 = AbstractC4404f.i(i, "Illegal index ", ", ");
-        i6.append(a());
-        i6.append(" expects only non-negative indices");
-        throw new IllegalArgumentException(i6.toString().toString());
+        StringBuilder k9 = Wv.k(i, "Illegal index ", ", ");
+        k9.append(a());
+        k9.append(" expects only non-negative indices");
+        throw new IllegalArgumentException(k9.toString().toString());
     }
 
     public final String toString() {
-        return a() + '(' + this.f37243a + ')';
+        return a() + '(' + this.f37319a + ')';
     }
 
     @Override // c8.e

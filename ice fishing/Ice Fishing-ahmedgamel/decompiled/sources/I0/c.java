@@ -7,25 +7,25 @@ import java.util.HashSet;
 public abstract class c implements d {
 
     /* renamed from: c, reason: collision with root package name */
-    public static final HashSet f1253c = new HashSet();
+    public static final HashSet f1278c = new HashSet();
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f1254a;
+    public final String f1279a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f1255b;
+    public final String f1280b;
 
     public c(String str, String str2) {
-        this.f1254a = str;
-        this.f1255b = str2;
-        f1253c.add(this);
+        this.f1279a = str;
+        this.f1280b = str2;
+        f1278c.add(this);
     }
 
     public abstract boolean a();
 
     public boolean b() {
-        HashSet hashSet = a.f1251a;
-        String str = this.f1255b;
+        HashSet hashSet = a.f1276a;
+        String str = this.f1280b;
         if (hashSet.contains(str)) {
             return true;
         }

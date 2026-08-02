@@ -9,10 +9,10 @@ import com.anythink.core.common.v.k;
 public class c {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f11371a = "Y29tLmh1YXdlaS5vcGVuYWxsaWFuY2UuYWQudmlld3MuVmlkZW9WaWV3";
+    private static final String f12157a = "Y29tLmh1YXdlaS5vcGVuYWxsaWFuY2UuYWQudmlld3MuVmlkZW9WaWV3";
 
     public static void a(View view) {
-        a(view, k.b(f11371a));
+        a(view, k.b(f12157a));
     }
 
     public static void b(View view) {

@@ -17,41 +17,41 @@ public final class n implements Comparable, Parcelable {
     public static final Parcelable.Creator<n> CREATOR = new B8.d(27);
 
     /* renamed from: n, reason: collision with root package name */
-    public final Calendar f35997n;
+    public final Calendar f36765n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final int f35998u;
+    public final int f36766u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final int f35999v;
+    public final int f36767v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final int f36000w;
+    public final int f36768w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final int f36001x;
+    public final int f36769x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final long f36002y;
+    public final long f36770y;
 
     /* renamed from: z, reason: collision with root package name */
-    public String f36003z;
+    public String f36771z;
 
     public n(Calendar calendar) {
         calendar.set(5, 1);
         Calendar a9 = v.a(calendar);
-        this.f35997n = a9;
-        this.f35998u = a9.get(2);
-        this.f35999v = a9.get(1);
-        this.f36000w = a9.getMaximum(7);
-        this.f36001x = a9.getActualMaximum(5);
-        this.f36002y = a9.getTimeInMillis();
+        this.f36765n = a9;
+        this.f36766u = a9.get(2);
+        this.f36767v = a9.get(1);
+        this.f36768w = a9.getMaximum(7);
+        this.f36769x = a9.getActualMaximum(5);
+        this.f36770y = a9.getTimeInMillis();
     }
 
-    public static n a(int i, int i6) {
+    public static n a(int i, int i4) {
         Calendar c9 = v.c(null);
         c9.set(1, i);
-        c9.set(2, i6);
+        c9.set(2, i4);
         return new n(c9);
     }
 
@@ -62,28 +62,28 @@ public final class n implements Comparable, Parcelable {
     }
 
     public final String c() {
-        if (this.f36003z == null) {
-            long timeInMillis = this.f35997n.getTimeInMillis();
+        if (this.f36771z == null) {
+            long timeInMillis = this.f36765n.getTimeInMillis();
             Locale locale = Locale.getDefault();
-            AtomicReference atomicReference = v.f36017a;
+            AtomicReference atomicReference = v.f36785a;
             DateFormat instanceForSkeleton = DateFormat.getInstanceForSkeleton("yMMMM", locale);
             instanceForSkeleton.setTimeZone(TimeZone.getTimeZone("UTC"));
             instanceForSkeleton.setContext(DisplayContext.CAPITALIZATION_FOR_STANDALONE);
-            this.f36003z = instanceForSkeleton.format(new Date(timeInMillis));
+            this.f36771z = instanceForSkeleton.format(new Date(timeInMillis));
         }
-        return this.f36003z;
+        return this.f36771z;
     }
 
     @Override // java.lang.Comparable
     public final int compareTo(Object obj) {
-        return this.f35997n.compareTo(((n) obj).f35997n);
+        return this.f36765n.compareTo(((n) obj).f36765n);
     }
 
     public final int d(n nVar) {
-        if (!(this.f35997n instanceof GregorianCalendar)) {
+        if (!(this.f36765n instanceof GregorianCalendar)) {
             throw new IllegalArgumentException("Only Gregorian calendars are supported.");
         }
-        return (nVar.f35998u - this.f35998u) + ((nVar.f35999v - this.f35999v) * 12);
+        return (nVar.f36766u - this.f36766u) + ((nVar.f36767v - this.f36767v) * 12);
     }
 
     @Override // android.os.Parcelable
@@ -99,16 +99,16 @@ public final class n implements Comparable, Parcelable {
             return false;
         }
         n nVar = (n) obj;
-        return this.f35998u == nVar.f35998u && this.f35999v == nVar.f35999v;
+        return this.f36766u == nVar.f36766u && this.f36767v == nVar.f36767v;
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(new Object[]{Integer.valueOf(this.f35998u), Integer.valueOf(this.f35999v)});
+        return Arrays.hashCode(new Object[]{Integer.valueOf(this.f36766u), Integer.valueOf(this.f36767v)});
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeInt(this.f35999v);
-        parcel.writeInt(this.f35998u);
+        parcel.writeInt(this.f36767v);
+        parcel.writeInt(this.f36766u);
     }
 }

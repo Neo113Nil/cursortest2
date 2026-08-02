@@ -4,38 +4,38 @@ package com.anythink.core.common.n.a;
 public final class k {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f14825a = 0;
+    public static final int f15611a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f14826b = 1;
+    public static final int f15612b = 1;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f14827c = 1;
+    public static final int f15613c = 1;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f14828d = 2;
+    public static final int f15614d = 2;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f14829e = 2;
+    public static final int f15615e = 2;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final int f14830f = 3;
+    public static final int f15616f = 3;
 
     /* renamed from: g, reason: collision with root package name */
-    public static final int f14831g = 3;
+    public static final int f15617g = 3;
 
     /* renamed from: h, reason: collision with root package name */
-    public static final int f14832h = 999;
+    public static final int f15618h = 999;
     public static final k i = new k(a.NO_NETWORK);
 
     /* renamed from: j, reason: collision with root package name */
-    public static final k f14833j = new k(a.WIFI);
+    public static final k f15619j = new k(a.WIFI);
 
     /* renamed from: k, reason: collision with root package name */
-    public final int f14834k = 0;
+    public final int f15620k = 0;
 
     /* renamed from: l, reason: collision with root package name */
-    public final a f14835l;
+    public final a f15621l;
 
     public enum a {
         NO_NETWORK,
@@ -48,6 +48,6 @@ public final class k {
     }
 
     private k(a aVar) {
-        this.f14835l = aVar;
+        this.f15621l = aVar;
     }
 }

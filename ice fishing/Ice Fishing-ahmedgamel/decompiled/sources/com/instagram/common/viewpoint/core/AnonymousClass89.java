@@ -9,7 +9,7 @@ import java.util.TreeSet;
 @MetaExoPlayerCustomization("Exo version is final but in Meta code HeroLeastRecentlyUsedCacheEvictor extends this")
 /* renamed from: com.facebook.ads.redexgen.X.89, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public final class AnonymousClass89 implements InterfaceC2055kS {
+public final class AnonymousClass89 implements InterfaceC2075kS {
     public static byte[] A03;
     public static String[] A04 = {"jtWHdC1JS00IQCACyTEvOJEMPrvoo3Ob", "eCCt1HwS4IToKXyi1WzLFL1R4PlgsDM4", "yXgy4dLxj37Ni2Ba12KifyhgeRBIXCXp", "5p7nRT0g4n3u8StY", "28aCkGMBHBRgMUJ0i4knnGO", "XAmyqmpuCXa4X38XkweYk7F1knbiAlXr", "krkFdswQPRExlipS29WIEjh8hbH7SBjj", "jb"};
 
@@ -27,16 +27,16 @@ public final class AnonymousClass89 implements InterfaceC2055kS {
         }
     });
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 28);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 28);
         }
         return new String(copyOfRange);
     }
 
     public static void A02() {
-        A03 = new byte[]{46, 61, 34, 40, c.f16318c, 8, 42, 40, 35, 46};
+        A03 = new byte[]{46, 61, 34, 40, c.f17105c, 8, 42, 40, 35, 46};
     }
 
     static {
@@ -87,14 +87,14 @@ public final class AnonymousClass89 implements InterfaceC2055kS {
         AG2(mp, mz2);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2055kS
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2075kS
     public final void AG5(MP mp, String str, long j6, long j9) {
         if (j9 != -1) {
             A03(mp, j9);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2055kS
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2075kS
     public final boolean AIj() {
         return true;
     }

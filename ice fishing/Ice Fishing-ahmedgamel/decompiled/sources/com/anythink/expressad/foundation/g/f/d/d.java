@@ -9,7 +9,7 @@ import org.json.JSONObject;
 public class d extends e<JSONObject> {
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f19295c = "d";
+    private static final String f20082c = "d";
 
     public d(int i, String str, String str2, com.anythink.expressad.foundation.g.f.e<JSONObject> eVar) {
         super(i, str, str2, eVar);
@@ -18,7 +18,7 @@ public class d extends e<JSONObject> {
     @Override // com.anythink.expressad.foundation.g.f.j
     public final l<JSONObject> a(com.anythink.expressad.foundation.g.f.f.c cVar) {
         try {
-            return cVar.f19319a == 204 ? l.a(new JSONObject(), cVar) : l.a(new JSONObject(new String(cVar.f19320b, com.anythink.expressad.foundation.g.f.g.d.a(cVar.f19322d))), cVar);
+            return cVar.f20106a == 204 ? l.a(new JSONObject(), cVar) : l.a(new JSONObject(new String(cVar.f20107b, com.anythink.expressad.foundation.g.f.g.d.a(cVar.f20109d))), cVar);
         } catch (UnsupportedEncodingException e9) {
             e9.getMessage();
             return l.a(new com.anythink.expressad.foundation.g.f.a.a(8, cVar));
@@ -28,7 +28,7 @@ public class d extends e<JSONObject> {
         }
     }
 
-    private d(int i, String str, String str2, com.anythink.expressad.foundation.g.f.e<JSONObject> eVar, boolean z3) {
-        super(i, str, str2, eVar, z3);
+    private d(int i, String str, String str2, com.anythink.expressad.foundation.g.f.e<JSONObject> eVar, boolean z6) {
+        super(i, str, str2, eVar, z6);
     }
 }

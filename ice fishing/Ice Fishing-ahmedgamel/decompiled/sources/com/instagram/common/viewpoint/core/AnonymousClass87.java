@@ -24,19 +24,19 @@ import org.json.JSONObject;
 
 /* renamed from: com.facebook.ads.redexgen.X.87, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public final class AnonymousClass87 extends AbstractC2044kH {
+public final class AnonymousClass87 extends AbstractC2064kH {
     public static byte[] A04;
     public static String[] A05 = {"b4EbQiKGBOPn48tIsiPL5n4N5SxNZ1EN", "C4qAvqPXqcx1", "av0PnThHX1ufh2ncI3f6iPLWfGZcgSDj", "l1hdtvJdt41N", "aFghpyqA523JYmrsO", "P4eeegJbz09MXnMZrJhy5IVHeFKKR7Ef", "fwPno9KqPJ0g1dx57vycq8IipA21WGGJ", "Ava7qu9S1KN"};
     public static final String A06;
     public XS A00;
     public final Uri A01;
-    public final C1104Ng A02;
+    public final C1124Ng A02;
     public final Map<String, String> A03;
 
-    public static String A04(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 41);
+    public static String A04(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 41);
         }
         return new String(copyOfRange);
     }
@@ -50,10 +50,10 @@ public final class AnonymousClass87 extends AbstractC2044kH {
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
     private final List<Intent> A06() {
-        List<C1097My> A052 = A05();
+        List<C1117My> A052 = A05();
         ArrayList arrayList = new ArrayList();
         if (A052 != null) {
-            Iterator<C1097My> it = A052.iterator();
+            Iterator<C1117My> it = A052.iterator();
             while (it.hasNext()) {
                 Intent A00 = A00(it.next());
                 if (A00 != null) {
@@ -65,7 +65,7 @@ public final class AnonymousClass87 extends AbstractC2044kH {
     }
 
     public static void A07() {
-        A04 = new byte[]{88, 111, 111, 114, 111, 61, 109, 124, 111, 110, 116, 115, 122, 61, 124, 109, 109, 110, 116, 105, 120, 66, 121, 124, 105, 124, 51, 20, 28, 25, 16, 17, 85, 1, 26, 85, 26, 5, 16, 27, 85, 24, 20, 7, 30, 16, 1, 85, 0, 7, 25, 79, 85, 51, 53, 8, 7, 13, 27, 6, 0, 13, c.f16318c, 48, 58, 44, 49, 55, 58, 112, 55, 48, 42, 59, 48, 42, 112, c.f16318c, 61, 42, 55, 49, 48, 112, 26, 23, 31, 18, 5, 10, 0, 22, 11, 13, 0, 74, 13, 10, 16, 1, 10, 16, 74, 5, 7, 16, 13, 11, 10, 74, 50, 45, 33, 51, 34, 51, 51, 48, 42, 55, 38, 28, 39, 34, 55, 34, 65, 77, 94, 71, 73, 88, 22, 3, 3, 72, 73, 88, 77, 69, c.f16317b, 95, 19, 69, 72, 17, 9, 95, 27, 4, 17, 26, 17, 16, 43, 16, 17, 17, 4, 24, 29, 26, 31, 125, 98, 119, 124, 119, 118, 77, 97, 102, 125, 96, 119, 77, 116, 115, 126, 126, 112, 115, 113, 121, 77, 103, 96, 126, 123, 100, 113, 122, 113, 112, 75, 103, 96, 123, 102, 113, 75, 97, 102, 120, 100, 117, 102, 103, 125, 122, 115, 81, 86, 77, 80, 71, 125, 75, 70, 56, c.f16318c, 36, 57, 46, 20, 62, 57, 39, 81, 86, 77, 80, 71, 125, 87, 80, 78, 125, 85, 71, c.f16317b, 125, 68, 67, 78, 78, c.f16317b, 67, 65, 73, 59, 42, 35, 117, 23, 6, 15, 19, 17, 12, 14, 19, 23, 89};
+        A04 = new byte[]{88, 111, 111, 114, 111, 61, 109, 124, 111, 110, 116, 115, 122, 61, 124, 109, 109, 110, 116, 105, 120, 66, 121, 124, 105, 124, 51, 20, 28, 25, 16, 17, 85, 1, 26, 85, 26, 5, 16, 27, 85, 24, 20, 7, 30, 16, 1, 85, 0, 7, 25, 79, 85, 51, 53, 8, 7, 13, 27, 6, 0, 13, c.f17105c, 48, 58, 44, 49, 55, 58, 112, 55, 48, 42, 59, 48, 42, 112, c.f17105c, 61, 42, 55, 49, 48, 112, 26, 23, 31, 18, 5, 10, 0, 22, 11, 13, 0, 74, 13, 10, 16, 1, 10, 16, 74, 5, 7, 16, 13, 11, 10, 74, 50, 45, 33, 51, 34, 51, 51, 48, 42, 55, 38, 28, 39, 34, 55, 34, 65, 77, 94, 71, 73, 88, 22, 3, 3, 72, 73, 88, 77, 69, c.f17104b, 95, 19, 69, 72, 17, 9, 95, 27, 4, 17, 26, 17, 16, 43, 16, 17, 17, 4, 24, 29, 26, 31, 125, 98, 119, 124, 119, 118, 77, 97, 102, 125, 96, 119, 77, 116, 115, 126, 126, 112, 115, 113, 121, 77, 103, 96, 126, 123, 100, 113, 122, 113, 112, 75, 103, 96, 123, 102, 113, 75, 97, 102, 120, 100, 117, 102, 103, 125, 122, 115, 81, 86, 77, 80, 71, 125, 75, 70, 56, c.f17105c, 36, 57, 46, 20, 62, 57, 39, 81, 86, 77, 80, 71, 125, 87, 80, 78, 125, 85, 71, c.f17104b, 125, 68, 67, 78, 78, c.f17104b, 67, 65, 73, 59, 42, 35, 117, 23, 6, 15, 19, 17, 12, 14, 19, 23, 89};
     }
 
     static {
@@ -73,11 +73,11 @@ public final class AnonymousClass87 extends AbstractC2044kH {
         A06 = AnonymousClass87.class.getSimpleName();
     }
 
-    public AnonymousClass87(C1840gi c1840gi, VA va, String str, Uri uri, Map<String, String> extraData, N0 n02, boolean z3, C1104Ng c1104Ng) {
-        super(c1840gi, va, str, n02, z3);
+    public AnonymousClass87(C1860gi c1860gi, VA va, String str, Uri uri, Map<String, String> extraData, N0 n02, boolean z6, C1124Ng c1124Ng) {
+        super(c1860gi, va, str, n02, z6);
         this.A01 = uri;
         this.A03 = extraData;
-        this.A02 = c1104Ng;
+        this.A02 = c1124Ng;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0064, code lost:
@@ -87,20 +87,20 @@ public final class AnonymousClass87 extends AbstractC2044kH {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private Intent A00(C1097My c1097My) {
-        if (TextUtils.isEmpty(c1097My.A05())) {
+    private Intent A00(C1117My c1117My) {
+        if (TextUtils.isEmpty(c1117My.A05())) {
             return null;
         }
-        String A03 = c1097My.A03();
-        C1840gi c1840gi = ((AbstractC1092Mt) this).A01;
-        String appLinkUri = c1097My.A05();
-        if (!AbstractC1356Xi.A04(c1840gi, appLinkUri)) {
-            C1840gi c1840gi2 = ((AbstractC1092Mt) this).A01;
+        String A03 = c1117My.A03();
+        C1860gi c1860gi = ((AbstractC1112Mt) this).A01;
+        String appLinkUri = c1117My.A05();
+        if (!AbstractC1376Xi.A04(c1860gi, appLinkUri)) {
+            C1860gi c1860gi2 = ((AbstractC1112Mt) this).A01;
             if (A05[6].charAt(8) != 'P') {
                 throw new RuntimeException();
             }
             A05[5] = "ldjYBpnAKJ5YKanQesg35Gt0OkPWSzAG";
-            if (!A09(c1840gi2, A03)) {
+            if (!A09(c1860gi2, A03)) {
                 return null;
             }
         }
@@ -111,11 +111,11 @@ public final class AnonymousClass87 extends AbstractC2044kH {
             }
             return new Intent(A04(62, 26, 119), XB.A00(A03));
         }
-        PackageManager packageManager = ((AbstractC1092Mt) this).A01.getPackageManager();
+        PackageManager packageManager = ((AbstractC1112Mt) this).A01.getPackageManager();
         if (packageManager == null) {
             return null;
         }
-        String appLinkUri4 = c1097My.A04();
+        String appLinkUri4 = c1117My.A04();
         if (TextUtils.isEmpty(appLinkUri4)) {
             boolean isEmpty = TextUtils.isEmpty(A03);
             String[] strArr = A05;
@@ -126,11 +126,11 @@ public final class AnonymousClass87 extends AbstractC2044kH {
             }
             A05[2] = "P0UyeT8Oj9P4H3GWuZ6UwWdLOtPXQiGU";
             if (isEmpty) {
-                String appLinkUri6 = c1097My.A05();
+                String appLinkUri6 = c1117My.A05();
                 return packageManager.getLaunchIntentForPackage(appLinkUri6);
             }
         }
-        Intent A01 = A01(c1097My);
+        Intent A01 = A01(c1117My);
         List<ResolveInfo> queryIntentActivities = packageManager.queryIntentActivities(A01, b.aX);
         if (A01.getComponent() == null) {
             Iterator<ResolveInfo> it = queryIntentActivities.iterator();
@@ -140,7 +140,7 @@ public final class AnonymousClass87 extends AbstractC2044kH {
                 }
                 ResolveInfo next = it.next();
                 String str2 = next.activityInfo.packageName;
-                String A052 = c1097My.A05();
+                String A052 = c1117My.A05();
                 if (A05[0].charAt(20) != '5') {
                     throw new RuntimeException();
                 }
@@ -152,23 +152,23 @@ public final class AnonymousClass87 extends AbstractC2044kH {
             }
         }
         if (queryIntentActivities.isEmpty() || A01.getComponent() == null) {
-            if (!A09(((AbstractC1092Mt) this).A01, A03)) {
+            if (!A09(((AbstractC1112Mt) this).A01, A03)) {
                 return null;
             }
-            String appLinkUri7 = c1097My.A05();
+            String appLinkUri7 = c1117My.A05();
             A01.setPackage(appLinkUri7);
         }
         return A01;
     }
 
-    private Intent A01(C1097My c1097My) {
+    private Intent A01(C1117My c1117My) {
         Intent intent = new Intent(A04(88, 26, 77));
         intent.addFlags(268435456);
-        if (!TextUtils.isEmpty(c1097My.A05()) && !TextUtils.isEmpty(c1097My.A04())) {
-            intent.setComponent(new ComponentName(c1097My.A05(), c1097My.A04()));
+        if (!TextUtils.isEmpty(c1117My.A05()) && !TextUtils.isEmpty(c1117My.A04())) {
+            intent.setComponent(new ComponentName(c1117My.A05(), c1117My.A04()));
         }
-        if (!TextUtils.isEmpty(c1097My.A03())) {
-            intent.setData(XB.A00(c1097My.A03()));
+        if (!TextUtils.isEmpty(c1117My.A03())) {
+            intent.setData(XB.A00(c1117My.A03()));
         }
         return intent;
     }
@@ -183,25 +183,25 @@ public final class AnonymousClass87 extends AbstractC2044kH {
         String storeId = uri.getQueryParameter(storeUrl);
         Locale locale = Locale.US;
         Object[] objArr = {storeId};
-        String storeUrl2 = A04(a.f21727Q, 22, 5);
+        String storeUrl2 = A04(a.f22514Q, 22, 5);
         return XB.A00(String.format(locale, storeUrl2, objArr));
     }
 
-    private EnumC1089Mq A03() throws C1342Ws {
+    private EnumC1109Mq A03() throws C1362Ws {
         X6 x62 = new X6();
         try {
-            return X6.A06(x62, ((AbstractC1092Mt) this).A01, A02(), ((AbstractC1092Mt) this).A03, this.A03);
-        } catch (C1342Ws unused) {
+            return X6.A06(x62, ((AbstractC1112Mt) this).A01, A02(), ((AbstractC1112Mt) this).A03, this.A03);
+        } catch (C1362Ws unused) {
             String str = A04(26, 27, 92) + this.A01.toString();
             String queryParameter = this.A01.getQueryParameter(A04(228, 22, 11));
             if (queryParameter != null && queryParameter.length() > 0) {
-                X6.A0E(x62, ((AbstractC1092Mt) this).A01, XB.A00(queryParameter), ((AbstractC1092Mt) this).A03);
+                X6.A0E(x62, ((AbstractC1112Mt) this).A01, XB.A00(queryParameter), ((AbstractC1112Mt) this).A03);
             }
-            return EnumC1089Mq.A09;
+            return EnumC1109Mq.A09;
         }
     }
 
-    private List<C1097My> A05() {
+    private List<C1117My> A05() {
         String queryParameter = this.A01.getQueryParameter(A04(114, 12, 106));
         if (TextUtils.isEmpty(queryParameter)) {
             return null;
@@ -217,18 +217,18 @@ public final class AnonymousClass87 extends AbstractC2044kH {
             JSONArray optJSONArray = jSONObject.optJSONArray(appsiteDataString2);
             if (optJSONArray != null) {
                 for (int i = 0; i < optJSONArray.length(); i++) {
-                    C1097My A00 = C1097My.A00(optJSONArray.optJSONObject(i));
+                    C1117My A00 = C1117My.A00(optJSONArray.optJSONObject(i));
                     if (A00 != null) {
                         arrayList.add(A00);
                     }
                 }
             }
         } catch (JSONException e9) {
-            InterfaceC1251Tc A08 = ((AbstractC1092Mt) this).A01.A08();
-            int i6 = AbstractC1252Td.A24;
-            C1253Te c1253Te = new C1253Te(e9);
-            String appsiteDataString3 = A04(BaseATView.a.f9767C, 7, 61);
-            A08.ABC(appsiteDataString3, i6, c1253Te);
+            InterfaceC1271Tc A08 = ((AbstractC1112Mt) this).A01.A08();
+            int i4 = AbstractC1272Td.A24;
+            C1273Te c1273Te = new C1273Te(e9);
+            String appsiteDataString3 = A04(BaseATView.a.f10553C, 7, 61);
+            A08.ABC(appsiteDataString3, i4, c1273Te);
             String str = A06;
             String appsiteDataString4 = A04(0, 26, 52);
             Log.w(str, appsiteDataString4, e9);
@@ -243,22 +243,22 @@ public final class AnonymousClass87 extends AbstractC2044kH {
         }
         Iterator<Intent> it = appLaunchIntents.iterator();
         while (it.hasNext()) {
-            if (C1344Wu.A0D(((AbstractC1092Mt) this).A01, it.next())) {
+            if (C1364Wu.A0D(((AbstractC1112Mt) this).A01, it.next())) {
                 return true;
             }
         }
         return false;
     }
 
-    public static boolean A09(C1840gi c1840gi, String str) {
-        return Build.VERSION.SDK_INT >= 30 && str != null && C1290Up.A29(c1840gi);
+    public static boolean A09(C1860gi c1860gi, String str) {
+        return Build.VERSION.SDK_INT >= 30 && str != null && C1310Up.A29(c1860gi);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC2044kH
-    public final EnumC1089Mq A0H() {
-        EnumC1089Mq enumC1089Mq = EnumC1089Mq.A09;
-        if (((AbstractC2044kH) this).A03) {
-            enumC1089Mq = A0M();
+    @Override // com.instagram.common.viewpoint.core.AbstractC2064kH
+    public final EnumC1109Mq A0H() {
+        EnumC1109Mq enumC1109Mq = EnumC1109Mq.A09;
+        if (((AbstractC2064kH) this).A03) {
+            enumC1109Mq = A0M();
         } else {
             this.A03.put(A04(188, 16, 61), String.valueOf(true));
         }
@@ -267,13 +267,13 @@ public final class AnonymousClass87 extends AbstractC2044kH {
             throw new RuntimeException();
         }
         A05[4] = "kOq5WVrOOgnK8qBpA";
-        A0J(map, enumC1089Mq);
-        C1104Ng.A06(this.A02, ((AbstractC1092Mt) this).A01);
-        return enumC1089Mq;
+        A0J(map, enumC1109Mq);
+        C1124Ng.A06(this.A02, ((AbstractC1112Mt) this).A01);
+        return enumC1109Mq;
     }
 
-    public final EnumC1089Mq A0M() {
-        EnumC1089Mq enumC1089Mq = EnumC1089Mq.A09;
+    public final EnumC1109Mq A0M() {
+        EnumC1109Mq enumC1109Mq = EnumC1109Mq.A09;
         String A042 = A04(148, 15, 93);
         boolean A0K = A0K(this.A01);
         if (!A0K) {
@@ -281,20 +281,20 @@ public final class AnonymousClass87 extends AbstractC2044kH {
         }
         if (!A0K) {
             try {
-                enumC1089Mq = A03();
-                if (enumC1089Mq != EnumC1089Mq.A09) {
+                enumC1109Mq = A03();
+                if (enumC1109Mq != EnumC1109Mq.A09) {
                     A042 = A04(188, 16, 61);
                 } else {
                     A042 = A04(163, 25, 59);
                 }
             } catch (Exception unused) {
-                enumC1089Mq = EnumC1089Mq.A04;
+                enumC1109Mq = EnumC1109Mq.A04;
             }
         }
         Map<String, String> map = this.A03;
         String redirectionAction = String.valueOf(true);
         map.put(A042, redirectionAction);
-        return enumC1089Mq;
+        return enumC1109Mq;
     }
 
     public final void A0N(XS xs) {

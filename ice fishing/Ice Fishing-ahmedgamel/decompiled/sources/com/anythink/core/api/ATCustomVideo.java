@@ -10,7 +10,7 @@ public interface ATCustomVideo {
 
     void reportVideoContinue(long j6);
 
-    void reportVideoError(long j6, int i, int i6);
+    void reportVideoError(long j6, int i, int i4);
 
     void reportVideoFinish();
 
@@ -18,5 +18,5 @@ public interface ATCustomVideo {
 
     void reportVideoStart();
 
-    void reportVideoStartError(int i, int i6);
+    void reportVideoStartError(int i, int i4);
 }

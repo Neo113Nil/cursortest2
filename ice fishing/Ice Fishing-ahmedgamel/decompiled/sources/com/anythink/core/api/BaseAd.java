@@ -52,5 +52,5 @@ public abstract class BaseAd implements IATThirdPartyMaterial {
 
     public abstract void setTrackingInfo(n nVar);
 
-    public abstract void setVideoMute(boolean z3);
+    public abstract void setVideoMute(boolean z6);
 }

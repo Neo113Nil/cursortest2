@@ -13,53 +13,53 @@ import org.json.JSONObject;
 public class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f19119a = "native";
+    public static final String f19906a = "native";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f19120b = "reward";
+    public static final String f19907b = "reward";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f19121c = "interactive";
+    public static final String f19908c = "interactive";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final String f19122d = "interstitial";
+    public static final String f19909d = "interstitial";
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f19123e = "banner";
+    public static final String f19910e = "banner";
 
     /* renamed from: f, reason: collision with root package name */
-    public static final String f19124f = "splash";
+    public static final String f19911f = "splash";
 
     /* renamed from: g, reason: collision with root package name */
-    public static final String f19125g = "h5_native";
+    public static final String f19912g = "h5_native";
 
     /* renamed from: h, reason: collision with root package name */
-    public static Map<String, Long> f19126h = new HashMap();
+    public static Map<String, Long> f19913h = new HashMap();
     public static Map<String, List<com.anythink.expressad.foundation.g.e.a>> i = new HashMap();
 
     /* renamed from: j, reason: collision with root package name */
-    public static Map<String, List<com.anythink.expressad.foundation.g.e.a>> f19127j = new HashMap();
+    public static Map<String, List<com.anythink.expressad.foundation.g.e.a>> f19914j = new HashMap();
 
     /* renamed from: k, reason: collision with root package name */
-    public static Map<String, List<com.anythink.expressad.foundation.g.e.a>> f19128k = new HashMap();
+    public static Map<String, List<com.anythink.expressad.foundation.g.e.a>> f19915k = new HashMap();
 
     /* renamed from: l, reason: collision with root package name */
-    public static Map<String, List<com.anythink.expressad.foundation.g.e.a>> f19129l = new HashMap();
+    public static Map<String, List<com.anythink.expressad.foundation.g.e.a>> f19916l = new HashMap();
 
     /* renamed from: m, reason: collision with root package name */
-    public static Map<String, List<com.anythink.expressad.foundation.g.e.a>> f19130m = new HashMap();
+    public static Map<String, List<com.anythink.expressad.foundation.g.e.a>> f19917m = new HashMap();
 
     /* renamed from: n, reason: collision with root package name */
-    public static Map<String, List<com.anythink.expressad.foundation.g.e.a>> f19131n = new HashMap();
+    public static Map<String, List<com.anythink.expressad.foundation.g.e.a>> f19918n = new HashMap();
 
     /* renamed from: o, reason: collision with root package name */
-    public static Map<String, List<com.anythink.expressad.foundation.g.e.a>> f19132o = new HashMap();
+    public static Map<String, List<com.anythink.expressad.foundation.g.e.a>> f19919o = new HashMap();
 
     /* renamed from: p, reason: collision with root package name */
-    public static Map<String, List<com.anythink.expressad.foundation.g.e.a>> f19133p = new HashMap();
+    public static Map<String, List<com.anythink.expressad.foundation.g.e.a>> f19920p = new HashMap();
 
     /* renamed from: q, reason: collision with root package name */
-    private static final String f19134q = "f";
+    private static final String f19921q = "f";
 
     public static void a(String str, com.anythink.expressad.foundation.d.d dVar, String str2) {
         Map<String, List<com.anythink.expressad.foundation.g.e.a>> b9 = b(str2);
@@ -118,19 +118,19 @@ public class f {
         str.getClass();
         switch (str) {
             case "banner":
-                return f19131n;
+                return f19918n;
             case "native":
-                return f19127j;
+                return f19914j;
             case "reward":
-                return f19128k;
+                return f19915k;
             case "splash":
-                return f19132o;
+                return f19919o;
             case "h5_native":
-                return f19133p;
+                return f19920p;
             case "interstitial":
-                return f19130m;
+                return f19917m;
             case "interactive":
-                return f19129l;
+                return f19916l;
             default:
                 return null;
         }
@@ -141,20 +141,20 @@ public class f {
         List<com.anythink.expressad.foundation.g.e.a> list;
         JSONArray jSONArray = new JSONArray();
         if (TextUtils.isEmpty(str2)) {
-            if (f19127j.containsKey(str)) {
-                b9 = f19127j;
-            } else if (f19128k.containsKey(str)) {
-                b9 = f19128k;
-            } else if (f19129l.containsKey(str)) {
-                b9 = f19129l;
-            } else if (f19130m.containsKey(str)) {
-                b9 = f19130m;
-            } else if (f19131n.containsKey(str)) {
-                b9 = f19131n;
-            } else if (f19132o.containsKey(str)) {
-                b9 = f19132o;
+            if (f19914j.containsKey(str)) {
+                b9 = f19914j;
+            } else if (f19915k.containsKey(str)) {
+                b9 = f19915k;
+            } else if (f19916l.containsKey(str)) {
+                b9 = f19916l;
+            } else if (f19917m.containsKey(str)) {
+                b9 = f19917m;
+            } else if (f19918n.containsKey(str)) {
+                b9 = f19918n;
+            } else if (f19919o.containsKey(str)) {
+                b9 = f19919o;
             } else {
-                b9 = f19133p.containsKey(str) ? f19133p : null;
+                b9 = f19920p.containsKey(str) ? f19920p : null;
             }
         } else {
             b9 = b(str2);
@@ -162,10 +162,10 @@ public class f {
         if (b9 != null) {
             try {
                 if (y.b(str) && b9.containsKey(str) && (list = b9.get(str)) != null && list.size() > 0) {
-                    for (int i6 = 0; i6 < list.size(); i6++) {
+                    for (int i4 = 0; i4 < list.size(); i4++) {
                         JSONObject jSONObject = new JSONObject();
-                        jSONObject.put("cid", list.get(i6).a());
-                        jSONObject.put("rid", list.get(i6).b());
+                        jSONObject.put("cid", list.get(i4).a());
+                        jSONObject.put("rid", list.get(i4).b());
                         jSONArray.put(jSONObject);
                     }
                 }
@@ -189,26 +189,26 @@ public class f {
     }
 
     private static Map<String, List<com.anythink.expressad.foundation.g.e.a>> a(String str) {
-        if (f19127j.containsKey(str)) {
-            return f19127j;
+        if (f19914j.containsKey(str)) {
+            return f19914j;
         }
-        if (f19128k.containsKey(str)) {
-            return f19128k;
+        if (f19915k.containsKey(str)) {
+            return f19915k;
         }
-        if (f19129l.containsKey(str)) {
-            return f19129l;
+        if (f19916l.containsKey(str)) {
+            return f19916l;
         }
-        if (f19130m.containsKey(str)) {
-            return f19130m;
+        if (f19917m.containsKey(str)) {
+            return f19917m;
         }
-        if (f19131n.containsKey(str)) {
-            return f19131n;
+        if (f19918n.containsKey(str)) {
+            return f19918n;
         }
-        if (f19132o.containsKey(str)) {
-            return f19132o;
+        if (f19919o.containsKey(str)) {
+            return f19919o;
         }
-        if (f19133p.containsKey(str)) {
-            return f19133p;
+        if (f19920p.containsKey(str)) {
+            return f19920p;
         }
         return null;
     }

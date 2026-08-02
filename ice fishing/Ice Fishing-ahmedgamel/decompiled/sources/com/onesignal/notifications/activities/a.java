@@ -1,19 +1,19 @@
 package com.onesignal.notifications.activities;
 
+import A3.p;
 import B7.h;
-import D.RunnableC0282a;
 import I7.l;
+import Q3.b;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import com.bumptech.glide.d;
 import com.onesignal.common.AndroidUtils;
 import com.onesignal.common.threading.c;
 import u7.v;
 import x4.g;
-import z5.InterfaceC5262a;
-import z7.InterfaceC5267d;
+import z5.InterfaceC5235a;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public abstract class a extends Activity implements g {
@@ -22,8 +22,8 @@ public abstract class a extends Activity implements g {
     public static final class C0225a extends h implements l {
         int label;
 
-        public C0225a(InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public C0225a(InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -32,8 +32,8 @@ public abstract class a extends Activity implements g {
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return a.this.new C0225a(interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return a.this.new C0225a(interfaceC5240d);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:16:0x005b, code lost:
@@ -53,11 +53,11 @@ public abstract class a extends Activity implements g {
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
-            v vVar = v.f41353a;
+            v vVar = v.f41073a;
             if (i == 0) {
-                d.k(obj);
+                b.s(obj);
                 Context applicationContext = a.this.getApplicationContext();
                 kotlin.jvm.internal.h.d(applicationContext, "getApplicationContext(...)");
                 this.label = 1;
@@ -67,17 +67,17 @@ public abstract class a extends Activity implements g {
                     if (i != 2) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    d.k(obj);
+                    b.s(obj);
                     a aVar2 = a.this;
-                    aVar2.runOnUiThread(new RunnableC0282a(21, aVar2));
+                    aVar2.runOnUiThread(new p(22, aVar2));
                     return vVar;
                 }
-                d.k(obj);
+                b.s(obj);
             }
             if (!((Boolean) obj).booleanValue()) {
                 return vVar;
             }
-            InterfaceC5262a interfaceC5262a = (InterfaceC5262a) p4.g.a().getService(InterfaceC5262a.class);
+            InterfaceC5235a interfaceC5235a = (InterfaceC5235a) p4.g.a().getService(InterfaceC5235a.class);
             a aVar3 = a.this;
             Intent intent = aVar3.getIntent();
             kotlin.jvm.internal.h.d(intent, "getIntent(...)");
@@ -85,8 +85,8 @@ public abstract class a extends Activity implements g {
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((C0225a) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((C0225a) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 

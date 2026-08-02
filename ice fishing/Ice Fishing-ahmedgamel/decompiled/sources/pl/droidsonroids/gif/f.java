@@ -6,23 +6,23 @@ import java.lang.Thread;
 public abstract class f implements Runnable {
 
     /* renamed from: n, reason: collision with root package name */
-    public final c f39970n;
+    public final c f40017n;
 
     public f(c cVar) {
-        this.f39970n = cVar;
+        this.f40017n = cVar;
     }
 
     public abstract void a();
 
     @Override // java.lang.Runnable
     public final void run() {
-        boolean z3;
+        boolean z6;
         try {
-            GifInfoHandle gifInfoHandle = this.f39970n.f39968z;
+            GifInfoHandle gifInfoHandle = this.f40017n.f40015z;
             synchronized (gifInfoHandle) {
-                z3 = gifInfoHandle.f39948a == 0;
+                z6 = gifInfoHandle.f39995a == 0;
             }
-            if (z3) {
+            if (z6) {
                 return;
             }
             a();

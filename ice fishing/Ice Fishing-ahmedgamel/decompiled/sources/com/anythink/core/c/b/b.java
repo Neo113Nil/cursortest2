@@ -10,13 +10,13 @@ import org.json.JSONObject;
 public interface b {
     com.anythink.core.c.a.d a(String str, int i, com.anythink.core.d.f fVar);
 
-    List<com.anythink.core.c.a.a> a(int i, String str, int i6);
+    List<com.anythink.core.c.a.a> a(int i, String str, int i4);
 
     JSONObject a(String str);
 
     JSONObject a(String str, int i);
 
-    JSONObject a(String str, int i, int i6);
+    JSONObject a(String str, int i, int i4);
 
     void a(bu buVar, bv bvVar);
 

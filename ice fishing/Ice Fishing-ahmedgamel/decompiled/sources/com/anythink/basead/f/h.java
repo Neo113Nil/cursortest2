@@ -13,16 +13,16 @@ import java.util.concurrent.ConcurrentHashMap;
 public class h extends c {
 
     /* renamed from: j, reason: collision with root package name */
-    private static final String f8965j = "h";
+    private static final String f9751j = "h";
     boolean i;
 
     /* renamed from: k, reason: collision with root package name */
-    private final Map<String, Object> f8966k;
+    private final Map<String, Object> f9752k;
 
     public h(Context context, c.b bVar, x xVar) {
         super(context, bVar, xVar);
         ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
-        this.f8966k = concurrentHashMap;
+        this.f9752k = concurrentHashMap;
         a(concurrentHashMap);
     }
 
@@ -32,7 +32,7 @@ public class h extends c {
     }
 
     public final boolean h() {
-        return (this.f8897g != null || com.anythink.basead.b.e.b(this.f8894d, this.f8892b) || com.anythink.basead.b.e.a(this.f8894d, this.f8892b)) ? false : true;
+        return (this.f9683g != null || com.anythink.basead.b.e.b(this.f9680d, this.f9678b) || com.anythink.basead.b.e.a(this.f9680d, this.f9678b)) ? false : true;
     }
 
     public final void a() {
@@ -46,13 +46,13 @@ public class h extends c {
                 @Override // java.lang.Runnable
                 public final void run() {
                     h hVar = h.this;
-                    hVar.f8898h.a(viewGroup, hVar.f8966k, h.this.i);
+                    hVar.f9684h.a(viewGroup, hVar.f9752k, h.this.i);
                 }
             });
         } else {
-            com.anythink.basead.g.a aVar = this.f8895e;
+            com.anythink.basead.g.a aVar = this.f9681e;
             if (aVar != null) {
-                aVar.onShowFailed(com.anythink.basead.d.g.a(com.anythink.basead.d.g.i, com.anythink.basead.d.g.f6149D));
+                aVar.onShowFailed(com.anythink.basead.d.g.a(com.anythink.basead.d.g.i, com.anythink.basead.d.g.f6935D));
             }
         }
     }

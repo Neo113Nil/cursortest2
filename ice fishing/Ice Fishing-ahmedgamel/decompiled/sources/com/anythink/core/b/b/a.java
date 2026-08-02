@@ -12,32 +12,32 @@ import java.util.Map;
 public class a implements ATBiddingListenerExt {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f11720a = "a";
+    private static final String f12506a = "a";
 
     /* renamed from: b, reason: collision with root package name */
-    private final n f11721b;
+    private final n f12507b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final String f11722c;
+    private final String f12508c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final Map<String, Object> f11723d;
+    private final Map<String, Object> f12509d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final ATBiddingListener f11724e;
+    private final ATBiddingListener f12510e;
 
     /* renamed from: f, reason: collision with root package name */
-    private volatile boolean f11725f = false;
+    private volatile boolean f12511f = false;
 
     public a(n nVar, String str, Map<String, Object> map, ATBiddingListener aTBiddingListener) {
-        this.f11721b = nVar;
-        this.f11722c = str;
-        this.f11723d = map;
-        this.f11724e = aTBiddingListener;
+        this.f12507b = nVar;
+        this.f12508c = str;
+        this.f12509d = map;
+        this.f12510e = aTBiddingListener;
     }
 
     private boolean a() {
-        Map<String, Object> map = this.f11723d;
+        Map<String, Object> map = this.f12509d;
         if (map == null) {
             return false;
         }
@@ -54,7 +54,7 @@ public class a implements ATBiddingListenerExt {
 
     @Override // com.anythink.core.api.ATBiddingListener
     public void onC2SBidResult(ATBiddingResult aTBiddingResult) {
-        ATBiddingListener aTBiddingListener = this.f11724e;
+        ATBiddingListener aTBiddingListener = this.f12510e;
         if (aTBiddingListener != null) {
             aTBiddingListener.onC2SBidResult(aTBiddingResult);
         }
@@ -62,11 +62,11 @@ public class a implements ATBiddingListenerExt {
 
     @Override // com.anythink.core.api.ATBiddingListener
     public void onC2SBiddingResultWithCache(ATBiddingResult aTBiddingResult, BaseAd baseAd) {
-        if (this.f11725f) {
+        if (this.f12511f) {
             return;
         }
-        this.f11725f = true;
-        ATBiddingListener aTBiddingListener = this.f11724e;
+        this.f12511f = true;
+        ATBiddingListener aTBiddingListener = this.f12510e;
         if (aTBiddingListener != null) {
             aTBiddingListener.onC2SBiddingResultWithCache(aTBiddingResult, baseAd);
         }
@@ -74,13 +74,13 @@ public class a implements ATBiddingListenerExt {
 
     @Override // com.anythink.core.api.ATBiddingListenerExt
     public void onC2SBiddingResultWithData(ATBiddingResult aTBiddingResult, BaseAd baseAd) {
-        n nVar = this.f11721b;
+        n nVar = this.f12507b;
         if (nVar != null) {
             nVar.u(System.currentTimeMillis());
-            this.f11721b.k(SystemClock.elapsedRealtime());
+            this.f12507b.k(SystemClock.elapsedRealtime());
         }
         if (a()) {
-            n nVar2 = this.f11721b;
+            n nVar2 = this.f12507b;
             if (nVar2 != null) {
                 nVar2.d();
             }

@@ -1,7 +1,6 @@
 package com.onesignal.inAppMessages.internal.prompt.impl;
 
-import com.bumptech.glide.e;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public abstract class b {
@@ -24,7 +23,7 @@ public abstract class b {
         static {
             a[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = e.b($values);
+            $ENTRIES = X2.a.h($values);
         }
 
         private a(String str, int i) {
@@ -45,14 +44,14 @@ public abstract class b {
 
     public abstract String getPromptKey();
 
-    public abstract Object handlePrompt(InterfaceC5267d interfaceC5267d);
+    public abstract Object handlePrompt(InterfaceC5240d interfaceC5240d);
 
     public final boolean hasPrompted() {
         return this.prompted;
     }
 
-    public final void setPrompted(boolean z3) {
-        this.prompted = z3;
+    public final void setPrompted(boolean z6) {
+        this.prompted = z6;
     }
 
     public String toString() {

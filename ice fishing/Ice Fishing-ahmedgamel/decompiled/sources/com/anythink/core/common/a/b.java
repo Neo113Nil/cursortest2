@@ -6,123 +6,123 @@ public final class b {
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final int f12098a = 1;
+        public static final int f12884a = 1;
 
         /* renamed from: b, reason: collision with root package name */
-        public static final int f12099b = 2;
+        public static final int f12885b = 2;
 
         /* renamed from: c, reason: collision with root package name */
-        public static final int f12100c = 3;
+        public static final int f12886c = 3;
 
         /* renamed from: d, reason: collision with root package name */
-        public static final int f12101d = 4;
+        public static final int f12887d = 4;
 
         /* renamed from: e, reason: collision with root package name */
-        public static final int f12102e = 5;
+        public static final int f12888e = 5;
 
         /* renamed from: f, reason: collision with root package name */
-        public static final int f12103f = 6;
+        public static final int f12889f = 6;
 
         /* renamed from: g, reason: collision with root package name */
-        public static final int f12104g = 7;
+        public static final int f12890g = 7;
 
         /* renamed from: h, reason: collision with root package name */
-        public static final int f12105h = 8;
+        public static final int f12891h = 8;
         public static final int i = 9;
 
         /* renamed from: j, reason: collision with root package name */
-        public static final int f12106j = 10;
+        public static final int f12892j = 10;
 
         /* renamed from: k, reason: collision with root package name */
-        public static final int f12107k = 11;
+        public static final int f12893k = 11;
     }
 
     /* renamed from: com.anythink.core.common.a.b$b, reason: collision with other inner class name */
     public static class C0074b {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f12108a = "close_scene";
+        public static final String f12894a = "close_scene";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f12109b = "cb_to_developer";
+        public static final String f12895b = "cb_to_developer";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f12110c = "splash_close_video_ctn_to_play";
+        public static final String f12896c = "splash_close_video_ctn_to_play";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f12111d = "splash_close_show_end_card";
+        public static final String f12897d = "splash_close_show_end_card";
     }
 
     public static class c {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f12112a = "c_bidfloor";
+        public static final String f12898a = "c_bidfloor";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f12113b = "g_bidfloor";
+        public static final String f12899b = "g_bidfloor";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f12114c = "wf_g";
+        public static final String f12900c = "wf_g";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f12115d = "last_stop_price";
+        public static final String f12901d = "last_stop_price";
     }
 
     public static class d {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f12116a = "ec_rp_top";
+        public static final String f12902a = "ec_rp_top";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f12117b = "am_bubble";
+        public static final String f12903b = "am_bubble";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f12118c = "letter_bg";
+        public static final String f12904c = "letter_bg";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f12119d = "letter_icon";
+        public static final String f12905d = "letter_icon";
 
         /* renamed from: e, reason: collision with root package name */
-        public static final String f12120e = "sp_ec_top_bg";
+        public static final String f12906e = "sp_ec_top_bg";
 
         /* renamed from: f, reason: collision with root package name */
-        public static final String f12121f = "g2c_chop";
+        public static final String f12907f = "g2c_chop";
 
         /* renamed from: g, reason: collision with root package name */
-        public static final String f12122g = "g2c_gift_icon";
+        public static final String f12908g = "g2c_gift_icon";
 
         /* renamed from: h, reason: collision with root package name */
-        public static final String f12123h = "g2c_ribbon_bg";
+        public static final String f12909h = "g2c_ribbon_bg";
         public static final String i = "g2c_finger_icon";
 
         /* renamed from: j, reason: collision with root package name */
-        public static final String f12124j = "sp_am_bg_and";
+        public static final String f12910j = "sp_am_bg_and";
 
         /* renamed from: k, reason: collision with root package name */
-        public static final String f12125k = "g2c_finger_icon_v2";
+        public static final String f12911k = "g2c_finger_icon_v2";
 
         /* renamed from: l, reason: collision with root package name */
-        public static final String f12126l = "g2c_lucky_bag";
+        public static final String f12912l = "g2c_lucky_bag";
 
         /* renamed from: m, reason: collision with root package name */
-        public static final String f12127m = "g2c_lucky_bag_v2";
+        public static final String f12913m = "g2c_lucky_bag_v2";
 
         /* renamed from: n, reason: collision with root package name */
-        public static final String f12128n = "rv_task_complete";
+        public static final String f12914n = "rv_task_complete";
 
         /* renamed from: o, reason: collision with root package name */
-        public static final String f12129o = "rv_task_complete_cn";
+        public static final String f12915o = "rv_task_complete_cn";
 
         /* renamed from: p, reason: collision with root package name */
-        public static final String f12130p = "ec_sec_poster";
+        public static final String f12916p = "ec_sec_poster";
 
         /* renamed from: q, reason: collision with root package name */
-        public static final String f12131q = "am_wrapper_top";
+        public static final String f12917q = "am_wrapper_top";
 
         /* renamed from: r, reason: collision with root package name */
-        public static final String f12132r = "am_wrapper_left";
+        public static final String f12918r = "am_wrapper_left";
 
         /* renamed from: s, reason: collision with root package name */
-        public static final String f12133s = "am_wrapper_right";
+        public static final String f12919s = "am_wrapper_right";
     }
 }

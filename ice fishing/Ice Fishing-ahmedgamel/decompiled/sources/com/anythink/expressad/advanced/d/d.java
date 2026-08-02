@@ -7,42 +7,42 @@ import java.util.Random;
 public final class d implements com.anythink.expressad.advanced.b.b {
 
     /* renamed from: a, reason: collision with root package name */
-    protected static final String f17864a = "NativeAdvancedShowListenerImpl";
+    protected static final String f18651a = "NativeAdvancedShowListenerImpl";
 
     /* renamed from: b, reason: collision with root package name */
-    protected p f17865b;
+    protected p f18652b;
 
     /* renamed from: c, reason: collision with root package name */
-    protected com.anythink.expressad.foundation.d.d f17866c;
+    protected com.anythink.expressad.foundation.d.d f18653c;
 
     /* renamed from: d, reason: collision with root package name */
-    protected c f17867d;
+    protected c f18654d;
 
     /* renamed from: e, reason: collision with root package name */
-    private boolean f17868e;
+    private boolean f18655e;
 
-    public d(c cVar, p pVar, double d2, com.anythink.expressad.foundation.d.d dVar) {
-        this.f17867d = cVar;
-        this.f17865b = pVar;
-        this.f17866c = dVar;
-        this.f17868e = a(d2, dVar);
+    public d(c cVar, p pVar, double d9, com.anythink.expressad.foundation.d.d dVar) {
+        this.f18654d = cVar;
+        this.f18652b = pVar;
+        this.f18653c = dVar;
+        this.f18655e = a(d9, dVar);
     }
 
     private void g() {
-        if (this.f17865b != null) {
-            this.f17865b = null;
+        if (this.f18652b != null) {
+            this.f18652b = null;
         }
     }
 
     @Override // com.anythink.expressad.advanced.b.b
     public final void a() {
-        c cVar = this.f17867d;
+        c cVar = this.f18654d;
         if (cVar != null) {
-            cVar.f17839d = true;
+            cVar.f18626d = true;
         }
         cVar.d();
-        p pVar = this.f17865b;
-        if (pVar == null || this.f17868e) {
+        p pVar = this.f18652b;
+        if (pVar == null || this.f18655e) {
             return;
         }
         pVar.b();
@@ -54,12 +54,12 @@ public final class d implements com.anythink.expressad.advanced.b.b {
 
     @Override // com.anythink.expressad.advanced.b.b
     public final void c() {
-        p pVar = this.f17865b;
+        p pVar = this.f18652b;
         if (pVar != null) {
             pVar.f();
-            c cVar = this.f17867d;
+            c cVar = this.f18654d;
             if (cVar != null) {
-                cVar.f17839d = false;
+                cVar.f18626d = false;
             }
         }
     }
@@ -78,21 +78,21 @@ public final class d implements com.anythink.expressad.advanced.b.b {
 
     @Override // com.anythink.expressad.advanced.b.b
     public final void a(com.anythink.expressad.foundation.d.d dVar) {
-        p pVar = this.f17865b;
-        if (pVar == null || this.f17868e) {
+        p pVar = this.f18652b;
+        if (pVar == null || this.f18655e) {
             return;
         }
         pVar.a(dVar);
     }
 
-    private static boolean a(double d2, com.anythink.expressad.foundation.d.d dVar) {
+    private static boolean a(double d9, com.anythink.expressad.foundation.d.d dVar) {
         try {
             com.anythink.expressad.f.b.a();
             com.anythink.expressad.f.a c9 = com.anythink.expressad.f.b.c();
             long l9 = c9.l() * 1000;
-            long w6 = c9.w() * 1000;
+            long w3 = c9.w() * 1000;
             if (dVar != null) {
-                if (dVar.a(w6, l9)) {
+                if (dVar.a(w3, l9)) {
                     dVar.g(1);
                     return true;
                 }
@@ -100,6 +100,6 @@ public final class d implements com.anythink.expressad.advanced.b.b {
             }
         } catch (Exception unused) {
         }
-        return (dVar == null || dVar.B() || d2 == 1.0d || new Random().nextDouble() <= d2) ? false : true;
+        return (dVar == null || dVar.B() || d9 == 1.0d || new Random().nextDouble() <= d9) ? false : true;
     }
 }

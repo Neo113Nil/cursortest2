@@ -4,7 +4,7 @@ package R7;
 public abstract class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final /* synthetic */ int f2762a = 0;
+    public static final /* synthetic */ int f2889a = 0;
 
     static {
         ThreadLocal[] threadLocalArr = new ThreadLocal[4];

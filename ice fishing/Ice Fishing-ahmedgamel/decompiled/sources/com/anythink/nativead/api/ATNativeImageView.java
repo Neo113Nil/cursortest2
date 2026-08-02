@@ -28,10 +28,10 @@ public class ATNativeImageView extends ImageView {
         String url;
         int width;
 
-        public a(String str, int i, int i6) {
+        public a(String str, int i, int i4) {
             this.url = str;
             this.width = i;
-            this.height = i6;
+            this.height = i4;
         }
 
         @Override // java.lang.Runnable
@@ -58,8 +58,8 @@ public class ATNativeImageView extends ImageView {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void loadImage(String str, final int i, final int i6) {
-        b.a(getContext()).a(new e(2, str), i, i6, new b.a() { // from class: com.anythink.nativead.api.ATNativeImageView.1
+    public void loadImage(String str, final int i, final int i4) {
+        b.a(getContext()).a(new e(2, str), i, i4, new b.a() { // from class: com.anythink.nativead.api.ATNativeImageView.1
             @Override // com.anythink.core.common.res.b.a
             public final void onFail(String str2, String str3) {
                 Log.e(ATNativeImageView.TAG, "curRetryCount=" + ATNativeImageView.this.retryCurCount + ", load: image load fail:" + str3);
@@ -70,7 +70,7 @@ public class ATNativeImageView extends ImageView {
                         return;
                     }
                     ATNativeImageView aTNativeImageView = ATNativeImageView.this;
-                    aTNativeImageView.retryRunnable = aTNativeImageView.new a(str2, i, i6);
+                    aTNativeImageView.retryRunnable = aTNativeImageView.new a(str2, i, i4);
                     t.b().a(ATNativeImageView.this.retryRunnable, ATNativeImageView.this.retryDelay);
                 } catch (Throwable th) {
                     Log.e(ATNativeImageView.TAG, "onFail error: ", th);
@@ -121,7 +121,7 @@ public class ATNativeImageView extends ImageView {
         }
     }
 
-    public void setImage(String str, int i, int i6) {
+    public void setImage(String str, int i, int i4) {
         if (TextUtils.isEmpty(str)) {
             Log.e(TAG, "load: url is empty!");
             return;
@@ -129,7 +129,7 @@ public class ATNativeImageView extends ImageView {
         this.mImageUrl = str;
         this.imageViewWeakReference = new WeakReference<>(this);
         this.retryCurCount = 0;
-        loadImage(str, i, i6);
+        loadImage(str, i, i4);
     }
 
     public void setRetryDelay(int i) {

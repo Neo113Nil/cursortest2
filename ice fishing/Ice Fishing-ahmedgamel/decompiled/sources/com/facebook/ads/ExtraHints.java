@@ -63,10 +63,10 @@ public class ExtraHints {
 
 
         /* renamed from: n, reason: collision with root package name */
-        public final String f23499n;
+        public final String f24284n;
 
         HintType(String str) {
-            this.f23499n = str;
+            this.f24284n = str;
         }
     }
 
@@ -154,7 +154,7 @@ public class ExtraHints {
         JSONObject jSONObject2 = new JSONObject();
         for (Map.Entry<HintType, String> entry : hashMap.entrySet()) {
             try {
-                jSONObject2.put(entry.getKey().f23499n, entry.getValue());
+                jSONObject2.put(entry.getKey().f24284n, entry.getValue());
             } catch (JSONException unused) {
             }
         }

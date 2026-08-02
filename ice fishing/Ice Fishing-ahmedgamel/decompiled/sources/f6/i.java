@@ -8,10 +8,10 @@ import java.util.Base64;
 public final class i implements g {
 
     /* renamed from: a, reason: collision with root package name */
-    public final byte[] f37528a;
+    public final byte[] f37490a;
 
     public i(byte[] bArr) {
-        this.f37528a = bArr;
+        this.f37490a = bArr;
     }
 
     @Override // f6.g
@@ -19,7 +19,7 @@ public final class i implements g {
         Base64.Encoder encoder;
         String encodeToString;
         encoder = Base64.getEncoder();
-        encodeToString = encoder.encodeToString(this.f37528a);
+        encodeToString = encoder.encodeToString(this.f37490a);
         return encodeToString;
     }
 
@@ -28,7 +28,7 @@ public final class i implements g {
             return true;
         }
         if (obj instanceof i) {
-            return Arrays.equals(this.f37528a, ((i) obj).f37528a);
+            return Arrays.equals(this.f37490a, ((i) obj).f37490a);
         }
         return false;
     }
@@ -40,11 +40,11 @@ public final class i implements g {
 
     @Override // f6.g
     public final Object getValue() {
-        return ByteBuffer.wrap(this.f37528a).asReadOnlyBuffer();
+        return ByteBuffer.wrap(this.f37490a).asReadOnlyBuffer();
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(this.f37528a);
+        return Arrays.hashCode(this.f37490a);
     }
 
     public final String toString() {

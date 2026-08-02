@@ -1,9 +1,9 @@
 package v8;
 
-import D.y;
+import D.x;
+import G3.e;
 import Q7.j;
-import a4.e;
-import d6.c;
+import Z2.d;
 import java.io.IOException;
 import java.io.InterruptedIOException;
 import java.net.IDN;
@@ -13,63 +13,63 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicBoolean;
-import q2.C4896n;
-import v7.AbstractC5129j;
-import v7.C5135p;
-import x.C5176n;
+import s2.C4945n;
+import v7.AbstractC5119j;
+import v7.C5125p;
+import x.C5175n;
 import y8.h;
 
 /* loaded from: classes2.dex */
 public final class a {
 
     /* renamed from: b, reason: collision with root package name */
-    public static final h f41447b;
+    public static final h f41226b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final List f41448c;
+    public static final List f41227c;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final a f41449d;
+    public static final a f41228d;
 
     /* renamed from: a, reason: collision with root package name */
-    public final C4896n f41450a;
+    public final C4945n f41229a;
 
     static {
         byte[] copyOf = Arrays.copyOf(new byte[]{42}, 1);
         kotlin.jvm.internal.h.d(copyOf, "copyOf(...)");
-        f41447b = new h(copyOf);
-        f41448c = c.k("*");
-        f41449d = new a(new C4896n(8));
+        f41226b = new h(copyOf);
+        f41227c = d.n("*");
+        f41228d = new a(new C4945n(8));
     }
 
-    public a(C4896n c4896n) {
-        this.f41450a = c4896n;
+    public a(C4945n c4945n) {
+        this.f41229a = c4945n;
     }
 
     public static List b(String str) {
-        List l02 = j.l0(str, new char[]{'.'});
-        if (!kotlin.jvm.internal.h.a(AbstractC5129j.F(l02), "")) {
-            return l02;
+        List B02 = j.B0(str, new char[]{'.'});
+        if (!kotlin.jvm.internal.h.a(AbstractC5119j.D(B02), "")) {
+            return B02;
         }
-        int size = l02.size() - 1;
+        int size = B02.size() - 1;
         if (size < 0) {
             size = 0;
         }
         if (size < 0) {
-            throw new IllegalArgumentException(y.k(size, "Requested element count ", " is less than zero.").toString());
+            throw new IllegalArgumentException(x.j(size, "Requested element count ", " is less than zero.").toString());
         }
-        C5135p c5135p = C5135p.f41442n;
+        C5125p c5125p = C5125p.f41221n;
         if (size == 0) {
-            return c5135p;
+            return c5125p;
         }
-        if (size >= l02.size()) {
-            return AbstractC5129j.L(l02);
+        if (size >= B02.size()) {
+            return AbstractC5119j.J(B02);
         }
         if (size == 1) {
-            return c.k(AbstractC5129j.A(l02));
+            return d.n(AbstractC5119j.y(B02));
         }
         ArrayList arrayList = new ArrayList(size);
-        Iterator it = l02.iterator();
+        Iterator it = B02.iterator();
         int i = 0;
         while (it.hasNext()) {
             arrayList.add(it.next());
@@ -79,7 +79,7 @@ public final class a {
             }
         }
         int size2 = arrayList.size();
-        return size2 != 0 ? size2 != 1 ? arrayList : c.k(arrayList.get(0)) : c5135p;
+        return size2 != 0 ? size2 != 1 ? arrayList : d.n(arrayList.get(0)) : c5125p;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:27:0x008c, code lost:
@@ -98,8 +98,8 @@ public final class a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:30:0x0099, code lost:
     
-        r6[r11] = v8.a.f41447b;
-        r12 = (y8.h) r3.f40194w;
+        r6[r11] = v8.a.f41226b;
+        r12 = (y8.h) r3.f40493w;
      */
     /* JADX WARN: Code restructure failed: missing block: B:31:0x00a1, code lost:
     
@@ -107,7 +107,7 @@ public final class a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:32:0x00a3, code lost:
     
-        r12 = a4.e.b(r12, r6, r11);
+        r12 = G3.e.n(r12, r6, r11);
      */
     /* JADX WARN: Code restructure failed: missing block: B:33:0x00a7, code lost:
     
@@ -132,7 +132,7 @@ public final class a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:39:0x00b7, code lost:
     
-        r7 = (y8.h) r3.f40195x;
+        r7 = (y8.h) r3.f40494x;
      */
     /* JADX WARN: Code restructure failed: missing block: B:40:0x00bb, code lost:
     
@@ -140,7 +140,7 @@ public final class a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:41:0x00bd, code lost:
     
-        r7 = a4.e.b(r7, r5, r6);
+        r7 = G3.e.n(r7, r5, r6);
      */
     /* JADX WARN: Code restructure failed: missing block: B:42:0x00c1, code lost:
     
@@ -156,7 +156,7 @@ public final class a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:47:0x00d1, code lost:
     
-        r3 = Q7.j.l0("!".concat(r7), new char[]{'.'});
+        r3 = Q7.j.B0("!".concat(r7), new char[]{'.'});
      */
     /* JADX WARN: Code restructure failed: missing block: B:49:0x0116, code lost:
     
@@ -220,11 +220,11 @@ public final class a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:67:0x0175, code lost:
     
-        r14.append((java.lang.CharSequence) com.anythink.core.common.d.j.f12378z);
+        r14.append((java.lang.CharSequence) com.anythink.core.common.d.j.f13164z);
      */
     /* JADX WARN: Code restructure failed: missing block: B:69:0x017a, code lost:
     
-        O3.b.c(r14, r4, null);
+        N3.C.y(r14, r4, null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:72:0x017e, code lost:
     
@@ -236,7 +236,7 @@ public final class a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:75:0x0197, code lost:
     
-        throw new java.lang.IllegalArgumentException(D.y.k(r2, "Requested element count ", " is less than zero.").toString());
+        throw new java.lang.IllegalArgumentException(D.x.j(r2, "Requested element count ", " is less than zero.").toString());
      */
     /* JADX WARN: Code restructure failed: missing block: B:76:0x013b, code lost:
     
@@ -253,11 +253,11 @@ public final class a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:79:0x00e4, code lost:
     
-        r3 = v8.a.f41448c;
+        r3 = v8.a.f41227c;
      */
     /* JADX WARN: Code restructure failed: missing block: B:80:0x00e7, code lost:
     
-        r4 = v7.C5135p.f41442n;
+        r4 = v7.C5125p.f41221n;
      */
     /* JADX WARN: Code restructure failed: missing block: B:81:0x00e9, code lost:
     
@@ -265,7 +265,7 @@ public final class a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:82:0x00eb, code lost:
     
-        r5 = Q7.j.l0(r9, new char[]{'.'});
+        r5 = Q7.j.B0(r9, new char[]{'.'});
      */
     /* JADX WARN: Code restructure failed: missing block: B:83:0x00f5, code lost:
     
@@ -273,7 +273,7 @@ public final class a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:84:0x00f7, code lost:
     
-        r4 = Q7.j.l0(r12, new char[]{'.'});
+        r4 = Q7.j.B0(r12, new char[]{'.'});
      */
     /* JADX WARN: Code restructure failed: missing block: B:86:0x0107, code lost:
     
@@ -324,66 +324,66 @@ public final class a {
         String unicode = IDN.toUnicode(str);
         kotlin.jvm.internal.h.b(unicode);
         List b9 = b(unicode);
-        C4896n c4896n = this.f41450a;
-        AtomicBoolean atomicBoolean = (AtomicBoolean) c4896n.f40192u;
+        C4945n c4945n = this.f41229a;
+        AtomicBoolean atomicBoolean = (AtomicBoolean) c4945n.f40491u;
         if (atomicBoolean.get() || !atomicBoolean.compareAndSet(false, true)) {
             try {
-                ((CountDownLatch) c4896n.f40193v).await();
+                ((CountDownLatch) c4945n.f40492v).await();
             } catch (InterruptedException unused) {
                 Thread.currentThread().interrupt();
             }
         } else {
-            boolean z3 = false;
+            boolean z6 = false;
             while (true) {
                 try {
                     try {
-                        c4896n.k();
+                        c4945n.k();
                         break;
                     } catch (InterruptedIOException unused2) {
                         Thread.interrupted();
-                        z3 = true;
+                        z6 = true;
                     } catch (IOException e9) {
-                        c4896n.f40196y = e9;
-                        if (z3) {
+                        c4945n.f40495y = e9;
+                        if (z6) {
                         }
                     }
                 } finally {
-                    if (z3) {
+                    if (z6) {
                         Thread.currentThread().interrupt();
                     }
                 }
             }
         }
-        if (((h) c4896n.f40194w) == null) {
+        if (((h) c4945n.f40493w) == null) {
             StringBuilder sb = new StringBuilder("Unable to load ");
-            sb.append(c4896n.f40197z);
+            sb.append(c4945n.f40496z);
             sb.append(" resource.");
             IllegalStateException illegalStateException = new IllegalStateException(sb.toString());
-            illegalStateException.initCause((IOException) c4896n.f40196y);
+            illegalStateException.initCause((IOException) c4945n.f40495y);
             throw illegalStateException;
         }
         int size = b9.size();
         h[] hVarArr = new h[size];
-        for (int i6 = 0; i6 < size; i6++) {
-            h hVar = h.f41954w;
-            hVarArr[i6] = C5176n.b((String) b9.get(i6));
+        for (int i4 = 0; i4 < size; i4++) {
+            h hVar = h.f41925w;
+            hVarArr[i4] = C5175n.d((String) b9.get(i4));
         }
-        int i9 = 0;
+        int i6 = 0;
         while (true) {
-            if (i9 >= size) {
+            if (i6 >= size) {
                 str2 = null;
                 break;
             }
-            h hVar2 = (h) c4896n.f40194w;
+            h hVar2 = (h) c4945n.f40493w;
             if (hVar2 == null) {
                 kotlin.jvm.internal.h.k("bytes");
                 throw null;
             }
-            str2 = e.b(hVar2, hVarArr, i9);
+            str2 = e.n(hVar2, hVarArr, i6);
             if (str2 != null) {
                 break;
             }
-            i9++;
+            i6++;
         }
     }
 }

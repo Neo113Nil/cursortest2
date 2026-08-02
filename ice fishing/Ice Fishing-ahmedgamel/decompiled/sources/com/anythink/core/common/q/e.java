@@ -23,19 +23,19 @@ import org.json.JSONObject;
 public final class e implements com.anythink.core.common.k.e {
 
     /* renamed from: a, reason: collision with root package name */
-    private static String f16020a = "anythink_s2s_reward";
+    private static String f16807a = "anythink_s2s_reward";
 
     /* renamed from: b, reason: collision with root package name */
-    private int f16021b = -1;
+    private int f16808b = -1;
 
     /* renamed from: c, reason: collision with root package name */
-    private String f16022c = "";
+    private String f16809c = "";
 
     /* renamed from: d, reason: collision with root package name */
-    private String f16023d = "";
+    private String f16810d = "";
 
     public final String b() {
-        return this.f16023d;
+        return this.f16810d;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -54,7 +54,7 @@ public final class e implements com.anythink.core.common.k.e {
                     O8.put("curr_ts", j6);
                     O8.put("ps_ct", lVar.ar());
                     O8.put(l.a.ay, lVar.bo());
-                    O8.put(k.f14324x, ak.c(aTBaseAdAdapter.getUnitGroupInfo()));
+                    O8.put(k.f15110x, ak.c(aTBaseAdAdapter.getUnitGroupInfo()));
                     return com.anythink.core.common.v.k.d(O8.toString());
                 }
                 return "";
@@ -67,7 +67,7 @@ public final class e implements com.anythink.core.common.k.e {
     }
 
     public final int a() {
-        return this.f16021b;
+        return this.f16808b;
     }
 
     @Override // com.anythink.core.common.k.e
@@ -83,13 +83,13 @@ public final class e implements com.anythink.core.common.k.e {
                         return;
                     }
                     final String aI = nVar2.aI();
-                    String g4 = nVar.g();
-                    if (TextUtils.isEmpty(g4) || TextUtils.equals(aI, g4)) {
+                    String g9 = nVar.g();
+                    if (TextUtils.isEmpty(g9) || TextUtils.equals(aI, g9)) {
                         str = aI;
                         str2 = "";
                     } else {
                         str2 = aI;
-                        str = g4;
+                        str = g9;
                     }
                     l a9 = com.anythink.core.d.n.a(t.b().g()).a(str);
                     if (a9 != null && a9.bG() == 1) {
@@ -110,12 +110,12 @@ public final class e implements com.anythink.core.common.k.e {
 
                                 @Override // com.anythink.core.common.m.q
                                 public final void onLoadError(int i, String str3, AdError adError) {
-                                    e.this.f16021b = -2;
+                                    e.this.f16808b = -2;
                                     if (adError != null) {
-                                        Log.e(e.f16020a, "S2S impression error! PlacementId: " + aI + ", " + adError.printStackTrace());
-                                        e.this.f16023d = adError.toString();
+                                        Log.e(e.f16807a, "S2S impression error! PlacementId: " + aI + ", " + adError.printStackTrace());
+                                        e.this.f16810d = adError.toString();
                                         try {
-                                            e.this.f16021b = Integer.parseInt(adError.getPlatformCode());
+                                            e.this.f16808b = Integer.parseInt(adError.getPlatformCode());
                                         } catch (Exception unused) {
                                         }
                                     }
@@ -124,14 +124,14 @@ public final class e implements com.anythink.core.common.k.e {
                                 @Override // com.anythink.core.common.m.q
                                 public final void onLoadFinish(int i, Object obj) {
                                     if (t.b().F()) {
-                                        Log.i(e.f16020a, "S2S impression succeeded. PlacementId: " + aI + ":" + obj);
+                                        Log.i(e.f16807a, "S2S impression succeeded. PlacementId: " + aI + ":" + obj);
                                     }
                                     if (obj != null) {
                                         try {
                                             JSONObject jSONObject = new JSONObject(obj.toString());
-                                            e.this.f16021b = jSONObject.optInt("code");
-                                            if (e.this.f16021b == 0) {
-                                                e.this.f16022c = jSONObject.optString("data");
+                                            e.this.f16808b = jSONObject.optInt("code");
+                                            if (e.this.f16808b == 0) {
+                                                e.this.f16809c = jSONObject.optString("data");
                                             }
                                         } catch (Exception e9) {
                                             e9.printStackTrace();
@@ -162,13 +162,13 @@ public final class e implements com.anythink.core.common.k.e {
                 String str2;
                 try {
                     final String aI = nVar.aI();
-                    String g4 = nVar.g();
-                    if (TextUtils.isEmpty(g4) || TextUtils.equals(aI, g4)) {
+                    String g9 = nVar.g();
+                    if (TextUtils.isEmpty(g9) || TextUtils.equals(aI, g9)) {
                         str = aI;
                         str2 = "";
                     } else {
                         str2 = aI;
-                        str = g4;
+                        str = g9;
                     }
                     l a9 = com.anythink.core.d.n.a(t.b().g()).a(str);
                     if (a9.v() != 1) {
@@ -195,13 +195,13 @@ public final class e implements com.anythink.core.common.k.e {
 
                             @Override // com.anythink.core.common.m.q
                             public final void onLoadError(int i, String str3, AdError adError) {
-                                Log.e(e.f16020a, "S2S reward error! PlacementId: " + aI + ", " + adError.printStackTrace());
+                                Log.e(e.f16807a, "S2S reward error! PlacementId: " + aI + ", " + adError.printStackTrace());
                             }
 
                             @Override // com.anythink.core.common.m.q
                             public final void onLoadFinish(int i, Object obj) {
                                 if (t.b().F()) {
-                                    Log.i(e.f16020a, "S2S reward succeeded. PlacementId: " + aI);
+                                    Log.i(e.f16807a, "S2S reward succeeded. PlacementId: " + aI);
                                 }
                             }
 
@@ -242,12 +242,12 @@ public final class e implements com.anythink.core.common.k.e {
                 jSONObject.put("show_id", nVar.z());
                 jSONObject.put("unit_id", nVar.M());
                 jSONObject.put("nw_firm_id", nVar.Y());
-                jSONObject.put("scenario_id", nVar.f14011F);
+                jSONObject.put("scenario_id", nVar.f14797F);
                 jSONObject.put("rv_start_ts", j6);
                 jSONObject.put("r_callback_ts", j9);
                 jSONObject.put("rv_play_dur", j9 - j6);
                 jSONObject.put("tp_bid_id", nVar.o());
-                jSONObject.put(b.a.f12930f, str3);
+                jSONObject.put(b.a.f13716f, str3);
                 userId = aTBaseAdAdapter.getUserId();
                 if (TextUtils.isEmpty(userId) || TextUtils.isEmpty(str2)) {
                     str4 = userId;
@@ -274,8 +274,8 @@ public final class e implements com.anythink.core.common.k.e {
                 if (!TextUtils.isEmpty(str2)) {
                     jSONObject.put(l.a.an, str2);
                 }
-                jSONObject.put("i_t", this.f16022c);
-                jSONObject.put("i_t_c", this.f16021b);
+                jSONObject.put("i_t", this.f16809c);
+                jSONObject.put("i_t_c", this.f16808b);
                 return jSONObject.toString();
             }
             JSONObject jSONObject2 = new JSONObject();
@@ -284,12 +284,12 @@ public final class e implements com.anythink.core.common.k.e {
             jSONObject2.put("show_id", nVar.z());
             jSONObject2.put("unit_id", nVar.M());
             jSONObject2.put("nw_firm_id", nVar.Y());
-            jSONObject2.put("scenario_id", nVar.f14011F);
+            jSONObject2.put("scenario_id", nVar.f14797F);
             jSONObject2.put("rv_start_ts", j6);
             jSONObject2.put("r_callback_ts", j9);
             jSONObject2.put("rv_play_dur", j9 - j6);
             jSONObject2.put("tp_bid_id", nVar.o());
-            jSONObject2.put(b.a.f12930f, str3);
+            jSONObject2.put(b.a.f13716f, str3);
             userId = aTBaseAdAdapter.getUserId();
             if (TextUtils.isEmpty(userId)) {
             }
@@ -311,8 +311,8 @@ public final class e implements com.anythink.core.common.k.e {
             jSONObject2.put(l.a.i, a92.toString());
             if (!TextUtils.isEmpty(str2)) {
             }
-            jSONObject2.put("i_t", this.f16022c);
-            jSONObject2.put("i_t_c", this.f16021b);
+            jSONObject2.put("i_t", this.f16809c);
+            jSONObject2.put("i_t_c", this.f16808b);
             return jSONObject2.toString();
         } catch (Throwable unused2) {
             return "";

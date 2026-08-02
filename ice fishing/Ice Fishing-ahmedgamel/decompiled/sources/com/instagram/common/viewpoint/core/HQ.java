@@ -6,9 +6,9 @@ public final class HQ {
     public final int A01;
     public final boolean A02;
 
-    public HQ(int i, int i6, boolean z3) {
+    public HQ(int i, int i4, boolean z6) {
         this.A00 = i;
-        this.A01 = i6;
-        this.A02 = z3;
+        this.A01 = i4;
+        this.A02 = z6;
     }
 }

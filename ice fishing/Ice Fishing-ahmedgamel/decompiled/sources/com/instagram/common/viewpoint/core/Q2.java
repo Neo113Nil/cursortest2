@@ -4,9 +4,9 @@ import android.view.accessibility.AccessibilityNodeInfo;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public class Q2 {
-    public abstract Object A00(int i, int i6, int i9, int i10, boolean z3, boolean z6);
+    public abstract Object A00(int i, int i4, int i6, int i9, boolean z6, boolean z9);
 
-    public abstract Object A01(int i, int i6, boolean z3, int i9);
+    public abstract Object A01(int i, int i4, boolean z6, int i6);
 
     public abstract String A02(AccessibilityNodeInfo accessibilityNodeInfo);
 

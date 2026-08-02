@@ -23,50 +23,50 @@ import java.util.List;
 public class VpMainImgAnimatorView extends RelativeLayout implements c {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f10583a = "VpMainImgView";
+    private static final String f11369a = "VpMainImgView";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final int f10584b = 100;
+    private static final int f11370b = 100;
 
     /* renamed from: c, reason: collision with root package name */
-    private static final int f10585c = 1500;
+    private static final int f11371c = 1500;
 
     /* renamed from: d, reason: collision with root package name */
-    private static final int f10586d = 500;
+    private static final int f11372d = 500;
 
     /* renamed from: e, reason: collision with root package name */
-    private static final int f10587e = 8;
+    private static final int f11373e = 8;
 
     /* renamed from: f, reason: collision with root package name */
-    private WrapRoundImageView f10588f;
+    private WrapRoundImageView f11374f;
 
     /* renamed from: g, reason: collision with root package name */
-    private WrapRoundImageView f10589g;
+    private WrapRoundImageView f11375g;
 
     /* renamed from: h, reason: collision with root package name */
-    private CircleIndicatorView f10590h;
+    private CircleIndicatorView f11376h;
     private CircleIndicatorView i;
 
     /* renamed from: j, reason: collision with root package name */
-    private int f10591j;
+    private int f11377j;
 
     /* renamed from: k, reason: collision with root package name */
-    private float f10592k;
+    private float f11378k;
 
     /* renamed from: l, reason: collision with root package name */
-    private float f10593l;
+    private float f11379l;
 
     /* renamed from: m, reason: collision with root package name */
-    private final Handler f10594m;
+    private final Handler f11380m;
 
     /* renamed from: n, reason: collision with root package name */
-    private ObjectAnimator f10595n;
+    private ObjectAnimator f11381n;
 
     /* renamed from: o, reason: collision with root package name */
-    private ObjectAnimator f10596o;
+    private ObjectAnimator f11382o;
 
     /* renamed from: p, reason: collision with root package name */
-    private AnimatorSet f10597p;
+    private AnimatorSet f11383p;
 
     /* renamed from: com.anythink.basead.ui.animplayerview.viewpager.VpMainImgAnimatorView$2, reason: invalid class name */
     public class AnonymousClass2 implements Runnable {
@@ -82,10 +82,10 @@ public class VpMainImgAnimatorView extends RelativeLayout implements c {
     public class a implements Animator.AnimatorListener {
 
         /* renamed from: b, reason: collision with root package name */
-        private final View f10602b;
+        private final View f11388b;
 
         public a(View view) {
-            this.f10602b = view;
+            this.f11388b = view;
         }
 
         @Override // android.animation.Animator.AnimatorListener
@@ -94,11 +94,11 @@ public class VpMainImgAnimatorView extends RelativeLayout implements c {
 
         @Override // android.animation.Animator.AnimatorListener
         public final void onAnimationEnd(Animator animator) {
-            View view = this.f10602b;
+            View view = this.f11388b;
             if (view == null || view.getTranslationX() >= 0.0f) {
                 return;
             }
-            this.f10602b.setTranslationX(VpMainImgAnimatorView.this.f10593l);
+            this.f11388b.setTranslationX(VpMainImgAnimatorView.this.f11379l);
         }
 
         @Override // android.animation.Animator.AnimatorListener
@@ -115,7 +115,7 @@ public class VpMainImgAnimatorView extends RelativeLayout implements c {
     }
 
     private void a() {
-        this.f10590h = new CircleIndicatorView(getContext());
+        this.f11376h = new CircleIndicatorView(getContext());
         this.i = new CircleIndicatorView(getContext());
         int a9 = q.a(getContext(), 8.0f);
         LinearLayout linearLayout = new LinearLayout(getContext());
@@ -123,7 +123,7 @@ public class VpMainImgAnimatorView extends RelativeLayout implements c {
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(a9, a9);
         LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(a9, a9);
         layoutParams2.leftMargin = q.a(getContext(), 4.0f);
-        linearLayout.addView(this.f10590h, layoutParams);
+        linearLayout.addView(this.f11376h, layoutParams);
         linearLayout.addView(this.i, layoutParams2);
         RelativeLayout.LayoutParams layoutParams3 = new RelativeLayout.LayoutParams(-2, -2);
         layoutParams3.addRule(12);
@@ -139,33 +139,33 @@ public class VpMainImgAnimatorView extends RelativeLayout implements c {
             return;
         }
         removeAllViews();
-        this.f10588f = wrapRoundImageViewArr[0];
-        this.f10589g = wrapRoundImageViewArr[1];
+        this.f11374f = wrapRoundImageViewArr[0];
+        this.f11375g = wrapRoundImageViewArr[1];
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -1);
         RelativeLayout.LayoutParams layoutParams2 = new RelativeLayout.LayoutParams(-1, -1);
         layoutParams.addRule(13);
         layoutParams2.addRule(13);
-        this.f10588f.setLayoutParams(layoutParams);
-        this.f10589g.setLayoutParams(layoutParams2);
-        addView(this.f10588f);
-        addView(this.f10589g);
+        this.f11374f.setLayoutParams(layoutParams);
+        this.f11375g.setLayoutParams(layoutParams2);
+        addView(this.f11374f);
+        addView(this.f11375g);
         int i = getContext().getResources().getDisplayMetrics().widthPixels;
-        int i6 = getContext().getResources().getDisplayMetrics().heightPixels;
-        this.f10588f.setBitmapAndResize(bitmap, i, i6);
-        this.f10589g.setBitmapAndResize(bitmap, i, i6);
-        ViewGroup.LayoutParams layoutParams3 = this.f10588f.getLayoutParams();
-        this.f10591j = layoutParams3.width;
-        int i9 = layoutParams3.height;
+        int i4 = getContext().getResources().getDisplayMetrics().heightPixels;
+        this.f11374f.setBitmapAndResize(bitmap, i, i4);
+        this.f11375g.setBitmapAndResize(bitmap, i, i4);
+        ViewGroup.LayoutParams layoutParams3 = this.f11374f.getLayoutParams();
+        this.f11377j = layoutParams3.width;
+        int i6 = layoutParams3.height;
         ViewGroup.LayoutParams layoutParams4 = getLayoutParams();
-        layoutParams4.width = this.f10591j;
-        layoutParams4.height = i9;
+        layoutParams4.width = this.f11377j;
+        layoutParams4.height = i6;
         setLayoutParams(layoutParams4);
-        float translationX = this.f10588f.getTranslationX();
-        this.f10592k = translationX;
-        float f3 = translationX + this.f10591j;
-        this.f10593l = f3;
-        this.f10589g.setTranslationX(f3);
-        this.f10590h = new CircleIndicatorView(getContext());
+        float translationX = this.f11374f.getTranslationX();
+        this.f11378k = translationX;
+        float f2 = translationX + this.f11377j;
+        this.f11379l = f2;
+        this.f11375g.setTranslationX(f2);
+        this.f11376h = new CircleIndicatorView(getContext());
         this.i = new CircleIndicatorView(getContext());
         int a9 = q.a(getContext(), 8.0f);
         LinearLayout linearLayout = new LinearLayout(getContext());
@@ -173,7 +173,7 @@ public class VpMainImgAnimatorView extends RelativeLayout implements c {
         LinearLayout.LayoutParams layoutParams5 = new LinearLayout.LayoutParams(a9, a9);
         LinearLayout.LayoutParams layoutParams6 = new LinearLayout.LayoutParams(a9, a9);
         layoutParams6.leftMargin = q.a(getContext(), 4.0f);
-        linearLayout.addView(this.f10590h, layoutParams5);
+        linearLayout.addView(this.f11376h, layoutParams5);
         linearLayout.addView(this.i, layoutParams6);
         RelativeLayout.LayoutParams layoutParams7 = new RelativeLayout.LayoutParams(-2, -2);
         layoutParams7.addRule(12);
@@ -185,7 +185,7 @@ public class VpMainImgAnimatorView extends RelativeLayout implements c {
 
     @Override // com.anythink.basead.ui.animplayerview.b
     public void pause() {
-        AnimatorSet animatorSet = this.f10597p;
+        AnimatorSet animatorSet = this.f11383p;
         if (animatorSet != null) {
             animatorSet.pause();
         }
@@ -198,15 +198,15 @@ public class VpMainImgAnimatorView extends RelativeLayout implements c {
 
     @Override // com.anythink.basead.ui.animplayerview.b
     public void resume() {
-        AnimatorSet animatorSet = this.f10597p;
+        AnimatorSet animatorSet = this.f11383p;
         if (animatorSet != null) {
             animatorSet.resume();
             return;
         }
-        Handler handler = this.f10594m;
+        Handler handler = this.f11380m;
         if (handler != null) {
             handler.removeMessages(100);
-            this.f10594m.sendEmptyMessageDelayed(100, 1500L);
+            this.f11380m.sendEmptyMessageDelayed(100, 1500L);
         }
     }
 
@@ -216,11 +216,11 @@ public class VpMainImgAnimatorView extends RelativeLayout implements c {
 
     @Override // com.anythink.basead.ui.animplayerview.b
     public void start() {
-        if (this.f10597p != null) {
+        if (this.f11383p != null) {
             resume();
             return;
         }
-        Handler handler = this.f10594m;
+        Handler handler = this.f11380m;
         if (handler != null) {
             handler.sendEmptyMessageDelayed(100, 1500L);
         }
@@ -228,25 +228,25 @@ public class VpMainImgAnimatorView extends RelativeLayout implements c {
 
     @Override // com.anythink.basead.ui.animplayerview.b
     public void stop() {
-        Handler handler = this.f10594m;
+        Handler handler = this.f11380m;
         if (handler != null) {
             handler.removeMessages(100);
         }
-        ObjectAnimator objectAnimator = this.f10595n;
+        ObjectAnimator objectAnimator = this.f11381n;
         if (objectAnimator != null) {
             objectAnimator.removeAllListeners();
-            this.f10595n = null;
+            this.f11381n = null;
         }
-        ObjectAnimator objectAnimator2 = this.f10596o;
+        ObjectAnimator objectAnimator2 = this.f11382o;
         if (objectAnimator2 != null) {
             objectAnimator2.removeAllListeners();
-            this.f10596o = null;
+            this.f11382o = null;
         }
-        AnimatorSet animatorSet = this.f10597p;
+        AnimatorSet animatorSet = this.f11383p;
         if (animatorSet != null) {
             animatorSet.removeAllListeners();
-            this.f10597p.cancel();
-            this.f10597p = null;
+            this.f11383p.cancel();
+            this.f11383p = null;
         }
     }
 
@@ -257,24 +257,24 @@ public class VpMainImgAnimatorView extends RelativeLayout implements c {
     /* JADX INFO: Access modifiers changed from: private */
     public void b() {
         WrapRoundImageView wrapRoundImageView;
-        if (this.f10590h == null || this.i == null || (wrapRoundImageView = this.f10588f) == null) {
+        if (this.f11376h == null || this.i == null || (wrapRoundImageView = this.f11374f) == null) {
             return;
         }
-        if (wrapRoundImageView.getTranslationX() == this.f10592k) {
-            this.f10590h.setSelectStatus(true);
+        if (wrapRoundImageView.getTranslationX() == this.f11378k) {
+            this.f11376h.setSelectStatus(true);
             this.i.setSelectStatus(false);
         } else {
-            this.f10590h.setSelectStatus(false);
+            this.f11376h.setSelectStatus(false);
             this.i.setSelectStatus(true);
         }
     }
 
     private void c() {
-        WrapRoundImageView wrapRoundImageView = this.f10588f;
-        if (wrapRoundImageView == null || this.f10589g == null) {
+        WrapRoundImageView wrapRoundImageView = this.f11374f;
+        if (wrapRoundImageView == null || this.f11375g == null) {
             return;
         }
-        if (this.f10591j == 0) {
+        if (this.f11377j == 0) {
             wrapRoundImageView.post(new AnonymousClass2());
         } else {
             d();
@@ -283,17 +283,17 @@ public class VpMainImgAnimatorView extends RelativeLayout implements c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void d() {
-        float[] a9 = a(this.f10588f);
-        float[] a10 = a(this.f10589g);
-        this.f10595n = a(this.f10595n, this.f10588f, a9[0], a9[1]);
-        this.f10596o = a(this.f10596o, this.f10589g, a10[0], a10[1]);
-        if (this.f10597p == null) {
+        float[] a9 = a(this.f11374f);
+        float[] a10 = a(this.f11375g);
+        this.f11381n = a(this.f11381n, this.f11374f, a9[0], a9[1]);
+        this.f11382o = a(this.f11382o, this.f11375g, a10[0], a10[1]);
+        if (this.f11383p == null) {
             AnimatorSet animatorSet = new AnimatorSet();
-            this.f10597p = animatorSet;
-            animatorSet.playTogether(this.f10595n, this.f10596o);
-            this.f10597p.setDuration(500L);
-            this.f10597p.setInterpolator(new AccelerateDecelerateInterpolator());
-            this.f10597p.addListener(new Animator.AnimatorListener() { // from class: com.anythink.basead.ui.animplayerview.viewpager.VpMainImgAnimatorView.3
+            this.f11383p = animatorSet;
+            animatorSet.playTogether(this.f11381n, this.f11382o);
+            this.f11383p.setDuration(500L);
+            this.f11383p.setInterpolator(new AccelerateDecelerateInterpolator());
+            this.f11383p.addListener(new Animator.AnimatorListener() { // from class: com.anythink.basead.ui.animplayerview.viewpager.VpMainImgAnimatorView.3
                 @Override // android.animation.Animator.AnimatorListener
                 public final void onAnimationCancel(Animator animator) {
                 }
@@ -301,9 +301,9 @@ public class VpMainImgAnimatorView extends RelativeLayout implements c {
                 @Override // android.animation.Animator.AnimatorListener
                 public final void onAnimationEnd(Animator animator) {
                     VpMainImgAnimatorView.this.b();
-                    if (VpMainImgAnimatorView.this.f10594m != null) {
-                        VpMainImgAnimatorView.this.f10594m.removeMessages(100);
-                        VpMainImgAnimatorView.this.f10594m.sendEmptyMessageDelayed(100, 1500L);
+                    if (VpMainImgAnimatorView.this.f11380m != null) {
+                        VpMainImgAnimatorView.this.f11380m.removeMessages(100);
+                        VpMainImgAnimatorView.this.f11380m.sendEmptyMessageDelayed(100, 1500L);
                     }
                 }
 
@@ -316,12 +316,12 @@ public class VpMainImgAnimatorView extends RelativeLayout implements c {
                 }
             });
         }
-        this.f10597p.start();
+        this.f11383p.start();
     }
 
     public VpMainImgAnimatorView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f10594m = new Handler(Looper.getMainLooper()) { // from class: com.anythink.basead.ui.animplayerview.viewpager.VpMainImgAnimatorView.1
+        this.f11380m = new Handler(Looper.getMainLooper()) { // from class: com.anythink.basead.ui.animplayerview.viewpager.VpMainImgAnimatorView.1
             @Override // android.os.Handler
             public final void handleMessage(Message message) {
                 if (message.what == 100) {
@@ -333,35 +333,35 @@ public class VpMainImgAnimatorView extends RelativeLayout implements c {
 
     private float[] a(View view) {
         float translationX = view.getTranslationX();
-        float f3 = this.f10592k;
-        if (translationX != f3) {
-            f3 = this.f10593l;
+        float f2 = this.f11378k;
+        if (translationX != f2) {
+            f2 = this.f11379l;
         }
         float translationX2 = view.getTranslationX();
-        float f9 = this.f10592k;
+        float f9 = this.f11378k;
         if (translationX2 == f9) {
-            f9 = -this.f10593l;
+            f9 = -this.f11379l;
         }
-        return new float[]{f3, f9};
+        return new float[]{f2, f9};
     }
 
-    private ObjectAnimator a(ObjectAnimator objectAnimator, View view, float f3, float f9) {
+    private ObjectAnimator a(ObjectAnimator objectAnimator, View view, float f2, float f9) {
         if (objectAnimator == null) {
             objectAnimator = new ObjectAnimator();
             objectAnimator.setPropertyName("translationX");
             objectAnimator.addListener(new a(view));
         }
         objectAnimator.setTarget(view);
-        objectAnimator.setFloatValues(f3, f9);
+        objectAnimator.setFloatValues(f2, f9);
         return objectAnimator;
     }
 
     public static /* synthetic */ void a(VpMainImgAnimatorView vpMainImgAnimatorView) {
-        WrapRoundImageView wrapRoundImageView = vpMainImgAnimatorView.f10588f;
-        if (wrapRoundImageView == null || vpMainImgAnimatorView.f10589g == null) {
+        WrapRoundImageView wrapRoundImageView = vpMainImgAnimatorView.f11374f;
+        if (wrapRoundImageView == null || vpMainImgAnimatorView.f11375g == null) {
             return;
         }
-        if (vpMainImgAnimatorView.f10591j == 0) {
+        if (vpMainImgAnimatorView.f11377j == 0) {
             wrapRoundImageView.post(vpMainImgAnimatorView.new AnonymousClass2());
         } else {
             vpMainImgAnimatorView.d();

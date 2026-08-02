@@ -6,60 +6,60 @@ import android.net.Uri;
 public final class z implements h {
 
     /* renamed from: a, reason: collision with root package name */
-    private final h f8277a;
+    private final h f9063a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final g f8278b;
+    private final g f9064b;
 
     /* renamed from: c, reason: collision with root package name */
-    private boolean f8279c;
+    private boolean f9065c;
 
     /* renamed from: d, reason: collision with root package name */
-    private long f8280d;
+    private long f9066d;
 
     public z(h hVar, g gVar) {
-        this.f8277a = (h) com.anythink.basead.exoplayer.k.a.a(hVar);
-        this.f8278b = (g) com.anythink.basead.exoplayer.k.a.a(gVar);
+        this.f9063a = (h) com.anythink.basead.exoplayer.k.a.a(hVar);
+        this.f9064b = (g) com.anythink.basead.exoplayer.k.a.a(gVar);
     }
 
     @Override // com.anythink.basead.exoplayer.j.h
     public final long a(k kVar) {
-        long a9 = this.f8277a.a(kVar);
-        this.f8280d = a9;
+        long a9 = this.f9063a.a(kVar);
+        this.f9066d = a9;
         if (a9 == 0) {
             return 0L;
         }
-        if (kVar.f8141g == -1 && a9 != -1) {
-            kVar = new k(kVar.f8137c, kVar.f8139e, kVar.f8140f, a9, kVar.f8142h, kVar.i);
+        if (kVar.f8927g == -1 && a9 != -1) {
+            kVar = new k(kVar.f8923c, kVar.f8925e, kVar.f8926f, a9, kVar.f8928h, kVar.i);
         }
-        this.f8279c = true;
-        this.f8278b.a(kVar);
-        return this.f8280d;
+        this.f9065c = true;
+        this.f9064b.a(kVar);
+        return this.f9066d;
     }
 
     @Override // com.anythink.basead.exoplayer.j.h
     public final void b() {
         try {
-            this.f8277a.b();
+            this.f9063a.b();
         } finally {
-            if (this.f8279c) {
-                this.f8279c = false;
-                this.f8278b.a();
+            if (this.f9065c) {
+                this.f9065c = false;
+                this.f9064b.a();
             }
         }
     }
 
     @Override // com.anythink.basead.exoplayer.j.h
-    public final int a(byte[] bArr, int i, int i6) {
-        if (this.f8280d == 0) {
+    public final int a(byte[] bArr, int i, int i4) {
+        if (this.f9066d == 0) {
             return -1;
         }
-        int a9 = this.f8277a.a(bArr, i, i6);
+        int a9 = this.f9063a.a(bArr, i, i4);
         if (a9 > 0) {
-            this.f8278b.a(bArr, i, a9);
-            long j6 = this.f8280d;
+            this.f9064b.a(bArr, i, a9);
+            long j6 = this.f9066d;
             if (j6 != -1) {
-                this.f8280d = j6 - a9;
+                this.f9066d = j6 - a9;
             }
         }
         return a9;
@@ -67,6 +67,6 @@ public final class z implements h {
 
     @Override // com.anythink.basead.exoplayer.j.h
     public final Uri a() {
-        return this.f8277a.a();
+        return this.f9063a.a();
     }
 }

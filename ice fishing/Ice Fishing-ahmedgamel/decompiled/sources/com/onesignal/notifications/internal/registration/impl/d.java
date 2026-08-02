@@ -1,12 +1,12 @@
 package com.onesignal.notifications.internal.registration.impl;
 
 import I7.p;
-import S7.AbstractC0406y;
-import S7.InterfaceC0404w;
+import S7.AbstractC0410y;
+import S7.InterfaceC0408w;
 import com.amazon.device.messaging.ADM;
 import kotlin.jvm.internal.r;
 import u7.v;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class d implements C5.b, c {
@@ -18,8 +18,8 @@ public final class d implements C5.b, c {
         int label;
         /* synthetic */ Object result;
 
-        public a(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public a(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -37,20 +37,20 @@ public final class d implements C5.b, c {
         final /* synthetic */ d this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public b(r rVar, d dVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public b(r rVar, d dVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$registrationId = rVar;
             this.this$0 = dVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return new b(this.$registrationId, this.this$0, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return new b(this.$registrationId, this.this$0, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((b) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((b) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
@@ -58,16 +58,16 @@ public final class d implements C5.b, c {
             r rVar;
             String str;
             r rVar2;
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 rVar = this.$registrationId;
                 com.onesignal.common.threading.f fVar = this.this$0.waiter;
                 if (fVar == null) {
                     str = null;
-                    rVar.f38717n = str;
-                    return v.f41353a;
+                    rVar.f38644n = str;
+                    return v.f41073a;
                 }
                 this.L$0 = rVar;
                 this.label = 1;
@@ -82,13 +82,13 @@ public final class d implements C5.b, c {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 rVar2 = (r) this.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
             r rVar3 = rVar2;
             str = (String) obj;
             rVar = rVar3;
-            rVar.f38717n = str;
-            return v.f41353a;
+            rVar.f38644n = str;
+            return v.f41073a;
         }
     }
 
@@ -98,12 +98,12 @@ public final class d implements C5.b, c {
     }
 
     @Override // com.onesignal.notifications.internal.registration.impl.c
-    public Object fireCallback(String str, InterfaceC5267d interfaceC5267d) {
+    public Object fireCallback(String str, InterfaceC5240d interfaceC5240d) {
         com.onesignal.common.threading.f fVar = this.waiter;
         if (fVar != null) {
             fVar.wake(str);
         }
-        return v.f41353a;
+        return v.f41073a;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:12:0x0092  */
@@ -114,34 +114,34 @@ public final class d implements C5.b, c {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object registerForPush(InterfaceC5267d interfaceC5267d) {
+    public Object registerForPush(InterfaceC5240d interfaceC5240d) {
         a aVar;
         int i;
         r rVar;
-        if (interfaceC5267d instanceof a) {
-            aVar = (a) interfaceC5267d;
-            int i6 = aVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                aVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof a) {
+            aVar = (a) interfaceC5240d;
+            int i4 = aVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                aVar.label = i4 - Integer.MIN_VALUE;
                 Object obj = aVar.result;
-                A7.a aVar2 = A7.a.f58n;
+                A7.a aVar2 = A7.a.f215n;
                 i = aVar.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     this.waiter = new com.onesignal.common.threading.f();
                     ADM adm = new ADM(this._applicationService.getAppContext());
                     r rVar2 = new r();
                     String registrationId = adm.getRegistrationId();
-                    rVar2.f38717n = registrationId;
+                    rVar2.f38644n = registrationId;
                     if (registrationId != null) {
-                        com.onesignal.debug.internal.logging.b.debug$default("ADM Already registered with ID:" + ((String) rVar2.f38717n), null, 2, null);
-                        return new C5.a((String) rVar2.f38717n, Z5.f.SUBSCRIBED);
+                        com.onesignal.debug.internal.logging.b.debug$default("ADM Already registered with ID:" + ((String) rVar2.f38644n), null, 2, null);
+                        return new C5.a((String) rVar2.f38644n, Z5.f.SUBSCRIBED);
                     }
                     adm.startRegister();
                     b bVar = new b(rVar2, this, null);
                     aVar.L$0 = rVar2;
                     aVar.label = 1;
-                    if (AbstractC0406y.z(30000L, bVar, aVar) == aVar2) {
+                    if (AbstractC0410y.z(30000L, bVar, aVar) == aVar2) {
                         return aVar2;
                     }
                     rVar = rVar2;
@@ -150,23 +150,23 @@ public final class d implements C5.b, c {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     rVar = (r) aVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
-                if (rVar.f38717n != null) {
+                if (rVar.f38644n != null) {
                     com.onesignal.debug.internal.logging.b.info$default("com.onesignal.ADMMessageHandler timed out, please check that your have the receiver, service, and your package name matches(NOTE: Case Sensitive) per the OneSignal instructions.", null, 2, null);
                     return new C5.a(null, Z5.f.ERROR);
                 }
-                com.onesignal.debug.internal.logging.b.debug$default("ADM registered with ID:" + ((String) rVar.f38717n), null, 2, null);
-                return new C5.a((String) rVar.f38717n, Z5.f.SUBSCRIBED);
+                com.onesignal.debug.internal.logging.b.debug$default("ADM registered with ID:" + ((String) rVar.f38644n), null, 2, null);
+                return new C5.a((String) rVar.f38644n, Z5.f.SUBSCRIBED);
             }
         }
-        aVar = new a(interfaceC5267d);
+        aVar = new a(interfaceC5240d);
         Object obj2 = aVar.result;
-        A7.a aVar22 = A7.a.f58n;
+        A7.a aVar22 = A7.a.f215n;
         i = aVar.label;
         if (i != 0) {
         }
-        if (rVar.f38717n != null) {
+        if (rVar.f38644n != null) {
         }
     }
 }

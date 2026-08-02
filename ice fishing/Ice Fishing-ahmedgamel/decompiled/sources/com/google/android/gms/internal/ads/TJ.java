@@ -6,23 +6,23 @@ package com.google.android.gms.internal.ads;
 public final class TJ {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final TJ f27717n;
+    public static final TJ f28500n;
 
     /* renamed from: u, reason: collision with root package name */
-    public static final TJ f27718u;
+    public static final TJ f28501u;
 
     /* renamed from: v, reason: collision with root package name */
-    public static final /* synthetic */ TJ[] f27719v;
+    public static final /* synthetic */ TJ[] f28502v;
 
     static {
         TJ tj = new TJ("IEEE_P1363", 0);
-        f27717n = tj;
+        f28500n = tj;
         TJ tj2 = new TJ("DER", 1);
-        f27718u = tj2;
-        f27719v = new TJ[]{tj, tj2};
+        f28501u = tj2;
+        f28502v = new TJ[]{tj, tj2};
     }
 
     public static TJ[] values() {
-        return (TJ[]) f27719v.clone();
+        return (TJ[]) f28502v.clone();
     }
 }

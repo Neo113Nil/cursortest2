@@ -11,24 +11,24 @@ import y8.z;
 public final class a extends x implements y8.x {
 
     /* renamed from: u, reason: collision with root package name */
-    public final p f38479u;
+    public final p f38491u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final long f38480v;
+    public final long f38492v;
 
     public a(p pVar, long j6) {
-        this.f38479u = pVar;
-        this.f38480v = j6;
+        this.f38491u = pVar;
+        this.f38492v = j6;
     }
 
     @Override // y8.x
     public final z L() {
-        return z.f41999d;
+        return z.f41970d;
     }
 
     @Override // i8.x
     public final long b() {
-        return this.f38480v;
+        return this.f38492v;
     }
 
     @Override // y8.x
@@ -39,7 +39,7 @@ public final class a extends x implements y8.x {
 
     @Override // i8.x
     public final p j() {
-        return this.f38479u;
+        return this.f38491u;
     }
 
     @Override // i8.x

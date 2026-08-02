@@ -17,18 +17,18 @@ public final class L3 {
     public boolean A09;
     public boolean A0A;
     public boolean A0B;
-    public final InterfaceC0947Hd A0C;
+    public final InterfaceC0967Hd A0C;
 
-    public L3(InterfaceC0947Hd interfaceC0947Hd) {
-        this.A0C = interfaceC0947Hd;
+    public L3(InterfaceC0967Hd interfaceC0967Hd) {
+        this.A0C = interfaceC0967Hd;
     }
 
     private void A00(int i) {
-        if (this.A04 == b.f6382b) {
+        if (this.A04 == b.f7168b) {
             return;
         }
-        boolean z3 = this.A0B;
-        this.A0C.AIu(this.A04, z3 ? 1 : 0, (int) (this.A01 - this.A03), i, null);
+        boolean z6 = this.A0B;
+        this.A0C.AIu(this.A04, z6 ? 1 : 0, (int) (this.A01 - this.A03), i, null);
     }
 
     public static boolean A01(int i) {
@@ -47,33 +47,33 @@ public final class L3 {
         this.A09 = false;
     }
 
-    public final void A04(long j6, int i, int i6, long j9, boolean z3) {
+    public final void A04(long j6, int i, int i4, long j9, boolean z6) {
         this.A06 = false;
         this.A05 = false;
         this.A02 = j9;
         this.A00 = 0;
         this.A01 = j6;
-        if (!A02(i6)) {
+        if (!A02(i4)) {
             if (this.A0A && !this.A09) {
-                if (z3) {
+                if (z6) {
                     A00(i);
                 }
                 this.A0A = false;
             }
-            if (A01(i6)) {
+            if (A01(i4)) {
                 this.A05 = !this.A09;
                 this.A09 = true;
             }
         }
-        this.A08 = i6 >= 16 && i6 <= 21;
-        this.A07 = this.A08 || i6 <= 9;
+        this.A08 = i4 >= 16 && i4 <= 21;
+        this.A07 = this.A08 || i4 <= 9;
         if (A0D[6].length() != 30) {
             throw new RuntimeException();
         }
         A0D[6] = "HIa27EP0rmwgvhPEN5RK7GL0DsepbL";
     }
 
-    public final void A05(long j6, int i, boolean z3) {
+    public final void A05(long j6, int i, boolean z6) {
         if (this.A09 && this.A06) {
             this.A0B = this.A08;
             this.A09 = false;
@@ -81,7 +81,7 @@ public final class L3 {
             if (!this.A05 && !this.A06) {
                 return;
             }
-            if (z3 && this.A0A) {
+            if (z6 && this.A0A) {
                 A00(i + ((int) (j6 - this.A01)));
             }
             this.A03 = this.A01;
@@ -91,16 +91,16 @@ public final class L3 {
         }
     }
 
-    public final void A06(byte[] bArr, int i, int i6) {
+    public final void A06(byte[] bArr, int i, int i4) {
         if (this.A07) {
-            int i9 = (i + 2) - this.A00;
-            if (i9 < i6) {
-                int headerOffset = bArr[i9];
+            int i6 = (i + 2) - this.A00;
+            if (i6 < i4) {
+                int headerOffset = bArr[i6];
                 this.A06 = (headerOffset & 128) != 0;
                 this.A07 = false;
                 return;
             }
-            this.A00 += i6 - i;
+            this.A00 += i4 - i;
         }
     }
 }

@@ -21,20 +21,20 @@ public final class TH {
     public static final Lock A07;
     public static final ReentrantReadWriteLock A08;
     public SQLiteOpenHelper A00;
-    public final C1836ge A01;
-    public final C1781fl A03 = new C1781fl(this);
-    public final C1788fs A02 = new C1788fs(this);
+    public final C1856ge A01;
+    public final C1801fl A03 = new C1801fl(this);
+    public final C1808fs A02 = new C1808fs(this);
 
-    public static String A05(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 17);
+    public static String A05(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 17);
         }
         return new String(copyOfRange);
     }
 
     public static void A07() {
-        A04 = new byte[]{-82, -53, -82, 109, -117, 109, -116, 85, 118, -120, 120, -102, -64, -52, -55, -57, -102, Byte.MAX_VALUE, -87, -82, -88, -83, Byte.MAX_VALUE, 94, -118, -121, -117, -121, -110, 94, -93, -46, -47, -93, 87, -122, -119, 123, 124, -119, 87, 121, -112, 87, 85, -120, 122, -119, 85, -115, -60, -75, -78, -65, -78, -115, 110, 116, -82, -94, 94, 110, -101, -99, -55, -25, -12, -12, -11, -6, -90, -23, -25, -14, -14, -90, -19, -21, -6, -54, -25, -6, -25, -24, -25, -7, -21, -90, -20, -8, -11, -13, -90, -6, -18, -21, -90, -37, -49, -90, -6, -18, -8, -21, -25, -22, -89, -112, -126, -119, -126, c.f16316a, -111, 93, -79, -84, -88, -94, -85, -80, 107, -64, -69, -81, -84, -65, -80, -117, -29, -32, -13, -32, -31, -32, -14, -28, -112, -95, -112, -103, -97, -98, -116, -121, -125, 125, -122, -117};
+        A04 = new byte[]{-82, -53, -82, 109, -117, 109, -116, 85, 118, -120, 120, -102, -64, -52, -55, -57, -102, Byte.MAX_VALUE, -87, -82, -88, -83, Byte.MAX_VALUE, 94, -118, -121, -117, -121, -110, 94, -93, -46, -47, -93, 87, -122, -119, 123, 124, -119, 87, 121, -112, 87, 85, -120, 122, -119, 85, -115, -60, -75, -78, -65, -78, -115, 110, 116, -82, -94, 94, 110, -101, -99, -55, -25, -12, -12, -11, -6, -90, -23, -25, -14, -14, -90, -19, -21, -6, -54, -25, -6, -25, -24, -25, -7, -21, -90, -20, -8, -11, -13, -90, -6, -18, -21, -90, -37, -49, -90, -6, -18, -8, -21, -25, -22, -89, -112, -126, -119, -126, c.f17103a, -111, 93, -79, -84, -88, -94, -85, -80, 107, -64, -69, -81, -84, -65, -80, -117, -29, -32, -13, -32, -31, -32, -14, -28, -112, -95, -112, -103, -97, -98, -116, -121, -125, 125, -122, -117};
     }
 
     /* JADX WARN: Failed to parse debug info
@@ -51,22 +51,22 @@ public final class TH {
 
     static {
         A07();
-        StringBuilder append = new StringBuilder().append(A05(107, 14, 44)).append(C1781fl.A03.A01);
+        StringBuilder append = new StringBuilder().append(A05(107, 14, 44)).append(C1801fl.A03.A01);
         String A052 = A05(58, 2, 113);
         StringBuilder append2 = append.append(A052);
         String A053 = A05(142, 6, 7);
         StringBuilder append3 = append2.append(A053);
         String A054 = A05(60, 1, 31);
-        StringBuilder append4 = append3.append(A054).append(C1781fl.A02.A01).append(A052);
+        StringBuilder append4 = append3.append(A054).append(C1801fl.A02.A01).append(A052);
         String A055 = A05(136, 6, 26);
-        A05 = append4.append(A055).append(A054).append(C1788fs.A04.A01).append(A052).append(A055).append(A054).append(C1788fs.A05.A01).append(A052).append(A055).append(A054).append(C1788fs.A0A.A01).append(A052).append(A055).append(A054).append(C1788fs.A08.A01).append(A052).append(A055).append(A054).append(C1788fs.A07.A01).append(A052).append(A055).append(A054).append(C1788fs.A06.A01).append(A052).append(A055).append(A054).append(C1788fs.A03.A01).append(A052).append(A055).append(A054).append(C1788fs.A02.A01).append(A05(11, 6, 105)).append(A055).append(A05(17, 6, 78)).append(A053).append(A05(30, 4, 114)).append(A055).append(A054).append(C1788fs.A09.A01).append(A05(0, 3, 125)).append(A053).append(A054).append(C1781fl.A03.A01).append(A05(34, 10, 38)).append(A055).append(A054).append(C1788fs.A08.A01).append(A05(7, 4, 36)).toString();
+        A05 = append4.append(A055).append(A054).append(C1808fs.A04.A01).append(A052).append(A055).append(A054).append(C1808fs.A05.A01).append(A052).append(A055).append(A054).append(C1808fs.A0A.A01).append(A052).append(A055).append(A054).append(C1808fs.A08.A01).append(A052).append(A055).append(A054).append(C1808fs.A07.A01).append(A052).append(A055).append(A054).append(C1808fs.A06.A01).append(A052).append(A055).append(A054).append(C1808fs.A03.A01).append(A052).append(A055).append(A054).append(C1808fs.A02.A01).append(A05(11, 6, 105)).append(A055).append(A05(17, 6, 78)).append(A053).append(A05(30, 4, 114)).append(A055).append(A054).append(C1808fs.A09.A01).append(A05(0, 3, 125)).append(A053).append(A054).append(C1801fl.A03.A01).append(A05(34, 10, 38)).append(A055).append(A054).append(C1808fs.A08.A01).append(A05(7, 4, 36)).toString();
         A08 = new ReentrantReadWriteLock();
         A06 = A08.readLock();
         A07 = A08.writeLock();
     }
 
-    public TH(C1836ge c1836ge) {
-        this.A01 = c1836ge;
+    public TH(C1856ge c1856ge) {
+        this.A01 = c1856ge;
     }
 
     private synchronized SQLiteDatabase A00() {
@@ -88,7 +88,7 @@ public final class TH {
                 }
             }
         }
-        this.A01.A08().ABC(A05(128, 8, 110), AbstractC1252Td.A0v, new C1253Te(e9));
+        this.A01.A08().ABC(A05(128, 8, 110), AbstractC1272Td.A0v, new C1273Te(e9));
         throw e9;
         return A00();
     }
@@ -96,7 +96,7 @@ public final class TH {
     public final int A08(int i) {
         A07.lock();
         try {
-            return A0E().delete(A05(136, 6, 26), C1788fs.A02.A01 + A05(3, 4, 60), new String[]{String.valueOf(i - 1)});
+            return A0E().delete(A05(136, 6, 26), C1808fs.A02.A01 + A05(3, 4, 60), new String[]{String.valueOf(i - 1)});
         } finally {
             A07.unlock();
         }
@@ -161,15 +161,15 @@ public final class TH {
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.UO != com.facebook.ads.internal.eventstorage.AdEventStorageCallback<java.lang.String> */
-    public final AsyncTask A0G(final String str, final int i, final String str2, final double d2, final double d9, final String str3, final Map<String, String> data, UO<String> uo) {
-        return A0F(new AbstractC1748fE<String>() { // from class: com.facebook.ads.redexgen.X.75
+    public final AsyncTask A0G(final String str, final int i, final String str2, final double d9, final double d10, final String str3, final Map<String, String> data, UO<String> uo) {
+        return A0F(new AbstractC1768fE<String>() { // from class: com.facebook.ads.redexgen.X.75
             public static byte[] A08;
             public static String[] A09 = {"ZKW0rplATEIsE5gjt8qXTQnY", "r6HJdeSoORQdJfGxA0AnZWlkU33wQIlK", "lLZOtDHAe6uwMhK1fYaqg", "CFnqFcdcZfU1FaRsph1ThokBMpi4uqZk", "TONJvFd", "LRRDDC4", "oqOd7Km", "E"};
 
-            public static String A01(int i6, int i9, int i10) {
-                byte[] copyOfRange = Arrays.copyOfRange(A08, i6, i6 + i9);
-                for (int i11 = 0; i11 < copyOfRange.length; i11++) {
-                    copyOfRange[i11] = (byte) ((copyOfRange[i11] - i10) - 122);
+            public static String A01(int i4, int i6, int i9) {
+                byte[] copyOfRange = Arrays.copyOfRange(A08, i4, i4 + i6);
+                for (int i10 = 0; i10 < copyOfRange.length; i10++) {
+                    copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 122);
                 }
                 return new String(copyOfRange);
             }
@@ -191,20 +191,20 @@ public final class TH {
             @Override // com.instagram.common.viewpoint.core.TK
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final String A03() {
-                C1836ge c1836ge;
+                C1856ge c1856ge;
                 Lock lock;
                 Lock lock2;
-                C1836ge c1836ge2;
-                C1836ge c1836ge3;
+                C1856ge c1856ge2;
+                C1856ge c1856ge3;
                 Lock lock3;
-                C1836ge c1836ge4;
-                C1788fs c1788fs;
-                C1781fl c1781fl;
+                C1856ge c1856ge4;
+                C1808fs c1808fs;
+                C1801fl c1801fl;
                 Lock lock4;
-                C1836ge c1836ge5;
+                C1856ge c1856ge5;
                 String eventId = A01(0, 8, 90);
-                c1836ge = TH.this.A01;
-                c1836ge.A08().AA3(str2);
+                c1856ge = TH.this.A01;
+                c1856ge.A08().AA3(str2);
                 if (TextUtils.isEmpty(str)) {
                     return null;
                 }
@@ -215,9 +215,9 @@ public final class TH {
                     try {
                         sQLiteDatabase = TH.this.A0E();
                         sQLiteDatabase.beginTransaction();
-                        c1788fs = TH.this.A02;
-                        c1781fl = TH.this.A03;
-                        String A0E = c1788fs.A0E(c1781fl.A0C(str), i, str2, d2, d9, str3, data);
+                        c1808fs = TH.this.A02;
+                        c1801fl = TH.this.A03;
+                        String A0E = c1808fs.A0E(c1801fl.A0C(str), i, str2, d9, d10, str3, data);
                         sQLiteDatabase.setTransactionSuccessful();
                         if (sQLiteDatabase != null && sQLiteDatabase.isOpen()) {
                             try {
@@ -225,8 +225,8 @@ public final class TH {
                                     sQLiteDatabase.endTransaction();
                                 }
                             } catch (Exception e9) {
-                                c1836ge5 = TH.this.A01;
-                                c1836ge5.A08().ABC(eventId, AbstractC1252Td.A0z, new C1253Te(e9));
+                                c1856ge5 = TH.this.A01;
+                                c1856ge5.A08().ABC(eventId, AbstractC1272Td.A0z, new C1273Te(e9));
                             }
                         }
                         lock4 = TH.A07;
@@ -234,16 +234,16 @@ public final class TH {
                         return A0E;
                     } catch (Exception e10) {
                         A01(TJ.A05);
-                        c1836ge3 = TH.this.A01;
-                        c1836ge3.A08().ABC(eventId, AbstractC1252Td.A0y, new C1253Te(e10));
+                        c1856ge3 = TH.this.A01;
+                        c1856ge3.A08().ABC(eventId, AbstractC1272Td.A0y, new C1273Te(e10));
                         if (sQLiteDatabase != null && sQLiteDatabase.isOpen()) {
                             try {
                                 if (sQLiteDatabase.inTransaction()) {
                                     sQLiteDatabase.endTransaction();
                                 }
                             } catch (Exception e11) {
-                                c1836ge4 = TH.this.A01;
-                                c1836ge4.A08().ABC(eventId, AbstractC1252Td.A0z, new C1253Te(e11));
+                                c1856ge4 = TH.this.A01;
+                                c1856ge4.A08().ABC(eventId, AbstractC1272Td.A0z, new C1273Te(e11));
                             }
                         }
                         lock3 = TH.A07;
@@ -263,8 +263,8 @@ public final class TH {
                                     sQLiteDatabase.endTransaction();
                                 }
                             } catch (Exception e12) {
-                                c1836ge2 = TH.this.A01;
-                                c1836ge2.A08().ABC(eventId, AbstractC1252Td.A0z, new C1253Te(e12));
+                                c1856ge2 = TH.this.A01;
+                                c1856ge2.A08().ABC(eventId, AbstractC1272Td.A0z, new C1273Te(e12));
                             }
                         }
                     }
@@ -305,18 +305,18 @@ public final class TH {
     }
 
     public final boolean A0L(String str) {
-        boolean z3;
+        boolean z6;
         A07.lock();
         try {
             StringBuilder sb = new StringBuilder();
-            sb.append(A05(121, 7, 90)).append(A05(136, 6, 26)).append(A05(44, 5, 36)).append(C1788fs.A02.A01).append(A05(61, 1, 32)).append(C1788fs.A02.A01).append(A05(56, 2, 50)).append(A05(49, 7, 92)).append(C1788fs.A04.A01).append(A05(62, 2, 77));
+            sb.append(A05(121, 7, 90)).append(A05(136, 6, 26)).append(A05(44, 5, 36)).append(C1808fs.A02.A01).append(A05(61, 1, 32)).append(C1808fs.A02.A01).append(A05(56, 2, 50)).append(A05(49, 7, 92)).append(C1808fs.A04.A01).append(A05(62, 2, 77));
             A0E().execSQL(sb.toString(), new String[]{str});
-            z3 = true;
+            z6 = true;
         } catch (SQLiteException unused) {
-            z3 = false;
+            z6 = false;
         }
         A07.unlock();
-        return z3;
+        return z6;
     }
 
     public final TL[] A0M() {

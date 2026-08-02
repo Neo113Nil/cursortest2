@@ -1,8 +1,8 @@
 package com.bumptech.glide.manager;
 
-import androidx.fragment.app.AbstractActivityC0480x;
+import androidx.fragment.app.AbstractActivityC0484x;
 
 /* loaded from: classes.dex */
 public interface f {
-    void l(AbstractActivityC0480x abstractActivityC0480x);
+    void h(AbstractActivityC0484x abstractActivityC0484x);
 }

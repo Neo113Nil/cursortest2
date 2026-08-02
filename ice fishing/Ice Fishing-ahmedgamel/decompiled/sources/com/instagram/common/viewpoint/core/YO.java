@@ -13,14 +13,14 @@ public class YO implements Callable<Void> {
     public final int A05;
     public final int[] A06;
 
-    public YO(int[] iArr, int i, int i6, int i9, int i10, int i11, int i12) {
+    public YO(int[] iArr, int i, int i4, int i6, int i9, int i10, int i11) {
         this.A06 = iArr;
         this.A05 = i;
-        this.A01 = i6;
-        this.A02 = i9;
-        this.A04 = i10;
-        this.A00 = i11;
-        this.A03 = i12;
+        this.A01 = i4;
+        this.A02 = i6;
+        this.A04 = i9;
+        this.A00 = i10;
+        this.A03 = i11;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

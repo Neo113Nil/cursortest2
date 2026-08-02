@@ -29,35 +29,35 @@ import javax.crypto.spec.SecretKeySpec;
 final class h {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f8077a = "cached_content_index.exi";
+    public static final String f8863a = "cached_content_index.exi";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final int f8078b = 2;
+    private static final int f8864b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    private static final int f8079c = 1;
+    private static final int f8865c = 1;
 
     /* renamed from: d, reason: collision with root package name */
-    private final HashMap<String, g> f8080d;
+    private final HashMap<String, g> f8866d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final SparseArray<String> f8081e;
+    private final SparseArray<String> f8867e;
 
     /* renamed from: f, reason: collision with root package name */
-    private final com.anythink.basead.exoplayer.k.b f8082f;
+    private final com.anythink.basead.exoplayer.k.b f8868f;
 
     /* renamed from: g, reason: collision with root package name */
-    private final Cipher f8083g;
+    private final Cipher f8869g;
 
     /* renamed from: h, reason: collision with root package name */
-    private final SecretKeySpec f8084h;
+    private final SecretKeySpec f8870h;
     private final boolean i;
 
     /* renamed from: j, reason: collision with root package name */
-    private boolean f8085j;
+    private boolean f8871j;
 
     /* renamed from: k, reason: collision with root package name */
-    private x f8086k;
+    private x f8872k;
 
     private h(File file) {
         this(file, null);
@@ -68,7 +68,7 @@ final class h {
         DataInputStream dataInputStream;
         DataInputStream dataInputStream2 = null;
         try {
-            bufferedInputStream = new BufferedInputStream(this.f8082f.c());
+            bufferedInputStream = new BufferedInputStream(this.f8868f.c());
             dataInputStream = new DataInputStream(bufferedInputStream);
         } catch (IOException unused) {
         } catch (Throwable th) {
@@ -78,15 +78,15 @@ final class h {
             int readInt = dataInputStream.readInt();
             if (readInt >= 0 && readInt <= 2) {
                 if ((dataInputStream.readInt() & 1) != 0) {
-                    if (this.f8083g == null) {
+                    if (this.f8869g == null) {
                         af.a((Closeable) dataInputStream);
                         return false;
                     }
                     byte[] bArr = new byte[16];
                     dataInputStream.readFully(bArr);
                     try {
-                        this.f8083g.init(2, this.f8084h, new IvParameterSpec(bArr));
-                        dataInputStream = new DataInputStream(new CipherInputStream(bufferedInputStream, this.f8083g));
+                        this.f8869g.init(2, this.f8870h, new IvParameterSpec(bArr));
+                        dataInputStream = new DataInputStream(new CipherInputStream(bufferedInputStream, this.f8869g));
                     } catch (InvalidAlgorithmParameterException e9) {
                         e = e9;
                         throw new IllegalStateException(e);
@@ -95,18 +95,18 @@ final class h {
                         throw new IllegalStateException(e);
                     }
                 } else if (this.i) {
-                    this.f8085j = true;
+                    this.f8871j = true;
                 }
                 int readInt2 = dataInputStream.readInt();
                 int i = 0;
-                for (int i6 = 0; i6 < readInt2; i6++) {
+                for (int i4 = 0; i4 < readInt2; i4++) {
                     g a9 = g.a(readInt, dataInputStream);
                     a(a9);
                     i += a9.a(readInt);
                 }
                 int readInt3 = dataInputStream.readInt();
-                boolean z3 = dataInputStream.read() == -1;
-                if (readInt3 == i && z3) {
+                boolean z6 = dataInputStream.read() == -1;
+                if (readInt3 == i && z6) {
                     af.a((Closeable) dataInputStream);
                     return true;
                 }
@@ -136,14 +136,14 @@ final class h {
         Closeable closeable = null;
         try {
             try {
-                OutputStream b9 = this.f8082f.b();
-                x xVar = this.f8086k;
+                OutputStream b9 = this.f8868f.b();
+                x xVar = this.f8872k;
                 if (xVar == null) {
-                    this.f8086k = new x(b9);
+                    this.f8872k = new x(b9);
                 } else {
                     xVar.a(b9);
                 }
-                dataOutputStream = new DataOutputStream(this.f8086k);
+                dataOutputStream = new DataOutputStream(this.f8872k);
             } catch (Throwable th) {
                 th = th;
             }
@@ -159,9 +159,9 @@ final class h {
                 new Random().nextBytes(bArr);
                 dataOutputStream.write(bArr);
                 try {
-                    this.f8083g.init(1, this.f8084h, new IvParameterSpec(bArr));
+                    this.f8869g.init(1, this.f8870h, new IvParameterSpec(bArr));
                     dataOutputStream.flush();
-                    dataOutputStream = new DataOutputStream(new CipherOutputStream(this.f8086k, this.f8083g));
+                    dataOutputStream = new DataOutputStream(new CipherOutputStream(this.f8872k, this.f8869g));
                 } catch (InvalidAlgorithmParameterException e10) {
                     e = e10;
                     throw new IllegalStateException(e);
@@ -170,13 +170,13 @@ final class h {
                     throw new IllegalStateException(e);
                 }
             }
-            dataOutputStream.writeInt(this.f8080d.size());
-            for (g gVar : this.f8080d.values()) {
+            dataOutputStream.writeInt(this.f8866d.size());
+            for (g gVar : this.f8866d.values()) {
                 gVar.a(dataOutputStream);
                 i += gVar.a(2);
             }
             dataOutputStream.writeInt(i);
-            this.f8082f.a(dataOutputStream);
+            this.f8868f.a(dataOutputStream);
             af.a((Closeable) null);
         } catch (IOException e12) {
             e = e12;
@@ -190,7 +190,7 @@ final class h {
     }
 
     private static Cipher h() {
-        if (af.f8346a == 18) {
+        if (af.f9132a == 18) {
             try {
                 return Cipher.getInstance("AES/CBC/PKCS5PADDING", "BC");
             } catch (Throwable unused) {
@@ -200,29 +200,29 @@ final class h {
     }
 
     public final void a() {
-        com.anythink.basead.exoplayer.k.a.b(!this.f8085j);
+        com.anythink.basead.exoplayer.k.a.b(!this.f8871j);
         if (f()) {
             return;
         }
-        this.f8082f.a();
-        this.f8080d.clear();
-        this.f8081e.clear();
+        this.f8868f.a();
+        this.f8866d.clear();
+        this.f8867e.clear();
     }
 
     public final void b() {
         DataOutputStream dataOutputStream;
-        if (this.f8085j) {
+        if (this.f8871j) {
             Closeable closeable = null;
             try {
                 try {
-                    OutputStream b9 = this.f8082f.b();
-                    x xVar = this.f8086k;
+                    OutputStream b9 = this.f8868f.b();
+                    x xVar = this.f8872k;
                     if (xVar == null) {
-                        this.f8086k = new x(b9);
+                        this.f8872k = new x(b9);
                     } else {
                         xVar.a(b9);
                     }
-                    dataOutputStream = new DataOutputStream(this.f8086k);
+                    dataOutputStream = new DataOutputStream(this.f8872k);
                 } catch (Throwable th) {
                     th = th;
                 }
@@ -237,9 +237,9 @@ final class h {
                     new Random().nextBytes(bArr);
                     dataOutputStream.write(bArr);
                     try {
-                        this.f8083g.init(1, this.f8084h, new IvParameterSpec(bArr));
+                        this.f8869g.init(1, this.f8870h, new IvParameterSpec(bArr));
                         dataOutputStream.flush();
-                        dataOutputStream = new DataOutputStream(new CipherOutputStream(this.f8086k, this.f8083g));
+                        dataOutputStream = new DataOutputStream(new CipherOutputStream(this.f8872k, this.f8869g));
                     } catch (InvalidAlgorithmParameterException e10) {
                         e = e10;
                         throw new IllegalStateException(e);
@@ -248,16 +248,16 @@ final class h {
                         throw new IllegalStateException(e);
                     }
                 }
-                dataOutputStream.writeInt(this.f8080d.size());
+                dataOutputStream.writeInt(this.f8866d.size());
                 int i = 0;
-                for (g gVar : this.f8080d.values()) {
+                for (g gVar : this.f8866d.values()) {
                     gVar.a(dataOutputStream);
                     i += gVar.a(2);
                 }
                 dataOutputStream.writeInt(i);
-                this.f8082f.a(dataOutputStream);
+                this.f8868f.a(dataOutputStream);
                 af.a((Closeable) null);
-                this.f8085j = false;
+                this.f8871j = false;
             } catch (IOException e12) {
                 e = e12;
                 throw new a.C0034a(e);
@@ -271,21 +271,21 @@ final class h {
     }
 
     public final Collection<g> c() {
-        return this.f8080d.values();
+        return this.f8866d.values();
     }
 
     public final void d(String str) {
-        g gVar = this.f8080d.get(str);
+        g gVar = this.f8866d.get(str);
         if (gVar == null || !gVar.d() || gVar.b()) {
             return;
         }
-        this.f8080d.remove(str);
-        this.f8081e.remove(gVar.f8072a);
-        this.f8085j = true;
+        this.f8866d.remove(str);
+        this.f8867e.remove(gVar.f8858a);
+        this.f8871j = true;
     }
 
     public final Set<String> e() {
-        return this.f8080d.keySet();
+        return this.f8866d.keySet();
     }
 
     private h(File file, byte[] bArr) {
@@ -293,40 +293,40 @@ final class h {
     }
 
     public final int c(String str) {
-        return a(str).f8072a;
+        return a(str).f8858a;
     }
 
     public final i e(String str) {
         g b9 = b(str);
-        return b9 != null ? b9.a() : l.f8093b;
+        return b9 != null ? b9.a() : l.f8879b;
     }
 
-    public h(File file, byte[] bArr, boolean z3) {
-        this.i = z3;
+    public h(File file, byte[] bArr, boolean z6) {
+        this.i = z6;
         if (bArr != null) {
             com.anythink.basead.exoplayer.k.a.a(bArr.length == 16);
             try {
-                this.f8083g = h();
-                this.f8084h = new SecretKeySpec(bArr, "AES");
+                this.f8869g = h();
+                this.f8870h = new SecretKeySpec(bArr, "AES");
             } catch (NoSuchAlgorithmException | NoSuchPaddingException e9) {
                 throw new IllegalStateException(e9);
             }
         } else {
-            com.anythink.basead.exoplayer.k.a.b(!z3);
-            this.f8083g = null;
-            this.f8084h = null;
+            com.anythink.basead.exoplayer.k.a.b(!z6);
+            this.f8869g = null;
+            this.f8870h = null;
         }
-        this.f8080d = new HashMap<>();
-        this.f8081e = new SparseArray<>();
-        this.f8082f = new com.anythink.basead.exoplayer.k.b(new File(file, f8077a));
+        this.f8866d = new HashMap<>();
+        this.f8867e = new SparseArray<>();
+        this.f8868f = new com.anythink.basead.exoplayer.k.b(new File(file, f8863a));
     }
 
     public final g a(String str) {
-        g gVar = this.f8080d.get(str);
+        g gVar = this.f8866d.get(str);
         if (gVar != null) {
             return gVar;
         }
-        SparseArray<String> sparseArray = this.f8081e;
+        SparseArray<String> sparseArray = this.f8867e;
         int size = sparseArray.size();
         int i = 0;
         int keyAt = size == 0 ? 0 : sparseArray.keyAt(size - 1) + 1;
@@ -338,32 +338,32 @@ final class h {
         }
         g gVar2 = new g(keyAt, str);
         a(gVar2);
-        this.f8085j = true;
+        this.f8871j = true;
         return gVar2;
     }
 
     public final void d() {
-        int size = this.f8080d.size();
+        int size = this.f8866d.size();
         String[] strArr = new String[size];
-        this.f8080d.keySet().toArray(strArr);
+        this.f8866d.keySet().toArray(strArr);
         for (int i = 0; i < size; i++) {
             d(strArr[i]);
         }
     }
 
     public final String a(int i) {
-        return this.f8081e.get(i);
+        return this.f8867e.get(i);
     }
 
     public final void a(String str, k kVar) {
         if (a(str).a(kVar)) {
-            this.f8085j = true;
+            this.f8871j = true;
         }
     }
 
     private void a(g gVar) {
-        this.f8080d.put(gVar.f8073b, gVar);
-        this.f8081e.put(gVar.f8072a, gVar.f8073b);
+        this.f8866d.put(gVar.f8859b, gVar);
+        this.f8867e.put(gVar.f8858a, gVar.f8859b);
     }
 
     private static int a(SparseArray<String> sparseArray) {
@@ -380,7 +380,7 @@ final class h {
     }
 
     private g f(String str) {
-        SparseArray<String> sparseArray = this.f8081e;
+        SparseArray<String> sparseArray = this.f8867e;
         int size = sparseArray.size();
         int i = 0;
         int keyAt = size == 0 ? 0 : sparseArray.keyAt(size - 1) + 1;
@@ -392,11 +392,11 @@ final class h {
         }
         g gVar = new g(keyAt, str);
         a(gVar);
-        this.f8085j = true;
+        this.f8871j = true;
         return gVar;
     }
 
     public final g b(String str) {
-        return this.f8080d.get(str);
+        return this.f8866d.get(str);
     }
 }

@@ -11,27 +11,27 @@ import com.anythink.core.common.v.q;
 public class RoundImageView extends RecycleImageView {
 
     /* renamed from: a, reason: collision with root package name */
-    int f16551a;
+    int f17338a;
 
     /* renamed from: b, reason: collision with root package name */
-    boolean f16552b;
+    boolean f17339b;
 
     public RoundImageView(Context context) {
         super(context);
-        this.f16551a = q.a(getContext(), 5.0f);
+        this.f17338a = q.a(getContext(), 5.0f);
     }
 
     @Override // com.anythink.core.common.res.image.RecycleImageView, android.view.View
     public void dispatchDraw(Canvas canvas) {
         Canvas canvas2;
         try {
-            if (this.f16552b) {
+            if (this.f17339b) {
                 canvas2 = canvas;
                 try {
                     int saveLayer = canvas2.saveLayer(0.0f, 0.0f, getWidth(), getHeight(), null, 31);
                     super.dispatchDraw(canvas2);
                     canvas2.translate(getPaddingLeft(), getPaddingTop());
-                    am.a(canvas2, getWidth() - (getPaddingLeft() * 2), getHeight() - (getPaddingTop() * 2), this.f16551a);
+                    am.a(canvas2, getWidth() - (getPaddingLeft() * 2), getHeight() - (getPaddingTop() * 2), this.f17338a);
                     canvas2.restoreToCount(saveLayer);
                     return;
                 } catch (Exception unused) {
@@ -47,13 +47,13 @@ public class RoundImageView extends RecycleImageView {
     public void onDraw(Canvas canvas) {
         Canvas canvas2;
         try {
-            if (this.f16552b) {
+            if (this.f17339b) {
                 canvas2 = canvas;
                 try {
                     int saveLayer = canvas2.saveLayer(0.0f, 0.0f, getWidth(), getHeight(), null, 31);
                     super.onDraw(canvas2);
                     canvas2.translate(getPaddingLeft(), getPaddingTop());
-                    am.a(canvas2, getWidth() - (getPaddingLeft() * 2), getHeight() - (getPaddingTop() * 2), this.f16551a);
+                    am.a(canvas2, getWidth() - (getPaddingLeft() * 2), getHeight() - (getPaddingTop() * 2), this.f17338a);
                     canvas2.restoreToCount(saveLayer);
                     return;
                 } catch (Exception unused) {
@@ -65,21 +65,21 @@ public class RoundImageView extends RecycleImageView {
         super.onDraw(canvas2);
     }
 
-    public void setNeedRadiu(boolean z3) {
-        this.f16552b = z3;
+    public void setNeedRadiu(boolean z6) {
+        this.f17339b = z6;
     }
 
     public void setRadiusInDip(int i) {
-        this.f16551a = q.a(getContext(), i);
+        this.f17338a = q.a(getContext(), i);
     }
 
     public RoundImageView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f16551a = q.a(getContext(), 5.0f);
+        this.f17338a = q.a(getContext(), 5.0f);
     }
 
     public RoundImageView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f16551a = q.a(getContext(), 5.0f);
+        this.f17338a = q.a(getContext(), 5.0f);
     }
 }

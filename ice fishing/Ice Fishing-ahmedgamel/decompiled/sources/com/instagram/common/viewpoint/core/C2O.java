@@ -21,7 +21,7 @@ public class C2O<K, V> extends BH<K, Collection<V>> {
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2O != com.google.common.collect.AbstractMapBasedMultimap<K, V>$KeySet */
     @Override // com.instagram.common.viewpoint.core.BH, java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final void clear() {
-        AbstractC2330p9.A09(iterator());
+        AbstractC2350p9.A09(iterator());
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2O != com.google.common.collect.AbstractMapBasedMultimap<K, V>$KeySet */
@@ -45,7 +45,7 @@ public class C2O<K, V> extends BH<K, Collection<V>> {
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2O != com.google.common.collect.AbstractMapBasedMultimap<K, V>$KeySet */
     @Override // com.instagram.common.viewpoint.core.BH, java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final Iterator<K> iterator() {
-        return new C2136ln(this, A00().entrySet().iterator());
+        return new C2156ln(this, A00().entrySet().iterator());
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2O != com.google.common.collect.AbstractMapBasedMultimap<K, V>$KeySet */

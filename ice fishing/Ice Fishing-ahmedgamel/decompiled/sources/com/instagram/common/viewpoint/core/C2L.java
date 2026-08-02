@@ -17,17 +17,17 @@ import javax.annotation.CheckForNull;
 @ElementTypesAreNonnullByDefault
 /* renamed from: com.facebook.ads.redexgen.X.2L, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public abstract class C2L<K, V> extends AbstractC0808Bq<K, V> implements Serializable {
+public abstract class C2L<K, V> extends AbstractC0828Bq<K, V> implements Serializable {
     public static byte[] A02 = null;
     public static String[] A03 = {"8r4g5TVHuPTTEnOtjBSYLe2NoPZev3PL", "ZANRIcgacCs2MrGdQFs4BnSQ4f0OwMHM", "INAFHP4NB26l7mhFzzAYwDEUO08LdW1T", "w9HTcMerj5Ucor1CBa36675WVQ4LimP", "S0p05mXNQ0J7ss", "bhB1flpiQfpMN0", "TPylgZWOdIZWygeLq1OgLn1DVzZt4taa", "Gp6xvn2xjKoLwUaOKBIxtDMJneYJVeH8"};
     public static final long serialVersionUID = 2447537837011683357L;
     public transient int A00;
     public transient Map<K, Collection<V>> A01;
 
-    public static String A04(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 76);
+    public static String A04(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 76);
         }
         return new String(copyOfRange);
     }
@@ -48,7 +48,7 @@ public abstract class C2L<K, V> extends AbstractC0808Bq<K, V> implements Seriali
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2L != com.google.common.collect.AbstractMapBasedMultimap<K, V> */
     public C2L(Map<K, Collection<V>> map) {
-        AbstractC2070ki.A0C(map.isEmpty());
+        AbstractC2090ki.A0C(map.isEmpty());
         this.A01 = map;
     }
 
@@ -65,15 +65,15 @@ public abstract class C2L<K, V> extends AbstractC0808Bq<K, V> implements Seriali
     }
 
     public static /* synthetic */ int A02(C2L c2l, int i) {
-        int i6 = c2l.A00 + i;
-        c2l.A00 = i6;
-        return i6;
+        int i4 = c2l.A00 + i;
+        c2l.A00 = i4;
+        return i4;
     }
 
     public static /* synthetic */ int A03(C2L c2l, int i) {
-        int i6 = c2l.A00 - i;
-        c2l.A00 = i6;
-        return i6;
+        int i4 = c2l.A00 - i;
+        c2l.A00 = i4;
+        return i4;
     }
 
     public static <E> Iterator<E> A05(Collection<E> collection) {
@@ -86,7 +86,7 @@ public abstract class C2L<K, V> extends AbstractC0808Bq<K, V> implements Seriali
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2L != com.google.common.collect.AbstractMapBasedMultimap<K, V> */
     public void A0A(@CheckForNull Object key) {
-        Collection<V> collection = (Collection) AbstractC2370po.A06(this.A01, key);
+        Collection<V> collection = (Collection) AbstractC2390po.A06(this.A01, key);
         if (collection != null) {
             int count = collection.size();
             collection.clear();
@@ -95,15 +95,15 @@ public abstract class C2L<K, V> extends AbstractC0808Bq<K, V> implements Seriali
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2L != com.google.common.collect.AbstractMapBasedMultimap<K, V> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC0808Bq
+    @Override // com.instagram.common.viewpoint.core.AbstractC0828Bq
     public final Collection<V> A0B() {
-        return new C2141ls(this);
+        return new C2161ls(this);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2L != com.google.common.collect.AbstractMapBasedMultimap<K, V> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC0808Bq
+    @Override // com.instagram.common.viewpoint.core.AbstractC0828Bq
     public Iterator<V> A0C() {
-        return new C0812Bu(this);
+        return new C0832Bu(this);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2L != com.google.common.collect.AbstractMapBasedMultimap<K, V> */
@@ -114,11 +114,11 @@ public abstract class C2L<K, V> extends AbstractC0808Bq<K, V> implements Seriali
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2L != com.google.common.collect.AbstractMapBasedMultimap<K, V> */
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.lp != com.google.common.collect.AbstractMapBasedMultimap<K, V>$WrappedCollection */
     /* JADX WARN: Incorrect inner types in method signature: (TK;Ljava/util/List<TV;>;Lcom/facebook/ads/redexgen/X/2L<TK;TV;>.WrappedCollection;)Ljava/util/List<TV;>; */
-    public final List A0H(@ParametricNullness Object key, @CheckForNull List list, C2138lp ancestor) {
+    public final List A0H(@ParametricNullness Object key, @CheckForNull List list, C2158lp ancestor) {
         if (list instanceof RandomAccess) {
             return new C2N(this, key, list, ancestor);
         }
-        return new C0809Br(this, key, list, ancestor);
+        return new C0829Br(this, key, list, ancestor);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2L != com.google.common.collect.AbstractMapBasedMultimap<K, V> */
@@ -131,15 +131,15 @@ public abstract class C2L<K, V> extends AbstractC0808Bq<K, V> implements Seriali
         if (this.A01 instanceof NavigableMap) {
             return new AnonymousClass19(this, (NavigableMap) this.A01);
         }
-        boolean z3 = this.A01 instanceof SortedMap;
+        boolean z6 = this.A01 instanceof SortedMap;
         if (A03[2].charAt(31) == 'o') {
             throw new RuntimeException();
         }
         A03[3] = "NCYt1eTwLWbpcysHbDqNMrCxO6pYN55";
-        if (z3) {
+        if (z6) {
             return new C2M(this, (SortedMap) this.A01);
         }
-        return new C0811Bt(this, this.A01);
+        return new C0831Bt(this, this.A01);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2L != com.google.common.collect.AbstractMapBasedMultimap<K, V> */
@@ -158,13 +158,13 @@ public abstract class C2L<K, V> extends AbstractC0808Bq<K, V> implements Seriali
         this.A01 = map;
         this.A00 = 0;
         for (Collection<V> collection : map.values()) {
-            AbstractC2070ki.A0C(!collection.isEmpty());
+            AbstractC2090ki.A0C(!collection.isEmpty());
             this.A00 += collection.size();
         }
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2L != com.google.common.collect.AbstractMapBasedMultimap<K, V> */
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2385q3
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2405q3
     public boolean AHE(@ParametricNullness K key, @ParametricNullness V value) {
         Collection<V> collection = this.A01.get(key);
         if (collection == null) {
@@ -191,7 +191,7 @@ public abstract class C2L<K, V> extends AbstractC0808Bq<K, V> implements Seriali
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2L != com.google.common.collect.AbstractMapBasedMultimap<K, V> */
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2385q3
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2405q3
     public void clear() {
         Iterator<Collection<V>> it = this.A01.values().iterator();
         while (it.hasNext()) {
@@ -202,13 +202,13 @@ public abstract class C2L<K, V> extends AbstractC0808Bq<K, V> implements Seriali
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2L != com.google.common.collect.AbstractMapBasedMultimap<K, V> */
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2385q3
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2405q3
     public int size() {
         return this.A00;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2L != com.google.common.collect.AbstractMapBasedMultimap<K, V> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC0808Bq, com.instagram.common.viewpoint.core.InterfaceC2385q3
+    @Override // com.instagram.common.viewpoint.core.AbstractC0828Bq, com.instagram.common.viewpoint.core.InterfaceC2405q3
     public Collection<V> values() {
         return super.values();
     }

@@ -4,51 +4,51 @@ package com.google.android.gms.internal.ads;
 public final class F implements Runnable {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f24699n;
+    public final /* synthetic */ int f25455n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final CQ f24700u;
+    public final FQ f25456u;
 
-    public /* synthetic */ F(CQ cq, int i) {
-        this.f24699n = i;
-        this.f24700u = cq;
+    public /* synthetic */ F(FQ fq, int i) {
+        this.f25455n = i;
+        this.f25456u = fq;
     }
 
-    /* JADX WARN: Type inference failed for: r1v4, types: [com.google.android.gms.internal.ads.mQ, java.lang.Object] */
+    /* JADX WARN: Type inference failed for: r1v4, types: [com.google.android.gms.internal.ads.pQ, java.lang.Object] */
     @Override // java.lang.Runnable
     public final void run() {
-        switch (this.f24699n) {
+        switch (this.f25455n) {
             case 0:
-                CQ cq = this.f24700u;
-                for (HQ hq : cq.f24128L) {
-                    hq.k(true);
-                    if (hq.f25308g != null) {
-                        hq.f25308g = null;
-                        hq.f25307f = null;
+                FQ fq = this.f25456u;
+                for (KQ kq : fq.f25567L) {
+                    kq.k(true);
+                    if (kq.f26685g != null) {
+                        kq.f26685g = null;
+                        kq.f26684f = null;
                     }
                 }
-                C4274ze c4274ze = cq.f24121D;
-                Q0 q02 = (Q0) c4274ze.f35361v;
+                C4297ze c4297ze = fq.f25560D;
+                Q0 q02 = (Q0) c4297ze.f36134v;
                 if (q02 != null) {
                     q02.e();
-                    c4274ze.f35361v = null;
+                    c4297ze.f36134v = null;
                 }
-                c4274ze.f35362w = null;
+                c4297ze.f36135w = null;
                 break;
             case 1:
-                CQ cq2 = this.f24700u;
-                if (!cq2.f24149t0) {
-                    ?? r12 = cq2.f24126I;
-                    r12.getClass();
-                    r12.j(cq2);
+                FQ fq2 = this.f25456u;
+                if (!fq2.f25587o0) {
+                    ?? r1 = fq2.f25565I;
+                    r1.getClass();
+                    r1.j(fq2);
                     break;
                 }
                 break;
             case 2:
-                this.f24700u.f24143n0 = true;
+                this.f25456u.f25581i0 = true;
                 break;
             default:
-                this.f24700u.r();
+                this.f25456u.r();
                 break;
         }
     }

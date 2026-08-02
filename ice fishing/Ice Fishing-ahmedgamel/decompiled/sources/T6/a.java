@@ -6,5 +6,5 @@ import N6.b;
 public abstract class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final b f3092a = b.a(1, 10, "resourceLogs");
+    public static final b f3209a = b.a(1, 10, "resourceLogs");
 }

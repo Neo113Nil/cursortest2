@@ -18,7 +18,7 @@ import org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface;
 public abstract class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final /* synthetic */ int f1084a = 0;
+    public static final /* synthetic */ int f1187a = 0;
 
     static {
         Uri.parse("*");
@@ -26,11 +26,11 @@ public abstract class e {
     }
 
     public static void a(WebView webView, String str, Set set, d dVar) {
-        if (!m.f1269d.b()) {
+        if (!m.f1296d.b()) {
             throw m.a();
         }
         j c9 = c(webView);
-        ((WebViewProviderBoundaryInterface) c9.f1264u).addWebMessageListener(str, (String[]) set.toArray(new String[0]), new A8.a(0, new j(0, dVar)));
+        ((WebViewProviderBoundaryInterface) c9.f1291u).addWebMessageListener(str, (String[]) set.toArray(new String[0]), new A8.a(0, new j(0, dVar)));
     }
 
     public static PackageInfo b() {
@@ -38,12 +38,12 @@ public abstract class e {
     }
 
     public static j c(WebView webView) {
-        return new j(6, n.f1274a.createWebView(webView));
+        return new j(7, n.f1301a.createWebView(webView));
     }
 
     public static String d() {
-        if (m.f1271f.b()) {
-            return n.f1274a.getStatics().getVariationsHeader();
+        if (m.f1298f.b()) {
+            return n.f1301a.getStatics().getVariationsHeader();
         }
         throw m.a();
     }
@@ -51,7 +51,7 @@ public abstract class e {
     public static WebViewClient e(WebView webView) {
         Looper webViewLooper;
         WebViewClient webViewClient;
-        I0.b bVar = m.f1267b;
+        I0.b bVar = m.f1294b;
         if (bVar.a()) {
             webViewClient = webView.getWebViewClient();
             return webViewClient;
@@ -73,6 +73,6 @@ public abstract class e {
                 throw new RuntimeException(e9);
             }
         }
-        return ((WebViewProviderBoundaryInterface) c(webView).f1264u).getWebViewClient();
+        return ((WebViewProviderBoundaryInterface) c(webView).f1291u).getWebViewClient();
     }
 }

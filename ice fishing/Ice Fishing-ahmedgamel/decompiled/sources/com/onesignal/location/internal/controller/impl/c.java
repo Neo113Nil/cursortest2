@@ -13,11 +13,11 @@ public final class c {
         this.googleApiClientListenerClass = realInstance.getClass();
     }
 
-    public final M2.b blockingConnect() {
+    public final O2.b blockingConnect() {
         try {
             Object invoke = this.googleApiClientListenerClass.getMethod("blockingConnect", new Class[0]).invoke(this.realInstance, new Object[0]);
             kotlin.jvm.internal.h.c(invoke, "null cannot be cast to non-null type com.google.android.gms.common.ConnectionResult");
-            return (M2.b) invoke;
+            return (O2.b) invoke;
         } catch (Throwable th) {
             th.printStackTrace();
             return null;

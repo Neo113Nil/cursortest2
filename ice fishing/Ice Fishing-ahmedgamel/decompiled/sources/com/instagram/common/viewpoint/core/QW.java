@@ -14,12 +14,12 @@ public class QW extends AnimatorListenerAdapter {
     public final /* synthetic */ C7P A04;
     public final /* synthetic */ RK A05;
 
-    public QW(C7P c7p, RK rk, int i, View view, int i6, ViewPropertyAnimator viewPropertyAnimator) {
+    public QW(C7P c7p, RK rk, int i, View view, int i4, ViewPropertyAnimator viewPropertyAnimator) {
         this.A04 = c7p;
         this.A05 = rk;
         this.A00 = i;
         this.A02 = view;
-        this.A01 = i6;
+        this.A01 = i4;
         this.A03 = viewPropertyAnimator;
     }
 

@@ -10,11 +10,11 @@ public abstract class M {
         if (rootWindowInsets == null) {
             return null;
         }
-        A0 h9 = A0.h(null, rootWindowInsets);
-        y0 y0Var = h9.f2027a;
-        y0Var.p(h9);
+        A0 h3 = A0.h(null, rootWindowInsets);
+        y0 y0Var = h3.f2115a;
+        y0Var.p(h3);
         y0Var.d(view.getRootView());
-        return h9;
+        return h3;
     }
 
     public static int b(View view) {
@@ -25,7 +25,7 @@ public abstract class M {
         view.setScrollIndicators(i);
     }
 
-    public static void d(View view, int i, int i6) {
-        view.setScrollIndicators(i, i6);
+    public static void d(View view, int i, int i4) {
+        view.setScrollIndicators(i, i4);
     }
 }

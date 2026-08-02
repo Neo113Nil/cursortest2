@@ -9,43 +9,43 @@ import com.anythink.core.common.v.af;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private static volatile b f11907a;
+    private static volatile b f12693a;
 
     private b() {
     }
 
     public static b a() {
-        if (f11907a == null) {
+        if (f12693a == null) {
             synchronized (b.class) {
                 try {
-                    if (f11907a == null) {
-                        f11907a = new b();
+                    if (f12693a == null) {
+                        f12693a = new b();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f11907a;
+        return f12693a;
     }
 
     public static void b(Context context, String str) {
-        af.a(context, u.b.f12851e, str);
+        af.a(context, u.b.f13637e, str);
     }
 
     public static void a(Context context, String str, String str2) {
-        af.b(context, u.b.f12851e, str, str2);
+        af.b(context, u.b.f13637e, str, str2);
     }
 
     public static String a(Context context, String str) {
-        return af.c(context, u.b.f12851e, str, "");
+        return af.c(context, u.b.f13637e, str, "");
     }
 
     public static String a(x xVar) {
         if (xVar == null) {
             return "";
         }
-        return a(xVar.f14156b, xVar.f14157c, xVar.f14160f);
+        return a(xVar.f14942b, xVar.f14943c, xVar.f14946f);
     }
 
     public static String a(String str, String str2, int i) {

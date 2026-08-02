@@ -15,48 +15,48 @@ import y8.z;
 public final class c implements v {
 
     /* renamed from: n, reason: collision with root package name */
-    public final OutputStream f42278n;
+    public final OutputStream f42247n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final e f42279u;
+    public final e f42248u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final /* synthetic */ n f42280v;
+    public final /* synthetic */ n f42249v;
 
     public c(n nVar) {
-        this.f42280v = nVar;
-        this.f42278n = ((Socket) nVar.f2802u).getOutputStream();
-        this.f42279u = new e((Socket) nVar.f2802u);
+        this.f42249v = nVar;
+        this.f42247n = ((Socket) nVar.f2931u).getOutputStream();
+        this.f42248u = new e((Socket) nVar.f2931u);
     }
 
     @Override // y8.v
     public final z L() {
-        return this.f42279u;
+        return this.f42248u;
     }
 
     @Override // y8.v
     public final void T(long j6, y8.e eVar) {
-        y8.b.d(eVar.f41953u, 0L, j6);
+        y8.b.d(eVar.f41924u, 0L, j6);
         while (j6 > 0) {
-            e eVar2 = this.f42279u;
+            e eVar2 = this.f42248u;
             eVar2.f();
-            s sVar = eVar.f41952n;
+            s sVar = eVar.f41923n;
             h.b(sVar);
-            int min = (int) Math.min(j6, sVar.f41989c - sVar.f41988b);
+            int min = (int) Math.min(j6, sVar.f41960c - sVar.f41959b);
             eVar2.h();
             try {
                 try {
-                    this.f42278n.write(sVar.f41987a, sVar.f41988b, min);
+                    this.f42247n.write(sVar.f41958a, sVar.f41959b, min);
                     if (eVar2.i()) {
                         throw eVar2.j(null);
                     }
-                    int i = sVar.f41988b + min;
-                    sVar.f41988b = i;
+                    int i = sVar.f41959b + min;
+                    sVar.f41959b = i;
                     long j9 = min;
                     j6 -= j9;
-                    eVar.f41953u -= j9;
-                    if (i == sVar.f41989c) {
-                        eVar.f41952n = sVar.a();
+                    eVar.f41924u -= j9;
+                    if (i == sVar.f41960c) {
+                        eVar.f41923n = sVar.a();
                         t.a(sVar);
                     }
                 } catch (IOException e9) {
@@ -75,27 +75,27 @@ public final class c implements v {
     @Override // y8.v, java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
         int i;
-        OutputStream outputStream = this.f42278n;
-        n nVar = this.f42280v;
-        e eVar = this.f42279u;
+        OutputStream outputStream = this.f42247n;
+        n nVar = this.f42249v;
+        e eVar = this.f42248u;
         eVar.h();
         try {
-            AtomicInteger atomicInteger = (AtomicInteger) nVar.f2803v;
+            AtomicInteger atomicInteger = (AtomicInteger) nVar.f2932v;
             h.e(atomicInteger, "<this>");
             while (true) {
-                int i6 = atomicInteger.get();
-                if ((i6 & 1) != 0) {
+                int i4 = atomicInteger.get();
+                if ((i4 & 1) != 0) {
                     i = 0;
                     break;
                 }
-                int i9 = i6 | 1;
-                if (atomicInteger.compareAndSet(i6, i9)) {
-                    i = i9;
+                int i6 = i4 | 1;
+                if (atomicInteger.compareAndSet(i4, i6)) {
+                    i = i6;
                     break;
                 }
             }
             if (i != 0) {
-                Socket socket = (Socket) nVar.f2802u;
+                Socket socket = (Socket) nVar.f2931u;
                 if (i != 3) {
                     if (!socket.isClosed() && !socket.isOutputShutdown()) {
                         outputStream.flush();
@@ -124,10 +124,10 @@ public final class c implements v {
 
     @Override // y8.v, java.io.Flushable
     public final void flush() {
-        e eVar = this.f42279u;
+        e eVar = this.f42248u;
         eVar.h();
         try {
-            this.f42278n.flush();
+            this.f42247n.flush();
             if (eVar.i()) {
                 throw eVar.j(null);
             }
@@ -142,6 +142,6 @@ public final class c implements v {
     }
 
     public final String toString() {
-        return "sink(" + ((Socket) this.f42280v.f2802u) + ')';
+        return "sink(" + ((Socket) this.f42249v.f2931u) + ')';
     }
 }

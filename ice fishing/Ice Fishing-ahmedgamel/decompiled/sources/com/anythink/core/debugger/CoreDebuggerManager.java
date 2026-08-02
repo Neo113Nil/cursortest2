@@ -28,42 +28,42 @@ import org.json.JSONObject;
 public class CoreDebuggerManager {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f17498a = "anythink_debug_place_strategy_obj";
+    public static final String f18285a = "anythink_debug_place_strategy_obj";
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile CoreDebuggerManager f17499b;
+    private static volatile CoreDebuggerManager f18286b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final DebuggerDeviceInfo f17500c = new DebuggerDeviceInfo();
+    private final DebuggerDeviceInfo f18287c = new DebuggerDeviceInfo();
 
     /* renamed from: d, reason: collision with root package name */
-    private final DebuggerSdkInfo f17501d = new DebuggerSdkInfo();
+    private final DebuggerSdkInfo f18288d = new DebuggerSdkInfo();
 
     private CoreDebuggerManager() {
     }
 
     public static CoreDebuggerManager getInstance() {
-        if (f17499b == null) {
+        if (f18286b == null) {
             synchronized (CoreDebuggerManager.class) {
                 try {
-                    if (f17499b == null) {
-                        f17499b = new CoreDebuggerManager();
+                    if (f18286b == null) {
+                        f18286b = new CoreDebuggerManager();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f17499b;
+        return f18286b;
     }
 
     public DebuggerSdkInfo getSdkInfo() {
-        return this.f17501d;
+        return this.f18288d;
     }
 
     public void reqPlacementConfig(Context context, String str, final IOnlinePlcCfgGetter iOnlinePlcCfgGetter) {
-        this.f17501d.setDebugKey(str);
-        v vVar = new v(this.f17501d.getAppId(), this.f17501d.getAppKey());
+        this.f18288d.setDebugKey(str);
+        v vVar = new v(this.f18288d.getAppId(), this.f18288d.getAppKey());
         vVar.a(str);
         new c().a(context, vVar, new b() { // from class: com.anythink.core.debugger.CoreDebuggerManager.1
             @Override // com.anythink.core.common.m.q
@@ -85,7 +85,7 @@ public class CoreDebuggerManager {
     }
 
     public void reqPlacementGroupInfo(Context context, String str, String str2, final IOnlinePlcCfgGetter iOnlinePlcCfgGetter) {
-        new r(context, new bm(this.f17501d.getAppId(), this.f17501d.getAppKey(), str, str2)).a(0, (q) new b() { // from class: com.anythink.core.debugger.CoreDebuggerManager.2
+        new r(context, new bm(this.f18288d.getAppId(), this.f18288d.getAppKey(), str, str2)).a(0, (q) new b() { // from class: com.anythink.core.debugger.CoreDebuggerManager.2
             @Override // com.anythink.core.common.m.q
             public final void onLoadError(int i, String str3, AdError adError) {
                 IOnlinePlcCfgGetter iOnlinePlcCfgGetter2 = iOnlinePlcCfgGetter;
@@ -105,7 +105,7 @@ public class CoreDebuggerManager {
     }
 
     public void reqPlacementStrategy(final Context context, final String str, String str2, JSONObject jSONObject, final IOnlinePlcCfgGetter iOnlinePlcCfgGetter) {
-        bm bmVar = new bm(this.f17501d.getAppId(), this.f17501d.getAppKey(), str, str2);
+        bm bmVar = new bm(this.f18288d.getAppId(), this.f18288d.getAppKey(), str, str2);
         bmVar.a(jSONObject);
         new o().a(context, bmVar, new b() { // from class: com.anythink.core.debugger.CoreDebuggerManager.3
             @Override // com.anythink.core.common.m.q
@@ -141,8 +141,8 @@ public class CoreDebuggerManager {
 
     public void setDeviceInfoGetter(Context context, IDeviceInfoGetter iDeviceInfoGetter) {
         if (iDeviceInfoGetter != null) {
-            if (this.f17500c.getDeviceInfoJsonObj() != null) {
-                iDeviceInfoGetter.onDeviceInfoCallback(this.f17500c);
+            if (this.f18287c.getDeviceInfoJsonObj() != null) {
+                iDeviceInfoGetter.onDeviceInfoCallback(this.f18287c);
                 return;
             }
             try {
@@ -153,24 +153,24 @@ public class CoreDebuggerManager {
                     String next = keys.next();
                     a9.put(next, b9.opt(next));
                 }
-                this.f17500c.setDeviceInfoJsonObj(a9);
+                this.f18287c.setDeviceInfoJsonObj(a9);
             } catch (Throwable unused) {
             }
-            iDeviceInfoGetter.onDeviceInfoCallback(this.f17500c);
+            iDeviceInfoGetter.onDeviceInfoCallback(this.f18287c);
         }
     }
 
     public void setSdkInfoGetter(ISdkInfoGetter iSdkInfoGetter) {
         t b9 = t.b();
         if (iSdkInfoGetter != null) {
-            this.f17501d.setInitSdk(b9.V());
-            this.f17501d.setAppId(b9.p());
-            this.f17501d.setAppKey(b9.q());
-            this.f17501d.setDeniedUploadDeviceInfo(b9.f());
-            this.f17501d.setHaveLoadAd(b9.f12746c);
-            this.f17501d.setHavePreInitNetwork(b9.P());
-            this.f17501d.setVersionName(ATSDK.getSDKVersionName());
-            iSdkInfoGetter.onSdkInfoCallback(this.f17501d);
+            this.f18288d.setInitSdk(b9.V());
+            this.f18288d.setAppId(b9.p());
+            this.f18288d.setAppKey(b9.q());
+            this.f18288d.setDeniedUploadDeviceInfo(b9.f());
+            this.f18288d.setHaveLoadAd(b9.f13532c);
+            this.f18288d.setHavePreInitNetwork(b9.P());
+            this.f18288d.setVersionName(ATSDK.getSDKVersionName());
+            iSdkInfoGetter.onSdkInfoCallback(this.f18288d);
         }
     }
 }

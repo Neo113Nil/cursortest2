@@ -31,52 +31,52 @@ public final class d extends b {
     };
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f7349a;
+    public final long f8135a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f7350b;
+    public final boolean f8136b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final boolean f7351c;
+    public final boolean f8137c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final boolean f7352d;
+    public final boolean f8138d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final boolean f7353e;
+    public final boolean f8139e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final long f7354f;
+    public final long f8140f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final long f7355g;
+    public final long f8141g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final List<a> f7356h;
+    public final List<a> f8142h;
     public final boolean i;
 
     /* renamed from: j, reason: collision with root package name */
-    public final long f7357j;
+    public final long f8143j;
 
     /* renamed from: k, reason: collision with root package name */
-    public final int f7358k;
+    public final int f8144k;
 
     /* renamed from: l, reason: collision with root package name */
-    public final int f7359l;
+    public final int f8145l;
 
     /* renamed from: m, reason: collision with root package name */
-    public final int f7360m;
+    public final int f8146m;
 
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public final int f7361a;
+        public final int f8147a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final long f7362b;
+        public final long f8148b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final long f7363c;
+        public final long f8149c;
 
         public /* synthetic */ a(int i, long j6, long j9, byte b9) {
             this(i, j6, j9);
@@ -87,15 +87,15 @@ public final class d extends b {
         }
 
         private void b(Parcel parcel) {
-            parcel.writeInt(this.f7361a);
-            parcel.writeLong(this.f7362b);
-            parcel.writeLong(this.f7363c);
+            parcel.writeInt(this.f8147a);
+            parcel.writeLong(this.f8148b);
+            parcel.writeLong(this.f8149c);
         }
 
         private a(int i, long j6, long j9) {
-            this.f7361a = i;
-            this.f7362b = j6;
-            this.f7363c = j9;
+            this.f8147a = i;
+            this.f8148b = j6;
+            this.f8149c = j9;
         }
     }
 
@@ -106,138 +106,138 @@ public final class d extends b {
     public static d a(s sVar, long j6, ac acVar) {
         List list;
         long j9;
-        boolean z3;
         boolean z6;
         boolean z9;
         boolean z10;
-        int i;
-        int i6;
-        int i9;
         boolean z11;
-        int i10;
+        int i;
+        int i4;
+        int i6;
+        boolean z12;
+        int i9;
         long j10;
-        long h9 = sVar.h();
-        boolean z12 = (sVar.d() & 128) != 0;
+        long h3 = sVar.h();
+        boolean z13 = (sVar.d() & 128) != 0;
         List list2 = Collections.EMPTY_LIST;
-        long j11 = com.anythink.basead.exoplayer.b.f6382b;
-        if (z12) {
+        long j11 = com.anythink.basead.exoplayer.b.f7168b;
+        if (z13) {
             list = list2;
             j9 = -9223372036854775807L;
-            z3 = false;
             z6 = false;
             z9 = false;
             z10 = false;
+            z11 = false;
             i = 0;
+            i4 = 0;
             i6 = 0;
-            i9 = 0;
         } else {
-            int d2 = sVar.d();
-            boolean z13 = (d2 & 128) != 0;
-            boolean z14 = (d2 & 64) != 0;
-            boolean z15 = (d2 & 32) != 0;
-            boolean z16 = (d2 & 16) != 0;
-            long a9 = (!z14 || z16) ? -9223372036854775807L : g.a(sVar, j6);
-            if (!z14) {
-                int d9 = sVar.d();
-                ArrayList arrayList = new ArrayList(d9);
-                int i11 = 0;
-                while (i11 < d9) {
-                    int d10 = sVar.d();
-                    if (z16) {
-                        i10 = d9;
+            int d9 = sVar.d();
+            boolean z14 = (d9 & 128) != 0;
+            boolean z15 = (d9 & 64) != 0;
+            boolean z16 = (d9 & 32) != 0;
+            boolean z17 = (d9 & 16) != 0;
+            long a9 = (!z15 || z17) ? -9223372036854775807L : g.a(sVar, j6);
+            if (!z15) {
+                int d10 = sVar.d();
+                ArrayList arrayList = new ArrayList(d10);
+                int i10 = 0;
+                while (i10 < d10) {
+                    int d11 = sVar.d();
+                    if (z17) {
+                        i9 = d10;
                         j10 = -9223372036854775807L;
                     } else {
-                        i10 = d9;
+                        i9 = d10;
                         j10 = g.a(sVar, j6);
                     }
-                    arrayList.add(new a(d10, j10, acVar.a(j10), (byte) 0));
-                    i11++;
-                    d9 = i10;
+                    arrayList.add(new a(d11, j10, acVar.a(j10), (byte) 0));
+                    i10++;
+                    d10 = i9;
                 }
                 list2 = arrayList;
             }
-            if (z15) {
-                long d11 = sVar.d();
-                boolean z17 = (128 & d11) != 0;
-                j11 = ((((d11 & 1) << 32) | sVar.h()) * 1000) / 90;
-                z11 = z17;
+            if (z16) {
+                long d12 = sVar.d();
+                boolean z18 = (128 & d12) != 0;
+                j11 = ((((d12 & 1) << 32) | sVar.h()) * 1000) / 90;
+                z12 = z18;
             } else {
-                z11 = false;
+                z12 = false;
             }
             int e9 = sVar.e();
             long j12 = a9;
             j9 = j11;
             j11 = j12;
+            i4 = sVar.d();
             i6 = sVar.d();
-            i9 = sVar.d();
             i = e9;
-            z10 = z11;
-            z3 = z13;
+            z11 = z12;
             z6 = z14;
+            z9 = z15;
             list = list2;
-            z9 = z16;
+            z10 = z17;
         }
-        return new d(h9, z12, z3, z6, z9, j11, acVar.a(j11), list, z10, j9, i, i6, i9);
+        return new d(h3, z13, z6, z9, z10, j11, acVar.a(j11), list, z11, j9, i, i4, i6);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeLong(this.f7349a);
-        parcel.writeByte(this.f7350b ? (byte) 1 : (byte) 0);
-        parcel.writeByte(this.f7351c ? (byte) 1 : (byte) 0);
-        parcel.writeByte(this.f7352d ? (byte) 1 : (byte) 0);
-        parcel.writeByte(this.f7353e ? (byte) 1 : (byte) 0);
-        parcel.writeLong(this.f7354f);
-        parcel.writeLong(this.f7355g);
-        int size = this.f7356h.size();
+        parcel.writeLong(this.f8135a);
+        parcel.writeByte(this.f8136b ? (byte) 1 : (byte) 0);
+        parcel.writeByte(this.f8137c ? (byte) 1 : (byte) 0);
+        parcel.writeByte(this.f8138d ? (byte) 1 : (byte) 0);
+        parcel.writeByte(this.f8139e ? (byte) 1 : (byte) 0);
+        parcel.writeLong(this.f8140f);
+        parcel.writeLong(this.f8141g);
+        int size = this.f8142h.size();
         parcel.writeInt(size);
-        for (int i6 = 0; i6 < size; i6++) {
-            a aVar = this.f7356h.get(i6);
-            parcel.writeInt(aVar.f7361a);
-            parcel.writeLong(aVar.f7362b);
-            parcel.writeLong(aVar.f7363c);
+        for (int i4 = 0; i4 < size; i4++) {
+            a aVar = this.f8142h.get(i4);
+            parcel.writeInt(aVar.f8147a);
+            parcel.writeLong(aVar.f8148b);
+            parcel.writeLong(aVar.f8149c);
         }
         parcel.writeByte(this.i ? (byte) 1 : (byte) 0);
-        parcel.writeLong(this.f7357j);
-        parcel.writeInt(this.f7358k);
-        parcel.writeInt(this.f7359l);
-        parcel.writeInt(this.f7360m);
+        parcel.writeLong(this.f8143j);
+        parcel.writeInt(this.f8144k);
+        parcel.writeInt(this.f8145l);
+        parcel.writeInt(this.f8146m);
     }
 
-    private d(long j6, boolean z3, boolean z6, boolean z9, boolean z10, long j9, long j10, List<a> list, boolean z11, long j11, int i, int i6, int i9) {
-        this.f7349a = j6;
-        this.f7350b = z3;
-        this.f7351c = z6;
-        this.f7352d = z9;
-        this.f7353e = z10;
-        this.f7354f = j9;
-        this.f7355g = j10;
-        this.f7356h = Collections.unmodifiableList(list);
-        this.i = z11;
-        this.f7357j = j11;
-        this.f7358k = i;
-        this.f7359l = i6;
-        this.f7360m = i9;
+    private d(long j6, boolean z6, boolean z9, boolean z10, boolean z11, long j9, long j10, List<a> list, boolean z12, long j11, int i, int i4, int i6) {
+        this.f8135a = j6;
+        this.f8136b = z6;
+        this.f8137c = z9;
+        this.f8138d = z10;
+        this.f8139e = z11;
+        this.f8140f = j9;
+        this.f8141g = j10;
+        this.f8142h = Collections.unmodifiableList(list);
+        this.i = z12;
+        this.f8143j = j11;
+        this.f8144k = i;
+        this.f8145l = i4;
+        this.f8146m = i6;
     }
 
     private d(Parcel parcel) {
-        this.f7349a = parcel.readLong();
-        this.f7350b = parcel.readByte() == 1;
-        this.f7351c = parcel.readByte() == 1;
-        this.f7352d = parcel.readByte() == 1;
-        this.f7353e = parcel.readByte() == 1;
-        this.f7354f = parcel.readLong();
-        this.f7355g = parcel.readLong();
+        this.f8135a = parcel.readLong();
+        this.f8136b = parcel.readByte() == 1;
+        this.f8137c = parcel.readByte() == 1;
+        this.f8138d = parcel.readByte() == 1;
+        this.f8139e = parcel.readByte() == 1;
+        this.f8140f = parcel.readLong();
+        this.f8141g = parcel.readLong();
         int readInt = parcel.readInt();
         ArrayList arrayList = new ArrayList(readInt);
         for (int i = 0; i < readInt; i++) {
             arrayList.add(a.a(parcel));
         }
-        this.f7356h = Collections.unmodifiableList(arrayList);
+        this.f8142h = Collections.unmodifiableList(arrayList);
         this.i = parcel.readByte() == 1;
-        this.f7357j = parcel.readLong();
-        this.f7358k = parcel.readInt();
-        this.f7359l = parcel.readInt();
-        this.f7360m = parcel.readInt();
+        this.f8143j = parcel.readLong();
+        this.f8144k = parcel.readInt();
+        this.f8145l = parcel.readInt();
+        this.f8146m = parcel.readInt();
     }
 }

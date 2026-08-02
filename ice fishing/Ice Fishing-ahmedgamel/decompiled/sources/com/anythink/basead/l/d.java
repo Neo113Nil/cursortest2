@@ -24,35 +24,35 @@ import org.json.JSONArray;
 public class d {
 
     /* renamed from: d, reason: collision with root package name */
-    private static final String f9452d = "d";
+    private static final String f10238d = "d";
 
     /* renamed from: a, reason: collision with root package name */
-    c f9453a;
+    c f10239a;
 
     /* renamed from: e, reason: collision with root package name */
-    private Context f9456e;
+    private Context f10242e;
 
     /* renamed from: f, reason: collision with root package name */
-    private r f9457f;
+    private r f10243f;
 
     /* renamed from: g, reason: collision with root package name */
-    private x f9458g;
+    private x f10244g;
     private a i;
 
     /* renamed from: j, reason: collision with root package name */
-    private long f9460j;
+    private long f10246j;
 
     /* renamed from: l, reason: collision with root package name */
-    private boolean f9462l = true;
+    private boolean f10248l = true;
 
     /* renamed from: b, reason: collision with root package name */
-    String f9454b = "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"/><meta name=\"viewport\"content=\"width=device-width, initial-scale=1.0\"/><title>TopOn</title></head><body>%s</body></html>";
+    String f10240b = "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"/><meta name=\"viewport\"content=\"width=device-width, initial-scale=1.0\"/><title>TopOn</title></head><body>%s</body></html>";
 
     /* renamed from: c, reason: collision with root package name */
-    String f9455c = "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"/><meta name=\"viewport\"content=\"width=device-width, initial-scale=1.0\"/><title>TopOn</title></head>%s</html>";
+    String f10241c = "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"/><meta name=\"viewport\"content=\"width=device-width, initial-scale=1.0\"/><title>TopOn</title></head>%s</html>";
 
     /* renamed from: h, reason: collision with root package name */
-    private a f9459h = new a() { // from class: com.anythink.basead.l.d.1
+    private a f10245h = new a() { // from class: com.anythink.basead.l.d.1
         /* JADX WARN: Removed duplicated region for block: B:31:0x0192  */
         /* JADX WARN: Removed duplicated region for block: B:34:? A[RETURN, SYNTHETIC] */
         /* JADX WARN: Removed duplicated region for block: B:8:0x004d  */
@@ -61,52 +61,52 @@ public class d {
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public final void a(r rVar) {
-            boolean z3;
+            boolean z6;
             String str;
             String str2 = "";
-            if (!d.this.f9457f.n()) {
-                r rVar2 = d.this.f9457f;
-                bk bkVar = (bk) d.this.f9458g.f14168o;
-                x unused = d.this.f9458g;
+            if (!d.this.f10243f.n()) {
+                r rVar2 = d.this.f10243f;
+                bk bkVar = (bk) d.this.f10244g.f14954o;
+                x unused = d.this.f10244g;
                 if (rVar2.a(bkVar) == null) {
-                    z3 = false;
-                    str = d.this.f9457f.a();
-                    String unused2 = d.f9452d;
+                    z6 = false;
+                    str = d.this.f10243f.a();
+                    String unused2 = d.f10238d;
                     System.currentTimeMillis();
-                    long unused3 = d.this.f9460j;
-                    if (d.this.f9462l) {
-                        if (z3) {
-                            x xVar = d.this.f9458g;
-                            String str3 = d.this.f9458g.f14157c;
-                            String aD = d.this.f9457f.aD();
-                            String v9 = d.this.f9457f.v();
-                            long currentTimeMillis = System.currentTimeMillis() - d.this.f9460j;
+                    long unused3 = d.this.f10246j;
+                    if (d.this.f10248l) {
+                        if (z6) {
+                            x xVar = d.this.f10244g;
+                            String str3 = d.this.f10244g.f14943c;
+                            String aD = d.this.f10243f.aD();
+                            String v9 = d.this.f10243f.v();
+                            long currentTimeMillis = System.currentTimeMillis() - d.this.f10246j;
                             StringBuilder sb = new StringBuilder();
-                            sb.append(d.this.f9461k);
+                            sb.append(d.this.f10247k);
                             String sb2 = sb.toString();
-                            String E8 = d.this.f9457f.E();
-                            String H8 = d.this.f9457f.H();
-                            String arrays = d.this.f9457f.aH().f() != null ? Arrays.toString(d.this.f9457f.aH().f()) : "";
-                            c cVar = d.this.f9453a;
+                            String E8 = d.this.f10243f.E();
+                            String H8 = d.this.f10243f.H();
+                            String arrays = d.this.f10243f.aH().f() != null ? Arrays.toString(d.this.f10243f.aH().f()) : "";
+                            c cVar = d.this.f10239a;
                             if (cVar != null && cVar.a().size() > 0) {
-                                str2 = d.this.f9453a.a().toString();
+                                str2 = d.this.f10239a.a().toString();
                             }
                             com.anythink.core.common.u.e.a(xVar, str3, aD, v9, "1", currentTimeMillis, "", sb2, E8, H8, arrays, str2);
                         } else {
-                            x xVar2 = d.this.f9458g;
-                            String str4 = d.this.f9458g.f14157c;
-                            String aD2 = d.this.f9457f.aD();
-                            String v10 = d.this.f9457f.v();
-                            long currentTimeMillis2 = System.currentTimeMillis() - d.this.f9460j;
+                            x xVar2 = d.this.f10244g;
+                            String str4 = d.this.f10244g.f14943c;
+                            String aD2 = d.this.f10243f.aD();
+                            String v10 = d.this.f10243f.v();
+                            long currentTimeMillis2 = System.currentTimeMillis() - d.this.f10246j;
                             StringBuilder sb3 = new StringBuilder();
-                            sb3.append(d.this.f9461k);
+                            sb3.append(d.this.f10247k);
                             String sb4 = sb3.toString();
-                            String E9 = d.this.f9457f.E();
-                            String H9 = d.this.f9457f.H();
-                            String arrays2 = d.this.f9457f.aH().f() != null ? Arrays.toString(d.this.f9457f.aH().f()) : "";
-                            c cVar2 = d.this.f9453a;
+                            String E9 = d.this.f10243f.E();
+                            String H9 = d.this.f10243f.H();
+                            String arrays2 = d.this.f10243f.aH().f() != null ? Arrays.toString(d.this.f10243f.aH().f()) : "";
+                            c cVar2 = d.this.f10239a;
                             if (cVar2 != null && cVar2.a().size() > 0) {
-                                str2 = d.this.f9453a.a().toString();
+                                str2 = d.this.f10239a.a().toString();
                             }
                             com.anythink.core.common.u.e.a(xVar2, str4, aD2, v10, "-4", currentTimeMillis2, str, sb4, E9, H9, arrays2, str2);
                         }
@@ -118,12 +118,12 @@ public class d {
                     return;
                 }
             }
-            z3 = true;
+            z6 = true;
             str = "";
-            String unused22 = d.f9452d;
+            String unused22 = d.f10238d;
             System.currentTimeMillis();
-            long unused32 = d.this.f9460j;
-            if (d.this.f9462l) {
+            long unused32 = d.this.f10246j;
+            if (d.this.f10248l) {
             }
             if (d.this.i == null) {
             }
@@ -131,22 +131,22 @@ public class d {
 
         @Override // com.anythink.basead.l.d.a
         public final void a(String str, String str2) {
-            if (d.this.f9462l) {
-                x xVar = d.this.f9458g;
-                String str3 = d.this.f9458g.f14157c;
-                String aD = d.this.f9457f.aD();
-                String v9 = d.this.f9457f.v();
-                long currentTimeMillis = System.currentTimeMillis() - d.this.f9460j;
+            if (d.this.f10248l) {
+                x xVar = d.this.f10244g;
+                String str3 = d.this.f10244g.f14943c;
+                String aD = d.this.f10243f.aD();
+                String v9 = d.this.f10243f.v();
+                long currentTimeMillis = System.currentTimeMillis() - d.this.f10246j;
                 StringBuilder sb = new StringBuilder();
-                sb.append(d.this.f9461k);
+                sb.append(d.this.f10247k);
                 String sb2 = sb.toString();
-                String E8 = d.this.f9457f.E();
-                String H8 = d.this.f9457f.H();
+                String E8 = d.this.f10243f.E();
+                String H8 = d.this.f10243f.H();
                 String str4 = "";
-                String arrays = d.this.f9457f.aH().f() != null ? Arrays.toString(d.this.f9457f.aH().f()) : "";
-                c cVar = d.this.f9453a;
+                String arrays = d.this.f10243f.aH().f() != null ? Arrays.toString(d.this.f10243f.aH().f()) : "";
+                c cVar = d.this.f10239a;
                 if (cVar != null && cVar.a().size() > 0) {
-                    str4 = d.this.f9453a.a().toString();
+                    str4 = d.this.f10239a.a().toString();
                 }
                 com.anythink.core.common.u.e.a(xVar, str3, aD, v9, str, currentTimeMillis, str2, sb2, E8, H8, arrays, str4);
             }
@@ -157,63 +157,63 @@ public class d {
     };
 
     /* renamed from: k, reason: collision with root package name */
-    private int f9461k = -1;
+    private int f10247k = -1;
 
     /* renamed from: com.anythink.basead.l.d$4, reason: invalid class name */
     public static /* synthetic */ class AnonymousClass4 {
 
         /* renamed from: a, reason: collision with root package name */
-        static final /* synthetic */ int[] f9466a;
+        static final /* synthetic */ int[] f10252a;
 
         static {
             int[] iArr = new int[f.a.values().length];
-            f9466a = iArr;
+            f10252a = iArr;
             try {
                 iArr[f.a.AD_START.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f9466a[f.a.AD_FIRSTQUARTILE.ordinal()] = 2;
+                f10252a[f.a.AD_FIRSTQUARTILE.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f9466a[f.a.AD_MIDPOINT.ordinal()] = 3;
+                f10252a[f.a.AD_MIDPOINT.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f9466a[f.a.AD_THIRDQUARTILE.ordinal()] = 4;
+                f10252a[f.a.AD_THIRDQUARTILE.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f9466a[f.a.AD_COMPLETE.ordinal()] = 5;
+                f10252a[f.a.AD_COMPLETE.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f9466a[f.a.AD_PAUSE.ordinal()] = 6;
+                f10252a[f.a.AD_PAUSE.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f9466a[f.a.AD_RESUME.ordinal()] = 7;
+                f10252a[f.a.AD_RESUME.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f9466a[f.a.AD_UNMUTE.ordinal()] = 8;
+                f10252a[f.a.AD_UNMUTE.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f9466a[f.a.AD_MUTE.ordinal()] = 9;
+                f10252a[f.a.AD_MUTE.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f9466a[f.a.AD_REWIND.ordinal()] = 10;
+                f10252a[f.a.AD_REWIND.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f9466a[f.a.AD_FULLSCREEN.ordinal()] = 11;
+                f10252a[f.a.AD_FULLSCREEN.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                f9466a[f.a.AD_CLOSE.ordinal()] = 12;
+                f10252a[f.a.AD_CLOSE.ordinal()] = 12;
             } catch (NoSuchFieldError unused12) {
             }
         }
@@ -226,22 +226,22 @@ public class d {
     }
 
     public d(Context context, r rVar, x xVar) {
-        this.f9456e = context;
-        this.f9457f = rVar;
-        this.f9458g = xVar;
+        this.f10242e = context;
+        this.f10243f = rVar;
+        this.f10244g = xVar;
     }
 
     public final void a(a aVar) {
-        String af = this.f9457f.af();
+        String af = this.f10243f.af();
         this.i = aVar;
-        this.f9460j = System.currentTimeMillis();
-        this.f9462l = true;
-        c cVar = new c(this.f9458g, new c.a() { // from class: com.anythink.basead.l.d.2
+        this.f10246j = System.currentTimeMillis();
+        this.f10248l = true;
+        c cVar = new c(this.f10244g, new c.a() { // from class: com.anythink.basead.l.d.2
             @Override // com.anythink.basead.l.c.a
             public final void a(int i, String str) {
-                String unused = d.f9452d;
-                if (d.this.f9459h != null) {
-                    d.this.f9459h.a(String.valueOf(i), str);
+                String unused = d.f10238d;
+                if (d.this.f10245h != null) {
+                    d.this.f10245h.a(String.valueOf(i), str);
                 }
             }
 
@@ -250,7 +250,7 @@ public class d {
                 d.a(d.this, aVarArr, jSONArray);
             }
         });
-        this.f9453a = cVar;
+        this.f10239a = cVar;
         cVar.a(af);
     }
 
@@ -270,13 +270,13 @@ public class d {
             return;
         }
         this.i = aVar;
-        this.f9462l = false;
-        c cVar = new c(this.f9458g, true, new c.a() { // from class: com.anythink.basead.l.d.3
+        this.f10248l = false;
+        c cVar = new c(this.f10244g, true, new c.a() { // from class: com.anythink.basead.l.d.3
             @Override // com.anythink.basead.l.c.a
             public final void a(int i, String str2) {
-                String unused2 = d.f9452d;
-                if (d.this.f9459h != null) {
-                    d.this.f9459h.a(String.valueOf(i), str2);
+                String unused2 = d.f10238d;
+                if (d.this.f10245h != null) {
+                    d.this.f10245h.a(String.valueOf(i), str2);
                 }
             }
 
@@ -285,13 +285,13 @@ public class d {
                 d.a(d.this, aVarArr, jSONArray2);
             }
         });
-        this.f9453a = cVar;
+        this.f10239a = cVar;
         cVar.a(jSONArray);
     }
 
     private void a(com.anythink.basead.l.b.a[] aVarArr, JSONArray jSONArray) {
         if (aVarArr == null) {
-            a aVar = this.f9459h;
+            a aVar = this.f10245h;
             if (aVar != null) {
                 aVar.a("-3", "Parsers results are null.");
                 return;
@@ -299,7 +299,7 @@ public class d {
             return;
         }
         if (aVarArr.length != 2) {
-            a aVar2 = this.f9459h;
+            a aVar2 = this.f10245h;
             if (aVar2 != null) {
                 aVar2.a("-3", "2 VAST result parsers are required.");
                 return;
@@ -312,22 +312,22 @@ public class d {
             if (((com.anythink.basead.l.b.b) aVar4) != null) {
                 boolean a9 = a((com.anythink.basead.l.b.b) aVar3, (com.anythink.basead.l.b.b) aVar4);
                 jSONArray.length();
-                a aVar5 = this.f9459h;
+                a aVar5 = this.f10245h;
                 if (aVar5 != null) {
                     if (!a9) {
                         aVar5.a("-3", "Do fillAdxOfferFormVast is fail.");
                         return;
                     }
-                    if (this.f9462l) {
-                        com.anythink.core.common.a.a.a().a(this.f9456e, this.f9458g.f14155a, jSONArray.toString());
+                    if (this.f10248l) {
+                        com.anythink.core.common.a.a.a().a(this.f10242e, this.f10244g.f14941a, jSONArray.toString());
                     }
-                    this.f9459h.a(this.f9457f);
+                    this.f10245h.a(this.f10243f);
                     return;
                 }
                 return;
             }
         }
-        a aVar6 = this.f9459h;
+        a aVar6 = this.f10245h;
         if (aVar6 != null) {
             aVar6.a("-3", "One of parsers is null.");
         }
@@ -351,48 +351,48 @@ public class d {
         String str2;
         String str3;
         int i;
-        int i6;
-        boolean z3;
+        int i4;
+        boolean z6;
         String a9;
         char c9;
         try {
-            bl aH = this.f9457f.aH();
+            bl aH = this.f10243f.aH();
             bVar.b(bVar, 0);
             bVar.a(bVar, 0);
             bVar.c(bVar, 0);
-            String d2 = com.anythink.basead.l.b.b.d(bVar);
+            String d9 = com.anythink.basead.l.b.b.d(bVar);
             String e9 = com.anythink.basead.l.b.b.e(bVar);
             String c10 = com.anythink.basead.l.b.b.c(bVar);
-            String f3 = bVar.f(bVar);
+            String f2 = bVar.f(bVar);
             String b9 = bVar2.b(bVar2);
             bVar2.a(bVar2);
-            int j6 = m.j(this.f9456e);
-            if (String.valueOf(this.f9458g.f14163j).equals("2") && this.f9457f.aJ() == 3) {
-                String D8 = this.f9458g.f14168o.D();
+            int j6 = m.j(this.f10242e);
+            if (String.valueOf(this.f10244g.f14949j).equals("2") && this.f10243f.aJ() == 3) {
+                String D8 = this.f10244g.f14954o.D();
                 switch (D8.hashCode()) {
                     case -559799608:
-                        if (D8.equals(y.f14179c)) {
+                        if (D8.equals(y.f14965c)) {
                             c9 = 2;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 1507809730:
-                        if (D8.equals(y.f14177a)) {
+                        if (D8.equals(y.f14963a)) {
                             c9 = 0;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 1507809854:
-                        if (D8.equals(y.f14178b)) {
+                        if (D8.equals(y.f14964b)) {
                             c9 = 1;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 1622564786:
-                        if (D8.equals(y.f14180d)) {
+                        if (D8.equals(y.f14966d)) {
                             c9 = 3;
                             break;
                         }
@@ -403,13 +403,13 @@ public class d {
                         break;
                 }
                 if (c9 == 0) {
-                    j6 = q.a(this.f9456e, 67.0f);
+                    j6 = q.a(this.f10242e, 67.0f);
                 } else if (c9 == 1) {
-                    j6 = q.a(this.f9456e, 90.0f);
+                    j6 = q.a(this.f10242e, 90.0f);
                 } else if (c9 == 2) {
-                    j6 = q.a(this.f9456e, 300.0f);
+                    j6 = q.a(this.f10242e, 300.0f);
                 } else if (c9 == 3) {
-                    j6 = q.a(this.f9456e, 120.0f);
+                    j6 = q.a(this.f10242e, 120.0f);
                 }
             }
             String a10 = bVar2.a(bVar2, 0, j6);
@@ -430,18 +430,18 @@ public class d {
                     com.anythink.basead.l.b.b.a(a11);
                     int intValue = com.anythink.basead.l.b.b.a(a11).intValue();
                     if (intValue == 1) {
-                        this.f9461k = 1;
+                        this.f10247k = 1;
                         a9 = a11.e().a();
                         if (!TextUtils.isEmpty(a9)) {
                             a9 = a(a9);
                         }
                     } else if (intValue != 2) {
                         if (intValue == 3) {
-                            this.f9461k = 3;
+                            this.f10247k = 3;
                         }
                         a9 = "";
                     } else {
-                        this.f9461k = 2;
+                        this.f10247k = 2;
                         str4 = a11.c().a();
                         a9 = "";
                     }
@@ -461,7 +461,7 @@ public class d {
                         i = -1;
                     }
                     try {
-                        i6 = Integer.parseInt(a11.b());
+                        i4 = Integer.parseInt(a11.b());
                         str3 = a9;
                         str = c10;
                         str2 = str4;
@@ -469,10 +469,10 @@ public class d {
                         str3 = a9;
                         str = c10;
                         str2 = str4;
-                        i6 = -1;
-                        this.f9457f.m(d2);
-                        this.f9457f.n(e9);
-                        this.f9457f.t(a10);
+                        i4 = -1;
+                        this.f10243f.m(d9);
+                        this.f10243f.n(e9);
+                        this.f10243f.t(a10);
                         if (b10 > 0) {
                         }
                         if (e10 > 0) {
@@ -483,7 +483,7 @@ public class d {
                         }
                         if (!TextUtils.isEmpty(str3)) {
                         }
-                        if (!TextUtils.isEmpty(f3)) {
+                        if (!TextUtils.isEmpty(f2)) {
                         }
                         if (bVar.a() != null) {
                         }
@@ -493,41 +493,41 @@ public class d {
                         }
                         while (r5 < r3) {
                         }
-                        this.f9457f.E();
-                        this.f9457f.aI();
-                        this.f9457f.z();
-                        this.f9457f.x();
-                        this.f9457f.H();
-                        this.f9457f.ah();
+                        this.f10243f.E();
+                        this.f10243f.aI();
+                        this.f10243f.z();
+                        this.f10243f.x();
+                        this.f10243f.H();
+                        this.f10243f.ah();
                         return true;
                     }
-                    this.f9457f.m(d2);
-                    this.f9457f.n(e9);
-                    this.f9457f.t(a10);
+                    this.f10243f.m(d9);
+                    this.f10243f.n(e9);
+                    this.f10243f.t(a10);
                     if (b10 > 0) {
-                        this.f9457f.a(b10);
+                        this.f10243f.a(b10);
                     }
                     if (e10 > 0) {
-                        this.f9457f.k(e10);
+                        this.f10243f.k(e10);
                     }
                     if (f9 > 0) {
-                        this.f9457f.l(f9);
+                        this.f10243f.l(f9);
                     }
                     if (!TextUtils.isEmpty(str2)) {
-                        this.f9457f.p(str2);
-                        this.f9457f.q(str2);
+                        this.f10243f.p(str2);
+                        this.f10243f.q(str2);
                     }
                     if (!TextUtils.isEmpty(str3)) {
-                        this.f9457f.f(str3);
+                        this.f10243f.f(str3);
                         if (i > 0) {
-                            this.f9457f.c(i);
+                            this.f10243f.c(i);
                         }
-                        if (i6 > 0) {
-                            this.f9457f.d(i6);
+                        if (i4 > 0) {
+                            this.f10243f.d(i4);
                         }
                     }
-                    if (!TextUtils.isEmpty(f3)) {
-                        this.f9457f.w(f3);
+                    if (!TextUtils.isEmpty(f2)) {
+                        this.f10243f.w(f2);
                     }
                     if (bVar.a() != null) {
                         ArrayList arrayList3 = new ArrayList();
@@ -538,11 +538,11 @@ public class d {
                                 arrayList3.add(next.a());
                             }
                         }
-                        z3 = false;
+                        z6 = false;
                         try {
                             aH.e(a(aH.f(), (String[]) arrayList3.toArray(new String[0])));
                         } catch (Throwable unused3) {
-                            return z3;
+                            return z6;
                         }
                     }
                     if (bVar.b() != null) {
@@ -554,7 +554,7 @@ public class d {
                                 arrayList4.add(next2.a());
                             }
                         }
-                        z3 = false;
+                        z6 = false;
                         aH.f(a(aH.g(), (String[]) arrayList4.toArray(new String[0])));
                     }
                     if (!TextUtils.isEmpty(str)) {
@@ -563,7 +563,7 @@ public class d {
                     for (f.a aVar : f.a.values()) {
                         ArrayList<String> a13 = bVar.a(aVar);
                         if (a13.size() > 0) {
-                            switch (AnonymousClass4.f9466a[aVar.ordinal()]) {
+                            switch (AnonymousClass4.f10252a[aVar.ordinal()]) {
                                 case 1:
                                     aH.g(a(aH.h(), (String[]) a13.toArray(new String[0])));
                                     break;
@@ -598,18 +598,18 @@ public class d {
                             }
                         }
                     }
-                    this.f9457f.E();
-                    this.f9457f.aI();
-                    this.f9457f.z();
-                    this.f9457f.x();
-                    this.f9457f.H();
-                    this.f9457f.ah();
+                    this.f10243f.E();
+                    this.f10243f.aI();
+                    this.f10243f.z();
+                    this.f10243f.x();
+                    this.f10243f.H();
+                    this.f10243f.ah();
                     return true;
                 }
-                i6 = -1;
-                this.f9457f.m(d2);
-                this.f9457f.n(e9);
-                this.f9457f.t(a10);
+                i4 = -1;
+                this.f10243f.m(d9);
+                this.f10243f.n(e9);
+                this.f10243f.t(a10);
                 if (b10 > 0) {
                 }
                 if (e10 > 0) {
@@ -620,7 +620,7 @@ public class d {
                 }
                 if (!TextUtils.isEmpty(str3)) {
                 }
-                if (!TextUtils.isEmpty(f3)) {
+                if (!TextUtils.isEmpty(f2)) {
                 }
                 if (bVar.a() != null) {
                 }
@@ -630,12 +630,12 @@ public class d {
                 }
                 while (r5 < r3) {
                 }
-                this.f9457f.E();
-                this.f9457f.aI();
-                this.f9457f.z();
-                this.f9457f.x();
-                this.f9457f.H();
-                this.f9457f.ah();
+                this.f10243f.E();
+                this.f10243f.aI();
+                this.f10243f.z();
+                this.f10243f.x();
+                this.f10243f.H();
+                this.f10243f.ah();
                 return true;
             } catch (Throwable unused5) {
                 return false;
@@ -655,9 +655,9 @@ public class d {
                 return replaceAll;
             }
             if (replaceAll.startsWith("<body")) {
-                return String.format(this.f9455c, replaceAll);
+                return String.format(this.f10241c, replaceAll);
             }
-            return String.format(this.f9454b, replaceAll);
+            return String.format(this.f10240b, replaceAll);
         } catch (Throwable unused) {
             return str;
         }
@@ -678,7 +678,7 @@ public class d {
 
     public static /* synthetic */ void a(d dVar, com.anythink.basead.l.b.a[] aVarArr, JSONArray jSONArray) {
         if (aVarArr == null) {
-            a aVar = dVar.f9459h;
+            a aVar = dVar.f10245h;
             if (aVar != null) {
                 aVar.a("-3", "Parsers results are null.");
                 return;
@@ -686,7 +686,7 @@ public class d {
             return;
         }
         if (aVarArr.length != 2) {
-            a aVar2 = dVar.f9459h;
+            a aVar2 = dVar.f10245h;
             if (aVar2 != null) {
                 aVar2.a("-3", "2 VAST result parsers are required.");
                 return;
@@ -699,22 +699,22 @@ public class d {
             if (((com.anythink.basead.l.b.b) aVar4) != null) {
                 boolean a9 = dVar.a((com.anythink.basead.l.b.b) aVar3, (com.anythink.basead.l.b.b) aVar4);
                 jSONArray.length();
-                a aVar5 = dVar.f9459h;
+                a aVar5 = dVar.f10245h;
                 if (aVar5 != null) {
                     if (!a9) {
                         aVar5.a("-3", "Do fillAdxOfferFormVast is fail.");
                         return;
                     }
-                    if (dVar.f9462l) {
-                        com.anythink.core.common.a.a.a().a(dVar.f9456e, dVar.f9458g.f14155a, jSONArray.toString());
+                    if (dVar.f10248l) {
+                        com.anythink.core.common.a.a.a().a(dVar.f10242e, dVar.f10244g.f14941a, jSONArray.toString());
                     }
-                    dVar.f9459h.a(dVar.f9457f);
+                    dVar.f10245h.a(dVar.f10243f);
                     return;
                 }
                 return;
             }
         }
-        a aVar6 = dVar.f9459h;
+        a aVar6 = dVar.f10245h;
         if (aVar6 != null) {
             aVar6.a("-3", "One of parsers is null.");
         }

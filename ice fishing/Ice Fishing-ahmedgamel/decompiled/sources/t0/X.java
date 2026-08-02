@@ -1,46 +1,59 @@
 package t0;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import h3.C4566c;
-import java.util.Arrays;
-
 /* loaded from: classes.dex */
-public final class X implements Parcelable {
-    public static final Parcelable.Creator<X> CREATOR = new C4566c(10);
+public final class X {
 
-    /* renamed from: n, reason: collision with root package name */
-    public int f40622n;
+    /* renamed from: a, reason: collision with root package name */
+    public int f40686a;
 
-    /* renamed from: u, reason: collision with root package name */
-    public int f40623u;
+    /* renamed from: b, reason: collision with root package name */
+    public int f40687b;
 
-    /* renamed from: v, reason: collision with root package name */
-    public int[] f40624v;
+    /* renamed from: c, reason: collision with root package name */
+    public int f40688c;
 
-    /* renamed from: w, reason: collision with root package name */
-    public boolean f40625w;
+    /* renamed from: d, reason: collision with root package name */
+    public int f40689d;
 
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
+    /* renamed from: e, reason: collision with root package name */
+    public int f40690e;
 
-    public final String toString() {
-        return "FullSpanItem{mPosition=" + this.f40622n + ", mGapDir=" + this.f40623u + ", mHasUnwantedGapAfter=" + this.f40625w + ", mGapPerSpan=" + Arrays.toString(this.f40624v) + '}';
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeInt(this.f40622n);
-        parcel.writeInt(this.f40623u);
-        parcel.writeInt(this.f40625w ? 1 : 0);
-        int[] iArr = this.f40624v;
-        if (iArr == null || iArr.length <= 0) {
-            parcel.writeInt(0);
-        } else {
-            parcel.writeInt(iArr.length);
-            parcel.writeIntArray(this.f40624v);
+    public final boolean a() {
+        int i = this.f40686a;
+        int i4 = 2;
+        if ((i & 7) != 0) {
+            int i6 = this.f40689d;
+            int i9 = this.f40687b;
+            if (((i6 > i9 ? 1 : i6 == i9 ? 2 : 4) & i) == 0) {
+                return false;
+            }
         }
+        if ((i & 112) != 0) {
+            int i10 = this.f40689d;
+            int i11 = this.f40688c;
+            if ((((i10 > i11 ? 1 : i10 == i11 ? 2 : 4) << 4) & i) == 0) {
+                return false;
+            }
+        }
+        if ((i & 1792) != 0) {
+            int i12 = this.f40690e;
+            int i13 = this.f40687b;
+            if ((((i12 > i13 ? 1 : i12 == i13 ? 2 : 4) << 8) & i) == 0) {
+                return false;
+            }
+        }
+        if ((i & 28672) != 0) {
+            int i14 = this.f40690e;
+            int i15 = this.f40688c;
+            if (i14 > i15) {
+                i4 = 1;
+            } else if (i14 != i15) {
+                i4 = 4;
+            }
+            if ((i & (i4 << 12)) == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 }

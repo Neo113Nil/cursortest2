@@ -10,13 +10,13 @@ import org.json.JSONObject;
 public class i {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f17306a = "i";
+    public static final String f18093a = "i";
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile i f17307b;
+    private static volatile i f18094b;
 
     /* renamed from: c, reason: collision with root package name */
-    private Context f17308c;
+    private Context f18095c;
 
     public interface a {
         void a(String str);
@@ -25,7 +25,7 @@ public class i {
     }
 
     private i(Context context) {
-        this.f17308c = context.getApplicationContext();
+        this.f18095c = context.getApplicationContext();
     }
 
     private static void b(Object obj, a aVar) {
@@ -43,30 +43,30 @@ public class i {
     }
 
     public static i a(Context context) {
-        if (f17307b == null) {
+        if (f18094b == null) {
             synchronized (i.class) {
                 try {
-                    if (f17307b == null) {
-                        f17307b = new i(context);
+                    if (f18094b == null) {
+                        f18094b = new i(context);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f17307b;
+        return f18094b;
     }
 
     private static h a(JSONObject jSONObject) {
         try {
-            jSONObject.put(h.b.f17299b, System.currentTimeMillis());
+            jSONObject.put(h.b.f18086b, System.currentTimeMillis());
         } catch (Throwable unused) {
         }
         return h.a(jSONObject);
     }
 
     public final synchronized void a(ax axVar, final a aVar) {
-        new com.anythink.core.common.m.m(this.f17308c, axVar).a(0, new com.anythink.core.common.m.q() { // from class: com.anythink.core.d.i.1
+        new com.anythink.core.common.m.m(this.f18095c, axVar).a(0, new com.anythink.core.common.m.q() { // from class: com.anythink.core.d.i.1
             @Override // com.anythink.core.common.m.q
             public final void onLoadCanceled(int i) {
                 a aVar2 = aVar;
@@ -88,7 +88,7 @@ public class i {
 
             @Override // com.anythink.core.common.m.q
             public final void onLoadFinish(int i, Object obj) {
-                Context unused = i.this.f17308c;
+                Context unused = i.this.f18095c;
                 i.a(obj, aVar);
             }
 

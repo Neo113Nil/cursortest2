@@ -11,57 +11,57 @@ import com.anythink.basead.exoplayer.k.o;
 public final class d extends ContentObserver {
 
     /* renamed from: a, reason: collision with root package name */
-    private final Context f36228a;
+    private final Context f36995a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final AudioManager f36229b;
+    private final AudioManager f36996b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final a f36230c;
+    private final a f36997c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final c f36231d;
+    private final c f36998d;
 
     /* renamed from: e, reason: collision with root package name */
-    private float f36232e;
+    private float f36999e;
 
     public d(Handler handler, Context context, a aVar, c cVar) {
         super(handler);
-        this.f36228a = context;
-        this.f36229b = (AudioManager) context.getSystemService(o.f8445b);
-        this.f36230c = aVar;
-        this.f36231d = cVar;
+        this.f36995a = context;
+        this.f36996b = (AudioManager) context.getSystemService(o.f9231b);
+        this.f36997c = aVar;
+        this.f36998d = cVar;
     }
 
     private float a() {
-        return this.f36230c.a(this.f36229b.getStreamVolume(3), this.f36229b.getStreamMaxVolume(3));
+        return this.f36997c.a(this.f36996b.getStreamVolume(3), this.f36996b.getStreamMaxVolume(3));
     }
 
     private void b() {
-        this.f36231d.a(this.f36232e);
+        this.f36998d.a(this.f36999e);
     }
 
     public void c() {
-        this.f36232e = a();
+        this.f36999e = a();
         b();
-        this.f36228a.getContentResolver().registerContentObserver(Settings.System.CONTENT_URI, true, this);
+        this.f36995a.getContentResolver().registerContentObserver(Settings.System.CONTENT_URI, true, this);
     }
 
     public void d() {
-        this.f36228a.getContentResolver().unregisterContentObserver(this);
+        this.f36995a.getContentResolver().unregisterContentObserver(this);
     }
 
     @Override // android.database.ContentObserver
-    public void onChange(boolean z3) {
-        super.onChange(z3);
+    public void onChange(boolean z6) {
+        super.onChange(z6);
         float a9 = a();
         if (a(a9)) {
-            this.f36232e = a9;
+            this.f36999e = a9;
             b();
         }
     }
 
-    private boolean a(float f3) {
-        return f3 != this.f36232e;
+    private boolean a(float f2) {
+        return f2 != this.f36999e;
     }
 }

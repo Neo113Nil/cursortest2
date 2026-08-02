@@ -6,9 +6,9 @@ public final class JI {
     public final int A01;
     public final long A02;
 
-    public JI(int i, long j6, int i6) {
+    public JI(int i, long j6, int i4) {
         this.A00 = i;
         this.A02 = j6;
-        this.A01 = i6;
+        this.A01 = i4;
     }
 }

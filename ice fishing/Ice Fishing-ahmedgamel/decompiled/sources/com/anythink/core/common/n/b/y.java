@@ -10,52 +10,52 @@ import java.util.UUID;
 public final class y extends ae {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final x f15758a = x.a("multipart/mixed");
+    public static final x f16545a = x.a("multipart/mixed");
 
     /* renamed from: b, reason: collision with root package name */
-    public static final x f15759b = x.a("multipart/alternative");
+    public static final x f16546b = x.a("multipart/alternative");
 
     /* renamed from: c, reason: collision with root package name */
-    public static final x f15760c = x.a("multipart/digest");
+    public static final x f16547c = x.a("multipart/digest");
 
     /* renamed from: d, reason: collision with root package name */
-    public static final x f15761d = x.a("multipart/parallel");
+    public static final x f16548d = x.a("multipart/parallel");
 
     /* renamed from: e, reason: collision with root package name */
-    public static final x f15762e = x.a("multipart/form-data");
+    public static final x f16549e = x.a("multipart/form-data");
 
     /* renamed from: f, reason: collision with root package name */
-    private static final byte[] f15763f = {58, 32};
+    private static final byte[] f16550f = {58, 32};
 
     /* renamed from: g, reason: collision with root package name */
-    private static final byte[] f15764g = {13, 10};
+    private static final byte[] f16551g = {13, 10};
 
     /* renamed from: h, reason: collision with root package name */
-    private static final byte[] f15765h = {45, 45};
+    private static final byte[] f16552h = {45, 45};
     private final com.anythink.core.common.n.c.f i;
 
     /* renamed from: j, reason: collision with root package name */
-    private final x f15766j;
+    private final x f16553j;
 
     /* renamed from: k, reason: collision with root package name */
-    private final x f15767k;
+    private final x f16554k;
 
     /* renamed from: l, reason: collision with root package name */
-    private final List<b> f15768l;
+    private final List<b> f16555l;
 
     /* renamed from: m, reason: collision with root package name */
-    private long f15769m = -1;
+    private long f16556m = -1;
 
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private final com.anythink.core.common.n.c.f f15770a;
+        private final com.anythink.core.common.n.c.f f16557a;
 
         /* renamed from: b, reason: collision with root package name */
-        private x f15771b;
+        private x f16558b;
 
         /* renamed from: c, reason: collision with root package name */
-        private final List<b> f15772c;
+        private final List<b> f16559c;
 
         public a() {
             this(UUID.randomUUID().toString());
@@ -68,14 +68,14 @@ public final class y extends ae {
             if (!xVar.a().equals("multipart")) {
                 throw new IllegalArgumentException("multipart != ".concat(String.valueOf(xVar)));
             }
-            this.f15771b = xVar;
+            this.f16558b = xVar;
             return this;
         }
 
         private a(String str) {
-            this.f15771b = y.f15758a;
-            this.f15772c = new ArrayList();
-            this.f15770a = com.anythink.core.common.n.c.f.a(str);
+            this.f16558b = y.f16545a;
+            this.f16559c = new ArrayList();
+            this.f16557a = com.anythink.core.common.n.c.f.a(str);
         }
 
         private a a(u uVar, ae aeVar) {
@@ -88,15 +88,15 @@ public final class y extends ae {
 
         private a a(b bVar) {
             if (bVar != null) {
-                this.f15772c.add(bVar);
+                this.f16559c.add(bVar);
                 return this;
             }
             throw new NullPointerException("part == null");
         }
 
         private y a() {
-            if (!this.f15772c.isEmpty()) {
-                return new y(this.f15770a, this.f15771b, this.f15772c);
+            if (!this.f16559c.isEmpty()) {
+                return new y(this.f16557a, this.f16558b, this.f16559c);
             }
             throw new IllegalStateException("Multipart body must have at least one part.");
         }
@@ -113,14 +113,14 @@ public final class y extends ae {
     public static final class b {
 
         /* renamed from: a, reason: collision with root package name */
-        final u f15773a;
+        final u f16560a;
 
         /* renamed from: b, reason: collision with root package name */
-        final ae f15774b;
+        final ae f16561b;
 
         private b(u uVar, ae aeVar) {
-            this.f15773a = uVar;
-            this.f15774b = aeVar;
+            this.f16560a = uVar;
+            this.f16561b = aeVar;
         }
 
         private static b a(ae aeVar) {
@@ -128,7 +128,7 @@ public final class y extends ae {
         }
 
         private ae b() {
-            return this.f15774b;
+            return this.f16561b;
         }
 
         public static b a(u uVar, ae aeVar) {
@@ -158,7 +158,7 @@ public final class y extends ae {
         }
 
         private u a() {
-            return this.f15773a;
+            return this.f16560a;
         }
 
         private static b a(String str, String str2) {
@@ -168,17 +168,17 @@ public final class y extends ae {
 
     public y(com.anythink.core.common.n.c.f fVar, x xVar, List<b> list) {
         this.i = fVar;
-        this.f15766j = xVar;
-        this.f15767k = x.a(xVar + "; boundary=" + fVar.a());
-        this.f15768l = com.anythink.core.common.n.b.a.c.a(list);
+        this.f16553j = xVar;
+        this.f16554k = x.a(xVar + "; boundary=" + fVar.a());
+        this.f16555l = com.anythink.core.common.n.b.a.c.a(list);
     }
 
     private b a(int i) {
-        return this.f15768l.get(i);
+        return this.f16555l.get(i);
     }
 
     private x c() {
-        return this.f15766j;
+        return this.f16553j;
     }
 
     private String d() {
@@ -186,27 +186,27 @@ public final class y extends ae {
     }
 
     private int e() {
-        return this.f15768l.size();
+        return this.f16555l.size();
     }
 
     private List<b> f() {
-        return this.f15768l;
+        return this.f16555l;
     }
 
     @Override // com.anythink.core.common.n.b.ae
     public final long b() {
-        long j6 = this.f15769m;
+        long j6 = this.f16556m;
         if (j6 != -1) {
             return j6;
         }
         long a9 = a((com.anythink.core.common.n.c.d) null, true);
-        this.f15769m = a9;
+        this.f16556m = a9;
         return a9;
     }
 
     @Override // com.anythink.core.common.n.b.ae
     public final x a() {
-        return this.f15767k;
+        return this.f16554k;
     }
 
     @Override // com.anythink.core.common.n.b.ae
@@ -215,55 +215,55 @@ public final class y extends ae {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    private long a(com.anythink.core.common.n.c.d dVar, boolean z3) {
+    private long a(com.anythink.core.common.n.c.d dVar, boolean z6) {
         com.anythink.core.common.n.c.c cVar;
-        if (z3) {
+        if (z6) {
             dVar = new com.anythink.core.common.n.c.c();
             cVar = dVar;
         } else {
             cVar = 0;
         }
-        int size = this.f15768l.size();
+        int size = this.f16555l.size();
         long j6 = 0;
         for (int i = 0; i < size; i++) {
-            b bVar = this.f15768l.get(i);
-            u uVar = bVar.f15773a;
-            ae aeVar = bVar.f15774b;
-            dVar.d(f15765h);
+            b bVar = this.f16555l.get(i);
+            u uVar = bVar.f16560a;
+            ae aeVar = bVar.f16561b;
+            dVar.d(f16552h);
             dVar.d(this.i);
-            dVar.d(f15764g);
+            dVar.d(f16551g);
             if (uVar != null) {
                 int a9 = uVar.a();
-                for (int i6 = 0; i6 < a9; i6++) {
-                    dVar.b(uVar.a(i6)).d(f15763f).b(uVar.b(i6)).d(f15764g);
+                for (int i4 = 0; i4 < a9; i4++) {
+                    dVar.b(uVar.a(i4)).d(f16550f).b(uVar.b(i4)).d(f16551g);
                 }
             }
             x a10 = aeVar.a();
             if (a10 != null) {
-                dVar.b("Content-Type: ").b(a10.toString()).d(f15764g);
+                dVar.b("Content-Type: ").b(a10.toString()).d(f16551g);
             }
             long b9 = aeVar.b();
             if (b9 != -1) {
-                dVar.b("Content-Length: ").o(b9).d(f15764g);
-            } else if (z3) {
+                dVar.b("Content-Length: ").o(b9).d(f16551g);
+            } else if (z6) {
                 cVar.z();
                 return -1L;
             }
-            byte[] bArr = f15764g;
+            byte[] bArr = f16551g;
             dVar.d(bArr);
-            if (z3) {
+            if (z6) {
                 j6 += b9;
             } else {
                 aeVar.a(dVar);
             }
             dVar.d(bArr);
         }
-        byte[] bArr2 = f15765h;
+        byte[] bArr2 = f16552h;
         dVar.d(bArr2);
         dVar.d(this.i);
         dVar.d(bArr2);
-        dVar.d(f15764g);
-        if (!z3) {
+        dVar.d(f16551g);
+        if (!z6) {
             return j6;
         }
         long b10 = cVar.b() + j6;

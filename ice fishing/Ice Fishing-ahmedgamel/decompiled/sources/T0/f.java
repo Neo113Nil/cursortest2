@@ -3,53 +3,53 @@ package T0;
 import android.content.Context;
 import androidx.work.impl.WorkDatabase;
 import com.airbnb.lottie.LottieAnimationView;
-import g1.C4522b;
+import i1.C4586c;
 import java.util.concurrent.Callable;
 
 /* loaded from: classes.dex */
 public final /* synthetic */ class f implements Callable {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f3038a;
+    public final /* synthetic */ int f3121a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final /* synthetic */ int f3039b;
+    public final /* synthetic */ int f3122b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final /* synthetic */ Object f3040c;
+    public final /* synthetic */ Object f3123c;
 
-    public /* synthetic */ f(Object obj, int i, int i6) {
-        this.f3038a = i6;
-        this.f3040c = obj;
-        this.f3039b = i;
+    public /* synthetic */ f(Object obj, int i, int i4) {
+        this.f3121a = i4;
+        this.f3123c = obj;
+        this.f3122b = i;
     }
 
     @Override // java.util.concurrent.Callable
     public final Object call() {
-        switch (this.f3038a) {
+        switch (this.f3121a) {
             case 0:
-                C4522b this$0 = (C4522b) this.f3040c;
+                C4586c this$0 = (C4586c) this.f3123c;
                 kotlin.jvm.internal.h.e(this$0, "this$0");
-                WorkDatabase workDatabase = (WorkDatabase) this$0.f37625u;
-                Long j6 = workDatabase.l().j("next_job_scheduler_id");
+                WorkDatabase workDatabase = (WorkDatabase) this$0.f38154u;
+                Long y7 = workDatabase.l().y("next_job_scheduler_id");
                 int i = 0;
-                int longValue = j6 != null ? (int) j6.longValue() : 0;
-                workDatabase.l().k(new S0.d("next_job_scheduler_id", Long.valueOf(longValue == Integer.MAX_VALUE ? 0 : longValue + 1)));
-                if (longValue < 0 || longValue > this.f3039b) {
-                    workDatabase.l().k(new S0.d("next_job_scheduler_id", Long.valueOf(1)));
+                int longValue = y7 != null ? (int) y7.longValue() : 0;
+                workDatabase.l().B(new S0.d("next_job_scheduler_id", Long.valueOf(longValue == Integer.MAX_VALUE ? 0 : longValue + 1)));
+                if (longValue < 0 || longValue > this.f3122b) {
+                    workDatabase.l().B(new S0.d("next_job_scheduler_id", Long.valueOf(1)));
                 } else {
                     i = longValue;
                 }
                 return Integer.valueOf(i);
             default:
-                LottieAnimationView lottieAnimationView = (LottieAnimationView) this.f3040c;
-                boolean z3 = lottieAnimationView.f5660F;
-                int i6 = this.f3039b;
-                if (!z3) {
-                    return X0.m.f(lottieAnimationView.getContext(), null, i6);
+                LottieAnimationView lottieAnimationView = (LottieAnimationView) this.f3123c;
+                boolean z6 = lottieAnimationView.f6446F;
+                int i4 = this.f3122b;
+                if (!z6) {
+                    return Z0.m.f(lottieAnimationView.getContext(), null, i4);
                 }
                 Context context = lottieAnimationView.getContext();
-                return X0.m.f(context, X0.m.k(context, i6), i6);
+                return Z0.m.f(context, Z0.m.k(context, i4), i4);
         }
     }
 }

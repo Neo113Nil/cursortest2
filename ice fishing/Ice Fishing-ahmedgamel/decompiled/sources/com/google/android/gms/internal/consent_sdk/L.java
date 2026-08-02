@@ -6,26 +6,26 @@ import java.util.NoSuchElementException;
 public final class L extends Q {
 
     /* renamed from: n, reason: collision with root package name */
-    public final Object f35563n;
+    public final Object f36332n;
 
     /* renamed from: u, reason: collision with root package name */
-    public boolean f35564u;
+    public boolean f36333u;
 
     public L(Object obj) {
-        this.f35563n = obj;
+        this.f36332n = obj;
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        return !this.f35564u;
+        return !this.f36333u;
     }
 
     @Override // java.util.Iterator
     public final Object next() {
-        if (this.f35564u) {
+        if (this.f36333u) {
             throw new NoSuchElementException();
         }
-        this.f35564u = true;
-        return this.f35563n;
+        this.f36333u = true;
+        return this.f36332n;
     }
 }

@@ -77,7 +77,7 @@ public abstract class ATAdFilter {
                 if (obj != null && caVar != null && (obj instanceof List)) {
                     List list = (List) obj;
                     if (!list.isEmpty()) {
-                        return list.contains(caVar.f13880b) ? new Pair<>(Boolean.TRUE, ErrorCode.getErrorCode(ErrorCode.adSourceLoadUnitFilterError, "", "Filter by network adUnitId.")) : new Pair<>(Boolean.TRUE, null);
+                        return list.contains(caVar.f14666b) ? new Pair<>(Boolean.TRUE, ErrorCode.getErrorCode(ErrorCode.adSourceLoadUnitFilterError, "", "Filter by network adUnitId.")) : new Pair<>(Boolean.TRUE, null);
                     }
                 }
             } catch (Exception e9) {
@@ -113,7 +113,7 @@ public abstract class ATAdFilter {
                 if (obj != null && caVar != null && (obj instanceof List)) {
                     List list = (List) obj;
                     if (!list.isEmpty()) {
-                        return list.contains(caVar.f13879a) ? new Pair<>(Boolean.TRUE, ErrorCode.getErrorCode(ErrorCode.networkFirmIdFilterSourceError, "", "Filter by network firm id.")) : new Pair<>(Boolean.TRUE, null);
+                        return list.contains(caVar.f14665a) ? new Pair<>(Boolean.TRUE, ErrorCode.getErrorCode(ErrorCode.networkFirmIdFilterSourceError, "", "Filter by network firm id.")) : new Pair<>(Boolean.TRUE, null);
                     }
                 }
             } catch (Exception e9) {
@@ -196,7 +196,7 @@ public abstract class ATAdFilter {
             for (int i = 0; i < arrayList.size(); i++) {
                 Map map = (Map) arrayList.get(i);
                 if (map != null && !map.isEmpty()) {
-                    if (caVar.f13881c != 1 || !map.containsKey(KEY_E_CPM)) {
+                    if (caVar.f14667c != 1 || !map.containsKey(KEY_E_CPM)) {
                         ab.b(TAG, "doFilter start filterData:" + i + ":" + caVar);
                         AdError filter = new a(map, caVar).filter();
                         if (filter != null) {

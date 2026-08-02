@@ -4,15 +4,15 @@ package androidx.emoji2.text;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public final j f4765a;
+    public final j f4733a;
 
     /* renamed from: b, reason: collision with root package name */
-    public volatile Z2.e f4766b;
+    public volatile b3.e f4734b;
 
     /* renamed from: c, reason: collision with root package name */
-    public volatile S0.i f4767c;
+    public volatile S0.n f4735c;
 
     public f(j jVar) {
-        this.f4765a = jVar;
+        this.f4733a = jVar;
     }
 }

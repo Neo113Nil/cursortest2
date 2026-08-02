@@ -10,24 +10,24 @@ import org.json.JSONObject;
 public final class bk extends y {
 
     /* renamed from: o, reason: collision with root package name */
-    private int f13646o;
+    private int f14432o;
 
     /* renamed from: p, reason: collision with root package name */
-    private int f13647p;
+    private int f14433p;
 
     /* renamed from: q, reason: collision with root package name */
-    private int f13648q;
+    private int f14434q;
 
     private void aK(int i) {
-        this.f13647p = i;
+        this.f14433p = i;
     }
 
     private void aL(int i) {
-        this.f13646o = i;
+        this.f14432o = i;
     }
 
     private void aM(int i) {
-        this.f13648q = i;
+        this.f14434q = i;
     }
 
     public static bk u(String str) {
@@ -67,11 +67,11 @@ public final class bk extends y {
                 try {
                     JSONArray optJSONArray = jSONObject.optJSONArray("ak_cfm_c");
                     if (optJSONArray != null && optJSONArray.length() > 0) {
-                        int i6 = 0;
-                        while (i6 < optJSONArray.length()) {
-                            JSONObject jSONObject2 = optJSONArray.getJSONObject(i6);
+                        int i4 = 0;
+                        while (i4 < optJSONArray.length()) {
+                            JSONObject jSONObject2 = optJSONArray.getJSONObject(i4);
                             int optInt4 = jSONObject2.optInt("link_type");
-                            int i9 = i6;
+                            int i6 = i4;
                             int optInt5 = jSONObject2.optInt("scene");
                             if (optInt4 == 4) {
                                 bkVar.p(optInt5);
@@ -79,7 +79,7 @@ public final class bk extends y {
                             if (optInt4 == 1) {
                                 bkVar.q(optInt5);
                             }
-                            i6 = i9 + 1;
+                            i4 = i6 + 1;
                         }
                     }
                 } catch (Throwable unused) {
@@ -91,11 +91,11 @@ public final class bk extends y {
                 } else if (optInt6 == 2) {
                     optInt6 = 1;
                 }
-                bkVar.f13646o = optInt6;
+                bkVar.f14432o = optInt6;
                 bkVar.e(jSONObject.optInt("ipua"));
                 bkVar.f(jSONObject.optInt("clua"));
                 bkVar.m(jSONObject.optInt("dp_cm"));
-                bkVar.f13647p = jSONObject.optInt("l_o_num");
+                bkVar.f14433p = jSONObject.optInt("l_o_num");
                 bkVar.l(jSONObject.optInt("ld_t"));
                 bkVar.B(jSONObject.optInt("ec_r"));
                 bkVar.C(jSONObject.optInt("ec_s_t"));
@@ -181,15 +181,15 @@ public final class bk extends y {
                     i = 0;
                     bkVar.b(false);
                 }
-                bkVar.f13648q = jSONObject.optInt(com.anythink.core.common.k.ar, i);
+                bkVar.f14434q = jSONObject.optInt(com.anythink.core.common.k.ar, i);
                 bkVar.c(jSONObject.optInt("at_cl_img", 2) == 1);
                 bkVar.d(jSONObject.optInt("at_cl_video", 2) == 1);
                 bkVar.e(jSONObject.optInt("at_cl_ec", 2) == 1);
-                bkVar.e(jSONObject.optLong("at_cl_pt", com.anythink.basead.exoplayer.f.f7187a));
-                bkVar.f(jSONObject.optLong("at_cl_pct", com.anythink.basead.exoplayer.f.f7187a));
-                bkVar.g(jSONObject.optLong("at_cl_ec_pt", com.anythink.basead.exoplayer.f.f7187a));
-                bkVar.h(jSONObject.optLong("at_cl_ec_pct", com.anythink.basead.exoplayer.f.f7187a));
-                bkVar.i(jSONObject.optLong("or_img_t", com.anythink.basead.exoplayer.f.f7187a));
+                bkVar.e(jSONObject.optLong("at_cl_pt", com.anythink.basead.exoplayer.f.f7973a));
+                bkVar.f(jSONObject.optLong("at_cl_pct", com.anythink.basead.exoplayer.f.f7973a));
+                bkVar.g(jSONObject.optLong("at_cl_ec_pt", com.anythink.basead.exoplayer.f.f7973a));
+                bkVar.h(jSONObject.optLong("at_cl_ec_pct", com.anythink.basead.exoplayer.f.f7973a));
+                bkVar.i(jSONObject.optLong("or_img_t", com.anythink.basead.exoplayer.f.f7973a));
                 bkVar.U(jSONObject.optInt("animate_type", -1));
                 bkVar.T(jSONObject.optInt("render_wv_ld", 2));
                 bkVar.V(jSONObject.optInt("cl_invalid_sw", 2));
@@ -214,10 +214,10 @@ public final class bk extends y {
                 bkVar.A(jSONObject.optInt("s_c_t", 0));
                 bkVar.ac(jSONObject.optInt("v_cls", 1));
                 bkVar.k(jSONObject.optLong("sub_splash_time", 0L));
-                bkVar.l(jSONObject.optLong("s_b_t_top", com.anythink.basead.exoplayer.i.a.f7883f));
-                bkVar.m(jSONObject.optLong("s_b_d_top", com.anythink.basead.exoplayer.f.f7187a));
+                bkVar.l(jSONObject.optLong("s_b_t_top", com.anythink.basead.exoplayer.i.a.f8669f));
+                bkVar.m(jSONObject.optLong("s_b_d_top", com.anythink.basead.exoplayer.f.f7973a));
                 bkVar.af(jSONObject.optInt("cd_play_sw", 2));
-                bkVar.Z(jSONObject.optInt(g.a.f12969j, 1));
+                bkVar.Z(jSONObject.optInt(g.a.f13755j, 1));
                 bkVar.aa(jSONObject.optInt("apk_redown", 2));
                 bkVar.ab(jSONObject.optInt("install_bg", 1));
                 bkVar.c(jSONObject.optInt("adx_cache_time", 604800000));
@@ -229,8 +229,8 @@ public final class bk extends y {
                 try {
                     JSONArray optJSONArray2 = jSONObject.optJSONArray("s_m_a");
                     if (optJSONArray2 != null) {
-                        for (int i10 = 0; i10 < optJSONArray2.length(); i10++) {
-                            arrayList.add(Double.valueOf(optJSONArray2.getDouble(i10)));
+                        for (int i9 = 0; i9 < optJSONArray2.length(); i9++) {
+                            arrayList.add(Double.valueOf(optJSONArray2.getDouble(i9)));
                         }
                     } else {
                         arrayList.add(Double.valueOf(15.0d));
@@ -258,8 +258,8 @@ public final class bk extends y {
                 }
                 bkVar.ak(jSONObject.optInt("ec_style", 1));
                 int aQ = bkVar.aQ();
-                int i11 = aQ != 2 ? (aQ == 3 || aQ == 4) ? 5 : 0 : 3;
-                bkVar.n(jSONObject.optInt("ec_cd_n", i11));
+                int i10 = aQ != 2 ? (aQ == 3 || aQ == 4) ? 5 : 0 : 3;
+                bkVar.n(jSONObject.optInt("ec_cd_n", i10));
                 bkVar.al(jSONObject.optInt("ec_rp_style", 1));
                 bkVar.am(jSONObject.optInt("ec_rp_ca", 0));
                 try {
@@ -273,7 +273,7 @@ public final class bk extends y {
                     }
                 } catch (Throwable unused5) {
                 }
-                bkVar.o(jSONObject.optInt("sec_cd", i11));
+                bkVar.o(jSONObject.optInt("sec_cd", i10));
                 bkVar.an(jSONObject.optInt("sec_ca", 1));
                 bkVar.ao(jSONObject.optInt("ec_wd_ca", 1));
                 try {
@@ -296,9 +296,9 @@ public final class bk extends y {
                 bkVar.as(jSONObject.optInt("dp_b_sw", 2));
                 bkVar.at(jSONObject.optInt("ac_b", 1));
                 bkVar.au(jSONObject.optInt("it_cfg_type", 1));
-                bkVar.r(jSONObject.optLong("it_cfg_d_t", com.anythink.basead.exoplayer.f.f7187a));
+                bkVar.r(jSONObject.optLong("it_cfg_d_t", com.anythink.basead.exoplayer.f.f7973a));
                 bkVar.s(jSONObject.optLong("it_cfg_r_t", 10000L));
-                bkVar.t(jSONObject.optLong("it_cfg_h_t", com.anythink.basead.exoplayer.f.f7187a));
+                bkVar.t(jSONObject.optLong("it_cfg_h_t", com.anythink.basead.exoplayer.f.f7973a));
                 bkVar.av(jSONObject.optInt("p_a_style", 1));
                 bkVar.aw(jSONObject.optInt("s_style", 1));
                 bkVar.ax(jSONObject.optInt("s_cta_style", 1));
@@ -310,8 +310,8 @@ public final class bk extends y {
                     JSONArray optJSONArray3 = jSONObject.optJSONArray("ic_link_list");
                     ArrayList arrayList2 = new ArrayList();
                     if (optJSONArray3 != null && optJSONArray3.length() > 0) {
-                        for (int i12 = 0; i12 < optJSONArray3.length(); i12++) {
-                            arrayList2.add(optJSONArray3.getString(i12));
+                        for (int i11 = 0; i11 < optJSONArray3.length(); i11++) {
+                            arrayList2.add(optJSONArray3.getString(i11));
                         }
                     }
                     bkVar.b(arrayList2);
@@ -331,7 +331,7 @@ public final class bk extends y {
                 bkVar.aE(jSONObject.optInt("x_cl", 0));
                 bkVar.aF(1);
                 bkVar.aG(jSONObject.optInt("o_h_w_load_sw", 2));
-                bkVar.v(jSONObject.optLong("h5_l_l", com.anythink.basead.exoplayer.f.f7187a));
+                bkVar.v(jSONObject.optLong("h5_l_l", com.anythink.basead.exoplayer.f.f7973a));
                 bkVar.w(jSONObject.optLong("h5_r_t", com.anythink.expressad.video.module.a.a.m.ai));
                 bkVar.aH(jSONObject.optInt("offer_d_c", 1));
                 bkVar.aI(jSONObject.optInt("check_w_f", 1));
@@ -344,14 +344,14 @@ public final class bk extends y {
     }
 
     public final int a() {
-        return this.f13647p;
+        return this.f14433p;
     }
 
     public final int b() {
-        return this.f13646o;
+        return this.f14432o;
     }
 
     public final int c() {
-        return this.f13648q;
+        return this.f14434q;
     }
 }

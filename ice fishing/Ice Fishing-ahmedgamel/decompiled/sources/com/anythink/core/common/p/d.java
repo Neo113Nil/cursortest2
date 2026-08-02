@@ -11,7 +11,7 @@ public interface d {
 
     void a(Context context, ATAdRequest aTAdRequest, int i);
 
-    void a(AdError adError, int i, boolean z3);
+    void a(AdError adError, int i, boolean z6);
 
     void a(b bVar);
 

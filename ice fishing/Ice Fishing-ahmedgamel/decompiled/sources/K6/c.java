@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public abstract class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Set f1579a = Collections.unmodifiableSet(new HashSet(Arrays.asList(429, 502, Integer.valueOf(GuideToClickView.a.f10083c), 504)));
+    public static final Set f1688a = Collections.unmodifiableSet(new HashSet(Arrays.asList(429, 502, Integer.valueOf(GuideToClickView.a.f10869c), 504)));
 
     static {
         HashSet hashSet = new HashSet();

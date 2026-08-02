@@ -1,6 +1,5 @@
 package com.anythink.core.d;
 
-import D.y;
 import android.text.TextUtils;
 import com.anythink.core.api.ATSDK;
 import com.anythink.core.common.d.j;
@@ -21,81 +20,81 @@ import org.json.JSONObject;
 public class b extends e {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f17144a = "b";
+    public static final String f17931a = "b";
 
     /* renamed from: A, reason: collision with root package name */
-    private long f17145A;
+    private long f17932A;
 
     /* renamed from: B, reason: collision with root package name */
-    private long f17146B;
+    private long f17933B;
 
     /* renamed from: C, reason: collision with root package name */
-    private int f17147C;
+    private int f17934C;
 
     /* renamed from: D, reason: collision with root package name */
-    private Map f17148D;
+    private Map f17935D;
 
     /* renamed from: E, reason: collision with root package name */
-    private String f17149E;
+    private String f17936E;
 
     /* renamed from: F, reason: collision with root package name */
-    private String f17150F;
+    private String f17937F;
 
     /* renamed from: G, reason: collision with root package name */
-    private String f17151G;
+    private String f17938G;
 
     /* renamed from: H, reason: collision with root package name */
-    private String f17152H;
+    private String f17939H;
 
     /* renamed from: I, reason: collision with root package name */
-    private ConcurrentHashMap<String, bb> f17153I;
+    private ConcurrentHashMap<String, bb> f17940I;
     private int J;
 
     /* renamed from: K, reason: collision with root package name */
-    private int f17154K;
+    private int f17941K;
 
     /* renamed from: L, reason: collision with root package name */
-    private Map<String, String> f17155L;
+    private Map<String, String> f17942L;
 
     /* renamed from: M, reason: collision with root package name */
-    private Map<String, String> f17156M;
+    private Map<String, String> f17943M;
 
     /* renamed from: N, reason: collision with root package name */
-    private Map<String, String> f17157N;
+    private Map<String, String> f17944N;
 
     /* renamed from: O, reason: collision with root package name */
-    private Map<String, Map<String, String>> f17158O;
+    private Map<String, Map<String, String>> f17945O;
 
     /* renamed from: P, reason: collision with root package name */
-    private Map<String, Map<String, String>> f17159P;
+    private Map<String, Map<String, String>> f17946P;
 
     /* renamed from: Q, reason: collision with root package name */
-    private int f17160Q;
+    private int f17947Q;
 
     /* renamed from: R, reason: collision with root package name */
-    private String f17161R;
+    private String f17948R;
 
     /* renamed from: S, reason: collision with root package name */
-    private int f17162S;
+    private int f17949S;
 
     /* renamed from: T, reason: collision with root package name */
-    private String f17163T;
+    private String f17950T;
 
     /* renamed from: U, reason: collision with root package name */
-    private String f17164U;
+    private String f17951U;
 
     /* renamed from: V, reason: collision with root package name */
-    private int f17165V;
+    private int f17952V;
 
     /* renamed from: W, reason: collision with root package name */
-    private int f17166W;
+    private int f17953W;
 
     /* renamed from: X, reason: collision with root package name */
-    private String f17167X;
+    private String f17954X;
     private String Y;
 
     /* renamed from: Z, reason: collision with root package name */
-    private String f17168Z;
+    private String f17955Z;
     private com.anythink.core.common.r.g aA;
     private JSONObject aB;
     private boolean aD;
@@ -146,7 +145,7 @@ public class b extends e {
     private int az;
 
     /* renamed from: b, reason: collision with root package name */
-    protected boolean f17169b;
+    protected boolean f17956b;
     private int ba;
     private String bc;
     private int bd;
@@ -155,71 +154,71 @@ public class b extends e {
     private int bh;
 
     /* renamed from: c, reason: collision with root package name */
-    Map<String, Object> f17170c;
+    Map<String, Object> f17957c;
 
     /* renamed from: e, reason: collision with root package name */
-    private long f17171e;
+    private long f17958e;
 
     /* renamed from: f, reason: collision with root package name */
-    private List<Integer> f17172f;
+    private List<Integer> f17959f;
 
     /* renamed from: g, reason: collision with root package name */
-    private long f17173g;
+    private long f17960g;
 
     /* renamed from: h, reason: collision with root package name */
-    private String f17174h;
+    private String f17961h;
     private long i;
 
     /* renamed from: j, reason: collision with root package name */
-    private int f17175j;
+    private int f17962j;
 
     /* renamed from: k, reason: collision with root package name */
-    private int f17176k;
+    private int f17963k;
 
     /* renamed from: l, reason: collision with root package name */
-    private String f17177l;
+    private String f17964l;
 
     /* renamed from: m, reason: collision with root package name */
-    private String f17178m;
+    private String f17965m;
 
     /* renamed from: n, reason: collision with root package name */
-    private int f17179n;
+    private int f17966n;
 
     /* renamed from: o, reason: collision with root package name */
-    private long f17180o;
+    private long f17967o;
 
     /* renamed from: p, reason: collision with root package name */
-    private String f17181p;
+    private String f17968p;
 
     /* renamed from: q, reason: collision with root package name */
-    private String f17182q;
+    private String f17969q;
 
     /* renamed from: r, reason: collision with root package name */
-    private String f17183r;
+    private String f17970r;
 
     /* renamed from: s, reason: collision with root package name */
-    private int f17184s;
+    private int f17971s;
 
     /* renamed from: t, reason: collision with root package name */
-    private long f17185t;
+    private long f17972t;
 
     /* renamed from: u, reason: collision with root package name */
-    private int[] f17186u;
+    private int[] f17973u;
 
     /* renamed from: v, reason: collision with root package name */
-    private String f17187v;
+    private String f17974v;
 
     /* renamed from: w, reason: collision with root package name */
-    private int f17188w;
+    private int f17975w;
 
     /* renamed from: x, reason: collision with root package name */
-    private long f17189x;
+    private long f17976x;
 
     /* renamed from: y, reason: collision with root package name */
-    private String f17190y;
+    private String f17977y;
 
     /* renamed from: z, reason: collision with root package name */
-    private String f17191z;
+    private String f17978z;
     private int aC = 2;
     private int aE = 2;
     private int aK = 2;
@@ -230,81 +229,81 @@ public class b extends e {
     public static class a {
 
         /* renamed from: A, reason: collision with root package name */
-        public static final String f17192A = "dna";
+        public static final String f17979A = "dna";
 
         /* renamed from: B, reason: collision with root package name */
-        public static final String f17193B = "dna_sw";
+        public static final String f17980B = "dna_sw";
 
         /* renamed from: C, reason: collision with root package name */
-        public static final String f17194C = "dna_invl";
+        public static final String f17981C = "dna_invl";
 
         /* renamed from: D, reason: collision with root package name */
-        public static final String f17195D = "domain_p_mode";
+        public static final String f17982D = "domain_p_mode";
 
         /* renamed from: E, reason: collision with root package name */
-        private static String f17196E = "scet";
+        private static String f17983E = "scet";
 
         /* renamed from: F, reason: collision with root package name */
-        private static String f17197F = "req_ver";
+        private static String f17984F = "req_ver";
 
         /* renamed from: G, reason: collision with root package name */
-        private static String f17198G = "api_hf_req_int";
+        private static String f17985G = "api_hf_req_int";
 
         /* renamed from: H, reason: collision with root package name */
-        private static String f17199H = "bid_i_sw";
+        private static String f17986H = "bid_i_sw";
 
         /* renamed from: I, reason: collision with root package name */
-        private static String f17200I = "gdpr_sdcs";
+        private static String f17987I = "gdpr_sdcs";
         private static String J = "gdpr_so";
 
         /* renamed from: K, reason: collision with root package name */
-        private static String f17201K = "gdpr_nu";
+        private static String f17988K = "gdpr_nu";
 
         /* renamed from: L, reason: collision with root package name */
-        private static String f17202L = "gdpr_a";
+        private static String f17989L = "gdpr_a";
 
         /* renamed from: M, reason: collision with root package name */
-        private static String f17203M = "gdpr_ia";
+        private static String f17990M = "gdpr_ia";
 
         /* renamed from: N, reason: collision with root package name */
-        private static String f17204N = "pl_n";
+        private static String f17991N = "pl_n";
 
         /* renamed from: O, reason: collision with root package name */
-        private static String f17205O = "upid";
+        private static String f17992O = "upid";
 
         /* renamed from: P, reason: collision with root package name */
-        private static String f17206P = "logger";
+        private static String f17993P = "logger";
 
         /* renamed from: Q, reason: collision with root package name */
-        private static String f17207Q = "tk_address";
+        private static String f17994Q = "tk_address";
 
         /* renamed from: R, reason: collision with root package name */
-        private static String f17208R = "tk_max_amount";
+        private static String f17995R = "tk_max_amount";
 
         /* renamed from: S, reason: collision with root package name */
-        private static String f17209S = "tk_interval";
+        private static String f17996S = "tk_interval";
 
         /* renamed from: T, reason: collision with root package name */
-        private static String f17210T = "da_address";
+        private static String f17997T = "da_address";
 
         /* renamed from: U, reason: collision with root package name */
-        private static String f17211U = "da_max_amount";
+        private static String f17998U = "da_max_amount";
 
         /* renamed from: V, reason: collision with root package name */
-        private static String f17212V = "da_interval";
+        private static String f17999V = "da_interval";
 
         /* renamed from: W, reason: collision with root package name */
-        private static String f17213W = "n_psid_tm";
+        private static String f18000W = "n_psid_tm";
 
         /* renamed from: X, reason: collision with root package name */
-        private static String f17214X = "c_a";
+        private static String f18001X = "c_a";
         private static String Y = "tk_firm";
 
         /* renamed from: Z, reason: collision with root package name */
-        private static String f17215Z = "n_l";
+        private static String f18002Z = "n_l";
 
         /* renamed from: a, reason: collision with root package name */
-        public static String f17216a = "pil";
+        public static String f18003a = "pil";
         private static String aA = "da_no_nt_k";
         private static String aB = "s2s_addr";
         private static String aC = "cn_gdpr_nu";
@@ -359,7 +358,7 @@ public class b extends e {
         private static String az = "tk_no_nt_t";
 
         /* renamed from: b, reason: collision with root package name */
-        public static String f17217b = "tk_rt_sp_ft";
+        public static String f18004b = "tk_rt_sp_ft";
         private static final String ba = "domain";
         private static final String bb = "domain_p";
         private static final String bc = "wv_c_sw";
@@ -368,81 +367,81 @@ public class b extends e {
         private static final String bf = "domain_http";
 
         /* renamed from: c, reason: collision with root package name */
-        public static String f17218c = "da_rt_sp_ft";
+        public static String f18005c = "da_rt_sp_ft";
 
         /* renamed from: d, reason: collision with root package name */
-        public static String f17219d = "lrqf_interval";
+        public static String f18006d = "lrqf_interval";
 
         /* renamed from: e, reason: collision with root package name */
-        public static String f17220e = "a_c";
+        public static String f18007e = "a_c";
 
         /* renamed from: f, reason: collision with root package name */
-        public static String f17221f = "upd_alg";
+        public static String f18008f = "upd_alg";
 
         /* renamed from: g, reason: collision with root package name */
-        public static String f17222g = "device_perf_sw";
+        public static String f18009g = "device_perf_sw";
 
         /* renamed from: h, reason: collision with root package name */
-        public static String f17223h = "at_a_cg";
+        public static String f18010h = "at_a_cg";
         public static String i = "at_a_re";
 
         /* renamed from: j, reason: collision with root package name */
-        public static String f17224j = "at_a_rc";
+        public static String f18011j = "at_a_rc";
 
         /* renamed from: k, reason: collision with root package name */
-        public static String f17225k = "s_p_data";
+        public static String f18012k = "s_p_data";
 
         /* renamed from: l, reason: collision with root package name */
-        public static String f17226l = "nw_ext";
+        public static String f18013l = "nw_ext";
 
         /* renamed from: m, reason: collision with root package name */
-        public static String f17227m = "sens_sw";
+        public static String f18014m = "sens_sw";
 
         /* renamed from: n, reason: collision with root package name */
-        public static String f17228n = "adx_getimgwh_sw";
+        public static String f18015n = "adx_getimgwh_sw";
 
         /* renamed from: o, reason: collision with root package name */
-        public static String f17229o = "nw_st";
+        public static String f18016o = "nw_st";
 
         /* renamed from: p, reason: collision with root package name */
-        public static String f17230p = "job";
+        public static String f18017p = "job";
 
         /* renamed from: q, reason: collision with root package name */
-        public static String f17231q = "pub_st";
+        public static String f18018q = "pub_st";
 
         /* renamed from: r, reason: collision with root package name */
-        public static String f17232r = "pil_fu";
+        public static String f18019r = "pil_fu";
 
         /* renamed from: s, reason: collision with root package name */
-        public static String f17233s = "pil_int";
+        public static String f18020s = "pil_int";
 
         /* renamed from: t, reason: collision with root package name */
-        public static String f17234t = "wx_app_openid";
+        public static String f18021t = "wx_app_openid";
 
         /* renamed from: u, reason: collision with root package name */
-        public static String f17235u = "lrqf_interval_v2";
+        public static String f18022u = "lrqf_interval_v2";
 
         /* renamed from: v, reason: collision with root package name */
-        public static String f17236v = "nw_f_s";
+        public static String f18023v = "nw_f_s";
 
         /* renamed from: w, reason: collision with root package name */
-        public static String f17237w = "a_i_mode";
+        public static String f18024w = "a_i_mode";
 
         /* renamed from: x, reason: collision with root package name */
-        public static String f17238x = "fd_s_sw";
+        public static String f18025x = "fd_s_sw";
 
         /* renamed from: y, reason: collision with root package name */
-        public static String f17239y = "d_r_ls";
+        public static String f18026y = "d_r_ls";
 
         /* renamed from: z, reason: collision with root package name */
-        public static String f17240z = "td_sds";
+        public static String f18027z = "td_sds";
     }
 
     public static boolean aY() {
-        b g4 = y.g(y.h());
-        boolean z3 = g4 != null && g4.f17147C == 1;
+        b k9 = com.IceFishing.LiveIceFishing.k.k(com.IceFishing.LiveIceFishing.k.l());
+        boolean z6 = k9 != null && k9.f17934C == 1;
         v a9 = v.a(com.anythink.core.common.d.t.b().g());
-        return g4.f17169b ? a9.a() != 2 : (a9.a() == 2 && (g4.f17179n == 0 || z3)) ? false : true;
+        return k9.f17956b ? a9.a() != 2 : (a9.a() == 2 && (k9.f17966n == 0 || z6)) ? false : true;
     }
 
     public static boolean b(int i) {
@@ -450,15 +449,15 @@ public class b extends e {
     }
 
     private String bc() {
-        return this.f17168Z;
+        return this.f17955Z;
     }
 
     private ConcurrentHashMap<String, bb> bd() {
-        return this.f17153I;
+        return this.f17940I;
     }
 
     private String be() {
-        return this.f17149E;
+        return this.f17936E;
     }
 
     private String bf() {
@@ -486,23 +485,23 @@ public class b extends e {
     }
 
     private String bl() {
-        return this.f17174h;
+        return this.f17961h;
     }
 
     private String bm() {
-        return this.f17178m;
+        return this.f17965m;
     }
 
     private long bn() {
-        return this.f17180o;
+        return this.f17967o;
     }
 
     private String bo() {
-        return this.f17182q;
+        return this.f17969q;
     }
 
     private Map<String, Object> bp() {
-        return this.f17170c;
+        return this.f17957c;
     }
 
     private String bq() {
@@ -514,17 +513,17 @@ public class b extends e {
     }
 
     private static void h(Map<String, Object> map) {
-        b g4 = y.g(y.h());
-        boolean z3 = false;
-        boolean z6 = g4 != null && g4.f17179n == 1;
-        boolean z9 = g4 != null && g4.f17147C == 1;
+        b k9 = com.IceFishing.LiveIceFishing.k.k(com.IceFishing.LiveIceFishing.k.l());
+        boolean z6 = false;
+        boolean z9 = k9 != null && k9.f17966n == 1;
+        boolean z10 = k9 != null && k9.f17934C == 1;
         v a9 = v.a(com.anythink.core.common.d.t.b().g());
-        map.put(j.w.f12619f, Boolean.valueOf(a9.c()));
-        map.put("is_eu", Boolean.valueOf(z6));
-        if (!g4.f17169b ? a9.a() != 2 || (g4.f17179n != 0 && !z9) : a9.a() != 2) {
-            z3 = true;
+        map.put(j.w.f13405f, Boolean.valueOf(a9.c()));
+        map.put("is_eu", Boolean.valueOf(z9));
+        if (!k9.f17956b ? a9.a() != 2 || (k9.f17966n != 0 && !z10) : a9.a() != 2) {
+            z6 = true;
         }
-        map.put("need_set_gdpr", Boolean.valueOf(z3));
+        map.put("need_set_gdpr", Boolean.valueOf(z6));
     }
 
     public final String A() {
@@ -548,35 +547,35 @@ public class b extends e {
     }
 
     public final String F() {
-        return this.f17167X;
+        return this.f17954X;
     }
 
     public final int G() {
-        return this.f17162S;
+        return this.f17949S;
     }
 
     public final String H() {
-        return this.f17163T;
+        return this.f17950T;
     }
 
     public final int I() {
-        return this.f17165V;
+        return this.f17952V;
     }
 
     public final int J() {
-        return this.f17160Q;
+        return this.f17947Q;
     }
 
     public final void K() {
-        this.f17160Q = 1;
+        this.f17947Q = 1;
     }
 
     public final String L() {
-        return this.f17161R;
+        return this.f17948R;
     }
 
     public final String M() {
-        return this.f17152H;
+        return this.f17939H;
     }
 
     public final int N() {
@@ -588,35 +587,35 @@ public class b extends e {
     }
 
     public final int P() {
-        return this.f17154K;
+        return this.f17941K;
     }
 
     public final void Q() {
-        this.f17154K = 0;
+        this.f17941K = 0;
     }
 
     public final String R() {
-        return this.f17151G;
+        return this.f17938G;
     }
 
     public final boolean S() {
-        return this.f17169b;
+        return this.f17956b;
     }
 
     public final String T() {
-        return this.f17150F;
+        return this.f17937F;
     }
 
     public final int U() {
-        return this.f17147C;
+        return this.f17934C;
     }
 
     public final long V() {
-        return this.f17146B;
+        return this.f17933B;
     }
 
     public final void W() {
-        this.f17146B = 51200L;
+        this.f17933B = 51200L;
     }
 
     public final long X() {
@@ -624,7 +623,7 @@ public class b extends e {
     }
 
     public final Map<String, String> Y() {
-        return this.f17148D;
+        return this.f17935D;
     }
 
     public final JSONObject Z() {
@@ -632,7 +631,7 @@ public class b extends e {
     }
 
     public final long a() {
-        return this.f17171e;
+        return this.f17958e;
     }
 
     public final String aA() {
@@ -688,11 +687,11 @@ public class b extends e {
     }
 
     public final String aN() {
-        return this.f17164U;
+        return this.f17951U;
     }
 
     public final int aO() {
-        return this.f17166W;
+        return this.f17953W;
     }
 
     public final String aP() {
@@ -740,7 +739,7 @@ public class b extends e {
     }
 
     public final boolean aZ() {
-        return (this.f17169b || this.bb == 1) ? false : true;
+        return (this.f17956b || this.bb == 1) ? false : true;
     }
 
     public final String aa() {
@@ -756,91 +755,91 @@ public class b extends e {
     }
 
     public final long ad() {
-        return this.f17145A;
+        return this.f17932A;
     }
 
     public final void ae() {
-        this.f17145A = 30000L;
+        this.f17932A = 30000L;
     }
 
     public final long af() {
-        return this.f17173g;
+        return this.f17960g;
     }
 
     public final void ag() {
-        this.f17173g = j.k.f12487a;
+        this.f17960g = j.k.f13273a;
     }
 
     public final int ah() {
-        return this.f17175j;
+        return this.f17962j;
     }
 
     public final int ai() {
-        return this.f17176k;
+        return this.f17963k;
     }
 
     public final String aj() {
-        return this.f17177l;
+        return this.f17964l;
     }
 
     public final int ak() {
-        return this.f17179n;
+        return this.f17966n;
     }
 
     public final void al() {
-        this.f17180o = com.anythink.basead.exoplayer.f.f7187a;
+        this.f17967o = com.anythink.basead.exoplayer.f.f7973a;
     }
 
     public final String am() {
-        return this.f17183r;
+        return this.f17970r;
     }
 
     public final int an() {
-        return this.f17184s;
+        return this.f17971s;
     }
 
     public final void ao() {
-        this.f17184s = 1;
+        this.f17971s = 1;
     }
 
     public final long ap() {
-        return this.f17185t;
+        return this.f17972t;
     }
 
     public final void aq() {
-        this.f17185t = 0L;
+        this.f17972t = 0L;
     }
 
     public final String ar() {
-        return this.f17187v;
+        return this.f17974v;
     }
 
     public final int as() {
-        return this.f17188w;
+        return this.f17975w;
     }
 
     public final void at() {
-        this.f17188w = 1;
+        this.f17975w = 1;
     }
 
     public final long au() {
-        return this.f17189x;
+        return this.f17976x;
     }
 
     public final void av() {
-        this.f17189x = 0L;
+        this.f17976x = 0L;
     }
 
     public final Map<String, String> aw() {
-        return this.f17155L;
+        return this.f17942L;
     }
 
     public final Map<String, String> ax() {
-        return this.f17156M;
+        return this.f17943M;
     }
 
     public final Map<String, String> ay() {
-        return this.f17157N;
+        return this.f17944N;
     }
 
     public final String az() {
@@ -848,7 +847,7 @@ public class b extends e {
     }
 
     public final List<Integer> c() {
-        return this.f17172f;
+        return this.f17959f;
     }
 
     public final j d() {
@@ -963,15 +962,15 @@ public class b extends e {
     }
 
     private void F(String str) {
-        this.f17177l = str;
+        this.f17964l = str;
     }
 
     private void G(String str) {
-        this.f17178m = str;
+        this.f17965m = str;
     }
 
     private void H(String str) {
-        this.f17182q = str;
+        this.f17969q = str;
     }
 
     private void I(String str) {
@@ -1007,7 +1006,7 @@ public class b extends e {
     }
 
     private void Q(String str) {
-        this.f17164U = str;
+        this.f17951U = str;
     }
 
     private void R(String str) {
@@ -1022,9 +1021,9 @@ public class b extends e {
         if (jSONArray != null) {
             try {
                 if (jSONArray.length() > 0) {
-                    this.f17172f = new ArrayList();
+                    this.f17959f = new ArrayList();
                     for (int i = 0; i < jSONArray.length(); i++) {
-                        this.f17172f.add((Integer) jSONArray.get(i));
+                        this.f17959f.add((Integer) jSONArray.get(i));
                     }
                 }
             } catch (Exception e9) {
@@ -1111,31 +1110,31 @@ public class b extends e {
     }
 
     private void r(String str) {
-        this.f17168Z = str;
+        this.f17955Z = str;
     }
 
     private void s(String str) {
-        this.f17167X = str;
+        this.f17954X = str;
     }
 
     private void t(String str) {
-        this.f17163T = str;
+        this.f17950T = str;
     }
 
     private void u(String str) {
-        this.f17152H = str;
+        this.f17939H = str;
     }
 
     private void v(String str) {
-        this.f17151G = str;
+        this.f17938G = str;
     }
 
     private void w(String str) {
-        this.f17150F = str;
+        this.f17937F = str;
     }
 
     private void x(String str) {
-        this.f17149E = str;
+        this.f17936E = str;
     }
 
     private void y(String str) {
@@ -1147,7 +1146,7 @@ public class b extends e {
     }
 
     public final void b() {
-        this.f17171e = 1800000L;
+        this.f17958e = 1800000L;
     }
 
     private void b(JSONArray jSONArray) {
@@ -1163,19 +1162,19 @@ public class b extends e {
     }
 
     private void g(Map<String, Map<String, String>> map) {
-        this.f17159P = map;
+        this.f17946P = map;
     }
 
     private void l(int i) {
-        this.f17175j = i;
+        this.f17962j = i;
     }
 
     private void m(int i) {
-        this.f17176k = i;
+        this.f17963k = i;
     }
 
     private void n(int i) {
-        this.f17179n = i;
+        this.f17966n = i;
     }
 
     private void o(String str) {
@@ -1207,7 +1206,7 @@ public class b extends e {
     }
 
     private void v(int i) {
-        this.f17166W = i;
+        this.f17953W = i;
     }
 
     private void w(int i) {
@@ -1227,23 +1226,23 @@ public class b extends e {
     }
 
     public final void c(String str) {
-        this.f17174h = str;
+        this.f17961h = str;
     }
 
     public final void d(String str) {
-        this.f17183r = str;
+        this.f17970r = str;
     }
 
     private void c(Map<String, String> map) {
-        this.f17156M = map;
+        this.f17943M = map;
     }
 
     private void d(Map<String, String> map) {
-        this.f17157N = map;
+        this.f17944N = map;
     }
 
     private void f(Map<String, Map<String, String>> map) {
-        this.f17158O = map;
+        this.f17945O = map;
     }
 
     private void g(JSONObject jSONObject) {
@@ -1263,23 +1262,23 @@ public class b extends e {
     }
 
     public final void b(String str) {
-        this.f17161R = str;
+        this.f17948R = str;
     }
 
     public final void e(String str) {
-        this.f17187v = str;
+        this.f17974v = str;
     }
 
     private void b(Map<String, String> map) {
-        this.f17155L = map;
+        this.f17942L = map;
     }
 
     private void e(Map<String, Object> map) {
-        this.f17170c = map;
+        this.f17957c = map;
     }
 
     public final Map<String, String> f(String str) {
-        Map<String, Map<String, String>> map = this.f17159P;
+        Map<String, Map<String, String>> map = this.f17946P;
         if (map != null) {
             return map.get(str);
         }
@@ -1304,11 +1303,11 @@ public class b extends e {
     }
 
     private void i(int i) {
-        this.f17165V = i;
+        this.f17952V = i;
     }
 
     private void j(int i) {
-        this.f17147C = i;
+        this.f17934C = i;
     }
 
     private void k(int i) {
@@ -1328,7 +1327,7 @@ public class b extends e {
     }
 
     private void a(ConcurrentHashMap<String, bb> concurrentHashMap) {
-        this.f17153I = concurrentHashMap;
+        this.f17940I = concurrentHashMap;
     }
 
     public final void a(long j6) {
@@ -1336,7 +1335,7 @@ public class b extends e {
     }
 
     private void a(Map map) {
-        this.f17148D = map;
+        this.f17935D = map;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:161:0x03f5 A[Catch: all -> 0x0886, TryCatch #2 {all -> 0x0886, blocks: (B:7:0x000d, B:9:0x0020, B:10:0x002f, B:12:0x0039, B:13:0x0049, B:15:0x0054, B:16:0x0061, B:18:0x006b, B:19:0x0078, B:22:0x0084, B:23:0x0091, B:25:0x009b, B:26:0x00aa, B:28:0x00b4, B:29:0x00c1, B:31:0x00cb, B:32:0x00da, B:34:0x00e4, B:36:0x0133, B:38:0x013d, B:39:0x014e, B:41:0x0154, B:44:0x018f, B:46:0x019b, B:47:0x01cd, B:49:0x01d7, B:50:0x0209, B:52:0x0213, B:53:0x0245, B:55:0x0277, B:56:0x0284, B:58:0x028e, B:59:0x029b, B:61:0x02a5, B:62:0x02af, B:64:0x02b9, B:65:0x02c3, B:67:0x02cd, B:68:0x02d7, B:70:0x02e1, B:71:0x02eb, B:74:0x02f7, B:75:0x035a, B:77:0x0362, B:78:0x03c3, B:80:0x03cd, B:81:0x03d7, B:83:0x03e1, B:104:0x03c1, B:120:0x0358, B:129:0x0291, B:130:0x027a, B:139:0x0243, B:148:0x0207, B:157:0x01cb, B:159:0x03eb, B:161:0x03f5, B:162:0x03ff, B:164:0x0409, B:165:0x0413, B:167:0x041d, B:168:0x0427, B:170:0x0431, B:171:0x0447, B:173:0x044d, B:175:0x045b, B:176:0x045d, B:178:0x0467, B:179:0x0471, B:181:0x047b, B:182:0x0485, B:184:0x048f, B:185:0x0499, B:187:0x04a3, B:188:0x04b3, B:190:0x04bd, B:191:0x04cb, B:193:0x04d5, B:194:0x04e2, B:196:0x04ed, B:197:0x04fa, B:199:0x0504, B:200:0x0511, B:202:0x051b, B:203:0x0528, B:205:0x0532, B:206:0x05c6, B:208:0x05da, B:209:0x0607, B:211:0x062f, B:212:0x0639, B:214:0x0643, B:215:0x064d, B:217:0x0657, B:218:0x0661, B:220:0x066b, B:221:0x0675, B:223:0x067f, B:224:0x068e, B:226:0x0698, B:227:0x06a5, B:229:0x06ad, B:230:0x06b5, B:232:0x06bd, B:233:0x06c5, B:235:0x06cd, B:236:0x06d5, B:238:0x06dd, B:240:0x06e5, B:241:0x06e7, B:244:0x0733, B:246:0x073d, B:248:0x0745, B:249:0x074d, B:251:0x0755, B:252:0x0765, B:254:0x076d, B:255:0x0786, B:257:0x081c, B:258:0x0844, B:261:0x0870, B:262:0x0874, B:263:0x087d, B:266:0x0780, B:268:0x06a3, B:269:0x068a, B:280:0x0537, B:282:0x057a, B:283:0x0585, B:285:0x058f, B:286:0x059a, B:288:0x05a4, B:289:0x05af, B:291:0x05b9, B:292:0x05c4, B:293:0x051e, B:294:0x0507, B:295:0x04f0, B:296:0x04d8, B:297:0x04c1, B:298:0x04a9, B:299:0x00d0, B:300:0x00b7, B:301:0x00a0, B:302:0x0087, B:303:0x006e, B:304:0x0057, B:305:0x003f, B:306:0x0025, B:132:0x0216, B:133:0x022c, B:135:0x0232, B:137:0x0240, B:141:0x01da, B:142:0x01f0, B:144:0x01f6, B:146:0x0204, B:85:0x0365, B:86:0x0379, B:88:0x037f, B:90:0x03a1, B:93:0x03a8, B:95:0x03ae, B:97:0x03ba, B:101:0x03be, B:150:0x019e, B:151:0x01b4, B:153:0x01ba, B:155:0x01c8), top: B:6:0x000d, inners: #1, #4, #6, #7 }] */
@@ -1404,56 +1403,56 @@ public class b extends e {
             bVar.b(jSONObject);
             bVar.c(jSONObject);
             bVar.d(jSONObject);
-            if (jSONObject.isNull(a.f17197F)) {
-                bVar.f17174h = "unkown";
+            if (jSONObject.isNull(a.f17984F)) {
+                bVar.f17961h = "unkown";
             } else {
-                bVar.f17174h = jSONObject.optString(a.f17197F);
+                bVar.f17961h = jSONObject.optString(a.f17984F);
             }
-            if (jSONObject.isNull(a.f17196E)) {
-                bVar.f17173g = j.k.f12487a;
+            if (jSONObject.isNull(a.f17983E)) {
+                bVar.f17960g = j.k.f13273a;
             } else {
-                bVar.f17173g = jSONObject.optLong(a.f17196E);
+                bVar.f17960g = jSONObject.optLong(a.f17983E);
             }
             int i = 0;
-            if (jSONObject.isNull(a.f17200I)) {
-                bVar.f17175j = 0;
+            if (jSONObject.isNull(a.f17987I)) {
+                bVar.f17962j = 0;
             } else {
-                bVar.f17175j = jSONObject.optInt(a.f17200I);
+                bVar.f17962j = jSONObject.optInt(a.f17987I);
             }
             if (jSONObject.isNull(a.J)) {
-                bVar.f17176k = 0;
+                bVar.f17963k = 0;
             } else {
-                bVar.f17176k = jSONObject.optInt(a.J);
+                bVar.f17963k = jSONObject.optInt(a.J);
             }
-            if (jSONObject.isNull(a.f17201K)) {
-                bVar.f17177l = "";
+            if (jSONObject.isNull(a.f17988K)) {
+                bVar.f17964l = "";
             } else {
-                bVar.f17177l = jSONObject.optString(a.f17201K);
+                bVar.f17964l = jSONObject.optString(a.f17988K);
             }
-            if (jSONObject.isNull(a.f17202L)) {
-                bVar.f17178m = "[\"AT\",\"BE\",\"BG\",\"HR\",\"CY\",\"CZ\",\"DK\",\"EE\",\"FI\",\"FR\",\"DE\",\"GR\",\"HU\",\"IS\",\"IE\",\"IT\",\"LV\",\"LI\",\"LT\",\"LU\",\"MT\",\"NL\",\"NO\",\"PL\",\"PT\",\"RO\",\"SK\",\"SI\",\"ES\",\"SE\",\"GB\",\"UK\"]";
+            if (jSONObject.isNull(a.f17989L)) {
+                bVar.f17965m = "[\"AT\",\"BE\",\"BG\",\"HR\",\"CY\",\"CZ\",\"DK\",\"EE\",\"FI\",\"FR\",\"DE\",\"GR\",\"HU\",\"IS\",\"IE\",\"IT\",\"LV\",\"LI\",\"LT\",\"LU\",\"MT\",\"NL\",\"NO\",\"PL\",\"PT\",\"RO\",\"SK\",\"SI\",\"ES\",\"SE\",\"GB\",\"UK\"]";
             } else {
-                bVar.f17178m = jSONObject.optString(a.f17202L);
+                bVar.f17965m = jSONObject.optString(a.f17989L);
             }
-            if (jSONObject.isNull(a.f17203M)) {
-                bVar.f17179n = 0;
+            if (jSONObject.isNull(a.f17990M)) {
+                bVar.f17966n = 0;
             } else {
-                bVar.f17179n = jSONObject.optInt(a.f17203M);
+                bVar.f17966n = jSONObject.optInt(a.f17990M);
             }
-            if (jSONObject.isNull(a.f17204N)) {
-                bVar.f17180o = com.anythink.basead.exoplayer.f.f7187a;
+            if (jSONObject.isNull(a.f17991N)) {
+                bVar.f17967o = com.anythink.basead.exoplayer.f.f7973a;
             } else {
-                bVar.f17180o = jSONObject.optLong(a.f17204N);
+                bVar.f17967o = jSONObject.optLong(a.f17991N);
             }
-            if (!jSONObject.isNull(a.f17206P)) {
-                JSONObject optJSONObject7 = jSONObject.optJSONObject(a.f17206P);
-                bVar.f17182q = optJSONObject7.toString();
-                bVar.f17183r = optJSONObject7.optString(a.f17207Q);
-                bVar.f17184s = optJSONObject7.optInt(a.f17208R);
-                bVar.f17185t = optJSONObject7.optLong(a.f17209S);
-                bVar.f17187v = optJSONObject7.optString(a.f17210T);
-                bVar.f17188w = optJSONObject7.optInt(a.f17211U);
-                bVar.f17189x = optJSONObject7.optLong(a.f17212V);
+            if (!jSONObject.isNull(a.f17993P)) {
+                JSONObject optJSONObject7 = jSONObject.optJSONObject(a.f17993P);
+                bVar.f17969q = optJSONObject7.toString();
+                bVar.f17970r = optJSONObject7.optString(a.f17994Q);
+                bVar.f17971s = optJSONObject7.optInt(a.f17995R);
+                bVar.f17972t = optJSONObject7.optLong(a.f17996S);
+                bVar.f17974v = optJSONObject7.optString(a.f17997T);
+                bVar.f17975w = optJSONObject7.optInt(a.f17998U);
+                bVar.f17976x = optJSONObject7.optLong(a.f17999V);
                 ConcurrentHashMap<String, bb> concurrentHashMap = new ConcurrentHashMap<>();
                 try {
                     if (!optJSONObject7.isNull(a.Y)) {
@@ -1463,19 +1462,19 @@ public class b extends e {
                             String next = keys.next();
                             bb bbVar = new bb();
                             JSONObject optJSONObject8 = jSONObject2.optJSONObject(next);
-                            bbVar.f13606a = optJSONObject8.optInt("tk_fi_re_sw");
-                            bbVar.f13607b = optJSONObject8.optInt("tk_im_sw");
-                            bbVar.f13608c = optJSONObject8.optInt("tk_sh_sw");
-                            bbVar.f13609d = optJSONObject8.optInt("tk_ck_sw");
-                            bbVar.f13610e = optJSONObject8.optString("pg_m_li");
+                            bbVar.f14392a = optJSONObject8.optInt("tk_fi_re_sw");
+                            bbVar.f14393b = optJSONObject8.optInt("tk_im_sw");
+                            bbVar.f14394c = optJSONObject8.optInt("tk_sh_sw");
+                            bbVar.f14395d = optJSONObject8.optInt("tk_ck_sw");
+                            bbVar.f14396e = optJSONObject8.optString("pg_m_li");
                             concurrentHashMap.put(next, bbVar);
                         }
                     }
                 } catch (Exception unused) {
                 }
-                bVar.f17153I = concurrentHashMap;
+                bVar.f17940I = concurrentHashMap;
                 if (optJSONObject7.isNull(a.ag)) {
-                    bVar.f17155L = null;
+                    bVar.f17942L = null;
                 } else {
                     try {
                         JSONObject jSONObject3 = new JSONObject(optJSONObject7.optString(a.ag));
@@ -1485,13 +1484,13 @@ public class b extends e {
                             String next2 = keys2.next();
                             hashMap.put(next2, jSONObject3.optString(next2));
                         }
-                        bVar.f17155L = hashMap;
+                        bVar.f17942L = hashMap;
                     } catch (Throwable unused2) {
-                        bVar.f17155L = null;
+                        bVar.f17942L = null;
                     }
                 }
                 if (optJSONObject7.isNull(a.ai)) {
-                    bVar.f17157N = null;
+                    bVar.f17944N = null;
                 } else {
                     try {
                         JSONObject jSONObject4 = new JSONObject(optJSONObject7.optString(a.ai));
@@ -1501,13 +1500,13 @@ public class b extends e {
                             String next3 = keys3.next();
                             hashMap2.put(next3, jSONObject4.optString(next3));
                         }
-                        bVar.f17157N = hashMap2;
+                        bVar.f17944N = hashMap2;
                     } catch (Throwable unused3) {
-                        bVar.f17157N = null;
+                        bVar.f17944N = null;
                     }
                 }
                 if (optJSONObject7.isNull(a.ah)) {
-                    bVar.f17156M = null;
+                    bVar.f17943M = null;
                 } else {
                     try {
                         JSONObject jSONObject5 = new JSONObject(optJSONObject7.optString(a.ah));
@@ -1517,15 +1516,15 @@ public class b extends e {
                             String next4 = keys4.next();
                             hashMap3.put(next4, jSONObject5.optString(next4));
                         }
-                        bVar.f17156M = hashMap3;
+                        bVar.f17943M = hashMap3;
                     } catch (Throwable unused4) {
-                        bVar.f17156M = null;
+                        bVar.f17943M = null;
                     }
                 }
-                bVar.f17163T = optJSONObject7.optString(a.am);
-                bVar.f17165V = optJSONObject7.optInt(a.an);
-                bVar.f17162S = optJSONObject7.optInt(a.ao);
-                bVar.f17167X = optJSONObject7.optString(a.ap);
+                bVar.f17950T = optJSONObject7.optString(a.am);
+                bVar.f17952V = optJSONObject7.optInt(a.an);
+                bVar.f17949S = optJSONObject7.optInt(a.ao);
+                bVar.f17954X = optJSONObject7.optString(a.ap);
                 if (optJSONObject7.isNull(a.az)) {
                     bVar.ag = null;
                 } else {
@@ -1548,11 +1547,11 @@ public class b extends e {
                 if (!optJSONObject7.isNull(a.aL)) {
                     bVar.ao = optJSONObject7.optInt(a.aL);
                 }
-                if (optJSONObject7.isNull(a.f17217b)) {
-                    bVar.f17158O = null;
+                if (optJSONObject7.isNull(a.f18004b)) {
+                    bVar.f17945O = null;
                 } else {
                     try {
-                        JSONObject jSONObject6 = new JSONObject(optJSONObject7.optString(a.f17217b));
+                        JSONObject jSONObject6 = new JSONObject(optJSONObject7.optString(a.f18004b));
                         Iterator<String> keys5 = jSONObject6.keys();
                         HashMap hashMap4 = new HashMap();
                         while (keys5.hasNext()) {
@@ -1568,8 +1567,8 @@ public class b extends e {
                                         i++;
                                     } catch (Throwable unused5) {
                                         map = null;
-                                        bVar.f17158O = map;
-                                        if (!optJSONObject7.isNull(a.f17218c)) {
+                                        bVar.f17945O = map;
+                                        if (!optJSONObject7.isNull(a.f18005c)) {
                                         }
                                         if (!optJSONObject7.isNull(a.aS)) {
                                         }
@@ -1577,11 +1576,11 @@ public class b extends e {
                                         }
                                         if (!jSONObject.isNull(a.aT)) {
                                         }
-                                        if (!jSONObject.isNull(a.f17213W)) {
+                                        if (!jSONObject.isNull(a.f18000W)) {
                                         }
-                                        if (!jSONObject.isNull(a.f17214X)) {
+                                        if (!jSONObject.isNull(a.f18001X)) {
                                         }
-                                        if (!jSONObject.isNull(a.f17215Z)) {
+                                        if (!jSONObject.isNull(a.f18002Z)) {
                                         }
                                         if (!jSONObject.isNull(a.ac)) {
                                         }
@@ -1621,59 +1620,59 @@ public class b extends e {
                                         }
                                         if (jSONObject.isNull(a.aP)) {
                                         }
-                                        if (!jSONObject.isNull(a.f17216a)) {
+                                        if (!jSONObject.isNull(a.f18003a)) {
                                         }
-                                        if (!jSONObject.isNull(a.f17235u)) {
+                                        if (!jSONObject.isNull(a.f18022u)) {
                                         }
-                                        if (!jSONObject.isNull(a.f17220e)) {
+                                        if (!jSONObject.isNull(a.f18007e)) {
                                         }
-                                        if (!jSONObject.isNull(a.f17221f)) {
+                                        if (!jSONObject.isNull(a.f18008f)) {
                                             bVar.ay = optJSONObject6;
                                         }
-                                        bVar.az = jSONObject.optInt(a.f17222g, 0);
-                                        bVar.i(jSONObject.optString(a.f17223h, ""));
+                                        bVar.az = jSONObject.optInt(a.f18009g, 0);
+                                        bVar.i(jSONObject.optString(a.f18010h, ""));
                                         bVar.j(jSONObject.optString(a.i, ""));
-                                        bVar.k(jSONObject.optString(a.f17224j, ""));
-                                        bVar.aA = com.anythink.core.common.r.g.a(jSONObject.optJSONObject(a.f17225k));
-                                        bVar.aB = jSONObject.optJSONObject(a.f17226l);
-                                        bVar.aC = jSONObject.optInt(a.f17227m, 2);
-                                        bVar.aD = jSONObject.optInt(a.f17228n, 2) != 1;
-                                        optJSONObject = jSONObject.optJSONObject(a.f17229o);
+                                        bVar.k(jSONObject.optString(a.f18011j, ""));
+                                        bVar.aA = com.anythink.core.common.r.g.a(jSONObject.optJSONObject(a.f18012k));
+                                        bVar.aB = jSONObject.optJSONObject(a.f18013l);
+                                        bVar.aC = jSONObject.optInt(a.f18014m, 2);
+                                        bVar.aD = jSONObject.optInt(a.f18015n, 2) != 1;
+                                        optJSONObject = jSONObject.optJSONObject(a.f18016o);
                                         if (optJSONObject != null) {
                                             bVar.aE = optJSONObject5.optInt("hot_fix_sw", 2);
                                         }
-                                        optJSONObject2 = jSONObject.optJSONObject(a.f17230p);
+                                        optJSONObject2 = jSONObject.optJSONObject(a.f18017p);
                                         if (optJSONObject2 != null) {
                                         }
-                                        optJSONObject3 = jSONObject.optJSONObject(a.f17231q);
+                                        optJSONObject3 = jSONObject.optJSONObject(a.f18018q);
                                         if (optJSONObject3 == null) {
                                         }
-                                        bVar.aH = jSONObject.optString(a.f17234t);
+                                        bVar.aH = jSONObject.optString(a.f18021t);
                                         bVar.aY = jSONObject.optInt(a.aQ, 1);
                                         bVar.aI = jSONObject.optString(a.aR);
-                                        bVar.f17171e = jSONObject.optLong(a.f17198G, 1800000L);
+                                        bVar.f17958e = jSONObject.optLong(a.f17985G, 1800000L);
                                         bVar.bg = jSONObject.optInt(a.aU, 2);
-                                        bVar.a(jSONObject.optJSONArray(a.f17199H));
+                                        bVar.a(jSONObject.optJSONArray(a.f17986H));
                                         bVar.bh = jSONObject.optInt(a.aV, 1);
-                                        bVar.aJ = jSONObject.optJSONObject(a.f17236v);
-                                        bVar.bb = jSONObject.optInt(a.f17237w, 2);
-                                        bVar.aN = jSONObject.optInt(a.f17238x, 2);
-                                        bVar.aO = jSONObject.optString(a.f17239y);
-                                        bVar.aP = jSONObject.optJSONArray(a.f17240z);
+                                        bVar.aJ = jSONObject.optJSONObject(a.f18023v);
+                                        bVar.bb = jSONObject.optInt(a.f18024w, 2);
+                                        bVar.aN = jSONObject.optInt(a.f18025x, 2);
+                                        bVar.aO = jSONObject.optString(a.f18026y);
+                                        bVar.aP = jSONObject.optJSONArray(a.f18027z);
                                         bVar.aK = jSONObject.optInt(a.aW, 2);
                                         bVar.aM = jSONObject.optString(a.aY, "");
                                         bVar.aL = jSONObject.optString(a.aX, "");
                                         optJSONObject4 = jSONObject.optJSONObject(l.a.aR);
                                         if (optJSONObject4 != null) {
                                         }
-                                        bVar.bd = jSONObject.optInt(a.f17193B);
-                                        bVar.be = jSONObject.optInt(a.f17194C);
+                                        bVar.bd = jSONObject.optInt(a.f17980B);
+                                        bVar.be = jSONObject.optInt(a.f17981C);
                                         bVar.aQ = jSONObject.optInt("wv_c_sw", 2);
                                         com.anythink.core.common.m.b.c a9 = com.anythink.core.common.m.b.c.a(jSONObject.optJSONObject(com.anythink.expressad.foundation.g.g.a.b.bb));
                                         bVar.bf = a9;
                                         if (!ATSDK.isCnSDK()) {
                                         }
-                                        bVar.ab = jSONObject.optInt(a.f17195D, 0);
+                                        bVar.ab = jSONObject.optInt(a.f17982D, 0);
                                         return bVar;
                                     }
                                 }
@@ -1682,16 +1681,16 @@ public class b extends e {
                             map = null;
                             i = 0;
                         }
-                        bVar.f17158O = hashMap4;
+                        bVar.f17945O = hashMap4;
                         map = null;
                     } catch (Throwable unused6) {
                     }
                 }
-                if (!optJSONObject7.isNull(a.f17218c)) {
-                    bVar.f17159P = map;
+                if (!optJSONObject7.isNull(a.f18005c)) {
+                    bVar.f17946P = map;
                 } else {
                     try {
-                        JSONObject jSONObject8 = new JSONObject(optJSONObject7.optString(a.f17218c));
+                        JSONObject jSONObject8 = new JSONObject(optJSONObject7.optString(a.f18005c));
                         Iterator<String> keys6 = jSONObject8.keys();
                         HashMap hashMap6 = new HashMap();
                         while (keys6.hasNext()) {
@@ -1701,15 +1700,15 @@ public class b extends e {
                             JSONArray optJSONArray2 = jSONObject9.optJSONArray("ids");
                             String optString2 = jSONObject9.optString("formats");
                             if (optJSONArray2.length() > 0 && !TextUtils.isEmpty(optString2)) {
-                                for (int i6 = 0; i6 < optJSONArray2.length(); i6++) {
-                                    hashMap7.put(optJSONArray2.optString(i6), optString2);
+                                for (int i4 = 0; i4 < optJSONArray2.length(); i4++) {
+                                    hashMap7.put(optJSONArray2.optString(i4), optString2);
                                 }
                             }
                             hashMap6.put(next6, hashMap7);
                         }
-                        bVar.f17159P = hashMap6;
+                        bVar.f17946P = hashMap6;
                     } catch (Throwable unused7) {
-                        bVar.f17159P = null;
+                        bVar.f17946P = null;
                     }
                 }
                 if (!optJSONObject7.isNull(a.aS)) {
@@ -1722,30 +1721,30 @@ public class b extends e {
             if (!jSONObject.isNull(a.aT)) {
                 bVar.ba = jSONObject.optInt(a.aT);
             }
-            if (!jSONObject.isNull(a.f17213W)) {
-                bVar.f17145A = jSONObject.optLong(a.f17213W);
+            if (!jSONObject.isNull(a.f18000W)) {
+                bVar.f17932A = jSONObject.optLong(a.f18000W);
             }
-            if (!jSONObject.isNull(a.f17214X)) {
-                bVar.f17146B = jSONObject.optLong(a.f17214X);
+            if (!jSONObject.isNull(a.f18001X)) {
+                bVar.f17933B = jSONObject.optLong(a.f18001X);
             }
-            if (!jSONObject.isNull(a.f17215Z)) {
-                JSONObject jSONObject10 = new JSONObject(jSONObject.optString(a.f17215Z));
+            if (!jSONObject.isNull(a.f18002Z)) {
+                JSONObject jSONObject10 = new JSONObject(jSONObject.optString(a.f18002Z));
                 Iterator<String> keys7 = jSONObject10.keys();
                 HashMap hashMap8 = new HashMap();
                 while (keys7.hasNext()) {
                     String next7 = keys7.next();
                     hashMap8.put(next7, jSONObject10.optString(next7));
                 }
-                bVar.f17148D = hashMap8;
+                bVar.f17935D = hashMap8;
             }
             if (!jSONObject.isNull(a.ac)) {
-                bVar.f17150F = jSONObject.optString(a.ac);
+                bVar.f17937F = jSONObject.optString(a.ac);
             }
             if (!jSONObject.isNull(a.ab)) {
-                bVar.f17147C = jSONObject.optInt(a.ab);
+                bVar.f17934C = jSONObject.optInt(a.ab);
             }
             if (!jSONObject.isNull(a.ad)) {
-                bVar.f17151G = jSONObject.optString(a.ad);
+                bVar.f17938G = jSONObject.optString(a.ad);
             }
             if (!jSONObject.isNull(a.ae)) {
                 bVar.J = 60000;
@@ -1753,24 +1752,24 @@ public class b extends e {
                 bVar.J = jSONObject.optInt(a.ae);
             }
             if (!jSONObject.isNull(a.af)) {
-                bVar.f17154K = 0;
+                bVar.f17941K = 0;
             } else {
-                bVar.f17154K = jSONObject.optInt(a.af);
+                bVar.f17941K = jSONObject.optInt(a.af);
             }
             if (!jSONObject.isNull(a.aj)) {
-                bVar.f17152H = "";
+                bVar.f17939H = "";
             } else {
-                bVar.f17152H = jSONObject.optString(a.aj);
+                bVar.f17939H = jSONObject.optString(a.aj);
             }
             if (!jSONObject.isNull(a.ak)) {
-                bVar.f17160Q = 1;
+                bVar.f17947Q = 1;
             } else {
-                bVar.f17160Q = jSONObject.optInt(a.ak);
+                bVar.f17947Q = jSONObject.optInt(a.ak);
             }
             if (!jSONObject.isNull(a.al)) {
-                bVar.f17161R = "";
+                bVar.f17948R = "";
             } else {
-                bVar.f17161R = jSONObject.optString(a.al);
+                bVar.f17948R = jSONObject.optString(a.al);
             }
             if (!jSONObject.isNull(a.aq)) {
                 bVar.Y = "";
@@ -1803,7 +1802,7 @@ public class b extends e {
             bVar.aa = j.a(jSONObject.optString(a.aw));
             if (!jSONObject.isNull("custom")) {
                 iVarArr = null;
-                bVar.f17170c = null;
+                bVar.f17957c = null;
             } else {
                 iVarArr = null;
                 try {
@@ -1814,7 +1813,7 @@ public class b extends e {
                         String next8 = keys8.next();
                         hashMap9.put(next8, jSONObject11.opt(next8));
                     }
-                    bVar.f17170c = hashMap9;
+                    bVar.f17957c = hashMap9;
                 } catch (Throwable unused8) {
                 }
             }
@@ -1843,68 +1842,68 @@ public class b extends e {
             } else {
                 bVar.as = 1;
             }
-            if (!jSONObject.isNull(a.f17216a)) {
-                bVar.at = jSONObject.optString(a.f17216a);
+            if (!jSONObject.isNull(a.f18003a)) {
+                bVar.at = jSONObject.optString(a.f18003a);
             }
-            if (!jSONObject.isNull(a.f17235u)) {
-                bVar.aw = jSONObject.optString(a.f17235u);
+            if (!jSONObject.isNull(a.f18022u)) {
+                bVar.aw = jSONObject.optString(a.f18022u);
             }
-            if (!jSONObject.isNull(a.f17220e)) {
-                bVar.ax = jSONObject.optJSONObject(a.f17220e);
+            if (!jSONObject.isNull(a.f18007e)) {
+                bVar.ax = jSONObject.optJSONObject(a.f18007e);
             }
-            if (!jSONObject.isNull(a.f17221f) && (optJSONObject6 = jSONObject.optJSONObject(a.f17221f)) != null) {
+            if (!jSONObject.isNull(a.f18008f) && (optJSONObject6 = jSONObject.optJSONObject(a.f18008f)) != null) {
                 bVar.ay = optJSONObject6;
             }
-            bVar.az = jSONObject.optInt(a.f17222g, 0);
-            bVar.i(jSONObject.optString(a.f17223h, ""));
+            bVar.az = jSONObject.optInt(a.f18009g, 0);
+            bVar.i(jSONObject.optString(a.f18010h, ""));
             bVar.j(jSONObject.optString(a.i, ""));
-            bVar.k(jSONObject.optString(a.f17224j, ""));
-            bVar.aA = com.anythink.core.common.r.g.a(jSONObject.optJSONObject(a.f17225k));
-            bVar.aB = jSONObject.optJSONObject(a.f17226l);
-            bVar.aC = jSONObject.optInt(a.f17227m, 2);
-            bVar.aD = jSONObject.optInt(a.f17228n, 2) != 1;
-            optJSONObject = jSONObject.optJSONObject(a.f17229o);
+            bVar.k(jSONObject.optString(a.f18011j, ""));
+            bVar.aA = com.anythink.core.common.r.g.a(jSONObject.optJSONObject(a.f18012k));
+            bVar.aB = jSONObject.optJSONObject(a.f18013l);
+            bVar.aC = jSONObject.optInt(a.f18014m, 2);
+            bVar.aD = jSONObject.optInt(a.f18015n, 2) != 1;
+            optJSONObject = jSONObject.optJSONObject(a.f18016o);
             if (optJSONObject != null && (optJSONObject5 = optJSONObject.optJSONObject("15")) != null) {
                 bVar.aE = optJSONObject5.optInt("hot_fix_sw", 2);
             }
-            optJSONObject2 = jSONObject.optJSONObject(a.f17230p);
+            optJSONObject2 = jSONObject.optJSONObject(a.f18017p);
             if (optJSONObject2 != null) {
                 bVar.aF = optJSONObject2.optString("c_t", "");
                 bVar.aG = optJSONObject2.optString("url", "");
             }
-            optJSONObject3 = jSONObject.optJSONObject(a.f17231q);
+            optJSONObject3 = jSONObject.optJSONObject(a.f18018q);
             if (optJSONObject3 == null) {
-                bVar.au = optJSONObject3.optInt(a.f17232r, 2);
-                bVar.av = optJSONObject3.optInt(a.f17233s, 0);
+                bVar.au = optJSONObject3.optInt(a.f18019r, 2);
+                bVar.av = optJSONObject3.optInt(a.f18020s, 0);
             } else {
                 bVar.au = 2;
                 bVar.av = 0L;
             }
-            bVar.aH = jSONObject.optString(a.f17234t);
+            bVar.aH = jSONObject.optString(a.f18021t);
             bVar.aY = jSONObject.optInt(a.aQ, 1);
             bVar.aI = jSONObject.optString(a.aR);
-            bVar.f17171e = jSONObject.optLong(a.f17198G, 1800000L);
+            bVar.f17958e = jSONObject.optLong(a.f17985G, 1800000L);
             bVar.bg = jSONObject.optInt(a.aU, 2);
-            bVar.a(jSONObject.optJSONArray(a.f17199H));
+            bVar.a(jSONObject.optJSONArray(a.f17986H));
             bVar.bh = jSONObject.optInt(a.aV, 1);
-            bVar.aJ = jSONObject.optJSONObject(a.f17236v);
-            bVar.bb = jSONObject.optInt(a.f17237w, 2);
-            bVar.aN = jSONObject.optInt(a.f17238x, 2);
-            bVar.aO = jSONObject.optString(a.f17239y);
-            bVar.aP = jSONObject.optJSONArray(a.f17240z);
+            bVar.aJ = jSONObject.optJSONObject(a.f18023v);
+            bVar.bb = jSONObject.optInt(a.f18024w, 2);
+            bVar.aN = jSONObject.optInt(a.f18025x, 2);
+            bVar.aO = jSONObject.optString(a.f18026y);
+            bVar.aP = jSONObject.optJSONArray(a.f18027z);
             bVar.aK = jSONObject.optInt(a.aW, 2);
             bVar.aM = jSONObject.optString(a.aY, "");
             bVar.aL = jSONObject.optString(a.aX, "");
             optJSONObject4 = jSONObject.optJSONObject(l.a.aR);
             if (optJSONObject4 != null) {
-                bVar.f17164U = optJSONObject4.optString("domain");
-                bVar.f17166W = optJSONObject4.optInt("domain_p");
-                bVar.bc = optJSONObject4.optString(a.f17192A);
+                bVar.f17951U = optJSONObject4.optString("domain");
+                bVar.f17953W = optJSONObject4.optInt("domain_p");
+                bVar.bc = optJSONObject4.optString(a.f17979A);
                 bVar.aR = optJSONObject4.optString("adx_sdk_dl");
                 bVar.ac = optJSONObject4.optString("domain_http");
             }
-            bVar.bd = jSONObject.optInt(a.f17193B);
-            bVar.be = jSONObject.optInt(a.f17194C);
+            bVar.bd = jSONObject.optInt(a.f17980B);
+            bVar.be = jSONObject.optInt(a.f17981C);
             bVar.aQ = jSONObject.optInt("wv_c_sw", 2);
             com.anythink.core.common.m.b.c a92 = com.anythink.core.common.m.b.c.a(jSONObject.optJSONObject(com.anythink.expressad.foundation.g.g.a.b.bb));
             bVar.bf = a92;
@@ -1912,9 +1911,9 @@ public class b extends e {
                 if (a92 != null) {
                     iVarArr = a92.a();
                 }
-                com.anythink.core.common.n.a.c.a().a(com.anythink.core.common.n.a.k.f14833j, iVarArr);
+                com.anythink.core.common.n.a.c.a().a(com.anythink.core.common.n.a.k.f15619j, iVarArr);
             }
-            bVar.ab = jSONObject.optInt(a.f17195D, 0);
+            bVar.ab = jSONObject.optInt(a.f17982D, 0);
         } catch (Throwable unused9) {
         }
         return bVar;
@@ -1929,7 +1928,7 @@ public class b extends e {
     }
 
     private void h(int i) {
-        this.f17162S = i;
+        this.f17949S = i;
     }
 
     private void h(JSONObject jSONObject) {
@@ -1937,14 +1936,14 @@ public class b extends e {
     }
 
     public final Map<String, String> a(int i) {
-        Map<String, Map<String, String>> map = this.f17158O;
+        Map<String, Map<String, String>> map = this.f17945O;
         if (map != null) {
             return map.get(String.valueOf(i));
         }
         return null;
     }
 
-    private void a(boolean z3) {
-        this.aD = z3;
+    private void a(boolean z6) {
+        this.aD = z6;
     }
 }

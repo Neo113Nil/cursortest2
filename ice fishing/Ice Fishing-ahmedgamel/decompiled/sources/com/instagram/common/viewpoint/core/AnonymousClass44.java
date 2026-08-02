@@ -13,8 +13,8 @@ public final class AnonymousClass44 {
     public static <T extends AnonymousClass24> SparseArray<T> A00(AnonymousClass23<T> anonymousClass23, SparseArray<Bundle> bundleSparseArray) {
         SparseArray<T> sparseArray = new SparseArray<>(bundleSparseArray.size());
         for (int i = 0; i < bundleSparseArray.size(); i++) {
-            int i6 = bundleSparseArray.keyAt(i);
-            sparseArray.put(i6, anonymousClass23.A6f(bundleSparseArray.valueAt(i)));
+            int i4 = bundleSparseArray.keyAt(i);
+            sparseArray.put(i4, anonymousClass23.A6f(bundleSparseArray.valueAt(i)));
         }
         return sparseArray;
     }
@@ -26,13 +26,13 @@ public final class AnonymousClass44 {
         int i = 0;
         while (true) {
             int size = list.size();
-            int i6 = A00[2].length();
-            if (i6 == 29) {
+            int i4 = A00[2].length();
+            if (i4 == 29) {
                 throw new RuntimeException();
             }
             A00[1] = "WptazREDdEStXNqRDkkRjPq2B5lfZI6H";
             if (i < size) {
-                A01.A04(anonymousClass23.A6f((Bundle) AbstractC06243y.A01(list.get(i))));
+                A01.A04(anonymousClass23.A6f((Bundle) AbstractC06443y.A01(list.get(i))));
                 i++;
             } else {
                 return A01.A05();

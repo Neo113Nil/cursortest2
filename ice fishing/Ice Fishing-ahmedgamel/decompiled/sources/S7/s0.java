@@ -6,10 +6,10 @@ import java.util.concurrent.CancellationException;
 public final class s0 extends CancellationException {
 
     /* renamed from: n, reason: collision with root package name */
-    public final transient t0 f2989n;
+    public final transient t0 f3072n;
 
     public s0(String str, t0 t0Var) {
         super(str);
-        this.f2989n = t0Var;
+        this.f3072n = t0Var;
     }
 }

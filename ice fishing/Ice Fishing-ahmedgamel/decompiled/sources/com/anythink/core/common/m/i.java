@@ -10,24 +10,24 @@ import java.util.Map;
 public final class i extends a {
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f14670c = 1;
+    public static final int f15456c = 1;
 
     /* renamed from: a, reason: collision with root package name */
-    String f14671a;
+    String f15457a;
 
     /* renamed from: b, reason: collision with root package name */
-    int f14672b;
+    int f15458b;
 
     /* renamed from: d, reason: collision with root package name */
-    boolean f14673d;
+    boolean f15459d;
 
     /* renamed from: e, reason: collision with root package name */
-    private cd f14674e;
+    private cd f15460e;
 
     private i(String str) {
-        this.f14672b = 0;
-        this.f14673d = false;
-        this.f14671a = str;
+        this.f15458b = 0;
+        this.f15459d = false;
+        this.f15457a = str;
     }
 
     @Override // com.anythink.core.common.m.a
@@ -37,7 +37,7 @@ public final class i extends a {
 
     @Override // com.anythink.core.common.m.a
     public final String b() {
-        return this.f14671a;
+        return this.f15457a;
     }
 
     @Override // com.anythink.core.common.m.a
@@ -82,26 +82,26 @@ public final class i extends a {
     @Override // com.anythink.core.common.m.a
     public final void b(AdError adError) {
         cd cdVar;
-        if (1 != this.f14672b || (cdVar = this.f14674e) == null) {
+        if (1 != this.f15458b || (cdVar = this.f15460e) == null) {
             return;
         }
         int k9 = cdVar.k();
-        com.anythink.core.common.h.n y7 = this.f14674e.y();
-        bv z3 = this.f14674e.z();
-        if (k9 == 50 && com.anythink.core.common.v.d.a().a(y7, z3) && !this.f14673d) {
-            this.f14673d = true;
+        com.anythink.core.common.h.n y7 = this.f15460e.y();
+        bv z6 = this.f15460e.z();
+        if (k9 == 50 && com.anythink.core.common.v.d.a().a(y7, z6) && !this.f15459d) {
+            this.f15459d = true;
             com.anythink.core.common.v.b.b.a().a(new Runnable() { // from class: com.anythink.core.common.m.i.1
                 @Override // java.lang.Runnable
                 public final void run() {
                     i iVar = i.this;
-                    iVar.a(0, iVar.f14411r);
+                    iVar.a(0, iVar.f15197r);
                 }
             }, com.anythink.expressad.video.module.a.a.m.ai);
         } else {
-            this.f14674e.a(adError.getPlatformCode());
-            this.f14674e.b(adError.getPlatformMSG());
-            com.anythink.core.common.v.d.a().a(y7, z3, com.anythink.core.common.v.d.f16730c, "1");
-            com.anythink.core.b.d.c.a(this.f14674e);
+            this.f15460e.a(adError.getPlatformCode());
+            this.f15460e.b(adError.getPlatformMSG());
+            com.anythink.core.common.v.d.a().a(y7, z6, com.anythink.core.common.v.d.f17517c, "1");
+            com.anythink.core.b.d.c.a(this.f15460e);
         }
     }
 
@@ -115,19 +115,19 @@ public final class i extends a {
 
     private i(String str, cd cdVar) {
         this(str);
-        this.f14672b = 1;
-        this.f14674e = cdVar;
+        this.f15458b = 1;
+        this.f15460e = cdVar;
     }
 
     @Override // com.anythink.core.common.m.a
     public final Object a(Object obj) {
         cd cdVar;
-        if (1 != this.f14672b || (cdVar = this.f14674e) == null) {
+        if (1 != this.f15458b || (cdVar = this.f15460e) == null) {
             return null;
         }
         cdVar.a("200");
-        com.anythink.core.common.v.d.a().a(this.f14674e.y(), this.f14674e.z(), com.anythink.core.common.v.d.f16730c, "0");
-        com.anythink.core.b.d.c.a(this.f14674e);
+        com.anythink.core.common.v.d.a().a(this.f15460e.y(), this.f15460e.z(), com.anythink.core.common.v.d.f17517c, "0");
+        com.anythink.core.b.d.c.a(this.f15460e);
         return null;
     }
 }

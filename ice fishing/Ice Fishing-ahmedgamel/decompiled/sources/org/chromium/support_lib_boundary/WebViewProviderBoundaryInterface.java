@@ -31,7 +31,7 @@ public interface WebViewProviderBoundaryInterface {
 
     void removeWebMessageListener(String str);
 
-    void setAudioMuted(boolean z3);
+    void setAudioMuted(boolean z6);
 
     void setProfile(String str);
 

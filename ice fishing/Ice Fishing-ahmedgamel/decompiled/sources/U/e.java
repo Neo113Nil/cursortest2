@@ -22,11 +22,11 @@ public abstract class e {
         }
     }
 
-    public static float c(EdgeEffect edgeEffect, float f3, float f9) {
+    public static float c(EdgeEffect edgeEffect, float f2, float f9) {
         try {
-            return edgeEffect.onPullDistance(f3, f9);
+            return edgeEffect.onPullDistance(f2, f9);
         } catch (Throwable unused) {
-            edgeEffect.onPull(f3, f9);
+            edgeEffect.onPull(f2, f9);
             return 0.0f;
         }
     }

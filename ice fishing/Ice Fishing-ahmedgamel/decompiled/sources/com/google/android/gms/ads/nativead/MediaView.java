@@ -5,53 +5,53 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import g1.C4522b;
-import k2.o;
+import i1.C4585b;
+import m2.o;
 
 /* loaded from: classes.dex */
 public class MediaView extends FrameLayout {
 
     /* renamed from: n, reason: collision with root package name */
-    public o f23589n;
+    public o f24369n;
 
     /* renamed from: u, reason: collision with root package name */
-    public boolean f23590u;
+    public boolean f24370u;
 
     /* renamed from: v, reason: collision with root package name */
-    public C4522b f23591v;
+    public C4585b f24371v;
 
     /* renamed from: w, reason: collision with root package name */
-    public ImageView.ScaleType f23592w;
+    public ImageView.ScaleType f24372w;
 
     /* renamed from: x, reason: collision with root package name */
-    public boolean f23593x;
+    public boolean f24373x;
 
     /* renamed from: y, reason: collision with root package name */
-    public j f23594y;
+    public j f24374y;
 
     public MediaView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
     }
 
     public o getMediaContent() {
-        return this.f23589n;
+        return this.f24369n;
     }
 
     public void setImageScaleType(ImageView.ScaleType scaleType) {
-        this.f23593x = true;
-        this.f23592w = scaleType;
-        j jVar = this.f23594y;
+        this.f24373x = true;
+        this.f24372w = scaleType;
+        j jVar = this.f24374y;
         if (jVar != null) {
-            jVar.b(scaleType);
+            jVar.v(scaleType);
         }
     }
 
     public void setMediaContent(o oVar) {
-        this.f23590u = true;
-        this.f23589n = oVar;
-        C4522b c4522b = this.f23591v;
-        if (c4522b != null) {
-            c4522b.X(oVar);
+        this.f24370u = true;
+        this.f24369n = oVar;
+        C4585b c4585b = this.f24371v;
+        if (c4585b != null) {
+            c4585b.u(oVar);
         }
     }
 }

@@ -18,7 +18,7 @@ public final class a implements n {
 
     @Override // t8.n
     public final boolean b() {
-        s8.f fVar = s8.f.f40500a;
+        s8.f fVar = s8.f.f40554a;
         return Build.VERSION.SDK_INT >= 29;
     }
 
@@ -45,8 +45,8 @@ public final class a implements n {
         try {
             SSLSockets.setUseSessionTickets(sSLSocket, true);
             SSLParameters sSLParameters = sSLSocket.getSSLParameters();
-            s8.f fVar = s8.f.f40500a;
-            sSLParameters.setApplicationProtocols((String[]) a4.e.c(protocols).toArray(new String[0]));
+            s8.f fVar = s8.f.f40554a;
+            sSLParameters.setApplicationProtocols((String[]) c4.e.n(protocols).toArray(new String[0]));
             sSLSocket.setSSLParameters(sSLParameters);
         } catch (IllegalArgumentException e9) {
             throw new IOException("Android internal error", e9);

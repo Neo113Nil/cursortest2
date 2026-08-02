@@ -12,13 +12,13 @@ import org.json.JSONObject;
 public class MraidSignalCommunication extends BaseMraidSignalCommunication {
 
     /* renamed from: a, reason: collision with root package name */
-    protected static final String f18033a = "MraidSignalCommunication";
+    protected static final String f18820a = "MraidSignalCommunication";
     private IMraidSignalCommunication i;
 
     public void close(Object obj, String str) {
         if (obj instanceof b) {
             a.a();
-            a.a(((b) obj).f18062a, d.cs);
+            a.a(((b) obj).f18849a, d.cs);
         }
         try {
             IMraidSignalCommunication iMraidSignalCommunication = this.i;
@@ -32,7 +32,7 @@ public class MraidSignalCommunication extends BaseMraidSignalCommunication {
     public void expand(Object obj, String str) {
         if (obj instanceof b) {
             a.a();
-            a.a(((b) obj).f18062a, "expand");
+            a.a(((b) obj).f18849a, "expand");
         }
         try {
             JSONObject jSONObject = new JSONObject(str);
@@ -63,7 +63,7 @@ public class MraidSignalCommunication extends BaseMraidSignalCommunication {
             }
             this.i = (IMraidSignalCommunication) windVaneWebView.getMraidObject();
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.printStackTrace();
             }
         }
@@ -74,9 +74,9 @@ public class MraidSignalCommunication extends BaseMraidSignalCommunication {
         WindVaneWebView windVaneWebView;
         if (obj instanceof b) {
             b bVar = (b) obj;
-            windVaneWebView = bVar.f18062a;
+            windVaneWebView = bVar.f18849a;
             a.a();
-            a.a(bVar.f18062a, "open");
+            a.a(bVar.f18849a, "open");
         } else {
             windVaneWebView = null;
         }
@@ -85,7 +85,7 @@ public class MraidSignalCommunication extends BaseMraidSignalCommunication {
             if (this.i == null || TextUtils.isEmpty(optString)) {
                 return;
             }
-            if (windVaneWebView == null || System.currentTimeMillis() - windVaneWebView.lastTouchTime <= com.anythink.expressad.b.c.a.f18198c) {
+            if (windVaneWebView == null || System.currentTimeMillis() - windVaneWebView.lastTouchTime <= com.anythink.expressad.b.c.a.f18985c) {
                 this.i.open(optString);
                 return;
             }
@@ -100,7 +100,7 @@ public class MraidSignalCommunication extends BaseMraidSignalCommunication {
         String str2;
         if (obj instanceof b) {
             a.a();
-            a.a(((b) obj).f18062a, "setOrientationProperties");
+            a.a(((b) obj).f18849a, "setOrientationProperties");
         }
         try {
             JSONObject jSONObject = new JSONObject(str);
@@ -127,7 +127,7 @@ public class MraidSignalCommunication extends BaseMraidSignalCommunication {
     public void unload(Object obj, String str) {
         if (obj instanceof b) {
             a.a();
-            a.a(((b) obj).f18062a, "unload");
+            a.a(((b) obj).f18849a, "unload");
         }
         try {
             IMraidSignalCommunication iMraidSignalCommunication = this.i;
@@ -141,7 +141,7 @@ public class MraidSignalCommunication extends BaseMraidSignalCommunication {
     public void useCustomClose(Object obj, String str) {
         if (obj instanceof b) {
             a.a();
-            a.a(((b) obj).f18062a, "useCustomClose");
+            a.a(((b) obj).f18849a, "useCustomClose");
         }
         try {
             String optString = new JSONObject(str).optString("shouldUseCustomClose");

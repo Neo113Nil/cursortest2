@@ -39,7 +39,7 @@ public abstract class HT {
                 i = 2;
                 break;
             default:
-                i = b10 & c.f16318c;
+                i = b10 & c.f17105c;
                 break;
         }
         int frames2 = frames >> 3;
@@ -47,7 +47,7 @@ public abstract class HT {
         if (frames2 >= 16) {
             if (A00[7].charAt(3) != 79) {
                 A00[2] = "r0CXzG1";
-                length = d.f6764c << frameDurationUs;
+                length = d.f7550c << frameDurationUs;
             } else {
                 throw new RuntimeException();
             }
@@ -63,7 +63,7 @@ public abstract class HT {
     }
 
     public static long A04(long j6) {
-        return (b.f6388h * j6) / 48000;
+        return (b.f7174h * j6) / 48000;
     }
 
     public static long A05(byte[] bArr) {

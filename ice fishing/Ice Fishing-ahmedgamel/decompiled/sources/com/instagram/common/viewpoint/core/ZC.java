@@ -8,14 +8,14 @@ public final class ZC extends LinearLayout {
     public static final int A03 = (int) (XX.A02 * 10.0f);
     public static final int A04 = (int) (XX.A02 * 24.0f);
     public final ImageView A00;
-    public final C1130Og A01;
-    public final C1840gi A02;
+    public final C1150Og A01;
+    public final C1860gi A02;
 
-    public ZC(C1840gi c1840gi) {
-        super(c1840gi);
-        this.A02 = c1840gi;
-        this.A01 = AbstractC1131Oh.A00(c1840gi.A02());
-        this.A00 = new ImageView(c1840gi);
+    public ZC(C1860gi c1860gi) {
+        super(c1860gi);
+        this.A02 = c1860gi;
+        this.A01 = AbstractC1151Oh.A00(c1860gi.A02());
+        this.A00 = new ImageView(c1860gi);
         A02();
     }
 
@@ -33,8 +33,8 @@ public final class ZC extends LinearLayout {
         imageView.setColorFilter(-1);
     }
 
-    public void setAdDetails(C1110Nm c1110Nm, String str, VI vi, InterfaceC1381Yh interfaceC1381Yh) {
-        setOnClickListener(new ZB(this, vi, interfaceC1381Yh, str, c1110Nm));
+    public void setAdDetails(C1130Nm c1130Nm, String str, VI vi, InterfaceC1401Yh interfaceC1401Yh) {
+        setOnClickListener(new ZB(this, vi, interfaceC1401Yh, str, c1130Nm));
     }
 
     public void setIconColors(int i) {

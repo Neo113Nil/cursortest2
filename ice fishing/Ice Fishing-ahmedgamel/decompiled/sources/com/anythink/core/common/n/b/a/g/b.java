@@ -26,44 +26,44 @@ import javax.net.ssl.X509TrustManager;
 class b extends com.anythink.core.common.n.b.a.g.c {
 
     /* renamed from: c, reason: collision with root package name */
-    private static final int f15338c = 4000;
+    private static final int f16125c = 4000;
 
     /* renamed from: d, reason: collision with root package name */
-    private final Class<?> f15339d;
+    private final Class<?> f16126d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final Class<?> f15340e;
+    private final Class<?> f16127e;
 
     /* renamed from: f, reason: collision with root package name */
-    private final Method f15341f;
+    private final Method f16128f;
 
     /* renamed from: g, reason: collision with root package name */
-    private final Method f15342g;
+    private final Method f16129g;
 
     /* renamed from: h, reason: collision with root package name */
-    private final Method f15343h;
+    private final Method f16130h;
     private final Method i;
 
     /* renamed from: j, reason: collision with root package name */
-    private final C0087b f15344j = C0087b.a();
+    private final C0087b f16131j = C0087b.a();
 
     public static final class a extends com.anythink.core.common.n.b.a.j.c {
 
         /* renamed from: a, reason: collision with root package name */
-        private final Object f15345a;
+        private final Object f16132a;
 
         /* renamed from: b, reason: collision with root package name */
-        private final Method f15346b;
+        private final Method f16133b;
 
         public a(Object obj, Method method) {
-            this.f15345a = obj;
-            this.f15346b = method;
+            this.f16132a = obj;
+            this.f16133b = method;
         }
 
         @Override // com.anythink.core.common.n.b.a.j.c
         public final List<Certificate> a(List<Certificate> list, String str) {
             try {
-                return (List) this.f15346b.invoke(this.f15345a, (X509Certificate[]) list.toArray(new X509Certificate[list.size()]), "RSA", str);
+                return (List) this.f16133b.invoke(this.f16132a, (X509Certificate[]) list.toArray(new X509Certificate[list.size()]), "RSA", str);
             } catch (IllegalAccessException e9) {
                 throw new AssertionError(e9);
             } catch (InvocationTargetException e10) {
@@ -85,20 +85,20 @@ class b extends com.anythink.core.common.n.b.a.g.c {
     public static final class c implements f {
 
         /* renamed from: a, reason: collision with root package name */
-        private final X509TrustManager f15350a;
+        private final X509TrustManager f16137a;
 
         /* renamed from: b, reason: collision with root package name */
-        private final Method f15351b;
+        private final Method f16138b;
 
         public c(X509TrustManager x509TrustManager, Method method) {
-            this.f15351b = method;
-            this.f15350a = x509TrustManager;
+            this.f16138b = method;
+            this.f16137a = x509TrustManager;
         }
 
         @Override // com.anythink.core.common.n.b.a.j.f
         public final X509Certificate a(X509Certificate x509Certificate) {
             try {
-                TrustAnchor trustAnchor = (TrustAnchor) this.f15351b.invoke(this.f15350a, x509Certificate);
+                TrustAnchor trustAnchor = (TrustAnchor) this.f16138b.invoke(this.f16137a, x509Certificate);
                 if (trustAnchor != null) {
                     return trustAnchor.getTrustedCert();
                 }
@@ -117,20 +117,20 @@ class b extends com.anythink.core.common.n.b.a.g.c {
                 return false;
             }
             c cVar = (c) obj;
-            return this.f15350a.equals(cVar.f15350a) && this.f15351b.equals(cVar.f15351b);
+            return this.f16137a.equals(cVar.f16137a) && this.f16138b.equals(cVar.f16138b);
         }
 
         public final int hashCode() {
-            return (this.f15351b.hashCode() * 31) + this.f15350a.hashCode();
+            return (this.f16138b.hashCode() * 31) + this.f16137a.hashCode();
         }
     }
 
     public b(Class<?> cls, Class<?> cls2, Method method, Method method2, Method method3, Method method4) {
-        this.f15339d = cls;
-        this.f15340e = cls2;
-        this.f15341f = method;
-        this.f15342g = method2;
-        this.f15343h = method3;
+        this.f16126d = cls;
+        this.f16127e = cls2;
+        this.f16128f = method;
+        this.f16129g = method2;
+        this.f16130h = method3;
         this.i = method4;
     }
 
@@ -191,26 +191,26 @@ class b extends com.anythink.core.common.n.b.a.g.c {
     public static final class C0087b {
 
         /* renamed from: a, reason: collision with root package name */
-        private final Method f15347a;
+        private final Method f16134a;
 
         /* renamed from: b, reason: collision with root package name */
-        private final Method f15348b;
+        private final Method f16135b;
 
         /* renamed from: c, reason: collision with root package name */
-        private final Method f15349c;
+        private final Method f16136c;
 
         private C0087b(Method method, Method method2, Method method3) {
-            this.f15347a = method;
-            this.f15348b = method2;
-            this.f15349c = method3;
+            this.f16134a = method;
+            this.f16135b = method2;
+            this.f16136c = method3;
         }
 
         public final Object a(String str) {
-            Method method = this.f15347a;
+            Method method = this.f16134a;
             if (method != null) {
                 try {
                     Object invoke = method.invoke(null, new Object[0]);
-                    this.f15348b.invoke(invoke, str);
+                    this.f16135b.invoke(invoke, str);
                     return invoke;
                 } catch (Exception unused) {
                 }
@@ -221,7 +221,7 @@ class b extends com.anythink.core.common.n.b.a.g.c {
         public final boolean a(Object obj) {
             if (obj != null) {
                 try {
-                    this.f15349c.invoke(obj, new Object[0]);
+                    this.f16136c.invoke(obj, new Object[0]);
                     return true;
                 } catch (Exception unused) {
                 }
@@ -257,7 +257,7 @@ class b extends com.anythink.core.common.n.b.a.g.c {
 
     @Override // com.anythink.core.common.n.b.a.g.c
     public final X509TrustManager a(SSLSocketFactory sSLSocketFactory) {
-        Object a9 = com.anythink.core.common.n.b.a.g.c.a(sSLSocketFactory, this.f15339d, "sslParameters");
+        Object a9 = com.anythink.core.common.n.b.a.g.c.a(sSLSocketFactory, this.f16126d, "sslParameters");
         if (a9 == null) {
             try {
                 a9 = com.anythink.core.common.n.b.a.g.c.a(sSLSocketFactory, Class.forName("com.google.android.gms.org.conscrypt.SSLParametersImpl", false, sSLSocketFactory.getClass().getClassLoader()), "sslParameters");
@@ -288,11 +288,11 @@ class b extends com.anythink.core.common.n.b.a.g.c {
 
     @Override // com.anythink.core.common.n.b.a.g.c
     public void a(SSLSocket sSLSocket, String str, List<ab> list) {
-        if (this.f15340e.isInstance(sSLSocket)) {
+        if (this.f16127e.isInstance(sSLSocket)) {
             if (str != null) {
                 try {
-                    this.f15341f.invoke(sSLSocket, Boolean.TRUE);
-                    this.f15342g.invoke(sSLSocket, str);
+                    this.f16128f.invoke(sSLSocket, Boolean.TRUE);
+                    this.f16129g.invoke(sSLSocket, str);
                 } catch (IllegalAccessException e9) {
                     e = e9;
                     throw new AssertionError(e);
@@ -328,11 +328,11 @@ class b extends com.anythink.core.common.n.b.a.g.c {
 
     @Override // com.anythink.core.common.n.b.a.g.c
     public String a(SSLSocket sSLSocket) {
-        if (!this.f15340e.isInstance(sSLSocket)) {
+        if (!this.f16127e.isInstance(sSLSocket)) {
             return null;
         }
         try {
-            byte[] bArr = (byte[]) this.f15343h.invoke(sSLSocket, new Object[0]);
+            byte[] bArr = (byte[]) this.f16130h.invoke(sSLSocket, new Object[0]);
             if (bArr != null) {
                 return new String(bArr, StandardCharsets.UTF_8);
             }
@@ -345,38 +345,38 @@ class b extends com.anythink.core.common.n.b.a.g.c {
     @Override // com.anythink.core.common.n.b.a.g.c
     public final void a(int i, String str, Throwable th) {
         int min;
-        int i6 = i != 5 ? 3 : 5;
+        int i4 = i != 5 ? 3 : 5;
         if (th != null) {
             str = str + '\n' + Log.getStackTraceString(th);
         }
         int length = str.length();
-        int i9 = 0;
-        while (i9 < length) {
-            int indexOf = str.indexOf(10, i9);
+        int i6 = 0;
+        while (i6 < length) {
+            int indexOf = str.indexOf(10, i6);
             if (indexOf == -1) {
                 indexOf = length;
             }
             while (true) {
-                min = Math.min(indexOf, i9 + f15338c);
-                Log.println(i6, aa.f15462a, str.substring(i9, min));
+                min = Math.min(indexOf, i6 + f16125c);
+                Log.println(i4, aa.f16249a, str.substring(i6, min));
                 if (min >= indexOf) {
                     break;
                 } else {
-                    i9 = min;
+                    i6 = min;
                 }
             }
-            i9 = min + 1;
+            i6 = min + 1;
         }
     }
 
     @Override // com.anythink.core.common.n.b.a.g.c
     public final Object a(String str) {
-        return this.f15344j.a(str);
+        return this.f16131j.a(str);
     }
 
     @Override // com.anythink.core.common.n.b.a.g.c
     public final void a(String str, Object obj) {
-        if (this.f15344j.a(obj)) {
+        if (this.f16131j.a(obj)) {
             return;
         }
         a(5, str, (Throwable) null);

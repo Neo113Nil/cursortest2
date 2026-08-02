@@ -23,10 +23,10 @@ public final class V5 extends Handler {
     public final AudienceNetworkRemoteServiceApi.PackageVerifier A02;
     public final X9 A03;
 
-    public static String A03(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) + d.f10801c);
+    public static String A03(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) + d.f11587c);
         }
         return new String(copyOfRange);
     }
@@ -60,16 +60,16 @@ public final class V5 extends Handler {
         return bundle;
     }
 
-    private C1954id A01(C1950iY c1950iY, String str) {
-        C1954id c1954id = new C1954id(c1950iY, this.A03, str);
-        c1954id.A0G(c1950iY.A0B(), c1950iY.A07());
-        return c1954id;
+    private C1974id A01(C1970iY c1970iY, String str) {
+        C1974id c1974id = new C1974id(c1970iY, this.A03, str);
+        c1974id.A0G(c1970iY.A0B(), c1970iY.A07());
+        return c1974id;
     }
 
-    private C1951iZ A02(C1935iI c1935iI, String str) {
-        C1951iZ c1951iZ = new C1951iZ(c1935iI, this.A03, str);
-        c1951iZ.A0J(c1935iI.A05, c1935iI.A02, c1935iI.A08);
-        return c1951iZ;
+    private C1971iZ A02(C1955iI c1955iI, String str) {
+        C1971iZ c1971iZ = new C1971iZ(c1955iI, this.A03, str);
+        c1971iZ.A0J(c1955iI.A05, c1955iI.A02, c1955iI.A08);
+        return c1971iZ;
     }
 
     @Override // android.os.Handler
@@ -94,7 +94,7 @@ public final class V5 extends Handler {
             if (callingAppPackage == null) {
                 return;
             }
-            C1840gi A052 = C1213Rp.A05(this.A00, callingAppPackage);
+            C1860gi A052 = C1233Rp.A05(this.A00, callingAppPackage);
             A052.A0F().AJS(msg.getData().getBoolean(A03(6, 21, 22), false));
             if (this.A02 != null) {
                 str = this.A02.verifyPackage(this.A00, msg, msg.getData().getString(A03(40, 14, 88)));
@@ -117,11 +117,11 @@ public final class V5 extends Handler {
                     if (A042 == null) {
                         A042 = X9.A00().A05(callingAppPackage, messenger, str);
                     }
-                    C1950iY intAdModel = OX.A04(A052, msg.getData(), str);
+                    C1970iY intAdModel = OX.A04(A052, msg.getData(), str);
                     if (A042.A00 == null) {
                         A042.A00 = A01(intAdModel, callingAppPackage);
-                    } else if (A042.A00 instanceof C1954id) {
-                        ((C1954id) A042.A00).A0G(intAdModel.A0B(), intAdModel.A07());
+                    } else if (A042.A00 instanceof C1974id) {
+                        ((C1974id) A042.A00).A0G(intAdModel.A0B(), intAdModel.A07());
                     }
                     X9.A00().A07(1011, callingAppPackage, A00(), messenger);
                     return;
@@ -137,23 +137,23 @@ public final class V5 extends Handler {
                     if (A043 == null) {
                         A043 = X9.A00().A05(callingAppPackage, messenger, str);
                     }
-                    C1935iI A053 = OX.A05(A052, msg.getData(), str);
+                    C1955iI A053 = OX.A05(A052, msg.getData(), str);
                     if (A043.A00 == null) {
                         A043.A00 = A02(A053, callingAppPackage);
-                    } else if (A043.A00 instanceof C1951iZ) {
-                        C1951iZ c1951iZ = (C1951iZ) A043.A00;
+                    } else if (A043.A00 instanceof C1971iZ) {
+                        C1971iZ c1971iZ = (C1971iZ) A043.A00;
                         String adId = A053.A05;
-                        c1951iZ.A0J(adId, A053.A02, A053.A08);
+                        c1971iZ.A0J(adId, A053.A02, A053.A08);
                     }
                     X9.A00().A07(AdError.INTERNAL_ERROR_CODE, callingAppPackage, A00(), messenger);
                     return;
                 case AdError.INTERNAL_ERROR_2003 /* 2003 */:
                     OG A03 = X9.A00().A03(callingAppPackage);
-                    if (A03 instanceof C1951iZ) {
+                    if (A03 instanceof C1971iZ) {
                         RewardData A01 = OY.A01(msg.getData());
-                        C1951iZ c1951iZ2 = (C1951iZ) A03;
+                        C1971iZ c1971iZ2 = (C1971iZ) A03;
                         if (A01 != null) {
-                            c1951iZ2.A0I(A01);
+                            c1971iZ2.A0I(A01);
                             return;
                         }
                         return;

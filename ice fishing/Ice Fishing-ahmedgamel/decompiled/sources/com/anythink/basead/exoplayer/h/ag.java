@@ -6,10 +6,10 @@ import android.net.Uri;
 public final class ag extends com.anythink.basead.exoplayer.t {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Uri f7519a;
+    public final Uri f8305a;
 
     public ag(String str, Uri uri) {
         super(str);
-        this.f7519a = uri;
+        this.f8305a = uri;
     }
 }

@@ -6,20 +6,20 @@ import com.facebook.ads.AudienceNetworkAds;
 public final class c implements Runnable {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ AudienceNetworkAds.InitListener f23512n;
+    public final /* synthetic */ AudienceNetworkAds.InitListener f24297n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final /* synthetic */ Throwable f23513u;
+    public final /* synthetic */ Throwable f24298u;
 
     public c(AudienceNetworkAds.InitListener initListener, Throwable th) {
-        this.f23512n = initListener;
-        this.f23513u = th;
+        this.f24297n = initListener;
+        this.f24298u = th;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
         AudienceNetworkAds.InitResult createErrorInitResult;
-        createErrorInitResult = DynamicLoaderFactory.createErrorInitResult(this.f23513u);
-        this.f23512n.onInitialized(createErrorInitResult);
+        createErrorInitResult = DynamicLoaderFactory.createErrorInitResult(this.f24298u);
+        this.f24297n.onInitialized(createErrorInitResult);
     }
 }

@@ -20,22 +20,22 @@ public final class ZK extends LinearLayout {
     public final ImageView A03;
     public final LinearLayout A04;
     public final TextView A05;
-    public final C1840gi A06;
-    public final C1521bX A07;
+    public final C1860gi A06;
+    public final C1541bX A07;
 
-    public ZK(C1840gi c1840gi, int i, boolean z3) {
-        super(c1840gi);
+    public ZK(C1860gi c1860gi, int i, boolean z6) {
+        super(c1860gi);
         this.A01 = false;
-        this.A06 = c1840gi;
-        this.A02 = z3;
-        this.A03 = new ImageView(c1840gi);
+        this.A06 = c1860gi;
+        this.A02 = z6;
+        this.A03 = new ImageView(c1860gi);
         this.A03.setPadding(A09, A09, A09, A09);
-        this.A07 = new C1521bX(c1840gi, this.A02);
+        this.A07 = new C1541bX(c1860gi, this.A02);
         this.A07.setProgress(0.0f);
         this.A07.setPadding(A09, A09, A09, A09);
-        this.A05 = new TextView(c1840gi);
+        this.A05 = new TextView(c1860gi);
         setOrientation(0);
-        this.A04 = new LinearLayout(c1840gi);
+        this.A04 = new LinearLayout(c1860gi);
         this.A00 = i;
         A00();
     }
@@ -58,36 +58,36 @@ public final class ZK extends LinearLayout {
 
     private void A01() {
         int i;
-        C1521bX c1521bX = this.A07;
-        int i6 = 8;
+        C1541bX c1541bX = this.A07;
+        int i4 = 8;
         if (this.A00 == 2 || this.A00 == 6) {
             i = this.A01 ? 4 : 0;
         } else {
             i = 8;
         }
-        c1521bX.setVisibility(i);
+        c1541bX.setVisibility(i);
         ImageView imageView = this.A03;
         if (this.A00 == 5) {
-            i6 = 4;
+            i4 = 4;
         } else if (this.A00 != 2 && this.A00 != 6) {
-            i6 = 0;
+            i4 = 0;
         }
-        imageView.setVisibility(i6);
+        imageView.setVisibility(i4);
     }
 
     public final void A02() {
         setVisibility(4);
     }
 
-    public final void A03(float f3, int i) {
-        this.A07.A02(f3, i);
+    public final void A03(float f2, int i) {
+        this.A07.A02(f2, i);
     }
 
-    public final void A04(C1098Na c1098Na, boolean z3, boolean z6) {
-        int A05 = c1098Na.A05(z3);
+    public final void A04(C1118Na c1118Na, boolean z6, boolean z9) {
+        int A05 = c1118Na.A05(z6);
         this.A07.A03(P3.A02(A05, 77), A05, 110, true);
         this.A03.setColorFilter(A05);
-        if (z6) {
+        if (z9) {
             TextView textView = this.A05;
             int accentColor = P3.A02(-1, 110);
             textView.setTextColor(accentColor);
@@ -118,8 +118,8 @@ public final class ZK extends LinearLayout {
         }
     }
 
-    public void setProgress(float f3) {
-        this.A07.setProgressWithAnimation(f3);
+    public void setProgress(float f2) {
+        this.A07.setProgressWithAnimation(f2);
     }
 
     public void setProgressClickListener(View.OnClickListener onClickListener) {
@@ -130,13 +130,13 @@ public final class ZK extends LinearLayout {
         this.A07.setImage(ym);
     }
 
-    public void setProgressImmediate(float f3) {
+    public void setProgressImmediate(float f2) {
         this.A07.clearAnimation();
-        this.A07.setProgress(f3);
+        this.A07.setProgress(f2);
     }
 
-    public void setProgressSpinnerInvisible(boolean z3) {
-        this.A01 = z3;
+    public void setProgressSpinnerInvisible(boolean z6) {
+        this.A01 = z6;
         A01();
     }
 
@@ -146,7 +146,7 @@ public final class ZK extends LinearLayout {
         this.A00 = i;
         A01();
         setVisibility(0);
-        this.A03.setImageAlpha(p.f8473b);
+        this.A03.setImageAlpha(p.f9259b);
         this.A03.setPadding(A09, A09, A09, A09);
         switch (i) {
             case 0:
@@ -204,7 +204,7 @@ public final class ZK extends LinearLayout {
         this.A05.setVisibility(TextUtils.isEmpty(str) ? 8 : 0);
     }
 
-    public void setToolbarMessageEnabled(boolean z3) {
-        this.A05.setVisibility(z3 ? 0 : 4);
+    public void setToolbarMessageEnabled(boolean z6) {
+        this.A05.setVisibility(z6 ? 0 : 4);
     }
 }

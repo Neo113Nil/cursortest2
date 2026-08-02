@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /* loaded from: classes2.dex */
-public abstract class VK extends AbstractC4263zK {
+public abstract class VK extends AbstractC4286zK {
     private static final int zza = Integer.MIN_VALUE;
     private static final int zzb = Integer.MAX_VALUE;
     private static final Map<Class<?>, VK> zzd = new ConcurrentHashMap();
@@ -19,12 +19,12 @@ public abstract class VK extends AbstractC4263zK {
     public VK() {
         this.zzq = 0;
         this.zzc = -1;
-        this.zzt = LL.f26106f;
+        this.zzt = LL.f26906f;
     }
 
-    public static Object j(Method method, AbstractC4263zK abstractC4263zK, Object... objArr) {
+    public static Object j(Method method, AbstractC4286zK abstractC4286zK, Object... objArr) {
         try {
-            return method.invoke(abstractC4263zK, objArr);
+            return method.invoke(abstractC4286zK, objArr);
         } catch (IllegalAccessException e9) {
             throw new RuntimeException("Couldn't use Java reflection to implement protocol message reflection.", e9);
         } catch (InvocationTargetException e10) {
@@ -39,47 +39,47 @@ public abstract class VK extends AbstractC4263zK {
         }
     }
 
-    public static C3509lL k(InterfaceC2973bL interfaceC2973bL) {
-        C3509lL c3509lL = (C3509lL) interfaceC2973bL;
-        int i = c3509lL.f31761v;
-        return c3509lL.D(i + i);
+    public static C3532lL k(InterfaceC2996bL interfaceC2996bL) {
+        C3532lL c3532lL = (C3532lL) interfaceC2996bL;
+        int i = c3532lL.f32541v;
+        return c3532lL.D(i + i);
     }
 
     public static VK l(VK vk, W7.b bVar, PK pk) {
         VK p9 = vk.p();
         try {
-            DL a9 = C4156xL.f34990c.a(p9.getClass());
-            C4242z c4242z = (C4242z) bVar.f3416v;
-            if (c4242z == null) {
-                c4242z = new C4242z(bVar);
+            DL a9 = C4179xL.f35771c.a(p9.getClass());
+            C4265z c4265z = (C4265z) bVar.f3578v;
+            if (c4265z == null) {
+                c4265z = new C4265z(bVar);
             }
-            a9.b(p9, c4242z, pk);
+            a9.b(p9, c4265z, pk);
             a9.g(p9);
             return p9;
         } catch (KL e9) {
-            throw new C3295hL(e9.getMessage());
-        } catch (C3295hL e10) {
-            if (e10.f30760n) {
-                throw new C3295hL(e10.getMessage(), e10);
+            throw new C3318hL(e9.getMessage());
+        } catch (C3318hL e10) {
+            if (e10.f31526n) {
+                throw new C3318hL(e10.getMessage(), e10);
             }
             throw e10;
         } catch (IOException e11) {
-            if (e11.getCause() instanceof C3295hL) {
-                throw ((C3295hL) e11.getCause());
+            if (e11.getCause() instanceof C3318hL) {
+                throw ((C3318hL) e11.getCause());
             }
-            throw new C3295hL(e11.getMessage(), e11);
+            throw new C3318hL(e11.getMessage(), e11);
         } catch (RuntimeException e12) {
-            if (e12.getCause() instanceof C3295hL) {
-                throw ((C3295hL) e12.getCause());
+            if (e12.getCause() instanceof C3318hL) {
+                throw ((C3318hL) e12.getCause());
             }
             throw e12;
         }
     }
 
     public static VK m(VK vk, JK jk, PK pk) {
-        W7.b o6 = jk.o();
-        VK l9 = l(vk, o6, pk);
-        o6.k(0);
+        W7.b o4 = jk.o();
+        VK l9 = l(vk, o4, pk);
+        o4.k(0);
         z(l9);
         return l9;
     }
@@ -117,7 +117,7 @@ public abstract class VK extends AbstractC4263zK {
         zzd.put(cls, vk);
     }
 
-    public static final boolean x(VK vk, boolean z3) {
+    public static final boolean x(VK vk, boolean z6) {
         byte byteValue = ((Byte) vk.w(1, null)).byteValue();
         if (byteValue == 1) {
             return true;
@@ -125,8 +125,8 @@ public abstract class VK extends AbstractC4263zK {
         if (byteValue == 0) {
             return false;
         }
-        boolean e9 = C4156xL.f34990c.a(vk.getClass()).e(vk);
-        if (z3) {
+        boolean e9 = C4179xL.f35771c.a(vk.getClass()).e(vk);
+        if (z6) {
             vk.w(2, true == e9 ? vk : null);
         }
         return e9;
@@ -138,54 +138,54 @@ public abstract class VK extends AbstractC4263zK {
         }
         VK p9 = vk.p();
         try {
-            DL a9 = C4156xL.f34990c.a(p9.getClass());
+            DL a9 = C4179xL.f35771c.a(p9.getClass());
             a9.f(p9, bArr, 0, i, new CK(pk));
             a9.g(p9);
             return p9;
         } catch (KL e9) {
-            throw new C3295hL(e9.getMessage());
-        } catch (C3295hL e10) {
-            if (e10.f30760n) {
-                throw new C3295hL(e10.getMessage(), e10);
+            throw new C3318hL(e9.getMessage());
+        } catch (C3318hL e10) {
+            if (e10.f31526n) {
+                throw new C3318hL(e10.getMessage(), e10);
             }
             throw e10;
         } catch (IOException e11) {
-            if (e11.getCause() instanceof C3295hL) {
-                throw ((C3295hL) e11.getCause());
+            if (e11.getCause() instanceof C3318hL) {
+                throw ((C3318hL) e11.getCause());
             }
-            throw new C3295hL(e11.getMessage(), e11);
+            throw new C3318hL(e11.getMessage(), e11);
         } catch (IndexOutOfBoundsException unused) {
-            throw new C3295hL("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.");
+            throw new C3318hL("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.");
         }
     }
 
     public static void z(VK vk) {
         if (vk != null && !x(vk, true)) {
-            throw new C3295hL(new KL().getMessage());
+            throw new C3318hL(new KL().getMessage());
         }
     }
 
-    @Override // com.google.android.gms.internal.ads.AbstractC4263zK
+    @Override // com.google.android.gms.internal.ads.AbstractC4286zK
     public final int d(DL dl) {
         int i;
-        int i6;
+        int i4;
         if (h()) {
             if (dl == null) {
-                i6 = C4156xL.f34990c.a(getClass()).i(this);
+                i4 = C4179xL.f35771c.a(getClass()).i(this);
             } else {
-                i6 = dl.i(this);
+                i4 = dl.i(this);
             }
-            if (i6 >= 0) {
-                return i6;
+            if (i4 >= 0) {
+                return i4;
             }
-            throw new IllegalStateException(D.y.m(i6, "serialized size must be non-negative, was ", new StringBuilder(String.valueOf(i6).length() + 42)));
+            throw new IllegalStateException(D.x.k(i4, "serialized size must be non-negative, was ", new StringBuilder(String.valueOf(i4).length() + 42)));
         }
-        int i9 = this.zzc;
-        if ((i9 & Integer.MAX_VALUE) != Integer.MAX_VALUE) {
-            return i9 & Integer.MAX_VALUE;
+        int i6 = this.zzc;
+        if ((i6 & Integer.MAX_VALUE) != Integer.MAX_VALUE) {
+            return i6 & Integer.MAX_VALUE;
         }
         if (dl == null) {
-            i = C4156xL.f34990c.a(getClass()).i(this);
+            i = C4179xL.f35771c.a(getClass()).i(this);
         } else {
             i = dl.i(this);
         }
@@ -200,12 +200,12 @@ public abstract class VK extends AbstractC4263zK {
         if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
-        return C4156xL.f34990c.a(getClass()).h(this, (VK) obj);
+        return C4179xL.f35771c.a(getClass()).h(this, (VK) obj);
     }
 
     public final void g(int i) {
         if (i < 0) {
-            throw new IllegalStateException(D.y.m(i, "serialized size must be non-negative, was ", new StringBuilder(String.valueOf(i).length() + 42)));
+            throw new IllegalStateException(D.x.k(i, "serialized size must be non-negative, was ", new StringBuilder(String.valueOf(i).length() + 42)));
         }
         this.zzc = i | (this.zzc & Integer.MIN_VALUE);
     }
@@ -216,10 +216,10 @@ public abstract class VK extends AbstractC4263zK {
 
     public final int hashCode() {
         if (h()) {
-            return C4156xL.f34990c.a(getClass()).j(this);
+            return C4179xL.f35771c.a(getClass()).j(this);
         }
         if (this.zzq == 0) {
-            this.zzq = C4156xL.f34990c.a(getClass()).j(this);
+            this.zzq = C4179xL.f35771c.a(getClass()).j(this);
         }
         return this.zzq;
     }
@@ -228,8 +228,8 @@ public abstract class VK extends AbstractC4263zK {
         this.zzc &= Integer.MAX_VALUE;
     }
 
-    public final InterfaceC4048vL o() {
-        return (InterfaceC4048vL) w(7, null);
+    public final InterfaceC4071vL o() {
+        return (InterfaceC4071vL) w(7, null);
     }
 
     public final VK p() {
@@ -237,7 +237,7 @@ public abstract class VK extends AbstractC4263zK {
     }
 
     public final void q() {
-        C4156xL.f34990c.a(getClass()).g(this);
+        C4179xL.f35771c.a(getClass()).g(this);
         i();
     }
 
@@ -253,21 +253,21 @@ public abstract class VK extends AbstractC4263zK {
 
     public final String toString() {
         String obj = super.toString();
-        char[] cArr = AbstractC3779qL.f33235a;
+        char[] cArr = AbstractC3802qL.f34019a;
         StringBuilder sb = new StringBuilder();
         sb.append("# ");
         sb.append(obj);
-        AbstractC3779qL.b(this, sb, 0);
+        AbstractC3802qL.b(this, sb, 0);
         return sb.toString();
     }
 
     public final void v(OK ok) {
-        DL a9 = C4156xL.f34990c.a(getClass());
-        C4178xq c4178xq = (C4178xq) ok.f26598n;
-        if (c4178xq == null) {
-            c4178xq = new C4178xq(ok);
+        DL a9 = C4179xL.f35771c.a(getClass());
+        C4201xq c4201xq = (C4201xq) ok.f27380n;
+        if (c4201xq == null) {
+            c4201xq = new C4201xq(ok);
         }
-        a9.a(this, c4178xq);
+        a9.a(this, c4201xq);
     }
 
     public abstract Object w(int i, VK vk);

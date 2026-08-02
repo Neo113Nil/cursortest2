@@ -54,7 +54,7 @@ public final class m {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final int[] getCutoutAndStatusBarInsets(Activity activity) {
-        float f3;
+        float f2;
         float f9;
         DisplayCutout cutout;
         int safeInsetRight;
@@ -65,15 +65,15 @@ public final class m {
         float top = (windowVisibleDisplayFrame.top - findViewById.getTop()) / Resources.getSystem().getDisplayMetrics().density;
         float bottom = (findViewById.getBottom() - windowVisibleDisplayFrame.bottom) / Resources.getSystem().getDisplayMetrics().density;
         if (Build.VERSION.SDK_INT != 29 || cutout == null) {
-            f3 = 0.0f;
+            f2 = 0.0f;
             f9 = 0.0f;
         } else {
             safeInsetRight = cutout.getSafeInsetRight();
-            f3 = safeInsetRight / Resources.getSystem().getDisplayMetrics().density;
+            f2 = safeInsetRight / Resources.getSystem().getDisplayMetrics().density;
             safeInsetLeft = cutout.getSafeInsetLeft();
             f9 = safeInsetLeft / Resources.getSystem().getDisplayMetrics().density;
         }
-        return new int[]{com.bumptech.glide.h.k(top), com.bumptech.glide.h.k(bottom), com.bumptech.glide.h.k(f3), com.bumptech.glide.h.k(f9)};
+        return new int[]{d6.c.j(top), d6.c.j(bottom), d6.c.j(f2), d6.c.j(f9)};
     }
 
     public final int getFullbleedWindowWidth(Activity activity) {

@@ -20,10 +20,10 @@ public final class CX {
     public final Requirements A05;
     public final CT A06;
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 105);
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 105);
         }
         return new String(copyOfRange);
     }
@@ -61,7 +61,7 @@ public final class CX {
     }
 
     private void A05() {
-        ConnectivityManager connectivityManager = (ConnectivityManager) AbstractC06243y.A01((ConnectivityManager) this.A03.getSystemService(A02(311, 12, 37)));
+        ConnectivityManager connectivityManager = (ConnectivityManager) AbstractC06443y.A01((ConnectivityManager) this.A03.getSystemService(A02(311, 12, 37)));
         this.A02 = new CW(this);
         connectivityManager.registerDefaultNetworkCallback(this.A02);
     }
@@ -95,7 +95,7 @@ public final class CX {
         }
         if (this.A05.A0B()) {
             intentFilter.addAction(A02(91, 40, 111));
-            intentFilter.addAction(A02(a.f21732V, 39, 17));
+            intentFilter.addAction(A02(a.f22519V, 39, 17));
         }
         this.A01 = new CS(this);
         this.A03.registerReceiver(this.A01, intentFilter, null, this.A04);

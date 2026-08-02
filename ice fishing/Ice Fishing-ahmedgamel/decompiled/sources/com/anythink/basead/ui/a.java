@@ -34,7 +34,7 @@ public interface a {
 
     void setAutoPlay(String str);
 
-    void setIsMuted(boolean z3);
+    void setIsMuted(boolean z6);
 
     void setPlayerOnClickListener(View.OnClickListener onClickListener);
 

@@ -9,40 +9,40 @@ import java.util.Map;
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static volatile a f10757a;
+    private static volatile a f11543a;
 
     /* renamed from: b, reason: collision with root package name */
-    private Map<String, c> f10758b = new HashMap();
+    private Map<String, c> f11544b = new HashMap();
 
     private a() {
     }
 
     public static a a() {
-        if (f10757a == null) {
+        if (f11543a == null) {
             synchronized (a.class) {
                 try {
-                    if (f10757a == null) {
-                        f10757a = new a();
+                    if (f11543a == null) {
+                        f11543a = new a();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f10757a;
+        return f11543a;
     }
 
     public final void a(String str, c cVar) {
         if (TextUtils.isEmpty(str) || cVar == null) {
             return;
         }
-        this.f10758b.put(str, cVar);
+        this.f11544b.put(str, cVar);
     }
 
     public final c a(String str) {
         if (TextUtils.isEmpty(str)) {
             return null;
         }
-        return this.f10758b.remove(str);
+        return this.f11544b.remove(str);
     }
 }

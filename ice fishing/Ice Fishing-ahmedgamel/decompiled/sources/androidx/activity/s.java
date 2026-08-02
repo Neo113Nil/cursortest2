@@ -2,33 +2,35 @@ package androidx.activity;
 
 import O.B0;
 import O.C0;
+import a.AbstractC0426a;
 import android.os.Build;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowInsetsController;
+import i1.C4585b;
 
 /* loaded from: classes.dex */
-public final class s extends com.bumptech.glide.f {
-    @Override // com.bumptech.glide.f
-    public void z(I statusBarStyle, I navigationBarStyle, Window window, View view, boolean z3, boolean z6) {
+public final class s extends com.bumptech.glide.g {
+    @Override // com.bumptech.glide.g
+    public void z(I statusBarStyle, I navigationBarStyle, Window window, View view, boolean z6, boolean z9) {
         B0 c02;
         WindowInsetsController insetsController;
         kotlin.jvm.internal.h.e(statusBarStyle, "statusBarStyle");
         kotlin.jvm.internal.h.e(navigationBarStyle, "navigationBarStyle");
         kotlin.jvm.internal.h.e(window, "window");
         kotlin.jvm.internal.h.e(view, "view");
-        com.bumptech.glide.d.j(window, false);
-        window.setStatusBarColor(z3 ? statusBarStyle.f4432b : statusBarStyle.f4431a);
-        window.setNavigationBarColor(navigationBarStyle.f4432b);
-        I0.j jVar = new I0.j(view);
+        AbstractC0426a.n(window, false);
+        window.setStatusBarColor(z6 ? statusBarStyle.f4400b : statusBarStyle.f4399a);
+        window.setNavigationBarColor(navigationBarStyle.f4400b);
+        C4585b c4585b = new C4585b(view);
         int i = Build.VERSION.SDK_INT;
         if (i >= 30) {
             insetsController = window.getInsetsController();
-            c02 = new B0(insetsController, jVar);
-            c02.f2031b = window;
+            c02 = new B0(insetsController, c4585b);
+            c02.f2119b = window;
         } else {
-            c02 = i >= 26 ? new C0(window, jVar) : new B0(window, jVar);
+            c02 = i >= 26 ? new C0(window, c4585b) : new B0(window, c4585b);
         }
-        c02.x(!z3);
+        c02.j(!z6);
     }
 }

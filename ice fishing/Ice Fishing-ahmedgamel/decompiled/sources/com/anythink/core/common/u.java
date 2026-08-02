@@ -12,35 +12,35 @@ import org.json.JSONObject;
 public class u {
 
     /* renamed from: a, reason: collision with root package name */
-    private static volatile u f16445a;
+    private static volatile u f17232a;
 
     /* renamed from: b, reason: collision with root package name */
-    private ConcurrentHashMap<String, bn> f16446b = new ConcurrentHashMap<>(4);
+    private ConcurrentHashMap<String, bn> f17233b = new ConcurrentHashMap<>(4);
 
     private u() {
     }
 
     public static u a() {
-        if (f16445a == null) {
+        if (f17232a == null) {
             synchronized (u.class) {
                 try {
-                    if (f16445a == null) {
-                        f16445a = new u();
+                    if (f17232a == null) {
+                        f17232a = new u();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16445a;
+        return f17232a;
     }
 
     private synchronized bn h(String str) {
         bn bnVar;
-        bnVar = this.f16446b.get(str);
+        bnVar = this.f17233b.get(str);
         if (bnVar == null) {
             bnVar = new bn();
-            this.f16446b.put(str, bnVar);
+            this.f17233b.put(str, bnVar);
         }
         return bnVar;
     }
@@ -111,8 +111,8 @@ public class u {
         h(str).a(str2, str3);
     }
 
-    public final void a(String str, boolean z3) {
-        h(str).a(z3);
+    public final void a(String str, boolean z6) {
+        h(str).a(z6);
     }
 
     public final void a(String str, Object[] objArr) {

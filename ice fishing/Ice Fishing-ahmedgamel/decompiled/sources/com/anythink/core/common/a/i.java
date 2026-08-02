@@ -12,55 +12,55 @@ import org.json.JSONObject;
 public class i {
 
     /* renamed from: a, reason: collision with root package name */
-    private static String f12178a = "i";
+    private static String f12964a = "i";
 
     /* renamed from: b, reason: collision with root package name */
-    private static i f12179b;
+    private static i f12965b;
 
     /* renamed from: c, reason: collision with root package name */
-    private Context f12180c;
+    private Context f12966c;
 
     /* renamed from: f, reason: collision with root package name */
-    private final String f12183f = "rpr_";
+    private final String f12969f = "rpr_";
 
     /* renamed from: g, reason: collision with root package name */
-    private final String f12184g = "bid_";
+    private final String f12970g = "bid_";
 
     /* renamed from: d, reason: collision with root package name */
-    private final Map<String, a> f12181d = new ConcurrentHashMap();
+    private final Map<String, a> f12967d = new ConcurrentHashMap();
 
     /* renamed from: e, reason: collision with root package name */
-    private final Map<String, Long> f12182e = new ConcurrentHashMap(5);
+    private final Map<String, Long> f12968e = new ConcurrentHashMap(5);
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public long f12185a;
+        public long f12971a;
 
         /* renamed from: b, reason: collision with root package name */
-        public int f12186b;
+        public int f12972b;
 
         /* renamed from: c, reason: collision with root package name */
-        public long f12187c;
+        public long f12973c;
     }
 
     private i(Context context) {
-        this.f12180c = context.getApplicationContext();
+        this.f12966c = context.getApplicationContext();
     }
 
     public static i a(Context context) {
-        if (f12179b == null) {
+        if (f12965b == null) {
             synchronized (i.class) {
                 try {
-                    if (f12179b == null) {
-                        f12179b = new i(context);
+                    if (f12965b == null) {
+                        f12965b = new i(context);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f12179b;
+        return f12965b;
     }
 
     private static String c(String str) {
@@ -72,11 +72,11 @@ public class i {
     }
 
     public final Boolean b(String str) {
-        a aVar = this.f12181d.get(str);
+        a aVar = this.f12967d.get(str);
         if (aVar == null) {
             return null;
         }
-        long j6 = aVar.f12187c;
+        long j6 = aVar.f12973c;
         if (j6 <= 0) {
             return Boolean.FALSE;
         }
@@ -86,26 +86,26 @@ public class i {
 
     public final void a(String str, JSONObject jSONObject) {
         if (jSONObject == null) {
-            this.f12181d.remove(str);
-            af.a(this.f12180c, u.b.f12860o, c(str));
-            af.a(this.f12180c, u.b.f12860o, d(str));
+            this.f12967d.remove(str);
+            af.a(this.f12966c, u.b.f13646o, c(str));
+            af.a(this.f12966c, u.b.f13646o, d(str));
         } else {
-            this.f12181d.put(str, a(jSONObject));
-            af.b(this.f12180c, u.b.f12860o, c(str), jSONObject.toString());
+            this.f12967d.put(str, a(jSONObject));
+            af.b(this.f12966c, u.b.f13646o, c(str), jSONObject.toString());
         }
     }
 
     private static a a(JSONObject jSONObject) {
         a aVar = new a();
-        aVar.f12185a = jSONObject.optLong("bid_inr", 0L);
-        aVar.f12186b = jSONObject.optInt(com.anythink.core.common.k.aa, 2);
-        aVar.f12187c = jSONObject.optLong(com.anythink.core.common.k.f14298V, 0L);
+        aVar.f12971a = jSONObject.optLong("bid_inr", 0L);
+        aVar.f12972b = jSONObject.optInt(com.anythink.core.common.k.aa, 2);
+        aVar.f12973c = jSONObject.optLong(com.anythink.core.common.k.f15084V, 0L);
         return aVar;
     }
 
     public final void a() {
         try {
-            Map<String, ?> b9 = af.b(this.f12180c, u.b.f12860o);
+            Map<String, ?> b9 = af.b(this.f12966c, u.b.f13646o);
             if (b9 == null || b9.size() <= 0) {
                 return;
             }
@@ -117,14 +117,14 @@ public class i {
                         if (value instanceof String) {
                             try {
                                 a a9 = a(new JSONObject((String) value));
-                                this.f12181d.put(key.replace("rpr_", ""), a9);
+                                this.f12967d.put(key.replace("rpr_", ""), a9);
                             } catch (Throwable unused) {
                             }
                         }
                     } else if (key.startsWith("bid_")) {
                         Object value2 = entry.getValue();
                         if (value2 instanceof Long) {
-                            this.f12182e.put(key.replace("bid_", ""), (Long) value2);
+                            this.f12968e.put(key.replace("bid_", ""), (Long) value2);
                         }
                     }
                 }
@@ -134,26 +134,26 @@ public class i {
     }
 
     public final void a(String str, long j6) {
-        this.f12182e.put(str, Long.valueOf(j6));
-        af.a(this.f12180c, u.b.f12860o, d(str), j6);
+        this.f12968e.put(str, Long.valueOf(j6));
+        af.a(this.f12966c, u.b.f13646o, d(str), j6);
     }
 
     public final boolean a(String str) {
         Long l9;
-        a aVar = this.f12181d.get(str);
+        a aVar = this.f12967d.get(str);
         if (aVar == null) {
             return false;
         }
-        long j6 = aVar.f12185a;
-        return j6 > 0 && (l9 = this.f12182e.get(str)) != null && System.currentTimeMillis() - l9.longValue() <= j6;
+        long j6 = aVar.f12971a;
+        return j6 > 0 && (l9 = this.f12968e.get(str)) != null && System.currentTimeMillis() - l9.longValue() <= j6;
     }
 
     public final Boolean a(bv bvVar) {
-        a aVar = this.f12181d.get(bvVar.z());
+        a aVar = this.f12967d.get(bvVar.z());
         if (aVar == null) {
             return null;
         }
-        if (aVar.f12186b == 2) {
+        if (aVar.f12972b == 2) {
             return Boolean.TRUE;
         }
         return Boolean.FALSE;

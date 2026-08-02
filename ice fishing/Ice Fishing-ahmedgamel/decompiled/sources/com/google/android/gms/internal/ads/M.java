@@ -12,38 +12,38 @@ import java.util.List;
 public final class M {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Spatializer f26203a;
+    public final Spatializer f26994a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f26204b;
+    public final boolean f26995b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Handler f26205c;
+    public final Handler f26996c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final K f26206d;
+    public final K f26997d;
 
     public M(Context context, Runnable runnable, Boolean bool) {
         Spatializer spatializer;
         int immersiveAudioLevel;
-        AudioManager b9 = context == null ? null : AbstractC2639Kg.b(context);
+        AudioManager b9 = context == null ? null : AbstractC2659Kg.b(context);
         if (b9 == null || (bool != null && bool.booleanValue())) {
-            this.f26203a = null;
-            this.f26204b = false;
-            this.f26205c = null;
-            this.f26206d = null;
+            this.f26994a = null;
+            this.f26995b = false;
+            this.f26996c = null;
+            this.f26997d = null;
             return;
         }
         spatializer = b9.getSpatializer();
-        this.f26203a = spatializer;
+        this.f26994a = spatializer;
         immersiveAudioLevel = spatializer.getImmersiveAudioLevel();
-        this.f26204b = immersiveAudioLevel != 0;
+        this.f26995b = immersiveAudioLevel != 0;
         Looper myLooper = Looper.myLooper();
         myLooper.getClass();
         Handler handler = new Handler(myLooper);
-        this.f26205c = handler;
+        this.f26996c = handler;
         K k9 = new K(this, runnable);
-        this.f26206d = k9;
+        this.f26997d = k9;
         spatializer.addOnSpatializerStateChangedListener(new L(handler, 0), k9);
     }
 
@@ -51,22 +51,22 @@ public final class M {
         boolean isAvailable;
         Spatializer spatializer;
         boolean isEnabled;
-        Spatializer spatializer2 = this.f26203a;
-        if (spatializer2 != null && this.f26204b) {
+        Spatializer spatializer2 = this.f26994a;
+        if (spatializer2 != null && this.f26995b) {
             isAvailable = spatializer2.isAvailable();
-            if (isAvailable && (spatializer = this.f26203a) != null) {
+            if (isAvailable && (spatializer = this.f26994a) != null) {
                 isEnabled = spatializer.isEnabled();
                 if (isEnabled) {
                     if (Build.VERSION.SDK_INT < 36) {
                         return RB.j(252);
                     }
-                    Spatializer spatializer3 = this.f26203a;
+                    Spatializer spatializer3 = this.f26994a;
                     spatializer3.getClass();
                     return P.c.c(spatializer3).getSpatializedChannelMasks();
                 }
             }
         }
-        PB pb = RB.f27177u;
-        return C3500lC.f31745x;
+        PB pb = RB.f27933u;
+        return C3523lC.f32525x;
     }
 }

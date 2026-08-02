@@ -10,13 +10,13 @@ import org.json.JSONObject;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private d f18525a;
+    private d f19312a;
 
     /* renamed from: com.anythink.expressad.foundation.c.a.a$a, reason: collision with other inner class name */
     public static class C0119a {
 
         /* renamed from: a, reason: collision with root package name */
-        private static a f18526a = new a(0);
+        private static a f19313a = new a(0);
 
         private C0119a() {
         }
@@ -27,19 +27,19 @@ public final class a {
     }
 
     public static a a() {
-        return C0119a.f18526a;
+        return C0119a.f19313a;
     }
 
     private JSONArray b() {
-        return new JSONArray((Collection) this.f18525a.a());
+        return new JSONArray((Collection) this.f19312a.a());
     }
 
     private a() {
-        this.f18525a = new d();
+        this.f19312a = new d();
     }
 
     public final JSONObject a(String str) {
-        JSONObject b9 = this.f18525a.b(str);
+        JSONObject b9 = this.f19312a.b(str);
         if (b9 != null) {
             return b9;
         }
@@ -51,7 +51,7 @@ public final class a {
             Iterator<String> keys = jSONObject.keys();
             while (keys.hasNext()) {
                 String next = keys.next();
-                this.f18525a.a(next, jSONObject.optJSONObject(next));
+                this.f19312a.a(next, jSONObject.optJSONObject(next));
             }
         }
     }

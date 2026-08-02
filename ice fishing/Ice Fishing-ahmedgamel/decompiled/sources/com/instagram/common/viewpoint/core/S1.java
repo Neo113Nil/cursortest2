@@ -10,10 +10,10 @@ import com.facebook.ads.AudienceNetworkActivity;
 /* loaded from: assets/audience_network/classes2.dex */
 public final class S1 {
     public final AudienceNetworkActivity A00;
-    public final C1840gi A01;
+    public final C1860gi A01;
 
-    public S1(C1840gi c1840gi, AudienceNetworkActivity audienceNetworkActivity) {
-        this.A01 = c1840gi;
+    public S1(C1860gi c1860gi, AudienceNetworkActivity audienceNetworkActivity) {
+        this.A01 = c1860gi;
         this.A00 = audienceNetworkActivity;
     }
 
@@ -31,7 +31,7 @@ public final class S1 {
     }
 
     public final void A01() {
-        if ((this.A01.A0H().A01() || C1290Up.A25(this.A01)) && Build.VERSION.SDK_INT >= 24) {
+        if ((this.A01.A0H().A01() || C1310Up.A25(this.A01)) && Build.VERSION.SDK_INT >= 24) {
             new Handler(Looper.getMainLooper()).postDelayed(new Runnable() { // from class: com.facebook.ads.redexgen.X.S0
                 @Override // java.lang.Runnable
                 public final void run() {

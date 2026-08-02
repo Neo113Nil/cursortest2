@@ -1,17 +1,19 @@
 package com.google.android.gms.internal.ads;
 
+import w.AbstractC5128c;
+
 /* loaded from: classes2.dex */
 public final class DA {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f24359a;
+    public final String f25104a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f24360b;
+    public final String f25105b;
 
     public DA(String str, String str2) {
-        this.f24359a = str;
-        this.f24360b = str2;
+        this.f25104a = str;
+        this.f25105b = str2;
     }
 
     public final boolean equals(Object obj) {
@@ -20,10 +22,10 @@ public final class DA {
         }
         if (obj instanceof DA) {
             DA da = (DA) obj;
-            String str = this.f24359a;
-            if (str != null ? str.equals(da.f24359a) : da.f24359a == null) {
-                String str2 = this.f24360b;
-                if (str2 != null ? str2.equals(da.f24360b) : da.f24360b == null) {
+            String str = this.f25104a;
+            if (str != null ? str.equals(da.f25104a) : da.f25104a == null) {
+                String str2 = this.f25105b;
+                if (str2 != null ? str2.equals(da.f25105b) : da.f25105b == null) {
                     return true;
                 }
             }
@@ -32,18 +34,18 @@ public final class DA {
     }
 
     public final int hashCode() {
-        String str = this.f24359a;
+        String str = this.f25104a;
         int hashCode = str == null ? 0 : str.hashCode();
-        String str2 = this.f24360b;
+        String str2 = this.f25105b;
         return (str2 != null ? str2.hashCode() : 0) ^ ((hashCode ^ 1000003) * 1000003);
     }
 
     public final String toString() {
-        String str = this.f24359a;
+        String str = this.f25104a;
         int length = String.valueOf(str).length();
-        String str2 = this.f24360b;
+        String str2 = this.f25105b;
         StringBuilder sb = new StringBuilder(length + 49 + String.valueOf(str2).length() + 1);
-        u1.h.i(sb, "OverlayDisplayUpdateRequest{sessionToken=", str, ", appId=", str2);
+        AbstractC5128c.h(sb, "OverlayDisplayUpdateRequest{sessionToken=", str, ", appId=", str2);
         sb.append("}");
         return sb.toString();
     }

@@ -4,7 +4,7 @@ import Q7.j;
 import java.io.Closeable;
 import java.util.ArrayList;
 import java.util.Comparator;
-import x.C5176n;
+import x.C5175n;
 import y8.h;
 import y8.r;
 
@@ -12,11 +12,11 @@ import y8.r;
 public abstract class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final byte[] f38482a = new byte[0];
+    public static final byte[] f38494a = new byte[0];
 
     static {
-        h hVar = h.f41954w;
-        y8.b.e(C5176n.a("efbbbf"), C5176n.a("feff"), C5176n.a("fffe0000"), C5176n.a("fffe"), C5176n.a("0000feff"));
+        h hVar = h.f41925w;
+        y8.b.e(C5175n.c("efbbbf"), C5175n.c("feff"), C5175n.c("fffe0000"), C5175n.c("fffe"), C5175n.c("0000feff"));
     }
 
     public static final void a(Closeable closeable) {
@@ -29,26 +29,26 @@ public abstract class c {
         }
     }
 
-    public static final int b(int i, int i6, String str, String str2) {
+    public static final int b(int i, int i4, String str, String str2) {
         kotlin.jvm.internal.h.e(str, "<this>");
-        while (i < i6) {
-            if (j.V(str2, str.charAt(i))) {
+        while (i < i4) {
+            if (j.l0(str2, str.charAt(i))) {
                 return i;
             }
             i++;
         }
-        return i6;
+        return i4;
     }
 
-    public static final int c(String str, int i, int i6, char c9) {
+    public static final int c(String str, int i, int i4, char c9) {
         kotlin.jvm.internal.h.e(str, "<this>");
-        while (i < i6) {
+        while (i < i4) {
             if (str.charAt(i) == c9) {
                 return i;
             }
             i++;
         }
-        return i6;
+        return i4;
     }
 
     public static final boolean d(Comparator comparator, String[] strArr, String[] strArr2) {
@@ -69,38 +69,38 @@ public abstract class c {
         int length = str.length();
         for (int i = 0; i < length; i++) {
             char charAt = str.charAt(i);
-            if (kotlin.jvm.internal.h.f(charAt, 31) <= 0 || kotlin.jvm.internal.h.f(charAt, com.anythink.expressad.video.module.a.a.f21728R) >= 0) {
+            if (kotlin.jvm.internal.h.f(charAt, 31) <= 0 || kotlin.jvm.internal.h.f(charAt, com.anythink.expressad.video.module.a.a.f22515R) >= 0) {
                 return i;
             }
         }
         return -1;
     }
 
-    public static final int f(int i, int i6, String str) {
+    public static final int f(int i, int i4, String str) {
         kotlin.jvm.internal.h.e(str, "<this>");
-        while (i < i6) {
+        while (i < i4) {
             char charAt = str.charAt(i);
             if (charAt != '\t' && charAt != '\n' && charAt != '\f' && charAt != '\r' && charAt != ' ') {
                 return i;
             }
             i++;
         }
-        return i6;
+        return i4;
     }
 
-    public static final int g(int i, int i6, String str) {
+    public static final int g(int i, int i4, String str) {
         kotlin.jvm.internal.h.e(str, "<this>");
-        int i9 = i6 - 1;
-        if (i <= i9) {
+        int i6 = i4 - 1;
+        if (i <= i6) {
             while (true) {
-                char charAt = str.charAt(i9);
+                char charAt = str.charAt(i6);
                 if (charAt != '\t' && charAt != '\n' && charAt != '\f' && charAt != '\r' && charAt != ' ') {
-                    return i9 + 1;
+                    return i6 + 1;
                 }
-                if (i9 == i) {
+                if (i6 == i) {
                     break;
                 }
-                i9--;
+                i6--;
             }
         }
         return i;
@@ -168,9 +168,9 @@ public abstract class c {
         }
     }
 
-    public static final String m(int i, int i6, String str) {
-        int f3 = f(i, i6, str);
-        String substring = str.substring(f3, g(f3, i6, str));
+    public static final String m(int i, int i4, String str) {
+        int f2 = f(i, i4, str);
+        String substring = str.substring(f2, g(f2, i4, str));
         kotlin.jvm.internal.h.d(substring, "substring(...)");
         return substring;
     }

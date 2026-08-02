@@ -19,108 +19,108 @@ import java.util.concurrent.TimeUnit;
 public final class g implements com.anythink.core.common.n.b.a.c.c {
 
     /* renamed from: l, reason: collision with root package name */
-    private final w.a f15267l;
+    private final w.a f16054l;
 
     /* renamed from: m, reason: collision with root package name */
-    private final com.anythink.core.common.n.b.a.b.e f15268m;
+    private final com.anythink.core.common.n.b.a.b.e f16055m;
 
     /* renamed from: n, reason: collision with root package name */
-    private final f f15269n;
+    private final f f16056n;
 
     /* renamed from: o, reason: collision with root package name */
-    private volatile i f15270o;
+    private volatile i f16057o;
 
     /* renamed from: p, reason: collision with root package name */
-    private final ab f15271p;
+    private final ab f16058p;
 
     /* renamed from: q, reason: collision with root package name */
-    private volatile boolean f15272q;
+    private volatile boolean f16059q;
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f15258b = "connection";
+    private static final String f16045b = "connection";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f15259c = "host";
+    private static final String f16046c = "host";
 
     /* renamed from: d, reason: collision with root package name */
-    private static final String f15260d = "keep-alive";
+    private static final String f16047d = "keep-alive";
 
     /* renamed from: e, reason: collision with root package name */
-    private static final String f15261e = "proxy-connection";
+    private static final String f16048e = "proxy-connection";
 
     /* renamed from: g, reason: collision with root package name */
-    private static final String f15263g = "te";
+    private static final String f16050g = "te";
 
     /* renamed from: f, reason: collision with root package name */
-    private static final String f15262f = "transfer-encoding";
+    private static final String f16049f = "transfer-encoding";
 
     /* renamed from: h, reason: collision with root package name */
-    private static final String f15264h = "encoding";
+    private static final String f16051h = "encoding";
     private static final String i = "upgrade";
 
     /* renamed from: j, reason: collision with root package name */
-    private static final List<String> f15265j = com.anythink.core.common.n.b.a.c.a(f15258b, f15259c, f15260d, f15261e, f15263g, f15262f, f15264h, i, c.f15125c, c.f15126d, c.f15127e, c.f15128f);
+    private static final List<String> f16052j = com.anythink.core.common.n.b.a.c.a(f16045b, f16046c, f16047d, f16048e, f16050g, f16049f, f16051h, i, c.f15912c, c.f15913d, c.f15914e, c.f15915f);
 
     /* renamed from: k, reason: collision with root package name */
-    private static final List<String> f15266k = com.anythink.core.common.n.b.a.c.a(f15258b, f15259c, f15260d, f15261e, f15263g, f15262f, f15264h, i);
+    private static final List<String> f16053k = com.anythink.core.common.n.b.a.c.a(f16045b, f16046c, f16047d, f16048e, f16050g, f16049f, f16051h, i);
 
     public g(z zVar, com.anythink.core.common.n.b.a.b.e eVar, w.a aVar, f fVar) {
-        this.f15268m = eVar;
-        this.f15267l = aVar;
-        this.f15269n = fVar;
+        this.f16055m = eVar;
+        this.f16054l = aVar;
+        this.f16056n = fVar;
         List<ab> q8 = zVar.q();
         ab abVar = ab.H2_PRIOR_KNOWLEDGE;
-        this.f15271p = q8.contains(abVar) ? abVar : ab.HTTP_2;
+        this.f16058p = q8.contains(abVar) ? abVar : ab.HTTP_2;
     }
 
     @Override // com.anythink.core.common.n.b.a.c.c
     public final com.anythink.core.common.n.b.a.b.e a() {
-        return this.f15268m;
+        return this.f16055m;
     }
 
     @Override // com.anythink.core.common.n.b.a.c.c
     public final void b() {
-        this.f15269n.f15207r.b();
+        this.f16056n.f15994r.b();
     }
 
     @Override // com.anythink.core.common.n.b.a.c.c
     public final void c() {
-        this.f15270o.f().close();
+        this.f16057o.f().close();
     }
 
     @Override // com.anythink.core.common.n.b.a.c.c
     public final u d() {
-        return this.f15270o.d();
+        return this.f16057o.d();
     }
 
     @Override // com.anythink.core.common.n.b.a.c.c
     public final void e() {
-        this.f15272q = true;
-        if (this.f15270o != null) {
-            this.f15270o.a(b.CANCEL);
+        this.f16059q = true;
+        if (this.f16057o != null) {
+            this.f16057o.a(b.CANCEL);
         }
     }
 
     @Override // com.anythink.core.common.n.b.a.c.c
     public final v a(ad adVar, long j6) {
-        return this.f15270o.f();
+        return this.f16057o.f();
     }
 
     private static List<c> b(ad adVar) {
         u c9 = adVar.c();
         ArrayList arrayList = new ArrayList(c9.a() + 4);
-        arrayList.add(new c(c.f15130h, adVar.b()));
+        arrayList.add(new c(c.f15917h, adVar.b()));
         arrayList.add(new c(c.i, com.anythink.core.common.n.b.a.c.i.a(adVar.a())));
         String a9 = adVar.a("Host");
         if (a9 != null) {
-            arrayList.add(new c(c.f15132k, a9));
+            arrayList.add(new c(c.f15919k, a9));
         }
-        arrayList.add(new c(c.f15131j, adVar.a().b()));
+        arrayList.add(new c(c.f15918j, adVar.a().b()));
         int a10 = c9.a();
-        for (int i6 = 0; i6 < a10; i6++) {
-            String lowerCase = c9.a(i6).toLowerCase(Locale.US);
-            if (!f15265j.contains(lowerCase) || (lowerCase.equals(f15263g) && c9.b(i6).equals("trailers"))) {
-                arrayList.add(new c(lowerCase, c9.b(i6)));
+        for (int i4 = 0; i4 < a10; i4++) {
+            String lowerCase = c9.a(i4).toLowerCase(Locale.US);
+            if (!f16052j.contains(lowerCase) || (lowerCase.equals(f16050g) && c9.b(i4).equals("trailers"))) {
+                arrayList.add(new c(lowerCase, c9.b(i4)));
             }
         }
         return arrayList;
@@ -128,63 +128,63 @@ public final class g implements com.anythink.core.common.n.b.a.c.c {
 
     @Override // com.anythink.core.common.n.b.a.c.c
     public final void a(ad adVar) {
-        if (this.f15270o != null) {
+        if (this.f16057o != null) {
             return;
         }
-        boolean z3 = adVar.d() != null;
+        boolean z6 = adVar.d() != null;
         u c9 = adVar.c();
         ArrayList arrayList = new ArrayList(c9.a() + 4);
-        arrayList.add(new c(c.f15130h, adVar.b()));
+        arrayList.add(new c(c.f15917h, adVar.b()));
         arrayList.add(new c(c.i, com.anythink.core.common.n.b.a.c.i.a(adVar.a())));
         String a9 = adVar.a("Host");
         if (a9 != null) {
-            arrayList.add(new c(c.f15132k, a9));
+            arrayList.add(new c(c.f15919k, a9));
         }
-        arrayList.add(new c(c.f15131j, adVar.a().b()));
+        arrayList.add(new c(c.f15918j, adVar.a().b()));
         int a10 = c9.a();
-        for (int i6 = 0; i6 < a10; i6++) {
-            String lowerCase = c9.a(i6).toLowerCase(Locale.US);
-            if (!f15265j.contains(lowerCase) || (lowerCase.equals(f15263g) && c9.b(i6).equals("trailers"))) {
-                arrayList.add(new c(lowerCase, c9.b(i6)));
+        for (int i4 = 0; i4 < a10; i4++) {
+            String lowerCase = c9.a(i4).toLowerCase(Locale.US);
+            if (!f16052j.contains(lowerCase) || (lowerCase.equals(f16050g) && c9.b(i4).equals("trailers"))) {
+                arrayList.add(new c(lowerCase, c9.b(i4)));
             }
         }
-        this.f15270o = this.f15269n.a(arrayList, z3);
-        if (!this.f15272q) {
-            i.c cVar = this.f15270o.f15290f;
-            long e9 = this.f15267l.e();
+        this.f16057o = this.f16056n.a(arrayList, z6);
+        if (!this.f16059q) {
+            i.c cVar = this.f16057o.f16077f;
+            long e9 = this.f16054l.e();
             TimeUnit timeUnit = TimeUnit.MILLISECONDS;
             cVar.a(e9, timeUnit);
-            this.f15270o.f15291g.a(this.f15267l.f(), timeUnit);
+            this.f16057o.f16078g.a(this.f16054l.f(), timeUnit);
             return;
         }
-        this.f15270o.a(b.CANCEL);
+        this.f16057o.a(b.CANCEL);
         throw new IOException("Canceled");
     }
 
     @Override // com.anythink.core.common.n.b.a.c.c
     public final com.anythink.core.common.n.c.w b(af afVar) {
-        return this.f15270o.e();
+        return this.f16057o.e();
     }
 
     @Override // com.anythink.core.common.n.b.a.c.c
-    public final af.a a(boolean z3) {
-        u c9 = this.f15270o.c();
-        ab abVar = this.f15271p;
+    public final af.a a(boolean z6) {
+        u c9 = this.f16057o.c();
+        ab abVar = this.f16058p;
         u.a aVar = new u.a();
         int a9 = c9.a();
         com.anythink.core.common.n.b.a.c.k kVar = null;
-        for (int i6 = 0; i6 < a9; i6++) {
-            String a10 = c9.a(i6);
-            String b9 = c9.b(i6);
-            if (a10.equals(c.f15124b)) {
+        for (int i4 = 0; i4 < a9; i4++) {
+            String a10 = c9.a(i4);
+            String b9 = c9.b(i4);
+            if (a10.equals(c.f15911b)) {
                 kVar = com.anythink.core.common.n.b.a.c.k.a("HTTP/1.1 ".concat(String.valueOf(b9)));
-            } else if (!f15266k.contains(a10)) {
-                com.anythink.core.common.n.b.a.a.f14869a.a(aVar, a10, b9);
+            } else if (!f16053k.contains(a10)) {
+                com.anythink.core.common.n.b.a.a.f15656a.a(aVar, a10, b9);
             }
         }
         if (kVar != null) {
-            af.a a11 = new af.a().a(abVar).a(kVar.f15074e).a(kVar.f15075f).a(aVar.a());
-            if (z3 && com.anythink.core.common.n.b.a.a.f14869a.a(a11) == 100) {
+            af.a a11 = new af.a().a(abVar).a(kVar.f15861e).a(kVar.f15862f).a(aVar.a());
+            if (z6 && com.anythink.core.common.n.b.a.a.f15656a.a(a11) == 100) {
                 return null;
             }
             return a11;
@@ -196,17 +196,17 @@ public final class g implements com.anythink.core.common.n.b.a.c.c {
         u.a aVar = new u.a();
         int a9 = uVar.a();
         com.anythink.core.common.n.b.a.c.k kVar = null;
-        for (int i6 = 0; i6 < a9; i6++) {
-            String a10 = uVar.a(i6);
-            String b9 = uVar.b(i6);
-            if (a10.equals(c.f15124b)) {
+        for (int i4 = 0; i4 < a9; i4++) {
+            String a10 = uVar.a(i4);
+            String b9 = uVar.b(i4);
+            if (a10.equals(c.f15911b)) {
                 kVar = com.anythink.core.common.n.b.a.c.k.a("HTTP/1.1 ".concat(String.valueOf(b9)));
-            } else if (!f15266k.contains(a10)) {
-                com.anythink.core.common.n.b.a.a.f14869a.a(aVar, a10, b9);
+            } else if (!f16053k.contains(a10)) {
+                com.anythink.core.common.n.b.a.a.f15656a.a(aVar, a10, b9);
             }
         }
         if (kVar != null) {
-            return new af.a().a(abVar).a(kVar.f15074e).a(kVar.f15075f).a(aVar.a());
+            return new af.a().a(abVar).a(kVar.f15861e).a(kVar.f15862f).a(aVar.a());
         }
         throw new ProtocolException("Expected ':status' header not present");
     }

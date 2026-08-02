@@ -6,7 +6,7 @@ import H4.f;
 import I7.l;
 import kotlin.jvm.internal.s;
 import u7.v;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class d implements com.onesignal.core.internal.startup.b {
@@ -17,21 +17,21 @@ public final class d implements com.onesignal.core.internal.startup.b {
     public static final class a extends h implements l {
         int label;
 
-        public a(InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public a(InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return d.this.new a(interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return d.this.new a(interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 f fVar = d.this._operationRepo;
                 this.label = 1;
                 if (fVar.awaitInitialized(this) == aVar) {
@@ -41,18 +41,18 @@ public final class d implements com.onesignal.core.internal.startup.b {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
             if (d.this.isInBadState()) {
                 com.onesignal.debug.internal.logging.b.warn$default("User with externalId:" + ((U5.a) d.this._identityModelStore.getModel()).getExternalId() + " was in a bad state, causing it to not update on OneSignal's backend! We are recovering and replaying all unsent operations now.", null, 2, null);
                 d.this.recoverByAddingBackDroppedLoginOperation();
             }
-            return v.f41353a;
+            return v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((a) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((a) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 

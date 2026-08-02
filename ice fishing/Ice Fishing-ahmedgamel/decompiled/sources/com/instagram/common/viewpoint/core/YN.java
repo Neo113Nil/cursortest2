@@ -26,7 +26,7 @@ public abstract class YN {
         return A00(BitmapFactory.decodeByteArray(decode, 0, decode.length));
     }
 
-    public static Drawable A03(C1840gi c1840gi, YM ym) {
-        return new BitmapDrawable(c1840gi.getResources(), A01(ym));
+    public static Drawable A03(C1860gi c1860gi, YM ym) {
+        return new BitmapDrawable(c1860gi.getResources(), A01(ym));
     }
 }

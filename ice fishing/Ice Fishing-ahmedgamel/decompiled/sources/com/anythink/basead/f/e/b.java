@@ -16,20 +16,20 @@ import org.json.JSONObject;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f8954a = "sdk_updatetime";
+    public static final String f9740a = "sdk_updatetime";
 
     public static final bi a(x xVar, JSONObject jSONObject) {
         try {
-            JSONObject optJSONObject = jSONObject.optJSONObject(j.e.f12440e);
+            JSONObject optJSONObject = jSONObject.optJSONObject(j.e.f13226e);
             if (optJSONObject == null) {
                 return null;
             }
             JSONObject optJSONObject2 = optJSONObject.optJSONArray("offers").optJSONObject(0);
             bi biVar = new bi();
-            biVar.a(xVar.f14160f);
+            biVar.a(xVar.f14946f);
             biVar.k(optJSONObject2.optString(k.ah));
             biVar.l(optJSONObject2.optString(l.a.aE));
-            biVar.x(optJSONObject2.optString(b.a.f6071A));
+            biVar.x(optJSONObject2.optString(b.a.f6857A));
             biVar.m(optJSONObject2.optString("title"));
             biVar.n(optJSONObject2.optString("desc"));
             biVar.i(optJSONObject2.optInt(d.ae));
@@ -37,7 +37,7 @@ public final class b {
             biVar.q(optJSONObject2.optString("full_u"));
             biVar.g(optJSONObject2.optInt("unit_type"));
             biVar.r(optJSONObject2.optString("tp_logo_u"));
-            biVar.s(optJSONObject2.optString(b.a.f6088k));
+            biVar.s(optJSONObject2.optString(b.a.f6874k));
             biVar.t(optJSONObject2.optString("video_u"));
             biVar.e(optJSONObject2.optInt("video_l"));
             biVar.ac(optJSONObject2.optString("video_r"));
@@ -52,7 +52,7 @@ public final class b {
             biVar.t(optJSONObject2.optInt("crt_type", 1));
             biVar.ae(optJSONObject2.optString("img_list"));
             biVar.af(optJSONObject2.optString("banner_xhtml"));
-            biVar.c(jSONObject.optLong(f8954a));
+            biVar.c(jSONObject.optLong(f9740a));
             biVar.f(optJSONObject2.optInt("offer_firm_id"));
             biVar.j(optJSONObject2.optString("jump_url"));
             biVar.ag(optJSONObject2.optString("app_name"));
@@ -60,7 +60,7 @@ public final class b {
             biVar.A(optJSONObject2.optString("app_version"));
             biVar.B(optJSONObject2.optString("privacy"));
             biVar.C(optJSONObject2.optString("permission"));
-            biVar.c(optJSONObject2.optString(g.a.f12959N));
+            biVar.c(optJSONObject2.optString(g.a.f13745N));
             biVar.H(optJSONObject2.optString("wv_ctrl"));
             biVar.c(bk.u(optJSONObject2.optString("ctrl")));
             biVar.a(bl.a(optJSONObject2.optString("tk")));

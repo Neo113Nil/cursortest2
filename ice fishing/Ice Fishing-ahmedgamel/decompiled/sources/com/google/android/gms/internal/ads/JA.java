@@ -14,27 +14,27 @@ import java.util.Iterator;
 public abstract class JA {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final C3933tE f25653a = new C3933tE("PhoneskyVerificationUtils");
+    public static final C3956tE f26406a = new C3956tE("PhoneskyVerificationUtils");
 
     public static boolean a(Context context) {
         Signature[] signatureArr;
         String str;
-        C3933tE c3933tE = f25653a;
+        C3956tE c3956tE = f26406a;
         try {
         } catch (PackageManager.NameNotFoundException unused) {
-            c3933tE.b("Play Store package is not found.", new Object[0]);
+            c3956tE.b("Play Store package is not found.", new Object[0]);
         }
         if (!context.getPackageManager().getApplicationInfo("com.android.vending", 0).enabled) {
-            c3933tE.b("Play Store package is disabled.", new Object[0]);
+            c3956tE.b("Play Store package is disabled.", new Object[0]);
             return false;
         }
         try {
             signatureArr = context.getPackageManager().getPackageInfo("com.android.vending", 64).signatures;
         } catch (PackageManager.NameNotFoundException unused2) {
-            c3933tE.b("Play Store package is not found.", new Object[0]);
+            c3956tE.b("Play Store package is not found.", new Object[0]);
         }
         if (signatureArr == null || (signatureArr.length) == 0) {
-            c3933tE.b("Play Store package is not signed -- possibly self-built package. Could not verify.", new Object[0]);
+            c3956tE.b("Play Store package is not signed -- possibly self-built package. Could not verify.", new Object[0]);
             return false;
         }
         ArrayList arrayList = new ArrayList();
@@ -67,7 +67,7 @@ public abstract class JA {
                 sb.append((CharSequence) ", ");
             }
         }
-        c3933tE.b(D.y.o("Play Store package certs are not valid. Found these sha256 certs: [", sb.toString(), "]."), new Object[0]);
+        c3956tE.b(D.x.l("Play Store package certs are not valid. Found these sha256 certs: [", sb.toString(), "]."), new Object[0]);
         return false;
     }
 }

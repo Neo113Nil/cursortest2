@@ -4,25 +4,25 @@ package S7;
 public final class K extends M {
 
     /* renamed from: v, reason: collision with root package name */
-    public final C0389g f2922v;
+    public final C0393g f3005v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final /* synthetic */ O f2923w;
+    public final /* synthetic */ O f3006w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public K(O o6, long j6, C0389g c0389g) {
+    public K(O o4, long j6, C0393g c0393g) {
         super(j6);
-        this.f2923w = o6;
-        this.f2922v = c0389g;
+        this.f3006w = o4;
+        this.f3005v = c0393g;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
-        this.f2922v.B(this.f2923w);
+        this.f3005v.B(this.f3006w);
     }
 
     @Override // S7.M
     public final String toString() {
-        return super.toString() + this.f2922v;
+        return super.toString() + this.f3005v;
     }
 }

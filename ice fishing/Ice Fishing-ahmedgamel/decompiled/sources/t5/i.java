@@ -1,6 +1,6 @@
 package t5;
 
-import J0.y;
+import J0.x;
 import K0.p;
 import android.content.Context;
 
@@ -14,13 +14,13 @@ public final class i {
     private final void initializeWorkManager(Context context) {
         try {
             context.getApplicationContext();
-            p.c(context, new J0.b(new M2.i(4)));
+            p.c(context, new J0.b(new c4.e()));
         } catch (IllegalStateException e9) {
             com.onesignal.debug.internal.logging.b.warn("OSWorkManagerHelper initializing WorkManager failed: ", e9);
         }
     }
 
-    public final synchronized y getInstance(Context context) {
+    public final synchronized x getInstance(Context context) {
         p b9;
         kotlin.jvm.internal.h.e(context, "context");
         try {

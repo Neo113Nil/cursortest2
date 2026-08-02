@@ -4,5 +4,5 @@ import android.widget.EdgeEffect;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public class QG {
-    public abstract void A00(EdgeEffect edgeEffect, float f3, float f9);
+    public abstract void A00(EdgeEffect edgeEffect, float f2, float f9);
 }

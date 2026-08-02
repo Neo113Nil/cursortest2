@@ -9,28 +9,28 @@ public final class P implements Parcelable {
     public static final Parcelable.Creator<P> CREATOR = new B8.d(23);
 
     /* renamed from: A, reason: collision with root package name */
-    public ArrayList f4875A;
+    public ArrayList f4843A;
 
     /* renamed from: n, reason: collision with root package name */
-    public ArrayList f4876n;
+    public ArrayList f4844n;
 
     /* renamed from: u, reason: collision with root package name */
-    public ArrayList f4877u;
+    public ArrayList f4845u;
 
     /* renamed from: v, reason: collision with root package name */
-    public C0459b[] f4878v;
+    public C0463b[] f4846v;
 
     /* renamed from: w, reason: collision with root package name */
-    public int f4879w;
+    public int f4847w;
 
     /* renamed from: x, reason: collision with root package name */
-    public String f4880x;
+    public String f4848x;
 
     /* renamed from: y, reason: collision with root package name */
-    public ArrayList f4881y;
+    public ArrayList f4849y;
 
     /* renamed from: z, reason: collision with root package name */
-    public ArrayList f4882z;
+    public ArrayList f4850z;
 
     @Override // android.os.Parcelable
     public final int describeContents() {
@@ -39,13 +39,13 @@ public final class P implements Parcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeStringList(this.f4876n);
-        parcel.writeStringList(this.f4877u);
-        parcel.writeTypedArray(this.f4878v, i);
-        parcel.writeInt(this.f4879w);
-        parcel.writeString(this.f4880x);
-        parcel.writeStringList(this.f4881y);
-        parcel.writeTypedList(this.f4882z);
-        parcel.writeTypedList(this.f4875A);
+        parcel.writeStringList(this.f4844n);
+        parcel.writeStringList(this.f4845u);
+        parcel.writeTypedArray(this.f4846v, i);
+        parcel.writeInt(this.f4847w);
+        parcel.writeString(this.f4848x);
+        parcel.writeStringList(this.f4849y);
+        parcel.writeTypedList(this.f4850z);
+        parcel.writeTypedList(this.f4843A);
     }
 }

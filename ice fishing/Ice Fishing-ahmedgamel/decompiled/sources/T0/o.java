@@ -6,8 +6,8 @@ import java.util.WeakHashMap;
 public final class o {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final o f3053a = new o();
+    public static final o f3136a = new o();
 
     /* renamed from: b, reason: collision with root package name */
-    public static final WeakHashMap f3054b = new WeakHashMap();
+    public static final WeakHashMap f3137b = new WeakHashMap();
 }

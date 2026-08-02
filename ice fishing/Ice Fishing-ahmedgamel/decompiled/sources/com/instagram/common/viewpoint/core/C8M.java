@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 
 /* renamed from: com.facebook.ads.redexgen.X.8M, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public abstract class C8M implements InterfaceC2139lq {
+public abstract class C8M implements InterfaceC2159lq {
     public static String[] A06 = {"A1ZwXb6JdBVxSPYV1ZzpyUVQy2gRfJA9", "vkvPFBYHwcZnb4NzphHjmgFJFbjiYwSo", "W7sj7Up3ABI8RZFTAAZOEHe7srfTkl57", "fls3PiASqtk6GqNgTZFqwBZFoYeyHn2V", "1yDmXHBn42mad7W8CPx8A7RWKYn1BqT7", "CjPJSc8sfbO2R56Y3Yx9Z137FYjSqvlb", "2KSypf5DjPiLYF3nQ7brfSsHONTUzR5A", "k5ePLg8NJJ"};
     public long A00;
     public long A01;
@@ -14,7 +14,7 @@ public abstract class C8M implements InterfaceC2139lq {
     public final ArrayDeque<C8P> A04;
     public final PriorityQueue<C1V> A05;
 
-    public abstract C2130lh A0Z();
+    public abstract C2150lh A0Z();
 
     public abstract void A0b(C8S c8s);
 
@@ -25,12 +25,12 @@ public abstract class C8M implements InterfaceC2139lq {
             this.A03.add(new C1V());
         }
         this.A04 = new ArrayDeque<>();
-        for (int i6 = 0; i6 < 2; i6++) {
+        for (int i4 = 0; i4 < 2; i4++) {
             ArrayDeque<C8P> arrayDeque = this.A04;
             final AnonymousClass64 anonymousClass64 = new AnonymousClass64() { // from class: com.facebook.ads.redexgen.X.li
                 @Override // com.instagram.common.viewpoint.core.AnonymousClass64
-                public final void AHj(AbstractC2320oz abstractC2320oz) {
-                    C8M.this.A0c((C1U) abstractC2320oz);
+                public final void AHj(AbstractC2340oz abstractC2340oz) {
+                    C8M.this.A0c((C1U) abstractC2340oz);
                 }
             };
             arrayDeque.add(new C8P(anonymousClass64) { // from class: com.facebook.ads.redexgen.X.1U
@@ -41,7 +41,7 @@ public abstract class C8M implements InterfaceC2139lq {
                     this.A00 = anonymousClass64;
                 }
 
-                @Override // com.instagram.common.viewpoint.core.C8P, com.instagram.common.viewpoint.core.AbstractC2320oz
+                @Override // com.instagram.common.viewpoint.core.C8P, com.instagram.common.viewpoint.core.AbstractC2340oz
                 public final void A0B() {
                     this.A00.AHj(this);
                 }
@@ -61,8 +61,8 @@ public abstract class C8M implements InterfaceC2139lq {
 
     @Override // com.instagram.common.viewpoint.core.AnonymousClass60
     /* renamed from: A0W, reason: merged with bridge method [inline-methods] */
-    public C8S A5r() throws C2132lj {
-        AbstractC06243y.A08(this.A02 == null);
+    public C8S A5r() throws C2152lj {
+        AbstractC06443y.A08(this.A02 == null);
         if (this.A03.isEmpty()) {
             return null;
         }
@@ -79,7 +79,7 @@ public abstract class C8M implements InterfaceC2139lq {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public C8P A5t() throws C2132lj {
+    public C8P A5t() throws C2152lj {
         if (!this.A04.isEmpty()) {
             while (true) {
                 boolean isEmpty = this.A05.isEmpty();
@@ -108,7 +108,7 @@ public abstract class C8M implements InterfaceC2139lq {
                             }
                             A0b(c1v);
                             if (A0d()) {
-                                C2130lh A0Z = A0Z();
+                                C2150lh A0Z = A0Z();
                                 C8P c8p2 = (C8P) C5C.A0f(this.A04.pollFirst());
                                 long j6 = c1v.A01;
                                 String[] strArr3 = A06;
@@ -142,8 +142,8 @@ public abstract class C8M implements InterfaceC2139lq {
 
     @Override // com.instagram.common.viewpoint.core.AnonymousClass60
     /* renamed from: A0a, reason: merged with bridge method [inline-methods] */
-    public void AHJ(C8S c8s) throws C2132lj {
-        AbstractC06243y.A07(c8s == this.A02);
+    public void AHJ(C8S c8s) throws C2152lj {
+        AbstractC06443y.A07(c8s == this.A02);
         C1V c1v = (C1V) c8s;
         if (c1v.A04()) {
             A0U(c1v);
@@ -171,7 +171,7 @@ public abstract class C8M implements InterfaceC2139lq {
     public void AHb() {
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2139lq
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2159lq
     public void AJh(long j6) {
         this.A00 = j6;
     }

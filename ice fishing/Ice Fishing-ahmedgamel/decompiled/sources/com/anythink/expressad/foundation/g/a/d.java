@@ -10,13 +10,13 @@ import org.json.JSONObject;
 public final class d implements e<String, JSONObject> {
 
     /* renamed from: c, reason: collision with root package name */
-    private int f19118c;
+    private int f19905c;
 
     /* renamed from: b, reason: collision with root package name */
-    private final int f19117b = 1000;
+    private final int f19904b = 1000;
 
     /* renamed from: a, reason: collision with root package name */
-    private final LinkedHashMap<String, JSONObject> f19116a = new LinkedHashMap<>(0, 0.75f, true);
+    private final LinkedHashMap<String, JSONObject> f19903a = new LinkedHashMap<>(0, 0.75f, true);
 
     private static int c() {
         return 1;
@@ -30,8 +30,8 @@ public final class d implements e<String, JSONObject> {
         }
         synchronized (this) {
             try {
-                if (this.f19116a.remove(str2) != null) {
-                    this.f19118c--;
+                if (this.f19903a.remove(str2) != null) {
+                    this.f19905c--;
                 }
             } catch (Throwable th) {
                 throw th;
@@ -40,7 +40,7 @@ public final class d implements e<String, JSONObject> {
     }
 
     public final synchronized String toString() {
-        return String.format("LruCache[maxSize=%d]", Integer.valueOf(this.f19117b));
+        return String.format("LruCache[maxSize=%d]", Integer.valueOf(this.f19904b));
     }
 
     /* renamed from: b, reason: avoid collision after fix types in other method */
@@ -50,8 +50,8 @@ public final class d implements e<String, JSONObject> {
         }
         synchronized (this) {
             try {
-                if (this.f19116a.remove(str) != null) {
-                    this.f19118c--;
+                if (this.f19903a.remove(str) != null) {
+                    this.f19905c--;
                 }
             } catch (Throwable th) {
                 throw th;
@@ -70,7 +70,7 @@ public final class d implements e<String, JSONObject> {
         JSONObject jSONObject;
         if (str != null) {
             synchronized (this) {
-                jSONObject = this.f19116a.get(str);
+                jSONObject = this.f19903a.get(str);
             }
             return jSONObject;
         }
@@ -82,15 +82,15 @@ public final class d implements e<String, JSONObject> {
         if (str != null && jSONObject != null) {
             synchronized (this) {
                 try {
-                    this.f19118c++;
-                    if (this.f19116a.put(str, jSONObject) != null) {
-                        this.f19118c--;
+                    this.f19905c++;
+                    if (this.f19903a.put(str, jSONObject) != null) {
+                        this.f19905c--;
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
-            a(this.f19117b);
+            a(this.f19904b);
             return true;
         }
         throw new NullPointerException("key == null || value == null");
@@ -107,21 +107,21 @@ public final class d implements e<String, JSONObject> {
         while (true) {
             synchronized (this) {
                 try {
-                    if (this.f19118c < 0 || (this.f19116a.isEmpty() && this.f19118c != 0)) {
+                    if (this.f19905c < 0 || (this.f19903a.isEmpty() && this.f19905c != 0)) {
                         break;
                     }
-                    if (this.f19118c <= i || this.f19116a.isEmpty()) {
+                    if (this.f19905c <= i || this.f19903a.isEmpty()) {
                         break;
                     }
-                    Map.Entry<String, JSONObject> next = this.f19116a.entrySet().iterator().next();
+                    Map.Entry<String, JSONObject> next = this.f19903a.entrySet().iterator().next();
                     if (next == null) {
                         return;
                     }
                     String key = next.getKey();
                     next.getValue();
                     try {
-                        this.f19116a.remove(key);
-                        this.f19118c--;
+                        this.f19903a.remove(key);
+                        this.f19905c--;
                     } catch (Throwable unused) {
                     }
                 } catch (Throwable th) {
@@ -135,7 +135,7 @@ public final class d implements e<String, JSONObject> {
     public final Collection<String> a() {
         HashSet hashSet;
         synchronized (this) {
-            hashSet = new HashSet(this.f19116a.keySet());
+            hashSet = new HashSet(this.f19903a.keySet());
         }
         return hashSet;
     }

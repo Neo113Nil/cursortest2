@@ -6,19 +6,19 @@ package com.google.android.gms.internal.ads;
 public final class ZA implements XA {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final ZA f28846n;
+    public static final ZA f29626n;
 
     /* renamed from: u, reason: collision with root package name */
-    public static final /* synthetic */ ZA[] f28847u;
+    public static final /* synthetic */ ZA[] f29627u;
 
     static {
         ZA za = new ZA("ALWAYS_TRUE", 0);
-        f28846n = za;
-        f28847u = new ZA[]{za, new ZA("ALWAYS_FALSE", 1), new ZA("IS_NULL", 2), new ZA("NOT_NULL", 3)};
+        f29626n = za;
+        f29627u = new ZA[]{za, new ZA("ALWAYS_FALSE", 1), new ZA("IS_NULL", 2), new ZA("NOT_NULL", 3)};
     }
 
     public static ZA[] values() {
-        return (ZA[]) f28847u.clone();
+        return (ZA[]) f29627u.clone();
     }
 
     @Override // com.google.android.gms.internal.ads.XA

@@ -15,42 +15,42 @@ import com.anythink.core.common.d.t;
 import com.anythink.core.common.h.n;
 import com.anythink.core.common.h.x;
 import com.anythink.expressad.a.b;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 import org.json.JSONArray;
-import u1.h;
 
 /* loaded from: classes.dex */
 public class AdxATInitManager extends ATInitMediation {
 
     /* renamed from: a, reason: collision with root package name */
-    private static String f23003a = "AdxATInitManager";
+    private static String f23790a = "AdxATInitManager";
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile AdxATInitManager f23004b;
+    private static volatile AdxATInitManager f23791b;
 
     /* renamed from: o, reason: collision with root package name */
-    public static final /* synthetic */ int f23005o = 0;
+    public static final /* synthetic */ int f23792o = 0;
 
     /* renamed from: c, reason: collision with root package name */
-    private boolean f23006c;
+    private boolean f23793c;
 
     /* renamed from: f, reason: collision with root package name */
-    private List<MediationInitCallback> f23009f;
+    private List<MediationInitCallback> f23796f;
 
     /* renamed from: h, reason: collision with root package name */
-    private String f23011h;
+    private String f23798h;
 
     /* renamed from: d, reason: collision with root package name */
-    private AtomicBoolean f23007d = new AtomicBoolean(false);
+    private AtomicBoolean f23794d = new AtomicBoolean(false);
 
     /* renamed from: e, reason: collision with root package name */
-    private AtomicBoolean f23008e = new AtomicBoolean(false);
+    private AtomicBoolean f23795e = new AtomicBoolean(false);
 
     /* renamed from: g, reason: collision with root package name */
-    private final Object f23010g = new Object();
+    private final Object f23797g = new Object();
 
     private AdxATInitManager() {
         try {
@@ -67,22 +67,22 @@ public class AdxATInitManager extends ATInitMediation {
         }
     }
 
-    private void a(boolean z3, String str) {
-        synchronized (this.f23010g) {
+    private void a(boolean z6, String str) {
+        synchronized (this.f23797g) {
             try {
-                int size = this.f23009f.size();
+                int size = this.f23796f.size();
                 for (int i = 0; i < size; i++) {
-                    MediationInitCallback mediationInitCallback = this.f23009f.get(i);
+                    MediationInitCallback mediationInitCallback = this.f23796f.get(i);
                     if (mediationInitCallback != null) {
-                        if (z3) {
+                        if (z6) {
                             mediationInitCallback.onSuccess();
                         } else {
                             mediationInitCallback.onFail(str);
                         }
                     }
                 }
-                this.f23009f.clear();
-                this.f23007d.set(false);
+                this.f23796f.clear();
+                this.f23794d.set(false);
             } catch (Throwable th) {
                 throw th;
             }
@@ -98,24 +98,24 @@ public class AdxATInitManager extends ATInitMediation {
 
     private String c() {
         StringBuilder sb = new StringBuilder("The ");
-        sb.append(this.f23011h);
+        sb.append(this.f23798h);
         sb.append(" resources are missing, If shrinkResources is enabled, the ");
-        return h.g(sb, this.f23011h, " resources must be added to the whitelist (keep.xml)");
+        return Wv.i(sb, this.f23798h, " resources must be added to the whitelist (keep.xml)");
     }
 
     public static AdxATInitManager getInstance() {
-        if (f23004b == null) {
+        if (f23791b == null) {
             synchronized (AdxATInitManager.class) {
                 try {
-                    if (f23004b == null) {
-                        f23004b = new AdxATInitManager();
+                    if (f23791b == null) {
+                        f23791b = new AdxATInitManager();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f23004b;
+        return f23791b;
     }
 
     @Override // com.anythink.core.api.ATInitMediation
@@ -148,8 +148,8 @@ public class AdxATInitManager extends ATInitMediation {
 
     @Override // com.anythink.core.api.ATInitMediation
     public void initSDK(Context context, Map<String, Object> map, MediationInitCallback mediationInitCallback) {
-        if (this.f23006c) {
-            if (TextUtils.isEmpty(this.f23011h)) {
+        if (this.f23793c) {
+            if (TextUtils.isEmpty(this.f23798h)) {
                 if (mediationInitCallback != null) {
                     mediationInitCallback.onSuccess();
                     return;
@@ -163,26 +163,26 @@ public class AdxATInitManager extends ATInitMediation {
                 return;
             }
         }
-        synchronized (this.f23010g) {
+        synchronized (this.f23797g) {
             try {
-                if (this.f23009f == null) {
-                    this.f23009f = new ArrayList();
+                if (this.f23796f == null) {
+                    this.f23796f = new ArrayList();
                 }
                 if (mediationInitCallback != null) {
-                    this.f23009f.add(mediationInitCallback);
+                    this.f23796f.add(mediationInitCallback);
                 }
-                if (this.f23007d.get()) {
+                if (this.f23794d.get()) {
                     return;
                 }
-                this.f23007d.set(true);
+                this.f23794d.set(true);
                 String a9 = t.b().a(context, getResourceStatus(), getDevBundleName());
-                this.f23011h = a9;
+                this.f23798h = a9;
                 if (!TextUtils.isEmpty(a9)) {
                     a(false, c());
                     return;
                 }
                 com.anythink.basead.c.a().a(context);
-                this.f23006c = true;
+                this.f23793c = true;
                 a(true, "");
             } catch (Throwable th) {
                 throw th;
@@ -198,7 +198,7 @@ public class AdxATInitManager extends ATInitMediation {
         if (nVar == null || xVar == null) {
             return;
         }
-        nVar.ab(xVar.f14164k);
+        nVar.ab(xVar.f14950k);
     }
 
     public static JSONArray a(Map<String, Object> map) {
@@ -234,18 +234,18 @@ public class AdxATInitManager extends ATInitMediation {
 
             @Override // com.anythink.core.api.MediationInitCallback
             public final void onSuccess() {
-                x xVar = (x) map.get(j.w.f12614a);
-                AdxBidRequestInfo adxBidRequestInfo = new AdxBidRequestInfo(context, xVar != null ? xVar.f14156b : "", map, map2, i);
-                int i6 = i;
-                if (i6 == 0) {
+                x xVar = (x) map.get(j.w.f13400a);
+                AdxBidRequestInfo adxBidRequestInfo = new AdxBidRequestInfo(context, xVar != null ? xVar.f14942b : "", map, map2, i);
+                int i4 = i;
+                if (i4 == 0) {
                     adxBidRequestInfo.fillNative(map);
-                } else if (i6 == 1) {
+                } else if (i4 == 1) {
                     adxBidRequestInfo.fillRewardedVideo(map);
-                } else if (i6 == 2) {
+                } else if (i4 == 2) {
                     adxBidRequestInfo.fillBannerData(map);
-                } else if (i6 == 3) {
+                } else if (i4 == 3) {
                     adxBidRequestInfo.fillInterstitial(map);
-                } else if (i6 == 4) {
+                } else if (i4 == 4) {
                     adxBidRequestInfo.fillSplashData();
                 }
                 ATBidRequestInfoListener aTBidRequestInfoListener2 = aTBidRequestInfoListener;

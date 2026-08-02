@@ -4,37 +4,37 @@ package com.google.android.gms.internal.ads;
 public final class Mv {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Object f26370a;
+    public final Object f27155a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final long f26371b;
+    public final long f27156b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final T2.a f26372c;
+    public final V2.a f27157c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final long f26373d;
+    public final long f27158d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final double f26374e;
+    public final double f27159e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final int f26375f;
+    public final int f27160f;
 
-    public Mv(Object obj, T2.a aVar, double d2, int i) {
+    public Mv(Object obj, V2.a aVar, double d9, int i) {
         if (aVar == null) {
             throw new IllegalArgumentException("Clock cannot be null.");
         }
-        this.f26370a = obj;
-        this.f26372c = aVar;
-        this.f26371b = System.currentTimeMillis();
-        this.f26373d = Math.min(Math.max(((Long) q2.r.f40207e.f40210c.a(AbstractC3569ma.f32242f0)).longValue() * 1000, 10000L), com.anythink.expressad.f.a.b.aD);
-        this.f26374e = d2;
-        this.f26375f = i;
+        this.f27155a = obj;
+        this.f27157c = aVar;
+        this.f27156b = System.currentTimeMillis();
+        this.f27158d = Math.min(Math.max(((Long) s2.r.f40506e.f40509c.a(AbstractC3592ma.f33022f0)).longValue() * 1000, 10000L), com.anythink.expressad.f.a.b.aD);
+        this.f27159e = d9;
+        this.f27160f = i;
     }
 
     public final long a() {
-        this.f26372c.getClass();
-        return this.f26373d - (System.currentTimeMillis() - this.f26371b);
+        this.f27157c.getClass();
+        return this.f27158d - (System.currentTimeMillis() - this.f27156b);
     }
 }

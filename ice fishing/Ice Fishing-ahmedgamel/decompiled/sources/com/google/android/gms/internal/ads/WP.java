@@ -1,327 +1,203 @@
 package com.google.android.gms.internal.ads;
 
-import android.media.MediaCodecInfo;
-import android.media.MediaCodecList;
-import android.os.Build;
-import java.util.ArrayList;
-import java.util.Collections;
+import O.C0349t;
+import android.content.Context;
+import android.graphics.Rect;
+import androidx.cardview.widget.CardView;
+import d2.InterfaceC4460b;
+import i2.C4587a;
 import java.util.HashMap;
-import java.util.List;
+import r2.C4906k;
+import t0.AbstractC5000P;
+import t7.InterfaceC5045a;
+import u1.InterfaceC5066e;
+import w2.HandlerC5139A;
+import x1.C5184b;
+import y1.C5204e;
 
 /* loaded from: classes2.dex */
-public abstract class WP {
+public final /* synthetic */ class WP implements XP, InterfaceC4460b, y8.w, x2.c {
 
-    /* renamed from: a, reason: collision with root package name */
-    public static final HashMap f28354a = new HashMap();
+    /* renamed from: n, reason: collision with root package name */
+    public Object f29152n;
 
-    public static synchronized List a(String str, boolean z3, boolean z6) {
-        synchronized (WP.class) {
+    /* renamed from: u, reason: collision with root package name */
+    public final Object f29153u;
+
+    public /* synthetic */ WP(Object obj, Object obj2) {
+        this.f29152n = obj;
+        this.f29153u = obj2;
+    }
+
+    @Override // com.google.android.gms.internal.ads.XP
+    public int a(Object obj) {
+        PP pp = (PP) obj;
+        HashMap hashMap = ZP.f29665a;
+        pp.getClass();
+        DP dp = (DP) this.f29153u;
+        String str = dp.f25176o;
+        String str2 = pp.f27598b;
+        return ((str2.equals(str) || str2.equals(ZP.d(dp))) && pp.f((Context) this.f29152n, dp, false) && pp.g(dp)) ? 1 : 0;
+    }
+
+    @Override // x2.c
+    public x2.k b(String str) {
+        HandlerC5139A handlerC5139A = w2.D.f41627l;
+        w2.D d9 = C4906k.f40186C.f40191c;
+        new w2.u((Context) this.f29152n, (String) this.f29153u, str, null).l();
+        return x2.k.f41872n;
+    }
+
+    public void c(AbstractC5000P abstractC5000P, C0349t c0349t) {
+        s.k kVar = (s.k) this.f29152n;
+        t0.Z z6 = (t0.Z) kVar.getOrDefault(abstractC5000P, null);
+        if (z6 == null) {
+            z6 = t0.Z.a();
+            kVar.put(abstractC5000P, z6);
+        }
+        z6.f40694c = c0349t;
+        z6.f40692a |= 8;
+    }
+
+    @Override // y8.w
+    public y8.x d() {
+        return (m8.h) this.f29153u;
+    }
+
+    public String e(InterfaceC5066e interfaceC5066e) {
+        String str;
+        synchronized (((P1.l) this.f29152n)) {
+            str = (String) ((P1.l) this.f29152n).a(interfaceC5066e);
+        }
+        if (str == null) {
+            C5204e c5204e = (C5204e) ((b3.e) this.f29153u).k();
             try {
-                SP sp = new SP(str, z3, z6);
-                HashMap hashMap = f28354a;
-                List list = (List) hashMap.get(sp);
-                if (list != null) {
-                    return list;
-                }
-                ArrayList e9 = e(sp, new G1.a(z3, z6, str.equals("video/mv-hevc")));
-                if (z3) {
-                    e9.isEmpty();
-                }
-                if (com.anythink.basead.exoplayer.k.o.f8465w.equals(str)) {
-                    if (Build.VERSION.SDK_INT < 26 && Build.DEVICE.equals("R9") && e9.size() == 1 && ((OP) e9.get(0)).f26604a.equals("OMX.MTK.AUDIO.DECODER.RAW")) {
-                        e9.add(OP.a("OMX.google.raw.decoder", com.anythink.basead.exoplayer.k.o.f8465w, com.anythink.basead.exoplayer.k.o.f8465w, null, false, false));
+                interfaceC5066e.b(c5204e.f41897n);
+                byte[] digest = c5204e.f41897n.digest();
+                char[] cArr = P1.p.f2377b;
+                synchronized (cArr) {
+                    for (int i = 0; i < digest.length; i++) {
+                        byte b9 = digest[i];
+                        int i4 = i * 2;
+                        char[] cArr2 = P1.p.f2376a;
+                        cArr[i4] = cArr2[(b9 & 255) >>> 4];
+                        cArr[i4 + 1] = cArr2[b9 & 15];
                     }
-                    Collections.sort(e9, new UP(C3084dP.f29768A));
+                    str = new String(cArr);
                 }
-                if (Build.VERSION.SDK_INT < 32 && e9.size() > 1 && "OMX.qti.audio.decoder.flac".equals(((OP) e9.get(0)).f26604a)) {
-                    e9.add((OP) e9.remove(0));
-                }
-                RB n9 = RB.n(e9);
-                hashMap.put(sp, n9);
-                return n9;
-            } catch (Throwable th) {
-                throw th;
+            } finally {
+                ((b3.e) this.f29153u).D(c5204e);
             }
         }
+        synchronized (((P1.l) this.f29152n)) {
+            ((P1.l) this.f29152n).f(interfaceC5066e, str);
+        }
+        return str;
     }
 
-    public static C3500lC b(C3084dP c3084dP, DP dp, boolean z3, boolean z6) {
-        Iterable a9;
-        String str = dp.f24431o;
-        c3084dP.getClass();
-        List a10 = a(str, z3, z6);
-        String d2 = d(dp);
-        if (d2 == null) {
-            a9 = C3500lC.f31745x;
-        } else {
-            c3084dP.getClass();
-            a9 = a(d2, z3, z6);
-        }
-        PB pb = RB.f27177u;
-        OB ob = new OB(4);
-        ob.b(a10);
-        ob.b(a9);
-        return ob.f();
-    }
-
-    public static MediaCodecInfo.CodecProfileLevel c(int i, int i6) {
-        MediaCodecInfo.CodecProfileLevel codecProfileLevel = new MediaCodecInfo.CodecProfileLevel();
-        codecProfileLevel.profile = i;
-        codecProfileLevel.level = i6;
-        return codecProfileLevel;
-    }
-
-    public static String d(DP dp) {
-        C3473km d2;
-        boolean z3;
-        String str = dp.f24431o;
-        if (com.anythink.basead.exoplayer.k.o.f8421B.equals(str)) {
-            return com.anythink.basead.exoplayer.k.o.f8420A;
-        }
-        if (com.anythink.basead.exoplayer.k.o.f8424E.equals(str) || "audio/vnd.dts.uhd;profile=p2".equals(str)) {
-            return com.anythink.basead.exoplayer.k.o.f8423D;
-        }
-        if ("video/dolby-vision".equals(str) && (d2 = AbstractC4228ym.d(dp)) != null && (z3 = d2.f31627b)) {
-            AbstractC2772Sd.H(z3);
-            int i = d2.f31626a;
-            if (i == 16 || i == 256) {
-                return com.anythink.basead.exoplayer.k.o.i;
-            }
-            if (i == 512) {
-                return com.anythink.basead.exoplayer.k.o.f8451h;
-            }
-            if (i == 1024) {
-                KJ kj = dp.f24407F;
-                if (kj != null && kj.f25899c == 6 && kj.f25898b == 1) {
-                    return null;
+    public C0349t f(AbstractC5000P abstractC5000P, int i) {
+        t0.Z z6;
+        C0349t c0349t;
+        s.k kVar = (s.k) this.f29152n;
+        int e9 = kVar.e(abstractC5000P);
+        if (e9 >= 0 && (z6 = (t0.Z) kVar.l(e9)) != null) {
+            int i4 = z6.f40692a;
+            if ((i4 & i) != 0) {
+                int i6 = i4 & (~i);
+                z6.f40692a = i6;
+                if (i == 4) {
+                    c0349t = z6.f40693b;
+                } else {
+                    if (i != 8) {
+                        throw new IllegalArgumentException("Must provide flag PRE or POST");
+                    }
+                    c0349t = z6.f40694c;
                 }
-                return "video/av01";
+                if ((i6 & 12) == 0) {
+                    kVar.j(e9);
+                    z6.f40692a = 0;
+                    z6.f40693b = null;
+                    z6.f40694c = null;
+                    t0.Z.f40691d.c(z6);
+                }
+                return c0349t;
             }
-        }
-        if ("video/mv-hevc".equals(str)) {
-            return com.anythink.basead.exoplayer.k.o.i;
         }
         return null;
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:42:0x0130  */
-    /* JADX WARN: Removed duplicated region for block: B:46:0x013f A[Catch: Exception -> 0x0144, TryCatch #3 {Exception -> 0x0144, blocks: (B:34:0x010f, B:38:0x011e, B:44:0x0137, B:46:0x013f, B:47:0x0153, B:49:0x015c, B:63:0x0160, B:65:0x0170, B:67:0x0178, B:68:0x0148), top: B:33:0x010f }] */
-    /* JADX WARN: Removed duplicated region for block: B:49:0x015c A[Catch: Exception -> 0x0144, TryCatch #3 {Exception -> 0x0144, blocks: (B:34:0x010f, B:38:0x011e, B:44:0x0137, B:46:0x013f, B:47:0x0153, B:49:0x015c, B:63:0x0160, B:65:0x0170, B:67:0x0178, B:68:0x0148), top: B:33:0x010f }] */
-    /* JADX WARN: Removed duplicated region for block: B:51:0x0180  */
-    /* JADX WARN: Removed duplicated region for block: B:63:0x0160 A[Catch: Exception -> 0x0144, TryCatch #3 {Exception -> 0x0144, blocks: (B:34:0x010f, B:38:0x011e, B:44:0x0137, B:46:0x013f, B:47:0x0153, B:49:0x015c, B:63:0x0160, B:65:0x0170, B:67:0x0178, B:68:0x0148), top: B:33:0x010f }] */
-    /* JADX WARN: Removed duplicated region for block: B:68:0x0148 A[Catch: Exception -> 0x0144, TryCatch #3 {Exception -> 0x0144, blocks: (B:34:0x010f, B:38:0x011e, B:44:0x0137, B:46:0x013f, B:47:0x0153, B:49:0x015c, B:63:0x0160, B:65:0x0170, B:67:0x0178, B:68:0x0148), top: B:33:0x010f }] */
-    /* JADX WARN: Removed duplicated region for block: B:72:0x0135  */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-    */
-    public static ArrayList e(SP sp, G1.a aVar) {
-        String str;
-        int i;
-        String str2;
-        String str3;
-        boolean z3;
-        boolean z6;
-        int i6;
-        boolean isAlias;
-        SP sp2 = sp;
-        G1.a aVar2 = aVar;
-        String str4 = "secure-playback";
-        try {
-            ArrayList arrayList = new ArrayList();
-            String str5 = sp2.f27482a;
-            MediaCodecInfo[] mediaCodecInfoArr = (MediaCodecInfo[]) aVar2.f1051v;
-            int i9 = aVar2.f1050u;
-            if (mediaCodecInfoArr == null) {
-                aVar2.f1051v = new MediaCodecList(i9).getCodecInfos();
+    @Override // y8.w
+    public y8.v g() {
+        return (m8.g) this.f29152n;
+    }
+
+    @Override // t7.InterfaceC5045a
+    public Object get() {
+        return new i2.h(new O2.i(21), new G3.e(21), C4587a.f38155f, (i2.j) ((I0.j) this.f29152n).get(), (InterfaceC5045a) this.f29153u);
+    }
+
+    public void h(AbstractC5000P abstractC5000P) {
+        t0.Z z6 = (t0.Z) ((s.k) this.f29152n).getOrDefault(abstractC5000P, null);
+        if (z6 == null) {
+            return;
+        }
+        z6.f40692a &= -2;
+    }
+
+    public void i(AbstractC5000P abstractC5000P) {
+        s.e eVar = (s.e) this.f29153u;
+        int l9 = eVar.l() - 1;
+        while (true) {
+            if (l9 < 0) {
+                break;
             }
-            int length = ((MediaCodecInfo[]) aVar2.f1051v).length;
-            int i10 = 0;
-            while (i10 < length) {
-                if (((MediaCodecInfo[]) aVar2.f1051v) == null) {
-                    aVar2.f1051v = new MediaCodecList(i9).getCodecInfos();
+            if (abstractC5000P == eVar.m(l9)) {
+                Object[] objArr = eVar.f40253v;
+                Object obj = objArr[l9];
+                Object obj2 = s.e.f40250x;
+                if (obj != obj2) {
+                    objArr[l9] = obj2;
+                    eVar.f40251n = true;
                 }
-                MediaCodecInfo mediaCodecInfo = ((MediaCodecInfo[]) aVar2.f1051v)[i10];
-                if (Build.VERSION.SDK_INT >= 29) {
-                    isAlias = mediaCodecInfo.isAlias();
-                    if (isAlias) {
-                        str = str4;
-                        i = i10;
-                        i10 = i + 1;
-                        sp2 = sp;
-                        aVar2 = aVar;
-                        str4 = str;
-                    }
-                }
-                int i11 = i10;
-                String name = mediaCodecInfo.getName();
-                if (!mediaCodecInfo.isEncoder()) {
-                    String[] supportedTypes = mediaCodecInfo.getSupportedTypes();
-                    int length2 = supportedTypes.length;
-                    int i12 = 0;
-                    while (true) {
-                        if (i12 < length2) {
-                            int i13 = i12;
-                            str2 = supportedTypes[i13];
-                            if (str2.equalsIgnoreCase(str5)) {
-                                break;
-                            }
-                            i12 = i13 + 1;
-                        } else {
-                            if (str5.equals("video/dolby-vision")) {
-                                if ("OMX.MS.HEVCDV.Decoder".equals(name)) {
-                                    str2 = "video/hevcdv";
-                                } else {
-                                    if (!"OMX.RTK.video.decoder".equals(name)) {
-                                        if ("OMX.realtek.video.decoder.tunneled".equals(name)) {
-                                        }
-                                        str2 = null;
-                                    }
-                                    str2 = "video/dv_hevc";
-                                }
-                            } else if (str5.equals("video/mv-hevc")) {
-                                if ("c2.qti.mvhevc.decoder".equals(name) || "c2.qti.mvhevc.decoder.secure".equals(name)) {
-                                    str2 = "video/x-mvhevc";
-                                }
-                                str2 = null;
-                            } else if (str5.equals(com.anythink.basead.exoplayer.k.o.f8430L) && "OMX.lge.alac.decoder".equals(name)) {
-                                str2 = "audio/x-lg-alac";
-                            } else if (str5.equals(com.anythink.basead.exoplayer.k.o.f8429K) && "OMX.lge.flac.decoder".equals(name)) {
-                                str2 = "audio/x-lg-flac";
-                            } else {
-                                if (str5.equals(com.anythink.basead.exoplayer.k.o.f8468z) && "OMX.lge.ac3.decoder".equals(name)) {
-                                    str2 = "audio/lg-ac3";
-                                }
-                                str2 = null;
-                            }
-                            i10 = i + 1;
-                            sp2 = sp;
-                            aVar2 = aVar;
-                            str4 = str;
-                        }
-                    }
-                    if (str2 != null) {
-                        try {
-                            MediaCodecInfo.CodecCapabilities capabilitiesForType = mediaCodecInfo.getCapabilitiesForType(str2);
-                            boolean isFeatureSupported = capabilitiesForType.isFeatureSupported("tunneled-playback");
-                            boolean isFeatureRequired = capabilitiesForType.isFeatureRequired("tunneled-playback");
-                            String str6 = str2;
-                            try {
-                                if (sp2.f27484c) {
-                                    if (!isFeatureSupported) {
-                                        str = str4;
-                                        i = i11;
-                                    }
-                                    boolean isFeatureSupported2 = capabilitiesForType.isFeatureSupported(str4);
-                                    boolean isFeatureRequired2 = capabilitiesForType.isFeatureRequired(str4);
-                                    z3 = sp2.f27483b;
-                                    if (!z3) {
-                                    }
-                                    if (z3) {
-                                    }
-                                    i6 = Build.VERSION.SDK_INT;
-                                    str = str4;
-                                    if (i6 < 29) {
-                                    }
-                                    f(mediaCodecInfo, str5);
-                                    boolean z9 = r2;
-                                    if (i6 < 29) {
-                                    }
-                                    if (z3 == z6) {
-                                    }
-                                    i = i11;
-                                } else {
-                                    if (!isFeatureRequired) {
-                                        boolean isFeatureSupported22 = capabilitiesForType.isFeatureSupported(str4);
-                                        boolean isFeatureRequired22 = capabilitiesForType.isFeatureRequired(str4);
-                                        z3 = sp2.f27483b;
-                                        if (!z3 || !isFeatureRequired22) {
-                                            if (z3) {
-                                                z6 = isFeatureSupported22;
-                                            } else if (isFeatureSupported22) {
-                                                z6 = true;
-                                            }
-                                            i6 = Build.VERSION.SDK_INT;
-                                            str = str4;
-                                            boolean isHardwareAccelerated = i6 < 29 ? mediaCodecInfo.isHardwareAccelerated() : !f(mediaCodecInfo, str5);
-                                            f(mediaCodecInfo, str5);
-                                            boolean z92 = isHardwareAccelerated;
-                                            if (i6 < 29) {
-                                                mediaCodecInfo.isVendor();
-                                            } else {
-                                                String f3 = AbstractC3043cl.f(mediaCodecInfo.getName());
-                                                if (!f3.startsWith("omx.google.") && !f3.startsWith("c2.android.")) {
-                                                    f3.startsWith("c2.google.");
-                                                }
-                                            }
-                                            if (z3 == z6) {
-                                                i = i11;
-                                                str3 = str6;
-                                                try {
-                                                    arrayList.add(OP.a(name, str5, str3, capabilitiesForType, z92, false));
-                                                } catch (Exception e9) {
-                                                    e = e9;
-                                                    StringBuilder sb = new StringBuilder(String.valueOf(name).length() + 24 + str3.length() + 1);
-                                                    sb.append("Failed to query codec ");
-                                                    sb.append(name);
-                                                    sb.append(" (");
-                                                    sb.append(str3);
-                                                    sb.append(")");
-                                                    AbstractC2968bG.H("MediaCodecUtil", sb.toString());
-                                                    throw e;
-                                                }
-                                            }
-                                            i = i11;
-                                        }
-                                    }
-                                    str = str4;
-                                    i = i11;
-                                }
-                                i10 = i + 1;
-                                sp2 = sp;
-                                aVar2 = aVar;
-                                str4 = str;
-                            } catch (Exception e10) {
-                                e = e10;
-                                str3 = str6;
-                            }
-                        } catch (Exception e11) {
-                            e = e11;
-                            str3 = str2;
-                        }
-                    }
-                }
-                str = str4;
-                i = i11;
-                i10 = i + 1;
-                sp2 = sp;
-                aVar2 = aVar;
-                str4 = str;
+            } else {
+                l9--;
             }
-            return arrayList;
-        } catch (Exception e12) {
-            throw new TP("Failed to query underlying media codecs", e12);
+        }
+        t0.Z z6 = (t0.Z) ((s.k) this.f29152n).remove(abstractC5000P);
+        if (z6 != null) {
+            z6.f40692a = 0;
+            z6.f40693b = null;
+            z6.f40694c = null;
+            t0.Z.f40691d.c(z6);
         }
     }
 
-    public static boolean f(MediaCodecInfo mediaCodecInfo, String str) {
-        boolean isSoftwareOnly;
-        if (Build.VERSION.SDK_INT >= 29) {
-            isSoftwareOnly = mediaCodecInfo.isSoftwareOnly();
-            return isSoftwareOnly;
+    public void j(int i, int i4, int i6, int i9) {
+        CardView cardView = (CardView) this.f29153u;
+        cardView.f4608w.set(i, i4, i6, i9);
+        Rect rect = cardView.f4607v;
+        super/*android.view.View*/.setPadding(i + rect.left, i4 + rect.top, i6 + rect.right, i9 + rect.bottom);
+    }
+
+    public WP(int i) {
+        switch (i) {
+            case 7:
+                this.f29152n = new P1.l(1000L, 0);
+                this.f29153u = Q1.d.a(10, new C5184b());
+                break;
+            default:
+                this.f29152n = new s.k();
+                this.f29153u = new s.e();
+                break;
         }
-        if (H4.a(str)) {
-            return true;
-        }
-        String f3 = AbstractC3043cl.f(mediaCodecInfo.getName());
-        if (f3.startsWith("arc.")) {
-            return false;
-        }
-        if (f3.startsWith("omx.google.") || f3.startsWith("omx.ffmpeg.")) {
-            return true;
-        }
-        if ((f3.startsWith("omx.sec.") && f3.contains(".sw.")) || f3.equals("omx.qcom.video.decoder.hevcswvdec") || f3.startsWith("c2.android.") || f3.startsWith("c2.google.")) {
-            return true;
-        }
-        return (f3.startsWith("omx.") || f3.startsWith("c2.")) ? false : true;
+    }
+
+    public WP(C3451jv c3451jv) {
+        this.f29152n = new m8.g(c3451jv, ((n8.f) c3451jv.f32128x).i().g(), -1L);
+        this.f29153u = new m8.h(c3451jv, ((n8.f) c3451jv.f32128x).i().d(), -1L);
+    }
+
+    public WP(CardView cardView) {
+        this.f29153u = cardView;
     }
 }

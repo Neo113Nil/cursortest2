@@ -14,23 +14,23 @@ import java.util.List;
 public final class a implements w {
 
     /* renamed from: a, reason: collision with root package name */
-    private final n f15047a;
+    private final n f15834a;
 
     public a(n nVar) {
-        this.f15047a = nVar;
+        this.f15834a = nVar;
     }
 
     @Override // com.anythink.core.common.n.b.w
     public final af a(w.a aVar) {
         ad a9 = aVar.a();
         ad.a e9 = a9.e();
-        ae d2 = a9.d();
-        if (d2 != null) {
-            x a10 = d2.a();
+        ae d9 = a9.d();
+        if (d9 != null) {
+            x a10 = d9.a();
             if (a10 != null) {
                 e9.a("Content-Type", a10.toString());
             }
-            long b9 = d2.b();
+            long b9 = d9.b();
             if (b9 != -1) {
                 e9.a("Content-Length", Long.toString(b9));
                 e9.b("Transfer-Encoding");
@@ -43,9 +43,9 @@ public final class a implements w {
             e9.a("Host", com.anythink.core.common.n.b.a.c.a(a9.a(), false));
         }
         if (a9.a("Connection") == null) {
-            e9.a("Connection", com.anythink.expressad.foundation.g.f.g.b.f19340c);
+            e9.a("Connection", com.anythink.expressad.foundation.g.f.g.b.f20127c);
         }
-        n nVar = this.f15047a;
+        n nVar = this.f15834a;
         a9.a();
         List<m> b10 = nVar.b();
         if (!b10.isEmpty()) {
@@ -63,9 +63,9 @@ public final class a implements w {
             e9.a("Cookie", sb.toString());
         }
         af a11 = aVar.a(e9.b());
-        e.a(this.f15047a, a9.a(), a11.f());
+        e.a(this.f15834a, a9.a(), a11.f());
         af.a a12 = a11.h().a(a9);
-        if (com.anythink.expressad.foundation.g.f.g.b.f19341d.equalsIgnoreCase(a11.a("Content-Encoding")) && e.d(a11)) {
+        if (com.anythink.expressad.foundation.g.f.g.b.f20128d.equalsIgnoreCase(a11.a("Content-Encoding")) && e.d(a11)) {
             l lVar = new l(a11.g().c());
             a12.a(a11.f().b().b("Content-Encoding").b("Content-Length").a());
             a12.a(new h(a11.a("Content-Type"), -1L, com.anythink.core.common.n.c.n.a(lVar)));

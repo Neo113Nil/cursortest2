@@ -15,14 +15,14 @@ public final class C2A extends BP<Object> {
         this.A01 = size;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
     public final boolean A0K() {
         return true;
     }
 
     @Override // java.util.List
     public final Object get(int index) {
-        AbstractC2070ki.A00(index, this.A01);
+        AbstractC2090ki.A00(index, this.A01);
         return Objects.requireNonNull(this.A02[(index * 2) + this.A00]);
     }
 

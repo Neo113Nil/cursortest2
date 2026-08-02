@@ -4,9 +4,9 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.anythink.core.common.s.a.c;
 import com.facebook.ads.androidx.media3.common.Metadata;
-import com.instagram.common.viewpoint.core.AbstractC2037k9;
-import com.instagram.common.viewpoint.core.C06474v;
-import com.instagram.common.viewpoint.core.C2400qI;
+import com.instagram.common.viewpoint.core.AbstractC2057k9;
+import com.instagram.common.viewpoint.core.C06674v;
+import com.instagram.common.viewpoint.core.C2420qI;
 import com.instagram.common.viewpoint.core.C3E;
 import com.instagram.common.viewpoint.core.C5C;
 import com.instagram.common.viewpoint.core.I2;
@@ -34,30 +34,30 @@ public final class PictureFrame implements Metadata.Entry {
     	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    public static PictureFrame A00(C06474v c06474v) {
-        int A0C = c06474v.A0C();
-        String A0X = c06474v.A0X(c06474v.A0C(), AbstractC2037k9.A01);
-        String A0W = c06474v.A0W(c06474v.A0C());
-        int A0C2 = c06474v.A0C();
-        int A0C3 = c06474v.A0C();
-        int A0C4 = c06474v.A0C();
-        int A0C5 = c06474v.A0C();
-        int A0C6 = c06474v.A0C();
+    public static PictureFrame A00(C06674v c06674v) {
+        int A0C = c06674v.A0C();
+        String A0X = c06674v.A0X(c06674v.A0C(), AbstractC2057k9.A01);
+        String A0W = c06674v.A0W(c06674v.A0C());
+        int A0C2 = c06674v.A0C();
+        int A0C3 = c06674v.A0C();
+        int A0C4 = c06674v.A0C();
+        int A0C5 = c06674v.A0C();
+        int A0C6 = c06674v.A0C();
         byte[] bArr = new byte[A0C6];
-        c06474v.A0k(bArr, 0, A0C6);
+        c06674v.A0k(bArr, 0, A0C6);
         return new PictureFrame(A0C, A0X, A0W, A0C2, A0C3, A0C4, A0C5, bArr);
     }
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A08, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 23);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A08, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 23);
         }
         return new String(copyOfRange);
     }
 
     public static void A02() {
-        A08 = new byte[]{76, c.f16317b, 4, 5, 19, 3, 18, 9, 16, 20, 9, 15, 14, 93, 61, 4, 14, 25, 24, 31, 8, 87, 77, 0, 4, 0, 8, 57, 20, 29, 8, 80};
+        A08 = new byte[]{76, c.f17104b, 4, 5, 19, 3, 18, 9, 16, 20, 9, 15, 14, 93, 61, 4, 14, 25, 24, 31, 8, 87, 77, 0, 4, 0, 8, 57, 20, 29, 8, 80};
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Metadata.Entry
@@ -66,7 +66,7 @@ public final class PictureFrame implements Metadata.Entry {
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Metadata.Entry
-    public final /* synthetic */ C2400qI A9b() {
+    public final /* synthetic */ C2420qI A9b() {
         return C3E.A00(this);
     }
 
@@ -75,14 +75,14 @@ public final class PictureFrame implements Metadata.Entry {
         CREATOR = new I2();
     }
 
-    public PictureFrame(int i, String str, String str2, int i6, int i9, int i10, int i11, byte[] bArr) {
+    public PictureFrame(int i, String str, String str2, int i4, int i6, int i9, int i10, byte[] bArr) {
         this.A03 = i;
         this.A06 = str;
         this.A05 = str2;
-        this.A04 = i6;
-        this.A02 = i9;
-        this.A01 = i10;
-        this.A00 = i11;
+        this.A04 = i4;
+        this.A02 = i6;
+        this.A01 = i9;
+        this.A00 = i10;
         this.A07 = bArr;
     }
 

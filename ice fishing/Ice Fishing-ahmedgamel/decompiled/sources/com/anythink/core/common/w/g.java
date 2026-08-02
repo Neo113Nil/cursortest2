@@ -15,7 +15,7 @@ import com.anythink.core.common.v.aj;
 import com.anythink.core.common.v.l;
 import com.anythink.core.common.v.p;
 import com.anythink.core.common.x;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -29,93 +29,93 @@ import java.util.Objects;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f17093a = "g";
+    public static final String f17880a = "g";
 
     /* renamed from: b, reason: collision with root package name */
-    final int f17094b;
+    final int f17881b;
 
     /* renamed from: c, reason: collision with root package name */
-    int f17095c;
+    int f17882c;
 
     /* renamed from: d, reason: collision with root package name */
-    int f17096d;
+    int f17883d;
 
     /* renamed from: e, reason: collision with root package name */
-    long f17097e;
+    long f17884e;
 
     /* renamed from: q, reason: collision with root package name */
-    bz f17108q;
+    bz f17895q;
 
     /* renamed from: r, reason: collision with root package name */
-    bq f17109r;
+    bq f17896r;
 
     /* renamed from: s, reason: collision with root package name */
-    i f17110s;
+    i f17897s;
 
     /* renamed from: t, reason: collision with root package name */
-    ac f17111t;
+    ac f17898t;
 
     /* renamed from: u, reason: collision with root package name */
-    ac f17112u;
+    ac f17899u;
 
     /* renamed from: v, reason: collision with root package name */
-    double f17113v;
+    double f17900v;
 
     /* renamed from: w, reason: collision with root package name */
-    private List<bv> f17114w;
+    private List<bv> f17901w;
 
     /* renamed from: m, reason: collision with root package name */
-    volatile int f17104m = 0;
+    volatile int f17891m = 0;
 
     /* renamed from: n, reason: collision with root package name */
-    volatile int f17105n = 0;
+    volatile int f17892n = 0;
 
     /* renamed from: o, reason: collision with root package name */
-    volatile int f17106o = 0;
+    volatile int f17893o = 0;
 
     /* renamed from: p, reason: collision with root package name */
-    volatile int f17107p = 0;
+    volatile int f17894p = 0;
 
     /* renamed from: f, reason: collision with root package name */
-    List<bv> f17098f = Collections.synchronizedList(new ArrayList(5));
+    List<bv> f17885f = Collections.synchronizedList(new ArrayList(5));
 
     /* renamed from: g, reason: collision with root package name */
-    List<bv> f17099g = Collections.synchronizedList(new ArrayList(5));
+    List<bv> f17886g = Collections.synchronizedList(new ArrayList(5));
 
     /* renamed from: h, reason: collision with root package name */
-    List<bv> f17100h = Collections.synchronizedList(new ArrayList(2));
+    List<bv> f17887h = Collections.synchronizedList(new ArrayList(2));
     List<f> i = Collections.synchronizedList(new ArrayList(2));
 
     /* renamed from: l, reason: collision with root package name */
-    List<bv> f17103l = Collections.synchronizedList(new ArrayList(2));
+    List<bv> f17890l = Collections.synchronizedList(new ArrayList(2));
 
     /* renamed from: j, reason: collision with root package name */
-    List<bv> f17101j = Collections.synchronizedList(new ArrayList(2));
+    List<bv> f17888j = Collections.synchronizedList(new ArrayList(2));
 
     /* renamed from: k, reason: collision with root package name */
-    List<bv> f17102k = Collections.synchronizedList(new ArrayList(2));
+    List<bv> f17889k = Collections.synchronizedList(new ArrayList(2));
 
     public g(h hVar) {
-        this.f17095c = 1;
-        this.f17098f.addAll(hVar.f17119d);
-        this.f17101j.addAll(hVar.f17121f);
-        this.f17102k.addAll(hVar.f17122g);
-        this.f17113v = hVar.f17123h;
-        this.f17103l.addAll(hVar.f17130p);
-        this.f17110s = hVar.f17126l;
-        this.f17111t = hVar.f17128n;
-        this.f17112u = hVar.f17129o;
-        this.f17094b = hVar.f17118c.g();
-        this.f17095c = hVar.f17118c.e();
-        this.f17096d = hVar.f17118c.f();
-        this.f17097e = hVar.f17118c.i();
-        List<bv> list = hVar.f17120e;
+        this.f17882c = 1;
+        this.f17885f.addAll(hVar.f17906d);
+        this.f17888j.addAll(hVar.f17908f);
+        this.f17889k.addAll(hVar.f17909g);
+        this.f17900v = hVar.f17910h;
+        this.f17890l.addAll(hVar.f17917p);
+        this.f17897s = hVar.f17913l;
+        this.f17898t = hVar.f17915n;
+        this.f17899u = hVar.f17916o;
+        this.f17881b = hVar.f17905c.g();
+        this.f17882c = hVar.f17905c.e();
+        this.f17883d = hVar.f17905c.f();
+        this.f17884e = hVar.f17905c.i();
+        List<bv> list = hVar.f17907e;
         if (list != null) {
-            this.f17100h.addAll(list);
+            this.f17887h.addAll(list);
         }
-        this.f17114w = Collections.synchronizedList(new ArrayList(3));
-        this.f17108q = hVar.f17125k;
-        this.f17109r = hVar.f17127m;
+        this.f17901w = Collections.synchronizedList(new ArrayList(3));
+        this.f17895q = hVar.f17912k;
+        this.f17896r = hVar.f17914m;
     }
 
     private bv A() {
@@ -123,7 +123,7 @@ public final class g {
         f fVar;
         synchronized (this.i) {
             try {
-                bvVar = (this.i.size() <= 0 || (fVar = this.i.get(0)) == null) ? null : fVar.f17091a;
+                bvVar = (this.i.size() <= 0 || (fVar = this.i.get(0)) == null) ? null : fVar.f17878a;
             } catch (Throwable th) {
                 throw th;
             }
@@ -152,54 +152,54 @@ public final class g {
     }
 
     private List<bv> w() {
-        return this.f17098f;
+        return this.f17885f;
     }
 
     private bv x() {
-        if (this.f17098f.size() > 0) {
-            return this.f17098f.get(0);
+        if (this.f17885f.size() > 0) {
+            return this.f17885f.get(0);
         }
         return null;
     }
 
     private List<bv> y() {
-        return this.f17099g;
+        return this.f17886g;
     }
 
     private List<bv> z() {
-        return this.f17100h;
+        return this.f17887h;
     }
 
     public final i a() {
-        return this.f17110s;
+        return this.f17897s;
     }
 
     public final ac b() {
-        return this.f17111t;
+        return this.f17898t;
     }
 
     public final int c() {
-        return this.f17098f.size();
+        return this.f17885f.size();
     }
 
     public final int d() {
-        return this.f17099g.size();
+        return this.f17886g.size();
     }
 
     public final int e() {
-        return this.f17100h.size();
+        return this.f17887h.size();
     }
 
     public final bv f() {
-        return this.f17100h.remove(0);
+        return this.f17887h.remove(0);
     }
 
     public final boolean g() {
-        return this.f17100h.size() == 0 && this.f17098f.size() == 0;
+        return this.f17887h.size() == 0 && this.f17885f.size() == 0;
     }
 
     public final void h() {
-        this.f17100h.clear();
+        this.f17887h.clear();
     }
 
     public final int i() {
@@ -211,44 +211,44 @@ public final class g {
     }
 
     public final boolean k() {
-        List<bv> list = this.f17101j;
-        if (list == null && this.f17102k == null) {
+        List<bv> list = this.f17888j;
+        if (list == null && this.f17889k == null) {
             return true;
         }
-        return list.size() == 0 && this.f17102k.size() == 0;
+        return list.size() == 0 && this.f17889k.size() == 0;
     }
 
     public final List<bv> l() {
         ArrayList arrayList = new ArrayList(3);
-        arrayList.addAll(this.f17101j);
-        arrayList.addAll(this.f17102k);
-        this.f17101j.clear();
-        this.f17102k.clear();
+        arrayList.addAll(this.f17888j);
+        arrayList.addAll(this.f17889k);
+        this.f17888j.clear();
+        this.f17889k.clear();
         return arrayList;
     }
 
     public final int m() {
-        return this.f17104m;
+        return this.f17891m;
     }
 
     public final int n() {
-        return this.f17105n;
+        return this.f17892n;
     }
 
     public final int o() {
-        return this.f17106o;
+        return this.f17893o;
     }
 
     public final bz p() {
-        return this.f17108q;
+        return this.f17895q;
     }
 
     public final bq q() {
-        return this.f17109r;
+        return this.f17896r;
     }
 
     public final ac r() {
-        return this.f17112u;
+        return this.f17899u;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -259,12 +259,12 @@ public final class g {
     /* JADX WARN: Type inference failed for: r1v4, types: [java.util.List, java.util.List<com.anythink.core.common.h.bv>] */
     public final List<bv> s() {
         ?? arrayList;
-        int i = this.f17095c;
+        int i = this.f17882c;
         if (i == 1 || i == 3) {
             arrayList = new ArrayList();
-            int min = Math.min(this.f17096d, this.f17098f.size());
-            for (int i6 = 0; i6 < min; i6++) {
-                arrayList.add(this.f17098f.get(i6));
+            int min = Math.min(this.f17883d, this.f17885f.size());
+            for (int i4 = 0; i4 < min; i4++) {
+                arrayList.add(this.f17885f.get(i4));
             }
         } else {
             arrayList = i == 2 ? b(1) : 0;
@@ -273,17 +273,17 @@ public final class g {
             arrayList.size();
         }
         if (arrayList != 0 && arrayList.size() > 0) {
-            this.f17098f.removeAll(arrayList);
+            this.f17885f.removeAll(arrayList);
         }
         return arrayList;
     }
 
     public final boolean t() {
-        return this.f17098f.size() == 0 && this.f17100h.size() == 0 && this.i.size() == 0 && this.f17099g.size() == 0;
+        return this.f17885f.size() == 0 && this.f17887h.size() == 0 && this.i.size() == 0 && this.f17886g.size() == 0;
     }
 
     public final boolean u() {
-        return this.f17105n < this.f17096d;
+        return this.f17892n < this.f17883d;
     }
 
     public final bv v() {
@@ -304,23 +304,23 @@ public final class g {
     public static double j(bv bvVar) {
         ad R8;
         double a9 = p.a(bvVar);
-        return (bvVar.an() && a9 == 10000.0d && (R8 = bvVar.R()) != null) ? R8.f13432o : a9;
+        return (bvVar.an() && a9 == 10000.0d && (R8 = bvVar.R()) != null) ? R8.f14218o : a9;
     }
 
     public final void a(List<bv> list) {
-        this.f17099g.addAll(list);
+        this.f17886g.addAll(list);
     }
 
     public final void b(bv bvVar) {
-        this.f17099g.remove(bvVar);
+        this.f17886g.remove(bvVar);
     }
 
     public final void c(bv bvVar) {
-        this.f17103l.remove(bvVar);
+        this.f17890l.remove(bvVar);
     }
 
     public final void d(bv bvVar) {
-        i iVar = this.f17110s;
+        i iVar = this.f17897s;
         if (iVar != null) {
             iVar.a(bvVar);
         }
@@ -331,7 +331,7 @@ public final class g {
         if (bvVar == null || !bvVar.o() || (R8 = bvVar.R()) == null) {
             return;
         }
-        R8.a(this.f17111t);
+        R8.a(this.f17898t);
     }
 
     public final void f(bv bvVar) {
@@ -339,53 +339,53 @@ public final class g {
         if (bvVar == null || !bvVar.o() || (S8 = bvVar.S()) == null) {
             return;
         }
-        S8.a(this.f17111t);
+        S8.a(this.f17898t);
     }
 
     public final boolean g(bv bvVar) {
-        ac acVar = this.f17111t;
-        boolean z3 = false;
+        ac acVar = this.f17898t;
+        boolean z6 = false;
         if (acVar != null && bvVar != null) {
             bv a9 = acVar.a();
             if (a9 == null || l.a(bvVar, a9) < 0 || (l.a(bvVar, a9) == 0 && bvVar.ax() < a9.ax())) {
-                z3 = true;
+                z6 = true;
             }
-            if (z3) {
-                this.f17111t.a(bvVar);
+            if (z6) {
+                this.f17898t.a(bvVar);
             }
             if (a9 == null) {
-                return z3;
+                return z6;
             }
-            if (z3) {
-                this.f17111t.b(a9);
-                return z3;
+            if (z6) {
+                this.f17898t.b(a9);
+                return z6;
             }
-            bv b9 = this.f17111t.b();
+            bv b9 = this.f17898t.b();
             if (b9 == null || l.a(bvVar, b9) < 0 || (l.a(bvVar, b9) == 0 && bvVar.ax() < b9.ax())) {
-                this.f17111t.b(bvVar);
+                this.f17898t.b(bvVar);
             }
         }
-        return z3;
+        return z6;
     }
 
     public final void h(bv bvVar) {
-        synchronized (this.f17114w) {
+        synchronized (this.f17901w) {
             try {
-                if (this.f17114w.size() == 0) {
-                    this.f17114w.add(bvVar);
+                if (this.f17901w.size() == 0) {
+                    this.f17901w.add(bvVar);
                 } else {
                     double a9 = p.a(bvVar);
                     int i = 0;
                     while (true) {
-                        if (i >= this.f17114w.size()) {
+                        if (i >= this.f17901w.size()) {
                             break;
                         }
-                        if (a9 > p.a(this.f17114w.get(i))) {
-                            this.f17114w.add(i, bvVar);
+                        if (a9 > p.a(this.f17901w.get(i))) {
+                            this.f17901w.add(i, bvVar);
                             break;
                         } else {
-                            if (i == this.f17114w.size() - 1) {
-                                this.f17114w.add(bvVar);
+                            if (i == this.f17901w.size() - 1) {
+                                this.f17901w.add(bvVar);
                                 break;
                             }
                             i++;
@@ -402,11 +402,11 @@ public final class g {
         String str = "";
         for (int i = 0; i < list.size(); i++) {
             if (i > 0) {
-                str = AbstractC4404f.f(str, ",");
+                str = Wv.g(str, ",");
             }
             StringBuilder sb = new StringBuilder();
             sb.append(list.get(i).g());
-            str = AbstractC4404f.f(str, sb.toString());
+            str = Wv.g(str, sb.toString());
         }
         return str;
     }
@@ -416,22 +416,22 @@ public final class g {
     }
 
     public final void a(bv bvVar) {
-        this.f17099g.add(bvVar);
+        this.f17886g.add(bvVar);
     }
 
     public final void b(List<bv> list) {
-        this.f17103l.addAll(list);
+        this.f17890l.addAll(list);
     }
 
     public final void a(bv bvVar, int i) {
         synchronized (this.i) {
             try {
                 Iterator<f> it = this.i.iterator();
-                int i6 = 0;
-                while (it.hasNext() && l.a(it.next().f17091a, bvVar) < 0) {
-                    i6++;
+                int i4 = 0;
+                while (it.hasNext() && l.a(it.next().f17878a, bvVar) < 0) {
+                    i4++;
                 }
-                this.i.add(i6, new f(bvVar, i));
+                this.i.add(i4, new f(bvVar, i));
             } catch (Throwable th) {
                 throw th;
             }
@@ -442,55 +442,55 @@ public final class g {
         List<bv> list;
         int min;
         if (i != 2) {
-            list = this.f17098f;
+            list = this.f17885f;
         } else {
-            list = this.f17100h;
+            list = this.f17887h;
         }
         ArrayList arrayList = new ArrayList();
         if (list != null && list.size() != 0) {
-            int i6 = 0;
+            int i4 = 0;
             bv bvVar = list.get(0);
             if (i == 2) {
                 arrayList.add(bvVar);
             } else {
                 bv a9 = a(true);
-                int i9 = this.f17095c;
-                if (i9 == 1) {
-                    int i10 = this.f17096d - this.f17105n;
+                int i6 = this.f17882c;
+                if (i6 == 1) {
+                    int i9 = this.f17883d - this.f17892n;
                     list.size();
-                    int min2 = Math.min(i10, list.size());
+                    int min2 = Math.min(i9, list.size());
                     if (min2 > 0) {
-                        while (i6 < min2) {
-                            bv bvVar2 = list.get(i6);
+                        while (i4 < min2) {
+                            bv bvVar2 = list.get(i4);
                             if (l.a(bvVar2, a9) >= 0) {
                                 break;
                             }
                             arrayList.add(bvVar2);
-                            i6++;
+                            i4++;
                         }
                     }
-                } else if (i9 == 2) {
-                    boolean z3 = l.a(bvVar, a9) < 0;
-                    if (this.f17107p == 0 && z3) {
+                } else if (i6 == 2) {
+                    boolean z6 = l.a(bvVar, a9) < 0;
+                    if (this.f17894p == 0 && z6) {
                         double a10 = p.a(bvVar);
                         int size = list.size();
-                        while (i6 < size) {
-                            bv bvVar3 = list.get(i6);
+                        while (i4 < size) {
+                            bv bvVar3 = list.get(i4);
                             if (p.a(bvVar3) == a10) {
                                 arrayList.add(bvVar3);
                             }
-                            i6++;
+                            i4++;
                         }
-                        this.f17107p = arrayList.size();
+                        this.f17894p = arrayList.size();
                     }
-                } else if (i9 == 3 && this.f17105n == 0 && (min = Math.min(this.f17096d, list.size())) > 0) {
-                    while (i6 < min) {
-                        bv bvVar4 = list.get(i6);
+                } else if (i6 == 3 && this.f17892n == 0 && (min = Math.min(this.f17883d, list.size())) > 0) {
+                    while (i4 < min) {
+                        bv bvVar4 = list.get(i4);
                         if (l.a(bvVar4, a9) >= 0) {
                             break;
                         }
                         arrayList.add(bvVar4);
-                        i6++;
+                        i4++;
                     }
                     arrayList.size();
                 }
@@ -505,10 +505,10 @@ public final class g {
     public final ATRequestingInfo d(bv bvVar, n nVar) {
         List list;
         List list2;
-        synchronized (this.f17099g) {
+        synchronized (this.f17886g) {
             try {
                 list = null;
-                for (bv bvVar2 : this.f17099g) {
+                for (bv bvVar2 : this.f17886g) {
                     if (l.a(bvVar2, bvVar) < 0) {
                         Objects.toString(bvVar2);
                         n af = nVar.af();
@@ -546,11 +546,11 @@ public final class g {
                 }
             });
         }
-        if (this.f17103l.size() > 0) {
-            synchronized (this.f17103l) {
+        if (this.f17890l.size() > 0) {
+            synchronized (this.f17890l) {
                 try {
                     list2 = null;
-                    for (bv bvVar3 : this.f17103l) {
+                    for (bv bvVar3 : this.f17890l) {
                         Objects.toString(bvVar3);
                         n af2 = nVar.af();
                         aj.a(af2, bvVar3, 0, false);
@@ -580,22 +580,22 @@ public final class g {
         if (bvVar == null) {
             return false;
         }
-        int d2 = bvVar.d();
-        return d2 == 4 || d2 == 3;
+        int d9 = bvVar.d();
+        return d9 == 4 || d9 == 3;
     }
 
-    public final void a(int i, int i6) {
-        this.f17104m += i;
-        if (i6 != 2) {
-            this.f17105n += i;
+    public final void a(int i, int i4) {
+        this.f17891m += i;
+        if (i4 != 2) {
+            this.f17892n += i;
         } else {
-            this.f17106o += i;
+            this.f17893o += i;
         }
     }
 
     public final void a(int i) {
-        if (this.f17095c == 2 && i == 1) {
-            this.f17107p--;
+        if (this.f17882c == 2 && i == 1) {
+            this.f17894p--;
         }
     }
 
@@ -611,38 +611,38 @@ public final class g {
         com.anythink.core.b.d.c.a(S8, new aw(5, bvVar, nVar), true, 31);
     }
 
-    private double c(boolean z3) {
-        synchronized (this.f17114w) {
+    private double c(boolean z6) {
+        synchronized (this.f17901w) {
             try {
-                int size = this.f17114w.size();
+                int size = this.f17901w.size();
                 if (size == 0) {
                     return 0.0d;
                 }
-                int i = this.f17094b - 1;
-                int i6 = size - 1;
-                if (z3 && i6 < i) {
+                int i = this.f17881b - 1;
+                int i4 = size - 1;
+                if (z6 && i4 < i) {
                     return 0.0d;
                 }
-                return p.a(this.f17114w.get(Math.min(i, i6)));
+                return p.a(this.f17901w.get(Math.min(i, i4)));
             } catch (Throwable th) {
                 throw th;
             }
         }
     }
 
-    public final bv a(boolean z3) {
-        synchronized (this.f17114w) {
+    public final bv a(boolean z6) {
+        synchronized (this.f17901w) {
             try {
-                int size = this.f17114w.size();
+                int size = this.f17901w.size();
                 if (size == 0) {
                     return null;
                 }
-                int i = this.f17094b - 1;
-                int i6 = size - 1;
-                if (z3 && i6 < i) {
+                int i = this.f17881b - 1;
+                int i4 = size - 1;
+                if (z6 && i4 < i) {
                     return null;
                 }
-                bv bvVar = this.f17114w.get(Math.min(i, i6));
+                bv bvVar = this.f17901w.get(Math.min(i, i4));
                 p.a(bvVar);
                 return bvVar;
             } catch (Throwable th) {
@@ -664,11 +664,11 @@ public final class g {
 
     public final void a(n nVar) {
         ArrayList arrayList = new ArrayList(5);
-        synchronized (this.f17114w) {
-            a(arrayList, this.f17114w);
+        synchronized (this.f17901w) {
+            a(arrayList, this.f17901w);
         }
-        synchronized (this.f17099g) {
-            a(arrayList, this.f17099g);
+        synchronized (this.f17886g) {
+            a(arrayList, this.f17886g);
         }
         Iterator it = arrayList.iterator();
         while (it.hasNext()) {
@@ -680,9 +680,9 @@ public final class g {
         List<bv> list;
         try {
             if (i != 2) {
-                list = this.f17098f;
+                list = this.f17885f;
             } else {
-                list = this.f17100h;
+                list = this.f17887h;
             }
             synchronized (list) {
                 p.a(list, bvVar);
@@ -692,9 +692,9 @@ public final class g {
         }
     }
 
-    public final bv b(boolean z3) {
+    public final bv b(boolean z6) {
         bv a9;
-        if (!z3 || (a9 = this.f17111t.a()) == null) {
+        if (!z6 || (a9 = this.f17898t.a()) == null) {
             return null;
         }
         if (!a9.o()) {
@@ -704,8 +704,8 @@ public final class g {
         if (a9.av() == 1) {
             return null;
         }
-        synchronized (this.f17099g) {
-            for (bv bvVar : this.f17099g) {
+        synchronized (this.f17886g) {
+            for (bv bvVar : this.f17886g) {
                 if (l.a(bvVar, a9) < 0) {
                     bvVar.toString();
                     return null;
@@ -714,7 +714,7 @@ public final class g {
             synchronized (this.i) {
                 Iterator<f> it = this.i.iterator();
                 while (it.hasNext()) {
-                    bv bvVar2 = it.next().f17091a;
+                    bv bvVar2 = it.next().f17878a;
                     if (l.a(bvVar2, a9) < 0) {
                         bvVar2.toString();
                         return null;
@@ -726,69 +726,69 @@ public final class g {
         }
     }
 
-    private static void a(bv bvVar, n nVar, boolean z3, int i) {
+    private static void a(bv bvVar, n nVar, boolean z6, int i) {
         ad R8 = bvVar.R();
         if (R8 != null) {
-            com.anythink.core.b.d.c.a(R8, new aw(2, bvVar, nVar), z3, i);
+            com.anythink.core.b.d.c.a(R8, new aw(2, bvVar, nVar), z6, i);
         }
     }
 
     private void a(List<bv> list, List<bv> list2) {
         int as;
         int size = list2.size();
-        int size2 = this.f17114w.size();
+        int size2 = this.f17901w.size();
         for (int i = 0; i < size; i++) {
             bv bvVar = list2.get(i);
-            if (bvVar.o() && (as = bvVar.as()) > 0 && as <= size2 && l.a(bvVar, this.f17114w.get(as - 1)) > 0) {
+            if (bvVar.o() && (as = bvVar.as()) > 0 && as <= size2 && l.a(bvVar, this.f17901w.get(as - 1)) > 0) {
                 list.add(bvVar);
             }
         }
     }
 
-    public final boolean a(bv bvVar, boolean z3) {
+    public final boolean a(bv bvVar, boolean z6) {
         Iterator<bv> it;
-        double d2;
+        double d9;
         if (bvVar.br()) {
             return true;
         }
         double a9 = p.a(bvVar);
         double c9 = c(true);
-        synchronized (this.f17099g) {
+        synchronized (this.f17886g) {
             try {
-                it = this.f17099g.iterator();
+                it = this.f17886g.iterator();
             } catch (Throwable th) {
                 throw th;
             }
             while (true) {
                 if (!it.hasNext()) {
-                    d2 = 0.0d;
+                    d9 = 0.0d;
                     break;
                 }
                 bv next = it.next();
-                d2 = p.a(next);
-                if (z3) {
-                    if (next.o() && d2 > p.a(bvVar)) {
+                d9 = p.a(next);
+                if (z6) {
+                    if (next.o() && d9 > p.a(bvVar)) {
                         break;
                     }
-                } else if (d2 > p.a(bvVar)) {
+                } else if (d9 > p.a(bvVar)) {
                     break;
                 }
                 throw th;
             }
         }
-        return a9 > Math.max(c9, d2);
+        return a9 > Math.max(c9, d9);
     }
 
     public final void b(n nVar) {
         bv bvVar;
-        synchronized (this.f17098f) {
+        synchronized (this.f17885f) {
             try {
-                for (bv bvVar2 : this.f17098f) {
+                for (bv bvVar2 : this.f17885f) {
                     if (bvVar2 != null && bvVar2.o()) {
                         b(bvVar2, nVar);
                     }
                 }
-                this.f17098f.clear();
+                this.f17885f.clear();
             } catch (Throwable th) {
                 throw th;
             }
@@ -796,8 +796,8 @@ public final class g {
         synchronized (this.i) {
             try {
                 for (f fVar : this.i) {
-                    if (fVar != null && (bvVar = fVar.f17091a) != null && bvVar.o()) {
-                        b(fVar.f17091a, nVar);
+                    if (fVar != null && (bvVar = fVar.f17878a) != null && bvVar.o()) {
+                        b(fVar.f17878a, nVar);
                     }
                 }
                 this.i.clear();
@@ -805,8 +805,8 @@ public final class g {
                 throw th2;
             }
         }
-        synchronized (this.f17100h) {
-            this.f17100h.clear();
+        synchronized (this.f17887h) {
+            this.f17887h.clear();
         }
     }
 
@@ -818,24 +818,24 @@ public final class g {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static boolean a(bv bvVar, j jVar) {
-        boolean z3 = bvVar.af() == 1;
-        if (z3) {
+        boolean z6 = bvVar.af() == 1;
+        if (z6) {
             int q8 = bvVar.q();
             if (q8 != 1 && q8 != 3) {
                 if (q8 == 6) {
-                    if (jVar.f17138g) {
+                    if (jVar.f17925g) {
                         return false;
                     }
-                    jVar.f17138g = true;
-                    return z3;
+                    jVar.f17925g = true;
+                    return z6;
                 }
             }
-            if (jVar.f17137f) {
+            if (jVar.f17924f) {
                 return false;
             }
-            jVar.f17137f = true;
+            jVar.f17924f = true;
         }
-        return z3;
+        return z6;
     }
 
     public static void a(Context context, String str, String str2, bv bvVar, bv bvVar2) {
@@ -860,21 +860,21 @@ public final class g {
     }
 
     public static boolean a(String str, bv bvVar, n nVar) {
-        boolean z3 = false;
+        boolean z6 = false;
         try {
             if (bvVar.o()) {
                 ad R8 = bvVar.R();
                 com.anythink.core.b.f.a().a(str, R8);
                 if (R8 != null && R8.a()) {
-                    z3 = true;
+                    z6 = true;
                 }
-                if (z3 && R8 != null) {
+                if (z6 && R8 != null) {
                     com.anythink.core.b.d.c.a(R8, new aw(1, bvVar, nVar), true, 25);
                 }
             }
         } catch (Throwable unused) {
         }
-        return z3;
+        return z6;
     }
 
     public static void b(bv bvVar, n nVar) {
@@ -883,11 +883,11 @@ public final class g {
         }
     }
 
-    public final long a(boolean z3, long j6) {
-        if (this.f17100h.size() <= 0) {
+    public final long a(boolean z6, long j6) {
+        if (this.f17887h.size() <= 0) {
             return -1L;
         }
-        if (this.f17098f.size() == 0 && z3) {
+        if (this.f17885f.size() == 0 && z6) {
             return 0L;
         }
         return j6;
@@ -900,7 +900,7 @@ public final class g {
         if (it != null) {
             while (it.hasNext()) {
                 e value = it.next().getValue();
-                if (value != null && !value.i && (bvVar = value.f17058c) != null && (bvVar2 == null || l.a(bvVar, bvVar2) < 0)) {
+                if (value != null && !value.i && (bvVar = value.f17845c) != null && (bvVar2 == null || l.a(bvVar, bvVar2) < 0)) {
                     bvVar2 = bvVar;
                 }
             }
@@ -908,15 +908,15 @@ public final class g {
         return bvVar2;
     }
 
-    public final boolean a(boolean z3, bv bvVar) {
+    public final boolean a(boolean z6, bv bvVar) {
         bv bvVar2;
-        if (!z3) {
+        if (!z6) {
             return false;
         }
-        synchronized (this.f17099g) {
+        synchronized (this.f17886g) {
             try {
                 bvVar2 = null;
-                for (bv bvVar3 : this.f17099g) {
+                for (bv bvVar3 : this.f17886g) {
                     if (l.a(bvVar3, bvVar2) < 0) {
                         bvVar2 = bvVar3;
                     }
@@ -934,19 +934,19 @@ public final class g {
 
     public final Map<String, Double> a(List<bv> list, bv bvVar) {
         HashMap hashMap = new HashMap();
-        double d2 = this.f17113v;
+        double d9 = this.f17900v;
         double a9 = p.a(bvVar);
-        if (a9 > d2) {
-            d2 = a9;
+        if (a9 > d9) {
+            d9 = a9;
         }
         if (list != null) {
             for (bv bvVar2 : list) {
                 double ar = bvVar2.ar();
-                String z3 = bvVar2.z();
-                if (ar <= d2) {
-                    ar = d2;
+                String z6 = bvVar2.z();
+                if (ar <= d9) {
+                    ar = d9;
                 }
-                hashMap.put(z3, Double.valueOf(ar));
+                hashMap.put(z6, Double.valueOf(ar));
             }
         }
         return hashMap;

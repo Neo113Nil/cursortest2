@@ -2,87 +2,87 @@ package com.google.android.gms.internal.ads;
 
 import android.content.Context;
 import android.os.Bundle;
-import v2.C5110a;
+import x2.C5189a;
 
 /* loaded from: classes2.dex */
 public final class Or implements Ps {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f26663a;
+    public final /* synthetic */ int f27446a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Object f26664b;
+    public final Object f27447b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Object f26665c;
+    public final Object f27448c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final Object f26666d;
+    public final Object f27449d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final Object f26667e;
+    public final Object f27450e;
 
-    public Or(Context context, C3360ig c3360ig, C3052cu c3052cu, C5110a c5110a) {
-        this.f26663a = 6;
-        this.f26665c = context;
-        this.f26666d = c3360ig;
-        this.f26664b = c3052cu;
-        this.f26667e = c5110a;
+    public Or(Context context, C3383ig c3383ig, C3075cu c3075cu, C5189a c5189a) {
+        this.f27446a = 6;
+        this.f27448c = context;
+        this.f27449d = c3383ig;
+        this.f27447b = c3075cu;
+        this.f27450e = c5189a;
     }
 
-    public static final int a(float f3, int i) {
-        if (f3 == 0.0f) {
+    public static final int a(float f2, int i) {
+        if (f2 == 0.0f) {
             return 0;
         }
-        return (int) Math.ceil(i / f3);
+        return (int) Math.ceil(i / f2);
     }
 
-    public static final G.e b(G.e eVar, float f3) {
-        return f3 == 0.0f ? G.e.f1004e : G.e.b((int) Math.ceil(eVar.f1005a / f3), (int) Math.ceil(eVar.f1006b / f3), (int) Math.ceil(eVar.f1007c / f3), (int) Math.ceil(eVar.f1008d / f3));
+    public static final G.e b(G.e eVar, float f2) {
+        return f2 == 0.0f ? G.e.f1030e : G.e.b((int) Math.ceil(eVar.f1031a / f2), (int) Math.ceil(eVar.f1032b / f2), (int) Math.ceil(eVar.f1033c / f2), (int) Math.ceil(eVar.f1034d / f2));
     }
 
     @Override // com.google.android.gms.internal.ads.Ps
-    public final N3.a c() {
-        C2943as c2943as;
-        switch (this.f26663a) {
+    public final P3.a c() {
+        C2966as c2966as;
+        switch (this.f27446a) {
             case 0:
-                AbstractC3569ma.a((Context) this.f26665c);
-                return ((C3360ig) this.f26666d).b(new CallableC3549m7(7, this));
+                AbstractC3592ma.a((Context) this.f27448c);
+                return ((C3383ig) this.f27449d).b(new CallableC3572m7(7, this));
             case 1:
-                return QC.u(((C3695os) this.f26666d).c(), new C2722Pe(3, this), AbstractC3413jg.f31275h);
+                return QC.u(((C3718os) this.f27449d).c(), new C2742Pe(3, this), AbstractC3436jg.f32062h);
             case 2:
-                C3301ha c3301ha = AbstractC3569ma.cd;
-                q2.r rVar = q2.r.f40207e;
-                boolean booleanValue = ((Boolean) rVar.f40210c.a(c3301ha)).booleanValue();
-                C2997bs c2997bs = (C2997bs) this.f26667e;
-                if (booleanValue && (c2943as = c2997bs.f29340b) != null) {
-                    return QC.c(c2943as);
+                C3324ha c3324ha = AbstractC3592ma.cd;
+                s2.r rVar = s2.r.f40506e;
+                boolean booleanValue = ((Boolean) rVar.f40509c.a(c3324ha)).booleanValue();
+                C3020bs c3020bs = (C3020bs) this.f27450e;
+                if (booleanValue && (c2966as = c3020bs.f30128b) != null) {
+                    return QC.c(c2966as);
                 }
-                C3301ha c3301ha2 = AbstractC3569ma.f32177Y1;
-                SharedPreferencesOnSharedPreferenceChangeListenerC3461ka sharedPreferencesOnSharedPreferenceChangeListenerC3461ka = rVar.f40210c;
-                if (SK.n((String) sharedPreferencesOnSharedPreferenceChangeListenerC3461ka.a(c3301ha2)) || (!((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3461ka.a(c3301ha)).booleanValue() && (c2997bs.f29339a.get() || !((C2494Bo) this.f26664b).f23954b))) {
-                    return QC.c(new C2943as(0, new Bundle()));
+                C3324ha c3324ha2 = AbstractC3592ma.f32956Y1;
+                SharedPreferencesOnSharedPreferenceChangeListenerC3484ka sharedPreferencesOnSharedPreferenceChangeListenerC3484ka = rVar.f40509c;
+                if (SK.n((String) sharedPreferencesOnSharedPreferenceChangeListenerC3484ka.a(c3324ha2)) || (!((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3484ka.a(c3324ha)).booleanValue() && (c3020bs.f30127a.get() || !((C2531Co) this.f27447b).f24967b))) {
+                    return QC.c(new C2966as(0, new Bundle()));
                 }
-                c2997bs.f29339a.set(true);
-                return ((C3360ig) this.f26666d).b(new CallableC3549m7(9, this));
+                c3020bs.f30127a.set(true);
+                return ((C3383ig) this.f27449d).b(new CallableC3572m7(9, this));
             case 3:
-                return ((C3360ig) this.f26666d).b(new CallableC3549m7(15, this));
+                return ((C3383ig) this.f27449d).b(new CallableC3572m7(15, this));
             case 4:
-                return ((C3360ig) this.f26666d).b(new CallableC3549m7(19, this));
+                return ((C3383ig) this.f27449d).b(new CallableC3572m7(19, this));
             case 5:
-                return ((C3360ig) this.f26666d).b(new CallableC3549m7(21, this));
+                return ((C3383ig) this.f27449d).b(new CallableC3572m7(21, this));
             case 6:
-                return ((C3360ig) this.f26666d).b(new CallableC3549m7(24, this));
+                return ((C3383ig) this.f27449d).b(new CallableC3572m7(24, this));
             case 7:
-                return ((C3360ig) this.f26666d).b(new CallableC3549m7(26, this));
+                return ((C3383ig) this.f27449d).b(new CallableC3572m7(26, this));
             default:
-                return ((C3360ig) this.f26666d).b(new CallableC3549m7(29, this));
+                return ((C3383ig) this.f27449d).b(new CallableC3572m7(29, this));
         }
     }
 
     @Override // com.google.android.gms.internal.ads.Ps
     public final int f() {
-        switch (this.f26663a) {
+        switch (this.f27446a) {
             case 0:
                 return 3;
             case 1:
@@ -104,19 +104,19 @@ public final class Or implements Ps {
         }
     }
 
-    public /* synthetic */ Or(C3360ig c3360ig, Object obj, Object obj2, Object obj3, int i) {
-        this.f26663a = i;
-        this.f26666d = c3360ig;
-        this.f26665c = obj;
-        this.f26664b = obj2;
-        this.f26667e = obj3;
+    public /* synthetic */ Or(C3383ig c3383ig, Object obj, Object obj2, Object obj3, int i) {
+        this.f27446a = i;
+        this.f27449d = c3383ig;
+        this.f27448c = obj;
+        this.f27447b = obj2;
+        this.f27450e = obj3;
     }
 
     public /* synthetic */ Or(Object obj, Object obj2, Object obj3, Object obj4, int i) {
-        this.f26663a = i;
-        this.f26666d = obj;
-        this.f26664b = obj2;
-        this.f26665c = obj3;
-        this.f26667e = obj4;
+        this.f27446a = i;
+        this.f27449d = obj;
+        this.f27447b = obj2;
+        this.f27448c = obj3;
+        this.f27450e = obj4;
     }
 }

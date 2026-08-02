@@ -8,5 +8,5 @@ public interface D {
     boolean a(String str, JSONObject jSONObject);
 
     /* renamed from: c */
-    Executor mo6c();
+    Executor mo4c();
 }

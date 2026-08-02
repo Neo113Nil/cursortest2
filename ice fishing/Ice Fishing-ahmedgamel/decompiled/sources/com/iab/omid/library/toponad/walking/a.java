@@ -14,85 +14,85 @@ import java.util.WeakHashMap;
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private final HashMap<View, String> f36310a = new HashMap<>();
+    private final HashMap<View, String> f37077a = new HashMap<>();
 
     /* renamed from: b, reason: collision with root package name */
-    private final HashMap<View, C0172a> f36311b = new HashMap<>();
+    private final HashMap<View, C0172a> f37078b = new HashMap<>();
 
     /* renamed from: c, reason: collision with root package name */
-    private final HashMap<String, View> f36312c = new HashMap<>();
+    private final HashMap<String, View> f37079c = new HashMap<>();
 
     /* renamed from: d, reason: collision with root package name */
-    private final HashSet<View> f36313d = new HashSet<>();
+    private final HashSet<View> f37080d = new HashSet<>();
 
     /* renamed from: e, reason: collision with root package name */
-    private final HashSet<String> f36314e = new HashSet<>();
+    private final HashSet<String> f37081e = new HashSet<>();
 
     /* renamed from: f, reason: collision with root package name */
-    private final HashSet<String> f36315f = new HashSet<>();
+    private final HashSet<String> f37082f = new HashSet<>();
 
     /* renamed from: g, reason: collision with root package name */
-    private final HashMap<String, String> f36316g = new HashMap<>();
+    private final HashMap<String, String> f37083g = new HashMap<>();
 
     /* renamed from: h, reason: collision with root package name */
-    private final HashSet<String> f36317h = new HashSet<>();
+    private final HashSet<String> f37084h = new HashSet<>();
     private final Map<View, Boolean> i = new WeakHashMap();
 
     /* renamed from: j, reason: collision with root package name */
-    private boolean f36318j;
+    private boolean f37085j;
 
     /* renamed from: com.iab.omid.library.toponad.walking.a$a, reason: collision with other inner class name */
     public static class C0172a {
 
         /* renamed from: a, reason: collision with root package name */
-        private final e f36319a;
+        private final e f37086a;
 
         /* renamed from: b, reason: collision with root package name */
-        private final ArrayList<String> f36320b = new ArrayList<>();
+        private final ArrayList<String> f37087b = new ArrayList<>();
 
         public C0172a(e eVar, String str) {
-            this.f36319a = eVar;
+            this.f37086a = eVar;
             a(str);
         }
 
         public e a() {
-            return this.f36319a;
+            return this.f37086a;
         }
 
         public ArrayList<String> b() {
-            return this.f36320b;
+            return this.f37087b;
         }
 
         public void a(String str) {
-            this.f36320b.add(str);
+            this.f37087b.add(str);
         }
     }
 
     public View a(String str) {
-        return this.f36312c.get(str);
+        return this.f37079c.get(str);
     }
 
     public C0172a b(View view) {
-        C0172a c0172a = this.f36311b.get(view);
+        C0172a c0172a = this.f37078b.get(view);
         if (c0172a != null) {
-            this.f36311b.remove(view);
+            this.f37078b.remove(view);
         }
         return c0172a;
     }
 
     public String c(View view) {
-        if (this.f36310a.size() == 0) {
+        if (this.f37077a.size() == 0) {
             return null;
         }
-        String str = this.f36310a.get(view);
+        String str = this.f37077a.get(view);
         if (str != null) {
-            this.f36310a.remove(view);
+            this.f37077a.remove(view);
         }
         return str;
     }
 
     public c d(View view) {
-        return this.f36313d.contains(view) ? c.PARENT_VIEW : this.f36318j ? c.OBSTRUCTION_VIEW : c.UNDERLYING_VIEW;
+        return this.f37080d.contains(view) ? c.PARENT_VIEW : this.f37085j ? c.OBSTRUCTION_VIEW : c.UNDERLYING_VIEW;
     }
 
     public void e() {
@@ -105,21 +105,21 @@ public class a {
                     if (c10 != null) {
                         boolean e9 = h.e(c10);
                         if (e9) {
-                            this.f36317h.add(adSessionId);
+                            this.f37084h.add(adSessionId);
                         }
                         String a9 = a(c10, e9);
                         if (a9 == null) {
-                            this.f36314e.add(adSessionId);
-                            this.f36310a.put(c10, adSessionId);
+                            this.f37081e.add(adSessionId);
+                            this.f37077a.put(c10, adSessionId);
                             a(aVar);
                         } else if (a9 != "noWindowFocus") {
-                            this.f36315f.add(adSessionId);
-                            this.f36312c.put(adSessionId, c10);
-                            this.f36316g.put(adSessionId, a9);
+                            this.f37082f.add(adSessionId);
+                            this.f37079c.put(adSessionId, c10);
+                            this.f37083g.put(adSessionId, a9);
                         }
                     } else {
-                        this.f36315f.add(adSessionId);
-                        this.f36316g.put(adSessionId, "noAdView");
+                        this.f37082f.add(adSessionId);
+                        this.f37083g.put(adSessionId, "noAdView");
                     }
                 }
             }
@@ -141,15 +141,15 @@ public class a {
     }
 
     public String b(String str) {
-        return this.f36316g.get(str);
+        return this.f37083g.get(str);
     }
 
     public HashSet<String> c() {
-        return this.f36314e;
+        return this.f37081e;
     }
 
     public void d() {
-        this.f36318j = true;
+        this.f37085j = true;
     }
 
     public boolean e(View view) {
@@ -160,11 +160,11 @@ public class a {
         return false;
     }
 
-    private String a(View view, boolean z3) {
+    private String a(View view, boolean z6) {
         if (!view.isAttachedToWindow()) {
             return "notAttached";
         }
-        if (a(view).booleanValue() && !z3) {
+        if (a(view).booleanValue() && !z6) {
             return "noWindowFocus";
         }
         HashSet hashSet = new HashSet();
@@ -177,28 +177,28 @@ public class a {
             Object parent = view.getParent();
             view = parent instanceof View ? (View) parent : null;
         }
-        this.f36313d.addAll(hashSet);
+        this.f37080d.addAll(hashSet);
         return null;
     }
 
     public HashSet<String> b() {
-        return this.f36315f;
+        return this.f37082f;
     }
 
     public boolean c(String str) {
-        return this.f36317h.contains(str);
+        return this.f37084h.contains(str);
     }
 
     public void a() {
-        this.f36310a.clear();
-        this.f36311b.clear();
-        this.f36312c.clear();
-        this.f36313d.clear();
-        this.f36314e.clear();
-        this.f36315f.clear();
-        this.f36316g.clear();
-        this.f36318j = false;
-        this.f36317h.clear();
+        this.f37077a.clear();
+        this.f37078b.clear();
+        this.f37079c.clear();
+        this.f37080d.clear();
+        this.f37081e.clear();
+        this.f37082f.clear();
+        this.f37083g.clear();
+        this.f37085j = false;
+        this.f37084h.clear();
     }
 
     private void a(com.iab.omid.library.toponad.adsession.a aVar) {
@@ -213,11 +213,11 @@ public class a {
         if (view == null) {
             return;
         }
-        C0172a c0172a = this.f36311b.get(view);
+        C0172a c0172a = this.f37078b.get(view);
         if (c0172a != null) {
             c0172a.a(aVar.getAdSessionId());
         } else {
-            this.f36311b.put(view, new C0172a(eVar, aVar.getAdSessionId()));
+            this.f37078b.put(view, new C0172a(eVar, aVar.getAdSessionId()));
         }
     }
 }

@@ -12,10 +12,10 @@ public class Z0 implements View.OnClickListener {
         A01();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 108);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 108);
         }
         return new String(copyOfRange);
     }
@@ -30,13 +30,13 @@ public class Z0 implements View.OnClickListener {
 
     @Override // android.view.View.OnClickListener
     public final void onClick(View view) {
-        C1146Ow c1146Ow;
+        C1166Ow c1166Ow;
         if (WU.A02(this)) {
             return;
         }
         try {
-            c1146Ow = this.A00.A07;
-            c1146Ow.getCTAButton().A0E(A00(0, 5, 121));
+            c1166Ow = this.A00.A07;
+            c1166Ow.getCTAButton().A0E(A00(0, 5, 121));
         } catch (Throwable th) {
             WU.A00(th, this);
         }

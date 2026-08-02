@@ -12,17 +12,17 @@ public final class C3B extends ED {
     public static String[] A01 = {"BuRuvxulsaJnTsptWr5C74N6kbe62CR1", "s8BhV7yvVPv9fWwhaDhts8ISKp0Ib3uz", "BHQbL486YclXfOG4TttSSmYhAQDicEvh", "6QlBJVUCqIJjaBYG", "bf17tAIDP3PP5oHcfI5KYvpff0TMzylU", "en59KaoZPANthNZYpe9YMIumKtT", "Zp8Yp0vRpWPiTIr1M3XMCxUDLLEg", "TVOb3qDH058zXjUqb6AporPz"};
     public final UN<E1> A00;
 
-    public C3B(C1840gi c1840gi) {
-        this(c1840gi, null);
+    public C3B(C1860gi c1860gi) {
+        this(c1860gi, null);
     }
 
-    public C3B(C1840gi c1840gi, AttributeSet attributeSet) {
-        this(c1840gi, attributeSet, 0);
+    public C3B(C1860gi c1860gi, AttributeSet attributeSet) {
+        this(c1860gi, attributeSet, 0);
     }
 
-    public C3B(C1840gi c1840gi, AttributeSet attributeSet, int i) {
-        super(c1840gi, attributeSet, i);
-        this.A00 = new C0841Da(this);
+    public C3B(C1860gi c1860gi, AttributeSet attributeSet, int i) {
+        super(c1860gi, attributeSet, i);
+        this.A00 = new C0861Da(this);
         int applyDimension = (int) TypedValue.applyDimension(1, 40.0f, getResources().getDisplayMetrics());
         ProgressBar progressBar = new ProgressBar(getContext());
         progressBar.setIndeterminate(true);

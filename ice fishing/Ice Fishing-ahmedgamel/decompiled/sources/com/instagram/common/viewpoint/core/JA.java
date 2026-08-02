@@ -13,38 +13,43 @@ public final class JA {
     public J1 A04;
     public JR A05;
     public boolean A06;
-    public final InterfaceC0947Hd A08;
+    public final InterfaceC0967Hd A08;
     public final JQ A09 = new JQ();
-    public final C06474v A07 = new C06474v();
-    public final C06474v A0B = new C06474v(1);
-    public final C06474v A0A = new C06474v();
+    public final C06674v A07 = new C06674v();
+    public final C06674v A0B = new C06674v(1);
+    public final C06674v A0A = new C06674v();
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException
+    java.lang.ArrayIndexOutOfBoundsException: Index 15 out of bounds for length 15
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:125)
+    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
+    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    public final int A04(int i, int i6) {
-        C06474v c06474v;
+    public final int A04(int i, int i4) {
+        C06674v c06674v;
         int length;
         JP A07 = A07();
         if (A07 == null) {
             return 0;
         }
         if (A07.A00 != 0) {
-            c06474v = this.A09.A0H;
+            c06674v = this.A09.A0H;
             length = A07.A00;
         } else {
             byte[] bArr = (byte[]) C5C.A0f(A07.A04);
             this.A0A.A0j(bArr, bArr.length);
-            c06474v = this.A0A;
+            c06674v = this.A0A;
             length = bArr.length;
         }
         boolean A06 = this.A09.A06(this.A01);
-        boolean z3 = A06 || i6 != 0;
-        this.A0B.A0l()[0] = (byte) ((z3 ? 128 : 0) | length);
+        boolean z6 = A06 || i4 != 0;
+        this.A0B.A0l()[0] = (byte) ((z6 ? 128 : 0) | length);
         this.A0B.A0f(0);
         this.A08.AIs(this.A0B, 1, 1);
-        this.A08.AIs(c06474v, length, 1);
-        if (!z3) {
+        this.A08.AIs(c06674v, length, 1);
+        if (!z6) {
             return length + 1;
         }
         if (!A06) {
@@ -52,34 +57,34 @@ public final class JA {
             byte[] A0l = this.A07.A0l();
             A0l[0] = 0;
             A0l[1] = 1;
-            A0l[2] = (byte) ((i6 >> 8) & p.f8473b);
-            A0l[3] = (byte) (i6 & p.f8473b);
-            A0l[4] = (byte) ((i >> 24) & p.f8473b);
-            A0l[5] = (byte) ((i >> 16) & p.f8473b);
-            A0l[6] = (byte) ((i >> 8) & p.f8473b);
-            A0l[7] = (byte) (i & p.f8473b);
+            A0l[2] = (byte) ((i4 >> 8) & p.f9259b);
+            A0l[3] = (byte) (i4 & p.f9259b);
+            A0l[4] = (byte) ((i >> 24) & p.f9259b);
+            A0l[5] = (byte) ((i >> 16) & p.f9259b);
+            A0l[6] = (byte) ((i >> 8) & p.f9259b);
+            A0l[7] = (byte) (i & p.f9259b);
             this.A08.AIs(this.A07, 8, 1);
             return length + 1 + 8;
         }
-        C06474v c06474v2 = this.A09.A0H;
-        int A0M = c06474v2.A0M();
-        c06474v2.A0g(-2);
-        int i9 = (A0M * 6) + 2;
-        if (i6 != 0) {
-            this.A07.A0d(i9);
+        C06674v c06674v2 = this.A09.A0H;
+        int A0M = c06674v2.A0M();
+        c06674v2.A0g(-2);
+        int i6 = (A0M * 6) + 2;
+        if (i4 != 0) {
+            this.A07.A0d(i6);
             byte[] A0l2 = this.A07.A0l();
-            c06474v2.A0k(A0l2, 0, i9);
-            int i10 = (((A0l2[2] & 255) << 8) | (A0l2[3] & 255)) + i6;
-            A0l2[2] = (byte) ((i10 >> 8) & p.f8473b);
-            A0l2[3] = (byte) (i10 & p.f8473b);
-            c06474v2 = this.A07;
+            c06674v2.A0k(A0l2, 0, i6);
+            int i9 = (((A0l2[2] & 255) << 8) | (A0l2[3] & 255)) + i4;
+            A0l2[2] = (byte) ((i9 >> 8) & p.f9259b);
+            A0l2[3] = (byte) (i9 & p.f9259b);
+            c06674v2 = this.A07;
         }
-        this.A08.AIs(c06474v2, i9, 1);
-        return length + 1 + i9;
+        this.A08.AIs(c06674v2, i6, 1);
+        return length + 1 + i6;
     }
 
-    public JA(InterfaceC0947Hd interfaceC0947Hd, JR jr, J1 j12) {
-        this.A08 = interfaceC0947Hd;
+    public JA(InterfaceC0967Hd interfaceC0967Hd, JR jr, J1 j12) {
+        this.A08 = interfaceC0967Hd;
         this.A05 = jr;
         this.A04 = j12;
         A0C(jr, j12);
@@ -162,12 +167,12 @@ public final class JA {
         if (A07 == null) {
             return;
         }
-        C06474v c06474v = this.A09.A0H;
+        C06674v c06674v = this.A09.A0H;
         if (A07.A00 != 0) {
-            c06474v.A0g(A07.A00);
+            c06674v.A0g(A07.A00);
         }
         if (this.A09.A06(this.A01)) {
-            c06474v.A0g(c06474v.A0M() * 6);
+            c06674v.A0g(c06674v.A0M() * 6);
         }
     }
 

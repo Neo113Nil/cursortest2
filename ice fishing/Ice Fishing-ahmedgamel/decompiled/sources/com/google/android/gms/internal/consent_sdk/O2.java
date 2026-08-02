@@ -4,5 +4,5 @@ package com.google.android.gms.internal.consent_sdk;
 public final class O2 {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final O2 f35584a = new O2();
+    public static final O2 f36353a = new O2();
 }

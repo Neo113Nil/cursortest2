@@ -4,22 +4,22 @@ package com.anythink.core.common.m.b;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    private String f14512a;
+    private String f15298a;
 
     /* renamed from: b, reason: collision with root package name */
-    private int f14513b;
+    private int f15299b;
 
     /* renamed from: c, reason: collision with root package name */
-    private long f14514c;
+    private long f15300c;
 
     /* renamed from: d, reason: collision with root package name */
-    private boolean f14515d;
+    private boolean f15301d;
 
     /* renamed from: e, reason: collision with root package name */
-    private int f14516e;
+    private int f15302e;
 
     /* renamed from: f, reason: collision with root package name */
-    private Object f14517f;
+    private Object f15303f;
 
     private f() {
     }
@@ -29,54 +29,54 @@ public final class f {
     }
 
     public final String b() {
-        return this.f14512a;
+        return this.f15298a;
     }
 
     public final int c() {
-        return this.f14513b;
+        return this.f15299b;
     }
 
     public final long d() {
-        return this.f14514c;
+        return this.f15300c;
     }
 
     public final boolean e() {
-        return this.f14515d;
+        return this.f15301d;
     }
 
     public final int f() {
-        return this.f14516e;
+        return this.f15302e;
     }
 
     public final Object g() {
-        return this.f14517f;
+        return this.f15303f;
     }
 
     public final String toString() {
-        return "HttpRespEntity{urlKey='" + this.f14512a + "', statusCode=" + this.f14513b + ", reqNextTime=" + this.f14514c + ", isIntercept=" + this.f14515d + ", interceptStatusCode=" + this.f14516e + ", interceptResult=" + this.f14517f + '}';
+        return "HttpRespEntity{urlKey='" + this.f15298a + "', statusCode=" + this.f15299b + ", reqNextTime=" + this.f15300c + ", isIntercept=" + this.f15301d + ", interceptStatusCode=" + this.f15302e + ", interceptResult=" + this.f15303f + '}';
     }
 
     public final void a(String str) {
-        this.f14512a = str;
+        this.f15298a = str;
     }
 
     public final void b(int i) {
-        this.f14516e = i;
+        this.f15302e = i;
     }
 
     public final void a(int i) {
-        this.f14513b = i;
+        this.f15299b = i;
     }
 
     public final void a(long j6) {
-        this.f14514c = j6;
+        this.f15300c = j6;
     }
 
-    public final void a(boolean z3) {
-        this.f14515d = z3;
+    public final void a(boolean z6) {
+        this.f15301d = z6;
     }
 
     public final void a(Object obj) {
-        this.f14517f = obj;
+        this.f15303f = obj;
     }
 }

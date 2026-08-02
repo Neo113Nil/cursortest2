@@ -6,7 +6,7 @@ public final class c extends com.anythink.expressad.splash.c.a {
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private static final c f20540a = new c(0);
+        private static final c f21327a = new c(0);
     }
 
     public /* synthetic */ c(byte b9) {
@@ -14,7 +14,7 @@ public final class c extends com.anythink.expressad.splash.c.a {
     }
 
     private static c a() {
-        return a.f20540a;
+        return a.f21327a;
     }
 
     private c() {

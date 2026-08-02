@@ -27,20 +27,20 @@ import java.util.Map;
 public class c implements com.anythink.core.common.p.b {
 
     /* renamed from: c, reason: collision with root package name */
-    private static volatile c f23284c;
+    private static volatile c f24071c;
 
     /* renamed from: a, reason: collision with root package name */
-    String f23285a = "RewardVideoAuto";
+    String f24072a = "RewardVideoAuto";
 
     /* renamed from: b, reason: collision with root package name */
-    ATRewardVideoAutoLoadListener f23286b = new ATRewardVideoAutoLoadListener() { // from class: com.anythink.rewardvideo.a.c.1
+    ATRewardVideoAutoLoadListener f24073b = new ATRewardVideoAutoLoadListener() { // from class: com.anythink.rewardvideo.a.c.1
         @Override // com.anythink.rewardvideo.api.ATRewardVideoAutoLoadListener
         public final void onRewardVideoAutoLoadFail(final String str, final AdError adError) {
             t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.a.c.1.2
                 @Override // java.lang.Runnable
                 public final void run() {
-                    if (c.this.f23287d != null) {
-                        c.this.f23287d.onRewardVideoAutoLoadFail(str, adError);
+                    if (c.this.f24074d != null) {
+                        c.this.f24074d.onRewardVideoAutoLoadFail(str, adError);
                     }
                 }
             });
@@ -51,8 +51,8 @@ public class c implements com.anythink.core.common.p.b {
             t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.a.c.1.1
                 @Override // java.lang.Runnable
                 public final void run() {
-                    if (c.this.f23287d != null) {
-                        c.this.f23287d.onRewardVideoAutoLoaded(str);
+                    if (c.this.f24074d != null) {
+                        c.this.f24074d.onRewardVideoAutoLoaded(str);
                     }
                 }
             });
@@ -60,16 +60,16 @@ public class c implements com.anythink.core.common.p.b {
     };
 
     /* renamed from: d, reason: collision with root package name */
-    private ATRewardVideoAutoLoadListener f23287d;
+    private ATRewardVideoAutoLoadListener f24074d;
 
     private ATAdStatusInfo e(String str) {
         if (t.b().g() == null || TextUtils.isEmpty(t.b().p()) || TextUtils.isEmpty(t.b().q())) {
-            Log.e(this.f23285a, "SDK init error!");
+            Log.e(this.f24072a, "SDK init error!");
             return null;
         }
-        com.anythink.core.common.f f3 = f(str);
-        if (f3 != null) {
-            return f3.a(t.b().M(), (Map<String, Object>) null);
+        com.anythink.core.common.f f2 = f(str);
+        if (f2 != null) {
+            return f2.a(t.b().M(), (Map<String, Object>) null);
         }
         return null;
     }
@@ -79,16 +79,16 @@ public class c implements com.anythink.core.common.p.b {
     }
 
     public final boolean b(String str) {
-        boolean z3 = false;
+        boolean z6 = false;
         if (!TextUtils.isEmpty(str)) {
             ATAdStatusInfo e9 = e(str);
             if (e9 == null) {
                 return false;
             }
-            z3 = e9.isReady();
+            z6 = e9.isReady();
         }
-        ab.b(str, j.r.f12550w, j.r.f12524B, String.valueOf(z3), "");
-        return z3;
+        ab.b(str, j.r.f13336w, j.r.f13310B, String.valueOf(z6), "");
+        return z6;
     }
 
     public final ATAdStatusInfo c(String str) {
@@ -101,44 +101,44 @@ public class c implements com.anythink.core.common.p.b {
                 aTAdStatusInfo = new ATAdStatusInfo(false, false, null);
             }
         }
-        ab.b(str, j.r.f12550w, j.r.f12525C, aTAdStatusInfo.toString(), "");
+        ab.b(str, j.r.f13336w, j.r.f13311C, aTAdStatusInfo.toString(), "");
         return aTAdStatusInfo;
     }
 
     public final List<ATAdInfo> d(String str) {
         if (TextUtils.isEmpty(str)) {
-            Log.e(this.f23285a, "PlacementId is empty.");
+            Log.e(this.f24072a, "PlacementId is empty.");
             return null;
         }
-        com.anythink.core.common.f f3 = f(str);
-        if (f3 != null) {
-            return f3.a(t.b().M());
+        com.anythink.core.common.f f2 = f(str);
+        if (f2 != null) {
+            return f2.a(t.b().M());
         }
         return null;
     }
 
     public static c a() {
-        if (f23284c == null) {
+        if (f24071c == null) {
             synchronized (c.class) {
                 try {
-                    if (f23284c == null) {
-                        f23284c = new c();
+                    if (f24071c == null) {
+                        f24071c = new c();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f23284c;
+        return f24071c;
     }
 
     private ATRewardVideoAutoLoadListener b() {
-        return this.f23286b;
+        return this.f24073b;
     }
 
     public final void a(Context context, String[] strArr, ATRewardVideoAutoLoadListener aTRewardVideoAutoLoadListener, ATAdRequest aTAdRequest) {
         if (context == null) {
-            Log.e("anythink", this.f23285a + " init failed: context = null");
+            Log.e("anythink", this.f24072a + " init failed: context = null");
             return;
         }
         if (context instanceof Activity) {
@@ -162,7 +162,7 @@ public class c implements com.anythink.core.common.p.b {
                 }
             }
         }
-        this.f23287d = aTRewardVideoAutoLoadListener;
+        this.f24074d = aTRewardVideoAutoLoadListener;
     }
 
     public final void a(ATAdRequest aTAdRequest, String... strArr) {
@@ -211,17 +211,17 @@ public class c implements com.anythink.core.common.p.b {
     }
 
     public final void a(Activity activity, String str, ATShowConfig aTShowConfig, ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener, ATAdRevenueListener aTAdRevenueListener) {
-        ab.b(str, j.r.f12550w, j.r.f12523A, j.r.f12542o, "");
+        ab.b(str, j.r.f13336w, j.r.f13309A, j.r.f13328o, "");
         if (TextUtils.isEmpty(str)) {
             AdError errorCode = ErrorCode.getErrorCode(ErrorCode.exception, "", "placementId is empty.");
             if (aTRewardVideoAutoEventListener != null) {
                 aTRewardVideoAutoEventListener.onRewardedVideoAdPlayFailed(errorCode, l.a((com.anythink.core.common.d.f) null));
             }
-            Log.e(this.f23285a, "PlacementId is Empty!");
+            Log.e(this.f24072a, "PlacementId is Empty!");
         }
         if (t.b().g() != null && !TextUtils.isEmpty(t.b().p()) && !TextUtils.isEmpty(t.b().q())) {
             if (activity == null) {
-                Log.e(this.f23285a, "RewardedVideo Show Activity is null.");
+                Log.e(this.f24072a, "RewardedVideo Show Activity is null.");
             }
             a.a(activity, str).a(activity, aTShowConfig, new b(aTRewardVideoAutoEventListener, aTAdRevenueListener), null, null);
         } else {
@@ -229,7 +229,7 @@ public class c implements com.anythink.core.common.p.b {
             if (aTRewardVideoAutoEventListener != null) {
                 aTRewardVideoAutoEventListener.onRewardedVideoAdPlayFailed(errorCode2, l.a((com.anythink.core.common.d.f) null));
             }
-            Log.e(this.f23285a, "SDK init error!");
+            Log.e(this.f24072a, "SDK init error!");
         }
     }
 
@@ -242,7 +242,7 @@ public class c implements com.anythink.core.common.p.b {
 
     @Override // com.anythink.core.common.p.b
     public final void a(String str) {
-        ATRewardVideoAutoLoadListener aTRewardVideoAutoLoadListener = a().f23286b;
+        ATRewardVideoAutoLoadListener aTRewardVideoAutoLoadListener = a().f24073b;
         if (aTRewardVideoAutoLoadListener != null) {
             aTRewardVideoAutoLoadListener.onRewardVideoAutoLoaded(str);
         }
@@ -250,13 +250,13 @@ public class c implements com.anythink.core.common.p.b {
 
     @Override // com.anythink.core.common.p.b
     public final void a(String str, AdError adError) {
-        ATRewardVideoAutoLoadListener aTRewardVideoAutoLoadListener = a().f23286b;
+        ATRewardVideoAutoLoadListener aTRewardVideoAutoLoadListener = a().f24073b;
         if (aTRewardVideoAutoLoadListener != null) {
             aTRewardVideoAutoLoadListener.onRewardVideoAutoLoadFail(str, adError);
         }
     }
 
     public final void a(ATRewardVideoAutoLoadListener aTRewardVideoAutoLoadListener) {
-        this.f23287d = aTRewardVideoAutoLoadListener;
+        this.f24074d = aTRewardVideoAutoLoadListener;
     }
 }

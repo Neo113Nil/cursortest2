@@ -5,10 +5,10 @@ import java.util.List;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public final class Q8 {
-    public static final Q7 A01 = new C1914hv() { // from class: com.facebook.ads.redexgen.X.7Q
+    public static final Q7 A01 = new C1934hv() { // from class: com.facebook.ads.redexgen.X.7Q
         @Override // com.instagram.common.viewpoint.core.Q7
         public final Object ACb(Q8 q8) {
-            return QE.A00(new C1915hw(this, q8));
+            return QE.A00(new C1935hw(this, q8));
         }
     };
     public final Object A00;
@@ -37,7 +37,7 @@ public final class Q8 {
         return null;
     }
 
-    public final boolean A04(int i, int i6, Bundle bundle) {
+    public final boolean A04(int i, int i4, Bundle bundle) {
         return false;
     }
 }

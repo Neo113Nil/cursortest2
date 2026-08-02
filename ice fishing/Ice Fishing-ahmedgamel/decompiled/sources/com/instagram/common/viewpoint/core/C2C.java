@@ -10,12 +10,12 @@ import javax.annotation.CheckForNull;
 public class C2C<K, V> extends BO<Map.Entry<K, V>> {
     public final transient int A00;
     public final transient int A01;
-    public final transient AbstractC2292oX<K, V> A02;
+    public final transient AbstractC2312oX<K, V> A02;
     public final transient Object[] A03;
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2C != com.google.common.collect.RegularImmutableMap$EntrySet<K, V> */
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.oX != com.google.common.collect.ImmutableMap<K, V> */
-    public C2C(AbstractC2292oX<K, V> map, Object[] alternatingKeysAndValues, int keyOffset, int size) {
+    public C2C(AbstractC2312oX<K, V> map, Object[] alternatingKeysAndValues, int keyOffset, int size) {
         this.A02 = map;
         this.A03 = alternatingKeysAndValues;
         this.A00 = keyOffset;
@@ -23,13 +23,13 @@ public class C2C<K, V> extends BO<Map.Entry<K, V>> {
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2C != com.google.common.collect.RegularImmutableMap$EntrySet<K, V> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
     public final int A0I(Object[] dst, int offset) {
         return A0J().A0I(dst, offset);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2C != com.google.common.collect.RegularImmutableMap$EntrySet<K, V> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
     public final boolean A0K() {
         return true;
     }
@@ -44,20 +44,20 @@ public class C2C<K, V> extends BO<Map.Entry<K, V>> {
             public final Map.Entry<K, V> get(int index) {
                 int i;
                 Object[] objArr;
-                int i6;
+                int i4;
                 Object[] objArr2;
-                int i9;
+                int i6;
                 i = C2C.this.A01;
-                AbstractC2070ki.A00(index, i);
+                AbstractC2090ki.A00(index, i);
                 objArr = C2C.this.A03;
-                i6 = C2C.this.A00;
-                Object requireNonNull = Objects.requireNonNull(objArr[(index * 2) + i6]);
+                i4 = C2C.this.A00;
+                Object requireNonNull = Objects.requireNonNull(objArr[(index * 2) + i4]);
                 objArr2 = C2C.this.A03;
-                i9 = C2C.this.A00;
-                return new AbstractMap.SimpleImmutableEntry(requireNonNull, Objects.requireNonNull(objArr2[(index * 2) + (i9 ^ 1)]));
+                i6 = C2C.this.A00;
+                return new AbstractMap.SimpleImmutableEntry(requireNonNull, Objects.requireNonNull(objArr2[(index * 2) + (i6 ^ 1)]));
             }
 
-            @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+            @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
             public final boolean A0K() {
                 return true;
             }
@@ -79,7 +79,7 @@ public class C2C<K, V> extends BO<Map.Entry<K, V>> {
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2C != com.google.common.collect.RegularImmutableMap$EntrySet<K, V> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO, java.util.AbstractCollection, java.util.Collection, java.util.Set
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO, java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean contains(@CheckForNull Object object) {
         if (!(object instanceof Map.Entry)) {
             return false;

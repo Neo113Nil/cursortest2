@@ -22,7 +22,7 @@ import java.util.Objects;
 public final class e extends com.anythink.core.common.m.a.a {
 
     /* renamed from: b, reason: collision with root package name */
-    private com.anythink.core.common.n.b.e f14435b;
+    private com.anythink.core.common.n.b.e f15221b;
 
     public e(com.anythink.core.common.m.a.f fVar) {
         super(fVar);
@@ -36,7 +36,7 @@ public final class e extends com.anythink.core.common.m.a.a {
 
     private static ad b(i iVar) {
         u.a aVar = new u.a();
-        Map<String, String> map = iVar.f14466e;
+        Map<String, String> map = iVar.f15252e;
         if (map == null || map.isEmpty()) {
             String j6 = m.j();
             if (!TextUtils.isEmpty(j6)) {
@@ -53,17 +53,17 @@ public final class e extends com.anythink.core.common.m.a.a {
                 }
             }
         }
-        if (Objects.equals(iVar.f14463b, "GET")) {
-            return new ad.a().a(iVar.f14462a).a().a(aVar.a()).b();
+        if (Objects.equals(iVar.f15249b, "GET")) {
+            return new ad.a().a(iVar.f15248a).a().a(aVar.a()).b();
         }
-        return new ad.a().a(iVar.f14462a).a(iVar.f14463b, ae.a(x.b(iVar.f14465d), iVar.f14464c)).a(aVar.a()).b();
+        return new ad.a().a(iVar.f15248a).a(iVar.f15249b, ae.a(x.b(iVar.f15251d), iVar.f15250c)).a(aVar.a()).b();
     }
 
     @Override // com.anythink.core.common.m.a.b
     public final j a(i iVar) {
         try {
-            com.anythink.core.common.n.b.e a9 = a(this.f14417a, iVar).a(b(iVar));
-            this.f14435b = a9;
+            com.anythink.core.common.n.b.e a9 = a(this.f15203a, iVar).a(b(iVar));
+            this.f15221b = a9;
             return b(iVar, a9.b(), null);
         } catch (Throwable th) {
             return b(iVar, null, th);
@@ -73,8 +73,8 @@ public final class e extends com.anythink.core.common.m.a.a {
     @Override // com.anythink.core.common.m.a.b
     public final void a(final i iVar, final com.anythink.core.common.m.a.c cVar) {
         try {
-            com.anythink.core.common.n.b.e a9 = a(this.f14417a, iVar).a(b(iVar));
-            this.f14435b = a9;
+            com.anythink.core.common.n.b.e a9 = a(this.f15203a, iVar).a(b(iVar));
+            this.f15221b = a9;
             a9.a(new com.anythink.core.common.n.b.f() { // from class: com.anythink.core.common.m.a.a.e.1
                 @Override // com.anythink.core.common.n.b.f
                 public final void a(IOException iOException) {
@@ -94,11 +94,11 @@ public final class e extends com.anythink.core.common.m.a.a {
     @Override // com.anythink.core.common.m.a.b
     public final void a() {
         try {
-            com.anythink.core.common.n.b.e eVar = this.f14435b;
+            com.anythink.core.common.n.b.e eVar = this.f15221b;
             if (eVar == null || eVar.e()) {
                 return;
             }
-            this.f14435b.c();
+            this.f15221b.c();
         } catch (Throwable unused) {
         }
     }
@@ -115,10 +115,10 @@ public final class e extends com.anythink.core.common.m.a.a {
                 a9.a(afVar.c());
                 a9.a(afVar.d());
                 HashMap hashMap = new HashMap();
-                u f3 = afVar.f();
-                for (int i = 0; i < f3.a(); i++) {
-                    String a10 = f3.a(i);
-                    String b9 = f3.b(i);
+                u f2 = afVar.f();
+                for (int i = 0; i < f2.a(); i++) {
+                    String a10 = f2.a(i);
+                    String b9 = f2.b(i);
                     List list = (List) hashMap.get(a10);
                     if (list != null) {
                         if (!list.contains(b9)) {
@@ -131,9 +131,9 @@ public final class e extends com.anythink.core.common.m.a.a {
                     }
                 }
                 a9.a(hashMap);
-                ag g4 = afVar.g();
-                if (g4 != null) {
-                    a9.a(new f(g4));
+                ag g9 = afVar.g();
+                if (g9 != null) {
+                    a9.a(new f(g9));
                 }
             } catch (Throwable th2) {
                 a9.a(th2);

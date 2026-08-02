@@ -8,7 +8,7 @@ public class Q3 {
         this.A00 = obj;
     }
 
-    public static Q3 A00(int i, int i6, boolean z3, int i9) {
-        return new Q3(Q6.A04.A01(i, i6, z3, i9));
+    public static Q3 A00(int i, int i4, boolean z6, int i6) {
+        return new Q3(Q6.A04.A01(i, i4, z6, i6));
     }
 }

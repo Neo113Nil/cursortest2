@@ -1,46 +1,56 @@
 package Z0;
 
-import X0.v;
-import a1.AbstractC0428e;
-import a1.InterfaceC0424a;
-import f1.AbstractC4498a;
-import java.util.List;
+import l1.AbstractC4672g;
+import l1.ChoreographerFrameCallbackC4670e;
 
 /* loaded from: classes.dex */
-public final class q implements InterfaceC0424a, c {
+public final /* synthetic */ class q implements u {
 
     /* renamed from: a, reason: collision with root package name */
-    public final v f4101a;
+    public final /* synthetic */ int f4005a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final AbstractC0428e f4102b;
+    public final /* synthetic */ v f4006b;
 
     /* renamed from: c, reason: collision with root package name */
-    public e1.k f4103c;
+    public final /* synthetic */ float f4007c;
 
-    public q(v vVar, AbstractC4498a abstractC4498a, e1.j jVar) {
-        this.f4101a = vVar;
-        jVar.getClass();
-        a1.i a9 = jVar.f37153a.a();
-        this.f4102b = a9;
-        abstractC4498a.d(a9);
-        a9.a(this);
+    public /* synthetic */ q(v vVar, float f2, int i) {
+        this.f4005a = i;
+        this.f4006b = vVar;
+        this.f4007c = f2;
     }
 
-    public static int d(int i, int i6) {
-        int i9 = i / i6;
-        if ((i ^ i6) < 0 && i9 * i6 != i) {
-            i9--;
+    @Override // Z0.u
+    public final void run() {
+        switch (this.f4005a) {
+            case 0:
+                v vVar = this.f4006b;
+                i iVar = vVar.f4046n;
+                float f2 = this.f4007c;
+                if (iVar != null) {
+                    float f9 = AbstractC4672g.f(iVar.f3975l, iVar.f3976m, f2);
+                    ChoreographerFrameCallbackC4670e choreographerFrameCallbackC4670e = vVar.f4053u;
+                    choreographerFrameCallbackC4670e.p(choreographerFrameCallbackC4670e.f38821C, f9);
+                    break;
+                } else {
+                    vVar.f4057y.add(new q(vVar, f2, 0));
+                    break;
+                }
+            case 1:
+                v vVar2 = this.f4006b;
+                i iVar2 = vVar2.f4046n;
+                float f10 = this.f4007c;
+                if (iVar2 != null) {
+                    vVar2.s((int) AbstractC4672g.f(iVar2.f3975l, iVar2.f3976m, f10));
+                    break;
+                } else {
+                    vVar2.f4057y.add(new q(vVar2, f10, 1));
+                    break;
+                }
+            default:
+                this.f4006b.u(this.f4007c);
+                break;
         }
-        return i - (i9 * i6);
-    }
-
-    @Override // a1.InterfaceC0424a
-    public final void a() {
-        this.f4101a.invalidateSelf();
-    }
-
-    @Override // Z0.c
-    public final void b(List list, List list2) {
     }
 }

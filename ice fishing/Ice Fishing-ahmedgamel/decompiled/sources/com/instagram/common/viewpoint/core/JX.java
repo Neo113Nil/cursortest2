@@ -17,13 +17,13 @@ public final class JX {
     public long A06;
     public long A07;
     public long A08;
-    public final int[] A09 = new int[p.f8473b];
-    public final C06474v A0A = new C06474v(p.f8473b);
+    public final int[] A09 = new int[p.f9259b];
+    public final C06674v A0A = new C06674v(p.f9259b);
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0B, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 21);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0B, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 21);
         }
         return new String(copyOfRange);
     }
@@ -48,8 +48,8 @@ public final class JX {
         this.A00 = 0;
     }
 
-    public final boolean A03(InterfaceC2191ms interfaceC2191ms) throws IOException {
-        return A04(interfaceC2191ms, -1L);
+    public final boolean A03(InterfaceC2211ms interfaceC2211ms) throws IOException {
+        return A04(interfaceC2211ms, -1L);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x006f, code lost:
@@ -89,14 +89,14 @@ public final class JX {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final boolean A04(InterfaceC2191ms interfaceC2191ms, long j6) throws IOException {
-        AbstractC06243y.A07(interfaceC2191ms.A8n() == interfaceC2191ms.A8i());
+    public final boolean A04(InterfaceC2211ms interfaceC2211ms, long j6) throws IOException {
+        AbstractC06443y.A07(interfaceC2211ms.A8n() == interfaceC2211ms.A8i());
         this.A0A.A0d(4);
         while (true) {
-            if (j6 != -1 && interfaceC2191ms.A8n() + 4 >= j6) {
+            if (j6 != -1 && interfaceC2211ms.A8n() + 4 >= j6) {
                 break;
             }
-            boolean A04 = HB.A04(interfaceC2191ms, this.A0A.A0l(), 0, 4, true);
+            boolean A04 = HB.A04(interfaceC2211ms, this.A0A.A0l(), 0, 4, true);
             if (A0C[4].charAt(30) == '5') {
                 throw new RuntimeException();
             }
@@ -106,10 +106,10 @@ public final class JX {
             }
             this.A0A.A0f(0);
             if (this.A0A.A0Q() == 1332176723) {
-                interfaceC2191ms.AIl();
+                interfaceC2211ms.AIl();
                 return true;
             }
-            interfaceC2191ms.AK3(1);
+            interfaceC2211ms.AK3(1);
         }
     }
 
@@ -117,20 +117,20 @@ public final class JX {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final boolean A05(InterfaceC2191ms interfaceC2191ms, boolean z3) throws IOException {
+    public final boolean A05(InterfaceC2211ms interfaceC2211ms, boolean z6) throws IOException {
         A02();
         this.A0A.A0d(27);
-        if (!HB.A04(interfaceC2191ms, this.A0A.A0l(), 0, 27, z3) || this.A0A.A0Q() != 1332176723) {
+        if (!HB.A04(interfaceC2211ms, this.A0A.A0l(), 0, 27, z6) || this.A0A.A0Q() != 1332176723) {
             return false;
         }
-        C06474v c06474v = this.A0A;
+        C06674v c06674v = this.A0A;
         if (A0C[0].charAt(26) != 'Y') {
             throw new RuntimeException();
         }
         A0C[2] = "M9XA72oAU7";
-        this.A03 = c06474v.A0I();
+        this.A03 = c06674v.A0I();
         if (this.A03 != 0) {
-            if (z3) {
+            if (z6) {
                 return false;
             }
             throw C3K.A00(A00(0, 31, 87));
@@ -143,16 +143,16 @@ public final class JX {
         this.A02 = this.A0A.A0I();
         this.A01 = this.A02 + 27;
         this.A0A.A0d(this.A02);
-        if (!HB.A04(interfaceC2191ms, this.A0A.A0l(), 0, this.A02, z3)) {
+        if (!HB.A04(interfaceC2211ms, this.A0A.A0l(), 0, this.A02, z6)) {
             return false;
         }
         for (int i = 0; i < i; i++) {
             int[] iArr = this.A09;
-            int i6 = this.A0A.A0I();
-            iArr[i] = i6;
-            int i9 = this.A00;
-            int i10 = this.A09[i];
-            this.A00 = i9 + i10;
+            int i4 = this.A0A.A0I();
+            iArr[i] = i4;
+            int i6 = this.A00;
+            int i9 = this.A09[i];
+            this.A00 = i6 + i9;
         }
         return true;
     }

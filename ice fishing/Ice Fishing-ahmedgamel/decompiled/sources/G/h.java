@@ -1,5 +1,6 @@
 package G;
 
+import a1.C0428a;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.os.Build;
@@ -8,23 +9,23 @@ import android.os.Build;
 public abstract class h {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final /* synthetic */ int f1009a = 0;
+    public static final /* synthetic */ int f1035a = 0;
 
     static {
         new ThreadLocal();
     }
 
-    public static void a(Y0.a aVar, a aVar2) {
+    public static void a(C0428a c0428a, a aVar) {
         PorterDuff.Mode mode;
         if (Build.VERSION.SDK_INT >= 29) {
-            g.a(aVar, aVar2 != null ? b.a(aVar2) : null);
+            g.a(c0428a, aVar != null ? b.a(aVar) : null);
             return;
         }
-        if (aVar2 == null) {
-            aVar.setXfermode(null);
+        if (aVar == null) {
+            c0428a.setXfermode(null);
             return;
         }
-        switch (aVar2.ordinal()) {
+        switch (aVar.ordinal()) {
             case 0:
                 mode = PorterDuff.Mode.CLEAR;
                 break;
@@ -83,6 +84,6 @@ public abstract class h {
                 mode = null;
                 break;
         }
-        aVar.setXfermode(mode != null ? new PorterDuffXfermode(mode) : null);
+        c0428a.setXfermode(mode != null ? new PorterDuffXfermode(mode) : null);
     }
 }

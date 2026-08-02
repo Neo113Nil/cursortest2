@@ -4,9 +4,9 @@ package K0;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public final S0.j f1517a;
+    public final S0.j f1626a;
 
     public j(S0.j jVar) {
-        this.f1517a = jVar;
+        this.f1626a = jVar;
     }
 }

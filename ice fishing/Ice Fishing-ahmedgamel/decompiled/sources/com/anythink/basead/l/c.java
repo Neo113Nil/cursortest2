@@ -8,44 +8,44 @@ import com.anythink.core.common.m.q;
 import java.util.ArrayList;
 import java.util.List;
 import org.json.JSONArray;
-import u.AbstractC5049e;
+import u.AbstractC5050e;
 
 /* loaded from: classes.dex */
 public class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f9206a = 5;
+    public static final int f9992a = 5;
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f9207b = "c";
+    private static final String f9993b = "c";
 
     /* renamed from: c, reason: collision with root package name */
-    private x f9208c;
+    private x f9994c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final com.anythink.basead.l.a f9209d;
+    private final com.anythink.basead.l.a f9995d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final a f9210e;
+    private final a f9996e;
 
     /* renamed from: f, reason: collision with root package name */
-    private com.anythink.basead.l.b.b f9211f;
+    private com.anythink.basead.l.b.b f9997f;
 
     /* renamed from: g, reason: collision with root package name */
-    private com.anythink.basead.l.b.b f9212g;
+    private com.anythink.basead.l.b.b f9998g;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f9213h;
+    private int f9999h;
     private List<String> i;
 
     /* renamed from: j, reason: collision with root package name */
-    private JSONArray f9214j;
+    private JSONArray f10000j;
 
     /* renamed from: k, reason: collision with root package name */
-    private boolean f9215k;
+    private boolean f10001k;
 
     /* renamed from: l, reason: collision with root package name */
-    private final q f9216l;
+    private final q f10002l;
 
     public interface a {
         void a(int i, String str);
@@ -58,18 +58,18 @@ public class c {
     }
 
     private void b() {
-        com.anythink.basead.l.a aVar = this.f9209d;
+        com.anythink.basead.l.a aVar = this.f9995d;
         if (aVar != null) {
             aVar.b();
         }
     }
 
     private void c(String str) {
-        this.f9210e.a(-1, "Invalid ad response: ".concat(String.valueOf(str)));
+        this.f9996e.a(-1, "Invalid ad response: ".concat(String.valueOf(str)));
     }
 
-    public c(x xVar, boolean z3, a aVar) {
-        this.f9216l = new q() { // from class: com.anythink.basead.l.c.1
+    public c(x xVar, boolean z6, a aVar) {
+        this.f10002l = new q() { // from class: com.anythink.basead.l.c.1
             @Override // com.anythink.core.common.m.q
             public final void onLoadCanceled(int i) {
                 c.b(c.this, "onLoadCanceled");
@@ -78,7 +78,7 @@ public class c {
             @Override // com.anythink.core.common.m.q
             public final void onLoadError(int i, String str, AdError adError) {
                 c cVar = c.this;
-                StringBuilder c9 = AbstractC5049e.c(str, ",");
+                StringBuilder c9 = AbstractC5050e.c(str, ",");
                 c9.append(adError.toString());
                 c.b(cVar, c9.toString());
             }
@@ -96,12 +96,12 @@ public class c {
             public final void onLoadStart(int i) {
             }
         };
-        this.f9208c = xVar;
-        this.f9215k = z3;
-        this.f9210e = aVar;
-        this.f9209d = new com.anythink.basead.l.a(xVar);
+        this.f9994c = xVar;
+        this.f10001k = z6;
+        this.f9996e = aVar;
+        this.f9995d = new com.anythink.basead.l.a(xVar);
         this.i = new ArrayList();
-        this.f9214j = new JSONArray();
+        this.f10000j = new JSONArray();
     }
 
     public final void a(String str) {
@@ -111,41 +111,41 @@ public class c {
     /* JADX INFO: Access modifiers changed from: private */
     public void b(String str) {
         if (!e.a(str)) {
-            this.f9210e.a(-3, "VAST schema validation error.");
+            this.f9996e.a(-3, "VAST schema validation error.");
             return;
         }
         try {
-            this.f9214j.put(str);
+            this.f10000j.put(str);
         } catch (Throwable unused) {
         }
-        this.f9213h++;
+        this.f9999h++;
         try {
             com.anythink.basead.l.b.b bVar = new com.anythink.basead.l.b.b(str);
-            if (this.f9211f == null) {
-                this.f9211f = bVar;
+            if (this.f9997f == null) {
+                this.f9997f = bVar;
             } else {
-                this.f9212g.g(bVar);
+                this.f9998g.g(bVar);
             }
-            this.f9212g = bVar;
-            String d2 = bVar.d();
-            if (!TextUtils.isEmpty(d2)) {
-                if (this.f9213h >= 5) {
-                    this.f9210e.a(-2, "Wrapper limit reached, as defined by the video player. Too many Wrapper responses have been received with no InLine response.");
-                    this.f9213h = 0;
+            this.f9998g = bVar;
+            String d9 = bVar.d();
+            if (!TextUtils.isEmpty(d9)) {
+                if (this.f9999h >= 5) {
+                    this.f9996e.a(-2, "Wrapper limit reached, as defined by the video player. Too many Wrapper responses have been received with no InLine response.");
+                    this.f9999h = 0;
                     return;
                 } else {
-                    this.i.add(d2);
-                    if (this.f9215k) {
+                    this.i.add(d9);
+                    if (this.f10001k) {
                         return;
                     }
-                    this.f9209d.a(d2, this.f9216l);
+                    this.f9995d.a(d9, this.f10002l);
                     return;
                 }
             }
-            this.f9210e.a(new com.anythink.basead.l.b.a[]{this.f9211f, this.f9212g}, this.f9214j);
+            this.f9996e.a(new com.anythink.basead.l.b.a[]{this.f9997f, this.f9998g}, this.f10000j);
         } catch (b e9) {
             Log.getStackTraceString(e9);
-            this.f9210e.a(-3, "AdResponseParserVast creation failed: " + e9.getMessage());
+            this.f9996e.a(-3, "AdResponseParserVast creation failed: " + e9.getMessage());
         }
     }
 
@@ -156,13 +156,13 @@ public class c {
                 try {
                     b(jSONArray.getString(i));
                 } catch (Throwable unused) {
-                    this.f9210e.a(-3, "VAST extractByLocalData error with error.");
+                    this.f9996e.a(-3, "VAST extractByLocalData error with error.");
                     return;
                 }
             }
             return;
         }
-        this.f9210e.a(-3, "VAST extractByLocalData error with empty data.");
+        this.f9996e.a(-3, "VAST extractByLocalData error with empty data.");
     }
 
     public final List<String> a() {
@@ -170,6 +170,6 @@ public class c {
     }
 
     public static /* synthetic */ void b(c cVar, String str) {
-        cVar.f9210e.a(-1, "Invalid ad response: ".concat(String.valueOf(str)));
+        cVar.f9996e.a(-1, "Invalid ad response: ".concat(String.valueOf(str)));
     }
 }

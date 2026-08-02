@@ -16,26 +16,26 @@ public final class C7A {
     public boolean A02;
     public long A03;
     public C7A A04;
-    public C2230nW A05 = C2230nW.A06;
-    public C0890Ex A06;
-    public final InterfaceC2249np A07;
+    public C2250nW A05 = C2250nW.A06;
+    public C0910Ex A06;
+    public final InterfaceC2269np A07;
     public final Object A08;
     public final DT[] A09;
     public final AnonymousClass79 A0A;
-    public final AbstractC0889Ew A0B;
-    public final InterfaceC07197p[] A0C;
+    public final AbstractC0909Ew A0B;
+    public final InterfaceC07397p[] A0C;
     public final boolean[] A0D;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0E, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 22);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0E, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 22);
         }
         return new String(copyOfRange);
     }
 
     public static void A04() {
-        A0E = new byte[]{81, 121, 120, 117, 125, 76, 121, 110, 117, 115, 120, 84, 115, 112, 120, 121, 110, 28, 41, 62, 37, 35, 40, 108, 62, 41, 32, 41, 45, c.f16318c, 41, 108, 42, 45, 37, 32, 41, 40, 98};
+        A0E = new byte[]{81, 121, 120, 117, 125, 76, 121, 110, 117, 115, 120, 84, 115, 112, 120, 121, 110, 28, 41, 62, 37, 35, 40, 108, 62, 41, 32, 41, 45, c.f17105c, 41, 108, 42, 45, 37, 32, 41, 40, 98};
     }
 
     static {
@@ -43,23 +43,23 @@ public final class C7A {
     }
 
     @MetaExoPlayerCustomization(type = {"TEMPORARY"}, value = "Old exoplayer method. requires deleting")
-    public C7A(InterfaceC07197p[] interfaceC07197pArr, long j6, AbstractC0889Ew abstractC0889Ew, F0 f02, InterfaceC0838Cx interfaceC0838Cx, C7B c7b, C0890Ex c0890Ex) {
-        this.A0C = interfaceC07197pArr;
+    public C7A(InterfaceC07397p[] interfaceC07397pArr, long j6, AbstractC0909Ew abstractC0909Ew, F0 f02, InterfaceC0858Cx interfaceC0858Cx, C7B c7b, C0910Ex c0910Ex) {
+        this.A0C = interfaceC07397pArr;
         this.A03 = j6 - c7b.A03;
-        this.A0B = abstractC0889Ew;
-        this.A08 = AbstractC06243y.A01(c7b.A04.A04);
+        this.A0B = abstractC0909Ew;
+        this.A08 = AbstractC06443y.A01(c7b.A04.A04);
         this.A00 = c7b;
-        this.A06 = c0890Ex;
-        this.A09 = new DT[interfaceC07197pArr.length];
-        this.A0D = new boolean[interfaceC07197pArr.length];
-        this.A0A = new C2310op(this, interfaceC0838Cx);
+        this.A06 = c0910Ex;
+        this.A09 = new DT[interfaceC07397pArr.length];
+        this.A0D = new boolean[interfaceC07397pArr.length];
+        this.A0A = new C2330op(this, interfaceC0858Cx);
         this.A07 = A00(c7b.A04, this.A0A, f02, c7b.A03, c7b.A01);
     }
 
     @MetaExoPlayerCustomization(type = {"TEMPORARY"}, value = "MediaSourceList is temporarily changed to MediaSourceAdapter")
-    public static InterfaceC2249np A00(C2248no c2248no, AnonymousClass79 anonymousClass79, F0 f02, long j6, long j9) {
-        InterfaceC2249np A5W = anonymousClass79.A5W(c2248no, f02, j6);
-        if (j9 != b.f6382b) {
+    public static InterfaceC2269np A00(C2268no c2268no, AnonymousClass79 anonymousClass79, F0 f02, long j6, long j9) {
+        InterfaceC2269np A5W = anonymousClass79.A5W(c2268no, f02, j6);
+        if (j9 != b.f7168b) {
             return new C9v(A5W, true, 0L, j9);
         }
         return A5W;
@@ -75,9 +75,9 @@ public final class C7A {
         }
         for (int i = 0; i < i; i++) {
             boolean rendererEnabled = this.A06.A00(i);
-            InterfaceC2212nE interfaceC2212nE = this.A06.A04[i];
-            if (rendererEnabled && interfaceC2212nE != null) {
-                interfaceC2212nE.A5x();
+            InterfaceC2232nE interfaceC2232nE = this.A06.A04[i];
+            if (rendererEnabled && interfaceC2232nE != null) {
+                interfaceC2232nE.A5x();
             }
         }
     }
@@ -92,23 +92,23 @@ public final class C7A {
         }
         for (int i = 0; i < i; i++) {
             boolean rendererEnabled = this.A06.A00(i);
-            InterfaceC2212nE interfaceC2212nE = this.A06.A04[i];
-            if (rendererEnabled && interfaceC2212nE != null) {
-                interfaceC2212nE.A6K();
+            InterfaceC2232nE interfaceC2232nE = this.A06.A04[i];
+            if (rendererEnabled && interfaceC2232nE != null) {
+                interfaceC2232nE.A6K();
             }
         }
     }
 
     @MetaExoPlayerCustomization(type = {"TEMPORARY"}, value = "Temporary bridging of MediaSourceList with MediaSourceAdapter")
-    public static void A05(AnonymousClass79 anonymousClass79, InterfaceC2249np interfaceC2249np) {
+    public static void A05(AnonymousClass79 anonymousClass79, InterfaceC2269np interfaceC2269np) {
         try {
-            if (interfaceC2249np instanceof C9v) {
-                anonymousClass79.AHk(((C9v) interfaceC2249np).A05);
+            if (interfaceC2269np instanceof C9v) {
+                anonymousClass79.AHk(((C9v) interfaceC2269np).A05);
             } else {
-                anonymousClass79.AHk(interfaceC2249np);
+                anonymousClass79.AHk(interfaceC2269np);
             }
         } catch (RuntimeException e9) {
-            AbstractC06324g.A08(A01(0, 17, 10), A01(17, 22, 90), e9);
+            AbstractC06524g.A08(A01(0, 17, 10), A01(17, 22, 90), e9);
         }
     }
 
@@ -119,7 +119,7 @@ public final class C7A {
     private void A06(DT[] dtArr) {
         for (int i = 0; i < i; i++) {
             if (this.A0C[i].A9N() == -2 && this.A06.A00(i)) {
-                dtArr[i] = new C2251nr();
+                dtArr[i] = new C2271nr();
             }
         }
     }
@@ -172,18 +172,18 @@ public final class C7A {
         return A0B() + j6;
     }
 
-    public final long A0F(C0890Ex c0890Ex, long j6, boolean z3) {
-        return A0G(c0890Ex, j6, z3, new boolean[this.A0C.length]);
+    public final long A0F(C0910Ex c0910Ex, long j6, boolean z6) {
+        return A0G(c0910Ex, j6, z6, new boolean[this.A0C.length]);
     }
 
-    public final long A0G(C0890Ex c0890Ex, long j6, boolean z3, boolean[] zArr) {
+    public final long A0G(C0910Ex c0910Ex, long j6, boolean z6, boolean[] zArr) {
         int i = 0;
         while (true) {
-            boolean z6 = false;
-            if (i < c0890Ex.A00) {
+            boolean z9 = false;
+            if (i < c0910Ex.A00) {
                 boolean[] zArr2 = this.A0D;
-                if (!z3) {
-                    boolean A01 = c0890Ex.A01(this.A06, i);
+                if (!z6) {
+                    boolean A01 = c0910Ex.A01(this.A06, i);
                     if (A0F[5].length() != 8) {
                         throw new RuntimeException();
                     }
@@ -191,27 +191,27 @@ public final class C7A {
                     strArr[4] = "ZW5cY05fUZ7YDJtoLiROAD1s3u7pqZaY";
                     strArr[3] = "DBvv8TdqbKzS7YgGUgxEKNMIgeBwY4FK";
                     if (A01) {
-                        z6 = true;
+                        z9 = true;
                     }
                 }
-                zArr2[i] = z6;
+                zArr2[i] = z9;
                 i++;
             } else {
                 A07(this.A09);
                 A02();
-                this.A06 = c0890Ex;
+                this.A06 = c0910Ex;
                 A03();
-                long AJ9 = this.A07.AJ9(c0890Ex.A04, this.A0D, this.A09, zArr, j6);
+                long AJ9 = this.A07.AJ9(c0910Ex.A04, this.A0D, this.A09, zArr, j6);
                 A06(this.A09);
                 this.A01 = false;
-                for (int i6 = 0; i6 < this.A09.length; i6++) {
-                    if (this.A09[i6] != null) {
-                        AbstractC06243y.A08(c0890Ex.A00(i6));
-                        if (this.A0C[i6].A9N() != -2) {
+                for (int i4 = 0; i4 < this.A09.length; i4++) {
+                    if (this.A09[i4] != null) {
+                        AbstractC06443y.A08(c0910Ex.A00(i4));
+                        if (this.A0C[i4].A9N() != -2) {
                             this.A01 = true;
                         }
                     } else {
-                        AbstractC06243y.A08(c0890Ex.A04[i6] == null);
+                        AbstractC06443y.A08(c0910Ex.A04[i4] == null);
                     }
                 }
                 return AJ9;
@@ -220,8 +220,8 @@ public final class C7A {
     }
 
     @MetaExoPlayerCustomization(type = {"TEMPORARY"})
-    public final long A0H(boolean z3) {
-        if (!z3) {
+    public final long A0H(boolean z6) {
+        if (!z6) {
             return this.A03;
         }
         return this.A00.A03 + this.A03;
@@ -231,19 +231,19 @@ public final class C7A {
         return this.A04;
     }
 
-    public final C2230nW A0J() {
+    public final C2250nW A0J() {
         return this.A05;
     }
 
-    public final C0890Ex A0K() {
+    public final C0910Ex A0K() {
         return this.A06;
     }
 
-    public final C0890Ex A0L(float f3, Timeline timeline) throws AD {
-        C0890Ex A0b = this.A0B.A0b(this.A0C, A0J(), this.A00.A04, timeline);
-        for (InterfaceC2212nE interfaceC2212nE : A0b.A04) {
-            if (interfaceC2212nE != null) {
-                interfaceC2212nE.AFJ(f3);
+    public final C0910Ex A0L(float f2, Timeline timeline) throws AD {
+        C0910Ex A0b = this.A0B.A0b(this.A0C, A0J(), this.A00.A04, timeline);
+        for (InterfaceC2232nE interfaceC2232nE : A0b.A04) {
+            if (interfaceC2232nE != null) {
+                interfaceC2232nE.AFJ(f2);
             }
         }
         return A0b;
@@ -255,21 +255,21 @@ public final class C7A {
         A05(this.A0A, this.A07);
     }
 
-    public final void A0N(float f3, Timeline timeline) throws AD {
+    public final void A0N(float f2, Timeline timeline) throws AD {
         this.A02 = true;
         this.A05 = this.A07.A9M();
-        long A0F2 = A0F(A0L(f3, timeline), this.A00.A03, false);
+        long A0F2 = A0F(A0L(f2, timeline), this.A00.A03, false);
         this.A03 += this.A00.A03 - A0F2;
         this.A00 = this.A00.A00(A0F2);
     }
 
     public final void A0O(long j6) {
-        AbstractC06243y.A08(A08());
+        AbstractC06443y.A08(A08());
         this.A07.A5C(A0D(j6));
     }
 
     public final void A0P(long j6) {
-        AbstractC06243y.A08(A08());
+        AbstractC06443y.A08(A08());
         if (this.A02) {
             this.A07.AHW(A0D(j6));
         }

@@ -14,83 +14,83 @@ import com.anythink.core.common.v.q;
 public class PictureVerifyView extends RoundImageView {
 
     /* renamed from: c, reason: collision with root package name */
-    private static final int f11052c = 1;
+    private static final int f11838c = 1;
 
     /* renamed from: d, reason: collision with root package name */
-    private static final int f11053d = 2;
+    private static final int f11839d = 2;
 
     /* renamed from: e, reason: collision with root package name */
-    private static final int f11054e = 3;
+    private static final int f11840e = 3;
 
     /* renamed from: f, reason: collision with root package name */
-    private static final int f11055f = 4;
+    private static final int f11841f = 4;
 
     /* renamed from: g, reason: collision with root package name */
-    private static final int f11056g = 5;
+    private static final int f11842g = 5;
 
     /* renamed from: h, reason: collision with root package name */
-    private static final int f11057h = 6;
+    private static final int f11843h = 6;
     private static final int i = 20;
 
     /* renamed from: A, reason: collision with root package name */
-    private float f11058A;
+    private float f11844A;
 
     /* renamed from: B, reason: collision with root package name */
-    private float f11059B;
+    private float f11845B;
 
     /* renamed from: C, reason: collision with root package name */
-    private float f11060C;
+    private float f11846C;
 
     /* renamed from: j, reason: collision with root package name */
-    private int f11061j;
+    private int f11847j;
 
     /* renamed from: k, reason: collision with root package name */
-    private c f11062k;
+    private c f11848k;
 
     /* renamed from: l, reason: collision with root package name */
-    private c f11063l;
+    private c f11849l;
 
     /* renamed from: m, reason: collision with root package name */
-    private Bitmap f11064m;
+    private Bitmap f11850m;
 
     /* renamed from: n, reason: collision with root package name */
-    private Path f11065n;
+    private Path f11851n;
 
     /* renamed from: o, reason: collision with root package name */
-    private Paint f11066o;
+    private Paint f11852o;
 
     /* renamed from: p, reason: collision with root package name */
-    private Paint f11067p;
+    private Paint f11853p;
 
     /* renamed from: q, reason: collision with root package name */
-    private Paint f11068q;
+    private Paint f11854q;
 
     /* renamed from: r, reason: collision with root package name */
-    private long f11069r;
+    private long f11855r;
 
     /* renamed from: s, reason: collision with root package name */
-    private long f11070s;
+    private long f11856s;
 
     /* renamed from: t, reason: collision with root package name */
-    private int f11071t;
+    private int f11857t;
 
     /* renamed from: u, reason: collision with root package name */
-    private boolean f11072u;
+    private boolean f11858u;
 
     /* renamed from: v, reason: collision with root package name */
-    private a f11073v;
+    private a f11859v;
 
     /* renamed from: w, reason: collision with root package name */
-    private com.anythink.basead.ui.guidetoclickv2.picverify.a f11074w;
+    private com.anythink.basead.ui.guidetoclickv2.picverify.a f11860w;
 
     /* renamed from: x, reason: collision with root package name */
-    private int f11075x;
+    private int f11861x;
 
     /* renamed from: y, reason: collision with root package name */
-    private int f11076y;
+    private int f11862y;
 
     /* renamed from: z, reason: collision with root package name */
-    private float f11077z;
+    private float f11863z;
 
     public interface a {
         void a();
@@ -106,57 +106,57 @@ public class PictureVerifyView extends RoundImageView {
         if (getDrawable() == null || getWidth() <= 0 || getHeight() < 0) {
             return;
         }
-        if (this.f11062k == null) {
-            this.f11062k = this.f11074w.a(getWidth(), getHeight(), this.f11071t);
+        if (this.f11848k == null) {
+            this.f11848k = this.f11860w.a(getWidth(), getHeight(), this.f11857t);
         }
-        if (this.f11063l == null) {
-            this.f11063l = this.f11074w.b(getWidth(), getHeight(), this.f11071t);
+        if (this.f11849l == null) {
+            this.f11849l = this.f11860w.b(getWidth(), getHeight(), this.f11857t);
         }
-        if (this.f11065n == null) {
-            Path a9 = this.f11074w.a(this.f11071t);
-            this.f11065n = a9;
-            c cVar = this.f11062k;
-            a9.offset(cVar.f11085a, cVar.f11086b);
+        if (this.f11851n == null) {
+            Path a9 = this.f11860w.a(this.f11857t);
+            this.f11851n = a9;
+            c cVar = this.f11848k;
+            a9.offset(cVar.f11871a, cVar.f11872b);
         }
-        if (this.f11064m == null) {
+        if (this.f11850m == null) {
             Bitmap bitmap = null;
             if (getDrawable() != null) {
                 Bitmap createBitmap = Bitmap.createBitmap(getWidth(), getHeight(), Bitmap.Config.ARGB_8888);
                 Canvas canvas = new Canvas(createBitmap);
                 getDrawable().setBounds(0, 0, getWidth(), getHeight());
-                canvas.clipPath(this.f11065n);
+                canvas.clipPath(this.f11851n);
                 getDrawable().draw(canvas);
-                this.f11074w.a(getContext(), canvas, this.f11065n);
-                c cVar2 = this.f11062k;
+                this.f11860w.a(getContext(), canvas, this.f11851n);
+                c cVar2 = this.f11848k;
                 if (cVar2 != null) {
-                    int i6 = cVar2.f11085a;
-                    int i9 = cVar2.f11086b;
-                    int i10 = this.f11071t;
-                    bitmap = Bitmap.createBitmap(createBitmap, i6, i9, i10, i10);
+                    int i4 = cVar2.f11871a;
+                    int i6 = cVar2.f11872b;
+                    int i9 = this.f11857t;
+                    bitmap = Bitmap.createBitmap(createBitmap, i4, i6, i9, i9);
                     createBitmap.recycle();
                 }
             }
-            this.f11064m = bitmap;
+            this.f11850m = bitmap;
         }
     }
 
-    private void b(float f3, float f9) {
-        c cVar = this.f11063l;
+    private void b(float f2, float f9) {
+        c cVar = this.f11849l;
         if (cVar != null) {
-            this.f11061j = 2;
-            cVar.f11085a = (int) (cVar.f11085a + f3);
-            cVar.f11086b = (int) (cVar.f11086b + f9);
+            this.f11847j = 2;
+            cVar.f11871a = (int) (cVar.f11871a + f2);
+            cVar.f11872b = (int) (cVar.f11872b + f9);
             postInvalidate();
         }
     }
 
     private void c() {
-        this.f11061j = 6;
+        this.f11847j = 6;
         postInvalidate();
     }
 
     private void d() {
-        this.f11061j = 5;
+        this.f11847j = 5;
         postInvalidate();
     }
 
@@ -167,64 +167,64 @@ public class PictureVerifyView extends RoundImageView {
         Bitmap createBitmap = Bitmap.createBitmap(getWidth(), getHeight(), Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(createBitmap);
         getDrawable().setBounds(0, 0, getWidth(), getHeight());
-        canvas.clipPath(this.f11065n);
+        canvas.clipPath(this.f11851n);
         getDrawable().draw(canvas);
-        this.f11074w.a(getContext(), canvas, this.f11065n);
-        c cVar = this.f11062k;
+        this.f11860w.a(getContext(), canvas, this.f11851n);
+        c cVar = this.f11848k;
         if (cVar == null) {
             return null;
         }
-        int i6 = cVar.f11085a;
-        int i9 = cVar.f11086b;
-        int i10 = this.f11071t;
-        Bitmap createBitmap2 = Bitmap.createBitmap(createBitmap, i6, i9, i10, i10);
+        int i4 = cVar.f11871a;
+        int i6 = cVar.f11872b;
+        int i9 = this.f11857t;
+        Bitmap createBitmap2 = Bitmap.createBitmap(createBitmap, i4, i6, i9, i9);
         createBitmap.recycle();
         return createBitmap2;
     }
 
     private void f() {
         c cVar;
-        c cVar2 = this.f11063l;
-        if (cVar2 == null || (cVar = this.f11062k) == null || Math.abs(cVar2.f11085a - cVar.f11085a) >= 20 || Math.abs(this.f11063l.f11086b - this.f11062k.f11086b) >= 20) {
-            this.f11061j = 6;
+        c cVar2 = this.f11849l;
+        if (cVar2 == null || (cVar = this.f11848k) == null || Math.abs(cVar2.f11871a - cVar.f11871a) >= 20 || Math.abs(this.f11849l.f11872b - this.f11848k.f11872b) >= 20) {
+            this.f11847j = 6;
             postInvalidate();
             return;
         }
-        this.f11061j = 5;
+        this.f11847j = 5;
         postInvalidate();
-        a aVar = this.f11073v;
+        a aVar = this.f11859v;
         if (aVar != null) {
             aVar.a();
         }
     }
 
     public void callback(a aVar) {
-        this.f11073v = aVar;
+        this.f11859v = aVar;
     }
 
-    public void down(int i6) {
-        if (this.f11063l != null) {
-            this.f11069r = System.currentTimeMillis();
-            this.f11061j = 1;
-            c cVar = this.f11063l;
-            int width = getWidth() - this.f11071t;
-            cVar.f11085a = (int) (((i6 / 100.0f) * (width - (r2 * 2))) + this.f11063l.f11087c);
+    public void down(int i4) {
+        if (this.f11849l != null) {
+            this.f11855r = System.currentTimeMillis();
+            this.f11847j = 1;
+            c cVar = this.f11849l;
+            int width = getWidth() - this.f11857t;
+            cVar.f11871a = (int) (((i4 / 100.0f) * (width - (r2 * 2))) + this.f11849l.f11873c);
             postInvalidate();
         }
     }
 
     public void loose() {
         c cVar;
-        this.f11061j = 3;
-        this.f11070s = System.currentTimeMillis();
-        c cVar2 = this.f11063l;
-        if (cVar2 == null || (cVar = this.f11062k) == null || Math.abs(cVar2.f11085a - cVar.f11085a) >= 20 || Math.abs(this.f11063l.f11086b - this.f11062k.f11086b) >= 20) {
-            this.f11061j = 6;
+        this.f11847j = 3;
+        this.f11856s = System.currentTimeMillis();
+        c cVar2 = this.f11849l;
+        if (cVar2 == null || (cVar = this.f11848k) == null || Math.abs(cVar2.f11871a - cVar.f11871a) >= 20 || Math.abs(this.f11849l.f11872b - this.f11848k.f11872b) >= 20) {
+            this.f11847j = 6;
             postInvalidate();
         } else {
-            this.f11061j = 5;
+            this.f11847j = 5;
             postInvalidate();
-            a aVar = this.f11073v;
+            a aVar = this.f11859v;
             if (aVar != null) {
                 aVar.a();
             }
@@ -232,15 +232,15 @@ public class PictureVerifyView extends RoundImageView {
         postInvalidate();
     }
 
-    public void move(int i6) {
+    public void move(int i4) {
         c cVar;
-        if (this.f11076y == i6 || (cVar = this.f11063l) == null) {
+        if (this.f11862y == i4 || (cVar = this.f11849l) == null) {
             return;
         }
-        this.f11076y = i6;
-        this.f11061j = 2;
-        int width = getWidth() - this.f11071t;
-        cVar.f11085a = (int) (((i6 / 100.0f) * (width - (r2 * 2))) + this.f11063l.f11087c);
+        this.f11862y = i4;
+        this.f11847j = 2;
+        int width = getWidth() - this.f11857t;
+        cVar.f11871a = (int) (((i4 / 100.0f) * (width - (r2 * 2))) + this.f11849l.f11873c);
         postInvalidate();
     }
 
@@ -249,74 +249,74 @@ public class PictureVerifyView extends RoundImageView {
         Canvas canvas2;
         c cVar;
         if (getDrawable() != null && getWidth() > 0 && getHeight() >= 0) {
-            if (this.f11062k == null) {
-                this.f11062k = this.f11074w.a(getWidth(), getHeight(), this.f11071t);
+            if (this.f11848k == null) {
+                this.f11848k = this.f11860w.a(getWidth(), getHeight(), this.f11857t);
             }
-            if (this.f11063l == null) {
-                this.f11063l = this.f11074w.b(getWidth(), getHeight(), this.f11071t);
+            if (this.f11849l == null) {
+                this.f11849l = this.f11860w.b(getWidth(), getHeight(), this.f11857t);
             }
-            if (this.f11065n == null) {
-                Path a9 = this.f11074w.a(this.f11071t);
-                this.f11065n = a9;
-                c cVar2 = this.f11062k;
-                a9.offset(cVar2.f11085a, cVar2.f11086b);
+            if (this.f11851n == null) {
+                Path a9 = this.f11860w.a(this.f11857t);
+                this.f11851n = a9;
+                c cVar2 = this.f11848k;
+                a9.offset(cVar2.f11871a, cVar2.f11872b);
             }
-            if (this.f11064m == null) {
+            if (this.f11850m == null) {
                 Bitmap bitmap = null;
                 if (getDrawable() != null) {
                     Bitmap createBitmap = Bitmap.createBitmap(getWidth(), getHeight(), Bitmap.Config.ARGB_8888);
                     Canvas canvas3 = new Canvas(createBitmap);
                     getDrawable().setBounds(0, 0, getWidth(), getHeight());
-                    canvas3.clipPath(this.f11065n);
+                    canvas3.clipPath(this.f11851n);
                     getDrawable().draw(canvas3);
-                    this.f11074w.a(getContext(), canvas3, this.f11065n);
-                    c cVar3 = this.f11062k;
+                    this.f11860w.a(getContext(), canvas3, this.f11851n);
+                    c cVar3 = this.f11848k;
                     if (cVar3 != null) {
-                        int i6 = cVar3.f11085a;
-                        int i9 = cVar3.f11086b;
-                        int i10 = this.f11071t;
-                        bitmap = Bitmap.createBitmap(createBitmap, i6, i9, i10, i10);
+                        int i4 = cVar3.f11871a;
+                        int i6 = cVar3.f11872b;
+                        int i9 = this.f11857t;
+                        bitmap = Bitmap.createBitmap(createBitmap, i4, i6, i9, i9);
                         createBitmap.recycle();
                     }
                 }
-                this.f11064m = bitmap;
+                this.f11850m = bitmap;
             }
         }
         if (getDrawable() == null) {
             return;
         }
-        if (this.f11061j == 5 || this.f11062k == null) {
+        if (this.f11847j == 5 || this.f11848k == null) {
             canvas2 = canvas;
         } else {
-            canvas.drawPath(this.f11065n, this.f11067p);
-            c cVar4 = this.f11062k;
-            int i11 = cVar4.f11085a;
-            int i12 = cVar4.f11086b;
-            int i13 = this.f11071t;
+            canvas.drawPath(this.f11851n, this.f11853p);
+            c cVar4 = this.f11848k;
+            int i10 = cVar4.f11871a;
+            int i11 = cVar4.f11872b;
+            int i12 = this.f11857t;
             canvas2 = canvas;
-            canvas2.drawRect(i11, i12, i11 + i13, i12 + i13, this.f11068q);
+            canvas2.drawRect(i10, i11, i10 + i12, i11 + i12, this.f11854q);
         }
-        int i14 = this.f11061j;
-        if ((i14 == 2 || i14 == 4 || i14 == 1 || i14 == 6) && (cVar = this.f11063l) != null) {
-            canvas2.drawBitmap(this.f11064m, cVar.f11085a, cVar.f11086b, this.f11066o);
+        int i13 = this.f11847j;
+        if ((i13 == 2 || i13 == 4 || i13 == 1 || i13 == 6) && (cVar = this.f11849l) != null) {
+            canvas2.drawBitmap(this.f11850m, cVar.f11871a, cVar.f11872b, this.f11852o);
         }
     }
 
     public void setBitmap(Bitmap bitmap) {
-        this.f11065n = null;
-        this.f11063l = null;
-        this.f11062k = null;
-        this.f11064m.recycle();
-        this.f11064m = null;
+        this.f11851n = null;
+        this.f11849l = null;
+        this.f11848k = null;
+        this.f11850m.recycle();
+        this.f11850m = null;
         setImageBitmap(bitmap);
     }
 
-    public void setBlockSize(int i6) {
-        this.f11071t = i6;
-        this.f11065n = null;
-        this.f11063l = null;
-        this.f11062k = null;
-        this.f11064m = null;
+    public void setBlockSize(int i4) {
+        this.f11857t = i4;
+        this.f11851n = null;
+        this.f11849l = null;
+        this.f11848k = null;
+        this.f11850m = null;
         postInvalidate();
     }
 
@@ -324,60 +324,60 @@ public class PictureVerifyView extends RoundImageView {
         this(context, attributeSet, 0);
     }
 
-    public PictureVerifyView(Context context, AttributeSet attributeSet, int i6) {
-        super(context, attributeSet, i6);
-        this.f11061j = 4;
-        this.f11071t = 50;
-        this.f11072u = true;
-        this.f11076y = -1;
+    public PictureVerifyView(Context context, AttributeSet attributeSet, int i4) {
+        super(context, attributeSet, i4);
+        this.f11847j = 4;
+        this.f11857t = 50;
+        this.f11858u = true;
+        this.f11862y = -1;
         b bVar = new b(context);
-        this.f11074w = bVar;
-        this.f11067p = bVar.a();
+        this.f11860w = bVar;
+        this.f11853p = bVar.a();
         Paint paint = new Paint();
-        this.f11068q = paint;
+        this.f11854q = paint;
         paint.setColor(Color.parseColor("#B5B5B5"));
-        this.f11068q.setStrokeWidth(q.a(getContext(), 1.0f));
-        this.f11068q.setStyle(Paint.Style.STROKE);
-        this.f11066o = this.f11074w.b();
+        this.f11854q.setStrokeWidth(q.a(getContext(), 1.0f));
+        this.f11854q.setStyle(Paint.Style.STROKE);
+        this.f11852o = this.f11860w.b();
     }
 
     private void b() {
-        this.f11061j = 4;
-        this.f11064m = null;
-        this.f11062k = null;
-        this.f11065n = null;
+        this.f11847j = 4;
+        this.f11850m = null;
+        this.f11848k = null;
+        this.f11851n = null;
         postInvalidate();
     }
 
-    private void a(float f3, float f9) {
-        c cVar = this.f11063l;
+    private void a(float f2, float f9) {
+        c cVar = this.f11849l;
         if (cVar != null) {
-            this.f11061j = 1;
-            int i6 = this.f11071t;
-            cVar.f11085a = (int) (f3 - (i6 / 2.0f));
-            cVar.f11086b = (int) (f9 - (i6 / 2.0f));
-            this.f11069r = System.currentTimeMillis();
+            this.f11847j = 1;
+            int i4 = this.f11857t;
+            cVar.f11871a = (int) (f2 - (i4 / 2.0f));
+            cVar.f11872b = (int) (f9 - (i4 / 2.0f));
+            this.f11855r = System.currentTimeMillis();
             postInvalidate();
         }
     }
 
     private void a(com.anythink.basead.ui.guidetoclickv2.picverify.a aVar) {
-        this.f11074w = aVar;
+        this.f11860w = aVar;
     }
 
-    private void a(boolean z3) {
-        this.f11072u = z3;
+    private void a(boolean z6) {
+        this.f11858u = z6;
     }
 
     private Bitmap a(Bitmap bitmap) {
-        c cVar = this.f11062k;
+        c cVar = this.f11848k;
         if (cVar == null) {
             return null;
         }
-        int i6 = cVar.f11085a;
-        int i9 = cVar.f11086b;
-        int i10 = this.f11071t;
-        Bitmap createBitmap = Bitmap.createBitmap(bitmap, i6, i9, i10, i10);
+        int i4 = cVar.f11871a;
+        int i6 = cVar.f11872b;
+        int i9 = this.f11857t;
+        Bitmap createBitmap = Bitmap.createBitmap(bitmap, i4, i6, i9, i9);
         bitmap.recycle();
         return createBitmap;
     }

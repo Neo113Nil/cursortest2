@@ -1,38 +1,39 @@
 package com.google.android.gms.internal.ads;
 
 import java.util.Objects;
+import w.AbstractC5128c;
 
 /* loaded from: classes2.dex */
 public final class GG extends OG {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f24961a;
+    public final int f25751a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f24962b;
+    public final int f25752b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final C3933tE f24963c;
+    public final C3956tE f25753c;
 
-    public GG(int i, int i6, C3933tE c3933tE) {
-        this.f24961a = i;
-        this.f24962b = i6;
-        this.f24963c = c3933tE;
+    public GG(int i, int i4, C3956tE c3956tE) {
+        this.f25751a = i;
+        this.f25752b = i4;
+        this.f25753c = c3956tE;
     }
 
-    @Override // com.google.android.gms.internal.ads.AbstractC3825rE
+    @Override // com.google.android.gms.internal.ads.AbstractC3848rE
     public final boolean a() {
-        return this.f24963c != C3933tE.f34246u;
+        return this.f25753c != C3956tE.f35032u;
     }
 
     public final int b() {
-        C3933tE c3933tE = C3933tE.f34246u;
-        int i = this.f24962b;
-        C3933tE c3933tE2 = this.f24963c;
-        if (c3933tE2 == c3933tE) {
+        C3956tE c3956tE = C3956tE.f35032u;
+        int i = this.f25752b;
+        C3956tE c3956tE2 = this.f25753c;
+        if (c3956tE2 == c3956tE) {
             return i;
         }
-        if (c3933tE2 == C3933tE.f34243r || c3933tE2 == C3933tE.f34244s || c3933tE2 == C3933tE.f34245t) {
+        if (c3956tE2 == C3956tE.f35029r || c3956tE2 == C3956tE.f35030s || c3956tE2 == C3956tE.f35031t) {
             return i + 5;
         }
         throw new IllegalStateException("Unknown variant");
@@ -43,24 +44,24 @@ public final class GG extends OG {
             return false;
         }
         GG gg = (GG) obj;
-        return gg.f24961a == this.f24961a && gg.b() == b() && gg.f24963c == this.f24963c;
+        return gg.f25751a == this.f25751a && gg.b() == b() && gg.f25753c == this.f25753c;
     }
 
     public final int hashCode() {
-        return Objects.hash(GG.class, Integer.valueOf(this.f24961a), Integer.valueOf(this.f24962b), this.f24963c);
+        return Objects.hash(GG.class, Integer.valueOf(this.f25751a), Integer.valueOf(this.f25752b), this.f25753c);
     }
 
     public final String toString() {
-        String valueOf = String.valueOf(this.f24963c);
+        String valueOf = String.valueOf(this.f25753c);
         int length = valueOf.length();
-        int i = this.f24962b;
+        int i = this.f25752b;
         int length2 = String.valueOf(i).length();
-        int i6 = this.f24961a;
-        StringBuilder sb = new StringBuilder(length + 32 + length2 + 16 + String.valueOf(i6).length() + 10);
+        int i4 = this.f25751a;
+        StringBuilder sb = new StringBuilder(length + 32 + length2 + 16 + String.valueOf(i4).length() + 10);
         sb.append("AES-CMAC Parameters (variant: ");
         sb.append(valueOf);
         sb.append(", ");
         sb.append(i);
-        return u1.h.d(i6, "-byte tags, and ", "-byte key)", sb);
+        return AbstractC5128c.d(i4, "-byte tags, and ", "-byte key)", sb);
     }
 }

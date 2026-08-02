@@ -2,6 +2,7 @@ package com.anythink.expressad.splash.c;
 
 import android.graphics.Bitmap;
 import android.text.TextUtils;
+import com.IceFishing.LiveIceFishing.k;
 import com.anythink.expressad.foundation.h.u;
 import com.anythink.expressad.foundation.h.y;
 import com.anythink.expressad.splash.c.g;
@@ -12,13 +13,13 @@ import java.io.File;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    private static String f20541a = "ResManager";
+    private static String f21328a = "ResManager";
 
     /* renamed from: b, reason: collision with root package name */
-    private static int f20542b = 1;
+    private static int f21329b = 1;
 
     public static void a(final ATSplashView aTSplashView, com.anythink.expressad.foundation.d.d dVar, final com.anythink.expressad.splash.view.a aVar) {
-        com.anythink.basead.exoplayer.f.f.l().a(dVar.bm(), new com.anythink.expressad.foundation.g.d.c() { // from class: com.anythink.expressad.splash.c.d.1
+        k.m().a(dVar.bm(), new com.anythink.expressad.foundation.g.d.c() { // from class: com.anythink.expressad.splash.c.d.1
             @Override // com.anythink.expressad.foundation.g.d.c
             public final void a(Bitmap bitmap, String str) {
                 com.anythink.expressad.splash.view.a aVar2 = com.anythink.expressad.splash.view.a.this;
@@ -46,7 +47,7 @@ public final class d {
         if (TextUtils.isEmpty(dVar.bl())) {
             return;
         }
-        com.anythink.basead.exoplayer.f.f.l().a(dVar.bl(), new com.anythink.expressad.foundation.g.d.c() { // from class: com.anythink.expressad.splash.c.d.2
+        k.m().a(dVar.bl(), new com.anythink.expressad.foundation.g.d.c() { // from class: com.anythink.expressad.splash.c.d.2
             @Override // com.anythink.expressad.foundation.g.d.c
             public final void a(Bitmap bitmap, String str) {
             }
@@ -68,16 +69,16 @@ public final class d {
         return dVar;
     }
 
-    private static void a(ATSplashView aTSplashView, String str, com.anythink.expressad.foundation.d.d dVar, String str2, String str3, boolean z3, int i, boolean z6) {
+    private static void a(ATSplashView aTSplashView, String str, com.anythink.expressad.foundation.d.d dVar, String str2, String str3, boolean z6, int i, boolean z9) {
         g.c cVar = new g.c();
         cVar.c(str3);
         cVar.b(str2);
         cVar.a(dVar);
         cVar.a(str);
-        cVar.b(z3);
+        cVar.b(z6);
         cVar.a(i);
-        cVar.a(z6);
-        g.a.f20604a.a(aTSplashView, cVar, null);
+        cVar.a(z9);
+        g.a.f21391a.a(aTSplashView, cVar, null);
     }
 
     private static String a(String str) {
@@ -126,22 +127,22 @@ public final class d {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static boolean a(com.anythink.expressad.foundation.d.d dVar) {
-        boolean z3;
+        boolean z6;
         Bitmap a9;
         if (!TextUtils.isEmpty(dVar.T())) {
             com.anythink.expressad.videocommon.b.a.a();
             String a10 = com.anythink.expressad.videocommon.b.a.a(dVar.T());
             if (y.a(a10) || new File(a10).length() <= 0) {
-                z3 = false;
-                if (z3 && TextUtils.isEmpty(dVar.b()) && TextUtils.isEmpty(dVar.c())) {
-                    z3 = false;
+                z6 = false;
+                if (z6 && TextUtils.isEmpty(dVar.b()) && TextUtils.isEmpty(dVar.c())) {
+                    z6 = false;
                 }
-                return !dVar.j() ? (TextUtils.isEmpty(dVar.bm()) || (a9 = com.anythink.expressad.foundation.g.d.a.a(u.a(dVar.bm()))) == null || a9.isRecycled()) ? false : true : z3;
+                return !dVar.j() ? (TextUtils.isEmpty(dVar.bm()) || (a9 = com.anythink.expressad.foundation.g.d.a.a(u.a(dVar.bm()))) == null || a9.isRecycled()) ? false : true : z6;
             }
         }
-        z3 = true;
-        if (z3) {
-            z3 = false;
+        z6 = true;
+        if (z6) {
+            z6 = false;
         }
         if (!dVar.j()) {
         }

@@ -6,11 +6,11 @@ import java.util.concurrent.CancellationException;
 public final class a extends CancellationException {
 
     /* renamed from: n, reason: collision with root package name */
-    public final transient V7.i f3413n;
+    public final transient V7.i f3575n;
 
     public a(V7.i iVar) {
         super("Flow was aborted, no more elements needed");
-        this.f3413n = iVar;
+        this.f3575n = iVar;
     }
 
     @Override // java.lang.Throwable

@@ -4,19 +4,19 @@ package com.anythink.core.common.h;
 public final class r extends bj {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f14039a = 1;
+    public static final int f14825a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f14040b = 2;
+    public static final int f14826b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f14041c = "return_flag";
+    public static final String f14827c = "return_flag";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final String f14042d = "sdk_native_im_w";
+    public static final String f14828d = "sdk_native_im_w";
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f14043e = "sdk_native_im_h";
+    public static final String f14829e = "sdk_native_im_h";
     private String aD;
     private String aE;
     private int aF = 1;

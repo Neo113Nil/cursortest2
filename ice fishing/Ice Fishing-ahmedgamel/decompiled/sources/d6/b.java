@@ -8,12 +8,12 @@ import kotlin.jvm.internal.h;
 public final /* synthetic */ class b extends g implements l {
 
     /* renamed from: v, reason: collision with root package name */
-    public static final b f37074v = new b(1, c.class, "sanitize", "sanitize(Ljava/lang/String;)Ljava/lang/String;", 1);
+    public static final b f37183v = new b(1, c.class, "sanitize", "sanitize(Ljava/lang/String;)Ljava/lang/String;", 1);
 
     @Override // I7.l
     public final Object invoke(Object obj) {
         String p02 = (String) obj;
         h.e(p02, "p0");
-        return V2.a.t(p02);
+        return A8.b.u(p02);
     }
 }

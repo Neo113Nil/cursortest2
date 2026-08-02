@@ -20,19 +20,19 @@ import java.util.List;
 public abstract class BaseAlbumScaleItemView extends FrameLayout implements b {
 
     /* renamed from: a, reason: collision with root package name */
-    protected List<Bitmap> f10576a;
+    protected List<Bitmap> f11362a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected AnimatorSet f10577b;
+    protected AnimatorSet f11363b;
 
     /* renamed from: c, reason: collision with root package name */
-    protected float f10578c;
+    protected float f11364c;
 
     /* renamed from: d, reason: collision with root package name */
-    protected boolean f10579d;
+    protected boolean f11365d;
 
     /* renamed from: e, reason: collision with root package name */
-    protected long f10580e;
+    protected long f11366e;
 
     public BaseAlbumScaleItemView(Context context) {
         this(context, null);
@@ -48,14 +48,14 @@ public abstract class BaseAlbumScaleItemView extends FrameLayout implements b {
         return getContext().getResources().getDisplayMetrics().heightPixels;
     }
 
-    public float dip2px(float f3) {
-        return (f3 * getContext().getResources().getDisplayMetrics().density) + 0.5f;
+    public float dip2px(float f2) {
+        return (f2 * getContext().getResources().getDisplayMetrics().density) + 0.5f;
     }
 
-    public List<Animator> getAnimatorList(View view, float f3, float f9, int i) {
+    public List<Animator> getAnimatorList(View view, float f2, float f9, int i) {
         ArrayList arrayList = new ArrayList();
-        if (f3 > 0.0f || f9 > 0.0f) {
-            ObjectAnimator ofFloat = ObjectAnimator.ofFloat(view, "translationY", 0.0f, f3);
+        if (f2 > 0.0f || f9 > 0.0f) {
+            ObjectAnimator ofFloat = ObjectAnimator.ofFloat(view, "translationY", 0.0f, f2);
             ObjectAnimator ofFloat2 = ObjectAnimator.ofFloat(view, "translationX", 0.0f, f9);
             arrayList.add(ofFloat);
             arrayList.add(ofFloat2);
@@ -75,7 +75,7 @@ public abstract class BaseAlbumScaleItemView extends FrameLayout implements b {
 
     @Override // com.anythink.basead.ui.animplayerview.b
     public void pause() {
-        AnimatorSet animatorSet = this.f10577b;
+        AnimatorSet animatorSet = this.f11363b;
         if (animatorSet != null) {
             animatorSet.pause();
         }
@@ -87,7 +87,7 @@ public abstract class BaseAlbumScaleItemView extends FrameLayout implements b {
 
     @Override // com.anythink.basead.ui.animplayerview.b
     public void resume() {
-        AnimatorSet animatorSet = this.f10577b;
+        AnimatorSet animatorSet = this.f11363b;
         if (animatorSet != null) {
             animatorSet.resume();
         }
@@ -104,16 +104,16 @@ public abstract class BaseAlbumScaleItemView extends FrameLayout implements b {
         }
     }
 
-    public void setMainViewScale(float f3) {
-        this.f10578c = f3;
+    public void setMainViewScale(float f2) {
+        this.f11364c = f2;
     }
 
-    public void setOrientation(boolean z3) {
-        this.f10579d = z3;
+    public void setOrientation(boolean z6) {
+        this.f11365d = z6;
     }
 
     public void setStartDelay(long j6) {
-        this.f10580e = j6;
+        this.f11366e = j6;
     }
 
     public void start() {
@@ -121,10 +121,10 @@ public abstract class BaseAlbumScaleItemView extends FrameLayout implements b {
 
     @Override // com.anythink.basead.ui.animplayerview.b
     public void stop() {
-        AnimatorSet animatorSet = this.f10577b;
+        AnimatorSet animatorSet = this.f11363b;
         if (animatorSet != null) {
             animatorSet.cancel();
-            this.f10577b = null;
+            this.f11363b = null;
         }
     }
 

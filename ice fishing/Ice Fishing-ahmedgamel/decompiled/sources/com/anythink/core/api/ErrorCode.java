@@ -573,29 +573,29 @@ public class ErrorCode {
                 return new AdError(str, "AdSource continuous no fill.", str2, str3);
             case '%':
                 return new AdError(str, "AdSource cumulative no fill.", str2, str3);
-            case j.f5806M /* 38 */:
+            case j.f6592M /* 38 */:
                 return new AdError(str, "AdSource cumulative no fill percentage.", str2, str3);
             case '\'':
                 return new AdError(placeStrategyError, "Get placement strategy error, please check your appid、appkey and placementid is availiable.", str2, str3);
-            case j.f5808O /* 40 */:
+            case j.f6594O /* 40 */:
                 return new AdError(appIdOrPlaceIdEmpty, "AppId or PlacementId is empty.", str2, str3);
             case ')':
                 return new AdError(formatError, "Mismatched ad placement and ad format", str2, str3);
             case '*':
                 return new AdError(noADError, "Return Ad is empty.", str2, str3);
-            case j.f5811R /* 43 */:
+            case j.f6597R /* 43 */:
                 return new AdError(contextDestoryError, "Context or activity has been destory.", str2, str3);
-            case j.f5812S /* 44 */:
+            case j.f6598S /* 44 */:
                 return new AdError(placementAdClose, "Placement Ads switch is close.", str2, str3);
-            case j.f5813T /* 45 */:
+            case j.f6599T /* 45 */:
                 return new AdError(noAdsourceConfig, "The placement strategy does not contain any ad sources, please check the mediation configuration in TopOn", str2, str3);
             case '.':
                 return new AdError(noAvailableAdsource, "Ad sources are filtered, no ad source is currently available", str2, str3);
             case '/':
                 return new AdError(adShowError, "Ad show failed", str2, str3);
-            case j.f5816W /* 48 */:
+            case j.f6602W /* 48 */:
                 return new AdError(adSourceBidError, "Bid error", str2, str3);
-            case j.f5817X /* 49 */:
+            case j.f6603X /* 49 */:
                 return new AdError(adSourceNotFilledError, "Ad source not filled, cause by customize fillter.", str2, str3);
             case '2':
                 return new AdError(noAdsourceConfigInDebugerMode, "The placement strategy does not contain any ad sources, please check the debugger configuration in ATSDK.setDebuggerConfig", str2, str3);
@@ -603,22 +603,22 @@ public class ErrorCode {
                 return new AdError(httpStatuException, "Possible network issue on device. Please check your network.", str2, str3);
             case '4':
                 return "699".equals(str2) ? new AdError(placeDeletedError, "This Placement has been suspended or deleted and no longer obtains Placement strategy.", "", "") : "700".equals(str2) ? new AdError(statuError, "API access restricted due to too many requests. Please reduce requests or try again later.", "", "") : new AdError(statuError, "Service status error.", str2, str3);
-            case i.f14823d /* 53 */:
+            case i.f15609d /* 53 */:
                 return new AdError(dataLevelLowError, "Upload data level is FORBIDDEN, must called 'ATSDK.setGDPRUploadDataLevel' to set the level.", str2, str3);
             case '6':
                 return new AdError(exception, "Exception in sdk.", str2, str3);
             case '7':
                 return new AdError("10001", "Please check your appkey.", str2, str3);
-            case p.a.f19679e /* 56 */:
+            case p.a.f20466e /* 56 */:
                 return new AdError(appIdError, "Please check your appid.", str2, str3);
             case '9':
                 return new AdError(placementIdError, "Please check your placementid.", str2, str3);
             case ':':
                 return new AdError(sharedPlacementIdError, "Forbidden placement", str2, str3);
-            case j.v.f12591n /* 59 */:
+            case j.v.f13377n /* 59 */:
                 return new AdError(unknownMediationIdError, "Unknown Mediation ID", str2, str3);
             default:
-                return new AdError("-9999", m.f16809e, str2, str3);
+                return new AdError("-9999", m.f17596e, str2, str3);
         }
     }
 }

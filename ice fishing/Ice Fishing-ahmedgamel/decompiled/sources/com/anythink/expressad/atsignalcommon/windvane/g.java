@@ -13,20 +13,20 @@ import java.util.HashMap;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    private static HashMap<String, Class> f18072a = new HashMap<>();
+    private static HashMap<String, Class> f18859a = new HashMap<>();
 
     /* renamed from: b, reason: collision with root package name */
-    private Context f18073b;
+    private Context f18860b;
 
     /* renamed from: c, reason: collision with root package name */
-    private Object f18074c;
+    private Object f18861c;
 
     /* renamed from: d, reason: collision with root package name */
-    private WindVaneWebView f18075d;
+    private WindVaneWebView f18862d;
 
     public g(Context context, WindVaneWebView windVaneWebView) {
-        this.f18073b = context;
-        this.f18075d = windVaneWebView;
+        this.f18860b = context;
+        this.f18862d = windVaneWebView;
         try {
             a(BannerJSPlugin.class);
         } catch (ClassNotFoundException unused) {
@@ -40,7 +40,7 @@ public final class g {
         } catch (ClassNotFoundException unused3) {
         }
         try {
-            a(com.anythink.expressad.atsignalcommon.a.b.f17938e, MraidSignalCommunication.class);
+            a(com.anythink.expressad.atsignalcommon.a.b.f18725e, MraidSignalCommunication.class);
         } catch (ClassNotFoundException unused4) {
         }
         try {
@@ -48,28 +48,28 @@ public final class g {
         } catch (ClassNotFoundException unused5) {
         }
         try {
-            a(com.anythink.expressad.atsignalcommon.a.b.f17941h, WebGLCheckSignal.class);
+            a(com.anythink.expressad.atsignalcommon.a.b.f18728h, WebGLCheckSignal.class);
         } catch (ClassNotFoundException unused6) {
         }
     }
 
     private static void b(String str) {
-        if (f18072a == null) {
-            f18072a = new HashMap<>();
+        if (f18859a == null) {
+            f18859a = new HashMap<>();
         }
-        f18072a.remove(str);
+        f18859a.remove(str);
     }
 
     public final void a(Context context) {
-        this.f18073b = context;
+        this.f18860b = context;
     }
 
     public final void a(Object obj) {
-        this.f18074c = obj;
+        this.f18861c = obj;
     }
 
     private Object a(String str, WindVaneWebView windVaneWebView, Context context) {
-        Class cls = f18072a.get(str);
+        Class cls = f18859a.get(str);
         if (cls == null) {
             return null;
         }
@@ -79,7 +79,7 @@ public final class g {
             }
             j jVar = (j) cls.newInstance();
             jVar.initialize(context, windVaneWebView);
-            jVar.initialize(this.f18074c, windVaneWebView);
+            jVar.initialize(this.f18861c, windVaneWebView);
             return jVar;
         } catch (Exception e9) {
             e9.printStackTrace();
@@ -88,24 +88,24 @@ public final class g {
     }
 
     public static void a(Class cls) {
-        if (f18072a == null) {
-            f18072a = new HashMap<>();
+        if (f18859a == null) {
+            f18859a = new HashMap<>();
         }
-        f18072a.put(cls.getSimpleName(), cls);
+        f18859a.put(cls.getSimpleName(), cls);
     }
 
     private static void a(String str, Class cls) {
-        if (f18072a == null) {
-            f18072a = new HashMap<>();
+        if (f18859a == null) {
+            f18859a = new HashMap<>();
         }
-        f18072a.put(str, cls);
+        f18859a.put(str, cls);
     }
 
     public final Object a(String str) {
-        if (f18072a == null) {
-            f18072a = new HashMap<>();
+        if (f18859a == null) {
+            f18859a = new HashMap<>();
         }
-        return a(str, this.f18075d, this.f18073b);
+        return a(str, this.f18862d, this.f18860b);
     }
 
     private static void a() {
@@ -122,7 +122,7 @@ public final class g {
         } catch (ClassNotFoundException unused3) {
         }
         try {
-            a(com.anythink.expressad.atsignalcommon.a.b.f17938e, MraidSignalCommunication.class);
+            a(com.anythink.expressad.atsignalcommon.a.b.f18725e, MraidSignalCommunication.class);
         } catch (ClassNotFoundException unused4) {
         }
         try {
@@ -130,7 +130,7 @@ public final class g {
         } catch (ClassNotFoundException unused5) {
         }
         try {
-            a(com.anythink.expressad.atsignalcommon.a.b.f17941h, WebGLCheckSignal.class);
+            a(com.anythink.expressad.atsignalcommon.a.b.f18728h, WebGLCheckSignal.class);
         } catch (ClassNotFoundException unused6) {
         }
     }

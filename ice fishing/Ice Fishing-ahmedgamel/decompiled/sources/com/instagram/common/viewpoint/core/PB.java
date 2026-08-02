@@ -77,7 +77,7 @@ public final class PB<V> implements Collection<V> {
     @Override // java.util.Collection
     public final boolean removeAll(Collection<?> collection) {
         int A04 = this.A00.A04();
-        boolean z3 = false;
+        boolean z6 = false;
         int i = 0;
         while (i < A04) {
             PC pc = this.A00;
@@ -96,11 +96,11 @@ public final class PB<V> implements Collection<V> {
                 this.A00.A0E(i);
                 i--;
                 A04--;
-                z3 = true;
+                z6 = true;
             }
             i++;
         }
-        return z3;
+        return z6;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.PB != com.facebook.ads.internal.androidx.support.v4.util.MapCollections<K, V>$ValuesCollection */

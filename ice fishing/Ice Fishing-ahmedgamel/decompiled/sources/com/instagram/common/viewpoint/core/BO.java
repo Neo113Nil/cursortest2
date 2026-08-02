@@ -13,7 +13,7 @@ import javax.annotation.CheckForNull;
 
 @ElementTypesAreNonnullByDefault
 /* loaded from: assets/audience_network/classes2.dex */
-public abstract class BO<E> extends AbstractC2283oO<E> implements Set<E> {
+public abstract class BO<E> extends AbstractC2303oO<E> implements Set<E> {
     public static byte[] A01 = null;
     public static String[] A02 = {"tpMJzZrhhsrMkwhOFEYR9GbFlaKVIskH", "YlBA8T7Fro2", "USXGP8OuBAzNSq5CbRyfQ0SKNWZdvns1", "IwkjEd2x85ogj6Hkpqc", "vhSxYEQIRpWfy1n6I2fIJfhoZxh6fLOY", "PMh9AUA5ndLdUxX8KVZJ5S1GU2oeFGKJ", "nfsou9g6KKUnvuudu0UQjvY", "janJ9NtfQ2imEKBo1ypA"};
     public static final long serialVersionUID = 912559;
@@ -22,10 +22,10 @@ public abstract class BO<E> extends AbstractC2283oO<E> implements Set<E> {
     @LazyInit
     public transient BP<E> A00;
 
-    public static String A0B(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 70);
+    public static String A0B(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 70);
         }
         return new String(copyOfRange);
     }
@@ -42,7 +42,7 @@ public abstract class BO<E> extends AbstractC2283oO<E> implements Set<E> {
     	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
     public BP<E> A0J() {
         BP<E> bp = this.A00;
         if (bp != null) {
@@ -69,7 +69,7 @@ public abstract class BO<E> extends AbstractC2283oO<E> implements Set<E> {
             }
             return highestOneBit;
         }
-        AbstractC2070ki.A0E(max < 1073741824, A0B(18, 20, 20));
+        AbstractC2090ki.A0E(max < 1073741824, A0B(18, 20, 20));
         return 1073741824;
     }
 
@@ -90,16 +90,16 @@ public abstract class BO<E> extends AbstractC2283oO<E> implements Set<E> {
                 Object[] objArr2 = new Object[A03];
                 int i = A03 - 1;
                 int uniques = 0;
-                int i6 = 0;
+                int i4 = 0;
                 for (int j6 = 0; j6 < n9; j6++) {
-                    Object A00 = AbstractC2398qG.A00(objArr[j6], j6);
+                    Object A00 = AbstractC2418qG.A00(objArr[j6], j6);
                     int hashCode = A00.hashCode();
-                    int tableSize = AbstractC2277oI.A00(hashCode);
+                    int tableSize = AbstractC2297oI.A00(hashCode);
                     while (true) {
-                        int i9 = tableSize & i;
-                        Object obj = objArr2[i9];
+                        int i6 = tableSize & i;
+                        Object obj = objArr2[i6];
                         if (obj == null) {
-                            int index = i6 + 1;
+                            int index = i4 + 1;
                             int tableSize2 = A02[3].length();
                             if (tableSize2 == 32) {
                                 break;
@@ -107,10 +107,10 @@ public abstract class BO<E> extends AbstractC2283oO<E> implements Set<E> {
                                 String[] strArr = A02;
                                 strArr[0] = "Zw143axrDatzvvuiLOoxXPNJBQDLOllI";
                                 strArr[2] = "imRh362HWPXwfaqxgHfljoqeqcFI5Kex";
-                                objArr[i6] = A00;
-                                objArr2[i9] = A00;
+                                objArr[i4] = A00;
+                                objArr2[i6] = A00;
                                 uniques += hashCode;
-                                i6 = index;
+                                i4 = index;
                             }
                         } else {
                             if (obj.equals(A00)) {
@@ -120,18 +120,18 @@ public abstract class BO<E> extends AbstractC2283oO<E> implements Set<E> {
                         }
                     }
                 }
-                Arrays.fill(objArr, i6, n9, (Object) null);
-                if (i6 == 1) {
+                Arrays.fill(objArr, i4, n9, (Object) null);
+                if (i4 == 1) {
                     return new AnonymousClass25(Objects.requireNonNull(objArr[0]));
                 }
-                int tableSize3 = A03(i6);
+                int tableSize3 = A03(i4);
                 if (tableSize3 < A03 / 2) {
-                    return A04(i6, objArr);
+                    return A04(i4, objArr);
                 }
-                if (A0D(i6, objArr.length)) {
-                    objArr = Arrays.copyOf(objArr, i6);
+                if (A0D(i4, objArr.length)) {
+                    objArr = Arrays.copyOf(objArr, i4);
                 }
-                return new AnonymousClass29(objArr, uniques, objArr2, i, i6);
+                return new AnonymousClass29(objArr, uniques, objArr2, i, i4);
         }
         throw new RuntimeException();
     }
@@ -208,13 +208,13 @@ public abstract class BO<E> extends AbstractC2283oO<E> implements Set<E> {
         if ((object instanceof BO) && A0O() && ((BO) object).A0O() && hashCode() != object.hashCode()) {
             return false;
         }
-        return AbstractC2423qj.A09(this, object);
+        return AbstractC2443qj.A09(this, object);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BO != com.google.common.collect.ImmutableSet<E> */
     @Override // java.util.Collection, java.util.Set
     public int hashCode() {
-        return AbstractC2423qj.A00(this);
+        return AbstractC2443qj.A00(this);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BO != com.google.common.collect.ImmutableSet<E> */

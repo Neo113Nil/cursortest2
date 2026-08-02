@@ -8,23 +8,23 @@ import java.util.function.BiConsumer;
 public final class n implements BiConsumer {
 
     /* renamed from: a, reason: collision with root package name */
-    public b f1996a;
+    public b f2084a;
 
     /* renamed from: b, reason: collision with root package name */
-    public o f1997b;
+    public o f2085b;
 
     /* renamed from: c, reason: collision with root package name */
-    public p f1998c;
+    public p f2086c;
 
     /* renamed from: d, reason: collision with root package name */
-    public j f1999d;
+    public j f2087d;
 
     @Override // java.util.function.BiConsumer
     public final void accept(Object obj, Object obj2) {
         try {
-            this.f1997b.W(this.f1996a, this.f1999d.e());
-            this.f1998c.b(this.f1997b, obj, obj2, this.f1999d);
-            this.f1997b.C();
+            this.f2085b.W(this.f2084a, this.f2087d.e());
+            this.f2086c.b(this.f2085b, obj, obj2, this.f2087d);
+            this.f2085b.C();
         } catch (IOException e9) {
             throw new UncheckedIOException(e9);
         }

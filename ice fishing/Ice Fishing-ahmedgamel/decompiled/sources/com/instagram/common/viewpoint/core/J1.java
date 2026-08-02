@@ -7,10 +7,10 @@ public final class J1 {
     public final int A02;
     public final int A03;
 
-    public J1(int i, int i6, int i9, int i10) {
+    public J1(int i, int i4, int i6, int i9) {
         this.A02 = i;
-        this.A00 = i6;
-        this.A03 = i9;
-        this.A01 = i10;
+        this.A00 = i4;
+        this.A03 = i6;
+        this.A01 = i9;
     }
 }

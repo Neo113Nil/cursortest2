@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    private static a f17955a;
+    private static a f18742a;
 
     public interface a {
         boolean a();
@@ -20,31 +20,31 @@ public final class c {
         public static class a extends Throwable {
 
             /* renamed from: d, reason: collision with root package name */
-            private static final long f17956d = 1;
+            private static final long f18743d = 1;
 
             /* renamed from: a, reason: collision with root package name */
-            private Class<?> f17957a;
+            private Class<?> f18744a;
 
             /* renamed from: b, reason: collision with root package name */
-            private String f17958b;
+            private String f18745b;
 
             /* renamed from: c, reason: collision with root package name */
-            private String f17959c;
+            private String f18746c;
 
             public a(String str) {
                 super(str);
             }
 
             public final Class<?> a() {
-                return this.f17957a;
+                return this.f18744a;
             }
 
             public final String b() {
-                return this.f17959c;
+                return this.f18746c;
             }
 
             public final String c() {
-                return this.f17958b;
+                return this.f18745b;
             }
 
             @Override // java.lang.Throwable
@@ -60,15 +60,15 @@ public final class c {
             }
 
             public final void a(Class<?> cls) {
-                this.f17957a = cls;
+                this.f18744a = cls;
             }
 
             public final void b(String str) {
-                this.f17958b = str;
+                this.f18745b = str;
             }
 
             public final void a(String str) {
-                this.f17959c = str;
+                this.f18746c = str;
             }
         }
     }
@@ -77,48 +77,48 @@ public final class c {
     public static class C0113c<C> {
 
         /* renamed from: a, reason: collision with root package name */
-        protected Class<C> f17960a;
+        protected Class<C> f18747a;
 
         public C0113c(Class<C> cls) {
-            this.f17960a = cls;
+            this.f18747a = cls;
         }
 
         private e<C, Object> a(String str) {
-            return new e<>(this.f17960a, str, 8);
+            return new e<>(this.f18747a, str, 8);
         }
 
         private e<C, Object> b(String str) {
-            return new e<>(this.f17960a, str, 0);
+            return new e<>(this.f18747a, str, 0);
         }
 
         private f b(String str, Class<?>... clsArr) {
-            return new f(this.f17960a, str, clsArr, 8);
+            return new f(this.f18747a, str, clsArr, 8);
         }
 
         public final f a(String str, Class<?>... clsArr) {
-            return new f(this.f17960a, str, clsArr, 0);
+            return new f(this.f18747a, str, clsArr, 0);
         }
 
         private d a(Class<?>... clsArr) {
-            return new d(this.f17960a, clsArr);
+            return new d(this.f18747a, clsArr);
         }
 
         private Class<C> a() {
-            return this.f17960a;
+            return this.f18747a;
         }
     }
 
     public static class d {
 
         /* renamed from: a, reason: collision with root package name */
-        protected Constructor<?> f17961a;
+        protected Constructor<?> f18748a;
 
         public d(Class<?> cls, Class<?>[] clsArr) {
             if (cls == null) {
                 return;
             }
             try {
-                this.f17961a = cls.getDeclaredConstructor(clsArr);
+                this.f18748a = cls.getDeclaredConstructor(clsArr);
             } catch (NoSuchMethodException e9) {
                 b.a aVar = new b.a(e9);
                 aVar.a(cls);
@@ -127,9 +127,9 @@ public final class c {
         }
 
         private Object a(Object... objArr) {
-            this.f17961a.setAccessible(true);
+            this.f18748a.setAccessible(true);
             try {
-                return this.f17961a.newInstance(objArr);
+                return this.f18748a.newInstance(objArr);
             } catch (Exception e9) {
                 e9.printStackTrace();
                 return null;
@@ -142,7 +142,7 @@ public final class c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static void b(b.a aVar) {
-        a aVar2 = f17955a;
+        a aVar2 = f18742a;
         if (aVar2 == null) {
             throw aVar;
         }
@@ -154,53 +154,53 @@ public final class c {
     public static class e<C, T> {
 
         /* renamed from: a, reason: collision with root package name */
-        private Object f17962a;
+        private Object f18749a;
 
         /* renamed from: b, reason: collision with root package name */
-        private final Field f17963b;
+        private final Field f18750b;
 
         public e(Class<C> cls, String str, int i) {
             Field field = null;
             if (cls == null) {
-                this.f17963b = null;
+                this.f18750b = null;
                 return;
             }
             try {
                 try {
-                    this.f17962a = null;
+                    this.f18749a = null;
                     field = cls.getDeclaredField(str);
                     if (i > 0 && (field.getModifiers() & i) != i) {
                         c.b(new b.a(field + " does not match modifiers: " + i));
                     }
                     field.setAccessible(true);
-                    this.f17963b = field;
+                    this.f18750b = field;
                 } catch (NoSuchFieldException e9) {
                     b.a aVar = new b.a(e9);
                     aVar.a((Class<?>) cls);
                     aVar.b(str);
                     c.b(aVar);
-                    this.f17963b = field;
+                    this.f18750b = field;
                 }
             } catch (Throwable th) {
-                this.f17963b = field;
+                this.f18750b = field;
                 throw th;
             }
         }
 
         /* JADX WARN: Multi-variable type inference failed */
         private <T2> e<C, T2> a(Class<?> cls) {
-            Field field = this.f17963b;
+            Field field = this.f18750b;
             if (field != null && !cls.isAssignableFrom(field.getType())) {
-                c.b(new b.a(new ClassCastException(this.f17963b + " is not of type " + cls)));
+                c.b(new b.a(new ClassCastException(this.f18750b + " is not of type " + cls)));
             }
             return this;
         }
 
         /* JADX WARN: Multi-variable type inference failed */
         private <T2> e<C, T2> b(Class<T2> cls) {
-            Field field = this.f17963b;
+            Field field = this.f18750b;
             if (field != null && !cls.isAssignableFrom(field.getType())) {
-                c.b(new b.a(new ClassCastException(this.f17963b + " is not of type " + cls)));
+                c.b(new b.a(new ClassCastException(this.f18750b + " is not of type " + cls)));
             }
             return this;
         }
@@ -208,11 +208,11 @@ public final class c {
         private e<C, T> a(String str) {
             try {
                 Class<?> cls = Class.forName(str);
-                Field field = this.f17963b;
+                Field field = this.f18750b;
                 if (field == null || cls.isAssignableFrom(field.getType())) {
                     return this;
                 }
-                c.b(new b.a(new ClassCastException(this.f17963b + " is not of type " + cls)));
+                c.b(new b.a(new ClassCastException(this.f18750b + " is not of type " + cls)));
                 return this;
             } catch (ClassNotFoundException e9) {
                 c.b(new b.a(e9));
@@ -221,17 +221,17 @@ public final class c {
         }
 
         private e<C, T> b(C c9) {
-            this.f17962a = c9;
+            this.f18749a = c9;
             return this;
         }
 
         private Field b() {
-            return this.f17963b;
+            return this.f18750b;
         }
 
         private T a() {
             try {
-                return (T) this.f17963b.get(this.f17962a);
+                return (T) this.f18750b.get(this.f18749a);
             } catch (IllegalAccessException e9) {
                 e9.printStackTrace();
                 return null;
@@ -240,7 +240,7 @@ public final class c {
 
         private void a(Object obj) {
             try {
-                this.f17963b.set(this.f17962a, obj);
+                this.f18750b.set(this.f18749a, obj);
             } catch (IllegalAccessException e9) {
                 e9.printStackTrace();
             }
@@ -250,7 +250,7 @@ public final class c {
             T a9 = a();
             if (a9 != null) {
                 try {
-                    this.f17963b.set(this.f17962a, com.anythink.expressad.atsignalcommon.c.b.a(a9, abstractC0112b, a9.getClass().getInterfaces()));
+                    this.f18750b.set(this.f18749a, com.anythink.expressad.atsignalcommon.c.b.a(a9, abstractC0112b, a9.getClass().getInterfaces()));
                     return;
                 } catch (IllegalAccessException e9) {
                     e9.printStackTrace();
@@ -264,7 +264,7 @@ public final class c {
     public static class f {
 
         /* renamed from: a, reason: collision with root package name */
-        protected final Method f17964a;
+        protected final Method f18751a;
 
         public f(Class<?> cls, String str, Class<?>[] clsArr, int i) {
             Method method = null;
@@ -276,13 +276,13 @@ public final class c {
                     method = cls.getDeclaredMethod(str, clsArr);
                     break;
                 } catch (NoSuchMethodException e9) {
-                    if (com.anythink.expressad.a.f17618a && cls.getSuperclass() == Object.class) {
+                    if (com.anythink.expressad.a.f18405a && cls.getSuperclass() == Object.class) {
                         e9.printStackTrace();
                     }
                     cls = cls.getSuperclass();
                 } catch (SecurityException e10) {
                     try {
-                        if (com.anythink.expressad.a.f17618a && cls.getSuperclass() == Object.class) {
+                        if (com.anythink.expressad.a.f18405a && cls.getSuperclass() == Object.class) {
                             e10.printStackTrace();
                         }
                         cls = cls.getSuperclass();
@@ -293,7 +293,7 @@ public final class c {
                         c.b(aVar);
                         return;
                     } finally {
-                        this.f17964a = method;
+                        this.f18751a = method;
                     }
                 }
             }
@@ -306,7 +306,7 @@ public final class c {
         }
 
         public final Object a(Object obj, Object... objArr) {
-            Method method = this.f17964a;
+            Method method = this.f18751a;
             if (method == null) {
                 return null;
             }
@@ -318,7 +318,7 @@ public final class c {
         }
 
         public final Method a() {
-            return this.f17964a;
+            return this.f18751a;
         }
     }
 
@@ -345,6 +345,6 @@ public final class c {
     }
 
     private static void a(a aVar) {
-        f17955a = aVar;
+        f18742a = aVar;
     }
 }

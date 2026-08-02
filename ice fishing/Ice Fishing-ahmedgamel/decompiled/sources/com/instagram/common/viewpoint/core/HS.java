@@ -24,19 +24,19 @@ public abstract class HS {
     	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    public static HP A06(byte[] bArr, int i, int i6) {
-        HU hu = new HU(bArr, i, i6);
+    public static HP A06(byte[] bArr, int i, int i4) {
+        HU hu = new HU(bArr, i, i4);
+        int i6 = -1;
         int i9 = -1;
         int i10 = -1;
-        int i11 = -1;
         hu.A07(4);
         int A052 = hu.A05(3);
         hu.A06();
         int A053 = hu.A05(2);
         boolean A0A = hu.A0A();
         int A054 = hu.A05(5);
+        int i11 = 0;
         int i12 = 0;
-        int i13 = 0;
         while (true) {
             if (A02[0].length() == 10) {
                 break;
@@ -44,27 +44,27 @@ public abstract class HS {
             String[] strArr = A02;
             strArr[2] = "xkwe1O9uU2dqAY7xWUY4fbTlKQKyvcwL";
             strArr[7] = "HeYhRuPqM40BhEn67WYdTTzYcbU6v3bu";
-            if (i13 < 32) {
+            if (i12 < 32) {
                 if (hu.A0A()) {
-                    i12 |= 1 << i13;
+                    i11 |= 1 << i12;
                 }
-                i13++;
+                i12++;
             } else {
                 int[] iArr = new int[6];
-                for (int i14 = 0; i14 < iArr.length; i14++) {
-                    iArr[i14] = hu.A05(8);
+                for (int i13 = 0; i13 < iArr.length; i13++) {
+                    iArr[i13] = hu.A05(8);
                 }
                 int A055 = hu.A05(8);
-                int i15 = 0;
-                for (int i16 = 0; i16 < A052; i16++) {
+                int i14 = 0;
+                for (int i15 = 0; i15 < A052; i15++) {
                     if (hu.A0A()) {
-                        i15 += 89;
+                        i14 += 89;
                     }
                     if (hu.A0A()) {
-                        i15 += 8;
+                        i14 += 8;
                     }
                 }
-                hu.A07(i15);
+                hu.A07(i14);
                 if (A052 > 0) {
                     hu.A07((8 - A052) * 2);
                 }
@@ -81,20 +81,20 @@ public abstract class HS {
                     int A048 = hu.A04();
                     int A049 = hu.A04();
                     A044 -= (A046 + A047) * ((A043 == 1 || A043 == 2) ? 2 : 1);
-                    int i17 = (A048 + A049) * (A043 == 1 ? 2 : 1);
+                    int i16 = (A048 + A049) * (A043 == 1 ? 2 : 1);
                     String[] strArr2 = A02;
                     if (strArr2[4].length() != strArr2[1].length()) {
                         A02[6] = "Hn3sdMz19WVmWCBK";
-                        A045 -= i17;
+                        A045 -= i16;
                     } else {
                         A02[3] = "Jz4JSkPN0248kFDgiRzzjLGO7q";
-                        A045 -= i17;
+                        A045 -= i16;
                     }
                 }
                 hu.A04();
                 hu.A04();
                 int A0410 = hu.A04();
-                for (int i18 = hu.A0A() ? 0 : A052; i18 <= A052; i18++) {
+                for (int i17 = hu.A0A() ? 0 : A052; i17 <= A052; i17++) {
                     hu.A04();
                     hu.A04();
                     hu.A04();
@@ -117,12 +117,12 @@ public abstract class HS {
                 }
                 A0E(hu);
                 if (hu.A0A()) {
-                    for (int i19 = 0; i19 < hu.A04(); i19++) {
+                    for (int i18 = 0; i18 < hu.A04(); i18++) {
                         hu.A07(A0410 + 4 + 1);
                     }
                 }
                 hu.A07(2);
-                float f3 = 1.0f;
+                float f2 = 1.0f;
                 boolean A0A2 = hu.A0A();
                 if (A02[0].length() != 10) {
                     String[] strArr3 = A02;
@@ -135,12 +135,12 @@ public abstract class HS {
                                 int A057 = hu.A05(16);
                                 int A058 = hu.A05(16);
                                 if (A057 != 0 && A058 != 0) {
-                                    f3 = A057 / A058;
+                                    f2 = A057 / A058;
                                 }
                             } else if (A056 < A04.length) {
-                                f3 = A04[A056];
+                                f2 = A04[A056];
                             } else {
-                                AbstractC06324g.A07(A0B(0, 11, 63), A0B(11, 35, a.f21727Q) + A056);
+                                AbstractC06524g.A07(A0B(0, 11, 63), A0B(11, 35, a.f22514Q) + A056);
                             }
                         }
                         if (hu.A0A()) {
@@ -153,13 +153,13 @@ public abstract class HS {
                                 int A059 = hu.A05(8);
                                 int A0510 = hu.A05(8);
                                 hu.A07(8);
-                                i9 = ColorInfo.A00(A059);
-                                i10 = A0A3 ? 1 : 2;
+                                i6 = ColorInfo.A00(A059);
+                                i9 = A0A3 ? 1 : 2;
                                 if (A02[6].length() != 3) {
                                     A02[0] = "HGrGkdvIc2AkT14Ejxxa4aXBUNVha";
-                                    i11 = ColorInfo.A01(A0510);
+                                    i10 = ColorInfo.A01(A0510);
                                 } else {
-                                    i11 = ColorInfo.A01(A0510);
+                                    i10 = ColorInfo.A01(A0510);
                                 }
                             }
                         }
@@ -172,7 +172,7 @@ public abstract class HS {
                             A045 *= 2;
                         }
                     }
-                    return new HP(A053, A0A, A054, i12, iArr, A055, A042, A044, A045, f3, i9, i10, i11);
+                    return new HP(A053, A0A, A054, i11, iArr, A055, A042, A044, A045, f2, i6, i9, i10);
                 }
             }
         }
@@ -187,18 +187,18 @@ public abstract class HS {
     	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    public static HR A0A(byte[] bArr, int i, int i6) {
+    public static HR A0A(byte[] bArr, int i, int i4) {
+        int i6;
         int i9;
-        int i10;
-        HU hu = new HU(bArr, i, i6);
+        HU hu = new HU(bArr, i, i4);
         int A052 = hu.A05(8);
         int A053 = hu.A05(8);
         int A054 = hu.A05(8);
         int A042 = hu.A04();
-        int i11 = 1;
+        int i10 = 1;
         if (A052 == 100 || A052 == 110 || A052 == 122 || A052 == 244 || A052 == 44 || A052 == 83 || A052 == 86 || A052 == 118 || A052 == 128 || A052 == 138) {
-            i11 = hu.A04();
-            r20 = i11 == 3 ? hu.A0A() : false;
+            i10 = hu.A04();
+            r20 = i10 == 3 ? hu.A0A() : false;
             hu.A04();
             hu.A04();
             hu.A06();
@@ -206,13 +206,13 @@ public abstract class HS {
             if (A02[0].length() != 10) {
                 A02[0] = "qzm7RlaVhvQtMB0zhtauZ";
                 if (A0A) {
-                    int i12 = i11 != 3 ? 8 : 12;
-                    int i13 = 0;
-                    while (i13 < i12) {
+                    int i11 = i10 != 3 ? 8 : 12;
+                    int i12 = 0;
+                    while (i12 < i11) {
                         if (hu.A0A()) {
-                            A0F(hu, i13 < 6 ? 16 : 64);
+                            A0F(hu, i12 < 6 ? 16 : 64);
                         }
-                        i13++;
+                        i12++;
                     }
                 }
             }
@@ -220,10 +220,10 @@ public abstract class HS {
         }
         int A043 = hu.A04() + 4;
         int A044 = hu.A04();
-        int i14 = 0;
-        boolean z3 = false;
+        int i13 = 0;
+        boolean z6 = false;
         if (A044 == 0) {
-            i14 = hu.A04() + 4;
+            i13 = hu.A04() + 4;
             if (A02[5].charAt(3) != 'Y') {
                 A02[3] = "2NWfLRVEjhOO9";
             } else {
@@ -231,7 +231,7 @@ public abstract class HS {
             }
         } else {
             if (A044 == 1) {
-                z3 = hu.A0A();
+                z6 = hu.A0A();
                 hu.A03();
                 hu.A03();
                 long A045 = hu.A04();
@@ -240,7 +240,7 @@ public abstract class HS {
                     String[] strArr2 = A02;
                     strArr2[2] = "sL3yo27N596gnAOXUx3X3jVDrWZXEmHs";
                     strArr2[7] = "EWRRgQnwInix360952oSCS5kmFFjSZxj";
-                    for (int i15 = 0; i15 < A045; i15++) {
+                    for (int i14 = 0; i14 < A045; i14++) {
                         hu.A04();
                     }
                 }
@@ -257,56 +257,56 @@ public abstract class HS {
         int A047 = hu.A04() + 1;
         int A048 = hu.A04() + 1;
         boolean A0A2 = hu.A0A();
-        int i16 = (2 - (A0A2 ? 1 : 0)) * A048;
+        int i15 = (2 - (A0A2 ? 1 : 0)) * A048;
         if (!A0A2) {
             hu.A06();
         }
         hu.A06();
-        int i17 = A047 * 16;
-        int i18 = i16 * 16;
+        int i16 = A047 * 16;
+        int i17 = i15 * 16;
         if (hu.A0A()) {
             int A049 = hu.A04();
             int A0410 = hu.A04();
             int A0411 = hu.A04();
             int A0412 = hu.A04();
-            if (i11 == 0) {
-                i9 = 1;
-                i10 = 2 - (A0A2 ? 1 : 0);
+            if (i10 == 0) {
+                i6 = 1;
+                i9 = 2 - (A0A2 ? 1 : 0);
             } else {
-                i9 = i11 == 3 ? 1 : 2;
-                i10 = (2 - (A0A2 ? 1 : 0)) * (i11 == 1 ? 2 : 1);
+                i6 = i10 == 3 ? 1 : 2;
+                i9 = (2 - (A0A2 ? 1 : 0)) * (i10 == 1 ? 2 : 1);
             }
-            i17 -= (A049 + A0410) * i9;
-            i18 -= (A0411 + A0412) * i10;
+            i16 -= (A049 + A0410) * i6;
+            i17 -= (A0411 + A0412) * i9;
         }
-        float f3 = 1.0f;
+        float f2 = 1.0f;
         if (hu.A0A() && hu.A0A()) {
             int A055 = hu.A05(8);
             if (A055 == 255) {
                 int A056 = hu.A05(16);
                 int A057 = hu.A05(16);
                 if (A056 != 0 && A057 != 0) {
-                    f3 = A056 / A057;
+                    f2 = A056 / A057;
                 }
             } else if (A055 < A04.length) {
-                f3 = A04[A055];
+                f2 = A04[A055];
             } else {
-                AbstractC06324g.A07(A0B(0, 11, 63), A0B(11, 35, a.f21727Q) + A055);
+                AbstractC06524g.A07(A0B(0, 11, 63), A0B(11, 35, a.f22514Q) + A055);
             }
         }
-        return new HR(A052, A053, A054, A042, A046, i17, i18, f3, r20, A0A2, A043, A044, i14, z3);
+        return new HR(A052, A053, A054, A042, A046, i16, i17, f2, r20, A0A2, A043, A044, i13, z6);
     }
 
-    public static String A0B(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 108);
+    public static String A0B(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 108);
         }
         return new String(copyOfRange);
     }
 
     public static void A0C() {
-        A00 = new byte[]{-7, 12, 23, 0, 25, 20, 31, 0, 31, 20, 23, c.f16318c, 88, 79, 98, 90, 79, 77, 94, 79, 78, 10, 75, 93, 90, 79, 77, 94, 73, 92, 75, 94, 83, 89, 73, 83, 78, 77, 10, 96, 75, 86, 95, 79, 36, 10, 66, 53, 48, 49, 59, -5, 45, 66, 47, 23, 10, 5, 6, 16, -48, 9, 6, 23, 4};
+        A00 = new byte[]{-7, 12, 23, 0, 25, 20, 31, 0, 31, 20, 23, c.f17105c, 88, 79, 98, 90, 79, 77, 94, 79, 78, 10, 75, 93, 90, 79, 77, 94, 73, 92, 75, 94, 83, 89, 73, 83, 78, 77, 10, 96, 75, 86, 95, 79, 36, 10, 66, 53, 48, 49, 59, -5, 45, 66, 47, 23, 10, 5, 6, 16, -48, 9, 6, 23, 4};
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:78:0x010e, code lost:
@@ -341,66 +341,66 @@ public abstract class HS {
         int[] iArr;
         int A044 = hu.A04();
         int i = -1;
-        int i6 = -1;
+        int i4 = -1;
         int[] iArr2 = new int[0];
         int[] iArr3 = new int[0];
-        int i9 = 0;
-        while (i9 < A044) {
-            if (i9 != 0 && hu.A0A()) {
-                int i10 = i + i6;
+        int i6 = 0;
+        while (i6 < A044) {
+            if (i6 != 0 && hu.A0A()) {
+                int i9 = i + i4;
                 int A045 = (1 - ((hu.A0A() ? 1 : 0) * 2)) * (hu.A04() + 1);
-                boolean[] zArr = new boolean[i10 + 1];
-                for (int i11 = 0; i11 <= i10; i11++) {
+                boolean[] zArr = new boolean[i9 + 1];
+                for (int i10 = 0; i10 <= i9; i10++) {
                     if (hu.A0A()) {
-                        zArr[i11] = true;
+                        zArr[i10] = true;
                     } else {
-                        zArr[i11] = hu.A0A();
+                        zArr[i10] = hu.A0A();
                     }
                 }
                 A042 = 0;
-                int[] iArr4 = new int[i10 + 1];
-                int[] iArr5 = new int[i10 + 1];
-                for (int i12 = i6 - 1; i12 >= 0; i12--) {
-                    int i13 = iArr3[i12] + A045;
-                    if (i13 < 0 && zArr[i + i12]) {
-                        iArr4[A042] = i13;
+                int[] iArr4 = new int[i9 + 1];
+                int[] iArr5 = new int[i9 + 1];
+                for (int i11 = i4 - 1; i11 >= 0; i11--) {
+                    int i12 = iArr3[i11] + A045;
+                    if (i12 < 0 && zArr[i + i11]) {
+                        iArr4[A042] = i12;
                         A042++;
                     }
                 }
-                if (A045 < 0 && zArr[i10]) {
+                if (A045 < 0 && zArr[i9]) {
                     iArr4[A042] = A045;
                     A042++;
                 }
-                for (int i14 = 0; i14 < i; i14++) {
-                    int i15 = iArr2[i14] + A045;
+                for (int i13 = 0; i13 < i; i13++) {
+                    int i14 = iArr2[i13] + A045;
                     if (A02[0].length() == 10) {
                         throw new RuntimeException();
                     }
                     A02[0] = "0xLwbNcICqBOIGnxvrVU0VkzUAjp";
-                    if (i15 < 0) {
-                        boolean z3 = zArr[i14];
+                    if (i14 < 0) {
+                        boolean z6 = zArr[i13];
                         if (A02[6].length() != 3) {
                             String[] strArr = A02;
                             strArr[2] = "OJAEm2QqqrF2kr0XAoMunq3AjjwiYhOO";
                             strArr[7] = "NvnxbUpcm9NzKSDUaYgmh21cCcr7HCKV";
-                            if (!z3) {
+                            if (!z6) {
                             }
-                            int i16 = A042 + 1;
-                            iArr4[A042] = i15;
+                            int i15 = A042 + 1;
+                            iArr4[A042] = i14;
                             if (A02[0].length() == 10) {
                                 A02[0] = "ZxDUqDztknTqk0noe7cSqrpf0";
-                                A042 = i16;
+                                A042 = i15;
                             } else {
-                                A042 = i16;
+                                A042 = i15;
                             }
                         } else {
                             String[] strArr2 = A02;
                             strArr2[2] = "O1Oy4mT2J3IqGA0cLz7TSW3zbNH41BLw";
                             strArr2[7] = "bMAFoAVZGrulVErqDQ8z4qjQetYlIImf";
-                            if (!z3) {
+                            if (!z6) {
                             }
-                            int i162 = A042 + 1;
-                            iArr4[A042] = i15;
+                            int i152 = A042 + 1;
+                            iArr4[A042] = i14;
                             if (A02[0].length() == 10) {
                             }
                         }
@@ -408,15 +408,15 @@ public abstract class HS {
                 }
                 iArr = Arrays.copyOf(iArr4, A042);
                 A043 = 0;
-                for (int i17 = i - 1; i17 >= 0; i17--) {
-                    int i18 = iArr2[i17] + A045;
-                    if (i18 > 0 && zArr[i17]) {
-                        iArr5[A043] = i18;
+                for (int i16 = i - 1; i16 >= 0; i16--) {
+                    int i17 = iArr2[i16] + A045;
+                    if (i17 > 0 && zArr[i16]) {
+                        iArr5[A043] = i17;
                         A043++;
                     }
                 }
                 if (A045 > 0) {
-                    boolean z6 = zArr[i10];
+                    boolean z9 = zArr[i9];
                     String[] strArr3 = A02;
                     if (strArr3[4].length() != strArr3[1].length()) {
                         A02[6] = "tgnVuwGZauQZxVLXvW8ZTDaij";
@@ -424,10 +424,10 @@ public abstract class HS {
                         A02[0] = "U";
                     }
                 }
-                for (int i19 = 0; i19 < i6; i19++) {
-                    int i20 = iArr3[i19] + A045;
-                    if (i20 > 0 && zArr[i + i19]) {
-                        iArr5[A043] = i20;
+                for (int i18 = 0; i18 < i4; i18++) {
+                    int i19 = iArr3[i18] + A045;
+                    if (i19 > 0 && zArr[i + i18]) {
+                        iArr5[A043] = i19;
                         A043++;
                     }
                 }
@@ -444,26 +444,26 @@ public abstract class HS {
                 A042 = hu.A04();
                 A043 = hu.A04();
                 iArr = new int[A042];
-                for (int i21 = 0; i21 < A042; i21++) {
-                    iArr[i21] = hu.A04() + 1;
+                for (int i20 = 0; i20 < A042; i20++) {
+                    iArr[i20] = hu.A04() + 1;
                     hu.A06();
                 }
                 iArr3 = new int[A043];
-                for (int i22 = 0; i22 < A043; i22++) {
-                    iArr3[i22] = hu.A04() + 1;
+                for (int i21 = 0; i21 < A043; i21++) {
+                    iArr3[i21] = hu.A04() + 1;
                     hu.A06();
                 }
             }
             i = A042;
-            i6 = A043;
+            i4 = A043;
             iArr2 = iArr;
             if (A02[0].length() != 10) {
                 String[] strArr5 = A02;
                 strArr5[4] = "MHTDjP3q9jqJvcAulQ6";
                 strArr5[1] = "VeGKMo1LwbXx0TG7y0g";
-                i9++;
+                i6++;
             } else {
-                i9++;
+                i6++;
             }
         }
     }
@@ -485,25 +485,25 @@ public abstract class HS {
     }
 
     public static int A02(byte[] bArr, int i) {
-        int i6;
+        int i4;
         synchronized (A05) {
             int scratchEscapeCount = 0;
-            int i9 = 0;
+            int i6 = 0;
             while (scratchEscapeCount < i) {
                 scratchEscapeCount = A03(bArr, scratchEscapeCount, i);
                 if (scratchEscapeCount < i) {
-                    if (A01.length <= i9) {
+                    if (A01.length <= i6) {
                         A01 = Arrays.copyOf(A01, A01.length * 2);
                     }
-                    A01[i9] = scratchEscapeCount;
+                    A01[i6] = scratchEscapeCount;
                     scratchEscapeCount += 3;
-                    i9++;
+                    i6++;
                 }
             }
-            i6 = i - i9;
+            i4 = i - i6;
             int unescapedPosition = 0;
             int escapedPosition = 0;
-            for (int unescapedLength = 0; unescapedLength < i9; unescapedLength++) {
+            for (int unescapedLength = 0; unescapedLength < i6; unescapedLength++) {
                 int scratchEscapeCount2 = A01[unescapedLength];
                 int scratchEscapeCount3 = scratchEscapeCount2 - unescapedPosition;
                 System.arraycopy(bArr, unescapedPosition, bArr, escapedPosition, scratchEscapeCount3);
@@ -514,23 +514,23 @@ public abstract class HS {
                 bArr[position] = 0;
                 unescapedPosition += scratchEscapeCount3 + 3;
             }
-            System.arraycopy(bArr, unescapedPosition, bArr, escapedPosition, i6 - escapedPosition);
+            System.arraycopy(bArr, unescapedPosition, bArr, escapedPosition, i4 - escapedPosition);
         }
-        return i6;
+        return i4;
     }
 
     /* JADX WARN: Incorrect condition in loop: B:2:0x0002 */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static int A03(byte[] bArr, int i, int i6) {
+    public static int A03(byte[] bArr, int i, int i4) {
         while (i < i) {
-            int i9 = bArr[i];
-            if (i9 == 0) {
-                int i10 = i + 1;
-                if (bArr[i10] == 0) {
-                    int i11 = i + 2;
-                    if (bArr[i11] == 3) {
+            int i6 = bArr[i];
+            if (i6 == 0) {
+                int i9 = i + 1;
+                if (bArr[i9] == 0) {
+                    int i10 = i + 2;
+                    if (bArr[i10] == 3) {
                         return i;
                     }
                 } else {
@@ -539,7 +539,7 @@ public abstract class HS {
             }
             i++;
         }
-        return i6;
+        return i4;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:101:0x0136, code lost:
@@ -557,20 +557,20 @@ public abstract class HS {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static int A04(byte[] bArr, int i, int i6, boolean[] zArr) {
-        boolean z3;
+    public static int A04(byte[] bArr, int i, int i4, boolean[] zArr) {
         boolean z6;
-        int i9 = i6 - i;
-        AbstractC06243y.A08(i9 >= 0);
-        if (i9 == 0) {
-            return i6;
+        boolean z9;
+        int i6 = i4 - i;
+        AbstractC06443y.A08(i6 >= 0);
+        if (i6 == 0) {
+            return i4;
         }
         if (zArr[0]) {
             A0H(zArr);
             int length = i - 3;
             return length;
         }
-        if (i9 > 1 && zArr[1]) {
+        if (i6 > 1 && zArr[1]) {
             int length2 = bArr[i];
             if (length2 == 1) {
                 A0H(zArr);
@@ -578,7 +578,7 @@ public abstract class HS {
                 return length3;
             }
         }
-        if (i9 > 2 && zArr[2]) {
+        if (i6 > 2 && zArr[2]) {
             int length4 = bArr[i];
             if (length4 == 0) {
                 int length5 = i + 1;
@@ -594,31 +594,31 @@ public abstract class HS {
                 }
             }
         }
-        int i10 = i6 - 1;
-        int i11 = i + 2;
-        while (i11 < i10) {
-            int length7 = bArr[i11];
+        int i9 = i4 - 1;
+        int i10 = i + 2;
+        while (i10 < i9) {
+            int length7 = bArr[i10];
             if ((length7 & 254) == 0) {
-                int length8 = i11 - 2;
+                int length8 = i10 - 2;
                 if (bArr[length8] == 0) {
-                    int length9 = i11 - 1;
+                    int length9 = i10 - 1;
                     if (bArr[length9] == 0) {
-                        int length10 = bArr[i11];
+                        int length10 = bArr[i10];
                         if (length10 == 1) {
                             A0H(zArr);
-                            int length11 = i11 - 2;
+                            int length11 = i10 - 2;
                             return length11;
                         }
                     }
                 }
-                i11 -= 2;
+                i10 -= 2;
             }
-            i11 += 3;
+            i10 += 3;
         }
-        if (i9 > 2) {
-            int length12 = i6 - 3;
+        if (i6 > 2) {
+            int length12 = i4 - 3;
             if (bArr[length12] == 0) {
-                int length13 = i6 - 2;
+                int length13 = i4 - 2;
                 byte b10 = bArr[length13];
                 if (A02[6].length() == 3) {
                     throw new RuntimeException();
@@ -627,32 +627,32 @@ public abstract class HS {
                 strArr[4] = "tLizWOaN0OsagnuSy28";
                 strArr[1] = "ZOtg0UvXTXpiFnpoxfp";
                 if (b10 == 0) {
-                    int length14 = i6 - 1;
+                    int length14 = i4 - 1;
                     if (bArr[length14] == 1) {
-                        z3 = true;
+                        z6 = true;
                     }
                 }
             }
-            z3 = false;
-        } else if (i9 == 2) {
-            boolean z9 = zArr[2];
+            z6 = false;
+        } else if (i6 == 2) {
+            boolean z10 = zArr[2];
             if (A02[5].charAt(3) != 'Y') {
                 throw new RuntimeException();
             }
             A02[0] = "TtHOfwpayoR";
-            if (z9) {
-                int length15 = i6 - 2;
+            if (z10) {
+                int length15 = i4 - 2;
                 if (bArr[length15] == 0) {
-                    int length16 = i6 - 1;
+                    int length16 = i4 - 1;
                     if (bArr[length16] == 1) {
-                        z3 = true;
+                        z6 = true;
                     }
                 }
             }
-            z3 = false;
+            z6 = false;
         } else {
             if (zArr[1]) {
-                int i12 = i6 - 1;
+                int i11 = i4 - 1;
                 String[] strArr2 = A02;
                 String str = strArr2[2];
                 String str2 = strArr2[7];
@@ -662,63 +662,63 @@ public abstract class HS {
                     String[] strArr3 = A02;
                     strArr3[2] = "UGNUjS5TseBxte9hZy6MdiMKKivw8YU8";
                     strArr3[7] = "gAwFNStsKHXv5jMh5dTnIzvsHbrqE6D6";
-                    int length18 = bArr[i12];
+                    int length18 = bArr[i11];
                 } else {
                     A02[5] = "MYPYXnk67e7ylj87wlpJJbRJ3uYkeY13";
-                    int length19 = bArr[i12];
-                }
-            }
-            z3 = false;
-        }
-        zArr[0] = z3;
-        if (i9 > 1) {
-            int length20 = i6 - 2;
-            if (bArr[length20] == 0) {
-                int length21 = i6 - 1;
-                if (bArr[length21] == 0) {
-                    z6 = true;
+                    int length19 = bArr[i11];
                 }
             }
             z6 = false;
+        }
+        zArr[0] = z6;
+        if (i6 > 1) {
+            int length20 = i4 - 2;
+            if (bArr[length20] == 0) {
+                int length21 = i4 - 1;
+                if (bArr[length21] == 0) {
+                    z9 = true;
+                }
+            }
+            z9 = false;
         } else {
             if (zArr[2]) {
-                int length22 = i6 - 1;
+                int length22 = i4 - 1;
                 if (bArr[length22] == 0) {
-                    z6 = true;
+                    z9 = true;
                 }
             }
-            z6 = false;
+            z9 = false;
         }
-        zArr[1] = z6;
-        int length23 = i6 - 1;
+        zArr[1] = z9;
+        int length23 = i4 - 1;
         zArr[2] = bArr[length23] == 0;
-        return i6;
+        return i4;
     }
 
-    public static HP A05(byte[] bArr, int i, int i6) {
-        return A06(bArr, i + 2, i6);
+    public static HP A05(byte[] bArr, int i, int i4) {
+        return A06(bArr, i + 2, i4);
     }
 
-    public static HQ A07(byte[] bArr, int i, int i6) {
-        return A08(bArr, i + 1, i6);
+    public static HQ A07(byte[] bArr, int i, int i4) {
+        return A08(bArr, i + 1, i4);
     }
 
-    public static HQ A08(byte[] bArr, int i, int i6) {
-        HU data = new HU(bArr, i, i6);
+    public static HQ A08(byte[] bArr, int i, int i4) {
+        HU data = new HU(bArr, i, i4);
         int A042 = data.A04();
         int seqParameterSetId = data.A04();
         data.A06();
         return new HQ(A042, seqParameterSetId, data.A0A());
     }
 
-    public static HR A09(byte[] bArr, int i, int i6) {
-        return A0A(bArr, i + 1, i6);
+    public static HR A09(byte[] bArr, int i, int i4) {
+        return A0A(bArr, i + 1, i4);
     }
 
     public static void A0D(HU hu) {
         for (int i = 0; i < 4; i++) {
-            int i6 = 0;
-            while (i6 < 6) {
+            int i4 = 0;
+            while (i4 < 6) {
                 int matrixId = 1;
                 if (!hu.A0A()) {
                     hu.A04();
@@ -735,21 +735,21 @@ public abstract class HS {
                 if (i == 3) {
                     matrixId = 3;
                 }
-                i6 += matrixId;
+                i4 += matrixId;
             }
         }
     }
 
     public static void A0F(HU hu, int i) {
-        int i6 = 8;
+        int i4 = 8;
         int lastScale = 8;
         for (int nextScale = 0; nextScale < i; nextScale++) {
             if (lastScale != 0) {
                 int lastScale2 = hu.A03();
-                lastScale = ((lastScale2 + i6) + 256) % 256;
+                lastScale = ((lastScale2 + i4) + 256) % 256;
             }
             if (lastScale != 0) {
-                i6 = lastScale;
+                i4 = lastScale;
             }
         }
     }
@@ -764,7 +764,7 @@ public abstract class HS {
         int value = 0;
         while (length < position) {
             int length = byteBuffer.get(value);
-            int offset = length & p.f8473b;
+            int offset = length & p.f9259b;
             if (i == 3) {
                 if (offset == 1) {
                     int length2 = value + 1;

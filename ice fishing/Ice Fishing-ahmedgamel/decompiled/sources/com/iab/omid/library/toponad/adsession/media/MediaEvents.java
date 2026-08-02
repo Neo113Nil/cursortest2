@@ -16,14 +16,14 @@ public final class MediaEvents {
         this.adSession = aVar;
     }
 
-    private void confirmValidDuration(float f3) {
-        if (f3 <= 0.0f) {
+    private void confirmValidDuration(float f2) {
+        if (f2 <= 0.0f) {
             throw new IllegalArgumentException("Invalid Media duration");
         }
     }
 
-    private void confirmValidVolume(float f3) {
-        if (f3 < 0.0f || f3 > 1.0f) {
+    private void confirmValidVolume(float f2) {
+        if (f2 < 0.0f || f2 > 1.0f) {
             throw new IllegalArgumentException("Invalid Media volume");
         }
     }
@@ -82,7 +82,7 @@ public final class MediaEvents {
         g.a(playerState, "PlayerState is null");
         g.a(this.adSession);
         JSONObject jSONObject = new JSONObject();
-        c.a(jSONObject, com.anythink.core.express.b.a.f17526b, playerState);
+        c.a(jSONObject, com.anythink.core.express.b.a.f18313b, playerState);
         this.adSession.getAdSessionStatePublisher().a("playerStateChange", jSONObject);
     }
 
@@ -96,12 +96,12 @@ public final class MediaEvents {
         this.adSession.getAdSessionStatePublisher().a("skipped");
     }
 
-    public void start(float f3, float f9) {
-        confirmValidDuration(f3);
+    public void start(float f2, float f9) {
+        confirmValidDuration(f2);
         confirmValidVolume(f9);
         g.a(this.adSession);
         JSONObject jSONObject = new JSONObject();
-        c.a(jSONObject, "duration", Float.valueOf(f3));
+        c.a(jSONObject, "duration", Float.valueOf(f2));
         c.a(jSONObject, "mediaPlayerVolume", Float.valueOf(f9));
         c.a(jSONObject, "deviceVolume", Float.valueOf(i.c().b()));
         this.adSession.getAdSessionStatePublisher().a(d.cg, jSONObject);
@@ -112,11 +112,11 @@ public final class MediaEvents {
         this.adSession.getAdSessionStatePublisher().a("thirdQuartile");
     }
 
-    public void volumeChange(float f3) {
-        confirmValidVolume(f3);
+    public void volumeChange(float f2) {
+        confirmValidVolume(f2);
         g.a(this.adSession);
         JSONObject jSONObject = new JSONObject();
-        c.a(jSONObject, "mediaPlayerVolume", Float.valueOf(f3));
+        c.a(jSONObject, "mediaPlayerVolume", Float.valueOf(f2));
         c.a(jSONObject, "deviceVolume", Float.valueOf(i.c().b()));
         this.adSession.getAdSessionStatePublisher().a("volumeChange", jSONObject);
     }

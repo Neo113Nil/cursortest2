@@ -12,7 +12,7 @@ public interface e extends f {
     public static final int k_ = 5;
     public static final int l_ = 100;
 
-    void configurationChanged(int i, int i6, int i9);
+    void configurationChanged(int i, int i4, int i6);
 
     boolean endCardShowing();
 
@@ -28,13 +28,13 @@ public interface e extends f {
 
     void readyStatus(int i);
 
-    void resizeMiniCard(int i, int i6, int i9);
+    void resizeMiniCard(int i, int i4, int i6);
 
     boolean showAlertWebView();
 
     void showEndcard(int i);
 
-    void showMiniCard(int i, int i6, int i9, int i10, int i11);
+    void showMiniCard(int i, int i4, int i6, int i9, int i10);
 
     void showPlayableView();
 

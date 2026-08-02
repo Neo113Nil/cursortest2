@@ -10,52 +10,52 @@ import org.json.JSONObject;
 public final class h {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f14554a = "HttpReqLimitInterceptor";
+    private static final String f15340a = "HttpReqLimitInterceptor";
 
     /* renamed from: b, reason: collision with root package name */
-    private final Object f14555b = new Object();
+    private final Object f15341b = new Object();
 
     /* renamed from: c, reason: collision with root package name */
-    private final Context f14556c;
+    private final Context f15342c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final Map<String, Long> f14557d;
+    private final Map<String, Long> f15343d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final a f14558e;
+    private final a f15344e;
 
     /* renamed from: f, reason: collision with root package name */
-    private long f14559f;
+    private long f15345f;
 
     public static class a {
 
         /* renamed from: b, reason: collision with root package name */
-        public long f14561b;
+        public long f15347b;
 
         /* renamed from: c, reason: collision with root package name */
-        public boolean f14562c = true;
+        public boolean f15348c = true;
 
         /* renamed from: a, reason: collision with root package name */
-        public int f14560a = 5;
+        public int f15346a = 5;
 
         public a(long j6) {
-            this.f14561b = j6;
+            this.f15347b = j6;
         }
     }
 
     public h(Context context, Map<String, Long> map, a aVar) {
-        this.f14556c = context;
-        this.f14557d = map;
-        this.f14558e = aVar;
+        this.f15342c = context;
+        this.f15343d = map;
+        this.f15344e = aVar;
     }
 
     private void b(com.anythink.core.common.m.b.d dVar) {
         String a9 = a(dVar);
-        String d2 = d(dVar);
-        this.f14557d.put(a9, 0L);
-        com.anythink.core.common.s.a c9 = af.c(this.f14556c, "anythink_app_pl_cl_retry");
+        String d9 = d(dVar);
+        this.f15343d.put(a9, 0L);
+        com.anythink.core.common.s.a c9 = af.c(this.f15342c, "anythink_app_pl_cl_retry");
         c9.a(a9, 0L);
-        c9.a(d2, 0L);
+        c9.a(d9, 0L);
     }
 
     private static String c(com.anythink.core.common.m.b.d dVar) {
@@ -110,52 +110,52 @@ public final class h {
             } else {
                 str = "";
             }
-            String d2 = d(dVar);
+            String d9 = d(dVar);
             long currentTimeMillis = System.currentTimeMillis();
-            synchronized (this.f14555b) {
+            synchronized (this.f15341b) {
                 try {
-                    com.anythink.core.common.s.a c9 = af.c(this.f14556c, "anythink_app_pl_cl_retry");
-                    a aVar = this.f14558e;
+                    com.anythink.core.common.s.a c9 = af.c(this.f15342c, "anythink_app_pl_cl_retry");
+                    a aVar = this.f15344e;
                     if (aVar != null) {
-                        if (aVar.f14562c) {
+                        if (aVar.f15348c) {
                         }
                         if (!fVar.e()) {
-                            long j9 = this.f14559f;
+                            long j9 = this.f15345f;
                             if (j9 <= 0) {
                                 j9 = ((Long) c9.b(str, 0L)).longValue();
                             }
-                            this.f14559f = j9;
+                            this.f15345f = j9;
                             if (j9 <= 0) {
-                                this.f14559f = currentTimeMillis;
+                                this.f15345f = currentTimeMillis;
                                 c9.a(str, Long.valueOf(currentTimeMillis));
                             } else if (currentTimeMillis - j9 >= a()) {
-                                this.f14559f = currentTimeMillis;
+                                this.f15345f = currentTimeMillis;
                                 c9.a(str, Long.valueOf(currentTimeMillis));
                             } else {
-                                j6 = ((Long) c9.b(d2, 0L)).longValue();
-                                if (j6 != (this.f14558e == null ? r3.f14560a : 5) - 1) {
-                                    if (this.f14559f == 0) {
-                                        this.f14559f = currentTimeMillis;
+                                j6 = ((Long) c9.b(d9, 0L)).longValue();
+                                if (j6 != (this.f15344e == null ? r3.f15346a : 5) - 1) {
+                                    if (this.f15345f == 0) {
+                                        this.f15345f = currentTimeMillis;
                                     }
-                                    long a10 = this.f14559f + a();
-                                    Map<String, Long> map = this.f14557d;
+                                    long a10 = this.f15345f + a();
+                                    Map<String, Long> map = this.f15343d;
                                     if (map != null) {
                                         map.put(a9, Long.valueOf(a10));
                                     }
                                     c9.a(a9, Long.valueOf(a10));
                                 } else {
-                                    c9.a(d2, Long.valueOf(j6 + 1));
+                                    c9.a(d9, Long.valueOf(j6 + 1));
                                 }
                             }
                             j6 = 0;
-                            if (j6 != (this.f14558e == null ? r3.f14560a : 5) - 1) {
+                            if (j6 != (this.f15344e == null ? r3.f15346a : 5) - 1) {
                             }
                         }
                     }
                     long longValue = ((Long) c9.b(f(dVar), 0L)).longValue();
                     String str2 = (String) c9.b(e(dVar), "");
-                    boolean z3 = longValue > 0 && System.currentTimeMillis() - longValue <= a();
-                    if (!TextUtils.isEmpty(str2) && z3) {
+                    boolean z6 = longValue > 0 && System.currentTimeMillis() - longValue <= a();
+                    if (!TextUtils.isEmpty(str2) && z6) {
                         try {
                             str2 = new JSONObject(str2);
                         } catch (Throwable unused) {
@@ -179,29 +179,29 @@ public final class h {
     }
 
     private int b() {
-        a aVar = this.f14558e;
+        a aVar = this.f15344e;
         if (aVar != null) {
-            return aVar.f14560a;
+            return aVar.f15346a;
         }
         return 5;
     }
 
     public final void a(com.anythink.core.common.m.b.f fVar, com.anythink.core.common.m.b.d dVar) {
-        Object g4 = fVar.g();
+        Object g9 = fVar.g();
         try {
-            synchronized (this.f14555b) {
+            synchronized (this.f15341b) {
                 try {
-                    a aVar = this.f14558e;
-                    if (aVar != null && aVar.f14562c && g4 != null) {
-                        af.b(this.f14556c, "anythink_app_pl_cl_retry", e(dVar), g4.toString());
-                        af.a(this.f14556c, "anythink_app_pl_cl_retry", f(dVar), System.currentTimeMillis());
+                    a aVar = this.f15344e;
+                    if (aVar != null && aVar.f15348c && g9 != null) {
+                        af.b(this.f15342c, "anythink_app_pl_cl_retry", e(dVar), g9.toString());
+                        af.a(this.f15342c, "anythink_app_pl_cl_retry", f(dVar), System.currentTimeMillis());
                     }
                     String a9 = a(dVar);
-                    String d2 = d(dVar);
-                    this.f14557d.put(a9, 0L);
-                    com.anythink.core.common.s.a c9 = af.c(this.f14556c, "anythink_app_pl_cl_retry");
+                    String d9 = d(dVar);
+                    this.f15343d.put(a9, 0L);
+                    com.anythink.core.common.s.a c9 = af.c(this.f15342c, "anythink_app_pl_cl_retry");
                     c9.a(a9, 0L);
-                    c9.a(d2, 0L);
+                    c9.a(d9, 0L);
                 } catch (Throwable th) {
                     throw th;
                 }
@@ -222,12 +222,12 @@ public final class h {
     /* JADX WARN: Type inference failed for: r6v0, types: [com.anythink.core.common.m.b.f] */
     /* JADX WARN: Type inference failed for: r8v4, types: [org.json.JSONObject] */
     private void a(com.anythink.core.common.m.b.f fVar, com.anythink.core.common.m.b.d dVar, com.anythink.core.common.s.a aVar) {
-        a aVar2 = this.f14558e;
-        if (aVar2 == null || aVar2.f14562c) {
+        a aVar2 = this.f15344e;
+        if (aVar2 == null || aVar2.f15348c) {
             long longValue = ((Long) aVar.b(f(dVar), 0L)).longValue();
             String str = (String) aVar.b(e(dVar), "");
-            boolean z3 = longValue > 0 && System.currentTimeMillis() - longValue <= a();
-            if (TextUtils.isEmpty(str) || !z3) {
+            boolean z6 = longValue > 0 && System.currentTimeMillis() - longValue <= a();
+            if (TextUtils.isEmpty(str) || !z6) {
                 return;
             }
             try {
@@ -244,12 +244,12 @@ public final class h {
     }
 
     private long a(com.anythink.core.common.s.a aVar, String str) {
-        long j6 = this.f14559f;
+        long j6 = this.f15345f;
         return j6 <= 0 ? ((Long) aVar.b(str, 0L)).longValue() : j6;
     }
 
     private long a() {
-        a aVar = this.f14558e;
-        return aVar != null ? aVar.f14561b : com.anythink.core.common.g.c.f13265b;
+        a aVar = this.f15344e;
+        return aVar != null ? aVar.f15347b : com.anythink.core.common.g.c.f14051b;
     }
 }

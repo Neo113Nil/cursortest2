@@ -7,31 +7,31 @@ import org.xmlpull.v1.XmlPullParser;
 public final class ag extends ay {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f9248a = "Icons";
+    private static final String f10034a = "Icons";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f9249b = "Icon";
+    private static final String f10035b = "Icon";
 
     /* renamed from: c, reason: collision with root package name */
-    private ArrayList<ab> f9250c = new ArrayList<>();
+    private ArrayList<ab> f10036c = new ArrayList<>();
 
     public ag(XmlPullParser xmlPullParser) {
-        xmlPullParser.require(2, null, f9248a);
+        xmlPullParser.require(2, null, f10034a);
         while (xmlPullParser.next() != 3) {
             if (xmlPullParser.getEventType() == 2) {
                 String name = xmlPullParser.getName();
-                if (name == null || !name.equals(f9249b)) {
+                if (name == null || !name.equals(f10035b)) {
                     ay.b(xmlPullParser);
                 } else {
-                    xmlPullParser.require(2, null, f9249b);
-                    this.f9250c.add(new ab(xmlPullParser));
-                    xmlPullParser.require(3, null, f9249b);
+                    xmlPullParser.require(2, null, f10035b);
+                    this.f10036c.add(new ab(xmlPullParser));
+                    xmlPullParser.require(3, null, f10035b);
                 }
             }
         }
     }
 
     public final ArrayList<ab> a() {
-        return this.f9250c;
+        return this.f10036c;
     }
 }

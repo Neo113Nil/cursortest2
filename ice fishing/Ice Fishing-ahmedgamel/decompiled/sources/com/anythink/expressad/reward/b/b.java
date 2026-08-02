@@ -13,62 +13,62 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class b extends Handler {
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f20392a;
+    private final String f21179a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final a f20393b;
+    private final a f21180b;
 
     public b(a aVar) {
         super(Looper.getMainLooper());
-        this.f20392a = "b";
-        this.f20393b = aVar;
+        this.f21179a = "b";
+        this.f21180b = aVar;
     }
 
     @Override // android.os.Handler
     public void handleMessage(Message message) {
         int i = message.what;
         Object obj = message.obj;
-        CopyOnWriteArrayList<d> j6 = this.f20393b.j();
-        List<d> k9 = this.f20393b.k();
-        com.anythink.expressad.reward.a.d l9 = this.f20393b.l();
-        boolean c9 = this.f20393b.c();
-        String e9 = this.f20393b.e();
-        String d2 = this.f20393b.d();
-        a.c i6 = this.f20393b.i();
-        com.anythink.expressad.videocommon.d.a h9 = this.f20393b.h();
-        this.f20393b.g();
-        this.f20393b.f();
-        com.anythink.expressad.videocommon.e.d b9 = this.f20393b.b();
+        CopyOnWriteArrayList<d> j6 = this.f21180b.j();
+        List<d> k9 = this.f21180b.k();
+        com.anythink.expressad.reward.a.d l9 = this.f21180b.l();
+        boolean c9 = this.f21180b.c();
+        String e9 = this.f21180b.e();
+        String d9 = this.f21180b.d();
+        a.c i4 = this.f21180b.i();
+        com.anythink.expressad.videocommon.d.a h3 = this.f21180b.h();
+        this.f21180b.g();
+        this.f21180b.f();
+        com.anythink.expressad.videocommon.e.d b9 = this.f21180b.b();
         if (i == 8) {
             if (j6 == null || j6.size() <= 0) {
                 return;
             }
-            boolean z3 = (k9 == null || k9.size() <= 0) ? false : !TextUtils.isEmpty(k9.get(0).at());
+            boolean z6 = (k9 == null || k9.size() <= 0) ? false : !TextUtils.isEmpty(k9.get(0).at());
             int ar = j6.get(0).ar();
-            if (l9 != null && l9.a(j6, z3, ar)) {
-                if (i6 == null || !c9) {
+            if (l9 != null && l9.a(j6, z6, ar)) {
+                if (i4 == null || !c9) {
                     return;
                 }
-                i6.a(e9, d2);
+                i4.a(e9, d9);
                 return;
             }
-            if (i6 == null || !c9) {
+            if (i4 == null || !c9) {
                 return;
             }
-            com.anythink.expressad.videocommon.a.c(d2);
+            com.anythink.expressad.videocommon.a.c(d9);
             com.anythink.expressad.videocommon.a.b();
-            i6.a("load timeout");
+            i4.a("load timeout");
             return;
         }
         if (i == 9) {
-            if (h9 == null || !c9) {
+            if (h3 == null || !c9) {
                 return;
             }
             try {
-                h9.b();
+                h3.b();
                 return;
             } catch (Throwable th) {
-                if (com.anythink.expressad.a.f17618a) {
+                if (com.anythink.expressad.a.f18405a) {
                     th.printStackTrace();
                     return;
                 }
@@ -79,15 +79,15 @@ public class b extends Handler {
             switch (i) {
                 case 16:
                 case 18:
-                    if (h9 != null && c9) {
+                    if (h3 != null && c9) {
                         String obj2 = obj instanceof String ? obj.toString() : "";
-                        com.anythink.expressad.videocommon.a.c(d2);
+                        com.anythink.expressad.videocommon.a.c(d9);
                         com.anythink.expressad.videocommon.a.b();
                         try {
-                            h9.a(obj2);
+                            h3.a(obj2);
                             break;
                         } catch (Throwable th2) {
-                            if (com.anythink.expressad.a.f17618a) {
+                            if (com.anythink.expressad.a.f18405a) {
                                 th2.printStackTrace();
                                 return;
                             }
@@ -103,16 +103,16 @@ public class b extends Handler {
         }
         if (l9 != null) {
             if (l9.c()) {
-                if (i6 != null) {
+                if (i4 != null) {
                     try {
-                        CopyOnWriteArrayList<d> f3 = l9.f();
-                        if (f3 != null) {
-                            f3.size();
+                        CopyOnWriteArrayList<d> f2 = l9.f();
+                        if (f2 != null) {
+                            f2.size();
                         }
                     } catch (Throwable th3) {
                         th3.getMessage();
                     }
-                    i6.b(e9, d2);
+                    i4.b(e9, d9);
                     return;
                 }
                 return;
@@ -123,7 +123,7 @@ public class b extends Handler {
                         l9.e(true);
                         return;
                     }
-                    if (i6 != null) {
+                    if (i4 != null) {
                         l9.d(true);
                         try {
                             CopyOnWriteArrayList<d> f9 = l9.f();
@@ -133,7 +133,7 @@ public class b extends Handler {
                         } catch (Throwable th4) {
                             th4.getMessage();
                         }
-                        i6.b(e9, d2);
+                        i4.b(e9, d9);
                         return;
                     }
                     return;
@@ -141,7 +141,7 @@ public class b extends Handler {
                 return;
             }
             if (l9.c()) {
-                if (i6 != null) {
+                if (i4 != null) {
                     l9.d(false);
                     try {
                         CopyOnWriteArrayList<d> f10 = l9.f();
@@ -151,7 +151,7 @@ public class b extends Handler {
                     } catch (Throwable th5) {
                         th5.getMessage();
                     }
-                    i6.b(e9, d2);
+                    i4.b(e9, d9);
                     return;
                 }
                 return;
@@ -162,7 +162,7 @@ public class b extends Handler {
                     l9.e(true);
                     return;
                 }
-                if (i6 != null) {
+                if (i4 != null) {
                     l9.d(true);
                     try {
                         CopyOnWriteArrayList<d> f11 = l9.f();
@@ -172,7 +172,7 @@ public class b extends Handler {
                     } catch (Throwable th6) {
                         th6.getMessage();
                     }
-                    i6.b(e9, d2);
+                    i4.b(e9, d9);
                 }
             }
         }

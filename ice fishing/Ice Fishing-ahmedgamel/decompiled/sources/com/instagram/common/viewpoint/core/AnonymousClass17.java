@@ -15,7 +15,7 @@ public class AnonymousClass17<E> extends C2Q<E> {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public AnonymousClass17(BP<E> list, final int index) {
-        new AbstractC0786Au<E>(r0, index) { // from class: com.facebook.ads.redexgen.X.2Q
+        new AbstractC0806Au<E>(r0, index) { // from class: com.facebook.ads.redexgen.X.2Q
             public static String[] A02 = {"CGVvWGsuzzGHQgo9zzOKQIJUE", "KVb58jbZH1vlab4O5iE8zizSXMaJECXq", "VptaZc", "glKzXP3GfNyb6OMGvuDXfVC1yHy2PNCZ", "pmbHPYSyFX1GsR09gqUeaAeR0V5aRJK7", "qAEg6Zt1UGu8L4Bf8ygtzAiT", "mjI", "bmKWD7kDb3scBQ7vRqmkLSkTVZvrcW"};
             public int A00;
             public final int A01;
@@ -25,7 +25,7 @@ public class AnonymousClass17<E> extends C2Q<E> {
 
             /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2Q != com.google.common.collect.AbstractIndexedListIterator<E> */
             {
-                AbstractC2070ki.A01(index, r1);
+                AbstractC2090ki.A01(index, r1);
                 this.A01 = r1;
                 this.A00 = index;
             }

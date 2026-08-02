@@ -1,40 +1,41 @@
 package com.google.android.gms.internal.ads;
 
 import java.util.Objects;
+import w.AbstractC5128c;
 
 /* loaded from: classes2.dex */
-public final class GE extends AbstractC4257zE {
+public final class GE extends AbstractC4280zE {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f24954a;
+    public final int f25744a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f24955b;
+    public final int f25745b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f24956c;
+    public final int f25746c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f24957d;
+    public final int f25747d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final C3556mE f24958e;
+    public final C3579mE f25748e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final FE f24959f;
+    public final FE f25749f;
 
-    public GE(int i, int i6, int i9, int i10, C3556mE c3556mE, FE fe) {
-        this.f24954a = i;
-        this.f24955b = i6;
-        this.f24956c = i9;
-        this.f24957d = i10;
-        this.f24958e = c3556mE;
-        this.f24959f = fe;
+    public GE(int i, int i4, int i6, int i9, C3579mE c3579mE, FE fe) {
+        this.f25744a = i;
+        this.f25745b = i4;
+        this.f25746c = i6;
+        this.f25747d = i9;
+        this.f25748e = c3579mE;
+        this.f25749f = fe;
     }
 
-    @Override // com.google.android.gms.internal.ads.AbstractC3825rE
+    @Override // com.google.android.gms.internal.ads.AbstractC3848rE
     public final boolean a() {
-        return this.f24958e != C3556mE.f31913A;
+        return this.f25748e != C3579mE.f32693A;
     }
 
     public final boolean equals(Object obj) {
@@ -42,29 +43,29 @@ public final class GE extends AbstractC4257zE {
             return false;
         }
         GE ge = (GE) obj;
-        return ge.f24954a == this.f24954a && ge.f24955b == this.f24955b && ge.f24956c == this.f24956c && ge.f24957d == this.f24957d && ge.f24958e == this.f24958e && ge.f24959f == this.f24959f;
+        return ge.f25744a == this.f25744a && ge.f25745b == this.f25745b && ge.f25746c == this.f25746c && ge.f25747d == this.f25747d && ge.f25748e == this.f25748e && ge.f25749f == this.f25749f;
     }
 
     public final int hashCode() {
-        return Objects.hash(GE.class, Integer.valueOf(this.f24954a), Integer.valueOf(this.f24955b), Integer.valueOf(this.f24956c), Integer.valueOf(this.f24957d), this.f24958e, this.f24959f);
+        return Objects.hash(GE.class, Integer.valueOf(this.f25744a), Integer.valueOf(this.f25745b), Integer.valueOf(this.f25746c), Integer.valueOf(this.f25747d), this.f25748e, this.f25749f);
     }
 
     public final String toString() {
-        String valueOf = String.valueOf(this.f24958e);
-        String valueOf2 = String.valueOf(this.f24959f);
+        String valueOf = String.valueOf(this.f25748e);
+        String valueOf2 = String.valueOf(this.f25749f);
         int length = valueOf.length();
         int length2 = valueOf2.length();
-        int i = this.f24956c;
+        int i = this.f25746c;
         int length3 = String.valueOf(i).length();
-        int i6 = this.f24957d;
-        int length4 = String.valueOf(i6).length();
-        int i9 = this.f24954a;
-        int length5 = String.valueOf(i9).length();
-        int i10 = this.f24955b;
-        StringBuilder sb = new StringBuilder(length + 48 + length2 + 2 + length3 + 14 + length4 + 16 + length5 + 19 + String.valueOf(i10).length() + 15);
-        u1.h.i(sb, "AesCtrHmacAead Parameters (variant: ", valueOf, ", hashType: ", valueOf2);
-        u1.h.h(sb, ", ", i, "-byte IV, and ", i6);
-        u1.h.h(sb, "-byte tags, and ", i9, "-byte AES key, and ", i10);
+        int i4 = this.f25747d;
+        int length4 = String.valueOf(i4).length();
+        int i6 = this.f25744a;
+        int length5 = String.valueOf(i6).length();
+        int i9 = this.f25745b;
+        StringBuilder sb = new StringBuilder(length + 48 + length2 + 2 + length3 + 14 + length4 + 16 + length5 + 19 + String.valueOf(i9).length() + 15);
+        AbstractC5128c.h(sb, "AesCtrHmacAead Parameters (variant: ", valueOf, ", hashType: ", valueOf2);
+        AbstractC5128c.g(sb, ", ", i, "-byte IV, and ", i4);
+        AbstractC5128c.g(sb, "-byte tags, and ", i6, "-byte AES key, and ", i9);
         sb.append("-byte HMAC key)");
         return sb.toString();
     }

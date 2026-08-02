@@ -4,5 +4,5 @@ package i8;
 public interface A {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final b f38066a = new b();
+    public static final b f38185a = new b();
 }

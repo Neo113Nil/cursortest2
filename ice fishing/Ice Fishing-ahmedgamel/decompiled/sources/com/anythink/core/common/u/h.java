@@ -10,29 +10,29 @@ import com.anythink.core.common.h.u;
 
 /* loaded from: classes.dex */
 public final class h {
-    private static void a(n nVar, int i, int i6, String str, String str2, int i9, Boolean bool, String str3, boolean z3, boolean z6, boolean z9, boolean z10) {
+    private static void a(n nVar, int i, int i4, String str, String str2, int i6, Boolean bool, String str3, boolean z6, boolean z9, boolean z10, boolean z11) {
         u uVar = new u(nVar.aK(), null);
-        uVar.f14075c = "1004684";
+        uVar.f14861c = "1004684";
         uVar.a(nVar);
-        uVar.f14076d = nVar.aJ();
-        uVar.f14077e = nVar.aI();
-        uVar.f14083l = String.valueOf(i);
-        uVar.f14087p = String.valueOf(i9);
-        uVar.f14088q = String.valueOf(nVar.aK());
-        uVar.f14089r = z3 ? "1" : "2";
-        uVar.f14090s = String.valueOf(i6);
+        uVar.f14862d = nVar.aJ();
+        uVar.f14863e = nVar.aI();
+        uVar.f14869l = String.valueOf(i);
+        uVar.f14873p = String.valueOf(i6);
+        uVar.f14874q = String.valueOf(nVar.aK());
+        uVar.f14875r = z6 ? "1" : "2";
+        uVar.f14876s = String.valueOf(i4);
         if (!TextUtils.isEmpty(str)) {
-            uVar.f14091t = str;
+            uVar.f14877t = str;
         }
         if (!TextUtils.isEmpty(str2)) {
-            uVar.f14092u = str2;
+            uVar.f14878u = str2;
         }
-        uVar.f14093v = bool == null ? "0" : bool.booleanValue() ? "1" : "2";
-        uVar.f14094w = str3;
-        uVar.f14095x = z6 ? "1" : "2";
-        uVar.f14096y = z9 ? "1" : "2";
-        uVar.f14097z = String.valueOf(i);
-        uVar.f14051A = z10 ? "1" : "2";
+        uVar.f14879v = bool == null ? "0" : bool.booleanValue() ? "1" : "2";
+        uVar.f14880w = str3;
+        uVar.f14881x = z9 ? "1" : "2";
+        uVar.f14882y = z10 ? "1" : "2";
+        uVar.f14883z = String.valueOf(i);
+        uVar.f14837A = z11 ? "1" : "2";
         e.b(uVar);
     }
 

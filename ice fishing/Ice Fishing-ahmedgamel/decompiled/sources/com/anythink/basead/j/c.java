@@ -9,7 +9,7 @@ import com.anythink.core.common.h.x;
 public interface c {
     b a(Context context, WebView webView, w wVar, x xVar);
 
-    b a(Context context, boolean z3, w wVar, x xVar);
+    b a(Context context, boolean z6, w wVar, x xVar);
 
     String a(String str, w wVar, x xVar);
 

@@ -9,56 +9,56 @@ import java.util.concurrent.locks.ReentrantLock;
 public class c extends z {
 
     /* renamed from: h, reason: collision with root package name */
-    public static final G1.a f41940h;
+    public static final I1.a f41911h;
     public static c i;
 
     /* renamed from: j, reason: collision with root package name */
-    public static final ReentrantLock f41941j;
+    public static final ReentrantLock f41912j;
 
     /* renamed from: k, reason: collision with root package name */
-    public static final Condition f41942k;
+    public static final Condition f41913k;
 
     /* renamed from: l, reason: collision with root package name */
-    public static final long f41943l;
+    public static final long f41914l;
 
     /* renamed from: m, reason: collision with root package name */
-    public static final long f41944m;
+    public static final long f41915m;
 
     /* renamed from: e, reason: collision with root package name */
-    public int f41945e;
+    public int f41916e;
 
     /* renamed from: f, reason: collision with root package name */
-    public int f41946f = -1;
+    public int f41917f = -1;
 
     /* renamed from: g, reason: collision with root package name */
-    public long f41947g;
+    public long f41918g;
 
     static {
-        G1.a aVar = new G1.a((char) 0, 20);
-        aVar.f1051v = new c[8];
-        f41940h = aVar;
+        I1.a aVar = new I1.a((char) 0, 20);
+        aVar.f1304v = new c[8];
+        f41911h = aVar;
         ReentrantLock reentrantLock = new ReentrantLock();
-        f41941j = reentrantLock;
+        f41912j = reentrantLock;
         Condition newCondition = reentrantLock.newCondition();
         kotlin.jvm.internal.h.d(newCondition, "newCondition(...)");
-        f41942k = newCondition;
+        f41913k = newCondition;
         long millis = TimeUnit.SECONDS.toMillis(60L);
-        f41943l = millis;
-        f41944m = TimeUnit.MILLISECONDS.toNanos(millis);
+        f41914l = millis;
+        f41915m = TimeUnit.MILLISECONDS.toNanos(millis);
     }
 
     public final void h() {
-        long j6 = this.f42002c;
-        boolean z3 = this.f42000a;
-        if (j6 != 0 || z3) {
-            ReentrantLock reentrantLock = f41941j;
+        long j6 = this.f41973c;
+        boolean z6 = this.f41971a;
+        if (j6 != 0 || z6) {
+            ReentrantLock reentrantLock = f41912j;
             reentrantLock.lock();
             try {
-                if (this.f41945e != 0) {
+                if (this.f41916e != 0) {
                     throw new IllegalStateException("Unbalanced enter/exit");
                 }
-                this.f41945e = 1;
-                y2.e.a(this, j6, z3);
+                this.f41916e = 1;
+                x1.g.a(this, j6, z6);
             } finally {
                 reentrantLock.unlock();
             }
@@ -66,15 +66,15 @@ public class c extends z {
     }
 
     public final boolean i() {
-        ReentrantLock reentrantLock = f41941j;
+        ReentrantLock reentrantLock = f41912j;
         reentrantLock.lock();
         try {
-            int i6 = this.f41945e;
-            this.f41945e = 0;
-            if (i6 != 1) {
-                return i6 == 2;
+            int i4 = this.f41916e;
+            this.f41916e = 0;
+            if (i4 != 1) {
+                return i4 == 2;
             }
-            f41940h.o(this);
+            f41911h.o(this);
             return false;
         } finally {
             reentrantLock.unlock();

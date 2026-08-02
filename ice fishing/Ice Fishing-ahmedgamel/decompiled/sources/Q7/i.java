@@ -8,25 +8,25 @@ import java.util.regex.Pattern;
 public final class i implements Serializable {
 
     /* renamed from: n, reason: collision with root package name */
-    public final Pattern f2685n;
+    public final Pattern f2722n;
 
     public i(String str) {
         Pattern compile = Pattern.compile(str);
         kotlin.jvm.internal.h.d(compile, "compile(...)");
-        this.f2685n = compile;
+        this.f2722n = compile;
     }
 
-    public final Z2.e a(int i, String input) {
+    public final b3.e a(int i, String input) {
         kotlin.jvm.internal.h.e(input, "input");
-        Matcher region = this.f2685n.matcher(input).useAnchoringBounds(false).useTransparentBounds(true).region(i, input.length());
+        Matcher region = this.f2722n.matcher(input).useAnchoringBounds(false).useTransparentBounds(true).region(i, input.length());
         if (region.lookingAt()) {
-            return new Z2.e(region, input);
+            return new b3.e(region, input);
         }
         return null;
     }
 
     public final String toString() {
-        String pattern = this.f2685n.toString();
+        String pattern = this.f2722n.toString();
         kotlin.jvm.internal.h.d(pattern, "toString(...)");
         return pattern;
     }

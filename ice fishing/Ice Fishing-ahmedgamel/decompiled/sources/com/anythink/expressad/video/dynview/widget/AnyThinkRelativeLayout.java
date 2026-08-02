@@ -10,13 +10,13 @@ import android.widget.RelativeLayout;
 public class AnyThinkRelativeLayout extends RelativeLayout {
 
     /* renamed from: a, reason: collision with root package name */
-    private boolean f21398a;
+    private boolean f22185a;
 
     /* renamed from: b, reason: collision with root package name */
-    private AnimatorSet f21399b;
+    private AnimatorSet f22186b;
 
     /* renamed from: c, reason: collision with root package name */
-    private boolean f21400c;
+    private boolean f22187c;
 
     public AnyThinkRelativeLayout(Context context) {
         super(context);
@@ -25,7 +25,7 @@ public class AnyThinkRelativeLayout extends RelativeLayout {
     @Override // android.view.ViewGroup, android.view.View
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        AnimatorSet animatorSet = this.f21399b;
+        AnimatorSet animatorSet = this.f22186b;
         if (animatorSet != null) {
             try {
                 animatorSet.start();
@@ -38,10 +38,10 @@ public class AnyThinkRelativeLayout extends RelativeLayout {
     @Override // android.view.ViewGroup, android.view.View
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        if (!this.f21398a) {
-            this.f21398a = true;
+        if (!this.f22185a) {
+            this.f22185a = true;
         }
-        AnimatorSet animatorSet = this.f21399b;
+        AnimatorSet animatorSet = this.f22186b;
         if (animatorSet != null) {
             try {
                 animatorSet.cancel();
@@ -57,7 +57,7 @@ public class AnyThinkRelativeLayout extends RelativeLayout {
     }
 
     public void setAnimatorSet(AnimatorSet animatorSet) {
-        this.f21399b = animatorSet;
+        this.f22186b = animatorSet;
     }
 
     public AnyThinkRelativeLayout(Context context, AttributeSet attributeSet) {

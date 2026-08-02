@@ -28,8 +28,8 @@ public class MgAdInfo {
         this.currency = currency;
     }
 
-    public void setEcpm(double d2) {
-        this.ecpm = d2;
+    public void setEcpm(double d9) {
+        this.ecpm = d9;
     }
 
     public String toString() {

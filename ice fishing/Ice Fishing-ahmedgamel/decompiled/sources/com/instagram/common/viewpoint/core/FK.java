@@ -24,12 +24,12 @@ public final class FK<T extends FL> extends Handler implements Runnable {
     public final long A07;
     public final T A08;
     public volatile boolean A09;
-    public final /* synthetic */ C2205n7 A0A;
+    public final /* synthetic */ C2225n7 A0A;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0B, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 58);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0B, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 58);
         }
         return new String(copyOfRange);
     }
@@ -44,14 +44,14 @@ public final class FK<T extends FL> extends Handler implements Runnable {
      */
     @MetaExoPlayerCustomization("Customized to support load retries")
     private void A02() {
-        InterfaceExecutorC0894Fb interfaceExecutorC0894Fb;
+        InterfaceExecutorC0914Fb interfaceExecutorC0914Fb;
         FK fk;
         long elapsedRealtime = SystemClock.elapsedRealtime();
         this.A02.AEi(this.A08, elapsedRealtime, elapsedRealtime - this.A07, this.A01);
         this.A03 = null;
-        interfaceExecutorC0894Fb = this.A0A.A02;
+        interfaceExecutorC0914Fb = this.A0A.A02;
         fk = this.A0A.A00;
-        interfaceExecutorC0894Fb.execute((Runnable) AbstractC06243y.A01(fk));
+        interfaceExecutorC0914Fb.execute((Runnable) AbstractC06443y.A01(fk));
     }
 
     public static void A04() {
@@ -70,8 +70,8 @@ public final class FK<T extends FL> extends Handler implements Runnable {
     @MetaExoPlayerCustomization("enableContinueLoadingLogging is custom")
     public final void handleMessage(Message message) {
         int i;
+        int i4;
         int i6;
-        int i9;
         long j6;
         if (WU.A02(this)) {
             return;
@@ -99,7 +99,7 @@ public final class FK<T extends FL> extends Handler implements Runnable {
         A03();
         long elapsedRealtime = SystemClock.elapsedRealtime();
         long j9 = elapsedRealtime - this.A07;
-        FI fi = (FI) AbstractC06243y.A01(this.A02);
+        FI fi = (FI) AbstractC06443y.A01(this.A02);
         if (this.A05) {
             fi.AEc(this.A08, elapsedRealtime, j9, false);
             return;
@@ -110,7 +110,7 @@ public final class FK<T extends FL> extends Handler implements Runnable {
                     fi.AEe(this.A08, elapsedRealtime, j9);
                     return;
                 } catch (RuntimeException e9) {
-                    AbstractC06324g.A08(A01(0, 8, 0), A01(71, 44, 118), e9);
+                    AbstractC06524g.A08(A01(0, 8, 0), A01(71, 44, 118), e9);
                     this.A0A.A01 = new FP(e9);
                     return;
                 }
@@ -123,15 +123,15 @@ public final class FK<T extends FL> extends Handler implements Runnable {
                     this.A0A.A01 = this.A03;
                     return;
                 }
-                i6 = AEf.A00;
-                if (i6 != 2) {
-                    i9 = AEf.A00;
-                    if (i9 == 1) {
+                i4 = AEf.A00;
+                if (i4 != 2) {
+                    i6 = AEf.A00;
+                    if (i6 == 1) {
                         this.A01 = 1;
                     }
                     this.A00 = true;
                     j6 = AEf.A01;
-                    A06(j6 != b.f6382b ? AEf.A01 : A00());
+                    A06(j6 != b.f7168b ? AEf.A01 : A00());
                     return;
                 }
                 return;
@@ -148,9 +148,9 @@ public final class FK<T extends FL> extends Handler implements Runnable {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.FI != com.facebook.ads.androidx.media3.exoplayer.upstream.Loader$Callback<T extends com.facebook.ads.redexgen.X.FL> */
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.FK != com.facebook.ads.androidx.media3.exoplayer.upstream.Loader$LoadTask<T extends com.facebook.ads.redexgen.X.FL> */
-    public FK(C2205n7 c2205n7, Looper looper, T loadable, FI<T> fi, int i, long j6) {
+    public FK(C2225n7 c2225n7, Looper looper, T loadable, FI<T> fi, int i, long j6) {
         super(looper);
-        this.A0A = c2205n7;
+        this.A0A = c2225n7;
         this.A08 = loadable;
         this.A02 = fi;
         this.A06 = i;
@@ -160,7 +160,7 @@ public final class FK<T extends FL> extends Handler implements Runnable {
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.FK != com.facebook.ads.androidx.media3.exoplayer.upstream.Loader$LoadTask<T extends com.facebook.ads.redexgen.X.FL> */
     @MetaExoPlayerCustomization("D36993743 Customized Hero Retry Delay Values")
     private long A00() {
-        return AbstractC1967is.A00(this.A01, 0);
+        return AbstractC1987is.A00(this.A01, 0);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.FK != com.facebook.ads.androidx.media3.exoplayer.upstream.Loader$LoadTask<T extends com.facebook.ads.redexgen.X.FL> */
@@ -180,7 +180,7 @@ public final class FK<T extends FL> extends Handler implements Runnable {
     public final void A06(long j6) {
         FK fk;
         fk = this.A0A.A00;
-        AbstractC06243y.A08(fk == null);
+        AbstractC06443y.A08(fk == null);
         this.A0A.A00 = this;
         if (j6 > 0) {
             sendEmptyMessageDelayed(0, j6);
@@ -190,13 +190,13 @@ public final class FK<T extends FL> extends Handler implements Runnable {
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.FK != com.facebook.ads.androidx.media3.exoplayer.upstream.Loader$LoadTask<T extends com.facebook.ads.redexgen.X.FL> */
-    public final void A07(boolean z3) {
-        this.A09 = z3;
+    public final void A07(boolean z6) {
+        this.A09 = z6;
         this.A03 = null;
         if (hasMessages(0)) {
             this.A05 = true;
             removeMessages(0);
-            if (!z3) {
+            if (!z6) {
                 sendEmptyMessage(1);
             }
         } else {
@@ -209,10 +209,10 @@ public final class FK<T extends FL> extends Handler implements Runnable {
                 }
             }
         }
-        if (z3) {
+        if (z6) {
             A03();
             long elapsedRealtime = SystemClock.elapsedRealtime();
-            ((FI) AbstractC06243y.A01(this.A02)).AEc(this.A08, elapsedRealtime, elapsedRealtime - this.A07, true);
+            ((FI) AbstractC06443y.A01(this.A02)).AEc(this.A08, elapsedRealtime, elapsedRealtime - this.A07, true);
             this.A02 = null;
         }
     }
@@ -220,7 +220,7 @@ public final class FK<T extends FL> extends Handler implements Runnable {
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.FK != com.facebook.ads.androidx.media3.exoplayer.upstream.Loader$LoadTask<T extends com.facebook.ads.redexgen.X.FL> */
     @Override // java.lang.Runnable
     public final void run() {
-        boolean z3;
+        boolean z6;
         if (WU.A02(this)) {
             return;
         }
@@ -229,10 +229,10 @@ public final class FK<T extends FL> extends Handler implements Runnable {
                 try {
                     try {
                         synchronized (this) {
-                            z3 = !this.A05;
+                            z6 = !this.A05;
                             this.A04 = Thread.currentThread();
                         }
-                        if (z3) {
+                        if (z6) {
                             AnonymousClass54.A02(A01(150, 5, 115) + this.A08.getClass().getSimpleName());
                             try {
                                 this.A08.AAr();
@@ -252,14 +252,14 @@ public final class FK<T extends FL> extends Handler implements Runnable {
                     }
                 } catch (Error e9) {
                     if (!this.A09) {
-                        AbstractC06324g.A08(A01(0, 8, 0), A01(40, 31, 85), e9);
+                        AbstractC06524g.A08(A01(0, 8, 0), A01(40, 31, 85), e9);
                         obtainMessage(3, e9).sendToTarget();
                     }
                     throw e9;
                 }
             } catch (Exception e10) {
                 if (!this.A09) {
-                    AbstractC06324g.A08(A01(0, 8, 0), A01(115, 35, 50), e10);
+                    AbstractC06524g.A08(A01(0, 8, 0), A01(115, 35, 50), e10);
                     obtainMessage(2, new FP(e10)).sendToTarget();
                 }
             }
@@ -269,7 +269,7 @@ public final class FK<T extends FL> extends Handler implements Runnable {
             }
         } catch (OutOfMemoryError e12) {
             if (!this.A09) {
-                AbstractC06324g.A08(A01(0, 8, 0), A01(8, 32, 20), e12);
+                AbstractC06524g.A08(A01(0, 8, 0), A01(8, 32, 20), e12);
                 obtainMessage(2, new FP(e12)).sendToTarget();
             }
         }

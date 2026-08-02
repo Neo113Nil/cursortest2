@@ -10,7 +10,7 @@ public abstract class z {
         return transitionAlpha;
     }
 
-    public static void b(View view, float f3) {
-        view.setTransitionAlpha(f3);
+    public static void b(View view, float f2) {
+        view.setTransitionAlpha(f2);
     }
 }

@@ -7,7 +7,7 @@ import java.util.List;
 public interface n {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final n f15699a = new n() { // from class: com.anythink.core.common.n.b.n.1
+    public static final n f16486a = new n() { // from class: com.anythink.core.common.n.b.n.1
         @Override // com.anythink.core.common.n.b.n
         public final void a() {
         }

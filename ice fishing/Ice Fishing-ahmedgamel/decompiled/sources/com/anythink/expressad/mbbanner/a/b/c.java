@@ -8,68 +8,68 @@ import com.anythink.expressad.foundation.h.n;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f19856a = "2000067";
+    public static final String f20643a = "2000067";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f19857b = "2000068";
+    public static final String f20644b = "2000068";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f19858c = "2000069";
+    public static final String f20645c = "2000069";
 
     /* renamed from: d, reason: collision with root package name */
-    private String f19859d;
+    private String f20646d;
 
     /* renamed from: e, reason: collision with root package name */
-    private String f19860e;
+    private String f20647e;
 
     /* renamed from: f, reason: collision with root package name */
-    private String f19861f;
+    private String f20648f;
 
     /* renamed from: g, reason: collision with root package name */
-    private String f19862g;
+    private String f20649g;
 
     /* renamed from: h, reason: collision with root package name */
-    private String f19863h;
+    private String f20650h;
     private String i;
 
     /* renamed from: j, reason: collision with root package name */
-    private String f19864j;
+    private String f20651j;
 
     /* renamed from: k, reason: collision with root package name */
-    private String f19865k;
+    private String f20652k;
 
     /* renamed from: l, reason: collision with root package name */
-    private int f19866l;
+    private int f20653l;
 
     /* renamed from: m, reason: collision with root package name */
-    private boolean f19867m;
+    private boolean f20654m;
 
     private c() {
     }
 
-    private c a(boolean z3) {
-        this.f19867m = z3;
+    private c a(boolean z6) {
+        this.f20654m = z6;
         return this;
     }
 
     private String b() {
-        return this.f19859d;
+        return this.f20646d;
     }
 
     private String c() {
-        return this.f19860e;
+        return this.f20647e;
     }
 
     private String d() {
-        return this.f19861f;
+        return this.f20648f;
     }
 
     private String e() {
-        return this.f19862g;
+        return this.f20649g;
     }
 
     private String f() {
-        return this.f19863h;
+        return this.f20650h;
     }
 
     private String g() {
@@ -77,32 +77,32 @@ public final class c {
     }
 
     private String h() {
-        return this.f19864j;
+        return this.f20651j;
     }
 
     private String i() {
-        return this.f19865k;
+        return this.f20652k;
     }
 
     private int j() {
-        return this.f19866l;
+        return this.f20653l;
     }
 
     private String k() {
         StringBuilder sb = new StringBuilder();
-        if (!TextUtils.isEmpty(this.f19860e)) {
+        if (!TextUtils.isEmpty(this.f20647e)) {
             sb.append("unit_id=");
-            sb.append(this.f19860e);
+            sb.append(this.f20647e);
             sb.append("&");
         }
-        if (!TextUtils.isEmpty(this.f19862g)) {
+        if (!TextUtils.isEmpty(this.f20649g)) {
             sb.append("cid=");
-            sb.append(this.f19862g);
+            sb.append(this.f20649g);
             sb.append("&");
         }
-        if (!TextUtils.isEmpty(this.f19863h)) {
+        if (!TextUtils.isEmpty(this.f20650h)) {
             sb.append("rid=");
-            sb.append(this.f19863h);
+            sb.append(this.f20650h);
             sb.append("&");
         }
         if (!TextUtils.isEmpty(this.i)) {
@@ -110,31 +110,31 @@ public final class c {
             sb.append(this.i);
             sb.append("&");
         }
-        if (!TextUtils.isEmpty(this.f19864j)) {
+        if (!TextUtils.isEmpty(this.f20651j)) {
             sb.append("creative_id=");
-            sb.append(this.f19864j);
+            sb.append(this.f20651j);
             sb.append("&");
         }
-        if (!TextUtils.isEmpty(this.f19865k)) {
+        if (!TextUtils.isEmpty(this.f20652k)) {
             sb.append("reason=");
-            sb.append(this.f19865k);
+            sb.append(this.f20652k);
             sb.append("&");
         }
-        if (this.f19866l != 0) {
+        if (this.f20653l != 0) {
             sb.append("result=");
-            sb.append(this.f19866l);
+            sb.append(this.f20653l);
             sb.append("&");
         }
-        if (this.f19867m) {
+        if (this.f20654m) {
             sb.append("hb=1&");
         }
         sb.append("network_type=");
         t.b().g();
         sb.append(n.b());
         sb.append("&");
-        if (!TextUtils.isEmpty(this.f19859d)) {
+        if (!TextUtils.isEmpty(this.f20646d)) {
             sb.append("key=");
-            sb.append(this.f19859d);
+            sb.append(this.f20646d);
         }
         return sb.toString();
     }
@@ -144,22 +144,22 @@ public final class c {
     }
 
     private c b(String str) {
-        this.f19860e = str;
+        this.f20647e = str;
         return this;
     }
 
     private c c(String str) {
-        this.f19861f = str;
+        this.f20648f = str;
         return this;
     }
 
     private c d(String str) {
-        this.f19862g = str;
+        this.f20649g = str;
         return this;
     }
 
     private c e(String str) {
-        this.f19863h = str;
+        this.f20650h = str;
         return this;
     }
 
@@ -169,22 +169,22 @@ public final class c {
     }
 
     private c g(String str) {
-        this.f19864j = str;
+        this.f20651j = str;
         return this;
     }
 
     private c h(String str) {
-        this.f19865k = str;
+        this.f20652k = str;
         return this;
     }
 
     private c a(String str) {
-        this.f19859d = str;
+        this.f20646d = str;
         return this;
     }
 
     private c a(int i) {
-        this.f19866l = i;
+        this.f20653l = i;
         return this;
     }
 }

@@ -7,45 +7,45 @@ import com.anythink.basead.exoplayer.ae;
 abstract class a extends com.anythink.basead.exoplayer.ae {
 
     /* renamed from: b, reason: collision with root package name */
-    private final int f7401b;
+    private final int f8187b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final aa f7402c;
+    private final aa f8188c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final boolean f7403d;
+    private final boolean f8189d;
 
-    public a(boolean z3, aa aaVar) {
-        this.f7403d = z3;
-        this.f7402c = aaVar;
-        this.f7401b = aaVar.a();
+    public a(boolean z6, aa aaVar) {
+        this.f8189d = z6;
+        this.f8188c = aaVar;
+        this.f8187b = aaVar.a();
     }
 
     public abstract int a(int i);
 
     @Override // com.anythink.basead.exoplayer.ae
-    public final int a(int i, int i6, boolean z3) {
-        if (this.f7403d) {
-            if (i6 == 1) {
-                i6 = 2;
+    public final int a(int i, int i4, boolean z6) {
+        if (this.f8189d) {
+            if (i4 == 1) {
+                i4 = 2;
             }
-            z3 = false;
+            z6 = false;
         }
         int b9 = b(i);
         int e9 = e(b9);
-        int a9 = c(b9).a(i - e9, i6 != 2 ? i6 : 0, z3);
+        int a9 = c(b9).a(i - e9, i4 != 2 ? i4 : 0, z6);
         if (a9 != -1) {
             return e9 + a9;
         }
-        int a10 = a(b9, z3);
+        int a10 = a(b9, z6);
         while (a10 != -1 && c(a10).a()) {
-            a10 = a(a10, z3);
+            a10 = a(a10, z6);
         }
         if (a10 != -1) {
-            return c(a10).b(z3) + e(a10);
+            return c(a10).b(z6) + e(a10);
         }
-        if (i6 == 2) {
-            return b(z3);
+        if (i4 == 2) {
+            return b(z6);
         }
         return -1;
     }
@@ -53,28 +53,28 @@ abstract class a extends com.anythink.basead.exoplayer.ae {
     public abstract int b(int i);
 
     @Override // com.anythink.basead.exoplayer.ae
-    public final int b(int i, int i6, boolean z3) {
-        if (this.f7403d) {
-            if (i6 == 1) {
-                i6 = 2;
+    public final int b(int i, int i4, boolean z6) {
+        if (this.f8189d) {
+            if (i4 == 1) {
+                i4 = 2;
             }
-            z3 = false;
+            z6 = false;
         }
         int b9 = b(i);
         int e9 = e(b9);
-        int b10 = c(b9).b(i - e9, i6 != 2 ? i6 : 0, z3);
+        int b10 = c(b9).b(i - e9, i4 != 2 ? i4 : 0, z6);
         if (b10 != -1) {
             return e9 + b10;
         }
-        int b11 = b(b9, z3);
+        int b11 = b(b9, z6);
         while (b11 != -1 && c(b11).a()) {
-            b11 = b(b11, z3);
+            b11 = b(b11, z6);
         }
         if (b11 != -1) {
-            return c(b11).a(z3) + e(b11);
+            return c(b11).a(z6) + e(b11);
         }
-        if (i6 == 2) {
-            return a(z3);
+        if (i4 == 2) {
+            return a(z6);
         }
         return -1;
     }
@@ -90,45 +90,45 @@ abstract class a extends com.anythink.basead.exoplayer.ae {
     public abstract Object f(int i);
 
     @Override // com.anythink.basead.exoplayer.ae
-    public final int a(boolean z3) {
-        int i = this.f7401b;
+    public final int a(boolean z6) {
+        int i = this.f8187b;
         if (i == 0) {
             return -1;
         }
-        if (this.f7403d) {
-            z3 = false;
+        if (this.f8189d) {
+            z6 = false;
         }
-        int b9 = z3 ? this.f7402c.b() : i - 1;
+        int b9 = z6 ? this.f8188c.b() : i - 1;
         while (c(b9).a()) {
-            b9 = b(b9, z3);
+            b9 = b(b9, z6);
             if (b9 == -1) {
                 return -1;
             }
         }
-        return c(b9).a(z3) + e(b9);
+        return c(b9).a(z6) + e(b9);
     }
 
     @Override // com.anythink.basead.exoplayer.ae
-    public final int b(boolean z3) {
-        if (this.f7401b == 0) {
+    public final int b(boolean z6) {
+        if (this.f8187b == 0) {
             return -1;
         }
-        if (this.f7403d) {
-            z3 = false;
+        if (this.f8189d) {
+            z6 = false;
         }
-        int c9 = z3 ? this.f7402c.c() : 0;
+        int c9 = z6 ? this.f8188c.c() : 0;
         while (c(c9).a()) {
-            c9 = a(c9, z3);
+            c9 = a(c9, z6);
             if (c9 == -1) {
                 return -1;
             }
         }
-        return c(c9).b(z3) + e(c9);
+        return c(c9).b(z6) + e(c9);
     }
 
-    private int b(int i, boolean z3) {
-        if (z3) {
-            return this.f7402c.b(i);
+    private int b(int i, boolean z6) {
+        if (z6) {
+            return this.f8188c.b(i);
         }
         if (i > 0) {
             return i - 1;
@@ -137,24 +137,24 @@ abstract class a extends com.anythink.basead.exoplayer.ae {
     }
 
     @Override // com.anythink.basead.exoplayer.ae
-    public final ae.b a(int i, ae.b bVar, boolean z3, long j6) {
+    public final ae.b a(int i, ae.b bVar, boolean z6, long j6) {
         int b9 = b(i);
         int e9 = e(b9);
-        int d2 = d(b9);
-        c(b9).a(i - e9, bVar, z3, j6);
-        bVar.f6353f += d2;
-        bVar.f6354g += d2;
+        int d9 = d(b9);
+        c(b9).a(i - e9, bVar, z6, j6);
+        bVar.f7139f += d9;
+        bVar.f7140g += d9;
         return bVar;
     }
 
     @Override // com.anythink.basead.exoplayer.ae
-    public final ae.a a(int i, ae.a aVar, boolean z3) {
+    public final ae.a a(int i, ae.a aVar, boolean z6) {
         int a9 = a(i);
         int e9 = e(a9);
-        c(a9).a(i - d(a9), aVar, z3);
-        aVar.f6344c += e9;
-        if (z3) {
-            aVar.f6343b = Pair.create(f(a9), aVar.f6343b);
+        c(a9).a(i - d(a9), aVar, z6);
+        aVar.f7130c += e9;
+        if (z6) {
+            aVar.f7129b = Pair.create(f(a9), aVar.f7129b);
         }
         return aVar;
     }
@@ -175,11 +175,11 @@ abstract class a extends com.anythink.basead.exoplayer.ae {
         return d(b9) + a9;
     }
 
-    private int a(int i, boolean z3) {
-        if (z3) {
-            return this.f7402c.a(i);
+    private int a(int i, boolean z6) {
+        if (z6) {
+            return this.f8188c.a(i);
         }
-        if (i < this.f7401b - 1) {
+        if (i < this.f8187b - 1) {
             return i + 1;
         }
         return -1;

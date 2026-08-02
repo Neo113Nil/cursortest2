@@ -8,10 +8,10 @@ import java.util.Map;
 public final class h extends a {
 
     /* renamed from: a, reason: collision with root package name */
-    String f14669a;
+    String f15455a;
 
     public h(String str) {
-        this.f14669a = str;
+        this.f15455a = str;
     }
 
     @Override // com.anythink.core.common.m.a
@@ -65,7 +65,7 @@ public final class h extends a {
 
     @Override // com.anythink.core.common.m.a
     public final String b() {
-        return this.f14669a;
+        return this.f15455a;
     }
 
     @Override // com.anythink.core.common.m.a

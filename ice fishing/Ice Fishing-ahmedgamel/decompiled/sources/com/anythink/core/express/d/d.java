@@ -12,31 +12,31 @@ import java.util.regex.Pattern;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String[] f17569a = {"wv_hybrid:", "mraid:", "ssp:", "mvb_hybrid:"};
+    private static final String[] f18356a = {"wv_hybrid:", "mraid:", "ssp:", "mvb_hybrid:"};
 
     /* renamed from: b, reason: collision with root package name */
-    private static final Pattern f17570b = Pattern.compile("hybrid://(.+?):(.+?)/(.+?)(\\?(.*?))?");
+    private static final Pattern f18357b = Pattern.compile("hybrid://(.+?):(.+?)/(.+?)(\\?(.*?))?");
 
     /* renamed from: c, reason: collision with root package name */
-    private static final Pattern f17571c = Pattern.compile("mraid://(.+?):(.+?)/(.+?)(\\?(.*?))?");
+    private static final Pattern f18358c = Pattern.compile("mraid://(.+?):(.+?)/(.+?)(\\?(.*?))?");
 
     /* renamed from: d, reason: collision with root package name */
-    private static final Pattern f17572d = Pattern.compile("ssp://(.+?):(.+?)/(.+?)(\\?(.*?))?");
+    private static final Pattern f18359d = Pattern.compile("ssp://(.+?):(.+?)/(.+?)(\\?(.*?))?");
 
     /* renamed from: e, reason: collision with root package name */
-    private static final Pattern f17573e = Pattern.compile("mv://(.+?):(.+?)/(.+?)(\\?(.*?))?");
+    private static final Pattern f18360e = Pattern.compile("mv://(.+?):(.+?)/(.+?)(\\?(.*?))?");
 
     /* renamed from: f, reason: collision with root package name */
-    private static Map<String, String> f17574f = new HashMap();
+    private static Map<String, String> f18361f = new HashMap();
 
     static {
         for (c cVar : c.values()) {
-            f17574f.put(cVar.a(), cVar.b());
+            f18361f.put(cVar.a(), cVar.b());
         }
     }
 
     public static boolean a(String str) {
-        for (String str2 : f17569a) {
+        for (String str2 : f18356a) {
             if (str2.equals(str)) {
                 return true;
             }
@@ -46,16 +46,16 @@ public final class d {
 
     public static Pattern b(String str) {
         if ("wv_hybrid:".equals(str)) {
-            return f17573e;
+            return f18360e;
         }
         if ("mraid:".equals(str)) {
-            return f17571c;
+            return f18358c;
         }
         if ("ssp:".equals(str)) {
-            return f17572d;
+            return f18359d;
         }
         if ("mvb_hybrid:".equals(str)) {
-            return f17573e;
+            return f18360e;
         }
         return null;
     }
@@ -67,17 +67,17 @@ public final class d {
         for (int i = 0; i < str.length(); i++) {
             char charAt = str.charAt(i);
             if (charAt <= 255) {
-                int i6 = 0;
+                int i4 = 0;
                 while (true) {
-                    if (i6 >= 2) {
+                    if (i4 >= 2) {
                         stringBuffer.append(charAt);
                         break;
                     }
-                    if (cArr[i6] == charAt) {
+                    if (cArr[i4] == charAt) {
                         stringBuffer.append("\\".concat(String.valueOf(charAt)));
                         break;
                     }
-                    i6++;
+                    i4++;
                 }
             } else {
                 stringBuffer.append("\\u");
@@ -97,17 +97,17 @@ public final class d {
     }
 
     public static boolean d(String str) {
-        return e(str).startsWith(d.c.f18635e);
+        return e(str).startsWith(d.c.f19422e);
     }
 
     public static String e(String str) {
-        String str2 = f17574f.get(f(str));
+        String str2 = f18361f.get(f(str));
         return str2 == null ? "" : str2;
     }
 
     private static String f(String str) {
         String path;
         int lastIndexOf;
-        return (TextUtils.isEmpty(str) || (path = Uri.parse(str).getPath()) == null || (lastIndexOf = path.lastIndexOf(j.f12378z)) == -1) ? "" : path.substring(lastIndexOf + 1);
+        return (TextUtils.isEmpty(str) || (path = Uri.parse(str).getPath()) == null || (lastIndexOf = path.lastIndexOf(j.f13164z)) == -1) ? "" : path.substring(lastIndexOf + 1);
     }
 }

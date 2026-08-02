@@ -3,37 +3,37 @@ package com.google.android.gms.internal.ads;
 import android.util.SparseArray;
 
 /* loaded from: classes2.dex */
-public final class O2 implements InterfaceC3113e1 {
+public final class O2 implements InterfaceC3136e1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final SparseArray f26581a;
+    public final SparseArray f27363a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final SparseArray f26582b;
+    public final SparseArray f27364b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final long f26583c;
+    public final long f27365c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final long f26584d;
+    public final long f27366d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final int f26585e;
+    public final int f27367e;
 
     public /* synthetic */ O2(SparseArray sparseArray, SparseArray sparseArray2, long j6, long j9, int i) {
-        this.f26581a = sparseArray;
-        this.f26582b = sparseArray2;
-        this.f26583c = j6;
-        this.f26584d = j9;
-        this.f26585e = i;
+        this.f27363a = sparseArray;
+        this.f27364b = sparseArray2;
+        this.f27365c = j6;
+        this.f27366d = j9;
+        this.f27367e = i;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3113e1
-    public final C3060d1 b(long j6) {
-        SparseArray sparseArray = this.f26581a;
-        int i = this.f26585e;
+    @Override // com.google.android.gms.internal.ads.InterfaceC3136e1
+    public final C3083d1 b(long j6) {
+        SparseArray sparseArray = this.f27363a;
+        int i = this.f27367e;
         long[] jArr = (long[]) sparseArray.get(i);
-        SparseArray sparseArray2 = this.f26582b;
+        SparseArray sparseArray2 = this.f27364b;
         long[] jArr2 = (long[]) sparseArray2.get(i);
         if (jArr == null || jArr2 == null) {
             jArr = (long[]) sparseArray.get(i);
@@ -44,20 +44,20 @@ public final class O2 implements InterfaceC3113e1 {
             }
         }
         if (jArr.length == 0 || j6 < jArr[0]) {
-            C3167f1 c3167f1 = new C3167f1(0L, this.f26584d);
-            return new C3060d1(c3167f1, c3167f1);
+            C3190f1 c3190f1 = new C3190f1(0L, this.f27366d);
+            return new C3083d1(c3190f1, c3190f1);
         }
-        int s9 = AbstractC3159eu.s(jArr, j6, true);
-        C3167f1 c3167f12 = new C3167f1(jArr[s9], jArr2[s9]);
-        return new C3060d1(c3167f12, c3167f12);
+        int s9 = AbstractC3182eu.s(jArr, j6, true);
+        C3190f1 c3190f12 = new C3190f1(jArr[s9], jArr2[s9]);
+        return new C3083d1(c3190f12, c3190f12);
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3113e1
+    @Override // com.google.android.gms.internal.ads.InterfaceC3136e1
     public final long c() {
-        return this.f26583c;
+        return this.f27365c;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3113e1
+    @Override // com.google.android.gms.internal.ads.InterfaceC3136e1
     public final boolean f() {
         return true;
     }

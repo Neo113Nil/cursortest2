@@ -16,5 +16,5 @@ public interface MediaViewListener {
 
     void onPlay(MediaView mediaView);
 
-    void onVolumeChange(MediaView mediaView, float f3);
+    void onVolumeChange(MediaView mediaView, float f2);
 }

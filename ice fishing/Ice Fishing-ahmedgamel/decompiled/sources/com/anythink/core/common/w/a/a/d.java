@@ -8,10 +8,10 @@ import java.util.concurrent.ConcurrentHashMap;
 public class d {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f17001a = "d";
+    private static final String f17788a = "d";
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile Map<String, Map<Class<? extends com.anythink.core.common.w.a.b.b>, com.anythink.core.common.w.a.b.b>> f17002b;
+    private static volatile Map<String, Map<Class<? extends com.anythink.core.common.w.a.b.b>, com.anythink.core.common.w.a.b.b>> f17789b;
 
     public static <M extends com.anythink.core.common.w.a.b.b> M a(String str, Class<M> cls) {
         Map<Class<? extends com.anythink.core.common.w.a.b.b>, com.anythink.core.common.w.a.b.b> b9 = b(str);
@@ -25,18 +25,18 @@ public class d {
         if (TextUtils.isEmpty(str)) {
             return null;
         }
-        if (f17002b == null) {
+        if (f17789b == null) {
             synchronized (d.class) {
                 try {
-                    if (f17002b == null) {
-                        f17002b = new ConcurrentHashMap();
+                    if (f17789b == null) {
+                        f17789b = new ConcurrentHashMap();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        Map<Class<? extends com.anythink.core.common.w.a.b.b>, com.anythink.core.common.w.a.b.b> map = f17002b.get(str);
+        Map<Class<? extends com.anythink.core.common.w.a.b.b>, com.anythink.core.common.w.a.b.b> map = f17789b.get(str);
         if (map != null) {
             return map;
         }
@@ -46,14 +46,14 @@ public class d {
         concurrentHashMap.put(com.anythink.core.common.w.a.b.e.class, new e(str, aVar, bVar));
         concurrentHashMap.put(com.anythink.core.common.w.a.b.c.class, aVar);
         concurrentHashMap.put(com.anythink.core.common.w.a.b.d.class, bVar);
-        f17002b.put(str, concurrentHashMap);
+        f17789b.put(str, concurrentHashMap);
         return concurrentHashMap;
     }
 
     public static void a(String str) {
         Map<Class<? extends com.anythink.core.common.w.a.b.b>, com.anythink.core.common.w.a.b.b> map;
         com.anythink.core.common.w.a.b.b bVar;
-        if (f17002b == null || TextUtils.isEmpty(str) || (map = f17002b.get(str)) == null || map.isEmpty()) {
+        if (f17789b == null || TextUtils.isEmpty(str) || (map = f17789b.get(str)) == null || map.isEmpty()) {
             return;
         }
         for (Class<? extends com.anythink.core.common.w.a.b.b> cls : map.keySet()) {

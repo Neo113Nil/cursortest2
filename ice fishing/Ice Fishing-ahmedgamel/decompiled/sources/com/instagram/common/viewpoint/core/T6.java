@@ -6,8 +6,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public final class T6 {
     public final AtomicBoolean A00 = new AtomicBoolean(false);
 
-    public final void A00(boolean z3) {
-        this.A00.set(z3);
+    public final void A00(boolean z6) {
+        this.A00.set(z6);
     }
 
     public final boolean A01() {

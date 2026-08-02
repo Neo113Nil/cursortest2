@@ -8,18 +8,18 @@ import org.json.JSONObject;
 public abstract class a extends b {
 
     /* renamed from: c, reason: collision with root package name */
-    protected final HashSet<String> f36321c;
+    protected final HashSet<String> f37088c;
 
     /* renamed from: d, reason: collision with root package name */
-    protected final JSONObject f36322d;
+    protected final JSONObject f37089d;
 
     /* renamed from: e, reason: collision with root package name */
-    protected final long f36323e;
+    protected final long f37090e;
 
     public a(b.InterfaceC0173b interfaceC0173b, HashSet<String> hashSet, JSONObject jSONObject, long j6) {
         super(interfaceC0173b);
-        this.f36321c = new HashSet<>(hashSet);
-        this.f36322d = jSONObject;
-        this.f36323e = j6;
+        this.f37088c = new HashSet<>(hashSet);
+        this.f37089d = jSONObject;
+        this.f37090e = j6;
     }
 }

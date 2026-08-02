@@ -6,22 +6,22 @@ import java.util.function.BiConsumer;
 public final class s implements BiConsumer {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f2005a;
+    public int f2093a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f2006b;
+    public int f2094b;
 
     /* renamed from: c, reason: collision with root package name */
-    public p f2007c;
+    public p f2095c;
 
     /* renamed from: d, reason: collision with root package name */
-    public j f2008d;
+    public j f2096d;
 
     @Override // java.util.function.BiConsumer
     public final void accept(Object obj, Object obj2) {
-        int b9 = this.f2008d.b();
-        int a9 = this.f2007c.a(obj, obj2, this.f2008d);
-        this.f2008d.f1978c[b9] = a9;
-        this.f2005a = d.b(a9) + this.f2006b + a9 + this.f2005a;
+        int b9 = this.f2096d.b();
+        int a9 = this.f2095c.a(obj, obj2, this.f2096d);
+        this.f2096d.f2066c[b9] = a9;
+        this.f2093a = d.b(a9) + this.f2094b + a9 + this.f2093a;
     }
 }

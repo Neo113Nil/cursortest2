@@ -19,9 +19,9 @@ public final class e {
         return a(str, jSONObject, i, false);
     }
 
-    public static r a(String str, JSONObject jSONObject, int i, boolean z3) {
+    public static r a(String str, JSONObject jSONObject, int i, boolean z6) {
         try {
-            JSONObject optJSONObject = jSONObject.optJSONObject(j.e.f12440e);
+            JSONObject optJSONObject = jSONObject.optJSONObject(j.e.f13226e);
             if (optJSONObject != null) {
                 jSONObject = optJSONObject;
             } else if (!jSONObject.has("seatbid")) {
@@ -34,7 +34,7 @@ public final class e {
             rVar.b(str);
             rVar.k(optJSONObject2.optString(com.anythink.core.common.k.ah));
             rVar.l(optJSONObject2.optString(l.a.aE));
-            rVar.x(optJSONObject2.optString(b.a.f6071A));
+            rVar.x(optJSONObject2.optString(b.a.f6857A));
             rVar.m(optJSONObject2.optString("title"));
             rVar.n(optJSONObject2.optString("desc"));
             rVar.i(optJSONObject2.optInt(com.anythink.expressad.foundation.d.d.ae));
@@ -42,7 +42,7 @@ public final class e {
             rVar.q(optJSONObject2.optString("full_u"));
             rVar.g(optJSONObject2.optInt("unit_type"));
             rVar.r(optJSONObject2.optString("tp_logo_u"));
-            rVar.s(optJSONObject2.optString(b.a.f6088k));
+            rVar.s(optJSONObject2.optString(b.a.f6874k));
             rVar.t(optJSONObject2.optString("video_u"));
             rVar.e(optJSONObject2.optInt("video_l"));
             rVar.ac(optJSONObject2.optString("video_r"));
@@ -68,9 +68,9 @@ public final class e {
             rVar.A(optJSONObject2.optString("app_version"));
             rVar.B(optJSONObject2.optString("privacy"));
             rVar.C(optJSONObject2.optString("permission"));
-            rVar.c(optJSONObject2.optString(g.a.f12959N));
+            rVar.c(optJSONObject2.optString(g.a.f13745N));
             rVar.i(optJSONObject2.optString("mtr_ver"));
-            int i6 = 2;
+            int i4 = 2;
             rVar.u(optJSONObject2.optInt("o_im_cap_sw", 2));
             rVar.v(optJSONObject2.optInt("o_cl_cap_sw", 2));
             rVar.w(optJSONObject2.optInt("c_im_cap_sw", 2));
@@ -91,7 +91,7 @@ public final class e {
             }
             rVar.aa(optJSONObject2.optString("dsp_id", ""));
             rVar.ab(optJSONObject2.optString("dsp_oid", ""));
-            rVar.r(optJSONObject2.optInt(com.anythink.expressad.foundation.d.d.f18576Z, -1));
+            rVar.r(optJSONObject2.optInt(com.anythink.expressad.foundation.d.d.f19363Z, -1));
             rVar.s(optJSONObject2.optInt("install_sw", -1));
             rVar.H(optJSONObject2.optString("wv_ctrl"));
             rVar.e(optJSONObject2.optInt("adp_type"));
@@ -101,20 +101,20 @@ public final class e {
             rVar.e(optJSONObject2.optString("wx_path"));
             rVar.c(optJSONObject2.optInt("o_w"));
             rVar.d(optJSONObject2.optInt("o_h"));
-            if (z3) {
-                optJSONObject2.put(r.f14041c, 1);
+            if (z6) {
+                optJSONObject2.put(r.f14827c, 1);
             }
-            rVar.b(optJSONObject2.optInt(r.f14041c));
+            rVar.b(optJSONObject2.optInt(r.f14827c));
             rVar.J(optJSONObject2.optString("mraid_u"));
             if (i == 66 && !TextUtils.isEmpty(rVar.G())) {
                 String optString2 = optJSONObject2.optString("dp_package", "");
                 rVar.D(optString2);
                 if (TextUtils.isEmpty(optString2)) {
-                    i6 = 3;
+                    i4 = 3;
                 } else if (q.b(t.b().g(), optString2)) {
-                    i6 = 1;
+                    i4 = 1;
                 }
-                rVar.j(i6);
+                rVar.j(i4);
             }
             rVar.K(optJSONObject2.optString("adm"));
             rVar.p(optJSONObject2.optInt("cr_m", 1));

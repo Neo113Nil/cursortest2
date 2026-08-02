@@ -7,45 +7,45 @@ import org.xmlpull.v1.XmlPullParser;
 public final class an extends ay {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f9323a = "NonLinearAds";
+    private static final String f10109a = "NonLinearAds";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f9324b = "NonLinear";
+    private static final String f10110b = "NonLinear";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f9325c = "TrackingEvents";
+    private static final String f10111c = "TrackingEvents";
 
     /* renamed from: d, reason: collision with root package name */
-    private ArrayList<am> f9326d = new ArrayList<>();
+    private ArrayList<am> f10112d = new ArrayList<>();
 
     /* renamed from: e, reason: collision with root package name */
-    private ArrayList<at> f9327e;
+    private ArrayList<at> f10113e;
 
     public an(XmlPullParser xmlPullParser) {
-        xmlPullParser.require(2, null, f9323a);
+        xmlPullParser.require(2, null, f10109a);
         while (xmlPullParser.next() != 3) {
             if (xmlPullParser.getEventType() == 2) {
                 String name = xmlPullParser.getName();
-                if (name != null && name.equals(f9324b)) {
-                    xmlPullParser.require(2, null, f9324b);
-                    this.f9326d.add(new am(xmlPullParser));
-                    xmlPullParser.require(3, null, f9324b);
-                } else if (name == null || !name.equals(f9325c)) {
+                if (name != null && name.equals(f10110b)) {
+                    xmlPullParser.require(2, null, f10110b);
+                    this.f10112d.add(new am(xmlPullParser));
+                    xmlPullParser.require(3, null, f10110b);
+                } else if (name == null || !name.equals(f10111c)) {
                     ay.b(xmlPullParser);
                 } else {
-                    xmlPullParser.require(2, null, f9325c);
-                    this.f9327e = new au(xmlPullParser).a();
-                    xmlPullParser.require(3, null, f9325c);
+                    xmlPullParser.require(2, null, f10111c);
+                    this.f10113e = new au(xmlPullParser).a();
+                    xmlPullParser.require(3, null, f10111c);
                 }
             }
         }
     }
 
     private ArrayList<am> b() {
-        return this.f9326d;
+        return this.f10112d;
     }
 
     public final ArrayList<at> a() {
-        return this.f9327e;
+        return this.f10113e;
     }
 }

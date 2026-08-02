@@ -9,10 +9,10 @@ public class WrappedParcelable implements Parcelable {
     public static final Parcelable.Creator<WrappedParcelable> CREATOR = new d(9);
 
     /* renamed from: n, reason: collision with root package name */
-    public final byte[] f23527n;
+    public final byte[] f24312n;
 
     public WrappedParcelable(Parcel parcel) {
-        this.f23527n = parcel.createByteArray();
+        this.f24312n = parcel.createByteArray();
     }
 
     public static byte[] marshallParcelable(Parcelable parcelable) {
@@ -30,7 +30,7 @@ public class WrappedParcelable implements Parcelable {
 
     public Parcelable unwrap(ClassLoader classLoader) {
         Parcel obtain = Parcel.obtain();
-        byte[] bArr = this.f23527n;
+        byte[] bArr = this.f24312n;
         if (bArr == null) {
             return null;
         }
@@ -43,14 +43,14 @@ public class WrappedParcelable implements Parcelable {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeByteArray(this.f23527n);
+        parcel.writeByteArray(this.f24312n);
     }
 
     public WrappedParcelable(Parcelable parcelable) {
-        this.f23527n = marshallParcelable(parcelable);
+        this.f24312n = marshallParcelable(parcelable);
     }
 
     public WrappedParcelable(byte[] bArr) {
-        this.f23527n = bArr;
+        this.f24312n = bArr;
     }
 }

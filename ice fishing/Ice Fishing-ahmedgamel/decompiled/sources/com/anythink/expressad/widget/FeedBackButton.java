@@ -18,7 +18,7 @@ public class FeedBackButton extends TextView {
     }
 
     private void a() {
-        setText(k.a(getContext(), "anythink_cm_feedback_btn_text", k.f19636g));
+        setText(k.a(getContext(), "anythink_cm_feedback_btn_text", k.f20423g));
         Context context = getContext();
         setPadding(v.b(context, 5.0f), v.b(context, 5.0f), v.b(context, 5.0f), v.b(context, 5.0f));
         setTextIsSelectable(false);
@@ -41,8 +41,8 @@ public class FeedBackButton extends TextView {
         a();
     }
 
-    public FeedBackButton(Context context, AttributeSet attributeSet, int i, int i6) {
-        super(context, attributeSet, i, i6);
+    public FeedBackButton(Context context, AttributeSet attributeSet, int i, int i4) {
+        super(context, attributeSet, i, i4);
         a();
     }
 }

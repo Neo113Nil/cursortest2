@@ -1,17 +1,52 @@
 package N2;
 
-import android.os.Looper;
+import android.os.IBinder;
+import android.os.Messenger;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 /* loaded from: classes.dex */
-public final class g {
+public final class g implements Parcelable {
+    public static final Parcelable.Creator<g> CREATOR = new c(1);
 
-    /* renamed from: b, reason: collision with root package name */
-    public static final g f1940b = new g(new a4.e(), Looper.getMainLooper());
+    /* renamed from: n, reason: collision with root package name */
+    public final Messenger f1925n;
 
-    /* renamed from: a, reason: collision with root package name */
-    public final a4.e f1941a;
+    public g(IBinder iBinder) {
+        this.f1925n = new Messenger(iBinder);
+    }
 
-    public g(a4.e eVar, Looper looper) {
-        this.f1941a = eVar;
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        try {
+            Messenger messenger = this.f1925n;
+            messenger.getClass();
+            IBinder binder = messenger.getBinder();
+            Messenger messenger2 = ((g) obj).f1925n;
+            messenger2.getClass();
+            return binder.equals(messenger2.getBinder());
+        } catch (ClassCastException unused) {
+            return false;
+        }
+    }
+
+    public final int hashCode() {
+        Messenger messenger = this.f1925n;
+        messenger.getClass();
+        return messenger.getBinder().hashCode();
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        Messenger messenger = this.f1925n;
+        messenger.getClass();
+        parcel.writeStrongBinder(messenger.getBinder());
     }
 }

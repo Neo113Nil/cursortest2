@@ -11,24 +11,24 @@ import org.json.JSONObject;
 public class h {
 
     /* renamed from: a, reason: collision with root package name */
-    private static h f36254a = new h();
+    private static h f37021a = new h();
 
     public class a implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ WebView f36255a;
+        final /* synthetic */ WebView f37022a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ String f36256b;
+        final /* synthetic */ String f37023b;
 
         public a(WebView webView, String str) {
-            this.f36255a = webView;
-            this.f36256b = str;
+            this.f37022a = webView;
+            this.f37023b = str;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            h.this.c(this.f36255a, this.f36256b);
+            h.this.c(this.f37022a, this.f37023b);
         }
     }
 
@@ -36,7 +36,7 @@ public class h {
     }
 
     public static final h a() {
-        return f36254a;
+        return f37021a;
     }
 
     public void b(WebView webView, String str) {
@@ -75,8 +75,8 @@ public class h {
         }
     }
 
-    public void a(WebView webView, String str, float f3) {
-        a(webView, "setDeviceVolume", Float.valueOf(f3), str);
+    public void a(WebView webView, String str, float f2) {
+        a(webView, "setDeviceVolume", Float.valueOf(f2), str);
     }
 
     public void b(WebView webView, String str, JSONObject jSONObject) {

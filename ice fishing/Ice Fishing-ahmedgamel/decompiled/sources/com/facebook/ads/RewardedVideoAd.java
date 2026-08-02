@@ -22,7 +22,7 @@ public class RewardedVideoAd implements FullScreenAd {
         @Override // com.facebook.ads.Ad.LoadConfigBuilder
         RewardedVideoAdLoadConfigBuilder withBid(String str);
 
-        RewardedVideoAdLoadConfigBuilder withFailOnCacheFailureEnabled(boolean z3);
+        RewardedVideoAdLoadConfigBuilder withFailOnCacheFailureEnabled(boolean z6);
 
         RewardedVideoAdLoadConfigBuilder withRewardData(RewardData rewardData);
     }

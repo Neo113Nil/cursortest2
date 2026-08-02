@@ -24,14 +24,14 @@ public final class G7 {
     public long A0B;
     public Surface A0C;
     public boolean A0D;
-    public final C0903Fl A0E = new C0903Fl();
+    public final C0923Fl A0E = new C0923Fl();
     public final G5 A0F;
     public final G6 A0G;
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0H, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 30);
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0H, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 30);
         }
         return new String(copyOfRange);
     }
@@ -47,8 +47,8 @@ public final class G7 {
     public G7(Context context) {
         this.A0F = A01(context);
         this.A0G = this.A0F != null ? G6.A00() : null;
-        this.A0A = b.f6382b;
-        this.A0B = b.f6382b;
+        this.A0A = b.f7168b;
+        this.A0B = b.f7168b;
         this.A00 = -1.0f;
         this.A01 = 1.0f;
         this.A04 = 0;
@@ -68,18 +68,18 @@ public final class G7 {
     }
 
     public static G5 A01(Context context) {
-        C2199n1 c2199n1 = null;
+        C2219n1 c2219n1 = null;
         if (context == null) {
             return null;
         }
         Context applicationContext = context.getApplicationContext();
         if (C5C.A02 >= 17) {
-            c2199n1 = C2199n1.A01(applicationContext);
+            c2219n1 = C2219n1.A01(applicationContext);
         }
-        if (c2199n1 == null) {
-            return C2200n2.A00(applicationContext);
+        if (c2219n1 == null) {
+            return C2220n2.A00(applicationContext);
         }
-        return c2199n1;
+        return c2219n1;
     }
 
     private void A03() {
@@ -107,7 +107,7 @@ public final class G7 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private void A05() {
-        float f3;
+        float f2;
         if (C5C.A02 < 30 || this.A0C == null) {
             return;
         }
@@ -116,20 +116,20 @@ public final class G7 {
         if (A00 == candidateFrameRate) {
             return;
         }
-        boolean z3 = true;
+        boolean z6 = true;
         if (A00 != -1.0f) {
             float candidateFrameRate2 = this.A02;
             if (candidateFrameRate2 != -1.0f) {
                 if (this.A0E.A06() && this.A0E.A03() >= 5000000000L) {
-                    f3 = 0.02f;
+                    f2 = 0.02f;
                 } else {
-                    f3 = 1.0f;
+                    f2 = 1.0f;
                 }
                 float candidateFrameRate3 = this.A02;
-                if (Math.abs(A00 - candidateFrameRate3) < f3) {
-                    z3 = false;
+                if (Math.abs(A00 - candidateFrameRate3) < f2) {
+                    z6 = false;
                 }
-                if (!z3) {
+                if (!z6) {
                     this.A02 = A00;
                     A09(false);
                     return;
@@ -138,11 +138,11 @@ public final class G7 {
             }
         }
         if (A00 != -1.0f) {
-            z3 = true;
+            z6 = true;
         } else if (this.A0E.A01() < 30) {
-            z3 = false;
+            z6 = false;
         }
-        if (!z3) {
+        if (!z6) {
         }
     }
 
@@ -153,30 +153,30 @@ public final class G7 {
             this.A0A = (long) (1.0E9d / defaultDisplayRefreshRate);
             this.A0B = (this.A0A * 80) / 100;
         } else {
-            AbstractC06324g.A07(A02(36, 23, 19), A02(0, 36, 79));
-            this.A0A = b.f6382b;
-            this.A0B = b.f6382b;
+            AbstractC06524g.A07(A02(36, 23, 19), A02(0, 36, 79));
+            this.A0A = b.f7168b;
+            this.A0B = b.f7168b;
         }
     }
 
-    private void A09(boolean z3) {
+    private void A09(boolean z6) {
         if (C5C.A02 < 30 || this.A0C == null || this.A04 == Integer.MIN_VALUE) {
             return;
         }
-        float f3 = 0.0f;
+        float f2 = 0.0f;
         if (this.A0D && this.A02 != -1.0f) {
             float f9 = this.A02;
             float surfacePlaybackFrameRate = this.A01;
-            f3 = f9 * surfacePlaybackFrameRate;
+            f2 = f9 * surfacePlaybackFrameRate;
         }
-        if (!z3) {
+        if (!z6) {
             float surfacePlaybackFrameRate2 = this.A03;
-            if (surfacePlaybackFrameRate2 == f3) {
+            if (surfacePlaybackFrameRate2 == f2) {
                 return;
             }
         }
-        this.A03 = f3;
-        G3.A02(this.A0C, f3);
+        this.A03 = f2;
+        G3.A02(this.A0C, f2);
     }
 
     public static boolean A0A(long j6, long j9) {
@@ -200,11 +200,11 @@ public final class G7 {
         long adjustedReleaseTimeNs2 = this.A05;
         this.A08 = adjustedReleaseTimeNs2;
         this.A09 = j9;
-        if (this.A0G == null || this.A0A == b.f6382b) {
+        if (this.A0G == null || this.A0A == b.f7168b) {
             return j9;
         }
         long j11 = this.A0G.A04;
-        if (j11 == b.f6382b) {
+        if (j11 == b.f7168b) {
             return j9;
         }
         long sampledVsyncTimeNs = A00(j9, j11, this.A0A);
@@ -220,7 +220,7 @@ public final class G7 {
         this.A0D = true;
         A04();
         if (this.A0F != null) {
-            ((G6) AbstractC06243y.A01(this.A0G)).A06();
+            ((G6) AbstractC06443y.A01(this.A0G)).A06();
             this.A0F.AHX(new G4() { // from class: com.facebook.ads.redexgen.X.n3
                 @Override // com.instagram.common.viewpoint.core.G4
                 public final void ADd(Display display) {
@@ -235,13 +235,13 @@ public final class G7 {
         this.A0D = false;
         if (this.A0F != null) {
             this.A0F.AKW();
-            ((G6) AbstractC06243y.A01(this.A0G)).A07();
+            ((G6) AbstractC06443y.A01(this.A0G)).A07();
         }
         A03();
     }
 
-    public final void A0F(float f3) {
-        this.A00 = f3;
+    public final void A0F(float f2) {
+        this.A00 = f2;
         this.A0E.A04();
         A05();
     }

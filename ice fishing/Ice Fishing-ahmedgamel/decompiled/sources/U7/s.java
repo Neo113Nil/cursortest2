@@ -6,13 +6,13 @@ import S7.y0;
 public final class s {
 
     /* renamed from: a, reason: collision with root package name */
-    public final y0 f3265a;
+    public final y0 f3388a;
 
     public s(y0 y0Var) {
-        this.f3265a = y0Var;
+        this.f3388a = y0Var;
     }
 
     public final String toString() {
-        return "WaiterEB(" + this.f3265a + ')';
+        return "WaiterEB(" + this.f3388a + ')';
     }
 }

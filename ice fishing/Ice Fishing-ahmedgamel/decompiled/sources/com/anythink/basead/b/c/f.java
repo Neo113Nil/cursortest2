@@ -8,27 +8,27 @@ import java.util.Map;
 final class f extends com.anythink.core.common.res.image.b {
 
     /* renamed from: a, reason: collision with root package name */
-    private String f5953a;
+    private String f6739a;
 
     /* renamed from: b, reason: collision with root package name */
-    private boolean f5954b;
+    private boolean f6740b;
 
     /* renamed from: c, reason: collision with root package name */
-    private String f5955c;
+    private String f6741c;
 
     /* renamed from: k, reason: collision with root package name */
-    private int f5956k;
+    private int f6742k;
 
     /* renamed from: l, reason: collision with root package name */
-    private w f5957l;
+    private w f6743l;
 
-    public f(String str, boolean z3, w wVar, String str2) {
+    public f(String str, boolean z6, w wVar, String str2) {
         super(str2);
-        this.f5957l = wVar;
-        this.f5953a = str;
-        this.f5954b = z3;
-        this.f5955c = wVar.v();
-        this.f5956k = wVar.b();
+        this.f6743l = wVar;
+        this.f6739a = str;
+        this.f6740b = z6;
+        this.f6741c = wVar.v();
+        this.f6742k = wVar.b();
     }
 
     @Override // com.anythink.core.common.res.image.b
@@ -42,18 +42,18 @@ final class f extends com.anythink.core.common.res.image.b {
 
     @Override // com.anythink.core.common.res.image.b
     public final void c() {
-        e.a().a(this.f16239d, 100);
+        e.a().a(this.f17026d, 100);
     }
 
     @Override // com.anythink.core.common.res.image.b
     public final boolean a(InputStream inputStream) {
         com.anythink.basead.b.f.a();
-        return com.anythink.basead.b.f.a(this.f16239d, inputStream, 1);
+        return com.anythink.basead.b.f.a(this.f17026d, inputStream, 1);
     }
 
     @Override // com.anythink.core.common.res.image.b
     public final void a(com.anythink.core.common.v.b.d dVar) {
-        if (this.f5954b) {
+        if (this.f6740b) {
             com.anythink.core.common.v.b.b.a().a(dVar, 5);
         } else {
             com.anythink.core.common.v.b.b.a().a(dVar, 4);
@@ -62,6 +62,6 @@ final class f extends com.anythink.core.common.res.image.b {
 
     @Override // com.anythink.core.common.res.image.b
     public final void a(String str, String str2) {
-        e.a().a(this.f16239d, com.anythink.basead.d.g.a(str, str2));
+        e.a().a(this.f17026d, com.anythink.basead.d.g.a(str, str2));
     }
 }

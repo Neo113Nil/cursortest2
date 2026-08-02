@@ -6,25 +6,25 @@ import java.util.ArrayList;
 public final class TN {
 
     /* renamed from: a, reason: collision with root package name */
-    public final ArrayList f27732a;
+    public final ArrayList f28515a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f27733b;
+    public final int f28516b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final long f27734c;
+    public final long f28517c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final KQ f27735d;
+    public final NQ f28518d;
 
-    public /* synthetic */ TN(ArrayList arrayList, KQ kq, int i, long j6) {
-        this.f27732a = arrayList;
-        this.f27735d = kq;
-        this.f27733b = i;
-        this.f27734c = j6;
+    public /* synthetic */ TN(ArrayList arrayList, NQ nq, int i, long j6) {
+        this.f28515a = arrayList;
+        this.f28518d = nq;
+        this.f28516b = i;
+        this.f28517c = j6;
     }
 
     public final /* synthetic */ long a() {
-        return this.f27734c;
+        return this.f28517c;
     }
 }

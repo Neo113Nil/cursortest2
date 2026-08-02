@@ -16,19 +16,19 @@ import java.util.Map;
 public final class b implements ATNativeMaterial {
 
     /* renamed from: a, reason: collision with root package name */
-    CustomNativeAd f22743a;
+    CustomNativeAd f23530a;
 
     /* renamed from: b, reason: collision with root package name */
-    boolean f22744b;
+    boolean f23531b;
 
-    public b(CustomNativeAd customNativeAd, boolean z3) {
-        this.f22743a = customNativeAd;
-        this.f22744b = z3;
+    public b(CustomNativeAd customNativeAd, boolean z6) {
+        this.f23530a = customNativeAd;
+        this.f23531b = z6;
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final ATAdAppInfo getAdAppInfo() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getAdAppInfo();
         }
@@ -37,19 +37,19 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getAdChoiceIconUrl() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         return customNativeAd != null ? customNativeAd.getAdChoiceIconUrl() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getAdFrom() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         return customNativeAd != null ? customNativeAd.getAdFrom() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final View getAdIconView() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getAdIconView();
         }
@@ -58,7 +58,7 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final Bitmap getAdLogo() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getAdLogo();
         }
@@ -67,7 +67,7 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final View getAdLogoView() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getAdLogoView();
         }
@@ -77,7 +77,7 @@ public final class b implements ATNativeMaterial {
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final View getAdMediaView(Object... objArr) {
         CustomNativeAd customNativeAd;
-        if (this.f22744b || this.f22743a.isNativeExpress() || (customNativeAd = this.f22743a) == null) {
+        if (this.f23531b || this.f23530a.isNativeExpress() || (customNativeAd = this.f23530a) == null) {
             return null;
         }
         return customNativeAd.getAdMediaView(objArr);
@@ -85,13 +85,13 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getAdType() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         return customNativeAd != null ? customNativeAd.getAdType() : "0";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final IATAdvertiserInfoOperate getAdvertiserInfoOperate() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getAdvertiserInfoOperate();
         }
@@ -100,13 +100,13 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getAdvertiserName() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         return customNativeAd != null ? customNativeAd.getAdvertiserName() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getAppCommentNum() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getAppCommentNum();
         }
@@ -115,7 +115,7 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final double getAppPrice() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getAppPrice();
         }
@@ -124,7 +124,7 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final View getCallToActionButton() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getCallToActionButton();
         }
@@ -133,25 +133,25 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getCallToActionText() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         return customNativeAd != null ? customNativeAd.getCallToActionText() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getDescriptionText() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         return customNativeAd != null ? customNativeAd.getDescriptionText() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getDomain() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         return customNativeAd != null ? customNativeAd.getDomain() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getDownloadProgress() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getDownloadProgress();
         }
@@ -160,7 +160,7 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getDownloadStatus() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getDownloadStatus();
         }
@@ -169,13 +169,13 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getIconImageUrl() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         return customNativeAd != null ? customNativeAd.getIconImageUrl() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final List<String> getImageUrlList() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getImageUrlList();
         }
@@ -184,7 +184,7 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getMainImageHeight() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getMainImageHeight();
         }
@@ -193,13 +193,13 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getMainImageUrl() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         return customNativeAd != null ? customNativeAd.getMainImageUrl() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getMainImageWidth() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getMainImageWidth();
         }
@@ -208,7 +208,7 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getNativeAdInteractionType() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getNativeAdInteractionType();
         }
@@ -217,7 +217,7 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final ATCustomVideo getNativeCustomVideo() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getNativeCustomVideo();
         }
@@ -226,7 +226,7 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getNativeExpressHeight() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getNativeExpressHeight();
         }
@@ -235,7 +235,7 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getNativeExpressWidth() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getNativeExpressWidth();
         }
@@ -244,7 +244,7 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getNativeType() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getNativeType();
         }
@@ -253,7 +253,7 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final Map<String, Object> getNetworkInfoMap() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getNetworkInfoMap();
         }
@@ -262,7 +262,7 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final View getRoateView(Map<String, Object> map, ATCompViewListener aTCompViewListener) {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getRoateView(map, aTCompViewListener);
         }
@@ -270,42 +270,42 @@ public final class b implements ATNativeMaterial {
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
-    public final View getShakeView(int i, int i6, ATShakeViewListener aTShakeViewListener) {
-        CustomNativeAd customNativeAd = this.f22743a;
+    public final View getShakeView(int i, int i4, ATShakeViewListener aTShakeViewListener) {
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
-            return customNativeAd.getShakeView(i, i6, aTShakeViewListener);
+            return customNativeAd.getShakeView(i, i4, aTShakeViewListener);
         }
         return null;
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
-    public final View getSlideView(int i, int i6, int i9, ATShakeViewListener aTShakeViewListener) {
-        CustomNativeAd customNativeAd = this.f22743a;
+    public final View getSlideView(int i, int i4, int i6, ATShakeViewListener aTShakeViewListener) {
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
-            return customNativeAd.getSlideView(i, i6, i9, aTShakeViewListener);
+            return customNativeAd.getSlideView(i, i4, i6, aTShakeViewListener);
         }
         return null;
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final Double getStarRating() {
-        CustomNativeAd customNativeAd = this.f22743a;
-        double d2 = 0.0d;
+        CustomNativeAd customNativeAd = this.f23530a;
+        double d9 = 0.0d;
         if (customNativeAd != null && customNativeAd.getStarRating() != null) {
-            d2 = this.f22743a.getStarRating().doubleValue();
+            d9 = this.f23530a.getStarRating().doubleValue();
         }
-        return Double.valueOf(d2);
+        return Double.valueOf(d9);
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getTitle() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         return customNativeAd != null ? customNativeAd.getTitle() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final double getVideoDuration() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getVideoDuration();
         }
@@ -314,7 +314,7 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getVideoHeight() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getVideoHeight();
         }
@@ -323,18 +323,18 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final double getVideoProgress() {
-        return this.f22743a.getVideoProgress();
+        return this.f23530a.getVideoProgress();
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getVideoUrl() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         return customNativeAd != null ? customNativeAd.getVideoUrl() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getVideoWidth() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         if (customNativeAd != null) {
             return customNativeAd.getVideoWidth();
         }
@@ -343,19 +343,19 @@ public final class b implements ATNativeMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getWarning() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         return customNativeAd != null ? customNativeAd.getWarning() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final boolean supportSetPermissionClickViewList() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         return customNativeAd != null && customNativeAd.supportSetPermissionClickViewList();
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final boolean supportSetPrivacyClickViewList() {
-        CustomNativeAd customNativeAd = this.f22743a;
+        CustomNativeAd customNativeAd = this.f23530a;
         return customNativeAd != null && customNativeAd.supportSetPrivacyClickViewList();
     }
 }

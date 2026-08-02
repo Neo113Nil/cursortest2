@@ -4,13 +4,13 @@ package l6;
 public final class b implements f {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final b f38920a = new b();
+    public static final b f38988a = new b();
 
     /* renamed from: b, reason: collision with root package name */
-    public static final a f38921b = new a();
+    public static final a f38989b = new a();
 
     @Override // l6.f
     public final e a() {
-        return f38921b;
+        return f38989b;
     }
 }

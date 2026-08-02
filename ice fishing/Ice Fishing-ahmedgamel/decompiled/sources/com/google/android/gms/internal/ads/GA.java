@@ -9,24 +9,24 @@ import java.util.Objects;
 public final class GA implements ServiceConnection {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ C2598Hq f24940n;
+    public final /* synthetic */ C2618Hq f25730n;
 
-    public /* synthetic */ GA(C2598Hq c2598Hq) {
-        Objects.requireNonNull(c2598Hq);
-        this.f24940n = c2598Hq;
+    public /* synthetic */ GA(C2618Hq c2618Hq) {
+        Objects.requireNonNull(c2618Hq);
+        this.f25730n = c2618Hq;
     }
 
     @Override // android.content.ServiceConnection
     public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-        C2598Hq c2598Hq = this.f24940n;
-        ((C3933tE) c2598Hq.f25392w).a("LmdServiceConnectionManager.onServiceConnected(%s)", componentName);
-        c2598Hq.a(new RunnableC3048cq(19, this, iBinder));
+        C2618Hq c2618Hq = this.f25730n;
+        ((C3956tE) c2618Hq.f26135w).a("LmdServiceConnectionManager.onServiceConnected(%s)", componentName);
+        c2618Hq.a(new RunnableC3071cq(19, this, iBinder));
     }
 
     @Override // android.content.ServiceConnection
     public final void onServiceDisconnected(ComponentName componentName) {
-        C2598Hq c2598Hq = this.f24940n;
-        ((C3933tE) c2598Hq.f25392w).a("LmdServiceConnectionManager.onServiceDisconnected(%s)", componentName);
-        c2598Hq.a(new RunnableC3807qw(9, this));
+        C2618Hq c2618Hq = this.f25730n;
+        ((C3956tE) c2618Hq.f26135w).a("LmdServiceConnectionManager.onServiceDisconnected(%s)", componentName);
+        c2618Hq.a(new RunnableC3830qw(9, this));
     }
 }

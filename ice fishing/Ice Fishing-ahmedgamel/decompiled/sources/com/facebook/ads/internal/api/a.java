@@ -7,10 +7,10 @@ import android.view.ViewGroup;
 public final class a implements AdComponentViewParentApi {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ AdComponentFrameLayout f23502n;
+    public final /* synthetic */ AdComponentFrameLayout f24287n;
 
     public a(AdComponentFrameLayout adComponentFrameLayout) {
-        this.f23502n = adComponentFrameLayout;
+        this.f24287n = adComponentFrameLayout;
     }
 
     @Override // com.facebook.ads.internal.api.AdComponentView
@@ -34,8 +34,8 @@ public final class a implements AdComponentViewParentApi {
     }
 
     @Override // com.facebook.ads.internal.api.AdComponentViewParentApi
-    public final void onMeasure(int i, int i6) {
-        super/*android.widget.FrameLayout*/.onMeasure(i, i6);
+    public final void onMeasure(int i, int i4) {
+        super/*android.widget.FrameLayout*/.onMeasure(i, i4);
     }
 
     @Override // com.facebook.ads.internal.api.AdComponentViewParentApi
@@ -44,8 +44,8 @@ public final class a implements AdComponentViewParentApi {
     }
 
     @Override // com.facebook.ads.internal.api.AdComponentView
-    public final void onWindowFocusChanged(boolean z3) {
-        super/*android.view.View*/.onWindowFocusChanged(z3);
+    public final void onWindowFocusChanged(boolean z6) {
+        super/*android.view.View*/.onWindowFocusChanged(z6);
     }
 
     @Override // com.facebook.ads.internal.api.AdComponentView
@@ -54,8 +54,8 @@ public final class a implements AdComponentViewParentApi {
     }
 
     @Override // com.facebook.ads.internal.api.AdComponentViewParentApi
-    public final void setMeasuredDimension(int i, int i6) {
-        super/*android.view.View*/.setMeasuredDimension(i, i6);
+    public final void setMeasuredDimension(int i, int i4) {
+        super/*android.view.View*/.setMeasuredDimension(i, i4);
     }
 
     @Override // com.facebook.ads.internal.api.AdComponentView
@@ -74,7 +74,7 @@ public final class a implements AdComponentViewParentApi {
     }
 
     @Override // com.facebook.ads.internal.api.AdComponentView
-    public final void addView(View view, int i, int i6) {
-        super/*android.view.ViewGroup*/.addView(view, i, i6);
+    public final void addView(View view, int i, int i4) {
+        super/*android.view.ViewGroup*/.addView(view, i, i4);
     }
 }

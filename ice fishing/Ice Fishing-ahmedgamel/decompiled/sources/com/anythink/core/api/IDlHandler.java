@@ -23,7 +23,7 @@ public interface IDlHandler {
 
     void handleOfferClick(Context context, x xVar, w wVar, String str, String str2, Runnable runnable, b bVar);
 
-    void onAppForegroundStatusChanged(boolean z3);
+    void onAppForegroundStatusChanged(boolean z6);
 
     void onApplicationBoot();
 

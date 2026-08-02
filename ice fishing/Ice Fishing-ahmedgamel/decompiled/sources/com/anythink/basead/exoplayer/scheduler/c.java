@@ -4,7 +4,7 @@ package com.anythink.basead.exoplayer.scheduler;
 public interface c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final boolean f8747a = false;
+    public static final boolean f9533a = false;
 
     boolean a();
 

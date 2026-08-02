@@ -1,6 +1,6 @@
 package com.anythink.network.admob;
 
-import A2.b;
+import C2.b;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -16,72 +16,72 @@ import com.anythink.nativead.unitgroup.api.CustomNativeAd;
 import com.google.android.gms.ads.nativead.MediaView;
 import com.google.android.gms.ads.nativead.NativeAd;
 import com.google.android.gms.ads.nativead.NativeAdView;
-import com.google.android.gms.internal.ads.C3090de;
-import com.google.android.gms.internal.ads.C3462kb;
+import com.google.android.gms.internal.ads.C3113de;
+import com.google.android.gms.internal.ads.C3485kb;
 import com.google.android.gms.internal.ads.I2;
-import com.google.android.gms.internal.ads.InterfaceC4055vb;
+import com.google.android.gms.internal.ads.InterfaceC4078vb;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import k2.c;
-import k2.d;
-import k2.e;
-import k2.n;
-import k2.s;
-import k2.u;
-import k2.v;
-import k2.w;
-import l2.C4657a;
-import q2.E0;
-import q2.F0;
-import q2.G;
-import q2.N0;
-import q2.Z0;
-import v2.i;
+import m2.c;
+import m2.d;
+import m2.e;
+import m2.n;
+import m2.s;
+import m2.u;
+import m2.v;
+import m2.w;
+import n2.C4766a;
+import s2.E0;
+import s2.F0;
+import s2.G;
+import s2.N0;
+import s2.Z0;
+import x2.i;
 
 /* loaded from: classes.dex */
 public class GoogleAdATNativeAd extends CustomNativeAd implements b {
 
     /* renamed from: a, reason: collision with root package name */
-    Context f22936a;
+    Context f23723a;
 
     /* renamed from: b, reason: collision with root package name */
-    LoadCallbackListener f22937b;
+    LoadCallbackListener f23724b;
 
     /* renamed from: c, reason: collision with root package name */
-    String f22938c;
+    String f23725c;
 
     /* renamed from: d, reason: collision with root package name */
-    MediaView f22939d;
+    MediaView f23726d;
 
     /* renamed from: e, reason: collision with root package name */
-    NativeAd f22940e;
+    NativeAd f23727e;
 
     /* renamed from: f, reason: collision with root package name */
-    int f22941f;
+    int f23728f;
 
     /* renamed from: g, reason: collision with root package name */
-    NativeAdView f22942g;
+    NativeAdView f23729g;
 
     /* renamed from: h, reason: collision with root package name */
-    boolean f22943h;
+    boolean f23730h;
     boolean i;
 
     /* renamed from: j, reason: collision with root package name */
-    boolean f22944j;
+    boolean f23731j;
 
     /* renamed from: k, reason: collision with root package name */
-    boolean f22945k;
+    boolean f23732k;
 
     /* renamed from: l, reason: collision with root package name */
-    boolean f22946l;
+    boolean f23733l;
 
     /* renamed from: m, reason: collision with root package name */
-    boolean f22947m;
+    boolean f23734m;
 
     /* renamed from: n, reason: collision with root package name */
-    private Map<String, Object> f22948n;
+    private Map<String, Object> f23735n;
 
     public interface LoadCallbackListener {
         void onFail(String str, String str2);
@@ -90,21 +90,21 @@ public class GoogleAdATNativeAd extends CustomNativeAd implements b {
     }
 
     public GoogleAdATNativeAd(Context context, String str, LoadCallbackListener loadCallbackListener, Map<String, Object> map) {
-        this.f22941f = 0;
-        this.f22948n = new HashMap();
-        this.f22943h = false;
+        this.f23728f = 0;
+        this.f23735n = new HashMap();
+        this.f23730h = false;
         this.i = false;
-        this.f22944j = false;
-        this.f22945k = false;
-        this.f22946l = false;
-        this.f22936a = context.getApplicationContext();
-        this.f22937b = loadCallbackListener;
-        this.f22938c = str;
+        this.f23731j = false;
+        this.f23732k = false;
+        this.f23733l = false;
+        this.f23723a = context.getApplicationContext();
+        this.f23724b = loadCallbackListener;
+        this.f23725c = str;
     }
 
     private NativeAdView a() {
-        NativeAdView nativeAdView = new NativeAdView(this.f22936a);
-        nativeAdView.setNativeAd(this.f22940e);
+        NativeAdView nativeAdView = new NativeAdView(this.f23723a);
+        nativeAdView.setNativeAd(this.f23727e);
         return nativeAdView;
     }
 
@@ -114,109 +114,109 @@ public class GoogleAdATNativeAd extends CustomNativeAd implements b {
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.core.api.BaseAd
     public void destroy() {
-        NativeAdView nativeAdView = this.f22942g;
+        NativeAdView nativeAdView = this.f23729g;
         if (nativeAdView != null) {
-            InterfaceC4055vb interfaceC4055vb = nativeAdView.f23596u;
-            if (interfaceC4055vb != null) {
+            InterfaceC4078vb interfaceC4078vb = nativeAdView.f24376u;
+            if (interfaceC4078vb != null) {
                 try {
-                    interfaceC4055vb.o();
+                    interfaceC4078vb.o();
                 } catch (RemoteException e9) {
                     i.d("Unable to destroy native ad view", e9);
                 }
             }
-            this.f22942g = null;
+            this.f23729g = null;
         }
-        this.f22939d = null;
-        this.f22937b = null;
-        this.f22936a = null;
-        NativeAd nativeAd = this.f22940e;
+        this.f23726d = null;
+        this.f23724b = null;
+        this.f23723a = null;
+        NativeAd nativeAd = this.f23727e;
         if (nativeAd != null) {
             nativeAd.a();
-            this.f22940e = null;
+            this.f23727e = null;
         }
     }
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.nativead.unitgroup.a, com.anythink.core.api.IATThirdPartyMaterial
     public View getAdMediaView(Object... objArr) {
         v a9;
-        if (this.f22942g == null) {
-            this.f22942g = a();
+        if (this.f23729g == null) {
+            this.f23729g = a();
         }
-        if (this.f22939d == null) {
-            MediaView mediaView = new MediaView(this.f22936a);
-            this.f22939d = mediaView;
+        if (this.f23726d == null) {
+            MediaView mediaView = new MediaView(this.f23723a);
+            this.f23726d = mediaView;
             mediaView.setImageScaleType(ImageView.ScaleType.FIT_CENTER);
-            NativeAd nativeAd = this.f22940e;
+            NativeAd nativeAd = this.f23727e;
             if (nativeAd != null) {
-                N0 h9 = nativeAd.h();
-                this.f22939d.setMediaContent(h9);
-                if (h9 != null && (a9 = h9.a()) != null) {
+                N0 h3 = nativeAd.h();
+                this.f23726d.setMediaContent(h3);
+                if (h3 != null && (a9 = h3.a()) != null) {
                     a9.a(new u() { // from class: com.anythink.network.admob.GoogleAdATNativeAd.2
-                        @Override // k2.u
+                        @Override // m2.u
                         public final void onVideoEnd() {
                             GoogleAdATNativeAd.this.notifyAdVideoEnd();
                         }
 
-                        @Override // k2.u
-                        public final void onVideoMute(boolean z3) {
+                        @Override // m2.u
+                        public final void onVideoMute(boolean z6) {
                         }
 
-                        @Override // k2.u
+                        @Override // m2.u
                         public final void onVideoPause() {
                         }
 
-                        @Override // k2.u
+                        @Override // m2.u
                         public final void onVideoPlay() {
                         }
 
-                        @Override // k2.u
+                        @Override // m2.u
                         public final void onVideoStart() {
                             GoogleAdATNativeAd.this.notifyAdVideoStart();
                         }
                     });
                 }
-                this.f22942g.setMediaView(this.f22939d);
-                this.f22942g.setNativeAd(this.f22940e);
+                this.f23729g.setMediaView(this.f23726d);
+                this.f23729g.setNativeAd(this.f23727e);
             }
         }
-        return this.f22939d;
+        return this.f23726d;
     }
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.core.api.BaseAd
     public ViewGroup getCustomAdContainer() {
         NativeAdView a9 = a();
-        this.f22942g = a9;
+        this.f23729g = a9;
         return a9;
     }
 
     public void loadAd(Context context, Map<String, Object> map, Map<String, Object> map2) {
         d dVar;
         I2 i22 = new I2();
-        i22.f25433a = true;
+        i22.f26176a = true;
         w wVar = new w(i22);
-        int i = this.f22941f;
-        d dVar2 = new d(context, this.f22938c);
+        int i = this.f23728f;
+        d dVar2 = new d(context, this.f23725c);
         dVar2.b(this);
         dVar2.c(new c() { // from class: com.anythink.network.admob.GoogleAdATNativeAd.1
-            @Override // k2.c
+            @Override // m2.c
             public final void onAdClicked() {
                 GoogleAdATNativeAd.this.notifyAdClicked();
             }
 
-            @Override // k2.c
+            @Override // m2.c
             public final void onAdFailedToLoad(n nVar) {
-                LoadCallbackListener loadCallbackListener = GoogleAdATNativeAd.this.f22937b;
+                LoadCallbackListener loadCallbackListener = GoogleAdATNativeAd.this.f23724b;
                 if (loadCallbackListener != null) {
-                    loadCallbackListener.onFail(String.valueOf(nVar.f38568a), nVar.f38569b);
+                    loadCallbackListener.onFail(String.valueOf(nVar.f39357a), nVar.f39358b);
                 }
-                GoogleAdATNativeAd.this.f22937b = null;
+                GoogleAdATNativeAd.this.f23724b = null;
             }
 
-            @Override // k2.c
+            @Override // m2.c
             public final void onAdImpression() {
                 try {
-                    if (GoogleAdATNativeAd.this.f22940e != null) {
-                        AdMobATInitManager.getInstance().a(GoogleAdATNativeAd.this.getShowId(), GoogleAdATNativeAd.this.f22940e);
+                    if (GoogleAdATNativeAd.this.f23727e != null) {
+                        AdMobATInitManager.getInstance().a(GoogleAdATNativeAd.this.getShowId(), GoogleAdATNativeAd.this.f23727e);
                     }
                 } catch (Throwable unused) {
                 }
@@ -224,19 +224,19 @@ public class GoogleAdATNativeAd extends CustomNativeAd implements b {
             }
         });
         try {
-            G g4 = dVar2.f38581b;
+            G g9 = dVar2.f39370b;
             try {
                 Z0 z02 = new Z0(wVar);
                 dVar = dVar2;
                 try {
-                    g4.J3(new C3462kb(4, false, -1, false, 1, z02, false, i, 0, false, 1 - 1));
+                    g9.H3(new C3485kb(4, false, -1, false, 1, z02, false, i, 0, false, 1 - 1));
                 } catch (RemoteException e9) {
                     e = e9;
                     i.g("Failed to specify native ad options", e);
                     e a9 = dVar.a();
-                    C4657a a10 = AdMobATInitManager.getInstance().a(context, map, map2, k2.b.NATIVE);
+                    C4766a a10 = AdMobATInitManager.getInstance().a(context, map, map2, m2.b.NATIVE);
                     a10.getClass();
-                    a9.a(new F0((E0) a10.f1720u));
+                    a9.a(new F0((E0) a10.f67u));
                 }
             } catch (RemoteException e10) {
                 e = e10;
@@ -247,53 +247,53 @@ public class GoogleAdATNativeAd extends CustomNativeAd implements b {
             dVar = dVar2;
         }
         e a92 = dVar.a();
-        C4657a a102 = AdMobATInitManager.getInstance().a(context, map, map2, k2.b.NATIVE);
+        C4766a a102 = AdMobATInitManager.getInstance().a(context, map, map2, m2.b.NATIVE);
         a102.getClass();
-        a92.a(new F0((E0) a102.f1720u));
+        a92.a(new F0((E0) a102.f67u));
     }
 
-    @Override // A2.b
+    @Override // C2.b
     public void onNativeAdLoaded(NativeAd nativeAd) {
-        this.f22940e = nativeAd;
+        this.f23727e = nativeAd;
         s j6 = nativeAd.j();
         if (j6 != null) {
-            this.f22948n.put("response_info", j6);
-            setNetworkInfoMap(this.f22948n);
+            this.f23735n.put("response_info", j6);
+            setNetworkInfoMap(this.f23735n);
         }
-        setTitle(this.f22940e.e());
-        setDescriptionText(this.f22940e.c());
-        NativeAd nativeAd2 = this.f22940e;
-        if (nativeAd2 != null && nativeAd2.f() != null && this.f22940e.f().f29788c != null) {
-            setIconImageUrl(this.f22940e.f().f29788c.toString());
+        setTitle(this.f23727e.e());
+        setDescriptionText(this.f23727e.c());
+        NativeAd nativeAd2 = this.f23727e;
+        if (nativeAd2 != null && nativeAd2.f() != null && this.f23727e.f().f30561c != null) {
+            setIconImageUrl(this.f23727e.f().f30561c.toString());
         }
-        NativeAd nativeAd3 = this.f22940e;
-        if (nativeAd3 != null && nativeAd3.g() != null && this.f22940e.g().size() > 0 && ((C3090de) this.f22940e.g().get(0)).f29788c != null) {
-            C3090de c3090de = (C3090de) this.f22940e.g().get(0);
-            Drawable drawable = c3090de.f29787b;
-            Uri uri = c3090de.f29788c;
+        NativeAd nativeAd3 = this.f23727e;
+        if (nativeAd3 != null && nativeAd3.g() != null && this.f23727e.g().size() > 0 && ((C3113de) this.f23727e.g().get(0)).f30561c != null) {
+            C3113de c3113de = (C3113de) this.f23727e.g().get(0);
+            Drawable drawable = c3113de.f30560b;
+            Uri uri = c3113de.f30561c;
             if (drawable != null) {
                 setMainImageUrl(uri.toString());
-                Drawable drawable2 = c3090de.f29787b;
+                Drawable drawable2 = c3113de.f30560b;
                 setMainImageWidth(drawable2.getIntrinsicWidth());
                 setMainImageHeight(drawable2.getIntrinsicHeight());
             } else {
                 setMainImageUrl(uri.toString());
             }
         }
-        setCallToActionText(this.f22940e.d());
-        setStarRating(Double.valueOf(this.f22940e.k() == null ? 5.0d : this.f22940e.k().doubleValue()));
-        setAdFrom(this.f22940e.l());
-        N0 h9 = this.f22940e.h();
-        if (h9 == null || !h9.b()) {
+        setCallToActionText(this.f23727e.d());
+        setStarRating(Double.valueOf(this.f23727e.k() == null ? 5.0d : this.f23727e.k().doubleValue()));
+        setAdFrom(this.f23727e.l());
+        N0 h3 = this.f23727e.h();
+        if (h3 == null || !h3.b()) {
             this.mAdSourceType = "2";
         } else {
             this.mAdSourceType = "1";
         }
-        LoadCallbackListener loadCallbackListener = this.f22937b;
+        LoadCallbackListener loadCallbackListener = this.f23724b;
         if (loadCallbackListener != null) {
             loadCallbackListener.onSuccess(this);
         }
-        this.f22937b = null;
+        this.f23724b = null;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:22:0x0064 A[SYNTHETIC] */
@@ -315,81 +315,81 @@ public class GoogleAdATNativeAd extends CustomNativeAd implements b {
             if (clickViewList != null && clickViewList.size() > 0) {
                 for (View view2 : clickViewList) {
                     if (titleView == null) {
-                        if ((view2 instanceof TextView) && TextUtils.equals(this.f22940e.e(), ((TextView) view2).getText())) {
-                            this.f22942g.setHeadlineView(view2);
+                        if ((view2 instanceof TextView) && TextUtils.equals(this.f23727e.e(), ((TextView) view2).getText())) {
+                            this.f23729g.setHeadlineView(view2);
                         }
                         if (descView != null) {
                         }
                     } else if (view2 == titleView) {
-                        this.f22942g.setHeadlineView(view2);
+                        this.f23729g.setHeadlineView(view2);
                     } else if (descView != null) {
-                        if ((view2 instanceof TextView) && TextUtils.equals(this.f22940e.c(), ((TextView) view2).getText())) {
-                            this.f22942g.setBodyView(view2);
+                        if ((view2 instanceof TextView) && TextUtils.equals(this.f23727e.c(), ((TextView) view2).getText())) {
+                            this.f23729g.setBodyView(view2);
                         }
                         if (ctaView != null) {
                         }
                     } else if (view2 == descView) {
-                        this.f22942g.setBodyView(view2);
+                        this.f23729g.setBodyView(view2);
                     } else if (ctaView != null) {
-                        if ((view2 instanceof TextView) && TextUtils.equals(this.f22940e.d(), ((TextView) view2).getText())) {
-                            this.f22942g.setCallToActionView(view2);
+                        if ((view2 instanceof TextView) && TextUtils.equals(this.f23727e.d(), ((TextView) view2).getText())) {
+                            this.f23729g.setCallToActionView(view2);
                         }
                         if (iconView == null) {
                         }
                         if (mainImageView != null) {
-                            this.f22942g.setImageView(view2);
+                            this.f23729g.setImageView(view2);
                         }
                     } else if (view2 == ctaView) {
-                        this.f22942g.setCallToActionView(view2);
+                        this.f23729g.setCallToActionView(view2);
                     } else if (iconView == null && view2 == iconView) {
-                        this.f22942g.setIconView(view2);
+                        this.f23729g.setIconView(view2);
                     } else if (mainImageView != null && view2 == mainImageView && (view2 instanceof ImageView)) {
-                        this.f22942g.setImageView(view2);
+                        this.f23729g.setImageView(view2);
                     }
                 }
                 return;
             }
-            this.f22943h = false;
+            this.f23730h = false;
             this.i = false;
-            this.f22944j = false;
-            this.f22945k = false;
-            this.f22946l = false;
+            this.f23731j = false;
+            this.f23732k = false;
+            this.f23733l = false;
             if (titleView != null) {
-                this.f22943h = true;
-                this.f22942g.setHeadlineView(titleView);
+                this.f23730h = true;
+                this.f23729g.setHeadlineView(titleView);
             }
             if (descView != null) {
                 this.i = true;
-                this.f22942g.setBodyView(descView);
+                this.f23729g.setBodyView(descView);
             }
             if (ctaView != null) {
-                this.f22944j = true;
-                this.f22942g.setCallToActionView(ctaView);
+                this.f23731j = true;
+                this.f23729g.setCallToActionView(ctaView);
             }
             if (iconView != null) {
-                this.f22946l = true;
-                this.f22942g.setIconView(iconView);
+                this.f23733l = true;
+                this.f23729g.setIconView(iconView);
             }
             if (mainImageView != null && (mainImageView instanceof ImageView)) {
-                this.f22945k = true;
-                this.f22942g.setImageView(mainImageView);
+                this.f23732k = true;
+                this.f23729g.setImageView(mainImageView);
             }
-            if (this.f22943h && this.i && this.f22944j && this.f22946l && this.f22945k) {
+            if (this.f23730h && this.i && this.f23731j && this.f23733l && this.f23732k) {
                 return;
             }
             ArrayList arrayList = new ArrayList();
-            a(arrayList, this.f22942g);
+            a(arrayList, this.f23729g);
             for (int i = 0; i < arrayList.size(); i++) {
                 View view3 = (View) arrayList.get(i);
-                if (!this.f22946l) {
-                    this.f22946l = true;
-                    this.f22942g.setIconView(view3);
+                if (!this.f23733l) {
+                    this.f23733l = true;
+                    this.f23729g.setIconView(view3);
                 } else {
-                    if (this.f22945k) {
+                    if (this.f23732k) {
                         return;
                     }
-                    this.f22945k = true;
-                    this.f22942g.setImageView(view3);
+                    this.f23732k = true;
+                    this.f23729g.setImageView(view3);
                 }
             }
         } catch (Throwable th) {
@@ -397,12 +397,12 @@ public class GoogleAdATNativeAd extends CustomNativeAd implements b {
         }
     }
 
-    public void setIsAutoPlay(boolean z3) {
-        this.f22947m = z3;
+    public void setIsAutoPlay(boolean z6) {
+        this.f23734m = z6;
     }
 
     private void a(List<View> list, View view) {
-        if ((view instanceof ViewGroup) && view != this.f22939d) {
+        if ((view instanceof ViewGroup) && view != this.f23726d) {
             ViewGroup viewGroup = (ViewGroup) view;
             for (int i = 0; i < viewGroup.getChildCount(); i++) {
                 a(list, viewGroup.getChildAt(i));
@@ -410,7 +410,7 @@ public class GoogleAdATNativeAd extends CustomNativeAd implements b {
             return;
         }
         if (view instanceof ImageView) {
-            if (this.f22946l && this.f22945k) {
+            if (this.f23733l && this.f23732k) {
                 return;
             }
             list.add(view);
@@ -418,23 +418,23 @@ public class GoogleAdATNativeAd extends CustomNativeAd implements b {
         }
         if ((view instanceof Button) || (view instanceof TextView)) {
             String charSequence = ((TextView) view).getText().toString();
-            NativeAd nativeAd = this.f22940e;
-            if (nativeAd == null || this.f22942g == null) {
+            NativeAd nativeAd = this.f23727e;
+            if (nativeAd == null || this.f23729g == null) {
                 return;
             }
-            if (!this.f22943h && charSequence.equals(nativeAd.e())) {
-                this.f22943h = true;
-                this.f22942g.setHeadlineView(view);
+            if (!this.f23730h && charSequence.equals(nativeAd.e())) {
+                this.f23730h = true;
+                this.f23729g.setHeadlineView(view);
             }
-            if (!this.i && charSequence.equals(this.f22940e.c())) {
+            if (!this.i && charSequence.equals(this.f23727e.c())) {
                 this.i = true;
-                this.f22942g.setBodyView(view);
+                this.f23729g.setBodyView(view);
             }
-            if (this.f22944j || !charSequence.equals(this.f22940e.d())) {
+            if (this.f23731j || !charSequence.equals(this.f23727e.d())) {
                 return;
             }
-            this.f22944j = true;
-            this.f22942g.setCallToActionView(view);
+            this.f23731j = true;
+            this.f23729g.setCallToActionView(view);
         }
     }
 
@@ -446,19 +446,19 @@ public class GoogleAdATNativeAd extends CustomNativeAd implements b {
         str.getClass();
         switch (str) {
             case "1":
-                this.f22941f = 1;
+                this.f23728f = 1;
                 break;
             case "2":
-                this.f22941f = 2;
+                this.f23728f = 2;
                 break;
             case "3":
-                this.f22941f = 3;
+                this.f23728f = 3;
                 break;
             case "4":
-                this.f22941f = 4;
+                this.f23728f = 4;
                 break;
             default:
-                this.f22941f = 0;
+                this.f23728f = 0;
                 break;
         }
     }

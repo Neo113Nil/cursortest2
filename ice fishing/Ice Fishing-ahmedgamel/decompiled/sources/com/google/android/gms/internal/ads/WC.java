@@ -10,10 +10,10 @@ import java.util.logging.Level;
 public abstract class WC {
 
     /* renamed from: a, reason: collision with root package name */
-    public static Boolean f28324a;
+    public static Boolean f29122a;
 
     public static byte a(long j6) {
-        AbstractC2772Sd.A((j6 >> 8) == 0, "out of range: %s", j6);
+        AbstractC2792Sd.A((j6 >> 8) == 0, "out of range: %s", j6);
         return (byte) j6;
     }
 
@@ -26,7 +26,7 @@ public abstract class WC {
             try {
                 bool = (Boolean) Class.forName("org.conscrypt.Conscrypt").getMethod("isBoringSslFIPSBuild", new Class[0]).invoke(null, new Object[0]);
             } catch (Exception unused) {
-                HF.f25248a.logp(Level.INFO, "com.google.crypto.tink.config.internal.TinkFipsUtil", "checkConscryptIsAvailableAndUsesFipsBoringSsl", "Conscrypt is not available or does not support checking for FIPS build.");
+                HF.f26020a.logp(Level.INFO, "com.google.crypto.tink.config.internal.TinkFipsUtil", "checkConscryptIsAvailableAndUsesFipsBoringSsl", "Conscrypt is not available or does not support checking for FIPS build.");
                 bool = Boolean.FALSE;
             }
             if (bool.booleanValue()) {
@@ -45,14 +45,14 @@ public abstract class WC {
         byte[] bArr2 = new byte[16];
         int i = 0;
         while (i < 16) {
-            int i6 = i + 1;
+            int i4 = i + 1;
             byte b9 = bArr[i];
             byte b10 = (byte) ((b9 + b9) & 254);
             bArr2[i] = b10;
             if (i < 15) {
-                bArr2[i] = (byte) (((bArr[i6] >> 7) & 1) | b10);
+                bArr2[i] = (byte) (((bArr[i4] >> 7) & 1) | b10);
             }
-            i = i6;
+            i = i4;
         }
         bArr2[15] = (byte) (((byte) ((bArr[0] >> 7) & 135)) ^ bArr2[15]);
         return bArr2;
@@ -84,11 +84,11 @@ public abstract class WC {
                 throw new IllegalArgumentException("Has a new type of ByteString been created? Found ".concat(String.valueOf(jk.getClass())));
             }
             CL cl = (CL) jk;
-            g(cl.f24104w, arrayDeque);
-            g(cl.f24105x, arrayDeque);
+            g(cl.f24867w, arrayDeque);
+            g(cl.f24868x, arrayDeque);
             return;
         }
-        int binarySearch = Arrays.binarySearch(CL.f24102A, jk.f());
+        int binarySearch = Arrays.binarySearch(CL.f24865A, jk.f());
         if (binarySearch < 0) {
             binarySearch = (-(binarySearch + 1)) - 1;
         }
@@ -104,7 +104,7 @@ public abstract class WC {
         }
         CL cl2 = new CL(jk2, jk);
         while (!arrayDeque.isEmpty()) {
-            int binarySearch2 = Arrays.binarySearch(CL.f24102A, cl2.f24103v);
+            int binarySearch2 = Arrays.binarySearch(CL.f24865A, cl2.f24866v);
             if (binarySearch2 < 0) {
                 binarySearch2 = (-(binarySearch2 + 1)) - 1;
             }
@@ -121,7 +121,7 @@ public abstract class WC {
         return new LinkedHashMap(i < 3 ? i + 1 : i < 1073741824 ? (int) ((i / 0.75f) + 1.0f) : Integer.MAX_VALUE);
     }
 
-    public abstract AbstractC3825rE b();
+    public abstract AbstractC3848rE b();
 
     public abstract Integer e();
 }

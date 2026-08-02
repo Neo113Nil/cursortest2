@@ -23,7 +23,7 @@ public final class f {
         isSupported = Build.VERSION.SDK_INT >= 26;
     }
 
-    public final void setSupported$com_onesignal_core(boolean z3) {
-        isSupported = z3;
+    public final void setSupported$com_onesignal_core(boolean z6) {
+        isSupported = z6;
     }
 }

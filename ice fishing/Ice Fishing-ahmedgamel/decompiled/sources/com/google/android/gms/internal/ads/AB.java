@@ -9,13 +9,13 @@ import java.util.Set;
 public abstract class AB {
 
     /* renamed from: n, reason: collision with root package name */
-    public transient Set f23647n;
+    public transient Set f24427n;
 
     /* renamed from: u, reason: collision with root package name */
-    public transient Collection f23648u;
+    public transient Collection f24428u;
 
     /* renamed from: v, reason: collision with root package name */
-    public transient Map f23649v;
+    public transient Map f24429v;
 
     public abstract Collection a();
 
@@ -32,12 +32,12 @@ public abstract class AB {
     }
 
     public Map e() {
-        Map map = this.f23649v;
+        Map map = this.f24429v;
         if (map != null) {
             return map;
         }
         Map c9 = c();
-        this.f23649v = c9;
+        this.f24429v = c9;
         return c9;
     }
 

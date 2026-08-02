@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /* renamed from: com.facebook.ads.redexgen.X.8V, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public final class C8V implements InterfaceC2164mF {
+public final class C8V implements InterfaceC2184mF {
     public static byte[] A04;
     public final long A00;
     public final long A01;
@@ -18,38 +18,38 @@ public final class C8V implements InterfaceC2164mF {
     /* JADX WARN: Failed to parse debug info
     java.lang.ArrayIndexOutOfBoundsException
      */
-    public static C8V A00(long j6, long j9, HN hn, C06474v c06474v) {
+    public static C8V A00(long j6, long j9, HN hn, C06674v c06674v) {
         int A0I;
         long j10 = j9;
-        c06474v.A0g(10);
-        int A0C = c06474v.A0C();
+        c06674v.A0g(10);
+        int A0C = c06674v.A0C();
         if (A0C <= 0) {
             return null;
         }
         int i = hn.A03;
         long A0U = C5C.A0U(A0C, (i >= 32000 ? 1152 : 576) * 1000000, i);
-        int A0M = c06474v.A0M();
-        int A0M2 = c06474v.A0M();
-        int A0M3 = c06474v.A0M();
-        c06474v.A0g(2);
+        int A0M = c06674v.A0M();
+        int A0M2 = c06674v.A0M();
+        int A0M3 = c06674v.A0M();
+        c06674v.A0g(2);
         long j11 = j10 + hn.A02;
         long[] jArr = new long[A0M];
         long[] jArr2 = new long[A0M];
-        for (int i6 = 0; i6 < A0M; i6++) {
-            jArr[i6] = (i6 * A0U) / A0M;
-            jArr2[i6] = Math.max(j10, j11);
+        for (int i4 = 0; i4 < A0M; i4++) {
+            jArr[i4] = (i4 * A0U) / A0M;
+            jArr2[i4] = Math.max(j10, j11);
             switch (A0M3) {
                 case 1:
-                    A0I = c06474v.A0I();
+                    A0I = c06674v.A0I();
                     break;
                 case 2:
-                    A0I = c06474v.A0M();
+                    A0I = c06674v.A0M();
                     break;
                 case 3:
-                    A0I = c06474v.A0K();
+                    A0I = c06674v.A0K();
                     break;
                 case 4:
-                    A0I = c06474v.A0L();
+                    A0I = c06674v.A0L();
                     break;
                 default:
                     return null;
@@ -57,15 +57,15 @@ public final class C8V implements InterfaceC2164mF {
             j10 += A0I * A0M2;
         }
         if (j6 != -1 && j6 != j10) {
-            AbstractC06324g.A07(A01(27, 10, 89), A01(2, 25, 50) + j6 + A01(0, 2, 80) + j10);
+            AbstractC06524g.A07(A01(27, 10, 89), A01(2, 25, 50) + j6 + A01(0, 2, 80) + j10);
         }
         return new C8V(jArr, jArr2, A0U, j10);
     }
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 43);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 43);
         }
         return new String(copyOfRange);
     }
@@ -81,7 +81,7 @@ public final class C8V implements InterfaceC2164mF {
         this.A00 = j9;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2164mF
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2184mF
     public final long A7j() {
         return this.A00;
     }
@@ -108,7 +108,7 @@ public final class C8V implements InterfaceC2164mF {
         return new HX(hz);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2164mF
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2184mF
     public final long A9H(long j6) {
         return this.A03[C5C.A0L(this.A02, j6, true, true)];
     }

@@ -54,7 +54,7 @@ public abstract class a implements b {
     }
 
     @Override // com.anythink.core.common.l.e.a.b
-    public void onDeeplinkCallback(boolean z3) {
+    public void onDeeplinkCallback(boolean z6) {
     }
 
     @Override // com.anythink.core.common.l.e.a.b

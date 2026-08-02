@@ -15,93 +15,93 @@ import org.json.JSONObject;
 public class bv implements Comparable<bv> {
 
     /* renamed from: u, reason: collision with root package name */
-    public static final int f13774u = 1;
+    public static final int f14560u = 1;
 
     /* renamed from: v, reason: collision with root package name */
-    public static final int f13775v = 2;
+    public static final int f14561v = 2;
 
     /* renamed from: w, reason: collision with root package name */
-    public static final int f13776w = 3;
+    public static final int f14562w = 3;
 
     /* renamed from: x, reason: collision with root package name */
-    public static final int f13777x = 1;
+    public static final int f14563x = 1;
 
     /* renamed from: A, reason: collision with root package name */
-    private int f13778A;
+    private int f14564A;
 
     /* renamed from: B, reason: collision with root package name */
-    private String f13779B;
+    private String f14565B;
 
     /* renamed from: C, reason: collision with root package name */
-    private int f13780C;
+    private int f14566C;
 
     /* renamed from: D, reason: collision with root package name */
-    private int f13781D;
+    private int f14567D;
 
     /* renamed from: E, reason: collision with root package name */
-    private String f13782E;
+    private String f14568E;
 
     /* renamed from: F, reason: collision with root package name */
-    private Map<String, Object> f13783F;
+    private Map<String, Object> f14569F;
 
     /* renamed from: G, reason: collision with root package name */
-    private String f13784G;
+    private String f14570G;
 
     /* renamed from: H, reason: collision with root package name */
-    private String f13785H;
+    private String f14571H;
 
     /* renamed from: I, reason: collision with root package name */
-    private long f13786I;
+    private long f14572I;
     private String J;
 
     /* renamed from: K, reason: collision with root package name */
-    private int f13787K;
+    private int f14573K;
 
     /* renamed from: L, reason: collision with root package name */
-    private int f13788L;
+    private int f14574L;
 
     /* renamed from: M, reason: collision with root package name */
-    private double f13789M;
+    private double f14575M;
 
     /* renamed from: N, reason: collision with root package name */
-    private int f13790N;
+    private int f14576N;
 
     /* renamed from: O, reason: collision with root package name */
-    private String f13791O;
+    private String f14577O;
 
     /* renamed from: P, reason: collision with root package name */
-    private String f13792P;
+    private String f14578P;
 
     /* renamed from: Q, reason: collision with root package name */
-    private int f13793Q;
+    private int f14579Q;
 
     /* renamed from: R, reason: collision with root package name */
-    private long f13794R;
+    private long f14580R;
 
     /* renamed from: S, reason: collision with root package name */
-    private long f13795S;
+    private long f14581S;
 
     /* renamed from: T, reason: collision with root package name */
-    private long f13796T;
+    private long f14582T;
 
     /* renamed from: U, reason: collision with root package name */
-    private long f13797U;
+    private long f14583U;
 
     /* renamed from: V, reason: collision with root package name */
-    private int f13798V;
+    private int f14584V;
 
     /* renamed from: W, reason: collision with root package name */
-    private String f13799W;
+    private String f14585W;
 
     /* renamed from: X, reason: collision with root package name */
-    private long f13800X;
+    private long f14586X;
     private long Y;
 
     /* renamed from: Z, reason: collision with root package name */
-    private long f13801Z;
+    private long f14587Z;
 
     /* renamed from: a, reason: collision with root package name */
-    int f13802a;
+    int f14588a;
     private int aB;
     private int[] aE;
     private JSONArray aH;
@@ -170,68 +170,68 @@ public class bv implements Comparable<bv> {
     private ad bu;
 
     /* renamed from: c, reason: collision with root package name */
-    int f13804c;
+    int f14590c;
 
     /* renamed from: d, reason: collision with root package name */
-    int f13805d;
+    int f14591d;
 
     /* renamed from: e, reason: collision with root package name */
-    String f13806e;
+    String f14592e;
 
     /* renamed from: f, reason: collision with root package name */
-    int f13807f;
+    int f14593f;
 
     /* renamed from: g, reason: collision with root package name */
-    int f13808g;
+    int f14594g;
 
     /* renamed from: h, reason: collision with root package name */
-    double f13809h;
+    double f14595h;
     int i;
 
     /* renamed from: j, reason: collision with root package name */
-    double f13810j;
+    double f14596j;
 
     /* renamed from: k, reason: collision with root package name */
-    String f13811k;
+    String f14597k;
 
     /* renamed from: l, reason: collision with root package name */
-    protected int f13812l;
+    protected int f14598l;
 
     /* renamed from: m, reason: collision with root package name */
-    int f13813m;
+    int f14599m;
 
     /* renamed from: n, reason: collision with root package name */
-    int f13814n;
+    int f14600n;
 
     /* renamed from: o, reason: collision with root package name */
-    int f13815o;
+    int f14601o;
 
     /* renamed from: s, reason: collision with root package name */
-    String f13819s;
+    String f14605s;
 
     /* renamed from: t, reason: collision with root package name */
-    long f13820t;
+    long f14606t;
 
     /* renamed from: y, reason: collision with root package name */
-    ATAdRequest f13821y;
+    ATAdRequest f14607y;
 
     /* renamed from: z, reason: collision with root package name */
-    double f13822z;
+    double f14608z;
     private int aA = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    int f13803b = 0;
+    int f14589b = 0;
     private int aC = -1;
     private ATAdConst.CURRENCY aD = ATAdConst.CURRENCY.USD;
 
     /* renamed from: p, reason: collision with root package name */
-    int f13816p = 2;
+    int f14602p = 2;
 
     /* renamed from: q, reason: collision with root package name */
-    boolean f13817q = false;
+    boolean f14603q = false;
 
     /* renamed from: r, reason: collision with root package name */
-    double f13818r = -1.0d;
+    double f14604r = -1.0d;
     private int aF = 1;
     private int aG = 1;
     private int aJ = 1;
@@ -266,11 +266,11 @@ public class bv implements Comparable<bv> {
     }
 
     private ATAdRequest bw() {
-        return this.f13821y;
+        return this.f14607y;
     }
 
     private long bx() {
-        return this.f13800X;
+        return this.f14586X;
     }
 
     private int by() {
@@ -286,23 +286,23 @@ public class bv implements Comparable<bv> {
     }
 
     public final int B() {
-        return this.f13787K;
+        return this.f14573K;
     }
 
     public final int C() {
-        return this.f13788L;
+        return this.f14574L;
     }
 
     public final double D() {
-        return this.f13789M;
+        return this.f14575M;
     }
 
     public final String E() {
-        return this.f13791O;
+        return this.f14577O;
     }
 
     public final String F() {
-        return this.f13792P;
+        return this.f14578P;
     }
 
     public final long G() {
@@ -310,7 +310,7 @@ public class bv implements Comparable<bv> {
     }
 
     public final long H() {
-        return this.f13801Z;
+        return this.f14587Z;
     }
 
     public final int I() {
@@ -382,7 +382,7 @@ public class bv implements Comparable<bv> {
     }
 
     public final int Z() {
-        int i = this.f13803b;
+        int i = this.f14589b;
         if (i <= 0) {
             return 1;
         }
@@ -394,23 +394,23 @@ public class bv implements Comparable<bv> {
     }
 
     public final boolean aA() {
-        return this.f13817q;
+        return this.f14603q;
     }
 
     public final void aB() {
-        this.f13817q = true;
+        this.f14603q = true;
     }
 
     public final double aC() {
-        return this.f13818r;
+        return this.f14604r;
     }
 
     public final String aD() {
-        return this.f13819s;
+        return this.f14605s;
     }
 
     public final long aE() {
-        return this.f13820t;
+        return this.f14606t;
     }
 
     public final int[] aF() {
@@ -498,11 +498,11 @@ public class bv implements Comparable<bv> {
     }
 
     public final int aa() {
-        return this.f13804c;
+        return this.f14590c;
     }
 
     public final int ab() {
-        return this.f13805d;
+        return this.f14591d;
     }
 
     public final int ae() {
@@ -512,7 +512,7 @@ public class bv implements Comparable<bv> {
     public final int af() {
         int i;
         ad adVar = this.ap;
-        return (adVar == null || (i = adVar.f13431n) == 0) ? this.f13807f : i;
+        return (adVar == null || (i = adVar.f14217n) == 0) ? this.f14593f : i;
     }
 
     public final int ag() {
@@ -540,12 +540,12 @@ public class bv implements Comparable<bv> {
     }
 
     public final boolean am() {
-        int i = this.f13778A;
+        int i = this.f14564A;
         return i == 66 || i == 67;
     }
 
     public final boolean an() {
-        return this.f13778A == 1 && this.ao == 1;
+        return this.f14564A == 1 && this.ao == 1;
     }
 
     public final int ao() {
@@ -557,11 +557,11 @@ public class bv implements Comparable<bv> {
     }
 
     public final int aq() {
-        return this.f13808g;
+        return this.f14594g;
     }
 
     public final double ar() {
-        return this.f13809h;
+        return this.f14595h;
     }
 
     public final int as() {
@@ -569,27 +569,27 @@ public class bv implements Comparable<bv> {
     }
 
     public final double at() {
-        return this.f13810j;
+        return this.f14596j;
     }
 
     public final String au() {
-        return this.f13811k;
+        return this.f14597k;
     }
 
     public final int av() {
-        return this.f13812l;
+        return this.f14598l;
     }
 
     public final int aw() {
-        return this.f13813m;
+        return this.f14599m;
     }
 
     public final int ax() {
-        return this.f13814n;
+        return this.f14600n;
     }
 
     public final int ay() {
-        int i = this.f13815o;
+        int i = this.f14601o;
         if (i <= 0) {
             return 1;
         }
@@ -597,7 +597,7 @@ public class bv implements Comparable<bv> {
     }
 
     public final int az() {
-        return this.f13816p;
+        return this.f14602p;
     }
 
     public final long b() {
@@ -703,7 +703,7 @@ public class bv implements Comparable<bv> {
     }
 
     public final double c() {
-        return this.f13822z;
+        return this.f14608z;
     }
 
     @Override // java.lang.Comparable
@@ -724,43 +724,43 @@ public class bv implements Comparable<bv> {
     }
 
     public final int g() {
-        return this.f13778A;
+        return this.f14564A;
     }
 
     public final String h() {
-        return this.f13779B;
+        return this.f14565B;
     }
 
     public final int i() {
-        return this.f13780C;
+        return this.f14566C;
     }
 
     public final int j() {
-        return this.f13781D;
+        return this.f14567D;
     }
 
     public final String k() {
-        return this.f13782E;
+        return this.f14568E;
     }
 
     public final Map<String, Object> l() {
-        return this.f13783F;
+        return this.f14569F;
     }
 
     public final String m() {
-        return this.f13784G;
+        return this.f14570G;
     }
 
     public final int n() {
-        return this.f13790N;
+        return this.f14576N;
     }
 
     public final boolean o() {
-        return this.f13790N == 1;
+        return this.f14576N == 1;
     }
 
     public final long p() {
-        return this.f13795S;
+        return this.f14581S;
     }
 
     @Deprecated
@@ -777,7 +777,7 @@ public class bv implements Comparable<bv> {
     }
 
     public final int t() {
-        return this.f13793Q;
+        return this.f14579Q;
     }
 
     public String toString() {
@@ -789,23 +789,23 @@ public class bv implements Comparable<bv> {
     }
 
     public final long v() {
-        return this.f13796T;
+        return this.f14582T;
     }
 
     public final long w() {
-        return this.f13797U;
+        return this.f14583U;
     }
 
     public final int x() {
-        return this.f13798V;
+        return this.f14584V;
     }
 
     public final long y() {
-        return this.f13786I;
+        return this.f14572I;
     }
 
     public final String z() {
-        return this.f13799W;
+        return this.f14585W;
     }
 
     public final void A(int i) {
@@ -821,7 +821,7 @@ public class bv implements Comparable<bv> {
     }
 
     public final void D(int i) {
-        this.f13808g = i;
+        this.f14594g = i;
     }
 
     public final void E(int i) {
@@ -829,23 +829,23 @@ public class bv implements Comparable<bv> {
     }
 
     public final void F(int i) {
-        this.f13812l = i;
+        this.f14598l = i;
     }
 
     public final void G(int i) {
-        this.f13813m = i;
+        this.f14599m = i;
     }
 
     public final void H(int i) {
-        this.f13814n = i;
+        this.f14600n = i;
     }
 
     public final void I(int i) {
-        this.f13815o = i;
+        this.f14601o = i;
     }
 
     public final void J(int i) {
-        this.f13816p = i;
+        this.f14602p = i;
     }
 
     public final void K(int i) {
@@ -925,11 +925,11 @@ public class bv implements Comparable<bv> {
     }
 
     public final String ac() {
-        return this.f13806e;
+        return this.f14592e;
     }
 
     public final int ad() {
-        return this.f13802a;
+        return this.f14588a;
     }
 
     public final void b(long j6) {
@@ -937,11 +937,11 @@ public class bv implements Comparable<bv> {
     }
 
     public final void c(int i) {
-        this.f13781D = i;
+        this.f14567D = i;
     }
 
     public final void d(String str) {
-        this.f13785H = str;
+        this.f14571H = str;
     }
 
     public final void e(int i) {
@@ -953,19 +953,19 @@ public class bv implements Comparable<bv> {
     }
 
     public final void g(int i) {
-        this.f13793Q = i;
+        this.f14579Q = i;
     }
 
     public final void h(int i) {
-        this.f13798V = i;
+        this.f14584V = i;
     }
 
     public final void i(int i) {
-        this.f13787K = i;
+        this.f14573K = i;
     }
 
     public final void j(int i) {
-        this.f13788L = i;
+        this.f14574L = i;
     }
 
     public final void k(int i) {
@@ -997,19 +997,19 @@ public class bv implements Comparable<bv> {
     }
 
     public final void r(int i) {
-        this.f13803b = i;
+        this.f14589b = i;
     }
 
     public final void s(int i) {
-        this.f13804c = i;
+        this.f14590c = i;
     }
 
     public final void t(int i) {
-        this.f13805d = i;
+        this.f14591d = i;
     }
 
     public final void u(int i) {
-        this.f13802a = i;
+        this.f14588a = i;
     }
 
     public final void v(int i) {
@@ -1017,7 +1017,7 @@ public class bv implements Comparable<bv> {
     }
 
     public final void w(int i) {
-        this.f13807f = i;
+        this.f14593f = i;
     }
 
     public final void x(int i) {
@@ -1036,36 +1036,36 @@ public class bv implements Comparable<bv> {
         this.as = str;
     }
 
-    public final void a(double d2) {
-        this.f13822z = d2;
+    public final void a(double d9) {
+        this.f14608z = d9;
     }
 
     public final void b(int i) {
-        this.f13780C = i;
+        this.f14566C = i;
     }
 
     public final void c(String str) {
-        this.f13784G = str;
+        this.f14570G = str;
     }
 
     public final void d(int i) {
-        this.f13790N = i;
+        this.f14576N = i;
     }
 
     public final void e(long j6) {
-        this.f13796T = j6;
+        this.f14582T = j6;
     }
 
     public final void f(long j6) {
-        this.f13797U = j6;
+        this.f14583U = j6;
     }
 
     public final void g(long j6) {
-        this.f13786I = j6;
+        this.f14572I = j6;
     }
 
     public final void h(long j6) {
-        this.f13800X = j6;
+        this.f14586X = j6;
     }
 
     public final void i(long j6) {
@@ -1073,7 +1073,7 @@ public class bv implements Comparable<bv> {
     }
 
     public final void j(long j6) {
-        this.f13801Z = j6;
+        this.f14587Z = j6;
     }
 
     public final void k(long j6) {
@@ -1089,7 +1089,7 @@ public class bv implements Comparable<bv> {
     }
 
     public final void n(String str) {
-        this.f13819s = str;
+        this.f14605s = str;
     }
 
     public final void o(long j6) {
@@ -1105,15 +1105,15 @@ public class bv implements Comparable<bv> {
     }
 
     public final void a(ATAdRequest aTAdRequest) {
-        this.f13821y = aTAdRequest;
+        this.f14607y = aTAdRequest;
     }
 
     public final void b(String str) {
-        this.f13782E = str;
+        this.f14568E = str;
     }
 
     public final void c(long j6) {
-        this.f13795S = j6;
+        this.f14581S = j6;
     }
 
     public final void d(long j6) {
@@ -1121,7 +1121,7 @@ public class bv implements Comparable<bv> {
     }
 
     public final void e(String str) {
-        this.f13799W = str;
+        this.f14585W = str;
     }
 
     public final void f(String str) {
@@ -1129,11 +1129,11 @@ public class bv implements Comparable<bv> {
     }
 
     public final void g(String str) {
-        this.f13791O = str;
+        this.f14577O = str;
     }
 
     public final void h(String str) {
-        this.f13792P = str;
+        this.f14578P = str;
     }
 
     public final void i(String str) {
@@ -1145,7 +1145,7 @@ public class bv implements Comparable<bv> {
     }
 
     public final void k(String str) {
-        this.f13806e = str;
+        this.f14592e = str;
     }
 
     public final void l(String str) {
@@ -1153,11 +1153,11 @@ public class bv implements Comparable<bv> {
     }
 
     public final void m(String str) {
-        this.f13811k = str;
+        this.f14597k = str;
     }
 
     public final void n(long j6) {
-        this.f13820t = j6;
+        this.f14606t = j6;
     }
 
     public final void o(String str) {
@@ -1169,39 +1169,39 @@ public class bv implements Comparable<bv> {
     }
 
     public final void a(int i) {
-        this.f13778A = i;
+        this.f14564A = i;
     }
 
-    public final void b(double d2) {
-        this.f13789M = d2;
+    public final void b(double d9) {
+        this.f14575M = d9;
     }
 
-    public final void c(double d2) {
-        this.ai = d2;
+    public final void c(double d9) {
+        this.ai = d9;
     }
 
-    public final void d(double d2) {
-        this.f13809h = d2;
+    public final void d(double d9) {
+        this.f14595h = d9;
     }
 
-    public final void e(double d2) {
-        this.f13810j = d2;
+    public final void e(double d9) {
+        this.f14596j = d9;
     }
 
-    public final void f(double d2) {
-        this.f13818r = d2;
+    public final void f(double d9) {
+        this.f14604r = d9;
     }
 
-    public final void g(double d2) {
-        this.aO = d2;
+    public final void g(double d9) {
+        this.aO = d9;
     }
 
-    public final void h(double d2) {
-        this.aP = d2;
+    public final void h(double d9) {
+        this.aP = d9;
     }
 
-    public final void i(double d2) {
-        this.bm = d2;
+    public final void i(double d9) {
+        this.bm = d9;
     }
 
     private void b(ad adVar) {
@@ -1209,7 +1209,7 @@ public class bv implements Comparable<bv> {
     }
 
     public final void a(String str) {
-        this.f13779B = str;
+        this.f14565B = str;
     }
 
     public final void c(JSONArray jSONArray) {
@@ -1229,7 +1229,7 @@ public class bv implements Comparable<bv> {
     }
 
     public final void a(Map<String, Object> map) {
-        this.f13783F = map;
+        this.f14569F = map;
     }
 
     public final void b(JSONArray jSONArray) {
@@ -1244,15 +1244,15 @@ public class bv implements Comparable<bv> {
         return com.anythink.core.common.v.l.a(this, bvVar);
     }
 
-    public final synchronized void a(bv bvVar, int i, int i6, int i9) {
+    public final synchronized void a(bv bvVar, int i, int i4, int i6) {
         try {
-            if (bvVar.f13799W.equals(this.f13799W)) {
-                this.f13789M = bvVar.f13789M;
-                this.f13810j = bvVar.f13810j;
-                this.f13822z = bvVar.f13822z;
+            if (bvVar.f14585W.equals(this.f14585W)) {
+                this.f14575M = bvVar.f14575M;
+                this.f14596j = bvVar.f14596j;
+                this.f14608z = bvVar.f14608z;
                 this.aD = bvVar.aD;
-                this.f13793Q = i6;
-                this.f13791O = bvVar.f13791O;
+                this.f14579Q = i4;
+                this.f14577O = bvVar.f14577O;
                 this.as = bvVar.as;
                 this.an = 0;
                 if (i == 0) {
@@ -1260,9 +1260,9 @@ public class bv implements Comparable<bv> {
                 } else {
                     this.aq = i;
                 }
-                this.f13792P = bvVar.f13792P;
+                this.f14578P = bvVar.f14578P;
                 this.ap = bvVar.ap;
-                this.ar = i9;
+                this.ar = i6;
                 this.aU = bvVar.aU;
             }
         } catch (Throwable th) {
@@ -1294,7 +1294,7 @@ public class bv implements Comparable<bv> {
         int i;
         String str;
         String str2;
-        int i6 = 0;
+        int i4 = 0;
         String str3 = "";
         if (baseAd == null) {
             i = 0;
@@ -1314,16 +1314,16 @@ public class bv implements Comparable<bv> {
                 str3 = baseAd.getDescriptionText();
             }
             if (TextUtils.equals(baseAd.getAdType(), "1")) {
-                i6 = baseAd.getVideoWidth() > baseAd.getVideoHeight() ? 3 : 4;
+                i4 = baseAd.getVideoWidth() > baseAd.getVideoHeight() ? 3 : 4;
             } else if (TextUtils.equals(baseAd.getAdType(), "2")) {
                 if (baseAd.getImageUrlList() != null && baseAd.getImageUrlList().size() > 1) {
-                    i6 = 5;
+                    i4 = 5;
                 } else if (baseAd.getMainImageWidth() > baseAd.getMainImageHeight()) {
                     str = str3;
                     str3 = title;
-                    i6 = 1;
+                    i4 = 1;
                 } else {
-                    i6 = 2;
+                    i4 = 2;
                 }
             }
             str = str3;
@@ -1331,11 +1331,11 @@ public class bv implements Comparable<bv> {
         }
         HashMap hashMap = new HashMap();
         this.aT = hashMap;
-        hashMap.put(j.w.f12638z, Integer.valueOf(i6));
-        this.aT.put(j.w.f12604A, str3);
-        this.aT.put(j.w.f12605B, str);
-        this.aT.put(j.w.f12606C, str2);
-        this.aT.put(j.w.f12607D, Integer.valueOf(i));
+        hashMap.put(j.w.f13424z, Integer.valueOf(i4));
+        this.aT.put(j.w.f13390A, str3);
+        this.aT.put(j.w.f13391B, str);
+        this.aT.put(j.w.f13392C, str2);
+        this.aT.put(j.w.f13393D, Integer.valueOf(i));
     }
 
     public final void a(aa aaVar) {
@@ -1346,28 +1346,28 @@ public class bv implements Comparable<bv> {
         this.aw = lVar;
     }
 
-    public final void a(ad adVar, int i, int i6, int i9) {
-        this.f13793Q = i6;
-        this.f13789M = adVar.getPrice();
-        this.f13810j = adVar.getSortPrice();
-        this.f13822z = adVar.getRmbPrice();
+    public final void a(ad adVar, int i, int i4, int i6) {
+        this.f14579Q = i4;
+        this.f14575M = adVar.getPrice();
+        this.f14596j = adVar.getSortPrice();
+        this.f14608z = adVar.getRmbPrice();
         this.aD = adVar.getCurrency();
-        this.f13791O = adVar.token;
-        this.as = adVar.f13430m;
+        this.f14577O = adVar.token;
+        this.as = adVar.f14216m;
         this.an = 0;
         this.aq = i;
         this.ap = adVar;
-        this.ar = i9;
-        if (i9 == 1) {
-            this.f13792P = "";
+        this.ar = i6;
+        if (i6 == 1) {
+            this.f14578P = "";
         }
         if (this.aU != null) {
-            String m4 = adVar.m();
-            int o6 = adVar.o();
+            String m9 = adVar.m();
+            int o4 = adVar.o();
             String n9 = adVar.n();
-            this.aU.b(m4);
+            this.aU.b(m9);
             this.aU.d(n9);
-            this.aU.a(o6);
+            this.aU.a(o4);
         }
     }
 }

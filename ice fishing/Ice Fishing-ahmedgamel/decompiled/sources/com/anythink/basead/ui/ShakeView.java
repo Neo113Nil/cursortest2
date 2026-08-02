@@ -23,26 +23,26 @@ public class ShakeView extends BaseShakeView {
     public static final String TAG = "ShakeView";
 
     /* renamed from: l, reason: collision with root package name */
-    TextView f10275l;
+    TextView f11061l;
 
     /* renamed from: m, reason: collision with root package name */
-    TextView f10276m;
+    TextView f11062m;
 
     /* renamed from: n, reason: collision with root package name */
-    String f10277n;
+    String f11063n;
 
     /* renamed from: o, reason: collision with root package name */
-    private View f10278o;
+    private View f11064o;
 
     /* renamed from: p, reason: collision with root package name */
-    private View f10279p;
+    private View f11065p;
 
     /* renamed from: q, reason: collision with root package name */
-    private Boolean f10280q;
+    private Boolean f11066q;
 
     public ShakeView(Context context) {
         super(context);
-        this.f10280q = Boolean.FALSE;
+        this.f11066q = Boolean.FALSE;
     }
 
     @Override // com.anythink.basead.ui.BaseShakeView
@@ -50,37 +50,37 @@ public class ShakeView extends BaseShakeView {
         setOrientation(1);
         setGravity(1);
         View inflate = LayoutInflater.from(getContext()).inflate(q.a(getContext(), "myoffer_splash_shake_button", "layout"), (ViewGroup) null);
-        this.f10278o = inflate;
+        this.f11064o = inflate;
         inflate.setLayoutParams(new LinearLayout.LayoutParams(q.a(getContext(), 300.0f), q.a(getContext(), 100.0f)));
-        TextView textView = (TextView) this.f10278o.findViewById(q.a(t.b().g(), "tv_splash_shake_view_hint_text", "id"));
-        this.f10275l = textView;
+        TextView textView = (TextView) this.f11064o.findViewById(q.a(t.b().g(), "tv_splash_shake_view_hint_text", "id"));
+        this.f11061l = textView;
         if (textView != null) {
-            textView.setText(q.a(t.b().g(), "myoffer_shake_full_title", k.f19636g));
+            textView.setText(q.a(t.b().g(), "myoffer_shake_full_title", k.f20423g));
         }
-        this.f9905a = (ImageView) this.f10278o.findViewById(q.a(t.b().g(), "tv_splash_shake_view_icon", "id"));
+        this.f10691a = (ImageView) this.f11064o.findViewById(q.a(t.b().g(), "tv_splash_shake_view_icon", "id"));
         View inflate2 = LayoutInflater.from(getContext()).inflate(q.a(getContext(), "myoffer_splash_shake_hint_text", "layout"), (ViewGroup) null);
-        this.f10279p = inflate2;
+        this.f11065p = inflate2;
         inflate2.setLayoutParams(new LinearLayout.LayoutParams(-2, -2));
-        TextView textView2 = (TextView) this.f10279p.findViewById(q.a(t.b().g(), "tv_splash_shake_hint_text", "id"));
-        this.f10276m = textView2;
+        TextView textView2 = (TextView) this.f11065p.findViewById(q.a(t.b().g(), "tv_splash_shake_hint_text", "id"));
+        this.f11062m = textView2;
         if (textView2 != null) {
-            textView2.setText(q.a(t.b().g(), "myoffer_shake_full_title", k.f19636g));
+            textView2.setText(q.a(t.b().g(), "myoffer_shake_full_title", k.f20423g));
         }
-        this.f9906b = (ImageView) this.f10279p.findViewById(q.a(t.b().g(), "tv_splash_shake_hint_icon", "id"));
-        this.f10279p.setVisibility(8);
-        addView(this.f10278o);
-        addView(this.f10279p);
+        this.f10692b = (ImageView) this.f11065p.findViewById(q.a(t.b().g(), "tv_splash_shake_hint_icon", "id"));
+        this.f11065p.setVisibility(8);
+        addView(this.f11064o);
+        addView(this.f11065p);
     }
 
     public void replaceShakeCTAButton(View view) {
         View view2;
-        if (view == null || (view2 = this.f10278o) == null) {
+        if (view == null || (view2 = this.f11064o) == null) {
             return;
         }
         try {
             ViewGroup.LayoutParams layoutParams = view2.getLayoutParams();
-            this.f10278o.setVisibility(8);
-            this.f10278o = view;
+            this.f11064o.setVisibility(8);
+            this.f11064o = view;
             view.setVisibility(0);
             if (view.getLayoutParams() != null && view.getLayoutParams() != null) {
                 layoutParams = view.getLayoutParams();
@@ -94,24 +94,24 @@ public class ShakeView extends BaseShakeView {
             if (t.b().F()) {
                 Log.d(TAG, "DIRECTLY Splash View replace shake cta fail:" + th.getMessage());
             }
-            am.a(this.f10278o);
-            addView(this.f10278o);
-            this.f10278o.setVisibility(0);
+            am.a(this.f11064o);
+            addView(this.f11064o);
+            this.f11064o.setVisibility(0);
         }
     }
 
-    public void setNeedHideShakeIcon(boolean z3) {
-        this.f10280q = Boolean.valueOf(z3);
-        if (z3) {
-            View view = this.f10279p;
+    public void setNeedHideShakeIcon(boolean z6) {
+        this.f11066q = Boolean.valueOf(z6);
+        if (z6) {
+            View view = this.f11065p;
             if (view != null) {
                 view.setVisibility(0);
-                ImageView imageView = this.f9906b;
+                ImageView imageView = this.f10692b;
                 if (imageView != null) {
-                    this.f9905a = imageView;
+                    this.f10691a = imageView;
                 }
             }
-            View view2 = this.f10278o;
+            View view2 = this.f11064o;
             if (view2 != null) {
                 view2.setVisibility(8);
             }
@@ -121,22 +121,22 @@ public class ShakeView extends BaseShakeView {
     @Override // android.view.View
     public void setOnClickListener(View.OnClickListener onClickListener) {
         try {
-            this.f10278o.setOnClickListener(onClickListener);
-            this.f10279p.setOnClickListener(onClickListener);
+            this.f11064o.setOnClickListener(onClickListener);
+            this.f11065p.setOnClickListener(onClickListener);
         } catch (Throwable unused) {
         }
     }
 
     public void setShakeHintText(String str) {
-        this.f10277n = str;
+        this.f11063n = str;
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        TextView textView = this.f10275l;
+        TextView textView = this.f11061l;
         if (textView != null) {
             textView.setText(str);
         }
-        TextView textView2 = this.f10276m;
+        TextView textView2 = this.f11062m;
         if (textView2 != null) {
             textView2.setText(str);
         }
@@ -145,26 +145,26 @@ public class ShakeView extends BaseShakeView {
     @Override // com.anythink.basead.ui.BaseShakeView
     public void setShakeSetting(y yVar, int i) {
         super.setShakeSetting(yVar, i);
-        if (TextUtils.isEmpty(this.f10277n)) {
-            if (TextUtils.isEmpty(this.f9910f)) {
-                TextView textView = this.f10275l;
+        if (TextUtils.isEmpty(this.f11063n)) {
+            if (TextUtils.isEmpty(this.f10696f)) {
+                TextView textView = this.f11061l;
                 if (textView != null) {
                     textView.setText(e.a(getContext(), i));
                 }
-                TextView textView2 = this.f10276m;
+                TextView textView2 = this.f11062m;
                 if (textView2 != null) {
                     textView2.setText(e.a(getContext(), i));
                     return;
                 }
                 return;
             }
-            TextView textView3 = this.f10275l;
+            TextView textView3 = this.f11061l;
             if (textView3 != null) {
-                textView3.setText(this.f9910f);
+                textView3.setText(this.f10696f);
             }
-            TextView textView4 = this.f10276m;
+            TextView textView4 = this.f11062m;
             if (textView4 != null) {
-                textView4.setText(this.f9910f);
+                textView4.setText(this.f10696f);
             }
         }
     }
@@ -176,16 +176,16 @@ public class ShakeView extends BaseShakeView {
 
     public ShakeView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f10280q = Boolean.FALSE;
+        this.f11066q = Boolean.FALSE;
     }
 
     public ShakeView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f10280q = Boolean.FALSE;
+        this.f11066q = Boolean.FALSE;
     }
 
-    public ShakeView(Context context, AttributeSet attributeSet, int i, int i6) {
-        super(context, attributeSet, i, i6);
-        this.f10280q = Boolean.FALSE;
+    public ShakeView(Context context, AttributeSet attributeSet, int i, int i4) {
+        super(context, attributeSet, i, i4);
+        this.f11066q = Boolean.FALSE;
     }
 }

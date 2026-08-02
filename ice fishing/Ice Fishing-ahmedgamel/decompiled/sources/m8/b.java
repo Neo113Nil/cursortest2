@@ -1,6 +1,6 @@
 package m8;
 
-import com.google.android.gms.internal.ads.C3428jv;
+import com.google.android.gms.internal.ads.C3451jv;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.concurrent.TimeUnit;
@@ -10,59 +10,59 @@ import y8.z;
 public final class b implements i8.o {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final b f39322a = new b();
+    public static final b f39481a = new b();
 
     @Override // i8.o
     public final i8.v a(n8.h hVar) {
         n8.f gVar;
-        q qVar = hVar.f39517a;
-        qVar.getClass();
-        synchronized (qVar) {
+        p pVar = hVar.f39684a;
+        pVar.getClass();
+        synchronized (pVar) {
             try {
-                if (!qVar.f39383F) {
+                if (!pVar.f39540F) {
                     throw new IllegalStateException("released");
                 }
-                if (qVar.f39382E) {
+                if (pVar.f39539E) {
                     throw new IllegalStateException("Check failed.");
                 }
-                if (qVar.f39381D) {
+                if (pVar.f39538D) {
                     throw new IllegalStateException("Check failed.");
                 }
             } catch (Throwable th) {
                 throw th;
             }
         }
-        j jVar = qVar.f39393z;
-        kotlin.jvm.internal.h.b(jVar);
-        r b9 = jVar.b();
-        i8.r client = qVar.f39387n;
-        b9.getClass();
+        i iVar = pVar.f39550z;
+        kotlin.jvm.internal.h.b(iVar);
+        q a9 = iVar.a();
+        i8.r client = pVar.f39544n;
+        a9.getClass();
         kotlin.jvm.internal.h.e(client, "client");
-        p8.r rVar = b9.f39402k;
+        p8.r rVar = a9.f39559k;
         if (rVar != null) {
-            gVar = new p8.s(client, b9, hVar, rVar);
+            gVar = new p8.s(client, a9, hVar, rVar);
         } else {
-            Socket socket = b9.f39398f;
-            int i = hVar.f39523g;
+            Socket socket = a9.f39555f;
+            int i = hVar.f39690g;
             socket.setSoTimeout(i);
-            j4.g gVar2 = b9.i;
-            z L6 = ((y8.r) gVar2.f38405v).f41984n.L();
+            l4.g gVar2 = a9.i;
+            z L2 = ((y8.r) gVar2.f38917v).f41955n.L();
             long j6 = i;
             TimeUnit timeUnit = TimeUnit.MILLISECONDS;
-            L6.g(j6);
-            ((y8.p) gVar2.f38406w).f41980n.L().g(hVar.f39524h);
-            gVar = new o8.g(client, b9, gVar2);
+            L2.g(j6);
+            ((y8.p) gVar2.f38918w).f41951n.L().g(hVar.f39691h);
+            gVar = new o8.g(client, a9, gVar2);
         }
-        C3428jv c3428jv = new C3428jv(qVar, jVar, gVar);
-        qVar.f39380C = c3428jv;
-        qVar.f39385H = c3428jv;
-        synchronized (qVar) {
-            qVar.f39381D = true;
-            qVar.f39382E = true;
+        C3451jv c3451jv = new C3451jv(pVar, iVar, gVar);
+        pVar.f39537C = c3451jv;
+        pVar.f39542H = c3451jv;
+        synchronized (pVar) {
+            pVar.f39538D = true;
+            pVar.f39539E = true;
         }
-        if (qVar.f39384G) {
+        if (pVar.f39541G) {
             throw new IOException("Canceled");
         }
-        return n8.h.a(hVar, 0, c3428jv, null, 61).b(hVar.f39521e);
+        return n8.h.a(hVar, 0, c3451jv, null, 61).b(hVar.f39688e);
     }
 }

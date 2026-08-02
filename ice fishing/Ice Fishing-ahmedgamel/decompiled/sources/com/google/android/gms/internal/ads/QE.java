@@ -3,22 +3,22 @@ package com.google.android.gms.internal.ads;
 import java.util.Objects;
 
 /* loaded from: classes2.dex */
-public final class QE extends AbstractC4257zE {
+public final class QE extends AbstractC4280zE {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f27006a;
+    public final int f27793a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final FE f27007b;
+    public final FE f27794b;
 
     public QE(int i, FE fe) {
-        this.f27006a = i;
-        this.f27007b = fe;
+        this.f27793a = i;
+        this.f27794b = fe;
     }
 
-    @Override // com.google.android.gms.internal.ads.AbstractC3825rE
+    @Override // com.google.android.gms.internal.ads.AbstractC3848rE
     public final boolean a() {
-        return this.f27007b != FE.f24760C;
+        return this.f27794b != FE.f25516C;
     }
 
     public final boolean equals(Object obj) {
@@ -26,17 +26,17 @@ public final class QE extends AbstractC4257zE {
             return false;
         }
         QE qe = (QE) obj;
-        return qe.f27006a == this.f27006a && qe.f27007b == this.f27007b;
+        return qe.f27793a == this.f27793a && qe.f27794b == this.f27794b;
     }
 
     public final int hashCode() {
-        return Objects.hash(QE.class, Integer.valueOf(this.f27006a), this.f27007b);
+        return Objects.hash(QE.class, Integer.valueOf(this.f27793a), this.f27794b);
     }
 
     public final String toString() {
-        String valueOf = String.valueOf(this.f27007b);
+        String valueOf = String.valueOf(this.f27794b);
         int length = valueOf.length();
-        int i = this.f27006a;
+        int i = this.f27793a;
         StringBuilder sb = new StringBuilder(length + 33 + String.valueOf(i).length() + 10);
         sb.append("AesGcmSiv Parameters (variant: ");
         sb.append(valueOf);

@@ -5,64 +5,64 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Parcelable;
 import androidx.work.impl.foreground.SystemForegroundService;
-import p.BinderC4815e;
+import p.BinderC4819e;
 
 /* loaded from: classes.dex */
 public final class b implements Runnable {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f2698n = 0;
+    public final /* synthetic */ int f2735n = 0;
 
     /* renamed from: u, reason: collision with root package name */
-    public final /* synthetic */ int f2699u;
+    public final /* synthetic */ int f2736u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final /* synthetic */ int f2700v;
+    public final /* synthetic */ int f2737v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final /* synthetic */ Parcelable f2701w;
+    public final /* synthetic */ Parcelable f2738w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final /* synthetic */ Object f2702x;
+    public final /* synthetic */ Object f2739x;
 
-    public b(SystemForegroundService systemForegroundService, int i, Notification notification, int i6) {
-        this.f2702x = systemForegroundService;
-        this.f2699u = i;
-        this.f2701w = notification;
-        this.f2700v = i6;
+    public b(SystemForegroundService systemForegroundService, int i, Notification notification, int i4) {
+        this.f2739x = systemForegroundService;
+        this.f2736u = i;
+        this.f2738w = notification;
+        this.f2737v = i4;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
-        switch (this.f2698n) {
+        switch (this.f2735n) {
             case 0:
                 int i = Build.VERSION.SDK_INT;
-                int i6 = this.f2700v;
-                Notification notification = (Notification) this.f2701w;
-                int i9 = this.f2699u;
-                SystemForegroundService systemForegroundService = (SystemForegroundService) this.f2702x;
+                int i4 = this.f2737v;
+                Notification notification = (Notification) this.f2738w;
+                int i6 = this.f2736u;
+                SystemForegroundService systemForegroundService = (SystemForegroundService) this.f2739x;
                 if (i < 31) {
                     if (i < 29) {
-                        systemForegroundService.startForeground(i9, notification);
+                        systemForegroundService.startForeground(i6, notification);
                         break;
                     } else {
-                        c.a(systemForegroundService, i9, notification, i6);
+                        c.a(systemForegroundService, i6, notification, i4);
                         break;
                     }
                 } else {
-                    d.a(systemForegroundService, i9, notification, i6);
+                    d.a(systemForegroundService, i6, notification, i4);
                     break;
                 }
             default:
-                ((BinderC4815e) this.f2702x).f39688u.c(this.f2699u, this.f2700v, (Bundle) this.f2701w);
+                ((BinderC4819e) this.f2739x).f39796u.c(this.f2736u, this.f2737v, (Bundle) this.f2738w);
                 break;
         }
     }
 
-    public b(BinderC4815e binderC4815e, int i, int i6, Bundle bundle) {
-        this.f2702x = binderC4815e;
-        this.f2699u = i;
-        this.f2700v = i6;
-        this.f2701w = bundle;
+    public b(BinderC4819e binderC4819e, int i, int i4, Bundle bundle) {
+        this.f2739x = binderC4819e;
+        this.f2736u = i;
+        this.f2737v = i4;
+        this.f2738w = bundle;
     }
 }

@@ -4,5 +4,5 @@ package U7;
 public final class m extends IllegalStateException {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final /* synthetic */ int f3262n = 0;
+    public static final /* synthetic */ int f3385n = 0;
 }

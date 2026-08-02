@@ -27,11 +27,11 @@ public final class i {
     }
 
     public static String a(v vVar) {
-        String h9 = vVar.h();
+        String h3 = vVar.h();
         String j6 = vVar.j();
         if (j6 == null) {
-            return h9;
+            return h3;
         }
-        return h9 + '?' + j6;
+        return h3 + '?' + j6;
     }
 }

@@ -1,19 +1,18 @@
 package androidx.activity;
 
-import a.AbstractC0422a;
-import androidx.lifecycle.EnumC0496n;
-import androidx.lifecycle.InterfaceC0501t;
-import androidx.lifecycle.InterfaceC0503v;
+import androidx.lifecycle.EnumC0500n;
+import androidx.lifecycle.InterfaceC0505t;
+import androidx.lifecycle.InterfaceC0507v;
 
 /* loaded from: classes.dex */
-public final class ImmLeaksCleaner implements InterfaceC0501t {
+public final class ImmLeaksCleaner implements InterfaceC0505t {
     static {
-        AbstractC0422a.q(y.f4469n);
+        N3.C.O(y.f4437n);
     }
 
-    @Override // androidx.lifecycle.InterfaceC0501t
-    public final void a(InterfaceC0503v interfaceC0503v, EnumC0496n enumC0496n) {
-        if (enumC0496n == EnumC0496n.ON_DESTROY) {
+    @Override // androidx.lifecycle.InterfaceC0505t
+    public final void a(InterfaceC0507v interfaceC0507v, EnumC0500n enumC0500n) {
+        if (enumC0500n == EnumC0500n.ON_DESTROY) {
             throw null;
         }
     }

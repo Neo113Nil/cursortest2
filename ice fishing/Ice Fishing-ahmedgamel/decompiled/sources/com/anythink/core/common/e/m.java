@@ -14,45 +14,45 @@ import java.util.concurrent.ConcurrentHashMap;
 public class m extends c<m> {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f13041a = "com.anythink.core.common.e.m";
+    private static final String f13827a = "com.anythink.core.common.e.m";
 
     /* renamed from: b, reason: collision with root package name */
-    private static m f13042b;
+    private static m f13828b;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public List<bd> f13043a;
+        public List<bd> f13829a;
 
         /* renamed from: b, reason: collision with root package name */
-        public Map<String, bd> f13044b;
+        public Map<String, bd> f13830b;
     }
 
     public static class b {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f13045a = "notice_url_fail_info";
+        public static final String f13831a = "notice_url_fail_info";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f13046b = "id";
+        public static final String f13832b = "id";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f13047c = "req_type";
+        public static final String f13833c = "req_type";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f13048d = "req_url";
+        public static final String f13834d = "req_url";
 
         /* renamed from: e, reason: collision with root package name */
-        public static final String f13049e = "req_head";
+        public static final String f13835e = "req_head";
 
         /* renamed from: f, reason: collision with root package name */
-        public static final String f13050f = "first_fail_time";
+        public static final String f13836f = "first_fail_time";
 
         /* renamed from: g, reason: collision with root package name */
-        public static final String f13051g = "offer_out_date_time";
+        public static final String f13837g = "offer_out_date_time";
 
         /* renamed from: h, reason: collision with root package name */
-        public static final String f13052h = "retry_count";
+        public static final String f13838h = "retry_count";
         public static final String i = "CREATE TABLE IF NOT EXISTS notice_url_fail_info(id TEXT, req_type INTEGER, req_url TEXT, req_head TEXT, first_fail_time INTEGER, offer_out_date_time INTEGER, retry_count INTEGER )";
     }
 
@@ -61,18 +61,18 @@ public class m extends c<m> {
     }
 
     public static m a(d dVar) {
-        if (f13042b == null) {
+        if (f13828b == null) {
             synchronized (m.class) {
                 try {
-                    if (f13042b == null) {
-                        f13042b = new m(dVar);
+                    if (f13828b == null) {
+                        f13828b = new m(dVar);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f13042b;
+        return f13828b;
     }
 
     private synchronized void b() {
@@ -80,7 +80,7 @@ public class m extends c<m> {
             if (d() == null) {
                 return;
             }
-            d().delete(b.f13045a, null, null);
+            d().delete(b.f13831a, null, null);
         } catch (Exception unused) {
         }
     }
@@ -91,17 +91,17 @@ public class m extends c<m> {
         }
         try {
             ContentValues contentValues = new ContentValues();
-            contentValues.put("id", bdVar.f13615a);
-            contentValues.put("req_type", Integer.valueOf(bdVar.f13616b));
-            contentValues.put("req_url", bdVar.f13618d);
-            contentValues.put("req_head", bdVar.f13617c);
-            contentValues.put(b.f13050f, Long.valueOf(bdVar.f13619e));
-            contentValues.put(b.f13051g, Long.valueOf(bdVar.f13620f));
-            contentValues.put("retry_count", Integer.valueOf(bdVar.f13621g));
-            if (a(bdVar.f13615a)) {
-                return d().update(b.f13045a, contentValues, "id = ? ", new String[]{bdVar.f13615a});
+            contentValues.put("id", bdVar.f14401a);
+            contentValues.put("req_type", Integer.valueOf(bdVar.f14402b));
+            contentValues.put("req_url", bdVar.f14404d);
+            contentValues.put("req_head", bdVar.f14403c);
+            contentValues.put(b.f13836f, Long.valueOf(bdVar.f14405e));
+            contentValues.put(b.f13837g, Long.valueOf(bdVar.f14406f));
+            contentValues.put("retry_count", Integer.valueOf(bdVar.f14407g));
+            if (a(bdVar.f14401a)) {
+                return d().update(b.f13831a, contentValues, "id = ? ", new String[]{bdVar.f14401a});
             }
-            return d().insert(b.f13045a, null, contentValues);
+            return d().insert(b.f13831a, null, contentValues);
         } catch (Exception unused) {
             return -1L;
         }
@@ -112,7 +112,7 @@ public class m extends c<m> {
             return -1;
         }
         try {
-            return d().delete(b.f13045a, "id=?", new String[]{bdVar.f13615a});
+            return d().delete(b.f13831a, "id=?", new String[]{bdVar.f14401a});
         } catch (Throwable unused) {
             return -1;
         }
@@ -121,7 +121,7 @@ public class m extends c<m> {
     private boolean a(String str) {
         Cursor cursor;
         try {
-            cursor = c().query(b.f13045a, new String[]{"id"}, "id=?", new String[]{str}, "id", null, null);
+            cursor = c().query(b.f13831a, new String[]{"id"}, "id=?", new String[]{str}, "id", null, null);
             if (cursor != null) {
                 try {
                     if (cursor.getCount() > 0) {
@@ -170,26 +170,26 @@ public class m extends c<m> {
         a aVar = new a();
         List<bd> synchronizedList = Collections.synchronizedList(new ArrayList(8));
         ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap(8);
-        aVar.f13043a = synchronizedList;
-        aVar.f13044b = concurrentHashMap;
+        aVar.f13829a = synchronizedList;
+        aVar.f13830b = concurrentHashMap;
         Cursor cursor = null;
         try {
             try {
-                cursor = c().query(b.f13045a, null, null, null, null, null, b.f13050f);
+                cursor = c().query(b.f13831a, null, null, null, null, null, b.f13836f);
                 if (cursor != null && cursor.getCount() > 0) {
                     ArrayList arrayList = new ArrayList(4);
                     while (cursor.moveToNext()) {
                         bd bdVar = new bd();
-                        bdVar.f13615a = cursor.getString(cursor.getColumnIndex("id"));
-                        bdVar.f13616b = cursor.getInt(cursor.getColumnIndex("req_type"));
-                        bdVar.f13618d = cursor.getString(cursor.getColumnIndex("req_url"));
-                        bdVar.f13617c = cursor.getString(cursor.getColumnIndex("req_head"));
-                        bdVar.f13619e = cursor.getLong(cursor.getColumnIndex(b.f13050f));
-                        bdVar.f13620f = cursor.getLong(cursor.getColumnIndex(b.f13051g));
-                        bdVar.f13621g = cursor.getInt(cursor.getColumnIndex("retry_count"));
-                        if (System.currentTimeMillis() < bdVar.f13620f) {
+                        bdVar.f14401a = cursor.getString(cursor.getColumnIndex("id"));
+                        bdVar.f14402b = cursor.getInt(cursor.getColumnIndex("req_type"));
+                        bdVar.f14404d = cursor.getString(cursor.getColumnIndex("req_url"));
+                        bdVar.f14403c = cursor.getString(cursor.getColumnIndex("req_head"));
+                        bdVar.f14405e = cursor.getLong(cursor.getColumnIndex(b.f13836f));
+                        bdVar.f14406f = cursor.getLong(cursor.getColumnIndex(b.f13837g));
+                        bdVar.f14407g = cursor.getInt(cursor.getColumnIndex("retry_count"));
+                        if (System.currentTimeMillis() < bdVar.f14406f) {
                             synchronizedList.add(bdVar);
-                            concurrentHashMap.put(bdVar.f13615a, bdVar);
+                            concurrentHashMap.put(bdVar.f14401a, bdVar);
                         } else {
                             arrayList.add(bdVar);
                         }

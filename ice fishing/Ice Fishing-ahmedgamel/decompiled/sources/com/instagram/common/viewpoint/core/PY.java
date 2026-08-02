@@ -12,9 +12,9 @@ public class PY extends R7 {
     @Override // com.instagram.common.viewpoint.core.R7
     public final void A0L(C7M c7m, int i) {
         int A25;
-        InterfaceC1388Yo interfaceC1388Yo;
+        InterfaceC1408Yo interfaceC1408Yo;
         super.A0L(c7m, i);
-        C1910hr linearLayoutManager = this.A00.getLayoutManager();
+        C1930hr linearLayoutManager = this.A00.getLayoutManager();
         if (linearLayoutManager != null && (A25 = linearLayoutManager.A25()) >= 0) {
             C1J c1j = this.A00;
             int scrollPosition = A01[3].charAt(13);
@@ -22,10 +22,10 @@ public class PY extends R7 {
                 throw new RuntimeException();
             }
             A01[5] = "JmqJ93Os7fwoNBdh";
-            if (c1j.getAdapter() == null || A25 >= this.A00.getAdapter().A0B() || (interfaceC1388Yo = (InterfaceC1388Yo) c7m.A1F(A25)) == null) {
+            if (c1j.getAdapter() == null || A25 >= this.A00.getAdapter().A0B() || (interfaceC1408Yo = (InterfaceC1408Yo) c7m.A1F(A25)) == null) {
                 return;
             }
-            interfaceC1388Yo.AJF();
+            interfaceC1408Yo.AJF();
         }
     }
 }

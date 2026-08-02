@@ -1,6 +1,6 @@
 package com.anythink.core.common.m.a.a;
 
-import D.y;
+import D.x;
 import android.os.SystemClock;
 import android.text.TextUtils;
 import com.anythink.core.common.m.b.g;
@@ -17,24 +17,24 @@ import java.util.List;
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f14418a = "a";
+    private static final String f15204a = "a";
 
     /* renamed from: b, reason: collision with root package name */
-    private final String f14419b;
+    private final String f15205b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final String f14420c;
+    private final String f15206c;
 
     /* renamed from: d, reason: collision with root package name */
-    private com.anythink.core.common.m.b.a f14421d;
+    private com.anythink.core.common.m.b.a f15207d;
 
     public a(String str, String str2) {
-        this.f14419b = str;
-        this.f14420c = str2;
+        this.f15205b = str;
+        this.f15206c = str2;
     }
 
     public final com.anythink.core.common.m.b.a a() {
-        return this.f14421d;
+        return this.f15207d;
     }
 
     private static boolean b(com.anythink.core.common.m.b.d dVar) {
@@ -49,10 +49,10 @@ public class a {
             return null;
         }
         com.anythink.core.common.m.b.a aVar = new com.anythink.core.common.m.b.a();
-        aVar.d(this.f14419b);
-        aVar.e(this.f14420c);
+        aVar.d(this.f15205b);
+        aVar.e(this.f15206c);
         aVar.b(g.a(dVar.b()));
-        this.f14421d = aVar;
+        this.f15207d = aVar;
         return new C0085a(aVar, dVar.b());
     }
 
@@ -60,14 +60,14 @@ public class a {
     public static class C0085a implements com.anythink.core.common.m.a.d {
 
         /* renamed from: a, reason: collision with root package name */
-        private final com.anythink.core.common.m.b.a f14422a;
+        private final com.anythink.core.common.m.b.a f15208a;
 
         /* renamed from: b, reason: collision with root package name */
-        private final String f14423b;
+        private final String f15209b;
 
         public C0085a(com.anythink.core.common.m.b.a aVar, String str) {
-            this.f14422a = aVar;
-            this.f14423b = str;
+            this.f15208a = aVar;
+            this.f15209b = str;
         }
 
         private static List<InetAddress> b(String str, com.anythink.core.common.m.b.a aVar) {
@@ -91,7 +91,7 @@ public class a {
             }
             ArrayList arrayList = new ArrayList();
             Collections.addAll(arrayList, a11);
-            String unused = a.f14418a;
+            String unused = a.f15204a;
             arrayList.size();
             aVar.k();
             return arrayList;
@@ -104,20 +104,20 @@ public class a {
             com.anythink.core.common.n.a.c a9;
             long elapsedRealtime;
             ArrayList arrayList;
-            String unused = a.f14418a;
-            List<InetAddress> a10 = a(str, this.f14422a);
+            String unused = a.f15204a;
+            List<InetAddress> a10 = a(str, this.f15208a);
             if (a10 != null && !a10.isEmpty()) {
                 return a10;
             }
             try {
-                aVar = this.f14422a;
+                aVar = this.f15208a;
                 aVar.p();
                 a9 = com.anythink.core.common.n.a.c.a();
                 elapsedRealtime = SystemClock.elapsedRealtime();
             } catch (Throwable th2) {
                 th = th2;
-                String unused2 = a.f14418a;
-                this.f14422a.c(th + ": " + th.getMessage());
+                String unused2 = a.f15204a;
+                this.f15208a.c(th + ": " + th.getMessage());
             }
             if (!a9.b()) {
                 throw new IllegalArgumentException("init custom dns server failed.");
@@ -137,7 +137,7 @@ public class a {
             } else {
                 arrayList = new ArrayList();
                 Collections.addAll(arrayList, a12);
-                String unused3 = a.f14418a;
+                String unused3 = a.f15204a;
                 arrayList.size();
                 aVar.k();
             }
@@ -145,11 +145,11 @@ public class a {
                 return arrayList;
             }
             if (th == null) {
-                String o6 = y.o("cant not resolve \"", str, "\".");
-                if (TextUtils.isEmpty(this.f14422a.l())) {
-                    this.f14422a.c(o6);
+                String l9 = x.l("cant not resolve \"", str, "\".");
+                if (TextUtils.isEmpty(this.f15208a.l())) {
+                    this.f15208a.c(l9);
                 }
-                throw new UnknownHostException(o6);
+                throw new UnknownHostException(l9);
             }
             throw new UnknownHostException(th + ": " + th.getMessage());
         }
@@ -157,16 +157,16 @@ public class a {
         private static List<InetAddress> a(String str, com.anythink.core.common.m.b.a aVar) {
             long elapsedRealtime = SystemClock.elapsedRealtime();
             try {
-                List<InetAddress> lookup = q.f15708a.lookup(str);
+                List<InetAddress> lookup = q.f16495a.lookup(str);
                 aVar.b(SystemClock.elapsedRealtime() - elapsedRealtime);
                 if (lookup == null || lookup.isEmpty()) {
                     return null;
                 }
-                String unused = a.f14418a;
+                String unused = a.f15204a;
                 lookup.size();
                 return lookup;
             } catch (Throwable th) {
-                String unused2 = a.f14418a;
+                String unused2 = a.f15204a;
                 aVar.h();
                 aVar.b(th + ": " + th.getMessage());
                 return null;

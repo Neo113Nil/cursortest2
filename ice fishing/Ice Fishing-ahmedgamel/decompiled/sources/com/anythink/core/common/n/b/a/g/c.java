@@ -4,7 +4,7 @@ import com.anythink.core.common.n.b.a.j.f;
 import com.anythink.core.common.n.b.aa;
 import com.anythink.core.common.n.b.ab;
 import com.anythink.core.common.n.b.z;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.lang.reflect.Field;
 import java.net.InetSocketAddress;
 import java.net.Socket;
@@ -23,24 +23,24 @@ import javax.net.ssl.X509TrustManager;
 public class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f15352a = 4;
+    public static final int f16139a = 4;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f15353b = 5;
+    public static final int f16140b = 5;
 
     /* renamed from: c, reason: collision with root package name */
-    private static final c f15354c;
+    private static final c f16141c;
 
     /* renamed from: d, reason: collision with root package name */
-    private static final Logger f15355d;
+    private static final Logger f16142d;
 
     static {
         c a9 = a.a();
         if (a9 == null && (a9 = b.b()) == null) {
             throw new NullPointerException("No platform found on Android");
         }
-        f15354c = a9;
-        f15355d = Logger.getLogger(z.class.getName());
+        f16141c = a9;
+        f16142d = Logger.getLogger(z.class.getName());
     }
 
     private static c d() {
@@ -56,11 +56,11 @@ public class c {
     }
 
     public static c e() {
-        return f15354c;
+        return f16141c;
     }
 
     public static String f() {
-        return aa.f15462a;
+        return aa.f16249a;
     }
 
     public static boolean g() {
@@ -110,7 +110,7 @@ public class c {
         if (a9 != null) {
             return a(a9);
         }
-        throw new IllegalStateException("Unable to extract the trust manager on " + f15354c + ", sslSocketFactory is " + sSLSocketFactory.getClass());
+        throw new IllegalStateException("Unable to extract the trust manager on " + f16141c + ", sslSocketFactory is " + sSLSocketFactory.getClass());
     }
 
     public void a(SSLSocket sSLSocket, String str, List<ab> list) {
@@ -140,11 +140,11 @@ public class c {
     }
 
     public void a(int i, String str, Throwable th) {
-        f15355d.log(i == 5 ? Level.WARNING : Level.INFO, str, th);
+        f16142d.log(i == 5 ? Level.WARNING : Level.INFO, str, th);
     }
 
     public Object a(String str) {
-        if (f15355d.isLoggable(Level.FINE)) {
+        if (f16142d.isLoggable(Level.FINE)) {
             return new Throwable(str);
         }
         return null;
@@ -165,7 +165,7 @@ public class c {
 
     public void a(String str, Object obj) {
         if (obj == null) {
-            str = AbstractC4404f.f(str, " To see where this was allocated, set the OkHttpClient logger level to FINE: Logger.getLogger(OkHttpClient.class.getName()).setLevel(Level.FINE);");
+            str = Wv.g(str, " To see where this was allocated, set the OkHttpClient logger level to FINE: Logger.getLogger(OkHttpClient.class.getName()).setLevel(Level.FINE);");
         }
         a(5, str, (Throwable) obj);
     }

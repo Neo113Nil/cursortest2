@@ -34,49 +34,49 @@ import java.util.concurrent.ConcurrentHashMap;
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f23224a = "a";
+    public static final String f24011a = "a";
 
     /* renamed from: e, reason: collision with root package name */
-    private static Map<String, a> f23225e = new ConcurrentHashMap(3);
+    private static Map<String, a> f24012e = new ConcurrentHashMap(3);
 
     /* renamed from: b, reason: collision with root package name */
-    private Context f23226b;
+    private Context f24013b;
 
     /* renamed from: c, reason: collision with root package name */
-    private String f23227c;
+    private String f24014c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final com.anythink.core.common.f f23228d;
+    private final com.anythink.core.common.f f24015d;
 
     /* renamed from: com.anythink.rewardvideo.a.a$2, reason: invalid class name */
     public class AnonymousClass2 implements a.InterfaceC0084a {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ CustomRewardVideoAdapter f23240a;
+        final /* synthetic */ CustomRewardVideoAdapter f24027a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ ATRewardVideoListener f23241b;
+        final /* synthetic */ ATRewardVideoListener f24028b;
 
         /* renamed from: c, reason: collision with root package name */
-        final /* synthetic */ Activity f23242c;
+        final /* synthetic */ Activity f24029c;
 
         public AnonymousClass2(CustomRewardVideoAdapter customRewardVideoAdapter, ATRewardVideoListener aTRewardVideoListener, Activity activity) {
-            this.f23240a = customRewardVideoAdapter;
-            this.f23241b = aTRewardVideoListener;
-            this.f23242c = activity;
+            this.f24027a = customRewardVideoAdapter;
+            this.f24028b = aTRewardVideoListener;
+            this.f24029c = activity;
         }
 
         @Override // com.anythink.core.common.l.f.a.a.InterfaceC0084a
         public final void a(final Activity activity, ViewGroup viewGroup) {
-            CustomRewardVideoAdapter customRewardVideoAdapter = this.f23240a;
+            CustomRewardVideoAdapter customRewardVideoAdapter = this.f24027a;
             t.b();
-            customRewardVideoAdapter.internalShow(activity, viewGroup, new e(new f(customRewardVideoAdapter, t.G(), this.f23241b), this.f23240a.isMixFormatAd(), this.f23240a.getAdRewardCallbackType()) { // from class: com.anythink.rewardvideo.a.a.2.1
+            customRewardVideoAdapter.internalShow(activity, viewGroup, new e(new f(customRewardVideoAdapter, t.G(), this.f24028b), this.f24027a.isMixFormatAd(), this.f24027a.getAdRewardCallbackType()) { // from class: com.anythink.rewardvideo.a.a.2.1
                 @Override // com.anythink.rewardvideo.a.d, com.anythink.core.api.ATCommonImpressionListener
                 public final void onAdDismiss() {
                     t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.a.a.2.1.1
                         @Override // java.lang.Runnable
                         public final void run() {
-                            if (AnonymousClass2.this.f23242c.isFinishing()) {
+                            if (AnonymousClass2.this.f24029c.isFinishing()) {
                                 return;
                             }
                             activity.finish();
@@ -89,13 +89,13 @@ public class a {
     }
 
     private a(Context context, String str) {
-        this.f23226b = context.getApplicationContext();
-        this.f23227c = str;
-        this.f23228d = com.anythink.core.common.f.a(context, str, "1");
+        this.f24013b = context.getApplicationContext();
+        this.f24014c = str;
+        this.f24015d = com.anythink.core.common.f.a(context, str, "1");
     }
 
     public static a a(Context context, String str) {
-        a aVar = f23225e.get(str);
+        a aVar = f24012e.get(str);
         if (aVar != null) {
             return aVar;
         }
@@ -103,7 +103,7 @@ public class a {
             if (aVar == null) {
                 try {
                     aVar = new a(context, str);
-                    f23225e.put(str, aVar);
+                    f24012e.put(str, aVar);
                 } catch (Throwable th) {
                     throw th;
                 }
@@ -120,13 +120,13 @@ public class a {
             if (aTShowConfig != null) {
                 aeVar.a(aTShowConfig.getATAdInfo());
             }
-            com.anythink.core.common.f fVar = this.f23228d;
+            com.anythink.core.common.f fVar = this.f24015d;
             if (fVar != null) {
                 aeVar.a(fVar.i());
             }
-            final com.anythink.core.common.h.c b9 = this.f23228d.b((Context) activity, false, true, aeVar);
+            final com.anythink.core.common.h.c b9 = this.f24015d.b((Context) activity, false, true, aeVar);
             if (b9 != null && (b9.e() instanceof CustomRewardVideoAdapter)) {
-                this.f23228d.a(b9);
+                this.f24015d.a(b9);
                 b9.a(b9.c() + 1);
                 com.anythink.core.common.v.b.b.a().a(new Runnable() { // from class: com.anythink.rewardvideo.a.a.1
                     @Override // java.lang.Runnable
@@ -145,16 +145,16 @@ public class a {
                             str2 = "";
                         }
                         if (trackingInfo != null) {
-                            trackingInfo.f14011F = str;
+                            trackingInfo.f14797F = str;
                             trackingInfo.z(str2);
                             trackingInfo.n(p.a(trackingInfo.aJ(), trackingInfo.M(), currentTimeMillis));
-                            aj.a(a.this.f23226b, trackingInfo);
+                            aj.a(a.this.f24013b, trackingInfo);
                             aj.a((Map<String, Object>) map, trackingInfo);
-                            aj.a(a.this.f23227c, trackingInfo);
+                            aj.a(a.this.f24014c, trackingInfo);
                         }
-                        com.anythink.core.common.a.a().a(a.this.f23226b, b9);
-                        com.anythink.core.common.u.c.a(a.this.f23226b).a(13, trackingInfo, b9.e().getUnitGroupInfo(), currentTimeMillis);
-                        com.anythink.core.common.v.d.a().a(trackingInfo, b9.e().getUnitGroupInfo(), com.anythink.core.common.v.d.f16729b);
+                        com.anythink.core.common.a.a().a(a.this.f24013b, b9);
+                        com.anythink.core.common.u.c.a(a.this.f24013b).a(13, trackingInfo, b9.e().getUnitGroupInfo(), currentTimeMillis);
+                        com.anythink.core.common.v.d.a().a(trackingInfo, b9.e().getUnitGroupInfo(), com.anythink.core.common.v.d.f17516b);
                         final CustomRewardVideoAdapter customRewardVideoAdapter = (CustomRewardVideoAdapter) b9.e();
                         Activity activity2 = activity;
                         if (activity2 != null) {
@@ -185,7 +185,7 @@ public class a {
                     }
                 });
             } else {
-                if (this.f23228d.a((ATAdStatusInfo) null, 7)) {
+                if (this.f24015d.a((ATAdStatusInfo) null, 7)) {
                     a(t.b().M(), 7, null, null, null, map, null);
                 }
                 AdError errorCode = ErrorCode.getErrorCode(ErrorCode.noADError, "", "No Cache.");
@@ -204,7 +204,7 @@ public class a {
         if (aTShowConfig != null) {
             aeVar.a(aTShowConfig.getATAdInfo());
         }
-        com.anythink.core.common.f fVar = this.f23228d;
+        com.anythink.core.common.f fVar = this.f24015d;
         if (fVar != null) {
             aeVar.a(fVar.i());
         }
@@ -215,23 +215,23 @@ public class a {
         ar arVar = new ar();
         arVar.a(context);
         arVar.a(aTAdRequest);
-        arVar.f13547c = i;
-        arVar.f13548d = cVar;
-        arVar.f13550f = aTAdMultipleLoadedListener;
+        arVar.f14333c = i;
+        arVar.f14334d = cVar;
+        arVar.f14336f = aTAdMultipleLoadedListener;
         if (map != null) {
             try {
-                arVar.f13551g = new HashMap(map);
+                arVar.f14337g = new HashMap(map);
             } catch (Throwable unused) {
             }
         }
         if (aTAdRequest != null) {
-            arVar.f13555l = aTAdRequest.getATAdxBidFloorInfo();
+            arVar.f14341l = aTAdRequest.getATAdxBidFloorInfo();
         }
-        this.f23228d.b(this.f23226b, "1", this.f23227c, arVar, aVar);
+        this.f24015d.b(this.f24013b, "1", this.f24014c, arVar, aVar);
     }
 
     public final List<ATAdInfo> a(Context context) {
-        com.anythink.core.common.f fVar = this.f23228d;
+        com.anythink.core.common.f fVar = this.f24015d;
         if (fVar != null) {
             return fVar.a(context);
         }
@@ -239,7 +239,7 @@ public class a {
     }
 
     public final ATAdStatusInfo a(Context context, Map<String, Object> map) {
-        com.anythink.core.common.f fVar = this.f23228d;
+        com.anythink.core.common.f fVar = this.f24015d;
         if (fVar != null) {
             return fVar.a(context, map);
         }
@@ -261,7 +261,7 @@ public class a {
             }
             return;
         }
-        cVar.f11920d = com.anythink.core.common.f.a(this.f23227c, unitGroupInfo.z(), String.valueOf(unitGroupInfo.g()));
+        cVar.f12706d = com.anythink.core.common.f.a(this.f24014c, unitGroupInfo.z(), String.valueOf(unitGroupInfo.g()));
         ((com.anythink.core.common.l.c.a.e) a9).a(activity, cVar, new AnonymousClass2(customRewardVideoAdapter, aTRewardVideoListener, activity));
     }
 
@@ -278,7 +278,7 @@ public class a {
                 }
                 return;
             }
-            cVar.f11920d = com.anythink.core.common.f.a(aVar.f23227c, unitGroupInfo.z(), String.valueOf(unitGroupInfo.g()));
+            cVar.f12706d = com.anythink.core.common.f.a(aVar.f24014c, unitGroupInfo.z(), String.valueOf(unitGroupInfo.g()));
             ((com.anythink.core.common.l.c.a.e) a9).a(activity, cVar, aVar.new AnonymousClass2(customRewardVideoAdapter, aTRewardVideoListener, activity));
         }
     }

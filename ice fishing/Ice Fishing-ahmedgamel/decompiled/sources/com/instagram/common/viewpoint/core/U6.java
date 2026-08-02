@@ -16,10 +16,10 @@ public abstract class U6 {
         A03();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 65);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 65);
         }
         return new String(copyOfRange);
     }
@@ -28,12 +28,12 @@ public abstract class U6 {
         A00 = new byte[]{-74, -72, -85, -84, -59, -71, -86, -79, -59, -87, -89, -87, -82, -85, -35, -33, -46, -45, -20, -32, -47, -40, -20, -38, -50, -37, -50, -44, -46, -47, -20, -48, -50, -48, -43, -46, -54, -56, -54, -49, -52, -28, -31, -12, -27, -33, -13, -27, -12, 33, 52, 44, 37, 46, 33, 47, 27, 37, 42, -40, -61, -50, -41, -57};
     }
 
-    public static String A01(C1836ge c1836ge) {
-        return WN.A00(c1836ge).getString(A00(0, 14, 37), null);
+    public static String A01(C1856ge c1856ge) {
+        return WN.A00(c1856ge).getString(A00(0, 14, 37), null);
     }
 
-    public static Map<String, String> A02(C1836ge c1836ge) {
-        String sdkCache = WN.A00(c1836ge).getString(A00(14, 22, 76), null);
+    public static Map<String, String> A02(C1856ge c1856ge) {
+        String sdkCache = WN.A00(c1856ge).getString(A00(14, 22, 76), null);
         if (sdkCache == null) {
             return null;
         }
@@ -56,24 +56,24 @@ public abstract class U6 {
                 while (it.hasNext()) {
                     jSONObject.remove((String) it.next());
                 }
-                A06(c1836ge, jSONObject);
+                A06(c1856ge, jSONObject);
             }
             return hashMap;
         } catch (JSONException e9) {
-            c1836ge.A08().ABC(A00(36, 5, 38), AbstractC1252Td.A2U, new C1253Te(e9));
+            c1856ge.A08().ABC(A00(36, 5, 38), AbstractC1272Td.A2U, new C1273Te(e9));
             return null;
         }
     }
 
-    public static void A04(C1836ge c1836ge, String str) {
-        WN.A00(c1836ge).edit().putString(A00(0, 14, 37), str).apply();
+    public static void A04(C1856ge c1856ge, String str) {
+        WN.A00(c1856ge).edit().putString(A00(0, 14, 37), str).apply();
     }
 
-    public static void A05(C1836ge c1836ge, String str) {
+    public static void A05(C1856ge c1856ge, String str) {
         if (str == null) {
             return;
         }
-        String sdkCache = WN.A00(c1836ge).getString(A00(14, 22, 76), null);
+        String sdkCache = WN.A00(c1856ge).getString(A00(14, 22, 76), null);
         try {
             JSONObject jSONObject = sdkCache == null ? new JSONObject() : new JSONObject(sdkCache);
             JSONObject jSONObject2 = new JSONObject(str);
@@ -84,13 +84,13 @@ public abstract class U6 {
                 jSONObject3.put(A00(41, 8, 63), System.currentTimeMillis());
                 jSONObject.put(key, jSONObject3);
             }
-            A06(c1836ge, jSONObject);
+            A06(c1856ge, jSONObject);
         } catch (JSONException e9) {
-            c1836ge.A08().ABC(A00(36, 5, 38), AbstractC1252Td.A2V, new C1253Te(e9));
+            c1856ge.A08().ABC(A00(36, 5, 38), AbstractC1272Td.A2V, new C1273Te(e9));
         }
     }
 
-    public static void A06(C1836ge c1836ge, JSONObject jSONObject) {
-        WN.A00(c1836ge).edit().putString(A00(14, 22, 76), jSONObject.toString()).apply();
+    public static void A06(C1856ge c1856ge, JSONObject jSONObject) {
+        WN.A00(c1856ge).edit().putString(A00(14, 22, 76), jSONObject.toString()).apply();
     }
 }

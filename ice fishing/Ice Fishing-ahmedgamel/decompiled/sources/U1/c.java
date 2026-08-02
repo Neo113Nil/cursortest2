@@ -1,51 +1,22 @@
 package U1;
 
+import android.util.Property;
+
 /* loaded from: classes.dex */
-public final class c extends S1.a {
+public abstract class c {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final float[] f3282a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final /* synthetic */ int f3168b;
+    public final Property f3283b;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public /* synthetic */ c(String str, int i) {
-        super(str, 0);
-        this.f3168b = i;
-    }
+    /* renamed from: c, reason: collision with root package name */
+    public final Object[] f3284c;
 
-    @Override // S1.a
-    public final void b(Object obj, float f3) {
-        switch (this.f3168b) {
-            case 0:
-                ((e) obj).g(f3);
-                break;
-            case 1:
-                ((e) obj).f3183E = f3;
-                break;
-            case 2:
-                ((e) obj).f3184F = f3;
-                break;
-            case 3:
-                ((e) obj).f3190u = f3;
-                break;
-            default:
-                ((e) obj).f3191v = f3;
-                break;
-        }
-    }
-
-    @Override // android.util.Property
-    public final Object get(Object obj) {
-        switch (this.f3168b) {
-            case 0:
-                return Float.valueOf(((e) obj).f3189n);
-            case 1:
-                return Float.valueOf(((e) obj).f3183E);
-            case 2:
-                return Float.valueOf(((e) obj).f3184F);
-            case 3:
-                return Float.valueOf(((e) obj).f3190u);
-            default:
-                return Float.valueOf(((e) obj).f3191v);
-        }
+    public c(float[] fArr, Property property, Object[] objArr) {
+        this.f3282a = fArr;
+        this.f3283b = property;
+        this.f3284c = objArr;
     }
 }

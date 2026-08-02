@@ -14,11 +14,11 @@ public interface ServiceWorkerWebSettingsBoundaryInterface {
 
     Set<String> getRequestedWithHeaderOriginAllowList();
 
-    void setAllowContentAccess(boolean z3);
+    void setAllowContentAccess(boolean z6);
 
-    void setAllowFileAccess(boolean z3);
+    void setAllowFileAccess(boolean z6);
 
-    void setBlockNetworkLoads(boolean z3);
+    void setBlockNetworkLoads(boolean z6);
 
     void setCacheMode(int i);
 

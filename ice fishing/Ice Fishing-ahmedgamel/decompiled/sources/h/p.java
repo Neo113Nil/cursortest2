@@ -9,64 +9,64 @@ import android.view.View;
 import android.view.ViewGroup;
 import java.lang.ref.WeakReference;
 import java.util.Iterator;
-import k.AbstractC4615b;
-import k.InterfaceC4614a;
+import k.AbstractC4625b;
+import k.InterfaceC4624a;
 
 /* loaded from: classes.dex */
 public abstract class p {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final T0.l f37905n = new T0.l(new N1.f(3));
+    public static final T0.l f37931n = new T0.l(new P1.f(3));
 
     /* renamed from: u, reason: collision with root package name */
-    public static final int f37906u = -100;
+    public static final int f37932u = -100;
 
     /* renamed from: v, reason: collision with root package name */
-    public static K.l f37907v = null;
+    public static K.l f37933v = null;
 
     /* renamed from: w, reason: collision with root package name */
-    public static K.l f37908w = null;
+    public static K.l f37934w = null;
 
     /* renamed from: x, reason: collision with root package name */
-    public static Boolean f37909x = null;
+    public static Boolean f37935x = null;
 
     /* renamed from: y, reason: collision with root package name */
-    public static boolean f37910y = false;
+    public static boolean f37936y = false;
 
     /* renamed from: z, reason: collision with root package name */
-    public static final s.c f37911z = new s.c(0);
+    public static final s.c f37937z = new s.c(0);
 
     /* renamed from: A, reason: collision with root package name */
-    public static final Object f37903A = new Object();
+    public static final Object f37929A = new Object();
 
     /* renamed from: B, reason: collision with root package name */
-    public static final Object f37904B = new Object();
+    public static final Object f37930B = new Object();
 
     public static boolean c(Context context) {
-        if (f37909x == null) {
+        if (f37935x == null) {
             try {
-                int i = AbstractServiceC4538F.f37817n;
-                Bundle bundle = context.getPackageManager().getServiceInfo(new ComponentName(context, (Class<?>) AbstractServiceC4538F.class), AbstractC4537E.a() | 128).metaData;
+                int i = AbstractServiceC4542F.f37842n;
+                Bundle bundle = context.getPackageManager().getServiceInfo(new ComponentName(context, (Class<?>) AbstractServiceC4542F.class), AbstractC4541E.a() | 128).metaData;
                 if (bundle != null) {
-                    f37909x = Boolean.valueOf(bundle.getBoolean("autoStoreLocales"));
+                    f37935x = Boolean.valueOf(bundle.getBoolean("autoStoreLocales"));
                 }
             } catch (PackageManager.NameNotFoundException unused) {
                 Log.d("AppCompatDelegate", "Checking for metadata for AppLocalesMetadataHolderService : Service not found");
-                f37909x = Boolean.FALSE;
+                f37935x = Boolean.FALSE;
             }
         }
-        return f37909x.booleanValue();
+        return f37935x.booleanValue();
     }
 
-    public static void f(LayoutInflaterFactory2C4533A layoutInflaterFactory2C4533A) {
-        synchronized (f37903A) {
+    public static void f(LayoutInflaterFactory2C4537A layoutInflaterFactory2C4537A) {
+        synchronized (f37929A) {
             try {
-                Iterator it = f37911z.iterator();
+                Iterator it = f37937z.iterator();
                 while (true) {
                     s.f fVar = (s.f) it;
                     if (fVar.hasNext()) {
                         p pVar = (p) ((WeakReference) fVar.next()).get();
-                        if (pVar == layoutInflaterFactory2C4533A || pVar == null) {
+                        if (pVar == layoutInflaterFactory2C4537A || pVar == null) {
                             fVar.remove();
                         }
                     }
@@ -87,13 +87,13 @@ public abstract class p {
 
     public abstract boolean g(int i);
 
-    public abstract void h(int i);
+    public abstract void i(int i);
 
-    public abstract void i(View view);
+    public abstract void j(View view);
 
-    public abstract void j(View view, ViewGroup.LayoutParams layoutParams);
+    public abstract void k(View view, ViewGroup.LayoutParams layoutParams);
 
     public abstract void l(CharSequence charSequence);
 
-    public abstract AbstractC4615b m(InterfaceC4614a interfaceC4614a);
+    public abstract AbstractC4625b n(InterfaceC4624a interfaceC4624a);
 }

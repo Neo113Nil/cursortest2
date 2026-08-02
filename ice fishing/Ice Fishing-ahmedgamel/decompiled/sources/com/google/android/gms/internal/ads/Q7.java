@@ -8,33 +8,33 @@ import java.util.concurrent.Callable;
 public abstract class Q7 implements Callable {
 
     /* renamed from: a, reason: collision with root package name */
-    public final C4196y7 f26979a;
+    public final C4219y7 f27766a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f26980b;
+    public final String f27767b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final String f26981c;
+    public final String f27768c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final C3979u6 f26982d;
+    public final C4002u6 f27769d;
 
     /* renamed from: e, reason: collision with root package name */
-    public Method f26983e;
+    public Method f27770e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final int f26984f;
+    public final int f27771f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final int f26985g;
+    public final int f27772g;
 
-    public Q7(C4196y7 c4196y7, String str, String str2, C3979u6 c3979u6, int i, int i6) {
-        this.f26979a = c4196y7;
-        this.f26980b = str;
-        this.f26981c = str2;
-        this.f26982d = c3979u6;
-        this.f26984f = i;
-        this.f26985g = i6;
+    public Q7(C4219y7 c4219y7, String str, String str2, C4002u6 c4002u6, int i, int i4) {
+        this.f27766a = c4219y7;
+        this.f27767b = str;
+        this.f27768c = str2;
+        this.f27769d = c4002u6;
+        this.f27771f = i;
+        this.f27772g = i4;
     }
 
     public abstract void a();
@@ -44,18 +44,18 @@ public abstract class Q7 implements Callable {
         int i;
         try {
             long nanoTime = System.nanoTime();
-            C4196y7 c4196y7 = this.f26979a;
-            Method d2 = c4196y7.d(this.f26980b, this.f26981c);
-            this.f26983e = d2;
-            if (d2 == null) {
+            C4219y7 c4219y7 = this.f27766a;
+            Method d9 = c4219y7.d(this.f27767b, this.f27768c);
+            this.f27770e = d9;
+            if (d9 == null) {
                 return null;
             }
             a();
-            C3281h7 c3281h7 = c4196y7.f35104k;
-            if (c3281h7 == null || (i = this.f26984f) == Integer.MIN_VALUE) {
+            C3304h7 c3304h7 = c4219y7.f35890k;
+            if (c3304h7 == null || (i = this.f27771f) == Integer.MIN_VALUE) {
                 return null;
             }
-            c3281h7.a(this.f26985g, i, (System.nanoTime() - nanoTime) / 1000, null, null);
+            c3304h7.a(this.f27772g, i, (System.nanoTime() - nanoTime) / 1000, null, null);
             return null;
         } catch (IllegalAccessException | InvocationTargetException unused) {
             return null;

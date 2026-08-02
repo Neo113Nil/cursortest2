@@ -1,6 +1,6 @@
 package com.bumptech.glide.load;
 
-import s1.AbstractC4968c;
+import u1.AbstractC5064c;
 
 /* loaded from: classes.dex */
 public enum ImageHeaderParser$ImageType {
@@ -18,18 +18,18 @@ public enum ImageHeaderParser$ImageType {
 
 
     /* renamed from: n, reason: collision with root package name */
-    public final boolean f23415n;
+    public final boolean f24202n;
 
-    ImageHeaderParser$ImageType(boolean z3) {
-        this.f23415n = z3;
+    ImageHeaderParser$ImageType(boolean z6) {
+        this.f24202n = z6;
     }
 
     public boolean hasAlpha() {
-        return this.f23415n;
+        return this.f24202n;
     }
 
     public boolean isWebp() {
-        int i = AbstractC4968c.f40450a[ordinal()];
+        int i = AbstractC5064c.f41004a[ordinal()];
         return i == 1 || i == 2 || i == 3;
     }
 }

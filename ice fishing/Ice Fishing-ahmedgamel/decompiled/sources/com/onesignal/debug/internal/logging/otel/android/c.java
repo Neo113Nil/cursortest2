@@ -1,6 +1,6 @@
 package com.onesignal.debug.internal.logging.otel.android;
 
-import a.AbstractC0422a;
+import N3.C;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.os.Build;
@@ -11,32 +11,32 @@ import java.util.Iterator;
 import java.util.List;
 import kotlin.jvm.internal.h;
 import kotlin.jvm.internal.i;
-import u7.InterfaceC5087e;
-import v7.C5135p;
-import z7.InterfaceC5267d;
+import u7.InterfaceC5079e;
+import v7.C5125p;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class c implements F5.f {
     private final String apiBaseUrl;
-    private final InterfaceC5087e appId$delegate;
+    private final InterfaceC5079e appId$delegate;
     private final String appPackageId;
     private final String appVersion;
     private final Context context;
-    private final InterfaceC5087e crashStoragePath$delegate;
+    private final InterfaceC5079e crashStoragePath$delegate;
     private final String deviceManufacturer;
     private final String deviceModel;
     private final I7.a featureManagerProvider;
     private final I7.a getIsInForeground;
     private final com.onesignal.debug.internal.logging.otel.android.b idResolver;
     private final boolean isOtelExporterLoggingEnabled;
-    private final InterfaceC5087e isRemoteLoggingEnabled$delegate;
+    private final InterfaceC5079e isRemoteLoggingEnabled$delegate;
     private final long minFileAgeForReadMillis;
-    private final InterfaceC5087e onesignalId$delegate;
+    private final InterfaceC5079e onesignalId$delegate;
     private final String osBuildId;
     private final String osName;
     private final String osVersion;
-    private final InterfaceC5087e pushSubscriptionId$delegate;
-    private final InterfaceC5087e remoteLogLevel$delegate;
+    private final InterfaceC5079e pushSubscriptionId$delegate;
+    private final InterfaceC5079e remoteLogLevel$delegate;
     private final String sdkBase;
     private final String sdkBaseVersion;
     private final String sdkWrapper;
@@ -150,13 +150,13 @@ public final class c implements F5.f {
         this.osBuildId = ID;
         this.sdkWrapper = com.onesignal.common.i.getSdkType();
         this.sdkWrapperVersion = com.onesignal.common.i.getSdkVersion();
-        this.appId$delegate = AbstractC0422a.q(new a());
-        this.onesignalId$delegate = AbstractC0422a.q(new d());
-        this.pushSubscriptionId$delegate = AbstractC0422a.q(new e());
-        this.crashStoragePath$delegate = AbstractC0422a.q(new b(config));
-        this.minFileAgeForReadMillis = com.anythink.basead.exoplayer.f.f7187a;
-        this.isRemoteLoggingEnabled$delegate = AbstractC0422a.q(new C0199c());
-        this.remoteLogLevel$delegate = AbstractC0422a.q(new f());
+        this.appId$delegate = C.O(new a());
+        this.onesignalId$delegate = C.O(new d());
+        this.pushSubscriptionId$delegate = C.O(new e());
+        this.crashStoragePath$delegate = C.O(new b(config));
+        this.minFileAgeForReadMillis = com.anythink.basead.exoplayer.f.f7973a;
+        this.isRemoteLoggingEnabled$delegate = C.O(new C0199c());
+        this.remoteLogLevel$delegate = C.O(new f());
         this.apiBaseUrl = "https://api.onesignal.com/";
     }
 
@@ -205,7 +205,7 @@ public final class c implements F5.f {
             if (aVar == null || (bool = (Boolean) aVar.invoke()) == null) {
                 Context context = this.context;
                 if (context == null) {
-                    return m.f16809e;
+                    return m.f17596e;
                 }
                 Object systemService = context.getSystemService("activity");
                 ActivityManager activityManager = systemService instanceof ActivityManager ? (ActivityManager) systemService : null;
@@ -235,7 +235,7 @@ public final class c implements F5.f {
             }
             return str;
         } catch (Exception unused) {
-            return m.f16809e;
+            return m.f17596e;
         }
     }
 
@@ -271,12 +271,12 @@ public final class c implements F5.f {
         try {
             return ((D4.e) this.featureManagerProvider.invoke()).enabledFeatureKeys();
         } catch (Throwable unused) {
-            return C5135p.f41442n;
+            return C5125p.f41221n;
         }
     }
 
     @Override // F5.f
-    public Object getInstallId(InterfaceC5267d interfaceC5267d) {
+    public Object getInstallId(InterfaceC5240d interfaceC5240d) {
         return this.idResolver.resolveInstallId();
     }
 

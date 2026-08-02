@@ -22,37 +22,37 @@ import java.util.concurrent.ExecutorService;
 public final class o {
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f22325c = "UnitCacheCtroller";
+    private static final String f23112c = "UnitCacheCtroller";
 
     /* renamed from: f, reason: collision with root package name */
-    private com.anythink.expressad.videocommon.d.c f22330f;
+    private com.anythink.expressad.videocommon.d.c f23117f;
 
     /* renamed from: g, reason: collision with root package name */
-    private ConcurrentHashMap<String, com.anythink.expressad.videocommon.d.c> f22331g;
+    private ConcurrentHashMap<String, com.anythink.expressad.videocommon.d.c> f23118g;
 
     /* renamed from: k, reason: collision with root package name */
-    private ExecutorService f22334k;
+    private ExecutorService f23121k;
 
     /* renamed from: m, reason: collision with root package name */
-    private String f22336m;
+    private String f23123m;
 
     /* renamed from: n, reason: collision with root package name */
-    private com.anythink.expressad.videocommon.e.d f22337n;
+    private com.anythink.expressad.videocommon.e.d f23124n;
 
     /* renamed from: p, reason: collision with root package name */
-    private int f22339p;
+    private int f23126p;
 
     /* renamed from: q, reason: collision with root package name */
-    private com.anythink.expressad.f.c f22340q;
+    private com.anythink.expressad.f.c f23127q;
 
     /* renamed from: d, reason: collision with root package name */
-    private List<com.anythink.expressad.foundation.d.d> f22328d = new ArrayList();
+    private List<com.anythink.expressad.foundation.d.d> f23115d = new ArrayList();
 
     /* renamed from: e, reason: collision with root package name */
-    private boolean f22329e = true;
+    private boolean f23116e = true;
 
     /* renamed from: h, reason: collision with root package name */
-    private f f22332h = new f() { // from class: com.anythink.expressad.videocommon.b.o.1
+    private f f23119h = new f() { // from class: com.anythink.expressad.videocommon.b.o.1
         @Override // com.anythink.expressad.videocommon.b.f
         public final void a(long j6, int i) {
             if (i == 5 || i == 4) {
@@ -67,34 +67,34 @@ public final class o {
     private CopyOnWriteArrayList<Map<String, c>> i = new CopyOnWriteArrayList<>();
 
     /* renamed from: l, reason: collision with root package name */
-    private long f22335l = com.anythink.expressad.f.a.b.f18401P;
+    private long f23122l = com.anythink.expressad.f.a.b.f19188P;
 
     /* renamed from: o, reason: collision with root package name */
-    private int f22338o = 2;
+    private int f23125o = 2;
 
     /* renamed from: a, reason: collision with root package name */
-    com.anythink.expressad.f.c f22326a = null;
+    com.anythink.expressad.f.c f23113a = null;
 
     /* renamed from: b, reason: collision with root package name */
-    com.anythink.expressad.f.c f22327b = null;
+    com.anythink.expressad.f.c f23114b = null;
 
     /* renamed from: j, reason: collision with root package name */
-    private Context f22333j = t.b().g();
+    private Context f23120j = t.b().g();
 
     public o(List<com.anythink.expressad.foundation.d.d> list, ExecutorService executorService, String str, int i) {
-        this.f22339p = 1;
-        List<com.anythink.expressad.foundation.d.d> list2 = this.f22328d;
+        this.f23126p = 1;
+        List<com.anythink.expressad.foundation.d.d> list2 = this.f23115d;
         if (list2 != null && list != null) {
             list2.addAll(list);
         }
-        this.f22334k = executorService;
-        this.f22336m = str;
-        this.f22339p = i;
-        c(this.f22328d);
+        this.f23121k = executorService;
+        this.f23123m = str;
+        this.f23126p = i;
+        c(this.f23115d);
     }
 
     public static /* synthetic */ boolean a(o oVar) {
-        oVar.f22329e = true;
+        oVar.f23116e = true;
         return true;
     }
 
@@ -112,9 +112,9 @@ public final class o {
                             while (it.hasNext()) {
                                 c value = it.next().getValue();
                                 if (value != null) {
-                                    if (currentTimeMillis - value.c() > this.f22335l * 1000 && value.k() == 1) {
+                                    if (currentTimeMillis - value.c() > this.f23122l * 1000 && value.k() == 1) {
                                         value.j();
-                                        value.a(this.f22338o);
+                                        value.a(this.f23125o);
                                         this.i.remove(map);
                                         i--;
                                     }
@@ -171,7 +171,7 @@ public final class o {
 
     private int h() {
         try {
-            com.anythink.expressad.f.c cVar = this.f22326a;
+            com.anythink.expressad.f.c cVar = this.f23113a;
             if (cVar != null) {
                 return cVar.f();
             }
@@ -209,16 +209,16 @@ public final class o {
             } catch (Throwable unused) {
             }
         }
-        List<com.anythink.expressad.foundation.d.d> list = this.f22328d;
+        List<com.anythink.expressad.foundation.d.d> list = this.f23115d;
         if (list == null || list.size() <= 0) {
             return;
         }
-        this.f22328d.clear();
+        this.f23115d.clear();
     }
 
     public static boolean b(List<com.anythink.expressad.foundation.d.d> list) {
         Bitmap a9;
-        boolean z3 = true;
+        boolean z6 = true;
         for (com.anythink.expressad.foundation.d.d dVar : list) {
             String J = dVar.J();
             String T8 = dVar.T();
@@ -226,10 +226,10 @@ public final class o {
             String bl = dVar.bl();
             String e9 = dVar.N() != null ? dVar.N().e() : "";
             dVar.N();
-            if (!z3 || TextUtils.isEmpty(e9) || e9.contains(com.anythink.expressad.foundation.d.d.f18580d) || b(dVar, e9)) {
-                boolean z6 = !dVar.j() || v.f(J);
-                if (!z3 || !z6 || b(J, dVar)) {
-                    if (z3 && !y.a(T8)) {
+            if (!z6 || TextUtils.isEmpty(e9) || e9.contains(com.anythink.expressad.foundation.d.d.f19367d) || b(dVar, e9)) {
+                boolean z9 = !dVar.j() || v.f(J);
+                if (!z6 || !z9 || b(J, dVar)) {
+                    if (z6 && !y.a(T8)) {
                         a.a();
                         String a10 = a.a(T8);
                         if (!y.a(a10)) {
@@ -237,10 +237,10 @@ public final class o {
                             }
                         }
                     }
-                    if (z3 && !TextUtils.isEmpty(bm) && ((a9 = com.anythink.expressad.foundation.g.d.a.a(u.a(bm))) == null || a9.isRecycled())) {
-                        z3 = false;
+                    if (z6 && !TextUtils.isEmpty(bm) && ((a9 = com.anythink.expressad.foundation.g.d.a.a(u.a(bm))) == null || a9.isRecycled())) {
+                        z6 = false;
                     }
-                    if (z3) {
+                    if (z6) {
                         if (!TextUtils.isEmpty(bl)) {
                             Bitmap a11 = com.anythink.expressad.foundation.g.d.a.a(u.a(bl));
                             if (a11 != null && !a11.isRecycled()) {
@@ -249,9 +249,9 @@ public final class o {
                     }
                 }
             }
-            z3 = false;
+            z6 = false;
         }
-        return z3;
+        return z6;
     }
 
     private void c(List<com.anythink.expressad.foundation.d.d> list) {
@@ -261,33 +261,33 @@ public final class o {
         }
         f();
         e();
-        int i = this.f22339p;
+        int i = this.f23126p;
         try {
             if (i != 1) {
                 if (i != 287) {
                     if (i == 298) {
                         com.anythink.expressad.f.b.a();
-                        com.anythink.expressad.f.c d2 = com.anythink.expressad.f.b.d(com.anythink.expressad.foundation.b.a.c().f(), this.f22336m);
-                        this.f22327b = d2;
-                        if (d2 == null) {
+                        com.anythink.expressad.f.c d9 = com.anythink.expressad.f.b.d(com.anythink.expressad.foundation.b.a.c().f(), this.f23123m);
+                        this.f23114b = d9;
+                        if (d9 == null) {
                             com.anythink.expressad.f.b.a();
-                            this.f22327b = com.anythink.expressad.f.b.b(com.anythink.expressad.foundation.b.a.c().f(), this.f22336m);
+                            this.f23114b = com.anythink.expressad.f.b.b(com.anythink.expressad.foundation.b.a.c().f(), this.f23123m);
                         }
-                        com.anythink.expressad.f.c cVar = this.f22327b;
+                        com.anythink.expressad.f.c cVar = this.f23114b;
                         if (cVar != null) {
-                            this.f22335l = cVar.i();
-                            this.f22338o = this.f22327b.m();
+                            this.f23122l = cVar.i();
+                            this.f23125o = this.f23114b.m();
                         }
                     } else if (i != 94) {
-                        if (i == 95 && !TextUtils.isEmpty(this.f22336m)) {
+                        if (i == 95 && !TextUtils.isEmpty(this.f23123m)) {
                             com.anythink.expressad.f.b.a();
-                            com.anythink.expressad.f.c c9 = com.anythink.expressad.f.b.c(com.anythink.expressad.foundation.b.a.c().f(), this.f22336m);
+                            com.anythink.expressad.f.c c9 = com.anythink.expressad.f.b.c(com.anythink.expressad.foundation.b.a.c().f(), this.f23123m);
                             if (c9 == null) {
-                                c9 = com.anythink.expressad.f.c.d(this.f22336m);
+                                c9 = com.anythink.expressad.f.c.d(this.f23123m);
                             }
                             if (c9 != null) {
-                                this.f22335l = c9.i();
-                                this.f22338o = c9.m();
+                                this.f23122l = c9.i();
+                                this.f23125o = c9.m();
                             }
                         }
                     }
@@ -298,59 +298,59 @@ public final class o {
                     com.anythink.expressad.videocommon.e.c.c();
                 }
                 if (b9 != null) {
-                    this.f22335l = b9.e();
+                    this.f23122l = b9.e();
                 }
-                if (!TextUtils.isEmpty(this.f22336m)) {
-                    this.f22337n = com.anythink.expressad.videocommon.e.c.a().a(com.anythink.expressad.foundation.b.a.c().f(), this.f22336m);
+                if (!TextUtils.isEmpty(this.f23123m)) {
+                    this.f23124n = com.anythink.expressad.videocommon.e.c.a().a(com.anythink.expressad.foundation.b.a.c().f(), this.f23123m);
                 }
-                com.anythink.expressad.videocommon.e.d dVar = this.f22337n;
+                com.anythink.expressad.videocommon.e.d dVar = this.f23124n;
                 if (dVar != null) {
-                    this.f22338o = dVar.F();
+                    this.f23125o = dVar.F();
                 }
-            } else if (!TextUtils.isEmpty(this.f22336m)) {
+            } else if (!TextUtils.isEmpty(this.f23123m)) {
                 com.anythink.expressad.f.b.a();
-                com.anythink.expressad.f.c c10 = com.anythink.expressad.f.b.c(com.anythink.expressad.foundation.b.a.c().f(), this.f22336m);
-                this.f22326a = c10;
+                com.anythink.expressad.f.c c10 = com.anythink.expressad.f.b.c(com.anythink.expressad.foundation.b.a.c().f(), this.f23123m);
+                this.f23113a = c10;
                 if (c10 == null) {
-                    this.f22326a = com.anythink.expressad.f.c.c(this.f22336m);
+                    this.f23113a = com.anythink.expressad.f.c.c(this.f23123m);
                 }
-                com.anythink.expressad.f.c cVar2 = this.f22326a;
+                com.anythink.expressad.f.c cVar2 = this.f23113a;
                 if (cVar2 != null) {
-                    this.f22335l = cVar2.i();
-                    this.f22338o = this.f22326a.m();
+                    this.f23122l = cVar2.i();
+                    this.f23125o = this.f23113a.m();
                 }
             }
-            for (int i6 = 0; i6 < list.size(); i6++) {
-                com.anythink.expressad.foundation.d.d dVar2 = list.get(i6);
+            for (int i4 = 0; i4 < list.size(); i4++) {
+                com.anythink.expressad.foundation.d.d dVar2 = list.get(i4);
                 if (dVar2 != null) {
-                    int i9 = this.f22339p;
-                    String str = (i9 == 94 || i9 == 287) ? dVar2.aa() + dVar2.bh() + dVar2.T() : dVar2.bh() + dVar2.T() + dVar2.C();
+                    int i6 = this.f23126p;
+                    String str = (i6 == 94 || i6 == 287) ? dVar2.aa() + dVar2.bh() + dVar2.T() : dVar2.bh() + dVar2.T() + dVar2.C();
                     if ((c(dVar2) || !TextUtils.isEmpty(dVar2.T())) && (copyOnWriteArrayList = this.i) != null) {
                         synchronized (copyOnWriteArrayList) {
-                            int i10 = 0;
+                            int i9 = 0;
                             while (true) {
                                 try {
-                                    if (i10 >= this.i.size()) {
-                                        c cVar3 = new c(this.f22333j, dVar2, this.f22334k, this.f22336m);
-                                        cVar3.a(this.f22338o);
-                                        cVar3.e(this.f22339p);
+                                    if (i9 >= this.i.size()) {
+                                        c cVar3 = new c(this.f23120j, dVar2, this.f23121k, this.f23123m);
+                                        cVar3.a(this.f23125o);
+                                        cVar3.e(this.f23126p);
                                         HashMap hashMap = new HashMap();
                                         hashMap.put(str, cVar3);
                                         this.i.add(hashMap);
                                         break;
                                     }
-                                    Map<String, c> map = this.i.get(i10);
+                                    Map<String, c> map = this.i.get(i9);
                                     if (map == null || !map.containsKey(str)) {
-                                        i10++;
+                                        i9++;
                                     } else {
                                         c cVar4 = map.get(str);
                                         if (cVar4 != null) {
                                             cVar4.a(dVar2);
-                                            cVar4.a(this.f22338o);
+                                            cVar4.a(this.f23125o);
                                             cVar4.a(false);
                                             map.remove(str);
                                             map.put(str, cVar4);
-                                            this.i.set(i10, map);
+                                            this.i.set(i9, map);
                                         }
                                     }
                                 } catch (Throwable unused) {
@@ -360,43 +360,43 @@ public final class o {
                     }
                 }
             }
-            List<com.anythink.expressad.foundation.d.d> list2 = this.f22328d;
+            List<com.anythink.expressad.foundation.d.d> list2 = this.f23115d;
             if (list2 == null || list2.size() <= 0) {
                 return;
             }
-            this.f22328d.clear();
+            this.f23115d.clear();
         } catch (Exception unused2) {
         }
     }
 
     public final void a(com.anythink.expressad.videocommon.d.c cVar) {
-        this.f22330f = cVar;
+        this.f23117f = cVar;
     }
 
     public final void a(String str, com.anythink.expressad.videocommon.d.c cVar) {
-        if (this.f22331g == null) {
-            this.f22331g = new ConcurrentHashMap<>();
+        if (this.f23118g == null) {
+            this.f23118g = new ConcurrentHashMap<>();
         }
-        this.f22331g.put(str, cVar);
+        this.f23118g.put(str, cVar);
     }
 
     public final void a(List<com.anythink.expressad.foundation.d.d> list) {
-        List<com.anythink.expressad.foundation.d.d> list2 = this.f22328d;
+        List<com.anythink.expressad.foundation.d.d> list2 = this.f23115d;
         if (list2 != null && list != null) {
             list2.addAll(list);
         }
-        c(this.f22328d);
+        c(this.f23115d);
     }
 
     public final void a(com.anythink.expressad.foundation.d.d dVar) {
-        List<com.anythink.expressad.foundation.d.d> list = this.f22328d;
+        List<com.anythink.expressad.foundation.d.d> list = this.f23115d;
         if (list != null && dVar != null) {
             list.add(dVar);
         }
-        c(this.f22328d);
+        c(this.f23115d);
     }
 
-    public final List<c> a(boolean z3, List<com.anythink.expressad.foundation.d.d> list) {
+    public final List<c> a(boolean z6, List<com.anythink.expressad.foundation.d.d> list) {
         long j6;
         ArrayList arrayList = new ArrayList();
         CopyOnWriteArrayList<Map<String, c>> copyOnWriteArrayList = this.i;
@@ -413,14 +413,14 @@ public final class o {
                                 c value = it.next().getValue();
                                 if (value != null && value.n() != null) {
                                     com.anythink.expressad.foundation.d.d n9 = value.n();
-                                    boolean z6 = false;
+                                    boolean z9 = false;
                                     for (com.anythink.expressad.foundation.d.d dVar : list) {
                                         if (n9 != null && dVar != null && !TextUtils.isEmpty(n9.aa()) && !TextUtils.isEmpty(dVar.aa()) && n9.bh().equals(dVar.bh()) && n9.aa().equals(dVar.aa())) {
-                                            z6 = true;
+                                            z9 = true;
                                         }
                                     }
-                                    if (z6) {
-                                        if ((z3 && !n9.B()) || (!z3 && n9.B())) {
+                                    if (z9) {
+                                        if ((z6 && !n9.B()) || (!z6 && n9.B())) {
                                             n9.B();
                                         } else {
                                             String J = n9.J();
@@ -430,7 +430,7 @@ public final class o {
                                                 str = n9.N().e();
                                             }
                                             n9.N();
-                                            if (TextUtils.isEmpty(str) || str.contains(com.anythink.expressad.foundation.d.d.f18580d) || b(n9, str)) {
+                                            if (TextUtils.isEmpty(str) || str.contains(com.anythink.expressad.foundation.d.d.f19367d) || b(n9, str)) {
                                                 if (b(J, n9)) {
                                                     if (value.b()) {
                                                         value.o();
@@ -459,7 +459,7 @@ public final class o {
                                                     long c9 = value.c();
                                                     if (value.k() == 1) {
                                                         j6 = currentTimeMillis;
-                                                        if (currentTimeMillis - c9 > this.f22335l * 1000) {
+                                                        if (currentTimeMillis - c9 > this.f23122l * 1000) {
                                                             value.j();
                                                             this.i.remove(map);
                                                             i--;
@@ -471,8 +471,8 @@ public final class o {
                                                     if (k9 != 4 && k9 != 2) {
                                                         if (k9 == 1) {
                                                             if (!value.b()) {
-                                                                if (!com.anythink.expressad.a.f17633q && a(value, b(n9)) && a(J, n9)) {
-                                                                    boolean z9 = com.anythink.expressad.a.f17618a;
+                                                                if (!com.anythink.expressad.a.f18420q && a(value, b(n9)) && a(J, n9)) {
+                                                                    boolean z10 = com.anythink.expressad.a.f18405a;
                                                                     arrayList.add(value);
                                                                 }
                                                             }
@@ -510,19 +510,19 @@ public final class o {
     private int d(com.anythink.expressad.foundation.d.d dVar) {
         try {
             if (dVar.x() == 298) {
-                if (this.f22327b == null) {
+                if (this.f23114b == null) {
                     com.anythink.expressad.f.b.a();
-                    this.f22327b = com.anythink.expressad.f.b.a(com.anythink.expressad.foundation.b.a.c().f(), this.f22336m);
+                    this.f23114b = com.anythink.expressad.f.b.a(com.anythink.expressad.foundation.b.a.c().f(), this.f23123m);
                 }
-                return this.f22327b.f();
+                return this.f23114b.f();
             }
             if (dVar.x() == 42) {
                 return h();
             }
-            if (this.f22337n == null) {
-                this.f22337n = com.anythink.expressad.videocommon.e.c.a().a(com.anythink.expressad.foundation.b.a.c().f(), this.f22336m, false);
+            if (this.f23124n == null) {
+                this.f23124n = com.anythink.expressad.videocommon.e.c.a().a(com.anythink.expressad.foundation.b.a.c().f(), this.f23123m, false);
             }
-            return this.f22337n.v();
+            return this.f23124n.v();
         } catch (Throwable th) {
             th.getMessage();
             return 100;
@@ -530,15 +530,15 @@ public final class o {
     }
 
     public o(com.anythink.expressad.foundation.d.d dVar, ExecutorService executorService, String str, int i) {
-        this.f22339p = 1;
-        List<com.anythink.expressad.foundation.d.d> list = this.f22328d;
+        this.f23126p = 1;
+        List<com.anythink.expressad.foundation.d.d> list = this.f23115d;
         if (list != null && dVar != null) {
             list.add(dVar);
         }
-        this.f22334k = executorService;
-        this.f22336m = str;
-        this.f22339p = i;
-        c(this.f22328d);
+        this.f23121k = executorService;
+        this.f23123m = str;
+        this.f23126p = i;
+        c(this.f23115d);
     }
 
     private int b(com.anythink.expressad.foundation.d.d dVar) {
@@ -560,7 +560,7 @@ public final class o {
             return true;
         }
         if (dVar.ax() != 1 || c(dVar)) {
-            return (dVar.aE() != null && dVar.aE().size() > 0 && dVar.aE().contains(2)) || y.b(i.a().b(str)) || y.b(j.a.f22310a.c(str));
+            return (dVar.aE() != null && dVar.aE().size() > 0 && dVar.aE().contains(2)) || y.b(i.a().b(str)) || y.b(j.a.f23097a.c(str));
         }
         return true;
     }
@@ -578,9 +578,9 @@ public final class o {
         return true;
     }
 
-    public final c b(int i, boolean z3) {
+    public final c b(int i, boolean z6) {
         try {
-            return a(i, z3);
+            return a(i, z6);
         } catch (Throwable th) {
             th.getMessage();
             return null;
@@ -610,7 +610,7 @@ public final class o {
                                 while (it2.hasNext()) {
                                     c value = it2.next().getValue();
                                     if (value != null && (k9 = value.k()) != 1 && k9 != 5) {
-                                        if (com.anythink.expressad.foundation.h.n.b() != 9 && this.f22338o == 2) {
+                                        if (com.anythink.expressad.foundation.h.n.b() != 9 && this.f23125o == 2) {
                                             return;
                                         }
                                         if (k9 == 2 || k9 == 0) {
@@ -719,7 +719,7 @@ public final class o {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final c a(int i, boolean z3) {
+    public final c a(int i, boolean z6) {
         c cVar;
         long j6;
         CopyOnWriteArrayList<Map<String, c>> copyOnWriteArrayList = this.i;
@@ -730,15 +730,15 @@ public final class o {
             try {
                 try {
                     long currentTimeMillis = System.currentTimeMillis();
-                    int i6 = 0;
-                    while (i6 < this.i.size()) {
-                        Map<String, c> map = this.i.get(i6);
+                    int i4 = 0;
+                    while (i4 < this.i.size()) {
+                        Map<String, c> map = this.i.get(i4);
                         Iterator<Map.Entry<String, c>> it = map.entrySet().iterator();
                         while (it.hasNext()) {
                             c value = it.next().getValue();
                             if (value != null && value.n() != null) {
                                 com.anythink.expressad.foundation.d.d n9 = value.n();
-                                if (z3 && !n9.B()) {
+                                if (z6 && !n9.B()) {
                                     n9.B();
                                 }
                                 String J = n9.J();
@@ -749,10 +749,10 @@ public final class o {
                                 }
                                 n9.N();
                                 cVar = null;
-                                if (this.f22339p == 94) {
+                                if (this.f23126p == 94) {
                                 }
                                 try {
-                                    if (!TextUtils.isEmpty(str) && !str.contains(com.anythink.expressad.foundation.d.d.f18580d) && !b(n9, str)) {
+                                    if (!TextUtils.isEmpty(str) && !str.contains(com.anythink.expressad.foundation.d.d.f19367d) && !b(n9, str)) {
                                         j6 = currentTimeMillis;
                                         currentTimeMillis = j6;
                                     }
@@ -772,17 +772,17 @@ public final class o {
                                     }
                                     boolean isEmpty = TextUtils.isEmpty(value.m());
                                     int k9 = value.k();
-                                    if (this.f22339p == 298 && a(value, b(n9))) {
+                                    if (this.f23126p == 298 && a(value, b(n9))) {
                                         return value;
                                     }
                                     if (k9 == 5) {
                                         if (value.b()) {
                                             value.o();
                                             this.i.remove(map);
-                                            i6--;
+                                            i4--;
                                         } else if (!isEmpty) {
                                             value.l();
-                                            if (this.f22339p == 95) {
+                                            if (this.f23126p == 95) {
                                                 return value;
                                             }
                                             j6 = currentTimeMillis;
@@ -797,19 +797,19 @@ public final class o {
                                         long c9 = value.c();
                                         if (value.k() == 1) {
                                             j6 = currentTimeMillis;
-                                            if (currentTimeMillis - c9 > this.f22335l * 1000) {
+                                            if (currentTimeMillis - c9 > this.f23122l * 1000) {
                                                 value.j();
                                                 this.i.remove(map);
-                                                i6--;
-                                                int i9 = this.f22339p;
-                                                if (i9 != 1) {
+                                                i4--;
+                                                int i6 = this.f23126p;
+                                                if (i6 != 1) {
                                                 }
                                                 currentTimeMillis = j6;
                                             }
                                         } else {
                                             j6 = currentTimeMillis;
                                         }
-                                        if (this.f22339p == 95) {
+                                        if (this.f23126p == 95) {
                                             if (!value.b()) {
                                                 return value;
                                             }
@@ -818,22 +818,22 @@ public final class o {
                                         } else if (k9 != 4 && k9 != 2) {
                                             if (k9 == 1) {
                                                 if (!value.b()) {
-                                                    if (!com.anythink.expressad.a.f17633q && a(value, b(n9)) && a(J, n9)) {
-                                                        boolean z6 = com.anythink.expressad.a.f17618a;
+                                                    if (!com.anythink.expressad.a.f18420q && a(value, b(n9)) && a(J, n9)) {
+                                                        boolean z9 = com.anythink.expressad.a.f18405a;
                                                         return value;
                                                     }
                                                 }
                                                 currentTimeMillis = j6;
                                             }
-                                            int i10 = this.f22339p;
-                                            if ((i10 == 94 || i10 == 287) && a(value, b(n9)) && a(J, n9)) {
+                                            int i9 = this.f23126p;
+                                            if ((i9 == 94 || i9 == 287) && a(value, b(n9)) && a(J, n9)) {
                                                 return value;
                                             }
                                             currentTimeMillis = j6;
                                         } else {
                                             this.i.remove(map);
                                         }
-                                        i6--;
+                                        i4--;
                                         currentTimeMillis = j6;
                                     }
                                 } catch (Exception e9) {
@@ -845,7 +845,7 @@ public final class o {
                             j6 = currentTimeMillis;
                             currentTimeMillis = j6;
                         }
-                        i6++;
+                        i4++;
                     }
                     cVar = null;
                 } catch (Exception e10) {
@@ -866,7 +866,7 @@ public final class o {
         try {
             return dVar.K() == 2;
         } catch (Throwable th) {
-            if (!com.anythink.expressad.a.f17618a) {
+            if (!com.anythink.expressad.a.f18405a) {
                 return false;
             }
             th.printStackTrace();
@@ -876,7 +876,7 @@ public final class o {
 
     private static boolean a(c cVar, int i) {
         long p9 = cVar.p();
-        long f3 = cVar.f();
+        long f2 = cVar.f();
         if (TextUtils.isEmpty(cVar.a())) {
             return true;
         }
@@ -887,7 +887,7 @@ public final class o {
             a(cVar);
             return true;
         }
-        if (f3 <= 0 || p9 * 100 < f3 * i) {
+        if (f2 <= 0 || p9 * 100 < f2 * i) {
             return false;
         }
         a(cVar);
@@ -925,7 +925,7 @@ public final class o {
         if (!TextUtils.isEmpty(dVar.at()) || TextUtils.isEmpty(str)) {
             return true;
         }
-        return l.a().d(this.f22336m + "_" + dVar.aa() + "_" + str);
+        return l.a().d(this.f23123m + "_" + dVar.aa() + "_" + str);
     }
 
     public final c a(String str) {
@@ -964,7 +964,7 @@ public final class o {
             }
             return false;
         } catch (Throwable th) {
-            if (!com.anythink.expressad.a.f17618a) {
+            if (!com.anythink.expressad.a.f18405a) {
                 return false;
             }
             th.printStackTrace();
@@ -993,7 +993,7 @@ public final class o {
             synchronized (copyOnWriteArrayList) {
                 try {
                     if (!a(this.i)) {
-                        this.f22329e = true;
+                        this.f23116e = true;
                     }
                     Iterator<Map<String, c>> it = this.i.iterator();
                     while (it.hasNext()) {
@@ -1003,8 +1003,8 @@ public final class o {
                             while (it2.hasNext()) {
                                 c value = it2.next().getValue();
                                 if (value != null && !value.b()) {
-                                    if (this.f22339p == 95) {
-                                        this.f22329e = true;
+                                    if (this.f23126p == 95) {
+                                        this.f23116e = true;
                                     }
                                     int k9 = value.k();
                                     final com.anythink.expressad.foundation.d.d n9 = value.n();
@@ -1012,10 +1012,10 @@ public final class o {
                                         @Override // com.anythink.expressad.videocommon.d.c
                                         public final void a(String str) {
                                             com.anythink.expressad.videocommon.d.c cVar2;
-                                            if (o.this.f22330f != null) {
-                                                o.this.f22330f.a(str);
+                                            if (o.this.f23117f != null) {
+                                                o.this.f23117f.a(str);
                                             }
-                                            if (o.this.f22331g == null || o.this.f22331g.size() <= 0 || n9 == null || (cVar2 = (com.anythink.expressad.videocommon.d.c) o.this.f22331g.get(n9.aa())) == null) {
+                                            if (o.this.f23118g == null || o.this.f23118g.size() <= 0 || n9 == null || (cVar2 = (com.anythink.expressad.videocommon.d.c) o.this.f23118g.get(n9.aa())) == null) {
                                                 return;
                                             }
                                             cVar2.a(str);
@@ -1026,10 +1026,10 @@ public final class o {
                                             com.anythink.expressad.videocommon.d.c cVar2;
                                             com.anythink.expressad.foundation.d.d dVar = n9;
                                             if (dVar == null || dVar.aE() == null || n9.aE().size() <= 0 || !n9.aE().contains(0)) {
-                                                if (o.this.f22330f != null) {
-                                                    o.this.f22330f.a(str, str2);
+                                                if (o.this.f23117f != null) {
+                                                    o.this.f23117f.a(str, str2);
                                                 }
-                                                if (o.this.f22331g == null || o.this.f22331g.size() <= 0 || n9 == null || (cVar2 = (com.anythink.expressad.videocommon.d.c) o.this.f22331g.get(n9.aa())) == null) {
+                                                if (o.this.f23118g == null || o.this.f23118g.size() <= 0 || n9 == null || (cVar2 = (com.anythink.expressad.videocommon.d.c) o.this.f23118g.get(n9.aa())) == null) {
                                                     return;
                                                 }
                                                 cVar2.a(str, str2);
@@ -1037,29 +1037,29 @@ public final class o {
                                         }
                                     });
                                     int b9 = b(n9);
-                                    if (this.f22339p == 1) {
-                                        if (this.f22326a == null) {
-                                            this.f22326a = com.anythink.expressad.f.c.c(this.f22336m);
+                                    if (this.f23126p == 1) {
+                                        if (this.f23113a == null) {
+                                            this.f23113a = com.anythink.expressad.f.c.c(this.f23123m);
                                         }
                                         b9 = h();
                                     }
                                     value.d(b9);
-                                    int i6 = this.f22339p;
-                                    if (i6 != 94 && i6 != 287 && i6 != 95) {
-                                        if (i6 == 298) {
-                                            if (this.f22327b == null) {
+                                    int i4 = this.f23126p;
+                                    if (i4 != 94 && i4 != 287 && i4 != 95) {
+                                        if (i4 == 298) {
+                                            if (this.f23114b == null) {
                                                 com.anythink.expressad.f.b.a();
-                                                this.f22327b = com.anythink.expressad.f.b.a(com.anythink.expressad.foundation.b.a.c().f(), this.f22336m);
+                                                this.f23114b = com.anythink.expressad.f.b.a(com.anythink.expressad.foundation.b.a.c().f(), this.f23123m);
                                             }
-                                            com.anythink.expressad.f.c cVar2 = this.f22327b;
+                                            com.anythink.expressad.f.c cVar2 = this.f23114b;
                                             if (cVar2 != null) {
                                                 x9 = cVar2.g();
-                                                if (this.f22339p == 1) {
-                                                    if (this.f22326a == null) {
+                                                if (this.f23126p == 1) {
+                                                    if (this.f23113a == null) {
                                                         com.anythink.expressad.f.b.a();
-                                                        this.f22326a = com.anythink.expressad.f.b.a(com.anythink.expressad.foundation.b.a.c().f(), this.f22336m);
+                                                        this.f23113a = com.anythink.expressad.f.b.a(com.anythink.expressad.foundation.b.a.c().f(), this.f23123m);
                                                     }
-                                                    com.anythink.expressad.f.c cVar3 = this.f22326a;
+                                                    com.anythink.expressad.f.c cVar3 = this.f23113a;
                                                     if (cVar3 != null) {
                                                         x9 = cVar3.g();
                                                     }
@@ -1067,26 +1067,26 @@ public final class o {
                                                 value.b(x9);
                                                 value.c(n9 != null ? n9.aF() : 1);
                                                 if (a(value, b(n9))) {
-                                                    com.anythink.expressad.videocommon.d.c cVar4 = this.f22330f;
-                                                    if (cVar4 != null && ((i = this.f22339p) == 297 || i == 298)) {
+                                                    com.anythink.expressad.videocommon.d.c cVar4 = this.f23117f;
+                                                    if (cVar4 != null && ((i = this.f23126p) == 297 || i == 298)) {
                                                         cVar4.a(n9.T());
                                                     }
-                                                    ConcurrentHashMap<String, com.anythink.expressad.videocommon.d.c> concurrentHashMap = this.f22331g;
-                                                    if (concurrentHashMap != null && concurrentHashMap.size() > 0 && (cVar = this.f22331g.get(n9.aa())) != null) {
+                                                    ConcurrentHashMap<String, com.anythink.expressad.videocommon.d.c> concurrentHashMap = this.f23118g;
+                                                    if (concurrentHashMap != null && concurrentHashMap.size() > 0 && (cVar = this.f23118g.get(n9.aa())) != null) {
                                                         cVar.a(n9.T());
                                                     }
                                                 }
-                                                if (k9 == 1 && k9 != 5 && k9 != 4 && (k9 == 2 || this.f22329e)) {
-                                                    value.a(this.f22332h);
+                                                if (k9 == 1 && k9 != 5 && k9 != 4 && (k9 == 2 || this.f23116e)) {
+                                                    value.a(this.f23119h);
                                                     if (!a(value, b9)) {
-                                                        int i9 = this.f22339p;
-                                                        if (i9 == 94 || i9 == 287) {
+                                                        int i6 = this.f23126p;
+                                                        if (i6 == 94 || i6 == 287) {
                                                             value.h();
                                                         }
                                                     } else {
-                                                        int i10 = this.f22339p;
-                                                        if (i10 == 1 || i10 == 95 || i10 == 298) {
-                                                            this.f22329e = false;
+                                                        int i9 = this.f23126p;
+                                                        if (i9 == 1 || i9 == 95 || i9 == 298) {
+                                                            this.f23116e = false;
                                                         }
                                                         value.h();
                                                     }
@@ -1094,22 +1094,22 @@ public final class o {
                                             }
                                         }
                                         x9 = 0;
-                                        if (this.f22339p == 1) {
+                                        if (this.f23126p == 1) {
                                         }
                                         value.b(x9);
                                         value.c(n9 != null ? n9.aF() : 1);
                                         if (a(value, b(n9))) {
                                         }
                                         if (k9 == 1) {
-                                            value.a(this.f22332h);
+                                            value.a(this.f23119h);
                                             if (!a(value, b9)) {
                                             }
                                         }
                                     }
-                                    if (this.f22337n == null) {
-                                        this.f22337n = com.anythink.expressad.videocommon.e.c.a().a(com.anythink.expressad.foundation.b.a.c().f(), this.f22336m, this.f22339p == 287);
+                                    if (this.f23124n == null) {
+                                        this.f23124n = com.anythink.expressad.videocommon.e.c.a().a(com.anythink.expressad.foundation.b.a.c().f(), this.f23123m, this.f23126p == 287);
                                     }
-                                    com.anythink.expressad.videocommon.e.d dVar = this.f22337n;
+                                    com.anythink.expressad.videocommon.e.d dVar = this.f23124n;
                                     x9 = dVar != null ? dVar.x() : 0;
                                     value.b(x9);
                                     value.c(n9 != null ? n9.aF() : 1);

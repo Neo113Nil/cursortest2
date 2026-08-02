@@ -1,13 +1,13 @@
 package com.google.android.gms.internal.ads;
 
 /* loaded from: classes2.dex */
-public final class Ct extends AbstractC2772Sd {
+public final class Ct extends AbstractC2792Sd {
 
     /* renamed from: M, reason: collision with root package name */
-    public final q2.f1 f24257M;
+    public final s2.f1 f25002M;
 
-    public Ct(q2.f1 f1Var) {
+    public Ct(s2.f1 f1Var) {
         super(23);
-        this.f24257M = f1Var;
+        this.f25002M = f1Var;
     }
 }

@@ -12,7 +12,7 @@ import org.json.JSONObject;
 public class SplashJs extends AbsFeedBackForH5 {
 
     /* renamed from: a, reason: collision with root package name */
-    private static String f20684a = "SplashJs";
+    private static String f21471a = "SplashJs";
     private SplashJSBridgeImpl i;
 
     public void cai(Object obj, String str) {
@@ -43,7 +43,7 @@ public class SplashJs extends AbsFeedBackForH5 {
     public void handlerH5Exception(Object obj, String str) {
         if (obj != null) {
             try {
-                WindVaneWebView windVaneWebView = ((b) obj).f18062a;
+                WindVaneWebView windVaneWebView = ((b) obj).f18849a;
                 if (windVaneWebView == null || windVaneWebView.getWebViewListener() == null) {
                     return;
                 }
@@ -118,7 +118,7 @@ public class SplashJs extends AbsFeedBackForH5 {
         if (obj != null) {
             try {
                 int optInt = new JSONObject(str).optInt("isReady", 1);
-                WindVaneWebView windVaneWebView = ((b) obj).f18062a;
+                WindVaneWebView windVaneWebView = ((b) obj).f18849a;
                 if (windVaneWebView == null || windVaneWebView.getWebViewListener() == null) {
                     return;
                 }

@@ -1,28 +1,29 @@
 package com.google.android.gms.internal.ads;
 
 import java.util.Objects;
+import w.AbstractC5128c;
 
 /* loaded from: classes2.dex */
-public final class JE extends AbstractC4257zE {
+public final class JE extends AbstractC4280zE {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f25658a;
+    public final int f26411a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f25659b;
+    public final int f26412b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final C3879sE f25660c;
+    public final C3902sE f26413c;
 
-    public JE(int i, int i6, C3879sE c3879sE) {
-        this.f25658a = i;
-        this.f25659b = i6;
-        this.f25660c = c3879sE;
+    public JE(int i, int i4, C3902sE c3902sE) {
+        this.f26411a = i;
+        this.f26412b = i4;
+        this.f26413c = c3902sE;
     }
 
-    @Override // com.google.android.gms.internal.ads.AbstractC3825rE
+    @Override // com.google.android.gms.internal.ads.AbstractC3848rE
     public final boolean a() {
-        return this.f25660c != C3879sE.f33915j;
+        return this.f26413c != C3902sE.f34683j;
     }
 
     public final boolean equals(Object obj) {
@@ -30,25 +31,25 @@ public final class JE extends AbstractC4257zE {
             return false;
         }
         JE je = (JE) obj;
-        return je.f25658a == this.f25658a && je.f25659b == this.f25659b && je.f25660c == this.f25660c;
+        return je.f26411a == this.f26411a && je.f26412b == this.f26412b && je.f26413c == this.f26413c;
     }
 
     public final int hashCode() {
-        return Objects.hash(JE.class, Integer.valueOf(this.f25658a), Integer.valueOf(this.f25659b), 16, this.f25660c);
+        return Objects.hash(JE.class, Integer.valueOf(this.f26411a), Integer.valueOf(this.f26412b), 16, this.f26413c);
     }
 
     public final String toString() {
-        String valueOf = String.valueOf(this.f25660c);
+        String valueOf = String.valueOf(this.f26413c);
         int length = valueOf.length();
-        int i = this.f25659b;
+        int i = this.f26412b;
         int length2 = String.valueOf(i).length();
         int length3 = String.valueOf(16).length();
-        int i6 = this.f25658a;
-        StringBuilder sb = new StringBuilder(length + 30 + length2 + 10 + length3 + 15 + String.valueOf(i6).length() + 10);
+        int i4 = this.f26411a;
+        StringBuilder sb = new StringBuilder(length + 30 + length2 + 10 + length3 + 15 + String.valueOf(i4).length() + 10);
         sb.append("AesEax Parameters (variant: ");
         sb.append(valueOf);
         sb.append(", ");
         sb.append(i);
-        return u1.h.d(i6, "-byte IV, 16-byte tag, and ", "-byte key)", sb);
+        return AbstractC5128c.d(i4, "-byte IV, 16-byte tag, and ", "-byte key)", sb);
     }
 }

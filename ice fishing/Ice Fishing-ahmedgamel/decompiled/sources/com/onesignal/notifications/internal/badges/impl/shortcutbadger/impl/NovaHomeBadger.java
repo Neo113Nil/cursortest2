@@ -6,15 +6,15 @@ import android.content.Context;
 import android.net.Uri;
 import java.util.Arrays;
 import java.util.List;
-import n5.InterfaceC4758a;
+import n5.InterfaceC4774a;
 
 /* loaded from: classes2.dex */
-public class NovaHomeBadger implements InterfaceC4758a {
+public class NovaHomeBadger implements InterfaceC4774a {
     private static final String CONTENT_URI = "content://com.teslacoilsw.notifier/unread_count";
     private static final String COUNT = "count";
     private static final String TAG = "tag";
 
-    @Override // n5.InterfaceC4758a
+    @Override // n5.InterfaceC4774a
     public void executeBadge(Context context, ComponentName componentName, int i) {
         ContentValues contentValues = new ContentValues();
         contentValues.put(TAG, componentName.getPackageName() + "/" + componentName.getClassName());
@@ -22,7 +22,7 @@ public class NovaHomeBadger implements InterfaceC4758a {
         context.getContentResolver().insert(Uri.parse(CONTENT_URI), contentValues);
     }
 
-    @Override // n5.InterfaceC4758a
+    @Override // n5.InterfaceC4774a
     public List<String> getSupportLaunchers() {
         return Arrays.asList("com.teslacoilsw.launcher");
     }

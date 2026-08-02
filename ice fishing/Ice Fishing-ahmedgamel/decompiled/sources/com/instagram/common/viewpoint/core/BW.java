@@ -9,10 +9,10 @@ public final class BW {
     public final boolean A01;
     public final boolean A02;
 
-    public BW(String str, boolean z3, boolean z6) {
+    public BW(String str, boolean z6, boolean z9) {
         this.A00 = str;
-        this.A01 = z3;
-        this.A02 = z6;
+        this.A01 = z6;
+        this.A02 = z9;
     }
 
     public final boolean equals(Object obj) {

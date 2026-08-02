@@ -9,45 +9,45 @@ import java.util.Arrays;
 final class u extends f {
 
     /* renamed from: f, reason: collision with root package name */
-    final transient byte[][] f15923f;
+    final transient byte[][] f16710f;
 
     /* renamed from: g, reason: collision with root package name */
-    final transient int[] f15924g;
+    final transient int[] f16711g;
 
     public u(c cVar, int i) {
         super(null);
-        y.a(cVar.f15847c, 0L, i);
-        s sVar = cVar.f15846b;
+        y.a(cVar.f16634c, 0L, i);
+        s sVar = cVar.f16633b;
+        int i4 = 0;
         int i6 = 0;
         int i9 = 0;
-        int i10 = 0;
-        while (i9 < i) {
-            int i11 = sVar.f15916e;
-            int i12 = sVar.f15915d;
-            if (i11 == i12) {
+        while (i6 < i) {
+            int i10 = sVar.f16703e;
+            int i11 = sVar.f16702d;
+            if (i10 == i11) {
                 throw new AssertionError("s.limit == s.pos");
             }
-            i9 += i11 - i12;
-            i10++;
-            sVar = sVar.f15919h;
+            i6 += i10 - i11;
+            i9++;
+            sVar = sVar.f16706h;
         }
-        this.f15923f = new byte[i10][];
-        this.f15924g = new int[i10 * 2];
-        s sVar2 = cVar.f15846b;
-        int i13 = 0;
-        while (i6 < i) {
-            byte[][] bArr = this.f15923f;
-            bArr[i13] = sVar2.f15914c;
-            int i14 = sVar2.f15916e;
-            int i15 = sVar2.f15915d;
-            int i16 = (i14 - i15) + i6;
-            i6 = i16 > i ? i : i16;
-            int[] iArr = this.f15924g;
-            iArr[i13] = i6;
-            iArr[bArr.length + i13] = i15;
-            sVar2.f15917f = true;
-            i13++;
-            sVar2 = sVar2.f15919h;
+        this.f16710f = new byte[i9][];
+        this.f16711g = new int[i9 * 2];
+        s sVar2 = cVar.f16633b;
+        int i12 = 0;
+        while (i4 < i) {
+            byte[][] bArr = this.f16710f;
+            bArr[i12] = sVar2.f16701c;
+            int i13 = sVar2.f16703e;
+            int i14 = sVar2.f16702d;
+            int i15 = (i13 - i14) + i4;
+            i4 = i15 > i ? i : i15;
+            int[] iArr = this.f16711g;
+            iArr[i12] = i4;
+            iArr[bArr.length + i12] = i14;
+            sVar2.f16704f = true;
+            i12++;
+            sVar2 = sVar2.f16706h;
         }
     }
 
@@ -115,29 +115,29 @@ final class u extends f {
 
     @Override // com.anythink.core.common.n.c.f
     public final int hashCode() {
-        int i = this.f15861d;
+        int i = this.f16648d;
         if (i != 0) {
             return i;
         }
-        int length = this.f15923f.length;
-        int i6 = 0;
-        int i9 = 1;
-        int i10 = 0;
-        while (i6 < length) {
-            byte[] bArr = this.f15923f[i6];
-            int[] iArr = this.f15924g;
-            int i11 = iArr[length + i6];
-            int i12 = iArr[i6];
-            int i13 = (i12 - i10) + i11;
-            while (i11 < i13) {
-                i9 = (i9 * 31) + bArr[i11];
-                i11++;
+        int length = this.f16710f.length;
+        int i4 = 0;
+        int i6 = 1;
+        int i9 = 0;
+        while (i4 < length) {
+            byte[] bArr = this.f16710f[i4];
+            int[] iArr = this.f16711g;
+            int i10 = iArr[length + i4];
+            int i11 = iArr[i4];
+            int i12 = (i11 - i9) + i10;
+            while (i10 < i12) {
+                i6 = (i6 * 31) + bArr[i10];
+                i10++;
             }
-            i6++;
-            i10 = i12;
+            i4++;
+            i9 = i11;
         }
-        this.f15861d = i9;
-        return i9;
+        this.f16648d = i6;
+        return i6;
     }
 
     @Override // com.anythink.core.common.n.c.f
@@ -147,24 +147,24 @@ final class u extends f {
 
     @Override // com.anythink.core.common.n.c.f
     public final int j() {
-        return this.f15924g[this.f15923f.length - 1];
+        return this.f16711g[this.f16710f.length - 1];
     }
 
     @Override // com.anythink.core.common.n.c.f
     public final byte[] k() {
-        int[] iArr = this.f15924g;
-        byte[][] bArr = this.f15923f;
+        int[] iArr = this.f16711g;
+        byte[][] bArr = this.f16710f;
         byte[] bArr2 = new byte[iArr[bArr.length - 1]];
         int length = bArr.length;
         int i = 0;
-        int i6 = 0;
+        int i4 = 0;
         while (i < length) {
-            int[] iArr2 = this.f15924g;
-            int i9 = iArr2[length + i];
-            int i10 = iArr2[i];
-            System.arraycopy(this.f15923f[i], i9, bArr2, i6, i10 - i6);
+            int[] iArr2 = this.f16711g;
+            int i6 = iArr2[length + i];
+            int i9 = iArr2[i];
+            System.arraycopy(this.f16710f[i], i6, bArr2, i4, i9 - i4);
             i++;
-            i6 = i10;
+            i4 = i9;
         }
         return bArr2;
     }
@@ -185,7 +185,7 @@ final class u extends f {
     }
 
     private int c(int i) {
-        int binarySearch = Arrays.binarySearch(this.f15924g, 0, this.f15923f.length, i + 1);
+        int binarySearch = Arrays.binarySearch(this.f16711g, 0, this.f16710f.length, i + 1);
         return binarySearch >= 0 ? binarySearch : ~binarySearch;
     }
 
@@ -206,12 +206,12 @@ final class u extends f {
 
     @Override // com.anythink.core.common.n.c.f
     public final byte b(int i) {
-        y.a(this.f15924g[this.f15923f.length - 1], i, 1L);
+        y.a(this.f16711g[this.f16710f.length - 1], i, 1L);
         int c9 = c(i);
-        int i6 = c9 == 0 ? 0 : this.f15924g[c9 - 1];
-        int[] iArr = this.f15924g;
-        byte[][] bArr = this.f15923f;
-        return bArr[c9][(i - i6) + iArr[bArr.length + c9]];
+        int i4 = c9 == 0 ? 0 : this.f16711g[c9 - 1];
+        int[] iArr = this.f16711g;
+        byte[][] bArr = this.f16710f;
+        return bArr[c9][(i - i4) + iArr[bArr.length + c9]];
     }
 
     @Override // com.anythink.core.common.n.c.f
@@ -220,23 +220,23 @@ final class u extends f {
     }
 
     @Override // com.anythink.core.common.n.c.f
-    public final f a(int i, int i6) {
-        return n().a(i, i6);
+    public final f a(int i, int i4) {
+        return n().a(i, i4);
     }
 
     @Override // com.anythink.core.common.n.c.f
     public final void a(OutputStream outputStream) {
         if (outputStream != null) {
-            int length = this.f15923f.length;
+            int length = this.f16710f.length;
             int i = 0;
-            int i6 = 0;
+            int i4 = 0;
             while (i < length) {
-                int[] iArr = this.f15924g;
-                int i9 = iArr[length + i];
-                int i10 = iArr[i];
-                outputStream.write(this.f15923f[i], i9, i10 - i6);
+                int[] iArr = this.f16711g;
+                int i6 = iArr[length + i];
+                int i9 = iArr[i];
+                outputStream.write(this.f16710f[i], i6, i9 - i4);
                 i++;
-                i6 = i10;
+                i4 = i9;
             }
             return;
         }
@@ -250,67 +250,67 @@ final class u extends f {
 
     @Override // com.anythink.core.common.n.c.f
     public final void a(c cVar) {
-        int length = this.f15923f.length;
+        int length = this.f16710f.length;
         int i = 0;
-        int i6 = 0;
+        int i4 = 0;
         while (i < length) {
-            int[] iArr = this.f15924g;
-            int i9 = iArr[length + i];
-            int i10 = iArr[i];
-            s sVar = new s(this.f15923f[i], i9, (i9 + i10) - i6, true, false);
-            s sVar2 = cVar.f15846b;
+            int[] iArr = this.f16711g;
+            int i6 = iArr[length + i];
+            int i9 = iArr[i];
+            s sVar = new s(this.f16710f[i], i6, (i6 + i9) - i4, true, false);
+            s sVar2 = cVar.f16633b;
             if (sVar2 == null) {
                 sVar.i = sVar;
-                sVar.f15919h = sVar;
-                cVar.f15846b = sVar;
+                sVar.f16706h = sVar;
+                cVar.f16633b = sVar;
             } else {
                 sVar2.i.a(sVar);
             }
             i++;
-            i6 = i10;
+            i4 = i9;
         }
-        cVar.f15847c += i6;
+        cVar.f16634c += i4;
     }
 
     @Override // com.anythink.core.common.n.c.f
-    public final boolean a(int i, f fVar, int i6, int i9) {
-        if (i < 0 || i > j() - i9) {
+    public final boolean a(int i, f fVar, int i4, int i6) {
+        if (i < 0 || i > j() - i6) {
             return false;
         }
         int c9 = c(i);
-        while (i9 > 0) {
-            int i10 = c9 == 0 ? 0 : this.f15924g[c9 - 1];
-            int min = Math.min(i9, ((this.f15924g[c9] - i10) + i10) - i);
-            int[] iArr = this.f15924g;
-            byte[][] bArr = this.f15923f;
-            if (!fVar.a(i6, bArr[c9], (i - i10) + iArr[bArr.length + c9], min)) {
+        while (i6 > 0) {
+            int i9 = c9 == 0 ? 0 : this.f16711g[c9 - 1];
+            int min = Math.min(i6, ((this.f16711g[c9] - i9) + i9) - i);
+            int[] iArr = this.f16711g;
+            byte[][] bArr = this.f16710f;
+            if (!fVar.a(i4, bArr[c9], (i - i9) + iArr[bArr.length + c9], min)) {
                 return false;
             }
             i += min;
-            i6 += min;
-            i9 -= min;
+            i4 += min;
+            i6 -= min;
             c9++;
         }
         return true;
     }
 
     @Override // com.anythink.core.common.n.c.f
-    public final boolean a(int i, byte[] bArr, int i6, int i9) {
-        if (i < 0 || i > j() - i9 || i6 < 0 || i6 > bArr.length - i9) {
+    public final boolean a(int i, byte[] bArr, int i4, int i6) {
+        if (i < 0 || i > j() - i6 || i4 < 0 || i4 > bArr.length - i6) {
             return false;
         }
         int c9 = c(i);
-        while (i9 > 0) {
-            int i10 = c9 == 0 ? 0 : this.f15924g[c9 - 1];
-            int min = Math.min(i9, ((this.f15924g[c9] - i10) + i10) - i);
-            int[] iArr = this.f15924g;
-            byte[][] bArr2 = this.f15923f;
-            if (!y.a(bArr2[c9], (i - i10) + iArr[bArr2.length + c9], bArr, i6, min)) {
+        while (i6 > 0) {
+            int i9 = c9 == 0 ? 0 : this.f16711g[c9 - 1];
+            int min = Math.min(i6, ((this.f16711g[c9] - i9) + i9) - i);
+            int[] iArr = this.f16711g;
+            byte[][] bArr2 = this.f16710f;
+            if (!y.a(bArr2[c9], (i - i9) + iArr[bArr2.length + c9], bArr, i4, min)) {
                 return false;
             }
             i += min;
-            i6 += min;
-            i9 -= min;
+            i4 += min;
+            i6 -= min;
             c9++;
         }
         return true;

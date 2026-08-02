@@ -19,65 +19,66 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
+import w.AbstractC5128c;
 
 /* loaded from: classes2.dex */
 public final class KO {
 
     /* renamed from: e, reason: collision with root package name */
-    public static final C3500lC f25915e;
+    public static final C3523lC f26667e;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final KO f25916f;
+    public static final KO f26668f;
 
     /* renamed from: g, reason: collision with root package name */
-    public static final C3500lC f25917g;
+    public static final C3523lC f26669g;
 
     /* renamed from: h, reason: collision with root package name */
-    public static final C3770qC f25918h;
+    public static final C3793qC f26670h;
 
     /* renamed from: a, reason: collision with root package name */
-    public final SparseArray f25919a = new SparseArray();
+    public final SparseArray f26671a = new SparseArray();
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f25920b;
+    public final int f26672b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final RB f25921c;
+    public final RB f26673c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final RB f25922d;
+    public final RB f26674d;
 
     static {
-        C3500lC j6 = RB.j(12);
-        f25915e = j6;
-        f25916f = new KO(RB.j(JO.f25679d), j6, C3500lC.f31745x);
+        C3523lC j6 = RB.j(12);
+        f26667e = j6;
+        f26668f = new KO(RB.j(JO.f26432d), j6, C3523lC.f32525x);
         Object[] objArr = {2, 5, 6};
-        AbstractC2772Sd.j(objArr, 3);
-        f25917g = RB.p(objArr, 3);
-        C3493l5 c3493l5 = new C3493l5(4);
-        c3493l5.e(5, 6);
-        c3493l5.e(17, 6);
-        c3493l5.e(7, 6);
-        c3493l5.e(30, 10);
-        c3493l5.e(18, 6);
-        c3493l5.e(6, 8);
-        c3493l5.e(8, 8);
-        c3493l5.e(14, 8);
-        f25918h = c3493l5.s(true);
+        AbstractC2792Sd.j(objArr, 3);
+        f26669g = RB.p(objArr, 3);
+        C3516l5 c3516l5 = new C3516l5(4);
+        c3516l5.e(5, 6);
+        c3516l5.e(17, 6);
+        c3516l5.e(7, 6);
+        c3516l5.e(30, 10);
+        c3516l5.e(18, 6);
+        c3516l5.e(6, 8);
+        c3516l5.e(8, 8);
+        c3516l5.e(14, 8);
+        f26670h = c3516l5.s(true);
     }
 
-    public KO(C3500lC c3500lC, RB rb, List list) {
-        for (int i = 0; i < c3500lC.f31747w; i++) {
-            JO jo = (JO) c3500lC.get(i);
-            this.f25919a.put(jo.f25680a, jo);
+    public KO(C3523lC c3523lC, RB rb, List list) {
+        for (int i = 0; i < c3523lC.f32527w; i++) {
+            JO jo = (JO) c3523lC.get(i);
+            this.f26671a.put(jo.f26433a, jo);
         }
-        int i6 = 0;
-        for (int i9 = 0; i9 < this.f25919a.size(); i9++) {
-            i6 = Math.max(i6, ((JO) this.f25919a.valueAt(i9)).f25681b);
+        int i4 = 0;
+        for (int i6 = 0; i6 < this.f26671a.size(); i6++) {
+            i4 = Math.max(i4, ((JO) this.f26671a.valueAt(i6)).f26434b);
         }
-        this.f25920b = i6;
-        this.f25921c = RB.n(rb);
-        this.f25922d = RB.n(list);
+        this.f26672b = i4;
+        this.f26673c = RB.n(rb);
+        this.f26674d = RB.n(list);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:104:0x021a, code lost:
@@ -87,7 +88,7 @@ public final class KO {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static KO a(Context context, Intent intent, C2744Qj c2744Qj, AudioDeviceInfo audioDeviceInfo, List list) {
+    public static KO a(Context context, Intent intent, C2764Qj c2764Qj, AudioDeviceInfo audioDeviceInfo, List list) {
         int i;
         boolean isDirectPlaybackSupported;
         List directProfilesForAttributes;
@@ -96,78 +97,78 @@ public final class KO {
         int[] channelMasks;
         int[] channelMasks2;
         List audioDevicesForAttributes;
-        AudioManager b9 = AbstractC2639Kg.b(context);
-        int i6 = 0;
+        AudioManager b9 = AbstractC2659Kg.b(context);
+        int i4 = 0;
         if (audioDeviceInfo == null) {
             if (Build.VERSION.SDK_INT >= 33) {
-                audioDevicesForAttributes = b9.getAudioDevicesForAttributes(c2744Qj.a());
+                audioDevicesForAttributes = b9.getAudioDevicesForAttributes(c2764Qj.a());
                 if (!audioDevicesForAttributes.isEmpty()) {
                     audioDeviceInfo = (AudioDeviceInfo) audioDevicesForAttributes.get(0);
                 }
             }
             audioDeviceInfo = null;
         }
-        RB a9 = audioDeviceInfo != null ? AbstractC4106wP.a(audioDeviceInfo) : f25915e;
-        int i9 = Build.VERSION.SDK_INT;
-        C3770qC c3770qC = f25918h;
-        if (i9 >= 33 && (AbstractC3159eu.j(context) || context.getPackageManager().hasSystemFeature("android.hardware.type.automotive"))) {
-            directProfilesForAttributes = b9.getDirectProfilesForAttributes(c2744Qj.a());
+        RB a9 = audioDeviceInfo != null ? AbstractC4129wP.a(audioDeviceInfo) : f26667e;
+        int i6 = Build.VERSION.SDK_INT;
+        C3793qC c3793qC = f26670h;
+        if (i6 >= 33 && (AbstractC3182eu.j(context) || context.getPackageManager().hasSystemFeature("android.hardware.type.automotive"))) {
+            directProfilesForAttributes = b9.getDirectProfilesForAttributes(c2764Qj.a());
             HashMap hashMap = new HashMap();
             hashMap.put(2, new HashSet(UC.o(12)));
-            for (int i10 = 0; i10 < directProfilesForAttributes.size(); i10++) {
-                AudioProfile f3 = GO.f(directProfilesForAttributes.get(i10));
-                encapsulationType = f3.getEncapsulationType();
+            for (int i9 = 0; i9 < directProfilesForAttributes.size(); i9++) {
+                AudioProfile f2 = GO.f(directProfilesForAttributes.get(i9));
+                encapsulationType = f2.getEncapsulationType();
                 if (encapsulationType != 1) {
-                    format = f3.getFormat();
-                    if (AbstractC3159eu.d(format) || c3770qC.containsKey(Integer.valueOf(format))) {
+                    format = f2.getFormat();
+                    if (AbstractC3182eu.d(format) || c3793qC.containsKey(Integer.valueOf(format))) {
                         Integer valueOf = Integer.valueOf(format);
                         if (hashMap.containsKey(valueOf)) {
                             Set set = (Set) hashMap.get(valueOf);
                             set.getClass();
-                            channelMasks2 = f3.getChannelMasks();
+                            channelMasks2 = f2.getChannelMasks();
                             set.addAll(UC.o(channelMasks2));
                         } else {
-                            channelMasks = f3.getChannelMasks();
+                            channelMasks = f2.getChannelMasks();
                             hashMap.put(valueOf, new HashSet(UC.o(channelMasks)));
                         }
                     }
                 }
             }
-            PB pb = RB.f27177u;
+            PB pb = RB.f27933u;
             MA.q(4, "initialCapacity");
             Object[] objArr = new Object[4];
             for (Map.Entry entry : hashMap.entrySet()) {
                 JO jo = new JO(((Integer) entry.getKey()).intValue(), (Set) entry.getValue());
                 int length = objArr.length;
-                int i11 = i6 + 1;
-                int d2 = MB.d(length, i11);
-                if (d2 > length) {
-                    objArr = Arrays.copyOf(objArr, d2);
+                int i10 = i4 + 1;
+                int d9 = MB.d(length, i10);
+                if (d9 > length) {
+                    objArr = Arrays.copyOf(objArr, d9);
                 }
-                objArr[i6] = jo;
-                i6 = i11;
+                objArr[i4] = jo;
+                i4 = i10;
             }
-            return new KO(RB.p(objArr, i6), a9, list);
+            return new KO(RB.p(objArr, i4), a9, list);
         }
         for (AudioDeviceInfo audioDeviceInfo2 : audioDeviceInfo == null ? b9.getDevices(2) : new AudioDeviceInfo[]{audioDeviceInfo}) {
             if (UC.d(audioDeviceInfo2.getType())) {
-                return new KO(RB.j(JO.f25679d), a9, list);
+                return new KO(RB.j(JO.f26432d), a9, list);
             }
         }
         WB wb = new WB(4);
         wb.f(2);
-        if (Build.VERSION.SDK_INT < 29 || !(AbstractC3159eu.j(context) || context.getPackageManager().hasSystemFeature("android.hardware.type.automotive"))) {
+        if (Build.VERSION.SDK_INT < 29 || !(AbstractC3182eu.j(context) || context.getPackageManager().hasSystemFeature("android.hardware.type.automotive"))) {
             ContentResolver contentResolver = context.getContentResolver();
-            boolean z3 = Settings.Global.getInt(contentResolver, "use_external_surround_sound_flag", 0) == 1;
-            if (!z3) {
+            boolean z6 = Settings.Global.getInt(contentResolver, "use_external_surround_sound_flag", 0) == 1;
+            if (!z6) {
                 String str = Build.MANUFACTURER;
                 if (!str.equals("Amazon")) {
                 }
             }
             if (Settings.Global.getInt(contentResolver, "external_surround_sound_enabled", 0) == 1) {
-                wb.g(f25917g);
+                wb.g(f26669g);
             }
-            if (intent == null || z3 || intent.getIntExtra("android.media.extra.AUDIO_PLUG_STATE", 0) != 1) {
+            if (intent == null || z6 || intent.getIntExtra("android.media.extra.AUDIO_PLUG_STATE", 0) != 1) {
                 return new KO(c(UC.n(wb.h()), 10), a9, list);
             }
             int[] intArrayExtra = intent.getIntArrayExtra("android.media.extra.ENCODINGS");
@@ -176,15 +177,15 @@ public final class KO {
             }
             return new KO(c(UC.n(wb.h()), intent.getIntExtra("android.media.extra.MAX_CHANNEL_COUNT", 10)), a9, list);
         }
-        PB pb2 = RB.f27177u;
+        PB pb2 = RB.f27933u;
         OB ob = new OB(4);
-        C3662oC c3662oC = c3770qC.f33211u;
-        if (c3662oC == null) {
-            C3662oC c3662oC2 = new C3662oC(c3770qC, new C3716pC(c3770qC.f33214x, 0, c3770qC.f33215y));
-            c3770qC.f33211u = c3662oC2;
-            c3662oC = c3662oC2;
+        C3685oC c3685oC = c3793qC.f33995u;
+        if (c3685oC == null) {
+            C3685oC c3685oC2 = new C3685oC(c3793qC, new C3739pC(c3793qC.f33998x, 0, c3793qC.f33999y));
+            c3793qC.f33995u = c3685oC2;
+            c3685oC = c3685oC2;
         }
-        AbstractC4255zC a10 = c3662oC.a();
+        AbstractC4278zC a10 = c3685oC.a();
         while (a10.hasNext()) {
             Integer num = (Integer) a10.next();
             int intValue = num.intValue();
@@ -240,7 +241,7 @@ public final class KO {
                     break;
             }
             if (Build.VERSION.SDK_INT >= i) {
-                isDirectPlaybackSupported = AudioTrack.isDirectPlaybackSupported(new AudioFormat.Builder().setChannelMask(12).setEncoding(intValue).setSampleRate(48000).build(), c2744Qj.a());
+                isDirectPlaybackSupported = AudioTrack.isDirectPlaybackSupported(new AudioFormat.Builder().setChannelMask(12).setEncoding(intValue).setSampleRate(48000).build(), c2764Qj.a());
                 if (isDirectPlaybackSupported) {
                     ob.a(num);
                 }
@@ -251,28 +252,28 @@ public final class KO {
         return new KO(c(UC.n(wb.h()), 10), a9, list);
     }
 
-    public static C3500lC c(int[] iArr, int i) {
-        PB pb = RB.f27177u;
+    public static C3523lC c(int[] iArr, int i) {
+        PB pb = RB.f27933u;
         MA.q(4, "initialCapacity");
         Object[] objArr = new Object[4];
-        int i6 = 0;
+        int i4 = 0;
         if (iArr == null) {
             iArr = new int[0];
         }
-        int i9 = 0;
-        while (i6 < iArr.length) {
-            JO jo = new JO(iArr[i6], i);
+        int i6 = 0;
+        while (i4 < iArr.length) {
+            JO jo = new JO(iArr[i4], i);
             int length = objArr.length;
-            int i10 = i9 + 1;
-            int d2 = MB.d(length, i10);
-            if (d2 > length) {
-                objArr = Arrays.copyOf(objArr, d2);
+            int i9 = i6 + 1;
+            int d9 = MB.d(length, i9);
+            if (d9 > length) {
+                objArr = Arrays.copyOf(objArr, d9);
             }
-            objArr[i9] = jo;
-            i6++;
-            i9 = i10;
+            objArr[i6] = jo;
+            i4++;
+            i6 = i9;
         }
-        return RB.p(objArr, i9);
+        return RB.p(objArr, i6);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:90:0x0046, code lost:
@@ -286,124 +287,124 @@ public final class KO {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Pair b(DP dp, C2744Qj c2744Qj) {
+    public final Pair b(DP dp, C2764Qj c2764Qj) {
         boolean isDirectPlaybackSupported;
         int i;
-        String str = dp.f24431o;
+        String str = dp.f25176o;
         str.getClass();
-        int g4 = H4.g(str, dp.f24427k);
-        Integer valueOf = Integer.valueOf(g4);
-        C3770qC c3770qC = f25918h;
-        if (!c3770qC.containsKey(valueOf)) {
+        int g9 = H4.g(str, dp.f25172k);
+        Integer valueOf = Integer.valueOf(g9);
+        C3793qC c3793qC = f26670h;
+        if (!c3793qC.containsKey(valueOf)) {
             return null;
         }
-        SparseArray sparseArray = this.f25919a;
-        if (g4 == 18) {
+        SparseArray sparseArray = this.f26671a;
+        if (g9 == 18) {
             if (sparseArray.indexOfKey(18) >= 0) {
-                g4 = 18;
+                g9 = 18;
             } else {
-                g4 = 6;
-                if (sparseArray.indexOfKey(g4) < 0) {
+                g9 = 6;
+                if (sparseArray.indexOfKey(g9) < 0) {
                     return null;
                 }
-                JO jo = (JO) sparseArray.get(g4);
+                JO jo = (JO) sparseArray.get(g9);
                 jo.getClass();
-                int i6 = 0;
+                int i4 = 0;
                 r11 = false;
                 boolean contains = false;
-                int i9 = 10;
-                int i10 = dp.f24410I;
-                int i11 = dp.f24409H;
-                int i12 = jo.f25681b;
-                XB xb = jo.f25682c;
-                if (i11 == -1 || g4 == 18) {
-                    int i13 = dp.J;
-                    if (i13 == -1) {
-                        i13 = 48000;
+                int i6 = 10;
+                int i9 = dp.f25155I;
+                int i10 = dp.f25154H;
+                int i11 = jo.f26434b;
+                XB xb = jo.f26435c;
+                if (i10 == -1 || g9 == 18) {
+                    int i12 = dp.J;
+                    if (i12 == -1) {
+                        i12 = 48000;
                     }
                     if (xb != null) {
-                        i6 = i12;
+                        i4 = i11;
                     } else {
-                        int i14 = Build.VERSION.SDK_INT;
-                        int i15 = jo.f25680a;
-                        if (i14 >= 29) {
+                        int i13 = Build.VERSION.SDK_INT;
+                        int i14 = jo.f26433a;
+                        if (i13 >= 29) {
                             while (true) {
-                                if (i9 <= 0) {
+                                if (i6 <= 0) {
                                     break;
                                 }
-                                int e9 = AbstractC3159eu.e(i9);
+                                int e9 = AbstractC3182eu.e(i6);
                                 if (e9 != 0) {
-                                    isDirectPlaybackSupported = AudioTrack.isDirectPlaybackSupported(new AudioFormat.Builder().setEncoding(i15).setSampleRate(i13).setChannelMask(e9).build(), c2744Qj.a());
+                                    isDirectPlaybackSupported = AudioTrack.isDirectPlaybackSupported(new AudioFormat.Builder().setEncoding(i14).setSampleRate(i12).setChannelMask(e9).build(), c2764Qj.a());
                                     if (isDirectPlaybackSupported) {
-                                        i6 = i9;
+                                        i4 = i6;
                                         break;
                                     }
                                 }
-                                i9--;
+                                i6--;
                             }
                         } else {
-                            Object obj = c3770qC.get(Integer.valueOf(i15));
-                            i6 = ((Integer) (obj != null ? obj : 0)).intValue();
+                            Object obj = c3793qC.get(Integer.valueOf(i14));
+                            i4 = ((Integer) (obj != null ? obj : 0)).intValue();
                         }
                     }
                 } else {
                     if (!str.equals("audio/vnd.dts.uhd;profile=p2") || Build.VERSION.SDK_INT >= 33) {
                         if (xb != null) {
-                            int e10 = i10 != -1 ? i10 : AbstractC3159eu.e(i11);
+                            int e10 = i9 != -1 ? i9 : AbstractC3182eu.e(i10);
                             if (e10 != 0) {
                                 contains = xb.contains(Integer.valueOf(e10));
                             }
-                        } else if (i11 <= i12) {
+                        } else if (i10 <= i11) {
                             contains = true;
                         }
                         if (!contains) {
                             return null;
                         }
-                    } else if (i11 > 10) {
+                    } else if (i10 > 10) {
                         return null;
                     }
-                    i6 = i11;
+                    i4 = i10;
                 }
-                int i16 = Build.VERSION.SDK_INT;
-                if (i16 <= 28) {
-                    if (i6 == 7) {
+                int i15 = Build.VERSION.SDK_INT;
+                if (i15 <= 28) {
+                    if (i4 == 7) {
                         i = 8;
-                    } else if (i6 == 3 || i6 == 4 || i6 == 5) {
+                    } else if (i4 == 3 || i4 == 4 || i4 == 5) {
                         i = 6;
                     }
-                    if (i16 <= 26 && "fugu".equals(Build.DEVICE) && i == 1) {
+                    if (i15 <= 26 && "fugu".equals(Build.DEVICE) && i == 1) {
                         i = 2;
                     }
-                    if (i10 != -1 || i11 != i) {
-                        i10 = AbstractC3159eu.e(i);
+                    if (i9 != -1 || i10 != i) {
+                        i9 = AbstractC3182eu.e(i);
                     }
-                    if (i10 == 0) {
-                        return Pair.create(Integer.valueOf(g4), Integer.valueOf(i10));
+                    if (i9 == 0) {
+                        return Pair.create(Integer.valueOf(g9), Integer.valueOf(i9));
                     }
                     return null;
                 }
-                i = i6;
-                if (i16 <= 26) {
+                i = i4;
+                if (i15 <= 26) {
                     i = 2;
                 }
-                if (i10 != -1) {
+                if (i9 != -1) {
                 }
-                i10 = AbstractC3159eu.e(i);
-                if (i10 == 0) {
+                i9 = AbstractC3182eu.e(i);
+                if (i9 == 0) {
                 }
             }
         }
-        if (g4 == 8) {
+        if (g9 == 8) {
             if (sparseArray.indexOfKey(8) >= 0) {
-                g4 = 8;
+                g9 = 8;
             }
-            g4 = 7;
-            if (sparseArray.indexOfKey(g4) < 0) {
+            g9 = 7;
+            if (sparseArray.indexOfKey(g9) < 0) {
             }
         }
-        if (g4 == 30) {
+        if (g9 == 30) {
         }
-        if (sparseArray.indexOfKey(g4) < 0) {
+        if (sparseArray.indexOfKey(g9) < 0) {
         }
     }
 
@@ -419,9 +420,9 @@ public final class KO {
         if (this != obj) {
             if (obj instanceof KO) {
                 KO ko = (KO) obj;
-                SparseArray sparseArray = this.f25919a;
-                SparseArray sparseArray2 = ko.f25919a;
-                String str = AbstractC3159eu.f29993a;
+                SparseArray sparseArray = this.f26671a;
+                SparseArray sparseArray2 = ko.f26671a;
+                String str = AbstractC3182eu.f30782a;
                 if (Build.VERSION.SDK_INT >= 31) {
                     contentEquals = sparseArray.contentEquals(sparseArray2);
                 } else {
@@ -432,7 +433,7 @@ public final class KO {
                                 break;
                             }
                         }
-                        if (this.f25920b != ko.f25920b || !Objects.equals(this.f25921c, ko.f25921c) || !Objects.equals(this.f25922d, ko.f25922d)) {
+                        if (this.f26672b != ko.f26672b || !Objects.equals(this.f26673c, ko.f26673c) || !Objects.equals(this.f26674d, ko.f26674d)) {
                             break;
                         }
                     }
@@ -445,26 +446,26 @@ public final class KO {
 
     public final int hashCode() {
         int i;
-        String str = AbstractC3159eu.f29993a;
-        int i6 = Build.VERSION.SDK_INT;
-        SparseArray sparseArray = this.f25919a;
-        if (i6 >= 31) {
+        String str = AbstractC3182eu.f30782a;
+        int i4 = Build.VERSION.SDK_INT;
+        SparseArray sparseArray = this.f26671a;
+        if (i4 >= 31) {
             i = sparseArray.contentHashCode();
         } else {
-            int i9 = 17;
-            for (int i10 = 0; i10 < sparseArray.size(); i10++) {
-                i9 = Objects.hashCode(sparseArray.valueAt(i10)) + ((sparseArray.keyAt(i10) + (i9 * 31)) * 31);
+            int i6 = 17;
+            for (int i9 = 0; i9 < sparseArray.size(); i9++) {
+                i6 = Objects.hashCode(sparseArray.valueAt(i9)) + ((sparseArray.keyAt(i9) + (i6 * 31)) * 31);
             }
-            i = i9;
+            i = i6;
         }
-        return Objects.hashCode(this.f25922d) + ((Objects.hashCode(this.f25921c) + (((this.f25920b * 31) + i) * 31)) * 31);
+        return Objects.hashCode(this.f26674d) + ((Objects.hashCode(this.f26673c) + (((this.f26672b * 31) + i) * 31)) * 31);
     }
 
     public final String toString() {
-        String obj = this.f25919a.toString();
-        String valueOf = String.valueOf(this.f25921c);
-        String valueOf2 = String.valueOf(this.f25922d);
-        int i = this.f25920b;
+        String obj = this.f26671a.toString();
+        String valueOf = String.valueOf(this.f26673c);
+        String valueOf2 = String.valueOf(this.f26674d);
+        int i = this.f26672b;
         int length = String.valueOf(i).length();
         int length2 = obj.length();
         StringBuilder sb = new StringBuilder(length + 50 + length2 + 28 + valueOf.length() + 26 + valueOf2.length() + 1);
@@ -472,7 +473,7 @@ public final class KO {
         sb.append(i);
         sb.append(", audioProfiles=");
         sb.append(obj);
-        u1.h.i(sb, ", speakerLayoutChannelMasks=", valueOf, ", spatializerChannelMasks=", valueOf2);
+        AbstractC5128c.h(sb, ", speakerLayoutChannelMasks=", valueOf, ", spatializerChannelMasks=", valueOf2);
         sb.append("]");
         return sb.toString();
     }

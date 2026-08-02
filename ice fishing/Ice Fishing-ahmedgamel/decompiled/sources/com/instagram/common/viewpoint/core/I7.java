@@ -3,16 +3,16 @@ package com.instagram.common.viewpoint.core;
 import java.util.Arrays;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class I7 extends AbstractRunnableC1327Wc {
+public class I7 extends AbstractRunnableC1347Wc {
     public static byte[] A02;
     public static String[] A03 = {"", "vSeS2rx23zUd4am5Wdo", "UtlZDzt7", "dNEruPHPdkyj182N7GwirLXq8Db2eecB", "b1VGcsOgsecYYY6uN1zNid8VodysKnsR", "yg", "RqC1uxvv784HDfNbZXUq5U9jCsQW0kUg", "5jFX4DLWV5nBObgEbVC73yk5ncCVY3Kv"};
     public final /* synthetic */ C5S A00;
     public final /* synthetic */ C4A A01;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 72);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 72);
         }
         return new String(copyOfRange);
     }
@@ -30,14 +30,14 @@ public class I7 extends AbstractRunnableC1327Wc {
         this.A01 = c4a;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractRunnableC1327Wc
+    @Override // com.instagram.common.viewpoint.core.AbstractRunnableC1347Wc
     public final void A07() {
-        C0877Ek c0877Ek;
-        C0877Ek c0877Ek2;
-        c0877Ek = this.A00.A0S;
-        if (c0877Ek.getState() == EnumC1782fm.A02) {
-            c0877Ek2 = this.A00.A0S;
-            int currentPositionInMillis = c0877Ek2.getCurrentPositionInMillis();
+        C0897Ek c0897Ek;
+        C0897Ek c0897Ek2;
+        c0897Ek = this.A00.A0S;
+        if (c0897Ek.getState() == EnumC1802fm.A02) {
+            c0897Ek2 = this.A00.A0S;
+            int currentPositionInMillis = c0897Ek2.getCurrentPositionInMillis();
             if (A03[2].length() != 8) {
                 throw new RuntimeException();
             }

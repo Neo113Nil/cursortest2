@@ -10,8 +10,8 @@ import t5.e;
 import u5.d;
 import u7.v;
 import x4.f;
-import y5.C5242a;
-import z7.InterfaceC5267d;
+import y5.C5209a;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class a implements y5.b {
@@ -26,8 +26,8 @@ public final class a implements y5.b {
         int label;
         /* synthetic */ Object result;
 
-        public C0234a(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public C0234a(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -46,8 +46,8 @@ public final class a implements y5.b {
         int label;
         /* synthetic */ Object result;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -79,29 +79,29 @@ public final class a implements y5.b {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object clearOldestOverLimitStandard(int i, InterfaceC5267d interfaceC5267d) {
+    public final Object clearOldestOverLimitStandard(int i, InterfaceC5240d interfaceC5240d) {
         b bVar;
-        int i6;
+        int i4;
         int length;
         Iterator it;
         a aVar;
-        int i9;
+        int i6;
         a aVar2;
         Iterator it2;
         Integer num;
-        if (interfaceC5267d instanceof b) {
-            bVar = (b) interfaceC5267d;
-            int i10 = bVar.label;
-            if ((i10 & Integer.MIN_VALUE) != 0) {
-                bVar.label = i10 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof b) {
+            bVar = (b) interfaceC5240d;
+            int i9 = bVar.label;
+            if ((i9 & Integer.MIN_VALUE) != 0) {
+                bVar.label = i9 - Integer.MIN_VALUE;
                 Object obj = bVar.result;
-                A7.a aVar3 = A7.a.f58n;
-                i6 = bVar.label;
-                v vVar = v.f41353a;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar3 = A7.a.f215n;
+                i4 = bVar.label;
+                v vVar = v.f41073a;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     StatusBarNotification[] activeNotifications = e.INSTANCE.getActiveNotifications(this._applicationService.getAppContext());
-                    length = (activeNotifications.length - C5242a.INSTANCE.getMaxNumberOfNotifications()) + i;
+                    length = (activeNotifications.length - C5209a.INSTANCE.getMaxNumberOfNotifications()) + i;
                     if (length < 1) {
                         return vVar;
                     }
@@ -117,19 +117,19 @@ public final class a implements y5.b {
                     }
                     return vVar;
                 }
-                if (i6 != 1) {
-                    if (i6 != 2) {
+                if (i4 != 1) {
+                    if (i4 != 2) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    i9 = bVar.I$0;
+                    i6 = bVar.I$0;
                     Iterator it3 = (Iterator) bVar.L$1;
                     a aVar4 = (a) bVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     aVar = aVar4;
-                    int i11 = i9 - 1;
-                    if (i11 > 0) {
+                    int i10 = i6 - 1;
+                    if (i10 > 0) {
                         Iterator it4 = it3;
-                        length = i11;
+                        length = i10;
                         it = it4;
                         if (it.hasNext()) {
                             Integer num2 = (Integer) ((Map.Entry) it.next()).getValue();
@@ -144,15 +144,15 @@ public final class a implements y5.b {
                             Object markAsDismissed = dVar.markAsDismissed(intValue, bVar);
                             if (markAsDismissed != aVar3) {
                                 it2 = it;
-                                i9 = length;
+                                i6 = length;
                                 num = num2;
                                 aVar2 = aVar;
                                 obj = markAsDismissed;
                                 if (((Boolean) obj).booleanValue()) {
                                     it3 = it2;
                                     aVar = aVar2;
-                                    int i112 = i9 - 1;
-                                    if (i112 > 0) {
+                                    int i102 = i6 - 1;
+                                    if (i102 > 0) {
                                     }
                                 } else {
                                     E5.a aVar5 = aVar2._notificationSummaryManager;
@@ -161,14 +161,14 @@ public final class a implements y5.b {
                                     bVar.L$0 = aVar2;
                                     bVar.L$1 = it2;
                                     bVar.L$2 = null;
-                                    bVar.I$0 = i9;
+                                    bVar.I$0 = i6;
                                     bVar.label = 2;
                                     if (aVar5.updatePossibleDependentSummaryOnDismiss(intValue2, bVar) != aVar3) {
                                         it3 = it2;
                                         aVar4 = aVar2;
                                         aVar = aVar4;
-                                        int i1122 = i9 - 1;
-                                        if (i1122 > 0) {
+                                        int i1022 = i6 - 1;
+                                        if (i1022 > 0) {
                                         }
                                     }
                                 }
@@ -178,21 +178,21 @@ public final class a implements y5.b {
                     }
                     return vVar;
                 }
-                i9 = bVar.I$0;
+                i6 = bVar.I$0;
                 num = (Integer) bVar.L$2;
                 it2 = (Iterator) bVar.L$1;
                 aVar2 = (a) bVar.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 if (((Boolean) obj).booleanValue()) {
                 }
             }
         }
-        bVar = new b(interfaceC5267d);
+        bVar = new b(interfaceC5240d);
         Object obj2 = bVar.result;
-        A7.a aVar32 = A7.a.f58n;
-        i6 = bVar.label;
-        v vVar2 = v.f41353a;
-        if (i6 != 0) {
+        A7.a aVar32 = A7.a.f215n;
+        i4 = bVar.label;
+        v vVar2 = v.f41073a;
+        if (i4 != 0) {
         }
     }
 
@@ -214,20 +214,20 @@ public final class a implements y5.b {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object clearOldestOverLimit(int i, InterfaceC5267d interfaceC5267d) {
+    public Object clearOldestOverLimit(int i, InterfaceC5240d interfaceC5240d) {
         C0234a c0234a;
-        int i6;
+        int i4;
         a aVar;
-        if (interfaceC5267d instanceof C0234a) {
-            c0234a = (C0234a) interfaceC5267d;
-            int i9 = c0234a.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                c0234a.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof C0234a) {
+            c0234a = (C0234a) interfaceC5240d;
+            int i6 = c0234a.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                c0234a.label = i6 - Integer.MIN_VALUE;
                 Object obj = c0234a.result;
-                A7.a aVar2 = A7.a.f58n;
-                i6 = c0234a.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar2 = A7.a.f215n;
+                i4 = c0234a.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     try {
                         c0234a.L$0 = this;
                         c0234a.I$0 = i;
@@ -235,36 +235,36 @@ public final class a implements y5.b {
                     } catch (Throwable unused) {
                         aVar = this;
                         d dVar = aVar._dataController;
-                        int maxNumberOfNotifications = C5242a.INSTANCE.getMaxNumberOfNotifications();
+                        int maxNumberOfNotifications = C5209a.INSTANCE.getMaxNumberOfNotifications();
                         c0234a.L$0 = null;
                         c0234a.label = 3;
                     }
-                } else if (i6 == 1 || i6 == 2) {
+                } else if (i4 == 1 || i4 == 2) {
                     i = c0234a.I$0;
                     aVar = (a) c0234a.L$0;
                     try {
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                     } catch (Throwable unused2) {
                         d dVar2 = aVar._dataController;
-                        int maxNumberOfNotifications2 = C5242a.INSTANCE.getMaxNumberOfNotifications();
+                        int maxNumberOfNotifications2 = C5209a.INSTANCE.getMaxNumberOfNotifications();
                         c0234a.L$0 = null;
                         c0234a.label = 3;
                     }
                 } else {
-                    if (i6 != 3) {
+                    if (i4 != 3) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
-                return v.f41353a;
+                return v.f41073a;
             }
         }
-        c0234a = new C0234a(interfaceC5267d);
+        c0234a = new C0234a(interfaceC5240d);
         Object obj2 = c0234a.result;
-        A7.a aVar22 = A7.a.f58n;
-        i6 = c0234a.label;
-        if (i6 != 0) {
+        A7.a aVar22 = A7.a.f215n;
+        i4 = c0234a.label;
+        if (i4 != 0) {
         }
-        return v.f41353a;
+        return v.f41073a;
     }
 }

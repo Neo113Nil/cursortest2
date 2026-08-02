@@ -1,7 +1,7 @@
 package I0;
 
 import androidx.webkit.ProfileStore;
-import g1.C4523c;
+import i1.C4586c;
 import java.lang.reflect.InvocationHandler;
 import java.util.List;
 import org.chromium.support_lib_boundary.ProfileBoundaryInterface;
@@ -11,48 +11,48 @@ import org.chromium.support_lib_boundary.ProfileStoreBoundaryInterface;
 public final class h implements ProfileStore {
 
     /* renamed from: b, reason: collision with root package name */
-    public static h f1260b;
+    public static h f1285b;
 
     /* renamed from: a, reason: collision with root package name */
-    public final ProfileStoreBoundaryInterface f1261a;
+    public final ProfileStoreBoundaryInterface f1286a;
 
     public h(ProfileStoreBoundaryInterface profileStoreBoundaryInterface) {
-        this.f1261a = profileStoreBoundaryInterface;
+        this.f1286a = profileStoreBoundaryInterface;
     }
 
     @Override // androidx.webkit.ProfileStore
     public final boolean deleteProfile(String str) {
-        if (m.f1272g.b()) {
-            return this.f1261a.deleteProfile(str);
+        if (m.f1299g.b()) {
+            return this.f1286a.deleteProfile(str);
         }
         throw m.a();
     }
 
     @Override // androidx.webkit.ProfileStore
     public final List getAllProfileNames() {
-        if (m.f1272g.b()) {
-            return this.f1261a.getAllProfileNames();
+        if (m.f1299g.b()) {
+            return this.f1286a.getAllProfileNames();
         }
         throw m.a();
     }
 
     @Override // androidx.webkit.ProfileStore
     public final H0.b getOrCreateProfile(String str) {
-        if (!m.f1272g.b()) {
+        if (!m.f1299g.b()) {
             throw m.a();
         }
-        return new C4523c(5, (ProfileBoundaryInterface) A8.b.d(ProfileBoundaryInterface.class, this.f1261a.getOrCreateProfile(str)));
+        return new C4586c(4, (ProfileBoundaryInterface) A8.b.b(ProfileBoundaryInterface.class, this.f1286a.getOrCreateProfile(str)));
     }
 
     @Override // androidx.webkit.ProfileStore
     public final H0.b getProfile(String str) {
-        if (!m.f1272g.b()) {
+        if (!m.f1299g.b()) {
             throw m.a();
         }
-        InvocationHandler profile = this.f1261a.getProfile(str);
+        InvocationHandler profile = this.f1286a.getProfile(str);
         if (profile == null) {
             return null;
         }
-        return new C4523c(5, (ProfileBoundaryInterface) A8.b.d(ProfileBoundaryInterface.class, profile));
+        return new C4586c(4, (ProfileBoundaryInterface) A8.b.b(ProfileBoundaryInterface.class, profile));
     }
 }

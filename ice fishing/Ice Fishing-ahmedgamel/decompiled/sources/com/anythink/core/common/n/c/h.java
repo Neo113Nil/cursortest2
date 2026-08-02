@@ -4,40 +4,40 @@ package com.anythink.core.common.n.c;
 public abstract class h implements v {
 
     /* renamed from: a, reason: collision with root package name */
-    private final v f15866a;
+    private final v f16653a;
 
     public h(v vVar) {
         if (vVar == null) {
             throw new IllegalArgumentException("delegate == null");
         }
-        this.f15866a = vVar;
+        this.f16653a = vVar;
     }
 
     private v b() {
-        return this.f15866a;
+        return this.f16653a;
     }
 
     @Override // com.anythink.core.common.n.c.v
     public void a(c cVar, long j6) {
-        this.f15866a.a(cVar, j6);
+        this.f16653a.a(cVar, j6);
     }
 
     @Override // com.anythink.core.common.n.c.v, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f15866a.close();
+        this.f16653a.close();
     }
 
     @Override // com.anythink.core.common.n.c.v, java.io.Flushable
     public void flush() {
-        this.f15866a.flush();
+        this.f16653a.flush();
     }
 
     public String toString() {
-        return getClass().getSimpleName() + "(" + this.f15866a.toString() + ")";
+        return getClass().getSimpleName() + "(" + this.f16653a.toString() + ")";
     }
 
     @Override // com.anythink.core.common.n.c.v
     public final x a() {
-        return this.f15866a.a();
+        return this.f16653a.a();
     }
 }

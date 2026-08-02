@@ -16,10 +16,10 @@ public final class C7W {
     public static String[] A02 = {"uumaDejXtY9QuA71Txc6KqwcrEMmZNPm", "", "Dsya3x18X7BukkIokO15GhTYLGiL2hRr", "RNehmKATQ4InJCkQYMjQTj", "eAq9FO9dhgnzxwHSxHo7MGMv1ckJfF3W", "", "rfJrIe", ""};
     public final Map<Integer, C7V> A00 = new HashMap();
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            int i11 = copyOfRange[i10] ^ i9;
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            int i10 = copyOfRange[i9] ^ i6;
             String[] strArr = A02;
             if (strArr[2].charAt(3) != strArr[0].charAt(3)) {
                 throw new RuntimeException();
@@ -27,13 +27,13 @@ public final class C7W {
             String[] strArr2 = A02;
             strArr2[1] = "";
             strArr2[7] = "";
-            copyOfRange[i10] = (byte) (i11 ^ 1);
+            copyOfRange[i9] = (byte) (i10 ^ 1);
         }
         return new String(copyOfRange);
     }
 
     public static void A01() {
-        A01 = new byte[]{42, 9, 27, 13, 36, 9, 28, 13, 6, 11, 17, 28, c.f16318c, 34, 34, 51, 36, 95, 96, 124, 102, 123, 102, 96, 97, 12, 62, 50, 47, 51, 54, 49, 56, 13, 62, 43, 58};
+        A01 = new byte[]{42, 9, 27, 13, 36, 9, 28, 13, 6, 11, 17, 28, c.f17105c, 34, 34, 51, 36, 95, 96, 124, 102, 123, 102, 96, 97, 12, 62, 50, 47, 51, 54, 49, 56, 13, 62, 43, 58};
     }
 
     static {

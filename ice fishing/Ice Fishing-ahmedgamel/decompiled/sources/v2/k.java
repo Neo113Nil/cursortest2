@@ -1,38 +1,25 @@
 package v2;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+import com.google.android.gms.ads.internal.overlay.AdOverlayInfoParcel;
+import java.util.concurrent.Callable;
+import r2.C4906k;
+
 /* loaded from: classes.dex */
-public final class k {
+public final class k implements Callable {
 
-    /* renamed from: n, reason: collision with root package name */
-    public static final k f41418n;
+    /* renamed from: a, reason: collision with root package name */
+    public final long f41144a;
 
-    /* renamed from: u, reason: collision with root package name */
-    public static final k f41419u;
-
-    /* renamed from: v, reason: collision with root package name */
-    public static final k f41420v;
-
-    /* renamed from: w, reason: collision with root package name */
-    public static final k f41421w;
-
-    /* renamed from: x, reason: collision with root package name */
-    public static final /* synthetic */ k[] f41422x;
-
-    static {
-        k kVar = new k("SUCCESS", 0);
-        f41418n = kVar;
-        k kVar2 = new k("PERMANENT_FAILURE", 1);
-        f41419u = kVar2;
-        k kVar3 = new k("RETRIABLE_FAILURE", 2);
-        f41420v = kVar3;
-        k kVar4 = new k("BUFFERED", 3);
-        f41421w = kVar4;
-        f41422x = new k[]{kVar, kVar2, kVar3, kVar4};
+    public k(long j6) {
+        this.f41144a = j6;
     }
 
-    public static k[] values() {
-        return (k[]) f41422x.clone();
+    @Override // java.util.concurrent.Callable
+    public final Object call() {
+        if (AdOverlayInfoParcel.f24341S.remove(Long.valueOf(this.f41144a)) == null) {
+            return null;
+        }
+        C4906k.f40186C.f40196h.d("AdOverlayObjectsCleanupTask", new Exception("Key was non-null in AdOverlayObjectsCleanupTask"));
+        return null;
     }
 }

@@ -19,35 +19,35 @@ public class AdSize implements Serializable {
     public static final AdSize BANNER_HEIGHT_90 = new AdSize(6);
     public static final AdSize RECTANGLE_HEIGHT_250 = new AdSize(7);
 
-    public AdSize(int i, int i6) {
+    public AdSize(int i, int i4) {
         this.UNDEFINED = -1;
         this.mInitSizeType = -1;
         this.mInitWidth = i;
-        this.mInitHeight = i6;
+        this.mInitHeight = i4;
     }
 
-    public static AdSize fromWidthAndHeight(int i, int i6) {
+    public static AdSize fromWidthAndHeight(int i, int i4) {
         AdSize adSize = INTERSTITIAL;
-        if (adSize.getHeight() == i6 && adSize.getWidth() == i) {
+        if (adSize.getHeight() == i4 && adSize.getWidth() == i) {
             return adSize;
         }
         AdSize adSize2 = BANNER_320_50;
-        if (adSize2.getHeight() == i6 && adSize2.getWidth() == i) {
+        if (adSize2.getHeight() == i4 && adSize2.getWidth() == i) {
             return adSize2;
         }
         AdSize adSize3 = BANNER_HEIGHT_50;
-        if (adSize3.getHeight() == i6 && adSize3.getWidth() == i) {
+        if (adSize3.getHeight() == i4 && adSize3.getWidth() == i) {
             return adSize3;
         }
         AdSize adSize4 = BANNER_HEIGHT_90;
-        if (adSize4.getHeight() == i6 && adSize4.getWidth() == i) {
+        if (adSize4.getHeight() == i4 && adSize4.getWidth() == i) {
             return adSize4;
         }
         AdSize adSize5 = RECTANGLE_HEIGHT_250;
-        if (adSize5.getHeight() == i6 && adSize5.getWidth() == i) {
+        if (adSize5.getHeight() == i4 && adSize5.getWidth() == i) {
             return adSize5;
         }
-        throw new IllegalArgumentException("Can't create AdSize using this width = " + i + " && height = " + i6);
+        throw new IllegalArgumentException("Can't create AdSize using this width = " + i + " && height = " + i4);
     }
 
     private AdSizeApi getAdSizeApi(int i) {

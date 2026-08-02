@@ -8,32 +8,32 @@ import java.util.Map;
 public class c {
 
     /* renamed from: a, reason: collision with root package name */
-    private static volatile c f16205a;
+    private static volatile c f16992a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final Map<String, a> f16206b = new HashMap();
+    private final Map<String, a> f16993b = new HashMap();
 
     private c() {
     }
 
     public static c a() {
-        if (f16205a == null) {
+        if (f16992a == null) {
             synchronized (c.class) {
                 try {
-                    if (f16205a == null) {
-                        f16205a = new c();
+                    if (f16992a == null) {
+                        f16992a = new c();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16205a;
+        return f16992a;
     }
 
     public final synchronized void b(String str) {
-        if (this.f16206b != null && !TextUtils.isEmpty(str)) {
-            this.f16206b.remove(str);
+        if (this.f16993b != null && !TextUtils.isEmpty(str)) {
+            this.f16993b.remove(str);
         }
     }
 
@@ -41,7 +41,7 @@ public class c {
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        a aVar = this.f16206b.get(str);
+        a aVar = this.f16993b.get(str);
         if (aVar != null) {
             aVar.f();
         }
@@ -51,19 +51,19 @@ public class c {
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        a aVar = this.f16206b.get(str);
+        a aVar = this.f16993b.get(str);
         if (aVar != null) {
             aVar.g();
         }
     }
 
     public final synchronized a a(String str) {
-        a aVar = this.f16206b.get(str);
+        a aVar = this.f16993b.get(str);
         if (aVar != null) {
             return aVar;
         }
         a aVar2 = new a(str);
-        this.f16206b.put(str, aVar2);
+        this.f16993b.put(str, aVar2);
         return aVar2;
     }
 }

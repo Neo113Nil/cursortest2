@@ -2,23 +2,23 @@ package com.onesignal.inAppMessages.internal.preview;
 
 import B7.c;
 import android.app.Activity;
-import com.bumptech.glide.d;
 import kotlin.jvm.internal.h;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import t5.d;
 import t5.e;
-import v5.InterfaceC5116b;
+import v5.InterfaceC5106b;
 import x4.f;
-import x5.InterfaceC5198a;
-import z7.InterfaceC5267d;
+import x5.InterfaceC5193a;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
-public final class a implements com.onesignal.core.internal.startup.a, InterfaceC5198a {
+public final class a implements com.onesignal.core.internal.startup.a, InterfaceC5193a {
     private final f _applicationService;
     private final R4.a _iamDisplayer;
     private final com.onesignal.notifications.internal.a _notificationActivityOpener;
-    private final InterfaceC5116b _notificationDisplayer;
+    private final InterfaceC5106b _notificationDisplayer;
     private final x5.b _notificationLifeCycle;
     private final Y4.a _state;
     private final K4.a _time;
@@ -30,8 +30,8 @@ public final class a implements com.onesignal.core.internal.startup.a, Interface
         int label;
         /* synthetic */ Object result;
 
-        public C0209a(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public C0209a(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -47,8 +47,8 @@ public final class a implements com.onesignal.core.internal.startup.a, Interface
         int label;
         /* synthetic */ Object result;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -59,7 +59,7 @@ public final class a implements com.onesignal.core.internal.startup.a, Interface
         }
     }
 
-    public a(R4.a _iamDisplayer, f _applicationService, InterfaceC5116b _notificationDisplayer, com.onesignal.notifications.internal.a _notificationActivityOpener, x5.b _notificationLifeCycle, Y4.a _state, K4.a _time) {
+    public a(R4.a _iamDisplayer, f _applicationService, InterfaceC5106b _notificationDisplayer, com.onesignal.notifications.internal.a _notificationActivityOpener, x5.b _notificationLifeCycle, Y4.a _state, K4.a _time) {
         h.e(_iamDisplayer, "_iamDisplayer");
         h.e(_applicationService, "_applicationService");
         h.e(_notificationDisplayer, "_notificationDisplayer");
@@ -99,25 +99,25 @@ public final class a implements com.onesignal.core.internal.startup.a, Interface
      */
     /* JADX WARN: Removed duplicated region for block: B:23:0x0045  */
     /* JADX WARN: Removed duplicated region for block: B:8:0x0023  */
-    @Override // x5.InterfaceC5198a
+    @Override // x5.InterfaceC5193a
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object canOpenNotification(Activity activity, JSONObject jSONObject, InterfaceC5267d interfaceC5267d) {
+    public Object canOpenNotification(Activity activity, JSONObject jSONObject, InterfaceC5240d interfaceC5240d) {
         C0209a c0209a;
         int i;
         String inAppPreviewPushUUID;
         a aVar;
-        if (interfaceC5267d instanceof C0209a) {
-            c0209a = (C0209a) interfaceC5267d;
-            int i6 = c0209a.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                c0209a.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof C0209a) {
+            c0209a = (C0209a) interfaceC5240d;
+            int i4 = c0209a.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                c0209a.label = i4 - Integer.MIN_VALUE;
                 Object obj = c0209a.result;
-                A7.a aVar2 = A7.a.f58n;
+                A7.a aVar2 = A7.a.f215n;
                 i = c0209a.label;
                 if (i != 0) {
-                    d.k(obj);
+                    Q3.b.s(obj);
                     inAppPreviewPushUUID = inAppPreviewPushUUID(jSONObject);
                     if (inAppPreviewPushUUID == null) {
                         return Boolean.TRUE;
@@ -138,7 +138,7 @@ public final class a implements com.onesignal.core.internal.startup.a, Interface
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     aVar = (a) c0209a.L$0;
-                    d.k(obj);
+                    Q3.b.s(obj);
                     if (!((Boolean) obj).booleanValue()) {
                         aVar._state.setInAppMessageIdShowing(null);
                     }
@@ -146,7 +146,7 @@ public final class a implements com.onesignal.core.internal.startup.a, Interface
                 }
                 String str = (String) c0209a.L$1;
                 a aVar4 = (a) c0209a.L$0;
-                d.k(obj);
+                Q3.b.s(obj);
                 inAppPreviewPushUUID = str;
                 aVar = aVar4;
                 aVar._state.setInAppMessageIdShowing(inAppPreviewPushUUID);
@@ -157,9 +157,9 @@ public final class a implements com.onesignal.core.internal.startup.a, Interface
                 obj = aVar5.displayPreviewMessage(inAppPreviewPushUUID, c0209a);
             }
         }
-        c0209a = new C0209a(interfaceC5267d);
+        c0209a = new C0209a(interfaceC5240d);
         Object obj2 = c0209a.result;
-        A7.a aVar22 = A7.a.f58n;
+        A7.a aVar22 = A7.a.f215n;
         i = c0209a.label;
         if (i != 0) {
         }
@@ -178,24 +178,24 @@ public final class a implements com.onesignal.core.internal.startup.a, Interface
     /* JADX WARN: Removed duplicated region for block: B:19:0x0069  */
     /* JADX WARN: Removed duplicated region for block: B:20:0x003a  */
     /* JADX WARN: Removed duplicated region for block: B:8:0x0022  */
-    @Override // x5.InterfaceC5198a
+    @Override // x5.InterfaceC5193a
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object canReceiveNotification(JSONObject jSONObject, InterfaceC5267d interfaceC5267d) {
+    public Object canReceiveNotification(JSONObject jSONObject, InterfaceC5240d interfaceC5240d) {
         b bVar;
         int i;
         a aVar;
-        if (interfaceC5267d instanceof b) {
-            bVar = (b) interfaceC5267d;
-            int i6 = bVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                bVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof b) {
+            bVar = (b) interfaceC5240d;
+            int i4 = bVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                bVar.label = i4 - Integer.MIN_VALUE;
                 Object obj = bVar.result;
-                A7.a aVar2 = A7.a.f58n;
+                A7.a aVar2 = A7.a.f215n;
                 i = bVar.label;
                 if (i != 0) {
-                    d.k(obj);
+                    Q3.b.s(obj);
                     String inAppPreviewPushUUID = inAppPreviewPushUUID(jSONObject);
                     if (inAppPreviewPushUUID == null) {
                         return Boolean.TRUE;
@@ -212,15 +212,15 @@ public final class a implements com.onesignal.core.internal.startup.a, Interface
                             }
                         }
                     } else {
-                        t5.d dVar = new t5.d(jSONObject, this._time);
-                        InterfaceC5116b interfaceC5116b = this._notificationDisplayer;
+                        d dVar = new d(jSONObject, this._time);
+                        InterfaceC5106b interfaceC5106b = this._notificationDisplayer;
                         bVar.label = 2;
                     }
                     return aVar2;
                 }
                 if (i == 1) {
                     aVar = (a) bVar.L$0;
-                    d.k(obj);
+                    Q3.b.s(obj);
                     if (!((Boolean) obj).booleanValue()) {
                         aVar._state.setInAppMessageIdShowing(null);
                     }
@@ -228,14 +228,14 @@ public final class a implements com.onesignal.core.internal.startup.a, Interface
                     if (i != 2) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    d.k(obj);
+                    Q3.b.s(obj);
                 }
                 return Boolean.FALSE;
             }
         }
-        bVar = new b(interfaceC5267d);
+        bVar = new b(interfaceC5240d);
         Object obj2 = bVar.result;
-        A7.a aVar22 = A7.a.f58n;
+        A7.a aVar22 = A7.a.f215n;
         i = bVar.label;
         if (i != 0) {
         }

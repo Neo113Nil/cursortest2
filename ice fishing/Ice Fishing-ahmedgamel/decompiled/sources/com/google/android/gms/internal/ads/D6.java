@@ -1,11 +1,11 @@
 package com.google.android.gms.internal.ads;
 
-import u.AbstractC5049e;
+import u.AbstractC5050e;
 
 /* loaded from: classes2.dex */
 public final class D6 extends VK {
     private static final D6 zzA;
-    private static volatile InterfaceC4048vL zzB;
+    private static volatile InterfaceC4071vL zzB;
     private int zza;
     private long zzu;
     private long zzv;
@@ -141,42 +141,42 @@ public final class D6 extends VK {
 
     @Override // com.google.android.gms.internal.ads.VK
     public final Object w(int i, VK vk) {
-        InterfaceC4048vL interfaceC4048vL;
-        int d2 = AbstractC5049e.d(i);
-        if (d2 == 0) {
+        InterfaceC4071vL interfaceC4071vL;
+        int d9 = AbstractC5050e.d(i);
+        if (d9 == 0) {
             return (byte) 1;
         }
-        if (d2 == 2) {
-            C3494l6 c3494l6 = C3494l6.f31725m;
-            return new C4264zL(zzA, "\u0001\u0015\u0000\u0001\u0001\u0015\u0015\u0000\u0000\u0000\u0001ဂ\u0000\u0002ဂ\u0001\u0003ဂ\u0002\u0004ဂ\u0003\u0005ဂ\u0004\u0006ဂ\u0005\u0007᠌\u0006\bဂ\u0007\tဂ\b\nဂ\t\u000b᠌\n\fဂ\u000b\rဂ\f\u000eဂ\r\u000fဂ\u000e\u0010ဂ\u000f\u0011ဂ\u0010\u0012ဂ\u0011\u0013ဂ\u0012\u0014ဂ\u0013\u0015ဂ\u0014", new Object[]{"zza", "zzb", "zzc", "zzd", "zze", "zzf", "zzg", "zzh", c3494l6, "zzi", "zzj", "zzk", "zzl", c3494l6, "zzm", "zzn", "zzo", "zzp", "zzu", "zzv", "zzw", "zzx", "zzy", "zzz"});
+        if (d9 == 2) {
+            C3517l6 c3517l6 = C3517l6.f32505m;
+            return new C4287zL(zzA, "\u0001\u0015\u0000\u0001\u0001\u0015\u0015\u0000\u0000\u0000\u0001ဂ\u0000\u0002ဂ\u0001\u0003ဂ\u0002\u0004ဂ\u0003\u0005ဂ\u0004\u0006ဂ\u0005\u0007᠌\u0006\bဂ\u0007\tဂ\b\nဂ\t\u000b᠌\n\fဂ\u000b\rဂ\f\u000eဂ\r\u000fဂ\u000e\u0010ဂ\u000f\u0011ဂ\u0010\u0012ဂ\u0011\u0013ဂ\u0012\u0014ဂ\u0013\u0015ဂ\u0014", new Object[]{"zza", "zzb", "zzc", "zzd", "zze", "zzf", "zzg", "zzh", c3517l6, "zzi", "zzj", "zzk", "zzl", c3517l6, "zzm", "zzn", "zzo", "zzp", "zzu", "zzv", "zzw", "zzx", "zzy", "zzz"});
         }
-        if (d2 == 3) {
+        if (d9 == 3) {
             return new D6();
         }
-        if (d2 == 4) {
+        if (d9 == 4) {
             return new C6(zzA);
         }
-        if (d2 == 5) {
+        if (d9 == 5) {
             return zzA;
         }
-        if (d2 != 6) {
+        if (d9 != 6) {
             throw null;
         }
-        InterfaceC4048vL interfaceC4048vL2 = zzB;
-        if (interfaceC4048vL2 != null) {
-            return interfaceC4048vL2;
+        InterfaceC4071vL interfaceC4071vL2 = zzB;
+        if (interfaceC4071vL2 != null) {
+            return interfaceC4071vL2;
         }
         synchronized (D6.class) {
             try {
-                interfaceC4048vL = zzB;
-                if (interfaceC4048vL == null) {
-                    interfaceC4048vL = new UK(zzA);
-                    zzB = interfaceC4048vL;
+                interfaceC4071vL = zzB;
+                if (interfaceC4071vL == null) {
+                    interfaceC4071vL = new UK(zzA);
+                    zzB = interfaceC4071vL;
                 }
             } catch (Throwable th) {
                 throw th;
             }
         }
-        return interfaceC4048vL;
+        return interfaceC4071vL;
     }
 }

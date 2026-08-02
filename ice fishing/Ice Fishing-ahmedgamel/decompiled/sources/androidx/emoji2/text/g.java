@@ -2,33 +2,33 @@ package androidx.emoji2.text;
 
 import android.graphics.Rect;
 import android.view.View;
-import t0.AbstractC4990E;
-import t0.C5025t;
+import t0.AbstractC4987C;
+import t0.C5023s;
 
 /* loaded from: classes.dex */
 public abstract class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f4768a;
+    public int f4736a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Object f4769b;
+    public final Object f4737b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Object f4770c;
+    public final Object f4738c;
 
-    public g(AbstractC4990E abstractC4990E) {
-        this.f4768a = Integer.MIN_VALUE;
-        this.f4770c = new Rect();
-        this.f4769b = abstractC4990E;
+    public g(AbstractC4987C abstractC4987C) {
+        this.f4736a = Integer.MIN_VALUE;
+        this.f4738c = new Rect();
+        this.f4737b = abstractC4987C;
     }
 
-    public static g a(AbstractC4990E abstractC4990E, int i) {
+    public static g a(AbstractC4987C abstractC4987C, int i) {
         if (i == 0) {
-            return new C5025t(abstractC4990E, 0);
+            return new C5023s(abstractC4987C, 0);
         }
         if (i == 1) {
-            return new C5025t(abstractC4990E, 1);
+            return new C5023s(abstractC4987C, 1);
         }
         throw new IllegalArgumentException("invalid orientation");
     }
@@ -62,8 +62,8 @@ public abstract class g {
     public abstract void o(int i);
 
     public g(i iVar) {
-        this.f4768a = 0;
-        this.f4770c = new d();
-        this.f4769b = iVar;
+        this.f4736a = 0;
+        this.f4738c = new d();
+        this.f4737b = iVar;
     }
 }

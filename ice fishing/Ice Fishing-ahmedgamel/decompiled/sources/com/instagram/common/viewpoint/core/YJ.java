@@ -9,8 +9,8 @@ import android.view.View;
 public final class YJ implements View.OnTouchListener {
     public final GestureDetector A00;
 
-    public YJ(int i, int i6, Context context, YI yi) {
-        this.A00 = new GestureDetector(context, new YH(this, yi, i, i6));
+    public YJ(int i, int i4, Context context, YI yi) {
+        this.A00 = new GestureDetector(context, new YH(this, yi, i, i4));
     }
 
     public final void A00(View view) {

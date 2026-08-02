@@ -4,33 +4,33 @@ package com.google.android.gms.internal.ads;
 public final class Sr implements Ps {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f27565a;
+    public final /* synthetic */ int f28348a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final C3360ig f27566b;
+    public final C3383ig f28349b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final C3052cu f27567c;
+    public final C3075cu f28350c;
 
-    public /* synthetic */ Sr(C3360ig c3360ig, C3052cu c3052cu, int i) {
-        this.f27565a = i;
-        this.f27566b = c3360ig;
-        this.f27567c = c3052cu;
+    public /* synthetic */ Sr(C3383ig c3383ig, C3075cu c3075cu, int i) {
+        this.f28348a = i;
+        this.f28349b = c3383ig;
+        this.f28350c = c3075cu;
     }
 
     @Override // com.google.android.gms.internal.ads.Ps
-    public final N3.a c() {
-        switch (this.f27565a) {
+    public final P3.a c() {
+        switch (this.f28348a) {
             case 0:
-                return this.f27566b.b(new CallableC3549m7(8, this));
+                return this.f28349b.b(new CallableC3572m7(8, this));
             default:
-                return this.f27566b.b(new CallableC3549m7(18, this));
+                return this.f28349b.b(new CallableC3572m7(18, this));
         }
     }
 
     @Override // com.google.android.gms.internal.ads.Ps
     public final int f() {
-        switch (this.f27565a) {
+        switch (this.f28348a) {
             case 0:
                 return 5;
             default:

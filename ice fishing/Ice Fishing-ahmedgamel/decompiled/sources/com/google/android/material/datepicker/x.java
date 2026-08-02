@@ -4,46 +4,46 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.icefishingapp.icefishing.C5275R;
+import com.IceFishing.LiveIceFishing.C5248R;
 import java.util.Locale;
-import t0.AbstractC5003S;
-import t0.AbstractC5027v;
+import t0.AbstractC5000P;
+import t0.AbstractC5026v;
 
 /* loaded from: classes2.dex */
-public final class x extends AbstractC5027v {
+public final class x extends AbstractC5026v {
 
     /* renamed from: c, reason: collision with root package name */
-    public final j f36019c;
+    public final j f36787c;
 
     public x(j jVar) {
-        this.f36019c = jVar;
+        this.f36787c = jVar;
     }
 
-    @Override // t0.AbstractC5027v
+    @Override // t0.AbstractC5026v
     public final int a() {
-        return this.f36019c.f35959B0.f35940y;
+        return this.f36787c.f36732w0.f36708y;
     }
 
-    @Override // t0.AbstractC5027v
-    public final void c(AbstractC5003S abstractC5003S, int i) {
-        j jVar = this.f36019c;
-        int i6 = jVar.f35959B0.f35935n.f35999v + i;
-        String format = String.format(Locale.getDefault(), "%d", Integer.valueOf(i6));
-        TextView textView = ((w) abstractC5003S).f36018t;
+    @Override // t0.AbstractC5026v
+    public final void c(AbstractC5000P abstractC5000P, int i) {
+        j jVar = this.f36787c;
+        int i4 = jVar.f36732w0.f36703n.f36767v + i;
+        String format = String.format(Locale.getDefault(), "%d", Integer.valueOf(i4));
+        TextView textView = ((w) abstractC5000P).f36786t;
         textView.setText(format);
         Context context = textView.getContext();
-        textView.setContentDescription(v.b().get(1) == i6 ? String.format(context.getString(C5275R.string.mtrl_picker_navigate_to_current_year_description), Integer.valueOf(i6)) : String.format(context.getString(C5275R.string.mtrl_picker_navigate_to_year_description), Integer.valueOf(i6)));
-        c cVar = jVar.f35961E0;
-        if (v.b().get(1) == i6) {
-            M2.i iVar = cVar.f35943b;
+        textView.setContentDescription(v.b().get(1) == i4 ? String.format(context.getString(C5248R.string.mtrl_picker_navigate_to_current_year_description), Integer.valueOf(i4)) : String.format(context.getString(C5248R.string.mtrl_picker_navigate_to_year_description), Integer.valueOf(i4)));
+        c cVar = jVar.f36735z0;
+        if (v.b().get(1) == i4) {
+            G3.e eVar = cVar.f36711b;
         } else {
-            M2.i iVar2 = cVar.f35942a;
+            G3.e eVar2 = cVar.f36710a;
         }
         throw null;
     }
 
-    @Override // t0.AbstractC5027v
-    public final AbstractC5003S d(ViewGroup viewGroup) {
-        return new w((TextView) LayoutInflater.from(viewGroup.getContext()).inflate(C5275R.layout.mtrl_calendar_year, viewGroup, false));
+    @Override // t0.AbstractC5026v
+    public final AbstractC5000P d(ViewGroup viewGroup) {
+        return new w((TextView) LayoutInflater.from(viewGroup.getContext()).inflate(C5248R.layout.mtrl_calendar_year, viewGroup, false));
     }
 }

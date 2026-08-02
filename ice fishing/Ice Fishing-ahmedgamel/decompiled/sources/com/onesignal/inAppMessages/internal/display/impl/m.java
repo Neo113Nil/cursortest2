@@ -1,13 +1,13 @@
 package com.onesignal.inAppMessages.internal.display.impl;
 
-import D.y;
+import D.x;
 import I7.p;
 import Q7.q;
-import S7.AbstractC0406y;
+import S7.AbstractC0410y;
 import S7.F;
-import S7.InterfaceC0404w;
+import S7.InterfaceC0408w;
 import X7.o;
-import a8.InterfaceC0447a;
+import a8.InterfaceC0451a;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Build;
@@ -21,7 +21,7 @@ import java.util.Locale;
 import org.json.JSONException;
 import org.json.JSONObject;
 import u7.v;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class m implements x4.d {
@@ -50,7 +50,7 @@ public final class m implements x4.d {
     private final com.onesignal.inAppMessages.internal.a message;
     private final com.onesignal.inAppMessages.internal.d messageContent;
     private com.onesignal.inAppMessages.internal.display.impl.d messageView;
-    private final InterfaceC0447a messageViewMutex;
+    private final InterfaceC0451a messageViewMutex;
     private com.onesignal.inAppMessages.internal.display.impl.i webView;
     public static final a Companion = new a(null);
     private static final int MARGIN_PX_SIZE = com.onesignal.common.m.INSTANCE.dpToPx(24);
@@ -192,7 +192,7 @@ public final class m implements x4.d {
         static {
             c[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = com.bumptech.glide.e.b($values);
+            $ENTRIES = X2.a.h($values);
         }
 
         private c(String str, int i) {
@@ -219,21 +219,21 @@ public final class m implements x4.d {
     public static final class d extends B7.h implements I7.l {
         int label;
 
-        public d(InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public d(InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return m.this.new d(interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return m.this.new d(interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 m mVar = m.this;
                 this.label = 1;
                 if (mVar.dismissAndAwaitNextMessage(this) == aVar) {
@@ -243,14 +243,14 @@ public final class m implements x4.d {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return v.f41353a;
+            return v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((d) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((d) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -259,8 +259,8 @@ public final class m implements x4.d {
         int label;
         /* synthetic */ Object result;
 
-        public e(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public e(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -276,22 +276,22 @@ public final class m implements x4.d {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public f(int i, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public f(int i, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$pagePxHeight = i;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return m.this.new f(this.$pagePxHeight, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return m.this.new f(this.$pagePxHeight, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 m mVar = m.this;
                 Integer num = new Integer(this.$pagePxHeight);
                 this.label = 1;
@@ -302,14 +302,14 @@ public final class m implements x4.d {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return v.f41353a;
+            return v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((f) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((f) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -342,8 +342,8 @@ public final class m implements x4.d {
         int label;
         /* synthetic */ Object result;
 
-        public h(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public h(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -360,15 +360,15 @@ public final class m implements x4.d {
         final /* synthetic */ m this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public i(String str, m mVar, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public i(String str, m mVar, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$lastActivityName = str;
             this.this$0 = mVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return new i(this.$lastActivityName, this.this$0, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return new i(this.$lastActivityName, this.this$0, interfaceC5240d);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:15:0x002c, code lost:
@@ -392,10 +392,10 @@ public final class m implements x4.d {
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 String str = this.$lastActivityName;
                 if (str == null) {
                     m mVar = this.this$0;
@@ -417,14 +417,14 @@ public final class m implements x4.d {
                 if (i != 1 && i != 2 && i != 3) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return v.f41353a;
+            return v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((i) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((i) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -435,8 +435,8 @@ public final class m implements x4.d {
         int label;
         /* synthetic */ Object result;
 
-        public j(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public j(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -454,8 +454,8 @@ public final class m implements x4.d {
         int label;
         /* synthetic */ Object result;
 
-        public k(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public k(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -469,33 +469,33 @@ public final class m implements x4.d {
     public static final class l extends B7.h implements p {
         int label;
 
-        public l(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public l(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return m.this.new l(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return m.this.new l(interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((l) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((l) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             int[] cutoutAndStatusBarInsets = com.onesignal.common.m.INSTANCE.getCutoutAndStatusBarInsets(m.this.activity);
             String format = String.format(m.SET_SAFE_AREA_INSETS_JS_FUNCTION, Arrays.copyOf(new Object[]{String.format(m.SAFE_AREA_JS_OBJECT, Arrays.copyOf(new Object[]{new Integer(cutoutAndStatusBarInsets[0]), new Integer(cutoutAndStatusBarInsets[1]), new Integer(cutoutAndStatusBarInsets[2]), new Integer(cutoutAndStatusBarInsets[3])}, 4))}, 1));
             com.onesignal.inAppMessages.internal.display.impl.i iVar = m.this.webView;
             kotlin.jvm.internal.h.b(iVar);
             iVar.evaluateJavascript(format, null);
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
@@ -519,8 +519,8 @@ public final class m implements x4.d {
         if (str == null || str.length() == 0) {
             return "<empty>";
         }
-        String O8 = q.O(q.O(str, '\n', ' '), '\r', ' ');
-        return O8.length() <= 200 ? O8 : Q7.j.o0(200, O8).concat("…");
+        String e02 = q.e0(q.e0(str, '\n', ' '), '\r', ' ');
+        return e02.length() <= 200 ? e02 : Q7.j.E0(200, e02).concat("…");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -530,22 +530,22 @@ public final class m implements x4.d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object calculateHeightAndShowWebViewAfterNewActivity(InterfaceC5267d interfaceC5267d) {
+    public final Object calculateHeightAndShowWebViewAfterNewActivity(InterfaceC5240d interfaceC5240d) {
         e eVar;
-        int i6;
+        int i4;
         final m mVar;
         m mVar2;
-        if (interfaceC5267d instanceof e) {
-            eVar = (e) interfaceC5267d;
-            int i9 = eVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                eVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof e) {
+            eVar = (e) interfaceC5240d;
+            int i6 = eVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                eVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = eVar.result;
-                A7.a aVar = A7.a.f58n;
-                i6 = eVar.label;
-                v vVar = v.f41353a;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar = A7.a.f215n;
+                i4 = eVar.label;
+                v vVar = v.f41073a;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     com.onesignal.inAppMessages.internal.display.impl.d dVar = this.messageView;
                     if (dVar != null) {
                         if (dVar.getDisplayPosition() != c.FULL_SCREEN || this.messageContent.isFullBleed()) {
@@ -565,16 +565,16 @@ public final class m implements x4.d {
                     }
                     return vVar;
                 }
-                if (i6 == 1) {
-                    com.bumptech.glide.d.k(obj);
+                if (i4 == 1) {
+                    Q3.b.s(obj);
                     return vVar;
                 }
-                if (i6 != 2) {
-                    if (i6 != 3) {
+                if (i4 != 2) {
+                    if (i4 != 3) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     mVar2 = (m) eVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     mVar = mVar2;
                     com.onesignal.inAppMessages.internal.display.impl.i iVar = mVar.webView;
                     kotlin.jvm.internal.h.b(iVar);
@@ -587,7 +587,7 @@ public final class m implements x4.d {
                     return vVar;
                 }
                 mVar = (m) eVar.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 mVar.setWebViewToMaxSize(mVar.activity);
                 if (mVar.messageContent.isFullBleed()) {
                     eVar.L$0 = mVar;
@@ -609,12 +609,12 @@ public final class m implements x4.d {
                 return vVar;
             }
         }
-        eVar = new e(interfaceC5267d);
+        eVar = new e(interfaceC5240d);
         Object obj2 = eVar.result;
-        A7.a aVar2 = A7.a.f58n;
-        i6 = eVar.label;
-        v vVar2 = v.f41353a;
-        if (i6 != 0) {
+        A7.a aVar2 = A7.a.f215n;
+        i4 = eVar.label;
+        v vVar2 = v.f41073a;
+        if (i4 != 0) {
         }
         mVar.setWebViewToMaxSize(mVar.activity);
         if (mVar.messageContent.isFullBleed()) {
@@ -633,7 +633,7 @@ public final class m implements x4.d {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void calculateHeightAndShowWebViewAfterNewActivity$lambda$0(m this$0, String str) {
         kotlin.jvm.internal.h.e(this$0, "this$0");
-        if (str == null || Q7.j.c0(str) || str.equals("null")) {
+        if (str == null || Q7.j.s0(str) || str.equals("null")) {
             com.onesignal.debug.internal.logging.b.warn$default("calculateHeightAndShowWebViewAfterNewActivity: empty/null page metadata from WebView; skipping height update", null, 2, null);
             return;
         }
@@ -704,50 +704,50 @@ public final class m implements x4.d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object showMessageView(Integer num, InterfaceC5267d interfaceC5267d) {
+    public final Object showMessageView(Integer num, InterfaceC5240d interfaceC5240d) {
         k kVar;
-        int i6;
+        int i4;
         m mVar;
         Integer num2;
-        InterfaceC0447a interfaceC0447a;
+        InterfaceC0451a interfaceC0451a;
         m mVar2;
         com.onesignal.inAppMessages.internal.display.impl.d dVar;
         com.onesignal.inAppMessages.internal.display.impl.d dVar2;
         try {
-            if (interfaceC5267d instanceof k) {
-                kVar = (k) interfaceC5267d;
-                int i9 = kVar.label;
-                if ((i9 & Integer.MIN_VALUE) != 0) {
-                    kVar.label = i9 - Integer.MIN_VALUE;
+            if (interfaceC5240d instanceof k) {
+                kVar = (k) interfaceC5240d;
+                int i6 = kVar.label;
+                if ((i6 & Integer.MIN_VALUE) != 0) {
+                    kVar.label = i6 - Integer.MIN_VALUE;
                     Object obj = kVar.result;
-                    A7.a aVar = A7.a.f58n;
-                    i6 = kVar.label;
-                    v vVar = v.f41353a;
-                    if (i6 != 0) {
-                        com.bumptech.glide.d.k(obj);
-                        InterfaceC0447a interfaceC0447a2 = this.messageViewMutex;
+                    A7.a aVar = A7.a.f215n;
+                    i4 = kVar.label;
+                    v vVar = v.f41073a;
+                    if (i4 != 0) {
+                        Q3.b.s(obj);
+                        InterfaceC0451a interfaceC0451a2 = this.messageViewMutex;
                         kVar.L$0 = this;
                         kVar.L$1 = num;
-                        kVar.L$2 = interfaceC0447a2;
+                        kVar.L$2 = interfaceC0451a2;
                         kVar.label = 1;
-                        a8.d dVar3 = (a8.d) interfaceC0447a2;
+                        a8.d dVar3 = (a8.d) interfaceC0451a2;
                         if (dVar3.c(kVar) != aVar) {
                             mVar = this;
                             num2 = num;
-                            interfaceC0447a = dVar3;
+                            interfaceC0451a = dVar3;
                         }
                         return aVar;
                     }
-                    if (i6 != 1) {
-                        if (i6 == 2) {
-                            interfaceC0447a = (InterfaceC0447a) kVar.L$1;
+                    if (i4 != 1) {
+                        if (i4 == 2) {
+                            interfaceC0451a = (InterfaceC0451a) kVar.L$1;
                             mVar2 = (m) kVar.L$0;
-                            com.bumptech.glide.d.k(obj);
+                            Q3.b.s(obj);
                             dVar = mVar2.messageView;
                             if (dVar != null) {
                                 Activity activity = mVar2.activity;
                                 kVar.L$0 = mVar2;
-                                kVar.L$1 = interfaceC0447a;
+                                kVar.L$1 = interfaceC0451a;
                                 kVar.L$2 = null;
                                 kVar.label = 3;
                                 if (dVar.showView(activity, kVar) == aVar) {
@@ -757,38 +757,38 @@ public final class m implements x4.d {
                             dVar2 = mVar2.messageView;
                             if (dVar2 != null) {
                             }
-                            ((a8.d) interfaceC0447a).d(null);
+                            ((a8.d) interfaceC0451a).d(null);
                             return vVar;
                         }
-                        if (i6 != 3) {
-                            if (i6 != 4) {
+                        if (i4 != 3) {
+                            if (i4 != 4) {
                                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                             }
-                            interfaceC0447a = (InterfaceC0447a) kVar.L$0;
-                            com.bumptech.glide.d.k(obj);
-                            ((a8.d) interfaceC0447a).d(null);
+                            interfaceC0451a = (InterfaceC0451a) kVar.L$0;
+                            Q3.b.s(obj);
+                            ((a8.d) interfaceC0451a).d(null);
                             return vVar;
                         }
-                        interfaceC0447a = (InterfaceC0447a) kVar.L$1;
+                        interfaceC0451a = (InterfaceC0451a) kVar.L$1;
                         mVar2 = (m) kVar.L$0;
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                         dVar2 = mVar2.messageView;
                         if (dVar2 != null) {
-                            kVar.L$0 = interfaceC0447a;
+                            kVar.L$0 = interfaceC0451a;
                             kVar.L$1 = null;
                             kVar.L$2 = null;
                             kVar.label = 4;
                         }
-                        ((a8.d) interfaceC0447a).d(null);
+                        ((a8.d) interfaceC0451a).d(null);
                         return vVar;
                     }
-                    interfaceC0447a = (InterfaceC0447a) kVar.L$2;
+                    interfaceC0451a = (InterfaceC0451a) kVar.L$2;
                     num2 = (Integer) kVar.L$1;
                     mVar = (m) kVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     if (mVar.messageView != null) {
                         com.onesignal.debug.internal.logging.b.warn$default("No messageView found to update a with a new height.", null, 2, null);
-                        ((a8.d) interfaceC0447a).d(null);
+                        ((a8.d) interfaceC0451a).d(null);
                         return vVar;
                     }
                     com.onesignal.debug.internal.logging.b.debug$default("In app message, showing first one with height: " + num2, null, 2, null);
@@ -804,7 +804,7 @@ public final class m implements x4.d {
                         if (dVar5 != null) {
                             int intValue = num2.intValue();
                             kVar.L$0 = mVar;
-                            kVar.L$1 = interfaceC0447a;
+                            kVar.L$1 = interfaceC0451a;
                             kVar.L$2 = null;
                             kVar.label = 2;
                             if (dVar5.updateHeight(intValue, kVar) == aVar) {
@@ -819,11 +819,11 @@ public final class m implements x4.d {
                     dVar2 = mVar2.messageView;
                     if (dVar2 != null) {
                     }
-                    ((a8.d) interfaceC0447a).d(null);
+                    ((a8.d) interfaceC0451a).d(null);
                     return vVar;
                 }
             }
-            if (i6 != 0) {
+            if (i4 != 0) {
             }
             if (mVar.messageView != null) {
             }
@@ -831,30 +831,30 @@ public final class m implements x4.d {
             ((a8.d) num).d(null);
             throw th;
         }
-        kVar = new k(interfaceC5267d);
+        kVar = new k(interfaceC5240d);
         Object obj2 = kVar.result;
-        A7.a aVar2 = A7.a.f58n;
-        i6 = kVar.label;
-        v vVar2 = v.f41353a;
+        A7.a aVar2 = A7.a.f215n;
+        i4 = kVar.label;
+        v vVar2 = v.f41073a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final Object updateSafeAreaInsets(InterfaceC5267d interfaceC5267d) {
-        Z7.e eVar = F.f2915a;
-        Object y7 = AbstractC0406y.y(o.f3856a, new l(null), interfaceC5267d);
-        return y7 == A7.a.f58n ? y7 : v.f41353a;
+    public final Object updateSafeAreaInsets(InterfaceC5240d interfaceC5240d) {
+        Z7.e eVar = F.f2998a;
+        Object y7 = AbstractC0410y.y(o.f3811a, new l(null), interfaceC5240d);
+        return y7 == A7.a.f215n ? y7 : v.f41073a;
     }
 
     public final void backgroundDismissAndAwaitNextMessage() {
         com.onesignal.common.threading.c.suspendifyOnDefault(new d(null));
     }
 
-    public final void createNewInAppMessageView(boolean z3) {
+    public final void createNewInAppMessageView(boolean z6) {
         this.lastPageHeight = Integer.valueOf(this.messageContent.getPageHeight());
         boolean manifestMetaBoolean = AndroidUtils.INSTANCE.getManifestMetaBoolean(this._applicationService.getAppContext(), "com.onesignal.inAppMessageHideGrayOverlay");
         com.onesignal.inAppMessages.internal.display.impl.i iVar = this.webView;
         kotlin.jvm.internal.h.b(iVar);
-        setMessageView(new com.onesignal.inAppMessages.internal.display.impl.d(iVar, this.messageContent, z3, manifestMetaBoolean));
+        setMessageView(new com.onesignal.inAppMessages.internal.display.impl.d(iVar, this.messageContent, z6, manifestMetaBoolean));
         com.onesignal.inAppMessages.internal.display.impl.d dVar = this.messageView;
         kotlin.jvm.internal.h.b(dVar);
         dVar.setMessageController(new g(this));
@@ -866,21 +866,21 @@ public final class m implements x4.d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object dismissAndAwaitNextMessage(InterfaceC5267d interfaceC5267d) {
+    public final Object dismissAndAwaitNextMessage(InterfaceC5240d interfaceC5240d) {
         h hVar;
-        int i6;
+        int i4;
         m mVar;
-        if (interfaceC5267d instanceof h) {
-            hVar = (h) interfaceC5267d;
-            int i9 = hVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                hVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof h) {
+            hVar = (h) interfaceC5240d;
+            int i6 = hVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                hVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = hVar.result;
-                A7.a aVar = A7.a.f58n;
-                i6 = hVar.label;
-                v vVar = v.f41353a;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar = A7.a.f215n;
+                i4 = hVar.label;
+                v vVar = v.f41073a;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     com.onesignal.inAppMessages.internal.display.impl.d dVar = this.messageView;
                     if (dVar != null && !this.dismissFired) {
                         this.dismissFired = true;
@@ -894,22 +894,22 @@ public final class m implements x4.d {
                     }
                     return vVar;
                 }
-                if (i6 != 1) {
+                if (i4 != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 mVar = (m) hVar.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 mVar.dismissFired = false;
                 mVar.setMessageView(null);
                 return vVar;
             }
         }
-        hVar = new h(interfaceC5267d);
+        hVar = new h(interfaceC5240d);
         Object obj2 = hVar.result;
-        A7.a aVar2 = A7.a.f58n;
-        i6 = hVar.label;
-        v vVar2 = v.f41353a;
-        if (i6 != 0) {
+        A7.a aVar2 = A7.a.f215n;
+        i4 = hVar.label;
+        v vVar2 = v.f41073a;
+        if (i4 != 0) {
         }
         mVar.dismissFired = false;
         mVar.setMessageView(null);
@@ -922,14 +922,14 @@ public final class m implements x4.d {
         String str = this.currentActivityName;
         this.activity = activity;
         this.currentActivityName = activity.getLocalClassName();
-        com.onesignal.debug.internal.logging.b.debug$default(y.s(new StringBuilder("In app message activity available currentActivityName: "), this.currentActivityName, " lastActivityName: ", str), null, 2, null);
+        com.onesignal.debug.internal.logging.b.debug$default(x.p(new StringBuilder("In app message activity available currentActivityName: "), this.currentActivityName, " lastActivityName: ", str), null, 2, null);
         com.onesignal.common.threading.c.suspendifyOnMain(new i(str, this, null));
     }
 
     @Override // x4.d
     public void onActivityStopped(Activity activity) {
         kotlin.jvm.internal.h.e(activity, "activity");
-        com.onesignal.debug.internal.logging.b.debug$default(Q7.k.H("\n            In app message activity stopped, cleaning views, currentActivityName: " + this.currentActivityName + "\n            activity: " + this.activity + "\n            messageView: " + this.messageView + "\n            "), null, 2, null);
+        com.onesignal.debug.internal.logging.b.debug$default(Q7.k.X("\n            In app message activity stopped, cleaning views, currentActivityName: " + this.currentActivityName + "\n            activity: " + this.activity + "\n            messageView: " + this.messageView + "\n            "), null, 2, null);
         if (this.messageView == null || !kotlin.jvm.internal.h.a(activity.getLocalClassName(), this.currentActivityName)) {
             return;
         }
@@ -962,20 +962,20 @@ public final class m implements x4.d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object setupWebView(Activity activity, String str, boolean z3, InterfaceC5267d interfaceC5267d) {
+    public final Object setupWebView(Activity activity, String str, boolean z6, InterfaceC5240d interfaceC5240d) {
         j jVar;
-        int i6;
+        int i4;
         m mVar;
-        if (interfaceC5267d instanceof j) {
-            jVar = (j) interfaceC5267d;
-            int i9 = jVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                jVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof j) {
+            jVar = (j) interfaceC5240d;
+            int i6 = jVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                jVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = jVar.result;
-                A7.a aVar = A7.a.f58n;
-                i6 = jVar.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar = A7.a.f215n;
+                i4 = jVar.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     enableWebViewRemoteDebugging();
                     com.onesignal.inAppMessages.internal.display.impl.i iVar = new com.onesignal.inAppMessages.internal.display.impl.i(activity);
                     this.webView = iVar;
@@ -992,7 +992,7 @@ public final class m implements x4.d {
                     com.onesignal.inAppMessages.internal.display.impl.i iVar5 = this.webView;
                     kotlin.jvm.internal.h.b(iVar5);
                     iVar5.addJavascriptInterface(new b(), JS_OBJ_NAME);
-                    if (z3) {
+                    if (z6) {
                         com.onesignal.inAppMessages.internal.display.impl.i iVar6 = this.webView;
                         kotlin.jvm.internal.h.b(iVar6);
                         iVar6.setSystemUiVisibility(3074);
@@ -1013,31 +1013,31 @@ public final class m implements x4.d {
                     }
                     mVar = this;
                 } else {
-                    if (i6 != 1) {
+                    if (i4 != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     str = (String) jVar.L$2;
                     activity = (Activity) jVar.L$1;
                     mVar = (m) jVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 mVar.setWebViewToMaxSize(activity);
                 com.onesignal.inAppMessages.internal.display.impl.i iVar8 = mVar.webView;
                 kotlin.jvm.internal.h.b(iVar8);
                 iVar8.loadData(str, "text/html; charset=utf-8", "base64");
-                return v.f41353a;
+                return v.f41073a;
             }
         }
-        jVar = new j(interfaceC5267d);
+        jVar = new j(interfaceC5240d);
         Object obj2 = jVar.result;
-        A7.a aVar2 = A7.a.f58n;
-        i6 = jVar.label;
-        if (i6 != 0) {
+        A7.a aVar2 = A7.a.f215n;
+        i4 = jVar.label;
+        if (i4 != 0) {
         }
         mVar.setWebViewToMaxSize(activity);
         com.onesignal.inAppMessages.internal.display.impl.i iVar82 = mVar.webView;
         kotlin.jvm.internal.h.b(iVar82);
         iVar82.loadData(str, "text/html; charset=utf-8", "base64");
-        return v.f41353a;
+        return v.f41073a;
     }
 }

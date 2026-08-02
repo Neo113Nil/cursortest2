@@ -6,18 +6,18 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.function.UnaryOperator;
-import v7.AbstractC5129j;
+import v7.AbstractC5119j;
 
 /* loaded from: classes2.dex */
 public final class e extends l implements List<l>, J7.a {
-    public static final C4517d Companion = new C4517d();
+    public static final C4527d Companion = new C4527d();
 
     /* renamed from: n, reason: collision with root package name */
-    public final List f37542n;
+    public final List f37504n;
 
     public e(List content) {
         kotlin.jvm.internal.h.e(content, "content");
-        this.f37542n = content;
+        this.f37504n = content;
     }
 
     @Override // java.util.List
@@ -42,28 +42,28 @@ public final class e extends l implements List<l>, J7.a {
         }
         l element = (l) obj;
         kotlin.jvm.internal.h.e(element, "element");
-        return this.f37542n.contains(element);
+        return this.f37504n.contains(element);
     }
 
     @Override // java.util.List, java.util.Collection
     public final boolean containsAll(Collection elements) {
         kotlin.jvm.internal.h.e(elements, "elements");
-        return this.f37542n.containsAll(elements);
+        return this.f37504n.containsAll(elements);
     }
 
     @Override // java.util.List, java.util.Collection
     public final boolean equals(Object obj) {
-        return kotlin.jvm.internal.h.a(this.f37542n, obj);
+        return kotlin.jvm.internal.h.a(this.f37504n, obj);
     }
 
     @Override // java.util.List
     public final l get(int i) {
-        return (l) this.f37542n.get(i);
+        return (l) this.f37504n.get(i);
     }
 
     @Override // java.util.List, java.util.Collection
     public final int hashCode() {
-        return this.f37542n.hashCode();
+        return this.f37504n.hashCode();
     }
 
     @Override // java.util.List
@@ -73,17 +73,17 @@ public final class e extends l implements List<l>, J7.a {
         }
         l element = (l) obj;
         kotlin.jvm.internal.h.e(element, "element");
-        return this.f37542n.indexOf(element);
+        return this.f37504n.indexOf(element);
     }
 
     @Override // java.util.List, java.util.Collection
     public final boolean isEmpty() {
-        return this.f37542n.isEmpty();
+        return this.f37504n.isEmpty();
     }
 
     @Override // java.util.List, java.util.Collection, java.lang.Iterable
     public final Iterator iterator() {
-        return this.f37542n.iterator();
+        return this.f37504n.iterator();
     }
 
     @Override // java.util.List
@@ -93,12 +93,12 @@ public final class e extends l implements List<l>, J7.a {
         }
         l element = (l) obj;
         kotlin.jvm.internal.h.e(element, "element");
-        return this.f37542n.lastIndexOf(element);
+        return this.f37504n.lastIndexOf(element);
     }
 
     @Override // java.util.List
     public final ListIterator<l> listIterator() {
-        return this.f37542n.listIterator();
+        return this.f37504n.listIterator();
     }
 
     @Override // java.util.List
@@ -128,7 +128,7 @@ public final class e extends l implements List<l>, J7.a {
 
     @Override // java.util.List, java.util.Collection
     public final int size() {
-        return this.f37542n.size();
+        return this.f37504n.size();
     }
 
     @Override // java.util.List
@@ -137,8 +137,8 @@ public final class e extends l implements List<l>, J7.a {
     }
 
     @Override // java.util.List
-    public final List<l> subList(int i, int i6) {
-        return this.f37542n.subList(i, i6);
+    public final List<l> subList(int i, int i4) {
+        return this.f37504n.subList(i, i4);
     }
 
     @Override // java.util.List, java.util.Collection
@@ -147,7 +147,7 @@ public final class e extends l implements List<l>, J7.a {
     }
 
     public final String toString() {
-        return AbstractC5129j.E(this.f37542n, ",", "[", "]", null, 56);
+        return AbstractC5119j.C(this.f37504n, ",", "[", "]", null, 56);
     }
 
     @Override // java.util.List, java.util.Collection
@@ -162,7 +162,7 @@ public final class e extends l implements List<l>, J7.a {
 
     @Override // java.util.List
     public final ListIterator<l> listIterator(int i) {
-        return this.f37542n.listIterator(i);
+        return this.f37504n.listIterator(i);
     }
 
     @Override // java.util.List, java.util.Collection

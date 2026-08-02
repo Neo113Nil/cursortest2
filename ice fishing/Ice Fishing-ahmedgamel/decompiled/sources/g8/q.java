@@ -1,9 +1,9 @@
 package g8;
 
-import b8.InterfaceC0529a;
+import b8.InterfaceC0537a;
 import e8.L;
-import f8.AbstractC4516c;
-import f8.EnumC4514a;
+import f8.AbstractC4526c;
+import f8.EnumC4524a;
 import java.lang.annotation.Annotation;
 import java.util.Iterator;
 
@@ -11,30 +11,30 @@ import java.util.Iterator;
 public final class q {
 
     /* renamed from: a, reason: collision with root package name */
-    public final L3.h f37737a;
+    public final M.h f37763a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final AbstractC4516c f37738b;
+    public final AbstractC4526c f37764b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final t f37739c;
+    public final t f37765c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final q[] f37740d;
+    public final q[] f37766d;
 
     /* renamed from: e, reason: collision with root package name */
-    public boolean f37741e;
+    public boolean f37767e;
 
     /* renamed from: f, reason: collision with root package name */
-    public String f37742f;
+    public String f37768f;
 
-    public q(L3.h composer, AbstractC4516c abstractC4516c, t tVar, q[] qVarArr) {
+    public q(M.h composer, AbstractC4526c abstractC4526c, t tVar, q[] qVarArr) {
         kotlin.jvm.internal.h.e(composer, "composer");
-        this.f37737a = composer;
-        this.f37738b = abstractC4516c;
-        this.f37739c = tVar;
-        this.f37740d = qVarArr;
-        f8.j jVar = abstractC4516c.f37539a;
+        this.f37763a = composer;
+        this.f37764b = abstractC4526c;
+        this.f37765c = tVar;
+        this.f37766d = qVarArr;
+        f8.j jVar = abstractC4526c.f37501a;
         int ordinal = tVar.ordinal();
         if (qVarArr != null) {
             q qVar = qVarArr[ordinal];
@@ -48,41 +48,41 @@ public final class q {
     public final q a(c8.e descriptor) {
         q qVar;
         kotlin.jvm.internal.h.e(descriptor, "descriptor");
-        AbstractC4516c abstractC4516c = this.f37738b;
-        t h9 = l.h(descriptor, abstractC4516c);
-        char c9 = h9.f37752n;
-        L3.h hVar = this.f37737a;
-        hVar.h(c9);
-        hVar.f1696n = true;
-        if (this.f37742f != null) {
-            hVar.f();
-            String str = this.f37742f;
+        AbstractC4526c abstractC4526c = this.f37764b;
+        t h3 = l.h(descriptor, abstractC4526c);
+        char c9 = h3.f37778n;
+        M.h hVar = this.f37763a;
+        hVar.i(c9);
+        hVar.f1806n = true;
+        if (this.f37768f != null) {
+            hVar.g();
+            String str = this.f37768f;
             kotlin.jvm.internal.h.b(str);
             o(str);
-            hVar.h(':');
+            hVar.i(':');
             o(descriptor.a());
-            this.f37742f = null;
+            this.f37768f = null;
         }
-        if (this.f37739c == h9) {
+        if (this.f37765c == h3) {
             return this;
         }
-        q[] qVarArr = this.f37740d;
-        return (qVarArr == null || (qVar = qVarArr[h9.ordinal()]) == null) ? new q(hVar, abstractC4516c, h9, qVarArr) : qVar;
+        q[] qVarArr = this.f37766d;
+        return (qVarArr == null || (qVar = qVarArr[h3.ordinal()]) == null) ? new q(hVar, abstractC4526c, h3, qVarArr) : qVar;
     }
 
-    public final void b(boolean z3) {
-        if (this.f37741e) {
-            o(String.valueOf(z3));
+    public final void b(boolean z6) {
+        if (this.f37767e) {
+            o(String.valueOf(z6));
         } else {
-            ((G1.a) this.f37737a.f1697u).p(String.valueOf(z3));
+            ((I1.a) this.f37763a.f1807u).p(String.valueOf(z6));
         }
     }
 
     public final void c(byte b9) {
-        if (this.f37741e) {
+        if (this.f37767e) {
             o(String.valueOf((int) b9));
         } else {
-            this.f37737a.g(b9);
+            this.f37763a.h(b9);
         }
     }
 
@@ -90,101 +90,101 @@ public final class q {
         o(String.valueOf(c9));
     }
 
-    public final void e(double d2) {
-        boolean z3 = this.f37741e;
-        L3.h hVar = this.f37737a;
-        if (z3) {
-            o(String.valueOf(d2));
+    public final void e(double d9) {
+        boolean z6 = this.f37767e;
+        M.h hVar = this.f37763a;
+        if (z6) {
+            o(String.valueOf(d9));
         } else {
-            ((G1.a) hVar.f1697u).p(String.valueOf(d2));
+            ((I1.a) hVar.f1807u).p(String.valueOf(d9));
         }
-        if (Double.isInfinite(d2) || Double.isNaN(d2)) {
-            throw l.a(Double.valueOf(d2), ((G1.a) hVar.f1697u).toString());
+        if (Double.isInfinite(d9) || Double.isNaN(d9)) {
+            throw l.a(Double.valueOf(d9), ((I1.a) hVar.f1807u).toString());
         }
     }
 
     public final void f(c8.e descriptor, int i) {
         kotlin.jvm.internal.h.e(descriptor, "descriptor");
-        int ordinal = this.f37739c.ordinal();
-        boolean z3 = true;
-        L3.h hVar = this.f37737a;
+        int ordinal = this.f37765c.ordinal();
+        boolean z6 = true;
+        M.h hVar = this.f37763a;
         if (ordinal == 1) {
-            if (!hVar.f1696n) {
-                hVar.h(',');
+            if (!hVar.f1806n) {
+                hVar.i(',');
             }
-            hVar.f();
+            hVar.g();
             return;
         }
         if (ordinal == 2) {
-            if (hVar.f1696n) {
-                this.f37741e = true;
-                hVar.f();
+            if (hVar.f1806n) {
+                this.f37767e = true;
+                hVar.g();
                 return;
             }
             if (i % 2 == 0) {
-                hVar.h(',');
-                hVar.f();
+                hVar.i(',');
+                hVar.g();
             } else {
-                hVar.h(':');
+                hVar.i(':');
                 hVar.q();
-                z3 = false;
+                z6 = false;
             }
-            this.f37741e = z3;
+            this.f37767e = z6;
             return;
         }
         if (ordinal != 3) {
-            if (!hVar.f1696n) {
-                hVar.h(',');
+            if (!hVar.f1806n) {
+                hVar.i(',');
             }
-            hVar.f();
-            l.g(descriptor, this.f37738b);
+            hVar.g();
+            l.g(descriptor, this.f37764b);
             o(descriptor.f(i));
-            hVar.h(':');
+            hVar.i(':');
             hVar.q();
             return;
         }
         if (i == 0) {
-            this.f37741e = true;
+            this.f37767e = true;
         }
         if (i == 1) {
-            hVar.h(',');
+            hVar.i(',');
             hVar.q();
-            this.f37741e = false;
+            this.f37767e = false;
         }
     }
 
-    public final void g(float f3) {
-        boolean z3 = this.f37741e;
-        L3.h hVar = this.f37737a;
-        if (z3) {
-            o(String.valueOf(f3));
+    public final void g(float f2) {
+        boolean z6 = this.f37767e;
+        M.h hVar = this.f37763a;
+        if (z6) {
+            o(String.valueOf(f2));
         } else {
-            ((G1.a) hVar.f1697u).p(String.valueOf(f3));
+            ((I1.a) hVar.f1807u).p(String.valueOf(f2));
         }
-        if (Float.isInfinite(f3) || Float.isNaN(f3)) {
-            throw l.a(Float.valueOf(f3), ((G1.a) hVar.f1697u).toString());
+        if (Float.isInfinite(f2) || Float.isNaN(f2)) {
+            throw l.a(Float.valueOf(f2), ((I1.a) hVar.f1807u).toString());
         }
     }
 
     public final q h(c8.e descriptor) {
         kotlin.jvm.internal.h.e(descriptor, "descriptor");
         boolean a9 = r.a(descriptor);
-        t tVar = this.f37739c;
-        AbstractC4516c abstractC4516c = this.f37738b;
-        L3.h hVar = this.f37737a;
+        t tVar = this.f37765c;
+        AbstractC4526c abstractC4526c = this.f37764b;
+        M.h hVar = this.f37763a;
         if (a9) {
             if (!(hVar instanceof e)) {
-                hVar = new e((G1.a) hVar.f1697u, this.f37741e);
+                hVar = new e((I1.a) hVar.f1807u, this.f37767e);
             }
-            return new q(hVar, abstractC4516c, tVar, null);
+            return new q(hVar, abstractC4526c, tVar, null);
         }
-        if (!descriptor.g() || !descriptor.equals(f8.m.f37562a)) {
+        if (!descriptor.g() || !descriptor.equals(f8.m.f37524a)) {
             return this;
         }
         if (!(hVar instanceof d)) {
-            hVar = new d((G1.a) hVar.f1697u, this.f37741e);
+            hVar = new d((I1.a) hVar.f1807u, this.f37767e);
         }
-        return new q(hVar, abstractC4516c, tVar, null);
+        return new q(hVar, abstractC4526c, tVar, null);
     }
 
     public final q i(L descriptor, int i) {
@@ -194,22 +194,22 @@ public final class q {
     }
 
     public final void j(int i) {
-        if (this.f37741e) {
+        if (this.f37767e) {
             o(String.valueOf(i));
         } else {
-            this.f37737a.i(i);
+            this.f37763a.j(i);
         }
     }
 
     public final void k(long j6) {
-        if (this.f37741e) {
+        if (this.f37767e) {
             o(String.valueOf(j6));
         } else {
-            this.f37737a.k(j6);
+            this.f37763a.k(j6);
         }
     }
 
-    public final void l(c8.e descriptor, int i, InterfaceC0529a serializer, Object obj) {
+    public final void l(c8.e descriptor, int i, InterfaceC0537a serializer, Object obj) {
         kotlin.jvm.internal.h.e(descriptor, "descriptor");
         kotlin.jvm.internal.h.e(serializer, "serializer");
         f(descriptor, i);
@@ -220,21 +220,21 @@ public final class q {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void m(InterfaceC0529a serializer, Object obj) {
+    public final void m(InterfaceC0537a serializer, Object obj) {
         String str;
         kotlin.jvm.internal.h.e(serializer, "serializer");
-        f8.j jVar = this.f37738b.f37539a;
-        int ordinal = ((EnumC4514a) jVar.f37561g).ordinal();
+        f8.j jVar = this.f37764b.f37501a;
+        int ordinal = ((EnumC4524a) jVar.f37523g).ordinal();
         if (ordinal != 0) {
             if (ordinal == 1) {
-                t8.g d2 = serializer.c().d();
-                if (kotlin.jvm.internal.h.a(d2, c8.i.f5651b) || kotlin.jvm.internal.h.a(d2, c8.i.f5654e)) {
+                com.bumptech.glide.h d9 = serializer.c().d();
+                if (kotlin.jvm.internal.h.a(d9, c8.i.f5827b) || kotlin.jvm.internal.h.a(d9, c8.i.f5830e)) {
                     c8.e c9 = serializer.c();
                     kotlin.jvm.internal.h.e(c9, "<this>");
                     Iterator it = c9.getAnnotations().iterator();
                     while (true) {
                         if (!it.hasNext()) {
-                            str = (String) jVar.f37560f;
+                            str = (String) jVar.f37522f;
                             break;
                         }
                         Annotation annotation = (Annotation) it.next();
@@ -244,7 +244,7 @@ public final class q {
                         }
                     }
                     if (str != null) {
-                        this.f37742f = str;
+                        this.f37768f = str;
                     }
                     serializer.a(this, obj);
                 }
@@ -259,24 +259,24 @@ public final class q {
     }
 
     public final void n(short s9) {
-        if (this.f37741e) {
+        if (this.f37767e) {
             o(String.valueOf((int) s9));
         } else {
-            this.f37737a.m(s9);
+            this.f37763a.m(s9);
         }
     }
 
     public final void o(String value) {
         kotlin.jvm.internal.h.e(value, "value");
-        this.f37737a.o(value);
+        this.f37763a.o(value);
     }
 
     public final void p(c8.e descriptor) {
         kotlin.jvm.internal.h.e(descriptor, "descriptor");
-        t tVar = this.f37739c;
-        L3.h hVar = this.f37737a;
+        t tVar = this.f37765c;
+        M.h hVar = this.f37763a;
         hVar.getClass();
-        hVar.f1696n = false;
-        hVar.h(tVar.f37753u);
+        hVar.f1806n = false;
+        hVar.i(tVar.f37779u);
     }
 }

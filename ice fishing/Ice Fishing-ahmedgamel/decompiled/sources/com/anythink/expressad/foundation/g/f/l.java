@@ -4,22 +4,22 @@ package com.anythink.expressad.foundation.g.f;
 public final class l<T> {
 
     /* renamed from: a, reason: collision with root package name */
-    public T f19398a;
+    public T f20185a;
 
     /* renamed from: b, reason: collision with root package name */
-    public com.anythink.expressad.foundation.g.f.a.a f19399b;
+    public com.anythink.expressad.foundation.g.f.a.a f20186b;
 
     /* renamed from: c, reason: collision with root package name */
-    public com.anythink.expressad.foundation.g.f.f.c f19400c;
+    public com.anythink.expressad.foundation.g.f.f.c f20187c;
 
     private l(T t6, com.anythink.expressad.foundation.g.f.f.c cVar) {
-        this.f19399b = null;
-        this.f19398a = t6;
-        this.f19400c = cVar;
+        this.f20186b = null;
+        this.f20185a = t6;
+        this.f20187c = cVar;
     }
 
     private boolean a() {
-        return this.f19399b == null;
+        return this.f20186b == null;
     }
 
     public static <T> l<T> a(T t6, com.anythink.expressad.foundation.g.f.f.c cVar) {
@@ -31,8 +31,8 @@ public final class l<T> {
     }
 
     private l(com.anythink.expressad.foundation.g.f.a.a aVar) {
-        this.f19398a = null;
-        this.f19400c = null;
-        this.f19399b = aVar;
+        this.f20185a = null;
+        this.f20187c = null;
+        this.f20186b = aVar;
     }
 }

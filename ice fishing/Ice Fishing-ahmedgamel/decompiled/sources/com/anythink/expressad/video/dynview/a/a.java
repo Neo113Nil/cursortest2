@@ -4,81 +4,81 @@ package com.anythink.expressad.video.dynview.a;
 public final class a {
 
     /* renamed from: A, reason: collision with root package name */
-    public static final int f21079A = 0;
+    public static final int f21866A = 0;
 
     /* renamed from: B, reason: collision with root package name */
-    public static final int f21080B = 1;
+    public static final int f21867B = 1;
 
     /* renamed from: C, reason: collision with root package name */
-    public static final int f21081C = 2;
+    public static final int f21868C = 2;
 
     /* renamed from: D, reason: collision with root package name */
-    public static final int f21082D = 3;
+    public static final int f21869D = 3;
 
     /* renamed from: E, reason: collision with root package name */
-    public static final int f21083E = 100;
+    public static final int f21870E = 100;
 
     /* renamed from: F, reason: collision with root package name */
-    public static final String f21084F = "choice_one_callback";
+    public static final String f21871F = "choice_one_callback";
 
     /* renamed from: G, reason: collision with root package name */
-    public static final String f21085G = "order_view_callback";
+    public static final String f21872G = "order_view_callback";
 
     /* renamed from: H, reason: collision with root package name */
-    public static final String f21086H = "Auto play after ";
+    public static final String f21873H = "Auto play after ";
 
     /* renamed from: I, reason: collision with root package name */
-    public static final String f21087I = "Automatische Wiedergabe nach ";
+    public static final String f21874I = "Automatische Wiedergabe nach ";
     public static final String J = " 초 후 자동 재생 ";
 
     /* renamed from: K, reason: collision with root package name */
-    public static final String f21088K = "Lecture de vidéo dans ";
+    public static final String f21875K = "Lecture de vidéo dans ";
 
     /* renamed from: L, reason: collision with root package name */
-    public static final String f21089L = "لعب تلقائيا بعد ";
+    public static final String f21876L = "لعب تلقائيا بعد ";
 
     /* renamed from: M, reason: collision with root package name */
-    public static final String f21090M = "Автовоспроизведение через ";
+    public static final String f21877M = "Автовоспроизведение через ";
 
     /* renamed from: N, reason: collision with root package name */
-    public static final String f21091N = "alecfc";
+    public static final String f21878N = "alecfc";
 
     /* renamed from: O, reason: collision with root package name */
-    public static final String f21092O = "1";
+    public static final String f21879O = "1";
 
     /* renamed from: P, reason: collision with root package name */
-    public static final String f21093P = "0";
+    public static final String f21880P = "0";
 
     /* renamed from: Q, reason: collision with root package name */
-    public static final String f21094Q = "_por";
+    public static final String f21881Q = "_por";
 
     /* renamed from: R, reason: collision with root package name */
-    public static final String f21095R = "_land";
+    public static final String f21882R = "_land";
 
     /* renamed from: S, reason: collision with root package name */
-    public static final String f21096S = "zh";
+    public static final String f21883S = "zh";
 
     /* renamed from: T, reason: collision with root package name */
-    public static final String f21097T = "ja";
+    public static final String f21884T = "ja";
 
     /* renamed from: U, reason: collision with root package name */
-    public static final String f21098U = "de";
+    public static final String f21885U = "de";
 
     /* renamed from: V, reason: collision with root package name */
-    public static final String f21099V = "ko";
+    public static final String f21886V = "ko";
 
     /* renamed from: W, reason: collision with root package name */
-    public static final String f21100W = "fr";
+    public static final String f21887W = "fr";
 
     /* renamed from: X, reason: collision with root package name */
-    public static final String f21101X = "ar";
+    public static final String f21888X = "ar";
     public static final String Y = "ru";
 
     /* renamed from: Z, reason: collision with root package name */
-    public static final String f21102Z = "en";
+    public static final String f21889Z = "en";
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f21103a = "anythink_reward_end_card_layout_landscape";
+    public static final String f21890a = "anythink_reward_end_card_layout_landscape";
     public static final String aa = "TW";
     public static final String ab = "HK";
     public static final int ac = 1;
@@ -96,75 +96,75 @@ public final class a {
     public static final String ao = "whs_chn";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f21104b = "anythink_reward_end_card_layout_portrait";
+    public static final String f21891b = "anythink_reward_end_card_layout_portrait";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f21105c = "anythink_reward_layer_floor";
+    public static final String f21892c = "anythink_reward_layer_floor";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final String f21106d = "anythink_reward_layer_floor";
+    public static final String f21893d = "anythink_reward_layer_floor";
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f21107e = "anythink_reward_layer_floor_302";
+    public static final String f21894e = "anythink_reward_layer_floor_302";
 
     /* renamed from: f, reason: collision with root package name */
-    public static final String f21108f = "anythink_reward_layer_floor_802";
+    public static final String f21895f = "anythink_reward_layer_floor_802";
 
     /* renamed from: g, reason: collision with root package name */
-    public static final String f21109g = "anythink_reward_layer_floor_904";
+    public static final String f21896g = "anythink_reward_layer_floor_904";
 
     /* renamed from: h, reason: collision with root package name */
-    public static final String f21110h = "anythink_reward_layer_floor_bottom";
+    public static final String f21897h = "anythink_reward_layer_floor_bottom";
     public static final String i = "anythink_same_choice_one_layout_landscape";
 
     /* renamed from: j, reason: collision with root package name */
-    public static final String f21111j = "anythink_same_choice_one_layout_portrait";
+    public static final String f21898j = "anythink_same_choice_one_layout_portrait";
 
     /* renamed from: k, reason: collision with root package name */
-    public static final String f21112k = "anythink_order_layout_list_portrait";
+    public static final String f21899k = "anythink_order_layout_list_portrait";
 
     /* renamed from: l, reason: collision with root package name */
-    public static final String f21113l = "anythink_order_layout_list_landscape";
+    public static final String f21900l = "anythink_order_layout_list_landscape";
 
     /* renamed from: m, reason: collision with root package name */
-    public static final String f21114m = "anythink_reward_end_card_more_offer_item";
+    public static final String f21901m = "anythink_reward_end_card_more_offer_item";
 
     /* renamed from: n, reason: collision with root package name */
-    public static final int f21115n = -1;
+    public static final int f21902n = -1;
 
     /* renamed from: o, reason: collision with root package name */
-    public static final int f21116o = 1;
+    public static final int f21903o = 1;
 
     /* renamed from: p, reason: collision with root package name */
-    public static final int f21117p = 102;
+    public static final int f21904p = 102;
 
     /* renamed from: q, reason: collision with root package name */
-    public static final int f21118q = 202;
+    public static final int f21905q = 202;
 
     /* renamed from: r, reason: collision with root package name */
-    public static final int f21119r = 302;
+    public static final int f21906r = 302;
 
     /* renamed from: s, reason: collision with root package name */
-    public static final int f21120s = 802;
+    public static final int f21907s = 802;
 
     /* renamed from: t, reason: collision with root package name */
-    public static final int f21121t = 904;
+    public static final int f21908t = 904;
 
     /* renamed from: u, reason: collision with root package name */
-    public static final int f21122u = 3;
+    public static final int f21909u = 3;
 
     /* renamed from: v, reason: collision with root package name */
-    public static final int f21123v = 4;
+    public static final int f21910v = 4;
 
     /* renamed from: w, reason: collision with root package name */
-    public static final int f21124w = 404;
+    public static final int f21911w = 404;
 
     /* renamed from: x, reason: collision with root package name */
-    public static final int f21125x = 704;
+    public static final int f21912x = 704;
 
     /* renamed from: y, reason: collision with root package name */
-    public static final int f21126y = 5;
+    public static final int f21913y = 5;
 
     /* renamed from: z, reason: collision with root package name */
-    public static final int f21127z = 501;
+    public static final int f21914z = 501;
 }

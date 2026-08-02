@@ -48,7 +48,7 @@ public interface IATBaseAdAdapter {
 
     void setTrackingInfo(n nVar);
 
-    boolean setUserDataConsent(Context context, boolean z3, boolean z6);
+    boolean setUserDataConsent(Context context, boolean z6, boolean z9);
 
     boolean startBiddingRequest(Context context, Map<String, Object> map, Map<String, Object> map2, ATBiddingListener aTBiddingListener);
 

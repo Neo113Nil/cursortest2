@@ -15,48 +15,48 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class k {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19387a = "k";
+    private static final String f20174a = "k";
 
     /* renamed from: b, reason: collision with root package name */
-    private Context f19388b;
+    private Context f20175b;
 
     /* renamed from: g, reason: collision with root package name */
-    private com.anythink.expressad.foundation.g.f.e.a f19393g;
+    private com.anythink.expressad.foundation.g.f.e.a f20180g;
 
     /* renamed from: d, reason: collision with root package name */
-    private Set<j> f19390d = new HashSet();
+    private Set<j> f20177d = new HashSet();
 
     /* renamed from: e, reason: collision with root package name */
-    private ExecutorService f19391e = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60, TimeUnit.SECONDS, new SynchronousQueue());
+    private ExecutorService f20178e = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60, TimeUnit.SECONDS, new SynchronousQueue());
 
     /* renamed from: f, reason: collision with root package name */
-    private AtomicInteger f19392f = new AtomicInteger();
+    private AtomicInteger f20179f = new AtomicInteger();
 
     /* renamed from: c, reason: collision with root package name */
-    private c f19389c = new d(new Handler(Looper.getMainLooper()));
+    private c f20176c = new d(new Handler(Looper.getMainLooper()));
 
     public interface a {
         boolean a(j<?> jVar);
     }
 
     public k(Context context) {
-        this.f19388b = context.getApplicationContext();
+        this.f20175b = context.getApplicationContext();
     }
 
     private int a() {
-        return this.f19392f.incrementAndGet();
+        return this.f20179f.incrementAndGet();
     }
 
     public final void b(j jVar) {
         synchronized (this) {
-            this.f19390d.remove(jVar);
+            this.f20177d.remove(jVar);
         }
     }
 
     private void a(a aVar) {
         synchronized (this) {
             try {
-                for (j jVar : this.f19390d) {
+                for (j jVar : this.f20177d) {
                     if (aVar.a(jVar)) {
                         jVar.e();
                     }
@@ -68,8 +68,8 @@ public class k {
     }
 
     private k(Context context, com.anythink.expressad.foundation.g.f.e.a aVar) {
-        this.f19393g = aVar;
-        this.f19388b = context.getApplicationContext();
+        this.f20180g = aVar;
+        this.f20175b = context.getApplicationContext();
     }
 
     private void a(final Object obj) {
@@ -88,18 +88,18 @@ public class k {
     public final void a(final j jVar) {
         jVar.a(this);
         synchronized (this) {
-            this.f19390d.add(jVar);
+            this.f20177d.add(jVar);
         }
-        jVar.a(this.f19392f.incrementAndGet());
-        this.f19391e.execute(new Runnable() { // from class: com.anythink.expressad.foundation.g.f.k.2
+        jVar.a(this.f20179f.incrementAndGet());
+        this.f20178e.execute(new Runnable() { // from class: com.anythink.expressad.foundation.g.f.k.2
             @Override // java.lang.Runnable
             public final void run() {
-                if (k.this.f19393g == null) {
-                    Context unused = k.this.f19388b;
-                    new i(null, k.this.f19389c).a(jVar);
+                if (k.this.f20180g == null) {
+                    Context unused = k.this.f20175b;
+                    new i(null, k.this.f20176c).a(jVar);
                 } else {
-                    Context unused2 = k.this.f19388b;
-                    new i(null, k.this.f19389c, k.this.f19393g).a(jVar);
+                    Context unused2 = k.this.f20175b;
+                    new i(null, k.this.f20176c, k.this.f20180g).a(jVar);
                 }
             }
         });

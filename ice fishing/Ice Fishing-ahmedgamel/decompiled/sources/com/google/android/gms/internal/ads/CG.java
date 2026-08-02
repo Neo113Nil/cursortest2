@@ -6,21 +6,21 @@ import java.util.HashMap;
 public final class CG {
 
     /* renamed from: a, reason: collision with root package name */
-    public final HashMap f24084a;
+    public final HashMap f24847a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final HashMap f24085b;
+    public final HashMap f24848b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final HashMap f24086c;
+    public final HashMap f24849c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final HashMap f24087d;
+    public final HashMap f24850d;
 
     public /* synthetic */ CG(ME me) {
-        this.f24084a = new HashMap((HashMap) me.f26270b);
-        this.f24085b = new HashMap((HashMap) me.f26271c);
-        this.f24086c = new HashMap((HashMap) me.f26272d);
-        this.f24087d = new HashMap((HashMap) me.f26273e);
+        this.f24847a = new HashMap((HashMap) me.f27061b);
+        this.f24848b = new HashMap((HashMap) me.f27062c);
+        this.f24849c = new HashMap((HashMap) me.f27063d);
+        this.f24850d = new HashMap((HashMap) me.f27064e);
     }
 }

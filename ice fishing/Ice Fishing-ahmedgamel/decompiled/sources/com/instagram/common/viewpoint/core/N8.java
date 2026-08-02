@@ -26,16 +26,16 @@ public final class N8 {
     public final N7 A02 = new N7();
     public String A00 = null;
 
-    public static String A03(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A09, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 24);
+    public static String A03(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A09, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 24);
         }
         return new String(copyOfRange);
     }
 
     public static void A09() {
-        A09 = new byte[]{65, c.f16317b, 82, 57, 44, 91, 94, 73, 121, 91, 74, 74, 83, 84, 93, 115, 84, 92, 85, 20, 78, 66, 78, 72, 74, 91, 91, 78, 79, 106, 79, 88, 5, 95, 83, 95, 66, 86, 65, 85, 81, 65, 74, 71, 93, 123, 71, 69, 84, 84, 77, 74, 67};
+        A09 = new byte[]{65, c.f17104b, 82, 57, 44, 91, 94, 73, 121, 91, 74, 74, 83, 84, 93, 115, 84, 92, 85, 20, 78, 66, 78, 72, 74, 91, 91, 78, 79, 106, 79, 88, 5, 95, 83, 95, 66, 86, 65, 85, 81, 65, 74, 71, 93, 123, 71, 69, 84, 84, 77, 74, 67};
     }
 
     static {
@@ -43,11 +43,11 @@ public final class N8 {
         A0A = N8.class.getSimpleName();
     }
 
-    public N8(T8 t82, boolean z3, Executor executor, String str) {
+    public N8(T8 t82, boolean z6, Executor executor, String str) {
         this.A03 = t82.A02();
         this.A04 = str;
         this.A07 = executor;
-        if (z3) {
+        if (z6) {
             A0A();
         }
     }
@@ -78,9 +78,9 @@ public final class N8 {
                 }
             }
         } catch (FileNotFoundException e9) {
-            this.A03.A08().ABC(A03(36, 17, 60), AbstractC1252Td.A17, new C1253Te(e9));
+            this.A03.A08().ABC(A03(36, 17, 60), AbstractC1272Td.A17, new C1273Te(e9));
         } catch (IOException e10) {
-            this.A03.A08().ABC(A03(36, 17, 60), AbstractC1252Td.A19, new C1253Te(e10));
+            this.A03.A08().ABC(A03(36, 17, 60), AbstractC1272Td.A19, new C1273Te(e10));
         }
         return A03;
     }
@@ -91,12 +91,12 @@ public final class N8 {
         try {
             this.A02.A08(A04(this.A04 + A03(23, 13, 51)));
             this.A02.A0A(A04(A03(5, 18, 34)));
-        } catch (C1253Te e9) {
+        } catch (C1273Te e9) {
             A0M();
-            this.A03.A08().ABC(A03, AbstractC1252Td.A18, e9);
+            this.A03.A08().ABC(A03, AbstractC1272Td.A18, e9);
         } catch (JSONException e10) {
             A0M();
-            this.A03.A08().ABC(A03, AbstractC1252Td.A1A, new C1253Te(e10));
+            this.A03.A08().ABC(A03, AbstractC1272Td.A1A, new C1273Te(e10));
         }
     }
 
@@ -110,13 +110,13 @@ public final class N8 {
     }
 
     private final void A0A() {
-        this.A07.execute(new C2041kD(this));
+        this.A07.execute(new C2061kD(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public synchronized void A0E(C1103Nf c1103Nf, String str, boolean z3) {
-        c1103Nf.A07(z3);
-        if (c1103Nf.A08() || c1103Nf.A09()) {
+    public synchronized void A0E(C1123Nf c1123Nf, String str, boolean z6) {
+        c1123Nf.A07(z6);
+        if (c1123Nf.A08() || c1123Nf.A09()) {
             this.A02.A07(str);
         } else {
             this.A02.A09(str);
@@ -144,23 +144,23 @@ public final class N8 {
                 fout.close();
             }
         } catch (FileNotFoundException e9) {
-            this.A03.A08().ABC(A03(36, 17, 60), AbstractC1252Td.A17, new C1253Te(e9));
+            this.A03.A08().ABC(A03(36, 17, 60), AbstractC1272Td.A17, new C1273Te(e9));
         } catch (IOException e10) {
-            this.A03.A08().ABC(A03(36, 17, 60), AbstractC1252Td.A19, new C1253Te(e10));
+            this.A03.A08().ABC(A03(36, 17, 60), AbstractC1272Td.A19, new C1273Te(e10));
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean A0J(String str) {
-        boolean z3 = false;
+        boolean z6 = false;
         try {
             synchronized (this.A02) {
-                z3 = this.A02.A05().get(str) instanceof C1103Nf;
+                z6 = this.A02.A05().get(str) instanceof C1123Nf;
             }
         } catch (JSONException e9) {
-            this.A03.A08().ABC(A03(36, 17, 60), AbstractC1252Td.A1A, new C1253Te(e9));
+            this.A03.A08().ABC(A03(36, 17, 60), AbstractC1272Td.A1A, new C1273Te(e9));
         }
-        return z3;
+        return z6;
     }
 
     public final String A0K() {
@@ -171,7 +171,7 @@ public final class N8 {
         if (!this.A01 || this.A00 == null) {
             return;
         }
-        this.A07.execute(new C2038kA(this, this.A00));
+        this.A07.execute(new C2058kA(this, this.A00));
     }
 
     public final synchronized void A0M() {
@@ -184,14 +184,14 @@ public final class N8 {
             return;
         }
         this.A00 = str;
-        this.A07.execute(new C2039kB(this, str));
+        this.A07.execute(new C2059kB(this, str));
     }
 
     public final void A0O(JSONObject jSONObject) {
-        this.A01 = C1290Up.A1E(this.A03);
+        this.A01 = C1310Up.A1E(this.A03);
         if (!this.A01) {
             return;
         }
-        this.A07.execute(new C2040kC(this, jSONObject));
+        this.A07.execute(new C2060kC(this, jSONObject));
     }
 }

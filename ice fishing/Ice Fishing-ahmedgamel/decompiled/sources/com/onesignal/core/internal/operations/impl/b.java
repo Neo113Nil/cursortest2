@@ -1,13 +1,13 @@
 package com.onesignal.core.internal.operations.impl;
 
 import I7.p;
-import S7.AbstractC0406y;
-import S7.C0395m;
-import S7.InterfaceC0394l;
-import S7.InterfaceC0404w;
+import N3.C;
+import S7.AbstractC0410y;
+import S7.C0399m;
+import S7.InterfaceC0398l;
+import S7.InterfaceC0408w;
 import S7.S;
 import S7.r0;
-import a.AbstractC0422a;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -19,12 +19,12 @@ import java.util.concurrent.atomic.AtomicInteger;
 import kotlin.jvm.internal.r;
 import kotlin.jvm.internal.s;
 import kotlin.jvm.internal.u;
-import u7.InterfaceC5087e;
+import u7.InterfaceC5079e;
 import u7.v;
-import v7.AbstractC5129j;
-import v7.AbstractC5130k;
-import v7.AbstractC5131l;
-import z7.InterfaceC5267d;
+import v7.AbstractC5119j;
+import v7.AbstractC5120k;
+import v7.AbstractC5121l;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class b implements H4.f, com.onesignal.core.internal.startup.b {
@@ -36,42 +36,42 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
     private final K4.a _time;
     private int enqueueIntoBucket;
     private final Map<String, H4.d> executorsMap;
-    private final InterfaceC0394l initialized;
+    private final InterfaceC0398l initialized;
     private boolean paused;
     private final List<C0192b> queue;
     private final com.onesignal.common.threading.f retryWaiter;
-    private final InterfaceC5087e scope$delegate;
+    private final InterfaceC5079e scope$delegate;
     private final com.onesignal.common.threading.f waiter;
 
     public static final class c extends B7.h implements p {
         int label;
 
-        public c(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public c(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return b.this.new c(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return b.this.new c(interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((c) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((c) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i != 0) {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 return obj;
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             com.onesignal.common.threading.f fVar = b.this.retryWaiter;
             this.label = 1;
             Object waitForWake = fVar.waitForWake(this);
@@ -85,8 +85,8 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
         int label;
         /* synthetic */ Object result;
 
-        public d(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public d(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -103,32 +103,32 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public e(H4.g gVar, boolean z3, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public e(H4.g gVar, boolean z6, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$operation = gVar;
-            this.$flush = z3;
+            this.$flush = z6;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return b.this.new e(this.$operation, this.$flush, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return b.this.new e(this.$operation, this.$flush, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((e) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((e) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             b bVar = b.this;
             b.internalEnqueue$default(bVar, new C0192b(this.$operation, null, bVar.enqueueIntoBucket, 0, 10, null), this.$flush, true, null, 8, null);
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
@@ -139,33 +139,33 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public f(H4.g gVar, com.onesignal.common.threading.f fVar, boolean z3, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public f(H4.g gVar, com.onesignal.common.threading.f fVar, boolean z6, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$operation = gVar;
             this.$waiter = fVar;
-            this.$flush = z3;
+            this.$flush = z6;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return b.this.new f(this.$operation, this.$waiter, this.$flush, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return b.this.new f(this.$operation, this.$waiter, this.$flush, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((f) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((f) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             b bVar = b.this;
             b.internalEnqueue$default(bVar, new C0192b(this.$operation, this.$waiter, bVar.enqueueIntoBucket, 0, 8, null), this.$flush, true, null, 8, null);
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
@@ -177,8 +177,8 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
         int label;
         /* synthetic */ Object result;
 
-        public g(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public g(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -194,22 +194,22 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public h(boolean z3, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
-            this.$ivRequired = z3;
+        public h(boolean z6, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
+            this.$ivRequired = z6;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return b.this.new h(this.$ivRequired, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return b.this.new h(this.$ivRequired, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 b bVar = b.this;
                 this.label = 1;
                 if (bVar.awaitInitialized(this) == aVar) {
@@ -219,18 +219,18 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
             if (this.$ivRequired) {
                 b.this.removeOperationsWithoutExternalId$com_onesignal_core();
             }
             b.this.forceExecuteOperations();
-            return v.f41353a;
+            return v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((h) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((h) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -239,8 +239,8 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
         int label;
         /* synthetic */ Object result;
 
-        public i(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public i(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -259,9 +259,9 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
         }
 
         @Override // I7.a
-        public final InterfaceC0404w invoke() {
+        public final InterfaceC0408w invoke() {
             new AtomicInteger();
-            return AbstractC0406y.b(new S(Executors.newScheduledThreadPool(1, new r0())));
+            return AbstractC0410y.b(new S(Executors.newScheduledThreadPool(1, new r0())));
         }
     }
 
@@ -273,37 +273,37 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke(((Boolean) obj).booleanValue());
-            return v.f41353a;
+            return v.f41073a;
         }
 
-        public final void invoke(boolean z3) {
-            b.this.onJwtConfigHydrated$com_onesignal_core(z3);
+        public final void invoke(boolean z6) {
+            b.this.onJwtConfigHydrated$com_onesignal_core(z6);
         }
     }
 
     public static final class l extends B7.h implements p {
         int label;
 
-        public l(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public l(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return b.this.new l(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return b.this.new l(interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((l) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((l) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 b.this.loadSavedOperations$com_onesignal_core();
                 b bVar = b.this;
                 this.label = 1;
@@ -314,9 +314,9 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
@@ -327,8 +327,8 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
         int label;
         /* synthetic */ Object result;
 
-        public m(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public m(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -346,29 +346,29 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
         final /* synthetic */ b this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public n(r rVar, b bVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public n(r rVar, b bVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$wakeMessage = rVar;
             this.this$0 = bVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return new n(this.$wakeMessage, this.this$0, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return new n(this.$wakeMessage, this.this$0, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((n) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((n) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
             r rVar;
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 r rVar2 = this.$wakeMessage;
                 com.onesignal.common.threading.f fVar = this.this$0.waiter;
                 this.L$0 = rVar2;
@@ -384,10 +384,10 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 rVar = (r) this.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            rVar.f38717n = obj;
-            return v.f41353a;
+            rVar.f38644n = obj;
+            return v.f41073a;
         }
     }
 
@@ -405,11 +405,11 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
         this._newRecordState = _newRecordState;
         this._jwtTokenStore = _jwtTokenStore;
         this._identityVerificationService = _identityVerificationService;
-        this.scope$delegate = AbstractC0422a.q(j.INSTANCE);
+        this.scope$delegate = C.O(j.INSTANCE);
         this.queue = new ArrayList();
         this.waiter = new com.onesignal.common.threading.f();
         this.retryWaiter = new com.onesignal.common.threading.f();
-        this.initialized = AbstractC0406y.a();
+        this.initialized = AbstractC0410y.a();
         LinkedHashMap linkedHashMap = new LinkedHashMap();
         for (H4.d dVar : executors) {
             Iterator<String> it = dVar.getOperations().iterator();
@@ -435,36 +435,36 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
     }
 
     private final int getExecuteBucket() {
-        int i6 = this.enqueueIntoBucket;
-        if (i6 == 0) {
+        int i4 = this.enqueueIntoBucket;
+        if (i4 == 0) {
             return 0;
         }
-        return i6 - 1;
+        return i4 - 1;
     }
 
     private final List<C0192b> getGroupableOperations(C0192b c0192b) {
-        ArrayList w6 = AbstractC5130k.w(c0192b);
+        ArrayList u6 = AbstractC5120k.u(c0192b);
         if (c0192b.getOperation().getGroupComparisonType() != H4.c.NONE) {
             String createComparisonKey = c0192b.getOperation().getGroupComparisonType() == H4.c.CREATE ? c0192b.getOperation().getCreateComparisonKey() : c0192b.getOperation().getModifyComparisonKey();
-            for (C0192b c0192b2 : AbstractC5129j.L(this.queue)) {
+            for (C0192b c0192b2 : AbstractC5119j.J(this.queue)) {
                 String createComparisonKey2 = c0192b.getOperation().getGroupComparisonType() == H4.c.CREATE ? c0192b2.getOperation().getCreateComparisonKey() : c0192b2.getOperation().getModifyComparisonKey();
                 if (kotlin.jvm.internal.h.a(createComparisonKey2, "") && kotlin.jvm.internal.h.a(createComparisonKey, "")) {
                     throw new Exception("Both comparison keys can not be blank!");
                 }
                 if (this._newRecordState.canAccess(c0192b2.getOperation().getApplyToRecordId()) && kotlin.jvm.internal.h.a(createComparisonKey2, createComparisonKey)) {
                     this.queue.remove(c0192b2);
-                    w6.add(c0192b2);
+                    u6.add(c0192b2);
                 }
             }
         }
-        return w6;
+        return u6;
     }
 
-    private final InterfaceC0404w getScope() {
-        return (InterfaceC0404w) this.scope$delegate.getValue();
+    private final InterfaceC0408w getScope() {
+        return (InterfaceC0408w) this.scope$delegate.getValue();
     }
 
-    private final void internalEnqueue(C0192b c0192b, boolean z3, boolean z6, Integer num) {
+    private final void internalEnqueue(C0192b c0192b, boolean z6, boolean z9, Integer num) {
         Object obj;
         synchronized (this.queue) {
             try {
@@ -512,7 +512,7 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                         } else {
                             c0192b3.setWaiter(c0192b.getWaiter());
                         }
-                        if (!z6) {
+                        if (!z9) {
                             com.onesignal.common.modeling.b.remove$default(this._operationModelStore, c0192b.getOperation().getId(), null, 2, null);
                         }
                         return;
@@ -523,21 +523,21 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                 } else {
                     this.queue.add(c0192b);
                 }
-                if (z6) {
+                if (z9) {
                     com.onesignal.common.modeling.b.add$default(this._operationModelStore, c0192b.getOperation(), null, 2, null);
                 }
-                this.waiter.wake(new a(z3, 0L));
+                this.waiter.wake(new a(z6, 0L));
             } catch (Throwable th) {
                 throw th;
             }
         }
     }
 
-    public static /* synthetic */ void internalEnqueue$default(b bVar, C0192b c0192b, boolean z3, boolean z6, Integer num, int i6, Object obj) {
-        if ((i6 & 8) != 0) {
+    public static /* synthetic */ void internalEnqueue$default(b bVar, C0192b c0192b, boolean z6, boolean z9, Integer num, int i4, Object obj) {
+        if ((i4 & 8) != 0) {
             num = null;
         }
-        bVar.internalEnqueue(c0192b, z3, z6, num);
+        bVar.internalEnqueue(c0192b, z6, z9, num);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -547,7 +547,7 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
      */
     /* JADX WARN: Code restructure failed: missing block: B:34:0x00dc, code lost:
     
-        if (S7.AbstractC0406y.f(r7, r0) == r1) goto L48;
+        if (S7.AbstractC0410y.f(r7, r0) == r1) goto L48;
      */
     /* JADX WARN: Code restructure failed: missing block: B:37:0x00e7, code lost:
     
@@ -562,21 +562,21 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object processQueueForever(InterfaceC5267d interfaceC5267d) {
+    public final Object processQueueForever(InterfaceC5240d interfaceC5240d) {
         i iVar;
-        int i6;
+        int i4;
         b bVar;
-        List L6;
-        if (interfaceC5267d instanceof i) {
-            iVar = (i) interfaceC5267d;
-            int i9 = iVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                iVar.label = i9 - Integer.MIN_VALUE;
+        List J;
+        if (interfaceC5240d instanceof i) {
+            iVar = (i) interfaceC5240d;
+            int i6 = iVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                iVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = iVar.result;
-                A7.a aVar = A7.a.f58n;
-                i6 = iVar.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar = A7.a.f215n;
+                i4 = iVar.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     iVar.L$0 = this;
                     iVar.label = 1;
                     if (waitForNewOperationAndExecutionInterval(iVar) != aVar) {
@@ -584,33 +584,33 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                     }
                     return aVar;
                 }
-                if (i6 == 1) {
+                if (i4 == 1) {
                     bVar = (b) iVar.L$0;
-                    com.bumptech.glide.d.k(obj);
-                } else if (i6 == 2) {
+                    Q3.b.s(obj);
+                } else if (i4 == 2) {
                     bVar = (b) iVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     long opRepoPostWakeDelay = ((com.onesignal.core.internal.config.b) bVar._configModelStore.getModel()).getOpRepoPostWakeDelay();
                     iVar.L$0 = bVar;
                     iVar.label = 3;
                 } else {
-                    if (i6 != 3) {
-                        if (i6 != 4) {
+                    if (i4 != 3) {
+                        if (i4 != 4) {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
                         bVar = (b) iVar.L$0;
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                         bVar.enqueueIntoBucket++;
                         if (!bVar.paused) {
                             com.onesignal.debug.internal.logging.b.debug$default("OperationRepo is paused", null, 2, null);
-                            return v.f41353a;
+                            return v.f41073a;
                         }
                         List<C0192b> nextOps$com_onesignal_core = bVar.getNextOps$com_onesignal_core(bVar.getExecuteBucket());
                         if (com.onesignal.debug.internal.logging.b.atLogLevel(M4.c.DEBUG)) {
                             synchronized (bVar.queue) {
-                                L6 = AbstractC5129j.L(bVar.queue);
+                                J = AbstractC5119j.J(bVar.queue);
                             }
-                            com.onesignal.debug.internal.logging.b.debug$default("processQueueForever:ops:\n" + nextOps$com_onesignal_core + "\nqueue(" + L6.size() + "):\n" + L6, null, 2, null);
+                            com.onesignal.debug.internal.logging.b.debug$default("processQueueForever:ops:\n" + nextOps$com_onesignal_core + "\nqueue(" + J.size() + "):\n" + J, null, 2, null);
                         }
                         if (nextOps$com_onesignal_core != null) {
                             iVar.L$0 = bVar;
@@ -622,7 +622,7 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                         return aVar;
                     }
                     bVar = (b) iVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     if (!bVar.paused) {
                     }
                 }
@@ -631,11 +631,11 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                 }
             }
         }
-        iVar = new i(interfaceC5267d);
+        iVar = new i(interfaceC5240d);
         Object obj2 = iVar.result;
-        A7.a aVar2 = A7.a.f58n;
-        i6 = iVar.label;
-        if (i6 != 0) {
+        A7.a aVar2 = A7.a.f215n;
+        i4 = iVar.label;
+        if (i4 != 0) {
         }
         bVar.enqueueIntoBucket++;
         if (!bVar.paused) {
@@ -643,17 +643,17 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
     }
 
     private final boolean shouldSuppressAnonymousOp(H4.g gVar) {
-        boolean z3 = false;
+        boolean z6 = false;
         if (!this._identityVerificationService.getNewCodePathsRun() || (gVar instanceof V5.f)) {
             return false;
         }
         if (((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getUseIdentityVerification$com_onesignal_core() == com.onesignal.user.internal.jwt.b.REQUIRED && gVar.getExternalId() == null) {
-            z3 = true;
+            z6 = true;
         }
-        if (z3) {
+        if (z6) {
             com.onesignal.debug.internal.logging.b.debug$default("OperationRepo: suppressing anonymous op under IV-required: " + gVar, null, 2, null);
         }
-        return z3;
+        return z6;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -668,25 +668,25 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object waitForNewOperationAndExecutionInterval(InterfaceC5267d interfaceC5267d) {
+    public final Object waitForNewOperationAndExecutionInterval(InterfaceC5240d interfaceC5240d) {
         m mVar;
-        int i6;
+        int i4;
         r rVar;
         b bVar;
         r rVar2;
         long opRepoExecutionInterval;
         r rVar3;
         b bVar2;
-        if (interfaceC5267d instanceof m) {
-            mVar = (m) interfaceC5267d;
-            int i9 = mVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                mVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof m) {
+            mVar = (m) interfaceC5240d;
+            int i6 = mVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                mVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = mVar.result;
-                A7.a aVar = A7.a.f58n;
-                i6 = mVar.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar = A7.a.f215n;
+                i4 = mVar.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     rVar = new r();
                     com.onesignal.common.threading.f fVar = this.waiter;
                     mVar.L$0 = this;
@@ -700,69 +700,69 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                     }
                     return aVar;
                 }
-                if (i6 != 1) {
-                    if (i6 != 2) {
+                if (i4 != 1) {
+                    if (i4 != 2) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     rVar3 = (r) mVar.L$1;
                     bVar2 = (b) mVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     if (obj != null) {
                         opRepoExecutionInterval = ((com.onesignal.core.internal.config.b) bVar2._configModelStore.getModel()).getOpRepoExecutionInterval();
-                        if (!((a) rVar3.f38717n).getForce()) {
+                        if (!((a) rVar3.f38644n).getForce()) {
                             n nVar = new n(rVar3, bVar2, null);
                             mVar.L$0 = bVar2;
                             mVar.L$1 = rVar3;
                             mVar.L$2 = null;
                             mVar.label = 2;
-                            obj = AbstractC0406y.A(opRepoExecutionInterval, nVar, mVar);
+                            obj = AbstractC0410y.A(opRepoExecutionInterval, nVar, mVar);
                         }
                     }
-                    return v.f41353a;
+                    return v.f41073a;
                 }
                 rVar = (r) mVar.L$2;
                 rVar2 = (r) mVar.L$1;
                 bVar = (b) mVar.L$0;
-                com.bumptech.glide.d.k(obj);
-                rVar.f38717n = obj;
-                opRepoExecutionInterval = ((com.onesignal.core.internal.config.b) bVar._configModelStore.getModel()).getOpRepoExecutionInterval() - ((a) rVar2.f38717n).getPreviousWaitedTime();
+                Q3.b.s(obj);
+                rVar.f38644n = obj;
+                opRepoExecutionInterval = ((com.onesignal.core.internal.config.b) bVar._configModelStore.getModel()).getOpRepoExecutionInterval() - ((a) rVar2.f38644n).getPreviousWaitedTime();
                 rVar3 = rVar2;
                 bVar2 = bVar;
-                if (!((a) rVar3.f38717n).getForce()) {
+                if (!((a) rVar3.f38644n).getForce()) {
                 }
-                return v.f41353a;
+                return v.f41073a;
             }
         }
-        mVar = new m(interfaceC5267d);
+        mVar = new m(interfaceC5240d);
         Object obj2 = mVar.result;
-        A7.a aVar2 = A7.a.f58n;
-        i6 = mVar.label;
-        if (i6 != 0) {
+        A7.a aVar2 = A7.a.f215n;
+        i4 = mVar.label;
+        if (i4 != 0) {
         }
-        rVar.f38717n = obj2;
-        opRepoExecutionInterval = ((com.onesignal.core.internal.config.b) bVar._configModelStore.getModel()).getOpRepoExecutionInterval() - ((a) rVar2.f38717n).getPreviousWaitedTime();
+        rVar.f38644n = obj2;
+        opRepoExecutionInterval = ((com.onesignal.core.internal.config.b) bVar._configModelStore.getModel()).getOpRepoExecutionInterval() - ((a) rVar2.f38644n).getPreviousWaitedTime();
         rVar3 = rVar2;
         bVar2 = bVar;
-        if (!((a) rVar3.f38717n).getForce()) {
+        if (!((a) rVar3.f38644n).getForce()) {
         }
-        return v.f41353a;
+        return v.f41073a;
     }
 
     @Override // H4.f
-    public Object awaitInitialized(InterfaceC5267d interfaceC5267d) {
-        Object U3 = ((C0395m) this.initialized).U(interfaceC5267d);
-        return U3 == A7.a.f58n ? U3 : v.f41353a;
+    public Object awaitInitialized(InterfaceC5240d interfaceC5240d) {
+        Object U8 = ((C0399m) this.initialized).U(interfaceC5240d);
+        return U8 == A7.a.f215n ? U8 : v.f41073a;
     }
 
     @Override // H4.f
     public <T extends H4.g> boolean containsInstanceOf(O7.c type) {
-        boolean z3;
+        boolean z6;
         boolean isInstance;
         kotlin.jvm.internal.h.e(type, "type");
         synchronized (this.queue) {
             try {
                 List<C0192b> list = this.queue;
-                z3 = false;
+                z6 = false;
                 if (list == null || !list.isEmpty()) {
                     Iterator<T> it = list.iterator();
                     while (true) {
@@ -770,21 +770,21 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                             break;
                         }
                         H4.g operation = ((C0192b) it.next()).getOperation();
-                        Class jClass = ((kotlin.jvm.internal.d) type).f38710n;
+                        Class jClass = ((kotlin.jvm.internal.d) type).f38637n;
                         kotlin.jvm.internal.h.e(jClass, "jClass");
-                        Map map = kotlin.jvm.internal.d.f38709u;
+                        Map map = kotlin.jvm.internal.d.f38636u;
                         kotlin.jvm.internal.h.c(map, "null cannot be cast to non-null type kotlin.collections.Map<K of kotlin.collections.MapsKt__MapsKt.get, V of kotlin.collections.MapsKt__MapsKt.get>");
                         Integer num = (Integer) map.get(jClass);
                         if (num != null) {
                             isInstance = u.c(num.intValue(), operation);
                         } else {
                             if (jClass.isPrimitive()) {
-                                jClass = S0.f.j(s.a(jClass));
+                                jClass = A8.b.l(s.a(jClass));
                             }
                             isInstance = jClass.isInstance(operation);
                         }
                         if (isInstance) {
-                            z3 = true;
+                            z6 = true;
                             break;
                         }
                     }
@@ -793,19 +793,19 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                 throw th;
             }
         }
-        return z3;
+        return z6;
     }
 
-    public final Object delayBeforeNextExecution(int i6, Integer num, InterfaceC5267d interfaceC5267d) {
+    public final Object delayBeforeNextExecution(int i4, Integer num, InterfaceC5240d interfaceC5240d) {
         com.onesignal.debug.internal.logging.b.debug$default("retryAfterSeconds: " + num, null, 2, null);
-        long max = Math.max(((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getOpRepoDefaultFailRetryBackoff() * i6, (num != null ? num.intValue() : 0L) * 1000);
-        v vVar = v.f41353a;
+        long max = Math.max(((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getOpRepoDefaultFailRetryBackoff() * i4, (num != null ? num.intValue() : 0L) * 1000);
+        v vVar = v.f41073a;
         if (max < 1) {
             return vVar;
         }
         com.onesignal.debug.internal.logging.b.debug$default("Operations being delay for: " + max + " ms", null, 2, null);
-        Object A9 = AbstractC0406y.A(max, new c(null), interfaceC5267d);
-        return A9 == A7.a.f58n ? A9 : vVar;
+        Object A9 = AbstractC0410y.A(max, new c(null), interfaceC5240d);
+        return A9 == A7.a.f215n ? A9 : vVar;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:12:0x0049 A[EXC_TOP_SPLITTER, SYNTHETIC] */
@@ -814,78 +814,78 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object delayForPostCreate(long j6, InterfaceC5267d interfaceC5267d) {
+    public final Object delayForPostCreate(long j6, InterfaceC5240d interfaceC5240d) {
         d dVar;
-        int i6;
+        int i4;
         b bVar;
-        if (interfaceC5267d instanceof d) {
-            dVar = (d) interfaceC5267d;
-            int i9 = dVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                dVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof d) {
+            dVar = (d) interfaceC5240d;
+            int i6 = dVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                dVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = dVar.result;
-                A7.a aVar = A7.a.f58n;
-                i6 = dVar.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar = A7.a.f215n;
+                i4 = dVar.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     dVar.L$0 = this;
                     dVar.J$0 = j6;
                     dVar.label = 1;
-                    if (AbstractC0406y.f(j6, dVar) == aVar) {
+                    if (AbstractC0410y.f(j6, dVar) == aVar) {
                         return aVar;
                     }
                     bVar = this;
                 } else {
-                    if (i6 != 1) {
+                    if (i4 != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     j6 = dVar.J$0;
                     bVar = (b) dVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 synchronized (bVar.queue) {
                     if (!bVar.queue.isEmpty()) {
                         bVar.waiter.wake(new a(false, j6));
                     }
                 }
-                return v.f41353a;
+                return v.f41073a;
             }
         }
-        dVar = new d(interfaceC5267d);
+        dVar = new d(interfaceC5240d);
         Object obj2 = dVar.result;
-        A7.a aVar2 = A7.a.f58n;
-        i6 = dVar.label;
-        if (i6 != 0) {
+        A7.a aVar2 = A7.a.f215n;
+        i4 = dVar.label;
+        if (i4 != 0) {
         }
         synchronized (bVar.queue) {
         }
     }
 
     @Override // H4.f
-    public void enqueue(H4.g operation, boolean z3) {
+    public void enqueue(H4.g operation, boolean z6) {
         kotlin.jvm.internal.h.e(operation, "operation");
         if (shouldSuppressAnonymousOp(operation)) {
             return;
         }
-        com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "OperationRepo.enqueue(operation: " + operation + ", flush: " + z3 + ')');
+        com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "OperationRepo.enqueue(operation: " + operation + ", flush: " + z6 + ')');
         String uuid = UUID.randomUUID().toString();
         kotlin.jvm.internal.h.d(uuid, "toString(...)");
         operation.setId(uuid);
-        AbstractC0406y.o(getScope(), null, new e(operation, z3, null), 3);
+        AbstractC0410y.o(getScope(), null, new e(operation, z6, null), 3);
     }
 
     @Override // H4.f
-    public Object enqueueAndWait(H4.g gVar, boolean z3, InterfaceC5267d interfaceC5267d) {
+    public Object enqueueAndWait(H4.g gVar, boolean z6, InterfaceC5240d interfaceC5240d) {
         if (shouldSuppressAnonymousOp(gVar)) {
             return Boolean.FALSE;
         }
-        com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "OperationRepo.enqueueAndWait(operation: " + gVar + ", force: " + z3 + ')');
+        com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "OperationRepo.enqueueAndWait(operation: " + gVar + ", force: " + z6 + ')');
         String uuid = UUID.randomUUID().toString();
         kotlin.jvm.internal.h.d(uuid, "toString(...)");
         gVar.setId(uuid);
         com.onesignal.common.threading.f fVar = new com.onesignal.common.threading.f();
-        AbstractC0406y.o(getScope(), null, new f(gVar, fVar, z3, null), 3);
-        return fVar.waitForWake(interfaceC5267d);
+        AbstractC0410y.o(getScope(), null, new f(gVar, fVar, z6, null), 3);
+        return fVar.waitForWake(interfaceC5240d);
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -930,35 +930,35 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object executeOperations$com_onesignal_core(List<C0192b> list, InterfaceC5267d interfaceC5267d) {
+    public final Object executeOperations$com_onesignal_core(List<C0192b> list, InterfaceC5240d interfaceC5240d) {
         g gVar;
-        int i6;
+        int i4;
         ArrayList arrayList;
         C0192b c0192b;
         b bVar;
         H4.a aVar;
-        int i9;
+        int i6;
         Integer retryAfterSeconds;
         b bVar2;
         List<C0192b> list2 = list;
         ?? r32 = "Could not find executor for operation ";
-        if (interfaceC5267d instanceof g) {
-            gVar = (g) interfaceC5267d;
-            int i10 = gVar.label;
-            if ((i10 & Integer.MIN_VALUE) != 0) {
-                gVar.label = i10 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof g) {
+            gVar = (g) interfaceC5240d;
+            int i9 = gVar.label;
+            if ((i9 & Integer.MIN_VALUE) != 0) {
+                gVar.label = i9 - Integer.MIN_VALUE;
                 Object obj = gVar.result;
-                A7.a aVar2 = A7.a.f58n;
-                i6 = gVar.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar2 = A7.a.f215n;
+                i4 = gVar.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     try {
-                        C0192b c0192b2 = (C0192b) AbstractC5129j.A(list2);
+                        C0192b c0192b2 = (C0192b) AbstractC5119j.y(list2);
                         H4.d dVar = this.executorsMap.get(c0192b2.getOperation().getName());
                         if (dVar == null) {
                             throw new Exception("Could not find executor for operation " + c0192b2.getOperation().getName());
                         }
-                        arrayList = new ArrayList(AbstractC5131l.y(list2, 10));
+                        arrayList = new ArrayList(AbstractC5121l.w(list2, 10));
                         Iterator it = list2.iterator();
                         while (it.hasNext()) {
                             arrayList.add(((C0192b) it.next()).getOperation());
@@ -980,25 +980,25 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                         r32 = this;
                         com.onesignal.debug.internal.logging.b.log(M4.c.ERROR, "Error attempting to execute operation: " + list2, th);
                         r32.dropAndWake(list2);
-                        return v.f41353a;
+                        return v.f41073a;
                     }
                 }
-                if (i6 != 1) {
-                    if (i6 != 2) {
-                        if (i6 != 3) {
+                if (i4 != 1) {
+                    if (i4 != 2) {
+                        if (i4 != 3) {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
                         list2 = (List) gVar.L$1;
                         b bVar3 = (b) gVar.L$0;
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                         r32 = bVar3;
-                        return v.f41353a;
+                        return v.f41073a;
                     }
                     H4.a aVar3 = (H4.a) gVar.L$2;
                     List<C0192b> list3 = (List) gVar.L$1;
                     b bVar4 = (b) gVar.L$0;
                     try {
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                         aVar = aVar3;
                         list2 = list3;
                         bVar2 = bVar4;
@@ -1018,16 +1018,16 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                         r32 = bVar4;
                         com.onesignal.debug.internal.logging.b.log(M4.c.ERROR, "Error attempting to execute operation: " + list2, th);
                         r32.dropAndWake(list2);
-                        return v.f41353a;
+                        return v.f41073a;
                     }
-                    return v.f41353a;
+                    return v.f41073a;
                 }
                 ?? r22 = (List) gVar.L$3;
                 C0192b c0192b3 = (C0192b) gVar.L$2;
                 List<C0192b> list4 = (List) gVar.L$1;
                 bVar = (b) gVar.L$0;
                 try {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     arrayList = r22;
                     list2 = list4;
                     c0192b = c0192b3;
@@ -1037,7 +1037,7 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                     r32 = bVar;
                     com.onesignal.debug.internal.logging.b.log(M4.c.ERROR, "Error attempting to execute operation: " + list2, th);
                     r32.dropAndWake(list2);
-                    return v.f41353a;
+                    return v.f41073a;
                 }
                 aVar = (H4.a) obj;
                 com.onesignal.debug.internal.logging.b.debug$default("OperationRepo: execute response = " + aVar.getResult(), null, 2, null);
@@ -1070,10 +1070,10 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                                 waiter.wake(Boolean.TRUE);
                             }
                         }
-                        i9 = 0;
+                        i6 = 0;
                         if (aVar.getOperations() != null) {
                             synchronized (bVar.queue) {
-                                for (H4.g gVar2 : AbstractC5129j.I(aVar.getOperations())) {
+                                for (H4.g gVar2 : AbstractC5119j.G(aVar.getOperations())) {
                                     String uuid = UUID.randomUUID().toString();
                                     kotlin.jvm.internal.h.d(uuid, "toString(...)");
                                     gVar2.setId(uuid);
@@ -1089,12 +1089,12 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                         gVar.L$2 = aVar;
                         gVar.L$3 = null;
                         gVar.label = 2;
-                        if (bVar.delayBeforeNextExecution(i9, retryAfterSeconds, gVar) != aVar2) {
+                        if (bVar.delayBeforeNextExecution(i6, retryAfterSeconds, gVar) != aVar2) {
                             bVar2 = bVar;
                             r32 = bVar2;
                             if (aVar.getIdTranslations() != null) {
                             }
-                            return v.f41353a;
+                            return v.f41073a;
                         }
                         return aVar2;
                     case 2:
@@ -1102,7 +1102,7 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                             com.onesignal.debug.internal.logging.b.warn$default("Operation execution failed without retry: " + arrayList, null, 2, null);
                             bVar.dropAndWake(list2);
                         }
-                        i9 = 0;
+                        i6 = 0;
                         if (aVar.getOperations() != null) {
                         }
                         retryAfterSeconds = aVar.getRetryAfterSeconds();
@@ -1111,14 +1111,14 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                         gVar.L$2 = aVar;
                         gVar.L$3 = null;
                         gVar.label = 2;
-                        if (bVar.delayBeforeNextExecution(i9, retryAfterSeconds, gVar) != aVar2) {
+                        if (bVar.delayBeforeNextExecution(i6, retryAfterSeconds, gVar) != aVar2) {
                         }
                         return aVar2;
                     case 3:
                     case 4:
                         com.onesignal.debug.internal.logging.b.warn$default("Operation execution failed without retry: " + arrayList, null, 2, null);
                         bVar.dropAndWake(list2);
-                        i9 = 0;
+                        i6 = 0;
                         if (aVar.getOperations() != null) {
                         }
                         retryAfterSeconds = aVar.getRetryAfterSeconds();
@@ -1127,7 +1127,7 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                         gVar.L$2 = aVar;
                         gVar.L$3 = null;
                         gVar.label = 2;
-                        if (bVar.delayBeforeNextExecution(i9, retryAfterSeconds, gVar) != aVar2) {
+                        if (bVar.delayBeforeNextExecution(i6, retryAfterSeconds, gVar) != aVar2) {
                         }
                         return aVar2;
                     case 5:
@@ -1144,14 +1144,14 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                                         arrayList2.add(obj2);
                                     }
                                 }
-                                Iterator it7 = AbstractC5129j.I(arrayList2).iterator();
+                                Iterator it7 = AbstractC5119j.G(arrayList2).iterator();
                                 while (it7.hasNext()) {
                                     bVar.queue.add(0, (C0192b) it7.next());
                                 }
                             } finally {
                             }
                         }
-                        i9 = 0;
+                        i6 = 0;
                         if (aVar.getOperations() != null) {
                         }
                         retryAfterSeconds = aVar.getRetryAfterSeconds();
@@ -1160,18 +1160,18 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                         gVar.L$2 = aVar;
                         gVar.L$3 = null;
                         gVar.label = 2;
-                        if (bVar.delayBeforeNextExecution(i9, retryAfterSeconds, gVar) != aVar2) {
+                        if (bVar.delayBeforeNextExecution(i6, retryAfterSeconds, gVar) != aVar2) {
                         }
                         return aVar2;
                     case 6:
                         com.onesignal.debug.internal.logging.b.info$default("Operation execution failed, retrying: " + arrayList, null, 2, null);
                         synchronized (bVar.queue) {
                             try {
-                                i9 = 0;
-                                for (C0192b c0192b5 : AbstractC5129j.I(list2)) {
+                                i6 = 0;
+                                for (C0192b c0192b5 : AbstractC5119j.G(list2)) {
                                     c0192b5.setRetries(c0192b5.getRetries() + 1);
-                                    if (c0192b5.getRetries() > i9) {
-                                        i9 = c0192b5.getRetries();
+                                    if (c0192b5.getRetries() > i6) {
+                                        i6 = c0192b5.getRetries();
                                     }
                                     bVar.queue.add(0, c0192b5);
                                 }
@@ -1186,7 +1186,7 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                         gVar.L$2 = aVar;
                         gVar.L$3 = null;
                         gVar.label = 2;
-                        if (bVar.delayBeforeNextExecution(i9, retryAfterSeconds, gVar) != aVar2) {
+                        if (bVar.delayBeforeNextExecution(i6, retryAfterSeconds, gVar) != aVar2) {
                         }
                         return aVar2;
                     case 7:
@@ -1200,11 +1200,11 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                             }
                         }
                         synchronized (bVar.queue) {
-                            for (C0192b c0192b6 : AbstractC5129j.I(list2)) {
+                            for (C0192b c0192b6 : AbstractC5119j.G(list2)) {
                                 bVar.queue.add(0, new C0192b(c0192b6.getOperation(), null, c0192b6.getBucket(), c0192b6.getRetries()));
                             }
                         }
-                        i9 = 0;
+                        i6 = 0;
                         if (aVar.getOperations() != null) {
                         }
                         retryAfterSeconds = aVar.getRetryAfterSeconds();
@@ -1213,11 +1213,11 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                         gVar.L$2 = aVar;
                         gVar.L$3 = null;
                         gVar.label = 2;
-                        if (bVar.delayBeforeNextExecution(i9, retryAfterSeconds, gVar) != aVar2) {
+                        if (bVar.delayBeforeNextExecution(i6, retryAfterSeconds, gVar) != aVar2) {
                         }
                         return aVar2;
                     default:
-                        i9 = 0;
+                        i6 = 0;
                         if (aVar.getOperations() != null) {
                         }
                         retryAfterSeconds = aVar.getRetryAfterSeconds();
@@ -1226,17 +1226,17 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                         gVar.L$2 = aVar;
                         gVar.L$3 = null;
                         gVar.label = 2;
-                        if (bVar.delayBeforeNextExecution(i9, retryAfterSeconds, gVar) != aVar2) {
+                        if (bVar.delayBeforeNextExecution(i6, retryAfterSeconds, gVar) != aVar2) {
                         }
                         return aVar2;
                 }
             }
         }
-        gVar = new g(interfaceC5267d);
+        gVar = new g(interfaceC5240d);
         Object obj3 = gVar.result;
-        A7.a aVar22 = A7.a.f58n;
-        i6 = gVar.label;
-        if (i6 != 0) {
+        A7.a aVar22 = A7.a.f215n;
+        i4 = gVar.label;
+        if (i4 != 0) {
         }
         aVar = (H4.a) obj3;
         com.onesignal.debug.internal.logging.b.debug$default("OperationRepo: execute response = " + aVar.getResult(), null, 2, null);
@@ -1248,14 +1248,14 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
 
     @Override // H4.f
     public void forceExecuteOperations() {
-        int i6 = 2;
+        int i4 = 2;
         kotlin.jvm.internal.e eVar = null;
         long j6 = 0;
-        this.retryWaiter.wake(new a(true, j6, i6, eVar));
-        this.waiter.wake(new a(false, j6, i6, eVar));
+        this.retryWaiter.wake(new a(true, j6, i4, eVar));
+        this.waiter.wake(new a(false, j6, i4, eVar));
     }
 
-    public final List<C0192b> getNextOps$com_onesignal_core(int i6) {
+    public final List<C0192b> getNextOps$com_onesignal_core(int i4) {
         Object obj;
         List<C0192b> list = null;
         if (((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getUseIdentityVerification$com_onesignal_core() == com.onesignal.user.internal.jwt.b.UNKNOWN) {
@@ -1273,7 +1273,7 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                     }
                     obj = it.next();
                     C0192b c0192b = (C0192b) obj;
-                    if (c0192b.getOperation().getCanStartExecute() && this._newRecordState.canAccess(c0192b.getOperation().getApplyToRecordId()) && c0192b.getBucket() <= i6 && (!newCodePathsRun || com.onesignal.core.internal.operations.impl.d.hasValidJwtIfRequired(this, this._jwtTokenStore, c0192b.getOperation(), ivBehaviorActive))) {
+                    if (c0192b.getOperation().getCanStartExecute() && this._newRecordState.canAccess(c0192b.getOperation().getApplyToRecordId()) && c0192b.getBucket() <= i4 && (!newCodePathsRun || com.onesignal.core.internal.operations.impl.d.hasValidJwtIfRequired(this, this._jwtTokenStore, c0192b.getOperation(), ivBehaviorActive))) {
                         break;
                     }
                 }
@@ -1295,15 +1295,15 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
 
     public final void loadSavedOperations$com_onesignal_core() {
         this._operationModelStore.loadOperations();
-        Iterator it = AbstractC5129j.I(this._operationModelStore.list()).iterator();
+        Iterator it = AbstractC5119j.G(this._operationModelStore.list()).iterator();
         while (it.hasNext()) {
             internalEnqueue(new C0192b((H4.g) it.next(), null, this.enqueueIntoBucket, 0, 10, null), false, false, 0);
         }
-        ((C0395m) this.initialized).J(v.f41353a);
+        ((C0399m) this.initialized).J(v.f41073a);
     }
 
-    public final void onJwtConfigHydrated$com_onesignal_core(boolean z3) {
-        com.onesignal.common.threading.c.suspendifyOnIO(new h(z3, null));
+    public final void onJwtConfigHydrated$com_onesignal_core(boolean z6) {
+        com.onesignal.common.threading.c.suspendifyOnIO(new h(z6, null));
     }
 
     public final void removeOperationsWithoutExternalId$com_onesignal_core() {
@@ -1334,7 +1334,7 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
                     }
                 }
                 com.onesignal.debug.internal.logging.b.debug$default("OperationRepo: removeOperationsWithoutExternalId removed " + arrayList2.size() + " of " + (arrayList2.size() + this.queue.size()) + " operations", null, 2, null);
-                arrayList = new ArrayList(AbstractC5131l.y(arrayList2, 10));
+                arrayList = new ArrayList(AbstractC5121l.w(arrayList2, 10));
                 Iterator it3 = arrayList2.iterator();
                 while (it3.hasNext()) {
                     arrayList.add(((C0192b) it3.next()).getOperation().getId());
@@ -1353,15 +1353,15 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
     public void start() {
         this.paused = false;
         this._identityVerificationService.setOnJwtConfigHydratedHandler(new k());
-        AbstractC0406y.o(getScope(), null, new l(null), 3);
+        AbstractC0410y.o(getScope(), null, new l(null), 3);
     }
 
     public static final class a {
         private final boolean force;
         private final long previousWaitedTime;
 
-        public a(boolean z3, long j6) {
-            this.force = z3;
+        public a(boolean z6, long j6) {
+            this.force = z6;
             this.previousWaitedTime = j6;
         }
 
@@ -1373,8 +1373,8 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
             return this.previousWaitedTime;
         }
 
-        public /* synthetic */ a(boolean z3, long j6, int i, kotlin.jvm.internal.e eVar) {
-            this(z3, (i & 2) != 0 ? 0L : j6);
+        public /* synthetic */ a(boolean z6, long j6, int i, kotlin.jvm.internal.e eVar) {
+            this(z6, (i & 2) != 0 ? 0L : j6);
         }
     }
 
@@ -1385,12 +1385,12 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
         private int retries;
         private com.onesignal.common.threading.f waiter;
 
-        public C0192b(H4.g operation, com.onesignal.common.threading.f fVar, int i, int i6) {
+        public C0192b(H4.g operation, com.onesignal.common.threading.f fVar, int i, int i4) {
             kotlin.jvm.internal.h.e(operation, "operation");
             this.operation = operation;
             this.waiter = fVar;
             this.bucket = i;
-            this.retries = i6;
+            this.retries = i4;
         }
 
         public final int getBucket() {
@@ -1421,8 +1421,8 @@ public final class b implements H4.f, com.onesignal.core.internal.startup.b {
             return "bucket:" + this.bucket + ", retries:" + this.retries + ", operation:" + this.operation + '\n';
         }
 
-        public /* synthetic */ C0192b(H4.g gVar, com.onesignal.common.threading.f fVar, int i, int i6, int i9, kotlin.jvm.internal.e eVar) {
-            this(gVar, (i9 & 2) != 0 ? null : fVar, i, (i9 & 8) != 0 ? 0 : i6);
+        public /* synthetic */ C0192b(H4.g gVar, com.onesignal.common.threading.f fVar, int i, int i4, int i6, kotlin.jvm.internal.e eVar) {
+            this(gVar, (i6 & 2) != 0 ? null : fVar, i, (i6 & 8) != 0 ? 0 : i4);
         }
     }
 }

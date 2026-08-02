@@ -4,13 +4,13 @@ package U6;
 public abstract class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final N6.b f3213a = N6.b.a(1, 10, "name");
+    public static final N6.b f3336a = N6.b.a(1, 10, "name");
 
     /* renamed from: b, reason: collision with root package name */
-    public static final N6.b f3214b = N6.b.a(2, 18, com.anythink.expressad.foundation.g.a.i);
+    public static final N6.b f3337b = N6.b.a(2, 18, com.anythink.expressad.foundation.g.a.i);
 
     /* renamed from: c, reason: collision with root package name */
-    public static final N6.b f3215c = N6.b.a(3, 26, "attributes");
+    public static final N6.b f3338c = N6.b.a(3, 26, "attributes");
 
     static {
         N6.b.a(4, 32, "droppedAttributesCount");

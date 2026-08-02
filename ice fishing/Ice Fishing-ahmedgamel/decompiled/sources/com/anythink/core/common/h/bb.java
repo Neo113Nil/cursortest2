@@ -4,17 +4,17 @@ package com.anythink.core.common.h;
 public final class bb {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f13606a;
+    public int f14392a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f13607b;
+    public int f14393b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f13608c;
+    public int f14394c;
 
     /* renamed from: d, reason: collision with root package name */
-    public int f13609d;
+    public int f14395d;
 
     /* renamed from: e, reason: collision with root package name */
-    public String f13610e;
+    public String f14396e;
 }

@@ -6,53 +6,53 @@ import com.anythink.core.common.m.d.d;
 public class e {
 
     /* renamed from: b, reason: collision with root package name */
-    private static e f14602b;
+    private static e f15388b;
 
     /* renamed from: c, reason: collision with root package name */
-    private static final Object f14603c = new Object();
+    private static final Object f15389c = new Object();
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f14604a = getClass().getSimpleName();
+    private final String f15390a = getClass().getSimpleName();
 
     /* renamed from: d, reason: collision with root package name */
-    private volatile com.anythink.core.common.m.d.a.c f14605d;
+    private volatile com.anythink.core.common.m.d.a.c f15391d;
 
     /* renamed from: e, reason: collision with root package name */
-    private volatile com.anythink.core.common.m.d.a.c f14606e;
+    private volatile com.anythink.core.common.m.d.a.c f15392e;
 
     private e() {
     }
 
     public static e a() {
-        if (f14602b == null) {
+        if (f15388b == null) {
             synchronized (e.class) {
                 try {
-                    if (f14602b == null) {
-                        f14602b = new e();
+                    if (f15388b == null) {
+                        f15388b = new e();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f14602b;
+        return f15388b;
     }
 
     public final void a(d dVar, d.a aVar) {
         com.anythink.core.common.m.d.a.c cVar;
         int c9 = dVar.c();
-        synchronized (f14603c) {
+        synchronized (f15389c) {
             try {
                 if (c9 == 6) {
-                    if (this.f14606e == null) {
-                        this.f14606e = new com.anythink.core.common.m.d.a.b();
+                    if (this.f15392e == null) {
+                        this.f15392e = new com.anythink.core.common.m.d.a.b();
                     }
-                    cVar = this.f14606e;
+                    cVar = this.f15392e;
                 } else {
-                    if (this.f14605d == null) {
-                        this.f14605d = new com.anythink.core.common.m.d.a.a();
+                    if (this.f15391d == null) {
+                        this.f15391d = new com.anythink.core.common.m.d.a.a();
                     }
-                    cVar = this.f14605d;
+                    cVar = this.f15391d;
                 }
             } catch (Throwable th) {
                 throw th;

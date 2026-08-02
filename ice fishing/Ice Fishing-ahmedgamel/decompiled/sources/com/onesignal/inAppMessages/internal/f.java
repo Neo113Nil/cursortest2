@@ -48,12 +48,12 @@ public final class f {
         this.name = str;
     }
 
-    public final void setUnique(boolean z3) {
-        this.isUnique = z3;
+    public final void setUnique(boolean z6) {
+        this.isUnique = z6;
     }
 
-    public final void setWeight(float f3) {
-        this.weight = f3;
+    public final void setWeight(float f2) {
+        this.weight = f2;
     }
 
     public final JSONObject toJSONObject() {

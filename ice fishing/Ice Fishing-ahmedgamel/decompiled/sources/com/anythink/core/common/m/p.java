@@ -3,6 +3,7 @@ package com.anythink.core.common.m;
 import android.content.Context;
 import com.anythink.core.api.AdError;
 import com.anythink.core.common.d.j;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.Map;
 
 /* loaded from: classes.dex */
@@ -53,7 +54,7 @@ public final class p extends a {
 
     @Override // com.anythink.core.common.m.a
     public final com.anythink.core.common.m.b.d m() {
-        return com.anythink.core.common.m.b.d.a(com.anythink.core.common.m.b.g.f14520c);
+        return com.anythink.core.common.m.b.d.a(com.anythink.core.common.m.b.g.f15306c);
     }
 
     @Override // com.anythink.core.common.m.a
@@ -67,10 +68,10 @@ public final class p extends a {
         String c9 = com.anythink.core.common.v.o.c(String.valueOf(currentTimeMillis));
         StringBuilder sb = new StringBuilder();
         com.anythink.core.common.i.a();
-        sb.append(com.anythink.core.common.i.l() ? j.e.f12428C : j.e.f12445k);
+        sb.append(com.anythink.core.common.i.l() ? j.e.f13214C : j.e.f13231k);
         sb.append("?t=");
         sb.append(currentTimeMillis);
-        return u1.h.g(sb, "&sign=", c9);
+        return Wv.i(sb, "&sign=", c9);
     }
 
     @Override // com.anythink.core.common.m.a

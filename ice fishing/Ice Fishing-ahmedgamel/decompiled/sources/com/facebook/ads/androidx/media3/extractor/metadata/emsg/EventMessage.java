@@ -4,17 +4,17 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.anythink.core.common.s.a.c;
 import com.facebook.ads.androidx.media3.common.Metadata;
-import com.instagram.common.viewpoint.core.C05912p;
-import com.instagram.common.viewpoint.core.C0969Hz;
-import com.instagram.common.viewpoint.core.C2400qI;
+import com.instagram.common.viewpoint.core.C06112p;
+import com.instagram.common.viewpoint.core.C0989Hz;
+import com.instagram.common.viewpoint.core.C2420qI;
 import com.instagram.common.viewpoint.core.C5C;
 import java.util.Arrays;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public final class EventMessage implements Metadata.Entry {
     public static byte[] A06;
-    public static final C2400qI A07;
-    public static final C2400qI A08;
+    public static final C2420qI A07;
+    public static final C2420qI A08;
     public static final Parcelable.Creator<EventMessage> CREATOR;
     public int A00;
     public final long A01;
@@ -23,23 +23,23 @@ public final class EventMessage implements Metadata.Entry {
     public final String A04;
     public final byte[] A05;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A06, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 121);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A06, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 121);
         }
         return new String(copyOfRange);
     }
 
     public static void A01() {
-        A06 = new byte[]{35, 47, 107, 122, 125, 110, 123, 102, 96, 97, 66, 124, 50, 6, 10, 67, 78, 23, 7, 11, 93, 74, 71, 94, 78, 22, 119, Byte.MAX_VALUE, 97, 117, 8, 18, 65, 81, 90, 87, 95, 87, 15, 56, 41, 41, 53, 48, 58, 56, 45, 48, 54, 55, 118, 48, 61, 106, 101, 116, 116, 104, 109, 103, 101, 112, 109, 107, 106, 43, 124, 41, 119, 103, 112, 97, 55, 49, 35, c.f16318c, c.f16318c, 59, 56, 113, 100, 100, 42, 36, 38, 46, 47, 34, 42, 101, 36, 57, 44, 100, 46, 38, 56, 44, 100, 2, 15, 120, 99, Byte.MAX_VALUE, Byte.MAX_VALUE, 123, 120, 49, 36, 36, 111, 110, 125, 110, 103, 100, 123, 110, 121, 37, 106, 123, 123, 103, 110, 37, 104, 100, 102, 36, 120, Byte.MAX_VALUE, 121, 110, 106, 102, 98, 101, 108, 36, 110, 102, 120, 108, 38, 98, 111, 56, 75, 76, 80, 4, 77, 93, 74, 91, 4, 77, 93, 74, 91, 13, 11, 4, 12, 14, 15, 10, 4, 92, 87, 80};
+        A06 = new byte[]{35, 47, 107, 122, 125, 110, 123, 102, 96, 97, 66, 124, 50, 6, 10, 67, 78, 23, 7, 11, 93, 74, 71, 94, 78, 22, 119, Byte.MAX_VALUE, 97, 117, 8, 18, 65, 81, 90, 87, 95, 87, 15, 56, 41, 41, 53, 48, 58, 56, 45, 48, 54, 55, 118, 48, 61, 106, 101, 116, 116, 104, 109, 103, 101, 112, 109, 107, 106, 43, 124, 41, 119, 103, 112, 97, 55, 49, 35, c.f17105c, c.f17105c, 59, 56, 113, 100, 100, 42, 36, 38, 46, 47, 34, 42, 101, 36, 57, 44, 100, 46, 38, 56, 44, 100, 2, 15, 120, 99, Byte.MAX_VALUE, Byte.MAX_VALUE, 123, 120, 49, 36, 36, 111, 110, 125, 110, 103, 100, 123, 110, 121, 37, 106, 123, 123, 103, 110, 37, 104, 100, 102, 36, 120, Byte.MAX_VALUE, 121, 110, 106, 102, 98, 101, 108, 36, 110, 102, 120, 108, 38, 98, 111, 56, 75, 76, 80, 4, 77, 93, 74, 91, 4, 77, 93, 74, 91, 13, 11, 4, 12, 14, 15, 10, 4, 92, 87, 80};
     }
 
     static {
         A01();
-        A07 = new C05912p().A11(A00(39, 15, 32)).A14();
-        A08 = new C05912p().A11(A00(54, 20, 125)).A14();
-        CREATOR = new C0969Hz();
+        A07 = new C06112p().A11(A00(39, 15, 32)).A14();
+        A08 = new C06112p().A11(A00(54, 20, 125)).A14();
+        CREATOR = new C0989Hz();
     }
 
     public EventMessage(Parcel parcel) {
@@ -68,7 +68,7 @@ public final class EventMessage implements Metadata.Entry {
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     @Override // com.facebook.ads.androidx.media3.common.Metadata.Entry
-    public final C2400qI A9b() {
+    public final C2420qI A9b() {
         char c9;
         String str = this.A03;
         switch (str.hashCode()) {

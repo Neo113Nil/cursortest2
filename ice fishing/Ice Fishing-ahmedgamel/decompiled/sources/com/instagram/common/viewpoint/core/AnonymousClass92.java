@@ -32,10 +32,10 @@ public final class AnonymousClass92 {
                 this.A03 = 0L;
                 this.A01 = -1L;
                 this.A02 = System.nanoTime() / 1000;
-                this.A04 = f.f7187a;
+                this.A04 = f.f7973a;
                 return;
             case 1:
-                this.A04 = f.f7187a;
+                this.A04 = f.f7973a;
                 return;
             case 2:
             case 3:
@@ -65,7 +65,7 @@ public final class AnonymousClass92 {
     }
 
     public final long A02() {
-        return this.A05 != null ? this.A05.A01() : b.f6382b;
+        return this.A05 != null ? this.A05.A01() : b.f7168b;
     }
 
     public final void A03() {

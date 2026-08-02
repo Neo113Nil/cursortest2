@@ -7,7 +7,7 @@ import com.anythink.core.api.AdError;
 
 /* loaded from: classes.dex */
 public abstract class ATInterstitialAutoEventListener {
-    public void onDeeplinkCallback(ATAdInfo aTAdInfo, boolean z3) {
+    public void onDeeplinkCallback(ATAdInfo aTAdInfo, boolean z6) {
     }
 
     public void onDownloadConfirm(Context context, ATAdInfo aTAdInfo, ATNetworkConfirmInfo aTNetworkConfirmInfo) {

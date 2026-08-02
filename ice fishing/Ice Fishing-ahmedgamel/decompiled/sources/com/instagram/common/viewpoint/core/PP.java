@@ -45,12 +45,12 @@ public final class PP {
     public final void A03(int i) {
         ViewParent A00 = A00(i);
         if (A00 != null) {
-            AbstractC1170Px.A02(A00, this.A04, i);
+            AbstractC1190Px.A02(A00, this.A04, i);
             A01(i, null);
         }
     }
 
-    public final void A04(boolean z3) {
+    public final void A04(boolean z6) {
         if (this.A02) {
             View view = this.A04;
             if (A05[0].length() != 25) {
@@ -61,7 +61,7 @@ public final class PP {
             strArr[7] = "EPAyi3E2WcCopkomgXFhWqOsQM7C57d6";
             Ph.A08(view);
         }
-        this.A02 = z3;
+        this.A02 = z6;
     }
 
     public final boolean A05() {
@@ -72,20 +72,20 @@ public final class PP {
         return this.A02;
     }
 
-    public final boolean A07(float f3, float f9) {
+    public final boolean A07(float f2, float f9) {
         ViewParent A00;
         if (!A06() || (A00 = A00(0)) == null) {
             return false;
         }
-        return AbstractC1170Px.A06(A00, this.A04, f3, f9);
+        return AbstractC1190Px.A06(A00, this.A04, f2, f9);
     }
 
-    public final boolean A08(float f3, float f9, boolean z3) {
+    public final boolean A08(float f2, float f9, boolean z6) {
         ViewParent A00;
         if (!A06() || (A00 = A00(0)) == null) {
             return false;
         }
-        return AbstractC1170Px.A07(A00, this.A04, f3, f9, z3);
+        return AbstractC1190Px.A07(A00, this.A04, f2, f9, z6);
     }
 
     public final boolean A09(int i) {
@@ -96,24 +96,24 @@ public final class PP {
         return A0B(i, 0);
     }
 
-    public final boolean A0B(int i, int i6) {
-        if (A09(i6)) {
+    public final boolean A0B(int i, int i4) {
+        if (A09(i4)) {
             return true;
         }
         if (A06()) {
             View view = this.A04;
             for (ViewParent parent = this.A04.getParent(); parent != null; parent = parent.getParent()) {
-                if (AbstractC1170Px.A08(parent, view, this.A04, i, i6)) {
-                    A01(i6, parent);
-                    AbstractC1170Px.A05(parent, view, this.A04, i, i6);
+                if (AbstractC1190Px.A08(parent, view, this.A04, i, i4)) {
+                    A01(i4, parent);
+                    AbstractC1190Px.A05(parent, view, this.A04, i, i4);
                     return true;
                 }
-                boolean z3 = parent instanceof View;
+                boolean z6 = parent instanceof View;
                 if (A05[1].length() != 5) {
                     throw new RuntimeException();
                 }
                 A05[0] = "7BAbpT06x25B1B2yqAUEO7iBu";
-                if (z3) {
+                if (z6) {
                     view = (View) parent;
                 }
             }
@@ -122,21 +122,21 @@ public final class PP {
         return false;
     }
 
-    public final boolean A0C(int i, int i6, int i9, int i10, int[] iArr) {
-        return A0D(i, i6, i9, i10, iArr, 0);
+    public final boolean A0C(int i, int i4, int i6, int i9, int[] iArr) {
+        return A0D(i, i4, i6, i9, iArr, 0);
     }
 
-    public final boolean A0D(int i, int i6, int startX, int startY, int[] iArr, int i9) {
+    public final boolean A0D(int i, int i4, int startX, int startY, int[] iArr, int i6) {
         ViewParent A00;
-        if (!A06() || (A00 = A00(i9)) == null) {
+        if (!A06() || (A00 = A00(i6)) == null) {
             return false;
         }
-        if (i != 0 || i6 != 0 || startX != 0 || startY != 0) {
-            int i10 = 0;
+        if (i != 0 || i4 != 0 || startX != 0 || startY != 0) {
+            int i9 = 0;
             int startY2 = 0;
             if (iArr != null) {
                 this.A04.getLocationInWindow(iArr);
-                i10 = iArr[0];
+                i9 = iArr[0];
                 startY2 = iArr[1];
             }
             View view = this.A04;
@@ -145,10 +145,10 @@ public final class PP {
                 throw new RuntimeException();
             }
             A05[0] = "CJefiU87NJ7XNqmbcPXjJdErx";
-            AbstractC1170Px.A03(A00, view, i, i6, startX, startY, i9);
+            AbstractC1190Px.A03(A00, view, i, i4, startX, startY, i6);
             if (iArr != null) {
                 this.A04.getLocationInWindow(iArr);
-                iArr[0] = iArr[0] - i10;
+                iArr[0] = iArr[0] - i9;
                 iArr[1] = iArr[1] - startY2;
             }
             return true;
@@ -160,8 +160,8 @@ public final class PP {
         return false;
     }
 
-    public final boolean A0E(int i, int i6, int[] iArr, int[] iArr2) {
-        return A0F(i, i6, iArr, iArr2, 0);
+    public final boolean A0E(int i, int i4, int[] iArr, int[] iArr2) {
+        return A0F(i, i4, iArr, iArr2, 0);
     }
 
     public final boolean A0F(int startX, int startY, int[] iArr, int[] iArr2, int i) {
@@ -171,12 +171,12 @@ public final class PP {
             return false;
         }
         if (startX != 0 || startY != 0) {
+            int i4 = 0;
             int i6 = 0;
-            int i9 = 0;
             if (iArr2 != null) {
                 this.A04.getLocationInWindow(iArr2);
-                i6 = iArr2[0];
-                i9 = iArr2[1];
+                i4 = iArr2[0];
+                i6 = iArr2[1];
             }
             if (consumed == null) {
                 int[] iArr3 = this.A03;
@@ -192,11 +192,11 @@ public final class PP {
             }
             consumed[0] = 0;
             consumed[1] = 0;
-            AbstractC1170Px.A04(parent, this.A04, startX, startY, consumed, i);
+            AbstractC1190Px.A04(parent, this.A04, startX, startY, consumed, i);
             if (iArr2 != null) {
                 this.A04.getLocationInWindow(iArr2);
-                iArr2[0] = iArr2[0] - i6;
-                iArr2[1] = iArr2[1] - i9;
+                iArr2[0] = iArr2[0] - i4;
+                iArr2[1] = iArr2[1] - i6;
             }
             return (consumed[0] == 0 && consumed[1] == 0) ? false : true;
         }

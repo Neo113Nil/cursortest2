@@ -13,108 +13,108 @@ import java.util.Objects;
 public final class U2 implements Q0 {
 
     /* renamed from: G, reason: collision with root package name */
-    public static final /* synthetic */ int f27849G = 0;
+    public static final /* synthetic */ int f28646G = 0;
 
     /* renamed from: A, reason: collision with root package name */
-    public int f27850A;
+    public int f28647A;
 
     /* renamed from: B, reason: collision with root package name */
-    public long f27851B;
+    public long f28648B;
 
     /* renamed from: C, reason: collision with root package name */
-    public S0 f27852C;
+    public S0 f28649C;
 
     /* renamed from: D, reason: collision with root package name */
-    public T2[] f27853D;
+    public T2[] f28650D;
 
     /* renamed from: E, reason: collision with root package name */
-    public long[][] f27854E;
+    public long[][] f28651E;
 
     /* renamed from: F, reason: collision with root package name */
-    public int f27855F;
+    public int f28652F;
 
     /* renamed from: a, reason: collision with root package name */
-    public final InterfaceC3814r3 f27856a;
+    public final InterfaceC3837r3 f28653a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f27857b;
+    public final int f28654b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Cr f27858c;
+    public final Cr f28655c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final Cr f27859d;
+    public final Cr f28656d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final Cr f27860e;
+    public final Cr f28657e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final Cr f27861f;
+    public final Cr f28658f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final ArrayDeque f27862g;
+    public final ArrayDeque f28659g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final X2 f27863h;
+    public final X2 f28660h;
     public final ArrayList i;
 
     /* renamed from: j, reason: collision with root package name */
-    public final ArrayList f27864j;
+    public final ArrayList f28661j;
 
     /* renamed from: k, reason: collision with root package name */
-    public final ArrayList f27865k;
+    public final ArrayList f28662k;
 
     /* renamed from: l, reason: collision with root package name */
-    public C3500lC f27866l;
+    public C3523lC f28663l;
 
     /* renamed from: m, reason: collision with root package name */
-    public int f27867m;
+    public int f28664m;
 
     /* renamed from: n, reason: collision with root package name */
-    public int f27868n;
+    public int f28665n;
 
     /* renamed from: o, reason: collision with root package name */
-    public long f27869o;
+    public long f28666o;
 
     /* renamed from: p, reason: collision with root package name */
-    public int f27870p;
+    public int f28667p;
 
     /* renamed from: q, reason: collision with root package name */
-    public Cr f27871q;
+    public Cr f28668q;
 
     /* renamed from: r, reason: collision with root package name */
-    public int f27872r;
+    public int f28669r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f27873s;
+    public int f28670s;
 
     /* renamed from: t, reason: collision with root package name */
-    public int f27874t;
+    public int f28671t;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f27875u;
+    public int f28672u;
 
     /* renamed from: v, reason: collision with root package name */
-    public boolean f27876v;
+    public boolean f28673v;
 
     /* renamed from: w, reason: collision with root package name */
-    public boolean f27877w;
+    public boolean f28674w;
 
     /* renamed from: x, reason: collision with root package name */
-    public boolean f27878x;
+    public boolean f28675x;
 
     /* renamed from: y, reason: collision with root package name */
-    public boolean f27879y;
+    public boolean f28676y;
 
     /* renamed from: z, reason: collision with root package name */
-    public int f27880z;
+    public int f28677z;
 
     static {
-        int i = AbstractC2639Kg.f25949M;
+        int i = AbstractC2659Kg.f26727M;
     }
 
     public U2() {
-        this(InterfaceC3814r3.m0, 16);
+        this(InterfaceC3837r3.f34276h0, 16);
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -135,359 +135,359 @@ public final class U2 implements Q0 {
     public final int a(R0 r02, U0 u02) {
         char c9;
         int i;
+        int i4;
+        boolean z6;
         int i6;
-        boolean z3;
-        int i9;
         long j6;
         char c10;
         char c11;
-        boolean z6;
-        int i10;
+        boolean z9;
+        int i9;
         while (true) {
-            int i11 = this.f27867m;
-            ArrayDeque arrayDeque = this.f27862g;
-            Cr cr = this.f27860e;
-            if (i11 == 0) {
-                int i12 = this.f27870p;
-                Cr cr2 = this.f27861f;
-                if (i12 == 0) {
-                    if (!r02.z(cr2.f24252a, 0, 8, true)) {
+            int i10 = this.f28664m;
+            ArrayDeque arrayDeque = this.f28659g;
+            Cr cr = this.f28657e;
+            if (i10 == 0) {
+                int i11 = this.f28667p;
+                Cr cr2 = this.f28658f;
+                if (i11 == 0) {
+                    if (!r02.A(cr2.f24997a, 0, 8, true)) {
                         return -1;
                     }
-                    this.f27870p = 8;
+                    this.f28667p = 8;
                     cr2.E(0);
-                    this.f27869o = cr2.P();
-                    this.f27868n = cr2.b();
+                    this.f28666o = cr2.P();
+                    this.f28665n = cr2.b();
                 }
-                long j9 = this.f27869o;
+                long j9 = this.f28666o;
                 if (j9 == 1) {
-                    r02.u(cr2.f24252a, 8, 8);
-                    this.f27870p += 8;
-                    this.f27869o = cr2.j();
+                    r02.u(cr2.f24997a, 8, 8);
+                    this.f28667p += 8;
+                    this.f28666o = cr2.j();
                 } else if (j9 == 0) {
                     long s9 = r02.s();
                     if (s9 == -1) {
                         Iw iw = (Iw) arrayDeque.peek();
-                        s9 = iw != null ? iw.f25619c : -1L;
+                        s9 = iw != null ? iw.f26372c : -1L;
                     }
                     if (s9 != -1) {
-                        this.f27869o = (s9 - r02.p()) + this.f27870p;
+                        this.f28666o = (s9 - r02.p()) + this.f28667p;
                     }
                 }
-                long j10 = this.f27869o;
-                int i13 = this.f27870p;
-                long j11 = i13;
+                long j10 = this.f28666o;
+                int i12 = this.f28667p;
+                long j11 = i12;
                 if (j10 < j11) {
-                    if (this.f27868n != 1718773093 || i13 != 8) {
+                    if (this.f28665n != 1718773093 || i12 != 8) {
                         break;
                     }
-                    this.f27869o = j11;
-                    i13 = 8;
+                    this.f28666o = j11;
+                    i12 = 8;
                 }
-                int i14 = this.f27868n;
-                if (i14 == 1836019574 || i14 == 1953653099 || i14 == 1835297121 || i14 == 1835626086 || i14 == 1937007212 || i14 == 1701082227 || i14 == 1835365473 || i14 == 1635284069 || i14 == 1953654118) {
+                int i13 = this.f28665n;
+                if (i13 == 1836019574 || i13 == 1953653099 || i13 == 1835297121 || i13 == 1835626086 || i13 == 1937007212 || i13 == 1701082227 || i13 == 1835365473 || i13 == 1635284069 || i13 == 1953654118) {
                     long p9 = r02.p();
-                    long j12 = this.f27869o;
+                    long j12 = this.f28666o;
                     long j13 = p9 + j12;
-                    long j14 = this.f27870p;
-                    if (j12 != j14 && this.f27868n == 1835365473) {
+                    long j14 = this.f28667p;
+                    if (j12 != j14 && this.f28665n == 1835365473) {
                         cr.y(8);
-                        r02.y(cr.f24252a, 0, 8);
+                        r02.x(cr.f24997a, 0, 8);
                         J2.f(cr);
-                        r02.v(cr.f24253b);
+                        r02.v(cr.f24998b);
                         r02.l();
                     }
                     long j15 = j13 - j14;
-                    arrayDeque.push(new Iw(this.f27868n, j15));
-                    if (this.f27869o == this.f27870p) {
+                    arrayDeque.push(new Iw(this.f28665n, j15));
+                    if (this.f28666o == this.f28667p) {
                         g(j15);
                     } else {
-                        this.f27867m = 0;
-                        this.f27870p = 0;
+                        this.f28664m = 0;
+                        this.f28667p = 0;
                     }
                 } else {
-                    if (i14 == 1835296868 || i14 == 1836476516 || i14 == 1751411826 || i14 == 1937011556 || i14 == 1937011827 || i14 == 1937011571 || i14 == 1668576371 || i14 == 1701606260 || i14 == 1937011555 || i14 == 1937011578 || i14 == 1937013298 || i14 == 1937007471 || i14 == 1668232756 || i14 == 1953196132 || i14 == 1718909296 || i14 == 1969517665 || i14 == 1801812339 || i14 == 1768715124 || i14 == 1667785072) {
-                        AbstractC2772Sd.H(i13 == 8);
-                        AbstractC2772Sd.H(this.f27869o <= 2147483647L);
-                        Cr cr3 = new Cr((int) this.f27869o);
-                        System.arraycopy(cr2.f24252a, 0, cr3.f24252a, 0, 8);
-                        this.f27871q = cr3;
+                    if (i13 == 1835296868 || i13 == 1836476516 || i13 == 1751411826 || i13 == 1937011556 || i13 == 1937011827 || i13 == 1937011571 || i13 == 1668576371 || i13 == 1701606260 || i13 == 1937011555 || i13 == 1937011578 || i13 == 1937013298 || i13 == 1937007471 || i13 == 1668232756 || i13 == 1953196132 || i13 == 1718909296 || i13 == 1969517665 || i13 == 1801812339 || i13 == 1768715124 || i13 == 1667785072) {
+                        AbstractC2792Sd.H(i12 == 8);
+                        AbstractC2792Sd.H(this.f28666o <= 2147483647L);
+                        Cr cr3 = new Cr((int) this.f28666o);
+                        System.arraycopy(cr2.f24997a, 0, cr3.f24997a, 0, 8);
+                        this.f28668q = cr3;
                     } else {
-                        this.f27871q = null;
+                        this.f28668q = null;
                     }
-                    this.f27867m = 1;
+                    this.f28664m = 1;
                 }
             } else {
-                if (i11 != 1) {
-                    if (i11 == 2) {
+                if (i10 != 1) {
+                    if (i10 == 2) {
                         long p10 = r02.p();
-                        int i15 = this.f27872r;
-                        if (i15 == -1) {
-                            int i16 = 0;
-                            boolean z9 = true;
+                        int i14 = this.f28669r;
+                        if (i14 == -1) {
+                            int i15 = 0;
                             boolean z10 = true;
+                            boolean z11 = true;
+                            int i16 = -1;
                             int i17 = -1;
-                            int i18 = -1;
                             long j16 = Long.MAX_VALUE;
                             long j17 = Long.MAX_VALUE;
                             long j18 = Long.MAX_VALUE;
                             while (true) {
-                                T2[] t2Arr = this.f27853D;
-                                if (i16 >= t2Arr.length) {
+                                T2[] t2Arr = this.f28650D;
+                                if (i15 >= t2Arr.length) {
                                     break;
                                 }
-                                T2 t22 = t2Arr[i16];
-                                int i19 = t22.f27682e;
-                                C3008c3 c3008c3 = t22.f27679b;
-                                if (i19 != c3008c3.f29417b) {
-                                    long j19 = c3008c3.f29418c[i19];
-                                    long[][] jArr = this.f27854E;
+                                T2 t22 = t2Arr[i15];
+                                int i18 = t22.f28465e;
+                                C3031c3 c3031c3 = t22.f28462b;
+                                if (i18 != c3031c3.f30200b) {
+                                    long j19 = c3031c3.f30201c[i18];
+                                    long[][] jArr = this.f28651E;
                                     jArr.getClass();
-                                    long j20 = jArr[i16][i19];
+                                    long j20 = jArr[i15][i18];
                                     long j21 = j19 - p10;
-                                    boolean z11 = j21 < 0 || j21 >= 262144;
-                                    if (z11) {
-                                        z3 = z10;
+                                    boolean z12 = j21 < 0 || j21 >= 262144;
+                                    if (z12) {
+                                        z6 = z11;
                                     } else {
-                                        if (!z10) {
-                                            z3 = false;
+                                        if (!z11) {
+                                            z6 = false;
                                         }
-                                        i18 = i16;
-                                        z3 = z11;
+                                        i17 = i15;
+                                        z6 = z12;
                                         j18 = j21;
                                         j17 = j20;
                                         if (j20 >= j16) {
-                                            i17 = i16;
-                                            z9 = z11;
-                                            z10 = z3;
+                                            i16 = i15;
+                                            z10 = z12;
+                                            z11 = z6;
                                             j16 = j20;
                                         } else {
-                                            z10 = z3;
+                                            z11 = z6;
                                         }
                                     }
-                                    if (z11 == z3) {
+                                    if (z12 == z6) {
                                     }
                                     if (j20 >= j16) {
                                     }
                                 }
-                                i16++;
+                                i15++;
                             }
-                            i15 = (j16 == Long.MAX_VALUE || !z9 || j17 < j16 + 10485760) ? i18 : i17;
-                            this.f27872r = i15;
-                            if (i15 == -1) {
+                            i14 = (j16 == Long.MAX_VALUE || !z10 || j17 < j16 + 10485760) ? i17 : i16;
+                            this.f28669r = i14;
+                            if (i14 == -1) {
                                 return -1;
                             }
                         }
-                        T2 t23 = this.f27853D[i15];
-                        InterfaceC3543m1 interfaceC3543m1 = t23.f27680c;
-                        int i20 = t23.f27682e;
-                        C3008c3 c3008c32 = t23.f27679b;
-                        long j22 = this.f27851B + c3008c32.f29418c[i20];
-                        int[] iArr = c3008c32.f29419d;
-                        int i21 = iArr[i20];
-                        long j23 = (j22 - p10) + this.f27873s;
+                        T2 t23 = this.f28650D[i14];
+                        InterfaceC3566m1 interfaceC3566m1 = t23.f28463c;
+                        int i19 = t23.f28465e;
+                        C3031c3 c3031c32 = t23.f28462b;
+                        long j22 = this.f28648B + c3031c32.f30201c[i19];
+                        int[] iArr = c3031c32.f30202d;
+                        int i20 = iArr[i19];
+                        long j23 = (j22 - p10) + this.f28670s;
                         if (j23 < 0 || j23 >= 262144) {
-                            u02.f27844n = j22;
+                            u02.f28641n = j22;
                             return 1;
                         }
-                        Z2 z22 = t23.f27678a;
-                        if (z22.f28829h == 1) {
+                        Z2 z22 = t23.f28461a;
+                        if (z22.f29609h == 1) {
                             j23 += 8;
-                            i21 -= 8;
+                            i20 -= 8;
                         }
-                        int i22 = i21;
+                        int i21 = i20;
                         r02.v((int) j23);
-                        DP dp = z22.f28828g;
-                        String str = dp.f24431o;
-                        boolean equals = Objects.equals(str, com.anythink.basead.exoplayer.k.o.f8451h);
-                        int i23 = this.f27857b;
-                        if (!equals ? !Objects.equals(str, com.anythink.basead.exoplayer.k.o.i) ? Objects.equals(str, "video/apv") : (i23 & 128) != 0 : (i23 & 32) != 0) {
+                        DP dp = z22.f29608g;
+                        String str = dp.f25176o;
+                        boolean equals = Objects.equals(str, com.anythink.basead.exoplayer.k.o.f9237h);
+                        int i22 = this.f28654b;
+                        if (!equals ? !Objects.equals(str, com.anythink.basead.exoplayer.k.o.i) ? Objects.equals(str, "video/apv") : (i22 & 128) != 0 : (i22 & 32) != 0) {
                             c9 = 1;
                         } else {
                             c9 = 1;
-                            this.f27876v = true;
+                            this.f28673v = true;
                         }
-                        C3597n1 c3597n1 = t23.f27681d;
-                        int i24 = z22.f28831k;
-                        if (i24 == 0) {
-                            DP dp2 = t23.f27683f;
+                        C3620n1 c3620n1 = t23.f28464d;
+                        int i23 = z22.f29611k;
+                        if (i23 == 0) {
+                            DP dp2 = t23.f28466f;
                             if ("audio/ac4".equals(str)) {
-                                if (this.f27874t == 0) {
-                                    MA.z(i22, cr);
-                                    interfaceC3543m1.a(7, cr);
-                                    this.f27874t += 7;
+                                if (this.f28671t == 0) {
+                                    MA.z(i21, cr);
+                                    interfaceC3566m1.a(7, cr);
+                                    this.f28671t += 7;
                                 }
-                                i22 += 7;
-                            } else if (dp2 != null && Objects.equals(str, com.anythink.basead.exoplayer.k.o.f8462t)) {
+                                i21 += 7;
+                            } else if (dp2 != null && Objects.equals(str, com.anythink.basead.exoplayer.k.o.f9248t)) {
                                 cr.y(4);
-                                r02.y(cr.f24252a, 0, 4);
+                                r02.x(cr.f24997a, 0, 4);
                                 r02.l();
-                                C3006c1 c3006c1 = new C3006c1();
-                                if (c3006c1.a(cr.b()) && !Objects.equals(dp2.f24431o, (String) c3006c1.f29414g)) {
-                                    C3299hP c3299hP = new C3299hP(dp2);
-                                    String str2 = (String) c3006c1.f29414g;
+                                C3029c1 c3029c1 = new C3029c1();
+                                if (c3029c1.a(cr.b()) && !Objects.equals(dp2.f25176o, (String) c3029c1.f30197g)) {
+                                    C3322hP c3322hP = new C3322hP(dp2);
+                                    String str2 = (String) c3029c1.f30197g;
                                     str2.getClass();
-                                    c3299hP.e(str2);
-                                    dp2 = new DP(c3299hP);
+                                    c3322hP.e(str2);
+                                    dp2 = new DP(c3322hP);
                                 }
-                                interfaceC3543m1.e(dp2);
-                                t23.f27683f = null;
-                            } else if (dp2 != null && AbstractC2968bG.n(str)) {
-                                interfaceC3543m1.e(AbstractC2968bG.P(r02, i22, dp2));
-                                t23.f27683f = null;
-                            } else if (c3597n1 != null) {
-                                c3597n1.a(r02);
+                                interfaceC3566m1.e(dp2);
+                                t23.f28466f = null;
+                            } else if (dp2 != null && AbstractC2991bG.n(str)) {
+                                interfaceC3566m1.e(AbstractC2991bG.P(r02, i21, dp2));
+                                t23.f28466f = null;
+                            } else if (c3620n1 != null) {
+                                c3620n1.a(r02);
                             }
                             while (true) {
-                                int i25 = this.f27874t;
-                                if (i25 >= i22) {
+                                int i24 = this.f28671t;
+                                if (i24 >= i21) {
                                     break;
                                 }
-                                int d2 = interfaceC3543m1.d(r02, i22 - i25, false);
-                                this.f27873s += d2;
-                                this.f27874t += d2;
-                                this.f27875u -= d2;
+                                int d9 = interfaceC3566m1.d(r02, i21 - i24, false);
+                                this.f28670s += d9;
+                                this.f28671t += d9;
+                                this.f28672u -= d9;
                             }
                         } else {
-                            Cr cr4 = this.f27859d;
-                            byte[] bArr = cr4.f24252a;
+                            Cr cr4 = this.f28656d;
+                            byte[] bArr = cr4.f24997a;
                             bArr[0] = 0;
                             bArr[c9] = 0;
                             bArr[2] = 0;
-                            int i26 = 4 - i24;
-                            i22 += i26;
-                            while (this.f27874t < i22) {
-                                int i27 = this.f27875u;
-                                if (i27 == 0) {
-                                    if (this.f27876v || SK.x(dp) + i24 > iArr[i20] - this.f27873s) {
-                                        i = i24;
-                                        i6 = 0;
+                            int i25 = 4 - i23;
+                            i21 += i25;
+                            while (this.f28671t < i21) {
+                                int i26 = this.f28672u;
+                                if (i26 == 0) {
+                                    if (this.f28673v || SK.x(dp) + i23 > iArr[i19] - this.f28670s) {
+                                        i = i23;
+                                        i4 = 0;
                                     } else {
                                         int x9 = SK.x(dp);
-                                        i = i24 + x9;
-                                        i6 = x9;
+                                        i = i23 + x9;
+                                        i4 = x9;
                                     }
-                                    r02.u(bArr, i26, i);
-                                    this.f27873s += i;
+                                    r02.u(bArr, i25, i);
+                                    this.f28670s += i;
                                     cr4.E(0);
                                     int b9 = cr4.b();
                                     if (b9 < 0) {
                                         throw U4.a(null, "Invalid NAL length");
                                     }
-                                    this.f27875u = b9 - i6;
-                                    Cr cr5 = this.f27858c;
+                                    this.f28672u = b9 - i4;
+                                    Cr cr5 = this.f28655c;
                                     cr5.E(0);
-                                    interfaceC3543m1.a(4, cr5);
-                                    this.f27874t += 4;
-                                    if (i6 > 0) {
-                                        interfaceC3543m1.a(i6, cr4);
-                                        this.f27874t += i6;
-                                        if (SK.G(bArr, i6, dp)) {
-                                            this.f27876v = true;
+                                    interfaceC3566m1.a(4, cr5);
+                                    this.f28671t += 4;
+                                    if (i4 > 0) {
+                                        interfaceC3566m1.a(i4, cr4);
+                                        this.f28671t += i4;
+                                        if (SK.G(bArr, i4, dp)) {
+                                            this.f28673v = true;
                                         }
                                     }
                                 } else {
-                                    int d9 = interfaceC3543m1.d(r02, i27, false);
-                                    this.f27873s += d9;
-                                    this.f27874t += d9;
-                                    this.f27875u -= d9;
+                                    int d10 = interfaceC3566m1.d(r02, i26, false);
+                                    this.f28670s += d10;
+                                    this.f28671t += d10;
+                                    this.f28672u -= d10;
                                 }
                             }
                         }
-                        int i28 = i22;
-                        long j24 = c3008c32.f29421f[i20];
-                        int i29 = c3008c32.f29422g[i20];
-                        if (!this.f27876v) {
-                            i29 |= 67108864;
+                        int i27 = i21;
+                        long j24 = c3031c32.f30204f[i19];
+                        int i28 = c3031c32.f30205g[i19];
+                        if (!this.f28673v) {
+                            i28 |= 67108864;
                         }
-                        int i30 = i29;
-                        if (c3597n1 != null) {
-                            c3597n1.b(interfaceC3543m1, j24, i30, i28, 0, null);
-                            if (i20 + 1 == c3008c32.f29417b) {
-                                c3597n1.c(interfaceC3543m1, null);
+                        int i29 = i28;
+                        if (c3620n1 != null) {
+                            c3620n1.b(interfaceC3566m1, j24, i29, i27, 0, null);
+                            if (i19 + 1 == c3031c32.f30200b) {
+                                c3620n1.c(interfaceC3566m1, null);
                             }
                         } else {
-                            interfaceC3543m1.c(j24, i30, i28, 0, null);
+                            interfaceC3566m1.c(j24, i29, i27, 0, null);
                         }
-                        t23.f27682e++;
-                        this.f27872r = -1;
-                        this.f27873s = 0;
-                        this.f27874t = 0;
-                        this.f27875u = 0;
-                        this.f27876v = false;
+                        t23.f28465e++;
+                        this.f28669r = -1;
+                        this.f28670s = 0;
+                        this.f28671t = 0;
+                        this.f28672u = 0;
+                        this.f28673v = false;
                         return 0;
                     }
-                    if (i11 != 3) {
-                        ArrayList arrayList = this.f27864j;
-                        C3008c3 c3008c33 = (C3008c3) arrayList.get(this.f27880z);
-                        int i31 = this.f27850A;
-                        int i32 = c3008c33.f29417b;
-                        ArrayList arrayList2 = this.f27865k;
-                        if (i31 < i32) {
-                            long j25 = c3008c33.f29418c[i31];
+                    if (i10 != 3) {
+                        ArrayList arrayList = this.f28661j;
+                        C3031c3 c3031c33 = (C3031c3) arrayList.get(this.f28677z);
+                        int i30 = this.f28647A;
+                        int i31 = c3031c33.f30200b;
+                        ArrayList arrayList2 = this.f28662k;
+                        if (i30 < i31) {
+                            long j25 = c3031c33.f30201c[i30];
                             if (r02.p() != j25) {
-                                u02.f27844n = j25;
+                                u02.f28641n = j25;
                                 return 1;
                             }
-                            int i33 = c3008c33.f29419d[this.f27850A];
-                            cr.y(i33);
-                            r02.u(cr.f24252a, 0, i33);
+                            int i32 = c3031c33.f30202d[this.f28647A];
+                            cr.y(i32);
+                            r02.u(cr.f24997a, 0, i32);
                             String k9 = cr.k(Math.min(cr.L(), cr.B()), StandardCharsets.UTF_8);
-                            int i34 = this.f27850A;
-                            long[] jArr2 = c3008c33.f29421f;
-                            long t6 = AbstractC3159eu.t(jArr2[i34]);
-                            int i35 = this.f27850A + 1;
-                            arrayList2.add(new O1(t6, i35 < i32 ? AbstractC3159eu.t(jArr2[i35]) : AbstractC3159eu.t(c3008c33.i), false, new C3138eQ(null, k9)));
-                            this.f27850A++;
+                            int i33 = this.f28647A;
+                            long[] jArr2 = c3031c33.f30204f;
+                            long t6 = AbstractC3182eu.t(jArr2[i33]);
+                            int i34 = this.f28647A + 1;
+                            arrayList2.add(new O1(t6, i34 < i31 ? AbstractC3182eu.t(jArr2[i34]) : AbstractC3182eu.t(c3031c33.i), false, new C3323hQ(null, k9)));
+                            this.f28647A++;
                             return 0;
                         }
-                        for (T2 t24 : this.f27853D) {
-                            if (t24.f27678a.f28832l == c3008c33.f29416a.f28822a) {
-                                DP dp3 = t24.f27683f;
+                        for (T2 t24 : this.f28650D) {
+                            if (t24.f28461a.f29612l == c3031c33.f30199a.f29602a) {
+                                DP dp3 = t24.f28466f;
                                 dp3.getClass();
                                 ArrayList arrayList3 = new ArrayList();
-                                O3 o32 = dp3.f24428l;
+                                O3 o32 = dp3.f25173l;
                                 if (o32 != null) {
-                                    arrayList3.addAll(o32.a(InterfaceC3922t3.class, Y0.f28629w));
+                                    arrayList3.addAll(o32.a(InterfaceC3945t3.class, Y0.f29406w));
                                 }
                                 arrayList3.addAll(arrayList2);
-                                C3299hP c3299hP2 = new C3299hP(dp3);
-                                c3299hP2.f30789k = new O3(arrayList3);
-                                DP dp4 = new DP(c3299hP2);
-                                String str3 = dp4.f24431o;
-                                if (Objects.equals(str3, com.anythink.basead.exoplayer.k.o.f8462t) || AbstractC2968bG.n(str3)) {
-                                    t24.f27683f = dp4;
+                                C3322hP c3322hP2 = new C3322hP(dp3);
+                                c3322hP2.f31555k = new O3(arrayList3);
+                                DP dp4 = new DP(c3322hP2);
+                                String str3 = dp4.f25176o;
+                                if (Objects.equals(str3, com.anythink.basead.exoplayer.k.o.f9248t) || AbstractC2991bG.n(str3)) {
+                                    t24.f28466f = dp4;
                                 } else {
-                                    t24.f27680c.e(dp4);
-                                    t24.f27683f = null;
+                                    t24.f28463c.e(dp4);
+                                    t24.f28466f = null;
                                 }
                             }
                         }
-                        this.f27880z++;
-                        this.f27850A = 0;
+                        this.f28677z++;
+                        this.f28647A = 0;
                         arrayList2.clear();
-                        if (this.f27880z != arrayList.size()) {
+                        if (this.f28677z != arrayList.size()) {
                             return 0;
                         }
-                        this.f27867m = 2;
+                        this.f28664m = 2;
                         return 0;
                     }
                     ArrayList arrayList4 = this.i;
-                    X2 x22 = this.f27863h;
-                    int i36 = x22.f28474b;
-                    if (i36 != 0) {
-                        if (i36 != 1) {
-                            ArrayList arrayList5 = x22.f28473a;
-                            int i37 = 8;
+                    X2 x22 = this.f28660h;
+                    int i35 = x22.f29254b;
+                    if (i35 != 0) {
+                        if (i35 != 1) {
+                            ArrayList arrayList5 = x22.f29253a;
+                            int i36 = 8;
                             short s10 = 2817;
-                            if (i36 != 2) {
+                            if (i35 != 2) {
                                 long p11 = r02.p();
-                                int s11 = (int) ((r02.s() - r02.p()) - x22.f28475c);
+                                int s11 = (int) ((r02.s() - r02.p()) - x22.f29255c);
                                 Cr cr6 = new Cr(s11);
-                                r02.u(cr6.f24252a, 0, s11);
-                                for (int i38 = 0; i38 < arrayList5.size(); i38++) {
-                                    W2 w22 = (W2) arrayList5.get(i38);
-                                    cr6.E((int) (w22.f28308a - p11));
+                                r02.u(cr6.f24997a, 0, s11);
+                                for (int i37 = 0; i37 < arrayList5.size(); i37++) {
+                                    W2 w22 = (W2) arrayList5.get(i37);
+                                    cr6.E((int) (w22.f29106a - p11));
                                     cr6.G(4);
                                     int c12 = cr6.c();
                                     Charset charset = StandardCharsets.UTF_8;
@@ -546,103 +546,103 @@ public final class U2 implements Q0 {
                                         }
                                         c11 = 2820;
                                     }
-                                    int i39 = w22.f28309b - (c12 + 8);
+                                    int i38 = w22.f29107b - (c12 + 8);
                                     if (c11 == 2192) {
                                         ArrayList arrayList6 = new ArrayList();
-                                        List q8 = X2.f28472e.q(cr6.k(i39, charset));
-                                        int i40 = 0;
-                                        while (i40 < q8.size()) {
-                                            List q9 = X2.f28471d.q((CharSequence) q8.get(i40));
+                                        List q8 = X2.f29252e.q(cr6.k(i38, charset));
+                                        int i39 = 0;
+                                        while (i39 < q8.size()) {
+                                            List q9 = X2.f29251d.q((CharSequence) q8.get(i39));
                                             if (q9.size() != 3) {
                                                 throw U4.a(null, null);
                                             }
                                             try {
                                                 ArrayList arrayList7 = arrayList6;
-                                                arrayList7.add(new C3330i2(1 << (Integer.parseInt((String) q9.get(2)) - 1), Long.parseLong((String) q9.get(0)), Long.parseLong((String) q9.get(1))));
-                                                i40++;
+                                                arrayList7.add(new C3353i2(1 << (Integer.parseInt((String) q9.get(2)) - 1), Long.parseLong((String) q9.get(0)), Long.parseLong((String) q9.get(1))));
+                                                i39++;
                                                 arrayList6 = arrayList7;
                                             } catch (NumberFormatException e9) {
                                                 throw U4.a(e9, null);
                                             }
                                         }
-                                        arrayList4.add(new C3382j2(arrayList6));
+                                        arrayList4.add(new C3405j2(arrayList6));
                                     } else if (c11 != 2816 && c11 != 2817 && c11 != 2819 && c11 != 2820) {
                                         throw new IllegalStateException();
                                     }
                                 }
-                                u02.f27844n = 0L;
+                                u02.f28641n = 0L;
                             } else {
                                 long s12 = r02.s();
-                                int i41 = x22.f28475c - 20;
-                                Cr cr7 = new Cr(i41);
-                                r02.u(cr7.f24252a, 0, i41);
-                                int i42 = 0;
-                                while (i42 < i41 / 12) {
+                                int i40 = x22.f29255c - 20;
+                                Cr cr7 = new Cr(i40);
+                                r02.u(cr7.f24997a, 0, i40);
+                                int i41 = 0;
+                                while (i41 < i40 / 12) {
                                     cr7.G(2);
                                     cr7.v(2);
-                                    byte[] bArr2 = cr7.f24252a;
-                                    int i43 = cr7.f24253b;
-                                    int i44 = i43 + 1;
-                                    cr7.f24253b = i44;
-                                    int i45 = bArr2[i43] & 255;
-                                    cr7.f24253b = i43 + 2;
-                                    short s13 = (short) (((bArr2[i44] & 255) << 8) | i45);
+                                    byte[] bArr2 = cr7.f24997a;
+                                    int i42 = cr7.f24998b;
+                                    int i43 = i42 + 1;
+                                    cr7.f24998b = i43;
+                                    int i44 = bArr2[i42] & 255;
+                                    cr7.f24998b = i42 + 2;
+                                    short s13 = (short) (((bArr2[i43] & 255) << 8) | i44);
                                     if (s13 != 2192 && s13 != 2816 && s13 != s10 && s13 != 2819) {
                                         if (s13 != 2820) {
-                                            cr7.G(i37);
+                                            cr7.G(i36);
                                             j6 = s12;
-                                            i42++;
+                                            i41++;
                                             s12 = j6;
                                             s10 = 2817;
-                                            i37 = 8;
+                                            i36 = 8;
                                         }
                                     }
                                     j6 = s12;
-                                    arrayList5.add(new W2((j6 - x22.f28475c) - cr7.c(), cr7.c()));
-                                    i42++;
+                                    arrayList5.add(new W2((j6 - x22.f29255c) - cr7.c(), cr7.c()));
+                                    i41++;
                                     s12 = j6;
                                     s10 = 2817;
-                                    i37 = 8;
+                                    i36 = 8;
                                 }
                                 if (arrayList5.isEmpty()) {
-                                    u02.f27844n = 0L;
+                                    u02.f28641n = 0L;
                                 } else {
-                                    x22.f28474b = 3;
-                                    u02.f27844n = ((W2) arrayList5.get(0)).f28308a;
+                                    x22.f29254b = 3;
+                                    u02.f28641n = ((W2) arrayList5.get(0)).f29106a;
                                 }
                             }
                         } else {
                             Cr cr8 = new Cr(8);
-                            r02.u(cr8.f24252a, 0, 8);
-                            x22.f28475c = cr8.c() + 8;
+                            r02.u(cr8.f24997a, 0, 8);
+                            x22.f29255c = cr8.c() + 8;
                             if (cr8.b() != 1397048916) {
-                                u02.f27844n = 0L;
+                                u02.f28641n = 0L;
                             } else {
-                                u02.f27844n = r02.p() - (x22.f28475c - 12);
-                                x22.f28474b = 2;
+                                u02.f28641n = r02.p() - (x22.f29255c - 12);
+                                x22.f29254b = 2;
                             }
                         }
-                        i9 = 1;
+                        i6 = 1;
                     } else {
                         long s14 = r02.s();
-                        u02.f27844n = (s14 == -1 || s14 < 8) ? 0L : s14 - 8;
-                        i9 = 1;
-                        x22.f28474b = 1;
+                        u02.f28641n = (s14 == -1 || s14 < 8) ? 0L : s14 - 8;
+                        i6 = 1;
+                        x22.f29254b = 1;
                     }
-                    if (u02.f27844n != 0) {
-                        return i9;
+                    if (u02.f28641n != 0) {
+                        return i6;
                     }
-                    this.f27867m = 0;
-                    this.f27870p = 0;
-                    return i9;
+                    this.f28664m = 0;
+                    this.f28667p = 0;
+                    return i6;
                 }
-                long j26 = this.f27869o - this.f27870p;
+                long j26 = this.f28666o - this.f28667p;
                 long p12 = r02.p() + j26;
-                Cr cr9 = this.f27871q;
+                Cr cr9 = this.f28668q;
                 if (cr9 != null) {
-                    r02.u(cr9.f24252a, this.f27870p, (int) j26);
-                    if (this.f27868n == 1718909296) {
-                        this.f27877w = true;
+                    r02.u(cr9.f24997a, this.f28667p, (int) j26);
+                    if (this.f28665n == 1718909296) {
+                        this.f28674w = true;
                         cr9.E(8);
                         if (cr9.b() != 1903435808) {
                             cr9.G(4);
@@ -650,41 +650,41 @@ public final class U2 implements Q0 {
                                 if (cr9.b() != 1903435808) {
                                 }
                             }
-                            i10 = 0;
-                            this.f27855F = i10;
+                            i9 = 0;
+                            this.f28652F = i9;
                         }
-                        i10 = 1;
-                        this.f27855F = i10;
+                        i9 = 1;
+                        this.f28652F = i9;
                     } else if (!arrayDeque.isEmpty()) {
-                        ((Iw) arrayDeque.peek()).f25620d.add(new Zw(this.f27868n, cr9));
+                        ((Iw) arrayDeque.peek()).f26373d.add(new Zw(this.f28665n, cr9));
                     }
                 } else {
-                    if (!this.f27877w && this.f27868n == 1835295092) {
-                        this.f27855F = 1;
+                    if (!this.f28674w && this.f28665n == 1835295092) {
+                        this.f28652F = 1;
                     }
                     if (j26 < 262144) {
                         r02.v((int) j26);
                     } else {
-                        u02.f27844n = r02.p() + j26;
-                        z6 = true;
+                        u02.f28641n = r02.p() + j26;
+                        z9 = true;
                         g(p12);
-                        if (!this.f27878x) {
-                            this.f27879y = true;
-                            u02.f27844n = 0L;
-                            this.f27878x = false;
-                        } else if (!z6) {
+                        if (!this.f28675x) {
+                            this.f28676y = true;
+                            u02.f28641n = 0L;
+                            this.f28675x = false;
+                        } else if (!z9) {
                             continue;
                         }
-                        if (this.f27867m == 2) {
+                        if (this.f28664m == 2) {
                             return 1;
                         }
                     }
                 }
-                z6 = false;
+                z9 = false;
                 g(p12);
-                if (!this.f27878x) {
+                if (!this.f28675x) {
                 }
-                if (this.f27867m == 2) {
+                if (this.f28664m == 2) {
                 }
             }
         }
@@ -693,65 +693,65 @@ public final class U2 implements Q0 {
 
     @Override // com.google.android.gms.internal.ads.Q0
     public final void b(S0 s02) {
-        if ((this.f27857b & 16) == 0) {
-            s02 = new com.bumptech.glide.manager.o(s02, this.f27856a);
+        if ((this.f28654b & 16) == 0) {
+            s02 = new com.bumptech.glide.manager.n(s02, this.f28653a);
         }
-        this.f27852C = s02;
+        this.f28649C = s02;
     }
 
     @Override // com.google.android.gms.internal.ads.Q0
     public final void c(long j6, long j9) {
-        this.f27862g.clear();
-        this.f27870p = 0;
-        this.f27872r = -1;
-        this.f27873s = 0;
-        this.f27874t = 0;
-        this.f27875u = 0;
-        this.f27876v = false;
-        this.f27880z = 0;
-        this.f27850A = 0;
-        this.f27864j.clear();
-        this.f27865k.clear();
+        this.f28659g.clear();
+        this.f28667p = 0;
+        this.f28669r = -1;
+        this.f28670s = 0;
+        this.f28671t = 0;
+        this.f28672u = 0;
+        this.f28673v = false;
+        this.f28677z = 0;
+        this.f28647A = 0;
+        this.f28661j.clear();
+        this.f28662k.clear();
         if (j6 == 0) {
-            if (this.f27867m != 3) {
-                this.f27867m = 0;
-                this.f27870p = 0;
+            if (this.f28664m != 3) {
+                this.f28664m = 0;
+                this.f28667p = 0;
                 return;
             } else {
-                X2 x22 = this.f27863h;
-                x22.f28473a.clear();
-                x22.f28474b = 0;
+                X2 x22 = this.f28660h;
+                x22.f29253a.clear();
+                x22.f29254b = 0;
                 this.i.clear();
                 return;
             }
         }
-        for (T2 t22 : this.f27853D) {
-            C3008c3 c3008c3 = t22.f27679b;
-            int a9 = c3008c3.a(j9);
+        for (T2 t22 : this.f28650D) {
+            C3031c3 c3031c3 = t22.f28462b;
+            int a9 = c3031c3.a(j9);
             if (a9 == -1) {
-                a9 = c3008c3.b(j9);
+                a9 = c3031c3.b(j9);
             }
-            t22.f27682e = a9;
-            C3597n1 c3597n1 = t22.f27681d;
-            if (c3597n1 != null) {
-                c3597n1.f32658b = false;
-                c3597n1.f32659c = 0;
+            t22.f28465e = a9;
+            C3620n1 c3620n1 = t22.f28464d;
+            if (c3620n1 != null) {
+                c3620n1.f33436b = false;
+                c3620n1.f33437c = 0;
             }
         }
     }
 
     @Override // com.google.android.gms.internal.ads.Q0
     public final boolean d(R0 r02) {
-        C3500lC c3500lC;
-        InterfaceC3329i1 u3 = AbstractC2639Kg.u(r02, false);
-        if (u3 != null) {
-            c3500lC = RB.j(u3);
+        C3523lC c3523lC;
+        InterfaceC3352i1 u6 = AbstractC2659Kg.u(r02, false);
+        if (u6 != null) {
+            c3523lC = RB.j(u6);
         } else {
-            PB pb = RB.f27177u;
-            c3500lC = C3500lC.f31745x;
+            PB pb = RB.f27933u;
+            c3523lC = C3523lC.f32525x;
         }
-        this.f27866l = c3500lC;
-        return u3 == null;
+        this.f28663l = c3523lC;
+        return u6 == null;
     }
 
     @Override // com.google.android.gms.internal.ads.Q0
@@ -760,16 +760,16 @@ public final class U2 implements Q0 {
 
     @Override // com.google.android.gms.internal.ads.Q0
     public final /* synthetic */ List f() {
-        return this.f27866l;
+        return this.f28663l;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:19:0x006b, code lost:
     
-        if (((com.google.android.gms.internal.ads.C3591mw) r1).f32627a.equals("auxiliary.tracks.interleaved") != false) goto L23;
+        if (((com.google.android.gms.internal.ads.C3668nw) r1).f33595a.equals("auxiliary.tracks.interleaved") != false) goto L23;
      */
     /* JADX WARN: Code restructure failed: missing block: B:33:0x00aa, code lost:
     
-        if (((com.google.android.gms.internal.ads.C3591mw) r12).f32627a.equals("auxiliary.tracks.map") != false) goto L40;
+        if (((com.google.android.gms.internal.ads.C3668nw) r12).f33595a.equals("auxiliary.tracks.map") != false) goto L40;
      */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:160:0x0303  */
@@ -793,101 +793,101 @@ public final class U2 implements Q0 {
         ArrayList arrayList2;
         ArrayList arrayList3;
         ArrayList arrayList4;
-        int i6;
+        int i4;
         long j10;
-        int i9;
+        int i6;
         O3 o34;
         O3 o35;
         DP dp;
         Z2 z22;
+        int i9;
         int i10;
         int i11;
-        int i12;
         T2 t22;
         ArrayList arrayList5;
+        int i12;
         int i13;
         int i14;
+        InterfaceC3945t3 interfaceC3945t3;
+        InterfaceC3945t3 interfaceC3945t32;
         int i15;
-        InterfaceC3922t3 interfaceC3922t3;
-        InterfaceC3922t3 interfaceC3922t32;
-        int i16;
         loop0: while (true) {
-            int i17 = 0;
-            int i18 = 1;
+            int i16 = 0;
+            int i17 = 1;
             while (true) {
-                ArrayDeque arrayDeque = this.f27862g;
-                if (arrayDeque.isEmpty() || ((Iw) arrayDeque.peek()).f25619c != j6) {
+                ArrayDeque arrayDeque = this.f28659g;
+                if (arrayDeque.isEmpty() || ((Iw) arrayDeque.peek()).f26372c != j6) {
                     break loop0;
                 }
                 Iw iw = (Iw) arrayDeque.pop();
-                if (iw.f31138b == 1836019574) {
+                if (iw.f31925b == 1836019574) {
                     Iw j11 = iw.j(1835365473);
                     ArrayList arrayList6 = new ArrayList();
-                    ArrayList arrayList7 = this.f27864j;
+                    ArrayList arrayList7 = this.f28661j;
                     if (j11 != null) {
                         o32 = J2.e(j11);
-                        if (this.f27879y) {
+                        if (this.f28676y) {
                             o32.getClass();
-                            InterfaceC3922t3[] interfaceC3922t3Arr = o32.f26586a;
-                            int length = interfaceC3922t3Arr.length;
-                            int i19 = i17;
+                            InterfaceC3945t3[] interfaceC3945t3Arr = o32.f27368a;
+                            int length = interfaceC3945t3Arr.length;
+                            int i18 = i16;
                             while (true) {
-                                if (i19 >= length) {
+                                if (i18 >= length) {
                                     j9 = 0;
-                                    interfaceC3922t3 = null;
+                                    interfaceC3945t3 = null;
                                     break;
                                 }
-                                InterfaceC3922t3 interfaceC3922t33 = interfaceC3922t3Arr[i19];
+                                InterfaceC3945t3 interfaceC3945t33 = interfaceC3945t3Arr[i18];
                                 j9 = 0;
-                                if (C3591mw.class.isAssignableFrom(interfaceC3922t33.getClass())) {
-                                    interfaceC3922t3 = (InterfaceC3922t3) C3591mw.class.cast(interfaceC3922t33);
+                                if (C3668nw.class.isAssignableFrom(interfaceC3945t33.getClass())) {
+                                    interfaceC3945t3 = (InterfaceC3945t3) C3668nw.class.cast(interfaceC3945t33);
                                 }
-                                interfaceC3922t3 = null;
-                                if (interfaceC3922t3 != null) {
+                                interfaceC3945t3 = null;
+                                if (interfaceC3945t3 != null) {
                                     break;
                                 } else {
-                                    i19 += i18;
+                                    i18 += i17;
                                 }
                             }
-                            C3591mw c3591mw = (C3591mw) interfaceC3922t3;
-                            if (c3591mw != null && c3591mw.f32628b[i17] == 0) {
-                                this.f27851B = j9 + 16;
+                            C3668nw c3668nw = (C3668nw) interfaceC3945t3;
+                            if (c3668nw != null && c3668nw.f33596b[i16] == 0) {
+                                this.f28648B = j9 + 16;
                             }
-                            int length2 = interfaceC3922t3Arr.length;
-                            int i20 = i17;
+                            int length2 = interfaceC3945t3Arr.length;
+                            int i19 = i16;
                             while (true) {
-                                if (i20 >= length2) {
-                                    interfaceC3922t32 = null;
+                                if (i19 >= length2) {
+                                    interfaceC3945t32 = null;
                                     break;
                                 }
-                                InterfaceC3922t3 interfaceC3922t34 = interfaceC3922t3Arr[i20];
-                                if (C3591mw.class.isAssignableFrom(interfaceC3922t34.getClass())) {
-                                    interfaceC3922t32 = (InterfaceC3922t3) C3591mw.class.cast(interfaceC3922t34);
+                                InterfaceC3945t3 interfaceC3945t34 = interfaceC3945t3Arr[i19];
+                                if (C3668nw.class.isAssignableFrom(interfaceC3945t34.getClass())) {
+                                    interfaceC3945t32 = (InterfaceC3945t3) C3668nw.class.cast(interfaceC3945t34);
                                 }
-                                interfaceC3922t32 = null;
-                                if (interfaceC3922t32 != null) {
+                                interfaceC3945t32 = null;
+                                if (interfaceC3945t32 != null) {
                                     break;
                                 } else {
-                                    i20 += i18;
+                                    i19 += i17;
                                 }
                             }
-                            C3591mw c3591mw2 = (C3591mw) interfaceC3922t32;
-                            c3591mw2.getClass();
-                            ArrayList b9 = c3591mw2.b();
+                            C3668nw c3668nw2 = (C3668nw) interfaceC3945t32;
+                            c3668nw2.getClass();
+                            ArrayList b9 = c3668nw2.b();
                             arrayList6 = new ArrayList(b9.size());
-                            for (int i21 = i17; i21 < b9.size(); i21 += i18) {
-                                int intValue = ((Integer) b9.get(i21)).intValue();
+                            for (int i20 = i16; i20 < b9.size(); i20 += i17) {
+                                int intValue = ((Integer) b9.get(i20)).intValue();
                                 if (intValue == 0) {
-                                    i16 = i18;
-                                } else if (intValue != i18) {
-                                    i16 = 3;
+                                    i15 = i17;
+                                } else if (intValue != i17) {
+                                    i15 = 3;
                                     if (intValue != 2) {
-                                        i16 = intValue != 3 ? i17 : 4;
+                                        i15 = intValue != 3 ? i16 : 4;
                                     }
                                 } else {
-                                    i16 = 2;
+                                    i15 = 2;
                                 }
-                                arrayList6.add(Integer.valueOf(i16));
+                                arrayList6.add(Integer.valueOf(i15));
                             }
                         } else {
                             j9 = 0;
@@ -899,37 +899,37 @@ public final class U2 implements Q0 {
                         o32 = null;
                     }
                     ArrayList arrayList8 = new ArrayList();
-                    int i22 = this.f27855F;
+                    int i21 = this.f28652F;
                     Z0 z02 = new Z0();
-                    Zw i23 = iw.i(1969517665);
-                    if (i23 != null) {
-                        o33 = J2.c(i23);
+                    Zw i22 = iw.i(1969517665);
+                    if (i22 != null) {
+                        o33 = J2.c(i22);
                         z02.a(o33);
                     } else {
                         o33 = null;
                     }
-                    Zw i24 = iw.i(1836476516);
-                    i24.getClass();
-                    int i25 = i18 != i22 ? i17 : i18;
-                    InterfaceC3922t3[] interfaceC3922t3Arr2 = new InterfaceC3922t3[i18];
-                    interfaceC3922t3Arr2[i17] = J2.d(i24.f28980c);
-                    O3 o36 = new O3(interfaceC3922t3Arr2);
+                    Zw i23 = iw.i(1836476516);
+                    i23.getClass();
+                    int i24 = i17 != i21 ? i16 : i17;
+                    InterfaceC3945t3[] interfaceC3945t3Arr2 = new InterfaceC3945t3[i17];
+                    interfaceC3945t3Arr2[i16] = J2.d(i23.f29750c);
+                    O3 o36 = new O3(interfaceC3945t3Arr2);
                     ArrayList arrayList9 = arrayList7;
                     O3 o37 = o33;
-                    int i26 = i17;
+                    int i25 = i16;
                     O3 o38 = o36;
-                    ArrayList b10 = J2.b(iw, z02, com.anythink.basead.exoplayer.b.f6382b, null, false, i25, L2.f26021b);
-                    if (this.f27879y) {
-                        boolean z3 = arrayList.size() == b10.size() ? i18 : i26;
+                    ArrayList b10 = J2.b(iw, z02, com.anythink.basead.exoplayer.b.f7168b, null, false, i24, L2.f26821b);
+                    if (this.f28676y) {
+                        boolean z6 = arrayList.size() == b10.size() ? i17 : i25;
                         Locale locale = Locale.US;
-                        AbstractC2772Sd.I("The number of auxiliary track types from metadata (" + arrayList.size() + ") is not same as the number of auxiliary tracks (" + b10.size() + ")", z3);
+                        AbstractC2792Sd.I("The number of auxiliary track types from metadata (" + arrayList.size() + ") is not same as the number of auxiliary tracks (" + b10.size() + ")", z6);
                     }
                     ArrayList arrayList10 = new ArrayList();
                     Iterator it = b10.iterator();
                     while (it.hasNext()) {
-                        int i27 = ((C3008c3) it.next()).f29416a.f28832l;
-                        if (i27 != -1) {
-                            Integer valueOf = Integer.valueOf(i27);
+                        int i26 = ((C3031c3) it.next()).f30199a.f29612l;
+                        if (i26 != -1) {
+                            Integer valueOf = Integer.valueOf(i26);
                             if (!arrayList10.contains(valueOf)) {
                                 arrayList10.add(valueOf);
                             }
@@ -938,339 +938,339 @@ public final class U2 implements Q0 {
                     arrayList9.clear();
                     Iterator it2 = b10.iterator();
                     while (it2.hasNext()) {
-                        C3008c3 c3008c3 = (C3008c3) it2.next();
-                        if (arrayList10.contains(Integer.valueOf(c3008c3.f29416a.f28822a))) {
-                            arrayList9.add(c3008c3);
+                        C3031c3 c3031c3 = (C3031c3) it2.next();
+                        if (arrayList10.contains(Integer.valueOf(c3031c3.f30199a.f29602a))) {
+                            arrayList9.add(c3031c3);
                         }
                     }
-                    String g4 = AbstractC2772Sd.g(b10);
-                    int i28 = i18;
-                    int i29 = -1;
-                    int i30 = i26;
-                    int i31 = i30;
-                    long j12 = com.anythink.basead.exoplayer.b.f6382b;
-                    while (i31 < b10.size()) {
-                        C3008c3 c3008c32 = (C3008c3) b10.get(i31);
-                        int i32 = c3008c32.f29417b;
-                        if (i32 == 0) {
+                    String g9 = AbstractC2792Sd.g(b10);
+                    int i27 = i17;
+                    int i28 = -1;
+                    int i29 = i25;
+                    int i30 = i29;
+                    long j12 = com.anythink.basead.exoplayer.b.f7168b;
+                    while (i30 < b10.size()) {
+                        C3031c3 c3031c32 = (C3031c3) b10.get(i30);
+                        int i31 = c3031c32.f30200b;
+                        if (i31 == 0) {
                             arrayList2 = arrayList9;
                         } else {
                             arrayList2 = arrayList9;
-                            Z2 z23 = c3008c32.f29416a;
-                            if (z23.f28833m) {
+                            Z2 z23 = c3031c32.f30199a;
+                            if (z23.f29613m) {
                                 arrayList3 = b10;
-                                S0 s02 = this.f27852C;
-                                int i33 = i30 + 1;
+                                S0 s02 = this.f28649C;
+                                int i32 = i29 + 1;
                                 ArrayList arrayList11 = arrayList8;
-                                int i34 = z23.f28823b;
-                                InterfaceC3543m1 C8 = s02.C(i30, i34);
-                                T2 t23 = new T2(z23, c3008c32, C8);
-                                long j13 = z23.f28826e;
-                                if (j13 == com.anythink.basead.exoplayer.b.f6382b) {
-                                    j13 = c3008c32.i;
+                                int i33 = z23.f29603b;
+                                InterfaceC3566m1 C8 = s02.C(i29, i33);
+                                T2 t23 = new T2(z23, c3031c32, C8);
+                                long j13 = z23.f29606e;
+                                if (j13 == com.anythink.basead.exoplayer.b.f7168b) {
+                                    j13 = c3031c32.i;
                                 }
                                 C8.getClass();
                                 long max = Math.max(j12, j13);
-                                DP dp2 = z23.f28828g;
-                                String str = dp2.f24431o;
-                                boolean equals = com.anythink.basead.exoplayer.k.o.f8422C.equals(str);
-                                int i35 = c3008c32.f29420e;
-                                int i36 = equals ? i35 * 16 : i35 + 30;
-                                C3299hP c3299hP = new C3299hP(dp2);
-                                c3299hP.f30793o = i36;
-                                if (i34 == 2) {
-                                    int i37 = this.f27857b & 8;
-                                    int i38 = dp2.f24423f;
-                                    if (i37 != 0) {
-                                        i38 |= i29 == -1 ? i28 : 2;
+                                DP dp2 = z23.f29608g;
+                                String str = dp2.f25176o;
+                                boolean equals = com.anythink.basead.exoplayer.k.o.f9208C.equals(str);
+                                int i34 = c3031c32.f30203e;
+                                int i35 = equals ? i34 * 16 : i34 + 30;
+                                C3322hP c3322hP = new C3322hP(dp2);
+                                c3322hP.f31559o = i35;
+                                if (i33 == 2) {
+                                    int i36 = this.f28654b & 8;
+                                    int i37 = dp2.f25168f;
+                                    if (i36 != 0) {
+                                        i37 |= i28 == -1 ? i27 : 2;
                                     }
-                                    if (this.f27879y) {
-                                        i38 |= 32768;
-                                        c3299hP.f30786g = ((Integer) arrayList.get(i31)).intValue();
+                                    if (this.f28676y) {
+                                        i37 |= 32768;
+                                        c3322hP.f31552g = ((Integer) arrayList.get(i30)).intValue();
                                     }
-                                    c3299hP.f30785f = i38;
-                                    i34 = 2;
+                                    c3322hP.f31551f = i37;
+                                    i33 = 2;
                                 }
                                 if (H4.b(str)) {
-                                    long[] jArr = c3008c32.f29421f;
+                                    long[] jArr = c3031c32.f30204f;
                                     arrayList4 = arrayList;
                                     if (jArr.length > 0) {
-                                        int[] iArr = c3008c32.f29423h;
-                                        boolean z6 = c3008c32.f29424j;
-                                        int min = Math.min(!z6 ? iArr.length : i32, 20);
-                                        AbstractC2772Sd.H(j13 != com.anythink.basead.exoplayer.b.f6382b ? i28 : i26);
-                                        i6 = i29;
+                                        int[] iArr = c3031c32.f30206h;
+                                        boolean z9 = c3031c32.f30207j;
+                                        int min = Math.min(!z9 ? iArr.length : i31, 20);
+                                        AbstractC2792Sd.H(j13 != com.anythink.basead.exoplayer.b.f7168b ? i27 : i25);
+                                        i4 = i28;
                                         long min2 = Math.min(j13, 10000000L);
-                                        int i39 = i26;
-                                        int i40 = i39;
-                                        int i41 = -1;
-                                        while (i39 < min) {
-                                            int i42 = z6 ? i39 : iArr[i39];
-                                            long j14 = jArr[i42];
+                                        int i38 = i25;
+                                        int i39 = i38;
+                                        int i40 = -1;
+                                        while (i38 < min) {
+                                            int i41 = z9 ? i38 : iArr[i38];
+                                            long j14 = jArr[i41];
                                             if (j14 > min2) {
                                                 break;
                                             }
                                             if (j14 >= j9) {
-                                                i15 = min;
-                                                int i43 = c3008c32.f29419d[i42];
-                                                if (i43 > i40) {
-                                                    i40 = i43;
-                                                    i41 = i42;
+                                                i14 = min;
+                                                int i42 = c3031c32.f30202d[i41];
+                                                if (i42 > i39) {
+                                                    i39 = i42;
+                                                    i40 = i41;
                                                 }
                                             } else {
-                                                i15 = min;
+                                                i14 = min;
                                             }
-                                            i39++;
-                                            min = i15;
+                                            i38++;
+                                            min = i14;
                                         }
-                                        if (i41 != -1) {
-                                            j10 = jArr[i41];
-                                            if (j10 != com.anythink.basead.exoplayer.b.f6382b) {
+                                        if (i40 != -1) {
+                                            j10 = jArr[i40];
+                                            if (j10 != com.anythink.basead.exoplayer.b.f7168b) {
                                                 Q1 q12 = new Q1(j10);
-                                                i9 = i28;
-                                                InterfaceC3922t3[] interfaceC3922t3Arr3 = new InterfaceC3922t3[i9];
-                                                interfaceC3922t3Arr3[i26] = q12;
-                                                o34 = new O3(interfaceC3922t3Arr3);
+                                                i6 = i27;
+                                                InterfaceC3945t3[] interfaceC3945t3Arr3 = new InterfaceC3945t3[i6];
+                                                interfaceC3945t3Arr3[i25] = q12;
+                                                o34 = new O3(interfaceC3945t3Arr3);
                                             } else {
-                                                i9 = i28;
+                                                i6 = i27;
                                                 o34 = null;
                                             }
-                                            if (i34 == i9 && (i13 = z02.f28816a) != -1 && (i14 = z02.f28817b) != -1) {
-                                                c3299hP.f30775K = i13;
-                                                c3299hP.f30776L = i14;
+                                            if (i33 == i6 && (i12 = z02.f29596a) != -1 && (i13 = z02.f29597b) != -1) {
+                                                c3322hP.f31541K = i12;
+                                                c3322hP.f31542L = i13;
                                             }
                                             ArrayList arrayList12 = this.i;
                                             O3 o39 = arrayList12.isEmpty() ? null : new O3(arrayList12);
                                             o35 = o38;
-                                            SK.l(i34, o32, c3299hP, dp2.f24428l, o39, o37, o35, o34);
-                                            c3299hP.d(g4);
-                                            dp = new DP(c3299hP);
-                                            if (!Objects.equals(str, com.anythink.basead.exoplayer.k.o.f8462t) || AbstractC2968bG.n(str)) {
+                                            SK.l(i33, o32, c3322hP, dp2.f25173l, o39, o37, o35, o34);
+                                            c3322hP.d(g9);
+                                            dp = new DP(c3322hP);
+                                            if (!Objects.equals(str, com.anythink.basead.exoplayer.k.o.f9248t) || AbstractC2991bG.n(str)) {
                                                 z22 = z23;
-                                                i10 = 1;
+                                                i9 = 1;
                                             } else {
-                                                i10 = i26;
+                                                i9 = i25;
                                                 z22 = z23;
                                             }
-                                            i11 = z22.f28832l;
-                                            if (i11 != -1) {
+                                            i10 = z22.f29612l;
+                                            if (i10 != -1) {
                                                 Iterator it3 = arrayList2.iterator();
                                                 while (it3.hasNext()) {
-                                                    if (((C3008c3) it3.next()).f29416a.f28822a == i11) {
-                                                        i12 = 1;
+                                                    if (((C3031c3) it3.next()).f30199a.f29602a == i10) {
+                                                        i11 = 1;
                                                         break;
                                                     }
                                                 }
                                             }
-                                            i12 = i26;
-                                            if (i10 == 0 || i12 != 0) {
+                                            i11 = i25;
+                                            if (i9 == 0 || i11 != 0) {
                                                 t22 = t23;
-                                                t22.f27683f = dp;
+                                                t22.f28466f = dp;
                                             } else {
                                                 C8.e(dp);
                                                 t22 = t23;
                                             }
-                                            int i44 = i6;
-                                            i29 = (i34 == 2 || i44 != -1) ? i44 : arrayList11.size();
+                                            int i43 = i4;
+                                            i28 = (i33 == 2 || i43 != -1) ? i43 : arrayList11.size();
                                             arrayList5 = arrayList11;
                                             arrayList5.add(t22);
-                                            i30 = i33;
+                                            i29 = i32;
                                             j12 = max;
-                                            i31++;
+                                            i30++;
                                             arrayList8 = arrayList5;
                                             o38 = o35;
                                             arrayList9 = arrayList2;
                                             b10 = arrayList3;
                                             arrayList = arrayList4;
-                                            i28 = 1;
+                                            i27 = 1;
                                         }
                                         j10 = -9223372036854775807L;
-                                        if (j10 != com.anythink.basead.exoplayer.b.f6382b) {
+                                        if (j10 != com.anythink.basead.exoplayer.b.f7168b) {
                                         }
-                                        if (i34 == i9) {
-                                            c3299hP.f30775K = i13;
-                                            c3299hP.f30776L = i14;
+                                        if (i33 == i6) {
+                                            c3322hP.f31541K = i12;
+                                            c3322hP.f31542L = i13;
                                         }
                                         ArrayList arrayList122 = this.i;
                                         if (arrayList122.isEmpty()) {
                                         }
                                         o35 = o38;
-                                        SK.l(i34, o32, c3299hP, dp2.f24428l, o39, o37, o35, o34);
-                                        c3299hP.d(g4);
-                                        dp = new DP(c3299hP);
-                                        if (Objects.equals(str, com.anythink.basead.exoplayer.k.o.f8462t)) {
+                                        SK.l(i33, o32, c3322hP, dp2.f25173l, o39, o37, o35, o34);
+                                        c3322hP.d(g9);
+                                        dp = new DP(c3322hP);
+                                        if (Objects.equals(str, com.anythink.basead.exoplayer.k.o.f9248t)) {
                                         }
                                         z22 = z23;
-                                        i10 = 1;
-                                        i11 = z22.f28832l;
-                                        if (i11 != -1) {
+                                        i9 = 1;
+                                        i10 = z22.f29612l;
+                                        if (i10 != -1) {
                                         }
-                                        i12 = i26;
-                                        if (i10 == 0) {
+                                        i11 = i25;
+                                        if (i9 == 0) {
                                         }
                                         t22 = t23;
-                                        t22.f27683f = dp;
-                                        int i442 = i6;
-                                        if (i34 == 2) {
+                                        t22.f28466f = dp;
+                                        int i432 = i4;
+                                        if (i33 == 2) {
                                         }
                                         arrayList5 = arrayList11;
                                         arrayList5.add(t22);
-                                        i30 = i33;
+                                        i29 = i32;
                                         j12 = max;
-                                        i31++;
+                                        i30++;
                                         arrayList8 = arrayList5;
                                         o38 = o35;
                                         arrayList9 = arrayList2;
                                         b10 = arrayList3;
                                         arrayList = arrayList4;
-                                        i28 = 1;
+                                        i27 = 1;
                                     }
                                 } else {
                                     arrayList4 = arrayList;
                                 }
-                                i6 = i29;
+                                i4 = i28;
                                 j10 = -9223372036854775807L;
-                                if (j10 != com.anythink.basead.exoplayer.b.f6382b) {
+                                if (j10 != com.anythink.basead.exoplayer.b.f7168b) {
                                 }
-                                if (i34 == i9) {
+                                if (i33 == i6) {
                                 }
                                 ArrayList arrayList1222 = this.i;
                                 if (arrayList1222.isEmpty()) {
                                 }
                                 o35 = o38;
-                                SK.l(i34, o32, c3299hP, dp2.f24428l, o39, o37, o35, o34);
-                                c3299hP.d(g4);
-                                dp = new DP(c3299hP);
-                                if (Objects.equals(str, com.anythink.basead.exoplayer.k.o.f8462t)) {
+                                SK.l(i33, o32, c3322hP, dp2.f25173l, o39, o37, o35, o34);
+                                c3322hP.d(g9);
+                                dp = new DP(c3322hP);
+                                if (Objects.equals(str, com.anythink.basead.exoplayer.k.o.f9248t)) {
                                 }
                                 z22 = z23;
-                                i10 = 1;
-                                i11 = z22.f28832l;
-                                if (i11 != -1) {
+                                i9 = 1;
+                                i10 = z22.f29612l;
+                                if (i10 != -1) {
                                 }
-                                i12 = i26;
-                                if (i10 == 0) {
+                                i11 = i25;
+                                if (i9 == 0) {
                                 }
                                 t22 = t23;
-                                t22.f27683f = dp;
-                                int i4422 = i6;
-                                if (i34 == 2) {
+                                t22.f28466f = dp;
+                                int i4322 = i4;
+                                if (i33 == 2) {
                                 }
                                 arrayList5 = arrayList11;
                                 arrayList5.add(t22);
-                                i30 = i33;
+                                i29 = i32;
                                 j12 = max;
-                                i31++;
+                                i30++;
                                 arrayList8 = arrayList5;
                                 o38 = o35;
                                 arrayList9 = arrayList2;
                                 b10 = arrayList3;
                                 arrayList = arrayList4;
-                                i28 = 1;
+                                i27 = 1;
                             }
                         }
                         arrayList4 = arrayList;
                         arrayList5 = arrayList8;
                         arrayList3 = b10;
                         o35 = o38;
-                        i31++;
+                        i30++;
                         arrayList8 = arrayList5;
                         o38 = o35;
                         arrayList9 = arrayList2;
                         b10 = arrayList3;
                         arrayList = arrayList4;
-                        i28 = 1;
+                        i27 = 1;
                     }
                     ArrayList arrayList13 = arrayList9;
-                    int i45 = i29;
-                    int i46 = -1;
-                    T2[] t2Arr = (T2[]) arrayList8.toArray(new T2[i26]);
-                    this.f27853D = t2Arr;
+                    int i44 = i28;
+                    int i45 = -1;
+                    T2[] t2Arr = (T2[]) arrayList8.toArray(new T2[i25]);
+                    this.f28650D = t2Arr;
                     int length3 = t2Arr.length;
                     long[][] jArr2 = new long[length3][];
                     int[] iArr2 = new int[length3];
                     long[] jArr3 = new long[length3];
                     boolean[] zArr = new boolean[length3];
-                    for (int i47 = 0; i47 < t2Arr.length; i47++) {
-                        jArr2[i47] = new long[t2Arr[i47].f27679b.f29417b];
-                        jArr3[i47] = t2Arr[i47].f27679b.f29421f[0];
+                    for (int i46 = 0; i46 < t2Arr.length; i46++) {
+                        jArr2[i46] = new long[t2Arr[i46].f28462b.f30200b];
+                        jArr3[i46] = t2Arr[i46].f28462b.f30204f[0];
                     }
                     long j15 = j9;
-                    int i48 = 0;
-                    while (i48 < t2Arr.length) {
+                    int i47 = 0;
+                    while (i47 < t2Arr.length) {
                         long j16 = Long.MAX_VALUE;
-                        int i49 = i46;
-                        for (int i50 = 0; i50 < t2Arr.length; i50++) {
-                            if (!zArr[i50]) {
-                                long j17 = jArr3[i50];
+                        int i48 = i45;
+                        for (int i49 = 0; i49 < t2Arr.length; i49++) {
+                            if (!zArr[i49]) {
+                                long j17 = jArr3[i49];
                                 if (j17 <= j16) {
-                                    i49 = i50;
+                                    i48 = i49;
                                     j16 = j17;
                                 }
                             }
                         }
-                        int i51 = iArr2[i49];
-                        long[] jArr4 = jArr2[i49];
-                        jArr4[i51] = j15;
-                        C3008c3 c3008c33 = t2Arr[i49].f27679b;
+                        int i50 = iArr2[i48];
+                        long[] jArr4 = jArr2[i48];
+                        jArr4[i50] = j15;
+                        C3031c3 c3031c33 = t2Arr[i48].f28462b;
                         T2[] t2Arr2 = t2Arr;
                         boolean[] zArr2 = zArr;
-                        j15 += c3008c33.f29419d[i51];
-                        int i52 = i51 + 1;
-                        iArr2[i49] = i52;
-                        if (i52 < jArr4.length) {
-                            jArr3[i49] = c3008c33.f29421f[i52];
+                        j15 += c3031c33.f30202d[i50];
+                        int i51 = i50 + 1;
+                        iArr2[i48] = i51;
+                        if (i51 < jArr4.length) {
+                            jArr3[i48] = c3031c33.f30204f[i51];
                         } else {
-                            zArr2[i49] = true;
-                            i48++;
+                            zArr2[i48] = true;
+                            i47++;
                         }
                         t2Arr = t2Arr2;
                         zArr = zArr2;
-                        i46 = -1;
+                        i45 = -1;
                     }
-                    this.f27854E = jArr2;
-                    this.f27852C.B();
-                    this.f27852C.D(new S2(j12, this.f27853D, i45));
+                    this.f28651E = jArr2;
+                    this.f28649C.B();
+                    this.f28649C.D(new S2(j12, this.f28650D, i44));
                     arrayDeque.clear();
-                    if (!this.f27878x) {
+                    if (!this.f28675x) {
                         i = 1;
-                        this.f27867m = true != arrayList13.isEmpty() ? 4 : 2;
+                        this.f28664m = true != arrayList13.isEmpty() ? 4 : 2;
                     }
                 } else {
-                    i = i18;
+                    i = i17;
                     if (!arrayDeque.isEmpty()) {
-                        ((Iw) arrayDeque.peek()).f25621e.add(iw);
+                        ((Iw) arrayDeque.peek()).f26374e.add(iw);
                     }
                 }
-                i18 = i;
-                i17 = 0;
+                i17 = i;
+                i16 = 0;
             }
         }
-        int i53 = this.f27867m;
-        if (i53 == 4 || i53 == 2) {
+        int i52 = this.f28664m;
+        if (i52 == 4 || i52 == 2) {
             return;
         }
-        this.f27867m = 0;
-        this.f27870p = 0;
+        this.f28664m = 0;
+        this.f28667p = 0;
     }
 
-    public U2(InterfaceC3814r3 interfaceC3814r3, int i) {
-        this.f27856a = interfaceC3814r3;
-        this.f27857b = i;
-        PB pb = RB.f27177u;
-        this.f27866l = C3500lC.f31745x;
-        this.f27867m = 0;
-        this.f27863h = new X2();
+    public U2(InterfaceC3837r3 interfaceC3837r3, int i) {
+        this.f28653a = interfaceC3837r3;
+        this.f28654b = i;
+        PB pb = RB.f27933u;
+        this.f28663l = C3523lC.f32525x;
+        this.f28664m = 0;
+        this.f28660h = new X2();
         this.i = new ArrayList();
-        this.f27861f = new Cr(16);
-        this.f27862g = new ArrayDeque();
-        this.f27858c = new Cr(SK.f27460r0);
-        this.f27859d = new Cr(6);
-        this.f27860e = new Cr();
-        this.f27872r = -1;
-        this.f27852C = S0.f27391l0;
-        this.f27853D = new T2[0];
-        this.f27864j = new ArrayList();
-        this.f27865k = new ArrayList();
+        this.f28658f = new Cr(16);
+        this.f28659g = new ArrayDeque();
+        this.f28655c = new Cr(SK.m0);
+        this.f28656d = new Cr(6);
+        this.f28657e = new Cr();
+        this.f28669r = -1;
+        this.f28649C = S0.f28105g0;
+        this.f28650D = new T2[0];
+        this.f28661j = new ArrayList();
+        this.f28662k = new ArrayList();
     }
 }

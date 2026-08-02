@@ -21,7 +21,7 @@ public final class m extends H4.g {
     }
 
     private final void setAppId(String str) {
-        com.onesignal.common.modeling.i.setStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f22407u, str, null, false, 12, null);
+        com.onesignal.common.modeling.i.setStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f23194u, str, null, false, 12, null);
     }
 
     private final void setOnesignalId(String str) {
@@ -32,8 +32,8 @@ public final class m extends H4.g {
         com.onesignal.common.modeling.i.setListProperty$default(this, "purchases", list, null, false, 12, null);
     }
 
-    private final void setTreatNewAsExisting(boolean z3) {
-        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "treatNewAsExisting", z3, null, false, 12, null);
+    private final void setTreatNewAsExisting(boolean z6) {
+        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "treatNewAsExisting", z6, null, false, 12, null);
     }
 
     @Override // com.onesignal.common.modeling.i
@@ -60,7 +60,7 @@ public final class m extends H4.g {
     }
 
     public final String getAppId() {
-        return com.onesignal.common.modeling.i.getStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f22407u, null, 2, null);
+        return com.onesignal.common.modeling.i.getStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f23194u, null, 2, null);
     }
 
     @Override // H4.g
@@ -111,7 +111,7 @@ public final class m extends H4.g {
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    public m(String appId, String onesignalId, String str, boolean z3, BigDecimal amountSpent, List<g> purchases) {
+    public m(String appId, String onesignalId, String str, boolean z6, BigDecimal amountSpent, List<g> purchases) {
         this();
         kotlin.jvm.internal.h.e(appId, "appId");
         kotlin.jvm.internal.h.e(onesignalId, "onesignalId");
@@ -120,7 +120,7 @@ public final class m extends H4.g {
         setAppId(appId);
         setOnesignalId(onesignalId);
         setExternalId$com_onesignal_core(str);
-        setTreatNewAsExisting(z3);
+        setTreatNewAsExisting(z6);
         setAmountSpent(amountSpent);
         setPurchases(purchases);
     }

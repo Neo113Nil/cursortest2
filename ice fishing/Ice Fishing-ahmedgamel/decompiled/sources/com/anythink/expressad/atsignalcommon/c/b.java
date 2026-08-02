@@ -15,16 +15,16 @@ public class b {
     public static abstract class AbstractC0112b<T> implements InvocationHandler {
 
         /* renamed from: a, reason: collision with root package name */
-        private T f17954a;
+        private T f18741a;
 
         private T a() {
-            return this.f17954a;
+            return this.f18741a;
         }
 
         @Override // java.lang.reflect.InvocationHandler
         public Object invoke(Object obj, Method method, Object[] objArr) {
             try {
-                return method.invoke(this.f17954a, objArr);
+                return method.invoke(this.f18741a, objArr);
             } catch (IllegalAccessException e9) {
                 e9.printStackTrace();
                 return null;
@@ -37,7 +37,7 @@ public class b {
         }
 
         public final void a(T t6) {
-            this.f17954a = t6;
+            this.f18741a = t6;
         }
     }
 

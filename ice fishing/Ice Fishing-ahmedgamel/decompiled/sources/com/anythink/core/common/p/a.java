@@ -16,29 +16,29 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class a implements d {
 
     /* renamed from: b, reason: collision with root package name */
-    String f15976b;
+    String f16763b;
 
     /* renamed from: c, reason: collision with root package name */
-    String f15977c;
+    String f16764c;
 
     /* renamed from: d, reason: collision with root package name */
-    b f15978d;
+    b f16765d;
 
     /* renamed from: f, reason: collision with root package name */
-    long f15980f;
+    long f16767f;
     private ATAdRequest i;
 
     /* renamed from: a, reason: collision with root package name */
-    String f15975a = "a";
+    String f16762a = "a";
 
     /* renamed from: e, reason: collision with root package name */
-    AtomicBoolean f15979e = new AtomicBoolean(false);
+    AtomicBoolean f16766e = new AtomicBoolean(false);
 
     /* renamed from: g, reason: collision with root package name */
-    long f15981g = com.anythink.basead.exoplayer.i.a.f7883f;
+    long f16768g = com.anythink.basead.exoplayer.i.a.f8669f;
 
     /* renamed from: h, reason: collision with root package name */
-    com.anythink.core.common.t.b f15982h = new com.anythink.core.common.t.b() { // from class: com.anythink.core.common.p.a.1
+    com.anythink.core.common.t.b f16769h = new com.anythink.core.common.t.b() { // from class: com.anythink.core.common.p.a.1
         @Override // java.lang.Runnable
         public final void run() {
             a.this.e();
@@ -46,17 +46,17 @@ public class a implements d {
     };
 
     public a(String str, String str2) {
-        this.f15976b = str;
-        this.f15977c = str2;
+        this.f16763b = str;
+        this.f16764c = str2;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public synchronized void e() {
         if (b()) {
-            if (this.f15979e.get()) {
-                this.f15979e.set(false);
-                if (this.f15980f == 0 || SystemClock.elapsedRealtime() - this.f15980f > this.f15981g) {
-                    this.f15980f = SystemClock.elapsedRealtime();
+            if (this.f16766e.get()) {
+                this.f16766e.set(false);
+                if (this.f16767f == 0 || SystemClock.elapsedRealtime() - this.f16767f > this.f16768g) {
+                    this.f16767f = SystemClock.elapsedRealtime();
                     a(t.b().M(), this.i, 4);
                 }
             }
@@ -65,31 +65,31 @@ public class a implements d {
 
     @Override // com.anythink.core.common.p.d
     public final boolean b() {
-        return u.a().e(this.f15976b);
+        return u.a().e(this.f16763b);
     }
 
     @Override // com.anythink.core.common.p.d
     public final void c() {
         b bVar;
-        if (!b() || (bVar = this.f15978d) == null) {
+        if (!b() || (bVar = this.f16765d) == null) {
             return;
         }
-        bVar.a(this.f15976b);
+        bVar.a(this.f16763b);
     }
 
     @Override // com.anythink.core.common.p.d
     public final synchronized void d() {
-        this.f15979e.set(false);
-        com.anythink.core.common.t.d.a().b(this.f15982h);
+        this.f16766e.set(false);
+        com.anythink.core.common.t.d.a().b(this.f16769h);
     }
 
     @Override // com.anythink.core.common.p.d
     public final synchronized void a(int i) {
-        if (this.f15979e.get()) {
+        if (this.f16766e.get()) {
             return;
         }
-        this.f15979e.set(true);
-        com.anythink.core.common.t.d.a().a(this.f15982h, ((long) Math.pow(2.0d, i)) * 1000, false);
+        this.f16766e.set(true);
+        com.anythink.core.common.t.d.a().a(this.f16769h, ((long) Math.pow(2.0d, i)) * 1000, false);
     }
 
     public final ATAdRequest a() {
@@ -102,26 +102,26 @@ public class a implements d {
         ar arVar = new ar();
         arVar.a(context);
         arVar.a(aTAdRequest);
-        arVar.f13547c = i;
-        f.a(context, this.f15976b, this.f15977c).b(context, this.f15977c, this.f15976b, arVar, null);
+        arVar.f14333c = i;
+        f.a(context, this.f16763b, this.f16764c).b(context, this.f16764c, this.f16763b, arVar, null);
     }
 
     @Override // com.anythink.core.common.p.d
-    public final void a(AdError adError, int i, boolean z3) {
+    public final void a(AdError adError, int i, boolean z6) {
         if (b()) {
-            if (z3) {
+            if (z6) {
                 a(i);
             }
-            b bVar = this.f15978d;
+            b bVar = this.f16765d;
             if (bVar != null) {
-                bVar.a(this.f15976b, adError);
+                bVar.a(this.f16763b, adError);
             }
         }
     }
 
     @Override // com.anythink.core.common.p.d
     public final void a(b bVar) {
-        this.f15978d = bVar;
+        this.f16765d = bVar;
     }
 
     @Override // com.anythink.core.common.p.d

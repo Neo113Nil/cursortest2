@@ -4,81 +4,81 @@ package com.anythink.expressad.foundation.g.g.a;
 public final class b {
 
     /* renamed from: A, reason: collision with root package name */
-    public static final String f19408A = "rid_n";
+    public static final String f20195A = "rid_n";
 
     /* renamed from: B, reason: collision with root package name */
-    public static final String f19409B = "as_rid";
+    public static final String f20196B = "as_rid";
 
     /* renamed from: C, reason: collision with root package name */
-    public static final String f19410C = "a_stid";
+    public static final String f20197C = "a_stid";
 
     /* renamed from: D, reason: collision with root package name */
-    public static final String f19411D = "us_rid";
+    public static final String f20198D = "us_rid";
 
     /* renamed from: E, reason: collision with root package name */
-    public static final String f19412E = "u_stid";
+    public static final String f20199E = "u_stid";
 
     /* renamed from: F, reason: collision with root package name */
-    public static final String f19413F = "rus_rid";
+    public static final String f20200F = "rus_rid";
 
     /* renamed from: G, reason: collision with root package name */
-    public static final String f19414G = "rs_rid";
+    public static final String f20201G = "rs_rid";
 
     /* renamed from: H, reason: collision with root package name */
-    public static final String f19415H = "r_stid";
+    public static final String f20202H = "r_stid";
 
     /* renamed from: I, reason: collision with root package name */
-    public static final String f19416I = "log_rate";
+    public static final String f20203I = "log_rate";
     public static final String J = "exp_ids";
 
     /* renamed from: K, reason: collision with root package name */
-    public static final String f19417K = "duration";
+    public static final String f20204K = "duration";
 
     /* renamed from: L, reason: collision with root package name */
-    public static final String f19418L = "reason";
+    public static final String f20205L = "reason";
 
     /* renamed from: M, reason: collision with root package name */
-    public static final String f19419M = "his_reason";
+    public static final String f20206M = "his_reason";
 
     /* renamed from: N, reason: collision with root package name */
-    public static final String f19420N = "type";
+    public static final String f20207N = "type";
 
     /* renamed from: O, reason: collision with root package name */
-    public static final String f19421O = "cache";
+    public static final String f20208O = "cache";
 
     /* renamed from: P, reason: collision with root package name */
-    public static final String f19422P = "result";
+    public static final String f20209P = "result";
 
     /* renamed from: Q, reason: collision with root package name */
-    public static final String f19423Q = "timeout";
+    public static final String f20210Q = "timeout";
 
     /* renamed from: R, reason: collision with root package name */
-    public static final String f19424R = "dyview";
+    public static final String f20211R = "dyview";
 
     /* renamed from: S, reason: collision with root package name */
-    public static final String f19425S = "click_path";
+    public static final String f20212S = "click_path";
 
     /* renamed from: T, reason: collision with root package name */
-    public static final String f19426T = "cltp";
+    public static final String f20213T = "cltp";
 
     /* renamed from: U, reason: collision with root package name */
-    public static final String f19427U = "xt";
+    public static final String f20214U = "xt";
 
     /* renamed from: V, reason: collision with root package name */
-    public static final String f19428V = "alecfc";
+    public static final String f20215V = "alecfc";
 
     /* renamed from: W, reason: collision with root package name */
-    public static final String f19429W = "xtSecond";
+    public static final String f20216W = "xtSecond";
 
     /* renamed from: X, reason: collision with root package name */
-    public static final String f19430X = "autoPlayCountDownTime";
+    public static final String f20217X = "autoPlayCountDownTime";
     public static final String Y = "click";
 
     /* renamed from: Z, reason: collision with root package name */
-    public static final String f19431Z = "time";
+    public static final String f20218Z = "time";
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f19432a = "key";
+    public static final String f20219a = "key";
     public static final String aA = "listener_state";
     public static final String aB = "rtins_type";
     public static final String aC = "mraid_type";
@@ -133,7 +133,7 @@ public final class b {
     public static final String az = "metrics_data_reason";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f19433b = "app_id";
+    public static final String f20220b = "app_id";
     public static final String ba = "network_type";
     public static final String bb = "st";
     public static final String bc = "is_allow_crash";
@@ -148,72 +148,72 @@ public final class b {
     public static final String bl = "load_check";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f19434c = "ts";
+    public static final String f20221c = "ts";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final String f19435d = "unit_id";
+    public static final String f20222d = "unit_id";
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f19436e = "adtp";
+    public static final String f20223e = "adtp";
 
     /* renamed from: f, reason: collision with root package name */
-    public static final String f19437f = "rid";
+    public static final String f20224f = "rid";
 
     /* renamed from: g, reason: collision with root package name */
-    public static final String f19438g = "n_rid";
+    public static final String f20225g = "n_rid";
 
     /* renamed from: h, reason: collision with root package name */
-    public static final String f19439h = "lrid";
+    public static final String f20226h = "lrid";
     public static final String i = "n_lrid";
 
     /* renamed from: j, reason: collision with root package name */
-    public static final String f19440j = "auto_load";
+    public static final String f20227j = "auto_load";
 
     /* renamed from: k, reason: collision with root package name */
-    public static final String f19441k = "stid";
+    public static final String f20228k = "stid";
 
     /* renamed from: l, reason: collision with root package name */
-    public static final String f19442l = "vtid";
+    public static final String f20229l = "vtid";
 
     /* renamed from: m, reason: collision with root package name */
-    public static final String f19443m = "crid";
+    public static final String f20230m = "crid";
 
     /* renamed from: n, reason: collision with root package name */
-    public static final String f19444n = "video_crid";
+    public static final String f20231n = "video_crid";
 
     /* renamed from: o, reason: collision with root package name */
-    public static final String f19445o = "endcard_crid";
+    public static final String f20232o = "endcard_crid";
 
     /* renamed from: p, reason: collision with root package name */
-    public static final String f19446p = "ec_temp_id";
+    public static final String f20233p = "ec_temp_id";
 
     /* renamed from: q, reason: collision with root package name */
-    public static final String f19447q = "bid_tk";
+    public static final String f20234q = "bid_tk";
 
     /* renamed from: r, reason: collision with root package name */
-    public static final String f19448r = "sdyv";
+    public static final String f20235r = "sdyv";
 
     /* renamed from: s, reason: collision with root package name */
-    public static final String f19449s = "vdyv";
+    public static final String f20236s = "vdyv";
 
     /* renamed from: t, reason: collision with root package name */
-    public static final String f19450t = "edyv";
+    public static final String f20237t = "edyv";
 
     /* renamed from: u, reason: collision with root package name */
-    public static final String f19451u = "dspid";
+    public static final String f20238u = "dspid";
 
     /* renamed from: v, reason: collision with root package name */
-    public static final String f19452v = "par_dspid";
+    public static final String f20239v = "par_dspid";
 
     /* renamed from: w, reason: collision with root package name */
-    public static final String f19453w = "only_ec";
+    public static final String f20240w = "only_ec";
 
     /* renamed from: x, reason: collision with root package name */
-    public static final String f19454x = "hb";
+    public static final String f20241x = "hb";
 
     /* renamed from: y, reason: collision with root package name */
-    public static final String f19455y = "adspace_t";
+    public static final String f20242y = "adspace_t";
 
     /* renamed from: z, reason: collision with root package name */
-    public static final String f19456z = "cid";
+    public static final String f20243z = "cid";
 }

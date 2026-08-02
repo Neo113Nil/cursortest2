@@ -21,16 +21,16 @@ public abstract class C3C {
         this(obj, -1L);
     }
 
-    public C3C(Object obj, int i, int i6, long j6) {
-        this(obj, i, i6, j6, -1);
+    public C3C(Object obj, int i, int i4, long j6) {
+        this(obj, i, i4, j6, -1);
     }
 
-    public C3C(Object obj, int i, int i6, long j6, int i9) {
+    public C3C(Object obj, int i, int i4, long j6, int i6) {
         this.A04 = obj;
         this.A00 = i;
-        this.A01 = i6;
+        this.A01 = i4;
         this.A03 = j6;
-        this.A02 = i9;
+        this.A02 = i6;
     }
 
     public C3C(Object obj, long j6) {

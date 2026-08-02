@@ -15,15 +15,15 @@ public final class C4839a {
         return this.isWorkManagerProcessing;
     }
 
-    public final void setDeniedByLifecycleCallback(boolean z3) {
-        this.isDeniedByLifecycleCallback = z3;
+    public final void setDeniedByLifecycleCallback(boolean z6) {
+        this.isDeniedByLifecycleCallback = z6;
     }
 
-    public final void setOneSignalPayload(boolean z3) {
-        this.isOneSignalPayload = z3;
+    public final void setOneSignalPayload(boolean z6) {
+        this.isOneSignalPayload = z6;
     }
 
-    public final void setWorkManagerProcessing(boolean z3) {
-        this.isWorkManagerProcessing = z3;
+    public final void setWorkManagerProcessing(boolean z6) {
+        this.isWorkManagerProcessing = z6;
     }
 }

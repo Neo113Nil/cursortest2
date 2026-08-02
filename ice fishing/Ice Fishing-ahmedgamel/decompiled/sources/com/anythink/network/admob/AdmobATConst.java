@@ -7,8 +7,8 @@ import com.anythink.core.api.ATInitMediation;
 import com.anythink.core.common.h.y;
 import com.google.android.gms.ads.MobileAds;
 import java.util.Map;
-import k2.h;
-import v2.d;
+import m2.h;
+import x2.d;
 
 /* loaded from: classes.dex */
 public class AdmobATConst {
@@ -28,10 +28,10 @@ public class AdmobATConst {
     public static String TAG = "AdmobATConst";
 
     /* renamed from: a, reason: collision with root package name */
-    private static String f22806a = null;
+    private static String f23593a = null;
 
     /* renamed from: b, reason: collision with root package name */
-    private static boolean f22807b = false;
+    private static boolean f23594b = false;
 
     public static class DEBUGGER_CONFIG {
         public static final int Admob_INTERSTITIAL_IMAGE = 1;
@@ -61,7 +61,7 @@ public class AdmobATConst {
         h hVar;
         try {
             int intFromMap = ATInitMediation.getIntFromMap(map, ATAdConst.KEY.AD_WIDTH, 0);
-            if (!f22807b && intFromMap > 0 && !map.containsKey(ADAPTIVE_TYPE)) {
+            if (!f23594b && intFromMap > 0 && !map.containsKey(ADAPTIVE_TYPE)) {
                 map.put(ADAPTIVE_TYPE, 0);
                 map.put(ADAPTIVE_ORIENTATION, 0);
             }
@@ -71,15 +71,15 @@ public class AdmobATConst {
             String stringFromMap = ATInitMediation.getStringFromMap(map2, "size");
             if (intFromMap > 0) {
                 int i = (int) ((context.getResources().getDisplayMetrics().density * 300.0f) + 0.5f);
-                if (!y.f14179c.equals(stringFromMap)) {
+                if (!y.f14965c.equals(stringFromMap)) {
                     if (intFromMap < i) {
                         Log.e("anythink_network", TAG + ": The width is too small. It is recommended to be larger than 300dp to avoid affecting the ad fill rate.");
                         hVar = a(context, map, i);
                     } else {
                         hVar = a(context, map, intFromMap);
                     }
-                    int i6 = hVar.f38591a;
-                    return hVar != h.f38590o ? h.i : hVar;
+                    int i4 = hVar.f39380a;
+                    return hVar != h.f39379o ? h.i : hVar;
                 }
             }
             switch (stringFromMap.hashCode()) {
@@ -91,7 +91,7 @@ public class AdmobATConst {
                     c9 = 65535;
                     break;
                 case -559799608:
-                    if (stringFromMap.equals(y.f14179c)) {
+                    if (stringFromMap.equals(y.f14965c)) {
                         c9 = 1;
                         break;
                     }
@@ -105,7 +105,7 @@ public class AdmobATConst {
                     c9 = 65535;
                     break;
                 case 1507809730:
-                    if (stringFromMap.equals(y.f14177a)) {
+                    if (stringFromMap.equals(y.f14963a)) {
                         c9 = 5;
                         break;
                     }
@@ -119,7 +119,7 @@ public class AdmobATConst {
                     c9 = 65535;
                     break;
                 case 1622564786:
-                    if (stringFromMap.equals(y.f14180d)) {
+                    if (stringFromMap.equals(y.f14966d)) {
                         c9 = 3;
                         break;
                     }
@@ -130,23 +130,23 @@ public class AdmobATConst {
                     break;
             }
             if (c9 == 0) {
-                hVar = h.f38586k;
+                hVar = h.f39375k;
             } else if (c9 == 1) {
-                hVar = h.f38588m;
+                hVar = h.f39377m;
             } else if (c9 == 2) {
-                hVar = h.f38585j;
+                hVar = h.f39374j;
             } else if (c9 == 3) {
-                hVar = h.f38587l;
+                hVar = h.f39376l;
             } else if (c9 != 4) {
                 hVar = h.i;
             } else {
                 int a9 = a(context, Math.min(context.getResources().getDisplayMetrics().widthPixels, context.getResources().getDisplayMetrics().heightPixels));
                 h hVar2 = h.i;
                 hVar = d.k(context, a9, 0);
-                hVar.f38594d = true;
+                hVar.f39383d = true;
             }
-            int i62 = hVar.f38591a;
-            if (hVar != h.f38590o) {
+            int i42 = hVar.f39380a;
+            if (hVar != h.f39379o) {
             }
         } catch (Throwable th) {
             Log.e(TAG, "getAdaptiveBannerAdSize() >>> failed: " + th.getMessage());
@@ -155,23 +155,23 @@ public class AdmobATConst {
     }
 
     public static String getNetworkVersion() {
-        String str = f22806a;
+        String str = f23593a;
         if (str != null) {
             return str;
         }
         try {
             String tVar = MobileAds.b().toString();
-            f22806a = tVar;
+            f23593a = tVar;
             return tVar;
         } catch (Throwable unused) {
-            f22806a = "";
+            f23593a = "";
             return "";
         }
     }
 
-    public static void setDisableAutoUseAdaptiveBanner(boolean z3) {
-        Log.e(TAG, "setDisableAutoUseAdaptiveBanner: ".concat(String.valueOf(z3)));
-        f22807b = z3;
+    public static void setDisableAutoUseAdaptiveBanner(boolean z6) {
+        Log.e(TAG, "setDisableAutoUseAdaptiveBanner: ".concat(String.valueOf(z6)));
+        f23594b = z6;
     }
 
     private static h a(Context context, Map<String, Object> map, int i) {
@@ -184,15 +184,15 @@ public class AdmobATConst {
                 int q8 = d.q(context, 1);
                 h hVar2 = new h(a9, 0);
                 if (q8 == -1) {
-                    return h.f38590o;
+                    return h.f39379o;
                 }
-                hVar2.f38596f = q8;
-                hVar2.f38595e = true;
+                hVar2.f39385f = q8;
+                hVar2.f39384e = true;
                 return hVar2;
             }
             h hVar3 = h.i;
             h k9 = d.k(context, a9, 1);
-            k9.f38594d = true;
+            k9.f39383d = true;
             return k9;
         }
         if (intFromMap2 != 2) {
@@ -200,16 +200,16 @@ public class AdmobATConst {
                 h hVar4 = h.i;
                 int q9 = d.q(context, 0);
                 if (q9 == -1) {
-                    return h.f38590o;
+                    return h.f39379o;
                 }
                 h hVar5 = new h(a9, 0);
-                hVar5.f38596f = q9;
-                hVar5.f38595e = true;
+                hVar5.f39385f = q9;
+                hVar5.f39384e = true;
                 return hVar5;
             }
             h hVar6 = h.i;
             h k10 = d.k(context, a9, 0);
-            k10.f38594d = true;
+            k10.f39383d = true;
             return k10;
         }
         if (intFromMap == 1) {
@@ -217,15 +217,15 @@ public class AdmobATConst {
             int q10 = d.q(context, 2);
             h hVar8 = new h(a9, 0);
             if (q10 == -1) {
-                return h.f38590o;
+                return h.f39379o;
             }
-            hVar8.f38596f = q10;
-            hVar8.f38595e = true;
+            hVar8.f39385f = q10;
+            hVar8.f39384e = true;
             return hVar8;
         }
         h hVar9 = h.i;
         h k11 = d.k(context, a9, 2);
-        k11.f38594d = true;
+        k11.f39383d = true;
         return k11;
     }
 
@@ -241,7 +241,7 @@ public class AdmobATConst {
                 c9 = 65535;
                 break;
             case -559799608:
-                if (str.equals(y.f14179c)) {
+                if (str.equals(y.f14965c)) {
                     c9 = 1;
                     break;
                 }
@@ -255,7 +255,7 @@ public class AdmobATConst {
                 c9 = 65535;
                 break;
             case 1507809730:
-                if (str.equals(y.f14177a)) {
+                if (str.equals(y.f14963a)) {
                     c9 = 5;
                     break;
                 }
@@ -269,7 +269,7 @@ public class AdmobATConst {
                 c9 = 65535;
                 break;
             case 1622564786:
-                if (str.equals(y.f14180d)) {
+                if (str.equals(y.f14966d)) {
                     c9 = 3;
                     break;
                 }
@@ -280,16 +280,16 @@ public class AdmobATConst {
                 break;
         }
         if (c9 == 0) {
-            return h.f38586k;
+            return h.f39375k;
         }
         if (c9 == 1) {
-            return h.f38588m;
+            return h.f39377m;
         }
         if (c9 == 2) {
-            return h.f38585j;
+            return h.f39374j;
         }
         if (c9 == 3) {
-            return h.f38587l;
+            return h.f39376l;
         }
         if (c9 != 4) {
             return h.i;
@@ -297,16 +297,16 @@ public class AdmobATConst {
         int a9 = a(context, Math.min(context.getResources().getDisplayMetrics().widthPixels, context.getResources().getDisplayMetrics().heightPixels));
         h hVar = h.i;
         h k9 = d.k(context, a9, 0);
-        k9.f38594d = true;
+        k9.f39383d = true;
         return k9;
     }
 
-    private static int a(Context context, float f3) {
+    private static int a(Context context, float f2) {
         float f9 = context.getResources().getDisplayMetrics().density;
         if (f9 <= 0.0f) {
             f9 = 1.0f;
         }
-        return (int) ((f3 / f9) + 0.5f);
+        return (int) ((f2 / f9) + 0.5f);
     }
 
     private static int a(Context context) {

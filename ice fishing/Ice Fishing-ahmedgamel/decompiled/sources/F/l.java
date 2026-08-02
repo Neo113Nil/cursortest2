@@ -8,17 +8,17 @@ import android.content.res.Resources;
 public final class l {
 
     /* renamed from: a, reason: collision with root package name */
-    public final ColorStateList f868a;
+    public final ColorStateList f931a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Configuration f869b;
+    public final Configuration f932b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f870c;
+    public final int f933c;
 
     public l(ColorStateList colorStateList, Configuration configuration, Resources.Theme theme) {
-        this.f868a = colorStateList;
-        this.f869b = configuration;
-        this.f870c = theme == null ? 0 : theme.hashCode();
+        this.f931a = colorStateList;
+        this.f932b = configuration;
+        this.f933c = theme == null ? 0 : theme.hashCode();
     }
 }

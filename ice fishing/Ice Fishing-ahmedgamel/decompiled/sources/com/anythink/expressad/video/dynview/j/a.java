@@ -39,66 +39,66 @@ import java.util.Map;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f21231a = "DataEnergizeWrapper";
+    public static final String f22018a = "DataEnergizeWrapper";
 
     /* renamed from: k, reason: collision with root package name */
-    private static boolean f21232k = false;
+    private static boolean f22019k = false;
 
     /* renamed from: c, reason: collision with root package name */
-    private com.anythink.expressad.video.dynview.i.c.b f21234c;
+    private com.anythink.expressad.video.dynview.i.c.b f22021c;
 
     /* renamed from: d, reason: collision with root package name */
-    private Map<String, Bitmap> f21235d;
+    private Map<String, Bitmap> f22022d;
 
     /* renamed from: e, reason: collision with root package name */
-    private volatile boolean f21236e;
+    private volatile boolean f22023e;
 
     /* renamed from: f, reason: collision with root package name */
-    private String f21237f = "#FFFFFFFF";
+    private String f22024f = "#FFFFFFFF";
 
     /* renamed from: g, reason: collision with root package name */
-    private String f21238g = "#60000000";
+    private String f22025g = "#60000000";
 
     /* renamed from: h, reason: collision with root package name */
-    private String f21239h = "#FF5F5F5F";
+    private String f22026h = "#FF5F5F5F";
     private String i = "#90ECECEC";
 
     /* renamed from: j, reason: collision with root package name */
-    private volatile long f21240j = 0;
+    private volatile long f22027j = 0;
 
     /* renamed from: l, reason: collision with root package name */
-    private com.anythink.expressad.video.dynview.i.c.a f21241l = null;
+    private com.anythink.expressad.video.dynview.i.c.a f22028l = null;
 
     /* renamed from: m, reason: collision with root package name */
-    private boolean f21242m = false;
+    private boolean f22029m = false;
 
     /* renamed from: n, reason: collision with root package name */
-    private int f21243n = 0;
+    private int f22030n = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    public com.anythink.expressad.video.dynview.e.a f21233b = new com.anythink.expressad.video.dynview.e.a() { // from class: com.anythink.expressad.video.dynview.j.a.1
+    public com.anythink.expressad.video.dynview.e.a f22020b = new com.anythink.expressad.video.dynview.e.a() { // from class: com.anythink.expressad.video.dynview.j.a.1
         @Override // com.anythink.expressad.video.dynview.e.a
         public final void a() {
-            if (!a.this.f21242m || a.this.f21234c == null) {
+            if (!a.this.f22029m || a.this.f22021c == null) {
                 return;
             }
-            a.this.f21234c.a(a.this.f21243n * 1000, a.this.f21241l);
-            a.this.f21242m = false;
+            a.this.f22021c.a(a.this.f22030n * 1000, a.this.f22028l);
+            a.this.f22029m = false;
         }
 
         @Override // com.anythink.expressad.video.dynview.e.a
         public final void b() {
-            if (a.this.f21234c != null) {
-                a.this.f21234c.c();
-                a.this.f21242m = true;
+            if (a.this.f22021c != null) {
+                a.this.f22021c.c();
+                a.this.f22029m = true;
             }
         }
 
         @Override // com.anythink.expressad.video.dynview.e.a
         public final void c() {
-            if (a.this.f21234c != null) {
-                a.this.f21234c.c();
-                a.this.f21242m = true;
+            if (a.this.f22021c != null) {
+                a.this.f22021c.c();
+                a.this.f22029m = true;
             }
         }
     };
@@ -107,24 +107,24 @@ public final class a {
     public class AnonymousClass5 extends com.anythink.expressad.widget.a {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ Map f21263a;
+        final /* synthetic */ Map f22050a;
 
         public AnonymousClass5(Map map) {
-            this.f21263a = map;
+            this.f22050a = map;
         }
 
         @Override // com.anythink.expressad.widget.a
         public final void a(View view) {
-            if (a.this.f21236e) {
+            if (a.this.f22023e) {
                 return;
             }
             a.f(a.this);
-            a.a(a.this, this.f21263a);
+            a.a(a.this, this.f22050a);
         }
     }
 
     public static /* synthetic */ boolean f(a aVar) {
-        aVar.f21236e = true;
+        aVar.f22023e = true;
         return true;
     }
 
@@ -137,9 +137,9 @@ public final class a {
             return;
         }
         if (map != null && map.containsKey("is_dy_success")) {
-            f21232k = ((Boolean) map.get("is_dy_success")).booleanValue();
+            f22019k = ((Boolean) map.get("is_dy_success")).booleanValue();
         }
-        f21232k = false;
+        f22019k = false;
         ImageView imageView = (ImageView) view.findViewById(a("anythink_reward_icon_riv"));
         TextView textView = (TextView) view.findViewById(a("anythink_reward_title_tv"));
         LinearLayout linearLayout = (LinearLayout) view.findViewById(a("anythink_reward_stars_mllv"));
@@ -148,12 +148,12 @@ public final class a {
         TextView textView3 = (TextView) view.findViewById(a("anythink_reward_desc_tv"));
         RelativeLayout relativeLayout = (RelativeLayout) view.findViewById(a("anythink_reward_bottom_layout"));
         ArrayList arrayList = new ArrayList();
-        List<d> g4 = cVar.g();
-        if (g4 == null || g4.size() <= 0) {
+        List<d> g9 = cVar.g();
+        if (g9 == null || g9.size() <= 0) {
             eVar.a(com.anythink.expressad.video.dynview.c.b.CAMPAIGNEX_IS_NULL);
             return;
         }
-        d dVar = g4.get(0);
+        d dVar = g9.get(0);
         if (dVar == null) {
             eVar.a(com.anythink.expressad.video.dynview.c.b.CAMPAIGNEX_IS_NULL);
             return;
@@ -216,22 +216,22 @@ public final class a {
 
     public final void c(com.anythink.expressad.video.dynview.c cVar, View view, final Map map, e eVar) {
         try {
-            if (this.f21235d == null) {
-                this.f21235d = new HashMap();
+            if (this.f22022d == null) {
+                this.f22022d = new HashMap();
             }
-            final List<d> g4 = cVar.g();
+            final List<d> g9 = cVar.g();
             if (view.getContext() == null) {
                 eVar.a(com.anythink.expressad.video.dynview.c.b.NOT_FOUND_CONTEXT);
                 return;
             }
             if (map != null && map.containsKey("is_dy_success")) {
-                f21232k = ((Boolean) map.get("is_dy_success")).booleanValue();
+                f22019k = ((Boolean) map.get("is_dy_success")).booleanValue();
             }
-            f21232k = false;
+            f22019k = false;
             ListView listView = (ListView) view.findViewById(a("anythink_order_view_lv"));
             GridView gridView = (GridView) view.findViewById(a("anythink_order_view_h_lv"));
             ImageView imageView = (ImageView) view.findViewById(a("anythink_order_view_iv_close"));
-            com.anythink.expressad.video.dynview.ordercamp.a.a aVar = new com.anythink.expressad.video.dynview.ordercamp.a.a(g4);
+            com.anythink.expressad.video.dynview.ordercamp.a.a aVar = new com.anythink.expressad.video.dynview.ordercamp.a.a(g9);
             if (cVar.e() == 1) {
                 if (listView != null) {
                     try {
@@ -250,28 +250,28 @@ public final class a {
                     listView.setAdapter((ListAdapter) aVar);
                     listView.setOnItemClickListener(new AdapterView.OnItemClickListener() { // from class: com.anythink.expressad.video.dynview.j.a.7
                         @Override // android.widget.AdapterView.OnItemClickListener
-                        public final void onItemClick(AdapterView<?> adapterView, View view2, int i6, long j6) {
-                            a.a(a.this, map, g4, i6);
+                        public final void onItemClick(AdapterView<?> adapterView, View view2, int i4, long j6) {
+                            a.a(a.this, map, g9, i4);
                         }
                     });
                 }
             } else if (gridView != null) {
-                int d2 = (int) cVar.d();
-                int size = d2 / g4.size();
-                int i6 = size / 9;
-                int i9 = i6 / 2;
+                int d9 = (int) cVar.d();
+                int size = d9 / g9.size();
+                int i4 = size / 9;
+                int i6 = i4 / 2;
                 LinearLayout.LayoutParams layoutParams2 = (LinearLayout.LayoutParams) gridView.getLayoutParams();
-                layoutParams2.width = d2 - (i6 * 2);
+                layoutParams2.width = d9 - (i4 * 2);
                 gridView.setLayoutParams(layoutParams2);
-                gridView.setColumnWidth((size - i6) - (i9 / 2));
-                gridView.setHorizontalSpacing(i9);
+                gridView.setColumnWidth((size - i4) - (i6 / 2));
+                gridView.setHorizontalSpacing(i6);
                 gridView.setStretchMode(0);
-                gridView.setNumColumns(g4.size());
+                gridView.setNumColumns(g9.size());
                 gridView.setAdapter((ListAdapter) aVar);
                 gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() { // from class: com.anythink.expressad.video.dynview.j.a.8
                     @Override // android.widget.AdapterView.OnItemClickListener
-                    public final void onItemClick(AdapterView<?> adapterView, View view2, int i10, long j6) {
-                        a.a(a.this, map, g4, i10);
+                    public final void onItemClick(AdapterView<?> adapterView, View view2, int i9, long j6) {
+                        a.a(a.this, map, g9, i9);
                     }
                 });
             }
@@ -313,13 +313,13 @@ public final class a {
         d dVar3;
         int i;
         RoundImageView roundImageView;
-        int i6;
+        int i4;
         long parseLong;
         FrameLayout.LayoutParams layoutParams;
-        if (this.f21235d == null) {
-            this.f21235d = new HashMap();
+        if (this.f22022d == null) {
+            this.f22022d = new HashMap();
         }
-        final List<d> g4 = cVar.g();
+        final List<d> g9 = cVar.g();
         if (view == null) {
             eVar.a(com.anythink.expressad.video.dynview.c.b.NOT_FOUND_ROOTVIEW);
             return;
@@ -329,13 +329,13 @@ public final class a {
             eVar.a(com.anythink.expressad.video.dynview.c.b.NOT_FOUND_CONTEXT);
             return;
         }
-        if (g4 == null || g4.size() <= 1) {
+        if (g9 == null || g9.size() <= 1) {
             dVar = null;
             dVar2 = null;
         } else {
-            dVar = g4.get(0);
+            dVar = g9.get(0);
             dVar.a(1);
-            dVar2 = g4.get(1);
+            dVar2 = g9.get(1);
             dVar2.a(2);
         }
         if (dVar == null && eVar != null) {
@@ -346,7 +346,7 @@ public final class a {
             eVar.a(com.anythink.expressad.video.dynview.c.b.CAMPAIGNEX_IS_NULL);
             return;
         }
-        f21232k = false;
+        f22019k = false;
         RelativeLayout relativeLayout = (RelativeLayout) view.findViewById(a("anythink_top_item_rl"));
         AnyThinkImageView anyThinkImageView = (AnyThinkImageView) view.findViewById(a("anythink_top_iv"));
         ATRotationView aTRotationView = (ATRotationView) view.findViewById(a("anythink_top_ration"));
@@ -363,11 +363,11 @@ public final class a {
             relativeLayout.setOnClickListener(new com.anythink.expressad.widget.a() { // from class: com.anythink.expressad.video.dynview.j.a.3
                 @Override // com.anythink.expressad.widget.a
                 public final void a(View view2) {
-                    if (a.this.f21236e) {
+                    if (a.this.f22023e) {
                         return;
                     }
                     a.f(a.this);
-                    a.a(a.this, map, g4, 0);
+                    a.a(a.this, map, g9, 0);
                 }
             });
         }
@@ -417,11 +417,11 @@ public final class a {
                     relativeLayout2.setOnClickListener(new com.anythink.expressad.widget.a() { // from class: com.anythink.expressad.video.dynview.j.a.4
                         @Override // com.anythink.expressad.widget.a
                         public final void a(View view2) {
-                            if (a.this.f21236e) {
+                            if (a.this.f22023e) {
                                 return;
                             }
                             a.f(a.this);
-                            a.a(a.this, map, g4, 1);
+                            a.a(a.this, map, g9, 1);
                         }
                     });
                 }
@@ -442,17 +442,17 @@ public final class a {
                             } else {
                                 aTRotationView2.setWidthRatio(1.0f);
                                 aTRotationView2.setHeightRatio(1.0f);
-                                i6 = 0;
+                                i4 = 0;
                                 aTRotationView2.setAutoscroll(false);
                             }
                         } else {
-                            i6 = 0;
+                            i4 = 0;
                             aTRotationView2.setWidthRatio(1.0f);
                             aTRotationView2.setHeightRatio(1.0f);
                             aTRotationView2.setAutoscroll(false);
                         }
                         if (roundImageView2 != null) {
-                            roundImageView2.setType(i6);
+                            roundImageView2.setType(i4);
                             a(dVar4.bl(), roundImageView2);
                         }
                         if (textView2 != null) {
@@ -460,34 +460,34 @@ public final class a {
                         }
                         String at = dVar3.at();
                         int e9 = cVar.e();
-                        String a9 = z.a(at, com.anythink.expressad.foundation.g.g.a.b.f19426T);
-                        z.a(at, com.anythink.expressad.foundation.g.g.a.b.f19427U);
+                        String a9 = z.a(at, com.anythink.expressad.foundation.g.g.a.b.f20213T);
+                        z.a(at, com.anythink.expressad.foundation.g.g.a.b.f20214U);
                         parseLong = !TextUtils.isEmpty(a9) ? Long.parseLong(a9) : 0L;
                         if (parseLong != 0) {
                             if (map != null && map.containsKey("is_dy_success")) {
-                                f21232k = ((Boolean) map.get("is_dy_success")).booleanValue();
+                                f22019k = ((Boolean) map.get("is_dy_success")).booleanValue();
                             }
-                            f21232k = false;
+                            f22019k = false;
                             TextView textView3 = (TextView) view.findViewById(a("anythink_choice_one_countdown_tv"));
                             if (textView3 != null) {
                                 textView3.setTextSize(11.0f);
-                                textView3.setTextColor(Color.parseColor(this.f21237f));
-                                String str = this.f21238g;
+                                textView3.setTextColor(Color.parseColor(this.f22024f));
+                                String str = this.f22025g;
                                 GradientDrawable gradientDrawable = new GradientDrawable();
                                 gradientDrawable.setColor(Color.parseColor(str));
                                 gradientDrawable.setCornerRadius(v.b(textView3.getContext(), 12.0f));
                                 gradientDrawable.setStroke(v.b(textView3.getContext(), 1.0f), Color.parseColor(str));
                                 textView3.setBackgroundDrawable(gradientDrawable);
                                 if (e9 == 2 && (layoutParams = (FrameLayout.LayoutParams) textView3.getLayoutParams()) != null) {
-                                    int d2 = v.d(context);
+                                    int d9 = v.d(context);
                                     int b9 = v.b(context, 10.0f);
-                                    layoutParams.setMargins(b9, b9, d2, b9);
+                                    layoutParams.setMargins(b9, b9, d9, b9);
                                 }
                                 textView3.setVisibility(0);
                                 textView3.setOnClickListener(new AnonymousClass5(map));
-                                this.f21241l = new AnonymousClass6(textView3, map);
-                                com.anythink.expressad.video.dynview.i.c.b a10 = new com.anythink.expressad.video.dynview.i.c.b().a(parseLong * 1000).a().a(this.f21241l);
-                                this.f21234c = a10;
+                                this.f22028l = new AnonymousClass6(textView3, map);
+                                com.anythink.expressad.video.dynview.i.c.b a10 = new com.anythink.expressad.video.dynview.i.c.b().a(parseLong * 1000).a().a(this.f22028l);
+                                this.f22021c = a10;
                                 a10.b();
                             }
                             ImageView imageView3 = (ImageView) view.findViewById(a("anythink_iv_link"));
@@ -505,15 +505,15 @@ public final class a {
                         return;
                     }
                 }
-                i6 = 0;
+                i4 = 0;
                 if (roundImageView2 != null) {
                 }
                 if (textView2 != null) {
                 }
                 String at2 = dVar3.at();
                 int e92 = cVar.e();
-                String a92 = z.a(at2, com.anythink.expressad.foundation.g.g.a.b.f19426T);
-                z.a(at2, com.anythink.expressad.foundation.g.g.a.b.f19427U);
+                String a92 = z.a(at2, com.anythink.expressad.foundation.g.g.a.b.f20213T);
+                z.a(at2, com.anythink.expressad.foundation.g.g.a.b.f20214U);
                 if (!TextUtils.isEmpty(a92)) {
                 }
                 if (parseLong != 0) {
@@ -533,15 +533,15 @@ public final class a {
         }
         if (anyThinkImageView2 != null) {
         }
-        i6 = 0;
+        i4 = 0;
         if (roundImageView2 != null) {
         }
         if (textView2 != null) {
         }
         String at22 = dVar3.at();
         int e922 = cVar.e();
-        String a922 = z.a(at22, com.anythink.expressad.foundation.g.g.a.b.f19426T);
-        z.a(at22, com.anythink.expressad.foundation.g.g.a.b.f19427U);
+        String a922 = z.a(at22, com.anythink.expressad.foundation.g.g.a.b.f20213T);
+        z.a(at22, com.anythink.expressad.foundation.g.g.a.b.f20214U);
         if (!TextUtils.isEmpty(a922)) {
         }
         if (parseLong != 0) {
@@ -554,38 +554,38 @@ public final class a {
     public class AnonymousClass10 implements com.anythink.expressad.foundation.g.d.c {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ int f21245a;
+        final /* synthetic */ int f22032a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ ImageView f21246b;
+        final /* synthetic */ ImageView f22033b;
 
         public AnonymousClass10(int i, ImageView imageView) {
-            this.f21245a = i;
-            this.f21246b = imageView;
+            this.f22032a = i;
+            this.f22033b = imageView;
         }
 
         @Override // com.anythink.expressad.foundation.g.d.c
         public final void a(final Bitmap bitmap, String str) {
             if (bitmap == null || bitmap.isRecycled()) {
-                int a9 = k.a(this.f21246b.getContext(), "anythink_icon_play_bg", k.f19632c);
-                this.f21246b.setBackgroundColor(Color.parseColor(a.this.f21239h));
-                this.f21246b.setImageResource(a9);
-                this.f21246b.setScaleType(ImageView.ScaleType.CENTER);
+                int a9 = k.a(this.f22033b.getContext(), "anythink_icon_play_bg", k.f20419c);
+                this.f22033b.setBackgroundColor(Color.parseColor(a.this.f22026h));
+                this.f22033b.setImageResource(a9);
+                this.f22033b.setScaleType(ImageView.ScaleType.CENTER);
                 return;
             }
-            int i = this.f21245a;
+            int i = this.f22032a;
             if (i != 501 && i != 802) {
-                this.f21246b.setImageBitmap(bitmap);
+                this.f22033b.setImageBitmap(bitmap);
             } else {
                 com.anythink.expressad.foundation.g.i.a.b().execute(new Runnable() { // from class: com.anythink.expressad.video.dynview.j.a.10.1
                     @Override // java.lang.Runnable
                     public final void run() {
                         try {
                             final Bitmap a10 = h.a(bitmap);
-                            AnonymousClass10.this.f21246b.post(new Runnable() { // from class: com.anythink.expressad.video.dynview.j.a.10.1.1
+                            AnonymousClass10.this.f22033b.post(new Runnable() { // from class: com.anythink.expressad.video.dynview.j.a.10.1.1
                                 @Override // java.lang.Runnable
                                 public final void run() {
-                                    AnonymousClass10.this.f21246b.setImageBitmap(a10);
+                                    AnonymousClass10.this.f22033b.setImageBitmap(a10);
                                 }
                             });
                         } catch (Exception e9) {
@@ -599,10 +599,10 @@ public final class a {
         @Override // com.anythink.expressad.foundation.g.d.c
         public final void a(String str, String str2) {
             try {
-                int a9 = k.a(this.f21246b.getContext(), "anythink_icon_play_bg", k.f19632c);
-                this.f21246b.setBackgroundColor(Color.parseColor(a.this.f21239h));
-                this.f21246b.setImageResource(a9);
-                this.f21246b.setScaleType(ImageView.ScaleType.CENTER);
+                int a9 = k.a(this.f22033b.getContext(), "anythink_icon_play_bg", k.f20419c);
+                this.f22033b.setBackgroundColor(Color.parseColor(a.this.f22026h));
+                this.f22033b.setImageResource(a9);
+                this.f22033b.setScaleType(ImageView.ScaleType.CENTER);
             } catch (Exception e9) {
                 e9.getMessage();
             }
@@ -613,53 +613,53 @@ public final class a {
     public class AnonymousClass6 implements com.anythink.expressad.video.dynview.i.c.a {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ TextView f21265a;
+        final /* synthetic */ TextView f22052a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ Map f21266b;
+        final /* synthetic */ Map f22053b;
 
         public AnonymousClass6(TextView textView, Map map) {
-            this.f21265a = textView;
-            this.f21266b = map;
+            this.f22052a = textView;
+            this.f22053b = map;
         }
 
         @Override // com.anythink.expressad.video.dynview.i.c.a
         public final void a(long j6) {
             String str;
-            a.this.f21243n = (int) (j6 / 1000);
-            long j9 = a.this.f21243n;
-            Context context = this.f21265a.getContext();
+            a.this.f22030n = (int) (j6 / 1000);
+            long j9 = a.this.f22030n;
+            Context context = this.f22052a.getContext();
             String e9 = m.e(context);
-            if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21096S) || e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21097T)) {
-                str = j9 + " " + context.getString(k.a(context, "anythink_cm_video_auto_play_after", k.f19636g));
-            } else if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21098U)) {
-                str = com.anythink.expressad.video.dynview.a.a.f21087I + j9 + " Sekunden";
-            } else if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21099V)) {
+            if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21883S) || e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21884T)) {
+                str = j9 + " " + context.getString(k.a(context, "anythink_cm_video_auto_play_after", k.f20423g));
+            } else if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21885U)) {
+                str = com.anythink.expressad.video.dynview.a.a.f21874I + j9 + " Sekunden";
+            } else if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21886V)) {
                 str = j9 + com.anythink.expressad.video.dynview.a.a.J;
-            } else if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21100W)) {
-                str = com.anythink.expressad.video.dynview.a.a.f21088K + j9 + " secondes";
-            } else if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21101X)) {
-                str = " ثوان" + j9 + com.anythink.expressad.video.dynview.a.a.f21089L;
+            } else if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21887W)) {
+                str = com.anythink.expressad.video.dynview.a.a.f21875K + j9 + " secondes";
+            } else if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.f21888X)) {
+                str = " ثوان" + j9 + com.anythink.expressad.video.dynview.a.a.f21876L;
             } else if (e9.startsWith(com.anythink.expressad.video.dynview.a.a.Y)) {
-                str = com.anythink.expressad.video.dynview.a.a.f21090M + j9 + " секунд";
+                str = com.anythink.expressad.video.dynview.a.a.f21877M + j9 + " секунд";
             } else {
-                str = com.anythink.expressad.video.dynview.a.a.f21086H + j9 + " s";
+                str = com.anythink.expressad.video.dynview.a.a.f21873H + j9 + " s";
             }
-            this.f21265a.setText(str);
-            a.this.f21240j++;
+            this.f22052a.setText(str);
+            a.this.f22027j++;
         }
 
         @Override // com.anythink.expressad.video.dynview.i.c.a
         public final void a() {
-            a.a(a.this, this.f21266b);
+            a.a(a.this, this.f22053b);
         }
     }
 
     private void b(Map map) {
         if (map != null) {
             try {
-                if (map.containsKey(com.anythink.expressad.video.dynview.a.a.f21085G) && (map.get(com.anythink.expressad.video.dynview.a.a.f21085G) instanceof com.anythink.expressad.video.dynview.f.c)) {
-                    ((com.anythink.expressad.video.dynview.f.c) map.get(com.anythink.expressad.video.dynview.a.a.f21085G)).a();
+                if (map.containsKey(com.anythink.expressad.video.dynview.a.a.f21872G) && (map.get(com.anythink.expressad.video.dynview.a.a.f21872G) instanceof com.anythink.expressad.video.dynview.f.c)) {
+                    ((com.anythink.expressad.video.dynview.f.c) map.get(com.anythink.expressad.video.dynview.a.a.f21872G)).a();
                     b();
                 }
             } catch (Exception e9) {
@@ -692,20 +692,20 @@ public final class a {
 
     private void b() {
         com.anythink.expressad.video.dynview.i.a.a.a().b();
-        com.anythink.expressad.video.dynview.i.c.b bVar = this.f21234c;
+        com.anythink.expressad.video.dynview.i.c.b bVar = this.f22021c;
         if (bVar != null) {
             bVar.c();
-            this.f21234c = null;
+            this.f22021c = null;
         }
-        com.anythink.expressad.video.dynview.b.a.a().f21136a = null;
-        if (this.f21233b != null) {
-            this.f21233b = null;
+        com.anythink.expressad.video.dynview.b.a.a().f21923a = null;
+        if (this.f22020b != null) {
+            this.f22020b = null;
         }
-        Map<String, Bitmap> map = this.f21235d;
+        Map<String, Bitmap> map = this.f22022d;
         if (map != null) {
             if (map.entrySet() != null) {
                 try {
-                    Iterator<Map.Entry<String, Bitmap>> it = this.f21235d.entrySet().iterator();
+                    Iterator<Map.Entry<String, Bitmap>> it = this.f22022d.entrySet().iterator();
                     while (it.hasNext()) {
                         Map.Entry<String, Bitmap> next = it.next();
                         if (next != null && next.getValue() != null && !next.getValue().isRecycled()) {
@@ -717,15 +717,15 @@ public final class a {
                     e9.printStackTrace();
                 }
             }
-            this.f21235d.clear();
+            this.f22022d.clear();
         }
     }
 
     public static /* synthetic */ void b(a aVar, Map map) {
         if (map != null) {
             try {
-                if (map.containsKey(com.anythink.expressad.video.dynview.a.a.f21085G) && (map.get(com.anythink.expressad.video.dynview.a.a.f21085G) instanceof com.anythink.expressad.video.dynview.f.c)) {
-                    ((com.anythink.expressad.video.dynview.f.c) map.get(com.anythink.expressad.video.dynview.a.a.f21085G)).a();
+                if (map.containsKey(com.anythink.expressad.video.dynview.a.a.f21872G) && (map.get(com.anythink.expressad.video.dynview.a.a.f21872G) instanceof com.anythink.expressad.video.dynview.f.c)) {
+                    ((com.anythink.expressad.video.dynview.f.c) map.get(com.anythink.expressad.video.dynview.a.a.f21872G)).a();
                     aVar.b();
                 }
             } catch (Exception e9) {
@@ -760,34 +760,34 @@ public final class a {
 
     private void a(String str, Context context, View view, int i, Map map, d dVar) {
         FrameLayout.LayoutParams layoutParams;
-        String a9 = z.a(str, com.anythink.expressad.foundation.g.g.a.b.f19426T);
-        z.a(str, com.anythink.expressad.foundation.g.g.a.b.f19427U);
+        String a9 = z.a(str, com.anythink.expressad.foundation.g.g.a.b.f20213T);
+        z.a(str, com.anythink.expressad.foundation.g.g.a.b.f20214U);
         long parseLong = !TextUtils.isEmpty(a9) ? Long.parseLong(a9) : 0L;
         if (parseLong != 0) {
             if (map != null && map.containsKey("is_dy_success")) {
-                f21232k = ((Boolean) map.get("is_dy_success")).booleanValue();
+                f22019k = ((Boolean) map.get("is_dy_success")).booleanValue();
             }
-            f21232k = false;
+            f22019k = false;
             TextView textView = (TextView) view.findViewById(a("anythink_choice_one_countdown_tv"));
             if (textView != null) {
                 textView.setTextSize(11.0f);
-                textView.setTextColor(Color.parseColor(this.f21237f));
-                String str2 = this.f21238g;
+                textView.setTextColor(Color.parseColor(this.f22024f));
+                String str2 = this.f22025g;
                 GradientDrawable gradientDrawable = new GradientDrawable();
                 gradientDrawable.setColor(Color.parseColor(str2));
                 gradientDrawable.setCornerRadius(v.b(textView.getContext(), 12.0f));
                 gradientDrawable.setStroke(v.b(textView.getContext(), 1.0f), Color.parseColor(str2));
                 textView.setBackgroundDrawable(gradientDrawable);
                 if (i == 2 && (layoutParams = (FrameLayout.LayoutParams) textView.getLayoutParams()) != null) {
-                    int d2 = v.d(context);
+                    int d9 = v.d(context);
                     int b9 = v.b(context, 10.0f);
-                    layoutParams.setMargins(b9, b9, d2, b9);
+                    layoutParams.setMargins(b9, b9, d9, b9);
                 }
                 textView.setVisibility(0);
                 textView.setOnClickListener(new AnonymousClass5(map));
-                this.f21241l = new AnonymousClass6(textView, map);
-                com.anythink.expressad.video.dynview.i.c.b a10 = new com.anythink.expressad.video.dynview.i.c.b().a(parseLong * 1000).a().a(this.f21241l);
-                this.f21234c = a10;
+                this.f22028l = new AnonymousClass6(textView, map);
+                com.anythink.expressad.video.dynview.i.c.b a10 = new com.anythink.expressad.video.dynview.i.c.b().a(parseLong * 1000).a().a(this.f22028l);
+                this.f22021c = a10;
                 a10.b();
             }
             ImageView imageView = (ImageView) view.findViewById(a("anythink_iv_link"));
@@ -830,8 +830,8 @@ public final class a {
                     return;
                 }
                 imageView2.setImageBitmap(bitmap);
-                if (a.this.f21235d != null) {
-                    a.this.f21235d.put(s.a(str), bitmap);
+                if (a.this.f22022d != null) {
+                    a.this.f22022d.put(s.a(str), bitmap);
                     a.a(a.this, cVar, view);
                 }
             }
@@ -870,8 +870,8 @@ public final class a {
     private void a(Map map) {
         if (map != null) {
             try {
-                if (map.containsKey(com.anythink.expressad.video.dynview.a.a.f21084F) && (map.get(com.anythink.expressad.video.dynview.a.a.f21084F) instanceof com.anythink.expressad.video.dynview.f.d)) {
-                    ((com.anythink.expressad.video.dynview.f.d) map.get(com.anythink.expressad.video.dynview.a.a.f21084F)).a();
+                if (map.containsKey(com.anythink.expressad.video.dynview.a.a.f21871F) && (map.get(com.anythink.expressad.video.dynview.a.a.f21871F) instanceof com.anythink.expressad.video.dynview.f.d)) {
+                    ((com.anythink.expressad.video.dynview.f.d) map.get(com.anythink.expressad.video.dynview.a.a.f21871F)).a();
                     b();
                 }
             } catch (Exception e9) {
@@ -884,16 +884,16 @@ public final class a {
         if (map == null || list == null || list.size() <= 1) {
             return;
         }
-        if (map.containsKey(com.anythink.expressad.video.dynview.a.a.f21084F) && (map.get(com.anythink.expressad.video.dynview.a.a.f21084F) instanceof com.anythink.expressad.video.dynview.f.d)) {
-            com.anythink.expressad.video.dynview.f.d dVar = (com.anythink.expressad.video.dynview.f.d) map.get(com.anythink.expressad.video.dynview.a.a.f21084F);
+        if (map.containsKey(com.anythink.expressad.video.dynview.a.a.f21871F) && (map.get(com.anythink.expressad.video.dynview.a.a.f21871F) instanceof com.anythink.expressad.video.dynview.f.d)) {
+            com.anythink.expressad.video.dynview.f.d dVar = (com.anythink.expressad.video.dynview.f.d) map.get(com.anythink.expressad.video.dynview.a.a.f21871F);
             if (dVar != null) {
                 dVar.a(list.get(i));
             }
             b();
             return;
         }
-        if (map.containsKey(com.anythink.expressad.video.dynview.a.a.f21085G) && (map.get(com.anythink.expressad.video.dynview.a.a.f21085G) instanceof com.anythink.expressad.video.dynview.f.c)) {
-            com.anythink.expressad.video.dynview.f.c cVar = (com.anythink.expressad.video.dynview.f.c) map.get(com.anythink.expressad.video.dynview.a.a.f21085G);
+        if (map.containsKey(com.anythink.expressad.video.dynview.a.a.f21872G) && (map.get(com.anythink.expressad.video.dynview.a.a.f21872G) instanceof com.anythink.expressad.video.dynview.f.c)) {
+            com.anythink.expressad.video.dynview.f.c cVar = (com.anythink.expressad.video.dynview.f.c) map.get(com.anythink.expressad.video.dynview.a.a.f21872G);
             if (cVar != null) {
                 cVar.a(list.get(i), i);
             }
@@ -902,12 +902,12 @@ public final class a {
     }
 
     private void a(com.anythink.expressad.video.dynview.c cVar, View view) {
-        Map<String, Bitmap> map = this.f21235d;
+        Map<String, Bitmap> map = this.f22022d;
         if (map == null || map.size() <= 1) {
             return;
         }
         new com.anythink.expressad.video.dynview.h.b();
-        Map<String, Bitmap> map2 = this.f21235d;
+        Map<String, Bitmap> map2 = this.f22022d;
         if (view != null) {
             com.anythink.expressad.video.dynview.i.a.a.a().a(map2, cVar, view);
         }
@@ -924,7 +924,7 @@ public final class a {
             bitmap.eraseColor(Color.parseColor(this.i));
             return bitmap;
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.printStackTrace();
             }
             return bitmap;
@@ -935,16 +935,16 @@ public final class a {
         if (map == null || list == null || list.size() <= 1) {
             return;
         }
-        if (map.containsKey(com.anythink.expressad.video.dynview.a.a.f21084F) && (map.get(com.anythink.expressad.video.dynview.a.a.f21084F) instanceof com.anythink.expressad.video.dynview.f.d)) {
-            com.anythink.expressad.video.dynview.f.d dVar = (com.anythink.expressad.video.dynview.f.d) map.get(com.anythink.expressad.video.dynview.a.a.f21084F);
+        if (map.containsKey(com.anythink.expressad.video.dynview.a.a.f21871F) && (map.get(com.anythink.expressad.video.dynview.a.a.f21871F) instanceof com.anythink.expressad.video.dynview.f.d)) {
+            com.anythink.expressad.video.dynview.f.d dVar = (com.anythink.expressad.video.dynview.f.d) map.get(com.anythink.expressad.video.dynview.a.a.f21871F);
             if (dVar != null) {
                 dVar.a((d) list.get(i));
             }
             aVar.b();
             return;
         }
-        if (map.containsKey(com.anythink.expressad.video.dynview.a.a.f21085G) && (map.get(com.anythink.expressad.video.dynview.a.a.f21085G) instanceof com.anythink.expressad.video.dynview.f.c)) {
-            com.anythink.expressad.video.dynview.f.c cVar = (com.anythink.expressad.video.dynview.f.c) map.get(com.anythink.expressad.video.dynview.a.a.f21085G);
+        if (map.containsKey(com.anythink.expressad.video.dynview.a.a.f21872G) && (map.get(com.anythink.expressad.video.dynview.a.a.f21872G) instanceof com.anythink.expressad.video.dynview.f.c)) {
+            com.anythink.expressad.video.dynview.f.c cVar = (com.anythink.expressad.video.dynview.f.c) map.get(com.anythink.expressad.video.dynview.a.a.f21872G);
             if (cVar != null) {
                 cVar.a((d) list.get(i), i);
             }
@@ -955,8 +955,8 @@ public final class a {
     public static /* synthetic */ void a(a aVar, Map map) {
         if (map != null) {
             try {
-                if (map.containsKey(com.anythink.expressad.video.dynview.a.a.f21084F) && (map.get(com.anythink.expressad.video.dynview.a.a.f21084F) instanceof com.anythink.expressad.video.dynview.f.d)) {
-                    ((com.anythink.expressad.video.dynview.f.d) map.get(com.anythink.expressad.video.dynview.a.a.f21084F)).a();
+                if (map.containsKey(com.anythink.expressad.video.dynview.a.a.f21871F) && (map.get(com.anythink.expressad.video.dynview.a.a.f21871F) instanceof com.anythink.expressad.video.dynview.f.d)) {
+                    ((com.anythink.expressad.video.dynview.f.d) map.get(com.anythink.expressad.video.dynview.a.a.f21871F)).a();
                     aVar.b();
                 }
             } catch (Exception e9) {
@@ -966,12 +966,12 @@ public final class a {
     }
 
     public static /* synthetic */ void a(a aVar, com.anythink.expressad.video.dynview.c cVar, View view) {
-        Map<String, Bitmap> map = aVar.f21235d;
+        Map<String, Bitmap> map = aVar.f22022d;
         if (map == null || map.size() <= 1) {
             return;
         }
         new com.anythink.expressad.video.dynview.h.b();
-        Map<String, Bitmap> map2 = aVar.f21235d;
+        Map<String, Bitmap> map2 = aVar.f22022d;
         if (view != null) {
             com.anythink.expressad.video.dynview.i.a.a.a().a(map2, cVar, view);
         }

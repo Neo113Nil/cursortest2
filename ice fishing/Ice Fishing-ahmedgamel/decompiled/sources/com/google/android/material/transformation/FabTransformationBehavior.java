@@ -25,8 +25,8 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
 
     @Override // B.b
     public final void c(e eVar) {
-        if (eVar.f78h == 0) {
-            eVar.f78h = 80;
+        if (eVar.f236h == 0) {
+            eVar.f236h = 80;
         }
     }
 

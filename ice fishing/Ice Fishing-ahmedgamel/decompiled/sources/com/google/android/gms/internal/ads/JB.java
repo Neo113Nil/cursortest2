@@ -6,10 +6,10 @@ import java.util.Comparator;
 public final class JB extends KB {
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f25654d;
+    public final int f26407d;
 
     public JB(int i) {
-        this.f25654d = i;
+        this.f26407d = i;
     }
 
     @Override // com.google.android.gms.internal.ads.KB
@@ -18,22 +18,22 @@ public final class JB extends KB {
     }
 
     @Override // com.google.android.gms.internal.ads.KB
-    public final KB b(int i, int i6) {
+    public final KB b(int i, int i4) {
         return this;
     }
 
     @Override // com.google.android.gms.internal.ads.KB
-    public final KB c(boolean z3, boolean z6) {
+    public final KB c(boolean z6, boolean z9) {
         return this;
     }
 
     @Override // com.google.android.gms.internal.ads.KB
-    public final KB d(boolean z3, boolean z6) {
+    public final KB d(boolean z6, boolean z9) {
         return this;
     }
 
     @Override // com.google.android.gms.internal.ads.KB
     public final int e() {
-        return this.f25654d;
+        return this.f26407d;
     }
 }

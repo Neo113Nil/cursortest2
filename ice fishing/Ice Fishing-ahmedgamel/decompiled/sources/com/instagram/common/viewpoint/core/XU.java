@@ -18,10 +18,10 @@ public abstract class XU {
     public static byte[] A00;
     public static String[] A01 = {"5C7rQEQBWVsJnjqAAZN8QBBHoCwRHOvI", "Z88WY3x8uhcakMWroAcOyZwbMrMcyrD2", "GaS", "RG8mqKBY9oxpM4ff8ZCXkeRJBSL2fzwW", "fRGWN", "iBM9tWQPO6zus77B3DN", "tCaEdKrWlrqf6UeRmfN", "xklax2dJWvUCBWRx1N6eQvQBJ1IZxl6t"};
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 62);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 62);
         }
         return new String(copyOfRange);
     }
@@ -50,7 +50,7 @@ public abstract class XU {
             if (!isRooted) {
             }
         } catch (Throwable t6) {
-            t82.A08().ABC(A01(40, 7, 92), AbstractC1252Td.A1M, new C1253Te(t6));
+            t82.A08().ABC(A01(40, 7, 92), AbstractC1272Td.A1M, new C1273Te(t6));
             return XT.A04;
         }
     }
@@ -69,7 +69,7 @@ public abstract class XU {
         strArr[6] = "ikpGaBwLfx1blWCv8PE";
         strArr[5] = "NCTJdZrpEYM5ZpFC5qB";
         for (Signature signature : signatureArr) {
-            sb.append(C1348Xa.A04(MessageDigest.getInstance(A01(31, 4, 124)).digest(A04(signature).getEncoded())));
+            sb.append(C1368Xa.A04(MessageDigest.getInstance(A01(31, 4, 124)).digest(A04(signature).getEncoded())));
             sb.append(A01(26, 1, 14));
         }
         return sb.toString();
@@ -79,7 +79,7 @@ public abstract class XU {
         try {
             return A02(t82, str);
         } catch (Exception e9) {
-            t82.A08().ABC(A01(40, 7, 92), AbstractC1252Td.A1M, new C1253Te(e9));
+            t82.A08().ABC(A01(40, 7, 92), AbstractC1272Td.A1M, new C1273Te(e9));
             return null;
         }
     }

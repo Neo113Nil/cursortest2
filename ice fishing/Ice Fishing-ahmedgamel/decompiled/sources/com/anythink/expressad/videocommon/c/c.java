@@ -1,6 +1,6 @@
 package com.anythink.expressad.videocommon.c;
 
-import D.y;
+import D.x;
 import android.text.TextUtils;
 import java.util.HashMap;
 import java.util.Map;
@@ -11,14 +11,14 @@ import org.json.JSONObject;
 public class c {
 
     /* renamed from: a, reason: collision with root package name */
-    private String f22349a;
+    private String f23136a;
 
     /* renamed from: b, reason: collision with root package name */
-    private int f22350b;
+    private int f23137b;
 
     public c(String str, int i) {
-        this.f22349a = str;
-        this.f22350b = i;
+        this.f23136a = str;
+        this.f23137b = i;
     }
 
     private static c c() {
@@ -26,18 +26,18 @@ public class c {
     }
 
     public final String a() {
-        return this.f22349a;
+        return this.f23136a;
     }
 
     public final int b() {
-        return this.f22350b;
+        return this.f23137b;
     }
 
     public String toString() {
         StringBuilder sb = new StringBuilder("Reward{name='");
-        sb.append(this.f22349a);
+        sb.append(this.f23136a);
         sb.append("', amount=");
-        return y.q(sb, this.f22350b, '}');
+        return x.n(sb, this.f23137b, '}');
     }
 
     public static c b(String str) {
@@ -57,11 +57,11 @@ public class c {
     }
 
     public final void a(String str) {
-        this.f22349a = str;
+        this.f23136a = str;
     }
 
     public final void a(int i) {
-        this.f22350b = i;
+        this.f23137b = i;
     }
 
     public static Map<String, c> a(JSONArray jSONArray) {

@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class j {
 
     /* renamed from: a, reason: collision with root package name */
-    private static String f16771a = "j";
+    private static String f17558a = "j";
 
     public static Map<String, Object> a(Map<String, Object> map) {
         if (map == null) {

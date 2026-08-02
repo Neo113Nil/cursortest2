@@ -12,28 +12,28 @@ import org.json.JSONObject;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f18021a = "b";
+    public static final String f18808a = "b";
 
     /* renamed from: b, reason: collision with root package name */
-    public static int f18022b = 0;
+    public static int f18809b = 0;
 
     /* renamed from: c, reason: collision with root package name */
-    public static int f18023c = 1;
+    public static int f18810c = 1;
 
     /* renamed from: com.anythink.expressad.atsignalcommon.communication.b$1, reason: invalid class name */
     public class AnonymousClass1 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ d f18024a;
+        final /* synthetic */ d f18811a;
 
         public AnonymousClass1(d dVar) {
-            this.f18024a = dVar;
+            this.f18811a = dVar;
         }
 
         @Override // java.lang.Runnable
         public final void run() {
             try {
-                b.a(this.f18024a.L(), this.f18024a);
+                b.a(this.f18811a.L(), this.f18811a);
             } catch (Throwable th) {
                 th.getMessage();
             }
@@ -55,7 +55,7 @@ public class b {
             new Thread(new AnonymousClass1(b9)).start();
             try {
                 JSONObject jSONObject2 = new JSONObject();
-                jSONObject2.put("code", f18022b);
+                jSONObject2.put("code", f18809b);
                 JSONObject jSONObject3 = new JSONObject();
                 jSONObject3.put("id", "");
                 jSONObject2.put("data", jSONObject3);
@@ -70,16 +70,16 @@ public class b {
     }
 
     private static void b(String str, d dVar) {
-        if (f.f19131n == null || TextUtils.isEmpty(dVar.bh())) {
+        if (f.f19918n == null || TextUtils.isEmpty(dVar.bh())) {
             return;
         }
-        f.a(str, dVar, f.f19123e);
+        f.a(str, dVar, f.f19910e);
     }
 
     private static void b(Object obj, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", f18022b);
+            jSONObject.put("code", f18809b);
             JSONObject jSONObject2 = new JSONObject();
             jSONObject2.put("id", str);
             jSONObject.put("data", jSONObject2);
@@ -94,11 +94,11 @@ public class b {
         new Thread(new AnonymousClass1(dVar)).start();
     }
 
-    private static String a(float f3, float f9) {
+    private static String a(float f2, float f9) {
         JSONObject jSONObject = new JSONObject();
         try {
             JSONObject jSONObject2 = new JSONObject();
-            jSONObject2.put(com.anythink.expressad.foundation.g.a.cg, v.a(com.anythink.expressad.foundation.b.a.c().e(), f3));
+            jSONObject2.put(com.anythink.expressad.foundation.g.a.cg, v.a(com.anythink.expressad.foundation.b.a.c().e(), f2));
             jSONObject2.put(com.anythink.expressad.foundation.g.a.ch, v.a(com.anythink.expressad.foundation.b.a.c().e(), f9));
             jSONObject2.put(com.anythink.expressad.foundation.g.a.cj, 0);
             jSONObject2.put(com.anythink.expressad.foundation.g.a.ck, com.anythink.expressad.foundation.b.a.c().e().getResources().getConfiguration().orientation);
@@ -127,7 +127,7 @@ public class b {
     private static void a(Object obj, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", f18023c);
+            jSONObject.put("code", f18810c);
             jSONObject.put("message", str);
             jSONObject.put("data", new JSONObject());
             h.a().a(obj, Base64.encodeToString(jSONObject.toString().getBytes(), 2));
@@ -137,9 +137,9 @@ public class b {
     }
 
     public static /* synthetic */ void a(String str, d dVar) {
-        if (f.f19131n == null || TextUtils.isEmpty(dVar.bh())) {
+        if (f.f19918n == null || TextUtils.isEmpty(dVar.bh())) {
             return;
         }
-        f.a(str, dVar, f.f19123e);
+        f.a(str, dVar, f.f19910e);
     }
 }

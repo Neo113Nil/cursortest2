@@ -11,15 +11,15 @@ import javax.security.auth.x500.X500Principal;
 public final class b implements f {
 
     /* renamed from: a, reason: collision with root package name */
-    private final Map<X500Principal, Set<X509Certificate>> f15367a = new LinkedHashMap();
+    private final Map<X500Principal, Set<X509Certificate>> f16154a = new LinkedHashMap();
 
     public b(X509Certificate... x509CertificateArr) {
         for (X509Certificate x509Certificate : x509CertificateArr) {
             X500Principal subjectX500Principal = x509Certificate.getSubjectX500Principal();
-            Set<X509Certificate> set = this.f15367a.get(subjectX500Principal);
+            Set<X509Certificate> set = this.f16154a.get(subjectX500Principal);
             if (set == null) {
                 set = new LinkedHashSet<>(1);
-                this.f15367a.put(subjectX500Principal, set);
+                this.f16154a.put(subjectX500Principal, set);
             }
             set.add(x509Certificate);
         }
@@ -27,7 +27,7 @@ public final class b implements f {
 
     @Override // com.anythink.core.common.n.b.a.j.f
     public final X509Certificate a(X509Certificate x509Certificate) {
-        Set<X509Certificate> set = this.f15367a.get(x509Certificate.getIssuerX500Principal());
+        Set<X509Certificate> set = this.f16154a.get(x509Certificate.getIssuerX500Principal());
         if (set == null) {
             return null;
         }
@@ -45,10 +45,10 @@ public final class b implements f {
         if (obj == this) {
             return true;
         }
-        return (obj instanceof b) && ((b) obj).f15367a.equals(this.f15367a);
+        return (obj instanceof b) && ((b) obj).f16154a.equals(this.f16154a);
     }
 
     public final int hashCode() {
-        return this.f15367a.hashCode();
+        return this.f16154a.hashCode();
     }
 }

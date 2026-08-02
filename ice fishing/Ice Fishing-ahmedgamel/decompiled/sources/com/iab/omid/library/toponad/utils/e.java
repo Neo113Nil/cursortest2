@@ -11,7 +11,7 @@ import com.iab.omid.library.toponad.adsession.OutputDeviceStatus;
 public class e {
 
     /* renamed from: a, reason: collision with root package name */
-    private static OutputDeviceStatus f36296a = OutputDeviceStatus.UNKNOWN;
+    private static OutputDeviceStatus f37063a = OutputDeviceStatus.UNKNOWN;
 
     public class a extends BroadcastReceiver {
         @Override // android.content.BroadcastReceiver
@@ -26,13 +26,13 @@ public class e {
                 } else {
                     outputDeviceStatus = OutputDeviceStatus.UNKNOWN;
                 }
-                OutputDeviceStatus unused = e.f36296a = outputDeviceStatus;
+                OutputDeviceStatus unused = e.f37063a = outputDeviceStatus;
             }
         }
     }
 
     public static OutputDeviceStatus a() {
-        return com.iab.omid.library.toponad.utils.a.a() != DeviceCategory.CTV ? OutputDeviceStatus.UNKNOWN : f36296a;
+        return com.iab.omid.library.toponad.utils.a.a() != DeviceCategory.CTV ? OutputDeviceStatus.UNKNOWN : f37063a;
     }
 
     public static void a(Context context) {

@@ -1,17 +1,17 @@
 package com.onesignal.core.internal.backend.impl;
 
 import I7.l;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import kotlin.jvm.internal.h;
 import kotlin.jvm.internal.i;
 import kotlin.jvm.internal.r;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import t4.C5040a;
+import t4.C5041a;
 import u7.v;
-import y4.C5241a;
-import z7.InterfaceC5267d;
+import y4.C5208a;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class c implements y4.c {
@@ -22,8 +22,8 @@ public final class c implements y4.c {
         int label;
         /* synthetic */ Object result;
 
-        public a(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public a(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -48,12 +48,12 @@ public final class c implements y4.c {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((JSONObject) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(JSONObject it) {
             h.e(it, "it");
-            this.$influenceParams.f38717n = this.this$0.processOutcomeJson(it);
+            this.$influenceParams.f38644n = this.this$0.processOutcomeJson(it);
         }
     }
 
@@ -70,14 +70,14 @@ public final class c implements y4.c {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((JSONObject) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(JSONObject it) {
             h.e(it, "it");
             r rVar = this.$fcmParams;
             String safeString = com.onesignal.common.e.safeString(it, "api_key");
-            rVar.f38717n = new C5241a(com.onesignal.common.e.safeString(it, "project_id"), com.onesignal.common.e.safeString(it, "app_id"), safeString);
+            rVar.f38644n = new C5208a(com.onesignal.common.e.safeString(it, "project_id"), com.onesignal.common.e.safeString(it, "app_id"), safeString);
         }
     }
 
@@ -93,13 +93,13 @@ public final class c implements y4.c {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((JSONObject) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(JSONObject it) {
             h.e(it, "it");
             M4.c fromString = M4.c.Companion.fromString(com.onesignal.common.e.safeString(it, "log_level"));
-            this.$remoteLoggingParams.f38717n = new y4.h(fromString, false, 2, null);
+            this.$remoteLoggingParams.f38644n = new y4.h(fromString, false, 2, null);
         }
     }
 
@@ -115,12 +115,12 @@ public final class c implements y4.c {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((JSONObject) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(JSONObject it) {
             h.e(it, "it");
-            this.$isDirectEnabled.f38717n = com.onesignal.common.e.safeBool(it, "enabled");
+            this.$isDirectEnabled.f38644n = com.onesignal.common.e.safeBool(it, "enabled");
         }
     }
 
@@ -145,13 +145,13 @@ public final class c implements y4.c {
             @Override // I7.l
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 invoke((JSONObject) obj);
-                return v.f41353a;
+                return v.f41073a;
             }
 
             public final void invoke(JSONObject it) {
                 h.e(it, "it");
-                this.$indirectNotificationAttributionWindow.f38717n = com.onesignal.common.e.safeInt(it, "minutes_since_displayed");
-                this.$notificationLimit.f38717n = com.onesignal.common.e.safeInt(it, "limit");
+                this.$indirectNotificationAttributionWindow.f38644n = com.onesignal.common.e.safeInt(it, "minutes_since_displayed");
+                this.$notificationLimit.f38644n = com.onesignal.common.e.safeInt(it, "limit");
             }
         }
 
@@ -169,13 +169,13 @@ public final class c implements y4.c {
             @Override // I7.l
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 invoke((JSONObject) obj);
-                return v.f41353a;
+                return v.f41073a;
             }
 
             public final void invoke(JSONObject it) {
                 h.e(it, "it");
-                this.$indirectIAMAttributionWindow.f38717n = com.onesignal.common.e.safeInt(it, "minutes_since_displayed");
-                this.$iamLimit.f38717n = com.onesignal.common.e.safeInt(it, "limit");
+                this.$indirectIAMAttributionWindow.f38644n = com.onesignal.common.e.safeInt(it, "minutes_since_displayed");
+                this.$iamLimit.f38644n = com.onesignal.common.e.safeInt(it, "limit");
             }
         }
 
@@ -192,12 +192,12 @@ public final class c implements y4.c {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((JSONObject) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(JSONObject indirectJSON) {
             h.e(indirectJSON, "indirectJSON");
-            this.$isIndirectEnabled.f38717n = com.onesignal.common.e.safeBool(indirectJSON, "enabled");
+            this.$isIndirectEnabled.f38644n = com.onesignal.common.e.safeBool(indirectJSON, "enabled");
             com.onesignal.common.e.expandJSONObject(indirectJSON, "notification_attribution", new a(this.$indirectNotificationAttributionWindow, this.$notificationLimit));
             com.onesignal.common.e.expandJSONObject(indirectJSON, "in_app_message_attribution", new b(this.$indirectIAMAttributionWindow, this.$iamLimit));
         }
@@ -215,12 +215,12 @@ public final class c implements y4.c {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((JSONObject) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(JSONObject it) {
             h.e(it, "it");
-            this.$isUnattributedEnabled.f38717n = com.onesignal.common.e.safeBool(it, "enabled");
+            this.$isUnattributedEnabled.f38644n = com.onesignal.common.e.safeBool(it, "enabled");
         }
     }
 
@@ -241,7 +241,7 @@ public final class c implements y4.c {
         com.onesignal.common.e.expandJSONObject(jSONObject, L5.e.DIRECT_TAG, new e(rVar5));
         com.onesignal.common.e.expandJSONObject(jSONObject, "indirect", new f(rVar6, rVar, rVar2, rVar3, rVar4));
         com.onesignal.common.e.expandJSONObject(jSONObject, "unattributed", new g(rVar7));
-        return new y4.d((Integer) rVar.f38717n, (Integer) rVar2.f38717n, (Integer) rVar3.f38717n, (Integer) rVar4.f38717n, (Boolean) rVar5.f38717n, (Boolean) rVar6.f38717n, (Boolean) rVar7.f38717n);
+        return new y4.d((Integer) rVar.f38644n, (Integer) rVar2.f38644n, (Integer) rVar3.f38644n, (Integer) rVar4.f38644n, (Boolean) rVar5.f38644n, (Boolean) rVar6.f38644n, (Boolean) rVar7.f38644n);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:12:0x00a5  */
@@ -252,28 +252,28 @@ public final class c implements y4.c {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object fetchParams(String str, String str2, InterfaceC5267d interfaceC5267d) {
+    public Object fetchParams(String str, String str2, InterfaceC5240d interfaceC5240d) {
         a aVar;
         int i;
         c cVar;
         E4.a aVar2;
-        if (interfaceC5267d instanceof a) {
-            aVar = (a) interfaceC5267d;
-            int i6 = aVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                aVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof a) {
+            aVar = (a) interfaceC5240d;
+            int i4 = aVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                aVar.label = i4 - Integer.MIN_VALUE;
                 Object obj = aVar.result;
-                A7.a aVar3 = A7.a.f58n;
+                A7.a aVar3 = A7.a.f215n;
                 i = aVar.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "ParamsBackendService.fetchParams(appId: " + str + ", subscriptionId: " + str2 + ')');
                     StringBuilder sb = new StringBuilder("apps/");
                     sb.append(str);
                     sb.append("/android_params.js");
                     String sb2 = sb.toString();
                     if (str2 != null && !com.onesignal.common.d.INSTANCE.isLocalId(str2)) {
-                        sb2 = AbstractC4404f.g(sb2, "?player_id=", str2);
+                        sb2 = Wv.h(sb2, "?player_id=", str2);
                     }
                     E4.c cVar2 = this._http;
                     com.onesignal.core.internal.http.impl.e eVar = new com.onesignal.core.internal.http.impl.e("CACHE_KEY_REMOTE_PARAMS", null, null, null, null, 30, null);
@@ -289,11 +289,11 @@ public final class c implements y4.c {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     cVar = (c) aVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 aVar2 = (E4.a) obj;
                 if (aVar2.isSuccess()) {
-                    throw new C5040a(aVar2.getStatusCode(), aVar2.getPayload(), aVar2.getRetryAfterSeconds());
+                    throw new C5041a(aVar2.getStatusCode(), aVar2.getPayload(), aVar2.getRetryAfterSeconds());
                 }
                 String payload = aVar2.getPayload();
                 try {
@@ -317,24 +317,24 @@ public final class c implements y4.c {
                     Boolean safeBool9 = com.onesignal.common.e.safeBool(jSONObject, "location_shared");
                     Boolean safeBool10 = com.onesignal.common.e.safeBool(jSONObject, "requires_user_privacy_consent");
                     Long safeLong = com.onesignal.common.e.safeLong(jSONObject, "oprepo_execution_interval");
-                    y4.d dVar = (y4.d) rVar.f38717n;
-                    y4.d dVar2 = dVar == null ? new y4.d(null, null, null, null, null, null, null, com.anythink.expressad.video.module.a.a.f21728R, null) : dVar;
-                    C5241a c5241a = (C5241a) rVar2.f38717n;
-                    C5241a c5241a2 = c5241a == null ? new C5241a(null, null, null, 7, null) : c5241a;
-                    y4.h hVar = (y4.h) rVar3.f38717n;
+                    y4.d dVar = (y4.d) rVar.f38644n;
+                    y4.d dVar2 = dVar == null ? new y4.d(null, null, null, null, null, null, null, com.anythink.expressad.video.module.a.a.f22515R, null) : dVar;
+                    C5208a c5208a = (C5208a) rVar2.f38644n;
+                    C5208a c5208a2 = c5208a == null ? new C5208a(null, null, null, 7, null) : c5208a;
+                    y4.h hVar = (y4.h) rVar3.f38644n;
                     if (hVar == null) {
                         hVar = new y4.h(null, false, 3, null);
                     }
-                    return new y4.e(safeString, safeBool, safeBool2, optJSONArray, safeBool3, safeBool4, safeBool5, safeBool6, safeBool7, safeBool8, safeBool9, safeBool10, safeLong, dVar2, c5241a2, hVar);
+                    return new y4.e(safeString, safeBool, safeBool2, optJSONArray, safeBool3, safeBool4, safeBool5, safeBool6, safeBool7, safeBool8, safeBool9, safeBool10, safeLong, dVar2, c5208a2, hVar);
                 } catch (JSONException e9) {
                     com.onesignal.debug.internal.logging.b.warn("ParamsBackendService.fetchParams: malformed (non-JSON) response payload, will retry. status=" + aVar2.getStatusCode(), e9);
-                    throw new C5040a(aVar2.getStatusCode(), payload, aVar2.getRetryAfterSeconds());
+                    throw new C5041a(aVar2.getStatusCode(), payload, aVar2.getRetryAfterSeconds());
                 }
             }
         }
-        aVar = new a(interfaceC5267d);
+        aVar = new a(interfaceC5240d);
         Object obj2 = aVar.result;
-        A7.a aVar32 = A7.a.f58n;
+        A7.a aVar32 = A7.a.f215n;
         i = aVar.label;
         if (i != 0) {
         }

@@ -23,11 +23,11 @@ public interface N {
 
     void i(int i);
 
-    void j(int i, int i6);
+    void j(int i, int i4);
 
     int k();
 
-    void m(ListAdapter listAdapter);
+    void l(ListAdapter listAdapter);
 
     void setBackgroundDrawable(Drawable drawable);
 }

@@ -14,7 +14,7 @@ public class C2N extends C2L<K, V>.WrappedList implements RandomAccess {
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2N != com.google.common.collect.AbstractMapBasedMultimap<K, V>$RandomAccessWrappedList */
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.lp != com.google.common.collect.AbstractMapBasedMultimap<K, V>$WrappedCollection */
     /* JADX WARN: Incorrect inner types in method signature: (TK;Ljava/util/List<TV;>;Lcom/facebook/ads/redexgen/X/2L<TK;TV;>.WrappedCollection;)V */
-    public C2N(@ParametricNullness final C2L this$0, @CheckForNull Object key, List delegate, C2138lp ancestor) {
+    public C2N(@ParametricNullness final C2L this$0, @CheckForNull Object key, List delegate, C2158lp ancestor) {
         super(this$0, key, delegate, ancestor);
         this.A00 = this$0;
     }

@@ -12,10 +12,10 @@ import com.anythink.core.common.t.c;
 public abstract class BaseIncentiveTaskView extends RelativeLayout {
 
     /* renamed from: a, reason: collision with root package name */
-    c f11206a;
+    c f11992a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected a f11207b;
+    protected a f11993b;
 
     public interface a {
         void a();
@@ -34,24 +34,24 @@ public abstract class BaseIncentiveTaskView extends RelativeLayout {
     public abstract void a();
 
     public final void b() {
-        c cVar = this.f11206a;
+        c cVar = this.f11992a;
         if (cVar != null) {
             cVar.c();
         }
     }
 
     public void initSetting(w wVar, y yVar, long j6, a aVar) {
-        this.f11207b = aVar;
+        this.f11993b = aVar;
         c cVar = new c(yVar.bu(), new Runnable() { // from class: com.anythink.basead.ui.improveclick.incentivetask.BaseIncentiveTaskView.1
             @Override // java.lang.Runnable
             public final void run() {
-                a aVar2 = BaseIncentiveTaskView.this.f11207b;
+                a aVar2 = BaseIncentiveTaskView.this.f11993b;
                 if (aVar2 != null) {
                     aVar2.a();
                 }
             }
         }, true);
-        this.f11206a = cVar;
+        this.f11992a = cVar;
         cVar.a();
         setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.improveclick.incentivetask.BaseIncentiveTaskView.2
             @Override // android.view.View.OnClickListener
@@ -67,14 +67,14 @@ public abstract class BaseIncentiveTaskView extends RelativeLayout {
     }
 
     public void onPause() {
-        c cVar = this.f11206a;
+        c cVar = this.f11992a;
         if (cVar != null) {
             cVar.b();
         }
     }
 
     public void onResume() {
-        c cVar = this.f11206a;
+        c cVar = this.f11992a;
         if (cVar != null) {
             cVar.a();
         }

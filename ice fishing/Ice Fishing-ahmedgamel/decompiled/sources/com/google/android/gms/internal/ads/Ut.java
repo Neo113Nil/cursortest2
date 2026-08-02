@@ -14,66 +14,66 @@ import org.json.JSONObject;
 public final class Ut {
 
     /* renamed from: a, reason: collision with root package name */
-    public final List f28003a;
+    public final List f28800a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f28004b;
+    public final String f28801b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f28005c;
+    public final int f28802c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f28006d;
+    public final int f28803d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final String f28007e;
+    public final String f28804e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final int f28008f;
+    public final int f28805f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final long f28009g;
+    public final long f28806g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final boolean f28010h;
+    public final boolean f28807h;
     public final String i;
 
     /* renamed from: j, reason: collision with root package name */
-    public final C3879sE f28011j;
+    public final C3902sE f28808j;
 
     /* renamed from: k, reason: collision with root package name */
-    public final Bundle f28012k;
+    public final Bundle f28809k;
 
     /* renamed from: l, reason: collision with root package name */
-    public final String f28013l;
+    public final String f28810l;
 
     /* renamed from: m, reason: collision with root package name */
-    public final String f28014m;
+    public final String f28811m;
 
     /* renamed from: n, reason: collision with root package name */
-    public final String f28015n;
+    public final String f28812n;
 
     /* renamed from: o, reason: collision with root package name */
-    public final JSONObject f28016o;
+    public final JSONObject f28813o;
 
     /* renamed from: p, reason: collision with root package name */
-    public final JSONObject f28017p;
+    public final JSONObject f28814p;
 
     /* renamed from: q, reason: collision with root package name */
-    public final String f28018q;
+    public final String f28815q;
 
     /* renamed from: r, reason: collision with root package name */
-    public final int f28019r;
+    public final int f28816r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final long f28020s;
+    public final long f28817s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final long f28021t;
+    public final long f28818t;
 
     public Ut(JsonReader jsonReader) {
         String str;
-        Bundle O8;
+        Bundle w3;
         char c9;
         List list = Collections.EMPTY_LIST;
         Bundle bundle = new Bundle();
@@ -88,40 +88,40 @@ public final class Ut {
         String str7 = str6;
         String str8 = str7;
         String str9 = str8;
-        C3879sE c3879sE = null;
+        C3902sE c3902sE = null;
         long j6 = -1;
         long j9 = 0;
         long j10 = -1;
         int i = 0;
-        int i6 = -1;
-        int i9 = 1;
-        int i10 = 0;
-        boolean z3 = false;
+        int i4 = -1;
+        int i6 = 1;
+        int i9 = 0;
+        boolean z6 = false;
         while (jsonReader.hasNext()) {
             String nextName = jsonReader.nextName();
             if (Objects.equals(nextName, "nofill_urls")) {
-                list = A8.b.H(jsonReader);
+                list = d6.c.q(jsonReader);
             } else if ("refresh_interval".equals(nextName)) {
                 i = jsonReader.nextInt();
             } else if (Objects.equals(nextName, "refresh_load_delay_time_interval")) {
-                i6 = jsonReader.nextInt();
+                i4 = jsonReader.nextInt();
             } else if ("gws_query_id".equals(nextName)) {
                 str3 = jsonReader.nextString();
             } else if ("analytics_query_ad_event_id".equals(nextName)) {
                 str4 = jsonReader.nextString();
             } else if ("is_idless".equals(nextName)) {
-                z3 = jsonReader.nextBoolean();
+                z6 = jsonReader.nextBoolean();
             } else if ("response_code".equals(nextName)) {
-                i10 = jsonReader.nextInt();
+                i9 = jsonReader.nextInt();
             } else if ("latency".equals(nextName)) {
                 j9 = jsonReader.nextLong();
             } else {
-                C3301ha c3301ha = AbstractC3569ma.w9;
+                C3324ha c3324ha = AbstractC3592ma.w9;
                 str = str2;
-                q2.r rVar = q2.r.f40207e;
+                s2.r rVar = s2.r.f40506e;
                 long j11 = j6;
-                if (((Boolean) rVar.f40210c.a(c3301ha)).booleanValue() && "public_error".equals(nextName) && jsonReader.peek() == JsonToken.BEGIN_OBJECT) {
-                    C3879sE c3879sE2 = new C3879sE();
+                if (((Boolean) rVar.f40509c.a(c3324ha)).booleanValue() && "public_error".equals(nextName) && jsonReader.peek() == JsonToken.BEGIN_OBJECT) {
+                    C3902sE c3902sE2 = new C3902sE();
                     jsonReader.beginObject();
                     String str10 = str;
                     while (jsonReader.hasNext()) {
@@ -147,23 +147,23 @@ public final class Ut {
                         }
                     }
                     jsonReader.endObject();
-                    c3879sE2.f33928b = str10;
-                    c3879sE = c3879sE2;
+                    c3902sE2.f34696b = str10;
+                    c3902sE = c3902sE2;
                 } else if ("bidding_data".equals(nextName)) {
                     str5 = jsonReader.nextString();
                 } else {
-                    C3301ha c3301ha2 = AbstractC3569ma.Ob;
-                    SharedPreferencesOnSharedPreferenceChangeListenerC3461ka sharedPreferencesOnSharedPreferenceChangeListenerC3461ka = rVar.f40210c;
-                    if (((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3461ka.a(c3301ha2)).booleanValue() && Objects.equals(nextName, "topics_should_record_observation")) {
+                    C3324ha c3324ha2 = AbstractC3592ma.Ob;
+                    SharedPreferencesOnSharedPreferenceChangeListenerC3484ka sharedPreferencesOnSharedPreferenceChangeListenerC3484ka = rVar.f40509c;
+                    if (((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3484ka.a(c3324ha2)).booleanValue() && Objects.equals(nextName, "topics_should_record_observation")) {
                         jsonReader.nextBoolean();
                     } else if ("adapter_response_replacement_key".equals(nextName)) {
                         str9 = jsonReader.nextString();
                     } else if ("response_info_extras".equals(nextName)) {
-                        if (((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3461ka.a(AbstractC3569ma.f32037H7)).booleanValue()) {
+                        if (((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3484ka.a(AbstractC3592ma.f32817H7)).booleanValue()) {
                             try {
-                                Bundle O9 = A8.b.O(A8.b.J(jsonReader));
-                                if (O9 != null) {
-                                    bundle = O9;
+                                Bundle w6 = d6.c.w(d6.c.r(jsonReader));
+                                if (w6 != null) {
+                                    bundle = w6;
                                 }
                             } catch (IOException | JSONException unused) {
                             } catch (IllegalStateException unused2) {
@@ -173,34 +173,34 @@ public final class Ut {
                             jsonReader.skipValue();
                         }
                     } else if ("adRequestPostBody".equals(nextName)) {
-                        if (((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3461ka.a(AbstractC3569ma.Da)).booleanValue()) {
+                        if (((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3484ka.a(AbstractC3592ma.Da)).booleanValue()) {
                             str7 = jsonReader.nextString();
                         } else {
                             jsonReader.skipValue();
                         }
                     } else if (!"adRequestUrl".equals(nextName)) {
-                        C3301ha c3301ha3 = AbstractC3569ma.Ea;
-                        if (((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3461ka.a(c3301ha3)).booleanValue() && Objects.equals(nextName, "adResponseBody")) {
+                        C3324ha c3324ha3 = AbstractC3592ma.Ea;
+                        if (((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3484ka.a(c3324ha3)).booleanValue() && Objects.equals(nextName, "adResponseBody")) {
                             str8 = jsonReader.nextString();
-                        } else if (((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3461ka.a(c3301ha3)).booleanValue() && Objects.equals(nextName, "adResponseHeaders")) {
-                            jSONObject = A8.b.J(jsonReader);
+                        } else if (((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3484ka.a(c3324ha3)).booleanValue() && Objects.equals(nextName, "adResponseHeaders")) {
+                            jSONObject = d6.c.r(jsonReader);
                         } else {
                             if (Objects.equals(nextName, "max_parallel_renderers")) {
-                                i9 = Math.max(1, jsonReader.nextInt());
-                            } else if (((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3461ka.a(AbstractC3569ma.Ma)).booleanValue() && Objects.equals(nextName, "inspector_ad_transaction_extras")) {
-                                jSONObject2 = A8.b.J(jsonReader);
-                            } else if (((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3461ka.a(AbstractC3569ma.f32057K2)).booleanValue() && Objects.equals(nextName, "latency_extras")) {
+                                i6 = Math.max(1, jsonReader.nextInt());
+                            } else if (((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3484ka.a(AbstractC3592ma.Ma)).booleanValue() && Objects.equals(nextName, "inspector_ad_transaction_extras")) {
+                                jSONObject2 = d6.c.r(jsonReader);
+                            } else if (((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3484ka.a(AbstractC3592ma.f32837K2)).booleanValue() && Objects.equals(nextName, "latency_extras")) {
                                 try {
-                                    O8 = A8.b.O(A8.b.J(jsonReader));
+                                    w3 = d6.c.w(d6.c.r(jsonReader));
                                 } catch (IOException | JSONException unused3) {
                                 } catch (IllegalStateException unused4) {
                                 }
-                                if (O8 != null) {
-                                    double d2 = O8.getDouble(com.anythink.core.common.d.g.f12329a);
-                                    long j12 = (d2 > 9.223372036854776E18d || d2 < -9.223372036854776E18d) ? -1L : (long) d2;
+                                if (w3 != null) {
+                                    double d9 = w3.getDouble(com.anythink.core.common.d.g.f13115a);
+                                    long j12 = (d9 > 9.223372036854776E18d || d9 < -9.223372036854776E18d) ? -1L : (long) d9;
                                     try {
-                                        double d9 = O8.getDouble(com.anythink.core.common.d.g.f12330b);
-                                        long j13 = (d9 > 9.223372036854776E18d || d9 < -9.223372036854776E18d) ? -1L : (long) d9;
+                                        double d10 = w3.getDouble(com.anythink.core.common.d.g.f13116b);
+                                        long j13 = (d10 > 9.223372036854776E18d || d10 < -9.223372036854776E18d) ? -1L : (long) d10;
                                         j10 = j12;
                                         j6 = j13;
                                     } catch (IOException | JSONException unused5) {
@@ -219,7 +219,7 @@ public final class Ut {
                             j6 = j11;
                             str2 = str;
                         }
-                    } else if (((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3461ka.a(AbstractC3569ma.Da)).booleanValue()) {
+                    } else if (((Boolean) sharedPreferencesOnSharedPreferenceChangeListenerC3484ka.a(AbstractC3592ma.Da)).booleanValue()) {
                         str6 = jsonReader.nextString();
                     } else {
                         jsonReader.skipValue();
@@ -235,35 +235,35 @@ public final class Ut {
         }
         long j14 = j6;
         jsonReader.endObject();
-        this.f28003a = list;
-        this.f28005c = i;
-        if (((Boolean) AbstractC2817Va.f28202e.r()).booleanValue()) {
-            this.f28006d = -1;
+        this.f28800a = list;
+        this.f28802c = i;
+        if (((Boolean) AbstractC2840Va.f28999e.r()).booleanValue()) {
+            this.f28803d = -1;
         } else {
-            C3493l5 c3493l5 = AbstractC2548Fa.f24805a;
-            if (((Long) c3493l5.r()).longValue() > -1) {
-                this.f28006d = ((Long) c3493l5.r()).intValue();
+            C3516l5 c3516l5 = AbstractC2568Fa.f25594a;
+            if (((Long) c3516l5.r()).longValue() > -1) {
+                this.f28803d = ((Long) c3516l5.r()).intValue();
             } else {
-                this.f28006d = i6;
+                this.f28803d = i4;
             }
         }
-        this.f28004b = str3;
-        this.f28007e = str4;
-        this.f28008f = i10;
-        this.f28009g = j9;
-        this.f28011j = c3879sE;
-        this.f28010h = z3;
+        this.f28801b = str3;
+        this.f28804e = str4;
+        this.f28805f = i9;
+        this.f28806g = j9;
+        this.f28808j = c3902sE;
+        this.f28807h = z6;
         this.i = str5;
-        this.f28012k = bundle;
-        this.f28013l = str6;
-        this.f28014m = str7;
-        this.f28015n = str8;
-        this.f28016o = jSONObject;
-        this.f28017p = jSONObject2;
-        this.f28018q = str9;
-        C3493l5 c3493l52 = AbstractC2785Ta.f27740a;
-        this.f28019r = ((Long) c3493l52.r()).longValue() > 0 ? ((Long) c3493l52.r()).intValue() : i9;
-        this.f28020s = j10;
-        this.f28021t = j14;
+        this.f28809k = bundle;
+        this.f28810l = str6;
+        this.f28811m = str7;
+        this.f28812n = str8;
+        this.f28813o = jSONObject;
+        this.f28814p = jSONObject2;
+        this.f28815q = str9;
+        C3516l5 c3516l52 = AbstractC2806Ta.f28527a;
+        this.f28816r = ((Long) c3516l52.r()).longValue() > 0 ? ((Long) c3516l52.r()).intValue() : i6;
+        this.f28817s = j10;
+        this.f28818t = j14;
     }
 }

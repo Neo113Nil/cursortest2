@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public abstract class LK extends AbstractC1503bF {
+public abstract class LK extends AbstractC1523bF {
     public static byte[] A0c;
     public static String[] A0d = {"I67ZQjFrFoBoFyBDINMYweXdnGzWjrBB", "nht6bFtAgobmTyNcdDIU67iWeCPwsD4y", "CC", "mo2tEtHX5GxhbuvPRsbEGuKVkHRikNiM", "YFxZu97gZB0Y7sylrDsM9wWdV0Ra2Zhp", "a3e3iReWJRZsiYjOcmpSjngSmAGNHpnR", "bZqctpWVYtHdWFrvu7462EupjL9eUXJL", "SeUJXsHc50YCHkmPfJM6qpgcGH0p3S"};
     public static final int A0e;
@@ -39,14 +39,14 @@ public abstract class LK extends AbstractC1503bF {
     public int A02;
     public int A03;
     public TextView A04;
-    public C1445aJ A05;
-    public C1449aN A06;
+    public C1465aJ A05;
+    public C1469aN A06;
     public DA A07;
     public final int A08;
-    public final C1110Nm A09;
-    public final C1130Og A0A;
+    public final C1130Nm A09;
+    public final C1150Og A0A;
     public final VI A0B;
-    public final InterfaceC1381Yh A0C;
+    public final InterfaceC1401Yh A0C;
     public final Runnable A0D;
     public final Runnable A0E;
     public final String A0F;
@@ -61,11 +61,11 @@ public abstract class LK extends AbstractC1503bF {
     public final RelativeLayout A0O;
     public final TextView A0P;
     public final TextView A0Q;
-    public final AbstractC2005jd A0R;
+    public final AbstractC2025jd A0R;
     public final NY A0S;
-    public final C1098Na A0T;
-    public final C1840gi A0U;
-    public final C1445aJ A0V;
+    public final C1118Na A0T;
+    public final C1860gi A0U;
+    public final C1465aJ A0V;
     public final DZ A0W;
     public final Runnable A0X;
     public final AtomicBoolean A0Y;
@@ -73,10 +73,10 @@ public abstract class LK extends AbstractC1503bF {
     public final boolean A0a;
     public final boolean A0b;
 
-    public static String A0T(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0c, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 4);
+    public static String A0T(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0c, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 4);
         }
         return new String(copyOfRange);
     }
@@ -104,30 +104,30 @@ public abstract class LK extends AbstractC1503bF {
         A0f = XV.A0X;
     }
 
-    public LK(C1840gi c1840gi, ViewOnClickListenerC1038Kr viewOnClickListenerC1038Kr, int i, boolean z3, C1098Na c1098Na, boolean z6, String str, VA va, InterfaceC1381Yh interfaceC1381Yh, C1785fp c1785fp, Y2 y22, AbstractC2005jd abstractC2005jd, DZ dz, VI vi, boolean z9) {
-        super(c1840gi, viewOnClickListenerC1038Kr, i, c1098Na, z6, str, va, interfaceC1381Yh, c1785fp, y22, abstractC2005jd.A2A(), abstractC2005jd.A1k(), abstractC2005jd.A13());
+    public LK(C1860gi c1860gi, ViewOnClickListenerC1058Kr viewOnClickListenerC1058Kr, int i, boolean z6, C1118Na c1118Na, boolean z9, String str, VA va, InterfaceC1401Yh interfaceC1401Yh, C1805fp c1805fp, Y2 y22, AbstractC2025jd abstractC2025jd, DZ dz, VI vi, boolean z10) {
+        super(c1860gi, viewOnClickListenerC1058Kr, i, c1118Na, z9, str, va, interfaceC1401Yh, c1805fp, y22, abstractC2025jd.A2A(), abstractC2025jd.A1k(), abstractC2025jd.A13());
         this.A0Y = new AtomicBoolean(true);
         this.A0Z = new AtomicBoolean(false);
-        this.A0X = new RunnableC1504bG(this);
-        this.A0E = new RunnableC1505bH(this);
-        this.A0D = new RunnableC1506bI(this);
+        this.A0X = new RunnableC1524bG(this);
+        this.A0E = new RunnableC1525bH(this);
+        this.A0D = new RunnableC1526bI(this);
         this.A0B = vi;
-        this.A0R = abstractC2005jd;
-        this.A0A = AbstractC1131Oh.A00(c1840gi.A02());
-        this.A0C = interfaceC1381Yh;
-        this.A0F = abstractC2005jd.A2E();
-        this.A09 = abstractC2005jd.A2C();
-        this.A0T = c1098Na;
-        this.A0S = abstractC2005jd.A29().A0I();
-        this.A0U = c1840gi;
-        this.A0a = z3;
-        this.A0b = z9;
+        this.A0R = abstractC2025jd;
+        this.A0A = AbstractC1151Oh.A00(c1860gi.A02());
+        this.A0C = interfaceC1401Yh;
+        this.A0F = abstractC2025jd.A2E();
+        this.A09 = abstractC2025jd.A2C();
+        this.A0T = c1118Na;
+        this.A0S = abstractC2025jd.A29().A0I();
+        this.A0U = c1860gi;
+        this.A0a = z6;
+        this.A0b = z10;
         this.A0G = new Handler(Looper.getMainLooper());
         this.A0H = new ImageView(this.A0U);
         this.A0I = new ImageView(this.A0U);
         YB.A0G(1104, this.A0H);
         YB.A0G(1105, this.A0I);
-        this.A0V = AbstractC1450aO.A01(this.A0U, true, this.A0R, this.A0B, this.A0C, EnumC1448aM.A03, AbstractC1447aL.A00(this.A0R));
+        this.A0V = AbstractC1470aO.A01(this.A0U, true, this.A0R, this.A0B, this.A0C, EnumC1468aM.A03, AbstractC1467aL.A00(this.A0R));
         YB.A0K(this.A0V);
         this.A01 = -1;
         this.A03 = -16777216;
@@ -143,7 +143,7 @@ public abstract class LK extends AbstractC1503bF {
         YB.A0K(this.A0J);
         if (this.A0b) {
             this.A0J.setVisibility(0);
-            this.A0J.setOnClickListener(AbstractC1544bu.A03(super.A08, A0T(6, 10, 11)));
+            this.A0J.setOnClickListener(AbstractC1564bu.A03(super.A08, A0T(6, 10, 11)));
         } else {
             this.A0J.setVisibility(8);
         }
@@ -161,16 +161,16 @@ public abstract class LK extends AbstractC1503bF {
         }
         this.A0K = A0L();
         YB.A0G(1103, this.A0K);
-        this.A0K.setOnClickListener(new ViewOnClickListenerC1507bJ(this));
+        this.A0K.setOnClickListener(new ViewOnClickListenerC1527bJ(this));
         A0t(8);
-        setUpAdReportingInitiateView(abstractC2005jd);
-        setUpCreditLineV2(abstractC2005jd);
+        setUpAdReportingInitiateView(abstractC2025jd);
+        setUpCreditLineV2(abstractC2025jd);
         this.A08 = this.A0R.A29().A0H().A03();
-        if (this.A0R.A10().equals(A0T(60, 14, 21)) && !abstractC2005jd.A1h() && this.A08 > 0) {
+        if (this.A0R.A10().equals(A0T(60, 14, 21)) && !abstractC2025jd.A1h() && this.A08 > 0) {
             this.A04 = A0Q();
             YB.A0K(this.A04);
         }
-        this.A0G.postDelayed(this.A0E, a.f7883f);
+        this.A0G.postDelayed(this.A0E, a.f8669f);
     }
 
     public static int A0I(int i) {
@@ -353,10 +353,10 @@ public abstract class LK extends AbstractC1503bF {
         this.A0W.setLayoutParams(layoutParams);
     }
 
-    private void A0b(int i, int i6) {
+    private void A0b(int i, int i4) {
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-2, -2);
         layoutParams.setMargins(0, 0, XV.A0b, 0);
-        if (i6 == 1) {
+        if (i4 == 1) {
             layoutParams.addRule(11);
         } else {
             layoutParams.addRule(0, i);
@@ -369,13 +369,13 @@ public abstract class LK extends AbstractC1503bF {
         this.A0K.setLayoutParams(layoutParams);
     }
 
-    private void A0c(int i, int i6) {
+    private void A0c(int i, int i4) {
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-2, -2);
         layoutParams.removeRule(7);
         layoutParams.removeRule(2);
         layoutParams.removeRule(12);
         layoutParams.removeRule(0);
-        if (i6 == 1) {
+        if (i4 == 1) {
             if (this.A0W.getVisibility() == 8) {
                 layoutParams.setMargins(0, 0, XV.A0b, XV.A0v);
                 layoutParams.addRule(12);
@@ -402,19 +402,19 @@ public abstract class LK extends AbstractC1503bF {
         this.A0V.setLayoutParams(layoutParams);
     }
 
-    private void A0d(int i, int i6) {
+    private void A0d(int i, int i4) {
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, A0o);
-        if (i6 == 1) {
+        if (i4 == 1) {
             layoutParams.addRule(12);
             if (this.A0V.getVisibility() == 8) {
-                int i9 = XV.A0b;
+                int i6 = XV.A0b;
                 if (A0d[7].length() == 1) {
                     throw new RuntimeException();
                 }
                 String[] strArr = A0d;
                 strArr[5] = "Roeg9wJdjUPJmYqaO6ggHMpnVgOHkrNC";
                 strArr[6] = "RHWeIYqanT4cUr8DVRS9N1g89bvSPiPo";
-                layoutParams.setMargins(i9, 0, XV.A0v, XV.A0v);
+                layoutParams.setMargins(i6, 0, XV.A0v, XV.A0v);
                 layoutParams.addRule(0, this.A0K.getId());
             } else if (this.A0R.A2U()) {
                 layoutParams.setMargins(XV.A0b, 0, XV.A0b, XV.A0j);
@@ -476,7 +476,7 @@ public abstract class LK extends AbstractC1503bF {
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1503bF
+    @Override // com.instagram.common.viewpoint.core.AbstractC1523bF
     public final void A0j() {
         this.A0G.removeCallbacksAndMessages(null);
         YB.A0d(this.A0O, this.A0N, super.A09, this.A0Q, super.A08, this.A0W, this.A04, this.A0P, this.A0K, this.A0V, this.A06, this.A05, this.A0J, this.A0M);
@@ -484,26 +484,26 @@ public abstract class LK extends AbstractC1503bF {
         this.A0V.A0O();
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1503bF
+    @Override // com.instagram.common.viewpoint.core.AbstractC1523bF
     public final void A0k() {
-        super.A09.setOnClickListener(AbstractC1544bu.A03(super.A08, A0T(27, 4, 19)));
-        this.A0Q.setOnClickListener(AbstractC1544bu.A03(super.A08, A0T(74, 5, 18)));
-        this.A0P.setOnClickListener(AbstractC1544bu.A03(super.A08, A0T(16, 11, 125)));
-        this.A0W.setOnClickListener(AbstractC1544bu.A03(super.A08, A0T(48, 12, 20)));
+        super.A09.setOnClickListener(AbstractC1564bu.A03(super.A08, A0T(27, 4, 19)));
+        this.A0Q.setOnClickListener(AbstractC1564bu.A03(super.A08, A0T(74, 5, 18)));
+        this.A0P.setOnClickListener(AbstractC1564bu.A03(super.A08, A0T(16, 11, 125)));
+        this.A0W.setOnClickListener(AbstractC1564bu.A03(super.A08, A0T(48, 12, 20)));
         if (this.A04 != null) {
-            this.A04.setOnClickListener(AbstractC1544bu.A03(super.A08, A0T(31, 17, 106)));
+            this.A04.setOnClickListener(AbstractC1564bu.A03(super.A08, A0T(31, 17, 106)));
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1503bF
+    @Override // com.instagram.common.viewpoint.core.AbstractC1523bF
     public void A0l(int i) {
         A0o();
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1503bF
-    public final void A0m(boolean z3) {
-        super.A0m(z3);
-        if (!z3) {
+    @Override // com.instagram.common.viewpoint.core.AbstractC1523bF
+    public final void A0m(boolean z6) {
+        super.A0m(z6);
+        if (!z6) {
             this.A0V.A0P();
         }
     }
@@ -541,10 +541,10 @@ public abstract class LK extends AbstractC1503bF {
     public final void A0r() {
         if (this.A00 != null) {
             int height = super.A08.getHeight();
-            float f3 = height * 0.1f;
+            float f2 = height * 0.1f;
             String A0T = A0T(79, 12, 27);
-            ObjectAnimator ofFloat = ObjectAnimator.ofFloat(super.A08, A0T, -f3, 0.0f);
-            float bounceHeight = -f3;
+            ObjectAnimator ofFloat = ObjectAnimator.ofFloat(super.A08, A0T, -f2, 0.0f);
+            float bounceHeight = -f2;
             ObjectAnimator animator1 = ObjectAnimator.ofFloat(this.A0J, A0T, bounceHeight, 0.0f);
             ofFloat.setInterpolator(new LinearInterpolator());
             animator1.setInterpolator(new LinearInterpolator());
@@ -594,12 +594,12 @@ public abstract class LK extends AbstractC1503bF {
         }
     }
 
-    public final void A0z(ViewGroup viewGroup, boolean z3, boolean z6, int i) {
+    public final void A0z(ViewGroup viewGroup, boolean z6, boolean z9, int i) {
         YB.A0d(this.A0K, this.A0V, this.A06, this.A0W, super.A09, this.A0Q, this.A0P, this.A04, this.A05);
         YB.A0J(this);
-        int i6 = getResources().getConfiguration().orientation;
-        if (z3) {
-            if (i6 == 2 && z6) {
+        int i4 = getResources().getConfiguration().orientation;
+        if (z6) {
+            if (i4 == 2 && z9) {
                 A0X();
                 viewGroup.addView(this.A0K);
                 A0Z();
@@ -611,13 +611,13 @@ public abstract class LK extends AbstractC1503bF {
                 A0x(viewGroup, this.A06);
                 A0x(viewGroup, this.A05);
             } else {
-                A0b(i, i6);
+                A0b(i, i4);
                 viewGroup.addView(this.A0K);
-                A0d(i, i6);
+                A0d(i, i4);
                 viewGroup.addView(this.A0W);
-                A0c(i, i6);
+                A0c(i, i4);
                 viewGroup.addView(this.A0V);
-                A0f(this.A06, i6);
+                A0f(this.A06, i4);
                 String[] strArr = A0d;
                 String str = strArr[0];
                 String str2 = strArr[1];
@@ -627,7 +627,7 @@ public abstract class LK extends AbstractC1503bF {
                     throw new RuntimeException();
                 }
                 A0d[3] = "nUr6kFdTvmItrv0H0Gc17HbHzXx4pqcd";
-                A0f(this.A05, i6);
+                A0f(this.A05, i4);
                 A0x(viewGroup, this.A06);
                 A0x(viewGroup, this.A05);
             }
@@ -709,12 +709,12 @@ public abstract class LK extends AbstractC1503bF {
             String[] strArr = A0d;
             strArr[0] = "Pip5eIC199znlU0DxQZmRsWriqsU4m1j";
             strArr[1] = "8HZRpzu4lhTkjbLOeu664VtfGmtiQHTJ";
-            textView.setOnClickListener(AbstractC1544bu.A03(super.A08, A0T(31, 17, 106)));
+            textView.setOnClickListener(AbstractC1564bu.A03(super.A08, A0T(31, 17, 106)));
         }
     }
 
-    private void setUpAdReportingInitiateView(AbstractC2005jd abstractC2005jd) {
-        if (abstractC2005jd.A2Q() || abstractC2005jd.A2U()) {
+    private void setUpAdReportingInitiateView(AbstractC2025jd abstractC2025jd) {
+        if (abstractC2025jd.A2Q() || abstractC2025jd.A2U()) {
             this.A0K.setVisibility(8);
             this.A0H.setVisibility(8);
             this.A0I.setVisibility(8);
@@ -723,15 +723,15 @@ public abstract class LK extends AbstractC1503bF {
         this.A0V.setVisibility(8);
     }
 
-    private void setUpCreditLineV2(AbstractC2005jd abstractC2005jd) {
-        if (abstractC2005jd.A2W()) {
-            this.A06 = AbstractC1450aO.A02(this.A0U, EnumC1448aM.A03, abstractC2005jd);
+    private void setUpCreditLineV2(AbstractC2025jd abstractC2025jd) {
+        if (abstractC2025jd.A2W()) {
+            this.A06 = AbstractC1470aO.A02(this.A0U, EnumC1468aM.A03, abstractC2025jd);
             YB.A0K(this.A06);
         } else {
-            if (!abstractC2005jd.A2V()) {
+            if (!abstractC2025jd.A2V()) {
                 return;
             }
-            this.A05 = AbstractC1450aO.A01(this.A0U, true, this.A0R, this.A0B, this.A0C, EnumC1448aM.A03, EnumC1451aP.A04);
+            this.A05 = AbstractC1470aO.A01(this.A0U, true, this.A0R, this.A0B, this.A0C, EnumC1468aM.A03, EnumC1471aP.A04);
             YB.A0K(this.A05);
         }
     }

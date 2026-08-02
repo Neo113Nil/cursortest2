@@ -1,38 +1,38 @@
 package androidx.lifecycle;
 
-import S7.AbstractC0406y;
-import S7.InterfaceC0404w;
-import z7.InterfaceC5272i;
+import S7.AbstractC0410y;
+import S7.InterfaceC0408w;
+import z7.InterfaceC5245i;
 
 /* loaded from: classes.dex */
-public final class LifecycleCoroutineScopeImpl implements InterfaceC0501t, InterfaceC0404w {
+public final class LifecycleCoroutineScopeImpl implements InterfaceC0505t, InterfaceC0408w {
 
     /* renamed from: n, reason: collision with root package name */
-    public final AbstractC0498p f5125n;
+    public final AbstractC0502p f5092n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final InterfaceC5272i f5126u;
+    public final InterfaceC5245i f5093u;
 
-    public LifecycleCoroutineScopeImpl(AbstractC0498p abstractC0498p, InterfaceC5272i coroutineContext) {
+    public LifecycleCoroutineScopeImpl(AbstractC0502p abstractC0502p, InterfaceC5245i coroutineContext) {
         kotlin.jvm.internal.h.e(coroutineContext, "coroutineContext");
-        this.f5125n = abstractC0498p;
-        this.f5126u = coroutineContext;
-        if (((C0505x) abstractC0498p).f5178d == EnumC0497o.f5164n) {
-            AbstractC0406y.d(coroutineContext, null);
+        this.f5092n = abstractC0502p;
+        this.f5093u = coroutineContext;
+        if (((C0509x) abstractC0502p).f5145d == EnumC0501o.f5131n) {
+            AbstractC0410y.d(coroutineContext, null);
         }
     }
 
-    @Override // androidx.lifecycle.InterfaceC0501t
-    public final void a(InterfaceC0503v interfaceC0503v, EnumC0496n enumC0496n) {
-        AbstractC0498p abstractC0498p = this.f5125n;
-        if (((C0505x) abstractC0498p).f5178d.compareTo(EnumC0497o.f5164n) <= 0) {
-            abstractC0498p.b(this);
-            AbstractC0406y.d(this.f5126u, null);
+    @Override // androidx.lifecycle.InterfaceC0505t
+    public final void a(InterfaceC0507v interfaceC0507v, EnumC0500n enumC0500n) {
+        AbstractC0502p abstractC0502p = this.f5092n;
+        if (((C0509x) abstractC0502p).f5145d.compareTo(EnumC0501o.f5131n) <= 0) {
+            abstractC0502p.b(this);
+            AbstractC0410y.d(this.f5093u, null);
         }
     }
 
-    @Override // S7.InterfaceC0404w
-    public final InterfaceC5272i z() {
-        return this.f5126u;
+    @Override // S7.InterfaceC0408w
+    public final InterfaceC5245i z() {
+        return this.f5093u;
     }
 }

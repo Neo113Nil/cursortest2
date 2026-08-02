@@ -1,16 +1,16 @@
 package T7;
 
 import I7.l;
+import J0.k;
 import S0.n;
-import S7.AbstractC0406y;
+import S7.AbstractC0410y;
 import S7.B;
-import S7.C0395m;
-import S7.C0398p;
+import S7.C0399m;
+import S7.C0402p;
 import S7.V;
 import S7.y0;
 import U7.h;
 import U7.j;
-import U7.k;
 import com.google.android.gms.internal.ads.LD;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.atomic.AtomicLongFieldUpdater;
@@ -21,20 +21,20 @@ import u7.v;
 public final class d extends i implements l {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f3095n;
+    public final /* synthetic */ int f3212n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final /* synthetic */ Object f3096u;
+    public final /* synthetic */ Object f3213u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final /* synthetic */ Object f3097v;
+    public final /* synthetic */ Object f3214v;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public /* synthetic */ d(int i, Object obj, Object obj2) {
         super(1);
-        this.f3095n = i;
-        this.f3096u = obj;
-        this.f3097v = obj2;
+        this.f3212n = i;
+        this.f3213u = obj;
+        this.f3214v = obj2;
     }
 
     @Override // I7.l
@@ -42,54 +42,54 @@ public final class d extends i implements l {
         Object hVar;
         v vVar;
         v vVar2;
-        switch (this.f3095n) {
+        switch (this.f3212n) {
             case 0:
-                ((e) this.f3096u).f3098v.removeCallbacks((LD) this.f3097v);
-                return v.f41353a;
+                ((e) this.f3213u).f3215v.removeCallbacks((LD) this.f3214v);
+                return v.f41073a;
             case 1:
                 Throwable th = (Throwable) obj;
-                ((J0.l) this.f3096u).invoke(th);
-                n nVar = (n) this.f3097v;
-                ((U7.c) nVar.f2804w).i(th, false);
+                ((k) this.f3213u).invoke(th);
+                n nVar = (n) this.f3214v;
+                ((U7.c) nVar.f2933w).i(th, false);
                 do {
-                    U7.c cVar = (U7.c) nVar.f2804w;
+                    U7.c cVar = (U7.c) nVar.f2933w;
                     cVar.getClass();
-                    AtomicLongFieldUpdater atomicLongFieldUpdater = U7.c.f3230v;
+                    AtomicLongFieldUpdater atomicLongFieldUpdater = U7.c.f3353v;
                     long j6 = atomicLongFieldUpdater.get(cVar);
-                    AtomicLongFieldUpdater atomicLongFieldUpdater2 = U7.c.f3229u;
+                    AtomicLongFieldUpdater atomicLongFieldUpdater2 = U7.c.f3352u;
                     long j9 = atomicLongFieldUpdater2.get(cVar);
-                    boolean z3 = true;
+                    boolean z6 = true;
                     if (cVar.t(j9, true)) {
                         hVar = new h(cVar.o());
                     } else {
                         long j10 = j9 & 1152921504606846975L;
-                        U7.i iVar = j.f3259a;
+                        U7.i iVar = j.f3382a;
                         if (j6 >= j10) {
                             hVar = iVar;
                         } else {
-                            Object obj2 = U7.e.f3246k;
-                            k kVar = (k) U7.c.f3234z.get(cVar);
+                            Object obj2 = U7.e.f3369k;
+                            U7.k kVar = (U7.k) U7.c.f3357z.get(cVar);
                             while (true) {
-                                if (cVar.t(atomicLongFieldUpdater2.get(cVar), z3)) {
+                                if (cVar.t(atomicLongFieldUpdater2.get(cVar), z6)) {
                                     hVar = new h(cVar.o());
                                 } else {
                                     long andIncrement = atomicLongFieldUpdater.getAndIncrement(cVar);
-                                    long j11 = U7.e.f3238b;
+                                    long j11 = U7.e.f3361b;
                                     U7.i iVar2 = iVar;
                                     long j12 = andIncrement / j11;
                                     int i = (int) (andIncrement % j11);
-                                    if (kVar.f3860v != j12) {
-                                        k n9 = cVar.n(j12, kVar);
+                                    if (kVar.f3815v != j12) {
+                                        U7.k n9 = cVar.n(j12, kVar);
                                         if (n9 == null) {
                                             continue;
                                             iVar = iVar2;
-                                            z3 = true;
+                                            z6 = true;
                                         } else {
                                             kVar = n9;
                                         }
                                     }
-                                    Object B9 = cVar.B(kVar, i, andIncrement, obj2);
-                                    if (B9 == U7.e.f3248m) {
+                                    Object B3 = cVar.B(kVar, i, andIncrement, obj2);
+                                    if (B3 == U7.e.f3371m) {
                                         y0 y0Var = obj2 instanceof y0 ? (y0) obj2 : null;
                                         if (y0Var != null) {
                                             y0Var.a(kVar, i);
@@ -97,18 +97,18 @@ public final class d extends i implements l {
                                         cVar.D(andIncrement);
                                         kVar.h();
                                         hVar = iVar2;
-                                    } else if (B9 == U7.e.f3250o) {
+                                    } else if (B3 == U7.e.f3373o) {
                                         if (andIncrement < cVar.r()) {
                                             kVar.a();
                                         }
                                         iVar = iVar2;
-                                        z3 = true;
+                                        z6 = true;
                                     } else {
-                                        if (B9 == U7.e.f3249n) {
+                                        if (B3 == U7.e.f3372n) {
                                             throw new IllegalStateException("unexpected");
                                         }
                                         kVar.a();
-                                        hVar = B9;
+                                        hVar = B3;
                                     }
                                 }
                             }
@@ -118,15 +118,15 @@ public final class d extends i implements l {
                     if (hVar instanceof U7.i) {
                         hVar = null;
                     }
-                    vVar2 = v.f41353a;
+                    vVar2 = v.f41073a;
                     if (hVar != null) {
                         X.l lVar = (X.l) hVar;
                         if (lVar instanceof X.k) {
                             X.k kVar2 = (X.k) lVar;
                             Throwable cancellationException = th == null ? new CancellationException("DataStore scope was cancelled before updateData could complete") : th;
-                            C0395m c0395m = kVar2.f3512b;
-                            c0395m.getClass();
-                            c0395m.J(new C0398p(cancellationException, false));
+                            C0399m c0399m = kVar2.f3674b;
+                            c0399m.getClass();
+                            c0399m.J(new C0402p(cancellationException, false));
                         }
                         vVar = vVar2;
                     }
@@ -134,28 +134,28 @@ public final class d extends i implements l {
                 return vVar2;
             default:
                 Throwable th2 = (Throwable) obj;
-                t.h hVar2 = (t.h) this.f3096u;
+                t.h hVar2 = (t.h) this.f3213u;
                 if (th2 == null) {
-                    Object C8 = ((B) this.f3097v).C();
+                    Object C8 = ((B) this.f3214v).C();
                     if (C8 instanceof V) {
                         throw new IllegalStateException("This job has not completed yet");
                     }
-                    if (C8 instanceof C0398p) {
-                        throw ((C0398p) C8).f2983a;
+                    if (C8 instanceof C0402p) {
+                        throw ((C0402p) C8).f3066a;
                     }
-                    hVar2.a(AbstractC0406y.w(C8));
+                    hVar2.a(AbstractC0410y.w(C8));
                 } else if (th2 instanceof CancellationException) {
-                    hVar2.f40529d = true;
-                    t.k kVar3 = hVar2.f40527b;
-                    if (kVar3 != null && kVar3.f40532u.cancel(true)) {
-                        hVar2.f40526a = null;
-                        hVar2.f40527b = null;
-                        hVar2.f40528c = null;
+                    hVar2.f40582d = true;
+                    t.k kVar3 = hVar2.f40580b;
+                    if (kVar3 != null && kVar3.f40585u.cancel(true)) {
+                        hVar2.f40579a = null;
+                        hVar2.f40580b = null;
+                        hVar2.f40581c = null;
                     }
                 } else {
                     hVar2.b(th2);
                 }
-                return v.f41353a;
+                return v.f41073a;
         }
     }
 }

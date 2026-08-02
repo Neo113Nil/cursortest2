@@ -4,37 +4,37 @@ package com.anythink.core.basead.a;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f11891a;
+    private final String f12677a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final boolean f11892b;
+    private final boolean f12678b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final String f11893c;
+    private final String f12679c;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private String f11894a;
+        private String f12680a;
 
         /* renamed from: b, reason: collision with root package name */
-        private boolean f11895b;
+        private boolean f12681b;
 
         /* renamed from: c, reason: collision with root package name */
-        private String f11896c;
+        private String f12682c;
 
         public final a a(String str) {
-            this.f11894a = str;
+            this.f12680a = str;
             return this;
         }
 
         public final a b(String str) {
-            this.f11896c = str;
+            this.f12682c = str;
             return this;
         }
 
-        public final a a(boolean z3) {
-            this.f11895b = z3;
+        public final a a(boolean z6) {
+            this.f12681b = z6;
             return this;
         }
 
@@ -48,20 +48,20 @@ public final class c {
     }
 
     public final String a() {
-        return this.f11891a;
+        return this.f12677a;
     }
 
     public final boolean b() {
-        return this.f11892b;
+        return this.f12678b;
     }
 
     public final String c() {
-        return this.f11893c;
+        return this.f12679c;
     }
 
     private c(a aVar) {
-        this.f11891a = aVar.f11894a;
-        this.f11892b = aVar.f11895b;
-        this.f11893c = aVar.f11896c;
+        this.f12677a = aVar.f12680a;
+        this.f12678b = aVar.f12681b;
+        this.f12679c = aVar.f12682c;
     }
 }

@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class AD extends C2381pz {
+public final class AD extends C2401pz {
     public static byte[] A07;
     public static final AnonymousClass23<AD> A08;
     public static final String A09;
@@ -22,7 +22,7 @@ public final class AD extends C2381pz {
     public final int A01;
     public final int A02;
     public final int A03;
-    public final C2400qI A04;
+    public final C2420qI A04;
     public final C3C A05;
     public final String A06;
 
@@ -30,10 +30,10 @@ public final class AD extends C2381pz {
         return new AD(bundle);
     }
 
-    public static String A05(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 61);
+    public static String A05(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 61);
         }
         return new String(copyOfRange);
     }
@@ -58,17 +58,17 @@ public final class AD extends C2381pz {
         A09 = C5C.A0h(1006);
     }
 
-    public AD(int i, Throwable th, int i6) {
-        this(i, th, null, i6, null, -1, null, 4, false);
+    public AD(int i, Throwable th, int i4) {
+        this(i, th, null, i4, null, -1, null, 4, false);
     }
 
-    public AD(int i, Throwable th, String str, int i6, String str2, int i9, C2400qI c2400qI, int i10, boolean z3) {
-        this(A06(i, th, str, str2, i9, c2400qI, i10), th, i6, i, str2, i9, c2400qI, i10, null, SystemClock.elapsedRealtime(), z3);
+    public AD(int i, Throwable th, String str, int i4, String str2, int i6, C2420qI c2420qI, int i9, boolean z6) {
+        this(A06(i, th, str, str2, i6, c2420qI, i9), th, i4, i, str2, i6, c2420qI, i9, null, SystemClock.elapsedRealtime(), z6);
     }
 
     public AD(Bundle bundle) {
         super(bundle);
-        C2400qI A6f;
+        C2420qI A6f;
         this.A03 = bundle.getInt(A0E, 2);
         this.A06 = bundle.getString(A0D);
         this.A02 = bundle.getInt(A0C, -1);
@@ -76,7 +76,7 @@ public final class AD extends C2381pz {
         if (bundle2 == null) {
             A6f = null;
         } else {
-            A6f = C2400qI.A0b.A6f(bundle2);
+            A6f = C2420qI.A0b.A6f(bundle2);
         }
         this.A04 = A6f;
         this.A01 = bundle.getInt(A0B, 4);
@@ -84,17 +84,17 @@ public final class AD extends C2381pz {
         this.A05 = null;
     }
 
-    public AD(String str, Throwable th, int i, int i6, String str2, int i9, C2400qI c2400qI, int i10, C3C c3c, long j6, boolean z3) {
+    public AD(String str, Throwable th, int i, int i4, String str2, int i6, C2420qI c2420qI, int i9, C3C c3c, long j6, boolean z6) {
         super(str, th, i, j6);
-        AbstractC06243y.A07(!z3 || i6 == 1);
-        AbstractC06243y.A07(th != null || i6 == 3);
-        this.A03 = i6;
+        AbstractC06443y.A07(!z6 || i4 == 1);
+        AbstractC06443y.A07(th != null || i4 == 3);
+        this.A03 = i4;
         this.A06 = str2;
-        this.A02 = i9;
-        this.A04 = c2400qI;
-        this.A01 = i10;
+        this.A02 = i6;
+        this.A04 = c2420qI;
+        this.A01 = i9;
         this.A05 = c3c;
-        this.A00 = z3;
+        this.A00 = z6;
     }
 
     public static AD A01(IOException iOException, int i) {
@@ -110,15 +110,15 @@ public final class AD extends C2381pz {
         return new AD(2, runtimeException, i);
     }
 
-    public static AD A04(Throwable th, String str, int i, C2400qI c2400qI, int i6, boolean z3, int i9) {
-        int i10 = i6;
-        if (c2400qI == null) {
-            i10 = 4;
+    public static AD A04(Throwable th, String str, int i, C2420qI c2420qI, int i4, boolean z6, int i6) {
+        int i9 = i4;
+        if (c2420qI == null) {
+            i9 = 4;
         }
-        return new AD(1, th, null, i9, str, i, c2400qI, i10, z3);
+        return new AD(1, th, null, i6, str, i, c2420qI, i9, z6);
     }
 
-    public static String A06(@MetaExoPlayerCustomization(type = {"NEW_METHOD_ARGS"}, value = "Throwable cause - linked with Error reporting") int i, Throwable th, String str, String str2, int i6, C2400qI c2400qI, int i9) {
+    public static String A06(@MetaExoPlayerCustomization(type = {"NEW_METHOD_ARGS"}, value = "Throwable cause - linked with Error reporting") int i, Throwable th, String str, String str2, int i4, C2420qI c2420qI, int i6) {
         String message;
         String A05;
         if (str == null) {
@@ -136,12 +136,12 @@ public final class AD extends C2381pz {
             case 1:
                 StringBuilder append = new StringBuilder().append(str2);
                 String message2 = A05(0, 14, 27);
-                StringBuilder append2 = append.append(message2).append(i6);
+                StringBuilder append2 = append.append(message2).append(i4);
                 String message3 = A05(14, 9, 68);
-                StringBuilder append3 = append2.append(message3).append(c2400qI);
+                StringBuilder append3 = append2.append(message3).append(c2420qI);
                 String message4 = A05(23, 19, 114);
                 StringBuilder append4 = append3.append(message4);
-                String message5 = C5C.A0g(i9);
+                String message5 = C5C.A0g(i6);
                 A05 = append4.append(message5).toString();
                 break;
             case 2:

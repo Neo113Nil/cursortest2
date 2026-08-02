@@ -30,11 +30,11 @@ public abstract class C5Q {
                     return -1;
                 }
                 query.moveToNext();
-                int i6 = query.getInt(0);
+                int i4 = query.getInt(0);
                 if (query != null) {
                     query.close();
                 }
-                return i6;
+                return i4;
             } finally {
             }
         } catch (SQLException e9) {
@@ -42,16 +42,16 @@ public abstract class C5Q {
         }
     }
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 17);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 17);
         }
         return new String(copyOfRange);
     }
 
     public static void A02() {
-        A00 = new byte[]{53, 36, 51, 55, 34, 51, 86, 34, 55, 52, 58, 51, 86, c.f16318c, 48, 86, 56, 57, 34, 86, 51, 46, c.f16318c, 37, 34, 37, 86, 51, 14, 25, 38, 26, 23, 15, 19, 4, 32, 19, 4, 5, 31, 25, 24, 5, 86, 94, 16, 19, 23, 2, 3, 4, 19, 86, c.f16318c, 56, 34, 51, 49, 51, 36, 86, 56, 57, 34, 86, 56, 35, 58, 58, 90, 31, 24, 5, 2, 23, 24, 21, 19, 41, 3, 31, 18, 86, 34, 51, 46, 34, 86, 56, 57, 34, 86, 56, 35, 58, 58, 90, 0, 19, 4, 5, 31, 25, 24, 86, c.f16318c, 56, 34, 51, 49, 51, 36, 86, 56, 57, 34, 86, 56, 35, 58, 58, 90, 38, 36, c.f16318c, 59, 55, 36, 47, 86, 61, 51, 47, 86, 94, 16, 19, 23, 2, 3, 4, 19, 90, 86, 31, 24, 5, 2, 23, 24, 21, 19, 41, 3, 31, 18, 95, 95, 29, 32, 55, 8, 52, 57, 33, 61, 42, 14, 61, 42, 43, 49, 55, 54, 43, 103, 100, 96, 117, 116, 115, 100, 97, 98, 102, 115, 114, 117, 98, 39, 58, 39, 56, 39, 70, 73, 67, 39, 110, 105, 116, 115, 102, 105, 100, 98, 88, 114, 110, 99, 39, 58, 39, 56, c.f16317b, 72, 72, c.f16317b, 9, 66, 95, 72, 9, 67, 70, 83, 70, 69, 70, 84, 66, 9, 14, 19, 20, 1, 14, 3, 5, c.f16318c, 21, 9, 4, 58, 41, 62, c.f16318c, 37, 35, 34};
+        A00 = new byte[]{53, 36, 51, 55, 34, 51, 86, 34, 55, 52, 58, 51, 86, c.f17105c, 48, 86, 56, 57, 34, 86, 51, 46, c.f17105c, 37, 34, 37, 86, 51, 14, 25, 38, 26, 23, 15, 19, 4, 32, 19, 4, 5, 31, 25, 24, 5, 86, 94, 16, 19, 23, 2, 3, 4, 19, 86, c.f17105c, 56, 34, 51, 49, 51, 36, 86, 56, 57, 34, 86, 56, 35, 58, 58, 90, 31, 24, 5, 2, 23, 24, 21, 19, 41, 3, 31, 18, 86, 34, 51, 46, 34, 86, 56, 57, 34, 86, 56, 35, 58, 58, 90, 0, 19, 4, 5, 31, 25, 24, 86, c.f17105c, 56, 34, 51, 49, 51, 36, 86, 56, 57, 34, 86, 56, 35, 58, 58, 90, 38, 36, c.f17105c, 59, 55, 36, 47, 86, 61, 51, 47, 86, 94, 16, 19, 23, 2, 3, 4, 19, 90, 86, 31, 24, 5, 2, 23, 24, 21, 19, 41, 3, 31, 18, 95, 95, 29, 32, 55, 8, 52, 57, 33, 61, 42, 14, 61, 42, 43, 49, 55, 54, 43, 103, 100, 96, 117, 116, 115, 100, 97, 98, 102, 115, 114, 117, 98, 39, 58, 39, 56, 39, 70, 73, 67, 39, 110, 105, 116, 115, 102, 105, 100, 98, 88, 114, 110, 99, 39, 58, 39, 56, c.f17104b, 72, 72, c.f17104b, 9, 66, 95, 72, 9, 67, 70, 83, 70, 69, 70, 84, 66, 9, 14, 19, 20, 1, 14, 3, 5, c.f17105c, 21, 9, 4, 58, 41, 62, c.f17105c, 37, 35, 34};
         String[] strArr = A01;
         if (strArr[6].charAt(14) == strArr[5].charAt(14)) {
             throw new RuntimeException();
@@ -76,13 +76,13 @@ public abstract class C5Q {
         }
     }
 
-    public static void A04(SQLiteDatabase sQLiteDatabase, int i, String str, int i6) throws C5N {
+    public static void A04(SQLiteDatabase sQLiteDatabase, int i, String str, int i4) throws C5N {
         try {
             sQLiteDatabase.execSQL(A01(0, 159, 103));
             ContentValues contentValues = new ContentValues();
             contentValues.put(A01(176, 7, 16), Integer.valueOf(i));
             contentValues.put(A01(232, 12, 113), str);
-            contentValues.put(A01(244, 7, 93), Integer.valueOf(i6));
+            contentValues.put(A01(244, 7, 93), Integer.valueOf(i4));
             sQLiteDatabase.replaceOrThrow(A01(159, 17, 73), null, contentValues);
         } catch (SQLException e9) {
             throw new C5N(e9);

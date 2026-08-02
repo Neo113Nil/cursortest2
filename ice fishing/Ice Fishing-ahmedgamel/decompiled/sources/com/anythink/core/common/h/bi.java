@@ -4,19 +4,19 @@ package com.anythink.core.common.h;
 public final class bi extends bj {
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f13637b = 1;
+    public static final int f14423b = 1;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f13638c = 2;
+    public static final int f14424c = 2;
 
     /* renamed from: a, reason: collision with root package name */
-    int f13639a;
+    int f14425a;
 
     /* renamed from: d, reason: collision with root package name */
-    int f13640d;
+    int f14426d;
 
     public final void a(int i) {
-        this.f13639a = i;
+        this.f14425a = i;
     }
 
     @Override // com.anythink.core.common.h.w
@@ -25,14 +25,14 @@ public final class bi extends bj {
     }
 
     public final int d() {
-        return this.f13639a;
+        return this.f14425a;
     }
 
     public final int e() {
-        return this.f13640d;
+        return this.f14426d;
     }
 
     public final void b(int i) {
-        this.f13640d = i;
+        this.f14426d = i;
     }
 }

@@ -7,16 +7,16 @@ import java.net.Proxy;
 public final class ah {
 
     /* renamed from: a, reason: collision with root package name */
-    final C0546a f15532a;
+    final C0565a f16319a;
 
     /* renamed from: b, reason: collision with root package name */
-    final Proxy f15533b;
+    final Proxy f16320b;
 
     /* renamed from: c, reason: collision with root package name */
-    final InetSocketAddress f15534c;
+    final InetSocketAddress f16321c;
 
-    public ah(C0546a c0546a, Proxy proxy, InetSocketAddress inetSocketAddress) {
-        if (c0546a == null) {
+    public ah(C0565a c0565a, Proxy proxy, InetSocketAddress inetSocketAddress) {
+        if (c0565a == null) {
             throw new NullPointerException("address == null");
         }
         if (proxy == null) {
@@ -25,25 +25,25 @@ public final class ah {
         if (inetSocketAddress == null) {
             throw new NullPointerException("inetSocketAddress == null");
         }
-        this.f15532a = c0546a;
-        this.f15533b = proxy;
-        this.f15534c = inetSocketAddress;
+        this.f16319a = c0565a;
+        this.f16320b = proxy;
+        this.f16321c = inetSocketAddress;
     }
 
-    public final C0546a a() {
-        return this.f15532a;
+    public final C0565a a() {
+        return this.f16319a;
     }
 
     public final Proxy b() {
-        return this.f15533b;
+        return this.f16320b;
     }
 
     public final InetSocketAddress c() {
-        return this.f15534c;
+        return this.f16321c;
     }
 
     public final boolean d() {
-        return this.f15532a.i != null && this.f15533b.type() == Proxy.Type.HTTP;
+        return this.f16319a.i != null && this.f16320b.type() == Proxy.Type.HTTP;
     }
 
     public final boolean equals(Object obj) {
@@ -51,14 +51,14 @@ public final class ah {
             return false;
         }
         ah ahVar = (ah) obj;
-        return ahVar.f15532a.equals(this.f15532a) && ahVar.f15533b.equals(this.f15533b) && ahVar.f15534c.equals(this.f15534c);
+        return ahVar.f16319a.equals(this.f16319a) && ahVar.f16320b.equals(this.f16320b) && ahVar.f16321c.equals(this.f16321c);
     }
 
     public final int hashCode() {
-        return this.f15534c.hashCode() + ((this.f15533b.hashCode() + ((this.f15532a.hashCode() + 527) * 31)) * 31);
+        return this.f16321c.hashCode() + ((this.f16320b.hashCode() + ((this.f16319a.hashCode() + 527) * 31)) * 31);
     }
 
     public final String toString() {
-        return "Route{" + this.f15534c + "}";
+        return "Route{" + this.f16321c + "}";
     }
 }

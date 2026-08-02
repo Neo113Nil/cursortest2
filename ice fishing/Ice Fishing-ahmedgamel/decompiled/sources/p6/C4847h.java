@@ -9,11 +9,11 @@ import java.util.logging.Level;
 public final class C4847h extends q6.g {
 
     /* renamed from: w, reason: collision with root package name */
-    public final ConcurrentHashMap f39784w;
+    public final ConcurrentHashMap f39831w;
 
     public C4847h(ConcurrentHashMap concurrentHashMap) {
         super(false, concurrentHashMap);
-        this.f39784w = concurrentHashMap;
+        this.f39831w = concurrentHashMap;
         Thread thread = new Thread(this);
         thread.setName("weak-ref-cleaner-strictcontextstorage");
         thread.setPriority(1);
@@ -22,14 +22,14 @@ public final class C4847h extends q6.g {
         thread.start();
     }
 
-    @Override // q6.AbstractRunnableC4931d, java.lang.Runnable
+    @Override // q6.AbstractRunnableC4880d, java.lang.Runnable
     public final void run() {
         while (!Thread.interrupted()) {
             try {
                 Reference remove = remove();
-                C4846g c4846g = remove != null ? (C4846g) this.f39784w.remove(remove) : null;
-                if (c4846g != null && !c4846g.f39783w) {
-                    C4849j.f39788u.log(Level.SEVERE, "Scope garbage collected before being closed.", (Throwable) C4849j.a(c4846g));
+                C4846g c4846g = remove != null ? (C4846g) this.f39831w.remove(remove) : null;
+                if (c4846g != null && !c4846g.f39830w) {
+                    C4849j.f39835u.log(Level.SEVERE, "Scope garbage collected before being closed.", (Throwable) C4849j.a(c4846g));
                 }
             } catch (InterruptedException unused) {
                 return;

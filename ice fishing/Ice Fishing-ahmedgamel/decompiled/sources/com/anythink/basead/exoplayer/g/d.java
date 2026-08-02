@@ -7,16 +7,16 @@ import com.anythink.basead.exoplayer.m;
 public interface d {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final d f7379a = new d() { // from class: com.anythink.basead.exoplayer.g.d.1
+    public static final d f8165a = new d() { // from class: com.anythink.basead.exoplayer.g.d.1
         @Override // com.anythink.basead.exoplayer.g.d
         public final boolean a(m mVar) {
-            String str = mVar.f8665h;
-            return o.f8440V.equals(str) || o.ai.equals(str) || o.ag.equals(str);
+            String str = mVar.f9451h;
+            return o.f9226V.equals(str) || o.ai.equals(str) || o.ag.equals(str);
         }
 
         @Override // com.anythink.basead.exoplayer.g.d
         public final b b(m mVar) {
-            String str = mVar.f8665h;
+            String str = mVar.f9451h;
             str.getClass();
             switch (str) {
                 case "application/id3":

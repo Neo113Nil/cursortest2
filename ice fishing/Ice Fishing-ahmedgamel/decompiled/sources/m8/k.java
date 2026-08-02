@@ -1,42 +1,35 @@
 package m8;
 
 /* loaded from: classes2.dex */
-public final class k implements w {
+public final class k extends l8.a {
 
-    /* renamed from: a, reason: collision with root package name */
-    public final v f39364a;
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ v f39522e;
 
-    public k(Throwable th) {
-        this.f39364a = new v(this, th, 2);
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ l f39523f;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public k(String str, v vVar, l lVar) {
+        super(str);
+        this.f39522e = vVar;
+        this.f39523f = lVar;
     }
 
-    @Override // m8.w
-    public final w a() {
-        throw new IllegalStateException("unexpected retry");
-    }
-
-    @Override // m8.w
-    public final r b() {
-        throw new IllegalStateException("unexpected call");
-    }
-
-    @Override // m8.w
-    public final v c() {
-        return this.f39364a;
-    }
-
-    @Override // m8.w, n8.e
-    public final void cancel() {
-        throw new IllegalStateException("unexpected cancel");
-    }
-
-    @Override // m8.w
-    public final v e() {
-        return this.f39364a;
-    }
-
-    @Override // m8.w
-    public final boolean isReady() {
-        return false;
+    @Override // l8.a
+    public final long a() {
+        u uVar;
+        v vVar = this.f39522e;
+        try {
+            uVar = vVar.c();
+        } catch (Throwable th) {
+            uVar = new u(vVar, th, 2);
+        }
+        l lVar = this.f39523f;
+        if (!lVar.f39528x.contains(vVar)) {
+            return -1L;
+        }
+        lVar.f39529y.put(uVar);
+        return -1L;
     }
 }

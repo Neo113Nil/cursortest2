@@ -4,36 +4,36 @@ import java.util.NoSuchElementException;
 import java.util.Objects;
 
 /* loaded from: classes2.dex */
-public final class AL extends AbstractC4255zC {
+public final class AL extends AbstractC4278zC {
 
     /* renamed from: u, reason: collision with root package name */
-    public final BL f23664u;
+    public final BL f24444u;
 
     /* renamed from: v, reason: collision with root package name */
-    public AbstractC4255zC f23665v;
+    public AbstractC4278zC f24445v;
 
     public AL(CL cl) {
         super(1);
         Objects.requireNonNull(cl);
-        this.f23664u = new BL(cl);
-        this.f23665v = b();
+        this.f24444u = new BL(cl);
+        this.f24445v = b();
     }
 
-    @Override // com.google.android.gms.internal.ads.AbstractC4255zC
+    @Override // com.google.android.gms.internal.ads.AbstractC4278zC
     public final byte a() {
-        AbstractC4255zC abstractC4255zC = this.f23665v;
-        if (abstractC4255zC == null) {
+        AbstractC4278zC abstractC4278zC = this.f24445v;
+        if (abstractC4278zC == null) {
             throw new NoSuchElementException();
         }
-        byte a9 = abstractC4255zC.a();
-        if (!this.f23665v.hasNext()) {
-            this.f23665v = b();
+        byte a9 = abstractC4278zC.a();
+        if (!this.f24445v.hasNext()) {
+            this.f24445v = b();
         }
         return a9;
     }
 
     public final EK b() {
-        BL bl = this.f23664u;
+        BL bl = this.f24444u;
         if (bl.hasNext()) {
             return new EK(bl.next());
         }
@@ -42,6 +42,6 @@ public final class AL extends AbstractC4255zC {
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        return this.f23665v != null;
+        return this.f24445v != null;
     }
 }

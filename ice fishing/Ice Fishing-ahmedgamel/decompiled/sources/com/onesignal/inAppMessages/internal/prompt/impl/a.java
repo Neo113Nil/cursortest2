@@ -1,21 +1,21 @@
 package com.onesignal.inAppMessages.internal.prompt.impl;
 
-import a5.InterfaceC0437a;
+import a5.InterfaceC0441a;
 import com.onesignal.inAppMessages.internal.prompt.impl.b;
 import kotlin.jvm.internal.h;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class a extends b {
-    private final InterfaceC0437a _locationManager;
+    private final InterfaceC0441a _locationManager;
 
     /* renamed from: com.onesignal.inAppMessages.internal.prompt.impl.a$a, reason: collision with other inner class name */
     public static final class C0210a extends B7.c {
         int label;
         /* synthetic */ Object result;
 
-        public C0210a(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public C0210a(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -26,7 +26,7 @@ public final class a extends b {
         }
     }
 
-    public a(InterfaceC0437a _locationManager) {
+    public a(InterfaceC0441a _locationManager) {
         h.e(_locationManager, "_locationManager");
         this._locationManager = _locationManager;
     }
@@ -44,23 +44,23 @@ public final class a extends b {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object handlePrompt(InterfaceC5267d interfaceC5267d) {
+    public Object handlePrompt(InterfaceC5240d interfaceC5240d) {
         C0210a c0210a;
         int i;
         boolean booleanValue;
-        if (interfaceC5267d instanceof C0210a) {
-            c0210a = (C0210a) interfaceC5267d;
-            int i6 = c0210a.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                c0210a.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof C0210a) {
+            c0210a = (C0210a) interfaceC5240d;
+            int i4 = c0210a.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                c0210a.label = i4 - Integer.MIN_VALUE;
                 Object obj = c0210a.result;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 i = c0210a.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
-                    InterfaceC0437a interfaceC0437a = this._locationManager;
+                    Q3.b.s(obj);
+                    InterfaceC0441a interfaceC0441a = this._locationManager;
                     c0210a.label = 1;
-                    obj = interfaceC0437a.requestPermission(c0210a);
+                    obj = interfaceC0441a.requestPermission(c0210a);
                     if (obj == aVar) {
                         return aVar;
                     }
@@ -68,7 +68,7 @@ public final class a extends b {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 booleanValue = ((Boolean) obj).booleanValue();
                 if (!booleanValue) {
@@ -80,9 +80,9 @@ public final class a extends b {
                 return b.a.PERMISSION_DENIED;
             }
         }
-        c0210a = new C0210a(interfaceC5267d);
+        c0210a = new C0210a(interfaceC5240d);
         Object obj2 = c0210a.result;
-        A7.a aVar2 = A7.a.f58n;
+        A7.a aVar2 = A7.a.f215n;
         i = c0210a.label;
         if (i != 0) {
         }

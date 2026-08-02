@@ -4,10 +4,10 @@ package com.anythink.expressad.video.bt.module.b;
 public final class a implements com.anythink.expressad.videocommon.d.a {
 
     /* renamed from: a, reason: collision with root package name */
-    private g f21058a;
+    private g f21845a;
 
     private a(g gVar) {
-        this.f21058a = gVar;
+        this.f21845a = gVar;
     }
 
     @Override // com.anythink.expressad.videocommon.d.a
@@ -47,10 +47,10 @@ public final class a implements com.anythink.expressad.videocommon.d.a {
     }
 
     @Override // com.anythink.expressad.videocommon.d.a
-    public final void a(boolean z3, String str, float f3) {
-        g gVar = this.f21058a;
+    public final void a(boolean z6, String str, float f2) {
+        g gVar = this.f21845a;
         if (gVar != null) {
-            gVar.a(z3, str, f3);
+            gVar.a(z6, str, f2);
         }
     }
 }

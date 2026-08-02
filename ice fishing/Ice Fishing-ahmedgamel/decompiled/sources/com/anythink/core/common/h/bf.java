@@ -6,10 +6,10 @@ import android.app.Activity;
 public abstract class bf {
 
     /* renamed from: d, reason: collision with root package name */
-    protected w f13627d;
+    protected w f14413d;
 
     public final w a() {
-        return this.f13627d;
+        return this.f14413d;
     }
 
     public abstract void a(Activity activity);

@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import com.IceFishing.LiveIceFishing.k;
 import com.anythink.core.common.d.t;
 import com.anythink.expressad.foundation.d.d;
 import com.anythink.expressad.foundation.d.e;
@@ -25,6 +26,7 @@ import com.anythink.expressad.foundation.g.d.c;
 import com.anythink.expressad.foundation.h.v;
 import com.anythink.expressad.foundation.h.z;
 import com.anythink.expressad.shake.MBShakeView;
+import com.anythink.expressad.video.dynview.f.h;
 import com.anythink.expressad.video.dynview.widget.AnyThinkLevelLayoutView;
 import com.anythink.expressad.video.dynview.widget.AnythinkBaitClickView;
 import com.anythink.expressad.video.module.a.a.j;
@@ -33,93 +35,93 @@ import com.anythink.expressad.video.signal.factory.b;
 import com.anythink.expressad.videocommon.view.RoundImageView;
 import com.anythink.expressad.videocommon.view.StarLevelView;
 import com.anythink.expressad.widget.FeedBackButton;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.ArrayList;
 import java.util.Iterator;
 import org.json.JSONException;
 import org.json.JSONObject;
-import u1.h;
 
 /* loaded from: classes.dex */
 public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
 
     /* renamed from: n, reason: collision with root package name */
-    private static final String f21565n = "anythink_reward_endcard_native_hor";
+    private static final String f22352n = "anythink_reward_endcard_native_hor";
 
     /* renamed from: o, reason: collision with root package name */
-    private static final String f21566o = "anythink_reward_endcard_native_land";
+    private static final String f22353o = "anythink_reward_endcard_native_land";
 
     /* renamed from: p, reason: collision with root package name */
-    private static final String f21567p = "anythink_reward_endcard_native_half_portrait";
+    private static final String f22354p = "anythink_reward_endcard_native_half_portrait";
 
     /* renamed from: q, reason: collision with root package name */
-    private static final String f21568q = "anythink_reward_endcard_native_half_landscape";
+    private static final String f22355q = "anythink_reward_endcard_native_half_landscape";
 
     /* renamed from: A, reason: collision with root package name */
-    private ImageView f21569A;
+    private ImageView f22356A;
 
     /* renamed from: B, reason: collision with root package name */
-    private TextView f21570B;
+    private TextView f22357B;
 
     /* renamed from: C, reason: collision with root package name */
-    private TextView f21571C;
+    private TextView f22358C;
 
     /* renamed from: D, reason: collision with root package name */
-    private TextView f21572D;
+    private TextView f22359D;
 
     /* renamed from: E, reason: collision with root package name */
-    private LinearLayout f21573E;
+    private LinearLayout f22360E;
 
     /* renamed from: F, reason: collision with root package name */
-    private FeedBackButton f21574F;
+    private FeedBackButton f22361F;
 
     /* renamed from: G, reason: collision with root package name */
-    private Runnable f21575G;
+    private Runnable f22362G;
 
     /* renamed from: H, reason: collision with root package name */
-    private Runnable f21576H;
+    private Runnable f22363H;
 
     /* renamed from: I, reason: collision with root package name */
-    private RelativeLayout f21577I;
+    private RelativeLayout f22364I;
     private b J;
 
     /* renamed from: K, reason: collision with root package name */
-    private boolean f21578K;
+    private boolean f22365K;
 
     /* renamed from: L, reason: collision with root package name */
-    private boolean f21579L;
+    private boolean f22366L;
 
     /* renamed from: M, reason: collision with root package name */
-    private int f21580M;
+    private int f22367M;
 
     /* renamed from: N, reason: collision with root package name */
-    private boolean f21581N;
+    private boolean f22368N;
 
     /* renamed from: O, reason: collision with root package name */
-    private boolean f21582O;
+    private boolean f22369O;
 
     /* renamed from: P, reason: collision with root package name */
-    private boolean f21583P;
+    private boolean f22370P;
 
     /* renamed from: Q, reason: collision with root package name */
-    private AlphaAnimation f21584Q;
+    private AlphaAnimation f22371Q;
 
     /* renamed from: R, reason: collision with root package name */
-    private int f21585R;
+    private int f22372R;
 
     /* renamed from: S, reason: collision with root package name */
-    private int f21586S;
+    private int f22373S;
 
     /* renamed from: T, reason: collision with root package name */
-    private int f21587T;
+    private int f22374T;
 
     /* renamed from: U, reason: collision with root package name */
-    private int f21588U;
+    private int f22375U;
 
     /* renamed from: V, reason: collision with root package name */
-    private boolean f21589V;
+    private boolean f22376V;
 
     /* renamed from: W, reason: collision with root package name */
-    private Bitmap f21590W;
+    private Bitmap f22377W;
     private int aa;
     private String ab;
     private View ac;
@@ -134,31 +136,31 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
     private boolean al;
 
     /* renamed from: r, reason: collision with root package name */
-    private ViewGroup f21591r;
+    private ViewGroup f22378r;
 
     /* renamed from: s, reason: collision with root package name */
-    private ViewGroup f21592s;
+    private ViewGroup f22379s;
 
     /* renamed from: t, reason: collision with root package name */
-    private RelativeLayout f21593t;
+    private RelativeLayout f22380t;
 
     /* renamed from: u, reason: collision with root package name */
-    private RelativeLayout f21594u;
+    private RelativeLayout f22381u;
 
     /* renamed from: v, reason: collision with root package name */
-    private ImageView f21595v;
+    private ImageView f22382v;
 
     /* renamed from: w, reason: collision with root package name */
-    private ImageView f21596w;
+    private ImageView f22383w;
 
     /* renamed from: x, reason: collision with root package name */
-    private ImageView f21597x;
+    private ImageView f22384x;
 
     /* renamed from: y, reason: collision with root package name */
-    private ImageView f21598y;
+    private ImageView f22385y;
 
     /* renamed from: z, reason: collision with root package name */
-    private ImageView f21599z;
+    private ImageView f22386z;
 
     /* renamed from: com.anythink.expressad.video.module.AnythinkNativeEndCardView$11, reason: invalid class name */
     public class AnonymousClass11 implements c {
@@ -175,17 +177,17 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
                 return;
             }
             try {
-                if (AnythinkNativeEndCardView.this.f21596w != null) {
+                if (AnythinkNativeEndCardView.this.f22383w != null) {
                     AnythinkNativeEndCardView anythinkNativeEndCardView = AnythinkNativeEndCardView.this;
                     if (anythinkNativeEndCardView.i) {
-                        anythinkNativeEndCardView.f21596w.setBackgroundDrawable(null);
+                        anythinkNativeEndCardView.f22383w.setBackgroundDrawable(null);
                     }
-                    AnythinkNativeEndCardView.this.f21596w.setImageBitmap(bitmap);
+                    AnythinkNativeEndCardView.this.f22383w.setImageBitmap(bitmap);
                 }
                 AnythinkNativeEndCardView.a(AnythinkNativeEndCardView.this, bitmap);
             } catch (Throwable unused) {
-                if (AnythinkNativeEndCardView.this.f21595v != null) {
-                    AnythinkNativeEndCardView.this.f21595v.setVisibility(4);
+                if (AnythinkNativeEndCardView.this.f22382v != null) {
+                    AnythinkNativeEndCardView.this.f22382v.setVisibility(4);
                 }
             }
         }
@@ -206,11 +208,11 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
                 return;
             }
             try {
-                int b9 = v.b(AnythinkNativeEndCardView.this.f21441a, 12.0f);
-                AnythinkNativeEndCardView.this.f21598y.getLayoutParams().height = b9;
-                AnythinkNativeEndCardView.this.f21598y.getLayoutParams().width = (int) (b9 * ((bitmap.getWidth() * 1.0f) / bitmap.getHeight()));
-                AnythinkNativeEndCardView.this.f21598y.setImageBitmap(bitmap);
-                AnythinkNativeEndCardView.this.f21598y.setBackgroundColor(1426063360);
+                int b9 = v.b(AnythinkNativeEndCardView.this.f22228a, 12.0f);
+                AnythinkNativeEndCardView.this.f22385y.getLayoutParams().height = b9;
+                AnythinkNativeEndCardView.this.f22385y.getLayoutParams().width = (int) (b9 * ((bitmap.getWidth() * 1.0f) / bitmap.getHeight()));
+                AnythinkNativeEndCardView.this.f22385y.setImageBitmap(bitmap);
+                AnythinkNativeEndCardView.this.f22385y.setBackgroundColor(1426063360);
             } catch (Throwable unused) {
             }
         }
@@ -220,27 +222,27 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
     public class AnonymousClass13 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ Bitmap f21604a;
+        final /* synthetic */ Bitmap f22391a;
 
         public AnonymousClass13(Bitmap bitmap) {
-            this.f21604a = bitmap;
+            this.f22391a = bitmap;
         }
 
         @Override // java.lang.Runnable
         public final void run() {
             AnythinkNativeEndCardView anythinkNativeEndCardView = AnythinkNativeEndCardView.this;
-            anythinkNativeEndCardView.f21590W = anythinkNativeEndCardView.blurBitmap(this.f21604a);
-            if (AnythinkNativeEndCardView.this.f21590W == null || AnythinkNativeEndCardView.this.f21590W.isRecycled() || AnythinkNativeEndCardView.this.f21595v == null) {
+            anythinkNativeEndCardView.f22377W = anythinkNativeEndCardView.blurBitmap(this.f22391a);
+            if (AnythinkNativeEndCardView.this.f22377W == null || AnythinkNativeEndCardView.this.f22377W.isRecycled() || AnythinkNativeEndCardView.this.f22382v == null) {
                 return;
             }
-            AnythinkNativeEndCardView.this.f21595v.post(new Runnable() { // from class: com.anythink.expressad.video.module.AnythinkNativeEndCardView.13.1
+            AnythinkNativeEndCardView.this.f22382v.post(new Runnable() { // from class: com.anythink.expressad.video.module.AnythinkNativeEndCardView.13.1
                 @Override // java.lang.Runnable
                 public final void run() {
                     AnythinkNativeEndCardView anythinkNativeEndCardView2 = AnythinkNativeEndCardView.this;
                     if (anythinkNativeEndCardView2.i) {
-                        anythinkNativeEndCardView2.f21595v.setBackgroundDrawable(null);
+                        anythinkNativeEndCardView2.f22382v.setBackgroundDrawable(null);
                     }
-                    AnythinkNativeEndCardView.this.f21595v.setImageBitmap(AnythinkNativeEndCardView.this.f21590W);
+                    AnythinkNativeEndCardView.this.f22382v.setImageBitmap(AnythinkNativeEndCardView.this.f22377W);
                 }
             });
         }
@@ -253,17 +255,17 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
 
         @Override // com.anythink.expressad.foundation.f.a
         public final void a() {
-            AnythinkNativeEndCardView.this.f21583P = true;
+            AnythinkNativeEndCardView.this.f22370P = true;
         }
 
         @Override // com.anythink.expressad.foundation.f.a
         public final void b() {
-            AnythinkNativeEndCardView.this.f21583P = false;
+            AnythinkNativeEndCardView.this.f22370P = false;
         }
 
         @Override // com.anythink.expressad.foundation.f.a
         public final void c() {
-            AnythinkNativeEndCardView.this.f21583P = false;
+            AnythinkNativeEndCardView.this.f22370P = false;
         }
     }
 
@@ -280,16 +282,16 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
 
     /* renamed from: com.anythink.expressad.video.module.AnythinkNativeEndCardView$6, reason: invalid class name */
     public class AnonymousClass6 extends com.anythink.core.express.c.b {
-        public AnonymousClass6(int i, int i6) {
-            super(i, i6);
+        public AnonymousClass6(int i, int i4) {
+            super(i, i4);
         }
 
         @Override // com.anythink.core.express.c.b
         public final void a() {
-            if (!AnythinkNativeEndCardView.this.f21583P && AnythinkNativeEndCardView.this.f21582O && AnythinkNativeEndCardView.this.isShown()) {
+            if (!AnythinkNativeEndCardView.this.f22370P && AnythinkNativeEndCardView.this.f22369O && AnythinkNativeEndCardView.this.isShown()) {
                 AnythinkNativeEndCardView anythinkNativeEndCardView = AnythinkNativeEndCardView.this;
-                anythinkNativeEndCardView.f21447g = 0.0f;
-                anythinkNativeEndCardView.f21448h = 0.0f;
+                anythinkNativeEndCardView.f22234g = 0.0f;
+                anythinkNativeEndCardView.f22235h = 0.0f;
                 AnythinkNativeEndCardView.a(anythinkNativeEndCardView, 4);
             }
         }
@@ -340,13 +342,13 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
 
     public AnythinkNativeEndCardView(Context context) {
         super(context);
-        this.f21578K = false;
-        this.f21579L = false;
-        this.f21580M = 0;
-        this.f21581N = false;
-        this.f21582O = false;
-        this.f21583P = false;
-        this.f21589V = false;
+        this.f22365K = false;
+        this.f22366L = false;
+        this.f22367M = 0;
+        this.f22368N = false;
+        this.f22369O = false;
+        this.f22370P = false;
+        this.f22376V = false;
         this.aa = 1;
         this.ak = 1;
         this.al = false;
@@ -357,27 +359,27 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
 
     public static /* synthetic */ void r(AnythinkNativeEndCardView anythinkNativeEndCardView) {
         if (!com.anythink.expressad.foundation.f.b.a().b()) {
-            FeedBackButton feedBackButton = anythinkNativeEndCardView.f21574F;
+            FeedBackButton feedBackButton = anythinkNativeEndCardView.f22361F;
             if (feedBackButton != null) {
                 feedBackButton.setVisibility(8);
                 return;
             }
             return;
         }
-        anythinkNativeEndCardView.f21442b.l(anythinkNativeEndCardView.af);
-        com.anythink.expressad.foundation.f.b.a().a(h.g(new StringBuilder(), anythinkNativeEndCardView.af, "_2"), anythinkNativeEndCardView.new AnonymousClass4());
-        com.anythink.expressad.foundation.f.b.a().a(h.g(new StringBuilder(), anythinkNativeEndCardView.af, "_2"), anythinkNativeEndCardView.f21442b);
+        anythinkNativeEndCardView.f22229b.l(anythinkNativeEndCardView.af);
+        com.anythink.expressad.foundation.f.b.a().a(Wv.i(new StringBuilder(), anythinkNativeEndCardView.af, "_2"), anythinkNativeEndCardView.new AnonymousClass4());
+        com.anythink.expressad.foundation.f.b.a().a(Wv.i(new StringBuilder(), anythinkNativeEndCardView.af, "_2"), anythinkNativeEndCardView.f22229b);
         com.anythink.expressad.foundation.f.b.a().c(anythinkNativeEndCardView.af + "_1");
-        com.anythink.expressad.foundation.f.b.a().a(h.g(new StringBuilder(), anythinkNativeEndCardView.af, "_2"), anythinkNativeEndCardView.f21574F);
-        if (anythinkNativeEndCardView.f21574F != null) {
-            com.anythink.expressad.foundation.f.b.a().a(h.g(new StringBuilder(), anythinkNativeEndCardView.af, "_2"), anythinkNativeEndCardView.f21574F);
+        com.anythink.expressad.foundation.f.b.a().a(Wv.i(new StringBuilder(), anythinkNativeEndCardView.af, "_2"), anythinkNativeEndCardView.f22361F);
+        if (anythinkNativeEndCardView.f22361F != null) {
+            com.anythink.expressad.foundation.f.b.a().a(Wv.i(new StringBuilder(), anythinkNativeEndCardView.af, "_2"), anythinkNativeEndCardView.f22361F);
         }
     }
 
     public Bitmap blurBitmap(Bitmap bitmap) {
         try {
             Bitmap createBitmap = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight(), Bitmap.Config.ARGB_4444);
-            RenderScript create = RenderScript.create(this.f21441a.getApplicationContext());
+            RenderScript create = RenderScript.create(this.f22228a.getApplicationContext());
             ScriptIntrinsicBlur create2 = ScriptIntrinsicBlur.create(create, Element.U8_4(create));
             Allocation createFromBitmap = Allocation.createFromBitmap(create, bitmap);
             Allocation createFromBitmap2 = Allocation.createFromBitmap(create, createBitmap);
@@ -400,27 +402,27 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
     public void clearMoreOfferBitmap() {
         e eVar;
         ArrayList<d> arrayList;
-        d dVar = this.f21442b;
-        if (dVar == null || !dVar.j() || (eVar = this.ag) == null || (arrayList = eVar.f18680K) == null || arrayList.size() <= 0) {
+        d dVar = this.f22229b;
+        if (dVar == null || !dVar.j() || (eVar = this.ag) == null || (arrayList = eVar.f19467K) == null || arrayList.size() <= 0) {
             return;
         }
-        Iterator<d> it = this.ag.f18680K.iterator();
+        Iterator<d> it = this.ag.f19467K.iterator();
         while (it.hasNext()) {
             d next = it.next();
             if (!TextUtils.isEmpty(next.bl())) {
-                com.anythink.basead.exoplayer.f.f.l().c(next.bl());
+                k.m().c(next.bl());
             }
         }
     }
 
-    public boolean ctaViewCanGet(View view, boolean z3) {
+    public boolean ctaViewCanGet(View view, boolean z6) {
         try {
-            View findViewById = view.findViewById(filterFindViewId(z3, "anythink_tv_cta"));
+            View findViewById = view.findViewById(filterFindViewId(z6, "anythink_tv_cta"));
             if (findViewById instanceof TextView) {
                 this.ad = (TextView) findViewById;
             }
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.printStackTrace();
             }
         }
@@ -432,11 +434,11 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
     }
 
     public boolean isDyXmlSuccess() {
-        return this.f21589V;
+        return this.f22376V;
     }
 
     public void notifyShowListener() {
-        this.f21445e.a(110, "");
+        this.f22232e.a(110, "");
     }
 
     @Override // android.view.ViewGroup, android.view.View
@@ -446,8 +448,8 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
         int i;
         AnythinkBaitClickView anythinkBaitClickView;
         super.onAttachedToWindow();
-        if (this.f21575G == null) {
-            this.f21575G = new Runnable() { // from class: com.anythink.expressad.video.module.AnythinkNativeEndCardView.1
+        if (this.f22362G == null) {
+            this.f22362G = new Runnable() { // from class: com.anythink.expressad.video.module.AnythinkNativeEndCardView.1
                 @Override // java.lang.Runnable
                 public final void run() {
                     AnythinkNativeEndCardView.a(AnythinkNativeEndCardView.this);
@@ -457,18 +459,18 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
                 }
             };
         }
-        Runnable runnable = this.f21575G;
+        Runnable runnable = this.f22362G;
         if (runnable != null) {
-            postDelayed(runnable, this.f21580M * 1000);
-            if (!this.f21582O) {
-                this.f21582O = true;
+            postDelayed(runnable, this.f22367M * 1000);
+            if (!this.f22369O) {
+                this.f22369O = true;
             }
             try {
-                d dVar = this.f21442b;
+                d dVar = this.f22229b;
                 if (dVar != null && dVar.j()) {
-                    String J = this.f21442b.J();
+                    String J = this.f22229b.J();
                     if (TextUtils.isEmpty(J)) {
-                        J = this.f21442b.Q();
+                        J = this.f22229b.Q();
                     }
                     String a9 = z.a(J, "alac");
                     if (!TextUtils.isEmpty(a9) && a9.equals("1")) {
@@ -480,13 +482,13 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
             }
         }
         try {
-            d dVar2 = this.f21442b;
+            d dVar2 = this.f22229b;
             if (dVar2 != null && dVar2.j()) {
-                String J2 = this.f21442b.J();
-                if (TextUtils.isEmpty(J2)) {
-                    J2 = this.f21442b.Q();
+                String J8 = this.f22229b.J();
+                if (TextUtils.isEmpty(J8)) {
+                    J8 = this.f22229b.Q();
                 }
-                String a10 = z.a(J2, "bait_click");
+                String a10 = z.a(J8, "bait_click");
                 try {
                     i = Integer.parseInt(a10);
                 } catch (Throwable th2) {
@@ -496,7 +498,7 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
                 if (!TextUtils.isEmpty(a10) && i != 0 && (anythinkBaitClickView = this.aj) != null) {
                     anythinkBaitClickView.setVisibility(0);
                     this.aj.init(1342177280, i);
-                    if (this.f21442b.s() == 1302) {
+                    if (this.f22229b.s() == 1302) {
                         GradientDrawable gradientDrawable = new GradientDrawable();
                         gradientDrawable.setShape(0);
                         gradientDrawable.setColor(1342177280);
@@ -512,14 +514,14 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
             th3.getMessage();
         }
         try {
-            d dVar3 = this.f21442b;
+            d dVar3 = this.f22229b;
             if (dVar3 != null && dVar3.j()) {
-                String J8 = this.f21442b.J();
-                if (TextUtils.isEmpty(J8)) {
-                    J8 = this.f21442b.Q();
+                String J9 = this.f22229b.J();
+                if (TextUtils.isEmpty(J9)) {
+                    J9 = this.f22229b.Q();
                 }
-                String a11 = z.a(J8, "shake_strength");
-                String a12 = z.a(J8, "shake_time");
+                String a11 = z.a(J9, "shake_strength");
+                String a12 = z.a(J9, "shake_time");
                 if (!TextUtils.isEmpty("1") && this.ah == null) {
                     AnythinkBaitClickView anythinkBaitClickView2 = this.aj;
                     if (anythinkBaitClickView2 != null) {
@@ -527,32 +529,32 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
                     }
                     MBShakeView mBShakeView = new MBShakeView(getContext());
                     this.ah = mBShakeView;
-                    mBShakeView.initView(this.f21442b.dj, true);
+                    mBShakeView.initView(this.f22229b.dj, true);
                     RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-2, -2);
                     if (isLandscape()) {
                         layoutParams.addRule(13);
                     } else {
-                        layoutParams.addRule(2, filterFindViewId(this.f21589V, "anythink_iv_logo"));
+                        layoutParams.addRule(2, filterFindViewId(this.f22376V, "anythink_iv_logo"));
                         layoutParams.addRule(14);
                         this.ah.setPadding(0, 0, 0, v.b(getContext(), 20.0f));
                     }
                     this.ah.setLayoutParams(layoutParams);
-                    RelativeLayout relativeLayout = this.f21593t;
+                    RelativeLayout relativeLayout = this.f22380t;
                     if (relativeLayout != null && relativeLayout.isShown()) {
                         if (this.ad != null) {
-                            this.f21593t.addView(this.ah);
+                            this.f22380t.addView(this.ah);
                         }
                         this.ad.setVisibility(4);
                         this.ah.setOnClickListener(new AnonymousClass5());
-                        int i6 = 10;
+                        int i4 = 10;
                         if (!TextUtils.isEmpty(a11) && (parseInt2 = Integer.parseInt(a11)) >= 0) {
-                            i6 = parseInt2;
+                            i4 = parseInt2;
                         }
-                        int i9 = 5000;
+                        int i6 = 5000;
                         if (!TextUtils.isEmpty(a12) && (parseInt = Integer.parseInt(a12)) > 0) {
-                            i9 = parseInt * 1000;
+                            i6 = parseInt * 1000;
                         }
-                        this.ai = new AnonymousClass6(i6, i9);
+                        this.ai = new AnonymousClass6(i4, i6);
                         this.ah.addOnAttachStateChangeListener(new AnonymousClass7());
                     }
                 }
@@ -565,11 +567,11 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
     @Override // android.view.ViewGroup, android.view.View
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        Runnable runnable = this.f21575G;
+        Runnable runnable = this.f22362G;
         if (runnable != null) {
             removeCallbacks(runnable);
         }
-        Runnable runnable2 = this.f21576H;
+        Runnable runnable2 = this.f22363H;
         if (runnable2 != null) {
             removeCallbacks(runnable2);
         }
@@ -582,28 +584,28 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
     @Override // com.anythink.expressad.video.module.AnythinkBaseView
     public void onSelfConfigurationChanged(Configuration configuration) {
         super.onSelfConfigurationChanged(configuration);
-        d dVar = this.f21442b;
+        d dVar = this.f22229b;
         if (dVar == null || !dVar.j()) {
-            RelativeLayout relativeLayout = this.f21577I;
+            RelativeLayout relativeLayout = this.f22364I;
             if (relativeLayout != null) {
                 relativeLayout.setVisibility(4);
             }
             int i = configuration.orientation;
-            this.f21444d = i;
+            this.f22231d = i;
             if (i == 2) {
-                removeView(this.f21591r);
-                a(this.f21592s);
+                removeView(this.f22378r);
+                a(this.f22379s);
             } else {
-                removeView(this.f21592s);
-                a(this.f21591r);
+                removeView(this.f22379s);
+                a(this.f22378r);
             }
         }
     }
 
     @Override // android.view.View
-    public void onVisibilityAggregated(boolean z3) {
-        super.onVisibilityAggregated(z3);
-        if (!z3) {
+    public void onVisibilityAggregated(boolean z6) {
+        super.onVisibilityAggregated(z6);
+        if (!z6) {
             b();
         } else {
             if (!this.al || this.ah == null || this.ai == null) {
@@ -619,9 +621,9 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
     }
 
     @Override // android.view.View
-    public void onWindowFocusChanged(boolean z3) {
-        super.onWindowFocusChanged(z3);
-        if (!z3) {
+    public void onWindowFocusChanged(boolean z6) {
+        super.onWindowFocusChanged(z6);
+        if (!z6) {
             b();
         } else {
             if (!this.al || this.ai == null) {
@@ -635,43 +637,43 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
     public void preLoadData(b bVar) {
         this.J = bVar;
         try {
-            if (this.f21442b == null || !this.f21446f) {
+            if (this.f22229b == null || !this.f22233f) {
                 return;
             }
-            com.anythink.expressad.foundation.g.d.b.a(this.f21441a.getApplicationContext()).a(this.f21442b.bm(), new AnonymousClass11());
-            com.anythink.expressad.foundation.g.d.b.a(this.f21441a.getApplicationContext()).a(this.f21442b.bl(), new j(this.f21597x, v.b(t.b().g(), 8.0f)));
-            this.f21570B.setText(this.f21442b.bj());
+            com.anythink.expressad.foundation.g.d.b.a(this.f22228a.getApplicationContext()).a(this.f22229b.bm(), new AnonymousClass11());
+            com.anythink.expressad.foundation.g.d.b.a(this.f22228a.getApplicationContext()).a(this.f22229b.bl(), new j(this.f22384x, v.b(t.b().g(), 8.0f)));
+            this.f22357B.setText(this.f22229b.bj());
             TextView textView = this.ad;
             if (textView != null) {
-                textView.setText(this.f21442b.dj);
+                textView.setText(this.f22229b.dj);
             }
-            TextView textView2 = this.f21571C;
+            TextView textView2 = this.f22358C;
             if (textView2 != null) {
-                textView2.setText(this.f21442b.bk());
+                textView2.setText(this.f22229b.bk());
             }
-            TextView textView3 = this.f21572D;
+            TextView textView3 = this.f22359D;
             if (textView3 != null) {
-                textView3.setText(this.f21442b.bg() + ")");
+                textView3.setText(this.f22229b.bg() + ")");
             }
-            this.f21573E.removeAllViews();
-            double bf = this.f21442b.bf();
+            this.f22360E.removeAllViews();
+            double bf = this.f22229b.bf();
             if (bf <= 0.0d) {
                 bf = 5.0d;
             }
-            LinearLayout linearLayout = this.f21573E;
+            LinearLayout linearLayout = this.f22360E;
             if (linearLayout instanceof StarLevelView) {
                 ((StarLevelView) linearLayout).initScore(bf);
             }
-            LinearLayout linearLayout2 = this.f21573E;
+            LinearLayout linearLayout2 = this.f22360E;
             if (linearLayout2 instanceof AnyThinkLevelLayoutView) {
-                ((AnyThinkLevelLayoutView) linearLayout2).setRatingAndUser(bf, this.f21442b.bg());
+                ((AnyThinkLevelLayoutView) linearLayout2).setRatingAndUser(bf, this.f22229b.bg());
             }
-            if (!TextUtils.isEmpty(this.f21442b.J()) && this.f21442b.J().contains("alecfc=1")) {
-                this.f21578K = true;
+            if (!TextUtils.isEmpty(this.f22229b.J()) && this.f22229b.J().contains("alecfc=1")) {
+                this.f22365K = true;
             }
-            com.anythink.expressad.foundation.g.d.b.a(this.f21441a.getApplicationContext()).a(TextUtils.isEmpty(this.f21442b.aH()) ? com.anythink.expressad.a.ae : this.f21442b.aH(), new AnonymousClass12());
-            v.a(this.f21599z, this.f21442b, this.f21441a, true);
-            if (this.f21579L) {
+            com.anythink.expressad.foundation.g.d.b.a(this.f22228a.getApplicationContext()).a(TextUtils.isEmpty(this.f22229b.aH()) ? com.anythink.expressad.a.ae : this.f22229b.aH(), new AnonymousClass12());
+            v.a(this.f22386z, this.f22229b, this.f22228a, true);
+            if (this.f22366L) {
                 return;
             }
             this.ac.setVisibility(8);
@@ -683,18 +685,18 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
     public void release() {
         try {
             removeAllViews();
-            AlphaAnimation alphaAnimation = this.f21584Q;
+            AlphaAnimation alphaAnimation = this.f22371Q;
             if (alphaAnimation != null) {
                 alphaAnimation.cancel();
             }
-            this.f21575G = null;
+            this.f22362G = null;
         } catch (Exception e9) {
             e9.getMessage();
         }
     }
 
     public void setCloseBtnDelay(int i) {
-        this.f21580M = i;
+        this.f22367M = i;
     }
 
     public void setLayout() {
@@ -703,7 +705,7 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
             return;
         }
         new com.anythink.expressad.video.dynview.j.c();
-        com.anythink.expressad.video.dynview.c a9 = com.anythink.expressad.video.dynview.j.c.a(getContext(), this.f21442b, this.f21449j, "en_");
+        com.anythink.expressad.video.dynview.c a9 = com.anythink.expressad.video.dynview.j.c.a(getContext(), this.f22229b, this.f22236j, "en_");
         this.aa = a9.m();
         com.anythink.expressad.video.dynview.b.a();
         com.anythink.expressad.video.dynview.b.a(a9, new AnonymousClass10());
@@ -712,32 +714,32 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
     public void setMoreOfferCampaignUnit(e eVar) {
         ArrayList<d> arrayList;
         MBShakeView mBShakeView;
-        d dVar = this.f21442b;
+        d dVar = this.f22229b;
         if (dVar == null || !dVar.j()) {
             return;
         }
         this.ag = eVar;
-        if (eVar == null || (arrayList = eVar.f18680K) == null || arrayList.size() <= 5 || (mBShakeView = this.ah) == null) {
+        if (eVar == null || (arrayList = eVar.f19467K) == null || arrayList.size() <= 5 || (mBShakeView = this.ah) == null) {
             return;
         }
         mBShakeView.setPadding(0, 0, 0, v.b(getContext(), 5.0f));
     }
 
-    public void setNotchPadding(int i, int i6, int i9, int i10) {
-        String.format("%1s-%2s-%3s-%4s", Integer.valueOf(i), Integer.valueOf(i6), Integer.valueOf(i9), Integer.valueOf(i10));
-        this.f21585R = i;
-        this.f21586S = i6;
-        this.f21587T = i9;
-        this.f21588U = i10;
+    public void setNotchPadding(int i, int i4, int i6, int i9) {
+        String.format("%1s-%2s-%3s-%4s", Integer.valueOf(i), Integer.valueOf(i4), Integer.valueOf(i6), Integer.valueOf(i9));
+        this.f22372R = i;
+        this.f22373S = i4;
+        this.f22374T = i6;
+        this.f22375U = i9;
         j();
     }
 
     public void setOnPause() {
-        this.f21582O = false;
+        this.f22369O = false;
     }
 
     public void setOnResume() {
-        this.f21582O = true;
+        this.f22369O = true;
     }
 
     public void setUnitId(String str) {
@@ -745,13 +747,13 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
     }
 
     public static /* synthetic */ boolean a(AnythinkNativeEndCardView anythinkNativeEndCardView) {
-        anythinkNativeEndCardView.f21579L = true;
+        anythinkNativeEndCardView.f22366L = true;
         return true;
     }
 
     private void e() {
         new com.anythink.expressad.video.dynview.j.c();
-        com.anythink.expressad.video.dynview.c a9 = com.anythink.expressad.video.dynview.j.c.a(getContext(), this.f21442b, this.f21449j, "en_");
+        com.anythink.expressad.video.dynview.c a9 = com.anythink.expressad.video.dynview.j.c.a(getContext(), this.f22229b, this.f22236j, "en_");
         this.aa = a9.m();
         com.anythink.expressad.video.dynview.b.a();
         com.anythink.expressad.video.dynview.b.a(a9, new AnonymousClass10());
@@ -761,7 +763,7 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
     public void f() {
         int i = i();
         if (i > 0) {
-            this.f21446f = b(i);
+            this.f22233f = b(i);
             g();
         }
     }
@@ -770,49 +772,49 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
     public void g() {
         com.anythink.expressad.video.module.a.a aVar;
         c();
-        if (!this.f21446f && (aVar = this.f21445e) != null) {
+        if (!this.f22233f && (aVar = this.f22232e) != null) {
             aVar.a(104, "");
         }
         AlphaAnimation alphaAnimation = new AlphaAnimation(0.0f, 100.0f);
-        this.f21584Q = alphaAnimation;
+        this.f22371Q = alphaAnimation;
         alphaAnimation.setDuration(200L);
     }
 
     private void h() {
-        com.anythink.expressad.foundation.g.d.b.a(this.f21441a.getApplicationContext()).a(this.f21442b.bm(), new AnonymousClass11());
-        com.anythink.expressad.foundation.g.d.b.a(this.f21441a.getApplicationContext()).a(this.f21442b.bl(), new j(this.f21597x, com.anythink.basead.exoplayer.f.f.e(8.0f)));
-        this.f21570B.setText(this.f21442b.bj());
+        com.anythink.expressad.foundation.g.d.b.a(this.f22228a.getApplicationContext()).a(this.f22229b.bm(), new AnonymousClass11());
+        com.anythink.expressad.foundation.g.d.b.a(this.f22228a.getApplicationContext()).a(this.f22229b.bl(), new j(this.f22384x, k.e(8.0f)));
+        this.f22357B.setText(this.f22229b.bj());
         TextView textView = this.ad;
         if (textView != null) {
-            textView.setText(this.f21442b.dj);
+            textView.setText(this.f22229b.dj);
         }
-        TextView textView2 = this.f21571C;
+        TextView textView2 = this.f22358C;
         if (textView2 != null) {
-            textView2.setText(this.f21442b.bk());
+            textView2.setText(this.f22229b.bk());
         }
-        TextView textView3 = this.f21572D;
+        TextView textView3 = this.f22359D;
         if (textView3 != null) {
-            textView3.setText(this.f21442b.bg() + ")");
+            textView3.setText(this.f22229b.bg() + ")");
         }
-        this.f21573E.removeAllViews();
-        double bf = this.f21442b.bf();
+        this.f22360E.removeAllViews();
+        double bf = this.f22229b.bf();
         if (bf <= 0.0d) {
             bf = 5.0d;
         }
-        LinearLayout linearLayout = this.f21573E;
+        LinearLayout linearLayout = this.f22360E;
         if (linearLayout instanceof StarLevelView) {
             ((StarLevelView) linearLayout).initScore(bf);
         }
-        LinearLayout linearLayout2 = this.f21573E;
+        LinearLayout linearLayout2 = this.f22360E;
         if (linearLayout2 instanceof AnyThinkLevelLayoutView) {
-            ((AnyThinkLevelLayoutView) linearLayout2).setRatingAndUser(bf, this.f21442b.bg());
+            ((AnyThinkLevelLayoutView) linearLayout2).setRatingAndUser(bf, this.f22229b.bg());
         }
-        if (!TextUtils.isEmpty(this.f21442b.J()) && this.f21442b.J().contains("alecfc=1")) {
-            this.f21578K = true;
+        if (!TextUtils.isEmpty(this.f22229b.J()) && this.f22229b.J().contains("alecfc=1")) {
+            this.f22365K = true;
         }
-        com.anythink.expressad.foundation.g.d.b.a(this.f21441a.getApplicationContext()).a(TextUtils.isEmpty(this.f21442b.aH()) ? com.anythink.expressad.a.ae : this.f21442b.aH(), new AnonymousClass12());
-        v.a(this.f21599z, this.f21442b, this.f21441a, true);
-        if (this.f21579L) {
+        com.anythink.expressad.foundation.g.d.b.a(this.f22228a.getApplicationContext()).a(TextUtils.isEmpty(this.f22229b.aH()) ? com.anythink.expressad.a.ae : this.f22229b.aH(), new AnonymousClass12());
+        v.a(this.f22386z, this.f22229b, this.f22228a, true);
+        if (this.f22366L) {
             return;
         }
         this.ac.setVisibility(8);
@@ -820,7 +822,7 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x001b, code lost:
     
-        r1 = com.anythink.expressad.video.module.AnythinkNativeEndCardView.f21568q;
+        r1 = com.anythink.expressad.video.module.AnythinkNativeEndCardView.f22355q;
      */
     /* JADX WARN: Code restructure failed: missing block: B:11:0x001c, code lost:
     
@@ -839,11 +841,11 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
     */
     private int i() {
         int i = this.ak;
-        String str = f21566o;
-        String str2 = f21565n;
+        String str = f22353o;
+        String str2 = f22352n;
         if (i == 0) {
             if (this.ae) {
-                str2 = f21567p;
+                str2 = f22354p;
             }
             if (isLandscape()) {
             }
@@ -851,7 +853,7 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
             if (i != 1) {
                 str2 = "";
             } else if (this.ae) {
-                str2 = f21567p;
+                str2 = f22354p;
             }
             if (i == 2) {
             }
@@ -861,19 +863,19 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
 
     private void j() {
         RelativeLayout relativeLayout;
-        if (!this.f21446f || (relativeLayout = this.f21577I) == null) {
+        if (!this.f22233f || (relativeLayout = this.f22364I) == null) {
             return;
         }
         relativeLayout.postDelayed(new Runnable() { // from class: com.anythink.expressad.video.module.AnythinkNativeEndCardView.3
             @Override // java.lang.Runnable
             public final void run() {
-                d dVar = AnythinkNativeEndCardView.this.f21442b;
-                if (dVar != null && !dVar.j() && AnythinkNativeEndCardView.this.f21442b.e() != 2) {
-                    AnythinkNativeEndCardView.this.f21577I.setPadding(AnythinkNativeEndCardView.this.f21585R, AnythinkNativeEndCardView.this.f21587T, AnythinkNativeEndCardView.this.f21586S, AnythinkNativeEndCardView.this.f21588U);
-                    AnythinkNativeEndCardView.this.f21577I.startAnimation(AnythinkNativeEndCardView.this.f21584Q);
+                d dVar = AnythinkNativeEndCardView.this.f22229b;
+                if (dVar != null && !dVar.j() && AnythinkNativeEndCardView.this.f22229b.e() != 2) {
+                    AnythinkNativeEndCardView.this.f22364I.setPadding(AnythinkNativeEndCardView.this.f22372R, AnythinkNativeEndCardView.this.f22374T, AnythinkNativeEndCardView.this.f22373S, AnythinkNativeEndCardView.this.f22375U);
+                    AnythinkNativeEndCardView.this.f22364I.startAnimation(AnythinkNativeEndCardView.this.f22371Q);
                 }
-                AnythinkNativeEndCardView.this.f21577I.setVisibility(0);
-                if (AnythinkNativeEndCardView.this.ac.getVisibility() != 0 && AnythinkNativeEndCardView.this.f21579L) {
+                AnythinkNativeEndCardView.this.f22364I.setVisibility(0);
+                if (AnythinkNativeEndCardView.this.ac.getVisibility() != 0 && AnythinkNativeEndCardView.this.f22366L) {
                     AnythinkNativeEndCardView.this.ac.setVisibility(0);
                 }
                 AnythinkNativeEndCardView.r(AnythinkNativeEndCardView.this);
@@ -883,20 +885,20 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
 
     private void k() {
         if (!com.anythink.expressad.foundation.f.b.a().b()) {
-            FeedBackButton feedBackButton = this.f21574F;
+            FeedBackButton feedBackButton = this.f22361F;
             if (feedBackButton != null) {
                 feedBackButton.setVisibility(8);
                 return;
             }
             return;
         }
-        this.f21442b.l(this.af);
-        com.anythink.expressad.foundation.f.b.a().a(h.g(new StringBuilder(), this.af, "_2"), new AnonymousClass4());
-        com.anythink.expressad.foundation.f.b.a().a(h.g(new StringBuilder(), this.af, "_2"), this.f21442b);
+        this.f22229b.l(this.af);
+        com.anythink.expressad.foundation.f.b.a().a(Wv.i(new StringBuilder(), this.af, "_2"), new AnonymousClass4());
+        com.anythink.expressad.foundation.f.b.a().a(Wv.i(new StringBuilder(), this.af, "_2"), this.f22229b);
         com.anythink.expressad.foundation.f.b.a().c(this.af + "_1");
-        com.anythink.expressad.foundation.f.b.a().a(h.g(new StringBuilder(), this.af, "_2"), this.f21574F);
-        if (this.f21574F != null) {
-            com.anythink.expressad.foundation.f.b.a().a(h.g(new StringBuilder(), this.af, "_2"), this.f21574F);
+        com.anythink.expressad.foundation.f.b.a().a(Wv.i(new StringBuilder(), this.af, "_2"), this.f22361F);
+        if (this.f22361F != null) {
+            com.anythink.expressad.foundation.f.b.a().a(Wv.i(new StringBuilder(), this.af, "_2"), this.f22361F);
         }
     }
 
@@ -904,11 +906,11 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
         int parseInt;
         int parseInt2;
         try {
-            d dVar = this.f21442b;
+            d dVar = this.f22229b;
             if (dVar != null && dVar.j()) {
-                String J = this.f21442b.J();
+                String J = this.f22229b.J();
                 if (TextUtils.isEmpty(J)) {
-                    J = this.f21442b.Q();
+                    J = this.f22229b.Q();
                 }
                 String a9 = z.a(J, "shake_strength");
                 String a10 = z.a(J, "shake_time");
@@ -919,20 +921,20 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
                     }
                     MBShakeView mBShakeView = new MBShakeView(getContext());
                     this.ah = mBShakeView;
-                    mBShakeView.initView(this.f21442b.dj, true);
+                    mBShakeView.initView(this.f22229b.dj, true);
                     RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-2, -2);
                     if (isLandscape()) {
                         layoutParams.addRule(13);
                     } else {
-                        layoutParams.addRule(2, filterFindViewId(this.f21589V, "anythink_iv_logo"));
+                        layoutParams.addRule(2, filterFindViewId(this.f22376V, "anythink_iv_logo"));
                         layoutParams.addRule(14);
                         this.ah.setPadding(0, 0, 0, v.b(getContext(), 20.0f));
                     }
                     this.ah.setLayoutParams(layoutParams);
-                    RelativeLayout relativeLayout = this.f21593t;
+                    RelativeLayout relativeLayout = this.f22380t;
                     if (relativeLayout != null && relativeLayout.isShown()) {
                         if (this.ad != null) {
-                            this.f21593t.addView(this.ah);
+                            this.f22380t.addView(this.ah);
                         }
                         this.ad.setVisibility(4);
                         this.ah.setOnClickListener(new AnonymousClass5());
@@ -940,11 +942,11 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
                         if (!TextUtils.isEmpty(a9) && (parseInt2 = Integer.parseInt(a9)) >= 0) {
                             i = parseInt2;
                         }
-                        int i6 = 5000;
+                        int i4 = 5000;
                         if (!TextUtils.isEmpty(a10) && (parseInt = Integer.parseInt(a10)) > 0) {
-                            i6 = parseInt * 1000;
+                            i4 = parseInt * 1000;
                         }
-                        this.ai = new AnonymousClass6(i, i6);
+                        this.ai = new AnonymousClass6(i, i4);
                         this.ah.addOnAttachStateChangeListener(new AnonymousClass7());
                     }
                 }
@@ -958,11 +960,11 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
         int i;
         AnythinkBaitClickView anythinkBaitClickView;
         try {
-            d dVar = this.f21442b;
+            d dVar = this.f22229b;
             if (dVar != null && dVar.j()) {
-                String J = this.f21442b.J();
+                String J = this.f22229b.J();
                 if (TextUtils.isEmpty(J)) {
-                    J = this.f21442b.Q();
+                    J = this.f22229b.Q();
                 }
                 String a9 = z.a(J, "bait_click");
                 try {
@@ -976,7 +978,7 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
                 }
                 anythinkBaitClickView.setVisibility(0);
                 this.aj.init(1342177280, i);
-                if (this.f21442b.s() == 1302) {
+                if (this.f22229b.s() == 1302) {
                     GradientDrawable gradientDrawable = new GradientDrawable();
                     gradientDrawable.setShape(0);
                     gradientDrawable.setColor(1342177280);
@@ -994,11 +996,11 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
 
     private void n() {
         try {
-            d dVar = this.f21442b;
+            d dVar = this.f22229b;
             if (dVar != null && dVar.j()) {
-                String J = this.f21442b.J();
+                String J = this.f22229b.J();
                 if (TextUtils.isEmpty(J)) {
-                    J = this.f21442b.Q();
+                    J = this.f22229b.Q();
                 }
                 String a9 = z.a(J, "alac");
                 if (TextUtils.isEmpty(a9) || !a9.equals("1")) {
@@ -1018,15 +1020,15 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
             view.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.video.module.AnythinkNativeEndCardView.14
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view2) {
-                    AnythinkNativeEndCardView.this.f21445e.a(104, "");
+                    AnythinkNativeEndCardView.this.f22232e.a(104, "");
                 }
             });
         }
-        if (this.f21446f) {
-            this.f21593t.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.video.module.AnythinkNativeEndCardView.15
+        if (this.f22233f) {
+            this.f22380t.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.video.module.AnythinkNativeEndCardView.15
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view2) {
-                    if (AnythinkNativeEndCardView.this.f21578K) {
+                    if (AnythinkNativeEndCardView.this.f22365K) {
                         AnythinkNativeEndCardView.a(AnythinkNativeEndCardView.this, 1);
                     }
                 }
@@ -1040,13 +1042,13 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
                     }
                 });
             }
-            this.f21597x.setOnClickListener(new com.anythink.expressad.widget.a() { // from class: com.anythink.expressad.video.module.AnythinkNativeEndCardView.17
+            this.f22384x.setOnClickListener(new com.anythink.expressad.widget.a() { // from class: com.anythink.expressad.video.module.AnythinkNativeEndCardView.17
                 @Override // com.anythink.expressad.widget.a
                 public final void a(View view2) {
                     AnythinkNativeEndCardView.a(AnythinkNativeEndCardView.this, 0);
                 }
             });
-            this.f21596w.setOnClickListener(new com.anythink.expressad.widget.a() { // from class: com.anythink.expressad.video.module.AnythinkNativeEndCardView.2
+            this.f22383w.setOnClickListener(new com.anythink.expressad.widget.a() { // from class: com.anythink.expressad.video.module.AnythinkNativeEndCardView.2
                 @Override // com.anythink.expressad.widget.a
                 public final void a(View view2) {
                     AnythinkNativeEndCardView.a(AnythinkNativeEndCardView.this, 0);
@@ -1057,15 +1059,15 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
 
     private boolean b(int i) {
         if (isLandscape()) {
-            ViewGroup viewGroup = (ViewGroup) this.f21443c.inflate(i, (ViewGroup) null);
-            this.f21592s = viewGroup;
+            ViewGroup viewGroup = (ViewGroup) this.f22230c.inflate(i, (ViewGroup) null);
+            this.f22379s = viewGroup;
             addView(viewGroup);
-            return b(this.f21592s);
+            return b(this.f22379s);
         }
-        ViewGroup viewGroup2 = (ViewGroup) this.f21443c.inflate(i, (ViewGroup) null);
-        this.f21591r = viewGroup2;
+        ViewGroup viewGroup2 = (ViewGroup) this.f22230c.inflate(i, (ViewGroup) null);
+        this.f22378r = viewGroup2;
         addView(viewGroup2);
-        return b(this.f21591r);
+        return b(this.f22378r);
     }
 
     private void a(Bitmap bitmap) {
@@ -1077,20 +1079,20 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
     }
 
     /* renamed from: com.anythink.expressad.video.module.AnythinkNativeEndCardView$10, reason: invalid class name */
-    public class AnonymousClass10 implements com.anythink.expressad.video.dynview.f.h {
+    public class AnonymousClass10 implements h {
         public AnonymousClass10() {
         }
 
         @Override // com.anythink.expressad.video.dynview.f.h
         public final void a(com.anythink.expressad.video.dynview.a aVar) {
             AnythinkNativeEndCardView.this.addView(aVar.a());
-            AnythinkNativeEndCardView.this.f21589V = aVar.c();
-            if (AnythinkNativeEndCardView.this.ctaViewCanGet(aVar.a(), AnythinkNativeEndCardView.this.f21589V)) {
+            AnythinkNativeEndCardView.this.f22376V = aVar.c();
+            if (AnythinkNativeEndCardView.this.ctaViewCanGet(aVar.a(), AnythinkNativeEndCardView.this.f22376V)) {
                 AnythinkNativeEndCardView anythinkNativeEndCardView = AnythinkNativeEndCardView.this;
-                anythinkNativeEndCardView.f21446f = anythinkNativeEndCardView.b(aVar.a());
+                anythinkNativeEndCardView.f22233f = anythinkNativeEndCardView.b(aVar.a());
                 AnythinkNativeEndCardView.this.g();
             } else {
-                AnythinkNativeEndCardView.this.f21589V = false;
+                AnythinkNativeEndCardView.this.f22376V = false;
                 AnythinkNativeEndCardView anythinkNativeEndCardView2 = AnythinkNativeEndCardView.this;
                 anythinkNativeEndCardView2.i = false;
                 anythinkNativeEndCardView2.f();
@@ -1121,40 +1123,40 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
     /* JADX INFO: Access modifiers changed from: private */
     public boolean b(View view) {
         try {
-            this.f21593t = (RelativeLayout) view.findViewById(filterFindViewId(this.f21589V, "anythink_native_ec_layout"));
-            this.f21594u = (RelativeLayout) view.findViewById(filterFindViewId(this.f21589V, "anythink_native_ec_layer_layout"));
-            this.f21596w = (ImageView) view.findViewById(filterFindViewId(this.f21589V, "anythink_iv_adbanner"));
-            this.f21597x = (ImageView) view.findViewById(filterFindViewId(this.f21589V, "anythink_iv_icon"));
-            this.f21598y = (ImageView) view.findViewById(filterFindViewId(this.f21589V, "anythink_iv_flag"));
-            this.f21569A = (ImageView) view.findViewById(filterFindViewId(this.f21589V, "anythink_iv_logo"));
-            this.f21599z = (ImageView) view.findViewById(filterFindViewId(this.f21589V, "anythink_iv_link"));
-            this.f21570B = (TextView) view.findViewById(filterFindViewId(this.f21589V, "anythink_tv_apptitle"));
-            this.f21573E = (LinearLayout) view.findViewById(filterFindViewId(this.f21589V, "anythink_sv_starlevel"));
-            this.ac = view.findViewById(filterFindViewId(this.f21589V, "anythink_iv_close"));
-            View findViewById = view.findViewById(filterFindViewId(this.f21589V, "anythink_tv_cta"));
+            this.f22380t = (RelativeLayout) view.findViewById(filterFindViewId(this.f22376V, "anythink_native_ec_layout"));
+            this.f22381u = (RelativeLayout) view.findViewById(filterFindViewId(this.f22376V, "anythink_native_ec_layer_layout"));
+            this.f22383w = (ImageView) view.findViewById(filterFindViewId(this.f22376V, "anythink_iv_adbanner"));
+            this.f22384x = (ImageView) view.findViewById(filterFindViewId(this.f22376V, "anythink_iv_icon"));
+            this.f22385y = (ImageView) view.findViewById(filterFindViewId(this.f22376V, "anythink_iv_flag"));
+            this.f22356A = (ImageView) view.findViewById(filterFindViewId(this.f22376V, "anythink_iv_logo"));
+            this.f22386z = (ImageView) view.findViewById(filterFindViewId(this.f22376V, "anythink_iv_link"));
+            this.f22357B = (TextView) view.findViewById(filterFindViewId(this.f22376V, "anythink_tv_apptitle"));
+            this.f22360E = (LinearLayout) view.findViewById(filterFindViewId(this.f22376V, "anythink_sv_starlevel"));
+            this.ac = view.findViewById(filterFindViewId(this.f22376V, "anythink_iv_close"));
+            View findViewById = view.findViewById(filterFindViewId(this.f22376V, "anythink_tv_cta"));
             if (findViewById != null && (findViewById instanceof TextView)) {
                 this.ad = (TextView) findViewById;
             }
-            this.f21574F = (FeedBackButton) view.findViewById(filterFindViewId(this.f21589V, "anythink_native_endcard_feed_btn"));
-            this.f21577I = (RelativeLayout) view.findViewById(filterFindViewId(this.f21589V, "anythink_native_ec_controller"));
-            this.f21595v = (ImageView) view.findViewById(filterFindViewId(this.f21589V, "anythink_iv_adbanner_bg"));
-            this.aj = (AnythinkBaitClickView) findViewById(filterFindViewId(this.f21589V, "anythink_animation_click_view"));
-            this.f21571C = (TextView) view.findViewById(filterFindViewId(this.f21589V, "anythink_tv_appdesc"));
+            this.f22361F = (FeedBackButton) view.findViewById(filterFindViewId(this.f22376V, "anythink_native_endcard_feed_btn"));
+            this.f22364I = (RelativeLayout) view.findViewById(filterFindViewId(this.f22376V, "anythink_native_ec_controller"));
+            this.f22382v = (ImageView) view.findViewById(filterFindViewId(this.f22376V, "anythink_iv_adbanner_bg"));
+            this.aj = (AnythinkBaitClickView) findViewById(filterFindViewId(this.f22376V, "anythink_animation_click_view"));
+            this.f22358C = (TextView) view.findViewById(filterFindViewId(this.f22376V, "anythink_tv_appdesc"));
             if (!this.i) {
-                this.f21571C = (TextView) view.findViewById(filterFindViewId(this.f21589V, "anythink_tv_appdesc"));
-                TextView textView = (TextView) view.findViewById(filterFindViewId(this.f21589V, "anythink_tv_number"));
-                this.f21572D = textView;
-                return isNotNULL(this.f21596w, this.f21597x, this.f21570B, this.f21571C, textView, this.f21573E, this.ac, this.ad);
+                this.f22358C = (TextView) view.findViewById(filterFindViewId(this.f22376V, "anythink_tv_appdesc"));
+                TextView textView = (TextView) view.findViewById(filterFindViewId(this.f22376V, "anythink_tv_number"));
+                this.f22359D = textView;
+                return isNotNULL(this.f22383w, this.f22384x, this.f22357B, this.f22358C, textView, this.f22360E, this.ac, this.ad);
             }
-            ImageView imageView = this.f21596w;
+            ImageView imageView = this.f22383w;
             if (imageView != null && (imageView instanceof RoundImageView)) {
                 ((RoundImageView) imageView).setBorderRadius(10);
             }
-            ImageView imageView2 = this.f21597x;
+            ImageView imageView2 = this.f22384x;
             if (imageView2 != null && (imageView2 instanceof RoundImageView)) {
                 ((RoundImageView) imageView2).setBorderRadius(10);
             }
-            return isNotNULL(this.f21596w, this.f21597x, this.f21570B, this.f21573E, this.ac);
+            return isNotNULL(this.f22383w, this.f22384x, this.f22357B, this.f22360E, this.ac);
         } catch (Throwable th) {
             th.getMessage();
             return false;
@@ -1171,7 +1173,7 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
         }
         try {
             jSONObject.put(com.anythink.expressad.foundation.g.a.ci, a(i));
-            if (this.f21442b.k() == 5) {
+            if (this.f22229b.k() == 5) {
                 jSONObject.put("camp_position", 0);
             }
         } catch (JSONException e10) {
@@ -1179,20 +1181,20 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
             jSONObject2 = jSONObject;
             e.printStackTrace();
             jSONObject = jSONObject2;
-            this.f21445e.a(105, jSONObject);
+            this.f22232e.a(105, jSONObject);
         }
-        this.f21445e.a(105, jSONObject);
+        this.f22232e.a(105, jSONObject);
     }
 
     public AnythinkNativeEndCardView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f21578K = false;
-        this.f21579L = false;
-        this.f21580M = 0;
-        this.f21581N = false;
-        this.f21582O = false;
-        this.f21583P = false;
-        this.f21589V = false;
+        this.f22365K = false;
+        this.f22366L = false;
+        this.f22367M = 0;
+        this.f22368N = false;
+        this.f22369O = false;
+        this.f22370P = false;
+        this.f22376V = false;
         this.aa = 1;
         this.ak = 1;
         this.al = false;
@@ -1222,7 +1224,7 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
         }
         try {
             jSONObject.put(com.anythink.expressad.foundation.g.a.ci, anythinkNativeEndCardView.a(i));
-            if (anythinkNativeEndCardView.f21442b.k() == 5) {
+            if (anythinkNativeEndCardView.f22229b.k() == 5) {
                 jSONObject.put("camp_position", 0);
             }
         } catch (JSONException e10) {
@@ -1230,20 +1232,20 @@ public class AnythinkNativeEndCardView extends AnythinkBaseView implements f {
             jSONObject2 = jSONObject;
             e.printStackTrace();
             jSONObject = jSONObject2;
-            anythinkNativeEndCardView.f21445e.a(105, jSONObject);
+            anythinkNativeEndCardView.f22232e.a(105, jSONObject);
         }
-        anythinkNativeEndCardView.f21445e.a(105, jSONObject);
+        anythinkNativeEndCardView.f22232e.a(105, jSONObject);
     }
 
-    public AnythinkNativeEndCardView(Context context, AttributeSet attributeSet, boolean z3, int i, boolean z6, int i6, int i9) {
-        super(context, attributeSet, z3, i, z6, i6, i9);
-        this.f21578K = false;
-        this.f21579L = false;
-        this.f21580M = 0;
-        this.f21581N = false;
-        this.f21582O = false;
-        this.f21583P = false;
-        this.f21589V = false;
+    public AnythinkNativeEndCardView(Context context, AttributeSet attributeSet, boolean z6, int i, boolean z9, int i4, int i6) {
+        super(context, attributeSet, z6, i, z9, i4, i6);
+        this.f22365K = false;
+        this.f22366L = false;
+        this.f22367M = 0;
+        this.f22368N = false;
+        this.f22369O = false;
+        this.f22370P = false;
+        this.f22376V = false;
         this.aa = 1;
         this.ak = 1;
         this.al = false;

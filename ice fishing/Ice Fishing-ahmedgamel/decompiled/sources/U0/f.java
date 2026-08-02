@@ -4,23 +4,23 @@ package U0;
 public final class f implements Runnable {
 
     /* renamed from: n, reason: collision with root package name */
-    public final k f3150n;
+    public final k f3267n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final N3.a f3151u;
+    public final P3.a f3268u;
 
-    public f(k kVar, N3.a aVar) {
-        this.f3150n = kVar;
-        this.f3151u = aVar;
+    public f(k kVar, P3.a aVar) {
+        this.f3267n = kVar;
+        this.f3268u = aVar;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
-        if (this.f3150n.f3159n != this) {
+        if (this.f3267n.f3276n != this) {
             return;
         }
-        if (i.f3157y.c(this.f3150n, this, i.f(this.f3151u))) {
-            i.c(this.f3150n);
+        if (i.f3274y.c(this.f3267n, this, i.f(this.f3268u))) {
+            i.c(this.f3267n);
         }
     }
 }

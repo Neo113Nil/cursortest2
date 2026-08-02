@@ -12,7 +12,7 @@ public class NT implements Serializable {
     public int A04;
     public int A05;
     public long A06;
-    public C1112No A07;
+    public C1132No A07;
     public String A08;
     public String A09;
     public boolean A0A;
@@ -54,8 +54,8 @@ public class NT implements Serializable {
         return this;
     }
 
-    public final NT A0K(C1112No c1112No) {
-        this.A07 = c1112No;
+    public final NT A0K(C1132No c1132No) {
+        this.A07 = c1132No;
         return this;
     }
 
@@ -69,18 +69,18 @@ public class NT implements Serializable {
         return this;
     }
 
-    public final NT A0N(boolean z3) {
-        this.A0A = z3;
+    public final NT A0N(boolean z6) {
+        this.A0A = z6;
         return this;
     }
 
-    public final NT A0O(boolean z3) {
-        this.A0B = z3;
+    public final NT A0O(boolean z6) {
+        this.A0B = z6;
         return this;
     }
 
-    public final NT A0P(boolean z3) {
-        this.A0C = z3;
+    public final NT A0P(boolean z6) {
+        this.A0C = z6;
         return this;
     }
 

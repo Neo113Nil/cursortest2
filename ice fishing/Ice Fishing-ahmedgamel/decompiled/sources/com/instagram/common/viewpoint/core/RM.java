@@ -9,11 +9,11 @@ public class RM {
     public int A03;
     public int A04;
 
-    private final int A00(int i, int i6) {
-        if (i > i6) {
+    private final int A00(int i, int i4) {
+        if (i > i4) {
             return 1;
         }
-        if (i == i6) {
+        if (i == i4) {
             return 2;
         }
         return 4;
@@ -27,11 +27,11 @@ public class RM {
         this.A00 |= i;
     }
 
-    public final void A03(int i, int i6, int i9, int i10) {
+    public final void A03(int i, int i4, int i6, int i9) {
         this.A04 = i;
-        this.A03 = i6;
-        this.A02 = i9;
-        this.A01 = i10;
+        this.A03 = i4;
+        this.A02 = i6;
+        this.A01 = i9;
     }
 
     public final boolean A04() {

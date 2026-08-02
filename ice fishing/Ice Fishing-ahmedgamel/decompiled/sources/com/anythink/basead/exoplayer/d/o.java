@@ -7,24 +7,24 @@ import java.lang.annotation.RetentionPolicy;
 public final class o extends Exception {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f6880a = 1;
+    public static final int f7666a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f6881b = 2;
+    public static final int f7667b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f6882c;
+    public final int f7668c;
 
     @Retention(RetentionPolicy.SOURCE)
     public @interface a {
     }
 
     private o(int i) {
-        this.f6882c = i;
+        this.f7668c = i;
     }
 
     public o(Exception exc) {
         super(exc);
-        this.f6882c = 2;
+        this.f7668c = 2;
     }
 }

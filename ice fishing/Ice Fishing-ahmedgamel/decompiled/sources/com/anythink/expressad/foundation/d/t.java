@@ -3,7 +3,7 @@ package com.anythink.expressad.foundation.d;
 import android.content.Context;
 import android.text.TextUtils;
 import com.anythink.expressad.foundation.h.v;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.Iterator;
@@ -13,81 +13,81 @@ import java.util.List;
 public final class t {
 
     /* renamed from: A, reason: collision with root package name */
-    public static final int f18889A = 22;
+    public static final int f19676A = 22;
 
     /* renamed from: B, reason: collision with root package name */
-    public static final int f18890B = 21;
+    public static final int f19677B = 21;
 
     /* renamed from: C, reason: collision with root package name */
-    public static final int f18891C = 10;
+    public static final int f19678C = 10;
 
     /* renamed from: D, reason: collision with root package name */
-    public static final int f18892D = 11;
+    public static final int f19679D = 11;
 
     /* renamed from: E, reason: collision with root package name */
-    public static final int f18893E = 12;
+    public static final int f19680E = 12;
 
     /* renamed from: F, reason: collision with root package name */
-    public static final String f18894F = "1";
+    public static final String f19681F = "1";
 
     /* renamed from: G, reason: collision with root package name */
-    public static final String f18895G = "2";
+    public static final String f19682G = "2";
 
     /* renamed from: H, reason: collision with root package name */
-    public static final int f18896H = 1;
+    public static final int f19683H = 1;
 
     /* renamed from: I, reason: collision with root package name */
-    public static final int f18897I = 2;
+    public static final int f19684I = 2;
     public static final int J = 3;
 
     /* renamed from: K, reason: collision with root package name */
-    public static final int f18898K = 0;
+    public static final int f19685K = 0;
 
     /* renamed from: L, reason: collision with root package name */
-    public static final int f18899L = 1;
+    public static final int f19686L = 1;
 
     /* renamed from: M, reason: collision with root package name */
-    public static final int f18900M = 2;
+    public static final int f19687M = 2;
 
     /* renamed from: N, reason: collision with root package name */
-    public static final int f18901N = 3;
+    public static final int f19688N = 3;
 
     /* renamed from: O, reason: collision with root package name */
-    public static final int f18902O = 4;
+    public static final int f19689O = 4;
 
     /* renamed from: P, reason: collision with root package name */
-    public static final int f18903P = 5;
+    public static final int f19690P = 5;
 
     /* renamed from: Q, reason: collision with root package name */
-    public static final int f18904Q = 6;
+    public static final int f19691Q = 6;
 
     /* renamed from: R, reason: collision with root package name */
-    public static final int f18905R = 1;
+    public static final int f19692R = 1;
 
     /* renamed from: S, reason: collision with root package name */
-    public static final int f18906S = 2;
+    public static final int f19693S = 2;
 
     /* renamed from: T, reason: collision with root package name */
-    public static final int f18907T = 3;
+    public static final int f19694T = 3;
 
     /* renamed from: U, reason: collision with root package name */
-    public static final int f18908U = 4;
+    public static final int f19695U = 4;
 
     /* renamed from: V, reason: collision with root package name */
-    public static final String f18909V = "key";
+    public static final String f19696V = "key";
 
     /* renamed from: W, reason: collision with root package name */
-    public static final String f18910W = "network_type";
+    public static final String f19697W = "network_type";
 
     /* renamed from: X, reason: collision with root package name */
-    public static final String f18911X = "network_str";
+    public static final String f19698X = "network_str";
     public static final String Y = "is_complete_view";
 
     /* renamed from: Z, reason: collision with root package name */
-    public static final String f18912Z = "watched_millis";
+    public static final String f19699Z = "watched_millis";
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f18913a = "2000020";
+    public static final String f19700a = "2000020";
     public static final String aA = "ad_type";
     public static final String aB = "resource_type";
     public static final String aC = "devid";
@@ -135,77 +135,77 @@ public final class t {
     public static final String az = "image_url";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f18914b = "2000021";
+    public static final String f19701b = "2000021";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f18915c = "2000054";
+    public static final String f19702c = "2000054";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final String f18916d = "2000022";
+    public static final String f19703d = "2000022";
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f18917e = "2000023";
+    public static final String f19704e = "2000023";
 
     /* renamed from: f, reason: collision with root package name */
-    public static final String f18918f = "2000024";
+    public static final String f19705f = "2000024";
 
     /* renamed from: g, reason: collision with root package name */
-    public static final String f18919g = "2000025";
+    public static final String f19706g = "2000025";
 
     /* renamed from: h, reason: collision with root package name */
-    public static final String f18920h = "2000030";
+    public static final String f19707h = "2000030";
     public static final String i = "2000037";
 
     /* renamed from: j, reason: collision with root package name */
-    public static final String f18921j = "2000039";
+    public static final String f19708j = "2000039";
 
     /* renamed from: k, reason: collision with root package name */
-    public static final String f18922k = "2000043";
+    public static final String f19709k = "2000043";
 
     /* renamed from: l, reason: collision with root package name */
-    public static final String f18923l = "2000044";
+    public static final String f19710l = "2000044";
 
     /* renamed from: m, reason: collision with root package name */
-    public static final String f18924m = "2000045";
+    public static final String f19711m = "2000045";
 
     /* renamed from: n, reason: collision with root package name */
-    public static final String f18925n = "2000060";
+    public static final String f19712n = "2000060";
 
     /* renamed from: o, reason: collision with root package name */
-    public static final String f18926o = "2000059";
+    public static final String f19713o = "2000059";
 
     /* renamed from: p, reason: collision with root package name */
-    public static final String f18927p = "2000063";
+    public static final String f19714p = "2000063";
 
     /* renamed from: q, reason: collision with root package name */
-    public static final String f18928q = "2000061";
+    public static final String f19715q = "2000061";
 
     /* renamed from: r, reason: collision with root package name */
-    public static final String f18929r = "2000062";
+    public static final String f19716r = "2000062";
 
     /* renamed from: s, reason: collision with root package name */
-    public static final String f18930s = "2000073";
+    public static final String f19717s = "2000073";
 
     /* renamed from: t, reason: collision with root package name */
-    public static final String f18931t = "2000074";
+    public static final String f19718t = "2000074";
 
     /* renamed from: u, reason: collision with root package name */
-    public static final String f18932u = "2000075";
+    public static final String f19719u = "2000075";
 
     /* renamed from: v, reason: collision with root package name */
-    public static final String f18933v = "2000076";
+    public static final String f19720v = "2000076";
 
     /* renamed from: w, reason: collision with root package name */
-    public static final int f18934w = 14;
+    public static final int f19721w = 14;
 
     /* renamed from: x, reason: collision with root package name */
-    public static final int f18935x = 2;
+    public static final int f19722x = 2;
 
     /* renamed from: y, reason: collision with root package name */
-    public static final int f18936y = 3;
+    public static final int f19723y = 3;
 
     /* renamed from: z, reason: collision with root package name */
-    public static final int f18937z = 20;
+    public static final int f19724z = 20;
     private String aT;
     private String aU;
     private String aV;
@@ -243,15 +243,15 @@ public final class t {
     private String by;
     private String bz;
 
-    private t(String str, int i6, int i9, int i10, int i11, String str2, String str3, int i12, String str4, int i13, String str5) {
+    private t(String str, int i4, int i6, int i9, int i10, String str2, String str3, int i11, String str4, int i12, String str5) {
         this.bj = 0;
         this.bB = 0;
         this.aW = str;
-        this.aX = i6;
+        this.aX = i4;
         this.aY = str5;
-        this.aZ = i9;
-        this.ba = i10;
-        this.bb = i11;
+        this.aZ = i6;
+        this.ba = i9;
+        this.bb = i10;
         try {
             if (!TextUtils.isEmpty(str2)) {
                 this.bc = URLEncoder.encode(str2, com.anythink.expressad.foundation.g.a.bR);
@@ -260,9 +260,9 @@ public final class t {
             e9.printStackTrace();
         }
         this.bd = str3;
-        this.bf = i12;
+        this.bf = i11;
         this.bg = str4;
-        this.bh = i13;
+        this.bh = i12;
     }
 
     private int A() {
@@ -313,8 +313,8 @@ public final class t {
         return this.aT;
     }
 
-    private void c(int i6) {
-        this.be = i6;
+    private void c(int i4) {
+        this.be = i4;
     }
 
     private String d() {
@@ -441,24 +441,24 @@ public final class t {
         return this.aU;
     }
 
-    private void d(int i6) {
-        this.bj = i6;
+    private void d(int i4) {
+        this.bj = i4;
     }
 
-    private void e(int i6) {
-        this.bi = i6;
+    private void e(int i4) {
+        this.bi = i4;
     }
 
-    private void f(int i6) {
-        this.bC = i6;
+    private void f(int i4) {
+        this.bC = i4;
     }
 
-    private void g(int i6) {
-        this.bo = i6;
+    private void g(int i4) {
+        this.bo = i4;
     }
 
-    private void h(int i6) {
-        this.ba = i6;
+    private void h(int i4) {
+        this.ba = i4;
     }
 
     private String i() {
@@ -524,20 +524,20 @@ public final class t {
         this.br = str;
     }
 
-    private void i(int i6) {
-        this.bb = i6;
+    private void i(int i4) {
+        this.bb = i4;
     }
 
-    private void j(int i6) {
-        this.bh = i6;
+    private void j(int i4) {
+        this.bh = i4;
     }
 
     private int k() {
         return this.bi;
     }
 
-    public final void b(int i6) {
-        this.aX = i6;
+    public final void b(int i4) {
+        this.aX = i4;
     }
 
     public final void c(String str) {
@@ -569,13 +569,13 @@ public final class t {
             return null;
         }
         StringBuffer stringBuffer = new StringBuffer();
-        StringBuilder k9 = AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(new StringBuilder("key="), tVar.aW, "&", stringBuffer, "cid="), tVar.bn, "&", stringBuffer, "unit_id="), tVar.bm, "&", stringBuffer, "network_type=");
-        k9.append(tVar.aX);
-        k9.append("&");
-        stringBuffer.append(k9.toString());
-        StringBuilder k10 = AbstractC4404f.k(AbstractC4404f.k(new StringBuilder("rid="), tVar.bk, "&", stringBuffer, "rid_n="), tVar.bl, "&", stringBuffer, "reason=");
-        k10.append(tVar.D());
-        stringBuffer.append(k10.toString());
+        StringBuilder m9 = Wv.m(Wv.m(Wv.m(new StringBuilder("key="), tVar.aW, "&", stringBuffer, "cid="), tVar.bn, "&", stringBuffer, "unit_id="), tVar.bm, "&", stringBuffer, "network_type=");
+        m9.append(tVar.aX);
+        m9.append("&");
+        stringBuffer.append(m9.toString());
+        StringBuilder m10 = Wv.m(Wv.m(new StringBuilder("rid="), tVar.bk, "&", stringBuffer, "rid_n="), tVar.bl, "&", stringBuffer, "reason=");
+        m10.append(tVar.D());
+        stringBuffer.append(m10.toString());
         stringBuffer.append("\n");
         return stringBuffer.toString();
     }
@@ -585,14 +585,14 @@ public final class t {
             return null;
         }
         StringBuffer stringBuffer = new StringBuffer();
-        StringBuilder k9 = AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(new StringBuilder("key="), tVar.aW, "&", stringBuffer, "cid="), tVar.bn, "&", stringBuffer, "unit_id="), tVar.bm, "&", stringBuffer, "network_type=");
-        k9.append(tVar.aX);
-        k9.append("&");
-        stringBuffer.append(k9.toString());
+        StringBuilder m9 = Wv.m(Wv.m(Wv.m(new StringBuilder("key="), tVar.aW, "&", stringBuffer, "cid="), tVar.bn, "&", stringBuffer, "unit_id="), tVar.bm, "&", stringBuffer, "network_type=");
+        m9.append(tVar.aX);
+        m9.append("&");
+        stringBuffer.append(m9.toString());
         stringBuffer.append("mraid_type=" + tVar.bB + "&");
-        StringBuilder k10 = AbstractC4404f.k(new StringBuilder("rid_n="), tVar.bl, "&", stringBuffer, "rid=");
-        k10.append(tVar.bk);
-        stringBuffer.append(k10.toString());
+        StringBuilder m10 = Wv.m(new StringBuilder("rid_n="), tVar.bl, "&", stringBuffer, "rid=");
+        m10.append(tVar.bk);
+        stringBuffer.append(m10.toString());
         stringBuffer.append("\n");
         return stringBuffer.toString();
     }
@@ -602,14 +602,14 @@ public final class t {
             return null;
         }
         StringBuffer stringBuffer = new StringBuffer();
-        StringBuilder k9 = AbstractC4404f.k(new StringBuilder("key="), tVar.aW, "&", stringBuffer, "result=");
-        k9.append(tVar.bf);
-        k9.append("&");
-        stringBuffer.append(k9.toString());
-        StringBuilder k10 = AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(new StringBuilder("duration="), tVar.bg, "&", stringBuffer, "cid="), tVar.bn, "&", stringBuffer, "reason="), tVar.D(), "&", stringBuffer, "ad_type="), tVar.bA, "&", stringBuffer, "unit_id="), tVar.bm, "&", stringBuffer, "devid="), tVar.aU, "&", stringBuffer, "mraid_type=");
-        k10.append(tVar.bB);
-        k10.append("&");
-        stringBuffer.append(k10.toString());
+        StringBuilder m9 = Wv.m(new StringBuilder("key="), tVar.aW, "&", stringBuffer, "result=");
+        m9.append(tVar.bf);
+        m9.append("&");
+        stringBuffer.append(m9.toString());
+        StringBuilder m10 = Wv.m(Wv.m(Wv.m(Wv.m(Wv.m(Wv.m(new StringBuilder("duration="), tVar.bg, "&", stringBuffer, "cid="), tVar.bn, "&", stringBuffer, "reason="), tVar.D(), "&", stringBuffer, "ad_type="), tVar.bA, "&", stringBuffer, "unit_id="), tVar.bm, "&", stringBuffer, "devid="), tVar.aU, "&", stringBuffer, "mraid_type=");
+        m10.append(tVar.bB);
+        m10.append("&");
+        stringBuffer.append(m10.toString());
         stringBuffer.append("network_type=" + tVar.aX + "&");
         if (!TextUtils.isEmpty(tVar.bx)) {
             stringBuffer.append("endcard_url=" + tVar.bx + "&");
@@ -620,9 +620,9 @@ public final class t {
         if (tVar.aT != null) {
             stringBuffer.append("resource_type=" + tVar.aT + "&");
         }
-        StringBuilder k11 = AbstractC4404f.k(new StringBuilder("rid_n="), tVar.bl, "&", stringBuffer, "rid=");
-        k11.append(tVar.bk);
-        stringBuffer.append(k11.toString());
+        StringBuilder m11 = Wv.m(new StringBuilder("rid_n="), tVar.bl, "&", stringBuffer, "rid=");
+        m11.append(tVar.bk);
+        stringBuffer.append(m11.toString());
         stringBuffer.append("\n");
         return stringBuffer.toString();
     }
@@ -632,14 +632,14 @@ public final class t {
             return null;
         }
         StringBuffer stringBuffer = new StringBuffer();
-        StringBuilder k9 = AbstractC4404f.k(new StringBuilder("key="), tVar.aW, "&", stringBuffer, "result=");
-        k9.append(tVar.bf);
-        k9.append("&");
-        stringBuffer.append(k9.toString());
-        StringBuilder k10 = AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(new StringBuilder("duration="), tVar.bg, "&", stringBuffer, "cid="), tVar.bn, "&", stringBuffer, "unit_id="), tVar.bm, "&", stringBuffer, "reason="), tVar.D(), "&", stringBuffer, "ad_type="), tVar.bA, "&", stringBuffer, "rid="), tVar.bk, "&", stringBuffer, "rid_n="), tVar.bl, "&", stringBuffer, "network_type=");
-        k10.append(tVar.aX);
-        k10.append("&");
-        stringBuffer.append(k10.toString());
+        StringBuilder m9 = Wv.m(new StringBuilder("key="), tVar.aW, "&", stringBuffer, "result=");
+        m9.append(tVar.bf);
+        m9.append("&");
+        stringBuffer.append(m9.toString());
+        StringBuilder m10 = Wv.m(Wv.m(Wv.m(Wv.m(Wv.m(Wv.m(Wv.m(new StringBuilder("duration="), tVar.bg, "&", stringBuffer, "cid="), tVar.bn, "&", stringBuffer, "unit_id="), tVar.bm, "&", stringBuffer, "reason="), tVar.D(), "&", stringBuffer, "ad_type="), tVar.bA, "&", stringBuffer, "rid="), tVar.bk, "&", stringBuffer, "rid_n="), tVar.bl, "&", stringBuffer, "network_type=");
+        m10.append(tVar.aX);
+        m10.append("&");
+        stringBuffer.append(m10.toString());
         stringBuffer.append("mraid_type=" + tVar.bB + "&");
         stringBuffer.append("devid=" + tVar.aU + "&");
         if (tVar.aT != null) {
@@ -655,10 +655,10 @@ public final class t {
     private static String f(t tVar) {
         if (tVar != null) {
             StringBuffer stringBuffer = new StringBuffer();
-            StringBuilder k9 = AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(new StringBuilder("key="), tVar.aW, "&", stringBuffer, "cid="), tVar.bn, "&", stringBuffer, "rid="), tVar.bk, "&", stringBuffer, "rid_n="), tVar.bl, "&", stringBuffer, "unit_id="), tVar.bm, "&", stringBuffer, "network_type=");
-            k9.append(tVar.aX);
-            k9.append("&");
-            stringBuffer.append(k9.toString());
+            StringBuilder m9 = Wv.m(Wv.m(Wv.m(Wv.m(Wv.m(new StringBuilder("key="), tVar.aW, "&", stringBuffer, "cid="), tVar.bn, "&", stringBuffer, "rid="), tVar.bk, "&", stringBuffer, "rid_n="), tVar.bl, "&", stringBuffer, "unit_id="), tVar.bm, "&", stringBuffer, "network_type=");
+            m9.append(tVar.aX);
+            m9.append("&");
+            stringBuffer.append(m9.toString());
             stringBuffer.append("mraid_type=" + tVar.bB + "&");
             stringBuffer.append("platform=1");
             return stringBuffer.toString();
@@ -669,18 +669,18 @@ public final class t {
     private static String g(t tVar) {
         if (tVar != null) {
             StringBuffer stringBuffer = new StringBuffer();
-            StringBuilder k9 = AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(new StringBuilder("key="), tVar.aW, "&", stringBuffer, "cid="), tVar.bn, "&", stringBuffer, "rid="), tVar.bk, "&", stringBuffer, "rid_n="), tVar.bl, "&", stringBuffer, "unit_id="), tVar.bm, "&", stringBuffer, "reason="), tVar.D(), "&", stringBuffer, "case=");
-            k9.append(tVar.be);
-            k9.append("&");
-            stringBuffer.append(k9.toString());
+            StringBuilder m9 = Wv.m(Wv.m(Wv.m(Wv.m(Wv.m(Wv.m(new StringBuilder("key="), tVar.aW, "&", stringBuffer, "cid="), tVar.bn, "&", stringBuffer, "rid="), tVar.bk, "&", stringBuffer, "rid_n="), tVar.bl, "&", stringBuffer, "unit_id="), tVar.bm, "&", stringBuffer, "reason="), tVar.D(), "&", stringBuffer, "case=");
+            m9.append(tVar.be);
+            m9.append("&");
+            stringBuffer.append(m9.toString());
             stringBuffer.append("network_type=" + tVar.aX);
             return stringBuffer.toString();
         }
         return "";
     }
 
-    private void k(int i6) {
-        this.aZ = i6;
+    private void k(int i4) {
+        this.aZ = i4;
     }
 
     private String l() {
@@ -695,12 +695,12 @@ public final class t {
         return this.bs;
     }
 
-    private void l(int i6) {
-        this.bf = i6;
+    private void l(int i4) {
+        this.bf = i4;
     }
 
-    public final void a(int i6) {
-        this.bB = i6;
+    public final void a(int i4) {
+        this.bB = i4;
     }
 
     private static String a(List<t> list) {
@@ -709,13 +709,13 @@ public final class t {
         }
         StringBuffer stringBuffer = new StringBuffer();
         for (t tVar : list) {
-            StringBuilder k9 = AbstractC4404f.k(new StringBuilder("key="), tVar.aW, "&", stringBuffer, "result=");
-            k9.append(tVar.bf);
-            k9.append("&");
-            stringBuffer.append(k9.toString());
-            StringBuilder k10 = AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(AbstractC4404f.k(new StringBuilder("duration="), tVar.bg, "&", stringBuffer, "endcard_url="), tVar.bx, "&", stringBuffer, "cid="), tVar.bn, "&", stringBuffer, "unit_id="), tVar.bm, "&", stringBuffer, "reason="), tVar.D(), "&", stringBuffer, "ad_type="), tVar.bA, "&", stringBuffer, "rid="), tVar.bk, "&", stringBuffer, "rid_n="), tVar.bl, "&", stringBuffer, "type="), tVar.bw, "&", stringBuffer, "adspace_t=");
-            k10.append(tVar.bC);
-            stringBuffer.append(k10.toString());
+            StringBuilder m9 = Wv.m(new StringBuilder("key="), tVar.aW, "&", stringBuffer, "result=");
+            m9.append(tVar.bf);
+            m9.append("&");
+            stringBuffer.append(m9.toString());
+            StringBuilder m10 = Wv.m(Wv.m(Wv.m(Wv.m(Wv.m(Wv.m(Wv.m(Wv.m(Wv.m(new StringBuilder("duration="), tVar.bg, "&", stringBuffer, "endcard_url="), tVar.bx, "&", stringBuffer, "cid="), tVar.bn, "&", stringBuffer, "unit_id="), tVar.bm, "&", stringBuffer, "reason="), tVar.D(), "&", stringBuffer, "ad_type="), tVar.bA, "&", stringBuffer, "rid="), tVar.bk, "&", stringBuffer, "rid_n="), tVar.bl, "&", stringBuffer, "type="), tVar.bw, "&", stringBuffer, "adspace_t=");
+            m10.append(tVar.bC);
+            stringBuffer.append(m10.toString());
             stringBuffer.append("\n");
         }
         return stringBuffer.toString();
@@ -726,13 +726,13 @@ public final class t {
         this.bB = 0;
     }
 
-    private t(String str, int i6, int i9, String str2, int i10, int i11, String str3) {
+    private t(String str, int i4, int i6, String str2, int i9, int i10, String str3) {
         this.bj = 0;
         this.bB = 0;
         this.aW = str;
-        this.aX = i6;
+        this.aX = i4;
         this.aY = str3;
-        this.bb = i9;
+        this.bb = i6;
         if (!TextUtils.isEmpty(str2)) {
             try {
                 this.bc = URLEncoder.encode(str2, com.anythink.expressad.foundation.g.a.bR);
@@ -740,35 +740,35 @@ public final class t {
                 e9.printStackTrace();
             }
         }
-        this.bi = i10;
+        this.bi = i9;
+        this.bj = i10;
+    }
+
+    private t(String str, int i4, int i6, int i9, int i10, String str2, int i11, String str3) {
+        this.bj = 0;
+        this.bB = 0;
+        this.aW = str;
+        this.aY = str3;
+        this.aX = i4;
+        this.aZ = i6;
+        this.ba = i9;
+        this.bb = i10;
+        if (!TextUtils.isEmpty(str2)) {
+            try {
+                this.bc = URLEncoder.encode(str2, com.anythink.expressad.foundation.g.a.bR);
+            } catch (UnsupportedEncodingException e9) {
+                e9.printStackTrace();
+            }
+        }
         this.bj = i11;
     }
 
-    private t(String str, int i6, int i9, int i10, int i11, String str2, int i12, String str3) {
-        this.bj = 0;
-        this.bB = 0;
-        this.aW = str;
-        this.aY = str3;
-        this.aX = i6;
-        this.aZ = i9;
-        this.ba = i10;
-        this.bb = i11;
-        if (!TextUtils.isEmpty(str2)) {
-            try {
-                this.bc = URLEncoder.encode(str2, com.anythink.expressad.foundation.g.a.bR);
-            } catch (UnsupportedEncodingException e9) {
-                e9.printStackTrace();
-            }
-        }
-        this.bj = i12;
-    }
-
-    private t(String str, int i6, String str2, String str3, String str4) {
+    private t(String str, int i4, String str2, String str3, String str4) {
         this.bj = 0;
         this.bB = 0;
         this.aW = str;
         this.aY = str4;
-        this.aX = i6;
+        this.aX = i4;
         if (!TextUtils.isEmpty(str2)) {
             try {
                 this.bc = URLEncoder.encode(str2, com.anythink.expressad.foundation.g.a.bR);
@@ -779,13 +779,13 @@ public final class t {
         this.bd = str3;
     }
 
-    private t(String str, int i6, int i9, String str2, int i10, String str3, int i11, String str4) {
+    private t(String str, int i4, int i6, String str2, int i9, String str3, int i10, String str4) {
         this.bj = 0;
         this.bB = 0;
         this.aW = str;
-        this.aX = i6;
+        this.aX = i4;
         this.aY = str4;
-        this.bb = i9;
+        this.bb = i6;
         if (!TextUtils.isEmpty(str2)) {
             try {
                 this.bc = URLEncoder.encode(str2, com.anythink.expressad.foundation.g.a.bR);
@@ -793,9 +793,9 @@ public final class t {
                 e9.printStackTrace();
             }
         }
-        this.bf = i10;
+        this.bf = i9;
         this.bg = str3;
-        this.bh = i11;
+        this.bh = i10;
     }
 
     private static String b(List<t> list) {
@@ -819,15 +819,15 @@ public final class t {
         }
     }
 
-    private t(Context context, d dVar, int i6, String str, long j6, int i9) {
+    private t(Context context, d dVar, int i4, String str, long j6, int i6) {
         this.bj = 0;
         this.bB = 0;
-        if (i9 == 1) {
-            this.aW = f18916d;
-        } else if (i9 == 287 || i9 == 94) {
-            this.aW = f18916d;
-        } else if (i9 == 95) {
-            this.aW = f18919g;
+        if (i6 == 1) {
+            this.aW = f19703d;
+        } else if (i6 == 287 || i6 == 94) {
+            this.aW = f19703d;
+        } else if (i6 == 95) {
+            this.aW = f19706g;
         }
         int b9 = com.anythink.expressad.foundation.h.n.b();
         this.aX = b9;
@@ -842,25 +842,25 @@ public final class t {
                 e9.printStackTrace();
             }
         }
-        this.bf = i6;
+        this.bf = i4;
         this.bg = str;
         this.bh = j6 == 0 ? dVar.U() : j6;
     }
 
-    private t(String str, String str2, String str3, String str4, int i6, String str5, int i9, String str6) {
+    private t(String str, String str2, String str3, String str4, int i4, String str5, int i6, String str6) {
         this.bj = 0;
         this.bB = 0;
         this.aW = str;
         this.bk = str2;
         this.bl = str3;
         this.bm = str4;
-        this.aX = i6;
+        this.aX = i4;
         this.aY = str6;
         this.bn = str5;
-        this.bo = i9;
+        this.bo = i6;
     }
 
-    public t(String str, String str2, String str3, String str4, String str5, String str6, int i6, String str7) {
+    public t(String str, String str2, String str3, String str4, String str5, String str6, int i4, String str7) {
         this.bj = 0;
         this.bB = 0;
         this.aW = str;
@@ -869,7 +869,7 @@ public final class t {
         this.bu = str4;
         this.bm = str5;
         this.bn = str6;
-        this.aX = i6;
+        this.aX = i4;
         this.aY = str7;
     }
 
@@ -906,11 +906,11 @@ public final class t {
         this.bv = str;
     }
 
-    private t(String str, int i6, String str2, String str3, String str4, String str5, String str6, String str7) {
+    private t(String str, int i4, String str2, String str3, String str4, String str5, String str6, String str7) {
         this.bj = 0;
         this.bB = 0;
         this.aW = str;
-        this.bf = i6;
+        this.bf = i4;
         this.bg = str2;
         try {
             if (!TextUtils.isEmpty(str3)) {
@@ -928,7 +928,7 @@ public final class t {
         }
     }
 
-    public t(String str, String str2, String str3, String str4, String str5, int i6) {
+    public t(String str, String str2, String str3, String str4, String str5, int i4) {
         this.bj = 0;
         this.bB = 0;
         this.aW = str;
@@ -936,10 +936,10 @@ public final class t {
         this.bk = str3;
         this.bl = str4;
         this.bm = str5;
-        this.aX = i6;
+        this.aX = i4;
     }
 
-    public t(String str, String str2, String str3, String str4, String str5, int i6, int i9, String str6) {
+    public t(String str, String str2, String str3, String str4, String str5, int i4, int i6, String str6) {
         this.bj = 0;
         this.bB = 0;
         this.aW = str;
@@ -947,8 +947,8 @@ public final class t {
         this.bk = str3;
         this.bl = str4;
         this.bm = str5;
-        this.aX = i6;
+        this.aX = i4;
         this.bd = str6;
-        this.be = i9;
+        this.be = i6;
     }
 }

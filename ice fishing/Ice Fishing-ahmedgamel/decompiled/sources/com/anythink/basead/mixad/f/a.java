@@ -11,24 +11,24 @@ public final class a {
         return a(i, 0, 0);
     }
 
-    public static FrameLayout.LayoutParams a(int i, int i6, int i9) {
-        Context g4 = t.b().g();
+    public static FrameLayout.LayoutParams a(int i, int i4, int i6) {
+        Context g9 = t.b().g();
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-2, -2);
         if (i == 1) {
             layoutParams.gravity = 83;
-            layoutParams.leftMargin = q.a(g4, 2.0f);
-            layoutParams.bottomMargin = q.a(g4, 2.0f);
+            layoutParams.leftMargin = q.a(g9, 2.0f);
+            layoutParams.bottomMargin = q.a(g9, 2.0f);
             return layoutParams;
         }
-        if (i6 > 0) {
-            layoutParams.width = i6;
+        if (i4 > 0) {
+            layoutParams.width = i4;
         }
-        if (i9 > 0) {
-            layoutParams.height = i9;
+        if (i6 > 0) {
+            layoutParams.height = i6;
         }
         layoutParams.gravity = 85;
-        layoutParams.bottomMargin = q.a(g4, 2.0f);
-        layoutParams.rightMargin = q.a(g4, 2.0f);
+        layoutParams.bottomMargin = q.a(g9, 2.0f);
+        layoutParams.rightMargin = q.a(g9, 2.0f);
         return layoutParams;
     }
 }

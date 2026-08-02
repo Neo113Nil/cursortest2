@@ -1,12 +1,12 @@
 package com.google.android.play.core.hsdp.service;
 
-import L3.A;
-import L3.D;
-import L3.InterfaceC0316b;
-import L3.h;
-import L3.i;
-import L3.p;
-import S0.f;
+import A1.C0265g;
+import M.h;
+import N3.A;
+import N3.InterfaceC0324b;
+import N3.m;
+import N3.x;
+import a.AbstractC0426a;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
@@ -25,12 +25,12 @@ public final class HsdpDeepLinkServiceFactory {
     }
 
     @Keep
-    public static InterfaceC0316b create(Activity activity) {
+    public static InterfaceC0324b create(Activity activity) {
         return create(activity, false);
     }
 
-    private static Intent createHpoaServiceIntent(Context context, boolean z3) {
-        return z3 ? new Intent().setClassName(context.getPackageName(), HPOA_SERVICE_CLASS_NAME_FOR_TESTING) : new Intent().setClassName("com.android.vending", HPOA_SERVICE_CLASS_NAME);
+    private static Intent createHpoaServiceIntent(Context context, boolean z6) {
+        return z6 ? new Intent().setClassName(context.getPackageName(), HPOA_SERVICE_CLASS_NAME_FOR_TESTING) : new Intent().setClassName("com.android.vending", HPOA_SERVICE_CLASS_NAME);
     }
 
     public static Intent createHsdpServiceIntent() {
@@ -44,42 +44,42 @@ public final class HsdpDeepLinkServiceFactory {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static InterfaceC0316b createInternal(Context context, boolean z3, boolean z6) {
-        boolean z9;
+    private static InterfaceC0324b createInternal(Context context, boolean z6, boolean z9) {
+        boolean z10;
         boolean isRunningInUserTestHarness;
-        if (!z6 && !(context instanceof Activity)) {
+        if (!z9 && !(context instanceof Activity)) {
             throw new IllegalArgumentException("Context must be an Activity when using activity-based HSDP.");
         }
-        if (z3 && !(context instanceof Activity)) {
+        if (z6 && !(context instanceof Activity)) {
             throw new IllegalArgumentException("Context must be an Activity when enabling loading panel.");
         }
         if (!ActivityManager.isRunningInTestHarness()) {
             if (Build.VERSION.SDK_INT >= 29) {
                 isRunningInUserTestHarness = ActivityManager.isRunningInUserTestHarness();
             }
-            z9 = false;
-            return new p(context, f.w(new h(context, z9)), f.w(new i(context, 0)), z9, z6, z3);
+            z10 = false;
+            return new m(context, AbstractC0426a.r(new h(context, z10)), AbstractC0426a.r(new C0265g(context, 2)), z10, z9, z6);
         }
-        z9 = true;
-        return new p(context, f.w(new h(context, z9)), f.w(new i(context, 0)), z9, z6, z3);
+        z10 = true;
+        return new m(context, AbstractC0426a.r(new h(context, z10)), AbstractC0426a.r(new C0265g(context, 2)), z10, z9, z6);
     }
 
-    public static /* synthetic */ A lambda$createInternal$0(Context context, boolean z3) {
-        return new D(createHpoaServiceIntent(context, z3), (Activity) context);
-    }
-
-    @Keep
-    public static InterfaceC0316b create(Activity activity, boolean z3) {
-        return create(activity, z3, false);
+    public static /* synthetic */ x lambda$createInternal$0(Context context, boolean z6) {
+        return new A(createHpoaServiceIntent(context, z6), (Activity) context);
     }
 
     @Keep
-    public static InterfaceC0316b create(Activity activity, boolean z3, boolean z6) {
-        return createInternal(activity, z3, z6);
+    public static InterfaceC0324b create(Activity activity, boolean z6) {
+        return create(activity, z6, false);
     }
 
     @Keep
-    public static InterfaceC0316b create(Context context) {
+    public static InterfaceC0324b create(Activity activity, boolean z6, boolean z9) {
+        return createInternal(activity, z6, z9);
+    }
+
+    @Keep
+    public static InterfaceC0324b create(Context context) {
         return createInternal(context, false, true);
     }
 }

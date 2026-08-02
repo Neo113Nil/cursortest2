@@ -4,12 +4,12 @@ import android.view.View;
 import android.widget.ImageView;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class MR extends C1534bk {
+public final class MR extends C1554bk {
     public static String[] A01 = {"Er9uQMazYAvywc84qssi8CcPD5K", "bpAOsy1ZAool4ZO", "456cLSbicHverE2", "OQn0GSeoKkB55mmrW6XfcsGu8yTW4vwY", "5C5KK7QE3ZVmFSCl85soxjy8aya", "FZZqXqYfqR5sLOGe", "aaYiwVUQ6XuTYr3PnCNNWh", "fICxnQOCOsz8JBbFc5EZnQUEppLIkjem"};
     public ImageView.ScaleType A00;
 
-    public MR(C1840gi c1840gi) {
-        super(c1840gi);
+    public MR(C1860gi c1860gi) {
+        super(c1860gi);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:15:? A[RETURN, SYNTHETIC] */
@@ -18,12 +18,12 @@ public final class MR extends C1534bk {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void onMeasure(int i, int i6) {
-        int size = View.MeasureSpec.getSize(i6);
+    public final void onMeasure(int i, int i4) {
+        int size = View.MeasureSpec.getSize(i4);
         int size2 = View.MeasureSpec.getSize(i);
         int heightSpecSize = View.MeasureSpec.getMode(i);
         if (heightSpecSize == 1073741824) {
-            int heightSpecSize2 = View.MeasureSpec.getMode(i6);
+            int heightSpecSize2 = View.MeasureSpec.getMode(i4);
             if (heightSpecSize2 == 1073741824) {
                 int heightSpecSize3 = Math.min(size2, size);
                 setMeasuredDimension(heightSpecSize3, heightSpecSize3);
@@ -47,14 +47,14 @@ public final class MR extends C1534bk {
             }
             setMeasuredDimension(size2, size2);
         } else {
-            int heightSpecSize5 = View.MeasureSpec.getMode(i6);
+            int heightSpecSize5 = View.MeasureSpec.getMode(i4);
             if (heightSpecSize5 == 1073741824) {
                 if (size2 > 0) {
                     size = Math.min(size2, size);
                 }
                 setMeasuredDimension(size, size);
             } else {
-                super.onMeasure(i, i6);
+                super.onMeasure(i, i4);
             }
         }
         if (this.A00 == null) {

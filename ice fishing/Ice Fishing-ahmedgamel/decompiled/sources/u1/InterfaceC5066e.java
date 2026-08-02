@@ -1,11 +1,18 @@
 package u1;
 
-import s1.InterfaceC4970e;
+import java.nio.charset.Charset;
+import java.security.MessageDigest;
 
 /* renamed from: u1.e, reason: case insensitive filesystem */
 /* loaded from: classes.dex */
 public interface InterfaceC5066e {
-    void a(InterfaceC4970e interfaceC4970e, Object obj, com.bumptech.glide.load.data.d dVar, int i, InterfaceC4970e interfaceC4970e2);
 
-    void c(InterfaceC4970e interfaceC4970e, Exception exc, com.bumptech.glide.load.data.d dVar, int i);
+    /* renamed from: a, reason: collision with root package name */
+    public static final Charset f41005a = Charset.forName("UTF-8");
+
+    void b(MessageDigest messageDigest);
+
+    boolean equals(Object obj);
+
+    int hashCode();
 }

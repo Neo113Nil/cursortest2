@@ -9,41 +9,41 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class h implements Application.ActivityLifecycleCallbacks {
 
     /* renamed from: e, reason: collision with root package name */
-    private static final int f12345e = 1;
+    private static final int f13131e = 1;
 
     /* renamed from: f, reason: collision with root package name */
-    private static final int f12346f = 2;
+    private static final int f13132f = 2;
 
     /* renamed from: g, reason: collision with root package name */
-    private static final int f12347g = 3;
+    private static final int f13133g = 3;
 
     /* renamed from: h, reason: collision with root package name */
-    private static final int f12348h = 4;
+    private static final int f13134h = 4;
 
     /* renamed from: a, reason: collision with root package name */
-    int f12349a;
+    int f13135a;
 
     /* renamed from: d, reason: collision with root package name */
-    boolean f12352d;
+    boolean f13138d;
     private int i;
 
     /* renamed from: c, reason: collision with root package name */
-    boolean f12351c = false;
+    boolean f13137c = false;
 
     /* renamed from: b, reason: collision with root package name */
-    ConcurrentHashMap<String, Boolean> f12350b = new ConcurrentHashMap<>(3);
+    ConcurrentHashMap<String, Boolean> f13136b = new ConcurrentHashMap<>(3);
 
-    public h(boolean z3) {
-        this.f12352d = false;
-        if (z3) {
-            this.f12352d = true;
+    public h(boolean z6) {
+        this.f13138d = false;
+        if (z6) {
+            this.f13138d = true;
             a();
             s c9 = t.b().c();
             if (c9 != null && c9.a()) {
                 c9.onApplicationBoot();
             }
         }
-        t.b().e(z3);
+        t.b().e(z6);
     }
 
     private static void a() {
@@ -65,10 +65,10 @@ public final class h implements Application.ActivityLifecycleCallbacks {
     public final void onActivityPaused(Activity activity) {
         activity.getClass();
         a(3, activity);
-        if (this.f12352d) {
+        if (this.f13138d) {
             return;
         }
-        this.f12352d = true;
+        this.f13138d = true;
         a();
     }
 
@@ -86,10 +86,10 @@ public final class h implements Application.ActivityLifecycleCallbacks {
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public final void onActivityStarted(Activity activity) {
         activity.getClass();
-        this.f12349a++;
-        this.f12350b.put(activity.toString(), Boolean.TRUE);
-        if (this.f12349a == 1 && !this.f12352d) {
-            this.f12352d = true;
+        this.f13135a++;
+        this.f13136b.put(activity.toString(), Boolean.TRUE);
+        if (this.f13135a == 1 && !this.f13138d) {
+            this.f13138d = true;
             a();
         }
         a(1, activity);
@@ -98,29 +98,29 @@ public final class h implements Application.ActivityLifecycleCallbacks {
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public final void onActivityStopped(Activity activity) {
         activity.getClass();
-        this.f12349a--;
-        boolean containsKey = this.f12350b.containsKey(activity.toString());
-        if (!this.f12351c && !containsKey) {
-            this.f12351c = true;
-            this.f12349a++;
+        this.f13135a--;
+        boolean containsKey = this.f13136b.containsKey(activity.toString());
+        if (!this.f13137c && !containsKey) {
+            this.f13137c = true;
+            this.f13135a++;
         }
         if (containsKey) {
             try {
-                this.f12350b.remove(activity.toString());
+                this.f13136b.remove(activity.toString());
             } catch (Throwable unused) {
             }
         }
-        if (this.f12349a == 0) {
-            this.f12352d = false;
+        if (this.f13135a == 0) {
+            this.f13138d = false;
         }
         a(4, activity);
     }
 
     private void a(int i, Activity activity) {
         if (i == 1 || i == 2) {
-            int i6 = this.i;
-            this.i = activity != null ? activity.hashCode() : i6;
-            if (i6 == 0) {
+            int i4 = this.i;
+            this.i = activity != null ? activity.hashCode() : i4;
+            if (i4 == 0) {
                 s c9 = t.b().c();
                 if (c9 != null && c9.a()) {
                     c9.onAppForegroundStatusChanged(true);

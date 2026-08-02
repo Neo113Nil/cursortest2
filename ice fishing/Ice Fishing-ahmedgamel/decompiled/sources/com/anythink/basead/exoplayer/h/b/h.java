@@ -8,60 +8,60 @@ import com.anythink.basead.exoplayer.m;
 public final class h extends a {
 
     /* renamed from: k, reason: collision with root package name */
-    private final int f7574k;
+    private final int f8360k;
 
     /* renamed from: l, reason: collision with root package name */
-    private final long f7575l;
+    private final long f8361l;
 
     /* renamed from: m, reason: collision with root package name */
-    private final d f7576m;
+    private final d f8362m;
 
     /* renamed from: n, reason: collision with root package name */
-    private volatile int f7577n;
+    private volatile int f8363n;
 
     /* renamed from: o, reason: collision with root package name */
-    private volatile boolean f7578o;
+    private volatile boolean f8364o;
 
     /* renamed from: p, reason: collision with root package name */
-    private volatile boolean f7579p;
+    private volatile boolean f8365p;
 
-    private h(com.anythink.basead.exoplayer.j.h hVar, k kVar, m mVar, int i, Object obj, long j6, long j9, long j10, long j11, int i6, long j12, d dVar) {
+    private h(com.anythink.basead.exoplayer.j.h hVar, k kVar, m mVar, int i, Object obj, long j6, long j9, long j10, long j11, int i4, long j12, d dVar) {
         super(hVar, kVar, mVar, i, obj, j6, j9, j10, j11);
-        this.f7574k = i6;
-        this.f7575l = j12;
-        this.f7576m = dVar;
+        this.f8360k = i4;
+        this.f8361l = j12;
+        this.f8362m = dVar;
     }
 
     @Override // com.anythink.basead.exoplayer.j.t.c
     public final void a() {
-        this.f7578o = true;
+        this.f8364o = true;
     }
 
     @Override // com.anythink.basead.exoplayer.j.t.c
     public final void b() {
-        k a9 = this.f7526b.a(this.f7577n);
+        k a9 = this.f8312b.a(this.f8363n);
         try {
             com.anythink.basead.exoplayer.j.h hVar = this.i;
-            com.anythink.basead.exoplayer.e.b bVar = new com.anythink.basead.exoplayer.e.b(hVar, a9.f8139e, hVar.a(a9));
-            if (this.f7577n == 0) {
+            com.anythink.basead.exoplayer.e.b bVar = new com.anythink.basead.exoplayer.e.b(hVar, a9.f8925e, hVar.a(a9));
+            if (this.f8363n == 0) {
                 b c9 = c();
-                c9.a(this.f7575l);
-                d dVar = this.f7576m;
-                long j6 = this.f7520a;
-                dVar.a(c9, j6 == com.anythink.basead.exoplayer.b.f6382b ? 0L : j6 - this.f7575l);
+                c9.a(this.f8361l);
+                d dVar = this.f8362m;
+                long j6 = this.f8306a;
+                dVar.a(c9, j6 == com.anythink.basead.exoplayer.b.f7168b ? 0L : j6 - this.f8361l);
             }
             try {
-                com.anythink.basead.exoplayer.e.e eVar = this.f7576m.f7533a;
+                com.anythink.basead.exoplayer.e.e eVar = this.f8362m.f8319a;
                 int i = 0;
-                while (i == 0 && !this.f7578o) {
+                while (i == 0 && !this.f8364o) {
                     i = eVar.a(bVar, (com.anythink.basead.exoplayer.e.j) null);
                 }
                 com.anythink.basead.exoplayer.k.a.b(i != 1);
-                this.f7577n = (int) (bVar.c() - this.f7526b.f8139e);
+                this.f8363n = (int) (bVar.c() - this.f8312b.f8925e);
                 af.a(this.i);
-                this.f7579p = true;
+                this.f8365p = true;
             } catch (Throwable th) {
-                this.f7577n = (int) (bVar.c() - this.f7526b.f8139e);
+                this.f8363n = (int) (bVar.c() - this.f8312b.f8925e);
                 throw th;
             }
         } catch (Throwable th2) {
@@ -72,16 +72,16 @@ public final class h extends a {
 
     @Override // com.anythink.basead.exoplayer.h.b.c
     public final long d() {
-        return this.f7577n;
+        return this.f8363n;
     }
 
     @Override // com.anythink.basead.exoplayer.h.b.i
     public final long e() {
-        return this.f7580j + this.f7574k;
+        return this.f8366j + this.f8360k;
     }
 
     @Override // com.anythink.basead.exoplayer.h.b.i
     public final boolean f() {
-        return this.f7579p;
+        return this.f8365p;
     }
 }

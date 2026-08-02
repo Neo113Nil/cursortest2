@@ -4,27 +4,27 @@ package F5;
 public final class i extends B7.c {
 
     /* renamed from: n, reason: collision with root package name */
-    public j f971n;
+    public j f997n;
 
     /* renamed from: u, reason: collision with root package name */
-    public /* synthetic */ Object f972u;
+    public /* synthetic */ Object f998u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final /* synthetic */ j f973v;
+    public final /* synthetic */ j f999v;
 
     /* renamed from: w, reason: collision with root package name */
-    public int f974w;
+    public int f1000w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public i(j jVar, B7.c cVar) {
         super(cVar);
-        this.f973v = jVar;
+        this.f999v = jVar;
     }
 
     @Override // B7.a
     public final Object invokeSuspend(Object obj) {
-        this.f972u = obj;
-        this.f974w |= Integer.MIN_VALUE;
-        return this.f973v.c(this);
+        this.f998u = obj;
+        this.f1000w |= Integer.MIN_VALUE;
+        return this.f999v.c(this);
     }
 }

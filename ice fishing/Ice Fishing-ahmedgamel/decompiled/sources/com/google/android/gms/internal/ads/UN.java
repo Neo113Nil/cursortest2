@@ -4,17 +4,17 @@ package com.google.android.gms.internal.ads;
 public final class UN {
 
     /* renamed from: a, reason: collision with root package name */
-    public final AbstractC3604n8 f27921a;
+    public final AbstractC3627n8 f28718a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f27922b;
+    public final int f28719b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final long f27923c;
+    public final long f28720c;
 
-    public UN(AbstractC3604n8 abstractC3604n8, int i, long j6) {
-        this.f27921a = abstractC3604n8;
-        this.f27922b = i;
-        this.f27923c = j6;
+    public UN(AbstractC3627n8 abstractC3627n8, int i, long j6) {
+        this.f28718a = abstractC3627n8;
+        this.f28719b = i;
+        this.f28720c = j6;
     }
 }

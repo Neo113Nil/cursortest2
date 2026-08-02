@@ -30,17 +30,17 @@ public interface B0 {
     @MetaExoPlayerCustomization("Added in D39791066")
     int A9K();
 
-    void AHI(int i, int i6, int i9, long j6, int i10);
+    void AHI(int i, int i4, int i6, long j6, int i9);
 
-    void AHK(int i, int i6, C06775z c06775z, long j6, int i9);
+    void AHK(int i, int i4, C06975z c06975z, long j6, int i6);
 
     void AHb();
 
     void AHh(int i, long j6);
 
-    void AHi(int i, boolean z3);
+    void AHi(int i, boolean z6);
 
-    void AJa(InterfaceC0791Az interfaceC0791Az, Handler handler);
+    void AJa(InterfaceC0811Az interfaceC0811Az, Handler handler);
 
     void AJb(Surface surface);
 

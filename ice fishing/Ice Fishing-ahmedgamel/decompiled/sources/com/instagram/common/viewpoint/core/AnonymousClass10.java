@@ -30,13 +30,13 @@ import java.util.List;
 
 /* renamed from: com.facebook.ads.redexgen.X.10, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public final class AnonymousClass10 extends AbstractC05581g {
+public final class AnonymousClass10 extends AbstractC05781g {
     public static boolean A0z;
     public static boolean A10;
     public static byte[] A11;
     public static String[] A12 = {"1NrdYD1", "e5CK9xPn181JbTmOtknpsRCTtEnfDjR7", "JOO2xDl09pGw2ctw4YX5NjUR9G0o3YSd", "78GGNN1Oy", "9AKZq2G4NCUeKdGegrXYJ0IAO08zLsd4", "iWBlsDv", "UMYjsOFgfK8VKq5PmkWlrwAU0Drwgr0y", "VHiTYYEOZZ1JgajrOOPlCJmFeSyZZTnO"};
     public static final int[] A13;
-    public C2203n5 A00;
+    public C2223n5 A00;
     public float A01;
     public float A02;
     public float A03;
@@ -67,8 +67,8 @@ public final class AnonymousClass10 extends AbstractC05581g {
     public MediaFormat A0S;
     public Surface A0T;
     public Surface A0U;
-    public C2353pW A0V;
-    public C0904Fm A0W;
+    public C2373pW A0V;
+    public C0924Fm A0W;
     public G2 A0X;
     public Object A0Y;
     public boolean A0Z;
@@ -91,7 +91,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
     public final int A0o;
     public final long A0p;
     public final Context A0q;
-    public final C0906Fo A0r;
+    public final C0926Fo A0r;
     public final G7 A0s;
     public final GA A0t;
     public final GP A0u;
@@ -108,51 +108,51 @@ public final class AnonymousClass10 extends AbstractC05581g {
     	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    public static Point A07(B3 b32, C2400qI c2400qI) throws BX {
-        boolean z3 = c2400qI.A0A > c2400qI.A0L;
-        int i = z3 ? c2400qI.A0A : c2400qI.A0L;
-        int i6 = z3 ? c2400qI.A0L : c2400qI.A0A;
-        float f3 = i6 / i;
-        for (int i9 : A13) {
-            int i10 = (int) (i9 * f3);
-            if (i9 <= i || i10 <= i6) {
+    public static Point A07(B3 b32, C2420qI c2420qI) throws BX {
+        boolean z6 = c2420qI.A0A > c2420qI.A0L;
+        int i = z6 ? c2420qI.A0A : c2420qI.A0L;
+        int i4 = z6 ? c2420qI.A0L : c2420qI.A0A;
+        float f2 = i4 / i;
+        for (int i6 : A13) {
+            int i9 = (int) (i6 * f2);
+            if (i6 <= i || i9 <= i4) {
                 return null;
             }
             if (C5C.A02 >= 21) {
-                int i11 = z3 ? i10 : i9;
-                if (!z3) {
-                    i9 = i10;
+                int i10 = z6 ? i9 : i6;
+                if (!z6) {
+                    i6 = i9;
                 }
-                Point A0N = b32.A0N(i11, i9);
-                if (b32.A0R(A0N.x, A0N.y, c2400qI.A01)) {
+                Point A0N = b32.A0N(i10, i6);
+                if (b32.A0R(A0N.x, A0N.y, c2420qI.A01)) {
                     return A0N;
                 }
             } else {
-                int A05 = C5C.A05(i9, 16) * 16;
-                int A052 = C5C.A05(i10, 16) * 16;
-                if (A05 * A052 <= C0792Ba.A00()) {
-                    int i12 = z3 ? A052 : A05;
-                    if (!z3) {
+                int A05 = C5C.A05(i6, 16) * 16;
+                int A052 = C5C.A05(i9, 16) * 16;
+                if (A05 * A052 <= C0812Ba.A00()) {
+                    int i11 = z6 ? A052 : A05;
+                    if (!z6) {
                         A05 = A052;
                     }
-                    return new Point(i12, A05);
+                    return new Point(i11, A05);
                 }
             }
         }
         return null;
     }
 
-    public static String A0B(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A11, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 7);
+    public static String A0B(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A11, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 7);
         }
         return new String(copyOfRange);
     }
 
     public static void A0P() {
-        A11 = new byte[]{96, 101, 95, 96, 96, 102, 96, 98, 92, 98, 92, 95, -64, -80, -81, -84, -74, -81, -59, -74, -90, -91, -94, -84, -91, -63, -106, -122, -117, -123, -122, 79, c.f16317b, 62, c.f16318c, 68, 111, 66, 62, 88, 78, 71, 71, 71, 68, 120, -113, -123, 126, 126, 126, -66, -70, -61, -63, -122, 124, 117, 118, 117, -90, 121, 125, 105, 95, 88, 90, 88, -119, 92, 96, -77, -72, -58, -77, 93, 98, 112, 106, -123, -105, -103, -105, -93, -100, 116, 116, -123, -120, 99, 117, 119, 117, -127, 122, 82, 82, 99, 102, 99, 95, 113, 115, 113, 125, 118, 78, 78, 95, 98, 97, 78, 96, 98, 96, 108, 101, 61, 61, 78, 81, 108, c.f16318c, -121, -76, -86, -72, -75, -77, -89, -66, 102, -121, 120, 124, -119, 122, -114, 78, 126, -126, 110, 93, 124, -124, 114, Byte.MAX_VALUE, 90, -71, -21, -19, -21, -41, -46, -70, -83, -88, -88, -61, -60, -76, -24, -27, -44, -46, -63, -30, -25, -40, -46, -91, -65, -55, -66, -64, -56, -86, -82, -43, -67, -51, -68, -47, -60, -68, -101, -81, -58, -101, -83, -85, -84, -80, Byte.MAX_VALUE, -113, 126, -109, -122, 126, -100, 126, -111, -109, 111, -108, -92, -109, -88, -101, -109, -79, -109, -90, -88, -123, -79, -122, -99, -89, -107, -123, -110, 122, 120, 121, 120, -95, -117, 114, 116, 118, -125, 123, 100, 105, 99, 108, 106, 119, c.f16316a, 95, 90, -122, 112, 87, 87, 85, -127, 118, 119, 117, 50, Byte.MAX_VALUE, 115, -118, 50, -124, 119, -123, -127, 126, -121, -122, 123, -127, c.f16316a, 50, 115, 118, 124, -121, -123, -122, 119, 118, 50, -122, -127, 76, 50, -71, -27, -29, -33, -27, -55, -89, -126, 114, 115, 113, 112, -103, -96, -87, -101, -107, -77, -107, -121, -77, -92, -58, -61, -59, -52, -43, -57, -63, -33, -50, -17, -12, -27, -54, -47, -38, -52, -58, -28, -43, -9, -18, -14, 77, 84, 93, 79, 73, 103, 90, 105, -127, 103, 96, -93, -44, -61, -48, -79, -46, -65, -48, -67, -79, -62, -81, -83, -83, -83, -76, -95, -97, -97, -95, 111, 92, 90, 90, 95, 90, 71, 70, 69, 69, 78, 59, 58, 57, 59, -106, -125, -126, -127, -123, 84, 65, 65, c.f16318c, c.f16318c, -107, -80, -69, -62, -76, -110, -73, -76, -78, -70, 111, -86, -69, -76, -74, -80, -78, -56, -107, -63, -80, -68, -76, -94, -72, -55, -76, 123, 111, 94, 96, 102, 101, 92, 92, 118, 94, 89, 99, 78, 74, 77, 71, -98, -96, -90, -91, -100, -100, -74, -86, -82, -82, -120, -115, -121, -112, -91, -89, -83, -84, -93, -93, -67, -79, -75, -75, -113, -108, -112, -107, 101, 103, 109, 108, 99, 99, 125, 113, 117, 117, 79, 84, 81, 79, -113, -111, -105, -106, -115, -115, -89, -97, -118, -108, 125, Byte.MAX_VALUE, 120, c.f16316a, 102, 104, 110, 109, 100, 100, 126, 118, 97, 107, 86, 82, 85, 84, -118, -116, -110, -111, -120, -120, -94, -102, -123, -113, 122, 120, 116, 124, -105, -71, -97, -98, -107, -107, -81, -109, -110, -100, -121, -123, -127, -125, -104, -70, -96, -97, -106, -106, -80, -104, -109, -99, -120, -124, -126, -118, 99, 112, 92, 114, 96, 100, 59, 105, 115, 111, 72, 103, 77, 84, 114, -127, 108, 118, 120, 87, 114, -125, -110, 126, 124, -120, 104, -125, 81, 96, 78, 86, 85, -97, -82, -83, -91, -86, -124, -97, -109, -94, -94, -116, -98, 120, -109, -89, -52, -60, -57, -52, -57, -42, -117, -74, -109, -107, -112, 93, 90, 109, -81, -72, -77, -110, -79, -105, -106, -70, -92, -97, -48, -93, -97, 103, 98, 72, 102, 79, 78, 75, 122, 117, 91, 123, 96, 99, 94, 99, 106, 68, 76, 71, 72, 78, -69, -44, -35, -34, -27, -34, -113, -80, -95, -97, -96, -91, -47, -94, -97, 125, -106, -97, -96, -89, -96, 81, 124, 98, 97, -110, 101, 97, -56, -31, -22, -21, -14, -21, -100, -57, -76, 117, 93, -117, 118, 110, 114, -125, 126, -120, 118, 94, 103, 114, 80, 84, 108, 107, 112, 104, 74, 118, 107, 108, 106, 93, 112, 107, 108, 118, 89, 108, 117, 107, 108, 121, 108, 121, -90, -56, -51, -56, -98, -117, -127, -115, -96, -122, -91, -83, -98, -126, 125, -97, -92, -97, 119, 99, -83, -75, -88, -93, -88, -96, 85, 95, 60, 59, 56, 81, -99, -89, -124, -122, -126, -103, -109, -111, -100, 114, -85, -77, -77, -85, -80, -87, -85, -54, -63, -84, -56, -47, -49, -111, -80, -51, -77, -75, -82, 126, 102, 99, 91, 77, 61, 56, 65, 66, 59, 88, 118, 109, 116, 91, 88, 94, -88, -97, -90, -114, -119, -120, -125, 122, -127, 105, 100, 100, -76, -80, -87, 121, 123, 120, 96, 124, -71, -47, -54, -41, -35, -40, -42, -97, -107, -82, -67, -86, -79, 101, -91, -66, -51, -66, -119, -126, -116, -76, -120, -100, -81, -56, -41, -56, -108, -116, -112, -113, -66, -109, -90, 123, 93, 95, 90, -69, -98, -100, -96, -102, -103, 124, 122, Byte.MAX_VALUE, 107, 78, 77, 75, 74, -126, 102, 124, 120, 92, 97, -125, 112, -118, c.f16316a, -123, -116, 101, -50, -31, -32, -23, -27, -100, -80, -44, -79, -60, -61, -52, -56, Byte.MAX_VALUE, -83, -50, -45, -60, Byte.MAX_VALUE, -111, 113, -124, -125, -116, -120, c.f16318c, 109, -114, -109, -124, c.f16318c, 82, -105, -86, -77, -87, -86, -73, 101, -76, -70, -71, -75, -70, -71, 101, -85, -90, -82, -79, -86, -87, -78, -59, -45, -49, -52, -43, -44, -55, -49, -50, -45, c.f16316a, -43, -50, -53, -50, -49, -41, -50, -114, c.f16316a, -93, -49, -60, -59, -61, c.f16316a, -51, -63, -40, c.f16316a, -46, -59, -45, -49, -52, -43, -44, -55, -49, -50, -102, c.f16316a, -119, -125, 99, 125, 111, 105, 107, 102, -90, -96, c.f16316a, -99, -123, -125, -125, -102, -88, -83, -89, -121, -92, -116, -118, -118, -89, -118, -124, 100, -123, 112, 104, 103, -119, 107, 126, c.f16316a, 
-        114, 108, 125, 75, 126, 100, -62, -59, -65, -100, -77, -61, -59, -96, -92, 118, -113, -124, -105, -120, -126, 115, -107, -110, -42, -14, -15, -4, -93, -41, -28, -27, -17, -24, -9, -93, -42, 126, 108, 93, 87, 97, 93, 90, 112, 126, 108, 93, 87, 97, 93, 90, -126, -72, -90, -105, -111, -100, -103, -108, -86, -116, 122, 107, 101, 112, 109, 104, -123, -77, -50, -50, Byte.MAX_VALUE, -52, -64, -51, -40, Byte.MAX_VALUE, -46, -45, -47, -60, -64, -52, Byte.MAX_VALUE, -62, -57, -64, -51, -58, -60, -46, -117, Byte.MAX_VALUE, -46, -50, Byte.MAX_VALUE, -61, -47, -50, -49, -49, -56, -51, -58, Byte.MAX_VALUE, -50, -59, -59, -46, -60, -45, -103, Byte.MAX_VALUE, -89, -126, 107, 71, 72, 92, 87, 112, 79, 117, 114, 87, 87, 79, -73, -110, -66, -89, -86, 97, 78, 59, 97, -38, -42, -77, -72, -72, -75, -82, -123, -122, -77, -92, -90, -93, -90, -124, 124, -92, -83, 112, -85, -101, -81, -98, -93, -87, 103, -83, -97, -83, -83, -93, -87, -88, 103, -93, -98, 120, -116, -117, -122, 68, 125, -119, 122, -92, 115, 111, -94, -81, -91, -77, -80, -86, -91, 111, -94, -73, 114, 110, -91, -94, -73, 114, -91, 111, -91, -90, -92, -80, -91, -90, -77, -24, -9, -12, -11, -78, -25, -12, -7, -7, -12, -14, 108, 123, 120, 121, 54, 117, 110, 111, 125, -48, -33, -36, -35, -102, -33, -42, -44, -43, -31, -95, -80, -83, -82, 107, -78, -83, -82, -28, -9, -78, 110, -127, 62, -51, -54, -41, -48, -54, -43, -52, -51, -54, -23, -9, -12, -11, -37, -18, -23, -22, -12, -57, -6, -21, -21, -22, -9, 114, 120, 123, -60, -51, -47, -46, -61, -48, -38, -26, -43, -31, -39, -95, -26, -43, -24, -39, -53, -38, -52, -38, -55, -44, -53, -56, -56, -53, -48, -72, -75, -71, -73, -72, -60, -65, -53, -70, -74, -68, -116, -115, -60, -61, -74, -69, -53, -52, -61, -81, -66, -120, -109, -116, 116, -113, -94, 114, 105, 108, 106, 115, 108, 107, 118, 118, 66, 65, 61, c.f16318c, 105, 67, 66, 58, c.f16317b, -46, -37, -46, -36, -97, -103, -52, -41, -56, -49, -62, -74, -105, -108, -104, 96, -90, -102, -94, -109, -105, -100, -95, -95, -105, -86, -101, -101, 100, 99, 101, 95, 120, 113, 107, -124, 66, -65, -62, -54, c.f16316a, -65, -76, -57, -72, -63, -74, -52, -56, -115, 123, -55, -54, -49, -64, 125, 113, 126, 126, 121, 126, 119, -17, -29, -12, -21, -16, -15, -31, -24, -115, -127, -104, 77, -120, -123, -119, -121, -120, -108, -27, -39, -16, -91, -31, -26, -24, -19, -20, -91, -21, -31, -14, -35, 117, 105, c.f16316a, 53, Byte.MAX_VALUE, 113, 108, 124, 112, 124, 119, -75, -79, -84, -73, -57, -61, -57, -65, -102, -115, -103, -115, -96, -108, -110, -115, -121, -113, -112, -123, -103, -105, -125, -118, -89, 105, 104, 105, -113, c.f16316a, -115, -124, -117, -117, 126, -125, -74, -89, -76, -85, -78, -78, -91, -86, -78, -18, -33, -20, -29, -22, -22, -35, -30, -15, -91, -106, -93, -102, -95, -95, -108, -103, -87, -24, -22, -31, -25, -22, -31, -20, -15, -84, -97, -90, -97, -101, -83, -97, -119, -81, -82, -86, -81, -82, 124, -81, -96, -96, -97, -84, c.f16316a, 125, -126, 111, -126, 119, 125, 124, 59, 114, 115, 117, c.f16316a, 115, 115, -127, -107, 91, 82, 87, -102, 82, 83, 90, -58, -76, -63, -57, -62, -63, -68, -105, -113, -115, -108, 122, -115, -120, -119, -109, 102, -103, -118, -118, -119, -106, -14, -33, -25, -30, -19, -35, -16, -19, -11, -119, 120, -127, 116, 122, -118, -84, -83, -90, -90, -99, -92, -99, -100, 101, -88, -92, -103, -79, -102, -103, -101, -93, -90, -107, -94, -98, -107, -107, -113, 125, 101, -54, -67, -72, -71, -61, -125, -121, -69, -60, -60, -86, -99, -104, -103, -93, 99, -107, -86, 100, 101, -40, -53, -58, -57, -47, -111, -61, -40, -59, -124, 119, 114, 115, 125, 61, 114, 125, 122, 112, -121, 59, -124, 119, -127, 119, 125, 124, -37, -50, -55, -54, -44, -108, -51, -54, -37, -56, -109, -122, -127, -126, -116, 76, -118, -115, 81, -109, 74, -126, -112, -33, -46, -51, -50, -40, -104, -31, -106, -33, -41, -51, -105, -40, -41, -101, -105, -33, -39, -95, -22, -35, -40, -39, -29, -93, -20, -95, -22, -30, -40, -94, -29, -30, -90, -94, -22, -28, -83, -76, -98, -79, -80, -84, -85, -42, -57, -40, -47, -60, -61, -51, -65, -70, -54, -66, -88, -96, -96, -107, -92, -112, -105, -89, -97, -97, -108, -93, -113, -106, -98, -45};
+        A11 = new byte[]{96, 101, 95, 96, 96, 102, 96, 98, 92, 98, 92, 95, -64, -80, -81, -84, -74, -81, -59, -74, -90, -91, -94, -84, -91, -63, -106, -122, -117, -123, -122, 79, c.f17104b, 62, c.f17105c, 68, 111, 66, 62, 88, 78, 71, 71, 71, 68, 120, -113, -123, 126, 126, 126, -66, -70, -61, -63, -122, 124, 117, 118, 117, -90, 121, 125, 105, 95, 88, 90, 88, -119, 92, 96, -77, -72, -58, -77, 93, 98, 112, 106, -123, -105, -103, -105, -93, -100, 116, 116, -123, -120, 99, 117, 119, 117, -127, 122, 82, 82, 99, 102, 99, 95, 113, 115, 113, 125, 118, 78, 78, 95, 98, 97, 78, 96, 98, 96, 108, 101, 61, 61, 78, 81, 108, c.f17105c, -121, -76, -86, -72, -75, -77, -89, -66, 102, -121, 120, 124, -119, 122, -114, 78, 126, -126, 110, 93, 124, -124, 114, Byte.MAX_VALUE, 90, -71, -21, -19, -21, -41, -46, -70, -83, -88, -88, -61, -60, -76, -24, -27, -44, -46, -63, -30, -25, -40, -46, -91, -65, -55, -66, -64, -56, -86, -82, -43, -67, -51, -68, -47, -60, -68, -101, -81, -58, -101, -83, -85, -84, -80, Byte.MAX_VALUE, -113, 126, -109, -122, 126, -100, 126, -111, -109, 111, -108, -92, -109, -88, -101, -109, -79, -109, -90, -88, -123, -79, -122, -99, -89, -107, -123, -110, 122, 120, 121, 120, -95, -117, 114, 116, 118, -125, 123, 100, 105, 99, 108, 106, 119, c.f17103a, 95, 90, -122, 112, 87, 87, 85, -127, 118, 119, 117, 50, Byte.MAX_VALUE, 115, -118, 50, -124, 119, -123, -127, 126, -121, -122, 123, -127, c.f17103a, 50, 115, 118, 124, -121, -123, -122, 119, 118, 50, -122, -127, 76, 50, -71, -27, -29, -33, -27, -55, -89, -126, 114, 115, 113, 112, -103, -96, -87, -101, -107, -77, -107, -121, -77, -92, -58, -61, -59, -52, -43, -57, -63, -33, -50, -17, -12, -27, -54, -47, -38, -52, -58, -28, -43, -9, -18, -14, 77, 84, 93, 79, 73, 103, 90, 105, -127, 103, 96, -93, -44, -61, -48, -79, -46, -65, -48, -67, -79, -62, -81, -83, -83, -83, -76, -95, -97, -97, -95, 111, 92, 90, 90, 95, 90, 71, 70, 69, 69, 78, 59, 58, 57, 59, -106, -125, -126, -127, -123, 84, 65, 65, c.f17105c, c.f17105c, -107, -80, -69, -62, -76, -110, -73, -76, -78, -70, 111, -86, -69, -76, -74, -80, -78, -56, -107, -63, -80, -68, -76, -94, -72, -55, -76, 123, 111, 94, 96, 102, 101, 92, 92, 118, 94, 89, 99, 78, 74, 77, 71, -98, -96, -90, -91, -100, -100, -74, -86, -82, -82, -120, -115, -121, -112, -91, -89, -83, -84, -93, -93, -67, -79, -75, -75, -113, -108, -112, -107, 101, 103, 109, 108, 99, 99, 125, 113, 117, 117, 79, 84, 81, 79, -113, -111, -105, -106, -115, -115, -89, -97, -118, -108, 125, Byte.MAX_VALUE, 120, c.f17103a, 102, 104, 110, 109, 100, 100, 126, 118, 97, 107, 86, 82, 85, 84, -118, -116, -110, -111, -120, -120, -94, -102, -123, -113, 122, 120, 116, 124, -105, -71, -97, -98, -107, -107, -81, -109, -110, -100, -121, -123, -127, -125, -104, -70, -96, -97, -106, -106, -80, -104, -109, -99, -120, -124, -126, -118, 99, 112, 92, 114, 96, 100, 59, 105, 115, 111, 72, 103, 77, 84, 114, -127, 108, 118, 120, 87, 114, -125, -110, 126, 124, -120, 104, -125, 81, 96, 78, 86, 85, -97, -82, -83, -91, -86, -124, -97, -109, -94, -94, -116, -98, 120, -109, -89, -52, -60, -57, -52, -57, -42, -117, -74, -109, -107, -112, 93, 90, 109, -81, -72, -77, -110, -79, -105, -106, -70, -92, -97, -48, -93, -97, 103, 98, 72, 102, 79, 78, 75, 122, 117, 91, 123, 96, 99, 94, 99, 106, 68, 76, 71, 72, 78, -69, -44, -35, -34, -27, -34, -113, -80, -95, -97, -96, -91, -47, -94, -97, 125, -106, -97, -96, -89, -96, 81, 124, 98, 97, -110, 101, 97, -56, -31, -22, -21, -14, -21, -100, -57, -76, 117, 93, -117, 118, 110, 114, -125, 126, -120, 118, 94, 103, 114, 80, 84, 108, 107, 112, 104, 74, 118, 107, 108, 106, 93, 112, 107, 108, 118, 89, 108, 117, 107, 108, 121, 108, 121, -90, -56, -51, -56, -98, -117, -127, -115, -96, -122, -91, -83, -98, -126, 125, -97, -92, -97, 119, 99, -83, -75, -88, -93, -88, -96, 85, 95, 60, 59, 56, 81, -99, -89, -124, -122, -126, -103, -109, -111, -100, 114, -85, -77, -77, -85, -80, -87, -85, -54, -63, -84, -56, -47, -49, -111, -80, -51, -77, -75, -82, 126, 102, 99, 91, 77, 61, 56, 65, 66, 59, 88, 118, 109, 116, 91, 88, 94, -88, -97, -90, -114, -119, -120, -125, 122, -127, 105, 100, 100, -76, -80, -87, 121, 123, 120, 96, 124, -71, -47, -54, -41, -35, -40, -42, -97, -107, -82, -67, -86, -79, 101, -91, -66, -51, -66, -119, -126, -116, -76, -120, -100, -81, -56, -41, -56, -108, -116, -112, -113, -66, -109, -90, 123, 93, 95, 90, -69, -98, -100, -96, -102, -103, 124, 122, Byte.MAX_VALUE, 107, 78, 77, 75, 74, -126, 102, 124, 120, 92, 97, -125, 112, -118, c.f17103a, -123, -116, 101, -50, -31, -32, -23, -27, -100, -80, -44, -79, -60, -61, -52, -56, Byte.MAX_VALUE, -83, -50, -45, -60, Byte.MAX_VALUE, -111, 113, -124, -125, -116, -120, c.f17105c, 109, -114, -109, -124, c.f17105c, 82, -105, -86, -77, -87, -86, -73, 101, -76, -70, -71, -75, -70, -71, 101, -85, -90, -82, -79, -86, -87, -78, -59, -45, -49, -52, -43, -44, -55, -49, -50, -45, c.f17103a, -43, -50, -53, -50, -49, -41, -50, -114, c.f17103a, -93, -49, -60, -59, -61, c.f17103a, -51, -63, -40, c.f17103a, -46, -59, -45, -49, -52, -43, -44, -55, -49, -50, -102, c.f17103a, -119, -125, 99, 125, 111, 105, 107, 102, -90, -96, c.f17103a, -99, -123, -125, -125, -102, -88, -83, -89, -121, -92, -116, -118, -118, -89, -118, -124, 100, -123, 112, 104, 103, -119, 107, 126, c.f17103a, 
+        114, 108, 125, 75, 126, 100, -62, -59, -65, -100, -77, -61, -59, -96, -92, 118, -113, -124, -105, -120, -126, 115, -107, -110, -42, -14, -15, -4, -93, -41, -28, -27, -17, -24, -9, -93, -42, 126, 108, 93, 87, 97, 93, 90, 112, 126, 108, 93, 87, 97, 93, 90, -126, -72, -90, -105, -111, -100, -103, -108, -86, -116, 122, 107, 101, 112, 109, 104, -123, -77, -50, -50, Byte.MAX_VALUE, -52, -64, -51, -40, Byte.MAX_VALUE, -46, -45, -47, -60, -64, -52, Byte.MAX_VALUE, -62, -57, -64, -51, -58, -60, -46, -117, Byte.MAX_VALUE, -46, -50, Byte.MAX_VALUE, -61, -47, -50, -49, -49, -56, -51, -58, Byte.MAX_VALUE, -50, -59, -59, -46, -60, -45, -103, Byte.MAX_VALUE, -89, -126, 107, 71, 72, 92, 87, 112, 79, 117, 114, 87, 87, 79, -73, -110, -66, -89, -86, 97, 78, 59, 97, -38, -42, -77, -72, -72, -75, -82, -123, -122, -77, -92, -90, -93, -90, -124, 124, -92, -83, 112, -85, -101, -81, -98, -93, -87, 103, -83, -97, -83, -83, -93, -87, -88, 103, -93, -98, 120, -116, -117, -122, 68, 125, -119, 122, -92, 115, 111, -94, -81, -91, -77, -80, -86, -91, 111, -94, -73, 114, 110, -91, -94, -73, 114, -91, 111, -91, -90, -92, -80, -91, -90, -77, -24, -9, -12, -11, -78, -25, -12, -7, -7, -12, -14, 108, 123, 120, 121, 54, 117, 110, 111, 125, -48, -33, -36, -35, -102, -33, -42, -44, -43, -31, -95, -80, -83, -82, 107, -78, -83, -82, -28, -9, -78, 110, -127, 62, -51, -54, -41, -48, -54, -43, -52, -51, -54, -23, -9, -12, -11, -37, -18, -23, -22, -12, -57, -6, -21, -21, -22, -9, 114, 120, 123, -60, -51, -47, -46, -61, -48, -38, -26, -43, -31, -39, -95, -26, -43, -24, -39, -53, -38, -52, -38, -55, -44, -53, -56, -56, -53, -48, -72, -75, -71, -73, -72, -60, -65, -53, -70, -74, -68, -116, -115, -60, -61, -74, -69, -53, -52, -61, -81, -66, -120, -109, -116, 116, -113, -94, 114, 105, 108, 106, 115, 108, 107, 118, 118, 66, 65, 61, c.f17105c, 105, 67, 66, 58, c.f17104b, -46, -37, -46, -36, -97, -103, -52, -41, -56, -49, -62, -74, -105, -108, -104, 96, -90, -102, -94, -109, -105, -100, -95, -95, -105, -86, -101, -101, 100, 99, 101, 95, 120, 113, 107, -124, 66, -65, -62, -54, c.f17103a, -65, -76, -57, -72, -63, -74, -52, -56, -115, 123, -55, -54, -49, -64, 125, 113, 126, 126, 121, 126, 119, -17, -29, -12, -21, -16, -15, -31, -24, -115, -127, -104, 77, -120, -123, -119, -121, -120, -108, -27, -39, -16, -91, -31, -26, -24, -19, -20, -91, -21, -31, -14, -35, 117, 105, c.f17103a, 53, Byte.MAX_VALUE, 113, 108, 124, 112, 124, 119, -75, -79, -84, -73, -57, -61, -57, -65, -102, -115, -103, -115, -96, -108, -110, -115, -121, -113, -112, -123, -103, -105, -125, -118, -89, 105, 104, 105, -113, c.f17103a, -115, -124, -117, -117, 126, -125, -74, -89, -76, -85, -78, -78, -91, -86, -78, -18, -33, -20, -29, -22, -22, -35, -30, -15, -91, -106, -93, -102, -95, -95, -108, -103, -87, -24, -22, -31, -25, -22, -31, -20, -15, -84, -97, -90, -97, -101, -83, -97, -119, -81, -82, -86, -81, -82, 124, -81, -96, -96, -97, -84, c.f17103a, 125, -126, 111, -126, 119, 125, 124, 59, 114, 115, 117, c.f17103a, 115, 115, -127, -107, 91, 82, 87, -102, 82, 83, 90, -58, -76, -63, -57, -62, -63, -68, -105, -113, -115, -108, 122, -115, -120, -119, -109, 102, -103, -118, -118, -119, -106, -14, -33, -25, -30, -19, -35, -16, -19, -11, -119, 120, -127, 116, 122, -118, -84, -83, -90, -90, -99, -92, -99, -100, 101, -88, -92, -103, -79, -102, -103, -101, -93, -90, -107, -94, -98, -107, -107, -113, 125, 101, -54, -67, -72, -71, -61, -125, -121, -69, -60, -60, -86, -99, -104, -103, -93, 99, -107, -86, 100, 101, -40, -53, -58, -57, -47, -111, -61, -40, -59, -124, 119, 114, 115, 125, 61, 114, 125, 122, 112, -121, 59, -124, 119, -127, 119, 125, 124, -37, -50, -55, -54, -44, -108, -51, -54, -37, -56, -109, -122, -127, -126, -116, 76, -118, -115, 81, -109, 74, -126, -112, -33, -46, -51, -50, -40, -104, -31, -106, -33, -41, -51, -105, -40, -41, -101, -105, -33, -39, -95, -22, -35, -40, -39, -29, -93, -20, -95, -22, -30, -40, -94, -29, -30, -90, -94, -22, -28, -83, -76, -98, -79, -80, -84, -85, -42, -57, -40, -47, -60, -61, -51, -65, -70, -54, -66, -88, -96, -96, -107, -92, -112, -105, -89, -97, -97, -108, -93, -113, -106, -98, -45};
     }
 
     static {
@@ -161,36 +161,36 @@ public final class AnonymousClass10 extends AbstractC05581g {
     }
 
     @MetaExoPlayerCustomization(type = {"FEATURE_LOGIC"}, value = "D69547806: Only become ready once we have a surface")
-    public AnonymousClass10(Context context, C1996jQ c1996jQ, MediaCodecRendererMetaParameters mediaCodecRendererMetaParameters, BT bt, long j6, A6 a62, boolean z3, boolean z6, Handler handler, GQ gq, int i, int i6, int i9, int i10, int i11) {
-        super(2, c1996jQ, mediaCodecRendererMetaParameters, bt, a62, z3, z6, i9, i10);
+    public AnonymousClass10(Context context, C2016jQ c2016jQ, MediaCodecRendererMetaParameters mediaCodecRendererMetaParameters, BT bt, long j6, A6 a62, boolean z6, boolean z9, Handler handler, GQ gq, int i, int i4, int i6, int i9, int i10) {
+        super(2, c2016jQ, mediaCodecRendererMetaParameters, bt, a62, z6, z9, i6, i9);
         this.A0e = true;
         this.A0Z = true;
-        boolean z9 = false;
+        boolean z10 = false;
         this.A0f = false;
-        this.A0K = b.f6382b;
+        this.A0K = b.f7168b;
         this.A0c = false;
         this.A0h = false;
-        this.A0w = MetaExoPlayerUpgradeConfig.A03(EnumC2000jX.A1v);
-        this.A0h = MetaExoPlayerUpgradeConfig.A03(EnumC2000jX.A0w);
+        this.A0w = MetaExoPlayerUpgradeConfig.A03(EnumC2020jX.A1v);
+        this.A0h = MetaExoPlayerUpgradeConfig.A03(EnumC2020jX.A0w);
         this.A0p = j6;
         this.A0l = i;
-        this.A0m = i6;
+        this.A0m = i4;
         this.A0q = context.getApplicationContext();
-        this.A0n = i11;
+        this.A0n = i10;
         this.A0t = new GA(context);
         this.A0s = new G7(this.A0q);
         this.A0u = new GP(handler, gq);
-        this.A0r = new C0906Fo(this.A0s, this, this.A0w);
+        this.A0r = new C0926Fo(this.A0s, this, this.A0w);
         this.A0v = A0i();
         if (C5C.A02 == 29 && C5C.A06.startsWith(A0B(811, 6, 62))) {
-            z9 = true;
+            z10 = true;
         }
-        this.A0a = z9;
+        this.A0a = z10;
         this.A0x = new long[10];
         this.A0y = new long[10];
-        this.A0R = b.f6382b;
-        this.A0O = b.f6382b;
-        this.A0M = b.f6382b;
+        this.A0R = b.f7168b;
+        this.A0O = b.f7168b;
+        this.A0M = b.f7168b;
         this.A08 = -1;
         this.A06 = -1;
         this.A01 = -1.0f;
@@ -199,21 +199,21 @@ public final class AnonymousClass10 extends AbstractC05581g {
         A0F();
     }
 
-    private int A00(C2400qI c2400qI) {
-        if (c2400qI.A0B != -1) {
+    private int A00(C2420qI c2420qI) {
+        if (c2420qI.A0B != -1) {
             int i = 0;
-            int i6 = c2400qI.A0X.size();
-            for (int initializationDataCount = 0; initializationDataCount < i6; initializationDataCount++) {
-                int totalInitializationDataSize = c2400qI.A0X.get(initializationDataCount).length;
+            int i4 = c2420qI.A0X.size();
+            for (int initializationDataCount = 0; initializationDataCount < i4; initializationDataCount++) {
+                int totalInitializationDataSize = c2420qI.A0X.get(initializationDataCount).length;
                 i += totalInitializationDataSize;
             }
-            int totalInitializationDataSize2 = c2400qI.A0B;
+            int totalInitializationDataSize2 = c2420qI.A0B;
             return totalInitializationDataSize2 + i;
         }
-        int i9 = c2400qI.A0L;
-        String str = c2400qI.A0W;
-        int width = c2400qI.A0A;
-        return A02(str, i9, width);
+        int i6 = c2420qI.A0L;
+        String str = c2420qI.A0W;
+        int width = c2420qI.A0A;
+        return A02(str, i6, width);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:44:0x00fb, code lost:
@@ -242,7 +242,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
         r0 = A0B(1153, 1, 64);
         r5 = r5.append(r0).toString();
         r0 = A0B(682, 23, 0);
-        com.instagram.common.viewpoint.core.AbstractC06324g.A04(r0, r5);
+        com.instagram.common.viewpoint.core.AbstractC06524g.A04(r0, r5);
      */
     /* JADX WARN: Code restructure failed: missing block: B:48:0x016d, code lost:
     
@@ -299,38 +299,38 @@ public final class AnonymousClass10 extends AbstractC05581g {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static int A01(BT bt, C2400qI c2400qI, boolean z3) throws BX {
-        String mimeType = c2400qI.A0W;
+    public static int A01(BT bt, C2420qI c2420qI, boolean z6) throws BX {
+        String mimeType = c2420qI.A0W;
         int adaptiveSupport = 0;
         if (!C3J.A0F(mimeType)) {
             return 0;
         }
         boolean decoderCapable = true;
-        boolean requiresSecureDecryption = c2400qI.A0O != null;
-        String mimeType2 = c2400qI.A0W;
+        boolean requiresSecureDecryption = c2420qI.A0O != null;
+        String mimeType2 = c2420qI.A0W;
         List<B3> A7o = bt.A7o(mimeType2, requiresSecureDecryption, false);
-        if (A7o.isEmpty() && z3) {
-            A7o = A0C(bt, c2400qI);
+        if (A7o.isEmpty() && z6) {
+            A7o = A0C(bt, c2420qI);
         }
         if (requiresSecureDecryption && A7o.isEmpty()) {
             if (!requiresSecureDecryption) {
                 return 1;
             }
-            String mimeType3 = c2400qI.A0W;
+            String mimeType3 = c2420qI.A0W;
             if (bt.A7o(mimeType3, false, false).isEmpty()) {
                 return 1;
             }
             return 2;
         }
         if (A7o.isEmpty()) {
-            return AbstractC07127i.A00(1);
+            return AbstractC07327i.A00(1);
         }
-        if (!AbstractC05581g.A1G(c2400qI)) {
-            return AbstractC07127i.A00(2);
+        if (!AbstractC05781g.A1G(c2420qI)) {
+            return AbstractC07327i.A00(2);
         }
         B3 b32 = A7o.get(0);
-        boolean A0S = b32.A0S(c2400qI);
-        if (A0S && c2400qI.A0L > 0 && c2400qI.A0A > 0) {
+        boolean A0S = b32.A0S(c2420qI);
+        if (A0S && c2420qI.A0L > 0 && c2420qI.A0A > 0) {
             int i = C5C.A02;
             String mimeType4 = A12[3];
             if (mimeType4.length() == 21) {
@@ -340,10 +340,10 @@ public final class AnonymousClass10 extends AbstractC05581g {
             strArr[4] = "IH389xfTqQddwzM1XHaKnp7MZCz6cb7i";
             strArr[7] = "af13jltpF5ZHHZjQxHJ609Zz958wUZpm";
             if (i >= 21) {
-                A0S = b32.A0R(c2400qI.A0L, c2400qI.A0A, c2400qI.A01);
+                A0S = b32.A0R(c2420qI.A0L, c2420qI.A0A, c2420qI.A01);
             } else {
-                int i6 = c2400qI.A0L * c2400qI.A0A;
-                int A00 = C0792Ba.A00();
+                int i4 = c2420qI.A0L * c2420qI.A0A;
+                int A00 = C0812Ba.A00();
                 String mimeType5 = A12[3];
                 if (mimeType5.length() != 21) {
                     A12[6] = "ecceu4zvNIhSM2cVW4sHEkLyyuMr8ggY";
@@ -354,7 +354,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
                 }
             }
         }
-        boolean z6 = b32.A04;
+        boolean z9 = b32.A04;
         if (A12[2].charAt(6) != 'n') {
             A12[3] = "9b4CG0tnJeiPU0k4PARWVGoy4qv";
         }
@@ -386,11 +386,11 @@ public final class AnonymousClass10 extends AbstractC05581g {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static int A02(String str, int i, int i6) {
+    public static int A02(String str, int i, int i4) {
         char c9;
-        int i9;
+        int i6;
         int maxPixels;
-        if (i == -1 || i6 == -1) {
+        if (i == -1 || i4 == -1) {
             return -1;
         }
         switch (str.hashCode()) {
@@ -400,35 +400,35 @@ public final class AnonymousClass10 extends AbstractC05581g {
                     switch (c9) {
                         case 0:
                         case 1:
-                            i9 = i * i6;
+                            i6 = i * i4;
                             maxPixels = 2;
                             break;
                         case 2:
                             if (A0B(179, 14, 116).equals(C5C.A06)) {
                                 return -1;
                             }
-                            i9 = C5C.A05(i, 16) * C5C.A05(i6, 16) * 16 * 16;
+                            i6 = C5C.A05(i, 16) * C5C.A05(i4, 16) * 16 * 16;
                             maxPixels = 2;
                             break;
                         case 3:
-                            i9 = i * i6;
+                            i6 = i * i4;
                             maxPixels = 2;
                             break;
                         case 4:
                         case 5:
-                            i9 = i * i6;
+                            i6 = i * i4;
                             maxPixels = 4;
                             break;
                         default:
                             return -1;
                     }
-                    int minCompressionRatio = i9 * 3;
+                    int minCompressionRatio = i6 * 3;
                     return minCompressionRatio / (maxPixels * 2);
                 }
                 c9 = 65535;
                 switch (c9) {
                 }
-                int minCompressionRatio2 = i9 * 3;
+                int minCompressionRatio2 = i6 * 3;
                 return minCompressionRatio2 / (maxPixels * 2);
             case -1662541442:
                 if (A12[6].charAt(29) == 'x') {
@@ -442,7 +442,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
                 }
                 switch (c9) {
                 }
-                int minCompressionRatio22 = i9 * 3;
+                int minCompressionRatio22 = i6 * 3;
                 return minCompressionRatio22 / (maxPixels * 2);
             case 1187890754:
                 boolean equals = str.equals(A0B(1692, 13, 22));
@@ -454,85 +454,85 @@ public final class AnonymousClass10 extends AbstractC05581g {
                     c9 = 1;
                     switch (c9) {
                     }
-                    int minCompressionRatio222 = i9 * 3;
+                    int minCompressionRatio222 = i6 * 3;
                     return minCompressionRatio222 / (maxPixels * 2);
                 }
                 c9 = 65535;
                 switch (c9) {
                 }
-                int minCompressionRatio2222 = i9 * 3;
+                int minCompressionRatio2222 = i6 * 3;
                 return minCompressionRatio2222 / (maxPixels * 2);
             case 1331836730:
                 if (str.equals(A0B(1655, 9, 91))) {
                     c9 = 2;
                     switch (c9) {
                     }
-                    int minCompressionRatio22222 = i9 * 3;
+                    int minCompressionRatio22222 = i6 * 3;
                     return minCompressionRatio22222 / (maxPixels * 2);
                 }
                 c9 = 65535;
                 switch (c9) {
                 }
-                int minCompressionRatio222222 = i9 * 3;
+                int minCompressionRatio222222 = i6 * 3;
                 return minCompressionRatio222222 / (maxPixels * 2);
             case 1599127256:
                 if (str.equals(A0B(1705, 19, 98))) {
                     c9 = 3;
                     switch (c9) {
                     }
-                    int minCompressionRatio2222222 = i9 * 3;
+                    int minCompressionRatio2222222 = i6 * 3;
                     return minCompressionRatio2222222 / (maxPixels * 2);
                 }
                 c9 = 65535;
                 switch (c9) {
                 }
-                int minCompressionRatio22222222 = i9 * 3;
+                int minCompressionRatio22222222 = i6 * 3;
                 return minCompressionRatio22222222 / (maxPixels * 2);
             case 1599127257:
-                if (str.equals(A0B(1724, 19, a.f21756z))) {
+                if (str.equals(A0B(1724, 19, a.f22543z))) {
                     c9 = 5;
                     switch (c9) {
                     }
-                    int minCompressionRatio222222222 = i9 * 3;
+                    int minCompressionRatio222222222 = i6 * 3;
                     return minCompressionRatio222222222 / (maxPixels * 2);
                 }
                 c9 = 65535;
                 switch (c9) {
                 }
-                int minCompressionRatio2222222222 = i9 * 3;
+                int minCompressionRatio2222222222 = i6 * 3;
                 return minCompressionRatio2222222222 / (maxPixels * 2);
             default:
                 c9 = 65535;
                 switch (c9) {
                 }
-                int minCompressionRatio22222222222 = i9 * 3;
+                int minCompressionRatio22222222222 = i6 * 3;
                 return minCompressionRatio22222222222 / (maxPixels * 2);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public long A03(long j6, long j9, long j10, long j11, boolean z3) {
+    public long A03(long j6, long j9, long j10, long j11, boolean z6) {
         double playbackSpeed = A1f();
         long j12 = (long) ((j11 - j6) / playbackSpeed);
-        if (z3) {
+        if (z6) {
             return j12 - (j10 - j9);
         }
         return j12;
     }
 
     @MetaExoPlayerCustomization("D64704257: Adding a new param to control AI FRC")
-    private final MediaFormat A08(C2400qI c2400qI, C0904Fm c0904Fm, boolean z3, int i) {
+    private final MediaFormat A08(C2420qI c2420qI, C0924Fm c0924Fm, boolean z6, int i) {
         MediaFormat mediaFormat = new MediaFormat();
-        mediaFormat.setString(A0B(1462, 4, 83), c2400qI.A0W);
-        mediaFormat.setInteger(A0B(1755, 5, 79), c2400qI.A0L);
-        mediaFormat.setInteger(A0B(1307, 6, 73), c2400qI.A0A);
-        AbstractC06344i.A06(mediaFormat, c2400qI.A0X);
-        AbstractC06344i.A03(mediaFormat, A0B(1286, 10, a.f21756z), c2400qI.A01);
-        AbstractC06344i.A04(mediaFormat, A0B(1548, 16, 7), c2400qI.A0F);
-        AbstractC06344i.A02(mediaFormat, c2400qI.A0N);
-        mediaFormat.setInteger(A0B(1447, 9, 1), c0904Fm.A02);
-        mediaFormat.setInteger(A0B(1423, 10, 25), c0904Fm.A00);
-        AbstractC06344i.A04(mediaFormat, A0B(1433, 14, 113), c0904Fm.A01);
+        mediaFormat.setString(A0B(1462, 4, 83), c2420qI.A0W);
+        mediaFormat.setInteger(A0B(1755, 5, 79), c2420qI.A0L);
+        mediaFormat.setInteger(A0B(1307, 6, 73), c2420qI.A0A);
+        AbstractC06544i.A06(mediaFormat, c2420qI.A0X);
+        AbstractC06544i.A03(mediaFormat, A0B(1286, 10, a.f22543z), c2420qI.A01);
+        AbstractC06544i.A04(mediaFormat, A0B(1548, 16, 7), c2420qI.A0F);
+        AbstractC06544i.A02(mediaFormat, c2420qI.A0N);
+        mediaFormat.setInteger(A0B(1447, 9, 1), c0924Fm.A02);
+        mediaFormat.setInteger(A0B(1423, 10, 25), c0924Fm.A00);
+        AbstractC06544i.A04(mediaFormat, A0B(1433, 14, 113), c0924Fm.A01);
         if (C5C.A02 >= 23) {
             String A0B = A0B(1521, 8, 113);
             String[] strArr = A12;
@@ -542,10 +542,10 @@ public final class AnonymousClass10 extends AbstractC05581g {
             A12[2] = "2RIBJj1oBKSBZdAo5SnKQdQzGU6CRjTj";
             mediaFormat.setInteger(A0B, 0);
         }
-        if (z3) {
+        if (z6) {
             mediaFormat.setInteger(A0B(1173, 8, 16), 0);
         }
-        AbstractC1967is.A03(this.A0z, mediaFormat);
+        AbstractC1987is.A03(this.A0z, mediaFormat);
         if (i != 0) {
             A0T(mediaFormat, i);
         }
@@ -557,73 +557,73 @@ public final class AnonymousClass10 extends AbstractC05581g {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private final C0904Fm A0A(B3 b32, C2400qI c2400qI, C2400qI[] c2400qIArr) throws BX {
+    private final C0924Fm A0A(B3 b32, C2420qI c2420qI, C2420qI[] c2420qIArr) throws BX {
         int maxWidth;
         int maxHeight;
-        int i = c2400qI.A0L;
-        int i6 = c2400qI.A0A;
-        int A00 = A00(c2400qI);
-        int maxHeight2 = c2400qIArr.length;
+        int i = c2420qI.A0L;
+        int i4 = c2420qI.A0A;
+        int A00 = A00(c2420qI);
+        int maxHeight2 = c2420qIArr.length;
         if (maxHeight2 == 1) {
-            return new C0904Fm(i, i6, A00);
+            return new C0924Fm(i, i4, A00);
         }
-        int i9 = 0;
-        for (C2400qI streamFormat : c2400qIArr) {
-            if (A0v(b32.A04, c2400qI, streamFormat)) {
+        int i6 = 0;
+        for (C2420qI streamFormat : c2420qIArr) {
+            if (A0v(b32.A04, c2420qI, streamFormat)) {
                 int maxWidth2 = streamFormat.A0L;
                 if (maxWidth2 != -1) {
                     int maxWidth3 = streamFormat.A0A;
                     if (maxWidth3 != -1) {
                         maxWidth = 0;
-                        i9 |= maxWidth;
-                        int i10 = streamFormat.A0L;
+                        i6 |= maxWidth;
+                        int i9 = streamFormat.A0L;
                         maxHeight = A12[6].charAt(29);
                         if (maxHeight != 120) {
                             throw new RuntimeException();
                         }
                         A12[2] = "vHVCHU2tj4jzHHyhZwddXygsl3jVFph7";
-                        i = Math.max(i, i10);
+                        i = Math.max(i, i9);
                         int maxWidth4 = streamFormat.A0A;
-                        i6 = Math.max(i6, maxWidth4);
+                        i4 = Math.max(i4, maxWidth4);
                         int maxWidth5 = A00(streamFormat);
                         A00 = Math.max(A00, maxWidth5);
                     }
                 }
                 maxWidth = 1;
-                i9 |= maxWidth;
-                int i102 = streamFormat.A0L;
+                i6 |= maxWidth;
+                int i92 = streamFormat.A0L;
                 maxHeight = A12[6].charAt(29);
                 if (maxHeight != 120) {
                 }
             }
         }
-        if (i9 != 0) {
+        if (i6 != 0) {
             StringBuilder append = new StringBuilder().append(A0B(921, 43, 89)).append(i);
             String A0B = A0B(1775, 1, 84);
-            String sb = append.append(A0B).append(i6).toString();
+            String sb = append.append(A0B).append(i4).toString();
             String A0B2 = A0B(682, 23, 0);
-            AbstractC06324g.A07(A0B2, sb);
-            Point A07 = A07(b32, c2400qI);
+            AbstractC06524g.A07(A0B2, sb);
+            Point A07 = A07(b32, c2420qI);
             if (A07 != null) {
                 int maxWidth6 = A07.x;
                 i = Math.max(i, maxWidth6);
                 int maxWidth7 = A07.y;
-                i6 = Math.max(i6, maxWidth7);
-                int maxWidth8 = A02(c2400qI.A0W, i, i6);
+                i4 = Math.max(i4, maxWidth7);
+                int maxWidth8 = A02(c2420qI.A0W, i, i4);
                 A00 = Math.max(A00, maxWidth8);
-                AbstractC06324g.A07(A0B2, A0B(246, 34, 11) + i + A0B + i6);
+                AbstractC06524g.A07(A0B2, A0B(246, 34, 11) + i + A0B + i4);
             }
         }
-        return new C0904Fm(i, i6, A00);
+        return new C0924Fm(i, i4, A00);
     }
 
-    public static List<B3> A0C(BT bt, C2400qI c2400qI) throws BX {
+    public static List<B3> A0C(BT bt, C2420qI c2420qI) throws BX {
         ArrayList arrayList = new ArrayList();
-        String alternativeMimeType = C0792Ba.A0P(c2400qI);
+        String alternativeMimeType = C0812Ba.A0P(c2420qI);
         if (alternativeMimeType != null) {
             List<B3> A7o = bt.A7o(alternativeMimeType, false, false);
             if (C5C.A02 >= 26) {
-                if (A0B(1664, 18, 7).equals(c2400qI.A0W) && !A7o.isEmpty()) {
+                if (A0B(1664, 18, 7).equals(c2420qI.A0W) && !A7o.isEmpty()) {
                     return A7o;
                 }
                 return arrayList;
@@ -633,19 +633,19 @@ public final class AnonymousClass10 extends AbstractC05581g {
         return arrayList;
     }
 
-    public static List<B3> A0D(BT bt, C2400qI c2400qI, boolean z3) throws BX {
-        String str = c2400qI.A0W;
+    public static List<B3> A0D(BT bt, C2420qI c2420qI, boolean z6) throws BX {
+        String str = c2420qI.A0W;
         if (str == null) {
             return Collections.emptyList();
         }
-        return Collections.unmodifiableList(bt.A7o(str, z3, false));
+        return Collections.unmodifiableList(bt.A7o(str, z6, false));
     }
 
     private void A0E() {
         B0 A1j;
         this.A0i = false;
         if (C5C.A02 >= 23 && this.A0k && (A1j = A1j()) != null) {
-            this.A00 = new C2203n5(this, A1j);
+            this.A00 = new C2223n5(this, A1j);
         }
     }
 
@@ -658,7 +658,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
 
     @MetaExoPlayerCustomization("need for SR to release EGL context")
     private void A0G() {
-        if (this.A0r.A0G() && MetaExoPlayerUpgradeConfig.A03(EnumC2000jX.A1t)) {
+        if (this.A0r.A0G() && MetaExoPlayerUpgradeConfig.A03(EnumC2020jX.A1t)) {
             this.A0r.A0A();
             throw null;
         }
@@ -696,7 +696,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
             return;
         }
         if (this.A0G != this.A08 || this.A0E != this.A06 || this.A0F != this.A07 || this.A03 != this.A01) {
-            this.A0u.A07(new C2353pW(this.A08, this.A06, this.A07, this.A01));
+            this.A0u.A07(new C2373pW(this.A08, this.A06, this.A07, this.A01));
             this.A0G = this.A08;
             this.A0E = this.A06;
             this.A0F = this.A07;
@@ -712,7 +712,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
 
     private void A0M() {
         if (this.A0G != -1 || this.A0E != -1) {
-            this.A0u.A07(new C2353pW(this.A0G, this.A0E, this.A0F, this.A03));
+            this.A0u.A07(new C2373pW(this.A0G, this.A0E, this.A0F, this.A03));
         }
     }
 
@@ -721,7 +721,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
         if (this.A0p > 0) {
             j6 = SystemClock.elapsedRealtime() + this.A0p;
         } else {
-            j6 = b.f6382b;
+            j6 = b.f7168b;
         }
         this.A0M = j6;
     }
@@ -741,7 +741,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
         }
     }
 
-    private final void A0R(long j6, long j9, float f3) {
+    private final void A0R(long j6, long j9, float f2) {
         int A01 = (int) C2Y.A01(j6);
         int A012 = (int) C2Y.A01(j9);
         if (A012 > 1000 && A012 < 10000) {
@@ -755,10 +755,10 @@ public final class AnonymousClass10 extends AbstractC05581g {
                     int presentationGapMs3 = this.A0B;
                     if (A01 < positionMs2 + presentationGapMs3) {
                         C6I c6i = super.A0h;
-                        int i6 = c6i.A0E;
+                        int i4 = c6i.A0E;
                         int positionMs3 = this.A0A;
                         int presentationGapMs4 = this.A0B;
-                        c6i.A0E = i6 + ((int) ((((A01 + A012) - (positionMs3 + presentationGapMs4)) * f3) / 1000.0d));
+                        c6i.A0E = i4 + ((int) ((((A01 + A012) - (positionMs3 + presentationGapMs4)) * f2) / 1000.0d));
                         this.A0A = A01;
                         this.A0B = A012;
                     }
@@ -766,7 +766,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
                 int positionMs4 = this.A0A;
                 int presentationGapMs5 = this.A0B;
                 if (A01 > positionMs4 + presentationGapMs5) {
-                    int presentationGapMs6 = (int) ((A012 * f3) / 1000.0d);
+                    int presentationGapMs6 = (int) ((A012 * f2) / 1000.0d);
                     super.A0h.A0E += presentationGapMs6;
                 }
                 this.A0A = A01;
@@ -776,9 +776,9 @@ public final class AnonymousClass10 extends AbstractC05581g {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void A0S(long j6, long j9, C2400qI c2400qI, MediaFormat mediaFormat) {
+    public void A0S(long j6, long j9, C2420qI c2420qI, MediaFormat mediaFormat) {
         if (this.A0X != null) {
-            this.A0X.AGS(j6, j9, c2400qI, mediaFormat);
+            this.A0X.AGS(j6, j9, c2420qI, mediaFormat);
         }
     }
 
@@ -799,7 +799,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
                 }
             }
         }
-        boolean A03 = MetaExoPlayerUpgradeConfig.A03(EnumC2000jX.A0X);
+        boolean A03 = MetaExoPlayerUpgradeConfig.A03(EnumC2020jX.A0X);
         if (this.A0U != surface) {
             this.A0U = surface;
             this.A0Q = SystemClock.elapsedRealtime();
@@ -809,7 +809,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
             A12[1] = "flDNbofxs3CTffCwMDp3s46Nt2jaxTe4";
             int A9A = A9A();
             boolean shouldIgnoreUnknownSurfaceSize = false;
-            boolean z3 = this.A0f && AAe();
+            boolean z6 = this.A0f && AAe();
             if (A9A == 1 || A9A == 2) {
                 B0 A1j = A1j();
                 boolean shouldReInitCodecUponSurfaceSetFailure = this.A0r.A0G();
@@ -837,15 +837,15 @@ public final class AnonymousClass10 extends AbstractC05581g {
             if (surface != null && surface != this.A0T) {
                 A0M();
                 A0E();
-                if (A9A == 2 || z3) {
+                if (A9A == 2 || z6) {
                     A0N();
                 }
                 if (this.A0r.A0G()) {
-                    if (MetaExoPlayerUpgradeConfig.A03(EnumC2000jX.A0j) && this.A0r.A06 != null) {
+                    if (MetaExoPlayerUpgradeConfig.A03(EnumC2020jX.A0j) && this.A0r.A06 != null) {
                         shouldIgnoreUnknownSurfaceSize = true;
                     }
                     if (!shouldIgnoreUnknownSurfaceSize) {
-                        this.A0r.A0C(surface, C06514z.A03);
+                        this.A0r.A0C(surface, C06714z.A03);
                         return;
                     }
                     return;
@@ -871,9 +871,9 @@ public final class AnonymousClass10 extends AbstractC05581g {
         }
     }
 
-    private void A0V(C2400qI c2400qI) {
+    private void A0V(C2420qI c2420qI) {
         B0 codec = A1j();
-        if (codec != null && c2400qI != null) {
+        if (codec != null && c2420qI != null) {
             Pair<Long, Integer> A8j = codec.A8j();
             if (((Long) A8j.first).longValue() > 0) {
                 super.A0h.A04(A8j);
@@ -882,13 +882,13 @@ public final class AnonymousClass10 extends AbstractC05581g {
                     throw new RuntimeException();
                 }
                 A12[3] = "UGSzGWhN7NgjOmIm99IkQUILfPM9Cd";
-                gp.A04(super.A0h.A00, c2400qI);
+                gp.A04(super.A0h.A00, c2420qI);
             }
         }
     }
 
     private final void A0W(B0 b02, int i, long j6) {
-        AnonymousClass54.A02(A0B(1262, 15, a.f21727Q));
+        AnonymousClass54.A02(A0B(1262, 15, a.f22514Q));
         b02.AHi(i, false);
         AnonymousClass54.A00();
         A0Q(1);
@@ -968,9 +968,9 @@ public final class AnonymousClass10 extends AbstractC05581g {
         }
     }
 
-    private final void A0b(@MetaExoPlayerCustomization B0 b02, int i, long j6, long j9, boolean z3) {
+    private final void A0b(@MetaExoPlayerCustomization B0 b02, int i, long j6, long j9, boolean z6) {
         if (this.A0w) {
-            A0c(b02, i, j6, j9, z3);
+            A0c(b02, i, j6, j9, z6);
             return;
         }
         A0K();
@@ -993,13 +993,13 @@ public final class AnonymousClass10 extends AbstractC05581g {
     }
 
     @MetaExoPlayerCustomization("notifyFrameMetadataListener be removed once we take the Exo renderOutputBufferNow Function refactor")
-    private final void A0c(B0 b02, int i, long j6, long j9, boolean z3) {
-        if (z3) {
-            C2400qI c2400qI = super.A0g;
+    private final void A0c(B0 b02, int i, long j6, long j9, boolean z6) {
+        if (z6) {
+            C2420qI c2420qI = super.A0g;
             MediaFormat mediaFormat = this.A0S;
             if (A12[3].length() != 21) {
                 A12[6] = "fwcrFdVwexqT3olBri8BzspmWxCtZa94";
-                A0S(j6, j9, c2400qI, mediaFormat);
+                A0S(j6, j9, c2420qI, mediaFormat);
             }
             throw new RuntimeException();
         }
@@ -1042,12 +1042,12 @@ public final class AnonymousClass10 extends AbstractC05581g {
         if (this.A0n <= 0) {
             return false;
         }
-        boolean z3 = this.A0K == b.f6382b || System.currentTimeMillis() - this.A0K <= ((long) this.A0n);
-        if (this.A0K == b.f6382b) {
-            AbstractC06324g.A07(A0B(682, 23, 0), A0B(901, 20, 62));
+        boolean z6 = this.A0K == b.f7168b || System.currentTimeMillis() - this.A0K <= ((long) this.A0n);
+        if (this.A0K == b.f7168b) {
+            AbstractC06524g.A07(A0B(682, 23, 0), A0B(901, 20, 62));
             this.A0K = System.currentTimeMillis();
         }
-        return z3;
+        return z6;
     }
 
     public static boolean A0h() {
@@ -1068,27 +1068,27 @@ public final class AnonymousClass10 extends AbstractC05581g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean A0m(long j6, long j9) {
-        boolean z3;
-        boolean z6 = A9A() == 2;
+        boolean z6;
+        boolean z9 = A9A() == 2;
         boolean isStarted = this.A0j;
         if (!isStarted) {
-            if (!z6) {
+            if (!z9) {
                 boolean isStarted2 = this.A0g;
                 if (!isStarted2) {
-                    z3 = false;
+                    z6 = false;
                 }
             }
-            z3 = true;
+            z6 = true;
         } else {
             boolean isStarted3 = this.A0i;
-            z3 = !isStarted3;
+            z6 = !isStarted3;
         }
         long elapsedRealtime = (SystemClock.elapsedRealtime() * 1000) - this.A0P;
-        if (this.A0M == b.f6382b && j6 >= A1i()) {
-            if (z3) {
+        if (this.A0M == b.f7168b && j6 >= A1i()) {
+            if (z6) {
                 return true;
             }
-            if (z6) {
+            if (z9) {
                 boolean isStarted4 = A0p(j9, elapsedRealtime);
                 if (isStarted4) {
                     return true;
@@ -1975,7 +1975,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
                                 c10 = 65535;
                                 break;
                             case 2006372676:
-                                if (str2.equals(A0B(BaseATView.a.f9767C, 14, 75))) {
+                                if (str2.equals(A0B(BaseATView.a.f10553C, 14, 75))) {
                                     c10 = 16;
                                     break;
                                 }
@@ -2003,13 +2003,13 @@ public final class AnonymousClass10 extends AbstractC05581g {
                                 c10 = 65535;
                                 break;
                             case 2047190025:
-                                if (str2.equals(A0B(BaseATView.a.f9778O, 10, 121))) {
+                                if (str2.equals(A0B(BaseATView.a.f10564O, 10, 121))) {
                                     break;
                                 }
                                 c10 = 65535;
                                 break;
                             case 2047252157:
-                                if (str2.equals(A0B(314, 10, a.f21727Q))) {
+                                if (str2.equals(A0B(314, 10, a.f22514Q))) {
                                     c10 = 28;
                                     break;
                                 }
@@ -2072,50 +2072,50 @@ public final class AnonymousClass10 extends AbstractC05581g {
                             case '#':
                             case '$':
                             case '%':
-                            case j.f5806M /* 38 */:
+                            case j.f6592M /* 38 */:
                             case '\'':
-                            case j.f5808O /* 40 */:
+                            case j.f6594O /* 40 */:
                             case ')':
                             case '*':
-                            case j.f5811R /* 43 */:
-                            case j.f5812S /* 44 */:
-                            case j.f5813T /* 45 */:
+                            case j.f6597R /* 43 */:
+                            case j.f6598S /* 44 */:
+                            case j.f6599T /* 45 */:
                             case '.':
                             case '/':
-                            case j.f5816W /* 48 */:
-                            case j.f5817X /* 49 */:
+                            case j.f6602W /* 48 */:
+                            case j.f6603X /* 49 */:
                             case '2':
                             case '3':
                             case '4':
-                            case i.f14823d /* 53 */:
+                            case i.f15609d /* 53 */:
                             case '6':
                             case '7':
-                            case p.a.f19679e /* 56 */:
+                            case p.a.f20466e /* 56 */:
                             case '9':
                             case ':':
-                            case j.v.f12591n /* 59 */:
+                            case j.v.f13377n /* 59 */:
                             case '<':
                             case '=':
                             case '>':
                             case '?':
                             case '@':
-                            case j.v.f12576G /* 65 */:
+                            case j.v.f13362G /* 65 */:
                             case 'B':
-                            case j.v.f12582d /* 67 */:
+                            case j.v.f13368d /* 67 */:
                             case 'D':
-                            case j.v.f12573D /* 69 */:
+                            case j.v.f13359D /* 69 */:
                             case com.anythink.expressad.videocommon.e.b.aB /* 70 */:
                             case 'G':
                             case 'H':
                             case 'I':
-                            case j.v.f12598u /* 74 */:
-                            case j.v.f12599v /* 75 */:
-                            case j.v.f12603z /* 76 */:
-                            case j.v.f12571B /* 77 */:
+                            case j.v.f13384u /* 74 */:
+                            case j.v.f13385v /* 75 */:
+                            case j.v.f13389z /* 76 */:
+                            case j.v.f13357B /* 77 */:
                             case 'N':
-                            case j.v.f12570A /* 79 */:
-                            case j.v.f12572C /* 80 */:
-                            case j.v.f12574E /* 81 */:
+                            case j.v.f13356A /* 79 */:
+                            case j.v.f13358C /* 80 */:
+                            case j.v.f13360E /* 81 */:
                             case 'R':
                             case 'S':
                             case 'T':
@@ -2126,8 +2126,8 @@ public final class AnonymousClass10 extends AbstractC05581g {
                             case 'Y':
                             case AlbumScaleMainView.MAIN_VIEW_INIT_WIDTH /* 90 */:
                             case '[':
-                            case j.v.f12577H /* 92 */:
-                            case j.v.f12578I /* 93 */:
+                            case j.v.f13363H /* 92 */:
+                            case j.v.f13364I /* 93 */:
                             case '^':
                             case '_':
                             case '`':
@@ -2143,7 +2143,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
                             case 'j':
                             case 'k':
                             case 'l':
-                            case a.f21756z /* 109 */:
+                            case a.f22543z /* 109 */:
                             case 'n':
                             case 'o':
                             case 'p':
@@ -2398,11 +2398,11 @@ public final class AnonymousClass10 extends AbstractC05581g {
         return A0z;
     }
 
-    public static boolean A0v(boolean z3, C2400qI c2400qI, C2400qI c2400qI2) {
-        return c2400qI.A0W.equals(c2400qI2.A0W) && c2400qI.A0F == c2400qI2.A0F && (z3 || (c2400qI.A0L == c2400qI2.A0L && c2400qI.A0A == c2400qI2.A0A)) && C5C.A1E(c2400qI.A0N, c2400qI2.A0N);
+    public static boolean A0v(boolean z6, C2420qI c2420qI, C2420qI c2420qI2) {
+        return c2420qI.A0W.equals(c2420qI2.A0W) && c2420qI.A0F == c2420qI2.A0F && (z6 || (c2420qI.A0L == c2420qI2.A0L && c2420qI.A0A == c2420qI2.A0A)) && C5C.A1E(c2420qI.A0N, c2420qI2.A0N);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g, com.instagram.common.viewpoint.core.AE
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g, com.instagram.common.viewpoint.core.AE
     public final void A1X() {
         super.A1X();
         this.A09 = 0;
@@ -2415,9 +2415,9 @@ public final class AnonymousClass10 extends AbstractC05581g {
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g, com.instagram.common.viewpoint.core.AE
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g, com.instagram.common.viewpoint.core.AE
     public final void A1Y() {
-        this.A0M = b.f6382b;
+        this.A0M = b.f7168b;
         A0J();
         A0H();
         if (this.A0w) {
@@ -2426,14 +2426,14 @@ public final class AnonymousClass10 extends AbstractC05581g {
         super.A1Y();
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g, com.instagram.common.viewpoint.core.AE
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g, com.instagram.common.viewpoint.core.AE
     public final void A1Z() {
         this.A08 = -1;
         this.A06 = -1;
         this.A01 = -1.0f;
         this.A02 = -1.0f;
-        this.A0R = b.f6382b;
-        this.A0O = b.f6382b;
+        this.A0R = b.f7168b;
+        this.A0O = b.f7168b;
         this.A0C = 0;
         A0F();
         A0E();
@@ -2451,9 +2451,9 @@ public final class AnonymousClass10 extends AbstractC05581g {
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g, com.instagram.common.viewpoint.core.AE
-    public final void A1a(long j6, boolean z3) throws AD {
-        super.A1a(j6, z3);
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g, com.instagram.common.viewpoint.core.AE
+    public final void A1a(long j6, boolean z6) throws AD {
+        super.A1a(j6, z6);
         if (this.A0r.A0G()) {
             this.A0r.A09();
             throw null;
@@ -2462,40 +2462,40 @@ public final class AnonymousClass10 extends AbstractC05581g {
         if (this.A0w) {
             this.A0s.A0C();
         }
-        this.A0N = b.f6382b;
-        this.A0L = b.f6382b;
-        this.A0O = b.f6382b;
+        this.A0N = b.f7168b;
+        this.A0L = b.f7168b;
+        this.A0O = b.f7168b;
         this.A0A = 0;
         this.A0B = 0;
         if (this.A0C != 0) {
             this.A0R = this.A0x[this.A0C - 1];
             this.A0C = 0;
         }
-        if (z3) {
+        if (z6) {
             A0N();
         } else {
-            this.A0M = b.f6382b;
+            this.A0M = b.f7168b;
         }
         A0H();
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g, com.instagram.common.viewpoint.core.AE
-    public final void A1b(boolean z3, boolean z6) throws AD {
-        super.A1b(z3, z6);
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g, com.instagram.common.viewpoint.core.AE
+    public final void A1b(boolean z6, boolean z9) throws AD {
+        super.A1b(z6, z9);
         this.A0k = A1V().A00;
         this.A0u.A0A(super.A0h);
         this.A0t.A09();
-        this.A0g = z6;
+        this.A0g = z9;
         this.A0j = false;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g, com.instagram.common.viewpoint.core.AE
-    public final void A1c(C2400qI[] c2400qIArr, long j6, long j9) throws AD {
-        if (this.A0R == b.f6382b) {
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g, com.instagram.common.viewpoint.core.AE
+    public final void A1c(C2420qI[] c2420qIArr, long j6, long j9) throws AD {
+        if (this.A0R == b.f7168b) {
             this.A0R = j9;
         } else {
             if (this.A0C == this.A0x.length) {
-                AbstractC06324g.A07(A0B(682, 23, 0), A0B(1069, 45, 88) + this.A0x[this.A0C - 1]);
+                AbstractC06524g.A07(A0B(682, 23, 0), A0B(1069, 45, 88) + this.A0x[this.A0C - 1]);
             } else {
                 this.A0C++;
             }
@@ -2508,21 +2508,21 @@ public final class AnonymousClass10 extends AbstractC05581g {
             jArr[i] = j9;
             this.A0y[this.A0C - 1] = this.A0O;
         }
-        super.A1c(c2400qIArr, j6, j9);
+        super.A1c(c2420qIArr, j6, j9);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
-    public final int A1g(B0 b02, B3 b32, C2400qI c2400qI, C2400qI c2400qI2) {
-        if (AbstractC1967is.A04(this.A0z, c2400qI.A0L, c2400qI.A0A, c2400qI2.A0L, c2400qI2.A0A)) {
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
+    public final int A1g(B0 b02, B3 b32, C2420qI c2420qI, C2420qI c2420qI2) {
+        if (AbstractC1987is.A04(this.A0z, c2420qI.A0L, c2420qI.A0A, c2420qI2.A0L, c2420qI2.A0A)) {
             return 0;
         }
-        if (A21() && c2400qI.A0W.equals(c2400qI2.A0W) && c2400qI.A0F == c2400qI2.A0F) {
+        if (A21() && c2420qI.A0W.equals(c2420qI2.A0W) && c2420qI.A0F == c2420qI2.A0F) {
             return 1;
         }
-        if (!A0v(b32.A04, c2400qI, c2400qI2) || c2400qI2.A0L > this.A0W.A02 || c2400qI2.A0A > this.A0W.A00 || A00(c2400qI2) > this.A0W.A01) {
+        if (!A0v(b32.A04, c2420qI, c2420qI2) || c2420qI2.A0L > this.A0W.A02 || c2420qI2.A0A > this.A0W.A00 || A00(c2420qI2) > this.A0W.A01) {
             return 0;
         }
-        boolean A0A = c2400qI.A0A(c2400qI2);
+        boolean A0A = c2420qI.A0A(c2420qI2);
         if (A12[2].charAt(6) == 'n') {
             throw new RuntimeException();
         }
@@ -2530,26 +2530,26 @@ public final class AnonymousClass10 extends AbstractC05581g {
         return A0A ? 1 : 3;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
-    public final int A1h(BT bt, A6 a62, C2400qI c2400qI) throws BX {
-        if (A24(c2400qI)) {
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
+    public final int A1h(BT bt, A6 a62, C2420qI c2420qI) throws BX {
+        if (A24(c2420qI)) {
             return 20;
         }
-        return A01(bt, c2400qI, super.A0j);
+        return A01(bt, c2420qI, super.A0j);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
-    public final List<B3> A1l(BT bt, C2400qI c2400qI, boolean z3) throws BX {
-        return A0D(bt, c2400qI, z3);
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
+    public final List<B3> A1l(BT bt, C2420qI c2420qI, boolean z6) throws BX {
+        return A0D(bt, c2420qI, z6);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
     public final void A1m() throws AD {
         super.A1m();
         this.A04 = 0;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
     public final void A1n() {
         try {
             super.A1n();
@@ -2580,7 +2580,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
     public final void A1q(long j6) {
         super.A1q(j6);
         this.A04--;
@@ -2595,14 +2595,14 @@ public final class AnonymousClass10 extends AbstractC05581g {
     /* JADX WARN: Removed duplicated region for block: B:16:0x0046  */
     /* JADX WARN: Removed duplicated region for block: B:18:0x0053  */
     /* JADX WARN: Removed duplicated region for block: B:9:0x0022  */
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
     @MetaExoPlayerCustomization("for SR video effects support of MCM")
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void A1r(C2400qI c2400qI) {
+    public final void A1r(C2420qI c2420qI) {
         boolean isSwitchingToDav1d;
-        if (A24(c2400qI)) {
+        if (A24(c2420qI)) {
             if (super.A0g != null) {
                 if (!A0B(1645, 10, 45).equals(super.A0g.A0W)) {
                     isSwitchingToDav1d = true;
@@ -2630,11 +2630,11 @@ public final class AnonymousClass10 extends AbstractC05581g {
             if (A12[2].charAt(6) != 'n') {
             }
         } else {
-            int A00 = MetaExoPlayerUpgradeConfig.A00(EnumC2001jY.A09);
-            if (A00 <= 0 || c2400qI == null) {
+            int A00 = MetaExoPlayerUpgradeConfig.A00(EnumC2021jY.A09);
+            if (A00 <= 0 || c2420qI == null) {
                 return;
             }
-            int videoWidthToEnableSR = c2400qI.A0L;
+            int videoWidthToEnableSR = c2420qI.A0L;
             if (videoWidthToEnableSR <= A00) {
                 return;
             }
@@ -2642,31 +2642,31 @@ public final class AnonymousClass10 extends AbstractC05581g {
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
-    public final void A1s(C2400qI c2400qI) throws AD {
-        super.A1s(c2400qI);
-        this.A0u.A05(c2400qI, null);
-        this.A02 = c2400qI.A02;
-        this.A0D = c2400qI.A0F;
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
+    public final void A1s(C2420qI c2420qI) throws AD {
+        super.A1s(c2420qI);
+        this.A0u.A05(c2420qI, null);
+        this.A02 = c2420qI.A02;
+        this.A0D = c2420qI.A0F;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
-    public final void A1t(C2400qI c2400qI) throws AD {
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
+    public final void A1t(C2420qI c2420qI) throws AD {
         if (!this.A0r.A0G()) {
-            this.A0r.A0J(c2400qI, A1i());
+            this.A0r.A0J(c2420qI, A1i());
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
-    public final void A1u(C2321p0 c2321p0) {
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
+    public final void A1u(C2341p0 c2341p0) {
         this.A04++;
-        this.A0O = Math.max(c2321p0.A01, this.A0O);
+        this.A0O = Math.max(c2341p0.A01, this.A0O);
         if (C5C.A02 < 23 && this.A0k) {
             A27();
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
     public final void A1v(B0 b02, MediaFormat mediaFormat) {
         int integer;
         int integer2;
@@ -2674,10 +2674,10 @@ public final class AnonymousClass10 extends AbstractC05581g {
         String A0B = A0B(1229, 10, 102);
         boolean containsKey = mediaFormat.containsKey(A0B);
         String A0B2 = A0B(1239, 8, 55);
-        String A0B3 = A0B(1209, 11, a.f21727Q);
+        String A0B3 = A0B(1209, 11, a.f22514Q);
         String A0B4 = A0B(1220, 9, 2);
-        boolean z3 = containsKey && mediaFormat.containsKey(A0B4) && mediaFormat.containsKey(A0B3) && mediaFormat.containsKey(A0B2);
-        if (z3) {
+        boolean z6 = containsKey && mediaFormat.containsKey(A0B4) && mediaFormat.containsKey(A0B3) && mediaFormat.containsKey(A0B2);
+        if (z6) {
             int integer3 = mediaFormat.getInteger(A0B);
             int unappliedRotationDegrees = mediaFormat.getInteger(A0B4);
             integer = (integer3 - unappliedRotationDegrees) + 1;
@@ -2685,7 +2685,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
             integer = mediaFormat.getInteger(A0B(1755, 5, 79));
         }
         this.A08 = integer;
-        if (z3) {
+        if (z6) {
             int integer4 = mediaFormat.getInteger(A0B3);
             int unappliedRotationDegrees2 = mediaFormat.getInteger(A0B2);
             integer2 = (integer4 - unappliedRotationDegrees2) + 1;
@@ -2708,34 +2708,34 @@ public final class AnonymousClass10 extends AbstractC05581g {
         }
         int unappliedRotationDegrees5 = this.A0H;
         b02.AJs(unappliedRotationDegrees5);
-        this.A0V = new C2353pW(this.A08, this.A06, this.A07, this.A01);
+        this.A0V = new C2373pW(this.A08, this.A06, this.A07, this.A01);
         this.A0s.A0F(super.A0g.A01);
         if (this.A0r.A0G()) {
-            C0906Fo c0906Fo = this.A0r;
-            C05912p A07 = super.A0g.A07();
+            C0926Fo c0926Fo = this.A0r;
+            C06112p A07 = super.A0g.A07();
             int unappliedRotationDegrees6 = this.A08;
-            C05912p A0r = A07.A0r(unappliedRotationDegrees6);
+            C06112p A0r = A07.A0r(unappliedRotationDegrees6);
             int unappliedRotationDegrees7 = this.A06;
-            C05912p A0f = A0r.A0f(unappliedRotationDegrees7);
+            C06112p A0f = A0r.A0f(unappliedRotationDegrees7);
             int unappliedRotationDegrees8 = this.A07;
-            c0906Fo.A0D(A0f.A0l(unappliedRotationDegrees8).A0Y(this.A01).A14());
+            c0926Fo.A0D(A0f.A0l(unappliedRotationDegrees8).A0Y(this.A01).A14());
             throw null;
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
     @MetaExoPlayerCustomizations({@MetaExoPlayerCustomization("D40834768: [FBLite][Video] Enable low latency decoding for older Android versions"), @MetaExoPlayerCustomization(type = {"TEMPORARY"}, value = "Google Platform Dav1d Testing with Low Latency Decoding D62649046")})
-    public final void A1w(B3 b32, B0 b02, C2400qI c2400qI, MediaCrypto mediaCrypto) throws BX {
-        this.A0W = A0A(b32, c2400qI, A1e());
-        MediaFormat A08 = A08(c2400qI, this.A0W, this.A0v, this.A0o);
+    public final void A1w(B3 b32, B0 b02, C2420qI c2420qI, MediaCrypto mediaCrypto) throws BX {
+        this.A0W = A0A(b32, c2420qI, A1e());
+        MediaFormat A08 = A08(c2420qI, this.A0W, this.A0v, this.A0o);
         if (this.A0U == null) {
-            AbstractC06243y.A08(A0r(b32));
+            AbstractC06443y.A08(A0r(b32));
             if (this.A0T == null) {
                 Context context = this.A0q;
-                boolean z3 = b32.A06;
+                boolean z6 = b32.A06;
                 if (A12[3].length() != 21) {
                     A12[6] = "yiNR3QranPnEQfiPRrhMyH37rGbgy01y";
-                    this.A0T = DummySurface.A01(context, z3);
+                    this.A0T = DummySurface.A01(context, z6);
                 }
                 throw new RuntimeException();
             }
@@ -2748,14 +2748,14 @@ public final class AnonymousClass10 extends AbstractC05581g {
             }
             throw new RuntimeException();
         }
-        boolean z6 = this.A0z.A0I;
-        boolean z9 = false;
+        boolean z9 = this.A0z.A0I;
+        boolean z10 = false;
         String A0B = A0B(1390, 11, 76);
-        boolean z10 = z6 && b32.A00 != null && b32.A00.isFeatureSupported(A0B);
+        boolean z11 = z9 && b32.A00 != null && b32.A00.isFeatureSupported(A0B);
         if (b32.A03.equals(A0B(1181, 28, 58)) && this.A0z.A0B) {
-            z9 = true;
+            z10 = true;
         }
-        if ((C5C.A02 >= 30 || this.A0z.A0J) && z10 && !z9) {
+        if ((C5C.A02 >= 30 || this.A0z.A0J) && z11 && !z10) {
             A08.setFeatureEnabled(A0B, true);
             String[] strArr2 = A12;
             if (strArr2[5].length() != strArr2[0].length()) {
@@ -2772,7 +2772,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
             A08 = this.A0r.A06(A08);
         }
         if (this.A0r.A0G()) {
-            C0906Fo c0906Fo = this.A0r;
+            C0926Fo c0926Fo = this.A0r;
             String[] strArr4 = A12;
             if (strArr4[4].charAt(23) == strArr4[7].charAt(23)) {
                 throw new RuntimeException();
@@ -2780,7 +2780,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
             String[] strArr5 = A12;
             strArr5[4] = "vjf6uovaHCWDHHkpYfphkXQkMzg9bbjD";
             strArr5[7] = "sOVWNDiAOc7Hvgm0kOVhLN9DKu4y3eSs";
-            c0906Fo.A07();
+            c0926Fo.A07();
             throw null;
         }
         b02.A58(A08, this.A0U, mediaCrypto, 0, this.A0Y);
@@ -2797,47 +2797,47 @@ public final class AnonymousClass10 extends AbstractC05581g {
             }
         }
         if (this.A0k) {
-            this.A00 = new C2203n5(this, b02);
+            this.A00 = new C2223n5(this, b02);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
     @MetaExoPlayerCustomization("D45988204: [FBLite][Video] Add Codec Hooks for Logging")
     public final void A1x(String str) {
         this.A0u.A0F(str);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
     public final void A1y(String str, long j6, long j9) {
         this.A0u.A0G(str, j6, j9);
         this.A0b = A0u(str);
         if (this.A0w) {
-            C0906Fo c0906Fo = this.A0r;
+            C0926Fo c0926Fo = this.A0r;
             if (A12[1].charAt(20) != 's') {
                 throw new RuntimeException();
             }
             String[] strArr = A12;
             strArr[4] = "TMyTJm2xfuZjG3FrE9xxFPlKyVDcqwcD";
             strArr[7] = "gYDTbLVVgSlIu0qIAiA5ri17AONkCNH7";
-            c0906Fo.A0E(str);
+            c0926Fo.A0E(str);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
     @MetaExoPlayerCustomization(type = {"TEMPORARY"}, value = "D60404164: Merge init calls in the renderer")
-    public final void A1z(String str, C2400qI c2400qI) throws AD {
+    public final void A1z(String str, C2420qI c2420qI) throws AD {
         this.A0u.A0F(str);
         if (!this.A0r.A0G()) {
-            this.A0r.A0J(c2400qI, A1i());
+            this.A0r.A0J(c2420qI, A1i());
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
     public final boolean A20() {
         return this.A0a && SystemClock.elapsedRealtime() - this.A0Q < 500;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
     public final boolean A22() {
         return true;
     }
@@ -2852,7 +2852,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
      */
     /* JADX WARN: Code restructure failed: missing block: B:114:0x0272, code lost:
     
-        r37.A0K = com.anythink.basead.exoplayer.b.f6382b;
+        r37.A0K = com.anythink.basead.exoplayer.b.f7168b;
      */
     /* JADX WARN: Code restructure failed: missing block: B:115:0x027a, code lost:
     
@@ -2906,25 +2906,25 @@ public final class AnonymousClass10 extends AbstractC05581g {
     
         return false;
      */
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final boolean A23(long presentationTimeUs, long j6, B0 b02, ByteBuffer byteBuffer, int i, int i6, long presentationTimeUs2, boolean z3, boolean isStarted) throws AD {
-        int i9;
+    public final boolean A23(long presentationTimeUs, long j6, B0 b02, ByteBuffer byteBuffer, int i, int i4, long presentationTimeUs2, boolean z6, boolean isStarted) throws AD {
+        int i6;
         long presentationTimeUs3;
-        int i10;
-        float f3;
+        int i9;
+        float f2;
         A0I();
-        if (this.A0L == b.f6382b) {
+        if (this.A0L == b.f7168b) {
             this.A0L = presentationTimeUs;
         }
         if (presentationTimeUs2 != this.A0N) {
-            C0906Fo c0906Fo = this.A0r;
+            C0926Fo c0926Fo = this.A0r;
             String[] strArr = A12;
             if (strArr[4].charAt(23) != strArr[7].charAt(23)) {
                 A12[6] = "L0kRAN56GCoM9aTEFIfEof2AhWTAPhww";
-                if (!c0906Fo.A0G()) {
+                if (!c0926Fo.A0G()) {
                     this.A0s.A0G(presentationTimeUs2);
                 }
                 this.A0N = presentationTimeUs2;
@@ -2932,9 +2932,9 @@ public final class AnonymousClass10 extends AbstractC05581g {
             throw new RuntimeException();
         }
         long elapsedSinceStartOfLoopUs = presentationTimeUs2 - this.A0R;
-        if (z3) {
+        if (z6) {
             A0Z(b02, i, elapsedSinceStartOfLoopUs);
-            this.A0K = b.f6382b;
+            this.A0K = b.f7168b;
             return true;
         }
         long j9 = presentationTimeUs2 - presentationTimeUs;
@@ -2943,14 +2943,14 @@ public final class AnonymousClass10 extends AbstractC05581g {
                 return false;
             }
             A0Z(b02, i, elapsedSinceStartOfLoopUs);
-            this.A0K = b.f6382b;
+            this.A0K = b.f7168b;
             return true;
         }
         long elapsedRealtimeNowUs = SystemClock.elapsedRealtime() * 1000;
-        boolean z6 = A9A() == 2;
+        boolean z9 = A9A() == 2;
         if (this.A0i) {
-            if (!z6 || !A0p(j9, elapsedRealtimeNowUs - this.A0P)) {
-                if (!z6 || presentationTimeUs == this.A0L) {
+            if (!z9 || !A0p(j9, elapsedRealtimeNowUs - this.A0P)) {
+                if (!z9 || presentationTimeUs == this.A0L) {
                     return false;
                 }
                 long j10 = j9 - (elapsedRealtimeNowUs - j6);
@@ -2973,14 +2973,14 @@ public final class AnonymousClass10 extends AbstractC05581g {
                     strArr3[4] = "x3sCqHu2x6JsDcuqwdAUHQ0k2SaVNxNE";
                     strArr3[7] = "ynqO8npVIpgyPmtNsd5sQ1b1Keqzobw0";
                     if (A0n) {
-                        i10 = 21;
+                        i9 = 21;
                         if (A12[3].length() != 21) {
                             A12[2] = "Im0K8TG4eXiLHobEoWn7h9VZsIuUdU0F";
                         } else {
                             A12[1] = "TqRORNfXADShgAM6oQQosmDa9t1KVXi2";
                         }
                     } else {
-                        i10 = 21;
+                        i9 = 21;
                     }
                     boolean A0o = A0o(j10, j6);
                     if (A12[1].charAt(20) != 's') {
@@ -2992,16 +2992,16 @@ public final class AnonymousClass10 extends AbstractC05581g {
                         return true;
                     }
                     if (this.A0r.A0G()) {
-                        C0906Fo c0906Fo2 = this.A0r;
+                        C0926Fo c0926Fo2 = this.A0r;
                         if (A12[1].charAt(20) != 's') {
                             throw new RuntimeException();
                         }
                         A12[6] = "xPxknUi3OsFzLFKEvylwNjXsMhIdmdKw";
-                        c0906Fo2.A0B(presentationTimeUs, j6);
+                        c0926Fo2.A0B(presentationTimeUs, j6);
                         this.A0r.A0K(super.A0g, elapsedSinceStartOfLoopUs, isStarted);
                         throw null;
                     }
-                    if (C5C.A02 >= i10) {
+                    if (C5C.A02 >= i9) {
                         String[] strArr4 = A12;
                         if (strArr4[4].charAt(23) != strArr4[7].charAt(23)) {
                             A12[6] = "ZYuml2WQS49YsB2SRefxlPdxR9rLTqpk";
@@ -3017,7 +3017,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
                         }
                         try {
                             A0X(b02, i, elapsedSinceStartOfLoopUs);
-                            this.A0K = b.f6382b;
+                            this.A0K = b.f7168b;
                             return true;
                         } catch (IllegalStateException e9) {
                             if (A0g()) {
@@ -3033,35 +3033,35 @@ public final class AnonymousClass10 extends AbstractC05581g {
                     } else {
                         A12[2] = "FfF70zljYTd7nA7n6wc9JJE9WyzKMeyw";
                     }
-                    A0R(presentationTimeUs, j12, f3);
+                    A0R(presentationTimeUs, j12, f2);
                     return false;
                 }
                 throw new RuntimeException();
             }
-            i9 = 21;
+            i6 = 21;
             String[] strArr5 = A12;
             if (strArr5[4].charAt(23) == strArr5[7].charAt(23)) {
                 throw new RuntimeException();
             }
             A12[1] = "Ca6wrlcfbPJTUKGkRuSnscA1gW8xLMZW";
-            presentationTimeUs3 = b.f6382b;
+            presentationTimeUs3 = b.f7168b;
         } else {
-            i9 = 21;
-            presentationTimeUs3 = b.f6382b;
+            i6 = 21;
+            presentationTimeUs3 = b.f7168b;
         }
         if (this.A0r.A0G()) {
-            C0906Fo c0906Fo3 = this.A0r;
-            C2400qI c2400qI = super.A0g;
+            C0926Fo c0926Fo3 = this.A0r;
+            C2420qI c2420qI = super.A0g;
             if (A12[6].charAt(29) != 'x') {
                 A12[6] = "ALWZkOReLcoODcDx9aoBhmHDBkFgQP5j";
-                c0906Fo3.A0K(c2400qI, elapsedSinceStartOfLoopUs, isStarted);
+                c0926Fo3.A0K(c2420qI, elapsedSinceStartOfLoopUs, isStarted);
             } else {
                 A12[3] = "ZbZVwQDkp8zHMkP4lXo6fzwP4kG7";
-                c0906Fo3.A0K(c2400qI, elapsedSinceStartOfLoopUs, isStarted);
+                c0926Fo3.A0K(c2420qI, elapsedSinceStartOfLoopUs, isStarted);
             }
             throw null;
         }
-        if (C5C.A02 >= i9) {
+        if (C5C.A02 >= i6) {
             try {
             } catch (IllegalStateException e10) {
                 e = e10;
@@ -3089,7 +3089,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
         return true;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g
     public final boolean A25(B3 b32) {
         return (this.A0U != null && (this.A0Z || this.A0U.isValid())) || A0r(b32);
     }
@@ -3113,11 +3113,11 @@ public final class AnonymousClass10 extends AbstractC05581g {
     }
 
     @MetaExoPlayerCustomization("Required for VideoProcessorManager migration")
-    public final boolean A28(long j6, long j9, boolean z3) {
-        return A0k(j6) && !z3;
+    public final boolean A28(long j6, long j9, boolean z6) {
+        return A0k(j6) && !z6;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AE, com.instagram.common.viewpoint.core.InterfaceC07067c
+    @Override // com.instagram.common.viewpoint.core.AE, com.instagram.common.viewpoint.core.InterfaceC07267c
     public final void A9i(int i, Object obj) throws AD {
         if (i == 1) {
             A0U((Surface) obj);
@@ -3141,14 +3141,14 @@ public final class AnonymousClass10 extends AbstractC05581g {
             return;
         }
         if (i == 13) {
-            this.A0r.A0F((List) AbstractC06243y.A01(obj));
+            this.A0r.A0F((List) AbstractC06443y.A01(obj));
             return;
         }
         if (A12[3].length() != 21) {
             A12[1] = "MccsEzjpf2F4QgbfkxLUs5z2ugRdHbCL";
             if (i == 14) {
-                C06514z c06514z = (C06514z) AbstractC06243y.A01(obj);
-                if (c06514z.A03() == 0 || c06514z.A02() == 0) {
+                C06714z c06714z = (C06714z) AbstractC06443y.A01(obj);
+                if (c06714z.A03() == 0 || c06714z.A02() == 0) {
                     return;
                 }
                 Surface surface = this.A0U;
@@ -3158,7 +3158,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
                     if (surface == null) {
                         return;
                     }
-                    this.A0r.A0C(this.A0U, c06514z);
+                    this.A0r.A0C(this.A0U, c06714z);
                     return;
                 }
             } else {
@@ -3169,7 +3169,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
         throw new RuntimeException();
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g, com.instagram.common.viewpoint.core.InterfaceC2309oo
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g, com.instagram.common.viewpoint.core.InterfaceC2329oo
     public final boolean AAP() {
         boolean AAP = super.AAP();
         boolean isEnded = this.A0r.A0G();
@@ -3184,14 +3184,14 @@ public final class AnonymousClass10 extends AbstractC05581g {
     
         if (r5 != null) goto L29;
      */
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g, com.instagram.common.viewpoint.core.InterfaceC2309oo
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g, com.instagram.common.viewpoint.core.InterfaceC2329oo
     @MetaExoPlayerCustomizations({@MetaExoPlayerCustomization("D18870411: Adding start stall debug reason"), @MetaExoPlayerCustomization(type = {"FEATURE_LOGIC"}, value = "D69547806: Only become ready once we have a surface")})
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final boolean AAe() {
         if (super.AAe() && !this.A0i && ((this.A0T == null || this.A0U != this.A0T) && A1j() != null && !this.A0k)) {
-            ((AE) this).A0B = EnumC1966ir.A08;
+            ((AE) this).A0B = EnumC1986ir.A08;
         }
         if (super.AAe() && (!this.A0r.A0G() || this.A0r.A0H())) {
             if (this.A0h) {
@@ -3204,21 +3204,21 @@ public final class AnonymousClass10 extends AbstractC05581g {
                 strArr[0] = "3hctIGW";
             }
             if (this.A0i || ((this.A0T != null && this.A0U == this.A0T) || A1j() == null || this.A0k)) {
-                this.A0M = b.f6382b;
+                this.A0M = b.f7168b;
                 return true;
             }
         }
-        if (this.A0M == b.f6382b) {
+        if (this.A0M == b.f7168b) {
             return false;
         }
         if (SystemClock.elapsedRealtime() < this.A0M) {
             return true;
         }
-        this.A0M = b.f6382b;
+        this.A0M = b.f7168b;
         return false;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05581g, com.instagram.common.viewpoint.core.InterfaceC2309oo
+    @Override // com.instagram.common.viewpoint.core.AbstractC05781g, com.instagram.common.viewpoint.core.InterfaceC2329oo
     public final void AIX(long j6, long j9) throws AD {
         super.AIX(j6, j9);
         if (this.A0r.A0G()) {
@@ -3226,7 +3226,7 @@ public final class AnonymousClass10 extends AbstractC05581g {
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2309oo, com.instagram.common.viewpoint.core.InterfaceC07197p
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2329oo, com.instagram.common.viewpoint.core.InterfaceC07397p
     public final String getName() {
         return A0B(682, 23, 0);
     }

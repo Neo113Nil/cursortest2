@@ -4,17 +4,17 @@ package com.google.android.gms.internal.ads;
 public final class Gz {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f25194a;
+    public final int f25966a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f25195b;
+    public final int f25967b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f25196c;
+    public final int f25968c;
 
-    public Gz(int i, int i6, int i9) {
-        this.f25194a = i;
-        this.f25195b = i6;
-        this.f25196c = i9;
+    public Gz(int i, int i4, int i6) {
+        this.f25966a = i;
+        this.f25967b = i4;
+        this.f25968c = i6;
     }
 }

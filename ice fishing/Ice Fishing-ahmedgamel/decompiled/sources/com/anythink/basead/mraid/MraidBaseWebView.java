@@ -16,51 +16,51 @@ import com.anythink.core.express.web.BaseWebView;
 public class MraidBaseWebView extends BaseWebView {
 
     /* renamed from: a, reason: collision with root package name */
-    protected j f9588a;
+    protected j f10374a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected a f9589b;
+    protected a f10375b;
 
     /* renamed from: c, reason: collision with root package name */
-    protected h f9590c;
+    protected h f10376c;
 
     /* renamed from: d, reason: collision with root package name */
-    private Object f9591d;
+    private Object f10377d;
 
     /* renamed from: e, reason: collision with root package name */
-    private Object f9592e;
+    private Object f10378e;
 
     /* renamed from: f, reason: collision with root package name */
-    private String f9593f;
+    private String f10379f;
 
     /* renamed from: g, reason: collision with root package name */
-    private com.anythink.core.express.web.c f9594g;
+    private com.anythink.core.express.web.c f10380g;
     private String i;
 
     /* renamed from: j, reason: collision with root package name */
-    private boolean f9595j;
+    private boolean f10381j;
 
     /* renamed from: k, reason: collision with root package name */
-    private float f9596k;
+    private float f10382k;
 
     /* renamed from: l, reason: collision with root package name */
-    private float f9597l;
+    private float f10383l;
 
     /* renamed from: m, reason: collision with root package name */
-    private String f9598m;
+    private String f10384m;
 
     /* renamed from: n, reason: collision with root package name */
-    private int f9599n;
+    private int f10385n;
 
     public MraidBaseWebView(Context context) {
         super(context);
-        this.f9595j = false;
-        this.f9596k = 0.0f;
-        this.f9597l = 0.0f;
+        this.f10381j = false;
+        this.f10382k = 0.0f;
+        this.f10383l = 0.0f;
     }
 
     public static /* synthetic */ boolean a(MraidBaseWebView mraidBaseWebView) {
-        mraidBaseWebView.f9595j = true;
+        mraidBaseWebView.f10381j = true;
         return true;
     }
 
@@ -79,39 +79,39 @@ public class MraidBaseWebView extends BaseWebView {
             }
         }
         Log.e("anythink_express", "illegal URL: ".concat(String.valueOf(str)));
-        return com.anythink.core.common.res.d.f16215a;
+        return com.anythink.core.common.res.d.f17002a;
     }
 
     public void clearWebView() {
-        if (this.f9595j) {
+        if (this.f10381j) {
             return;
         }
-        loadUrl(com.anythink.core.common.res.d.f16215a);
+        loadUrl(com.anythink.core.common.res.d.f17002a);
     }
 
     public String getCampaignId() {
-        return this.f9593f;
+        return this.f10379f;
     }
 
     public Object getJsObject(String str) {
-        h hVar = this.f9590c;
+        h hVar = this.f10376c;
         if (hVar == null) {
             return null;
         }
-        hVar.a(this.f17579h, this);
-        return this.f9590c;
+        hVar.a(this.f18366h, this);
+        return this.f10376c;
     }
 
     public String getLocalRequestId() {
-        return this.f9598m;
+        return this.f10384m;
     }
 
     public Object getMraidObject() {
-        return this.f9592e;
+        return this.f10378e;
     }
 
     public Object getObject() {
-        return this.f9591d;
+        return this.f10377d;
     }
 
     public String getRid() {
@@ -119,16 +119,16 @@ public class MraidBaseWebView extends BaseWebView {
     }
 
     public a getSignalCommunication() {
-        return this.f9589b;
+        return this.f10375b;
     }
 
     public com.anythink.core.express.web.c getWebViewListener() {
-        return this.f9594g;
+        return this.f10380g;
     }
 
     @Override // com.anythink.core.express.web.BaseWebView
     public boolean isDestroyed() {
-        return this.f9595j;
+        return this.f10381j;
     }
 
     @Override // android.webkit.WebView, android.view.View
@@ -138,11 +138,11 @@ public class MraidBaseWebView extends BaseWebView {
             String url = getUrl();
             if (!TextUtils.isEmpty(url) && url.contains("https://play.google.com")) {
                 if (motionEvent.getAction() == 0) {
-                    this.f9596k = motionEvent.getRawX();
-                    this.f9597l = motionEvent.getRawY();
+                    this.f10382k = motionEvent.getRawX();
+                    this.f10383l = motionEvent.getRawY();
                 } else {
-                    float rawX = motionEvent.getRawX() - this.f9596k;
-                    float y7 = motionEvent.getY() - this.f9597l;
+                    float rawX = motionEvent.getRawX() - this.f10382k;
+                    float y7 = motionEvent.getY() - this.f10383l;
                     if ((rawX >= 0.0f || rawX * (-1.0f) <= 48.0f) && ((rawX <= 0.0f || rawX <= 48.0f) && ((y7 >= 0.0f || (-1.0f) * y7 <= 48.0f) && (y7 <= 0.0f || y7 <= 48.0f)))) {
                         setClickable(false);
                         return true;
@@ -158,7 +158,7 @@ public class MraidBaseWebView extends BaseWebView {
         try {
             removeAllViews();
             setDownloadListener(null);
-            this.f9591d = null;
+            this.f10377d = null;
             Context context = getContext();
             if (context == null) {
                 context = t.b().g();
@@ -173,7 +173,7 @@ public class MraidBaseWebView extends BaseWebView {
                     }
                 }, (long) (i * 1000.0f));
             } else {
-                this.f9595j = true;
+                this.f10381j = true;
                 destroy();
             }
         } catch (Throwable th) {
@@ -182,19 +182,19 @@ public class MraidBaseWebView extends BaseWebView {
     }
 
     public void setCampaignId(String str) {
-        this.f9593f = str;
+        this.f10379f = str;
     }
 
     public void setLocalRequestId(String str) {
-        this.f9598m = str;
+        this.f10384m = str;
     }
 
     public void setMraidObject(Object obj) {
-        this.f9592e = obj;
+        this.f10378e = obj;
     }
 
     public void setObject(Object obj) {
-        this.f9591d = obj;
+        this.f10377d = obj;
     }
 
     public void setRid(String str) {
@@ -202,22 +202,22 @@ public class MraidBaseWebView extends BaseWebView {
     }
 
     public void setSignalCommunication(a aVar) {
-        this.f9589b = aVar;
-        aVar.f9609c = this;
+        this.f10375b = aVar;
+        aVar.f10395c = this;
     }
 
     public void setTempTypeForMetrics(int i) {
-        this.f9599n = i;
+        this.f10385n = i;
     }
 
     public void setWebViewChromeClient(j jVar) {
-        this.f9588a = jVar;
+        this.f10374a = jVar;
         setWebChromeClient(jVar);
     }
 
     public void setWebViewListener(com.anythink.core.express.web.c cVar) {
-        this.f9594g = cVar;
-        j jVar = this.f9588a;
+        this.f10380g = cVar;
+        j jVar = this.f10374a;
         if (jVar != null) {
             jVar.a(cVar);
         }
@@ -240,29 +240,29 @@ public class MraidBaseWebView extends BaseWebView {
         } catch (Throwable unused) {
             getSettings().setUserAgentString(m.h() + " WindVane/3.0.2");
         }
-        if (this.f9588a == null) {
-            this.f9588a = new j(this);
+        if (this.f10374a == null) {
+            this.f10374a = new j(this);
         }
-        setWebViewChromeClient(this.f9588a);
-        this.f9590c = new h();
-        if (this.f9589b == null) {
-            a aVar = new a(this.f17579h);
-            this.f9589b = aVar;
+        setWebViewChromeClient(this.f10374a);
+        this.f10376c = new h();
+        if (this.f10375b == null) {
+            a aVar = new a(this.f18366h);
+            this.f10375b = aVar;
             setSignalCommunication(aVar);
         }
     }
 
     public MraidBaseWebView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f9595j = false;
-        this.f9596k = 0.0f;
-        this.f9597l = 0.0f;
+        this.f10381j = false;
+        this.f10382k = 0.0f;
+        this.f10383l = 0.0f;
     }
 
     public MraidBaseWebView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f9595j = false;
-        this.f9596k = 0.0f;
-        this.f9597l = 0.0f;
+        this.f10381j = false;
+        this.f10382k = 0.0f;
+        this.f10383l = 0.0f;
     }
 }

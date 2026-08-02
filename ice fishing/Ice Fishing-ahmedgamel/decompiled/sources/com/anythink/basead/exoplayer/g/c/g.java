@@ -28,10 +28,10 @@ public final class g extends b {
     };
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f7377a;
+    public final long f8163a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final long f7378b;
+    public final long f8164b;
 
     public /* synthetic */ g(long j6, long j9, byte b9) {
         this(j6, j9);
@@ -44,17 +44,17 @@ public final class g extends b {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeLong(this.f7377a);
-        parcel.writeLong(this.f7378b);
+        parcel.writeLong(this.f8163a);
+        parcel.writeLong(this.f8164b);
     }
 
     private g(long j6, long j9) {
-        this.f7377a = j6;
-        this.f7378b = j9;
+        this.f8163a = j6;
+        this.f8164b = j9;
     }
 
     public static long a(s sVar, long j6) {
-        long d2 = sVar.d();
-        return (128 & d2) != 0 ? 8589934591L & ((((d2 & 1) << 32) | sVar.h()) + j6) : com.anythink.basead.exoplayer.b.f6382b;
+        long d9 = sVar.d();
+        return (128 & d9) != 0 ? 8589934591L & ((((d9 & 1) << 32) | sVar.h()) + j6) : com.anythink.basead.exoplayer.b.f7168b;
     }
 }

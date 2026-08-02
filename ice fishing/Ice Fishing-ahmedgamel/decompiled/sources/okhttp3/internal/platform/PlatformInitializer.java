@@ -6,24 +6,24 @@ import java.util.List;
 import kotlin.jvm.internal.h;
 import s8.e;
 import s8.f;
-import v7.C5135p;
+import v7.C5125p;
 
 /* loaded from: classes2.dex */
 public final class PlatformInitializer implements b {
     @Override // B0.b
     public final Object create(Context context) {
         h.e(context, "context");
-        f fVar = f.f40500a;
-        Object obj = f.f40500a;
+        f fVar = f.f40554a;
+        Object obj = f.f40554a;
         e eVar = obj instanceof e ? (e) obj : null;
         if (eVar != null) {
             eVar.a(context);
         }
-        return f.f40500a;
+        return f.f40554a;
     }
 
     @Override // B0.b
     public final List dependencies() {
-        return C5135p.f41442n;
+        return C5125p.f41221n;
     }
 }

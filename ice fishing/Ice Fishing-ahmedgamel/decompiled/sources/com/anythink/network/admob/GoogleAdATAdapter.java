@@ -14,7 +14,7 @@ import java.util.Map;
 public class GoogleAdATAdapter extends CustomNativeAdapter {
 
     /* renamed from: a, reason: collision with root package name */
-    private String f22904a;
+    private String f23691a;
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
@@ -27,7 +27,7 @@ public class GoogleAdATAdapter extends CustomNativeAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        return this.f22904a;
+        return this.f23691a;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -47,12 +47,12 @@ public class GoogleAdATAdapter extends CustomNativeAdapter {
             }
             return;
         }
-        this.f22904a = stringFromMap;
-        boolean z3 = false;
+        this.f23691a = stringFromMap;
+        boolean z6 = false;
         if (map != null) {
             try {
                 if (map.containsKey(CustomNativeAd.IS_AUTO_PLAY_KEY)) {
-                    z3 = Boolean.parseBoolean(map.get(CustomNativeAd.IS_AUTO_PLAY_KEY).toString());
+                    z6 = Boolean.parseBoolean(map.get(CustomNativeAd.IS_AUTO_PLAY_KEY).toString());
                 }
             } catch (Exception unused) {
             }
@@ -74,12 +74,12 @@ public class GoogleAdATAdapter extends CustomNativeAdapter {
         };
         Context applicationContext = context.getApplicationContext();
         GoogleAdATNativeAd googleAdATNativeAd = new GoogleAdATNativeAd(applicationContext, stringFromMap2, stringFromMap, loadCallbackListener, map2);
-        googleAdATNativeAd.setIsAutoPlay(z3);
+        googleAdATNativeAd.setIsAutoPlay(z6);
         googleAdATNativeAd.loadAd(applicationContext, map, map2);
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
-    public boolean setUserDataConsent(Context context, boolean z3, boolean z6) {
-        return AdMobATInitManager.getInstance().setUserDataConsent(context, z3, z6);
+    public boolean setUserDataConsent(Context context, boolean z6, boolean z9) {
+        return AdMobATInitManager.getInstance().setUserDataConsent(context, z6, z9);
     }
 }

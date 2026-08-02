@@ -6,11 +6,11 @@ import android.os.Build;
 public abstract class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final /* synthetic */ int f1476a = 0;
+    public static final /* synthetic */ int f1585a = 0;
 
     static {
         int i = Build.VERSION.SDK_INT;
-        a aVar = a.f1475a;
+        a aVar = a.f1584a;
         if (i >= 30) {
             aVar.a(30);
         }

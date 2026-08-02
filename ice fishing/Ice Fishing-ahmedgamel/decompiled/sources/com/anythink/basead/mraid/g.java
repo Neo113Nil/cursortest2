@@ -21,28 +21,28 @@ import org.json.JSONObject;
 public final class g extends Dialog {
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f9626a;
+    private final String f10412a;
 
     /* renamed from: b, reason: collision with root package name */
-    private String f9627b;
+    private String f10413b;
 
     /* renamed from: c, reason: collision with root package name */
-    private boolean f9628c;
+    private boolean f10414c;
 
     /* renamed from: d, reason: collision with root package name */
-    private FrameLayout f9629d;
+    private FrameLayout f10415d;
 
     /* renamed from: e, reason: collision with root package name */
-    private MraidBaseWebView f9630e;
+    private MraidBaseWebView f10416e;
 
     /* renamed from: f, reason: collision with root package name */
-    private TextView f9631f;
+    private TextView f10417f;
 
     /* renamed from: g, reason: collision with root package name */
-    private e f9632g;
+    private e f10418g;
 
     /* renamed from: h, reason: collision with root package name */
-    private com.anythink.core.express.b.b f9633h;
+    private com.anythink.core.express.b.b f10419h;
 
     /* renamed from: com.anythink.basead.mraid.g$1, reason: invalid class name */
     public class AnonymousClass1 implements View.OnClickListener {
@@ -82,32 +82,32 @@ public final class g extends Dialog {
 
         @Override // android.content.DialogInterface.OnDismissListener
         public final void onDismiss(DialogInterface dialogInterface) {
-            g.this.f9630e.loadDataWithBaseURL(null, "", "text/html", com.anythink.expressad.foundation.g.a.bR, null);
-            g.this.f9629d.removeView(g.this.f9630e);
-            g.this.f9630e.release();
-            g.this.f9630e = null;
-            g.this.f9632g = null;
+            g.this.f10416e.loadDataWithBaseURL(null, "", "text/html", com.anythink.expressad.foundation.g.a.bR, null);
+            g.this.f10415d.removeView(g.this.f10416e);
+            g.this.f10416e.release();
+            g.this.f10416e = null;
+            g.this.f10418g = null;
         }
     }
 
     public g(Context context, Bundle bundle, e eVar) {
         super(context);
-        this.f9626a = "BannerExpandDialog";
-        this.f9633h = new com.anythink.core.express.b.b() { // from class: com.anythink.basead.mraid.g.4
+        this.f10412a = "BannerExpandDialog";
+        this.f10419h = new com.anythink.core.express.b.b() { // from class: com.anythink.basead.mraid.g.4
             @Override // com.anythink.core.express.b.b
             public final void close() {
                 g.this.dismiss();
             }
 
             @Override // com.anythink.core.express.b.b
-            public final void expand(String str, boolean z3) {
+            public final void expand(String str, boolean z6) {
             }
 
             @Override // com.anythink.core.express.b.b
             public final void open(String str) {
                 try {
-                    if (g.this.f9632g != null) {
-                        g.this.f9632g.open(str);
+                    if (g.this.f10418g != null) {
+                        g.this.f10418g.open(str);
                     }
                 } catch (Throwable unused) {
                 }
@@ -119,16 +119,16 @@ public final class g extends Dialog {
             }
 
             @Override // com.anythink.core.express.b.b
-            public final void useCustomClose(boolean z3) {
+            public final void useCustomClose(boolean z6) {
                 try {
-                    g.this.f9631f.setVisibility(z3 ? 4 : 0);
+                    g.this.f10417f.setVisibility(z6 ? 4 : 0);
                 } catch (Throwable unused) {
                 }
             }
         };
-        this.f9627b = bundle.getString("url");
-        this.f9628c = bundle.getBoolean("shouldUseCustomClose");
-        this.f9632g = eVar;
+        this.f10413b = bundle.getString("url");
+        this.f10414c = bundle.getBoolean("shouldUseCustomClose");
+        this.f10418g = eVar;
     }
 
     @Override // android.app.Dialog
@@ -138,23 +138,23 @@ public final class g extends Dialog {
         setCanceledOnTouchOutside(false);
         setCancelable(true);
         FrameLayout frameLayout = new FrameLayout(getContext());
-        this.f9629d = frameLayout;
+        this.f10415d = frameLayout;
         frameLayout.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
         MraidBaseWebView mraidBaseWebView = new MraidBaseWebView(getContext().getApplicationContext());
-        this.f9630e = mraidBaseWebView;
+        this.f10416e = mraidBaseWebView;
         mraidBaseWebView.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
-        this.f9629d.addView(this.f9630e);
+        this.f10415d.addView(this.f10416e);
         TextView textView = new TextView(getContext());
-        this.f9631f = textView;
+        this.f10417f = textView;
         textView.setBackgroundColor(0);
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(96, 96);
         layoutParams.gravity = 8388661;
         layoutParams.setMargins(30, 30, 30, 30);
-        this.f9631f.setLayoutParams(layoutParams);
-        this.f9631f.setVisibility(this.f9628c ? 4 : 0);
-        this.f9631f.setOnClickListener(new AnonymousClass1());
-        this.f9629d.addView(this.f9631f);
-        setContentView(this.f9629d);
+        this.f10417f.setLayoutParams(layoutParams);
+        this.f10417f.setVisibility(this.f10414c ? 4 : 0);
+        this.f10417f.setOnClickListener(new AnonymousClass1());
+        this.f10415d.addView(this.f10417f);
+        setContentView(this.f10415d);
         if (getWindow() != null) {
             getWindow().setBackgroundDrawable(new ColorDrawable(0));
             getWindow().getDecorView().setPadding(0, 0, 0, 0);
@@ -164,9 +164,9 @@ public final class g extends Dialog {
             getWindow().setAttributes(attributes);
             getWindow().getDecorView().setSystemUiVisibility(4615);
         }
-        this.f9630e.setWebViewListener(new AnonymousClass2());
-        this.f9630e.setObject(this.f9633h);
-        this.f9630e.loadUrl(this.f9627b);
+        this.f10416e.setWebViewListener(new AnonymousClass2());
+        this.f10416e.setObject(this.f10419h);
+        this.f10416e.loadUrl(this.f10413b);
         setOnDismissListener(new AnonymousClass3());
     }
 
@@ -177,51 +177,51 @@ public final class g extends Dialog {
             jSONObject.put("orientation", i == 2 ? "landscape" : i == 1 ? "portrait" : "undefined");
             jSONObject.put("locked", "true");
             float e9 = q.e(t.b().g());
-            float f3 = q.f(t.b().g());
-            HashMap g4 = q.g(t.b().g());
-            int intValue = ((Integer) g4.get("width")).intValue();
-            int intValue2 = ((Integer) g4.get("height")).intValue();
+            float f2 = q.f(t.b().g());
+            HashMap g9 = q.g(t.b().g());
+            int intValue = ((Integer) g9.get("width")).intValue();
+            int intValue2 = ((Integer) g9.get("height")).intValue();
             HashMap hashMap = new HashMap();
-            hashMap.put(com.anythink.core.express.b.a.f17525a, "Interstitial");
-            hashMap.put(com.anythink.core.express.b.a.f17526b, com.anythink.core.express.b.a.f17531g);
-            hashMap.put(com.anythink.core.express.b.a.f17527c, "true");
-            hashMap.put(com.anythink.core.express.b.a.f17528d, jSONObject);
-            this.f9630e.getLocationInWindow(new int[2]);
+            hashMap.put(com.anythink.core.express.b.a.f18312a, "Interstitial");
+            hashMap.put(com.anythink.core.express.b.a.f18313b, com.anythink.core.express.b.a.f18318g);
+            hashMap.put(com.anythink.core.express.b.a.f18314c, "true");
+            hashMap.put(com.anythink.core.express.b.a.f18315d, jSONObject);
+            this.f10416e.getLocationInWindow(new int[2]);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.a(this.f9630e, r0[0], r0[1], r2.getWidth(), this.f9630e.getHeight());
+            com.anythink.core.express.b.a.a(this.f10416e, r0[0], r0[1], r2.getWidth(), this.f10416e.getHeight());
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.b(this.f9630e, r0[0], r0[1], r2.getWidth(), this.f9630e.getHeight());
+            com.anythink.core.express.b.a.b(this.f10416e, r0[0], r0[1], r2.getWidth(), this.f10416e.getHeight());
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.b(this.f9630e, e9, f3);
+            com.anythink.core.express.b.a.b(this.f10416e, e9, f2);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.c(this.f9630e, intValue, intValue2);
+            com.anythink.core.express.b.a.c(this.f10416e, intValue, intValue2);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.a(this.f9630e, hashMap);
+            com.anythink.core.express.b.a.a(this.f10416e, hashMap);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.a(this.f9630e);
+            com.anythink.core.express.b.a.a(this.f10416e);
         } catch (Throwable unused) {
         }
     }
 
     private void a() {
         FrameLayout frameLayout = new FrameLayout(getContext());
-        this.f9629d = frameLayout;
+        this.f10415d = frameLayout;
         frameLayout.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
         MraidBaseWebView mraidBaseWebView = new MraidBaseWebView(getContext().getApplicationContext());
-        this.f9630e = mraidBaseWebView;
+        this.f10416e = mraidBaseWebView;
         mraidBaseWebView.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
-        this.f9629d.addView(this.f9630e);
+        this.f10415d.addView(this.f10416e);
         TextView textView = new TextView(getContext());
-        this.f9631f = textView;
+        this.f10417f = textView;
         textView.setBackgroundColor(0);
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(96, 96);
         layoutParams.gravity = 8388661;
         layoutParams.setMargins(30, 30, 30, 30);
-        this.f9631f.setLayoutParams(layoutParams);
-        this.f9631f.setVisibility(this.f9628c ? 4 : 0);
-        this.f9631f.setOnClickListener(new AnonymousClass1());
-        this.f9629d.addView(this.f9631f);
-        setContentView(this.f9629d);
+        this.f10417f.setLayoutParams(layoutParams);
+        this.f10417f.setVisibility(this.f10414c ? 4 : 0);
+        this.f10417f.setOnClickListener(new AnonymousClass1());
+        this.f10415d.addView(this.f10417f);
+        setContentView(this.f10415d);
         if (getWindow() != null) {
             getWindow().setBackgroundDrawable(new ColorDrawable(0));
             getWindow().getDecorView().setPadding(0, 0, 0, 0);
@@ -231,9 +231,9 @@ public final class g extends Dialog {
             getWindow().setAttributes(attributes);
             getWindow().getDecorView().setSystemUiVisibility(4615);
         }
-        this.f9630e.setWebViewListener(new AnonymousClass2());
-        this.f9630e.setObject(this.f9633h);
-        this.f9630e.loadUrl(this.f9627b);
+        this.f10416e.setWebViewListener(new AnonymousClass2());
+        this.f10416e.setObject(this.f10419h);
+        this.f10416e.loadUrl(this.f10413b);
         setOnDismissListener(new AnonymousClass3());
     }
 
@@ -250,28 +250,28 @@ public final class g extends Dialog {
             jSONObject.put("orientation", str);
             jSONObject.put("locked", "true");
             float e9 = q.e(t.b().g());
-            float f3 = q.f(t.b().g());
-            HashMap g4 = q.g(t.b().g());
-            int intValue = ((Integer) g4.get("width")).intValue();
-            int intValue2 = ((Integer) g4.get("height")).intValue();
+            float f2 = q.f(t.b().g());
+            HashMap g9 = q.g(t.b().g());
+            int intValue = ((Integer) g9.get("width")).intValue();
+            int intValue2 = ((Integer) g9.get("height")).intValue();
             HashMap hashMap = new HashMap();
-            hashMap.put(com.anythink.core.express.b.a.f17525a, "Interstitial");
-            hashMap.put(com.anythink.core.express.b.a.f17526b, com.anythink.core.express.b.a.f17531g);
-            hashMap.put(com.anythink.core.express.b.a.f17527c, "true");
-            hashMap.put(com.anythink.core.express.b.a.f17528d, jSONObject);
-            gVar.f9630e.getLocationInWindow(new int[2]);
+            hashMap.put(com.anythink.core.express.b.a.f18312a, "Interstitial");
+            hashMap.put(com.anythink.core.express.b.a.f18313b, com.anythink.core.express.b.a.f18318g);
+            hashMap.put(com.anythink.core.express.b.a.f18314c, "true");
+            hashMap.put(com.anythink.core.express.b.a.f18315d, jSONObject);
+            gVar.f10416e.getLocationInWindow(new int[2]);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.a(gVar.f9630e, r0[0], r0[1], r2.getWidth(), gVar.f9630e.getHeight());
+            com.anythink.core.express.b.a.a(gVar.f10416e, r0[0], r0[1], r2.getWidth(), gVar.f10416e.getHeight());
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.b(gVar.f9630e, r0[0], r0[1], r2.getWidth(), gVar.f9630e.getHeight());
+            com.anythink.core.express.b.a.b(gVar.f10416e, r0[0], r0[1], r2.getWidth(), gVar.f10416e.getHeight());
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.b(gVar.f9630e, e9, f3);
+            com.anythink.core.express.b.a.b(gVar.f10416e, e9, f2);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.c(gVar.f9630e, intValue, intValue2);
+            com.anythink.core.express.b.a.c(gVar.f10416e, intValue, intValue2);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.a(gVar.f9630e, hashMap);
+            com.anythink.core.express.b.a.a(gVar.f10416e, hashMap);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.a(gVar.f9630e);
+            com.anythink.core.express.b.a.a(gVar.f10416e);
         } catch (Throwable unused) {
         }
     }

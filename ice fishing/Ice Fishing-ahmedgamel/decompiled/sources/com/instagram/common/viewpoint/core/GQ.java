@@ -15,9 +15,9 @@ public interface GQ {
     void AGP(C6I c6i);
 
     @Deprecated
-    void AGU(C2400qI c2400qI);
+    void AGU(C2420qI c2420qI);
 
-    void AGV(C2400qI c2400qI, C6L c6l);
+    void AGV(C2420qI c2420qI, C6L c6l);
 
-    void AGb(C2353pW c2353pW);
+    void AGb(C2373pW c2373pW);
 }

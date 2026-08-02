@@ -7,32 +7,32 @@ import android.text.TextUtils;
 public final class e extends c {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f21066a = "ProxyShowRewardListener";
+    private static final String f21853a = "ProxyShowRewardListener";
 
     /* renamed from: d, reason: collision with root package name */
-    private h f21067d;
+    private h f21854d;
 
     /* renamed from: e, reason: collision with root package name */
-    private com.anythink.expressad.videocommon.e.d f21068e;
+    private com.anythink.expressad.videocommon.e.d f21855e;
 
     /* renamed from: f, reason: collision with root package name */
-    private String f21069f;
+    private String f21856f;
 
     /* renamed from: g, reason: collision with root package name */
-    private String f21070g;
+    private String f21857g;
 
     /* renamed from: h, reason: collision with root package name */
-    private boolean f21071h;
+    private boolean f21858h;
     private Context i;
 
     /* renamed from: j, reason: collision with root package name */
-    private boolean f21072j = false;
+    private boolean f21859j = false;
 
     /* renamed from: k, reason: collision with root package name */
-    private boolean f21073k = false;
+    private boolean f21860k = false;
 
     /* renamed from: l, reason: collision with root package name */
-    private boolean f21074l = false;
+    private boolean f21861l = false;
 
     /* JADX WARN: Removed duplicated region for block: B:12:0x004b A[Catch: Exception -> 0x006f, TryCatch #0 {Exception -> 0x006f, blocks: (B:3:0x0016, B:5:0x0026, B:7:0x002f, B:9:0x0038, B:10:0x0041, B:12:0x004b, B:14:0x0051, B:16:0x0057, B:18:0x0061, B:21:0x0065, B:23:0x0069), top: B:2:0x0016 }] */
     /* JADX WARN: Removed duplicated region for block: B:14:0x0051 A[Catch: Exception -> 0x006f, TryCatch #0 {Exception -> 0x006f, blocks: (B:3:0x0016, B:5:0x0026, B:7:0x002f, B:9:0x0038, B:10:0x0041, B:12:0x004b, B:14:0x0051, B:16:0x0057, B:18:0x0061, B:21:0x0065, B:23:0x0069), top: B:2:0x0016 }] */
@@ -40,13 +40,13 @@ public final class e extends c {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public e(Context context, boolean z3, com.anythink.expressad.videocommon.e.d dVar, com.anythink.expressad.foundation.d.d dVar2, h hVar, String str, String str2) {
+    public e(Context context, boolean z6, com.anythink.expressad.videocommon.e.d dVar, com.anythink.expressad.foundation.d.d dVar2, h hVar, String str, String str2) {
         long j6;
-        this.f21067d = hVar;
-        this.f21068e = dVar;
-        this.f21069f = str2;
-        this.f21070g = str;
-        this.f21071h = z3;
+        this.f21854d = hVar;
+        this.f21855e = dVar;
+        this.f21856f = str2;
+        this.f21857g = str;
+        this.f21858h = z6;
         this.i = context;
         try {
             if (!TextUtils.isEmpty(com.anythink.expressad.foundation.b.a.c().f())) {
@@ -139,7 +139,7 @@ public final class e extends c {
     @Override // com.anythink.expressad.video.bt.module.b.c, com.anythink.expressad.video.bt.module.b.h
     public final void b() {
         super.b();
-        h hVar = this.f21067d;
+        h hVar = this.f21854d;
         if (hVar != null) {
             hVar.b();
         }
@@ -148,7 +148,7 @@ public final class e extends c {
     @Override // com.anythink.expressad.video.bt.module.b.c, com.anythink.expressad.video.bt.module.b.h
     public final void c() {
         super.c();
-        h hVar = this.f21067d;
+        h hVar = this.f21854d;
         if (hVar != null) {
             hVar.c();
         }
@@ -157,50 +157,50 @@ public final class e extends c {
     @Override // com.anythink.expressad.video.bt.module.b.c, com.anythink.expressad.video.bt.module.b.h
     public final void a() {
         super.a();
-        h hVar = this.f21067d;
-        if (hVar == null || this.f21072j) {
+        h hVar = this.f21854d;
+        if (hVar == null || this.f21859j) {
             return;
         }
-        this.f21072j = true;
+        this.f21859j = true;
         hVar.a();
     }
 
     @Override // com.anythink.expressad.video.bt.module.b.c, com.anythink.expressad.video.bt.module.b.h
-    public final void a(boolean z3, com.anythink.expressad.videocommon.c.c cVar) {
-        super.a(z3, cVar);
-        h hVar = this.f21067d;
-        if (hVar == null || this.f21074l) {
+    public final void a(boolean z6, com.anythink.expressad.videocommon.c.c cVar) {
+        super.a(z6, cVar);
+        h hVar = this.f21854d;
+        if (hVar == null || this.f21861l) {
             return;
         }
-        this.f21074l = true;
-        hVar.a(z3, cVar);
+        this.f21861l = true;
+        hVar.a(z6, cVar);
     }
 
     @Override // com.anythink.expressad.video.bt.module.b.c, com.anythink.expressad.video.bt.module.b.h
-    public final void a(boolean z3, int i) {
-        super.a(z3, i);
-        h hVar = this.f21067d;
-        if (hVar == null || this.f21074l) {
+    public final void a(boolean z6, int i) {
+        super.a(z6, i);
+        h hVar = this.f21854d;
+        if (hVar == null || this.f21861l) {
             return;
         }
-        hVar.a(z3, i);
+        hVar.a(z6, i);
     }
 
     @Override // com.anythink.expressad.video.bt.module.b.c, com.anythink.expressad.video.bt.module.b.h
     public final void a(String str) {
         super.a(str);
-        h hVar = this.f21067d;
-        if (hVar == null || this.f21073k) {
+        h hVar = this.f21854d;
+        if (hVar == null || this.f21860k) {
             return;
         }
-        this.f21073k = true;
+        this.f21860k = true;
         hVar.a(str);
     }
 
     @Override // com.anythink.expressad.video.bt.module.b.c, com.anythink.expressad.video.bt.module.b.h
     public final void a(com.anythink.expressad.foundation.d.d dVar) {
         super.a(dVar);
-        h hVar = this.f21067d;
+        h hVar = this.f21854d;
         if (hVar != null) {
             hVar.a(dVar);
         }

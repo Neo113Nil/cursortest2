@@ -4,7 +4,7 @@ package com.anythink.expressad.video.signal.a;
 public class b implements com.anythink.expressad.video.signal.b {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f21779a = "b";
+    private static final String f22566a = "b";
 
     @Override // com.anythink.expressad.video.signal.d
     public void click(int i, String str) {

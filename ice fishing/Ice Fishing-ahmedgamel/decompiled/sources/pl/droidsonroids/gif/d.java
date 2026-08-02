@@ -10,17 +10,17 @@ public final class d extends View.BaseSavedState {
     public static final Parcelable.Creator<d> CREATOR = new B8.d(0);
 
     /* renamed from: n, reason: collision with root package name */
-    public final long[][] f39969n;
+    public final long[][] f40016n;
 
     public d(Parcelable parcelable, Drawable... drawableArr) {
         super(parcelable);
-        this.f39969n = new long[drawableArr.length][];
+        this.f40016n = new long[drawableArr.length][];
         for (int i = 0; i < drawableArr.length; i++) {
             Drawable drawable = drawableArr[i];
             if (drawable instanceof c) {
-                this.f39969n[i] = ((c) drawable).f39968z.i();
+                this.f40016n[i] = ((c) drawable).f40015z.i();
             } else {
-                this.f39969n[i] = null;
+                this.f40016n[i] = null;
             }
         }
     }
@@ -28,7 +28,7 @@ public final class d extends View.BaseSavedState {
     @Override // android.view.View.BaseSavedState, android.view.AbsSavedState, android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         super.writeToParcel(parcel, i);
-        long[][] jArr = this.f39969n;
+        long[][] jArr = this.f40016n;
         parcel.writeInt(jArr.length);
         for (long[] jArr2 : jArr) {
             parcel.writeLongArray(jArr2);
@@ -37,10 +37,10 @@ public final class d extends View.BaseSavedState {
 
     public d(Parcel parcel) {
         super(parcel);
-        this.f39969n = new long[parcel.readInt()][];
+        this.f40016n = new long[parcel.readInt()][];
         int i = 0;
         while (true) {
-            long[][] jArr = this.f39969n;
+            long[][] jArr = this.f40016n;
             if (i >= jArr.length) {
                 return;
             }

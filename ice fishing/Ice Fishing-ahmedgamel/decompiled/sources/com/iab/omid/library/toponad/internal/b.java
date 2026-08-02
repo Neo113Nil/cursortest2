@@ -9,20 +9,20 @@ public class b extends d {
 
     /* renamed from: d, reason: collision with root package name */
     @SuppressLint({"StaticFieldLeak"})
-    private static b f36239d = new b();
+    private static b f37006d = new b();
 
     private b() {
     }
 
     public static b g() {
-        return f36239d;
+        return f37006d;
     }
 
     @Override // com.iab.omid.library.toponad.internal.d
-    public void b(boolean z3) {
+    public void b(boolean z6) {
         Iterator<com.iab.omid.library.toponad.adsession.a> it = c.c().b().iterator();
         while (it.hasNext()) {
-            it.next().getAdSessionStatePublisher().a(z3);
+            it.next().getAdSessionStatePublisher().a(z6);
         }
     }
 

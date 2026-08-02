@@ -1,7 +1,7 @@
 package t5;
 
-import D.I;
-import D.N;
+import D.H;
+import D.M;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -11,7 +11,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.service.notification.StatusBarNotification;
 import com.onesignal.common.AndroidUtils;
-import i5.InterfaceC4589f;
+import i5.InterfaceC4598f;
 import java.util.ArrayList;
 import java.util.Iterator;
 import org.json.JSONArray;
@@ -38,7 +38,7 @@ public final class e {
         int importance;
         kotlin.jvm.internal.h.e(context, "context");
         try {
-            if (!I.a(new N(context).f461b)) {
+            if (!H.a(new M(context).f358b)) {
                 return false;
             }
             if (str == null || Build.VERSION.SDK_INT < 26) {
@@ -66,7 +66,7 @@ public final class e {
             Notification build = recoverBuilder.setGroup(GROUPLESS_SUMMARY_KEY).setOnlyAlertOnce(true).build();
             kotlin.jvm.internal.h.d(build, "build(...)");
             kotlin.jvm.internal.h.b(context);
-            new N(context).a(next.getId(), build);
+            new M(context).a(next.getId(), build);
         }
     }
 
@@ -76,7 +76,7 @@ public final class e {
         int length = jsonArray.length();
         int optInt = jsonArray.optJSONObject(0).optInt("androidNotificationId");
         ArrayList arrayList = new ArrayList();
-        boolean z3 = true;
+        boolean z6 = true;
         JSONObject jSONObject = null;
         String str = null;
         for (int i = 0; i < length; i++) {
@@ -85,8 +85,8 @@ public final class e {
                 if (str == null && jSONObject.has("actionId")) {
                     str = jSONObject.optString("actionId", null);
                 }
-                if (z3) {
-                    z3 = false;
+                if (z6) {
+                    z6 = false;
                 } else {
                     arrayList.add(new com.onesignal.notifications.internal.c(jSONObject, time));
                 }
@@ -105,8 +105,8 @@ public final class e {
         for (StatusBarNotification statusBarNotification : getActiveNotifications(context)) {
             Notification notification = statusBarNotification.getNotification();
             boolean isGroupSummary = isGroupSummary(statusBarNotification);
-            boolean z3 = notification.getGroup() == null || kotlin.jvm.internal.h.a(notification.getGroup(), GROUPLESS_SUMMARY_KEY);
-            if (!isGroupSummary && z3) {
+            boolean z6 = notification.getGroup() == null || kotlin.jvm.internal.h.a(notification.getGroup(), GROUPLESS_SUMMARY_KEY);
+            if (!isGroupSummary && z6) {
                 arrayList.add(statusBarNotification);
             }
         }
@@ -125,7 +125,7 @@ public final class e {
         }
     }
 
-    public final String getCampaignNameFromNotification(InterfaceC4589f notification) {
+    public final String getCampaignNameFromNotification(InterfaceC4598f notification) {
         String templateId;
         kotlin.jvm.internal.h.e(notification, "notification");
         String templateName = notification.getTemplateName();

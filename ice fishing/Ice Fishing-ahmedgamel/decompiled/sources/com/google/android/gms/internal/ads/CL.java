@@ -9,34 +9,34 @@ import java.util.NoSuchElementException;
 public final class CL extends JK {
 
     /* renamed from: A, reason: collision with root package name */
-    public static final int[] f24102A = {1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040, 1346269, 2178309, 3524578, 5702887, 9227465, 14930352, 24157817, 39088169, 63245986, 102334155, 165580141, 267914296, 433494437, 701408733, 1134903170, 1836311903, Integer.MAX_VALUE};
+    public static final int[] f24865A = {1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040, 1346269, 2178309, 3524578, 5702887, 9227465, 14930352, 24157817, 39088169, 63245986, 102334155, 165580141, 267914296, 433494437, 701408733, 1134903170, 1836311903, Integer.MAX_VALUE};
 
     /* renamed from: v, reason: collision with root package name */
-    public final int f24103v;
+    public final int f24866v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final JK f24104w;
+    public final JK f24867w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final JK f24105x;
+    public final JK f24868x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final int f24106y;
+    public final int f24869y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final int f24107z;
+    public final int f24870z;
 
     public CL(JK jk, JK jk2) {
-        this.f24104w = jk;
-        this.f24105x = jk2;
-        int f3 = jk.f();
-        this.f24106y = f3;
-        this.f24103v = jk2.f() + f3;
-        this.f24107z = Math.max(jk.p(), jk2.p()) + 1;
+        this.f24867w = jk;
+        this.f24868x = jk2;
+        int f2 = jk.f();
+        this.f24869y = f2;
+        this.f24866v = jk2.f() + f2;
+        this.f24870z = Math.max(jk.p(), jk2.p()) + 1;
     }
 
     public static int v(int i) {
-        int[] iArr = f24102A;
+        int[] iArr = f24865A;
         if (i >= 47) {
             return Integer.MAX_VALUE;
         }
@@ -45,57 +45,57 @@ public final class CL extends JK {
 
     @Override // com.google.android.gms.internal.ads.JK
     public final byte e(int i) {
-        int i6 = this.f24106y;
-        return i < i6 ? this.f24104w.e(i) : this.f24105x.e(i - i6);
+        int i4 = this.f24869y;
+        return i < i4 ? this.f24867w.e(i) : this.f24868x.e(i - i4);
     }
 
     @Override // com.google.android.gms.internal.ads.JK
     public final int f() {
-        return this.f24103v;
+        return this.f24866v;
     }
 
     @Override // com.google.android.gms.internal.ads.JK
-    public final JK g(int i, int i6) {
-        return h(i, i6);
+    public final JK g(int i, int i4) {
+        return h(i, i4);
     }
 
     @Override // com.google.android.gms.internal.ads.JK
-    public final JK h(int i, int i6) {
-        int i9 = this.f24103v;
-        int c9 = JK.c(i, i6, i9);
+    public final JK h(int i, int i4) {
+        int i6 = this.f24866v;
+        int c9 = JK.c(i, i4, i6);
         if (c9 == 0) {
-            return JK.f25675u;
+            return JK.f26428u;
         }
-        if (c9 == i9) {
+        if (c9 == i6) {
             return this;
         }
-        JK jk = this.f24104w;
-        int i10 = this.f24106y;
-        if (i6 <= i10) {
-            return jk.g(i, i6);
+        JK jk = this.f24867w;
+        int i9 = this.f24869y;
+        if (i4 <= i9) {
+            return jk.g(i, i4);
         }
-        int i11 = i6 - i10;
-        JK jk2 = this.f24105x;
-        return i >= i10 ? jk2.g(i - i10, i11) : new CL(jk.g(i, jk.f()), jk2.g(0, i11));
+        int i10 = i4 - i9;
+        JK jk2 = this.f24868x;
+        return i >= i9 ? jk2.g(i - i9, i10) : new CL(jk.g(i, jk.f()), jk2.g(0, i10));
     }
 
     @Override // com.google.android.gms.internal.ads.JK
-    public final void i(int i, int i6, int i9, byte[] bArr) {
-        int i10 = i + i9;
-        JK jk = this.f24104w;
-        int i11 = this.f24106y;
-        if (i10 <= i11) {
-            jk.i(i, i6, i9, bArr);
+    public final void i(int i, int i4, int i6, byte[] bArr) {
+        int i9 = i + i6;
+        JK jk = this.f24867w;
+        int i10 = this.f24869y;
+        if (i9 <= i10) {
+            jk.i(i, i4, i6, bArr);
             return;
         }
-        JK jk2 = this.f24105x;
-        if (i >= i11) {
-            jk2.i(i - i11, i6, i9, bArr);
+        JK jk2 = this.f24868x;
+        if (i >= i10) {
+            jk2.i(i - i10, i4, i6, bArr);
             return;
         }
-        int i12 = i11 - i;
-        jk.i(i, i6, i12, bArr);
-        jk2.i(0, i6 + i12, i9 - i12, bArr);
+        int i11 = i10 - i;
+        jk.i(i, i4, i11, bArr);
+        jk2.i(0, i4 + i11, i6 - i11, bArr);
     }
 
     @Override // com.google.android.gms.internal.ads.JK, java.lang.Iterable
@@ -105,8 +105,8 @@ public final class CL extends JK {
 
     @Override // com.google.android.gms.internal.ads.JK
     public final void k(OK ok) {
-        this.f24104w.k(ok);
-        this.f24105x.k(ok);
+        this.f24867w.k(ok);
+        this.f24868x.k(ok);
     }
 
     @Override // com.google.android.gms.internal.ads.JK
@@ -116,24 +116,24 @@ public final class CL extends JK {
         BL bl2 = new BL(jk);
         GK next2 = bl2.next();
         int i = 0;
+        int i4 = 0;
         int i6 = 0;
-        int i9 = 0;
         while (true) {
-            int f3 = next.f() - i;
-            int f9 = next2.f() - i6;
-            int min = Math.min(f3, f9);
-            if (!(i == 0 ? next.v(next2, i6, min) : next2.v(next, i, min))) {
+            int f2 = next.f() - i;
+            int f9 = next2.f() - i4;
+            int min = Math.min(f2, f9);
+            if (!(i == 0 ? next.v(next2, i4, min) : next2.v(next, i, min))) {
                 return false;
             }
-            i9 += min;
-            int i10 = this.f24103v;
-            if (i9 >= i10) {
-                if (i9 == i10) {
+            i6 += min;
+            int i9 = this.f24866v;
+            if (i6 >= i9) {
+                if (i6 == i9) {
                     return true;
                 }
                 throw new IllegalStateException();
             }
-            if (min == f3) {
+            if (min == f2) {
                 i = 0;
                 next = bl.next();
             } else {
@@ -142,57 +142,57 @@ public final class CL extends JK {
             }
             if (min == f9) {
                 next2 = bl2.next();
-                i6 = 0;
+                i4 = 0;
             } else {
-                i6 += min;
+                i4 += min;
             }
         }
     }
 
     @Override // com.google.android.gms.internal.ads.JK
-    public final int n(int i, int i6, int i9) {
-        int i10 = i6 + i9;
-        JK jk = this.f24104w;
-        int i11 = this.f24106y;
-        if (i10 <= i11) {
-            return jk.n(i, i6, i9);
+    public final int n(int i, int i4, int i6) {
+        int i9 = i4 + i6;
+        JK jk = this.f24867w;
+        int i10 = this.f24869y;
+        if (i9 <= i10) {
+            return jk.n(i, i4, i6);
         }
-        JK jk2 = this.f24105x;
-        if (i6 >= i11) {
-            return jk2.n(i, i6 - i11, i9);
+        JK jk2 = this.f24868x;
+        if (i4 >= i10) {
+            return jk2.n(i, i4 - i10, i6);
         }
-        int i12 = i11 - i6;
-        return jk2.n(jk.n(i, i6, i12), 0, i9 - i12);
+        int i11 = i10 - i4;
+        return jk2.n(jk.n(i, i4, i11), 0, i6 - i11);
     }
 
     @Override // com.google.android.gms.internal.ads.JK
     public final W7.b o() {
         GK gk;
         ArrayList arrayList = new ArrayList();
-        ArrayDeque arrayDeque = new ArrayDeque(this.f24107z);
+        ArrayDeque arrayDeque = new ArrayDeque(this.f24870z);
         arrayDeque.push(this);
-        JK jk = this.f24104w;
+        JK jk = this.f24867w;
         while (jk instanceof CL) {
             CL cl = (CL) jk;
             arrayDeque.push(cl);
-            jk = cl.f24104w;
+            jk = cl.f24867w;
         }
         GK gk2 = (GK) jk;
         while (true) {
             if (!(gk2 != null)) {
-                C3349iL c3349iL = new C3349iL();
-                c3349iL.f31031n = arrayList.iterator();
-                c3349iL.f31033v = 0;
+                C3372iL c3372iL = new C3372iL();
+                c3372iL.f31804n = arrayList.iterator();
+                c3372iL.f31806v = 0;
                 Iterator it = arrayList.iterator();
                 while (it.hasNext()) {
-                    c3349iL.f31033v++;
+                    c3372iL.f31806v++;
                 }
-                c3349iL.f31034w = -1;
-                if (!c3349iL.b()) {
-                    c3349iL.f31032u = AbstractC3080dL.f29747b;
-                    c3349iL.f31035x = 0;
+                c3372iL.f31807w = -1;
+                if (!c3372iL.b()) {
+                    c3372iL.f31805u = AbstractC3103dL.f30519b;
+                    c3372iL.f31808x = 0;
                 }
-                return new LK(c3349iL);
+                return new LK(c3372iL);
             }
             if (gk2 == null) {
                 throw new NoSuchElementException();
@@ -202,11 +202,11 @@ public final class CL extends JK {
                 if (arrayDeque.isEmpty()) {
                     break;
                 }
-                JK jk2 = ((CL) arrayDeque.pop()).f24105x;
+                JK jk2 = ((CL) arrayDeque.pop()).f24868x;
                 while (jk2 instanceof CL) {
                     CL cl2 = (CL) jk2;
                     arrayDeque.push(cl2);
-                    jk2 = cl2.f24104w;
+                    jk2 = cl2.f24867w;
                 }
                 gk = (GK) jk2;
                 arrayList.add(gk2.j());
@@ -219,17 +219,17 @@ public final class CL extends JK {
 
     @Override // com.google.android.gms.internal.ads.JK
     public final int p() {
-        return this.f24107z;
+        return this.f24870z;
     }
 
     @Override // com.google.android.gms.internal.ads.JK
     public final boolean q() {
-        return this.f24103v >= v(this.f24107z);
+        return this.f24866v >= v(this.f24870z);
     }
 
     @Override // com.google.android.gms.internal.ads.JK
     /* renamed from: r */
-    public final AbstractC4255zC iterator() {
+    public final AbstractC4278zC iterator() {
         return new AL(this);
     }
 }

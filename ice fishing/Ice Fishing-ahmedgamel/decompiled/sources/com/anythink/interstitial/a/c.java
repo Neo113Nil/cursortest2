@@ -8,15 +8,15 @@ import com.anythink.core.api.ATNetworkConfirmInfo;
 public class c implements ATCommonImpressionListener {
 
     /* renamed from: c, reason: collision with root package name */
-    f f22693c;
+    f f23480c;
 
     public c(f fVar) {
-        this.f22693c = fVar;
+        this.f23480c = fVar;
     }
 
     @Override // com.anythink.core.api.ATCommonImpressionListener
     public void onAdClick() {
-        f fVar = this.f22693c;
+        f fVar = this.f23480c;
         if (fVar != null) {
             fVar.onInterstitialAdClicked();
         }
@@ -24,7 +24,7 @@ public class c implements ATCommonImpressionListener {
 
     @Override // com.anythink.core.api.ATCommonImpressionListener
     public void onAdDismiss() {
-        f fVar = this.f22693c;
+        f fVar = this.f23480c;
         if (fVar != null) {
             fVar.onInterstitialAdClose();
         }
@@ -32,7 +32,7 @@ public class c implements ATCommonImpressionListener {
 
     @Override // com.anythink.core.api.ATCommonImpressionListener
     public void onAdImpression() {
-        f fVar = this.f22693c;
+        f fVar = this.f23480c;
         if (fVar != null) {
             fVar.onInterstitialAdShow();
         }
@@ -48,7 +48,7 @@ public class c implements ATCommonImpressionListener {
 
     @Override // com.anythink.core.api.ATCommonImpressionListener
     public void onAdShowFail(String str, String str2) {
-        f fVar = this.f22693c;
+        f fVar = this.f23480c;
         if (fVar != null) {
             fVar.onInterstitialAdVideoError(str, str2);
         }
@@ -56,7 +56,7 @@ public class c implements ATCommonImpressionListener {
 
     @Override // com.anythink.core.api.ATCommonImpressionListener
     public void onAdVideoPlayEnd() {
-        f fVar = this.f22693c;
+        f fVar = this.f23480c;
         if (fVar != null) {
             fVar.onInterstitialAdVideoEnd();
         }
@@ -64,23 +64,23 @@ public class c implements ATCommonImpressionListener {
 
     @Override // com.anythink.core.api.ATCommonImpressionListener
     public void onAdVideoPlayStart() {
-        f fVar = this.f22693c;
+        f fVar = this.f23480c;
         if (fVar != null) {
             fVar.onInterstitialAdVideoStart();
         }
     }
 
     @Override // com.anythink.core.api.ATCommonImpressionListener
-    public void onDeeplinkCallback(boolean z3) {
-        f fVar = this.f22693c;
+    public void onDeeplinkCallback(boolean z6) {
+        f fVar = this.f23480c;
         if (fVar != null) {
-            fVar.onDeeplinkCallback(z3);
+            fVar.onDeeplinkCallback(z6);
         }
     }
 
     @Override // com.anythink.core.api.ATCommonImpressionListener
     public void onDownloadConfirm(Context context, ATNetworkConfirmInfo aTNetworkConfirmInfo) {
-        f fVar = this.f22693c;
+        f fVar = this.f23480c;
         if (fVar != null) {
             fVar.onDownloadConfirm(context, aTNetworkConfirmInfo);
         }

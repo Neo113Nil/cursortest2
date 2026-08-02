@@ -1,13 +1,13 @@
 package com.onesignal.core.internal.startup;
 
+import A3.p;
 import B7.h;
-import D.RunnableC0282a;
 import D4.e;
 import I7.l;
 import java.util.Iterator;
 import u7.v;
 import v4.d;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class c {
@@ -16,22 +16,22 @@ public final class c {
     public static final class a extends h implements l {
         int label;
 
-        public a(InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public a(InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return c.this.new a(interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return c.this.new a(interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             for (b bVar : c.this.services.getAllServices(b.class)) {
                 try {
                     bVar.start();
@@ -39,12 +39,12 @@ public final class c {
                     com.onesignal.debug.internal.logging.b.error("OneSignal: Startable service failed: ".concat(bVar.getClass().getSimpleName()), th);
                 }
             }
-            return v.f41353a;
+            return v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((a) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((a) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -73,17 +73,17 @@ public final class c {
     }
 
     public final void scheduleStart() {
-        boolean z3;
+        boolean z6;
         try {
-            z3 = ((e) this.services.getService(e.class)).isEnabled(D4.b.SDK_BACKGROUND_THREADING);
+            z6 = ((e) this.services.getService(e.class)).isEnabled(D4.b.SDK_BACKGROUND_THREADING);
         } catch (Throwable th) {
             com.onesignal.debug.internal.logging.b.warn("OneSignal: Failed to resolve BACKGROUND_THREADING in StartupService. Falling back to legacy thread.", th);
-            z3 = false;
+            z6 = false;
         }
-        if (z3) {
+        if (z6) {
             com.onesignal.common.threading.b.INSTANCE.launchOnDefault(new a(null));
         } else {
-            new Thread(new RunnableC0282a(19, this)).start();
+            new Thread(new p(20, this)).start();
         }
     }
 }

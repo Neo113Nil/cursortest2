@@ -1,47 +1,48 @@
 package com.google.ads.mediation;
 
-import P2.w;
+import R2.w;
+import Y0.g;
 import android.os.RemoteException;
-import com.google.android.gms.internal.ads.C4274ze;
-import com.google.android.gms.internal.ads.InterfaceC3841rd;
-import k2.n;
-import v2.i;
-import w2.AbstractC5148a;
-import w2.AbstractC5149b;
-import x2.k;
+import com.google.android.gms.internal.ads.C4297ze;
+import com.google.android.gms.internal.ads.InterfaceC3864rd;
+import m2.n;
+import x2.i;
+import y2.AbstractC5205a;
+import y2.AbstractC5206b;
+import z2.j;
 
 /* loaded from: classes.dex */
-public final class c extends AbstractC5149b {
+public final class c extends AbstractC5206b {
 
     /* renamed from: e, reason: collision with root package name */
-    public final AbstractAdViewAdapter f23544e;
+    public final AbstractAdViewAdapter f24329e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final k f23545f;
+    public final j f24330f;
 
-    public c(AbstractAdViewAdapter abstractAdViewAdapter, k kVar) {
-        this.f23544e = abstractAdViewAdapter;
-        this.f23545f = kVar;
+    public c(AbstractAdViewAdapter abstractAdViewAdapter, j jVar) {
+        this.f24329e = abstractAdViewAdapter;
+        this.f24330f = jVar;
     }
 
-    @Override // k2.x
+    @Override // m2.x
     public final void onAdFailedToLoad(n nVar) {
-        ((C4274ze) this.f23545f).h(nVar);
+        ((C4297ze) this.f24330f).h(nVar);
     }
 
-    @Override // k2.x
+    @Override // m2.x
     public final void onAdLoaded(Object obj) {
-        AbstractC5148a abstractC5148a = (AbstractC5148a) obj;
-        AbstractAdViewAdapter abstractAdViewAdapter = this.f23544e;
-        abstractAdViewAdapter.mInterstitialAd = abstractC5148a;
-        k kVar = this.f23545f;
-        abstractC5148a.c(new d(abstractAdViewAdapter, kVar));
-        C4274ze c4274ze = (C4274ze) kVar;
-        c4274ze.getClass();
+        AbstractC5205a abstractC5205a = (AbstractC5205a) obj;
+        AbstractAdViewAdapter abstractAdViewAdapter = this.f24329e;
+        abstractAdViewAdapter.mInterstitialAd = abstractC5205a;
+        j jVar = this.f24330f;
+        abstractC5205a.c(new g(abstractAdViewAdapter, jVar));
+        C4297ze c4297ze = (C4297ze) jVar;
+        c4297ze.getClass();
         w.d("#008 Must be called on the main UI thread.");
         i.a("Adapter called onAdLoaded.");
         try {
-            ((InterfaceC3841rd) c4274ze.f35360u).j();
+            ((InterfaceC3864rd) c4297ze.f36133u).j();
         } catch (RemoteException e9) {
             i.i("#007 Could not call remote method.", e9);
         }

@@ -6,47 +6,47 @@ import com.anythink.core.common.d.t;
 import com.anythink.core.common.h.ar;
 import com.anythink.core.common.h.n;
 import com.anythink.core.d.l;
-import u.AbstractC5049e;
+import u.AbstractC5050e;
 
 /* loaded from: classes.dex */
 public class c {
 
     /* renamed from: l, reason: collision with root package name */
-    private static final String f16050l = "c";
+    private static final String f16837l = "c";
 
     /* renamed from: a, reason: collision with root package name */
-    String f16051a;
+    String f16838a;
 
     /* renamed from: b, reason: collision with root package name */
-    h f16052b;
+    h f16839b;
 
     /* renamed from: c, reason: collision with root package name */
-    int f16053c;
+    int f16840c;
 
     /* renamed from: d, reason: collision with root package name */
-    d f16054d;
+    d f16841d;
 
     /* renamed from: e, reason: collision with root package name */
-    int f16055e;
+    int f16842e;
 
     /* renamed from: f, reason: collision with root package name */
-    boolean f16056f;
+    boolean f16843f;
 
     /* renamed from: g, reason: collision with root package name */
-    long f16057g;
+    long f16844g;
 
     /* renamed from: h, reason: collision with root package name */
-    String f16058h;
+    String f16845h;
     boolean i;
 
     /* renamed from: j, reason: collision with root package name */
-    Boolean f16059j;
+    Boolean f16846j;
 
     /* renamed from: k, reason: collision with root package name */
-    com.anythink.core.common.t.b f16060k;
+    com.anythink.core.common.t.b f16847k;
 
     /* renamed from: m, reason: collision with root package name */
-    private ATAdRequest f16061m;
+    private ATAdRequest f16848m;
 
     /* renamed from: com.anythink.core.common.r.c$1, reason: invalid class name */
     public class AnonymousClass1 implements com.anythink.core.common.t.b {
@@ -60,48 +60,48 @@ public class c {
     }
 
     public c(String str) {
-        this.f16051a = str;
-        StringBuilder c9 = AbstractC5049e.c(str, "_");
+        this.f16838a = str;
+        StringBuilder c9 = AbstractC5050e.c(str, "_");
         c9.append(hashCode());
-        this.f16058h = c9.toString();
+        this.f16845h = c9.toString();
     }
 
     private Boolean f() {
-        return this.f16059j;
+        return this.f16846j;
     }
 
     private void g() {
-        if (this.f16056f && this.f16057g != -1) {
-            this.f16060k = new AnonymousClass1();
-            com.anythink.core.common.t.d.a().a(this.f16060k, this.f16057g, false);
+        if (this.f16843f && this.f16844g != -1) {
+            this.f16847k = new AnonymousClass1();
+            com.anythink.core.common.t.d.a().a(this.f16847k, this.f16844g, false);
         }
     }
 
     private void h() {
-        if (this.f16060k != null) {
-            this.f16052b.toString();
-            com.anythink.core.common.t.d.a().b(this.f16060k);
+        if (this.f16847k != null) {
+            this.f16839b.toString();
+            com.anythink.core.common.t.d.a().b(this.f16847k);
         }
     }
 
     private com.anythink.core.common.f i() {
-        return com.anythink.core.common.f.a(t.b().g(), this.f16051a, String.valueOf(this.f16055e));
+        return com.anythink.core.common.f.a(t.b().g(), this.f16838a, String.valueOf(this.f16842e));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public synchronized void j() {
         h();
-        d dVar = this.f16054d;
+        d dVar = this.f16841d;
         if (dVar != null) {
-            dVar.a(this.f16058h, this.f16052b);
+            dVar.a(this.f16845h, this.f16839b);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public synchronized void k() {
-        d dVar = this.f16054d;
+        d dVar = this.f16841d;
         if (dVar != null) {
-            dVar.b(this.f16058h, this.f16052b);
+            dVar.b(this.f16845h, this.f16839b);
         }
     }
 
@@ -109,27 +109,27 @@ public class c {
         com.anythink.core.common.h.d dVar;
         ar arVar = new ar();
         arVar.a(t.b().M());
-        arVar.f13547c = this.f16053c;
-        arVar.a(this.f16061m);
-        h hVar = this.f16052b;
+        arVar.f14333c = this.f16840c;
+        arVar.a(this.f16848m);
+        h hVar = this.f16839b;
         if (hVar != null) {
-            n nVar = hVar.f16087g;
-            ar arVar2 = hVar.f16086f;
-            l lVar = hVar.f16088h;
-            g gVar = hVar.f16089j;
+            n nVar = hVar.f16874g;
+            ar arVar2 = hVar.f16873f;
+            l lVar = hVar.f16875h;
+            g gVar = hVar.f16876j;
             if (arVar2 != null) {
                 dVar = arVar2.i;
                 if (dVar == null) {
                     dVar = new com.anythink.core.common.h.d();
                 }
-                dVar.a(arVar2.f13545a);
+                dVar.a(arVar2.f14331a);
             } else {
                 dVar = new com.anythink.core.common.h.d();
-                if (this.f16053c == 17) {
+                if (this.f16840c == 17) {
                     dVar.b(nVar != null ? 1 : 2);
                 }
             }
-            dVar.a(this.f16052b.i);
+            dVar.a(this.f16839b.i);
             if (nVar != null) {
                 dVar.a(nVar.aI(), nVar.Z(), nVar.aG());
             } else if (lVar != null) {
@@ -149,38 +149,38 @@ public class c {
 
     public final void c() {
         com.anythink.core.common.h.d dVar;
-        h hVar = this.f16052b;
+        h hVar = this.f16839b;
         if (hVar != null) {
             hVar.toString();
         }
-        com.anythink.core.common.f a9 = com.anythink.core.common.f.a(t.b().g(), this.f16051a, String.valueOf(this.f16055e));
-        if (this.f16056f && this.f16057g != -1) {
-            this.f16060k = new AnonymousClass1();
-            com.anythink.core.common.t.d.a().a(this.f16060k, this.f16057g, false);
+        com.anythink.core.common.f a9 = com.anythink.core.common.f.a(t.b().g(), this.f16838a, String.valueOf(this.f16842e));
+        if (this.f16843f && this.f16844g != -1) {
+            this.f16847k = new AnonymousClass1();
+            com.anythink.core.common.t.d.a().a(this.f16847k, this.f16844g, false);
         }
         ar arVar = new ar();
         arVar.a(t.b().M());
-        arVar.f13547c = this.f16053c;
-        arVar.a(this.f16061m);
-        h hVar2 = this.f16052b;
+        arVar.f14333c = this.f16840c;
+        arVar.a(this.f16848m);
+        h hVar2 = this.f16839b;
         if (hVar2 != null) {
-            n nVar = hVar2.f16087g;
-            ar arVar2 = hVar2.f16086f;
-            l lVar = hVar2.f16088h;
-            g gVar = hVar2.f16089j;
+            n nVar = hVar2.f16874g;
+            ar arVar2 = hVar2.f16873f;
+            l lVar = hVar2.f16875h;
+            g gVar = hVar2.f16876j;
             if (arVar2 != null) {
                 dVar = arVar2.i;
                 if (dVar == null) {
                     dVar = new com.anythink.core.common.h.d();
                 }
-                dVar.a(arVar2.f13545a);
+                dVar.a(arVar2.f14331a);
             } else {
                 dVar = new com.anythink.core.common.h.d();
-                if (this.f16053c == 17) {
+                if (this.f16840c == 17) {
                     dVar.b(nVar != null ? 1 : 2);
                 }
             }
-            dVar.a(this.f16052b.i);
+            dVar.a(this.f16839b.i);
             if (nVar != null) {
                 dVar.a(nVar.aI(), nVar.Z(), nVar.aG());
             } else if (lVar != null) {
@@ -195,7 +195,7 @@ public class c {
             dVar = null;
         }
         arVar.i = dVar;
-        a9.a(t.b().g(), String.valueOf(this.f16055e), this.f16051a, arVar, new com.anythink.core.common.d.a() { // from class: com.anythink.core.common.r.c.2
+        a9.a(t.b().g(), String.valueOf(this.f16842e), this.f16838a, arVar, new com.anythink.core.common.d.a() { // from class: com.anythink.core.common.r.c.2
             @Override // com.anythink.core.common.d.a
             public final void onAdLoadFail(AdError adError) {
                 c.this.a(adError);
@@ -209,42 +209,42 @@ public class c {
     }
 
     public final int d() {
-        return this.f16053c;
+        return this.f16840c;
     }
 
     public final String e() {
-        return this.f16051a;
+        return this.f16838a;
     }
 
     public final boolean b() {
-        return this.f16059j == null || !this.i;
+        return this.f16846j == null || !this.i;
     }
 
     public final void a(b bVar) {
-        h hVar = bVar.f16044a;
-        this.f16052b = hVar;
-        this.f16053c = bVar.f16045b;
-        this.f16055e = hVar.f16081a;
-        this.f16054d = bVar.f16048e;
-        this.f16056f = bVar.f16046c;
-        this.f16057g = bVar.f16047d;
-        this.f16061m = bVar.f16049f;
+        h hVar = bVar.f16831a;
+        this.f16839b = hVar;
+        this.f16840c = bVar.f16832b;
+        this.f16842e = hVar.f16868a;
+        this.f16841d = bVar.f16835e;
+        this.f16843f = bVar.f16833c;
+        this.f16844g = bVar.f16834d;
+        this.f16848m = bVar.f16836f;
     }
 
     public final String a() {
-        return this.f16058h;
+        return this.f16845h;
     }
 
     private void a(Boolean bool) {
-        this.f16059j = bool;
+        this.f16846j = bool;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public synchronized void a(AdError adError) {
         h();
-        d dVar = this.f16054d;
+        d dVar = this.f16841d;
         if (dVar != null) {
-            dVar.a(this.f16058h, this.f16052b, adError);
+            dVar.a(this.f16845h, this.f16839b, adError);
         }
     }
 }

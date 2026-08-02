@@ -6,15 +6,15 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class e implements com.anythink.expressad.g.b {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f20316a = "RewardUnitCacheManager";
+    private static final String f21103a = "RewardUnitCacheManager";
 
     /* renamed from: b, reason: collision with root package name */
-    private ConcurrentHashMap<String, com.anythink.expressad.videocommon.e.d> f20317b;
+    private ConcurrentHashMap<String, com.anythink.expressad.videocommon.e.d> f21104b;
 
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private static final e f20318a = new e(0);
+        private static final e f21105a = new e(0);
 
         private a() {
         }
@@ -25,20 +25,20 @@ public final class e implements com.anythink.expressad.g.b {
     }
 
     public static e a() {
-        return a.f20318a;
+        return a.f21105a;
     }
 
     private e() {
-        this.f20317b = new ConcurrentHashMap<>();
+        this.f21104b = new ConcurrentHashMap<>();
     }
 
     public final void a(String str, String str2, com.anythink.expressad.videocommon.e.d dVar) {
         try {
             String str3 = str + "_" + str2;
-            if (dVar != null && this.f20317b.containsKey(str3)) {
-                this.f20317b.remove(str3);
+            if (dVar != null && this.f21104b.containsKey(str3)) {
+                this.f21104b.remove(str3);
             }
-            this.f20317b.put(str3, dVar);
+            this.f21104b.put(str3, dVar);
         } catch (Exception e9) {
             e9.getMessage();
         }
@@ -47,7 +47,7 @@ public final class e implements com.anythink.expressad.g.b {
     public final com.anythink.expressad.videocommon.e.d a(String str, String str2) {
         try {
             try {
-                return this.f20317b.remove(str + "_" + str2);
+                return this.f21104b.remove(str + "_" + str2);
             } catch (Exception e9) {
                 e9.getMessage();
                 return null;

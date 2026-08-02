@@ -15,131 +15,131 @@ import org.json.JSONObject;
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f13320a = "a";
+    public static final String f14106a = "a";
 
     /* renamed from: A, reason: collision with root package name */
-    public ATAdxBidFloorInfo f13321A;
+    public ATAdxBidFloorInfo f14107A;
 
     /* renamed from: B, reason: collision with root package name */
-    public String f13322B;
+    public String f14108B;
 
     /* renamed from: C, reason: collision with root package name */
-    public double f13323C;
+    public double f14109C;
 
     /* renamed from: D, reason: collision with root package name */
-    public int f13324D;
+    public int f14110D;
 
     /* renamed from: F, reason: collision with root package name */
-    public com.anythink.core.common.h f13326F;
+    public com.anythink.core.common.h f14112F;
 
     /* renamed from: b, reason: collision with root package name */
-    public Context f13327b;
+    public Context f14113b;
 
     /* renamed from: c, reason: collision with root package name */
-    public ar f13328c;
+    public ar f14114c;
 
     /* renamed from: d, reason: collision with root package name */
-    public String f13329d;
+    public String f14115d;
 
     /* renamed from: e, reason: collision with root package name */
-    public String f13330e;
+    public String f14116e;
 
     /* renamed from: f, reason: collision with root package name */
-    public int f13331f;
+    public int f14117f;
 
     /* renamed from: g, reason: collision with root package name */
-    public long f13332g;
+    public long f14118g;
 
     /* renamed from: h, reason: collision with root package name */
-    public long f13333h;
+    public long f14119h;
     public long i;
 
     /* renamed from: j, reason: collision with root package name */
-    public List<bv> f13334j;
+    public List<bv> f14120j;
 
     /* renamed from: k, reason: collision with root package name */
-    public List<bv> f13335k;
+    public List<bv> f14121k;
 
     /* renamed from: l, reason: collision with root package name */
-    public String f13336l;
+    public String f14122l;
 
     /* renamed from: m, reason: collision with root package name */
-    public boolean f13337m;
+    public boolean f14123m;
 
     /* renamed from: n, reason: collision with root package name */
-    public cb f13338n;
+    public cb f14124n;
 
     /* renamed from: o, reason: collision with root package name */
-    public String f13339o;
+    public String f14125o;
 
     /* renamed from: p, reason: collision with root package name */
-    public String f13340p;
+    public String f14126p;
 
     /* renamed from: q, reason: collision with root package name */
-    public Map<String, Object> f13341q;
+    public Map<String, Object> f14127q;
 
     /* renamed from: r, reason: collision with root package name */
-    public JSONObject f13342r;
+    public JSONObject f14128r;
 
     /* renamed from: s, reason: collision with root package name */
-    public n f13343s;
+    public n f14129s;
 
     /* renamed from: u, reason: collision with root package name */
-    public Map<String, Double> f13345u;
+    public Map<String, Double> f14131u;
 
     /* renamed from: v, reason: collision with root package name */
-    public bz f13346v;
+    public bz f14132v;
 
     /* renamed from: w, reason: collision with root package name */
-    public bq f13347w;
+    public bq f14133w;
 
     /* renamed from: x, reason: collision with root package name */
-    public ac f13348x;
+    public ac f14134x;
 
     /* renamed from: y, reason: collision with root package name */
-    public com.anythink.core.common.w.i f13349y;
+    public com.anythink.core.common.w.i f14135y;
 
     /* renamed from: t, reason: collision with root package name */
-    public int f13344t = 2;
+    public int f14130t = 2;
 
     /* renamed from: z, reason: collision with root package name */
-    public int f13350z = 0;
+    public int f14136z = 0;
 
     /* renamed from: E, reason: collision with root package name */
-    public int f13325E = 2;
+    public int f14111E = 2;
 
     private a d(List<bv> list) {
         a aVar = new a();
-        aVar.f13327b = this.f13327b;
-        aVar.f13329d = this.f13329d;
-        aVar.f13330e = this.f13330e;
-        aVar.f13331f = this.f13331f;
-        aVar.f13333h = this.f13333h;
-        aVar.f13338n = this.f13338n;
-        long j6 = this.f13332g;
+        aVar.f14113b = this.f14113b;
+        aVar.f14115d = this.f14115d;
+        aVar.f14116e = this.f14116e;
+        aVar.f14117f = this.f14117f;
+        aVar.f14119h = this.f14119h;
+        aVar.f14124n = this.f14124n;
+        long j6 = this.f14118g;
         if (j6 < 0) {
-            aVar.f13332g = 10000L;
+            aVar.f14118g = 10000L;
         } else {
-            aVar.f13332g = j6;
+            aVar.f14118g = j6;
         }
-        aVar.f13337m = this.f13337m;
-        aVar.f13339o = this.f13339o;
-        aVar.f13340p = this.f13340p;
-        aVar.f13334j = list;
-        aVar.f13341q = this.f13341q;
+        aVar.f14123m = this.f14123m;
+        aVar.f14125o = this.f14125o;
+        aVar.f14126p = this.f14126p;
+        aVar.f14120j = list;
+        aVar.f14127q = this.f14127q;
         aVar.i = this.i;
-        aVar.f13328c = this.f13328c;
-        aVar.f13343s = this.f13343s;
-        aVar.f13344t = this.f13344t;
-        aVar.f13345u = this.f13345u;
-        aVar.f13350z = this.f13350z;
-        aVar.f13349y = this.f13349y;
-        aVar.f13348x = this.f13348x;
-        aVar.f13321A = this.f13321A;
-        aVar.f13322B = this.f13322B;
-        aVar.f13323C = this.f13323C;
-        aVar.f13324D = this.f13324D;
-        aVar.f13325E = this.f13325E;
+        aVar.f14114c = this.f14114c;
+        aVar.f14129s = this.f14129s;
+        aVar.f14130t = this.f14130t;
+        aVar.f14131u = this.f14131u;
+        aVar.f14136z = this.f14136z;
+        aVar.f14135y = this.f14135y;
+        aVar.f14134x = this.f14134x;
+        aVar.f14107A = this.f14107A;
+        aVar.f14108B = this.f14108B;
+        aVar.f14109C = this.f14109C;
+        aVar.f14110D = this.f14110D;
+        aVar.f14111E = this.f14111E;
         return aVar;
     }
 
@@ -158,12 +158,12 @@ public class a {
         String valueOf;
         int hashCode;
         List<be> a9;
-        a d2 = d(list);
-        d2.f13336l = this.f13336l;
+        a d9 = d(list);
+        d9.f14122l = this.f14122l;
         if (list2 != null && list2.size() > 0) {
             Collections.sort(list2);
             List<bv> a10 = com.anythink.core.common.v.p.a(list2, (com.anythink.core.common.k.f) null);
-            d2.f13335k = a10;
+            d9.f14121k = a10;
             char c9 = 0;
             bv bvVar = a10.get(0);
             ArrayList arrayList = new ArrayList();
@@ -175,11 +175,11 @@ public class a {
                 }
             }
             JSONObject jSONObject = new JSONObject();
-            String valueOf2 = String.valueOf(d2.f13331f);
-            this.f13338n.a();
-            com.anythink.core.b.d.b.a(jSONObject, valueOf2, bvVar, d2);
+            String valueOf2 = String.valueOf(d9.f14117f);
+            this.f14124n.a();
+            com.anythink.core.b.d.b.a(jSONObject, valueOf2, bvVar, d9);
             try {
-                valueOf = String.valueOf(d2.f13331f);
+                valueOf = String.valueOf(d9.f14117f);
                 hashCode = valueOf.hashCode();
             } catch (Throwable th) {
                 th.printStackTrace();
@@ -188,18 +188,18 @@ public class a {
                 if (hashCode == 52 && valueOf.equals("4")) {
                     c9 = 1;
                     if (c9 != 0) {
-                        ar arVar = d2.f13328c;
-                        String obj = d2.f13338n.a().a(d2.f13330e, d2.f13329d, bvVar, arVar != null ? arVar.b() : null).get("size").toString();
+                        ar arVar = d9.f14114c;
+                        String obj = d9.f14124n.a().a(d9.f14116e, d9.f14115d, bvVar, arVar != null ? arVar.b() : null).get("size").toString();
                         if (!TextUtils.isEmpty(obj)) {
                             jSONObject.put("size", obj);
                         }
                     } else if (c9 == 1) {
                         jSONObject.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.GET_OFFER, 2);
                     }
-                    if (d2.f13350z == d2.f13335k.size()) {
+                    if (d9.f14136z == d9.f14121k.size()) {
                         jSONObject.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.GET_OFFER, 2);
                     }
-                    a9 = com.anythink.core.common.f.c.a(d2.f13327b).a(arrayList2);
+                    a9 = com.anythink.core.common.f.c.a(d9.f14113b).a(arrayList2);
                     if (a9.size() > 0) {
                         JSONObject jSONObject2 = new JSONObject();
                         JSONObject jSONObject3 = new JSONObject();
@@ -219,38 +219,38 @@ public class a {
                         }
                     }
                     jSONObject.put("unit_ids", new JSONArray(arrayList.toString()));
-                    d2.f13342r = jSONObject;
+                    d9.f14128r = jSONObject;
                 }
                 c9 = 65535;
                 if (c9 != 0) {
                 }
-                if (d2.f13350z == d2.f13335k.size()) {
+                if (d9.f14136z == d9.f14121k.size()) {
                 }
-                a9 = com.anythink.core.common.f.c.a(d2.f13327b).a(arrayList2);
+                a9 = com.anythink.core.common.f.c.a(d9.f14113b).a(arrayList2);
                 if (a9.size() > 0) {
                 }
                 jSONObject.put("unit_ids", new JSONArray(arrayList.toString()));
-                d2.f13342r = jSONObject;
+                d9.f14128r = jSONObject;
             }
             th.printStackTrace();
-            d2.f13342r = jSONObject;
+            d9.f14128r = jSONObject;
         }
-        d2.f13346v = this.f13346v;
-        d2.f13347w = this.f13347w;
-        return d2;
+        d9.f14132v = this.f14132v;
+        d9.f14133w = this.f14133w;
+        return d9;
     }
 
     public final a b(List<bv> list) {
-        a d2 = d(list);
-        d2.f13339o = this.f13339o;
-        d2.f13333h = this.f13333h;
-        return d2;
+        a d9 = d(list);
+        d9.f14125o = this.f14125o;
+        d9.f14119h = this.f14119h;
+        return d9;
     }
 
     public final a c(List<bv> list) {
-        a d2 = d(list);
-        d2.f13340p = this.f13340p;
-        return d2;
+        a d9 = d(list);
+        d9.f14126p = this.f14126p;
+        return d9;
     }
 
     public final a a(List<bv> list) {

@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public abstract class d {
 
     /* renamed from: a, reason: collision with root package name */
-    private a f12934a;
+    private a f13720a;
 
     public class a extends SQLiteOpenHelper {
         public a(Context context, String str) {
@@ -21,32 +21,32 @@ public abstract class d {
         }
 
         @Override // android.database.sqlite.SQLiteOpenHelper
-        public final void onDowngrade(SQLiteDatabase sQLiteDatabase, int i, int i6) {
+        public final void onDowngrade(SQLiteDatabase sQLiteDatabase, int i, int i4) {
             d.this.b(sQLiteDatabase);
         }
 
         @Override // android.database.sqlite.SQLiteOpenHelper
-        public final void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i6) {
-            d.this.a(sQLiteDatabase, i, i6);
+        public final void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i4) {
+            d.this.a(sQLiteDatabase, i, i4);
         }
     }
 
     public d(Context context) {
-        this.f12934a = new a(context, c());
+        this.f13720a = new a(context, c());
     }
 
     public final synchronized SQLiteDatabase a() {
-        return this.f12934a.getReadableDatabase();
+        return this.f13720a.getReadableDatabase();
     }
 
     public abstract void a(SQLiteDatabase sQLiteDatabase);
 
-    public abstract void a(SQLiteDatabase sQLiteDatabase, int i, int i6);
+    public abstract void a(SQLiteDatabase sQLiteDatabase, int i, int i4);
 
     public final synchronized SQLiteDatabase b() {
         SQLiteDatabase sQLiteDatabase;
         try {
-            sQLiteDatabase = this.f12934a.getWritableDatabase();
+            sQLiteDatabase = this.f13720a.getWritableDatabase();
         } catch (Exception unused) {
             sQLiteDatabase = null;
         }

@@ -25,32 +25,32 @@ public final class AnonymousClass29<E> extends BO<E> {
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.29 != com.google.common.collect.RegularImmutableSet<E> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
     public final int A0G() {
         return this.A04;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.29 != com.google.common.collect.RegularImmutableSet<E> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
     public final int A0H() {
         return 0;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.29 != com.google.common.collect.RegularImmutableSet<E> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
     public final int A0I(Object[] dst, int offset) {
         System.arraycopy(this.A00, 0, dst, offset, this.A04);
         return this.A04 + offset;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.29 != com.google.common.collect.RegularImmutableSet<E> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
     public final boolean A0K() {
         return false;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.29 != com.google.common.collect.RegularImmutableSet<E> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
     public final Object[] A0L() {
         return this.A00;
     }
@@ -75,13 +75,13 @@ public final class AnonymousClass29<E> extends BO<E> {
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.29 != com.google.common.collect.RegularImmutableSet<E> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO, java.util.AbstractCollection, java.util.Collection, java.util.Set
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO, java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean contains(@CheckForNull Object target) {
         Object[] objArr = this.A01;
         if (target == null || objArr.length == 0) {
             return false;
         }
-        int A02 = AbstractC2277oI.A02(target);
+        int A02 = AbstractC2297oI.A02(target);
         while (true) {
             int i = A02 & this.A03;
             Object obj = objArr[i];

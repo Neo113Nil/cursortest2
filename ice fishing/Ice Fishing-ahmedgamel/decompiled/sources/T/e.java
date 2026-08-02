@@ -1,7 +1,6 @@
 package T;
 
-import H3.l;
-import I0.j;
+import J3.l;
 import android.content.ClipDescription;
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,17 +8,18 @@ import android.os.ResultReceiver;
 import android.text.TextUtils;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputConnectionWrapper;
+import i1.C4585b;
 
 /* loaded from: classes.dex */
 public final class e extends InputConnectionWrapper {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ l f3022a;
+    public final /* synthetic */ l f3105a;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public e(InputConnection inputConnection, l lVar) {
         super(inputConnection, false);
-        this.f3022a = lVar;
+        this.f3105a = lVar;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -27,11 +27,11 @@ public final class e extends InputConnectionWrapper {
     public final boolean performPrivateCommand(String str, Bundle bundle) {
         Object[] objArr;
         ResultReceiver resultReceiver;
-        l lVar = this.f3022a;
-        boolean z3 = false;
-        z3 = false;
-        z3 = false;
-        z3 = false;
+        l lVar = this.f3105a;
+        boolean z6 = false;
+        z6 = false;
+        z6 = false;
+        z6 = false;
         if (bundle != null) {
             if (TextUtils.equals("androidx.core.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT", str)) {
                 objArr = false;
@@ -47,10 +47,10 @@ public final class e extends InputConnectionWrapper {
                     int i = bundle.getInt(objArr != false ? "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_FLAGS" : "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_FLAGS");
                     Bundle bundle2 = (Bundle) bundle.getParcelable(objArr != false ? "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_OPTS" : "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_OPTS");
                     if (uri != null && clipDescription != null) {
-                        z3 = lVar.d(new j(uri, clipDescription, uri2), i, bundle2);
+                        z6 = lVar.e(new C4585b(uri, clipDescription, uri2), i, bundle2);
                     }
                     if (resultReceiver != null) {
-                        resultReceiver.send(z3 ? 1 : 0, null);
+                        resultReceiver.send(z6 ? 1 : 0, null);
                     }
                 } catch (Throwable th) {
                     th = th;
@@ -64,7 +64,7 @@ public final class e extends InputConnectionWrapper {
                 resultReceiver = null;
             }
         }
-        if (z3) {
+        if (z6) {
             return true;
         }
         return super.performPrivateCommand(str, bundle);

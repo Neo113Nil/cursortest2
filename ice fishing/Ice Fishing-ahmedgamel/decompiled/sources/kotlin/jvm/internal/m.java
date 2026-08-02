@@ -4,7 +4,7 @@ package kotlin.jvm.internal;
 public abstract class m extends o implements O7.k {
     @Override // kotlin.jvm.internal.b
     public O7.b computeReflected() {
-        s.f38718a.getClass();
+        s.f38645a.getClass();
         return this;
     }
 

@@ -10,11 +10,11 @@ public class YH extends GestureDetector.SimpleOnGestureListener {
     public final /* synthetic */ YI A02;
     public final /* synthetic */ YJ A03;
 
-    public YH(YJ yj, YI yi, int i, int i6) {
+    public YH(YJ yj, YI yi, int i, int i4) {
         this.A03 = yj;
         this.A02 = yi;
         this.A00 = i;
-        this.A01 = i6;
+        this.A01 = i4;
     }
 
     @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnGestureListener
@@ -23,7 +23,7 @@ public class YH extends GestureDetector.SimpleOnGestureListener {
     }
 
     @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnGestureListener
-    public final boolean onFling(MotionEvent motionEvent, MotionEvent motionEvent2, float f3, float f9) {
+    public final boolean onFling(MotionEvent motionEvent, MotionEvent motionEvent2, float f2, float f9) {
         if (motionEvent == null || motionEvent2 == null) {
             return false;
         }

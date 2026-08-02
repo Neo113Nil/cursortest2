@@ -10,79 +10,79 @@ import java.util.concurrent.ExecutorService;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f16691a = 1;
+    public static final int f17478a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f16692b = 2;
+    public static final int f17479b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f16693c = 3;
+    public static final int f17480c = 3;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f16694d = 4;
+    public static final int f17481d = 4;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f16695e = 5;
+    public static final int f17482e = 5;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final int f16696f = 6;
+    public static final int f17483f = 6;
 
     /* renamed from: g, reason: collision with root package name */
-    public static final int f16697g = 7;
+    public static final int f17484g = 7;
 
     /* renamed from: h, reason: collision with root package name */
-    public static final int f16698h = 8;
+    public static final int f17485h = 8;
     public static final int i = 9;
 
     /* renamed from: j, reason: collision with root package name */
-    public static final int f16699j = 10;
+    public static final int f17486j = 10;
 
     /* renamed from: k, reason: collision with root package name */
-    public static final int f16700k = 11;
+    public static final int f17487k = 11;
 
     /* renamed from: l, reason: collision with root package name */
-    public static final int f16701l = 12;
+    public static final int f17488l = 12;
 
     /* renamed from: m, reason: collision with root package name */
-    public static final int f16702m = 13;
+    public static final int f17489m = 13;
 
     /* renamed from: n, reason: collision with root package name */
-    public static final int f16703n = 14;
+    public static final int f17490n = 14;
 
     /* renamed from: o, reason: collision with root package name */
-    public static final int f16704o = 15;
+    public static final int f17491o = 15;
 
     /* renamed from: p, reason: collision with root package name */
-    public static final int f16705p = 16;
+    public static final int f17492p = 16;
 
     /* renamed from: q, reason: collision with root package name */
-    public static final int f16706q = 17;
+    public static final int f17493q = 17;
 
     /* renamed from: r, reason: collision with root package name */
-    public static final int f16707r = 18;
+    public static final int f17494r = 18;
 
     /* renamed from: s, reason: collision with root package name */
-    private static volatile b f16708s;
+    private static volatile b f17495s;
 
     /* renamed from: t, reason: collision with root package name */
-    private final a f16709t = new a();
+    private final a f17496t = new a();
 
     private b() {
     }
 
     public static b a() {
-        if (f16708s == null) {
+        if (f17495s == null) {
             synchronized (b.class) {
                 try {
-                    if (f16708s == null) {
-                        f16708s = new b();
+                    if (f17495s == null) {
+                        f17495s = new b();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16708s;
+        return f17495s;
     }
 
     private void d(Runnable runnable) {
@@ -96,13 +96,13 @@ public class b {
         a(runnable, 0L, 2);
     }
 
-    public final void b(Runnable runnable, int i6) {
-        a(runnable, 0L, i6);
+    public final void b(Runnable runnable, int i4) {
+        a(runnable, 0L, i4);
     }
 
-    public final void c(Runnable runnable, int i6) {
+    public final void c(Runnable runnable, int i4) {
         if (b()) {
-            a(runnable, i6);
+            a(runnable, i4);
         } else {
             runnable.run();
         }
@@ -128,7 +128,7 @@ public class b {
     }
 
     public final ExecutorService d() {
-        a aVar = this.f16709t;
+        a aVar = this.f17496t;
         if (aVar != null) {
             return aVar.b();
         }
@@ -140,16 +140,16 @@ public class b {
     }
 
     public final Executor c() {
-        a aVar = this.f16709t;
+        a aVar = this.f17496t;
         if (aVar != null) {
             return aVar.a();
         }
         return null;
     }
 
-    public final void a(d dVar, int i6) {
+    public final void a(d dVar, int i4) {
         try {
-            this.f16709t.a(dVar, i6);
+            this.f17496t.a(dVar, i4);
         } catch (Throwable unused) {
         }
     }
@@ -162,7 +162,7 @@ public class b {
         a(runnable, j6, 2);
     }
 
-    public final void a(final Runnable runnable, final long j6, int i6) {
+    public final void a(final Runnable runnable, final long j6, int i4) {
         if (runnable != null) {
             d dVar = new d() { // from class: com.anythink.core.common.v.b.b.1
                 @Override // com.anythink.core.common.v.b.d
@@ -179,19 +179,19 @@ public class b {
                 }
             };
             dVar.a(Long.valueOf(System.currentTimeMillis() / 1000).intValue());
-            a(dVar, i6);
+            a(dVar, i4);
         }
     }
 
-    public final Handler a(int i6) {
-        return this.f16709t.a(i6);
+    public final Handler a(int i4) {
+        return this.f17496t.a(i4);
     }
 
     public final void a(Runnable runnable) {
         a(runnable, 0L, 2);
     }
 
-    public final void a(Runnable runnable, int i6) {
-        a(runnable, 0L, i6);
+    public final void a(Runnable runnable, int i4) {
+        a(runnable, 0L, i4);
     }
 }

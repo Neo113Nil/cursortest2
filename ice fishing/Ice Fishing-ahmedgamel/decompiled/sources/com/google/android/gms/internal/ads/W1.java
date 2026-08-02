@@ -4,45 +4,45 @@ import java.util.Arrays;
 import java.util.Objects;
 
 /* loaded from: classes2.dex */
-public final class W1 extends AbstractC2900a2 implements N1 {
+public final class W1 extends AbstractC2923a2 implements N1 {
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f28302b;
+    public final String f29100b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f28303c;
+    public final int f29101c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f28304d;
+    public final int f29102d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final long f28305e;
+    public final long f29103e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final long f28306f;
+    public final long f29104f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final AbstractC2900a2[] f28307g;
+    public final AbstractC2923a2[] f29105g;
 
-    public W1(String str, int i, int i6, long j6, long j9, AbstractC2900a2[] abstractC2900a2Arr) {
-        super(com.anythink.basead.exoplayer.g.b.c.f7285a);
+    public W1(String str, int i, int i4, long j6, long j9, AbstractC2923a2[] abstractC2923a2Arr) {
+        super(com.anythink.basead.exoplayer.g.b.c.f8071a);
         String str2;
-        AbstractC2772Sd.i(i <= i6);
-        this.f28302b = str;
-        this.f28303c = i;
-        this.f28304d = i6;
-        int length = abstractC2900a2Arr.length;
-        int i9 = 0;
+        AbstractC2792Sd.i(i <= i4);
+        this.f29100b = str;
+        this.f29101c = i;
+        this.f29102d = i4;
+        int length = abstractC2923a2Arr.length;
+        int i6 = 0;
         while (true) {
-            if (i9 >= length) {
+            if (i6 >= length) {
                 str2 = null;
                 break;
             }
-            AbstractC2900a2 abstractC2900a2 = abstractC2900a2Arr[i9];
-            if (abstractC2900a2 instanceof C3222g2) {
-                C3222g2 c3222g2 = (C3222g2) abstractC2900a2;
-                if (c3222g2.f29009a.equals("TIT2")) {
-                    RB rb = c3222g2.f30492c;
+            AbstractC2923a2 abstractC2923a2 = abstractC2923a2Arr[i6];
+            if (abstractC2923a2 instanceof C3245g2) {
+                C3245g2 c3245g2 = (C3245g2) abstractC2923a2;
+                if (c3245g2.f29779a.equals("TIT2")) {
+                    RB rb = c3245g2.f31258c;
                     if (!rb.isEmpty()) {
                         str2 = (String) rb.get(0);
                         break;
@@ -51,14 +51,14 @@ public final class W1 extends AbstractC2900a2 implements N1 {
                     continue;
                 }
             }
-            i9++;
+            i6++;
         }
         if (str2 != null) {
-            new C3138eQ(null, str2);
+            new C3323hQ(null, str2);
         }
-        this.f28305e = j6;
-        this.f28306f = j9;
-        this.f28307g = abstractC2900a2Arr;
+        this.f29103e = j6;
+        this.f29104f = j9;
+        this.f29105g = abstractC2923a2Arr;
     }
 
     public final boolean equals(Object obj) {
@@ -67,7 +67,7 @@ public final class W1 extends AbstractC2900a2 implements N1 {
         }
         if (obj != null && W1.class == obj.getClass()) {
             W1 w12 = (W1) obj;
-            if (this.f28303c == w12.f28303c && this.f28304d == w12.f28304d && this.f28305e == w12.f28305e && this.f28306f == w12.f28306f && Objects.equals(this.f28302b, w12.f28302b) && Arrays.equals(this.f28307g, w12.f28307g)) {
+            if (this.f29101c == w12.f29101c && this.f29102d == w12.f29102d && this.f29103e == w12.f29103e && this.f29104f == w12.f29104f && Objects.equals(this.f29100b, w12.f29100b) && Arrays.equals(this.f29105g, w12.f29105g)) {
                 return true;
             }
         }
@@ -75,6 +75,6 @@ public final class W1 extends AbstractC2900a2 implements N1 {
     }
 
     public final int hashCode() {
-        return this.f28302b.hashCode() + ((((((((this.f28303c + 527) * 31) + this.f28304d) * 31) + ((int) this.f28305e)) * 31) + ((int) this.f28306f)) * 31);
+        return this.f29100b.hashCode() + ((((((((this.f29101c + 527) * 31) + this.f29102d) * 31) + ((int) this.f29103e)) * 31) + ((int) this.f29104f)) * 31);
     }
 }

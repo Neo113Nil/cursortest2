@@ -6,9 +6,9 @@ import android.os.Build;
 public abstract class v {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final boolean f615a;
+    public static final boolean f511a;
 
     static {
-        f615a = Build.VERSION.SDK_INT >= 28;
+        f511a = Build.VERSION.SDK_INT >= 28;
     }
 }

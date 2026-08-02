@@ -10,30 +10,30 @@ import java.util.List;
 public class f extends c<bs> {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f12937a = "com.anythink.core.common.e.f";
+    private static final String f13723a = "com.anythink.core.common.e.f";
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile f f12938b;
+    private static volatile f f13724b;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f12939a = "sdkconfig";
+        public static final String f13725a = "sdkconfig";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f12940b = "key";
+        public static final String f13726b = "key";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f12941c = "type";
+        public static final String f13727c = "type";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f12942d = "value";
+        public static final String f13728d = "value";
 
         /* renamed from: e, reason: collision with root package name */
-        public static final String f12943e = "lastupdatetime";
+        public static final String f13729e = "lastupdatetime";
 
         /* renamed from: f, reason: collision with root package name */
-        public static final String f12944f = "CREATE TABLE IF NOT EXISTS sdkconfig(key TEXT ,type TEXT ,lastupdatetime TEXT ,value TEXT )";
+        public static final String f13730f = "CREATE TABLE IF NOT EXISTS sdkconfig(key TEXT ,type TEXT ,lastupdatetime TEXT ,value TEXT )";
     }
 
     private f(d dVar) {
@@ -41,22 +41,22 @@ public class f extends c<bs> {
     }
 
     public static f a(d dVar) {
-        if (f12938b == null) {
+        if (f13724b == null) {
             synchronized (f.class) {
                 try {
-                    if (f12938b == null) {
-                        f12938b = new f(dVar);
+                    if (f13724b == null) {
+                        f13724b = new f(dVar);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f12938b;
+        return f13724b;
     }
 
     private synchronized boolean b(String str, String str2) {
-        Cursor query = c().query(a.f12939a, new String[]{"key"}, "key=? AND type=?", new String[]{str, str2}, null, null, null);
+        Cursor query = c().query(a.f13725a, new String[]{"key"}, "key=? AND type=?", new String[]{str, str2}, null, null, null);
         if (query != null && query.getCount() > 0) {
             query.close();
             return true;
@@ -68,12 +68,12 @@ public class f extends c<bs> {
     }
 
     private synchronized void c(String str, String str2) {
-        List<bs> c9 = c(str, str2, bs.a.f13751a);
+        List<bs> c9 = c(str, str2, bs.a.f14537a);
         if (c9 == null || c9.size() <= 0) {
             bs bsVar = new bs();
             bsVar.a(str2);
             bsVar.d("1");
-            bsVar.c(bs.a.f13751a);
+            bsVar.c(bs.a.f14537a);
             bsVar.b(str);
             a(bsVar);
             return;
@@ -100,7 +100,7 @@ public class f extends c<bs> {
     private synchronized List<bs> d(String str, String str2) {
         Cursor cursor;
         try {
-            cursor = c().query(a.f12939a, null, "key != ? and type = ?", new String[]{str, str2}, null, null, null);
+            cursor = c().query(a.f13725a, null, "key != ? and type = ?", new String[]{str, str2}, null, null, null);
         } catch (Exception unused) {
             cursor = null;
         } catch (OutOfMemoryError unused2) {
@@ -129,7 +129,7 @@ public class f extends c<bs> {
     }
 
     private synchronized boolean b(String str, String str2, String str3) {
-        Cursor query = c().query(a.f12939a, new String[]{"key"}, "key=? AND type=? AND lastupdatetime=?", new String[]{str, str3, str2}, null, null, null);
+        Cursor query = c().query(a.f13725a, new String[]{"key"}, "key=? AND type=? AND lastupdatetime=?", new String[]{str, str3, str2}, null, null, null);
         if (query != null && query.getCount() > 0) {
             query.close();
             return true;
@@ -151,11 +151,11 @@ public class f extends c<bs> {
             contentValues.put("value", str2);
             StringBuilder sb = new StringBuilder();
             sb.append(System.currentTimeMillis());
-            contentValues.put(a.f12943e, sb.toString());
+            contentValues.put(a.f13729e, sb.toString());
             if (b(str, str3)) {
-                return d().update(a.f12939a, contentValues, "key = ? AND type = ?", new String[]{str, str3});
+                return d().update(a.f13725a, contentValues, "key = ? AND type = ?", new String[]{str, str3});
             }
-            return d().insert(a.f12939a, null, contentValues);
+            return d().insert(a.f13725a, null, contentValues);
         } catch (Exception unused) {
             return -1L;
         }
@@ -175,7 +175,7 @@ public class f extends c<bs> {
     private synchronized List<bs> b(String str) {
         Cursor cursor;
         try {
-            cursor = c().query(a.f12939a, null, "type = ?", new String[]{str}, null, null, null);
+            cursor = c().query(a.f13725a, null, "type = ?", new String[]{str}, null, null, null);
         } catch (Exception unused) {
             cursor = null;
         } catch (OutOfMemoryError unused2) {
@@ -216,7 +216,7 @@ public class f extends c<bs> {
     private synchronized List<bs> c(String str, String str2, String str3) {
         Cursor cursor;
         try {
-            cursor = c().query(a.f12939a, null, "key = ? and type = ? and lastupdatetime = ?", new String[]{str, str3, str2}, null, null, null);
+            cursor = c().query(a.f13725a, null, "key = ? and type = ? and lastupdatetime = ?", new String[]{str, str3, str2}, null, null, null);
         } catch (Exception unused) {
             cursor = null;
         } catch (OutOfMemoryError unused2) {
@@ -253,11 +253,11 @@ public class f extends c<bs> {
             contentValues.put("key", bsVar.b());
             contentValues.put("type", bsVar.c());
             contentValues.put("value", bsVar.d());
-            contentValues.put(a.f12943e, bsVar.a());
+            contentValues.put(a.f13729e, bsVar.a());
             if (b(bsVar.b(), bsVar.a(), bsVar.c())) {
-                return d().update(a.f12939a, contentValues, "key = ? AND type = ? AND lastupdatetime = ?  ", new String[]{bsVar.b(), bsVar.c(), bsVar.a()});
+                return d().update(a.f13725a, contentValues, "key = ? AND type = ? AND lastupdatetime = ?  ", new String[]{bsVar.b(), bsVar.c(), bsVar.a()});
             }
-            return d().insert(a.f12939a, null, contentValues);
+            return d().insert(a.f13725a, null, contentValues);
         } catch (Exception unused) {
             return -1L;
         }
@@ -273,7 +273,7 @@ public class f extends c<bs> {
                         bsVar.b(cursor.getString(cursor.getColumnIndex("key")));
                         bsVar.c(cursor.getString(cursor.getColumnIndex("type")));
                         bsVar.d(cursor.getString(cursor.getColumnIndex("value")));
-                        bsVar.a(cursor.getString(cursor.getColumnIndex(a.f12943e)));
+                        bsVar.a(cursor.getString(cursor.getColumnIndex(a.f13729e)));
                         arrayList.add(bsVar);
                     }
                     cursor.close();
@@ -291,7 +291,7 @@ public class f extends c<bs> {
             if (d() == null) {
                 return;
             }
-            d().delete(a.f12939a, "lastupdatetime< ? and type = ?", new String[]{str, bs.a.f13751a});
+            d().delete(a.f13725a, "lastupdatetime< ? and type = ?", new String[]{str, bs.a.f14537a});
         } catch (Exception unused) {
         }
     }
@@ -310,7 +310,7 @@ public class f extends c<bs> {
     public final synchronized List<bs> a(String str, String str2) {
         Cursor cursor;
         try {
-            cursor = c().query(a.f12939a, null, "key = ? and type = ?", new String[]{str, str2}, null, null, null);
+            cursor = c().query(a.f13725a, null, "key = ? and type = ?", new String[]{str, str2}, null, null, null);
         } catch (Exception unused) {
             cursor = null;
         } catch (OutOfMemoryError unused2) {

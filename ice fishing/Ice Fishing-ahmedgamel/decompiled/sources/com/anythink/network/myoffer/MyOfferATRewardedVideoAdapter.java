@@ -22,32 +22,32 @@ import java.util.Map;
 public class MyOfferATRewardedVideoAdapter extends CustomRewardVideoAdapter {
 
     /* renamed from: a, reason: collision with root package name */
-    x f23175a;
+    x f23962a;
 
     /* renamed from: b, reason: collision with root package name */
-    Map<String, Object> f23176b;
+    Map<String, Object> f23963b;
 
     /* renamed from: d, reason: collision with root package name */
-    private f f23178d;
+    private f f23965d;
 
     /* renamed from: c, reason: collision with root package name */
-    private String f23177c = "";
+    private String f23964c = "";
 
     /* renamed from: e, reason: collision with root package name */
-    private boolean f23179e = false;
+    private boolean f23966e = false;
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
-        f fVar = this.f23178d;
+        f fVar = this.f23965d;
         if (fVar != null) {
             fVar.a((k) null);
-            this.f23178d = null;
+            this.f23965d = null;
         }
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public Map<String, Object> getNetworkInfoMap() {
-        return this.f23176b;
+        return this.f23963b;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -57,7 +57,7 @@ public class MyOfferATRewardedVideoAdapter extends CustomRewardVideoAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        return this.f23177c;
+        return this.f23964c;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -68,13 +68,13 @@ public class MyOfferATRewardedVideoAdapter extends CustomRewardVideoAdapter {
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public boolean initNetworkObjectByPlacementId(Context context, Map<String, Object> map, Map<String, Object> map2) {
         if (map.containsKey("my_oid")) {
-            this.f23177c = map.get("my_oid").toString();
+            this.f23964c = map.get("my_oid").toString();
         }
-        if (map.containsKey(j.w.f12614a)) {
-            this.f23175a = (x) map.get(j.w.f12614a);
+        if (map.containsKey(j.w.f13400a)) {
+            this.f23962a = (x) map.get(j.w.f13400a);
         }
-        if (map.containsKey(r.f16038b)) {
-            this.f23179e = ((Boolean) map.get(r.f16038b)).booleanValue();
+        if (map.containsKey(r.f16825b)) {
+            this.f23966e = ((Boolean) map.get(r.f16825b)).booleanValue();
         }
         a(context);
         return true;
@@ -82,30 +82,30 @@ public class MyOfferATRewardedVideoAdapter extends CustomRewardVideoAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public boolean isAdReady() {
-        f fVar = this.f23178d;
-        boolean z3 = fVar != null && fVar.a();
-        if (z3 && this.f23176b == null) {
-            this.f23176b = d.a(this.f23178d);
+        f fVar = this.f23965d;
+        boolean z6 = fVar != null && fVar.a();
+        if (z6 && this.f23963b == null) {
+            this.f23963b = d.a(this.f23965d);
         }
-        return z3;
+        return z6;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void loadCustomNetworkAd(Context context, Map<String, Object> map, Map<String, Object> map2) {
         if (map.containsKey("my_oid")) {
-            this.f23177c = map.get("my_oid").toString();
+            this.f23964c = map.get("my_oid").toString();
         }
-        if (map.containsKey(j.w.f12614a)) {
-            this.f23175a = (x) map.get(j.w.f12614a);
+        if (map.containsKey(j.w.f13400a)) {
+            this.f23962a = (x) map.get(j.w.f13400a);
         }
         a(context);
-        this.f23178d.a(new c() { // from class: com.anythink.network.myoffer.MyOfferATRewardedVideoAdapter.1
+        this.f23965d.a(new c() { // from class: com.anythink.network.myoffer.MyOfferATRewardedVideoAdapter.1
             @Override // com.anythink.basead.g.c
             public final void onAdCacheLoaded() {
                 MyOfferATRewardedVideoAdapter myOfferATRewardedVideoAdapter = MyOfferATRewardedVideoAdapter.this;
-                myOfferATRewardedVideoAdapter.f23176b = d.a(myOfferATRewardedVideoAdapter.f23178d);
+                myOfferATRewardedVideoAdapter.f23963b = d.a(myOfferATRewardedVideoAdapter.f23965d);
                 if (MyOfferATRewardedVideoAdapter.this.getTrackingInfo() != null) {
-                    MyOfferATRewardedVideoAdapter.this.getTrackingInfo().M(MyOfferATRewardedVideoAdapter.this.f23178d.f());
+                    MyOfferATRewardedVideoAdapter.this.getTrackingInfo().M(MyOfferATRewardedVideoAdapter.this.f23965d.f());
                 }
                 if (((ATBaseAdInternalAdapter) MyOfferATRewardedVideoAdapter.this).mLoadListener != null) {
                     ((ATBaseAdInternalAdapter) MyOfferATRewardedVideoAdapter.this).mLoadListener.onAdCacheLoaded(new BaseAd[0]);
@@ -127,19 +127,19 @@ public class MyOfferATRewardedVideoAdapter extends CustomRewardVideoAdapter {
 
     @Override // com.anythink.rewardvideo.unitgroup.api.CustomRewardVideoAdapter
     public void show(Activity activity) {
-        int f3 = m.f(activity);
+        int f2 = m.f(activity);
         if (isAdReady()) {
             HashMap hashMap = new HashMap(1);
-            hashMap.put(com.anythink.basead.h.c.f9000h, this.f23175a.f14158d);
+            hashMap.put(com.anythink.basead.h.c.f9786h, this.f23962a.f14944d);
             hashMap.put("extra_scenario", this.mScenario);
-            hashMap.put(com.anythink.basead.h.c.f9001j, Integer.valueOf(f3));
-            this.f23178d.a(new k() { // from class: com.anythink.network.myoffer.MyOfferATRewardedVideoAdapter.2
+            hashMap.put(com.anythink.basead.h.c.f9787j, Integer.valueOf(f2));
+            this.f23965d.a(new k() { // from class: com.anythink.network.myoffer.MyOfferATRewardedVideoAdapter.2
                 @Override // com.anythink.basead.g.a
                 public final void onAdClick(com.anythink.basead.g.j jVar) {
                     n trackingInfo = MyOfferATRewardedVideoAdapter.this.getTrackingInfo();
                     if (trackingInfo != null) {
-                        trackingInfo.I(jVar.f8982a);
-                        trackingInfo.J(jVar.f8983b);
+                        trackingInfo.I(jVar.f9768a);
+                        trackingInfo.J(jVar.f9769b);
                     }
                     if (((CustomRewardVideoAdapter) MyOfferATRewardedVideoAdapter.this).mImpressionListener != null) {
                         ((CustomRewardVideoAdapter) MyOfferATRewardedVideoAdapter.this).mImpressionListener.onRewardedVideoAdPlayClicked();
@@ -161,7 +161,7 @@ public class MyOfferATRewardedVideoAdapter extends CustomRewardVideoAdapter {
                 }
 
                 @Override // com.anythink.basead.g.a
-                public final void onDeeplinkCallback(boolean z3) {
+                public final void onDeeplinkCallback(boolean z6) {
                 }
 
                 @Override // com.anythink.basead.g.k
@@ -189,11 +189,11 @@ public class MyOfferATRewardedVideoAdapter extends CustomRewardVideoAdapter {
                 public final void onVideoAdPlayStart() {
                 }
             });
-            this.f23178d.a(activity, hashMap);
+            this.f23965d.a(activity, hashMap);
         }
     }
 
     private void a(Context context) {
-        this.f23178d = new f(context, this.f23175a, this.f23177c, this.f23179e);
+        this.f23965d = new f(context, this.f23962a, this.f23964c, this.f23966e);
     }
 }

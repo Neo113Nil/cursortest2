@@ -10,6 +10,6 @@ public abstract class g {
     }
 
     public static void b(Configuration configuration, l lVar) {
-        configuration.setLocales(lVar.f1483a.f1484a);
+        configuration.setLocales(lVar.f1592a.f1593a);
     }
 }

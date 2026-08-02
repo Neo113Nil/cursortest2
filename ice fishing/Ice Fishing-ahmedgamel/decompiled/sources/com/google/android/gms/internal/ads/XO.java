@@ -6,19 +6,19 @@ import android.util.SparseBooleanArray;
 public final class XO {
 
     /* renamed from: a, reason: collision with root package name */
-    public final SparseBooleanArray f28523a;
+    public final SparseBooleanArray f29303a;
 
     public final boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
         if (obj instanceof XO) {
-            return this.f28523a.equals(((XO) obj).f28523a);
+            return this.f29303a.equals(((XO) obj).f29303a);
         }
         return false;
     }
 
     public final int hashCode() {
-        return this.f28523a.hashCode();
+        return this.f29303a.hashCode();
     }
 }

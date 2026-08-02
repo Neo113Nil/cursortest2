@@ -13,10 +13,10 @@ public abstract class AnonymousClass46 {
     public static final byte[] A02;
     public static final String[] A03;
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 74);
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 74);
         }
         return new String(copyOfRange);
     }
@@ -32,32 +32,32 @@ public abstract class AnonymousClass46 {
     }
 
     public static Pair<Integer, Integer> A00(byte[] bArr) {
-        C06474v c06474v = new C06474v(bArr);
-        c06474v.A0f(9);
-        int sampleRate = c06474v.A0I();
-        c06474v.A0f(20);
-        return Pair.create(Integer.valueOf(c06474v.A0L()), Integer.valueOf(sampleRate));
+        C06674v c06674v = new C06674v(bArr);
+        c06674v.A0f(9);
+        int sampleRate = c06674v.A0I();
+        c06674v.A0f(20);
+        return Pair.create(Integer.valueOf(c06674v.A0L()), Integer.valueOf(sampleRate));
     }
 
-    public static String A01(int i, int i6, int i9) {
-        return String.format(A02(8, 17, 98), Integer.valueOf(i), Integer.valueOf(i6), Integer.valueOf(i9));
+    public static String A01(int i, int i4, int i6) {
+        return String.format(A02(8, 17, 98), Integer.valueOf(i), Integer.valueOf(i4), Integer.valueOf(i6));
     }
 
-    public static String A03(int i, boolean z3, int i6, int i9, int[] iArr, int i10) {
-        StringBuilder sb = new StringBuilder(C5C.A0n(A02(25, 17, 35), A03[i], Integer.valueOf(i6), Integer.valueOf(i9), Character.valueOf(z3 ? 'H' : 'L'), Integer.valueOf(i10)));
+    public static String A03(int i, boolean z6, int i4, int i6, int[] iArr, int i9) {
+        StringBuilder sb = new StringBuilder(C5C.A0n(A02(25, 17, 35), A03[i], Integer.valueOf(i4), Integer.valueOf(i6), Character.valueOf(z6 ? 'H' : 'L'), Integer.valueOf(i9)));
         int length = iArr.length;
         while (length > 0 && iArr[length - 1] == 0) {
             length--;
         }
-        for (int i11 = 0; i11 < length; i11++) {
-            sb.append(String.format(A02(0, 5, 87), Integer.valueOf(iArr[i11])));
+        for (int i10 = 0; i10 < length; i10++) {
+            sb.append(String.format(A02(0, 5, 87), Integer.valueOf(iArr[i10])));
         }
         return sb.toString();
     }
 
-    public static List<byte[]> A04(boolean z3) {
+    public static List<byte[]> A04(boolean z6) {
         byte[] bArr = new byte[1];
-        if (z3) {
+        if (z6) {
             bArr[0] = 1;
         } else {
             bArr[0] = 0;
@@ -77,13 +77,13 @@ public abstract class AnonymousClass46 {
         return b9 == 1;
     }
 
-    public static byte[] A07(byte[] bArr, int i, int i6) {
-        byte[] bArr2 = new byte[A02.length + i6];
+    public static byte[] A07(byte[] bArr, int i, int i4) {
+        byte[] bArr2 = new byte[A02.length + i4];
         byte[] bArr3 = A02;
         byte[] nalUnit = A02;
         System.arraycopy(bArr3, 0, bArr2, 0, nalUnit.length);
         byte[] nalUnit2 = A02;
-        System.arraycopy(bArr, i, bArr2, nalUnit2.length, i6);
+        System.arraycopy(bArr, i, bArr2, nalUnit2.length, i4);
         return bArr2;
     }
 }

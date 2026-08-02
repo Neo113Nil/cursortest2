@@ -32,8 +32,8 @@ public class MultithreadedBundleWrapper {
         return this.mBundle.getStringArrayList(str);
     }
 
-    public synchronized void putBoolean(String str, boolean z3) {
-        this.mBundle.putBoolean(str, z3);
+    public synchronized void putBoolean(String str, boolean z6) {
+        this.mBundle.putBoolean(str, z6);
     }
 
     public synchronized void putInteger(String str, Integer num) {
@@ -73,7 +73,7 @@ public class MultithreadedBundleWrapper {
         return new Bundle(this.mBundle);
     }
 
-    public synchronized boolean getBoolean(String str, boolean z3) {
-        return this.mBundle.getBoolean(str, z3);
+    public synchronized boolean getBoolean(String str, boolean z6) {
+        return this.mBundle.getBoolean(str, z6);
     }
 }

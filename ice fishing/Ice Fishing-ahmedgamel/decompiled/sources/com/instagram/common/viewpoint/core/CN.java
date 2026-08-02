@@ -4,7 +4,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicReference;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class CN implements InterfaceC1792fw {
+public class CN implements InterfaceC1812fw {
     public final /* synthetic */ C2U A00;
     public final /* synthetic */ CountDownLatch A01;
     public final /* synthetic */ AtomicReference A02;
@@ -17,13 +17,13 @@ public class CN implements InterfaceC1792fw {
         this.A01 = countDownLatch;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1792fw
-    public final void ADR(InterfaceC1790fu interfaceC1790fu) {
-        C2U.A06(interfaceC1790fu.A73(), this.A03, this.A02);
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1812fw
+    public final void ADR(InterfaceC1810fu interfaceC1810fu) {
+        C2U.A06(interfaceC1810fu.A73(), this.A03, this.A02);
         this.A01.countDown();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1792fw
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1812fw
     public final void ADq(Exception exc) {
         this.A02.set(exc);
         this.A01.countDown();

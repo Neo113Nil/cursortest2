@@ -16,11 +16,11 @@ public final class i extends WebView {
     }
 
     @Override // android.view.View
-    public boolean overScrollBy(int i, int i6, int i9, int i10, int i11, int i12, int i13, int i14, boolean z3) {
+    public boolean overScrollBy(int i, int i4, int i6, int i9, int i10, int i11, int i12, int i13, boolean z6) {
         return false;
     }
 
     @Override // android.view.View
-    public void scrollTo(int i, int i6) {
+    public void scrollTo(int i, int i4) {
     }
 }

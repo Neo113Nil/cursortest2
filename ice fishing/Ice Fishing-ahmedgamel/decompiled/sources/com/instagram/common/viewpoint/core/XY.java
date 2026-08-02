@@ -11,10 +11,10 @@ public final class XY {
     public static String[] A01 = {"fKOq3CLbRisV2HCvxbP8DswDC3h61WtS", "qQcG8iivYcbnleQXnFNfPBjKpUSTKwt1", "90Y8NMpYXvys60lz4Y4AY7bkcR6rkmkz", "C2raqoqRf1xXuaxgLg", "Co6wMAKL4SYYucOnnpwSDFFGSy", "pPL6tu27HuVGqH4ILm", "ywYYaeUt5bOEJr09A3", "jMc4mNTDFQmf2DaMzWYBnxz0IZlySjfz"};
     public static final String A02;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 23);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 23);
         }
         return new String(copyOfRange);
     }
@@ -50,12 +50,12 @@ public final class XY {
         }
     }
 
-    public static boolean A04(int i, int i6) {
-        return i >= 640 && i6 >= 640;
+    public static boolean A04(int i, int i4) {
+        return i >= 640 && i4 >= 640;
     }
 
     public static boolean A05(T8 t82) {
-        boolean z3 = false;
+        boolean z6 = false;
         try {
             PackageManager packageManager = t82.getPackageManager();
             if (packageManager == null) {
@@ -74,12 +74,12 @@ public final class XY {
                     if (!activityDeclared) {
                         i++;
                     } else {
-                        z3 = true;
+                        z6 = true;
                         break;
                     }
                 }
             }
-            if (!z3) {
+            if (!z6) {
                 boolean activityDeclared2 = A03();
                 if (!activityDeclared2) {
                     isUnity = false;

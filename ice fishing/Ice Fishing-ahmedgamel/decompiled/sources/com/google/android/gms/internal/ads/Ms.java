@@ -7,62 +7,62 @@ import android.text.TextUtils;
 public final class Ms implements Os {
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f26354a;
+    public final boolean f27139a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f26355b;
+    public final boolean f27140b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final String f26356c;
+    public final String f27141c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final boolean f26357d;
+    public final boolean f27142d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final int f26358e;
+    public final int f27143e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final int f26359f;
+    public final int f27144f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final int f26360g;
+    public final int f27145g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final String f26361h;
+    public final String f27146h;
 
-    public Ms(boolean z3, boolean z6, String str, boolean z9, int i, int i6, int i9, String str2) {
-        this.f26354a = z3;
-        this.f26355b = z6;
-        this.f26356c = str;
-        this.f26357d = z9;
-        this.f26358e = i;
-        this.f26359f = i6;
-        this.f26360g = i9;
-        this.f26361h = str2;
+    public Ms(boolean z6, boolean z9, String str, boolean z10, int i, int i4, int i6, String str2) {
+        this.f27139a = z6;
+        this.f27140b = z9;
+        this.f27141c = str;
+        this.f27142d = z10;
+        this.f27143e = i;
+        this.f27144f = i4;
+        this.f27145g = i6;
+        this.f27146h = str2;
     }
 
     @Override // com.google.android.gms.internal.ads.Os
     public final void a(Object obj) {
         Bundle bundle = (Bundle) obj;
-        bundle.putString("js", this.f26356c);
+        bundle.putString("js", this.f27141c);
         bundle.putBoolean("is_nonagon", true);
-        C3301ha c3301ha = AbstractC3569ma.f32001D4;
-        q2.r rVar = q2.r.f40207e;
-        bundle.putString("extra_caps", (String) rVar.f40210c.a(c3301ha));
-        bundle.putInt("target_api", this.f26358e);
-        bundle.putInt("dv", this.f26359f);
-        bundle.putInt("lv", this.f26360g);
-        if (((Boolean) rVar.f40210c.a(AbstractC3569ma.f32112Q6)).booleanValue()) {
-            String str = this.f26361h;
+        C3324ha c3324ha = AbstractC3592ma.f32781D4;
+        s2.r rVar = s2.r.f40506e;
+        bundle.putString("extra_caps", (String) rVar.f40509c.a(c3324ha));
+        bundle.putInt("target_api", this.f27143e);
+        bundle.putInt("dv", this.f27144f);
+        bundle.putInt("lv", this.f27145g);
+        if (((Boolean) rVar.f40509c.a(AbstractC3592ma.f32892Q6)).booleanValue()) {
+            String str = this.f27146h;
             if (!TextUtils.isEmpty(str)) {
                 bundle.putString("ev", str);
             }
         }
         Bundle b9 = MA.b("sdk_env", bundle);
-        b9.putBoolean("mf", ((Boolean) AbstractC2718Pa.f26828g.r()).booleanValue());
-        b9.putBoolean("instant_app", this.f26354a);
-        b9.putBoolean("lite", this.f26355b);
-        b9.putBoolean("is_privileged_process", this.f26357d);
+        b9.putBoolean("mf", ((Boolean) AbstractC2738Pa.f27616g.r()).booleanValue());
+        b9.putBoolean("instant_app", this.f27139a);
+        b9.putBoolean("lite", this.f27140b);
+        b9.putBoolean("is_privileged_process", this.f27142d);
         bundle.putBundle("sdk_env", b9);
         Bundle b10 = MA.b("build_meta", b9);
         b10.putString("cl", "919173219");

@@ -7,29 +7,29 @@ import java.util.zip.Deflater;
 public final class k implements v {
 
     /* renamed from: a, reason: collision with root package name */
-    private final d f15869a;
+    private final d f16656a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final Deflater f15870b;
+    private final Deflater f16657b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final g f15871c;
+    private final g f16658c;
 
     /* renamed from: d, reason: collision with root package name */
-    private boolean f15872d;
+    private boolean f16659d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final CRC32 f15873e = new CRC32();
+    private final CRC32 f16660e = new CRC32();
 
     private k(v vVar) {
         if (vVar == null) {
             throw new IllegalArgumentException("sink == null");
         }
         Deflater deflater = new Deflater(-1, true);
-        this.f15870b = deflater;
+        this.f16657b = deflater;
         d a9 = n.a(vVar);
-        this.f15869a = a9;
-        this.f15871c = new g(a9, deflater);
+        this.f16656a = a9;
+        this.f16658c = new g(a9, deflater);
         c c9 = a9.c();
         c9.k(8075);
         c9.l(8);
@@ -40,11 +40,11 @@ public final class k implements v {
     }
 
     private Deflater b() {
-        return this.f15870b;
+        return this.f16657b;
     }
 
     private void c() {
-        c c9 = this.f15869a.c();
+        c c9 = this.f16656a.c();
         c9.k(8075);
         c9.l(8);
         c9.l(0);
@@ -54,8 +54,8 @@ public final class k implements v {
     }
 
     private void d() {
-        this.f15869a.h((int) this.f15873e.getValue());
-        this.f15869a.h((int) this.f15870b.getBytesRead());
+        this.f16656a.h((int) this.f16660e.getValue());
+        this.f16656a.h((int) this.f16657b.getBytesRead());
     }
 
     @Override // com.anythink.core.common.n.c.v
@@ -67,37 +67,37 @@ public final class k implements v {
             return;
         }
         b(cVar, j6);
-        this.f15871c.a(cVar, j6);
+        this.f16658c.a(cVar, j6);
     }
 
     @Override // com.anythink.core.common.n.c.v, java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
-        if (this.f15872d) {
+        if (this.f16659d) {
             return;
         }
         try {
-            this.f15871c.b();
-            this.f15869a.h((int) this.f15873e.getValue());
-            this.f15869a.h((int) this.f15870b.getBytesRead());
+            this.f16658c.b();
+            this.f16656a.h((int) this.f16660e.getValue());
+            this.f16656a.h((int) this.f16657b.getBytesRead());
             th = null;
         } catch (Throwable th) {
             th = th;
         }
         try {
-            this.f15870b.end();
+            this.f16657b.end();
         } catch (Throwable th2) {
             if (th == null) {
                 th = th2;
             }
         }
         try {
-            this.f15869a.close();
+            this.f16656a.close();
         } catch (Throwable th3) {
             if (th == null) {
                 th = th3;
             }
         }
-        this.f15872d = true;
+        this.f16659d = true;
         if (th != null) {
             y.a(th);
         }
@@ -105,21 +105,21 @@ public final class k implements v {
 
     @Override // com.anythink.core.common.n.c.v, java.io.Flushable
     public final void flush() {
-        this.f15871c.flush();
+        this.f16658c.flush();
     }
 
     private void b(c cVar, long j6) {
-        s sVar = cVar.f15846b;
+        s sVar = cVar.f16633b;
         while (j6 > 0) {
-            int min = (int) Math.min(j6, sVar.f15916e - sVar.f15915d);
-            this.f15873e.update(sVar.f15914c, sVar.f15915d, min);
+            int min = (int) Math.min(j6, sVar.f16703e - sVar.f16702d);
+            this.f16660e.update(sVar.f16701c, sVar.f16702d, min);
             j6 -= min;
-            sVar = sVar.f15919h;
+            sVar = sVar.f16706h;
         }
     }
 
     @Override // com.anythink.core.common.n.c.v
     public final x a() {
-        return this.f15869a.a();
+        return this.f16656a.a();
     }
 }

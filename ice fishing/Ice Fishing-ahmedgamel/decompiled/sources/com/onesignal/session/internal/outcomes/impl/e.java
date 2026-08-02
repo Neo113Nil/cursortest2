@@ -73,7 +73,7 @@ public final class e implements M5.a {
         }
     }
 
-    public e(K5.d session, JSONArray jSONArray, String name, long j6, long j9, float f3) {
+    public e(K5.d session, JSONArray jSONArray, String name, long j6, long j9, float f2) {
         kotlin.jvm.internal.h.e(session, "session");
         kotlin.jvm.internal.h.e(name, "name");
         this.session = session;
@@ -81,7 +81,7 @@ public final class e implements M5.a {
         this.name = name;
         this.timestamp = j6;
         this.sessionTime = j9;
-        this.weight = f3;
+        this.weight = f2;
     }
 
     public boolean equals(Object obj) {
@@ -130,8 +130,8 @@ public final class e implements M5.a {
     public int hashCode() {
         Object[] objArr = {getSession(), getNotificationIds(), getName(), Long.valueOf(getTimestamp()), Long.valueOf(getSessionTime()), Float.valueOf(getWeight())};
         int i = 1;
-        for (int i6 = 0; i6 < 6; i6++) {
-            Object obj = objArr[i6];
+        for (int i4 = 0; i4 < 6; i4++) {
+            Object obj = objArr[i4];
             i = (i * 31) + (obj != null ? obj.hashCode() : 0);
         }
         return i;

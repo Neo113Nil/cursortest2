@@ -5,7 +5,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.anythink.expressad.video.module.a.a;
 import com.facebook.ads.androidx.media3.common.StreamKey;
-import com.instagram.common.viewpoint.core.AbstractC06243y;
+import com.instagram.common.viewpoint.core.AbstractC06443y;
 import com.instagram.common.viewpoint.core.C5C;
 import com.instagram.common.viewpoint.core.C7;
 import java.util.ArrayList;
@@ -25,10 +25,10 @@ public final class DownloadRequest implements Parcelable {
     public final byte[] A05;
     public final byte[] A06;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 67);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 67);
         }
         return new String(copyOfRange);
     }
@@ -62,7 +62,7 @@ public final class DownloadRequest implements Parcelable {
         byte[] bArr4;
         int A0B = C5C.A0B(uri, str2);
         if (A0B == 0 || A0B == 2 || A0B == 1) {
-            AbstractC06243y.A09(str3 == null, A00(1, 38, a.f21727Q) + A0B);
+            AbstractC06443y.A09(str3 == null, A00(1, 38, a.f22514Q) + A0B);
         }
         this.A02 = str;
         this.A00 = uri;
@@ -97,7 +97,7 @@ public final class DownloadRequest implements Parcelable {
     */
     public final DownloadRequest A02(DownloadRequest downloadRequest) {
         List emptyList;
-        AbstractC06243y.A07(this.A02.equals(downloadRequest.A02));
+        AbstractC06443y.A07(this.A02.equals(downloadRequest.A02));
         if (this.A04.isEmpty() || downloadRequest.A04.isEmpty()) {
             emptyList = Collections.emptyList();
         } else {
@@ -151,8 +151,8 @@ public final class DownloadRequest implements Parcelable {
         parcel.writeString(this.A00.toString());
         parcel.writeString(this.A03);
         parcel.writeInt(this.A04.size());
-        for (int i6 = 0; i6 < i; i6++) {
-            parcel.writeParcelable(this.A04.get(i6), 0);
+        for (int i4 = 0; i4 < i; i4++) {
+            parcel.writeParcelable(this.A04.get(i4), 0);
         }
         parcel.writeByteArray(this.A06);
         parcel.writeString(this.A01);

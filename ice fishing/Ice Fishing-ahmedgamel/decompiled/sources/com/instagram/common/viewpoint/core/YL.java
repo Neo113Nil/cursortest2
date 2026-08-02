@@ -15,13 +15,13 @@ import android.renderscript.ScriptIntrinsicBlur;
 public abstract class YL {
     public static String[] A00 = {"0dslaS9HQNor4584P2qJWDauGUJuCUyD", "hmu58uVtuBegxtguAmxWdcC", "RnpWwwftYVF7ZcI60v", "9ipL7H1AQ7hrzmKFvXE", "pZ3KzhX3bLT6KZ2Vo7aJYVVuuWb7wszV", "0AfAa8bIuU", "cY7ucT44sLUlO9uXsqd9BA7lLs0feoWz", "ELBhZY2lRpRyd6u07AMv4seAD2bUSLiq"};
 
-    public static Bitmap A00(C1840gi c1840gi, Bitmap bitmap, int i) throws RSRuntimeException {
+    public static Bitmap A00(C1860gi c1860gi, Bitmap bitmap, int i) throws RSRuntimeException {
         RenderScript renderScript = null;
         Allocation allocation = null;
         Allocation output = null;
         ScriptIntrinsicBlur scriptIntrinsicBlur = null;
         try {
-            renderScript = RenderScript.create(c1840gi);
+            renderScript = RenderScript.create(c1860gi);
             renderScript.setMessageHandler(new RenderScript.RSMessageHandler());
             allocation = Allocation.createFromBitmap(renderScript, bitmap, Allocation.MipmapControl.MIPMAP_NONE, 1);
             output = Allocation.createTyped(renderScript, allocation.getType());
@@ -47,20 +47,20 @@ public abstract class YL {
         }
     }
 
-    public static Bitmap A01(C1840gi c1840gi, Bitmap bitmap, int i, int i6) {
-        int width = bitmap.getWidth() / i6;
-        int height = bitmap.getHeight() / i6;
+    public static Bitmap A01(C1860gi c1860gi, Bitmap bitmap, int i, int i4) {
+        int width = bitmap.getWidth() / i4;
+        int height = bitmap.getHeight() / i4;
         if (width != 0 && height != 0) {
             Bitmap createBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
             Canvas canvas = new Canvas(createBitmap);
-            canvas.scale(1.0f / i6, 1.0f / i6);
+            canvas.scale(1.0f / i4, 1.0f / i4);
             Paint paint = new Paint();
             paint.setFlags(3);
             paint.setColorFilter(new PorterDuffColorFilter(0, PorterDuff.Mode.SRC_ATOP));
             canvas.drawBitmap(bitmap, 0.0f, 0.0f, paint);
             try {
-                createBitmap = A00(c1840gi, createBitmap, i);
-                if (i6 != 1) {
+                createBitmap = A00(c1860gi, createBitmap, i);
+                if (i4 != 1) {
                     int height2 = bitmap.getWidth();
                     int width2 = bitmap.getHeight();
                     Bitmap createScaledBitmap = Bitmap.createScaledBitmap(createBitmap, height2, width2, true);

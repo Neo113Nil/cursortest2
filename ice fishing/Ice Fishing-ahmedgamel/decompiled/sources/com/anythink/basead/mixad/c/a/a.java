@@ -14,78 +14,78 @@ import java.lang.ref.WeakReference;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private ATNativeAdInfo f9508a;
+    private ATNativeAdInfo f10294a;
 
     /* renamed from: b, reason: collision with root package name */
-    private x f9509b;
+    private x f10295b;
 
     /* renamed from: c, reason: collision with root package name */
-    private w<?> f9510c;
+    private w<?> f10296c;
 
     /* renamed from: d, reason: collision with root package name */
-    private Context f9511d;
+    private Context f10297d;
 
     /* renamed from: e, reason: collision with root package name */
-    private WeakReference<Context> f9512e;
+    private WeakReference<Context> f10298e;
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f9513f;
+    private boolean f10299f;
 
     /* renamed from: g, reason: collision with root package name */
-    private String f9514g;
+    private String f10300g;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f9515h;
+    private int f10301h;
     private boolean i;
 
     /* renamed from: j, reason: collision with root package name */
-    private b f9516j;
+    private b f10302j;
 
     /* renamed from: k, reason: collision with root package name */
-    private View f9517k;
+    private View f10303k;
 
     /* renamed from: l, reason: collision with root package name */
-    private int f9518l;
+    private int f10304l;
 
     /* renamed from: m, reason: collision with root package name */
-    private int f9519m;
+    private int f10305m;
 
     /* renamed from: com.anythink.basead.mixad.c.a.a$a, reason: collision with other inner class name */
     public static class C0043a {
 
         /* renamed from: a, reason: collision with root package name */
-        private Context f9520a;
+        private Context f10306a;
 
         /* renamed from: b, reason: collision with root package name */
-        private ATNativeAdInfo f9521b;
+        private ATNativeAdInfo f10307b;
 
         /* renamed from: c, reason: collision with root package name */
-        private x f9522c;
+        private x f10308c;
 
         /* renamed from: d, reason: collision with root package name */
-        private w<?> f9523d;
+        private w<?> f10309d;
 
         /* renamed from: e, reason: collision with root package name */
-        private boolean f9524e;
+        private boolean f10310e;
 
         /* renamed from: f, reason: collision with root package name */
-        private String f9525f;
+        private String f10311f;
 
         /* renamed from: g, reason: collision with root package name */
-        private int f9526g;
+        private int f10312g;
 
         /* renamed from: h, reason: collision with root package name */
-        private boolean f9527h;
+        private boolean f10313h;
         private b i;
 
         /* renamed from: j, reason: collision with root package name */
-        private View f9528j;
+        private View f10314j;
 
         /* renamed from: k, reason: collision with root package name */
-        private int f9529k;
+        private int f10315k;
 
         /* renamed from: l, reason: collision with root package name */
-        private int f9530l;
+        private int f10316l;
 
         private b b() {
             return this.i;
@@ -93,39 +93,39 @@ public final class a {
 
         public final C0043a a(a aVar) {
             if (aVar != null) {
-                this.f9520a = aVar.j();
-                this.f9523d = aVar.c();
-                this.f9522c = aVar.b();
+                this.f10306a = aVar.j();
+                this.f10309d = aVar.c();
+                this.f10308c = aVar.b();
                 this.i = aVar.h();
-                this.f9521b = aVar.a();
-                this.f9528j = aVar.i();
-                this.f9527h = aVar.g();
-                this.f9524e = aVar.d();
-                this.f9526g = aVar.f();
-                this.f9525f = aVar.e();
-                this.f9529k = aVar.k();
-                this.f9530l = aVar.l();
+                this.f10307b = aVar.a();
+                this.f10314j = aVar.i();
+                this.f10313h = aVar.g();
+                this.f10310e = aVar.d();
+                this.f10312g = aVar.f();
+                this.f10311f = aVar.e();
+                this.f10315k = aVar.k();
+                this.f10316l = aVar.l();
             }
             return this;
         }
 
         public final C0043a c(int i) {
-            this.f9530l = i;
+            this.f10316l = i;
             return this;
         }
 
-        public final C0043a b(boolean z3) {
-            this.f9527h = z3;
+        public final C0043a b(boolean z6) {
+            this.f10313h = z6;
             return this;
         }
 
         public final C0043a b(int i) {
-            this.f9529k = i;
+            this.f10315k = i;
             return this;
         }
 
         public final C0043a a(ATNativeAdInfo aTNativeAdInfo) {
-            this.f9521b = aTNativeAdInfo;
+            this.f10307b = aTNativeAdInfo;
             return this;
         }
 
@@ -135,59 +135,59 @@ public final class a {
         }
 
         public final C0043a a(x xVar) {
-            this.f9522c = xVar;
+            this.f10308c = xVar;
             return this;
         }
 
         public final C0043a a(w<?> wVar) {
-            this.f9523d = wVar;
+            this.f10309d = wVar;
             return this;
         }
 
-        public final C0043a a(boolean z3) {
-            this.f9524e = z3;
+        public final C0043a a(boolean z6) {
+            this.f10310e = z6;
             return this;
         }
 
         public final C0043a a(String str) {
-            this.f9525f = str;
+            this.f10311f = str;
             return this;
         }
 
         public final C0043a a(int i) {
-            this.f9526g = i;
+            this.f10312g = i;
             return this;
         }
 
         public final C0043a a(Context context) {
-            this.f9520a = context;
+            this.f10306a = context;
             return this;
         }
 
         private C0043a a(View view) {
-            this.f9528j = view;
+            this.f10314j = view;
             return this;
         }
 
         public final a a() {
             a aVar = new a((byte) 0);
-            Context context = this.f9520a;
+            Context context = this.f10306a;
             if (!(context instanceof Activity)) {
-                aVar.f9511d = context;
+                aVar.f10297d = context;
             } else {
-                aVar.f9512e = new WeakReference(this.f9520a);
+                aVar.f10298e = new WeakReference(this.f10306a);
             }
-            aVar.f9508a = this.f9521b;
-            aVar.f9517k = this.f9528j;
-            aVar.i = this.f9527h;
-            aVar.f9516j = this.i;
-            aVar.f9510c = this.f9523d;
-            aVar.f9509b = this.f9522c;
-            aVar.f9513f = this.f9524e;
-            aVar.f9515h = this.f9526g;
-            aVar.f9514g = this.f9525f;
-            aVar.f9518l = this.f9529k;
-            aVar.f9519m = this.f9530l;
+            aVar.f10294a = this.f10307b;
+            aVar.f10303k = this.f10314j;
+            aVar.i = this.f10313h;
+            aVar.f10302j = this.i;
+            aVar.f10296c = this.f10309d;
+            aVar.f10295b = this.f10308c;
+            aVar.f10299f = this.f10310e;
+            aVar.f10301h = this.f10312g;
+            aVar.f10300g = this.f10311f;
+            aVar.f10304l = this.f10315k;
+            aVar.f10305m = this.f10316l;
             return aVar;
         }
     }
@@ -197,15 +197,15 @@ public final class a {
     }
 
     public final boolean d() {
-        return this.f9513f;
+        return this.f10299f;
     }
 
     public final String e() {
-        return this.f9514g;
+        return this.f10300g;
     }
 
     public final int f() {
-        return this.f9515h;
+        return this.f10301h;
     }
 
     public final boolean g() {
@@ -213,46 +213,46 @@ public final class a {
     }
 
     public final b h() {
-        return this.f9516j;
+        return this.f10302j;
     }
 
     public final View i() {
-        return this.f9517k;
+        return this.f10303k;
     }
 
     public final Context j() {
-        Context context = this.f9511d;
-        WeakReference<Context> weakReference = this.f9512e;
+        Context context = this.f10297d;
+        WeakReference<Context> weakReference = this.f10298e;
         if (weakReference != null && weakReference.get() != null) {
-            context = this.f9512e.get();
+            context = this.f10298e.get();
         }
         return context == null ? t.b().g() : context;
     }
 
     public final int k() {
-        return this.f9518l;
+        return this.f10304l;
     }
 
     public final int l() {
-        return this.f9519m;
+        return this.f10305m;
     }
 
     private a() {
     }
 
     public final w<?> c() {
-        return this.f9510c;
+        return this.f10296c;
     }
 
     public final x b() {
-        return this.f9509b;
+        return this.f10295b;
     }
 
     public final ATNativeAdInfo a() {
-        return this.f9508a;
+        return this.f10294a;
     }
 
     public final void a(View view) {
-        this.f9517k = view;
+        this.f10303k = view;
     }
 }

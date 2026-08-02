@@ -10,14 +10,14 @@ import java.util.Locale;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final long f15050a = 253402300799999L;
+    public static final long f15837a = 253402300799999L;
 
     /* renamed from: b, reason: collision with root package name */
-    private static final ThreadLocal<DateFormat> f15051b = new ThreadLocal<DateFormat>() { // from class: com.anythink.core.common.n.b.a.c.d.1
+    private static final ThreadLocal<DateFormat> f15838b = new ThreadLocal<DateFormat>() { // from class: com.anythink.core.common.n.b.a.c.d.1
         private static DateFormat a() {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss 'GMT'", Locale.US);
             simpleDateFormat.setLenient(false);
-            simpleDateFormat.setTimeZone(com.anythink.core.common.n.b.a.c.f15041f);
+            simpleDateFormat.setTimeZone(com.anythink.core.common.n.b.a.c.f15828f);
             return simpleDateFormat;
         }
 
@@ -25,16 +25,16 @@ public final class d {
         public final /* synthetic */ DateFormat initialValue() {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss 'GMT'", Locale.US);
             simpleDateFormat.setLenient(false);
-            simpleDateFormat.setTimeZone(com.anythink.core.common.n.b.a.c.f15041f);
+            simpleDateFormat.setTimeZone(com.anythink.core.common.n.b.a.c.f15828f);
             return simpleDateFormat;
         }
     };
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String[] f15052c = {"EEE, dd MMM yyyy HH:mm:ss zzz", "EEEE, dd-MMM-yy HH:mm:ss zzz", "EEE MMM d HH:mm:ss yyyy", "EEE, dd-MMM-yyyy HH:mm:ss z", "EEE, dd-MMM-yyyy HH-mm-ss z", "EEE, dd MMM yy HH:mm:ss z", "EEE dd-MMM-yyyy HH:mm:ss z", "EEE dd MMM yyyy HH:mm:ss z", "EEE dd-MMM-yyyy HH-mm-ss z", "EEE dd-MMM-yy HH:mm:ss z", "EEE dd MMM yy HH:mm:ss z", "EEE,dd-MMM-yy HH:mm:ss z", "EEE,dd-MMM-yyyy HH:mm:ss z", "EEE, dd-MM-yyyy HH:mm:ss z", "EEE MMM d yyyy HH:mm:ss z"};
+    private static final String[] f15839c = {"EEE, dd MMM yyyy HH:mm:ss zzz", "EEEE, dd-MMM-yy HH:mm:ss zzz", "EEE MMM d HH:mm:ss yyyy", "EEE, dd-MMM-yyyy HH:mm:ss z", "EEE, dd-MMM-yyyy HH-mm-ss z", "EEE, dd MMM yy HH:mm:ss z", "EEE dd-MMM-yyyy HH:mm:ss z", "EEE dd MMM yyyy HH:mm:ss z", "EEE dd-MMM-yyyy HH-mm-ss z", "EEE dd-MMM-yy HH:mm:ss z", "EEE dd MMM yy HH:mm:ss z", "EEE,dd-MMM-yy HH:mm:ss z", "EEE,dd-MMM-yyyy HH:mm:ss z", "EEE, dd-MM-yyyy HH:mm:ss z", "EEE MMM d yyyy HH:mm:ss z"};
 
     /* renamed from: d, reason: collision with root package name */
-    private static final DateFormat[] f15053d = new DateFormat[15];
+    private static final DateFormat[] f15840d = new DateFormat[15];
 
     private d() {
     }
@@ -44,20 +44,20 @@ public final class d {
             return null;
         }
         ParsePosition parsePosition = new ParsePosition(0);
-        Date parse = f15051b.get().parse(str, parsePosition);
+        Date parse = f15838b.get().parse(str, parsePosition);
         if (parsePosition.getIndex() == str.length()) {
             return parse;
         }
-        String[] strArr = f15052c;
+        String[] strArr = f15839c;
         synchronized (strArr) {
             try {
                 int length = strArr.length;
                 for (int i = 0; i < length; i++) {
-                    DateFormat[] dateFormatArr = f15053d;
+                    DateFormat[] dateFormatArr = f15840d;
                     DateFormat dateFormat = dateFormatArr[i];
                     if (dateFormat == null) {
-                        dateFormat = new SimpleDateFormat(f15052c[i], Locale.US);
-                        dateFormat.setTimeZone(com.anythink.core.common.n.b.a.c.f15041f);
+                        dateFormat = new SimpleDateFormat(f15839c[i], Locale.US);
+                        dateFormat.setTimeZone(com.anythink.core.common.n.b.a.c.f15828f);
                         dateFormatArr[i] = dateFormat;
                     }
                     parsePosition.setIndex(0);
@@ -74,6 +74,6 @@ public final class d {
     }
 
     public static String a(Date date) {
-        return f15051b.get().format(date);
+        return f15838b.get().format(date);
     }
 }

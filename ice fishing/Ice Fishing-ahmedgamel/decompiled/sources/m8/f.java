@@ -4,5 +4,5 @@ package m8;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final f f39347a = new f();
+    public static final f f39506a = new f();
 }

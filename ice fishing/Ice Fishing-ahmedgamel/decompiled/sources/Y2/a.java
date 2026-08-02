@@ -1,12 +1,7 @@
 package Y2;
 
-/* loaded from: classes2.dex */
-public abstract class a {
+import android.os.IInterface;
 
-    /* renamed from: a, reason: collision with root package name */
-    public static final /* synthetic */ int f3945a = 0;
-
-    static {
-        a.class.getClassLoader();
-    }
+/* loaded from: classes.dex */
+public interface a extends IInterface {
 }

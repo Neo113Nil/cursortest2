@@ -4,17 +4,17 @@ package com.anythink.basead.exoplayer.e;
 public interface f {
     int a(int i);
 
-    int a(byte[] bArr, int i, int i6);
+    int a(byte[] bArr, int i, int i4);
 
     void a();
 
     <E extends Throwable> void a(long j6, E e9);
 
-    boolean a(byte[] bArr, int i, int i6, boolean z3);
+    boolean a(byte[] bArr, int i, int i4, boolean z6);
 
     long b();
 
-    void b(byte[] bArr, int i, int i6);
+    void b(byte[] bArr, int i, int i4);
 
     boolean b(int i);
 
@@ -22,11 +22,11 @@ public interface f {
 
     void c(int i);
 
-    boolean c(byte[] bArr, int i, int i6);
+    boolean c(byte[] bArr, int i, int i4);
 
     long d();
 
-    void d(byte[] bArr, int i, int i6);
+    void d(byte[] bArr, int i, int i4);
 
     boolean d(int i);
 

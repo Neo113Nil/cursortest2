@@ -4,7 +4,7 @@ package com.anythink.basead.exoplayer.g;
 public final class e extends com.anythink.basead.exoplayer.c.e {
 
     /* renamed from: g, reason: collision with root package name */
-    public long f7380g;
+    public long f8166g;
 
     public e() {
         super(1);

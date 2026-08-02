@@ -18,13 +18,13 @@ import com.anythink.network.adx.AdxAppInfo;
 public class OnlineApiATNativeAd extends CustomNativeAd {
 
     /* renamed from: a, reason: collision with root package name */
-    a f23208a;
+    a f23995a;
 
     /* renamed from: b, reason: collision with root package name */
-    Context f23209b;
+    Context f23996b;
 
     /* renamed from: c, reason: collision with root package name */
-    View f23210c;
+    View f23997c;
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0078, code lost:
     
@@ -34,15 +34,15 @@ public class OnlineApiATNativeAd extends CustomNativeAd {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public OnlineApiATNativeAd(Context context, a aVar) {
-        this.f23209b = context.getApplicationContext();
-        this.f23208a = aVar;
+        this.f23996b = context.getApplicationContext();
+        this.f23995a = aVar;
         aVar.a(new com.anythink.basead.g.a() { // from class: com.anythink.network.onlineapi.OnlineApiATNativeAd.1
             @Override // com.anythink.basead.g.a
             public final void onAdClick(j jVar) {
                 n detail = OnlineApiATNativeAd.this.getDetail();
                 if (detail != null) {
-                    detail.I(jVar.f8982a);
-                    detail.J(jVar.f8983b);
+                    detail.I(jVar.f9768a);
+                    detail.J(jVar.f9769b);
                 }
                 OnlineApiATNativeAd.this.notifyAdClicked();
             }
@@ -57,40 +57,40 @@ public class OnlineApiATNativeAd extends CustomNativeAd {
             }
 
             @Override // com.anythink.basead.g.a
-            public final void onDeeplinkCallback(boolean z3) {
-                OnlineApiATNativeAd.this.notifyDeeplinkCallback(z3);
+            public final void onDeeplinkCallback(boolean z6) {
+                OnlineApiATNativeAd.this.notifyDeeplinkCallback(z6);
             }
 
             @Override // com.anythink.basead.g.a
             public final void onShowFailed(f fVar) {
             }
         });
-        setNetworkInfoMap(d.a(this.f23208a.a()));
-        setAdChoiceIconUrl(this.f23208a.h());
-        setTitle(this.f23208a.c());
-        setDescriptionText(this.f23208a.d());
-        setIconImageUrl(this.f23208a.f());
-        setMainImageUrl(this.f23208a.g());
-        setCallToActionText(this.f23208a.e());
-        if (this.f23208a.o()) {
-            setAdAppInfo(new AdxAppInfo(this.f23208a));
+        setNetworkInfoMap(d.a(this.f23995a.a()));
+        setAdChoiceIconUrl(this.f23995a.h());
+        setTitle(this.f23995a.c());
+        setDescriptionText(this.f23995a.d());
+        setIconImageUrl(this.f23995a.f());
+        setMainImageUrl(this.f23995a.g());
+        setCallToActionText(this.f23995a.e());
+        if (this.f23995a.o()) {
+            setAdAppInfo(new AdxAppInfo(this.f23995a));
         }
-        int z3 = this.f23208a.z();
-        if (z3 != 1) {
-            if (z3 == 2 || z3 == 3) {
+        int z6 = this.f23995a.z();
+        if (z6 != 1) {
+            if (z6 == 2 || z6 == 3) {
                 setNativeInteractionType(2);
             }
-            setMainImageWidth(this.f23208a.x());
-            setMainImageHeight(this.f23208a.y());
+            setMainImageWidth(this.f23995a.x());
+            setMainImageHeight(this.f23995a.y());
         }
         setNativeInteractionType(1);
-        setMainImageWidth(this.f23208a.x());
-        setMainImageHeight(this.f23208a.y());
+        setMainImageWidth(this.f23995a.x());
+        setMainImageHeight(this.f23995a.y());
     }
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.core.api.BaseAd
     public void clear(View view) {
-        a aVar = this.f23208a;
+        a aVar = this.f23995a;
         if (aVar != null) {
             aVar.q();
         }
@@ -98,25 +98,25 @@ public class OnlineApiATNativeAd extends CustomNativeAd {
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.core.api.BaseAd
     public void destroy() {
-        a aVar = this.f23208a;
+        a aVar = this.f23995a;
         if (aVar != null) {
             aVar.a((com.anythink.basead.g.a) null);
-            this.f23208a.r();
+            this.f23995a.r();
         }
     }
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.nativead.unitgroup.a, com.anythink.core.api.IATThirdPartyMaterial
     public View getAdMediaView(Object... objArr) {
-        if (this.f23210c == null) {
-            this.f23210c = this.f23208a.a(this.f23209b, false, null);
+        if (this.f23997c == null) {
+            this.f23997c = this.f23995a.a(this.f23996b, false, null);
         }
-        return this.f23210c;
+        return this.f23997c;
     }
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.core.api.BaseAd
     public ViewGroup getCustomAdContainer() {
-        if (this.f23208a != null) {
-            return new OwnNativeATView(this.f23209b);
+        if (this.f23995a != null) {
+            return new OwnNativeATView(this.f23996b);
         }
         return null;
     }
@@ -124,7 +124,7 @@ public class OnlineApiATNativeAd extends CustomNativeAd {
     @Override // com.anythink.nativead.unitgroup.a, com.anythink.core.api.IATThirdPartyMaterial
     public int getDownloadStatus() {
         int A9;
-        a aVar = this.f23208a;
+        a aVar = this.f23995a;
         if (aVar == null || (A9 = aVar.A()) < 0) {
             return 0;
         }
@@ -133,8 +133,8 @@ public class OnlineApiATNativeAd extends CustomNativeAd {
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.nativead.unitgroup.a
     public void prepare(View view, ATNativePrepareInfo aTNativePrepareInfo) {
-        if (this.f23208a != null) {
-            this.f23208a.a(view, aTNativePrepareInfo.getClickViewList(), aTNativePrepareInfo instanceof ATNativePrepareExInfo ? ((ATNativePrepareExInfo) aTNativePrepareInfo).getCreativeClickViewList() : null, aTNativePrepareInfo.getChoiceViewLayoutParams(), aTNativePrepareInfo.getCloseView());
+        if (this.f23995a != null) {
+            this.f23995a.a(view, aTNativePrepareInfo.getClickViewList(), aTNativePrepareInfo instanceof ATNativePrepareExInfo ? ((ATNativePrepareExInfo) aTNativePrepareInfo).getCreativeClickViewList() : null, aTNativePrepareInfo.getChoiceViewLayoutParams(), aTNativePrepareInfo.getCloseView());
         }
     }
 }

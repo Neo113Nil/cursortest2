@@ -11,21 +11,21 @@ import org.json.JSONObject;
 public final class b {
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f20835c = "HandlerH5MessageManager";
+    private static final String f21622c = "HandlerH5MessageManager";
 
     /* renamed from: a, reason: collision with root package name */
-    int f20836a;
+    int f21623a;
 
     /* renamed from: b, reason: collision with root package name */
-    int f20837b;
+    int f21624b;
 
     /* renamed from: d, reason: collision with root package name */
-    private String f20838d;
+    private String f21625d;
 
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private static b f20839a = new b(0);
+        private static b f21626a = new b(0);
 
         private a() {
         }
@@ -36,19 +36,19 @@ public final class b {
     }
 
     public static b a() {
-        return a.f20839a;
+        return a.f21626a;
     }
 
     private b() {
-        this.f20838d = "handlerNativeResult";
-        this.f20836a = 0;
-        this.f20837b = 1;
+        this.f21625d = "handlerNativeResult";
+        this.f21623a = 0;
+        this.f21624b = 1;
     }
 
     public final void a(Object obj, JSONObject jSONObject) {
         try {
             if (TextUtils.isEmpty(jSONObject.toString())) {
-                a(this.f20837b, "params is null", obj);
+                a(this.f21624b, "params is null", obj);
                 return;
             }
             String optString = jSONObject.optString("uniqueIdentifier");
@@ -59,20 +59,20 @@ public final class b {
                 if (optJSONObject != null && !TextUtils.isEmpty(optJSONObject.toString())) {
                     optJSONObject.optInt("type", 0);
                 }
-                a(this.f20836a, "receivedMessage", obj);
+                a(this.f21623a, "receivedMessage", obj);
                 if (optString.equalsIgnoreCase("reporter") || !optString.equalsIgnoreCase("MediaPlayer")) {
                     return;
                 }
-                com.anythink.expressad.video.bt.a.a unused = a.C0133a.f20834a;
+                com.anythink.expressad.video.bt.a.a unused = a.C0133a.f21621a;
                 return;
             }
-            a(this.f20837b, "module or method is null", obj);
+            a(this.f21624b, "module or method is null", obj);
         } catch (Exception e9) {
             e9.getMessage();
-            a(this.f20837b, e9.getMessage(), obj);
+            a(this.f21624b, e9.getMessage(), obj);
         } catch (Throwable th) {
             th.getMessage();
-            a(this.f20837b, th.getMessage(), obj);
+            a(this.f21624b, th.getMessage(), obj);
         }
     }
 

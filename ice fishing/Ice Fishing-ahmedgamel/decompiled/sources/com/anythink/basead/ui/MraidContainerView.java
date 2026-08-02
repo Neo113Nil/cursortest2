@@ -29,62 +29,62 @@ public class MraidContainerView extends FrameLayout {
     public static final int WINDOW_ATTACH_CHECK = 2;
 
     /* renamed from: o, reason: collision with root package name */
-    private static final String f10112o = "MraidContainerView";
+    private static final String f10898o = "MraidContainerView";
 
     /* renamed from: a, reason: collision with root package name */
-    protected w f10113a;
+    protected w f10899a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected y f10114b;
+    protected y f10900b;
 
     /* renamed from: c, reason: collision with root package name */
-    protected x f10115c;
+    protected x f10901c;
 
     /* renamed from: d, reason: collision with root package name */
-    protected e f10116d;
+    protected e f10902d;
 
     /* renamed from: e, reason: collision with root package name */
-    protected c f10117e;
+    protected c f10903e;
 
     /* renamed from: f, reason: collision with root package name */
-    protected ClickToReLoadView f10118f;
+    protected ClickToReLoadView f10904f;
 
     /* renamed from: g, reason: collision with root package name */
-    protected MraidWebView f10119g;
+    protected MraidWebView f10905g;
 
     /* renamed from: h, reason: collision with root package name */
-    protected a f10120h;
+    protected a f10906h;
     boolean i;
 
     /* renamed from: j, reason: collision with root package name */
-    boolean f10121j;
+    boolean f10907j;
 
     /* renamed from: k, reason: collision with root package name */
-    boolean f10122k;
+    boolean f10908k;
 
     /* renamed from: l, reason: collision with root package name */
-    long f10123l;
+    long f10909l;
 
     /* renamed from: m, reason: collision with root package name */
-    final long f10124m;
+    final long f10910m;
 
     /* renamed from: n, reason: collision with root package name */
-    boolean f10125n;
+    boolean f10911n;
 
     /* renamed from: p, reason: collision with root package name */
-    private boolean f10126p;
+    private boolean f10912p;
 
     /* renamed from: q, reason: collision with root package name */
-    private boolean f10127q;
+    private boolean f10913q;
 
     /* renamed from: r, reason: collision with root package name */
-    private boolean f10128r;
+    private boolean f10914r;
 
     /* renamed from: s, reason: collision with root package name */
-    private boolean f10129s;
+    private boolean f10915s;
 
     /* renamed from: t, reason: collision with root package name */
-    private f.b f10130t;
+    private f.b f10916t;
 
     /* renamed from: com.anythink.basead.ui.MraidContainerView$4, reason: invalid class name */
     public class AnonymousClass4 implements ClickToReLoadView.a {
@@ -109,32 +109,32 @@ public class MraidContainerView extends FrameLayout {
 
     public MraidContainerView(Context context) {
         super(context);
-        this.f10124m = com.anythink.basead.exoplayer.f.f7187a;
+        this.f10910m = com.anythink.basead.exoplayer.f.f7973a;
     }
 
     public static /* synthetic */ boolean b(MraidContainerView mraidContainerView) {
-        mraidContainerView.f10128r = false;
+        mraidContainerView.f10914r = false;
         return false;
     }
 
     private void e() {
-        if (this.f10118f == null) {
+        if (this.f10904f == null) {
             ClickToReLoadView clickToReLoadView = new ClickToReLoadView(getContext());
-            this.f10118f = clickToReLoadView;
+            this.f10904f = clickToReLoadView;
             clickToReLoadView.setListener(new AnonymousClass4());
         }
-        addView(this.f10118f, new FrameLayout.LayoutParams(-1, -1));
+        addView(this.f10904f, new FrameLayout.LayoutParams(-1, -1));
     }
 
     private void f() {
-        ClickToReLoadView clickToReLoadView = this.f10118f;
+        ClickToReLoadView clickToReLoadView = this.f10904f;
         if (clickToReLoadView != null) {
             removeView(clickToReLoadView);
         }
     }
 
     private void g() {
-        c cVar = this.f10117e;
+        c cVar = this.f10903e;
         if (cVar != null) {
             cVar.b();
         }
@@ -142,54 +142,54 @@ public class MraidContainerView extends FrameLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void h() {
-        c cVar = this.f10117e;
+        c cVar = this.f10903e;
         if (cVar != null) {
             cVar.c();
         }
     }
 
     private void i() {
-        if (!this.f10121j && this.f10126p && this.i) {
-            this.f10121j = true;
-            e eVar = this.f10116d;
+        if (!this.f10907j && this.f10912p && this.i) {
+            this.f10907j = true;
+            e eVar = this.f10902d;
             if (eVar == null || !eVar.a()) {
                 return;
             }
-            this.f10116d.a(BaseATView.a.f9804z, this.f10119g);
+            this.f10902d.a(BaseATView.a.f10590z, this.f10905g);
         }
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public boolean dispatchTouchEvent(MotionEvent motionEvent) {
         if (motionEvent.getAction() == 0) {
-            this.f10123l = System.currentTimeMillis();
+            this.f10909l = System.currentTimeMillis();
         }
         return super.dispatchTouchEvent(motionEvent);
     }
 
-    public void fireAudioVolumeChange(boolean z3) {
+    public void fireAudioVolumeChange(boolean z6) {
         try {
-            if (!this.f10129s || this.f10119g == null) {
+            if (!this.f10915s || this.f10905g == null) {
                 return;
             }
-            if (z3) {
+            if (z6) {
                 com.anythink.core.express.b.a.a();
-                com.anythink.core.express.b.a.a(this.f10119g, 0.0d);
+                com.anythink.core.express.b.a.a(this.f10905g, 0.0d);
             } else {
                 com.anythink.core.express.b.a.a();
-                com.anythink.core.express.b.a.a(this.f10119g, 1.0d);
+                com.anythink.core.express.b.a.a(this.f10905g, 1.0d);
             }
         } catch (Exception unused) {
         }
     }
 
-    public void fireMraidIsViewable(boolean z3) {
+    public void fireMraidIsViewable(boolean z6) {
         MraidWebView mraidWebView;
         try {
-            if (!this.f10129s || (mraidWebView = this.f10119g) == null) {
+            if (!this.f10915s || (mraidWebView = this.f10905g) == null) {
                 return;
             }
-            if (z3) {
+            if (z6) {
                 com.anythink.basead.mraid.c.a(mraidWebView, true);
             } else {
                 com.anythink.basead.mraid.c.a(mraidWebView, false);
@@ -199,48 +199,48 @@ public class MraidContainerView extends FrameLayout {
     }
 
     public void init() {
-        if (d.a(this.f10115c, this.f10113a)) {
+        if (d.a(this.f10901c, this.f10899a)) {
             b();
             return;
         }
         c cVar = new c(this);
-        this.f10117e = cVar;
+        this.f10903e = cVar;
         cVar.a();
     }
 
     public void loadMraidWebView(final int i) {
         f();
-        if (this.f10128r || this.f10129s) {
+        if (this.f10914r || this.f10915s) {
             return;
         }
-        if (!this.f10122k || this.f10126p) {
-            this.f10128r = true;
-            c cVar = this.f10117e;
+        if (!this.f10908k || this.f10912p) {
+            this.f10914r = true;
+            c cVar = this.f10903e;
             if (cVar != null) {
                 cVar.b();
             }
-            final String a9 = i.a(this.f10115c, this.f10113a);
+            final String a9 = i.a(this.f10901c, this.f10899a);
             if (TextUtils.isEmpty(a9)) {
-                this.f10128r = false;
+                this.f10914r = false;
                 h();
             } else {
-                final String b9 = d.b(this.f10115c, this.f10113a);
+                final String b9 = d.b(this.f10901c, this.f10899a);
                 t.b().b(new Runnable() { // from class: com.anythink.basead.ui.MraidContainerView.3
                     @Override // java.lang.Runnable
                     public final void run() {
                         try {
-                            MraidContainerView.this.f10119g = new MraidWebView(t.b().g());
+                            MraidContainerView.this.f10905g = new MraidWebView(t.b().g());
                             MraidContainerView mraidContainerView = MraidContainerView.this;
-                            if (mraidContainerView.f10122k) {
+                            if (mraidContainerView.f10908k) {
                                 mraidContainerView.c();
                             }
                             String str = b9;
                             String str2 = a9;
-                            MraidWebView mraidWebView = MraidContainerView.this.f10119g;
+                            MraidWebView mraidWebView = MraidContainerView.this.f10905g;
                             i.a aVar = new i.a() { // from class: com.anythink.basead.ui.MraidContainerView.3.1
                                 @Override // com.anythink.basead.mraid.i.a
                                 public final void a() {
-                                    String unused = MraidContainerView.f10112o;
+                                    String unused = MraidContainerView.f10898o;
                                     MraidContainerView.b(MraidContainerView.this);
                                     MraidContainerView.this.b();
                                     MraidContainerView.this.h();
@@ -249,20 +249,20 @@ public class MraidContainerView extends FrameLayout {
                                 @Override // com.anythink.basead.mraid.i.a
                                 public final void a(com.anythink.basead.d.f fVar) {
                                     MraidContainerView.b(MraidContainerView.this);
-                                    String unused = MraidContainerView.f10112o;
+                                    String unused = MraidContainerView.f10898o;
                                     fVar.c();
                                     MraidContainerView.e(MraidContainerView.this);
                                     MraidContainerView.this.h();
                                 }
                             };
                             MraidContainerView mraidContainerView2 = MraidContainerView.this;
-                            i.a(str, str2, mraidWebView, aVar, mraidContainerView2.f10113a, mraidContainerView2.f10115c, i, mraidContainerView2.f10122k);
+                            i.a(str, str2, mraidWebView, aVar, mraidContainerView2.f10899a, mraidContainerView2.f10901c, i, mraidContainerView2.f10908k);
                         } catch (Throwable th) {
                             MraidContainerView.b(MraidContainerView.this);
-                            String unused = MraidContainerView.f10112o;
+                            String unused = MraidContainerView.f10898o;
                             th.getMessage();
                             MraidContainerView.this.h();
-                            a aVar2 = MraidContainerView.this.f10120h;
+                            a aVar2 = MraidContainerView.this.f10906h;
                             if (aVar2 != null) {
                                 th.getMessage();
                                 aVar2.c();
@@ -277,7 +277,7 @@ public class MraidContainerView extends FrameLayout {
     @Override // android.view.ViewGroup, android.view.View
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        this.f10126p = true;
+        this.f10912p = true;
         i();
         a(2);
     }
@@ -285,48 +285,48 @@ public class MraidContainerView extends FrameLayout {
     @Override // android.view.ViewGroup, android.view.View
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        this.f10126p = false;
+        this.f10912p = false;
     }
 
     public void release() {
         MraidWebView mraidWebView;
         try {
-            if (this.f10129s && (mraidWebView = this.f10119g) != null) {
+            if (this.f10915s && (mraidWebView = this.f10905g) != null) {
                 am.a(mraidWebView);
-                this.f10119g.release();
-                com.anythink.core.common.res.d.a(t.b().g()).a(this.f10115c, this.f10113a);
+                this.f10905g.release();
+                com.anythink.core.common.res.d.a(t.b().g()).a(this.f10901c, this.f10899a);
             }
             am.a(this);
         } catch (Throwable unused) {
         }
     }
 
-    public void setNeedRegisterVolumeChangeReceiver(boolean z3) {
-        this.f10127q = z3;
+    public void setNeedRegisterVolumeChangeReceiver(boolean z6) {
+        this.f10913q = z6;
     }
 
     @Override // android.view.View
     public void setVisibility(int i) {
         super.setVisibility(i);
-        if (this.f10126p) {
+        if (this.f10912p) {
             a(4);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void b() {
-        MraidWebView b9 = d.b(d.b(this.f10115c, this.f10113a));
-        this.f10119g = b9;
+        MraidWebView b9 = d.b(d.b(this.f10901c, this.f10899a));
+        this.f10905g = b9;
         if (b9 != null) {
             f();
-            this.f10129s = true;
-            if (this.f10127q) {
-                this.f10119g.setNeedRegisterVolumeChangeReceiver(true);
+            this.f10915s = true;
+            if (this.f10913q) {
+                this.f10905g.setNeedRegisterVolumeChangeReceiver(true);
             }
-            this.f10119g.prepare(getContext(), new com.anythink.basead.mraid.e() { // from class: com.anythink.basead.ui.MraidContainerView.1
+            this.f10905g.prepare(getContext(), new com.anythink.basead.mraid.e() { // from class: com.anythink.basead.ui.MraidContainerView.1
                 @Override // com.anythink.basead.mraid.e
                 public final void a() {
-                    a aVar = MraidContainerView.this.f10120h;
+                    a aVar = MraidContainerView.this.f10906h;
                     if (aVar != null) {
                         aVar.b();
                     }
@@ -339,18 +339,18 @@ public class MraidContainerView extends FrameLayout {
                 @Override // com.anythink.core.express.b.b
                 public final void open(String str) {
                     MraidContainerView mraidContainerView = MraidContainerView.this;
-                    if (mraidContainerView.f10120h == null || !mraidContainerView.a(str)) {
+                    if (mraidContainerView.f10906h == null || !mraidContainerView.a(str)) {
                         return;
                     }
-                    MraidContainerView.this.f10120h.a(str);
-                    MraidContainerView.this.f10123l = 0L;
+                    MraidContainerView.this.f10906h.a(str);
+                    MraidContainerView.this.f10909l = 0L;
                 }
             });
             c();
             d();
             this.i = true;
             i();
-            a aVar = this.f10120h;
+            a aVar = this.f10906h;
             if (aVar != null) {
                 aVar.a();
             }
@@ -359,14 +359,14 @@ public class MraidContainerView extends FrameLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void c() {
-        if (this.f10119g.getParent() == null) {
-            this.f10119g.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
-            addView(this.f10119g);
+        if (this.f10905g.getParent() == null) {
+            this.f10905g.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
+            addView(this.f10905g);
         }
     }
 
     private void d() {
-        if (this.f10113a.i() <= 0 || this.f10113a.j() <= 0) {
+        if (this.f10899a.i() <= 0 || this.f10899a.j() <= 0) {
             return;
         }
         final ViewTreeObserver viewTreeObserver = getViewTreeObserver();
@@ -375,26 +375,26 @@ public class MraidContainerView extends FrameLayout {
             public final void onGlobalLayout() {
                 try {
                     MraidContainerView mraidContainerView = MraidContainerView.this;
-                    if (!mraidContainerView.f10125n) {
-                        mraidContainerView.f10125n = true;
-                        FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) mraidContainerView.f10119g.getLayoutParams();
-                        layoutParams.width = q.a(t.b().g(), MraidContainerView.this.f10113a.i());
-                        layoutParams.height = q.a(t.b().g(), MraidContainerView.this.f10113a.j());
+                    if (!mraidContainerView.f10911n) {
+                        mraidContainerView.f10911n = true;
+                        FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) mraidContainerView.f10905g.getLayoutParams();
+                        layoutParams.width = q.a(t.b().g(), MraidContainerView.this.f10899a.i());
+                        layoutParams.height = q.a(t.b().g(), MraidContainerView.this.f10899a.j());
                         int width = (MraidContainerView.this.getWidth() - MraidContainerView.this.getPaddingLeft()) - MraidContainerView.this.getPaddingRight();
                         int height = (MraidContainerView.this.getHeight() - MraidContainerView.this.getPaddingBottom()) - MraidContainerView.this.getPaddingTop();
-                        float i = MraidContainerView.this.f10113a.i() / (MraidContainerView.this.f10113a.j() * 1.0f);
+                        float i = MraidContainerView.this.f10899a.i() / (MraidContainerView.this.f10899a.j() * 1.0f);
                         layoutParams.width = Math.min(width, layoutParams.width);
                         int min = Math.min(height, layoutParams.height);
                         layoutParams.height = min;
-                        int i6 = layoutParams.width;
-                        float f3 = i6 / (min * 1.0f);
-                        if (f3 > i) {
+                        int i4 = layoutParams.width;
+                        float f2 = i4 / (min * 1.0f);
+                        if (f2 > i) {
                             layoutParams.width = (int) (min * i);
-                        } else if (f3 < i) {
-                            layoutParams.height = (int) (i6 / i);
+                        } else if (f2 < i) {
+                            layoutParams.height = (int) (i4 / i);
                         }
                         layoutParams.gravity = 17;
-                        MraidContainerView.this.f10119g.setLayoutParams(layoutParams);
+                        MraidContainerView.this.f10905g.setLayoutParams(layoutParams);
                     }
                     viewTreeObserver.removeGlobalOnLayoutListener(this);
                 } catch (Throwable unused) {
@@ -405,17 +405,17 @@ public class MraidContainerView extends FrameLayout {
 
     public MraidContainerView(Context context, w wVar, x xVar, e eVar, a aVar) {
         super(context);
-        this.f10124m = com.anythink.basead.exoplayer.f.f7187a;
-        this.f10113a = wVar;
-        this.f10114b = xVar.f14168o;
-        this.f10115c = xVar;
-        this.f10116d = eVar;
-        this.f10120h = aVar;
+        this.f10910m = com.anythink.basead.exoplayer.f.f7973a;
+        this.f10899a = wVar;
+        this.f10900b = xVar.f14954o;
+        this.f10901c = xVar;
+        this.f10902d = eVar;
+        this.f10906h = aVar;
         setBackgroundDrawable(new com.anythink.basead.ui.b.a());
-        this.f10122k = false;
-        y yVar = this.f10114b;
+        this.f10908k = false;
+        y yVar = this.f10900b;
         if (yVar != null) {
-            this.f10122k = yVar.bK() == 1;
+            this.f10908k = yVar.bK() == 1;
         }
     }
 
@@ -426,55 +426,55 @@ public class MraidContainerView extends FrameLayout {
     /* JADX WARN: Type inference failed for: r7v2 */
     /* JADX WARN: Type inference failed for: r7v3 */
     public synchronized boolean a(String str) {
-        boolean z3;
+        boolean z6;
         ?? r72;
         try {
-            z3 = false;
-            if (System.currentTimeMillis() - this.f10123l > com.anythink.basead.exoplayer.f.f7187a) {
-                boolean bp = this.f10113a.r().bp();
-                boolean z6 = !bp;
+            z6 = false;
+            if (System.currentTimeMillis() - this.f10909l > com.anythink.basead.exoplayer.f.f7973a) {
+                boolean bp = this.f10899a.r().bp();
+                boolean z9 = !bp;
                 if (!bp) {
-                    if (this.f10130t == null) {
-                        this.f10130t = new f.b(1);
+                    if (this.f10916t == null) {
+                        this.f10916t = new f.b(1);
                     }
-                    if (!am.a(this, this.f10130t, 20)) {
+                    if (!am.a(this, this.f10916t, 20)) {
                         r72 = 2;
                     }
                 }
                 r72 = bp;
-                z3 = z6;
+                z6 = z9;
             } else {
                 r72 = 0;
-                z3 = true;
+                z6 = true;
             }
-            if (!z3) {
+            if (!z6) {
                 String str2 = "";
                 String str3 = "";
                 String str4 = "";
-                w wVar = this.f10113a;
+                w wVar = this.f10899a;
                 if (wVar != null && (wVar instanceof r)) {
                     str2 = ((r) wVar).aD();
-                    str3 = ((r) this.f10113a).w();
-                    str4 = ((r) this.f10113a).v();
+                    str3 = ((r) this.f10899a).w();
+                    str4 = ((r) this.f10899a).v();
                 }
-                com.anythink.core.common.u.e.a(this.f10115c, str4, str3, str2, str, (int) r72);
+                com.anythink.core.common.u.e.a(this.f10901c, str4, str3, str2, str, (int) r72);
             }
         } finally {
         }
-        return z3;
+        return z6;
     }
 
     public static /* synthetic */ void e(MraidContainerView mraidContainerView) {
-        if (mraidContainerView.f10118f == null) {
+        if (mraidContainerView.f10904f == null) {
             ClickToReLoadView clickToReLoadView = new ClickToReLoadView(mraidContainerView.getContext());
-            mraidContainerView.f10118f = clickToReLoadView;
+            mraidContainerView.f10904f = clickToReLoadView;
             clickToReLoadView.setListener(mraidContainerView.new AnonymousClass4());
         }
-        mraidContainerView.addView(mraidContainerView.f10118f, new FrameLayout.LayoutParams(-1, -1));
+        mraidContainerView.addView(mraidContainerView.f10904f, new FrameLayout.LayoutParams(-1, -1));
     }
 
     private void a(int i) {
-        if (d.a(this.f10115c, this.f10113a)) {
+        if (d.a(this.f10901c, this.f10899a)) {
             return;
         }
         loadMraidWebView(i);

@@ -1,7 +1,6 @@
 package androidx.appcompat.widget;
 
-import I0.j;
-import O.C0330e0;
+import O.C0335e0;
 import android.content.Context;
 import android.graphics.Rect;
 import android.util.AttributeSet;
@@ -9,132 +8,133 @@ import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.FrameLayout;
-import h.LayoutInflaterFactory2C4533A;
+import h.LayoutInflaterFactory2C4537A;
 import l.m;
-import m.C4687g;
-import m.C4695k;
-import m.InterfaceC4688g0;
-import m.InterfaceC4690h0;
-import m.X0;
+import m.C4700g;
+import m.C4708k;
+import m.InterfaceC4701g0;
+import m.InterfaceC4703h0;
+import m.Y0;
+import n4.c;
 
 /* loaded from: classes.dex */
 public class ContentFrameLayout extends FrameLayout {
 
     /* renamed from: A, reason: collision with root package name */
-    public InterfaceC4688g0 f4574A;
+    public InterfaceC4701g0 f4542A;
 
     /* renamed from: n, reason: collision with root package name */
-    public TypedValue f4575n;
+    public TypedValue f4543n;
 
     /* renamed from: u, reason: collision with root package name */
-    public TypedValue f4576u;
+    public TypedValue f4544u;
 
     /* renamed from: v, reason: collision with root package name */
-    public TypedValue f4577v;
+    public TypedValue f4545v;
 
     /* renamed from: w, reason: collision with root package name */
-    public TypedValue f4578w;
+    public TypedValue f4546w;
 
     /* renamed from: x, reason: collision with root package name */
-    public TypedValue f4579x;
+    public TypedValue f4547x;
 
     /* renamed from: y, reason: collision with root package name */
-    public TypedValue f4580y;
+    public TypedValue f4548y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final Rect f4581z;
+    public final Rect f4549z;
 
     public ContentFrameLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet, 0);
-        this.f4581z = new Rect();
+        this.f4549z = new Rect();
     }
 
     public TypedValue getFixedHeightMajor() {
-        if (this.f4579x == null) {
-            this.f4579x = new TypedValue();
+        if (this.f4547x == null) {
+            this.f4547x = new TypedValue();
         }
-        return this.f4579x;
+        return this.f4547x;
     }
 
     public TypedValue getFixedHeightMinor() {
-        if (this.f4580y == null) {
-            this.f4580y = new TypedValue();
+        if (this.f4548y == null) {
+            this.f4548y = new TypedValue();
         }
-        return this.f4580y;
+        return this.f4548y;
     }
 
     public TypedValue getFixedWidthMajor() {
-        if (this.f4577v == null) {
-            this.f4577v = new TypedValue();
+        if (this.f4545v == null) {
+            this.f4545v = new TypedValue();
         }
-        return this.f4577v;
+        return this.f4545v;
     }
 
     public TypedValue getFixedWidthMinor() {
-        if (this.f4578w == null) {
-            this.f4578w = new TypedValue();
+        if (this.f4546w == null) {
+            this.f4546w = new TypedValue();
         }
-        return this.f4578w;
+        return this.f4546w;
     }
 
     public TypedValue getMinWidthMajor() {
-        if (this.f4575n == null) {
-            this.f4575n = new TypedValue();
+        if (this.f4543n == null) {
+            this.f4543n = new TypedValue();
         }
-        return this.f4575n;
+        return this.f4543n;
     }
 
     public TypedValue getMinWidthMinor() {
-        if (this.f4576u == null) {
-            this.f4576u = new TypedValue();
+        if (this.f4544u == null) {
+            this.f4544u = new TypedValue();
         }
-        return this.f4576u;
+        return this.f4544u;
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public final void onAttachedToWindow() {
         super.onAttachedToWindow();
-        InterfaceC4688g0 interfaceC4688g0 = this.f4574A;
-        if (interfaceC4688g0 != null) {
-            interfaceC4688g0.getClass();
+        InterfaceC4701g0 interfaceC4701g0 = this.f4542A;
+        if (interfaceC4701g0 != null) {
+            interfaceC4701g0.getClass();
         }
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public final void onDetachedFromWindow() {
-        C4695k c4695k;
+        C4708k c4708k;
         super.onDetachedFromWindow();
-        InterfaceC4688g0 interfaceC4688g0 = this.f4574A;
-        if (interfaceC4688g0 != null) {
-            LayoutInflaterFactory2C4533A layoutInflaterFactory2C4533A = (LayoutInflaterFactory2C4533A) ((j) interfaceC4688g0).f1264u;
-            InterfaceC4690h0 interfaceC4690h0 = layoutInflaterFactory2C4533A.f37773K;
-            if (interfaceC4690h0 != null) {
-                ActionBarOverlayLayout actionBarOverlayLayout = (ActionBarOverlayLayout) interfaceC4690h0;
+        InterfaceC4701g0 interfaceC4701g0 = this.f4542A;
+        if (interfaceC4701g0 != null) {
+            LayoutInflaterFactory2C4537A layoutInflaterFactory2C4537A = (LayoutInflaterFactory2C4537A) ((c) interfaceC4701g0).f39658u;
+            InterfaceC4703h0 interfaceC4703h0 = layoutInflaterFactory2C4537A.f37797K;
+            if (interfaceC4703h0 != null) {
+                ActionBarOverlayLayout actionBarOverlayLayout = (ActionBarOverlayLayout) interfaceC4703h0;
                 actionBarOverlayLayout.k();
-                ActionMenuView actionMenuView = ((X0) actionBarOverlayLayout.f4556x).f39081a.f4609n;
-                if (actionMenuView != null && (c4695k = actionMenuView.f4562M) != null) {
-                    c4695k.f();
-                    C4687g c4687g = c4695k.f39168M;
-                    if (c4687g != null && c4687g.b()) {
-                        c4687g.i.dismiss();
+                ActionMenuView actionMenuView = ((Y0) actionBarOverlayLayout.f4524x).f39151a.f4579n;
+                if (actionMenuView != null && (c4708k = actionMenuView.f4530M) != null) {
+                    c4708k.f();
+                    C4700g c4700g = c4708k.f39237M;
+                    if (c4700g != null && c4700g.b()) {
+                        c4700g.i.dismiss();
                     }
                 }
             }
-            if (layoutInflaterFactory2C4533A.f37781P != null) {
-                layoutInflaterFactory2C4533A.f37762E.getDecorView().removeCallbacks(layoutInflaterFactory2C4533A.f37782Q);
-                if (layoutInflaterFactory2C4533A.f37781P.isShowing()) {
+            if (layoutInflaterFactory2C4537A.f37802P != null) {
+                layoutInflaterFactory2C4537A.f37788E.getDecorView().removeCallbacks(layoutInflaterFactory2C4537A.f37803Q);
+                if (layoutInflaterFactory2C4537A.f37802P.isShowing()) {
                     try {
-                        layoutInflaterFactory2C4533A.f37781P.dismiss();
+                        layoutInflaterFactory2C4537A.f37802P.dismiss();
                     } catch (IllegalArgumentException unused) {
                     }
                 }
-                layoutInflaterFactory2C4533A.f37781P = null;
+                layoutInflaterFactory2C4537A.f37802P = null;
             }
-            C0330e0 c0330e0 = layoutInflaterFactory2C4533A.f37783R;
-            if (c0330e0 != null) {
-                c0330e0.b();
+            C0335e0 c0335e0 = layoutInflaterFactory2C4537A.f37804R;
+            if (c0335e0 != null) {
+                c0335e0.b();
             }
-            m mVar = layoutInflaterFactory2C4533A.B(0).f37934h;
+            m mVar = layoutInflaterFactory2C4537A.B(0).f37960h;
             if (mVar != null) {
                 mVar.c(true);
             }
@@ -157,137 +157,137 @@ public class ContentFrameLayout extends FrameLayout {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void onMeasure(int i, int i6) {
+    public final void onMeasure(int i, int i4) {
+        int i6;
+        boolean z6;
         int i9;
-        boolean z3;
-        int i10;
         int measuredWidth;
         TypedValue typedValue;
+        int i10;
         int i11;
-        int i12;
         float fraction;
+        int i12;
         int i13;
-        int i14;
         float fraction2;
+        int i14;
         int i15;
-        int i16;
         float fraction3;
         DisplayMetrics displayMetrics = getContext().getResources().getDisplayMetrics();
-        boolean z6 = true;
-        boolean z9 = displayMetrics.widthPixels < displayMetrics.heightPixels;
+        boolean z9 = true;
+        boolean z10 = displayMetrics.widthPixels < displayMetrics.heightPixels;
         int mode = View.MeasureSpec.getMode(i);
-        int mode2 = View.MeasureSpec.getMode(i6);
-        Rect rect = this.f4581z;
+        int mode2 = View.MeasureSpec.getMode(i4);
+        Rect rect = this.f4549z;
         if (mode == Integer.MIN_VALUE) {
-            TypedValue typedValue2 = z9 ? this.f4578w : this.f4577v;
-            if (typedValue2 != null && (i15 = typedValue2.type) != 0) {
-                if (i15 == 5) {
+            TypedValue typedValue2 = z10 ? this.f4546w : this.f4545v;
+            if (typedValue2 != null && (i14 = typedValue2.type) != 0) {
+                if (i14 == 5) {
                     fraction3 = typedValue2.getDimension(displayMetrics);
-                } else if (i15 == 6) {
-                    int i17 = displayMetrics.widthPixels;
-                    fraction3 = typedValue2.getFraction(i17, i17);
+                } else if (i14 == 6) {
+                    int i16 = displayMetrics.widthPixels;
+                    fraction3 = typedValue2.getFraction(i16, i16);
                 } else {
-                    i16 = 0;
-                    if (i16 > 0) {
-                        i9 = View.MeasureSpec.makeMeasureSpec(Math.min(i16 - (rect.left + rect.right), View.MeasureSpec.getSize(i)), 1073741824);
-                        z3 = true;
+                    i15 = 0;
+                    if (i15 > 0) {
+                        i6 = View.MeasureSpec.makeMeasureSpec(Math.min(i15 - (rect.left + rect.right), View.MeasureSpec.getSize(i)), 1073741824);
+                        z6 = true;
                         if (mode2 == Integer.MIN_VALUE) {
-                            TypedValue typedValue3 = z9 ? this.f4579x : this.f4580y;
-                            if (typedValue3 != null && (i13 = typedValue3.type) != 0) {
-                                if (i13 == 5) {
+                            TypedValue typedValue3 = z10 ? this.f4547x : this.f4548y;
+                            if (typedValue3 != null && (i12 = typedValue3.type) != 0) {
+                                if (i12 == 5) {
                                     fraction2 = typedValue3.getDimension(displayMetrics);
-                                } else if (i13 == 6) {
-                                    int i18 = displayMetrics.heightPixels;
-                                    fraction2 = typedValue3.getFraction(i18, i18);
+                                } else if (i12 == 6) {
+                                    int i17 = displayMetrics.heightPixels;
+                                    fraction2 = typedValue3.getFraction(i17, i17);
                                 } else {
-                                    i14 = 0;
-                                    if (i14 > 0) {
-                                        i10 = View.MeasureSpec.makeMeasureSpec(Math.min(i14 - (rect.top + rect.bottom), View.MeasureSpec.getSize(i6)), 1073741824);
-                                        super.onMeasure(i9, i10);
+                                    i13 = 0;
+                                    if (i13 > 0) {
+                                        i9 = View.MeasureSpec.makeMeasureSpec(Math.min(i13 - (rect.top + rect.bottom), View.MeasureSpec.getSize(i4)), 1073741824);
+                                        super.onMeasure(i6, i9);
                                         measuredWidth = getMeasuredWidth();
                                         int makeMeasureSpec = View.MeasureSpec.makeMeasureSpec(measuredWidth, 1073741824);
-                                        if (!z3 && mode == Integer.MIN_VALUE) {
-                                            typedValue = !z9 ? this.f4576u : this.f4575n;
-                                            if (typedValue != null && (i11 = typedValue.type) != 0) {
-                                                if (i11 != 5) {
+                                        if (!z6 && mode == Integer.MIN_VALUE) {
+                                            typedValue = !z10 ? this.f4544u : this.f4543n;
+                                            if (typedValue != null && (i10 = typedValue.type) != 0) {
+                                                if (i10 != 5) {
                                                     fraction = typedValue.getDimension(displayMetrics);
-                                                } else if (i11 == 6) {
-                                                    int i19 = displayMetrics.widthPixels;
-                                                    fraction = typedValue.getFraction(i19, i19);
+                                                } else if (i10 == 6) {
+                                                    int i18 = displayMetrics.widthPixels;
+                                                    fraction = typedValue.getFraction(i18, i18);
                                                 } else {
-                                                    i12 = 0;
-                                                    if (i12 > 0) {
-                                                        i12 -= rect.left + rect.right;
+                                                    i11 = 0;
+                                                    if (i11 > 0) {
+                                                        i11 -= rect.left + rect.right;
                                                     }
-                                                    if (measuredWidth < i12) {
-                                                        makeMeasureSpec = View.MeasureSpec.makeMeasureSpec(i12, 1073741824);
-                                                        if (z6) {
+                                                    if (measuredWidth < i11) {
+                                                        makeMeasureSpec = View.MeasureSpec.makeMeasureSpec(i11, 1073741824);
+                                                        if (z9) {
                                                             return;
                                                         }
-                                                        super.onMeasure(makeMeasureSpec, i10);
+                                                        super.onMeasure(makeMeasureSpec, i9);
                                                         return;
                                                     }
                                                 }
-                                                i12 = (int) fraction;
-                                                if (i12 > 0) {
+                                                i11 = (int) fraction;
+                                                if (i11 > 0) {
                                                 }
-                                                if (measuredWidth < i12) {
+                                                if (measuredWidth < i11) {
                                                 }
                                             }
                                         }
-                                        z6 = false;
-                                        if (z6) {
+                                        z9 = false;
+                                        if (z9) {
                                         }
                                     }
                                 }
-                                i14 = (int) fraction2;
-                                if (i14 > 0) {
+                                i13 = (int) fraction2;
+                                if (i13 > 0) {
                                 }
                             }
                         }
-                        i10 = i6;
-                        super.onMeasure(i9, i10);
+                        i9 = i4;
+                        super.onMeasure(i6, i9);
                         measuredWidth = getMeasuredWidth();
                         int makeMeasureSpec2 = View.MeasureSpec.makeMeasureSpec(measuredWidth, 1073741824);
-                        if (!z3) {
-                            if (!z9) {
+                        if (!z6) {
+                            if (!z10) {
                             }
                             if (typedValue != null) {
-                                if (i11 != 5) {
+                                if (i10 != 5) {
                                 }
-                                i12 = (int) fraction;
-                                if (i12 > 0) {
+                                i11 = (int) fraction;
+                                if (i11 > 0) {
                                 }
-                                if (measuredWidth < i12) {
+                                if (measuredWidth < i11) {
                                 }
                             }
                         }
-                        z6 = false;
-                        if (z6) {
+                        z9 = false;
+                        if (z9) {
                         }
                     }
                 }
-                i16 = (int) fraction3;
-                if (i16 > 0) {
+                i15 = (int) fraction3;
+                if (i15 > 0) {
                 }
             }
         }
-        i9 = i;
-        z3 = false;
+        i6 = i;
+        z6 = false;
         if (mode2 == Integer.MIN_VALUE) {
         }
-        i10 = i6;
-        super.onMeasure(i9, i10);
+        i9 = i4;
+        super.onMeasure(i6, i9);
         measuredWidth = getMeasuredWidth();
         int makeMeasureSpec22 = View.MeasureSpec.makeMeasureSpec(measuredWidth, 1073741824);
-        if (!z3) {
+        if (!z6) {
         }
-        z6 = false;
-        if (z6) {
+        z9 = false;
+        if (z9) {
         }
     }
 
-    public void setAttachListener(InterfaceC4688g0 interfaceC4688g0) {
-        this.f4574A = interfaceC4688g0;
+    public void setAttachListener(InterfaceC4701g0 interfaceC4701g0) {
+        this.f4542A = interfaceC4701g0;
     }
 }

@@ -4,7 +4,7 @@ package com.bumptech.glide;
 public final class a implements Cloneable {
 
     /* renamed from: n, reason: collision with root package name */
-    public L1.a f23367n;
+    public N1.a f24154n;
 
     public final boolean equals(Object obj) {
         return (obj instanceof a) && i(obj);
@@ -25,13 +25,13 @@ public final class a implements Cloneable {
 
     public final boolean i(Object obj) {
         if (obj instanceof a) {
-            return N1.p.b(this.f23367n, ((a) obj).f23367n);
+            return P1.p.b(this.f24154n, ((a) obj).f24154n);
         }
         return false;
     }
 
     public final int j() {
-        L1.a aVar = this.f23367n;
+        N1.a aVar = this.f24154n;
         if (aVar != null) {
             return aVar.hashCode();
         }

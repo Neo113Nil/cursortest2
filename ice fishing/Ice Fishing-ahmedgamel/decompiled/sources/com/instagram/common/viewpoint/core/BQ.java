@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 @ElementTypesAreNonnullByDefault
 /* loaded from: assets/audience_network/classes2.dex */
-public class BQ<K, V> extends AbstractC2140lr<K, V> implements Serializable {
+public class BQ<K, V> extends AbstractC2160lr<K, V> implements Serializable {
     public static final long serialVersionUID = 0;
 
     @ParametricNullness
@@ -22,21 +22,21 @@ public class BQ<K, V> extends AbstractC2140lr<K, V> implements Serializable {
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BQ != com.google.common.collect.ImmutableEntry<K, V> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2140lr, java.util.Map.Entry
+    @Override // com.instagram.common.viewpoint.core.AbstractC2160lr, java.util.Map.Entry
     @ParametricNullness
     public final K getKey() {
         return this.A00;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BQ != com.google.common.collect.ImmutableEntry<K, V> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2140lr, java.util.Map.Entry
+    @Override // com.instagram.common.viewpoint.core.AbstractC2160lr, java.util.Map.Entry
     @ParametricNullness
     public final V getValue() {
         return this.A01;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BQ != com.google.common.collect.ImmutableEntry<K, V> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2140lr, java.util.Map.Entry
+    @Override // com.instagram.common.viewpoint.core.AbstractC2160lr, java.util.Map.Entry
     @ParametricNullness
     public final V setValue(@ParametricNullness V value) {
         throw new UnsupportedOperationException();

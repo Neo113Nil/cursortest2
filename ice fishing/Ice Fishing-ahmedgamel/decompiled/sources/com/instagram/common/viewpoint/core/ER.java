@@ -8,11 +8,11 @@ import javax.annotation.Nullable;
 public class ER {
 
     @Nullable
-    public final C2400qI A00;
+    public final C2420qI A00;
     public final Throwable A01;
 
-    public ER(@Nullable C2400qI c2400qI, Throwable th) {
-        this.A00 = c2400qI;
+    public ER(@Nullable C2420qI c2420qI, Throwable th) {
+        this.A00 = c2420qI;
         this.A01 = th;
     }
 }

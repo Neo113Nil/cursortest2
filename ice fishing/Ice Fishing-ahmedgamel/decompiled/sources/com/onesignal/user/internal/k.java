@@ -1,9 +1,9 @@
 package com.onesignal.user.internal;
 
-import a6.C0440b;
-import a6.C0441c;
-import a6.InterfaceC0439a;
-import b6.InterfaceC0520b;
+import a6.C0444b;
+import a6.C0445c;
+import a6.InterfaceC0443a;
+import b6.InterfaceC0528b;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -21,12 +21,12 @@ public class k implements P5.a, com.onesignal.common.modeling.g {
     private final com.onesignal.common.events.b changeHandlersNotifier;
 
     public static final class a extends kotlin.jvm.internal.i implements I7.l {
-        final /* synthetic */ C0441c $newUserState;
+        final /* synthetic */ C0445c $newUserState;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public a(C0441c c0441c) {
+        public a(C0445c c0445c) {
             super(1);
-            this.$newUserState = c0441c;
+            this.$newUserState = c0445c;
         }
 
         @Override // I7.l
@@ -34,13 +34,13 @@ public class k implements P5.a, com.onesignal.common.modeling.g {
             if (obj != null) {
                 throw new ClassCastException();
             }
-            invoke((InterfaceC0439a) null);
-            return v.f41353a;
+            invoke((InterfaceC0443a) null);
+            return v.f41073a;
         }
 
-        public final void invoke(InterfaceC0439a it) {
+        public final void invoke(InterfaceC0443a it) {
             kotlin.jvm.internal.h.e(it, "it");
-            new C0440b(this.$newUserState);
+            new C0444b(this.$newUserState);
             it.a();
         }
     }
@@ -112,7 +112,7 @@ public class k implements P5.a, com.onesignal.common.modeling.g {
     }
 
     @Override // P5.a
-    public void addObserver(InterfaceC0439a observer) {
+    public void addObserver(InterfaceC0443a observer) {
         kotlin.jvm.internal.h.e(observer, "observer");
         this.changeHandlersNotifier.subscribe(observer);
     }
@@ -164,7 +164,7 @@ public class k implements P5.a, com.onesignal.common.modeling.g {
                 linkedHashMap.put(entry.getKey(), entry.getValue());
             }
         }
-        return t.U(linkedHashMap);
+        return t.y(linkedHashMap);
     }
 
     public final com.onesignal.common.events.b getChangeHandlersNotifier() {
@@ -183,7 +183,7 @@ public class k implements P5.a, com.onesignal.common.modeling.g {
     }
 
     @Override // P5.a
-    public InterfaceC0520b getPushSubscription() {
+    public InterfaceC0528b getPushSubscription() {
         return this._subscriptionManager.getSubscriptions().getPush();
     }
 
@@ -193,7 +193,7 @@ public class k implements P5.a, com.onesignal.common.modeling.g {
 
     @Override // P5.a
     public Map<String, String> getTags() {
-        return t.U(get_propertiesModel().getTags());
+        return t.y(get_propertiesModel().getTags());
     }
 
     @Override // com.onesignal.common.modeling.g
@@ -207,7 +207,7 @@ public class k implements P5.a, com.onesignal.common.modeling.g {
         kotlin.jvm.internal.h.e(args, "args");
         kotlin.jvm.internal.h.e(tag, "tag");
         if (kotlin.jvm.internal.h.a(args.getProperty(), "onesignal_id")) {
-            this.changeHandlersNotifier.fire(new a(new C0441c(String.valueOf(args.getNewValue()), getExternalId())));
+            this.changeHandlersNotifier.fire(new a(new C0445c(String.valueOf(args.getNewValue()), getExternalId())));
         }
     }
 
@@ -255,7 +255,7 @@ public class k implements P5.a, com.onesignal.common.modeling.g {
     }
 
     @Override // P5.a
-    public void removeObserver(InterfaceC0439a observer) {
+    public void removeObserver(InterfaceC0443a observer) {
         kotlin.jvm.internal.h.e(observer, "observer");
         this.changeHandlersNotifier.unsubscribe(observer);
     }

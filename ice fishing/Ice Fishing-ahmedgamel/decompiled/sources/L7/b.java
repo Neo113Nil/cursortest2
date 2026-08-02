@@ -2,8 +2,8 @@ package L7;
 
 import android.graphics.Path;
 import android.graphics.PathMeasure;
-import com.google.android.gms.internal.ads.AbstractC3043cl;
-import com.google.android.gms.internal.ads.C3719pF;
+import com.google.android.gms.internal.ads.AbstractC3066cl;
+import com.google.android.gms.internal.ads.C3742pF;
 import com.google.android.gms.internal.ads.WJ;
 import java.nio.ByteBuffer;
 import java.security.GeneralSecurityException;
@@ -18,10 +18,10 @@ import javax.crypto.Cipher;
 public final class b extends ThreadLocal {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f1756a;
+    public final /* synthetic */ int f1787a;
 
     public /* synthetic */ b(int i) {
-        this.f1756a = i;
+        this.f1787a = i;
     }
 
     /* JADX WARN: Can't wrap try/catch for region: R(9:16|(4:31|32|23|24)|18|19|20|(4:25|26|23|24)|22|23|24) */
@@ -32,7 +32,7 @@ public final class b extends ThreadLocal {
     public final Object initialValue() {
         SecureRandom secureRandom;
         Provider provider = null;
-        switch (this.f1756a) {
+        switch (this.f1787a) {
             case 0:
                 return new Random();
             case 1:
@@ -41,14 +41,14 @@ public final class b extends ThreadLocal {
                 return ByteBuffer.allocate(32);
             case 3:
                 try {
-                    return (Cipher) WJ.f28340b.f28346a.b("AES/GCM/NoPadding");
+                    return (Cipher) WJ.f29138b.f29144a.b("AES/GCM/NoPadding");
                 } catch (GeneralSecurityException e9) {
                     throw new IllegalStateException(e9);
                 }
             case 4:
                 try {
-                    Cipher cipher = (Cipher) WJ.f28340b.f28346a.b("AES/GCM-SIV/NoPadding");
-                    if (C3719pF.b(cipher)) {
+                    Cipher cipher = (Cipher) WJ.f29138b.f29144a.b("AES/GCM-SIV/NoPadding");
+                    if (C3742pF.b(cipher)) {
                         return cipher;
                     }
                     return null;
@@ -56,10 +56,10 @@ public final class b extends ThreadLocal {
                     throw new IllegalStateException(e10);
                 }
             case 5:
-                Provider h9 = AbstractC3043cl.h();
-                if (h9 != null) {
+                Provider h3 = AbstractC3066cl.h();
+                if (h3 != null) {
                     try {
-                        secureRandom = SecureRandom.getInstance("SHA1PRNG", h9);
+                        secureRandom = SecureRandom.getInstance("SHA1PRNG", h3);
                     } catch (GeneralSecurityException unused) {
                     }
                     secureRandom.nextLong();
@@ -79,19 +79,19 @@ public final class b extends ThreadLocal {
                 return secureRandom;
             case 6:
                 try {
-                    return (Cipher) WJ.f28340b.f28346a.b("AES/ECB/NoPadding");
+                    return (Cipher) WJ.f29138b.f29144a.b("AES/ECB/NoPadding");
                 } catch (GeneralSecurityException e11) {
                     throw new IllegalStateException(e11);
                 }
             case 7:
                 try {
-                    return (Cipher) WJ.f28340b.f28346a.b("AES/CTR/NoPadding");
+                    return (Cipher) WJ.f29138b.f29144a.b("AES/CTR/NoPadding");
                 } catch (GeneralSecurityException e12) {
                     throw new IllegalStateException(e12);
                 }
             case 8:
                 try {
-                    return (Cipher) WJ.f28340b.f28346a.b("AES/CTR/NOPADDING");
+                    return (Cipher) WJ.f29138b.f29144a.b("AES/CTR/NOPADDING");
                 } catch (GeneralSecurityException e13) {
                     throw new IllegalStateException(e13);
                 }
@@ -106,7 +106,7 @@ public final class b extends ThreadLocal {
             case 13:
                 SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss 'GMT'", Locale.US);
                 simpleDateFormat.setLenient(false);
-                simpleDateFormat.setTimeZone(j8.d.f38483a);
+                simpleDateFormat.setTimeZone(j8.d.f38495a);
                 return simpleDateFormat;
             default:
                 return new q6.e();

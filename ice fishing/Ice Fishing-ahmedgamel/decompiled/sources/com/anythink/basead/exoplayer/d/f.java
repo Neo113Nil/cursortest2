@@ -9,19 +9,19 @@ import java.util.Map;
 public interface f<T extends i> {
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f6854d = 0;
+    public static final int f7640d = 0;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f6855e = 1;
+    public static final int f7641e = 1;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final int f6856f = 2;
+    public static final int f7642f = 2;
 
     /* renamed from: g, reason: collision with root package name */
-    public static final int f6857g = 3;
+    public static final int f7643g = 3;
 
     /* renamed from: h, reason: collision with root package name */
-    public static final int f6858h = 4;
+    public static final int f7644h = 4;
 
     public static class a extends Exception {
         public a(Throwable th) {

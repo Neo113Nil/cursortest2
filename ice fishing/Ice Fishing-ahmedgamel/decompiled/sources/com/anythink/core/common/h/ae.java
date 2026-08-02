@@ -8,46 +8,46 @@ import java.util.Map;
 public class ae {
 
     /* renamed from: a, reason: collision with root package name */
-    Map<String, Object> f13441a;
+    Map<String, Object> f14227a;
 
     /* renamed from: b, reason: collision with root package name */
-    d f13442b;
+    d f14228b;
 
     /* renamed from: c, reason: collision with root package name */
-    ATAdRequest f13443c;
+    ATAdRequest f14229c;
 
     /* renamed from: d, reason: collision with root package name */
-    ATAdInfo f13444d;
+    ATAdInfo f14230d;
 
     public final Map<String, Object> a() {
-        return this.f13441a;
+        return this.f14227a;
     }
 
     public final d b() {
-        return this.f13442b;
+        return this.f14228b;
     }
 
     public final ATAdInfo c() {
-        return this.f13444d;
+        return this.f14230d;
     }
 
     public final ATAdRequest d() {
-        return this.f13443c;
+        return this.f14229c;
     }
 
     public final void a(Map<String, Object> map) {
-        this.f13441a = map;
+        this.f14227a = map;
     }
 
     public final void a(d dVar) {
-        this.f13442b = dVar;
+        this.f14228b = dVar;
     }
 
     public final void a(ATAdInfo aTAdInfo) {
-        this.f13444d = aTAdInfo;
+        this.f14230d = aTAdInfo;
     }
 
     public final void a(ATAdRequest aTAdRequest) {
-        this.f13443c = aTAdRequest;
+        this.f14229c = aTAdRequest;
     }
 }

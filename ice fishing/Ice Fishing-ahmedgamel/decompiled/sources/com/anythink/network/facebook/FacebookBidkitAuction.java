@@ -37,44 +37,44 @@ import org.json.JSONObject;
 public class FacebookBidkitAuction {
 
     /* renamed from: a, reason: collision with root package name */
-    Context f23112a;
+    Context f23899a;
 
     /* renamed from: b, reason: collision with root package name */
-    int f23113b;
+    int f23900b;
 
     /* renamed from: c, reason: collision with root package name */
-    List<bv> f23114c;
+    List<bv> f23901c;
 
     /* renamed from: d, reason: collision with root package name */
-    List<bv> f23115d;
+    List<bv> f23902d;
 
     /* renamed from: e, reason: collision with root package name */
-    ConcurrentHashMap<String, WaterfallEntry> f23116e;
+    ConcurrentHashMap<String, WaterfallEntry> f23903e;
 
     /* renamed from: f, reason: collision with root package name */
-    Auction f23117f;
+    Auction f23904f;
 
     /* renamed from: g, reason: collision with root package name */
-    com.anythink.core.common.h.a f23118g;
+    com.anythink.core.common.h.a f23905g;
 
     /* renamed from: h, reason: collision with root package name */
-    Auction.Builder f23119h;
+    Auction.Builder f23906h;
     Map<String, bv> i;
 
     /* renamed from: j, reason: collision with root package name */
-    String f23120j;
+    String f23907j;
 
     /* renamed from: k, reason: collision with root package name */
-    MediationBidManager.BidListener f23121k;
+    MediationBidManager.BidListener f23908k;
 
     /* renamed from: l, reason: collision with root package name */
-    Handler f23122l;
+    Handler f23909l;
 
     /* renamed from: n, reason: collision with root package name */
-    private final String f23124n = getClass().getSimpleName();
+    private final String f23911n = getClass().getSimpleName();
 
     /* renamed from: m, reason: collision with root package name */
-    Runnable f23123m = new Runnable() { // from class: com.anythink.network.facebook.FacebookBidkitAuction.1
+    Runnable f23910m = new Runnable() { // from class: com.anythink.network.facebook.FacebookBidkitAuction.1
         @Override // java.lang.Runnable
         public final void run() {
             com.anythink.core.common.v.b.b.a().a(new Runnable() { // from class: com.anythink.network.facebook.FacebookBidkitAuction.1.1
@@ -89,30 +89,30 @@ public class FacebookBidkitAuction {
     public class a implements WaterfallEntry, Comparable<a> {
 
         /* renamed from: b, reason: collision with root package name */
-        private Bid f23134b;
+        private Bid f23921b;
 
         /* renamed from: c, reason: collision with root package name */
-        private double f23135c;
+        private double f23922c;
 
         /* renamed from: d, reason: collision with root package name */
-        private String f23136d;
+        private String f23923d;
 
-        public a(Bid bid, double d2, String str) {
-            this.f23134b = bid;
-            this.f23135c = d2;
-            this.f23136d = str;
+        public a(Bid bid, double d9, String str) {
+            this.f23921b = bid;
+            this.f23922c = d9;
+            this.f23923d = str;
         }
 
         public Bid getBid() {
-            return this.f23134b;
+            return this.f23921b;
         }
 
         public double getCPMCents() {
-            return this.f23135c;
+            return this.f23922c;
         }
 
         public String getEntryName() {
-            return this.f23136d;
+            return this.f23923d;
         }
 
         @Override // java.lang.Comparable
@@ -124,14 +124,14 @@ public class FacebookBidkitAuction {
     public class b implements Waterfall {
 
         /* renamed from: a, reason: collision with root package name */
-        SortedSet<WaterfallEntry> f23137a = new TreeSet();
+        SortedSet<WaterfallEntry> f23924a = new TreeSet();
 
         public b() {
         }
 
         public final Waterfall createWaterfallCopy() {
             b bVar = FacebookBidkitAuction.this.new b();
-            Iterator<WaterfallEntry> it = this.f23137a.iterator();
+            Iterator<WaterfallEntry> it = this.f23924a.iterator();
             while (it.hasNext()) {
                 bVar.insert(it.next());
             }
@@ -139,57 +139,57 @@ public class FacebookBidkitAuction {
         }
 
         public final Iterable<WaterfallEntry> entries() {
-            return this.f23137a;
+            return this.f23924a;
         }
 
         public final WaterfallEntry getFirst() {
-            return this.f23137a.first();
+            return this.f23924a.first();
         }
 
         public final void insert(WaterfallEntry waterfallEntry) {
-            this.f23137a.add(waterfallEntry);
+            this.f23924a.add(waterfallEntry);
         }
 
         public final int size() {
-            return this.f23137a.size();
+            return this.f23924a.size();
         }
 
         public final void insert(Bid bid) {
-            this.f23137a.add(FacebookBidkitAuction.this.new a(bid, bid.getPrice(), bid.getBidderName()));
+            this.f23924a.add(FacebookBidkitAuction.this.new a(bid, bid.getPrice(), bid.getBidderName()));
         }
     }
 
     public FacebookBidkitAuction(com.anythink.core.common.h.a aVar) {
-        this.f23112a = aVar.f13327b;
-        this.f23113b = aVar.f13331f;
-        this.f23114c = aVar.f13334j;
-        i iVar = aVar.f13349y;
+        this.f23899a = aVar.f14113b;
+        this.f23900b = aVar.f14117f;
+        this.f23901c = aVar.f14120j;
+        i iVar = aVar.f14135y;
         List<bv> a9 = iVar != null ? iVar.a() : null;
-        this.f23115d = a9;
+        this.f23902d = a9;
         if (a9 == null) {
-            this.f23115d = new ArrayList();
+            this.f23902d = new ArrayList();
         }
-        this.f23118g = aVar;
-        this.f23119h = new Auction.Builder();
+        this.f23905g = aVar;
+        this.f23906h = new Auction.Builder();
         this.i = new HashMap();
-        this.f23122l = new Handler(Looper.getMainLooper());
+        this.f23909l = new Handler(Looper.getMainLooper());
     }
 
     public void startBidding(final String str, final MediationBidManager.BidListener bidListener) {
-        this.f23120j = str;
-        this.f23121k = bidListener;
+        this.f23907j = str;
+        this.f23908k = bidListener;
         final ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap(8);
-        for (bv bvVar : this.f23114c) {
+        for (bv bvVar : this.f23901c) {
             concurrentHashMap.put(bvVar.z(), bvVar);
-            new com.anythink.core.b.i(this.f23118g).a(bvVar, new i.a() { // from class: com.anythink.network.facebook.FacebookBidkitAuction.2
+            new com.anythink.core.b.i(this.f23905g).a(bvVar, new i.a() { // from class: com.anythink.network.facebook.FacebookBidkitAuction.2
                 private void a(bv bvVar2, Map<String, bv> map) {
                     FacebookBidkitAuction facebookBidkitAuction;
                     Handler handler;
                     map.remove(bvVar2.z());
-                    if (map.size() != 0 || (handler = (facebookBidkitAuction = FacebookBidkitAuction.this).f23122l) == null) {
+                    if (map.size() != 0 || (handler = (facebookBidkitAuction = FacebookBidkitAuction.this).f23909l) == null) {
                         return;
                     }
-                    handler.removeCallbacks(facebookBidkitAuction.f23123m);
+                    handler.removeCallbacks(facebookBidkitAuction.f23910m);
                 }
 
                 @Override // com.anythink.core.b.i.a
@@ -219,10 +219,10 @@ public class FacebookBidkitAuction {
                 }
             });
         }
-        long n9 = this.f23118g.f13338n.n();
-        Handler handler = this.f23122l;
+        long n9 = this.f23905g.f14124n.n();
+        Handler handler = this.f23909l;
         if (handler != null) {
-            Runnable runnable = this.f23123m;
+            Runnable runnable = this.f23910m;
             if (n9 <= 0) {
                 n9 = 500;
             }
@@ -231,7 +231,7 @@ public class FacebookBidkitAuction {
     }
 
     private void a() {
-        a(this.f23120j, this.f23121k);
+        a(this.f23907j, this.f23908k);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -244,11 +244,11 @@ public class FacebookBidkitAuction {
             return;
         }
         b bVar = new b();
-        for (bv bvVar : this.f23115d) {
+        for (bv bvVar : this.f23902d) {
             bVar.insert(new a(null, 100.0d * bvVar.at(), bvVar.z()));
         }
-        Auction build = this.f23119h.build();
-        this.f23117f = build;
+        Auction build = this.f23906h.build();
+        this.f23904f = build;
         build.startRemoteAuction(str, bVar, new AuctionListener() { // from class: com.anythink.network.facebook.FacebookBidkitAuction.3
             public final void onAuctionCompleted(Waterfall waterfall) {
                 FacebookBidkitAuction facebookBidkitAuction = FacebookBidkitAuction.this;
@@ -263,14 +263,14 @@ public class FacebookBidkitAuction {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private void a(bv bvVar, JSONObject jSONObject) {
-        boolean z3;
+        boolean z6;
         char c9;
         char c10;
         FacebookAdBidFormat facebookAdBidFormat;
         try {
-            z3 = t.b().y();
+            z6 = t.b().y();
         } catch (Throwable unused) {
-            z3 = false;
+            z6 = false;
         }
         IronSourceAdFormat ironSourceAdFormat = null;
         try {
@@ -278,16 +278,16 @@ public class FacebookBidkitAuction {
                 String optString = jSONObject.optString("app_id");
                 String optString2 = jSONObject.optString("unit_id");
                 String optString3 = jSONObject.optString(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.BUYERUID);
-                String valueOf = String.valueOf(this.f23113b);
+                String valueOf = String.valueOf(this.f23900b);
                 switch (valueOf.hashCode()) {
-                    case j.f5816W /* 48 */:
+                    case j.f6602W /* 48 */:
                         if (valueOf.equals("0")) {
                             c10 = 1;
                             break;
                         }
                         c10 = 65535;
                         break;
-                    case j.f5817X /* 49 */:
+                    case j.f6603X /* 49 */:
                         if (valueOf.equals("1")) {
                             c10 = 3;
                             break;
@@ -333,7 +333,7 @@ public class FacebookBidkitAuction {
                 } else {
                     facebookAdBidFormat = FacebookAdBidFormat.NATIVE;
                 }
-                this.f23119h.addBidder(new FacebookBidder.Builder(optString, optString2, facebookAdBidFormat, optString3).setTestMode(z3).build());
+                this.f23906h.addBidder(new FacebookBidder.Builder(optString, optString2, facebookAdBidFormat, optString3).setTestMode(z6).build());
                 this.i.put(optString2, bvVar);
             }
         } catch (Throwable unused2) {
@@ -342,7 +342,7 @@ public class FacebookBidkitAuction {
             String optString5 = jSONObject.optString(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.APP_KEY);
             String optString6 = jSONObject.optString(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.INSTANCE_ID);
             String optString7 = jSONObject.optString(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.BUYERUID);
-            String valueOf2 = String.valueOf(this.f23113b);
+            String valueOf2 = String.valueOf(this.f23900b);
             int hashCode = valueOf2.hashCode();
             if (hashCode != 49) {
                 if (hashCode == 51 && valueOf2.equals("3")) {
@@ -352,26 +352,26 @@ public class FacebookBidkitAuction {
                     } else if (c9 == 1) {
                         ironSourceAdFormat = IronSourceAdFormat.REWARDED_VIDEO;
                     }
-                    this.f23119h.addBidder(new IronSourceBidder.Builder(optString5, optString6, ironSourceAdFormat, optString7).setTestMode(z3).build());
+                    this.f23906h.addBidder(new IronSourceBidder.Builder(optString5, optString6, ironSourceAdFormat, optString7).setTestMode(z6).build());
                     this.i.put(optString6, bvVar);
                 }
                 c9 = 65535;
                 if (c9 != 0) {
                 }
-                this.f23119h.addBidder(new IronSourceBidder.Builder(optString5, optString6, ironSourceAdFormat, optString7).setTestMode(z3).build());
+                this.f23906h.addBidder(new IronSourceBidder.Builder(optString5, optString6, ironSourceAdFormat, optString7).setTestMode(z6).build());
                 this.i.put(optString6, bvVar);
             }
             if (valueOf2.equals("1")) {
                 c9 = 1;
                 if (c9 != 0) {
                 }
-                this.f23119h.addBidder(new IronSourceBidder.Builder(optString5, optString6, ironSourceAdFormat, optString7).setTestMode(z3).build());
+                this.f23906h.addBidder(new IronSourceBidder.Builder(optString5, optString6, ironSourceAdFormat, optString7).setTestMode(z6).build());
                 this.i.put(optString6, bvVar);
             }
             c9 = 65535;
             if (c9 != 0) {
             }
-            this.f23119h.addBidder(new IronSourceBidder.Builder(optString5, optString6, ironSourceAdFormat, optString7).setTestMode(z3).build());
+            this.f23906h.addBidder(new IronSourceBidder.Builder(optString5, optString6, ironSourceAdFormat, optString7).setTestMode(z6).build());
             this.i.put(optString6, bvVar);
         }
     }
@@ -380,8 +380,8 @@ public class FacebookBidkitAuction {
     public synchronized void a(Map<String, bv> map, Waterfall waterfall, MediationBidManager.BidListener bidListener) {
         try {
             ArrayList arrayList = new ArrayList();
-            if (this.f23116e == null) {
-                this.f23116e = new ConcurrentHashMap<>();
+            if (this.f23903e == null) {
+                this.f23903e = new ConcurrentHashMap<>();
             }
             for (WaterfallEntry waterfallEntry : waterfall.entries()) {
                 String entryName = waterfallEntry.getEntryName();
@@ -393,7 +393,7 @@ public class FacebookBidkitAuction {
                         bvVar.b(bid.getPrice() / 100.0d);
                         bvVar.e(bid.getPrice() / 100.0d);
                         arrayList.add(bvVar);
-                        this.f23116e.put(bvVar.z(), waterfallEntry);
+                        this.f23903e.put(bvVar.z(), waterfallEntry);
                     }
                     if ("IRONSOURCE_BIDDER".equals(entryName)) {
                         bv bvVar2 = map.get(bid.getPlacementId());
@@ -401,10 +401,10 @@ public class FacebookBidkitAuction {
                         bvVar2.b(bid.getPrice() / 100.0d);
                         bvVar2.e(bid.getPrice() / 100.0d);
                         arrayList.add(bvVar2);
-                        this.f23116e.put(bvVar2.z(), waterfallEntry);
+                        this.f23903e.put(bvVar2.z(), waterfallEntry);
                     }
                 } else {
-                    this.f23116e.put(waterfallEntry.getEntryName(), waterfallEntry);
+                    this.f23903e.put(waterfallEntry.getEntryName(), waterfallEntry);
                 }
             }
             if (bidListener != null) {
@@ -418,12 +418,12 @@ public class FacebookBidkitAuction {
     public final synchronized void a(bv bvVar) {
         WaterfallEntry waterfallEntry;
         try {
-            ConcurrentHashMap<String, WaterfallEntry> concurrentHashMap = this.f23116e;
-            if (concurrentHashMap != null && (waterfallEntry = concurrentHashMap.get(bvVar.z())) != null && this.f23117f != null) {
+            ConcurrentHashMap<String, WaterfallEntry> concurrentHashMap = this.f23903e;
+            if (concurrentHashMap != null && (waterfallEntry = concurrentHashMap.get(bvVar.z())) != null && this.f23904f != null) {
                 if (ATSDK.isNetworkLogDebug()) {
-                    Log.i(this.f23124n, "notifyWinnerDisplay:" + waterfallEntry.getEntryName());
+                    Log.i(this.f23911n, "notifyWinnerDisplay:" + waterfallEntry.getEntryName());
                 }
-                this.f23117f.notifyDisplayWinner(waterfallEntry);
+                this.f23904f.notifyDisplayWinner(waterfallEntry);
             }
         } catch (Throwable th) {
             throw th;
@@ -431,7 +431,7 @@ public class FacebookBidkitAuction {
     }
 
     public static /* synthetic */ void a(FacebookBidkitAuction facebookBidkitAuction) {
-        facebookBidkitAuction.a(facebookBidkitAuction.f23120j, facebookBidkitAuction.f23121k);
+        facebookBidkitAuction.a(facebookBidkitAuction.f23907j, facebookBidkitAuction.f23908k);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:60:0x010a  */
@@ -440,14 +440,14 @@ public class FacebookBidkitAuction {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static /* synthetic */ void a(FacebookBidkitAuction facebookBidkitAuction, bv bvVar, JSONObject jSONObject) {
-        boolean z3;
+        boolean z6;
         char c9;
         char c10;
         FacebookAdBidFormat facebookAdBidFormat;
         try {
-            z3 = t.b().y();
+            z6 = t.b().y();
         } catch (Throwable unused) {
-            z3 = false;
+            z6 = false;
         }
         IronSourceAdFormat ironSourceAdFormat = null;
         try {
@@ -455,16 +455,16 @@ public class FacebookBidkitAuction {
                 String optString = jSONObject.optString("app_id");
                 String optString2 = jSONObject.optString("unit_id");
                 String optString3 = jSONObject.optString(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.BUYERUID);
-                String valueOf = String.valueOf(facebookBidkitAuction.f23113b);
+                String valueOf = String.valueOf(facebookBidkitAuction.f23900b);
                 switch (valueOf.hashCode()) {
-                    case j.f5816W /* 48 */:
+                    case j.f6602W /* 48 */:
                         if (valueOf.equals("0")) {
                             c10 = 1;
                             break;
                         }
                         c10 = 65535;
                         break;
-                    case j.f5817X /* 49 */:
+                    case j.f6603X /* 49 */:
                         if (valueOf.equals("1")) {
                             c10 = 3;
                             break;
@@ -510,7 +510,7 @@ public class FacebookBidkitAuction {
                 } else {
                     facebookAdBidFormat = FacebookAdBidFormat.NATIVE;
                 }
-                facebookBidkitAuction.f23119h.addBidder(new FacebookBidder.Builder(optString, optString2, facebookAdBidFormat, optString3).setTestMode(z3).build());
+                facebookBidkitAuction.f23906h.addBidder(new FacebookBidder.Builder(optString, optString2, facebookAdBidFormat, optString3).setTestMode(z6).build());
                 facebookBidkitAuction.i.put(optString2, bvVar);
             }
         } catch (Throwable unused2) {
@@ -519,7 +519,7 @@ public class FacebookBidkitAuction {
             String optString5 = jSONObject.optString(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.APP_KEY);
             String optString6 = jSONObject.optString(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.INSTANCE_ID);
             String optString7 = jSONObject.optString(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.BUYERUID);
-            String valueOf2 = String.valueOf(facebookBidkitAuction.f23113b);
+            String valueOf2 = String.valueOf(facebookBidkitAuction.f23900b);
             int hashCode = valueOf2.hashCode();
             if (hashCode != 49) {
                 if (hashCode == 51 && valueOf2.equals("3")) {
@@ -529,26 +529,26 @@ public class FacebookBidkitAuction {
                     } else if (c9 == 1) {
                         ironSourceAdFormat = IronSourceAdFormat.REWARDED_VIDEO;
                     }
-                    facebookBidkitAuction.f23119h.addBidder(new IronSourceBidder.Builder(optString5, optString6, ironSourceAdFormat, optString7).setTestMode(z3).build());
+                    facebookBidkitAuction.f23906h.addBidder(new IronSourceBidder.Builder(optString5, optString6, ironSourceAdFormat, optString7).setTestMode(z6).build());
                     facebookBidkitAuction.i.put(optString6, bvVar);
                 }
                 c9 = 65535;
                 if (c9 != 0) {
                 }
-                facebookBidkitAuction.f23119h.addBidder(new IronSourceBidder.Builder(optString5, optString6, ironSourceAdFormat, optString7).setTestMode(z3).build());
+                facebookBidkitAuction.f23906h.addBidder(new IronSourceBidder.Builder(optString5, optString6, ironSourceAdFormat, optString7).setTestMode(z6).build());
                 facebookBidkitAuction.i.put(optString6, bvVar);
             }
             if (valueOf2.equals("1")) {
                 c9 = 1;
                 if (c9 != 0) {
                 }
-                facebookBidkitAuction.f23119h.addBidder(new IronSourceBidder.Builder(optString5, optString6, ironSourceAdFormat, optString7).setTestMode(z3).build());
+                facebookBidkitAuction.f23906h.addBidder(new IronSourceBidder.Builder(optString5, optString6, ironSourceAdFormat, optString7).setTestMode(z6).build());
                 facebookBidkitAuction.i.put(optString6, bvVar);
             }
             c9 = 65535;
             if (c9 != 0) {
             }
-            facebookBidkitAuction.f23119h.addBidder(new IronSourceBidder.Builder(optString5, optString6, ironSourceAdFormat, optString7).setTestMode(z3).build());
+            facebookBidkitAuction.f23906h.addBidder(new IronSourceBidder.Builder(optString5, optString6, ironSourceAdFormat, optString7).setTestMode(z6).build());
             facebookBidkitAuction.i.put(optString6, bvVar);
         }
     }

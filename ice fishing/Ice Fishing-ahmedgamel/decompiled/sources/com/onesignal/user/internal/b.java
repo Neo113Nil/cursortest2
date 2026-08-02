@@ -5,14 +5,14 @@ public abstract class b {
     public static final a resolveAppId(String str, com.onesignal.core.internal.config.b configModel, J4.b preferencesService) {
         kotlin.jvm.internal.h.e(configModel, "configModel");
         kotlin.jvm.internal.h.e(preferencesService, "preferencesService");
-        boolean z3 = true;
+        boolean z6 = true;
         if (str != null) {
-            if (configModel.hasProperty(com.anythink.expressad.videocommon.e.b.f22407u) && kotlin.jvm.internal.h.a(configModel.getAppId(), str)) {
-                z3 = false;
+            if (configModel.hasProperty(com.anythink.expressad.videocommon.e.b.f23194u) && kotlin.jvm.internal.h.a(configModel.getAppId(), str)) {
+                z6 = false;
             }
-            return new a(str, z3, false);
+            return new a(str, z6, false);
         }
-        if (configModel.hasProperty(com.anythink.expressad.videocommon.e.b.f22407u)) {
+        if (configModel.hasProperty(com.anythink.expressad.videocommon.e.b.f23194u)) {
             return new a(configModel.getAppId(), false, false);
         }
         String string$default = J4.a.getString$default(preferencesService, com.onesignal.common.threading.b.BASE_THREAD_NAME, "GT_APP_ID", null, 4, null);

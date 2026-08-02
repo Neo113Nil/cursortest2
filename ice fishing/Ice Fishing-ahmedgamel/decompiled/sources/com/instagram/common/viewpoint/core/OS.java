@@ -8,16 +8,16 @@ public abstract class OS {
     public static byte[] A00;
     public static String[] A01 = {"eCm2h", "Nf7MRRwZDvE8y93FmZbCxZ1qYSmL5", "hLhdl", "QFLrF4Ks", "BOssa91vTI1SLJXUpFqc70oF1BItrBHL", "FqkYvgsNMANULI15i6yaohJxBf4", "miT1Gr55rzSuK5J6MchCspbbNM8vv", "VeGA9hanV"};
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            int i11 = (copyOfRange[i10] ^ i9) ^ 8;
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            int i10 = (copyOfRange[i9] ^ i6) ^ 8;
             String[] strArr = A01;
             if (strArr[0].length() != strArr[2].length()) {
                 throw new RuntimeException();
             }
             A01[4] = "4uOWgwLt9zl0NDLT0ztu7wfG2sM7UGLh";
-            copyOfRange[i10] = (byte) i11;
+            copyOfRange[i9] = (byte) i10;
         }
         return new String(copyOfRange);
     }

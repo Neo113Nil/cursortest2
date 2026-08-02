@@ -4,8 +4,8 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.facebook.ads.androidx.media3.common.Metadata;
 import com.facebook.ads.androidx.media3.extractor.metadata.mp4.SlowMotionData;
-import com.instagram.common.viewpoint.core.AbstractC06243y;
-import com.instagram.common.viewpoint.core.C2400qI;
+import com.instagram.common.viewpoint.core.AbstractC06443y;
+import com.instagram.common.viewpoint.core.C2420qI;
 import com.instagram.common.viewpoint.core.C3E;
 import com.instagram.common.viewpoint.core.C5C;
 import com.instagram.common.viewpoint.core.CB;
@@ -22,10 +22,10 @@ public final class SlowMotionData implements Metadata.Entry {
     public static final Parcelable.Creator<SlowMotionData> CREATOR;
     public final List<Segment> A00;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 28);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 28);
         }
         return new String(copyOfRange);
     }
@@ -45,7 +45,7 @@ public final class SlowMotionData implements Metadata.Entry {
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Metadata.Entry
-    public final /* synthetic */ C2400qI A9b() {
+    public final /* synthetic */ C2420qI A9b() {
         return C3E.A00(this);
     }
 
@@ -58,10 +58,10 @@ public final class SlowMotionData implements Metadata.Entry {
         public final long A01;
         public final long A02;
 
-        public static String A01(int i, int i6, int i9) {
-            byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i6);
-            for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-                copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 99);
+        public static String A01(int i, int i4, int i6) {
+            byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i4);
+            for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+                copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 99);
             }
             return new String(copyOfRange);
         }
@@ -80,7 +80,7 @@ public final class SlowMotionData implements Metadata.Entry {
                 @Override // java.util.Comparator
                 public final int compare(Object obj, Object obj2) {
                     int A052;
-                    A052 = AbstractC2252ns.A01().A07(r2.A02, r3.A02).A07(r2.A01, r3.A01).A06(((SlowMotionData.Segment) obj).A00, ((SlowMotionData.Segment) obj2).A00).A05();
+                    A052 = AbstractC2272ns.A01().A07(r2.A02, r3.A02).A07(r2.A01, r3.A01).A06(((SlowMotionData.Segment) obj).A00, ((SlowMotionData.Segment) obj2).A00).A05();
                     return A052;
                 }
             };
@@ -88,7 +88,7 @@ public final class SlowMotionData implements Metadata.Entry {
         }
 
         public Segment(long j6, long j9, int i) {
-            AbstractC06243y.A07(j6 < j9);
+            AbstractC06443y.A07(j6 < j9);
             this.A02 = j6;
             this.A01 = j9;
             this.A00 = i;
@@ -137,7 +137,7 @@ public final class SlowMotionData implements Metadata.Entry {
 
     public SlowMotionData(List<Segment> segments) {
         this.A00 = segments;
-        AbstractC06243y.A07(!A02(segments));
+        AbstractC06443y.A07(!A02(segments));
     }
 
     public static boolean A02(List<Segment> list) {

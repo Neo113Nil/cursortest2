@@ -6,7 +6,7 @@ import com.onesignal.inAppMessages.internal.d;
 /* loaded from: classes2.dex */
 public enum AdSessionContextType {
     HTML(d.HTML),
-    NATIVE(f.f19119a),
+    NATIVE(f.f19906a),
     JAVASCRIPT("javascript");
 
     private final String typeString;

@@ -1,30 +1,38 @@
 package U1;
 
-import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.graphics.Rect;
+import android.util.Property;
 
 /* loaded from: classes.dex */
-public abstract class a extends b {
+public abstract class a extends Property {
 
-    /* renamed from: X, reason: collision with root package name */
-    public final /* synthetic */ int f3164X;
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ int f3281a;
 
-    @Override // U1.b
-    public final void h(Canvas canvas, Paint paint) {
-        switch (this.f3164X) {
-            case 0:
-                if (this.f3187I != null) {
-                    canvas.drawCircle(this.f3187I.centerX(), this.f3187I.centerY(), Math.min(r0.width(), this.f3187I.height()) / 2, paint);
-                    break;
-                }
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public a(String str, int i) {
+        super(Float.class, str);
+        this.f3281a = i;
+        switch (i) {
+            case 1:
+                super(Integer.class, str);
                 break;
             default:
-                Rect rect = this.f3187I;
-                if (rect != null) {
-                    canvas.drawRect(rect, paint);
-                    break;
-                }
+                break;
+        }
+    }
+
+    public abstract void a(int i, Object obj);
+
+    public abstract void b(Object obj, float f2);
+
+    @Override // android.util.Property
+    public final void set(Object obj, Object obj2) {
+        switch (this.f3281a) {
+            case 0:
+                b(obj, ((Float) obj2).floatValue());
+                break;
+            default:
+                a(((Integer) obj2).intValue(), obj);
                 break;
         }
     }

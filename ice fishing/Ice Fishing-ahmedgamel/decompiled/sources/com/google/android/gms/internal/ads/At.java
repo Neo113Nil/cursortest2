@@ -4,5 +4,5 @@ package com.google.android.gms.internal.ads;
 public interface At {
     Object o();
 
-    N3.a y(S0.e eVar, InterfaceC4289zt interfaceC4289zt);
+    P3.a y(S0.e eVar, InterfaceC4312zt interfaceC4312zt);
 }

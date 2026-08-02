@@ -22,18 +22,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
+import o1.C4797a;
 import org.xmlpull.v1.XmlPullParserException;
-import t0.C5019n;
-import u.C5047c;
-import w.C5136a;
-import w.C5139d;
-import w.C5140e;
-import x.AbstractC5178p;
-import x.C5165c;
-import x.C5167e;
-import x.C5171i;
-import x.C5173k;
-import x.C5175m;
+import u.C5048c;
+import w.C5126a;
+import w.C5130e;
+import w.k;
+import x.AbstractC5177p;
+import x.C5164c;
+import x.C5166e;
+import x.C5170i;
+import x.C5172k;
+import x.C5174m;
 import z.c;
 import z.d;
 import z.e;
@@ -49,140 +49,140 @@ import z.s;
 public class ConstraintLayout extends ViewGroup {
 
     /* renamed from: I, reason: collision with root package name */
-    public static s f4643I;
+    public static s f4611I;
 
     /* renamed from: A, reason: collision with root package name */
-    public boolean f4644A;
+    public boolean f4612A;
 
     /* renamed from: B, reason: collision with root package name */
-    public int f4645B;
+    public int f4613B;
 
     /* renamed from: C, reason: collision with root package name */
-    public n f4646C;
+    public n f4614C;
 
     /* renamed from: D, reason: collision with root package name */
-    public C5019n f4647D;
+    public C4797a f4615D;
 
     /* renamed from: E, reason: collision with root package name */
-    public int f4648E;
+    public int f4616E;
 
     /* renamed from: F, reason: collision with root package name */
-    public HashMap f4649F;
+    public HashMap f4617F;
 
     /* renamed from: G, reason: collision with root package name */
-    public final SparseArray f4650G;
+    public final SparseArray f4618G;
 
     /* renamed from: H, reason: collision with root package name */
-    public final f f4651H;
+    public final f f4619H;
 
     /* renamed from: n, reason: collision with root package name */
-    public final SparseArray f4652n;
+    public final SparseArray f4620n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final ArrayList f4653u;
+    public final ArrayList f4621u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final C5140e f4654v;
+    public final w.f f4622v;
 
     /* renamed from: w, reason: collision with root package name */
-    public int f4655w;
+    public int f4623w;
 
     /* renamed from: x, reason: collision with root package name */
-    public int f4656x;
+    public int f4624x;
 
     /* renamed from: y, reason: collision with root package name */
-    public int f4657y;
+    public int f4625y;
 
     /* renamed from: z, reason: collision with root package name */
-    public int f4658z;
+    public int f4626z;
 
     public ConstraintLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f4652n = new SparseArray();
-        this.f4653u = new ArrayList(4);
-        this.f4654v = new C5140e();
-        this.f4655w = 0;
-        this.f4656x = 0;
-        this.f4657y = Integer.MAX_VALUE;
-        this.f4658z = Integer.MAX_VALUE;
-        this.f4644A = true;
-        this.f4645B = 257;
-        this.f4646C = null;
-        this.f4647D = null;
-        this.f4648E = -1;
-        this.f4649F = new HashMap();
-        this.f4650G = new SparseArray();
-        this.f4651H = new f(this, this);
+        this.f4620n = new SparseArray();
+        this.f4621u = new ArrayList(4);
+        this.f4622v = new w.f();
+        this.f4623w = 0;
+        this.f4624x = 0;
+        this.f4625y = Integer.MAX_VALUE;
+        this.f4626z = Integer.MAX_VALUE;
+        this.f4612A = true;
+        this.f4613B = 257;
+        this.f4614C = null;
+        this.f4615D = null;
+        this.f4616E = -1;
+        this.f4617F = new HashMap();
+        this.f4618G = new SparseArray();
+        this.f4619H = new f(this, this);
         i(attributeSet, 0);
     }
 
     public static e g() {
         e eVar = new e(-2, -2);
-        eVar.f42045a = -1;
-        eVar.f42047b = -1;
-        eVar.f42049c = -1.0f;
-        eVar.f42051d = true;
-        eVar.f42053e = -1;
-        eVar.f42055f = -1;
-        eVar.f42057g = -1;
-        eVar.f42059h = -1;
+        eVar.f42016a = -1;
+        eVar.f42018b = -1;
+        eVar.f42020c = -1.0f;
+        eVar.f42022d = true;
+        eVar.f42024e = -1;
+        eVar.f42026f = -1;
+        eVar.f42028g = -1;
+        eVar.f42030h = -1;
         eVar.i = -1;
-        eVar.f42062j = -1;
-        eVar.f42064k = -1;
-        eVar.f42066l = -1;
-        eVar.f42068m = -1;
-        eVar.f42069n = -1;
-        eVar.f42071o = -1;
-        eVar.f42073p = -1;
-        eVar.f42075q = 0;
-        eVar.f42076r = 0.0f;
-        eVar.f42077s = -1;
-        eVar.f42078t = -1;
-        eVar.f42079u = -1;
-        eVar.f42080v = -1;
-        eVar.f42081w = Integer.MIN_VALUE;
-        eVar.f42082x = Integer.MIN_VALUE;
-        eVar.f42083y = Integer.MIN_VALUE;
-        eVar.f42084z = Integer.MIN_VALUE;
-        eVar.f42021A = Integer.MIN_VALUE;
-        eVar.f42022B = Integer.MIN_VALUE;
-        eVar.f42023C = Integer.MIN_VALUE;
-        eVar.f42024D = 0;
-        eVar.f42025E = 0.5f;
-        eVar.f42026F = 0.5f;
-        eVar.f42027G = null;
-        eVar.f42028H = -1.0f;
-        eVar.f42029I = -1.0f;
+        eVar.f42033j = -1;
+        eVar.f42035k = -1;
+        eVar.f42037l = -1;
+        eVar.f42039m = -1;
+        eVar.f42040n = -1;
+        eVar.f42042o = -1;
+        eVar.f42044p = -1;
+        eVar.f42046q = 0;
+        eVar.f42047r = 0.0f;
+        eVar.f42048s = -1;
+        eVar.f42049t = -1;
+        eVar.f42050u = -1;
+        eVar.f42051v = -1;
+        eVar.f42052w = Integer.MIN_VALUE;
+        eVar.f42053x = Integer.MIN_VALUE;
+        eVar.f42054y = Integer.MIN_VALUE;
+        eVar.f42055z = Integer.MIN_VALUE;
+        eVar.f41992A = Integer.MIN_VALUE;
+        eVar.f41993B = Integer.MIN_VALUE;
+        eVar.f41994C = Integer.MIN_VALUE;
+        eVar.f41995D = 0;
+        eVar.f41996E = 0.5f;
+        eVar.f41997F = 0.5f;
+        eVar.f41998G = null;
+        eVar.f41999H = -1.0f;
+        eVar.f42000I = -1.0f;
         eVar.J = 0;
-        eVar.f42030K = 0;
-        eVar.f42031L = 0;
-        eVar.f42032M = 0;
-        eVar.f42033N = 0;
-        eVar.f42034O = 0;
-        eVar.f42035P = 0;
-        eVar.f42036Q = 0;
-        eVar.f42037R = 1.0f;
-        eVar.f42038S = 1.0f;
-        eVar.f42039T = -1;
-        eVar.f42040U = -1;
-        eVar.f42041V = -1;
-        eVar.f42042W = false;
-        eVar.f42043X = false;
+        eVar.f42001K = 0;
+        eVar.f42002L = 0;
+        eVar.f42003M = 0;
+        eVar.f42004N = 0;
+        eVar.f42005O = 0;
+        eVar.f42006P = 0;
+        eVar.f42007Q = 0;
+        eVar.f42008R = 1.0f;
+        eVar.f42009S = 1.0f;
+        eVar.f42010T = -1;
+        eVar.f42011U = -1;
+        eVar.f42012V = -1;
+        eVar.f42013W = false;
+        eVar.f42014X = false;
         eVar.Y = null;
-        eVar.f42044Z = 0;
-        eVar.f42046a0 = true;
-        eVar.f42048b0 = true;
-        eVar.f42050c0 = false;
-        eVar.f42052d0 = false;
-        eVar.f42054e0 = false;
-        eVar.f42056f0 = -1;
-        eVar.f42058g0 = -1;
-        eVar.f42060h0 = -1;
-        eVar.f42061i0 = -1;
-        eVar.f42063j0 = Integer.MIN_VALUE;
-        eVar.f42065k0 = Integer.MIN_VALUE;
-        eVar.f42067l0 = 0.5f;
-        eVar.f42074p0 = new C5139d();
+        eVar.f42015Z = 0;
+        eVar.f42017a0 = true;
+        eVar.f42019b0 = true;
+        eVar.f42021c0 = false;
+        eVar.f42023d0 = false;
+        eVar.f42025e0 = false;
+        eVar.f42027f0 = -1;
+        eVar.f42029g0 = -1;
+        eVar.f42031h0 = -1;
+        eVar.f42032i0 = -1;
+        eVar.f42034j0 = Integer.MIN_VALUE;
+        eVar.f42036k0 = Integer.MIN_VALUE;
+        eVar.f42038l0 = 0.5f;
+        eVar.f42045p0 = new C5130e();
         return eVar;
     }
 
@@ -193,13 +193,13 @@ public class ConstraintLayout extends ViewGroup {
     }
 
     public static s getSharedValues() {
-        if (f4643I == null) {
+        if (f4611I == null) {
             s sVar = new s();
             new SparseIntArray();
             new HashMap();
-            f4643I = sVar;
+            f4611I = sVar;
         }
-        return f4643I;
+        return f4611I;
     }
 
     @Override // android.view.ViewGroup
@@ -211,7 +211,7 @@ public class ConstraintLayout extends ViewGroup {
     public final void dispatchDraw(Canvas canvas) {
         Object tag;
         int size;
-        ArrayList arrayList = this.f4653u;
+        ArrayList arrayList = this.f4621u;
         if (arrayList != null && (size = arrayList.size()) > 0) {
             for (int i = 0; i < size; i++) {
                 ((c) arrayList.get(i)).getClass();
@@ -222,29 +222,29 @@ public class ConstraintLayout extends ViewGroup {
             float width = getWidth();
             float height = getHeight();
             int childCount = getChildCount();
-            for (int i6 = 0; i6 < childCount; i6++) {
-                View childAt = getChildAt(i6);
+            for (int i4 = 0; i4 < childCount; i4++) {
+                View childAt = getChildAt(i4);
                 if (childAt.getVisibility() != 8 && (tag = childAt.getTag()) != null && (tag instanceof String)) {
                     String[] split = ((String) tag).split(",");
                     if (split.length == 4) {
                         int parseInt = Integer.parseInt(split[0]);
                         int parseInt2 = Integer.parseInt(split[1]);
                         int parseInt3 = Integer.parseInt(split[2]);
-                        int i9 = (int) ((parseInt / 1080.0f) * width);
-                        int i10 = (int) ((parseInt2 / 1920.0f) * height);
+                        int i6 = (int) ((parseInt / 1080.0f) * width);
+                        int i9 = (int) ((parseInt2 / 1920.0f) * height);
                         Paint paint = new Paint();
                         paint.setColor(-65536);
-                        float f3 = i9;
-                        float f9 = i10;
-                        float f10 = i9 + ((int) ((parseInt3 / 1080.0f) * width));
-                        canvas.drawLine(f3, f9, f10, f9, paint);
-                        float parseInt4 = i10 + ((int) ((Integer.parseInt(split[3]) / 1920.0f) * height));
+                        float f2 = i6;
+                        float f9 = i9;
+                        float f10 = i6 + ((int) ((parseInt3 / 1080.0f) * width));
+                        canvas.drawLine(f2, f9, f10, f9, paint);
+                        float parseInt4 = i9 + ((int) ((Integer.parseInt(split[3]) / 1920.0f) * height));
                         canvas.drawLine(f10, f9, f10, parseInt4, paint);
-                        canvas.drawLine(f10, parseInt4, f3, parseInt4, paint);
-                        canvas.drawLine(f3, parseInt4, f3, f9, paint);
+                        canvas.drawLine(f10, parseInt4, f2, parseInt4, paint);
+                        canvas.drawLine(f2, parseInt4, f2, f9, paint);
                         paint.setColor(-16711936);
-                        canvas.drawLine(f3, f9, f10, parseInt4, paint);
-                        canvas.drawLine(f3, parseInt4, f10, f9, paint);
+                        canvas.drawLine(f2, f9, f10, parseInt4, paint);
+                        canvas.drawLine(f2, parseInt4, f10, f9, paint);
                     }
                 }
             }
@@ -253,7 +253,7 @@ public class ConstraintLayout extends ViewGroup {
 
     @Override // android.view.View
     public final void forceLayout() {
-        this.f4644A = true;
+        this.f4612A = true;
         super.forceLayout();
     }
 
@@ -266,142 +266,142 @@ public class ConstraintLayout extends ViewGroup {
     public final ViewGroup.LayoutParams generateLayoutParams(AttributeSet attributeSet) {
         Context context = getContext();
         e eVar = new e(context, attributeSet);
-        eVar.f42045a = -1;
-        eVar.f42047b = -1;
-        eVar.f42049c = -1.0f;
-        eVar.f42051d = true;
-        eVar.f42053e = -1;
-        eVar.f42055f = -1;
-        eVar.f42057g = -1;
-        eVar.f42059h = -1;
+        eVar.f42016a = -1;
+        eVar.f42018b = -1;
+        eVar.f42020c = -1.0f;
+        eVar.f42022d = true;
+        eVar.f42024e = -1;
+        eVar.f42026f = -1;
+        eVar.f42028g = -1;
+        eVar.f42030h = -1;
         eVar.i = -1;
-        eVar.f42062j = -1;
-        eVar.f42064k = -1;
-        eVar.f42066l = -1;
-        eVar.f42068m = -1;
-        eVar.f42069n = -1;
-        eVar.f42071o = -1;
-        eVar.f42073p = -1;
-        eVar.f42075q = 0;
-        eVar.f42076r = 0.0f;
-        eVar.f42077s = -1;
-        eVar.f42078t = -1;
-        eVar.f42079u = -1;
-        eVar.f42080v = -1;
-        eVar.f42081w = Integer.MIN_VALUE;
-        eVar.f42082x = Integer.MIN_VALUE;
-        eVar.f42083y = Integer.MIN_VALUE;
-        eVar.f42084z = Integer.MIN_VALUE;
-        eVar.f42021A = Integer.MIN_VALUE;
-        eVar.f42022B = Integer.MIN_VALUE;
-        eVar.f42023C = Integer.MIN_VALUE;
-        eVar.f42024D = 0;
-        eVar.f42025E = 0.5f;
-        eVar.f42026F = 0.5f;
-        eVar.f42027G = null;
-        eVar.f42028H = -1.0f;
-        eVar.f42029I = -1.0f;
+        eVar.f42033j = -1;
+        eVar.f42035k = -1;
+        eVar.f42037l = -1;
+        eVar.f42039m = -1;
+        eVar.f42040n = -1;
+        eVar.f42042o = -1;
+        eVar.f42044p = -1;
+        eVar.f42046q = 0;
+        eVar.f42047r = 0.0f;
+        eVar.f42048s = -1;
+        eVar.f42049t = -1;
+        eVar.f42050u = -1;
+        eVar.f42051v = -1;
+        eVar.f42052w = Integer.MIN_VALUE;
+        eVar.f42053x = Integer.MIN_VALUE;
+        eVar.f42054y = Integer.MIN_VALUE;
+        eVar.f42055z = Integer.MIN_VALUE;
+        eVar.f41992A = Integer.MIN_VALUE;
+        eVar.f41993B = Integer.MIN_VALUE;
+        eVar.f41994C = Integer.MIN_VALUE;
+        eVar.f41995D = 0;
+        eVar.f41996E = 0.5f;
+        eVar.f41997F = 0.5f;
+        eVar.f41998G = null;
+        eVar.f41999H = -1.0f;
+        eVar.f42000I = -1.0f;
         eVar.J = 0;
-        eVar.f42030K = 0;
-        eVar.f42031L = 0;
-        eVar.f42032M = 0;
-        eVar.f42033N = 0;
-        eVar.f42034O = 0;
-        eVar.f42035P = 0;
-        eVar.f42036Q = 0;
-        eVar.f42037R = 1.0f;
-        eVar.f42038S = 1.0f;
-        eVar.f42039T = -1;
-        eVar.f42040U = -1;
-        eVar.f42041V = -1;
-        eVar.f42042W = false;
-        eVar.f42043X = false;
+        eVar.f42001K = 0;
+        eVar.f42002L = 0;
+        eVar.f42003M = 0;
+        eVar.f42004N = 0;
+        eVar.f42005O = 0;
+        eVar.f42006P = 0;
+        eVar.f42007Q = 0;
+        eVar.f42008R = 1.0f;
+        eVar.f42009S = 1.0f;
+        eVar.f42010T = -1;
+        eVar.f42011U = -1;
+        eVar.f42012V = -1;
+        eVar.f42013W = false;
+        eVar.f42014X = false;
         eVar.Y = null;
-        eVar.f42044Z = 0;
-        eVar.f42046a0 = true;
-        eVar.f42048b0 = true;
-        eVar.f42050c0 = false;
-        eVar.f42052d0 = false;
-        eVar.f42054e0 = false;
-        eVar.f42056f0 = -1;
-        eVar.f42058g0 = -1;
-        eVar.f42060h0 = -1;
-        eVar.f42061i0 = -1;
-        eVar.f42063j0 = Integer.MIN_VALUE;
-        eVar.f42065k0 = Integer.MIN_VALUE;
-        eVar.f42067l0 = 0.5f;
-        eVar.f42074p0 = new C5139d();
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, r.f42213b);
+        eVar.f42015Z = 0;
+        eVar.f42017a0 = true;
+        eVar.f42019b0 = true;
+        eVar.f42021c0 = false;
+        eVar.f42023d0 = false;
+        eVar.f42025e0 = false;
+        eVar.f42027f0 = -1;
+        eVar.f42029g0 = -1;
+        eVar.f42031h0 = -1;
+        eVar.f42032i0 = -1;
+        eVar.f42034j0 = Integer.MIN_VALUE;
+        eVar.f42036k0 = Integer.MIN_VALUE;
+        eVar.f42038l0 = 0.5f;
+        eVar.f42045p0 = new C5130e();
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, r.f42184b);
         int indexCount = obtainStyledAttributes.getIndexCount();
         for (int i = 0; i < indexCount; i++) {
             int index = obtainStyledAttributes.getIndex(i);
-            int i6 = d.f42020a.get(index);
-            switch (i6) {
+            int i4 = d.f41991a.get(index);
+            switch (i4) {
                 case 1:
-                    eVar.f42041V = obtainStyledAttributes.getInt(index, eVar.f42041V);
+                    eVar.f42012V = obtainStyledAttributes.getInt(index, eVar.f42012V);
                     break;
                 case 2:
-                    int resourceId = obtainStyledAttributes.getResourceId(index, eVar.f42073p);
-                    eVar.f42073p = resourceId;
+                    int resourceId = obtainStyledAttributes.getResourceId(index, eVar.f42044p);
+                    eVar.f42044p = resourceId;
                     if (resourceId == -1) {
-                        eVar.f42073p = obtainStyledAttributes.getInt(index, -1);
+                        eVar.f42044p = obtainStyledAttributes.getInt(index, -1);
                         break;
                     } else {
                         break;
                     }
                 case 3:
-                    eVar.f42075q = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42075q);
+                    eVar.f42046q = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42046q);
                     break;
                 case 4:
-                    float f3 = obtainStyledAttributes.getFloat(index, eVar.f42076r) % 360.0f;
-                    eVar.f42076r = f3;
-                    if (f3 < 0.0f) {
-                        eVar.f42076r = (360.0f - f3) % 360.0f;
+                    float f2 = obtainStyledAttributes.getFloat(index, eVar.f42047r) % 360.0f;
+                    eVar.f42047r = f2;
+                    if (f2 < 0.0f) {
+                        eVar.f42047r = (360.0f - f2) % 360.0f;
                         break;
                     } else {
                         break;
                     }
                 case 5:
-                    eVar.f42045a = obtainStyledAttributes.getDimensionPixelOffset(index, eVar.f42045a);
+                    eVar.f42016a = obtainStyledAttributes.getDimensionPixelOffset(index, eVar.f42016a);
                     break;
                 case 6:
-                    eVar.f42047b = obtainStyledAttributes.getDimensionPixelOffset(index, eVar.f42047b);
+                    eVar.f42018b = obtainStyledAttributes.getDimensionPixelOffset(index, eVar.f42018b);
                     break;
                 case 7:
-                    eVar.f42049c = obtainStyledAttributes.getFloat(index, eVar.f42049c);
+                    eVar.f42020c = obtainStyledAttributes.getFloat(index, eVar.f42020c);
                     break;
                 case 8:
-                    int resourceId2 = obtainStyledAttributes.getResourceId(index, eVar.f42053e);
-                    eVar.f42053e = resourceId2;
+                    int resourceId2 = obtainStyledAttributes.getResourceId(index, eVar.f42024e);
+                    eVar.f42024e = resourceId2;
                     if (resourceId2 == -1) {
-                        eVar.f42053e = obtainStyledAttributes.getInt(index, -1);
+                        eVar.f42024e = obtainStyledAttributes.getInt(index, -1);
                         break;
                     } else {
                         break;
                     }
                 case 9:
-                    int resourceId3 = obtainStyledAttributes.getResourceId(index, eVar.f42055f);
-                    eVar.f42055f = resourceId3;
+                    int resourceId3 = obtainStyledAttributes.getResourceId(index, eVar.f42026f);
+                    eVar.f42026f = resourceId3;
                     if (resourceId3 == -1) {
-                        eVar.f42055f = obtainStyledAttributes.getInt(index, -1);
+                        eVar.f42026f = obtainStyledAttributes.getInt(index, -1);
                         break;
                     } else {
                         break;
                     }
                 case 10:
-                    int resourceId4 = obtainStyledAttributes.getResourceId(index, eVar.f42057g);
-                    eVar.f42057g = resourceId4;
+                    int resourceId4 = obtainStyledAttributes.getResourceId(index, eVar.f42028g);
+                    eVar.f42028g = resourceId4;
                     if (resourceId4 == -1) {
-                        eVar.f42057g = obtainStyledAttributes.getInt(index, -1);
+                        eVar.f42028g = obtainStyledAttributes.getInt(index, -1);
                         break;
                     } else {
                         break;
                     }
                 case 11:
-                    int resourceId5 = obtainStyledAttributes.getResourceId(index, eVar.f42059h);
-                    eVar.f42059h = resourceId5;
+                    int resourceId5 = obtainStyledAttributes.getResourceId(index, eVar.f42030h);
+                    eVar.f42030h = resourceId5;
                     if (resourceId5 == -1) {
-                        eVar.f42059h = obtainStyledAttributes.getInt(index, -1);
+                        eVar.f42030h = obtainStyledAttributes.getInt(index, -1);
                         break;
                     } else {
                         break;
@@ -416,120 +416,120 @@ public class ConstraintLayout extends ViewGroup {
                         break;
                     }
                 case 13:
-                    int resourceId7 = obtainStyledAttributes.getResourceId(index, eVar.f42062j);
-                    eVar.f42062j = resourceId7;
+                    int resourceId7 = obtainStyledAttributes.getResourceId(index, eVar.f42033j);
+                    eVar.f42033j = resourceId7;
                     if (resourceId7 == -1) {
-                        eVar.f42062j = obtainStyledAttributes.getInt(index, -1);
+                        eVar.f42033j = obtainStyledAttributes.getInt(index, -1);
                         break;
                     } else {
                         break;
                     }
                 case 14:
-                    int resourceId8 = obtainStyledAttributes.getResourceId(index, eVar.f42064k);
-                    eVar.f42064k = resourceId8;
+                    int resourceId8 = obtainStyledAttributes.getResourceId(index, eVar.f42035k);
+                    eVar.f42035k = resourceId8;
                     if (resourceId8 == -1) {
-                        eVar.f42064k = obtainStyledAttributes.getInt(index, -1);
+                        eVar.f42035k = obtainStyledAttributes.getInt(index, -1);
                         break;
                     } else {
                         break;
                     }
                 case 15:
-                    int resourceId9 = obtainStyledAttributes.getResourceId(index, eVar.f42066l);
-                    eVar.f42066l = resourceId9;
+                    int resourceId9 = obtainStyledAttributes.getResourceId(index, eVar.f42037l);
+                    eVar.f42037l = resourceId9;
                     if (resourceId9 == -1) {
-                        eVar.f42066l = obtainStyledAttributes.getInt(index, -1);
+                        eVar.f42037l = obtainStyledAttributes.getInt(index, -1);
                         break;
                     } else {
                         break;
                     }
                 case 16:
-                    int resourceId10 = obtainStyledAttributes.getResourceId(index, eVar.f42068m);
-                    eVar.f42068m = resourceId10;
+                    int resourceId10 = obtainStyledAttributes.getResourceId(index, eVar.f42039m);
+                    eVar.f42039m = resourceId10;
                     if (resourceId10 == -1) {
-                        eVar.f42068m = obtainStyledAttributes.getInt(index, -1);
+                        eVar.f42039m = obtainStyledAttributes.getInt(index, -1);
                         break;
                     } else {
                         break;
                     }
                 case 17:
-                    int resourceId11 = obtainStyledAttributes.getResourceId(index, eVar.f42077s);
-                    eVar.f42077s = resourceId11;
+                    int resourceId11 = obtainStyledAttributes.getResourceId(index, eVar.f42048s);
+                    eVar.f42048s = resourceId11;
                     if (resourceId11 == -1) {
-                        eVar.f42077s = obtainStyledAttributes.getInt(index, -1);
+                        eVar.f42048s = obtainStyledAttributes.getInt(index, -1);
                         break;
                     } else {
                         break;
                     }
                 case 18:
-                    int resourceId12 = obtainStyledAttributes.getResourceId(index, eVar.f42078t);
-                    eVar.f42078t = resourceId12;
+                    int resourceId12 = obtainStyledAttributes.getResourceId(index, eVar.f42049t);
+                    eVar.f42049t = resourceId12;
                     if (resourceId12 == -1) {
-                        eVar.f42078t = obtainStyledAttributes.getInt(index, -1);
+                        eVar.f42049t = obtainStyledAttributes.getInt(index, -1);
                         break;
                     } else {
                         break;
                     }
                 case 19:
-                    int resourceId13 = obtainStyledAttributes.getResourceId(index, eVar.f42079u);
-                    eVar.f42079u = resourceId13;
+                    int resourceId13 = obtainStyledAttributes.getResourceId(index, eVar.f42050u);
+                    eVar.f42050u = resourceId13;
                     if (resourceId13 == -1) {
-                        eVar.f42079u = obtainStyledAttributes.getInt(index, -1);
+                        eVar.f42050u = obtainStyledAttributes.getInt(index, -1);
                         break;
                     } else {
                         break;
                     }
                 case 20:
-                    int resourceId14 = obtainStyledAttributes.getResourceId(index, eVar.f42080v);
-                    eVar.f42080v = resourceId14;
+                    int resourceId14 = obtainStyledAttributes.getResourceId(index, eVar.f42051v);
+                    eVar.f42051v = resourceId14;
                     if (resourceId14 == -1) {
-                        eVar.f42080v = obtainStyledAttributes.getInt(index, -1);
+                        eVar.f42051v = obtainStyledAttributes.getInt(index, -1);
                         break;
                     } else {
                         break;
                     }
                 case 21:
-                    eVar.f42081w = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42081w);
+                    eVar.f42052w = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42052w);
                     break;
                 case 22:
-                    eVar.f42082x = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42082x);
+                    eVar.f42053x = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42053x);
                     break;
                 case 23:
-                    eVar.f42083y = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42083y);
+                    eVar.f42054y = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42054y);
                     break;
                 case 24:
-                    eVar.f42084z = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42084z);
+                    eVar.f42055z = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42055z);
                     break;
                 case 25:
-                    eVar.f42021A = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42021A);
+                    eVar.f41992A = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f41992A);
                     break;
                 case 26:
-                    eVar.f42022B = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42022B);
+                    eVar.f41993B = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f41993B);
                     break;
                 case 27:
-                    eVar.f42042W = obtainStyledAttributes.getBoolean(index, eVar.f42042W);
+                    eVar.f42013W = obtainStyledAttributes.getBoolean(index, eVar.f42013W);
                     break;
                 case 28:
-                    eVar.f42043X = obtainStyledAttributes.getBoolean(index, eVar.f42043X);
+                    eVar.f42014X = obtainStyledAttributes.getBoolean(index, eVar.f42014X);
                     break;
                 case 29:
-                    eVar.f42025E = obtainStyledAttributes.getFloat(index, eVar.f42025E);
+                    eVar.f41996E = obtainStyledAttributes.getFloat(index, eVar.f41996E);
                     break;
                 case 30:
-                    eVar.f42026F = obtainStyledAttributes.getFloat(index, eVar.f42026F);
+                    eVar.f41997F = obtainStyledAttributes.getFloat(index, eVar.f41997F);
                     break;
                 case 31:
-                    int i9 = obtainStyledAttributes.getInt(index, 0);
-                    eVar.f42031L = i9;
-                    if (i9 == 1) {
+                    int i6 = obtainStyledAttributes.getInt(index, 0);
+                    eVar.f42002L = i6;
+                    if (i6 == 1) {
                         Log.e("ConstraintLayout", "layout_constraintWidth_default=\"wrap\" is deprecated.\nUse layout_width=\"WRAP_CONTENT\" and layout_constrainedWidth=\"true\" instead.");
                         break;
                     } else {
                         break;
                     }
                 case 32:
-                    int i10 = obtainStyledAttributes.getInt(index, 0);
-                    eVar.f42032M = i10;
-                    if (i10 == 1) {
+                    int i9 = obtainStyledAttributes.getInt(index, 0);
+                    eVar.f42003M = i9;
+                    if (i9 == 1) {
                         Log.e("ConstraintLayout", "layout_constraintHeight_default=\"wrap\" is deprecated.\nUse layout_height=\"WRAP_CONTENT\" and layout_constrainedHeight=\"true\" instead.");
                         break;
                     } else {
@@ -537,11 +537,11 @@ public class ConstraintLayout extends ViewGroup {
                     }
                 case 33:
                     try {
-                        eVar.f42033N = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42033N);
+                        eVar.f42004N = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42004N);
                         break;
                     } catch (Exception unused) {
-                        if (obtainStyledAttributes.getInt(index, eVar.f42033N) == -2) {
-                            eVar.f42033N = -2;
+                        if (obtainStyledAttributes.getInt(index, eVar.f42004N) == -2) {
+                            eVar.f42004N = -2;
                             break;
                         } else {
                             break;
@@ -549,27 +549,27 @@ public class ConstraintLayout extends ViewGroup {
                     }
                 case 34:
                     try {
-                        eVar.f42035P = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42035P);
+                        eVar.f42006P = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42006P);
                         break;
                     } catch (Exception unused2) {
-                        if (obtainStyledAttributes.getInt(index, eVar.f42035P) == -2) {
-                            eVar.f42035P = -2;
+                        if (obtainStyledAttributes.getInt(index, eVar.f42006P) == -2) {
+                            eVar.f42006P = -2;
                             break;
                         } else {
                             break;
                         }
                     }
                 case 35:
-                    eVar.f42037R = Math.max(0.0f, obtainStyledAttributes.getFloat(index, eVar.f42037R));
-                    eVar.f42031L = 2;
+                    eVar.f42008R = Math.max(0.0f, obtainStyledAttributes.getFloat(index, eVar.f42008R));
+                    eVar.f42002L = 2;
                     break;
                 case 36:
                     try {
-                        eVar.f42034O = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42034O);
+                        eVar.f42005O = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42005O);
                         break;
                     } catch (Exception unused3) {
-                        if (obtainStyledAttributes.getInt(index, eVar.f42034O) == -2) {
-                            eVar.f42034O = -2;
+                        if (obtainStyledAttributes.getInt(index, eVar.f42005O) == -2) {
+                            eVar.f42005O = -2;
                             break;
                         } else {
                             break;
@@ -577,83 +577,83 @@ public class ConstraintLayout extends ViewGroup {
                     }
                 case 37:
                     try {
-                        eVar.f42036Q = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42036Q);
+                        eVar.f42007Q = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42007Q);
                         break;
                     } catch (Exception unused4) {
-                        if (obtainStyledAttributes.getInt(index, eVar.f42036Q) == -2) {
-                            eVar.f42036Q = -2;
+                        if (obtainStyledAttributes.getInt(index, eVar.f42007Q) == -2) {
+                            eVar.f42007Q = -2;
                             break;
                         } else {
                             break;
                         }
                     }
-                case j.f5806M /* 38 */:
-                    eVar.f42038S = Math.max(0.0f, obtainStyledAttributes.getFloat(index, eVar.f42038S));
-                    eVar.f42032M = 2;
+                case j.f6592M /* 38 */:
+                    eVar.f42009S = Math.max(0.0f, obtainStyledAttributes.getFloat(index, eVar.f42009S));
+                    eVar.f42003M = 2;
                     break;
                 default:
-                    switch (i6) {
-                        case j.f5812S /* 44 */:
+                    switch (i4) {
+                        case j.f6598S /* 44 */:
                             n.h(eVar, obtainStyledAttributes.getString(index));
                             break;
-                        case j.f5813T /* 45 */:
-                            eVar.f42028H = obtainStyledAttributes.getFloat(index, eVar.f42028H);
+                        case j.f6599T /* 45 */:
+                            eVar.f41999H = obtainStyledAttributes.getFloat(index, eVar.f41999H);
                             break;
                         case 46:
-                            eVar.f42029I = obtainStyledAttributes.getFloat(index, eVar.f42029I);
+                            eVar.f42000I = obtainStyledAttributes.getFloat(index, eVar.f42000I);
                             break;
                         case 47:
                             eVar.J = obtainStyledAttributes.getInt(index, 0);
                             break;
-                        case j.f5816W /* 48 */:
-                            eVar.f42030K = obtainStyledAttributes.getInt(index, 0);
+                        case j.f6602W /* 48 */:
+                            eVar.f42001K = obtainStyledAttributes.getInt(index, 0);
                             break;
-                        case j.f5817X /* 49 */:
-                            eVar.f42039T = obtainStyledAttributes.getDimensionPixelOffset(index, eVar.f42039T);
+                        case j.f6603X /* 49 */:
+                            eVar.f42010T = obtainStyledAttributes.getDimensionPixelOffset(index, eVar.f42010T);
                             break;
                         case 50:
-                            eVar.f42040U = obtainStyledAttributes.getDimensionPixelOffset(index, eVar.f42040U);
+                            eVar.f42011U = obtainStyledAttributes.getDimensionPixelOffset(index, eVar.f42011U);
                             break;
                         case 51:
                             eVar.Y = obtainStyledAttributes.getString(index);
                             break;
                         case 52:
-                            int resourceId15 = obtainStyledAttributes.getResourceId(index, eVar.f42069n);
-                            eVar.f42069n = resourceId15;
+                            int resourceId15 = obtainStyledAttributes.getResourceId(index, eVar.f42040n);
+                            eVar.f42040n = resourceId15;
                             if (resourceId15 == -1) {
-                                eVar.f42069n = obtainStyledAttributes.getInt(index, -1);
+                                eVar.f42040n = obtainStyledAttributes.getInt(index, -1);
                                 break;
                             } else {
                                 break;
                             }
-                        case i.f14823d /* 53 */:
-                            int resourceId16 = obtainStyledAttributes.getResourceId(index, eVar.f42071o);
-                            eVar.f42071o = resourceId16;
+                        case i.f15609d /* 53 */:
+                            int resourceId16 = obtainStyledAttributes.getResourceId(index, eVar.f42042o);
+                            eVar.f42042o = resourceId16;
                             if (resourceId16 == -1) {
-                                eVar.f42071o = obtainStyledAttributes.getInt(index, -1);
+                                eVar.f42042o = obtainStyledAttributes.getInt(index, -1);
                                 break;
                             } else {
                                 break;
                             }
                         case 54:
-                            eVar.f42024D = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42024D);
+                            eVar.f41995D = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f41995D);
                             break;
                         case 55:
-                            eVar.f42023C = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f42023C);
+                            eVar.f41994C = obtainStyledAttributes.getDimensionPixelSize(index, eVar.f41994C);
                             break;
                         default:
-                            switch (i6) {
+                            switch (i4) {
                                 case 64:
                                     n.g(eVar, obtainStyledAttributes, index, 0);
                                     break;
-                                case j.v.f12576G /* 65 */:
+                                case j.v.f13362G /* 65 */:
                                     n.g(eVar, obtainStyledAttributes, index, 1);
                                     break;
                                 case 66:
-                                    eVar.f42044Z = obtainStyledAttributes.getInt(index, eVar.f42044Z);
+                                    eVar.f42015Z = obtainStyledAttributes.getInt(index, eVar.f42015Z);
                                     break;
-                                case j.v.f12582d /* 67 */:
-                                    eVar.f42051d = obtainStyledAttributes.getBoolean(index, eVar.f42051d);
+                                case j.v.f13368d /* 67 */:
+                                    eVar.f42022d = obtainStyledAttributes.getBoolean(index, eVar.f42022d);
                                     break;
                             }
                     }
@@ -665,133 +665,133 @@ public class ConstraintLayout extends ViewGroup {
     }
 
     public int getMaxHeight() {
-        return this.f4658z;
+        return this.f4626z;
     }
 
     public int getMaxWidth() {
-        return this.f4657y;
+        return this.f4625y;
     }
 
     public int getMinHeight() {
-        return this.f4656x;
+        return this.f4624x;
     }
 
     public int getMinWidth() {
-        return this.f4655w;
+        return this.f4623w;
     }
 
     public int getOptimizationLevel() {
-        return this.f4654v.f41545D0;
+        return this.f4622v.f41324D0;
     }
 
     public String getSceneString() {
         int id;
         StringBuilder sb = new StringBuilder();
-        C5140e c5140e = this.f4654v;
-        if (c5140e.f41520j == null) {
+        w.f fVar = this.f4622v;
+        if (fVar.f41299j == null) {
             int id2 = getId();
             if (id2 != -1) {
-                c5140e.f41520j = getContext().getResources().getResourceEntryName(id2);
+                fVar.f41299j = getContext().getResources().getResourceEntryName(id2);
             } else {
-                c5140e.f41520j = "parent";
+                fVar.f41299j = "parent";
             }
         }
-        if (c5140e.f41518h0 == null) {
-            c5140e.f41518h0 = c5140e.f41520j;
-            Log.v("ConstraintLayout", " setDebugName " + c5140e.f41518h0);
+        if (fVar.f41297h0 == null) {
+            fVar.f41297h0 = fVar.f41299j;
+            Log.v("ConstraintLayout", " setDebugName " + fVar.f41297h0);
         }
-        Iterator it = c5140e.f41554q0.iterator();
+        Iterator it = fVar.f41333q0.iterator();
         while (it.hasNext()) {
-            C5139d c5139d = (C5139d) it.next();
-            View view = c5139d.f41514f0;
+            C5130e c5130e = (C5130e) it.next();
+            View view = c5130e.f41293f0;
             if (view != null) {
-                if (c5139d.f41520j == null && (id = view.getId()) != -1) {
-                    c5139d.f41520j = getContext().getResources().getResourceEntryName(id);
+                if (c5130e.f41299j == null && (id = view.getId()) != -1) {
+                    c5130e.f41299j = getContext().getResources().getResourceEntryName(id);
                 }
-                if (c5139d.f41518h0 == null) {
-                    c5139d.f41518h0 = c5139d.f41520j;
-                    Log.v("ConstraintLayout", " setDebugName " + c5139d.f41518h0);
+                if (c5130e.f41297h0 == null) {
+                    c5130e.f41297h0 = c5130e.f41299j;
+                    Log.v("ConstraintLayout", " setDebugName " + c5130e.f41297h0);
                 }
             }
         }
-        c5140e.n(sb);
+        fVar.n(sb);
         return sb.toString();
     }
 
-    public final C5139d h(View view) {
+    public final C5130e h(View view) {
         if (view == this) {
-            return this.f4654v;
+            return this.f4622v;
         }
         if (view == null) {
             return null;
         }
         if (view.getLayoutParams() instanceof e) {
-            return ((e) view.getLayoutParams()).f42074p0;
+            return ((e) view.getLayoutParams()).f42045p0;
         }
         view.setLayoutParams(generateLayoutParams(view.getLayoutParams()));
         if (view.getLayoutParams() instanceof e) {
-            return ((e) view.getLayoutParams()).f42074p0;
+            return ((e) view.getLayoutParams()).f42045p0;
         }
         return null;
     }
 
     public final void i(AttributeSet attributeSet, int i) {
-        C5140e c5140e = this.f4654v;
-        c5140e.f41514f0 = this;
-        f fVar = this.f4651H;
-        c5140e.f41558u0 = fVar;
-        c5140e.f41556s0.f41714f = fVar;
-        this.f4652n.put(getId(), this);
-        this.f4646C = null;
+        w.f fVar = this.f4622v;
+        fVar.f41293f0 = this;
+        f fVar2 = this.f4619H;
+        fVar.f41337u0 = fVar2;
+        fVar.f41335s0.f41769f = fVar2;
+        this.f4620n.put(getId(), this);
+        this.f4614C = null;
         if (attributeSet != null) {
-            TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, r.f42213b, i, 0);
+            TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, r.f42184b, i, 0);
             int indexCount = obtainStyledAttributes.getIndexCount();
-            for (int i6 = 0; i6 < indexCount; i6++) {
-                int index = obtainStyledAttributes.getIndex(i6);
+            for (int i4 = 0; i4 < indexCount; i4++) {
+                int index = obtainStyledAttributes.getIndex(i4);
                 if (index == 16) {
-                    this.f4655w = obtainStyledAttributes.getDimensionPixelOffset(index, this.f4655w);
+                    this.f4623w = obtainStyledAttributes.getDimensionPixelOffset(index, this.f4623w);
                 } else if (index == 17) {
-                    this.f4656x = obtainStyledAttributes.getDimensionPixelOffset(index, this.f4656x);
+                    this.f4624x = obtainStyledAttributes.getDimensionPixelOffset(index, this.f4624x);
                 } else if (index == 14) {
-                    this.f4657y = obtainStyledAttributes.getDimensionPixelOffset(index, this.f4657y);
+                    this.f4625y = obtainStyledAttributes.getDimensionPixelOffset(index, this.f4625y);
                 } else if (index == 15) {
-                    this.f4658z = obtainStyledAttributes.getDimensionPixelOffset(index, this.f4658z);
+                    this.f4626z = obtainStyledAttributes.getDimensionPixelOffset(index, this.f4626z);
                 } else if (index == 113) {
-                    this.f4645B = obtainStyledAttributes.getInt(index, this.f4645B);
+                    this.f4613B = obtainStyledAttributes.getInt(index, this.f4613B);
                 } else if (index == 56) {
                     int resourceId = obtainStyledAttributes.getResourceId(index, 0);
                     if (resourceId != 0) {
                         try {
                             j(resourceId);
                         } catch (Resources.NotFoundException unused) {
-                            this.f4647D = null;
+                            this.f4615D = null;
                         }
                     }
                 } else if (index == 34) {
                     int resourceId2 = obtainStyledAttributes.getResourceId(index, 0);
                     try {
                         n nVar = new n();
-                        this.f4646C = nVar;
+                        this.f4614C = nVar;
                         nVar.e(getContext(), resourceId2);
                     } catch (Resources.NotFoundException unused2) {
-                        this.f4646C = null;
+                        this.f4614C = null;
                     }
-                    this.f4648E = resourceId2;
+                    this.f4616E = resourceId2;
                 }
             }
             obtainStyledAttributes.recycle();
         }
-        c5140e.f41545D0 = this.f4645B;
-        C5047c.f40955q = c5140e.W(512);
+        fVar.f41324D0 = this.f4613B;
+        C5048c.f40917q = fVar.W(512);
     }
 
     public final void j(int i) {
         int eventType;
         h hVar;
         Context context = getContext();
-        C5019n c5019n = new C5019n(3);
-        c5019n.f40734u = new SparseArray();
-        c5019n.f40735v = new SparseArray();
+        C4797a c4797a = new C4797a();
+        c4797a.f39715b = new SparseArray();
+        c4797a.f39716c = new SparseArray();
         XmlResourceParser xml = context.getResources().getXml(i);
         try {
             eventType = xml.getEventType();
@@ -804,7 +804,7 @@ public class ConstraintLayout extends ViewGroup {
         while (true) {
             char c9 = 1;
             if (eventType == 1) {
-                this.f4647D = c5019n;
+                this.f4615D = c4797a;
                 return;
             }
             if (eventType == 2) {
@@ -850,15 +850,15 @@ public class ConstraintLayout extends ViewGroup {
                 }
                 if (c9 == 2) {
                     h hVar2 = new h(context, xml);
-                    ((SparseArray) c5019n.f40734u).put(hVar2.f1970a, hVar2);
+                    ((SparseArray) c4797a.f39715b).put(hVar2.f2058a, hVar2);
                     hVar = hVar2;
                 } else if (c9 == 3) {
                     g gVar = new g(context, xml);
                     if (hVar != null) {
-                        hVar.f1971b.add(gVar);
+                        hVar.f2059b.add(gVar);
                     }
                 } else if (c9 == 4) {
-                    c5019n.e(context, xml);
+                    c4797a.a(context, xml);
                 }
             }
             eventType = xml.next();
@@ -870,223 +870,223 @@ public class ConstraintLayout extends ViewGroup {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void k(C5140e c5140e, int i, int i6, int i9) {
-        int i10;
+    public final void k(w.f fVar, int i, int i4, int i6) {
+        int i9;
         int max;
-        int i11;
+        int i10;
         int max2;
-        int i12;
-        boolean z3;
-        int i13;
-        int i14;
+        int i11;
         boolean z6;
-        int i15;
+        int i12;
+        int i13;
         boolean z9;
-        ArrayList arrayList;
-        int i16;
+        int i14;
         boolean z10;
+        ArrayList arrayList;
+        int i15;
         boolean z11;
-        C5173k c5173k;
-        C5175m c5175m;
+        boolean z12;
+        C5172k c5172k;
+        C5174m c5174m;
+        int i16;
         int i17;
         int i18;
-        int i19;
         ArrayList arrayList2;
+        int i19;
         int i20;
         int i21;
-        int i22;
-        boolean z12;
+        boolean z13;
         Iterator it;
         Iterator it2;
-        boolean z13;
-        int mode = View.MeasureSpec.getMode(i6);
-        int size = View.MeasureSpec.getSize(i6);
-        int mode2 = View.MeasureSpec.getMode(i9);
-        int size2 = View.MeasureSpec.getSize(i9);
+        boolean z14;
+        int mode = View.MeasureSpec.getMode(i4);
+        int size = View.MeasureSpec.getSize(i4);
+        int mode2 = View.MeasureSpec.getMode(i6);
+        int size2 = View.MeasureSpec.getSize(i6);
         int max3 = Math.max(0, getPaddingTop());
         int max4 = Math.max(0, getPaddingBottom());
-        int i23 = max3 + max4;
+        int i22 = max3 + max4;
         int paddingWidth = getPaddingWidth();
-        f fVar = this.f4651H;
-        fVar.f42086b = max3;
-        fVar.f42087c = max4;
-        fVar.f42088d = paddingWidth;
-        fVar.f42089e = i23;
-        fVar.f42090f = i6;
-        fVar.f42091g = i9;
+        f fVar2 = this.f4619H;
+        fVar2.f42057b = max3;
+        fVar2.f42058c = max4;
+        fVar2.f42059d = paddingWidth;
+        fVar2.f42060e = i22;
+        fVar2.f42061f = i4;
+        fVar2.f42062g = i6;
         int max5 = Math.max(0, getPaddingStart());
         int max6 = Math.max(0, getPaddingEnd());
-        int i24 = 1;
+        int i23 = 1;
         if (max5 <= 0 && max6 <= 0) {
             max5 = Math.max(0, getPaddingLeft());
         } else if ((getContext().getApplicationInfo().flags & 4194304) != 0 && 1 == getLayoutDirection()) {
             max5 = max6;
         }
-        int i25 = size - paddingWidth;
-        int i26 = size2 - i23;
-        int i27 = fVar.f42089e;
-        int i28 = fVar.f42088d;
+        int i24 = size - paddingWidth;
+        int i25 = size2 - i22;
+        int i26 = fVar2.f42060e;
+        int i27 = fVar2.f42059d;
         int childCount = getChildCount();
         if (mode != Integer.MIN_VALUE) {
             if (mode != 0) {
                 if (mode != 1073741824) {
-                    i10 = 0;
+                    i9 = 0;
                 } else {
-                    i10 = Math.min(this.f4657y - i28, i25);
-                    i24 = 1;
+                    i9 = Math.min(this.f4625y - i27, i24);
+                    i23 = 1;
                 }
             } else if (childCount == 0) {
-                max = Math.max(0, this.f4655w);
-                i10 = max;
-                i24 = 2;
+                max = Math.max(0, this.f4623w);
+                i9 = max;
+                i23 = 2;
             } else {
-                i10 = 0;
-                i24 = 2;
+                i9 = 0;
+                i23 = 2;
             }
         } else if (childCount == 0) {
-            max = Math.max(0, this.f4655w);
-            i10 = max;
-            i24 = 2;
+            max = Math.max(0, this.f4623w);
+            i9 = max;
+            i23 = 2;
         } else {
-            i10 = i25;
-            i24 = 2;
+            i9 = i24;
+            i23 = 2;
         }
         if (mode2 != Integer.MIN_VALUE) {
             if (mode2 != 0) {
-                i11 = mode2 != 1073741824 ? 0 : Math.min(this.f4658z - i27, i26);
-                i12 = 1;
+                i10 = mode2 != 1073741824 ? 0 : Math.min(this.f4626z - i26, i25);
+                i11 = 1;
             } else if (childCount == 0) {
-                max2 = Math.max(0, this.f4656x);
-                i11 = max2;
-                i12 = 2;
+                max2 = Math.max(0, this.f4624x);
+                i10 = max2;
+                i11 = 2;
             } else {
-                i11 = 0;
-                i12 = 2;
+                i10 = 0;
+                i11 = 2;
             }
         } else if (childCount == 0) {
-            max2 = Math.max(0, this.f4656x);
-            i11 = max2;
-            i12 = 2;
+            max2 = Math.max(0, this.f4624x);
+            i10 = max2;
+            i11 = 2;
         } else {
-            i11 = i26;
-            i12 = 2;
+            i10 = i25;
+            i11 = 2;
         }
-        int q8 = c5140e.q();
-        C5167e c5167e = c5140e.f41556s0;
-        int i29 = i10;
-        if (i29 != q8 || i11 != c5140e.k()) {
-            c5167e.f41711c = true;
+        int q8 = fVar.q();
+        C5166e c5166e = fVar.f41335s0;
+        int i28 = i9;
+        if (i28 != q8 || i10 != fVar.k()) {
+            c5166e.f41766c = true;
         }
-        c5140e.Y = 0;
-        c5140e.f41502Z = 0;
-        int i30 = this.f4657y - i28;
-        int[] iArr = c5140e.f41481C;
-        iArr[0] = i30;
-        iArr[1] = this.f4658z - i27;
-        c5140e.f41506b0 = 0;
-        c5140e.f41508c0 = 0;
-        c5140e.M(i24);
-        c5140e.O(i29);
-        c5140e.N(i12);
-        c5140e.L(i11);
-        int i31 = this.f4655w - i28;
+        fVar.Y = 0;
+        fVar.f41281Z = 0;
+        int i29 = this.f4625y - i27;
+        int[] iArr = fVar.f41260C;
+        iArr[0] = i29;
+        iArr[1] = this.f4626z - i26;
+        fVar.f41285b0 = 0;
+        fVar.f41287c0 = 0;
+        fVar.M(i23);
+        fVar.O(i28);
+        fVar.N(i11);
+        fVar.L(i10);
+        int i30 = this.f4623w - i27;
+        if (i30 < 0) {
+            fVar.f41285b0 = 0;
+        } else {
+            fVar.f41285b0 = i30;
+        }
+        int i31 = this.f4624x - i26;
         if (i31 < 0) {
-            c5140e.f41506b0 = 0;
+            fVar.f41287c0 = 0;
         } else {
-            c5140e.f41506b0 = i31;
+            fVar.f41287c0 = i31;
         }
-        int i32 = this.f4656x - i27;
-        if (i32 < 0) {
-            c5140e.f41508c0 = 0;
-        } else {
-            c5140e.f41508c0 = i32;
-        }
-        c5140e.f41561x0 = max5;
-        c5140e.f41562y0 = max3;
-        j4.g gVar = c5140e.f41555r0;
+        fVar.f41340x0 = max5;
+        fVar.f41341y0 = max3;
+        l4.g gVar = fVar.f41334r0;
         gVar.getClass();
-        f fVar2 = c5140e.f41558u0;
-        int size3 = c5140e.f41554q0.size();
-        int q9 = c5140e.q();
-        int k9 = c5140e.k();
-        boolean c9 = w.j.c(i, 128);
-        boolean z14 = c9 || w.j.c(i, 64);
-        if (z14) {
-            int i33 = 0;
-            while (i33 < size3) {
-                C5139d c5139d = (C5139d) c5140e.f41554q0.get(i33);
-                boolean z15 = z14;
-                int[] iArr2 = c5139d.f41532p0;
-                i13 = size3;
-                boolean z16 = (iArr2[0] == 3) && (iArr2[1] == 3) && c5139d.f41500W > 0.0f;
-                if ((c5139d.x() && z16) || ((c5139d.y() && z16) || (c5139d instanceof w.g) || c5139d.x() || c5139d.y())) {
-                    i14 = 1073741824;
-                    z3 = false;
+        f fVar3 = fVar.f41337u0;
+        int size3 = fVar.f41333q0.size();
+        int q9 = fVar.q();
+        int k9 = fVar.k();
+        boolean c9 = k.c(i, 128);
+        boolean z15 = c9 || k.c(i, 64);
+        if (z15) {
+            int i32 = 0;
+            while (i32 < size3) {
+                C5130e c5130e = (C5130e) fVar.f41333q0.get(i32);
+                boolean z16 = z15;
+                int[] iArr2 = c5130e.f41311p0;
+                i12 = size3;
+                boolean z17 = (iArr2[0] == 3) && (iArr2[1] == 3) && c5130e.f41279W > 0.0f;
+                if ((c5130e.x() && z17) || ((c5130e.y() && z17) || (c5130e instanceof w.h) || c5130e.x() || c5130e.y())) {
+                    i13 = 1073741824;
+                    z6 = false;
                     break;
                 } else {
-                    i33++;
-                    z14 = z15;
-                    size3 = i13;
+                    i32++;
+                    z15 = z16;
+                    size3 = i12;
                 }
             }
         }
-        z3 = z14;
-        i13 = size3;
-        i14 = 1073741824;
-        boolean z17 = z3 & ((mode == i14 && mode2 == i14) || c9);
-        if (z17) {
-            int min = Math.min(iArr[0], i25);
-            int min2 = Math.min(iArr[1], i26);
-            if (mode == 1073741824 && c5140e.q() != min) {
-                c5140e.O(min);
-                c5140e.f41556s0.f41710b = true;
+        z6 = z15;
+        i12 = size3;
+        i13 = 1073741824;
+        boolean z18 = z6 & ((mode == i13 && mode2 == i13) || c9);
+        if (z18) {
+            int min = Math.min(iArr[0], i24);
+            int min2 = Math.min(iArr[1], i25);
+            if (mode == 1073741824 && fVar.q() != min) {
+                fVar.O(min);
+                fVar.f41335s0.f41765b = true;
             }
-            if (mode2 == 1073741824 && c5140e.k() != min2) {
-                c5140e.L(min2);
-                c5140e.f41556s0.f41710b = true;
+            if (mode2 == 1073741824 && fVar.k() != min2) {
+                fVar.L(min2);
+                fVar.f41335s0.f41765b = true;
             }
             if (mode == 1073741824 && mode2 == 1073741824) {
-                boolean z18 = c5167e.f41710b;
-                C5140e c5140e2 = c5167e.f41709a;
-                if (z18 || c5167e.f41711c) {
-                    Iterator it3 = c5140e2.f41554q0.iterator();
+                boolean z19 = c5166e.f41765b;
+                w.f fVar4 = c5166e.f41764a;
+                if (z19 || c5166e.f41766c) {
+                    Iterator it3 = fVar4.f41333q0.iterator();
                     while (it3.hasNext()) {
-                        C5139d c5139d2 = (C5139d) it3.next();
-                        c5139d2.h();
-                        c5139d2.f41503a = false;
-                        c5139d2.f41509d.n();
-                        c5139d2.f41511e.m();
+                        C5130e c5130e2 = (C5130e) it3.next();
+                        c5130e2.h();
+                        c5130e2.f41282a = false;
+                        c5130e2.f41288d.n();
+                        c5130e2.f41290e.m();
                     }
-                    i19 = 0;
-                    c5140e2.h();
-                    c5140e2.f41503a = false;
-                    c5140e2.f41509d.n();
-                    c5140e2.f41511e.m();
-                    c5167e.f41711c = false;
+                    i18 = 0;
+                    fVar4.h();
+                    fVar4.f41282a = false;
+                    fVar4.f41288d.n();
+                    fVar4.f41290e.m();
+                    c5166e.f41766c = false;
                 } else {
-                    i19 = 0;
+                    i18 = 0;
                 }
-                c5167e.b(c5167e.f41712d);
-                c5140e2.Y = i19;
-                c5140e2.f41502Z = i19;
-                int j6 = c5140e2.j(i19);
-                int j9 = c5140e2.j(1);
-                if (c5167e.f41710b) {
-                    c5167e.c();
+                c5166e.b(c5166e.f41767d);
+                fVar4.Y = i18;
+                fVar4.f41281Z = i18;
+                int j6 = fVar4.j(i18);
+                int j9 = fVar4.j(1);
+                if (c5166e.f41765b) {
+                    c5166e.c();
                 }
-                int r9 = c5140e2.r();
-                int s9 = c5140e2.s();
-                c5140e2.f41509d.f41748h.d(r9);
-                c5140e2.f41511e.f41748h.d(s9);
-                c5167e.g();
-                ArrayList arrayList3 = c5167e.f41713e;
-                z6 = z17;
+                int r9 = fVar4.r();
+                int s9 = fVar4.s();
+                fVar4.f41288d.f41803h.d(r9);
+                fVar4.f41290e.f41803h.d(s9);
+                c5166e.g();
+                ArrayList arrayList3 = c5166e.f41768e;
+                z9 = z18;
                 if (j6 == 2 || j9 == 2) {
                     if (c9) {
                         Iterator it4 = arrayList3.iterator();
                         while (true) {
                             if (it4.hasNext()) {
-                                if (!((AbstractC5178p) it4.next()).k()) {
+                                if (!((AbstractC5177p) it4.next()).k()) {
                                     c9 = false;
                                     break;
                                 }
@@ -1096,338 +1096,338 @@ public class ConstraintLayout extends ViewGroup {
                         }
                     }
                     if (c9 && j6 == 2) {
-                        c5140e2.M(1);
+                        fVar4.M(1);
                         arrayList2 = arrayList3;
-                        c5140e2.O(c5167e.d(c5140e2, 0));
-                        c5140e2.f41509d.f41745e.d(c5140e2.q());
+                        fVar4.O(c5166e.d(fVar4, 0));
+                        fVar4.f41288d.f41800e.d(fVar4.q());
                     } else {
                         arrayList2 = arrayList3;
                     }
                     if (c9 && j9 == 2) {
-                        i20 = 1;
-                        c5140e2.N(1);
-                        c5140e2.L(c5167e.d(c5140e2, 1));
-                        c5140e2.f41511e.f41745e.d(c5140e2.k());
-                        int[] iArr3 = c5140e2.f41532p0;
-                        i21 = iArr3[0];
-                        if (i21 != i20 || i21 == 4) {
-                            int q10 = c5140e2.q() + r9;
-                            c5140e2.f41509d.i.d(q10);
-                            c5140e2.f41509d.f41745e.d(q10 - r9);
-                            c5167e.g();
-                            i22 = iArr3[1];
-                            if (i22 != 1 || i22 == 4) {
-                                int k10 = c5140e2.k() + s9;
-                                c5140e2.f41511e.i.d(k10);
-                                c5140e2.f41511e.f41745e.d(k10 - s9);
+                        i19 = 1;
+                        fVar4.N(1);
+                        fVar4.L(c5166e.d(fVar4, 1));
+                        fVar4.f41290e.f41800e.d(fVar4.k());
+                        int[] iArr3 = fVar4.f41311p0;
+                        i20 = iArr3[0];
+                        if (i20 != i19 || i20 == 4) {
+                            int q10 = fVar4.q() + r9;
+                            fVar4.f41288d.i.d(q10);
+                            fVar4.f41288d.f41800e.d(q10 - r9);
+                            c5166e.g();
+                            i21 = iArr3[1];
+                            if (i21 != 1 || i21 == 4) {
+                                int k10 = fVar4.k() + s9;
+                                fVar4.f41290e.i.d(k10);
+                                fVar4.f41290e.f41800e.d(k10 - s9);
                             }
-                            c5167e.g();
-                            z12 = true;
+                            c5166e.g();
+                            z13 = true;
                         } else {
-                            z12 = false;
+                            z13 = false;
                         }
                         it = arrayList2.iterator();
                         while (it.hasNext()) {
-                            AbstractC5178p abstractC5178p = (AbstractC5178p) it.next();
-                            if (abstractC5178p.f41742b != c5140e2 || abstractC5178p.f41747g) {
-                                abstractC5178p.e();
+                            AbstractC5177p abstractC5177p = (AbstractC5177p) it.next();
+                            if (abstractC5177p.f41797b != fVar4 || abstractC5177p.f41802g) {
+                                abstractC5177p.e();
                             }
                         }
                         it2 = arrayList2.iterator();
                         while (it2.hasNext()) {
-                            AbstractC5178p abstractC5178p2 = (AbstractC5178p) it2.next();
-                            if (z12 || abstractC5178p2.f41742b != c5140e2) {
-                                if (!abstractC5178p2.f41748h.f41725j || ((!abstractC5178p2.i.f41725j && !(abstractC5178p2 instanceof C5171i)) || (!abstractC5178p2.f41745e.f41725j && !(abstractC5178p2 instanceof C5165c) && !(abstractC5178p2 instanceof C5171i)))) {
-                                    z13 = false;
+                            AbstractC5177p abstractC5177p2 = (AbstractC5177p) it2.next();
+                            if (z13 || abstractC5177p2.f41797b != fVar4) {
+                                if (!abstractC5177p2.f41803h.f41780j || ((!abstractC5177p2.i.f41780j && !(abstractC5177p2 instanceof C5170i)) || (!abstractC5177p2.f41800e.f41780j && !(abstractC5177p2 instanceof C5164c) && !(abstractC5177p2 instanceof C5170i)))) {
+                                    z14 = false;
                                     break;
                                 }
                             }
                         }
-                        z13 = true;
-                        c5140e2.M(j6);
-                        c5140e2.N(j9);
-                        z9 = z13;
-                        i18 = 1073741824;
-                        i15 = 2;
+                        z14 = true;
+                        fVar4.M(j6);
+                        fVar4.N(j9);
+                        z10 = z14;
+                        i17 = 1073741824;
+                        i14 = 2;
                     }
                 } else {
                     arrayList2 = arrayList3;
                 }
-                i20 = 1;
-                int[] iArr32 = c5140e2.f41532p0;
-                i21 = iArr32[0];
-                if (i21 != i20) {
+                i19 = 1;
+                int[] iArr32 = fVar4.f41311p0;
+                i20 = iArr32[0];
+                if (i20 != i19) {
                 }
-                int q102 = c5140e2.q() + r9;
-                c5140e2.f41509d.i.d(q102);
-                c5140e2.f41509d.f41745e.d(q102 - r9);
-                c5167e.g();
-                i22 = iArr32[1];
-                if (i22 != 1) {
+                int q102 = fVar4.q() + r9;
+                fVar4.f41288d.i.d(q102);
+                fVar4.f41288d.f41800e.d(q102 - r9);
+                c5166e.g();
+                i21 = iArr32[1];
+                if (i21 != 1) {
                 }
-                int k102 = c5140e2.k() + s9;
-                c5140e2.f41511e.i.d(k102);
-                c5140e2.f41511e.f41745e.d(k102 - s9);
-                c5167e.g();
-                z12 = true;
+                int k102 = fVar4.k() + s9;
+                fVar4.f41290e.i.d(k102);
+                fVar4.f41290e.f41800e.d(k102 - s9);
+                c5166e.g();
+                z13 = true;
                 it = arrayList2.iterator();
                 while (it.hasNext()) {
                 }
                 it2 = arrayList2.iterator();
                 while (it2.hasNext()) {
                 }
-                z13 = true;
-                c5140e2.M(j6);
-                c5140e2.N(j9);
-                z9 = z13;
-                i18 = 1073741824;
-                i15 = 2;
+                z14 = true;
+                fVar4.M(j6);
+                fVar4.N(j9);
+                z10 = z14;
+                i17 = 1073741824;
+                i14 = 2;
             } else {
-                z6 = z17;
-                boolean z19 = c5167e.f41710b;
-                C5140e c5140e3 = c5167e.f41709a;
-                if (z19) {
-                    Iterator it5 = c5140e3.f41554q0.iterator();
+                z9 = z18;
+                boolean z20 = c5166e.f41765b;
+                w.f fVar5 = c5166e.f41764a;
+                if (z20) {
+                    Iterator it5 = fVar5.f41333q0.iterator();
                     while (it5.hasNext()) {
-                        C5139d c5139d3 = (C5139d) it5.next();
-                        c5139d3.h();
-                        c5139d3.f41503a = false;
-                        C5173k c5173k2 = c5139d3.f41509d;
-                        c5173k2.f41745e.f41725j = false;
-                        c5173k2.f41747g = false;
-                        c5173k2.n();
-                        C5175m c5175m2 = c5139d3.f41511e;
-                        c5175m2.f41745e.f41725j = false;
-                        c5175m2.f41747g = false;
-                        c5175m2.m();
+                        C5130e c5130e3 = (C5130e) it5.next();
+                        c5130e3.h();
+                        c5130e3.f41282a = false;
+                        C5172k c5172k2 = c5130e3.f41288d;
+                        c5172k2.f41800e.f41780j = false;
+                        c5172k2.f41802g = false;
+                        c5172k2.n();
+                        C5174m c5174m2 = c5130e3.f41290e;
+                        c5174m2.f41800e.f41780j = false;
+                        c5174m2.f41802g = false;
+                        c5174m2.m();
                     }
-                    i17 = 0;
-                    c5140e3.h();
-                    c5140e3.f41503a = false;
-                    C5173k c5173k3 = c5140e3.f41509d;
-                    c5173k3.f41745e.f41725j = false;
-                    c5173k3.f41747g = false;
-                    c5173k3.n();
-                    C5175m c5175m3 = c5140e3.f41511e;
-                    c5175m3.f41745e.f41725j = false;
-                    c5175m3.f41747g = false;
-                    c5175m3.m();
-                    c5167e.c();
+                    i16 = 0;
+                    fVar5.h();
+                    fVar5.f41282a = false;
+                    C5172k c5172k3 = fVar5.f41288d;
+                    c5172k3.f41800e.f41780j = false;
+                    c5172k3.f41802g = false;
+                    c5172k3.n();
+                    C5174m c5174m3 = fVar5.f41290e;
+                    c5174m3.f41800e.f41780j = false;
+                    c5174m3.f41802g = false;
+                    c5174m3.m();
+                    c5166e.c();
                 } else {
-                    i17 = 0;
+                    i16 = 0;
                 }
-                c5167e.b(c5167e.f41712d);
-                c5140e3.Y = i17;
-                c5140e3.f41502Z = i17;
-                c5140e3.f41509d.f41748h.d(i17);
-                c5140e3.f41511e.f41748h.d(i17);
-                i18 = 1073741824;
+                c5166e.b(c5166e.f41767d);
+                fVar5.Y = i16;
+                fVar5.f41281Z = i16;
+                fVar5.f41288d.f41803h.d(i16);
+                fVar5.f41290e.f41803h.d(i16);
+                i17 = 1073741824;
                 if (mode == 1073741824) {
-                    z9 = c5140e.T(i17, c9);
-                    i15 = 1;
+                    z10 = fVar.T(i16, c9);
+                    i14 = 1;
                 } else {
-                    i15 = 0;
-                    z9 = true;
+                    i14 = 0;
+                    z10 = true;
                 }
                 if (mode2 == 1073741824) {
-                    z9 &= c5140e.T(1, c9);
-                    i15++;
+                    z10 &= fVar.T(1, c9);
+                    i14++;
                 }
             }
-            if (z9) {
-                c5140e.P(mode == i18, mode2 == i18);
+            if (z10) {
+                fVar.P(mode == i17, mode2 == i17);
             }
         } else {
-            z6 = z17;
-            i15 = 0;
-            z9 = false;
+            z9 = z18;
+            i14 = 0;
+            z10 = false;
         }
-        if (z9 && i15 == 2) {
+        if (z10 && i14 == 2) {
             return;
         }
-        int i34 = c5140e.f41545D0;
-        if (i13 > 0) {
-            int size4 = c5140e.f41554q0.size();
-            boolean W8 = c5140e.W(64);
-            f fVar3 = c5140e.f41558u0;
-            for (int i35 = 0; i35 < size4; i35++) {
-                C5139d c5139d4 = (C5139d) c5140e.f41554q0.get(i35);
-                if (!(c5139d4 instanceof w.h) && !(c5139d4 instanceof C5136a) && !c5139d4.f41484F && (!W8 || (c5173k = c5139d4.f41509d) == null || (c5175m = c5139d4.f41511e) == null || !c5173k.f41745e.f41725j || !c5175m.f41745e.f41725j)) {
-                    int j10 = c5139d4.j(0);
-                    int j11 = c5139d4.j(1);
-                    boolean z20 = j10 == 3 && c5139d4.f41534r != 1 && j11 == 3 && c5139d4.f41535s != 1;
-                    if (!z20 && c5140e.W(1) && !(c5139d4 instanceof w.g)) {
-                        if (j10 == 3 && c5139d4.f41534r == 0 && j11 != 3 && !c5139d4.x()) {
-                            z20 = true;
+        int i33 = fVar.f41324D0;
+        if (i12 > 0) {
+            int size4 = fVar.f41333q0.size();
+            boolean W3 = fVar.W(64);
+            f fVar6 = fVar.f41337u0;
+            for (int i34 = 0; i34 < size4; i34++) {
+                C5130e c5130e4 = (C5130e) fVar.f41333q0.get(i34);
+                if (!(c5130e4 instanceof w.i) && !(c5130e4 instanceof C5126a) && !c5130e4.f41263F && (!W3 || (c5172k = c5130e4.f41288d) == null || (c5174m = c5130e4.f41290e) == null || !c5172k.f41800e.f41780j || !c5174m.f41800e.f41780j)) {
+                    int j10 = c5130e4.j(0);
+                    int j11 = c5130e4.j(1);
+                    boolean z21 = j10 == 3 && c5130e4.f41313r != 1 && j11 == 3 && c5130e4.f41314s != 1;
+                    if (!z21 && fVar.W(1) && !(c5130e4 instanceof w.h)) {
+                        if (j10 == 3 && c5130e4.f41313r == 0 && j11 != 3 && !c5130e4.x()) {
+                            z21 = true;
                         }
-                        if (j11 == 3 && c5139d4.f41535s == 0 && j10 != 3 && !c5139d4.x()) {
-                            z20 = true;
+                        if (j11 == 3 && c5130e4.f41314s == 0 && j10 != 3 && !c5130e4.x()) {
+                            z21 = true;
                         }
-                        if ((j10 == 3 || j11 == 3) && c5139d4.f41500W > 0.0f) {
-                            z20 = true;
+                        if ((j10 == 3 || j11 == 3) && c5130e4.f41279W > 0.0f) {
+                            z21 = true;
                         }
                     }
-                    if (!z20) {
-                        gVar.q(0, c5139d4, fVar3);
+                    if (!z21) {
+                        gVar.q(0, c5130e4, fVar6);
                     }
                 }
             }
-            ConstraintLayout constraintLayout = fVar3.f42085a;
+            ConstraintLayout constraintLayout = fVar6.f42056a;
             int childCount2 = constraintLayout.getChildCount();
-            for (int i36 = 0; i36 < childCount2; i36++) {
-                constraintLayout.getChildAt(i36);
+            for (int i35 = 0; i35 < childCount2; i35++) {
+                constraintLayout.getChildAt(i35);
             }
-            ArrayList arrayList4 = constraintLayout.f4653u;
+            ArrayList arrayList4 = constraintLayout.f4621u;
             int size5 = arrayList4.size();
             if (size5 > 0) {
-                for (int i37 = 0; i37 < size5; i37++) {
-                    ((c) arrayList4.get(i37)).getClass();
+                for (int i36 = 0; i36 < size5; i36++) {
+                    ((c) arrayList4.get(i36)).getClass();
                 }
             }
         }
-        gVar.w(c5140e);
-        ArrayList arrayList5 = (ArrayList) gVar.f38404u;
+        gVar.w(fVar);
+        ArrayList arrayList5 = (ArrayList) gVar.f38916u;
         int size6 = arrayList5.size();
-        if (i13 > 0) {
-            gVar.u(c5140e, 0, q9, k9);
+        if (i12 > 0) {
+            gVar.u(fVar, 0, q9, k9);
         }
         if (size6 > 0) {
-            int[] iArr4 = c5140e.f41532p0;
-            boolean z21 = iArr4[0] == 2;
-            boolean z22 = iArr4[1] == 2;
-            int q11 = c5140e.q();
-            C5140e c5140e4 = (C5140e) gVar.f38406w;
-            int max7 = Math.max(q11, c5140e4.f41506b0);
-            int max8 = Math.max(c5140e.k(), c5140e4.f41508c0);
-            int i38 = 0;
-            boolean z23 = false;
-            while (i38 < size6) {
-                C5139d c5139d5 = (C5139d) arrayList5.get(i38);
-                if (c5139d5 instanceof w.g) {
-                    int q12 = c5139d5.q();
-                    z10 = z22;
-                    int k11 = c5139d5.k();
-                    z11 = z21;
-                    boolean q13 = z23 | gVar.q(1, c5139d5, fVar2);
-                    int q14 = c5139d5.q();
-                    boolean z24 = q13;
-                    int k12 = c5139d5.k();
+            int[] iArr4 = fVar.f41311p0;
+            boolean z22 = iArr4[0] == 2;
+            boolean z23 = iArr4[1] == 2;
+            int q11 = fVar.q();
+            w.f fVar7 = (w.f) gVar.f38918w;
+            int max7 = Math.max(q11, fVar7.f41285b0);
+            int max8 = Math.max(fVar.k(), fVar7.f41287c0);
+            int i37 = 0;
+            boolean z24 = false;
+            while (i37 < size6) {
+                C5130e c5130e5 = (C5130e) arrayList5.get(i37);
+                if (c5130e5 instanceof w.h) {
+                    int q12 = c5130e5.q();
+                    z11 = z23;
+                    int k11 = c5130e5.k();
+                    z12 = z22;
+                    boolean q13 = z24 | gVar.q(1, c5130e5, fVar3);
+                    int q14 = c5130e5.q();
+                    boolean z25 = q13;
+                    int k12 = c5130e5.k();
                     if (q14 != q12) {
-                        c5139d5.O(q14);
-                        if (z11 && c5139d5.r() + c5139d5.f41498U > max7) {
-                            max7 = Math.max(max7, c5139d5.i(4).e() + c5139d5.r() + c5139d5.f41498U);
+                        c5130e5.O(q14);
+                        if (z12 && c5130e5.r() + c5130e5.f41277U > max7) {
+                            max7 = Math.max(max7, c5130e5.i(4).e() + c5130e5.r() + c5130e5.f41277U);
                         }
-                        z24 = true;
+                        z25 = true;
                     }
                     if (k12 != k11) {
-                        c5139d5.L(k12);
-                        if (z10 && c5139d5.s() + c5139d5.f41499V > max8) {
-                            max8 = Math.max(max8, c5139d5.i(5).e() + c5139d5.s() + c5139d5.f41499V);
+                        c5130e5.L(k12);
+                        if (z11 && c5130e5.s() + c5130e5.f41278V > max8) {
+                            max8 = Math.max(max8, c5130e5.i(5).e() + c5130e5.s() + c5130e5.f41278V);
                         }
-                        z24 = true;
+                        z25 = true;
                     }
-                    z23 = z24 | ((w.g) c5139d5).f41614y0;
+                    z24 = z25 | ((w.h) c5130e5).f41393y0;
                 } else {
-                    z10 = z22;
-                    z11 = z21;
+                    z11 = z23;
+                    z12 = z22;
                 }
-                i38++;
-                z22 = z10;
-                z21 = z11;
+                i37++;
+                z23 = z11;
+                z22 = z12;
             }
-            boolean z25 = z22;
-            boolean z26 = z21;
-            int i39 = 0;
-            while (i39 < 2) {
-                int i40 = 0;
-                while (i40 < size6) {
-                    C5139d c5139d6 = (C5139d) arrayList5.get(i40);
-                    if (((c5139d6 instanceof w.i) && !(c5139d6 instanceof w.g)) || (c5139d6 instanceof w.h) || c5139d6.f41516g0 == 8 || ((z6 && c5139d6.f41509d.f41745e.f41725j && c5139d6.f41511e.f41745e.f41725j) || (c5139d6 instanceof w.g))) {
+            boolean z26 = z23;
+            boolean z27 = z22;
+            int i38 = 0;
+            while (i38 < 2) {
+                int i39 = 0;
+                while (i39 < size6) {
+                    C5130e c5130e6 = (C5130e) arrayList5.get(i39);
+                    if (((c5130e6 instanceof w.j) && !(c5130e6 instanceof w.h)) || (c5130e6 instanceof w.i) || c5130e6.f41295g0 == 8 || ((z9 && c5130e6.f41288d.f41800e.f41780j && c5130e6.f41290e.f41800e.f41780j) || (c5130e6 instanceof w.h))) {
                         arrayList = arrayList5;
-                        i16 = size6;
+                        i15 = size6;
                     } else {
-                        int q15 = c5139d6.q();
-                        int k13 = c5139d6.k();
+                        int q15 = c5130e6.q();
+                        int k13 = c5130e6.k();
                         arrayList = arrayList5;
-                        int i41 = c5139d6.f41504a0;
-                        i16 = size6;
-                        boolean q16 = gVar.q(i39 == 1 ? 2 : 1, c5139d6, fVar2) | z23;
-                        int q17 = c5139d6.q();
-                        boolean z27 = q16;
-                        int k14 = c5139d6.k();
+                        int i40 = c5130e6.f41283a0;
+                        i15 = size6;
+                        boolean q16 = gVar.q(i38 == 1 ? 2 : 1, c5130e6, fVar3) | z24;
+                        int q17 = c5130e6.q();
+                        boolean z28 = q16;
+                        int k14 = c5130e6.k();
                         if (q17 != q15) {
-                            c5139d6.O(q17);
-                            if (z26 && c5139d6.r() + c5139d6.f41498U > max7) {
-                                max7 = Math.max(max7, c5139d6.i(4).e() + c5139d6.r() + c5139d6.f41498U);
+                            c5130e6.O(q17);
+                            if (z27 && c5130e6.r() + c5130e6.f41277U > max7) {
+                                max7 = Math.max(max7, c5130e6.i(4).e() + c5130e6.r() + c5130e6.f41277U);
                             }
-                            z27 = true;
+                            z28 = true;
                         }
                         if (k14 != k13) {
-                            c5139d6.L(k14);
-                            if (z25 && c5139d6.s() + c5139d6.f41499V > max8) {
-                                max8 = Math.max(max8, c5139d6.i(5).e() + c5139d6.s() + c5139d6.f41499V);
+                            c5130e6.L(k14);
+                            if (z26 && c5130e6.s() + c5130e6.f41278V > max8) {
+                                max8 = Math.max(max8, c5130e6.i(5).e() + c5130e6.s() + c5130e6.f41278V);
                             }
-                            z27 = true;
+                            z28 = true;
                         }
-                        z23 = (!c5139d6.f41483E || i41 == c5139d6.f41504a0) ? z27 : true;
+                        z24 = (!c5130e6.f41262E || i40 == c5130e6.f41283a0) ? z28 : true;
                     }
-                    i40++;
+                    i39++;
                     arrayList5 = arrayList;
-                    size6 = i16;
+                    size6 = i15;
                 }
                 ArrayList arrayList6 = arrayList5;
-                int i42 = size6;
-                if (!z23) {
+                int i41 = size6;
+                if (!z24) {
                     break;
                 }
-                i39++;
-                gVar.u(c5140e, i39, q9, k9);
+                i38++;
+                gVar.u(fVar, i38, q9, k9);
                 arrayList5 = arrayList6;
-                size6 = i42;
-                z23 = false;
+                size6 = i41;
+                z24 = false;
             }
         }
-        c5140e.f41545D0 = i34;
-        C5047c.f40955q = c5140e.W(512);
+        fVar.f41324D0 = i33;
+        C5048c.f40917q = fVar.W(512);
     }
 
-    public final void l(C5139d c5139d, e eVar, SparseArray sparseArray, int i, int i6) {
-        View view = (View) this.f4652n.get(i);
-        C5139d c5139d2 = (C5139d) sparseArray.get(i);
-        if (c5139d2 == null || view == null || !(view.getLayoutParams() instanceof e)) {
+    public final void l(C5130e c5130e, e eVar, SparseArray sparseArray, int i, int i4) {
+        View view = (View) this.f4620n.get(i);
+        C5130e c5130e2 = (C5130e) sparseArray.get(i);
+        if (c5130e2 == null || view == null || !(view.getLayoutParams() instanceof e)) {
             return;
         }
-        eVar.f42050c0 = true;
-        if (i6 == 6) {
+        eVar.f42021c0 = true;
+        if (i4 == 6) {
             e eVar2 = (e) view.getLayoutParams();
-            eVar2.f42050c0 = true;
-            eVar2.f42074p0.f41483E = true;
+            eVar2.f42021c0 = true;
+            eVar2.f42045p0.f41262E = true;
         }
-        c5139d.i(6).b(c5139d2.i(i6), eVar.f42024D, eVar.f42023C, true);
-        c5139d.f41483E = true;
-        c5139d.i(3).j();
-        c5139d.i(5).j();
+        c5130e.i(6).b(c5130e2.i(i4), eVar.f41995D, eVar.f41994C, true);
+        c5130e.f41262E = true;
+        c5130e.i(3).j();
+        c5130e.i(5).j();
     }
 
     @Override // android.view.ViewGroup, android.view.View
-    public void onLayout(boolean z3, int i, int i6, int i9, int i10) {
+    public void onLayout(boolean z6, int i, int i4, int i6, int i9) {
         int childCount = getChildCount();
         boolean isInEditMode = isInEditMode();
-        for (int i11 = 0; i11 < childCount; i11++) {
-            View childAt = getChildAt(i11);
+        for (int i10 = 0; i10 < childCount; i10++) {
+            View childAt = getChildAt(i10);
             e eVar = (e) childAt.getLayoutParams();
-            C5139d c5139d = eVar.f42074p0;
-            if (childAt.getVisibility() != 8 || eVar.f42052d0 || eVar.f42054e0 || isInEditMode) {
-                int r9 = c5139d.r();
-                int s9 = c5139d.s();
-                childAt.layout(r9, s9, c5139d.q() + r9, c5139d.k() + s9);
+            C5130e c5130e = eVar.f42045p0;
+            if (childAt.getVisibility() != 8 || eVar.f42023d0 || eVar.f42025e0 || isInEditMode) {
+                int r9 = c5130e.r();
+                int s9 = c5130e.s();
+                childAt.layout(r9, s9, c5130e.q() + r9, c5130e.k() + s9);
             }
         }
-        ArrayList arrayList = this.f4653u;
+        ArrayList arrayList = this.f4621u;
         int size = arrayList.size();
         if (size > 0) {
-            for (int i12 = 0; i12 < size; i12++) {
-                ((c) arrayList.get(i12)).getClass();
+            for (int i11 = 0; i11 < size; i11++) {
+                ((c) arrayList.get(i11)).getClass();
             }
         }
     }
@@ -1446,111 +1446,111 @@ public class ConstraintLayout extends ViewGroup {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public void onMeasure(int i, int i6) {
-        boolean z3;
-        int i9;
+    public void onMeasure(int i, int i4) {
         boolean z6;
-        C5139d c5139d;
+        int i6;
+        boolean z9;
+        C5130e c5130e;
+        int i9;
+        C5130e c5130e2;
         int i10;
-        C5139d c5139d2;
         int i11;
         int i12;
+        C5130e c5130e3;
         int i13;
-        C5139d c5139d3;
         int i14;
         int i15;
         int i16;
         int i17;
+        C5130e c5130e4;
         int i18;
-        C5139d c5139d4;
         int i19;
-        int i20;
-        C5139d c5139d5;
+        C5130e c5130e5;
         e eVar;
+        int i20;
+        C5130e c5130e6;
+        float f2;
         int i21;
-        C5139d c5139d6;
-        float f3;
         int i22;
         int i23;
         int i24;
         int i25;
-        int i26;
         float parseFloat;
-        int i27;
+        int i26;
         char c9;
         ArrayList arrayList;
         ArrayList arrayList2;
-        int i28;
+        int i27;
         String resourceName;
         int id;
-        C5139d c5139d7;
+        C5130e c5130e7;
         ConstraintLayout constraintLayout = this;
-        boolean z9 = constraintLayout.f4644A;
-        constraintLayout.f4644A = z9;
-        int i29 = 0;
-        int i30 = 1;
-        if (!z9) {
+        boolean z10 = constraintLayout.f4612A;
+        constraintLayout.f4612A = z10;
+        int i28 = 0;
+        int i29 = 1;
+        if (!z10) {
             int childCount = constraintLayout.getChildCount();
-            int i31 = 0;
+            int i30 = 0;
             while (true) {
-                if (i31 >= childCount) {
+                if (i30 >= childCount) {
                     break;
                 }
-                if (constraintLayout.getChildAt(i31).isLayoutRequested()) {
-                    constraintLayout.f4644A = true;
+                if (constraintLayout.getChildAt(i30).isLayoutRequested()) {
+                    constraintLayout.f4612A = true;
                     break;
                 }
-                i31++;
+                i30++;
             }
         }
-        boolean z10 = (constraintLayout.getContext().getApplicationInfo().flags & 4194304) != 0 && 1 == constraintLayout.getLayoutDirection();
-        C5140e c5140e = constraintLayout.f4654v;
-        c5140e.f41559v0 = z10;
-        if (constraintLayout.f4644A) {
-            constraintLayout.f4644A = false;
+        boolean z11 = (constraintLayout.getContext().getApplicationInfo().flags & 4194304) != 0 && 1 == constraintLayout.getLayoutDirection();
+        w.f fVar = constraintLayout.f4622v;
+        fVar.f41338v0 = z11;
+        if (constraintLayout.f4612A) {
+            constraintLayout.f4612A = false;
             int childCount2 = constraintLayout.getChildCount();
-            int i32 = 0;
+            int i31 = 0;
             while (true) {
-                if (i32 >= childCount2) {
-                    z3 = false;
+                if (i31 >= childCount2) {
+                    z6 = false;
                     break;
                 } else {
-                    if (constraintLayout.getChildAt(i32).isLayoutRequested()) {
-                        z3 = true;
+                    if (constraintLayout.getChildAt(i31).isLayoutRequested()) {
+                        z6 = true;
                         break;
                     }
-                    i32++;
+                    i31++;
                 }
             }
-            if (z3) {
+            if (z6) {
                 boolean isInEditMode = constraintLayout.isInEditMode();
                 int childCount3 = constraintLayout.getChildCount();
-                for (int i33 = 0; i33 < childCount3; i33++) {
-                    C5139d h9 = constraintLayout.h(constraintLayout.getChildAt(i33));
-                    if (h9 != null) {
-                        h9.C();
+                for (int i32 = 0; i32 < childCount3; i32++) {
+                    C5130e h3 = constraintLayout.h(constraintLayout.getChildAt(i32));
+                    if (h3 != null) {
+                        h3.C();
                     }
                 }
                 Object obj = null;
                 if (isInEditMode) {
-                    int i34 = 0;
-                    while (i34 < childCount3) {
-                        View childAt = constraintLayout.getChildAt(i34);
+                    int i33 = 0;
+                    while (i33 < childCount3) {
+                        View childAt = constraintLayout.getChildAt(i33);
                         try {
                             resourceName = constraintLayout.getResources().getResourceName(childAt.getId());
                             Integer valueOf = Integer.valueOf(childAt.getId());
                             if (resourceName != null) {
-                                if (constraintLayout.f4649F == null) {
-                                    constraintLayout.f4649F = new HashMap();
+                                if (constraintLayout.f4617F == null) {
+                                    constraintLayout.f4617F = new HashMap();
                                 }
                                 int indexOf = resourceName.indexOf("/");
-                                i28 = i30;
+                                i27 = i29;
                                 try {
-                                    constraintLayout.f4649F.put(indexOf != -1 ? resourceName.substring(indexOf + 1) : resourceName, valueOf);
+                                    constraintLayout.f4617F.put(indexOf != -1 ? resourceName.substring(indexOf + 1) : resourceName, valueOf);
                                 } catch (Resources.NotFoundException unused) {
                                 }
                             } else {
-                                i28 = i30;
+                                i27 = i29;
                             }
                             int indexOf2 = resourceName.indexOf(47);
                             if (indexOf2 != -1) {
@@ -1558,387 +1558,387 @@ public class ConstraintLayout extends ViewGroup {
                             }
                             id = childAt.getId();
                         } catch (Resources.NotFoundException unused2) {
-                            i28 = i30;
+                            i27 = i29;
                         }
                         if (id != 0) {
-                            View view = (View) constraintLayout.f4652n.get(id);
+                            View view = (View) constraintLayout.f4620n.get(id);
                             if (view == null && (view = constraintLayout.findViewById(id)) != null && view != constraintLayout && view.getParent() == constraintLayout) {
                                 constraintLayout.onViewAdded(view);
                             }
                             if (view != constraintLayout) {
-                                c5139d7 = view == null ? null : ((e) view.getLayoutParams()).f42074p0;
-                                c5139d7.f41518h0 = resourceName;
-                                i34++;
-                                i30 = i28;
+                                c5130e7 = view == null ? null : ((e) view.getLayoutParams()).f42045p0;
+                                c5130e7.f41297h0 = resourceName;
+                                i33++;
+                                i29 = i27;
                             }
                         }
-                        c5139d7 = c5140e;
-                        c5139d7.f41518h0 = resourceName;
-                        i34++;
-                        i30 = i28;
+                        c5130e7 = fVar;
+                        c5130e7.f41297h0 = resourceName;
+                        i33++;
+                        i29 = i27;
                     }
                 }
-                int i35 = i30;
-                if (constraintLayout.f4648E != -1) {
-                    for (int i36 = 0; i36 < childCount3; i36++) {
-                        constraintLayout.getChildAt(i36).getId();
+                int i34 = i29;
+                if (constraintLayout.f4616E != -1) {
+                    for (int i35 = 0; i35 < childCount3; i35++) {
+                        constraintLayout.getChildAt(i35).getId();
                     }
                 }
-                n nVar = constraintLayout.f4646C;
+                n nVar = constraintLayout.f4614C;
                 if (nVar != null) {
                     nVar.a(constraintLayout);
                 }
-                c5140e.f41554q0.clear();
-                ArrayList arrayList3 = constraintLayout.f4653u;
+                fVar.f41333q0.clear();
+                ArrayList arrayList3 = constraintLayout.f4621u;
                 int size = arrayList3.size();
                 if (size > 0) {
-                    int i37 = 0;
-                    while (i37 < size) {
-                        c cVar = (c) arrayList3.get(i37);
+                    int i36 = 0;
+                    while (i36 < size) {
+                        c cVar = (c) arrayList3.get(i36);
                         if (cVar.isInEditMode()) {
-                            cVar.setIds(cVar.f42017x);
+                            cVar.setIds(cVar.f41988x);
                         }
-                        w.i iVar = cVar.f42016w;
-                        if (iVar == null) {
+                        w.j jVar = cVar.f41987w;
+                        if (jVar == null) {
                             arrayList = arrayList3;
                         } else {
-                            iVar.f41623r0 = i29;
-                            Arrays.fill(iVar.f41622q0, obj);
-                            int i38 = i29;
-                            while (i38 < cVar.f42014u) {
-                                int i39 = cVar.f42013n[i38];
-                                View view2 = (View) constraintLayout.f4652n.get(i39);
+                            jVar.f41402r0 = i28;
+                            Arrays.fill(jVar.f41401q0, obj);
+                            int i37 = i28;
+                            while (i37 < cVar.f41985u) {
+                                int i38 = cVar.f41984n[i37];
+                                View view2 = (View) constraintLayout.f4620n.get(i38);
                                 if (view2 == null) {
-                                    Integer valueOf2 = Integer.valueOf(i39);
-                                    HashMap hashMap = cVar.f42019z;
+                                    Integer valueOf2 = Integer.valueOf(i38);
+                                    HashMap hashMap = cVar.f41990z;
                                     String str = (String) hashMap.get(valueOf2);
                                     int f9 = cVar.f(constraintLayout, str);
                                     if (f9 != 0) {
-                                        cVar.f42013n[i38] = f9;
+                                        cVar.f41984n[i37] = f9;
                                         hashMap.put(Integer.valueOf(f9), str);
-                                        view2 = (View) constraintLayout.f4652n.get(f9);
+                                        view2 = (View) constraintLayout.f4620n.get(f9);
                                     }
                                 }
                                 if (view2 != null) {
-                                    w.i iVar2 = cVar.f42016w;
-                                    C5139d h10 = constraintLayout.h(view2);
-                                    iVar2.getClass();
-                                    if (h10 != iVar2 && h10 != null) {
-                                        int i40 = iVar2.f41623r0 + 1;
-                                        C5139d[] c5139dArr = iVar2.f41622q0;
+                                    w.j jVar2 = cVar.f41987w;
+                                    C5130e h9 = constraintLayout.h(view2);
+                                    jVar2.getClass();
+                                    if (h9 != jVar2 && h9 != null) {
+                                        int i39 = jVar2.f41402r0 + 1;
+                                        C5130e[] c5130eArr = jVar2.f41401q0;
                                         arrayList2 = arrayList3;
-                                        if (i40 > c5139dArr.length) {
-                                            iVar2.f41622q0 = (C5139d[]) Arrays.copyOf(c5139dArr, c5139dArr.length * 2);
+                                        if (i39 > c5130eArr.length) {
+                                            jVar2.f41401q0 = (C5130e[]) Arrays.copyOf(c5130eArr, c5130eArr.length * 2);
                                         }
-                                        C5139d[] c5139dArr2 = iVar2.f41622q0;
-                                        int i41 = iVar2.f41623r0;
-                                        c5139dArr2[i41] = h10;
-                                        iVar2.f41623r0 = i41 + 1;
-                                        i38++;
+                                        C5130e[] c5130eArr2 = jVar2.f41401q0;
+                                        int i40 = jVar2.f41402r0;
+                                        c5130eArr2[i40] = h9;
+                                        jVar2.f41402r0 = i40 + 1;
+                                        i37++;
                                         arrayList3 = arrayList2;
                                     }
                                 }
                                 arrayList2 = arrayList3;
-                                i38++;
+                                i37++;
                                 arrayList3 = arrayList2;
                             }
                             arrayList = arrayList3;
-                            cVar.f42016w.S();
+                            cVar.f41987w.S();
                         }
-                        i37++;
+                        i36++;
                         arrayList3 = arrayList;
                         obj = null;
-                        i29 = 0;
+                        i28 = 0;
                     }
                 }
-                int i42 = 2;
-                for (int i43 = 0; i43 < childCount3; i43++) {
-                    constraintLayout.getChildAt(i43);
+                int i41 = 2;
+                for (int i42 = 0; i42 < childCount3; i42++) {
+                    constraintLayout.getChildAt(i42);
                 }
-                SparseArray sparseArray = constraintLayout.f4650G;
+                SparseArray sparseArray = constraintLayout.f4618G;
                 sparseArray.clear();
-                sparseArray.put(0, c5140e);
-                sparseArray.put(constraintLayout.getId(), c5140e);
-                for (int i44 = 0; i44 < childCount3; i44++) {
-                    View childAt2 = constraintLayout.getChildAt(i44);
+                sparseArray.put(0, fVar);
+                sparseArray.put(constraintLayout.getId(), fVar);
+                for (int i43 = 0; i43 < childCount3; i43++) {
+                    View childAt2 = constraintLayout.getChildAt(i43);
                     sparseArray.put(childAt2.getId(), constraintLayout.h(childAt2));
                 }
-                int i45 = 0;
-                while (i45 < childCount3) {
-                    View childAt3 = constraintLayout.getChildAt(i45);
-                    C5139d h11 = constraintLayout.h(childAt3);
-                    if (h11 != null) {
+                int i44 = 0;
+                while (i44 < childCount3) {
+                    View childAt3 = constraintLayout.getChildAt(i44);
+                    C5130e h10 = constraintLayout.h(childAt3);
+                    if (h10 != null) {
                         e eVar2 = (e) childAt3.getLayoutParams();
-                        c5140e.f41554q0.add(h11);
-                        C5139d c5139d8 = h11.f41497T;
-                        if (c5139d8 != null) {
-                            ((C5140e) c5139d8).f41554q0.remove(h11);
-                            h11.C();
+                        fVar.f41333q0.add(h10);
+                        C5130e c5130e8 = h10.f41276T;
+                        if (c5130e8 != null) {
+                            ((w.f) c5130e8).f41333q0.remove(h10);
+                            h10.C();
                         }
-                        h11.f41497T = c5140e;
+                        h10.f41276T = fVar;
                         eVar2.a();
-                        h11.f41516g0 = childAt3.getVisibility();
-                        h11.f41514f0 = childAt3;
+                        h10.f41295g0 = childAt3.getVisibility();
+                        h10.f41293f0 = childAt3;
                         if (childAt3 instanceof c) {
-                            ((c) childAt3).h(h11, c5140e.f41559v0);
+                            ((c) childAt3).h(h10, fVar.f41338v0);
                         }
-                        if (eVar2.f42052d0) {
-                            w.h hVar = (w.h) h11;
-                            int i46 = eVar2.m0;
-                            int i47 = eVar2.f42070n0;
-                            float f10 = eVar2.f42072o0;
+                        if (eVar2.f42023d0) {
+                            w.i iVar = (w.i) h10;
+                            int i45 = eVar2.m0;
+                            int i46 = eVar2.f42041n0;
+                            float f10 = eVar2.f42043o0;
                             if (f10 == -1.0f) {
                                 c9 = 65535;
-                                if (i46 != -1) {
-                                    if (i46 > -1) {
-                                        hVar.f41616q0 = -1.0f;
-                                        hVar.f41617r0 = i46;
-                                        hVar.f41618s0 = -1;
+                                if (i45 != -1) {
+                                    if (i45 > -1) {
+                                        iVar.f41395q0 = -1.0f;
+                                        iVar.f41396r0 = i45;
+                                        iVar.f41397s0 = -1;
                                     }
-                                } else if (i47 != -1 && i47 > -1) {
-                                    hVar.f41616q0 = -1.0f;
-                                    hVar.f41617r0 = -1;
-                                    hVar.f41618s0 = i47;
+                                } else if (i46 != -1 && i46 > -1) {
+                                    iVar.f41395q0 = -1.0f;
+                                    iVar.f41396r0 = -1;
+                                    iVar.f41397s0 = i46;
                                 }
-                                i9 = i45;
-                                z6 = z3;
-                                i24 = i42;
+                                i6 = i44;
+                                z9 = z6;
+                                i23 = i41;
                             } else if (f10 > -1.0f) {
-                                hVar.f41616q0 = f10;
+                                iVar.f41395q0 = f10;
                                 c9 = 65535;
-                                hVar.f41617r0 = -1;
-                                hVar.f41618s0 = -1;
-                                i9 = i45;
-                                z6 = z3;
-                                i24 = i42;
+                                iVar.f41396r0 = -1;
+                                iVar.f41397s0 = -1;
+                                i6 = i44;
+                                z9 = z6;
+                                i23 = i41;
                             }
                         } else {
-                            int i48 = eVar2.f42056f0;
-                            int i49 = eVar2.f42058g0;
-                            int i50 = eVar2.f42060h0;
-                            int i51 = eVar2.f42061i0;
-                            int i52 = eVar2.f42063j0;
-                            int i53 = eVar2.f42065k0;
-                            i9 = i45;
-                            float f11 = eVar2.f42067l0;
-                            int i54 = eVar2.f42073p;
-                            z6 = z3;
-                            if (i54 != -1) {
-                                C5139d c5139d9 = (C5139d) sparseArray.get(i54);
-                                if (c5139d9 != null) {
-                                    float f12 = eVar2.f42076r;
-                                    h11.v(7, 7, eVar2.f42075q, 0, c5139d9);
-                                    h11.f41482D = f12;
+                            int i47 = eVar2.f42027f0;
+                            int i48 = eVar2.f42029g0;
+                            int i49 = eVar2.f42031h0;
+                            int i50 = eVar2.f42032i0;
+                            int i51 = eVar2.f42034j0;
+                            int i52 = eVar2.f42036k0;
+                            i6 = i44;
+                            float f11 = eVar2.f42038l0;
+                            int i53 = eVar2.f42044p;
+                            z9 = z6;
+                            if (i53 != -1) {
+                                C5130e c5130e9 = (C5130e) sparseArray.get(i53);
+                                if (c5130e9 != null) {
+                                    float f12 = eVar2.f42047r;
+                                    h10.v(7, 7, eVar2.f42046q, 0, c5130e9);
+                                    h10.f41261D = f12;
                                 }
                                 constraintLayout = this;
-                                c5139d6 = h11;
+                                c5130e6 = h10;
                                 eVar = eVar2;
-                                i14 = 4;
-                                i13 = 2;
+                                i13 = 4;
+                                i12 = 2;
                             } else {
-                                if (i48 != -1) {
-                                    C5139d c5139d10 = (C5139d) sparseArray.get(i48);
-                                    if (c5139d10 != null) {
-                                        c5139d = h11;
-                                        i10 = 2;
-                                        c5139d.v(2, 2, ((ViewGroup.MarginLayoutParams) eVar2).leftMargin, i52, c5139d10);
+                                if (i47 != -1) {
+                                    C5130e c5130e10 = (C5130e) sparseArray.get(i47);
+                                    if (c5130e10 != null) {
+                                        c5130e = h10;
+                                        i9 = 2;
+                                        c5130e.v(2, 2, ((ViewGroup.MarginLayoutParams) eVar2).leftMargin, i51, c5130e10);
                                     } else {
-                                        c5139d = h11;
-                                        i10 = 2;
+                                        c5130e = h10;
+                                        i9 = 2;
                                     }
                                 } else {
-                                    c5139d = h11;
-                                    i10 = 2;
-                                    if (i49 != -1 && (c5139d2 = (C5139d) sparseArray.get(i49)) != null) {
-                                        c5139d.v(2, 4, ((ViewGroup.MarginLayoutParams) eVar2).leftMargin, i52, c5139d2);
-                                        i11 = 2;
-                                        i12 = 4;
-                                        if (i50 == -1) {
-                                            C5139d c5139d11 = (C5139d) sparseArray.get(i50);
-                                            if (c5139d11 != null) {
-                                                c5139d.v(i12, i11, ((ViewGroup.MarginLayoutParams) eVar2).rightMargin, i53, c5139d11);
+                                    c5130e = h10;
+                                    i9 = 2;
+                                    if (i48 != -1 && (c5130e2 = (C5130e) sparseArray.get(i48)) != null) {
+                                        c5130e.v(2, 4, ((ViewGroup.MarginLayoutParams) eVar2).leftMargin, i51, c5130e2);
+                                        i10 = 2;
+                                        i11 = 4;
+                                        if (i49 == -1) {
+                                            C5130e c5130e11 = (C5130e) sparseArray.get(i49);
+                                            if (c5130e11 != null) {
+                                                c5130e.v(i11, i10, ((ViewGroup.MarginLayoutParams) eVar2).rightMargin, i52, c5130e11);
                                             }
-                                            i13 = i11;
+                                            i12 = i10;
                                         } else {
-                                            i13 = i11;
-                                            if (i51 != -1 && (c5139d3 = (C5139d) sparseArray.get(i51)) != null) {
-                                                c5139d.v(i12, i12, ((ViewGroup.MarginLayoutParams) eVar2).rightMargin, i53, c5139d3);
+                                            i12 = i10;
+                                            if (i50 != -1 && (c5130e3 = (C5130e) sparseArray.get(i50)) != null) {
+                                                c5130e.v(i11, i11, ((ViewGroup.MarginLayoutParams) eVar2).rightMargin, i52, c5130e3);
                                             }
                                         }
-                                        i14 = i12;
-                                        i15 = eVar2.i;
-                                        if (i15 == -1) {
-                                            C5139d c5139d12 = (C5139d) sparseArray.get(i15);
-                                            if (c5139d12 != null) {
-                                                i22 = 3;
-                                                c5139d.v(3, 3, ((ViewGroup.MarginLayoutParams) eVar2).topMargin, eVar2.f42082x, c5139d12);
+                                        i13 = i11;
+                                        i14 = eVar2.i;
+                                        if (i14 == -1) {
+                                            C5130e c5130e12 = (C5130e) sparseArray.get(i14);
+                                            if (c5130e12 != null) {
+                                                i21 = 3;
+                                                c5130e.v(3, 3, ((ViewGroup.MarginLayoutParams) eVar2).topMargin, eVar2.f42053x, c5130e12);
                                             } else {
-                                                i22 = 3;
+                                                i21 = 3;
                                             }
-                                            i17 = i22;
-                                            i18 = 5;
-                                            i16 = -1;
+                                            i16 = i21;
+                                            i17 = 5;
+                                            i15 = -1;
                                         } else {
-                                            int i55 = eVar2.f42062j;
-                                            i16 = -1;
-                                            if (i55 == -1 || (c5139d4 = (C5139d) sparseArray.get(i55)) == null) {
-                                                i17 = 3;
-                                                i18 = 5;
+                                            int i54 = eVar2.f42033j;
+                                            i15 = -1;
+                                            if (i54 == -1 || (c5130e4 = (C5130e) sparseArray.get(i54)) == null) {
+                                                i16 = 3;
+                                                i17 = 5;
                                             } else {
-                                                c5139d.v(3, 5, ((ViewGroup.MarginLayoutParams) eVar2).topMargin, eVar2.f42082x, c5139d4);
-                                                i17 = 3;
-                                                i18 = 5;
+                                                c5130e.v(3, 5, ((ViewGroup.MarginLayoutParams) eVar2).topMargin, eVar2.f42053x, c5130e4);
+                                                i16 = 3;
+                                                i17 = 5;
                                             }
                                         }
-                                        i19 = eVar2.f42064k;
-                                        if (i19 == i16) {
-                                            C5139d c5139d13 = (C5139d) sparseArray.get(i19);
-                                            if (c5139d13 != null) {
-                                                int i56 = i17;
-                                                c5139d.v(i18, i56, ((ViewGroup.MarginLayoutParams) eVar2).bottomMargin, eVar2.f42084z, c5139d13);
-                                                i20 = i56;
+                                        i18 = eVar2.f42035k;
+                                        if (i18 == i15) {
+                                            C5130e c5130e13 = (C5130e) sparseArray.get(i18);
+                                            if (c5130e13 != null) {
+                                                int i55 = i16;
+                                                c5130e.v(i17, i55, ((ViewGroup.MarginLayoutParams) eVar2).bottomMargin, eVar2.f42055z, c5130e13);
+                                                i19 = i55;
                                             } else {
-                                                i20 = i17;
+                                                i19 = i16;
                                             }
                                         } else {
-                                            i20 = i17;
-                                            int i57 = eVar2.f42066l;
-                                            if (i57 != i16 && (c5139d5 = (C5139d) sparseArray.get(i57)) != null) {
-                                                c5139d.v(i18, i18, ((ViewGroup.MarginLayoutParams) eVar2).bottomMargin, eVar2.f42084z, c5139d5);
+                                            i19 = i16;
+                                            int i56 = eVar2.f42037l;
+                                            if (i56 != i15 && (c5130e5 = (C5130e) sparseArray.get(i56)) != null) {
+                                                c5130e.v(i17, i17, ((ViewGroup.MarginLayoutParams) eVar2).bottomMargin, eVar2.f42055z, c5130e5);
                                             }
                                         }
                                         eVar = eVar2;
-                                        i21 = eVar.f42068m;
-                                        if (i21 == -1) {
+                                        i20 = eVar.f42039m;
+                                        if (i20 == -1) {
                                             constraintLayout = this;
-                                            c5139d6 = c5139d;
-                                            constraintLayout.l(c5139d6, eVar, sparseArray, i21, 6);
+                                            c5130e6 = c5130e;
+                                            constraintLayout.l(c5130e6, eVar, sparseArray, i20, 6);
                                         } else {
-                                            int i58 = eVar.f42069n;
-                                            if (i58 != -1) {
+                                            int i57 = eVar.f42040n;
+                                            if (i57 != -1) {
                                                 constraintLayout = this;
-                                                c5139d6 = c5139d;
-                                                constraintLayout.l(c5139d6, eVar, sparseArray, i58, i20);
+                                                c5130e6 = c5130e;
+                                                constraintLayout.l(c5130e6, eVar, sparseArray, i57, i19);
                                             } else {
-                                                int i59 = eVar.f42071o;
+                                                int i58 = eVar.f42042o;
                                                 constraintLayout = this;
-                                                c5139d6 = c5139d;
-                                                int i60 = i18;
-                                                if (i59 != -1) {
-                                                    constraintLayout.l(c5139d6, eVar, sparseArray, i59, i60);
+                                                c5130e6 = c5130e;
+                                                int i59 = i17;
+                                                if (i58 != -1) {
+                                                    constraintLayout.l(c5130e6, eVar, sparseArray, i58, i59);
                                                 }
                                                 if (f11 >= 0.0f) {
-                                                    c5139d6.f41510d0 = f11;
+                                                    c5130e6.f41289d0 = f11;
                                                 }
-                                                f3 = eVar.f42026F;
-                                                if (f3 >= 0.0f) {
-                                                    c5139d6.f41512e0 = f3;
+                                                f2 = eVar.f41997F;
+                                                if (f2 >= 0.0f) {
+                                                    c5130e6.f41291e0 = f2;
                                                 }
                                             }
                                         }
                                         if (f11 >= 0.0f) {
                                         }
-                                        f3 = eVar.f42026F;
-                                        if (f3 >= 0.0f) {
+                                        f2 = eVar.f41997F;
+                                        if (f2 >= 0.0f) {
                                         }
                                     }
                                 }
-                                i11 = i10;
-                                i12 = 4;
-                                if (i50 == -1) {
+                                i10 = i9;
+                                i11 = 4;
+                                if (i49 == -1) {
                                 }
-                                i14 = i12;
-                                i15 = eVar2.i;
-                                if (i15 == -1) {
+                                i13 = i11;
+                                i14 = eVar2.i;
+                                if (i14 == -1) {
                                 }
-                                i19 = eVar2.f42064k;
-                                if (i19 == i16) {
+                                i18 = eVar2.f42035k;
+                                if (i18 == i15) {
                                 }
                                 eVar = eVar2;
-                                i21 = eVar.f42068m;
-                                if (i21 == -1) {
+                                i20 = eVar.f42039m;
+                                if (i20 == -1) {
                                 }
                                 if (f11 >= 0.0f) {
                                 }
-                                f3 = eVar.f42026F;
-                                if (f3 >= 0.0f) {
+                                f2 = eVar.f41997F;
+                                if (f2 >= 0.0f) {
                                 }
                             }
-                            if (isInEditMode && ((i27 = eVar.f42039T) != -1 || eVar.f42040U != -1)) {
-                                int i61 = eVar.f42040U;
-                                c5139d6.Y = i27;
-                                c5139d6.f41502Z = i61;
+                            if (isInEditMode && ((i26 = eVar.f42010T) != -1 || eVar.f42011U != -1)) {
+                                int i60 = eVar.f42011U;
+                                c5130e6.Y = i26;
+                                c5130e6.f41281Z = i60;
                             }
-                            if (eVar.f42046a0) {
-                                c5139d6.M(i35);
-                                c5139d6.O(((ViewGroup.MarginLayoutParams) eVar).width);
+                            if (eVar.f42017a0) {
+                                c5130e6.M(i34);
+                                c5130e6.O(((ViewGroup.MarginLayoutParams) eVar).width);
                                 if (((ViewGroup.MarginLayoutParams) eVar).width == -2) {
-                                    c5139d6.M(i42);
+                                    c5130e6.M(i41);
                                 }
                             } else if (((ViewGroup.MarginLayoutParams) eVar).width == -1) {
-                                if (eVar.f42042W) {
-                                    c5139d6.M(3);
+                                if (eVar.f42013W) {
+                                    c5130e6.M(3);
                                 } else {
-                                    c5139d6.M(4);
+                                    c5130e6.M(4);
                                 }
-                                c5139d6.i(i13).f41477g = ((ViewGroup.MarginLayoutParams) eVar).leftMargin;
-                                c5139d6.i(i14).f41477g = ((ViewGroup.MarginLayoutParams) eVar).rightMargin;
+                                c5130e6.i(i12).f41256g = ((ViewGroup.MarginLayoutParams) eVar).leftMargin;
+                                c5130e6.i(i13).f41256g = ((ViewGroup.MarginLayoutParams) eVar).rightMargin;
                             } else {
-                                c5139d6.M(3);
-                                c5139d6.O(0);
+                                c5130e6.M(3);
+                                c5130e6.O(0);
                             }
-                            if (eVar.f42048b0) {
-                                i23 = -1;
-                                c5139d6.N(1);
-                                c5139d6.L(((ViewGroup.MarginLayoutParams) eVar).height);
+                            if (eVar.f42019b0) {
+                                i22 = -1;
+                                c5130e6.N(1);
+                                c5130e6.L(((ViewGroup.MarginLayoutParams) eVar).height);
                                 if (((ViewGroup.MarginLayoutParams) eVar).height == -2) {
-                                    c5139d6.N(2);
+                                    c5130e6.N(2);
                                 }
                             } else {
-                                i23 = -1;
+                                i22 = -1;
                                 if (((ViewGroup.MarginLayoutParams) eVar).height == -1) {
-                                    if (eVar.f42043X) {
-                                        c5139d6.N(3);
+                                    if (eVar.f42014X) {
+                                        c5130e6.N(3);
                                     } else {
-                                        c5139d6.N(4);
+                                        c5130e6.N(4);
                                     }
-                                    c5139d6.i(3).f41477g = ((ViewGroup.MarginLayoutParams) eVar).topMargin;
-                                    c5139d6.i(5).f41477g = ((ViewGroup.MarginLayoutParams) eVar).bottomMargin;
+                                    c5130e6.i(3).f41256g = ((ViewGroup.MarginLayoutParams) eVar).topMargin;
+                                    c5130e6.i(5).f41256g = ((ViewGroup.MarginLayoutParams) eVar).bottomMargin;
                                 } else {
-                                    c5139d6.N(3);
-                                    c5139d6.L(0);
+                                    c5130e6.N(3);
+                                    c5130e6.L(0);
                                 }
                             }
-                            String str2 = eVar.f42027G;
+                            String str2 = eVar.f41998G;
                             if (str2 == null || str2.length() == 0) {
-                                c5139d6.f41500W = 0.0f;
+                                c5130e6.f41279W = 0.0f;
                             } else {
                                 int length = str2.length();
                                 int indexOf3 = str2.indexOf(44);
                                 if (indexOf3 <= 0 || indexOf3 >= length - 1) {
-                                    i25 = i23;
-                                    i26 = 0;
+                                    i24 = i22;
+                                    i25 = 0;
                                 } else {
                                     String substring = str2.substring(0, indexOf3);
-                                    i25 = substring.equalsIgnoreCase("W") ? 0 : substring.equalsIgnoreCase("H") ? 1 : i23;
-                                    i26 = indexOf3 + 1;
+                                    i24 = substring.equalsIgnoreCase("W") ? 0 : substring.equalsIgnoreCase("H") ? 1 : i22;
+                                    i25 = indexOf3 + 1;
                                 }
                                 int indexOf4 = str2.indexOf(58);
                                 if (indexOf4 < 0 || indexOf4 >= length - 1) {
-                                    String substring2 = str2.substring(i26);
+                                    String substring2 = str2.substring(i25);
                                     if (substring2.length() > 0) {
                                         parseFloat = Float.parseFloat(substring2);
                                     }
                                     parseFloat = 0.0f;
                                 } else {
-                                    String substring3 = str2.substring(i26, indexOf4);
+                                    String substring3 = str2.substring(i25, indexOf4);
                                     String substring4 = str2.substring(indexOf4 + 1);
                                     if (substring3.length() > 0 && substring4.length() > 0) {
                                         try {
                                             float parseFloat2 = Float.parseFloat(substring3);
                                             float parseFloat3 = Float.parseFloat(substring4);
                                             if (parseFloat2 > 0.0f && parseFloat3 > 0.0f) {
-                                                parseFloat = i25 == 1 ? Math.abs(parseFloat3 / parseFloat2) : Math.abs(parseFloat2 / parseFloat3);
+                                                parseFloat = i24 == 1 ? Math.abs(parseFloat3 / parseFloat2) : Math.abs(parseFloat2 / parseFloat3);
                                             }
                                         } catch (NumberFormatException unused3) {
                                         }
@@ -1946,85 +1946,85 @@ public class ConstraintLayout extends ViewGroup {
                                     parseFloat = 0.0f;
                                 }
                                 if (parseFloat > 0.0f) {
-                                    c5139d6.f41500W = parseFloat;
-                                    c5139d6.f41501X = i25;
+                                    c5130e6.f41279W = parseFloat;
+                                    c5130e6.f41280X = i24;
                                 }
                             }
-                            float f13 = eVar.f42028H;
-                            float[] fArr = c5139d6.f41523k0;
+                            float f13 = eVar.f41999H;
+                            float[] fArr = c5130e6.f41302k0;
                             fArr[0] = f13;
-                            i35 = 1;
-                            fArr[1] = eVar.f42029I;
-                            c5139d6.f41519i0 = eVar.J;
-                            c5139d6.f41521j0 = eVar.f42030K;
-                            int i62 = eVar.f42044Z;
-                            if (i62 >= 0 && i62 <= 3) {
-                                c5139d6.f41533q = i62;
+                            i34 = 1;
+                            fArr[1] = eVar.f42000I;
+                            c5130e6.f41298i0 = eVar.J;
+                            c5130e6.f41300j0 = eVar.f42001K;
+                            int i61 = eVar.f42015Z;
+                            if (i61 >= 0 && i61 <= 3) {
+                                c5130e6.f41312q = i61;
                             }
-                            int i63 = eVar.f42031L;
-                            int i64 = eVar.f42033N;
-                            int i65 = eVar.f42035P;
-                            float f14 = eVar.f42037R;
-                            c5139d6.f41534r = i63;
-                            c5139d6.f41537u = i64;
-                            if (i65 == Integer.MAX_VALUE) {
-                                i65 = 0;
+                            int i62 = eVar.f42002L;
+                            int i63 = eVar.f42004N;
+                            int i64 = eVar.f42006P;
+                            float f14 = eVar.f42008R;
+                            c5130e6.f41313r = i62;
+                            c5130e6.f41316u = i63;
+                            if (i64 == Integer.MAX_VALUE) {
+                                i64 = 0;
                             }
-                            c5139d6.f41538v = i65;
-                            c5139d6.f41539w = f14;
-                            if (f14 > 0.0f && f14 < 1.0f && i63 == 0) {
-                                c5139d6.f41534r = 2;
+                            c5130e6.f41317v = i64;
+                            c5130e6.f41318w = f14;
+                            if (f14 > 0.0f && f14 < 1.0f && i62 == 0) {
+                                c5130e6.f41313r = 2;
                             }
-                            int i66 = eVar.f42032M;
-                            int i67 = eVar.f42034O;
-                            int i68 = eVar.f42036Q;
-                            float f15 = eVar.f42038S;
-                            c5139d6.f41535s = i66;
-                            c5139d6.f41540x = i67;
-                            if (i68 == Integer.MAX_VALUE) {
-                                i68 = 0;
+                            int i65 = eVar.f42003M;
+                            int i66 = eVar.f42005O;
+                            int i67 = eVar.f42007Q;
+                            float f15 = eVar.f42009S;
+                            c5130e6.f41314s = i65;
+                            c5130e6.f41319x = i66;
+                            if (i67 == Integer.MAX_VALUE) {
+                                i67 = 0;
                             }
-                            c5139d6.f41541y = i68;
-                            c5139d6.f41542z = f15;
-                            if (f15 <= 0.0f || f15 >= 1.0f || i66 != 0) {
-                                i24 = 2;
+                            c5130e6.f41320y = i67;
+                            c5130e6.f41321z = f15;
+                            if (f15 <= 0.0f || f15 >= 1.0f || i65 != 0) {
+                                i23 = 2;
                             } else {
-                                i24 = 2;
-                                c5139d6.f41535s = 2;
+                                i23 = 2;
+                                c5130e6.f41314s = 2;
                             }
                         }
-                        i45 = i9 + 1;
-                        i42 = i24;
-                        z3 = z6;
+                        i44 = i6 + 1;
+                        i41 = i23;
+                        z6 = z9;
                     }
-                    i9 = i45;
-                    z6 = z3;
-                    i24 = i42;
-                    i45 = i9 + 1;
-                    i42 = i24;
-                    z3 = z6;
+                    i6 = i44;
+                    z9 = z6;
+                    i23 = i41;
+                    i44 = i6 + 1;
+                    i41 = i23;
+                    z6 = z9;
                 }
             }
-            if (z3) {
-                c5140e.f41555r0.w(c5140e);
+            if (z6) {
+                fVar.f41334r0.w(fVar);
             }
         }
-        c5140e.f41560w0.getClass();
-        constraintLayout.k(c5140e, constraintLayout.f4645B, i, i6);
-        int q8 = c5140e.q();
-        int k9 = c5140e.k();
-        boolean z11 = c5140e.f41546E0;
-        boolean z12 = c5140e.f41547F0;
-        f fVar = constraintLayout.f4651H;
-        int i69 = fVar.f42089e;
-        int resolveSizeAndState = View.resolveSizeAndState(q8 + fVar.f42088d, i, 0);
-        int resolveSizeAndState2 = View.resolveSizeAndState(k9 + i69, i6, 0) & 16777215;
-        int min = Math.min(constraintLayout.f4657y, resolveSizeAndState & 16777215);
-        int min2 = Math.min(constraintLayout.f4658z, resolveSizeAndState2);
-        if (z11) {
+        fVar.f41339w0.getClass();
+        constraintLayout.k(fVar, constraintLayout.f4613B, i, i4);
+        int q8 = fVar.q();
+        int k9 = fVar.k();
+        boolean z12 = fVar.f41325E0;
+        boolean z13 = fVar.f41326F0;
+        f fVar2 = constraintLayout.f4619H;
+        int i68 = fVar2.f42060e;
+        int resolveSizeAndState = View.resolveSizeAndState(q8 + fVar2.f42059d, i, 0);
+        int resolveSizeAndState2 = View.resolveSizeAndState(k9 + i68, i4, 0) & 16777215;
+        int min = Math.min(constraintLayout.f4625y, resolveSizeAndState & 16777215);
+        int min2 = Math.min(constraintLayout.f4626z, resolveSizeAndState2);
+        if (z12) {
             min |= b.bc;
         }
-        if (z12) {
+        if (z13) {
             min2 |= b.bc;
         }
         constraintLayout.setMeasuredDimension(min, min2);
@@ -2033,101 +2033,101 @@ public class ConstraintLayout extends ViewGroup {
     @Override // android.view.ViewGroup
     public final void onViewAdded(View view) {
         super.onViewAdded(view);
-        C5139d h9 = h(view);
-        if ((view instanceof p) && !(h9 instanceof w.h)) {
+        C5130e h3 = h(view);
+        if ((view instanceof p) && !(h3 instanceof w.i)) {
             e eVar = (e) view.getLayoutParams();
-            w.h hVar = new w.h();
-            eVar.f42074p0 = hVar;
-            eVar.f42052d0 = true;
-            hVar.S(eVar.f42041V);
+            w.i iVar = new w.i();
+            eVar.f42045p0 = iVar;
+            eVar.f42023d0 = true;
+            iVar.S(eVar.f42012V);
         }
         if (view instanceof c) {
             c cVar = (c) view;
             cVar.i();
-            ((e) view.getLayoutParams()).f42054e0 = true;
-            ArrayList arrayList = this.f4653u;
+            ((e) view.getLayoutParams()).f42025e0 = true;
+            ArrayList arrayList = this.f4621u;
             if (!arrayList.contains(cVar)) {
                 arrayList.add(cVar);
             }
         }
-        this.f4652n.put(view.getId(), view);
-        this.f4644A = true;
+        this.f4620n.put(view.getId(), view);
+        this.f4612A = true;
     }
 
     @Override // android.view.ViewGroup
     public void onViewRemoved(View view) {
         super.onViewRemoved(view);
-        this.f4652n.remove(view.getId());
-        C5139d h9 = h(view);
-        this.f4654v.f41554q0.remove(h9);
-        h9.C();
-        this.f4653u.remove(view);
-        this.f4644A = true;
+        this.f4620n.remove(view.getId());
+        C5130e h3 = h(view);
+        this.f4622v.f41333q0.remove(h3);
+        h3.C();
+        this.f4621u.remove(view);
+        this.f4612A = true;
     }
 
     @Override // android.view.View, android.view.ViewParent
     public final void requestLayout() {
-        this.f4644A = true;
+        this.f4612A = true;
         super.requestLayout();
     }
 
     public void setConstraintSet(n nVar) {
-        this.f4646C = nVar;
+        this.f4614C = nVar;
     }
 
     @Override // android.view.View
     public void setId(int i) {
         int id = getId();
-        SparseArray sparseArray = this.f4652n;
+        SparseArray sparseArray = this.f4620n;
         sparseArray.remove(id);
         super.setId(i);
         sparseArray.put(getId(), this);
     }
 
     public void setMaxHeight(int i) {
-        if (i == this.f4658z) {
+        if (i == this.f4626z) {
             return;
         }
-        this.f4658z = i;
+        this.f4626z = i;
         requestLayout();
     }
 
     public void setMaxWidth(int i) {
-        if (i == this.f4657y) {
+        if (i == this.f4625y) {
             return;
         }
-        this.f4657y = i;
+        this.f4625y = i;
         requestLayout();
     }
 
     public void setMinHeight(int i) {
-        if (i == this.f4656x) {
+        if (i == this.f4624x) {
             return;
         }
-        this.f4656x = i;
+        this.f4624x = i;
         requestLayout();
     }
 
     public void setMinWidth(int i) {
-        if (i == this.f4655w) {
+        if (i == this.f4623w) {
             return;
         }
-        this.f4655w = i;
+        this.f4623w = i;
         requestLayout();
     }
 
     public void setOnConstraintsChanged(o oVar) {
-        C5019n c5019n = this.f4647D;
-        if (c5019n != null) {
-            c5019n.getClass();
+        C4797a c4797a = this.f4615D;
+        if (c4797a != null) {
+            c4797a.getClass();
         }
     }
 
     public void setOptimizationLevel(int i) {
-        this.f4645B = i;
-        C5140e c5140e = this.f4654v;
-        c5140e.f41545D0 = i;
-        C5047c.f40955q = c5140e.W(512);
+        this.f4613B = i;
+        w.f fVar = this.f4622v;
+        fVar.f41324D0 = i;
+        C5048c.f40917q = fVar.W(512);
     }
 
     @Override // android.view.ViewGroup
@@ -2137,92 +2137,92 @@ public class ConstraintLayout extends ViewGroup {
 
     public ConstraintLayout(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f4652n = new SparseArray();
-        this.f4653u = new ArrayList(4);
-        this.f4654v = new C5140e();
-        this.f4655w = 0;
-        this.f4656x = 0;
-        this.f4657y = Integer.MAX_VALUE;
-        this.f4658z = Integer.MAX_VALUE;
-        this.f4644A = true;
-        this.f4645B = 257;
-        this.f4646C = null;
-        this.f4647D = null;
-        this.f4648E = -1;
-        this.f4649F = new HashMap();
-        this.f4650G = new SparseArray();
-        this.f4651H = new f(this, this);
+        this.f4620n = new SparseArray();
+        this.f4621u = new ArrayList(4);
+        this.f4622v = new w.f();
+        this.f4623w = 0;
+        this.f4624x = 0;
+        this.f4625y = Integer.MAX_VALUE;
+        this.f4626z = Integer.MAX_VALUE;
+        this.f4612A = true;
+        this.f4613B = 257;
+        this.f4614C = null;
+        this.f4615D = null;
+        this.f4616E = -1;
+        this.f4617F = new HashMap();
+        this.f4618G = new SparseArray();
+        this.f4619H = new f(this, this);
         i(attributeSet, i);
     }
 
     @Override // android.view.ViewGroup
     public final ViewGroup.LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
         e eVar = new e(layoutParams);
-        eVar.f42045a = -1;
-        eVar.f42047b = -1;
-        eVar.f42049c = -1.0f;
-        eVar.f42051d = true;
-        eVar.f42053e = -1;
-        eVar.f42055f = -1;
-        eVar.f42057g = -1;
-        eVar.f42059h = -1;
+        eVar.f42016a = -1;
+        eVar.f42018b = -1;
+        eVar.f42020c = -1.0f;
+        eVar.f42022d = true;
+        eVar.f42024e = -1;
+        eVar.f42026f = -1;
+        eVar.f42028g = -1;
+        eVar.f42030h = -1;
         eVar.i = -1;
-        eVar.f42062j = -1;
-        eVar.f42064k = -1;
-        eVar.f42066l = -1;
-        eVar.f42068m = -1;
-        eVar.f42069n = -1;
-        eVar.f42071o = -1;
-        eVar.f42073p = -1;
-        eVar.f42075q = 0;
-        eVar.f42076r = 0.0f;
-        eVar.f42077s = -1;
-        eVar.f42078t = -1;
-        eVar.f42079u = -1;
-        eVar.f42080v = -1;
-        eVar.f42081w = Integer.MIN_VALUE;
-        eVar.f42082x = Integer.MIN_VALUE;
-        eVar.f42083y = Integer.MIN_VALUE;
-        eVar.f42084z = Integer.MIN_VALUE;
-        eVar.f42021A = Integer.MIN_VALUE;
-        eVar.f42022B = Integer.MIN_VALUE;
-        eVar.f42023C = Integer.MIN_VALUE;
-        eVar.f42024D = 0;
-        eVar.f42025E = 0.5f;
-        eVar.f42026F = 0.5f;
-        eVar.f42027G = null;
-        eVar.f42028H = -1.0f;
-        eVar.f42029I = -1.0f;
+        eVar.f42033j = -1;
+        eVar.f42035k = -1;
+        eVar.f42037l = -1;
+        eVar.f42039m = -1;
+        eVar.f42040n = -1;
+        eVar.f42042o = -1;
+        eVar.f42044p = -1;
+        eVar.f42046q = 0;
+        eVar.f42047r = 0.0f;
+        eVar.f42048s = -1;
+        eVar.f42049t = -1;
+        eVar.f42050u = -1;
+        eVar.f42051v = -1;
+        eVar.f42052w = Integer.MIN_VALUE;
+        eVar.f42053x = Integer.MIN_VALUE;
+        eVar.f42054y = Integer.MIN_VALUE;
+        eVar.f42055z = Integer.MIN_VALUE;
+        eVar.f41992A = Integer.MIN_VALUE;
+        eVar.f41993B = Integer.MIN_VALUE;
+        eVar.f41994C = Integer.MIN_VALUE;
+        eVar.f41995D = 0;
+        eVar.f41996E = 0.5f;
+        eVar.f41997F = 0.5f;
+        eVar.f41998G = null;
+        eVar.f41999H = -1.0f;
+        eVar.f42000I = -1.0f;
         eVar.J = 0;
-        eVar.f42030K = 0;
-        eVar.f42031L = 0;
-        eVar.f42032M = 0;
-        eVar.f42033N = 0;
-        eVar.f42034O = 0;
-        eVar.f42035P = 0;
-        eVar.f42036Q = 0;
-        eVar.f42037R = 1.0f;
-        eVar.f42038S = 1.0f;
-        eVar.f42039T = -1;
-        eVar.f42040U = -1;
-        eVar.f42041V = -1;
-        eVar.f42042W = false;
-        eVar.f42043X = false;
+        eVar.f42001K = 0;
+        eVar.f42002L = 0;
+        eVar.f42003M = 0;
+        eVar.f42004N = 0;
+        eVar.f42005O = 0;
+        eVar.f42006P = 0;
+        eVar.f42007Q = 0;
+        eVar.f42008R = 1.0f;
+        eVar.f42009S = 1.0f;
+        eVar.f42010T = -1;
+        eVar.f42011U = -1;
+        eVar.f42012V = -1;
+        eVar.f42013W = false;
+        eVar.f42014X = false;
         eVar.Y = null;
-        eVar.f42044Z = 0;
-        eVar.f42046a0 = true;
-        eVar.f42048b0 = true;
-        eVar.f42050c0 = false;
-        eVar.f42052d0 = false;
-        eVar.f42054e0 = false;
-        eVar.f42056f0 = -1;
-        eVar.f42058g0 = -1;
-        eVar.f42060h0 = -1;
-        eVar.f42061i0 = -1;
-        eVar.f42063j0 = Integer.MIN_VALUE;
-        eVar.f42065k0 = Integer.MIN_VALUE;
-        eVar.f42067l0 = 0.5f;
-        eVar.f42074p0 = new C5139d();
+        eVar.f42015Z = 0;
+        eVar.f42017a0 = true;
+        eVar.f42019b0 = true;
+        eVar.f42021c0 = false;
+        eVar.f42023d0 = false;
+        eVar.f42025e0 = false;
+        eVar.f42027f0 = -1;
+        eVar.f42029g0 = -1;
+        eVar.f42031h0 = -1;
+        eVar.f42032i0 = -1;
+        eVar.f42034j0 = Integer.MIN_VALUE;
+        eVar.f42036k0 = Integer.MIN_VALUE;
+        eVar.f42038l0 = 0.5f;
+        eVar.f42045p0 = new C5130e();
         if (layoutParams instanceof ViewGroup.MarginLayoutParams) {
             ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
             ((ViewGroup.MarginLayoutParams) eVar).leftMargin = marginLayoutParams.leftMargin;
@@ -2236,70 +2236,70 @@ public class ConstraintLayout extends ViewGroup {
             return eVar;
         }
         e eVar2 = (e) layoutParams;
-        eVar.f42045a = eVar2.f42045a;
-        eVar.f42047b = eVar2.f42047b;
-        eVar.f42049c = eVar2.f42049c;
-        eVar.f42051d = eVar2.f42051d;
-        eVar.f42053e = eVar2.f42053e;
-        eVar.f42055f = eVar2.f42055f;
-        eVar.f42057g = eVar2.f42057g;
-        eVar.f42059h = eVar2.f42059h;
+        eVar.f42016a = eVar2.f42016a;
+        eVar.f42018b = eVar2.f42018b;
+        eVar.f42020c = eVar2.f42020c;
+        eVar.f42022d = eVar2.f42022d;
+        eVar.f42024e = eVar2.f42024e;
+        eVar.f42026f = eVar2.f42026f;
+        eVar.f42028g = eVar2.f42028g;
+        eVar.f42030h = eVar2.f42030h;
         eVar.i = eVar2.i;
-        eVar.f42062j = eVar2.f42062j;
-        eVar.f42064k = eVar2.f42064k;
-        eVar.f42066l = eVar2.f42066l;
-        eVar.f42068m = eVar2.f42068m;
-        eVar.f42069n = eVar2.f42069n;
-        eVar.f42071o = eVar2.f42071o;
-        eVar.f42073p = eVar2.f42073p;
-        eVar.f42075q = eVar2.f42075q;
-        eVar.f42076r = eVar2.f42076r;
-        eVar.f42077s = eVar2.f42077s;
-        eVar.f42078t = eVar2.f42078t;
-        eVar.f42079u = eVar2.f42079u;
-        eVar.f42080v = eVar2.f42080v;
-        eVar.f42081w = eVar2.f42081w;
-        eVar.f42082x = eVar2.f42082x;
-        eVar.f42083y = eVar2.f42083y;
-        eVar.f42084z = eVar2.f42084z;
-        eVar.f42021A = eVar2.f42021A;
-        eVar.f42022B = eVar2.f42022B;
-        eVar.f42023C = eVar2.f42023C;
-        eVar.f42024D = eVar2.f42024D;
-        eVar.f42025E = eVar2.f42025E;
-        eVar.f42026F = eVar2.f42026F;
-        eVar.f42027G = eVar2.f42027G;
-        eVar.f42028H = eVar2.f42028H;
-        eVar.f42029I = eVar2.f42029I;
+        eVar.f42033j = eVar2.f42033j;
+        eVar.f42035k = eVar2.f42035k;
+        eVar.f42037l = eVar2.f42037l;
+        eVar.f42039m = eVar2.f42039m;
+        eVar.f42040n = eVar2.f42040n;
+        eVar.f42042o = eVar2.f42042o;
+        eVar.f42044p = eVar2.f42044p;
+        eVar.f42046q = eVar2.f42046q;
+        eVar.f42047r = eVar2.f42047r;
+        eVar.f42048s = eVar2.f42048s;
+        eVar.f42049t = eVar2.f42049t;
+        eVar.f42050u = eVar2.f42050u;
+        eVar.f42051v = eVar2.f42051v;
+        eVar.f42052w = eVar2.f42052w;
+        eVar.f42053x = eVar2.f42053x;
+        eVar.f42054y = eVar2.f42054y;
+        eVar.f42055z = eVar2.f42055z;
+        eVar.f41992A = eVar2.f41992A;
+        eVar.f41993B = eVar2.f41993B;
+        eVar.f41994C = eVar2.f41994C;
+        eVar.f41995D = eVar2.f41995D;
+        eVar.f41996E = eVar2.f41996E;
+        eVar.f41997F = eVar2.f41997F;
+        eVar.f41998G = eVar2.f41998G;
+        eVar.f41999H = eVar2.f41999H;
+        eVar.f42000I = eVar2.f42000I;
         eVar.J = eVar2.J;
-        eVar.f42030K = eVar2.f42030K;
-        eVar.f42042W = eVar2.f42042W;
-        eVar.f42043X = eVar2.f42043X;
-        eVar.f42031L = eVar2.f42031L;
-        eVar.f42032M = eVar2.f42032M;
-        eVar.f42033N = eVar2.f42033N;
-        eVar.f42035P = eVar2.f42035P;
-        eVar.f42034O = eVar2.f42034O;
-        eVar.f42036Q = eVar2.f42036Q;
-        eVar.f42037R = eVar2.f42037R;
-        eVar.f42038S = eVar2.f42038S;
-        eVar.f42039T = eVar2.f42039T;
-        eVar.f42040U = eVar2.f42040U;
-        eVar.f42041V = eVar2.f42041V;
-        eVar.f42046a0 = eVar2.f42046a0;
-        eVar.f42048b0 = eVar2.f42048b0;
-        eVar.f42050c0 = eVar2.f42050c0;
-        eVar.f42052d0 = eVar2.f42052d0;
-        eVar.f42056f0 = eVar2.f42056f0;
-        eVar.f42058g0 = eVar2.f42058g0;
-        eVar.f42060h0 = eVar2.f42060h0;
-        eVar.f42061i0 = eVar2.f42061i0;
-        eVar.f42063j0 = eVar2.f42063j0;
-        eVar.f42065k0 = eVar2.f42065k0;
-        eVar.f42067l0 = eVar2.f42067l0;
+        eVar.f42001K = eVar2.f42001K;
+        eVar.f42013W = eVar2.f42013W;
+        eVar.f42014X = eVar2.f42014X;
+        eVar.f42002L = eVar2.f42002L;
+        eVar.f42003M = eVar2.f42003M;
+        eVar.f42004N = eVar2.f42004N;
+        eVar.f42006P = eVar2.f42006P;
+        eVar.f42005O = eVar2.f42005O;
+        eVar.f42007Q = eVar2.f42007Q;
+        eVar.f42008R = eVar2.f42008R;
+        eVar.f42009S = eVar2.f42009S;
+        eVar.f42010T = eVar2.f42010T;
+        eVar.f42011U = eVar2.f42011U;
+        eVar.f42012V = eVar2.f42012V;
+        eVar.f42017a0 = eVar2.f42017a0;
+        eVar.f42019b0 = eVar2.f42019b0;
+        eVar.f42021c0 = eVar2.f42021c0;
+        eVar.f42023d0 = eVar2.f42023d0;
+        eVar.f42027f0 = eVar2.f42027f0;
+        eVar.f42029g0 = eVar2.f42029g0;
+        eVar.f42031h0 = eVar2.f42031h0;
+        eVar.f42032i0 = eVar2.f42032i0;
+        eVar.f42034j0 = eVar2.f42034j0;
+        eVar.f42036k0 = eVar2.f42036k0;
+        eVar.f42038l0 = eVar2.f42038l0;
         eVar.Y = eVar2.Y;
-        eVar.f42044Z = eVar2.f42044Z;
-        eVar.f42074p0 = eVar2.f42074p0;
+        eVar.f42015Z = eVar2.f42015Z;
+        eVar.f42045p0 = eVar2.f42045p0;
         return eVar;
     }
 }

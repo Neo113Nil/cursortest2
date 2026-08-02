@@ -29,10 +29,10 @@ public final class C1R extends C8T {
     public final K7 A03;
     public final boolean A04;
 
-    public static String A07(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 4);
+    public static String A07(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 4);
         }
         return new String(copyOfRange);
     }
@@ -44,26 +44,26 @@ public final class C1R extends C8T {
     /* JADX WARN: Failed to parse debug info
     java.lang.ArrayIndexOutOfBoundsException
      */
-    private void A0D(String str, K7 k72, List<List<C2350pT>> list, List<Long> list2) {
+    private void A0D(String str, K7 k72, List<List<C2370pT>> list, List<Long> list2) {
         String A072 = A07(34, 9, 116);
-        AbstractC06243y.A07(str.startsWith(A072));
+        AbstractC06443y.A07(str.startsWith(A072));
         String[] split = str.substring(A072.length()).split(A07(32, 1, 99), k72.A01);
         int length = split.length;
         int i = k72.A01;
         String A073 = A07(223, 10, 50);
         if (length != i) {
-            AbstractC06324g.A07(A073, A07(143, 55, 98) + str);
+            AbstractC06524g.A07(A073, A07(143, 55, 98) + str);
             return;
         }
         long A04 = A04(split[k72.A02]);
         String A074 = A07(198, 25, 21);
-        if (A04 == b.f6382b) {
-            AbstractC06324g.A07(A073, A074 + str);
+        if (A04 == b.f7168b) {
+            AbstractC06524g.A07(A073, A074 + str);
             return;
         }
         long A042 = A04(split[k72.A00]);
-        if (A042 == b.f6382b) {
-            AbstractC06324g.A07(A073, A074 + str);
+        if (A042 == b.f7168b) {
+            AbstractC06524g.A07(A073, A074 + str);
             return;
         }
         KC kc = (this.A02 == null || k72.A03 == -1) ? null : this.A02.get(split[k72.A03].trim());
@@ -72,7 +72,7 @@ public final class C1R extends C8T {
         String A043 = K9.A04(str2);
         String A075 = A07(331, 2, 4);
         String A076 = A07(0, 1, 91);
-        C2350pT A062 = A06(A043.replace(A075, A076).replace(A07(335, 2, 52), A076).replace(A07(333, 2, 93), A07(353, 2, a.f21727Q)), kc, A02, this.A01, this.A00);
+        C2370pT A062 = A06(A043.replace(A075, A076).replace(A07(335, 2, 52), A076).replace(A07(333, 2, 93), A07(353, 2, a.f22514Q)), kc, A02, this.A01, this.A00);
         int A03 = A03(A042, list2, list);
         for (int A032 = A03(A04, list2, list); A032 < A03; A032++) {
             list.get(A032).add(A062);
@@ -96,9 +96,9 @@ public final class C1R extends C8T {
             this.A04 = true;
             String A0q = C5C.A0q(list.get(0));
             String formatLine = A07(43, 7, 9);
-            AbstractC06243y.A07(A0q.startsWith(formatLine));
-            this.A03 = (K7) AbstractC06243y.A01(K7.A00(A0q));
-            A0A(new C06474v(list.get(1)));
+            AbstractC06443y.A07(A0q.startsWith(formatLine));
+            this.A03 = (K7) AbstractC06443y.A01(K7.A00(A0q));
+            A0A(new C06674v(list.get(1)));
             return;
         }
         this.A04 = false;
@@ -124,7 +124,7 @@ public final class C1R extends C8T {
                 return Integer.MIN_VALUE;
             case 0:
             default:
-                AbstractC06324g.A07(A07(223, 10, 50), A07(239, 19, 124) + i);
+                AbstractC06524g.A07(A07(223, 10, 50), A07(239, 19, 124) + i);
                 return Integer.MIN_VALUE;
             case 1:
             case 2:
@@ -151,7 +151,7 @@ public final class C1R extends C8T {
                 return Integer.MIN_VALUE;
             case 0:
             default:
-                AbstractC06324g.A07(A07(223, 10, 50), A07(239, 19, 124) + i);
+                AbstractC06524g.A07(A07(223, 10, 50), A07(239, 19, 124) + i);
                 return Integer.MIN_VALUE;
             case 1:
             case 4:
@@ -202,35 +202,35 @@ public final class C1R extends C8T {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static int A03(long j6, List<Long> list, List<List<C2350pT>> list2) {
+    public static int A03(long j6, List<Long> list, List<List<C2370pT>> list2) {
         int i = 0;
         int insertionIndex = list.size();
-        int i6 = insertionIndex - 1;
+        int i4 = insertionIndex - 1;
         while (true) {
-            if (i6 < 0) {
+            if (i4 < 0) {
                 break;
             }
-            long longValue = list.get(i6).longValue();
-            int i9 = A06[7].charAt(28);
-            if (i9 == 116) {
+            long longValue = list.get(i4).longValue();
+            int i6 = A06[7].charAt(28);
+            if (i6 == 116) {
                 throw new RuntimeException();
             }
             A06[7] = "L6yhcoI2CoUL0EEbj8PtMmDYbUY1DBiP";
             if (longValue == j6) {
-                return i6;
+                return i4;
             }
-            if (list.get(i6).longValue() < j6) {
-                i = i6 + 1;
+            if (list.get(i4).longValue() < j6) {
+                i = i4 + 1;
                 break;
             }
-            i6--;
+            i4--;
         }
     }
 
     public static long A04(String str) {
         Matcher matcher = A07.matcher(str.trim());
         if (!matcher.matches()) {
-            return b.f6382b;
+            return b.f7168b;
         }
         return (Long.parseLong((String) C5C.A0f(matcher.group(1))) * 60 * 60 * 1000000) + (Long.parseLong((String) C5C.A0f(matcher.group(2))) * 60 * 1000000) + (Long.parseLong((String) C5C.A0f(matcher.group(3))) * 1000000) + (Long.parseLong((String) C5C.A0f(matcher.group(4))) * 10000);
     }
@@ -241,7 +241,7 @@ public final class C1R extends C8T {
                 return null;
             case 0:
             default:
-                AbstractC06324g.A07(A07(223, 10, 50), A07(239, 19, 124) + i);
+                AbstractC06524g.A07(A07(223, 10, 50), A07(239, 19, 124) + i);
                 return null;
             case 1:
             case 4:
@@ -258,10 +258,10 @@ public final class C1R extends C8T {
         }
     }
 
-    public static C2350pT A06(String str, KC kc, K9 k9, float f3, float f9) {
+    public static C2370pT A06(String str, KC kc, K9 k9, float f2, float f9) {
         int i;
         SpannableString spannableString = new SpannableString(str);
-        C06143o A0G = new C06143o().A0G(spannableString);
+        C06343o A0G = new C06343o().A0G(spannableString);
         if (kc != null) {
             if (kc.A04 != null) {
                 spannableString.setSpan(new ForegroundColorSpan(kc.A04.intValue()), 0, spannableString.length(), 33);
@@ -294,22 +294,22 @@ public final class C1R extends C8T {
                 spannableString.setSpan(new StrikethroughSpan(), 0, spannableString.length(), 33);
             }
         }
-        int i6 = k9.A00;
+        int i4 = k9.A00;
         if (A06[6].length() == 19) {
             throw new RuntimeException();
         }
         A06[7] = "i2mc5u7bs2HiiqvdNfcyeR2hNUTbHa8c";
-        if (i6 != -1) {
+        if (i4 != -1) {
             i = k9.A00;
         } else if (kc != null) {
             i = kc.A01;
         } else {
             i = -1;
         }
-        C06143o cue = A0G.A0F(A05(i));
+        C06343o cue = A0G.A0F(A05(i));
         cue.A0A(A02(i)).A09(A01(i));
-        if (k9.A01 != null && f9 != -3.4028235E38f && f3 != -3.4028235E38f) {
-            A0G.A04(k9.A01.x / f3);
+        if (k9.A01 != null && f9 != -3.4028235E38f && f2 != -3.4028235E38f) {
+            A0G.A04(k9.A01.x / f2);
             A0G.A07(k9.A01.y / f9, 0);
         } else {
             A0G.A04(A00(A0G.A01()));
@@ -318,12 +318,12 @@ public final class C1R extends C8T {
         return A0G.A0H();
     }
 
-    public static Map<String, KC> A08(C06474v c06474v) {
+    public static Map<String, KC> A08(C06674v c06674v) {
         LinkedHashMap linkedHashMap = new LinkedHashMap();
         K8 k82 = null;
         while (true) {
-            String A0T = c06474v.A0T();
-            if (A0T == null || (c06474v.A07() != 0 && c06474v.A0B() == 91)) {
+            String A0T = c06674v.A0T();
+            if (A0T == null || (c06674v.A07() != 0 && c06674v.A0B() == 91)) {
                 break;
             }
             if (A0T.startsWith(A07(43, 7, 9))) {
@@ -331,7 +331,7 @@ public final class C1R extends C8T {
             } else if (A0T.startsWith(A07(233, 6, 115))) {
                 if (k82 == null) {
                     String currentLine = A07(50, 46, 50) + A0T;
-                    AbstractC06324g.A07(A07(223, 10, 50), currentLine);
+                    AbstractC06524g.A07(A07(223, 10, 50), currentLine);
                 } else {
                     KC A04 = KC.A04(A0T, k82);
                     if (A04 != null) {
@@ -343,16 +343,16 @@ public final class C1R extends C8T {
         return linkedHashMap;
     }
 
-    private void A0A(C06474v c06474v) {
+    private void A0A(C06674v c06674v) {
         while (true) {
-            String A0T = c06474v.A0T();
+            String A0T = c06674v.A0T();
             if (A0T != null) {
                 if (A07(266, 13, 1).equalsIgnoreCase(A0T)) {
-                    A0B(c06474v);
+                    A0B(c06674v);
                 } else if (A07(319, 12, 20).equalsIgnoreCase(A0T)) {
-                    this.A02 = A08(c06474v);
+                    this.A02 = A08(c06674v);
                 } else if (A07(com.anythink.expressad.foundation.g.a.aX, 11, 82).equalsIgnoreCase(A0T)) {
-                    AbstractC06324g.A06(A07(223, 10, 50), A07(290, 29, 35));
+                    AbstractC06524g.A06(A07(223, 10, 50), A07(290, 29, 35));
                 } else if (A07(258, 8, 119).equalsIgnoreCase(A0T)) {
                     return;
                 }
@@ -382,15 +382,15 @@ public final class C1R extends C8T {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private void A0B(C06474v c06474v) {
+    private void A0B(C06674v c06674v) {
         while (true) {
-            String A0T = c06474v.A0T();
+            String A0T = c06674v.A0T();
             if (A0T != null) {
-                if (c06474v.A07() == 0 || c06474v.A0B() != 91) {
+                if (c06674v.A07() == 0 || c06674v.A0B() != 91) {
                     String[] split = A0T.split(A07(33, 1, 29));
                     if (split.length == 2) {
                         char c9 = 0;
-                        String A01 = AbstractC2035k7.A01(split[0].trim());
+                        String A01 = AbstractC2055k7.A01(split[0].trim());
                         String currentLine = A06[7];
                         if (currentLine.charAt(28) != 't') {
                             String[] strArr = A06;
@@ -439,16 +439,16 @@ public final class C1R extends C8T {
         }
     }
 
-    private void A0C(C06474v c06474v, List<List<C2350pT>> list, List<Long> list2) {
+    private void A0C(C06674v c06674v, List<List<C2370pT>> list, List<Long> list2) {
         K7 k72 = this.A04 ? this.A03 : null;
         while (true) {
-            String A0T = c06474v.A0T();
+            String A0T = c06674v.A0T();
             if (A0T != null) {
                 if (A0T.startsWith(A07(43, 7, 9))) {
                     k72 = K7.A00(A0T);
                 } else if (A0T.startsWith(A07(34, 9, 116))) {
                     if (k72 == null) {
-                        AbstractC06324g.A07(A07(223, 10, 50), A07(96, 47, 114) + A0T);
+                        AbstractC06524g.A07(A07(223, 10, 50), A07(96, 47, 114) + A0T);
                     } else {
                         A0D(A0T, k72, list, list2);
                     }
@@ -460,14 +460,14 @@ public final class C1R extends C8T {
     }
 
     @Override // com.instagram.common.viewpoint.core.C8T
-    public final InterfaceC1004Jj A0g(byte[] bArr, int i, boolean z3) {
+    public final InterfaceC1024Jj A0g(byte[] bArr, int i, boolean z6) {
         ArrayList arrayList = new ArrayList();
         ArrayList arrayList2 = new ArrayList();
-        C06474v c06474v = new C06474v(bArr, i);
+        C06674v c06674v = new C06674v(bArr, i);
         if (!this.A04) {
-            A0A(c06474v);
+            A0A(c06674v);
         }
-        A0C(c06474v, arrayList, arrayList2);
-        return new C2127le(arrayList, arrayList2);
+        A0C(c06674v, arrayList, arrayList2);
+        return new C2147le(arrayList, arrayList2);
     }
 }

@@ -15,7 +15,7 @@ public class FacebookATNativeAd extends FacebookATBaseNativeAd<NativeAd> {
 
     @Override // com.anythink.network.facebook.FacebookATBaseNativeAd, com.facebook.ads.AdListener
     public void onAdLoaded(Ad ad) {
-        T t6 = this.f23062a;
+        T t6 = this.f23849a;
         if (t6 != 0 && (t6 instanceof NativeAd)) {
             NativeAd nativeAd = (NativeAd) t6;
             if (nativeAd.getAdCreativeType() == NativeAd.AdCreativeType.VIDEO) {

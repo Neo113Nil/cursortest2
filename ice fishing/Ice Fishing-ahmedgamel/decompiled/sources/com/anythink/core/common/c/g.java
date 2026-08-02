@@ -15,17 +15,17 @@ public final class g extends e {
     @Override // com.anythink.core.common.c.f
     public final c a() {
         String c9;
-        boolean z3;
-        if (System.currentTimeMillis() - this.f12294h > 86400000) {
-            c9 = m.a(this.f12292f, this.f12291e);
-            af.b(this.f12292f, u.b.f12847a, "det" + this.f12293g, c9);
-            af.a(this.f12292f, u.b.f12847a, "det_time_" + this.f12293g, System.currentTimeMillis());
-            z3 = true;
+        boolean z6;
+        if (System.currentTimeMillis() - this.f13080h > 86400000) {
+            c9 = m.a(this.f13078f, this.f13077e);
+            af.b(this.f13078f, u.b.f13633a, "det" + this.f13079g, c9);
+            af.a(this.f13078f, u.b.f13633a, "det_time_" + this.f13079g, System.currentTimeMillis());
+            z6 = true;
         } else {
-            c9 = af.c(this.f12292f, u.b.f12847a, "det" + this.f12293g, "");
-            z3 = false;
+            c9 = af.c(this.f13078f, u.b.f13633a, "det" + this.f13079g, "");
+            z6 = false;
         }
-        return new c(this.f12291e, this.f12293g, z3, z3 ? System.currentTimeMillis() : this.f12294h, !TextUtils.isEmpty(r10), c9);
+        return new c(this.f13077e, this.f13079g, z6, z6 ? System.currentTimeMillis() : this.f13080h, !TextUtils.isEmpty(r10), c9);
     }
 
     @Override // com.anythink.core.common.c.f

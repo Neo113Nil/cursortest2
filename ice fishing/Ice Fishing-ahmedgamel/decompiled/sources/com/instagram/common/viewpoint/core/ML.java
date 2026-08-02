@@ -40,15 +40,15 @@ public final class ML {
     public final boolean A0T;
     public final boolean A0U;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0V, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            byte b9 = (byte) ((copyOfRange[i10] ^ i9) ^ 89);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0V, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            byte b9 = (byte) ((copyOfRange[i9] ^ i6) ^ 89);
             if (A0W[4].charAt(24) == 'w') {
                 throw new RuntimeException();
             }
             A0W[3] = "PXVGXjtmkErHxa13ZrhtcOEvw3ek";
-            copyOfRange[i10] = b9;
+            copyOfRange[i9] = b9;
         }
         return new String(copyOfRange);
     }
@@ -73,35 +73,35 @@ public final class ML {
         this(ml.A0L, ml.A0A, ml.A0S, ml.A08, ml.A07, ml.A00, ml.A09, ml.A0U, ml.A0R, ml.A05, ml.A0C, ml.A0H, ml.A0T, ml.A06, ml.A02, ml.A0E, ml.A0B, ml.A01, ml.A0P, ml.A04, ml.A0J, ml.A0I, ml.A0G, ml.A03, ml.A0Q, ml.A0N, ml.A0K, ml.A0O, str, -1L, -1L);
     }
 
-    public ML(String str, long j6, boolean z3, int i, int i6, int i9, int i10, boolean z6, boolean z9, int i11, long j9, MK mk, boolean z10, int i12, int i13, long j10, long j11, int i14, Map<String, String> map, int i15, String str2, String str3, MJ mj, int i16, boolean z11, String str4, String str5, String str6, String str7, long j12, long j13) {
+    public ML(String str, long j6, boolean z6, int i, int i4, int i6, int i9, boolean z9, boolean z10, int i10, long j9, MK mk, boolean z11, int i11, int i12, long j10, long j11, int i13, Map<String, String> map, int i14, String str2, String str3, MJ mj, int i15, boolean z12, String str4, String str5, String str6, String str7, long j12, long j13) {
         this.A0P = new HashMap();
         this.A0L = str;
         this.A0A = j6;
-        this.A0S = z3;
+        this.A0S = z6;
         this.A08 = i;
-        this.A07 = i6;
-        this.A00 = i9;
-        this.A09 = i10;
-        this.A0U = z6;
-        this.A0R = z9;
-        this.A05 = i11;
+        this.A07 = i4;
+        this.A00 = i6;
+        this.A09 = i9;
+        this.A0U = z9;
+        this.A0R = z10;
+        this.A05 = i10;
         this.A0C = j9;
         this.A0H = mk;
-        this.A0T = z10;
-        this.A06 = i12;
-        this.A02 = i13;
+        this.A0T = z11;
+        this.A06 = i11;
+        this.A02 = i12;
         this.A0E = j10;
         this.A0B = j11;
-        this.A01 = i14;
-        this.A04 = i15;
+        this.A01 = i13;
+        this.A04 = i14;
         this.A0I = str3;
         this.A0J = str2;
         if (map != null) {
             this.A0P.putAll(map);
         }
         this.A0G = mj;
-        this.A03 = i16;
-        this.A0Q = z11;
+        this.A03 = i15;
+        this.A0Q = z12;
         this.A0N = str4;
         this.A0K = str5;
         this.A0O = str6;

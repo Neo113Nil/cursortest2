@@ -10,7 +10,7 @@ import android.widget.FrameLayout;
 public class TouchObserverFrameLayout extends FrameLayout {
 
     /* renamed from: n, reason: collision with root package name */
-    public View.OnTouchListener f36037n;
+    public View.OnTouchListener f36805n;
 
     public TouchObserverFrameLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -18,7 +18,7 @@ public class TouchObserverFrameLayout extends FrameLayout {
 
     @Override // android.view.ViewGroup
     public final boolean onInterceptTouchEvent(MotionEvent motionEvent) {
-        View.OnTouchListener onTouchListener = this.f36037n;
+        View.OnTouchListener onTouchListener = this.f36805n;
         if (onTouchListener != null) {
             onTouchListener.onTouch(this, motionEvent);
         }
@@ -27,6 +27,6 @@ public class TouchObserverFrameLayout extends FrameLayout {
 
     @Override // android.view.View
     public void setOnTouchListener(View.OnTouchListener onTouchListener) {
-        this.f36037n = onTouchListener;
+        this.f36805n = onTouchListener;
     }
 }

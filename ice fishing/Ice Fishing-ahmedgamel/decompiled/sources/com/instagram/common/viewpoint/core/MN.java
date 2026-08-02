@@ -15,16 +15,16 @@ public enum MN {
     public static byte[] A00;
     public static String[] A01 = {"YGvusjMOvw", "XxhXqbssDzTPx8cD", "v5f5FK7FNpA1cfN1ohQEtzmA1XlLSzXE", "dOnhpxcme8C8DMHJdbJ1zsQXlaw", "o8NFvW23E6YML82dyv2qOnj4D0AhAt32", "sFvB7Juf2T", "FilLqBnJ3Dc1fTgDAzXDzQr78D6tohNx", "1sAmBYm9v"};
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            byte b9 = copyOfRange[i10];
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            byte b9 = copyOfRange[i9];
             String[] strArr = A01;
             if (strArr[7].length() == strArr[3].length()) {
                 throw new RuntimeException();
             }
             A01[1] = "k0Ctdizy0CSYjdQTYuro";
-            copyOfRange[i10] = (byte) ((b9 - i9) + d.f10801c);
+            copyOfRange[i9] = (byte) ((b9 - i6) + d.f11587c);
         }
         return new String(copyOfRange);
     }

@@ -4,42 +4,42 @@ package com.google.android.gms.internal.consent_sdk;
 public final class D2 implements I2 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final AbstractC4307c2 f35502a;
+    public final AbstractC4330c2 f36271a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final O2 f35503b;
+    public final O2 f36272b;
 
-    public D2(O2 o22, AbstractC4307c2 abstractC4307c2) {
-        J1 j12 = AbstractC4339k2.f35708a;
-        this.f35503b = o22;
-        this.f35502a = abstractC4307c2;
+    public D2(O2 o22, AbstractC4330c2 abstractC4330c2) {
+        J1 j12 = AbstractC4362k2.f36477a;
+        this.f36272b = o22;
+        this.f36271a = abstractC4330c2;
     }
 
     @Override // com.google.android.gms.internal.consent_sdk.I2
     public final void a(Object obj) {
-        this.f35503b.getClass();
-        N2 n22 = ((AbstractC4355o2) obj).zzc;
-        if (n22.f35582d) {
-            n22.f35582d = false;
+        this.f36272b.getClass();
+        N2 n22 = ((AbstractC4378o2) obj).zzc;
+        if (n22.f36351d) {
+            n22.f36351d = false;
         }
-        J1 j12 = AbstractC4339k2.f35708a;
-        throw D.y.i(obj);
+        J1 j12 = AbstractC4362k2.f36477a;
+        throw D.x.h(obj);
     }
 
     @Override // com.google.android.gms.internal.consent_sdk.I2
-    public final int b(AbstractC4355o2 abstractC4355o2) {
-        abstractC4355o2.zzc.getClass();
+    public final int b(AbstractC4378o2 abstractC4378o2) {
+        abstractC4378o2.zzc.getClass();
         return 506991;
     }
 
     @Override // com.google.android.gms.internal.consent_sdk.I2
-    public final boolean c(AbstractC4355o2 abstractC4355o2, AbstractC4355o2 abstractC4355o22) {
-        return abstractC4355o2.zzc.equals(abstractC4355o22.zzc);
+    public final boolean c(AbstractC4378o2 abstractC4378o2, AbstractC4378o2 abstractC4378o22) {
+        return abstractC4378o2.zzc.equals(abstractC4378o22.zzc);
     }
 
     @Override // com.google.android.gms.internal.consent_sdk.I2
-    public final void d(Object obj, C4386w2 c4386w2) {
-        throw D.y.i(obj);
+    public final void d(Object obj, C4409w2 c4409w2) {
+        throw D.x.h(obj);
     }
 
     @Override // com.google.android.gms.internal.consent_sdk.I2
@@ -48,24 +48,24 @@ public final class D2 implements I2 {
     }
 
     @Override // com.google.android.gms.internal.consent_sdk.I2
-    public final int f(AbstractC4355o2 abstractC4355o2) {
-        N2 n22 = abstractC4355o2.zzc;
-        int i = n22.f35581c;
+    public final int f(AbstractC4378o2 abstractC4378o2) {
+        N2 n22 = abstractC4378o2.zzc;
+        int i = n22.f36350c;
         if (i != -1) {
             return i;
         }
-        n22.f35581c = 0;
+        n22.f36350c = 0;
         return 0;
     }
 
     @Override // com.google.android.gms.internal.consent_sdk.I2
     public final boolean g(Object obj) {
-        throw D.y.i(obj);
+        throw D.x.h(obj);
     }
 
     @Override // com.google.android.gms.internal.consent_sdk.I2
-    public final AbstractC4355o2 i() {
-        AbstractC4307c2 abstractC4307c2 = this.f35502a;
-        return abstractC4307c2 instanceof AbstractC4355o2 ? (AbstractC4355o2) ((AbstractC4355o2) abstractC4307c2).f(4) : ((AbstractC4351n2) ((AbstractC4355o2) abstractC4307c2).f(5)).i();
+    public final AbstractC4378o2 i() {
+        AbstractC4330c2 abstractC4330c2 = this.f36271a;
+        return abstractC4330c2 instanceof AbstractC4378o2 ? (AbstractC4378o2) ((AbstractC4378o2) abstractC4330c2).f(4) : ((AbstractC4374n2) ((AbstractC4378o2) abstractC4330c2).f(5)).i();
     }
 }

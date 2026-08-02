@@ -6,7 +6,7 @@ public abstract class e implements com.anythink.core.express.b.b {
     }
 
     @Override // com.anythink.core.express.b.b
-    public final void expand(String str, boolean z3) {
+    public final void expand(String str, boolean z6) {
     }
 
     @Override // com.anythink.core.express.b.b
@@ -15,6 +15,6 @@ public abstract class e implements com.anythink.core.express.b.b {
     }
 
     @Override // com.anythink.core.express.b.b
-    public void useCustomClose(boolean z3) {
+    public void useCustomClose(boolean z6) {
     }
 }

@@ -13,25 +13,25 @@ import com.anythink.core.common.l.b;
 public final class a implements b {
 
     /* renamed from: a, reason: collision with root package name */
-    private BaseAd f9585a;
+    private BaseAd f10371a;
 
     /* renamed from: b, reason: collision with root package name */
-    private Context f9586b;
+    private Context f10372b;
 
     /* renamed from: c, reason: collision with root package name */
-    private y f9587c;
+    private y f10373c;
 
     public a(Context context, BaseAd baseAd, y yVar) {
-        this.f9586b = context;
-        this.f9585a = baseAd;
-        this.f9587c = yVar;
+        this.f10372b = context;
+        this.f10371a = baseAd;
+        this.f10373c = yVar;
     }
 
     @Override // com.anythink.core.common.l.b
-    public final com.anythink.core.common.l.a a(int i, int i6, ATShakeViewListener aTShakeViewListener) {
+    public final com.anythink.core.common.l.a a(int i, int i4, ATShakeViewListener aTShakeViewListener) {
         Boolean isShakeEnabled;
-        BaseAd baseAd = this.f9585a;
-        if (baseAd == null || this.f9586b == null) {
+        BaseAd baseAd = this.f10371a;
+        if (baseAd == null || this.f10372b == null) {
             return null;
         }
         n detail = baseAd.getDetail();
@@ -39,12 +39,12 @@ public final class a implements b {
         if (Y != 0 && (isShakeEnabled = ATSDKGlobalSetting.isShakeEnabled(Y)) != null && !isShakeEnabled.booleanValue()) {
             return null;
         }
-        View shakeView = this.f9585a.getShakeView(i, i6, aTShakeViewListener);
+        View shakeView = this.f10371a.getShakeView(i, i4, aTShakeViewListener);
         if (shakeView != null) {
-            return new MixNativeAdNetworkShakeView(this.f9586b, shakeView, i, i6);
+            return new MixNativeAdNetworkShakeView(this.f10372b, shakeView, i, i4);
         }
-        MixNativeAdShakeView mixNativeAdShakeView = new MixNativeAdShakeView(this.f9586b, this.f9587c, this.f9585a.getNativeAdInteractionType());
-        mixNativeAdShakeView.initView(i, i6, aTShakeViewListener);
+        MixNativeAdShakeView mixNativeAdShakeView = new MixNativeAdShakeView(this.f10372b, this.f10373c, this.f10371a.getNativeAdInteractionType());
+        mixNativeAdShakeView.initView(i, i4, aTShakeViewListener);
         return mixNativeAdShakeView;
     }
 }

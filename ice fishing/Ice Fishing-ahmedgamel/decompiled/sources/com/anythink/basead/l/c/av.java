@@ -7,56 +7,56 @@ import org.xmlpull.v1.XmlPullParser;
 public final class av extends ay {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f9338a = "VAST";
+    private static final String f10124a = "VAST";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f9339b = "Error";
+    private static final String f10125b = "Error";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f9340c = "Ad";
+    private static final String f10126c = "Ad";
 
     /* renamed from: d, reason: collision with root package name */
-    private w f9341d;
+    private w f10127d;
 
     /* renamed from: e, reason: collision with root package name */
-    private ArrayList<a> f9342e;
+    private ArrayList<a> f10128e;
 
     /* renamed from: f, reason: collision with root package name */
-    private String f9343f;
+    private String f10129f;
 
     public av(XmlPullParser xmlPullParser) {
-        xmlPullParser.require(2, null, f9338a);
-        this.f9343f = xmlPullParser.getAttributeValue(null, com.anythink.expressad.foundation.g.a.i);
+        xmlPullParser.require(2, null, f10124a);
+        this.f10129f = xmlPullParser.getAttributeValue(null, com.anythink.expressad.foundation.g.a.i);
         while (xmlPullParser.next() != 3) {
             if (xmlPullParser.getEventType() == 2) {
                 String name = xmlPullParser.getName();
-                if (name != null && name.equals(f9339b)) {
-                    xmlPullParser.require(2, null, f9339b);
-                    this.f9341d = new w(xmlPullParser);
-                    xmlPullParser.require(3, null, f9339b);
-                } else if (name == null || !name.equals(f9340c)) {
+                if (name != null && name.equals(f10125b)) {
+                    xmlPullParser.require(2, null, f10125b);
+                    this.f10127d = new w(xmlPullParser);
+                    xmlPullParser.require(3, null, f10125b);
+                } else if (name == null || !name.equals(f10126c)) {
                     ay.b(xmlPullParser);
                 } else {
-                    if (this.f9342e == null) {
-                        this.f9342e = new ArrayList<>();
+                    if (this.f10128e == null) {
+                        this.f10128e = new ArrayList<>();
                     }
-                    xmlPullParser.require(2, null, f9340c);
-                    this.f9342e.add(new a(xmlPullParser));
-                    xmlPullParser.require(3, null, f9340c);
+                    xmlPullParser.require(2, null, f10126c);
+                    this.f10128e.add(new a(xmlPullParser));
+                    xmlPullParser.require(3, null, f10126c);
                 }
             }
         }
     }
 
     private w b() {
-        return this.f9341d;
+        return this.f10127d;
     }
 
     private String c() {
-        return this.f9343f;
+        return this.f10129f;
     }
 
     public final ArrayList<a> a() {
-        return this.f9342e;
+        return this.f10128e;
     }
 }

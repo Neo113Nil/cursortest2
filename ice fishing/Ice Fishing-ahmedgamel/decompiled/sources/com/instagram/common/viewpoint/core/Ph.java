@@ -7,7 +7,7 @@ import android.view.View;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public abstract class Ph {
-    public static final C1156Pg A00;
+    public static final C1176Pg A00;
 
     static {
         if (Build.VERSION.SDK_INT >= 26) {
@@ -44,12 +44,12 @@ public abstract class Ph {
         return A00.A06(view);
     }
 
-    public static C1171Py A05(View view, C1171Py c1171Py) {
-        return A00.A07(view, c1171Py);
+    public static C1191Py A05(View view, C1191Py c1191Py) {
+        return A00.A07(view, c1191Py);
     }
 
-    public static C1171Py A06(View view, C1171Py c1171Py) {
-        return A00.A08(view, c1171Py);
+    public static C1191Py A06(View view, C1191Py c1191Py) {
+        return A00.A08(view, c1191Py);
     }
 
     public static void A07(View view) {

@@ -10,14 +10,14 @@ import android.widget.SpinnerAdapter;
 public final class J implements ListAdapter, SpinnerAdapter {
 
     /* renamed from: a, reason: collision with root package name */
-    public SpinnerAdapter f39020a;
+    public SpinnerAdapter f39088a;
 
     /* renamed from: b, reason: collision with root package name */
-    public ListAdapter f39021b;
+    public ListAdapter f39089b;
 
     @Override // android.widget.ListAdapter
     public final boolean areAllItemsEnabled() {
-        ListAdapter listAdapter = this.f39021b;
+        ListAdapter listAdapter = this.f39089b;
         if (listAdapter != null) {
             return listAdapter.areAllItemsEnabled();
         }
@@ -26,7 +26,7 @@ public final class J implements ListAdapter, SpinnerAdapter {
 
     @Override // android.widget.Adapter
     public final int getCount() {
-        SpinnerAdapter spinnerAdapter = this.f39020a;
+        SpinnerAdapter spinnerAdapter = this.f39088a;
         if (spinnerAdapter == null) {
             return 0;
         }
@@ -35,7 +35,7 @@ public final class J implements ListAdapter, SpinnerAdapter {
 
     @Override // android.widget.SpinnerAdapter
     public final View getDropDownView(int i, View view, ViewGroup viewGroup) {
-        SpinnerAdapter spinnerAdapter = this.f39020a;
+        SpinnerAdapter spinnerAdapter = this.f39088a;
         if (spinnerAdapter == null) {
             return null;
         }
@@ -44,7 +44,7 @@ public final class J implements ListAdapter, SpinnerAdapter {
 
     @Override // android.widget.Adapter
     public final Object getItem(int i) {
-        SpinnerAdapter spinnerAdapter = this.f39020a;
+        SpinnerAdapter spinnerAdapter = this.f39088a;
         if (spinnerAdapter == null) {
             return null;
         }
@@ -53,7 +53,7 @@ public final class J implements ListAdapter, SpinnerAdapter {
 
     @Override // android.widget.Adapter
     public final long getItemId(int i) {
-        SpinnerAdapter spinnerAdapter = this.f39020a;
+        SpinnerAdapter spinnerAdapter = this.f39088a;
         if (spinnerAdapter == null) {
             return -1L;
         }
@@ -77,7 +77,7 @@ public final class J implements ListAdapter, SpinnerAdapter {
 
     @Override // android.widget.Adapter
     public final boolean hasStableIds() {
-        SpinnerAdapter spinnerAdapter = this.f39020a;
+        SpinnerAdapter spinnerAdapter = this.f39088a;
         return spinnerAdapter != null && spinnerAdapter.hasStableIds();
     }
 
@@ -88,7 +88,7 @@ public final class J implements ListAdapter, SpinnerAdapter {
 
     @Override // android.widget.ListAdapter
     public final boolean isEnabled(int i) {
-        ListAdapter listAdapter = this.f39021b;
+        ListAdapter listAdapter = this.f39089b;
         if (listAdapter != null) {
             return listAdapter.isEnabled(i);
         }
@@ -97,7 +97,7 @@ public final class J implements ListAdapter, SpinnerAdapter {
 
     @Override // android.widget.Adapter
     public final void registerDataSetObserver(DataSetObserver dataSetObserver) {
-        SpinnerAdapter spinnerAdapter = this.f39020a;
+        SpinnerAdapter spinnerAdapter = this.f39088a;
         if (spinnerAdapter != null) {
             spinnerAdapter.registerDataSetObserver(dataSetObserver);
         }
@@ -105,7 +105,7 @@ public final class J implements ListAdapter, SpinnerAdapter {
 
     @Override // android.widget.Adapter
     public final void unregisterDataSetObserver(DataSetObserver dataSetObserver) {
-        SpinnerAdapter spinnerAdapter = this.f39020a;
+        SpinnerAdapter spinnerAdapter = this.f39088a;
         if (spinnerAdapter != null) {
             spinnerAdapter.unregisterDataSetObserver(dataSetObserver);
         }

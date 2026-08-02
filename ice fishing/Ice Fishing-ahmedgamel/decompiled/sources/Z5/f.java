@@ -53,12 +53,12 @@ public final class f {
     static {
         f[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = com.bumptech.glide.e.b($values);
+        $ENTRIES = X2.a.h($values);
         Companion = new a(null);
     }
 
-    private f(String str, int i, int i6) {
-        this.value = i6;
+    private f(String str, int i, int i4) {
+        this.value = i4;
     }
 
     public static C7.a getEntries() {

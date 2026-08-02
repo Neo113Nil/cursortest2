@@ -1,19 +1,24 @@
 package M1;
 
-import java.security.MessageDigest;
-import s1.InterfaceC4970e;
+import L1.f;
+import android.graphics.drawable.Drawable;
+import com.bumptech.glide.manager.h;
 
 /* loaded from: classes.dex */
-public final class c implements InterfaceC4970e {
+public interface c extends h {
+    void a(f fVar);
 
-    /* renamed from: b, reason: collision with root package name */
-    public static final c f1824b = new c();
+    void b(Object obj);
 
-    public final String toString() {
-        return "EmptySignature";
-    }
+    void c(L1.c cVar);
 
-    @Override // s1.InterfaceC4970e
-    public final void a(MessageDigest messageDigest) {
-    }
+    void d(Drawable drawable);
+
+    void e(f fVar);
+
+    void f(Drawable drawable);
+
+    L1.c g();
+
+    void h(Drawable drawable);
 }

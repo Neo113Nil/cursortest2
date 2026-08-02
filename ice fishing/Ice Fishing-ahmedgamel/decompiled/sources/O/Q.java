@@ -22,8 +22,8 @@ public abstract class Q {
         return view.getSystemGestureExclusionRects();
     }
 
-    public static void d(View view, Context context, int[] iArr, AttributeSet attributeSet, TypedArray typedArray, int i, int i6) {
-        view.saveAttributeDataForStyleable(context, iArr, attributeSet, typedArray, i, i6);
+    public static void d(View view, Context context, int[] iArr, AttributeSet attributeSet, TypedArray typedArray, int i, int i4) {
+        view.saveAttributeDataForStyleable(context, iArr, attributeSet, typedArray, i, i4);
     }
 
     public static void e(View view, S.a aVar) {

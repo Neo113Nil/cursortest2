@@ -7,31 +7,31 @@ import java.util.Map;
 public final class PK {
 
     /* renamed from: a, reason: collision with root package name */
-    public static volatile PK f26757a;
+    public static volatile PK f27540a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final PK f26758b;
+    public static final PK f27541b;
 
     static {
         PK pk = new PK();
         Map map = Collections.EMPTY_MAP;
-        f26758b = pk;
+        f27541b = pk;
     }
 
     public static PK a() {
-        PK pk = f26757a;
+        PK pk = f27540a;
         if (pk != null) {
             return pk;
         }
         synchronized (PK.class) {
             try {
-                PK pk2 = f26757a;
+                PK pk2 = f27540a;
                 if (pk2 != null) {
                     return pk2;
                 }
-                int i = BK.f23877a;
+                int i = BK.f24648a;
                 PK s9 = SK.s();
-                f26757a = s9;
+                f27540a = s9;
                 return s9;
             } catch (Throwable th) {
                 throw th;

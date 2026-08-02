@@ -9,7 +9,7 @@ import java.util.Set;
 public final class q implements Map, Serializable, J7.a {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final q f41443n = new q();
+    public static final q f41222n = new q();
 
     @Override // java.util.Map
     public final void clear() {
@@ -33,7 +33,7 @@ public final class q implements Map, Serializable, J7.a {
 
     @Override // java.util.Map
     public final /* bridge */ Set entrySet() {
-        return r.f41444n;
+        return r.f41223n;
     }
 
     @Override // java.util.Map
@@ -58,7 +58,7 @@ public final class q implements Map, Serializable, J7.a {
 
     @Override // java.util.Map
     public final /* bridge */ Set keySet() {
-        return r.f41444n;
+        return r.f41223n;
     }
 
     @Override // java.util.Map
@@ -87,7 +87,7 @@ public final class q implements Map, Serializable, J7.a {
 
     @Override // java.util.Map
     public final /* bridge */ Collection values() {
-        return C5135p.f41442n;
+        return C5125p.f41221n;
     }
 
     @Override // java.util.Map

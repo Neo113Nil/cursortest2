@@ -8,12 +8,12 @@ import androidx.lifecycle.J;
 /* loaded from: classes.dex */
 public abstract class H {
     /* JADX WARN: Multi-variable type inference failed */
-    public static void a(Activity activity, EnumC0496n event) {
+    public static void a(Activity activity, EnumC0500n event) {
         kotlin.jvm.internal.h.e(event, "event");
-        if (activity instanceof InterfaceC0503v) {
-            AbstractC0498p lifecycle = ((InterfaceC0503v) activity).getLifecycle();
-            if (lifecycle instanceof C0505x) {
-                ((C0505x) lifecycle).e(event);
+        if (activity instanceof InterfaceC0507v) {
+            AbstractC0502p lifecycle = ((InterfaceC0507v) activity).getLifecycle();
+            if (lifecycle instanceof C0509x) {
+                ((C0509x) lifecycle).e(event);
             }
         }
     }

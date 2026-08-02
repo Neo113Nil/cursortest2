@@ -20,7 +20,7 @@ public interface ATCommonImpressionListener {
 
     void onAdVideoPlayStart();
 
-    void onDeeplinkCallback(boolean z3);
+    void onDeeplinkCallback(boolean z6);
 
     void onDownloadConfirm(Context context, ATNetworkConfirmInfo aTNetworkConfirmInfo);
 }

@@ -15,10 +15,10 @@ import java.util.zip.ZipInputStream;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final int f16560a = 4096;
+    private static final int f17347a = 4096;
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f16561b = "ATUnzipUtility";
+    private static final String f17348b = "ATUnzipUtility";
 
     private static void a(ZipInputStream zipInputStream, String str) {
         BufferedOutputStream bufferedOutputStream;
@@ -37,7 +37,7 @@ public final class a {
             e = e9;
         }
         try {
-            byte[] bArr = new byte[f16560a];
+            byte[] bArr = new byte[f17347a];
             while (true) {
                 int read = zipInputStream.read(bArr);
                 if (read == -1) {

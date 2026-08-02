@@ -12,33 +12,33 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    f f12027a;
+    f f12813a;
 
     /* renamed from: b, reason: collision with root package name */
-    List<a> f12028b;
+    List<a> f12814b;
 
     /* renamed from: c, reason: collision with root package name */
-    Map<Integer, List<a>> f12029c = new ConcurrentHashMap(3);
+    Map<Integer, List<a>> f12815c = new ConcurrentHashMap(3);
 
     public final void a(int i, List<a> list) {
         if (i == -1) {
-            this.f12028b = list;
+            this.f12814b = list;
         } else {
-            this.f12029c.put(Integer.valueOf(i), list);
+            this.f12815c.put(Integer.valueOf(i), list);
         }
     }
 
     public final boolean b(f fVar) {
-        f fVar2 = this.f12027a;
-        return fVar2 != null && fVar2.b() == fVar.b() && this.f12027a.a() == fVar.a() && this.f12027a.c() == fVar.c() && this.f12027a.d() == fVar.d();
+        f fVar2 = this.f12813a;
+        return fVar2 != null && fVar2.b() == fVar.b() && this.f12813a.a() == fVar.a() && this.f12813a.c() == fVar.c() && this.f12813a.d() == fVar.d();
     }
 
     public final void c(int i) {
         List<a> a9 = a(i);
-        if (this.f12027a == null || a9 == null) {
+        if (this.f12813a == null || a9 == null) {
             return;
         }
-        long currentTimeMillis = System.currentTimeMillis() - ((this.f12027a.b() * 86400) * 1000);
+        long currentTimeMillis = System.currentTimeMillis() - ((this.f12813a.b() * 86400) * 1000);
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(currentTimeMillis);
         calendar.set(11, 0);
@@ -56,50 +56,50 @@ public final class c {
 
     public final List<a> a(int i) {
         if (i == -1) {
-            return this.f12028b;
+            return this.f12814b;
         }
-        return this.f12029c.get(Integer.valueOf(i));
+        return this.f12815c.get(Integer.valueOf(i));
     }
 
     public final void a(f fVar) {
-        this.f12027a = fVar;
+        this.f12813a = fVar;
     }
 
     private f a() {
-        return this.f12027a;
+        return this.f12813a;
     }
 
     public final d b(int i) {
         List<a> list;
         if (i == -1) {
-            list = this.f12028b;
+            list = this.f12814b;
         } else {
-            list = this.f12029c.get(Integer.valueOf(i));
+            list = this.f12815c.get(Integer.valueOf(i));
         }
-        if (list == null || list.size() < this.f12027a.d()) {
+        if (list == null || list.size() < this.f12813a.d()) {
             return null;
         }
-        double d2 = 0.0d;
+        double d9 = 0.0d;
         String str = "";
         for (a aVar : list) {
-            double f3 = aVar.f();
-            if (f3 > d2) {
+            double f2 = aVar.f();
+            if (f2 > d9) {
                 str = aVar.d();
-                d2 = f3;
+                d9 = f2;
             }
         }
-        return new d(d2, str);
+        return new d(d9, str);
     }
 
     public final void a(a aVar) {
-        if (this.f12027a == null) {
+        if (this.f12813a == null) {
             return;
         }
-        List<a> list = this.f12028b;
+        List<a> list = this.f12814b;
         if (list != null) {
             a(list, aVar);
         }
-        List<a> list2 = this.f12029c.get(Integer.valueOf(aVar.a()));
+        List<a> list2 = this.f12815c.get(Integer.valueOf(aVar.a()));
         if (list2 != null) {
             a(list2, aVar);
         }
@@ -120,7 +120,7 @@ public final class c {
                 break;
             }
         }
-        while (list.size() > this.f12027a.c()) {
+        while (list.size() > this.f12813a.c()) {
             list.remove(list.size() - 1);
         }
     }

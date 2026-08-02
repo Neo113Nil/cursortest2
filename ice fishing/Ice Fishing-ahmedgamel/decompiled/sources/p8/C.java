@@ -4,5 +4,5 @@ package p8;
 public final class C {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final C f39812a = new C();
+    public static final C f39859a = new C();
 }

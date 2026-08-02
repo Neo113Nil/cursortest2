@@ -21,11 +21,11 @@ public class DefaultVideoPlayerStatusListener implements VideoPlayerStatusListen
     }
 
     @Override // com.anythink.expressad.playercommon.VideoPlayerStatusListener
-    public void onPlayProgress(int i, int i6) {
+    public void onPlayProgress(int i, int i4) {
     }
 
     @Override // com.anythink.expressad.playercommon.VideoPlayerStatusListener
-    public void onPlayProgressMS(int i, int i6) {
+    public void onPlayProgressMS(int i, int i4) {
     }
 
     @Override // com.anythink.expressad.playercommon.VideoPlayerStatusListener

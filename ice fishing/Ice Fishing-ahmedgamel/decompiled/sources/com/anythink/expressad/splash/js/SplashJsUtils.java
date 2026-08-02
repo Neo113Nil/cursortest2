@@ -19,34 +19,34 @@ import org.json.JSONObject;
 public class SplashJsUtils {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f20685a = "onSystemPause";
+    public static final String f21472a = "onSystemPause";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f20686b = "onSystemResume";
+    public static final String f21473b = "onSystemResume";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f20687c = "onSystemDestory";
+    public static final String f21474c = "onSystemDestory";
 
     /* renamed from: d, reason: collision with root package name */
-    private static String f20688d = "SplashJsUtils";
+    private static String f21475d = "SplashJsUtils";
 
     /* renamed from: e, reason: collision with root package name */
-    private static int f20689e = 0;
+    private static int f21476e = 0;
 
     /* renamed from: f, reason: collision with root package name */
-    private static int f20690f = 1;
+    private static int f21477f = 1;
 
     private static void b(String str, d dVar) {
-        if (f.f19132o == null || TextUtils.isEmpty(dVar.bh())) {
+        if (f.f19919o == null || TextUtils.isEmpty(dVar.bh())) {
             return;
         }
-        f.a(str, dVar, f.f19124f);
+        f.a(str, dVar, f.f19911f);
     }
 
     public static void callbackExcep(Object obj, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", f20690f);
+            jSONObject.put("code", f21477f);
             jSONObject.put("message", str);
             jSONObject.put("data", new JSONObject());
             h.a().a(obj, Base64.encodeToString(jSONObject.toString().getBytes(), 2));
@@ -58,7 +58,7 @@ public class SplashJsUtils {
     public static void callbackSuccess(Object obj, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", f20689e);
+            jSONObject.put("code", f21476e);
             JSONObject jSONObject2 = new JSONObject();
             jSONObject2.put("id", str);
             jSONObject.put("data", jSONObject2);
@@ -87,12 +87,12 @@ public class SplashJsUtils {
 
     public static void getFileInfo(Object obj, JSONObject jSONObject) {
         int i;
-        int i6;
-        boolean z3;
+        int i4;
+        boolean z6;
         String str;
         File file;
         JSONObject jSONObject2 = new JSONObject();
-        int i9 = 1;
+        int i6 = 1;
         if (jSONObject == null) {
             try {
                 jSONObject2.put("code", 1);
@@ -122,27 +122,27 @@ public class SplashJsUtils {
                 }
                 JSONArray jSONArray2 = new JSONArray();
                 int length = jSONArray.length();
-                int i10 = 0;
-                while (i10 < length) {
-                    JSONObject jSONObject3 = jSONArray.getJSONObject(i10);
+                int i9 = 0;
+                while (i9 < length) {
+                    JSONObject jSONObject3 = jSONArray.getJSONObject(i9);
                     String optString = jSONObject3.optString("ref", "");
-                    int i11 = jSONObject3.getInt("type");
+                    int i10 = jSONObject3.getInt("type");
                     JSONObject jSONObject4 = new JSONObject();
-                    if (i11 != i9 || TextUtils.isEmpty(optString)) {
+                    if (i10 != i6 || TextUtils.isEmpty(optString)) {
                         i = length;
-                        i6 = i10;
-                        z3 = false;
-                        if (i11 == 2 && !TextUtils.isEmpty(optString)) {
+                        i4 = i9;
+                        z6 = false;
+                        if (i10 == 2 && !TextUtils.isEmpty(optString)) {
                             JSONObject jSONObject5 = new JSONObject();
                             jSONObject5.put("type", 2);
-                            jSONObject5.put(com.anythink.expressad.a.f17603K, i.a().b(optString) == null ? "" : i.a().b(optString));
+                            jSONObject5.put(com.anythink.expressad.a.f18390K, i.a().b(optString) == null ? "" : i.a().b(optString));
                             jSONObject4.put(optString, jSONObject5);
                             jSONArray2.put(jSONObject4);
-                        } else if (i11 == 3 && !TextUtils.isEmpty(optString)) {
+                        } else if (i10 == 3 && !TextUtils.isEmpty(optString)) {
                             try {
                                 file = new File(optString);
                             } catch (Throwable th) {
-                                if (com.anythink.expressad.a.f17618a) {
+                                if (com.anythink.expressad.a.f18405a) {
                                     th.printStackTrace();
                                 }
                             }
@@ -150,20 +150,20 @@ public class SplashJsUtils {
                                 str = "file:////".concat(String.valueOf(optString));
                                 JSONObject jSONObject6 = new JSONObject();
                                 jSONObject6.put("type", 3);
-                                jSONObject6.put(com.anythink.expressad.a.f17603K, str);
+                                jSONObject6.put(com.anythink.expressad.a.f18390K, str);
                                 jSONObject4.put(optString, jSONObject6);
                                 jSONArray2.put(jSONObject4);
                             }
                             str = "";
                             JSONObject jSONObject62 = new JSONObject();
                             jSONObject62.put("type", 3);
-                            jSONObject62.put(com.anythink.expressad.a.f17603K, str);
+                            jSONObject62.put(com.anythink.expressad.a.f18390K, str);
                             jSONObject4.put(optString, jSONObject62);
                             jSONArray2.put(jSONObject4);
-                        } else if (i11 == 4 && !TextUtils.isEmpty(optString)) {
+                        } else if (i10 == 4 && !TextUtils.isEmpty(optString)) {
                             JSONObject jSONObject7 = new JSONObject();
                             jSONObject7.put("type", 4);
-                            jSONObject7.put(com.anythink.expressad.a.f17603K, u.a(optString) == null ? "" : u.a(optString));
+                            jSONObject7.put(com.anythink.expressad.a.f18390K, u.a(optString) == null ? "" : u.a(optString));
                             jSONObject4.put(optString, jSONObject7);
                             jSONArray2.put(jSONObject4);
                         }
@@ -172,36 +172,36 @@ public class SplashJsUtils {
                         com.anythink.expressad.videocommon.b.a.a();
                         n b9 = com.anythink.expressad.videocommon.b.a.b(optString);
                         if (b9 != null) {
-                            jSONObject8.put("type", i9);
+                            jSONObject8.put("type", i6);
                             i = length;
-                            i6 = i10;
+                            i4 = i9;
                             jSONObject8.put("videoDataLength", b9.d());
                             String b10 = b9.b();
                             if (TextUtils.isEmpty(b10)) {
-                                jSONObject8.put(com.anythink.expressad.a.f17603K, "");
+                                jSONObject8.put(com.anythink.expressad.a.f18390K, "");
                                 jSONObject8.put("path4Web", "");
                             } else {
-                                jSONObject8.put(com.anythink.expressad.a.f17603K, b10);
+                                jSONObject8.put(com.anythink.expressad.a.f18390K, b10);
                                 jSONObject8.put("path4Web", b10);
                             }
                             if (b9.c() == 100) {
                                 jSONObject8.put("downloaded", 1);
-                                z3 = false;
+                                z6 = false;
                             } else {
-                                z3 = false;
+                                z6 = false;
                                 jSONObject8.put("downloaded", 0);
                             }
                             jSONObject4.put(optString, jSONObject8);
                             jSONArray2.put(jSONObject4);
                         } else {
                             i = length;
-                            i6 = i10;
-                            z3 = false;
+                            i4 = i9;
+                            z6 = false;
                         }
                     }
-                    i10 = i6 + 1;
+                    i9 = i4 + 1;
                     length = i;
-                    i9 = 1;
+                    i6 = 1;
                 }
                 jSONObject2.put("resource", jSONArray2);
                 h.a().a(obj, Base64.encodeToString(jSONObject2.toString().getBytes(), 2));
@@ -253,7 +253,7 @@ public class SplashJsUtils {
                 try {
                     SplashJsUtils.a(d.this.L(), d.this);
                 } catch (Throwable th) {
-                    String unused = SplashJsUtils.f20688d;
+                    String unused = SplashJsUtils.f21475d;
                     th.getMessage();
                 }
             }
@@ -261,9 +261,9 @@ public class SplashJsUtils {
     }
 
     public static /* synthetic */ void a(String str, d dVar) {
-        if (f.f19132o == null || TextUtils.isEmpty(dVar.bh())) {
+        if (f.f19919o == null || TextUtils.isEmpty(dVar.bh())) {
             return;
         }
-        f.a(str, dVar, f.f19124f);
+        f.a(str, dVar, f.f19911f);
     }
 }

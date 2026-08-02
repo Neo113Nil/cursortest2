@@ -5,6 +5,6 @@ public abstract class R7 {
     public void A0L(C7M c7m, int i) {
     }
 
-    public void A0M(C7M c7m, int i, int i6) {
+    public void A0M(C7M c7m, int i, int i4) {
     }
 }

@@ -14,148 +14,148 @@ import java.util.Locale;
 public final /* synthetic */ class Fy implements Runnable {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f24898n;
+    public final /* synthetic */ int f25688n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final /* synthetic */ Gy f24899u;
+    public final /* synthetic */ Gy f25689u;
 
     public /* synthetic */ Fy(Gy gy, int i) {
-        this.f24898n = i;
-        this.f24899u = gy;
+        this.f25688n = i;
+        this.f25689u = gy;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
-        C3386j6 c3386j6;
+        C3409j6 c3409j6;
         RB n9;
         int i;
         String str;
         StringWriter stringWriter;
         PrintWriter printWriter;
-        switch (this.f24898n) {
+        switch (this.f25688n) {
             case 0:
-                Gy gy = this.f24899u;
-                if (!gy.f25179e || gy.f25185l.getAndSet(true)) {
+                Gy gy = this.f25689u;
+                if (!gy.f25951e || gy.f25957l.getAndSet(true)) {
                     return;
                 }
-                Context context = gy.f25175a;
-                String str2 = gy.f25183j;
-                int i6 = gy.f25193t;
-                double d2 = gy.i;
-                long j6 = gy.f25184k;
+                Context context = gy.f25947a;
+                String str2 = gy.f25955j;
+                int i4 = gy.f25965t;
+                double d9 = gy.i;
+                long j6 = gy.f25956k;
                 Locale locale = Locale.getDefault();
-                if (i6 == 1) {
-                    AbstractC3080dL.a();
+                if (i4 == 1) {
+                    AbstractC3103dL.a();
                     throw null;
                 }
-                int i9 = i6 - 2;
-                int i10 = 4;
-                int i11 = i9 != 0 ? i9 != 1 ? i9 != 2 ? 5 : 4 : 3 : 2;
-                C3386j6 A9 = C3440k6.A();
+                int i6 = i4 - 2;
+                int i9 = 4;
+                int i10 = i6 != 0 ? i6 != 1 ? i6 != 2 ? 5 : 4 : 3 : 2;
+                C3409j6 A9 = C3463k6.A();
                 long j9 = Build.VERSION.SDK_INT;
                 A9.h();
-                ((C3440k6) A9.f27721u).D(j9);
+                ((C3463k6) A9.f28504u).D(j9);
                 String str3 = Build.MODEL;
                 A9.h();
-                ((C3440k6) A9.f27721u).E(str3);
+                ((C3463k6) A9.f28504u).E(str3);
                 String language = locale.getLanguage();
                 A9.h();
-                ((C3440k6) A9.f27721u).F(language);
+                ((C3463k6) A9.f28504u).F(language);
                 String country = locale.getCountry();
                 A9.h();
-                ((C3440k6) A9.f27721u).G(country);
+                ((C3463k6) A9.f28504u).G(country);
                 A9.h();
-                ((C3440k6) A9.f27721u).J(str2);
+                ((C3463k6) A9.f28504u).J(str2);
                 A9.h();
-                ((C3440k6) A9.f27721u).P(i11);
+                ((C3463k6) A9.f28504u).P(i10);
                 A9.h();
-                ((C3440k6) A9.f27721u).Q(3);
+                ((C3463k6) A9.f28504u).Q(3);
                 String packageName = context.getPackageName();
                 A9.h();
-                ((C3440k6) A9.f27721u).H(packageName);
+                ((C3463k6) A9.f28504u).H(packageName);
                 A9.h();
-                ((C3440k6) A9.f27721u).M(j6);
-                if (d2 > 0.0d) {
+                ((C3463k6) A9.f28504u).M(j6);
+                if (d9 > 0.0d) {
                     A9.h();
-                    ((C3440k6) A9.f27721u).L((int) (1.0d / d2));
+                    ((C3463k6) A9.f28504u).L((int) (1.0d / d9));
                 }
                 PackageManager packageManager = context.getPackageManager();
                 try {
                     long j10 = packageManager.getPackageInfo(context.getPackageName(), 0).versionCode;
                     A9.h();
-                    ((C3440k6) A9.f27721u).I(j10);
+                    ((C3463k6) A9.f28504u).I(j10);
                 } catch (Exception unused) {
                 }
                 try {
                     if (packageManager.hasSystemFeature("android.hardware.type.automotive")) {
-                        i10 = 5;
+                        i9 = 5;
                     } else if (!packageManager.hasSystemFeature("android.hardware.type.watch")) {
                         if (packageManager.hasSystemFeature("android.hardware.type.pc")) {
-                            i10 = 7;
+                            i9 = 7;
                         } else {
                             UiModeManager uiModeManager = (UiModeManager) context.getSystemService("uimode");
-                            i10 = (uiModeManager == null || uiModeManager.getCurrentModeType() != 4) ? 2 : 6;
+                            i9 = (uiModeManager == null || uiModeManager.getCurrentModeType() != 4) ? 2 : 6;
                         }
                     }
                     A9.h();
-                    ((C3440k6) A9.f27721u).O(i10);
+                    ((C3463k6) A9.f28504u).O(i9);
                 } catch (RuntimeException unused2) {
                 }
-                C3440k6 c3440k6 = (C3440k6) A9.j();
-                synchronized (gy.f25186m) {
-                    gy.f25189p.k(c3440k6);
+                C3463k6 c3463k6 = (C3463k6) A9.j();
+                synchronized (gy.f25958m) {
+                    gy.f25961p.k(c3463k6);
                 }
                 return;
             default:
-                Gy gy2 = this.f24899u;
-                synchronized (gy2.f25186m) {
-                    C3386j6 c3386j62 = gy2.f25189p;
-                    TK tk = (TK) c3386j62.f27720n.w(5, null);
-                    tk.f27721u = c3386j62.i();
-                    c3386j6 = (C3386j6) tk;
+                Gy gy2 = this.f25689u;
+                synchronized (gy2.f25958m) {
+                    C3409j6 c3409j62 = gy2.f25961p;
+                    TK tk = (TK) c3409j62.f28503n.w(5, null);
+                    tk.f28504u = c3409j62.i();
+                    c3409j6 = (C3409j6) tk;
                 }
-                synchronized (gy2.f25187n) {
-                    ArrayList arrayList = gy2.f25190q;
+                synchronized (gy2.f25959n) {
+                    ArrayList arrayList = gy2.f25962q;
                     n9 = RB.n(arrayList);
                     arrayList.clear();
-                    gy2.f25191r = false;
+                    gy2.f25963r = false;
                 }
                 int size = n9.size();
+                int i11 = 0;
                 int i12 = 0;
-                int i13 = 0;
-                while (i13 < size) {
-                    Ey ey = (Ey) n9.get(i13);
-                    if (i12 >= gy2.f25181g) {
-                        gy2.b((C3440k6) c3386j6.j());
-                        c3386j6.h();
-                        ((C3440k6) c3386j6.f27721u).C();
+                while (i12 < size) {
+                    Ey ey = (Ey) n9.get(i12);
+                    if (i11 >= gy2.f25953g) {
+                        gy2.b((C3463k6) c3409j6.j());
+                        c3409j6.h();
+                        ((C3463k6) c3409j6.f28504u).C();
                         i = 0;
                     } else {
-                        i = i12;
+                        i = i11;
                     }
-                    C3817r6 A10 = C3871s6.A();
-                    long j11 = ey.f24689a;
+                    C3840r6 A10 = C3894s6.A();
+                    long j11 = ey.f25445a;
                     A10.h();
-                    ((C3871s6) A10.f27721u).B(j11);
-                    long j12 = ey.f24690b;
+                    ((C3894s6) A10.f28504u).B(j11);
+                    long j12 = ey.f25446b;
                     A10.h();
-                    ((C3871s6) A10.f27721u).C(j12);
-                    long j13 = ey.f24693e;
+                    ((C3894s6) A10.f28504u).C(j12);
+                    long j13 = ey.f25449e;
                     A10.h();
-                    ((C3871s6) A10.f27721u).F(j13);
-                    String str4 = ey.f24692d;
+                    ((C3894s6) A10.f28504u).F(j13);
+                    String str4 = ey.f25448d;
                     if (str4 != null) {
                         A10.h();
-                        ((C3871s6) A10.f27721u).G(str4);
+                        ((C3894s6) A10.f28504u).G(str4);
                     }
-                    Throwable th = ey.f24691c;
-                    int i14 = th == null ? 2 : 3;
+                    Throwable th = ey.f25447c;
+                    int i13 = th == null ? 2 : 3;
                     A10.h();
-                    ((C3871s6) A10.f27721u).H(i14);
+                    ((C3894s6) A10.f28504u).H(i13);
                     if (th != null) {
                         String name = th.getClass().getName();
                         A10.h();
-                        ((C3871s6) A10.f27721u).D(name);
+                        ((C3894s6) A10.f28504u).D(name);
                         try {
                             stringWriter = new StringWriter();
                             try {
@@ -172,21 +172,21 @@ public final /* synthetic */ class Fy implements Runnable {
                             printWriter.close();
                             stringWriter.close();
                             A10.h();
-                            ((C3871s6) A10.f27721u).E(str);
+                            ((C3894s6) A10.f28504u).E(str);
                         } finally {
                             break;
                         }
                     }
-                    C3871s6 c3871s6 = (C3871s6) A10.j();
-                    c3386j6.h();
-                    ((C3440k6) c3386j6.f27721u).B(c3871s6);
-                    i13++;
-                    i12 = i + 1;
+                    C3894s6 c3894s6 = (C3894s6) A10.j();
+                    c3409j6.h();
+                    ((C3463k6) c3409j6.f28504u).B(c3894s6);
+                    i12++;
+                    i11 = i + 1;
                 }
-                if (i12 > 0) {
-                    gy2.b((C3440k6) c3386j6.j());
-                    c3386j6.h();
-                    ((C3440k6) c3386j6.f27721u).C();
+                if (i11 > 0) {
+                    gy2.b((C3463k6) c3409j6.j());
+                    c3409j6.h();
+                    ((C3463k6) c3409j6.f28504u).C();
                     return;
                 }
                 return;

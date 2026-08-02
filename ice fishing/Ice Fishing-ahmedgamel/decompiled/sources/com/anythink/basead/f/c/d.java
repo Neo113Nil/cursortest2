@@ -9,7 +9,7 @@ import java.util.Map;
 public abstract class d {
     public abstract void a(int i);
 
-    public abstract void a(int i, int i6);
+    public abstract void a(int i, int i4);
 
     public abstract void a(com.anythink.basead.g.a aVar);
 

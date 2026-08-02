@@ -4,52 +4,52 @@ package com.google.android.gms.internal.ads;
 public abstract class QG {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final LG f27012a;
+    public static final LG f27799a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final LG f27013b;
+    public static final LG f27800b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final GG f27014c;
+    public static final GG f27801c;
 
     static {
         try {
             ME me = new ME(2);
             me.a(32);
             me.d(16);
-            FE fe = FE.f24763F;
-            me.f26273e = fe;
-            KG kg = KG.f25892d;
-            me.f26272d = kg;
-            f27012a = me.j();
+            FE fe = FE.f25519F;
+            me.f27064e = fe;
+            KG kg = KG.f26644d;
+            me.f27063d = kg;
+            f27799a = me.j();
             try {
                 ME me2 = new ME(2);
                 me2.a(32);
                 me2.d(32);
-                me2.f26273e = fe;
-                me2.f26272d = kg;
+                me2.f27064e = fe;
+                me2.f27063d = kg;
                 me2.j();
                 try {
                     ME me3 = new ME(2);
                     me3.a(64);
                     me3.d(32);
-                    me3.f26273e = fe;
-                    KG kg2 = KG.f25894f;
-                    me3.f26272d = kg2;
+                    me3.f27064e = fe;
+                    KG kg2 = KG.f26646f;
+                    me3.f27063d = kg2;
                     me3.j();
                     try {
                         ME me4 = new ME(2);
                         me4.a(64);
                         me4.d(64);
-                        me4.f26273e = fe;
-                        me4.f26272d = kg2;
-                        f27013b = me4.j();
+                        me4.f27064e = fe;
+                        me4.f27063d = kg2;
+                        f27800b = me4.j();
                         try {
-                            C3481ku c3481ku = new C3481ku(21);
-                            c3481ku.h(32);
-                            c3481ku.l(16);
-                            c3481ku.f31665w = C3933tE.f34243r;
-                            f27014c = c3481ku.w();
+                            C3504ku c3504ku = new C3504ku(21);
+                            c3504ku.h(32);
+                            c3504ku.l(16);
+                            c3504ku.f32447w = C3956tE.f35029r;
+                            f27801c = c3504ku.v();
                         } catch (Exception e9) {
                             throw new B0.c(e9);
                         }

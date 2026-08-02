@@ -20,13 +20,13 @@ public class g extends d {
         try {
             final DatagramSocket datagramSocket2 = new DatagramSocket();
             try {
-                DatagramPacket datagramPacket = new DatagramPacket(b9, b9.length, byName, this.f14793b);
+                DatagramPacket datagramPacket = new DatagramPacket(b9, b9.length, byName, this.f15579b);
                 try {
-                    datagramSocket2.setSoTimeout((int) this.f14792a);
+                    datagramSocket2.setSoTimeout((int) this.f15578a);
                 } catch (Throwable unused) {
                     datagramSocket2.setSoTimeout(500);
                 }
-                aVar.f14796a.add(new Runnable() { // from class: com.anythink.core.common.n.a.g.1
+                aVar.f15582a.add(new Runnable() { // from class: com.anythink.core.common.n.a.g.1
                     @Override // java.lang.Runnable
                     public final void run() {
                         try {
@@ -60,7 +60,7 @@ public class g extends d {
         }
     }
 
-    private g(String str, int i, long j6, int i6) {
-        super(str, i, j6, i6);
+    private g(String str, int i, long j6, int i4) {
+        super(str, i, j6, i4);
     }
 }

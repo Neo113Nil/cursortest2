@@ -16,44 +16,44 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public final class o {
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f15930b = "Y29tLnhpYW9taS5tYXJrZXQuRE1fUEFHRV9PUEVORUQ=";
+    public static final String f16717b = "Y29tLnhpYW9taS5tYXJrZXQuRE1fUEFHRV9PUEVORUQ=";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f15931c = "Y29tLnhpYW9taS5tYXJrZXQuRE1fUEFHRV9DTE9TRUQ=";
+    public static final String f16718c = "Y29tLnhpYW9taS5tYXJrZXQuRE1fUEFHRV9DTE9TRUQ=";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final String f15932d = "Y29tLnhpYW9taS5tYXJrZXQuRElSRUNUX01BSUxfU1RBVFVT";
+    public static final String f16719d = "Y29tLnhpYW9taS5tYXJrZXQuRElSRUNUX01BSUxfU1RBVFVT";
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f15933e = "Y29udGVudDovL2NvbS54aWFvbWkubWFya2V0LnByb3ZpZGVyLkRpcmVjdE1haWxQcm92aWRlcg==";
+    public static final String f16720e = "Y29udGVudDovL2NvbS54aWFvbWkubWFya2V0LnByb3ZpZGVyLkRpcmVjdE1haWxQcm92aWRlcg==";
 
     /* renamed from: f, reason: collision with root package name */
-    private static final String f15934f = "code";
+    private static final String f16721f = "code";
 
     /* renamed from: g, reason: collision with root package name */
-    private static final String f15935g = "packageName";
+    private static final String f16722g = "packageName";
 
     /* renamed from: j, reason: collision with root package name */
-    private static volatile String f15936j;
+    private static volatile String f16723j;
 
     /* renamed from: n, reason: collision with root package name */
-    private static volatile o f15937n;
+    private static volatile o f16724n;
 
     /* renamed from: a, reason: collision with root package name */
-    BroadcastReceiver f15938a;
+    BroadcastReceiver f16725a;
 
     /* renamed from: h, reason: collision with root package name */
-    private CopyOnWriteArrayList<com.anythink.core.common.h.w> f15939h = new CopyOnWriteArrayList<>();
+    private CopyOnWriteArrayList<com.anythink.core.common.h.w> f16726h = new CopyOnWriteArrayList<>();
     private final AtomicBoolean i = new AtomicBoolean(false);
 
     /* renamed from: k, reason: collision with root package name */
-    private volatile Boolean f15940k;
+    private volatile Boolean f16727k;
 
     /* renamed from: l, reason: collision with root package name */
-    private com.anythink.core.common.h.w f15941l;
+    private com.anythink.core.common.h.w f16728l;
 
     /* renamed from: m, reason: collision with root package name */
-    private Context f15942m;
+    private Context f16729m;
 
     /* renamed from: com.anythink.core.common.o$1, reason: invalid class name */
     public class AnonymousClass1 extends BroadcastReceiver {
@@ -61,13 +61,13 @@ public final class o {
         }
 
         private com.anythink.core.common.h.w a(String str) {
-            if (o.this.f15941l != null && TextUtils.equals(o.this.f15941l.I(), str)) {
-                return o.this.f15941l;
+            if (o.this.f16728l != null && TextUtils.equals(o.this.f16728l.I(), str)) {
+                return o.this.f16728l;
             }
-            if (o.this.f15939h == null || o.this.f15939h.size() <= 0) {
+            if (o.this.f16726h == null || o.this.f16726h.size() <= 0) {
                 return null;
             }
-            Iterator it = o.this.f15939h.iterator();
+            Iterator it = o.this.f16726h.iterator();
             while (it.hasNext()) {
                 com.anythink.core.common.h.w wVar = (com.anythink.core.common.h.w) it.next();
                 if (wVar != null && TextUtils.equals(wVar.I(), str)) {
@@ -82,17 +82,17 @@ public final class o {
             Bundle extras;
             com.anythink.core.common.h.w wVar;
             String action = intent.getAction();
-            if (TextUtils.isEmpty(action) || action.equals(com.anythink.core.common.v.k.b(o.f15930b)) || action.equals(com.anythink.core.common.v.k.b(o.f15931c)) || !action.equals(com.anythink.core.common.v.k.b(o.f15932d)) || (extras = intent.getExtras()) == null) {
+            if (TextUtils.isEmpty(action) || action.equals(com.anythink.core.common.v.k.b(o.f16717b)) || action.equals(com.anythink.core.common.v.k.b(o.f16718c)) || !action.equals(com.anythink.core.common.v.k.b(o.f16719d)) || (extras = intent.getExtras()) == null) {
                 return;
             }
             int i = extras.getInt("code", -1);
-            String string = extras.getString(o.f15935g, "");
+            String string = extras.getString(o.f16722g, "");
             if (i == -1 || TextUtils.isEmpty(string)) {
                 return;
             }
-            if (o.this.f15941l == null || !TextUtils.equals(o.this.f15941l.I(), string)) {
-                if (o.this.f15939h != null && o.this.f15939h.size() > 0) {
-                    Iterator it = o.this.f15939h.iterator();
+            if (o.this.f16728l == null || !TextUtils.equals(o.this.f16728l.I(), string)) {
+                if (o.this.f16726h != null && o.this.f16726h.size() > 0) {
+                    Iterator it = o.this.f16726h.iterator();
                     while (it.hasNext()) {
                         com.anythink.core.common.h.w wVar2 = (com.anythink.core.common.h.w) it.next();
                         if (wVar2 != null && TextUtils.equals(wVar2.I(), string)) {
@@ -103,7 +103,7 @@ public final class o {
                 }
                 wVar = null;
             } else {
-                wVar = o.this.f15941l;
+                wVar = o.this.f16728l;
             }
             if (wVar == null) {
                 return;
@@ -119,31 +119,31 @@ public final class o {
     }
 
     private com.anythink.core.common.h.w d() {
-        return this.f15941l;
+        return this.f16728l;
     }
 
     private void e() {
-        if (this.f15940k == null || !this.f15940k.booleanValue() || this.f15942m == null) {
+        if (this.f16727k == null || !this.f16727k.booleanValue() || this.f16729m == null) {
             return;
         }
         try {
-            this.f15938a = new AnonymousClass1();
+            this.f16725a = new AnonymousClass1();
             IntentFilter intentFilter = new IntentFilter();
-            intentFilter.addAction(com.anythink.core.common.v.k.b(f15930b));
-            intentFilter.addAction(com.anythink.core.common.v.k.b(f15931c));
-            intentFilter.addAction(com.anythink.core.common.v.k.b(f15932d));
-            this.f15942m.registerReceiver(this.f15938a, intentFilter);
+            intentFilter.addAction(com.anythink.core.common.v.k.b(f16717b));
+            intentFilter.addAction(com.anythink.core.common.v.k.b(f16718c));
+            intentFilter.addAction(com.anythink.core.common.v.k.b(f16719d));
+            this.f16729m.registerReceiver(this.f16725a, intentFilter);
         } catch (Throwable unused) {
         }
     }
 
     private static Boolean f() {
         Cursor cursor;
-        Context g4 = com.anythink.core.common.d.t.b().g();
+        Context g9 = com.anythink.core.common.d.t.b().g();
         Boolean bool = null;
-        if (g4 != null && g4.getContentResolver() != null) {
+        if (g9 != null && g9.getContentResolver() != null) {
             try {
-                cursor = g4.getContentResolver().query(Uri.parse(com.anythink.core.common.v.k.b(f15933e)), null, null, null, null);
+                cursor = g9.getContentResolver().query(Uri.parse(com.anythink.core.common.v.k.b(f16720e)), null, null, null, null);
             } catch (Throwable unused) {
                 cursor = null;
             }
@@ -157,7 +157,7 @@ public final class o {
                     } catch (Throwable unused2) {
                     }
                     try {
-                        f15936j = cursor.getString(cursor.getColumnIndex("detailStyle"));
+                        f16723j = cursor.getString(cursor.getColumnIndex("detailStyle"));
                     } catch (Exception unused3) {
                     }
                 }
@@ -171,40 +171,40 @@ public final class o {
     }
 
     public final int c() {
-        if (this.f15940k != null) {
-            return this.f15940k.booleanValue() ? 1 : 0;
+        if (this.f16727k != null) {
+            return this.f16727k.booleanValue() ? 1 : 0;
         }
         return -1;
     }
 
     public static o a() {
-        if (f15937n == null) {
+        if (f16724n == null) {
             synchronized (o.class) {
                 try {
-                    if (f15937n == null) {
-                        f15937n = new o();
+                    if (f16724n == null) {
+                        f16724n = new o();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f15937n;
+        return f16724n;
     }
 
     public final void b(com.anythink.core.common.h.w wVar) {
-        if (this.f15940k == null || wVar == null || !this.f15940k.booleanValue()) {
+        if (this.f16727k == null || wVar == null || !this.f16727k.booleanValue()) {
             return;
         }
-        this.f15941l = null;
+        this.f16728l = null;
         try {
-            this.f15939h.remove(wVar);
+            this.f16726h.remove(wVar);
         } catch (Exception unused) {
         }
     }
 
     private void b(Context context) {
-        BroadcastReceiver broadcastReceiver = this.f15938a;
+        BroadcastReceiver broadcastReceiver = this.f16725a;
         if (broadcastReceiver == null || context == null) {
             return;
         }
@@ -212,35 +212,35 @@ public final class o {
             context.unregisterReceiver(broadcastReceiver);
         } catch (Throwable unused) {
         }
-        this.f15941l = null;
-        this.f15939h.clear();
-        this.f15939h = null;
-        this.f15938a = null;
-        this.f15942m = null;
+        this.f16728l = null;
+        this.f16726h.clear();
+        this.f16726h = null;
+        this.f16725a = null;
+        this.f16729m = null;
     }
 
     public final void a(com.anythink.core.common.h.w wVar) {
-        if (this.f15940k == null || wVar == null || !this.f15940k.booleanValue()) {
+        if (this.f16727k == null || wVar == null || !this.f16727k.booleanValue()) {
             return;
         }
-        this.f15941l = wVar;
-        this.f15939h.add(wVar);
+        this.f16728l = wVar;
+        this.f16726h.add(wVar);
     }
 
     public final void a(Context context) {
-        this.f15942m = context;
+        this.f16729m = context;
         if (this.i.compareAndSet(false, true)) {
             try {
-                this.f15940k = f();
-                if (this.f15940k == null || !this.f15940k.booleanValue() || this.f15942m == null) {
+                this.f16727k = f();
+                if (this.f16727k == null || !this.f16727k.booleanValue() || this.f16729m == null) {
                     return;
                 }
-                this.f15938a = new AnonymousClass1();
+                this.f16725a = new AnonymousClass1();
                 IntentFilter intentFilter = new IntentFilter();
-                intentFilter.addAction(com.anythink.core.common.v.k.b(f15930b));
-                intentFilter.addAction(com.anythink.core.common.v.k.b(f15931c));
-                intentFilter.addAction(com.anythink.core.common.v.k.b(f15932d));
-                this.f15942m.registerReceiver(this.f15938a, intentFilter);
+                intentFilter.addAction(com.anythink.core.common.v.k.b(f16717b));
+                intentFilter.addAction(com.anythink.core.common.v.k.b(f16718c));
+                intentFilter.addAction(com.anythink.core.common.v.k.b(f16719d));
+                this.f16729m.registerReceiver(this.f16725a, intentFilter);
             } catch (Throwable unused) {
             }
         }
@@ -248,10 +248,10 @@ public final class o {
 
     public static String b() {
         try {
-            if (f15936j == null) {
+            if (f16723j == null) {
                 return "";
             }
-            return "[" + f15936j + "]";
+            return "[" + f16723j + "]";
         } catch (Throwable unused) {
             return "";
         }

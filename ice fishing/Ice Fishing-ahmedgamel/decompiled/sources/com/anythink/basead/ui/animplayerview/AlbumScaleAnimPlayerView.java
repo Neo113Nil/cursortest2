@@ -24,16 +24,16 @@ import java.util.List;
 public class AlbumScaleAnimPlayerView extends BaseMainAnimPlayerView {
 
     /* renamed from: A, reason: collision with root package name */
-    private boolean f10431A;
+    private boolean f11217A;
 
     /* renamed from: B, reason: collision with root package name */
-    private List<Bitmap> f10432B;
+    private List<Bitmap> f11218B;
 
     /* renamed from: C, reason: collision with root package name */
-    private Paint f10433C;
+    private Paint f11219C;
 
     /* renamed from: h, reason: collision with root package name */
-    private c f10434h;
+    private c f11220h;
 
     /* renamed from: com.anythink.basead.ui.animplayerview.AlbumScaleAnimPlayerView$1, reason: invalid class name */
     public class AnonymousClass1 implements b.a {
@@ -42,25 +42,25 @@ public class AlbumScaleAnimPlayerView extends BaseMainAnimPlayerView {
 
         @Override // com.anythink.core.common.res.b.a
         public final void onFail(String str, String str2) {
-            AlbumScaleAnimPlayerView.this.a(g.a(g.f6180l, g.f6164T));
+            AlbumScaleAnimPlayerView.this.a(g.a(g.f6966l, g.f6950T));
         }
 
         @Override // com.anythink.core.common.res.b.a
         public final void onSuccess(String str, Bitmap bitmap) {
-            if (TextUtils.equals(str, AlbumScaleAnimPlayerView.this.f10441e)) {
-                if (AlbumScaleAnimPlayerView.this.f10434h == null) {
-                    AlbumScaleAnimPlayerView.this.f10434h = new AlbumScaleAnimatorView(AlbumScaleAnimPlayerView.this.getContext().getApplicationContext());
-                    AlbumScaleAnimPlayerView.this.f10434h.setBitmapResources(AlbumScaleAnimPlayerView.this.f10432B);
+            if (TextUtils.equals(str, AlbumScaleAnimPlayerView.this.f11227e)) {
+                if (AlbumScaleAnimPlayerView.this.f11220h == null) {
+                    AlbumScaleAnimPlayerView.this.f11220h = new AlbumScaleAnimatorView(AlbumScaleAnimPlayerView.this.getContext().getApplicationContext());
+                    AlbumScaleAnimPlayerView.this.f11220h.setBitmapResources(AlbumScaleAnimPlayerView.this.f11218B);
                     RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -1);
                     layoutParams.addRule(13);
                     AlbumScaleAnimPlayerView albumScaleAnimPlayerView = AlbumScaleAnimPlayerView.this;
-                    albumScaleAnimPlayerView.addView((View) albumScaleAnimPlayerView.f10434h, layoutParams);
-                    AlbumScaleAnimPlayerView.this.f10434h.addMainView(bitmap, new WrapRoundImageView[0]);
+                    albumScaleAnimPlayerView.addView((View) albumScaleAnimPlayerView.f11220h, layoutParams);
+                    AlbumScaleAnimPlayerView.this.f11220h.addMainView(bitmap, new WrapRoundImageView[0]);
                 }
-                if (AlbumScaleAnimPlayerView.this.f10431A) {
+                if (AlbumScaleAnimPlayerView.this.f11217A) {
                     AlbumScaleAnimPlayerView.d(AlbumScaleAnimPlayerView.this);
-                    if (AlbumScaleAnimPlayerView.this.f10434h != null) {
-                        AlbumScaleAnimPlayerView.this.f10434h.start();
+                    if (AlbumScaleAnimPlayerView.this.f11220h != null) {
+                        AlbumScaleAnimPlayerView.this.f11220h.start();
                     }
                 }
             }
@@ -72,19 +72,19 @@ public class AlbumScaleAnimPlayerView extends BaseMainAnimPlayerView {
     }
 
     public static /* synthetic */ boolean d(AlbumScaleAnimPlayerView albumScaleAnimPlayerView) {
-        albumScaleAnimPlayerView.f10431A = false;
+        albumScaleAnimPlayerView.f11217A = false;
         return false;
     }
 
     private void i() {
         LinearGradient linearGradient = new LinearGradient(0.0f, 0.0f, getWidth(), getHeight(), new int[]{Color.parseColor("#DF4B32"), Color.parseColor("#800915")}, new float[]{0.0f, 1.0f}, Shader.TileMode.CLAMP);
         Paint paint = new Paint();
-        this.f10433C = paint;
+        this.f11219C = paint;
         paint.setShader(linearGradient);
     }
 
     private void j() {
-        com.anythink.core.common.res.b.a(getContext()).a(new e(1, this.f10441e), getResources().getDisplayMetrics().widthPixels, getResources().getDisplayMetrics().heightPixels, new AnonymousClass1());
+        com.anythink.core.common.res.b.a(getContext()).a(new e(1, this.f11227e), getResources().getDisplayMetrics().widthPixels, getResources().getDisplayMetrics().heightPixels, new AnonymousClass1());
     }
 
     @Override // com.anythink.basead.ui.animplayerview.BaseAnimPlayerView
@@ -93,16 +93,16 @@ public class AlbumScaleAnimPlayerView extends BaseMainAnimPlayerView {
     }
 
     @Override // com.anythink.basead.ui.animplayerview.BaseMainAnimPlayerView, com.anythink.basead.ui.animplayerview.BaseAnimPlayerView, com.anythink.basead.ui.animplayerview.BasePlayerView
-    public void init(w wVar, x xVar, boolean z3, List<Bitmap> list, com.anythink.basead.j.e eVar) {
-        this.f10432B = list;
-        super.init(wVar, xVar, z3, list, eVar);
+    public void init(w wVar, x xVar, boolean z6, List<Bitmap> list, com.anythink.basead.j.e eVar) {
+        this.f11218B = list;
+        super.init(wVar, xVar, z6, list, eVar);
     }
 
     @Override // android.view.View
     public void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        if (this.f10433C != null) {
-            canvas.drawRect(0.0f, 0.0f, getWidth(), getHeight(), this.f10433C);
+        if (this.f11219C != null) {
+            canvas.drawRect(0.0f, 0.0f, getWidth(), getHeight(), this.f11219C);
         }
     }
 
@@ -112,7 +112,7 @@ public class AlbumScaleAnimPlayerView extends BaseMainAnimPlayerView {
 
     @Override // com.anythink.basead.ui.animplayerview.BaseAnimPlayerView
     public final void b() {
-        c cVar = this.f10434h;
+        c cVar = this.f11220h;
         if (cVar != null) {
             cVar.pause();
         }
@@ -120,7 +120,7 @@ public class AlbumScaleAnimPlayerView extends BaseMainAnimPlayerView {
 
     @Override // com.anythink.basead.ui.animplayerview.BaseAnimPlayerView
     public final void c() {
-        c cVar = this.f10434h;
+        c cVar = this.f11220h;
         if (cVar != null) {
             cVar.stop();
         }
@@ -128,10 +128,10 @@ public class AlbumScaleAnimPlayerView extends BaseMainAnimPlayerView {
 
     @Override // com.anythink.basead.ui.animplayerview.BaseAnimPlayerView
     public final void d() {
-        c cVar = this.f10434h;
+        c cVar = this.f11220h;
         if (cVar != null) {
             cVar.release();
-            this.f10434h = null;
+            this.f11220h = null;
         }
     }
 
@@ -141,11 +141,11 @@ public class AlbumScaleAnimPlayerView extends BaseMainAnimPlayerView {
 
     @Override // com.anythink.basead.ui.animplayerview.BaseAnimPlayerView
     public final void a() {
-        c cVar = this.f10434h;
+        c cVar = this.f11220h;
         if (cVar != null) {
             cVar.start();
         } else {
-            this.f10431A = true;
+            this.f11217A = true;
         }
     }
 
@@ -153,8 +153,8 @@ public class AlbumScaleAnimPlayerView extends BaseMainAnimPlayerView {
     public final void a(Context context) {
         LinearGradient linearGradient = new LinearGradient(0.0f, 0.0f, getWidth(), getHeight(), new int[]{Color.parseColor("#DF4B32"), Color.parseColor("#800915")}, new float[]{0.0f, 1.0f}, Shader.TileMode.CLAMP);
         Paint paint = new Paint();
-        this.f10433C = paint;
+        this.f11219C = paint;
         paint.setShader(linearGradient);
-        com.anythink.core.common.res.b.a(getContext()).a(new e(1, this.f10441e), getResources().getDisplayMetrics().widthPixels, getResources().getDisplayMetrics().heightPixels, new AnonymousClass1());
+        com.anythink.core.common.res.b.a(getContext()).a(new e(1, this.f11227e), getResources().getDisplayMetrics().widthPixels, getResources().getDisplayMetrics().heightPixels, new AnonymousClass1());
     }
 }

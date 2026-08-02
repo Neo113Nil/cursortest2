@@ -6,17 +6,17 @@ import java.util.ArrayList;
 public final class x {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Object f4466a;
+    public final Object f4434a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f4467b;
+    public boolean f4435b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final ArrayList f4468c;
+    public final ArrayList f4436c;
 
     public x(k executor, o oVar) {
         kotlin.jvm.internal.h.e(executor, "executor");
-        this.f4466a = new Object();
-        this.f4468c = new ArrayList();
+        this.f4434a = new Object();
+        this.f4436c = new ArrayList();
     }
 }

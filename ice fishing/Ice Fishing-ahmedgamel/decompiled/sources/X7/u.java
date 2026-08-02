@@ -1,36 +1,36 @@
 package X7;
 
-import a.AbstractC0422a;
-import u7.AbstractC5091i;
+import a.AbstractC0426a;
+import u7.AbstractC5083i;
 
 /* loaded from: classes2.dex */
 public abstract class u {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final /* synthetic */ int f3861a = 0;
+    public static final /* synthetic */ int f3816a = 0;
 
     static {
-        Object f3;
-        Object f9;
+        Object b9;
+        Object b10;
         Exception exc = new Exception();
-        String simpleName = AbstractC0422a.class.getSimpleName();
+        String simpleName = AbstractC0426a.class.getSimpleName();
         StackTraceElement stackTraceElement = exc.getStackTrace()[0];
         new StackTraceElement("_COROUTINE.".concat(simpleName), "_", stackTraceElement.getFileName(), stackTraceElement.getLineNumber());
         try {
-            f3 = B7.a.class.getCanonicalName();
+            b9 = B7.a.class.getCanonicalName();
         } catch (Throwable th) {
-            f3 = com.bumptech.glide.d.f(th);
+            b9 = Q3.b.b(th);
         }
-        if (AbstractC5091i.a(f3) != null) {
-            f3 = "kotlin.coroutines.jvm.internal.BaseContinuationImpl";
+        if (AbstractC5083i.a(b9) != null) {
+            b9 = "kotlin.coroutines.jvm.internal.BaseContinuationImpl";
         }
         try {
-            f9 = u.class.getCanonicalName();
+            b10 = u.class.getCanonicalName();
         } catch (Throwable th2) {
-            f9 = com.bumptech.glide.d.f(th2);
+            b10 = Q3.b.b(th2);
         }
-        if (AbstractC5091i.a(f9) != null) {
-            f9 = "kotlinx.coroutines.internal.StackTraceRecoveryKt";
+        if (AbstractC5083i.a(b10) != null) {
+            b10 = "kotlinx.coroutines.internal.StackTraceRecoveryKt";
         }
     }
 }

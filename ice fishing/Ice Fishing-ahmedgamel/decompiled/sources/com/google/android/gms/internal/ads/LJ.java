@@ -1,6 +1,5 @@
 package com.google.android.gms.internal.ads;
 
-import O2.C0361k;
 import java.math.BigInteger;
 import java.security.GeneralSecurityException;
 import java.util.Collections;
@@ -10,119 +9,119 @@ import java.util.HashMap;
 public abstract class LJ {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final C3504lG f26091a;
+    public static final C3527lG f26891a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final C3396jG f26092b;
+    public static final C3419jG f26892b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final TF f26093c;
+    public static final TF f26893c;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final RF f26094d;
+    public static final RF f26894d;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final TF f26095e;
+    public static final TF f26895e;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final RF f26096f;
+    public static final RF f26896f;
 
     /* renamed from: g, reason: collision with root package name */
-    public static final C0361k f26097g;
+    public static final S0.e f26897g;
 
     static {
-        C3240gK a9 = DG.a("type.googleapis.com/google.crypto.tink.RsaSsaPssPrivateKey");
-        C3240gK a10 = DG.a("type.googleapis.com/google.crypto.tink.RsaSsaPssPublicKey");
-        f26091a = new C3504lG(C3992uJ.class, C3453kJ.f31409W);
-        f26092b = new C3396jG(a9, C3453kJ.f31404R);
-        f26093c = new TF(C4100wJ.class, C3453kJ.f31405S);
-        f26094d = new RF(a10, C3453kJ.f31406T);
-        f26095e = new TF(C4046vJ.class, C3453kJ.f31407U);
-        f26096f = new RF(a9, C3453kJ.f31408V);
+        C3263gK a9 = DG.a("type.googleapis.com/google.crypto.tink.RsaSsaPssPrivateKey");
+        C3263gK a10 = DG.a("type.googleapis.com/google.crypto.tink.RsaSsaPssPublicKey");
+        f26891a = new C3527lG(C4015uJ.class, C3476kJ.f32188W);
+        f26892b = new C3419jG(a9, C3476kJ.f32183R);
+        f26893c = new TF(C4123wJ.class, C3476kJ.f32184S);
+        f26894d = new RF(a10, C3476kJ.f32185T);
+        f26895e = new TF(C4069vJ.class, C3476kJ.f32186U);
+        f26896f = new RF(a9, C3476kJ.f32187V);
         HashMap hashMap = new HashMap();
         HashMap hashMap2 = new HashMap();
         WH wh = WH.SHA256;
-        C3938tJ c3938tJ = C3938tJ.f34259b;
-        hashMap.put(wh, c3938tJ);
-        hashMap2.put(c3938tJ, wh);
+        C3961tJ c3961tJ = C3961tJ.f35045b;
+        hashMap.put(wh, c3961tJ);
+        hashMap2.put(c3961tJ, wh);
         WH wh2 = WH.SHA384;
-        C3938tJ c3938tJ2 = C3938tJ.f34260c;
-        hashMap.put(wh2, c3938tJ2);
-        hashMap2.put(c3938tJ2, wh2);
+        C3961tJ c3961tJ2 = C3961tJ.f35046c;
+        hashMap.put(wh2, c3961tJ2);
+        hashMap2.put(c3961tJ2, wh2);
         WH wh3 = WH.SHA512;
-        C3938tJ c3938tJ3 = C3938tJ.f34261d;
-        hashMap.put(wh3, c3938tJ3);
-        hashMap2.put(c3938tJ3, wh3);
-        f26097g = new C0361k(Collections.unmodifiableMap(hashMap), Collections.unmodifiableMap(hashMap2));
+        C3961tJ c3961tJ3 = C3961tJ.f35047d;
+        hashMap.put(wh3, c3961tJ3);
+        hashMap2.put(c3961tJ3, wh3);
+        f26897g = new S0.e(26, Collections.unmodifiableMap(hashMap), Collections.unmodifiableMap(hashMap2));
     }
 
-    public static C3933tE a(C3879sE c3879sE) {
-        if (c3879sE.equals(C3879sE.f33926u)) {
-            return C3933tE.f34232f;
+    public static C3956tE a(C3902sE c3902sE) {
+        if (c3902sE.equals(C3902sE.f34694u)) {
+            return C3956tE.f35018f;
         }
-        if (c3879sE.equals(C3879sE.f33923r)) {
-            return C3933tE.f34230d;
+        if (c3902sE.equals(C3902sE.f34691r)) {
+            return C3956tE.f35016d;
         }
-        if (c3879sE.equals(C3879sE.f33924s)) {
-            return C3933tE.f34233g;
+        if (c3902sE.equals(C3902sE.f34692s)) {
+            return C3956tE.f35019g;
         }
-        if (c3879sE.equals(C3879sE.f33925t)) {
-            return C3933tE.f34231e;
+        if (c3902sE.equals(C3902sE.f34693t)) {
+            return C3956tE.f35017e;
         }
-        throw new GeneralSecurityException("Unable to serialize variant: ".concat(String.valueOf(c3879sE)));
+        throw new GeneralSecurityException("Unable to serialize variant: ".concat(String.valueOf(c3902sE)));
     }
 
-    public static C3879sE b(C3933tE c3933tE) {
-        if (c3933tE == C3933tE.f34232f) {
-            return C3879sE.f33926u;
+    public static C3902sE b(C3956tE c3956tE) {
+        if (c3956tE == C3956tE.f35018f) {
+            return C3902sE.f34694u;
         }
-        if (c3933tE == C3933tE.f34230d) {
-            return C3879sE.f33923r;
+        if (c3956tE == C3956tE.f35016d) {
+            return C3902sE.f34691r;
         }
-        if (c3933tE == C3933tE.f34233g) {
-            return C3879sE.f33924s;
+        if (c3956tE == C3956tE.f35019g) {
+            return C3902sE.f34692s;
         }
-        if (c3933tE == C3933tE.f34231e) {
-            return C3879sE.f33925t;
+        if (c3956tE == C3956tE.f35017e) {
+            return C3902sE.f34693t;
         }
-        throw new GeneralSecurityException("Unable to parse OutputPrefixType: ".concat(c3933tE.f34252b));
+        throw new GeneralSecurityException("Unable to parse OutputPrefixType: ".concat(c3956tE.f35038b));
     }
 
-    public static KI c(C3992uJ c3992uJ) {
+    public static KI c(C4015uJ c4015uJ) {
         JI D8 = KI.D();
-        C3938tJ c3938tJ = c3992uJ.f34514d;
-        C0361k c0361k = f26097g;
-        WH wh = (WH) c0361k.b(c3938tJ);
+        C3961tJ c3961tJ = c4015uJ.f35288d;
+        S0.e eVar = f26897g;
+        WH wh = (WH) eVar.H(c3961tJ);
         D8.h();
-        ((KI) D8.f27721u).F(wh);
-        WH wh2 = (WH) c0361k.b(c3992uJ.f34515e);
+        ((KI) D8.f28504u).F(wh);
+        WH wh2 = (WH) eVar.H(c4015uJ.f35289e);
         D8.h();
-        ((KI) D8.f27721u).G(wh2);
+        ((KI) D8.f28504u).G(wh2);
         D8.h();
-        ((KI) D8.f27721u).H(c3992uJ.f34516f);
+        ((KI) D8.f28504u).H(c4015uJ.f35290f);
         return (KI) D8.j();
     }
 
-    public static OI d(C4100wJ c4100wJ) {
+    public static OI d(C4123wJ c4123wJ) {
         NI F8 = OI.F();
-        KI c9 = c(c4100wJ.f34824b);
+        KI c9 = c(c4123wJ.f35593b);
         F8.h();
-        ((OI) F8.f27721u).J(c9);
-        byte[] c10 = AbstractC4094wD.c(c4100wJ.f34825c);
-        HK hk = JK.f25675u;
+        ((OI) F8.f28504u).J(c9);
+        byte[] c10 = AbstractC4117wD.c(c4123wJ.f35594c);
+        HK hk = JK.f26428u;
         HK s9 = JK.s(c10, 0, c10.length);
         F8.h();
-        ((OI) F8.f27721u).K(s9);
-        byte[] c11 = AbstractC4094wD.c(c4100wJ.f34824b.f34512b);
+        ((OI) F8.f28504u).K(s9);
+        byte[] c11 = AbstractC4117wD.c(c4123wJ.f35593b.f35286b);
         HK s10 = JK.s(c11, 0, c11.length);
         F8.h();
-        ((OI) F8.f27721u).L(s10);
+        ((OI) F8.f28504u).L(s10);
         F8.h();
-        ((OI) F8.f27721u).I(0);
+        ((OI) F8.f28504u).I(0);
         return (OI) F8.j();
     }
 
-    public static C3534lt e(JK jk) {
-        return new C3534lt(9, new BigInteger(1, jk.a()));
+    public static C3557lt e(JK jk) {
+        return new C3557lt(9, new BigInteger(1, jk.a()));
     }
 }

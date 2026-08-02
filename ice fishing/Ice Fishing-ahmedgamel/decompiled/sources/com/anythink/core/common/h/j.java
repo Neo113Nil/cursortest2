@@ -9,36 +9,36 @@ import java.util.List;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    protected List<c> f13972a;
+    protected List<c> f14758a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected c f13973b;
+    protected c f14759b;
 
     /* renamed from: c, reason: collision with root package name */
-    protected boolean f13974c;
+    protected boolean f14760c;
 
     public final c a() {
-        List<c> list = this.f13972a;
+        List<c> list = this.f14758a;
         if (list == null || list.size() <= 0) {
             return null;
         }
-        return this.f13972a.get(0);
+        return this.f14758a.get(0);
     }
 
     public final c b() {
-        List<c> list = this.f13972a;
+        List<c> list = this.f14758a;
         if (list == null || list.size() <= 0) {
             return null;
         }
-        return this.f13972a.get(r0.size() - 1);
+        return this.f14758a.get(r0.size() - 1);
     }
 
     public final boolean c() {
-        return this.f13974c;
+        return this.f14760c;
     }
 
     public final int d() {
-        List<c> list = this.f13972a;
+        List<c> list = this.f14758a;
         if (list != null) {
             return list.size();
         }
@@ -46,16 +46,16 @@ public final class j {
     }
 
     public final c e() {
-        return this.f13973b;
+        return this.f14759b;
     }
 
     public final List<bz.a> f() {
-        List<c> list = this.f13972a;
+        List<c> list = this.f14758a;
         if (list == null || list.size() == 0) {
             return null;
         }
         ArrayList arrayList = new ArrayList();
-        Iterator<c> it = this.f13972a.iterator();
+        Iterator<c> it = this.f14758a.iterator();
         while (it.hasNext()) {
             bv unitGroupInfo = it.next().e().getUnitGroupInfo();
             arrayList.add(new bz.a(unitGroupInfo, unitGroupInfo.R()));

@@ -1,6 +1,6 @@
 package com.onesignal.notifications.internal.open.impl;
 
-import D.N;
+import D.M;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.ContentValues;
@@ -15,13 +15,13 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import t5.e;
-import u5.C5082c;
+import u5.C5074c;
 import u7.v;
-import z5.InterfaceC5262a;
-import z7.InterfaceC5267d;
+import z5.InterfaceC5235a;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
-public final class b implements InterfaceC5262a {
+public final class b implements InterfaceC5235a {
     private final com.onesignal.core.internal.config.c _configModelStore;
     private final u5.d _dataController;
     private final x5.b _lifecycleService;
@@ -32,8 +32,8 @@ public final class b implements InterfaceC5262a {
         int label;
         /* synthetic */ Object result;
 
-        public a(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public a(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -53,8 +53,8 @@ public final class b implements InterfaceC5262a {
         int label;
         /* synthetic */ Object result;
 
-        public C0235b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public C0235b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -75,8 +75,8 @@ public final class b implements InterfaceC5262a {
         int label;
         /* synthetic */ Object result;
 
-        public c(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public c(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -95,8 +95,8 @@ public final class b implements InterfaceC5262a {
         int label;
         /* synthetic */ Object result;
 
-        public d(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public d(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -125,20 +125,20 @@ public final class b implements InterfaceC5262a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object addChildNotifications(JSONArray jSONArray, String str, InterfaceC5267d interfaceC5267d) {
+    public final Object addChildNotifications(JSONArray jSONArray, String str, InterfaceC5240d interfaceC5240d) {
         a aVar;
         int i;
         Iterator it;
-        if (interfaceC5267d instanceof a) {
-            aVar = (a) interfaceC5267d;
-            int i6 = aVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                aVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof a) {
+            aVar = (a) interfaceC5240d;
+            int i4 = aVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                aVar.label = i4 - Integer.MIN_VALUE;
                 Object obj = aVar.result;
-                A7.a aVar2 = A7.a.f58n;
+                A7.a aVar2 = A7.a.f215n;
                 i = aVar.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     u5.d dVar = this._dataController;
                     aVar.L$0 = jSONArray;
                     aVar.label = 1;
@@ -151,33 +151,33 @@ public final class b implements InterfaceC5262a {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     jSONArray = (JSONArray) aVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 it = ((List) obj).iterator();
                 while (it.hasNext()) {
-                    jSONArray.put(new JSONObject(((C5082c) it.next()).getFullData()));
+                    jSONArray.put(new JSONObject(((C5074c) it.next()).getFullData()));
                 }
-                return v.f41353a;
+                return v.f41073a;
             }
         }
-        aVar = new a(interfaceC5267d);
+        aVar = new a(interfaceC5240d);
         Object obj2 = aVar.result;
-        A7.a aVar22 = A7.a.f58n;
+        A7.a aVar22 = A7.a.f215n;
         i = aVar.label;
         if (i != 0) {
         }
         it = ((List) obj2).iterator();
         while (it.hasNext()) {
         }
-        return v.f41353a;
+        return v.f41073a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final Object clearStatusBarNotifications(Context context, String str, InterfaceC5267d interfaceC5267d) {
-        v vVar = v.f41353a;
+    public final Object clearStatusBarNotifications(Context context, String str, InterfaceC5240d interfaceC5240d) {
+        v vVar = v.f41073a;
         if (str != null) {
-            Object clearNotificationOnSummaryClick = this._summaryManager.clearNotificationOnSummaryClick(str, interfaceC5267d);
-            return clearNotificationOnSummaryClick == A7.a.f58n ? clearNotificationOnSummaryClick : vVar;
+            Object clearNotificationOnSummaryClick = this._summaryManager.clearNotificationOnSummaryClick(str, interfaceC5240d);
+            return clearNotificationOnSummaryClick == A7.a.f215n ? clearNotificationOnSummaryClick : vVar;
         }
         e eVar = e.INSTANCE;
         if (eVar.getGrouplessNotifsCount(context) < 1) {
@@ -190,8 +190,8 @@ public final class b implements InterfaceC5262a {
     private final void handleDismissFromActionButtonPress(Context context, Intent intent) {
         if (intent.getBooleanExtra("action_button", false)) {
             h.b(context);
-            N n9 = new N(context);
-            n9.f461b.cancel(null, intent.getIntExtra("androidNotificationId", 0));
+            M m9 = new M(context);
+            m9.f358b.cancel(null, intent.getIntExtra("androidNotificationId", 0));
             if (Build.VERSION.SDK_INT < 31) {
                 context.sendBroadcast(new Intent("android.intent.action.CLOSE_SYSTEM_DIALOGS"));
             }
@@ -212,27 +212,27 @@ public final class b implements InterfaceC5262a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object markNotificationsConsumed(Context context, Intent intent, boolean z3, InterfaceC5267d interfaceC5267d) {
+    public final Object markNotificationsConsumed(Context context, Intent intent, boolean z6, InterfaceC5240d interfaceC5240d) {
         C0235b c0235b;
         int i;
         b bVar;
         String str;
-        if (interfaceC5267d instanceof C0235b) {
-            c0235b = (C0235b) interfaceC5267d;
-            int i6 = c0235b.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                c0235b.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof C0235b) {
+            c0235b = (C0235b) interfaceC5240d;
+            int i4 = c0235b.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                c0235b.label = i4 - Integer.MIN_VALUE;
                 C0235b c0235b2 = c0235b;
                 Object obj = c0235b2.result;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 i = c0235b2.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     String stringExtra = intent.getStringExtra("summary");
                     c0235b2.L$0 = this;
                     c0235b2.L$1 = intent;
                     c0235b2.L$2 = stringExtra;
-                    c0235b2.Z$0 = z3;
+                    c0235b2.Z$0 = z6;
                     c0235b2.label = 1;
                     if (clearStatusBarNotifications(context, stringExtra, c0235b2) != aVar) {
                         bVar = this;
@@ -244,16 +244,16 @@ public final class b implements InterfaceC5262a {
                     if (i != 2) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
-                    return v.f41353a;
+                    Q3.b.s(obj);
+                    return v.f41073a;
                 }
-                z3 = c0235b2.Z$0;
+                z6 = c0235b2.Z$0;
                 String str2 = (String) c0235b2.L$2;
                 intent = (Intent) c0235b2.L$1;
                 bVar = (b) c0235b2.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 str = str2;
-                boolean z6 = z3;
+                boolean z9 = z6;
                 u5.d dVar = bVar._dataController;
                 int intExtra = intent.getIntExtra("androidNotificationId", 0);
                 boolean clearGroupOnSummaryClick = ((com.onesignal.core.internal.config.b) bVar._configModelStore.getModel()).getClearGroupOnSummaryClick();
@@ -263,14 +263,14 @@ public final class b implements InterfaceC5262a {
                 c0235b2.label = 2;
             }
         }
-        c0235b = new C0235b(interfaceC5267d);
+        c0235b = new C0235b(interfaceC5240d);
         C0235b c0235b22 = c0235b;
         Object obj2 = c0235b22.result;
-        A7.a aVar2 = A7.a.f58n;
+        A7.a aVar2 = A7.a.f215n;
         i = c0235b22.label;
         if (i != 0) {
         }
-        boolean z62 = z3;
+        boolean z92 = z6;
         u5.d dVar2 = bVar._dataController;
         int intExtra2 = intent.getIntExtra("androidNotificationId", 0);
         boolean clearGroupOnSummaryClick2 = ((com.onesignal.core.internal.config.b) bVar._configModelStore.getModel()).getClearGroupOnSummaryClick();
@@ -301,7 +301,7 @@ public final class b implements InterfaceC5262a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object processIntent(Context context, Intent intent, InterfaceC5267d interfaceC5267d) {
+    public final Object processIntent(Context context, Intent intent, InterfaceC5240d interfaceC5240d) {
         c cVar;
         A7.a aVar;
         int i;
@@ -314,24 +314,24 @@ public final class b implements InterfaceC5262a {
         com.onesignal.notifications.internal.open.impl.a aVar3;
         b bVar2;
         Context context2;
-        boolean z3;
+        boolean z6;
         String str;
         String stringExtra2;
         E5.a aVar4;
         Intent intent3;
         Context context3;
         b bVar3;
-        if (interfaceC5267d instanceof c) {
-            cVar = (c) interfaceC5267d;
-            int i6 = cVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                cVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof c) {
+            cVar = (c) interfaceC5240d;
+            int i4 = cVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                cVar.label = i4 - Integer.MIN_VALUE;
                 Object obj = cVar.result;
-                aVar = A7.a.f58n;
+                aVar = A7.a.f215n;
                 i = cVar.label;
-                v vVar = v.f41353a;
+                v vVar = v.f41073a;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     stringExtra = intent.getStringExtra("summary");
                     booleanExtra = intent.getBooleanExtra("dismissed", false);
                     if (!booleanExtra) {
@@ -362,7 +362,7 @@ public final class b implements InterfaceC5262a {
                         aVar3 = aVar5;
                         bVar2 = bVar;
                         context2 = context;
-                        z3 = booleanExtra;
+                        z6 = booleanExtra;
                         str = stringExtra;
                         if (str == null) {
                             aVar4 = bVar2._summaryManager;
@@ -371,15 +371,15 @@ public final class b implements InterfaceC5262a {
                             cVar.L$2 = intent2;
                             cVar.L$3 = aVar3;
                             cVar.L$4 = null;
-                            cVar.Z$0 = z3;
+                            cVar.Z$0 = z6;
                             cVar.label = 3;
-                            if (aVar4.updateSummaryNotificationAfterChildRemoved(stringExtra2, z3, cVar) != aVar) {
+                            if (aVar4.updateSummaryNotificationAfterChildRemoved(stringExtra2, z6, cVar) != aVar) {
                             }
                         }
                         com.onesignal.debug.internal.logging.b.debug$default("processIntent from context: " + context2 + " and intent: " + intent2, null, 2, null);
                         if (intent2.getExtras() != null) {
                         }
-                        if (!z3) {
+                        if (!z6) {
                         }
                         return vVar;
                     }
@@ -387,13 +387,13 @@ public final class b implements InterfaceC5262a {
                 }
                 if (i != 1) {
                     if (i == 2) {
-                        z3 = cVar.Z$0;
+                        z6 = cVar.Z$0;
                         aVar3 = (com.onesignal.notifications.internal.open.impl.a) cVar.L$4;
                         str = (String) cVar.L$3;
                         intent2 = (Intent) cVar.L$2;
                         context2 = (Context) cVar.L$1;
                         bVar2 = (b) cVar.L$0;
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                         if (str == null && (stringExtra2 = intent2.getStringExtra("grp")) != null) {
                             aVar4 = bVar2._summaryManager;
                             cVar.L$0 = bVar2;
@@ -401,9 +401,9 @@ public final class b implements InterfaceC5262a {
                             cVar.L$2 = intent2;
                             cVar.L$3 = aVar3;
                             cVar.L$4 = null;
-                            cVar.Z$0 = z3;
+                            cVar.Z$0 = z6;
                             cVar.label = 3;
-                            if (aVar4.updateSummaryNotificationAfterChildRemoved(stringExtra2, z3, cVar) != aVar) {
+                            if (aVar4.updateSummaryNotificationAfterChildRemoved(stringExtra2, z6, cVar) != aVar) {
                                 intent3 = intent2;
                                 context3 = context2;
                                 bVar3 = bVar2;
@@ -416,7 +416,7 @@ public final class b implements InterfaceC5262a {
                         com.onesignal.debug.internal.logging.b.debug$default("processIntent from context: " + context2 + " and intent: " + intent2, null, 2, null);
                         if (intent2.getExtras() != null) {
                         }
-                        if (!z3) {
+                        if (!z6) {
                         }
                         return vVar;
                     }
@@ -424,15 +424,15 @@ public final class b implements InterfaceC5262a {
                         if (i != 4) {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                         return vVar;
                     }
-                    z3 = cVar.Z$0;
+                    z6 = cVar.Z$0;
                     aVar3 = (com.onesignal.notifications.internal.open.impl.a) cVar.L$3;
                     intent3 = (Intent) cVar.L$2;
                     context3 = (Context) cVar.L$1;
                     bVar3 = (b) cVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     context2 = context3;
                     bVar2 = bVar3;
                     intent2 = intent3;
@@ -440,7 +440,7 @@ public final class b implements InterfaceC5262a {
                     if (intent2.getExtras() != null) {
                         com.onesignal.debug.internal.logging.b.debug$default("processIntent intent extras: " + intent2.getExtras(), null, 2, null);
                     }
-                    if (!z3) {
+                    if (!z6) {
                         if (context2 instanceof Activity) {
                             h.b(aVar3);
                             JSONArray dataArray = aVar3.getDataArray();
@@ -459,13 +459,13 @@ public final class b implements InterfaceC5262a {
                     }
                     return vVar;
                 }
-                boolean z6 = cVar.Z$0;
+                boolean z9 = cVar.Z$0;
                 String str2 = (String) cVar.L$3;
                 Intent intent4 = (Intent) cVar.L$2;
                 Context context4 = (Context) cVar.L$1;
                 bVar = (b) cVar.L$0;
-                com.bumptech.glide.d.k(obj);
-                booleanExtra = z6;
+                Q3.b.s(obj);
+                booleanExtra = z9;
                 context = context4;
                 processToOpenIntent = obj;
                 stringExtra = str2;
@@ -486,11 +486,11 @@ public final class b implements InterfaceC5262a {
                 return aVar;
             }
         }
-        cVar = new c(interfaceC5267d);
+        cVar = new c(interfaceC5240d);
         Object obj2 = cVar.result;
-        aVar = A7.a.f58n;
+        aVar = A7.a.f215n;
         i = cVar.label;
-        v vVar2 = v.f41353a;
+        v vVar2 = v.f41073a;
         if (i != 0) {
         }
         aVar2 = (com.onesignal.notifications.internal.open.impl.a) processToOpenIntent;
@@ -520,7 +520,7 @@ public final class b implements InterfaceC5262a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object processToOpenIntent(Context context, Intent intent, String str, InterfaceC5267d interfaceC5267d) {
+    public final Object processToOpenIntent(Context context, Intent intent, String str, InterfaceC5240d interfaceC5240d) {
         d dVar;
         Object obj;
         int i;
@@ -528,16 +528,16 @@ public final class b implements InterfaceC5262a {
         JSONObject jSONObject;
         JSONObject jSONObject2;
         JSONArray jSONArray;
-        if (interfaceC5267d instanceof d) {
-            dVar = (d) interfaceC5267d;
-            int i6 = dVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                dVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof d) {
+            dVar = (d) interfaceC5240d;
+            int i4 = dVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                dVar.label = i4 - Integer.MIN_VALUE;
                 obj = dVar.result;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 i = dVar.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     try {
                         jSONObject2 = new JSONObject(intent.getStringExtra("onesignalData"));
                     } catch (JSONException e9) {
@@ -596,7 +596,7 @@ public final class b implements InterfaceC5262a {
                     }
                     jSONObject = (JSONObject) dVar.L$1;
                     jSONArray = (JSONArray) dVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     h.b(jSONArray);
                     h.b(jSONObject);
                     return new com.onesignal.notifications.internal.open.impl.a(jSONArray, jSONObject);
@@ -606,7 +606,7 @@ public final class b implements InterfaceC5262a {
                 intent = (Intent) dVar.L$1;
                 bVar = (b) dVar.L$0;
                 try {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 } catch (JSONException e11) {
                     e = e11;
                     e.printStackTrace();
@@ -630,9 +630,9 @@ public final class b implements InterfaceC5262a {
                 return new com.onesignal.notifications.internal.open.impl.a(jSONArray, jSONObject);
             }
         }
-        dVar = new d(interfaceC5267d);
+        dVar = new d(interfaceC5240d);
         obj = dVar.result;
-        A7.a aVar2 = A7.a.f58n;
+        A7.a aVar2 = A7.a.f215n;
         i = dVar.label;
         if (i != 0) {
         }
@@ -648,15 +648,15 @@ public final class b implements InterfaceC5262a {
         return new com.onesignal.notifications.internal.open.impl.a(jSONArray, jSONObject);
     }
 
-    @Override // z5.InterfaceC5262a
-    public Object processFromContext(Context context, Intent intent, InterfaceC5267d interfaceC5267d) {
+    @Override // z5.InterfaceC5235a
+    public Object processFromContext(Context context, Intent intent, InterfaceC5240d interfaceC5240d) {
         boolean isOneSignalIntent = isOneSignalIntent(intent);
-        v vVar = v.f41353a;
+        v vVar = v.f41073a;
         if (!isOneSignalIntent) {
             return vVar;
         }
         handleDismissFromActionButtonPress(context, intent);
-        Object processIntent = processIntent(context, intent, interfaceC5267d);
-        return processIntent == A7.a.f58n ? processIntent : vVar;
+        Object processIntent = processIntent(context, intent, interfaceC5240d);
+        return processIntent == A7.a.f215n ? processIntent : vVar;
     }
 }

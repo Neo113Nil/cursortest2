@@ -1,39 +1,39 @@
 package com.google.android.gms.internal.ads;
 
 /* loaded from: classes2.dex */
-public final class KE extends AbstractC4203yE {
+public final class KE extends AbstractC4226yE {
 
     /* renamed from: b, reason: collision with root package name */
-    public final NE f25878b;
+    public final NE f26630b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final C3105du f25879c;
+    public final C3128du f26631c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final C3240gK f25880d;
+    public final C3263gK f26632d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final Integer f25881e;
+    public final Integer f26633e;
 
-    public KE(NE ne, C3105du c3105du, C3240gK c3240gK, Integer num) {
-        this.f25878b = ne;
-        this.f25879c = c3105du;
-        this.f25880d = c3240gK;
-        this.f25881e = num;
+    public KE(NE ne, C3128du c3128du, C3263gK c3263gK, Integer num) {
+        this.f26630b = ne;
+        this.f26631c = c3128du;
+        this.f26632d = c3263gK;
+        this.f26633e = num;
     }
 
     @Override // com.google.android.gms.internal.ads.WC
-    public final /* synthetic */ AbstractC3825rE b() {
-        return this.f25878b;
+    public final /* synthetic */ AbstractC3848rE b() {
+        return this.f26630b;
     }
 
     @Override // com.google.android.gms.internal.ads.WC
     public final Integer e() {
-        return this.f25881e;
+        return this.f26633e;
     }
 
-    @Override // com.google.android.gms.internal.ads.AbstractC4203yE
-    public final C3240gK i() {
-        return this.f25880d;
+    @Override // com.google.android.gms.internal.ads.AbstractC4226yE
+    public final C3263gK i() {
+        return this.f26632d;
     }
 }

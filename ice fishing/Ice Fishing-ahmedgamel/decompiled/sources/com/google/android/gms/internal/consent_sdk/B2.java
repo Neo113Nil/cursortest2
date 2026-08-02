@@ -14,11 +14,11 @@ import java.util.TreeMap;
 public abstract class B2 {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final char[] f35491a;
+    public static final char[] f36260a;
 
     static {
         char[] cArr = new char[80];
-        f35491a = cArr;
+        f36260a = cArr;
         Arrays.fill(cArr, ' ');
     }
 
@@ -42,8 +42,8 @@ public abstract class B2 {
         if (!str.isEmpty()) {
             StringBuilder sb2 = new StringBuilder();
             sb2.append(Character.toLowerCase(str.charAt(0)));
-            for (int i6 = 1; i6 < str.length(); i6++) {
-                char charAt = str.charAt(i6);
+            for (int i4 = 1; i4 < str.length(); i4++) {
+                char charAt = str.charAt(i4);
                 if (Character.isUpperCase(charAt)) {
                     sb2.append("_");
                 }
@@ -54,20 +54,20 @@ public abstract class B2 {
         sb.append(str);
         if (obj instanceof String) {
             sb.append(": \"");
-            C4327h2 c4327h2 = C4327h2.f35681v;
-            sb.append(AbstractC4391y.b(new C4327h2(((String) obj).getBytes(AbstractC4370s2.f35744a))));
+            C4350h2 c4350h2 = C4350h2.f36450v;
+            sb.append(AbstractC4414y.b(new C4350h2(((String) obj).getBytes(AbstractC4393s2.f36513a))));
             sb.append('\"');
             return;
         }
-        if (obj instanceof C4327h2) {
+        if (obj instanceof C4350h2) {
             sb.append(": \"");
-            sb.append(AbstractC4391y.b((C4327h2) obj));
+            sb.append(AbstractC4414y.b((C4350h2) obj));
             sb.append('\"');
             return;
         }
-        if (obj instanceof AbstractC4355o2) {
+        if (obj instanceof AbstractC4378o2) {
             sb.append(" {");
-            c((AbstractC4355o2) obj, sb, i + 2);
+            c((AbstractC4378o2) obj, sb, i + 2);
             sb.append("\n");
             b(i, sb);
             sb.append("}");
@@ -78,11 +78,11 @@ public abstract class B2 {
             sb.append(obj);
             return;
         }
-        int i9 = i + 2;
+        int i6 = i + 2;
         sb.append(" {");
         Map.Entry entry = (Map.Entry) obj;
-        a(sb, i9, "key", entry.getKey());
-        a(sb, i9, "value", entry.getValue());
+        a(sb, i6, "key", entry.getKey());
+        a(sb, i6, "value", entry.getValue());
         sb.append("\n");
         b(i, sb);
         sb.append("}");
@@ -90,32 +90,32 @@ public abstract class B2 {
 
     public static void b(int i, StringBuilder sb) {
         while (i > 0) {
-            int i6 = 80;
+            int i4 = 80;
             if (i <= 80) {
-                i6 = i;
+                i4 = i;
             }
-            sb.append(f35491a, 0, i6);
-            i -= i6;
+            sb.append(f36260a, 0, i4);
+            i -= i4;
         }
     }
 
-    public static void c(AbstractC4355o2 abstractC4355o2, StringBuilder sb, int i) {
-        int i6;
+    public static void c(AbstractC4378o2 abstractC4378o2, StringBuilder sb, int i) {
+        int i4;
         boolean equals;
         Method method;
         Method method2;
         HashSet hashSet = new HashSet();
         HashMap hashMap = new HashMap();
         TreeMap treeMap = new TreeMap();
-        Method[] declaredMethods = abstractC4355o2.getClass().getDeclaredMethods();
+        Method[] declaredMethods = abstractC4378o2.getClass().getDeclaredMethods();
         int length = declaredMethods.length;
-        int i9 = 0;
+        int i6 = 0;
         while (true) {
-            i6 = 3;
-            if (i9 >= length) {
+            i4 = 3;
+            if (i6 >= length) {
                 break;
             }
-            Method method3 = declaredMethods[i9];
+            Method method3 = declaredMethods[i6];
             if (!Modifier.isStatic(method3.getModifiers()) && method3.getName().length() >= 3) {
                 if (method3.getName().startsWith("set")) {
                     hashSet.add(method3.getName());
@@ -127,60 +127,60 @@ public abstract class B2 {
                     }
                 }
             }
-            i9++;
+            i6++;
         }
         for (Map.Entry entry : treeMap.entrySet()) {
-            String substring = ((String) entry.getKey()).substring(i6);
+            String substring = ((String) entry.getKey()).substring(i4);
             if (substring.endsWith("List") && !substring.endsWith("OrBuilderList") && !substring.equals("List") && (method2 = (Method) entry.getValue()) != null && method2.getReturnType().equals(List.class)) {
-                a(sb, i, substring.substring(0, substring.length() - 4), AbstractC4355o2.i(method2, abstractC4355o2, new Object[0]));
+                a(sb, i, substring.substring(0, substring.length() - 4), AbstractC4378o2.i(method2, abstractC4378o2, new Object[0]));
             } else if (substring.endsWith("Map") && !substring.equals("Map") && (method = (Method) entry.getValue()) != null && method.getReturnType().equals(Map.class) && !method.isAnnotationPresent(Deprecated.class) && Modifier.isPublic(method.getModifiers())) {
-                a(sb, i, substring.substring(0, substring.length() - 3), AbstractC4355o2.i(method, abstractC4355o2, new Object[0]));
+                a(sb, i, substring.substring(0, substring.length() - 3), AbstractC4378o2.i(method, abstractC4378o2, new Object[0]));
             } else if (hashSet.contains("set".concat(substring)) && (!substring.endsWith("Bytes") || !treeMap.containsKey("get".concat(String.valueOf(substring.substring(0, substring.length() - 5)))))) {
                 Method method4 = (Method) entry.getValue();
                 Method method5 = (Method) hashMap.get("has".concat(substring));
                 if (method4 != null) {
-                    Object i10 = AbstractC4355o2.i(method4, abstractC4355o2, new Object[0]);
+                    Object i9 = AbstractC4378o2.i(method4, abstractC4378o2, new Object[0]);
                     if (method5 != null) {
-                        if (!((Boolean) AbstractC4355o2.i(method5, abstractC4355o2, new Object[0])).booleanValue()) {
+                        if (!((Boolean) AbstractC4378o2.i(method5, abstractC4378o2, new Object[0])).booleanValue()) {
                         }
-                        a(sb, i, substring, i10);
-                    } else if (i10 instanceof Boolean) {
-                        if (!((Boolean) i10).booleanValue()) {
+                        a(sb, i, substring, i9);
+                    } else if (i9 instanceof Boolean) {
+                        if (!((Boolean) i9).booleanValue()) {
                         }
-                        a(sb, i, substring, i10);
-                    } else if (i10 instanceof Integer) {
-                        if (((Integer) i10).intValue() == 0) {
+                        a(sb, i, substring, i9);
+                    } else if (i9 instanceof Integer) {
+                        if (((Integer) i9).intValue() == 0) {
                         }
-                        a(sb, i, substring, i10);
-                    } else if (i10 instanceof Float) {
-                        if (Float.floatToRawIntBits(((Float) i10).floatValue()) == 0) {
+                        a(sb, i, substring, i9);
+                    } else if (i9 instanceof Float) {
+                        if (Float.floatToRawIntBits(((Float) i9).floatValue()) == 0) {
                         }
-                        a(sb, i, substring, i10);
-                    } else if (i10 instanceof Double) {
-                        if (Double.doubleToRawLongBits(((Double) i10).doubleValue()) == 0) {
+                        a(sb, i, substring, i9);
+                    } else if (i9 instanceof Double) {
+                        if (Double.doubleToRawLongBits(((Double) i9).doubleValue()) == 0) {
                         }
-                        a(sb, i, substring, i10);
+                        a(sb, i, substring, i9);
                     } else {
-                        if (i10 instanceof String) {
-                            equals = i10.equals("");
-                        } else if (i10 instanceof C4327h2) {
-                            equals = i10.equals(C4327h2.f35681v);
-                        } else if (i10 instanceof AbstractC4307c2) {
-                            if (i10 == ((AbstractC4355o2) ((AbstractC4355o2) ((AbstractC4307c2) i10)).f(6))) {
+                        if (i9 instanceof String) {
+                            equals = i9.equals("");
+                        } else if (i9 instanceof C4350h2) {
+                            equals = i9.equals(C4350h2.f36450v);
+                        } else if (i9 instanceof AbstractC4330c2) {
+                            if (i9 == ((AbstractC4378o2) ((AbstractC4378o2) ((AbstractC4330c2) i9)).f(6))) {
                             }
-                            a(sb, i, substring, i10);
+                            a(sb, i, substring, i9);
                         } else {
-                            if ((i10 instanceof Enum) && ((Enum) i10).ordinal() == 0) {
+                            if ((i9 instanceof Enum) && ((Enum) i9).ordinal() == 0) {
                             }
-                            a(sb, i, substring, i10);
+                            a(sb, i, substring, i9);
                         }
                         if (equals) {
                         }
-                        a(sb, i, substring, i10);
+                        a(sb, i, substring, i9);
                     }
                 }
             }
-            i6 = 3;
+            i4 = 3;
         }
     }
 }

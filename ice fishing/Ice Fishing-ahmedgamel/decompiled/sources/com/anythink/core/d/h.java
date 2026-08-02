@@ -7,78 +7,78 @@ import org.json.JSONObject;
 public class h extends e {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f17286a = 1;
+    public static final int f18073a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f17287b = 3;
+    public static final int f18074b = 3;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f17288c = 3;
+    public static final int f18075c = 3;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f17289e = 5;
+    public static final int f18076e = 5;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final long f17290f = 604800000;
+    public static final long f18077f = 604800000;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f17291g;
+    private int f18078g;
 
     /* renamed from: h, reason: collision with root package name */
-    private a f17292h;
+    private a f18079h;
     private JSONObject i;
 
     /* renamed from: j, reason: collision with root package name */
-    private long f17293j;
+    private long f18080j;
 
     /* renamed from: k, reason: collision with root package name */
-    private long f17294k;
+    private long f18081k;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public int f17295a;
+        public int f18082a;
 
         /* renamed from: b, reason: collision with root package name */
-        public int f17296b;
+        public int f18083b;
 
         /* renamed from: c, reason: collision with root package name */
-        public int f17297c;
+        public int f18084c;
     }
 
     public static class b {
 
         /* renamed from: a, reason: collision with root package name */
-        public static String f17298a = "adap_c";
+        public static String f18085a = "adap_c";
 
         /* renamed from: b, reason: collision with root package name */
-        public static String f17299b = "updateTime";
+        public static String f18086b = "updateTime";
 
         /* renamed from: c, reason: collision with root package name */
-        private static String f17300c = "rule";
+        private static String f18087c = "rule";
 
         /* renamed from: d, reason: collision with root package name */
-        private static String f17301d = "group_st";
+        private static String f18088d = "group_st";
 
         /* renamed from: e, reason: collision with root package name */
-        private static String f17302e = "num";
+        private static String f18089e = "num";
 
         /* renamed from: f, reason: collision with root package name */
-        private static String f17303f = "value_times";
+        private static String f18090f = "value_times";
 
         /* renamed from: g, reason: collision with root package name */
-        private static String f17304g = "cold_times";
+        private static String f18091g = "cold_times";
 
         /* renamed from: h, reason: collision with root package name */
-        private static String f17305h = "st_timeout";
+        private static String f18092h = "st_timeout";
     }
 
     private void a(long j6) {
-        this.f17294k = j6;
+        this.f18081k = j6;
     }
 
     private long d() {
-        return this.f17294k;
+        return this.f18081k;
     }
 
     private JSONObject e() {
@@ -86,20 +86,20 @@ public class h extends e {
     }
 
     private long f() {
-        return this.f17293j;
+        return this.f18080j;
     }
 
     public final a b() {
-        return this.f17292h;
+        return this.f18079h;
     }
 
     public final boolean c() {
         System.currentTimeMillis();
-        return System.currentTimeMillis() - this.f17294k > this.f17293j;
+        return System.currentTimeMillis() - this.f18081k > this.f18080j;
     }
 
     private void b(long j6) {
-        this.f17293j = j6;
+        this.f18080j = j6;
     }
 
     private void e(JSONObject jSONObject) {
@@ -107,15 +107,15 @@ public class h extends e {
     }
 
     public final int a() {
-        return this.f17291g;
+        return this.f18078g;
     }
 
     private void a(int i) {
-        this.f17291g = i;
+        this.f18078g = i;
     }
 
     private void a(a aVar) {
-        this.f17292h = aVar;
+        this.f18079h = aVar;
     }
 
     public static h a(JSONObject jSONObject) {
@@ -127,23 +127,23 @@ public class h extends e {
             hVar.b(jSONObject);
             hVar.c(jSONObject);
             hVar.d(jSONObject);
-            hVar.f17291g = jSONObject.optInt(b.f17300c, 1);
-            String optString = jSONObject.optString(b.f17301d);
+            hVar.f18078g = jSONObject.optInt(b.f18087c, 1);
+            String optString = jSONObject.optString(b.f18088d);
             if (!TextUtils.isEmpty(optString)) {
                 try {
                     JSONObject jSONObject2 = new JSONObject(optString);
                     a aVar = new a();
-                    aVar.f17295a = jSONObject2.optInt(b.f17302e, 3);
-                    aVar.f17296b = jSONObject2.optInt(b.f17303f, 3);
-                    aVar.f17297c = jSONObject2.optInt(b.f17304g, 5);
-                    hVar.f17292h = aVar;
+                    aVar.f18082a = jSONObject2.optInt(b.f18089e, 3);
+                    aVar.f18083b = jSONObject2.optInt(b.f18090f, 3);
+                    aVar.f18084c = jSONObject2.optInt(b.f18091g, 5);
+                    hVar.f18079h = aVar;
                 } catch (Throwable th) {
                     th.printStackTrace();
                 }
             }
-            hVar.i = jSONObject.optJSONObject(b.f17298a);
-            hVar.f17294k = jSONObject.optLong(b.f17299b, 0L);
-            hVar.f17293j = jSONObject.optLong(b.f17305h, f17290f);
+            hVar.i = jSONObject.optJSONObject(b.f18085a);
+            hVar.f18081k = jSONObject.optLong(b.f18086b, 0L);
+            hVar.f18080j = jSONObject.optLong(b.f18092h, f18077f);
         } catch (Throwable unused) {
         }
         return hVar;

@@ -3,10 +3,10 @@ package com.instagram.common.viewpoint.core;
 /* loaded from: assets/audience_network/classes2.dex */
 public class RQ {
     public int A00;
-    public C1195Qx A01;
-    public C1195Qx A02;
+    public C1215Qx A01;
+    public C1215Qx A02;
     public static String[] A04 = {"3L5xTrYaZHGbjsCndSxeOQfzJoqaksAO", "yNuit7zcaXLgcR4Esus3jmJQTJqqE", "DjfkS9z5OPUyV9QdiCBZ1KUSwMFmGRPN", "lc54RdKLiwdhlc59ssIRjbGGERTX6o9W", "6o2d", "DSh0O66K0UoAsbtG5khJTMnGYv0IzoNn", "Wt9X6yajIBXU34hiGluB33HbNXSszdRF", "6wPar1yvZmOBSMEilq5oC74eJWuAafP4"};
-    public static PD<RQ> A03 = new C1923i6(20);
+    public static PD<RQ> A03 = new C1943i6(20);
 
     public static RQ A00() {
         RQ A3B = A03.A3B();

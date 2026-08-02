@@ -4,7 +4,7 @@ import android.text.TextUtils;
 import com.anythink.core.common.h.ai;
 import com.anythink.core.common.h.ak;
 import com.anythink.core.common.h.al;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.List;
 import java.util.Map;
 
@@ -24,7 +24,7 @@ public final class a {
                         for (int i = 0; i < list.size(); i++) {
                             String str3 = list.get(i);
                             if (str.contains(str3)) {
-                                return AbstractC4404f.g(str2, "&&", str3);
+                                return Wv.h(str2, "&&", str3);
                             }
                         }
                     }

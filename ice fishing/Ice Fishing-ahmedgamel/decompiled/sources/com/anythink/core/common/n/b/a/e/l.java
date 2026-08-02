@@ -4,7 +4,7 @@ package com.anythink.core.common.n.b.a.e;
 public interface l {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final l f15326a = new l() { // from class: com.anythink.core.common.n.b.a.e.l.1
+    public static final l f16113a = new l() { // from class: com.anythink.core.common.n.b.a.e.l.1
         @Override // com.anythink.core.common.n.b.a.e.l
         public final boolean a() {
             return true;

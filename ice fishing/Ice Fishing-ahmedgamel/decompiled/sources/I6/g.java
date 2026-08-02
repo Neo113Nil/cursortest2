@@ -1,9 +1,9 @@
 package I6;
 
-import c6.C0544a;
+import c6.C0555a;
 import c6.i;
 import c6.o;
-import g1.C4523c;
+import i1.C4586c;
 
 /* loaded from: classes2.dex */
 public final class g extends i {
@@ -65,32 +65,32 @@ public final class g extends i {
     }
 
     @Override // c6.i
-    public final Object b(C0544a c0544a) {
-        int l9 = c0544a.l();
-        h h9 = h(l9);
-        if (h9 != null) {
-            return h9;
+    public final Object b(C0555a c0555a) {
+        int l9 = c0555a.l();
+        h h3 = h(l9);
+        if (h3 != null) {
+            return h3;
         }
-        throw new c6.h(l9, this.f5604b);
+        throw new c6.h(l9, this.f5780b);
     }
 
     @Override // c6.i
-    public final Object c(C4523c reader) {
+    public final Object c(C4586c reader) {
         kotlin.jvm.internal.h.e(reader, "reader");
-        int l9 = ((C0544a) reader.f37627u).l();
-        h h9 = h(l9);
-        if (h9 != null) {
-            return h9;
+        int l9 = ((C0555a) reader.f38154u).l();
+        h h3 = h(l9);
+        if (h3 != null) {
+            return h3;
         }
-        throw new c6.h(l9, this.f5604b);
+        throw new c6.h(l9, this.f5780b);
     }
 
     @Override // c6.i
-    public final void d(F1.a writer, Object obj) {
+    public final void d(n4.c writer, Object obj) {
         o value = (o) obj;
         kotlin.jvm.internal.h.e(writer, "writer");
         kotlin.jvm.internal.h.e(value, "value");
-        writer.x(((h) value).f1360n);
+        writer.E(((h) value).f1390n);
     }
 
     @Override // c6.i

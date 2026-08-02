@@ -2,15 +2,15 @@ package com.onesignal.location.internal.controller.impl;
 
 import I7.l;
 import I7.p;
-import N2.i;
-import N2.j;
-import O2.U;
-import P2.w;
-import S7.AbstractC0406y;
+import P2.i;
+import P2.j;
+import Q2.T;
+import R2.w;
+import S7.AbstractC0410y;
 import S7.F;
-import S7.InterfaceC0404w;
+import S7.InterfaceC0408w;
 import S7.s0;
-import a8.InterfaceC0447a;
+import a8.InterfaceC0451a;
 import android.content.Context;
 import android.location.Location;
 import android.os.Bundle;
@@ -21,10 +21,10 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
-import f5.InterfaceC4510a;
-import f5.InterfaceC4511b;
-import g3.AbstractC4529b;
-import g3.C4528a;
+import f5.InterfaceC4520a;
+import f5.InterfaceC4521b;
+import i3.AbstractC4592b;
+import i3.C4591a;
 import java.io.Closeable;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -35,12 +35,12 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.locks.ReentrantLock;
 import kotlin.jvm.internal.r;
-import m.b1;
+import m.c1;
 import u7.v;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
-public final class b implements InterfaceC4510a {
+public final class b implements InterfaceC4520a {
     private final x4.f _applicationService;
     private final com.onesignal.location.internal.controller.impl.g _fusedLocationApiWrapper;
     private final com.onesignal.common.events.b event;
@@ -48,7 +48,7 @@ public final class b implements InterfaceC4510a {
     private Location lastLocation;
     private final c locationHandlerThread;
     private d locationUpdateListener;
-    private final InterfaceC0447a startStopMutex;
+    private final InterfaceC0451a startStopMutex;
     public static final a Companion = new a(null);
     private static final int API_FALLBACK_TIME = 30000;
 
@@ -73,21 +73,21 @@ public final class b implements InterfaceC4510a {
         public static final class a extends B7.h implements l {
             int label;
 
-            public a(InterfaceC5267d interfaceC5267d) {
-                super(1, interfaceC5267d);
+            public a(InterfaceC5240d interfaceC5240d) {
+                super(1, interfaceC5240d);
             }
 
             @Override // B7.a
-            public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-                return C0219b.this.new a(interfaceC5267d);
+            public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+                return C0219b.this.new a(interfaceC5240d);
             }
 
             @Override // B7.a
             public final Object invokeSuspend(Object obj) {
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 int i = this.label;
                 if (i == 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     b bVar = C0219b.this._parent;
                     this.label = 1;
                     if (bVar.stop(this) == aVar) {
@@ -97,14 +97,14 @@ public final class b implements InterfaceC4510a {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
-                return v.f41353a;
+                return v.f41073a;
             }
 
             @Override // I7.l
-            public final Object invoke(InterfaceC5267d interfaceC5267d) {
-                return ((a) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+            public final Object invoke(InterfaceC5240d interfaceC5240d) {
+                return ((a) create(interfaceC5240d)).invokeSuspend(v.f41073a);
             }
         }
 
@@ -113,19 +113,19 @@ public final class b implements InterfaceC4510a {
             this._parent = _parent;
         }
 
-        @Override // N2.i
+        @Override // P2.i
         public void onConnected(Bundle bundle) {
             com.onesignal.debug.internal.logging.b.debug$default("GMSLocationController GoogleApiClientListener onConnected", null, 2, null);
         }
 
-        @Override // N2.j
-        public void onConnectionFailed(M2.b connectionResult) {
+        @Override // P2.j
+        public void onConnectionFailed(O2.b connectionResult) {
             kotlin.jvm.internal.h.e(connectionResult, "connectionResult");
             com.onesignal.debug.internal.logging.b.debug$default("GMSLocationController GoogleApiClientListener onConnectionSuspended connectionResult: " + connectionResult, null, 2, null);
             com.onesignal.common.threading.c.suspendifyOnIO(new a(null));
         }
 
-        @Override // N2.i
+        @Override // P2.i
         public void onConnectionSuspended(int i) {
             com.onesignal.debug.internal.logging.b.debug$default("GMSLocationController GoogleApiClientListener onConnectionSuspended i: " + i, null, 2, null);
         }
@@ -200,7 +200,7 @@ public final class b implements InterfaceC4510a {
         }
 
         @Override // x4.e
-        public void onFocus(boolean z3) {
+        public void onFocus(boolean z6) {
             com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "LocationUpdateListener.onFocus()");
             refreshRequest();
         }
@@ -229,11 +229,11 @@ public final class b implements InterfaceC4510a {
 
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-            invoke((InterfaceC4511b) obj);
-            return v.f41353a;
+            invoke((InterfaceC4521b) obj);
+            return v.f41073a;
         }
 
-        public final void invoke(InterfaceC4511b it) {
+        public final void invoke(InterfaceC4521b it) {
             kotlin.jvm.internal.h.e(it, "it");
             it.onLocationChanged(this.$location);
         }
@@ -244,8 +244,8 @@ public final class b implements InterfaceC4510a {
         int label;
         /* synthetic */ Object result;
 
-        public f(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public f(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -276,11 +276,11 @@ public final class b implements InterfaceC4510a {
 
             @Override // I7.l
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-                invoke((InterfaceC4511b) obj);
-                return v.f41353a;
+                invoke((InterfaceC4521b) obj);
+                return v.f41073a;
             }
 
-            public final void invoke(InterfaceC4511b it) {
+            public final void invoke(InterfaceC4521b it) {
                 kotlin.jvm.internal.h.e(it, "it");
                 Location location = this.this$0.lastLocation;
                 kotlin.jvm.internal.h.b(location);
@@ -296,49 +296,49 @@ public final class b implements InterfaceC4510a {
             final /* synthetic */ b this$0;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public C0220b(r rVar, b bVar, kotlin.jvm.internal.p pVar, InterfaceC5267d interfaceC5267d) {
-                super(2, interfaceC5267d);
+            public C0220b(r rVar, b bVar, kotlin.jvm.internal.p pVar, InterfaceC5240d interfaceC5240d) {
+                super(2, interfaceC5240d);
                 this.$self = rVar;
                 this.this$0 = bVar;
                 this.$wasSuccessful = pVar;
             }
 
             @Override // B7.a
-            public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-                return new C0220b(this.$self, this.this$0, this.$wasSuccessful, interfaceC5267d);
+            public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+                return new C0220b(this.$self, this.this$0, this.$wasSuccessful, interfaceC5240d);
             }
 
             @Override // I7.p
-            public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-                return ((C0220b) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+            public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+                return ((C0220b) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
             }
 
             @Override // B7.a
             public final Object invokeSuspend(Object obj) {
                 Location lastLocation;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 if (this.label != 0) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
-                C0219b c0219b = new C0219b((b) this.$self.f38717n);
+                Q3.b.s(obj);
+                C0219b c0219b = new C0219b((b) this.$self.f38644n);
                 Context appContext = this.this$0._applicationService.getAppContext();
                 HashSet hashSet = new HashSet();
                 HashSet hashSet2 = new HashSet();
                 s.b bVar = new s.b();
                 s.b bVar2 = new s.b();
-                Object obj2 = M2.e.f1841c;
-                R2.b bVar3 = AbstractC4529b.f37654a;
+                Object obj2 = O2.e.f2267c;
+                T2.b bVar3 = AbstractC4592b.f38181a;
                 ArrayList arrayList = new ArrayList();
                 ArrayList arrayList2 = new ArrayList();
                 appContext.getMainLooper();
                 String packageName = appContext.getPackageName();
                 String name = appContext.getClass().getName();
-                N2.e eVar = LocationServices.API;
+                P2.e eVar = LocationServices.API;
                 w.i(eVar, "Api must not be null");
                 Object obj3 = null;
                 bVar2.put(eVar, null);
-                w.i(eVar.f1936a, "Base client builder must not be null");
+                w.i(eVar.f2380a, "Base client builder must not be null");
                 List list = Collections.EMPTY_LIST;
                 hashSet2.addAll(list);
                 hashSet.addAll(list);
@@ -348,13 +348,13 @@ public final class b implements InterfaceC4510a {
                 w.i(mHandler, "Handler must not be null");
                 Looper looper = mHandler.getLooper();
                 w.a("must call addApi() to add at least one API", !bVar2.isEmpty());
-                C4528a c4528a = C4528a.f37653b;
-                N2.e eVar2 = AbstractC4529b.f37655b;
+                C4591a c4591a = C4591a.f38180b;
+                P2.e eVar2 = AbstractC4592b.f38182b;
                 if (bVar2.containsKey(eVar2)) {
-                    c4528a = (C4528a) bVar2.getOrDefault(eVar2, null);
+                    c4591a = (C4591a) bVar2.getOrDefault(eVar2, null);
                 }
-                b1 b1Var = new b1(hashSet, bVar, packageName, name, c4528a);
-                Map map = (Map) b1Var.f39123v;
+                c1 c1Var = new c1(hashSet, bVar, packageName, name, c4591a);
+                Map map = (Map) c1Var.f39194v;
                 s.b bVar4 = new s.b();
                 s.b bVar5 = new s.b();
                 ArrayList arrayList3 = new ArrayList();
@@ -364,68 +364,68 @@ public final class b implements InterfaceC4510a {
                     if (!fVar.hasNext()) {
                         break;
                     }
-                    N2.e eVar3 = (N2.e) fVar.next();
+                    P2.e eVar3 = (P2.e) fVar.next();
                     Object orDefault = bVar2.getOrDefault(eVar3, obj3);
-                    boolean z3 = map.get(eVar3) != null;
-                    bVar4.put(eVar3, Boolean.valueOf(z3));
-                    U u3 = new U(eVar3, z3);
-                    arrayList3.add(u3);
+                    boolean z6 = map.get(eVar3) != null;
+                    bVar4.put(eVar3, Boolean.valueOf(z6));
+                    T t6 = new T(eVar3, z6);
+                    arrayList3.add(t6);
                     s.b bVar6 = bVar5;
-                    O3.b bVar7 = eVar3.f1936a;
-                    w.h(bVar7);
-                    b1 b1Var2 = b1Var;
+                    com.bumptech.glide.g gVar = eVar3.f2380a;
+                    w.h(gVar);
+                    c1 c1Var2 = c1Var;
                     Looper looper2 = looper;
-                    N2.c d2 = bVar7.d(appContext, looper2, b1Var2, orDefault, u3, u3);
-                    bVar6.put(eVar3.f1937b, d2);
-                    d2.getClass();
+                    P2.c b9 = gVar.b(appContext, looper2, c1Var2, orDefault, t6, t6);
+                    bVar6.put(eVar3.f2381b, b9);
+                    b9.getClass();
                     bVar5 = bVar6;
                     looper = looper2;
-                    b1Var = b1Var2;
+                    c1Var = c1Var2;
                     obj3 = null;
                 }
-                b1 b1Var3 = b1Var;
+                c1 c1Var3 = c1Var;
                 Looper looper3 = looper;
-                s.b bVar8 = bVar5;
-                O2.w wVar = new O2.w(appContext, new ReentrantLock(), looper3, b1Var3, bVar4, arrayList, arrayList2, bVar8, O2.w.b(bVar8.values(), true), arrayList3);
-                Set set = GoogleApiClient.f23612n;
+                s.b bVar7 = bVar5;
+                Q2.v vVar = new Q2.v(appContext, new ReentrantLock(), looper3, c1Var3, bVar4, arrayList, arrayList2, bVar7, Q2.v.b(bVar7.values(), true), arrayList3);
+                Set set = GoogleApiClient.f24392n;
                 synchronized (set) {
-                    set.add(wVar);
+                    set.add(vVar);
                 }
-                com.onesignal.location.internal.controller.impl.c cVar = new com.onesignal.location.internal.controller.impl.c(wVar);
-                M2.b blockingConnect = cVar.blockingConnect();
+                com.onesignal.location.internal.controller.impl.c cVar = new com.onesignal.location.internal.controller.impl.c(vVar);
+                O2.b blockingConnect = cVar.blockingConnect();
                 if (blockingConnect == null || !blockingConnect.b()) {
                     StringBuilder sb = new StringBuilder("GMSLocationController connection to GoogleApiService failed: (");
-                    sb.append(blockingConnect != null ? new Integer(blockingConnect.f1830u) : null);
+                    sb.append(blockingConnect != null ? new Integer(blockingConnect.f2256u) : null);
                     sb.append(") ");
-                    sb.append(blockingConnect != null ? blockingConnect.f1832w : null);
+                    sb.append(blockingConnect != null ? blockingConnect.f2258w : null);
                     com.onesignal.debug.internal.logging.b.debug$default(sb.toString(), null, 2, null);
                 } else {
-                    if (this.this$0.lastLocation == null && (lastLocation = this.this$0._fusedLocationApiWrapper.getLastLocation(wVar)) != null) {
+                    if (this.this$0.lastLocation == null && (lastLocation = this.this$0._fusedLocationApiWrapper.getLastLocation(vVar)) != null) {
                         this.this$0.setLocationAndFire(lastLocation);
                     }
-                    ((b) this.$self.f38717n).locationUpdateListener = new d(this.this$0._applicationService, (b) this.$self.f38717n, cVar.getRealInstance(), this.this$0._fusedLocationApiWrapper);
-                    ((b) this.$self.f38717n).googleApiClient = cVar;
-                    this.$wasSuccessful.f38715n = true;
+                    ((b) this.$self.f38644n).locationUpdateListener = new d(this.this$0._applicationService, (b) this.$self.f38644n, cVar.getRealInstance(), this.this$0._fusedLocationApiWrapper);
+                    ((b) this.$self.f38644n).googleApiClient = cVar;
+                    this.$wasSuccessful.f38642n = true;
                 }
-                return v.f41353a;
+                return v.f41073a;
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public g(kotlin.jvm.internal.p pVar, r rVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public g(kotlin.jvm.internal.p pVar, r rVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$wasSuccessful = pVar;
             this.$self = rVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return b.this.new g(this.$wasSuccessful, this.$self, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return b.this.new g(this.$wasSuccessful, this.$self, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((g) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((g) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:42:0x0055, code lost:
@@ -454,41 +454,41 @@ public final class b implements InterfaceC4510a {
             long api_fallback_time;
             C0220b c0220b;
             a8.d dVar2;
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             try {
                 if (i == 0) {
-                    com.bumptech.glide.d.k(obj);
-                    InterfaceC0447a interfaceC0447a = b.this.startStopMutex;
+                    Q3.b.s(obj);
+                    InterfaceC0451a interfaceC0451a = b.this.startStopMutex;
                     bVar = b.this;
                     pVar = this.$wasSuccessful;
                     rVar = this.$self;
-                    this.L$0 = interfaceC0447a;
+                    this.L$0 = interfaceC0451a;
                     this.L$1 = bVar;
                     this.L$2 = pVar;
                     this.L$3 = rVar;
                     this.label = 1;
-                    dVar = (a8.d) interfaceC0447a;
+                    dVar = (a8.d) interfaceC0451a;
                 } else {
                     if (i != 1) {
                         if (i != 2) {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
-                        r02 = (InterfaceC0447a) this.L$0;
+                        r02 = (InterfaceC0451a) this.L$0;
                         try {
                             try {
-                                com.bumptech.glide.d.k(obj);
+                                Q3.b.s(obj);
                                 dVar2 = r02;
                             } catch (s0 unused) {
                                 com.onesignal.debug.internal.logging.b.warn$default("Location permission exists but GoogleApiClient timed out. Maybe related to mismatch google-play aar versions.", null, 2, null);
                                 dVar2 = r02;
                                 dVar = dVar2;
                                 dVar.d(null);
-                                return v.f41353a;
+                                return v.f41073a;
                             }
                             dVar = dVar2;
                             dVar.d(null);
-                            return v.f41353a;
+                            return v.f41073a;
                         } catch (Throwable th2) {
                             th = th2;
                             ((a8.d) r02).d(null);
@@ -498,8 +498,8 @@ public final class b implements InterfaceC4510a {
                     rVar = (r) this.L$3;
                     pVar = (kotlin.jvm.internal.p) this.L$2;
                     bVar = (b) this.L$1;
-                    ?? r72 = (InterfaceC0447a) this.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    ?? r72 = (InterfaceC0451a) this.L$0;
+                    Q3.b.s(obj);
                     dVar = r72;
                 }
                 if (bVar.googleApiClient != null) {
@@ -511,9 +511,9 @@ public final class b implements InterfaceC4510a {
                             bVar.setLocationAndFire(lastLocation);
                         }
                     }
-                    pVar.f38715n = true;
+                    pVar.f38642n = true;
                     dVar.d(null);
-                    return v.f41353a;
+                    return v.f41073a;
                 }
                 try {
                     api_fallback_time = b.Companion.getAPI_FALLBACK_TIME();
@@ -529,13 +529,13 @@ public final class b implements InterfaceC4510a {
                     dVar2 = r02;
                     dVar = dVar2;
                     dVar.d(null);
-                    return v.f41353a;
+                    return v.f41073a;
                 }
-                if (AbstractC0406y.z(api_fallback_time, c0220b, this) != aVar) {
+                if (AbstractC0410y.z(api_fallback_time, c0220b, this) != aVar) {
                     dVar2 = dVar;
                     dVar = dVar2;
                     dVar.d(null);
-                    return v.f41353a;
+                    return v.f41073a;
                 }
                 return aVar;
             } catch (Throwable th3) {
@@ -553,8 +553,8 @@ public final class b implements InterfaceC4510a {
         int label;
         /* synthetic */ Object result;
 
-        public h(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public h(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -582,12 +582,12 @@ public final class b implements InterfaceC4510a {
         this.event.fire(new e(location));
     }
 
-    @Override // f5.InterfaceC4510a, com.onesignal.common.events.d
+    @Override // f5.InterfaceC4520a, com.onesignal.common.events.d
     public boolean getHasSubscribers() {
         return this.event.getHasSubscribers();
     }
 
-    @Override // f5.InterfaceC4510a
+    @Override // f5.InterfaceC4520a
     public Location getLastLocation() {
         GoogleApiClient realInstance;
         com.onesignal.location.internal.controller.impl.c cVar = this.googleApiClient;
@@ -599,32 +599,32 @@ public final class b implements InterfaceC4510a {
 
     /* JADX WARN: Removed duplicated region for block: B:15:0x0033  */
     /* JADX WARN: Removed duplicated region for block: B:8:0x0021  */
-    @Override // f5.InterfaceC4510a
+    @Override // f5.InterfaceC4520a
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object start(InterfaceC5267d interfaceC5267d) {
+    public Object start(InterfaceC5240d interfaceC5240d) {
         f fVar;
         int i;
         kotlin.jvm.internal.p pVar;
-        if (interfaceC5267d instanceof f) {
-            fVar = (f) interfaceC5267d;
-            int i6 = fVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                fVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof f) {
+            fVar = (f) interfaceC5240d;
+            int i4 = fVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                fVar.label = i4 - Integer.MIN_VALUE;
                 Object obj = fVar.result;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 i = fVar.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     r rVar = new r();
-                    rVar.f38717n = this;
+                    rVar.f38644n = this;
                     kotlin.jvm.internal.p pVar2 = new kotlin.jvm.internal.p();
-                    Z7.d dVar = F.f2917c;
+                    Z7.d dVar = F.f3000c;
                     g gVar = new g(pVar2, rVar, null);
                     fVar.L$0 = pVar2;
                     fVar.label = 1;
-                    if (AbstractC0406y.y(dVar, gVar, fVar) == aVar) {
+                    if (AbstractC0410y.y(dVar, gVar, fVar) == aVar) {
                         return aVar;
                     }
                     pVar = pVar2;
@@ -633,63 +633,63 @@ public final class b implements InterfaceC4510a {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     pVar = (kotlin.jvm.internal.p) fVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
-                return Boolean.valueOf(pVar.f38715n);
+                return Boolean.valueOf(pVar.f38642n);
             }
         }
-        fVar = new f(interfaceC5267d);
+        fVar = new f(interfaceC5240d);
         Object obj2 = fVar.result;
-        A7.a aVar2 = A7.a.f58n;
+        A7.a aVar2 = A7.a.f215n;
         i = fVar.label;
         if (i != 0) {
         }
-        return Boolean.valueOf(pVar.f38715n);
+        return Boolean.valueOf(pVar.f38642n);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:14:0x0052 A[Catch: all -> 0x0058, TryCatch #0 {all -> 0x0058, blocks: (B:12:0x004e, B:14:0x0052, B:15:0x005a, B:17:0x005e, B:18:0x0063), top: B:11:0x004e }] */
     /* JADX WARN: Removed duplicated region for block: B:17:0x005e A[Catch: all -> 0x0058, TryCatch #0 {all -> 0x0058, blocks: (B:12:0x004e, B:14:0x0052, B:15:0x005a, B:17:0x005e, B:18:0x0063), top: B:11:0x004e }] */
     /* JADX WARN: Removed duplicated region for block: B:29:0x0037  */
     /* JADX WARN: Removed duplicated region for block: B:8:0x0021  */
-    @Override // f5.InterfaceC4510a
+    @Override // f5.InterfaceC4520a
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object stop(InterfaceC5267d interfaceC5267d) {
+    public Object stop(InterfaceC5240d interfaceC5240d) {
         h hVar;
         int i;
         b bVar;
-        InterfaceC0447a interfaceC0447a;
+        InterfaceC0451a interfaceC0451a;
         d dVar;
         com.onesignal.location.internal.controller.impl.c cVar;
         try {
-            if (interfaceC5267d instanceof h) {
-                hVar = (h) interfaceC5267d;
-                int i6 = hVar.label;
-                if ((i6 & Integer.MIN_VALUE) != 0) {
-                    hVar.label = i6 - Integer.MIN_VALUE;
+            if (interfaceC5240d instanceof h) {
+                hVar = (h) interfaceC5240d;
+                int i4 = hVar.label;
+                if ((i4 & Integer.MIN_VALUE) != 0) {
+                    hVar.label = i4 - Integer.MIN_VALUE;
                     Object obj = hVar.result;
-                    A7.a aVar = A7.a.f58n;
+                    A7.a aVar = A7.a.f215n;
                     i = hVar.label;
                     if (i != 0) {
-                        com.bumptech.glide.d.k(obj);
-                        InterfaceC0447a interfaceC0447a2 = this.startStopMutex;
+                        Q3.b.s(obj);
+                        InterfaceC0451a interfaceC0451a2 = this.startStopMutex;
                         hVar.L$0 = this;
-                        hVar.L$1 = interfaceC0447a2;
+                        hVar.L$1 = interfaceC0451a2;
                         hVar.label = 1;
-                        a8.d dVar2 = (a8.d) interfaceC0447a2;
+                        a8.d dVar2 = (a8.d) interfaceC0451a2;
                         if (dVar2.c(hVar) == aVar) {
                             return aVar;
                         }
                         bVar = this;
-                        interfaceC0447a = dVar2;
+                        interfaceC0451a = dVar2;
                     } else {
                         if (i != 1) {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
-                        interfaceC0447a = (InterfaceC0447a) hVar.L$1;
+                        interfaceC0451a = (InterfaceC0451a) hVar.L$1;
                         bVar = (b) hVar.L$0;
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                     }
                     dVar = bVar.locationUpdateListener;
                     if (dVar != null) {
@@ -702,8 +702,8 @@ public final class b implements InterfaceC4510a {
                         bVar.googleApiClient = null;
                     }
                     bVar.lastLocation = null;
-                    ((a8.d) interfaceC0447a).d(null);
-                    return v.f41353a;
+                    ((a8.d) interfaceC0451a).d(null);
+                    return v.f41073a;
                 }
             }
             dVar = bVar.locationUpdateListener;
@@ -713,28 +713,28 @@ public final class b implements InterfaceC4510a {
             if (cVar != null) {
             }
             bVar.lastLocation = null;
-            ((a8.d) interfaceC0447a).d(null);
-            return v.f41353a;
+            ((a8.d) interfaceC0451a).d(null);
+            return v.f41073a;
         } catch (Throwable th) {
-            ((a8.d) interfaceC0447a).d(null);
+            ((a8.d) interfaceC0451a).d(null);
             throw th;
         }
-        hVar = new h(interfaceC5267d);
+        hVar = new h(interfaceC5240d);
         Object obj2 = hVar.result;
-        A7.a aVar2 = A7.a.f58n;
+        A7.a aVar2 = A7.a.f215n;
         i = hVar.label;
         if (i != 0) {
         }
     }
 
-    @Override // f5.InterfaceC4510a, com.onesignal.common.events.d
-    public void subscribe(InterfaceC4511b handler) {
+    @Override // f5.InterfaceC4520a, com.onesignal.common.events.d
+    public void subscribe(InterfaceC4521b handler) {
         kotlin.jvm.internal.h.e(handler, "handler");
         this.event.subscribe(handler);
     }
 
-    @Override // f5.InterfaceC4510a, com.onesignal.common.events.d
-    public void unsubscribe(InterfaceC4511b handler) {
+    @Override // f5.InterfaceC4520a, com.onesignal.common.events.d
+    public void unsubscribe(InterfaceC4521b handler) {
         kotlin.jvm.internal.h.e(handler, "handler");
         this.event.unsubscribe(handler);
     }

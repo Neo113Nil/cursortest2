@@ -2,14 +2,14 @@ package B7;
 
 import kotlin.jvm.internal.s;
 import kotlin.jvm.internal.t;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public abstract class h extends c implements kotlin.jvm.internal.f {
     private final int arity;
 
-    public h(int i, InterfaceC5267d interfaceC5267d) {
-        super(interfaceC5267d);
+    public h(int i, InterfaceC5240d interfaceC5240d) {
+        super(interfaceC5240d);
         this.arity = i;
     }
 
@@ -23,7 +23,7 @@ public abstract class h extends c implements kotlin.jvm.internal.f {
         if (getCompletion() != null) {
             return super.toString();
         }
-        s.f38718a.getClass();
+        s.f38645a.getClass();
         String a9 = t.a(this);
         kotlin.jvm.internal.h.d(a9, "renderLambdaToString(...)");
         return a9;

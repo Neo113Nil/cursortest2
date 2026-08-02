@@ -7,19 +7,19 @@ import android.view.ViewGroup;
 public interface b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f19787a = 4;
+    public static final int f20574a = 4;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f19788b = 5;
+    public static final int f20575b = 5;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f19789c = 6;
+    public static final int f20576c = 6;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f19790d = 7;
+    public static final int f20577d = 7;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f19791e = 8;
+    public static final int f20578e = 8;
 
     public interface a {
         void a();
@@ -35,7 +35,7 @@ public interface b {
 
     int getVisibility();
 
-    void initResource(boolean z3);
+    void initResource(boolean z6);
 
     void onThemeChange();
 
@@ -45,9 +45,9 @@ public interface b {
 
     void setLayoutParams(ViewGroup.LayoutParams layoutParams);
 
-    void setPaused(boolean z3);
+    void setPaused(boolean z6);
 
-    void setProgress(float f3, boolean z3);
+    void setProgress(float f2, boolean z6);
 
     void setProgressBarListener(a aVar);
 
@@ -55,7 +55,7 @@ public interface b {
 
     void setVisibility(int i);
 
-    void setVisible(boolean z3);
+    void setVisible(boolean z6);
 
     void startEndAnimation();
 }

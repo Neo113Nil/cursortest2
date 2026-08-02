@@ -4,10 +4,10 @@ package com.anythink.basead.mixad.b;
 public abstract class a implements com.anythink.core.common.l.c.a.a {
 
     /* renamed from: a, reason: collision with root package name */
-    protected com.anythink.core.common.l.e.a.a f9501a;
+    protected com.anythink.core.common.l.e.a.a f10287a;
 
     @Override // com.anythink.core.common.l.c.a.a
     public final void a(com.anythink.core.common.l.e.a.a aVar) {
-        this.f9501a = aVar;
+        this.f10287a = aVar;
     }
 }

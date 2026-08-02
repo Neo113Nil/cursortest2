@@ -4,9 +4,9 @@ import com.facebook.ads.androidx.media3.exoplayer.scheduler.Requirements;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public interface C4 {
-    void ADh(C5 c52, C0802Bk c0802Bk, Exception exc);
+    void ADh(C5 c52, C0822Bk c0822Bk, Exception exc);
 
-    void ADi(C5 c52, C0802Bk c0802Bk);
+    void ADi(C5 c52, C0822Bk c0822Bk);
 
     void AE6(C5 c52);
 
@@ -14,5 +14,5 @@ public interface C4 {
 
     void AFg(C5 c52, Requirements requirements, int i);
 
-    void AGf(C5 c52, boolean z3);
+    void AGf(C5 c52, boolean z6);
 }

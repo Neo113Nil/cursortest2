@@ -20,222 +20,222 @@ import java.util.concurrent.ExecutorService;
 public class c implements Serializable {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f22219a = "2000077";
+    public static final String f23006a = "2000077";
 
     /* renamed from: b, reason: collision with root package name */
-    protected static final String f22220b = "CampaignDownLoadTask";
+    protected static final String f23007b = "CampaignDownLoadTask";
 
     /* renamed from: d, reason: collision with root package name */
-    private static final long f22221d = -510642107992871538L;
+    private static final long f23008d = -510642107992871538L;
 
     /* renamed from: e, reason: collision with root package name */
-    private static final int f22222e = 1;
+    private static final int f23009e = 1;
 
     /* renamed from: f, reason: collision with root package name */
-    private static final int f22223f = 2000;
+    private static final int f23010f = 2000;
 
     /* renamed from: h, reason: collision with root package name */
-    private static final int f22224h = 1;
+    private static final int f23011h = 1;
     private static final int i = 2;
 
     /* renamed from: j, reason: collision with root package name */
-    private static final int f22225j = 3;
+    private static final int f23012j = 3;
 
     /* renamed from: k, reason: collision with root package name */
-    private static final int f22226k = 4;
+    private static final int f23013k = 4;
 
     /* renamed from: l, reason: collision with root package name */
-    private static final int f22227l = 5;
+    private static final int f23014l = 5;
 
     /* renamed from: m, reason: collision with root package name */
-    private static final String f22228m = "errorMsg";
+    private static final String f23015m = "errorMsg";
 
     /* renamed from: p, reason: collision with root package name */
-    private static final int f22229p = 10010;
+    private static final int f23016p = 10010;
 
     /* renamed from: A, reason: collision with root package name */
-    private Object f22230A;
+    private Object f23017A;
 
     /* renamed from: B, reason: collision with root package name */
-    private Class f22231B;
+    private Class f23018B;
 
     /* renamed from: C, reason: collision with root package name */
-    private Object f22232C;
+    private Object f23019C;
 
     /* renamed from: D, reason: collision with root package name */
-    private com.anythink.expressad.foundation.d.d f22233D;
+    private com.anythink.expressad.foundation.d.d f23020D;
 
     /* renamed from: E, reason: collision with root package name */
-    private String f22234E;
+    private String f23021E;
 
     /* renamed from: G, reason: collision with root package name */
-    private Context f22236G;
+    private Context f23023G;
 
     /* renamed from: H, reason: collision with root package name */
-    private long f22237H;
+    private long f23024H;
 
     /* renamed from: I, reason: collision with root package name */
-    private String f22238I;
+    private String f23025I;
 
     /* renamed from: L, reason: collision with root package name */
-    private String f22240L;
+    private String f23027L;
 
     /* renamed from: O, reason: collision with root package name */
-    private long f22243O;
+    private long f23030O;
 
     /* renamed from: P, reason: collision with root package name */
-    private com.anythink.expressad.videocommon.d.c f22244P;
+    private com.anythink.expressad.videocommon.d.c f23031P;
 
     /* renamed from: Q, reason: collision with root package name */
-    private com.anythink.expressad.videocommon.d.c f22245Q;
+    private com.anythink.expressad.videocommon.d.c f23032Q;
 
     /* renamed from: U, reason: collision with root package name */
-    private String f22249U;
+    private String f23036U;
 
     /* renamed from: V, reason: collision with root package name */
-    private b.a f22250V;
+    private b.a f23037V;
 
     /* renamed from: Z, reason: collision with root package name */
-    private int f22253Z;
+    private int f23040Z;
 
     /* renamed from: c, reason: collision with root package name */
-    b f22254c;
+    b f23041c;
 
     /* renamed from: o, reason: collision with root package name */
-    private boolean f22257o;
+    private boolean f23044o;
 
     /* renamed from: q, reason: collision with root package name */
-    private int f22258q;
+    private int f23045q;
 
     /* renamed from: r, reason: collision with root package name */
-    private String f22259r;
+    private String f23046r;
 
     /* renamed from: s, reason: collision with root package name */
-    private String f22260s;
+    private String f23047s;
 
     /* renamed from: t, reason: collision with root package name */
-    private Runnable f22261t;
+    private Runnable f23048t;
 
     /* renamed from: w, reason: collision with root package name */
-    private f f22264w;
+    private f f23051w;
 
     /* renamed from: x, reason: collision with root package name */
-    private ExecutorService f22265x;
+    private ExecutorService f23052x;
 
     /* renamed from: y, reason: collision with root package name */
-    private p f22266y;
+    private p f23053y;
 
     /* renamed from: z, reason: collision with root package name */
-    private Class f22267z;
+    private Class f23054z;
 
     /* renamed from: g, reason: collision with root package name */
-    private boolean f22255g = false;
+    private boolean f23042g = false;
 
     /* renamed from: n, reason: collision with root package name */
-    private int f22256n = 1;
+    private int f23043n = 1;
 
     /* renamed from: u, reason: collision with root package name */
-    private volatile int f22262u = 0;
+    private volatile int f23049u = 0;
 
     /* renamed from: v, reason: collision with root package name */
-    private CopyOnWriteArrayList<f> f22263v = new CopyOnWriteArrayList<>();
+    private CopyOnWriteArrayList<f> f23050v = new CopyOnWriteArrayList<>();
 
     /* renamed from: F, reason: collision with root package name */
-    private boolean f22235F = false;
+    private boolean f23022F = false;
     private long J = 0;
 
     /* renamed from: K, reason: collision with root package name */
-    private int f22239K = 0;
+    private int f23026K = 0;
 
     /* renamed from: M, reason: collision with root package name */
-    private boolean f22241M = false;
+    private boolean f23028M = false;
 
     /* renamed from: N, reason: collision with root package name */
-    private boolean f22242N = false;
+    private boolean f23029N = false;
 
     /* renamed from: R, reason: collision with root package name */
-    private int f22246R = 100;
+    private int f23033R = 100;
 
     /* renamed from: S, reason: collision with root package name */
-    private boolean f22247S = false;
+    private boolean f23034S = false;
 
     /* renamed from: T, reason: collision with root package name */
-    private boolean f22248T = false;
+    private boolean f23035T = false;
 
     /* renamed from: W, reason: collision with root package name */
-    private int f22251W = 1;
+    private int f23038W = 1;
 
     /* renamed from: X, reason: collision with root package name */
-    private f f22252X = new f() { // from class: com.anythink.expressad.videocommon.b.c.1
+    private f f23039X = new f() { // from class: com.anythink.expressad.videocommon.b.c.1
         @Override // com.anythink.expressad.videocommon.b.f
-        public final void a(long j6, int i6) {
-            if (c.this.f22235F) {
+        public final void a(long j6, int i4) {
+            if (c.this.f23022F) {
                 return;
             }
-            c.a(c.this, j6, i6);
+            c.a(c.this, j6, i4);
         }
     };
     private Handler Y = new Handler(Looper.getMainLooper()) { // from class: com.anythink.expressad.videocommon.b.c.2
         @Override // android.os.Handler
         public final void handleMessage(Message message) {
-            int i6 = message.what;
-            if (i6 == 1) {
+            int i4 = message.what;
+            if (i4 == 1) {
                 c cVar = c.this;
-                c.a(cVar, cVar.J, c.this.f22262u);
+                c.a(cVar, cVar.J, c.this.f23049u);
                 return;
             }
-            if (i6 == 2) {
-                if (c.this.f22262u != 2) {
-                    c.this.f22262u = 2;
+            if (i4 == 2) {
+                if (c.this.f23049u != 2) {
+                    c.this.f23049u = 2;
                     c cVar2 = c.this;
-                    c.a(cVar2, cVar2.J, c.this.f22262u);
+                    c.a(cVar2, cVar2.J, c.this.f23049u);
                     return;
                 }
                 return;
             }
-            if (i6 == 3) {
-                if (c.this.f22262u == 4 || c.this.f22262u == 2 || c.this.f22262u == 5) {
+            if (i4 == 3) {
+                if (c.this.f23049u == 4 || c.this.f23049u == 2 || c.this.f23049u == 5) {
                     return;
                 }
-                c.this.f22262u = 4;
+                c.this.f23049u = 4;
                 c cVar3 = c.this;
-                c.a(cVar3, cVar3.J, c.this.f22262u);
+                c.a(cVar3, cVar3.J, c.this.f23049u);
                 return;
             }
-            if (i6 == 4) {
-                c.this.f22262u = 5;
+            if (i4 == 4) {
+                c.this.f23049u = 5;
                 c.d(c.this);
                 c cVar4 = c.this;
-                c.a(cVar4, cVar4.J, c.this.f22262u);
+                c.a(cVar4, cVar4.J, c.this.f23049u);
                 return;
             }
-            if (i6 == 5) {
+            if (i4 == 5) {
                 c.this.h();
-            } else if (i6 == c.f22229p && message.obj != null) {
+            } else if (i4 == c.f23016p && message.obj != null) {
                 c.s();
             }
         }
     };
 
     public c(Context context, com.anythink.expressad.foundation.d.d dVar, ExecutorService executorService, String str) {
-        this.f22257o = false;
+        this.f23044o = false;
         if (context == null && dVar == null) {
             return;
         }
-        this.f22243O = System.currentTimeMillis();
-        this.f22236G = com.anythink.expressad.foundation.b.a.c().e();
-        this.f22233D = dVar;
-        this.f22234E = str;
-        this.f22265x = executorService;
+        this.f23030O = System.currentTimeMillis();
+        this.f23023G = com.anythink.expressad.foundation.b.a.c().e();
+        this.f23020D = dVar;
+        this.f23021E = str;
+        this.f23052x = executorService;
         if (dVar != null) {
-            this.f22238I = dVar.T();
+            this.f23025I = dVar.T();
         }
-        this.f22249U = com.anythink.expressad.foundation.h.p.d(this.f22238I);
+        this.f23036U = com.anythink.expressad.foundation.h.p.d(this.f23025I);
         a.a();
-        this.f22240L = a.a(this.f22238I);
-        this.f22257o = false;
+        this.f23027L = a.a(this.f23025I);
+        this.f23044o = false;
         try {
-            if (!TextUtils.isEmpty(this.f22238I) && this.f22256n != 3) {
+            if (!TextUtils.isEmpty(this.f23025I) && this.f23043n != 3) {
                 x();
             }
         } catch (Exception e9) {
@@ -245,28 +245,28 @@ public class c implements Serializable {
 
     private void A() {
         try {
-            if (this.f22267z != null) {
-                if (this.f22230A == null) {
+            if (this.f23054z != null) {
+                if (this.f23017A == null) {
                 }
-                if (this.f22231B != null && this.f22232C != null) {
+                if (this.f23018B != null && this.f23019C != null) {
                     return;
                 }
                 Class<?> cls = Class.forName("com.anythink.expressad.atnative.controller.NativeController");
-                this.f22231B = cls;
-                this.f22232C = cls.newInstance();
-                this.f22231B.getMethod("insertExcludeId", String.class, com.anythink.expressad.foundation.d.d.class).invoke(this.f22232C, this.f22234E, this.f22233D);
+                this.f23018B = cls;
+                this.f23019C = cls.newInstance();
+                this.f23018B.getMethod("insertExcludeId", String.class, com.anythink.expressad.foundation.d.d.class).invoke(this.f23019C, this.f23021E, this.f23020D);
             }
-            int i6 = com.anythink.expressad.reward.b.a.f20321a;
-            this.f22267z = com.anythink.expressad.reward.b.a.class;
-            this.f22230A = com.anythink.expressad.reward.b.a.class.newInstance();
-            this.f22267z.getMethod("insertExcludeId", String.class, com.anythink.expressad.foundation.d.d.class).invoke(this.f22230A, this.f22234E, this.f22233D);
-            if (this.f22231B != null) {
+            int i4 = com.anythink.expressad.reward.b.a.f21108a;
+            this.f23054z = com.anythink.expressad.reward.b.a.class;
+            this.f23017A = com.anythink.expressad.reward.b.a.class.newInstance();
+            this.f23054z.getMethod("insertExcludeId", String.class, com.anythink.expressad.foundation.d.d.class).invoke(this.f23017A, this.f23021E, this.f23020D);
+            if (this.f23018B != null) {
                 return;
             }
             Class<?> cls2 = Class.forName("com.anythink.expressad.atnative.controller.NativeController");
-            this.f22231B = cls2;
-            this.f22232C = cls2.newInstance();
-            this.f22231B.getMethod("insertExcludeId", String.class, com.anythink.expressad.foundation.d.d.class).invoke(this.f22232C, this.f22234E, this.f22233D);
+            this.f23018B = cls2;
+            this.f23019C = cls2.newInstance();
+            this.f23018B.getMethod("insertExcludeId", String.class, com.anythink.expressad.foundation.d.d.class).invoke(this.f23019C, this.f23021E, this.f23020D);
         } catch (Exception e9) {
             e9.getMessage();
         }
@@ -278,11 +278,11 @@ public class c implements Serializable {
     private void C() {
         String str;
         Message obtain = Message.obtain();
-        obtain.what = f22229p;
-        if (this.f22233D == null || TextUtils.isEmpty(this.f22234E) || TextUtils.isEmpty(this.f22233D.aa()) || TextUtils.isEmpty(this.f22233D.T())) {
+        obtain.what = f23016p;
+        if (this.f23020D == null || TextUtils.isEmpty(this.f23021E) || TextUtils.isEmpty(this.f23020D.aa()) || TextUtils.isEmpty(this.f23020D.T())) {
             str = "";
         } else {
-            str = "key=2000077&unit_id=" + this.f22234E + "&request_id=" + this.f22233D.aa() + "&request_id_notice=" + this.f22233D.ac() + "&package_name=" + com.anythink.expressad.foundation.b.a.c().b() + "&app_id=" + com.anythink.expressad.foundation.b.a.c().f() + "&video_url=" + URLEncoder.encode(this.f22233D.T()) + "&process_size=" + this.J + "&file_size=" + this.f22237H + "&ready_rate=" + this.f22246R + "&cd_rate=" + this.f22258q + "&cid=" + this.f22233D.bh() + "&type=" + this.f22262u;
+            str = "key=2000077&unit_id=" + this.f23021E + "&request_id=" + this.f23020D.aa() + "&request_id_notice=" + this.f23020D.ac() + "&package_name=" + com.anythink.expressad.foundation.b.a.c().b() + "&app_id=" + com.anythink.expressad.foundation.b.a.c().f() + "&video_url=" + URLEncoder.encode(this.f23020D.T()) + "&process_size=" + this.J + "&file_size=" + this.f23024H + "&ready_rate=" + this.f23033R + "&cd_rate=" + this.f23045q + "&cid=" + this.f23020D.bh() + "&type=" + this.f23049u;
         }
         obtain.obj = str;
         this.Y.sendMessage(obtain);
@@ -293,14 +293,14 @@ public class c implements Serializable {
     }
 
     private String E() {
-        if (this.f22233D == null || TextUtils.isEmpty(this.f22234E) || TextUtils.isEmpty(this.f22233D.aa()) || TextUtils.isEmpty(this.f22233D.T())) {
+        if (this.f23020D == null || TextUtils.isEmpty(this.f23021E) || TextUtils.isEmpty(this.f23020D.aa()) || TextUtils.isEmpty(this.f23020D.T())) {
             return "";
         }
-        return "key=2000077&unit_id=" + this.f22234E + "&request_id=" + this.f22233D.aa() + "&request_id_notice=" + this.f22233D.ac() + "&package_name=" + com.anythink.expressad.foundation.b.a.c().b() + "&app_id=" + com.anythink.expressad.foundation.b.a.c().f() + "&video_url=" + URLEncoder.encode(this.f22233D.T()) + "&process_size=" + this.J + "&file_size=" + this.f22237H + "&ready_rate=" + this.f22246R + "&cd_rate=" + this.f22258q + "&cid=" + this.f22233D.bh() + "&type=" + this.f22262u;
+        return "key=2000077&unit_id=" + this.f23021E + "&request_id=" + this.f23020D.aa() + "&request_id_notice=" + this.f23020D.ac() + "&package_name=" + com.anythink.expressad.foundation.b.a.c().b() + "&app_id=" + com.anythink.expressad.foundation.b.a.c().f() + "&video_url=" + URLEncoder.encode(this.f23020D.T()) + "&process_size=" + this.J + "&file_size=" + this.f23024H + "&ready_rate=" + this.f23033R + "&cd_rate=" + this.f23045q + "&cid=" + this.f23020D.bh() + "&type=" + this.f23049u;
     }
 
     public static /* synthetic */ boolean d(c cVar) {
-        cVar.f22255g = false;
+        cVar.f23042g = false;
         return false;
     }
 
@@ -310,7 +310,7 @@ public class c implements Serializable {
 
     private void t() {
         try {
-            if (!TextUtils.isEmpty(this.f22238I) && this.f22256n != 3) {
+            if (!TextUtils.isEmpty(this.f23025I) && this.f23043n != 3) {
                 x();
             }
         } catch (Exception e9) {
@@ -319,32 +319,32 @@ public class c implements Serializable {
     }
 
     private void u() {
-        if (this.f22254c == null) {
-            b bVar = new b(this.f22238I, this.f22246R, this.f22251W);
-            this.f22254c = bVar;
+        if (this.f23041c == null) {
+            b bVar = new b(this.f23025I, this.f23033R, this.f23038W);
+            this.f23041c = bVar;
             bVar.a(new a.b() { // from class: com.anythink.expressad.videocommon.b.c.3
                 @Override // com.anythink.core.common.res.b.a.b
                 public final void a(a.C0095a c0095a) {
                 }
 
                 @Override // com.anythink.core.common.res.b.a.b
-                public final boolean a(int i6, long j6, long j9) {
-                    if (c.this.f22237H != j9) {
-                        c.this.f22237H = j9;
+                public final boolean a(int i4, long j6, long j9) {
+                    if (c.this.f23024H != j9) {
+                        c.this.f23024H = j9;
                     }
                     c cVar = c.this;
-                    c.a(cVar, j6, cVar.f22262u);
-                    if (i6 >= c.this.f22246R) {
+                    c.a(cVar, j6, cVar.f23049u);
+                    if (i4 >= c.this.f23033R) {
                         c.this.g();
                         c.this.q();
                         return true;
                     }
-                    if (c.this.f22262u != 2 && c.this.f22262u != 4) {
+                    if (c.this.f23049u != 2 && c.this.f23049u != 4) {
                         return false;
                     }
-                    int i9 = c.this.f22262u == 4 ? 3 : 2;
+                    int i6 = c.this.f23049u == 4 ? 3 : 2;
                     Message obtain = Message.obtain();
-                    obtain.what = i9;
+                    obtain.what = i6;
                     c.this.Y.sendMessage(obtain);
                     return true;
                 }
@@ -358,105 +358,105 @@ public class c implements Serializable {
     }
 
     private void v() {
-        if (this.f22247S) {
+        if (this.f23034S) {
             return;
         }
-        this.f22247S = true;
-        com.anythink.expressad.videocommon.d.c cVar = this.f22244P;
+        this.f23034S = true;
+        com.anythink.expressad.videocommon.d.c cVar = this.f23031P;
         if (cVar != null) {
-            cVar.a(this.f22238I);
+            cVar.a(this.f23025I);
         }
-        com.anythink.expressad.videocommon.d.c cVar2 = this.f22245Q;
+        com.anythink.expressad.videocommon.d.c cVar2 = this.f23032Q;
         if (cVar2 != null) {
-            cVar2.a(this.f22238I);
+            cVar2.a(this.f23025I);
         }
     }
 
     private boolean w() {
-        return this.f22235F;
+        return this.f23022F;
     }
 
     private void x() {
         com.anythink.core.common.a.n a9;
         a.a();
-        this.f22240L = a.a(this.f22238I);
-        File file = new File(this.f22240L);
+        this.f23027L = a.a(this.f23025I);
+        File file = new File(this.f23027L);
         if (file.length() > 0) {
             this.J = file.length();
         } else {
             this.J = 0L;
         }
-        if (this.f22237H != 0 || (a9 = com.anythink.core.common.a.o.a().a(this.f22238I)) == null) {
+        if (this.f23024H != 0 || (a9 = com.anythink.core.common.a.o.a().a(this.f23025I)) == null) {
             return;
         }
-        this.f22237H = a9.d();
+        this.f23024H = a9.d();
     }
 
     private f y() {
-        return this.f22252X;
+        return this.f23039X;
     }
 
     private static void z() {
     }
 
     public final void h() {
-        if (TextUtils.isEmpty(this.f22238I)) {
+        if (TextUtils.isEmpty(this.f23025I)) {
             return;
         }
-        if (this.f22262u == 5) {
+        if (this.f23049u == 5) {
             v();
             return;
         }
-        if (this.f22256n == 3) {
+        if (this.f23043n == 3) {
             g();
             return;
         }
-        if (this.f22246R == 0) {
+        if (this.f23033R == 0) {
             g();
             return;
         }
         x();
         u();
-        if (this.f22254c != null) {
-            this.f22262u = 1;
-            this.f22235F = true;
-            this.f22254c.a();
+        if (this.f23041c != null) {
+            this.f23049u = 1;
+            this.f23022F = true;
+            this.f23041c.a();
         }
     }
 
     public final void i() {
         x();
         u();
-        if (this.f22254c != null) {
-            this.f22262u = 1;
-            this.f22235F = true;
-            this.f22254c.b();
+        if (this.f23041c != null) {
+            this.f23049u = 1;
+            this.f23022F = true;
+            this.f23041c.b();
         }
     }
 
     public final void j() {
         A();
-        this.f22262u = 4;
+        this.f23049u = 4;
     }
 
     public final int k() {
-        return this.f22262u;
+        return this.f23049u;
     }
 
     public final void l() {
-        this.f22262u = 0;
+        this.f23049u = 0;
     }
 
     public final String m() {
-        if (this.f22256n == 3) {
+        if (this.f23043n == 3) {
             return "";
         }
-        File file = new File(this.f22240L);
+        File file = new File(this.f23027L);
         try {
             return file.length() > 0 ? file.canRead() ? file.length() > 0 ? "" : "file length is 0 " : "file can not read " : "file is not exist ";
         } catch (Throwable th) {
             String message = th.getMessage();
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 th.printStackTrace();
             }
             return message;
@@ -464,12 +464,12 @@ public class c implements Serializable {
     }
 
     public final com.anythink.expressad.foundation.d.d n() {
-        return this.f22233D;
+        return this.f23020D;
     }
 
     public final void o() {
-        if (this.f22263v != null) {
-            this.f22263v = null;
+        if (this.f23050v != null) {
+            this.f23050v = null;
         }
     }
 
@@ -480,67 +480,67 @@ public class c implements Serializable {
     public final void q() {
         String str;
         Message obtain = Message.obtain();
-        obtain.what = f22229p;
-        if (this.f22233D == null || TextUtils.isEmpty(this.f22234E) || TextUtils.isEmpty(this.f22233D.aa()) || TextUtils.isEmpty(this.f22233D.T())) {
+        obtain.what = f23016p;
+        if (this.f23020D == null || TextUtils.isEmpty(this.f23021E) || TextUtils.isEmpty(this.f23020D.aa()) || TextUtils.isEmpty(this.f23020D.T())) {
             str = "";
         } else {
-            str = "key=2000077&unit_id=" + this.f22234E + "&request_id=" + this.f22233D.aa() + "&request_id_notice=" + this.f22233D.ac() + "&package_name=" + com.anythink.expressad.foundation.b.a.c().b() + "&app_id=" + com.anythink.expressad.foundation.b.a.c().f() + "&video_url=" + URLEncoder.encode(this.f22233D.T()) + "&process_size=" + this.J + "&file_size=" + this.f22237H + "&ready_rate=" + this.f22246R + "&cd_rate=" + this.f22258q + "&cid=" + this.f22233D.bh() + "&type=" + this.f22262u;
+            str = "key=2000077&unit_id=" + this.f23021E + "&request_id=" + this.f23020D.aa() + "&request_id_notice=" + this.f23020D.ac() + "&package_name=" + com.anythink.expressad.foundation.b.a.c().b() + "&app_id=" + com.anythink.expressad.foundation.b.a.c().f() + "&video_url=" + URLEncoder.encode(this.f23020D.T()) + "&process_size=" + this.J + "&file_size=" + this.f23024H + "&ready_rate=" + this.f23033R + "&cd_rate=" + this.f23045q + "&cid=" + this.f23020D.bh() + "&type=" + this.f23049u;
         }
         obtain.obj = str;
         this.Y.sendMessage(obtain);
     }
 
     public final String r() {
-        return this.f22259r;
+        return this.f23046r;
     }
 
-    public final void b(int i6) {
-        this.f22258q = i6;
+    public final void b(int i4) {
+        this.f23045q = i4;
     }
 
-    public final void c(int i6) {
-        this.f22251W = i6;
+    public final void c(int i4) {
+        this.f23038W = i4;
     }
 
     public final boolean d() {
-        return this.f22242N;
+        return this.f23029N;
     }
 
     public final String e() {
-        return this.f22240L;
+        return this.f23027L;
     }
 
     public final long f() {
-        return this.f22237H;
+        return this.f23024H;
     }
 
     public final void g() {
         Message obtain = Message.obtain();
-        this.f22262u = 5;
+        this.f23049u = 5;
         obtain.what = 4;
         this.Y.sendMessage(obtain);
     }
 
     public final boolean b() {
-        return this.f22248T;
+        return this.f23035T;
     }
 
     public final long c() {
-        return this.f22243O;
+        return this.f23030O;
     }
 
-    public final void d(int i6) {
-        this.f22246R = i6;
+    public final void d(int i4) {
+        this.f23033R = i4;
     }
 
-    public final void e(int i6) {
-        this.f22253Z = i6;
+    public final void e(int i4) {
+        this.f23040Z = i4;
     }
 
     private void c(String str) {
-        this.f22239K++;
+        this.f23026K++;
         try {
-            Context context = this.f22236G;
+            Context context = this.f23023G;
             if (context != null) {
                 Object systemService = context.getSystemService("connectivity");
                 ConnectivityManager connectivityManager = systemService instanceof ConnectivityManager ? (ConnectivityManager) systemService : null;
@@ -553,157 +553,157 @@ public class c implements Serializable {
         } catch (Throwable th) {
             th.printStackTrace();
         }
-        if (this.f22239K <= 1) {
-            this.Y.sendEmptyMessageDelayed(5, com.anythink.basead.exoplayer.i.a.f7883f);
+        if (this.f23026K <= 1) {
+            this.Y.sendEmptyMessageDelayed(5, com.anythink.basead.exoplayer.i.a.f8669f);
             return;
         }
         A();
-        com.anythink.expressad.videocommon.d.c cVar = this.f22244P;
+        com.anythink.expressad.videocommon.d.c cVar = this.f23031P;
         if (cVar != null) {
-            cVar.a(str, this.f22238I);
+            cVar.a(str, this.f23025I);
         }
-        com.anythink.expressad.videocommon.d.c cVar2 = this.f22245Q;
+        com.anythink.expressad.videocommon.d.c cVar2 = this.f23032Q;
         if (cVar2 != null) {
-            cVar2.a(str, this.f22238I);
+            cVar2.a(str, this.f23025I);
         }
-        this.f22262u = 4;
+        this.f23049u = 4;
         Message obtain = Message.obtain();
         obtain.what = 3;
         this.Y.sendMessage(obtain);
     }
 
-    public final void a(int i6) {
-        this.f22256n = i6;
+    public final void a(int i4) {
+        this.f23043n = i4;
     }
 
-    public final void b(boolean z3) {
-        this.f22242N = z3;
+    public final void b(boolean z6) {
+        this.f23029N = z6;
     }
 
     private void b(String str) {
-        com.anythink.expressad.videocommon.d.c cVar = this.f22244P;
+        com.anythink.expressad.videocommon.d.c cVar = this.f23031P;
         if (cVar != null) {
-            cVar.a(str, this.f22238I);
+            cVar.a(str, this.f23025I);
         }
-        com.anythink.expressad.videocommon.d.c cVar2 = this.f22245Q;
+        com.anythink.expressad.videocommon.d.c cVar2 = this.f23032Q;
         if (cVar2 != null) {
-            cVar2.a(str, this.f22238I);
+            cVar2.a(str, this.f23025I);
         }
-        this.f22262u = 4;
+        this.f23049u = 4;
         Message obtain = Message.obtain();
         obtain.what = 3;
         this.Y.sendMessage(obtain);
     }
 
     public final String a() {
-        return this.f22238I;
+        return this.f23025I;
     }
 
-    public final void a(boolean z3) {
-        if (!z3) {
-            this.f22257o = false;
+    public final void a(boolean z6) {
+        if (!z6) {
+            this.f23044o = false;
         }
-        this.f22248T = z3;
+        this.f23035T = z6;
     }
 
-    private static double a(double d2, double d9, int i6) {
-        if (i6 >= 0) {
-            return new BigDecimal(Double.toString(d2)).divide(new BigDecimal(Double.toString(d9)), i6, 4).doubleValue();
+    private static double a(double d9, double d10, int i4) {
+        if (i4 >= 0) {
+            return new BigDecimal(Double.toString(d9)).divide(new BigDecimal(Double.toString(d10)), i4, 4).doubleValue();
         }
         throw new IllegalAccessException("Accuracy cannot be less than 0");
     }
 
     public final void a(com.anythink.expressad.foundation.d.d dVar) {
-        this.f22233D = dVar;
+        this.f23020D = dVar;
     }
 
     private void b(com.anythink.expressad.videocommon.d.c cVar) {
-        this.f22245Q = cVar;
+        this.f23032Q = cVar;
     }
 
     public final void a(com.anythink.expressad.videocommon.d.c cVar) {
-        this.f22244P = cVar;
+        this.f23031P = cVar;
     }
 
     private void b(f fVar) {
-        CopyOnWriteArrayList<f> copyOnWriteArrayList = this.f22263v;
+        CopyOnWriteArrayList<f> copyOnWriteArrayList = this.f23050v;
         if (copyOnWriteArrayList != null) {
             copyOnWriteArrayList.add(fVar);
         }
     }
 
     public final void a(f fVar) {
-        this.f22264w = fVar;
+        this.f23051w = fVar;
     }
 
-    private void a(long j6, int i6) {
+    private void a(long j6, int i4) {
         this.J = j6;
-        int i9 = this.f22246R;
-        if (100 * j6 >= i9 * this.f22237H && !this.f22247S && i6 != 4) {
-            if (i9 == 100 && i6 != 5) {
-                this.f22262u = 5;
+        int i6 = this.f23033R;
+        if (100 * j6 >= i6 * this.f23024H && !this.f23034S && i4 != 4) {
+            if (i6 == 100 && i4 != 5) {
+                this.f23049u = 5;
                 return;
             }
             v();
         }
-        if (this.f22235F) {
-            CopyOnWriteArrayList<f> copyOnWriteArrayList = this.f22263v;
+        if (this.f23022F) {
+            CopyOnWriteArrayList<f> copyOnWriteArrayList = this.f23050v;
             if (copyOnWriteArrayList != null) {
                 Iterator<f> it = copyOnWriteArrayList.iterator();
                 while (it.hasNext()) {
                     f next = it.next();
                     if (next != null) {
-                        next.a(j6, i6);
+                        next.a(j6, i4);
                     }
                 }
             }
-            if (this.f22264w != null) {
-                if (this.f22262u == 5 || this.f22262u == 4 || this.f22262u == 2 || this.f22262u == 6) {
-                    this.f22264w.a(j6, i6);
-                    this.f22264w = null;
+            if (this.f23051w != null) {
+                if (this.f23049u == 5 || this.f23049u == 4 || this.f23049u == 2 || this.f23049u == 6) {
+                    this.f23051w.a(j6, i4);
+                    this.f23051w = null;
                 }
             }
         }
     }
 
     public final void a(String str) {
-        this.f22259r = str;
+        this.f23046r = str;
     }
 
-    public static /* synthetic */ void a(c cVar, long j6, int i6) {
+    public static /* synthetic */ void a(c cVar, long j6, int i4) {
         cVar.J = j6;
-        int i9 = cVar.f22246R;
-        if (100 * j6 >= i9 * cVar.f22237H && !cVar.f22247S && i6 != 4) {
-            if (i9 == 100 && i6 != 5) {
-                cVar.f22262u = 5;
+        int i6 = cVar.f23033R;
+        if (100 * j6 >= i6 * cVar.f23024H && !cVar.f23034S && i4 != 4) {
+            if (i6 == 100 && i4 != 5) {
+                cVar.f23049u = 5;
                 return;
             }
             cVar.v();
         }
-        if (cVar.f22235F) {
-            CopyOnWriteArrayList<f> copyOnWriteArrayList = cVar.f22263v;
+        if (cVar.f23022F) {
+            CopyOnWriteArrayList<f> copyOnWriteArrayList = cVar.f23050v;
             if (copyOnWriteArrayList != null) {
                 Iterator<f> it = copyOnWriteArrayList.iterator();
                 while (it.hasNext()) {
                     f next = it.next();
                     if (next != null) {
-                        next.a(j6, i6);
+                        next.a(j6, i4);
                     }
                 }
             }
-            if (cVar.f22264w != null) {
-                if (cVar.f22262u == 5 || cVar.f22262u == 4 || cVar.f22262u == 2 || cVar.f22262u == 6) {
-                    cVar.f22264w.a(j6, i6);
-                    cVar.f22264w = null;
+            if (cVar.f23051w != null) {
+                if (cVar.f23049u == 5 || cVar.f23049u == 4 || cVar.f23049u == 2 || cVar.f23049u == 6) {
+                    cVar.f23051w.a(j6, i4);
+                    cVar.f23051w = null;
                 }
             }
         }
     }
 
     public static /* synthetic */ void a(c cVar, String str) {
-        cVar.f22239K++;
+        cVar.f23026K++;
         try {
-            Context context = cVar.f22236G;
+            Context context = cVar.f23023G;
             if (context != null) {
                 Object systemService = context.getSystemService("connectivity");
                 ConnectivityManager connectivityManager = systemService instanceof ConnectivityManager ? (ConnectivityManager) systemService : null;
@@ -716,20 +716,20 @@ public class c implements Serializable {
         } catch (Throwable th) {
             th.printStackTrace();
         }
-        if (cVar.f22239K <= 1) {
-            cVar.Y.sendEmptyMessageDelayed(5, com.anythink.basead.exoplayer.i.a.f7883f);
+        if (cVar.f23026K <= 1) {
+            cVar.Y.sendEmptyMessageDelayed(5, com.anythink.basead.exoplayer.i.a.f8669f);
             return;
         }
         cVar.A();
-        com.anythink.expressad.videocommon.d.c cVar2 = cVar.f22244P;
+        com.anythink.expressad.videocommon.d.c cVar2 = cVar.f23031P;
         if (cVar2 != null) {
-            cVar2.a(str, cVar.f22238I);
+            cVar2.a(str, cVar.f23025I);
         }
-        com.anythink.expressad.videocommon.d.c cVar3 = cVar.f22245Q;
+        com.anythink.expressad.videocommon.d.c cVar3 = cVar.f23032Q;
         if (cVar3 != null) {
-            cVar3.a(str, cVar.f22238I);
+            cVar3.a(str, cVar.f23025I);
         }
-        cVar.f22262u = 4;
+        cVar.f23049u = 4;
         Message obtain = Message.obtain();
         obtain.what = 3;
         cVar.Y.sendMessage(obtain);

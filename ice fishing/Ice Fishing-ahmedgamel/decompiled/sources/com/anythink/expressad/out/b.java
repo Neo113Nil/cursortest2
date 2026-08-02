@@ -4,5 +4,5 @@ package com.anythink.expressad.out;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static String f20022a = "ExpressAd_16.7.81";
+    public static String f20809a = "ExpressAd_16.7.81";
 }

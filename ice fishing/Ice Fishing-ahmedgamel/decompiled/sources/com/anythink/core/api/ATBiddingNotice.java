@@ -16,9 +16,9 @@ public interface ATBiddingNotice {
 
     ATAdConst.CURRENCY getNoticePriceCurrency();
 
-    void notifyBidDisplay(boolean z3, double d2);
+    void notifyBidDisplay(boolean z6, double d9);
 
-    void notifyBidLoss(String str, double d2, Map<String, Object> map);
+    void notifyBidLoss(String str, double d9, Map<String, Object> map);
 
-    void notifyBidWin(double d2, double d9, Map<String, Object> map);
+    void notifyBidWin(double d9, double d10, Map<String, Object> map);
 }

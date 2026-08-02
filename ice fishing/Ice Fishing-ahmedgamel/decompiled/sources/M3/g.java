@@ -1,6 +1,7 @@
 package M3;
 
+import android.os.IInterface;
+
 /* loaded from: classes2.dex */
-public interface g {
-    void b(f fVar);
+public interface g extends IInterface {
 }

@@ -23,24 +23,24 @@ import org.json.JSONTokener;
 
 /* renamed from: com.facebook.ads.redexgen.X.2U, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public final class C2U implements CY, InterfaceC1821gP {
+public final class C2U implements CY, InterfaceC1841gP {
     public static byte[] A0A;
     public static String[] A0B = {"IFN7jxPm5iUVHezzrmxS", "S0eu2eNSRgR", "zAFRaPaLH2briFok", "kmV", "0tQTfhSJ7", "pW9DdJxYDevwUXMYU", "23M9j", "tE9Nw4uJT9AR2sagm"};
     public final T8 A00;
     public final TP A01;
-    public final InterfaceC1791fv A02;
-    public final InterfaceC1822gQ A03;
-    public final C1830gY A04;
-    public final InterfaceC1831gZ A05;
+    public final InterfaceC1811fv A02;
+    public final InterfaceC1842gQ A03;
+    public final C1850gY A04;
+    public final InterfaceC1851gZ A05;
     public final String A06;
-    public final Map<EnumC1817gL, C0818Cb> A09 = new HashMap();
-    public final Map<EnumC1817gL, AbstractC05812d> A08 = new HashMap();
-    public final List<InterfaceC1835gd> A07 = new ArrayList();
+    public final Map<EnumC1837gL, C0838Cb> A09 = new HashMap();
+    public final Map<EnumC1837gL, AbstractC06012d> A08 = new HashMap();
+    public final List<InterfaceC1855gd> A07 = new ArrayList();
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0A, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 21);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0A, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 21);
         }
         return new String(copyOfRange);
     }
@@ -59,24 +59,24 @@ public final class C2U implements CY, InterfaceC1821gP {
         HashMap hashMap3 = new HashMap();
         HashMap hashMap4 = new HashMap();
         synchronized (this) {
-            for (C0818Cb c0818Cb : this.A09.values()) {
-                if (c0818Cb.AAe()) {
-                    hashMap.put(c0818Cb, EnumC1838gg.A05);
+            for (C0838Cb c0838Cb : this.A09.values()) {
+                if (c0838Cb.AAe()) {
+                    hashMap.put(c0838Cb, EnumC1858gg.A05);
                 } else {
-                    hashMap.put(c0818Cb, EnumC1838gg.A04);
+                    hashMap.put(c0838Cb, EnumC1858gg.A04);
                 }
             }
             new AtomicReference();
             new AtomicReference();
-            Iterator<AbstractC05812d> it = this.A08.values().iterator();
+            Iterator<AbstractC06012d> it = this.A08.values().iterator();
             while (it.hasNext()) {
                 it.next();
-                InterfaceC1816gK interfaceC1816gK = null;
-                if (interfaceC1816gK.AAe()) {
+                InterfaceC1836gK interfaceC1836gK = null;
+                if (interfaceC1836gK.AAe()) {
                     throw new NullPointerException(A01(349, 20, 51));
                 }
             }
-            Iterator<InterfaceC1835gd> it2 = this.A07.iterator();
+            Iterator<InterfaceC1855gd> it2 = this.A07.iterator();
             if (it2.hasNext()) {
                 it2.next();
                 throw new NullPointerException(A01(424, 22, 120));
@@ -98,15 +98,15 @@ public final class C2U implements CY, InterfaceC1821gP {
             if (atomicReference2.get() != null) {
                 throw ((Throwable) atomicReference2.get());
             }
-            Set<InterfaceC1834gc> A02 = A02((JSONObject) atomicReference.get());
+            Set<InterfaceC1854gc> A02 = A02((JSONObject) atomicReference.get());
             HashMap hashMap5 = new HashMap();
             HashMap hashMap6 = new HashMap();
-            Iterator<InterfaceC1834gc> it3 = A02.iterator();
+            Iterator<InterfaceC1854gc> it3 = A02.iterator();
             while (it3.hasNext()) {
                 it3.next().A4D(hashMap5, hashMap6);
             }
             this.A03.A6b(A00((JSONObject) atomicReference.get()));
-            Iterator<InterfaceC1835gd> it4 = this.A07.iterator();
+            Iterator<InterfaceC1855gd> it4 = this.A07.iterator();
             if (it4.hasNext()) {
                 it4.next();
                 throw new NullPointerException(A01(401, 23, 20));
@@ -115,14 +115,14 @@ public final class C2U implements CY, InterfaceC1821gP {
     }
 
     public static void A05() {
-        A0A = new byte[]{102, -81, -71, 102, -72, -85, -71, -70, -72, -81, -87, -70, -85, -86, 116, 102, -103, -79, -81, -74, -74, -81, -76, -83, 102, -71, -65, -76, -87, -43, 4, 4, -76, -3, 2, -76, -10, -11, -9, -1, -5, 6, 3, 9, 2, -8, -62, -67, -37, -24, -24, -23, -18, -102, -35, -20, -33, -37, -18, -33, -102, -19, -33, -20, -16, -33, -20, -102, -36, -17, -24, -34, -26, -33, -102, -15, -29, -18, -30, -102, -24, -23, -24, -89, -19, -33, -20, -16, -33, -20, -102, -23, -15, -24, -33, -34, -102, -36, -17, -24, -34, -26, -33, -102, -61, -66, 123, -104, -85, -104, 87, -89, -87, -90, -102, -100, -86, -86, -96, -91, -98, 87, -90, -89, -85, -96, -90, -91, 87, -118, -81, -73, -94, -83, -86, -91, 97, -77, -90, -89, -77, -90, -76, -87, 97, -75, -86, -82, -90, 123, 97, 102, -91, -34, -11, 7, -80, 3, -11, 2, 6, -11, 2, -67, -1, 7, -2, -11, -12, -80, -14, 5, -2, -12, -4, -11, -80, -13, 2, -11, -15, 4, -11, -12, -54, -80, -75, 3, -95, -57, -68, -79, -74, -64, -67, -68, -73, -56, -81, -62, -73, -67, -68, 110, -64, -77, -65, -61, -77, -63, -62, 110, -62, -67, 110, 115, -63, -120, 88, 115, -63, -34, 4, -7, -18, -13, -3, -6, -7, -12, 5, -20, -1, -12, -6, -7, -85, -3, -16, -2, -5, -6, -7, -2, -16, -59, -107, -80, -2, -43, -5, -16, -27, -22, -12, -15, -16, -21, -4, -29, -10, -21, -15, -16, -94, -12, -9, -16, -94, -24, -29, -21, -18, -25, -26, -67, -94, -24, -15, -12, -27, -21, -16, -23, -94, -21, -16, -94, -89, -26, -94, -11, -25, -27, -15, -16, -26, -11, -28, -9, -16, -26, -18, -25, -11, -61, -49, -50, -44, -59, -40, -44, 124, 121, -116, 121, -90, -87, -82, -89, -91, -78, -80, -78, -87, -82, -76, -2, -17, 7, -6, -3, -17, -14, -53, -116, Byte.MAX_VALUE, c.f16316a, -116, Byte.MAX_VALUE, -115, -126, -10, -23, -11, -7, -23, -9, -8, -70, -83, -71, -67, -79, -70, -83, -69, -101, -63, -74, -85, -119, -74, -84, -102, -83, -69, -83, -68, -69, -82, -68, -71, -72, -73, -68, -82, 0, -14, -1, 3, -14, -1, -36, 4, -5, -14, -15, -49, 2, -5, -15, -7, -14, -48, -1, -14, -18, 1, -14, -15, -100, -94, -105, -116, -111, -101, -104, -105, -110, -93, -118, -99, -110, -104, -105, 111, -110, -105, -110, -100, -111, -114, -115, 0, 6, -5, -16, -11, -1, -4, -5, -10, 7, -18, 1, -10, -4, -5, -32, 1, -18, -1, 1, -14, -15, -11, -30, -13, -24, -26, -11, -32, -13, -26, -25, -13, -26, -12, -23, -32, -12};
+        A0A = new byte[]{102, -81, -71, 102, -72, -85, -71, -70, -72, -81, -87, -70, -85, -86, 116, 102, -103, -79, -81, -74, -74, -81, -76, -83, 102, -71, -65, -76, -87, -43, 4, 4, -76, -3, 2, -76, -10, -11, -9, -1, -5, 6, 3, 9, 2, -8, -62, -67, -37, -24, -24, -23, -18, -102, -35, -20, -33, -37, -18, -33, -102, -19, -33, -20, -16, -33, -20, -102, -36, -17, -24, -34, -26, -33, -102, -15, -29, -18, -30, -102, -24, -23, -24, -89, -19, -33, -20, -16, -33, -20, -102, -23, -15, -24, -33, -34, -102, -36, -17, -24, -34, -26, -33, -102, -61, -66, 123, -104, -85, -104, 87, -89, -87, -90, -102, -100, -86, -86, -96, -91, -98, 87, -90, -89, -85, -96, -90, -91, 87, -118, -81, -73, -94, -83, -86, -91, 97, -77, -90, -89, -77, -90, -76, -87, 97, -75, -86, -82, -90, 123, 97, 102, -91, -34, -11, 7, -80, 3, -11, 2, 6, -11, 2, -67, -1, 7, -2, -11, -12, -80, -14, 5, -2, -12, -4, -11, -80, -13, 2, -11, -15, 4, -11, -12, -54, -80, -75, 3, -95, -57, -68, -79, -74, -64, -67, -68, -73, -56, -81, -62, -73, -67, -68, 110, -64, -77, -65, -61, -77, -63, -62, 110, -62, -67, 110, 115, -63, -120, 88, 115, -63, -34, 4, -7, -18, -13, -3, -6, -7, -12, 5, -20, -1, -12, -6, -7, -85, -3, -16, -2, -5, -6, -7, -2, -16, -59, -107, -80, -2, -43, -5, -16, -27, -22, -12, -15, -16, -21, -4, -29, -10, -21, -15, -16, -94, -12, -9, -16, -94, -24, -29, -21, -18, -25, -26, -67, -94, -24, -15, -12, -27, -21, -16, -23, -94, -21, -16, -94, -89, -26, -94, -11, -25, -27, -15, -16, -26, -11, -28, -9, -16, -26, -18, -25, -11, -61, -49, -50, -44, -59, -40, -44, 124, 121, -116, 121, -90, -87, -82, -89, -91, -78, -80, -78, -87, -82, -76, -2, -17, 7, -6, -3, -17, -14, -53, -116, Byte.MAX_VALUE, c.f17103a, -116, Byte.MAX_VALUE, -115, -126, -10, -23, -11, -7, -23, -9, -8, -70, -83, -71, -67, -79, -70, -83, -69, -101, -63, -74, -85, -119, -74, -84, -102, -83, -69, -83, -68, -69, -82, -68, -71, -72, -73, -68, -82, 0, -14, -1, 3, -14, -1, -36, 4, -5, -14, -15, -49, 2, -5, -15, -7, -14, -48, -1, -14, -18, 1, -14, -15, -100, -94, -105, -116, -111, -101, -104, -105, -110, -93, -118, -99, -110, -104, -105, 111, -110, -105, -110, -100, -111, -114, -115, 0, 6, -5, -16, -11, -1, -4, -5, -10, 7, -18, 1, -10, -4, -5, -32, 1, -18, -1, 1, -14, -15, -11, -30, -13, -24, -26, -11, -32, -13, -26, -25, -13, -26, -12, -23, -32, -12};
     }
 
     /* JADX WARN: Failed to parse debug info
     java.lang.ArrayIndexOutOfBoundsException
      */
     private synchronized void A08(Throwable th) {
-        Iterator<InterfaceC1835gd> it = this.A07.iterator();
+        Iterator<InterfaceC1855gd> it = this.A07.iterator();
         if (it.hasNext()) {
             it.next();
             new HashMap();
@@ -135,36 +135,36 @@ public final class C2U implements CY, InterfaceC1821gP {
     java.lang.ArrayIndexOutOfBoundsException
      */
     @Override // com.instagram.common.viewpoint.core.CY
-    public final synchronized InterfaceC1816gK A5U(EnumC1817gL enumC1817gL) {
-        if (enumC1817gL.A03() != EnumC1819gN.A04) {
+    public final synchronized InterfaceC1836gK A5U(EnumC1837gL enumC1837gL) {
+        if (enumC1837gL.A03() != EnumC1839gN.A04) {
             throw new IllegalArgumentException(A01(47, 59, 101));
         }
-        if (this.A09.containsKey(enumC1817gL)) {
-            return this.A09.get(enumC1817gL);
+        if (this.A09.containsKey(enumC1837gL)) {
+            return this.A09.get(enumC1837gL);
         }
-        C0818Cb c0818Cb = new C0818Cb(enumC1817gL);
-        this.A09.put(enumC1817gL, c0818Cb);
-        Iterator<InterfaceC1835gd> it = this.A07.iterator();
+        C0838Cb c0838Cb = new C0838Cb(enumC1837gL);
+        this.A09.put(enumC1837gL, c0838Cb);
+        Iterator<InterfaceC1855gd> it = this.A07.iterator();
         if (it.hasNext()) {
             it.next();
             throw new NullPointerException(A01(377, 24, 120));
         }
-        String.format(Locale.US, A01(153, 35, 123), enumC1817gL);
-        return c0818Cb;
+        String.format(Locale.US, A01(153, 35, 123), enumC1837gL);
+        return c0838Cb;
     }
 
     static {
         A05();
     }
 
-    public C2U(T8 t82, TP tp, InterfaceC1791fv interfaceC1791fv, String str, InterfaceC1831gZ interfaceC1831gZ, C1830gY c1830gY, InterfaceC1820gO interfaceC1820gO) {
+    public C2U(T8 t82, TP tp, InterfaceC1811fv interfaceC1811fv, String str, InterfaceC1851gZ interfaceC1851gZ, C1850gY c1850gY, InterfaceC1840gO interfaceC1840gO) {
         this.A00 = t82;
         this.A01 = tp;
-        this.A02 = interfaceC1791fv;
+        this.A02 = interfaceC1811fv;
         this.A06 = str;
-        this.A05 = interfaceC1831gZ;
-        this.A04 = c1830gY;
-        this.A03 = interfaceC1820gO.A5E(this);
+        this.A05 = interfaceC1851gZ;
+        this.A04 = c1850gY;
+        this.A03 = interfaceC1840gO.A5E(this);
     }
 
     public static int A00(JSONObject jSONObject) throws JSONException {
@@ -172,14 +172,14 @@ public final class C2U implements CY, InterfaceC1821gP {
         if (time > 0) {
             return time;
         }
-        throw new JSONException(String.format(Locale.US, A01(a.f21730T, 24, 44), Integer.valueOf(time)));
+        throw new JSONException(String.format(Locale.US, A01(a.f22517T, 24, 44), Integer.valueOf(time)));
     }
 
-    private Set<InterfaceC1834gc> A02(JSONObject jSONObject) throws JSONException {
+    private Set<InterfaceC1854gc> A02(JSONObject jSONObject) throws JSONException {
         HashSet hashSet = new HashSet();
         JSONObject jSONObject2 = jSONObject.getJSONObject(A01(369, 8, 52));
-        JSONObject data = jSONObject.getJSONObject(A01(com.anythink.expressad.foundation.g.a.bb, 7, a.f21756z));
-        Iterator<C0818Cb> it = this.A09.values().iterator();
+        JSONObject data = jSONObject.getJSONObject(A01(com.anythink.expressad.foundation.g.a.bb, 7, a.f22543z));
+        Iterator<C0838Cb> it = this.A09.values().iterator();
         while (true) {
             boolean hasNext = it.hasNext();
             String[] strArr = A0B;
@@ -190,8 +190,8 @@ public final class C2U implements CY, InterfaceC1821gP {
             strArr2[1] = "GiFNWD8Qhge";
             strArr2[3] = "8JT";
             if (hasNext) {
-                final C0818Cb next = it.next();
-                switch (C1833gb.A01[EnumC1839gh.A00(jSONObject2.getString(next.A8F().A04())).ordinal()]) {
+                final C0838Cb next = it.next();
+                switch (C1853gb.A01[EnumC1859gh.A00(jSONObject2.getString(next.A8F().A04())).ordinal()]) {
                     case 1:
                         final JSONObject fingerprint = data.getJSONObject(next.A8F().A04()).getJSONObject(A01(312, 4, 3));
                         final JSONObject responseObject = data.getJSONObject(next.A8F().A04()).optJSONObject(A01(316, 11, 43));
@@ -200,13 +200,13 @@ public final class C2U implements CY, InterfaceC1821gP {
                             public final JSONObject A01;
 
                             {
-                                EnumC1839gh enumC1839gh = EnumC1839gh.A03;
+                                EnumC1859gh enumC1859gh = EnumC1859gh.A03;
                                 this.A00 = fingerprint;
                                 this.A01 = responseObject;
                             }
 
-                            @Override // com.instagram.common.viewpoint.core.CL, com.instagram.common.viewpoint.core.InterfaceC1834gc
-                            public final void A4D(Map<InterfaceC1816gK, EnumC1839gh> map, Map<SyncModifiableBundle, EnumC1826gU> map2) {
+                            @Override // com.instagram.common.viewpoint.core.CL, com.instagram.common.viewpoint.core.InterfaceC1854gc
+                            public final void A4D(Map<InterfaceC1836gK, EnumC1859gh> map, Map<SyncModifiableBundle, EnumC1846gU> map2) {
                                 super.A00.A03(this.A00, this.A01);
                                 super.A4D(map, map2);
                             }
@@ -215,7 +215,7 @@ public final class C2U implements CY, InterfaceC1821gP {
                     case 2:
                         hashSet.add(new CL(next) { // from class: com.facebook.ads.redexgen.X.2W
                             {
-                                EnumC1839gh enumC1839gh = EnumC1839gh.A04;
+                                EnumC1859gh enumC1859gh = EnumC1859gh.A04;
                             }
                         });
                         break;
@@ -223,30 +223,30 @@ public final class C2U implements CY, InterfaceC1821gP {
                         throw new AssertionError();
                 }
             } else {
-                Iterator<AbstractC05812d> it2 = this.A08.values().iterator();
+                Iterator<AbstractC06012d> it2 = this.A08.values().iterator();
                 while (it2.hasNext()) {
                     it2.next();
-                    final AbstractC05812d abstractC05812d = null;
-                    switch (C1833gb.A00[EnumC1826gU.A00(jSONObject2.getString(abstractC05812d.A8F().A04())).ordinal()]) {
+                    final AbstractC06012d abstractC06012d = null;
+                    switch (C1853gb.A00[EnumC1846gU.A00(jSONObject2.getString(abstractC06012d.A8F().A04())).ordinal()]) {
                         case 1:
-                            hashSet.add(new CM(abstractC05812d) { // from class: com.facebook.ads.redexgen.X.2b
+                            hashSet.add(new CM(abstractC06012d) { // from class: com.facebook.ads.redexgen.X.2b
                                 {
-                                    EnumC1826gU enumC1826gU = EnumC1826gU.A03;
+                                    EnumC1846gU enumC1846gU = EnumC1846gU.A03;
                                 }
                             });
                             break;
                         case 2:
-                            hashSet.add(new CM(abstractC05812d) { // from class: com.facebook.ads.redexgen.X.2V
+                            hashSet.add(new CM(abstractC06012d) { // from class: com.facebook.ads.redexgen.X.2V
                                 public static byte[] A00;
 
                                 static {
                                     A01();
                                 }
 
-                                public static String A00(int i, int i6, int i9) {
-                                    byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-                                    for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-                                        copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) + d.f10801c);
+                                public static String A00(int i, int i4, int i6) {
+                                    byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+                                    for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+                                        copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) + d.f11587c);
                                     }
                                     return new String(copyOfRange);
                                 }
@@ -256,11 +256,11 @@ public final class C2U implements CY, InterfaceC1821gP {
                                 }
 
                                 {
-                                    EnumC1826gU enumC1826gU = EnumC1826gU.A04;
+                                    EnumC1846gU enumC1846gU = EnumC1846gU.A04;
                                 }
 
-                                @Override // com.instagram.common.viewpoint.core.CM, com.instagram.common.viewpoint.core.InterfaceC1834gc
-                                public final void A4D(Map<InterfaceC1816gK, EnumC1839gh> map, Map<SyncModifiableBundle, EnumC1826gU> map2) {
+                                @Override // com.instagram.common.viewpoint.core.CM, com.instagram.common.viewpoint.core.InterfaceC1854gc
+                                public final void A4D(Map<InterfaceC1836gK, EnumC1859gh> map, Map<SyncModifiableBundle, EnumC1846gU> map2) {
                                     throw new NullPointerException(A00(0, 15, 87));
                                 }
                             });
@@ -274,16 +274,16 @@ public final class C2U implements CY, InterfaceC1821gP {
         }
     }
 
-    private JSONObject A03(Map<InterfaceC1816gK, EnumC1838gg> map, Map<SyncModifiableBundle, EnumC1825gT> map2, Map<SyncModifiableBundle, JSONObject> clientBundleData, Map<SyncModifiableBundle, JSONObject> clientBundleFingerprint) throws JSONException {
+    private JSONObject A03(Map<InterfaceC1836gK, EnumC1858gg> map, Map<SyncModifiableBundle, EnumC1845gT> map2, Map<SyncModifiableBundle, JSONObject> clientBundleData, Map<SyncModifiableBundle, JSONObject> clientBundleFingerprint) throws JSONException {
         String A01;
         JSONObject syncRequest = new JSONObject();
-        for (Map.Entry<InterfaceC1816gK, EnumC1838gg> entry : map.entrySet()) {
+        for (Map.Entry<InterfaceC1836gK, EnumC1858gg> entry : map.entrySet()) {
             syncRequest.put(entry.getKey().A8F().A04(), entry.getValue().A03());
         }
-        for (Map.Entry<SyncModifiableBundle, EnumC1825gT> entry2 : map2.entrySet()) {
+        for (Map.Entry<SyncModifiableBundle, EnumC1845gT> entry2 : map2.entrySet()) {
             entry2.getKey();
-            InterfaceC1816gK interfaceC1816gK = null;
-            String A04 = interfaceC1816gK.A8F().A04();
+            InterfaceC1836gK interfaceC1836gK = null;
+            String A04 = interfaceC1836gK.A8F().A04();
             String A03 = entry2.getValue().A03();
             String[] strArr = A0B;
             if (strArr[1].length() == strArr[3].length()) {
@@ -293,17 +293,17 @@ public final class C2U implements CY, InterfaceC1821gP {
             syncRequest.put(A04, A03);
         }
         JSONObject jSONObject = new JSONObject();
-        Iterator<Map.Entry<InterfaceC1816gK, EnumC1838gg>> it = map.entrySet().iterator();
+        Iterator<Map.Entry<InterfaceC1836gK, EnumC1858gg>> it = map.entrySet().iterator();
         while (true) {
             boolean hasNext = it.hasNext();
             A01 = A01(316, 11, 43);
             if (!hasNext) {
                 break;
             }
-            Map.Entry<InterfaceC1816gK, EnumC1838gg> next = it.next();
-            if (next.getValue() == EnumC1838gg.A05) {
+            Map.Entry<InterfaceC1836gK, EnumC1858gg> next = it.next();
+            if (next.getValue() == EnumC1858gg.A05) {
                 JSONObject updateData = new JSONObject();
-                InterfaceC1816gK key = next.getKey();
+                InterfaceC1836gK key = next.getKey();
                 jSONObject.put(key.A8F().A04(), updateData);
                 if (next.getKey().A8F().A05()) {
                     JSONObject request = key.A88();
@@ -311,7 +311,7 @@ public final class C2U implements CY, InterfaceC1821gP {
                 } else {
                     updateData.put(A01, JSONObject.NULL);
                 }
-                EnumC1817gL A8F = key.A8F();
+                EnumC1837gL A8F = key.A8F();
                 String[] strArr2 = A0B;
                 if (strArr2[7].length() != strArr2[2].length()) {
                     String[] strArr3 = A0B;
@@ -324,12 +324,12 @@ public final class C2U implements CY, InterfaceC1821gP {
                 }
             }
         }
-        for (Map.Entry<SyncModifiableBundle, EnumC1825gT> entry3 : map2.entrySet()) {
+        for (Map.Entry<SyncModifiableBundle, EnumC1845gT> entry3 : map2.entrySet()) {
             JSONObject updateData2 = new JSONObject();
-            InterfaceC1816gK key2 = entry3.getKey();
+            InterfaceC1836gK key2 = entry3.getKey();
             JSONObject request2 = clientBundleFingerprint.get(entry3.getKey());
             updateData2.put(A01, request2);
-            if (entry3.getValue() == EnumC1825gT.A05) {
+            if (entry3.getValue() == EnumC1845gT.A05) {
                 String A012 = A01(312, 4, 3);
                 JSONObject request3 = clientBundleData.get(key2);
                 updateData2.put(A012, request3);
@@ -346,8 +346,8 @@ public final class C2U implements CY, InterfaceC1821gP {
         }
         JSONObject jSONObject3 = new JSONObject();
         jSONObject3.put(A01(342, 7, 111), syncRequest);
-        jSONObject3.put(A01(com.anythink.expressad.foundation.g.a.bb, 7, a.f21756z), jSONObject);
-        jSONObject3.put(A01(BaseATView.a.f9779P, 7, 75), jSONObject2);
+        jSONObject3.put(A01(com.anythink.expressad.foundation.g.a.bb, 7, a.f22543z), jSONObject);
+        jSONObject3.put(A01(BaseATView.a.f10565P, 7, 75), jSONObject2);
         return jSONObject3;
     }
 
@@ -365,21 +365,21 @@ public final class C2U implements CY, InterfaceC1821gP {
         this.A03.A6c();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1821gP
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1841gP
     public final void AIo() {
         if (this.A01.AAh()) {
             String str = A01(106, 23, 34) + this.A01.A7k().A07() + A01(0, 29, 49);
-            A08(new C1837gf());
+            A08(new C1857gf());
             return;
         }
         try {
-            if (!C1290Up.A27(this.A00) || this.A00.A04().AAU()) {
+            if (!C1310Up.A27(this.A00) || this.A00.A04().AAU()) {
                 A04();
                 return;
             }
-            throw new IllegalStateException(A01(29, 18, a.f21728R));
+            throw new IllegalStateException(A01(29, 18, a.f22515R));
         } catch (Throwable th) {
-            String.format(Locale.US, A01(249, 49, a.f21756z), Integer.valueOf(this.A04.A01()));
+            String.format(Locale.US, A01(249, 49, a.f22543z), Integer.valueOf(this.A04.A01()));
             A08(th);
             this.A03.A6b(this.A04.A01());
         }

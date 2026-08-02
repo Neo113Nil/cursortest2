@@ -8,44 +8,44 @@ import java.util.Iterator;
 public abstract class MB {
 
     /* renamed from: a, reason: collision with root package name */
-    public Object[] f26265a;
+    public Object[] f27056a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f26266b;
+    public int f27057b;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f26267c;
+    public boolean f27058c;
 
     public MB(int i) {
         MA.q(i, "initialCapacity");
-        this.f26265a = new Object[i];
-        this.f26266b = 0;
+        this.f27056a = new Object[i];
+        this.f27057b = 0;
     }
 
-    public static int d(int i, int i6) {
-        if (i6 < 0) {
+    public static int d(int i, int i4) {
+        if (i4 < 0) {
             throw new IllegalArgumentException("cannot store more than Integer.MAX_VALUE elements");
         }
-        if (i6 <= i) {
+        if (i4 <= i) {
             return i;
         }
-        int i9 = i + (i >> 1) + 1;
-        if (i9 < i6) {
-            int highestOneBit = Integer.highestOneBit(i6 - 1);
-            i9 = highestOneBit + highestOneBit;
+        int i6 = i + (i >> 1) + 1;
+        if (i6 < i4) {
+            int highestOneBit = Integer.highestOneBit(i4 - 1);
+            i6 = highestOneBit + highestOneBit;
         }
-        if (i9 < 0) {
+        if (i6 < 0) {
             return Integer.MAX_VALUE;
         }
-        return i9;
+        return i6;
     }
 
     public final void a(Object obj) {
         obj.getClass();
         e(1);
-        Object[] objArr = this.f26265a;
-        int i = this.f26266b;
-        this.f26266b = i + 1;
+        Object[] objArr = this.f27056a;
+        int i = this.f27057b;
+        this.f27057b = i + 1;
         objArr[i] = obj;
     }
 
@@ -54,7 +54,7 @@ public abstract class MB {
             Collection collection = (Collection) iterable;
             e(collection.size());
             if (collection instanceof NB) {
-                this.f26266b = ((NB) collection).h(this.f26265a, this.f26266b);
+                this.f27057b = ((NB) collection).h(this.f27056a, this.f27057b);
                 return;
             }
         }
@@ -67,11 +67,11 @@ public abstract class MB {
     public abstract MB c(Object obj);
 
     public final void e(int i) {
-        int length = this.f26265a.length;
-        int d2 = d(length, this.f26266b + i);
-        if (d2 > length || this.f26267c) {
-            this.f26265a = Arrays.copyOf(this.f26265a, d2);
-            this.f26267c = false;
+        int length = this.f27056a.length;
+        int d9 = d(length, this.f27057b + i);
+        if (d9 > length || this.f27058c) {
+            this.f27056a = Arrays.copyOf(this.f27056a, d9);
+            this.f27058c = false;
         }
     }
 }

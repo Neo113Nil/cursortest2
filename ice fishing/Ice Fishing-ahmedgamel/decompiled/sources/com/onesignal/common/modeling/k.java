@@ -7,7 +7,7 @@ import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import u7.v;
-import v7.AbstractC5129j;
+import v7.AbstractC5119j;
 
 /* loaded from: classes2.dex */
 public abstract class k implements com.onesignal.common.events.d, com.onesignal.common.modeling.c, com.onesignal.common.modeling.a {
@@ -31,7 +31,7 @@ public abstract class k implements com.onesignal.common.events.d, com.onesignal.
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((com.onesignal.common.modeling.d) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(com.onesignal.common.modeling.d it) {
@@ -54,7 +54,7 @@ public abstract class k implements com.onesignal.common.events.d, com.onesignal.
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((com.onesignal.common.modeling.d) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(com.onesignal.common.modeling.d it) {
@@ -77,7 +77,7 @@ public abstract class k implements com.onesignal.common.events.d, com.onesignal.
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((com.onesignal.common.modeling.d) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(com.onesignal.common.modeling.d it) {
@@ -100,7 +100,7 @@ public abstract class k implements com.onesignal.common.events.d, com.onesignal.
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((com.onesignal.common.modeling.d) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(com.onesignal.common.modeling.d it) {
@@ -183,12 +183,12 @@ public abstract class k implements com.onesignal.common.events.d, com.onesignal.
     @Override // com.onesignal.common.modeling.c
     public void clear(String tag) {
         kotlin.jvm.internal.h.e(tag, "tag");
-        List<i> L6 = AbstractC5129j.L(this.models);
+        List<i> J = AbstractC5119j.J(this.models);
         synchronized (this.models) {
             this.models.clear();
             persist();
         }
-        for (i iVar : L6) {
+        for (i iVar : J) {
             iVar.unsubscribe((com.onesignal.common.modeling.a) this);
             this.changeSubscription.fire(new b(iVar, tag));
         }
@@ -226,11 +226,11 @@ public abstract class k implements com.onesignal.common.events.d, com.onesignal.
 
     @Override // com.onesignal.common.modeling.c
     public Collection<i> list() {
-        List L6;
+        List J;
         synchronized (this.models) {
-            L6 = AbstractC5129j.L(this.models);
+            J = AbstractC5119j.J(this.models);
         }
-        return L6;
+        return J;
     }
 
     public final void load() {

@@ -1,18 +1,17 @@
 package f8;
 
-import a.AbstractC0422a;
 import java.util.List;
-import u7.C5093k;
-import v7.C5135p;
+import u7.C5085k;
+import v7.C5125p;
 
 /* loaded from: classes2.dex */
 public final class q implements c8.e {
 
     /* renamed from: a, reason: collision with root package name */
-    public final C5093k f37575a;
+    public final C5085k f37537a;
 
     public q(I7.a aVar) {
-        this.f37575a = AbstractC0422a.q(aVar);
+        this.f37537a = N3.C.O(aVar);
     }
 
     @Override // c8.e
@@ -27,7 +26,7 @@ public final class q implements c8.e {
     }
 
     @Override // c8.e
-    public final t8.g d() {
+    public final com.bumptech.glide.h d() {
         return k().d();
     }
 
@@ -48,7 +47,7 @@ public final class q implements c8.e {
 
     @Override // c8.e
     public final List getAnnotations() {
-        return C5135p.f41442n;
+        return C5125p.f41221n;
     }
 
     @Override // c8.e
@@ -67,7 +66,7 @@ public final class q implements c8.e {
     }
 
     public final c8.e k() {
-        return (c8.e) this.f37575a.getValue();
+        return (c8.e) this.f37537a.getValue();
     }
 
     @Override // c8.e

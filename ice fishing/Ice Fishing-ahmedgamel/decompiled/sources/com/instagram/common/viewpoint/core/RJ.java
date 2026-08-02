@@ -18,23 +18,23 @@ public class RJ implements Runnable {
     public boolean A04 = false;
     public boolean A05 = false;
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            byte b9 = copyOfRange[i10];
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            byte b9 = copyOfRange[i9];
             if (A08[6].length() == 25) {
                 throw new RuntimeException();
             }
             String[] strArr = A08;
             strArr[1] = "lXzWc938MQZaj6BgS1Y9BEfSDAuAR6qF";
             strArr[5] = "B8zmNNge3ag7Hwi7A1PWi4fqxiL6HNqU";
-            copyOfRange[i10] = (byte) ((b9 - i9) - 123);
+            copyOfRange[i9] = (byte) ((b9 - i6) - 123);
         }
         return new String(copyOfRange);
     }
 
     public static void A03() {
-        byte[] bArr = {c.f16317b, 68, 14, 65, 81, 96, 93, 90, 90};
+        byte[] bArr = {c.f17104b, 68, 14, 65, 81, 96, 93, 90, 90};
         String[] strArr = A08;
         if (strArr[1].charAt(2) != strArr[5].charAt(2)) {
             throw new RuntimeException();
@@ -54,17 +54,17 @@ public class RJ implements Runnable {
         this.A01 = new OverScroller(c7m.getContext(), C7M.A1A);
     }
 
-    private float A00(float f3) {
-        return (float) Math.sin((f3 - 0.5f) * 0.47123894f);
+    private float A00(float f2) {
+        return (float) Math.sin((f2 - 0.5f) * 0.47123894f);
     }
 
-    private int A01(int i, int i6, int i9, int i10) {
+    private int A01(int i, int i4, int i6, int i9) {
         int absDx;
         int containerSize = Math.abs(i);
-        int delta = Math.abs(i6);
+        int delta = Math.abs(i4);
         int duration = containerSize > delta ? 1 : 0;
-        int halfContainerSize = (int) Math.sqrt((i9 * i9) + (i10 * i10));
-        int absDx2 = (int) Math.sqrt((i * i) + (i6 * i6));
+        int halfContainerSize = (int) Math.sqrt((i6 * i6) + (i9 * i9));
+        int absDx2 = (int) Math.sqrt((i * i) + (i4 * i4));
         C7M c7m = this.A06;
         int width = duration != 0 ? c7m.getWidth() : c7m.getHeight();
         int velocity = width / 2;
@@ -100,8 +100,8 @@ public class RJ implements Runnable {
         }
     }
 
-    private final void A06(int i, int i6, int i9, int i10) {
-        A0B(i, i6, A01(i, i6, i9, i10));
+    private final void A06(int i, int i4, int i6, int i9) {
+        A0B(i, i4, A01(i, i4, i6, i9));
     }
 
     public final void A07() {
@@ -118,23 +118,23 @@ public class RJ implements Runnable {
         this.A01.abortAnimation();
     }
 
-    public final void A09(int i, int i6) {
+    public final void A09(int i, int i4) {
         this.A06.setScrollState(2);
         this.A03 = 0;
         this.A02 = 0;
-        this.A01.fling(0, 0, i, i6, Integer.MIN_VALUE, Integer.MAX_VALUE, Integer.MIN_VALUE, Integer.MAX_VALUE);
+        this.A01.fling(0, 0, i, i4, Integer.MIN_VALUE, Integer.MAX_VALUE, Integer.MIN_VALUE, Integer.MAX_VALUE);
         A07();
     }
 
-    public final void A0A(int i, int i6) {
-        A06(i, i6, 0, 0);
+    public final void A0A(int i, int i4) {
+        A06(i, i4, 0, 0);
     }
 
-    public final void A0B(int i, int i6, int i9) {
-        A0C(i, i6, i9, C7M.A1A);
+    public final void A0B(int i, int i4, int i6) {
+        A0C(i, i4, i6, C7M.A1A);
     }
 
-    public final void A0C(int i, int i6, int i9, Interpolator interpolator) {
+    public final void A0C(int i, int i4, int i6, Interpolator interpolator) {
         if (this.A00 != interpolator) {
             this.A00 = interpolator;
             this.A01 = new OverScroller(this.A06.getContext(), interpolator);
@@ -142,7 +142,7 @@ public class RJ implements Runnable {
         this.A06.setScrollState(2);
         this.A03 = 0;
         this.A02 = 0;
-        this.A01.startScroll(0, 0, i, i6, i9);
+        this.A01.startScroll(0, 0, i, i4, i6);
         if (Build.VERSION.SDK_INT < 23) {
             OverScroller overScroller = this.A01;
             if (A08[2].charAt(23) != 'n') {
@@ -156,12 +156,12 @@ public class RJ implements Runnable {
         A07();
     }
 
-    public final void A0D(int i, int i6, Interpolator interpolator) {
-        int A01 = A01(i, i6, 0, 0);
+    public final void A0D(int i, int i4, Interpolator interpolator) {
+        int A01 = A01(i, i4, 0, 0);
         if (interpolator == null) {
             interpolator = C7M.A1A;
         }
-        A0C(i, i6, A01, interpolator);
+        A0C(i, i4, A01, interpolator);
         if (A08[6].length() == 25) {
             throw new RuntimeException();
         }
@@ -172,7 +172,7 @@ public class RJ implements Runnable {
     public final void run() {
         int[] iArr;
         boolean awakenScrollBars;
-        boolean z3;
+        boolean z6;
         if (this.A06.A06 == null) {
             A08();
             return;
@@ -188,11 +188,11 @@ public class RJ implements Runnable {
             int vresult = overscrollX - this.A02;
             int velX = velY - this.A03;
             int i = 0;
-            int i6 = 0;
+            int i4 = 0;
             this.A02 = overscrollX;
             this.A03 = velY;
+            int i6 = 0;
             int i9 = 0;
-            int i10 = 0;
             if (this.A06.A1w(vresult, velX, iArr, null, 1)) {
                 vresult -= iArr[0];
                 velX -= iArr[1];
@@ -218,10 +218,10 @@ public class RJ implements Runnable {
                     if (A08[4].charAt(19) != '9') {
                         A08[4] = "aF9lT9JucYAVgVWisB0rNkK4be7J2iGb";
                         i = r22.A1f(vresult, ra, c7m2.A0s);
-                        i9 = vresult - i;
+                        i6 = vresult - i;
                     } else {
                         i = r22.A1f(vresult, ra, c7m2.A0s);
-                        i9 = vresult - i;
+                        i6 = vresult - i;
                     }
                 }
                 if (velX != 0) {
@@ -231,11 +231,11 @@ public class RJ implements Runnable {
                         String[] strArr3 = A08;
                         strArr3[7] = "UcFH7yF8zZNprQitZtXhkmlCMHIdnioP";
                         strArr3[0] = "hCBROqFKcvdbLIHuO2wEis8Nwj1iktft";
-                        i6 = r23.A1g(velX, ra2, this.A06.A0s);
-                        i10 = velX - i6;
+                        i4 = r23.A1g(velX, ra2, this.A06.A0s);
+                        i9 = velX - i4;
                     } else {
-                        i6 = r23.A1g(velX, ra2, this.A06.A0s);
-                        i10 = velX - i6;
+                        i4 = r23.A1g(velX, ra2, this.A06.A0s);
+                        i9 = velX - i4;
                     }
                 }
                 P4.A00();
@@ -248,16 +248,16 @@ public class RJ implements Runnable {
                         rf.A09();
                     } else if (rf.A07() >= x9) {
                         rf.A0A(x9 - 1);
-                        rf.A04(vresult - i9, velX - i10);
+                        rf.A04(vresult - i6, velX - i9);
                     } else {
-                        int y7 = vresult - i9;
+                        int y7 = vresult - i6;
                         if (A08[4].charAt(19) != 57) {
                             String[] strArr4 = A08;
                             strArr4[1] = "2vzJUgZGYJyf60lr7OoRSSfYHAbPRQwN";
                             strArr4[5] = "FZzkKBCO3vggmWhfitA4hZZwekV7eOzC";
-                            rf.A04(y7, velX - i10);
+                            rf.A04(y7, velX - i9);
                         } else {
-                            rf.A04(y7, velX - i10);
+                            rf.A04(y7, velX - i9);
                         }
                     }
                 }
@@ -275,21 +275,21 @@ public class RJ implements Runnable {
                 c7m3.A1b(vresult, velX);
             }
             int dy = i;
-            int hresult = i6;
-            if (!this.A06.A1v(dy, hresult, i9, i10, null, 1) && (i9 != 0 || i10 != 0)) {
+            int hresult = i4;
+            if (!this.A06.A1v(dy, hresult, i6, i9, null, 1) && (i6 != 0 || i9 != 0)) {
                 int x10 = (int) overScroller.getCurrVelocity();
                 int dx = 0;
-                if (i9 != overscrollX) {
-                    if (i9 < 0) {
+                if (i6 != overscrollX) {
+                    if (i6 < 0) {
                         dx = -x10;
                     } else {
-                        dx = i9 > 0 ? x10 : 0;
+                        dx = i6 > 0 ? x10 : 0;
                     }
                 }
-                if (i10 != velY) {
-                    if (i10 < 0) {
+                if (i9 != velY) {
+                    if (i9 < 0) {
                         x10 = -x10;
-                    } else if (i10 <= 0) {
+                    } else if (i9 <= 0) {
                         x10 = 0;
                     }
                 } else {
@@ -298,29 +298,29 @@ public class RJ implements Runnable {
                 if (this.A06.getOverScrollMode() != 2) {
                     this.A06.A1a(dx, x10);
                 }
-                if ((dx != 0 || i9 == overscrollX || overScroller.getFinalX() == 0) && (x10 != 0 || i10 == velY || overScroller.getFinalY() == 0)) {
+                if ((dx != 0 || i6 == overscrollX || overScroller.getFinalX() == 0) && (x10 != 0 || i9 == velY || overScroller.getFinalY() == 0)) {
                     overScroller.abortAnimation();
                 }
             }
-            if (i != 0 || i6 != 0) {
+            if (i != 0 || i4 != 0) {
                 C7M c7m4 = this.A06;
                 if (A08[6].length() != 25) {
                     A08[3] = "MhQkdHLAPY6K0mrvY0I8ZqPtgRA1J8Gx";
-                    c7m4.A1d(i, i6);
+                    c7m4.A1d(i, i4);
                 } else {
                     A08[6] = "5ZFiatMajPEhKsDar8BqfzNMKoQTJ";
-                    c7m4.A1d(i, i6);
+                    c7m4.A1d(i, i4);
                 }
             }
             awakenScrollBars = this.A06.awakenScrollBars();
             if (!awakenScrollBars) {
                 this.A06.invalidate();
             }
-            boolean z6 = (vresult == 0 && velX == 0) || (vresult != 0 && this.A06.A06.A22() && i == vresult) || (velX != 0 && this.A06.A06.A23() && i6 == velX);
-            if (overScroller.isFinished() || (!z6 && !this.A06.A1t(1))) {
+            boolean z9 = (vresult == 0 && velX == 0) || (vresult != 0 && this.A06.A06.A22() && i == vresult) || (velX != 0 && this.A06.A06.A23() && i4 == velX);
+            if (overScroller.isFinished() || (!z9 && !this.A06.A1t(1))) {
                 this.A06.setScrollState(0);
-                z3 = C7M.A1E;
-                if (z3) {
+                z6 = C7M.A1E;
+                if (z6) {
                     this.A06.A02.A02();
                 }
                 this.A06.A1Z(1);

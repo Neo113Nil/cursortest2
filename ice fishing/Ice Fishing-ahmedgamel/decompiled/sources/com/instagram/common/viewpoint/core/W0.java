@@ -11,9 +11,9 @@ public class W0 implements VV {
     }
 
     @Override // com.instagram.common.viewpoint.core.VV
-    public final void AFB(boolean z3) {
+    public final void AFB(boolean z6) {
         if (this.A00.get() != null) {
-            this.A00.get().A1o(z3, false);
+            this.A00.get().A1o(z6, false);
         }
     }
 }

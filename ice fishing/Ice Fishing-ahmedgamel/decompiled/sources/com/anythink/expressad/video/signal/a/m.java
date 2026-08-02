@@ -16,14 +16,14 @@ import org.json.JSONObject;
 public final class m extends f {
 
     /* renamed from: b, reason: collision with root package name */
-    private Activity f21834b;
+    private Activity f22621b;
 
     /* renamed from: c, reason: collision with root package name */
-    private AnythinkContainerView f21835c;
+    private AnythinkContainerView f22622c;
 
     public m(Activity activity, AnythinkContainerView anythinkContainerView) {
-        this.f21834b = activity;
-        this.f21835c = anythinkContainerView;
+        this.f22621b = activity;
+        this.f22622c = anythinkContainerView;
     }
 
     private static com.anythink.expressad.videocommon.e.d c(String str) {
@@ -35,20 +35,20 @@ public final class m extends f {
 
     @Override // com.anythink.expressad.video.signal.a.f, com.anythink.expressad.video.signal.i
     public final String a() {
-        if (this.f21835c == null) {
+        if (this.f22622c == null) {
             super.a();
         } else {
             try {
                 ArrayList arrayList = new ArrayList();
-                arrayList.add(this.f21835c.getCampaign());
-                String unitID = this.f21835c.getUnitID();
-                String str = com.anythink.expressad.out.b.f20022a + ",3.0.1";
+                arrayList.add(this.f22622c.getCampaign());
+                String unitID = this.f22622c.getUnitID();
+                String str = com.anythink.expressad.out.b.f20809a + ",3.0.1";
                 com.anythink.expressad.videocommon.e.d a9 = com.anythink.expressad.videocommon.e.c.a() == null ? null : com.anythink.expressad.videocommon.e.c.a().a(com.anythink.expressad.foundation.b.a.c().f(), unitID);
                 JSONObject jSONObject = new JSONObject();
                 if (a9 != null) {
                     jSONObject = a9.R();
                 }
-                Objects.toString(this.f21835c.getCampaign());
+                Objects.toString(this.f22622c.getCampaign());
                 return a(arrayList, unitID, str, jSONObject);
             } catch (Throwable th) {
                 th.printStackTrace();
@@ -61,13 +61,13 @@ public final class m extends f {
     public final void b(String str) {
         super.b(str);
         try {
-            if (this.f21834b == null || TextUtils.isEmpty(str)) {
+            if (this.f22621b == null || TextUtils.isEmpty(str)) {
                 return;
             }
             if (str.equals("landscape")) {
-                this.f21834b.setRequestedOrientation(0);
+                this.f22621b.setRequestedOrientation(0);
             } else if (str.equals("portrait")) {
-                this.f21834b.setRequestedOrientation(1);
+                this.f22621b.setRequestedOrientation(1);
             }
         } catch (Throwable th) {
             th.printStackTrace();
@@ -79,7 +79,7 @@ public final class m extends f {
         AnythinkContainerView anythinkContainerView;
         super.handlerPlayableException(str);
         try {
-            if (this.f21834b == null || TextUtils.isEmpty(str) || (anythinkContainerView = this.f21835c) == null) {
+            if (this.f22621b == null || TextUtils.isEmpty(str) || (anythinkContainerView = this.f22622c) == null) {
                 return;
             }
             anythinkContainerView.handlerPlayableException(str);
@@ -91,7 +91,7 @@ public final class m extends f {
     @Override // com.anythink.expressad.video.signal.a.f, com.anythink.expressad.video.signal.h
     public final void install(com.anythink.expressad.foundation.d.d dVar) {
         super.install(dVar);
-        AnythinkContainerView anythinkContainerView = this.f21835c;
+        AnythinkContainerView anythinkContainerView = this.f22622c;
         if (anythinkContainerView != null) {
             anythinkContainerView.install(dVar);
         }
@@ -100,7 +100,7 @@ public final class m extends f {
     @Override // com.anythink.expressad.video.signal.a.f, com.anythink.expressad.video.signal.h
     public final void notifyCloseBtn(int i) {
         super.notifyCloseBtn(i);
-        AnythinkContainerView anythinkContainerView = this.f21835c;
+        AnythinkContainerView anythinkContainerView = this.f22622c;
         if (anythinkContainerView != null) {
             anythinkContainerView.notifyCloseBtn(i);
         }
@@ -110,7 +110,7 @@ public final class m extends f {
     public final void orientation(Configuration configuration) {
         super.orientation(configuration);
         try {
-            AnythinkContainerView anythinkContainerView = this.f21835c;
+            AnythinkContainerView anythinkContainerView = this.f22622c;
             if (anythinkContainerView != null) {
                 anythinkContainerView.orientation(configuration);
             }
@@ -122,7 +122,7 @@ public final class m extends f {
     @Override // com.anythink.expressad.video.signal.a.f, com.anythink.expressad.video.signal.h
     public final void toggleCloseBtn(int i) {
         super.toggleCloseBtn(i);
-        AnythinkContainerView anythinkContainerView = this.f21835c;
+        AnythinkContainerView anythinkContainerView = this.f22622c;
         if (anythinkContainerView != null) {
             anythinkContainerView.toggleCloseBtn(i);
         }
@@ -132,7 +132,7 @@ public final class m extends f {
     public final void webviewshow() {
         super.webviewshow();
         try {
-            AnythinkContainerView anythinkContainerView = this.f21835c;
+            AnythinkContainerView anythinkContainerView = this.f22622c;
             if (anythinkContainerView != null) {
                 anythinkContainerView.webviewshow();
             }
@@ -146,7 +146,7 @@ public final class m extends f {
         AnythinkContainerView anythinkContainerView;
         super.a(str);
         try {
-            if (this.f21834b == null || TextUtils.isEmpty(str) || !str.equals("click") || (anythinkContainerView = this.f21835c) == null) {
+            if (this.f22621b == null || TextUtils.isEmpty(str) || !str.equals("click") || (anythinkContainerView = this.f22622c) == null) {
                 return;
             }
             anythinkContainerView.triggerCloseBtn(str);

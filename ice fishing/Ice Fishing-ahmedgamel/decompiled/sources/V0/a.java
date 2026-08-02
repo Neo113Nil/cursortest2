@@ -1,11 +1,11 @@
 package V0;
 
 import T0.l;
-import Z2.e;
+import b3.e;
 
 /* loaded from: classes.dex */
 public interface a {
-    default void i(Runnable runnable) {
-        ((l) ((e) this).f4170u).execute(runnable);
+    default void h(Runnable runnable) {
+        ((l) ((e) this).f5557u).execute(runnable);
     }
 }

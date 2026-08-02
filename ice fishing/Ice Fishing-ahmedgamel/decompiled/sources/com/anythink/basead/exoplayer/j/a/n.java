@@ -9,29 +9,29 @@ import java.util.regex.Pattern;
 final class n extends e {
 
     /* renamed from: g, reason: collision with root package name */
-    private static final String f8107g = ".v3.exo";
+    private static final String f8893g = ".v3.exo";
 
     /* renamed from: h, reason: collision with root package name */
-    private static final Pattern f8108h = Pattern.compile("^(.+)\\.(\\d+)\\.(\\d+)\\.v1\\.exo$", 32);
+    private static final Pattern f8894h = Pattern.compile("^(.+)\\.(\\d+)\\.(\\d+)\\.v1\\.exo$", 32);
     private static final Pattern i = Pattern.compile("^(.+)\\.(\\d+)\\.(\\d+)\\.v2\\.exo$", 32);
 
     /* renamed from: j, reason: collision with root package name */
-    private static final Pattern f8109j = Pattern.compile("^(\\d+)\\.(\\d+)\\.(\\d+)\\.v3\\.exo$", 32);
+    private static final Pattern f8895j = Pattern.compile("^(\\d+)\\.(\\d+)\\.(\\d+)\\.v3\\.exo$", 32);
 
     private n(String str, long j6, long j9, long j10, File file) {
         super(str, j6, j9, j10, file);
     }
 
-    public static File a(File file, int i6, long j6, long j9) {
-        return new File(file, i6 + com.anythink.core.common.d.j.f12378z + j6 + com.anythink.core.common.d.j.f12378z + j9 + f8107g);
+    public static File a(File file, int i4, long j6, long j9) {
+        return new File(file, i4 + com.anythink.core.common.d.j.f13164z + j6 + com.anythink.core.common.d.j.f13164z + j9 + f8893g);
     }
 
     public static n b(String str, long j6) {
-        return new n(str, j6, -1L, com.anythink.basead.exoplayer.b.f6382b, null);
+        return new n(str, j6, -1L, com.anythink.basead.exoplayer.b.f7168b, null);
     }
 
     public static n a(String str, long j6) {
-        return new n(str, j6, -1L, com.anythink.basead.exoplayer.b.f6382b, null);
+        return new n(str, j6, -1L, com.anythink.basead.exoplayer.b.f7168b, null);
     }
 
     private static File b(File file, h hVar) {
@@ -44,7 +44,7 @@ final class n extends e {
                 return null;
             }
         } else {
-            matcher = f8108h.matcher(name);
+            matcher = f8894h.matcher(name);
             if (!matcher.matches()) {
                 return null;
             }
@@ -58,7 +58,7 @@ final class n extends e {
     }
 
     public static n a(String str, long j6, long j9) {
-        return new n(str, j6, j9, com.anythink.basead.exoplayer.b.f6382b, null);
+        return new n(str, j6, j9, com.anythink.basead.exoplayer.b.f7168b, null);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:21:0x0061, code lost:
@@ -77,7 +77,7 @@ final class n extends e {
         String group;
         File a9;
         String name = file.getName();
-        if (name.endsWith(f8107g)) {
+        if (name.endsWith(f8893g)) {
             file2 = file;
         } else {
             String name2 = file.getName();
@@ -85,7 +85,7 @@ final class n extends e {
             if (matcher.matches()) {
                 group = af.h(matcher.group(1));
             } else {
-                matcher = f8108h.matcher(name2);
+                matcher = f8894h.matcher(name2);
                 if (matcher.matches()) {
                     group = matcher.group(1);
                     a9 = a(file.getParentFile(), hVar.c(group), Long.parseLong(matcher.group(2)), Long.parseLong(matcher.group(3)));
@@ -98,7 +98,7 @@ final class n extends e {
                 name = a9.getName();
             }
         }
-        Matcher matcher2 = f8109j.matcher(name);
+        Matcher matcher2 = f8895j.matcher(name);
         if (!matcher2.matches()) {
             return null;
         }
@@ -110,9 +110,9 @@ final class n extends e {
         return new n(a10, Long.parseLong(matcher2.group(2)), length, Long.parseLong(matcher2.group(3)), file2);
     }
 
-    public final n a(int i6) {
-        com.anythink.basead.exoplayer.k.a.b(this.f8063d);
+    public final n a(int i4) {
+        com.anythink.basead.exoplayer.k.a.b(this.f8849d);
         long currentTimeMillis = System.currentTimeMillis();
-        return new n(this.f8060a, this.f8061b, this.f8062c, currentTimeMillis, a(this.f8064e.getParentFile(), i6, this.f8061b, currentTimeMillis));
+        return new n(this.f8846a, this.f8847b, this.f8848c, currentTimeMillis, a(this.f8850e.getParentFile(), i4, this.f8847b, currentTimeMillis));
     }
 }

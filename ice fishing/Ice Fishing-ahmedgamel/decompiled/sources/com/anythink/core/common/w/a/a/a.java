@@ -10,43 +10,43 @@ import java.util.List;
 public class a implements com.anythink.core.common.w.a.b.c {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f16981a = "a";
+    private static final String f17768a = "a";
 
     /* renamed from: b, reason: collision with root package name */
-    private ai f16982b;
+    private ai f17769b;
 
     @Override // com.anythink.core.common.w.a.b.c
     public final void a(ai aiVar) {
-        this.f16982b = aiVar;
+        this.f17769b = aiVar;
     }
 
     @Override // com.anythink.core.common.w.a.b.b
     public final void b() {
-        this.f16982b = null;
+        this.f17769b = null;
     }
 
     @Override // com.anythink.core.common.w.a.b.c
     public final ai a() {
-        return this.f16982b;
+        return this.f17769b;
     }
 
     @Override // com.anythink.core.common.w.a.b.c
     public final aj a(bv bvVar) {
-        ai aiVar = this.f16982b;
+        ai aiVar = this.f17769b;
         if (aiVar == null || bvVar == null) {
             return null;
         }
-        List<aj> d2 = aiVar.d();
-        List<aj> f3 = this.f16982b.f();
-        aj a9 = a(bvVar.z(), d2);
-        return (a9 == null && this.f16982b.b()) ? a(bvVar.z(), f3) : a9;
+        List<aj> d9 = aiVar.d();
+        List<aj> f2 = this.f17769b.f();
+        aj a9 = a(bvVar.z(), d9);
+        return (a9 == null && this.f17769b.b()) ? a(bvVar.z(), f2) : a9;
     }
 
     private static aj a(String str, List<aj> list) {
         if (list != null && !list.isEmpty()) {
             for (aj ajVar : list) {
                 if (str.equals(ajVar.c())) {
-                    if (ajVar.d() != a.C0103a.f16980b || System.currentTimeMillis() <= ajVar.a()) {
+                    if (ajVar.d() != a.C0103a.f17767b || System.currentTimeMillis() <= ajVar.a()) {
                         return ajVar;
                     }
                     return null;

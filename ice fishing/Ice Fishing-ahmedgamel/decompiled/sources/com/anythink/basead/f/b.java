@@ -15,9 +15,9 @@ public final class b extends c {
     }
 
     public final View a() {
-        com.anythink.basead.f.b.c cVar = this.f8898h;
+        com.anythink.basead.f.b.c cVar = this.f9684h;
         if (cVar != null) {
-            return cVar.a(this.f8891a);
+            return cVar.a(this.f9677a);
         }
         return null;
     }
@@ -25,6 +25,6 @@ public final class b extends c {
     @Override // com.anythink.basead.f.c
     public final void b() {
         super.b();
-        this.f8895e = null;
+        this.f9681e = null;
     }
 }

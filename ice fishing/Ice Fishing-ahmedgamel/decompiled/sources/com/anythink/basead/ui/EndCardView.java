@@ -26,32 +26,32 @@ import com.anythink.expressad.foundation.h.k;
 public class EndCardView extends BaseEndCardView {
 
     /* renamed from: e, reason: collision with root package name */
-    private int f10013e;
+    private int f10799e;
 
     /* renamed from: f, reason: collision with root package name */
-    private int f10014f;
+    private int f10800f;
 
     /* renamed from: g, reason: collision with root package name */
-    private ImageView f10015g;
+    private ImageView f10801g;
 
     /* renamed from: h, reason: collision with root package name */
-    private ImageView f10016h;
+    private ImageView f10802h;
     private TextView i;
 
     /* renamed from: j, reason: collision with root package name */
-    private Bitmap f10017j;
+    private Bitmap f10803j;
 
     /* renamed from: k, reason: collision with root package name */
-    private final View.OnClickListener f10018k;
+    private final View.OnClickListener f10804k;
 
     /* renamed from: com.anythink.basead.ui.EndCardView$2, reason: invalid class name */
     public class AnonymousClass2 implements b.a {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ w f10020a;
+        final /* synthetic */ w f10806a;
 
         public AnonymousClass2(w wVar) {
-            this.f10020a = wVar;
+            this.f10806a = wVar;
         }
 
         @Override // com.anythink.core.common.res.b.a
@@ -60,8 +60,8 @@ public class EndCardView extends BaseEndCardView {
 
         @Override // com.anythink.core.common.res.b.a
         public final void onSuccess(String str, Bitmap bitmap) {
-            if (TextUtils.equals(str, this.f10020a.B())) {
-                EndCardView.this.f10015g.setImageBitmap(bitmap);
+            if (TextUtils.equals(str, this.f10806a.B())) {
+                EndCardView.this.f10801g.setImageBitmap(bitmap);
                 h.a(EndCardView.this.getContext(), bitmap, new h.a() { // from class: com.anythink.basead.ui.EndCardView.2.1
                     @Override // com.anythink.core.common.v.h.a
                     public final void a() {
@@ -69,8 +69,8 @@ public class EndCardView extends BaseEndCardView {
 
                     @Override // com.anythink.core.common.v.h.a
                     public final void a(Bitmap bitmap2) {
-                        EndCardView.this.f10017j = bitmap2;
-                        EndCardView.this.setBackgroundDrawable(new BitmapDrawable(EndCardView.this.f10017j));
+                        EndCardView.this.f10803j = bitmap2;
+                        EndCardView.this.setBackgroundDrawable(new BitmapDrawable(EndCardView.this.f10803j));
                     }
                 });
             }
@@ -81,14 +81,14 @@ public class EndCardView extends BaseEndCardView {
     public class AnonymousClass3 implements b.a {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ String f10023a;
+        final /* synthetic */ String f10809a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ int f10024b;
+        final /* synthetic */ int f10810b;
 
         public AnonymousClass3(String str, int i) {
-            this.f10023a = str;
-            this.f10024b = i;
+            this.f10809a = str;
+            this.f10810b = i;
         }
 
         @Override // com.anythink.core.common.res.b.a
@@ -97,25 +97,25 @@ public class EndCardView extends BaseEndCardView {
 
         @Override // com.anythink.core.common.res.b.a
         public final void onSuccess(String str, Bitmap bitmap) {
-            if (TextUtils.equals(str, this.f10023a)) {
-                int i = this.f10024b;
-                ViewGroup.LayoutParams layoutParams = EndCardView.this.f10016h.getLayoutParams();
+            if (TextUtils.equals(str, this.f10809a)) {
+                int i = this.f10810b;
+                ViewGroup.LayoutParams layoutParams = EndCardView.this.f10802h.getLayoutParams();
                 layoutParams.width = (int) (i * ((bitmap.getWidth() * 1.0f) / bitmap.getHeight()));
                 layoutParams.height = i;
-                EndCardView.this.f10016h.setLayoutParams(layoutParams);
-                EndCardView.this.f10016h.setScaleType(ImageView.ScaleType.FIT_XY);
-                EndCardView.this.f10016h.setImageBitmap(bitmap);
+                EndCardView.this.f10802h.setLayoutParams(layoutParams);
+                EndCardView.this.f10802h.setScaleType(ImageView.ScaleType.FIT_XY);
+                EndCardView.this.f10802h.setImageBitmap(bitmap);
             }
         }
     }
 
     public EndCardView(Context context, w wVar, x xVar) {
         super(context, wVar, xVar);
-        this.f10018k = new View.OnClickListener() { // from class: com.anythink.basead.ui.EndCardView.1
+        this.f10804k = new View.OnClickListener() { // from class: com.anythink.basead.ui.EndCardView.1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 BaseEndCardView.a aVar;
-                y yVar = EndCardView.this.f9824d;
+                y yVar = EndCardView.this.f10610d;
                 if (yVar != null) {
                     if (yVar.J() == 0) {
                         int i = view != EndCardView.this.i ? 7 : 6;
@@ -143,35 +143,35 @@ public class EndCardView extends BaseEndCardView {
         return this.i;
     }
 
-    public void init(boolean z3, boolean z6, BaseEndCardView.a aVar) {
+    public void init(boolean z6, boolean z9, BaseEndCardView.a aVar) {
         setId(q.a(getContext(), "myoffer_end_card_id", "id"));
         this.mListener = aVar;
-        this.f10015g = new RoundImageView(getContext());
-        addView(this.f10015g, new RelativeLayout.LayoutParams(-1, -1));
-        if (z3) {
-            w wVar = this.f9822b;
-            this.f10016h = new RoundImageView(getContext());
+        this.f10801g = new RoundImageView(getContext());
+        addView(this.f10801g, new RelativeLayout.LayoutParams(-1, -1));
+        if (z6) {
+            w wVar = this.f10608b;
+            this.f10802h = new RoundImageView(getContext());
             int a9 = q.a(getContext(), 12.0f);
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-2, a9);
             layoutParams.addRule(11);
             layoutParams.addRule(12);
-            addView(this.f10016h, layoutParams);
+            addView(this.f10802h, layoutParams);
             String C8 = wVar.C();
             if (!TextUtils.isEmpty(C8)) {
-                ViewGroup.LayoutParams layoutParams2 = this.f10016h.getLayoutParams();
+                ViewGroup.LayoutParams layoutParams2 = this.f10802h.getLayoutParams();
                 com.anythink.core.common.res.b.a(getContext()).a(new e(1, C8), layoutParams2.width, layoutParams2.height, new AnonymousClass3(C8, a9));
             }
         }
-        if (z6) {
+        if (z9) {
             ScanningAnimButton scanningAnimButton = new ScanningAnimButton(getContext());
             this.i = scanningAnimButton;
-            scanningAnimButton.setText(q.a(getContext(), "myoffer_cta_learn_more", k.f19636g));
+            scanningAnimButton.setText(q.a(getContext(), "myoffer_cta_learn_more", k.f20423g));
             this.i.setTextColor(Color.parseColor("#ffffffff"));
             this.i.setTextSize(14.0f);
             this.i.setGravity(17);
-            this.i.setBackgroundResource(q.a(getContext(), "myoffer_splash_bg_rectangle_btn_cta_asseblem", k.f19632c));
-            if (!this.f9822b.c()) {
-                this.i.setOnClickListener(this.f10018k);
+            this.i.setBackgroundResource(q.a(getContext(), "myoffer_splash_bg_rectangle_btn_cta_asseblem", k.f20419c));
+            if (!this.f10608b.c()) {
+                this.i.setOnClickListener(this.f10804k);
             }
             RelativeLayout.LayoutParams layoutParams3 = new RelativeLayout.LayoutParams(-1, q.a(getContext(), 48.0f));
             layoutParams3.addRule(12);
@@ -180,16 +180,16 @@ public class EndCardView extends BaseEndCardView {
             layoutParams3.rightMargin = q.a(getContext(), 24.0f);
             addView(this.i, layoutParams3);
         }
-        if (this.f9822b.c()) {
+        if (this.f10608b.c()) {
             return;
         }
-        setOnClickListener(this.f10018k);
+        setOnClickListener(this.f10804k);
     }
 
     public void load() {
-        w wVar = this.f9822b;
+        w wVar = this.f10608b;
         try {
-            com.anythink.core.common.res.b.a(getContext()).a(new e(1, wVar.B()), this.f10013e, this.f10014f, new AnonymousClass2(wVar));
+            com.anythink.core.common.res.b.a(getContext()).a(new e(1, wVar.B()), this.f10799e, this.f10800f, new AnonymousClass2(wVar));
         } catch (Exception e9) {
             e9.printStackTrace();
         } catch (OutOfMemoryError e10) {
@@ -202,36 +202,36 @@ public class EndCardView extends BaseEndCardView {
         super.onDetachedFromWindow();
     }
 
-    public void setSize(int i, int i6) {
-        this.f10013e = i;
-        this.f10014f = i6;
+    public void setSize(int i, int i4) {
+        this.f10799e = i;
+        this.f10800f = i4;
     }
 
     private void b(w wVar) {
-        this.f10016h = new RoundImageView(getContext());
+        this.f10802h = new RoundImageView(getContext());
         int a9 = q.a(getContext(), 12.0f);
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-2, a9);
         layoutParams.addRule(11);
         layoutParams.addRule(12);
-        addView(this.f10016h, layoutParams);
+        addView(this.f10802h, layoutParams);
         String C8 = wVar.C();
         if (TextUtils.isEmpty(C8)) {
             return;
         }
-        ViewGroup.LayoutParams layoutParams2 = this.f10016h.getLayoutParams();
+        ViewGroup.LayoutParams layoutParams2 = this.f10802h.getLayoutParams();
         com.anythink.core.common.res.b.a(getContext()).a(new e(1, C8), layoutParams2.width, layoutParams2.height, new AnonymousClass3(C8, a9));
     }
 
     private void c() {
         ScanningAnimButton scanningAnimButton = new ScanningAnimButton(getContext());
         this.i = scanningAnimButton;
-        scanningAnimButton.setText(q.a(getContext(), "myoffer_cta_learn_more", k.f19636g));
+        scanningAnimButton.setText(q.a(getContext(), "myoffer_cta_learn_more", k.f20423g));
         this.i.setTextColor(Color.parseColor("#ffffffff"));
         this.i.setTextSize(14.0f);
         this.i.setGravity(17);
-        this.i.setBackgroundResource(q.a(getContext(), "myoffer_splash_bg_rectangle_btn_cta_asseblem", k.f19632c));
-        if (!this.f9822b.c()) {
-            this.i.setOnClickListener(this.f10018k);
+        this.i.setBackgroundResource(q.a(getContext(), "myoffer_splash_bg_rectangle_btn_cta_asseblem", k.f20419c));
+        if (!this.f10608b.c()) {
+            this.i.setOnClickListener(this.f10804k);
         }
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, q.a(getContext(), 48.0f));
         layoutParams.addRule(12);
@@ -243,7 +243,7 @@ public class EndCardView extends BaseEndCardView {
 
     private void a(w wVar) {
         try {
-            com.anythink.core.common.res.b.a(getContext()).a(new e(1, wVar.B()), this.f10013e, this.f10014f, new AnonymousClass2(wVar));
+            com.anythink.core.common.res.b.a(getContext()).a(new e(1, wVar.B()), this.f10799e, this.f10800f, new AnonymousClass2(wVar));
         } catch (Exception e9) {
             e9.printStackTrace();
         } catch (OutOfMemoryError e10) {
@@ -253,9 +253,9 @@ public class EndCardView extends BaseEndCardView {
 
     @Override // com.anythink.basead.ui.BaseEndCardView
     public final Drawable b() {
-        Bitmap bitmap = this.f10017j;
+        Bitmap bitmap = this.f10803j;
         if (bitmap != null && !bitmap.isRecycled()) {
-            return new BitmapDrawable(this.f10017j);
+            return new BitmapDrawable(this.f10803j);
         }
         return super.b();
     }

@@ -19,7 +19,7 @@ public class SimpleSpecialNoteView extends BaseSpecialNoteView {
 
     @Override // com.anythink.basead.ui.specialnote.BaseSpecialNoteView
     public final void a() {
-        this.f11299n = getContext().getString(q.a(t.b().g(), "myoffer_special_note_delay_click_simple", k.f19636g));
+        this.f12085n = getContext().getString(q.a(t.b().g(), "myoffer_special_note_delay_click_simple", k.f20423g));
     }
 
     @Override // com.anythink.basead.ui.specialnote.BaseSpecialNoteView
@@ -30,8 +30,8 @@ public class SimpleSpecialNoteView extends BaseSpecialNoteView {
         setGravity(16);
         setBackgroundColor(Color.parseColor("#80000000"));
         LayoutInflater.from(getContext()).inflate(q.a(getContext(), "myoffer_special_note_simple", "layout"), (ViewGroup) this, true);
-        this.f11297l = (TextView) findViewById(q.a(getContext(), "myoffer_special_countdown_text", "id"));
-        this.f11298m = (TextView) findViewById(q.a(getContext(), "myoffer_special_cancel_text", "id"));
+        this.f12083l = (TextView) findViewById(q.a(getContext(), "myoffer_special_countdown_text", "id"));
+        this.f12084m = (TextView) findViewById(q.a(getContext(), "myoffer_special_cancel_text", "id"));
     }
 
     @Override // com.anythink.basead.ui.specialnote.BaseSpecialNoteView

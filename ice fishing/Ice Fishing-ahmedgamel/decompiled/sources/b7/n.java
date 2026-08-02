@@ -1,64 +1,102 @@
 package b7;
 
-import f7.C4513a;
-import g7.t;
-import g7.u;
-import h7.C4575a;
+import S0.s;
+import f6.C4522a;
+import java.io.Closeable;
 import java.util.ArrayList;
-import java.util.Map;
-import java.util.function.Function;
-import m7.C4741a;
-import o7.C4810i;
-import q7.C4933b;
-import q7.C4937f;
-import q7.C4938g;
+import java.util.Iterator;
+import java.util.concurrent.TimeUnit;
+import java.util.function.Supplier;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import p7.C4853a;
 
 /* loaded from: classes2.dex */
-public final /* synthetic */ class n implements Function {
+public final class n implements l6.h, Closeable {
 
-    /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f5456a;
+    /* renamed from: x, reason: collision with root package name */
+    public static final Logger f5606x = Logger.getLogger(n.class.getName());
 
-    /* renamed from: b, reason: collision with root package name */
-    public final /* synthetic */ Object f5457b;
+    /* renamed from: n, reason: collision with root package name */
+    public final C0536h f5607n;
 
-    public /* synthetic */ n(int i, Object obj) {
-        this.f5456a = i;
-        this.f5457b = obj;
+    /* renamed from: u, reason: collision with root package name */
+    public final S0.i f5608u;
+
+    /* renamed from: v, reason: collision with root package name */
+    public final boolean f5609v;
+
+    /* renamed from: w, reason: collision with root package name */
+    public final a7.h f5610w;
+
+    public n(C4853a c4853a, Supplier supplier, ArrayList arrayList, a7.h hVar) {
+        ArrayList arrayList2 = new ArrayList();
+        Iterator it = arrayList.iterator();
+        while (it.hasNext()) {
+            arrayList2.add((InterfaceC0535g) it.next());
+        }
+        InterfaceC0535g iVar = arrayList2.isEmpty() ? j.f5593n : arrayList2.size() == 1 ? (InterfaceC0535g) arrayList2.get(0) : new i(new ArrayList(arrayList2));
+        this.f5607n = new C0536h(c4853a, supplier, iVar);
+        this.f5608u = new S0.i(new m(0, this));
+        this.f5610w = hVar;
+        this.f5609v = iVar instanceof j;
     }
 
-    @Override // java.util.function.Function
-    public final Object apply(Object obj) {
-        switch (this.f5456a) {
-            case 0:
-                Y6.a aVar = (Y6.a) obj;
-                o oVar = (o) this.f5457b;
-                oVar.f5462w.apply(aVar);
-                C4513a c4513a = C4513a.f37531a;
-                boolean z3 = l.f5451c;
-                C0528h c0528h = oVar.f5459n;
-                return z3 ? new C0525e(c0528h, aVar, c4513a) : new l(c0528h, aVar, c4513a);
-            case 1:
-                Map.Entry entry = (Map.Entry) obj;
-                if (entry.getKey() != null) {
-                    throw new ClassCastException();
-                }
-                if (entry.getKey() != null) {
-                    throw new ClassCastException();
-                }
-                if (entry.getValue() == null) {
-                    return new C4741a(new C4810i(new ArrayList((ArrayList) this.f5457b)));
-                }
-                throw new ClassCastException();
-            case 2:
-                Y6.a aVar2 = (Y6.a) obj;
-                u uVar = (u) this.f5457b;
-                uVar.getClass();
-                uVar.f37702z.apply(aVar2);
-                return new t(uVar.f37699w, aVar2, uVar.f37697u, C4575a.f38024a);
-            default:
-                ((C4938g) this.f5457b).f40268v.apply((Y6.a) obj);
-                return C4937f.f40264a ? new C4933b() : new C4937f();
+    @Override // l6.h
+    public final l6.g a(String str) {
+        if (this.f5609v) {
+            return ((l6.h) k6.d.c(l6.d.f38990n, "io.opentelemetry.api.incubator.logs.ExtendedDefaultLoggerProvider")).a(str);
         }
+        if (str.isEmpty()) {
+            f5606x.fine("Logger requested without instrumentation scope name.");
+            str = com.anythink.core.common.v.m.f17596e;
+        }
+        return new s(7, this.f5608u, str);
+    }
+
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public final void close() {
+        shutdown().c(10L, TimeUnit.SECONDS);
+    }
+
+    @Override // l6.h
+    public final l6.f get() {
+        return (l6.f) this.f5608u.b(C4522a.f37475w, "noop");
+    }
+
+    public final Y6.c shutdown() {
+        if (this.f5607n.f5590e != null) {
+            f5606x.log(Level.INFO, "Calling shutdown() multiple times.");
+            return Y6.c.f3919e;
+        }
+        C0536h c0536h = this.f5607n;
+        synchronized (c0536h.f5586a) {
+            try {
+                if (c0536h.f5590e != null) {
+                    return c0536h.f5590e;
+                }
+                c0536h.f5590e = c0536h.f5589d.shutdown();
+                return c0536h.f5590e;
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("SdkLoggerProvider{clock=");
+        C0536h c0536h = this.f5607n;
+        c0536h.getClass();
+        sb.append(Y6.d.f3925a);
+        sb.append(", resource=");
+        sb.append(c0536h.f5587b);
+        sb.append(", logLimits=");
+        sb.append((C0530b) c0536h.f5588c.get());
+        sb.append(", logRecordProcessor=");
+        sb.append(c0536h.f5589d);
+        sb.append(", loggerConfigurator=");
+        sb.append(this.f5610w);
+        sb.append('}');
+        return sb.toString();
     }
 }

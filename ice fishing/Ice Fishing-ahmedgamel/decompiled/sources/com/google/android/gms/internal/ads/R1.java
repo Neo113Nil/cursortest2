@@ -4,18 +4,18 @@ import java.util.Arrays;
 import java.util.Objects;
 
 /* loaded from: classes2.dex */
-public final class R1 implements InterfaceC3922t3 {
+public final class R1 implements InterfaceC3945t3 {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f27155a;
+    public int f27911a;
 
     static {
-        C3299hP c3299hP = new C3299hP();
-        c3299hP.e(com.anythink.basead.exoplayer.k.o.f8440V);
-        c3299hP.b();
-        C3299hP c3299hP2 = new C3299hP();
-        c3299hP2.e(com.anythink.basead.exoplayer.k.o.ag);
-        c3299hP2.b();
+        C3322hP c3322hP = new C3322hP();
+        c3322hP.e(com.anythink.basead.exoplayer.k.o.f9226V);
+        c3322hP.b();
+        C3322hP c3322hP2 = new C3322hP();
+        c3322hP2.e(com.anythink.basead.exoplayer.k.o.ag);
+        c3322hP2.b();
     }
 
     public final boolean equals(Object obj) {
@@ -31,7 +31,7 @@ public final class R1 implements InterfaceC3922t3 {
     }
 
     public final int hashCode() {
-        int i = this.f27155a;
+        int i = this.f27911a;
         if (i != 0) {
             return i;
         }

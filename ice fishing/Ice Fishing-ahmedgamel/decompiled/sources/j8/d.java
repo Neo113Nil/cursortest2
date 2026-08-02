@@ -2,7 +2,6 @@ package j8;
 
 import Q7.j;
 import Q7.q;
-import com.bumptech.glide.f;
 import i8.l;
 import i8.n;
 import i8.r;
@@ -19,8 +18,9 @@ import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 import kotlin.jvm.internal.h;
 import p8.C4858d;
-import v7.AbstractC5128i;
-import v7.C5135p;
+import v7.AbstractC5118i;
+import v7.C5125p;
+import w.AbstractC5128c;
 import y8.e;
 import y8.x;
 
@@ -28,27 +28,27 @@ import y8.x;
 public abstract class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final TimeZone f38483a;
+    public static final TimeZone f38495a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f38484b;
+    public static final String f38496b;
 
     static {
         TimeZone timeZone = TimeZone.getTimeZone("GMT");
         h.b(timeZone);
-        f38483a = timeZone;
-        String h02 = j.h0(r.class.getName(), "okhttp3.");
-        if (q.K(h02, "Client")) {
-            h02 = h02.substring(0, h02.length() - 6);
-            h.d(h02, "substring(...)");
+        f38495a = timeZone;
+        String x02 = j.x0(r.class.getName(), "okhttp3.");
+        if (q.a0(x02, "Client")) {
+            x02 = x02.substring(0, x02.length() - 6);
+            h.d(x02, "substring(...)");
         }
-        f38484b = h02;
+        f38496b = x02;
     }
 
     public static final boolean a(n nVar, n other) {
         h.e(nVar, "<this>");
         h.e(other, "other");
-        return h.a(nVar.f38162d, other.f38162d) && nVar.f38163e == other.f38163e && h.a(nVar.f38159a, other.f38159a);
+        return h.a(nVar.f38281d, other.f38281d) && nVar.f38282e == other.f38282e && h.a(nVar.f38278a, other.f38278a);
     }
 
     public static final int b(long j6) {
@@ -99,11 +99,11 @@ public abstract class d {
     }
 
     public static final long f(v vVar) {
-        String a9 = vVar.f38257y.a("Content-Length");
+        String a9 = vVar.f38376y.a("Content-Length");
         if (a9 == null) {
             return -1L;
         }
-        byte[] bArr = c.f38482a;
+        byte[] bArr = c.f38494a;
         try {
             return Long.parseLong(a9);
         } catch (NumberFormatException unused) {
@@ -120,7 +120,7 @@ public abstract class d {
         try {
             e eVar = new e();
             while (xVar.d(8192L, eVar) != -1) {
-                eVar.H(eVar.f41953u);
+                eVar.H(eVar.f41924u);
             }
             if (c9 == Long.MAX_VALUE) {
                 xVar.L().a();
@@ -146,24 +146,24 @@ public abstract class d {
     }
 
     public static final l h(List list) {
-        G1.e eVar = new G1.e(3);
+        I1.d dVar = new I1.d(3);
         Iterator it = list.iterator();
         while (it.hasNext()) {
             C4858d c4858d = (C4858d) it.next();
-            f.f(eVar, c4858d.f39831a.l(), c4858d.f39832b.l());
+            X2.a.b(dVar, c4858d.f39878a.l(), c4858d.f39879b.l());
         }
-        return eVar.b();
+        return dVar.e();
     }
 
-    public static final String i(n nVar, boolean z3) {
+    public static final String i(n nVar, boolean z6) {
         h.e(nVar, "<this>");
-        String str = nVar.f38162d;
-        if (j.U(str, ":", false)) {
-            str = u1.h.b(']', "[", str);
+        String str = nVar.f38281d;
+        if (j.k0(str, ":", false)) {
+            str = AbstractC5128c.b(']', "[", str);
         }
-        int i = nVar.f38163e;
-        if (!z3) {
-            String scheme = nVar.f38159a;
+        int i = nVar.f38282e;
+        if (!z6) {
+            String scheme = nVar.f38278a;
             h.e(scheme, "scheme");
             if (i == (scheme.equals("http") ? 80 : scheme.equals("https") ? 443 : -1)) {
                 return str;
@@ -175,7 +175,7 @@ public abstract class d {
     public static final List j(List list) {
         h.e(list, "<this>");
         if (list.isEmpty()) {
-            return C5135p.f41442n;
+            return C5125p.f41221n;
         }
         if (list.size() == 1) {
             List singletonList = Collections.singletonList(list.get(0));
@@ -184,21 +184,21 @@ public abstract class d {
         }
         Object[] array = list.toArray();
         h.d(array, "toArray(...)");
-        List unmodifiableList = Collections.unmodifiableList(AbstractC5128i.q(array));
+        List unmodifiableList = Collections.unmodifiableList(AbstractC5118i.t(array));
         h.d(unmodifiableList, "unmodifiableList(...)");
         return unmodifiableList;
     }
 
     public static final List k(Object[] objArr) {
         if (objArr == null || objArr.length == 0) {
-            return C5135p.f41442n;
+            return C5125p.f41221n;
         }
         if (objArr.length == 1) {
             List singletonList = Collections.singletonList(objArr[0]);
             h.d(singletonList, "singletonList(...)");
             return singletonList;
         }
-        List unmodifiableList = Collections.unmodifiableList(AbstractC5128i.q((Object[]) objArr.clone()));
+        List unmodifiableList = Collections.unmodifiableList(AbstractC5118i.t((Object[]) objArr.clone()));
         h.d(unmodifiableList, "unmodifiableList(...)");
         return unmodifiableList;
     }

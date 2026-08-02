@@ -4,7 +4,7 @@ import java.io.File;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public interface MP {
-    void A4E(String str, C1084Ml c1084Ml) throws MM;
+    void A4E(String str, C1104Ml c1104Ml) throws MM;
 
     void A55(File file, long j6) throws MM;
 
@@ -14,7 +14,7 @@ public interface MP {
 
     long A7C(String str, long j6, long j9);
 
-    InterfaceC1083Mk A7S(String str);
+    InterfaceC1103Mk A7S(String str);
 
     void AHg(MZ mz);
 
@@ -26,5 +26,5 @@ public interface MP {
 
     MZ AKA(String str, long j6, long j9, MN mn) throws InterruptedException, MM;
 
-    C2048kL AKB(String str, long j6, long j9, MN mn) throws MM;
+    C2068kL AKB(String str, long j6, long j9, MN mn) throws MM;
 }

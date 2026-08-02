@@ -1,669 +1,559 @@
 package S0;
 
-import D.y;
-import L3.F;
-import P2.w;
+import D.x;
+import S7.AbstractC0387a;
+import android.R;
 import android.content.Context;
-import android.database.Cursor;
-import android.graphics.Typeface;
-import android.os.Looper;
-import android.provider.Settings;
-import android.view.View;
-import com.google.android.gms.internal.ads.AbstractC2667Ma;
-import com.google.android.gms.internal.ads.AbstractC3413jg;
-import com.google.android.gms.internal.ads.C2931ag;
-import com.google.android.gms.internal.ads.C3816r5;
-import com.google.android.gms.internal.ads.MA;
-import com.google.android.gms.internal.ads.RunnableC3191fP;
-import com.google.android.gms.internal.ads.W4;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
+import android.net.Uri;
+import android.os.ParcelFileDescriptor;
+import android.os.Process;
+import android.os.StrictMode;
+import android.os.Trace;
+import android.util.Log;
+import androidx.fragment.app.C0465d;
+import com.google.android.gms.internal.ads.Wv;
+import f6.C4522a;
+import i8.u;
+import java.io.Closeable;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.Serializable;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.TreeMap;
-import java.util.TreeSet;
-import java.util.concurrent.Callable;
-import java.util.concurrent.CancellationException;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Executor;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
-import m1.C4727b;
-import m1.C4729d;
-import u2.z;
-import u7.C5097o;
-import u7.C5099q;
-import v7.AbstractC5129j;
-import w7.C5156c;
-import z0.C5247c;
+import n4.C4773a;
+import u7.v;
+import w.AbstractC5128c;
 
 /* loaded from: classes.dex */
 public abstract class f {
-    public static Object b(j3.m mVar) {
-        w.g("Must not be called on the main application thread");
-        Looper myLooper = Looper.myLooper();
-        if (myLooper != null && Objects.equals(myLooper.getThread().getName(), "GoogleApiHandler")) {
-            throw new IllegalStateException("Must not be called on GoogleApiHandler thread.");
-        }
-        w.i(mVar, "Task must not be null");
-        if (mVar.h()) {
-            return x(mVar);
-        }
-        F1.a aVar = new F1.a(21);
-        N1.f fVar = j3.i.f38360b;
-        mVar.c(fVar, aVar);
-        mVar.b(fVar, aVar);
-        mVar.f38370b.f(new j3.k(fVar, (j3.b) aVar));
-        mVar.o();
-        ((CountDownLatch) aVar.f903u).await();
-        return x(mVar);
-    }
 
-    public static Object c(j3.m mVar, long j6) {
-        TimeUnit timeUnit = TimeUnit.SECONDS;
-        w.g("Must not be called on the main application thread");
-        Looper myLooper = Looper.myLooper();
-        if (myLooper != null && Objects.equals(myLooper.getThread().getName(), "GoogleApiHandler")) {
-            throw new IllegalStateException("Must not be called on GoogleApiHandler thread.");
-        }
-        w.i(mVar, "Task must not be null");
-        w.i(timeUnit, "TimeUnit must not be null");
-        if (mVar.h()) {
-            return x(mVar);
-        }
-        F1.a aVar = new F1.a(21);
-        N1.f fVar = j3.i.f38360b;
-        mVar.c(fVar, aVar);
-        mVar.b(fVar, aVar);
-        mVar.f38370b.f(new j3.k(fVar, (j3.b) aVar));
-        mVar.o();
-        if (((CountDownLatch) aVar.f903u).await(j6, timeUnit)) {
-            return x(mVar);
-        }
-        throw new TimeoutException("Timed out waiting for Task");
-    }
+    /* renamed from: a, reason: collision with root package name */
+    public static long f2910a;
 
-    public static j3.m d(Callable callable, Executor executor) {
-        w.i(executor, "Executor must not be null");
-        j3.m mVar = new j3.m();
-        executor.execute(new RunnableC3191fP(11, mVar, callable));
-        return mVar;
-    }
+    /* renamed from: b, reason: collision with root package name */
+    public static Method f2911b;
 
-    public static float[] e(float[] fArr, int i) {
+    public static String A(int i, int i4, String str) {
         if (i < 0) {
+            return X2.a.r("%s (%s) must not be negative", str, Integer.valueOf(i));
+        }
+        if (i4 >= 0) {
+            return X2.a.r("%s (%s) must not be greater than size (%s)", str, Integer.valueOf(i), Integer.valueOf(i4));
+        }
+        throw new IllegalArgumentException(x.k(i4, "negative size: ", new StringBuilder(String.valueOf(i4).length() + 15)));
+    }
+
+    public static final long a(String str) {
+        R7.c cVar;
+        long k9;
+        char charAt;
+        int length = str.length();
+        if (length == 0) {
+            throw new IllegalArgumentException("The string is empty");
+        }
+        int i = R7.a.f2887w;
+        char charAt2 = str.charAt(0);
+        int i4 = (charAt2 == '+' || charAt2 == '-') ? 1 : 0;
+        boolean z6 = (i4 > 0) && Q7.j.C0('-', str);
+        if (length <= i4) {
+            throw new IllegalArgumentException("No components");
+        }
+        if (str.charAt(i4) != 'P') {
             throw new IllegalArgumentException();
         }
-        int length = fArr.length;
-        if (length < 0) {
-            throw new ArrayIndexOutOfBoundsException();
+        int i6 = i4 + 1;
+        if (i6 == length) {
+            throw new IllegalArgumentException();
         }
-        int min = Math.min(i, length);
-        float[] fArr2 = new float[i];
-        System.arraycopy(fArr, 0, fArr2, 0, min);
-        return fArr2;
-    }
-
-    /* JADX WARN: Removed duplicated region for block: B:17:0x0042  */
-    /* JADX WARN: Removed duplicated region for block: B:35:0x0096 A[Catch: NumberFormatException -> 0x00aa, LOOP:3: B:25:0x0068->B:35:0x0096, LOOP_END, TryCatch #0 {NumberFormatException -> 0x00aa, blocks: (B:22:0x0054, B:25:0x0068, B:27:0x006e, B:31:0x007a, B:35:0x0096, B:39:0x009c, B:44:0x00b1, B:56:0x00b4), top: B:21:0x0054 }] */
-    /* JADX WARN: Removed duplicated region for block: B:36:0x0095 A[SYNTHETIC] */
-    /* JADX WARN: Removed duplicated region for block: B:39:0x009c A[Catch: NumberFormatException -> 0x00aa, TryCatch #0 {NumberFormatException -> 0x00aa, blocks: (B:22:0x0054, B:25:0x0068, B:27:0x006e, B:31:0x007a, B:35:0x0096, B:39:0x009c, B:44:0x00b1, B:56:0x00b4), top: B:21:0x0054 }] */
-    /* JADX WARN: Removed duplicated region for block: B:41:0x00ae  */
-    /* JADX WARN: Removed duplicated region for block: B:44:0x00b1 A[Catch: NumberFormatException -> 0x00aa, TryCatch #0 {NumberFormatException -> 0x00aa, blocks: (B:22:0x0054, B:25:0x0068, B:27:0x006e, B:31:0x007a, B:35:0x0096, B:39:0x009c, B:44:0x00b1, B:56:0x00b4), top: B:21:0x0054 }] */
-    /* JADX WARN: Removed duplicated region for block: B:68:0x00d7 A[SYNTHETIC] */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-    */
-    public static G.i[] f(String str) {
-        int i;
-        String trim;
-        float[] fArr;
-        ArrayList arrayList = new ArrayList();
-        int i6 = 0;
-        int i9 = 0;
-        int i10 = 1;
-        while (i10 < str.length()) {
-            while (i10 < str.length()) {
-                char charAt = str.charAt(i10);
-                if ((charAt - 'Z') * (charAt - 'A') > 0) {
-                    if ((charAt - 'z') * (charAt - 'a') > 0) {
-                        continue;
-                        i10++;
-                    }
+        R7.c cVar2 = null;
+        long j6 = 0;
+        boolean z9 = false;
+        while (i6 < length) {
+            if (str.charAt(i6) != 'T') {
+                int i9 = i6;
+                while (i9 < str.length() && (('0' <= (charAt = str.charAt(i9)) && charAt < ':') || Q7.j.l0("+-.", charAt))) {
+                    i9++;
                 }
-                if (charAt != 'e' && charAt != 'E') {
-                    trim = str.substring(i9, i10).trim();
-                    if (!trim.isEmpty()) {
-                        if (trim.charAt(i6) == 'z' || trim.charAt(i6) == 'Z') {
-                            fArr = new float[i6];
-                        } else {
-                            try {
-                                float[] fArr2 = new float[trim.length()];
-                                int length = trim.length();
-                                int i11 = i6;
-                                int i12 = 1;
-                                while (i12 < length) {
-                                    int i13 = i6;
-                                    int i14 = i13;
-                                    int i15 = i14;
-                                    int i16 = i15;
-                                    for (int i17 = i12; i17 < trim.length(); i17++) {
-                                        char charAt2 = trim.charAt(i17);
-                                        if (charAt2 != ' ') {
-                                            if (charAt2 != 'E' && charAt2 != 'e') {
-                                                switch (charAt2) {
-                                                    case com.anythink.basead.b.b.j.f5812S /* 44 */:
-                                                        break;
-                                                    case com.anythink.basead.b.b.j.f5813T /* 45 */:
-                                                        if (i17 != i12 && i13 == 0) {
-                                                            i13 = 0;
-                                                            i15 = 1;
-                                                            i16 = 1;
-                                                            break;
-                                                        }
-                                                        i13 = 0;
-                                                        break;
-                                                    case '.':
-                                                        if (i14 == 0) {
-                                                            i13 = 0;
-                                                            i14 = 1;
-                                                            break;
-                                                        }
-                                                        i13 = 0;
-                                                        i15 = 1;
-                                                        i16 = 1;
-                                                        break;
-                                                    default:
-                                                        i13 = 0;
-                                                        break;
-                                                }
-                                            } else {
-                                                i13 = 1;
-                                            }
-                                            if (i15 == 0) {
-                                                if (i12 < i17) {
-                                                    fArr2[i11] = Float.parseFloat(trim.substring(i12, i17));
-                                                    i11++;
-                                                }
-                                                i12 = i16 == 0 ? i17 : i17 + 1;
-                                                i6 = 0;
-                                            }
-                                        }
-                                        i13 = 0;
-                                        i15 = 1;
-                                        if (i15 == 0) {
-                                        }
-                                    }
-                                    if (i12 < i17) {
-                                    }
-                                    if (i16 == 0) {
-                                    }
-                                    i6 = 0;
-                                }
-                                fArr = e(fArr2, i11);
-                                i6 = 0;
-                            } catch (NumberFormatException e9) {
-                                throw new RuntimeException(y.o("error in parsing \"", trim, "\""), e9);
-                            }
+                String substring = str.substring(i6, i9);
+                kotlin.jvm.internal.h.d(substring, "substring(...)");
+                if (substring.length() == 0) {
+                    throw new IllegalArgumentException();
+                }
+                int length2 = substring.length() + i6;
+                if (length2 < 0 || length2 >= str.length()) {
+                    throw new IllegalArgumentException("Missing unit for value ".concat(substring));
+                }
+                char charAt3 = str.charAt(length2);
+                int i10 = length2 + 1;
+                if (z9) {
+                    if (charAt3 == 'H') {
+                        cVar = R7.c.f2895y;
+                    } else if (charAt3 == 'M') {
+                        cVar = R7.c.f2894x;
+                    } else {
+                        if (charAt3 != 'S') {
+                            throw new IllegalArgumentException("Invalid duration ISO time unit: " + charAt3);
                         }
-                        arrayList.add(new G.i(trim.charAt(i6), fArr));
+                        cVar = R7.c.f2893w;
                     }
-                    i9 = i10;
-                    i10++;
-                    i6 = 0;
+                } else {
+                    if (charAt3 != 'D') {
+                        throw new IllegalArgumentException("Invalid or unsupported duration ISO non-time unit: " + charAt3);
+                    }
+                    cVar = R7.c.f2896z;
                 }
-                i10++;
-            }
-            trim = str.substring(i9, i10).trim();
-            if (!trim.isEmpty()) {
-            }
-            i9 = i10;
-            i10++;
-            i6 = 0;
-        }
-        if (i10 - i9 != 1 || i9 >= str.length()) {
-            i = 0;
-        } else {
-            i = 0;
-            arrayList.add(new G.i(str.charAt(i9), new float[0]));
-        }
-        return (G.i[]) arrayList.toArray(new G.i[i]);
-    }
-
-    public static G.i[] g(G.i[] iVarArr) {
-        G.i[] iVarArr2 = new G.i[iVarArr.length];
-        for (int i = 0; i < iVarArr.length; i++) {
-            iVarArr2[i] = new G.i(iVarArr[i]);
-        }
-        return iVarArr2;
-    }
-
-    public static j3.m h(Exception exc) {
-        j3.m mVar = new j3.m();
-        mVar.k(exc);
-        return mVar;
-    }
-
-    public static j3.m i(Object obj) {
-        j3.m mVar = new j3.m();
-        mVar.l(obj);
-        return mVar;
-    }
-
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue
-    java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because the return value of "jadx.core.dex.visitors.regions.SwitchOverStringVisitor$SwitchData.getNewCases()" is null
-    	at jadx.core.dex.visitors.regions.SwitchOverStringVisitor.restoreSwitchOverString(SwitchOverStringVisitor.java:109)
-    	at jadx.core.dex.visitors.regions.SwitchOverStringVisitor.visitRegion(SwitchOverStringVisitor.java:66)
-    	at jadx.core.dex.visitors.regions.DepthRegionTraversal.traverseIterativeStepInternal(DepthRegionTraversal.java:77)
-    	at jadx.core.dex.visitors.regions.DepthRegionTraversal.traverseIterativeStepInternal(DepthRegionTraversal.java:82)
-     */
-    public static final Class j(O7.c cVar) {
-        kotlin.jvm.internal.h.e(cVar, "<this>");
-        Class a9 = ((kotlin.jvm.internal.c) cVar).a();
-        if (a9.isPrimitive()) {
-            String name = a9.getName();
-            switch (name.hashCode()) {
-                case -1325958191:
-                    if (name.equals("double")) {
-                        return Double.class;
-                    }
-                    break;
-                case 104431:
-                    if (name.equals("int")) {
-                        return Integer.class;
-                    }
-                    break;
-                case 3039496:
-                    if (name.equals("byte")) {
-                        return Byte.class;
-                    }
-                    break;
-                case 3052374:
-                    if (name.equals("char")) {
-                        return Character.class;
-                    }
-                    break;
-                case 3327612:
-                    if (name.equals("long")) {
-                        return Long.class;
-                    }
-                    break;
-                case 3625364:
-                    if (name.equals("void")) {
-                        return Void.class;
-                    }
-                    break;
-                case 64711720:
-                    if (name.equals("boolean")) {
-                        return Boolean.class;
-                    }
-                    break;
-                case 97526364:
-                    if (name.equals("float")) {
-                        return Float.class;
-                    }
-                    break;
-                case 109413500:
-                    if (name.equals("short")) {
-                        return Short.class;
-                    }
-                    break;
-            }
-        }
-        return a9;
-    }
-
-    public static com.bumptech.glide.manager.o k(C4729d c4729d, List list) {
-        W4 w42 = c4729d.f39290D;
-        if (w42 == null) {
-            return new com.bumptech.glide.manager.o(null, true, list);
-        }
-        TreeSet treeSet = new TreeSet(String.CASE_INSENSITIVE_ORDER);
-        if (!list.isEmpty()) {
-            Iterator it = list.iterator();
-            while (it.hasNext()) {
-                treeSet.add(((l1.d) it.next()).f38888a);
-            }
-        }
-        ArrayList arrayList = new ArrayList(list);
-        List list2 = w42.f28320h;
-        if (list2 != null) {
-            if (!list2.isEmpty()) {
-                for (l1.d dVar : w42.f28320h) {
-                    if (!treeSet.contains(dVar.f38888a)) {
-                        arrayList.add(dVar);
-                    }
+                if (cVar2 != null && cVar2.compareTo(cVar) <= 0) {
+                    throw new IllegalArgumentException("Unexpected order of duration components");
                 }
-            }
-        } else if (!w42.f28319g.isEmpty()) {
-            for (Map.Entry entry : w42.f28319g.entrySet()) {
-                if (!treeSet.contains(entry.getKey())) {
-                    arrayList.add(new l1.d((String) entry.getKey(), (String) entry.getValue()));
+                int p02 = Q7.j.p0(substring, '.', 0, 6);
+                if (cVar != R7.c.f2893w || p02 <= 0) {
+                    j6 = R7.a.e(j6, w(q(substring), cVar));
+                } else {
+                    String substring2 = substring.substring(0, p02);
+                    kotlin.jvm.internal.h.d(substring2, "substring(...)");
+                    long e9 = R7.a.e(j6, w(q(substring2), cVar));
+                    String substring3 = substring.substring(p02);
+                    kotlin.jvm.internal.h.d(substring3, "substring(...)");
+                    double parseDouble = Double.parseDouble(substring3);
+                    double c9 = X2.a.c(parseDouble, cVar, R7.c.f2891u);
+                    if (Double.isNaN(c9)) {
+                        throw new IllegalArgumentException("Duration value cannot be NaN.");
+                    }
+                    if (Double.isNaN(c9)) {
+                        throw new IllegalArgumentException("Cannot round NaN value.");
+                    }
+                    long round = Math.round(c9);
+                    if (-4611686018426999999L > round || round >= 4611686018427000000L) {
+                        double c10 = X2.a.c(parseDouble, cVar, R7.c.f2892v);
+                        if (Double.isNaN(c10)) {
+                            throw new IllegalArgumentException("Cannot round NaN value.");
+                        }
+                        k9 = k(Math.round(c10));
+                    } else {
+                        k9 = l(round);
+                    }
+                    j6 = R7.a.e(e9, k9);
                 }
+                cVar2 = cVar;
+                i6 = i10;
+            } else {
+                if (z9 || (i6 = i6 + 1) == length) {
+                    throw new IllegalArgumentException();
+                }
+                z9 = true;
             }
         }
-        return new com.bumptech.glide.manager.o(w42.f28313a, true, arrayList);
+        if (!z6) {
+            return j6;
+        }
+        long j9 = ((-(j6 >> 1)) << 1) + (((int) j6) & 1);
+        int i11 = R7.b.f2889a;
+        return j9;
     }
 
-    public static String l(int i) {
-        switch (i) {
-            case -1:
-                return "SUCCESS_CACHE";
-            case 0:
-                return "SUCCESS";
-            case 1:
-            case 9:
-            case 11:
-            case 12:
-            default:
-                return y.m(i, "unknown status code: ", new StringBuilder(String.valueOf(i).length() + 21));
-            case 2:
-                return "SERVICE_VERSION_UPDATE_REQUIRED";
-            case 3:
-                return "SERVICE_DISABLED";
-            case 4:
-                return "SIGN_IN_REQUIRED";
-            case 5:
-                return "INVALID_ACCOUNT";
-            case 6:
-                return "RESOLUTION_REQUIRED";
-            case 7:
-                return "NETWORK_ERROR";
-            case 8:
-                return "INTERNAL_ERROR";
-            case 10:
-                return "DEVELOPER_ERROR";
-            case 13:
-                return "ERROR";
-            case 14:
-                return "INTERRUPTED";
-            case 15:
-                return "TIMEOUT";
-            case 16:
-                return "CANCELED";
-            case 17:
-                return "API_NOT_CONNECTED";
-            case 18:
-                return "DEAD_CLIENT";
-            case 19:
-                return "REMOTE_EXCEPTION";
-            case 20:
-                return "CONNECTION_SUSPENDED_DURING_CALL";
-            case 21:
-                return "RECONNECTION_TIMED_OUT_DURING_UPDATE";
-            case 22:
-                return "RECONNECTION_TIMED_OUT";
+    public static void b(int i, int i4, int i6) {
+        if (i < 0 || i4 > i6) {
+            StringBuilder j6 = Wv.j(i, i4, "startIndex: ", ", endIndex: ", ", size: ");
+            j6.append(i6);
+            throw new IndexOutOfBoundsException(j6.toString());
+        }
+        if (i > i4) {
+            throw new IllegalArgumentException(AbstractC5128c.c(i, i4, "startIndex: ", " > endIndex: "));
         }
     }
 
-    public static byte[] m(InputStream inputStream, int i, C4727b c4727b) {
-        byte[] bArr;
-        C3816r5 c3816r5 = new C3816r5(c4727b, i);
-        try {
-            bArr = c4727b.a(1024);
-            while (true) {
-                try {
-                    int read = inputStream.read(bArr);
-                    if (read == -1) {
-                        break;
-                    }
-                    c3816r5.write(bArr, 0, read);
-                } catch (Throwable th) {
-                    th = th;
-                    try {
-                        inputStream.close();
-                    } catch (IOException unused) {
-                        l1.j.d("Error occurred when closing InputStream", new Object[0]);
-                    }
-                    c4727b.b(bArr);
-                    c3816r5.close();
-                    throw th;
-                }
-            }
-            byte[] byteArray = c3816r5.toByteArray();
+    public static void c(int i, int i4, int i6) {
+        if (i < 0 || i4 > i6) {
+            StringBuilder j6 = Wv.j(i, i4, "fromIndex: ", ", toIndex: ", ", size: ");
+            j6.append(i6);
+            throw new IndexOutOfBoundsException(j6.toString());
+        }
+        if (i > i4) {
+            throw new IllegalArgumentException(AbstractC5128c.c(i, i4, "fromIndex: ", " > toIndex: "));
+        }
+    }
+
+    public static int d(int i, int i4, int i6) {
+        return i < i4 ? i4 : i > i6 ? i6 : i;
+    }
+
+    public static void e(Closeable closeable) {
+        if (closeable != null) {
             try {
-                inputStream.close();
-            } catch (IOException unused2) {
-                l1.j.d("Error occurred when closing InputStream", new Object[0]);
+                closeable.close();
+            } catch (IOException unused) {
             }
-            c4727b.b(bArr);
-            c3816r5.close();
-            return byteArray;
+        }
+    }
+
+    public static long f(long j6) {
+        if (j6 < -4611686018427387903L) {
+            return -4611686018427387903L;
+        }
+        if (j6 > 4611686018427387903L) {
+            return 4611686018427387903L;
+        }
+        return j6;
+    }
+
+    public static boolean g(File file, Resources resources, int i) {
+        InputStream inputStream;
+        try {
+            inputStream = resources.openRawResource(i);
+            try {
+                boolean h3 = h(file, inputStream);
+                e(inputStream);
+                return h3;
+            } catch (Throwable th) {
+                th = th;
+                e(inputStream);
+                throw th;
+            }
         } catch (Throwable th2) {
             th = th2;
-            bArr = null;
+            inputStream = null;
         }
     }
 
-    public static String n(String str, String str2) {
-        int length = str.length() - str2.length();
-        if (length < 0 || length > 1) {
-            throw new IllegalArgumentException("Invalid input received");
-        }
-        StringBuilder sb = new StringBuilder(str2.length() + str.length());
-        for (int i = 0; i < str.length(); i++) {
-            sb.append(str.charAt(i));
-            if (str2.length() > i) {
-                sb.append(str2.charAt(i));
-            }
-        }
-        return sb.toString();
-    }
-
-    public static final List s(Cursor cursor) {
-        int columnIndex = cursor.getColumnIndex("id");
-        int columnIndex2 = cursor.getColumnIndex("seq");
-        int columnIndex3 = cursor.getColumnIndex("from");
-        int columnIndex4 = cursor.getColumnIndex("to");
-        C5156c c5156c = new C5156c(10);
-        while (cursor.moveToNext()) {
-            int i = cursor.getInt(columnIndex);
-            int i6 = cursor.getInt(columnIndex2);
-            String string = cursor.getString(columnIndex3);
-            kotlin.jvm.internal.h.d(string, "cursor.getString(fromColumnIndex)");
-            String string2 = cursor.getString(columnIndex4);
-            kotlin.jvm.internal.h.d(string2, "cursor.getString(toColumnIndex)");
-            c5156c.add(new w0.c(i, i6, string, string2));
-        }
-        return AbstractC5129j.J(d6.c.b(c5156c));
-    }
-
-    public static final w0.d t(C5247c c5247c, String str, boolean z3) {
-        Cursor E8 = c5247c.E("PRAGMA index_xinfo(`" + str + "`)");
+    public static boolean h(File file, InputStream inputStream) {
+        FileOutputStream fileOutputStream;
+        StrictMode.ThreadPolicy allowThreadDiskWrites = StrictMode.allowThreadDiskWrites();
+        FileOutputStream fileOutputStream2 = null;
         try {
-            int columnIndex = E8.getColumnIndex("seqno");
-            int columnIndex2 = E8.getColumnIndex("cid");
-            int columnIndex3 = E8.getColumnIndex("name");
-            int columnIndex4 = E8.getColumnIndex("desc");
-            if (columnIndex != -1 && columnIndex2 != -1 && columnIndex3 != -1 && columnIndex4 != -1) {
-                TreeMap treeMap = new TreeMap();
-                TreeMap treeMap2 = new TreeMap();
-                while (E8.moveToNext()) {
-                    if (E8.getInt(columnIndex2) >= 0) {
-                        int i = E8.getInt(columnIndex);
-                        String columnName = E8.getString(columnIndex3);
-                        String str2 = E8.getInt(columnIndex4) > 0 ? "DESC" : "ASC";
-                        Integer valueOf = Integer.valueOf(i);
-                        kotlin.jvm.internal.h.d(columnName, "columnName");
-                        treeMap.put(valueOf, columnName);
-                        treeMap2.put(Integer.valueOf(i), str2);
-                    }
-                }
-                Collection values = treeMap.values();
-                kotlin.jvm.internal.h.d(values, "columnsMap.values");
-                List L6 = AbstractC5129j.L(values);
-                Collection values2 = treeMap2.values();
-                kotlin.jvm.internal.h.d(values2, "ordersMap.values");
-                w0.d dVar = new w0.d(str, L6, AbstractC5129j.L(values2), z3);
-                E8.close();
-                return dVar;
+            try {
+                fileOutputStream = new FileOutputStream(file, false);
+            } catch (IOException e9) {
+                e = e9;
             }
-            E8.close();
+        } catch (Throwable th) {
+            th = th;
+        }
+        try {
+            byte[] bArr = new byte[1024];
+            while (true) {
+                int read = inputStream.read(bArr);
+                if (read == -1) {
+                    e(fileOutputStream);
+                    StrictMode.setThreadPolicy(allowThreadDiskWrites);
+                    return true;
+                }
+                fileOutputStream.write(bArr, 0, read);
+            }
+        } catch (IOException e10) {
+            e = e10;
+            fileOutputStream2 = fileOutputStream;
+            Log.e("TypefaceCompatUtil", "Error copying resource contents to temp file: " + e.getMessage());
+            e(fileOutputStream2);
+            StrictMode.setThreadPolicy(allowThreadDiskWrites);
+            return false;
+        } catch (Throwable th2) {
+            th = th2;
+            fileOutputStream2 = fileOutputStream;
+            e(fileOutputStream2);
+            StrictMode.setThreadPolicy(allowThreadDiskWrites);
+            throw th;
+        }
+    }
+
+    public static T3.b i(String str, String str2) {
+        C4773a c4773a = new C4773a(str, str2);
+        HashSet hashSet = new HashSet();
+        HashSet hashSet2 = new HashSet();
+        HashSet hashSet3 = new HashSet();
+        hashSet.add(T3.r.a(C4773a.class));
+        return new T3.b(null, new HashSet(hashSet), new HashSet(hashSet2), 0, 1, new J3.l(2, c4773a), hashSet3);
+    }
+
+    public static final long j(long j6) {
+        long j9 = (j6 << 1) + 1;
+        int i = R7.a.f2887w;
+        int i4 = R7.b.f2889a;
+        return j9;
+    }
+
+    public static final long k(long j6) {
+        return (-4611686018426L > j6 || j6 >= 4611686018427L) ? j(f(j6)) : l(j6 * 1000000);
+    }
+
+    public static final long l(long j6) {
+        long j9 = j6 << 1;
+        int i = R7.a.f2887w;
+        int i4 = R7.b.f2889a;
+        return j9;
+    }
+
+    public static T3.b m(String str, D0.n nVar) {
+        HashSet hashSet = new HashSet();
+        HashSet hashSet2 = new HashSet();
+        HashSet hashSet3 = new HashSet();
+        hashSet.add(T3.r.a(C4773a.class));
+        for (Class cls : new Class[0]) {
+            com.bumptech.glide.g.g(cls, "Null interface");
+            hashSet.add(T3.r.a(cls));
+        }
+        T3.j a9 = T3.j.a(Context.class);
+        if (hashSet.contains(a9.f3192a)) {
+            throw new IllegalArgumentException("Components are not allowed to depend on interfaces they themselves provide.");
+        }
+        hashSet2.add(a9);
+        return new T3.b(null, new HashSet(hashSet), new HashSet(hashSet2), 0, 1, new C0465d(6, str, nVar), hashSet3);
+    }
+
+    public static File n(Context context) {
+        File cacheDir = context.getCacheDir();
+        if (cacheDir == null) {
             return null;
+        }
+        String str = ".font" + Process.myPid() + "-" + Process.myTid() + "-";
+        for (int i = 0; i < 100; i++) {
+            File file = new File(cacheDir, str + i);
+            if (file.createNewFile()) {
+                return file;
+            }
+        }
+        return null;
+    }
+
+    public static boolean o() {
+        boolean isEnabled;
+        try {
+            if (f2911b == null) {
+                isEnabled = Trace.isEnabled();
+                return isEnabled;
+            }
+        } catch (NoClassDefFoundError | NoSuchMethodError unused) {
+        }
+        try {
+            if (f2911b == null) {
+                f2910a = Trace.class.getField("TRACE_TAG_APP").getLong(null);
+                f2911b = Trace.class.getMethod("isTagEnabled", Long.TYPE);
+            }
+            return ((Boolean) f2911b.invoke(null, Long.valueOf(f2910a))).booleanValue();
+        } catch (Exception e9) {
+            if (!(e9 instanceof InvocationTargetException)) {
+                Log.v("Trace", "Unable to call isTagEnabled via reflection", e9);
+                return false;
+            }
+            Throwable cause = e9.getCause();
+            if (cause instanceof RuntimeException) {
+                throw ((RuntimeException) cause);
+            }
+            throw new RuntimeException(cause);
+        }
+    }
+
+    public static MappedByteBuffer p(Context context, Uri uri) {
+        ParcelFileDescriptor openFileDescriptor;
+        try {
+            openFileDescriptor = context.getContentResolver().openFileDescriptor(uri, com.anythink.expressad.foundation.d.d.bv, null);
+        } catch (IOException unused) {
+        }
+        if (openFileDescriptor == null) {
+            if (openFileDescriptor != null) {
+                openFileDescriptor.close();
+                return null;
+            }
+            return null;
+        }
+        try {
+            FileInputStream fileInputStream = new FileInputStream(openFileDescriptor.getFileDescriptor());
+            try {
+                FileChannel channel = fileInputStream.getChannel();
+                MappedByteBuffer map = channel.map(FileChannel.MapMode.READ_ONLY, 0L, channel.size());
+                fileInputStream.close();
+                openFileDescriptor.close();
+                return map;
+            } finally {
+            }
         } finally {
         }
     }
 
-    public static final C5097o u(String str) {
-        int i;
-        F.g(10);
+    public static final long q(String str) {
+        char charAt;
         int length = str.length();
-        if (length == 0) {
-            return null;
-        }
-        int i6 = 0;
-        char charAt = str.charAt(0);
-        if (kotlin.jvm.internal.h.f(charAt, 48) < 0) {
-            i = 1;
-            if (length == 1 || charAt != '+') {
-                return null;
-            }
-        } else {
-            i = 0;
-        }
-        int i9 = 119304647;
-        while (i < length) {
-            int digit = Character.digit((int) str.charAt(i), 10);
-            if (digit < 0) {
-                return null;
-            }
-            int i10 = i6 ^ Integer.MIN_VALUE;
-            if (Integer.compare(i10, i9 ^ Integer.MIN_VALUE) > 0) {
-                if (i9 != 119304647) {
-                    return null;
-                }
-                i9 = (int) (((-1) & 4294967295L) / (4294967295L & 10));
-                if (Integer.compare(i10, i9 ^ Integer.MIN_VALUE) > 0) {
-                    return null;
+        int i = (length <= 0 || !Q7.j.l0("+-", str.charAt(0))) ? 0 : 1;
+        if (length - i > 16) {
+            int i4 = i;
+            while (true) {
+                if (i < length) {
+                    char charAt2 = str.charAt(i);
+                    if (charAt2 != '0') {
+                        if ('1' > charAt2 || charAt2 >= ':') {
+                            break;
+                        }
+                    } else if (i4 == i) {
+                        i4++;
+                    }
+                    i++;
+                } else if (length - i4 > 16) {
+                    return str.charAt(0) == '-' ? Long.MIN_VALUE : Long.MAX_VALUE;
                 }
             }
-            int i11 = i6 * 10;
-            int i12 = digit + i11;
-            if (Integer.compare(i12 ^ Integer.MIN_VALUE, i11 ^ Integer.MIN_VALUE) < 0) {
-                return null;
-            }
-            i++;
-            i6 = i12;
         }
-        return new C5097o(i6);
+        return (!Q7.q.h0(str, "+") || length <= 1 || '0' > (charAt = str.charAt(1)) || charAt >= ':') ? Long.parseLong(str) : Long.parseLong(Q7.j.m0(1, str));
     }
 
-    public static final C5099q v(String str) {
-        int i;
-        long j6;
-        kotlin.jvm.internal.h.e(str, "<this>");
-        int i6 = 10;
-        F.g(10);
-        int length = str.length();
-        if (length == 0) {
-            return null;
-        }
-        char charAt = str.charAt(0);
-        int i9 = 1;
-        if (kotlin.jvm.internal.h.f(charAt, 48) >= 0) {
-            i = 0;
-        } else {
-            if (length == 1 || charAt != '+') {
-                return null;
-            }
-            i = 1;
-        }
-        long j9 = 10;
-        long j10 = 0;
-        long j11 = 512409557603043100L;
-        while (i < length) {
-            int digit = Character.digit((int) str.charAt(i), i6);
-            if (digit < 0) {
-                return null;
-            }
-            int i10 = length;
-            long j12 = j10 ^ Long.MIN_VALUE;
-            int i11 = i;
-            if (Long.compare(j12, j11 ^ Long.MIN_VALUE) <= 0) {
-                j6 = j9;
+    public static C4522a r(List list) {
+        K1.c cVar = new K1.c(1);
+        Iterator it = list.iterator();
+        while (it.hasNext()) {
+            H6.j jVar = (H6.j) it.next();
+            String str = jVar.f1272v;
+            H6.b bVar = jVar.f1273w;
+            String str2 = bVar.f1254v;
+            f6.b bVar2 = f6.b.f37478n;
+            if (str2 != null) {
+                cVar.c(k6.e.a(bVar2, str), bVar.f1254v);
             } else {
-                if (j11 != 512409557603043100L) {
-                    return null;
-                }
-                if (j9 >= 0) {
-                    long j13 = (Long.MAX_VALUE / j9) << i9;
-                    j6 = j9;
-                    j11 = j13 + ((((-1) - (j13 * j9)) ^ Long.MIN_VALUE) >= (j9 ^ Long.MIN_VALUE) ? i9 : 0);
-                } else if (Long.MAX_VALUE < (j9 ^ Long.MIN_VALUE)) {
-                    j6 = j9;
-                    j11 = 0;
+                Boolean bool = bVar.f1255w;
+                if (bool != null) {
+                    cVar.c(k6.e.a(f6.b.f37479u, str), bool);
                 } else {
-                    j11 = 1;
-                    j6 = j9;
-                }
-                if (Long.compare(j12, j11 ^ Long.MIN_VALUE) > 0) {
-                    return null;
-                }
-            }
-            long j14 = j10 * j6;
-            long j15 = (digit & 4294967295L) + j14;
-            if (Long.compare(j15 ^ Long.MIN_VALUE, j14 ^ Long.MIN_VALUE) < 0) {
-                return null;
-            }
-            i = i11 + 1;
-            j10 = j15;
-            length = i10;
-            j9 = j6;
-            i6 = 10;
-            i9 = 1;
-        }
-        return new C5099q(j10);
-    }
-
-    public static d3.c w(d3.c cVar) {
-        return !(cVar instanceof d3.e) ? cVar instanceof d3.d ? cVar : cVar instanceof Serializable ? new d3.d(cVar) : new d3.e(cVar) : cVar;
-    }
-
-    public static Object x(j3.m mVar) {
-        if (mVar.i()) {
-            return mVar.g();
-        }
-        if (mVar.f38372d) {
-            throw new CancellationException("Task is already canceled");
-        }
-        throw new ExecutionException(mVar.f());
-    }
-
-    public static void y(Context context) {
-        boolean z3;
-        Object obj = v2.f.f41405b;
-        if (((Boolean) AbstractC2667Ma.f26298a.r()).booleanValue()) {
-            try {
-                if (Settings.Global.getInt(context.getContentResolver(), "development_settings_enabled", 0) != 0) {
-                    synchronized (v2.f.f41405b) {
-                        z3 = v2.f.f41406c;
+                    Long l9 = bVar.f1256x;
+                    if (l9 != null) {
+                        cVar.c(k6.e.a(f6.b.f37480v, str), l9);
+                    } else {
+                        Double d9 = bVar.f1257y;
+                        if (d9 != null) {
+                            cVar.c(k6.e.a(f6.b.f37481w, str), d9);
+                        } else {
+                            H6.d dVar = bVar.f1258z;
+                            if (dVar != null) {
+                                List list2 = dVar.f1260v;
+                                H6.b bVar3 = (H6.b) list2.get(0);
+                                if (bVar3.f1254v != null) {
+                                    k6.e a9 = k6.e.a(f6.b.f37482x, str);
+                                    ArrayList arrayList = new ArrayList(list2.size());
+                                    Iterator it2 = list2.iterator();
+                                    while (it2.hasNext()) {
+                                        arrayList.add(((H6.b) it2.next()).f1254v);
+                                    }
+                                    cVar.c(a9, arrayList);
+                                } else if (bVar3.f1255w != null) {
+                                    k6.e a10 = k6.e.a(f6.b.f37483y, str);
+                                    ArrayList arrayList2 = new ArrayList(list2.size());
+                                    Iterator it3 = list2.iterator();
+                                    while (it3.hasNext()) {
+                                        arrayList2.add(((H6.b) it3.next()).f1255w);
+                                    }
+                                    cVar.c(a10, arrayList2);
+                                } else if (bVar3.f1256x != null) {
+                                    k6.e a11 = k6.e.a(f6.b.f37484z, str);
+                                    ArrayList arrayList3 = new ArrayList(list2.size());
+                                    Iterator it4 = list2.iterator();
+                                    while (it4.hasNext()) {
+                                        arrayList3.add(((H6.b) it4.next()).f1256x);
+                                    }
+                                    cVar.c(a11, arrayList3);
+                                } else {
+                                    if (bVar3.f1257y == null) {
+                                        throw new UnsupportedOperationException();
+                                    }
+                                    k6.e a12 = k6.e.a(f6.b.f37476A, str);
+                                    ArrayList arrayList4 = new ArrayList(list2.size());
+                                    Iterator it5 = list2.iterator();
+                                    while (it5.hasNext()) {
+                                        arrayList4.add(((H6.b) it5.next()).f1257y);
+                                    }
+                                    cVar.c(a12, arrayList4);
+                                }
+                            } else {
+                                cVar.c(k6.e.a(bVar2, str), "");
+                            }
+                        }
                     }
-                    if (z3) {
-                        return;
-                    }
-                    N3.a l9 = new C2931ag(context).l();
-                    int i = z.f41322b;
-                    v2.i.e("Updating ad debug logging enablement.");
-                    MA.f(l9, "AdDebugLogUpdater.updateEnablement", AbstractC3413jg.f31275h);
                 }
-            } catch (Exception e9) {
-                v2.i.g("Fail to determine debug setting.", e9);
             }
+        }
+        return cVar.a();
+    }
+
+    public static void s(I7.p pVar, AbstractC0387a abstractC0387a, AbstractC0387a abstractC0387a2) {
+        try {
+            X7.a.h(v.f41073a, A8.b.n(A8.b.g(pVar, abstractC0387a, abstractC0387a2)));
+        } catch (Throwable th) {
+            abstractC0387a2.resumeWith(Q3.b.b(th));
+            throw th;
         }
     }
 
-    public abstract View o(int i);
+    public static N7.a t(N7.c cVar, int i) {
+        kotlin.jvm.internal.h.e(cVar, "<this>");
+        boolean z6 = i > 0;
+        Integer valueOf = Integer.valueOf(i);
+        if (z6) {
+            if (cVar.f2107v <= 0) {
+                i = -i;
+            }
+            return new N7.a(cVar.f2105n, cVar.f2106u, i);
+        }
+        throw new IllegalArgumentException("Step must be positive, was: " + valueOf + '.');
+    }
 
-    public abstract void p(int i);
+    public static final i8.v u(i8.v vVar) {
+        kotlin.jvm.internal.h.e(vVar, "<this>");
+        u b9 = vVar.b();
+        i8.x xVar = vVar.f38377z;
+        b9.f38355g = new j8.a(xVar.j(), xVar.b());
+        return b9.a();
+    }
 
-    public abstract void q(Typeface typeface, boolean z3);
+    public static int v(Context context, int i) {
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(R.style.Animation.Activity, new int[]{i});
+        int resourceId = obtainStyledAttributes.getResourceId(0, -1);
+        obtainStyledAttributes.recycle();
+        return resourceId;
+    }
 
-    public abstract boolean r();
+    public static final long w(long j6, R7.c unit) {
+        kotlin.jvm.internal.h.e(unit, "unit");
+        R7.c cVar = R7.c.f2891u;
+        long d9 = X2.a.d(4611686018426999999L, cVar, unit);
+        if ((-d9) <= j6 && j6 <= d9) {
+            return l(X2.a.d(j6, unit, cVar));
+        }
+        R7.c targetUnit = R7.c.f2892v;
+        kotlin.jvm.internal.h.e(targetUnit, "targetUnit");
+        return j(f(targetUnit.f2897n.convert(j6, unit.f2897n)));
+    }
+
+    public static N7.c x(int i, int i4) {
+        if (i4 > Integer.MIN_VALUE) {
+            return new N7.c(i, i4 - 1, 1);
+        }
+        N7.c cVar = N7.c.f2112w;
+        return N7.c.f2112w;
+    }
+
+    public static void y(int i, int i4) {
+        String r9;
+        if (i < 0 || i >= i4) {
+            if (i < 0) {
+                r9 = X2.a.r("%s (%s) must not be negative", "index", Integer.valueOf(i));
+            } else {
+                if (i4 < 0) {
+                    throw new IllegalArgumentException(x.k(i4, "negative size: ", new StringBuilder(String.valueOf(i4).length() + 15)));
+                }
+                r9 = X2.a.r("%s (%s) must be less than size (%s)", "index", Integer.valueOf(i), Integer.valueOf(i4));
+            }
+            throw new IndexOutOfBoundsException(r9);
+        }
+    }
+
+    public static void z(int i, int i4, int i6) {
+        if (i < 0 || i4 < i || i4 > i6) {
+            throw new IndexOutOfBoundsException((i < 0 || i > i6) ? A(i, i6, "start index") : (i4 < 0 || i4 > i6) ? A(i4, i6, "end index") : X2.a.r("end index (%s) must not be less than start index (%s)", Integer.valueOf(i4), Integer.valueOf(i)));
+        }
+    }
 }

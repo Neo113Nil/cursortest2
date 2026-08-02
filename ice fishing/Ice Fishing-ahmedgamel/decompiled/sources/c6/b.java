@@ -1,67 +1,67 @@
 package c6;
 
-import g1.C4523c;
+import i1.C4586c;
 import kotlin.jvm.internal.s;
 
 /* loaded from: classes2.dex */
 public final class b extends i {
 
     /* renamed from: t, reason: collision with root package name */
-    public final /* synthetic */ int f5575t = 0;
+    public final /* synthetic */ int f5751t = 0;
 
     /* renamed from: u, reason: collision with root package name */
-    public final i f5576u;
+    public final i f5752u;
 
     public b(c cVar) {
-        super(d.f5580w, s.a(double[].class), cVar.f5605c, new double[0], 32);
-        this.f5576u = cVar;
+        super(d.f5756w, s.a(double[].class), cVar.f5781c, new double[0], 32);
+        this.f5752u = cVar;
     }
 
     @Override // c6.i
-    public final Object b(C0544a c0544a) {
-        switch (this.f5575t) {
+    public final Object b(C0555a c0555a) {
+        switch (this.f5751t) {
             case 0:
-                return new double[]{Double.longBitsToDouble(c0544a.i())};
+                return new double[]{Double.longBitsToDouble(c0555a.i())};
             default:
-                return new float[]{Float.intBitsToFloat(c0544a.h())};
+                return new float[]{Float.intBitsToFloat(c0555a.h())};
         }
     }
 
     @Override // c6.i
-    public final Object c(C4523c c4523c) {
-        switch (this.f5575t) {
+    public final Object c(C4586c c4586c) {
+        switch (this.f5751t) {
             case 0:
-                return new double[]{Double.longBitsToDouble(((C0544a) c4523c.f37627u).i())};
+                return new double[]{Double.longBitsToDouble(((C0555a) c4586c.f38154u).i())};
             default:
-                return new float[]{Float.intBitsToFloat(((C0544a) c4523c.f37627u).h())};
+                return new float[]{Float.intBitsToFloat(((C0555a) c4586c.f38154u).h())};
         }
     }
 
     @Override // c6.i
-    public final void d(F1.a writer, Object obj) {
-        switch (this.f5575t) {
+    public final void d(n4.c writer, Object obj) {
+        switch (this.f5751t) {
             case 0:
                 double[] value = (double[]) obj;
                 kotlin.jvm.internal.h.e(writer, "writer");
                 kotlin.jvm.internal.h.e(value, "value");
-                for (double d2 : value) {
-                    ((c) this.f5576u).d(writer, Double.valueOf(d2));
+                for (double d9 : value) {
+                    ((c) this.f5752u).d(writer, Double.valueOf(d9));
                 }
                 break;
             default:
                 float[] value2 = (float[]) obj;
                 kotlin.jvm.internal.h.e(writer, "writer");
                 kotlin.jvm.internal.h.e(value2, "value");
-                for (float f3 : value2) {
-                    ((c) this.f5576u).d(writer, Float.valueOf(f3));
+                for (float f2 : value2) {
+                    ((c) this.f5752u).d(writer, Float.valueOf(f2));
                 }
                 break;
         }
     }
 
     @Override // c6.i
-    public final void e(F1.a writer, int i, Object obj) {
-        switch (this.f5575t) {
+    public final void e(n4.c writer, int i, Object obj) {
+        switch (this.f5751t) {
             case 0:
                 double[] dArr = (double[]) obj;
                 kotlin.jvm.internal.h.e(writer, "writer");
@@ -83,31 +83,31 @@ public final class b extends i {
 
     @Override // c6.i
     public final int f(Object obj) {
-        switch (this.f5575t) {
+        switch (this.f5751t) {
             case 0:
                 double[] value = (double[]) obj;
                 kotlin.jvm.internal.h.e(value, "value");
                 int i = 0;
-                for (double d2 : value) {
-                    ((c) this.f5576u).f(Double.valueOf(d2));
+                for (double d9 : value) {
+                    ((c) this.f5752u).f(Double.valueOf(d9));
                     i += 8;
                 }
                 return i;
             default:
                 float[] value2 = (float[]) obj;
                 kotlin.jvm.internal.h.e(value2, "value");
-                int i6 = 0;
-                for (float f3 : value2) {
-                    ((c) this.f5576u).getClass();
-                    i6 += 4;
+                int i4 = 0;
+                for (float f2 : value2) {
+                    ((c) this.f5752u).getClass();
+                    i4 += 4;
                 }
-                return i6;
+                return i4;
         }
     }
 
     @Override // c6.i
     public final int g(int i, Object obj) {
-        switch (this.f5575t) {
+        switch (this.f5751t) {
             case 0:
                 double[] dArr = (double[]) obj;
                 if (dArr == null || dArr.length == 0) {
@@ -124,7 +124,7 @@ public final class b extends i {
     }
 
     public b(c cVar, byte b9) {
-        super(d.f5580w, s.a(float[].class), cVar.f5605c, new float[0], 32);
-        this.f5576u = cVar;
+        super(d.f5756w, s.a(float[].class), cVar.f5781c, new float[0], 32);
+        this.f5752u = cVar;
     }
 }

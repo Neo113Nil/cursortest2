@@ -16,19 +16,19 @@ public enum Q9 implements XK {
 
 
     /* renamed from: n, reason: collision with root package name */
-    public final int f26998n;
+    public final int f27785n;
 
     Q9(int i) {
-        this.f26998n = i;
+        this.f27785n = i;
     }
 
     @Override // com.google.android.gms.internal.ads.XK
     public final int c() {
-        return this.f26998n;
+        return this.f27785n;
     }
 
     @Override // java.lang.Enum
     public final String toString() {
-        return Integer.toString(this.f26998n);
+        return Integer.toString(this.f27785n);
     }
 }

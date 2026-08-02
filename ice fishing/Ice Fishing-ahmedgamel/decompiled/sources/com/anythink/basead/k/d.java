@@ -7,10 +7,10 @@ import com.iab.omid.library.toponad.adsession.media.MediaEvents;
 public final class d implements com.anythink.basead.j.d {
 
     /* renamed from: a, reason: collision with root package name */
-    MediaEvents f9131a;
+    MediaEvents f9917a;
 
     /* renamed from: b, reason: collision with root package name */
-    private a f9132b = a.UNKNOWN;
+    private a f9918b = a.UNKNOWN;
 
     public enum a {
         UNKNOWN,
@@ -25,42 +25,42 @@ public final class d implements com.anythink.basead.j.d {
     }
 
     public d(MediaEvents mediaEvents) {
-        this.f9131a = mediaEvents;
+        this.f9917a = mediaEvents;
     }
 
     @Override // com.anythink.basead.j.d
-    public final void a(float f3, float f9) {
+    public final void a(float f2, float f9) {
         a aVar;
-        if (this.f9131a == null || (aVar = a.START) == this.f9132b || aVar.ordinal() <= this.f9132b.ordinal()) {
+        if (this.f9917a == null || (aVar = a.START) == this.f9918b || aVar.ordinal() <= this.f9918b.ordinal()) {
             return;
         }
-        this.f9131a.start(f3, f9);
-        this.f9132b = aVar;
+        this.f9917a.start(f2, f9);
+        this.f9918b = aVar;
     }
 
     @Override // com.anythink.basead.j.d
     public final void b() {
         a aVar;
-        if (this.f9131a == null || (aVar = a.SECOND) == this.f9132b || aVar.ordinal() <= this.f9132b.ordinal()) {
+        if (this.f9917a == null || (aVar = a.SECOND) == this.f9918b || aVar.ordinal() <= this.f9918b.ordinal()) {
             return;
         }
-        this.f9131a.midpoint();
-        this.f9132b = aVar;
+        this.f9917a.midpoint();
+        this.f9918b = aVar;
     }
 
     @Override // com.anythink.basead.j.d
     public final void c() {
         a aVar;
-        if (this.f9131a == null || (aVar = a.THIRD) == this.f9132b || aVar.ordinal() <= this.f9132b.ordinal()) {
+        if (this.f9917a == null || (aVar = a.THIRD) == this.f9918b || aVar.ordinal() <= this.f9918b.ordinal()) {
             return;
         }
-        this.f9131a.thirdQuartile();
-        this.f9132b = aVar;
+        this.f9917a.thirdQuartile();
+        this.f9918b = aVar;
     }
 
     @Override // com.anythink.basead.j.d
     public final void d() {
-        MediaEvents mediaEvents = this.f9131a;
+        MediaEvents mediaEvents = this.f9917a;
         if (mediaEvents != null) {
             mediaEvents.complete();
         }
@@ -68,7 +68,7 @@ public final class d implements com.anythink.basead.j.d {
 
     @Override // com.anythink.basead.j.d
     public final void e() {
-        MediaEvents mediaEvents = this.f9131a;
+        MediaEvents mediaEvents = this.f9917a;
         if (mediaEvents != null) {
             mediaEvents.pause();
         }
@@ -76,7 +76,7 @@ public final class d implements com.anythink.basead.j.d {
 
     @Override // com.anythink.basead.j.d
     public final void f() {
-        MediaEvents mediaEvents = this.f9131a;
+        MediaEvents mediaEvents = this.f9917a;
         if (mediaEvents != null) {
             mediaEvents.resume();
         }
@@ -84,7 +84,7 @@ public final class d implements com.anythink.basead.j.d {
 
     @Override // com.anythink.basead.j.d
     public final void g() {
-        MediaEvents mediaEvents = this.f9131a;
+        MediaEvents mediaEvents = this.f9917a;
         if (mediaEvents != null) {
             mediaEvents.bufferStart();
         }
@@ -92,7 +92,7 @@ public final class d implements com.anythink.basead.j.d {
 
     @Override // com.anythink.basead.j.d
     public final void h() {
-        MediaEvents mediaEvents = this.f9131a;
+        MediaEvents mediaEvents = this.f9917a;
         if (mediaEvents != null) {
             mediaEvents.bufferFinish();
         }
@@ -100,7 +100,7 @@ public final class d implements com.anythink.basead.j.d {
 
     @Override // com.anythink.basead.j.d
     public final void i() {
-        MediaEvents mediaEvents = this.f9131a;
+        MediaEvents mediaEvents = this.f9917a;
         if (mediaEvents != null) {
             mediaEvents.skipped();
         }
@@ -108,7 +108,7 @@ public final class d implements com.anythink.basead.j.d {
 
     @Override // com.anythink.basead.j.d
     public final void j() {
-        MediaEvents mediaEvents = this.f9131a;
+        MediaEvents mediaEvents = this.f9917a;
         if (mediaEvents != null) {
             mediaEvents.adUserInteraction(InteractionType.CLICK);
         }
@@ -117,18 +117,18 @@ public final class d implements com.anythink.basead.j.d {
     @Override // com.anythink.basead.j.d
     public final void a() {
         a aVar;
-        if (this.f9131a == null || (aVar = a.FIRST) == this.f9132b || aVar.ordinal() <= this.f9132b.ordinal()) {
+        if (this.f9917a == null || (aVar = a.FIRST) == this.f9918b || aVar.ordinal() <= this.f9918b.ordinal()) {
             return;
         }
-        this.f9131a.firstQuartile();
-        this.f9132b = aVar;
+        this.f9917a.firstQuartile();
+        this.f9918b = aVar;
     }
 
     @Override // com.anythink.basead.j.d
-    public final void a(float f3) {
-        MediaEvents mediaEvents = this.f9131a;
+    public final void a(float f2) {
+        MediaEvents mediaEvents = this.f9917a;
         if (mediaEvents != null) {
-            mediaEvents.volumeChange(f3);
+            mediaEvents.volumeChange(f2);
         }
     }
 }

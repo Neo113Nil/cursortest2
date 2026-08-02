@@ -6,5 +6,5 @@ import javax.net.ssl.SSLSocket;
 public interface l {
     boolean a(SSLSocket sSLSocket);
 
-    n l(SSLSocket sSLSocket);
+    n i(SSLSocket sSLSocket);
 }

@@ -33,19 +33,19 @@ public abstract class bj extends w<bk> {
     long az;
 
     /* renamed from: b, reason: collision with root package name */
-    private int f13642b;
+    private int f14428b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f13643c;
+    private int f14429c;
 
     /* renamed from: d, reason: collision with root package name */
-    private int f13644d;
+    private int f14430d;
 
     /* renamed from: e, reason: collision with root package name */
-    private int f13645e;
+    private int f14431e;
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f13641a = getClass().getSimpleName();
+    private final String f14427a = getClass().getSimpleName();
     String aC = "";
 
     private String aM() {
@@ -53,19 +53,19 @@ public abstract class bj extends w<bk> {
     }
 
     private int aN() {
-        return this.f13642b;
+        return this.f14428b;
     }
 
     private int aO() {
-        return this.f13643c;
+        return this.f14429c;
     }
 
     private int aP() {
-        return this.f13644d;
+        return this.f14430d;
     }
 
     private int aQ() {
-        return this.f13645e;
+        return this.f14431e;
     }
 
     private int e() {
@@ -182,11 +182,11 @@ public abstract class bj extends w<bk> {
         ArrayList arrayList = new ArrayList();
         StringBuilder sb = new StringBuilder();
         sb.append(bkVar2.F());
-        if (TextUtils.equals(sb.toString(), "2") && this.an == 3 && !TextUtils.isEmpty(this.f14142q)) {
-            arrayList.add(this.f14142q);
+        if (TextUtils.equals(sb.toString(), "2") && this.an == 3 && !TextUtils.isEmpty(this.f14928q)) {
+            arrayList.add(this.f14928q);
         }
-        if (TextUtils.equals(String.valueOf(bkVar2.F()), "4") && 1 != this.an && !TextUtils.isEmpty(this.f14142q)) {
-            arrayList.add(this.f14142q);
+        if (TextUtils.equals(String.valueOf(bkVar2.F()), "4") && 1 != this.an && !TextUtils.isEmpty(this.f14928q)) {
+            arrayList.add(this.f14928q);
         }
         return arrayList;
     }
@@ -212,19 +212,19 @@ public abstract class bj extends w<bk> {
     }
 
     public final void u(int i) {
-        this.f13642b = i;
+        this.f14428b = i;
     }
 
     public final void v(int i) {
-        this.f13643c = i;
+        this.f14429c = i;
     }
 
     public final void w(int i) {
-        this.f13644d = i;
+        this.f14430d = i;
     }
 
     public final void x(int i) {
-        this.f13645e = i;
+        this.f14431e = i;
     }
 
     private void a(int i) {
@@ -254,60 +254,60 @@ public abstract class bj extends w<bk> {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final List<String> a(bk bkVar) {
-        boolean z3;
+        boolean z6;
         ArrayList arrayList = new ArrayList();
         StringBuffer stringBuffer = new StringBuffer();
-        if (TextUtils.equals(String.valueOf(bkVar.F()), "0") && !TextUtils.isEmpty(this.f14147v)) {
-            arrayList.add(this.f14147v);
+        if (TextUtils.equals(String.valueOf(bkVar.F()), "0") && !TextUtils.isEmpty(this.f14933v)) {
+            arrayList.add(this.f14933v);
         }
         if (TextUtils.equals(String.valueOf(bkVar.F()), "1")) {
             if (!n()) {
-                if (!TextUtils.isEmpty(this.f14142q)) {
-                    arrayList.add(this.f14142q);
+                if (!TextUtils.isEmpty(this.f14928q)) {
+                    arrayList.add(this.f14928q);
                 }
-                if (!TextUtils.isEmpty(this.f14144s)) {
-                    arrayList.add(this.f14144s);
+                if (!TextUtils.isEmpty(this.f14930s)) {
+                    arrayList.add(this.f14930s);
                 } else {
                     stringBuffer.append("full_u,");
-                    z3 = false;
-                    if (TextUtils.isEmpty(this.f14147v)) {
-                        arrayList.add(this.f14147v);
+                    z6 = false;
+                    if (TextUtils.isEmpty(this.f14933v)) {
+                        arrayList.add(this.f14933v);
                     } else {
                         if (bkVar.ap() != 1 && bkVar.aq() <= 0) {
                             stringBuffer.append("video_u,");
                         } else if (bkVar.aq() != 1) {
-                            if (!TextUtils.isEmpty(this.f14144s)) {
-                                if (!arrayList.contains(this.f14144s)) {
-                                    arrayList.add(this.f14144s);
+                            if (!TextUtils.isEmpty(this.f14930s)) {
+                                if (!arrayList.contains(this.f14930s)) {
+                                    arrayList.add(this.f14930s);
                                 }
                             } else {
                                 stringBuffer.append("full_u,");
                             }
                         }
-                        z3 = false;
+                        z6 = false;
                     }
                 }
             }
-            z3 = true;
-            if (TextUtils.isEmpty(this.f14147v)) {
+            z6 = true;
+            if (TextUtils.isEmpty(this.f14933v)) {
             }
         } else {
-            z3 = true;
+            z6 = true;
         }
         if (TextUtils.equals(String.valueOf(bkVar.F()), "3")) {
             if (!n()) {
-                if (!TextUtils.isEmpty(this.f14142q)) {
-                    arrayList.add(this.f14142q);
+                if (!TextUtils.isEmpty(this.f14928q)) {
+                    arrayList.add(this.f14928q);
                 }
-                if (!TextUtils.isEmpty(this.f14144s)) {
-                    arrayList.add(this.f14144s);
+                if (!TextUtils.isEmpty(this.f14930s)) {
+                    arrayList.add(this.f14930s);
                 } else {
                     stringBuffer.append("full_u,");
-                    z3 = false;
+                    z6 = false;
                 }
             }
-            if (L() && (this.f14111A == 1 || bkVar.aI())) {
-                arrayList.add(this.f14147v);
+            if (L() && (this.f14897A == 1 || bkVar.aI())) {
+                arrayList.add(this.f14933v);
             }
         }
         StringBuilder sb = new StringBuilder();
@@ -317,55 +317,55 @@ public abstract class bj extends w<bk> {
             if (i != 1) {
                 if (i != 2) {
                     if (i == 3) {
-                        if (TextUtils.isEmpty(this.f14147v)) {
-                            if (!TextUtils.isEmpty(this.f14144s)) {
-                                arrayList.add(this.f14144s);
+                        if (TextUtils.isEmpty(this.f14933v)) {
+                            if (!TextUtils.isEmpty(this.f14930s)) {
+                                arrayList.add(this.f14930s);
                             } else {
                                 stringBuffer.append("full_u,");
-                                z3 = false;
+                                z6 = false;
                             }
                         } else {
-                            arrayList.add(this.f14147v);
-                            if (!TextUtils.isEmpty(this.f14144s)) {
-                                arrayList.add(this.f14144s);
+                            arrayList.add(this.f14933v);
+                            if (!TextUtils.isEmpty(this.f14930s)) {
+                                arrayList.add(this.f14930s);
                             }
                         }
                     }
                 }
                 if (TextUtils.isEmpty(this.au)) {
                     stringBuffer.append("img_list,");
-                    z3 = false;
+                    z6 = false;
                 }
-            } else if (TextUtils.isEmpty(this.f14147v)) {
-                if (!TextUtils.isEmpty(this.f14144s)) {
-                    arrayList.add(this.f14144s);
+            } else if (TextUtils.isEmpty(this.f14933v)) {
+                if (!TextUtils.isEmpty(this.f14930s)) {
+                    arrayList.add(this.f14930s);
                 } else {
                     stringBuffer.append("full_u,");
-                    z3 = false;
+                    z6 = false;
                 }
             } else {
-                arrayList.add(this.f14147v);
-                if (!TextUtils.isEmpty(this.f14144s)) {
-                    arrayList.add(this.f14144s);
+                arrayList.add(this.f14933v);
+                if (!TextUtils.isEmpty(this.f14930s)) {
+                    arrayList.add(this.f14930s);
                 }
             }
         }
         if (TextUtils.equals(String.valueOf(bkVar.F()), "4")) {
-            if (TextUtils.isEmpty(this.f14147v)) {
-                if (!TextUtils.isEmpty(this.f14144s)) {
-                    arrayList.add(this.f14144s);
+            if (TextUtils.isEmpty(this.f14933v)) {
+                if (!TextUtils.isEmpty(this.f14930s)) {
+                    arrayList.add(this.f14930s);
                 } else {
                     stringBuffer.append("full_u,");
-                    z3 = false;
+                    z6 = false;
                 }
             } else {
-                arrayList.add(this.f14147v);
-                if (!TextUtils.isEmpty(this.f14144s)) {
-                    arrayList.add(this.f14144s);
+                arrayList.add(this.f14933v);
+                if (!TextUtils.isEmpty(this.f14930s)) {
+                    arrayList.add(this.f14930s);
                 }
             }
         }
-        if (z3) {
+        if (z6) {
             return arrayList;
         }
         this.aC = stringBuffer.substring(0, stringBuffer.length() - 1);
@@ -382,11 +382,11 @@ public abstract class bj extends w<bk> {
         ArrayList arrayList = new ArrayList();
         StringBuilder sb = new StringBuilder();
         sb.append(bkVar.F());
-        if (TextUtils.equals(sb.toString(), "2") && this.an == 3 && !TextUtils.isEmpty(this.f14142q)) {
-            arrayList.add(this.f14142q);
+        if (TextUtils.equals(sb.toString(), "2") && this.an == 3 && !TextUtils.isEmpty(this.f14928q)) {
+            arrayList.add(this.f14928q);
         }
-        if (TextUtils.equals(String.valueOf(bkVar.F()), "4") && 1 != this.an && !TextUtils.isEmpty(this.f14142q)) {
-            arrayList.add(this.f14142q);
+        if (TextUtils.equals(String.valueOf(bkVar.F()), "4") && 1 != this.an && !TextUtils.isEmpty(this.f14928q)) {
+            arrayList.add(this.f14928q);
         }
         return arrayList;
     }
@@ -396,7 +396,7 @@ public abstract class bj extends w<bk> {
         return this.aC;
     }
 
-    public final boolean a(boolean z3, boolean z6) {
-        return z3 ? z6 ? this.f13642b == 1 : this.f13643c == 1 : z6 ? this.f13644d == 1 : this.f13645e == 1;
+    public final boolean a(boolean z6, boolean z9) {
+        return z6 ? z9 ? this.f14428b == 1 : this.f14429c == 1 : z9 ? this.f14430d == 1 : this.f14431e == 1;
     }
 }

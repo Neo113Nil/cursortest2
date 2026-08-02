@@ -1,80 +1,79 @@
 package Q0;
 
-import C2.C;
-import J0.s;
-import N1.p;
+import E2.B;
+import P1.p;
 import android.net.ConnectivityManager;
 import android.net.Network;
 import android.net.NetworkCapabilities;
-import com.google.android.gms.internal.ads.AbstractC3569ma;
-import com.google.android.gms.internal.ads.C3038cg;
-import com.google.android.gms.internal.ads.C3657o7;
-import com.google.android.gms.internal.ads.C3660oA;
+import com.google.android.gms.internal.ads.AbstractC3592ma;
+import com.google.android.gms.internal.ads.C3061cg;
+import com.google.android.gms.internal.ads.C3680o7;
+import com.google.android.gms.internal.ads.C3683oA;
 import com.google.android.gms.internal.ads.Ev;
 import com.google.android.gms.internal.ads.Kv;
 import java.util.Objects;
-import q2.r;
+import s2.r;
 
 /* loaded from: classes.dex */
 public final class h extends ConnectivityManager.NetworkCallback {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f2637a;
+    public final /* synthetic */ int f2472a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final /* synthetic */ Object f2638b;
+    public final /* synthetic */ Object f2473b;
 
     public /* synthetic */ h(int i, Object obj) {
-        this.f2637a = i;
-        this.f2638b = obj;
+        this.f2472a = i;
+        this.f2473b = obj;
     }
 
     @Override // android.net.ConnectivityManager.NetworkCallback
     public void onAvailable(Network network) {
-        switch (this.f2637a) {
+        switch (this.f2472a) {
             case 1:
-                p.f().post(new C(1, this, true));
+                p.f().post(new B(1, this, true));
                 break;
             case 2:
             default:
                 super.onAvailable(network);
                 break;
             case 3:
-                ((C3038cg) this.f2638b).f29531p.set(true);
+                ((C3061cg) this.f2473b).f30316p.set(true);
                 break;
             case 4:
-                Ev ev = (Ev) this.f2638b;
+                Ev ev = (Ev) this.f2473b;
                 ev.getClass();
-                if (((Boolean) r.f40207e.f40210c.a(AbstractC3569ma.f31988C)).booleanValue()) {
+                if (((Boolean) r.f40506e.f40509c.a(AbstractC3592ma.f32768C)).booleanValue()) {
                     ev.a(true);
                     break;
                 }
                 break;
             case 5:
-                ((Kv) this.f2638b).b(true);
+                ((Kv) this.f2473b).b(true);
                 break;
         }
     }
 
     @Override // android.net.ConnectivityManager.NetworkCallback
     public void onCapabilitiesChanged(Network network, NetworkCapabilities capabilities) {
-        switch (this.f2637a) {
+        switch (this.f2472a) {
             case 0:
                 kotlin.jvm.internal.h.e(network, "network");
                 kotlin.jvm.internal.h.e(capabilities, "capabilities");
-                s.d().a(j.f2641a, "Network capabilities changed: " + capabilities);
-                i iVar = (i) this.f2638b;
-                iVar.c(j.a(iVar.f2639f));
+                J0.r.d().a(j.f2476a, "Network capabilities changed: " + capabilities);
+                i iVar = (i) this.f2473b;
+                iVar.c(j.a(iVar.f2474f));
                 return;
             case 2:
-                synchronized (C3657o7.class) {
-                    ((C3657o7) this.f2638b).f32862u = capabilities;
+                synchronized (C3680o7.class) {
+                    ((C3680o7) this.f2473b).f33649u = capabilities;
                 }
                 return;
             case 6:
-                C3660oA c3660oA = (C3660oA) this.f2638b;
-                synchronized (c3660oA) {
-                    c3660oA.f32865c = capabilities;
+                C3683oA c3683oA = (C3683oA) this.f2473b;
+                synchronized (c3683oA) {
+                    c3683oA.f33652c = capabilities;
                 }
                 return;
             default:
@@ -85,65 +84,65 @@ public final class h extends ConnectivityManager.NetworkCallback {
 
     @Override // android.net.ConnectivityManager.NetworkCallback
     public final void onLost(Network network) {
-        switch (this.f2637a) {
+        switch (this.f2472a) {
             case 0:
                 kotlin.jvm.internal.h.e(network, "network");
-                s.d().a(j.f2641a, "Network connection lost");
-                i iVar = (i) this.f2638b;
-                iVar.c(j.a(iVar.f2639f));
+                J0.r.d().a(j.f2476a, "Network connection lost");
+                i iVar = (i) this.f2473b;
+                iVar.c(j.a(iVar.f2474f));
                 return;
             case 1:
-                p.f().post(new C(1, this, false));
+                p.f().post(new B(1, this, false));
                 return;
             case 2:
-                synchronized (C3657o7.class) {
-                    ((C3657o7) this.f2638b).f32862u = null;
+                synchronized (C3680o7.class) {
+                    ((C3680o7) this.f2473b).f33649u = null;
                 }
                 return;
             case 3:
-                ((C3038cg) this.f2638b).f29531p.set(false);
+                ((C3061cg) this.f2473b).f30316p.set(false);
                 return;
             case 4:
-                Ev ev = (Ev) this.f2638b;
+                Ev ev = (Ev) this.f2473b;
                 ev.getClass();
-                if (((Boolean) r.f40207e.f40210c.a(AbstractC3569ma.f31988C)).booleanValue()) {
+                if (((Boolean) r.f40506e.f40509c.a(AbstractC3592ma.f32768C)).booleanValue()) {
                     ev.a(false);
                     return;
                 }
                 return;
             case 5:
-                ((Kv) this.f2638b).b(false);
+                ((Kv) this.f2473b).b(false);
                 return;
             default:
-                C3660oA c3660oA = (C3660oA) this.f2638b;
-                synchronized (c3660oA) {
-                    c3660oA.f32865c = null;
+                C3683oA c3683oA = (C3683oA) this.f2473b;
+                synchronized (c3683oA) {
+                    c3683oA.f33652c = null;
                 }
                 return;
         }
     }
 
-    public h(C3038cg c3038cg) {
-        this.f2637a = 3;
-        Objects.requireNonNull(c3038cg);
-        this.f2638b = c3038cg;
+    public h(C3061cg c3061cg) {
+        this.f2472a = 3;
+        Objects.requireNonNull(c3061cg);
+        this.f2473b = c3061cg;
     }
 
     public h(Ev ev) {
-        this.f2637a = 4;
+        this.f2472a = 4;
         Objects.requireNonNull(ev);
-        this.f2638b = ev;
+        this.f2473b = ev;
     }
 
     public h(Kv kv) {
-        this.f2637a = 5;
+        this.f2472a = 5;
         Objects.requireNonNull(kv);
-        this.f2638b = kv;
+        this.f2473b = kv;
     }
 
-    public h(C3660oA c3660oA) {
-        this.f2637a = 6;
-        Objects.requireNonNull(c3660oA);
-        this.f2638b = c3660oA;
+    public h(C3683oA c3683oA) {
+        this.f2472a = 6;
+        Objects.requireNonNull(c3683oA);
+        this.f2473b = c3683oA;
     }
 }

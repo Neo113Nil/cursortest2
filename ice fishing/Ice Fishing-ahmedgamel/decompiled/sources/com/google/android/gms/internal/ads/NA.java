@@ -4,7 +4,7 @@ package com.google.android.gms.internal.ads;
 public final class NA extends WA {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final NA f26470n = new NA();
+    public static final NA f27254n = new NA();
 
     @Override // com.google.android.gms.internal.ads.WA
     public final Object a() {
@@ -13,7 +13,7 @@ public final class NA extends WA {
 
     @Override // com.google.android.gms.internal.ads.WA
     public final WA b(UA ua) {
-        return f26470n;
+        return f27254n;
     }
 
     public final boolean equals(Object obj) {

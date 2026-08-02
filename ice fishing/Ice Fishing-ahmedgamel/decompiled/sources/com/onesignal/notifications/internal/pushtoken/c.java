@@ -2,7 +2,7 @@ package com.onesignal.notifications.internal.pushtoken;
 
 import Z5.f;
 import kotlin.jvm.internal.h;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class c implements com.onesignal.notifications.internal.pushtoken.a {
@@ -16,8 +16,8 @@ public final class c implements com.onesignal.notifications.internal.pushtoken.a
         int label;
         /* synthetic */ Object result;
 
-        public a(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public a(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -56,28 +56,28 @@ public final class c implements com.onesignal.notifications.internal.pushtoken.a
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object retrievePushToken(InterfaceC5267d interfaceC5267d) {
+    public Object retrievePushToken(InterfaceC5240d interfaceC5240d) {
         a aVar;
         int i;
         c cVar;
         int value;
         f fVar;
         f fVar2;
-        if (interfaceC5267d instanceof a) {
-            aVar = (a) interfaceC5267d;
-            int i6 = aVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                aVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof a) {
+            aVar = (a) interfaceC5240d;
+            int i4 = aVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                aVar.label = i4 - Integer.MIN_VALUE;
                 Object obj = aVar.result;
-                A7.a aVar2 = A7.a.f58n;
+                A7.a aVar2 = A7.a.f215n;
                 i = aVar.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
-                    int i9 = b.$EnumSwitchMapping$0[this._deviceService.getJetpackLibraryStatus().ordinal()];
-                    if (i9 == 1) {
+                    Q3.b.s(obj);
+                    int i6 = b.$EnumSwitchMapping$0[this._deviceService.getJetpackLibraryStatus().ordinal()];
+                    if (i6 == 1) {
                         com.onesignal.debug.internal.logging.b.info$default("Could not find the Jetpack/AndroidX. Please make sure it has been correctly added to your project.", null, 2, null);
                         this.pushTokenStatus = f.MISSING_JETPACK_LIBRARY;
-                    } else if (i9 != 2) {
+                    } else if (i6 != 2) {
                         C5.b bVar = this._pushRegistrator;
                         aVar.L$0 = this;
                         aVar.label = 1;
@@ -97,7 +97,7 @@ public final class c implements com.onesignal.notifications.internal.pushtoken.a
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 cVar = (c) aVar.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 C5.a aVar3 = (C5.a) obj;
                 value = aVar3.getStatus().getValue();
                 fVar = f.SUBSCRIBED;
@@ -114,9 +114,9 @@ public final class c implements com.onesignal.notifications.internal.pushtoken.a
                 return new d(cVar.pushToken, cVar.pushTokenStatus);
             }
         }
-        aVar = new a(interfaceC5267d);
+        aVar = new a(interfaceC5240d);
         Object obj2 = aVar.result;
-        A7.a aVar22 = A7.a.f58n;
+        A7.a aVar22 = A7.a.f215n;
         i = aVar.label;
         if (i != 0) {
         }

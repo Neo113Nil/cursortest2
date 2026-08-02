@@ -13,22 +13,22 @@ import org.json.JSONObject;
 public class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f22413a = "reward";
+    public static final String f23200a = "reward";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f22414c = "RewardSettingManager";
+    private static final String f23201c = "RewardSettingManager";
 
     /* renamed from: e, reason: collision with root package name */
-    private static Map<String, d> f22415e = new HashMap(3);
+    private static Map<String, d> f23202e = new HashMap(3);
 
     /* renamed from: f, reason: collision with root package name */
-    private static volatile c f22416f;
+    private static volatile c f23203f;
 
     /* renamed from: b, reason: collision with root package name */
-    public a f22417b;
+    public a f23204b;
 
     /* renamed from: d, reason: collision with root package name */
-    private Object f22418d = new Object();
+    private Object f23205d = new Object();
 
     /* renamed from: com.anythink.expressad.videocommon.e.c$1, reason: invalid class name */
     public class AnonymousClass1 implements i.d {
@@ -45,30 +45,30 @@ public class c {
     }
 
     private c() {
-        this.f22417b = null;
-        this.f22417b = c();
+        this.f23204b = null;
+        this.f23204b = c();
     }
 
     public static c a() {
-        if (f22416f == null) {
+        if (f23203f == null) {
             synchronized (c.class) {
                 try {
-                    if (f22416f == null) {
-                        f22416f = new c();
+                    if (f23203f == null) {
+                        f23203f = new c();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f22416f;
+        return f23203f;
     }
 
     public static a c() {
         a aVar = new a();
         HashMap hashMap = new HashMap(5);
         hashMap.put("1", 1000);
-        hashMap.put(b.f22396j, 1000);
+        hashMap.put(b.f23183j, 1000);
         hashMap.put("8", 1000);
         HashMap hashMap2 = new HashMap(3);
         hashMap2.put("1", new com.anythink.expressad.videocommon.c.c("Virtual Item", 1));
@@ -83,7 +83,7 @@ public class c {
     }
 
     public final a b() {
-        a aVar = this.f22417b;
+        a aVar = this.f23204b;
         return aVar == null ? c() : aVar;
     }
 
@@ -106,14 +106,14 @@ public class c {
     }
 
     public final d a(String str, String str2) {
-        synchronized (this.f22418d) {
+        synchronized (this.f23205d) {
             try {
                 String str3 = "reward_" + str + "_" + str2;
-                if (f22415e.containsKey(str3)) {
-                    return f22415e.get(str3);
+                if (f23202e.containsKey(str3)) {
+                    return f23202e.get(str3);
                 }
                 d c9 = d.c(com.anythink.expressad.foundation.a.a.a.a().a(str3));
-                f22415e.put(str3, c9);
+                f23202e.put(str3, c9);
                 return c9;
             } catch (Throwable th) {
                 throw th;
@@ -121,15 +121,15 @@ public class c {
         }
     }
 
-    public final d a(String str, String str2, boolean z3) {
+    public final d a(String str, String str2, boolean z6) {
         d dVar;
-        synchronized (this.f22418d) {
+        synchronized (this.f23205d) {
             try {
                 String str3 = "reward_" + str + "_" + str2;
-                dVar = f22415e.get(str3);
+                dVar = f23202e.get(str3);
                 if (dVar == null) {
-                    dVar = a(z3);
-                    f22415e.put(str3, dVar);
+                    dVar = a(z6);
+                    f23202e.put(str3, dVar);
                 }
             } catch (Throwable th) {
                 throw th;
@@ -138,11 +138,11 @@ public class c {
         return dVar;
     }
 
-    public final void a(String str, boolean z3) {
+    public final void a(String str, boolean z6) {
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        String J = a().a(com.anythink.expressad.foundation.b.a.c().f(), str, z3) != null ? d.J() : "";
+        String J = a().a(com.anythink.expressad.foundation.b.a.c().f(), str, z6) != null ? d.J() : "";
         if (TextUtils.isEmpty(J) || !TextUtils.isEmpty(i.a().b(J)) || TextUtils.isEmpty(J)) {
             return;
         }
@@ -156,7 +156,7 @@ public class c {
         i.a().b(str, (i.a) new AnonymousClass1());
     }
 
-    private static d a(boolean z3) {
+    private static d a(boolean z6) {
         d dVar = new d();
         try {
             ArrayList arrayList = new ArrayList();
@@ -176,7 +176,7 @@ public class c {
             dVar.i();
             dVar.T();
             dVar.g();
-            if (z3) {
+            if (z6) {
                 dVar.a(5);
             } else {
                 dVar.a(-1);

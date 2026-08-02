@@ -10,22 +10,22 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.GridView;
 import android.widget.ListAdapter;
-import com.icefishingapp.icefishing.C5275R;
+import com.IceFishing.LiveIceFishing.C5248R;
 
 /* loaded from: classes2.dex */
 final class MaterialCalendarGridView extends GridView {
 
     /* renamed from: n, reason: collision with root package name */
-    public final boolean f35932n;
+    public final boolean f36700n;
 
     public MaterialCalendarGridView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet, 0);
         v.c(null);
         if (l.G(getContext(), R.attr.windowFullscreen)) {
-            setNextFocusLeftId(C5275R.id.cancel_button);
-            setNextFocusRightId(C5275R.id.confirm_button);
+            setNextFocusLeftId(C5248R.id.cancel_button);
+            setNextFocusRightId(C5248R.id.confirm_button);
         }
-        this.f35932n = l.G(getContext(), C5275R.attr.nestedScrollable);
+        this.f36700n = l.G(getContext(), C5248R.attr.nestedScrollable);
         X.o(this, new U.h(4));
     }
 
@@ -57,8 +57,8 @@ final class MaterialCalendarGridView extends GridView {
     }
 
     @Override // android.widget.GridView, android.widget.AbsListView, android.view.View
-    public final void onFocusChanged(boolean z3, int i, Rect rect) {
-        if (!z3) {
+    public final void onFocusChanged(boolean z6, int i, Rect rect) {
+        if (!z6) {
             super.onFocusChanged(false, i, rect);
             return;
         }
@@ -87,9 +87,9 @@ final class MaterialCalendarGridView extends GridView {
     }
 
     @Override // android.widget.GridView, android.widget.AbsListView, android.view.View
-    public final void onMeasure(int i, int i6) {
-        if (!this.f35932n) {
-            super.onMeasure(i, i6);
+    public final void onMeasure(int i, int i4) {
+        if (!this.f36700n) {
+            super.onMeasure(i, i4);
             return;
         }
         super.onMeasure(i, View.MeasureSpec.makeMeasureSpec(16777215, Integer.MIN_VALUE));

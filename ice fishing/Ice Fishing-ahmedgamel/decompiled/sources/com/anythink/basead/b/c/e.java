@@ -8,13 +8,13 @@ import java.util.concurrent.CopyOnWriteArrayList;
 class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f5950a = "e";
+    public static final String f6736a = "e";
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile e f5951b;
+    private static volatile e f6737b;
 
     /* renamed from: c, reason: collision with root package name */
-    private List<a> f5952c = new CopyOnWriteArrayList();
+    private List<a> f6738c = new CopyOnWriteArrayList();
 
     public interface a {
         void a(String str, int i);
@@ -26,45 +26,45 @@ class e {
     }
 
     public static e a() {
-        if (f5951b == null) {
+        if (f6737b == null) {
             synchronized (e.class) {
                 try {
-                    if (f5951b == null) {
-                        f5951b = new e();
+                    if (f6737b == null) {
+                        f6737b = new e();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f5951b;
+        return f6737b;
     }
 
     public final synchronized void b(a aVar) {
         try {
-            int size = this.f5952c.size();
+            int size = this.f6738c.size();
             int i = 0;
             while (true) {
                 if (i >= size) {
                     i = -1;
                     break;
-                } else if (aVar != this.f5952c.get(i)) {
+                } else if (aVar != this.f6738c.get(i)) {
                     i++;
                 }
             }
             if (i != -1) {
-                this.f5952c.remove(i);
+                this.f6738c.remove(i);
             }
         } finally {
         }
     }
 
     public final synchronized void a(a aVar) {
-        this.f5952c.add(aVar);
+        this.f6738c.add(aVar);
     }
 
     public final void a(String str, int i) {
-        List<a> list = this.f5952c;
+        List<a> list = this.f6738c;
         if (list != null) {
             Iterator<a> it = list.iterator();
             while (it.hasNext()) {
@@ -74,7 +74,7 @@ class e {
     }
 
     public final void a(String str, com.anythink.basead.d.f fVar) {
-        List<a> list = this.f5952c;
+        List<a> list = this.f6738c;
         if (list != null) {
             Iterator<a> it = list.iterator();
             while (it.hasNext()) {

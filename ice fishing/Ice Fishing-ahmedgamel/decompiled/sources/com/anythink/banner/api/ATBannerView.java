@@ -116,7 +116,7 @@ public class ATBannerView extends FrameLayout implements c {
             }
 
             @Override // com.anythink.banner.a.d
-            public void onBannerShow(final CustomBannerAdapter customBannerAdapter, final boolean z3) {
+            public void onBannerShow(final CustomBannerAdapter customBannerAdapter, final boolean z6) {
                 t.b().b(new Runnable() { // from class: com.anythink.banner.api.ATBannerView.1.2
                     @Override // java.lang.Runnable
                     public final void run() {
@@ -125,7 +125,7 @@ public class ATBannerView extends FrameLayout implements c {
                             ATBannerView.this.mRevenueListener.onAdRevenuePaid(a9);
                         }
                         if (ATBannerView.this.mListener != null) {
-                            if (customBannerAdapter == null || !z3) {
+                            if (customBannerAdapter == null || !z6) {
                                 ATBannerView.this.mListener.onBannerShow(a9);
                             } else {
                                 ATBannerView.this.mListener.onBannerAutoRefreshed(a9);
@@ -136,14 +136,14 @@ public class ATBannerView extends FrameLayout implements c {
             }
 
             @Override // com.anythink.banner.a.d
-            public void onDeeplinkCallback(final CustomBannerAdapter customBannerAdapter, final boolean z3) {
+            public void onDeeplinkCallback(final CustomBannerAdapter customBannerAdapter, final boolean z6) {
                 t.b().b(new Runnable() { // from class: com.anythink.banner.api.ATBannerView.1.4
                     @Override // java.lang.Runnable
                     public final void run() {
                         if (ATBannerView.this.mListener == null || !(ATBannerView.this.mListener instanceof ATBannerExListener)) {
                             return;
                         }
-                        ((ATBannerExListener) ATBannerView.this.mListener).onDeeplinkCallback(ATBannerView.this.mIsRefresh, l.a(customBannerAdapter), z3);
+                        ((ATBannerExListener) ATBannerView.this.mListener).onDeeplinkCallback(ATBannerView.this.mIsRefresh, l.a(customBannerAdapter), z6);
                     }
                 });
             }
@@ -263,19 +263,19 @@ public class ATBannerView extends FrameLayout implements c {
         if (a9 == null) {
             return false;
         }
-        int h9 = a9.h();
-        return -1 == h9 || 1 == h9;
+        int h3 = a9.h();
+        return -1 == h3 || 1 == h3;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void notifyBannerImpression(final Context context, final ATBaseAdAdapter aTBaseAdAdapter, final boolean z3) {
+    public void notifyBannerImpression(final Context context, final ATBaseAdAdapter aTBaseAdAdapter, final boolean z6) {
         final com.anythink.core.common.h.n trackingInfo = aTBaseAdAdapter.getTrackingInfo();
         b.a().b(new Runnable() { // from class: com.anythink.banner.api.ATBannerView.7
             @Override // java.lang.Runnable
             public void run() {
                 com.anythink.core.common.v.c.a().a(aTBaseAdAdapter);
                 trackingInfo.a(aTBaseAdAdapter.getInternalNetworkInfoMap());
-                ab.a(trackingInfo, j.r.f12531c, j.r.f12540m, "");
+                ab.a(trackingInfo, j.r.f13317c, j.r.f13326m, "");
                 com.anythink.core.common.u.c.a(context).a(4, trackingInfo, aTBaseAdAdapter.getUnitGroupInfo());
                 t.b().b(new Runnable() { // from class: com.anythink.banner.api.ATBannerView.7.1
                     @Override // java.lang.Runnable
@@ -283,13 +283,13 @@ public class ATBannerView extends FrameLayout implements c {
                         if (ATBannerView.this.mListener != null) {
                             l a9 = l.a(aTBaseAdAdapter);
                             if (a9 != null && a9.getNetworkFirmId() == -1) {
-                                h.a(j.n.f12507c, aTBaseAdAdapter, null);
+                                h.a(j.n.f13293c, aTBaseAdAdapter, null);
                             }
                             if (ATBannerView.this.mRevenueListener != null) {
                                 ATBannerView.this.mRevenueListener.onAdRevenuePaid(a9);
                             }
                             AnonymousClass7 anonymousClass7 = AnonymousClass7.this;
-                            if (z3) {
+                            if (z6) {
                                 ATBannerView.this.mListener.onBannerAutoRefreshed(a9);
                             } else {
                                 ATBannerView.this.mListener.onBannerShow(a9);
@@ -302,7 +302,7 @@ public class ATBannerView extends FrameLayout implements c {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void notifyBannerShow(final Context context, final com.anythink.core.common.h.c cVar, final boolean z3) {
+    public void notifyBannerShow(final Context context, final com.anythink.core.common.h.c cVar, final boolean z6) {
         final ATBaseAdAdapter e9 = cVar.e();
         final com.anythink.core.common.h.n trackingInfo = e9.getTrackingInfo();
         final long currentTimeMillis = System.currentTimeMillis();
@@ -316,13 +316,13 @@ public class ATBannerView extends FrameLayout implements c {
                     if (e9.supportImpressionCallback()) {
                         return;
                     }
-                    ATBannerView.this.notifyBannerImpression(context, e9, z3);
+                    ATBannerView.this.notifyBannerImpression(context, e9, z6);
                 }
             }
         }, 2);
     }
 
-    private void registerDelayShow(View view, final Context context, final com.anythink.core.common.h.c cVar, CustomBannerAdapter customBannerAdapter, final boolean z3) {
+    private void registerDelayShow(View view, final Context context, final com.anythink.core.common.h.c cVar, CustomBannerAdapter customBannerAdapter, final boolean z6) {
         if (view == null) {
             view = this;
         }
@@ -341,7 +341,7 @@ public class ATBannerView extends FrameLayout implements c {
 
                 @Override // com.anythink.core.common.v.a.a, com.anythink.core.common.v.a.b
                 public final void recordImpression(View view2) {
-                    ATBannerView.this.notifyBannerShow(context, cVar, z3);
+                    ATBannerView.this.notifyBannerShow(context, cVar, z6);
                 }
             });
         }
@@ -349,19 +349,19 @@ public class ATBannerView extends FrameLayout implements c {
 
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Multi-variable type inference failed */
-    public void renderBannerView(com.anythink.core.common.h.c cVar, boolean z3) {
-        boolean z6;
+    public void renderBannerView(com.anythink.core.common.h.c cVar, boolean z6) {
+        boolean z9;
         ATBannerView aTBannerView;
         ATBannerView aTBannerView2;
         CustomBannerAdapter customBannerAdapter = (cVar == null || !(cVar.e() instanceof CustomBannerAdapter)) ? null : (CustomBannerAdapter) cVar.e();
         CustomBannerAdapter customBannerAdapter2 = this.mCustomBannerAd;
         if (customBannerAdapter2 == null || customBannerAdapter2.getUnitGroupInfo() == null) {
-            z6 = false;
+            z9 = false;
         } else {
-            z6 = customBannerAdapter2.getUnitGroupInfo().g() == 11;
+            z9 = customBannerAdapter2.getUnitGroupInfo().g() == 11;
         }
         if (customBannerAdapter != null) {
-            if (customBannerAdapter2 != null && !z6) {
+            if (customBannerAdapter2 != null && !z9) {
                 customBannerAdapter2.internalDestory();
             }
             com.anythink.core.common.l.e.a.c cVar2 = this.mLastShowBannerView;
@@ -370,7 +370,7 @@ public class ATBannerView extends FrameLayout implements c {
                 this.mLastShowBannerView = null;
             }
             final com.anythink.core.common.h.c cVar3 = cVar;
-            View a9 = this.mAdLoadManager.a(getContext(), cVar3, customBannerAdapter, new com.anythink.banner.a.b(this.mInnerBannerListener, customBannerAdapter, z3), this.nativeAdCustomRender);
+            View a9 = this.mAdLoadManager.a(getContext(), cVar3, customBannerAdapter, new com.anythink.banner.a.b(this.mInnerBannerListener, customBannerAdapter, z6), this.nativeAdCustomRender);
             if (a9 instanceof com.anythink.core.common.l.e.a.c) {
                 this.mLastShowBannerView = (com.anythink.core.common.l.e.a.c) a9;
             }
@@ -386,7 +386,7 @@ public class ATBannerView extends FrameLayout implements c {
             }, 2);
             if (a9 != 0) {
                 com.anythink.core.common.h.n trackingInfo = this.mCustomBannerAd.getTrackingInfo();
-                trackingInfo.f14011F = this.mScenario;
+                trackingInfo.f14797F = this.mScenario;
                 trackingInfo.z(this.mShowCustomExt);
                 aj.a(this.mTKExtraMap, trackingInfo);
                 aj.a(this.mPlacementId, trackingInfo);
@@ -397,11 +397,11 @@ public class ATBannerView extends FrameLayout implements c {
                 }
                 if (isInView()) {
                     aTBannerView2 = this;
-                    notifyBannerShow(getContext().getApplicationContext(), cVar3, z3);
+                    notifyBannerShow(getContext().getApplicationContext(), cVar3, z6);
                 } else {
                     ATBannerView aTBannerView3 = this;
                     CustomBannerAdapter customBannerAdapter3 = customBannerAdapter;
-                    aTBannerView3.registerDelayShow(a9, getContext().getApplicationContext(), cVar3, customBannerAdapter3, z3);
+                    aTBannerView3.registerDelayShow(a9, getContext().getApplicationContext(), cVar3, customBannerAdapter3, z6);
                     cVar3 = cVar3;
                     customBannerAdapter = customBannerAdapter3;
                     aTBannerView2 = aTBannerView3;
@@ -415,8 +415,8 @@ public class ATBannerView extends FrameLayout implements c {
                 if (i == 0) {
                     i = -2;
                 }
-                int i6 = a9.getLayoutParams() != null ? a9.getLayoutParams().height : 0;
-                FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(i, i6 > 0 ? i6 : -2);
+                int i4 = a9.getLayoutParams() != null ? a9.getLayoutParams().height : 0;
+                FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(i, i4 > 0 ? i4 : -2);
                 layoutParams.gravity = 17;
                 a9.setLayoutParams(layoutParams);
                 if (a9.getParent() instanceof ViewGroup) {
@@ -432,7 +432,7 @@ public class ATBannerView extends FrameLayout implements c {
             aTBannerView.mAdLoadManager.a(cVar3);
             aTBannerView.mBannerRefreshTimer.a(aTBannerView.mCustomBannerAd);
             aTBannerView.mBannerRefreshTimer.b();
-            if (customBannerAdapter2 != null && z6) {
+            if (customBannerAdapter2 != null && z9) {
                 customBannerAdapter2.internalDestory();
             }
             if (isRefreshOpen() && isShowToReload()) {
@@ -452,7 +452,7 @@ public class ATBannerView extends FrameLayout implements c {
             return new ATAdStatusInfo(false, false, null);
         }
         ATAdStatusInfo a9 = aVar.a(getContext(), this.mTKExtraMap);
-        ab.b(this.mPlacementId, j.r.f12543p, j.r.f12525C, a9.toString(), "");
+        ab.b(this.mPlacementId, j.r.f13329p, j.r.f13311C, a9.toString(), "");
         return a9;
     }
 
@@ -468,7 +468,7 @@ public class ATBannerView extends FrameLayout implements c {
         if (this.mAdLoadManager == null) {
             return;
         }
-        final boolean z3 = this.mIsRefresh;
+        final boolean z6 = this.mIsRefresh;
         b.a().b(new Runnable() { // from class: com.anythink.banner.api.ATBannerView.5
             @Override // java.lang.Runnable
             public void run() {
@@ -479,7 +479,7 @@ public class ATBannerView extends FrameLayout implements c {
                             return;
                         }
                         final com.anythink.core.common.h.c bannerCache = ATBannerView.this.getBannerCache();
-                        boolean z6 = false;
+                        boolean z9 = false;
                         if (bannerCache != null) {
                             if (ATBannerView.this.isInView()) {
                                 bannerCache.a(bannerCache.c() + 1);
@@ -488,13 +488,13 @@ public class ATBannerView extends FrameLayout implements c {
                                     @Override // java.lang.Runnable
                                     public final void run() {
                                         AnonymousClass5 anonymousClass5 = AnonymousClass5.this;
-                                        ATBannerView.this.renderBannerView(bannerCache, z3);
+                                        ATBannerView.this.renderBannerView(bannerCache, z6);
                                     }
                                 });
                             } else {
                                 ATBannerView aTBannerView = ATBannerView.this;
                                 if (aTBannerView.hasTouchWindow && aTBannerView.isShown()) {
-                                    z6 = true;
+                                    z9 = true;
                                 }
                                 String unused2 = ATBannerView.this.TAG;
                             }
@@ -503,10 +503,10 @@ public class ATBannerView extends FrameLayout implements c {
                             aTBannerView2.loadAd(1, aTBannerView2.mAdRequest);
                             ATBannerView aTBannerView3 = ATBannerView.this;
                             if (aTBannerView3.hasTouchWindow && aTBannerView3.isShown()) {
-                                z6 = true;
+                                z9 = true;
                             }
                         }
-                        if (z6 && ATBannerView.this.mBannerRefreshTimer != null) {
+                        if (z9 && ATBannerView.this.mBannerRefreshTimer != null) {
                             ATBannerView.this.mBannerRefreshTimer.b();
                         }
                     } catch (Throwable th) {
@@ -566,9 +566,9 @@ public class ATBannerView extends FrameLayout implements c {
     }
 
     @Override // android.view.View
-    public void onWindowFocusChanged(boolean z3) {
-        super.onWindowFocusChanged(z3);
-        if (z3) {
+    public void onWindowFocusChanged(boolean z6) {
+        super.onWindowFocusChanged(z6);
+        if (z6) {
             controlShow();
         }
     }
@@ -672,7 +672,7 @@ public class ATBannerView extends FrameLayout implements c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void loadAd(int i, ATAdRequest aTAdRequest) {
-        ab.a(this.mPlacementId, j.r.f12543p, j.r.f12552y, j.r.f12542o, "", true);
+        ab.a(this.mPlacementId, j.r.f13329p, j.r.f13338y, j.r.f13328o, "", true);
         if (this.adxBidFloorInfo != null) {
             if (aTAdRequest == null) {
                 aTAdRequest = new ATAdRequest.Builder().setATAdxBidFloorInfo(this.adxBidFloorInfo).build();
@@ -733,7 +733,7 @@ public class ATBannerView extends FrameLayout implements c {
             }
 
             @Override // com.anythink.banner.a.d
-            public void onBannerShow(final CustomBannerAdapter customBannerAdapter, final boolean z3) {
+            public void onBannerShow(final CustomBannerAdapter customBannerAdapter, final boolean z6) {
                 t.b().b(new Runnable() { // from class: com.anythink.banner.api.ATBannerView.1.2
                     @Override // java.lang.Runnable
                     public final void run() {
@@ -742,7 +742,7 @@ public class ATBannerView extends FrameLayout implements c {
                             ATBannerView.this.mRevenueListener.onAdRevenuePaid(a9);
                         }
                         if (ATBannerView.this.mListener != null) {
-                            if (customBannerAdapter == null || !z3) {
+                            if (customBannerAdapter == null || !z6) {
                                 ATBannerView.this.mListener.onBannerShow(a9);
                             } else {
                                 ATBannerView.this.mListener.onBannerAutoRefreshed(a9);
@@ -753,14 +753,14 @@ public class ATBannerView extends FrameLayout implements c {
             }
 
             @Override // com.anythink.banner.a.d
-            public void onDeeplinkCallback(final CustomBannerAdapter customBannerAdapter, final boolean z3) {
+            public void onDeeplinkCallback(final CustomBannerAdapter customBannerAdapter, final boolean z6) {
                 t.b().b(new Runnable() { // from class: com.anythink.banner.api.ATBannerView.1.4
                     @Override // java.lang.Runnable
                     public final void run() {
                         if (ATBannerView.this.mListener == null || !(ATBannerView.this.mListener instanceof ATBannerExListener)) {
                             return;
                         }
-                        ((ATBannerExListener) ATBannerView.this.mListener).onDeeplinkCallback(ATBannerView.this.mIsRefresh, l.a(customBannerAdapter), z3);
+                        ((ATBannerExListener) ATBannerView.this.mListener).onDeeplinkCallback(ATBannerView.this.mIsRefresh, l.a(customBannerAdapter), z6);
                     }
                 });
             }
@@ -874,7 +874,7 @@ public class ATBannerView extends FrameLayout implements c {
             }
 
             @Override // com.anythink.banner.a.d
-            public void onBannerShow(final CustomBannerAdapter customBannerAdapter, final boolean z3) {
+            public void onBannerShow(final CustomBannerAdapter customBannerAdapter, final boolean z6) {
                 t.b().b(new Runnable() { // from class: com.anythink.banner.api.ATBannerView.1.2
                     @Override // java.lang.Runnable
                     public final void run() {
@@ -883,7 +883,7 @@ public class ATBannerView extends FrameLayout implements c {
                             ATBannerView.this.mRevenueListener.onAdRevenuePaid(a9);
                         }
                         if (ATBannerView.this.mListener != null) {
-                            if (customBannerAdapter == null || !z3) {
+                            if (customBannerAdapter == null || !z6) {
                                 ATBannerView.this.mListener.onBannerShow(a9);
                             } else {
                                 ATBannerView.this.mListener.onBannerAutoRefreshed(a9);
@@ -894,14 +894,14 @@ public class ATBannerView extends FrameLayout implements c {
             }
 
             @Override // com.anythink.banner.a.d
-            public void onDeeplinkCallback(final CustomBannerAdapter customBannerAdapter, final boolean z3) {
+            public void onDeeplinkCallback(final CustomBannerAdapter customBannerAdapter, final boolean z6) {
                 t.b().b(new Runnable() { // from class: com.anythink.banner.api.ATBannerView.1.4
                     @Override // java.lang.Runnable
                     public final void run() {
                         if (ATBannerView.this.mListener == null || !(ATBannerView.this.mListener instanceof ATBannerExListener)) {
                             return;
                         }
-                        ((ATBannerExListener) ATBannerView.this.mListener).onDeeplinkCallback(ATBannerView.this.mIsRefresh, l.a(customBannerAdapter), z3);
+                        ((ATBannerExListener) ATBannerView.this.mListener).onDeeplinkCallback(ATBannerView.this.mIsRefresh, l.a(customBannerAdapter), z6);
                     }
                 });
             }

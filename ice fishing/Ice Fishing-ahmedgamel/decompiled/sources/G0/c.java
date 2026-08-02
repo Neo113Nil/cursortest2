@@ -1,14 +1,14 @@
 package G0;
 
-import L3.r;
-import L3.x;
-import L3.y;
+import N3.C;
+import N3.o;
+import N3.u;
+import N3.v;
 import O.E0;
 import O.X;
-import O2.C0369t;
-import O2.D;
-import O2.O;
-import O2.T;
+import Q2.C0373s;
+import Q2.N;
+import Q2.S;
 import android.app.Activity;
 import android.app.NotificationManager;
 import android.content.Context;
@@ -26,13 +26,15 @@ import android.widget.ListView;
 import androidx.appcompat.widget.SearchView$SearchAutoComplete;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.AbstractComponentCallbacksC0475s;
-import androidx.fragment.app.DialogInterfaceOnCancelListenerC0471n;
-import androidx.fragment.app.N;
-import androidx.lifecycle.C;
+import androidx.fragment.app.AbstractComponentCallbacksC0479s;
+import androidx.fragment.app.DialogInterfaceOnCancelListenerC0475n;
 import androidx.viewpager.widget.ViewPager;
 import androidx.work.Worker;
-import com.bumptech.glide.p;
+import com.IceFishing.LiveIceFishing.C5248R;
+import com.IceFishing.LiveIceFishing.IntroActivity;
+import com.IceFishing.LiveIceFishing.MainActivity;
+import com.IceFishing.LiveIceFishing.p;
+import com.IceFishing.LiveIceFishing.x;
 import com.facebook.ads.MediaView;
 import com.facebook.ads.internal.api.AdNativeComponentView;
 import com.facebook.ads.internal.api.AdViewConstructorParams;
@@ -40,42 +42,41 @@ import com.facebook.ads.internal.api.MediaViewApi;
 import com.facebook.ads.internal.dynamicloading.DynamicLoaderFactory;
 import com.google.android.material.internal.CheckableImageButton;
 import com.google.android.material.textfield.TextInputLayout;
-import com.icefishingapp.icefishing.C5275R;
-import com.icefishingapp.icefishing.IntroActivity;
-import com.icefishingapp.icefishing.MainActivity;
-import com.icefishingapp.icefishing.w;
-import h.C4539G;
-import i3.C4582a;
+import h.C4543G;
+import h.C4544H;
+import h.w;
+import i1.C4585b;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Objects;
 import java.util.WeakHashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import k3.C4643a;
 import l.m;
-import m.C4706p0;
+import m.C4719p0;
 
 /* loaded from: classes.dex */
 public final class c implements Runnable {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f1030n;
+    public final /* synthetic */ int f1056n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final Object f1031u;
+    public final Object f1057u;
 
     public /* synthetic */ c(int i, Object obj) {
-        this.f1030n = i;
-        this.f1031u = obj;
+        this.f1056n = i;
+        this.f1057u = obj;
     }
 
     private final void a() {
         l8.a b9;
         long j6;
         l8.a b10;
-        l8.d dVar = (l8.d) this.f1031u;
+        l8.d dVar = (l8.d) this.f1057u;
         synchronized (dVar) {
-            dVar.f38954g++;
+            dVar.f39022g++;
             b9 = dVar.b();
         }
         if (b9 == null) {
@@ -85,13 +86,13 @@ public final class c implements Runnable {
         String name = currentThread.getName();
         while (true) {
             try {
-                currentThread.setName(b9.f38934a);
-                Logger logger = ((l8.d) this.f1031u).f38949b;
-                l8.c cVar = b9.f38936c;
+                currentThread.setName(b9.f39002a);
+                Logger logger = ((l8.d) this.f1057u).f39017b;
+                l8.c cVar = b9.f39004c;
                 kotlin.jvm.internal.h.b(cVar);
                 boolean isLoggable = logger.isLoggable(Level.FINE);
                 if (isLoggable) {
-                    F1.a aVar = cVar.f38940a.f38948a;
+                    C4543G c4543g = cVar.f39008a.f39016a;
                     j6 = System.nanoTime();
                     d6.c.a(logger, b9, cVar, "starting");
                 } else {
@@ -100,10 +101,10 @@ public final class c implements Runnable {
                 try {
                     long a9 = b9.a();
                     if (isLoggable) {
-                        F1.a aVar2 = cVar.f38940a.f38948a;
-                        d6.c.a(logger, b9, cVar, "finished run in " + d6.c.e(System.nanoTime() - j6));
+                        C4543G c4543g2 = cVar.f39008a.f39016a;
+                        d6.c.a(logger, b9, cVar, "finished run in " + d6.c.d(System.nanoTime() - j6));
                     }
-                    l8.d dVar2 = (l8.d) this.f1031u;
+                    l8.d dVar2 = (l8.d) this.f1057u;
                     synchronized (dVar2) {
                         l8.d.a(dVar2, b9, a9, true);
                         b10 = dVar2.b();
@@ -115,14 +116,14 @@ public final class c implements Runnable {
                     }
                 } catch (Throwable th) {
                     if (isLoggable) {
-                        F1.a aVar3 = cVar.f38940a.f38948a;
-                        d6.c.a(logger, b9, cVar, "failed a run in " + d6.c.e(System.nanoTime() - j6));
+                        C4543G c4543g3 = cVar.f39008a.f39016a;
+                        d6.c.a(logger, b9, cVar, "failed a run in " + d6.c.d(System.nanoTime() - j6));
                     }
                     throw th;
                 }
             } catch (Throwable th2) {
                 try {
-                    l8.d dVar3 = (l8.d) this.f1031u;
+                    l8.d dVar3 = (l8.d) this.f1057u;
                     synchronized (dVar3) {
                         l8.d.a(dVar3, b9, -1L, false);
                         if (!(th2 instanceof InterruptedException)) {
@@ -152,39 +153,39 @@ public final class c implements Runnable {
         MediaViewApi mediaViewApi;
         MediaViewApi mediaViewApi2;
         AdViewConstructorParams adViewConstructorParams2;
-        switch (this.f1030n) {
+        switch (this.f1056n) {
             case 0:
-                ViewPager viewPager = (ViewPager) this.f1031u;
+                ViewPager viewPager = (ViewPager) this.f1057u;
                 viewPager.setScrollState(0);
                 viewPager.p();
                 return;
             case 1:
-                CheckableImageButton checkableImageButton = ((TextInputLayout) this.f1031u).f36131v.f1170z;
+                Worker worker = (Worker) this.f1057u;
+                try {
+                    worker.f5321n.j(worker.doWork());
+                    return;
+                } catch (Throwable th) {
+                    worker.f5321n.k(th);
+                    return;
+                }
+            case 2:
+                CheckableImageButton checkableImageButton = ((TextInputLayout) this.f1057u).f36898v.f1526z;
                 checkableImageButton.performClick();
                 checkableImageButton.jumpDrawablesToCurrentState();
                 return;
-            case 2:
-                Worker worker = (Worker) this.f1031u;
-                try {
-                    worker.f5356n.j(worker.doWork());
-                    return;
-                } catch (Throwable th) {
-                    worker.f5356n.k(th);
-                    return;
-                }
             case 3:
-                if (((j3.h) this.f1031u).c(new IOException("TIMEOUT"))) {
+                if (((l3.h) this.f1057u).c(new IOException("TIMEOUT"))) {
                     Log.w("Rpc", "No response");
                     return;
                 }
                 return;
             case 4:
-                Z2.e eVar = (Z2.e) this.f1031u;
-                View view = (View) eVar.f4172w;
+                b3.e eVar = (b3.e) this.f1057u;
+                View view = (View) eVar.f5559w;
                 if (view == null) {
                     return;
                 }
-                Activity activity = (Activity) eVar.f4170u;
+                Activity activity = (Activity) eVar.f5557u;
                 if (activity.isInPictureInPictureMode()) {
                     eVar.L();
                     return;
@@ -192,13 +193,13 @@ public final class c implements Runnable {
                 try {
                     WindowManager.LayoutParams layoutParams = (WindowManager.LayoutParams) view.getLayoutParams();
                     if (layoutParams != null) {
-                        layoutParams.height = Math.min(activity.getResources().getDimensionPixelSize(C5275R.dimen.sdk_hsdp_loading_ui_height), (int) (d6.c.t(activity) * 0.6f));
+                        layoutParams.height = Math.min(activity.getResources().getDimensionPixelSize(C5248R.dimen.sdk_hsdp_loading_ui_height), (int) (C.W(activity) * 0.6f));
                         if (activity.getResources().getConfiguration().screenWidthDp > 640) {
-                            layoutParams.width = d6.c.s(activity, 640);
+                            layoutParams.width = C.T(activity, 640);
                         } else {
                             layoutParams.width = -1;
                         }
-                        ((WindowManager) eVar.f4171v).updateViewLayout(view, layoutParams);
+                        ((WindowManager) eVar.f5558v).updateViewLayout(view, layoutParams);
                         Log.i("HsdpLoadingPanel", "updateLoadingView: updated window size.");
                         return;
                     }
@@ -208,34 +209,34 @@ public final class c implements Runnable {
                     return;
                 }
             case 5:
-                y yVar = ((x) this.f1031u).f1741n;
-                if (yVar.f1751k != null) {
+                v vVar = ((u) this.f1057u).f2013n;
+                if (vVar.f2023k != null) {
                     if (Log.isLoggable("ServiceConnMgrImpl", 4)) {
                         Log.i("ServiceConnMgrImpl", "unlinkToDeath");
                     }
-                    IInterface iInterface = yVar.f1751k;
+                    IInterface iInterface = vVar.f2023k;
                     iInterface.getClass();
-                    iInterface.asBinder().unlinkToDeath(yVar.i, 0);
-                    yVar.f1751k = null;
+                    iInterface.asBinder().unlinkToDeath(vVar.i, 0);
+                    vVar.f2023k = null;
                     Log.i("ServiceConnMgrImpl", "notifyOnDisconnected in onServiceDisconnected()");
-                    yVar.b();
+                    vVar.b();
                 }
-                yVar.f1747f = false;
+                vVar.f2019f = false;
                 return;
             case 6:
-                Iterator it = ((L3.g) this.f1031u).f1694c.values().iterator();
+                Iterator it = ((N3.g) this.f1057u).f1973c.values().iterator();
                 while (it.hasNext()) {
-                    ((r) it.next()).a(4);
+                    ((o) it.next()).a(4);
                     it.remove();
                 }
                 Log.d("HsdpClientImpl", "HSDP overlays: empty");
                 return;
             case 7:
-                C0369t c0369t = (C0369t) this.f1031u;
-                M2.f fVar = c0369t.f2288w;
-                Context context = c0369t.f2287v;
+                C0373s c0373s = (C0373s) this.f1057u;
+                O2.f fVar = c0373s.f2604w;
+                Context context = c0373s.f2603v;
                 fVar.getClass();
-                if (M2.h.f1845a.getAndSet(true)) {
+                if (O2.h.f2271a.getAndSet(true)) {
                     return;
                 }
                 try {
@@ -250,68 +251,128 @@ public final class c implements Runnable {
                     return;
                 }
             case 8:
-                ((D) this.f1031u).e();
+                ((Q2.C) this.f1057u).e();
                 return;
             case 9:
-                N2.c cVar = ((D) ((I0.j) this.f1031u).f1264u).f2172u;
-                cVar.d(cVar.getClass().getName().concat(" disconnecting because it was signed out."));
+                P2.c cVar = ((Q2.C) ((C4585b) this.f1057u).f38152u).f2490u;
+                cVar.b(cVar.getClass().getName().concat(" disconnecting because it was signed out."));
                 return;
             case 10:
-                ((O) this.f1031u).f2208z.b(new M2.b(4, null, null));
+                ((N) this.f1057u).f2526z.b(new O2.b(4, null, null));
                 return;
             case 11:
                 throw null;
             case 12:
-                U.g gVar = (U.g) this.f1031u;
-                if (gVar.f3117H) {
-                    boolean z3 = gVar.f3115F;
-                    U.a aVar = gVar.f3119n;
-                    if (z3) {
-                        gVar.f3115F = false;
+                U.g gVar = (U.g) this.f1057u;
+                if (gVar.f3234H) {
+                    boolean z6 = gVar.f3232F;
+                    U.a aVar = gVar.f3236n;
+                    if (z6) {
+                        gVar.f3232F = false;
                         long currentAnimationTimeMillis = AnimationUtils.currentAnimationTimeMillis();
-                        aVar.f3105e = currentAnimationTimeMillis;
-                        aVar.f3107g = -1L;
-                        aVar.f3106f = currentAnimationTimeMillis;
-                        aVar.f3108h = 0.5f;
+                        aVar.f3222e = currentAnimationTimeMillis;
+                        aVar.f3224g = -1L;
+                        aVar.f3223f = currentAnimationTimeMillis;
+                        aVar.f3225h = 0.5f;
                     }
-                    if ((aVar.f3107g > 0 && AnimationUtils.currentAnimationTimeMillis() > aVar.f3107g + aVar.i) || !gVar.f()) {
-                        gVar.f3117H = false;
+                    if ((aVar.f3224g > 0 && AnimationUtils.currentAnimationTimeMillis() > aVar.f3224g + aVar.i) || !gVar.f()) {
+                        gVar.f3234H = false;
                         return;
                     }
-                    boolean z6 = gVar.f3116G;
-                    ListView listView = gVar.f3121v;
-                    if (z6) {
-                        gVar.f3116G = false;
+                    boolean z9 = gVar.f3233G;
+                    ListView listView = gVar.f3238v;
+                    if (z9) {
+                        gVar.f3233G = false;
                         long uptimeMillis = SystemClock.uptimeMillis();
                         MotionEvent obtain = MotionEvent.obtain(uptimeMillis, uptimeMillis, 3, 0.0f, 0.0f, 0);
                         listView.onTouchEvent(obtain);
                         obtain.recycle();
                     }
-                    if (aVar.f3106f == 0) {
+                    if (aVar.f3223f == 0) {
                         throw new RuntimeException("Cannot compute scroll delta before calling start()");
                     }
                     long currentAnimationTimeMillis2 = AnimationUtils.currentAnimationTimeMillis();
                     float a9 = aVar.a(currentAnimationTimeMillis2);
-                    long j6 = currentAnimationTimeMillis2 - aVar.f3106f;
-                    aVar.f3106f = currentAnimationTimeMillis2;
-                    gVar.J.scrollListBy((int) (j6 * ((a9 * 4.0f) + ((-4.0f) * a9 * a9)) * aVar.f3104d));
-                    WeakHashMap weakHashMap = X.f2054a;
+                    long j6 = currentAnimationTimeMillis2 - aVar.f3223f;
+                    aVar.f3223f = currentAnimationTimeMillis2;
+                    gVar.J.scrollListBy((int) (j6 * ((a9 * 4.0f) + ((-4.0f) * a9 * a9)) * aVar.f3221d));
+                    WeakHashMap weakHashMap = X.f2142a;
                     listView.postOnAnimation(this);
                     return;
                 }
                 return;
             case 13:
-                ((W.e) this.f1031u).p(0);
+                ((W.e) this.f1057u).p(0);
                 return;
             case 14:
-                Z2.e eVar2 = (Z2.e) this.f1031u;
-                long j9 = Z2.e.N((Context) eVar2.f4170u).getLong("app_set_id_last_used_time", -1L);
+                a0.f fVar2 = (a0.f) this.f1057u;
+                int i = fVar2.f4221b.f3522o;
+                int i4 = fVar2.f4220a;
+                boolean z10 = i4 == 3;
+                DrawerLayout drawerLayout = fVar2.f4223d;
+                if (z10) {
+                    e9 = drawerLayout.e(3);
+                    width = (e9 != null ? -e9.getWidth() : 0) + i;
+                } else {
+                    e9 = drawerLayout.e(5);
+                    width = drawerLayout.getWidth() - i;
+                }
+                if (e9 != null) {
+                    if (((!z10 || e9.getLeft() >= width) && (z10 || e9.getLeft() <= width)) || drawerLayout.i(e9) != 0) {
+                        return;
+                    }
+                    a0.d dVar = (a0.d) e9.getLayoutParams();
+                    fVar2.f4221b.s(width, e9.getTop(), e9);
+                    dVar.f4213c = true;
+                    drawerLayout.invalidate();
+                    View e12 = drawerLayout.e(i4 == 3 ? 5 : 3);
+                    if (e12 != null) {
+                        drawerLayout.b(e12);
+                    }
+                    if (drawerLayout.f4709K) {
+                        return;
+                    }
+                    long uptimeMillis2 = SystemClock.uptimeMillis();
+                    MotionEvent obtain2 = MotionEvent.obtain(uptimeMillis2, uptimeMillis2, 3, 0.0f, 0.0f, 0);
+                    int childCount = drawerLayout.getChildCount();
+                    for (int i6 = 0; i6 < childCount; i6++) {
+                        drawerLayout.getChildAt(i6).dispatchTouchEvent(obtain2);
+                    }
+                    obtain2.recycle();
+                    drawerLayout.f4709K = true;
+                    return;
+                }
+                return;
+            case 15:
+                DialogInterfaceOnCancelListenerC0475n dialogInterfaceOnCancelListenerC0475n = (DialogInterfaceOnCancelListenerC0475n) this.f1057u;
+                dialogInterfaceOnCancelListenerC0475n.f4977v0.onDismiss(dialogInterfaceOnCancelListenerC0475n.f4971D0);
+                return;
+            case 16:
+                AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = (AbstractComponentCallbacksC0479s) this.f1057u;
+                if (abstractComponentCallbacksC0479s.f5020i0 != null) {
+                    abstractComponentCallbacksC0479s.b().getClass();
+                    return;
+                }
+                return;
+            case 17:
+                ((androidx.fragment.app.N) this.f1057u).x(true);
+                return;
+            case 18:
+                synchronized (((androidx.lifecycle.C) this.f1057u).f5058a) {
+                    obj = ((androidx.lifecycle.C) this.f1057u).f5063f;
+                    ((androidx.lifecycle.C) this.f1057u).f5063f = androidx.lifecycle.C.f5057k;
+                }
+                ((androidx.lifecycle.C) this.f1057u).e(obj);
+                return;
+            case 19:
+                b3.e eVar2 = (b3.e) this.f1057u;
+                long j9 = b3.e.N((Context) eVar2.f5557u).getLong("app_set_id_last_used_time", -1L);
                 long j10 = j9 != -1 ? j9 + 33696000000L : -1L;
                 if (j10 == -1 || System.currentTimeMillis() <= j10) {
                     return;
                 }
-                Context context2 = (Context) eVar2.f4170u;
-                if (!Z2.e.N(context2).edit().remove("app_set_id").commit()) {
+                Context context2 = (Context) eVar2.f5557u;
+                if (!b3.e.N(context2).edit().remove("app_set_id").commit()) {
                     String valueOf = String.valueOf(context2.getPackageName());
                     Log.e("AppSet", valueOf.length() != 0 ? "Failed to clear app set ID generated for App ".concat(valueOf) : new String("Failed to clear app set ID generated for App "));
                 }
@@ -321,72 +382,32 @@ public final class c implements Runnable {
                 String valueOf2 = String.valueOf(context2.getPackageName());
                 Log.e("AppSet", valueOf2.length() != 0 ? "Failed to clear app set ID last used time for App ".concat(valueOf2) : new String("Failed to clear app set ID last used time for App "));
                 return;
-            case 15:
-                a0.f fVar2 = (a0.f) this.f1031u;
-                int i = fVar2.f4244b.f3392o;
-                int i6 = fVar2.f4243a;
-                boolean z9 = i6 == 3;
-                DrawerLayout drawerLayout = fVar2.f4246d;
-                if (z9) {
-                    e9 = drawerLayout.e(3);
-                    width = (e9 != null ? -e9.getWidth() : 0) + i;
-                } else {
-                    e9 = drawerLayout.e(5);
-                    width = drawerLayout.getWidth() - i;
-                }
-                if (e9 != null) {
-                    if (((!z9 || e9.getLeft() >= width) && (z9 || e9.getLeft() <= width)) || drawerLayout.i(e9) != 0) {
-                        return;
-                    }
-                    a0.d dVar = (a0.d) e9.getLayoutParams();
-                    fVar2.f4244b.s(width, e9.getTop(), e9);
-                    dVar.f4236c = true;
-                    drawerLayout.invalidate();
-                    View e12 = drawerLayout.e(i6 == 3 ? 5 : 3);
-                    if (e12 != null) {
-                        drawerLayout.b(e12);
-                    }
-                    if (drawerLayout.f4741K) {
-                        return;
-                    }
-                    long uptimeMillis2 = SystemClock.uptimeMillis();
-                    MotionEvent obtain2 = MotionEvent.obtain(uptimeMillis2, uptimeMillis2, 3, 0.0f, 0.0f, 0);
-                    int childCount = drawerLayout.getChildCount();
-                    for (int i9 = 0; i9 < childCount; i9++) {
-                        drawerLayout.getChildAt(i9).dispatchTouchEvent(obtain2);
-                    }
-                    obtain2.recycle();
-                    drawerLayout.f4741K = true;
-                    return;
-                }
-                return;
-            case 16:
-                DialogInterfaceOnCancelListenerC0471n dialogInterfaceOnCancelListenerC0471n = (DialogInterfaceOnCancelListenerC0471n) this.f1031u;
-                dialogInterfaceOnCancelListenerC0471n.f5001A0.onDismiss(dialogInterfaceOnCancelListenerC0471n.f5008I0);
-                return;
-            case 17:
-                AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = (AbstractComponentCallbacksC0475s) this.f1031u;
-                if (abstractComponentCallbacksC0475s.f5053n0 != null) {
-                    abstractComponentCallbacksC0475s.b().getClass();
-                    return;
-                }
-                return;
-            case 18:
-                ((N) this.f1031u).x(true);
-                return;
-            case 19:
-                synchronized (((C) this.f1031u).f5091a) {
-                    obj = ((C) this.f1031u).f5096f;
-                    ((C) this.f1031u).f5096f = C.f5090k;
-                }
-                ((C) this.f1031u).e(obj);
-                return;
             case 20:
-                p pVar = (p) this.f1031u;
-                pVar.f23493v.c(pVar);
+                int i9 = Build.VERSION.SDK_INT;
+                IntroActivity introActivity = ((p) this.f1057u).f6418a;
+                E0 h3 = i9 >= 30 ? X.h(introActivity.getWindow().getDecorView()) : new E0(introActivity.getWindow(), null);
+                Objects.requireNonNull(h3);
+                h3.f2127a.d();
                 return;
             case 21:
-                MediaView mediaView = (MediaView) this.f1031u;
+                x xVar = (x) this.f1057u;
+                xVar.f6435n.f6338U = r2.f6324N.getCurrentItem() + 1;
+                MainActivity mainActivity = xVar.f6435n;
+                double d9 = mainActivity.f6338U;
+                if (d9 <= 5.0d) {
+                    mainActivity.f6324N.setCurrentItem((int) d9);
+                    return;
+                } else {
+                    mainActivity.f6338U = 0.0d;
+                    mainActivity.f6324N.setCurrentItem((int) 0.0d);
+                    return;
+                }
+            case 22:
+                com.bumptech.glide.p pVar = (com.bumptech.glide.p) this.f1057u;
+                pVar.f24278v.h(pVar);
+                return;
+            case 23:
+                MediaView mediaView = (MediaView) this.f1057u;
                 mediaView.removeAllViews();
                 ((AdNativeComponentView) mediaView).mAdComponentViewApi = null;
                 adViewConstructorParams = mediaView.mConstructorParams;
@@ -397,38 +418,18 @@ public final class c implements Runnable {
                 adViewConstructorParams2 = mediaView.mConstructorParams;
                 mediaViewApi2.initialize(adViewConstructorParams2, mediaView);
                 return;
-            case 22:
-                int i10 = Build.VERSION.SDK_INT;
-                IntroActivity introActivity = ((com.icefishingapp.icefishing.p) this.f1031u).f36929a;
-                E0 h9 = i10 >= 30 ? X.h(introActivity.getWindow().getDecorView()) : new E0(introActivity.getWindow(), null);
-                Objects.requireNonNull(h9);
-                h9.f2039a.j();
-                return;
-            case 23:
-                w wVar = (w) this.f1031u;
-                wVar.f36944n.f36848U = r2.f36834N.getCurrentItem() + 1;
-                MainActivity mainActivity = wVar.f36944n;
-                double d2 = mainActivity.f36848U;
-                if (d2 <= 5.0d) {
-                    mainActivity.f36834N.setCurrentItem((int) d2);
-                    return;
-                } else {
-                    mainActivity.f36848U = 0.0d;
-                    mainActivity.f36834N.setCurrentItem((int) 0.0d);
-                    return;
-                }
             case 24:
-                C4539G c4539g = (C4539G) this.f1031u;
-                h.w wVar2 = c4539g.f37819b;
-                Menu t6 = c4539g.t();
+                C4544H c4544h = (C4544H) this.f1057u;
+                w wVar = c4544h.f37845b;
+                Menu t6 = c4544h.t();
                 m mVar = t6 instanceof m ? (m) t6 : null;
                 if (mVar != null) {
                     mVar.w();
                 }
                 try {
                     t6.clear();
-                    if (wVar2.onCreatePanelMenu(0, t6)) {
-                        if (!wVar2.onPreparePanel(0, null, t6)) {
+                    if (wVar.onCreatePanelMenu(0, t6)) {
+                        if (!wVar.onPreparePanel(0, null, t6)) {
                         }
                         if (mVar == null) {
                             mVar.v();
@@ -446,15 +447,15 @@ public final class c implements Runnable {
                     throw th2;
                 }
             case 25:
-                C4582a c4582a = (C4582a) this.f1031u;
-                synchronized (c4582a.f38046a) {
+                C4643a c4643a = (C4643a) this.f1057u;
+                synchronized (c4643a.f38583a) {
                     try {
-                        if (c4582a.b()) {
-                            Log.e("WakeLock", String.valueOf(c4582a.f38054j).concat(" ** IS FORCE-RELEASED ON TIMEOUT **"));
-                            c4582a.d();
-                            if (c4582a.b()) {
-                                c4582a.f38048c = 1;
-                                c4582a.e();
+                        if (c4643a.b()) {
+                            Log.e("WakeLock", String.valueOf(c4643a.f38591j).concat(" ** IS FORCE-RELEASED ON TIMEOUT **"));
+                            c4643a.d();
+                            if (c4643a.b()) {
+                                c4643a.f38585c = 1;
+                                c4643a.e();
                                 return;
                             }
                             return;
@@ -467,26 +468,26 @@ public final class c implements Runnable {
                 a();
                 return;
             case 27:
-                C4706p0 c4706p0 = (C4706p0) this.f1031u;
-                c4706p0.f39203E = null;
-                c4706p0.drawableStateChanged();
+                C4719p0 c4719p0 = (C4719p0) this.f1057u;
+                c4719p0.f39272E = null;
+                c4719p0.drawableStateChanged();
                 return;
             case 28:
-                SearchView$SearchAutoComplete searchView$SearchAutoComplete = (SearchView$SearchAutoComplete) this.f1031u;
-                if (searchView$SearchAutoComplete.f4583y) {
+                SearchView$SearchAutoComplete searchView$SearchAutoComplete = (SearchView$SearchAutoComplete) this.f1057u;
+                if (searchView$SearchAutoComplete.f4551y) {
                     ((InputMethodManager) searchView$SearchAutoComplete.getContext().getSystemService("input_method")).showSoftInput(searchView$SearchAutoComplete, 0);
-                    searchView$SearchAutoComplete.f4583y = false;
+                    searchView$SearchAutoComplete.f4551y = false;
                     return;
                 }
                 return;
             default:
-                ((Toolbar) this.f1031u).v();
+                ((Toolbar) this.f1057u).v();
                 return;
         }
     }
 
-    public c(T t6, G1.a aVar) {
-        this.f1030n = 11;
-        this.f1031u = aVar;
+    public c(S s9, I1.a aVar) {
+        this.f1056n = 11;
+        this.f1057u = aVar;
     }
 }

@@ -8,11 +8,11 @@ import org.checkerframework.dataflow.qual.Pure;
 public abstract class HB {
     public static String[] A00 = {"", "JBqvX3ouZOOCqox6TCkHsUUnq79xKaTL", "x", "BIUpfUNI3eVa3mY8ect95XlwPu2Ofuw", "eTPSYv4hujFcnfJKGeeHsnhQxUvQ5rkD", "uOymuGwhHDkcqDuJ17", "MFseKYUy643KM5DvrPXxmzbMJL0nMbh3", "ti0zz4"};
 
-    public static int A00(InterfaceC2191ms interfaceC2191ms, byte[] bArr, int i, int i6) throws IOException {
-        int i9 = 0;
-        while (i9 < i6) {
-            int totalBytesPeeked = i6 - i9;
-            int AGs = interfaceC2191ms.AGs(bArr, i + i9, totalBytesPeeked);
+    public static int A00(InterfaceC2211ms interfaceC2211ms, byte[] bArr, int i, int i4) throws IOException {
+        int i6 = 0;
+        while (i6 < i4) {
+            int totalBytesPeeked = i4 - i6;
+            int AGs = interfaceC2211ms.AGs(bArr, i + i6, totalBytesPeeked);
             String[] strArr = A00;
             String str = strArr[1];
             String str2 = strArr[4];
@@ -25,22 +25,22 @@ public abstract class HB {
             if (AGs == -1) {
                 break;
             }
-            i9 += AGs;
+            i6 += AGs;
         }
-        return i9;
+        return i6;
     }
 
     @Pure
-    public static void A01(boolean z3, String str) throws C3K {
-        if (z3) {
+    public static void A01(boolean z6, String str) throws C3K {
+        if (z6) {
         } else {
             throw C3K.A01(str, null);
         }
     }
 
-    public static boolean A02(InterfaceC2191ms interfaceC2191ms, int i) throws IOException {
+    public static boolean A02(InterfaceC2211ms interfaceC2211ms, int i) throws IOException {
         try {
-            interfaceC2191ms.AK3(i);
+            interfaceC2211ms.AK3(i);
             if (A00[0].length() != 0) {
                 throw new RuntimeException();
             }
@@ -51,9 +51,9 @@ public abstract class HB {
         }
     }
 
-    public static boolean A03(InterfaceC2191ms interfaceC2191ms, byte[] bArr, int i, int i6) throws IOException {
+    public static boolean A03(InterfaceC2211ms interfaceC2211ms, byte[] bArr, int i, int i4) throws IOException {
         try {
-            interfaceC2191ms.readFully(bArr, i, i6);
+            interfaceC2211ms.readFully(bArr, i, i4);
             return true;
         } catch (EOFException unused) {
             if (A00[0].length() != 0) {
@@ -64,11 +64,11 @@ public abstract class HB {
         }
     }
 
-    public static boolean A04(InterfaceC2191ms interfaceC2191ms, byte[] bArr, int i, int i6, boolean z3) throws IOException {
+    public static boolean A04(InterfaceC2211ms interfaceC2211ms, byte[] bArr, int i, int i4, boolean z6) throws IOException {
         try {
-            return interfaceC2191ms.AGu(bArr, i, i6, z3);
+            return interfaceC2211ms.AGu(bArr, i, i4, z6);
         } catch (EOFException e9) {
-            if (!z3) {
+            if (!z6) {
                 throw e9;
             }
             if (A00[3].length() == 20) {

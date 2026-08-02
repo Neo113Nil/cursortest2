@@ -1,11 +1,11 @@
 package com.onesignal.location.internal;
 
-import a5.InterfaceC0437a;
+import a5.InterfaceC0441a;
 import kotlin.jvm.internal.e;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
-public final class b implements InterfaceC0437a {
+public final class b implements InterfaceC0441a {
     public static final a Companion = new a(null);
 
     public static final class a {
@@ -22,18 +22,18 @@ public final class b implements InterfaceC0437a {
         }
     }
 
-    @Override // a5.InterfaceC0437a
+    @Override // a5.InterfaceC0441a
     public boolean isShared() {
         throw Companion.getEXCEPTION();
     }
 
-    @Override // a5.InterfaceC0437a
-    public Object requestPermission(InterfaceC5267d interfaceC5267d) {
+    @Override // a5.InterfaceC0441a
+    public Object requestPermission(InterfaceC5240d interfaceC5240d) {
         throw Companion.getEXCEPTION();
     }
 
-    @Override // a5.InterfaceC0437a
-    public void setShared(boolean z3) {
+    @Override // a5.InterfaceC0441a
+    public void setShared(boolean z6) {
         throw Companion.getEXCEPTION();
     }
 }

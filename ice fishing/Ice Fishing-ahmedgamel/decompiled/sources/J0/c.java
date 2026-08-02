@@ -6,14 +6,14 @@ import android.net.Uri;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Uri f1372a;
+    public final Uri f1401a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f1373b;
+    public final boolean f1402b;
 
-    public c(Uri uri, boolean z3) {
-        this.f1372a = uri;
-        this.f1373b = z3;
+    public c(Uri uri, boolean z6) {
+        this.f1401a = uri;
+        this.f1402b = z6;
     }
 
     public final boolean equals(Object obj) {
@@ -25,10 +25,10 @@ public final class c {
         }
         kotlin.jvm.internal.h.c(obj, "null cannot be cast to non-null type androidx.work.Constraints.ContentUriTrigger");
         c cVar = (c) obj;
-        return kotlin.jvm.internal.h.a(this.f1372a, cVar.f1372a) && this.f1373b == cVar.f1373b;
+        return kotlin.jvm.internal.h.a(this.f1401a, cVar.f1401a) && this.f1402b == cVar.f1402b;
     }
 
     public final int hashCode() {
-        return Boolean.hashCode(this.f1373b) + (this.f1372a.hashCode() * 31);
+        return Boolean.hashCode(this.f1402b) + (this.f1401a.hashCode() * 31);
     }
 }

@@ -10,56 +10,56 @@ import java.util.List;
 public class b extends c<com.anythink.core.common.a.l> {
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile b f12923b;
+    private static volatile b f13709b;
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f12924a;
+    private final String f13710a;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f12925a = "adx_offer_tracking";
+        public static final String f13711a = "adx_offer_tracking";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f12926b = "placement_id";
+        public static final String f13712b = "placement_id";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f12927c = "dsp_id";
+        public static final String f13713c = "dsp_id";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f12928d = "offer_id";
+        public static final String f13714d = "offer_id";
 
         /* renamed from: e, reason: collision with root package name */
-        public static final String f12929e = "tk_type";
+        public static final String f13715e = "tk_type";
 
         /* renamed from: f, reason: collision with root package name */
-        public static final String f12930f = "extra_info";
+        public static final String f13716f = "extra_info";
 
         /* renamed from: g, reason: collision with root package name */
-        public static final String f12931g = "create_time";
+        public static final String f13717g = "create_time";
 
         /* renamed from: h, reason: collision with root package name */
-        public static final String f12932h = "CREATE TABLE IF NOT EXISTS adx_offer_tracking(placement_id TEXT ,dsp_id TEXT ,offer_id TEXT ,tk_type INTEGER ,extra_info TEXT ,create_time INTEGER)";
+        public static final String f13718h = "CREATE TABLE IF NOT EXISTS adx_offer_tracking(placement_id TEXT ,dsp_id TEXT ,offer_id TEXT ,tk_type INTEGER ,extra_info TEXT ,create_time INTEGER)";
     }
 
     private b(d dVar) {
         super(dVar);
-        this.f12924a = b.class.getName();
+        this.f13710a = b.class.getName();
     }
 
     public static b a(d dVar) {
-        if (f12923b == null) {
+        if (f13709b == null) {
             synchronized (b.class) {
                 try {
-                    if (f12923b == null) {
-                        f12923b = new b(dVar);
+                    if (f13709b == null) {
+                        f13709b = new b(dVar);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f12923b;
+        return f13709b;
     }
 
     private static long e() {
@@ -81,7 +81,7 @@ public class b extends c<com.anythink.core.common.a.l> {
             if (d() == null) {
                 return;
             }
-            d().delete(a.f12925a, str, null);
+            d().delete(a.f13711a, str, null);
         } catch (Exception unused) {
         }
     }
@@ -95,12 +95,12 @@ public class b extends c<com.anythink.core.common.a.l> {
             contentValues.put("placement_id", gVar.a());
             contentValues.put("dsp_id", gVar.b());
             contentValues.put("offer_id", gVar.c());
-            contentValues.put(a.f12929e, Integer.valueOf(gVar.d()));
-            contentValues.put(a.f12930f, gVar.e());
+            contentValues.put(a.f13715e, Integer.valueOf(gVar.d()));
+            contentValues.put(a.f13716f, gVar.e());
             contentValues.put("create_time", Long.valueOf(System.currentTimeMillis()));
             gVar.b();
             gVar.c();
-            return d().insert(a.f12925a, null, contentValues);
+            return d().insert(a.f13711a, null, contentValues);
         } catch (Exception unused) {
             return -1L;
         }
@@ -116,7 +116,7 @@ public class b extends c<com.anythink.core.common.a.l> {
     public final synchronized List<com.anythink.core.common.a.g> a() {
         Cursor cursor;
         try {
-            cursor = c().query(a.f12925a, null, "create_time >= ? ", new String[]{String.valueOf(e())}, null, null, null);
+            cursor = c().query(a.f13711a, null, "create_time >= ? ", new String[]{String.valueOf(e())}, null, null, null);
             try {
                 List<com.anythink.core.common.a.g> a9 = a(cursor);
                 cursor.close();
@@ -166,11 +166,11 @@ public class b extends c<com.anythink.core.common.a.l> {
                         if (columnIndex3 >= 0) {
                             gVar.c(cursor.getString(columnIndex3));
                         }
-                        int columnIndex4 = cursor.getColumnIndex(a.f12929e);
+                        int columnIndex4 = cursor.getColumnIndex(a.f13715e);
                         if (columnIndex4 >= 0) {
                             gVar.a(cursor.getInt(columnIndex4));
                         }
-                        int columnIndex5 = cursor.getColumnIndex(a.f12930f);
+                        int columnIndex5 = cursor.getColumnIndex(a.f13716f);
                         if (columnIndex5 >= 0) {
                             gVar.d(cursor.getString(columnIndex5));
                         }

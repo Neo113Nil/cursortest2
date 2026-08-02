@@ -4,13 +4,13 @@ package com.google.android.gms.internal.ads;
 public abstract class SE {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final C3774qG f27425a = new C3774qG(RE.class, InterfaceC3394jE.class, C3586mr.f32610O);
+    public static final C3797qG f28139a = new C3797qG(RE.class, InterfaceC3417jE.class, C3609mr.f33388O);
 
     /* renamed from: b, reason: collision with root package name */
-    public static final XF f27426b;
+    public static final XF f28140b;
 
     static {
         GH.E();
-        f27426b = new XF(InterfaceC3394jE.class, "type.googleapis.com/google.crypto.tink.ChaCha20Poly1305Key", 3);
+        f28140b = new XF(InterfaceC3417jE.class, "type.googleapis.com/google.crypto.tink.ChaCha20Poly1305Key", 3);
     }
 }

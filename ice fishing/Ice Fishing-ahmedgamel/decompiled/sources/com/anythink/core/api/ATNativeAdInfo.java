@@ -14,7 +14,7 @@ public interface ATNativeAdInfo {
 
         void resumeVideo();
 
-        void setVideoMute(boolean z3);
+        void setVideoMute(boolean z6);
     }
 
     public static class AdPrepareInfo {

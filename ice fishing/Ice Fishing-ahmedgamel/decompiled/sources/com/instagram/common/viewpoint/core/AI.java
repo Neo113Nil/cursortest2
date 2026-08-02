@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Map;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class AI implements InterfaceC2336pF {
+public final class AI implements InterfaceC2356pF {
     public static byte[] A00;
     public static final C5Y A01;
     public static final AI A02;
@@ -16,10 +16,10 @@ public final class AI implements InterfaceC2336pF {
         return new AI();
     }
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ a.f21727Q);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ a.f22514Q);
         }
         return new String(copyOfRange);
     }
@@ -28,7 +28,7 @@ public final class AI implements InterfaceC2336pF {
         A00 = new byte[]{23, 43, 38, 36, 34, 47, 40, 43, 35, 34, 53, 3, 38, 51, 38, 20, 40, 50, 53, 36, 34, 103, 36, 38, 41, 41, 40, 51, 103, 37, 34, 103, 40, 55, 34, 41, 34, 35};
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
     public final /* synthetic */ Map A8t() {
         return C5X.A00(this);
     }
@@ -38,32 +38,32 @@ public final class AI implements InterfaceC2336pF {
         A02 = new AI();
         A01 = new C5Y() { // from class: com.facebook.ads.redexgen.X.p4
             @Override // com.instagram.common.viewpoint.core.C5Y
-            public final InterfaceC2336pF A5I() {
+            public final InterfaceC2356pF A5I() {
                 return AI.A00();
             }
         };
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
-    public final void A43(InterfaceC06715t interfaceC06715t) {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
+    public final void A43(InterfaceC06915t interfaceC06915t) {
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
     public final Uri A9P() {
         return null;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
-    public final long AGi(C06605i c06605i) throws IOException {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
+    public final long AGi(C06805i c06805i) throws IOException {
         throw new IOException(A01(0, 38, 57));
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
     public final void close() {
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC05802c
-    public final int read(byte[] bArr, int i, int i6) {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC06002c
+    public final int read(byte[] bArr, int i, int i4) {
         throw new UnsupportedOperationException();
     }
 }

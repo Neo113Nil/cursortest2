@@ -1,26 +1,26 @@
 package com.google.android.gms.internal.ads;
 
 /* loaded from: classes2.dex */
-public final class NN implements InterfaceC3190fO {
+public final class NN implements InterfaceC3213fO {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Object f26484a;
+    public final Object f27268a;
 
     /* renamed from: b, reason: collision with root package name */
-    public AbstractC3604n8 f26485b;
+    public AbstractC3627n8 f27269b;
 
-    public NN(Object obj, C3460kQ c3460kQ) {
-        this.f26484a = obj;
-        this.f26485b = c3460kQ.f31453o;
+    public NN(Object obj, C3645nQ c3645nQ) {
+        this.f27268a = obj;
+        this.f27269b = c3645nQ.f33515o;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3190fO
+    @Override // com.google.android.gms.internal.ads.InterfaceC3213fO
     public final Object c() {
-        return this.f26484a;
+        return this.f27268a;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3190fO
-    public final AbstractC3604n8 f() {
-        return this.f26485b;
+    @Override // com.google.android.gms.internal.ads.InterfaceC3213fO
+    public final AbstractC3627n8 f() {
+        return this.f27269b;
     }
 }

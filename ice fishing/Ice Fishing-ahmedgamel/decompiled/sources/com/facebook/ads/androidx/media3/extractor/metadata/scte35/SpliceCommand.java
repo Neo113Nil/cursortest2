@@ -1,7 +1,7 @@
 package com.facebook.ads.androidx.media3.extractor.metadata.scte35;
 
 import com.facebook.ads.androidx.media3.common.Metadata;
-import com.instagram.common.viewpoint.core.C2400qI;
+import com.instagram.common.viewpoint.core.C2420qI;
 import com.instagram.common.viewpoint.core.C3E;
 import java.util.Arrays;
 
@@ -13,10 +13,10 @@ public abstract class SpliceCommand implements Metadata.Entry {
         A03();
     }
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 88);
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 88);
         }
         return new String(copyOfRange);
     }
@@ -31,7 +31,7 @@ public abstract class SpliceCommand implements Metadata.Entry {
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Metadata.Entry
-    public final /* synthetic */ C2400qI A9b() {
+    public final /* synthetic */ C2420qI A9b() {
         return C3E.A00(this);
     }
 

@@ -4,65 +4,65 @@ package com.google.android.gms.internal.ads;
 public final class Uu {
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f28022a;
+    public final long f28819a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f28023b;
+    public final boolean f28820b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f28024c;
+    public final int f28821c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f28025d;
+    public final String f28822d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final String f28026e;
+    public final String f28823e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final String f28027f;
+    public final String f28824f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final String f28028g;
+    public final String f28825g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final int f28029h;
+    public final int f28826h;
     public final String i;
 
     /* renamed from: j, reason: collision with root package name */
-    public final String f28030j;
+    public final String f28827j;
 
     /* renamed from: k, reason: collision with root package name */
-    public final String f28031k;
+    public final String f28828k;
 
     /* renamed from: l, reason: collision with root package name */
-    public final long f28032l;
+    public final long f28829l;
 
     /* renamed from: m, reason: collision with root package name */
-    public final int f28033m;
+    public final int f28830m;
 
     /* renamed from: n, reason: collision with root package name */
-    public final int f28034n;
+    public final int f28831n;
 
     /* renamed from: o, reason: collision with root package name */
-    public final int f28035o;
+    public final int f28832o;
 
     public /* synthetic */ Uu(Tu tu) {
-        this.f28033m = tu.f27824p;
-        long j6 = tu.f27812c;
-        long j9 = tu.f27811b;
-        this.f28022a = j6 - j9;
-        this.f28023b = tu.f27813d;
-        this.f28034n = tu.f27825q;
-        this.f28035o = tu.f27826r;
-        this.f28024c = tu.f27814e;
-        this.f28025d = tu.f27816g;
-        this.f28026e = tu.f27815f;
-        this.f28027f = tu.f27817h;
-        this.f28028g = tu.i;
-        this.f28029h = tu.f27818j;
-        this.i = tu.f27819k;
-        this.f28030j = tu.f27820l;
-        this.f28031k = tu.f27821m;
-        this.f28032l = j9;
+        this.f28830m = tu.f28621p;
+        long j6 = tu.f28609c;
+        long j9 = tu.f28608b;
+        this.f28819a = j6 - j9;
+        this.f28820b = tu.f28610d;
+        this.f28831n = tu.f28622q;
+        this.f28832o = tu.f28623r;
+        this.f28821c = tu.f28611e;
+        this.f28822d = tu.f28613g;
+        this.f28823e = tu.f28612f;
+        this.f28824f = tu.f28614h;
+        this.f28825g = tu.i;
+        this.f28826h = tu.f28615j;
+        this.i = tu.f28616k;
+        this.f28827j = tu.f28617l;
+        this.f28828k = tu.f28618m;
+        this.f28829l = j9;
     }
 }

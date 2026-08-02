@@ -6,7 +6,7 @@ import com.onesignal.common.modeling.g;
 import com.onesignal.common.modeling.j;
 import kotlin.jvm.internal.e;
 import u7.v;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class a implements com.onesignal.core.internal.startup.b, g {
@@ -36,15 +36,15 @@ public final class a implements com.onesignal.core.internal.startup.b, g {
         final /* synthetic */ a this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public b(String str, a aVar, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public b(String str, a aVar, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$appId = str;
             this.this$0 = aVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return new b(this.$appId, this.this$0, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return new b(this.$appId, this.this$0, interfaceC5240d);
         }
 
         /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
@@ -91,8 +91,8 @@ public final class a implements com.onesignal.core.internal.startup.b, g {
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((b) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((b) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -117,7 +117,7 @@ public final class a implements com.onesignal.core.internal.startup.b, g {
     public void onModelUpdated(j args, String tag) {
         kotlin.jvm.internal.h.e(args, "args");
         kotlin.jvm.internal.h.e(tag, "tag");
-        if (kotlin.jvm.internal.h.a(args.getProperty(), com.anythink.expressad.videocommon.e.b.f22407u)) {
+        if (kotlin.jvm.internal.h.a(args.getProperty(), com.anythink.expressad.videocommon.e.b.f23194u)) {
             fetchParams();
         }
     }

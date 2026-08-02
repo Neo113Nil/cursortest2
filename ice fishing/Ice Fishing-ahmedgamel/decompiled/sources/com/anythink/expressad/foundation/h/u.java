@@ -14,45 +14,45 @@ import java.util.List;
 public final class u extends f {
 
     /* renamed from: a, reason: collision with root package name */
-    public static boolean f19705a = false;
+    public static boolean f20492a = false;
 
     /* renamed from: b, reason: collision with root package name */
-    public static char[] f19706b = {'a', 'n', 'd', 'r', 'o', 'i', 'd', 'c', 'o', 'n', 't', 'e', 'n', 't', 'p', 'm', 'g', 'e', 't', 'C', 'o', 'n', 't', 'e', 'x', 't'};
+    public static char[] f20493b = {'a', 'n', 'd', 'r', 'o', 'i', 'd', 'c', 'o', 'n', 't', 'e', 'n', 't', 'p', 'm', 'g', 'e', 't', 'C', 'o', 'n', 't', 'e', 'x', 't'};
 
     /* renamed from: c, reason: collision with root package name */
-    public static LinearLayout f19707c = null;
+    public static LinearLayout f20494c = null;
 
     /* renamed from: d, reason: collision with root package name */
-    private static final String f19708d = "SDKUtil";
+    private static final String f20495d = "SDKUtil";
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f19709a = "com.android.vending";
+        public static final String f20496a = "com.android.vending";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f19710b = "market";
+        public static final String f20497b = "market";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f19711c = "play.google.com";
+        public static final String f20498c = "play.google.com";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f19712d = "market.android.com";
+        public static final String f20499d = "market.android.com";
 
         /* renamed from: e, reason: collision with root package name */
-        public static final String f19713e = "google.com";
+        public static final String f20500e = "google.com";
 
         /* renamed from: f, reason: collision with root package name */
-        public static final String f19714f = "market://";
+        public static final String f20501f = "market://";
 
         /* renamed from: g, reason: collision with root package name */
-        public static final String f19715g = "details?id=";
+        public static final String f20502g = "details?id=";
 
         /* renamed from: h, reason: collision with root package name */
-        public static final String f19716h = "market://details?id=com.package.name";
+        public static final String f20503h = "market://details?id=com.package.name";
 
         private static Intent a() {
-            return new Intent("android.intent.action.VIEW", Uri.parse(f19716h));
+            return new Intent("android.intent.action.VIEW", Uri.parse(f20503h));
         }
 
         private static boolean b(Context context) {
@@ -80,14 +80,14 @@ public final class u extends f {
                 return str;
             }
             if (c(str)) {
-                return "market://".concat(String.valueOf(str.substring(str.indexOf(f19715g))));
+                return "market://".concat(String.valueOf(str.substring(str.indexOf(f20502g))));
             }
             return null;
         }
 
         private static List<ResolveInfo> a(Context context) {
             try {
-                return context.getPackageManager().queryIntentActivities(new Intent("android.intent.action.VIEW", Uri.parse(f19716h)), 0);
+                return context.getPackageManager().queryIntentActivities(new Intent("android.intent.action.VIEW", Uri.parse(f20503h)), 0);
             } catch (Exception e9) {
                 e9.printStackTrace();
                 return null;

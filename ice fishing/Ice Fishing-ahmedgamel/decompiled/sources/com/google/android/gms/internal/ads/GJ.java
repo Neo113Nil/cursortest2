@@ -5,51 +5,51 @@ import java.security.MessageDigest;
 import java.util.Arrays;
 
 /* loaded from: classes2.dex */
-public final class GJ implements InterfaceC4041vE {
+public final class GJ implements InterfaceC4064vE {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f24964a = 0;
+    public final /* synthetic */ int f25754a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    public final byte[] f24965b;
+    public final byte[] f25755b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final byte[] f24966c;
+    public final byte[] f25756c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final Object f24967d;
+    public final Object f25757d;
 
-    public GJ(InterfaceC4041vE interfaceC4041vE, byte[] bArr, byte[] bArr2) {
-        this.f24967d = interfaceC4041vE;
-        this.f24965b = bArr;
-        this.f24966c = bArr2;
+    public GJ(InterfaceC4064vE interfaceC4064vE, byte[] bArr, byte[] bArr2) {
+        this.f25757d = interfaceC4064vE;
+        this.f25755b = bArr;
+        this.f25756c = bArr2;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC4041vE
+    @Override // com.google.android.gms.internal.ads.InterfaceC4064vE
     public final void a(byte[] bArr, byte[] bArr2) {
-        switch (this.f24964a) {
+        switch (this.f25754a) {
             case 0:
-                byte[] bArr3 = this.f24965b;
+                byte[] bArr3 = this.f25755b;
                 int length = bArr3.length;
-                byte[] bArr4 = this.f24966c;
-                InterfaceC4041vE interfaceC4041vE = (InterfaceC4041vE) this.f24967d;
+                byte[] bArr4 = this.f25756c;
+                InterfaceC4064vE interfaceC4064vE = (InterfaceC4064vE) this.f25757d;
                 if (length == 0 && bArr4.length == 0) {
-                    interfaceC4041vE.a(bArr, bArr2);
+                    interfaceC4064vE.a(bArr, bArr2);
                     return;
                 } else {
                     if (!DG.c(bArr3, bArr)) {
                         throw new GeneralSecurityException("Invalid signature (output prefix mismatch)");
                     }
                     if (bArr4.length != 0) {
-                        bArr2 = AbstractC4094wD.d(bArr2, bArr4);
+                        bArr2 = AbstractC4117wD.d(bArr2, bArr4);
                     }
-                    interfaceC4041vE.a(Arrays.copyOfRange(bArr, length, bArr.length), bArr2);
+                    interfaceC4064vE.a(Arrays.copyOfRange(bArr, length, bArr.length), bArr2);
                     return;
                 }
             default:
-                byte[] bArr5 = this.f24966c;
+                byte[] bArr5 = this.f25756c;
                 int length2 = bArr5.length;
-                byte[] bArr6 = (byte[]) this.f24967d;
+                byte[] bArr6 = (byte[]) this.f25757d;
                 if (length2 == 0 && bArr6.length == 0) {
                     b(bArr, bArr2);
                     return;
@@ -58,7 +58,7 @@ public final class GJ implements InterfaceC4041vE {
                         throw new GeneralSecurityException("Invalid signature (output prefix mismatch)");
                     }
                     if (bArr6.length != 0) {
-                        bArr2 = AbstractC4094wD.d(bArr2, bArr6);
+                        bArr2 = AbstractC4117wD.d(bArr2, bArr6);
                     }
                     b(Arrays.copyOfRange(bArr, length2, bArr.length), bArr2);
                     return;
@@ -78,15 +78,15 @@ public final class GJ implements InterfaceC4041vE {
                 if (i < 0) {
                     break;
                 }
-                int i6 = copyOfRange[i] & 255;
-                int i9 = MA.f26257I[i] & 255;
-                if (i6 == i9) {
+                int i4 = copyOfRange[i] & 255;
+                int i6 = MA.f27048I[i] & 255;
+                if (i4 == i6) {
                     i--;
                     bArr3 = bArr;
-                } else if (i6 < i9) {
-                    MessageDigest messageDigest = (MessageDigest) WJ.f28343e.f28346a.b("SHA-512");
+                } else if (i4 < i6) {
+                    MessageDigest messageDigest = (MessageDigest) WJ.f29141e.f29144a.b("SHA-512");
                     messageDigest.update(bArr3, 0, 32);
-                    byte[] bArr4 = this.f24965b;
+                    byte[] bArr4 = this.f25755b;
                     messageDigest.update(bArr4);
                     messageDigest.update(bArr2);
                     byte[] digest = messageDigest.digest();
@@ -293,7 +293,7 @@ public final class GJ implements InterfaceC4041vE {
                     digest[30] = (byte) (j152 >> 9);
                     digest[31] = (byte) (j152 >> 17);
                     long[] jArr = new long[10];
-                    long[] N8 = AbstractC2968bG.N(bArr4);
+                    long[] N8 = AbstractC2991bG.N(bArr4);
                     long[] jArr2 = new long[10];
                     jArr2[0] = 1;
                     long[] jArr3 = new long[10];
@@ -301,126 +301,126 @@ public final class GJ implements InterfaceC4041vE {
                     long[] jArr5 = new long[10];
                     long[] jArr6 = new long[10];
                     long[] jArr7 = new long[10];
-                    AbstractC2968bG.L(jArr4, N8);
-                    AbstractC2968bG.I(jArr5, jArr4, KF.f25882a);
-                    AbstractC2968bG.u(jArr4, jArr4, jArr2);
-                    AbstractC2968bG.l(jArr5, jArr5, jArr2);
+                    AbstractC2991bG.L(jArr4, N8);
+                    AbstractC2991bG.I(jArr5, jArr4, KF.f26634a);
+                    AbstractC2991bG.u(jArr4, jArr4, jArr2);
+                    AbstractC2991bG.l(jArr5, jArr5, jArr2);
                     long[] jArr8 = new long[10];
-                    AbstractC2968bG.L(jArr8, jArr5);
-                    AbstractC2968bG.I(jArr8, jArr8, jArr5);
-                    AbstractC2968bG.L(jArr, jArr8);
-                    AbstractC2968bG.I(jArr, jArr, jArr5);
-                    AbstractC2968bG.I(jArr, jArr, jArr4);
+                    AbstractC2991bG.L(jArr8, jArr5);
+                    AbstractC2991bG.I(jArr8, jArr8, jArr5);
+                    AbstractC2991bG.L(jArr, jArr8);
+                    AbstractC2991bG.I(jArr, jArr, jArr5);
+                    AbstractC2991bG.I(jArr, jArr, jArr4);
                     long[] jArr9 = new long[10];
                     long[] jArr10 = new long[10];
                     long[] jArr11 = new long[10];
-                    AbstractC2968bG.L(jArr9, jArr);
-                    AbstractC2968bG.L(jArr10, jArr9);
-                    AbstractC2968bG.L(jArr10, jArr10);
-                    AbstractC2968bG.I(jArr10, jArr, jArr10);
-                    AbstractC2968bG.I(jArr9, jArr9, jArr10);
-                    AbstractC2968bG.L(jArr9, jArr9);
-                    AbstractC2968bG.I(jArr9, jArr10, jArr9);
-                    AbstractC2968bG.L(jArr10, jArr9);
-                    for (int i10 = 1; i10 < 5; i10++) {
-                        AbstractC2968bG.L(jArr10, jArr10);
+                    AbstractC2991bG.L(jArr9, jArr);
+                    AbstractC2991bG.L(jArr10, jArr9);
+                    AbstractC2991bG.L(jArr10, jArr10);
+                    AbstractC2991bG.I(jArr10, jArr, jArr10);
+                    AbstractC2991bG.I(jArr9, jArr9, jArr10);
+                    AbstractC2991bG.L(jArr9, jArr9);
+                    AbstractC2991bG.I(jArr9, jArr10, jArr9);
+                    AbstractC2991bG.L(jArr10, jArr9);
+                    for (int i9 = 1; i9 < 5; i9++) {
+                        AbstractC2991bG.L(jArr10, jArr10);
                     }
-                    AbstractC2968bG.I(jArr9, jArr10, jArr9);
-                    AbstractC2968bG.L(jArr10, jArr9);
-                    for (int i11 = 1; i11 < 10; i11++) {
-                        AbstractC2968bG.L(jArr10, jArr10);
+                    AbstractC2991bG.I(jArr9, jArr10, jArr9);
+                    AbstractC2991bG.L(jArr10, jArr9);
+                    for (int i10 = 1; i10 < 10; i10++) {
+                        AbstractC2991bG.L(jArr10, jArr10);
                     }
-                    AbstractC2968bG.I(jArr10, jArr10, jArr9);
-                    AbstractC2968bG.L(jArr11, jArr10);
-                    for (int i12 = 1; i12 < 20; i12++) {
-                        AbstractC2968bG.L(jArr11, jArr11);
+                    AbstractC2991bG.I(jArr10, jArr10, jArr9);
+                    AbstractC2991bG.L(jArr11, jArr10);
+                    for (int i11 = 1; i11 < 20; i11++) {
+                        AbstractC2991bG.L(jArr11, jArr11);
                     }
-                    AbstractC2968bG.I(jArr10, jArr11, jArr10);
-                    AbstractC2968bG.L(jArr10, jArr10);
-                    for (int i13 = 1; i13 < 10; i13++) {
-                        AbstractC2968bG.L(jArr10, jArr10);
+                    AbstractC2991bG.I(jArr10, jArr11, jArr10);
+                    AbstractC2991bG.L(jArr10, jArr10);
+                    for (int i12 = 1; i12 < 10; i12++) {
+                        AbstractC2991bG.L(jArr10, jArr10);
                     }
-                    AbstractC2968bG.I(jArr9, jArr10, jArr9);
-                    AbstractC2968bG.L(jArr10, jArr9);
-                    for (int i14 = 1; i14 < 50; i14++) {
-                        AbstractC2968bG.L(jArr10, jArr10);
+                    AbstractC2991bG.I(jArr9, jArr10, jArr9);
+                    AbstractC2991bG.L(jArr10, jArr9);
+                    for (int i13 = 1; i13 < 50; i13++) {
+                        AbstractC2991bG.L(jArr10, jArr10);
                     }
-                    AbstractC2968bG.I(jArr10, jArr10, jArr9);
-                    AbstractC2968bG.L(jArr11, jArr10);
-                    for (int i15 = 1; i15 < 100; i15++) {
-                        AbstractC2968bG.L(jArr11, jArr11);
+                    AbstractC2991bG.I(jArr10, jArr10, jArr9);
+                    AbstractC2991bG.L(jArr11, jArr10);
+                    for (int i14 = 1; i14 < 100; i14++) {
+                        AbstractC2991bG.L(jArr11, jArr11);
                     }
-                    AbstractC2968bG.I(jArr10, jArr11, jArr10);
-                    AbstractC2968bG.L(jArr10, jArr10);
-                    for (int i16 = 1; i16 < 50; i16++) {
-                        AbstractC2968bG.L(jArr10, jArr10);
+                    AbstractC2991bG.I(jArr10, jArr11, jArr10);
+                    AbstractC2991bG.L(jArr10, jArr10);
+                    for (int i15 = 1; i15 < 50; i15++) {
+                        AbstractC2991bG.L(jArr10, jArr10);
                     }
-                    AbstractC2968bG.I(jArr9, jArr10, jArr9);
-                    AbstractC2968bG.L(jArr9, jArr9);
-                    AbstractC2968bG.L(jArr9, jArr9);
-                    AbstractC2968bG.I(jArr, jArr9, jArr);
-                    AbstractC2968bG.I(jArr, jArr, jArr8);
-                    AbstractC2968bG.I(jArr, jArr, jArr4);
-                    AbstractC2968bG.L(jArr6, jArr);
-                    AbstractC2968bG.I(jArr6, jArr6, jArr5);
-                    AbstractC2968bG.u(jArr7, jArr6, jArr4);
+                    AbstractC2991bG.I(jArr9, jArr10, jArr9);
+                    AbstractC2991bG.L(jArr9, jArr9);
+                    AbstractC2991bG.L(jArr9, jArr9);
+                    AbstractC2991bG.I(jArr, jArr9, jArr);
+                    AbstractC2991bG.I(jArr, jArr, jArr8);
+                    AbstractC2991bG.I(jArr, jArr, jArr4);
+                    AbstractC2991bG.L(jArr6, jArr);
+                    AbstractC2991bG.I(jArr6, jArr6, jArr5);
+                    AbstractC2991bG.u(jArr7, jArr6, jArr4);
                     if (MA.O(jArr7)) {
-                        AbstractC2968bG.l(jArr7, jArr6, jArr4);
+                        AbstractC2991bG.l(jArr7, jArr6, jArr4);
                         if (MA.O(jArr7)) {
                             throw new GeneralSecurityException("Cannot convert given bytes to extended projective coordinates. No square root exists for modulo 2^255-19");
                         }
-                        AbstractC2968bG.I(jArr, jArr, KF.f25884c);
+                        AbstractC2991bG.I(jArr, jArr, KF.f26636c);
                     }
                     if (!MA.O(jArr) && ((bArr4[31] & 255) >> 7) != 0) {
                         throw new GeneralSecurityException("Cannot convert given bytes to extended projective coordinates. Computed x is zero and encoded x's least significant bit is not zero");
                     }
-                    if ((AbstractC2968bG.O(jArr)[0] & 1) == ((bArr4[31] & 255) >> 7)) {
-                        for (int i17 = 0; i17 < 10; i17++) {
-                            jArr[i17] = -jArr[i17];
+                    if ((AbstractC2991bG.O(jArr)[0] & 1) == ((bArr4[31] & 255) >> 7)) {
+                        for (int i16 = 0; i16 < 10; i16++) {
+                            jArr[i16] = -jArr[i16];
                         }
                     }
-                    AbstractC2968bG.I(jArr3, jArr, N8);
-                    C3481ku c3481ku = new C3481ku(20, jArr, N8, jArr2);
+                    AbstractC2991bG.I(jArr3, jArr, N8);
+                    C3504ku c3504ku = new C3504ku(20, jArr, N8, jArr2);
                     JF[] jfArr = new JF[8];
-                    jfArr[0] = new JF(new C2991bm(23, c3481ku, jArr3));
-                    S0.s sVar = new S0.s(21, new C3481ku(20), new long[10]);
-                    MA.e0(sVar, c3481ku);
-                    C2991bm c2991bm = new C2991bm(sVar);
-                    for (int i18 = 1; i18 < 8; i18++) {
-                        MA.Y(sVar, c2991bm, jfArr[i18 - 1]);
-                        jfArr[i18] = new JF(new C2991bm(sVar));
+                    jfArr[0] = new JF(new C3067cm(25, c3504ku, jArr3));
+                    S0.s sVar = new S0.s(23, new C3504ku(20), new long[10]);
+                    MA.e0(sVar, c3504ku);
+                    C3067cm c3067cm = new C3067cm(sVar);
+                    for (int i17 = 1; i17 < 8; i17++) {
+                        MA.Y(sVar, c3067cm, jfArr[i17 - 1]);
+                        jfArr[i17] = new JF(new C3067cm(sVar));
                     }
                     byte[] m0 = MA.m0(digest);
                     byte[] m02 = MA.m0(copyOfRange);
-                    S0.s sVar2 = new S0.s(21);
-                    C2991bm c2991bm2 = new C2991bm(23);
-                    int i19 = 255;
-                    while (i19 >= 0 && m0[i19] == 0 && m02[i19] == 0) {
-                        i19--;
+                    S0.s sVar2 = new S0.s(23);
+                    C3067cm c3067cm2 = new C3067cm(25);
+                    int i18 = 255;
+                    while (i18 >= 0 && m0[i18] == 0 && m02[i18] == 0) {
+                        i18--;
                     }
-                    while (i19 >= 0) {
-                        MA.e0(sVar2, new C3481ku(sVar2));
-                        byte b9 = m0[i19];
+                    while (i18 >= 0) {
+                        MA.e0(sVar2, new C3504ku(sVar2));
+                        byte b9 = m0[i18];
                         if (b9 > 0) {
-                            C2991bm.U(c2991bm2, sVar2);
-                            MA.Y(sVar2, c2991bm2, jfArr[m0[i19] / 2]);
+                            C3067cm.J(c3067cm2, sVar2);
+                            MA.Y(sVar2, c3067cm2, jfArr[m0[i18] / 2]);
                         } else if (b9 < 0) {
-                            C2991bm.U(c2991bm2, sVar2);
-                            MA.b0(sVar2, c2991bm2, jfArr[(-m0[i19]) / 2]);
+                            C3067cm.J(c3067cm2, sVar2);
+                            MA.b0(sVar2, c3067cm2, jfArr[(-m0[i18]) / 2]);
                         }
-                        byte b10 = m02[i19];
+                        byte b10 = m02[i18];
                         if (b10 > 0) {
-                            C2991bm.U(c2991bm2, sVar2);
-                            MA.Y(sVar2, c2991bm2, KF.f25886e[m02[i19] / 2]);
+                            C3067cm.J(c3067cm2, sVar2);
+                            MA.Y(sVar2, c3067cm2, KF.f26638e[m02[i18] / 2]);
                         } else if (b10 < 0) {
-                            C2991bm.U(c2991bm2, sVar2);
-                            MA.b0(sVar2, c2991bm2, KF.f25886e[(-m02[i19]) / 2]);
+                            C3067cm.J(c3067cm2, sVar2);
+                            MA.b0(sVar2, c3067cm2, KF.f26638e[(-m02[i18]) / 2]);
                         }
-                        i19--;
+                        i18--;
                     }
-                    byte[] n9 = new C3481ku(sVar2).n();
-                    for (int i20 = 0; i20 < 32; i20++) {
-                        if (n9[i20] == bArr[i20]) {
+                    byte[] n9 = new C3504ku(sVar2).n();
+                    for (int i19 = 0; i19 < 32; i19++) {
+                        if (n9[i19] == bArr[i19]) {
                         }
                     }
                     return;
@@ -437,10 +437,10 @@ public final class GJ implements InterfaceC4041vE {
         if (bArr.length != 32) {
             throw new IllegalArgumentException("Given public key's length is not 32.");
         }
-        this.f24965b = (byte[]) bArr.clone();
-        this.f24966c = bArr2;
-        this.f24967d = bArr3;
-        if (KF.f25882a == null) {
+        this.f25755b = (byte[]) bArr.clone();
+        this.f25756c = bArr2;
+        this.f25757d = bArr3;
+        if (KF.f26634a == null) {
             throw new IllegalStateException("Could not initialize Ed25519.");
         }
     }

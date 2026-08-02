@@ -9,23 +9,23 @@ import java.util.UUID;
 public final class h {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f7104a = "PsshAtomUtil";
+    private static final String f7890a = "PsshAtomUtil";
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private final UUID f7105a;
+        private final UUID f7891a;
 
         /* renamed from: b, reason: collision with root package name */
-        private final int f7106b;
+        private final int f7892b;
 
         /* renamed from: c, reason: collision with root package name */
-        private final byte[] f7107c;
+        private final byte[] f7893c;
 
         public a(UUID uuid, int i, byte[] bArr) {
-            this.f7105a = uuid;
-            this.f7106b = i;
-            this.f7107c = bArr;
+            this.f7891a = uuid;
+            this.f7892b = i;
+            this.f7893c = bArr;
         }
     }
 
@@ -33,19 +33,19 @@ public final class h {
     }
 
     private static byte[] a(UUID uuid, UUID[] uuidArr, byte[] bArr) {
-        boolean z3 = uuidArr != null;
+        boolean z6 = uuidArr != null;
         int length = bArr != null ? bArr.length : 0;
         int i = length + 32;
-        if (z3) {
+        if (z6) {
             i += (uuidArr.length * 16) + 4;
         }
         ByteBuffer allocate = ByteBuffer.allocate(i);
         allocate.putInt(i);
-        allocate.putInt(com.anythink.basead.exoplayer.e.a.a.f6918Z);
-        allocate.putInt(z3 ? com.anythink.basead.exoplayer.b.bc : 0);
+        allocate.putInt(com.anythink.basead.exoplayer.e.a.a.f7704Z);
+        allocate.putInt(z6 ? com.anythink.basead.exoplayer.b.bc : 0);
         allocate.putLong(uuid.getMostSignificantBits());
         allocate.putLong(uuid.getLeastSignificantBits());
-        if (z3) {
+        if (z6) {
             allocate.putInt(uuidArr.length);
             for (UUID uuid2 : uuidArr) {
                 allocate.putLong(uuid2.getMostSignificantBits());
@@ -64,7 +64,7 @@ public final class h {
         if (c9 == null) {
             return -1;
         }
-        return c9.f7106b;
+        return c9.f7892b;
     }
 
     private static a c(byte[] bArr) {
@@ -73,24 +73,24 @@ public final class h {
             return null;
         }
         sVar.c(0);
-        if (sVar.i() != sVar.a() + 4 || sVar.i() != com.anythink.basead.exoplayer.e.a.a.f6918Z) {
+        if (sVar.i() != sVar.a() + 4 || sVar.i() != com.anythink.basead.exoplayer.e.a.a.f7704Z) {
             return null;
         }
         int a9 = com.anythink.basead.exoplayer.e.a.a.a(sVar.i());
         if (a9 > 1) {
-            Log.w(f7104a, "Unsupported pssh version: ".concat(String.valueOf(a9)));
+            Log.w(f7890a, "Unsupported pssh version: ".concat(String.valueOf(a9)));
             return null;
         }
         UUID uuid = new UUID(sVar.j(), sVar.j());
         if (a9 == 1) {
             sVar.d(sVar.m() * 16);
         }
-        int m4 = sVar.m();
-        if (m4 != sVar.a()) {
+        int m9 = sVar.m();
+        if (m9 != sVar.a()) {
             return null;
         }
-        byte[] bArr2 = new byte[m4];
-        sVar.a(bArr2, 0, m4);
+        byte[] bArr2 = new byte[m9];
+        sVar.a(bArr2, 0, m9);
         return new a(uuid, a9, bArr2);
     }
 
@@ -99,7 +99,7 @@ public final class h {
         if (c9 == null) {
             return null;
         }
-        return c9.f7105a;
+        return c9.f7891a;
     }
 
     public static byte[] a(byte[] bArr, UUID uuid) {
@@ -107,10 +107,10 @@ public final class h {
         if (c9 == null) {
             return null;
         }
-        if (uuid == null || uuid.equals(c9.f7105a)) {
-            return c9.f7107c;
+        if (uuid == null || uuid.equals(c9.f7891a)) {
+            return c9.f7893c;
         }
-        Log.w(f7104a, "UUID mismatch. Expected: " + uuid + ", got: " + c9.f7105a + com.anythink.core.common.d.j.f12378z);
+        Log.w(f7890a, "UUID mismatch. Expected: " + uuid + ", got: " + c9.f7891a + com.anythink.core.common.d.j.f13164z);
         return null;
     }
 
@@ -119,7 +119,7 @@ public final class h {
         int i = length + 32;
         ByteBuffer allocate = ByteBuffer.allocate(i);
         allocate.putInt(i);
-        allocate.putInt(com.anythink.basead.exoplayer.e.a.a.f6918Z);
+        allocate.putInt(com.anythink.basead.exoplayer.e.a.a.f7704Z);
         allocate.putInt(0);
         allocate.putLong(uuid.getMostSignificantBits());
         allocate.putLong(uuid.getLeastSignificantBits());

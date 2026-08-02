@@ -4,44 +4,44 @@ import android.content.Context;
 import android.os.Looper;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
-import p2.C4835j;
-import u2.HandlerC5068A;
+import r2.C4906k;
+import w2.HandlerC5139A;
 
 /* loaded from: classes2.dex */
 public final class J implements Executor {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f25630n;
+    public final /* synthetic */ int f26383n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final Object f25631u;
+    public final Object f26384u;
 
     public /* synthetic */ J(int i, Object obj) {
-        this.f25630n = i;
-        this.f25631u = obj;
+        this.f26383n = i;
+        this.f26384u = obj;
     }
 
     @Override // java.util.concurrent.Executor
     public final void execute(Runnable runnable) {
-        switch (this.f25630n) {
+        switch (this.f26383n) {
             case 0:
-                ((ExecutorService) this.f25631u).execute(runnable);
+                ((ExecutorService) this.f26384u).execute(runnable);
                 return;
             case 1:
                 if (Looper.getMainLooper().getThread() != Thread.currentThread()) {
-                    ((HandlerC5068A) this.f25631u).post(runnable);
+                    ((HandlerC5139A) this.f26384u).post(runnable);
                     return;
                 }
                 try {
                     runnable.run();
                     return;
                 } catch (Throwable th) {
-                    u2.D d2 = C4835j.f39733C.f39738c;
-                    Context context = C4835j.f39733C.f39743h.f29521e;
+                    w2.D d9 = C4906k.f40186C.f40191c;
+                    Context context = C4906k.f40186C.f40196h.f30306e;
                     if (context != null) {
                         try {
-                            if (((Boolean) AbstractC2865Ya.f28684b.r()).booleanValue()) {
-                                T2.b.a(context, th);
+                            if (((Boolean) AbstractC2888Ya.f29459b.r()).booleanValue()) {
+                                V2.b.a(context, th);
                             }
                         } catch (IllegalStateException unused) {
                         }
@@ -49,13 +49,13 @@ public final class J implements Executor {
                     throw th;
                 }
             default:
-                ((C3212ft) this.f25631u).e(runnable);
+                ((C3235ft) this.f26384u).e(runnable);
                 return;
         }
     }
 
     public J() {
-        this.f25630n = 1;
-        this.f25631u = new HandlerC5068A(Looper.getMainLooper(), 3);
+        this.f26383n = 1;
+        this.f26384u = new HandlerC5139A(Looper.getMainLooper(), 1);
     }
 }

@@ -26,11 +26,11 @@ public abstract class ExpandableBehavior extends b {
 
     @Override // B.b
     public final boolean g(CoordinatorLayout coordinatorLayout, View view, int i) {
-        WeakHashMap weakHashMap = X.f2054a;
+        WeakHashMap weakHashMap = X.f2142a;
         if (!view.isLaidOut()) {
             ArrayList j6 = coordinatorLayout.j(view);
             int size = j6.size();
-            for (int i6 = 0; i6 < size; i6++) {
+            for (int i4 = 0; i4 < size; i4++) {
                 b(view);
             }
         }

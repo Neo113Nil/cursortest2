@@ -12,12 +12,12 @@ import com.anythink.basead.exoplayer.b;
 import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.List;
-import n5.InterfaceC4758a;
-import o5.C4800a;
+import n5.InterfaceC4774a;
+import o5.C4804a;
 
 @Deprecated
 /* loaded from: classes2.dex */
-public class XiaomiHomeBadger implements InterfaceC4758a {
+public class XiaomiHomeBadger implements InterfaceC4774a {
     public static final String EXTRA_UPDATE_APP_COMPONENT_NAME = "android.intent.extra.update_application_component_name";
     public static final String EXTRA_UPDATE_APP_MSG_TEXT = "android.intent.extra.update_application_message_text";
     public static final String INTENT_ACTION = "android.intent.action.APPLICATION_MESSAGE_UPDATE";
@@ -43,7 +43,7 @@ public class XiaomiHomeBadger implements InterfaceC4758a {
         }
     }
 
-    @Override // n5.InterfaceC4758a
+    @Override // n5.InterfaceC4774a
     public void executeBadge(Context context, ComponentName componentName, int i) {
         Object valueOf;
         try {
@@ -64,7 +64,7 @@ public class XiaomiHomeBadger implements InterfaceC4758a {
             Intent intent = new Intent(INTENT_ACTION);
             intent.putExtra(EXTRA_UPDATE_APP_COMPONENT_NAME, componentName.getPackageName() + "/" + componentName.getClassName());
             intent.putExtra(EXTRA_UPDATE_APP_MSG_TEXT, String.valueOf(i != 0 ? Integer.valueOf(i) : ""));
-            if (C4800a.canResolveBroadcast(context, intent)) {
+            if (C4804a.canResolveBroadcast(context, intent)) {
                 context.sendBroadcast(intent);
             }
         }
@@ -73,7 +73,7 @@ public class XiaomiHomeBadger implements InterfaceC4758a {
         }
     }
 
-    @Override // n5.InterfaceC4758a
+    @Override // n5.InterfaceC4774a
     public List<String> getSupportLaunchers() {
         return Arrays.asList("com.miui.miuilite", "com.miui.home", "com.miui.miuihome", "com.miui.miuihome2", "com.miui.mihome", "com.miui.mihome2", "com.i.miui.launcher");
     }

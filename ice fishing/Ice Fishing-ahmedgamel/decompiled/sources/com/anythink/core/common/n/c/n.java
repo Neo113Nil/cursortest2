@@ -21,7 +21,7 @@ import java.util.logging.Logger;
 public final class n {
 
     /* renamed from: a, reason: collision with root package name */
-    static final Logger f15890a = Logger.getLogger(n.class.getName());
+    static final Logger f16677a = Logger.getLogger(n.class.getName());
 
     private n() {
     }
@@ -78,12 +78,12 @@ public final class n {
                     socket.close();
                 } catch (AssertionError e9) {
                     if (n.a(e9)) {
-                        n.f15890a.log(Level.WARNING, "Failed to close timed out socket " + socket, (Throwable) e9);
+                        n.f16677a.log(Level.WARNING, "Failed to close timed out socket " + socket, (Throwable) e9);
                         return;
                     }
                     throw e9;
                 } catch (Exception e10) {
-                    n.f15890a.log(Level.WARNING, "Failed to close timed out socket " + socket, (Throwable) e10);
+                    n.f16677a.log(Level.WARNING, "Failed to close timed out socket " + socket, (Throwable) e10);
                 }
             }
         };
@@ -97,19 +97,19 @@ public final class n {
             return new v() { // from class: com.anythink.core.common.n.c.n.1
                 @Override // com.anythink.core.common.n.c.v
                 public final void a(c cVar, long j6) {
-                    y.a(cVar.f15847c, 0L, j6);
+                    y.a(cVar.f16634c, 0L, j6);
                     while (j6 > 0) {
                         x.this.g();
-                        s sVar = cVar.f15846b;
-                        int min = (int) Math.min(j6, sVar.f15916e - sVar.f15915d);
-                        outputStream.write(sVar.f15914c, sVar.f15915d, min);
-                        int i = sVar.f15915d + min;
-                        sVar.f15915d = i;
+                        s sVar = cVar.f16633b;
+                        int min = (int) Math.min(j6, sVar.f16703e - sVar.f16702d);
+                        outputStream.write(sVar.f16701c, sVar.f16702d, min);
+                        int i = sVar.f16702d + min;
+                        sVar.f16702d = i;
                         long j9 = min;
                         j6 -= j9;
-                        cVar.f15847c -= j9;
-                        if (i == sVar.f15916e) {
-                            cVar.f15846b = sVar.c();
+                        cVar.f16634c -= j9;
+                        if (i == sVar.f16703e) {
+                            cVar.f16633b = sVar.c();
                             t.a(sVar);
                         }
                     }
@@ -185,14 +185,14 @@ public final class n {
                     }
                     try {
                         x.this.g();
-                        s g4 = cVar.g(1);
-                        int read = inputStream.read(g4.f15914c, g4.f15916e, (int) Math.min(j6, 8192 - g4.f15916e));
+                        s g9 = cVar.g(1);
+                        int read = inputStream.read(g9.f16701c, g9.f16703e, (int) Math.min(j6, 8192 - g9.f16703e));
                         if (read == -1) {
                             return -1L;
                         }
-                        g4.f15916e += read;
+                        g9.f16703e += read;
                         long j9 = read;
-                        cVar.f15847c += j9;
+                        cVar.f16634c += j9;
                         return j9;
                     } catch (AssertionError e9) {
                         if (n.a(e9)) {
@@ -253,7 +253,7 @@ public final class n {
 
             @Override // com.anythink.core.common.n.c.v
             public final x a() {
-                return x.f15925c;
+                return x.f16712c;
             }
         };
     }

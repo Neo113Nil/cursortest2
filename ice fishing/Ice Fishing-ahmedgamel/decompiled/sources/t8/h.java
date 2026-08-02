@@ -9,19 +9,19 @@ import org.bouncycastle.jsse.BCSSLSocket;
 public final class h implements n {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final f f40935a = new f();
+    public static final f f40897a = new f();
 
     /* renamed from: b, reason: collision with root package name */
-    public static final boolean f40936b;
+    public static final boolean f40898b;
 
     static {
-        boolean z3 = false;
+        boolean z6 = false;
         try {
             Class.forName("org.bouncycastle.jsse.provider.BouncyCastleJsseProvider", false, g.class.getClassLoader());
-            z3 = true;
+            z6 = true;
         } catch (ClassNotFoundException unused) {
         }
-        f40936b = z3;
+        f40898b = z6;
     }
 
     @Override // t8.n
@@ -31,7 +31,7 @@ public final class h implements n {
 
     @Override // t8.n
     public final boolean b() {
-        return f40936b;
+        return f40898b;
     }
 
     @Override // t8.n
@@ -49,8 +49,8 @@ public final class h implements n {
         if (a(sSLSocket)) {
             BCSSLSocket bCSSLSocket = (BCSSLSocket) sSLSocket;
             BCSSLParameters parameters = bCSSLSocket.getParameters();
-            s8.f fVar = s8.f.f40500a;
-            parameters.setApplicationProtocols((String[]) a4.e.c(protocols).toArray(new String[0]));
+            s8.f fVar = s8.f.f40554a;
+            parameters.setApplicationProtocols((String[]) c4.e.n(protocols).toArray(new String[0]));
             bCSSLSocket.setParameters(parameters);
         }
     }

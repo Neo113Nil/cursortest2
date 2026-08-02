@@ -15,10 +15,10 @@ import java.util.zip.ZipInputStream;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f18301a = "UnzipUtility";
+    private static final String f19088a = "UnzipUtility";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final int f18302b = 4096;
+    private static final int f19089b = 4096;
 
     /* JADX WARN: Code restructure failed: missing block: B:103:0x00e6, code lost:
     
@@ -225,7 +225,7 @@ public final class c {
             e = e9;
         }
         try {
-            byte[] bArr = new byte[f18302b];
+            byte[] bArr = new byte[f19089b];
             while (true) {
                 int read = zipInputStream.read(bArr);
                 if (read != -1) {

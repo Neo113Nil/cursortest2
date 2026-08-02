@@ -4,7 +4,7 @@ package com.anythink.basead.exoplayer.j.a;
 public interface i {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f8087a = "exo_";
+    public static final String f8873a = "exo_";
 
     long a(String str);
 

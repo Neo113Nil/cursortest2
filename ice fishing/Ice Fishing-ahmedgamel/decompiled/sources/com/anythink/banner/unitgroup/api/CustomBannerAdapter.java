@@ -47,10 +47,10 @@ public abstract class CustomBannerAdapter extends ATBaseAdAdapter {
             }
 
             @Override // com.anythink.banner.unitgroup.api.CustomBannerEventListener
-            public final void onDeeplinkCallback(boolean z3) {
+            public final void onDeeplinkCallback(boolean z6) {
                 ATCommonImpressionListener aTCommonImpressionListener2 = aTCommonImpressionListener;
                 if (aTCommonImpressionListener2 != null) {
-                    aTCommonImpressionListener2.onDeeplinkCallback(z3);
+                    aTCommonImpressionListener2.onDeeplinkCallback(z6);
                 }
             }
 

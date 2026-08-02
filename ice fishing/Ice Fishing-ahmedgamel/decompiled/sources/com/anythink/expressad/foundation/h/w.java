@@ -10,7 +10,7 @@ import java.io.ObjectOutputStream;
 public final class w {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19733a = "SerializeTools";
+    private static final String f20520a = "SerializeTools";
 
     private static String a(Object obj) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();

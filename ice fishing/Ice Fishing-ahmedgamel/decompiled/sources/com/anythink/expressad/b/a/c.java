@@ -7,60 +7,60 @@ import com.anythink.expressad.foundation.d.d;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    private Context f18141a;
+    private Context f18928a;
 
     /* renamed from: b, reason: collision with root package name */
-    private String f18142b;
+    private String f18929b;
 
     /* renamed from: c, reason: collision with root package name */
-    private String f18143c;
+    private String f18930c;
 
     /* renamed from: d, reason: collision with root package name */
-    private String f18144d;
+    private String f18931d;
 
     /* renamed from: e, reason: collision with root package name */
-    private d f18145e;
+    private d f18932e;
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f18146f;
+    private boolean f18933f;
 
     /* renamed from: g, reason: collision with root package name */
-    private boolean f18147g;
+    private boolean f18934g;
 
     /* renamed from: h, reason: collision with root package name */
-    private boolean f18148h;
+    private boolean f18935h;
     private int i;
 
     public final Context a() {
-        return this.f18141a;
+        return this.f18928a;
     }
 
     public final String b() {
-        return this.f18142b;
+        return this.f18929b;
     }
 
     public final String c() {
-        return this.f18143c;
+        return this.f18930c;
     }
 
     public final String d() {
-        return this.f18144d;
+        return this.f18931d;
     }
 
     public final d e() {
-        return this.f18145e;
+        return this.f18932e;
     }
 
     public final boolean f() {
-        return this.f18146f;
+        return this.f18933f;
     }
 
     public final boolean g() {
-        return this.f18147g;
+        return this.f18934g;
     }
 
     public final boolean h() {
-        return this.f18148h;
+        return this.f18935h;
     }
 
     public final int i() {
@@ -68,35 +68,35 @@ public final class c {
     }
 
     public final void a(Context context) {
-        this.f18141a = context;
+        this.f18928a = context;
     }
 
     public final void b(String str) {
-        this.f18143c = str;
+        this.f18930c = str;
     }
 
     public final void c(String str) {
-        this.f18144d = str;
+        this.f18931d = str;
     }
 
     public final void a(String str) {
-        this.f18142b = str;
+        this.f18929b = str;
     }
 
-    public final void b(boolean z3) {
-        this.f18147g = z3;
+    public final void b(boolean z6) {
+        this.f18934g = z6;
     }
 
-    public final void c(boolean z3) {
-        this.f18148h = z3;
+    public final void c(boolean z6) {
+        this.f18935h = z6;
     }
 
     public final void a(d dVar) {
-        this.f18145e = dVar;
+        this.f18932e = dVar;
     }
 
-    public final void a(boolean z3) {
-        this.f18146f = z3;
+    public final void a(boolean z6) {
+        this.f18933f = z6;
     }
 
     public final void a(int i) {

@@ -19,65 +19,65 @@ import java.util.ArrayList;
 public final class q implements ActionMode.Callback {
 
     /* renamed from: a, reason: collision with root package name */
-    public final ActionMode.Callback f3128a;
+    public final ActionMode.Callback f3245a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final TextView f3129b;
+    public final TextView f3246b;
 
     /* renamed from: c, reason: collision with root package name */
-    public Class f3130c;
+    public Class f3247c;
 
     /* renamed from: d, reason: collision with root package name */
-    public Method f3131d;
+    public Method f3248d;
 
     /* renamed from: e, reason: collision with root package name */
-    public boolean f3132e;
+    public boolean f3249e;
 
     /* renamed from: f, reason: collision with root package name */
-    public boolean f3133f = false;
+    public boolean f3250f = false;
 
     public q(ActionMode.Callback callback, TextView textView) {
-        this.f3128a = callback;
-        this.f3129b = textView;
+        this.f3245a = callback;
+        this.f3246b = textView;
     }
 
     @Override // android.view.ActionMode.Callback
     public final boolean onActionItemClicked(ActionMode actionMode, MenuItem menuItem) {
-        return this.f3128a.onActionItemClicked(actionMode, menuItem);
+        return this.f3245a.onActionItemClicked(actionMode, menuItem);
     }
 
     @Override // android.view.ActionMode.Callback
     public final boolean onCreateActionMode(ActionMode actionMode, Menu menu) {
-        return this.f3128a.onCreateActionMode(actionMode, menu);
+        return this.f3245a.onCreateActionMode(actionMode, menu);
     }
 
     @Override // android.view.ActionMode.Callback
     public final void onDestroyActionMode(ActionMode actionMode) {
-        this.f3128a.onDestroyActionMode(actionMode);
+        this.f3245a.onDestroyActionMode(actionMode);
     }
 
     @Override // android.view.ActionMode.Callback
     public final boolean onPrepareActionMode(ActionMode actionMode, Menu menu) {
-        TextView textView = this.f3129b;
+        TextView textView = this.f3246b;
         Context context = textView.getContext();
         PackageManager packageManager = context.getPackageManager();
-        boolean z3 = this.f3133f;
+        boolean z6 = this.f3250f;
         Class cls = Integer.TYPE;
-        if (!z3) {
-            this.f3133f = true;
+        if (!z6) {
+            this.f3250f = true;
             try {
                 Class<?> cls2 = Class.forName("com.android.internal.view.menu.MenuBuilder");
-                this.f3130c = cls2;
-                this.f3131d = cls2.getDeclaredMethod("removeItemAt", cls);
-                this.f3132e = true;
+                this.f3247c = cls2;
+                this.f3248d = cls2.getDeclaredMethod("removeItemAt", cls);
+                this.f3249e = true;
             } catch (ClassNotFoundException | NoSuchMethodException unused) {
-                this.f3130c = null;
-                this.f3131d = null;
-                this.f3132e = false;
+                this.f3247c = null;
+                this.f3248d = null;
+                this.f3249e = false;
             }
         }
         try {
-            Method declaredMethod = (this.f3132e && this.f3130c.isInstance(menu)) ? this.f3131d : menu.getClass().getDeclaredMethod("removeItemAt", cls);
+            Method declaredMethod = (this.f3249e && this.f3247c.isInstance(menu)) ? this.f3248d : menu.getClass().getDeclaredMethod("removeItemAt", cls);
             for (int size = menu.size() - 1; size >= 0; size--) {
                 MenuItem item = menu.getItem(size);
                 if (item.getIntent() != null && "android.intent.action.PROCESS_TEXT".equals(item.getIntent().getAction())) {
@@ -107,6 +107,6 @@ public final class q implements ActionMode.Callback {
             }
         } catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException unused2) {
         }
-        return this.f3128a.onPrepareActionMode(actionMode, menu);
+        return this.f3245a.onPrepareActionMode(actionMode, menu);
     }
 }

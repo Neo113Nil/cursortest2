@@ -4,11 +4,11 @@ package com.anythink.expressad.foundation.g.b;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f19135a = 1;
+    public static final int f19922a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f19136b = 2;
+    public static final int f19923b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f19137c = 3;
+    public static final int f19924c = 3;
 }

@@ -10,62 +10,62 @@ import java.util.List;
 public class q extends c<com.anythink.core.common.a.n> {
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile q f13085b;
+    private static volatile q f13871b;
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f13086a;
+    private final String f13872a;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f13087a = "video_res_cache_info";
+        public static final String f13873a = "video_res_cache_info";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f13088b = "video_url";
+        public static final String f13874b = "video_url";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f13089c = "file_path";
+        public static final String f13875c = "file_path";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f13090d = "ready_rate";
+        public static final String f13876d = "ready_rate";
 
         /* renamed from: e, reason: collision with root package name */
-        public static final String f13091e = "download_size";
+        public static final String f13877e = "download_size";
 
         /* renamed from: f, reason: collision with root package name */
-        public static final String f13092f = "total_size";
+        public static final String f13878f = "total_size";
 
         /* renamed from: g, reason: collision with root package name */
-        public static final String f13093g = "update_time";
+        public static final String f13879g = "update_time";
 
         /* renamed from: h, reason: collision with root package name */
-        public static final String f13094h = "CREATE TABLE IF NOT EXISTS video_res_cache_info(video_url TEXT, file_path TEXT, ready_rate INTEGER, download_size INTEGER, total_size INTEGER, update_time INTEGER )";
+        public static final String f13880h = "CREATE TABLE IF NOT EXISTS video_res_cache_info(video_url TEXT, file_path TEXT, ready_rate INTEGER, download_size INTEGER, total_size INTEGER, update_time INTEGER )";
     }
 
     private q(d dVar) {
         super(dVar);
-        this.f13086a = com.anythink.expressad.foundation.d.d.bu;
+        this.f13872a = com.anythink.expressad.foundation.d.d.bu;
     }
 
     public static q a(d dVar) {
-        if (f13085b == null) {
+        if (f13871b == null) {
             synchronized (o.class) {
                 try {
-                    if (f13085b == null) {
-                        f13085b = new q(dVar);
+                    if (f13871b == null) {
+                        f13871b = new q(dVar);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f13085b;
+        return f13871b;
     }
 
     private void d(String str) {
         Cursor cursor = null;
         try {
-            cursor = c().query(a.f13087a, null, null, null, null, null, null);
+            cursor = c().query(a.f13873a, null, null, null, null, null, null);
             cursor.getCount();
             cursor.close();
         } catch (Throwable th) {
@@ -104,7 +104,7 @@ public class q extends c<com.anythink.core.common.a.n> {
             return false;
         }
         try {
-            cursor = c().query(a.f13087a, new String[]{"video_url"}, "video_url=?", new String[]{str}, null, null, null);
+            cursor = c().query(a.f13873a, new String[]{"video_url"}, "video_url=?", new String[]{str}, null, null, null);
             if (cursor != null) {
                 try {
                     if (cursor.getCount() > 0) {
@@ -127,7 +127,7 @@ public class q extends c<com.anythink.core.common.a.n> {
         try {
             ContentValues contentValues = new ContentValues();
             contentValues.put("update_time", Long.valueOf(System.currentTimeMillis()));
-            d().update(a.f13087a, contentValues, "video_url = ? ", new String[]{str});
+            d().update(a.f13873a, contentValues, "video_url = ? ", new String[]{str});
         } catch (Throwable unused) {
         }
     }
@@ -137,7 +137,7 @@ public class q extends c<com.anythink.core.common.a.n> {
             return;
         }
         try {
-            d().delete(a.f13087a, "video_url=?", new String[]{str});
+            d().delete(a.f13873a, "video_url=?", new String[]{str});
         } catch (Throwable th) {
             th.getMessage();
         }
@@ -162,7 +162,7 @@ public class q extends c<com.anythink.core.common.a.n> {
         ArrayList arrayList = new ArrayList();
         Cursor cursor = null;
         try {
-            cursor = c().query(a.f13087a, null, null, null, null, null, "update_time DESC");
+            cursor = c().query(a.f13873a, null, null, null, null, null, "update_time DESC");
             if (cursor.getCount() > 0 && cursor.moveToPosition(((int) Math.round(((cursor.getCount() * 1.0d) + 1.0d) / 2.0d)) - 1)) {
                 long j6 = cursor.getLong(cursor.getColumnIndex("update_time"));
                 do {
@@ -170,12 +170,12 @@ public class q extends c<com.anythink.core.common.a.n> {
                     nVar.a(cursor.getString(cursor.getColumnIndex("video_url")));
                     nVar.b(cursor.getString(cursor.getColumnIndex("file_path")));
                     nVar.a(cursor.getInt(cursor.getColumnIndex("ready_rate")));
-                    nVar.b(cursor.getLong(cursor.getColumnIndex(a.f13091e)));
-                    nVar.a(cursor.getLong(cursor.getColumnIndex(a.f13092f)));
+                    nVar.b(cursor.getLong(cursor.getColumnIndex(a.f13877e)));
+                    nVar.a(cursor.getLong(cursor.getColumnIndex(a.f13878f)));
                     nVar.c(cursor.getLong(cursor.getColumnIndex("update_time")));
                     arrayList.add(nVar);
                 } while (cursor.moveToNext());
-                d().delete(a.f13087a, "update_time<=?", new String[]{String.valueOf(j6)});
+                d().delete(a.f13873a, "update_time<=?", new String[]{String.valueOf(j6)});
             }
         } catch (Throwable th) {
             try {
@@ -199,13 +199,13 @@ public class q extends c<com.anythink.core.common.a.n> {
                     contentValues.put("video_url", str);
                     contentValues.put("file_path", str2);
                     contentValues.put("ready_rate", Integer.valueOf(i));
-                    contentValues.put(a.f13091e, Long.valueOf(j9));
-                    contentValues.put(a.f13092f, Long.valueOf(j6));
+                    contentValues.put(a.f13877e, Long.valueOf(j9));
+                    contentValues.put(a.f13878f, Long.valueOf(j6));
                     contentValues.put("update_time", Long.valueOf(System.currentTimeMillis()));
                     if (e(str)) {
-                        d().update(a.f13087a, contentValues, "video_url = ? ", new String[]{str});
+                        d().update(a.f13873a, contentValues, "video_url = ? ", new String[]{str});
                     } else {
-                        d().insert(a.f13087a, null, contentValues);
+                        d().insert(a.f13873a, null, contentValues);
                     }
                 } catch (Throwable unused) {
                 }
@@ -223,15 +223,15 @@ public class q extends c<com.anythink.core.common.a.n> {
     public final com.anythink.core.common.a.n a(String str) {
         Cursor cursor;
         try {
-            cursor = c().query(a.f13087a, null, "video_url=?", new String[]{str}, null, null, null);
+            cursor = c().query(a.f13873a, null, "video_url=?", new String[]{str}, null, null, null);
             try {
                 if (cursor.moveToNext()) {
                     com.anythink.core.common.a.n nVar = new com.anythink.core.common.a.n();
                     nVar.a(str);
                     nVar.b(cursor.getString(cursor.getColumnIndex("file_path")));
                     nVar.a(cursor.getInt(cursor.getColumnIndex("ready_rate")));
-                    nVar.b(cursor.getLong(cursor.getColumnIndex(a.f13091e)));
-                    nVar.a(cursor.getLong(cursor.getColumnIndex(a.f13092f)));
+                    nVar.b(cursor.getLong(cursor.getColumnIndex(a.f13877e)));
+                    nVar.a(cursor.getLong(cursor.getColumnIndex(a.f13878f)));
                     nVar.c(cursor.getLong(cursor.getColumnIndex("update_time")));
                     cursor.close();
                     cursor.close();
@@ -249,7 +249,7 @@ public class q extends c<com.anythink.core.common.a.n> {
     public final long a() {
         Cursor cursor = null;
         try {
-            cursor = c().query(a.f13087a, new String[]{"sum(download_size)"}, null, null, null, null, null);
+            cursor = c().query(a.f13873a, new String[]{"sum(download_size)"}, null, null, null, null, null);
             if (cursor.moveToNext()) {
                 long j6 = cursor.getLong(0);
                 cursor.close();

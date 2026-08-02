@@ -1,7 +1,7 @@
 package V7;
 
+import E2.C0316m;
 import X7.u;
-import g1.C4523c;
 import java.util.concurrent.CancellationException;
 import kotlin.jvm.internal.r;
 import u7.v;
@@ -10,10 +10,10 @@ import u7.v;
 public abstract class o {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final D2.b f3358a = new D2.b("NONE", 1);
+    public static final C0316m f3488a = new C0316m("NONE", 1);
 
     /* renamed from: b, reason: collision with root package name */
-    public static final D2.b f3359b = new D2.b("PENDING", 1);
+    public static final C0316m f3489b = new C0316m("PENDING", 1);
 
     /* JADX WARN: Code restructure failed: missing block: B:27:0x0090, code lost:
     
@@ -32,7 +32,7 @@ public abstract class o {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final Object a(c cVar, U7.o oVar, boolean z3, B7.c cVar2) {
+    public static final Object a(c cVar, U7.o oVar, boolean z6, B7.c cVar2) {
         d dVar;
         int i;
         U7.b bVar;
@@ -43,32 +43,32 @@ public abstract class o {
         try {
             if (cVar2 instanceof d) {
                 dVar = (d) cVar2;
-                int i6 = dVar.f3327y;
-                if ((i6 & Integer.MIN_VALUE) != 0) {
-                    dVar.f3327y = i6 - Integer.MIN_VALUE;
-                    Object obj = dVar.f3326x;
-                    A7.a aVar = A7.a.f58n;
-                    i = dVar.f3327y;
+                int i4 = dVar.f3457y;
+                if ((i4 & Integer.MIN_VALUE) != 0) {
+                    dVar.f3457y = i4 - Integer.MIN_VALUE;
+                    Object obj = dVar.f3456x;
+                    A7.a aVar = A7.a.f215n;
+                    i = dVar.f3457y;
                     if (i != 0) {
-                        com.bumptech.glide.d.k(obj);
-                        U7.c cVar4 = oVar.f3264w;
+                        Q3.b.s(obj);
+                        U7.c cVar4 = oVar.f3387w;
                         cVar4.getClass();
                         bVar = new U7.b(cVar4);
                         oVar3 = oVar;
-                        dVar.f3322n = cVar;
-                        dVar.f3323u = oVar3;
-                        dVar.f3324v = bVar;
-                        dVar.f3325w = z3;
-                        dVar.f3327y = 1;
+                        dVar.f3452n = cVar;
+                        dVar.f3453u = oVar3;
+                        dVar.f3454v = bVar;
+                        dVar.f3455w = z6;
+                        dVar.f3457y = 1;
                         obj = bVar.b(dVar);
                         if (obj != aVar) {
                         }
                     } else if (i == 1) {
-                        z3 = dVar.f3325w;
-                        bVar2 = dVar.f3324v;
-                        ?? r9 = dVar.f3323u;
-                        cVar3 = dVar.f3322n;
-                        com.bumptech.glide.d.k(obj);
+                        z6 = dVar.f3455w;
+                        bVar2 = dVar.f3454v;
+                        ?? r9 = dVar.f3453u;
+                        cVar3 = dVar.f3452n;
+                        Q3.b.s(obj);
                         oVar2 = r9;
                         if (!((Boolean) obj).booleanValue()) {
                         }
@@ -76,21 +76,21 @@ public abstract class o {
                         if (i != 2) {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
-                        z3 = dVar.f3325w;
-                        bVar2 = dVar.f3324v;
-                        ?? r92 = dVar.f3323u;
-                        cVar3 = dVar.f3322n;
-                        com.bumptech.glide.d.k(obj);
+                        z6 = dVar.f3455w;
+                        bVar2 = dVar.f3454v;
+                        ?? r92 = dVar.f3453u;
+                        cVar3 = dVar.f3452n;
+                        Q3.b.s(obj);
                         U7.o oVar4 = r92;
                         c cVar5 = cVar3;
                         bVar = bVar2;
                         cVar = cVar5;
                         oVar3 = oVar4;
-                        dVar.f3322n = cVar;
-                        dVar.f3323u = oVar3;
-                        dVar.f3324v = bVar;
-                        dVar.f3325w = z3;
-                        dVar.f3327y = 1;
+                        dVar.f3452n = cVar;
+                        dVar.f3453u = oVar3;
+                        dVar.f3454v = bVar;
+                        dVar.f3455w = z6;
+                        dVar.f3457y = 1;
                         obj = bVar.b(dVar);
                         if (obj != aVar) {
                             return aVar;
@@ -100,27 +100,27 @@ public abstract class o {
                         bVar2 = bVar3;
                         oVar2 = oVar3;
                         if (!((Boolean) obj).booleanValue()) {
-                            if (z3) {
+                            if (z6) {
                                 oVar2.a(null);
                             }
-                            return v.f41353a;
+                            return v.f41073a;
                         }
-                        Object obj2 = bVar2.f3223n;
-                        D2.b bVar4 = U7.e.f3251p;
-                        if (obj2 == bVar4) {
+                        Object obj2 = bVar2.f3346n;
+                        C0316m c0316m = U7.e.f3374p;
+                        if (obj2 == c0316m) {
                             throw new IllegalStateException("`hasNext()` has not been invoked");
                         }
-                        bVar2.f3223n = bVar4;
-                        if (obj2 == U7.e.f3247l) {
-                            Throwable p9 = bVar2.f3225v.p();
-                            int i9 = u.f3861a;
+                        bVar2.f3346n = c0316m;
+                        if (obj2 == U7.e.f3370l) {
+                            Throwable p9 = bVar2.f3348v.p();
+                            int i6 = u.f3816a;
                             throw p9;
                         }
-                        dVar.f3322n = cVar3;
-                        dVar.f3323u = oVar2;
-                        dVar.f3324v = bVar2;
-                        dVar.f3325w = z3;
-                        dVar.f3327y = 2;
+                        dVar.f3452n = cVar3;
+                        dVar.f3453u = oVar2;
+                        dVar.f3454v = bVar2;
+                        dVar.f3455w = z6;
+                        dVar.f3457y = 2;
                         oVar4 = oVar2;
                     }
                 }
@@ -131,7 +131,7 @@ public abstract class o {
             try {
                 throw th;
             } catch (Throwable th2) {
-                if (z3) {
+                if (z6) {
                     CancellationException cancellationException = th instanceof CancellationException ? th : null;
                     if (cancellationException == null) {
                         cancellationException = new CancellationException("Channel was consumed, consumer had failed");
@@ -143,9 +143,9 @@ public abstract class o {
             }
         }
         dVar = new d(cVar2);
-        Object obj3 = dVar.f3326x;
-        A7.a aVar2 = A7.a.f58n;
-        i = dVar.f3327y;
+        Object obj3 = dVar.f3456x;
+        A7.a aVar2 = A7.a.f215n;
+        i = dVar.f3457y;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:19:0x005d  */
@@ -154,29 +154,29 @@ public abstract class o {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final Object b(C4523c c4523c, B7.c cVar) {
-        j jVar;
+    public static final Object b(I0.j jVar, B7.c cVar) {
+        j jVar2;
         int i;
         r rVar;
         W7.a e9;
         i iVar;
         if (cVar instanceof j) {
-            jVar = (j) cVar;
-            int i6 = jVar.f3347w;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                jVar.f3347w = i6 - Integer.MIN_VALUE;
-                Object obj = jVar.f3346v;
-                Object obj2 = A7.a.f58n;
-                i = jVar.f3347w;
+            jVar2 = (j) cVar;
+            int i4 = jVar2.f3477w;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                jVar2.f3477w = i4 - Integer.MIN_VALUE;
+                Object obj = jVar2.f3476v;
+                Object obj2 = A7.a.f215n;
+                i = jVar2.f3477w;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     r rVar2 = new r();
                     i iVar2 = new i(0, rVar2);
                     try {
-                        jVar.f3344n = rVar2;
-                        jVar.f3345u = iVar2;
-                        jVar.f3347w = 1;
-                        if (c4523c.p(iVar2, jVar) == obj2) {
+                        jVar2.f3474n = rVar2;
+                        jVar2.f3475u = iVar2;
+                        jVar2.f3477w = 1;
+                        if (jVar.l(iVar2, jVar2) == obj2) {
                             return obj2;
                         }
                         rVar = rVar2;
@@ -184,35 +184,35 @@ public abstract class o {
                         rVar = rVar2;
                         e9 = e10;
                         iVar = iVar2;
-                        if (e9.f3413n != iVar) {
+                        if (e9.f3575n != iVar) {
                             throw e9;
                         }
-                        return rVar.f38717n;
+                        return rVar.f38644n;
                     }
                 } else {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    iVar = jVar.f3345u;
-                    rVar = jVar.f3344n;
+                    iVar = jVar2.f3475u;
+                    rVar = jVar2.f3474n;
                     try {
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                     } catch (W7.a e11) {
                         e9 = e11;
-                        if (e9.f3413n != iVar) {
+                        if (e9.f3575n != iVar) {
                         }
-                        return rVar.f38717n;
+                        return rVar.f38644n;
                     }
                 }
-                return rVar.f38717n;
+                return rVar.f38644n;
             }
         }
-        jVar = new j(cVar);
-        Object obj3 = jVar.f3346v;
-        Object obj22 = A7.a.f58n;
-        i = jVar.f3347w;
+        jVar2 = new j(cVar);
+        Object obj3 = jVar2.f3476v;
+        Object obj22 = A7.a.f215n;
+        i = jVar2.f3477w;
         if (i != 0) {
         }
-        return rVar.f38717n;
+        return rVar.f38644n;
     }
 }

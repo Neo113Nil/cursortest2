@@ -16,7 +16,7 @@ public final class L2 {
     public boolean A08;
     public boolean A09;
     public boolean A0A;
-    public final InterfaceC0947Hd A0F;
+    public final InterfaceC0967Hd A0F;
     public final boolean A0G;
     public final boolean A0H;
     public final SparseArray<HR> A0D = new SparseArray<>();
@@ -39,21 +39,21 @@ public final class L2 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void A05(byte[] bArr, int i, int i6) {
+    public final void A05(byte[] bArr, int i, int i4) {
         String[] strArr;
         if (this.A08) {
-            int i9 = i6 - i;
-            if (this.A0B.length < this.A00 + i9) {
+            int i6 = i4 - i;
+            if (this.A0B.length < this.A00 + i6) {
                 byte[] bArr2 = this.A0B;
-                int i10 = this.A00;
+                int i9 = this.A00;
                 if (A0I[2].charAt(10) != 'z') {
                     A0I[3] = "fF62whIImPZuUxQ3wOrH7qahZ1W3GZDe";
-                    this.A0B = Arrays.copyOf(bArr2, (i10 + i9) * 2);
+                    this.A0B = Arrays.copyOf(bArr2, (i9 + i6) * 2);
                 }
                 throw new RuntimeException();
             }
-            System.arraycopy(bArr, i, this.A0B, this.A00, i9);
-            this.A00 += i9;
+            System.arraycopy(bArr, i, this.A0B, this.A00, i6);
+            this.A00 += i6;
             this.A0E.A08(this.A0B, 0, this.A00);
             if (this.A0E.A0B(8)) {
                 this.A0E.A06();
@@ -90,20 +90,20 @@ public final class L2 {
                                 }
                             }
                             HU hu = this.A0E;
-                            int i11 = hr.A02;
+                            int i10 = hr.A02;
                             if (A0I[3].charAt(31) != 'R') {
                                 String[] strArr3 = A0I;
                                 strArr3[4] = "Y";
                                 strArr3[0] = "LBdvSwh0xb7fkSyUzFJrubBBNhQW";
-                                if (!hu.A0B(i11)) {
+                                if (!hu.A0B(i10)) {
                                     return;
                                 }
-                            } else if (!hu.A0B(i11)) {
+                            } else if (!hu.A0B(i10)) {
                                 return;
                             }
-                            boolean z3 = false;
                             boolean z6 = false;
                             boolean z9 = false;
+                            boolean z10 = false;
                             int A052 = this.A0E.A05(hr.A02);
                             if (hr.A0C) {
                                 if (A0I[1].length() != 10) {
@@ -115,43 +115,43 @@ public final class L2 {
                                 if (!this.A0E.A0B(1)) {
                                     return;
                                 }
-                                z3 = this.A0E.A0A();
-                                if (z3) {
+                                z6 = this.A0E.A0A();
+                                if (z6) {
                                     if (!this.A0E.A0B(1)) {
                                         return;
                                     }
-                                    z9 = this.A0E.A0A();
-                                    z6 = true;
+                                    z10 = this.A0E.A0A();
+                                    z9 = true;
                                 } else if (A0I[3].charAt(31) != 'R') {
                                     String[] strArr4 = A0I;
                                     strArr4[4] = "3";
                                     strArr4[0] = "19iwLQZiC4kcbLDxX6EkwfmmLREP";
                                 }
                             }
-                            boolean z10 = this.A01 == 5;
-                            int i12 = 0;
-                            if (z10) {
+                            boolean z11 = this.A01 == 5;
+                            int i11 = 0;
+                            if (z11) {
                                 if (!this.A0E.A09()) {
                                     return;
                                 } else {
-                                    i12 = this.A0E.A04();
+                                    i11 = this.A0E.A04();
                                 }
                             }
+                            int i12 = 0;
                             int i13 = 0;
                             int i14 = 0;
                             int i15 = 0;
-                            int i16 = 0;
                             if (hr.A07 != 0) {
                                 if (hr.A07 == 1 && !hr.A0B) {
                                     if (!this.A0E.A09()) {
                                         return;
                                     }
-                                    i15 = this.A0E.A03();
-                                    if (hq.A02 && !z3) {
+                                    i14 = this.A0E.A03();
+                                    if (hq.A02 && !z6) {
                                         if (!this.A0E.A09()) {
                                             return;
                                         } else {
-                                            i16 = this.A0E.A03();
+                                            i15 = this.A0E.A03();
                                         }
                                     }
                                 }
@@ -162,12 +162,12 @@ public final class L2 {
                                 if (!this.A0E.A0B(hr.A06)) {
                                     return;
                                 }
-                                i13 = this.A0E.A05(hr.A06);
-                                if (hq.A02 && !z3) {
+                                i12 = this.A0E.A05(hr.A06);
+                                if (hq.A02 && !z6) {
                                     if (!this.A0E.A09()) {
                                         return;
                                     }
-                                    i14 = this.A0E.A03();
+                                    i13 = this.A0E.A03();
                                     if (A0I[3].charAt(31) != 'R') {
                                         A0I[2] = "kr3yeibAy42hiyE0dA9TA4Dy6aRxjun2";
                                     } else {
@@ -181,7 +181,7 @@ public final class L2 {
                                     A0I[6] = "3KoChTLYrqIZNd";
                                 }
                             }
-                            this.A07.A04(hr, A05, A04, A052, A042, z3, z6, z9, z10, i12, i13, i14, i15, i16);
+                            this.A07.A04(hr, A05, A04, A052, A042, z6, z9, z10, z11, i11, i12, i13, i14, i15);
                             this.A08 = false;
                         }
                     }
@@ -190,19 +190,19 @@ public final class L2 {
         }
     }
 
-    public L2(InterfaceC0947Hd interfaceC0947Hd, boolean z3, boolean z6) {
-        this.A0F = interfaceC0947Hd;
-        this.A0G = z3;
-        this.A0H = z6;
+    public L2(InterfaceC0967Hd interfaceC0967Hd, boolean z6, boolean z9) {
+        this.A0F = interfaceC0967Hd;
+        this.A0G = z6;
+        this.A0H = z9;
         A01();
     }
 
     private void A00(int i) {
-        if (this.A05 == b.f6382b) {
+        if (this.A05 == b.f7168b) {
             return;
         }
-        boolean z3 = this.A0A;
-        this.A0F.AIu(this.A05, z3 ? 1 : 0, (int) (this.A02 - this.A04), i, null);
+        boolean z6 = this.A0A;
+        this.A0F.AIu(this.A05, z6 ? 1 : 0, (int) (this.A02 - this.A04), i, null);
     }
 
     public final void A01() {
@@ -257,25 +257,25 @@ public final class L2 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final boolean A07(long j6, int i, boolean z3, boolean z6) {
+    public final boolean A07(long j6, int i, boolean z6, boolean z9) {
         boolean A00;
-        boolean z9 = false;
+        boolean z10 = false;
         if (this.A01 != 9) {
             if (this.A0H) {
                 A00 = this.A07.A00(this.A06);
             }
             if (this.A0G) {
-                z6 = this.A07.A05();
+                z9 = this.A07.A05();
             }
-            boolean z10 = this.A0A;
-            if (this.A01 != 5 || (z6 && this.A01 == 1)) {
-                z9 = true;
+            boolean z11 = this.A0A;
+            if (this.A01 != 5 || (z9 && this.A01 == 1)) {
+                z10 = true;
             }
-            this.A0A = z10 | z9;
+            this.A0A = z11 | z10;
             boolean treatIFrameAsKeyframe = this.A0A;
             return treatIFrameAsKeyframe;
         }
-        if (z3 && this.A09) {
+        if (z6 && this.A09) {
             A00(i + ((int) (j6 - this.A02)));
         }
         this.A04 = this.A02;
@@ -284,11 +284,11 @@ public final class L2 {
         this.A09 = true;
         if (this.A0G) {
         }
-        boolean z102 = this.A0A;
+        boolean z112 = this.A0A;
         if (this.A01 != 5) {
         }
-        z9 = true;
-        this.A0A = z102 | z9;
+        z10 = true;
+        this.A0A = z112 | z10;
         boolean treatIFrameAsKeyframe2 = this.A0A;
         return treatIFrameAsKeyframe2;
     }

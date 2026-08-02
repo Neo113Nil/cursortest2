@@ -8,28 +8,28 @@ import android.text.TextUtils;
 public final class k {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f19630a = "layout";
+    public static final String f20417a = "layout";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f19631b = "id";
+    public static final String f20418b = "id";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f19632c = "drawable";
+    public static final String f20419c = "drawable";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final String f19633d = "color";
+    public static final String f20420d = "color";
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f19634e = "style";
+    public static final String f20421e = "style";
 
     /* renamed from: f, reason: collision with root package name */
-    public static final String f19635f = "anim";
+    public static final String f20422f = "anim";
 
     /* renamed from: g, reason: collision with root package name */
-    public static final String f19636g = "string";
+    public static final String f20423g = "string";
 
     /* renamed from: h, reason: collision with root package name */
-    public static final int f19637h = -1;
+    public static final int f20424h = -1;
     private static final String i = "ResourceUtil";
 
     public static Resources a(Context context) {

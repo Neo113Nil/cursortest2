@@ -7,7 +7,7 @@ import java.util.Map;
 public final class j<K, V> extends LinkedHashMap<K, V> {
 
     /* renamed from: a, reason: collision with root package name */
-    private int f14824a;
+    private int f15610a;
 
     public j() {
         this((byte) 0);
@@ -15,11 +15,11 @@ public final class j<K, V> extends LinkedHashMap<K, V> {
 
     @Override // java.util.LinkedHashMap
     public final boolean removeEldestEntry(Map.Entry<K, V> entry) {
-        return size() > this.f14824a;
+        return size() > this.f15610a;
     }
 
     private j(byte b9) {
         super(256, 1.0f, true);
-        this.f14824a = 256;
+        this.f15610a = 256;
     }
 }

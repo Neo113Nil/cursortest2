@@ -9,13 +9,13 @@ public interface C4X {
 
     boolean A9n(int i);
 
-    C2341pK ACg(int i);
+    C2361pK ACg(int i);
 
-    C2341pK ACh(int i, int i6, int i9);
+    C2361pK ACh(int i, int i4, int i6);
 
-    C2341pK ACi(int i, int i6, int i9, Object obj);
+    C2361pK ACi(int i, int i4, int i6, Object obj);
 
-    C2341pK ACj(int i, Object obj);
+    C2361pK ACj(int i, Object obj);
 
     void AIT(int i);
 

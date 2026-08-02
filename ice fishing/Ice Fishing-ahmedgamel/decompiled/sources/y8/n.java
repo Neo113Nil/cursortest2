@@ -6,38 +6,38 @@ import java.io.FileOutputStream;
 public final class n implements v {
 
     /* renamed from: n, reason: collision with root package name */
-    public final FileOutputStream f41972n;
+    public final FileOutputStream f41943n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final z f41973u;
+    public final z f41944u;
 
     public n(FileOutputStream out, z zVar) {
         kotlin.jvm.internal.h.e(out, "out");
-        this.f41972n = out;
-        this.f41973u = zVar;
+        this.f41943n = out;
+        this.f41944u = zVar;
     }
 
     @Override // y8.v
     public final z L() {
-        return this.f41973u;
+        return this.f41944u;
     }
 
     @Override // y8.v
     public final void T(long j6, e eVar) {
-        b.d(eVar.f41953u, 0L, j6);
+        b.d(eVar.f41924u, 0L, j6);
         while (j6 > 0) {
-            this.f41973u.f();
-            s sVar = eVar.f41952n;
+            this.f41944u.f();
+            s sVar = eVar.f41923n;
             kotlin.jvm.internal.h.b(sVar);
-            int min = (int) Math.min(j6, sVar.f41989c - sVar.f41988b);
-            this.f41972n.write(sVar.f41987a, sVar.f41988b, min);
-            int i = sVar.f41988b + min;
-            sVar.f41988b = i;
+            int min = (int) Math.min(j6, sVar.f41960c - sVar.f41959b);
+            this.f41943n.write(sVar.f41958a, sVar.f41959b, min);
+            int i = sVar.f41959b + min;
+            sVar.f41959b = i;
             long j9 = min;
             j6 -= j9;
-            eVar.f41953u -= j9;
-            if (i == sVar.f41989c) {
-                eVar.f41952n = sVar.a();
+            eVar.f41924u -= j9;
+            if (i == sVar.f41960c) {
+                eVar.f41923n = sVar.a();
                 t.a(sVar);
             }
         }
@@ -45,15 +45,15 @@ public final class n implements v {
 
     @Override // y8.v, java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
-        this.f41972n.close();
+        this.f41943n.close();
     }
 
     @Override // y8.v, java.io.Flushable
     public final void flush() {
-        this.f41972n.flush();
+        this.f41943n.flush();
     }
 
     public final String toString() {
-        return "sink(" + this.f41972n + ')';
+        return "sink(" + this.f41943n + ')';
     }
 }

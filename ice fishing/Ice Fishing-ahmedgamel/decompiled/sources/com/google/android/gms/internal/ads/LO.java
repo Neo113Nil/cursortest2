@@ -8,35 +8,35 @@ import java.util.Objects;
 public final class LO extends AudioDeviceCallback {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ C2501Ce f26114a;
+    public final /* synthetic */ C2521Ce f26914a;
 
-    public /* synthetic */ LO(C2501Ce c2501Ce) {
-        Objects.requireNonNull(c2501Ce);
-        this.f26114a = c2501Ce;
+    public /* synthetic */ LO(C2521Ce c2521Ce) {
+        Objects.requireNonNull(c2521Ce);
+        this.f26914a = c2521Ce;
     }
 
     @Override // android.media.AudioDeviceCallback
     public final void onAudioDevicesAdded(AudioDeviceInfo[] audioDeviceInfoArr) {
-        this.f26114a.l();
+        this.f26914a.l();
     }
 
     @Override // android.media.AudioDeviceCallback
     public final void onAudioDevicesRemoved(AudioDeviceInfo[] audioDeviceInfoArr) {
-        C2501Ce c2501Ce;
-        String str = AbstractC3159eu.f29993a;
+        C2521Ce c2521Ce;
+        String str = AbstractC3182eu.f30782a;
         int length = audioDeviceInfoArr.length;
         int i = 0;
         while (true) {
-            c2501Ce = this.f26114a;
+            c2521Ce = this.f26914a;
             if (i >= length) {
                 break;
             }
-            if (Objects.equals(audioDeviceInfoArr[i], (AudioDeviceInfo) c2501Ce.f24171C)) {
-                c2501Ce.f24171C = null;
+            if (Objects.equals(audioDeviceInfoArr[i], (AudioDeviceInfo) c2521Ce.f24906C)) {
+                c2521Ce.f24906C = null;
                 break;
             }
             i++;
         }
-        c2501Ce.l();
+        c2521Ce.l();
     }
 }

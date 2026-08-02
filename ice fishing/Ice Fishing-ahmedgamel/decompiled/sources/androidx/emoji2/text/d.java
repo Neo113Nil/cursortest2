@@ -6,14 +6,14 @@ import android.text.TextPaint;
 public final class d {
 
     /* renamed from: b, reason: collision with root package name */
-    public static final ThreadLocal f4762b = new ThreadLocal();
+    public static final ThreadLocal f4730b = new ThreadLocal();
 
     /* renamed from: a, reason: collision with root package name */
-    public final TextPaint f4763a;
+    public final TextPaint f4731a;
 
     public d() {
         TextPaint textPaint = new TextPaint();
-        this.f4763a = textPaint;
+        this.f4731a = textPaint;
         textPaint.setTextSize(10.0f);
     }
 }

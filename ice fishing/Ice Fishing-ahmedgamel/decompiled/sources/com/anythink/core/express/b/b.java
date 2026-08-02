@@ -4,11 +4,11 @@ package com.anythink.core.express.b;
 public interface b {
     void close();
 
-    void expand(String str, boolean z3);
+    void expand(String str, boolean z6);
 
     void open(String str);
 
     void unload();
 
-    void useCustomClose(boolean z3);
+    void useCustomClose(boolean z6);
 }

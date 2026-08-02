@@ -1,34 +1,31 @@
 package G3;
 
-import D.y;
-import android.os.Handler;
-import android.os.Message;
-import u1.x;
+import android.graphics.RectF;
+import java.util.Arrays;
 
 /* loaded from: classes2.dex */
-public final class a implements Handler.Callback {
+public final class a implements c {
 
-    /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f1059n;
+    /* renamed from: a, reason: collision with root package name */
+    public final float f1073a;
 
-    @Override // android.os.Handler.Callback
-    public final boolean handleMessage(Message message) {
-        switch (this.f1059n) {
-            case 0:
-                int i = message.what;
-                if (i == 0) {
-                    throw y.i(message.obj);
-                }
-                if (i != 1) {
-                    return false;
-                }
-                throw y.i(message.obj);
-            default:
-                if (message.what != 1) {
-                    return false;
-                }
-                ((x) message.obj).a();
-                return true;
+    public a(float f2) {
+        this.f1073a = f2;
+    }
+
+    @Override // G3.c
+    public final float a(RectF rectF) {
+        return this.f1073a;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
+        return (obj instanceof a) && this.f1073a == ((a) obj).f1073a;
+    }
+
+    public final int hashCode() {
+        return Arrays.hashCode(new Object[]{Float.valueOf(this.f1073a)});
     }
 }

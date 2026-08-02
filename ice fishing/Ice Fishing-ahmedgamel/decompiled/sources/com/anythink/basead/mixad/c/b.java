@@ -37,24 +37,24 @@ import java.lang.ref.WeakReference;
 public class b implements com.anythink.core.common.l.e.a.a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f9531a = "b";
+    private static final String f10317a = "b";
 
     /* renamed from: b, reason: collision with root package name */
-    private com.anythink.basead.mixad.c.a.a f9532b;
+    private com.anythink.basead.mixad.c.a.a f10318b;
 
     /* renamed from: com.anythink.basead.mixad.c.b$2, reason: invalid class name */
     public class AnonymousClass2 extends h {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ com.anythink.core.common.l.e.a.b f9536a;
+        final /* synthetic */ com.anythink.core.common.l.e.a.b f10322a;
 
         public AnonymousClass2(com.anythink.core.common.l.e.a.b bVar) {
-            this.f9536a = bVar;
+            this.f10322a = bVar;
         }
 
         @Override // com.anythink.basead.g.h, com.anythink.basead.g.a
         public final void onAdClosed() {
-            com.anythink.core.common.l.e.a.b bVar = this.f9536a;
+            com.anythink.core.common.l.e.a.b bVar = this.f10322a;
             if (bVar != null) {
                 bVar.onClose();
             }
@@ -62,7 +62,7 @@ public class b implements com.anythink.core.common.l.e.a.a {
 
         @Override // com.anythink.basead.g.h, com.anythink.basead.g.a
         public final void onShowFailed(f fVar) {
-            com.anythink.core.common.l.e.a.b bVar = this.f9536a;
+            com.anythink.core.common.l.e.a.b bVar = this.f10322a;
             if (bVar != null) {
                 if (fVar != null) {
                     bVar.onVideoError(fVar.a(), fVar.b());
@@ -77,23 +77,23 @@ public class b implements com.anythink.core.common.l.e.a.a {
     public class AnonymousClass3 extends i {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ boolean[] f9538a;
+        final /* synthetic */ boolean[] f10324a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ com.anythink.core.common.l.e.a.b f9539b;
+        final /* synthetic */ com.anythink.core.common.l.e.a.b f10325b;
 
         /* renamed from: c, reason: collision with root package name */
-        final /* synthetic */ ThirdPartySplashATView f9540c;
+        final /* synthetic */ ThirdPartySplashATView f10326c;
 
         public AnonymousClass3(boolean[] zArr, com.anythink.core.common.l.e.a.b bVar, ThirdPartySplashATView thirdPartySplashATView) {
-            this.f9538a = zArr;
-            this.f9539b = bVar;
-            this.f9540c = thirdPartySplashATView;
+            this.f10324a = zArr;
+            this.f10325b = bVar;
+            this.f10326c = thirdPartySplashATView;
         }
 
         @Override // com.anythink.core.common.d.i, com.anythink.core.common.d.o
         public final void onAdClicked(View view) {
-            com.anythink.core.common.l.e.a.b bVar = this.f9539b;
+            com.anythink.core.common.l.e.a.b bVar = this.f10325b;
             if (bVar != null) {
                 bVar.onAdClicked(null);
             }
@@ -101,12 +101,12 @@ public class b implements com.anythink.core.common.l.e.a.a {
 
         @Override // com.anythink.core.common.d.i, com.anythink.core.common.d.o
         public final void onAdImpressed() {
-            boolean[] zArr = this.f9538a;
+            boolean[] zArr = this.f10324a;
             if (zArr[0]) {
                 return;
             }
             zArr[0] = true;
-            com.anythink.core.common.l.e.a.b bVar = this.f9539b;
+            com.anythink.core.common.l.e.a.b bVar = this.f10325b;
             if (bVar != null) {
                 bVar.onAdImpressed();
             }
@@ -114,20 +114,20 @@ public class b implements com.anythink.core.common.l.e.a.a {
 
         @Override // com.anythink.core.common.d.i, com.anythink.core.common.d.o
         public final void onAdVideoStart() {
-            this.f9540c.disableHWVideoViewClickable();
+            this.f10326c.disableHWVideoViewClickable();
         }
 
         @Override // com.anythink.core.common.d.i, com.anythink.core.common.d.o
-        public final void onDeeplinkCallback(boolean z3) {
-            com.anythink.core.common.l.e.a.b bVar = this.f9539b;
+        public final void onDeeplinkCallback(boolean z6) {
+            com.anythink.core.common.l.e.a.b bVar = this.f10325b;
             if (bVar != null) {
-                bVar.onDeeplinkCallback(z3);
+                bVar.onDeeplinkCallback(z6);
             }
         }
 
         @Override // com.anythink.core.common.d.i, com.anythink.core.common.d.o
         public final void onDownloadConfirmCallback(Context context, View view, ATNetworkConfirmInfo aTNetworkConfirmInfo) {
-            com.anythink.core.common.l.e.a.b bVar = this.f9539b;
+            com.anythink.core.common.l.e.a.b bVar = this.f10325b;
             if (bVar != null) {
                 bVar.onDownloadConfirmCallback(context, view, aTNetworkConfirmInfo);
             }
@@ -138,15 +138,15 @@ public class b implements com.anythink.core.common.l.e.a.a {
     public class AnonymousClass4 extends h {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ com.anythink.core.common.l.e.a.b f9542a;
+        final /* synthetic */ com.anythink.core.common.l.e.a.b f10328a;
 
         public AnonymousClass4(com.anythink.core.common.l.e.a.b bVar) {
-            this.f9542a = bVar;
+            this.f10328a = bVar;
         }
 
         @Override // com.anythink.basead.g.h, com.anythink.basead.g.a
         public final void onAdClosed() {
-            com.anythink.core.common.l.e.a.b bVar = this.f9542a;
+            com.anythink.core.common.l.e.a.b bVar = this.f10328a;
             if (bVar != null) {
                 bVar.onClose();
             }
@@ -157,35 +157,35 @@ public class b implements com.anythink.core.common.l.e.a.a {
     public class AnonymousClass5 extends i {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ boolean[] f9544a;
+        final /* synthetic */ boolean[] f10330a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ com.anythink.core.common.l.e.a.b f9545b;
+        final /* synthetic */ com.anythink.core.common.l.e.a.b f10331b;
 
         /* renamed from: c, reason: collision with root package name */
-        final /* synthetic */ ThirdPartyBannerATView f9546c;
+        final /* synthetic */ ThirdPartyBannerATView f10332c;
 
         public AnonymousClass5(boolean[] zArr, com.anythink.core.common.l.e.a.b bVar, ThirdPartyBannerATView thirdPartyBannerATView) {
-            this.f9544a = zArr;
-            this.f9545b = bVar;
-            this.f9546c = thirdPartyBannerATView;
+            this.f10330a = zArr;
+            this.f10331b = bVar;
+            this.f10332c = thirdPartyBannerATView;
         }
 
         @Override // com.anythink.core.common.d.i, com.anythink.core.common.d.o
         public final void onAdClicked(View view) {
-            com.anythink.core.common.l.e.a.b bVar = this.f9545b;
+            com.anythink.core.common.l.e.a.b bVar = this.f10331b;
             if (bVar != null) {
                 if (bVar instanceof com.anythink.core.common.l.e.a) {
-                    ((com.anythink.core.common.l.e.a) bVar).setClickedArea(this.f9546c.getClickedArea());
+                    ((com.anythink.core.common.l.e.a) bVar).setClickedArea(this.f10332c.getClickedArea());
                 }
-                this.f9545b.onAdClicked(null);
+                this.f10331b.onAdClicked(null);
             }
         }
 
         @Override // com.anythink.core.common.d.i, com.anythink.core.common.d.o
         public final void onAdDislikeButtonClick() {
             super.onAdDislikeButtonClick();
-            com.anythink.core.common.l.e.a.b bVar = this.f9545b;
+            com.anythink.core.common.l.e.a.b bVar = this.f10331b;
             if (bVar != null) {
                 bVar.onClose();
             }
@@ -193,28 +193,28 @@ public class b implements com.anythink.core.common.l.e.a.a {
 
         @Override // com.anythink.core.common.d.i, com.anythink.core.common.d.o
         public final void onAdImpressed() {
-            boolean[] zArr = this.f9544a;
+            boolean[] zArr = this.f10330a;
             if (zArr[0]) {
                 return;
             }
             zArr[0] = true;
-            com.anythink.core.common.l.e.a.b bVar = this.f9545b;
+            com.anythink.core.common.l.e.a.b bVar = this.f10331b;
             if (bVar != null) {
                 bVar.onAdImpressed();
             }
         }
 
         @Override // com.anythink.core.common.d.i, com.anythink.core.common.d.o
-        public final void onDeeplinkCallback(boolean z3) {
-            com.anythink.core.common.l.e.a.b bVar = this.f9545b;
+        public final void onDeeplinkCallback(boolean z6) {
+            com.anythink.core.common.l.e.a.b bVar = this.f10331b;
             if (bVar != null) {
-                bVar.onDeeplinkCallback(z3);
+                bVar.onDeeplinkCallback(z6);
             }
         }
 
         @Override // com.anythink.core.common.d.i, com.anythink.core.common.d.o
         public final void onDownloadConfirmCallback(Context context, View view, ATNetworkConfirmInfo aTNetworkConfirmInfo) {
-            com.anythink.core.common.l.e.a.b bVar = this.f9545b;
+            com.anythink.core.common.l.e.a.b bVar = this.f10331b;
             if (bVar != null) {
                 bVar.onDownloadConfirmCallback(context, view, aTNetworkConfirmInfo);
             }
@@ -225,15 +225,15 @@ public class b implements com.anythink.core.common.l.e.a.a {
     public class AnonymousClass6 implements BaseMediaATView.a {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ com.anythink.core.common.l.e.a.b f9548a;
+        final /* synthetic */ com.anythink.core.common.l.e.a.b f10334a;
 
         public AnonymousClass6(com.anythink.core.common.l.e.a.b bVar) {
-            this.f9548a = bVar;
+            this.f10334a = bVar;
         }
 
         @Override // com.anythink.basead.ui.BaseMediaATView.a
         public final void onClickCloseView() {
-            com.anythink.core.common.l.e.a.b bVar = this.f9548a;
+            com.anythink.core.common.l.e.a.b bVar = this.f10334a;
             if (bVar != null) {
                 bVar.onAdDislikeButtonClick();
             }
@@ -241,7 +241,7 @@ public class b implements com.anythink.core.common.l.e.a.a {
     }
 
     public b(com.anythink.basead.mixad.c.a.a aVar) {
-        this.f9532b = aVar;
+        this.f10318b = aVar;
     }
 
     private static ATNativeAdInfo a(ATNativeAdCustomRender aTNativeAdCustomRender, BaseAd baseAd) {
@@ -256,7 +256,7 @@ public class b implements com.anythink.core.common.l.e.a.a {
             return null;
         }
         ThirdPartyNativeTemplateView thirdPartyNativeTemplateView = new ThirdPartyNativeTemplateView(context, wVar, xVar, true, new AnonymousClass6(aVar.h()), baseAd);
-        thirdPartyNativeTemplateView.init(aVar.k(), aVar.l(), xVar.f14168o.bi());
+        thirdPartyNativeTemplateView.init(aVar.k(), aVar.l(), xVar.f14954o.bi());
         thirdPartyNativeTemplateView.setLayoutParams(new ViewGroup.LayoutParams(thirdPartyNativeTemplateView.getMediaViewWidth(), thirdPartyNativeTemplateView.getMediaViewHeight()));
         return thirdPartyNativeTemplateView;
     }
@@ -276,7 +276,7 @@ public class b implements com.anythink.core.common.l.e.a.a {
             c cVar = new c(b9);
             cVar.a(new a(b9));
             cVar.a(c9);
-            this.f9532b = a10.a(cVar).a(aVar2).a(bVar).b(aVar.h()).a(aVar.d()).b(aVar.j()).c(aVar.k()).a();
+            this.f10318b = a10.a(cVar).a(aVar2).a(bVar).b(aVar.h()).a(aVar.d()).b(aVar.j()).c(aVar.k()).a();
         }
     }
 
@@ -303,25 +303,25 @@ public class b implements com.anythink.core.common.l.e.a.a {
         char c9;
         int i;
         com.anythink.basead.mixad.e.c cVar;
-        int i6;
-        boolean z3;
+        int i4;
         boolean z6;
-        int i9;
+        boolean z9;
+        int i6;
         com.anythink.core.common.l.a aVar;
         ?? r52;
         com.anythink.basead.mixad.c.a.a aVar2;
         ?? r11;
         int a9;
-        com.anythink.basead.mixad.c.a.a aVar3 = this.f9532b;
+        com.anythink.basead.mixad.c.a.a aVar3 = this.f10318b;
         if (aVar3 == null) {
             return null;
         }
         try {
             x b9 = aVar3.b();
-            w<?> c10 = this.f9532b.c();
-            Context j6 = this.f9532b.j();
-            int f3 = this.f9532b.f();
-            String e9 = this.f9532b.e();
+            w<?> c10 = this.f10318b.c();
+            Context j6 = this.f10318b.j();
+            int f2 = this.f10318b.f();
+            String e9 = this.f10318b.e();
             if (j6 == null || b9 == null || c10 == null) {
                 return null;
             }
@@ -338,50 +338,50 @@ public class b implements com.anythink.core.common.l.e.a.a {
                 }
             }
             Context context = j6;
-            y yVar = b9.f14168o;
+            y yVar = b9.f14954o;
             if (yVar instanceof com.anythink.basead.mixad.e.c) {
                 cVar = (com.anythink.basead.mixad.e.c) yVar;
-                z6 = cVar.a();
-                i9 = cVar.b();
-                i6 = cVar.c();
-                z3 = 2;
+                z9 = cVar.a();
+                i6 = cVar.b();
+                i4 = cVar.c();
+                z6 = 2;
             } else {
                 cVar = null;
-                i6 = 2;
-                z3 = 2;
-                z6 = true;
-                i9 = 1;
+                i4 = 2;
+                z6 = 2;
+                z9 = true;
+                i6 = 1;
             }
-            int i10 = b9.f14163j;
+            int i9 = b9.f14949j;
             c9 = 0;
             try {
-                ?? r22 = (g) this.f9532b.a();
-                int i11 = i9;
+                ?? r22 = (g) this.f10318b.a();
+                int i10 = i6;
                 BaseAd a10 = r22.a();
                 com.anythink.basead.mixad.shake.a aVar4 = new com.anythink.basead.mixad.shake.a(context, a10, cVar);
                 r22.a(aVar4);
-                ?? d2 = r22.d();
+                ?? d9 = r22.d();
                 try {
-                    if (d2 != 0 && !z6) {
+                    if (d9 != 0 && !z9) {
                         try {
-                            View i12 = this.f9532b.i();
-                            if (i12 == null) {
-                                i12 = d2.getMediationViewFromNativeAd(r22, l.a(a10, r22.b()));
+                            View i11 = this.f10318b.i();
+                            if (i11 == null) {
+                                i11 = d9.getMediationViewFromNativeAd(r22, l.a(a10, r22.b()));
                             }
-                            if (i12 != null) {
-                                ThirdPartySelfRenderScreenATView thirdPartySelfRenderScreenATView = new ThirdPartySelfRenderScreenATView(context, b9, c10, e9, i10, f3, a10, i12, r22.c());
-                                if (!String.valueOf(i10).equals("2")) {
-                                    if (String.valueOf(i10).equals("4")) {
+                            if (i11 != null) {
+                                ThirdPartySelfRenderScreenATView thirdPartySelfRenderScreenATView = new ThirdPartySelfRenderScreenATView(context, b9, c10, e9, i9, f2, a10, i11, r22.c());
+                                if (!String.valueOf(i9).equals("2")) {
+                                    if (String.valueOf(i9).equals("4")) {
                                     }
                                     return thirdPartySelfRenderScreenATView;
                                 }
-                                thirdPartySelfRenderScreenATView.setMixNativeAdEventListener(this.f9532b.h());
+                                thirdPartySelfRenderScreenATView.setMixNativeAdEventListener(this.f10318b.h());
                                 thirdPartySelfRenderScreenATView.init();
                                 return thirdPartySelfRenderScreenATView;
                             }
                         } catch (Throwable th2) {
                             th = th2;
-                            r22 = i10;
+                            r22 = i9;
                             i = r22;
                             e.b("createView error:".concat(String.valueOf(i)), th.getMessage() + ", " + q.a(th.getStackTrace()), t.b().r());
                             th.getStackTrace()[c9].toString();
@@ -392,12 +392,12 @@ public class b implements com.anythink.core.common.l.e.a.a {
                     th = th3;
                 }
                 try {
-                    String valueOf = String.valueOf(i10);
-                    if (i6 == 1) {
+                    String valueOf = String.valueOf(i9);
+                    if (i4 == 1) {
                         switch (valueOf.hashCode()) {
                             case 50:
                                 if (valueOf.equals("2")) {
-                                    r11 = z3;
+                                    r11 = z6;
                                     break;
                                 }
                                 r11 = -1;
@@ -421,7 +421,7 @@ public class b implements com.anythink.core.common.l.e.a.a {
                                 break;
                         }
                         if (r11 != 0 && r11 != 1) {
-                            a9 = r11 != z3 ? 0 : q.a(context, 50.0f);
+                            a9 = r11 != z6 ? 0 : q.a(context, 50.0f);
                         } else {
                             a9 = q.a(context, 148.0f);
                         }
@@ -430,20 +430,20 @@ public class b implements com.anythink.core.common.l.e.a.a {
                         aVar = null;
                     }
                     switch (valueOf.hashCode()) {
-                        case j.f5816W /* 48 */:
+                        case j.f6602W /* 48 */:
                             if (valueOf.equals("0")) {
                                 r52 = 3;
                                 break;
                             }
                             r52 = -1;
                             break;
-                        case j.f5817X /* 49 */:
+                        case j.f6603X /* 49 */:
                         default:
                             r52 = -1;
                             break;
                         case 50:
                             if (valueOf.equals("2")) {
-                                r52 = z3;
+                                r52 = z6;
                                 break;
                             }
                             r52 = -1;
@@ -464,43 +464,43 @@ public class b implements com.anythink.core.common.l.e.a.a {
                             break;
                     }
                     if (r52 == 0) {
-                        if (i11 == 1) {
-                            return new ThirdPartyFullScreenATView(context, b9, c10, e9, i10, f3, a10, aVar);
+                        if (i10 == 1) {
+                            return new ThirdPartyFullScreenATView(context, b9, c10, e9, i9, f2, a10, aVar);
                         }
-                        return new ThirdPartyHalfScreenATView(context, b9, c10, e9, i10, f3, a10, aVar);
+                        return new ThirdPartyHalfScreenATView(context, b9, c10, e9, i9, f2, a10, aVar);
                     }
                     if (r52 == 1) {
-                        com.anythink.basead.mixad.c.a.a aVar5 = this.f9532b;
+                        com.anythink.basead.mixad.c.a.a aVar5 = this.f10318b;
                         if (aVar5 == null) {
                             return null;
                         }
-                        com.anythink.core.common.l.e.a.b h9 = aVar5.h();
-                        ThirdPartySplashATView thirdPartySplashATView = new ThirdPartySplashATView(context, b9, c10, new AnonymousClass2(h9), "", a10, aVar);
-                        a10.setNativeEventListener(new AnonymousClass3(new boolean[]{false}, h9, thirdPartySplashATView));
+                        com.anythink.core.common.l.e.a.b h3 = aVar5.h();
+                        ThirdPartySplashATView thirdPartySplashATView = new ThirdPartySplashATView(context, b9, c10, new AnonymousClass2(h3), "", a10, aVar);
+                        a10.setNativeEventListener(new AnonymousClass3(new boolean[]{false}, h3, thirdPartySplashATView));
                         thirdPartySplashATView.setDontCountDown(aVar5.g());
                         return thirdPartySplashATView;
                     }
-                    if (r52 != z3) {
-                        if (r52 != 3 || (aVar2 = this.f9532b) == null) {
+                    if (r52 != z6) {
+                        if (r52 != 3 || (aVar2 = this.f10318b) == null) {
                             return null;
                         }
                         ThirdPartyNativeTemplateView thirdPartyNativeTemplateView = new ThirdPartyNativeTemplateView(context, c10, b9, true, new AnonymousClass6(aVar2.h()), a10);
-                        thirdPartyNativeTemplateView.init(aVar2.k(), aVar2.l(), b9.f14168o.bi());
+                        thirdPartyNativeTemplateView.init(aVar2.k(), aVar2.l(), b9.f14954o.bi());
                         thirdPartyNativeTemplateView.setLayoutParams(new ViewGroup.LayoutParams(thirdPartyNativeTemplateView.getMediaViewWidth(), thirdPartyNativeTemplateView.getMediaViewHeight()));
                         return thirdPartyNativeTemplateView;
                     }
-                    com.anythink.basead.mixad.c.a.a aVar6 = this.f9532b;
+                    com.anythink.basead.mixad.c.a.a aVar6 = this.f10318b;
                     if (aVar6 == null) {
                         return null;
                     }
-                    com.anythink.core.common.l.e.a.b h10 = aVar6.h();
-                    ThirdPartyBannerATView thirdPartyBannerATView = new ThirdPartyBannerATView(context, a10, b9, c10, new AnonymousClass4(h10));
-                    a10.setNativeEventListener(new AnonymousClass5(new boolean[]{false}, h10, thirdPartyBannerATView));
+                    com.anythink.core.common.l.e.a.b h9 = aVar6.h();
+                    ThirdPartyBannerATView thirdPartyBannerATView = new ThirdPartyBannerATView(context, a10, b9, c10, new AnonymousClass4(h9));
+                    a10.setNativeEventListener(new AnonymousClass5(new boolean[]{false}, h9, thirdPartyBannerATView));
                     return thirdPartyBannerATView;
                 } catch (Throwable th4) {
                     th = th4;
-                    i10 = i10;
-                    i = i10;
+                    i9 = i9;
+                    i = i9;
                     e.b("createView error:".concat(String.valueOf(i)), th.getMessage() + ", " + q.a(th.getStackTrace()), t.b().r());
                     th.getStackTrace()[c9].toString();
                     return null;
@@ -519,17 +519,17 @@ public class b implements com.anythink.core.common.l.e.a.a {
     public final void a(Activity activity, com.anythink.core.basead.b.c cVar, a.InterfaceC0083a interfaceC0083a) {
         com.anythink.basead.mixad.c.a.a aVar;
         View mediationViewFromNativeAd;
-        if (activity == null || cVar == null || (aVar = this.f9532b) == null) {
+        if (activity == null || cVar == null || (aVar = this.f10318b) == null) {
             return;
         }
-        cVar.f11919c = aVar.c();
-        cVar.f11924h = this.f9532b.b();
-        final String str = cVar.f11920d;
-        final com.anythink.core.common.l.e.a.b h9 = this.f9532b.h();
+        cVar.f12705c = aVar.c();
+        cVar.f12710h = this.f10318b.b();
+        final String str = cVar.f12706d;
+        final com.anythink.core.common.l.e.a.b h3 = this.f10318b.h();
         com.anythink.basead.g.b.a().a(str, new b.AbstractC0042b() { // from class: com.anythink.basead.mixad.c.b.1
             @Override // com.anythink.basead.g.b.AbstractC0042b
             public final void a(com.anythink.basead.g.j jVar) {
-                com.anythink.core.common.l.e.a.b bVar = h9;
+                com.anythink.core.common.l.e.a.b bVar = h3;
                 if (bVar != null) {
                     bVar.onAdImpressed();
                 }
@@ -537,7 +537,7 @@ public class b implements com.anythink.core.common.l.e.a.a {
 
             @Override // com.anythink.basead.g.b.AbstractC0042b
             public final void b() {
-                com.anythink.core.common.l.e.a.b bVar = h9;
+                com.anythink.core.common.l.e.a.b bVar = h3;
                 if (bVar != null) {
                     bVar.onAdVideoEnd();
                 }
@@ -550,7 +550,7 @@ public class b implements com.anythink.core.common.l.e.a.a {
             @Override // com.anythink.basead.g.b.AbstractC0042b
             public final void d() {
                 com.anythink.basead.g.b.a().b(str);
-                com.anythink.core.common.l.e.a.b bVar = h9;
+                com.anythink.core.common.l.e.a.b bVar = h3;
                 if (bVar != null) {
                     bVar.onClose();
                 }
@@ -558,7 +558,7 @@ public class b implements com.anythink.core.common.l.e.a.a {
 
             @Override // com.anythink.basead.g.b.AbstractC0042b
             public final void a(f fVar) {
-                com.anythink.core.common.l.e.a.b bVar = h9;
+                com.anythink.core.common.l.e.a.b bVar = h3;
                 if (bVar != null) {
                     if (fVar != null) {
                         bVar.onVideoError(fVar.a(), fVar.b());
@@ -570,11 +570,11 @@ public class b implements com.anythink.core.common.l.e.a.a {
 
             @Override // com.anythink.basead.g.b.AbstractC0042b
             public final void b(com.anythink.basead.g.j jVar) {
-                com.anythink.core.common.l.e.a.b bVar = h9;
+                com.anythink.core.common.l.e.a.b bVar = h3;
                 if ((bVar instanceof com.anythink.core.common.l.e.a) && jVar != null) {
-                    ((com.anythink.core.common.l.e.a) bVar).setClickedArea(jVar.f8983b);
+                    ((com.anythink.core.common.l.e.a) bVar).setClickedArea(jVar.f9769b);
                 }
-                com.anythink.core.common.l.e.a.b bVar2 = h9;
+                com.anythink.core.common.l.e.a.b bVar2 = h3;
                 if (bVar2 != null) {
                     bVar2.onAdClicked(null);
                 }
@@ -582,34 +582,34 @@ public class b implements com.anythink.core.common.l.e.a.a {
 
             @Override // com.anythink.basead.g.b.AbstractC0042b
             public final void a() {
-                com.anythink.core.common.l.e.a.b bVar = h9;
+                com.anythink.core.common.l.e.a.b bVar = h3;
                 if (bVar != null) {
                     bVar.onAdVideoStart();
                 }
             }
 
             @Override // com.anythink.basead.g.b.AbstractC0042b
-            public final void a(boolean z3) {
-                com.anythink.core.common.l.e.a.b bVar = h9;
+            public final void a(boolean z6) {
+                com.anythink.core.common.l.e.a.b bVar = h3;
                 if (bVar != null) {
-                    bVar.onDeeplinkCallback(z3);
+                    bVar.onDeeplinkCallback(z6);
                 }
             }
         });
         com.anythink.basead.mixad.a.a().a(str, interfaceC0083a);
-        com.anythink.basead.mixad.a.a().a(str, this.f9532b);
-        com.anythink.basead.mixad.c.a.a aVar2 = this.f9532b;
+        com.anythink.basead.mixad.a.a().a(str, this.f10318b);
+        com.anythink.basead.mixad.c.a.a aVar2 = this.f10318b;
         if (aVar2 != null) {
-            y yVar = aVar2.b().f14168o;
+            y yVar = aVar2.b().f14954o;
             if ((yVar instanceof com.anythink.basead.mixad.e.c) && !((com.anythink.basead.mixad.e.c) yVar).a()) {
                 ATNativeAdInfo a9 = aVar2.a();
                 if (a9 instanceof g) {
                     g gVar = (g) a9;
                     BaseAd a10 = gVar.a();
-                    ATNativeAdCustomRender d2 = gVar.d();
-                    if (d2 != null && (mediationViewFromNativeAd = d2.getMediationViewFromNativeAd(a9, l.a(a10, gVar.b()))) != null) {
+                    ATNativeAdCustomRender d9 = gVar.d();
+                    if (d9 != null && (mediationViewFromNativeAd = d9.getMediationViewFromNativeAd(a9, l.a(a10, gVar.b()))) != null) {
                         aVar2.a(mediationViewFromNativeAd);
-                        cVar.f11925j = true;
+                        cVar.f12711j = true;
                     }
                 }
             }
@@ -634,9 +634,9 @@ public class b implements com.anythink.core.common.l.e.a.a {
         if (aVar == null) {
             return null;
         }
-        com.anythink.core.common.l.e.a.b h9 = aVar.h();
-        ThirdPartySplashATView thirdPartySplashATView = new ThirdPartySplashATView(context, xVar, wVar, new AnonymousClass2(h9), "", baseAd, aVar2);
-        baseAd.setNativeEventListener(new AnonymousClass3(new boolean[]{false}, h9, thirdPartySplashATView));
+        com.anythink.core.common.l.e.a.b h3 = aVar.h();
+        ThirdPartySplashATView thirdPartySplashATView = new ThirdPartySplashATView(context, xVar, wVar, new AnonymousClass2(h3), "", baseAd, aVar2);
+        baseAd.setNativeEventListener(new AnonymousClass3(new boolean[]{false}, h3, thirdPartySplashATView));
         thirdPartySplashATView.setDontCountDown(aVar.g());
         return thirdPartySplashATView;
     }
@@ -645,9 +645,9 @@ public class b implements com.anythink.core.common.l.e.a.a {
         if (aVar == null) {
             return null;
         }
-        com.anythink.core.common.l.e.a.b h9 = aVar.h();
-        ThirdPartyBannerATView thirdPartyBannerATView = new ThirdPartyBannerATView(context, baseAd, xVar, wVar, new AnonymousClass4(h9));
-        baseAd.setNativeEventListener(new AnonymousClass5(new boolean[]{false}, h9, thirdPartyBannerATView));
+        com.anythink.core.common.l.e.a.b h3 = aVar.h();
+        ThirdPartyBannerATView thirdPartyBannerATView = new ThirdPartyBannerATView(context, baseAd, xVar, wVar, new AnonymousClass4(h3));
+        baseAd.setNativeEventListener(new AnonymousClass5(new boolean[]{false}, h3, thirdPartyBannerATView));
         return thirdPartyBannerATView;
     }
 
@@ -656,14 +656,14 @@ public class b implements com.anythink.core.common.l.e.a.a {
         if (aVar == null) {
             return false;
         }
-        y yVar = aVar.b().f14168o;
+        y yVar = aVar.b().f14954o;
         if ((yVar instanceof com.anythink.basead.mixad.e.c) && !((com.anythink.basead.mixad.e.c) yVar).a()) {
             ATNativeAdInfo a9 = aVar.a();
             if (a9 instanceof g) {
                 g gVar = (g) a9;
                 BaseAd a10 = gVar.a();
-                ATNativeAdCustomRender d2 = gVar.d();
-                if (d2 != null && (mediationViewFromNativeAd = d2.getMediationViewFromNativeAd(a9, l.a(a10, gVar.b()))) != null) {
+                ATNativeAdCustomRender d9 = gVar.d();
+                if (d9 != null && (mediationViewFromNativeAd = d9.getMediationViewFromNativeAd(a9, l.a(a10, gVar.b()))) != null) {
                     aVar.a(mediationViewFromNativeAd);
                     return true;
                 }

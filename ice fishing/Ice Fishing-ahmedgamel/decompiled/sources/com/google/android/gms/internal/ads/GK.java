@@ -12,5 +12,5 @@ public abstract class GK extends JK {
         return true;
     }
 
-    public abstract boolean v(JK jk, int i, int i6);
+    public abstract boolean v(JK jk, int i, int i4);
 }

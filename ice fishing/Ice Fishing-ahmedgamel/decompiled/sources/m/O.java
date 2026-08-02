@@ -20,41 +20,41 @@ import android.widget.ListAdapter;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.ThemedSpinnerAdapter;
-import com.google.android.gms.internal.ads.C2712Ol;
-import com.icefishingapp.icefishing.C5275R;
-import g.AbstractC4518a;
-import k.C4617d;
-import l.ViewTreeObserverOnGlobalLayoutListenerC4647d;
+import com.IceFishing.LiveIceFishing.C5248R;
+import com.google.android.gms.internal.ads.C2749Pl;
+import g.AbstractC4528a;
+import k.C4627d;
+import l.ViewTreeObserverOnGlobalLayoutListenerC4658d;
 
 /* loaded from: classes.dex */
 public final class O extends Spinner {
 
     /* renamed from: B, reason: collision with root package name */
-    public static final int[] f39044B = {R.attr.spinnerMode};
+    public static final int[] f39112B = {R.attr.spinnerMode};
 
     /* renamed from: A, reason: collision with root package name */
-    public final Rect f39045A;
+    public final Rect f39113A;
 
     /* renamed from: n, reason: collision with root package name */
-    public final C2712Ol f39046n;
+    public final C2749Pl f39114n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final Context f39047u;
+    public final Context f39115u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final C4673G f39048v;
+    public final C4685G f39116v;
 
     /* renamed from: w, reason: collision with root package name */
-    public SpinnerAdapter f39049w;
+    public SpinnerAdapter f39117w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final boolean f39050x;
+    public final boolean f39118x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final N f39051y;
+    public final N f39119y;
 
     /* renamed from: z, reason: collision with root package name */
-    public int f39052z;
+    public int f39120z;
 
     /* JADX WARN: Code restructure failed: missing block: B:29:0x0060, code lost:
     
@@ -65,24 +65,24 @@ public final class O extends Spinner {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public O(Context context, AttributeSet attributeSet) {
-        super(context, attributeSet, C5275R.attr.spinnerStyle);
+        super(context, attributeSet, C5248R.attr.spinnerStyle);
         TypedArray typedArray;
-        this.f39045A = new Rect();
+        this.f39113A = new Rect();
         N0.a(getContext(), this);
-        int[] iArr = AbstractC4518a.f37608v;
-        j4.g s9 = j4.g.s(context, attributeSet, iArr, C5275R.attr.spinnerStyle);
-        this.f39046n = new C2712Ol(this);
-        TypedArray typedArray2 = (TypedArray) s9.f38405v;
+        int[] iArr = AbstractC4528a.f37570v;
+        l4.g s9 = l4.g.s(context, attributeSet, iArr, C5248R.attr.spinnerStyle);
+        this.f39114n = new C2749Pl(this);
+        TypedArray typedArray2 = (TypedArray) s9.f38917v;
         int resourceId = typedArray2.getResourceId(4, 0);
         if (resourceId != 0) {
-            this.f39047u = new C4617d(context, resourceId);
+            this.f39115u = new C4627d(context, resourceId);
         } else {
-            this.f39047u = context;
+            this.f39115u = context;
         }
         int i = -1;
         TypedArray typedArray3 = null;
         try {
-            typedArray = context.obtainStyledAttributes(attributeSet, f39044B, C5275R.attr.spinnerStyle, 0);
+            typedArray = context.obtainStyledAttributes(attributeSet, f39112B, C5248R.attr.spinnerStyle, 0);
             try {
                 try {
                     if (typedArray.hasValue(0)) {
@@ -111,33 +111,33 @@ public final class O extends Spinner {
         }
         typedArray.recycle();
         if (i == 0) {
-            I i6 = new I(this);
-            this.f39051y = i6;
-            i6.f39010v = typedArray2.getString(2);
+            DialogInterfaceOnClickListenerC4687I dialogInterfaceOnClickListenerC4687I = new DialogInterfaceOnClickListenerC4687I(this);
+            this.f39119y = dialogInterfaceOnClickListenerC4687I;
+            dialogInterfaceOnClickListenerC4687I.f39078v = typedArray2.getString(2);
         } else if (i == 1) {
-            L l9 = new L(this, this.f39047u, attributeSet);
-            j4.g s10 = j4.g.s(this.f39047u, attributeSet, iArr, C5275R.attr.spinnerStyle);
-            this.f39052z = ((TypedArray) s10.f38405v).getLayoutDimension(3, -2);
+            L l9 = new L(this, this.f39115u, attributeSet);
+            l4.g s10 = l4.g.s(this.f39115u, attributeSet, iArr, C5248R.attr.spinnerStyle);
+            this.f39120z = ((TypedArray) s10.f38917v).getLayoutDimension(3, -2);
             l9.setBackgroundDrawable(s10.i(1));
-            l9.f39032V = typedArray2.getString(2);
+            l9.f39100V = typedArray2.getString(2);
             s10.t();
-            this.f39051y = l9;
-            this.f39048v = new C4673G(this, this, l9);
+            this.f39119y = l9;
+            this.f39116v = new C4685G(this, this, l9);
         }
         CharSequence[] textArray = typedArray2.getTextArray(0);
         if (textArray != null) {
             ArrayAdapter arrayAdapter = new ArrayAdapter(context, R.layout.simple_spinner_item, textArray);
-            arrayAdapter.setDropDownViewResource(C5275R.layout.support_simple_spinner_dropdown_item);
+            arrayAdapter.setDropDownViewResource(C5248R.layout.support_simple_spinner_dropdown_item);
             setAdapter((SpinnerAdapter) arrayAdapter);
         }
         s9.t();
-        this.f39050x = true;
-        SpinnerAdapter spinnerAdapter = this.f39049w;
+        this.f39118x = true;
+        SpinnerAdapter spinnerAdapter = this.f39117w;
         if (spinnerAdapter != null) {
             setAdapter(spinnerAdapter);
-            this.f39049w = null;
+            this.f39117w = null;
         }
-        this.f39046n.d(attributeSet, C5275R.attr.spinnerStyle);
+        this.f39114n.d(attributeSet, C5248R.attr.spinnerStyle);
     }
 
     public final int a(SpinnerAdapter spinnerAdapter, Drawable drawable) {
@@ -150,7 +150,7 @@ public final class O extends Spinner {
         int max = Math.max(0, getSelectedItemPosition());
         int min = Math.min(spinnerAdapter.getCount(), max + 15);
         View view = null;
-        int i6 = 0;
+        int i4 = 0;
         for (int max2 = Math.max(0, max - (15 - (min - max))); max2 < min; max2++) {
             int itemViewType = spinnerAdapter.getItemViewType(max2);
             if (itemViewType != i) {
@@ -162,75 +162,75 @@ public final class O extends Spinner {
                 view.setLayoutParams(new ViewGroup.LayoutParams(-2, -2));
             }
             view.measure(makeMeasureSpec, makeMeasureSpec2);
-            i6 = Math.max(i6, view.getMeasuredWidth());
+            i4 = Math.max(i4, view.getMeasuredWidth());
         }
         if (drawable == null) {
-            return i6;
+            return i4;
         }
-        Rect rect = this.f39045A;
+        Rect rect = this.f39113A;
         drawable.getPadding(rect);
-        return rect.left + rect.right + i6;
+        return rect.left + rect.right + i4;
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public final void drawableStateChanged() {
         super.drawableStateChanged();
-        C2712Ol c2712Ol = this.f39046n;
-        if (c2712Ol != null) {
-            c2712Ol.a();
+        C2749Pl c2749Pl = this.f39114n;
+        if (c2749Pl != null) {
+            c2749Pl.a();
         }
     }
 
     @Override // android.widget.Spinner
     public int getDropDownHorizontalOffset() {
-        N n9 = this.f39051y;
+        N n9 = this.f39119y;
         return n9 != null ? n9.b() : super.getDropDownHorizontalOffset();
     }
 
     @Override // android.widget.Spinner
     public int getDropDownVerticalOffset() {
-        N n9 = this.f39051y;
+        N n9 = this.f39119y;
         return n9 != null ? n9.k() : super.getDropDownVerticalOffset();
     }
 
     @Override // android.widget.Spinner
     public int getDropDownWidth() {
-        return this.f39051y != null ? this.f39052z : super.getDropDownWidth();
+        return this.f39119y != null ? this.f39120z : super.getDropDownWidth();
     }
 
     public final N getInternalPopup() {
-        return this.f39051y;
+        return this.f39119y;
     }
 
     @Override // android.widget.Spinner
     public Drawable getPopupBackground() {
-        N n9 = this.f39051y;
+        N n9 = this.f39119y;
         return n9 != null ? n9.getBackground() : super.getPopupBackground();
     }
 
     @Override // android.widget.Spinner
     public Context getPopupContext() {
-        return this.f39047u;
+        return this.f39115u;
     }
 
     @Override // android.widget.Spinner
     public CharSequence getPrompt() {
-        N n9 = this.f39051y;
+        N n9 = this.f39119y;
         return n9 != null ? n9.e() : super.getPrompt();
     }
 
     public ColorStateList getSupportBackgroundTintList() {
-        C2712Ol c2712Ol = this.f39046n;
-        if (c2712Ol != null) {
-            return c2712Ol.b();
+        C2749Pl c2749Pl = this.f39114n;
+        if (c2749Pl != null) {
+            return c2749Pl.b();
         }
         return null;
     }
 
     public PorterDuff.Mode getSupportBackgroundTintMode() {
-        C2712Ol c2712Ol = this.f39046n;
-        if (c2712Ol != null) {
-            return c2712Ol.c();
+        C2749Pl c2749Pl = this.f39114n;
+        if (c2749Pl != null) {
+            return c2749Pl.c();
         }
         return null;
     }
@@ -238,7 +238,7 @@ public final class O extends Spinner {
     @Override // android.widget.Spinner, android.widget.AdapterView, android.view.ViewGroup, android.view.View
     public final void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        N n9 = this.f39051y;
+        N n9 = this.f39119y;
         if (n9 == null || !n9.a()) {
             return;
         }
@@ -246,9 +246,9 @@ public final class O extends Spinner {
     }
 
     @Override // android.widget.Spinner, android.widget.AbsSpinner, android.view.View
-    public final void onMeasure(int i, int i6) {
-        super.onMeasure(i, i6);
-        if (this.f39051y == null || View.MeasureSpec.getMode(i) != Integer.MIN_VALUE) {
+    public final void onMeasure(int i, int i4) {
+        super.onMeasure(i, i4);
+        if (this.f39119y == null || View.MeasureSpec.getMode(i) != Integer.MIN_VALUE) {
             return;
         }
         setMeasuredDimension(Math.min(Math.max(getMeasuredWidth(), a(getAdapter(), getBackground())), View.MeasureSpec.getSize(i)), getMeasuredHeight());
@@ -257,26 +257,26 @@ public final class O extends Spinner {
     @Override // android.widget.Spinner, android.widget.AbsSpinner, android.view.View
     public final void onRestoreInstanceState(Parcelable parcelable) {
         ViewTreeObserver viewTreeObserver;
-        M m4 = (M) parcelable;
-        super.onRestoreInstanceState(m4.getSuperState());
-        if (!m4.f39036n || (viewTreeObserver = getViewTreeObserver()) == null) {
+        M m9 = (M) parcelable;
+        super.onRestoreInstanceState(m9.getSuperState());
+        if (!m9.f39104n || (viewTreeObserver = getViewTreeObserver()) == null) {
             return;
         }
-        viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserverOnGlobalLayoutListenerC4647d(2, this));
+        viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserverOnGlobalLayoutListenerC4658d(2, this));
     }
 
     @Override // android.widget.Spinner, android.widget.AbsSpinner, android.view.View
     public final Parcelable onSaveInstanceState() {
-        M m4 = new M(super.onSaveInstanceState());
-        N n9 = this.f39051y;
-        m4.f39036n = n9 != null && n9.a();
-        return m4;
+        M m9 = new M(super.onSaveInstanceState());
+        N n9 = this.f39119y;
+        m9.f39104n = n9 != null && n9.a();
+        return m9;
     }
 
     @Override // android.widget.Spinner, android.view.View
     public final boolean onTouchEvent(MotionEvent motionEvent) {
-        C4673G c4673g = this.f39048v;
-        if (c4673g == null || !c4673g.onTouch(this, motionEvent)) {
+        C4685G c4685g = this.f39116v;
+        if (c4685g == null || !c4685g.onTouch(this, motionEvent)) {
             return super.onTouchEvent(motionEvent);
         }
         return true;
@@ -284,38 +284,38 @@ public final class O extends Spinner {
 
     @Override // android.widget.Spinner, android.view.View
     public final boolean performClick() {
-        N n9 = this.f39051y;
+        N n9 = this.f39119y;
         if (n9 == null) {
             return super.performClick();
         }
         if (n9.a()) {
             return true;
         }
-        this.f39051y.j(getTextDirection(), getTextAlignment());
+        this.f39119y.j(getTextDirection(), getTextAlignment());
         return true;
     }
 
     @Override // android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
         super.setBackgroundDrawable(drawable);
-        C2712Ol c2712Ol = this.f39046n;
-        if (c2712Ol != null) {
-            c2712Ol.e();
+        C2749Pl c2749Pl = this.f39114n;
+        if (c2749Pl != null) {
+            c2749Pl.e();
         }
     }
 
     @Override // android.view.View
     public void setBackgroundResource(int i) {
         super.setBackgroundResource(i);
-        C2712Ol c2712Ol = this.f39046n;
-        if (c2712Ol != null) {
-            c2712Ol.f(i);
+        C2749Pl c2749Pl = this.f39114n;
+        if (c2749Pl != null) {
+            c2749Pl.f(i);
         }
     }
 
     @Override // android.widget.Spinner
     public void setDropDownHorizontalOffset(int i) {
-        N n9 = this.f39051y;
+        N n9 = this.f39119y;
         if (n9 == null) {
             super.setDropDownHorizontalOffset(i);
         } else {
@@ -326,7 +326,7 @@ public final class O extends Spinner {
 
     @Override // android.widget.Spinner
     public void setDropDownVerticalOffset(int i) {
-        N n9 = this.f39051y;
+        N n9 = this.f39119y;
         if (n9 != null) {
             n9.h(i);
         } else {
@@ -336,8 +336,8 @@ public final class O extends Spinner {
 
     @Override // android.widget.Spinner
     public void setDropDownWidth(int i) {
-        if (this.f39051y != null) {
-            this.f39052z = i;
+        if (this.f39119y != null) {
+            this.f39120z = i;
         } else {
             super.setDropDownWidth(i);
         }
@@ -345,7 +345,7 @@ public final class O extends Spinner {
 
     @Override // android.widget.Spinner
     public void setPopupBackgroundDrawable(Drawable drawable) {
-        N n9 = this.f39051y;
+        N n9 = this.f39119y;
         if (n9 != null) {
             n9.setBackgroundDrawable(drawable);
         } else {
@@ -355,12 +355,12 @@ public final class O extends Spinner {
 
     @Override // android.widget.Spinner
     public void setPopupBackgroundResource(int i) {
-        setPopupBackgroundDrawable(com.bumptech.glide.g.e(getPopupContext(), i));
+        setPopupBackgroundDrawable(com.bumptech.glide.g.h(getPopupContext(), i));
     }
 
     @Override // android.widget.Spinner
     public void setPrompt(CharSequence charSequence) {
-        N n9 = this.f39051y;
+        N n9 = this.f39119y;
         if (n9 != null) {
             n9.g(charSequence);
         } else {
@@ -369,42 +369,42 @@ public final class O extends Spinner {
     }
 
     public void setSupportBackgroundTintList(ColorStateList colorStateList) {
-        C2712Ol c2712Ol = this.f39046n;
-        if (c2712Ol != null) {
-            c2712Ol.h(colorStateList);
+        C2749Pl c2749Pl = this.f39114n;
+        if (c2749Pl != null) {
+            c2749Pl.h(colorStateList);
         }
     }
 
     public void setSupportBackgroundTintMode(PorterDuff.Mode mode) {
-        C2712Ol c2712Ol = this.f39046n;
-        if (c2712Ol != null) {
-            c2712Ol.i(mode);
+        C2749Pl c2749Pl = this.f39114n;
+        if (c2749Pl != null) {
+            c2749Pl.i(mode);
         }
     }
 
     @Override // android.widget.AdapterView
     public void setAdapter(SpinnerAdapter spinnerAdapter) {
-        if (!this.f39050x) {
-            this.f39049w = spinnerAdapter;
+        if (!this.f39118x) {
+            this.f39117w = spinnerAdapter;
             return;
         }
         super.setAdapter(spinnerAdapter);
-        N n9 = this.f39051y;
+        N n9 = this.f39119y;
         if (n9 != null) {
-            Context context = this.f39047u;
+            Context context = this.f39115u;
             if (context == null) {
                 context = getContext();
             }
             Resources.Theme theme = context.getTheme();
             J j6 = new J();
-            j6.f39020a = spinnerAdapter;
+            j6.f39088a = spinnerAdapter;
             if (spinnerAdapter instanceof ListAdapter) {
-                j6.f39021b = (ListAdapter) spinnerAdapter;
+                j6.f39089b = (ListAdapter) spinnerAdapter;
             }
             if (theme != null && (spinnerAdapter instanceof ThemedSpinnerAdapter)) {
-                AbstractC4674H.a((ThemedSpinnerAdapter) spinnerAdapter, theme);
+                AbstractC4686H.a((ThemedSpinnerAdapter) spinnerAdapter, theme);
             }
-            n9.m(j6);
+            n9.l(j6);
         }
     }
 }

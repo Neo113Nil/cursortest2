@@ -26,7 +26,7 @@ import org.json.JSONObject;
 public class AdxBidRequestInfo extends ATBidRequestInfo {
 
     /* renamed from: a, reason: collision with root package name */
-    JSONObject f23048a;
+    JSONObject f23835a;
 
     /* JADX WARN: Code restructure failed: missing block: B:28:0x009f, code lost:
     
@@ -36,10 +36,10 @@ public class AdxBidRequestInfo extends ATBidRequestInfo {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public AdxBidRequestInfo(Context context, String str, Map<String, Object> map, Map<String, Object> map2, int i) {
+        int i4;
         int i6;
-        int i9;
         JSONObject jSONObject = new JSONObject();
-        this.f23048a = jSONObject;
+        this.f23835a = jSONObject;
         try {
             AdxATInitManager.getInstance();
             jSONObject.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.SUPPORT_TEMPLATE_VERSION, AdxATInitManager.a() ? 1 : 0);
@@ -49,14 +49,14 @@ public class AdxBidRequestInfo extends ATBidRequestInfo {
                 if (aO > 0) {
                     List<j> a9 = d.a().a(aO);
                     if (a9.size() > 0) {
-                        this.f23048a.put(l.a.f17397P, a(a9));
+                        this.f23835a.put(l.a.f18184P, a(a9));
                     }
                 }
                 int aN = b9.aN();
                 if (aN > 0) {
                     List<j> b10 = d.a().b(aN);
                     if (b10.size() > 0) {
-                        this.f23048a.put(l.a.f17396O, a(b10));
+                        this.f23835a.put(l.a.f18183O, a(b10));
                     }
                 }
             }
@@ -66,13 +66,13 @@ public class AdxBidRequestInfo extends ATBidRequestInfo {
                     JSONArray b11 = AdxATInitManager.b();
                     if (b11 != null && b11.length() > 0) {
                         JSONObject jSONObject2 = new JSONObject();
-                        jSONObject2.put(b.f8942a, b11);
-                        this.f23048a.put("ss_dsp_rt", jSONObject2);
+                        jSONObject2.put(b.f9728a, b11);
+                        this.f23835a.put("ss_dsp_rt", jSONObject2);
                     }
                 } catch (Throwable unused) {
                 }
             }
-            JSONObject jSONObject3 = this.f23048a;
+            JSONObject jSONObject3 = this.f23835a;
             if (jSONObject3 != null) {
                 try {
                     if (i != 0) {
@@ -93,29 +93,29 @@ public class AdxBidRequestInfo extends ATBidRequestInfo {
                         jSONObject3.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_HEIGHT, context.getResources().getDisplayMetrics().heightPixels);
                     } else {
                         if (map2 != null) {
-                            i6 = ATInitMediation.getIntFromMap(map2, ATAdConst.KEY.AD_WIDTH);
-                            i9 = ATInitMediation.getIntFromMap(map2, ATAdConst.KEY.AD_HEIGHT);
+                            i4 = ATInitMediation.getIntFromMap(map2, ATAdConst.KEY.AD_WIDTH);
+                            i6 = ATInitMediation.getIntFromMap(map2, ATAdConst.KEY.AD_HEIGHT);
                         } else {
+                            i4 = -1;
                             i6 = -1;
-                            i9 = -1;
+                        }
+                        if (i4 > 0) {
+                            jSONObject3.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_WIDTH, Math.min(context.getResources().getDisplayMetrics().widthPixels, i4));
                         }
                         if (i6 > 0) {
-                            jSONObject3.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_WIDTH, Math.min(context.getResources().getDisplayMetrics().widthPixels, i6));
-                        }
-                        if (i9 > 0) {
-                            jSONObject3.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_HEIGHT, Math.min(context.getResources().getDisplayMetrics().heightPixels, i9));
+                            jSONObject3.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_HEIGHT, Math.min(context.getResources().getDisplayMetrics().heightPixels, i6));
                         }
                     }
                 } catch (Throwable unused2) {
                 }
             }
-            f.a().a(str, this.f23048a);
+            f.a().a(str, this.f23835a);
             String c9 = com.anythink.basead.j.f.a().c();
             if (!TextUtils.isEmpty(c9)) {
-                this.f23048a.put("om_ver", c9);
+                this.f23835a.put("om_ver", c9);
             }
             if (t.b().c("sensor_deny")) {
-                this.f23048a.put("sensor_deny", 1);
+                this.f23835a.put("sensor_deny", 1);
             }
         } catch (Throwable unused3) {
         }
@@ -143,13 +143,13 @@ public class AdxBidRequestInfo extends ATBidRequestInfo {
 
     public void fillAdAcceptType(int i, String str) {
         try {
-            if (this.f23048a != null) {
+            if (this.f23835a != null) {
                 JSONArray jSONArray = new JSONArray(ATAdConst.AD_SUPPORT_TYPE_ARRAY);
                 if ((i == 1 || i == 3 || i == 4) && c.a().g()) {
                     jSONArray.put(4);
                 }
-                this.f23048a.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.ADP_ACCEPT_TYPE, jSONArray);
-                this.f23048a.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.ADP_ACCEPT_VAST_VER, new JSONArray(ATAdConst.AD_SUPPORT_VAST_VERSION_ARRAY));
+                this.f23835a.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.ADP_ACCEPT_TYPE, jSONArray);
+                this.f23835a.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.ADP_ACCEPT_VAST_VER, new JSONArray(ATAdConst.AD_SUPPORT_VAST_VERSION_ARRAY));
             }
         } catch (Throwable unused) {
         }
@@ -164,12 +164,12 @@ public class AdxBidRequestInfo extends ATBidRequestInfo {
         try {
             String stringFromMap = ATInitMediation.getStringFromMap(map, "unit_type");
             if (!TextUtils.isEmpty(stringFromMap)) {
-                this.f23048a.put("unit_type", Integer.parseInt(stringFromMap));
+                this.f23835a.put("unit_type", Integer.parseInt(stringFromMap));
             }
             str = ATInitMediation.getStringFromMap(map, k.aF);
             try {
                 if (!TextUtils.isEmpty(str)) {
-                    this.f23048a.put("ir_type", str);
+                    this.f23835a.put("ir_type", str);
                 }
             } catch (Throwable unused) {
             }
@@ -182,7 +182,7 @@ public class AdxBidRequestInfo extends ATBidRequestInfo {
     public void fillNative(Map<String, Object> map) {
         if (!TextUtils.equals("1", ATInitMediation.getStringFromMap(map, "layout_type"))) {
             try {
-                this.f23048a.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.ADP_ACCEPT_TYPE, new JSONArray(ATAdConst.AD_SUPPORT_TYPE_ARRAY_ONLY_PMP_SELF_REDNER));
+                this.f23835a.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.ADP_ACCEPT_TYPE, new JSONArray(ATAdConst.AD_SUPPORT_TYPE_ARRAY_ONLY_PMP_SELF_REDNER));
             } catch (Throwable unused) {
             }
         } else {
@@ -198,11 +198,11 @@ public class AdxBidRequestInfo extends ATBidRequestInfo {
 
     public void fillSplashData() {
         try {
-            this.f23048a.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.GET_OFFER, 2);
+            this.f23835a.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.GET_OFFER, 2);
             JSONArray jSONArray = new JSONArray();
             jSONArray.put(4);
             jSONArray.put(5);
-            this.f23048a.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.ADX_MTG_DSP_MIX_TYPE, jSONArray);
+            this.f23835a.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.ADX_MTG_DSP_MIX_TYPE, jSONArray);
         } catch (Throwable unused) {
         }
         fillAdAcceptType(4, null);
@@ -210,7 +210,7 @@ public class AdxBidRequestInfo extends ATBidRequestInfo {
 
     public void fillTemplateIds(JSONArray jSONArray) {
         try {
-            if (this.f23048a == null || jSONArray == null) {
+            if (this.f23835a == null || jSONArray == null) {
                 return;
             }
             JSONArray jSONArray2 = new JSONArray();
@@ -218,36 +218,36 @@ public class AdxBidRequestInfo extends ATBidRequestInfo {
             for (int i = 0; i < length; i++) {
                 jSONArray2.put(jSONArray.getInt(i));
             }
-            this.f23048a.put("nv_unit_type", jSONArray2);
+            this.f23835a.put("nv_unit_type", jSONArray2);
         } catch (Throwable unused) {
         }
     }
 
     @Override // com.anythink.core.api.ATBidRequestInfo
     public JSONObject toRequestJSONObject() {
-        return this.f23048a;
+        return this.f23835a;
     }
 
     private static void a(Context context, JSONObject jSONObject, Map<String, Object> map, Map<String, Object> map2, int i) {
+        int i4;
         int i6;
-        int i9;
         if (jSONObject == null) {
             return;
         }
         try {
             if (i == 0) {
                 if (map2 != null) {
-                    i6 = ATInitMediation.getIntFromMap(map2, ATAdConst.KEY.AD_WIDTH);
-                    i9 = ATInitMediation.getIntFromMap(map2, ATAdConst.KEY.AD_HEIGHT);
+                    i4 = ATInitMediation.getIntFromMap(map2, ATAdConst.KEY.AD_WIDTH);
+                    i6 = ATInitMediation.getIntFromMap(map2, ATAdConst.KEY.AD_HEIGHT);
                 } else {
+                    i4 = -1;
                     i6 = -1;
-                    i9 = -1;
+                }
+                if (i4 > 0) {
+                    jSONObject.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_WIDTH, Math.min(context.getResources().getDisplayMetrics().widthPixels, i4));
                 }
                 if (i6 > 0) {
-                    jSONObject.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_WIDTH, Math.min(context.getResources().getDisplayMetrics().widthPixels, i6));
-                }
-                if (i9 > 0) {
-                    jSONObject.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_HEIGHT, Math.min(context.getResources().getDisplayMetrics().heightPixels, i9));
+                    jSONObject.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_HEIGHT, Math.min(context.getResources().getDisplayMetrics().heightPixels, i6));
                     return;
                 }
                 return;

@@ -5,7 +5,7 @@ import com.anythink.core.api.ATNetworkConfirmInfo;
 
 /* loaded from: classes.dex */
 public interface CustomInterstitialEventListener {
-    void onDeeplinkCallback(boolean z3);
+    void onDeeplinkCallback(boolean z6);
 
     void onDownloadConfirm(Context context, ATNetworkConfirmInfo aTNetworkConfirmInfo);
 

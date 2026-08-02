@@ -19,9 +19,9 @@ public final class UB {
     public static final Map<String, Integer> A04;
     public static final AtomicInteger A05;
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        int i10 = 0;
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             String[] strArr = A03;
@@ -29,11 +29,11 @@ public final class UB {
                 throw new RuntimeException();
             }
             A03[1] = "U3LMWoXZ5NcjJWeamIlVlKUbevsxyVyN";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 91);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 91);
+            i9++;
         }
     }
 
@@ -72,7 +72,7 @@ public final class UB {
     public static void A06(T8 t82, String str, Map<String, String> params) {
         String str2;
         if (A0A(t82)) {
-            str2 = C1337Wn.A03(str);
+            str2 = C1357Wn.A03(str);
         } else {
             str2 = A00;
         }
@@ -82,19 +82,19 @@ public final class UB {
         }
     }
 
-    public static void A07(T8 t82, boolean z3) {
+    public static void A07(T8 t82, boolean z6) {
         if (!A05.compareAndSet(0, 1)) {
             return;
         }
         A00(t82);
         try {
             SharedPreferences A002 = WN.A00(t82);
-            C1263To c1263To = new C1263To(t82);
-            String str = Build.FINGERPRINT + A02(0, 1, 19) + c1263To.A06();
+            C1283To c1283To = new C1283To(t82);
+            String str = Build.FINGERPRINT + A02(0, 1, 19) + c1283To.A06();
             A00 = A002.getString(str, null);
-            FutureTask futureTask = new FutureTask(new UA(t82, c1263To, A002, str));
+            FutureTask futureTask = new FutureTask(new UA(t82, c1283To, A002, str));
             Executors.newSingleThreadExecutor().submit(futureTask);
-            if (z3) {
+            if (z6) {
                 futureTask.get();
             }
         } catch (Exception unused) {
@@ -102,15 +102,15 @@ public final class UB {
         }
     }
 
-    public static void A08(T8 t82, boolean z3, String str) {
+    public static void A08(T8 t82, boolean z6, String str) {
         if (A0A(t82)) {
-            A09(t82, z3, str);
+            A09(t82, z6, str);
         } else {
-            A07(t82, z3);
+            A07(t82, z6);
         }
     }
 
-    public static void A09(T8 t82, boolean z3, String str) {
+    public static void A09(T8 t82, boolean z6, String str) {
         if (str == null) {
             str = t82.getPackageName();
         }
@@ -118,12 +118,12 @@ public final class UB {
             return;
         }
         A00(t82);
-        C1337Wn c1337Wn = new C1337Wn(t82, str);
+        C1357Wn c1357Wn = new C1357Wn(t82, str);
         try {
-            c1337Wn.A06();
-            FutureTask futureTask = new FutureTask(new U9(c1337Wn, str));
+            c1357Wn.A06();
+            FutureTask futureTask = new FutureTask(new U9(c1357Wn, str));
             Executors.newSingleThreadExecutor().submit(futureTask);
-            if (z3) {
+            if (z6) {
                 futureTask.get();
             }
         } catch (Exception unused) {
@@ -135,7 +135,7 @@ public final class UB {
 
     public static boolean A0A(T8 t82) {
         if (!ProcessUtils.isRemoteRenderingProcess()) {
-            boolean A2t = C1290Up.A2t(t82);
+            boolean A2t = C1310Up.A2t(t82);
             if (A03[4].charAt(29) == 'E') {
                 throw new RuntimeException();
             }

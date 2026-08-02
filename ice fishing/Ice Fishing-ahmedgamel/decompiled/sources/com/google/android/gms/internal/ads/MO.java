@@ -10,25 +10,25 @@ import java.util.Objects;
 public final class MO extends ContentObserver {
 
     /* renamed from: a, reason: collision with root package name */
-    public final ContentResolver f26293a;
+    public final ContentResolver f27084a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Uri f26294b;
+    public final Uri f27085b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final /* synthetic */ C2501Ce f26295c;
+    public final /* synthetic */ C2521Ce f27086c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public MO(C2501Ce c2501Ce, Handler handler, ContentResolver contentResolver, Uri uri) {
+    public MO(C2521Ce c2521Ce, Handler handler, ContentResolver contentResolver, Uri uri) {
         super(handler);
-        Objects.requireNonNull(c2501Ce);
-        this.f26295c = c2501Ce;
-        this.f26293a = contentResolver;
-        this.f26294b = uri;
+        Objects.requireNonNull(c2521Ce);
+        this.f27086c = c2521Ce;
+        this.f27084a = contentResolver;
+        this.f27085b = uri;
     }
 
     @Override // android.database.ContentObserver
-    public final void onChange(boolean z3) {
-        this.f26295c.l();
+    public final void onChange(boolean z6) {
+        this.f27086c.l();
     }
 }

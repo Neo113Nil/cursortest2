@@ -21,12 +21,12 @@ public class z {
     public int useType;
     public String winNoticeUrl;
 
-    public z(boolean z3, double d2, String str, String str2, String str3, String str4, String str5, ATAdConst.CURRENCY currency) {
+    public z(boolean z6, double d9, String str, String str2, String str3, String str4, String str5, ATAdConst.CURRENCY currency) {
         this.useType = 1;
-        this.isSuccess = z3;
-        this.originPrice = d2;
-        this.price = d2;
-        this.sortPrice = d2;
+        this.isSuccess = z6;
+        this.originPrice = d9;
+        this.price = d9;
+        this.sortPrice = d9;
         this.token = str;
         this.winNoticeUrl = str2;
         this.loseNoticeUrl = str3;
@@ -87,28 +87,28 @@ public class z {
         this.originRequestId = str;
     }
 
-    public void setPrice(double d2) {
-        this.price = d2;
+    public void setPrice(double d9) {
+        this.price = d9;
     }
 
-    public void setSortPrice(double d2) {
-        this.sortPrice = d2;
+    public void setSortPrice(double d9) {
+        this.sortPrice = d9;
     }
 
-    public z(boolean z3, double d2, String str, ATBiddingNotice aTBiddingNotice, String str2, ATAdConst.CURRENCY currency) {
+    public z(boolean z6, double d9, String str, ATBiddingNotice aTBiddingNotice, String str2, ATAdConst.CURRENCY currency) {
         this.useType = 1;
-        this.isSuccess = z3;
-        this.originPrice = d2;
-        this.price = d2;
-        this.sortPrice = d2;
+        this.isSuccess = z6;
+        this.originPrice = d9;
+        this.price = d9;
+        this.sortPrice = d9;
         this.token = str;
         this.biddingNotice = aTBiddingNotice;
         this.errorMsg = str2;
         this.currency = currency;
     }
 
-    public z(boolean z3, double d2, double d9, String str, ATBiddingNotice aTBiddingNotice, String str2, ATAdConst.CURRENCY currency) {
-        this(z3, d9, str, aTBiddingNotice, str2, currency);
-        this.sortPrice = d2;
+    public z(boolean z6, double d9, double d10, String str, ATBiddingNotice aTBiddingNotice, String str2, ATAdConst.CURRENCY currency) {
+        this(z6, d10, str, aTBiddingNotice, str2, currency);
+        this.sortPrice = d9;
     }
 }

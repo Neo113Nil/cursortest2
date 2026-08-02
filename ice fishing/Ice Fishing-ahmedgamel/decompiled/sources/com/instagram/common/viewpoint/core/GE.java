@@ -1,49 +1,49 @@
 package com.instagram.common.viewpoint.core;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class GE implements InterfaceC1670dx {
+public class GE implements InterfaceC1690dx {
     public final /* synthetic */ C4V A00;
 
     public GE(C4V c4v) {
         this.A00 = c4v;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1670dx
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1690dx
     public final void A9l() {
-        AbstractC1553c3 abstractC1553c3;
-        AbstractC1553c3 abstractC1553c32;
-        abstractC1553c3 = this.A00.A02;
-        if (abstractC1553c3 instanceof C6H) {
-            abstractC1553c32 = this.A00.A02;
-            ((C6H) abstractC1553c32).A1X();
-            VI.A02(VH.A0e, null, ((AbstractC0927Gj) this.A00).A03.A2E(), ((AbstractC0927Gj) this.A00).A05.A0A());
+        AbstractC1573c3 abstractC1573c3;
+        AbstractC1573c3 abstractC1573c32;
+        abstractC1573c3 = this.A00.A02;
+        if (abstractC1573c3 instanceof C6H) {
+            abstractC1573c32 = this.A00.A02;
+            ((C6H) abstractC1573c32).A1X();
+            VI.A02(VH.A0e, null, ((AbstractC0947Gj) this.A00).A03.A2E(), ((AbstractC0947Gj) this.A00).A05.A0A());
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1670dx
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1690dx
     public final void AJz() {
-        AbstractC1553c3 abstractC1553c3;
-        AbstractC1553c3 abstractC1553c32;
+        AbstractC1573c3 abstractC1573c3;
+        AbstractC1573c3 abstractC1573c32;
         C4L c4l;
-        abstractC1553c3 = this.A00.A02;
-        if (abstractC1553c3 instanceof C6H) {
-            abstractC1553c32 = this.A00.A02;
+        abstractC1573c3 = this.A00.A02;
+        if (abstractC1573c3 instanceof C6H) {
+            abstractC1573c32 = this.A00.A02;
             c4l = this.A00.A0N;
-            ((C6H) abstractC1553c32).A1b(c4l);
-            VI.A02(VH.A0e, null, ((AbstractC0927Gj) this.A00).A03.A2E(), ((AbstractC0927Gj) this.A00).A05.A0A());
+            ((C6H) abstractC1573c32).A1b(c4l);
+            VI.A02(VH.A0e, null, ((AbstractC0947Gj) this.A00).A03.A2E(), ((AbstractC0947Gj) this.A00).A05.A0A());
         }
         this.A00.A0n();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1670dx
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1690dx
     public final void AKE() {
-        AbstractC1553c3 abstractC1553c3;
-        AbstractC1553c3 abstractC1553c32;
+        AbstractC1573c3 abstractC1573c3;
+        AbstractC1573c3 abstractC1573c32;
         this.A00.A0e();
-        abstractC1553c3 = this.A00.A02;
-        if (abstractC1553c3 instanceof C6H) {
-            abstractC1553c32 = this.A00.A02;
-            ((C6H) abstractC1553c32).getAdDetailsView().setVisibility(8);
+        abstractC1573c3 = this.A00.A02;
+        if (abstractC1573c3 instanceof C6H) {
+            abstractC1573c32 = this.A00.A02;
+            ((C6H) abstractC1573c32).getAdDetailsView().setVisibility(8);
         }
     }
 }

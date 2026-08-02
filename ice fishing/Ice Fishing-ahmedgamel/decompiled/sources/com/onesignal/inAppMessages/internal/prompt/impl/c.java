@@ -1,15 +1,15 @@
 package com.onesignal.inAppMessages.internal.prompt.impl;
 
-import a5.InterfaceC0437a;
+import a5.InterfaceC0441a;
 import i5.n;
 import kotlin.jvm.internal.h;
 
 /* loaded from: classes2.dex */
 public final class c implements W4.a {
-    private final InterfaceC0437a _locationManager;
+    private final InterfaceC0441a _locationManager;
     private final n _notificationsManager;
 
-    public c(n _notificationsManager, InterfaceC0437a _locationManager) {
+    public c(n _notificationsManager, InterfaceC0441a _locationManager) {
         h.e(_notificationsManager, "_notificationsManager");
         h.e(_locationManager, "_locationManager");
         this._notificationsManager = _notificationsManager;

@@ -1,43 +1,43 @@
 package G5;
 
 import B7.c;
-import g1.C4522b;
-import u7.C5089g;
+import I0.j;
+import u7.C5081g;
 
 /* loaded from: classes2.dex */
 public final class a extends c {
 
     /* renamed from: n, reason: collision with root package name */
-    public C4522b f1073n;
+    public j f1176n;
 
     /* renamed from: u, reason: collision with root package name */
-    public C5089g[] f1074u;
+    public C5081g[] f1177u;
 
     /* renamed from: v, reason: collision with root package name */
-    public C5089g[] f1075v;
+    public C5081g[] f1178v;
 
     /* renamed from: w, reason: collision with root package name */
-    public String f1076w;
+    public String f1179w;
 
     /* renamed from: x, reason: collision with root package name */
-    public /* synthetic */ Object f1077x;
+    public /* synthetic */ Object f1180x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final /* synthetic */ C4522b f1078y;
+    public final /* synthetic */ j f1181y;
 
     /* renamed from: z, reason: collision with root package name */
-    public int f1079z;
+    public int f1182z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public a(C4522b c4522b, c cVar) {
+    public a(j jVar, c cVar) {
         super(cVar);
-        this.f1078y = c4522b;
+        this.f1181y = jVar;
     }
 
     @Override // B7.a
     public final Object invokeSuspend(Object obj) {
-        this.f1077x = obj;
-        this.f1079z |= Integer.MIN_VALUE;
-        return this.f1078y.D(this);
+        this.f1180x = obj;
+        this.f1182z |= Integer.MIN_VALUE;
+        return this.f1181y.r(this);
     }
 }

@@ -21,10 +21,10 @@ public final class LX {
         A01();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0B, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 97);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0B, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 97);
         }
         return new String(copyOfRange);
     }
@@ -60,7 +60,7 @@ public final class LX {
         this.A0A = false;
     }
 
-    public LX(String str, String str2, String str3, String str4, String str5, boolean z3) {
+    public LX(String str, String str2, String str3, String str4, String str5, boolean z6) {
         this.A04 = A00(0, 0, 3);
         this.A01 = -1;
         this.A00 = -1;
@@ -70,6 +70,6 @@ public final class LX {
         this.A07 = str4;
         this.A02 = null;
         this.A03 = str5;
-        this.A0A = z3;
+        this.A0A = z6;
     }
 }

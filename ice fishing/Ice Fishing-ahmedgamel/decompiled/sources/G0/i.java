@@ -1,48 +1,37 @@
 package G0;
 
-import android.database.DataSetObserver;
-import androidx.viewpager.widget.ViewPager;
-import m.B0;
+import android.os.Parcel;
+import android.os.Parcelable;
+import w.AbstractC5128c;
 
 /* loaded from: classes.dex */
-public final class i extends DataSetObserver {
+public final class i extends V.b {
+    public static final Parcelable.Creator<i> CREATOR = new A3.b(2);
 
-    /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f1045a;
+    /* renamed from: v, reason: collision with root package name */
+    public int f1071v;
 
-    /* renamed from: b, reason: collision with root package name */
-    public final /* synthetic */ Object f1046b;
+    /* renamed from: w, reason: collision with root package name */
+    public Parcelable f1072w;
 
-    public /* synthetic */ i(int i, Object obj) {
-        this.f1045a = i;
-        this.f1046b = obj;
+    public i(Parcel parcel, ClassLoader classLoader) {
+        super(parcel, classLoader);
+        classLoader = classLoader == null ? i.class.getClassLoader() : classLoader;
+        this.f1071v = parcel.readInt();
+        this.f1072w = parcel.readParcelable(classLoader);
     }
 
-    @Override // android.database.DataSetObserver
-    public final void onChanged() {
-        switch (this.f1045a) {
-            case 0:
-                ((ViewPager) this.f1046b).e();
-                break;
-            default:
-                B0 b02 = (B0) this.f1046b;
-                if (b02.f38985S.isShowing()) {
-                    b02.show();
-                    break;
-                }
-                break;
-        }
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("FragmentPager.SavedState{");
+        sb.append(Integer.toHexString(System.identityHashCode(this)));
+        sb.append(" position=");
+        return AbstractC5128c.e(this.f1071v, "}", sb);
     }
 
-    @Override // android.database.DataSetObserver
-    public final void onInvalidated() {
-        switch (this.f1045a) {
-            case 0:
-                ((ViewPager) this.f1046b).e();
-                break;
-            default:
-                ((B0) this.f1046b).dismiss();
-                break;
-        }
+    @Override // V.b, android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        super.writeToParcel(parcel, i);
+        parcel.writeInt(this.f1071v);
+        parcel.writeParcelable(this.f1072w, i);
     }
 }

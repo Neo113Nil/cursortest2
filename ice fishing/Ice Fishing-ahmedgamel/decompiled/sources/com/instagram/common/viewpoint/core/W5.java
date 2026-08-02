@@ -3,14 +3,14 @@ package com.instagram.common.viewpoint.core;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class W5 implements InterfaceC1723ep {
-    public final /* synthetic */ C1324Vz A00;
+public class W5 implements InterfaceC1743ep {
+    public final /* synthetic */ C1344Vz A00;
 
-    public W5(C1324Vz c1324Vz) {
-        this.A00 = c1324Vz;
+    public W5(C1344Vz c1344Vz) {
+        this.A00 = c1344Vz;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1723ep
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1743ep
     public final void AGT() {
         AtomicBoolean atomicBoolean;
         VV vv;

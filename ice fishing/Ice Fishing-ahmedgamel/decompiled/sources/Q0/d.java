@@ -1,67 +1,67 @@
 package Q0;
 
-import J0.s;
+import J0.r;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.media.AudioDeviceInfo;
 import android.util.Log;
-import com.google.android.gms.internal.ads.C2501Ce;
-import com.google.android.gms.internal.ads.C2744Qj;
-import com.google.android.gms.internal.ads.C2866Yb;
-import com.google.android.gms.internal.ads.C3212ft;
-import com.google.android.gms.internal.ads.C3428jv;
-import com.google.android.gms.internal.ads.C3537lw;
-import com.google.android.gms.internal.ads.C3640nr;
+import com.google.android.gms.internal.ads.C2521Ce;
+import com.google.android.gms.internal.ads.C2764Qj;
+import com.google.android.gms.internal.ads.C2889Yb;
+import com.google.android.gms.internal.ads.C3235ft;
+import com.google.android.gms.internal.ads.C3451jv;
+import com.google.android.gms.internal.ads.C3614mw;
+import com.google.android.gms.internal.ads.C3663nr;
 import com.google.android.gms.internal.ads.C7;
 import com.google.android.gms.internal.ads.KO;
-import com.google.android.gms.internal.ads.RunnableC2807Ug;
-import com.google.android.gms.internal.ads.RunnableC3048cq;
-import com.google.android.gms.internal.ads.ViewOnAttachStateChangeListenerC3981u8;
+import com.google.android.gms.internal.ads.RunnableC2829Ug;
+import com.google.android.gms.internal.ads.RunnableC3071cq;
+import com.google.android.gms.internal.ads.ViewOnAttachStateChangeListenerC4004u8;
 import com.google.android.gms.internal.ads.Y6;
 import com.google.firebase.messaging.FirebaseMessaging;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Objects;
 import java.util.WeakHashMap;
-import u2.D;
+import w2.D;
 
 /* loaded from: classes.dex */
 public final class d extends BroadcastReceiver {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f2628a;
+    public final /* synthetic */ int f2463a;
 
     /* renamed from: b, reason: collision with root package name */
-    public Object f2629b;
+    public Object f2464b;
 
     public /* synthetic */ d(int i, Object obj) {
-        this.f2628a = i;
-        this.f2629b = obj;
+        this.f2463a = i;
+        this.f2464b = obj;
     }
 
     public void a() {
         if (Log.isLoggable("FirebaseMessaging", 3)) {
             Log.d("FirebaseMessaging", "Connectivity change received registered");
         }
-        ((FirebaseMessaging) ((RunnableC2807Ug) this.f2629b).f27950w).f36194b.registerReceiver(this, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
+        ((FirebaseMessaging) ((RunnableC2829Ug) this.f2464b).f28748w).f36961b.registerReceiver(this, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
     }
 
     @Override // android.content.BroadcastReceiver
     public final void onReceive(Context context, Intent intent) {
-        switch (this.f2628a) {
+        switch (this.f2463a) {
             case 0:
                 kotlin.jvm.internal.h.e(context, "context");
                 kotlin.jvm.internal.h.e(intent, "intent");
-                a aVar = (a) this.f2629b;
-                switch (aVar.f2625g) {
+                a aVar = (a) this.f2464b;
+                switch (aVar.f2460g) {
                     case 0:
                         String action = intent.getAction();
                         if (action == null) {
                             return;
                         }
-                        s.d().a(b.f2626a, "Received ".concat(action));
+                        r.d().a(b.f2461a, "Received ".concat(action));
                         switch (action.hashCode()) {
                             case -1886648615:
                                 if (action.equals("android.intent.action.ACTION_POWER_DISCONNECTED")) {
@@ -94,7 +94,7 @@ public final class d extends BroadcastReceiver {
                         if (intent.getAction() == null) {
                             return;
                         }
-                        s.d().a(c.f2627a, "Received " + intent.getAction());
+                        r.d().a(c.f2462a, "Received " + intent.getAction());
                         String action2 = intent.getAction();
                         if (action2 != null) {
                             int hashCode = action2.hashCode();
@@ -117,7 +117,7 @@ public final class d extends BroadcastReceiver {
                         if (intent.getAction() == null) {
                             return;
                         }
-                        s.d().a(k.f2642a, "Received " + intent.getAction());
+                        r.d().a(k.f2477a, "Received " + intent.getAction());
                         String action3 = intent.getAction();
                         if (action3 != null) {
                             int hashCode2 = action3.hashCode();
@@ -138,31 +138,31 @@ public final class d extends BroadcastReceiver {
                         return;
                 }
             case 1:
-                ((C7) this.f2629b).c();
+                ((C7) this.f2464b).c();
                 return;
             case 2:
-                ((ViewOnAttachStateChangeListenerC3981u8) this.f2629b).d(3);
+                ((ViewOnAttachStateChangeListenerC4004u8) this.f2464b).d(3);
                 return;
             case 3:
                 if ("android.media.AUDIO_BECOMING_NOISY".equals(intent.getAction())) {
-                    ((C3212ft) this.f2629b).e(new Y6(1));
+                    ((C3235ft) this.f2464b).e(new Y6(1));
                     return;
                 }
                 return;
             case 4:
-                ((C3640nr) this.f2629b).f32786a.execute(new RunnableC3048cq(4, this, context));
+                ((C3663nr) this.f2464b).f33573a.execute(new RunnableC3071cq(4, this, context));
                 return;
             case 5:
                 boolean equals = intent.getAction().equals("android.intent.action.SCREEN_OFF");
-                C3537lw c3537lw = (C3537lw) this.f2629b;
+                C3614mw c3614mw = (C3614mw) this.f2464b;
                 if (equals) {
-                    c3537lw.a(true, c3537lw.f31868c);
-                    c3537lw.f31867b = true;
+                    c3614mw.a(true, c3614mw.f33408c);
+                    c3614mw.f33407b = true;
                     return;
                 } else {
                     if (intent.getAction().equals("android.intent.action.SCREEN_ON")) {
-                        c3537lw.a(false, c3537lw.f31868c);
-                        c3537lw.f31867b = false;
+                        c3614mw.a(false, c3614mw.f33408c);
+                        c3614mw.f33407b = false;
                         return;
                     }
                     return;
@@ -171,32 +171,32 @@ public final class d extends BroadcastReceiver {
                 if (isInitialStickyBroadcast()) {
                     return;
                 }
-                C2501Ce c2501Ce = (C2501Ce) this.f2629b;
-                c2501Ce.k(KO.a(context, intent, (C2744Qj) c2501Ce.f24172D, (AudioDeviceInfo) c2501Ce.f24171C, c2501Ce.j()));
+                C2521Ce c2521Ce = (C2521Ce) this.f2464b;
+                c2521Ce.k(KO.a(context, intent, (C2764Qj) c2521Ce.f24907D, (AudioDeviceInfo) c2521Ce.f24906C, c2521Ce.j()));
                 return;
             case 7:
-                ((E2.a) this.f2629b).l();
+                ((B1.b) this.f2464b).l();
                 return;
             case 8:
-                RunnableC2807Ug runnableC2807Ug = (RunnableC2807Ug) this.f2629b;
-                if (runnableC2807Ug != null && runnableC2807Ug.a()) {
+                RunnableC2829Ug runnableC2829Ug = (RunnableC2829Ug) this.f2464b;
+                if (runnableC2829Ug != null && runnableC2829Ug.a()) {
                     if (Log.isLoggable("FirebaseMessaging", 3)) {
                         Log.d("FirebaseMessaging", "Connectivity changed. Starting background sync.");
                     }
-                    RunnableC2807Ug runnableC2807Ug2 = (RunnableC2807Ug) this.f2629b;
-                    ((FirebaseMessaging) runnableC2807Ug2.f27950w).getClass();
-                    FirebaseMessaging.b(runnableC2807Ug2, 0L);
-                    ((FirebaseMessaging) ((RunnableC2807Ug) this.f2629b).f27950w).f36194b.unregisterReceiver(this);
-                    this.f2629b = null;
+                    RunnableC2829Ug runnableC2829Ug2 = (RunnableC2829Ug) this.f2464b;
+                    ((FirebaseMessaging) runnableC2829Ug2.f28748w).getClass();
+                    FirebaseMessaging.b(runnableC2829Ug2, 0L);
+                    ((FirebaseMessaging) ((RunnableC2829Ug) this.f2464b).f28748w).f36961b.unregisterReceiver(this);
+                    this.f2464b = null;
                     return;
                 }
                 return;
             case 9:
-                C3428jv c3428jv = (C3428jv) this.f2629b;
-                synchronized (c3428jv) {
+                C3451jv c3451jv = (C3451jv) this.f2464b;
+                synchronized (c3451jv) {
                     try {
                         ArrayList arrayList = new ArrayList();
-                        for (Map.Entry entry : ((WeakHashMap) c3428jv.f31348w).entrySet()) {
+                        for (Map.Entry entry : ((WeakHashMap) c3451jv.f32127w).entrySet()) {
                             if (((IntentFilter) entry.getValue()).hasAction(intent.getAction())) {
                                 arrayList.add((BroadcastReceiver) entry.getKey());
                             }
@@ -212,13 +212,13 @@ public final class d extends BroadcastReceiver {
                 return;
             default:
                 boolean equals2 = Objects.equals(intent.getAction(), "android.intent.action.USER_PRESENT");
-                D d2 = (D) this.f2629b;
+                D d9 = (D) this.f2464b;
                 if (equals2) {
-                    d2.f41242e = true;
+                    d9.f41632e = true;
                     return;
                 } else {
                     if ("android.intent.action.SCREEN_OFF".equals(intent.getAction())) {
-                        d2.f41242e = false;
+                        d9.f41632e = false;
                         return;
                     }
                     return;
@@ -227,54 +227,54 @@ public final class d extends BroadcastReceiver {
     }
 
     public d(int i) {
-        this.f2628a = i;
+        this.f2463a = i;
         switch (i) {
             case 8:
                 break;
             default:
-                this.f2629b = C3537lw.f31865d;
+                this.f2464b = C3614mw.f33405d;
                 break;
         }
     }
 
     public d(C7 c72) {
-        this.f2628a = 1;
+        this.f2463a = 1;
         Objects.requireNonNull(c72);
-        this.f2629b = c72;
+        this.f2464b = c72;
     }
 
-    public d(ViewOnAttachStateChangeListenerC3981u8 viewOnAttachStateChangeListenerC3981u8) {
-        this.f2628a = 2;
-        Objects.requireNonNull(viewOnAttachStateChangeListenerC3981u8);
-        this.f2629b = viewOnAttachStateChangeListenerC3981u8;
+    public d(ViewOnAttachStateChangeListenerC4004u8 viewOnAttachStateChangeListenerC4004u8) {
+        this.f2463a = 2;
+        Objects.requireNonNull(viewOnAttachStateChangeListenerC4004u8);
+        this.f2464b = viewOnAttachStateChangeListenerC4004u8;
     }
 
-    public /* synthetic */ d(C2866Yb c2866Yb, C3212ft c3212ft) {
-        this.f2628a = 3;
-        this.f2629b = c3212ft;
+    public /* synthetic */ d(C2889Yb c2889Yb, C3235ft c3235ft) {
+        this.f2463a = 3;
+        this.f2464b = c3235ft;
     }
 
-    public /* synthetic */ d(C2501Ce c2501Ce) {
-        this.f2628a = 6;
-        Objects.requireNonNull(c2501Ce);
-        this.f2629b = c2501Ce;
+    public /* synthetic */ d(C2521Ce c2521Ce) {
+        this.f2463a = 6;
+        Objects.requireNonNull(c2521Ce);
+        this.f2464b = c2521Ce;
     }
 
-    public /* synthetic */ d(C3640nr c3640nr) {
-        this.f2628a = 4;
-        Objects.requireNonNull(c3640nr);
-        this.f2629b = c3640nr;
+    public /* synthetic */ d(C3663nr c3663nr) {
+        this.f2463a = 4;
+        Objects.requireNonNull(c3663nr);
+        this.f2464b = c3663nr;
     }
 
-    public d(C3428jv c3428jv) {
-        this.f2628a = 9;
-        Objects.requireNonNull(c3428jv);
-        this.f2629b = c3428jv;
+    public d(C3451jv c3451jv) {
+        this.f2463a = 9;
+        Objects.requireNonNull(c3451jv);
+        this.f2464b = c3451jv;
     }
 
-    public /* synthetic */ d(D d2) {
-        this.f2628a = 10;
-        Objects.requireNonNull(d2);
-        this.f2629b = d2;
+    public /* synthetic */ d(D d9) {
+        this.f2463a = 10;
+        Objects.requireNonNull(d9);
+        this.f2464b = d9;
     }
 }

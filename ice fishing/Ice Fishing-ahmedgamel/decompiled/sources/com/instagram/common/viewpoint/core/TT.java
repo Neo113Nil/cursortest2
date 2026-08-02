@@ -9,8 +9,8 @@ import java.util.Map;
 /* loaded from: assets/audience_network/classes2.dex */
 public final class TT implements Thread.UncaughtExceptionHandler {
     public static byte[] A04;
-    public final C1836ge A00;
-    public final InterfaceC1249Ta A01;
+    public final C1856ge A00;
+    public final InterfaceC1269Ta A01;
     public final Thread.UncaughtExceptionHandler A02;
     public final Map<String, String> A03;
 
@@ -18,10 +18,10 @@ public final class TT implements Thread.UncaughtExceptionHandler {
         A01();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 48);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 48);
         }
         return new String(copyOfRange);
     }
@@ -30,16 +30,16 @@ public final class TT implements Thread.UncaughtExceptionHandler {
         A04 = new byte[]{-79, -51, -102, -74, -64, -64, -74, -69, -76, 109, -112, -68, -69, -63, -78, -59, -63, -102, -90, -92, 101, -99, -104, -102, -100, -103, -90, -90, -94, 101, -104, -101, -86, 2, 17, 0, 18, 7, 7, 9, -10, 8, 13, 4, -7, -20, -18, -37, -19, -14, -23, -34, -40, -36, -24, -35, -34};
     }
 
-    public TT(Thread.UncaughtExceptionHandler uncaughtExceptionHandler, C1836ge c1836ge, TS ts) {
-        this(uncaughtExceptionHandler, c1836ge, ts, AbstractC1250Tb.A00());
+    public TT(Thread.UncaughtExceptionHandler uncaughtExceptionHandler, C1856ge c1856ge, TS ts) {
+        this(uncaughtExceptionHandler, c1856ge, ts, AbstractC1270Tb.A00());
     }
 
-    public TT(Thread.UncaughtExceptionHandler uncaughtExceptionHandler, C1836ge c1836ge, TS ts, InterfaceC1249Ta interfaceC1249Ta) {
+    public TT(Thread.UncaughtExceptionHandler uncaughtExceptionHandler, C1856ge c1856ge, TS ts, InterfaceC1269Ta interfaceC1269Ta) {
         this.A02 = uncaughtExceptionHandler;
-        if (c1836ge != null) {
-            this.A00 = c1836ge;
-            this.A03 = ts.A97(c1836ge);
-            this.A01 = interfaceC1249Ta;
+        if (c1856ge != null) {
+            this.A00 = c1856ge;
+            this.A03 = ts.A97(c1856ge);
+            this.A01 = interfaceC1269Ta;
             return;
         }
         throw new IllegalArgumentException(A00(2, 15, 29));
@@ -67,7 +67,7 @@ public final class TT implements Thread.UncaughtExceptionHandler {
     @Override // java.lang.Thread.UncaughtExceptionHandler
     public final void uncaughtException(Thread thread, Throwable th) {
         try {
-            String A03 = AbstractC1367Xt.A03(this.A00, th);
+            String A03 = AbstractC1387Xt.A03(this.A00, th);
             if (!TextUtils.isEmpty(A03)) {
                 String stackTraceString = A00(17, 16, 7);
                 if (A03.contains(stackTraceString)) {
@@ -84,9 +84,9 @@ public final class TT implements Thread.UncaughtExceptionHandler {
                         String stackTraceString4 = A00(0, 1, 81);
                         A02.put(A003, stackTraceString4);
                     }
-                    this.A01.AL7(new C1256Th(this.A00.A09().A01(), this.A00.A09().A02(), A02), this.A00);
-                    if (C1290Up.A2A(this.A00)) {
-                        C1290Up.A0e(this.A00);
+                    this.A01.AL7(new C1276Th(this.A00.A09().A01(), this.A00.A09().A02(), A02), this.A00);
+                    if (C1310Up.A2A(this.A00)) {
+                        C1310Up.A0e(this.A00);
                     }
                 }
             }

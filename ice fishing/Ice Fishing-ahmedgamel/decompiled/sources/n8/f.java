@@ -2,31 +2,31 @@ package n8;
 
 import i8.u;
 import i8.v;
-import q2.C4896n;
+import s2.C4945n;
 import y8.w;
 import y8.x;
 
 /* loaded from: classes2.dex */
 public interface f {
-    void a();
+    void a(C4945n c4945n);
 
-    boolean b();
+    void b();
 
-    long c(v vVar);
+    boolean c();
 
     void cancel();
 
-    x d(v vVar);
+    long d(v vVar);
 
-    u e(boolean z3);
+    x e(v vVar);
 
-    void f();
+    u f(boolean z6);
 
-    w g();
+    y8.v g(C4945n c4945n, long j6);
 
-    e h();
+    void h();
 
-    void i(C4896n c4896n);
+    w i();
 
-    y8.v j(C4896n c4896n, long j6);
+    e j();
 }

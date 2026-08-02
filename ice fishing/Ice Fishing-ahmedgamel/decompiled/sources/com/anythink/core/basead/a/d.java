@@ -4,26 +4,26 @@ package com.anythink.core.basead.a;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    private final int f11897a;
+    private final int f12683a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final String f11898b;
+    private final String f12684b;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private int f11899a;
+        private int f12685a;
 
         /* renamed from: b, reason: collision with root package name */
-        private String f11900b;
+        private String f12686b;
 
         public final a a(int i) {
-            this.f11899a = i;
+            this.f12685a = i;
             return this;
         }
 
         public final a a(String str) {
-            this.f11900b = str;
+            this.f12686b = str;
             return this;
         }
 
@@ -37,15 +37,15 @@ public final class d {
     }
 
     public final int a() {
-        return this.f11897a;
+        return this.f12683a;
     }
 
     public final String b() {
-        return this.f11898b;
+        return this.f12684b;
     }
 
     private d(a aVar) {
-        this.f11897a = aVar.f11899a;
-        this.f11898b = aVar.f11900b;
+        this.f12683a = aVar.f12685a;
+        this.f12684b = aVar.f12686b;
     }
 }

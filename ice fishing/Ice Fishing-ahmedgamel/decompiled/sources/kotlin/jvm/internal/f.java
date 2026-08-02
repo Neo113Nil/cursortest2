@@ -1,8 +1,8 @@
 package kotlin.jvm.internal;
 
-import u7.InterfaceC5085c;
+import u7.InterfaceC5077c;
 
 /* loaded from: classes2.dex */
-public interface f extends InterfaceC5085c {
+public interface f extends InterfaceC5077c {
     int getArity();
 }

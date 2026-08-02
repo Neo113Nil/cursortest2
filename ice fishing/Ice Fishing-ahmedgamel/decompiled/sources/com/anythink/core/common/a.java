@@ -1,6 +1,5 @@
 package com.anythink.core.common;
 
-import D.y;
 import android.content.Context;
 import android.os.SystemClock;
 import android.text.TextUtils;
@@ -17,7 +16,7 @@ import com.anythink.core.common.h.bv;
 import com.anythink.core.common.h.bw;
 import com.anythink.core.common.v.aj;
 import com.anythink.core.common.v.ak;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -31,28 +30,28 @@ import org.json.JSONObject;
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static volatile a f12081a;
+    private static volatile a f12867a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final String f12082b = getClass().getSimpleName();
+    private final String f12868b = getClass().getSimpleName();
 
     /* renamed from: c, reason: collision with root package name */
-    private ConcurrentHashMap<String, List<com.anythink.core.common.h.c>> f12083c = new ConcurrentHashMap<>(2);
+    private ConcurrentHashMap<String, List<com.anythink.core.common.h.c>> f12869c = new ConcurrentHashMap<>(2);
 
     /* renamed from: d, reason: collision with root package name */
-    private ConcurrentHashMap<String, bw> f12084d = new ConcurrentHashMap<>(2);
+    private ConcurrentHashMap<String, bw> f12870d = new ConcurrentHashMap<>(2);
 
     private a() {
     }
 
     private static String a(String str, String str2) {
-        return AbstractC4404f.f(str, str2);
+        return Wv.g(str, str2);
     }
 
     public final void b(String str) {
         synchronized (u.a().a(str)) {
             try {
-                List<com.anythink.core.common.h.c> list = this.f12083c.get(str);
+                List<com.anythink.core.common.h.c> list = this.f12869c.get(str);
                 if (list != null) {
                     Collections.sort(list);
                 }
@@ -73,7 +72,7 @@ public class a {
         String aI = cVar.i().aI();
         synchronized (u.a().a(aI)) {
             try {
-                List<com.anythink.core.common.h.c> list = this.f12083c.get(aI);
+                List<com.anythink.core.common.h.c> list = this.f12869c.get(aI);
                 if (list != null) {
                     list.remove(cVar);
                 }
@@ -84,18 +83,18 @@ public class a {
     }
 
     public static a a() {
-        if (f12081a == null) {
+        if (f12867a == null) {
             synchronized (a.class) {
                 try {
-                    if (f12081a == null) {
-                        f12081a = new a();
+                    if (f12867a == null) {
+                        f12867a = new a();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f12081a;
+        return f12867a;
     }
 
     private static com.anythink.core.common.h.c a(ATBaseAdAdapter aTBaseAdAdapter, long j6) {
@@ -118,9 +117,9 @@ public class a {
         if (q8 != 3) {
             if (q8 == 4) {
                 com.anythink.core.basead.b.a();
-                Context g4 = com.anythink.core.common.d.t.b().g();
+                Context g9 = com.anythink.core.common.d.t.b().g();
                 com.anythink.core.basead.b.a();
-                com.anythink.core.basead.b.b(g4, com.anythink.core.basead.b.a(str, bvVar.z(), bvVar.g()));
+                com.anythink.core.basead.b.b(g9, com.anythink.core.basead.b.a(str, bvVar.z(), bvVar.g()));
                 return;
             }
             if (q8 != 7) {
@@ -144,9 +143,9 @@ public class a {
         if (com.anythink.core.common.v.l.a(aTBaseAdAdapter.getUnitGroupInfo(), a9.get(size - 1).o()) != -1) {
             return false;
         }
-        int i6 = i - 2;
-        Math.max(i6, -1);
-        a().a(str, Math.max(i6, -1), false, 11);
+        int i4 = i - 2;
+        Math.max(i4, -1);
+        a().a(str, Math.max(i4, -1), false, 11);
         return true;
     }
 
@@ -154,10 +153,10 @@ public class a {
         bv unitGroupInfo = aTBaseAdAdapter.getUnitGroupInfo();
         com.anythink.core.common.h.n trackingInfo = aTBaseAdAdapter.getTrackingInfo();
         String a9 = a(str, aTBaseAdAdapter.getUnitGroupInfo().z());
-        bw bwVar = this.f12084d.get(a9);
+        bw bwVar = this.f12870d.get(a9);
         if (bwVar == null) {
             bwVar = new bw(str, unitGroupInfo.z());
-            this.f12084d.put(a9, bwVar);
+            this.f12870d.put(a9, bwVar);
         }
         bwVar.a(unitGroupInfo.ay());
         ArrayList arrayList = new ArrayList();
@@ -183,10 +182,10 @@ public class a {
     private void a(String str, List<com.anythink.core.common.h.c> list) {
         synchronized (u.a().a(str)) {
             try {
-                List<com.anythink.core.common.h.c> list2 = this.f12083c.get(str);
+                List<com.anythink.core.common.h.c> list2 = this.f12869c.get(str);
                 if (list2 == null) {
                     list2 = Collections.synchronizedList(new ArrayList());
-                    this.f12083c.put(str, list2);
+                    this.f12869c.put(str, list2);
                 }
                 if (list2.size() == 0) {
                     list2.addAll(list);
@@ -223,7 +222,7 @@ public class a {
     }
 
     public final List<com.anythink.core.common.h.c> a(String str) {
-        List<com.anythink.core.common.h.c> list = this.f12083c.get(str);
+        List<com.anythink.core.common.h.c> list = this.f12869c.get(str);
         if (list == null || list.size() <= 0) {
             return null;
         }
@@ -245,9 +244,9 @@ public class a {
         }
     }
 
-    public final com.anythink.core.common.h.c a(Context context, String str, boolean z3, boolean z6, ae aeVar) {
+    public final com.anythink.core.common.h.c a(Context context, String str, boolean z6, boolean z9, ae aeVar) {
         synchronized (u.a().a(str)) {
-            List<com.anythink.core.common.h.c> a9 = a(context, str, z3, z6, false, aeVar);
+            List<com.anythink.core.common.h.c> a9 = a(context, str, z6, z9, false, aeVar);
             if (a9 == null || a9.size() <= 0) {
                 return null;
             }
@@ -265,7 +264,7 @@ public class a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final List<com.anythink.core.common.h.c> a(Context context, String str, boolean z3, boolean z6, boolean z9, ae aeVar) {
+    public final List<com.anythink.core.common.h.c> a(Context context, String str, boolean z6, boolean z9, boolean z10, ae aeVar) {
         Object a9;
         long elapsedRealtime;
         Map<String, Object> a10;
@@ -275,12 +274,12 @@ public class a {
         List<String> list2;
         long j6;
         com.anythink.core.common.h.c cVar;
-        boolean z10;
+        boolean z11;
         com.anythink.core.common.h.c cVar2;
         ATAdInfo aTAdInfo2;
         List<String> list3;
         List<String> list4;
-        boolean z11;
+        boolean z12;
         com.anythink.core.d.l lVar2;
         f fVar;
         com.anythink.core.common.h.d dVar;
@@ -294,27 +293,27 @@ public class a {
         ATBaseAdAdapter aTBaseAdAdapter;
         List<? extends BaseAd> list5;
         boolean internalIsAdReady;
-        boolean z12;
+        boolean z13;
         BaseAd baseAd;
         Object[] objArr;
         List<com.anythink.core.common.h.c> list6;
         com.anythink.core.common.h.c cVar3;
         com.anythink.core.d.l lVar3;
+        int i4;
         int i6;
-        int i9;
         ATAdInfo aTAdInfo3;
         List<String> list7;
         List<String> list8;
         long j9;
         com.anythink.core.common.h.c cVar4;
-        int i10;
+        int i9;
         ArrayList arrayList;
-        int i11;
+        int i10;
         com.anythink.core.common.h.c cVar5;
         com.anythink.core.common.h.c cVar6;
         com.anythink.core.common.h.n nVar;
+        int i11;
         int i12;
-        int i13;
         String str5 = str;
         ArrayList arrayList2 = new ArrayList();
         try {
@@ -340,31 +339,31 @@ public class a {
             if (a11 == null) {
                 return null;
             }
-            List<String> o6 = com.anythink.core.common.d.t.b().o(str5);
+            List<String> o4 = com.anythink.core.common.d.t.b().o(str5);
             List<String> p9 = com.anythink.core.common.d.t.b().p(str5);
             com.anythink.core.common.h.c a12 = com.anythink.core.common.a.c.a().a(str5);
-            List<com.anythink.core.common.h.c> list9 = this.f12083c.get(str5);
+            List<com.anythink.core.common.h.c> list9 = this.f12869c.get(str5);
             JSONArray jSONArray = new JSONArray();
             if (list9 == null || list9.isEmpty()) {
                 aTAdInfo = c9;
                 lVar = a11;
-                list = o6;
+                list = o4;
                 list2 = p9;
                 j6 = elapsedRealtime;
                 cVar = a12;
-                z10 = false;
+                z11 = false;
                 cVar2 = null;
             } else {
                 ArrayList arrayList3 = new ArrayList(list9);
                 ArrayList arrayList4 = new ArrayList();
-                int i14 = 0;
+                int i13 = 0;
                 cVar2 = null;
-                while (i14 < arrayList3.size()) {
-                    com.anythink.core.common.h.c cVar7 = (com.anythink.core.common.h.c) arrayList3.get(i14);
+                while (i13 < arrayList3.size()) {
+                    com.anythink.core.common.h.c cVar7 = (com.anythink.core.common.h.c) arrayList3.get(i13);
                     if (cVar7 == null) {
-                        arrayList4.add(Integer.valueOf(i14));
+                        arrayList4.add(Integer.valueOf(i13));
                         lVar3 = a11;
-                        i6 = i14;
+                        i4 = i13;
                     } else {
                         bv unitGroupInfo = cVar7.e().getUnitGroupInfo();
                         int ax = unitGroupInfo.ax();
@@ -372,7 +371,7 @@ public class a {
                         com.anythink.core.a.d.a();
                         lVar3 = a11;
                         int a14 = com.anythink.core.a.d.a(str5, a13 != null ? a13 : unitGroupInfo);
-                        i6 = i14;
+                        i4 = i13;
                         if (a14 != -1) {
                             a(jSONArray, ax, unitGroupInfo.z(), unitGroupInfo.g(), "", false, a14);
                         } else {
@@ -384,10 +383,10 @@ public class a {
                             if (a16 != -1) {
                                 a(jSONArray, ax, unitGroupInfo.z(), unitGroupInfo.g(), "", false, a16);
                             } else {
-                                if (o6 == null || o6.size() <= 0) {
-                                    i9 = 0;
-                                } else if (o6.contains(String.valueOf(unitGroupInfo.g()))) {
-                                    i9 = 1;
+                                if (o4 == null || o4.size() <= 0) {
+                                    i6 = 0;
+                                } else if (o4.contains(String.valueOf(unitGroupInfo.g()))) {
+                                    i6 = 1;
                                 } else {
                                     a(jSONArray, ax, unitGroupInfo.z(), unitGroupInfo.g(), "", false, 5);
                                 }
@@ -395,7 +394,7 @@ public class a {
                                     if (p9.contains(String.valueOf(unitGroupInfo.g()))) {
                                         a(jSONArray, ax, unitGroupInfo.z(), unitGroupInfo.g(), "", false, 6);
                                     } else {
-                                        i9 = 2;
+                                        i6 = 2;
                                     }
                                 }
                                 Pair<Integer, List<String>> I8 = com.anythink.core.common.d.t.b().I();
@@ -410,60 +409,60 @@ public class a {
                                     }
                                 }
                                 long elapsedRealtime2 = SystemClock.elapsedRealtime();
-                                boolean g4 = cVar7.g();
+                                boolean g9 = cVar7.g();
                                 boolean j10 = cVar7.j();
-                                com.anythink.core.common.h.n i15 = cVar7.i();
+                                com.anythink.core.common.h.n i14 = cVar7.i();
                                 if (c9 != null && (c9 instanceof com.anythink.core.common.d.l)) {
                                     if (!a((com.anythink.core.common.d.l) c9, cVar7)) {
                                         a(jSONArray, ax, unitGroupInfo.z(), unitGroupInfo.g(), "", false, 7);
                                     } else {
-                                        i15.ao();
+                                        i14.ao();
                                         cVar7.toString();
                                         cVar2 = cVar7;
                                     }
                                 }
-                                if (g4 && j10) {
-                                    if (z3) {
+                                if (g9 && j10) {
+                                    if (z6) {
                                         arrayList = arrayList3;
-                                        i10 = i6;
+                                        i9 = i4;
                                         aTAdInfo3 = c9;
-                                        list7 = o6;
+                                        list7 = o4;
                                         j9 = elapsedRealtime;
-                                        i13 = i9;
+                                        i12 = i6;
                                         list8 = p9;
                                         cVar6 = cVar7;
-                                        i12 = 0;
-                                        com.anythink.core.common.u.e.a(com.anythink.core.common.o.c.f15949b, i15, i15.aJ(), str, i15.M(), i15.Y(), lVar3.aq(), SystemClock.elapsedRealtime() - elapsedRealtime2);
-                                        nVar = i15;
+                                        i11 = 0;
+                                        com.anythink.core.common.u.e.a(com.anythink.core.common.o.c.f16736b, i14, i14.aJ(), str, i14.M(), i14.Y(), lVar3.aq(), SystemClock.elapsedRealtime() - elapsedRealtime2);
+                                        nVar = i14;
                                     } else {
                                         aTAdInfo3 = c9;
-                                        list7 = o6;
+                                        list7 = o4;
                                         list8 = p9;
                                         cVar6 = cVar7;
                                         j9 = elapsedRealtime;
-                                        nVar = i15;
-                                        i10 = i6;
-                                        i12 = 0;
-                                        i13 = i9;
+                                        nVar = i14;
+                                        i9 = i4;
+                                        i11 = 0;
+                                        i12 = i6;
                                         arrayList = arrayList3;
                                     }
                                     a(jSONArray, ax, unitGroupInfo.z(), unitGroupInfo.g(), cVar6.e().getInternalNetworkSDKVersion(), true, -1);
                                     nVar.w(jSONArray.toString());
                                     nVar.y(ax);
-                                    nVar.V(i13);
-                                    if (!z9) {
+                                    nVar.V(i12);
+                                    if (!z10) {
                                         if (a12 != null && com.anythink.core.common.v.l.a(a12.e().getUnitGroupInfo(), cVar6.e().getUnitGroupInfo()) < 0) {
                                             com.anythink.core.common.h.c cVar8 = a12;
                                             if (a(cVar8, jSONArray, list7, list8, cVar2, aTAdInfo3)) {
                                                 arrayList2.add(cVar8);
-                                                if (z3) {
-                                                    com.anythink.core.common.u.e.a(nVar.aJ(), str, true, -1, lVar3, arrayList2.size() > 0 ? (com.anythink.core.common.h.c) arrayList2.get(i12) : null, jSONArray.toString(), "", a10, b9, SystemClock.elapsedRealtime() - j9, aeVar);
+                                                if (z6) {
+                                                    com.anythink.core.common.u.e.a(nVar.aJ(), str, true, -1, lVar3, arrayList2.size() > 0 ? (com.anythink.core.common.h.c) arrayList2.get(i11) : null, jSONArray.toString(), "", a10, b9, SystemClock.elapsedRealtime() - j9, aeVar);
                                                 }
                                                 return arrayList2;
                                             }
                                         }
                                         arrayList2.add(cVar6);
-                                        if (z3) {
+                                        if (z6) {
                                         }
                                         return arrayList2;
                                     }
@@ -471,18 +470,18 @@ public class a {
                                     arrayList2.add(cVar6);
                                 } else {
                                     aTAdInfo3 = c9;
-                                    list7 = o6;
+                                    list7 = o4;
                                     list8 = p9;
                                     j9 = elapsedRealtime;
                                     cVar4 = a12;
-                                    i10 = i6;
+                                    i9 = i4;
                                     arrayList = arrayList3;
-                                    if (z3) {
-                                        i11 = ax;
+                                    if (z6) {
+                                        i10 = ax;
                                         cVar5 = cVar7;
-                                        com.anythink.core.common.u.e.a(com.anythink.core.common.o.c.f15950c, i15, i15.aJ(), str, i15.M(), i15.Y(), lVar3.aq(), SystemClock.elapsedRealtime() - elapsedRealtime2);
+                                        com.anythink.core.common.u.e.a(com.anythink.core.common.o.c.f16737c, i14, i14.aJ(), str, i14.M(), i14.Y(), lVar3.aq(), SystemClock.elapsedRealtime() - elapsedRealtime2);
                                     } else {
-                                        i11 = ax;
+                                        i10 = ax;
                                         cVar5 = cVar7;
                                     }
                                     int c10 = cVar5.c();
@@ -495,15 +494,15 @@ public class a {
                                     }
                                     a(cVar5);
                                     if (c10 == 0) {
-                                        a(jSONArray, i11, unitGroupInfo.z(), unitGroupInfo.g(), "", false, g4 ? 1 : 0);
+                                        a(jSONArray, i10, unitGroupInfo.z(), unitGroupInfo.g(), "", false, g9 ? 1 : 0);
                                     }
-                                    arrayList4.add(Integer.valueOf(i10));
+                                    arrayList4.add(Integer.valueOf(i9));
                                 }
-                                i14 = i10 + 1;
+                                i13 = i9 + 1;
                                 str5 = str;
                                 a12 = cVar4;
                                 c9 = aTAdInfo3;
-                                o6 = list7;
+                                o4 = list7;
                                 p9 = list8;
                                 a11 = lVar3;
                                 arrayList3 = arrayList;
@@ -512,17 +511,17 @@ public class a {
                         }
                     }
                     aTAdInfo3 = c9;
-                    list7 = o6;
+                    list7 = o4;
                     list8 = p9;
                     j9 = elapsedRealtime;
                     cVar4 = a12;
-                    i10 = i6;
+                    i9 = i4;
                     arrayList = arrayList3;
-                    i14 = i10 + 1;
+                    i13 = i9 + 1;
                     str5 = str;
                     a12 = cVar4;
                     c9 = aTAdInfo3;
-                    o6 = list7;
+                    o4 = list7;
                     p9 = list8;
                     a11 = lVar3;
                     arrayList3 = arrayList;
@@ -530,23 +529,23 @@ public class a {
                 }
                 aTAdInfo = c9;
                 lVar = a11;
-                list = o6;
+                list = o4;
                 list2 = p9;
                 j6 = elapsedRealtime;
                 cVar = a12;
-                z10 = false;
-                z10 = false;
-                z10 = false;
+                z11 = false;
+                z11 = false;
+                z11 = false;
                 if (!arrayList4.isEmpty()) {
-                    for (int i16 = 0; i16 < arrayList4.size(); i16++) {
-                        int intValue = ((Integer) arrayList4.get(i16)).intValue();
+                    for (int i15 = 0; i15 < arrayList4.size(); i15++) {
+                        int intValue = ((Integer) arrayList4.get(i15)).intValue();
                         if (list9.size() > intValue && (cVar3 = list9.get(intValue)) != null) {
                             list9.remove(cVar3);
                         }
                     }
                 }
             }
-            if (!z9) {
+            if (!z10) {
                 if (cVar != null) {
                     ATAdInfo aTAdInfo4 = aTAdInfo;
                     List<String> list11 = list;
@@ -557,7 +556,7 @@ public class a {
                     aTAdInfo2 = aTAdInfo4;
                     if (a17) {
                         arrayList2.add(cVar);
-                        if (z3) {
+                        if (z6) {
                             com.anythink.core.common.u.e.a(cVar.e().getTrackingInfo().aJ(), str, true, -1, lVar, cVar, jSONArray.toString(), "", a10, b9, SystemClock.elapsedRealtime() - j6, aeVar);
                         }
                     }
@@ -570,17 +569,17 @@ public class a {
                 Map<String, Object> map = a10;
                 com.anythink.core.d.l lVar4 = lVar;
                 if (lVar4.ak() == 1) {
-                    z11 = true;
+                    z12 = true;
                 } else {
-                    z11 = lVar4.ak() == 2 ? z6 : z10 ? 1 : 0;
+                    z12 = lVar4.ak() == 2 ? z9 : z11 ? 1 : 0;
                 }
                 List<bv> x9 = lVar4.x();
                 u a18 = u.a();
                 StringBuilder sb = new StringBuilder();
                 sb.append(lVar4.aq());
                 f a19 = a18.a(str6, sb.toString());
-                String h9 = (a19 == null || a19.h() == null) ? "" : a19.h();
-                if (x9 != null && x9.size() > 0 && z11) {
+                String h3 = (a19 == null || a19.h() == null) ? "" : a19.h();
+                if (x9 != null && x9.size() > 0 && z12) {
                     String a20 = r.a().a(context, str6);
                     if (!TextUtils.isEmpty(a20)) {
                         Iterator<bv> it = x9.iterator();
@@ -600,42 +599,42 @@ public class a {
                         }
                         bvVar2 = null;
                         if (bvVar2 != null) {
-                            Map<String, Object> a21 = lVar4.a(str6, h9, bvVar2, aeVar != null ? aeVar.d() : null);
-                            a21.put(r.f16038b, Boolean.TRUE);
+                            Map<String, Object> a21 = lVar4.a(str6, h3, bvVar2, aeVar != null ? aeVar.d() : null);
+                            a21.put(r.f16825b, Boolean.TRUE);
                             try {
                                 com.anythink.core.common.h.p a22 = com.anythink.core.common.v.u.a(bvVar2);
-                                ATBaseAdAdapter aTBaseAdAdapter2 = a22 != null ? a22.f14035a : null;
+                                ATBaseAdAdapter aTBaseAdAdapter2 = a22 != null ? a22.f14821a : null;
                                 boolean internalInitNetworkObjectByPlacementId = aTBaseAdAdapter2.internalInitNetworkObjectByPlacementId(context, a21, u.a().b(str6));
                                 if (internalInitNetworkObjectByPlacementId) {
                                     try {
                                         Map<String, Object> b10 = u.a().b(str6);
                                         try {
                                             int[] iArr = new int[1];
-                                            iArr[z10 ? 1 : 0] = z10 ? 1 : 0;
-                                            if (b10.containsKey(bu.f13759S)) {
+                                            iArr[z11 ? 1 : 0] = z11 ? 1 : 0;
+                                            if (b10.containsKey(bu.f14545S)) {
                                                 try {
-                                                    iArr[z10 ? 1 : 0] = ((Integer) b10.get(bu.f13759S)).intValue();
+                                                    iArr[z11 ? 1 : 0] = ((Integer) b10.get(bu.f14545S)).intValue();
                                                 } catch (Throwable unused) {
                                                 }
                                             }
-                                            String str7 = h9;
+                                            String str7 = h3;
                                             lVar2 = lVar4;
                                             ATBaseAdAdapter aTBaseAdAdapter3 = aTBaseAdAdapter2;
                                             fVar = a19;
                                             bvVar3 = bvVar2;
                                             try {
-                                                com.anythink.core.common.h.n a23 = aj.a(str7, str, lVar2, 0, iArr[z10 ? 1 : 0], map, null, 0, aeVar != null ? aeVar.d() : null);
+                                                com.anythink.core.common.h.n a23 = aj.a(str7, str, lVar2, 0, iArr[z11 ? 1 : 0], map, null, 0, aeVar != null ? aeVar.d() : null);
                                                 str4 = str7;
                                                 map = map;
                                                 try {
-                                                    aj.a(a23, bvVar3, z10 ? 1 : 0, true);
+                                                    aj.a(a23, bvVar3, z11 ? 1 : 0, true);
                                                     aTBaseAdAdapter = aTBaseAdAdapter3;
                                                     try {
                                                         aj.a(aTBaseAdAdapter, a23, bvVar3);
-                                                        a23.f14025t = 3;
+                                                        a23.f14811t = 3;
                                                         list5 = null;
                                                         a23.m(ak.a(bvVar3, (ATBaseAdAdapter) null));
-                                                        aTBaseAdAdapter.setRefresh(z10);
+                                                        aTBaseAdAdapter.setRefresh(z11);
                                                     } catch (Throwable unused2) {
                                                     }
                                                 } catch (Throwable unused3) {
@@ -643,9 +642,9 @@ public class a {
                                                     i = 1;
                                                     dVar = b9;
                                                     str2 = str4;
-                                                    if (z3) {
-                                                    }
                                                     if (z6) {
+                                                    }
+                                                    if (z9) {
                                                     }
                                                     return arrayList2;
                                                 }
@@ -672,7 +671,7 @@ public class a {
                                 } else {
                                     aTBaseAdAdapter = aTBaseAdAdapter2;
                                     lVar2 = lVar4;
-                                    str4 = h9;
+                                    str4 = h3;
                                     fVar = a19;
                                     bvVar3 = bvVar2;
                                     list5 = null;
@@ -681,12 +680,12 @@ public class a {
                                     if (internalInitNetworkObjectByPlacementId) {
                                         baseAd = aTBaseAdAdapter.getBaseAdObject(context);
                                         if (baseAd != null) {
-                                            z12 = true;
+                                            z13 = true;
                                         }
-                                        z12 = z10 ? 1 : 0;
+                                        z13 = z11 ? 1 : 0;
                                     }
                                     baseAd = list5;
-                                    z12 = z10 ? 1 : 0;
+                                    z13 = z11 ? 1 : 0;
                                 } else {
                                     if (internalInitNetworkObjectByPlacementId) {
                                         try {
@@ -695,14 +694,14 @@ public class a {
                                             a("checkCache failed in network is ready", th3);
                                         }
                                     } else {
-                                        internalIsAdReady = z10 ? 1 : 0;
+                                        internalIsAdReady = z11 ? 1 : 0;
                                     }
-                                    z12 = internalIsAdReady;
+                                    z13 = internalIsAdReady;
                                     baseAd = list5;
                                 }
                             } catch (Throwable unused7) {
                             }
-                            if (z12) {
+                            if (z13) {
                                 if (baseAd != null) {
                                     ArrayList arrayList5 = new ArrayList();
                                     baseAd.setTrackingInfo(aTBaseAdAdapter.getTrackingInfo().af());
@@ -713,12 +712,12 @@ public class a {
                                     List<com.anythink.core.common.h.c> a24 = a(str, aTBaseAdAdapter, list5, bvVar3.u());
                                     if (a24.size() > 0) {
                                         for (com.anythink.core.common.h.c cVar9 : a24) {
-                                            com.anythink.core.common.h.n i17 = cVar9.i();
+                                            com.anythink.core.common.h.n i16 = cVar9.i();
                                             try {
-                                                i17.f14008C = 1;
-                                                i17.y(z10 ? 1 : 0);
-                                                i17.w(jSONArray.toString());
-                                                if (z3) {
+                                                i16.f14794C = 1;
+                                                i16.y(z11 ? 1 : 0);
+                                                i16.w(jSONArray.toString());
+                                                if (z6) {
                                                     i = 1;
                                                     Map<String, Object> map2 = map;
                                                     dVar = b9;
@@ -726,7 +725,7 @@ public class a {
                                                     str2 = str4;
                                                     list6 = a24;
                                                     try {
-                                                        com.anythink.core.common.u.e.a(i17.aJ(), str, true, -1, lVar5, cVar9, jSONArray.toString(), bvVar3.k(), map2, dVar, aeVar);
+                                                        com.anythink.core.common.u.e.a(i16.aJ(), str, true, -1, lVar5, cVar9, jSONArray.toString(), bvVar3.k(), map2, dVar, aeVar);
                                                         map = map2;
                                                     } catch (Throwable unused8) {
                                                         str6 = str;
@@ -746,9 +745,9 @@ public class a {
                                                 i = 1;
                                                 dVar = b9;
                                                 str2 = str4;
-                                                if (z3) {
-                                                }
                                                 if (z6) {
+                                                }
+                                                if (z9) {
                                                 }
                                                 return arrayList2;
                                             }
@@ -758,12 +757,12 @@ public class a {
                                         i = 1;
                                         str2 = str4;
                                         try {
-                                            com.anythink.core.common.h.c cVar10 = a24.get(z10 ? 1 : 0);
+                                            com.anythink.core.common.h.c cVar10 = a24.get(z11 ? 1 : 0);
                                             if (aTAdInfo2 != null && (aTAdInfo2 instanceof com.anythink.core.common.d.l)) {
                                                 if (!a((com.anythink.core.common.d.l) aTAdInfo2, cVar10)) {
                                                     a(jSONArray, -1, cVar10.i().M(), cVar10.i().Y(), "", false, 7);
                                                     cVar10.toString();
-                                                    objArr = z10 ? 1 : 0;
+                                                    objArr = z11 ? 1 : 0;
                                                     if (objArr != false) {
                                                         arrayList2.add(cVar10);
                                                     }
@@ -789,21 +788,21 @@ public class a {
                                 } catch (Throwable unused11) {
                                     str6 = str;
                                 }
-                                if (z3) {
+                                if (z6) {
                                     if (fVar != null) {
-                                        z10 = fVar.g();
+                                        z11 = fVar.g();
                                     }
                                     if (fVar == null) {
                                         com.anythink.core.common.u.e.b("AdManage is null--isReady", "Id:" + str6 + "--format:" + lVar2.aq(), com.anythink.core.common.d.t.b().r());
                                     }
                                     Map<String, Object> map3 = map;
                                     str3 = str2;
-                                    com.anythink.core.common.u.e.a(str3, str, false, z10 ? 5 : i, lVar2, (com.anythink.core.common.h.c) null, jSONArray.toString(), "", map3, dVar, SystemClock.elapsedRealtime() - j6, aeVar);
+                                    com.anythink.core.common.u.e.a(str3, str, false, z11 ? 5 : i, lVar2, (com.anythink.core.common.h.c) null, jSONArray.toString(), "", map3, dVar, SystemClock.elapsedRealtime() - j6, aeVar);
                                     map = map3;
                                 } else {
                                     str3 = str2;
                                 }
-                                if (z6) {
+                                if (z9) {
                                     com.anythink.core.common.u.e.a(str3, str, lVar2, aTAdInfo2 != null ? 5 : i, jSONArray.toString(), map, aeVar);
                                 }
                             }
@@ -811,9 +810,9 @@ public class a {
                             dVar = b9;
                             i = 1;
                             str2 = str4;
-                            if (z3) {
-                            }
                             if (z6) {
+                            }
+                            if (z9) {
                             }
                         }
                     }
@@ -825,14 +824,14 @@ public class a {
                 fVar = a19;
                 dVar = b9;
                 i = 1;
-                str2 = h9;
-                if (z3) {
-                }
+                str2 = h3;
                 if (z6) {
+                }
+                if (z9) {
                 }
             } else if (cVar != null) {
                 if (arrayList2.size() != 0) {
-                    com.anythink.core.common.h.c cVar11 = (com.anythink.core.common.h.c) arrayList2.get(z10 ? 1 : 0);
+                    com.anythink.core.common.h.c cVar11 = (com.anythink.core.common.h.c) arrayList2.get(z11 ? 1 : 0);
                     if (cVar11 != null && com.anythink.core.common.v.l.a(cVar.e().getUnitGroupInfo(), cVar11.e().getUnitGroupInfo()) < 0) {
                     }
                 }
@@ -908,30 +907,30 @@ public class a {
     private static void a(ATBaseAdAdapter aTBaseAdAdapter, String str, String str2, com.anythink.core.d.l lVar, bv bvVar, Map<String, Object> map, ae aeVar) {
         Map<String, Object> b9 = u.a().b(str2);
         int[] iArr = {0};
-        if (b9.containsKey(bu.f13759S)) {
+        if (b9.containsKey(bu.f14545S)) {
             try {
-                iArr[0] = ((Integer) b9.get(bu.f13759S)).intValue();
+                iArr[0] = ((Integer) b9.get(bu.f14545S)).intValue();
             } catch (Throwable unused) {
             }
         }
         com.anythink.core.common.h.n a9 = aj.a(str, str2, lVar, 0, iArr[0], map, null, 0, aeVar != null ? aeVar.d() : null);
         aj.a(a9, bvVar, 0, true);
         aj.a(aTBaseAdAdapter, a9, bvVar);
-        a9.f14025t = 3;
+        a9.f14811t = 3;
         a9.m(ak.a(bvVar, (ATBaseAdAdapter) null));
         aTBaseAdAdapter.setRefresh(false);
     }
 
-    private static void a(JSONArray jSONArray, int i, String str, int i6, String str2, boolean z3, int i9) {
+    private static void a(JSONArray jSONArray, int i, String str, int i4, String str2, boolean z6, int i6) {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("priority", i);
             jSONObject.put("unit_id", str);
-            jSONObject.put("nw_firm_id", i6);
+            jSONObject.put("nw_firm_id", i4);
             jSONObject.put("nw_ver", str2);
-            jSONObject.put("result", z3 ? 1 : 0);
-            if (i9 != -1) {
-                jSONObject.put("reason", i9);
+            jSONObject.put("result", z6 ? 1 : 0);
+            if (i6 != -1) {
+                jSONObject.put("reason", i6);
             }
         } catch (Throwable th) {
             a("checkCache failed in addCheckObjectInfo.", th);
@@ -945,7 +944,7 @@ public class a {
         }
         com.anythink.core.common.h.n i = cVar.i();
         b(i.aI(), cVar.e().getUnitGroupInfo());
-        bw bwVar = this.f12084d.get(a(i.aI(), i.M()));
+        bw bwVar = this.f12870d.get(a(i.aI(), i.M()));
         if (bwVar == null) {
             return;
         }
@@ -954,7 +953,7 @@ public class a {
 
     public final void a(String str, bv bvVar, String str2) {
         synchronized (u.a().a(str)) {
-            List<com.anythink.core.common.h.c> list = this.f12083c.get(str);
+            List<com.anythink.core.common.h.c> list = this.f12869c.get(str);
             if (list != null) {
                 for (com.anythink.core.common.h.c cVar : list) {
                     if (TextUtils.equals(cVar.i().M(), bvVar.z()) && TextUtils.equals(cVar.i().aJ(), str2)) {
@@ -972,7 +971,7 @@ public class a {
         a(str, i, true, 7);
     }
 
-    public final void a(String str, List<ATAdInfo> list, boolean z3, int i) {
+    public final void a(String str, List<ATAdInfo> list, boolean z6, int i) {
         if (TextUtils.isEmpty(str) || list == null || list.size() == 0) {
             return;
         }
@@ -986,7 +985,7 @@ public class a {
                     if (str2 == null) {
                         str2 = aTAdInfo.getSharedPlacementId();
                     }
-                    if (z3) {
+                    if (z6) {
                         arrayList.add(aTAdInfo);
                     }
                 } else {
@@ -1005,7 +1004,7 @@ public class a {
     private void a(String str, List<ATAdInfo> list, int i) {
         synchronized (u.a().a(str)) {
             try {
-                List<com.anythink.core.common.h.c> list2 = this.f12083c.get(str);
+                List<com.anythink.core.common.h.c> list2 = this.f12869c.get(str);
                 if (list2 == null) {
                     return;
                 }
@@ -1021,11 +1020,11 @@ public class a {
                             while (true) {
                                 if (size2 >= 0) {
                                     com.anythink.core.common.h.c cVar = list2.get(size2);
-                                    com.anythink.core.common.h.n i6 = cVar.i();
+                                    com.anythink.core.common.h.n i4 = cVar.i();
                                     if (nVar == null) {
-                                        nVar = i6;
+                                        nVar = i4;
                                     }
-                                    if (TextUtils.equals(adsourceId, i6.M()) && TextUtils.equals(requestId, i6.aJ())) {
+                                    if (TextUtils.equals(adsourceId, i4.M()) && TextUtils.equals(requestId, i4.aJ())) {
                                         cVar.toString();
                                         list2.remove(size2);
                                         com.anythink.core.b.d.c.a(cVar, i);
@@ -1057,11 +1056,11 @@ public class a {
             if (a9 != null) {
                 a9.a(aJ, unitGroupInfo != null ? com.anythink.core.common.v.p.a(unitGroupInfo) : 0.0d, unitGroupInfo);
             } else {
-                StringBuilder j6 = AbstractC4404f.j("Id:", aI, "--format:");
-                j6.append(i.aK());
-                j6.append("--adsource:");
-                j6.append(i.M());
-                y.w("AdManage is null--Show", j6.toString());
+                StringBuilder l9 = Wv.l("Id:", aI, "--format:");
+                l9.append(i.aK());
+                l9.append("--adsource:");
+                l9.append(i.M());
+                com.IceFishing.LiveIceFishing.k.x("AdManage is null--Show", l9.toString());
             }
             u.a().a(aI, aJ, a(aI));
             com.anythink.core.common.v.b.b.a().b(new Runnable() { // from class: com.anythink.core.common.a.1
@@ -1087,7 +1086,7 @@ public class a {
     }
 
     public final bw a(String str, bv bvVar) {
-        return this.f12084d.get(a(str, bvVar.z()));
+        return this.f12870d.get(a(str, bvVar.z()));
     }
 
     private static void a(String str, Throwable th) {
@@ -1099,10 +1098,10 @@ public class a {
                 sb.append(stackTraceElement.toString() + "\n");
             }
         }
-        y.w(str, sb.toString());
+        com.IceFishing.LiveIceFishing.k.x(str, sb.toString());
     }
 
-    public final void a(String str, int i, boolean z3, int i6) {
+    public final void a(String str, int i, boolean z6, int i4) {
         List<ATAdInfo> a9;
         if (TextUtils.isEmpty(str) || com.anythink.core.common.d.t.b().g() == null) {
             return;
@@ -1114,12 +1113,12 @@ public class a {
         }
         synchronized (u.a().a(str)) {
             try {
-                if (this.f12083c.get(str) == null) {
+                if (this.f12869c.get(str) == null) {
                     return;
                 }
                 f a11 = f.a(com.anythink.core.common.d.t.b().g(), str, valueOf);
                 if (a11 != null) {
-                    if (z3) {
+                    if (z6) {
                         a9 = a11.a(com.anythink.core.common.d.t.b().g());
                     } else {
                         a9 = a11.a(com.anythink.core.common.d.t.b().g(), (ae) null);
@@ -1141,7 +1140,7 @@ public class a {
                         } else {
                             arrayList.addAll(a9);
                         }
-                        a(str, arrayList, z3, i6);
+                        a(str, arrayList, z6, i4);
                     }
                 }
             } catch (Throwable th) {
@@ -1155,9 +1154,9 @@ public class a {
         int size;
         if (i != -1 && (a9 = a().a(str)) != null && !a9.isEmpty() && (size = a9.size()) >= i) {
             if (com.anythink.core.common.v.l.a(aTBaseAdAdapter.getUnitGroupInfo(), a9.get(size - 1).o()) == -1) {
-                int i6 = i - 2;
-                Math.max(i6, -1);
-                a().a(str, Math.max(i6, -1), false, 11);
+                int i4 = i - 2;
+                Math.max(i4, -1);
+                a().a(str, Math.max(i4, -1), false, 11);
             } else {
                 com.anythink.core.common.h.c a10 = a(aTBaseAdAdapter, j6);
                 a10.m();

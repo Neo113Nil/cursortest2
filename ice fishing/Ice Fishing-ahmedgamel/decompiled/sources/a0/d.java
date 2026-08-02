@@ -6,14 +6,14 @@ import android.view.ViewGroup;
 public final class d extends ViewGroup.MarginLayoutParams {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f4234a;
+    public int f4211a;
 
     /* renamed from: b, reason: collision with root package name */
-    public float f4235b;
+    public float f4212b;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f4236c;
+    public boolean f4213c;
 
     /* renamed from: d, reason: collision with root package name */
-    public int f4237d;
+    public int f4214d;
 }

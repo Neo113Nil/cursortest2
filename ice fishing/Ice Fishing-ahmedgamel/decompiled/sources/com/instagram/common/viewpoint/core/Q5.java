@@ -20,18 +20,18 @@ public final class Q5 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static void A00(int[] iArr, int i, int minY, int minX, int i6, int i9, int i10) {
+    public static void A00(int[] iArr, int i, int minY, int minX, int i4, int i6, int i9) {
         int stack_start = i - 1;
-        int i11 = minY - 1;
+        int i10 = minY - 1;
         int stack_start2 = (minX * 2) + 1;
         short s9 = A02[minX];
         byte b9 = A01[minX];
         int[] iArr2 = new int[stack_start2];
         long j6 = 0;
-        if (i10 == 1) {
-            int maxY = (i9 * minY) / i6;
-            int i12 = ((i9 + 1) * minY) / i6;
-            while (maxY < i12) {
+        if (i9 == 1) {
+            int maxY = (i6 * minY) / i4;
+            int i11 = ((i6 + 1) * minY) / i4;
+            while (maxY < i11) {
                 long j9 = j6;
                 String[] strArr = A00;
                 if (strArr[0].charAt(0) == strArr[4].charAt(0)) {
@@ -44,81 +44,81 @@ public final class Q5 {
                     long j15 = j6;
                     long j16 = j6;
                     int hm = i * maxY;
-                    for (int i13 = 0; i13 <= minX; i13++) {
-                        iArr2[i13] = iArr[hm];
-                        j16 += ((iArr[hm] >>> 16) & p.f8473b) * (i13 + 1);
-                        j15 += ((iArr[hm] >>> 8) & p.f8473b) * (i13 + 1);
-                        j14 += (iArr[hm] & p.f8473b) * (i13 + 1);
-                        j10 += (iArr[hm] >>> 16) & p.f8473b;
-                        j9 += (iArr[hm] >>> 8) & p.f8473b;
-                        j6 += iArr[hm] & p.f8473b;
+                    for (int i12 = 0; i12 <= minX; i12++) {
+                        iArr2[i12] = iArr[hm];
+                        j16 += ((iArr[hm] >>> 16) & p.f9259b) * (i12 + 1);
+                        j15 += ((iArr[hm] >>> 8) & p.f9259b) * (i12 + 1);
+                        j14 += (iArr[hm] & p.f9259b) * (i12 + 1);
+                        j10 += (iArr[hm] >>> 16) & p.f9259b;
+                        j9 += (iArr[hm] >>> 8) & p.f9259b;
+                        j6 += iArr[hm] & p.f9259b;
                     }
-                    for (int i14 = 1; i14 <= minX; i14++) {
-                        if (i14 <= stack_start) {
+                    for (int i13 = 1; i13 <= minX; i13++) {
+                        if (i13 <= stack_start) {
                             hm++;
                         }
-                        iArr2[i14 + minX] = iArr[hm];
-                        j16 += ((iArr[hm] >>> 16) & p.f8473b) * ((minX + 1) - i14);
-                        j15 += ((iArr[hm] >>> 8) & p.f8473b) * ((minX + 1) - i14);
-                        j14 += (iArr[hm] & p.f8473b) * ((minX + 1) - i14);
-                        j13 += (iArr[hm] >>> 16) & p.f8473b;
-                        j12 += (iArr[hm] >>> 8) & p.f8473b;
-                        j11 += iArr[hm] & p.f8473b;
+                        iArr2[i13 + minX] = iArr[hm];
+                        j16 += ((iArr[hm] >>> 16) & p.f9259b) * ((minX + 1) - i13);
+                        j15 += ((iArr[hm] >>> 8) & p.f9259b) * ((minX + 1) - i13);
+                        j14 += (iArr[hm] & p.f9259b) * ((minX + 1) - i13);
+                        j13 += (iArr[hm] >>> 16) & p.f9259b;
+                        j12 += (iArr[hm] >>> 8) & p.f9259b;
+                        j11 += iArr[hm] & p.f9259b;
                     }
+                    int i14 = minX;
                     int i15 = minX;
-                    int i16 = minX;
-                    if (i16 > stack_start) {
-                        i16 = stack_start;
+                    if (i15 > stack_start) {
+                        i15 = stack_start;
                     }
-                    int i17 = (maxY * i) + i16;
-                    int i18 = maxY * i;
-                    for (int i19 = 0; i19 < i; i19++) {
-                        iArr[i18] = (int) ((iArr[i18] & (-16777216)) | ((((s9 * j16) >>> b9) & 255) << 16) | ((((s9 * j15) >>> b9) & 255) << 8) | (((s9 * j14) >>> b9) & 255));
-                        i18++;
+                    int i16 = (maxY * i) + i15;
+                    int i17 = maxY * i;
+                    for (int i18 = 0; i18 < i; i18++) {
+                        iArr[i17] = (int) ((iArr[i17] & (-16777216)) | ((((s9 * j16) >>> b9) & 255) << 16) | ((((s9 * j15) >>> b9) & 255) << 8) | (((s9 * j14) >>> b9) & 255));
+                        i17++;
                         long j17 = j16 - j10;
                         long j18 = j15 - j9;
                         long j19 = j14 - j6;
-                        int i20 = (i15 + stack_start2) - minX;
-                        if (i20 >= stack_start2) {
-                            i20 -= stack_start2;
+                        int i19 = (i14 + stack_start2) - minX;
+                        if (i19 >= stack_start2) {
+                            i19 -= stack_start2;
                         }
-                        long j20 = j10 - ((iArr2[i20] >>> 16) & p.f8473b);
-                        long j21 = j9 - ((iArr2[i20] >>> 8) & p.f8473b);
-                        long j22 = j6 - (iArr2[i20] & p.f8473b);
-                        int stack_i = i16;
+                        long j20 = j10 - ((iArr2[i19] >>> 16) & p.f9259b);
+                        long j21 = j9 - ((iArr2[i19] >>> 8) & p.f9259b);
+                        long j22 = j6 - (iArr2[i19] & p.f9259b);
+                        int stack_i = i15;
                         if (stack_i < stack_start) {
-                            i17++;
                             i16++;
+                            i15++;
                         }
-                        iArr2[i20] = iArr[i17];
-                        long j23 = j13 + ((iArr[i17] >>> 16) & p.f8473b);
-                        long j24 = j12 + ((iArr[i17] >>> 8) & p.f8473b);
-                        long j25 = j11 + (iArr[i17] & p.f8473b);
+                        iArr2[i19] = iArr[i16];
+                        long j23 = j13 + ((iArr[i16] >>> 16) & p.f9259b);
+                        long j24 = j12 + ((iArr[i16] >>> 8) & p.f9259b);
+                        long j25 = j11 + (iArr[i16] & p.f9259b);
                         j16 = j17 + j23;
                         j15 = j18 + j24;
                         j14 = j19 + j25;
-                        int i21 = i15 + 1;
-                        if (i21 >= stack_start2) {
-                            i21 = 0;
+                        int i20 = i14 + 1;
+                        if (i20 >= stack_start2) {
+                            i20 = 0;
                         }
-                        int stack_i2 = iArr2[i21];
-                        i15 = i21;
-                        j10 = j20 + ((stack_i2 >>> 16) & p.f8473b);
-                        int stack_i3 = iArr2[i21];
-                        long j26 = (stack_i3 >>> 8) & p.f8473b;
+                        int stack_i2 = iArr2[i20];
+                        i14 = i20;
+                        j10 = j20 + ((stack_i2 >>> 16) & p.f9259b);
+                        int stack_i3 = iArr2[i20];
+                        long j26 = (stack_i3 >>> 8) & p.f9259b;
                         if (A00[1].length() == 5) {
                             String[] strArr2 = A00;
                             strArr2[0] = "Gs6cp7XtkyimKPtddkds3pD39xD98rye";
                             strArr2[4] = "GzHB2OA1jqluXk2iMzoyOJbysCDiG3Ta";
                             j9 = j21 + j26;
-                            int stack_i4 = iArr2[i21];
-                            j6 = j22 + (stack_i4 & p.f8473b);
-                            int stack_i5 = iArr2[i21];
-                            j13 = j23 - ((stack_i5 >>> 16) & p.f8473b);
-                            int stack_i6 = iArr2[i21];
-                            j12 = j24 - ((stack_i6 >>> 8) & p.f8473b);
-                            int stack_i7 = iArr2[i21];
-                            j11 = j25 - (stack_i7 & p.f8473b);
+                            int stack_i4 = iArr2[i20];
+                            j6 = j22 + (stack_i4 & p.f9259b);
+                            int stack_i5 = iArr2[i20];
+                            j13 = j23 - ((stack_i5 >>> 16) & p.f9259b);
+                            int stack_i6 = iArr2[i20];
+                            j12 = j24 - ((stack_i6 >>> 8) & p.f9259b);
+                            int stack_i7 = iArr2[i20];
+                            j11 = j25 - (stack_i7 & p.f9259b);
                         }
                     }
                     maxY++;
@@ -127,10 +127,10 @@ public final class Q5 {
             }
             return;
         }
-        if (i10 == 2) {
-            int i22 = (i9 * i) / i6;
-            int i23 = ((i9 + 1) * i) / i6;
-            loop4: while (maxX < i23) {
+        if (i9 == 2) {
+            int i21 = (i6 * i) / i4;
+            int i22 = ((i6 + 1) * i) / i4;
+            loop4: while (maxX < i22) {
                 long j27 = 0;
                 long j28 = 0;
                 long j29 = 0;
@@ -140,54 +140,54 @@ public final class Q5 {
                 long j33 = 0;
                 long j34 = 0;
                 long j35 = 0;
-                int i24 = i22;
-                for (int i25 = 0; i25 <= minX; i25++) {
-                    iArr2[i25] = iArr[i24];
-                    int maxX = i25 + 1;
-                    j35 += ((iArr[i24] >>> 16) & p.f8473b) * maxX;
-                    j34 += ((iArr[i24] >>> 8) & p.f8473b) * (i25 + 1);
-                    j33 += (iArr[i24] & p.f8473b) * (i25 + 1);
-                    j29 += (iArr[i24] >>> 16) & p.f8473b;
-                    j28 += (iArr[i24] >>> 8) & p.f8473b;
-                    j27 += iArr[i24] & p.f8473b;
+                int i23 = i21;
+                for (int i24 = 0; i24 <= minX; i24++) {
+                    iArr2[i24] = iArr[i23];
+                    int maxX = i24 + 1;
+                    j35 += ((iArr[i23] >>> 16) & p.f9259b) * maxX;
+                    j34 += ((iArr[i23] >>> 8) & p.f9259b) * (i24 + 1);
+                    j33 += (iArr[i23] & p.f9259b) * (i24 + 1);
+                    j29 += (iArr[i23] >>> 16) & p.f9259b;
+                    j28 += (iArr[i23] >>> 8) & p.f9259b;
+                    j27 += iArr[i23] & p.f9259b;
                 }
-                int i26 = 1;
-                while (i26 <= minX) {
-                    if (i26 <= i11) {
-                        i24 += i;
+                int i25 = 1;
+                while (i25 <= minX) {
+                    if (i25 <= i10) {
+                        i23 += i;
                     }
-                    int stack_i8 = i26 + minX;
-                    iArr2[stack_i8] = iArr[i24];
+                    int stack_i8 = i25 + minX;
+                    iArr2[stack_i8] = iArr[i23];
                     int stack_i9 = minX + 1;
-                    j35 += ((iArr[i24] >>> 16) & p.f8473b) * (stack_i9 - i26);
+                    j35 += ((iArr[i23] >>> 16) & p.f9259b) * (stack_i9 - i25);
                     int stack_i10 = minX + 1;
-                    j34 += ((iArr[i24] >>> 8) & p.f8473b) * (stack_i10 - i26);
+                    j34 += ((iArr[i23] >>> 8) & p.f9259b) * (stack_i10 - i25);
                     int stack_i11 = minX + 1;
-                    j33 += (iArr[i24] & p.f8473b) * (stack_i11 - i26);
-                    j32 += (iArr[i24] >>> 16) & p.f8473b;
-                    long j36 = (iArr[i24] >>> 8) & p.f8473b;
+                    j33 += (iArr[i23] & p.f9259b) * (stack_i11 - i25);
+                    j32 += (iArr[i23] >>> 16) & p.f9259b;
+                    long j36 = (iArr[i23] >>> 8) & p.f9259b;
                     int hm2 = A00[7].charAt(21);
                     if (hm2 != 105) {
                         j31 += j36;
-                        j30 += iArr[i24] & p.f8473b;
-                        i26++;
+                        j30 += iArr[i23] & p.f9259b;
+                        i25++;
                     } else {
                         String[] strArr3 = A00;
                         strArr3[0] = "GE7urBSjjLMQkFl7rA6N87J3ehhA8Hz6";
                         strArr3[4] = "GOWeQyuTSoYbh2z5UHQkrSxrHOD9hfFJ";
                         j31 += j36;
-                        j30 += iArr[i24] & p.f8473b;
-                        i26++;
+                        j30 += iArr[i23] & p.f9259b;
+                        i25++;
                     }
                 }
                 int hm3 = minX;
-                int i27 = minX;
-                if (i27 > i11) {
-                    i27 = i11;
+                int i26 = minX;
+                if (i26 > i10) {
+                    i26 = i10;
                 }
-                int i28 = (i27 * i) + i22;
-                int i29 = i22;
-                int i30 = 0;
+                int i27 = (i26 * i) + i21;
+                int i28 = i21;
+                int i29 = 0;
                 while (true) {
                     String[] strArr4 = A00;
                     String str = strArr4[0];
@@ -198,9 +198,9 @@ public final class Q5 {
                         break loop4;
                     }
                     A00[6] = "1bwVAFoQI5Ok5WJFtwrUe";
-                    int sp2 = i30;
+                    int sp2 = i29;
                     if (sp2 < minY) {
-                        int i31 = iArr[i29];
+                        int i30 = iArr[i28];
                         int sp3 = A00[7].charAt(21);
                         if (sp3 != 105) {
                             throw new RuntimeException();
@@ -208,9 +208,9 @@ public final class Q5 {
                         String[] strArr5 = A00;
                         strArr5[0] = "GGduL95yG2tM0AFXVNzOOayl6jJ8thFl";
                         strArr5[4] = "GuBrpivSQbykanIV4Dv04bmlZ4tKSmwR";
-                        int y9 = (int) ((i31 & (-16777216)) | ((((s9 * j35) >>> b9) & 255) << 16) | ((((s9 * j34) >>> b9) & 255) << 8) | (((s9 * j33) >>> b9) & 255));
-                        iArr[i29] = y9;
-                        i29 += i;
+                        int y9 = (int) ((i30 & (-16777216)) | ((((s9 * j35) >>> b9) & 255) << 16) | ((((s9 * j34) >>> b9) & 255) << 8) | (((s9 * j33) >>> b9) & 255));
+                        iArr[i28] = y9;
+                        i28 += i;
                         long j37 = j35 - j29;
                         long j38 = j34 - j28;
                         long j39 = j33 - j27;
@@ -219,24 +219,24 @@ public final class Q5 {
                             stack_start3 -= stack_start2;
                         }
                         int y10 = iArr2[stack_start3];
-                        long j40 = j29 - ((y10 >>> 16) & p.f8473b);
+                        long j40 = j29 - ((y10 >>> 16) & p.f9259b);
                         int y11 = iArr2[stack_start3];
-                        long j41 = j28 - ((y11 >>> 8) & p.f8473b);
+                        long j41 = j28 - ((y11 >>> 8) & p.f9259b);
                         int y12 = iArr2[stack_start3];
-                        long j42 = j27 - (y12 & p.f8473b);
-                        int sp4 = i27;
-                        if (sp4 < i11) {
-                            i28 += i;
-                            i27++;
+                        long j42 = j27 - (y12 & p.f9259b);
+                        int sp4 = i26;
+                        if (sp4 < i10) {
+                            i27 += i;
+                            i26++;
                         }
-                        int y13 = iArr[i28];
+                        int y13 = iArr[i27];
                         iArr2[stack_start3] = y13;
-                        int y14 = iArr[i28];
-                        long j43 = j32 + ((y14 >>> 16) & p.f8473b);
-                        int y15 = iArr[i28];
-                        long j44 = j31 + ((y15 >>> 8) & p.f8473b);
-                        int y16 = iArr[i28];
-                        long j45 = j30 + (y16 & p.f8473b);
+                        int y14 = iArr[i27];
+                        long j43 = j32 + ((y14 >>> 16) & p.f9259b);
+                        int y15 = iArr[i27];
+                        long j44 = j31 + ((y15 >>> 8) & p.f9259b);
+                        int y16 = iArr[i27];
+                        long j45 = j30 + (y16 & p.f9259b);
                         j35 = j37 + j43;
                         j34 = j38 + j44;
                         j33 = j39 + j45;
@@ -245,18 +245,18 @@ public final class Q5 {
                             hm3 = 0;
                         }
                         int y17 = iArr2[hm3];
-                        j29 = j40 + ((y17 >>> 16) & p.f8473b);
+                        j29 = j40 + ((y17 >>> 16) & p.f9259b);
                         int y18 = iArr2[hm3];
-                        j28 = j41 + ((y18 >>> 8) & p.f8473b);
+                        j28 = j41 + ((y18 >>> 8) & p.f9259b);
                         int y19 = iArr2[hm3];
-                        j27 = j42 + (y19 & p.f8473b);
+                        j27 = j42 + (y19 & p.f9259b);
                         int y20 = iArr2[hm3];
-                        j32 = j43 - ((y20 >>> 16) & p.f8473b);
+                        j32 = j43 - ((y20 >>> 16) & p.f9259b);
                         int y21 = iArr2[hm3];
-                        j31 = j44 - ((y21 >>> 8) & p.f8473b);
+                        j31 = j44 - ((y21 >>> 8) & p.f9259b);
                         int y22 = iArr2[hm3];
-                        j30 = j45 - (y22 & p.f8473b);
-                        i30++;
+                        j30 = j45 - (y22 & p.f9259b);
+                        i29++;
                     }
                 }
             }
@@ -267,29 +267,29 @@ public final class Q5 {
     }
 
     @Nullable
-    public final Bitmap A02(Bitmap bitmap, float f3) {
-        int w6 = bitmap.getWidth();
-        int h9 = bitmap.getHeight();
+    public final Bitmap A02(Bitmap bitmap, float f2) {
+        int w3 = bitmap.getWidth();
+        int h3 = bitmap.getHeight();
         try {
-            int[] iArr = new int[w6 * h9];
-            bitmap.getPixels(iArr, 0, w6, 0, 0, w6, h9);
+            int[] iArr = new int[w3 * h3];
+            bitmap.getPixels(iArr, 0, w3, 0, 0, w3, h3);
             int i = YP.A00;
             ArrayList arrayList = new ArrayList(i);
             ArrayList<JavaBlurProcess.BlurTask> vertical = new ArrayList<>(i);
-            for (int i6 = 0; i6 < i; i6++) {
-                int h10 = h9;
-                int cores = i6;
-                arrayList.add(new YO(iArr, w6, h10, (int) f3, i, cores, 1));
-                h9 = h10;
-                int cores2 = i6;
-                vertical.add(new YO(iArr, w6, h9, (int) f3, i, cores2, 2));
+            for (int i4 = 0; i4 < i; i4++) {
+                int h9 = h3;
+                int cores = i4;
+                arrayList.add(new YO(iArr, w3, h9, (int) f2, i, cores, 1));
+                h3 = h9;
+                int cores2 = i4;
+                vertical.add(new YO(iArr, w3, h3, (int) f2, i, cores2, 2));
             }
             try {
                 YP.A01.invokeAll(arrayList);
                 try {
                     YP.A01.invokeAll(vertical);
                     try {
-                        return Bitmap.createBitmap(iArr, w6, h9, Bitmap.Config.ARGB_8888);
+                        return Bitmap.createBitmap(iArr, w3, h3, Bitmap.Config.ARGB_8888);
                     } catch (OutOfMemoryError unused) {
                         return null;
                     }

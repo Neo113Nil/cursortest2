@@ -10,28 +10,28 @@ import y8.h;
 public final class b extends f {
 
     /* renamed from: y, reason: collision with root package name */
-    public static final a f1471y;
+    public static final a f1580y;
 
     /* renamed from: v, reason: collision with root package name */
-    public final List f1472v;
+    public final List f1581v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final int f1473w;
+    public final int f1582w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final List f1474x;
+    public final List f1583x;
 
     static {
-        d dVar = d.f5578u;
-        n nVar = n.f5618u;
-        f1471y = new a(b.class);
+        d dVar = d.f5754u;
+        n nVar = n.f5794u;
+        f1580y = new a(b.class);
     }
 
     public b(d6.d dVar, int i, d6.d dVar2, h hVar) {
-        super(f1471y, hVar);
-        this.f1472v = V2.a.o("attributes", dVar);
-        this.f1473w = i;
-        this.f1474x = V2.a.o("entity_refs", dVar2);
+        super(f1580y, hVar);
+        this.f1581v = A8.b.m("attributes", dVar);
+        this.f1582w = i;
+        this.f1583x = A8.b.m("entity_refs", dVar2);
     }
 
     public final boolean equals(Object obj) {
@@ -42,29 +42,29 @@ public final class b extends f {
             return false;
         }
         b bVar = (b) obj;
-        return a().equals(bVar.a()) && this.f1472v.equals(bVar.f1472v) && V2.a.i(Integer.valueOf(this.f1473w), Integer.valueOf(bVar.f1473w)) && this.f1474x.equals(bVar.f1474x);
+        return a().equals(bVar.a()) && this.f1581v.equals(bVar.f1581v) && A8.b.i(Integer.valueOf(this.f1582w), Integer.valueOf(bVar.f1582w)) && this.f1583x.equals(bVar.f1583x);
     }
 
     public final int hashCode() {
-        int i = this.f5587u;
+        int i = this.f5763u;
         if (i != 0) {
             return i;
         }
-        int hashCode = this.f1474x.hashCode() + ((Integer.hashCode(this.f1473w) + ((this.f1472v.hashCode() + (a().hashCode() * 37)) * 37)) * 37);
-        this.f5587u = hashCode;
+        int hashCode = this.f1583x.hashCode() + ((Integer.hashCode(this.f1582w) + ((this.f1581v.hashCode() + (a().hashCode() * 37)) * 37)) * 37);
+        this.f5763u = hashCode;
         return hashCode;
     }
 
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        List list = this.f1472v;
+        List list = this.f1581v;
         if (!list.isEmpty()) {
             sb.append(", attributes=");
             sb.append(list);
         }
         sb.append(", dropped_attributes_count=");
-        sb.append(this.f1473w);
-        List list2 = this.f1474x;
+        sb.append(this.f1582w);
+        List list2 = this.f1583x;
         if (!list2.isEmpty()) {
             sb.append(", entity_refs=");
             sb.append(list2);

@@ -1,96 +1,97 @@
 package g7;
 
 import android.content.Context;
-import com.google.android.gms.internal.ads.AbstractC3413jg;
-import com.google.android.gms.internal.ads.C2835Wc;
-import com.google.android.gms.internal.ads.C2851Xc;
-import com.google.android.gms.internal.ads.C2866Yb;
-import com.google.android.gms.internal.ads.C3481ku;
-import com.google.android.gms.internal.ads.C4274ze;
-import com.google.android.gms.internal.ads.RunnableC3973u0;
+import com.anythink.core.common.n.b.A;
+import com.google.android.gms.internal.ads.AbstractC3436jg;
+import com.google.android.gms.internal.ads.C2858Wc;
+import com.google.android.gms.internal.ads.C2874Xc;
+import com.google.android.gms.internal.ads.C2889Yb;
+import com.google.android.gms.internal.ads.C3504ku;
+import com.google.android.gms.internal.ads.C4297ze;
+import com.google.android.gms.internal.ads.RunnableC3996u0;
 import com.google.android.gms.internal.ads.Su;
 import com.google.android.gms.internal.ads.Ux;
 import com.google.android.gms.internal.ads.Wu;
-import com.icefishingapp.icefishing.AbstractC4404f;
-import e4.C4463a;
-import j7.EnumC4613b;
+import com.google.android.gms.internal.ads.Wv;
+import g4.C4532a;
+import j7.EnumC4623b;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
-import l7.C4666a;
-import m7.C4741a;
-import o7.C4802a;
-import o7.C4805d;
-import u.AbstractC5049e;
-import u2.z;
-import v2.C5110a;
+import l7.C4678a;
+import m7.C4755a;
+import o7.C4806a;
+import o7.C4809d;
+import u.AbstractC5050e;
+import w2.z;
+import x2.C5189a;
 
 /* loaded from: classes2.dex */
 public final class m {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f37663a;
+    public final /* synthetic */ int f37688a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f37664b;
+    public String f37689b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f37665c;
+    public int f37690c;
 
     /* renamed from: d, reason: collision with root package name */
-    public Object f37666d;
+    public Object f37691d;
 
     /* renamed from: e, reason: collision with root package name */
-    public Object f37667e;
+    public Object f37692e;
 
     /* renamed from: f, reason: collision with root package name */
-    public Object f37668f;
+    public Object f37693f;
 
     /* renamed from: g, reason: collision with root package name */
-    public Object f37669g;
+    public Object f37694g;
 
     /* renamed from: h, reason: collision with root package name */
-    public Object f37670h;
+    public Object f37695h;
 
     public /* synthetic */ m() {
-        this.f37663a = 2;
+        this.f37688a = 2;
     }
 
-    public C4463a a() {
-        String str = this.f37665c == 0 ? " registrationStatus" : "";
-        if (((Long) this.f37668f) == null) {
+    public C4532a a() {
+        String str = this.f37690c == 0 ? " registrationStatus" : "";
+        if (((Long) this.f37693f) == null) {
             str = str.concat(" expiresInSecs");
         }
-        if (((Long) this.f37669g) == null) {
-            str = AbstractC4404f.f(str, " tokenCreationEpochInSecs");
+        if (((Long) this.f37694g) == null) {
+            str = Wv.g(str, " tokenCreationEpochInSecs");
         }
         if (str.isEmpty()) {
-            return new C4463a(this.f37664b, this.f37665c, (String) this.f37666d, (String) this.f37667e, ((Long) this.f37668f).longValue(), ((Long) this.f37669g).longValue(), (String) this.f37670h);
+            return new C4532a(this.f37689b, this.f37690c, (String) this.f37691d, (String) this.f37692e, ((Long) this.f37693f).longValue(), ((Long) this.f37694g).longValue(), (String) this.f37695h);
         }
         throw new IllegalStateException("Missing required properties:".concat(str));
     }
 
-    public a b(d4.f fVar) {
+    public a b(A a9) {
         k7.b c9 = c();
-        t tVar = (t) this.f37668f;
+        t tVar = (t) this.f37693f;
         tVar.getClass();
         ArrayList arrayList = new ArrayList();
-        for (Map.Entry entry : tVar.f37694e.entrySet()) {
-            C4741a c4741a = (C4741a) entry.getKey();
-            for (C4802a c4802a : c4741a.f39318b.a(c9, tVar.f37693d)) {
-                C4805d c4805d = C4805d.f39644a;
-                d dVar = c4802a.f39638b;
-                b bVar = dVar.f37660a;
-                if (c4805d != bVar) {
-                    C4666a c4666a = tVar.f37692c.f39505c;
-                    k7.c.a(dVar, EnumC4613b.f38477n, c9);
+        for (Map.Entry entry : tVar.f37719e.entrySet()) {
+            C4755a c4755a = (C4755a) entry.getKey();
+            for (C4806a c4806a : c4755a.f39477b.a(c9, tVar.f37718d)) {
+                C4809d c4809d = C4809d.f39752a;
+                d dVar = c4806a.f39746b;
+                b bVar = dVar.f37685a;
+                if (c4809d != bVar) {
+                    C4678a c4678a = tVar.f37717c.f39672c;
+                    k7.c.a(dVar, EnumC4623b.f38489n, c9);
                     throw null;
                 }
             }
         }
         s sVar = arrayList.size() == 1 ? (s) arrayList.get(0) : new s(arrayList);
-        switch (fVar.f37063n) {
+        switch (a9.f15645n) {
             case 2:
                 return new g(c9, sVar);
             case 3:
@@ -107,30 +108,30 @@ public final class m {
     }
 
     public k7.b c() {
-        return new k7.b(this.f37664b, (String) this.f37666d, (String) this.f37667e, (n) this.f37669g, this.f37665c, new k7.a((List) ((F1.a) this.f37670h).f903u));
+        return new k7.b(this.f37689b, (String) this.f37691d, (String) this.f37692e, (n) this.f37694g, this.f37690c, new k7.a((List) ((I0.j) this.f37695h).f1291u));
     }
 
     public String d(String str) {
-        StringBuilder c9 = AbstractC5049e.c(str, "{descriptor=");
+        StringBuilder c9 = AbstractC5050e.c(str, "{descriptor=");
         c9.append(c());
         c9.append("}");
         return c9.toString();
     }
 
-    public C2851Xc e() {
-        Su g4 = Su.g((Context) this.f37667e, 6);
-        g4.c();
-        C2851Xc c2851Xc = new C2851Xc();
+    public C2874Xc e() {
+        Su e9 = Su.e((Context) this.f37692e, 6);
+        e9.c();
+        C2874Xc c2874Xc = new C2874Xc();
         z.k("loadJavascriptEngine > Before UI_THREAD_EXECUTOR");
-        AbstractC3413jg.f31273f.execute(new RunnableC3973u0(7, this, c2851Xc));
+        AbstractC3436jg.f32060f.execute(new RunnableC3996u0(7, this, c2874Xc));
         z.k("loadNewJavascriptEngine: Promise created");
-        c2851Xc.p(new C4274ze(this, c2851Xc, g4), new C3481ku(this, c2851Xc, g4));
-        return c2851Xc;
+        c2874Xc.p(new C4297ze(this, c2874Xc, e9), new C3504ku(this, c2874Xc, e9));
+        return c2874Xc;
     }
 
-    public C2835Wc f() {
+    public C2858Wc f() {
         z.k("getEngine: Trying to acquire lock");
-        Object obj = this.f37666d;
+        Object obj = this.f37691d;
         synchronized (obj) {
             try {
                 z.k("getEngine: Lock acquired");
@@ -138,9 +139,9 @@ public final class m {
                 synchronized (obj) {
                     try {
                         z.k("refreshIfDestroyed: Lock acquired");
-                        C2851Xc c2851Xc = (C2851Xc) this.f37670h;
-                        if (c2851Xc != null && this.f37665c == 0) {
-                            c2851Xc.p(new Ux(8, this), C2866Yb.f28689u);
+                        C2874Xc c2874Xc = (C2874Xc) this.f37695h;
+                        if (c2874Xc != null && this.f37690c == 0) {
+                            c2874Xc.p(new Ux(8, this), C2889Yb.f29464u);
                         }
                     } finally {
                     }
@@ -150,30 +151,30 @@ public final class m {
             }
         }
         z.k("refreshIfDestroyed: Lock released");
-        C2851Xc c2851Xc2 = (C2851Xc) this.f37670h;
-        if (c2851Xc2 != null && ((AtomicInteger) c2851Xc2.f732v).get() != -1) {
-            int i = this.f37665c;
+        C2874Xc c2874Xc2 = (C2874Xc) this.f37695h;
+        if (c2874Xc2 != null && ((AtomicInteger) c2874Xc2.f257v).get() != -1) {
+            int i = this.f37690c;
             if (i == 0) {
                 z.k("getEngine (NO_UPDATE): Lock released");
-                return ((C2851Xc) this.f37670h).s();
+                return ((C2874Xc) this.f37695h).s();
             }
             if (i != 1) {
                 z.k("getEngine (UPDATING): Lock released");
-                return ((C2851Xc) this.f37670h).s();
+                return ((C2874Xc) this.f37695h).s();
             }
-            this.f37665c = 2;
+            this.f37690c = 2;
             e();
             z.k("getEngine (PENDING_UPDATE): Lock released");
-            return ((C2851Xc) this.f37670h).s();
+            return ((C2874Xc) this.f37695h).s();
         }
-        this.f37665c = 2;
-        this.f37670h = e();
+        this.f37690c = 2;
+        this.f37695h = e();
         z.k("getEngine (NULL or REJECTED): Lock released");
-        return ((C2851Xc) this.f37670h).s();
+        return ((C2874Xc) this.f37695h).s();
     }
 
     public String toString() {
-        switch (this.f37663a) {
+        switch (this.f37688a) {
             case 0:
                 return d(m.class.getSimpleName());
             default:
@@ -181,24 +182,24 @@ public final class m {
         }
     }
 
-    public m(Context context, C5110a c5110a, String str, Wu wu) {
-        this.f37663a = 1;
-        this.f37666d = new Object();
-        this.f37665c = 1;
-        this.f37664b = str;
-        this.f37667e = context.getApplicationContext();
-        this.f37668f = c5110a;
-        this.f37669g = wu;
+    public m(Context context, C5189a c5189a, String str, Wu wu) {
+        this.f37688a = 1;
+        this.f37691d = new Object();
+        this.f37690c = 1;
+        this.f37689b = str;
+        this.f37692e = context.getApplicationContext();
+        this.f37693f = c5189a;
+        this.f37694g = wu;
     }
 
     public m(String str, n nVar, int i, t tVar) {
-        this.f37663a = 0;
-        this.f37670h = new F1.a(22, false);
-        this.f37666d = "";
-        this.f37667e = "";
-        this.f37664b = str;
-        this.f37669g = nVar;
-        this.f37665c = i;
-        this.f37668f = tVar;
+        this.f37688a = 0;
+        this.f37695h = new I0.j(27);
+        this.f37691d = "";
+        this.f37692e = "";
+        this.f37689b = str;
+        this.f37694g = nVar;
+        this.f37690c = i;
+        this.f37693f = tVar;
     }
 }

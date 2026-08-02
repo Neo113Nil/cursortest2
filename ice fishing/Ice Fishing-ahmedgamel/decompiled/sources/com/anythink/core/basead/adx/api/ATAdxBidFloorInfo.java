@@ -13,8 +13,8 @@ public class ATAdxBidFloorInfo {
     ATAdConst.CURRENCY currency;
     Map<String, Object> extraMap;
 
-    public ATAdxBidFloorInfo(double d2, ATAdConst.CURRENCY currency) {
-        this.bidFloor = d2;
+    public ATAdxBidFloorInfo(double d9, ATAdConst.CURRENCY currency) {
+        this.bidFloor = d9;
         this.currency = currency;
     }
 
@@ -30,8 +30,8 @@ public class ATAdxBidFloorInfo {
         return this.extraMap;
     }
 
-    public ATAdxBidFloorInfo(double d2, ATAdConst.CURRENCY currency, Map<String, Object> map) {
-        this(d2, currency);
+    public ATAdxBidFloorInfo(double d9, ATAdConst.CURRENCY currency, Map<String, Object> map) {
+        this(d9, currency);
         this.extraMap = map;
     }
 }

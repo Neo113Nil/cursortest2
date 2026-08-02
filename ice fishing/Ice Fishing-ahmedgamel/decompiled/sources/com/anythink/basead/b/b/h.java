@@ -11,7 +11,7 @@ public final class h extends a {
 
     @Override // com.anythink.basead.b.b.a, com.anythink.basead.b.b.m
     public final n a() {
-        k kVar = this.f5746e;
+        k kVar = this.f6532e;
         if (kVar == null) {
             return n.a(false, "JumpUrlClickAction empty mOfferClickReportNotify");
         }
@@ -19,33 +19,33 @@ public final class h extends a {
         if (a9 == null) {
             return n.a(false, "JumpUrlClickAction empty mOfferClickReportNotify");
         }
-        a9.f6215k = new com.anythink.basead.d.b();
+        a9.f7001k = new com.anythink.basead.d.b();
         com.anythink.basead.d.e b9 = b();
-        a9.f6215k.f6131a = b9 != null ? b9.f6143c : "";
-        if (!TextUtils.isEmpty(this.f5744c.u())) {
-            String u3 = this.f5744c.u();
-            String str = this.f5745d.f14158d;
-            String replaceAll = u3.replaceAll("\\{req_id\\}", str != null ? str : "");
-            if (com.anythink.core.basead.a.e.a(this.f5743b, replaceAll, this.f5744c, this.f5745d)) {
+        a9.f7001k.f6917a = b9 != null ? b9.f6929c : "";
+        if (!TextUtils.isEmpty(this.f6530c.u())) {
+            String u6 = this.f6530c.u();
+            String str = this.f6531d.f14944d;
+            String replaceAll = u6.replaceAll("\\{req_id\\}", str != null ? str : "");
+            if (com.anythink.core.basead.a.e.a(this.f6529b, replaceAll, this.f6530c, this.f6531d)) {
                 com.anythink.basead.d.a aVar = a9.i;
                 if (aVar != null) {
                     aVar.i = true;
                 }
-                k kVar2 = this.f5746e;
+                k kVar2 = this.f6532e;
                 if (kVar2 != null) {
                     kVar2.b();
                 }
-                com.anythink.core.common.u.e.a(this.f5745d, this.f5744c, replaceAll, "1", 1);
-                b bVar = this.f5747f;
+                com.anythink.core.common.u.e.a(this.f6531d, this.f6530c, replaceAll, "1", 1);
+                b bVar = this.f6533f;
                 if (bVar != null) {
                     bVar.b();
-                    this.f5747f.a();
-                    this.f5747f.a(true);
-                    this.f5747f.c();
+                    this.f6533f.a();
+                    this.f6533f.a(true);
+                    this.f6533f.c();
                 }
                 return n.a(true, "JumpUrlClickAction execute success");
             }
-            com.anythink.core.common.u.e.a(this.f5745d, this.f5744c, replaceAll, "0", 1);
+            com.anythink.core.common.u.e.a(this.f6531d, this.f6530c, replaceAll, "0", 1);
         }
         return n.a(false, "JumpUrlClickAction execute fail");
     }

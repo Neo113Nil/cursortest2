@@ -13,10 +13,10 @@ public abstract class HH {
     public static byte[] A00;
     public static String[] A01 = {"jaTfwC0cI533jMSLFdbnMioREeamNCq8", "oxYS1uYBjADPdRUL4vsR12VppXrr4BxP", "o9bG5hJtiKIeIPN2CaXw8mH6vllsT8Pg", "8s8MZLb5TSIkvuwEDH", "W6kvFYauQlSyWCDb8CQhWvVbWb1Alqwq", "aw37R0CiGakhFrBRrvipxmkRXRxeCTzI", "Y2zfIeYjiYIsjSkQMxD0jwTDeetOAull", "DaiobFePrAznnRWN86LDTmrCW9O2HPvR"};
 
-    public static String A06(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 112);
+    public static String A06(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 112);
         }
         return new String(copyOfRange);
     }
@@ -29,114 +29,114 @@ public abstract class HH {
         A08();
     }
 
-    public static int A00(InterfaceC2191ms interfaceC2191ms) throws IOException {
-        interfaceC2191ms.AIl();
-        C06474v c06474v = new C06474v(2);
-        interfaceC2191ms.AGt(c06474v.A0l(), 0, 2);
-        int syncCode = c06474v.A0M();
+    public static int A00(InterfaceC2211ms interfaceC2211ms) throws IOException {
+        interfaceC2211ms.AIl();
+        C06674v c06674v = new C06674v(2);
+        interfaceC2211ms.AGt(c06674v.A0l(), 0, 2);
+        int syncCode = c06674v.A0M();
         int frameStartMarker = syncCode >> 2;
         if (frameStartMarker == 16382) {
-            interfaceC2191ms.AIl();
+            interfaceC2211ms.AIl();
             return syncCode;
         }
-        interfaceC2191ms.AIl();
+        interfaceC2211ms.AIl();
         throw C3K.A01(A06(34, 42, 75), null);
     }
 
-    public static Metadata A01(InterfaceC2191ms interfaceC2191ms, boolean z3) throws IOException {
+    public static Metadata A01(InterfaceC2211ms interfaceC2211ms, boolean z6) throws IOException {
         IE id3FramePredicate;
-        if (z3) {
+        if (z6) {
             id3FramePredicate = null;
         } else {
             id3FramePredicate = C9U.A03;
         }
-        Metadata A002 = new HM().A00(interfaceC2191ms, id3FramePredicate);
+        Metadata A002 = new HM().A00(interfaceC2211ms, id3FramePredicate);
         if (A002 == null || A002.A02() == 0) {
             return null;
         }
         return A002;
     }
 
-    public static Metadata A02(InterfaceC2191ms interfaceC2191ms, boolean z3) throws IOException {
-        interfaceC2191ms.AIl();
-        long A8i = interfaceC2191ms.A8i();
-        Metadata A012 = A01(interfaceC2191ms, z3);
-        interfaceC2191ms.AK3((int) (interfaceC2191ms.A8i() - A8i));
+    public static Metadata A02(InterfaceC2211ms interfaceC2211ms, boolean z6) throws IOException {
+        interfaceC2211ms.AIl();
+        long A8i = interfaceC2211ms.A8i();
+        Metadata A012 = A01(interfaceC2211ms, z6);
+        interfaceC2211ms.AK3((int) (interfaceC2211ms.A8i() - A8i));
         return A012;
     }
 
-    public static HI A03(C06474v c06474v) {
-        c06474v.A0g(1);
-        int A0K = c06474v.A0K();
-        int length = c06474v.A09();
+    public static HI A03(C06674v c06674v) {
+        c06674v.A0g(1);
+        int A0K = c06674v.A0K();
+        int length = c06674v.A09();
         long j6 = length + A0K;
         int i = A0K / 18;
         long[] jArr = new long[i];
         long[] jArr2 = new long[i];
-        int i6 = 0;
+        int i4 = 0;
         while (true) {
-            if (i6 >= i) {
+            if (i4 >= i) {
                 break;
             }
-            long A0P = c06474v.A0P();
+            long A0P = c06674v.A0P();
             if (A0P == -1) {
-                jArr = Arrays.copyOf(jArr, i6);
-                jArr2 = Arrays.copyOf(jArr2, i6);
+                jArr = Arrays.copyOf(jArr, i4);
+                jArr2 = Arrays.copyOf(jArr2, i4);
                 break;
             }
-            jArr[i6] = A0P;
-            jArr2[i6] = c06474v.A0P();
-            c06474v.A0g(2);
-            i6++;
+            jArr[i4] = A0P;
+            jArr2[i4] = c06674v.A0P();
+            c06674v.A0g(2);
+            i4++;
         }
-        int length2 = c06474v.A09();
-        c06474v.A0g((int) (j6 - length2));
+        int length2 = c06674v.A09();
+        c06674v.A0g((int) (j6 - length2));
         return new HI(jArr, jArr2);
     }
 
-    public static HI A04(InterfaceC2191ms interfaceC2191ms, int i) throws IOException {
-        C06474v c06474v = new C06474v(i);
-        interfaceC2191ms.readFully(c06474v.A0l(), 0, i);
-        return A03(c06474v);
+    public static HI A04(InterfaceC2211ms interfaceC2211ms, int i) throws IOException {
+        C06674v c06674v = new C06674v(i);
+        interfaceC2211ms.readFully(c06674v.A0l(), 0, i);
+        return A03(c06674v);
     }
 
-    public static HJ A05(InterfaceC2191ms interfaceC2191ms) throws IOException {
+    public static HJ A05(InterfaceC2211ms interfaceC2211ms) throws IOException {
         byte[] bArr = new byte[38];
-        interfaceC2191ms.readFully(bArr, 0, 38);
+        interfaceC2211ms.readFully(bArr, 0, 38);
         return new HJ(bArr, 4);
     }
 
-    public static List<String> A07(InterfaceC2191ms interfaceC2191ms, int i) throws IOException {
-        C06474v c06474v = new C06474v(i);
-        interfaceC2191ms.readFully(c06474v.A0l(), 0, i);
-        c06474v.A0g(4);
-        return Arrays.asList(AbstractC0954Hk.A05(c06474v, false, false).A02);
+    public static List<String> A07(InterfaceC2211ms interfaceC2211ms, int i) throws IOException {
+        C06674v c06674v = new C06674v(i);
+        interfaceC2211ms.readFully(c06674v.A0l(), 0, i);
+        c06674v.A0g(4);
+        return Arrays.asList(AbstractC0974Hk.A05(c06674v, false, false).A02);
     }
 
-    public static void A09(InterfaceC2191ms interfaceC2191ms) throws IOException {
-        C06474v c06474v = new C06474v(4);
-        interfaceC2191ms.readFully(c06474v.A0l(), 0, 4);
-        if (c06474v.A0Q() == 1716281667) {
+    public static void A09(InterfaceC2211ms interfaceC2211ms) throws IOException {
+        C06674v c06674v = new C06674v(4);
+        interfaceC2211ms.readFully(c06674v.A0l(), 0, 4);
+        if (c06674v.A0Q() == 1716281667) {
         } else {
             throw C3K.A01(A06(0, 34, 51), null);
         }
     }
 
-    public static boolean A0A(InterfaceC2191ms interfaceC2191ms) throws IOException {
-        C06474v c06474v = new C06474v(4);
-        interfaceC2191ms.AGt(c06474v.A0l(), 0, 4);
-        return c06474v.A0Q() == 1716281667;
+    public static boolean A0A(InterfaceC2211ms interfaceC2211ms) throws IOException {
+        C06674v c06674v = new C06674v(4);
+        interfaceC2211ms.AGt(c06674v.A0l(), 0, 4);
+        return c06674v.A0Q() == 1716281667;
     }
 
-    public static boolean A0B(InterfaceC2191ms interfaceC2191ms, HG hg) throws IOException {
-        interfaceC2191ms.AIl();
-        C06464u c06464u = new C06464u(new byte[4]);
-        interfaceC2191ms.AGt(c06464u.A00, 0, 4);
-        boolean A0H = c06464u.A0H();
-        int A04 = c06464u.A04(7);
-        int A042 = c06464u.A04(24) + 4;
+    public static boolean A0B(InterfaceC2211ms interfaceC2211ms, HG hg) throws IOException {
+        interfaceC2211ms.AIl();
+        C06664u c06664u = new C06664u(new byte[4]);
+        interfaceC2211ms.AGt(c06664u.A00, 0, 4);
+        boolean A0H = c06664u.A0H();
+        int A04 = c06664u.A04(7);
+        int A042 = c06664u.A04(24) + 4;
         if (A04 == 0) {
-            HJ A05 = A05(interfaceC2191ms);
+            HJ A05 = A05(interfaceC2211ms);
             String[] strArr = A01;
             if (strArr[1].charAt(0) != strArr[2].charAt(0)) {
                 throw new RuntimeException();
@@ -150,18 +150,18 @@ public abstract class HH {
             if (hj != null) {
                 if (A04 != 3) {
                     if (A04 == 4) {
-                        hg.A00 = hj.A0B(A07(interfaceC2191ms, A042));
+                        hg.A00 = hj.A0B(A07(interfaceC2211ms, A042));
                     } else if (A04 == 6) {
-                        C06474v c06474v = new C06474v(A042);
-                        interfaceC2191ms.readFully(c06474v.A0l(), 0, A042);
-                        c06474v.A0g(4);
-                        PictureFrame pictureFrame = PictureFrame.A00(c06474v);
+                        C06674v c06674v = new C06674v(A042);
+                        interfaceC2211ms.readFully(c06674v.A0l(), 0, A042);
+                        c06674v.A0g(4);
+                        PictureFrame pictureFrame = PictureFrame.A00(c06674v);
                         hg.A00 = hj.A0A(MetaExoPlayerCustomizedCollections.A03(pictureFrame));
                     } else {
-                        interfaceC2191ms.AK3(A042);
+                        interfaceC2211ms.AK3(A042);
                     }
                 } else {
-                    hg.A00 = hj.A09(A04(interfaceC2191ms, A042));
+                    hg.A00 = hj.A09(A04(interfaceC2211ms, A042));
                 }
             } else {
                 throw new IllegalArgumentException();

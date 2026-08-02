@@ -9,10 +9,10 @@ public class ZO implements View.OnClickListener {
     public static String[] A02 = {"Rngvbb3vMR3b56rBexb50Rjom5JamLMR", "BOyMrOLOVyOlAA7tdLfD", "PSvH7Ca0GqwbJXrw1OxZU20X4aHcam0S", "dzm7VVMnrqblx5opBv2tkfICkL24O513", "rKXY71", "THxRt8Yss0BlXBXFFRIVlNUaizFLAmop", "EnNQl89tpWVbcex4LtQ2YfadlOVOSM9k", "1aWdi1c8aZwiTk2zvtk8Xc2vTbtrER0G"};
     public final /* synthetic */ MI A00;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 38);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 38);
         }
         return new String(copyOfRange);
     }
@@ -31,13 +31,13 @@ public class ZO implements View.OnClickListener {
 
     @Override // android.view.View.OnClickListener
     public final void onClick(View view) {
-        InterfaceC1381Yh interfaceC1381Yh;
+        InterfaceC1401Yh interfaceC1401Yh;
         if (WU.A02(this)) {
             return;
         }
         try {
-            interfaceC1381Yh = this.A00.A06;
-            interfaceC1381Yh.A4j(A00(0, 15, 86));
+            interfaceC1401Yh = this.A00.A06;
+            interfaceC1401Yh.A4j(A00(0, 15, 86));
         } catch (Throwable th) {
             WU.A00(th, this);
             String[] strArr = A02;

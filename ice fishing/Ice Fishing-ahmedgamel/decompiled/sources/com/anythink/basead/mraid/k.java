@@ -11,20 +11,20 @@ import com.anythink.core.common.v.z;
 public final class k extends com.anythink.core.express.web.b {
 
     /* renamed from: a, reason: collision with root package name */
-    final String f9658a = "k";
+    final String f10444a = "k";
 
     /* renamed from: b, reason: collision with root package name */
-    String f9659b;
+    String f10445b;
 
     /* renamed from: c, reason: collision with root package name */
-    e f9660c;
+    e f10446c;
 
     public k(String str) {
-        this.f9659b = str;
+        this.f10445b = str;
     }
 
     private void a(e eVar) {
-        this.f9660c = eVar;
+        this.f10446c = eVar;
     }
 
     @Override // android.webkit.WebViewClient
@@ -52,7 +52,7 @@ public final class k extends com.anythink.core.express.web.b {
     public final boolean shouldOverrideUrlLoading(WebView webView, String str) {
         e eVar;
         try {
-            if (!TextUtils.equals(str, this.f9659b) && (eVar = this.f9660c) != null) {
+            if (!TextUtils.equals(str, this.f10445b) && (eVar = this.f10446c) != null) {
                 eVar.open(str);
             }
             return true;

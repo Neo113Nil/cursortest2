@@ -1,5 +1,6 @@
 package D0;
 
+import a.AbstractC0426a;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.view.View;
@@ -9,37 +10,37 @@ import android.view.ViewGroup;
 public final class F extends AnimatorListenerAdapter implements m {
 
     /* renamed from: a, reason: collision with root package name */
-    public final View f524a;
+    public final View f419a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f525b;
+    public final int f420b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final ViewGroup f526c;
+    public final ViewGroup f421c;
 
     /* renamed from: e, reason: collision with root package name */
-    public boolean f528e;
+    public boolean f423e;
 
     /* renamed from: f, reason: collision with root package name */
-    public boolean f529f = false;
+    public boolean f424f = false;
 
     /* renamed from: d, reason: collision with root package name */
-    public final boolean f527d = true;
+    public final boolean f422d = true;
 
     public F(int i, View view) {
-        this.f524a = view;
-        this.f525b = i;
-        this.f526c = (ViewGroup) view.getParent();
+        this.f419a = view;
+        this.f420b = i;
+        this.f421c = (ViewGroup) view.getParent();
         g(true);
     }
 
     @Override // D0.m
     public final void b() {
         g(false);
-        if (this.f529f) {
+        if (this.f424f) {
             return;
         }
-        y.b(this.f524a, this.f525b);
+        y.b(this.f419a, this.f420b);
     }
 
     @Override // D0.m
@@ -50,31 +51,31 @@ public final class F extends AnimatorListenerAdapter implements m {
     @Override // D0.m
     public final void e() {
         g(true);
-        if (this.f529f) {
+        if (this.f424f) {
             return;
         }
-        y.b(this.f524a, 0);
+        y.b(this.f419a, 0);
     }
 
-    public final void g(boolean z3) {
+    public final void g(boolean z6) {
         ViewGroup viewGroup;
-        if (!this.f527d || this.f528e == z3 || (viewGroup = this.f526c) == null) {
+        if (!this.f422d || this.f423e == z6 || (viewGroup = this.f421c) == null) {
             return;
         }
-        this.f528e = z3;
-        com.bumptech.glide.g.i(viewGroup, z3);
+        this.f423e = z6;
+        AbstractC0426a.p(viewGroup, z6);
     }
 
     @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
     public final void onAnimationCancel(Animator animator) {
-        this.f529f = true;
+        this.f424f = true;
     }
 
     @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
     public final void onAnimationEnd(Animator animator) {
-        if (!this.f529f) {
-            y.b(this.f524a, this.f525b);
-            ViewGroup viewGroup = this.f526c;
+        if (!this.f424f) {
+            y.b(this.f419a, this.f420b);
+            ViewGroup viewGroup = this.f421c;
             if (viewGroup != null) {
                 viewGroup.invalidate();
             }
@@ -87,10 +88,10 @@ public final class F extends AnimatorListenerAdapter implements m {
     }
 
     @Override // android.animation.Animator.AnimatorListener
-    public final void onAnimationStart(Animator animator, boolean z3) {
-        if (z3) {
-            y.b(this.f524a, 0);
-            ViewGroup viewGroup = this.f526c;
+    public final void onAnimationStart(Animator animator, boolean z6) {
+        if (z6) {
+            y.b(this.f419a, 0);
+            ViewGroup viewGroup = this.f421c;
             if (viewGroup != null) {
                 viewGroup.invalidate();
             }
@@ -98,13 +99,13 @@ public final class F extends AnimatorListenerAdapter implements m {
     }
 
     @Override // android.animation.Animator.AnimatorListener
-    public final void onAnimationEnd(Animator animator, boolean z3) {
-        if (z3) {
+    public final void onAnimationEnd(Animator animator, boolean z6) {
+        if (z6) {
             return;
         }
-        if (!this.f529f) {
-            y.b(this.f524a, this.f525b);
-            ViewGroup viewGroup = this.f526c;
+        if (!this.f424f) {
+            y.b(this.f419a, this.f420b);
+            ViewGroup viewGroup = this.f421c;
             if (viewGroup != null) {
                 viewGroup.invalidate();
             }

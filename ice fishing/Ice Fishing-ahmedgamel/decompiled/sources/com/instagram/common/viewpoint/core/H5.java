@@ -16,10 +16,10 @@ public final class H5 {
         A02();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 14);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 14);
         }
         return new String(copyOfRange);
     }
@@ -56,7 +56,7 @@ public final class H5 {
         try {
             return A01.newInstance(objArr);
         } catch (Exception e9) {
-            throw new IllegalStateException(A00(29, 35, a.f21727Q), e9);
+            throw new IllegalStateException(A00(29, 35, a.f22514Q), e9);
         }
     }
 }

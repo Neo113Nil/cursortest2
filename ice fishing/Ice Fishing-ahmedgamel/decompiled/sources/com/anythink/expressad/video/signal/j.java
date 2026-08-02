@@ -6,27 +6,27 @@ public interface j {
     public static final int n_ = 2;
 
     /* renamed from: o, reason: collision with root package name */
-    public static final int f22190o = 1;
+    public static final int f22977o = 1;
     public static final int o_ = 3;
 
     /* renamed from: p, reason: collision with root package name */
-    public static final int f22191p = 2;
+    public static final int f22978p = 2;
     public static final int p_ = 4;
 
     /* renamed from: q, reason: collision with root package name */
-    public static final int f22192q = 1;
+    public static final int f22979q = 1;
     public static final int q_ = 5;
 
     /* renamed from: r, reason: collision with root package name */
-    public static final int f22193r = 2;
+    public static final int f22980r = 2;
     public static final int r_ = 6;
 
     /* renamed from: s, reason: collision with root package name */
-    public static final int f22194s = 0;
+    public static final int f22981s = 0;
     public static final int s_ = 0;
 
     /* renamed from: t, reason: collision with root package name */
-    public static final int f22195t = 1;
+    public static final int f22982t = 1;
     public static final int t_ = 1;
     public static final int u_ = 1;
     public static final int v_ = 2;
@@ -36,7 +36,7 @@ public interface j {
 
     void alertWebViewShowed();
 
-    void closeVideoOperate(int i, int i6);
+    void closeVideoOperate(int i, int i4);
 
     void dismissAllAlert();
 
@@ -60,13 +60,13 @@ public interface j {
 
     void progressBarOperate(int i);
 
-    void progressOperate(int i, int i6);
+    void progressOperate(int i, int i4);
 
-    void setCover(boolean z3);
+    void setCover(boolean z6);
 
-    void setInstallDialogState(boolean z3);
+    void setInstallDialogState(boolean z6);
 
-    void setMiniEndCardState(boolean z3);
+    void setMiniEndCardState(boolean z6);
 
     void setScaleFitXY(int i);
 
@@ -76,11 +76,11 @@ public interface j {
 
     void showIVRewardAlertView(String str);
 
-    void showVideoLocation(int i, int i6, int i9, int i10, int i11, int i12, int i13, int i14, int i15);
+    void showVideoLocation(int i, int i4, int i6, int i9, int i10, int i11, int i12, int i13, int i14);
 
-    void soundOperate(int i, int i6);
+    void soundOperate(int i, int i4);
 
-    void soundOperate(int i, int i6, String str);
+    void soundOperate(int i, int i4, String str);
 
     void videoOperate(int i);
 }

@@ -15,13 +15,13 @@ import java.util.List;
 public class AlbumScaleItemView01 extends BaseAlbumScaleItemView {
 
     /* renamed from: f, reason: collision with root package name */
-    private ImageView f10551f;
+    private ImageView f11337f;
 
     /* renamed from: g, reason: collision with root package name */
-    private ImageView f10552g;
+    private ImageView f11338g;
 
     /* renamed from: h, reason: collision with root package name */
-    private ImageView f10553h;
+    private ImageView f11339h;
     private ImageView i;
 
     public AlbumScaleItemView01(Context context) {
@@ -37,9 +37,9 @@ public class AlbumScaleItemView01 extends BaseAlbumScaleItemView {
     public void initView(View view) {
         super.initView(view);
         Context context = getContext();
-        this.f10551f = (ImageView) view.findViewById(q.a(context, "iv_left_top", "id"));
-        this.f10552g = (ImageView) view.findViewById(q.a(context, "iv_left_bottom", "id"));
-        this.f10553h = (ImageView) view.findViewById(q.a(context, "iv_right_top", "id"));
+        this.f11337f = (ImageView) view.findViewById(q.a(context, "iv_left_top", "id"));
+        this.f11338g = (ImageView) view.findViewById(q.a(context, "iv_left_bottom", "id"));
+        this.f11339h = (ImageView) view.findViewById(q.a(context, "iv_right_top", "id"));
         this.i = (ImageView) view.findViewById(q.a(context, "iv_right_bottom", "id"));
     }
 
@@ -48,7 +48,7 @@ public class AlbumScaleItemView01 extends BaseAlbumScaleItemView {
         if (list == null || list.size() < 4) {
             return;
         }
-        ImageView imageView = this.f10553h;
+        ImageView imageView = this.f11339h;
         if (imageView != null) {
             imageView.setImageBitmap(list.get(0));
         }
@@ -56,11 +56,11 @@ public class AlbumScaleItemView01 extends BaseAlbumScaleItemView {
         if (imageView2 != null) {
             imageView2.setImageBitmap(list.get(1));
         }
-        ImageView imageView3 = this.f10552g;
+        ImageView imageView3 = this.f11338g;
         if (imageView3 != null) {
             imageView3.setImageBitmap(list.get(2));
         }
-        ImageView imageView4 = this.f10551f;
+        ImageView imageView4 = this.f11337f;
         if (imageView4 != null) {
             imageView4.setImageBitmap(list.get(3));
         }
@@ -68,29 +68,29 @@ public class AlbumScaleItemView01 extends BaseAlbumScaleItemView {
 
     @Override // com.anythink.basead.ui.animplayerview.scale.BaseAlbumScaleItemView, com.anythink.basead.ui.animplayerview.b
     public void start() {
-        if (this.f10577b == null) {
-            this.f10577b = new AnimatorSet();
-            ImageView imageView = this.f10551f;
+        if (this.f11363b == null) {
+            this.f11363b = new AnimatorSet();
+            ImageView imageView = this.f11337f;
             ObjectAnimator ofFloat = ObjectAnimator.ofFloat(imageView, "translationX", 0.0f, -imageView.getX());
-            ObjectAnimator ofFloat2 = ObjectAnimator.ofFloat(this.f10551f, "translationY", 0.0f, (float) (-Math.cos(r7.getY())));
-            ImageView imageView2 = this.f10552g;
+            ObjectAnimator ofFloat2 = ObjectAnimator.ofFloat(this.f11337f, "translationY", 0.0f, (float) (-Math.cos(r7.getY())));
+            ImageView imageView2 = this.f11338g;
             ObjectAnimator ofFloat3 = ObjectAnimator.ofFloat(imageView2, "translationX", 0.0f, -imageView2.getX());
-            ObjectAnimator ofFloat4 = ObjectAnimator.ofFloat(this.f10552g, "translationY", 0.0f, (float) Math.cos(r10.getY()));
-            ObjectAnimator ofFloat5 = ObjectAnimator.ofFloat(this.f10553h, "translationX", 0.0f, a() - this.f10553h.getX());
-            ObjectAnimator ofFloat6 = ObjectAnimator.ofFloat(this.f10553h, "translationY", 0.0f, -((float) Math.cos(r12.getY())));
+            ObjectAnimator ofFloat4 = ObjectAnimator.ofFloat(this.f11338g, "translationY", 0.0f, (float) Math.cos(r10.getY()));
+            ObjectAnimator ofFloat5 = ObjectAnimator.ofFloat(this.f11339h, "translationX", 0.0f, a() - this.f11339h.getX());
+            ObjectAnimator ofFloat6 = ObjectAnimator.ofFloat(this.f11339h, "translationY", 0.0f, -((float) Math.cos(r12.getY())));
             ObjectAnimator ofFloat7 = ObjectAnimator.ofFloat(this.i, "translationX", 0.0f, a() - this.i.getX());
             ObjectAnimator ofFloat8 = ObjectAnimator.ofFloat(this.i, "translationY", 0.0f, (float) Math.cos(b() - this.i.getY()));
             ObjectAnimator ofFloat9 = ObjectAnimator.ofFloat(this, "scaleX", 1.0f, 5.0f);
             ObjectAnimator ofFloat10 = ObjectAnimator.ofFloat(this, "scaleY", 1.0f, 5.0f);
-            this.f10577b.setDuration(2500L);
-            this.f10577b.setInterpolator(new AccelerateDecelerateInterpolator());
-            this.f10577b.playTogether(ofFloat9, ofFloat10, ofFloat, ofFloat2, ofFloat3, ofFloat4, ofFloat6, ofFloat5, ofFloat7, ofFloat8);
-            long j6 = this.f10580e;
+            this.f11363b.setDuration(2500L);
+            this.f11363b.setInterpolator(new AccelerateDecelerateInterpolator());
+            this.f11363b.playTogether(ofFloat9, ofFloat10, ofFloat, ofFloat2, ofFloat3, ofFloat4, ofFloat6, ofFloat5, ofFloat7, ofFloat8);
+            long j6 = this.f11366e;
             if (j6 > 0) {
-                this.f10577b.setStartDelay(j6);
+                this.f11363b.setStartDelay(j6);
             }
         }
-        this.f10577b.start();
+        this.f11363b.start();
     }
 
     public AlbumScaleItemView01(Context context, AttributeSet attributeSet) {

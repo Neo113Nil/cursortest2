@@ -4,13 +4,13 @@ package X7;
 public final class q {
 
     /* renamed from: a, reason: collision with root package name */
-    public final k f3857a;
+    public final k f3812a;
 
     public q(k kVar) {
-        this.f3857a = kVar;
+        this.f3812a = kVar;
     }
 
     public final String toString() {
-        return "Removed[" + this.f3857a + ']';
+        return "Removed[" + this.f3812a + ']';
     }
 }

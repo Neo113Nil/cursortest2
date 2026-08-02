@@ -21,59 +21,59 @@ import org.json.JSONObject;
 public final class n extends d {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19647a = "SameDiTool";
+    private static final String f20434a = "SameDiTool";
 
     /* renamed from: b, reason: collision with root package name */
-    private static int f19648b = -1;
+    private static int f20435b = -1;
 
     /* renamed from: c, reason: collision with root package name */
-    private static int f19649c = -1;
+    private static int f20436c = -1;
 
     /* renamed from: d, reason: collision with root package name */
-    private static int f19650d = -1;
+    private static int f20437d = -1;
 
     /* renamed from: e, reason: collision with root package name */
-    private static String f19651e = "";
+    private static String f20438e = "";
 
     /* renamed from: f, reason: collision with root package name */
-    private static String f19652f = "";
+    private static String f20439f = "";
 
     /* renamed from: g, reason: collision with root package name */
-    private static String f19653g = "";
+    private static String f20440g = "";
 
     /* renamed from: h, reason: collision with root package name */
-    private static String f19654h = "";
+    private static String f20441h = "";
     private static int i = 0;
 
     /* renamed from: j, reason: collision with root package name */
-    private static String f19655j = "";
+    private static String f20442j = "";
 
     /* renamed from: k, reason: collision with root package name */
-    private static String f19656k = "";
+    private static String f20443k = "";
 
     /* renamed from: l, reason: collision with root package name */
-    private static int f19657l = -1;
+    private static int f20444l = -1;
 
     /* renamed from: m, reason: collision with root package name */
-    private static String f19658m = "";
+    private static String f20445m = "";
 
     /* renamed from: n, reason: collision with root package name */
-    private static int f19659n = 0;
+    private static int f20446n = 0;
 
     /* renamed from: o, reason: collision with root package name */
-    private static String f19660o = "";
+    private static String f20447o = "";
 
     /* renamed from: p, reason: collision with root package name */
-    private static int f19661p;
+    private static int f20448p;
 
     /* renamed from: com.anythink.expressad.foundation.h.n$2, reason: invalid class name */
     public class AnonymousClass2 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ Context f19663a;
+        final /* synthetic */ Context f20450a;
 
         public AnonymousClass2(Context context) {
-            this.f19663a = context;
+            this.f20450a = context;
         }
 
         @Override // java.lang.Runnable
@@ -85,28 +85,28 @@ public final class n extends d {
                     return;
                 }
                 try {
-                    if (com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b() && (context = this.f19663a) != null && (connectivityManager = (ConnectivityManager) context.getSystemService("connectivity")) != null) {
+                    if (com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b() && (context = this.f20450a) != null && (connectivityManager = (ConnectivityManager) context.getSystemService("connectivity")) != null) {
                         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
                         if (activeNetworkInfo == null) {
-                            int unused = n.f19650d = 0;
+                            int unused = n.f20437d = 0;
                             return;
                         }
                         if (activeNetworkInfo.getType() == 1) {
-                            int unused2 = n.f19650d = 9;
+                            int unused2 = n.f20437d = 9;
                             return;
                         }
-                        TelephonyManager telephonyManager = (TelephonyManager) this.f19663a.getSystemService("phone");
+                        TelephonyManager telephonyManager = (TelephonyManager) this.f20450a.getSystemService("phone");
                         if (telephonyManager == null) {
-                            int unused3 = n.f19650d = 0;
+                            int unused3 = n.f20437d = 0;
                         } else {
-                            int unused4 = n.f19650d = n.a(telephonyManager.getNetworkType());
+                            int unused4 = n.f20437d = n.a(telephonyManager.getNetworkType());
                         }
                     }
                 } catch (Exception unused5) {
                 }
             } catch (Throwable th) {
                 th.getMessage();
-                int unused6 = n.f19650d = 0;
+                int unused6 = n.f20437d = 0;
             }
         }
     }
@@ -114,11 +114,11 @@ public final class n extends d {
     private n() {
     }
 
-    public static int a(int i6) {
-        if (i6 == 20) {
+    public static int a(int i4) {
+        if (i4 == 20) {
             return 5;
         }
-        switch (i6) {
+        switch (i4) {
             case 1:
             case 2:
             case 4:
@@ -151,14 +151,14 @@ public final class n extends d {
         if (context == null) {
             return i;
         }
-        int i6 = i;
-        if (i6 != 0) {
-            return i6;
+        int i4 = i;
+        if (i4 != 0) {
+            return i4;
         }
         try {
-            int i9 = com.anythink.core.common.v.m.B(context).versionCode;
-            i = i9;
-            return i9;
+            int i6 = com.anythink.core.common.v.m.B(context).versionCode;
+            i = i6;
+            return i6;
         } catch (Exception e9) {
             e9.printStackTrace();
             return -1;
@@ -167,14 +167,14 @@ public final class n extends d {
 
     public static String e(Context context) {
         if (context == null) {
-            return f19654h;
+            return f20441h;
         }
         try {
-            if (!TextUtils.isEmpty(f19654h)) {
-                return f19654h;
+            if (!TextUtils.isEmpty(f20441h)) {
+                return f20441h;
             }
             String str = com.anythink.core.common.v.m.B(context).versionName;
-            f19654h = str;
+            f20441h = str;
             return str;
         } catch (Exception e9) {
             e9.printStackTrace();
@@ -192,8 +192,8 @@ public final class n extends d {
             }
             try {
                 DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
-                HashMap h9 = h(context);
-                return h9.get("width") == null ? displayMetrics.widthPixels : ((Integer) h9.get("width")).intValue();
+                HashMap h3 = h(context);
+                return h3.get("width") == null ? displayMetrics.widthPixels : ((Integer) h3.get("width")).intValue();
             } catch (Exception e9) {
                 e9.printStackTrace();
                 return 0;
@@ -212,8 +212,8 @@ public final class n extends d {
             }
             try {
                 DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
-                HashMap h9 = h(context);
-                return h9.get("height") == null ? displayMetrics.heightPixels : ((Integer) h9.get("height")).intValue();
+                HashMap h3 = h(context);
+                return h3.get("height") == null ? displayMetrics.heightPixels : ((Integer) h3.get("height")).intValue();
             } catch (Exception e9) {
                 e9.printStackTrace();
                 return 0;
@@ -241,14 +241,14 @@ public final class n extends d {
 
     public static String i(Context context) {
         if (context == null) {
-            return f19653g;
+            return f20440g;
         }
         try {
-            if (!TextUtils.isEmpty(f19653g)) {
-                return f19653g;
+            if (!TextUtils.isEmpty(f20440g)) {
+                return f20440g;
             }
             String str = com.anythink.core.common.v.m.B(context).packageName;
-            f19653g = str;
+            f20440g = str;
             return str;
         } catch (Exception e9) {
             e9.printStackTrace();
@@ -275,16 +275,16 @@ public final class n extends d {
 
     private static int l(Context context) {
         if (context == null) {
-            return f19659n;
+            return f20446n;
         }
-        if (f19659n == 0) {
+        if (f20446n == 0) {
             try {
-                f19659n = context.getApplicationInfo().targetSdkVersion;
+                f20446n = context.getApplicationInfo().targetSdkVersion;
             } catch (Exception e9) {
                 e9.getMessage();
             }
         }
-        return f19659n;
+        return f20446n;
     }
 
     private static void m(Context context) {
@@ -318,11 +318,11 @@ public final class n extends d {
     }
 
     private static long p() {
-        Context g4 = com.anythink.core.common.d.t.b().g();
-        if (g4 == null) {
+        Context g9 = com.anythink.core.common.d.t.b().g();
+        if (g9 == null) {
             return 0L;
         }
-        ActivityManager activityManager = (ActivityManager) g4.getSystemService("activity");
+        ActivityManager activityManager = (ActivityManager) g9.getSystemService("activity");
         ActivityManager.MemoryInfo memoryInfo = new ActivityManager.MemoryInfo();
         activityManager.getMemoryInfo(memoryInfo);
         return memoryInfo.availMem;
@@ -340,9 +340,9 @@ public final class n extends d {
         return !com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b() ? "" : Build.CPU_ABI2;
     }
 
-    public static String a(Context context, int i6) {
+    public static String a(Context context, int i4) {
         TelephonyManager telephonyManager;
-        if (i6 != 0 && i6 != 9) {
+        if (i4 != 0 && i4 != 9) {
             try {
                 return (!com.anythink.expressad.foundation.g.a.ca || (telephonyManager = (TelephonyManager) context.getSystemService("phone")) == null) ? "" : String.valueOf(telephonyManager.getNetworkType());
             } catch (Throwable th) {
@@ -353,42 +353,42 @@ public final class n extends d {
     }
 
     public static int b() {
-        Context g4;
+        Context g9;
         try {
-            g4 = com.anythink.core.common.d.t.b().g();
+            g9 = com.anythink.core.common.d.t.b().g();
         } catch (Throwable th) {
             th.getMessage();
-            f19650d = 0;
+            f20437d = 0;
             return 0;
         }
         if (com.anythink.core.common.d.t.b().c("network_type")) {
-            return f19650d;
+            return f20437d;
         }
         try {
             if (!com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b()) {
-                return f19650d;
+                return f20437d;
             }
-            if (g4 == null) {
-                return f19650d;
+            if (g9 == null) {
+                return f20437d;
             }
-            if (f19650d == -1) {
-                f19650d = 0;
+            if (f20437d == -1) {
+                f20437d = 0;
                 return 0;
             }
             try {
-                AnonymousClass2 anonymousClass2 = new AnonymousClass2(g4);
+                AnonymousClass2 anonymousClass2 = new AnonymousClass2(g9);
                 if (com.anythink.expressad.foundation.g.i.a.b().getActiveCount() <= 0) {
                     com.anythink.expressad.foundation.g.i.a.b().execute(anonymousClass2);
                 }
             } catch (Throwable th2) {
                 th2.getMessage();
             }
-            return f19650d;
+            return f20437d;
         } catch (Exception unused) {
-            return f19650d;
+            return f20437d;
         }
         th.getMessage();
-        f19650d = 0;
+        f20437d = 0;
         return 0;
     }
 
@@ -426,7 +426,7 @@ public final class n extends d {
     }
 
     private static int m() {
-        return f19657l;
+        return f20444l;
     }
 
     public static String d() {
@@ -437,10 +437,10 @@ public final class n extends d {
             if (!com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b()) {
                 return "";
             }
-            if (TextUtils.isEmpty(f19652f)) {
-                f19652f = String.valueOf(e());
+            if (TextUtils.isEmpty(f20439f)) {
+                f20439f = String.valueOf(e());
             }
-            return f19652f;
+            return f20439f;
         } catch (Exception unused) {
             return "";
         }
@@ -456,18 +456,18 @@ public final class n extends d {
     }
 
     public static String f() {
-        Context g4;
+        Context g9;
         long a9;
         long n9;
         String str;
         String str2;
         String str3 = "";
         try {
-            g4 = com.anythink.core.common.d.t.b().g();
+            g9 = com.anythink.core.common.d.t.b().g();
             a9 = m.a();
             n9 = n();
             str = "app_tki_" + a9 + "_" + n9 + "_";
-            str2 = (String) x.b(g4, str, "");
+            str2 = (String) x.b(g9, str, "");
             try {
             } catch (Exception e9) {
                 e = e9;
@@ -492,7 +492,7 @@ public final class n extends d {
             e11.printStackTrace();
         }
         str3 = a.a(jSONObject.toString());
-        x.a(g4, str, str3);
+        x.a(g9, str, str3);
         return str3;
     }
 
@@ -500,20 +500,20 @@ public final class n extends d {
         if (!com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b()) {
             return 0;
         }
-        if (f19648b <= 0) {
+        if (f20435b <= 0) {
             try {
-                Context g4 = com.anythink.core.common.d.t.b().g();
-                long longValue = ((Long) x.b(g4, "TotalRamSize", 0L)).longValue();
+                Context g9 = com.anythink.core.common.d.t.b().g();
+                long longValue = ((Long) x.b(g9, "TotalRamSize", 0L)).longValue();
                 long currentTimeMillis = System.currentTimeMillis();
-                if (currentTimeMillis - longValue > 1800000 || f19648b == -1) {
-                    f19648b = Long.valueOf((n() / 1000) / 1000).intValue();
-                    x.a(g4, "TotalRamSize", Long.valueOf(currentTimeMillis));
+                if (currentTimeMillis - longValue > 1800000 || f20435b == -1) {
+                    f20435b = Long.valueOf((n() / 1000) / 1000).intValue();
+                    x.a(g9, "TotalRamSize", Long.valueOf(currentTimeMillis));
                 }
             } catch (Throwable th) {
                 th.getMessage();
             }
         }
-        return f19648b;
+        return f20435b;
     }
 
     private static String a(String str, Context context) {
@@ -521,13 +521,13 @@ public final class n extends d {
         } catch (Exception e9) {
             e9.getMessage();
         }
-        if (!TextUtils.isEmpty(f19658m)) {
-            return f19658m;
+        if (!TextUtils.isEmpty(f20445m)) {
+            return f20445m;
         }
         if (!TextUtils.isEmpty(str) && context != null) {
-            f19658m = context.getPackageManager().getInstallerPackageName(str);
+            f20445m = context.getPackageManager().getInstallerPackageName(str);
         }
-        return f19658m;
+        return f20445m;
     }
 
     public static int e() {
@@ -541,33 +541,33 @@ public final class n extends d {
 
     public static String i() {
         String obj;
-        if (TextUtils.isEmpty(f19660o)) {
+        if (TextUtils.isEmpty(f20447o)) {
             if (!com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b()) {
                 obj = "";
             } else {
                 obj = Arrays.asList(Build.SUPPORTED_ABIS).toString();
             }
-            f19660o = obj;
+            f20447o = obj;
         }
-        return f19660o;
+        return f20447o;
     }
 
     public static int k() {
         try {
             if (!TextUtils.equals("1", com.anythink.core.common.v.m.w(com.anythink.core.common.d.t.b().g()))) {
                 if (TextUtils.equals("1", com.anythink.core.common.v.m.v(com.anythink.core.common.d.t.b().g()))) {
-                    f19661p = 2;
+                    f20448p = 2;
                 } else {
-                    f19661p = 0;
+                    f20448p = 0;
                 }
             } else {
-                f19661p = 1;
+                f20448p = 1;
             }
         } catch (Exception e9) {
-            f19661p = 0;
+            f20448p = 0;
             e9.getMessage();
         }
-        return f19661p;
+        return f20448p;
     }
 
     public static int h() {
@@ -578,30 +578,30 @@ public final class n extends d {
         if (!com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b()) {
             return 0;
         }
-        Context g4 = com.anythink.core.common.d.t.b().g();
+        Context g9 = com.anythink.core.common.d.t.b().g();
         long j6 = 0;
-        long longValue = ((Long) x.b(g4, "FreeRamSize", 0L)).longValue();
+        long longValue = ((Long) x.b(g9, "FreeRamSize", 0L)).longValue();
         long currentTimeMillis = System.currentTimeMillis();
-        if (currentTimeMillis - longValue > 1800000 || f19649c == -1) {
-            Context g9 = com.anythink.core.common.d.t.b().g();
-            if (g9 != null) {
-                ActivityManager activityManager = (ActivityManager) g9.getSystemService("activity");
+        if (currentTimeMillis - longValue > 1800000 || f20436c == -1) {
+            Context g10 = com.anythink.core.common.d.t.b().g();
+            if (g10 != null) {
+                ActivityManager activityManager = (ActivityManager) g10.getSystemService("activity");
                 ActivityManager.MemoryInfo memoryInfo = new ActivityManager.MemoryInfo();
                 activityManager.getMemoryInfo(memoryInfo);
                 j6 = memoryInfo.availMem;
             }
-            f19649c = Long.valueOf((j6 / 1000) / 1000).intValue();
-            x.a(g4, "FreeRamSize", Long.valueOf(currentTimeMillis));
+            f20436c = Long.valueOf((j6 / 1000) / 1000).intValue();
+            x.a(g9, "FreeRamSize", Long.valueOf(currentTimeMillis));
         }
-        return f19649c;
+        return f20436c;
     }
 
     private static long n() {
-        Context g4 = com.anythink.core.common.d.t.b().g();
-        if (g4 == null) {
+        Context g9 = com.anythink.core.common.d.t.b().g();
+        if (g9 == null) {
             return 0L;
         }
-        ActivityManager activityManager = (ActivityManager) g4.getSystemService("activity");
+        ActivityManager activityManager = (ActivityManager) g9.getSystemService("activity");
         ActivityManager.MemoryInfo memoryInfo = new ActivityManager.MemoryInfo();
         activityManager.getMemoryInfo(memoryInfo);
         return memoryInfo.totalMem;

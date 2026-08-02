@@ -59,11 +59,11 @@ public class AdViewConstructorParams {
         this.mDefStyleRes = 0;
     }
 
-    public AdViewConstructorParams(Context context, AttributeSet attributeSet, int i, int i6) {
+    public AdViewConstructorParams(Context context, AttributeSet attributeSet, int i, int i4) {
         this.mInitializationType = 3;
         this.mContext = context;
         this.mAttributeSet = attributeSet;
         this.mDefStyleAttr = i;
-        this.mDefStyleRes = i6;
+        this.mDefStyleRes = i4;
     }
 }

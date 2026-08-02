@@ -9,12 +9,12 @@ public final class g {
     private final boolean optedIn;
     private final String token;
 
-    public g(String id, String token, boolean z3) {
+    public g(String id, String token, boolean z6) {
         h.e(id, "id");
         h.e(token, "token");
         this.id = id;
         this.token = token;
-        this.optedIn = z3;
+        this.optedIn = z6;
     }
 
     public final String getId() {

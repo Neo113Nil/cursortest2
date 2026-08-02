@@ -33,8 +33,8 @@ public class AdOptionsView extends AdComponentFrameLayout {
         this.mAdOptionsViewApi.setOnAdClosedListener(adClosedListener);
     }
 
-    public void setSingleIcon(boolean z3) {
-        this.mAdOptionsViewApi.setSingleIcon(z3);
+    public void setSingleIcon(boolean z6) {
+        this.mAdOptionsViewApi.setSingleIcon(z6);
     }
 
     public AdOptionsView(Context context, NativeAdBase nativeAdBase, NativeAdLayout nativeAdLayout, Orientation orientation, int i) {

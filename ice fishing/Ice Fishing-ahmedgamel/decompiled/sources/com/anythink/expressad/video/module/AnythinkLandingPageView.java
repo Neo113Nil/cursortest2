@@ -38,7 +38,7 @@ public class AnythinkLandingPageView extends AnythinkH5EndCardView {
 
     @Override // com.anythink.expressad.video.module.AnythinkH5EndCardView
     public final String a() {
-        d dVar = this.f21442b;
+        d dVar = this.f22229b;
         if (dVar != null) {
             return dVar.af();
         }
@@ -53,8 +53,8 @@ public class AnythinkLandingPageView extends AnythinkH5EndCardView {
     @Override // com.anythink.expressad.video.module.AnythinkH5EndCardView, com.anythink.expressad.video.signal.f
     public void preLoadData(b bVar) {
         byte b9 = 0;
-        if (this.f21446f) {
-            this.f21539s.setFilter(new a(b9));
+        if (this.f22233f) {
+            this.f22326s.setFilter(new a(b9));
         }
         super.preLoadData(bVar);
         setVisibility(0);
@@ -65,7 +65,7 @@ public class AnythinkLandingPageView extends AnythinkH5EndCardView {
     public void webviewshow() {
         try {
             h.a();
-            com.anythink.core.express.d.a.a((WebView) this.f21539s, "webviewshow", "");
+            com.anythink.core.express.d.a.a((WebView) this.f22326s, "webviewshow", "");
         } catch (Exception e9) {
             e9.printStackTrace();
         }

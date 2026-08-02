@@ -7,7 +7,7 @@ import java.util.List;
 public final class B1 {
     public static String[] A00 = {"XFGs1lyyeZSUQVmeVGOQgjZdx0Lg5SQ7", "gIr6pD0DRCuLw9pu", "xFdIOEguE42sAuXi", "sWe2SXgfKDUPeP6q9qV3qPenQfS3yrFL", "xArwsOhMvePeNXFYJk80LlCaAczGuKur", "d6DKz523SxuOwdk6", "C714aw4WOKSmleIF7c9CmjeVatfjbSsR", "QY3y3Mpjcqc9dDZ4GPBIzJJwsqI"};
 
-    public static int A00(MediaCodecInfo.VideoCapabilities videoCapabilities, int i, int i6, double d2) {
+    public static int A00(MediaCodecInfo.VideoCapabilities videoCapabilities, int i, int i4, double d9) {
         boolean A07;
         List<MediaCodecInfo.VideoCapabilities.PerformancePoint> supportedPerformancePoints = videoCapabilities.getSupportedPerformancePoints();
         if (supportedPerformancePoints == null || supportedPerformancePoints.isEmpty()) {
@@ -17,9 +17,9 @@ public final class B1 {
         if (A07) {
             return 0;
         }
-        MediaCodecInfo.VideoCapabilities.PerformancePoint performancePoint = new MediaCodecInfo.VideoCapabilities.PerformancePoint(i, i6, (int) d2);
-        for (int i9 = 0; i9 < supportedPerformancePoints.size(); i9++) {
-            if (supportedPerformancePoints.get(i9).covers(performancePoint)) {
+        MediaCodecInfo.VideoCapabilities.PerformancePoint performancePoint = new MediaCodecInfo.VideoCapabilities.PerformancePoint(i, i4, (int) d9);
+        for (int i6 = 0; i6 < supportedPerformancePoints.size(); i6++) {
+            if (supportedPerformancePoints.get(i6).covers(performancePoint)) {
                 return 2;
             }
         }

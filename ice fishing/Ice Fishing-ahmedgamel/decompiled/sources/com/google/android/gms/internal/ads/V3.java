@@ -6,57 +6,57 @@ import java.util.Set;
 public final class V3 {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f28079a;
+    public String f28876a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f28080b;
+    public String f28877b;
 
     /* renamed from: c, reason: collision with root package name */
-    public Set f28081c;
+    public Set f28878c;
 
     /* renamed from: d, reason: collision with root package name */
-    public String f28082d;
+    public String f28879d;
 
     /* renamed from: e, reason: collision with root package name */
-    public String f28083e;
+    public String f28880e;
 
     /* renamed from: f, reason: collision with root package name */
-    public int f28084f;
+    public int f28881f;
 
     /* renamed from: g, reason: collision with root package name */
-    public boolean f28085g;
+    public boolean f28882g;
 
     /* renamed from: h, reason: collision with root package name */
-    public int f28086h;
+    public int f28883h;
     public boolean i;
 
     /* renamed from: j, reason: collision with root package name */
-    public int f28087j;
+    public int f28884j;
 
     /* renamed from: k, reason: collision with root package name */
-    public int f28088k;
+    public int f28885k;
 
     /* renamed from: l, reason: collision with root package name */
-    public int f28089l;
+    public int f28886l;
 
     /* renamed from: m, reason: collision with root package name */
-    public int f28090m;
+    public int f28887m;
 
     /* renamed from: n, reason: collision with root package name */
-    public float f28091n;
+    public float f28888n;
 
     /* renamed from: o, reason: collision with root package name */
-    public int f28092o;
+    public int f28889o;
 
     /* renamed from: p, reason: collision with root package name */
-    public boolean f28093p;
+    public boolean f28890p;
 
-    public static int a(int i, int i6, String str, String str2) {
+    public static int a(int i, int i4, String str, String str2) {
         if (str.isEmpty() || i == -1) {
             return i;
         }
         if (str.equals(str2)) {
-            return i + i6;
+            return i + i4;
         }
         return -1;
     }

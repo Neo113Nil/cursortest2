@@ -20,10 +20,10 @@ import org.json.JSONObject;
 public class BaseRewardJsH5 implements IRewardBridge {
 
     /* renamed from: a, reason: collision with root package name */
-    protected static final String f21843a = "JS-Reward-Brigde";
+    protected static final String f22630a = "JS-Reward-Brigde";
 
     /* renamed from: b, reason: collision with root package name */
-    protected IJSFactory f21844b;
+    protected IJSFactory f22631b;
 
     private static String a(int i) {
         try {
@@ -50,7 +50,7 @@ public class BaseRewardJsH5 implements IRewardBridge {
                 int i = v.a(t.b().g(), optString) ? 1 : 2;
                 try {
                     JSONObject jSONObject = new JSONObject();
-                    jSONObject.put("code", CommonJSBridgeImpUtils.f17949b);
+                    jSONObject.put("code", CommonJSBridgeImpUtils.f18736b);
                     JSONObject jSONObject2 = new JSONObject();
                     jSONObject2.put("result", i);
                     jSONObject.put("data", jSONObject2);
@@ -70,7 +70,7 @@ public class BaseRewardJsH5 implements IRewardBridge {
     @Override // com.anythink.expressad.video.signal.communication.IRewardBridge
     public void getEndScreenInfo(Object obj, String str) {
         try {
-            IJSFactory iJSFactory = this.f21844b;
+            IJSFactory iJSFactory = this.f22631b;
             if (iJSFactory != null) {
                 String a9 = iJSFactory.getIJSRewardVideoV1().a();
                 h.a().a(obj, !TextUtils.isEmpty(a9) ? Base64.encodeToString(a9.getBytes(), 2) : "");
@@ -83,7 +83,7 @@ public class BaseRewardJsH5 implements IRewardBridge {
     public void gial(Object obj, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", CommonJSBridgeImpUtils.f17949b);
+            jSONObject.put("code", CommonJSBridgeImpUtils.f18736b);
             JSONObject jSONObject2 = new JSONObject();
             jSONObject2.put("packageNameList", "[]");
             jSONObject.put("data", jSONObject2);
@@ -100,10 +100,10 @@ public class BaseRewardJsH5 implements IRewardBridge {
     @Override // com.anythink.expressad.video.signal.communication.IRewardBridge
     public void handlerPlayableException(Object obj, String str) {
         try {
-            if (this.f21844b == null || TextUtils.isEmpty(str)) {
+            if (this.f22631b == null || TextUtils.isEmpty(str)) {
                 return;
             }
-            this.f21844b.getIJSRewardVideoV1().handlerPlayableException(new JSONObject(str).optString(a.f19093q));
+            this.f22631b.getIJSRewardVideoV1().handlerPlayableException(new JSONObject(str).optString(a.f19880q));
         } catch (Throwable unused) {
         }
     }
@@ -111,7 +111,7 @@ public class BaseRewardJsH5 implements IRewardBridge {
     /* JADX WARN: Multi-variable type inference failed */
     public void initialize(Context context, WindVaneWebView windVaneWebView) {
         if (context instanceof IJSFactory) {
-            this.f21844b = (IJSFactory) context;
+            this.f22631b = (IJSFactory) context;
         }
     }
 
@@ -120,17 +120,17 @@ public class BaseRewardJsH5 implements IRewardBridge {
         j jVar;
         Context context;
         try {
-            if (this.f21844b != null) {
+            if (this.f22631b != null) {
                 if (obj != null) {
                     b bVar = (b) obj;
-                    if ((bVar.f18062a.getObject() instanceof j) && (jVar = (j) bVar.f18062a.getObject()) != null && (context = bVar.f18062a.getContext()) != null && context != context.getApplicationContext()) {
+                    if ((bVar.f18849a.getObject() instanceof j) && (jVar = (j) bVar.f18849a.getObject()) != null && (context = bVar.f18849a.getContext()) != null && context != context.getApplicationContext()) {
                         jVar.a(context);
                     }
                 }
-                if (this.f21844b.getJSContainerModule().endCardShowing()) {
-                    this.f21844b.getJSCommon().click(3, str);
+                if (this.f22631b.getJSContainerModule().endCardShowing()) {
+                    this.f22631b.getJSCommon().click(3, str);
                 } else {
-                    this.f21844b.getJSCommon().click(1, str);
+                    this.f22631b.getJSCommon().click(1, str);
                 }
             }
         } catch (Throwable unused) {
@@ -140,10 +140,10 @@ public class BaseRewardJsH5 implements IRewardBridge {
     @Override // com.anythink.expressad.video.signal.communication.IRewardBridge
     public void notifyCloseBtn(Object obj, String str) {
         try {
-            if (this.f21844b == null || TextUtils.isEmpty(str)) {
+            if (this.f22631b == null || TextUtils.isEmpty(str)) {
                 return;
             }
-            this.f21844b.getIJSRewardVideoV1().notifyCloseBtn(new JSONObject(str).optInt(com.anythink.core.express.b.a.f17526b));
+            this.f22631b.getIJSRewardVideoV1().notifyCloseBtn(new JSONObject(str).optInt(com.anythink.core.express.b.a.f18313b));
         } catch (Throwable unused) {
         }
     }
@@ -151,20 +151,20 @@ public class BaseRewardJsH5 implements IRewardBridge {
     @Override // com.anythink.expressad.video.signal.communication.IRewardBridge
     public void openURL(Object obj, String str) {
         WindVaneWebView windVaneWebView;
-        Context g4 = t.b().g();
+        Context g9 = t.b().g();
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        if (g4 == null) {
+        if (g9 == null) {
             try {
-                if ((obj instanceof b) && (windVaneWebView = ((b) obj).f18062a) != null) {
-                    g4 = windVaneWebView.getContext();
+                if ((obj instanceof b) && (windVaneWebView = ((b) obj).f18849a) != null) {
+                    g9 = windVaneWebView.getContext();
                 }
             } catch (Exception e9) {
                 e9.getMessage();
             }
         }
-        if (g4 == null) {
+        if (g9 == null) {
             return;
         }
         try {
@@ -174,7 +174,7 @@ public class BaseRewardJsH5 implements IRewardBridge {
             if (optInt == 1) {
                 y.a(optString);
             } else if (optInt == 2) {
-                y.a(g4, optString);
+                y.a(g9, optString);
             }
         } catch (JSONException e10) {
             e10.getMessage();
@@ -186,10 +186,10 @@ public class BaseRewardJsH5 implements IRewardBridge {
     @Override // com.anythink.expressad.video.signal.communication.IRewardBridge
     public void setOrientation(Object obj, String str) {
         try {
-            if (this.f21844b == null || TextUtils.isEmpty(str)) {
+            if (this.f22631b == null || TextUtils.isEmpty(str)) {
                 return;
             }
-            this.f21844b.getIJSRewardVideoV1().b(new JSONObject(str).optString(com.anythink.core.express.b.a.f17526b));
+            this.f22631b.getIJSRewardVideoV1().b(new JSONObject(str).optString(com.anythink.core.express.b.a.f18313b));
         } catch (Throwable unused) {
         }
     }
@@ -197,10 +197,10 @@ public class BaseRewardJsH5 implements IRewardBridge {
     @Override // com.anythink.expressad.video.signal.communication.IRewardBridge
     public void toggleCloseBtn(Object obj, String str) {
         try {
-            if (this.f21844b == null || TextUtils.isEmpty(str)) {
+            if (this.f22631b == null || TextUtils.isEmpty(str)) {
                 return;
             }
-            this.f21844b.getIJSRewardVideoV1().toggleCloseBtn(new JSONObject(str).optInt(com.anythink.core.express.b.a.f17526b));
+            this.f22631b.getIJSRewardVideoV1().toggleCloseBtn(new JSONObject(str).optInt(com.anythink.core.express.b.a.f18313b));
         } catch (Throwable unused) {
         }
     }
@@ -208,11 +208,11 @@ public class BaseRewardJsH5 implements IRewardBridge {
     @Override // com.anythink.expressad.video.signal.communication.IRewardBridge
     public void triggerCloseBtn(Object obj, String str) {
         try {
-            if (this.f21844b == null || TextUtils.isEmpty(str)) {
+            if (this.f22631b == null || TextUtils.isEmpty(str)) {
                 return;
             }
             h.a().a(obj, a(0));
-            this.f21844b.getIJSRewardVideoV1().a(new JSONObject(str).optString(com.anythink.core.express.b.a.f17526b));
+            this.f22631b.getIJSRewardVideoV1().a(new JSONObject(str).optString(com.anythink.core.express.b.a.f18313b));
         } catch (Throwable unused) {
             h.a().a(obj, a(-1));
         }
@@ -220,7 +220,7 @@ public class BaseRewardJsH5 implements IRewardBridge {
 
     public void initialize(Object obj, WindVaneWebView windVaneWebView) {
         if (obj instanceof IJSFactory) {
-            this.f21844b = (IJSFactory) obj;
+            this.f22631b = (IJSFactory) obj;
         }
     }
 }

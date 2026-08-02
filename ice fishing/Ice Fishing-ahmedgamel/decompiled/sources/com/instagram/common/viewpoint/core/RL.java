@@ -7,7 +7,7 @@ import javax.annotation.Nullable;
 public abstract class RL {
     public static String[] A00 = {"X094Ff6hX91n4UOeNZ5q6xBODyRF", "3SZuvdCuB3BE6lfK5qku2XxobaMEdUie", "GC5CoEiK4nrbG2wHW0FtwppW4DiO", "wga3z1tjiA3hov6SpIvZwMukezgQNZlv", "3xUgR2JHsSdawQ9thG1dfHrpvR", "GYcoMrIBN4ZdBxcuGgG7c5lcAAiSjlKe", "4bECUaOSHZBdJ", ""};
 
-    public static int A00(@Nullable RH rh, @Nullable AbstractC1184Qm abstractC1184Qm, View view, View view2, R2 r22, boolean z3) {
+    public static int A00(@Nullable RH rh, @Nullable AbstractC1204Qm abstractC1204Qm, View view, View view2, R2 r22, boolean z6) {
         if (r22.A0Y() != 0) {
             int A03 = rh.A03();
             if (A00[0].length() != 28) {
@@ -19,24 +19,24 @@ public abstract class RL {
             if (A03 == 0 || view == null || view2 == null) {
                 return 0;
             }
-            if (!z3) {
+            if (!z6) {
                 return Math.abs(r22.A0r(view) - r22.A0r(view2)) + 1;
             }
-            int A0C = abstractC1184Qm.A0C(view2) - abstractC1184Qm.A0F(view);
-            int extend = abstractC1184Qm.A0B();
+            int A0C = abstractC1204Qm.A0C(view2) - abstractC1204Qm.A0F(view);
+            int extend = abstractC1204Qm.A0B();
             return Math.min(extend, A0C);
         }
         return 0;
     }
 
-    public static int A01(@Nullable RH rh, @Nullable AbstractC1184Qm abstractC1184Qm, View view, View view2, R2 r22, boolean z3) {
+    public static int A01(@Nullable RH rh, @Nullable AbstractC1204Qm abstractC1204Qm, View view, View view2, R2 r22, boolean z6) {
         if (r22.A0Y() == 0 || rh.A03() == 0 || view == null || view2 == null) {
             return 0;
         }
-        if (!z3) {
+        if (!z6) {
             return rh.A03();
         }
-        int A0C = abstractC1184Qm.A0C(view2) - abstractC1184Qm.A0F(view);
+        int A0C = abstractC1204Qm.A0C(view2) - abstractC1204Qm.A0F(view);
         int A0r = r22.A0r(view);
         int laidOutArea = r22.A0r(view2);
         float abs = A0C / (Math.abs(A0r - laidOutArea) + 1);
@@ -44,7 +44,7 @@ public abstract class RL {
         return (int) (abs * laidOutArea2);
     }
 
-    public static int A02(@Nullable RH rh, @Nullable AbstractC1184Qm abstractC1184Qm, View view, View view2, R2 r22, boolean z3, boolean z6) {
+    public static int A02(@Nullable RH rh, @Nullable AbstractC1204Qm abstractC1204Qm, View view, View view2, R2 r22, boolean z6, boolean z9) {
         int laidOutArea;
         if (r22.A0Y() == 0 || rh.A03() == 0 || view == null || view2 == null) {
             return 0;
@@ -53,23 +53,23 @@ public abstract class RL {
         int A0r = r22.A0r(view);
         int minPosition = r22.A0r(view2);
         int max = Math.max(A0r, minPosition);
-        if (z6) {
+        if (z9) {
             int minPosition2 = rh.A03();
             laidOutArea = Math.max(0, (minPosition2 - max) - 1);
         } else {
             laidOutArea = Math.max(0, maxPosition);
         }
-        if (!z3) {
+        if (!z6) {
             return laidOutArea;
         }
-        int itemsBefore = abstractC1184Qm.A0C(view2);
-        int minPosition3 = abstractC1184Qm.A0F(view);
+        int itemsBefore = abstractC1204Qm.A0C(view2);
+        int minPosition3 = abstractC1204Qm.A0F(view);
         int maxPosition2 = Math.abs(itemsBefore - minPosition3);
         int itemsBefore2 = r22.A0r(view);
         int minPosition4 = r22.A0r(view2);
         float abs = laidOutArea * (maxPosition2 / (Math.abs(itemsBefore2 - minPosition4) + 1));
-        int itemsBefore3 = abstractC1184Qm.A0A();
-        int minPosition5 = abstractC1184Qm.A0F(view);
+        int itemsBefore3 = abstractC1204Qm.A0A();
+        int minPosition5 = abstractC1204Qm.A0F(view);
         return Math.round(abs + (itemsBefore3 - minPosition5));
     }
 }

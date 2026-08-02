@@ -5,23 +5,23 @@ import com.anythink.expressad.video.module.a.a;
 import com.facebook.ads.androidx.media3.extractor.DefaultExtractorsFactory;
 import com.facebook.ads.androidx.media3.extractor.mkv.MatroskaExtractor;
 import com.facebook.video.heroplayer.exocustom.MetaExoPlayerCustomization;
-import com.instagram.common.viewpoint.core.AbstractC05862k;
+import com.instagram.common.viewpoint.core.AbstractC06062k;
 import com.instagram.common.viewpoint.core.AnonymousClass53;
-import com.instagram.common.viewpoint.core.C2086kz;
-import com.instagram.common.viewpoint.core.C2090l3;
-import com.instagram.common.viewpoint.core.C2097lA;
-import com.instagram.common.viewpoint.core.C2112lP;
-import com.instagram.common.viewpoint.core.C2114lR;
-import com.instagram.common.viewpoint.core.C2117lU;
-import com.instagram.common.viewpoint.core.C2120lX;
-import com.instagram.common.viewpoint.core.C2145lw;
-import com.instagram.common.viewpoint.core.C2151m2;
-import com.instagram.common.viewpoint.core.C2152m3;
-import com.instagram.common.viewpoint.core.C2165mG;
-import com.instagram.common.viewpoint.core.C2176md;
-import com.instagram.common.viewpoint.core.C2179mg;
-import com.instagram.common.viewpoint.core.C2184ml;
-import com.instagram.common.viewpoint.core.C2400qI;
+import com.instagram.common.viewpoint.core.C2106kz;
+import com.instagram.common.viewpoint.core.C2110l3;
+import com.instagram.common.viewpoint.core.C2117lA;
+import com.instagram.common.viewpoint.core.C2132lP;
+import com.instagram.common.viewpoint.core.C2134lR;
+import com.instagram.common.viewpoint.core.C2137lU;
+import com.instagram.common.viewpoint.core.C2140lX;
+import com.instagram.common.viewpoint.core.C2165lw;
+import com.instagram.common.viewpoint.core.C2171m2;
+import com.instagram.common.viewpoint.core.C2172m3;
+import com.instagram.common.viewpoint.core.C2185mG;
+import com.instagram.common.viewpoint.core.C2196md;
+import com.instagram.common.viewpoint.core.C2199mg;
+import com.instagram.common.viewpoint.core.C2204ml;
+import com.instagram.common.viewpoint.core.C2420qI;
 import com.instagram.common.viewpoint.core.H4;
 import com.instagram.common.viewpoint.core.H5;
 import com.instagram.common.viewpoint.core.H9;
@@ -54,14 +54,14 @@ public final class DefaultExtractorsFactory implements HD {
     public int A09 = 112800;
 
     @MetaExoPlayerCustomization("Replaces ImmutableList with List")
-    public List<C2400qI> A0A = MetaExoPlayerCustomizedCollections.A03(new C2400qI[0]);
+    public List<C2420qI> A0A = MetaExoPlayerCustomizedCollections.A03(new C2420qI[0]);
     public boolean A0B;
     public boolean A0C;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0D, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 122);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0D, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 122);
         }
         return new String(copyOfRange);
     }
@@ -104,21 +104,21 @@ public final class DefaultExtractorsFactory implements HD {
     }
 
     public static Constructor<? extends H9> A02() throws ClassNotFoundException, NoSuchMethodException {
-        return Class.forName(A00(0, 59, a.f21756z)).asSubclass(H9.class).getConstructor(new Class[0]);
+        return Class.forName(A00(0, 59, a.f22543z)).asSubclass(H9.class).getConstructor(new Class[0]);
     }
 
     @MetaExoPlayerCustomization("Removed AVI and JPEG extractors")
     private void A06(int i, List<H9> list) {
-        int i6 = 2;
+        int i4 = 2;
         switch (i) {
             case 0:
-                list.add(new C2120lX());
+                list.add(new C2140lX());
                 return;
             case 1:
-                list.add(new C2117lU());
+                list.add(new C2137lU());
                 return;
             case 2:
-                int i9 = (this.A0C ? 1 : 0) | this.A00;
+                int i6 = (this.A0C ? 1 : 0) | this.A00;
                 String[] strArr = A0E;
                 if (strArr[2].length() == strArr[0].length()) {
                     throw new RuntimeException();
@@ -127,22 +127,22 @@ public final class DefaultExtractorsFactory implements HD {
                 strArr2[5] = "0JYW4ys9S4cBRo9bfKNpoispKPkvAlfn";
                 strArr2[7] = "ESM27VzyBHwJIaBfhIrCniRSUGwbmbgc";
                 if (!this.A0B) {
-                    i6 = 0;
+                    i4 = 0;
                 }
-                list.add(new C2114lR(i6 | i9));
+                list.add(new C2134lR(i4 | i6));
                 return;
             case 3:
-                int i10 = (this.A0C ? 1 : 0) | this.A01;
-                boolean z3 = this.A0B;
+                int i9 = (this.A0C ? 1 : 0) | this.A01;
+                boolean z6 = this.A0B;
                 String[] strArr3 = A0E;
                 if (strArr3[2].length() != strArr3[0].length()) {
                     String[] strArr4 = A0E;
                     strArr4[6] = "88SSgZrekVuE3ZpEu";
                     strArr4[1] = "yFmqseBd895DxKzOE";
-                    if (!z3) {
-                        i6 = 0;
+                    if (!z6) {
+                        i4 = 0;
                     }
-                    list.add(new C2184ml(i6 | i10));
+                    list.add(new C2204ml(i4 | i9));
                     return;
                 }
                 throw new RuntimeException();
@@ -152,37 +152,37 @@ public final class DefaultExtractorsFactory implements HD {
                     list.add(flacExtractor);
                     return;
                 } else {
-                    list.add(new C2179mg(this.A02));
+                    list.add(new C2199mg(this.A02));
                     return;
                 }
             case 5:
-                list.add(new C2176md());
+                list.add(new C2196md());
                 return;
             case 6:
                 list.add(new MatroskaExtractor(this.A04));
                 return;
             case 7:
-                int i11 = (this.A0C ? 1 : 0) | this.A05;
+                int i10 = (this.A0C ? 1 : 0) | this.A05;
                 if (!this.A0B) {
-                    i6 = 0;
+                    i4 = 0;
                 }
-                list.add(new C2165mG(i6 | i11));
+                list.add(new C2185mG(i4 | i10));
                 return;
             case 8:
-                list.add(new C2151m2().A01(this.A03));
-                list.add(new C2152m3(this.A06));
+                list.add(new C2171m2().A01(this.A03));
+                list.add(new C2172m3(this.A06));
                 return;
             case 9:
-                list.add(new C2145lw());
+                list.add(new C2165lw());
                 return;
             case 10:
-                list.add(new C2097lA());
+                list.add(new C2117lA());
                 return;
             case 11:
-                list.add(new C2090l3(this.A08, new AnonymousClass53(0L), new C2112lP(this.A07, this.A0A), this.A09));
+                list.add(new C2110l3(this.A08, new AnonymousClass53(0L), new C2132lP(this.A07, this.A0A), this.A09));
                 return;
             case 12:
-                list.add(new C2086kz());
+                list.add(new C2106kz());
                 return;
             case 13:
             case 14:
@@ -207,11 +207,11 @@ public final class DefaultExtractorsFactory implements HD {
     public final synchronized H9[] A5O(Uri uri, Map<String, List<String>> responseHeaders) {
         List<Extractor> extractors;
         extractors = new ArrayList<>(A0H.length);
-        int fileType = AbstractC05862k.A02(responseHeaders);
+        int fileType = AbstractC06062k.A02(responseHeaders);
         if (fileType != -1) {
             A06(fileType, extractors);
         }
-        int A00 = AbstractC05862k.A00(uri);
+        int A00 = AbstractC06062k.A00(uri);
         if (A00 != -1 && A00 != fileType) {
             A06(A00, extractors);
         }

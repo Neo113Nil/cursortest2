@@ -18,17 +18,17 @@ public final class h {
         return this.isEnabled;
     }
 
-    public h(M4.c cVar, boolean z3) {
+    public h(M4.c cVar, boolean z6) {
         this.logLevel = cVar;
-        this.isEnabled = z3;
+        this.isEnabled = z6;
     }
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public /* synthetic */ h(M4.c cVar, boolean z3, int i, kotlin.jvm.internal.e eVar) {
-        this(cVar, (i & 2) != 0 ? cVar != null : z3);
+    public /* synthetic */ h(M4.c cVar, boolean z6, int i, kotlin.jvm.internal.e eVar) {
+        this(cVar, (i & 2) != 0 ? cVar != null : z6);
         cVar = (i & 1) != 0 ? null : cVar;
     }
 }

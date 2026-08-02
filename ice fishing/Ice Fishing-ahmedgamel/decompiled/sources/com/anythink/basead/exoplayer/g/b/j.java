@@ -28,18 +28,18 @@ public final class j extends h {
     };
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f7331a = "PRIV";
+    public static final String f8117a = "PRIV";
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f7332b;
+    public final String f8118b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final byte[] f7333c;
+    public final byte[] f8119c;
 
     public j(String str, byte[] bArr) {
-        super(f7331a);
-        this.f7332b = str;
-        this.f7333c = bArr;
+        super(f8117a);
+        this.f8118b = str;
+        this.f8119c = bArr;
     }
 
     public final boolean equals(Object obj) {
@@ -48,7 +48,7 @@ public final class j extends h {
         }
         if (obj != null && j.class == obj.getClass()) {
             j jVar = (j) obj;
-            if (af.a((Object) this.f7332b, (Object) jVar.f7332b) && Arrays.equals(this.f7333c, jVar.f7333c)) {
+            if (af.a((Object) this.f8118b, (Object) jVar.f8118b) && Arrays.equals(this.f8119c, jVar.f8119c)) {
                 return true;
             }
         }
@@ -56,24 +56,24 @@ public final class j extends h {
     }
 
     public final int hashCode() {
-        String str = this.f7332b;
-        return Arrays.hashCode(this.f7333c) + (((str != null ? str.hashCode() : 0) + 527) * 31);
+        String str = this.f8118b;
+        return Arrays.hashCode(this.f8119c) + (((str != null ? str.hashCode() : 0) + 527) * 31);
     }
 
     @Override // com.anythink.basead.exoplayer.g.b.h
     public final String toString() {
-        return this.f7326g + ": owner=" + this.f7332b;
+        return this.f8112g + ": owner=" + this.f8118b;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(this.f7332b);
-        parcel.writeByteArray(this.f7333c);
+        parcel.writeString(this.f8118b);
+        parcel.writeByteArray(this.f8119c);
     }
 
     public j(Parcel parcel) {
-        super(f7331a);
-        this.f7332b = parcel.readString();
-        this.f7333c = parcel.createByteArray();
+        super(f8117a);
+        this.f8118b = parcel.readString();
+        this.f8119c = parcel.createByteArray();
     }
 }

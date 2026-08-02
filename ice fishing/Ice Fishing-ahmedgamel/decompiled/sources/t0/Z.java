@@ -1,59 +1,24 @@
 package t0;
 
+import O.C0349t;
+
 /* loaded from: classes.dex */
 public final class Z {
 
+    /* renamed from: d, reason: collision with root package name */
+    public static final N.c f40691d = new N.c(20);
+
     /* renamed from: a, reason: collision with root package name */
-    public int f40636a;
+    public int f40692a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f40637b;
+    public C0349t f40693b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f40638c;
+    public C0349t f40694c;
 
-    /* renamed from: d, reason: collision with root package name */
-    public int f40639d;
-
-    /* renamed from: e, reason: collision with root package name */
-    public int f40640e;
-
-    public final boolean a() {
-        int i = this.f40636a;
-        int i6 = 2;
-        if ((i & 7) != 0) {
-            int i9 = this.f40639d;
-            int i10 = this.f40637b;
-            if (((i9 > i10 ? 1 : i9 == i10 ? 2 : 4) & i) == 0) {
-                return false;
-            }
-        }
-        if ((i & 112) != 0) {
-            int i11 = this.f40639d;
-            int i12 = this.f40638c;
-            if ((((i11 > i12 ? 1 : i11 == i12 ? 2 : 4) << 4) & i) == 0) {
-                return false;
-            }
-        }
-        if ((i & 1792) != 0) {
-            int i13 = this.f40640e;
-            int i14 = this.f40637b;
-            if ((((i13 > i14 ? 1 : i13 == i14 ? 2 : 4) << 8) & i) == 0) {
-                return false;
-            }
-        }
-        if ((i & 28672) != 0) {
-            int i15 = this.f40640e;
-            int i16 = this.f40638c;
-            if (i15 > i16) {
-                i6 = 1;
-            } else if (i15 != i16) {
-                i6 = 4;
-            }
-            if ((i & (i6 << 12)) == 0) {
-                return false;
-            }
-        }
-        return true;
+    public static Z a() {
+        Z z6 = (Z) f40691d.a();
+        return z6 == null ? new Z() : z6;
     }
 }

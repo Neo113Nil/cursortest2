@@ -7,21 +7,21 @@ public final class a {
     public static class C0103a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static int f16979a = 1;
+        public static int f17766a = 1;
 
         /* renamed from: b, reason: collision with root package name */
-        public static int f16980b = 2;
+        public static int f17767b = 2;
     }
 
     public static class b {
 
         /* renamed from: a, reason: collision with root package name */
-        public static int f16983a = 1;
+        public static int f17770a = 1;
 
         /* renamed from: b, reason: collision with root package name */
-        public static int f16984b = 2;
+        public static int f17771b = 2;
 
         /* renamed from: c, reason: collision with root package name */
-        public static int f16985c = 3;
+        public static int f17772c = 3;
     }
 }

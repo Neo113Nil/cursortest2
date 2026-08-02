@@ -10,32 +10,32 @@ import java.util.Map;
 public class a implements ATCustomLoadListenerExt {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f16970a = "a";
+    private static final String f17757a = "a";
 
     /* renamed from: b, reason: collision with root package name */
-    private final n f16971b;
+    private final n f17758b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final String f16972c;
+    private final String f17759c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final Map<String, Object> f16973d;
+    private final Map<String, Object> f17760d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final ATCustomLoadListener f16974e;
+    private final ATCustomLoadListener f17761e;
 
     /* renamed from: f, reason: collision with root package name */
-    private volatile boolean f16975f = false;
+    private volatile boolean f17762f = false;
 
     public a(n nVar, String str, Map<String, Object> map, ATCustomLoadListener aTCustomLoadListener) {
-        this.f16971b = nVar;
-        this.f16972c = str;
-        this.f16974e = aTCustomLoadListener;
-        this.f16973d = map;
+        this.f17758b = nVar;
+        this.f17759c = str;
+        this.f17761e = aTCustomLoadListener;
+        this.f17760d = map;
     }
 
     private boolean a() {
-        Map<String, Object> map = this.f16973d;
+        Map<String, Object> map = this.f17760d;
         if (map == null) {
             return false;
         }
@@ -52,11 +52,11 @@ public class a implements ATCustomLoadListenerExt {
 
     @Override // com.anythink.core.api.ATCustomLoadListener
     public void onAdCacheLoaded(BaseAd... baseAdArr) {
-        if (this.f16975f) {
+        if (this.f17762f) {
             return;
         }
-        this.f16975f = true;
-        ATCustomLoadListener aTCustomLoadListener = this.f16974e;
+        this.f17762f = true;
+        ATCustomLoadListener aTCustomLoadListener = this.f17761e;
         if (aTCustomLoadListener != null) {
             aTCustomLoadListener.onAdCacheLoaded(baseAdArr);
         }
@@ -64,7 +64,7 @@ public class a implements ATCustomLoadListenerExt {
 
     @Override // com.anythink.core.api.ATCustomLoadListener
     public void onAdDataLoaded() {
-        ATCustomLoadListener aTCustomLoadListener = this.f16974e;
+        ATCustomLoadListener aTCustomLoadListener = this.f17761e;
         if (aTCustomLoadListener != null) {
             aTCustomLoadListener.onAdDataLoaded();
         }
@@ -72,12 +72,12 @@ public class a implements ATCustomLoadListenerExt {
 
     @Override // com.anythink.core.api.ATCustomLoadListenerExt
     public void onAdDataLoadedWithAds(BaseAd... baseAdArr) {
-        ATCustomLoadListener aTCustomLoadListener = this.f16974e;
+        ATCustomLoadListener aTCustomLoadListener = this.f17761e;
         if (aTCustomLoadListener != null) {
             aTCustomLoadListener.onAdDataLoaded();
         }
         if (a()) {
-            n nVar = this.f16971b;
+            n nVar = this.f17758b;
             if (nVar != null) {
                 nVar.d();
             }
@@ -87,7 +87,7 @@ public class a implements ATCustomLoadListenerExt {
 
     @Override // com.anythink.core.api.ATCustomLoadListener
     public void onAdLoadError(String str, String str2) {
-        ATCustomLoadListener aTCustomLoadListener = this.f16974e;
+        ATCustomLoadListener aTCustomLoadListener = this.f17761e;
         if (aTCustomLoadListener != null) {
             aTCustomLoadListener.onAdLoadError(str, str2);
         }

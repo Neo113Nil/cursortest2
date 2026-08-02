@@ -7,31 +7,31 @@ import org.xmlpull.v1.XmlPullParser;
 public final class r extends ay {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f9439a = "CreativeExtensions";
+    private static final String f10225a = "CreativeExtensions";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f9440b = "CreativeExtension";
+    private static final String f10226b = "CreativeExtension";
 
     /* renamed from: c, reason: collision with root package name */
-    private ArrayList<q> f9441c = new ArrayList<>();
+    private ArrayList<q> f10227c = new ArrayList<>();
 
     private r(XmlPullParser xmlPullParser) {
-        xmlPullParser.require(2, null, f9439a);
+        xmlPullParser.require(2, null, f10225a);
         while (xmlPullParser.next() != 3) {
             if (xmlPullParser.getEventType() == 2) {
                 String name = xmlPullParser.getName();
-                if (name == null || !name.equals(f9440b)) {
+                if (name == null || !name.equals(f10226b)) {
                     ay.b(xmlPullParser);
                 } else {
-                    xmlPullParser.require(2, null, f9440b);
-                    this.f9441c.add(new q(xmlPullParser));
-                    xmlPullParser.require(3, null, f9440b);
+                    xmlPullParser.require(2, null, f10226b);
+                    this.f10227c.add(new q(xmlPullParser));
+                    xmlPullParser.require(3, null, f10226b);
                 }
             }
         }
     }
 
     private ArrayList<q> a() {
-        return this.f9441c;
+        return this.f10227c;
     }
 }

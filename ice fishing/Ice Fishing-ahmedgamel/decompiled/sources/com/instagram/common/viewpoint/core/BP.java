@@ -14,10 +14,10 @@ import javax.annotation.CheckForNull;
 
 @ElementTypesAreNonnullByDefault
 /* loaded from: assets/audience_network/classes2.dex */
-public abstract class BP<E> extends AbstractC2283oO<E> implements List<E>, RandomAccess {
+public abstract class BP<E> extends AbstractC2303oO<E> implements List<E>, RandomAccess {
     public static byte[] A00 = null;
     public static String[] A01 = {"fHdUBkHaeOb", "RH", "RyMA6PTlrDF2m99nGPMPg2CjhSKVyaSQ", "ENegzNvFlexY3BR2RKk1z4PrLej5P8FF", "wggVriGK93MfFtYQABEEs6Hvem71Ew8R", "ul6RrA3f2JvHqPW8xA7h0PXskLz1uboQ", "Eo8bayYlVcx2q99x4ketqZKtcr", "wTUtZUDKElMjm9Nu5uZgljoHw4l"};
-    public static final AbstractC0786Au<Object> A02;
+    public static final AbstractC0806Au<Object> A02;
     public static final long serialVersionUID = -889275714;
 
     /* JADX WARN: Failed to parse debug info
@@ -29,16 +29,16 @@ public abstract class BP<E> extends AbstractC2283oO<E> implements List<E>, Rando
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
     public static <E> BP<E> A05(Collection<? extends E> elements) {
-        if (!(elements instanceof AbstractC2283oO)) {
+        if (!(elements instanceof AbstractC2303oO)) {
             return A08(elements.toArray());
         }
-        BP<E> A0J = ((AbstractC2283oO) elements).A0J();
+        BP<E> A0J = ((AbstractC2303oO) elements).A0J();
         return A0J.A0K() ? A06(A0J.toArray()) : A0J;
     }
 
-    public static String A0A(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        int i10 = 0;
+    public static String A0A(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             String[] strArr = A01;
@@ -46,16 +46,16 @@ public abstract class BP<E> extends AbstractC2283oO<E> implements List<E>, Rando
                 throw new RuntimeException();
             }
             A01[1] = "b9";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 22);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 22);
+            i9++;
         }
     }
 
     public static void A0B() {
-        A00 = new byte[]{120, 94, 72, 13, 126, 72, 95, 68, 76, 65, 68, 87, 72, 73, 107, 66, 95, c.f16317b};
+        A00 = new byte[]{120, 94, 72, 13, 126, 72, 95, 68, 76, 65, 68, 87, 72, 73, 107, 66, 95, c.f17104b};
     }
 
     /* JADX WARN: Failed to parse debug info
@@ -70,8 +70,8 @@ public abstract class BP<E> extends AbstractC2283oO<E> implements List<E>, Rando
     public final int hashCode() {
         int i = 1;
         int size = size();
-        for (int i6 = 0; i6 < size; i6++) {
-            i = ~(~((i * 31) + get(i6).hashCode()));
+        for (int i4 = 0; i4 < size; i4++) {
+            i = ~(~((i * 31) + get(i4).hashCode()));
         }
         return i;
     }
@@ -99,25 +99,25 @@ public abstract class BP<E> extends AbstractC2283oO<E> implements List<E>, Rando
             }
 
             /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2J != com.google.common.collect.ImmutableList<E>$SubList */
-            @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+            @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
             public final int A0G() {
                 return BP.this.A0H() + this.A01 + this.A00;
             }
 
             /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2J != com.google.common.collect.ImmutableList<E>$SubList */
-            @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+            @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
             public final int A0H() {
                 return BP.this.A0H() + this.A01;
             }
 
             /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2J != com.google.common.collect.ImmutableList<E>$SubList */
-            @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+            @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
             public final boolean A0K() {
                 return true;
             }
 
             /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2J != com.google.common.collect.ImmutableList<E>$SubList */
-            @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+            @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
             @CheckForNull
             public final Object[] A0L() {
                 return BP.this.A0L();
@@ -127,14 +127,14 @@ public abstract class BP<E> extends AbstractC2283oO<E> implements List<E>, Rando
             @Override // com.instagram.common.viewpoint.core.BP, java.util.List
             /* renamed from: A0M */
             public final BP<E> subList(int fromIndex2, int toIndex2) {
-                AbstractC2070ki.A0B(fromIndex2, toIndex2, this.A00);
+                AbstractC2090ki.A0B(fromIndex2, toIndex2, this.A00);
                 return BP.this.subList(this.A01 + fromIndex2, this.A01 + toIndex2);
             }
 
             /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2J != com.google.common.collect.ImmutableList<E>$SubList */
             @Override // java.util.List
             public final E get(int index) {
-                AbstractC2070ki.A00(index, this.A00);
+                AbstractC2090ki.A00(index, this.A00);
                 return BP.this.get(this.A01 + index);
             }
 
@@ -184,7 +184,7 @@ public abstract class BP<E> extends AbstractC2283oO<E> implements List<E>, Rando
     }
 
     public static <E> BP<E> A08(Object... elements) {
-        return A06(AbstractC2398qG.A03(elements));
+        return A06(AbstractC2418qG.A03(elements));
     }
 
     public static <E> BP<E> A09(Object[] elements, int length) {
@@ -195,18 +195,18 @@ public abstract class BP<E> extends AbstractC2283oO<E> implements List<E>, Rando
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BP != com.google.common.collect.ImmutableList<E> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
     public int A0I(Object[] dst, int offset) {
         int size = size();
         for (int i = 0; i < size; i++) {
-            int i6 = offset + i;
-            dst[i6] = get(i);
+            int i4 = offset + i;
+            dst[i4] = get(i);
         }
         return offset + size;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BP != com.google.common.collect.ImmutableList<E> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
     @Deprecated
     public final BP<E> A0J() {
         return this;
@@ -216,7 +216,7 @@ public abstract class BP<E> extends AbstractC2283oO<E> implements List<E>, Rando
     @Override // java.util.List
     /* renamed from: A0M, reason: merged with bridge method [inline-methods] */
     public BP<E> subList(int fromIndex, int toIndex) {
-        AbstractC2070ki.A0B(fromIndex, toIndex, size());
+        AbstractC2090ki.A0B(fromIndex, toIndex, size());
         int i = toIndex - fromIndex;
         int length = size();
         if (i == length) {
@@ -238,17 +238,17 @@ public abstract class BP<E> extends AbstractC2283oO<E> implements List<E>, Rando
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BP != com.google.common.collect.ImmutableList<E> */
     @Override // java.util.List
     /* renamed from: A0O, reason: merged with bridge method [inline-methods] */
-    public final AbstractC0786Au<E> listIterator() {
+    public final AbstractC0806Au<E> listIterator() {
         return listIterator(0);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BP != com.google.common.collect.ImmutableList<E> */
     @Override // java.util.List
     /* renamed from: A0P, reason: merged with bridge method [inline-methods] */
-    public AbstractC0786Au<E> listIterator(int i) {
-        AbstractC2070ki.A01(i, size());
+    public AbstractC0806Au<E> listIterator(int i) {
+        AbstractC2090ki.A01(i, size());
         if (isEmpty()) {
-            return (AbstractC0786Au<E>) A02;
+            return (AbstractC0806Au<E>) A02;
         }
         return new AnonymousClass17(this, i);
     }
@@ -268,7 +268,7 @@ public abstract class BP<E> extends AbstractC2283oO<E> implements List<E>, Rando
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BP != com.google.common.collect.ImmutableList<E> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO, java.util.AbstractCollection, java.util.Collection, java.util.Set
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO, java.util.AbstractCollection, java.util.Collection, java.util.Set
     public boolean contains(@CheckForNull Object object) {
         return indexOf(object) >= 0;
     }
@@ -276,7 +276,7 @@ public abstract class BP<E> extends AbstractC2283oO<E> implements List<E>, Rando
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BP != com.google.common.collect.ImmutableList<E> */
     @Override // java.util.Collection, java.util.List
     public final boolean equals(@CheckForNull Object obj) {
-        return AbstractC2351pU.A06(this, obj);
+        return AbstractC2371pU.A06(this, obj);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BP != com.google.common.collect.ImmutableList<E> */
@@ -285,7 +285,7 @@ public abstract class BP<E> extends AbstractC2283oO<E> implements List<E>, Rando
         if (object == null) {
             return -1;
         }
-        return AbstractC2351pU.A00(this, object);
+        return AbstractC2371pU.A00(this, object);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BP != com.google.common.collect.ImmutableList<E> */
@@ -294,7 +294,7 @@ public abstract class BP<E> extends AbstractC2283oO<E> implements List<E>, Rando
         if (object == null) {
             return -1;
         }
-        return AbstractC2351pU.A01(this, object);
+        return AbstractC2371pU.A01(this, object);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BP != com.google.common.collect.ImmutableList<E> */

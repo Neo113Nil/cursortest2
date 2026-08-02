@@ -18,20 +18,20 @@ import org.json.JSONObject;
 
 /* loaded from: classes.dex */
 public final class aj {
-    public static com.anythink.core.common.h.n a(String str, String str2, com.anythink.core.d.l lVar, int i, int i6, Map<String, Object> map, com.anythink.core.common.h.d dVar, int i9, ATAdRequest aTAdRequest) {
+    public static com.anythink.core.common.h.n a(String str, String str2, com.anythink.core.d.l lVar, int i, int i4, Map<String, Object> map, com.anythink.core.common.h.d dVar, int i6, ATAdRequest aTAdRequest) {
         com.anythink.core.common.h.n nVar = new com.anythink.core.common.h.n();
         nVar.I(str2);
         nVar.J(str);
         nVar.C(i);
         nVar.D(i);
         nVar.E(com.anythink.core.common.u.a().e(str2) ? 1 : 2);
-        nVar.f14026u = 0;
-        nVar.f14025t = 2;
-        nVar.f14027v = 0;
+        nVar.f14812u = 0;
+        nVar.f14811t = 2;
+        nVar.f14813v = 0;
         a(nVar, lVar);
         nVar.aD();
         nVar.an(com.anythink.core.common.d.t.b().j());
-        nVar.ao(i6);
+        nVar.ao(i4);
         if (lVar != null) {
             nVar.al(lVar.p());
         } else {
@@ -40,7 +40,7 @@ public final class aj {
         a(map, nVar);
         nVar.a(dVar);
         nVar.c(ATAdxSetting.getInstance().isAdxNetworkMode(str2));
-        nVar.ad(i9);
+        nVar.ad(i6);
         nVar.a(aTAdRequest);
         return nVar;
     }
@@ -55,7 +55,7 @@ public final class aj {
             if (obj2 instanceof Integer) {
                 nVar.am(Integer.parseInt(obj2.toString()));
             }
-            Object obj3 = map.get(com.anythink.core.common.e.f12883b);
+            Object obj3 = map.get(com.anythink.core.common.e.f13669b);
             if (obj3 != null) {
                 nVar.a(obj3);
             }
@@ -92,7 +92,7 @@ public final class aj {
         aTBaseAdAdapter.setUnitGroupInfo(bvVar);
         aTBaseAdAdapter.setRefresh(nVar.U() == 1);
         try {
-            nVar.f14029x = aTBaseAdAdapter.getInternalNetworkSDKVersion();
+            nVar.f14815x = aTBaseAdAdapter.getInternalNetworkSDKVersion();
         } catch (Throwable unused) {
         }
         if (TextUtils.isEmpty(nVar.aF())) {
@@ -103,11 +103,11 @@ public final class aj {
         return nVar;
     }
 
-    public static void a(com.anythink.core.common.h.n nVar, bv bvVar, int i, boolean z3) {
+    public static void a(com.anythink.core.common.h.n nVar, bv bvVar, int i, boolean z6) {
         com.anythink.core.common.h.ad R8;
         ay b9;
         String str;
-        bo.a a9 = z3 ? com.anythink.core.a.a.a(com.anythink.core.common.d.t.b().g()).a(nVar.aI(), bvVar.z(), Integer.parseInt(nVar.aK())) : null;
+        bo.a a9 = z6 ? com.anythink.core.a.a.a(com.anythink.core.common.d.t.b().g()).a(nVar.aI(), bvVar.z(), Integer.parseInt(nVar.aK())) : null;
         nVar.j(bvVar.d());
         nVar.i(bvVar.q());
         nVar.F(bvVar.g());
@@ -117,8 +117,8 @@ public final class aj {
         nVar.m(bvVar.aa());
         nVar.x(i);
         nVar.t(bvVar.k());
-        nVar.z(a9 != null ? a9.f13732e : 0);
-        nVar.A(a9 != null ? a9.f13731d : 0);
+        nVar.z(a9 != null ? a9.f14518e : 0);
+        nVar.A(a9 != null ? a9.f14517d : 0);
         if (bvVar.Q()) {
             nVar.j(bvVar.D());
             nVar.f(bvVar.at());
@@ -137,7 +137,7 @@ public final class aj {
                 } else if (R9.t() == 3) {
                     str = "ecpm_api";
                 } else {
-                    str = R9.f13434q;
+                    str = R9.f14220q;
                 }
                 if (TextUtils.isEmpty(str)) {
                     str = "exact";
@@ -147,7 +147,7 @@ public final class aj {
                     nVar.g(nVar.u() * bvVar.D());
                     nVar.h(bvVar.c());
                 } else if (R9 != null) {
-                    nVar.g(nVar.u() * R9.f13432o);
+                    nVar.g(nVar.u() * R9.f14218o);
                     nVar.h(R9.getRmbPrice());
                 }
             }
@@ -155,11 +155,11 @@ public final class aj {
         } else {
             nVar.g(bvVar.O());
             nVar.h(bvVar.c());
-            String L6 = bvVar.L();
-            if (TextUtils.isEmpty(L6)) {
-                L6 = "publisher_defined";
+            String L2 = bvVar.L();
+            if (TextUtils.isEmpty(L2)) {
+                L2 = "publisher_defined";
             }
-            nVar.o(L6);
+            nVar.o(L2);
         }
         nVar.w(bvVar.n());
         nVar.l(bvVar.E());
@@ -195,12 +195,12 @@ public final class aj {
                 jSONObject.put("en_p", R8.getExtra());
             }
             nVar.v(jSONObject.toString());
-            nVar.X(q.a(l9, j.w.f12608E, 0));
-            nVar.Y(q.a(l9, j.w.f12609F, 0));
+            nVar.X(q.a(l9, j.w.f13394E, 0));
+            nVar.Y(q.a(l9, j.w.f13395F, 0));
         } catch (Throwable unused) {
         }
         com.anythink.core.common.h.ad R11 = bvVar.R();
-        nVar.f(R11 != null ? R11.f13425g : "");
+        nVar.f(R11 != null ? R11.f14211g : "");
         nVar.H(bvVar.ae());
         nVar.G(bvVar.h());
         nVar.d(bvVar.aM());
@@ -281,12 +281,12 @@ public final class aj {
         int parseInt = Integer.parseInt(nVar.aK());
         int[] a9 = com.anythink.core.a.a.a(context).a(Integer.parseInt(nVar.aK()));
         int i = a9[0];
-        int i6 = a9[1];
+        int i4 = a9[1];
         bo a10 = com.anythink.core.a.a.a(context).a(nVar.aI(), parseInt);
         nVar.o(i + 1);
-        nVar.p(i6 + 1);
-        nVar.q((a10 != null ? a10.f13722c : 0) + 1);
-        nVar.r((a10 != null ? a10.f13723d : 0) + 1);
+        nVar.p(i4 + 1);
+        nVar.q((a10 != null ? a10.f14508c : 0) + 1);
+        nVar.r((a10 != null ? a10.f14509d : 0) + 1);
         System.currentTimeMillis();
     }
 

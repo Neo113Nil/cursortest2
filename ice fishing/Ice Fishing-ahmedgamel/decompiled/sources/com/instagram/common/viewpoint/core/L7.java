@@ -8,12 +8,12 @@ public final class L7 {
     public boolean A02;
     public boolean A03;
     public boolean A04;
-    public final C06464u A05 = new C06464u(new byte[64]);
+    public final C06664u A05 = new C06664u(new byte[64]);
     public final AnonymousClass53 A06;
-    public final InterfaceC1042Kv A07;
+    public final InterfaceC1062Kv A07;
 
-    public L7(InterfaceC1042Kv interfaceC1042Kv, AnonymousClass53 anonymousClass53) {
-        this.A07 = interfaceC1042Kv;
+    public L7(InterfaceC1062Kv interfaceC1062Kv, AnonymousClass53 anonymousClass53) {
+        this.A07 = interfaceC1062Kv;
         this.A06 = anonymousClass53;
     }
 
@@ -35,7 +35,7 @@ public final class L7 {
             long pts2 = pts | (this.A05.A04(15) << 15) | this.A05.A04(15);
             this.A05.A09(1);
             if (!this.A04) {
-                boolean z3 = this.A02;
+                boolean z6 = this.A02;
                 String[] strArr = A08;
                 if (strArr[2].length() != strArr[0].length()) {
                     throw new RuntimeException();
@@ -43,7 +43,7 @@ public final class L7 {
                 String[] strArr2 = A08;
                 strArr2[2] = "5JhR9Zg0WmWGqTK";
                 strArr2[0] = "Xh2Ow42d4ocIa9L";
-                if (z3) {
+                if (z6) {
                     this.A05.A09(4);
                     this.A05.A09(1);
                     this.A05.A09(1);
@@ -73,15 +73,15 @@ public final class L7 {
         this.A07.AJ5();
     }
 
-    public final void A03(C06474v c06474v) throws C3K {
-        c06474v.A0k(this.A05.A00, 0, 3);
+    public final void A03(C06674v c06674v) throws C3K {
+        c06674v.A0k(this.A05.A00, 0, 3);
         this.A05.A08(0);
         A00();
-        c06474v.A0k(this.A05.A00, 0, this.A00);
+        c06674v.A0k(this.A05.A00, 0, this.A00);
         this.A05.A08(0);
         A01();
         this.A07.AGq(this.A01, 4);
-        this.A07.A5A(c06474v);
+        this.A07.A5A(c06674v);
         this.A07.AGp();
     }
 }

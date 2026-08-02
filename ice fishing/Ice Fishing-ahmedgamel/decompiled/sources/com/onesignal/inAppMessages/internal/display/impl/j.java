@@ -25,9 +25,9 @@ public final class j {
         view.setBackgroundColor(((Integer) animatedValue).intValue());
     }
 
-    public final Animation animateViewByTranslation(View view, float f3, float f9, int i, Interpolator interpolator, Animation.AnimationListener animationListener) {
+    public final Animation animateViewByTranslation(View view, float f2, float f9, int i, Interpolator interpolator, Animation.AnimationListener animationListener) {
         kotlin.jvm.internal.h.e(view, "view");
-        TranslateAnimation translateAnimation = new TranslateAnimation(0.0f, 0.0f, f3, f9);
+        TranslateAnimation translateAnimation = new TranslateAnimation(0.0f, 0.0f, f2, f9);
         translateAnimation.setDuration(i);
         translateAnimation.setInterpolator(interpolator);
         if (animationListener != null) {
@@ -37,13 +37,13 @@ public final class j {
         return translateAnimation;
     }
 
-    public final ValueAnimator animateViewColor(View view, int i, int i6, int i9, Animator.AnimatorListener animatorListener) {
+    public final ValueAnimator animateViewColor(View view, int i, int i4, int i6, Animator.AnimatorListener animatorListener) {
         kotlin.jvm.internal.h.e(view, "view");
         ValueAnimator valueAnimator = new ValueAnimator();
         valueAnimator.setDuration(i);
-        valueAnimator.setIntValues(i6, i9);
+        valueAnimator.setIntValues(i4, i6);
         valueAnimator.setEvaluator(new ArgbEvaluator());
-        valueAnimator.addUpdateListener(new H3.i(2, view));
+        valueAnimator.addUpdateListener(new J3.i(2, view));
         if (animatorListener != null) {
             valueAnimator.addListener(animatorListener);
         }

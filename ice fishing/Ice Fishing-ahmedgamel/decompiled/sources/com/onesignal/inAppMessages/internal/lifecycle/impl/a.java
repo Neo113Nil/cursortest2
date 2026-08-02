@@ -23,7 +23,7 @@ public final class a extends com.onesignal.common.events.b implements T4.b {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((T4.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(T4.a it) {
@@ -46,7 +46,7 @@ public final class a extends com.onesignal.common.events.b implements T4.b {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((T4.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(T4.a it) {
@@ -69,7 +69,7 @@ public final class a extends com.onesignal.common.events.b implements T4.b {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((T4.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(T4.a it) {
@@ -90,7 +90,7 @@ public final class a extends com.onesignal.common.events.b implements T4.b {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((T4.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(T4.a it) {
@@ -111,7 +111,7 @@ public final class a extends com.onesignal.common.events.b implements T4.b {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((T4.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(T4.a it) {
@@ -132,7 +132,7 @@ public final class a extends com.onesignal.common.events.b implements T4.b {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((T4.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(T4.a it) {
@@ -153,7 +153,7 @@ public final class a extends com.onesignal.common.events.b implements T4.b {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((T4.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(T4.a it) {

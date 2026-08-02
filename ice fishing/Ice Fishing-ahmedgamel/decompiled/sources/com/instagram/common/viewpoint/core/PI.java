@@ -9,11 +9,11 @@ import android.view.accessibility.AccessibilityNodeProvider;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public class PI extends View.AccessibilityDelegate {
-    public final /* synthetic */ C1922i4 A00;
+    public final /* synthetic */ C1942i4 A00;
     public final /* synthetic */ PL A01;
 
-    public PI(C1922i4 c1922i4, PL pl2) {
-        this.A00 = c1922i4;
+    public PI(C1942i4 c1942i4, PL pl2) {
+        this.A00 = c1942i4;
         this.A01 = pl2;
     }
 

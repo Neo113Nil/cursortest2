@@ -9,225 +9,225 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
-import androidx.lifecycle.C0505x;
-import androidx.lifecycle.EnumC0496n;
-import androidx.lifecycle.EnumC0497o;
-import androidx.lifecycle.InterfaceC0501t;
-import androidx.lifecycle.InterfaceC0503v;
-import com.google.android.gms.internal.ads.C2991bm;
-import com.icefishingapp.icefishing.AbstractC4404f;
-import com.icefishingapp.icefishing.C5275R;
-import f0.C4495a;
-import f0.C4497c;
-import i0.C4577b;
+import androidx.lifecycle.C0509x;
+import androidx.lifecycle.EnumC0500n;
+import androidx.lifecycle.EnumC0501o;
+import androidx.lifecycle.InterfaceC0505t;
+import androidx.lifecycle.InterfaceC0507v;
+import com.IceFishing.LiveIceFishing.C5248R;
+import com.google.android.gms.internal.ads.Wv;
+import f0.C4512a;
+import f0.C4514c;
+import i0.C4582b;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.WeakHashMap;
-import u.AbstractC5049e;
+import u.AbstractC5050e;
+import w.AbstractC5128c;
 
 /* loaded from: classes.dex */
 public final class V {
 
     /* renamed from: a, reason: collision with root package name */
-    public final C2991bm f4905a;
+    public final S0.e f4873a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final S0.n f4906b;
+    public final l4.q f4874b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final AbstractComponentCallbacksC0475s f4907c;
+    public final AbstractComponentCallbacksC0479s f4875c;
 
     /* renamed from: d, reason: collision with root package name */
-    public boolean f4908d = false;
+    public boolean f4876d = false;
 
     /* renamed from: e, reason: collision with root package name */
-    public int f4909e = -1;
+    public int f4877e = -1;
 
-    public V(C2991bm c2991bm, S0.n nVar, AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s) {
-        this.f4905a = c2991bm;
-        this.f4906b = nVar;
-        this.f4907c = abstractComponentCallbacksC0475s;
+    public V(S0.e eVar, l4.q qVar, AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s) {
+        this.f4873a = eVar;
+        this.f4874b = qVar;
+        this.f4875c = abstractComponentCallbacksC0479s;
     }
 
     public final void a() {
         boolean E8 = N.E(3);
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = this.f4907c;
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = this.f4875c;
         if (E8) {
-            Log.d("FragmentManager", "moveto ACTIVITY_CREATED: " + abstractComponentCallbacksC0475s);
+            Log.d("FragmentManager", "moveto ACTIVITY_CREATED: " + abstractComponentCallbacksC0479s);
         }
-        Bundle bundle = abstractComponentCallbacksC0475s.f5060u;
+        Bundle bundle = abstractComponentCallbacksC0479s.f5031u;
         Bundle bundle2 = bundle != null ? bundle.getBundle("savedInstanceState") : null;
-        abstractComponentCallbacksC0475s.f5039M.K();
-        abstractComponentCallbacksC0475s.f5052n = 3;
-        abstractComponentCallbacksC0475s.f5048V = false;
-        abstractComponentCallbacksC0475s.l();
-        if (!abstractComponentCallbacksC0475s.f5048V) {
-            throw new d0("Fragment " + abstractComponentCallbacksC0475s + " did not call through to super.onActivityCreated()");
+        abstractComponentCallbacksC0479s.f5007M.K();
+        abstractComponentCallbacksC0479s.f5024n = 3;
+        abstractComponentCallbacksC0479s.f5016V = false;
+        abstractComponentCallbacksC0479s.l();
+        if (!abstractComponentCallbacksC0479s.f5016V) {
+            throw new d0("Fragment " + abstractComponentCallbacksC0479s + " did not call through to super.onActivityCreated()");
         }
         if (N.E(3)) {
-            Log.d("FragmentManager", "moveto RESTORE_VIEW_STATE: " + abstractComponentCallbacksC0475s);
+            Log.d("FragmentManager", "moveto RESTORE_VIEW_STATE: " + abstractComponentCallbacksC0479s);
         }
-        if (abstractComponentCallbacksC0475s.f5050X != null) {
-            Bundle bundle3 = abstractComponentCallbacksC0475s.f5060u;
+        if (abstractComponentCallbacksC0479s.f5018X != null) {
+            Bundle bundle3 = abstractComponentCallbacksC0479s.f5031u;
             Bundle bundle4 = bundle3 != null ? bundle3.getBundle("savedInstanceState") : null;
-            SparseArray<Parcelable> sparseArray = abstractComponentCallbacksC0475s.f5062v;
+            SparseArray<Parcelable> sparseArray = abstractComponentCallbacksC0479s.f5032v;
             if (sparseArray != null) {
-                abstractComponentCallbacksC0475s.f5050X.restoreHierarchyState(sparseArray);
-                abstractComponentCallbacksC0475s.f5062v = null;
+                abstractComponentCallbacksC0479s.f5018X.restoreHierarchyState(sparseArray);
+                abstractComponentCallbacksC0479s.f5032v = null;
             }
-            abstractComponentCallbacksC0475s.f5048V = false;
-            abstractComponentCallbacksC0475s.w(bundle4);
-            if (!abstractComponentCallbacksC0475s.f5048V) {
-                throw new d0("Fragment " + abstractComponentCallbacksC0475s + " did not call through to super.onViewStateRestored()");
+            abstractComponentCallbacksC0479s.f5016V = false;
+            abstractComponentCallbacksC0479s.w(bundle4);
+            if (!abstractComponentCallbacksC0479s.f5016V) {
+                throw new d0("Fragment " + abstractComponentCallbacksC0479s + " did not call through to super.onViewStateRestored()");
             }
-            if (abstractComponentCallbacksC0475s.f5050X != null) {
-                abstractComponentCallbacksC0475s.f5059t0.a(EnumC0496n.ON_CREATE);
+            if (abstractComponentCallbacksC0479s.f5018X != null) {
+                abstractComponentCallbacksC0479s.f5026o0.a(EnumC0500n.ON_CREATE);
             }
         }
-        abstractComponentCallbacksC0475s.f5060u = null;
-        O o6 = abstractComponentCallbacksC0475s.f5039M;
-        o6.f4842E = false;
-        o6.f4843F = false;
-        o6.f4848L.f4890f = false;
-        o6.t(4);
-        this.f4905a.B(abstractComponentCallbacksC0475s, bundle2, false);
+        abstractComponentCallbacksC0479s.f5031u = null;
+        O o4 = abstractComponentCallbacksC0479s.f5007M;
+        o4.f4810E = false;
+        o4.f4811F = false;
+        o4.f4816L.f4858f = false;
+        o4.t(4);
+        this.f4873a.g(abstractComponentCallbacksC0479s, bundle2, false);
     }
 
     public final void b() {
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s;
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s;
         View view;
         View view2;
         int i = -1;
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s2 = this.f4907c;
-        View view3 = abstractComponentCallbacksC0475s2.f5049W;
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s2 = this.f4875c;
+        View view3 = abstractComponentCallbacksC0479s2.f5017W;
         while (true) {
-            abstractComponentCallbacksC0475s = null;
+            abstractComponentCallbacksC0479s = null;
             if (view3 == null) {
                 break;
             }
-            Object tag = view3.getTag(C5275R.id.fragment_container_view_tag);
-            AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s3 = tag instanceof AbstractComponentCallbacksC0475s ? (AbstractComponentCallbacksC0475s) tag : null;
-            if (abstractComponentCallbacksC0475s3 != null) {
-                abstractComponentCallbacksC0475s = abstractComponentCallbacksC0475s3;
+            Object tag = view3.getTag(C5248R.id.fragment_container_view_tag);
+            AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s3 = tag instanceof AbstractComponentCallbacksC0479s ? (AbstractComponentCallbacksC0479s) tag : null;
+            if (abstractComponentCallbacksC0479s3 != null) {
+                abstractComponentCallbacksC0479s = abstractComponentCallbacksC0479s3;
                 break;
             } else {
                 Object parent = view3.getParent();
                 view3 = parent instanceof View ? (View) parent : null;
             }
         }
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s4 = abstractComponentCallbacksC0475s2.f5040N;
-        if (abstractComponentCallbacksC0475s != null && !abstractComponentCallbacksC0475s.equals(abstractComponentCallbacksC0475s4)) {
-            int i6 = abstractComponentCallbacksC0475s2.f5042P;
-            C4497c c4497c = f0.d.f37345a;
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s4 = abstractComponentCallbacksC0479s2.f5008N;
+        if (abstractComponentCallbacksC0479s != null && !abstractComponentCallbacksC0479s.equals(abstractComponentCallbacksC0479s4)) {
+            int i4 = abstractComponentCallbacksC0479s2.f5010P;
+            C4514c c4514c = f0.d.f37421a;
             StringBuilder sb = new StringBuilder("Attempting to nest fragment ");
-            sb.append(abstractComponentCallbacksC0475s2);
+            sb.append(abstractComponentCallbacksC0479s2);
             sb.append(" within the view of parent fragment ");
-            sb.append(abstractComponentCallbacksC0475s);
+            sb.append(abstractComponentCallbacksC0479s);
             sb.append(" via container with ID ");
-            f0.d.b(new C4495a(abstractComponentCallbacksC0475s2, u1.h.e(i6, " without using parent's childFragmentManager", sb)));
-            f0.d.a(abstractComponentCallbacksC0475s2).getClass();
+            f0.d.b(new C4512a(abstractComponentCallbacksC0479s2, AbstractC5128c.e(i4, " without using parent's childFragmentManager", sb)));
+            f0.d.a(abstractComponentCallbacksC0479s2).getClass();
         }
-        S0.n nVar = this.f4906b;
-        nVar.getClass();
-        ViewGroup viewGroup = abstractComponentCallbacksC0475s2.f5049W;
+        l4.q qVar = this.f4874b;
+        qVar.getClass();
+        ViewGroup viewGroup = abstractComponentCallbacksC0479s2.f5017W;
         if (viewGroup != null) {
-            ArrayList arrayList = (ArrayList) nVar.f2802u;
-            int indexOf = arrayList.indexOf(abstractComponentCallbacksC0475s2);
-            int i9 = indexOf - 1;
+            ArrayList arrayList = (ArrayList) qVar.f38945n;
+            int indexOf = arrayList.indexOf(abstractComponentCallbacksC0479s2);
+            int i6 = indexOf - 1;
             while (true) {
-                if (i9 < 0) {
+                if (i6 < 0) {
                     while (true) {
                         indexOf++;
                         if (indexOf >= arrayList.size()) {
                             break;
                         }
-                        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s5 = (AbstractComponentCallbacksC0475s) arrayList.get(indexOf);
-                        if (abstractComponentCallbacksC0475s5.f5049W == viewGroup && (view = abstractComponentCallbacksC0475s5.f5050X) != null) {
+                        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s5 = (AbstractComponentCallbacksC0479s) arrayList.get(indexOf);
+                        if (abstractComponentCallbacksC0479s5.f5017W == viewGroup && (view = abstractComponentCallbacksC0479s5.f5018X) != null) {
                             i = viewGroup.indexOfChild(view);
                             break;
                         }
                     }
                 } else {
-                    AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s6 = (AbstractComponentCallbacksC0475s) arrayList.get(i9);
-                    if (abstractComponentCallbacksC0475s6.f5049W == viewGroup && (view2 = abstractComponentCallbacksC0475s6.f5050X) != null) {
+                    AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s6 = (AbstractComponentCallbacksC0479s) arrayList.get(i6);
+                    if (abstractComponentCallbacksC0479s6.f5017W == viewGroup && (view2 = abstractComponentCallbacksC0479s6.f5018X) != null) {
                         i = viewGroup.indexOfChild(view2) + 1;
                         break;
                     }
-                    i9--;
+                    i6--;
                 }
             }
         }
-        abstractComponentCallbacksC0475s2.f5049W.addView(abstractComponentCallbacksC0475s2.f5050X, i);
+        abstractComponentCallbacksC0479s2.f5017W.addView(abstractComponentCallbacksC0479s2.f5018X, i);
     }
 
     public final void c() {
         boolean E8 = N.E(3);
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = this.f4907c;
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = this.f4875c;
         if (E8) {
-            Log.d("FragmentManager", "moveto ATTACHED: " + abstractComponentCallbacksC0475s);
+            Log.d("FragmentManager", "moveto ATTACHED: " + abstractComponentCallbacksC0479s);
         }
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s2 = abstractComponentCallbacksC0475s.f5069z;
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s2 = abstractComponentCallbacksC0479s.f5036z;
         V v9 = null;
-        S0.n nVar = this.f4906b;
-        if (abstractComponentCallbacksC0475s2 != null) {
-            V v10 = (V) ((HashMap) nVar.f2803v).get(abstractComponentCallbacksC0475s2.f5066x);
+        l4.q qVar = this.f4874b;
+        if (abstractComponentCallbacksC0479s2 != null) {
+            V v10 = (V) ((HashMap) qVar.f38946u).get(abstractComponentCallbacksC0479s2.f5034x);
             if (v10 == null) {
-                throw new IllegalStateException("Fragment " + abstractComponentCallbacksC0475s + " declared target fragment " + abstractComponentCallbacksC0475s.f5069z + " that does not belong to this FragmentManager!");
+                throw new IllegalStateException("Fragment " + abstractComponentCallbacksC0479s + " declared target fragment " + abstractComponentCallbacksC0479s.f5036z + " that does not belong to this FragmentManager!");
             }
-            abstractComponentCallbacksC0475s.f5028A = abstractComponentCallbacksC0475s.f5069z.f5066x;
-            abstractComponentCallbacksC0475s.f5069z = null;
+            abstractComponentCallbacksC0479s.f4996A = abstractComponentCallbacksC0479s.f5036z.f5034x;
+            abstractComponentCallbacksC0479s.f5036z = null;
             v9 = v10;
         } else {
-            String str = abstractComponentCallbacksC0475s.f5028A;
-            if (str != null && (v9 = (V) ((HashMap) nVar.f2803v).get(str)) == null) {
+            String str = abstractComponentCallbacksC0479s.f4996A;
+            if (str != null && (v9 = (V) ((HashMap) qVar.f38946u).get(str)) == null) {
                 StringBuilder sb = new StringBuilder("Fragment ");
-                sb.append(abstractComponentCallbacksC0475s);
+                sb.append(abstractComponentCallbacksC0479s);
                 sb.append(" declared target fragment ");
-                throw new IllegalStateException(u1.h.g(sb, abstractComponentCallbacksC0475s.f5028A, " that does not belong to this FragmentManager!"));
+                throw new IllegalStateException(Wv.i(sb, abstractComponentCallbacksC0479s.f4996A, " that does not belong to this FragmentManager!"));
             }
         }
         if (v9 != null) {
             v9.k();
         }
-        N n9 = abstractComponentCallbacksC0475s.f5037K;
-        abstractComponentCallbacksC0475s.f5038L = n9.f4868t;
-        abstractComponentCallbacksC0475s.f5040N = n9.f4870v;
-        C2991bm c2991bm = this.f4905a;
-        c2991bm.H(abstractComponentCallbacksC0475s, false);
-        ArrayList arrayList = abstractComponentCallbacksC0475s.f5065w0;
+        N n9 = abstractComponentCallbacksC0479s.f5005K;
+        abstractComponentCallbacksC0479s.f5006L = n9.f4836t;
+        abstractComponentCallbacksC0479s.f5008N = n9.f4838v;
+        S0.e eVar = this.f4873a;
+        eVar.o(abstractComponentCallbacksC0479s, false);
+        ArrayList arrayList = abstractComponentCallbacksC0479s.f5029r0;
         Iterator it = arrayList.iterator();
         while (it.hasNext()) {
-            ((C0473p) it.next()).a();
+            ((C0477p) it.next()).a();
         }
         arrayList.clear();
-        abstractComponentCallbacksC0475s.f5039M.b(abstractComponentCallbacksC0475s.f5038L, abstractComponentCallbacksC0475s.a(), abstractComponentCallbacksC0475s);
-        abstractComponentCallbacksC0475s.f5052n = 0;
-        abstractComponentCallbacksC0475s.f5048V = false;
-        abstractComponentCallbacksC0475s.n(abstractComponentCallbacksC0475s.f5038L.f5076u);
-        if (!abstractComponentCallbacksC0475s.f5048V) {
-            throw new d0("Fragment " + abstractComponentCallbacksC0475s + " did not call through to super.onAttach()");
+        abstractComponentCallbacksC0479s.f5007M.b(abstractComponentCallbacksC0479s.f5006L, abstractComponentCallbacksC0479s.a(), abstractComponentCallbacksC0479s);
+        abstractComponentCallbacksC0479s.f5024n = 0;
+        abstractComponentCallbacksC0479s.f5016V = false;
+        abstractComponentCallbacksC0479s.n(abstractComponentCallbacksC0479s.f5006L.f5042A);
+        if (!abstractComponentCallbacksC0479s.f5016V) {
+            throw new d0("Fragment " + abstractComponentCallbacksC0479s + " did not call through to super.onAttach()");
         }
-        Iterator it2 = abstractComponentCallbacksC0475s.f5037K.f4861m.iterator();
+        Iterator it2 = abstractComponentCallbacksC0479s.f5005K.f4829m.iterator();
         while (it2.hasNext()) {
-            ((T) it2.next()).a(abstractComponentCallbacksC0475s);
+            ((T) it2.next()).a(abstractComponentCallbacksC0479s);
         }
-        O o6 = abstractComponentCallbacksC0475s.f5039M;
-        o6.f4842E = false;
-        o6.f4843F = false;
-        o6.f4848L.f4890f = false;
-        o6.t(0);
-        c2991bm.C(abstractComponentCallbacksC0475s, false);
+        O o4 = abstractComponentCallbacksC0479s.f5007M;
+        o4.f4810E = false;
+        o4.f4811F = false;
+        o4.f4816L.f4858f = false;
+        o4.t(0);
+        eVar.i(abstractComponentCallbacksC0479s, false);
     }
 
     public final int d() {
         Object obj;
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = this.f4907c;
-        if (abstractComponentCallbacksC0475s.f5037K == null) {
-            return abstractComponentCallbacksC0475s.f5052n;
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = this.f4875c;
+        if (abstractComponentCallbacksC0479s.f5005K == null) {
+            return abstractComponentCallbacksC0479s.f5024n;
         }
-        int i = this.f4909e;
-        int ordinal = abstractComponentCallbacksC0475s.f5057r0.ordinal();
+        int i = this.f4877e;
+        int ordinal = abstractComponentCallbacksC0479s.m0.ordinal();
         if (ordinal == 1) {
             i = Math.min(i, 0);
         } else if (ordinal == 2) {
@@ -237,27 +237,27 @@ public final class V {
         } else if (ordinal != 4) {
             i = Math.min(i, -1);
         }
-        if (abstractComponentCallbacksC0475s.f5033F) {
-            if (abstractComponentCallbacksC0475s.f5034G) {
-                i = Math.max(this.f4909e, 2);
-                View view = abstractComponentCallbacksC0475s.f5050X;
+        if (abstractComponentCallbacksC0479s.f5001F) {
+            if (abstractComponentCallbacksC0479s.f5002G) {
+                i = Math.max(this.f4877e, 2);
+                View view = abstractComponentCallbacksC0479s.f5018X;
                 if (view != null && view.getParent() == null) {
                     i = Math.min(i, 2);
                 }
             } else {
-                i = this.f4909e < 4 ? Math.min(i, abstractComponentCallbacksC0475s.f5052n) : Math.min(i, 1);
+                i = this.f4877e < 4 ? Math.min(i, abstractComponentCallbacksC0479s.f5024n) : Math.min(i, 1);
             }
         }
-        if (!abstractComponentCallbacksC0475s.f5031D) {
+        if (!abstractComponentCallbacksC0479s.f4999D) {
             i = Math.min(i, 1);
         }
-        ViewGroup viewGroup = abstractComponentCallbacksC0475s.f5049W;
+        ViewGroup viewGroup = abstractComponentCallbacksC0479s.f5017W;
         if (viewGroup != null) {
-            C0467j f3 = C0467j.f(viewGroup, abstractComponentCallbacksC0475s.f());
-            f3.getClass();
-            a0 d2 = f3.d(abstractComponentCallbacksC0475s);
-            int i6 = d2 != null ? d2.f4947b : 0;
-            Iterator it = f3.f4993c.iterator();
+            C0471j f2 = C0471j.f(viewGroup, abstractComponentCallbacksC0479s.f());
+            f2.getClass();
+            a0 d9 = f2.d(abstractComponentCallbacksC0479s);
+            int i4 = d9 != null ? d9.f4915b : 0;
+            Iterator it = f2.f4961c.iterator();
             while (true) {
                 if (!it.hasNext()) {
                     obj = null;
@@ -265,29 +265,29 @@ public final class V {
                 }
                 obj = it.next();
                 a0 a0Var = (a0) obj;
-                if (kotlin.jvm.internal.h.a(a0Var.f4948c, abstractComponentCallbacksC0475s) && !a0Var.f4951f) {
+                if (kotlin.jvm.internal.h.a(a0Var.f4916c, abstractComponentCallbacksC0479s) && !a0Var.f4919f) {
                     break;
                 }
             }
             a0 a0Var2 = (a0) obj;
-            r5 = a0Var2 != null ? a0Var2.f4947b : 0;
-            int i9 = i6 == 0 ? -1 : c0.f4971a[AbstractC5049e.d(i6)];
-            if (i9 != -1 && i9 != 1) {
-                r5 = i6;
+            r5 = a0Var2 != null ? a0Var2.f4915b : 0;
+            int i6 = i4 == 0 ? -1 : c0.f4939a[AbstractC5050e.d(i4)];
+            if (i6 != -1 && i6 != 1) {
+                r5 = i4;
             }
         }
         if (r5 == 2) {
             i = Math.min(i, 6);
         } else if (r5 == 3) {
             i = Math.max(i, 3);
-        } else if (abstractComponentCallbacksC0475s.f5032E) {
-            i = abstractComponentCallbacksC0475s.k() ? Math.min(i, 1) : Math.min(i, -1);
+        } else if (abstractComponentCallbacksC0479s.f5000E) {
+            i = abstractComponentCallbacksC0479s.k() ? Math.min(i, 1) : Math.min(i, -1);
         }
-        if (abstractComponentCallbacksC0475s.Y && abstractComponentCallbacksC0475s.f5052n < 5) {
+        if (abstractComponentCallbacksC0479s.Y && abstractComponentCallbacksC0479s.f5024n < 5) {
             i = Math.min(i, 4);
         }
         if (N.E(2)) {
-            Log.v("FragmentManager", "computeExpectedState() of " + i + " for " + abstractComponentCallbacksC0475s);
+            Log.v("FragmentManager", "computeExpectedState() of " + i + " for " + abstractComponentCallbacksC0479s);
         }
         return i;
     }
@@ -295,295 +295,295 @@ public final class V {
     public final void e() {
         Bundle bundle;
         boolean E8 = N.E(3);
-        final AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = this.f4907c;
+        final AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = this.f4875c;
         if (E8) {
-            Log.d("FragmentManager", "moveto CREATED: " + abstractComponentCallbacksC0475s);
+            Log.d("FragmentManager", "moveto CREATED: " + abstractComponentCallbacksC0479s);
         }
-        Bundle bundle2 = abstractComponentCallbacksC0475s.f5060u;
+        Bundle bundle2 = abstractComponentCallbacksC0479s.f5031u;
         Bundle bundle3 = bundle2 != null ? bundle2.getBundle("savedInstanceState") : null;
-        if (abstractComponentCallbacksC0475s.f5055p0) {
-            abstractComponentCallbacksC0475s.f5052n = 1;
-            Bundle bundle4 = abstractComponentCallbacksC0475s.f5060u;
+        if (abstractComponentCallbacksC0479s.f5022k0) {
+            abstractComponentCallbacksC0479s.f5024n = 1;
+            Bundle bundle4 = abstractComponentCallbacksC0479s.f5031u;
             if (bundle4 == null || (bundle = bundle4.getBundle("childFragmentManager")) == null) {
                 return;
             }
-            abstractComponentCallbacksC0475s.f5039M.Q(bundle);
-            O o6 = abstractComponentCallbacksC0475s.f5039M;
-            o6.f4842E = false;
-            o6.f4843F = false;
-            o6.f4848L.f4890f = false;
-            o6.t(1);
+            abstractComponentCallbacksC0479s.f5007M.Q(bundle);
+            O o4 = abstractComponentCallbacksC0479s.f5007M;
+            o4.f4810E = false;
+            o4.f4811F = false;
+            o4.f4816L.f4858f = false;
+            o4.t(1);
             return;
         }
-        C2991bm c2991bm = this.f4905a;
-        c2991bm.I(abstractComponentCallbacksC0475s, bundle3, false);
-        abstractComponentCallbacksC0475s.f5039M.K();
-        abstractComponentCallbacksC0475s.f5052n = 1;
-        abstractComponentCallbacksC0475s.f5048V = false;
-        abstractComponentCallbacksC0475s.f5058s0.a(new InterfaceC0501t() { // from class: androidx.fragment.app.Fragment$6
-            @Override // androidx.lifecycle.InterfaceC0501t
-            public final void a(InterfaceC0503v interfaceC0503v, EnumC0496n enumC0496n) {
+        S0.e eVar = this.f4873a;
+        eVar.p(abstractComponentCallbacksC0479s, bundle3, false);
+        abstractComponentCallbacksC0479s.f5007M.K();
+        abstractComponentCallbacksC0479s.f5024n = 1;
+        abstractComponentCallbacksC0479s.f5016V = false;
+        abstractComponentCallbacksC0479s.f5025n0.a(new InterfaceC0505t() { // from class: androidx.fragment.app.Fragment$6
+            @Override // androidx.lifecycle.InterfaceC0505t
+            public final void a(InterfaceC0507v interfaceC0507v, EnumC0500n enumC0500n) {
                 View view;
-                if (enumC0496n != EnumC0496n.ON_STOP || (view = AbstractComponentCallbacksC0475s.this.f5050X) == null) {
+                if (enumC0500n != EnumC0500n.ON_STOP || (view = AbstractComponentCallbacksC0479s.this.f5018X) == null) {
                     return;
                 }
                 view.cancelPendingInputEvents();
             }
         });
-        abstractComponentCallbacksC0475s.o(bundle3);
-        abstractComponentCallbacksC0475s.f5055p0 = true;
-        if (abstractComponentCallbacksC0475s.f5048V) {
-            abstractComponentCallbacksC0475s.f5058s0.e(EnumC0496n.ON_CREATE);
-            c2991bm.D(abstractComponentCallbacksC0475s, bundle3, false);
+        abstractComponentCallbacksC0479s.o(bundle3);
+        abstractComponentCallbacksC0479s.f5022k0 = true;
+        if (abstractComponentCallbacksC0479s.f5016V) {
+            abstractComponentCallbacksC0479s.f5025n0.e(EnumC0500n.ON_CREATE);
+            eVar.j(abstractComponentCallbacksC0479s, bundle3, false);
         } else {
-            throw new d0("Fragment " + abstractComponentCallbacksC0475s + " did not call through to super.onCreate()");
+            throw new d0("Fragment " + abstractComponentCallbacksC0479s + " did not call through to super.onCreate()");
         }
     }
 
     public final void f() {
         String str;
         int i = 1;
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = this.f4907c;
-        if (abstractComponentCallbacksC0475s.f5033F) {
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = this.f4875c;
+        if (abstractComponentCallbacksC0479s.f5001F) {
             return;
         }
         if (N.E(3)) {
-            Log.d("FragmentManager", "moveto CREATE_VIEW: " + abstractComponentCallbacksC0475s);
+            Log.d("FragmentManager", "moveto CREATE_VIEW: " + abstractComponentCallbacksC0479s);
         }
-        Bundle bundle = abstractComponentCallbacksC0475s.f5060u;
+        Bundle bundle = abstractComponentCallbacksC0479s.f5031u;
         ViewGroup viewGroup = null;
         Bundle bundle2 = bundle != null ? bundle.getBundle("savedInstanceState") : null;
-        LayoutInflater s9 = abstractComponentCallbacksC0475s.s(bundle2);
-        ViewGroup viewGroup2 = abstractComponentCallbacksC0475s.f5049W;
+        LayoutInflater s9 = abstractComponentCallbacksC0479s.s(bundle2);
+        ViewGroup viewGroup2 = abstractComponentCallbacksC0479s.f5017W;
         if (viewGroup2 != null) {
             viewGroup = viewGroup2;
         } else {
-            int i6 = abstractComponentCallbacksC0475s.f5042P;
-            if (i6 != 0) {
-                if (i6 == -1) {
-                    throw new IllegalArgumentException("Cannot create fragment " + abstractComponentCallbacksC0475s + " for a container view with no id");
+            int i4 = abstractComponentCallbacksC0479s.f5010P;
+            if (i4 != 0) {
+                if (i4 == -1) {
+                    throw new IllegalArgumentException("Cannot create fragment " + abstractComponentCallbacksC0479s + " for a container view with no id");
                 }
-                viewGroup = (ViewGroup) abstractComponentCallbacksC0475s.f5037K.f4869u.o(i6);
+                viewGroup = (ViewGroup) abstractComponentCallbacksC0479s.f5005K.f4837u.n(i4);
                 if (viewGroup == null) {
-                    if (!abstractComponentCallbacksC0475s.f5035H) {
+                    if (!abstractComponentCallbacksC0479s.f5003H) {
                         try {
-                            str = abstractComponentCallbacksC0475s.y().getResources().getResourceName(abstractComponentCallbacksC0475s.f5042P);
+                            str = abstractComponentCallbacksC0479s.y().getResources().getResourceName(abstractComponentCallbacksC0479s.f5010P);
                         } catch (Resources.NotFoundException unused) {
-                            str = com.anythink.core.common.v.m.f16809e;
+                            str = com.anythink.core.common.v.m.f17596e;
                         }
-                        throw new IllegalArgumentException("No view found for id 0x" + Integer.toHexString(abstractComponentCallbacksC0475s.f5042P) + " (" + str + ") for fragment " + abstractComponentCallbacksC0475s);
+                        throw new IllegalArgumentException("No view found for id 0x" + Integer.toHexString(abstractComponentCallbacksC0479s.f5010P) + " (" + str + ") for fragment " + abstractComponentCallbacksC0479s);
                     }
                 } else if (!(viewGroup instanceof FragmentContainerView)) {
-                    C4497c c4497c = f0.d.f37345a;
-                    f0.d.b(new f0.e(abstractComponentCallbacksC0475s, viewGroup, 1));
-                    f0.d.a(abstractComponentCallbacksC0475s).getClass();
+                    C4514c c4514c = f0.d.f37421a;
+                    f0.d.b(new f0.e(abstractComponentCallbacksC0479s, viewGroup, 1));
+                    f0.d.a(abstractComponentCallbacksC0479s).getClass();
                 }
             }
         }
-        abstractComponentCallbacksC0475s.f5049W = viewGroup;
-        abstractComponentCallbacksC0475s.x(s9, viewGroup, bundle2);
-        if (abstractComponentCallbacksC0475s.f5050X != null) {
+        abstractComponentCallbacksC0479s.f5017W = viewGroup;
+        abstractComponentCallbacksC0479s.x(s9, viewGroup, bundle2);
+        if (abstractComponentCallbacksC0479s.f5018X != null) {
             if (N.E(3)) {
-                Log.d("FragmentManager", "moveto VIEW_CREATED: " + abstractComponentCallbacksC0475s);
+                Log.d("FragmentManager", "moveto VIEW_CREATED: " + abstractComponentCallbacksC0479s);
             }
-            abstractComponentCallbacksC0475s.f5050X.setSaveFromParentEnabled(false);
-            abstractComponentCallbacksC0475s.f5050X.setTag(C5275R.id.fragment_container_view_tag, abstractComponentCallbacksC0475s);
+            abstractComponentCallbacksC0479s.f5018X.setSaveFromParentEnabled(false);
+            abstractComponentCallbacksC0479s.f5018X.setTag(C5248R.id.fragment_container_view_tag, abstractComponentCallbacksC0479s);
             if (viewGroup != null) {
                 b();
             }
-            if (abstractComponentCallbacksC0475s.f5044R) {
-                abstractComponentCallbacksC0475s.f5050X.setVisibility(8);
+            if (abstractComponentCallbacksC0479s.f5012R) {
+                abstractComponentCallbacksC0479s.f5018X.setVisibility(8);
             }
-            View view = abstractComponentCallbacksC0475s.f5050X;
-            WeakHashMap weakHashMap = O.X.f2054a;
+            View view = abstractComponentCallbacksC0479s.f5018X;
+            WeakHashMap weakHashMap = O.X.f2142a;
             if (view.isAttachedToWindow()) {
-                O.J.c(abstractComponentCallbacksC0475s.f5050X);
+                O.J.c(abstractComponentCallbacksC0479s.f5018X);
             } else {
-                View view2 = abstractComponentCallbacksC0475s.f5050X;
-                view2.addOnAttachStateChangeListener(new H3.p(i, view2));
+                View view2 = abstractComponentCallbacksC0479s.f5018X;
+                view2.addOnAttachStateChangeListener(new J3.p(i, view2));
             }
-            Bundle bundle3 = abstractComponentCallbacksC0475s.f5060u;
+            Bundle bundle3 = abstractComponentCallbacksC0479s.f5031u;
             if (bundle3 != null) {
                 bundle3.getBundle("savedInstanceState");
             }
-            abstractComponentCallbacksC0475s.f5039M.t(2);
-            this.f4905a.N(abstractComponentCallbacksC0475s, abstractComponentCallbacksC0475s.f5050X, bundle2, false);
-            int visibility = abstractComponentCallbacksC0475s.f5050X.getVisibility();
-            abstractComponentCallbacksC0475s.b().f5025j = abstractComponentCallbacksC0475s.f5050X.getAlpha();
-            if (abstractComponentCallbacksC0475s.f5049W != null && visibility == 0) {
-                View findFocus = abstractComponentCallbacksC0475s.f5050X.findFocus();
+            abstractComponentCallbacksC0479s.f5007M.t(2);
+            this.f4873a.u(abstractComponentCallbacksC0479s, abstractComponentCallbacksC0479s.f5018X, bundle2, false);
+            int visibility = abstractComponentCallbacksC0479s.f5018X.getVisibility();
+            abstractComponentCallbacksC0479s.b().f4993j = abstractComponentCallbacksC0479s.f5018X.getAlpha();
+            if (abstractComponentCallbacksC0479s.f5017W != null && visibility == 0) {
+                View findFocus = abstractComponentCallbacksC0479s.f5018X.findFocus();
                 if (findFocus != null) {
-                    abstractComponentCallbacksC0475s.b().f5026k = findFocus;
+                    abstractComponentCallbacksC0479s.b().f4994k = findFocus;
                     if (N.E(2)) {
-                        Log.v("FragmentManager", "requestFocus: Saved focused view " + findFocus + " for Fragment " + abstractComponentCallbacksC0475s);
+                        Log.v("FragmentManager", "requestFocus: Saved focused view " + findFocus + " for Fragment " + abstractComponentCallbacksC0479s);
                     }
                 }
-                abstractComponentCallbacksC0475s.f5050X.setAlpha(0.0f);
+                abstractComponentCallbacksC0479s.f5018X.setAlpha(0.0f);
             }
         }
-        abstractComponentCallbacksC0475s.f5052n = 2;
+        abstractComponentCallbacksC0479s.f5024n = 2;
     }
 
     public final void g() {
-        AbstractComponentCallbacksC0475s h9;
+        AbstractComponentCallbacksC0479s b9;
         boolean E8 = N.E(3);
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = this.f4907c;
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = this.f4875c;
         if (E8) {
-            Log.d("FragmentManager", "movefrom CREATED: " + abstractComponentCallbacksC0475s);
+            Log.d("FragmentManager", "movefrom CREATED: " + abstractComponentCallbacksC0479s);
         }
-        boolean z3 = true;
-        boolean z6 = abstractComponentCallbacksC0475s.f5032E && !abstractComponentCallbacksC0475s.k();
-        S0.n nVar = this.f4906b;
-        if (z6) {
-            nVar.r(abstractComponentCallbacksC0475s.f5066x, null);
+        boolean z6 = true;
+        boolean z9 = abstractComponentCallbacksC0479s.f5000E && !abstractComponentCallbacksC0479s.k();
+        l4.q qVar = this.f4874b;
+        if (z9) {
+            qVar.n(abstractComponentCallbacksC0479s.f5034x, null);
         }
-        if (!z6) {
-            S s9 = (S) nVar.f2805x;
-            if (!((s9.f4885a.containsKey(abstractComponentCallbacksC0475s.f5066x) && s9.f4888d) ? s9.f4889e : true)) {
-                String str = abstractComponentCallbacksC0475s.f5028A;
-                if (str != null && (h9 = nVar.h(str)) != null && h9.f5046T) {
-                    abstractComponentCallbacksC0475s.f5069z = h9;
+        if (!z9) {
+            S s9 = (S) qVar.f38948w;
+            if (!((s9.f4853a.containsKey(abstractComponentCallbacksC0479s.f5034x) && s9.f4856d) ? s9.f4857e : true)) {
+                String str = abstractComponentCallbacksC0479s.f4996A;
+                if (str != null && (b9 = qVar.b(str)) != null && b9.f5014T) {
+                    abstractComponentCallbacksC0479s.f5036z = b9;
                 }
-                abstractComponentCallbacksC0475s.f5052n = 0;
+                abstractComponentCallbacksC0479s.f5024n = 0;
                 return;
             }
         }
-        C0479w c0479w = abstractComponentCallbacksC0475s.f5038L;
-        if (c0479w != null) {
-            z3 = ((S) nVar.f2805x).f4889e;
+        C0483w c0483w = abstractComponentCallbacksC0479s.f5006L;
+        if (c0483w != null) {
+            z6 = ((S) qVar.f38948w).f4857e;
         } else {
-            AbstractActivityC0480x abstractActivityC0480x = c0479w.f5076u;
-            if (abstractActivityC0480x != null) {
-                z3 = true ^ abstractActivityC0480x.isChangingConfigurations();
+            AbstractActivityC0484x abstractActivityC0484x = c0483w.f5042A;
+            if (abstractActivityC0484x != null) {
+                z6 = true ^ abstractActivityC0484x.isChangingConfigurations();
             }
         }
-        if (z6 || z3) {
-            ((S) nVar.f2805x).b(abstractComponentCallbacksC0475s);
+        if (z9 || z6) {
+            ((S) qVar.f38948w).b(abstractComponentCallbacksC0479s);
         }
-        abstractComponentCallbacksC0475s.f5039M.k();
-        abstractComponentCallbacksC0475s.f5058s0.e(EnumC0496n.ON_DESTROY);
-        abstractComponentCallbacksC0475s.f5052n = 0;
-        abstractComponentCallbacksC0475s.f5048V = false;
-        abstractComponentCallbacksC0475s.f5055p0 = false;
-        abstractComponentCallbacksC0475s.f5048V = true;
-        if (!abstractComponentCallbacksC0475s.f5048V) {
-            throw new d0("Fragment " + abstractComponentCallbacksC0475s + " did not call through to super.onDestroy()");
+        abstractComponentCallbacksC0479s.f5007M.k();
+        abstractComponentCallbacksC0479s.f5025n0.e(EnumC0500n.ON_DESTROY);
+        abstractComponentCallbacksC0479s.f5024n = 0;
+        abstractComponentCallbacksC0479s.f5016V = false;
+        abstractComponentCallbacksC0479s.f5022k0 = false;
+        abstractComponentCallbacksC0479s.f5016V = true;
+        if (!abstractComponentCallbacksC0479s.f5016V) {
+            throw new d0("Fragment " + abstractComponentCallbacksC0479s + " did not call through to super.onDestroy()");
         }
-        this.f4905a.E(abstractComponentCallbacksC0475s, false);
-        Iterator it = nVar.j().iterator();
+        this.f4873a.k(abstractComponentCallbacksC0479s, false);
+        Iterator it = qVar.d().iterator();
         while (it.hasNext()) {
             V v9 = (V) it.next();
             if (v9 != null) {
-                String str2 = abstractComponentCallbacksC0475s.f5066x;
-                AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s2 = v9.f4907c;
-                if (str2.equals(abstractComponentCallbacksC0475s2.f5028A)) {
-                    abstractComponentCallbacksC0475s2.f5069z = abstractComponentCallbacksC0475s;
-                    abstractComponentCallbacksC0475s2.f5028A = null;
+                String str2 = abstractComponentCallbacksC0479s.f5034x;
+                AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s2 = v9.f4875c;
+                if (str2.equals(abstractComponentCallbacksC0479s2.f4996A)) {
+                    abstractComponentCallbacksC0479s2.f5036z = abstractComponentCallbacksC0479s;
+                    abstractComponentCallbacksC0479s2.f4996A = null;
                 }
             }
         }
-        String str3 = abstractComponentCallbacksC0475s.f5028A;
+        String str3 = abstractComponentCallbacksC0479s.f4996A;
         if (str3 != null) {
-            abstractComponentCallbacksC0475s.f5069z = nVar.h(str3);
+            abstractComponentCallbacksC0479s.f5036z = qVar.b(str3);
         }
-        nVar.n(this);
+        qVar.k(this);
     }
 
     public final void h() {
         View view;
         boolean E8 = N.E(3);
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = this.f4907c;
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = this.f4875c;
         if (E8) {
-            Log.d("FragmentManager", "movefrom CREATE_VIEW: " + abstractComponentCallbacksC0475s);
+            Log.d("FragmentManager", "movefrom CREATE_VIEW: " + abstractComponentCallbacksC0479s);
         }
-        ViewGroup viewGroup = abstractComponentCallbacksC0475s.f5049W;
-        if (viewGroup != null && (view = abstractComponentCallbacksC0475s.f5050X) != null) {
+        ViewGroup viewGroup = abstractComponentCallbacksC0479s.f5017W;
+        if (viewGroup != null && (view = abstractComponentCallbacksC0479s.f5018X) != null) {
             viewGroup.removeView(view);
         }
-        abstractComponentCallbacksC0475s.f5039M.t(1);
-        if (abstractComponentCallbacksC0475s.f5050X != null) {
-            X x9 = abstractComponentCallbacksC0475s.f5059t0;
+        abstractComponentCallbacksC0479s.f5007M.t(1);
+        if (abstractComponentCallbacksC0479s.f5018X != null) {
+            X x9 = abstractComponentCallbacksC0479s.f5026o0;
             x9.b();
-            if (x9.f4921w.f5178d.compareTo(EnumC0497o.f5166v) >= 0) {
-                abstractComponentCallbacksC0475s.f5059t0.a(EnumC0496n.ON_DESTROY);
+            if (x9.f4889w.f5145d.compareTo(EnumC0501o.f5133v) >= 0) {
+                abstractComponentCallbacksC0479s.f5026o0.a(EnumC0500n.ON_DESTROY);
             }
         }
-        abstractComponentCallbacksC0475s.f5052n = 1;
-        abstractComponentCallbacksC0475s.f5048V = false;
-        abstractComponentCallbacksC0475s.q();
-        if (!abstractComponentCallbacksC0475s.f5048V) {
-            throw new d0("Fragment " + abstractComponentCallbacksC0475s + " did not call through to super.onDestroyView()");
+        abstractComponentCallbacksC0479s.f5024n = 1;
+        abstractComponentCallbacksC0479s.f5016V = false;
+        abstractComponentCallbacksC0479s.q();
+        if (!abstractComponentCallbacksC0479s.f5016V) {
+            throw new d0("Fragment " + abstractComponentCallbacksC0479s + " did not call through to super.onDestroyView()");
         }
-        s.l lVar = ((C4577b) new Z2.e(abstractComponentCallbacksC0475s.getViewModelStore(), C4577b.f38026b).r(C4577b.class)).f38027a;
-        if (lVar.f40444v > 0) {
-            throw D.y.i(lVar.f40443u[0]);
+        s.l lVar = ((C4582b) new b3.e(abstractComponentCallbacksC0479s.getViewModelStore(), C4582b.f38143b).u(C4582b.class)).f38144a;
+        if (lVar.f40280v > 0) {
+            throw D.x.h(lVar.f40279u[0]);
         }
-        abstractComponentCallbacksC0475s.f5036I = false;
-        this.f4905a.O(abstractComponentCallbacksC0475s, false);
-        abstractComponentCallbacksC0475s.f5049W = null;
-        abstractComponentCallbacksC0475s.f5050X = null;
-        abstractComponentCallbacksC0475s.f5059t0 = null;
-        abstractComponentCallbacksC0475s.f5061u0.e(null);
-        abstractComponentCallbacksC0475s.f5034G = false;
+        abstractComponentCallbacksC0479s.f5004I = false;
+        this.f4873a.v(abstractComponentCallbacksC0479s, false);
+        abstractComponentCallbacksC0479s.f5017W = null;
+        abstractComponentCallbacksC0479s.f5018X = null;
+        abstractComponentCallbacksC0479s.f5026o0 = null;
+        abstractComponentCallbacksC0479s.f5027p0.e(null);
+        abstractComponentCallbacksC0479s.f5002G = false;
     }
 
     public final void i() {
         boolean E8 = N.E(3);
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = this.f4907c;
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = this.f4875c;
         if (E8) {
-            Log.d("FragmentManager", "movefrom ATTACHED: " + abstractComponentCallbacksC0475s);
+            Log.d("FragmentManager", "movefrom ATTACHED: " + abstractComponentCallbacksC0479s);
         }
-        abstractComponentCallbacksC0475s.f5052n = -1;
-        abstractComponentCallbacksC0475s.f5048V = false;
-        abstractComponentCallbacksC0475s.r();
-        if (!abstractComponentCallbacksC0475s.f5048V) {
-            throw new d0("Fragment " + abstractComponentCallbacksC0475s + " did not call through to super.onDetach()");
+        abstractComponentCallbacksC0479s.f5024n = -1;
+        abstractComponentCallbacksC0479s.f5016V = false;
+        abstractComponentCallbacksC0479s.r();
+        if (!abstractComponentCallbacksC0479s.f5016V) {
+            throw new d0("Fragment " + abstractComponentCallbacksC0479s + " did not call through to super.onDetach()");
         }
-        O o6 = abstractComponentCallbacksC0475s.f5039M;
-        if (!o6.f4844G) {
-            o6.k();
-            abstractComponentCallbacksC0475s.f5039M = new O();
+        O o4 = abstractComponentCallbacksC0479s.f5007M;
+        if (!o4.f4812G) {
+            o4.k();
+            abstractComponentCallbacksC0479s.f5007M = new O();
         }
-        this.f4905a.F(abstractComponentCallbacksC0475s, false);
-        abstractComponentCallbacksC0475s.f5052n = -1;
-        abstractComponentCallbacksC0475s.f5038L = null;
-        abstractComponentCallbacksC0475s.f5040N = null;
-        abstractComponentCallbacksC0475s.f5037K = null;
-        if (!abstractComponentCallbacksC0475s.f5032E || abstractComponentCallbacksC0475s.k()) {
-            S s9 = (S) this.f4906b.f2805x;
-            if (!((s9.f4885a.containsKey(abstractComponentCallbacksC0475s.f5066x) && s9.f4888d) ? s9.f4889e : true)) {
+        this.f4873a.l(abstractComponentCallbacksC0479s, false);
+        abstractComponentCallbacksC0479s.f5024n = -1;
+        abstractComponentCallbacksC0479s.f5006L = null;
+        abstractComponentCallbacksC0479s.f5008N = null;
+        abstractComponentCallbacksC0479s.f5005K = null;
+        if (!abstractComponentCallbacksC0479s.f5000E || abstractComponentCallbacksC0479s.k()) {
+            S s9 = (S) this.f4874b.f38948w;
+            if (!((s9.f4853a.containsKey(abstractComponentCallbacksC0479s.f5034x) && s9.f4856d) ? s9.f4857e : true)) {
                 return;
             }
         }
         if (N.E(3)) {
-            Log.d("FragmentManager", "initState called for fragment: " + abstractComponentCallbacksC0475s);
+            Log.d("FragmentManager", "initState called for fragment: " + abstractComponentCallbacksC0479s);
         }
-        abstractComponentCallbacksC0475s.h();
+        abstractComponentCallbacksC0479s.h();
     }
 
     public final void j() {
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = this.f4907c;
-        if (abstractComponentCallbacksC0475s.f5033F && abstractComponentCallbacksC0475s.f5034G && !abstractComponentCallbacksC0475s.f5036I) {
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = this.f4875c;
+        if (abstractComponentCallbacksC0479s.f5001F && abstractComponentCallbacksC0479s.f5002G && !abstractComponentCallbacksC0479s.f5004I) {
             if (N.E(3)) {
-                Log.d("FragmentManager", "moveto CREATE_VIEW: " + abstractComponentCallbacksC0475s);
+                Log.d("FragmentManager", "moveto CREATE_VIEW: " + abstractComponentCallbacksC0479s);
             }
-            Bundle bundle = abstractComponentCallbacksC0475s.f5060u;
+            Bundle bundle = abstractComponentCallbacksC0479s.f5031u;
             Bundle bundle2 = bundle != null ? bundle.getBundle("savedInstanceState") : null;
-            abstractComponentCallbacksC0475s.x(abstractComponentCallbacksC0475s.s(bundle2), null, bundle2);
-            View view = abstractComponentCallbacksC0475s.f5050X;
+            abstractComponentCallbacksC0479s.x(abstractComponentCallbacksC0479s.s(bundle2), null, bundle2);
+            View view = abstractComponentCallbacksC0479s.f5018X;
             if (view != null) {
                 view.setSaveFromParentEnabled(false);
-                abstractComponentCallbacksC0475s.f5050X.setTag(C5275R.id.fragment_container_view_tag, abstractComponentCallbacksC0475s);
-                if (abstractComponentCallbacksC0475s.f5044R) {
-                    abstractComponentCallbacksC0475s.f5050X.setVisibility(8);
+                abstractComponentCallbacksC0479s.f5018X.setTag(C5248R.id.fragment_container_view_tag, abstractComponentCallbacksC0479s);
+                if (abstractComponentCallbacksC0479s.f5012R) {
+                    abstractComponentCallbacksC0479s.f5018X.setVisibility(8);
                 }
-                Bundle bundle3 = abstractComponentCallbacksC0475s.f5060u;
+                Bundle bundle3 = abstractComponentCallbacksC0479s.f5031u;
                 if (bundle3 != null) {
                     bundle3.getBundle("savedInstanceState");
                 }
-                abstractComponentCallbacksC0475s.f5039M.t(2);
-                this.f4905a.N(abstractComponentCallbacksC0475s, abstractComponentCallbacksC0475s.f5050X, bundle2, false);
-                abstractComponentCallbacksC0475s.f5052n = 2;
+                abstractComponentCallbacksC0479s.f5007M.t(2);
+                this.f4873a.u(abstractComponentCallbacksC0479s, abstractComponentCallbacksC0479s.f5018X, bundle2, false);
+                abstractComponentCallbacksC0479s.f5024n = 2;
             }
         }
     }
@@ -592,63 +592,63 @@ public final class V {
         ViewGroup viewGroup;
         ViewGroup viewGroup2;
         ViewGroup viewGroup3;
-        S0.n nVar = this.f4906b;
-        boolean z3 = this.f4908d;
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = this.f4907c;
-        if (z3) {
+        l4.q qVar = this.f4874b;
+        boolean z6 = this.f4876d;
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = this.f4875c;
+        if (z6) {
             if (N.E(2)) {
-                Log.v("FragmentManager", "Ignoring re-entrant call to moveToExpectedState() for " + abstractComponentCallbacksC0475s);
+                Log.v("FragmentManager", "Ignoring re-entrant call to moveToExpectedState() for " + abstractComponentCallbacksC0479s);
                 return;
             }
             return;
         }
         try {
-            this.f4908d = true;
-            boolean z6 = false;
+            this.f4876d = true;
+            boolean z9 = false;
             while (true) {
-                int d2 = d();
-                int i = abstractComponentCallbacksC0475s.f5052n;
-                int i6 = 3;
-                if (d2 == i) {
-                    if (!z6 && i == -1 && abstractComponentCallbacksC0475s.f5032E && !abstractComponentCallbacksC0475s.k()) {
+                int d9 = d();
+                int i = abstractComponentCallbacksC0479s.f5024n;
+                int i4 = 3;
+                if (d9 == i) {
+                    if (!z9 && i == -1 && abstractComponentCallbacksC0479s.f5000E && !abstractComponentCallbacksC0479s.k()) {
                         if (N.E(3)) {
-                            Log.d("FragmentManager", "Cleaning up state of never attached fragment: " + abstractComponentCallbacksC0475s);
+                            Log.d("FragmentManager", "Cleaning up state of never attached fragment: " + abstractComponentCallbacksC0479s);
                         }
-                        ((S) nVar.f2805x).b(abstractComponentCallbacksC0475s);
-                        nVar.n(this);
+                        ((S) qVar.f38948w).b(abstractComponentCallbacksC0479s);
+                        qVar.k(this);
                         if (N.E(3)) {
-                            Log.d("FragmentManager", "initState called for fragment: " + abstractComponentCallbacksC0475s);
+                            Log.d("FragmentManager", "initState called for fragment: " + abstractComponentCallbacksC0479s);
                         }
-                        abstractComponentCallbacksC0475s.h();
+                        abstractComponentCallbacksC0479s.h();
                     }
-                    if (abstractComponentCallbacksC0475s.f5054o0) {
-                        if (abstractComponentCallbacksC0475s.f5050X != null && (viewGroup = abstractComponentCallbacksC0475s.f5049W) != null) {
-                            C0467j f3 = C0467j.f(viewGroup, abstractComponentCallbacksC0475s.f());
-                            if (abstractComponentCallbacksC0475s.f5044R) {
-                                f3.getClass();
+                    if (abstractComponentCallbacksC0479s.f5021j0) {
+                        if (abstractComponentCallbacksC0479s.f5018X != null && (viewGroup = abstractComponentCallbacksC0479s.f5017W) != null) {
+                            C0471j f2 = C0471j.f(viewGroup, abstractComponentCallbacksC0479s.f());
+                            if (abstractComponentCallbacksC0479s.f5012R) {
+                                f2.getClass();
                                 if (N.E(2)) {
-                                    Log.v("FragmentManager", "SpecialEffectsController: Enqueuing hide operation for fragment " + abstractComponentCallbacksC0475s);
+                                    Log.v("FragmentManager", "SpecialEffectsController: Enqueuing hide operation for fragment " + abstractComponentCallbacksC0479s);
                                 }
-                                f3.a(3, 1, this);
+                                f2.a(3, 1, this);
                             } else {
-                                f3.getClass();
+                                f2.getClass();
                                 if (N.E(2)) {
-                                    Log.v("FragmentManager", "SpecialEffectsController: Enqueuing show operation for fragment " + abstractComponentCallbacksC0475s);
+                                    Log.v("FragmentManager", "SpecialEffectsController: Enqueuing show operation for fragment " + abstractComponentCallbacksC0479s);
                                 }
-                                f3.a(2, 1, this);
+                                f2.a(2, 1, this);
                             }
                         }
-                        N n9 = abstractComponentCallbacksC0475s.f5037K;
-                        if (n9 != null && abstractComponentCallbacksC0475s.f5031D && N.F(abstractComponentCallbacksC0475s)) {
-                            n9.f4841D = true;
+                        N n9 = abstractComponentCallbacksC0479s.f5005K;
+                        if (n9 != null && abstractComponentCallbacksC0479s.f4999D && N.F(abstractComponentCallbacksC0479s)) {
+                            n9.f4809D = true;
                         }
-                        abstractComponentCallbacksC0475s.f5054o0 = false;
-                        abstractComponentCallbacksC0475s.f5039M.n();
+                        abstractComponentCallbacksC0479s.f5021j0 = false;
+                        abstractComponentCallbacksC0479s.f5007M.n();
                     }
-                    this.f4908d = false;
+                    this.f4876d = false;
                     return;
                 }
-                if (d2 <= i) {
+                if (d9 <= i) {
                     switch (i - 1) {
                         case -1:
                             i();
@@ -658,34 +658,34 @@ public final class V {
                             break;
                         case 1:
                             h();
-                            abstractComponentCallbacksC0475s.f5052n = 1;
+                            abstractComponentCallbacksC0479s.f5024n = 1;
                             break;
                         case 2:
-                            abstractComponentCallbacksC0475s.f5034G = false;
-                            abstractComponentCallbacksC0475s.f5052n = 2;
+                            abstractComponentCallbacksC0479s.f5002G = false;
+                            abstractComponentCallbacksC0479s.f5024n = 2;
                             break;
                         case 3:
                             if (N.E(3)) {
-                                Log.d("FragmentManager", "movefrom ACTIVITY_CREATED: " + abstractComponentCallbacksC0475s);
+                                Log.d("FragmentManager", "movefrom ACTIVITY_CREATED: " + abstractComponentCallbacksC0479s);
                             }
-                            if (abstractComponentCallbacksC0475s.f5050X != null && abstractComponentCallbacksC0475s.f5062v == null) {
+                            if (abstractComponentCallbacksC0479s.f5018X != null && abstractComponentCallbacksC0479s.f5032v == null) {
                                 o();
                             }
-                            if (abstractComponentCallbacksC0475s.f5050X != null && (viewGroup2 = abstractComponentCallbacksC0475s.f5049W) != null) {
-                                C0467j f9 = C0467j.f(viewGroup2, abstractComponentCallbacksC0475s.f());
+                            if (abstractComponentCallbacksC0479s.f5018X != null && (viewGroup2 = abstractComponentCallbacksC0479s.f5017W) != null) {
+                                C0471j f9 = C0471j.f(viewGroup2, abstractComponentCallbacksC0479s.f());
                                 f9.getClass();
                                 if (N.E(2)) {
-                                    Log.v("FragmentManager", "SpecialEffectsController: Enqueuing remove operation for fragment " + abstractComponentCallbacksC0475s);
+                                    Log.v("FragmentManager", "SpecialEffectsController: Enqueuing remove operation for fragment " + abstractComponentCallbacksC0479s);
                                 }
                                 f9.a(1, 3, this);
                             }
-                            abstractComponentCallbacksC0475s.f5052n = 3;
+                            abstractComponentCallbacksC0479s.f5024n = 3;
                             break;
                         case 4:
                             q();
                             break;
                         case 5:
-                            abstractComponentCallbacksC0475s.f5052n = 5;
+                            abstractComponentCallbacksC0479s.f5024n = 5;
                             break;
                         case 6:
                             l();
@@ -707,96 +707,96 @@ public final class V {
                             a();
                             break;
                         case 4:
-                            if (abstractComponentCallbacksC0475s.f5050X != null && (viewGroup3 = abstractComponentCallbacksC0475s.f5049W) != null) {
-                                C0467j f10 = C0467j.f(viewGroup3, abstractComponentCallbacksC0475s.f());
-                                int visibility = abstractComponentCallbacksC0475s.f5050X.getVisibility();
+                            if (abstractComponentCallbacksC0479s.f5018X != null && (viewGroup3 = abstractComponentCallbacksC0479s.f5017W) != null) {
+                                C0471j f10 = C0471j.f(viewGroup3, abstractComponentCallbacksC0479s.f());
+                                int visibility = abstractComponentCallbacksC0479s.f5018X.getVisibility();
                                 if (visibility == 0) {
-                                    i6 = 2;
+                                    i4 = 2;
                                 } else if (visibility == 4) {
-                                    i6 = 4;
+                                    i4 = 4;
                                 } else if (visibility != 8) {
                                     throw new IllegalArgumentException("Unknown visibility " + visibility);
                                 }
                                 f10.getClass();
-                                AbstractC4404f.l(i6, "finalState");
+                                Wv.n(i4, "finalState");
                                 if (N.E(2)) {
-                                    Log.v("FragmentManager", "SpecialEffectsController: Enqueuing add operation for fragment " + abstractComponentCallbacksC0475s);
+                                    Log.v("FragmentManager", "SpecialEffectsController: Enqueuing add operation for fragment " + abstractComponentCallbacksC0479s);
                                 }
-                                f10.a(i6, 2, this);
+                                f10.a(i4, 2, this);
                             }
-                            abstractComponentCallbacksC0475s.f5052n = 4;
+                            abstractComponentCallbacksC0479s.f5024n = 4;
                             break;
                         case 5:
                             p();
                             break;
                         case 6:
-                            abstractComponentCallbacksC0475s.f5052n = 6;
+                            abstractComponentCallbacksC0479s.f5024n = 6;
                             break;
                         case 7:
                             n();
                             break;
                     }
                 }
-                z6 = true;
+                z9 = true;
             }
         } catch (Throwable th) {
-            this.f4908d = false;
+            this.f4876d = false;
             throw th;
         }
     }
 
     public final void l() {
         boolean E8 = N.E(3);
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = this.f4907c;
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = this.f4875c;
         if (E8) {
-            Log.d("FragmentManager", "movefrom RESUMED: " + abstractComponentCallbacksC0475s);
+            Log.d("FragmentManager", "movefrom RESUMED: " + abstractComponentCallbacksC0479s);
         }
-        abstractComponentCallbacksC0475s.f5039M.t(5);
-        if (abstractComponentCallbacksC0475s.f5050X != null) {
-            abstractComponentCallbacksC0475s.f5059t0.a(EnumC0496n.ON_PAUSE);
+        abstractComponentCallbacksC0479s.f5007M.t(5);
+        if (abstractComponentCallbacksC0479s.f5018X != null) {
+            abstractComponentCallbacksC0479s.f5026o0.a(EnumC0500n.ON_PAUSE);
         }
-        abstractComponentCallbacksC0475s.f5058s0.e(EnumC0496n.ON_PAUSE);
-        abstractComponentCallbacksC0475s.f5052n = 6;
-        abstractComponentCallbacksC0475s.f5048V = true;
-        this.f4905a.G(abstractComponentCallbacksC0475s, false);
+        abstractComponentCallbacksC0479s.f5025n0.e(EnumC0500n.ON_PAUSE);
+        abstractComponentCallbacksC0479s.f5024n = 6;
+        abstractComponentCallbacksC0479s.f5016V = true;
+        this.f4873a.m(abstractComponentCallbacksC0479s, false);
     }
 
     public final void m(ClassLoader classLoader) {
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = this.f4907c;
-        Bundle bundle = abstractComponentCallbacksC0475s.f5060u;
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = this.f4875c;
+        Bundle bundle = abstractComponentCallbacksC0479s.f5031u;
         if (bundle == null) {
             return;
         }
         bundle.setClassLoader(classLoader);
-        if (abstractComponentCallbacksC0475s.f5060u.getBundle("savedInstanceState") == null) {
-            abstractComponentCallbacksC0475s.f5060u.putBundle("savedInstanceState", new Bundle());
+        if (abstractComponentCallbacksC0479s.f5031u.getBundle("savedInstanceState") == null) {
+            abstractComponentCallbacksC0479s.f5031u.putBundle("savedInstanceState", new Bundle());
         }
-        abstractComponentCallbacksC0475s.f5062v = abstractComponentCallbacksC0475s.f5060u.getSparseParcelableArray("viewState");
-        abstractComponentCallbacksC0475s.f5064w = abstractComponentCallbacksC0475s.f5060u.getBundle("viewRegistryState");
-        U u3 = (U) abstractComponentCallbacksC0475s.f5060u.getParcelable(com.anythink.core.express.b.a.f17526b);
-        if (u3 != null) {
-            abstractComponentCallbacksC0475s.f5028A = u3.f4895E;
-            abstractComponentCallbacksC0475s.f5029B = u3.f4896F;
-            abstractComponentCallbacksC0475s.f5051Z = u3.f4897G;
+        abstractComponentCallbacksC0479s.f5032v = abstractComponentCallbacksC0479s.f5031u.getSparseParcelableArray("viewState");
+        abstractComponentCallbacksC0479s.f5033w = abstractComponentCallbacksC0479s.f5031u.getBundle("viewRegistryState");
+        U u6 = (U) abstractComponentCallbacksC0479s.f5031u.getParcelable(com.anythink.core.express.b.a.f18313b);
+        if (u6 != null) {
+            abstractComponentCallbacksC0479s.f4996A = u6.f4863E;
+            abstractComponentCallbacksC0479s.f4997B = u6.f4864F;
+            abstractComponentCallbacksC0479s.f5019Z = u6.f4865G;
         }
-        if (abstractComponentCallbacksC0475s.f5051Z) {
+        if (abstractComponentCallbacksC0479s.f5019Z) {
             return;
         }
-        abstractComponentCallbacksC0475s.Y = true;
+        abstractComponentCallbacksC0479s.Y = true;
     }
 
     public final void n() {
         boolean E8 = N.E(3);
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = this.f4907c;
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = this.f4875c;
         if (E8) {
-            Log.d("FragmentManager", "moveto RESUMED: " + abstractComponentCallbacksC0475s);
+            Log.d("FragmentManager", "moveto RESUMED: " + abstractComponentCallbacksC0479s);
         }
-        r rVar = abstractComponentCallbacksC0475s.f5053n0;
-        View view = rVar == null ? null : rVar.f5026k;
+        r rVar = abstractComponentCallbacksC0479s.f5020i0;
+        View view = rVar == null ? null : rVar.f4994k;
         if (view != null) {
-            if (view != abstractComponentCallbacksC0475s.f5050X) {
+            if (view != abstractComponentCallbacksC0479s.f5018X) {
                 for (ViewParent parent = view.getParent(); parent != null; parent = parent.getParent()) {
-                    if (parent != abstractComponentCallbacksC0475s.f5050X) {
+                    if (parent != abstractComponentCallbacksC0479s.f5018X) {
                     }
                 }
             }
@@ -807,133 +807,133 @@ public final class V {
                 sb.append(" ");
                 sb.append(requestFocus ? "succeeded" : "failed");
                 sb.append(" on Fragment ");
-                sb.append(abstractComponentCallbacksC0475s);
+                sb.append(abstractComponentCallbacksC0479s);
                 sb.append(" resulting in focused view ");
-                sb.append(abstractComponentCallbacksC0475s.f5050X.findFocus());
+                sb.append(abstractComponentCallbacksC0479s.f5018X.findFocus());
                 Log.v("FragmentManager", sb.toString());
             }
         }
-        abstractComponentCallbacksC0475s.b().f5026k = null;
-        abstractComponentCallbacksC0475s.f5039M.K();
-        abstractComponentCallbacksC0475s.f5039M.x(true);
-        abstractComponentCallbacksC0475s.f5052n = 7;
-        abstractComponentCallbacksC0475s.f5048V = false;
-        abstractComponentCallbacksC0475s.f5048V = true;
-        if (!abstractComponentCallbacksC0475s.f5048V) {
-            throw new d0("Fragment " + abstractComponentCallbacksC0475s + " did not call through to super.onResume()");
+        abstractComponentCallbacksC0479s.b().f4994k = null;
+        abstractComponentCallbacksC0479s.f5007M.K();
+        abstractComponentCallbacksC0479s.f5007M.x(true);
+        abstractComponentCallbacksC0479s.f5024n = 7;
+        abstractComponentCallbacksC0479s.f5016V = false;
+        abstractComponentCallbacksC0479s.f5016V = true;
+        if (!abstractComponentCallbacksC0479s.f5016V) {
+            throw new d0("Fragment " + abstractComponentCallbacksC0479s + " did not call through to super.onResume()");
         }
-        C0505x c0505x = abstractComponentCallbacksC0475s.f5058s0;
-        EnumC0496n enumC0496n = EnumC0496n.ON_RESUME;
-        c0505x.e(enumC0496n);
-        if (abstractComponentCallbacksC0475s.f5050X != null) {
-            abstractComponentCallbacksC0475s.f5059t0.f4921w.e(enumC0496n);
+        C0509x c0509x = abstractComponentCallbacksC0479s.f5025n0;
+        EnumC0500n enumC0500n = EnumC0500n.ON_RESUME;
+        c0509x.e(enumC0500n);
+        if (abstractComponentCallbacksC0479s.f5018X != null) {
+            abstractComponentCallbacksC0479s.f5026o0.f4889w.e(enumC0500n);
         }
-        O o6 = abstractComponentCallbacksC0475s.f5039M;
-        o6.f4842E = false;
-        o6.f4843F = false;
-        o6.f4848L.f4890f = false;
-        o6.t(7);
-        this.f4905a.J(abstractComponentCallbacksC0475s, false);
-        this.f4906b.r(abstractComponentCallbacksC0475s.f5066x, null);
-        abstractComponentCallbacksC0475s.f5060u = null;
-        abstractComponentCallbacksC0475s.f5062v = null;
-        abstractComponentCallbacksC0475s.f5064w = null;
+        O o4 = abstractComponentCallbacksC0479s.f5007M;
+        o4.f4810E = false;
+        o4.f4811F = false;
+        o4.f4816L.f4858f = false;
+        o4.t(7);
+        this.f4873a.q(abstractComponentCallbacksC0479s, false);
+        this.f4874b.n(abstractComponentCallbacksC0479s.f5034x, null);
+        abstractComponentCallbacksC0479s.f5031u = null;
+        abstractComponentCallbacksC0479s.f5032v = null;
+        abstractComponentCallbacksC0479s.f5033w = null;
     }
 
     public final void o() {
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = this.f4907c;
-        if (abstractComponentCallbacksC0475s.f5050X == null) {
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = this.f4875c;
+        if (abstractComponentCallbacksC0479s.f5018X == null) {
             return;
         }
         if (N.E(2)) {
-            Log.v("FragmentManager", "Saving view state for fragment " + abstractComponentCallbacksC0475s + " with view " + abstractComponentCallbacksC0475s.f5050X);
+            Log.v("FragmentManager", "Saving view state for fragment " + abstractComponentCallbacksC0479s + " with view " + abstractComponentCallbacksC0479s.f5018X);
         }
         SparseArray<Parcelable> sparseArray = new SparseArray<>();
-        abstractComponentCallbacksC0475s.f5050X.saveHierarchyState(sparseArray);
+        abstractComponentCallbacksC0479s.f5018X.saveHierarchyState(sparseArray);
         if (sparseArray.size() > 0) {
-            abstractComponentCallbacksC0475s.f5062v = sparseArray;
+            abstractComponentCallbacksC0479s.f5032v = sparseArray;
         }
         Bundle bundle = new Bundle();
-        abstractComponentCallbacksC0475s.f5059t0.f4922x.c(bundle);
+        abstractComponentCallbacksC0479s.f5026o0.f4890x.c(bundle);
         if (bundle.isEmpty()) {
             return;
         }
-        abstractComponentCallbacksC0475s.f5064w = bundle;
+        abstractComponentCallbacksC0479s.f5033w = bundle;
     }
 
     public final void p() {
         boolean E8 = N.E(3);
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = this.f4907c;
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = this.f4875c;
         if (E8) {
-            Log.d("FragmentManager", "moveto STARTED: " + abstractComponentCallbacksC0475s);
+            Log.d("FragmentManager", "moveto STARTED: " + abstractComponentCallbacksC0479s);
         }
-        abstractComponentCallbacksC0475s.f5039M.K();
-        abstractComponentCallbacksC0475s.f5039M.x(true);
-        abstractComponentCallbacksC0475s.f5052n = 5;
-        abstractComponentCallbacksC0475s.f5048V = false;
-        abstractComponentCallbacksC0475s.u();
-        if (!abstractComponentCallbacksC0475s.f5048V) {
-            throw new d0("Fragment " + abstractComponentCallbacksC0475s + " did not call through to super.onStart()");
+        abstractComponentCallbacksC0479s.f5007M.K();
+        abstractComponentCallbacksC0479s.f5007M.x(true);
+        abstractComponentCallbacksC0479s.f5024n = 5;
+        abstractComponentCallbacksC0479s.f5016V = false;
+        abstractComponentCallbacksC0479s.u();
+        if (!abstractComponentCallbacksC0479s.f5016V) {
+            throw new d0("Fragment " + abstractComponentCallbacksC0479s + " did not call through to super.onStart()");
         }
-        C0505x c0505x = abstractComponentCallbacksC0475s.f5058s0;
-        EnumC0496n enumC0496n = EnumC0496n.ON_START;
-        c0505x.e(enumC0496n);
-        if (abstractComponentCallbacksC0475s.f5050X != null) {
-            abstractComponentCallbacksC0475s.f5059t0.f4921w.e(enumC0496n);
+        C0509x c0509x = abstractComponentCallbacksC0479s.f5025n0;
+        EnumC0500n enumC0500n = EnumC0500n.ON_START;
+        c0509x.e(enumC0500n);
+        if (abstractComponentCallbacksC0479s.f5018X != null) {
+            abstractComponentCallbacksC0479s.f5026o0.f4889w.e(enumC0500n);
         }
-        O o6 = abstractComponentCallbacksC0475s.f5039M;
-        o6.f4842E = false;
-        o6.f4843F = false;
-        o6.f4848L.f4890f = false;
-        o6.t(5);
-        this.f4905a.L(abstractComponentCallbacksC0475s, false);
+        O o4 = abstractComponentCallbacksC0479s.f5007M;
+        o4.f4810E = false;
+        o4.f4811F = false;
+        o4.f4816L.f4858f = false;
+        o4.t(5);
+        this.f4873a.s(abstractComponentCallbacksC0479s, false);
     }
 
     public final void q() {
         boolean E8 = N.E(3);
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = this.f4907c;
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = this.f4875c;
         if (E8) {
-            Log.d("FragmentManager", "movefrom STARTED: " + abstractComponentCallbacksC0475s);
+            Log.d("FragmentManager", "movefrom STARTED: " + abstractComponentCallbacksC0479s);
         }
-        O o6 = abstractComponentCallbacksC0475s.f5039M;
-        o6.f4843F = true;
-        o6.f4848L.f4890f = true;
-        o6.t(4);
-        if (abstractComponentCallbacksC0475s.f5050X != null) {
-            abstractComponentCallbacksC0475s.f5059t0.a(EnumC0496n.ON_STOP);
+        O o4 = abstractComponentCallbacksC0479s.f5007M;
+        o4.f4811F = true;
+        o4.f4816L.f4858f = true;
+        o4.t(4);
+        if (abstractComponentCallbacksC0479s.f5018X != null) {
+            abstractComponentCallbacksC0479s.f5026o0.a(EnumC0500n.ON_STOP);
         }
-        abstractComponentCallbacksC0475s.f5058s0.e(EnumC0496n.ON_STOP);
-        abstractComponentCallbacksC0475s.f5052n = 4;
-        abstractComponentCallbacksC0475s.f5048V = false;
-        abstractComponentCallbacksC0475s.v();
-        if (abstractComponentCallbacksC0475s.f5048V) {
-            this.f4905a.M(abstractComponentCallbacksC0475s, false);
+        abstractComponentCallbacksC0479s.f5025n0.e(EnumC0500n.ON_STOP);
+        abstractComponentCallbacksC0479s.f5024n = 4;
+        abstractComponentCallbacksC0479s.f5016V = false;
+        abstractComponentCallbacksC0479s.v();
+        if (abstractComponentCallbacksC0479s.f5016V) {
+            this.f4873a.t(abstractComponentCallbacksC0479s, false);
             return;
         }
-        throw new d0("Fragment " + abstractComponentCallbacksC0475s + " did not call through to super.onStop()");
+        throw new d0("Fragment " + abstractComponentCallbacksC0479s + " did not call through to super.onStop()");
     }
 
-    public V(C2991bm c2991bm, S0.n nVar, ClassLoader classLoader, G g4, Bundle bundle) {
-        this.f4905a = c2991bm;
-        this.f4906b = nVar;
-        U u3 = (U) bundle.getParcelable(com.anythink.core.express.b.a.f17526b);
-        AbstractComponentCallbacksC0475s a9 = g4.a(u3.f4898n);
-        a9.f5066x = u3.f4899u;
-        a9.f5033F = u3.f4900v;
-        a9.f5035H = true;
-        a9.f5041O = u3.f4901w;
-        a9.f5042P = u3.f4902x;
-        a9.f5043Q = u3.f4903y;
-        a9.f5046T = u3.f4904z;
-        a9.f5032E = u3.f4891A;
-        a9.f5045S = u3.f4892B;
-        a9.f5044R = u3.f4893C;
-        a9.f5057r0 = EnumC0497o.values()[u3.f4894D];
-        a9.f5028A = u3.f4895E;
-        a9.f5029B = u3.f4896F;
-        a9.f5051Z = u3.f4897G;
-        this.f4907c = a9;
-        a9.f5060u = bundle;
+    public V(S0.e eVar, l4.q qVar, ClassLoader classLoader, G g9, Bundle bundle) {
+        this.f4873a = eVar;
+        this.f4874b = qVar;
+        U u6 = (U) bundle.getParcelable(com.anythink.core.express.b.a.f18313b);
+        AbstractComponentCallbacksC0479s a9 = g9.a(u6.f4866n);
+        a9.f5034x = u6.f4867u;
+        a9.f5001F = u6.f4868v;
+        a9.f5003H = true;
+        a9.f5009O = u6.f4869w;
+        a9.f5010P = u6.f4870x;
+        a9.f5011Q = u6.f4871y;
+        a9.f5014T = u6.f4872z;
+        a9.f5000E = u6.f4859A;
+        a9.f5013S = u6.f4860B;
+        a9.f5012R = u6.f4861C;
+        a9.m0 = EnumC0501o.values()[u6.f4862D];
+        a9.f4996A = u6.f4863E;
+        a9.f4997B = u6.f4864F;
+        a9.f5019Z = u6.f4865G;
+        this.f4875c = a9;
+        a9.f5031u = bundle;
         Bundle bundle2 = bundle.getBundle("arguments");
         if (bundle2 != null) {
             bundle2.setClassLoader(classLoader);
@@ -944,19 +944,19 @@ public final class V {
         }
     }
 
-    public V(C2991bm c2991bm, S0.n nVar, AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s, Bundle bundle) {
-        this.f4905a = c2991bm;
-        this.f4906b = nVar;
-        this.f4907c = abstractComponentCallbacksC0475s;
-        abstractComponentCallbacksC0475s.f5062v = null;
-        abstractComponentCallbacksC0475s.f5064w = null;
-        abstractComponentCallbacksC0475s.J = 0;
-        abstractComponentCallbacksC0475s.f5034G = false;
-        abstractComponentCallbacksC0475s.f5031D = false;
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s2 = abstractComponentCallbacksC0475s.f5069z;
-        abstractComponentCallbacksC0475s.f5028A = abstractComponentCallbacksC0475s2 != null ? abstractComponentCallbacksC0475s2.f5066x : null;
-        abstractComponentCallbacksC0475s.f5069z = null;
-        abstractComponentCallbacksC0475s.f5060u = bundle;
-        abstractComponentCallbacksC0475s.f5068y = bundle.getBundle("arguments");
+    public V(S0.e eVar, l4.q qVar, AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s, Bundle bundle) {
+        this.f4873a = eVar;
+        this.f4874b = qVar;
+        this.f4875c = abstractComponentCallbacksC0479s;
+        abstractComponentCallbacksC0479s.f5032v = null;
+        abstractComponentCallbacksC0479s.f5033w = null;
+        abstractComponentCallbacksC0479s.J = 0;
+        abstractComponentCallbacksC0479s.f5002G = false;
+        abstractComponentCallbacksC0479s.f4999D = false;
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s2 = abstractComponentCallbacksC0479s.f5036z;
+        abstractComponentCallbacksC0479s.f4996A = abstractComponentCallbacksC0479s2 != null ? abstractComponentCallbacksC0479s2.f5034x : null;
+        abstractComponentCallbacksC0479s.f5036z = null;
+        abstractComponentCallbacksC0479s.f5031u = bundle;
+        abstractComponentCallbacksC0479s.f5035y = bundle.getBundle("arguments");
     }
 }

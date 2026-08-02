@@ -10,10 +10,10 @@ import android.net.Uri;
 import android.os.Looper;
 import java.util.Arrays;
 import java.util.List;
-import n5.InterfaceC4758a;
+import n5.InterfaceC4774a;
 
 /* loaded from: classes2.dex */
-public class SonyHomeBadger implements InterfaceC4758a {
+public class SonyHomeBadger implements InterfaceC4774a {
     private static final String INTENT_ACTION = "com.sonyericsson.home.action.UPDATE_BADGE";
     private static final String INTENT_EXTRA_ACTIVITY_NAME = "com.sonyericsson.home.intent.extra.badge.ACTIVITY_NAME";
     private static final String INTENT_EXTRA_MESSAGE = "com.sonyericsson.home.intent.extra.badge.MESSAGE";
@@ -77,7 +77,7 @@ public class SonyHomeBadger implements InterfaceC4758a {
         return context.getPackageManager().resolveContentProvider(SONY_HOME_PROVIDER_NAME, 0) != null;
     }
 
-    @Override // n5.InterfaceC4758a
+    @Override // n5.InterfaceC4774a
     public void executeBadge(Context context, ComponentName componentName, int i) {
         if (sonyBadgeContentProviderExists(context)) {
             executeBadgeByContentProvider(context, componentName, i);
@@ -86,7 +86,7 @@ public class SonyHomeBadger implements InterfaceC4758a {
         }
     }
 
-    @Override // n5.InterfaceC4758a
+    @Override // n5.InterfaceC4774a
     public List<String> getSupportLaunchers() {
         return Arrays.asList("com.sonyericsson.home", "com.sonymobile.home");
     }

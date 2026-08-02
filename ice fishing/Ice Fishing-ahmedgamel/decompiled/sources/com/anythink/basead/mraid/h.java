@@ -8,29 +8,29 @@ import org.json.JSONObject;
 public final class h {
 
     /* renamed from: a, reason: collision with root package name */
-    protected static final String f9639a = "MraidJSBridge";
+    protected static final String f10425a = "MraidJSBridge";
 
     /* renamed from: d, reason: collision with root package name */
-    public static int f9640d = 1500;
+    public static int f10426d = 1500;
 
     /* renamed from: b, reason: collision with root package name */
-    protected Context f9641b;
+    protected Context f10427b;
 
     /* renamed from: c, reason: collision with root package name */
-    protected MraidBaseWebView f9642c;
+    protected MraidBaseWebView f10428c;
 
     /* renamed from: e, reason: collision with root package name */
-    private com.anythink.core.express.b.b f9643e;
+    private com.anythink.core.express.b.b f10429e;
 
     private void d(String str) {
         String str2;
         com.anythink.core.express.b.a.a();
-        com.anythink.core.express.b.a.a(this.f9642c, "setOrientationProperties");
+        com.anythink.core.express.b.a.a(this.f10428c, "setOrientationProperties");
         try {
             JSONObject jSONObject = new JSONObject(str);
             String optString = jSONObject.optString("allowOrientationChange");
             String optString2 = jSONObject.optString("forceOrientation");
-            if (TextUtils.isEmpty(optString) || TextUtils.isEmpty(optString2) || this.f9643e == null) {
+            if (TextUtils.isEmpty(optString) || TextUtils.isEmpty(optString2) || this.f10429e == null) {
                 return;
             }
             optString.toLowerCase().equals("true");
@@ -50,29 +50,29 @@ public final class h {
 
     /* JADX WARN: Multi-variable type inference failed */
     public final void a(Context context, MraidBaseWebView mraidBaseWebView) {
-        this.f9641b = context;
-        this.f9642c = mraidBaseWebView;
+        this.f10427b = context;
+        this.f10428c = mraidBaseWebView;
         try {
             if (context instanceof com.anythink.core.express.b.b) {
-                this.f9643e = (com.anythink.core.express.b.b) context;
+                this.f10429e = (com.anythink.core.express.b.b) context;
                 return;
             }
             if (mraidBaseWebView.getObject() != null && (mraidBaseWebView.getObject() instanceof com.anythink.core.express.b.b)) {
-                this.f9643e = (com.anythink.core.express.b.b) mraidBaseWebView.getObject();
+                this.f10429e = (com.anythink.core.express.b.b) mraidBaseWebView.getObject();
             }
             if (mraidBaseWebView.getMraidObject() == null || !(mraidBaseWebView.getMraidObject() instanceof com.anythink.core.express.b.b)) {
                 return;
             }
-            this.f9643e = (com.anythink.core.express.b.b) mraidBaseWebView.getMraidObject();
+            this.f10429e = (com.anythink.core.express.b.b) mraidBaseWebView.getMraidObject();
         } catch (Exception unused) {
         }
     }
 
     public final void b() {
         com.anythink.core.express.b.a.a();
-        com.anythink.core.express.b.a.a(this.f9642c, "unload");
+        com.anythink.core.express.b.a.a(this.f10428c, "unload");
         try {
-            com.anythink.core.express.b.b bVar = this.f9643e;
+            com.anythink.core.express.b.b bVar = this.f10429e;
             if (bVar != null) {
                 bVar.unload();
             }
@@ -82,51 +82,51 @@ public final class h {
 
     public final void c(String str) {
         com.anythink.core.express.b.a.a();
-        com.anythink.core.express.b.a.a(this.f9642c, "expand");
+        com.anythink.core.express.b.a.a(this.f10428c, "expand");
         try {
             JSONObject jSONObject = new JSONObject(str);
             String optString = jSONObject.optString("url");
             String optString2 = jSONObject.optString("shouldUseCustomClose");
-            if (TextUtils.isEmpty(optString) || TextUtils.isEmpty(optString2) || this.f9643e == null) {
+            if (TextUtils.isEmpty(optString) || TextUtils.isEmpty(optString2) || this.f10429e == null) {
                 return;
             }
-            this.f9643e.expand(optString, optString2.toLowerCase().equals("true"));
+            this.f10429e.expand(optString, optString2.toLowerCase().equals("true"));
         } catch (Throwable unused) {
         }
     }
 
     public final void b(String str) {
         com.anythink.core.express.b.a.a();
-        com.anythink.core.express.b.a.a(this.f9642c, "useCustomClose");
+        com.anythink.core.express.b.a.a(this.f10428c, "useCustomClose");
         try {
             String optString = new JSONObject(str).optString("shouldUseCustomClose");
-            if (TextUtils.isEmpty(optString) || this.f9643e == null) {
+            if (TextUtils.isEmpty(optString) || this.f10429e == null) {
                 return;
             }
-            this.f9643e.useCustomClose(optString.toLowerCase().equals("true"));
+            this.f10429e.useCustomClose(optString.toLowerCase().equals("true"));
         } catch (Throwable unused) {
         }
     }
 
     public final void a(String str) {
-        MraidBaseWebView mraidBaseWebView = this.f9642c;
+        MraidBaseWebView mraidBaseWebView = this.f10428c;
         com.anythink.core.express.b.a.a();
         com.anythink.core.express.b.a.a(mraidBaseWebView, "open");
         try {
             String optString = new JSONObject(str).optString("url");
-            if (this.f9643e == null || TextUtils.isEmpty(optString)) {
+            if (this.f10429e == null || TextUtils.isEmpty(optString)) {
                 return;
             }
-            this.f9643e.open(optString);
+            this.f10429e.open(optString);
         } catch (Throwable unused) {
         }
     }
 
     public final void a() {
         com.anythink.core.express.b.a.a();
-        com.anythink.core.express.b.a.a(this.f9642c, com.anythink.expressad.foundation.d.d.cs);
+        com.anythink.core.express.b.a.a(this.f10428c, com.anythink.expressad.foundation.d.d.cs);
         try {
-            com.anythink.core.express.b.b bVar = this.f9643e;
+            com.anythink.core.express.b.b bVar = this.f10429e;
             if (bVar != null) {
                 bVar.close();
             }

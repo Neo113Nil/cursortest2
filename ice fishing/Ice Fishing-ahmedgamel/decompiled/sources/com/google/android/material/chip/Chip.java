@@ -1,13 +1,17 @@
 package com.google.android.material.chip;
 
-import E3.v;
+import A3.j;
+import A3.l;
+import A3.n;
+import G3.k;
+import G3.v;
+import H.b;
 import H.g;
-import J3.a;
-import L3.F;
-import L3.h;
+import L3.a;
+import M.h;
+import M.i;
 import O.L;
 import O.X;
-import O3.b;
 import android.R;
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -32,97 +36,94 @@ import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.Checkable;
 import android.widget.CompoundButton;
 import android.widget.TextView;
+import com.IceFishing.LiveIceFishing.C5248R;
+import com.bumptech.glide.f;
 import com.facebook.ads.AdError;
 import com.google.android.material.chip.Chip;
-import com.icefishingapp.icefishing.C5275R;
 import java.lang.ref.WeakReference;
 import java.util.Arrays;
 import java.util.Locale;
 import java.util.WeakHashMap;
-import k3.AbstractC4632a;
-import l3.C4662b;
-import m.C4707q;
-import t3.C5039b;
-import t3.c;
-import t3.d;
-import t3.e;
-import t3.f;
-import y3.InterfaceC5237e;
-import y3.i;
-import y3.k;
+import m.C4720q;
+import m3.AbstractC4742a;
+import n3.C4771b;
+import v3.C5103b;
+import v3.c;
+import v3.d;
+import v3.e;
 
 /* loaded from: classes2.dex */
-public class Chip extends C4707q implements e, v, Checkable {
+public class Chip extends C4720q implements d, v, Checkable {
 
     /* renamed from: P, reason: collision with root package name */
-    public static final Rect f35912P = new Rect();
+    public static final Rect f36680P = new Rect();
 
     /* renamed from: Q, reason: collision with root package name */
-    public static final int[] f35913Q = {R.attr.state_selected};
+    public static final int[] f36681Q = {R.attr.state_selected};
 
     /* renamed from: R, reason: collision with root package name */
-    public static final int[] f35914R = {R.attr.state_checkable};
+    public static final int[] f36682R = {R.attr.state_checkable};
 
     /* renamed from: A, reason: collision with root package name */
-    public View.OnClickListener f35915A;
+    public View.OnClickListener f36683A;
 
     /* renamed from: B, reason: collision with root package name */
-    public CompoundButton.OnCheckedChangeListener f35916B;
+    public CompoundButton.OnCheckedChangeListener f36684B;
 
     /* renamed from: C, reason: collision with root package name */
-    public boolean f35917C;
+    public boolean f36685C;
 
     /* renamed from: D, reason: collision with root package name */
-    public boolean f35918D;
+    public boolean f36686D;
 
     /* renamed from: E, reason: collision with root package name */
-    public boolean f35919E;
+    public boolean f36687E;
 
     /* renamed from: F, reason: collision with root package name */
-    public boolean f35920F;
+    public boolean f36688F;
 
     /* renamed from: G, reason: collision with root package name */
-    public boolean f35921G;
+    public boolean f36689G;
 
     /* renamed from: H, reason: collision with root package name */
-    public int f35922H;
+    public int f36690H;
 
     /* renamed from: I, reason: collision with root package name */
-    public int f35923I;
+    public int f36691I;
     public CharSequence J;
 
     /* renamed from: K, reason: collision with root package name */
-    public final d f35924K;
+    public final c f36692K;
 
     /* renamed from: L, reason: collision with root package name */
-    public boolean f35925L;
+    public boolean f36693L;
 
     /* renamed from: M, reason: collision with root package name */
-    public final Rect f35926M;
+    public final Rect f36694M;
 
     /* renamed from: N, reason: collision with root package name */
-    public final RectF f35927N;
+    public final RectF f36695N;
 
     /* renamed from: O, reason: collision with root package name */
-    public final C5039b f35928O;
+    public final j f36696O;
 
     /* renamed from: x, reason: collision with root package name */
-    public f f35929x;
+    public e f36697x;
 
     /* renamed from: y, reason: collision with root package name */
-    public InsetDrawable f35930y;
+    public InsetDrawable f36698y;
 
     /* renamed from: z, reason: collision with root package name */
-    public RippleDrawable f35931z;
+    public RippleDrawable f36699z;
 
     public Chip(Context context, AttributeSet attributeSet) {
-        super(a.a(context, attributeSet, C5275R.attr.chipStyle, C5275R.style.Widget_MaterialComponents_Chip_Action), attributeSet, C5275R.attr.chipStyle);
+        super(a.a(context, attributeSet, C5248R.attr.chipStyle, C5248R.style.Widget_MaterialComponents_Chip_Action), attributeSet, C5248R.attr.chipStyle);
         int resourceId;
         int resourceId2;
         int resourceId3;
-        this.f35926M = new Rect();
-        this.f35927N = new RectF();
-        this.f35928O = new C5039b(0, this);
+        this.f36694M = new Rect();
+        this.f36695N = new RectF();
+        this.f36696O = new j(1, this);
         Context context2 = getContext();
         if (attributeSet != null) {
             if (attributeSet.getAttributeValue("http://schemas.android.com/apk/res/android", "background") != null) {
@@ -147,169 +148,169 @@ public class Chip extends C4707q implements e, v, Checkable {
                 Log.w("Chip", "Chip text must be vertically center and start aligned");
             }
         }
-        f fVar = new f(context2, attributeSet);
-        int[] iArr = AbstractC4632a.f38631c;
-        TypedArray f3 = k.f(fVar.f40876K0, attributeSet, iArr, C5275R.attr.chipStyle, C5275R.style.Widget_MaterialComponents_Chip_Action, new int[0]);
-        fVar.f40911k1 = f3.hasValue(37);
-        Context context3 = fVar.f40876K0;
-        ColorStateList m4 = b.m(context3, f3, 24);
-        if (fVar.f40882Q != m4) {
-            fVar.f40882Q = m4;
-            fVar.onStateChange(fVar.getState());
+        e eVar = new e(context2, attributeSet);
+        int[] iArr = AbstractC4742a.f39420c;
+        TypedArray f2 = n.f(eVar.f41156F0, attributeSet, iArr, C5248R.attr.chipStyle, C5248R.style.Widget_MaterialComponents_Chip_Action, new int[0]);
+        eVar.f41191f1 = f2.hasValue(37);
+        Context context3 = eVar.f41156F0;
+        ColorStateList j6 = f.j(context3, f2, 24);
+        if (eVar.f41167Q != j6) {
+            eVar.f41167Q = j6;
+            eVar.onStateChange(eVar.getState());
         }
-        ColorStateList m9 = b.m(context3, f3, 11);
-        if (fVar.f40884R != m9) {
-            fVar.f40884R = m9;
-            fVar.onStateChange(fVar.getState());
+        ColorStateList j9 = f.j(context3, f2, 11);
+        if (eVar.f41169R != j9) {
+            eVar.f41169R = j9;
+            eVar.onStateChange(eVar.getState());
         }
-        float dimension = f3.getDimension(19, 0.0f);
-        if (fVar.f40886S != dimension) {
-            fVar.f40886S = dimension;
-            fVar.invalidateSelf();
-            fVar.u();
+        float dimension = f2.getDimension(19, 0.0f);
+        if (eVar.f41171S != dimension) {
+            eVar.f41171S = dimension;
+            eVar.invalidateSelf();
+            eVar.u();
         }
-        if (f3.hasValue(12)) {
-            fVar.A(f3.getDimension(12, 0.0f));
+        if (f2.hasValue(12)) {
+            eVar.A(f2.getDimension(12, 0.0f));
         }
-        fVar.F(b.m(context3, f3, 22));
-        fVar.G(f3.getDimension(23, 0.0f));
-        fVar.P(b.m(context3, f3, 36));
-        String text = f3.getText(5);
+        eVar.F(f.j(context3, f2, 22));
+        eVar.G(f2.getDimension(23, 0.0f));
+        eVar.P(f.j(context3, f2, 36));
+        String text = f2.getText(5);
         text = text == null ? "" : text;
-        if (!TextUtils.equals(fVar.f40896X, text)) {
-            fVar.f40896X = text;
-            fVar.f40883Q0.f41922d = true;
-            fVar.invalidateSelf();
-            fVar.u();
+        if (!TextUtils.equals(eVar.f41181X, text)) {
+            eVar.f41181X = text;
+            eVar.f41162L0.f175d = true;
+            eVar.invalidateSelf();
+            eVar.u();
         }
-        B3.d dVar = (!f3.hasValue(0) || (resourceId3 = f3.getResourceId(0, 0)) == 0) ? null : new B3.d(context3, resourceId3);
-        dVar.f203k = f3.getDimension(1, dVar.f203k);
-        fVar.Q(dVar);
-        int i = f3.getInt(3, 0);
+        D3.d dVar = (!f2.hasValue(0) || (resourceId3 = f2.getResourceId(0, 0)) == 0) ? null : new D3.d(context3, resourceId3);
+        dVar.f622k = f2.getDimension(1, dVar.f622k);
+        eVar.Q(dVar);
+        int i = f2.getInt(3, 0);
         if (i == 1) {
-            fVar.f40908h1 = TextUtils.TruncateAt.START;
+            eVar.f41188c1 = TextUtils.TruncateAt.START;
         } else if (i == 2) {
-            fVar.f40908h1 = TextUtils.TruncateAt.MIDDLE;
+            eVar.f41188c1 = TextUtils.TruncateAt.MIDDLE;
         } else if (i == 3) {
-            fVar.f40908h1 = TextUtils.TruncateAt.END;
+            eVar.f41188c1 = TextUtils.TruncateAt.END;
         }
-        fVar.E(f3.getBoolean(18, false));
+        eVar.E(f2.getBoolean(18, false));
         if (attributeSet != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "chipIconEnabled") != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "chipIconVisible") == null) {
-            fVar.E(f3.getBoolean(15, false));
+            eVar.E(f2.getBoolean(15, false));
         }
-        fVar.B(b.o(context3, f3, 14));
-        if (f3.hasValue(17)) {
-            fVar.D(b.m(context3, f3, 17));
+        eVar.B(f.l(context3, f2, 14));
+        if (f2.hasValue(17)) {
+            eVar.D(f.j(context3, f2, 17));
         }
-        fVar.C(f3.getDimension(16, -1.0f));
-        fVar.M(f3.getBoolean(31, false));
+        eVar.C(f2.getDimension(16, -1.0f));
+        eVar.M(f2.getBoolean(31, false));
         if (attributeSet != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "closeIconEnabled") != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "closeIconVisible") == null) {
-            fVar.M(f3.getBoolean(26, false));
+            eVar.M(f2.getBoolean(26, false));
         }
-        fVar.H(b.o(context3, f3, 25));
-        fVar.L(b.m(context3, f3, 30));
-        fVar.J(f3.getDimension(28, 0.0f));
-        fVar.w(f3.getBoolean(6, false));
-        fVar.z(f3.getBoolean(10, false));
+        eVar.H(f.l(context3, f2, 25));
+        eVar.L(f.j(context3, f2, 30));
+        eVar.J(f2.getDimension(28, 0.0f));
+        eVar.w(f2.getBoolean(6, false));
+        eVar.z(f2.getBoolean(10, false));
         if (attributeSet != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "checkedIconEnabled") != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "checkedIconVisible") == null) {
-            fVar.z(f3.getBoolean(8, false));
+            eVar.z(f2.getBoolean(8, false));
         }
-        fVar.x(b.o(context3, f3, 7));
-        if (f3.hasValue(9)) {
-            fVar.y(b.m(context3, f3, 9));
+        eVar.x(f.l(context3, f2, 7));
+        if (f2.hasValue(9)) {
+            eVar.y(f.j(context3, f2, 9));
         }
-        fVar.f40867A0 = (!f3.hasValue(39) || (resourceId2 = f3.getResourceId(39, 0)) == 0) ? null : C4662b.a(context3, resourceId2);
-        fVar.f40868B0 = (!f3.hasValue(33) || (resourceId = f3.getResourceId(33, 0)) == 0) ? null : C4662b.a(context3, resourceId);
-        float dimension2 = f3.getDimension(21, 0.0f);
-        if (fVar.C0 != dimension2) {
-            fVar.C0 = dimension2;
-            fVar.invalidateSelf();
-            fVar.u();
+        eVar.f41204v0 = (!f2.hasValue(39) || (resourceId2 = f2.getResourceId(39, 0)) == 0) ? null : C4771b.a(context3, resourceId2);
+        eVar.f41205w0 = (!f2.hasValue(33) || (resourceId = f2.getResourceId(33, 0)) == 0) ? null : C4771b.a(context3, resourceId);
+        float dimension2 = f2.getDimension(21, 0.0f);
+        if (eVar.f41206x0 != dimension2) {
+            eVar.f41206x0 = dimension2;
+            eVar.invalidateSelf();
+            eVar.u();
         }
-        fVar.O(f3.getDimension(35, 0.0f));
-        fVar.N(f3.getDimension(34, 0.0f));
-        float dimension3 = f3.getDimension(41, 0.0f);
-        if (fVar.f40871F0 != dimension3) {
-            fVar.f40871F0 = dimension3;
-            fVar.invalidateSelf();
-            fVar.u();
+        eVar.O(f2.getDimension(35, 0.0f));
+        eVar.N(f2.getDimension(34, 0.0f));
+        float dimension3 = f2.getDimension(41, 0.0f);
+        if (eVar.f41152A0 != dimension3) {
+            eVar.f41152A0 = dimension3;
+            eVar.invalidateSelf();
+            eVar.u();
         }
-        float dimension4 = f3.getDimension(40, 0.0f);
-        if (fVar.f40872G0 != dimension4) {
-            fVar.f40872G0 = dimension4;
-            fVar.invalidateSelf();
-            fVar.u();
+        float dimension4 = f2.getDimension(40, 0.0f);
+        if (eVar.f41153B0 != dimension4) {
+            eVar.f41153B0 = dimension4;
+            eVar.invalidateSelf();
+            eVar.u();
         }
-        fVar.K(f3.getDimension(29, 0.0f));
-        fVar.I(f3.getDimension(27, 0.0f));
-        float dimension5 = f3.getDimension(13, 0.0f);
-        if (fVar.f40875J0 != dimension5) {
-            fVar.f40875J0 = dimension5;
-            fVar.invalidateSelf();
-            fVar.u();
+        eVar.K(f2.getDimension(29, 0.0f));
+        eVar.I(f2.getDimension(27, 0.0f));
+        float dimension5 = f2.getDimension(13, 0.0f);
+        if (eVar.f41155E0 != dimension5) {
+            eVar.f41155E0 = dimension5;
+            eVar.invalidateSelf();
+            eVar.u();
         }
-        fVar.f40910j1 = f3.getDimensionPixelSize(4, Integer.MAX_VALUE);
-        f3.recycle();
-        k.a(context2, attributeSet, C5275R.attr.chipStyle, C5275R.style.Widget_MaterialComponents_Chip_Action);
-        k.b(context2, attributeSet, iArr, C5275R.attr.chipStyle, C5275R.style.Widget_MaterialComponents_Chip_Action, new int[0]);
-        TypedArray obtainStyledAttributes = context2.obtainStyledAttributes(attributeSet, iArr, C5275R.attr.chipStyle, C5275R.style.Widget_MaterialComponents_Chip_Action);
-        this.f35921G = obtainStyledAttributes.getBoolean(32, false);
-        this.f35923I = (int) Math.ceil(obtainStyledAttributes.getDimension(20, (float) Math.ceil(TypedValue.applyDimension(1, 48, getContext().getResources().getDisplayMetrics()))));
+        eVar.f41190e1 = f2.getDimensionPixelSize(4, Integer.MAX_VALUE);
+        f2.recycle();
+        n.a(context2, attributeSet, C5248R.attr.chipStyle, C5248R.style.Widget_MaterialComponents_Chip_Action);
+        n.b(context2, attributeSet, iArr, C5248R.attr.chipStyle, C5248R.style.Widget_MaterialComponents_Chip_Action, new int[0]);
+        TypedArray obtainStyledAttributes = context2.obtainStyledAttributes(attributeSet, iArr, C5248R.attr.chipStyle, C5248R.style.Widget_MaterialComponents_Chip_Action);
+        this.f36689G = obtainStyledAttributes.getBoolean(32, false);
+        this.f36691I = (int) Math.ceil(obtainStyledAttributes.getDimension(20, (float) Math.ceil(TypedValue.applyDimension(1, 48, getContext().getResources().getDisplayMetrics()))));
         obtainStyledAttributes.recycle();
-        setChipDrawable(fVar);
-        fVar.i(L.i(this));
-        k.a(context2, attributeSet, C5275R.attr.chipStyle, C5275R.style.Widget_MaterialComponents_Chip_Action);
-        k.b(context2, attributeSet, iArr, C5275R.attr.chipStyle, C5275R.style.Widget_MaterialComponents_Chip_Action, new int[0]);
-        TypedArray obtainStyledAttributes2 = context2.obtainStyledAttributes(attributeSet, iArr, C5275R.attr.chipStyle, C5275R.style.Widget_MaterialComponents_Chip_Action);
+        setChipDrawable(eVar);
+        eVar.i(L.i(this));
+        n.a(context2, attributeSet, C5248R.attr.chipStyle, C5248R.style.Widget_MaterialComponents_Chip_Action);
+        n.b(context2, attributeSet, iArr, C5248R.attr.chipStyle, C5248R.style.Widget_MaterialComponents_Chip_Action, new int[0]);
+        TypedArray obtainStyledAttributes2 = context2.obtainStyledAttributes(attributeSet, iArr, C5248R.attr.chipStyle, C5248R.style.Widget_MaterialComponents_Chip_Action);
         boolean hasValue = obtainStyledAttributes2.hasValue(37);
         obtainStyledAttributes2.recycle();
-        this.f35924K = new d(this, this);
+        this.f36692K = new c(this, this);
         d();
         if (!hasValue) {
-            setOutlineProvider(new c(this));
+            setOutlineProvider(new C5103b(this));
         }
-        setChecked(this.f35917C);
-        setText(fVar.f40896X);
-        setEllipsize(fVar.f40908h1);
+        setChecked(this.f36685C);
+        setText(eVar.f41181X);
+        setEllipsize(eVar.f41188c1);
         g();
-        if (!this.f35929x.f40909i1) {
+        if (!this.f36697x.f41189d1) {
             setLines(1);
             setHorizontallyScrolling(true);
         }
         setGravity(8388627);
         f();
-        if (this.f35921G) {
-            setMinHeight(this.f35923I);
+        if (this.f36689G) {
+            setMinHeight(this.f36691I);
         }
-        this.f35922H = getLayoutDirection();
-        super.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: t3.a
+        this.f36690H = getLayoutDirection();
+        super.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: v3.a
             @Override // android.widget.CompoundButton.OnCheckedChangeListener
-            public final void onCheckedChanged(CompoundButton compoundButton, boolean z3) {
-                CompoundButton.OnCheckedChangeListener onCheckedChangeListener = Chip.this.f35916B;
+            public final void onCheckedChanged(CompoundButton compoundButton, boolean z6) {
+                CompoundButton.OnCheckedChangeListener onCheckedChangeListener = Chip.this.f36684B;
                 if (onCheckedChangeListener != null) {
-                    onCheckedChangeListener.onCheckedChanged(compoundButton, z3);
+                    onCheckedChangeListener.onCheckedChanged(compoundButton, z6);
                 }
             }
         });
     }
 
     private RectF getCloseIconTouchBounds() {
-        RectF rectF = this.f35927N;
+        RectF rectF = this.f36695N;
         rectF.setEmpty();
-        if (c() && this.f35915A != null) {
-            f fVar = this.f35929x;
-            Rect bounds = fVar.getBounds();
+        if (c() && this.f36683A != null) {
+            e eVar = this.f36697x;
+            Rect bounds = eVar.getBounds();
             rectF.setEmpty();
-            if (fVar.T()) {
-                float f3 = fVar.f40875J0 + fVar.f40874I0 + fVar.f40919u0 + fVar.f40873H0 + fVar.f40872G0;
-                if (H.b.a(fVar) == 0) {
+            if (eVar.T()) {
+                float f2 = eVar.f41155E0 + eVar.f41154D0 + eVar.f41198p0 + eVar.C0 + eVar.f41153B0;
+                if (b.a(eVar) == 0) {
                     float f9 = bounds.right;
                     rectF.right = f9;
-                    rectF.left = f9 - f3;
+                    rectF.left = f9 - f2;
                 } else {
                     float f10 = bounds.left;
                     rectF.left = f10;
-                    rectF.right = f10 + f3;
+                    rectF.right = f10 + f2;
                 }
                 rectF.top = bounds.top;
                 rectF.bottom = bounds.bottom;
@@ -322,83 +323,83 @@ public class Chip extends C4707q implements e, v, Checkable {
     public Rect getCloseIconTouchBoundsInt() {
         RectF closeIconTouchBounds = getCloseIconTouchBounds();
         int i = (int) closeIconTouchBounds.left;
-        int i6 = (int) closeIconTouchBounds.top;
-        int i9 = (int) closeIconTouchBounds.right;
-        int i10 = (int) closeIconTouchBounds.bottom;
-        Rect rect = this.f35926M;
-        rect.set(i, i6, i9, i10);
+        int i4 = (int) closeIconTouchBounds.top;
+        int i6 = (int) closeIconTouchBounds.right;
+        int i9 = (int) closeIconTouchBounds.bottom;
+        Rect rect = this.f36694M;
+        rect.set(i, i4, i6, i9);
         return rect;
     }
 
-    private B3.d getTextAppearance() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40883Q0.f41924f;
+    private D3.d getTextAppearance() {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41162L0.f177f;
         }
         return null;
     }
 
-    private void setCloseIconHovered(boolean z3) {
-        if (this.f35919E != z3) {
-            this.f35919E = z3;
+    private void setCloseIconHovered(boolean z6) {
+        if (this.f36687E != z6) {
+            this.f36687E = z6;
             refreshDrawableState();
         }
     }
 
-    private void setCloseIconPressed(boolean z3) {
-        if (this.f35918D != z3) {
-            this.f35918D = z3;
+    private void setCloseIconPressed(boolean z6) {
+        if (this.f36686D != z6) {
+            this.f36686D = z6;
             refreshDrawableState();
         }
     }
 
     public final void b(int i) {
-        this.f35923I = i;
-        if (!this.f35921G) {
-            InsetDrawable insetDrawable = this.f35930y;
+        this.f36691I = i;
+        if (!this.f36689G) {
+            InsetDrawable insetDrawable = this.f36698y;
             if (insetDrawable == null) {
-                int[] iArr = C3.a.f430a;
+                int[] iArr = E3.a.f895a;
                 e();
                 return;
             } else {
                 if (insetDrawable != null) {
-                    this.f35930y = null;
+                    this.f36698y = null;
                     setMinWidth(0);
                     setMinHeight((int) getChipMinHeight());
-                    int[] iArr2 = C3.a.f430a;
+                    int[] iArr2 = E3.a.f895a;
                     e();
                     return;
                 }
                 return;
             }
         }
-        int max = Math.max(0, i - ((int) this.f35929x.f40886S));
-        int max2 = Math.max(0, i - this.f35929x.getIntrinsicWidth());
+        int max = Math.max(0, i - ((int) this.f36697x.f41171S));
+        int max2 = Math.max(0, i - this.f36697x.getIntrinsicWidth());
         if (max2 <= 0 && max <= 0) {
-            InsetDrawable insetDrawable2 = this.f35930y;
+            InsetDrawable insetDrawable2 = this.f36698y;
             if (insetDrawable2 == null) {
-                int[] iArr3 = C3.a.f430a;
+                int[] iArr3 = E3.a.f895a;
                 e();
                 return;
             } else {
                 if (insetDrawable2 != null) {
-                    this.f35930y = null;
+                    this.f36698y = null;
                     setMinWidth(0);
                     setMinHeight((int) getChipMinHeight());
-                    int[] iArr4 = C3.a.f430a;
+                    int[] iArr4 = E3.a.f895a;
                     e();
                     return;
                 }
                 return;
             }
         }
-        int i6 = max2 > 0 ? max2 / 2 : 0;
-        int i9 = max > 0 ? max / 2 : 0;
-        if (this.f35930y != null) {
+        int i4 = max2 > 0 ? max2 / 2 : 0;
+        int i6 = max > 0 ? max / 2 : 0;
+        if (this.f36698y != null) {
             Rect rect = new Rect();
-            this.f35930y.getPadding(rect);
-            if (rect.top == i9 && rect.bottom == i9 && rect.left == i6 && rect.right == i6) {
-                int[] iArr5 = C3.a.f430a;
+            this.f36698y.getPadding(rect);
+            if (rect.top == i6 && rect.bottom == i6 && rect.left == i4 && rect.right == i4) {
+                int[] iArr5 = E3.a.f895a;
                 e();
                 return;
             }
@@ -409,8 +410,8 @@ public class Chip extends C4707q implements e, v, Checkable {
         if (getMinWidth() != i) {
             setMinWidth(i);
         }
-        this.f35930y = new InsetDrawable((Drawable) this.f35929x, i6, i9, i6, i9);
-        int[] iArr6 = C3.a.f430a;
+        this.f36698y = new InsetDrawable((Drawable) this.f36697x, i4, i6, i4, i6);
+        int[] iArr6 = E3.a.f895a;
         e();
     }
 
@@ -420,11 +421,11 @@ public class Chip extends C4707q implements e, v, Checkable {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final boolean c() {
-        f fVar = this.f35929x;
-        if (fVar == null) {
+        e eVar = this.f36697x;
+        if (eVar == null) {
             return false;
         }
-        Object obj = fVar.f40916r0;
+        Object obj = eVar.m0;
         if (obj != null) {
             if (obj instanceof g) {
             }
@@ -436,13 +437,13 @@ public class Chip extends C4707q implements e, v, Checkable {
     }
 
     public final void d() {
-        f fVar;
-        if (!c() || (fVar = this.f35929x) == null || !fVar.f40915q0 || this.f35915A == null) {
+        e eVar;
+        if (!c() || (eVar = this.f36697x) == null || !eVar.f41195l0 || this.f36683A == null) {
             X.o(this, null);
-            this.f35925L = false;
+            this.f36693L = false;
         } else {
-            X.o(this, this.f35924K);
-            this.f35925L = true;
+            X.o(this, this.f36692K);
+            this.f36693L = true;
         }
     }
 
@@ -456,28 +457,28 @@ public class Chip extends C4707q implements e, v, Checkable {
     */
     public final boolean dispatchHoverEvent(MotionEvent motionEvent) {
         int i;
-        if (!this.f35925L) {
+        if (!this.f36693L) {
             return super.dispatchHoverEvent(motionEvent);
         }
-        d dVar = this.f35924K;
-        AccessibilityManager accessibilityManager = dVar.f3369h;
+        c cVar = this.f36692K;
+        AccessibilityManager accessibilityManager = cVar.f3499h;
         if (accessibilityManager.isEnabled() && accessibilityManager.isTouchExplorationEnabled()) {
             int action = motionEvent.getAction();
             if (action == 7 || action == 9) {
                 float x9 = motionEvent.getX();
                 float y7 = motionEvent.getY();
-                Chip chip = dVar.f40864q;
-                int i6 = (chip.c() && chip.getCloseIconTouchBounds().contains(x9, y7)) ? 1 : 0;
-                int i9 = dVar.f3373m;
-                if (i9 != i6) {
-                    dVar.f3373m = i6;
-                    dVar.q(i6, 128);
-                    dVar.q(i9, 256);
+                Chip chip = cVar.f41149q;
+                int i4 = (chip.c() && chip.getCloseIconTouchBounds().contains(x9, y7)) ? 1 : 0;
+                int i6 = cVar.f3503m;
+                if (i6 != i4) {
+                    cVar.f3503m = i4;
+                    cVar.q(i4, 128);
+                    cVar.q(i6, 256);
                 }
-            } else if (action == 10 && (i = dVar.f3373m) != Integer.MIN_VALUE) {
+            } else if (action == 10 && (i = cVar.f3503m) != Integer.MIN_VALUE) {
                 if (i != Integer.MIN_VALUE) {
-                    dVar.f3373m = Integer.MIN_VALUE;
-                    dVar.q(i, 256);
+                    cVar.f3503m = Integer.MIN_VALUE;
+                    cVar.q(i, 256);
                     return true;
                 }
             }
@@ -487,22 +488,22 @@ public class Chip extends C4707q implements e, v, Checkable {
 
     @Override // android.view.View
     public final boolean dispatchKeyEvent(KeyEvent keyEvent) {
-        if (!this.f35925L) {
+        if (!this.f36693L) {
             return super.dispatchKeyEvent(keyEvent);
         }
-        d dVar = this.f35924K;
-        dVar.getClass();
-        boolean z3 = false;
+        c cVar = this.f36692K;
+        cVar.getClass();
+        boolean z6 = false;
         int i = 0;
-        z3 = false;
-        z3 = false;
-        z3 = false;
-        z3 = false;
-        z3 = false;
+        z6 = false;
+        z6 = false;
+        z6 = false;
+        z6 = false;
+        z6 = false;
         if (keyEvent.getAction() != 1) {
             int keyCode = keyEvent.getKeyCode();
             if (keyCode != 61) {
-                int i6 = 66;
+                int i4 = 66;
                 if (keyCode != 66) {
                     switch (keyCode) {
                         case 19:
@@ -511,153 +512,153 @@ public class Chip extends C4707q implements e, v, Checkable {
                         case 22:
                             if (keyEvent.hasNoModifiers()) {
                                 if (keyCode == 19) {
-                                    i6 = 33;
+                                    i4 = 33;
                                 } else if (keyCode == 21) {
-                                    i6 = 17;
+                                    i4 = 17;
                                 } else if (keyCode != 22) {
-                                    i6 = com.anythink.expressad.video.module.a.a.f21731U;
+                                    i4 = com.anythink.expressad.video.module.a.a.f22518U;
                                 }
                                 int repeatCount = keyEvent.getRepeatCount() + 1;
-                                boolean z6 = false;
-                                while (i < repeatCount && dVar.m(i6, null)) {
+                                boolean z9 = false;
+                                while (i < repeatCount && cVar.m(i4, null)) {
                                     i++;
-                                    z6 = true;
+                                    z9 = true;
                                 }
-                                z3 = z6;
+                                z6 = z9;
                                 break;
                             }
                             break;
                     }
                 }
                 if (keyEvent.hasNoModifiers() && keyEvent.getRepeatCount() == 0) {
-                    int i9 = dVar.f3372l;
-                    if (i9 != Integer.MIN_VALUE) {
-                        Chip chip = dVar.f40864q;
-                        if (i9 == 0) {
+                    int i6 = cVar.f3502l;
+                    if (i6 != Integer.MIN_VALUE) {
+                        Chip chip = cVar.f41149q;
+                        if (i6 == 0) {
                             chip.performClick();
-                        } else if (i9 == 1) {
+                        } else if (i6 == 1) {
                             chip.playSoundEffect(0);
-                            View.OnClickListener onClickListener = chip.f35915A;
+                            View.OnClickListener onClickListener = chip.f36683A;
                             if (onClickListener != null) {
                                 onClickListener.onClick(chip);
                             }
-                            if (chip.f35925L) {
-                                chip.f35924K.q(1, 1);
+                            if (chip.f36693L) {
+                                chip.f36692K.q(1, 1);
                             }
                         }
                     }
-                    z3 = true;
+                    z6 = true;
                 }
             } else if (keyEvent.hasNoModifiers()) {
-                z3 = dVar.m(2, null);
+                z6 = cVar.m(2, null);
             } else if (keyEvent.hasModifiers(1)) {
-                z3 = dVar.m(1, null);
+                z6 = cVar.m(1, null);
             }
         }
-        if (!z3 || dVar.f3372l == Integer.MIN_VALUE) {
+        if (!z6 || cVar.f3502l == Integer.MIN_VALUE) {
             return super.dispatchKeyEvent(keyEvent);
         }
         return true;
     }
 
     /* JADX WARN: Type inference failed for: r2v0, types: [boolean, int] */
-    @Override // m.C4707q, android.widget.CompoundButton, android.widget.TextView, android.view.View
+    @Override // m.C4720q, android.widget.CompoundButton, android.widget.TextView, android.view.View
     public final void drawableStateChanged() {
         int i;
         super.drawableStateChanged();
-        f fVar = this.f35929x;
-        boolean z3 = false;
-        if (fVar != null && f.t(fVar.f40916r0)) {
-            f fVar2 = this.f35929x;
+        e eVar = this.f36697x;
+        boolean z6 = false;
+        if (eVar != null && e.t(eVar.m0)) {
+            e eVar2 = this.f36697x;
             ?? isEnabled = isEnabled();
-            int i6 = isEnabled;
-            if (this.f35920F) {
-                i6 = isEnabled + 1;
+            int i4 = isEnabled;
+            if (this.f36688F) {
+                i4 = isEnabled + 1;
+            }
+            int i6 = i4;
+            if (this.f36687E) {
+                i6 = i4 + 1;
             }
             int i9 = i6;
-            if (this.f35919E) {
+            if (this.f36686D) {
                 i9 = i6 + 1;
             }
             int i10 = i9;
-            if (this.f35918D) {
+            if (isChecked()) {
                 i10 = i9 + 1;
             }
-            int i11 = i10;
-            if (isChecked()) {
-                i11 = i10 + 1;
-            }
-            int[] iArr = new int[i11];
+            int[] iArr = new int[i10];
             if (isEnabled()) {
                 iArr[0] = 16842910;
                 i = 1;
             } else {
                 i = 0;
             }
-            if (this.f35920F) {
+            if (this.f36688F) {
                 iArr[i] = 16842908;
                 i++;
             }
-            if (this.f35919E) {
+            if (this.f36687E) {
                 iArr[i] = 16843623;
                 i++;
             }
-            if (this.f35918D) {
+            if (this.f36686D) {
                 iArr[i] = 16842919;
                 i++;
             }
             if (isChecked()) {
                 iArr[i] = 16842913;
             }
-            if (!Arrays.equals(fVar2.f40905e1, iArr)) {
-                fVar2.f40905e1 = iArr;
-                if (fVar2.T()) {
-                    z3 = fVar2.v(fVar2.getState(), iArr);
+            if (!Arrays.equals(eVar2.f41185Z0, iArr)) {
+                eVar2.f41185Z0 = iArr;
+                if (eVar2.T()) {
+                    z6 = eVar2.v(eVar2.getState(), iArr);
                 }
             }
         }
-        if (z3) {
+        if (z6) {
             invalidate();
         }
     }
 
     public final void e() {
-        this.f35931z = new RippleDrawable(C3.a.a(this.f35929x.f40894W), getBackgroundDrawable(), null);
-        this.f35929x.getClass();
-        RippleDrawable rippleDrawable = this.f35931z;
-        WeakHashMap weakHashMap = X.f2054a;
+        this.f36699z = new RippleDrawable(E3.a.a(this.f36697x.f41179W), getBackgroundDrawable(), null);
+        this.f36697x.getClass();
+        RippleDrawable rippleDrawable = this.f36699z;
+        WeakHashMap weakHashMap = X.f2142a;
         setBackground(rippleDrawable);
         f();
     }
 
     public final void f() {
-        f fVar;
-        if (TextUtils.isEmpty(getText()) || (fVar = this.f35929x) == null) {
+        e eVar;
+        if (TextUtils.isEmpty(getText()) || (eVar = this.f36697x) == null) {
             return;
         }
-        int q8 = (int) (fVar.q() + fVar.f40875J0 + fVar.f40872G0);
-        f fVar2 = this.f35929x;
-        int p9 = (int) (fVar2.p() + fVar2.C0 + fVar2.f40871F0);
-        if (this.f35930y != null) {
+        int q8 = (int) (eVar.q() + eVar.f41155E0 + eVar.f41153B0);
+        e eVar2 = this.f36697x;
+        int p9 = (int) (eVar2.p() + eVar2.f41206x0 + eVar2.f41152A0);
+        if (this.f36698y != null) {
             Rect rect = new Rect();
-            this.f35930y.getPadding(rect);
+            this.f36698y.getPadding(rect);
             p9 += rect.left;
             q8 += rect.right;
         }
         int paddingTop = getPaddingTop();
         int paddingBottom = getPaddingBottom();
-        WeakHashMap weakHashMap = X.f2054a;
+        WeakHashMap weakHashMap = X.f2142a;
         setPaddingRelative(p9, paddingTop, q8, paddingBottom);
     }
 
     public final void g() {
         TextPaint paint = getPaint();
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            paint.drawableState = fVar.getState();
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            paint.drawableState = eVar.getState();
         }
-        B3.d textAppearance = getTextAppearance();
+        D3.d textAppearance = getTextAppearance();
         if (textAppearance != null) {
-            textAppearance.e(getContext(), paint, this.f35928O);
+            textAppearance.e(getContext(), paint, this.f36696O);
         }
     }
 
@@ -666,8 +667,8 @@ public class Chip extends C4707q implements e, v, Checkable {
         if (!TextUtils.isEmpty(this.J)) {
             return this.J;
         }
-        f fVar = this.f35929x;
-        if (!(fVar != null && fVar.f40921w0)) {
+        e eVar = this.f36697x;
+        if (!(eVar != null && eVar.f41200r0)) {
             return isClickable() ? "android.widget.Button" : "android.view.View";
         }
         getParent();
@@ -675,50 +676,50 @@ public class Chip extends C4707q implements e, v, Checkable {
     }
 
     public Drawable getBackgroundDrawable() {
-        InsetDrawable insetDrawable = this.f35930y;
-        return insetDrawable == null ? this.f35929x : insetDrawable;
+        InsetDrawable insetDrawable = this.f36698y;
+        return insetDrawable == null ? this.f36697x : insetDrawable;
     }
 
     public Drawable getCheckedIcon() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40923y0;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41202t0;
         }
         return null;
     }
 
     public ColorStateList getCheckedIconTint() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40924z0;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41203u0;
         }
         return null;
     }
 
     public ColorStateList getChipBackgroundColor() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40884R;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41169R;
         }
         return null;
     }
 
     public float getChipCornerRadius() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return Math.max(0.0f, fVar.r());
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return Math.max(0.0f, eVar.r());
         }
         return 0.0f;
     }
 
     public Drawable getChipDrawable() {
-        return this.f35929x;
+        return this.f36697x;
     }
 
     public float getChipEndPadding() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40875J0;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41155E0;
         }
         return 0.0f;
     }
@@ -726,8 +727,8 @@ public class Chip extends C4707q implements e, v, Checkable {
     /* JADX WARN: Multi-variable type inference failed */
     public Drawable getChipIcon() {
         Drawable drawable;
-        f fVar = this.f35929x;
-        if (fVar == null || (drawable = fVar.f40899Z) == 0) {
+        e eVar = this.f36697x;
+        if (eVar == null || (drawable = eVar.f41184Z) == 0) {
             return null;
         }
         if (!(drawable instanceof g)) {
@@ -737,49 +738,49 @@ public class Chip extends C4707q implements e, v, Checkable {
     }
 
     public float getChipIconSize() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40913o0;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41193j0;
         }
         return 0.0f;
     }
 
     public ColorStateList getChipIconTint() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40912n0;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41192i0;
         }
         return null;
     }
 
     public float getChipMinHeight() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40886S;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41171S;
         }
         return 0.0f;
     }
 
     public float getChipStartPadding() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.C0;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41206x0;
         }
         return 0.0f;
     }
 
     public ColorStateList getChipStrokeColor() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40890U;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41175U;
         }
         return null;
     }
 
     public float getChipStrokeWidth() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40892V;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41177V;
         }
         return 0.0f;
     }
@@ -792,8 +793,8 @@ public class Chip extends C4707q implements e, v, Checkable {
     /* JADX WARN: Multi-variable type inference failed */
     public Drawable getCloseIcon() {
         Drawable drawable;
-        f fVar = this.f35929x;
-        if (fVar == null || (drawable = fVar.f40916r0) == 0) {
+        e eVar = this.f36697x;
+        if (eVar == null || (drawable = eVar.m0) == 0) {
             return null;
         }
         if (!(drawable instanceof g)) {
@@ -803,59 +804,59 @@ public class Chip extends C4707q implements e, v, Checkable {
     }
 
     public CharSequence getCloseIconContentDescription() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40920v0;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41199q0;
         }
         return null;
     }
 
     public float getCloseIconEndPadding() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40874I0;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41154D0;
         }
         return 0.0f;
     }
 
     public float getCloseIconSize() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40919u0;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41198p0;
         }
         return 0.0f;
     }
 
     public float getCloseIconStartPadding() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40873H0;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.C0;
         }
         return 0.0f;
     }
 
     public ColorStateList getCloseIconTint() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40918t0;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41197o0;
         }
         return null;
     }
 
     @Override // android.widget.TextView
     public TextUtils.TruncateAt getEllipsize() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40908h1;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41188c1;
         }
         return null;
     }
 
     @Override // android.widget.TextView, android.view.View
     public final void getFocusedRect(Rect rect) {
-        if (this.f35925L) {
-            d dVar = this.f35924K;
-            if (dVar.f3372l == 1 || dVar.f3371k == 1) {
+        if (this.f36693L) {
+            c cVar = this.f36692K;
+            if (cVar.f3502l == 1 || cVar.f3501k == 1) {
                 rect.set(getCloseIconTouchBoundsInt());
                 return;
             }
@@ -863,62 +864,62 @@ public class Chip extends C4707q implements e, v, Checkable {
         super.getFocusedRect(rect);
     }
 
-    public C4662b getHideMotionSpec() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40868B0;
+    public C4771b getHideMotionSpec() {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41205w0;
         }
         return null;
     }
 
     public float getIconEndPadding() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40870E0;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41208z0;
         }
         return 0.0f;
     }
 
     public float getIconStartPadding() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40869D0;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41207y0;
         }
         return 0.0f;
     }
 
     public ColorStateList getRippleColor() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40894W;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41179W;
         }
         return null;
     }
 
-    public E3.k getShapeAppearanceModel() {
-        return this.f35929x.f766n.f736a;
+    public k getShapeAppearanceModel() {
+        return this.f36697x.f1108n.f1078a;
     }
 
-    public C4662b getShowMotionSpec() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40867A0;
+    public C4771b getShowMotionSpec() {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41204v0;
         }
         return null;
     }
 
     public float getTextEndPadding() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40872G0;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41153B0;
         }
         return 0.0f;
     }
 
     public float getTextStartPadding() {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            return fVar.f40871F0;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            return eVar.f41152A0;
         }
         return 0.0f;
     }
@@ -926,33 +927,33 @@ public class Chip extends C4707q implements e, v, Checkable {
     @Override // android.widget.TextView, android.view.View
     public final void onAttachedToWindow() {
         super.onAttachedToWindow();
-        F.s(this, this.f35929x);
+        Z2.d.q(this, this.f36697x);
     }
 
     @Override // android.widget.CompoundButton, android.widget.TextView, android.view.View
     public final int[] onCreateDrawableState(int i) {
         int[] onCreateDrawableState = super.onCreateDrawableState(i + 2);
         if (isChecked()) {
-            View.mergeDrawableStates(onCreateDrawableState, f35913Q);
+            View.mergeDrawableStates(onCreateDrawableState, f36681Q);
         }
-        f fVar = this.f35929x;
-        if (fVar != null && fVar.f40921w0) {
-            View.mergeDrawableStates(onCreateDrawableState, f35914R);
+        e eVar = this.f36697x;
+        if (eVar != null && eVar.f41200r0) {
+            View.mergeDrawableStates(onCreateDrawableState, f36682R);
         }
         return onCreateDrawableState;
     }
 
     @Override // android.widget.TextView, android.view.View
-    public final void onFocusChanged(boolean z3, int i, Rect rect) {
-        super.onFocusChanged(z3, i, rect);
-        if (this.f35925L) {
-            d dVar = this.f35924K;
-            int i6 = dVar.f3372l;
-            if (i6 != Integer.MIN_VALUE) {
-                dVar.j(i6);
+    public final void onFocusChanged(boolean z6, int i, Rect rect) {
+        super.onFocusChanged(z6, i, rect);
+        if (this.f36693L) {
+            c cVar = this.f36692K;
+            int i4 = cVar.f3502l;
+            if (i4 != Integer.MIN_VALUE) {
+                cVar.j(i4);
             }
-            if (z3) {
-                dVar.m(i, rect);
+            if (z6) {
+                cVar.m(i, rect);
             }
         }
     }
@@ -972,8 +973,8 @@ public class Chip extends C4707q implements e, v, Checkable {
     public final void onInitializeAccessibilityNodeInfo(AccessibilityNodeInfo accessibilityNodeInfo) {
         super.onInitializeAccessibilityNodeInfo(accessibilityNodeInfo);
         accessibilityNodeInfo.setClassName(getAccessibilityClassName());
-        f fVar = this.f35929x;
-        accessibilityNodeInfo.setCheckable(fVar != null && fVar.f40921w0);
+        e eVar = this.f36697x;
+        accessibilityNodeInfo.setCheckable(eVar != null && eVar.f41200r0);
         accessibilityNodeInfo.setClickable(isClickable());
         getParent();
     }
@@ -986,8 +987,8 @@ public class Chip extends C4707q implements e, v, Checkable {
     @Override // android.widget.TextView, android.view.View
     public final void onRtlPropertiesChanged(int i) {
         super.onRtlPropertiesChanged(i);
-        if (this.f35922H != i) {
-            this.f35922H = i;
+        if (this.f36690H != i) {
+            this.f36690H = i;
             f();
         }
     }
@@ -1001,42 +1002,42 @@ public class Chip extends C4707q implements e, v, Checkable {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final boolean onTouchEvent(MotionEvent motionEvent) {
-        boolean z3;
+        boolean z6;
         int actionMasked = motionEvent.getActionMasked();
         boolean contains = getCloseIconTouchBounds().contains(motionEvent.getX(), motionEvent.getY());
         if (actionMasked != 0) {
             if (actionMasked != 1) {
                 if (actionMasked == 2) {
-                    if (this.f35918D) {
+                    if (this.f36686D) {
                         if (!contains) {
                             setCloseIconPressed(false);
                         }
-                        z3 = true;
+                        z6 = true;
                     }
                 }
-                z3 = false;
-            } else if (this.f35918D) {
+                z6 = false;
+            } else if (this.f36686D) {
                 playSoundEffect(0);
-                View.OnClickListener onClickListener = this.f35915A;
+                View.OnClickListener onClickListener = this.f36683A;
                 if (onClickListener != null) {
                     onClickListener.onClick(this);
                 }
-                if (this.f35925L) {
-                    this.f35924K.q(1, 1);
+                if (this.f36693L) {
+                    this.f36692K.q(1, 1);
                 }
-                z3 = true;
+                z6 = true;
                 setCloseIconPressed(false);
             }
-            z3 = false;
+            z6 = false;
             setCloseIconPressed(false);
         } else {
             if (contains) {
                 setCloseIconPressed(true);
-                z3 = true;
+                z6 = true;
             }
-            z3 = false;
+            z6 = false;
         }
-        return z3 || super.onTouchEvent(motionEvent);
+        return z6 || super.onTouchEvent(motionEvent);
     }
 
     public void setAccessibilityClassName(CharSequence charSequence) {
@@ -1045,7 +1046,7 @@ public class Chip extends C4707q implements e, v, Checkable {
 
     @Override // android.view.View
     public void setBackground(Drawable drawable) {
-        if (drawable == getBackgroundDrawable() || drawable == this.f35931z) {
+        if (drawable == getBackgroundDrawable() || drawable == this.f36699z) {
             super.setBackground(drawable);
         } else {
             Log.w("Chip", "Do not set the background; Chip manages its own background drawable.");
@@ -1057,16 +1058,16 @@ public class Chip extends C4707q implements e, v, Checkable {
         Log.w("Chip", "Do not set the background color; Chip manages its own background drawable.");
     }
 
-    @Override // m.C4707q, android.view.View
+    @Override // m.C4720q, android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
-        if (drawable == getBackgroundDrawable() || drawable == this.f35931z) {
+        if (drawable == getBackgroundDrawable() || drawable == this.f36699z) {
             super.setBackgroundDrawable(drawable);
         } else {
             Log.w("Chip", "Do not set the background drawable; Chip manages its own background drawable.");
         }
     }
 
-    @Override // m.C4707q, android.view.View
+    @Override // m.C4720q, android.view.View
     public void setBackgroundResource(int i) {
         Log.w("Chip", "Do not set the background resource; Chip manages its own background drawable.");
     }
@@ -1081,40 +1082,40 @@ public class Chip extends C4707q implements e, v, Checkable {
         Log.w("Chip", "Do not set the background tint mode; Chip manages its own background drawable.");
     }
 
-    public void setCheckable(boolean z3) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.w(z3);
+    public void setCheckable(boolean z6) {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.w(z6);
         }
     }
 
     public void setCheckableResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.w(fVar.f40876K0.getResources().getBoolean(i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.w(eVar.f41156F0.getResources().getBoolean(i));
         }
     }
 
     @Override // android.widget.CompoundButton, android.widget.Checkable
-    public void setChecked(boolean z3) {
-        f fVar = this.f35929x;
-        if (fVar == null) {
-            this.f35917C = z3;
-        } else if (fVar.f40921w0) {
-            super.setChecked(z3);
+    public void setChecked(boolean z6) {
+        e eVar = this.f36697x;
+        if (eVar == null) {
+            this.f36685C = z6;
+        } else if (eVar.f41200r0) {
+            super.setChecked(z6);
         }
     }
 
     public void setCheckedIcon(Drawable drawable) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.x(drawable);
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.x(drawable);
         }
     }
 
     @Deprecated
-    public void setCheckedIconEnabled(boolean z3) {
-        setCheckedIconVisible(z3);
+    public void setCheckedIconEnabled(boolean z6) {
+        setCheckedIconVisible(z6);
     }
 
     @Deprecated
@@ -1123,113 +1124,113 @@ public class Chip extends C4707q implements e, v, Checkable {
     }
 
     public void setCheckedIconResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.x(com.bumptech.glide.g.e(fVar.f40876K0, i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.x(com.bumptech.glide.g.h(eVar.f41156F0, i));
         }
     }
 
     public void setCheckedIconTint(ColorStateList colorStateList) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.y(colorStateList);
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.y(colorStateList);
         }
     }
 
     public void setCheckedIconTintResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.y(E.e.c(fVar.f40876K0, i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.y(E.e.c(eVar.f41156F0, i));
         }
     }
 
     public void setCheckedIconVisible(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.z(fVar.f40876K0.getResources().getBoolean(i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.z(eVar.f41156F0.getResources().getBoolean(i));
         }
     }
 
     public void setChipBackgroundColor(ColorStateList colorStateList) {
-        f fVar = this.f35929x;
-        if (fVar == null || fVar.f40884R == colorStateList) {
+        e eVar = this.f36697x;
+        if (eVar == null || eVar.f41169R == colorStateList) {
             return;
         }
-        fVar.f40884R = colorStateList;
-        fVar.onStateChange(fVar.getState());
+        eVar.f41169R = colorStateList;
+        eVar.onStateChange(eVar.getState());
     }
 
     public void setChipBackgroundColorResource(int i) {
         ColorStateList c9;
-        f fVar = this.f35929x;
-        if (fVar == null || fVar.f40884R == (c9 = E.e.c(fVar.f40876K0, i))) {
+        e eVar = this.f36697x;
+        if (eVar == null || eVar.f41169R == (c9 = E.e.c(eVar.f41156F0, i))) {
             return;
         }
-        fVar.f40884R = c9;
-        fVar.onStateChange(fVar.getState());
+        eVar.f41169R = c9;
+        eVar.onStateChange(eVar.getState());
     }
 
     @Deprecated
-    public void setChipCornerRadius(float f3) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.A(f3);
+    public void setChipCornerRadius(float f2) {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.A(f2);
         }
     }
 
     @Deprecated
     public void setChipCornerRadiusResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.A(fVar.f40876K0.getResources().getDimension(i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.A(eVar.f41156F0.getResources().getDimension(i));
         }
     }
 
-    public void setChipDrawable(f fVar) {
-        f fVar2 = this.f35929x;
-        if (fVar2 != fVar) {
-            if (fVar2 != null) {
-                fVar2.f40907g1 = new WeakReference(null);
+    public void setChipDrawable(e eVar) {
+        e eVar2 = this.f36697x;
+        if (eVar2 != eVar) {
+            if (eVar2 != null) {
+                eVar2.f41187b1 = new WeakReference(null);
             }
-            this.f35929x = fVar;
-            fVar.f40909i1 = false;
-            fVar.f40907g1 = new WeakReference(this);
-            b(this.f35923I);
+            this.f36697x = eVar;
+            eVar.f41189d1 = false;
+            eVar.f41187b1 = new WeakReference(this);
+            b(this.f36691I);
         }
     }
 
-    public void setChipEndPadding(float f3) {
-        f fVar = this.f35929x;
-        if (fVar == null || fVar.f40875J0 == f3) {
+    public void setChipEndPadding(float f2) {
+        e eVar = this.f36697x;
+        if (eVar == null || eVar.f41155E0 == f2) {
             return;
         }
-        fVar.f40875J0 = f3;
-        fVar.invalidateSelf();
-        fVar.u();
+        eVar.f41155E0 = f2;
+        eVar.invalidateSelf();
+        eVar.u();
     }
 
     public void setChipEndPaddingResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            float dimension = fVar.f40876K0.getResources().getDimension(i);
-            if (fVar.f40875J0 != dimension) {
-                fVar.f40875J0 = dimension;
-                fVar.invalidateSelf();
-                fVar.u();
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            float dimension = eVar.f41156F0.getResources().getDimension(i);
+            if (eVar.f41155E0 != dimension) {
+                eVar.f41155E0 = dimension;
+                eVar.invalidateSelf();
+                eVar.u();
             }
         }
     }
 
     public void setChipIcon(Drawable drawable) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.B(drawable);
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.B(drawable);
         }
     }
 
     @Deprecated
-    public void setChipIconEnabled(boolean z3) {
-        setChipIconVisible(z3);
+    public void setChipIconEnabled(boolean z6) {
+        setChipIconVisible(z6);
     }
 
     @Deprecated
@@ -1238,116 +1239,116 @@ public class Chip extends C4707q implements e, v, Checkable {
     }
 
     public void setChipIconResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.B(com.bumptech.glide.g.e(fVar.f40876K0, i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.B(com.bumptech.glide.g.h(eVar.f41156F0, i));
         }
     }
 
-    public void setChipIconSize(float f3) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.C(f3);
+    public void setChipIconSize(float f2) {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.C(f2);
         }
     }
 
     public void setChipIconSizeResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.C(fVar.f40876K0.getResources().getDimension(i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.C(eVar.f41156F0.getResources().getDimension(i));
         }
     }
 
     public void setChipIconTint(ColorStateList colorStateList) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.D(colorStateList);
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.D(colorStateList);
         }
     }
 
     public void setChipIconTintResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.D(E.e.c(fVar.f40876K0, i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.D(E.e.c(eVar.f41156F0, i));
         }
     }
 
     public void setChipIconVisible(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.E(fVar.f40876K0.getResources().getBoolean(i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.E(eVar.f41156F0.getResources().getBoolean(i));
         }
     }
 
-    public void setChipMinHeight(float f3) {
-        f fVar = this.f35929x;
-        if (fVar == null || fVar.f40886S == f3) {
+    public void setChipMinHeight(float f2) {
+        e eVar = this.f36697x;
+        if (eVar == null || eVar.f41171S == f2) {
             return;
         }
-        fVar.f40886S = f3;
-        fVar.invalidateSelf();
-        fVar.u();
+        eVar.f41171S = f2;
+        eVar.invalidateSelf();
+        eVar.u();
     }
 
     public void setChipMinHeightResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            float dimension = fVar.f40876K0.getResources().getDimension(i);
-            if (fVar.f40886S != dimension) {
-                fVar.f40886S = dimension;
-                fVar.invalidateSelf();
-                fVar.u();
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            float dimension = eVar.f41156F0.getResources().getDimension(i);
+            if (eVar.f41171S != dimension) {
+                eVar.f41171S = dimension;
+                eVar.invalidateSelf();
+                eVar.u();
             }
         }
     }
 
-    public void setChipStartPadding(float f3) {
-        f fVar = this.f35929x;
-        if (fVar == null || fVar.C0 == f3) {
+    public void setChipStartPadding(float f2) {
+        e eVar = this.f36697x;
+        if (eVar == null || eVar.f41206x0 == f2) {
             return;
         }
-        fVar.C0 = f3;
-        fVar.invalidateSelf();
-        fVar.u();
+        eVar.f41206x0 = f2;
+        eVar.invalidateSelf();
+        eVar.u();
     }
 
     public void setChipStartPaddingResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            float dimension = fVar.f40876K0.getResources().getDimension(i);
-            if (fVar.C0 != dimension) {
-                fVar.C0 = dimension;
-                fVar.invalidateSelf();
-                fVar.u();
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            float dimension = eVar.f41156F0.getResources().getDimension(i);
+            if (eVar.f41206x0 != dimension) {
+                eVar.f41206x0 = dimension;
+                eVar.invalidateSelf();
+                eVar.u();
             }
         }
     }
 
     public void setChipStrokeColor(ColorStateList colorStateList) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.F(colorStateList);
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.F(colorStateList);
         }
     }
 
     public void setChipStrokeColorResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.F(E.e.c(fVar.f40876K0, i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.F(E.e.c(eVar.f41156F0, i));
         }
     }
 
-    public void setChipStrokeWidth(float f3) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.G(f3);
+    public void setChipStrokeWidth(float f2) {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.G(f2);
         }
     }
 
     public void setChipStrokeWidthResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.G(fVar.f40876K0.getResources().getDimension(i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.G(eVar.f41156F0.getResources().getDimension(i));
         }
     }
 
@@ -1362,29 +1363,29 @@ public class Chip extends C4707q implements e, v, Checkable {
     }
 
     public void setCloseIcon(Drawable drawable) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.H(drawable);
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.H(drawable);
         }
         d();
     }
 
     public void setCloseIconContentDescription(CharSequence charSequence) {
-        f fVar = this.f35929x;
-        if (fVar == null || fVar.f40920v0 == charSequence) {
+        e eVar = this.f36697x;
+        if (eVar == null || eVar.f41199q0 == charSequence) {
             return;
         }
-        String str = M.b.f1765b;
-        M.b bVar = TextUtils.getLayoutDirectionFromLocale(Locale.getDefault()) == 1 ? M.b.f1768e : M.b.f1767d;
+        String str = M.b.f1796b;
+        M.b bVar = TextUtils.getLayoutDirectionFromLocale(Locale.getDefault()) == 1 ? M.b.f1799e : M.b.f1798d;
         bVar.getClass();
-        h hVar = M.h.f1775a;
-        fVar.f40920v0 = bVar.c(charSequence);
-        fVar.invalidateSelf();
+        h hVar = i.f1808a;
+        eVar.f41199q0 = bVar.c(charSequence);
+        eVar.invalidateSelf();
     }
 
     @Deprecated
-    public void setCloseIconEnabled(boolean z3) {
-        setCloseIconVisible(z3);
+    public void setCloseIconEnabled(boolean z6) {
+        setCloseIconVisible(z6);
     }
 
     @Deprecated
@@ -1392,67 +1393,67 @@ public class Chip extends C4707q implements e, v, Checkable {
         setCloseIconVisible(i);
     }
 
-    public void setCloseIconEndPadding(float f3) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.I(f3);
+    public void setCloseIconEndPadding(float f2) {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.I(f2);
         }
     }
 
     public void setCloseIconEndPaddingResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.I(fVar.f40876K0.getResources().getDimension(i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.I(eVar.f41156F0.getResources().getDimension(i));
         }
     }
 
     public void setCloseIconResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.H(com.bumptech.glide.g.e(fVar.f40876K0, i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.H(com.bumptech.glide.g.h(eVar.f41156F0, i));
         }
         d();
     }
 
-    public void setCloseIconSize(float f3) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.J(f3);
+    public void setCloseIconSize(float f2) {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.J(f2);
         }
     }
 
     public void setCloseIconSizeResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.J(fVar.f40876K0.getResources().getDimension(i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.J(eVar.f41156F0.getResources().getDimension(i));
         }
     }
 
-    public void setCloseIconStartPadding(float f3) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.K(f3);
+    public void setCloseIconStartPadding(float f2) {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.K(f2);
         }
     }
 
     public void setCloseIconStartPaddingResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.K(fVar.f40876K0.getResources().getDimension(i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.K(eVar.f41156F0.getResources().getDimension(i));
         }
     }
 
     public void setCloseIconTint(ColorStateList colorStateList) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.L(colorStateList);
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.L(colorStateList);
         }
     }
 
     public void setCloseIconTintResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.L(E.e.c(fVar.f40876K0, i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.L(E.e.c(eVar.f41156F0, i));
         }
     }
 
@@ -1460,7 +1461,7 @@ public class Chip extends C4707q implements e, v, Checkable {
         setCloseIconVisible(getResources().getBoolean(i));
     }
 
-    @Override // m.C4707q, android.widget.TextView
+    @Override // m.C4720q, android.widget.TextView
     public final void setCompoundDrawables(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         if (drawable != null) {
             throw new UnsupportedOperationException("Please set start drawable using R.attr#chipIcon.");
@@ -1471,7 +1472,7 @@ public class Chip extends C4707q implements e, v, Checkable {
         super.setCompoundDrawables(drawable, drawable2, drawable3, drawable4);
     }
 
-    @Override // m.C4707q, android.widget.TextView
+    @Override // m.C4720q, android.widget.TextView
     public final void setCompoundDrawablesRelative(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         if (drawable != null) {
             throw new UnsupportedOperationException("Please set start drawable using R.attr#chipIcon.");
@@ -1483,54 +1484,54 @@ public class Chip extends C4707q implements e, v, Checkable {
     }
 
     @Override // android.widget.TextView
-    public final void setCompoundDrawablesRelativeWithIntrinsicBounds(int i, int i6, int i9, int i10) {
+    public final void setCompoundDrawablesRelativeWithIntrinsicBounds(int i, int i4, int i6, int i9) {
         if (i != 0) {
             throw new UnsupportedOperationException("Please set start drawable using R.attr#chipIcon.");
         }
-        if (i9 != 0) {
+        if (i6 != 0) {
             throw new UnsupportedOperationException("Please set end drawable using R.attr#closeIcon.");
         }
-        super.setCompoundDrawablesRelativeWithIntrinsicBounds(i, i6, i9, i10);
+        super.setCompoundDrawablesRelativeWithIntrinsicBounds(i, i4, i6, i9);
     }
 
     @Override // android.widget.TextView
-    public final void setCompoundDrawablesWithIntrinsicBounds(int i, int i6, int i9, int i10) {
+    public final void setCompoundDrawablesWithIntrinsicBounds(int i, int i4, int i6, int i9) {
         if (i != 0) {
             throw new UnsupportedOperationException("Please set start drawable using R.attr#chipIcon.");
         }
-        if (i9 != 0) {
+        if (i6 != 0) {
             throw new UnsupportedOperationException("Please set end drawable using R.attr#closeIcon.");
         }
-        super.setCompoundDrawablesWithIntrinsicBounds(i, i6, i9, i10);
+        super.setCompoundDrawablesWithIntrinsicBounds(i, i4, i6, i9);
     }
 
     @Override // android.view.View
-    public void setElevation(float f3) {
-        super.setElevation(f3);
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.i(f3);
+    public void setElevation(float f2) {
+        super.setElevation(f2);
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.i(f2);
         }
     }
 
     @Override // android.widget.TextView
     public void setEllipsize(TextUtils.TruncateAt truncateAt) {
-        if (this.f35929x == null) {
+        if (this.f36697x == null) {
             return;
         }
         if (truncateAt == TextUtils.TruncateAt.MARQUEE) {
             throw new UnsupportedOperationException("Text within a chip are not allowed to scroll.");
         }
         super.setEllipsize(truncateAt);
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.f40908h1 = truncateAt;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.f41188c1 = truncateAt;
         }
     }
 
-    public void setEnsureMinTouchTargetSize(boolean z3) {
-        this.f35921G = z3;
-        b(this.f35923I);
+    public void setEnsureMinTouchTargetSize(boolean z6) {
+        this.f36689G = z6;
+        b(this.f36691I);
     }
 
     @Override // android.widget.TextView
@@ -1542,51 +1543,51 @@ public class Chip extends C4707q implements e, v, Checkable {
         }
     }
 
-    public void setHideMotionSpec(C4662b c4662b) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.f40868B0 = c4662b;
+    public void setHideMotionSpec(C4771b c4771b) {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.f41205w0 = c4771b;
         }
     }
 
     public void setHideMotionSpecResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.f40868B0 = C4662b.a(fVar.f40876K0, i);
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.f41205w0 = C4771b.a(eVar.f41156F0, i);
         }
     }
 
-    public void setIconEndPadding(float f3) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.N(f3);
+    public void setIconEndPadding(float f2) {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.N(f2);
         }
     }
 
     public void setIconEndPaddingResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.N(fVar.f40876K0.getResources().getDimension(i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.N(eVar.f41156F0.getResources().getDimension(i));
         }
     }
 
-    public void setIconStartPadding(float f3) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.O(f3);
+    public void setIconStartPadding(float f2) {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.O(f2);
         }
     }
 
     public void setIconStartPaddingResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.O(fVar.f40876K0.getResources().getDimension(i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.O(eVar.f41156F0.getResources().getDimension(i));
         }
     }
 
     @Override // android.view.View
     public void setLayoutDirection(int i) {
-        if (this.f35929x == null) {
+        if (this.f36697x == null) {
             return;
         }
         super.setLayoutDirection(i);
@@ -1611,9 +1612,9 @@ public class Chip extends C4707q implements e, v, Checkable {
     @Override // android.widget.TextView
     public void setMaxWidth(int i) {
         super.setMaxWidth(i);
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.f40910j1 = i;
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.f41190e1 = i;
         }
     }
 
@@ -1627,83 +1628,83 @@ public class Chip extends C4707q implements e, v, Checkable {
 
     @Override // android.widget.CompoundButton
     public void setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener onCheckedChangeListener) {
-        this.f35916B = onCheckedChangeListener;
+        this.f36684B = onCheckedChangeListener;
     }
 
     public void setOnCloseIconClickListener(View.OnClickListener onClickListener) {
-        this.f35915A = onClickListener;
+        this.f36683A = onClickListener;
         d();
     }
 
     public void setRippleColor(ColorStateList colorStateList) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.P(colorStateList);
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.P(colorStateList);
         }
-        this.f35929x.getClass();
+        this.f36697x.getClass();
         e();
     }
 
     public void setRippleColorResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.P(E.e.c(fVar.f40876K0, i));
-            this.f35929x.getClass();
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.P(E.e.c(eVar.f41156F0, i));
+            this.f36697x.getClass();
             e();
         }
     }
 
-    @Override // E3.v
-    public void setShapeAppearanceModel(E3.k kVar) {
-        this.f35929x.setShapeAppearanceModel(kVar);
+    @Override // G3.v
+    public void setShapeAppearanceModel(k kVar) {
+        this.f36697x.setShapeAppearanceModel(kVar);
     }
 
-    public void setShowMotionSpec(C4662b c4662b) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.f40867A0 = c4662b;
+    public void setShowMotionSpec(C4771b c4771b) {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.f41204v0 = c4771b;
         }
     }
 
     public void setShowMotionSpecResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.f40867A0 = C4662b.a(fVar.f40876K0, i);
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.f41204v0 = C4771b.a(eVar.f41156F0, i);
         }
     }
 
     @Override // android.widget.TextView
-    public void setSingleLine(boolean z3) {
-        if (!z3) {
+    public void setSingleLine(boolean z6) {
+        if (!z6) {
             throw new UnsupportedOperationException("Chip does not support multi-line text");
         }
-        super.setSingleLine(z3);
+        super.setSingleLine(z6);
     }
 
     @Override // android.widget.TextView
     public final void setText(CharSequence charSequence, TextView.BufferType bufferType) {
-        f fVar = this.f35929x;
-        if (fVar == null) {
+        e eVar = this.f36697x;
+        if (eVar == null) {
             return;
         }
         if (charSequence == null) {
             charSequence = "";
         }
-        super.setText(fVar.f40909i1 ? null : charSequence, bufferType);
-        f fVar2 = this.f35929x;
-        if (fVar2 == null || TextUtils.equals(fVar2.f40896X, charSequence)) {
+        super.setText(eVar.f41189d1 ? null : charSequence, bufferType);
+        e eVar2 = this.f36697x;
+        if (eVar2 == null || TextUtils.equals(eVar2.f41181X, charSequence)) {
             return;
         }
-        fVar2.f40896X = charSequence;
-        fVar2.f40883Q0.f41922d = true;
-        fVar2.invalidateSelf();
-        fVar2.u();
+        eVar2.f41181X = charSequence;
+        eVar2.f41162L0.f175d = true;
+        eVar2.invalidateSelf();
+        eVar2.u();
     }
 
-    public void setTextAppearance(B3.d dVar) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.Q(dVar);
+    public void setTextAppearance(D3.d dVar) {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.Q(dVar);
         }
         g();
     }
@@ -1712,87 +1713,87 @@ public class Chip extends C4707q implements e, v, Checkable {
         setTextAppearance(getContext(), i);
     }
 
-    public void setTextEndPadding(float f3) {
-        f fVar = this.f35929x;
-        if (fVar == null || fVar.f40872G0 == f3) {
+    public void setTextEndPadding(float f2) {
+        e eVar = this.f36697x;
+        if (eVar == null || eVar.f41153B0 == f2) {
             return;
         }
-        fVar.f40872G0 = f3;
-        fVar.invalidateSelf();
-        fVar.u();
+        eVar.f41153B0 = f2;
+        eVar.invalidateSelf();
+        eVar.u();
     }
 
     public void setTextEndPaddingResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            float dimension = fVar.f40876K0.getResources().getDimension(i);
-            if (fVar.f40872G0 != dimension) {
-                fVar.f40872G0 = dimension;
-                fVar.invalidateSelf();
-                fVar.u();
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            float dimension = eVar.f41156F0.getResources().getDimension(i);
+            if (eVar.f41153B0 != dimension) {
+                eVar.f41153B0 = dimension;
+                eVar.invalidateSelf();
+                eVar.u();
             }
         }
     }
 
     @Override // android.widget.TextView
-    public final void setTextSize(int i, float f3) {
-        super.setTextSize(i, f3);
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            float applyDimension = TypedValue.applyDimension(i, f3, getResources().getDisplayMetrics());
-            i iVar = fVar.f40883Q0;
-            B3.d dVar = iVar.f41924f;
+    public final void setTextSize(int i, float f2) {
+        super.setTextSize(i, f2);
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            float applyDimension = TypedValue.applyDimension(i, f2, getResources().getDisplayMetrics());
+            l lVar = eVar.f41162L0;
+            D3.d dVar = lVar.f177f;
             if (dVar != null) {
-                dVar.f203k = applyDimension;
-                iVar.f41919a.setTextSize(applyDimension);
-                fVar.u();
-                fVar.invalidateSelf();
+                dVar.f622k = applyDimension;
+                lVar.f172a.setTextSize(applyDimension);
+                eVar.u();
+                eVar.invalidateSelf();
             }
         }
         g();
     }
 
-    public void setTextStartPadding(float f3) {
-        f fVar = this.f35929x;
-        if (fVar == null || fVar.f40871F0 == f3) {
+    public void setTextStartPadding(float f2) {
+        e eVar = this.f36697x;
+        if (eVar == null || eVar.f41152A0 == f2) {
             return;
         }
-        fVar.f40871F0 = f3;
-        fVar.invalidateSelf();
-        fVar.u();
+        eVar.f41152A0 = f2;
+        eVar.invalidateSelf();
+        eVar.u();
     }
 
     public void setTextStartPaddingResource(int i) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            float dimension = fVar.f40876K0.getResources().getDimension(i);
-            if (fVar.f40871F0 != dimension) {
-                fVar.f40871F0 = dimension;
-                fVar.invalidateSelf();
-                fVar.u();
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            float dimension = eVar.f41156F0.getResources().getDimension(i);
+            if (eVar.f41152A0 != dimension) {
+                eVar.f41152A0 = dimension;
+                eVar.invalidateSelf();
+                eVar.u();
             }
         }
     }
 
-    public void setCloseIconVisible(boolean z3) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.M(z3);
+    public void setCloseIconVisible(boolean z6) {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.M(z6);
         }
         d();
     }
 
-    public void setCheckedIconVisible(boolean z3) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.z(z3);
+    public void setCheckedIconVisible(boolean z6) {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.z(z6);
         }
     }
 
-    public void setChipIconVisible(boolean z3) {
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.E(z3);
+    public void setChipIconVisible(boolean z6) {
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.E(z6);
         }
     }
 
@@ -1823,9 +1824,9 @@ public class Chip extends C4707q implements e, v, Checkable {
     @Override // android.widget.TextView
     public final void setTextAppearance(Context context, int i) {
         super.setTextAppearance(context, i);
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.Q(new B3.d(fVar.f40876K0, i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.Q(new D3.d(eVar.f41156F0, i));
         }
         g();
     }
@@ -1833,13 +1834,13 @@ public class Chip extends C4707q implements e, v, Checkable {
     @Override // android.widget.TextView
     public void setTextAppearance(int i) {
         super.setTextAppearance(i);
-        f fVar = this.f35929x;
-        if (fVar != null) {
-            fVar.Q(new B3.d(fVar.f40876K0, i));
+        e eVar = this.f36697x;
+        if (eVar != null) {
+            eVar.Q(new D3.d(eVar.f41156F0, i));
         }
         g();
     }
 
-    public void setInternalOnCheckedChangeListener(InterfaceC5237e interfaceC5237e) {
+    public void setInternalOnCheckedChangeListener(A3.g gVar) {
     }
 }

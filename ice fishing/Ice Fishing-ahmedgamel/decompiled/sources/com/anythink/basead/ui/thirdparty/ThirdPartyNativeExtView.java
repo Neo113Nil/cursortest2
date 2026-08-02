@@ -12,13 +12,13 @@ import com.anythink.core.common.v.q;
 public class ThirdPartyNativeExtView extends LinearLayout {
 
     /* renamed from: a, reason: collision with root package name */
-    private TextView f11346a;
+    private TextView f12132a;
 
     /* renamed from: b, reason: collision with root package name */
-    private TextView f11347b;
+    private TextView f12133b;
 
     /* renamed from: c, reason: collision with root package name */
-    private TextView f11348c;
+    private TextView f12134c;
 
     public ThirdPartyNativeExtView(Context context) {
         this(context, null);
@@ -37,15 +37,15 @@ public class ThirdPartyNativeExtView extends LinearLayout {
     }
 
     public TextView getAdFromView() {
-        return this.f11348c;
+        return this.f12134c;
     }
 
     public TextView getDomainView() {
-        return this.f11346a;
+        return this.f12132a;
     }
 
     public TextView getWarningView() {
-        return this.f11347b;
+        return this.f12133b;
     }
 
     public void initView(String str, String str2, String str3) {
@@ -53,35 +53,35 @@ public class ThirdPartyNativeExtView extends LinearLayout {
         Context context = getContext();
         if (!TextUtils.isEmpty(str)) {
             TextView textView = new TextView(context);
-            this.f11346a = textView;
+            this.f12132a = textView;
             textView.setText(str);
-            a(this.f11346a);
-            addView(this.f11346a);
+            a(this.f12132a);
+            addView(this.f12132a);
         }
         if (!TextUtils.isEmpty(str2)) {
             TextView textView2 = new TextView(context);
-            this.f11347b = textView2;
+            this.f12133b = textView2;
             textView2.setText(str2);
-            a(this.f11347b);
+            a(this.f12133b);
             if (getChildCount() > 0) {
                 LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-2, -2);
                 layoutParams.leftMargin = q.a(context, 10.0f);
-                addView(this.f11347b, layoutParams);
+                addView(this.f12133b, layoutParams);
             } else {
-                addView(this.f11347b);
+                addView(this.f12133b);
             }
         }
         if (!TextUtils.isEmpty(str3)) {
             TextView textView3 = new TextView(context);
-            this.f11348c = textView3;
+            this.f12134c = textView3;
             textView3.setText(str3);
-            a(this.f11348c);
+            a(this.f12134c);
             if (getChildCount() > 0) {
                 LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(-2, -2);
                 layoutParams2.leftMargin = q.a(context, 10.0f);
-                addView(this.f11348c, layoutParams2);
+                addView(this.f12134c, layoutParams2);
             } else {
-                addView(this.f11348c);
+                addView(this.f12134c);
             }
         }
         setGravity(16);

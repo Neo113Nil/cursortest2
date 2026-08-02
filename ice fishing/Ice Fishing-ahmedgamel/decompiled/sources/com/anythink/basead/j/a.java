@@ -4,5 +4,5 @@ package com.anythink.basead.j;
 public interface a {
     void a();
 
-    void a(boolean z3);
+    void a(boolean z6);
 }

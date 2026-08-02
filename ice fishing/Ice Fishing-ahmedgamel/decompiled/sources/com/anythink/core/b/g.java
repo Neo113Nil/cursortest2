@@ -15,16 +15,16 @@ public final class g extends e {
     public final void a(List<JSONObject> list, q qVar) {
         ar arVar;
         com.anythink.core.b.a.b bVar = new com.anythink.core.b.a.b();
-        bVar.f11673f = this.f11736f.f13338n.a().aL();
-        com.anythink.core.common.h.a aVar = this.f11736f;
-        bVar.f11686t = (aVar == null || (arVar = aVar.f13328c) == null) ? null : arVar.b();
-        com.anythink.core.b.a.a aVar2 = new com.anythink.core.b.a.a(this.f11823q, this.f11822p, this.f11821o, list, 1, this.f11736f.f13338n.a());
+        bVar.f12459f = this.f12522f.f14124n.a().aL();
+        com.anythink.core.common.h.a aVar = this.f12522f;
+        bVar.f12472t = (aVar == null || (arVar = aVar.f14114c) == null) ? null : arVar.b();
+        com.anythink.core.b.a.a aVar2 = new com.anythink.core.b.a.a(this.f12609q, this.f12608p, this.f12607o, list, 1, this.f12522f.f14124n.a());
         aVar2.a(bVar);
         aVar2.a(0, qVar);
     }
 
     @Override // com.anythink.core.b.e
     public final String b() {
-        return this.f11736f.f13340p;
+        return this.f12522f.f14126p;
     }
 }

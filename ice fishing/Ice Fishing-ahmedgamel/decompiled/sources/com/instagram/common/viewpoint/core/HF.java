@@ -6,7 +6,7 @@ import java.io.IOException;
 public abstract class HF {
     public static String[] A00 = {"o6dy0jxWVFoVpdfIHLQ5kJFOMlq1Sn1Q", "79oj", "9g10QGOLUMPWkkbPiEKlPZ6GdmncXBXa", "6fmIgIVXmOYY3cUB7ZYAXnWSgE20TitB", "v6a7Yb3DANDL70kkwlzLnkI1heNzynkm", "eDdjZQkAYxVEYJ3d9Q78IvgSo191T7ve", "sHmXnPOOobIrXpWrquJBTDw1maWJKk3u", "k0vF7vRBeJQaOBXZ"};
 
-    public static int A00(C06474v c06474v, int i) {
+    public static int A00(C06674v c06674v, int i) {
         switch (i) {
             case 1:
                 return 192;
@@ -16,9 +16,9 @@ public abstract class HF {
             case 5:
                 return 576 << (i - 2);
             case 6:
-                return c06474v.A0I() + 1;
+                return c06674v.A0I() + 1;
             case 7:
-                int A0M = c06474v.A0M();
+                int A0M = c06674v.A0M();
                 String[] strArr = A00;
                 if (strArr[6].charAt(23) != strArr[4].charAt(23)) {
                     throw new RuntimeException();
@@ -39,22 +39,22 @@ public abstract class HF {
         }
     }
 
-    public static long A01(InterfaceC2191ms interfaceC2191ms, HJ hj) throws IOException {
-        interfaceC2191ms.AIl();
-        boolean z3 = true;
-        interfaceC2191ms.A47(1);
+    public static long A01(InterfaceC2211ms interfaceC2211ms, HJ hj) throws IOException {
+        interfaceC2211ms.AIl();
+        boolean z6 = true;
+        interfaceC2211ms.A47(1);
         byte[] bArr = new byte[1];
-        interfaceC2191ms.AGt(bArr, 0, 1);
+        interfaceC2211ms.AGt(bArr, 0, 1);
         if ((bArr[0] & 1) != 1) {
-            z3 = false;
+            z6 = false;
         }
-        interfaceC2191ms.A47(2);
-        int i = z3 ? 7 : 6;
-        C06474v c06474v = new C06474v(i);
-        c06474v.A0e(HB.A00(interfaceC2191ms, c06474v.A0l(), 0, i));
-        interfaceC2191ms.AIl();
+        interfaceC2211ms.A47(2);
+        int i = z6 ? 7 : 6;
+        C06674v c06674v = new C06674v(i);
+        c06674v.A0e(HB.A00(interfaceC2211ms, c06674v.A0l(), 0, i));
+        interfaceC2211ms.AIl();
         HE he = new HE();
-        boolean isBlockSizeVariable = A08(c06474v, hj, z3, he);
+        boolean isBlockSizeVariable = A08(c06674v, hj, z6, he);
         if (isBlockSizeVariable) {
             return he.A00;
         }
@@ -65,12 +65,12 @@ public abstract class HF {
         if (i == 0) {
             return true;
         }
-        int i6 = hj.A01;
+        int i4 = hj.A01;
         if (A00[7].length() == 8) {
             throw new RuntimeException();
         }
         A00[0] = "dnyA5Em4Vekc9hKZNMMqKWCBR5ivXppC";
-        return i == i6;
+        return i == i4;
     }
 
     public static boolean A03(int i, HJ hj) {
@@ -84,14 +84,14 @@ public abstract class HF {
         return i <= 10 && hj.A02 == 2;
     }
 
-    public static boolean A04(C06474v c06474v, int i) {
-        int A0I = c06474v.A0I();
-        int crc = c06474v.A09();
-        return A0I == C5C.A0J(c06474v.A0l(), i, crc + (-1), 0);
+    public static boolean A04(C06674v c06674v, int i) {
+        int A0I = c06674v.A0I();
+        int crc = c06674v.A09();
+        return A0I == C5C.A0J(c06674v.A0l(), i, crc + (-1), 0);
     }
 
-    public static boolean A05(C06474v c06474v, HJ hj, int i) {
-        int A002 = A00(c06474v, i);
+    public static boolean A05(C06674v c06674v, HJ hj, int i) {
+        int A002 = A00(c06674v, i);
         if (A002 != -1) {
             int blockSizeSamples = hj.A03;
             if (A002 <= blockSizeSamples) {
@@ -101,7 +101,7 @@ public abstract class HF {
         return false;
     }
 
-    public static boolean A06(C06474v c06474v, HJ hj, int i) {
+    public static boolean A06(C06674v c06674v, HJ hj, int i) {
         int sampleRate = hj.A07;
         if (i == 0) {
             return true;
@@ -110,21 +110,21 @@ public abstract class HF {
             return i == hj.A08;
         }
         if (i == 12) {
-            return c06474v.A0I() * 1000 == sampleRate;
+            return c06674v.A0I() * 1000 == sampleRate;
         }
         if (i > 14) {
             return false;
         }
-        int expectedSampleRate = c06474v.A0M();
+        int expectedSampleRate = c06674v.A0M();
         if (i == 14) {
             expectedSampleRate *= 10;
         }
         return expectedSampleRate == sampleRate;
     }
 
-    public static boolean A07(C06474v c06474v, HJ hj, int i, HE he) {
-        int A09 = c06474v.A09();
-        long A0Q = c06474v.A0Q();
+    public static boolean A07(C06674v c06674v, HJ hj, int i, HE he) {
+        int A09 = c06674v.A09();
+        long A0Q = c06674v.A0Q();
         long frameHeaderBytes = A0Q >>> 16;
         if (frameHeaderBytes != i) {
             return false;
@@ -132,14 +132,14 @@ public abstract class HF {
         int blockSizeKey = (int) ((A0Q >> 8) & 15);
         long frameHeaderBytes2 = A0Q >> 1;
         int frameStartPosition = (int) (frameHeaderBytes2 & 7);
-        return A03((int) ((A0Q >> 4) & 15), hj) && A02(frameStartPosition, hj) && !(((A0Q & 1) > 1L ? 1 : ((A0Q & 1) == 1L ? 0 : -1)) == 0) && A08(c06474v, hj, (((A0Q >>> 16) & 1) > 1L ? 1 : (((A0Q >>> 16) & 1) == 1L ? 0 : -1)) == 0, he) && A05(c06474v, hj, (int) ((A0Q >> 12) & 15)) && A06(c06474v, hj, blockSizeKey) && A04(c06474v, A09);
+        return A03((int) ((A0Q >> 4) & 15), hj) && A02(frameStartPosition, hj) && !(((A0Q & 1) > 1L ? 1 : ((A0Q & 1) == 1L ? 0 : -1)) == 0) && A08(c06674v, hj, (((A0Q >>> 16) & 1) > 1L ? 1 : (((A0Q >>> 16) & 1) == 1L ? 0 : -1)) == 0, he) && A05(c06674v, hj, (int) ((A0Q >> 12) & 15)) && A06(c06674v, hj, blockSizeKey) && A04(c06674v, A09);
     }
 
-    public static boolean A08(C06474v c06474v, HJ hj, boolean z3, HE he) {
+    public static boolean A08(C06674v c06674v, HJ hj, boolean z6, HE he) {
         long utf8Value;
         try {
-            long A0S = c06474v.A0S();
-            if (z3) {
+            long A0S = c06674v.A0S();
+            if (z6) {
                 utf8Value = A0S;
             } else {
                 long utf8Value2 = hj.A03;
@@ -152,21 +152,21 @@ public abstract class HF {
         }
     }
 
-    public static boolean A09(InterfaceC2191ms interfaceC2191ms, HJ hj, int i, HE he) throws IOException {
-        long A8i = interfaceC2191ms.A8i();
+    public static boolean A09(InterfaceC2211ms interfaceC2211ms, HJ hj, int i, HE he) throws IOException {
+        long A8i = interfaceC2211ms.A8i();
         byte[] bArr = new byte[2];
-        interfaceC2191ms.AGt(bArr, 0, 2);
+        interfaceC2211ms.AGt(bArr, 0, 2);
         if ((((bArr[0] & 255) << 8) | (bArr[1] & 255)) != i) {
-            interfaceC2191ms.AIl();
-            interfaceC2191ms.A47((int) (A8i - interfaceC2191ms.A8n()));
+            interfaceC2211ms.AIl();
+            interfaceC2211ms.A47((int) (A8i - interfaceC2211ms.A8n()));
             return false;
         }
-        C06474v c06474v = new C06474v(16);
-        System.arraycopy(bArr, 0, c06474v.A0l(), 0, 2);
-        byte[] frameStartBytes = c06474v.A0l();
-        c06474v.A0e(HB.A00(interfaceC2191ms, frameStartBytes, 2, 14));
-        interfaceC2191ms.AIl();
-        interfaceC2191ms.A47((int) (A8i - interfaceC2191ms.A8n()));
-        return A07(c06474v, hj, i, he);
+        C06674v c06674v = new C06674v(16);
+        System.arraycopy(bArr, 0, c06674v.A0l(), 0, 2);
+        byte[] frameStartBytes = c06674v.A0l();
+        c06674v.A0e(HB.A00(interfaceC2211ms, frameStartBytes, 2, 14));
+        interfaceC2211ms.AIl();
+        interfaceC2211ms.A47((int) (A8i - interfaceC2211ms.A8n()));
+        return A07(c06674v, hj, i, he);
     }
 }

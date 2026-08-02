@@ -1,41 +1,41 @@
 package i5;
 
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public interface n {
     /* renamed from: addClickListener */
-    void mo30addClickListener(h hVar);
+    void mo29addClickListener(h hVar);
 
     /* renamed from: addForegroundLifecycleListener */
-    void mo31addForegroundLifecycleListener(j jVar);
+    void mo30addForegroundLifecycleListener(j jVar);
 
     /* renamed from: addPermissionObserver */
-    void mo32addPermissionObserver(o oVar);
+    void mo31addPermissionObserver(o oVar);
 
     /* renamed from: clearAllNotifications */
-    void mo33clearAllNotifications();
+    void mo32clearAllNotifications();
 
     /* renamed from: getCanRequestPermission */
-    boolean mo34getCanRequestPermission();
+    boolean mo33getCanRequestPermission();
 
     /* renamed from: getPermission */
-    boolean mo35getPermission();
+    boolean mo34getPermission();
 
     /* renamed from: removeClickListener */
-    void mo36removeClickListener(h hVar);
+    void mo35removeClickListener(h hVar);
 
     /* renamed from: removeForegroundLifecycleListener */
-    void mo37removeForegroundLifecycleListener(j jVar);
+    void mo36removeForegroundLifecycleListener(j jVar);
 
     /* renamed from: removeGroupedNotifications */
-    void mo38removeGroupedNotifications(String str);
+    void mo37removeGroupedNotifications(String str);
 
     /* renamed from: removeNotification */
-    void mo39removeNotification(int i);
+    void mo38removeNotification(int i);
 
     /* renamed from: removePermissionObserver */
-    void mo40removePermissionObserver(o oVar);
+    void mo39removePermissionObserver(o oVar);
 
-    Object requestPermission(boolean z3, InterfaceC5267d interfaceC5267d);
+    Object requestPermission(boolean z6, InterfaceC5240d interfaceC5240d);
 }

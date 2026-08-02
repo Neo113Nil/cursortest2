@@ -5,11 +5,11 @@ import java.io.IOException;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public interface D9 {
-    void ADk(int i, C2248no c2248no, C0833Cs c0833Cs);
+    void ADk(int i, C2268no c2268no, C0853Cs c0853Cs);
 
-    void AEb(int i, C2248no c2248no, Cq cq, C0833Cs c0833Cs);
+    void AEb(int i, C2268no c2268no, Cq cq, C0853Cs c0853Cs);
 
-    void AEd(@MetaExoPlayerCustomization int i, @MetaExoPlayerCustomization C2248no c2248no, Cq cq, C0833Cs c0833Cs, Object obj, Object obj2);
+    void AEd(@MetaExoPlayerCustomization int i, @MetaExoPlayerCustomization C2268no c2268no, Cq cq, C0853Cs c0853Cs, Object obj, Object obj2);
 
-    void AEg(int i, C2248no c2248no, Cq cq, C0833Cs c0833Cs, IOException iOException, boolean z3);
+    void AEg(int i, C2268no c2268no, Cq cq, C0853Cs c0853Cs, IOException iOException, boolean z6);
 }

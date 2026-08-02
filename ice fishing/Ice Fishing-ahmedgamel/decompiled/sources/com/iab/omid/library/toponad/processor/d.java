@@ -14,10 +14,10 @@ import org.json.JSONObject;
 public class d implements a {
 
     /* renamed from: a, reason: collision with root package name */
-    private final int[] f36272a = new int[2];
+    private final int[] f37039a = new int[2];
 
     @TargetApi(21)
-    private void b(ViewGroup viewGroup, JSONObject jSONObject, a.InterfaceC0170a interfaceC0170a, boolean z3) {
+    private void b(ViewGroup viewGroup, JSONObject jSONObject, a.InterfaceC0170a interfaceC0170a, boolean z6) {
         HashMap hashMap = new HashMap();
         for (int i = 0; i < viewGroup.getChildCount(); i++) {
             View childAt = viewGroup.getChildAt(i);
@@ -34,7 +34,7 @@ public class d implements a {
         while (it.hasNext()) {
             Iterator it2 = ((ArrayList) hashMap.get((Float) it.next())).iterator();
             while (it2.hasNext()) {
-                interfaceC0170a.a((View) it2.next(), this, jSONObject, z3);
+                interfaceC0170a.a((View) it2.next(), this, jSONObject, z6);
             }
         }
     }
@@ -46,26 +46,26 @@ public class d implements a {
         }
         int width = view.getWidth();
         int height = view.getHeight();
-        view.getLocationOnScreen(this.f36272a);
-        int[] iArr = this.f36272a;
+        view.getLocationOnScreen(this.f37039a);
+        int[] iArr = this.f37039a;
         return com.iab.omid.library.toponad.utils.c.a(iArr[0], iArr[1], width, height);
     }
 
     @Override // com.iab.omid.library.toponad.processor.a
-    public void a(View view, JSONObject jSONObject, a.InterfaceC0170a interfaceC0170a, boolean z3, boolean z6) {
+    public void a(View view, JSONObject jSONObject, a.InterfaceC0170a interfaceC0170a, boolean z6, boolean z9) {
         if (view instanceof ViewGroup) {
             ViewGroup viewGroup = (ViewGroup) view;
-            if (z3) {
-                b(viewGroup, jSONObject, interfaceC0170a, z6);
+            if (z6) {
+                b(viewGroup, jSONObject, interfaceC0170a, z9);
             } else {
-                a(viewGroup, jSONObject, interfaceC0170a, z6);
+                a(viewGroup, jSONObject, interfaceC0170a, z9);
             }
         }
     }
 
-    private void a(ViewGroup viewGroup, JSONObject jSONObject, a.InterfaceC0170a interfaceC0170a, boolean z3) {
+    private void a(ViewGroup viewGroup, JSONObject jSONObject, a.InterfaceC0170a interfaceC0170a, boolean z6) {
         for (int i = 0; i < viewGroup.getChildCount(); i++) {
-            interfaceC0170a.a(viewGroup.getChildAt(i), this, jSONObject, z3);
+            interfaceC0170a.a(viewGroup.getChildAt(i), this, jSONObject, z6);
         }
     }
 }

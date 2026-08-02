@@ -7,17 +7,17 @@ import com.anythink.basead.exoplayer.f;
 public class SimpleShakeSensorChangeHandler extends BaseShakeSensorChangeHandlerImp {
 
     /* renamed from: d, reason: collision with root package name */
-    ATShackSensorListener f9067d;
+    ATShackSensorListener f9853d;
     public float lastX = 0.0f;
     public float lastY = 0.0f;
     public float lastZ = 0.0f;
     public long lastCallBackTimeMs = 0;
 
     /* renamed from: e, reason: collision with root package name */
-    private int f9068e = 10;
+    private int f9854e = 10;
 
     /* renamed from: f, reason: collision with root package name */
-    private long f9069f = f.f7187a;
+    private long f9855f = f.f7973a;
 
     @Override // com.anythink.basead.handler.BaseShakeSensorChangeHandlerImp
     public final void a() {
@@ -29,7 +29,7 @@ public class SimpleShakeSensorChangeHandler extends BaseShakeSensorChangeHandler
 
     /* JADX WARN: Code restructure failed: missing block: B:26:0x006b, code lost:
     
-        if (java.lang.Math.abs(r0 - r12) > r11.f9068e) goto L20;
+        if (java.lang.Math.abs(r0 - r12) > r11.f9854e) goto L20;
      */
     @Override // com.anythink.basead.handler.IShackSensorChangeHandler
     /*
@@ -37,34 +37,34 @@ public class SimpleShakeSensorChangeHandler extends BaseShakeSensorChangeHandler
     */
     public boolean handleSensorData(SensorEvent sensorEvent) {
         float[] fArr;
-        if (this.f9067d != null && (fArr = sensorEvent.values) != null && fArr.length >= 3) {
-            float f3 = -fArr[0];
+        if (this.f9853d != null && (fArr = sensorEvent.values) != null && fArr.length >= 3) {
+            float f2 = -fArr[0];
             float f9 = -fArr[1];
             float f10 = -fArr[2];
             a(sensorEvent);
-            String.format("handleSensorData lastx:%d,lasty:%d,lastz:%d", Integer.valueOf((int) f3), Integer.valueOf((int) f9), Integer.valueOf((int) f10));
+            String.format("handleSensorData lastx:%d,lasty:%d,lastz:%d", Integer.valueOf((int) f2), Integer.valueOf((int) f9), Integer.valueOf((int) f10));
             float f11 = this.lastX;
-            if (f11 == 0.0f || Math.abs(f3 - f11) <= this.f9068e) {
+            if (f11 == 0.0f || Math.abs(f2 - f11) <= this.f9854e) {
                 float f12 = this.lastY;
-                if (f12 == 0.0f || Math.abs(f9 - f12) <= this.f9068e) {
+                if (f12 == 0.0f || Math.abs(f9 - f12) <= this.f9854e) {
                     float f13 = this.lastZ;
                     if (f13 != 0.0f) {
                     }
-                    this.lastX = f3;
+                    this.lastX = f2;
                     this.lastY = f9;
                     this.lastZ = f10;
                 }
             }
             long currentTimeMillis = System.currentTimeMillis();
-            if (currentTimeMillis - this.lastCallBackTimeMs > this.f9069f) {
+            if (currentTimeMillis - this.lastCallBackTimeMs > this.f9855f) {
                 b();
-                if (this.f9067d.onShakeTrigger()) {
+                if (this.f9853d.onShakeTrigger()) {
                     this.lastCallBackTimeMs = currentTimeMillis;
                     a();
                     return true;
                 }
             }
-            this.lastX = f3;
+            this.lastX = f2;
             this.lastY = f9;
             this.lastZ = f10;
         }
@@ -74,13 +74,13 @@ public class SimpleShakeSensorChangeHandler extends BaseShakeSensorChangeHandler
     @Override // com.anythink.basead.handler.IShackSensorChangeHandler
     public void initSetting(ShakeSensorSetting shakeSensorSetting) {
         if (shakeSensorSetting != null) {
-            this.f9068e = shakeSensorSetting.getShakeStrength();
-            this.f9069f = shakeSensorSetting.getShakeTimeMs();
+            this.f9854e = shakeSensorSetting.getShakeStrength();
+            this.f9855f = shakeSensorSetting.getShakeTimeMs();
         }
     }
 
     @Override // com.anythink.basead.handler.IShackSensorChangeHandler
     public void setListener(ATShackSensorListener aTShackSensorListener) {
-        this.f9067d = aTShackSensorListener;
+        this.f9853d = aTShackSensorListener;
     }
 }

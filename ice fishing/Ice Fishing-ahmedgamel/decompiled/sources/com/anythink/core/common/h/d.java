@@ -4,62 +4,62 @@ package com.anythink.core.common.h;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    private String f13929a;
+    private String f14715a;
 
     /* renamed from: b, reason: collision with root package name */
-    private int f13930b;
+    private int f14716b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f13931c;
+    private int f14717c;
 
     /* renamed from: d, reason: collision with root package name */
-    private String f13932d;
+    private String f14718d;
 
     /* renamed from: e, reason: collision with root package name */
-    private long f13933e;
+    private long f14719e;
 
     /* renamed from: f, reason: collision with root package name */
-    private long f13934f;
+    private long f14720f;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f13935g;
+    private int f14721g;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f13936h = 2;
+    private int f14722h = 2;
     private int i;
 
-    public final void a(String str, int i, int i6) {
-        this.f13929a = str;
-        this.f13930b = i;
-        this.f13931c = i6;
+    public final void a(String str, int i, int i4) {
+        this.f14715a = str;
+        this.f14716b = i;
+        this.f14717c = i4;
     }
 
     public final int b() {
-        return this.f13930b;
+        return this.f14716b;
     }
 
     public final int c() {
-        return this.f13931c;
+        return this.f14717c;
     }
 
     public final String d() {
-        return this.f13932d;
+        return this.f14718d;
     }
 
     public final long e() {
-        return this.f13933e;
+        return this.f14719e;
     }
 
     public final long f() {
-        return this.f13934f;
+        return this.f14720f;
     }
 
     public final int g() {
-        return this.f13935g;
+        return this.f14721g;
     }
 
     public final int h() {
-        return this.f13936h;
+        return this.f14722h;
     }
 
     public final int i() {
@@ -68,27 +68,27 @@ public final class d {
 
     public final String toString() {
         StringBuilder sb = new StringBuilder("AdCallExtraInfo{realPlacementId='");
-        sb.append(this.f13929a);
+        sb.append(this.f14715a);
         sb.append("', realGroupId=");
-        sb.append(this.f13930b);
+        sb.append(this.f14716b);
         sb.append(", realTrafficGroupId=");
-        sb.append(this.f13931c);
+        sb.append(this.f14717c);
         sb.append(", realRequestId='");
-        sb.append(this.f13932d);
+        sb.append(this.f14718d);
         sb.append("', realPLSharedPLReqTimeGap=");
-        sb.append(this.f13933e);
+        sb.append(this.f14719e);
         sb.append(", sharedPLFailReqReqTime=");
-        sb.append(this.f13934f);
+        sb.append(this.f14720f);
         sb.append(", sharedPLFailRetryReqCount=");
-        sb.append(this.f13935g);
+        sb.append(this.f14721g);
         sb.append(", appStrategyType=");
-        sb.append(this.f13936h);
+        sb.append(this.f14722h);
         sb.append(", isReadyResultType=");
-        return D.y.q(sb, this.i, '}');
+        return D.x.n(sb, this.i, '}');
     }
 
     public final void b(long j6) {
-        this.f13934f = j6;
+        this.f14720f = j6;
     }
 
     public final void b(int i) {
@@ -96,26 +96,26 @@ public final class d {
     }
 
     public final String a() {
-        return this.f13929a;
+        return this.f14715a;
     }
 
     public final void a(String str) {
-        this.f13932d = str;
+        this.f14718d = str;
     }
 
     public final void a(long j6) {
-        this.f13933e = j6;
+        this.f14719e = j6;
     }
 
     public final void a(int i) {
-        this.f13935g = i;
+        this.f14721g = i;
     }
 
-    public final void a(boolean z3) {
-        if (z3) {
-            this.f13936h = 1;
+    public final void a(boolean z6) {
+        if (z6) {
+            this.f14722h = 1;
         } else {
-            this.f13936h = 2;
+            this.f14722h = 2;
         }
     }
 }

@@ -11,22 +11,22 @@ import java.util.Objects;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f40323a;
+    public final int f40134a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f40324b;
+    public final int f40135b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final long f40325c;
+    public final long f40136c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final long f40326d;
+    public final long f40137d;
 
-    public g(long j6, long j9, int i, int i6) {
-        this.f40323a = i;
-        this.f40324b = i6;
-        this.f40325c = j6;
-        this.f40326d = j9;
+    public g(long j6, long j9, int i, int i4) {
+        this.f40134a = i;
+        this.f40135b = i4;
+        this.f40136c = j6;
+        this.f40137d = j9;
     }
 
     public static g a(File file) {
@@ -43,10 +43,10 @@ public final class g {
         file.delete();
         DataOutputStream dataOutputStream = new DataOutputStream(new FileOutputStream(file));
         try {
-            dataOutputStream.writeInt(this.f40323a);
-            dataOutputStream.writeInt(this.f40324b);
-            dataOutputStream.writeLong(this.f40325c);
-            dataOutputStream.writeLong(this.f40326d);
+            dataOutputStream.writeInt(this.f40134a);
+            dataOutputStream.writeInt(this.f40135b);
+            dataOutputStream.writeLong(this.f40136c);
+            dataOutputStream.writeLong(this.f40137d);
             dataOutputStream.close();
         } catch (Throwable th) {
             try {
@@ -64,7 +64,7 @@ public final class g {
         }
         if (obj != null && (obj instanceof g)) {
             g gVar = (g) obj;
-            if (this.f40324b == gVar.f40324b && this.f40325c == gVar.f40325c && this.f40323a == gVar.f40323a && this.f40326d == gVar.f40326d) {
+            if (this.f40135b == gVar.f40135b && this.f40136c == gVar.f40136c && this.f40134a == gVar.f40134a && this.f40137d == gVar.f40137d) {
                 return true;
             }
         }
@@ -72,6 +72,6 @@ public final class g {
     }
 
     public final int hashCode() {
-        return Objects.hash(Integer.valueOf(this.f40324b), Long.valueOf(this.f40325c), Integer.valueOf(this.f40323a), Long.valueOf(this.f40326d));
+        return Objects.hash(Integer.valueOf(this.f40135b), Long.valueOf(this.f40136c), Integer.valueOf(this.f40134a), Long.valueOf(this.f40137d));
     }
 }

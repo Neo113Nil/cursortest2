@@ -1,33 +1,33 @@
 package R6;
 
-import C2.N;
-import L3.v;
+import E2.M;
 import N6.f;
-import S0.l;
-import S6.d;
-import S6.e;
+import S0.e;
+import S0.s;
 import Y6.c;
-import com.google.android.gms.internal.ads.C2941aq;
+import com.google.android.gms.internal.ads.C2964aq;
 import i8.n;
 import i8.r;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.function.BiFunction;
+import k6.d;
 import kotlin.jvm.internal.h;
-import m8.q;
+import m8.m;
+import m8.p;
 import p6.AbstractC4844e;
 import p6.C4840a;
 import p6.InterfaceC4845f;
-import q2.C4896n;
+import s2.C4945n;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class a implements BiFunction {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ M6.b f2754a;
+    public final /* synthetic */ M6.b f2881a;
 
     public /* synthetic */ a(M6.b bVar) {
-        this.f2754a = bVar;
+        this.f2881a = bVar;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:16:0x008d, code lost:
@@ -41,66 +41,66 @@ public final /* synthetic */ class a implements BiFunction {
     public final Object apply(Object obj, Object obj2) {
         C4840a c4840a;
         int i = 1;
-        int i6 = 0;
+        int i4 = 0;
         f fVar = (f) obj;
         int intValue = ((Integer) obj2).intValue();
-        M6.b bVar = this.f2754a;
-        if (bVar.f1876b.get()) {
-            return c.f3976f;
+        M6.b bVar = this.f2881a;
+        if (bVar.f1878b.get()) {
+            return c.f3920f;
         }
-        l lVar = new l(((O6.b) bVar.f1879e.f1264u).a(intValue));
+        e eVar = new e(((O6.b) bVar.f1881e.f1291u).a(intValue));
         c cVar = new c();
         int a9 = fVar.a();
-        M6.a aVar = new M6.a(bVar, cVar, lVar, i6);
-        M6.a aVar2 = new M6.a(bVar, cVar, lVar, i);
-        e eVar = bVar.f1878d;
-        eVar.getClass();
-        N n9 = new N();
-        n url = eVar.f2901c;
+        M6.a aVar = new M6.a(bVar, cVar, eVar, i4);
+        M6.a aVar2 = new M6.a(bVar, cVar, eVar, i);
+        S6.f fVar2 = bVar.f1880d;
+        fVar2.getClass();
+        M m9 = new M();
+        n url = fVar2.f2984c;
         h.e(url, "url");
-        n9.f301u = url;
-        ((Map) eVar.f2902d.get()).forEach(new S6.a(0, n9));
-        n9.p("POST", new d(fVar, a9, eVar.f2903e));
+        m9.f761u = url;
+        ((Map) fVar2.f2985d.get()).forEach(new S6.b(0, m9));
+        m9.p("POST", new S6.e(fVar, a9, fVar2.f2986e));
         C4840a a10 = C4840a.a();
-        v vVar = k6.d.f38684a;
+        F2.b bVar2 = d.f38611a;
         Boolean bool = Boolean.TRUE;
-        int i9 = 0;
+        int i6 = 0;
         while (true) {
-            Object[] objArr = a10.f39775a;
-            if (i9 >= objArr.length) {
+            Object[] objArr = a10.f39822a;
+            if (i6 >= objArr.length) {
                 Object[] copyOf = Arrays.copyOf(objArr, objArr.length + 2);
-                copyOf[copyOf.length - 2] = vVar;
+                copyOf[copyOf.length - 2] = bVar2;
                 copyOf[copyOf.length - 1] = bool;
                 c4840a = new C4840a(copyOf);
                 break;
             }
-            if (objArr[i9] == vVar) {
-                int i10 = i9 + 1;
-                if (objArr[i10] != bool) {
+            if (objArr[i6] == bVar2) {
+                int i9 = i6 + 1;
+                if (objArr[i9] != bool) {
                     Object[] objArr2 = (Object[]) objArr.clone();
-                    objArr2[i10] = bool;
+                    objArr2[i9] = bool;
                     c4840a = new C4840a(objArr2);
                 }
             } else {
-                i9 += 2;
+                i6 += 2;
             }
         }
-        InterfaceC4845f k9 = AbstractC4844e.f39779b.k(a10);
+        InterfaceC4845f k9 = AbstractC4844e.f39826b.k(a10);
         try {
-            r rVar = eVar.f2900b;
-            C4896n c4896n = new C4896n(n9);
+            r rVar = fVar2.f2983b;
+            C4945n c4945n = new C4945n(m9);
             rVar.getClass();
-            q qVar = new q(rVar, c4896n);
-            l lVar2 = new l(5, aVar2, aVar);
-            if (!qVar.f39391x.compareAndSet(false, true)) {
+            p pVar = new p(rVar, c4945n);
+            s sVar = new s(5, aVar2, aVar);
+            if (!pVar.f39548x.compareAndSet(false, true)) {
                 throw new IllegalStateException("Already Executed");
             }
-            s8.f fVar2 = s8.f.f40500a;
-            qVar.f39392y = s8.f.f40500a.h();
-            C2941aq c2941aq = rVar.f38195a;
-            m8.n nVar = new m8.n(qVar, lVar2);
-            c2941aq.getClass();
-            C2941aq.j(c2941aq, nVar, null, 6);
+            s8.f fVar3 = s8.f.f40554a;
+            pVar.f39549y = s8.f.f40554a.h();
+            C2964aq c2964aq = rVar.f38314a;
+            m mVar = new m(pVar, sVar);
+            c2964aq.getClass();
+            C2964aq.j(c2964aq, mVar, null, 6);
             k9.close();
             return cVar;
         } catch (Throwable th) {

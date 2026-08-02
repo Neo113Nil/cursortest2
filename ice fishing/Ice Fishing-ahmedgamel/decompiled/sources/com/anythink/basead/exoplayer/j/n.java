@@ -9,171 +9,171 @@ import com.anythink.basead.exoplayer.k.af;
 public final class n implements h {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f8173a = "DefaultDataSource";
+    private static final String f8959a = "DefaultDataSource";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f8174b = "asset";
+    private static final String f8960b = "asset";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f8175c = "content";
+    private static final String f8961c = "content";
 
     /* renamed from: d, reason: collision with root package name */
-    private static final String f8176d = "rtmp";
+    private static final String f8962d = "rtmp";
 
     /* renamed from: e, reason: collision with root package name */
-    private static final String f8177e = "rawresource";
+    private static final String f8963e = "rawresource";
 
     /* renamed from: f, reason: collision with root package name */
-    private final Context f8178f;
+    private final Context f8964f;
 
     /* renamed from: g, reason: collision with root package name */
-    private final aa<? super h> f8179g;
+    private final aa<? super h> f8965g;
 
     /* renamed from: h, reason: collision with root package name */
-    private final h f8180h;
+    private final h f8966h;
     private h i;
 
     /* renamed from: j, reason: collision with root package name */
-    private h f8181j;
+    private h f8967j;
 
     /* renamed from: k, reason: collision with root package name */
-    private h f8182k;
+    private h f8968k;
 
     /* renamed from: l, reason: collision with root package name */
-    private h f8183l;
+    private h f8969l;
 
     /* renamed from: m, reason: collision with root package name */
-    private h f8184m;
+    private h f8970m;
 
     /* renamed from: n, reason: collision with root package name */
-    private h f8185n;
+    private h f8971n;
 
     /* renamed from: o, reason: collision with root package name */
-    private h f8186o;
+    private h f8972o;
 
-    private n(Context context, aa<? super h> aaVar, String str, boolean z3) {
-        this(context, aaVar, str, z3, (byte) 0);
+    private n(Context context, aa<? super h> aaVar, String str, boolean z6) {
+        this(context, aaVar, str, z6, (byte) 0);
     }
 
     private h c() {
         if (this.i == null) {
-            this.i = new r(this.f8179g);
+            this.i = new r(this.f8965g);
         }
         return this.i;
     }
 
     private h d() {
-        if (this.f8181j == null) {
-            this.f8181j = new c(this.f8178f, this.f8179g);
+        if (this.f8967j == null) {
+            this.f8967j = new c(this.f8964f, this.f8965g);
         }
-        return this.f8181j;
+        return this.f8967j;
     }
 
     private h e() {
-        if (this.f8182k == null) {
-            this.f8182k = new e(this.f8178f, this.f8179g);
+        if (this.f8968k == null) {
+            this.f8968k = new e(this.f8964f, this.f8965g);
         }
-        return this.f8182k;
+        return this.f8968k;
     }
 
     private h f() {
-        if (this.f8183l == null) {
+        if (this.f8969l == null) {
             try {
-                this.f8183l = (h) Class.forName("com.anythink.expressad.exoplayer.ext.rtmp.RtmpDataSource").getConstructor(new Class[0]).newInstance(new Object[0]);
+                this.f8969l = (h) Class.forName("com.anythink.expressad.exoplayer.ext.rtmp.RtmpDataSource").getConstructor(new Class[0]).newInstance(new Object[0]);
             } catch (ClassNotFoundException unused) {
-                Log.w(f8173a, "Attempting to play RTMP stream without depending on the RTMP extension");
+                Log.w(f8959a, "Attempting to play RTMP stream without depending on the RTMP extension");
             } catch (Exception e9) {
                 throw new RuntimeException("Error instantiating RTMP extension", e9);
             }
-            if (this.f8183l == null) {
-                this.f8183l = this.f8180h;
+            if (this.f8969l == null) {
+                this.f8969l = this.f8966h;
             }
         }
-        return this.f8183l;
+        return this.f8969l;
     }
 
     private h g() {
-        if (this.f8184m == null) {
-            this.f8184m = new f();
+        if (this.f8970m == null) {
+            this.f8970m = new f();
         }
-        return this.f8184m;
+        return this.f8970m;
     }
 
     private h h() {
-        if (this.f8185n == null) {
-            this.f8185n = new y(this.f8178f, this.f8179g);
+        if (this.f8971n == null) {
+            this.f8971n = new y(this.f8964f, this.f8965g);
         }
-        return this.f8185n;
+        return this.f8971n;
     }
 
     @Override // com.anythink.basead.exoplayer.j.h
     public final long a(k kVar) {
-        com.anythink.basead.exoplayer.k.a.b(this.f8186o == null);
-        String scheme = kVar.f8137c.getScheme();
-        if (af.a(kVar.f8137c)) {
-            if (kVar.f8137c.getPath().startsWith("/android_asset/")) {
-                this.f8186o = d();
+        com.anythink.basead.exoplayer.k.a.b(this.f8972o == null);
+        String scheme = kVar.f8923c.getScheme();
+        if (af.a(kVar.f8923c)) {
+            if (kVar.f8923c.getPath().startsWith("/android_asset/")) {
+                this.f8972o = d();
             } else {
                 if (this.i == null) {
-                    this.i = new r(this.f8179g);
+                    this.i = new r(this.f8965g);
                 }
-                this.f8186o = this.i;
+                this.f8972o = this.i;
             }
-        } else if (f8174b.equals(scheme)) {
-            this.f8186o = d();
+        } else if (f8960b.equals(scheme)) {
+            this.f8972o = d();
         } else if ("content".equals(scheme)) {
-            if (this.f8182k == null) {
-                this.f8182k = new e(this.f8178f, this.f8179g);
+            if (this.f8968k == null) {
+                this.f8968k = new e(this.f8964f, this.f8965g);
             }
-            this.f8186o = this.f8182k;
-        } else if (f8176d.equals(scheme)) {
-            this.f8186o = f();
+            this.f8972o = this.f8968k;
+        } else if (f8962d.equals(scheme)) {
+            this.f8972o = f();
         } else if ("data".equals(scheme)) {
-            if (this.f8184m == null) {
-                this.f8184m = new f();
+            if (this.f8970m == null) {
+                this.f8970m = new f();
             }
-            this.f8186o = this.f8184m;
+            this.f8972o = this.f8970m;
         } else if ("rawresource".equals(scheme)) {
-            if (this.f8185n == null) {
-                this.f8185n = new y(this.f8178f, this.f8179g);
+            if (this.f8971n == null) {
+                this.f8971n = new y(this.f8964f, this.f8965g);
             }
-            this.f8186o = this.f8185n;
+            this.f8972o = this.f8971n;
         } else {
-            this.f8186o = this.f8180h;
+            this.f8972o = this.f8966h;
         }
-        return this.f8186o.a(kVar);
+        return this.f8972o.a(kVar);
     }
 
     @Override // com.anythink.basead.exoplayer.j.h
     public final void b() {
-        h hVar = this.f8186o;
+        h hVar = this.f8972o;
         if (hVar != null) {
             try {
                 hVar.b();
             } finally {
-                this.f8186o = null;
+                this.f8972o = null;
             }
         }
     }
 
-    private n(Context context, aa<? super h> aaVar, String str, boolean z3, byte b9) {
-        this(context, aaVar, new p(str, null, aaVar, 8000, 8000, z3, null));
+    private n(Context context, aa<? super h> aaVar, String str, boolean z6, byte b9) {
+        this(context, aaVar, new p(str, null, aaVar, 8000, 8000, z6, null));
     }
 
     public n(Context context, aa<? super h> aaVar, h hVar) {
-        this.f8178f = context.getApplicationContext();
-        this.f8179g = aaVar;
-        this.f8180h = (h) com.anythink.basead.exoplayer.k.a.a(hVar);
+        this.f8964f = context.getApplicationContext();
+        this.f8965g = aaVar;
+        this.f8966h = (h) com.anythink.basead.exoplayer.k.a.a(hVar);
     }
 
     @Override // com.anythink.basead.exoplayer.j.h
-    public final int a(byte[] bArr, int i, int i6) {
-        return this.f8186o.a(bArr, i, i6);
+    public final int a(byte[] bArr, int i, int i4) {
+        return this.f8972o.a(bArr, i, i4);
     }
 
     @Override // com.anythink.basead.exoplayer.j.h
     public final Uri a() {
-        h hVar = this.f8186o;
+        h hVar = this.f8972o;
         if (hVar == null) {
             return null;
         }

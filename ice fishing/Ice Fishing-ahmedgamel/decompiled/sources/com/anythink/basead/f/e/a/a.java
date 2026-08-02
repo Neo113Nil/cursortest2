@@ -92,7 +92,7 @@ public final class a {
             sb.append(readLine);
         }
         JSONObject optJSONObject = new JSONObject(sb.toString()).optJSONObject("data");
-        e eVar = new e(optJSONObject.optString("dstlink"), "", optJSONObject.optString(com.anythink.expressad.a.f17605M));
+        e eVar = new e(optJSONObject.optString("dstlink"), "", optJSONObject.optString(com.anythink.expressad.a.f18392M));
         bufferedReader.close();
         inputStreamReader.close();
         if (inputStream != null) {

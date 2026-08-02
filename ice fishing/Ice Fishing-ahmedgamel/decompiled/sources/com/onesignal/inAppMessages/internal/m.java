@@ -22,7 +22,7 @@ public final class m {
         public static final a TIME_SINCE_LAST_IN_APP = new a("TIME_SINCE_LAST_IN_APP", 0, "min_time_since");
         public static final a SESSION_TIME = new a("SESSION_TIME", 1, "session_time");
         public static final a CUSTOM = new a("CUSTOM", 2, "custom");
-        public static final a UNKNOWN = new a("UNKNOWN", 3, com.anythink.core.common.v.m.f16809e);
+        public static final a UNKNOWN = new a("UNKNOWN", 3, com.anythink.core.common.v.m.f17596e);
 
         /* renamed from: com.onesignal.inAppMessages.internal.m$a$a, reason: collision with other inner class name */
         public static final class C0208a {
@@ -32,7 +32,7 @@ public final class m {
 
             public final a fromString(String str) {
                 for (a aVar : a.values()) {
-                    if (q.L(aVar.value, str)) {
+                    if (q.b0(aVar.value, str)) {
                         return aVar;
                     }
                 }
@@ -50,7 +50,7 @@ public final class m {
         static {
             a[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = com.bumptech.glide.e.b($values);
+            $ENTRIES = X2.a.h($values);
             Companion = new C0208a(null);
         }
 
@@ -100,7 +100,7 @@ public final class m {
 
             public final b fromString(String str) {
                 for (b bVar : b.values()) {
-                    if (q.L(bVar.text, str)) {
+                    if (q.b0(bVar.text, str)) {
                         return bVar;
                     }
                 }
@@ -118,7 +118,7 @@ public final class m {
         static {
             b[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = com.bumptech.glide.e.b($values);
+            $ENTRIES = X2.a.h($values);
             Companion = new a(null);
         }
 

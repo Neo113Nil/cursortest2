@@ -9,61 +9,61 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import com.icefishingapp.icefishing.AbstractC4404f;
-import com.icefishingapp.icefishing.C5275R;
-import g.AbstractC4518a;
+import com.IceFishing.LiveIceFishing.C5248R;
+import com.google.android.gms.internal.ads.Wv;
+import g.AbstractC4528a;
 
 /* loaded from: classes.dex */
 public final class a extends Drawable {
 
     /* renamed from: m, reason: collision with root package name */
-    public static final float f38273m = (float) Math.toRadians(45.0d);
+    public static final float f38392m = (float) Math.toRadians(45.0d);
 
     /* renamed from: a, reason: collision with root package name */
-    public final Paint f38274a;
+    public final Paint f38393a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final float f38275b;
+    public final float f38394b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final float f38276c;
+    public final float f38395c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final float f38277d;
+    public final float f38396d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final float f38278e;
+    public final float f38397e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final boolean f38279f;
+    public final boolean f38398f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final Path f38280g;
+    public final Path f38399g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final int f38281h;
+    public final int f38400h;
     public boolean i;
 
     /* renamed from: j, reason: collision with root package name */
-    public float f38282j;
+    public float f38401j;
 
     /* renamed from: k, reason: collision with root package name */
-    public final float f38283k;
+    public final float f38402k;
 
     /* renamed from: l, reason: collision with root package name */
-    public final int f38284l;
+    public final int f38403l;
 
     public a(Context context) {
         Paint paint = new Paint();
-        this.f38274a = paint;
-        this.f38280g = new Path();
+        this.f38393a = paint;
+        this.f38399g = new Path();
         this.i = false;
-        this.f38284l = 2;
+        this.f38403l = 2;
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeJoin(Paint.Join.MITER);
         paint.setStrokeCap(Paint.Cap.BUTT);
         paint.setAntiAlias(true);
-        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(null, AbstractC4518a.f37600n, C5275R.attr.drawerArrowStyle, C5275R.style.Base_Widget_AppCompat_DrawerArrowToggle);
+        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(null, AbstractC4528a.f37562n, C5248R.attr.drawerArrowStyle, C5248R.style.Base_Widget_AppCompat_DrawerArrowToggle);
         int color = obtainStyledAttributes.getColor(3, 0);
         if (color != paint.getColor()) {
             paint.setColor(color);
@@ -72,57 +72,57 @@ public final class a extends Drawable {
         float dimension = obtainStyledAttributes.getDimension(7, 0.0f);
         if (paint.getStrokeWidth() != dimension) {
             paint.setStrokeWidth(dimension);
-            this.f38283k = (float) (Math.cos(f38273m) * (dimension / 2.0f));
+            this.f38402k = (float) (Math.cos(f38392m) * (dimension / 2.0f));
             invalidateSelf();
         }
-        boolean z3 = obtainStyledAttributes.getBoolean(6, true);
-        if (this.f38279f != z3) {
-            this.f38279f = z3;
+        boolean z6 = obtainStyledAttributes.getBoolean(6, true);
+        if (this.f38398f != z6) {
+            this.f38398f = z6;
             invalidateSelf();
         }
         float round = Math.round(obtainStyledAttributes.getDimension(5, 0.0f));
-        if (round != this.f38278e) {
-            this.f38278e = round;
+        if (round != this.f38397e) {
+            this.f38397e = round;
             invalidateSelf();
         }
-        this.f38281h = obtainStyledAttributes.getDimensionPixelSize(4, 0);
-        this.f38276c = Math.round(obtainStyledAttributes.getDimension(2, 0.0f));
-        this.f38275b = Math.round(obtainStyledAttributes.getDimension(0, 0.0f));
-        this.f38277d = obtainStyledAttributes.getDimension(1, 0.0f);
+        this.f38400h = obtainStyledAttributes.getDimensionPixelSize(4, 0);
+        this.f38395c = Math.round(obtainStyledAttributes.getDimension(2, 0.0f));
+        this.f38394b = Math.round(obtainStyledAttributes.getDimension(0, 0.0f));
+        this.f38396d = obtainStyledAttributes.getDimension(1, 0.0f);
         obtainStyledAttributes.recycle();
     }
 
-    public static float a(float f3, float f9, float f10) {
-        return AbstractC4404f.a(f9, f3, f10, f3);
+    public static float a(float f2, float f9, float f10) {
+        return Wv.a(f9, f2, f10, f2);
     }
 
     @Override // android.graphics.drawable.Drawable
     public final void draw(Canvas canvas) {
         Rect bounds = getBounds();
-        int i = this.f38284l;
-        boolean z3 = false;
+        int i = this.f38403l;
+        boolean z6 = false;
         if (i != 0 && (i == 1 || (i == 3 ? b.a(this) == 0 : b.a(this) == 1))) {
-            z3 = true;
+            z6 = true;
         }
-        float f3 = this.f38275b;
-        float sqrt = (float) Math.sqrt(f3 * f3 * 2.0f);
-        float f9 = this.f38282j;
-        float f10 = this.f38276c;
+        float f2 = this.f38394b;
+        float sqrt = (float) Math.sqrt(f2 * f2 * 2.0f);
+        float f9 = this.f38401j;
+        float f10 = this.f38395c;
         float a9 = a(f10, sqrt, f9);
-        float a10 = a(f10, this.f38277d, this.f38282j);
-        float round = Math.round(a(0.0f, this.f38283k, this.f38282j));
-        float a11 = a(0.0f, f38273m, this.f38282j);
-        float a12 = a(z3 ? 0.0f : -180.0f, z3 ? 180.0f : 0.0f, this.f38282j);
-        double d2 = a9;
-        double d9 = a11;
-        boolean z6 = z3;
-        float round2 = Math.round(Math.cos(d9) * d2);
-        float round3 = Math.round(Math.sin(d9) * d2);
-        Path path = this.f38280g;
+        float a10 = a(f10, this.f38396d, this.f38401j);
+        float round = Math.round(a(0.0f, this.f38402k, this.f38401j));
+        float a11 = a(0.0f, f38392m, this.f38401j);
+        float a12 = a(z6 ? 0.0f : -180.0f, z6 ? 180.0f : 0.0f, this.f38401j);
+        double d9 = a9;
+        double d10 = a11;
+        boolean z9 = z6;
+        float round2 = Math.round(Math.cos(d10) * d9);
+        float round3 = Math.round(Math.sin(d10) * d9);
+        Path path = this.f38399g;
         path.rewind();
-        float f11 = this.f38278e;
-        Paint paint = this.f38274a;
-        float a13 = a(paint.getStrokeWidth() + f11, -this.f38283k, this.f38282j);
+        float f11 = this.f38397e;
+        Paint paint = this.f38393a;
+        float a13 = a(paint.getStrokeWidth() + f11, -this.f38402k, this.f38401j);
         float f12 = (-a10) / 2.0f;
         path.moveTo(f12 + round, 0.0f);
         path.rLineTo(a10 - (round * 2.0f), 0.0f);
@@ -134,10 +134,10 @@ public final class a extends Drawable {
         canvas.save();
         float strokeWidth = paint.getStrokeWidth();
         float height = bounds.height() - (3.0f * strokeWidth);
-        canvas.translate(bounds.centerX(), (strokeWidth * 1.5f) + this.f38278e + ((((int) (height - (r6 * 2.0f))) / 4) * 2));
-        if (this.f38279f) {
-            canvas.rotate(a12 * (this.i ^ z6 ? -1 : 1));
-        } else if (z6) {
+        canvas.translate(bounds.centerX(), (strokeWidth * 1.5f) + this.f38397e + ((((int) (height - (r6 * 2.0f))) / 4) * 2));
+        if (this.f38398f) {
+            canvas.rotate(a12 * (this.i ^ z9 ? -1 : 1));
+        } else if (z9) {
             canvas.rotate(180.0f);
         }
         canvas.drawPath(path, paint);
@@ -146,12 +146,12 @@ public final class a extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public final int getIntrinsicHeight() {
-        return this.f38281h;
+        return this.f38400h;
     }
 
     @Override // android.graphics.drawable.Drawable
     public final int getIntrinsicWidth() {
-        return this.f38281h;
+        return this.f38400h;
     }
 
     @Override // android.graphics.drawable.Drawable
@@ -161,7 +161,7 @@ public final class a extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public final void setAlpha(int i) {
-        Paint paint = this.f38274a;
+        Paint paint = this.f38393a;
         if (i != paint.getAlpha()) {
             paint.setAlpha(i);
             invalidateSelf();
@@ -170,13 +170,13 @@ public final class a extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public final void setColorFilter(ColorFilter colorFilter) {
-        this.f38274a.setColorFilter(colorFilter);
+        this.f38393a.setColorFilter(colorFilter);
         invalidateSelf();
     }
 
-    public void setProgress(float f3) {
-        if (this.f38282j != f3) {
-            this.f38282j = f3;
+    public void setProgress(float f2) {
+        if (this.f38401j != f2) {
+            this.f38401j = f2;
             invalidateSelf();
         }
     }

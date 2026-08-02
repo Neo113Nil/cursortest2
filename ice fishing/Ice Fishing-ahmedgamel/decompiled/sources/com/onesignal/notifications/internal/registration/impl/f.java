@@ -1,13 +1,13 @@
 package com.onesignal.notifications.internal.registration.impl;
 
 import F.n;
-import O3.i;
-import P2.w;
+import Q3.i;
+import R2.w;
 import android.util.Base64;
 import com.google.firebase.messaging.FirebaseMessaging;
-import j3.m;
 import java.util.concurrent.ExecutionException;
-import z7.InterfaceC5267d;
+import l3.m;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class f extends e {
@@ -20,7 +20,7 @@ public final class f extends e {
     private com.onesignal.core.internal.config.c _configModelStore;
     private final String apiKey;
     private final String appId;
-    private O3.g firebaseApp;
+    private Q3.g firebaseApp;
     private final String projectId;
 
     public static final class a {
@@ -48,30 +48,30 @@ public final class f extends e {
         this.appId = appId == null ? FCM_DEFAULT_APP_ID : appId;
         byte[] decode = Base64.decode(FCM_DEFAULT_API_KEY_BASE64, 0);
         kotlin.jvm.internal.h.d(decode, "decode(...)");
-        String str = new String(decode, Q7.a.f2664a);
+        String str = new String(decode, Q7.a.f2701a);
         String apiKey = fcmParams.getApiKey();
         this.apiKey = apiKey != null ? apiKey : str;
     }
 
     private final String getTokenWithClassFirebaseMessaging() {
-        O3.g gVar = this.firebaseApp;
+        Q3.g gVar = this.firebaseApp;
         kotlin.jvm.internal.h.b(gVar);
         FirebaseMessaging firebaseMessaging = (FirebaseMessaging) gVar.b(FirebaseMessaging.class);
         firebaseMessaging.getClass();
-        j3.h hVar = new j3.h();
-        firebaseMessaging.f36198f.execute(new n(19, firebaseMessaging, hVar));
-        m mVar = hVar.f38358a;
+        l3.h hVar = new l3.h();
+        firebaseMessaging.f36965f.execute(new n(19, firebaseMessaging, hVar));
+        m mVar = hVar.f38870a;
         kotlin.jvm.internal.h.d(mVar, "getToken(...)");
         try {
-            Object b9 = S0.f.b(mVar);
-            kotlin.jvm.internal.h.d(b9, "await(...)");
-            return (String) b9;
+            Object d9 = com.bumptech.glide.d.d(mVar);
+            kotlin.jvm.internal.h.d(d9, "await(...)");
+            return (String) d9;
         } catch (ExecutionException e9) {
-            Exception f3 = mVar.f();
-            if (f3 == null) {
+            Exception f2 = mVar.f();
+            if (f2 == null) {
                 throw e9;
             }
-            throw f3;
+            throw f2;
         }
     }
 
@@ -83,7 +83,7 @@ public final class f extends e {
         w.f(str2, "ApplicationId must be set.");
         String str3 = this.apiKey;
         w.f(str3, "ApiKey must be set.");
-        this.firebaseApp = O3.g.f(new i(str2, str3, null, null, str, null, this.projectId), this._applicationService.getAppContext(), FCM_APP_NAME);
+        this.firebaseApp = Q3.g.f(new i(str2, str3, null, null, str, null, this.projectId), this._applicationService.getAppContext(), FCM_APP_NAME);
     }
 
     @Override // com.onesignal.notifications.internal.registration.impl.e
@@ -92,7 +92,7 @@ public final class f extends e {
     }
 
     @Override // com.onesignal.notifications.internal.registration.impl.e
-    public Object getToken(String str, InterfaceC5267d interfaceC5267d) {
+    public Object getToken(String str, InterfaceC5240d interfaceC5240d) {
         initFirebaseApp(str);
         return getTokenWithClassFirebaseMessaging();
     }

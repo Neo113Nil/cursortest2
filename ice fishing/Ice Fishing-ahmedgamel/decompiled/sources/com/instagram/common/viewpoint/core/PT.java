@@ -1,19 +1,19 @@
 package com.instagram.common.viewpoint.core;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class PT implements InterfaceC1374Ya {
+public class PT implements InterfaceC1394Ya {
     public static String[] A02 = {"YUGwJzzikBNzfLIllCMdkir2Jyj8DuFq", "ntVfVONdyCctXWp", "AonpNDk7AlTTh7WnvPqW51ITIbVwFUJp", "NJZ9S98WzFijxyBcJxql7T6JOIFmEfw7", "8QFO", "nOxceDp", "zcnAPzBVA2CXXQsDQKs94da1Vf1b77Qu", "s6TvhQwfXdUE9Ss2QaqLkXkKVbAwWXrL"};
-    public final /* synthetic */ C1202Re A00;
+    public final /* synthetic */ C1222Re A00;
     public final /* synthetic */ PJ A01;
 
-    public PT(PJ pj, C1202Re c1202Re) {
+    public PT(PJ pj, C1222Re c1222Re) {
         this.A01 = pj;
-        this.A00 = c1202Re;
+        this.A00 = c1222Re;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1374Ya
-    public final void ACl(AbstractC1375Yb abstractC1375Yb) {
-        if (abstractC1375Yb.getToolbarActionMode() == 8) {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1394Ya
+    public final void ACl(AbstractC1395Yb abstractC1395Yb) {
+        if (abstractC1395Yb.getToolbarActionMode() == 8) {
             this.A01.A0d();
             return;
         }

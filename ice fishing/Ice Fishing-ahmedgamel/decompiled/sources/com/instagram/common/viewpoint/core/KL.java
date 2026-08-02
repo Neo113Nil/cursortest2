@@ -5,8 +5,8 @@ public final class KL {
     public final int A00;
     public final int A01;
 
-    public KL(int i, int i6) {
+    public KL(int i, int i4) {
         this.A01 = i;
-        this.A00 = i6;
+        this.A00 = i4;
     }
 }

@@ -14,20 +14,20 @@ import java.util.List;
 public final class e extends d {
 
     /* renamed from: a, reason: collision with root package name */
-    com.anythink.basead.f.c.d f8889a;
+    com.anythink.basead.f.c.d f9675a;
 
-    public e(Context context, bj bjVar, x xVar, com.anythink.basead.f.c.d dVar, boolean z3) {
-        super(context, bjVar, xVar, z3);
-        this.f8889a = dVar;
+    public e(Context context, bj bjVar, x xVar, com.anythink.basead.f.c.d dVar, boolean z6) {
+        super(context, bjVar, xVar, z6);
+        this.f9675a = dVar;
         if (dVar != null) {
             dVar.b();
         }
-        this.f8888z = this.f8889a.c();
+        this.f9674z = this.f9675a.c();
     }
 
     @Override // com.anythink.basead.f.b.a.d
     public final View H() {
-        return this.f8889a.d();
+        return this.f9675a.d();
     }
 
     @Override // com.anythink.basead.f.a
@@ -48,7 +48,7 @@ public final class e extends d {
     public final void r() {
         super.r();
         try {
-            com.anythink.basead.f.c.d dVar = this.f8889a;
+            com.anythink.basead.f.c.d dVar = this.f9675a;
             if (dVar != null) {
                 dVar.i();
             }
@@ -60,7 +60,7 @@ public final class e extends d {
     @Override // com.anythink.basead.f.b.a.d, com.anythink.basead.f.a
     public final void s() {
         super.s();
-        com.anythink.basead.f.c.d dVar = this.f8889a;
+        com.anythink.basead.f.c.d dVar = this.f9675a;
         if (dVar != null) {
             dVar.e();
         }
@@ -69,73 +69,73 @@ public final class e extends d {
     @Override // com.anythink.basead.f.b.a.d, com.anythink.basead.f.a
     public final void t() {
         super.t();
-        com.anythink.basead.f.c.d dVar = this.f8889a;
+        com.anythink.basead.f.c.d dVar = this.f9675a;
         if (dVar != null) {
             dVar.f();
         }
     }
 
     @Override // com.anythink.basead.f.a
-    public final View a(Context context, boolean z3, BaseMediaATView.a aVar) {
-        com.anythink.basead.f.c.d dVar = this.f8889a;
+    public final View a(Context context, boolean z6, BaseMediaATView.a aVar) {
+        com.anythink.basead.f.c.d dVar = this.f9675a;
         if (dVar == null) {
             return null;
         }
-        dVar.a(z3 ? 1 : 0);
-        return this.f8889a.d();
+        dVar.a(z6 ? 1 : 0);
+        return this.f9675a.d();
     }
 
     @Override // com.anythink.basead.f.b.a.d, com.anythink.basead.f.a
-    public final void a(int i, int i6) {
-        super.a(i, i6);
-        if (this.f8876B <= 0) {
-            this.f8876B = (int) ((this.f8875A * 3.0f) / 4.0f);
+    public final void a(int i, int i4) {
+        super.a(i, i4);
+        if (this.f9662B <= 0) {
+            this.f9662B = (int) ((this.f9661A * 3.0f) / 4.0f);
         }
-        com.anythink.basead.f.c.d dVar = this.f8889a;
+        com.anythink.basead.f.c.d dVar = this.f9675a;
         if (dVar != null) {
-            dVar.a(i6, i);
+            dVar.a(i4, i);
         }
     }
 
     @Override // com.anythink.basead.f.b.a.d, com.anythink.basead.f.a
     public final void a(com.anythink.basead.g.a aVar) {
         super.a(aVar);
-        com.anythink.basead.f.c.d dVar = this.f8889a;
+        com.anythink.basead.f.c.d dVar = this.f9675a;
         if (dVar != null) {
             dVar.a(aVar);
         }
     }
 
     @Override // com.anythink.basead.f.b.a.d, com.anythink.basead.f.a
-    public final void a(boolean z3) {
-        super.a(z3);
-        com.anythink.basead.f.c.d dVar = this.f8889a;
+    public final void a(boolean z6) {
+        super.a(z6);
+        com.anythink.basead.f.c.d dVar = this.f9675a;
         if (dVar != null) {
-            dVar.b(z3 ? 1 : 2);
+            dVar.b(z6 ? 1 : 2);
         }
     }
 
     @Override // com.anythink.basead.f.b.a.d, com.anythink.basead.f.a
     public final void a(String str) {
         super.a(str);
-        if (this.f8889a != null) {
-            if (!TextUtils.isEmpty(this.f8887y)) {
-                String str2 = this.f8887y;
+        if (this.f9675a != null) {
+            if (!TextUtils.isEmpty(this.f9673y)) {
+                String str2 = this.f9673y;
                 str2.getClass();
                 switch (str2) {
                     case "1":
-                        this.f8889a.c(3);
+                        this.f9675a.c(3);
                         break;
                     case "2":
-                        this.f8889a.c(1);
+                        this.f9675a.c(1);
                         break;
                     case "3":
-                        this.f8889a.c(2);
+                        this.f9675a.c(2);
                         break;
                 }
                 return;
             }
-            this.f8889a.c(3);
+            this.f9675a.c(3);
         }
     }
 }

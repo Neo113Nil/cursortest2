@@ -7,52 +7,52 @@ import com.anythink.core.common.d.t;
 public final class n {
 
     /* renamed from: c, reason: collision with root package name */
-    private static n f19401c;
+    private static n f20188c;
 
     /* renamed from: a, reason: collision with root package name */
-    private k f19402a;
+    private k f20189a;
 
     /* renamed from: b, reason: collision with root package name */
-    private com.anythink.expressad.foundation.g.f.d.b f19403b;
+    private com.anythink.expressad.foundation.g.f.d.b f20190b;
 
     private n() {
     }
 
     public static void a(Context context) {
-        if (f19401c == null) {
+        if (f20188c == null) {
             n nVar = new n();
-            f19401c = nVar;
-            nVar.f19402a = new k(context.getApplicationContext());
-            f19401c.f19403b = new com.anythink.expressad.foundation.g.f.d.b(b());
+            f20188c = nVar;
+            nVar.f20189a = new k(context.getApplicationContext());
+            f20188c.f20190b = new com.anythink.expressad.foundation.g.f.d.b(b());
         }
     }
 
     private static k b() {
-        n nVar = f19401c;
+        n nVar = f20188c;
         if (nVar != null) {
-            k kVar = nVar.f19402a;
+            k kVar = nVar.f20189a;
             if (kVar != null) {
                 return kVar;
             }
-            nVar.f19402a = new k(t.b().g());
-            return f19401c.f19402a;
+            nVar.f20189a = new k(t.b().g());
+            return f20188c.f20189a;
         }
         n nVar2 = new n();
-        f19401c = nVar2;
-        if (nVar2.f19402a == null) {
-            nVar2.f19402a = new k(t.b().g());
+        f20188c = nVar2;
+        if (nVar2.f20189a == null) {
+            nVar2.f20189a = new k(t.b().g());
         }
-        return f19401c.f19402a;
+        return f20188c.f20189a;
     }
 
     private static void c() {
         com.anythink.expressad.foundation.g.f.d.b bVar;
-        n nVar = f19401c;
-        if (nVar == null || (bVar = nVar.f19403b) == null) {
+        n nVar = f20188c;
+        if (nVar == null || (bVar = nVar.f20190b) == null) {
             return;
         }
         bVar.a();
-        f19401c.f19403b = null;
+        f20188c.f20190b = null;
     }
 
     public static void a(j jVar) {
@@ -60,20 +60,20 @@ public final class n {
     }
 
     public static com.anythink.expressad.foundation.g.f.d.b a() {
-        n nVar = f19401c;
+        n nVar = f20188c;
         if (nVar != null) {
-            com.anythink.expressad.foundation.g.f.d.b bVar = nVar.f19403b;
+            com.anythink.expressad.foundation.g.f.d.b bVar = nVar.f20190b;
             if (bVar != null) {
                 return bVar;
             }
-            nVar.f19403b = new com.anythink.expressad.foundation.g.f.d.b(b());
-            return f19401c.f19403b;
+            nVar.f20190b = new com.anythink.expressad.foundation.g.f.d.b(b());
+            return f20188c.f20190b;
         }
         n nVar2 = new n();
-        f19401c = nVar2;
-        if (nVar2.f19403b == null) {
-            nVar2.f19403b = new com.anythink.expressad.foundation.g.f.d.b(b());
+        f20188c = nVar2;
+        if (nVar2.f20190b == null) {
+            nVar2.f20190b = new com.anythink.expressad.foundation.g.f.d.b(b());
         }
-        return f19401c.f19403b;
+        return f20188c.f20190b;
     }
 }

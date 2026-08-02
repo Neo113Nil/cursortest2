@@ -17,10 +17,10 @@ public final class ChapterTocFrame extends Id3Frame {
     public final String[] A03;
     public final Id3Frame[] A04;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 60);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 60);
         }
         return new String(copyOfRange);
     }
@@ -47,11 +47,11 @@ public final class ChapterTocFrame extends Id3Frame {
         }
     }
 
-    public ChapterTocFrame(String str, boolean z3, boolean z6, String[] strArr, Id3Frame[] id3FrameArr) {
+    public ChapterTocFrame(String str, boolean z6, boolean z9, String[] strArr, Id3Frame[] id3FrameArr) {
         super(A00(0, 4, 110));
         this.A00 = str;
-        this.A02 = z3;
-        this.A01 = z6;
+        this.A02 = z6;
+        this.A01 = z9;
         this.A03 = strArr;
         this.A04 = id3FrameArr;
     }

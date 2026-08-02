@@ -13,15 +13,15 @@ public final class RU extends Thread {
     public final int A00;
     public final Handler A01;
     public final RW A02;
-    public final C1840gi A03;
+    public final C1860gi A03;
     public final Runnable A04;
     public volatile long A05;
     public volatile boolean A06;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 101);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 101);
         }
         return new String(copyOfRange);
     }
@@ -35,18 +35,18 @@ public final class RU extends Thread {
         A08 = RU.class.getName();
     }
 
-    public RU(C1840gi c1840gi, RW rw) {
-        this(c1840gi, rw, C1290Up.A08(c1840gi));
+    public RU(C1860gi c1860gi, RW rw) {
+        this(c1860gi, rw, C1310Up.A08(c1860gi));
     }
 
-    public RU(C1840gi c1840gi, RW rw, int i) {
+    public RU(C1860gi c1860gi, RW rw, int i) {
         this.A01 = new Handler(Looper.getMainLooper());
         this.A04 = new RT(this);
         this.A05 = 0L;
         this.A06 = false;
         setName(A01(0, 15, 68));
         this.A00 = i;
-        this.A03 = c1840gi;
+        this.A03 = c1860gi;
         this.A02 = rw;
     }
 
@@ -59,9 +59,9 @@ public final class RU extends Thread {
             long j6 = this.A00;
             while (!isInterrupted()) {
                 long interval = this.A05;
-                boolean z3 = interval == 0;
+                boolean z6 = interval == 0;
                 this.A05 = j6;
-                if (z3) {
+                if (z6) {
                     this.A01.post(this.A04);
                 }
                 try {
@@ -70,7 +70,7 @@ public final class RU extends Thread {
                     if (interval2 != 0 && !this.A06 && !Debug.isDebuggerConnected()) {
                         String A03 = this.A02.A03();
                         if (A03 != null) {
-                            this.A03.A08().ABC(A01(15, 7, 8), AbstractC1252Td.A1D, new C1253Te(this.A02.A04(A03)));
+                            this.A03.A08().ABC(A01(15, 7, 8), AbstractC1272Td.A1D, new C1273Te(this.A02.A04(A03)));
                         }
                         this.A06 = true;
                     }

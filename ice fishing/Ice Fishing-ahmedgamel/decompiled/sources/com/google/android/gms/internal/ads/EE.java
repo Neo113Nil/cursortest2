@@ -4,25 +4,25 @@ package com.google.android.gms.internal.ads;
 public abstract class EE {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final C3774qG f24565a = new C3774qG(BE.class, InterfaceC3394jE.class, C3586mr.f32606K);
+    public static final C3797qG f25326a = new C3797qG(BE.class, InterfaceC3417jE.class, C3609mr.f33384K);
 
     /* renamed from: b, reason: collision with root package name */
-    public static final XF f24566b;
+    public static final XF f25327b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final DE f24567c;
+    public static final DE f25328c;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final CE f24568d;
+    public static final CE f25329d;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f24569e;
+    public static final int f25330e;
 
     static {
-        C3291hH.F();
-        f24566b = new XF(InterfaceC3394jE.class, "type.googleapis.com/google.crypto.tink.AesCtrHmacAeadKey", 3);
-        f24567c = DE.f24368a;
-        f24568d = CE.f24064b;
-        f24569e = 2;
+        C3314hH.F();
+        f25327b = new XF(InterfaceC3417jE.class, "type.googleapis.com/google.crypto.tink.AesCtrHmacAeadKey", 3);
+        f25328c = DE.f25113a;
+        f25329d = CE.f24827b;
+        f25330e = 2;
     }
 }

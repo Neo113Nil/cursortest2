@@ -4,12 +4,12 @@ package com.anythink.core.common.h;
 public final class q {
 
     /* renamed from: a, reason: collision with root package name */
-    public boolean f14037a;
+    public boolean f14823a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f14038b;
+    public boolean f14824b;
 
     public final boolean a() {
-        return this.f14037a && this.f14038b;
+        return this.f14823a && this.f14824b;
     }
 }

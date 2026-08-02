@@ -4,16 +4,15 @@ import B7.h;
 import I7.l;
 import I7.p;
 import Q7.j;
-import S7.AbstractC0402u;
-import S7.AbstractC0406y;
-import S7.C0395m;
-import S7.InterfaceC0394l;
-import S7.InterfaceC0404w;
-import a.AbstractC0422a;
-import a5.InterfaceC0437a;
+import S7.AbstractC0406u;
+import S7.AbstractC0410y;
+import S7.C0399m;
+import S7.InterfaceC0398l;
+import S7.InterfaceC0408w;
+import a5.InterfaceC0441a;
 import android.content.Context;
 import android.os.Build;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import com.onesignal.common.AndroidUtils;
 import com.onesignal.core.CoreModule;
 import com.onesignal.session.SessionModule;
@@ -25,10 +24,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import kotlin.jvm.internal.i;
-import u4.InterfaceC5079a;
-import u7.InterfaceC5087e;
-import v7.AbstractC5130k;
-import z7.InterfaceC5267d;
+import u4.InterfaceC5071a;
+import u7.InterfaceC5079e;
+import v7.AbstractC5120k;
+import w.AbstractC5128c;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class c implements p4.c, v4.b {
@@ -37,29 +37,29 @@ public final class c implements p4.c, v4.b {
     private Boolean _disableGMSMissingPrompt;
     private final Object applicationServiceLock;
     private volatile boolean applicationServiceStarted;
-    private final InterfaceC5087e configModel$delegate;
+    private final InterfaceC5079e configModel$delegate;
     private final M4.a debug;
-    private final InterfaceC5087e featureManager$delegate;
-    private final InterfaceC5087e identityModelStore$delegate;
-    private final InterfaceC5087e identityVerificationService$delegate;
+    private final InterfaceC5079e featureManager$delegate;
+    private final InterfaceC5079e identityModelStore$delegate;
+    private final InterfaceC5079e identityVerificationService$delegate;
     private Exception initFailureException;
     private final Object initLock;
     private volatile a initState;
-    private final AbstractC0402u ioDispatcher;
-    private final InterfaceC5087e jwtTokenStore$delegate;
+    private final AbstractC0406u ioDispatcher;
+    private final InterfaceC5079e jwtTokenStore$delegate;
     private final List<String> listOfModules;
-    private final InterfaceC5087e loginHelper$delegate;
+    private final InterfaceC5079e loginHelper$delegate;
     private final Object loginLogoutLock;
-    private final InterfaceC5087e logoutHelper$delegate;
-    private final InterfaceC5087e operationRepo$delegate;
+    private final InterfaceC5079e logoutHelper$delegate;
+    private final InterfaceC5079e operationRepo$delegate;
     private g otelManager;
-    private final InterfaceC5087e preferencesService$delegate;
-    private final InterfaceC5087e propertiesModelStore$delegate;
+    private final InterfaceC5079e preferencesService$delegate;
+    private final InterfaceC5079e propertiesModelStore$delegate;
     private final String sdkVersion;
     private final v4.d services;
-    private final InterfaceC5087e subscriptionModelStore$delegate;
-    private volatile InterfaceC0394l suspendCompletion;
-    private final InterfaceC5087e userSwitcher$delegate;
+    private final InterfaceC5079e subscriptionModelStore$delegate;
+    private volatile InterfaceC0398l suspendCompletion;
+    private final InterfaceC5079e userSwitcher$delegate;
 
     public static final class A extends h implements p {
         final /* synthetic */ String $externalId;
@@ -68,21 +68,21 @@ public final class c implements p4.c, v4.b {
         final /* synthetic */ c this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public A(String str, String str2, c cVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public A(String str, String str2, c cVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$externalId = str;
             this.$jwtBearerToken = str2;
             this.this$0 = cVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return new A(this.$externalId, this.$jwtBearerToken, this.this$0, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return new A(this.$externalId, this.$jwtBearerToken, this.this$0, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((A) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((A) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:21:0x0057, code lost:
@@ -94,17 +94,17 @@ public final class c implements p4.c, v4.b {
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
-            u7.v vVar = u7.v.f41353a;
+            u7.v vVar = u7.v.f41073a;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 M4.c cVar = M4.c.DEBUG;
                 StringBuilder sb = new StringBuilder("login(externalId: ");
                 sb.append(this.$externalId);
                 sb.append(", jwtBearerToken: ...");
                 String str = this.$jwtBearerToken;
-                sb.append(str != null ? j.p0(str) : null);
+                sb.append(str != null ? j.F0(str) : null);
                 sb.append(')');
                 com.onesignal.debug.internal.logging.b.log(cVar, sb.toString());
                 c cVar2 = this.this$0;
@@ -114,10 +114,10 @@ public final class c implements p4.c, v4.b {
                     if (i != 2) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     return vVar;
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
             d.a switchUser$com_onesignal_core = this.this$0.getLoginHelper().switchUser$com_onesignal_core(this.$externalId, this.$jwtBearerToken);
             if (switchUser$com_onesignal_core != null) {
@@ -136,30 +136,30 @@ public final class c implements p4.c, v4.b {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public B(e.a aVar, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public B(e.a aVar, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$context = aVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return c.this.new B(this.$context, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return c.this.new B(this.$context, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             c.this.getLogoutHelper().enqueueLogout$com_onesignal_core(this.$context);
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((B) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((B) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
@@ -168,30 +168,30 @@ public final class c implements p4.c, v4.b {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public C(e.a aVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public C(e.a aVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$context = aVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new C(this.$context, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new C(this.$context, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((C) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((C) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             c.this.getLogoutHelper().enqueueLogout$com_onesignal_core(this.$context);
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
     }
 
@@ -209,26 +209,26 @@ public final class c implements p4.c, v4.b {
     public static final class E extends h implements p {
         int label;
 
-        public E(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public E(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new E(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new E(interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((E) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((E) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "logoutSuspend()");
                 c cVar = c.this;
                 this.label = 1;
@@ -239,10 +239,10 @@ public final class c implements p4.c, v4.b {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
             e.a switchUser$com_onesignal_core = c.this.getLogoutHelper().switchUser$com_onesignal_core();
-            u7.v vVar = u7.v.f41353a;
+            u7.v vVar = u7.v.f41073a;
             if (switchUser$com_onesignal_core == null) {
                 return vVar;
             }
@@ -311,35 +311,35 @@ public final class c implements p4.c, v4.b {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public K(boolean z3, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
-            this.$value = z3;
+        public K(boolean z6, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
+            this.$value = z6;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new K(this.$value, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new K(this.$value, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((K) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((K) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             Boolean bool = c.this._consentGiven;
             c.this._consentGiven = Boolean.valueOf(this.$value);
             c.this.getConfigModel().setConsentGiven(Boolean.valueOf(this.$value));
             if (!kotlin.jvm.internal.h.a(bool, Boolean.valueOf(this.$value)) && this.$value) {
                 c.this.getOperationRepo().forceExecuteOperations();
             }
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
     }
 
@@ -348,31 +348,31 @@ public final class c implements p4.c, v4.b {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public L(boolean z3, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
-            this.$required = z3;
+        public L(boolean z6, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
+            this.$required = z6;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new L(this.$required, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new L(this.$required, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((L) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((L) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             c.this._consentRequired = Boolean.valueOf(this.$required);
             c.this.getConfigModel().setConsentRequired(Boolean.valueOf(this.$required));
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
     }
 
@@ -381,31 +381,31 @@ public final class c implements p4.c, v4.b {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public M(boolean z3, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
-            this.$value = z3;
+        public M(boolean z6, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
+            this.$value = z6;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new M(this.$value, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new M(this.$value, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((M) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((M) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             c.this._disableGMSMissingPrompt = Boolean.valueOf(this.$value);
             c.this.getConfigModel().setDisableGMSMissingPrompt(this.$value);
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
     }
 
@@ -425,8 +425,8 @@ public final class c implements p4.c, v4.b {
         int label;
         /* synthetic */ Object result;
 
-        public O(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public O(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -444,30 +444,30 @@ public final class c implements p4.c, v4.b {
         final /* synthetic */ c this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public P(String str, String str2, c cVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public P(String str, String str2, c cVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$externalId = str;
             this.$token = str2;
             this.this$0 = cVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return new P(this.$externalId, this.$token, this.this$0, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return new P(this.$externalId, this.$token, this.this$0, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((P) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((P) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
-                com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "updateUserJwtSuspend(externalId: " + this.$externalId + ", token: ..." + j.p0(this.$token) + ')');
+                Q3.b.s(obj);
+                com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "updateUserJwtSuspend(externalId: " + this.$externalId + ", token: ..." + j.F0(this.$token) + ')');
                 c cVar = this.this$0;
                 this.label = 1;
                 if (cVar.suspendUntilInit("updateUserJwt", this) == aVar) {
@@ -477,14 +477,14 @@ public final class c implements p4.c, v4.b {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
             if (!this.this$0.isInitialized()) {
                 throw new IllegalStateException("'initWithContext failed' before 'updateUserJwt'");
             }
             this.this$0.getJwtTokenStore().putJwt(this.$externalId, this.$token);
             this.this$0.getOperationRepo().forceExecuteOperations();
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
     }
 
@@ -532,27 +532,27 @@ public final class c implements p4.c, v4.b {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public S(String str, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public S(String str, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$operationName = str;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new S(this.$operationName, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new S(this.$operationName, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((S) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((S) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 c cVar = c.this;
                 String str = this.$operationName;
                 this.label = 1;
@@ -563,9 +563,9 @@ public final class c implements p4.c, v4.b {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
     }
 
@@ -576,8 +576,8 @@ public final class c implements p4.c, v4.b {
         int label;
         /* synthetic */ Object result;
 
-        public T(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public T(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -589,38 +589,38 @@ public final class c implements p4.c, v4.b {
     }
 
     /* renamed from: com.onesignal.internal.c$a, reason: case insensitive filesystem */
-    public static final class C4413a extends h implements p {
+    public static final class C4428a extends h implements p {
         final /* synthetic */ I7.a $getter;
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public C4413a(I7.a aVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public C4428a(I7.a aVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$getter = aVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new C4413a(this.$getter, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new C4428a(this.$getter, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((C4413a) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((C4428a) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i != 0) {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 return obj;
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             c cVar = c.this;
             I7.a aVar2 = this.$getter;
             this.label = 1;
@@ -630,8 +630,8 @@ public final class c implements p4.c, v4.b {
     }
 
     /* renamed from: com.onesignal.internal.c$b, reason: case insensitive filesystem */
-    public static final class C4414b extends i implements I7.a {
-        public C4414b() {
+    public static final class C4429b extends i implements I7.a {
+        public C4429b() {
             super(0);
         }
 
@@ -655,8 +655,8 @@ public final class c implements p4.c, v4.b {
     }
 
     /* renamed from: com.onesignal.internal.c$d, reason: case insensitive filesystem */
-    public static final class C4415d extends i implements I7.a {
-        public C4415d() {
+    public static final class C4430d extends i implements I7.a {
+        public C4430d() {
             super(0);
         }
 
@@ -668,8 +668,8 @@ public final class c implements p4.c, v4.b {
     }
 
     /* renamed from: com.onesignal.internal.c$e, reason: case insensitive filesystem */
-    public static final class C4416e extends i implements I7.a {
-        public C4416e() {
+    public static final class C4431e extends i implements I7.a {
+        public C4431e() {
             super(0);
         }
 
@@ -680,8 +680,8 @@ public final class c implements p4.c, v4.b {
     }
 
     /* renamed from: com.onesignal.internal.c$f, reason: case insensitive filesystem */
-    public static final class C4417f extends i implements I7.a {
-        public C4417f() {
+    public static final class C4432f extends i implements I7.a {
+        public C4432f() {
             super(0);
         }
 
@@ -692,96 +692,96 @@ public final class c implements p4.c, v4.b {
     }
 
     /* renamed from: com.onesignal.internal.c$g, reason: case insensitive filesystem */
-    public static final class C4418g extends h implements p {
+    public static final class C4433g extends h implements p {
         int label;
 
-        public C4418g(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public C4433g(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new C4418g(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new C4433g(interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((C4418g) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((C4433g) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             Boolean consentGiven = c.this.getConfigModel().getConsentGiven();
             return Boolean.valueOf(consentGiven != null ? consentGiven.booleanValue() : kotlin.jvm.internal.h.a(c.this._consentGiven, Boolean.TRUE));
         }
     }
 
     /* renamed from: com.onesignal.internal.c$h, reason: case insensitive filesystem */
-    public static final class C4419h extends h implements p {
+    public static final class C4434h extends h implements p {
         int label;
 
-        public C4419h(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public C4434h(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new C4419h(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new C4434h(interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((C4419h) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((C4434h) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             Boolean consentRequired = c.this.getConfigModel().getConsentRequired();
             return Boolean.valueOf(consentRequired != null ? consentRequired.booleanValue() : kotlin.jvm.internal.h.a(c.this._consentRequired, Boolean.TRUE));
         }
     }
 
     /* renamed from: com.onesignal.internal.c$i, reason: case insensitive filesystem */
-    public static final class C4420i extends h implements p {
+    public static final class C4435i extends h implements p {
         int label;
 
-        public C4420i(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public C4435i(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new C4420i(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new C4435i(interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((C4420i) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((C4435i) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             return Boolean.valueOf(c.this.getConfigModel().getDisableGMSMissingPrompt());
         }
     }
 
     /* renamed from: com.onesignal.internal.c$j, reason: case insensitive filesystem */
-    public static final class C4421j extends h implements p {
+    public static final class C4436j extends h implements p {
         int label;
 
         /* renamed from: com.onesignal.internal.c$j$a */
@@ -800,32 +800,32 @@ public final class c implements p4.c, v4.b {
             }
         }
 
-        public C4421j(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public C4436j(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new C4421j(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new C4436j(interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((C4421j) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((C4436j) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i != 0) {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 return obj;
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             c cVar = c.this;
             a aVar2 = new a(cVar);
             this.label = 1;
@@ -835,7 +835,7 @@ public final class c implements p4.c, v4.b {
     }
 
     /* renamed from: com.onesignal.internal.c$k, reason: case insensitive filesystem */
-    public static final class C4422k extends h implements p {
+    public static final class C4437k extends h implements p {
         int label;
 
         /* renamed from: com.onesignal.internal.c$k$a */
@@ -849,37 +849,37 @@ public final class c implements p4.c, v4.b {
             }
 
             @Override // I7.a
-            public final InterfaceC0437a invoke() {
-                return (InterfaceC0437a) this.this$0.services.getService(InterfaceC0437a.class);
+            public final InterfaceC0441a invoke() {
+                return (InterfaceC0441a) this.this$0.services.getService(InterfaceC0441a.class);
             }
         }
 
-        public C4422k(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public C4437k(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new C4422k(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new C4437k(interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((C4422k) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((C4437k) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i != 0) {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 return obj;
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             c cVar = c.this;
             a aVar2 = new a(cVar);
             this.label = 1;
@@ -889,7 +889,7 @@ public final class c implements p4.c, v4.b {
     }
 
     /* renamed from: com.onesignal.internal.c$l, reason: case insensitive filesystem */
-    public static final class C4423l extends h implements p {
+    public static final class C4438l extends h implements p {
         int label;
 
         /* renamed from: com.onesignal.internal.c$l$a */
@@ -908,32 +908,32 @@ public final class c implements p4.c, v4.b {
             }
         }
 
-        public C4423l(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public C4438l(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new C4423l(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new C4438l(interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((C4423l) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((C4438l) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i != 0) {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 return obj;
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             c cVar = c.this;
             a aVar2 = new a(cVar);
             this.label = 1;
@@ -943,7 +943,7 @@ public final class c implements p4.c, v4.b {
     }
 
     /* renamed from: com.onesignal.internal.c$m, reason: case insensitive filesystem */
-    public static final class C4424m extends h implements p {
+    public static final class C4439m extends h implements p {
         int label;
 
         /* renamed from: com.onesignal.internal.c$m$a */
@@ -962,32 +962,32 @@ public final class c implements p4.c, v4.b {
             }
         }
 
-        public C4424m(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public C4439m(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new C4424m(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new C4439m(interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((C4424m) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((C4439m) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i != 0) {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 return obj;
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             c cVar = c.this;
             a aVar2 = new a(cVar);
             this.label = 1;
@@ -997,7 +997,7 @@ public final class c implements p4.c, v4.b {
     }
 
     /* renamed from: com.onesignal.internal.c$n, reason: case insensitive filesystem */
-    public static final class C4425n extends h implements p {
+    public static final class C4440n extends h implements p {
         int label;
 
         /* renamed from: com.onesignal.internal.c$n$a */
@@ -1016,32 +1016,32 @@ public final class c implements p4.c, v4.b {
             }
         }
 
-        public C4425n(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public C4440n(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new C4425n(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new C4440n(interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((C4425n) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((C4440n) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i != 0) {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 return obj;
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             c cVar = c.this;
             a aVar2 = new a(cVar);
             this.label = 1;
@@ -1051,8 +1051,8 @@ public final class c implements p4.c, v4.b {
     }
 
     /* renamed from: com.onesignal.internal.c$o, reason: case insensitive filesystem */
-    public static final class C4426o extends i implements I7.a {
-        public C4426o() {
+    public static final class C4441o extends i implements I7.a {
+        public C4441o() {
             super(0);
         }
 
@@ -1063,8 +1063,8 @@ public final class c implements p4.c, v4.b {
     }
 
     /* renamed from: com.onesignal.internal.c$p, reason: case insensitive filesystem */
-    public static final class C4427p extends i implements I7.a {
-        public C4427p() {
+    public static final class C4442p extends i implements I7.a {
+        public C4442p() {
             super(0);
         }
 
@@ -1075,8 +1075,8 @@ public final class c implements p4.c, v4.b {
     }
 
     /* renamed from: com.onesignal.internal.c$q, reason: case insensitive filesystem */
-    public static final class C4428q extends i implements I7.a {
-        public C4428q() {
+    public static final class C4443q extends i implements I7.a {
+        public C4443q() {
             super(0);
         }
 
@@ -1087,8 +1087,8 @@ public final class c implements p4.c, v4.b {
     }
 
     /* renamed from: com.onesignal.internal.c$r, reason: case insensitive filesystem */
-    public static final class C4429r extends i implements I7.a {
-        public C4429r() {
+    public static final class C4444r extends i implements I7.a {
+        public C4444r() {
             super(0);
         }
 
@@ -1099,70 +1099,70 @@ public final class c implements p4.c, v4.b {
     }
 
     /* renamed from: com.onesignal.internal.c$s, reason: case insensitive filesystem */
-    public static final class C4430s extends h implements l {
+    public static final class C4445s extends h implements l {
         final /* synthetic */ String $appId;
         final /* synthetic */ Context $context;
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public C4430s(Context context, String str, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public C4445s(Context context, String str, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$context = context;
             this.$appId = str;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return c.this.new C4430s(this.$context, this.$appId, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return c.this.new C4445s(this.$context, this.$appId, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             c.this.internalInit(this.$context, this.$appId);
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((C4430s) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((C4445s) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
     /* renamed from: com.onesignal.internal.c$t, reason: case insensitive filesystem */
-    public static final class C4431t extends h implements p {
+    public static final class C4446t extends h implements p {
         final /* synthetic */ String $appId;
         final /* synthetic */ Context $context;
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public C4431t(Context context, String str, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public C4446t(Context context, String str, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$context = context;
             this.$appId = str;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new C4431t(this.$context, this.$appId, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new C4446t(this.$context, this.$appId, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((C4431t) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((C4446t) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             return Boolean.valueOf(c.this.internalInit(this.$context, this.$appId));
         }
     }
@@ -1173,62 +1173,62 @@ public final class c implements p4.c, v4.b {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public u(Context context, String str, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public u(Context context, String str, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$context = context;
             this.$appId = str;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new u(this.$context, this.$appId, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new u(this.$context, this.$appId, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((u) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((u) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            InterfaceC0394l interfaceC0394l;
-            boolean z3;
-            A7.a aVar = A7.a.f58n;
+            InterfaceC0398l interfaceC0398l;
+            boolean z6;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 Object obj2 = c.this.initLock;
                 c cVar = c.this;
                 synchronized (obj2) {
                     try {
                         if (cVar.initState.isSDKAccessible()) {
-                            interfaceC0394l = cVar.suspendCompletion;
-                            z3 = false;
+                            interfaceC0398l = cVar.suspendCompletion;
+                            z6 = false;
                         } else {
                             cVar.initState = a.IN_PROGRESS;
-                            cVar.suspendCompletion = AbstractC0406y.a();
+                            cVar.suspendCompletion = AbstractC0410y.a();
                             cVar.initFailureException = new IllegalStateException("OneSignal initWithContext failed.");
-                            interfaceC0394l = null;
-                            z3 = true;
+                            interfaceC0398l = null;
+                            z6 = true;
                         }
                     } catch (Throwable th) {
                         throw th;
                     }
                 }
-                if (z3) {
+                if (z6) {
                     return Boolean.valueOf(c.this.internalInit(this.$context, this.$appId));
                 }
                 com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "initWithContext: init already in progress or completed, awaiting completion");
-                kotlin.jvm.internal.h.b(interfaceC0394l);
+                kotlin.jvm.internal.h.b(interfaceC0398l);
                 this.label = 1;
-                if (((C0395m) interfaceC0394l).U(this) == aVar) {
+                if (((C0399m) interfaceC0398l).U(this) == aVar) {
                     return aVar;
                 }
             } else {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
             return Boolean.valueOf(c.this.initState == a.SUCCESS);
         }
@@ -1251,8 +1251,8 @@ public final class c implements p4.c, v4.b {
         }
 
         @Override // I7.a
-        public final InterfaceC0437a invoke() {
-            return (InterfaceC0437a) c.this.services.getService(InterfaceC0437a.class);
+        public final InterfaceC0441a invoke() {
+            return (InterfaceC0441a) c.this.services.getService(InterfaceC0441a.class);
         }
     }
 
@@ -1261,22 +1261,22 @@ public final class c implements p4.c, v4.b {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public x(d.a aVar, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public x(d.a aVar, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$context = aVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return c.this.new x(this.$context, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return c.this.new x(this.$context, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 com.onesignal.user.internal.d loginHelper = c.this.getLoginHelper();
                 d.a aVar2 = this.$context;
                 this.label = 1;
@@ -1287,14 +1287,14 @@ public final class c implements p4.c, v4.b {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((x) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((x) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
@@ -1303,27 +1303,27 @@ public final class c implements p4.c, v4.b {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public y(d.a aVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public y(d.a aVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$context = aVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return c.this.new y(this.$context, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return c.this.new y(this.$context, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((y) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((y) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 com.onesignal.user.internal.d loginHelper = c.this.getLoginHelper();
                 d.a aVar2 = this.$context;
                 this.label = 1;
@@ -1334,9 +1334,9 @@ public final class c implements p4.c, v4.b {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
     }
 
@@ -1363,7 +1363,7 @@ public final class c implements p4.c, v4.b {
         } catch (RuntimeException e9) {
             com.onesignal.debug.internal.logging.b.debug$default("Could not check main thread status (likely in test environment): " + e9.getMessage(), null, 2, null);
         }
-        return (T) AbstractC0406y.s(getRuntimeIoDispatcher(), new C4413a(aVar, null));
+        return (T) AbstractC0410y.s(getRuntimeIoDispatcher(), new C4428a(aVar, null));
     }
 
     private final com.onesignal.core.internal.startup.c bootstrapServices() {
@@ -1378,7 +1378,7 @@ public final class c implements p4.c, v4.b {
         }
         synchronized (this.initLock) {
             this.initState = aVar;
-            ((C0395m) this.suspendCompletion).J(u7.v.f41353a);
+            ((C0399m) this.suspendCompletion).J(u7.v.f41073a);
         }
     }
 
@@ -1447,7 +1447,7 @@ public final class c implements p4.c, v4.b {
         return (com.onesignal.user.internal.properties.b) this.propertiesModelStore$delegate.getValue();
     }
 
-    private final AbstractC0402u getRuntimeIoDispatcher() {
+    private final AbstractC0406u getRuntimeIoDispatcher() {
         return isBackgroundThreadingEnabled() ? com.onesignal.common.threading.b.INSTANCE.getIO() : this.ioDispatcher;
     }
 
@@ -1487,7 +1487,7 @@ public final class c implements p4.c, v4.b {
     }
 
     private final void initEssentials(Context context) {
-        g gVar = new g(context, new C4429r(), null, null, null, null, null, 124, null);
+        g gVar = new g(context, new C4444r(), null, null, null, null, null, 124, null);
         gVar.initializeFromCachedConfig();
         this.otelManager = gVar;
         J4.c.INSTANCE.ensureNoObfuscatedPrefStore(context);
@@ -1513,7 +1513,7 @@ public final class c implements p4.c, v4.b {
                 IllegalStateException illegalStateException = new IllegalStateException("suspendInitInternal: no appId provided or found in local storage. Please pass a valid appId to initWithContext().");
                 Exception exc = this.initFailureException;
                 if (exc != null) {
-                    X2.e.y(exc, illegalStateException);
+                    A8.b.a(exc, illegalStateException);
                 }
                 com.onesignal.debug.internal.logging.b.warn$default("suspendInitInternal: no appId provided or found in local storage. Please pass a valid appId to initWithContext().", null, 2, null);
                 completeInit(a.FAILED);
@@ -1533,7 +1533,7 @@ public final class c implements p4.c, v4.b {
             com.onesignal.debug.internal.logging.b.error("OneSignal: internalInit threw unexpectedly; marking init FAILED", e9);
             Exception exc2 = this.initFailureException;
             if (exc2 != null) {
-                X2.e.y(exc2, e9);
+                A8.b.a(exc2, e9);
             }
             completeInit(a.FAILED);
             return false;
@@ -1559,20 +1559,20 @@ public final class c implements p4.c, v4.b {
     public static final void login$lambda$4(c this$0, d.a context) {
         kotlin.jvm.internal.h.e(this$0, "this$0");
         kotlin.jvm.internal.h.e(context, "$context");
-        AbstractC0406y.s(this$0.getRuntimeIoDispatcher(), this$0.new y(context, null));
+        AbstractC0410y.s(this$0.getRuntimeIoDispatcher(), this$0.new y(context, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void logout$lambda$5(c this$0, e.a context) {
         kotlin.jvm.internal.h.e(this$0, "this$0");
         kotlin.jvm.internal.h.e(context, "$context");
-        AbstractC0406y.s(this$0.getRuntimeIoDispatcher(), this$0.new C(context, null));
+        AbstractC0410y.s(this$0.getRuntimeIoDispatcher(), this$0.new C(context, null));
     }
 
     private final void requireInitForOperation(String str) {
         int i = b.$EnumSwitchMapping$0[this.initState.ordinal()];
         if (i == 1) {
-            throw new IllegalStateException(u1.h.b('\'', "Must call 'initWithContext' before '", str));
+            throw new IllegalStateException(AbstractC5128c.b('\'', "Must call 'initWithContext' before '", str));
         }
         if (i == 2) {
             warnIfBlockingOnMainThread(str);
@@ -1583,7 +1583,7 @@ public final class c implements p4.c, v4.b {
             }
             Exception exc = this.initFailureException;
             if (exc == null) {
-                throw new IllegalStateException(u1.h.b('\'', "Initialization failed before '", str));
+                throw new IllegalStateException(AbstractC5128c.b('\'', "Initialization failed before '", str));
             }
         }
     }
@@ -1594,54 +1594,54 @@ public final class c implements p4.c, v4.b {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final <T> Object suspendAndReturn(I7.a aVar, InterfaceC5267d interfaceC5267d) {
-        O o6;
+    public final <T> Object suspendAndReturn(I7.a aVar, InterfaceC5240d interfaceC5240d) {
+        O o4;
         int i;
-        if (interfaceC5267d instanceof O) {
-            o6 = (O) interfaceC5267d;
-            int i6 = o6.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                o6.label = i6 - Integer.MIN_VALUE;
-                Object obj = o6.result;
-                A7.a aVar2 = A7.a.f58n;
-                i = o6.label;
+        if (interfaceC5240d instanceof O) {
+            o4 = (O) interfaceC5240d;
+            int i4 = o4.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                o4.label = i4 - Integer.MIN_VALUE;
+                Object obj = o4.result;
+                A7.a aVar2 = A7.a.f215n;
+                i = o4.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
-                    o6.L$0 = aVar;
-                    o6.label = 1;
-                    if (suspendUntilInit$default(this, null, o6, 1, null) == aVar2) {
+                    Q3.b.s(obj);
+                    o4.L$0 = aVar;
+                    o4.label = 1;
+                    if (suspendUntilInit$default(this, null, o4, 1, null) == aVar2) {
                         return aVar2;
                     }
                 } else {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    aVar = (I7.a) o6.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    aVar = (I7.a) o4.L$0;
+                    Q3.b.s(obj);
                 }
                 return aVar.invoke();
             }
         }
-        o6 = new O(interfaceC5267d);
-        Object obj2 = o6.result;
-        A7.a aVar22 = A7.a.f58n;
-        i = o6.label;
+        o4 = new O(interfaceC5240d);
+        Object obj2 = o4.result;
+        A7.a aVar22 = A7.a.f215n;
+        i = o4.label;
         if (i != 0) {
         }
         return aVar.invoke();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final Object suspendUntilInit(String str, InterfaceC5267d interfaceC5267d) {
-        Object waitUntilInitInternal = waitUntilInitInternal(str, interfaceC5267d);
-        return waitUntilInitInternal == A7.a.f58n ? waitUntilInitInternal : u7.v.f41353a;
+    public final Object suspendUntilInit(String str, InterfaceC5240d interfaceC5240d) {
+        Object waitUntilInitInternal = waitUntilInitInternal(str, interfaceC5240d);
+        return waitUntilInitInternal == A7.a.f215n ? waitUntilInitInternal : u7.v.f41073a;
     }
 
-    public static /* synthetic */ Object suspendUntilInit$default(c cVar, String str, InterfaceC5267d interfaceC5267d, int i, Object obj) {
+    public static /* synthetic */ Object suspendUntilInit$default(c cVar, String str, InterfaceC5240d interfaceC5240d, int i, Object obj) {
         if ((i & 1) != 0) {
             str = null;
         }
-        return cVar.suspendUntilInit(str, interfaceC5267d);
+        return cVar.suspendUntilInit(str, interfaceC5240d);
     }
 
     private final void updateConfig() {
@@ -1671,7 +1671,7 @@ public final class c implements p4.c, v4.b {
     }
 
     private final void waitForInit(String str) {
-        AbstractC0406y.s(getRuntimeIoDispatcher(), new S(str, null));
+        AbstractC0410y.s(getRuntimeIoDispatcher(), new S(str, null));
     }
 
     public static /* synthetic */ void waitForInit$default(c cVar, String str, int i, Object obj) {
@@ -1690,50 +1690,50 @@ public final class c implements p4.c, v4.b {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object waitUntilInitInternal(String str, InterfaceC5267d interfaceC5267d) {
+    public final Object waitUntilInitInternal(String str, InterfaceC5240d interfaceC5240d) {
         T t6;
         int i;
         a aVar;
-        InterfaceC0394l interfaceC0394l;
+        InterfaceC0398l interfaceC0398l;
         c cVar;
         long j6;
         String str2;
-        if (interfaceC5267d instanceof T) {
-            t6 = (T) interfaceC5267d;
-            int i6 = t6.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                t6.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof T) {
+            t6 = (T) interfaceC5240d;
+            int i4 = t6.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                t6.label = i4 - Integer.MIN_VALUE;
                 Object obj = t6.result;
-                A7.a aVar2 = A7.a.f58n;
+                A7.a aVar2 = A7.a.f215n;
                 i = t6.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     synchronized (this.initLock) {
                         aVar = this.initState;
-                        interfaceC0394l = aVar == a.IN_PROGRESS ? this.suspendCompletion : null;
+                        interfaceC0398l = aVar == a.IN_PROGRESS ? this.suspendCompletion : null;
                     }
-                    int i9 = b.$EnumSwitchMapping$0[aVar.ordinal()];
-                    if (i9 == 1) {
-                        throw new IllegalStateException(str != null ? u1.h.b('\'', "Must call 'initWithContext' before '", str) : "Must call 'initWithContext' before use");
+                    int i6 = b.$EnumSwitchMapping$0[aVar.ordinal()];
+                    if (i6 == 1) {
+                        throw new IllegalStateException(str != null ? AbstractC5128c.b('\'', "Must call 'initWithContext' before '", str) : "Must call 'initWithContext' before use");
                     }
-                    if (i9 != 2) {
-                        if (i9 == 3) {
+                    if (i6 != 2) {
+                        if (i6 == 3) {
                             Exception exc = this.initFailureException;
                             if (exc != null) {
                                 throw exc;
                             }
                             throw new IllegalStateException("Initialization failed. Cannot proceed.");
                         }
-                        return u7.v.f41353a;
+                        return u7.v.f41073a;
                     }
                     com.onesignal.debug.internal.logging.b.debug$default("Waiting for init to complete...", null, 2, null);
                     long currentTimeMillis = System.currentTimeMillis();
-                    kotlin.jvm.internal.h.b(interfaceC0394l);
+                    kotlin.jvm.internal.h.b(interfaceC0398l);
                     t6.L$0 = this;
                     t6.L$1 = str;
                     t6.J$0 = currentTimeMillis;
                     t6.label = 1;
-                    if (((C0395m) interfaceC0394l).U(t6) == aVar2) {
+                    if (((C0399m) interfaceC0398l).U(t6) == aVar2) {
                         return aVar2;
                     }
                     cVar = this;
@@ -1745,7 +1745,7 @@ public final class c implements p4.c, v4.b {
                     j6 = t6.J$0;
                     str = (String) t6.L$1;
                     cVar = (c) t6.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 long currentTimeMillis2 = System.currentTimeMillis() - j6;
                 if (str == null) {
@@ -1761,12 +1761,12 @@ public final class c implements p4.c, v4.b {
                     }
                     throw new IllegalStateException("Initialization failed. Cannot proceed.");
                 }
-                return u7.v.f41353a;
+                return u7.v.f41073a;
             }
         }
-        t6 = new T(interfaceC5267d);
+        t6 = new T(interfaceC5240d);
         Object obj2 = t6.result;
-        A7.a aVar22 = A7.a.f58n;
+        A7.a aVar22 = A7.a.f215n;
         i = t6.label;
         if (i != 0) {
         }
@@ -1776,14 +1776,14 @@ public final class c implements p4.c, v4.b {
         com.onesignal.debug.internal.logging.b.debug$default(str2, null, 2, null);
         if (cVar.initState == a.FAILED) {
         }
-        return u7.v.f41353a;
+        return u7.v.f41073a;
     }
 
-    public static /* synthetic */ Object waitUntilInitInternal$default(c cVar, String str, InterfaceC5267d interfaceC5267d, int i, Object obj) {
+    public static /* synthetic */ Object waitUntilInitInternal$default(c cVar, String str, InterfaceC5240d interfaceC5240d, int i, Object obj) {
         if ((i & 1) != 0) {
             str = null;
         }
-        return cVar.waitUntilInitInternal(str, interfaceC5267d);
+        return cVar.waitUntilInitInternal(str, interfaceC5240d);
     }
 
     private final void warnIfBlockingOnMainThread(String str) {
@@ -1793,10 +1793,10 @@ public final class c implements p4.c, v4.b {
         }
         try {
             if (AndroidUtils.INSTANCE.isRunningOnMainThread()) {
-                if (str == null || (str2 = u1.h.b('\'', "'", str)) == null) {
+                if (str == null || (str2 = AbstractC5128c.b('\'', "'", str)) == null) {
                     str2 = "this OneSignal API";
                 }
-                com.onesignal.debug.internal.logging.b.warn$default(D.y.o("Calling ", str2, " on the main thread while OneSignal initialization is still in progress. This will block the UI thread until init completes (ANR risk on slow devices). Prefer calling from a background thread, or use the suspend API (OneSignal.initWithContextSuspend, OneSignal.getUser(), OneSignal.loginSuspend(), etc.) from a coroutine."), null, 2, null);
+                com.onesignal.debug.internal.logging.b.warn$default(D.x.l("Calling ", str2, " on the main thread while OneSignal initialization is still in progress. This will block the UI thread until init completes (ANR risk on slow devices). Prefer calling from a background thread, or use the suspend API (OneSignal.initWithContextSuspend, OneSignal.getUser(), OneSignal.loginSuspend(), etc.) from a coroutine."), null, 2, null);
             }
         } catch (RuntimeException e9) {
             com.onesignal.debug.internal.logging.b.debug$default("Could not determine main-thread status; skipping ANR-risk warning: " + e9.getMessage(), null, 2, null);
@@ -1824,7 +1824,7 @@ public final class c implements p4.c, v4.b {
     }
 
     public boolean getConsentRequired() {
-        return isInitialized() ? ((Boolean) blockingGet(new C4415d())).booleanValue() : kotlin.jvm.internal.h.a(this._consentRequired, Boolean.TRUE);
+        return isInitialized() ? ((Boolean) blockingGet(new C4430d())).booleanValue() : kotlin.jvm.internal.h.a(this._consentRequired, Boolean.TRUE);
     }
 
     public M4.a getDebug() {
@@ -1832,15 +1832,15 @@ public final class c implements p4.c, v4.b {
     }
 
     public boolean getDisableGMSMissingPrompt() {
-        return isInitialized() ? ((Boolean) blockingGet(new C4416e())).booleanValue() : kotlin.jvm.internal.h.a(this._disableGMSMissingPrompt, Boolean.TRUE);
+        return isInitialized() ? ((Boolean) blockingGet(new C4431e())).booleanValue() : kotlin.jvm.internal.h.a(this._disableGMSMissingPrompt, Boolean.TRUE);
     }
 
     public O4.j getInAppMessages() {
-        return (O4.j) getServiceWithFeatureGate(new C4428q());
+        return (O4.j) getServiceWithFeatureGate(new C4443q());
     }
 
-    public InterfaceC0437a getLocation() {
-        return (InterfaceC0437a) getServiceWithFeatureGate(new w());
+    public InterfaceC0441a getLocation() {
+        return (InterfaceC0441a) getServiceWithFeatureGate(new w());
     }
 
     @Override // p4.c
@@ -1892,18 +1892,18 @@ public final class c implements p4.c, v4.b {
             }
             this.initFailureException = new IllegalStateException("OneSignal initWithContext failed.");
             this.initState = a.IN_PROGRESS;
-            this.suspendCompletion = AbstractC0406y.a();
+            this.suspendCompletion = AbstractC0410y.a();
             try {
                 ensureApplicationServiceStarted(context);
                 if (!isBackgroundThreadingEnabled()) {
-                    return ((Boolean) AbstractC0406y.s(getRuntimeIoDispatcher(), new C4431t(context, appId, null))).booleanValue();
+                    return ((Boolean) AbstractC0410y.s(getRuntimeIoDispatcher(), new C4446t(context, appId, null))).booleanValue();
                 }
-                com.onesignal.common.threading.c.suspendifyOnIO(new C4430s(context, appId, null));
+                com.onesignal.common.threading.c.suspendifyOnIO(new C4445s(context, appId, null));
                 return true;
             } catch (Exception e9) {
                 Exception exc = this.initFailureException;
                 if (exc != null) {
-                    X2.e.y(exc, e9);
+                    A8.b.a(exc, e9);
                 }
                 completeInit(a.FAILED);
                 throw e9;
@@ -1911,10 +1911,10 @@ public final class c implements p4.c, v4.b {
         }
     }
 
-    public Object initWithContextSuspend(Context context, String str, InterfaceC5267d interfaceC5267d) {
+    public Object initWithContextSuspend(Context context, String str, InterfaceC5240d interfaceC5240d) {
         com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "initWithContext(context: " + context + ", appId: " + str + ')');
         com.onesignal.common.threading.b.INSTANCE.prewarm();
-        return AbstractC0406y.y(getRuntimeIoDispatcher(), new u(context, str, null), interfaceC5267d);
+        return AbstractC0410y.y(getRuntimeIoDispatcher(), new u(context, str, null), interfaceC5240d);
     }
 
     public boolean isInitialized() {
@@ -1926,9 +1926,9 @@ public final class c implements p4.c, v4.b {
         login(externalId, null);
     }
 
-    public Object loginSuspend(String str, String str2, InterfaceC5267d interfaceC5267d) {
-        Object y7 = AbstractC0406y.y(getRuntimeIoDispatcher(), new A(str, str2, this, null), interfaceC5267d);
-        return y7 == A7.a.f58n ? y7 : u7.v.f41353a;
+    public Object loginSuspend(String str, String str2, InterfaceC5240d interfaceC5240d) {
+        Object y7 = AbstractC0410y.y(getRuntimeIoDispatcher(), new A(str, str2, this, null), interfaceC5240d);
+        return y7 == A7.a.f215n ? y7 : u7.v.f41073a;
     }
 
     public void logout() {
@@ -1949,9 +1949,9 @@ public final class c implements p4.c, v4.b {
         }
     }
 
-    public Object logoutSuspend(InterfaceC5267d interfaceC5267d) {
-        Object y7 = AbstractC0406y.y(getRuntimeIoDispatcher(), new E(null), interfaceC5267d);
-        return y7 == A7.a.f58n ? y7 : u7.v.f41353a;
+    public Object logoutSuspend(InterfaceC5240d interfaceC5240d) {
+        Object y7 = AbstractC0410y.y(getRuntimeIoDispatcher(), new E(null), interfaceC5240d);
+        return y7 == A7.a.f215n ? y7 : u7.v.f41073a;
     }
 
     public void removeUserJwtInvalidatedListener(p4.d listener) {
@@ -1964,29 +1964,29 @@ public final class c implements p4.c, v4.b {
         getJwtTokenStore().removeUserJwtInvalidatedListener(listener);
     }
 
-    public void setConsentGiven(boolean z3) {
+    public void setConsentGiven(boolean z6) {
         Boolean bool = this._consentGiven;
-        this._consentGiven = Boolean.valueOf(z3);
+        this._consentGiven = Boolean.valueOf(z6);
         if (isInitialized()) {
-            getConfigModel().setConsentGiven(Boolean.valueOf(z3));
-            if (kotlin.jvm.internal.h.a(bool, Boolean.valueOf(z3)) || !z3) {
+            getConfigModel().setConsentGiven(Boolean.valueOf(z6));
+            if (kotlin.jvm.internal.h.a(bool, Boolean.valueOf(z6)) || !z6) {
                 return;
             }
             getOperationRepo().forceExecuteOperations();
         }
     }
 
-    public void setConsentRequired(boolean z3) {
-        this._consentRequired = Boolean.valueOf(z3);
+    public void setConsentRequired(boolean z6) {
+        this._consentRequired = Boolean.valueOf(z6);
         if (isInitialized()) {
-            getConfigModel().setConsentRequired(Boolean.valueOf(z3));
+            getConfigModel().setConsentRequired(Boolean.valueOf(z6));
         }
     }
 
-    public void setDisableGMSMissingPrompt(boolean z3) {
-        this._disableGMSMissingPrompt = Boolean.valueOf(z3);
+    public void setDisableGMSMissingPrompt(boolean z6) {
+        this._disableGMSMissingPrompt = Boolean.valueOf(z6);
         if (isInitialized()) {
-            getConfigModel().setDisableGMSMissingPrompt(z3);
+            getConfigModel().setDisableGMSMissingPrompt(z6);
         }
     }
 
@@ -1994,10 +1994,10 @@ public final class c implements p4.c, v4.b {
         kotlin.jvm.internal.h.e(externalId, "externalId");
         kotlin.jvm.internal.h.e(token, "token");
         M4.c cVar = M4.c.DEBUG;
-        StringBuilder j6 = AbstractC4404f.j("updateUserJwt(externalId: ", externalId, ", token: ...");
-        j6.append(j.p0(token));
-        j6.append(')');
-        com.onesignal.debug.internal.logging.b.log(cVar, j6.toString());
+        StringBuilder l9 = Wv.l("updateUserJwt(externalId: ", externalId, ", token: ...");
+        l9.append(j.F0(token));
+        l9.append(')');
+        com.onesignal.debug.internal.logging.b.log(cVar, l9.toString());
         if (isBackgroundThreadingEnabled()) {
             waitForInit("updateUserJwt");
         } else if (!isInitialized()) {
@@ -2007,85 +2007,85 @@ public final class c implements p4.c, v4.b {
         getOperationRepo().forceExecuteOperations();
     }
 
-    public Object updateUserJwtSuspend(String str, String str2, InterfaceC5267d interfaceC5267d) {
-        Object y7 = AbstractC0406y.y(getRuntimeIoDispatcher(), new P(str, str2, this, null), interfaceC5267d);
-        return y7 == A7.a.f58n ? y7 : u7.v.f41353a;
+    public Object updateUserJwtSuspend(String str, String str2, InterfaceC5240d interfaceC5240d) {
+        Object y7 = AbstractC0410y.y(getRuntimeIoDispatcher(), new P(str, str2, this, null), interfaceC5240d);
+        return y7 == A7.a.f215n ? y7 : u7.v.f41073a;
     }
 
-    public c(AbstractC0402u ioDispatcher) {
+    public c(AbstractC0406u ioDispatcher) {
         kotlin.jvm.internal.h.e(ioDispatcher, "ioDispatcher");
         this.ioDispatcher = ioDispatcher;
-        this.suspendCompletion = AbstractC0406y.a();
+        this.suspendCompletion = AbstractC0410y.a();
         this.initState = a.NOT_STARTED;
         this.sdkVersion = com.onesignal.common.h.INSTANCE.getSdkVersion();
         this.debug = new N4.a();
-        this.operationRepo$delegate = AbstractC0422a.q(new G());
-        this.identityModelStore$delegate = AbstractC0422a.q(new C4426o());
-        this.propertiesModelStore$delegate = AbstractC0422a.q(new I());
-        this.subscriptionModelStore$delegate = AbstractC0422a.q(new N());
-        this.preferencesService$delegate = AbstractC0422a.q(new H());
-        this.jwtTokenStore$delegate = AbstractC0422a.q(new v());
-        this.identityVerificationService$delegate = AbstractC0422a.q(new C4427p());
-        List<String> v9 = AbstractC5130k.v("com.onesignal.notifications.NotificationsModule", "com.onesignal.inAppMessages.InAppMessagesModule", "com.onesignal.location.LocationModule");
-        this.listOfModules = v9;
+        this.operationRepo$delegate = N3.C.O(new G());
+        this.identityModelStore$delegate = N3.C.O(new C4441o());
+        this.propertiesModelStore$delegate = N3.C.O(new I());
+        this.subscriptionModelStore$delegate = N3.C.O(new N());
+        this.preferencesService$delegate = N3.C.O(new H());
+        this.jwtTokenStore$delegate = N3.C.O(new v());
+        this.identityVerificationService$delegate = N3.C.O(new C4442p());
+        List<String> t6 = AbstractC5120k.t("com.onesignal.notifications.NotificationsModule", "com.onesignal.inAppMessages.InAppMessagesModule", "com.onesignal.location.LocationModule");
+        this.listOfModules = t6;
         v4.c cVar = new v4.c();
         ArrayList arrayList = new ArrayList();
         arrayList.add(new CoreModule());
         arrayList.add(new SessionModule());
         arrayList.add(new UserModule());
-        Iterator<String> it = v9.iterator();
+        Iterator<String> it = t6.iterator();
         while (it.hasNext()) {
             try {
                 Object newInstance = Class.forName(it.next()).newInstance();
                 kotlin.jvm.internal.h.c(newInstance, "null cannot be cast to non-null type com.onesignal.common.modules.IModule");
-                arrayList.add((InterfaceC5079a) newInstance);
+                arrayList.add((InterfaceC5071a) newInstance);
             } catch (ClassNotFoundException e9) {
                 e9.printStackTrace();
             }
         }
         Iterator it2 = arrayList.iterator();
         while (it2.hasNext()) {
-            ((InterfaceC5079a) it2.next()).register(cVar);
+            ((InterfaceC5071a) it2.next()).register(cVar);
         }
         this.services = cVar.build();
-        this.featureManager$delegate = AbstractC0422a.q(new C4417f());
-        this.configModel$delegate = AbstractC0422a.q(new C4414b());
+        this.featureManager$delegate = N3.C.O(new C4432f());
+        this.configModel$delegate = N3.C.O(new C4429b());
         this.initLock = new Object();
         this.loginLogoutLock = new Object();
         this.applicationServiceLock = new Object();
-        this.userSwitcher$delegate = AbstractC0422a.q(new R());
-        this.loginHelper$delegate = AbstractC0422a.q(new z());
-        this.logoutHelper$delegate = AbstractC0422a.q(new D());
+        this.userSwitcher$delegate = N3.C.O(new R());
+        this.loginHelper$delegate = N3.C.O(new z());
+        this.logoutHelper$delegate = N3.C.O(new D());
     }
 
-    public Object getInAppMessages(InterfaceC5267d interfaceC5267d) {
-        return AbstractC0406y.y(getRuntimeIoDispatcher(), new C4421j(null), interfaceC5267d);
+    public Object getInAppMessages(InterfaceC5240d interfaceC5240d) {
+        return AbstractC0410y.y(getRuntimeIoDispatcher(), new C4436j(null), interfaceC5240d);
     }
 
-    public Object getLocation(InterfaceC5267d interfaceC5267d) {
-        return AbstractC0406y.y(getRuntimeIoDispatcher(), new C4422k(null), interfaceC5267d);
+    public Object getLocation(InterfaceC5240d interfaceC5240d) {
+        return AbstractC0410y.y(getRuntimeIoDispatcher(), new C4437k(null), interfaceC5240d);
     }
 
-    public Object getNotifications(InterfaceC5267d interfaceC5267d) {
-        return AbstractC0406y.y(getRuntimeIoDispatcher(), new C4423l(null), interfaceC5267d);
+    public Object getNotifications(InterfaceC5240d interfaceC5240d) {
+        return AbstractC0410y.y(getRuntimeIoDispatcher(), new C4438l(null), interfaceC5240d);
     }
 
-    public Object getSession(InterfaceC5267d interfaceC5267d) {
-        return AbstractC0406y.y(getRuntimeIoDispatcher(), new C4424m(null), interfaceC5267d);
+    public Object getSession(InterfaceC5240d interfaceC5240d) {
+        return AbstractC0410y.y(getRuntimeIoDispatcher(), new C4439m(null), interfaceC5240d);
     }
 
-    public Object getUser(InterfaceC5267d interfaceC5267d) {
-        return AbstractC0406y.y(getRuntimeIoDispatcher(), new C4425n(null), interfaceC5267d);
+    public Object getUser(InterfaceC5240d interfaceC5240d) {
+        return AbstractC0410y.y(getRuntimeIoDispatcher(), new C4440n(null), interfaceC5240d);
     }
 
     @Override // p4.c
     public void login(String externalId, String str) {
         kotlin.jvm.internal.h.e(externalId, "externalId");
         M4.c cVar = M4.c.DEBUG;
-        StringBuilder j6 = AbstractC4404f.j("Calling deprecated login(externalId: ", externalId, ", jwtBearerToken: ...");
-        j6.append(str != null ? j.p0(str) : null);
-        j6.append(')');
-        com.onesignal.debug.internal.logging.b.log(cVar, j6.toString());
+        StringBuilder l9 = Wv.l("Calling deprecated login(externalId: ", externalId, ", jwtBearerToken: ...");
+        l9.append(str != null ? j.F0(str) : null);
+        l9.append(')');
+        com.onesignal.debug.internal.logging.b.log(cVar, l9.toString());
         if (isBackgroundThreadingEnabled()) {
             waitForInit("login");
         } else {
@@ -2102,40 +2102,40 @@ public final class c implements p4.c, v4.b {
         }
     }
 
-    public Object getConsentGiven(InterfaceC5267d interfaceC5267d) {
-        return AbstractC0406y.y(getRuntimeIoDispatcher(), new C4418g(null), interfaceC5267d);
+    public Object getConsentGiven(InterfaceC5240d interfaceC5240d) {
+        return AbstractC0410y.y(getRuntimeIoDispatcher(), new C4433g(null), interfaceC5240d);
     }
 
-    public Object getConsentRequired(InterfaceC5267d interfaceC5267d) {
-        return AbstractC0406y.y(getRuntimeIoDispatcher(), new C4419h(null), interfaceC5267d);
+    public Object getConsentRequired(InterfaceC5240d interfaceC5240d) {
+        return AbstractC0410y.y(getRuntimeIoDispatcher(), new C4434h(null), interfaceC5240d);
     }
 
-    public Object getDisableGMSMissingPrompt(InterfaceC5267d interfaceC5267d) {
-        return AbstractC0406y.y(getRuntimeIoDispatcher(), new C4420i(null), interfaceC5267d);
+    public Object getDisableGMSMissingPrompt(InterfaceC5240d interfaceC5240d) {
+        return AbstractC0410y.y(getRuntimeIoDispatcher(), new C4435i(null), interfaceC5240d);
     }
 
-    public Object setConsentRequired(boolean z3, InterfaceC5267d interfaceC5267d) {
-        Object y7 = AbstractC0406y.y(getRuntimeIoDispatcher(), new L(z3, null), interfaceC5267d);
-        return y7 == A7.a.f58n ? y7 : u7.v.f41353a;
+    public Object setConsentRequired(boolean z6, InterfaceC5240d interfaceC5240d) {
+        Object y7 = AbstractC0410y.y(getRuntimeIoDispatcher(), new L(z6, null), interfaceC5240d);
+        return y7 == A7.a.f215n ? y7 : u7.v.f41073a;
     }
 
-    public Object setDisableGMSMissingPrompt(boolean z3, InterfaceC5267d interfaceC5267d) {
-        Object y7 = AbstractC0406y.y(getRuntimeIoDispatcher(), new M(z3, null), interfaceC5267d);
-        return y7 == A7.a.f58n ? y7 : u7.v.f41353a;
+    public Object setDisableGMSMissingPrompt(boolean z6, InterfaceC5240d interfaceC5240d) {
+        Object y7 = AbstractC0410y.y(getRuntimeIoDispatcher(), new M(z6, null), interfaceC5240d);
+        return y7 == A7.a.f215n ? y7 : u7.v.f41073a;
     }
 
-    public Object setConsentGiven(boolean z3, InterfaceC5267d interfaceC5267d) {
-        Object y7 = AbstractC0406y.y(getRuntimeIoDispatcher(), new K(z3, null), interfaceC5267d);
-        return y7 == A7.a.f58n ? y7 : u7.v.f41353a;
+    public Object setConsentGiven(boolean z6, InterfaceC5240d interfaceC5240d) {
+        Object y7 = AbstractC0410y.y(getRuntimeIoDispatcher(), new K(z6, null), interfaceC5240d);
+        return y7 == A7.a.f215n ? y7 : u7.v.f41073a;
     }
 
     @Override // p4.c
-    public Object initWithContext(Context context, InterfaceC5267d interfaceC5267d) {
+    public Object initWithContext(Context context, InterfaceC5240d interfaceC5240d) {
         com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "initWithContext(context: " + context + ')');
-        return initWithContextSuspend(context, null, interfaceC5267d);
+        return initWithContextSuspend(context, null, interfaceC5240d);
     }
 
-    public c(AbstractC0402u abstractC0402u, int i, kotlin.jvm.internal.e eVar) {
-        this((i & 1) != 0 ? S7.F.f2917c : abstractC0402u);
+    public c(AbstractC0406u abstractC0406u, int i, kotlin.jvm.internal.e eVar) {
+        this((i & 1) != 0 ? S7.F.f3000c : abstractC0406u);
     }
 }

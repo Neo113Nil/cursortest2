@@ -6,7 +6,7 @@ import kotlin.jvm.internal.i;
 public final class f extends i implements I7.a {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final f f39772n = new f(0);
+    public static final f f39819n = new f(0);
 
     @Override // I7.a
     public final Object invoke() {

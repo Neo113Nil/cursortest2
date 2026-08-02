@@ -22,67 +22,67 @@ import java.lang.ref.WeakReference;
 public final class C7 implements View.OnAttachStateChangeListener, ViewTreeObserver.OnGlobalLayoutListener, ViewTreeObserver.OnScrollChangedListener, Application.ActivityLifecycleCallbacks {
 
     /* renamed from: F, reason: collision with root package name */
-    public static final Handler f24042F = new Handler(Looper.getMainLooper());
+    public static final Handler f24805F = new Handler(Looper.getMainLooper());
 
     /* renamed from: A, reason: collision with root package name */
-    public WeakReference f24043A;
+    public WeakReference f24806A;
 
     /* renamed from: B, reason: collision with root package name */
-    public final C3818r7 f24044B;
+    public final C3841r7 f24807B;
 
     /* renamed from: C, reason: collision with root package name */
-    public byte f24045C = -1;
+    public byte f24808C = -1;
 
     /* renamed from: D, reason: collision with root package name */
-    public int f24046D = -1;
+    public int f24809D = -1;
 
     /* renamed from: E, reason: collision with root package name */
-    public long f24047E = -3;
+    public long f24810E = -3;
 
     /* renamed from: n, reason: collision with root package name */
-    public final Context f24048n;
+    public final Context f24811n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final Application f24049u;
+    public final Application f24812u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final PowerManager f24050v;
+    public final PowerManager f24813v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final KeyguardManager f24051w;
+    public final KeyguardManager f24814w;
 
     /* renamed from: x, reason: collision with root package name */
-    public Q0.d f24052x;
+    public Q0.d f24815x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final C3926t7 f24053y;
+    public final C3949t7 f24816y;
 
     /* renamed from: z, reason: collision with root package name */
-    public WeakReference f24054z;
+    public WeakReference f24817z;
 
-    public C7(Context context, C3926t7 c3926t7) {
+    public C7(Context context, C3949t7 c3949t7) {
         Context applicationContext = context.getApplicationContext();
-        this.f24048n = applicationContext;
-        this.f24053y = c3926t7;
-        this.f24050v = (PowerManager) applicationContext.getSystemService("power");
-        this.f24051w = (KeyguardManager) applicationContext.getSystemService("keyguard");
+        this.f24811n = applicationContext;
+        this.f24816y = c3949t7;
+        this.f24813v = (PowerManager) applicationContext.getSystemService("power");
+        this.f24814w = (KeyguardManager) applicationContext.getSystemService("keyguard");
         if (applicationContext instanceof Application) {
             Application application = (Application) applicationContext;
-            this.f24049u = application;
-            this.f24044B = new C3818r7(application, this);
+            this.f24812u = application;
+            this.f24807B = new C3841r7(application, this);
         }
         a(null);
     }
 
     public final void a(View view) {
         long j6;
-        WeakReference weakReference = this.f24043A;
+        WeakReference weakReference = this.f24806A;
         View view2 = weakReference != null ? (View) weakReference.get() : null;
         if (view2 != null) {
             view2.removeOnAttachStateChangeListener(this);
             e(view2);
         }
-        this.f24043A = new WeakReference(view);
+        this.f24806A = new WeakReference(view);
         if (view != null) {
             if (view.getWindowToken() != null || view.getWindowVisibility() != 8) {
                 d(view);
@@ -92,21 +92,21 @@ public final class C7 implements View.OnAttachStateChangeListener, ViewTreeObser
         } else {
             j6 = -3;
         }
-        this.f24047E = j6;
+        this.f24810E = j6;
     }
 
     public final void b(Activity activity, int i) {
         Window window;
-        if (this.f24043A == null || (window = activity.getWindow()) == null) {
+        if (this.f24806A == null || (window = activity.getWindow()) == null) {
             return;
         }
         View peekDecorView = window.peekDecorView();
-        WeakReference weakReference = this.f24043A;
+        WeakReference weakReference = this.f24806A;
         View view = weakReference != null ? (View) weakReference.get() : null;
         if (view == null || peekDecorView == null || view.getRootView() != peekDecorView.getRootView()) {
             return;
         }
-        this.f24046D = i;
+        this.f24809D = i;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:47:0x0084, code lost:
@@ -118,34 +118,34 @@ public final class C7 implements View.OnAttachStateChangeListener, ViewTreeObser
     */
     public final void c() {
         Activity activity;
-        WeakReference weakReference = this.f24043A;
+        WeakReference weakReference = this.f24806A;
         if (weakReference == null) {
             return;
         }
         View view = weakReference != null ? (View) weakReference.get() : null;
         if (view == null) {
-            this.f24047E = -3L;
-            this.f24045C = (byte) -1;
+            this.f24810E = -3L;
+            this.f24808C = (byte) -1;
             return;
         }
         int i = view.getVisibility() != 0 ? 1 : 0;
         if (!view.isShown()) {
             i |= 2;
         }
-        PowerManager powerManager = this.f24050v;
+        PowerManager powerManager = this.f24813v;
         if (powerManager != null && !powerManager.isScreenOn()) {
             i |= 4;
         }
-        if (!this.f24053y.f34220a) {
-            KeyguardManager keyguardManager = this.f24051w;
+        if (!this.f24816y.f35006a) {
+            KeyguardManager keyguardManager = this.f24814w;
             if (keyguardManager != null && keyguardManager.inKeyguardRestrictedInputMode()) {
-                char[] cArr = A7.f23634a;
+                char[] cArr = A7.f24414a;
                 View rootView = view.getRootView();
                 if (rootView == null) {
                     rootView = view;
                 }
                 Context context = rootView.getContext();
-                for (int i6 = 0; (context instanceof ContextWrapper) && i6 < 10; i6++) {
+                for (int i4 = 0; (context instanceof ContextWrapper) && i4 < 10; i4++) {
                     if (context instanceof Activity) {
                         activity = (Activity) context;
                         break;
@@ -169,39 +169,39 @@ public final class C7 implements View.OnAttachStateChangeListener, ViewTreeObser
             i |= 32;
         }
         int windowVisibility = view.getWindowVisibility();
-        int i9 = this.f24046D;
-        if (i9 != -1) {
-            windowVisibility = i9;
+        int i6 = this.f24809D;
+        if (i6 != -1) {
+            windowVisibility = i6;
         }
         if (windowVisibility != 0) {
             i |= 64;
         }
-        if (this.f24045C != i) {
-            this.f24045C = (byte) i;
-            this.f24047E = i == 0 ? SystemClock.elapsedRealtime() : (-3) - i;
+        if (this.f24808C != i) {
+            this.f24808C = (byte) i;
+            this.f24810E = i == 0 ? SystemClock.elapsedRealtime() : (-3) - i;
         }
     }
 
     public final void d(View view) {
         ViewTreeObserver viewTreeObserver = view.getViewTreeObserver();
         if (viewTreeObserver.isAlive()) {
-            this.f24054z = new WeakReference(viewTreeObserver);
+            this.f24817z = new WeakReference(viewTreeObserver);
             viewTreeObserver.addOnScrollChangedListener(this);
             viewTreeObserver.addOnGlobalLayoutListener(this);
         }
-        if (this.f24052x == null) {
+        if (this.f24815x == null) {
             IntentFilter intentFilter = new IntentFilter();
             intentFilter.addAction("android.intent.action.SCREEN_ON");
             intentFilter.addAction("android.intent.action.SCREEN_OFF");
             intentFilter.addAction("android.intent.action.USER_PRESENT");
             Q0.d dVar = new Q0.d(this);
-            this.f24052x = dVar;
-            this.f24048n.registerReceiver(dVar, intentFilter);
+            this.f24815x = dVar;
+            this.f24811n.registerReceiver(dVar, intentFilter);
         }
-        Application application = this.f24049u;
+        Application application = this.f24812u;
         if (application != null) {
             try {
-                application.registerActivityLifecycleCallbacks(this.f24044B);
+                application.registerActivityLifecycleCallbacks(this.f24807B);
             } catch (Exception unused) {
             }
         }
@@ -209,14 +209,14 @@ public final class C7 implements View.OnAttachStateChangeListener, ViewTreeObser
 
     public final void e(View view) {
         try {
-            WeakReference weakReference = this.f24054z;
+            WeakReference weakReference = this.f24817z;
             if (weakReference != null) {
                 ViewTreeObserver viewTreeObserver = (ViewTreeObserver) weakReference.get();
                 if (viewTreeObserver != null && viewTreeObserver.isAlive()) {
                     viewTreeObserver.removeOnScrollChangedListener(this);
                     viewTreeObserver.removeGlobalOnLayoutListener(this);
                 }
-                this.f24054z = null;
+                this.f24817z = null;
             }
         } catch (Exception unused) {
         }
@@ -228,18 +228,18 @@ public final class C7 implements View.OnAttachStateChangeListener, ViewTreeObser
             }
         } catch (Exception unused2) {
         }
-        Q0.d dVar = this.f24052x;
+        Q0.d dVar = this.f24815x;
         if (dVar != null) {
             try {
-                this.f24048n.unregisterReceiver(dVar);
+                this.f24811n.unregisterReceiver(dVar);
             } catch (Exception unused3) {
             }
-            this.f24052x = null;
+            this.f24815x = null;
         }
-        Application application = this.f24049u;
+        Application application = this.f24812u;
         if (application != null) {
             try {
-                application.unregisterActivityLifecycleCallbacks(this.f24044B);
+                application.unregisterActivityLifecycleCallbacks(this.f24807B);
             } catch (Exception unused4) {
             }
         }
@@ -266,7 +266,7 @@ public final class C7 implements View.OnAttachStateChangeListener, ViewTreeObser
     public final void onActivityResumed(Activity activity) {
         b(activity, 0);
         c();
-        f24042F.post(new RunnableC3111e(this));
+        f24805F.post(new RunnableC3134e(this));
     }
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
@@ -297,16 +297,16 @@ public final class C7 implements View.OnAttachStateChangeListener, ViewTreeObser
 
     @Override // android.view.View.OnAttachStateChangeListener
     public final void onViewAttachedToWindow(View view) {
-        this.f24046D = -1;
+        this.f24809D = -1;
         d(view);
         c();
     }
 
     @Override // android.view.View.OnAttachStateChangeListener
     public final void onViewDetachedFromWindow(View view) {
-        this.f24046D = -1;
+        this.f24809D = -1;
         c();
-        f24042F.post(new RunnableC3111e(this));
+        f24805F.post(new RunnableC3134e(this));
         e(view);
     }
 }

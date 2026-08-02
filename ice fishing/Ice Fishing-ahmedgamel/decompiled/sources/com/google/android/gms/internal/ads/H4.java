@@ -10,21 +10,21 @@ import java.util.regex.Pattern;
 public abstract class H4 {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final ArrayList f25213a = new ArrayList();
+    public static final ArrayList f25985a = new ArrayList();
 
     /* renamed from: b, reason: collision with root package name */
-    public static final Pattern f25214b = Pattern.compile("^mp4a\\.([a-zA-Z0-9]{2})(?:\\.([0-9]{1,2}))?$");
+    public static final Pattern f25986b = Pattern.compile("^mp4a\\.([a-zA-Z0-9]{2})(?:\\.([0-9]{1,2}))?$");
 
     public static boolean a(String str) {
-        return com.anythink.basead.exoplayer.k.o.f8445b.equals(j(str));
+        return com.anythink.basead.exoplayer.k.o.f9231b.equals(j(str));
     }
 
     public static boolean b(String str) {
-        return com.anythink.basead.exoplayer.k.o.f8444a.equals(j(str));
+        return com.anythink.basead.exoplayer.k.o.f9230a.equals(j(str));
     }
 
     public static boolean c(String str) {
-        return d.c.f18635e.equals(j(str)) || "application/x-image-uri".equals(str);
+        return d.c.f19422e.equals(j(str)) || "application/x-image-uri".equals(str);
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -37,7 +37,7 @@ public abstract class H4 {
         }
         switch (str.hashCode()) {
             case -2123537834:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8421B)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9207B)) {
                     c9 = '\n';
                     break;
                 }
@@ -65,28 +65,28 @@ public abstract class H4 {
                 c9 = 65535;
                 break;
             case -1248341703:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8440V)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9226V)) {
                     c9 = '\f';
                     break;
                 }
                 c9 = 65535;
                 break;
             case -432837260:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8463u)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9249u)) {
                     c9 = 2;
                     break;
                 }
                 c9 = 65535;
                 break;
             case -432837259:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8464v)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9250v)) {
                     c9 = 3;
                     break;
                 }
                 c9 = 65535;
                 break;
             case -53558318:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8460r)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9246r)) {
                     c9 = 20;
                     break;
                 }
@@ -100,14 +100,14 @@ public abstract class H4 {
                 c9 = 65535;
                 break;
             case 187078296:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8468z)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9254z)) {
                     c9 = '\b';
                     break;
                 }
                 c9 = 65535;
                 break;
             case 187094639:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8465w)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9251w)) {
                     c9 = 4;
                     break;
                 }
@@ -142,21 +142,21 @@ public abstract class H4 {
                 c9 = 65535;
                 break;
             case 1504578661:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8420A)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9206A)) {
                     c9 = '\t';
                     break;
                 }
                 c9 = 65535;
                 break;
             case 1504619009:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8429K)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9215K)) {
                     c9 = 7;
                     break;
                 }
                 c9 = 65535;
                 break;
             case 1504831518:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8462t)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9248t)) {
                     c9 = 1;
                     break;
                 }
@@ -170,14 +170,14 @@ public abstract class H4 {
                 c9 = 65535;
                 break;
             case 1903231877:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8466x)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9252x)) {
                     c9 = 5;
                     break;
                 }
                 c9 = 65535;
                 break;
             case 1903589369:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8467y)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9253y)) {
                     c9 = 6;
                     break;
                 }
@@ -198,31 +198,31 @@ public abstract class H4 {
 
     public static String e(int i) {
         if (i == 32) {
-            return com.anythink.basead.exoplayer.k.o.f8454l;
+            return com.anythink.basead.exoplayer.k.o.f9240l;
         }
         if (i == 33) {
-            return com.anythink.basead.exoplayer.k.o.f8451h;
+            return com.anythink.basead.exoplayer.k.o.f9237h;
         }
         if (i == 35) {
             return com.anythink.basead.exoplayer.k.o.i;
         }
         if (i == 64) {
-            return com.anythink.basead.exoplayer.k.o.f8460r;
+            return com.anythink.basead.exoplayer.k.o.f9246r;
         }
         if (i == 163) {
-            return com.anythink.basead.exoplayer.k.o.f8457o;
+            return com.anythink.basead.exoplayer.k.o.f9243o;
         }
         if (i == 177) {
-            return com.anythink.basead.exoplayer.k.o.f8453k;
+            return com.anythink.basead.exoplayer.k.o.f9239k;
         }
         if (i == 221) {
-            return com.anythink.basead.exoplayer.k.o.f8426G;
+            return com.anythink.basead.exoplayer.k.o.f9212G;
         }
         if (i == 165) {
-            return com.anythink.basead.exoplayer.k.o.f8468z;
+            return com.anythink.basead.exoplayer.k.o.f9254z;
         }
         if (i == 166) {
-            return com.anythink.basead.exoplayer.k.o.f8420A;
+            return com.anythink.basead.exoplayer.k.o.f9206A;
         }
         switch (i) {
             case 96:
@@ -231,28 +231,28 @@ public abstract class H4 {
             case 99:
             case 100:
             case 101:
-                return com.anythink.basead.exoplayer.k.o.f8456n;
+                return com.anythink.basead.exoplayer.k.o.f9242n;
             case 102:
             case 103:
             case 104:
-                return com.anythink.basead.exoplayer.k.o.f8460r;
+                return com.anythink.basead.exoplayer.k.o.f9246r;
             case 105:
             case 107:
-                return com.anythink.basead.exoplayer.k.o.f8462t;
+                return com.anythink.basead.exoplayer.k.o.f9248t;
             case 106:
-                return com.anythink.basead.exoplayer.k.o.f8455m;
+                return com.anythink.basead.exoplayer.k.o.f9241m;
             case 108:
                 return "image/jpeg";
             default:
                 switch (i) {
                     case 169:
                     case 172:
-                        return com.anythink.basead.exoplayer.k.o.f8423D;
+                        return com.anythink.basead.exoplayer.k.o.f9209D;
                     case 170:
                     case 171:
-                        return com.anythink.basead.exoplayer.k.o.f8424E;
+                        return com.anythink.basead.exoplayer.k.o.f9210E;
                     case 173:
-                        return com.anythink.basead.exoplayer.k.o.f8427H;
+                        return com.anythink.basead.exoplayer.k.o.f9213H;
                     case 174:
                         return "audio/ac4";
                     default:
@@ -271,19 +271,19 @@ public abstract class H4 {
         if (b(str)) {
             return 2;
         }
-        if (com.anythink.basead.exoplayer.k.o.f8446c.equals(j(str)) || "application/x-media3-cues".equals(str) || com.anythink.basead.exoplayer.k.o.f8441W.equals(str) || com.anythink.basead.exoplayer.k.o.f8442X.equals(str) || com.anythink.basead.exoplayer.k.o.ac.equals(str) || com.anythink.basead.exoplayer.k.o.Y.equals(str) || com.anythink.basead.exoplayer.k.o.f8443Z.equals(str) || com.anythink.basead.exoplayer.k.o.aa.equals(str) || com.anythink.basead.exoplayer.k.o.ab.equals(str) || com.anythink.basead.exoplayer.k.o.ad.equals(str) || com.anythink.basead.exoplayer.k.o.ae.equals(str) || com.anythink.basead.exoplayer.k.o.af.equals(str) || com.anythink.basead.exoplayer.k.o.aj.equals(str)) {
+        if (com.anythink.basead.exoplayer.k.o.f9232c.equals(j(str)) || "application/x-media3-cues".equals(str) || com.anythink.basead.exoplayer.k.o.f9227W.equals(str) || com.anythink.basead.exoplayer.k.o.f9228X.equals(str) || com.anythink.basead.exoplayer.k.o.ac.equals(str) || com.anythink.basead.exoplayer.k.o.Y.equals(str) || com.anythink.basead.exoplayer.k.o.f9229Z.equals(str) || com.anythink.basead.exoplayer.k.o.aa.equals(str) || com.anythink.basead.exoplayer.k.o.ab.equals(str) || com.anythink.basead.exoplayer.k.o.ad.equals(str) || com.anythink.basead.exoplayer.k.o.ae.equals(str) || com.anythink.basead.exoplayer.k.o.af.equals(str) || com.anythink.basead.exoplayer.k.o.aj.equals(str)) {
             return 3;
         }
         if (c(str)) {
             return 4;
         }
-        if (com.anythink.basead.exoplayer.k.o.f8440V.equals(str) || com.anythink.basead.exoplayer.k.o.ai.equals(str) || com.anythink.basead.exoplayer.k.o.ag.equals(str) || "application/x-icy".equals(str) || "application/vnd.dvb.ait".equals(str) || "application/meta".equals(str) || "application/x-itut-t35".equals(str)) {
+        if (com.anythink.basead.exoplayer.k.o.f9226V.equals(str) || com.anythink.basead.exoplayer.k.o.ai.equals(str) || com.anythink.basead.exoplayer.k.o.ag.equals(str) || "application/x-icy".equals(str) || "application/vnd.dvb.ait".equals(str) || "application/meta".equals(str) || "application/x-itut-t35".equals(str)) {
             return 5;
         }
         if (com.anythink.basead.exoplayer.k.o.ah.equals(str)) {
             return 6;
         }
-        ArrayList arrayList = f25213a;
+        ArrayList arrayList = f25985a;
         if (arrayList.size() <= 0) {
             return -1;
         }
@@ -297,35 +297,35 @@ public abstract class H4 {
         N6.i i;
         switch (str.hashCode()) {
             case -2123537834:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8421B)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9207B)) {
                     c9 = 4;
                     break;
                 }
                 c9 = 65535;
                 break;
             case -1365340241:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8425F)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9211F)) {
                     c9 = '\b';
                     break;
                 }
                 c9 = 65535;
                 break;
             case -1095064472:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8423D)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9209D)) {
                     c9 = 6;
                     break;
                 }
                 c9 = 65535;
                 break;
             case -53558318:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8460r)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9246r)) {
                     c9 = 1;
                     break;
                 }
                 c9 = 65535;
                 break;
             case 187078296:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8468z)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9254z)) {
                     c9 = 2;
                     break;
                 }
@@ -353,35 +353,35 @@ public abstract class H4 {
                 c9 = 65535;
                 break;
             case 1504578661:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8420A)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9206A)) {
                     c9 = 3;
                     break;
                 }
                 c9 = 65535;
                 break;
             case 1504831518:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8462t)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9248t)) {
                     c9 = 0;
                     break;
                 }
                 c9 = 65535;
                 break;
             case 1504891608:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8427H)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9213H)) {
                     c9 = 11;
                     break;
                 }
                 c9 = 65535;
                 break;
             case 1505942594:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8424E)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9210E)) {
                     c9 = 7;
                     break;
                 }
                 c9 = 65535;
                 break;
             case 1556697186:
-                if (str.equals(com.anythink.basead.exoplayer.k.o.f8422C)) {
+                if (str.equals(com.anythink.basead.exoplayer.k.o.f9208C)) {
                     c9 = '\n';
                     break;
                 }
@@ -431,52 +431,52 @@ public abstract class H4 {
         if (str == null) {
             return null;
         }
-        String f3 = AbstractC3043cl.f(str);
-        switch (f3.hashCode()) {
+        String f2 = AbstractC3066cl.f(str);
+        switch (f2.hashCode()) {
             case -1833600100:
-                if (f3.equals("video/x-mvhevc")) {
+                if (f2.equals("video/x-mvhevc")) {
                     c9 = 0;
                     break;
                 }
                 c9 = 65535;
                 break;
             case -1007807498:
-                if (f3.equals("audio/x-flac")) {
+                if (f2.equals("audio/x-flac")) {
                     c9 = 1;
                     break;
                 }
                 c9 = 65535;
                 break;
             case -979095690:
-                if (f3.equals("application/x-mpegurl")) {
+                if (f2.equals("application/x-mpegurl")) {
                     c9 = 4;
                     break;
                 }
                 c9 = 65535;
                 break;
             case -586683234:
-                if (f3.equals("audio/x-wav")) {
+                if (f2.equals("audio/x-wav")) {
                     c9 = 3;
                     break;
                 }
                 c9 = 65535;
                 break;
             case -432836268:
-                if (f3.equals("audio/mpeg-l1")) {
+                if (f2.equals("audio/mpeg-l1")) {
                     c9 = 5;
                     break;
                 }
                 c9 = 65535;
                 break;
             case -432836267:
-                if (f3.equals("audio/mpeg-l2")) {
+                if (f2.equals("audio/mpeg-l2")) {
                     c9 = 6;
                     break;
                 }
                 c9 = 65535;
                 break;
             case 187090231:
-                if (f3.equals("audio/mp3")) {
+                if (f2.equals("audio/mp3")) {
                     c9 = 2;
                     break;
                 }
@@ -490,24 +490,24 @@ public abstract class H4 {
             case 0:
                 return "video/mv-hevc";
             case 1:
-                return com.anythink.basead.exoplayer.k.o.f8429K;
+                return com.anythink.basead.exoplayer.k.o.f9215K;
             case 2:
-                return com.anythink.basead.exoplayer.k.o.f8462t;
+                return com.anythink.basead.exoplayer.k.o.f9248t;
             case 3:
                 return "audio/wav";
             case 4:
-                return com.anythink.basead.exoplayer.k.o.f8438T;
+                return com.anythink.basead.exoplayer.k.o.f9224T;
             case 5:
-                return com.anythink.basead.exoplayer.k.o.f8463u;
+                return com.anythink.basead.exoplayer.k.o.f9249u;
             case 6:
-                return com.anythink.basead.exoplayer.k.o.f8464v;
+                return com.anythink.basead.exoplayer.k.o.f9250v;
             default:
-                return f3;
+                return f2;
         }
     }
 
     public static N6.i i(String str) {
-        Matcher matcher = f25214b.matcher(str);
+        Matcher matcher = f25986b.matcher(str);
         if (!matcher.matches()) {
             return null;
         }

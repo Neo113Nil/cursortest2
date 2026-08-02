@@ -4,12 +4,12 @@ package com.anythink.basead.exoplayer.j;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final byte[] f8019a;
+    public final byte[] f8805a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f8020b = 0;
+    public final int f8806b = 0;
 
     public a(byte[] bArr) {
-        this.f8019a = bArr;
+        this.f8805a = bArr;
     }
 }

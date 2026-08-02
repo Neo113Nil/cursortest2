@@ -15,16 +15,16 @@ public final class PrivFrame extends Id3Frame {
     public final String A00;
     public final byte[] A01;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            int i11 = copyOfRange[i10] ^ i9;
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            int i10 = copyOfRange[i9] ^ i6;
             String[] strArr = A03;
             if (strArr[4].charAt(8) == strArr[1].charAt(8)) {
                 throw new RuntimeException();
             }
             A03[0] = "DmEtIuuy4dqW5fO";
-            copyOfRange[i10] = (byte) (i11 ^ a.f21728R);
+            copyOfRange[i9] = (byte) (i10 ^ a.f22515R);
         }
         return new String(copyOfRange);
     }

@@ -9,52 +9,52 @@ import com.anythink.core.common.h.y;
 public class k {
 
     /* renamed from: b, reason: collision with root package name */
-    private w f5844b;
+    private w f6630b;
 
     /* renamed from: c, reason: collision with root package name */
-    private x f5845c;
+    private x f6631c;
 
     /* renamed from: d, reason: collision with root package name */
-    private com.anythink.basead.d.j f5846d;
+    private com.anythink.basead.d.j f6632d;
 
     /* renamed from: e, reason: collision with root package name */
-    private boolean f5847e;
+    private boolean f6633e;
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f5843a = "k";
+    private final String f6629a = "k";
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f5848f = false;
+    private boolean f6634f = false;
 
     public k(w wVar, x xVar) {
         y yVar;
-        this.f5844b = wVar;
-        this.f5845c = xVar;
-        this.f5847e = false;
-        if (xVar == null || (yVar = xVar.f14168o) == null) {
+        this.f6630b = wVar;
+        this.f6631c = xVar;
+        this.f6633e = false;
+        if (xVar == null || (yVar = xVar.f14954o) == null) {
             return;
         }
-        this.f5847e = yVar.aa() != 2;
+        this.f6633e = yVar.aa() != 2;
     }
 
     public final void a(com.anythink.basead.d.j jVar) {
-        this.f5846d = jVar;
+        this.f6632d = jVar;
     }
 
     public final void b() {
-        if (this.f5846d == null) {
+        if (this.f6632d == null) {
             return;
         }
-        if (this.f5847e || !this.f5848f) {
-            this.f5848f = true;
-            w wVar = this.f5844b;
-            if (wVar == null || !(wVar instanceof bj) || !((bj) wVar).ay() || this.f5844b.r() == null || this.f5844b.r().bN() == 2) {
-                com.anythink.basead.b.b.a(9, this.f5844b, this.f5846d);
+        if (this.f6633e || !this.f6634f) {
+            this.f6634f = true;
+            w wVar = this.f6630b;
+            if (wVar == null || !(wVar instanceof bj) || !((bj) wVar).ay() || this.f6630b.r() == null || this.f6630b.r().bN() == 2) {
+                com.anythink.basead.b.b.a(9, this.f6630b, this.f6632d);
             }
         }
     }
 
     public final com.anythink.basead.d.j a() {
-        return this.f5846d;
+        return this.f6632d;
     }
 }

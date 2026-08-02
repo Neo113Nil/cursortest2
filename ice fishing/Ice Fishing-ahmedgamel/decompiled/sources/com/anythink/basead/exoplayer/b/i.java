@@ -10,88 +10,88 @@ import java.lang.annotation.RetentionPolicy;
 final class i {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final int f6462a = 0;
+    private static final int f7248a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    private static final int f6463b = 1;
+    private static final int f7249b = 1;
 
     /* renamed from: c, reason: collision with root package name */
-    private static final int f6464c = 2;
+    private static final int f7250c = 2;
 
     /* renamed from: d, reason: collision with root package name */
-    private static final int f6465d = 3;
+    private static final int f7251d = 3;
 
     /* renamed from: e, reason: collision with root package name */
-    private static final int f6466e = 4;
+    private static final int f7252e = 4;
 
     /* renamed from: f, reason: collision with root package name */
-    private static final int f6467f = 5000;
+    private static final int f7253f = 5000;
 
     /* renamed from: g, reason: collision with root package name */
-    private static final int f6468g = 10000000;
+    private static final int f7254g = 10000000;
 
     /* renamed from: h, reason: collision with root package name */
-    private static final int f6469h = 500000;
+    private static final int f7255h = 500000;
     private static final int i = 500000;
 
     /* renamed from: j, reason: collision with root package name */
-    private final a f6470j;
+    private final a f7256j;
 
     /* renamed from: k, reason: collision with root package name */
-    private int f6471k;
+    private int f7257k;
 
     /* renamed from: l, reason: collision with root package name */
-    private long f6472l;
+    private long f7258l;
 
     /* renamed from: m, reason: collision with root package name */
-    private long f6473m;
+    private long f7259m;
 
     /* renamed from: n, reason: collision with root package name */
-    private long f6474n;
+    private long f7260n;
 
     /* renamed from: o, reason: collision with root package name */
-    private long f6475o;
+    private long f7261o;
 
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private final AudioTrack f6476a;
+        private final AudioTrack f7262a;
 
         /* renamed from: b, reason: collision with root package name */
-        private final AudioTimestamp f6477b = new AudioTimestamp();
+        private final AudioTimestamp f7263b = new AudioTimestamp();
 
         /* renamed from: c, reason: collision with root package name */
-        private long f6478c;
+        private long f7264c;
 
         /* renamed from: d, reason: collision with root package name */
-        private long f6479d;
+        private long f7265d;
 
         /* renamed from: e, reason: collision with root package name */
-        private long f6480e;
+        private long f7266e;
 
         public a(AudioTrack audioTrack) {
-            this.f6476a = audioTrack;
+            this.f7262a = audioTrack;
         }
 
         public final boolean a() {
-            boolean timestamp = this.f6476a.getTimestamp(this.f6477b);
+            boolean timestamp = this.f7262a.getTimestamp(this.f7263b);
             if (timestamp) {
-                long j6 = this.f6477b.framePosition;
-                if (this.f6479d > j6) {
-                    this.f6478c++;
+                long j6 = this.f7263b.framePosition;
+                if (this.f7265d > j6) {
+                    this.f7264c++;
                 }
-                this.f6479d = j6;
-                this.f6480e = j6 + (this.f6478c << 32);
+                this.f7265d = j6;
+                this.f7266e = j6 + (this.f7264c << 32);
             }
             return timestamp;
         }
 
         public final long b() {
-            return this.f6477b.nanoTime / 1000;
+            return this.f7263b.nanoTime / 1000;
         }
 
         public final long c() {
-            return this.f6480e;
+            return this.f7266e;
         }
     }
 
@@ -100,28 +100,28 @@ final class i {
     }
 
     public i(AudioTrack audioTrack) {
-        if (af.f8346a >= 19) {
-            this.f6470j = new a(audioTrack);
+        if (af.f9132a >= 19) {
+            this.f7256j = new a(audioTrack);
             e();
         } else {
-            this.f6470j = null;
+            this.f7256j = null;
             a(3);
         }
     }
 
     public final boolean a(long j6) {
-        a aVar = this.f6470j;
-        if (aVar == null || j6 - this.f6474n < this.f6473m) {
+        a aVar = this.f7256j;
+        if (aVar == null || j6 - this.f7260n < this.f7259m) {
             return false;
         }
-        this.f6474n = j6;
+        this.f7260n = j6;
         boolean a9 = aVar.a();
-        int i6 = this.f6471k;
-        if (i6 != 0) {
-            if (i6 != 1) {
-                if (i6 != 2) {
-                    if (i6 != 3) {
-                        if (i6 != 4) {
+        int i4 = this.f7257k;
+        if (i4 != 0) {
+            if (i4 != 1) {
+                if (i4 != 2) {
+                    if (i4 != 3) {
+                        if (i4 != 4) {
                             throw new IllegalStateException();
                         }
                     } else if (a9) {
@@ -137,21 +137,21 @@ final class i {
                     e();
                     return a9;
                 }
-                if (this.f6470j.c() > this.f6475o) {
+                if (this.f7256j.c() > this.f7261o) {
                     a(2);
                     return a9;
                 }
             }
         } else {
             if (a9) {
-                if (this.f6470j.b() < this.f6472l) {
+                if (this.f7256j.b() < this.f7258l) {
                     return false;
                 }
-                this.f6475o = this.f6470j.c();
+                this.f7261o = this.f7256j.c();
                 a(1);
                 return a9;
             }
-            if (j6 - this.f6472l > 500000) {
+            if (j6 - this.f7258l > 500000) {
                 a(3);
             }
         }
@@ -159,33 +159,33 @@ final class i {
     }
 
     public final void b() {
-        if (this.f6471k == 4) {
+        if (this.f7257k == 4) {
             e();
         }
     }
 
     public final boolean c() {
-        int i6 = this.f6471k;
-        return i6 == 1 || i6 == 2;
+        int i4 = this.f7257k;
+        return i4 == 1 || i4 == 2;
     }
 
     public final boolean d() {
-        return this.f6471k == 2;
+        return this.f7257k == 2;
     }
 
     public final void e() {
-        if (this.f6470j != null) {
+        if (this.f7256j != null) {
             a(0);
         }
     }
 
     public final long f() {
-        a aVar = this.f6470j;
-        return aVar != null ? aVar.b() : com.anythink.basead.exoplayer.b.f6382b;
+        a aVar = this.f7256j;
+        return aVar != null ? aVar.b() : com.anythink.basead.exoplayer.b.f7168b;
     }
 
     public final long g() {
-        a aVar = this.f6470j;
+        a aVar = this.f7256j;
         if (aVar != null) {
             return aVar.c();
         }
@@ -196,24 +196,24 @@ final class i {
         a(4);
     }
 
-    private void a(int i6) {
-        this.f6471k = i6;
-        if (i6 == 0) {
-            this.f6474n = 0L;
-            this.f6475o = -1L;
-            this.f6472l = System.nanoTime() / 1000;
-            this.f6473m = com.anythink.basead.exoplayer.f.f7187a;
+    private void a(int i4) {
+        this.f7257k = i4;
+        if (i4 == 0) {
+            this.f7260n = 0L;
+            this.f7261o = -1L;
+            this.f7258l = System.nanoTime() / 1000;
+            this.f7259m = com.anythink.basead.exoplayer.f.f7973a;
             return;
         }
-        if (i6 == 1) {
-            this.f6473m = com.anythink.basead.exoplayer.f.f7187a;
+        if (i4 == 1) {
+            this.f7259m = com.anythink.basead.exoplayer.f.f7973a;
             return;
         }
-        if (i6 == 2 || i6 == 3) {
-            this.f6473m = 10000000L;
+        if (i4 == 2 || i4 == 3) {
+            this.f7259m = 10000000L;
         } else {
-            if (i6 == 4) {
-                this.f6473m = 500000L;
+            if (i4 == 4) {
+                this.f7259m = 500000L;
                 return;
             }
             throw new IllegalStateException();

@@ -1,7 +1,5 @@
 package C4;
 
-import com.bumptech.glide.e;
-
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: classes2.dex */
@@ -19,7 +17,7 @@ public final class b {
     static {
         b[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = e.b($values);
+        $ENTRIES = X2.a.h($values);
     }
 
     private b(String str, int i) {

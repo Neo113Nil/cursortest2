@@ -28,52 +28,52 @@ import org.apache.http.conn.ConnectTimeoutException;
 public class a {
 
     /* renamed from: b, reason: collision with root package name */
-    protected static final String f9147b = "User-Agent";
+    protected static final String f9933b = "User-Agent";
 
     /* renamed from: c, reason: collision with root package name */
-    protected static final String f9148c = "Accept-Language";
+    protected static final String f9934c = "Accept-Language";
 
     /* renamed from: d, reason: collision with root package name */
-    protected static final String f9149d = "Accept";
+    protected static final String f9935d = "Accept";
 
     /* renamed from: e, reason: collision with root package name */
-    protected static final String f9150e = "application/x-www-form-urlencoded,application/json,text/plain,text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";
+    protected static final String f9936e = "application/x-www-form-urlencoded,application/json,text/plain,text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";
 
     /* renamed from: f, reason: collision with root package name */
-    protected static final String f9151f = "Content-Type";
+    protected static final String f9937f = "Content-Type";
 
     /* renamed from: g, reason: collision with root package name */
-    protected static final String f9152g = "application/json";
+    protected static final String f9938g = "application/json";
 
     /* renamed from: h, reason: collision with root package name */
-    public static final int f9153h = 5;
+    public static final int f9939h = 5;
     protected boolean i;
 
     /* renamed from: j, reason: collision with root package name */
-    protected String f9155j;
+    protected String f9941j;
 
     /* renamed from: k, reason: collision with root package name */
-    protected q f9156k;
+    protected q f9942k;
 
     /* renamed from: m, reason: collision with root package name */
-    private x f9158m;
+    private x f9944m;
 
     /* renamed from: a, reason: collision with root package name */
-    final String f9154a = "a";
+    final String f9940a = "a";
 
     /* renamed from: l, reason: collision with root package name */
-    int f9157l = 0;
+    int f9943l = 0;
 
     public a(x xVar) {
-        this.f9158m = xVar;
+        this.f9944m = xVar;
     }
 
     public final void a(final String str, q qVar) {
-        this.f9156k = qVar;
+        this.f9942k = qVar;
         com.anythink.core.common.v.b.b.a().a(new com.anythink.core.common.v.b.d() { // from class: com.anythink.basead.l.a.1
 
             /* renamed from: a, reason: collision with root package name */
-            final /* synthetic */ int f9159a = 9999;
+            final /* synthetic */ int f9945a = 9999;
 
             /* JADX WARN: Multi-variable type inference failed */
             /* JADX WARN: Removed duplicated region for block: B:101:0x031f A[EXC_TOP_SPLITTER, SYNTHETIC] */
@@ -254,7 +254,7 @@ public class a {
                 BufferedReader bufferedReader2 = null;
                 try {
                     try {
-                        a.this.f9155j = str2;
+                        a.this.f9941j = str2;
                         str2 = (HttpURLConnection) new URL(str2).openConnection();
                     } catch (Throwable th) {
                         th = th;
@@ -269,12 +269,12 @@ public class a {
                         }
                         a aVar = a.this;
                         if (aVar.i) {
-                            aVar.a(this.f9159a);
+                            aVar.a(this.f9945a);
                             str2.disconnect();
                             return;
                         }
                         if (t.b().c("ua")) {
-                            str2.addRequestProperty(a.f9147b, p.a());
+                            str2.addRequestProperty(a.f9933b, p.a());
                         }
                         str2.setConnectTimeout(60000);
                         str2.setReadTimeout(60000);
@@ -282,21 +282,21 @@ public class a {
                         int responseCode = str2.getResponseCode();
                         if (responseCode != 200) {
                             if (responseCode != 302 && responseCode != 301 && responseCode != 307) {
-                                a.this.a(this.f9159a, "Http respond status code is ".concat(String.valueOf(responseCode)), ErrorCode.getErrorCode(ErrorCode.httpStatuException, String.valueOf(responseCode), str2.getResponseMessage()));
+                                a.this.a(this.f9945a, "Http respond status code is ".concat(String.valueOf(responseCode)), ErrorCode.getErrorCode(ErrorCode.httpStatuException, String.valueOf(responseCode), str2.getResponseMessage()));
                                 str2.disconnect();
                                 return;
                             }
                             a aVar2 = a.this;
                             if (aVar2.i) {
-                                aVar2.a(this.f9159a);
+                                aVar2.a(this.f9945a);
                             } else {
-                                int i = aVar2.f9157l;
+                                int i = aVar2.f9943l;
                                 if (i >= 5) {
-                                    aVar2.a(this.f9159a, "Http respond status code is ".concat(String.valueOf(responseCode)), ErrorCode.getErrorCode(ErrorCode.httpStatuException, String.valueOf(responseCode), "over 5 MAX_REDIRECTS_COUNT," + str2.getResponseMessage()));
+                                    aVar2.a(this.f9945a, "Http respond status code is ".concat(String.valueOf(responseCode)), ErrorCode.getErrorCode(ErrorCode.httpStatuException, String.valueOf(responseCode), "over 5 MAX_REDIRECTS_COUNT," + str2.getResponseMessage()));
                                     str2.disconnect();
                                     return;
                                 }
-                                aVar2.f9157l = i + 1;
+                                aVar2.f9943l = i + 1;
                                 String headerField = str2.getHeaderField("Location");
                                 if (headerField != null && headerField.toLowerCase().startsWith("http")) {
                                     b(headerField);
@@ -307,7 +307,7 @@ public class a {
                         }
                         a aVar3 = a.this;
                         if (aVar3.i) {
-                            aVar3.a(this.f9159a);
+                            aVar3.a(this.f9945a);
                             str2.disconnect();
                             return;
                         }
@@ -381,7 +381,7 @@ public class a {
                                     sb.append(readLine);
                                 }
                             }
-                            a.this.a(this.f9159a, sb.toString().trim());
+                            a.this.a(this.f9945a, sb.toString().trim());
                             try {
                                 bufferedReader.close();
                             } catch (Throwable unused) {
@@ -404,7 +404,7 @@ public class a {
                             String message = e17.getMessage();
                             if (e17.getMessage() != null) {
                             }
-                            a.this.a(this.f9159a, message, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e17.getMessage()));
+                            a.this.a(this.f9945a, message, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e17.getMessage()));
                             if (bufferedReader2 != null) {
                             }
                             if (r32 != 0) {
@@ -420,7 +420,7 @@ public class a {
                             String message2 = e16.getMessage();
                             if (e16.getMessage() != null) {
                             }
-                            a.this.a(this.f9159a, message2, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e16.getMessage()));
+                            a.this.a(this.f9945a, message2, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e16.getMessage()));
                             if (bufferedReader2 != null) {
                             }
                             if (r32 != 0) {
@@ -437,7 +437,7 @@ public class a {
                             String message3 = e15.getMessage();
                             if (e15.getMessage() != null) {
                             }
-                            a.this.a(this.f9159a, message3, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e15.getMessage()));
+                            a.this.a(this.f9945a, message3, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e15.getMessage()));
                             if (bufferedReader2 != null) {
                             }
                             if (r32 != 0) {
@@ -449,7 +449,7 @@ public class a {
                         } catch (ConnectException e41) {
                             e14 = e41;
                             bufferedReader2 = bufferedReader;
-                            a.this.a(this.f9159a, "Connect error.", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e14.getMessage()));
+                            a.this.a(this.f9945a, "Connect error.", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e14.getMessage()));
                             if (bufferedReader2 != null) {
                             }
                             if (r32 != 0) {
@@ -461,7 +461,7 @@ public class a {
                         } catch (SocketException e42) {
                             e13 = e42;
                             bufferedReader2 = bufferedReader;
-                            a.this.a(this.f9159a, "connect socket failed.", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e13.getMessage()));
+                            a.this.a(this.f9945a, "connect socket failed.", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e13.getMessage()));
                             if (bufferedReader2 != null) {
                             }
                             if (r32 != 0) {
@@ -473,7 +473,7 @@ public class a {
                         } catch (SocketTimeoutException e43) {
                             e12 = e43;
                             bufferedReader2 = bufferedReader;
-                            a.this.a(this.f9159a, "Connect timeout.", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e12.getMessage()));
+                            a.this.a(this.f9945a, "Connect timeout.", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e12.getMessage()));
                             if (bufferedReader2 != null) {
                             }
                             if (r32 != 0) {
@@ -485,7 +485,7 @@ public class a {
                         } catch (UnknownHostException e44) {
                             e11 = e44;
                             bufferedReader2 = bufferedReader;
-                            a.this.a(this.f9159a, "UnknownHostException", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e11.getMessage()));
+                            a.this.a(this.f9945a, "UnknownHostException", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e11.getMessage()));
                             if (bufferedReader2 != null) {
                             }
                             if (r32 != 0) {
@@ -497,7 +497,7 @@ public class a {
                         } catch (SSLException e45) {
                             e10 = e45;
                             bufferedReader2 = bufferedReader;
-                            a.this.a(this.f9159a, "connect ssl failed.", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e10.getMessage()));
+                            a.this.a(this.f9945a, "connect ssl failed.", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e10.getMessage()));
                             if (bufferedReader2 != null) {
                             }
                             if (r32 != 0) {
@@ -509,7 +509,7 @@ public class a {
                         } catch (ConnectTimeoutException e46) {
                             e = e46;
                             bufferedReader2 = bufferedReader;
-                            a.this.a(this.f9159a, e);
+                            a.this.a(this.f9945a, e);
                             if (bufferedReader2 != null) {
                             }
                             if (r32 != 0) {
@@ -525,7 +525,7 @@ public class a {
                             String message4 = e9.getMessage();
                             if (e9.getMessage() != null) {
                             }
-                            a.this.a(this.f9159a, message4, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e9.getMessage()));
+                            a.this.a(this.f9945a, message4, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e9.getMessage()));
                             if (bufferedReader2 != null) {
                             }
                             if (r32 != 0) {
@@ -558,7 +558,7 @@ public class a {
                         if (e17.getMessage() != null) {
                             message5 = e17.getMessage();
                         }
-                        a.this.a(this.f9159a, message5, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e17.getMessage()));
+                        a.this.a(this.f9945a, message5, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e17.getMessage()));
                         if (bufferedReader2 != null) {
                             try {
                                 bufferedReader2.close();
@@ -591,7 +591,7 @@ public class a {
                         if (e16.getMessage() != null) {
                             message22 = e16.getMessage();
                         }
-                        a.this.a(this.f9159a, message22, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e16.getMessage()));
+                        a.this.a(this.f9945a, message22, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e16.getMessage()));
                         if (bufferedReader2 != null) {
                             try {
                                 bufferedReader2.close();
@@ -625,7 +625,7 @@ public class a {
                         if (e15.getMessage() != null) {
                             message32 = e15.getMessage();
                         }
-                        a.this.a(this.f9159a, message32, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e15.getMessage()));
+                        a.this.a(this.f9945a, message32, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e15.getMessage()));
                         if (bufferedReader2 != null) {
                             try {
                                 bufferedReader2.close();
@@ -653,7 +653,7 @@ public class a {
                         str2 = str2;
                         e14 = e;
                         inputStream = r32;
-                        a.this.a(this.f9159a, "Connect error.", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e14.getMessage()));
+                        a.this.a(this.f9945a, "Connect error.", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e14.getMessage()));
                         if (bufferedReader2 != null) {
                             try {
                                 bufferedReader2.close();
@@ -681,7 +681,7 @@ public class a {
                         str2 = str2;
                         e13 = e;
                         inputStream = r32;
-                        a.this.a(this.f9159a, "connect socket failed.", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e13.getMessage()));
+                        a.this.a(this.f9945a, "connect socket failed.", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e13.getMessage()));
                         if (bufferedReader2 != null) {
                             try {
                                 bufferedReader2.close();
@@ -709,7 +709,7 @@ public class a {
                         str2 = str2;
                         e12 = e;
                         inputStream = r32;
-                        a.this.a(this.f9159a, "Connect timeout.", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e12.getMessage()));
+                        a.this.a(this.f9945a, "Connect timeout.", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e12.getMessage()));
                         if (bufferedReader2 != null) {
                             try {
                                 bufferedReader2.close();
@@ -737,7 +737,7 @@ public class a {
                         str2 = str2;
                         e11 = e;
                         inputStream = r32;
-                        a.this.a(this.f9159a, "UnknownHostException", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e11.getMessage()));
+                        a.this.a(this.f9945a, "UnknownHostException", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e11.getMessage()));
                         if (bufferedReader2 != null) {
                             try {
                                 bufferedReader2.close();
@@ -765,7 +765,7 @@ public class a {
                         str2 = str2;
                         e10 = e;
                         inputStream = r32;
-                        a.this.a(this.f9159a, "connect ssl failed.", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e10.getMessage()));
+                        a.this.a(this.f9945a, "connect ssl failed.", ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e10.getMessage()));
                         if (bufferedReader2 != null) {
                             try {
                                 bufferedReader2.close();
@@ -792,7 +792,7 @@ public class a {
                         inputStream = null;
                         str2 = str2;
                         r32 = inputStream;
-                        a.this.a(this.f9159a, e);
+                        a.this.a(this.f9945a, e);
                         if (bufferedReader2 != null) {
                             try {
                                 bufferedReader2.close();
@@ -825,7 +825,7 @@ public class a {
                         if (e9.getMessage() != null) {
                             message42 = e9.getMessage();
                         }
-                        a.this.a(this.f9159a, message42, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e9.getMessage()));
+                        a.this.a(this.f9945a, message42, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e9.getMessage()));
                         if (bufferedReader2 != null) {
                             try {
                                 bufferedReader2.close();
@@ -933,9 +933,9 @@ public class a {
             public final void a() {
                 q qVar2;
                 try {
-                    q qVar3 = a.this.f9156k;
+                    q qVar3 = a.this.f9942k;
                     if (qVar3 != null) {
-                        qVar3.onLoadStart(this.f9159a);
+                        qVar3.onLoadStart(this.f9945a);
                     }
                     b(str);
                 } catch (Exception e9) {
@@ -943,9 +943,9 @@ public class a {
                     if (e9.getMessage() != null) {
                         message = e9.getMessage();
                     }
-                    q qVar4 = a.this.f9156k;
+                    q qVar4 = a.this.f9942k;
                     if (qVar4 != null) {
-                        qVar4.onLoadError(this.f9159a, message, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e9.getMessage()));
+                        qVar4.onLoadError(this.f9945a, message, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e9.getMessage()));
                     }
                 } catch (OutOfMemoryError e10) {
                     e = e10;
@@ -954,9 +954,9 @@ public class a {
                     if (e.getMessage() != null) {
                         message2 = e.getMessage();
                     }
-                    qVar2 = a.this.f9156k;
+                    qVar2 = a.this.f9942k;
                     if (qVar2 == null) {
-                        qVar2.onLoadError(this.f9159a, message2, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e.getMessage()));
+                        qVar2.onLoadError(this.f9945a, message2, ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, e.getMessage()));
                     }
                 } catch (StackOverflowError e11) {
                     e = e11;
@@ -964,7 +964,7 @@ public class a {
                     String message22 = e.getMessage();
                     if (e.getMessage() != null) {
                     }
-                    qVar2 = a.this.f9156k;
+                    qVar2 = a.this.f9942k;
                     if (qVar2 == null) {
                     }
                 }
@@ -978,10 +978,10 @@ public class a {
 
     public static Map<String, String> a() {
         HashMap hashMap = new HashMap();
-        hashMap.put("Content-Encoding", com.anythink.expressad.foundation.g.f.g.b.f19341d);
-        hashMap.put(f9147b, m.h());
-        hashMap.put(f9148c, Locale.getDefault().toString());
-        hashMap.put(f9149d, f9150e);
+        hashMap.put("Content-Encoding", com.anythink.expressad.foundation.g.f.g.b.f20128d);
+        hashMap.put(f9933b, m.h());
+        hashMap.put(f9934c, Locale.getDefault().toString());
+        hashMap.put(f9935d, f9936e);
         hashMap.put("Content-Type", "application/json");
         return hashMap;
     }
@@ -995,7 +995,7 @@ public class a {
             inputStream = httpURLConnection.getInputStream();
         } catch (Exception unused) {
         }
-        if (!com.anythink.expressad.foundation.g.f.g.b.f19341d.equalsIgnoreCase(httpURLConnection.getHeaderField("Content-Encoding"))) {
+        if (!com.anythink.expressad.foundation.g.f.g.b.f20128d.equalsIgnoreCase(httpURLConnection.getHeaderField("Content-Encoding"))) {
             return inputStream;
         }
         try {
@@ -1011,21 +1011,21 @@ public class a {
     }
 
     public final void a(int i, Object obj) {
-        q qVar = this.f9156k;
+        q qVar = this.f9942k;
         if (qVar != null) {
             qVar.onLoadFinish(i, obj);
         }
     }
 
     public final void a(int i) {
-        q qVar = this.f9156k;
+        q qVar = this.f9942k;
         if (qVar != null) {
             qVar.onLoadCanceled(i);
         }
     }
 
     public final void a(int i, String str, AdError adError) {
-        q qVar = this.f9156k;
+        q qVar = this.f9942k;
         if (qVar != null) {
             qVar.onLoadError(i, str, adError);
         }
@@ -1033,7 +1033,7 @@ public class a {
 
     public final void a(int i, ConnectTimeoutException connectTimeoutException) {
         AdError errorCode = ErrorCode.getErrorCode(ErrorCode.exception, ErrorCode.exception, connectTimeoutException.getMessage());
-        q qVar = this.f9156k;
+        q qVar = this.f9942k;
         if (qVar != null) {
             qVar.onLoadError(i, "Connect timeout.", errorCode);
         }

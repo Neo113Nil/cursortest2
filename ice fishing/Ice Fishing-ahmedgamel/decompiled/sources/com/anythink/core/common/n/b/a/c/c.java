@@ -10,13 +10,13 @@ import com.anythink.core.common.n.c.w;
 public interface c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f15049a = 100;
+    public static final int f15836a = 100;
 
     long a(af afVar);
 
     com.anythink.core.common.n.b.a.b.e a();
 
-    af.a a(boolean z3);
+    af.a a(boolean z6);
 
     v a(ad adVar, long j6);
 

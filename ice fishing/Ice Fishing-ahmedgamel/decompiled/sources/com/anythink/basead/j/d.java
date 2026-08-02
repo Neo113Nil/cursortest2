@@ -4,9 +4,9 @@ package com.anythink.basead.j;
 public interface d {
     void a();
 
-    void a(float f3);
+    void a(float f2);
 
-    void a(float f3, float f9);
+    void a(float f2, float f9);
 
     void b();
 

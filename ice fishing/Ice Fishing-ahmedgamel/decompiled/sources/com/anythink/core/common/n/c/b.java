@@ -6,10 +6,10 @@ import java.io.UnsupportedEncodingException;
 final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final byte[] f15842a = {65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 43, 47};
+    private static final byte[] f16629a = {65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 43, 47};
 
     /* renamed from: b, reason: collision with root package name */
-    private static final byte[] f15843b = {65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 45, 95};
+    private static final byte[] f16630b = {65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 45, 95};
 
     private b() {
     }
@@ -21,13 +21,13 @@ final class b {
         while (length > 0 && ((charAt = str.charAt(length - 1)) == '=' || charAt == '\n' || charAt == '\r' || charAt == ' ' || charAt == '\t')) {
             length--;
         }
-        int i6 = (int) ((length * 6) / 8);
-        byte[] bArr = new byte[i6];
+        int i4 = (int) ((length * 6) / 8);
+        byte[] bArr = new byte[i4];
+        int i6 = 0;
         int i9 = 0;
         int i10 = 0;
-        int i11 = 0;
-        for (int i12 = 0; i12 < length; i12++) {
-            char charAt2 = str.charAt(i12);
+        for (int i11 = 0; i11 < length; i11++) {
+            char charAt2 = str.charAt(i11);
             if (charAt2 >= 'A' && charAt2 <= 'Z') {
                 i = charAt2 - 'A';
             } else if (charAt2 >= 'a' && charAt2 <= 'z') {
@@ -43,60 +43,60 @@ final class b {
                     return null;
                 }
             }
-            i10 = (i10 << 6) | ((byte) i);
-            i9++;
-            if (i9 % 4 == 0) {
-                bArr[i11] = (byte) (i10 >> 16);
-                int i13 = i11 + 2;
-                bArr[i11 + 1] = (byte) (i10 >> 8);
-                i11 += 3;
-                bArr[i13] = (byte) i10;
+            i9 = (i9 << 6) | ((byte) i);
+            i6++;
+            if (i6 % 4 == 0) {
+                bArr[i10] = (byte) (i9 >> 16);
+                int i12 = i10 + 2;
+                bArr[i10 + 1] = (byte) (i9 >> 8);
+                i10 += 3;
+                bArr[i12] = (byte) i9;
             }
         }
-        int i14 = i9 % 4;
-        if (i14 == 1) {
+        int i13 = i6 % 4;
+        if (i13 == 1) {
             return null;
         }
-        if (i14 == 2) {
-            bArr[i11] = (byte) ((i10 << 12) >> 16);
-            i11++;
-        } else if (i14 == 3) {
-            int i15 = i10 << 6;
-            int i16 = i11 + 1;
-            bArr[i11] = (byte) (i15 >> 16);
-            i11 += 2;
-            bArr[i16] = (byte) (i15 >> 8);
+        if (i13 == 2) {
+            bArr[i10] = (byte) ((i9 << 12) >> 16);
+            i10++;
+        } else if (i13 == 3) {
+            int i14 = i9 << 6;
+            int i15 = i10 + 1;
+            bArr[i10] = (byte) (i14 >> 16);
+            i10 += 2;
+            bArr[i15] = (byte) (i14 >> 8);
         }
-        if (i11 == i6) {
+        if (i10 == i4) {
             return bArr;
         }
-        byte[] bArr2 = new byte[i11];
-        System.arraycopy(bArr, 0, bArr2, 0, i11);
+        byte[] bArr2 = new byte[i10];
+        System.arraycopy(bArr, 0, bArr2, 0, i10);
         return bArr2;
     }
 
     public static String b(byte[] bArr) {
-        return a(bArr, f15843b);
+        return a(bArr, f16630b);
     }
 
     public static String a(byte[] bArr) {
-        return a(bArr, f15842a);
+        return a(bArr, f16629a);
     }
 
     private static String a(byte[] bArr, byte[] bArr2) {
         byte[] bArr3 = new byte[((bArr.length + 2) / 3) * 4];
         int length = bArr.length - (bArr.length % 3);
         int i = 0;
-        for (int i6 = 0; i6 < length; i6 += 3) {
-            bArr3[i] = bArr2[(bArr[i6] & 255) >> 2];
-            int i9 = i6 + 1;
-            bArr3[i + 1] = bArr2[((bArr[i6] & 3) << 4) | ((bArr[i9] & 255) >> 4)];
-            int i10 = i + 3;
-            int i11 = (bArr[i9] & 15) << 2;
-            int i12 = i6 + 2;
-            bArr3[i + 2] = bArr2[i11 | ((bArr[i12] & 255) >> 6)];
+        for (int i4 = 0; i4 < length; i4 += 3) {
+            bArr3[i] = bArr2[(bArr[i4] & 255) >> 2];
+            int i6 = i4 + 1;
+            bArr3[i + 1] = bArr2[((bArr[i4] & 3) << 4) | ((bArr[i6] & 255) >> 4)];
+            int i9 = i + 3;
+            int i10 = (bArr[i6] & 15) << 2;
+            int i11 = i4 + 2;
+            bArr3[i + 2] = bArr2[i10 | ((bArr[i11] & 255) >> 6)];
             i += 4;
-            bArr3[i10] = bArr2[bArr[i12] & com.anythink.core.common.s.a.c.f16318c];
+            bArr3[i9] = bArr2[bArr[i11] & com.anythink.core.common.s.a.c.f17105c];
         }
         int length2 = bArr.length % 3;
         if (length2 == 1) {
@@ -106,10 +106,10 @@ final class b {
             bArr3[i + 3] = 61;
         } else if (length2 == 2) {
             bArr3[i] = bArr2[(bArr[length] & 255) >> 2];
-            int i13 = (bArr[length] & 3) << 4;
-            int i14 = length + 1;
-            bArr3[i + 1] = bArr2[((bArr[i14] & 255) >> 4) | i13];
-            bArr3[i + 2] = bArr2[(bArr[i14] & 15) << 2];
+            int i12 = (bArr[length] & 3) << 4;
+            int i13 = length + 1;
+            bArr3[i + 1] = bArr2[((bArr[i13] & 255) >> 4) | i12];
+            bArr3[i + 2] = bArr2[(bArr[i13] & 15) << 2];
             bArr3[i + 3] = 61;
         }
         try {

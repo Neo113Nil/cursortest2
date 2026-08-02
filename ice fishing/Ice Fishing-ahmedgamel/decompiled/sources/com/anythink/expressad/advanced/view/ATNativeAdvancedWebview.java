@@ -9,10 +9,10 @@ import com.anythink.expressad.atsignalcommon.windvane.WindVaneWebView;
 public class ATNativeAdvancedWebview extends WindVaneWebView {
 
     /* renamed from: d, reason: collision with root package name */
-    private static final String f17921d = "ATNativeAdvancedWebview";
+    private static final String f18708d = "ATNativeAdvancedWebview";
 
     /* renamed from: e, reason: collision with root package name */
-    private d f17922e;
+    private d f18709e;
 
     public ATNativeAdvancedWebview(Context context) {
         super(context);
@@ -33,12 +33,12 @@ public class ATNativeAdvancedWebview extends WindVaneWebView {
 
     public void registerNetWorkReceiver() {
         try {
-            if (this.f17922e == null) {
-                this.f17922e = new d(this);
+            if (this.f18709e == null) {
+                this.f18709e = new d(this);
             }
             IntentFilter intentFilter = new IntentFilter();
             intentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
-            getContext().registerReceiver(this.f17922e, intentFilter);
+            getContext().registerReceiver(this.f18709e, intentFilter);
         } catch (Throwable th) {
             th.getMessage();
         }
@@ -46,10 +46,10 @@ public class ATNativeAdvancedWebview extends WindVaneWebView {
 
     public void unregisterNetWorkReceiver() {
         try {
-            d dVar = this.f17922e;
+            d dVar = this.f18709e;
             if (dVar != null) {
                 dVar.a();
-                getContext().unregisterReceiver(this.f17922e);
+                getContext().unregisterReceiver(this.f18709e);
             }
         } catch (Throwable th) {
             th.getMessage();

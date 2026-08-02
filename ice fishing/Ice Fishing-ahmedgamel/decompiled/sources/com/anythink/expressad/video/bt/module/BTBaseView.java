@@ -27,50 +27,50 @@ public abstract class BTBaseView extends FrameLayout {
     public static final String TAG = "BTBaseView";
 
     /* renamed from: n, reason: collision with root package name */
-    protected static int f21043n = 0;
+    protected static int f21830n = 0;
 
     /* renamed from: o, reason: collision with root package name */
-    protected static int f21044o = 1;
+    protected static int f21831o = 1;
 
     /* renamed from: p, reason: collision with root package name */
-    private static final int f21045p = -999;
+    private static final int f21832p = -999;
 
     /* renamed from: a, reason: collision with root package name */
-    protected Context f21046a;
+    protected Context f21833a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected d f21047b;
+    protected d f21834b;
 
     /* renamed from: c, reason: collision with root package name */
-    protected String f21048c;
+    protected String f21835c;
 
     /* renamed from: d, reason: collision with root package name */
-    protected String f21049d;
+    protected String f21836d;
 
     /* renamed from: e, reason: collision with root package name */
-    protected com.anythink.expressad.videocommon.e.d f21050e;
+    protected com.anythink.expressad.videocommon.e.d f21837e;
 
     /* renamed from: f, reason: collision with root package name */
-    protected LayoutInflater f21051f;
+    protected LayoutInflater f21838f;
 
     /* renamed from: g, reason: collision with root package name */
-    protected int f21052g;
+    protected int f21839g;
 
     /* renamed from: h, reason: collision with root package name */
-    protected boolean f21053h;
+    protected boolean f21840h;
     protected float i;
 
     /* renamed from: j, reason: collision with root package name */
-    protected float f21054j;
+    protected float f21841j;
 
     /* renamed from: k, reason: collision with root package name */
-    protected Rect f21055k;
+    protected Rect f21842k;
 
     /* renamed from: l, reason: collision with root package name */
-    protected int f21056l;
+    protected int f21843l;
 
     /* renamed from: m, reason: collision with root package name */
-    protected int f21057m;
+    protected int f21844m;
 
     public BTBaseView(Context context) {
         this(context, null);
@@ -87,27 +87,27 @@ public abstract class BTBaseView extends FrameLayout {
     }
 
     public int findColor(String str) {
-        return k.a(this.f21046a.getApplicationContext(), str, k.f19633d);
+        return k.a(this.f21833a.getApplicationContext(), str, k.f20420d);
     }
 
     public int findDrawable(String str) {
-        return k.a(this.f21046a.getApplicationContext(), str, k.f19632c);
+        return k.a(this.f21833a.getApplicationContext(), str, k.f20419c);
     }
 
     public int findID(String str) {
-        return k.a(this.f21046a.getApplicationContext(), str, "id");
+        return k.a(this.f21833a.getApplicationContext(), str, "id");
     }
 
     public int findLayout(String str) {
-        return k.a(this.f21046a.getApplicationContext(), str, "layout");
+        return k.a(this.f21833a.getApplicationContext(), str, "layout");
     }
 
     public d getCampaign() {
-        return this.f21047b;
+        return this.f21834b;
     }
 
     public String getInstanceId() {
-        return this.f21049d;
+        return this.f21836d;
     }
 
     public FrameLayout.LayoutParams getParentFrameLayoutParams() {
@@ -135,25 +135,25 @@ public abstract class BTBaseView extends FrameLayout {
     }
 
     public Rect getRect() {
-        return this.f21055k;
+        return this.f21842k;
     }
 
     public String getUnitId() {
-        return this.f21048c;
+        return this.f21835c;
     }
 
     public int getViewHeight() {
-        return this.f21057m;
+        return this.f21844m;
     }
 
     public int getViewWidth() {
-        return this.f21056l;
+        return this.f21843l;
     }
 
     public abstract void init(Context context);
 
     public boolean isLandscape() {
-        return this.f21046a.getResources().getConfiguration().orientation == 2;
+        return this.f21833a.getResources().getConfiguration().orientation == 2;
     }
 
     public boolean isNotNULL(View... viewArr) {
@@ -162,20 +162,20 @@ public abstract class BTBaseView extends FrameLayout {
         }
         int length = viewArr.length;
         int i = 0;
-        boolean z3 = false;
+        boolean z6 = false;
         while (i < length) {
             if (viewArr[i] == null) {
                 return false;
             }
             i++;
-            z3 = true;
+            z6 = true;
         }
-        return z3;
+        return z6;
     }
 
     @Override // android.view.View
     public void onConfigurationChanged(Configuration configuration) {
-        this.f21052g = configuration.orientation;
+        this.f21839g = configuration.orientation;
         super.onConfigurationChanged(configuration);
     }
 
@@ -184,28 +184,28 @@ public abstract class BTBaseView extends FrameLayout {
     @Override // android.view.ViewGroup
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
         this.i = motionEvent.getRawX();
-        this.f21054j = motionEvent.getRawY();
+        this.f21841j = motionEvent.getRawY();
         return super.onInterceptTouchEvent(motionEvent);
     }
 
     public void onSelfConfigurationChanged(Configuration configuration) {
-        this.f21052g = configuration.orientation;
+        this.f21839g = configuration.orientation;
     }
 
     public void setCampaign(d dVar) {
-        this.f21047b = dVar;
+        this.f21834b = dVar;
     }
 
     public void setInstanceId(String str) {
-        this.f21049d = str;
+        this.f21836d = str;
     }
 
-    public void setLayout(int i, int i6) {
-        this.f21056l = i;
-        this.f21057m = i6;
+    public void setLayout(int i, int i4) {
+        this.f21843l = i;
+        this.f21844m = i4;
     }
 
-    public void setLayoutCenter(int i, int i6) {
+    public void setLayoutCenter(int i, int i4) {
         FrameLayout.LayoutParams parentFrameLayoutParams = getParentFrameLayoutParams();
         RelativeLayout.LayoutParams parentRelativeLayoutParams = getParentRelativeLayoutParams();
         LinearLayout.LayoutParams parentLinearLayoutParams = getParentLinearLayoutParams();
@@ -214,8 +214,8 @@ public abstract class BTBaseView extends FrameLayout {
             if (i != -999) {
                 parentRelativeLayoutParams.width = i;
             }
-            if (i6 != -999) {
-                parentRelativeLayoutParams.height = i6;
+            if (i4 != -999) {
+                parentRelativeLayoutParams.height = i4;
             }
             setLayoutParams(parentRelativeLayoutParams);
             return;
@@ -225,8 +225,8 @@ public abstract class BTBaseView extends FrameLayout {
             if (i != -999) {
                 parentLinearLayoutParams.width = i;
             }
-            if (i6 != -999) {
-                parentLinearLayoutParams.height = i6;
+            if (i4 != -999) {
+                parentLinearLayoutParams.height = i4;
             }
             setLayoutParams(parentLinearLayoutParams);
             return;
@@ -236,49 +236,49 @@ public abstract class BTBaseView extends FrameLayout {
             if (i != -999) {
                 parentFrameLayoutParams.width = i;
             }
-            if (i6 != -999) {
-                parentFrameLayoutParams.height = i6;
+            if (i4 != -999) {
+                parentFrameLayoutParams.height = i4;
             }
             setLayoutParams(parentFrameLayoutParams);
         }
     }
 
-    public void setLayoutParam(int i, int i6, int i9, int i10) {
+    public void setLayoutParam(int i, int i4, int i6, int i9) {
         FrameLayout.LayoutParams parentFrameLayoutParams = getParentFrameLayoutParams();
         RelativeLayout.LayoutParams parentRelativeLayoutParams = getParentRelativeLayoutParams();
         LinearLayout.LayoutParams parentLinearLayoutParams = getParentLinearLayoutParams();
         if (parentRelativeLayoutParams != null) {
-            parentRelativeLayoutParams.topMargin = i6;
+            parentRelativeLayoutParams.topMargin = i4;
             parentRelativeLayoutParams.leftMargin = i;
-            if (i9 != -999) {
-                parentRelativeLayoutParams.width = i9;
+            if (i6 != -999) {
+                parentRelativeLayoutParams.width = i6;
             }
-            if (i10 != -999) {
-                parentRelativeLayoutParams.height = i10;
+            if (i9 != -999) {
+                parentRelativeLayoutParams.height = i9;
             }
             setLayoutParams(parentRelativeLayoutParams);
             return;
         }
         if (parentLinearLayoutParams != null) {
-            parentLinearLayoutParams.topMargin = i6;
+            parentLinearLayoutParams.topMargin = i4;
             parentLinearLayoutParams.leftMargin = i;
-            if (i9 != -999) {
-                parentLinearLayoutParams.width = i9;
+            if (i6 != -999) {
+                parentLinearLayoutParams.width = i6;
             }
-            if (i10 != -999) {
-                parentLinearLayoutParams.height = i10;
+            if (i9 != -999) {
+                parentLinearLayoutParams.height = i9;
             }
             setLayoutParams(parentLinearLayoutParams);
             return;
         }
         if (parentFrameLayoutParams != null) {
-            parentFrameLayoutParams.topMargin = i6;
+            parentFrameLayoutParams.topMargin = i4;
             parentFrameLayoutParams.leftMargin = i;
-            if (i9 != -999) {
-                parentFrameLayoutParams.width = i9;
+            if (i6 != -999) {
+                parentFrameLayoutParams.width = i6;
             }
-            if (i10 != -999) {
-                parentFrameLayoutParams.height = i10;
+            if (i9 != -999) {
+                parentFrameLayoutParams.height = i9;
             }
             setLayoutParams(parentFrameLayoutParams);
         }
@@ -295,15 +295,15 @@ public abstract class BTBaseView extends FrameLayout {
     }
 
     public void setRect(Rect rect) {
-        this.f21055k = rect;
+        this.f21842k = rect;
     }
 
     public void setRewardUnitSetting(com.anythink.expressad.videocommon.e.d dVar) {
-        this.f21050e = dVar;
+        this.f21837e = dVar;
     }
 
     public void setUnitId(String str) {
-        this.f21048c = str;
+        this.f21835c = str;
     }
 
     public void setWrapContent() {
@@ -318,11 +318,11 @@ public abstract class BTBaseView extends FrameLayout {
 
     public BTBaseView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f21049d = "";
-        this.f21052g = 1;
-        this.f21053h = false;
-        this.f21046a = context;
-        this.f21051f = LayoutInflater.from(context);
+        this.f21836d = "";
+        this.f21839g = 1;
+        this.f21840h = false;
+        this.f21833a = context;
+        this.f21838f = LayoutInflater.from(context);
         init(context);
     }
 
@@ -336,14 +336,14 @@ public abstract class BTBaseView extends FrameLayout {
         }
         try {
             jSONObject.put(a.cg, v.a(com.anythink.expressad.foundation.b.a.c().e(), this.i));
-            jSONObject.put(a.ch, v.a(com.anythink.expressad.foundation.b.a.c().e(), this.f21054j));
+            jSONObject.put(a.ch, v.a(com.anythink.expressad.foundation.b.a.c().e(), this.f21841j));
             jSONObject.put(a.cj, i);
             try {
-                this.f21052g = getContext().getResources().getConfiguration().orientation;
+                this.f21839g = getContext().getResources().getConfiguration().orientation;
             } catch (Exception e10) {
                 e10.printStackTrace();
             }
-            jSONObject.put(a.ck, this.f21052g);
+            jSONObject.put(a.ck, this.f21839g);
             jSONObject.put(a.cl, v.c(getContext()));
             return jSONObject;
         } catch (JSONException e11) {
@@ -357,7 +357,7 @@ public abstract class BTBaseView extends FrameLayout {
     public static void a(WebView webView, String str, String str2) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", f21043n);
+            jSONObject.put("code", f21830n);
             jSONObject.put("id", str2);
             jSONObject.put("data", new JSONObject());
             h.a();

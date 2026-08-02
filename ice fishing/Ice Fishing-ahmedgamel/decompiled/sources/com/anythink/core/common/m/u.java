@@ -12,13 +12,13 @@ import org.json.JSONObject;
 public final class u extends a {
 
     /* renamed from: a, reason: collision with root package name */
-    aq f14734a;
+    aq f15520a;
 
     /* renamed from: b, reason: collision with root package name */
-    boolean f14735b = true;
+    boolean f15521b = true;
 
     public u(aq aqVar) {
-        this.f14734a = aqVar;
+        this.f15520a = aqVar;
     }
 
     @Override // com.anythink.core.common.m.a
@@ -32,7 +32,7 @@ public final class u extends a {
 
     @Override // com.anythink.core.common.m.a
     public final Map<String, String> c() {
-        String str = this.f14734a.f13540c;
+        String str = this.f15520a.f14326c;
         HashMap hashMap = new HashMap();
         try {
             JSONObject jSONObject = new JSONObject(str);
@@ -54,27 +54,27 @@ public final class u extends a {
     */
     public final byte[] d() {
         JSONObject jSONObject;
-        String str = this.f14734a.f13540c;
-        boolean z3 = str != null && str.contains(com.anythink.expressad.foundation.g.f.g.b.f19341d);
+        String str = this.f15520a.f14326c;
+        boolean z6 = str != null && str.contains(com.anythink.expressad.foundation.g.f.g.b.f20128d);
         JSONObject jSONObject2 = null;
         try {
-            jSONObject = new JSONObject(this.f14734a.f13542e);
+            jSONObject = new JSONObject(this.f15520a.f14328e);
         } catch (Exception e9) {
             e = e9;
         }
         try {
-            if (this.f14735b) {
-                jSONObject.put(e.f14628T, 1);
+            if (this.f15521b) {
+                jSONObject.put(e.f15414T, 1);
             }
         } catch (Exception e10) {
             e = e10;
             jSONObject2 = jSONObject;
             e.printStackTrace();
             jSONObject = jSONObject2;
-            if (!z3) {
+            if (!z6) {
             }
         }
-        return !z3 ? jSONObject != null ? a.b(jSONObject.toString()) : new byte[0] : jSONObject != null ? jSONObject.toString().getBytes() : new byte[0];
+        return !z6 ? jSONObject != null ? a.b(jSONObject.toString()) : new byte[0] : jSONObject != null ? jSONObject.toString().getBytes() : new byte[0];
     }
 
     @Override // com.anythink.core.common.m.a
@@ -103,11 +103,11 @@ public final class u extends a {
     }
 
     public final void s() {
-        this.f14735b = false;
+        this.f15521b = false;
     }
 
     public final aq t() {
-        return this.f14734a;
+        return this.f15520a;
     }
 
     @Override // com.anythink.core.common.m.a
@@ -116,11 +116,11 @@ public final class u extends a {
 
     @Override // com.anythink.core.common.m.a
     public final String b() {
-        return this.f14734a.f13541d;
+        return this.f15520a.f14327d;
     }
 
     @Override // com.anythink.core.common.m.a
     public final int a() {
-        return this.f14734a.f13539b;
+        return this.f15520a.f14325b;
     }
 }

@@ -24,11 +24,11 @@ public interface a {
 
     long F();
 
-    View a(Context context, boolean z3, BaseMediaATView.a aVar);
+    View a(Context context, boolean z6, BaseMediaATView.a aVar);
 
     w a();
 
-    void a(int i, int i6);
+    void a(int i, int i4);
 
     void a(View view, List<View> list, List<View> list2, FrameLayout.LayoutParams layoutParams, View view2);
 
@@ -40,13 +40,13 @@ public interface a {
 
     void a(JSONArray jSONArray);
 
-    void a(boolean z3);
+    void a(boolean z6);
 
-    boolean a(boolean z3, boolean z6);
+    boolean a(boolean z6, boolean z9);
 
     ViewGroup b();
 
-    void b(boolean z3);
+    void b(boolean z6);
 
     String c();
 

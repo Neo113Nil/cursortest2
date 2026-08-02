@@ -6,31 +6,31 @@ import android.os.CountDownTimer;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final long f19804a = 1000;
+    private static final long f20591a = 1000;
 
     /* renamed from: b, reason: collision with root package name */
-    private long f19805b = 0;
+    private long f20592b = 0;
 
     /* renamed from: c, reason: collision with root package name */
-    private long f19806c;
+    private long f20593c;
 
     /* renamed from: d, reason: collision with root package name */
-    private com.anythink.expressad.h.a.a f19807d;
+    private com.anythink.expressad.h.a.a f20594d;
 
     /* renamed from: e, reason: collision with root package name */
-    private a f19808e;
+    private a f20595e;
 
     public static class a extends CountDownTimer {
 
         /* renamed from: a, reason: collision with root package name */
-        private com.anythink.expressad.h.a.a f19809a;
+        private com.anythink.expressad.h.a.a f20596a;
 
         public a(long j6, long j9) {
             super(j6, j9);
         }
 
         public final void a(com.anythink.expressad.h.a.a aVar) {
-            this.f19809a = aVar;
+            this.f20596a = aVar;
         }
 
         @Override // android.os.CountDownTimer
@@ -44,58 +44,58 @@ public final class b {
 
     private b a(long j6) {
         if (j6 < 0) {
-            j6 = f19804a;
+            j6 = f20591a;
         }
-        this.f19806c = j6;
+        this.f20593c = j6;
         return this;
     }
 
     private b b(long j6) {
-        this.f19805b = j6;
+        this.f20592b = j6;
         return this;
     }
 
     private void c() {
-        a aVar = this.f19808e;
+        a aVar = this.f20595e;
         if (aVar != null) {
             aVar.cancel();
-            this.f19808e = null;
+            this.f20595e = null;
         }
     }
 
     private b a(com.anythink.expressad.h.a.a aVar) {
-        this.f19807d = aVar;
+        this.f20594d = aVar;
         return this;
     }
 
     private void b() {
-        a aVar = this.f19808e;
+        a aVar = this.f20595e;
         if (aVar == null) {
             if (aVar != null) {
                 aVar.cancel();
-                this.f19808e = null;
+                this.f20595e = null;
             }
-            if (this.f19806c <= 0) {
-                this.f19806c = this.f19805b + f19804a;
+            if (this.f20593c <= 0) {
+                this.f20593c = this.f20592b + f20591a;
             }
-            a aVar2 = new a(this.f19805b, this.f19806c);
-            this.f19808e = aVar2;
-            aVar2.a(this.f19807d);
+            a aVar2 = new a(this.f20592b, this.f20593c);
+            this.f20595e = aVar2;
+            aVar2.a(this.f20594d);
         }
-        this.f19808e.start();
+        this.f20595e.start();
     }
 
     private void a() {
-        a aVar = this.f19808e;
+        a aVar = this.f20595e;
         if (aVar != null) {
             aVar.cancel();
-            this.f19808e = null;
+            this.f20595e = null;
         }
-        if (this.f19806c <= 0) {
-            this.f19806c = this.f19805b + f19804a;
+        if (this.f20593c <= 0) {
+            this.f20593c = this.f20592b + f20591a;
         }
-        a aVar2 = new a(this.f19805b, this.f19806c);
-        this.f19808e = aVar2;
-        aVar2.a(this.f19807d);
+        a aVar2 = new a(this.f20592b, this.f20593c);
+        this.f20595e = aVar2;
+        aVar2.a(this.f20594d);
     }
 }

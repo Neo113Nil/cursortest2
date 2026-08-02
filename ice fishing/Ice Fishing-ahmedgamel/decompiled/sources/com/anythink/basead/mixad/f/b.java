@@ -8,91 +8,91 @@ import java.util.List;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static int f9563a = 0;
+    public static int f10349a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    public static int f9564b = 1;
+    public static int f10350b = 1;
 
     /* renamed from: c, reason: collision with root package name */
-    public static int f9565c = 2;
+    public static int f10351c = 2;
 
     /* renamed from: d, reason: collision with root package name */
-    public static int f9566d = 3;
+    public static int f10352d = 3;
 
     /* renamed from: e, reason: collision with root package name */
-    public static int f9567e = 4;
+    public static int f10353e = 4;
 
     /* renamed from: f, reason: collision with root package name */
-    public static int f9568f = 5;
+    public static int f10354f = 5;
 
     /* renamed from: g, reason: collision with root package name */
-    private static final String f9569g = "b";
+    private static final String f10355g = "b";
 
     /* renamed from: h, reason: collision with root package name */
-    private List<View> f9570h;
+    private List<View> f10356h;
     private View i;
 
     /* renamed from: j, reason: collision with root package name */
-    private View f9571j;
+    private View f10357j;
 
     /* renamed from: k, reason: collision with root package name */
-    private View f9572k;
+    private View f10358k;
 
     /* renamed from: l, reason: collision with root package name */
-    private float f9573l;
+    private float f10359l;
 
     /* renamed from: m, reason: collision with root package name */
-    private float f9574m;
+    private float f10360m;
 
     /* renamed from: n, reason: collision with root package name */
-    private float f9575n;
+    private float f10361n;
 
     /* renamed from: o, reason: collision with root package name */
-    private float f9576o;
+    private float f10362o;
 
     /* renamed from: p, reason: collision with root package name */
-    private int f9577p;
+    private int f10363p;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private List<View> f9578a;
+        private List<View> f10364a;
 
         /* renamed from: b, reason: collision with root package name */
-        private View f9579b;
+        private View f10365b;
 
         /* renamed from: c, reason: collision with root package name */
-        private View f9580c;
+        private View f10366c;
 
         /* renamed from: d, reason: collision with root package name */
-        private View f9581d;
+        private View f10367d;
 
         public final a a(List<View> list) {
-            this.f9578a = list;
+            this.f10364a = list;
             return this;
         }
 
         public final a b(View view) {
-            this.f9580c = view;
+            this.f10366c = view;
             return this;
         }
 
         public final a c(View view) {
-            this.f9581d = view;
+            this.f10367d = view;
             return this;
         }
 
         public final a a(View view) {
-            this.f9579b = view;
+            this.f10365b = view;
             return this;
         }
 
         public final b a() {
             b bVar = new b((byte) 0);
-            bVar.f9570h = this.f9578a;
-            bVar.i = this.f9579b;
-            bVar.f9571j = this.f9580c;
-            bVar.f9572k = this.f9581d;
+            bVar.f10356h = this.f10364a;
+            bVar.i = this.f10365b;
+            bVar.f10357j = this.f10366c;
+            bVar.f10358k = this.f10367d;
             return bVar;
         }
     }
@@ -102,42 +102,42 @@ public class b {
     }
 
     private b() {
-        this.f9577p = f9563a;
+        this.f10363p = f10349a;
     }
 
     public final void a(MotionEvent motionEvent) {
         int action = motionEvent.getAction();
         if (action == 0) {
-            this.f9577p = f9568f;
-            this.f9574m = (int) motionEvent.getRawX();
-            this.f9576o = (int) motionEvent.getRawY();
-            this.f9573l = (int) motionEvent.getX();
-            this.f9575n = (int) motionEvent.getY();
+            this.f10363p = f10354f;
+            this.f10360m = (int) motionEvent.getRawX();
+            this.f10362o = (int) motionEvent.getRawY();
+            this.f10359l = (int) motionEvent.getX();
+            this.f10361n = (int) motionEvent.getY();
             return;
         }
         if (action == 1 || action == 3) {
             try {
-                float f3 = this.f9574m;
-                float f9 = this.f9576o;
-                if (a(f3, f9, this.i)) {
-                    this.f9577p = f9565c;
+                float f2 = this.f10360m;
+                float f9 = this.f10362o;
+                if (a(f2, f9, this.i)) {
+                    this.f10363p = f10351c;
                     return;
                 }
-                if (a(f3, f9, this.f9571j)) {
-                    this.f9577p = f9566d;
+                if (a(f2, f9, this.f10357j)) {
+                    this.f10363p = f10352d;
                     return;
                 }
-                if (a(f3, f9, this.f9572k)) {
-                    this.f9577p = f9567e;
+                if (a(f2, f9, this.f10358k)) {
+                    this.f10363p = f10353e;
                     return;
                 }
-                List<View> list = this.f9570h;
+                List<View> list = this.f10356h;
                 if (list == null || list.size() <= 0) {
                     return;
                 }
-                for (int i = 0; i < this.f9570h.size(); i++) {
-                    if (a(f3, f9, this.f9570h.get(i))) {
-                        this.f9577p = f9564b;
+                for (int i = 0; i < this.f10356h.size(); i++) {
+                    if (a(f2, f9, this.f10356h.get(i))) {
+                        this.f10363p = f10350b;
                         return;
                     }
                 }
@@ -146,36 +146,36 @@ public class b {
         }
     }
 
-    private void a(float f3, float f9) {
-        if (a(f3, f9, this.i)) {
-            this.f9577p = f9565c;
+    private void a(float f2, float f9) {
+        if (a(f2, f9, this.i)) {
+            this.f10363p = f10351c;
             return;
         }
-        if (a(f3, f9, this.f9571j)) {
-            this.f9577p = f9566d;
+        if (a(f2, f9, this.f10357j)) {
+            this.f10363p = f10352d;
             return;
         }
-        if (a(f3, f9, this.f9572k)) {
-            this.f9577p = f9567e;
+        if (a(f2, f9, this.f10358k)) {
+            this.f10363p = f10353e;
             return;
         }
-        List<View> list = this.f9570h;
+        List<View> list = this.f10356h;
         if (list == null || list.size() <= 0) {
             return;
         }
-        for (int i = 0; i < this.f9570h.size(); i++) {
-            if (a(f3, f9, this.f9570h.get(i))) {
-                this.f9577p = f9564b;
+        for (int i = 0; i < this.f10356h.size(); i++) {
+            if (a(f2, f9, this.f10356h.get(i))) {
+                this.f10363p = f10350b;
                 return;
             }
         }
     }
 
     public final int a() {
-        return this.f9577p;
+        return this.f10363p;
     }
 
-    private static boolean a(float f3, float f9, View view) {
+    private static boolean a(float f2, float f9, View view) {
         if (view == null) {
             return false;
         }
@@ -183,6 +183,6 @@ public class b {
         view.getLocationOnScreen(iArr);
         float f10 = iArr[0];
         float f11 = iArr[1];
-        return f3 >= f10 && f3 <= ((float) view.getWidth()) + f10 && f9 >= f11 && f9 <= ((float) view.getHeight()) + f11;
+        return f2 >= f10 && f2 <= ((float) view.getWidth()) + f10 && f9 >= f11 && f9 <= ((float) view.getHeight()) + f11;
     }
 }

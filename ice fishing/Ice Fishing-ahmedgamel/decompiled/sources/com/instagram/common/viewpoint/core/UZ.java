@@ -12,9 +12,9 @@ public final class UZ {
     public static String[] A02 = {"bU9TaOq2H1BCoTTudHgTa6noiTEuLI16", "3dC6vQggwfY", "sSGIgptGmRpdYm1DWaL7pn14ju5", "", "MWUI4wrCJQVvfxcejCMbIiiXK3H", "jomkRAByJcuN5WcossiIAnU6", "EV4d58k22VMnbcsySNbmwKm2xbXDyfIQ", "0y1Y4yK8RTgYo"};
     public final File A00;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        int i10 = 0;
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             String[] strArr = A02;
@@ -24,11 +24,11 @@ public final class UZ {
             String[] strArr2 = A02;
             strArr2[7] = "66mt0TcJLXpax";
             strArr2[1] = "NTsH2gO48Ko";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 122);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 122);
+            i9++;
         }
     }
 
@@ -65,10 +65,10 @@ public final class UZ {
             if (file.isDirectory()) {
                 return;
             } else {
-                throw new C1275Ua(String.format(Locale.US, A01(0, 33, 62), file.getCanonicalPath()));
+                throw new C1295Ua(String.format(Locale.US, A01(0, 33, 62), file.getCanonicalPath()));
             }
         }
-        throw new C1275Ua(String.format(Locale.US, A01(33, 31, 59), file.getCanonicalPath()));
+        throw new C1295Ua(String.format(Locale.US, A01(33, 31, 59), file.getCanonicalPath()));
     }
 
     public final UZ A04(String str) throws IOException {

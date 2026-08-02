@@ -18,28 +18,28 @@ import java.util.List;
 public class RedPacketAnimatorView extends FrameLayout implements Handler.Callback, b {
 
     /* renamed from: a, reason: collision with root package name */
-    private final int f10513a;
+    private final int f11299a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final int f10514b;
+    private final int f11300b;
 
     /* renamed from: c, reason: collision with root package name */
-    private RedPacketView f10515c;
+    private RedPacketView f11301c;
 
     /* renamed from: d, reason: collision with root package name */
-    private ObjectAnimator f10516d;
+    private ObjectAnimator f11302d;
 
     /* renamed from: e, reason: collision with root package name */
-    private Bitmap f10517e;
+    private Bitmap f11303e;
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f10518f;
+    private boolean f11304f;
 
     /* renamed from: g, reason: collision with root package name */
-    private boolean f10519g;
+    private boolean f11305g;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f10520h;
+    private int f11306h;
     private Handler i;
 
     public RedPacketAnimatorView(Context context) {
@@ -47,16 +47,16 @@ public class RedPacketAnimatorView extends FrameLayout implements Handler.Callba
     }
 
     private void b() {
-        RedPacketView redPacketView = this.f10515c;
+        RedPacketView redPacketView = this.f11301c;
         if (redPacketView == null) {
             return;
         }
-        redPacketView.setTranslationY(-this.f10520h);
-        if (this.f10516d == null) {
-            this.f10515c.setVisibility(0);
-            this.f10515c.initRedPacketList(this.f10517e);
-            ObjectAnimator ofFloat = ObjectAnimator.ofFloat(this.f10515c, "translationY", -r3, this.f10520h);
-            this.f10516d = ofFloat;
+        redPacketView.setTranslationY(-this.f11306h);
+        if (this.f11302d == null) {
+            this.f11301c.setVisibility(0);
+            this.f11301c.initRedPacketList(this.f11303e);
+            ObjectAnimator ofFloat = ObjectAnimator.ofFloat(this.f11301c, "translationY", -r3, this.f11306h);
+            this.f11302d = ofFloat;
             ofFloat.addListener(new com.anythink.basead.ui.animplayerview.a() { // from class: com.anythink.basead.ui.animplayerview.redpacket.RedPacketAnimatorView.1
                 @Override // com.anythink.basead.ui.animplayerview.a, android.animation.Animator.AnimatorListener
                 public final void onAnimationEnd(Animator animator) {
@@ -66,16 +66,16 @@ public class RedPacketAnimatorView extends FrameLayout implements Handler.Callba
                     }
                 }
             });
-            this.f10516d.setRepeatCount(0);
-            this.f10516d.setDuration(4000L);
-            this.f10516d.setInterpolator(new LinearInterpolator());
+            this.f11302d.setRepeatCount(0);
+            this.f11302d.setDuration(4000L);
+            this.f11302d.setInterpolator(new LinearInterpolator());
         }
-        ObjectAnimator objectAnimator = this.f10516d;
+        ObjectAnimator objectAnimator = this.f11302d;
         if (objectAnimator != null && !objectAnimator.isStarted()) {
-            this.f10516d.start();
+            this.f11302d.start();
         }
-        this.f10518f = true;
-        this.f10519g = false;
+        this.f11304f = true;
+        this.f11305g = false;
     }
 
     @Override // android.os.Handler.Callback
@@ -88,9 +88,9 @@ public class RedPacketAnimatorView extends FrameLayout implements Handler.Callba
     }
 
     @Override // android.widget.FrameLayout, android.view.View
-    public void onMeasure(int i, int i6) {
-        super.onMeasure(i, i6);
-        this.f10520h = getMeasuredHeight();
+    public void onMeasure(int i, int i4) {
+        super.onMeasure(i, i4);
+        this.f11306h = getMeasuredHeight();
     }
 
     @Override // com.anythink.basead.ui.animplayerview.b
@@ -99,30 +99,30 @@ public class RedPacketAnimatorView extends FrameLayout implements Handler.Callba
         if (handler != null) {
             handler.removeMessages(100);
         }
-        ObjectAnimator objectAnimator = this.f10516d;
+        ObjectAnimator objectAnimator = this.f11302d;
         if (objectAnimator != null) {
             objectAnimator.pause();
         }
     }
 
     public void release() {
-        if (this.f10519g) {
+        if (this.f11305g) {
             return;
         }
         stop();
-        RedPacketView redPacketView = this.f10515c;
+        RedPacketView redPacketView = this.f11301c;
         if (redPacketView != null) {
             redPacketView.release();
         }
-        this.f10519g = true;
+        this.f11305g = true;
     }
 
     @Override // com.anythink.basead.ui.animplayerview.b
     public void resume() {
-        ObjectAnimator objectAnimator = this.f10516d;
+        ObjectAnimator objectAnimator = this.f11302d;
         if (objectAnimator != null) {
             if (objectAnimator.isPaused()) {
-                this.f10516d.resume();
+                this.f11302d.resume();
             } else {
                 b();
             }
@@ -134,12 +134,12 @@ public class RedPacketAnimatorView extends FrameLayout implements Handler.Callba
         if (list == null || list.size() <= 0) {
             return;
         }
-        this.f10517e = list.get(0);
+        this.f11303e = list.get(0);
     }
 
     @Override // com.anythink.basead.ui.animplayerview.b
     public void start() {
-        if (this.f10518f) {
+        if (this.f11304f) {
             resume();
             return;
         }
@@ -151,21 +151,21 @@ public class RedPacketAnimatorView extends FrameLayout implements Handler.Callba
 
     @Override // com.anythink.basead.ui.animplayerview.b
     public void stop() {
-        RedPacketView redPacketView = this.f10515c;
+        RedPacketView redPacketView = this.f11301c;
         if (redPacketView != null) {
-            redPacketView.setTranslationY(-this.f10520h);
+            redPacketView.setTranslationY(-this.f11306h);
         }
-        ObjectAnimator objectAnimator = this.f10516d;
+        ObjectAnimator objectAnimator = this.f11302d;
         if (objectAnimator != null) {
             objectAnimator.removeAllListeners();
-            this.f10516d.cancel();
-            this.f10516d = null;
+            this.f11302d.cancel();
+            this.f11302d = null;
         }
         Handler handler = this.i;
         if (handler != null) {
             handler.removeCallbacksAndMessages(null);
         }
-        this.f10518f = false;
+        this.f11304f = false;
     }
 
     public RedPacketAnimatorView(Context context, AttributeSet attributeSet) {
@@ -178,15 +178,15 @@ public class RedPacketAnimatorView extends FrameLayout implements Handler.Callba
 
     public RedPacketAnimatorView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f10513a = 4000;
-        this.f10514b = 100;
-        this.f10518f = false;
-        this.f10519g = false;
+        this.f11299a = 4000;
+        this.f11300b = 100;
+        this.f11304f = false;
+        this.f11305g = false;
         this.i = new Handler(Looper.getMainLooper(), this);
         setClipChildren(false);
         RedPacketView redPacketView = new RedPacketView(getContext());
-        this.f10515c = redPacketView;
+        this.f11301c = redPacketView;
         addView(redPacketView, new ViewGroup.LayoutParams(-1, -1));
-        this.f10515c.setVisibility(4);
+        this.f11301c.setVisibility(4);
     }
 }

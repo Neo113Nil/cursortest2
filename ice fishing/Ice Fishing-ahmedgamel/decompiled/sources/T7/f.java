@@ -5,21 +5,21 @@ import android.os.Handler;
 import android.os.Looper;
 import android.view.Choreographer;
 import kotlin.jvm.internal.h;
-import u7.C5090h;
+import u7.C5082h;
 
 /* loaded from: classes2.dex */
 public abstract class f {
     private static volatile Choreographer choreographer;
 
     static {
-        Object f3;
+        Object b9;
         try {
-            f3 = new e(a(Looper.getMainLooper()), false);
+            b9 = new e(a(Looper.getMainLooper()), false);
         } catch (Throwable th) {
-            f3 = com.bumptech.glide.d.f(th);
+            b9 = Q3.b.b(th);
         }
-        if (f3 instanceof C5090h) {
-            f3 = null;
+        if (b9 instanceof C5082h) {
+            b9 = null;
         }
     }
 

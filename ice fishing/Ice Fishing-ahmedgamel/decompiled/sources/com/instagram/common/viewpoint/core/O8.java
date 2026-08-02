@@ -5,13 +5,13 @@ import org.json.JSONObject;
 /* loaded from: assets/audience_network/classes2.dex */
 public final class O8 {
     public final long A00;
-    public final C1272Tx A01;
+    public final C1292Tx A01;
     public final String A02;
     public final JSONObject A03;
 
-    public O8(JSONObject jSONObject, C1272Tx c1272Tx, String str, long j6) {
+    public O8(JSONObject jSONObject, C1292Tx c1292Tx, String str, long j6) {
         this.A03 = jSONObject;
-        this.A01 = c1272Tx;
+        this.A01 = c1292Tx;
         this.A02 = str;
         this.A00 = j6;
     }
@@ -20,7 +20,7 @@ public final class O8 {
         return this.A00;
     }
 
-    public final C1272Tx A01() {
+    public final C1292Tx A01() {
         return this.A01;
     }
 

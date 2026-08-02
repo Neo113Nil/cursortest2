@@ -8,24 +8,24 @@ import java.io.IOException;
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static volatile a f18299a;
+    private static volatile a f19086a;
 
     private a() {
     }
 
     private static a a() {
-        if (f18299a == null) {
+        if (f19086a == null) {
             synchronized (a.class) {
                 try {
-                    if (f18299a == null) {
-                        f18299a = new a();
+                    if (f19086a == null) {
+                        f19086a = new a();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f18299a;
+        return f19086a;
     }
 
     private static void a(String str, String str2) {

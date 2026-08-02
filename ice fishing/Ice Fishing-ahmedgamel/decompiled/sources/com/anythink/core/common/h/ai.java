@@ -15,25 +15,25 @@ import org.json.JSONObject;
 public final class ai extends ah {
 
     /* renamed from: a, reason: collision with root package name */
-    private int f13483a;
+    private int f14269a;
 
     /* renamed from: b, reason: collision with root package name */
-    private long f13484b;
+    private long f14270b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f13485c;
+    private int f14271c;
 
     /* renamed from: d, reason: collision with root package name */
-    private String f13486d;
+    private String f14272d;
 
     /* renamed from: e, reason: collision with root package name */
-    private Map<Integer, ak> f13487e;
+    private Map<Integer, ak> f14273e;
 
     /* renamed from: f, reason: collision with root package name */
-    private List<aj> f13488f;
+    private List<aj> f14274f;
 
     /* renamed from: g, reason: collision with root package name */
-    private List<aj> f13489g;
+    private List<aj> f14275g;
 
     private ai() {
     }
@@ -46,10 +46,10 @@ public final class ai extends ah {
         try {
             JSONObject optJSONObject = jSONObject.optJSONObject("e_cwf");
             if (optJSONObject != null) {
-                aiVar.f13486d = optJSONObject.optString("oe_ids");
-                aiVar.f13483a = optJSONObject.optInt("ss_sw");
-                aiVar.f13485c = optJSONObject.optInt("sd_sw");
-                aiVar.f13484b = optJSONObject.optLong("dt");
+                aiVar.f14272d = optJSONObject.optString("oe_ids");
+                aiVar.f14269a = optJSONObject.optInt("ss_sw");
+                aiVar.f14271c = optJSONObject.optInt("sd_sw");
+                aiVar.f14270b = optJSONObject.optLong("dt");
                 ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
                 JSONObject optJSONObject2 = optJSONObject.optJSONObject("oe");
                 if (optJSONObject2 != null) {
@@ -73,14 +73,14 @@ public final class ai extends ah {
                                         jSONObject3 = optJSONObject2;
                                     } else {
                                         ArrayList arrayList = new ArrayList();
-                                        int i6 = 0;
-                                        while (i6 < optJSONArray.length()) {
-                                            Object obj = optJSONArray.get(i6);
+                                        int i4 = 0;
+                                        while (i4 < optJSONArray.length()) {
+                                            Object obj = optJSONArray.get(i4);
                                             JSONObject jSONObject4 = optJSONObject2;
                                             if ((obj instanceof String) && !TextUtils.isEmpty((CharSequence) obj)) {
                                                 arrayList.add((String) obj);
                                             }
-                                            i6++;
+                                            i4++;
                                             optJSONObject2 = jSONObject4;
                                         }
                                         jSONObject3 = optJSONObject2;
@@ -109,7 +109,7 @@ public final class ai extends ah {
                         optJSONObject2 = jSONObject2;
                     }
                 }
-                aiVar.f13487e = concurrentHashMap;
+                aiVar.f14273e = concurrentHashMap;
             }
         } catch (Throwable unused) {
         }
@@ -117,42 +117,42 @@ public final class ai extends ah {
     }
 
     public final boolean b() {
-        return this.f13483a == 1;
+        return this.f14269a == 1;
     }
 
     public final boolean c() {
-        return this.f13485c == 1;
+        return this.f14271c == 1;
     }
 
     public final List<aj> d() {
-        return this.f13488f;
+        return this.f14274f;
     }
 
     public final Map<Integer, ak> e() {
-        return this.f13487e;
+        return this.f14273e;
     }
 
     public final List<aj> f() {
-        return this.f13489g;
+        return this.f14275g;
     }
 
     public final String g() {
-        return this.f13486d;
+        return this.f14272d;
     }
 
     public final void b(List<aj> list) {
-        this.f13489g = list;
+        this.f14275g = list;
     }
 
     public final boolean a() {
-        return TextUtils.isEmpty(this.f13486d);
+        return TextUtils.isEmpty(this.f14272d);
     }
 
     public final boolean a(long j6) {
-        return j6 > 0 && System.currentTimeMillis() - j6 < this.f13484b;
+        return j6 > 0 && System.currentTimeMillis() - j6 < this.f14270b;
     }
 
     public final void a(List<aj> list) {
-        this.f13488f = list;
+        this.f14274f = list;
     }
 }

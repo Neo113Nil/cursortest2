@@ -21,10 +21,10 @@ public class ScreenSpecialNoteView extends BaseSpecialNoteView {
         setOrientation(0);
         setPadding(q.a(getContext(), 10.0f), 0, q.a(getContext(), 12.0f), 0);
         setGravity(16);
-        setBackgroundResource(q.a(t.b().g(), "myoffer_bg_shake_border_thumb", k.f19632c));
+        setBackgroundResource(q.a(t.b().g(), "myoffer_bg_shake_border_thumb", k.f20419c));
         LayoutInflater.from(getContext()).inflate(q.a(getContext(), "myoffer_special_note", "layout"), (ViewGroup) this, true);
-        this.f11297l = (TextView) findViewById(q.a(getContext(), "myoffer_special_countdown_text", "id"));
-        this.f11298m = (TextView) findViewById(q.a(getContext(), "myoffer_special_cancel_text", "id"));
+        this.f12083l = (TextView) findViewById(q.a(getContext(), "myoffer_special_countdown_text", "id"));
+        this.f12084m = (TextView) findViewById(q.a(getContext(), "myoffer_special_cancel_text", "id"));
     }
 
     @Override // com.anythink.basead.ui.specialnote.BaseSpecialNoteView

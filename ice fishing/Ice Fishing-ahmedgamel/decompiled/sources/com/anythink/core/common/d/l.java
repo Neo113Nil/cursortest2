@@ -21,158 +21,158 @@ import org.json.JSONObject;
 public final class l extends ATAdInfo {
 
     /* renamed from: C, reason: collision with root package name */
-    private Map<String, Object> f12669C;
+    private Map<String, Object> f13455C;
 
     /* renamed from: H, reason: collision with root package name */
-    private Map<String, Object> f12674H;
+    private Map<String, Object> f13460H;
 
     /* renamed from: K, reason: collision with root package name */
-    private double f12676K;
+    private double f13462K;
 
     /* renamed from: a, reason: collision with root package name */
-    private ATBaseAdAdapter f12686a;
+    private ATBaseAdAdapter f13472a;
 
     /* renamed from: f, reason: collision with root package name */
-    private double f12691f;
+    private double f13477f;
 
     /* renamed from: g, reason: collision with root package name */
-    private String f12692g;
+    private String f13478g;
 
     /* renamed from: h, reason: collision with root package name */
-    private String f12693h;
+    private String f13479h;
     private int i;
 
     /* renamed from: m, reason: collision with root package name */
-    private Double f12697m;
+    private Double f13483m;
 
     /* renamed from: b, reason: collision with root package name */
-    private int f12687b = -1;
+    private int f13473b = -1;
 
     /* renamed from: c, reason: collision with root package name */
-    private String f12688c = "";
+    private String f13474c = "";
 
     /* renamed from: d, reason: collision with root package name */
-    private int f12689d = -1;
+    private int f13475d = -1;
 
     /* renamed from: e, reason: collision with root package name */
-    private double f12690e = 0.0d;
+    private double f13476e = 0.0d;
 
     /* renamed from: j, reason: collision with root package name */
-    private int f12694j = 0;
+    private int f13480j = 0;
 
     /* renamed from: k, reason: collision with root package name */
-    private String f12695k = "";
+    private String f13481k = "";
 
     /* renamed from: l, reason: collision with root package name */
-    private Double f12696l = Double.valueOf(0.0d);
+    private Double f13482l = Double.valueOf(0.0d);
 
     /* renamed from: n, reason: collision with root package name */
-    private String f12698n = "";
+    private String f13484n = "";
 
     /* renamed from: o, reason: collision with root package name */
-    private String f12699o = "";
+    private String f13485o = "";
 
     /* renamed from: p, reason: collision with root package name */
-    private String f12700p = "";
+    private String f13486p = "";
 
     /* renamed from: q, reason: collision with root package name */
-    private String f12701q = "";
+    private String f13487q = "";
 
     /* renamed from: r, reason: collision with root package name */
-    private String f12702r = "unknow";
+    private String f13488r = "unknow";
 
     /* renamed from: s, reason: collision with root package name */
-    private String f12703s = "Network";
+    private String f13489s = "Network";
 
     /* renamed from: t, reason: collision with root package name */
-    private String f12704t = "";
+    private String f13490t = "";
 
     /* renamed from: u, reason: collision with root package name */
-    private int f12705u = 1;
+    private int f13491u = 1;
 
     /* renamed from: v, reason: collision with root package name */
-    private int f12706v = 0;
+    private int f13492v = 0;
 
     /* renamed from: w, reason: collision with root package name */
-    private String f12707w = "";
+    private String f13493w = "";
 
     /* renamed from: x, reason: collision with root package name */
-    private String f12708x = "";
+    private String f13494x = "";
 
     /* renamed from: y, reason: collision with root package name */
-    private int f12709y = 0;
+    private int f13495y = 0;
 
     /* renamed from: z, reason: collision with root package name */
-    private String f12710z = "";
+    private String f13496z = "";
 
     /* renamed from: A, reason: collision with root package name */
-    private String f12667A = "";
+    private String f13453A = "";
 
     /* renamed from: B, reason: collision with root package name */
-    private Map<String, Object> f12668B = null;
+    private Map<String, Object> f13454B = null;
 
     /* renamed from: D, reason: collision with root package name */
-    private String f12670D = "";
+    private String f13456D = "";
 
     /* renamed from: E, reason: collision with root package name */
-    private int f12671E = 0;
+    private int f13457E = 0;
 
     /* renamed from: F, reason: collision with root package name */
-    private String f12672F = "";
+    private String f13458F = "";
 
     /* renamed from: G, reason: collision with root package name */
-    private int f12673G = 0;
+    private int f13459G = 0;
 
     /* renamed from: I, reason: collision with root package name */
-    private int f12675I = 1;
+    private int f13461I = 1;
     private String J = "";
 
     /* renamed from: L, reason: collision with root package name */
-    private IATAdxHandler f12677L = null;
+    private IATAdxHandler f13463L = null;
 
     /* renamed from: M, reason: collision with root package name */
-    private int f12678M = -1;
+    private int f13464M = -1;
 
     /* renamed from: N, reason: collision with root package name */
-    private String f12679N = "";
+    private String f13465N = "";
 
     /* renamed from: P, reason: collision with root package name */
-    private String f12681P = "";
+    private String f13467P = "";
 
     /* renamed from: Q, reason: collision with root package name */
-    private String f12682Q = "";
+    private String f13468Q = "";
 
     /* renamed from: O, reason: collision with root package name */
-    private Map<String, String> f12680O = new HashMap();
+    private Map<String, String> f13466O = new HashMap();
 
     /* renamed from: R, reason: collision with root package name */
-    private String f12683R = "";
+    private String f13469R = "";
 
     /* renamed from: T, reason: collision with root package name */
-    private ATCustomContentResult f12685T = null;
+    private ATCustomContentResult f13471T = null;
 
     /* renamed from: S, reason: collision with root package name */
-    private int f12684S = 0;
+    private int f13470S = 0;
 
     /* renamed from: com.anythink.core.common.d.l$1, reason: invalid class name */
     public static /* synthetic */ class AnonymousClass1 {
 
         /* renamed from: a, reason: collision with root package name */
-        static final /* synthetic */ int[] f12711a;
+        static final /* synthetic */ int[] f13497a;
 
         static {
             int[] iArr = new int[ATAdConst.CURRENCY.values().length];
-            f12711a = iArr;
+            f13497a = iArr;
             try {
                 iArr[ATAdConst.CURRENCY.RMB.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f12711a[ATAdConst.CURRENCY.RMB_CENT.ordinal()] = 2;
+                f13497a[ATAdConst.CURRENCY.RMB_CENT.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f12711a[ATAdConst.CURRENCY.USD.ordinal()] = 3;
+                f13497a[ATAdConst.CURRENCY.USD.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -185,33 +185,33 @@ public final class l extends ATAdInfo {
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0047, code lost:
     
-        if (r1.f13359g == 3) goto L30;
+        if (r1.f14145g == 3) goto L30;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x005d, code lost:
     
         r9.M();
-        r8.f12690e = 0.0d;
-        r8.f12691f = 0.0d;
+        r8.f13476e = 0.0d;
+        r8.f13477f = 0.0d;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x004c, code lost:
     
-        if (r1.f13358f == 3) goto L30;
+        if (r1.f14144f == 3) goto L30;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0051, code lost:
     
-        if (r1.f13357e == 3) goto L30;
+        if (r1.f14143e == 3) goto L30;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x0056, code lost:
     
-        if (r1.f13356d == 3) goto L30;
+        if (r1.f14142d == 3) goto L30;
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x005b, code lost:
     
-        if (r1.f13360h == 3) goto L30;
+        if (r1.f14146h == 3) goto L30;
      */
     /* JADX WARN: Code restructure failed: missing block: B:70:0x0105, code lost:
     
-        if (r10.equals(com.anythink.core.common.h.ad.f13400y) == false) goto L46;
+        if (r10.equals(com.anythink.core.common.h.ad.f14186y) == false) goto L46;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -221,12 +221,12 @@ public final class l extends ATAdInfo {
         ATRewardInfo F8;
         ATRewardInfo aTRewardInfo;
         char c9 = 2;
-        lVar.f12687b = nVar.Y();
-        lVar.f12688c = nVar.M();
-        lVar.f12689d = nVar.P();
-        lVar.f12694j = nVar.J();
-        lVar.f12690e = nVar.p();
-        lVar.f12691f = nVar.q();
+        lVar.f13473b = nVar.Y();
+        lVar.f13474c = nVar.M();
+        lVar.f13475d = nVar.P();
+        lVar.f13480j = nVar.J();
+        lVar.f13476e = nVar.p();
+        lVar.f13477f = nVar.q();
         if (nVar.J() == 1) {
             aa ap = nVar.ap();
             Objects.toString(ap);
@@ -244,42 +244,42 @@ public final class l extends ATAdInfo {
             }
             nVar.M();
         }
-        lVar.f12692g = nVar.r();
-        lVar.f12693h = nVar.s();
+        lVar.f13478g = nVar.r();
+        lVar.f13479h = nVar.s();
         lVar.i = nVar.t();
-        lVar.f12676K = nVar.e();
-        lVar.f12698n = nVar.v();
-        lVar.f12695k = nVar.z();
-        lVar.f12696l = Double.valueOf(lVar.f12690e / 1000.0d);
-        lVar.f12697m = Double.valueOf(lVar.f12691f / 1000.0d);
-        lVar.f12699o = nVar.C();
-        lVar.f12701q = com.anythink.core.common.v.p.f(nVar.aK());
+        lVar.f13462K = nVar.e();
+        lVar.f13484n = nVar.v();
+        lVar.f13481k = nVar.z();
+        lVar.f13482l = Double.valueOf(lVar.f13476e / 1000.0d);
+        lVar.f13483m = Double.valueOf(lVar.f13477f / 1000.0d);
+        lVar.f13485o = nVar.C();
+        lVar.f13487q = com.anythink.core.common.v.p.f(nVar.aK());
         String aI = nVar.aI();
-        String g4 = nVar.g();
-        if (TextUtils.isEmpty(g4) || TextUtils.equals(aI, g4)) {
+        String g9 = nVar.g();
+        if (TextUtils.isEmpty(g9) || TextUtils.equals(aI, g9)) {
             str = "";
         } else {
             str = aI;
-            aI = g4;
+            aI = g9;
         }
-        lVar.f12700p = aI;
+        lVar.f13486p = aI;
         lVar.J = str;
-        lVar.f12702r = nVar.B();
+        lVar.f13488r = nVar.B();
         if (nVar.Y() == 35) {
-            lVar.f12703s = "Cross_Promotion";
+            lVar.f13489s = "Cross_Promotion";
         } else if (nVar.Y() == 66) {
             String au = nVar.au();
             au.getClass();
             switch (au.hashCode()) {
                 case 2545:
-                    if (au.equals(ad.f13394A)) {
+                    if (au.equals(ad.f14180A)) {
                         c9 = 0;
                         break;
                     }
                     c9 = 65535;
                     break;
                 case 2548:
-                    if (au.equals(ad.f13401z)) {
+                    if (au.equals(ad.f14187z)) {
                         c9 = 1;
                         break;
                     }
@@ -293,57 +293,57 @@ public final class l extends ATAdInfo {
             }
             switch (c9) {
                 case 0:
-                    lVar.f12703s = "Adx_pa";
+                    lVar.f13489s = "Adx_pa";
                     break;
                 case 1:
-                    lVar.f12703s = "Adx_pd";
+                    lVar.f13489s = "Adx_pd";
                     break;
                 case 2:
-                    lVar.f12703s = "Adx_pdb";
+                    lVar.f13489s = "Adx_pdb";
                     break;
                 default:
-                    lVar.f12703s = "Adx";
+                    lVar.f13489s = "Adx";
                     break;
             }
         } else {
-            lVar.f12703s = "Network";
+            lVar.f13489s = "Network";
         }
-        lVar.f12704t = nVar.y();
-        lVar.f12705u = nVar.A();
-        lVar.f12706v = nVar.Z();
-        lVar.f12707w = nVar.f14011F;
-        if (TextUtils.equals(j.n.f12506b, lVar.f12701q)) {
+        lVar.f13490t = nVar.y();
+        lVar.f13491u = nVar.A();
+        lVar.f13492v = nVar.Z();
+        lVar.f13493w = nVar.f14797F;
+        if (TextUtils.equals(j.n.f13292b, lVar.f13487q)) {
             Map<String, ATRewardInfo> E8 = nVar.E();
-            if (E8 != null && E8.containsKey(lVar.f12707w) && (aTRewardInfo = E8.get(lVar.f12707w)) != null) {
-                lVar.f12708x = aTRewardInfo.rewardName;
-                lVar.f12709y = aTRewardInfo.rewardNumber;
+            if (E8 != null && E8.containsKey(lVar.f13493w) && (aTRewardInfo = E8.get(lVar.f13493w)) != null) {
+                lVar.f13494x = aTRewardInfo.rewardName;
+                lVar.f13495y = aTRewardInfo.rewardNumber;
             }
-            if ((TextUtils.isEmpty(lVar.f12708x) || lVar.f12709y == 0) && (F8 = nVar.F()) != null) {
-                lVar.f12708x = F8.rewardName;
-                lVar.f12709y = F8.rewardNumber;
+            if ((TextUtils.isEmpty(lVar.f13494x) || lVar.f13495y == 0) && (F8 = nVar.F()) != null) {
+                lVar.f13494x = F8.rewardName;
+                lVar.f13495y = F8.rewardNumber;
             }
         }
-        lVar.f12667A = t.b().n();
-        lVar.f12710z = t.b().o();
-        lVar.f12668B = nVar.G();
-        lVar.f12670D = nVar.o();
-        lVar.f12671E = nVar.ae();
-        lVar.f12672F = nVar.aB();
-        lVar.f12673G = nVar.aG();
+        lVar.f13453A = t.b().n();
+        lVar.f13496z = t.b().o();
+        lVar.f13454B = nVar.G();
+        lVar.f13456D = nVar.o();
+        lVar.f13457E = nVar.ae();
+        lVar.f13458F = nVar.aB();
+        lVar.f13459G = nVar.aG();
         Map<String, Object> j6 = nVar.j();
         if (j6 != null) {
-            lVar.f12674H = new HashMap(j6);
+            lVar.f13460H = new HashMap(j6);
         }
-        lVar.f12675I = nVar.i();
+        lVar.f13461I = nVar.i();
         Map<String, String> al = nVar.al();
         if (al != null) {
-            lVar.f12680O = new HashMap(al);
+            lVar.f13466O = new HashMap(al);
         }
-        lVar.f12681P = nVar.aF();
-        lVar.f12682Q = nVar.ak();
-        lVar.f12683R = nVar.aJ();
-        lVar.f12685T = nVar.aq();
-        lVar.f12684S = com.anythink.core.common.v.p.e(nVar.k());
+        lVar.f13467P = nVar.aF();
+        lVar.f13468Q = nVar.ak();
+        lVar.f13469R = nVar.aJ();
+        lVar.f13471T = nVar.aq();
+        lVar.f13470S = com.anythink.core.common.v.p.e(nVar.k());
         return lVar;
     }
 
@@ -353,36 +353,36 @@ public final class l extends ATAdInfo {
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x0030, code lost:
     
-        if (r0.f13359g == 3) goto L32;
+        if (r0.f14145g == 3) goto L32;
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0046, code lost:
     
         r4.M();
-        r3.f12690e = 0.0d;
-        r3.f12691f = 0.0d;
+        r3.f13476e = 0.0d;
+        r3.f13477f = 0.0d;
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x0035, code lost:
     
-        if (r0.f13358f == 3) goto L32;
+        if (r0.f14144f == 3) goto L32;
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x003a, code lost:
     
-        if (r0.f13357e == 3) goto L32;
+        if (r0.f14143e == 3) goto L32;
      */
     /* JADX WARN: Code restructure failed: missing block: B:25:0x003f, code lost:
     
-        if (r0.f13356d == 3) goto L32;
+        if (r0.f14142d == 3) goto L32;
      */
     /* JADX WARN: Code restructure failed: missing block: B:27:0x0044, code lost:
     
-        if (r0.f13360h == 3) goto L32;
+        if (r0.f14146h == 3) goto L32;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private static void b(l lVar, com.anythink.core.common.h.n nVar, int i) {
-        lVar.f12690e = nVar.p();
-        lVar.f12691f = nVar.q();
+        lVar.f13476e = nVar.p();
+        lVar.f13477f = nVar.q();
         if (nVar.J() != 1) {
             return;
         }
@@ -405,179 +405,179 @@ public final class l extends ATAdInfo {
 
     @Override // com.anythink.core.api.ATAdInfo
     public final int getABTestId() {
-        return this.f12673G;
+        return this.f13459G;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getAdNetworkType() {
-        return this.f12703s;
+        return this.f13489s;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final int getAdSourceAdType() {
-        return this.f12678M;
+        return this.f13464M;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getAdSourceCustomExt() {
-        return this.f12679N;
+        return this.f13465N;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getAdsourceId() {
-        return this.f12688c;
+        return this.f13474c;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final int getAdsourceIndex() {
-        return this.f12689d;
+        return this.f13475d;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final IATAdxHandler getAdxHandler() {
-        return this.f12677L;
+        return this.f13463L;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final double getBidFloor() {
-        return this.f12676K;
+        return this.f13462K;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final int getBidType() {
-        return this.f12684S;
+        return this.f13470S;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getChannel() {
-        return this.f12667A;
+        return this.f13453A;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getCountry() {
-        return this.f12699o;
+        return this.f13485o;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getCurrency() {
-        return this.f12698n;
+        return this.f13484n;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final ATCustomContentResult getCustomContentResult() {
-        return this.f12685T;
+        return this.f13471T;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getCustomRule() {
-        return this.f12668B != null ? new JSONObject(this.f12668B).toString() : "";
+        return this.f13454B != null ? new JSONObject(this.f13454B).toString() : "";
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final int getDismissType() {
-        return this.f12671E;
+        return this.f13457E;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final double getEcpm() {
-        return this.f12690e;
+        return this.f13476e;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final int getEcpmLevel() {
-        return this.f12705u;
+        return this.f13491u;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getEcpmPrecision() {
-        return this.f12702r;
+        return this.f13488r;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     @Deprecated
     public final double getEcpmWithCurrency(ATAdConst.CURRENCY currency) {
-        return com.anythink.core.common.v.t.a(this.f12690e, com.anythink.core.common.v.t.a(this.f12698n), currency);
+        return com.anythink.core.common.v.t.a(this.f13476e, com.anythink.core.common.v.t.a(this.f13484n), currency);
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getEncEcpmInfo() {
-        return this.f12692g;
+        return this.f13478g;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final Map<String, Object> getExtInfoMap() {
-        return this.f12669C;
+        return this.f13455C;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getFormat() {
-        return this.f12701q;
+        return this.f13487q;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final Map<String, Object> getLocalExtra() {
-        return this.f12674H;
+        return this.f13460H;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final int getNetworkFirmId() {
-        return this.f12687b;
+        return this.f13473b;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getNetworkName() {
-        return this.f12681P;
+        return this.f13467P;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getNetworkPlacementId() {
-        return this.f12704t;
+        return this.f13490t;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getPlacementId() {
-        return this.f12700p;
+        return this.f13486p;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final int getPlacementType() {
-        return this.f12675I;
+        return this.f13461I;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final Double getPublisherRevenue() {
-        return this.f12696l;
+        return this.f13482l;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getRequestId() {
-        return this.f12683R;
+        return this.f13469R;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getRewardUserCustomData() {
-        ATBaseAdAdapter aTBaseAdAdapter = this.f12686a;
+        ATBaseAdAdapter aTBaseAdAdapter = this.f13472a;
         return aTBaseAdAdapter != null ? aTBaseAdAdapter.getUserCustomData() : "";
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getRmbEncEcpmInfo() {
-        return this.f12693h;
+        return this.f13479h;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getScenarioId() {
-        return this.f12707w;
+        return this.f13493w;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getScenarioRewardName() {
-        return this.f12708x;
+        return this.f13494x;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final int getScenarioRewardNumber() {
-        return this.f12709y;
+        return this.f13495y;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
@@ -587,7 +587,7 @@ public final class l extends ATAdInfo {
 
     @Override // com.anythink.core.api.ATAdInfo
     public final int getSegmentId() {
-        return this.f12706v;
+        return this.f13492v;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
@@ -597,47 +597,47 @@ public final class l extends ATAdInfo {
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getShowCustomExt() {
-        return this.f12682Q;
+        return this.f13468Q;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getShowId() {
-        return this.f12695k;
+        return this.f13481k;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getSubChannel() {
-        return this.f12710z;
+        return this.f13496z;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getTopOnAdFormat() {
-        return this.f12701q;
+        return this.f13487q;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getTopOnPlacementId() {
-        return this.f12700p;
+        return this.f13486p;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getTpBidId() {
-        return this.f12670D;
+        return this.f13456D;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final Map<String, String> getUrlTagParams() {
-        return this.f12680O;
+        return this.f13466O;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final String getWaterfallId() {
-        return this.f12672F;
+        return this.f13458F;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final int isHeaderBiddingAdsource() {
-        return this.f12694j;
+        return this.f13480j;
     }
 
     public final String toString() {
@@ -646,19 +646,19 @@ public final class l extends ATAdInfo {
 
     @Override // com.anythink.core.api.ATAdInfo
     public final double getEcpm(ATAdConst.CURRENCY currency) {
-        int i = AnonymousClass1.f12711a[currency.ordinal()];
-        return i != 1 ? i != 2 ? i != 3 ? getEcpmWithCurrency(currency) : this.f12690e : this.f12691f * 100.0d : this.f12691f;
+        int i = AnonymousClass1.f13497a[currency.ordinal()];
+        return i != 1 ? i != 2 ? i != 3 ? getEcpmWithCurrency(currency) : this.f13476e : this.f13477f * 100.0d : this.f13477f;
     }
 
     @Override // com.anythink.core.api.ATAdInfo
     public final Double getPublisherRevenue(ATAdConst.CURRENCY currency) {
-        int i = AnonymousClass1.f12711a[currency.ordinal()];
-        return i != 1 ? i != 2 ? i != 3 ? getPublisherRevenue() : this.f12696l : Double.valueOf(this.f12697m.doubleValue() * 100.0d) : this.f12697m;
+        int i = AnonymousClass1.f13497a[currency.ordinal()];
+        return i != 1 ? i != 2 ? i != 3 ? getPublisherRevenue() : this.f13482l : Double.valueOf(this.f13483m.doubleValue() * 100.0d) : this.f13483m;
     }
 
-    public final void b(double d2) {
-        this.f12691f = d2;
-        this.f12697m = Double.valueOf(d2 / 1000.0d);
+    public final void b(double d9) {
+        this.f13477f = d9;
+        this.f13483m = Double.valueOf(d9 / 1000.0d);
     }
 
     public static l a(BaseAd baseAd, ATBaseAdAdapter aTBaseAdAdapter) {
@@ -668,7 +668,7 @@ public final class l extends ATAdInfo {
     public static l a(BaseAd baseAd, ATBaseAdAdapter aTBaseAdAdapter, int i) {
         if (baseAd != null) {
             l a9 = a(a(baseAd.getDetail(), i), aTBaseAdAdapter);
-            a9.f12669C = baseAd.getNetworkInfoMap();
+            a9.f13455C = baseAd.getNetworkInfoMap();
             return a9;
         }
         return new l();
@@ -677,13 +677,13 @@ public final class l extends ATAdInfo {
     private static l a(l lVar, f fVar) {
         if (fVar != null && (fVar instanceof ATBaseAdAdapter)) {
             ATBaseAdAdapter aTBaseAdAdapter = (ATBaseAdAdapter) fVar;
-            lVar.f12686a = aTBaseAdAdapter;
-            lVar.f12669C = aTBaseAdAdapter.getInternalNetworkInfoMap();
-            lVar.f12678M = lVar.f12686a.getTrackingInfo().ad();
-            lVar.f12679N = aTBaseAdAdapter.getAdCustomExt();
+            lVar.f13472a = aTBaseAdAdapter;
+            lVar.f13455C = aTBaseAdAdapter.getInternalNetworkInfoMap();
+            lVar.f13464M = lVar.f13472a.getTrackingInfo().ad();
+            lVar.f13465N = aTBaseAdAdapter.getAdCustomExt();
             try {
-                if (lVar.f12686a.getTrackingInfo().ah()) {
-                    lVar.f12677L = lVar.f12686a.getUnitGroupInfo().R().i();
+                if (lVar.f13472a.getTrackingInfo().ah()) {
+                    lVar.f13463L = lVar.f13472a.getUnitGroupInfo().R().i();
                     return lVar;
                 }
             } catch (Throwable th) {
@@ -720,83 +720,83 @@ public final class l extends ATAdInfo {
     public final JSONObject a() {
         JSONObject jSONObject = new JSONObject();
         try {
-            jSONObject.put("id", this.f12695k);
-            jSONObject.put("publisher_revenue", this.f12696l);
-            jSONObject.put("publisher_revenue_cny", this.f12697m);
-            jSONObject.put("currency", this.f12698n);
-            jSONObject.put("country", this.f12699o);
-            jSONObject.put("adunit_id", this.f12700p);
-            jSONObject.put("adunit_format", this.f12701q);
-            jSONObject.put(com.anythink.core.common.k.f14296T, this.f12702r);
-            jSONObject.put("network_type", this.f12703s);
-            jSONObject.put("network_placement_id", this.f12704t);
-            jSONObject.put(com.anythink.core.common.k.f14295S, this.f12705u);
-            jSONObject.put("segment_id", this.f12706v);
-            if (!TextUtils.isEmpty(this.f12707w)) {
-                jSONObject.put("scenario_id", this.f12707w);
+            jSONObject.put("id", this.f13481k);
+            jSONObject.put("publisher_revenue", this.f13482l);
+            jSONObject.put("publisher_revenue_cny", this.f13483m);
+            jSONObject.put("currency", this.f13484n);
+            jSONObject.put("country", this.f13485o);
+            jSONObject.put("adunit_id", this.f13486p);
+            jSONObject.put("adunit_format", this.f13487q);
+            jSONObject.put(com.anythink.core.common.k.f15082T, this.f13488r);
+            jSONObject.put("network_type", this.f13489s);
+            jSONObject.put("network_placement_id", this.f13490t);
+            jSONObject.put(com.anythink.core.common.k.f15081S, this.f13491u);
+            jSONObject.put("segment_id", this.f13492v);
+            if (!TextUtils.isEmpty(this.f13493w)) {
+                jSONObject.put("scenario_id", this.f13493w);
             }
-            if (!TextUtils.isEmpty(this.f12708x) && this.f12709y != 0) {
-                jSONObject.put("scenario_reward_name", this.f12708x);
-                jSONObject.put("scenario_reward_number", this.f12709y);
+            if (!TextUtils.isEmpty(this.f13494x) && this.f13495y != 0) {
+                jSONObject.put("scenario_reward_name", this.f13494x);
+                jSONObject.put("scenario_reward_number", this.f13495y);
             }
-            if (!TextUtils.isEmpty(this.f12667A)) {
-                jSONObject.put("channel", this.f12667A);
+            if (!TextUtils.isEmpty(this.f13453A)) {
+                jSONObject.put("channel", this.f13453A);
             }
-            if (!TextUtils.isEmpty(this.f12710z)) {
-                jSONObject.put("sub_channel", this.f12710z);
+            if (!TextUtils.isEmpty(this.f13496z)) {
+                jSONObject.put("sub_channel", this.f13496z);
             }
-            Map<String, Object> map = this.f12668B;
+            Map<String, Object> map = this.f13454B;
             if (map != null && map.size() > 0) {
-                jSONObject.put("custom_rule", new JSONObject(this.f12668B));
+                jSONObject.put("custom_rule", new JSONObject(this.f13454B));
             }
-            jSONObject.put("network_firm_id", this.f12687b);
-            jSONObject.put("adsource_id", this.f12688c);
-            jSONObject.put("adsource_index", this.f12689d);
-            jSONObject.put("adsource_price", this.f12690e);
-            jSONObject.put("adsource_price_cny", this.f12691f);
-            jSONObject.put("adsource_isheaderbidding", this.f12694j);
-            Map<String, Object> map2 = this.f12669C;
+            jSONObject.put("network_firm_id", this.f13473b);
+            jSONObject.put("adsource_id", this.f13474c);
+            jSONObject.put("adsource_index", this.f13475d);
+            jSONObject.put("adsource_price", this.f13476e);
+            jSONObject.put("adsource_price_cny", this.f13477f);
+            jSONObject.put("adsource_isheaderbidding", this.f13480j);
+            Map<String, Object> map2 = this.f13455C;
             if (map2 != null && map2.size() > 0) {
-                jSONObject.put("ext_info", new JSONObject(this.f12669C));
+                jSONObject.put("ext_info", new JSONObject(this.f13455C));
             }
-            ATBaseAdAdapter aTBaseAdAdapter = this.f12686a;
+            ATBaseAdAdapter aTBaseAdAdapter = this.f13472a;
             if (aTBaseAdAdapter != null) {
                 jSONObject.put("reward_custom_data", aTBaseAdAdapter.getUserCustomData());
             }
-            if (!TextUtils.isEmpty(this.f12670D)) {
-                jSONObject.put("tp_bid_id", this.f12670D);
+            if (!TextUtils.isEmpty(this.f13456D)) {
+                jSONObject.put("tp_bid_id", this.f13456D);
             }
-            int i = this.f12671E;
+            int i = this.f13457E;
             if (i != 0) {
                 jSONObject.put("dismiss_type", i);
             }
-            if (!TextUtils.isEmpty(this.f12672F)) {
-                jSONObject.put(l.a.f17401T, this.f12672F);
+            if (!TextUtils.isEmpty(this.f13458F)) {
+                jSONObject.put(l.a.f18188T, this.f13458F);
             }
-            jSONObject.put(com.anythink.core.common.m.e.J, this.f12673G);
-            Map<String, Object> map3 = this.f12674H;
+            jSONObject.put(com.anythink.core.common.m.e.J, this.f13459G);
+            Map<String, Object> map3 = this.f13460H;
             if (map3 != null && map3.size() > 0) {
-                jSONObject.put("user_load_extra_data", new JSONObject(this.f12674H));
+                jSONObject.put("user_load_extra_data", new JSONObject(this.f13460H));
             }
-            jSONObject.put("placement_type", this.f12675I);
+            jSONObject.put("placement_type", this.f13461I);
             if (!TextUtils.isEmpty(this.J)) {
                 jSONObject.put("shared_placement_id", this.J);
             }
-            jSONObject.put("bid_floor", this.f12676K);
-            jSONObject.put("ad_source_type", this.f12678M);
-            jSONObject.put("ad_source_custom_ext", this.f12679N);
-            jSONObject.put("url_tag_params", this.f12680O);
-            jSONObject.put(ATAdConst.NETWORK_CUSTOM_KEY.NETWORK_NAME, this.f12681P);
-            jSONObject.put("show_custom_ext", this.f12682Q);
-            if (!TextUtils.isEmpty(this.f12692g)) {
-                jSONObject.put(com.anythink.core.common.k.aS, this.f12692g);
+            jSONObject.put("bid_floor", this.f13462K);
+            jSONObject.put("ad_source_type", this.f13464M);
+            jSONObject.put("ad_source_custom_ext", this.f13465N);
+            jSONObject.put("url_tag_params", this.f13466O);
+            jSONObject.put(ATAdConst.NETWORK_CUSTOM_KEY.NETWORK_NAME, this.f13467P);
+            jSONObject.put("show_custom_ext", this.f13468Q);
+            if (!TextUtils.isEmpty(this.f13478g)) {
+                jSONObject.put(com.anythink.core.common.k.aS, this.f13478g);
             }
-            if (!TextUtils.isEmpty(this.f12693h)) {
-                jSONObject.put(com.anythink.core.common.k.aT, this.f12693h);
+            if (!TextUtils.isEmpty(this.f13479h)) {
+                jSONObject.put(com.anythink.core.common.k.aT, this.f13479h);
             }
             jSONObject.put(l.a.aD, this.i);
-            jSONObject.put("req_id", this.f12683R);
-            jSONObject.put(com.anythink.core.common.k.J, this.f12684S);
+            jSONObject.put("req_id", this.f13469R);
+            jSONObject.put(com.anythink.core.common.k.J, this.f13470S);
             return jSONObject;
         } catch (Throwable th) {
             th.printStackTrace();
@@ -804,8 +804,8 @@ public final class l extends ATAdInfo {
         }
     }
 
-    public final void a(double d2) {
-        this.f12690e = d2;
-        this.f12696l = Double.valueOf(d2 / 1000.0d);
+    public final void a(double d9) {
+        this.f13476e = d9;
+        this.f13482l = Double.valueOf(d9 / 1000.0d);
     }
 }

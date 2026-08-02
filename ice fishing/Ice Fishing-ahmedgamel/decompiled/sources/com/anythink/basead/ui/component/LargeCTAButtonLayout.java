@@ -12,7 +12,7 @@ public class LargeCTAButtonLayout extends CTAButtonLayout {
     }
 
     @Override // com.anythink.basead.ui.component.CTAButtonLayout
-    public final int a(w wVar, x xVar, boolean z3) {
+    public final int a(w wVar, x xVar, boolean z6) {
         return 2;
     }
 

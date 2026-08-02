@@ -7,23 +7,23 @@ import android.os.Build;
 import android.os.ParcelFileDescriptor;
 import android.os.ext.SdkExtensions;
 import java.io.FileNotFoundException;
-import t1.AbstractC5032a;
+import v1.AbstractC5096a;
 
 /* loaded from: classes.dex */
 public final class a extends l {
 
     /* renamed from: x, reason: collision with root package name */
-    public final /* synthetic */ int f23417x;
+    public final /* synthetic */ int f24204x;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public /* synthetic */ a(ContentResolver contentResolver, Uri uri, boolean z3, int i) {
-        super(contentResolver, uri, z3);
-        this.f23417x = i;
+    public /* synthetic */ a(ContentResolver contentResolver, Uri uri, boolean z6, int i) {
+        super(contentResolver, uri, z6);
+        this.f24204x = i;
     }
 
     @Override // com.bumptech.glide.load.data.d
     public final Class a() {
-        switch (this.f23417x) {
+        switch (this.f24204x) {
             case 0:
                 return AssetFileDescriptor.class;
             default:
@@ -33,7 +33,7 @@ public final class a extends l {
 
     @Override // com.bumptech.glide.load.data.l
     public final void c(Object obj) {
-        switch (this.f23417x) {
+        switch (this.f24204x) {
             case 0:
                 ((AssetFileDescriptor) obj).close();
                 break;
@@ -56,14 +56,14 @@ public final class a extends l {
         int extensionVersion;
         AssetFileDescriptor openAssetFileDescriptor2;
         int extensionVersion2;
-        switch (this.f23417x) {
+        switch (this.f24204x) {
             case 0:
-                boolean z3 = this.f23439n;
-                ContentResolver contentResolver2 = this.f23441v;
-                if (z3 && AbstractC5032a.a(uri) && Build.VERSION.SDK_INT >= 30) {
+                boolean z6 = this.f24226n;
+                ContentResolver contentResolver2 = this.f24228v;
+                if (z6 && AbstractC5096a.a(uri) && Build.VERSION.SDK_INT >= 30) {
                     extensionVersion = SdkExtensions.getExtensionVersion(30);
                     if (extensionVersion >= 17) {
-                        openAssetFileDescriptor = AbstractC5032a.b(contentResolver2, uri);
+                        openAssetFileDescriptor = AbstractC5096a.b(contentResolver2, uri);
                         if (openAssetFileDescriptor == null) {
                             return openAssetFileDescriptor;
                         }
@@ -75,12 +75,12 @@ public final class a extends l {
                 }
                 break;
             default:
-                boolean z6 = this.f23439n;
-                ContentResolver contentResolver3 = this.f23441v;
-                if (z6 && AbstractC5032a.a(uri) && Build.VERSION.SDK_INT >= 30) {
+                boolean z9 = this.f24226n;
+                ContentResolver contentResolver3 = this.f24228v;
+                if (z9 && AbstractC5096a.a(uri) && Build.VERSION.SDK_INT >= 30) {
                     extensionVersion2 = SdkExtensions.getExtensionVersion(30);
                     if (extensionVersion2 >= 17) {
-                        openAssetFileDescriptor2 = AbstractC5032a.b(contentResolver3, uri);
+                        openAssetFileDescriptor2 = AbstractC5096a.b(contentResolver3, uri);
                         if (openAssetFileDescriptor2 == null) {
                             return openAssetFileDescriptor2.getParcelFileDescriptor();
                         }

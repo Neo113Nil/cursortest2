@@ -1,29 +1,31 @@
 package N6;
 
+import com.google.android.gms.internal.ads.Wv;
+
 /* loaded from: classes2.dex */
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f1953a;
+    public final int f2041a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f1954b;
+    public final int f2042b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f1955c;
+    public final int f2043c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f1956d;
+    public final String f2044d;
 
-    public b(int i, String str, int i6, int i9) {
-        this.f1953a = i;
-        this.f1954b = i6;
-        this.f1955c = i9;
-        this.f1956d = str;
+    public b(int i, String str, int i4, int i6) {
+        this.f2041a = i;
+        this.f2042b = i4;
+        this.f2043c = i6;
+        this.f2044d = str;
     }
 
-    public static b a(int i, int i6, String str) {
-        return new b(i, str, i6, d.b(i << 3));
+    public static b a(int i, int i4, String str) {
+        return new b(i, str, i4, d.b(i << 3));
     }
 
     public final boolean equals(Object obj) {
@@ -34,21 +36,21 @@ public final class b {
             return false;
         }
         b bVar = (b) obj;
-        return this.f1953a == bVar.f1953a && this.f1954b == bVar.f1954b && this.f1955c == bVar.f1955c && this.f1956d.equals(bVar.f1956d);
+        return this.f2041a == bVar.f2041a && this.f2042b == bVar.f2042b && this.f2043c == bVar.f2043c && this.f2044d.equals(bVar.f2044d);
     }
 
     public final int hashCode() {
-        return this.f1956d.hashCode() ^ ((((((this.f1953a ^ 1000003) * 1000003) ^ this.f1954b) * 1000003) ^ this.f1955c) * 1000003);
+        return this.f2044d.hashCode() ^ ((((((this.f2041a ^ 1000003) * 1000003) ^ this.f2042b) * 1000003) ^ this.f2043c) * 1000003);
     }
 
     public final String toString() {
         StringBuilder sb = new StringBuilder("ProtoFieldInfo{fieldNumber=");
-        sb.append(this.f1953a);
+        sb.append(this.f2041a);
         sb.append(", tag=");
-        sb.append(this.f1954b);
+        sb.append(this.f2042b);
         sb.append(", tagSize=");
-        sb.append(this.f1955c);
+        sb.append(this.f2043c);
         sb.append(", jsonName=");
-        return u1.h.g(sb, this.f1956d, "}");
+        return Wv.i(sb, this.f2044d, "}");
     }
 }

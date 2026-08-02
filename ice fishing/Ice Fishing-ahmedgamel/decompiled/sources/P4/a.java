@@ -7,9 +7,9 @@ public final class a {
     private final d content;
     private final boolean shouldRetry;
 
-    public a(d dVar, boolean z3) {
+    public a(d dVar, boolean z6) {
         this.content = dVar;
-        this.shouldRetry = z3;
+        this.shouldRetry = z6;
     }
 
     public final d getContent() {

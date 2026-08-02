@@ -18,16 +18,16 @@ jadx.core.utils.exceptions.JadxRuntimeException: Init of enum field 'A02' uses e
  */
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* loaded from: assets/audience_network/classes2.dex */
-public abstract class BJ implements InterfaceC2051kO<Map.Entry<?, ?>, Object> {
+public abstract class BJ implements InterfaceC2071kO<Map.Entry<?, ?>, Object> {
     public static byte[] A00;
     public static final /* synthetic */ BJ[] A01;
     public static final BJ A02;
     public static final BJ A03;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 64);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 64);
         }
         return new String(copyOfRange);
     }
@@ -46,7 +46,7 @@ public abstract class BJ implements InterfaceC2051kO<Map.Entry<?, ?>, Object> {
             }
 
             /* JADX INFO: Access modifiers changed from: private */
-            @Override // com.instagram.common.viewpoint.core.InterfaceC2051kO
+            @Override // com.instagram.common.viewpoint.core.InterfaceC2071kO
             @CheckForNull
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final Object A4B(Map.Entry<?, ?> entry) {
@@ -54,14 +54,14 @@ public abstract class BJ implements InterfaceC2051kO<Map.Entry<?, ?>, Object> {
             }
         };
         final String A013 = A01(3, 5, 110);
-        final int i6 = 1;
-        A03 = new BJ(A013, i6) { // from class: com.facebook.ads.redexgen.X.2G
+        final int i4 = 1;
+        A03 = new BJ(A013, i4) { // from class: com.facebook.ads.redexgen.X.2G
             {
                 BL bl = null;
             }
 
             /* JADX INFO: Access modifiers changed from: private */
-            @Override // com.instagram.common.viewpoint.core.InterfaceC2051kO
+            @Override // com.instagram.common.viewpoint.core.InterfaceC2071kO
             @CheckForNull
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final Object A4B(Map.Entry<?, ?> entry) {

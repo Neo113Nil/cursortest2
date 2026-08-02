@@ -4,17 +4,17 @@ package com.anythink.expressad.mbbanner.a.b;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f19847a = 0;
+    public static final int f20634a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f19848b = 1;
+    public static final int f20635b = 1;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f19849c = 2;
+    public static final int f20636c = 2;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f19850d = 3;
+    public static final int f20637d = 3;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f19851e = 4;
+    public static final int f20638e = 4;
 }

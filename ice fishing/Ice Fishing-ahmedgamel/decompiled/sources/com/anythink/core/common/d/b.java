@@ -16,22 +16,22 @@ import java.util.concurrent.CopyOnWriteArraySet;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f12300a = "AdLifecycleManager";
+    private static final String f13086a = "AdLifecycleManager";
 
     /* renamed from: c, reason: collision with root package name */
-    private static volatile b f12301c;
+    private static volatile b f13087c;
 
     /* renamed from: d, reason: collision with root package name */
-    private volatile boolean f12303d;
+    private volatile boolean f13089d;
 
     /* renamed from: e, reason: collision with root package name */
-    private String f12304e;
+    private String f13090e;
 
     /* renamed from: f, reason: collision with root package name */
-    private final List<Application.ActivityLifecycleCallbacks> f12305f = new ArrayList();
+    private final List<Application.ActivityLifecycleCallbacks> f13091f = new ArrayList();
 
     /* renamed from: b, reason: collision with root package name */
-    private final Set<WeakReference<a>> f12302b = new HashSet();
+    private final Set<WeakReference<a>> f13088b = new HashSet();
 
     /* renamed from: com.anythink.core.common.d.b$1, reason: invalid class name */
     public class AnonymousClass1 implements Application.ActivityLifecycleCallbacks {
@@ -40,46 +40,46 @@ public class b {
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public final void onActivityCreated(Activity activity, Bundle bundle) {
-            Log.e(b.f12300a, "onActivityCreated() called with: activity = [" + activity + "], savedInstanceState = [" + bundle + "]");
-            b.this.f12304e = activity.getClass().getName();
+            Log.e(b.f13086a, "onActivityCreated() called with: activity = [" + activity + "], savedInstanceState = [" + bundle + "]");
+            b.this.f13090e = activity.getClass().getName();
             b.a(b.this, activity, bundle);
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public final void onActivityDestroyed(Activity activity) {
-            Log.e(b.f12300a, "onActivityDestroyed() called with: activity = [" + activity + "]");
+            Log.e(b.f13086a, "onActivityDestroyed() called with: activity = [" + activity + "]");
             b.e(b.this, activity);
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public final void onActivityPaused(Activity activity) {
-            Log.e(b.f12300a, "onActivityPaused() called with: activity = [" + activity + "]");
+            Log.e(b.f13086a, "onActivityPaused() called with: activity = [" + activity + "]");
             b.c(b.this, activity);
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public final void onActivityResumed(Activity activity) {
-            Log.e(b.f12300a, "onActivityResumed() called with: activity = [" + activity + "]");
-            b.this.f12304e = activity.getClass().getName();
+            Log.e(b.f13086a, "onActivityResumed() called with: activity = [" + activity + "]");
+            b.this.f13090e = activity.getClass().getName();
             b.b(b.this, activity);
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public final void onActivitySaveInstanceState(Activity activity, Bundle bundle) {
-            Log.e(b.f12300a, "onActivitySaveInstanceState() called with: activity = [" + activity + "], outState = [" + bundle + "]");
+            Log.e(b.f13086a, "onActivitySaveInstanceState() called with: activity = [" + activity + "], outState = [" + bundle + "]");
             b.this.a(activity, bundle);
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public final void onActivityStarted(Activity activity) {
-            Log.e(b.f12300a, "onActivityStarted() called with: activity = [" + activity + "]");
+            Log.e(b.f13086a, "onActivityStarted() called with: activity = [" + activity + "]");
             t.b().a(activity);
             b.a(b.this, activity);
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public final void onActivityStopped(Activity activity) {
-            Log.e(b.f12300a, "onActivityStopped() called with: activity = [" + activity + "]");
+            Log.e(b.f13086a, "onActivityStopped() called with: activity = [" + activity + "]");
             b.d(b.this, activity);
         }
     }
@@ -99,23 +99,23 @@ public class b {
     }
 
     public static b b() {
-        if (f12301c == null) {
+        if (f13087c == null) {
             synchronized (b.class) {
                 try {
-                    if (f12301c == null) {
-                        f12301c = new b();
+                    if (f13087c == null) {
+                        f13087c = new b();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f12301c;
+        return f13087c;
     }
 
     private boolean c(a aVar) {
         try {
-            Iterator it = new CopyOnWriteArraySet(this.f12302b).iterator();
+            Iterator it = new CopyOnWriteArraySet(this.f13088b).iterator();
             while (it.hasNext()) {
                 if (((WeakReference) it.next()).get() == aVar) {
                     return true;
@@ -129,7 +129,7 @@ public class b {
     }
 
     private WeakReference<a> d(a aVar) {
-        Iterator it = new CopyOnWriteArraySet(this.f12302b).iterator();
+        Iterator it = new CopyOnWriteArraySet(this.f13088b).iterator();
         while (it.hasNext()) {
             WeakReference<a> weakReference = (WeakReference) it.next();
             if (weakReference.get() == aVar) {
@@ -141,10 +141,10 @@ public class b {
 
     private void e(Activity activity) {
         try {
-            synchronized (this.f12305f) {
+            synchronized (this.f13091f) {
                 try {
-                    if (!this.f12305f.isEmpty()) {
-                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : this.f12305f) {
+                    if (!this.f13091f.isEmpty()) {
+                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : this.f13091f) {
                             if (activityLifecycleCallbacks != null) {
                                 activityLifecycleCallbacks.onActivityDestroyed(activity);
                             }
@@ -153,7 +153,7 @@ public class b {
                 } finally {
                 }
             }
-            Iterator it = new CopyOnWriteArraySet(this.f12302b).iterator();
+            Iterator it = new CopyOnWriteArraySet(this.f13088b).iterator();
             while (it.hasNext()) {
                 a aVar = (a) ((WeakReference) it.next()).get();
                 if (aVar != null) {
@@ -166,20 +166,20 @@ public class b {
     }
 
     public final String a() {
-        return this.f12304e;
+        return this.f13090e;
     }
 
     public final void a(Application application) {
         try {
-            if (this.f12303d) {
+            if (this.f13089d) {
                 return;
             }
             if (application == null) {
-                Log.e(f12300a, "activityCallBack error, application is null");
+                Log.e(f13086a, "activityCallBack error, application is null");
             } else {
                 application.registerActivityLifecycleCallbacks(new AnonymousClass1());
             }
-            this.f12303d = true;
+            this.f13089d = true;
         } catch (Throwable th) {
             th.printStackTrace();
         }
@@ -187,10 +187,10 @@ public class b {
 
     private void d(Activity activity) {
         try {
-            synchronized (this.f12305f) {
+            synchronized (this.f13091f) {
                 try {
-                    if (!this.f12305f.isEmpty()) {
-                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : this.f12305f) {
+                    if (!this.f13091f.isEmpty()) {
+                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : this.f13091f) {
                             if (activityLifecycleCallbacks != null) {
                                 activityLifecycleCallbacks.onActivityStopped(activity);
                             }
@@ -199,7 +199,7 @@ public class b {
                 } finally {
                 }
             }
-            Iterator it = new CopyOnWriteArraySet(this.f12302b).iterator();
+            Iterator it = new CopyOnWriteArraySet(this.f13088b).iterator();
             while (it.hasNext()) {
                 a aVar = (a) ((WeakReference) it.next()).get();
                 if (aVar != null) {
@@ -213,10 +213,10 @@ public class b {
 
     private void c(Activity activity) {
         try {
-            synchronized (this.f12305f) {
+            synchronized (this.f13091f) {
                 try {
-                    if (!this.f12305f.isEmpty()) {
-                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : this.f12305f) {
+                    if (!this.f13091f.isEmpty()) {
+                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : this.f13091f) {
                             if (activityLifecycleCallbacks != null) {
                                 activityLifecycleCallbacks.onActivityResumed(activity);
                             }
@@ -225,7 +225,7 @@ public class b {
                 } finally {
                 }
             }
-            Iterator it = new CopyOnWriteArraySet(this.f12302b).iterator();
+            Iterator it = new CopyOnWriteArraySet(this.f13088b).iterator();
             while (it.hasNext()) {
                 a aVar = (a) ((WeakReference) it.next()).get();
                 if (aVar != null) {
@@ -239,7 +239,7 @@ public class b {
 
     private void b(Application application) {
         if (application == null) {
-            Log.e(f12300a, "activityCallBack error, application is null");
+            Log.e(f13086a, "activityCallBack error, application is null");
         } else {
             application.registerActivityLifecycleCallbacks(new AnonymousClass1());
         }
@@ -247,10 +247,10 @@ public class b {
 
     public final void a(a aVar) {
         try {
-            synchronized (this.f12302b) {
+            synchronized (this.f13088b) {
                 try {
                     if (!c(aVar)) {
-                        this.f12302b.add(new WeakReference<>(aVar));
+                        this.f13088b.add(new WeakReference<>(aVar));
                     }
                 } finally {
                 }
@@ -262,9 +262,9 @@ public class b {
 
     public final void b(a aVar) {
         try {
-            synchronized (this.f12302b) {
+            synchronized (this.f13088b) {
                 try {
-                    Iterator<WeakReference<a>> it = this.f12302b.iterator();
+                    Iterator<WeakReference<a>> it = this.f13088b.iterator();
                     while (it.hasNext()) {
                         if (it.next().get() == aVar) {
                             it.remove();
@@ -281,10 +281,10 @@ public class b {
 
     public static /* synthetic */ void e(b bVar, Activity activity) {
         try {
-            synchronized (bVar.f12305f) {
+            synchronized (bVar.f13091f) {
                 try {
-                    if (!bVar.f12305f.isEmpty()) {
-                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : bVar.f12305f) {
+                    if (!bVar.f13091f.isEmpty()) {
+                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : bVar.f13091f) {
                             if (activityLifecycleCallbacks != null) {
                                 activityLifecycleCallbacks.onActivityDestroyed(activity);
                             }
@@ -293,7 +293,7 @@ public class b {
                 } finally {
                 }
             }
-            Iterator it = new CopyOnWriteArraySet(bVar.f12302b).iterator();
+            Iterator it = new CopyOnWriteArraySet(bVar.f13088b).iterator();
             while (it.hasNext()) {
                 a aVar = (a) ((WeakReference) it.next()).get();
                 if (aVar != null) {
@@ -307,10 +307,10 @@ public class b {
 
     private void a(Activity activity) {
         try {
-            synchronized (this.f12305f) {
+            synchronized (this.f13091f) {
                 try {
-                    if (!this.f12305f.isEmpty()) {
-                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : this.f12305f) {
+                    if (!this.f13091f.isEmpty()) {
+                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : this.f13091f) {
                             if (activityLifecycleCallbacks != null) {
                                 activityLifecycleCallbacks.onActivityStarted(activity);
                             }
@@ -319,7 +319,7 @@ public class b {
                 } finally {
                 }
             }
-            Iterator it = new CopyOnWriteArraySet(this.f12302b).iterator();
+            Iterator it = new CopyOnWriteArraySet(this.f13088b).iterator();
             while (it.hasNext()) {
                 a aVar = (a) ((WeakReference) it.next()).get();
                 if (aVar != null) {
@@ -333,10 +333,10 @@ public class b {
 
     public static /* synthetic */ void d(b bVar, Activity activity) {
         try {
-            synchronized (bVar.f12305f) {
+            synchronized (bVar.f13091f) {
                 try {
-                    if (!bVar.f12305f.isEmpty()) {
-                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : bVar.f12305f) {
+                    if (!bVar.f13091f.isEmpty()) {
+                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : bVar.f13091f) {
                             if (activityLifecycleCallbacks != null) {
                                 activityLifecycleCallbacks.onActivityStopped(activity);
                             }
@@ -345,7 +345,7 @@ public class b {
                 } finally {
                 }
             }
-            Iterator it = new CopyOnWriteArraySet(bVar.f12302b).iterator();
+            Iterator it = new CopyOnWriteArraySet(bVar.f13088b).iterator();
             while (it.hasNext()) {
                 a aVar = (a) ((WeakReference) it.next()).get();
                 if (aVar != null) {
@@ -359,10 +359,10 @@ public class b {
 
     public static /* synthetic */ void c(b bVar, Activity activity) {
         try {
-            synchronized (bVar.f12305f) {
+            synchronized (bVar.f13091f) {
                 try {
-                    if (!bVar.f12305f.isEmpty()) {
-                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : bVar.f12305f) {
+                    if (!bVar.f13091f.isEmpty()) {
+                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : bVar.f13091f) {
                             if (activityLifecycleCallbacks != null) {
                                 activityLifecycleCallbacks.onActivityPaused(activity);
                             }
@@ -371,7 +371,7 @@ public class b {
                 } finally {
                 }
             }
-            Iterator it = new CopyOnWriteArraySet(bVar.f12302b).iterator();
+            Iterator it = new CopyOnWriteArraySet(bVar.f13088b).iterator();
             while (it.hasNext()) {
                 a aVar = (a) ((WeakReference) it.next()).get();
                 if (aVar != null) {
@@ -385,10 +385,10 @@ public class b {
 
     private void b(Activity activity, Bundle bundle) {
         try {
-            synchronized (this.f12305f) {
+            synchronized (this.f13091f) {
                 try {
-                    if (!this.f12305f.isEmpty()) {
-                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : this.f12305f) {
+                    if (!this.f13091f.isEmpty()) {
+                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : this.f13091f) {
                             if (activityLifecycleCallbacks != null) {
                                 activityLifecycleCallbacks.onActivityCreated(activity, bundle);
                             }
@@ -397,7 +397,7 @@ public class b {
                 } finally {
                 }
             }
-            Iterator it = new CopyOnWriteArraySet(this.f12302b).iterator();
+            Iterator it = new CopyOnWriteArraySet(this.f13088b).iterator();
             while (it.hasNext()) {
                 a aVar = (a) ((WeakReference) it.next()).get();
                 if (aVar != null) {
@@ -411,10 +411,10 @@ public class b {
 
     public final void a(Activity activity, Bundle bundle) {
         try {
-            synchronized (this.f12305f) {
+            synchronized (this.f13091f) {
                 try {
-                    if (!this.f12305f.isEmpty()) {
-                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : this.f12305f) {
+                    if (!this.f13091f.isEmpty()) {
+                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : this.f13091f) {
                             if (activityLifecycleCallbacks != null) {
                                 activityLifecycleCallbacks.onActivitySaveInstanceState(activity, bundle);
                             }
@@ -430,10 +430,10 @@ public class b {
 
     private void b(Activity activity) {
         try {
-            synchronized (this.f12305f) {
+            synchronized (this.f13091f) {
                 try {
-                    if (!this.f12305f.isEmpty()) {
-                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : this.f12305f) {
+                    if (!this.f13091f.isEmpty()) {
+                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : this.f13091f) {
                             if (activityLifecycleCallbacks != null) {
                                 activityLifecycleCallbacks.onActivityPaused(activity);
                             }
@@ -442,7 +442,7 @@ public class b {
                 } finally {
                 }
             }
-            Iterator it = new CopyOnWriteArraySet(this.f12302b).iterator();
+            Iterator it = new CopyOnWriteArraySet(this.f13088b).iterator();
             while (it.hasNext()) {
                 a aVar = (a) ((WeakReference) it.next()).get();
                 if (aVar != null) {
@@ -456,10 +456,10 @@ public class b {
 
     public final void a(Application.ActivityLifecycleCallbacks activityLifecycleCallbacks) {
         try {
-            synchronized (this.f12305f) {
+            synchronized (this.f13091f) {
                 try {
-                    if (!this.f12305f.contains(activityLifecycleCallbacks)) {
-                        this.f12305f.add(activityLifecycleCallbacks);
+                    if (!this.f13091f.contains(activityLifecycleCallbacks)) {
+                        this.f13091f.add(activityLifecycleCallbacks);
                     }
                 } finally {
                 }
@@ -471,10 +471,10 @@ public class b {
 
     public static /* synthetic */ void a(b bVar, Activity activity) {
         try {
-            synchronized (bVar.f12305f) {
+            synchronized (bVar.f13091f) {
                 try {
-                    if (!bVar.f12305f.isEmpty()) {
-                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : bVar.f12305f) {
+                    if (!bVar.f13091f.isEmpty()) {
+                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : bVar.f13091f) {
                             if (activityLifecycleCallbacks != null) {
                                 activityLifecycleCallbacks.onActivityStarted(activity);
                             }
@@ -483,7 +483,7 @@ public class b {
                 } finally {
                 }
             }
-            Iterator it = new CopyOnWriteArraySet(bVar.f12302b).iterator();
+            Iterator it = new CopyOnWriteArraySet(bVar.f13088b).iterator();
             while (it.hasNext()) {
                 a aVar = (a) ((WeakReference) it.next()).get();
                 if (aVar != null) {
@@ -497,10 +497,10 @@ public class b {
 
     public static /* synthetic */ void b(b bVar, Activity activity) {
         try {
-            synchronized (bVar.f12305f) {
+            synchronized (bVar.f13091f) {
                 try {
-                    if (!bVar.f12305f.isEmpty()) {
-                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : bVar.f12305f) {
+                    if (!bVar.f13091f.isEmpty()) {
+                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : bVar.f13091f) {
                             if (activityLifecycleCallbacks != null) {
                                 activityLifecycleCallbacks.onActivityResumed(activity);
                             }
@@ -509,7 +509,7 @@ public class b {
                 } finally {
                 }
             }
-            Iterator it = new CopyOnWriteArraySet(bVar.f12302b).iterator();
+            Iterator it = new CopyOnWriteArraySet(bVar.f13088b).iterator();
             while (it.hasNext()) {
                 a aVar = (a) ((WeakReference) it.next()).get();
                 if (aVar != null) {
@@ -523,10 +523,10 @@ public class b {
 
     public static /* synthetic */ void a(b bVar, Activity activity, Bundle bundle) {
         try {
-            synchronized (bVar.f12305f) {
+            synchronized (bVar.f13091f) {
                 try {
-                    if (!bVar.f12305f.isEmpty()) {
-                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : bVar.f12305f) {
+                    if (!bVar.f13091f.isEmpty()) {
+                        for (Application.ActivityLifecycleCallbacks activityLifecycleCallbacks : bVar.f13091f) {
                             if (activityLifecycleCallbacks != null) {
                                 activityLifecycleCallbacks.onActivityCreated(activity, bundle);
                             }
@@ -535,7 +535,7 @@ public class b {
                 } finally {
                 }
             }
-            Iterator it = new CopyOnWriteArraySet(bVar.f12302b).iterator();
+            Iterator it = new CopyOnWriteArraySet(bVar.f13088b).iterator();
             while (it.hasNext()) {
                 a aVar = (a) ((WeakReference) it.next()).get();
                 if (aVar != null) {

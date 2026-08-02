@@ -8,73 +8,73 @@ import java.io.OutputStream;
 public final class q extends InputStream {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ r f41983n;
+    public final /* synthetic */ r f41954n;
 
     public q(r rVar) {
-        this.f41983n = rVar;
+        this.f41954n = rVar;
     }
 
     @Override // java.io.InputStream
     public final int available() {
-        r rVar = this.f41983n;
-        if (rVar.f41986v) {
+        r rVar = this.f41954n;
+        if (rVar.f41957v) {
             throw new IOException("closed");
         }
-        return (int) Math.min(rVar.f41985u.f41953u, Integer.MAX_VALUE);
+        return (int) Math.min(rVar.f41956u.f41924u, Integer.MAX_VALUE);
     }
 
     @Override // java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
-        this.f41983n.close();
+        this.f41954n.close();
     }
 
     @Override // java.io.InputStream
     public final int read() {
-        r rVar = this.f41983n;
-        if (rVar.f41986v) {
+        r rVar = this.f41954n;
+        if (rVar.f41957v) {
             throw new IOException("closed");
         }
-        e eVar = rVar.f41985u;
-        if (eVar.f41953u == 0 && rVar.f41984n.d(8192L, eVar) == -1) {
+        e eVar = rVar.f41956u;
+        if (eVar.f41924u == 0 && rVar.f41955n.d(8192L, eVar) == -1) {
             return -1;
         }
         return eVar.z() & 255;
     }
 
     public final String toString() {
-        return this.f41983n + ".inputStream()";
+        return this.f41954n + ".inputStream()";
     }
 
     @Override // java.io.InputStream
     public final long transferTo(OutputStream out) {
         kotlin.jvm.internal.h.e(out, "out");
-        r rVar = this.f41983n;
-        if (rVar.f41986v) {
+        r rVar = this.f41954n;
+        if (rVar.f41957v) {
             throw new IOException("closed");
         }
         long j6 = 0;
         long j9 = 0;
         while (true) {
-            e eVar = rVar.f41985u;
-            if (eVar.f41953u == j6 && rVar.f41984n.d(8192L, eVar) == -1) {
+            e eVar = rVar.f41956u;
+            if (eVar.f41924u == j6 && rVar.f41955n.d(8192L, eVar) == -1) {
                 return j9;
             }
-            long j10 = eVar.f41953u;
+            long j10 = eVar.f41924u;
             j9 += j10;
             b.d(j10, 0L, j10);
-            s sVar = eVar.f41952n;
+            s sVar = eVar.f41923n;
             while (j10 > j6) {
                 kotlin.jvm.internal.h.b(sVar);
-                int min = (int) Math.min(j10, sVar.f41989c - sVar.f41988b);
-                out.write(sVar.f41987a, sVar.f41988b, min);
-                int i = sVar.f41988b + min;
-                sVar.f41988b = i;
+                int min = (int) Math.min(j10, sVar.f41960c - sVar.f41959b);
+                out.write(sVar.f41958a, sVar.f41959b, min);
+                int i = sVar.f41959b + min;
+                sVar.f41959b = i;
                 long j11 = min;
-                eVar.f41953u -= j11;
+                eVar.f41924u -= j11;
                 j10 -= j11;
-                if (i == sVar.f41989c) {
+                if (i == sVar.f41960c) {
                     s a9 = sVar.a();
-                    eVar.f41952n = a9;
+                    eVar.f41923n = a9;
                     t.a(sVar);
                     sVar = a9;
                 }
@@ -84,16 +84,16 @@ public final class q extends InputStream {
     }
 
     @Override // java.io.InputStream
-    public final int read(byte[] data, int i, int i6) {
+    public final int read(byte[] data, int i, int i4) {
         kotlin.jvm.internal.h.e(data, "data");
-        r rVar = this.f41983n;
-        if (!rVar.f41986v) {
-            b.d(data.length, i, i6);
-            e eVar = rVar.f41985u;
-            if (eVar.f41953u == 0 && rVar.f41984n.d(8192L, eVar) == -1) {
+        r rVar = this.f41954n;
+        if (!rVar.f41957v) {
+            b.d(data.length, i, i4);
+            e eVar = rVar.f41956u;
+            if (eVar.f41924u == 0 && rVar.f41955n.d(8192L, eVar) == -1) {
                 return -1;
             }
-            return eVar.l(data, i, i6);
+            return eVar.l(data, i, i4);
         }
         throw new IOException("closed");
     }

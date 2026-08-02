@@ -6,5 +6,5 @@ import android.view.View;
 public interface IATAdvertiserInfoOperate {
     void hideAdvertiserInfoDialog();
 
-    void showAdvertiserInfoDialog(View view, boolean z3);
+    void showAdvertiserInfoDialog(View view, boolean z6);
 }

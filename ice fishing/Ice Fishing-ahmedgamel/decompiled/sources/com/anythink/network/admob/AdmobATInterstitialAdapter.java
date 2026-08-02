@@ -14,102 +14,102 @@ import com.anythink.core.api.BaseAd;
 import com.anythink.core.api.MediationInitCallback;
 import com.anythink.core.common.d.j;
 import com.anythink.interstitial.unitgroup.api.CustomInterstitialAdapter;
-import com.google.android.gms.internal.ads.C2635Kc;
+import com.google.android.gms.internal.ads.C2655Kc;
 import java.util.HashMap;
 import java.util.Map;
-import k2.C4631a;
-import k2.b;
-import k2.f;
-import k2.g;
-import k2.i;
-import k2.m;
-import k2.n;
-import k2.p;
-import q2.E0;
-import q2.K;
-import q2.U0;
-import w2.AbstractC5148a;
-import w2.AbstractC5149b;
+import m2.C4741a;
+import m2.b;
+import m2.f;
+import m2.g;
+import m2.i;
+import m2.m;
+import m2.n;
+import m2.p;
+import s2.E0;
+import s2.K;
+import s2.U0;
+import y2.AbstractC5205a;
+import y2.AbstractC5206b;
 
 /* loaded from: classes.dex */
 public class AdmobATInterstitialAdapter extends CustomInterstitialAdapter {
 
     /* renamed from: e, reason: collision with root package name */
-    private static final String f22808e = "AdmobATInterstitialAdapter";
+    private static final String f23595e = "AdmobATInterstitialAdapter";
 
     /* renamed from: a, reason: collision with root package name */
-    AbstractC5148a f22809a;
+    AbstractC5205a f23596a;
 
     /* renamed from: d, reason: collision with root package name */
-    Map<String, Object> f22812d;
+    Map<String, Object> f23599d;
 
     /* renamed from: g, reason: collision with root package name */
-    private String f22814g;
+    private String f23601g;
 
     /* renamed from: h, reason: collision with root package name */
-    private m f22815h;
-    private AbstractC5149b i;
+    private m f23602h;
+    private AbstractC5206b i;
 
     /* renamed from: b, reason: collision with root package name */
-    g f22810b = null;
+    g f23597b = null;
 
     /* renamed from: f, reason: collision with root package name */
-    private String f22813f = "";
+    private String f23600f = "";
 
     /* renamed from: c, reason: collision with root package name */
-    boolean f22811c = false;
+    boolean f23598c = false;
 
     /* renamed from: j, reason: collision with root package name */
-    private boolean f22816j = false;
+    private boolean f23603j = false;
 
     /* renamed from: k, reason: collision with root package name */
-    private boolean f22817k = false;
+    private boolean f23604k = false;
 
     /* renamed from: com.anythink.network.admob.AdmobATInterstitialAdapter$1, reason: invalid class name */
-    public class AnonymousClass1 extends AbstractC5149b {
+    public class AnonymousClass1 extends AbstractC5206b {
         public AnonymousClass1() {
         }
 
-        @Override // k2.x
+        @Override // m2.x
         public final void onAdFailedToLoad(n nVar) {
             AdmobATInterstitialAdapter admobATInterstitialAdapter = AdmobATInterstitialAdapter.this;
-            admobATInterstitialAdapter.f22809a = null;
+            admobATInterstitialAdapter.f23596a = null;
             if (((ATBaseAdInternalAdapter) admobATInterstitialAdapter).mLoadListener != null) {
-                ((ATBaseAdInternalAdapter) AdmobATInterstitialAdapter.this).mLoadListener.onAdLoadError(String.valueOf(nVar.f38568a), nVar.f38569b);
+                ((ATBaseAdInternalAdapter) AdmobATInterstitialAdapter.this).mLoadListener.onAdLoadError(String.valueOf(nVar.f39357a), nVar.f39358b);
             }
         }
 
-        @Override // k2.x
-        public final void onAdLoaded(AbstractC5148a abstractC5148a) {
-            AdmobATInterstitialAdapter.this.f22809a = abstractC5148a;
-            AdmobATInterstitialAdapter.this.f22812d.put("response_info", abstractC5148a.a());
+        @Override // m2.x
+        public final void onAdLoaded(AbstractC5205a abstractC5205a) {
+            AdmobATInterstitialAdapter.this.f23596a = abstractC5205a;
+            AdmobATInterstitialAdapter.this.f23599d.put("response_info", abstractC5205a.a());
             AdmobATInterstitialAdapter admobATInterstitialAdapter = AdmobATInterstitialAdapter.this;
-            admobATInterstitialAdapter.f22811c = true;
-            if (admobATInterstitialAdapter.f22816j) {
-                AbstractC5148a abstractC5148a2 = AdmobATInterstitialAdapter.this.f22809a;
+            admobATInterstitialAdapter.f23598c = true;
+            if (admobATInterstitialAdapter.f23603j) {
+                AbstractC5205a abstractC5205a2 = AdmobATInterstitialAdapter.this.f23596a;
                 p pVar = new p() { // from class: com.anythink.network.admob.AdmobATInterstitialAdapter.1.1
-                    @Override // k2.p
+                    @Override // m2.p
                     public final void onPaidEvent(i iVar) {
-                        if (AdmobATInterstitialAdapter.this.f22817k) {
+                        if (AdmobATInterstitialAdapter.this.f23604k) {
                             return;
                         }
                         AdmobATInterstitialAdapter.c(AdmobATInterstitialAdapter.this);
                         AdMobATInitManager.getInstance();
-                        AdMobATInitManager.a(AdmobATInterstitialAdapter.this.f22812d, iVar);
+                        AdMobATInitManager.a(AdmobATInterstitialAdapter.this.f23599d, iVar);
                         if (((CustomInterstitialAdapter) AdmobATInterstitialAdapter.this).mImpressListener != null) {
                             ((CustomInterstitialAdapter) AdmobATInterstitialAdapter.this).mImpressListener.onInterstitialAdShow();
                         }
                     }
                 };
-                C2635Kc c2635Kc = (C2635Kc) abstractC5148a2;
-                c2635Kc.getClass();
+                C2655Kc c2655Kc = (C2655Kc) abstractC5205a2;
+                c2655Kc.getClass();
                 try {
-                    K k9 = c2635Kc.f25933c;
+                    K k9 = c2655Kc.f26711c;
                     if (k9 != null) {
-                        k9.s0(new U0(pVar));
+                        k9.M3(new U0(pVar));
                     }
                 } catch (RemoteException e9) {
-                    v2.i.i("#007 Could not call remote method.", e9);
+                    x2.i.i("#007 Could not call remote method.", e9);
                 }
             }
             if (((ATBaseAdInternalAdapter) AdmobATInterstitialAdapter.this).mLoadListener != null) {
@@ -122,19 +122,19 @@ public class AdmobATInterstitialAdapter extends CustomInterstitialAdapter {
     public class AnonymousClass2 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ Context f22820a;
+        final /* synthetic */ Context f23607a;
 
         public AnonymousClass2(Context context) {
-            this.f22820a = context;
+            this.f23607a = context;
         }
 
         @Override // java.lang.Runnable
         public final void run() {
             try {
-                Context context = this.f22820a;
-                String str = AdmobATInterstitialAdapter.this.f22813f;
+                Context context = this.f23607a;
+                String str = AdmobATInterstitialAdapter.this.f23600f;
                 AdmobATInterstitialAdapter admobATInterstitialAdapter = AdmobATInterstitialAdapter.this;
-                AbstractC5148a.b(context, str, admobATInterstitialAdapter.f22810b, admobATInterstitialAdapter.i);
+                AbstractC5205a.b(context, str, admobATInterstitialAdapter.f23597b, admobATInterstitialAdapter.i);
             } catch (Throwable th) {
                 if (((ATBaseAdInternalAdapter) AdmobATInterstitialAdapter.this).mLoadListener != null) {
                     ((ATBaseAdInternalAdapter) AdmobATInterstitialAdapter.this).mLoadListener.onAdLoadError("", th.getMessage());
@@ -144,7 +144,7 @@ public class AdmobATInterstitialAdapter extends CustomInterstitialAdapter {
     }
 
     public static /* synthetic */ boolean c(AdmobATInterstitialAdapter admobATInterstitialAdapter) {
-        admobATInterstitialAdapter.f22817k = true;
+        admobATInterstitialAdapter.f23604k = true;
         return true;
     }
 
@@ -156,14 +156,14 @@ public class AdmobATInterstitialAdapter extends CustomInterstitialAdapter {
     @Override // com.anythink.interstitial.unitgroup.api.CustomInterstitialAdapter, com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
         try {
-            AbstractC5148a abstractC5148a = this.f22809a;
-            if (abstractC5148a != null) {
-                abstractC5148a.c(null);
-                this.f22809a = null;
+            AbstractC5205a abstractC5205a = this.f23596a;
+            if (abstractC5205a != null) {
+                abstractC5205a.c(null);
+                this.f23596a = null;
             }
             this.i = null;
-            this.f22815h = null;
-            this.f22810b = null;
+            this.f23602h = null;
+            this.f23597b = null;
         } catch (Exception unused) {
         }
     }
@@ -183,7 +183,7 @@ public class AdmobATInterstitialAdapter extends CustomInterstitialAdapter {
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public Map<String, Object> getNetworkInfoMap() {
-        return this.f22812d;
+        return this.f23599d;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -193,7 +193,7 @@ public class AdmobATInterstitialAdapter extends CustomInterstitialAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        return this.f22813f;
+        return this.f23600f;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -203,15 +203,15 @@ public class AdmobATInterstitialAdapter extends CustomInterstitialAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public boolean isAdReady() {
-        return this.f22809a != null && this.f22811c;
+        return this.f23596a != null && this.f23598c;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void loadCustomNetworkAd(Context context, final Map<String, Object> map, final Map<String, Object> map2) {
-        this.f22813f = ATInitMediation.getStringFromMap(map, "unit_id");
-        this.f22814g = ATInitMediation.getStringFromMap(map, "payload");
-        this.f22816j = ATInitMediation.getIntFromMap(map, j.w.f12629q, 2) == 1;
-        if (!TextUtils.isEmpty(this.f22813f)) {
+        this.f23600f = ATInitMediation.getStringFromMap(map, "unit_id");
+        this.f23601g = ATInitMediation.getStringFromMap(map, "payload");
+        this.f23603j = ATInitMediation.getIntFromMap(map, j.w.f13415q, 2) == 1;
+        if (!TextUtils.isEmpty(this.f23600f)) {
             final Context applicationContext = context.getApplicationContext();
             AdMobATInitManager.getInstance().initSDK(applicationContext, map, new MediationInitCallback() { // from class: com.anythink.network.admob.AdmobATInterstitialAdapter.3
                 @Override // com.anythink.core.api.MediationInitCallback
@@ -235,27 +235,27 @@ public class AdmobATInterstitialAdapter extends CustomInterstitialAdapter {
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
-    public boolean setUserDataConsent(Context context, boolean z3, boolean z6) {
-        return AdMobATInitManager.getInstance().setUserDataConsent(context, z3, z6);
+    public boolean setUserDataConsent(Context context, boolean z6, boolean z9) {
+        return AdMobATInitManager.getInstance().setUserDataConsent(context, z6, z9);
     }
 
     @Override // com.anythink.interstitial.unitgroup.api.CustomInterstitialAdapter
     public void show(Activity activity) {
         if (isAdReady()) {
             if (activity == null) {
-                Log.e(f22808e, "Admob: show(), activity = null");
+                Log.e(f23595e, "Admob: show(), activity = null");
                 return;
             }
-            this.f22811c = false;
+            this.f23598c = false;
             m mVar = new m() { // from class: com.anythink.network.admob.AdmobATInterstitialAdapter.4
-                @Override // k2.m
+                @Override // m2.m
                 public final void onAdClicked() {
                     if (((CustomInterstitialAdapter) AdmobATInterstitialAdapter.this).mImpressListener != null) {
                         ((CustomInterstitialAdapter) AdmobATInterstitialAdapter.this).mImpressListener.onInterstitialAdClicked();
                     }
                 }
 
-                @Override // k2.m
+                @Override // m2.m
                 public final void onAdDismissedFullScreenContent() {
                     try {
                         AdMobATInitManager.getInstance().a(AdmobATInterstitialAdapter.this.getTrackingInfo().z());
@@ -266,24 +266,24 @@ public class AdmobATInterstitialAdapter extends CustomInterstitialAdapter {
                     }
                 }
 
-                @Override // k2.m
-                public final void onAdFailedToShowFullScreenContent(C4631a c4631a) {
+                @Override // m2.m
+                public final void onAdFailedToShowFullScreenContent(C4741a c4741a) {
                     AdmobATInterstitialAdapter.r(AdmobATInterstitialAdapter.this);
                 }
 
-                @Override // k2.m
+                @Override // m2.m
                 public final void onAdShowedFullScreenContent() {
                     try {
-                        if (AdmobATInterstitialAdapter.this.f22809a != null) {
-                            AdMobATInitManager.getInstance().a(AdmobATInterstitialAdapter.this.getTrackingInfo().z(), AdmobATInterstitialAdapter.this.f22809a);
+                        if (AdmobATInterstitialAdapter.this.f23596a != null) {
+                            AdMobATInitManager.getInstance().a(AdmobATInterstitialAdapter.this.getTrackingInfo().z(), AdmobATInterstitialAdapter.this.f23596a);
                         }
                     } catch (Throwable unused) {
                     }
-                    if (AdmobATInterstitialAdapter.this.f22816j) {
+                    if (AdmobATInterstitialAdapter.this.f23603j) {
                         AdmobATInterstitialAdapter.this.postOnMainThreadDelayed(new Runnable() { // from class: com.anythink.network.admob.AdmobATInterstitialAdapter.4.1
                             @Override // java.lang.Runnable
                             public final void run() {
-                                if (AdmobATInterstitialAdapter.this.f22817k) {
+                                if (AdmobATInterstitialAdapter.this.f23604k) {
                                     return;
                                 }
                                 AdmobATInterstitialAdapter.c(AdmobATInterstitialAdapter.this);
@@ -297,32 +297,32 @@ public class AdmobATInterstitialAdapter extends CustomInterstitialAdapter {
                     }
                 }
             };
-            this.f22815h = mVar;
-            this.f22809a.c(mVar);
-            this.f22809a.d(activity);
+            this.f23602h = mVar;
+            this.f23596a.c(mVar);
+            this.f23596a.d(activity);
         }
     }
 
     private void a(Context context, Map<String, Object> map, Map<String, Object> map2) {
-        f a9 = AdMobATInitManager.getInstance().a(context.getApplicationContext(), map, map2, b.INTERSTITIAL, !TextUtils.isEmpty(this.f22814g));
-        if (!TextUtils.isEmpty(this.f22814g)) {
-            ((E0) a9.f1720u).f40022m = this.f22814g;
+        f a9 = AdMobATInitManager.getInstance().a(context.getApplicationContext(), map, map2, b.INTERSTITIAL, !TextUtils.isEmpty(this.f23601g));
+        if (!TextUtils.isEmpty(this.f23601g)) {
+            ((E0) a9.f67u).f40321m = this.f23601g;
         }
         a9.getClass();
-        this.f22810b = new g(a9);
-        this.f22812d = new HashMap();
+        this.f23597b = new g(a9);
+        this.f23599d = new HashMap();
         this.i = new AnonymousClass1();
         postOnMainThread(new AnonymousClass2(context));
     }
 
     public static void a(AdmobATInterstitialAdapter admobATInterstitialAdapter, Context context, Map map, Map map2) {
-        f a9 = AdMobATInitManager.getInstance().a(context.getApplicationContext(), (Map<String, Object>) map, (Map<String, Object>) map2, b.INTERSTITIAL, !TextUtils.isEmpty(admobATInterstitialAdapter.f22814g));
-        if (!TextUtils.isEmpty(admobATInterstitialAdapter.f22814g)) {
-            ((E0) a9.f1720u).f40022m = admobATInterstitialAdapter.f22814g;
+        f a9 = AdMobATInitManager.getInstance().a(context.getApplicationContext(), (Map<String, Object>) map, (Map<String, Object>) map2, b.INTERSTITIAL, !TextUtils.isEmpty(admobATInterstitialAdapter.f23601g));
+        if (!TextUtils.isEmpty(admobATInterstitialAdapter.f23601g)) {
+            ((E0) a9.f67u).f40321m = admobATInterstitialAdapter.f23601g;
         }
         a9.getClass();
-        admobATInterstitialAdapter.f22810b = new g(a9);
-        admobATInterstitialAdapter.f22812d = new HashMap();
+        admobATInterstitialAdapter.f23597b = new g(a9);
+        admobATInterstitialAdapter.f23599d = new HashMap();
         admobATInterstitialAdapter.i = admobATInterstitialAdapter.new AnonymousClass1();
         admobATInterstitialAdapter.postOnMainThread(admobATInterstitialAdapter.new AnonymousClass2(context));
     }

@@ -4,8 +4,8 @@ package com.anythink.core.common.m.b;
 public interface e {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f14510a = 1;
+    public static final int f15296a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f14511b = 2;
+    public static final int f15297b = 2;
 }

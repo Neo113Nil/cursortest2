@@ -4,49 +4,49 @@ import android.text.TextUtils;
 import com.anythink.core.api.MediationBidManager;
 import com.anythink.core.common.h.ad;
 import com.anythink.core.common.h.bv;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
-import u.AbstractC5049e;
+import u.AbstractC5050e;
 
 /* loaded from: classes.dex */
 public final class f {
 
     /* renamed from: e, reason: collision with root package name */
-    private static f f11841e;
+    private static f f12627e;
 
     /* renamed from: b, reason: collision with root package name */
-    ConcurrentHashMap<String, Integer> f11843b;
+    ConcurrentHashMap<String, Integer> f12629b;
 
     /* renamed from: f, reason: collision with root package name */
-    private MediationBidManager f11846f;
+    private MediationBidManager f12632f;
 
     /* renamed from: d, reason: collision with root package name */
-    private final String f11845d = "f";
+    private final String f12631d = "f";
 
     /* renamed from: a, reason: collision with root package name */
-    ConcurrentHashMap<String, ad> f11842a = new ConcurrentHashMap<>();
+    ConcurrentHashMap<String, ad> f12628a = new ConcurrentHashMap<>();
 
     /* renamed from: c, reason: collision with root package name */
-    List<Integer> f11844c = new CopyOnWriteArrayList();
+    List<Integer> f12630c = new CopyOnWriteArrayList();
 
     private f() {
     }
 
     public static f a() {
-        if (f11841e == null) {
-            f11841e = new f();
+        if (f12627e == null) {
+            f12627e = new f();
         }
-        return f11841e;
+        return f12627e;
     }
 
     public final MediationBidManager b() {
-        return this.f11846f;
+        return this.f12632f;
     }
 
     private boolean b(String str) {
-        ConcurrentHashMap<String, Integer> concurrentHashMap = this.f11843b;
+        ConcurrentHashMap<String, Integer> concurrentHashMap = this.f12629b;
         if (concurrentHashMap == null) {
             return true;
         }
@@ -57,17 +57,17 @@ public final class f {
     }
 
     public final boolean b(int i) {
-        boolean z3;
-        synchronized (this.f11844c) {
-            z3 = !this.f11844c.contains(Integer.valueOf(i));
+        boolean z6;
+        synchronized (this.f12630c) {
+            z6 = !this.f12630c.contains(Integer.valueOf(i));
         }
-        return z3;
+        return z6;
     }
 
     private void a(String str, bv bvVar, ad adVar) {
-        ConcurrentHashMap<String, ad> concurrentHashMap = this.f11842a;
-        StringBuilder b9 = AbstractC5049e.b(str);
-        b9.append(adVar.f13428k);
+        ConcurrentHashMap<String, ad> concurrentHashMap = this.f12628a;
+        StringBuilder b9 = AbstractC5050e.b(str);
+        b9.append(adVar.f14214k);
         concurrentHashMap.put(b9.toString(), adVar);
         if (bvVar.am()) {
             com.anythink.core.common.a.a.a().a(str, adVar);
@@ -78,30 +78,30 @@ public final class f {
         if (adVar == null) {
             return;
         }
-        ConcurrentHashMap<String, ad> concurrentHashMap = this.f11842a;
-        StringBuilder b9 = AbstractC5049e.b(str);
-        b9.append(adVar.f13428k);
+        ConcurrentHashMap<String, ad> concurrentHashMap = this.f12628a;
+        StringBuilder b9 = AbstractC5050e.b(str);
+        b9.append(adVar.f14214k);
         ad adVar2 = concurrentHashMap.get(b9.toString());
         if (adVar2 == null || !TextUtils.equals(adVar.token, adVar2.token)) {
             return;
         }
-        ConcurrentHashMap<String, ad> concurrentHashMap2 = this.f11842a;
-        StringBuilder b10 = AbstractC5049e.b(str);
-        b10.append(adVar.f13428k);
+        ConcurrentHashMap<String, ad> concurrentHashMap2 = this.f12628a;
+        StringBuilder b10 = AbstractC5050e.b(str);
+        b10.append(adVar.f14214k);
         concurrentHashMap2.remove(b10.toString());
     }
 
     public final ad a(String str, bv bvVar) {
-        ConcurrentHashMap<String, ad> concurrentHashMap = this.f11842a;
-        StringBuilder b9 = AbstractC5049e.b(str);
+        ConcurrentHashMap<String, ad> concurrentHashMap = this.f12628a;
+        StringBuilder b9 = AbstractC5050e.b(str);
         b9.append(bvVar.z());
         ad adVar = concurrentHashMap.get(b9.toString());
         if (bvVar.am() && adVar == null) {
             adVar = com.anythink.core.common.a.a.a().a(str, bvVar.z());
             if (adVar != null) {
                 bvVar.toString();
-                ConcurrentHashMap<String, ad> concurrentHashMap2 = this.f11842a;
-                StringBuilder b10 = AbstractC5049e.b(str);
+                ConcurrentHashMap<String, ad> concurrentHashMap2 = this.f12628a;
+                StringBuilder b10 = AbstractC5050e.b(str);
                 b10.append(bvVar.z());
                 concurrentHashMap2.put(b10.toString(), adVar);
                 return adVar;
@@ -112,21 +112,21 @@ public final class f {
     }
 
     public final void a(MediationBidManager mediationBidManager) {
-        this.f11846f = mediationBidManager;
+        this.f12632f = mediationBidManager;
     }
 
     private void a(String str) {
-        if (this.f11843b == null) {
-            this.f11843b = new ConcurrentHashMap<>();
+        if (this.f12629b == null) {
+            this.f12629b = new ConcurrentHashMap<>();
         }
-        this.f11843b.put(AbstractC4404f.f(str, "_c2sfirstStatus"), 1);
+        this.f12629b.put(Wv.g(str, "_c2sfirstStatus"), 1);
     }
 
     public final void a(int i) {
-        synchronized (this.f11844c) {
+        synchronized (this.f12630c) {
             try {
-                if (!this.f11844c.contains(Integer.valueOf(i))) {
-                    this.f11844c.add(Integer.valueOf(i));
+                if (!this.f12630c.contains(Integer.valueOf(i))) {
+                    this.f12630c.add(Integer.valueOf(i));
                 }
             } catch (Throwable th) {
                 throw th;

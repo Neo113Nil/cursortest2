@@ -4,28 +4,28 @@ package I0;
 public abstract class m {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final b f1266a;
+    public static final b f1293a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final b f1267b;
+    public static final b f1294b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final b f1268c;
+    public static final b f1295c;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final b f1269d;
+    public static final b f1296d;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final b f1270e;
+    public static final b f1297e;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final b f1271f;
+    public static final b f1298f;
 
     /* renamed from: g, reason: collision with root package name */
-    public static final l f1272g;
+    public static final l f1299g;
 
     /* renamed from: h, reason: collision with root package name */
-    public static final b f1273h;
+    public static final b f1300h;
 
     static {
         new b("VISUAL_STATE_CALLBACK", "VISUAL_STATE_CALLBACK", 0);
@@ -56,12 +56,12 @@ public abstract class m {
         new b("SAFE_BROWSING_RESPONSE_SHOW_INTERSTITIAL", "SAFE_BROWSING_RESPONSE_SHOW_INTERSTITIAL", 4);
         new b("WEB_MESSAGE_PORT_POST_MESSAGE", "WEB_MESSAGE_PORT_POST_MESSAGE", 0);
         new b("WEB_MESSAGE_PORT_CLOSE", "WEB_MESSAGE_PORT_CLOSE", 0);
-        f1266a = new b("WEB_MESSAGE_ARRAY_BUFFER", "WEB_MESSAGE_ARRAY_BUFFER", 2);
+        f1293a = new b("WEB_MESSAGE_ARRAY_BUFFER", "WEB_MESSAGE_ARRAY_BUFFER", 2);
         new b("WEB_MESSAGE_PORT_SET_MESSAGE_CALLBACK", "WEB_MESSAGE_PORT_SET_MESSAGE_CALLBACK", 0);
         new b("CREATE_WEB_MESSAGE_CHANNEL", "CREATE_WEB_MESSAGE_CHANNEL", 0);
         new b("POST_WEB_MESSAGE", "POST_WEB_MESSAGE", 0);
         new b("WEB_MESSAGE_CALLBACK_ON_MESSAGE", "WEB_MESSAGE_CALLBACK_ON_MESSAGE", 0);
-        f1267b = new b("GET_WEB_VIEW_CLIENT", "GET_WEB_VIEW_CLIENT", 3);
+        f1294b = new b("GET_WEB_VIEW_CLIENT", "GET_WEB_VIEW_CLIENT", 3);
         new b("GET_WEB_CHROME_CLIENT", "GET_WEB_CHROME_CLIENT", 3);
         new b("GET_WEB_VIEW_RENDERER", "GET_WEB_VIEW_RENDERER", 6);
         new b("WEB_VIEW_RENDERER_TERMINATE", "WEB_VIEW_RENDERER_TERMINATE", 6);
@@ -71,21 +71,21 @@ public abstract class m {
         new b("WEB_VIEW_RENDERER_CLIENT_BASIC_USAGE", "WEB_VIEW_RENDERER_CLIENT_BASIC_USAGE", 6);
         new k();
         new b("PROXY_OVERRIDE", "PROXY_OVERRIDE:3", 2);
-        f1268c = new b("MULTI_PROCESS", "MULTI_PROCESS_QUERY", 2);
+        f1295c = new b("MULTI_PROCESS", "MULTI_PROCESS_QUERY", 2);
         new b("FORCE_DARK", "FORCE_DARK", 6);
         new b("FORCE_DARK_STRATEGY", "FORCE_DARK_BEHAVIOR", 2);
-        f1269d = new b("WEB_MESSAGE_LISTENER", "WEB_MESSAGE_LISTENER", 2);
-        f1270e = new b("DOCUMENT_START_SCRIPT", "DOCUMENT_START_SCRIPT:1", 2);
+        f1296d = new b("WEB_MESSAGE_LISTENER", "WEB_MESSAGE_LISTENER", 2);
+        f1297e = new b("DOCUMENT_START_SCRIPT", "DOCUMENT_START_SCRIPT:1", 2);
         new b("PROXY_OVERRIDE_REVERSE_BYPASS", "PROXY_OVERRIDE_REVERSE_BYPASS", 2);
-        f1271f = new b("GET_VARIATIONS_HEADER", "GET_VARIATIONS_HEADER", 2);
+        f1298f = new b("GET_VARIATIONS_HEADER", "GET_VARIATIONS_HEADER", 2);
         new b("ENTERPRISE_AUTHENTICATION_APP_LINK_POLICY", "ENTERPRISE_AUTHENTICATION_APP_LINK_POLICY", 2);
         new b("GET_COOKIE_INFO", "GET_COOKIE_INFO", 2);
         new b("REQUESTED_WITH_HEADER_ALLOW_LIST", "REQUESTED_WITH_HEADER_ALLOW_LIST", 2);
         new b("USER_AGENT_METADATA", "USER_AGENT_METADATA", 2);
-        f1272g = new l("MULTI_PROFILE", "MULTI_PROFILE", 2);
+        f1299g = new l("MULTI_PROFILE", "MULTI_PROFILE", 2);
         new b("ATTRIBUTION_REGISTRATION_BEHAVIOR", "ATTRIBUTION_BEHAVIOR", 2);
         new b("WEBVIEW_MEDIA_INTEGRITY_API_STATUS", "WEBVIEW_INTEGRITY_API_STATUS", 2);
-        f1273h = new b("MUTE_AUDIO", "MUTE_AUDIO", 2);
+        f1300h = new b("MUTE_AUDIO", "MUTE_AUDIO", 2);
         new b("WEB_AUTHENTICATION", "WEB_AUTHENTICATION", 2);
         new b("SPECULATIVE_LOADING_STATUS", "SPECULATIVE_LOADING", 2);
         new b("BACK_FORWARD_CACHE", "BACK_FORWARD_CACHE", 2);

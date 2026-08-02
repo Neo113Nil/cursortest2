@@ -81,7 +81,7 @@ public class ATRewardVideoAd {
         }
 
         @Override // com.anythink.rewardvideo.api.ATRewardVideoExListener
-        public void onDeeplinkCallback(final ATAdInfo aTAdInfo, final boolean z3) {
+        public void onDeeplinkCallback(final ATAdInfo aTAdInfo, final boolean z6) {
             t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.api.ATRewardVideoAd.1.1
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -89,7 +89,7 @@ public class ATRewardVideoAd {
                     if (aTRewardVideoListener == null || !(aTRewardVideoListener instanceof ATRewardVideoExListener)) {
                         return;
                     }
-                    ((ATRewardVideoExListener) aTRewardVideoListener).onDeeplinkCallback(aTAdInfo, z3);
+                    ((ATRewardVideoExListener) aTRewardVideoListener).onDeeplinkCallback(aTAdInfo, z6);
                 }
             });
         }
@@ -116,11 +116,11 @@ public class ATRewardVideoAd {
 
         @Override // com.anythink.rewardvideo.api.ATRewardVideoListener
         public void onReward(final ATAdInfo aTAdInfo) {
-            final boolean z3 = aTAdInfo == null;
+            final boolean z6 = aTAdInfo == null;
             t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.api.ATRewardVideoAd.1.7
                 @Override // java.lang.Runnable
                 public final void run() {
-                    i.a(ATRewardVideoAd.this.mPlacementId, "onReward", aTAdInfo, z3);
+                    i.a(ATRewardVideoAd.this.mPlacementId, "onReward", aTAdInfo, z6);
                     ATRewardVideoListener aTRewardVideoListener = ATRewardVideoAd.this.mListener;
                     if (aTRewardVideoListener != null) {
                         aTRewardVideoListener.onReward(aTAdInfo);
@@ -209,11 +209,11 @@ public class ATRewardVideoAd {
 
         @Override // com.anythink.rewardvideo.api.ATRewardVideoListener
         public void onRewardedVideoAdClosed(final ATAdInfo aTAdInfo) {
-            final boolean z3 = aTAdInfo == null;
+            final boolean z6 = aTAdInfo == null;
             t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.api.ATRewardVideoAd.1.5
                 @Override // java.lang.Runnable
                 public final void run() {
-                    i.a(ATRewardVideoAd.this.mPlacementId, "onRewardedVideoAdClosed", aTAdInfo, z3);
+                    i.a(ATRewardVideoAd.this.mPlacementId, "onRewardedVideoAdClosed", aTAdInfo, z6);
                     ATRewardVideoListener aTRewardVideoListener = ATRewardVideoAd.this.mListener;
                     if (aTRewardVideoListener != null) {
                         aTRewardVideoListener.onRewardedVideoAdClosed(aTAdInfo);
@@ -232,11 +232,11 @@ public class ATRewardVideoAd {
 
         @Override // com.anythink.rewardvideo.api.ATRewardVideoListener
         public void onRewardedVideoAdPlayClicked(final ATAdInfo aTAdInfo) {
-            final boolean z3 = aTAdInfo == null;
+            final boolean z6 = aTAdInfo == null;
             t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.api.ATRewardVideoAd.1.6
                 @Override // java.lang.Runnable
                 public final void run() {
-                    i.a(ATRewardVideoAd.this.mPlacementId, "onRewardedVideoAdPlayClicked", aTAdInfo, z3);
+                    i.a(ATRewardVideoAd.this.mPlacementId, "onRewardedVideoAdPlayClicked", aTAdInfo, z6);
                     ATRewardVideoListener aTRewardVideoListener = ATRewardVideoAd.this.mListener;
                     if (aTRewardVideoListener != null) {
                         aTRewardVideoListener.onRewardedVideoAdPlayClicked(aTAdInfo);
@@ -247,11 +247,11 @@ public class ATRewardVideoAd {
 
         @Override // com.anythink.rewardvideo.api.ATRewardVideoListener
         public void onRewardedVideoAdPlayEnd(final ATAdInfo aTAdInfo) {
-            final boolean z3 = aTAdInfo == null;
+            final boolean z6 = aTAdInfo == null;
             t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.api.ATRewardVideoAd.1.3
                 @Override // java.lang.Runnable
                 public final void run() {
-                    i.a(ATRewardVideoAd.this.mPlacementId, "onRewardedVideoAdPlayEnd", aTAdInfo, z3);
+                    i.a(ATRewardVideoAd.this.mPlacementId, "onRewardedVideoAdPlayEnd", aTAdInfo, z6);
                     ATRewardVideoListener aTRewardVideoListener = ATRewardVideoAd.this.mListener;
                     if (aTRewardVideoListener != null) {
                         aTRewardVideoListener.onRewardedVideoAdPlayEnd(aTAdInfo);
@@ -262,11 +262,11 @@ public class ATRewardVideoAd {
 
         @Override // com.anythink.rewardvideo.api.ATRewardVideoListener
         public void onRewardedVideoAdPlayFailed(final AdError adError, final ATAdInfo aTAdInfo) {
-            final boolean z3 = aTAdInfo == null;
+            final boolean z6 = aTAdInfo == null;
             t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.api.ATRewardVideoAd.1.4
                 @Override // java.lang.Runnable
                 public final void run() {
-                    i.a(ATRewardVideoAd.this.mPlacementId, "onRewardedVideoAdPlayFailed", aTAdInfo, z3);
+                    i.a(ATRewardVideoAd.this.mPlacementId, "onRewardedVideoAdPlayFailed", aTAdInfo, z6);
                     ATRewardVideoListener aTRewardVideoListener = ATRewardVideoAd.this.mListener;
                     if (aTRewardVideoListener != null) {
                         aTRewardVideoListener.onRewardedVideoAdPlayFailed(adError, aTAdInfo);
@@ -277,11 +277,11 @@ public class ATRewardVideoAd {
 
         @Override // com.anythink.rewardvideo.api.ATRewardVideoListener
         public void onRewardedVideoAdPlayStart(final ATAdInfo aTAdInfo) {
-            final boolean z3 = aTAdInfo == null;
+            final boolean z6 = aTAdInfo == null;
             t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.api.ATRewardVideoAd.1.2
                 @Override // java.lang.Runnable
                 public final void run() {
-                    i.a(ATRewardVideoAd.this.mPlacementId, "onRewardedVideoAdPlayStart", aTAdInfo, z3);
+                    i.a(ATRewardVideoAd.this.mPlacementId, "onRewardedVideoAdPlayStart", aTAdInfo, z6);
                     ATAdRevenueListener aTAdRevenueListener = ATRewardVideoAd.this.mAdRevenueListener;
                     if (aTAdRevenueListener != null) {
                         aTAdRevenueListener.onAdRevenuePaid(aTAdInfo);
@@ -346,7 +346,7 @@ public class ATRewardVideoAd {
     }
 
     private void controlShow(Activity activity, ATShowConfig aTShowConfig) {
-        ab.b(this.mPlacementId, j.r.f12545r, j.r.f12523A, j.r.f12542o, "");
+        ab.b(this.mPlacementId, j.r.f13331r, j.r.f13309A, j.r.f13328o, "");
         if (t.b().g() == null || TextUtils.isEmpty(t.b().p()) || TextUtils.isEmpty(t.b().q())) {
             AdError errorCode = ErrorCode.getErrorCode(ErrorCode.exception, "", "sdk init error");
             ATRewardVideoListener aTRewardVideoListener = this.mListener;
@@ -397,7 +397,7 @@ public class ATRewardVideoAd {
         if (adStatus == null) {
             return new ATAdStatusInfo(false, false, null);
         }
-        ab.b(this.mPlacementId, j.r.f12545r, j.r.f12525C, adStatus.toString(), "");
+        ab.b(this.mPlacementId, j.r.f13331r, j.r.f13311C, adStatus.toString(), "");
         return adStatus;
     }
 
@@ -415,7 +415,7 @@ public class ATRewardVideoAd {
             return false;
         }
         boolean isReady = adStatus.isReady();
-        ab.b(this.mPlacementId, j.r.f12545r, j.r.f12524B, String.valueOf(isReady), "");
+        ab.b(this.mPlacementId, j.r.f13331r, j.r.f13310B, String.valueOf(isReady), "");
         return isReady;
     }
 
@@ -497,7 +497,7 @@ public class ATRewardVideoAd {
     }
 
     private void load(Context context, ATAdRequest aTAdRequest, int i) {
-        ab.a(this.mPlacementId, j.r.f12545r, j.r.f12552y, j.r.f12542o, "", true);
+        ab.a(this.mPlacementId, j.r.f13331r, j.r.f13338y, j.r.f13328o, "", true);
         this.mAdLoadManager.a(context, i, this.adLoadListener, this.mAdSourceEventListener, this.adMultipleLoadedListener, this.mTKExtraMap, aTAdRequest);
     }
 }

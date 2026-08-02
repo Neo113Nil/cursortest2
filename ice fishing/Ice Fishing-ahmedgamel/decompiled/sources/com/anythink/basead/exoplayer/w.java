@@ -12,47 +12,47 @@ import java.lang.annotation.RetentionPolicy;
 public interface w {
 
     /* renamed from: h, reason: collision with root package name */
-    public static final int f8763h = 1;
+    public static final int f9549h = 1;
     public static final int i = 2;
 
     /* renamed from: j, reason: collision with root package name */
-    public static final int f8764j = 3;
+    public static final int f9550j = 3;
 
     /* renamed from: k, reason: collision with root package name */
-    public static final int f8765k = 4;
+    public static final int f9551k = 4;
 
     /* renamed from: l, reason: collision with root package name */
-    public static final int f8766l = 0;
+    public static final int f9552l = 0;
 
     /* renamed from: m, reason: collision with root package name */
-    public static final int f8767m = 1;
+    public static final int f9553m = 1;
 
     /* renamed from: n, reason: collision with root package name */
-    public static final int f8768n = 2;
+    public static final int f9554n = 2;
 
     /* renamed from: o, reason: collision with root package name */
-    public static final int f8769o = 0;
+    public static final int f9555o = 0;
 
     /* renamed from: p, reason: collision with root package name */
-    public static final int f8770p = 1;
+    public static final int f9556p = 1;
 
     /* renamed from: q, reason: collision with root package name */
-    public static final int f8771q = 2;
+    public static final int f9557q = 2;
 
     /* renamed from: r, reason: collision with root package name */
-    public static final int f8772r = 3;
+    public static final int f9558r = 3;
 
     /* renamed from: s, reason: collision with root package name */
-    public static final int f8773s = 4;
+    public static final int f9559s = 4;
 
     /* renamed from: t, reason: collision with root package name */
-    public static final int f8774t = 0;
+    public static final int f9560t = 0;
 
     /* renamed from: u, reason: collision with root package name */
-    public static final int f8775u = 1;
+    public static final int f9561u = 1;
 
     /* renamed from: v, reason: collision with root package name */
-    public static final int f8776v = 2;
+    public static final int f9562v = 2;
 
     public static abstract class a implements c {
         @Deprecated
@@ -60,7 +60,7 @@ public interface w {
         }
 
         @Override // com.anythink.basead.exoplayer.w.c
-        public void onLoadingChanged(boolean z3) {
+        public void onLoadingChanged(boolean z6) {
         }
 
         @Override // com.anythink.basead.exoplayer.w.c
@@ -72,7 +72,7 @@ public interface w {
         }
 
         @Override // com.anythink.basead.exoplayer.w.c
-        public void onPlayerStateChanged(boolean z3, int i) {
+        public void onPlayerStateChanged(boolean z6, int i) {
         }
 
         @Override // com.anythink.basead.exoplayer.w.c
@@ -88,7 +88,7 @@ public interface w {
         }
 
         @Override // com.anythink.basead.exoplayer.w.c
-        public void onShuffleModeEnabledChanged(boolean z3) {
+        public void onShuffleModeEnabledChanged(boolean z6) {
         }
 
         @Override // com.anythink.basead.exoplayer.w.c
@@ -105,13 +105,13 @@ public interface w {
     }
 
     public interface c {
-        void onLoadingChanged(boolean z3);
+        void onLoadingChanged(boolean z6);
 
         void onPlaybackParametersChanged(v vVar);
 
         void onPlayerError(com.anythink.basead.exoplayer.g gVar);
 
-        void onPlayerStateChanged(boolean z3, int i);
+        void onPlayerStateChanged(boolean z6, int i);
 
         void onPositionDiscontinuity(int i);
 
@@ -119,7 +119,7 @@ public interface w {
 
         void onSeekProcessed();
 
-        void onShuffleModeEnabledChanged(boolean z3);
+        void onShuffleModeEnabledChanged(boolean z6);
 
         void onTimelineChanged(ae aeVar, Object obj, int i);
 
@@ -179,9 +179,9 @@ public interface w {
 
     Object G();
 
-    void a(int i6);
+    void a(int i4);
 
-    void a(int i6, long j6);
+    void a(int i4, long j6);
 
     void a(long j6);
 
@@ -189,21 +189,21 @@ public interface w {
 
     void a(c cVar);
 
-    void a(boolean z3);
+    void a(boolean z6);
 
     g b();
 
-    void b(int i6);
+    void b(int i4);
 
     void b(c cVar);
 
-    void b(boolean z3);
+    void b(boolean z6);
 
-    int c(int i6);
+    int c(int i4);
 
     e c();
 
-    void c(boolean z3);
+    void c(boolean z6);
 
     int d();
 

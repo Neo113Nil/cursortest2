@@ -4,17 +4,17 @@ package K;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public boolean f1477a;
+    public boolean f1586a;
 
     /* renamed from: b, reason: collision with root package name */
-    public e f1478b;
+    public e f1587b;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f1479c;
+    public boolean f1588c;
 
     public final void a(e eVar) {
         synchronized (this) {
-            while (this.f1479c) {
+            while (this.f1588c) {
                 try {
                     try {
                         wait();
@@ -23,11 +23,11 @@ public final class f {
                 } finally {
                 }
             }
-            if (this.f1478b == eVar) {
+            if (this.f1587b == eVar) {
                 return;
             }
-            this.f1478b = eVar;
-            if (this.f1477a) {
+            this.f1587b = eVar;
+            if (this.f1586a) {
                 eVar.a();
             }
         }

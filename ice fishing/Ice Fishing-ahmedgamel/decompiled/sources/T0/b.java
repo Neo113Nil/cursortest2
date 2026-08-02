@@ -1,53 +1,52 @@
 package T0;
 
-import O2.AbstractRunnableC0368s;
 import androidx.work.impl.WorkDatabase;
 import java.util.Iterator;
 import java.util.UUID;
 
 /* loaded from: classes.dex */
-public final class b extends AbstractRunnableC0368s {
+public final class b extends Q2.r {
 
     /* renamed from: v, reason: collision with root package name */
-    public final /* synthetic */ int f3025v;
+    public final /* synthetic */ int f3108v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final /* synthetic */ K0.p f3026w;
+    public final /* synthetic */ K0.p f3109w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final /* synthetic */ Object f3027x;
+    public final /* synthetic */ Object f3110x;
 
     public /* synthetic */ b(K0.p pVar, Object obj, int i) {
-        this.f3025v = i;
-        this.f3026w = pVar;
-        this.f3027x = obj;
+        this.f3108v = i;
+        this.f3109w = pVar;
+        this.f3110x = obj;
     }
 
-    @Override // O2.AbstractRunnableC0368s
+    @Override // Q2.r
     public final void b() {
         WorkDatabase workDatabase;
-        switch (this.f3025v) {
+        switch (this.f3108v) {
             case 0:
-                K0.p pVar = this.f3026w;
-                workDatabase = pVar.f1534c;
+                K0.p pVar = this.f3109w;
+                workDatabase = pVar.f1643c;
                 workDatabase.c();
                 try {
-                    AbstractRunnableC0368s.a(pVar, ((UUID) this.f3027x).toString());
+                    Q2.r.a(pVar, ((UUID) this.f3110x).toString());
                     workDatabase.o();
                     workDatabase.k();
-                    K0.i.a(pVar.f1533b, pVar.f1534c, pVar.f1536e);
+                    K0.i.a(pVar.f1642b, pVar.f1643c, pVar.f1645e);
                     return;
                 } finally {
                     workDatabase.k();
                 }
             default:
-                K0.p pVar2 = this.f3026w;
-                workDatabase = pVar2.f1534c;
+                K0.p pVar2 = this.f3109w;
+                workDatabase = pVar2.f1643c;
                 workDatabase.c();
                 try {
-                    Iterator it = workDatabase.t().f((String) this.f3027x).iterator();
+                    Iterator it = workDatabase.t().f((String) this.f3110x).iterator();
                     while (it.hasNext()) {
-                        AbstractRunnableC0368s.a(pVar2, (String) it.next());
+                        Q2.r.a(pVar2, (String) it.next());
                     }
                     workDatabase.o();
                     return;

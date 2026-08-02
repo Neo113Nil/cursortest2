@@ -16,25 +16,25 @@ import java.util.Objects;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f8738a = "RequirementsWatcher";
+    private static final String f9524a = "RequirementsWatcher";
 
     /* renamed from: b, reason: collision with root package name */
-    private final Context f8739b;
+    private final Context f9525b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final c f8740c;
+    private final c f9526c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final com.anythink.basead.exoplayer.scheduler.a f8741d;
+    private final com.anythink.basead.exoplayer.scheduler.a f9527d;
 
     /* renamed from: e, reason: collision with root package name */
-    private C0037b f8742e;
+    private C0037b f9528e;
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f8743f;
+    private boolean f9529f;
 
     /* renamed from: g, reason: collision with root package name */
-    private a f8744g;
+    private a f9530g;
 
     public final class a extends ConnectivityManager.NetworkCallback {
         private a() {
@@ -86,38 +86,38 @@ public final class b {
     }
 
     private b(Context context, c cVar, com.anythink.basead.exoplayer.scheduler.a aVar) {
-        this.f8741d = aVar;
-        this.f8740c = cVar;
-        this.f8739b = context.getApplicationContext();
+        this.f9527d = aVar;
+        this.f9526c = cVar;
+        this.f9525b = context.getApplicationContext();
         toString();
     }
 
     private void b() {
-        this.f8739b.unregisterReceiver(this.f8742e);
-        this.f8742e = null;
-        if (this.f8744g != null && af.f8346a >= 21) {
-            ((ConnectivityManager) this.f8739b.getSystemService("connectivity")).unregisterNetworkCallback(this.f8744g);
-            this.f8744g = null;
+        this.f9525b.unregisterReceiver(this.f9528e);
+        this.f9528e = null;
+        if (this.f9530g != null && af.f9132a >= 21) {
+            ((ConnectivityManager) this.f9525b.getSystemService("connectivity")).unregisterNetworkCallback(this.f9530g);
+            this.f9530g = null;
         }
         toString();
     }
 
     private com.anythink.basead.exoplayer.scheduler.a c() {
-        return this.f8741d;
+        return this.f9527d;
     }
 
     private void d() {
-        ConnectivityManager connectivityManager = (ConnectivityManager) this.f8739b.getSystemService("connectivity");
+        ConnectivityManager connectivityManager = (ConnectivityManager) this.f9525b.getSystemService("connectivity");
         NetworkRequest build = new NetworkRequest.Builder().addCapability(16).build();
         a aVar = new a(this, (byte) 0);
-        this.f8744g = aVar;
+        this.f9530g = aVar;
         connectivityManager.registerNetworkCallback(build, aVar);
     }
 
     private void e() {
-        if (af.f8346a >= 21) {
-            ((ConnectivityManager) this.f8739b.getSystemService("connectivity")).unregisterNetworkCallback(this.f8744g);
-            this.f8744g = null;
+        if (af.f9132a >= 21) {
+            ((ConnectivityManager) this.f9525b.getSystemService("connectivity")).unregisterNetworkCallback(this.f9530g);
+            this.f9530g = null;
         }
     }
 
@@ -136,23 +136,23 @@ public final class b {
         a(true);
         IntentFilter intentFilter = new IntentFilter();
         byte b9 = 0;
-        if (this.f8741d.a() != 0) {
-            if (af.f8346a >= 23) {
-                ConnectivityManager connectivityManager = (ConnectivityManager) this.f8739b.getSystemService("connectivity");
+        if (this.f9527d.a() != 0) {
+            if (af.f9132a >= 23) {
+                ConnectivityManager connectivityManager = (ConnectivityManager) this.f9525b.getSystemService("connectivity");
                 NetworkRequest build = new NetworkRequest.Builder().addCapability(16).build();
                 a aVar = new a(this, b9);
-                this.f8744g = aVar;
+                this.f9530g = aVar;
                 connectivityManager.registerNetworkCallback(build, aVar);
             } else {
                 intentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
             }
         }
-        if (this.f8741d.b()) {
+        if (this.f9527d.b()) {
             intentFilter.addAction("android.intent.action.ACTION_POWER_CONNECTED");
             intentFilter.addAction("android.intent.action.ACTION_POWER_DISCONNECTED");
         }
-        if (this.f8741d.c()) {
-            if (af.f8346a >= 23) {
+        if (this.f9527d.c()) {
+            if (af.f9132a >= 23) {
                 intentFilter.addAction("android.os.action.DEVICE_IDLE_MODE_CHANGED");
             } else {
                 intentFilter.addAction("android.intent.action.SCREEN_ON");
@@ -160,16 +160,16 @@ public final class b {
             }
         }
         C0037b c0037b = new C0037b(this, b9);
-        this.f8742e = c0037b;
-        this.f8739b.registerReceiver(c0037b, intentFilter, null, new Handler());
+        this.f9528e = c0037b;
+        this.f9525b.registerReceiver(c0037b, intentFilter, null, new Handler());
         toString();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(boolean z3) {
-        boolean a9 = this.f8741d.a(this.f8739b);
-        if (z3 || a9 != this.f8743f) {
-            this.f8743f = a9;
+    public void a(boolean z6) {
+        boolean a9 = this.f9527d.a(this.f9525b);
+        if (z6 || a9 != this.f9529f) {
+            this.f9529f = a9;
         }
     }
 }

@@ -9,16 +9,16 @@ import java.util.ArrayList;
 public final class d extends Drawable.ConstantState {
 
     /* renamed from: a, reason: collision with root package name */
-    public p f659a;
+    public p f639a;
 
     /* renamed from: b, reason: collision with root package name */
-    public AnimatorSet f660b;
+    public AnimatorSet f640b;
 
     /* renamed from: c, reason: collision with root package name */
-    public ArrayList f661c;
+    public ArrayList f641c;
 
     /* renamed from: d, reason: collision with root package name */
-    public s.b f662d;
+    public s.b f642d;
 
     @Override // android.graphics.drawable.Drawable.ConstantState
     public final int getChangingConfigurations() {

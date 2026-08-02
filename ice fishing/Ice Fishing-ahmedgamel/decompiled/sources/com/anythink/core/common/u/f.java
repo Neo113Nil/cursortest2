@@ -1,7 +1,7 @@
 package com.anythink.core.common.u;
 
-import D.y;
 import android.content.Context;
+import com.IceFishing.LiveIceFishing.k;
 import com.anythink.core.common.h.u;
 import com.anythink.core.common.m;
 import com.anythink.core.common.m.d.d;
@@ -14,25 +14,25 @@ import java.util.List;
 public class f extends m<u> {
 
     /* renamed from: g, reason: collision with root package name */
-    private static volatile f f16549g;
+    private static volatile f f17336g;
 
     private f(Context context) {
         super(context);
     }
 
     public static f a(Context context) {
-        if (f16549g == null) {
+        if (f17336g == null) {
             synchronized (f.class) {
                 try {
-                    if (f16549g == null) {
-                        f16549g = new f(context);
+                    if (f17336g == null) {
+                        f17336g = new f(context);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16549g;
+        return f17336g;
     }
 
     @Override // com.anythink.core.common.m
@@ -42,22 +42,22 @@ public class f extends m<u> {
         while (it.hasNext()) {
             arrayList.add(it.next().a().toString());
         }
-        com.anythink.core.d.b g4 = y.g(y.h());
-        if (g4 != null) {
-            if (g4.G() != 1) {
-                com.anythink.core.common.m.d dVar = new com.anythink.core.common.m.d(this.f14394d, g4.G(), arrayList);
+        com.anythink.core.d.b k9 = k.k(k.l());
+        if (k9 != null) {
+            if (k9.G() != 1) {
+                com.anythink.core.common.m.d dVar = new com.anythink.core.common.m.d(this.f15180d, k9.G(), arrayList);
                 dVar.s();
                 dVar.a(0, (q) null);
                 return;
             } else {
                 com.anythink.core.common.m.d.a aVar = new com.anythink.core.common.m.d.a(arrayList);
-                aVar.a(1, g4.F());
+                aVar.a(1, k9.F());
                 aVar.a();
                 aVar.a((d.a) null);
                 return;
             }
         }
-        com.anythink.core.common.m.d dVar2 = new com.anythink.core.common.m.d(this.f14394d, 0, arrayList);
+        com.anythink.core.common.m.d dVar2 = new com.anythink.core.common.m.d(this.f15180d, 0, arrayList);
         dVar2.s();
         dVar2.a(0, (q) null);
     }

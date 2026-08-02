@@ -18,19 +18,19 @@ import java.io.FileInputStream;
 public class k extends WebViewClient {
 
     /* renamed from: a, reason: collision with root package name */
-    g f11521a;
+    g f12307a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final String f11522b = "k";
+    private final String f12308b = "k";
 
     /* renamed from: c, reason: collision with root package name */
-    private c f11523c;
+    private c f12309c;
 
     /* renamed from: d, reason: collision with root package name */
-    private String f11524d;
+    private String f12310d;
 
     private void a(WTWebView wTWebView) {
-        this.f11521a = new g(wTWebView);
+        this.f12307a = new g(wTWebView);
     }
 
     @Override // android.webkit.WebViewClient
@@ -41,8 +41,8 @@ public class k extends WebViewClient {
     @Override // android.webkit.WebViewClient
     public void onPageStarted(WebView webView, String str, Bitmap bitmap) {
         super.onPageStarted(webView, str, bitmap);
-        this.f11524d = str;
-        c cVar = this.f11523c;
+        this.f12310d = str;
+        c cVar = this.f12309c;
         if (cVar != null) {
             cVar.a(webView, str, bitmap);
         }
@@ -51,7 +51,7 @@ public class k extends WebViewClient {
     @Override // android.webkit.WebViewClient
     public void onReceivedError(WebView webView, int i, String str, String str2) {
         super.onReceivedError(webView, i, str, str2);
-        c cVar = this.f11523c;
+        c cVar = this.f12309c;
         if (cVar != null) {
             cVar.a(webView, i, str, str2);
         }
@@ -61,7 +61,7 @@ public class k extends WebViewClient {
     public void onReceivedSslError(WebView webView, SslErrorHandler sslErrorHandler, SslError sslError) {
         super.onReceivedSslError(webView, sslErrorHandler, sslError);
         sslError.toString();
-        c cVar = this.f11523c;
+        c cVar = this.f12309c;
         if (cVar != null) {
             cVar.a(webView, sslErrorHandler, sslError);
         }
@@ -84,7 +84,7 @@ public class k extends WebViewClient {
             } catch (Throwable unused) {
             }
         }
-        c cVar = this.f11523c;
+        c cVar = this.f12309c;
         if (cVar != null) {
             cVar.a(webView);
         }
@@ -122,15 +122,15 @@ public class k extends WebViewClient {
 
     @Override // android.webkit.WebViewClient
     public boolean shouldOverrideUrlLoading(WebView webView, String str) {
-        if (TextUtils.isEmpty(str) || !str.startsWith(h.f11510a)) {
-            c cVar = this.f11523c;
+        if (TextUtils.isEmpty(str) || !str.startsWith(h.f12296a)) {
+            c cVar = this.f12309c;
             if (cVar != null) {
                 cVar.a(webView, str);
             }
             return super.shouldOverrideUrlLoading(webView, str);
         }
-        if (!TextUtils.isEmpty(str) && str.startsWith(h.f11510a) && this.f11521a.a(h.f11510a)) {
-            this.f11521a.c(str);
+        if (!TextUtils.isEmpty(str) && str.startsWith(h.f12296a) && this.f12307a.a(h.f12296a)) {
+            this.f12307a.c(str);
         }
         return true;
     }
@@ -149,6 +149,6 @@ public class k extends WebViewClient {
     }
 
     public final void a(c cVar) {
-        this.f11523c = cVar;
+        this.f12309c = cVar;
     }
 }

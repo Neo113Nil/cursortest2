@@ -7,7 +7,7 @@ import kotlin.jvm.internal.h;
 public abstract class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Method f649a;
+    public static final Method f629a;
 
     static {
         Method method;
@@ -31,9 +31,9 @@ public abstract class a {
             }
             i++;
         }
-        f649a = method;
+        f629a = method;
         int length2 = methods.length;
-        for (int i6 = 0; i6 < length2 && !h.a(methods[i6].getName(), "getSuppressed"); i6++) {
+        for (int i4 = 0; i4 < length2 && !h.a(methods[i4].getName(), "getSuppressed"); i4++) {
         }
     }
 }

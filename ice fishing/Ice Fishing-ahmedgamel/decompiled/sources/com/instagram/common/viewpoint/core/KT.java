@@ -27,10 +27,10 @@ public final class KT {
     public int A0A = -1;
     public float A01 = Float.MAX_VALUE;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0J, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 111);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0J, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 111);
         }
         return new String(copyOfRange);
     }
@@ -139,7 +139,7 @@ public final class KT {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private KT A00(KT kt, boolean z3) {
+    private KT A00(KT kt, boolean z6) {
         if (kt != null) {
             if (!this.A0I && kt.A0I) {
                 A0H(kt.A04);
@@ -249,13 +249,13 @@ public final class KT {
         return this.A0E;
     }
 
-    public final KT A0E(float f3) {
-        this.A00 = f3;
+    public final KT A0E(float f2) {
+        this.A00 = f2;
         return this;
     }
 
-    public final KT A0F(float f3) {
-        this.A01 = f3;
+    public final KT A0F(float f2) {
+        this.A01 = f2;
         return this;
     }
 
@@ -315,28 +315,28 @@ public final class KT {
         return this;
     }
 
-    public final KT A0R(boolean z3) {
-        this.A03 = z3 ? 1 : 0;
+    public final KT A0R(boolean z6) {
+        this.A03 = z6 ? 1 : 0;
         return this;
     }
 
-    public final KT A0S(boolean z3) {
-        this.A06 = z3 ? 1 : 0;
+    public final KT A0S(boolean z6) {
+        this.A06 = z6 ? 1 : 0;
         return this;
     }
 
-    public final KT A0T(boolean z3) {
-        this.A07 = z3 ? 1 : 0;
+    public final KT A0T(boolean z6) {
+        this.A07 = z6 ? 1 : 0;
         return this;
     }
 
-    public final KT A0U(boolean z3) {
-        this.A0A = z3 ? 1 : 0;
+    public final KT A0U(boolean z6) {
+        this.A0A = z6 ? 1 : 0;
         return this;
     }
 
-    public final KT A0V(boolean z3) {
-        this.A0B = z3 ? 1 : 0;
+    public final KT A0V(boolean z6) {
+        this.A0B = z6 ? 1 : 0;
         return this;
     }
 

@@ -6,63 +6,63 @@ import android.view.View;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private View f11908a;
+    private View f12694a;
 
     /* renamed from: b, reason: collision with root package name */
-    private View f11909b;
+    private View f12695b;
 
     /* renamed from: c, reason: collision with root package name */
-    private View f11910c;
+    private View f12696c;
 
     /* renamed from: d, reason: collision with root package name */
-    private View f11911d;
+    private View f12697d;
 
     /* renamed from: e, reason: collision with root package name */
-    private View f11912e;
+    private View f12698e;
 
     /* renamed from: f, reason: collision with root package name */
-    private View f11913f;
+    private View f12699f;
 
     /* renamed from: g, reason: collision with root package name */
-    private View f11914g;
+    private View f12700g;
 
     /* renamed from: h, reason: collision with root package name */
-    private View f11915h;
+    private View f12701h;
     private View i;
 
     /* renamed from: j, reason: collision with root package name */
-    private View f11916j;
+    private View f12702j;
 
     private void j(View view) {
-        this.f11915h = view;
+        this.f12701h = view;
     }
 
     public final View a() {
-        return this.f11909b;
+        return this.f12695b;
     }
 
     public final View b() {
-        return this.f11910c;
+        return this.f12696c;
     }
 
     public final View c() {
-        return this.f11911d;
+        return this.f12697d;
     }
 
     public final View d() {
-        return this.f11912e;
+        return this.f12698e;
     }
 
     public final View e() {
-        return this.f11913f;
+        return this.f12699f;
     }
 
     public final View f() {
-        return this.f11914g;
+        return this.f12700g;
     }
 
     public final View g() {
-        return this.f11915h;
+        return this.f12701h;
     }
 
     public final View h() {
@@ -70,31 +70,31 @@ public class b {
     }
 
     public final View i() {
-        return this.f11916j;
+        return this.f12702j;
     }
 
     public final void a(View view) {
-        this.f11909b = view;
+        this.f12695b = view;
     }
 
     public final void b(View view) {
-        this.f11910c = view;
+        this.f12696c = view;
     }
 
     public final void c(View view) {
-        this.f11911d = view;
+        this.f12697d = view;
     }
 
     public final void d(View view) {
-        this.f11912e = view;
+        this.f12698e = view;
     }
 
     public final void e(View view) {
-        this.f11913f = view;
+        this.f12699f = view;
     }
 
     public final void f(View view) {
-        this.f11914g = view;
+        this.f12700g = view;
     }
 
     public final void g(View view) {
@@ -102,14 +102,14 @@ public class b {
     }
 
     public final void h(View view) {
-        this.f11916j = view;
+        this.f12702j = view;
     }
 
     public final void i(View view) {
-        this.f11908a = view;
+        this.f12694a = view;
     }
 
     public final View j() {
-        return this.f11908a;
+        return this.f12694a;
     }
 }

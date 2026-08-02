@@ -4,13 +4,13 @@ package com.anythink.core.common.a;
 public final class k extends j {
 
     /* renamed from: c, reason: collision with root package name */
-    String f12190c;
+    String f12976c;
 
     public final String c() {
-        return this.f12190c;
+        return this.f12976c;
     }
 
     public final void c(String str) {
-        this.f12190c = str;
+        this.f12976c = str;
     }
 }

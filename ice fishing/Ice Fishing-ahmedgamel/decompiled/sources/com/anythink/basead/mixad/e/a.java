@@ -6,16 +6,16 @@ import com.anythink.core.common.d.t;
 import com.anythink.core.common.h.w;
 import com.anythink.core.common.h.y;
 import com.anythink.core.common.l.g.d;
+import com.google.android.gms.internal.ads.Wv;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import u1.h;
 
 /* loaded from: classes.dex */
 public class a extends w implements Serializable {
 
     /* renamed from: a, reason: collision with root package name */
-    final String f9558a = "a";
+    final String f10344a = "a";
 
     public a(d dVar) {
         o(dVar.getIconImageUrl());
@@ -65,81 +65,81 @@ public class a extends w implements Serializable {
 
     public String toString() {
         StringBuilder sb = new StringBuilder("ThirdPartyAdContent{, offerId='");
-        sb.append(this.f14138m);
+        sb.append(this.f14924m);
         sb.append("', creativeId='");
-        sb.append(this.f14139n);
+        sb.append(this.f14925n);
         sb.append("', title='");
-        sb.append(this.f14140o);
+        sb.append(this.f14926o);
         sb.append("', desc='");
-        sb.append(this.f14141p);
+        sb.append(this.f14927p);
         sb.append("', iconUrl='");
-        sb.append(this.f14142q);
+        sb.append(this.f14928q);
         sb.append("', mainImageUrl='");
-        sb.append(this.f14143r);
+        sb.append(this.f14929r);
         sb.append("', endCardImageUrl='");
-        sb.append(this.f14144s);
+        sb.append(this.f14930s);
         sb.append("', adChoiceUrl='");
-        sb.append(this.f14145t);
+        sb.append(this.f14931t);
         sb.append("', ctaText='");
-        sb.append(this.f14146u);
+        sb.append(this.f14932u);
         sb.append("', videoUrl='");
-        sb.append(this.f14147v);
+        sb.append(this.f14933v);
         sb.append("', previewUrl='");
-        sb.append(this.f14148w);
+        sb.append(this.f14934w);
         sb.append("', deeplinkUrl='");
-        sb.append(this.f14149x);
+        sb.append(this.f14935x);
         sb.append("', clickUrl='");
-        sb.append(this.f14150y);
+        sb.append(this.f14936y);
         sb.append("', pkgName='");
-        sb.append(this.f14151z);
+        sb.append(this.f14937z);
         sb.append("', unitType=");
-        sb.append(this.f14111A);
+        sb.append(this.f14897A);
         sb.append(", clickType=");
-        sb.append(this.f14112D);
+        sb.append(this.f14898D);
         sb.append(", rating=");
-        sb.append(this.f14113E);
+        sb.append(this.f14899E);
         sb.append(", adLogoTitle='");
-        sb.append(this.f14114F);
+        sb.append(this.f14900F);
         sb.append("', offerNetworkFirmId=");
-        sb.append(this.f14115G);
+        sb.append(this.f14901G);
         sb.append(", jumpUrl='");
-        sb.append(this.f14116H);
+        sb.append(this.f14902H);
         sb.append("', publisher='");
-        sb.append(this.f14117I);
+        sb.append(this.f14903I);
         sb.append("', appVersion='");
         sb.append(this.J);
         sb.append("', privacyUrl='");
-        sb.append(this.f14118K);
+        sb.append(this.f14904K);
         sb.append("', permissionUrl='");
-        sb.append(this.f14119L);
+        sb.append(this.f14905L);
         sb.append("', functionUrl='");
-        sb.append(this.f14120M);
+        sb.append(this.f14906M);
         sb.append("', templateVersion='");
-        sb.append(this.f14121N);
+        sb.append(this.f14907N);
         sb.append("', adLogo=");
-        sb.append(this.f14122O);
+        sb.append(this.f14908O);
         sb.append(", baseAdSetting=");
-        sb.append(this.f14123P);
+        sb.append(this.f14909P);
         sb.append(", requestId='");
-        sb.append(this.f14124Q);
+        sb.append(this.f14910Q);
         sb.append("', webControlObject='");
-        sb.append(this.f14125R);
+        sb.append(this.f14911R);
         sb.append("', protocolType=");
-        sb.append(this.f14126S);
+        sb.append(this.f14912S);
         sb.append(", offerHtml='");
-        sb.append(this.f14127T);
+        sb.append(this.f14913T);
         sb.append("', offerUrl='");
-        sb.append(this.f14128U);
+        sb.append(this.f14914U);
         sb.append("', wxUserName='");
-        sb.append(this.f14129V);
+        sb.append(this.f14915V);
         sb.append("', wxPath='");
-        sb.append(this.f14130W);
+        sb.append(this.f14916W);
         sb.append("', offerWidth=");
-        sb.append(this.f14131X);
+        sb.append(this.f14917X);
         sb.append(", offerHeight=");
         sb.append(this.Y);
         sb.append(", mApkDownloadStatus=");
-        sb.append(this.f14132Z);
+        sb.append(this.f14918Z);
         sb.append(", mNativeMainImageWidth=");
         sb.append(this.aa);
         sb.append(", mNativeMainImageHeight=");
@@ -153,7 +153,7 @@ public class a extends w implements Serializable {
         sb.append(", deeplinkPackageInstallState=");
         sb.append(this.af);
         sb.append(", mraidJSUrl='");
-        return h.g(sb, this.ah, "'}");
+        return Wv.i(sb, this.ah, "'}");
     }
 
     @Override // com.anythink.core.common.h.w

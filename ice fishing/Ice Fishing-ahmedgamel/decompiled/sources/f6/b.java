@@ -6,50 +6,50 @@ package f6;
 public final class b {
 
     /* renamed from: A, reason: collision with root package name */
-    public static final b f37514A;
+    public static final b f37476A;
 
     /* renamed from: B, reason: collision with root package name */
-    public static final /* synthetic */ b[] f37515B;
+    public static final /* synthetic */ b[] f37477B;
 
     /* renamed from: n, reason: collision with root package name */
-    public static final b f37516n;
+    public static final b f37478n;
 
     /* renamed from: u, reason: collision with root package name */
-    public static final b f37517u;
+    public static final b f37479u;
 
     /* renamed from: v, reason: collision with root package name */
-    public static final b f37518v;
+    public static final b f37480v;
 
     /* renamed from: w, reason: collision with root package name */
-    public static final b f37519w;
+    public static final b f37481w;
 
     /* renamed from: x, reason: collision with root package name */
-    public static final b f37520x;
+    public static final b f37482x;
 
     /* renamed from: y, reason: collision with root package name */
-    public static final b f37521y;
+    public static final b f37483y;
 
     /* renamed from: z, reason: collision with root package name */
-    public static final b f37522z;
+    public static final b f37484z;
 
     static {
         b bVar = new b("STRING", 0);
-        f37516n = bVar;
+        f37478n = bVar;
         b bVar2 = new b("BOOLEAN", 1);
-        f37517u = bVar2;
+        f37479u = bVar2;
         b bVar3 = new b("LONG", 2);
-        f37518v = bVar3;
+        f37480v = bVar3;
         b bVar4 = new b("DOUBLE", 3);
-        f37519w = bVar4;
+        f37481w = bVar4;
         b bVar5 = new b("STRING_ARRAY", 4);
-        f37520x = bVar5;
+        f37482x = bVar5;
         b bVar6 = new b("BOOLEAN_ARRAY", 5);
-        f37521y = bVar6;
+        f37483y = bVar6;
         b bVar7 = new b("LONG_ARRAY", 6);
-        f37522z = bVar7;
+        f37484z = bVar7;
         b bVar8 = new b("DOUBLE_ARRAY", 7);
-        f37514A = bVar8;
-        f37515B = new b[]{bVar, bVar2, bVar3, bVar4, bVar5, bVar6, bVar7, bVar8};
+        f37476A = bVar8;
+        f37477B = new b[]{bVar, bVar2, bVar3, bVar4, bVar5, bVar6, bVar7, bVar8};
     }
 
     public static b valueOf(String str) {
@@ -57,6 +57,6 @@ public final class b {
     }
 
     public static b[] values() {
-        return (b[]) f37515B.clone();
+        return (b[]) f37477B.clone();
     }
 }

@@ -14,7 +14,7 @@ import org.json.JSONObject;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19824a = "BannerCallJS";
+    private static final String f20611a = "BannerCallJS";
 
     private static void a(WebView webView) {
         h.a();
@@ -26,10 +26,10 @@ public final class a {
         com.anythink.core.express.d.a.a(webView);
     }
 
-    private static void a(WebView webView, float f3, float f9) {
+    private static void a(WebView webView, float f2, float f9) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("startX", f3);
+            jSONObject.put("startX", f2);
             jSONObject.put("startY", f9);
             jSONObject.put("scale", v.c(t.b().g()));
             String encodeToString = Base64.encodeToString(jSONObject.toString().getBytes(), 2);
@@ -39,54 +39,54 @@ public final class a {
         }
     }
 
-    private static void a(WebView webView, int i, int i6) {
+    private static void a(WebView webView, int i, int i4) {
         try {
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.a(webView, i, i6);
+            com.anythink.core.express.b.a.a(webView, i, i4);
         } catch (Throwable unused) {
         }
     }
 
-    private static void a(WindVaneWebView windVaneWebView, boolean z3) {
+    private static void a(WindVaneWebView windVaneWebView, boolean z6) {
         try {
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.b(windVaneWebView, z3 ? "true" : "false");
+            com.anythink.core.express.b.a.b(windVaneWebView, z6 ? "true" : "false");
         } catch (Throwable unused) {
         }
     }
 
-    private static void a(WebView webView, int i, int i6, int i9, int i10) {
+    private static void a(WebView webView, int i, int i4, int i6, int i9) {
         String str;
         try {
-            int i11 = t.b().g().getResources().getConfiguration().orientation;
+            int i10 = t.b().g().getResources().getConfiguration().orientation;
             JSONObject jSONObject = new JSONObject();
-            if (i11 == 2) {
+            if (i10 == 2) {
                 str = "landscape";
             } else {
-                str = i11 == 1 ? "portrait" : "undefined";
+                str = i10 == 1 ? "portrait" : "undefined";
             }
             jSONObject.put("orientation", str);
             jSONObject.put("locked", "true");
-            float f3 = n.f(t.b().g());
-            float g4 = n.g(t.b().g());
-            HashMap h9 = n.h(t.b().g());
-            int intValue = ((Integer) h9.get("width")).intValue();
-            int intValue2 = ((Integer) h9.get("height")).intValue();
+            float f2 = n.f(t.b().g());
+            float g9 = n.g(t.b().g());
+            HashMap h3 = n.h(t.b().g());
+            int intValue = ((Integer) h3.get("width")).intValue();
+            int intValue2 = ((Integer) h3.get("height")).intValue();
             HashMap hashMap = new HashMap();
-            hashMap.put(com.anythink.core.express.b.a.f17525a, com.anythink.core.express.b.a.f17534k);
-            hashMap.put(com.anythink.core.express.b.a.f17526b, com.anythink.core.express.b.a.f17530f);
-            hashMap.put(com.anythink.core.express.b.a.f17527c, "true");
-            hashMap.put(com.anythink.core.express.b.a.f17528d, jSONObject);
+            hashMap.put(com.anythink.core.express.b.a.f18312a, com.anythink.core.express.b.a.f18321k);
+            hashMap.put(com.anythink.core.express.b.a.f18313b, com.anythink.core.express.b.a.f18317f);
+            hashMap.put(com.anythink.core.express.b.a.f18314c, "true");
+            hashMap.put(com.anythink.core.express.b.a.f18315d, jSONObject);
             com.anythink.core.express.b.a.a();
             float f9 = i;
-            float f10 = i6;
-            float f11 = i9;
-            float f12 = i10;
+            float f10 = i4;
+            float f11 = i6;
+            float f12 = i9;
             com.anythink.core.express.b.a.a(webView, f9, f10, f11, f12);
             com.anythink.core.express.b.a.a();
             com.anythink.core.express.b.a.b(webView, f9, f10, f11, f12);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.b(webView, f3, g4);
+            com.anythink.core.express.b.a.b(webView, f2, g9);
             com.anythink.core.express.b.a.a();
             com.anythink.core.express.b.a.c(webView, intValue, intValue2);
             com.anythink.core.express.b.a.a();

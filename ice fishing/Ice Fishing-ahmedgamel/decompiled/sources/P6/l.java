@@ -6,15 +6,15 @@ import N6.o;
 public final class l extends N6.l {
 
     /* renamed from: b, reason: collision with root package name */
-    public final long f2594b;
+    public final long f2429b;
 
     public l(long j6) {
-        super(N6.d.a(j6) + U6.a.f3207c.f1955c);
-        this.f2594b = j6;
+        super(N6.d.a(j6) + U6.a.f3330c.f2043c);
+        this.f2429b = j6;
     }
 
     @Override // N6.f
     public final void c(o oVar) {
-        oVar.G(U6.a.f3207c, this.f2594b);
+        oVar.G(U6.a.f3330c, this.f2429b);
     }
 }

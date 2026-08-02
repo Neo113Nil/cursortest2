@@ -16,16 +16,16 @@ import com.anythink.expressad.foundation.f.b;
 public abstract class ATBaseActivity extends Activity {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f17703a = "ATBaseActivity";
+    private static final String f18490a = "ATBaseActivity";
 
     /* renamed from: b, reason: collision with root package name */
-    private OrientationEventListener f17704b;
+    private OrientationEventListener f18491b;
 
     /* renamed from: c, reason: collision with root package name */
-    private Display f17705c;
+    private Display f18492c;
 
     /* renamed from: d, reason: collision with root package name */
-    private int f17706d = -1;
+    private int f18493d = -1;
 
     /* renamed from: com.anythink.expressad.activity.ATBaseActivity$2, reason: invalid class name */
     public class AnonymousClass2 extends OrientationEventListener {
@@ -39,22 +39,22 @@ public abstract class ATBaseActivity extends Activity {
             if (c9 < 0) {
                 c9 = 0;
             }
-            if (c9 == 1 && ATBaseActivity.this.f17706d != 1) {
-                ATBaseActivity.this.f17706d = 1;
+            if (c9 == 1 && ATBaseActivity.this.f18493d != 1) {
+                ATBaseActivity.this.f18493d = 1;
                 ATBaseActivity.this.a();
                 return;
             }
-            if (c9 == 3 && ATBaseActivity.this.f17706d != 2) {
-                ATBaseActivity.this.f17706d = 2;
+            if (c9 == 3 && ATBaseActivity.this.f18493d != 2) {
+                ATBaseActivity.this.f18493d = 2;
                 ATBaseActivity.this.a();
-            } else if (c9 == 0 && ATBaseActivity.this.f17706d != 3) {
-                ATBaseActivity.this.f17706d = 3;
+            } else if (c9 == 0 && ATBaseActivity.this.f18493d != 3) {
+                ATBaseActivity.this.f18493d = 3;
                 ATBaseActivity.this.a();
             } else {
-                if (c9 != 2 || ATBaseActivity.this.f17706d == 4) {
+                if (c9 != 2 || ATBaseActivity.this.f18493d == 4) {
                     return;
                 }
-                ATBaseActivity.this.f17706d = 4;
+                ATBaseActivity.this.f18493d = 4;
                 ATBaseActivity.this.a();
             }
         }
@@ -76,7 +76,7 @@ public abstract class ATBaseActivity extends Activity {
         }
     }
 
-    public abstract void a(int i, int i6, int i9, int i10, int i11);
+    public abstract void a(int i, int i4, int i6, int i9, int i10);
 
     @Override // android.app.Activity
     public void onCreate(Bundle bundle) {
@@ -107,10 +107,10 @@ public abstract class ATBaseActivity extends Activity {
     @Override // android.app.Activity
     public void onDestroy() {
         super.onDestroy();
-        OrientationEventListener orientationEventListener = this.f17704b;
+        OrientationEventListener orientationEventListener = this.f18491b;
         if (orientationEventListener != null) {
             orientationEventListener.disable();
-            this.f17704b = null;
+            this.f18491b = null;
         }
     }
 
@@ -128,7 +128,7 @@ public abstract class ATBaseActivity extends Activity {
         } else {
             super.onResume();
         }
-        if (b.f19049c) {
+        if (b.f19836c) {
             return;
         }
         a();
@@ -136,34 +136,34 @@ public abstract class ATBaseActivity extends Activity {
     }
 
     @Override // android.app.Activity, android.view.Window.Callback
-    public void onWindowFocusChanged(boolean z3) {
-        super.onWindowFocusChanged(z3);
+    public void onWindowFocusChanged(boolean z6) {
+        super.onWindowFocusChanged(z6);
         d();
     }
 
     private void b() {
         AnonymousClass2 anonymousClass2 = new AnonymousClass2(this);
-        this.f17704b = anonymousClass2;
+        this.f18491b = anonymousClass2;
         if (anonymousClass2.canDetectOrientation()) {
-            this.f17704b.enable();
+            this.f18491b.enable();
         } else {
-            this.f17704b.disable();
-            this.f17704b = null;
+            this.f18491b.disable();
+            this.f18491b = null;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public int c() {
         Display display;
-        if (this.f17705c == null) {
+        if (this.f18492c == null) {
             if (Build.VERSION.SDK_INT >= 30) {
                 display = getDisplay();
-                this.f17705c = display;
+                this.f18492c = display;
             } else {
-                this.f17705c = ((WindowManager) getSystemService("window")).getDefaultDisplay();
+                this.f18492c = ((WindowManager) getSystemService("window")).getDefaultDisplay();
             }
         }
-        Display display2 = this.f17705c;
+        Display display2 = this.f18492c;
         if (display2 == null) {
             return -1;
         }
@@ -186,47 +186,47 @@ public abstract class ATBaseActivity extends Activity {
             */
             public final void run() {
                 int i;
+                int i4;
                 int i6;
-                int i9;
                 DisplayCutout displayCutout;
                 int safeInsetLeft;
                 int safeInsetBottom;
                 try {
-                    int i10 = Build.VERSION.SDK_INT;
+                    int i9 = Build.VERSION.SDK_INT;
                     WindowInsets rootWindowInsets = ATBaseActivity.this.getWindow().getDecorView().getRootWindowInsets();
-                    int i11 = -1;
-                    int i12 = 0;
-                    if (rootWindowInsets == null || i10 < 28 || displayCutout == null) {
+                    int i10 = -1;
+                    int i11 = 0;
+                    if (rootWindowInsets == null || i9 < 28 || displayCutout == null) {
                         i = 0;
+                        i4 = 0;
                         i6 = 0;
-                        i9 = 0;
                     } else {
                         safeInsetLeft = displayCutout.getSafeInsetLeft();
                         i = displayCutout.getSafeInsetRight();
-                        i6 = displayCutout.getSafeInsetTop();
+                        i4 = displayCutout.getSafeInsetTop();
                         safeInsetBottom = displayCutout.getSafeInsetBottom();
                         int c9 = ATBaseActivity.this.c();
-                        if (ATBaseActivity.this.f17706d == -1) {
-                            ATBaseActivity.this.f17706d = c9 == 0 ? 3 : c9 == 1 ? 1 : c9 == 2 ? 4 : c9 == 3 ? 2 : -1;
-                            int unused = ATBaseActivity.this.f17706d;
+                        if (ATBaseActivity.this.f18493d == -1) {
+                            ATBaseActivity.this.f18493d = c9 == 0 ? 3 : c9 == 1 ? 1 : c9 == 2 ? 4 : c9 == 3 ? 2 : -1;
+                            int unused = ATBaseActivity.this.f18493d;
                         }
                         if (c9 != 0) {
                             if (c9 == 1) {
-                                i11 = 90;
+                                i10 = 90;
                             } else if (c9 == 2) {
-                                i11 = 180;
+                                i10 = 180;
                             } else if (c9 == 3) {
-                                i11 = 270;
+                                i10 = 270;
                             }
-                            i9 = safeInsetBottom;
+                            i6 = safeInsetBottom;
                         } else {
-                            i9 = safeInsetBottom;
-                            i11 = 0;
+                            i6 = safeInsetBottom;
+                            i10 = 0;
                         }
-                        i12 = safeInsetLeft;
+                        i11 = safeInsetLeft;
                     }
-                    ATBaseActivity.this.a(i11, i12, i, i6, i9);
-                    if (ATBaseActivity.this.f17704b == null) {
+                    ATBaseActivity.this.a(i10, i11, i, i4, i6);
+                    if (ATBaseActivity.this.f18491b == null) {
                         ATBaseActivity.d(ATBaseActivity.this);
                     }
                 } catch (Throwable th) {
@@ -238,12 +238,12 @@ public abstract class ATBaseActivity extends Activity {
 
     public static /* synthetic */ void d(ATBaseActivity aTBaseActivity) {
         AnonymousClass2 anonymousClass2 = aTBaseActivity.new AnonymousClass2(aTBaseActivity);
-        aTBaseActivity.f17704b = anonymousClass2;
+        aTBaseActivity.f18491b = anonymousClass2;
         if (anonymousClass2.canDetectOrientation()) {
-            aTBaseActivity.f17704b.enable();
+            aTBaseActivity.f18491b.enable();
         } else {
-            aTBaseActivity.f17704b.disable();
-            aTBaseActivity.f17704b = null;
+            aTBaseActivity.f18491b.disable();
+            aTBaseActivity.f18491b = null;
         }
     }
 }

@@ -6,18 +6,18 @@ import java.util.Locale;
 public final class l {
 
     /* renamed from: b, reason: collision with root package name */
-    public static final l f1482b = new l(new m(k.a(new Locale[0])));
+    public static final l f1591b = new l(new m(k.a(new Locale[0])));
 
     /* renamed from: a, reason: collision with root package name */
-    public final m f1483a;
+    public final m f1592a;
 
     public l(m mVar) {
-        this.f1483a = mVar;
+        this.f1592a = mVar;
     }
 
     public static l a(String str) {
         if (str == null || str.isEmpty()) {
-            return f1482b;
+            return f1591b;
         }
         String[] split = str.split(",", -1);
         int length = split.length;
@@ -30,16 +30,16 @@ public final class l {
 
     public final boolean equals(Object obj) {
         if (obj instanceof l) {
-            return this.f1483a.equals(((l) obj).f1483a);
+            return this.f1592a.equals(((l) obj).f1592a);
         }
         return false;
     }
 
     public final int hashCode() {
-        return this.f1483a.f1484a.hashCode();
+        return this.f1592a.f1593a.hashCode();
     }
 
     public final String toString() {
-        return this.f1483a.f1484a.toString();
+        return this.f1592a.f1593a.toString();
     }
 }

@@ -8,23 +8,23 @@ public class g {
 
     /* renamed from: b, reason: collision with root package name */
     @SuppressLint({"StaticFieldLeak"})
-    private static g f36252b = new g();
+    private static g f37019b = new g();
 
     /* renamed from: a, reason: collision with root package name */
-    private Context f36253a;
+    private Context f37020a;
 
     private g() {
     }
 
     public static g b() {
-        return f36252b;
+        return f37019b;
     }
 
     public Context a() {
-        return this.f36253a;
+        return this.f37020a;
     }
 
     public void a(Context context) {
-        this.f36253a = context != null ? context.getApplicationContext() : null;
+        this.f37020a = context != null ? context.getApplicationContext() : null;
     }
 }

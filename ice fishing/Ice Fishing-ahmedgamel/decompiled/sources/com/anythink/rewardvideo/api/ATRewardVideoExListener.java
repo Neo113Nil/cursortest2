@@ -11,7 +11,7 @@ public interface ATRewardVideoExListener extends ATRewardVideoListener {
 
     void onAgainRewardFailed(ATAdInfo aTAdInfo);
 
-    void onDeeplinkCallback(ATAdInfo aTAdInfo, boolean z3);
+    void onDeeplinkCallback(ATAdInfo aTAdInfo, boolean z6);
 
     void onDownloadConfirm(Context context, ATAdInfo aTAdInfo, ATNetworkConfirmInfo aTNetworkConfirmInfo);
 

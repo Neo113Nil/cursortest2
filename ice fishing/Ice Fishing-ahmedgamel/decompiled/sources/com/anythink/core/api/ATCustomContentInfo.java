@@ -37,8 +37,8 @@ public class ATCustomContentInfo {
         return "ATCustomContentInfo{customContentString='" + this.customContentString + "', customContentDouble=" + this.customContentDouble + ", customContentObject=" + this.customContentObject + '}';
     }
 
-    public ATCustomContentInfo(double d2, Object obj) {
-        this.customContentDouble = d2;
+    public ATCustomContentInfo(double d9, Object obj) {
+        this.customContentDouble = d9;
         this.customContentObject = obj;
     }
 }

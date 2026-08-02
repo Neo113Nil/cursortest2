@@ -16,34 +16,34 @@ public interface b {
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public final long f6302a;
+        public final long f7088a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final ae f6303b;
+        public final ae f7089b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final int f6304c;
+        public final int f7090c;
 
         /* renamed from: d, reason: collision with root package name */
-        public final s.a f6305d;
+        public final s.a f7091d;
 
         /* renamed from: e, reason: collision with root package name */
-        public final long f6306e;
+        public final long f7092e;
 
         /* renamed from: f, reason: collision with root package name */
-        public final long f6307f;
+        public final long f7093f;
 
         /* renamed from: g, reason: collision with root package name */
-        public final long f6308g;
+        public final long f7094g;
 
         public a(long j6, ae aeVar, int i, s.a aVar, long j9, long j10, long j11) {
-            this.f6302a = j6;
-            this.f6303b = aeVar;
-            this.f6304c = i;
-            this.f6305d = aVar;
-            this.f6306e = j9;
-            this.f6307f = j10;
-            this.f6308g = j11;
+            this.f7088a = j6;
+            this.f7089b = aeVar;
+            this.f7090c = i;
+            this.f7091d = aVar;
+            this.f7092e = j9;
+            this.f7093f = j10;
+            this.f7094g = j11;
         }
     }
 
@@ -53,7 +53,7 @@ public interface b {
 
     void a(a aVar, int i);
 
-    void a(a aVar, int i, int i6);
+    void a(a aVar, int i, int i4);
 
     void a(a aVar, int i, long j6, long j9);
 
@@ -79,9 +79,9 @@ public interface b {
 
     void a(a aVar, Exception exc);
 
-    void a(a aVar, boolean z3);
+    void a(a aVar, boolean z6);
 
-    void a(a aVar, boolean z3, int i);
+    void a(a aVar, boolean z6, int i);
 
     void b();
 
@@ -89,11 +89,11 @@ public interface b {
 
     void b(a aVar, int i);
 
-    void b(a aVar, int i, int i6);
+    void b(a aVar, int i, int i4);
 
     void b(a aVar, t.c cVar);
 
-    void b(a aVar, boolean z3);
+    void b(a aVar, boolean z6);
 
     void c();
 

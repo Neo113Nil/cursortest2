@@ -10,14 +10,14 @@ import java.io.InputStreamReader;
 public final class f extends k {
 
     /* renamed from: a, reason: collision with root package name */
-    private final ag f14439a;
+    private final ag f15225a;
 
     public f(ag agVar) {
-        this.f14439a = agVar;
+        this.f15225a = agVar;
     }
 
     private InputStream d() {
-        ag agVar = this.f14439a;
+        ag agVar = this.f15225a;
         if (agVar != null) {
             return agVar.c().i();
         }
@@ -26,7 +26,7 @@ public final class f extends k {
 
     @Override // com.anythink.core.common.m.a.k
     public final long a() {
-        ag agVar = this.f14439a;
+        ag agVar = this.f15225a;
         if (agVar != null) {
             return agVar.b();
         }
@@ -36,10 +36,10 @@ public final class f extends k {
     @Override // com.anythink.core.common.m.a.k
     public final String b() {
         try {
-            ag agVar = this.f14439a;
+            ag agVar = this.f15225a;
             return agVar != null ? agVar.d() : null;
         } finally {
-            ag agVar2 = this.f14439a;
+            ag agVar2 = this.f15225a;
             if (agVar2 != null) {
                 agVar2.close();
             }
@@ -50,7 +50,7 @@ public final class f extends k {
     public final String c() {
         try {
             StringBuilder sb = new StringBuilder();
-            ag agVar = this.f14439a;
+            ag agVar = this.f15225a;
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(agVar != null ? agVar.c().i() : null));
             while (true) {
                 String readLine = bufferedReader.readLine();
@@ -61,13 +61,13 @@ public final class f extends k {
                 sb.append('\n');
             }
             String sb2 = sb.toString();
-            ag agVar2 = this.f14439a;
+            ag agVar2 = this.f15225a;
             if (agVar2 != null) {
                 agVar2.close();
             }
             return sb2;
         } catch (Throwable th) {
-            ag agVar3 = this.f14439a;
+            ag agVar3 = this.f15225a;
             if (agVar3 != null) {
                 agVar3.close();
             }

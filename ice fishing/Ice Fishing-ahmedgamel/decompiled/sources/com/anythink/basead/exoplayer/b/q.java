@@ -10,82 +10,82 @@ import java.nio.ByteOrder;
 public final class q implements f {
 
     /* renamed from: b, reason: collision with root package name */
-    private static final long f6618b = 150000;
+    private static final long f7404b = 150000;
 
     /* renamed from: c, reason: collision with root package name */
-    private static final long f6619c = 20000;
+    private static final long f7405c = 20000;
 
     /* renamed from: d, reason: collision with root package name */
-    private static final short f6620d = 1024;
+    private static final short f7406d = 1024;
 
     /* renamed from: e, reason: collision with root package name */
-    private static final byte f6621e = 4;
+    private static final byte f7407e = 4;
 
     /* renamed from: f, reason: collision with root package name */
-    private static final int f6622f = 0;
+    private static final int f7408f = 0;
 
     /* renamed from: g, reason: collision with root package name */
-    private static final int f6623g = 1;
+    private static final int f7409g = 1;
 
     /* renamed from: h, reason: collision with root package name */
-    private static final int f6624h = 2;
+    private static final int f7410h = 2;
     private int i;
 
     /* renamed from: j, reason: collision with root package name */
-    private int f6625j;
+    private int f7411j;
 
     /* renamed from: k, reason: collision with root package name */
-    private int f6626k;
+    private int f7412k;
 
     /* renamed from: l, reason: collision with root package name */
-    private boolean f6627l;
+    private boolean f7413l;
 
     /* renamed from: m, reason: collision with root package name */
-    private ByteBuffer f6628m;
+    private ByteBuffer f7414m;
 
     /* renamed from: n, reason: collision with root package name */
-    private ByteBuffer f6629n;
+    private ByteBuffer f7415n;
 
     /* renamed from: o, reason: collision with root package name */
-    private boolean f6630o;
+    private boolean f7416o;
 
     /* renamed from: p, reason: collision with root package name */
-    private byte[] f6631p;
+    private byte[] f7417p;
 
     /* renamed from: q, reason: collision with root package name */
-    private byte[] f6632q;
+    private byte[] f7418q;
 
     /* renamed from: r, reason: collision with root package name */
-    private int f6633r;
+    private int f7419r;
 
     /* renamed from: s, reason: collision with root package name */
-    private int f6634s;
+    private int f7420s;
 
     /* renamed from: t, reason: collision with root package name */
-    private int f6635t;
+    private int f7421t;
 
     /* renamed from: u, reason: collision with root package name */
-    private boolean f6636u;
+    private boolean f7422u;
 
     /* renamed from: v, reason: collision with root package name */
-    private long f6637v;
+    private long f7423v;
 
     @Retention(RetentionPolicy.SOURCE)
     public @interface a {
     }
 
     public q() {
-        ByteBuffer byteBuffer = f.f6440a;
-        this.f6628m = byteBuffer;
-        this.f6629n = byteBuffer;
+        ByteBuffer byteBuffer = f.f7226a;
+        this.f7414m = byteBuffer;
+        this.f7415n = byteBuffer;
         this.i = -1;
-        this.f6625j = -1;
-        this.f6631p = new byte[0];
-        this.f6632q = new byte[0];
+        this.f7411j = -1;
+        this.f7417p = new byte[0];
+        this.f7418q = new byte[0];
     }
 
-    public final void a(boolean z3) {
-        this.f6627l = z3;
+    public final void a(boolean z6) {
+        this.f7413l = z6;
         h();
     }
 
@@ -101,75 +101,75 @@ public final class q implements f {
 
     @Override // com.anythink.basead.exoplayer.b.f
     public final int d() {
-        return this.f6625j;
+        return this.f7411j;
     }
 
     @Override // com.anythink.basead.exoplayer.b.f
     public final void e() {
-        this.f6630o = true;
-        int i = this.f6634s;
+        this.f7416o = true;
+        int i = this.f7420s;
         if (i > 0) {
-            a(this.f6631p, i);
+            a(this.f7417p, i);
         }
-        if (this.f6636u) {
+        if (this.f7422u) {
             return;
         }
-        this.f6637v += this.f6635t / this.f6626k;
+        this.f7423v += this.f7421t / this.f7412k;
     }
 
     @Override // com.anythink.basead.exoplayer.b.f
     public final ByteBuffer f() {
-        ByteBuffer byteBuffer = this.f6629n;
-        this.f6629n = f.f6440a;
+        ByteBuffer byteBuffer = this.f7415n;
+        this.f7415n = f.f7226a;
         return byteBuffer;
     }
 
     @Override // com.anythink.basead.exoplayer.b.f
     public final boolean g() {
-        return this.f6630o && this.f6629n == f.f6440a;
+        return this.f7416o && this.f7415n == f.f7226a;
     }
 
     @Override // com.anythink.basead.exoplayer.b.f
     public final void h() {
         if (a()) {
-            int a9 = a(f6618b) * this.f6626k;
-            if (this.f6631p.length != a9) {
-                this.f6631p = new byte[a9];
+            int a9 = a(f7404b) * this.f7412k;
+            if (this.f7417p.length != a9) {
+                this.f7417p = new byte[a9];
             }
-            int a10 = a(f6619c) * this.f6626k;
-            this.f6635t = a10;
-            if (this.f6632q.length != a10) {
-                this.f6632q = new byte[a10];
+            int a10 = a(f7405c) * this.f7412k;
+            this.f7421t = a10;
+            if (this.f7418q.length != a10) {
+                this.f7418q = new byte[a10];
             }
         }
-        this.f6633r = 0;
-        this.f6629n = f.f6440a;
-        this.f6630o = false;
-        this.f6637v = 0L;
-        this.f6634s = 0;
-        this.f6636u = false;
+        this.f7419r = 0;
+        this.f7415n = f.f7226a;
+        this.f7416o = false;
+        this.f7423v = 0L;
+        this.f7420s = 0;
+        this.f7422u = false;
     }
 
     @Override // com.anythink.basead.exoplayer.b.f
     public final void i() {
-        this.f6627l = false;
+        this.f7413l = false;
         h();
-        this.f6628m = f.f6440a;
+        this.f7414m = f.f7226a;
         this.i = -1;
-        this.f6625j = -1;
-        this.f6635t = 0;
-        this.f6631p = new byte[0];
-        this.f6632q = new byte[0];
+        this.f7411j = -1;
+        this.f7421t = 0;
+        this.f7417p = new byte[0];
+        this.f7418q = new byte[0];
     }
 
     public final long j() {
-        return this.f6637v;
+        return this.f7423v;
     }
 
     private void b(ByteBuffer byteBuffer) {
         int position;
         int limit = byteBuffer.limit();
-        byteBuffer.limit(Math.min(limit, byteBuffer.position() + this.f6631p.length));
+        byteBuffer.limit(Math.min(limit, byteBuffer.position() + this.f7417p.length));
         int limit2 = byteBuffer.limit() - 1;
         while (true) {
             if (limit2 < byteBuffer.position()) {
@@ -177,7 +177,7 @@ public final class q implements f {
                 break;
             } else {
                 if (Math.abs((int) byteBuffer.get(limit2)) > 4) {
-                    int i = this.f6626k;
+                    int i = this.f7412k;
                     position = ((limit2 / i) * i) + i;
                     break;
                 }
@@ -185,60 +185,60 @@ public final class q implements f {
             }
         }
         if (position == byteBuffer.position()) {
-            this.f6633r = 1;
+            this.f7419r = 1;
         } else {
             byteBuffer.limit(position);
             a(byteBuffer.remaining());
-            this.f6628m.put(byteBuffer);
-            this.f6628m.flip();
-            this.f6629n = this.f6628m;
+            this.f7414m.put(byteBuffer);
+            this.f7414m.flip();
+            this.f7415n = this.f7414m;
         }
         byteBuffer.limit(limit);
     }
 
     private void c(ByteBuffer byteBuffer) {
         int limit = byteBuffer.limit();
-        int f3 = f(byteBuffer);
-        int position = f3 - byteBuffer.position();
-        byte[] bArr = this.f6631p;
+        int f2 = f(byteBuffer);
+        int position = f2 - byteBuffer.position();
+        byte[] bArr = this.f7417p;
         int length = bArr.length;
-        int i = this.f6634s;
-        int i6 = length - i;
-        if (f3 < limit && position < i6) {
+        int i = this.f7420s;
+        int i4 = length - i;
+        if (f2 < limit && position < i4) {
             a(bArr, i);
-            this.f6634s = 0;
-            this.f6633r = 0;
+            this.f7420s = 0;
+            this.f7419r = 0;
             return;
         }
-        int min = Math.min(position, i6);
+        int min = Math.min(position, i4);
         byteBuffer.limit(byteBuffer.position() + min);
-        byteBuffer.get(this.f6631p, this.f6634s, min);
-        int i9 = this.f6634s + min;
-        this.f6634s = i9;
-        byte[] bArr2 = this.f6631p;
-        if (i9 == bArr2.length) {
-            if (this.f6636u) {
-                a(bArr2, this.f6635t);
-                this.f6637v += (this.f6634s - (this.f6635t * 2)) / this.f6626k;
+        byteBuffer.get(this.f7417p, this.f7420s, min);
+        int i6 = this.f7420s + min;
+        this.f7420s = i6;
+        byte[] bArr2 = this.f7417p;
+        if (i6 == bArr2.length) {
+            if (this.f7422u) {
+                a(bArr2, this.f7421t);
+                this.f7423v += (this.f7420s - (this.f7421t * 2)) / this.f7412k;
             } else {
-                this.f6637v += (i9 - this.f6635t) / this.f6626k;
+                this.f7423v += (i6 - this.f7421t) / this.f7412k;
             }
-            a(byteBuffer, this.f6631p, this.f6634s);
-            this.f6634s = 0;
-            this.f6633r = 2;
+            a(byteBuffer, this.f7417p, this.f7420s);
+            this.f7420s = 0;
+            this.f7419r = 2;
         }
         byteBuffer.limit(limit);
     }
 
     private void d(ByteBuffer byteBuffer) {
         int limit = byteBuffer.limit();
-        int f3 = f(byteBuffer);
-        byteBuffer.limit(f3);
-        this.f6637v += byteBuffer.remaining() / this.f6626k;
-        a(byteBuffer, this.f6632q, this.f6635t);
-        if (f3 < limit) {
-            a(this.f6632q, this.f6635t);
-            this.f6633r = 0;
+        int f2 = f(byteBuffer);
+        byteBuffer.limit(f2);
+        this.f7423v += byteBuffer.remaining() / this.f7412k;
+        a(byteBuffer, this.f7418q, this.f7421t);
+        if (f2 < limit) {
+            a(this.f7418q, this.f7421t);
+            this.f7419r = 0;
             byteBuffer.limit(limit);
         }
     }
@@ -246,7 +246,7 @@ public final class q implements f {
     private int g(ByteBuffer byteBuffer) {
         for (int limit = byteBuffer.limit() - 1; limit >= byteBuffer.position(); limit -= 2) {
             if (Math.abs((int) byteBuffer.get(limit)) > 4) {
-                int i = this.f6626k;
+                int i = this.f7412k;
                 return ((limit / i) * i) + i;
             }
         }
@@ -256,7 +256,7 @@ public final class q implements f {
     private int f(ByteBuffer byteBuffer) {
         for (int position = byteBuffer.position() + 1; position < byteBuffer.limit(); position += 2) {
             if (Math.abs((int) byteBuffer.get(position)) > 4) {
-                int i = this.f6626k;
+                int i = this.f7412k;
                 return (position / i) * i;
             }
         }
@@ -264,45 +264,45 @@ public final class q implements f {
     }
 
     @Override // com.anythink.basead.exoplayer.b.f
-    public final boolean a(int i, int i6, int i9) {
-        if (i9 == 2) {
-            if (this.f6625j == i && this.i == i6) {
+    public final boolean a(int i, int i4, int i6) {
+        if (i6 == 2) {
+            if (this.f7411j == i && this.i == i4) {
                 return false;
             }
-            this.f6625j = i;
-            this.i = i6;
-            this.f6626k = i6 * 2;
+            this.f7411j = i;
+            this.i = i4;
+            this.f7412k = i4 * 2;
             return true;
         }
-        throw new f.a(i, i6, i9);
+        throw new f.a(i, i4, i6);
     }
 
     private void e(ByteBuffer byteBuffer) {
         a(byteBuffer.remaining());
-        this.f6628m.put(byteBuffer);
-        this.f6628m.flip();
-        this.f6629n = this.f6628m;
+        this.f7414m.put(byteBuffer);
+        this.f7414m.flip();
+        this.f7415n = this.f7414m;
     }
 
     @Override // com.anythink.basead.exoplayer.b.f
     public final boolean a() {
-        return this.f6625j != -1 && this.f6627l;
+        return this.f7411j != -1 && this.f7413l;
     }
 
     @Override // com.anythink.basead.exoplayer.b.f
     public final void a(ByteBuffer byteBuffer) {
         int position;
-        while (byteBuffer.hasRemaining() && !this.f6629n.hasRemaining()) {
-            int i = this.f6633r;
+        while (byteBuffer.hasRemaining() && !this.f7415n.hasRemaining()) {
+            int i = this.f7419r;
             if (i == 0) {
                 int limit = byteBuffer.limit();
-                byteBuffer.limit(Math.min(limit, byteBuffer.position() + this.f6631p.length));
+                byteBuffer.limit(Math.min(limit, byteBuffer.position() + this.f7417p.length));
                 int limit2 = byteBuffer.limit() - 1;
                 while (true) {
                     if (limit2 >= byteBuffer.position()) {
                         if (Math.abs((int) byteBuffer.get(limit2)) > 4) {
-                            int i6 = this.f6626k;
-                            position = ((limit2 / i6) * i6) + i6;
+                            int i4 = this.f7412k;
+                            position = ((limit2 / i4) * i4) + i4;
                             break;
                         }
                         limit2 -= 2;
@@ -312,44 +312,44 @@ public final class q implements f {
                     }
                 }
                 if (position == byteBuffer.position()) {
-                    this.f6633r = 1;
+                    this.f7419r = 1;
                 } else {
                     byteBuffer.limit(position);
                     a(byteBuffer.remaining());
-                    this.f6628m.put(byteBuffer);
-                    this.f6628m.flip();
-                    this.f6629n = this.f6628m;
+                    this.f7414m.put(byteBuffer);
+                    this.f7414m.flip();
+                    this.f7415n = this.f7414m;
                 }
                 byteBuffer.limit(limit);
             } else if (i == 1) {
                 int limit3 = byteBuffer.limit();
-                int f3 = f(byteBuffer);
-                int position2 = f3 - byteBuffer.position();
-                byte[] bArr = this.f6631p;
+                int f2 = f(byteBuffer);
+                int position2 = f2 - byteBuffer.position();
+                byte[] bArr = this.f7417p;
                 int length = bArr.length;
-                int i9 = this.f6634s;
-                int i10 = length - i9;
-                if (f3 < limit3 && position2 < i10) {
-                    a(bArr, i9);
-                    this.f6634s = 0;
-                    this.f6633r = 0;
+                int i6 = this.f7420s;
+                int i9 = length - i6;
+                if (f2 < limit3 && position2 < i9) {
+                    a(bArr, i6);
+                    this.f7420s = 0;
+                    this.f7419r = 0;
                 } else {
-                    int min = Math.min(position2, i10);
+                    int min = Math.min(position2, i9);
                     byteBuffer.limit(byteBuffer.position() + min);
-                    byteBuffer.get(this.f6631p, this.f6634s, min);
-                    int i11 = this.f6634s + min;
-                    this.f6634s = i11;
-                    byte[] bArr2 = this.f6631p;
-                    if (i11 == bArr2.length) {
-                        if (this.f6636u) {
-                            a(bArr2, this.f6635t);
-                            this.f6637v += (this.f6634s - (this.f6635t * 2)) / this.f6626k;
+                    byteBuffer.get(this.f7417p, this.f7420s, min);
+                    int i10 = this.f7420s + min;
+                    this.f7420s = i10;
+                    byte[] bArr2 = this.f7417p;
+                    if (i10 == bArr2.length) {
+                        if (this.f7422u) {
+                            a(bArr2, this.f7421t);
+                            this.f7423v += (this.f7420s - (this.f7421t * 2)) / this.f7412k;
                         } else {
-                            this.f6637v += (i11 - this.f6635t) / this.f6626k;
+                            this.f7423v += (i10 - this.f7421t) / this.f7412k;
                         }
-                        a(byteBuffer, this.f6631p, this.f6634s);
-                        this.f6634s = 0;
-                        this.f6633r = 2;
+                        a(byteBuffer, this.f7417p, this.f7420s);
+                        this.f7420s = 0;
+                        this.f7419r = 2;
                     }
                     byteBuffer.limit(limit3);
                 }
@@ -357,11 +357,11 @@ public final class q implements f {
                 int limit4 = byteBuffer.limit();
                 int f9 = f(byteBuffer);
                 byteBuffer.limit(f9);
-                this.f6637v += byteBuffer.remaining() / this.f6626k;
-                a(byteBuffer, this.f6632q, this.f6635t);
+                this.f7423v += byteBuffer.remaining() / this.f7412k;
+                a(byteBuffer, this.f7418q, this.f7421t);
                 if (f9 < limit4) {
-                    a(this.f6632q, this.f6635t);
-                    this.f6633r = 0;
+                    a(this.f7418q, this.f7421t);
+                    this.f7419r = 0;
                     byteBuffer.limit(limit4);
                 }
             } else {
@@ -372,31 +372,31 @@ public final class q implements f {
 
     private void a(byte[] bArr, int i) {
         a(i);
-        this.f6628m.put(bArr, 0, i);
-        this.f6628m.flip();
-        this.f6629n = this.f6628m;
+        this.f7414m.put(bArr, 0, i);
+        this.f7414m.flip();
+        this.f7415n = this.f7414m;
     }
 
     private void a(int i) {
-        if (this.f6628m.capacity() < i) {
-            this.f6628m = ByteBuffer.allocateDirect(i).order(ByteOrder.nativeOrder());
+        if (this.f7414m.capacity() < i) {
+            this.f7414m = ByteBuffer.allocateDirect(i).order(ByteOrder.nativeOrder());
         } else {
-            this.f6628m.clear();
+            this.f7414m.clear();
         }
         if (i > 0) {
-            this.f6636u = true;
+            this.f7422u = true;
         }
     }
 
     private void a(ByteBuffer byteBuffer, byte[] bArr, int i) {
-        int min = Math.min(byteBuffer.remaining(), this.f6635t);
-        int i6 = this.f6635t - min;
-        System.arraycopy(bArr, i - i6, this.f6632q, 0, i6);
+        int min = Math.min(byteBuffer.remaining(), this.f7421t);
+        int i4 = this.f7421t - min;
+        System.arraycopy(bArr, i - i4, this.f7418q, 0, i4);
         byteBuffer.position(byteBuffer.limit() - min);
-        byteBuffer.get(this.f6632q, i6, min);
+        byteBuffer.get(this.f7418q, i4, min);
     }
 
     private int a(long j6) {
-        return (int) ((j6 * this.f6625j) / 1000000);
+        return (int) ((j6 * this.f7411j) / 1000000);
     }
 }

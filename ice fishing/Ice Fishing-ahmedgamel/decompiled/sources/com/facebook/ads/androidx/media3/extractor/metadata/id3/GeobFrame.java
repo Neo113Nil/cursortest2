@@ -17,25 +17,25 @@ public final class GeobFrame extends Id3Frame {
     public final String A02;
     public final byte[] A03;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        int i10 = 0;
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             if (A05[4].length() == 15) {
                 throw new RuntimeException();
             }
             A05[1] = "xm9FRjRm82kK4gS3u270gaYNqume";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 80);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 80);
+            i9++;
         }
     }
 
     public static void A01() {
-        A04 = new byte[]{92, 80, 20, 21, 3, 19, 2, 25, 0, 4, 25, 31, 30, 77, 117, 121, c.f16318c, 48, 53, 60, 55, 56, 52, 60, 100, 78, 84, 25, 29, 25, 17, 32, 13, 4, 17, 73, 60, 62, 52, 57};
+        A04 = new byte[]{92, 80, 20, 21, 3, 19, 2, 25, 0, 4, 25, 31, 30, 77, 117, 121, c.f17105c, 48, 53, 60, 55, 56, 52, 60, 100, 78, 84, 25, 29, 25, 17, 32, 13, 4, 17, 73, 60, 62, 52, 57};
     }
 
     static {
@@ -126,7 +126,7 @@ public final class GeobFrame extends Id3Frame {
     public final int hashCode() {
         int result;
         int i = 17 * 31;
-        int i6 = 0;
+        int i4 = 0;
         if (this.A02 != null) {
             String str = this.A02;
             if (A05[1].length() != 28) {
@@ -139,7 +139,7 @@ public final class GeobFrame extends Id3Frame {
         }
         int result2 = (i + result) * 31;
         int result3 = this.A01 != null ? this.A01.hashCode() : 0;
-        int i9 = (result2 + result3) * 31;
+        int i6 = (result2 + result3) * 31;
         if (A05[3].length() != 7) {
             A05[3] = "5ETNk8FDhPWD3cLm";
         }

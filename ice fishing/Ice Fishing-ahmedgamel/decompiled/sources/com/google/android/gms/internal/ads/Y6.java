@@ -29,13 +29,13 @@ import org.json.JSONObject;
 public final class Y6 implements Runnable {
 
     /* renamed from: u, reason: collision with root package name */
-    public static final /* synthetic */ Y6 f28655u = new Y6(2);
+    public static final /* synthetic */ Y6 f29432u = new Y6(2);
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f28656n;
+    public final /* synthetic */ int f29433n;
 
     public /* synthetic */ Y6(int i) {
-        this.f28656n = i;
+        this.f29433n = i;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -49,22 +49,22 @@ public final class Y6 implements Runnable {
         CountDownLatch countDownLatch;
         HashSet hashSet;
         KeyguardManager keyguardManager;
-        C2991bm c2991bm;
+        C3067cm c3067cm;
         HashMap hashMap;
         Iterator it;
         HashSet hashSet2;
         Activity activity;
         Boolean bool;
         String str;
-        switch (this.f28656n) {
+        switch (this.f29433n) {
             case 0:
                 try {
-                    Z6.f28840b = MessageDigest.getInstance("MD5");
-                    countDownLatch = Z6.f28843e;
+                    Z6.f29620b = MessageDigest.getInstance("MD5");
+                    countDownLatch = Z6.f29623e;
                 } catch (NoSuchAlgorithmException unused) {
-                    countDownLatch = Z6.f28843e;
+                    countDownLatch = Z6.f29623e;
                 } catch (Throwable th) {
-                    Z6.f28843e.countDown();
+                    Z6.f29623e.countDown();
                     throw th;
                 }
                 countDownLatch.countDown();
@@ -72,8 +72,8 @@ public final class Y6 implements Runnable {
             case 1:
                 return;
             case 2:
-                List list = C4221yf.f35180l;
-                AbstractC2639Kg.i("Pinged SB successfully.");
+                List list = C4244yf.f35970l;
+                AbstractC2659Kg.i("Pinged SB successfully.");
                 return;
             case 3:
                 Looper.myLooper().quit();
@@ -83,33 +83,33 @@ public final class Y6 implements Runnable {
             case 6:
                 return;
             case 7:
-                C4076vw c4076vw = C4076vw.f34760g;
-                c4076vw.getClass();
-                c4076vw.f34765b.clear();
-                for (Uv uv : Collections.unmodifiableCollection(C3161ew.f30001c.f30003b)) {
+                C4099vw c4099vw = C4099vw.f35529g;
+                c4099vw.getClass();
+                c4099vw.f35534b.clear();
+                for (Uv uv : Collections.unmodifiableCollection(C3238fw.f31233c.f31235b)) {
                 }
-                c4076vw.f34769f = System.nanoTime();
-                C2598Hq c2598Hq = c4076vw.f34767d;
-                c2598Hq.getClass();
-                C3161ew c3161ew = C3161ew.f30001c;
-                HashMap hashMap2 = (HashMap) c2598Hq.f25392w;
-                HashMap hashMap3 = (HashMap) c2598Hq.f25386A;
-                HashSet hashSet3 = (HashSet) c2598Hq.f25395z;
-                HashMap hashMap4 = (HashMap) c2598Hq.f25391v;
-                HashMap hashMap5 = (HashMap) c2598Hq.f25390u;
-                HashSet hashSet4 = (HashSet) c2598Hq.f25393x;
-                HashSet hashSet5 = (HashSet) c2598Hq.f25387B;
-                HashSet hashSet6 = (HashSet) c2598Hq.f25394y;
-                if (c3161ew != null) {
-                    Iterator it2 = Collections.unmodifiableCollection(c3161ew.f30003b).iterator();
+                c4099vw.f35538f = System.nanoTime();
+                C2618Hq c2618Hq = c4099vw.f35536d;
+                c2618Hq.getClass();
+                C3238fw c3238fw = C3238fw.f31233c;
+                HashMap hashMap2 = (HashMap) c2618Hq.f26135w;
+                HashMap hashMap3 = (HashMap) c2618Hq.f26129A;
+                HashSet hashSet3 = (HashSet) c2618Hq.f26138z;
+                HashMap hashMap4 = (HashMap) c2618Hq.f26134v;
+                HashMap hashMap5 = (HashMap) c2618Hq.f26133u;
+                HashSet hashSet4 = (HashSet) c2618Hq.f26136x;
+                HashSet hashSet5 = (HashSet) c2618Hq.f26130B;
+                HashSet hashSet6 = (HashSet) c2618Hq.f26137y;
+                if (c3238fw != null) {
+                    Iterator it2 = Collections.unmodifiableCollection(c3238fw.f31235b).iterator();
                     while (it2.hasNext()) {
                         Uv uv2 = (Uv) it2.next();
-                        View view = (View) uv2.f28038c.get();
-                        if (!uv2.f28040e || uv2.f28041f) {
+                        View view = (View) uv2.f28835c.get();
+                        if (!uv2.f28837e || uv2.f28838f) {
                             it = it2;
                             hashSet2 = hashSet5;
                         } else {
-                            String str2 = uv2.f28042g;
+                            String str2 = uv2.f28839g;
                             if (view != null) {
                                 Context context = view.getContext();
                                 it = it2;
@@ -126,10 +126,10 @@ public final class Y6 implements Runnable {
                                 if (isInPictureInPictureMode) {
                                     hashSet5.add(str2);
                                 }
-                                boolean z3 = isInPictureInPictureMode;
+                                boolean z6 = isInPictureInPictureMode;
                                 if (view.isAttachedToWindow()) {
                                     boolean hasWindowFocus = view.hasWindowFocus();
-                                    WeakHashMap weakHashMap = (WeakHashMap) c2598Hq.f25388C;
+                                    WeakHashMap weakHashMap = (WeakHashMap) c2618Hq.f26131C;
                                     if (hasWindowFocus) {
                                         weakHashMap.remove(view);
                                         bool = Boolean.FALSE;
@@ -140,7 +140,7 @@ public final class Y6 implements Runnable {
                                         weakHashMap.put(view, bool2);
                                         bool = bool2;
                                     }
-                                    if (!bool.booleanValue() || z3) {
+                                    if (!bool.booleanValue() || z6) {
                                         HashSet hashSet7 = new HashSet();
                                         View view2 = view;
                                         while (true) {
@@ -170,16 +170,16 @@ public final class Y6 implements Runnable {
                                         if (str != null) {
                                             hashSet6.add(str2);
                                             hashMap5.put(view, str2);
-                                            Iterator it3 = uv2.f28037b.f31136a.iterator();
+                                            Iterator it3 = uv2.f28834b.f32130a.iterator();
                                             while (it3.hasNext()) {
-                                                C3323hw c3323hw = (C3323hw) it3.next();
-                                                View view3 = (View) c3323hw.f30970a.get();
+                                                C3398iw c3398iw = (C3398iw) it3.next();
+                                                View view3 = (View) c3398iw.f31920a.get();
                                                 if (view3 != null) {
-                                                    C4022uw c4022uw = (C4022uw) hashMap4.get(view3);
-                                                    if (c4022uw != null) {
-                                                        c4022uw.f34612b.add(str2);
+                                                    C4045uw c4045uw = (C4045uw) hashMap4.get(view3);
+                                                    if (c4045uw != null) {
+                                                        c4045uw.f35375b.add(str2);
                                                     } else {
-                                                        hashMap4.put(view3, new C4022uw(c3323hw, str2));
+                                                        hashMap4.put(view3, new C4045uw(c3398iw, str2));
                                                     }
                                                 }
                                             }
@@ -209,72 +209,72 @@ public final class Y6 implements Runnable {
                 }
                 HashSet hashSet9 = hashSet5;
                 long nanoTime = System.nanoTime();
-                C2991bm c2991bm2 = c4076vw.f34766c;
-                C3534lt c3534lt = (C3534lt) c2991bm2.f29324v;
+                C3067cm c3067cm2 = c4099vw.f35535c;
+                C3557lt c3557lt = (C3557lt) c3067cm2.f30366v;
                 int size = hashSet3.size();
-                S0.c cVar = c4076vw.f34768e;
+                S0.c cVar = c4099vw.f35537e;
                 if (size > 0) {
                     Iterator it4 = hashSet3.iterator();
                     while (it4.hasNext()) {
                         String str3 = (String) it4.next();
                         Iterator it5 = it4;
-                        JSONObject l9 = c3534lt.l(null);
+                        JSONObject i4 = c3557lt.i(null);
                         View view4 = (View) hashMap2.get(str3);
                         String str4 = (String) hashMap3.get(str3);
                         if (str4 != null) {
                             hashMap = hashMap2;
-                            JSONObject d2 = ((C3105du) c2991bm2.f29323u).d(view4);
+                            JSONObject d9 = ((C3128du) c3067cm2.f30365u).d(view4);
                             try {
-                                d2.put("adSessionId", str3);
-                                c2991bm = c2991bm2;
+                                d9.put("adSessionId", str3);
+                                c3067cm = c3067cm2;
                             } catch (JSONException e9) {
-                                c2991bm = c2991bm2;
+                                c3067cm = c3067cm2;
                                 MA.j("Error with setting ad session id", e9);
                             }
                             try {
-                                d2.put("notVisibleReason", str4);
+                                d9.put("notVisibleReason", str4);
                             } catch (JSONException e10) {
                                 MA.j("Error with setting not visible reason", e10);
                             }
-                            AbstractC3914sw.c(l9, d2);
+                            AbstractC3937sw.c(i4, d9);
                         } else {
-                            c2991bm = c2991bm2;
+                            c3067cm = c3067cm2;
                             hashMap = hashMap2;
                         }
-                        AbstractC3914sw.d(l9);
+                        AbstractC3937sw.d(i4);
                         HashSet hashSet10 = new HashSet();
                         hashSet10.add(str3);
                         cVar.getClass();
-                        AsyncTaskC4238yw asyncTaskC4238yw = new AsyncTaskC4238yw(cVar, hashSet10, l9, nanoTime, 0);
-                        C4274ze c4274ze = (C4274ze) cVar.f2776v;
-                        asyncTaskC4238yw.f34904a = c4274ze;
-                        ArrayDeque arrayDeque = (ArrayDeque) c4274ze.f35361v;
-                        arrayDeque.add(asyncTaskC4238yw);
-                        if (((AbstractAsyncTaskC4130ww) c4274ze.f35362w) == null) {
-                            AbstractAsyncTaskC4130ww abstractAsyncTaskC4130ww = (AbstractAsyncTaskC4130ww) arrayDeque.poll();
-                            c4274ze.f35362w = abstractAsyncTaskC4130ww;
-                            if (abstractAsyncTaskC4130ww != null) {
-                                abstractAsyncTaskC4130ww.executeOnExecutor((ThreadPoolExecutor) c4274ze.f35360u, new Object[0]);
+                        AsyncTaskC4261yw asyncTaskC4261yw = new AsyncTaskC4261yw(cVar, hashSet10, i4, nanoTime, 0);
+                        C4297ze c4297ze = (C4297ze) cVar.f2903v;
+                        asyncTaskC4261yw.f35685a = c4297ze;
+                        ArrayDeque arrayDeque = (ArrayDeque) c4297ze.f36134v;
+                        arrayDeque.add(asyncTaskC4261yw);
+                        if (((AbstractAsyncTaskC4153ww) c4297ze.f36135w) == null) {
+                            AbstractAsyncTaskC4153ww abstractAsyncTaskC4153ww = (AbstractAsyncTaskC4153ww) arrayDeque.poll();
+                            c4297ze.f36135w = abstractAsyncTaskC4153ww;
+                            if (abstractAsyncTaskC4153ww != null) {
+                                abstractAsyncTaskC4153ww.executeOnExecutor((ThreadPoolExecutor) c4297ze.f36133u, new Object[0]);
                             }
                         }
                         it4 = it5;
-                        c2991bm2 = c2991bm;
+                        c3067cm2 = c3067cm;
                         hashMap2 = hashMap;
                     }
                 }
                 HashMap hashMap6 = hashMap2;
                 if (hashSet6.size() > 0) {
-                    JSONObject l10 = c3534lt.l(null);
-                    c3534lt.getClass();
+                    JSONObject i6 = c3557lt.i(null);
+                    c3557lt.getClass();
                     ArrayList arrayList = new ArrayList();
-                    C3161ew c3161ew2 = C3161ew.f30001c;
-                    if (c3161ew2 != null) {
-                        Collection unmodifiableCollection = Collections.unmodifiableCollection(c3161ew2.f30003b);
+                    C3238fw c3238fw2 = C3238fw.f31233c;
+                    if (c3238fw2 != null) {
+                        Collection unmodifiableCollection = Collections.unmodifiableCollection(c3238fw2.f31235b);
                         int size2 = unmodifiableCollection.size();
                         IdentityHashMap identityHashMap = new IdentityHashMap(size2 + size2 + 3);
                         Iterator it6 = unmodifiableCollection.iterator();
                         while (it6.hasNext()) {
-                            View view5 = (View) ((Uv) it6.next()).f28038c.get();
+                            View view5 = (View) ((Uv) it6.next()).f28835c.get();
                             if (view5 != null && view5.isAttachedToWindow() && view5.isShown()) {
                                 View view6 = view5;
                                 while (true) {
@@ -283,14 +283,14 @@ public final class Y6 implements Runnable {
                                         View rootView = view5.getRootView();
                                         if (rootView != null && !identityHashMap.containsKey(rootView)) {
                                             identityHashMap.put(rootView, rootView);
-                                            float z6 = rootView.getZ();
+                                            float z9 = rootView.getZ();
                                             int size3 = arrayList.size();
                                             while (size3 > 0) {
-                                                float f3 = z6;
-                                                int i6 = size3 - 1;
-                                                if (((View) arrayList.get(i6)).getZ() > f3) {
-                                                    size3 = i6;
-                                                    z6 = f3;
+                                                float f2 = z9;
+                                                int i9 = size3 - 1;
+                                                if (((View) arrayList.get(i9)).getZ() > f2) {
+                                                    size3 = i9;
+                                                    z9 = f2;
                                                 } else {
                                                     arrayList.add(size3, rootView);
                                                 }
@@ -317,40 +317,40 @@ public final class Y6 implements Runnable {
                         }
                     }
                     int size4 = arrayList.size();
-                    int i9 = 0;
-                    while (i9 < size4) {
-                        c4076vw.a((View) arrayList.get(i9), (C3105du) c3534lt.f31863u, l10, false);
-                        i9++;
+                    int i10 = 0;
+                    while (i10 < size4) {
+                        c4099vw.a((View) arrayList.get(i10), (C3128du) c3557lt.f32643u, i6, false);
+                        i10++;
                         arrayList = arrayList;
                     }
-                    AbstractC3914sw.d(l10);
+                    AbstractC3937sw.d(i6);
                     cVar.getClass();
                     hashSet = hashSet6;
-                    AsyncTaskC4238yw asyncTaskC4238yw2 = new AsyncTaskC4238yw(cVar, hashSet, l10, nanoTime, 1);
-                    C4274ze c4274ze2 = (C4274ze) cVar.f2776v;
-                    asyncTaskC4238yw2.f34904a = c4274ze2;
-                    ArrayDeque arrayDeque2 = (ArrayDeque) c4274ze2.f35361v;
-                    arrayDeque2.add(asyncTaskC4238yw2);
-                    if (((AbstractAsyncTaskC4130ww) c4274ze2.f35362w) == null) {
-                        AbstractAsyncTaskC4130ww abstractAsyncTaskC4130ww2 = (AbstractAsyncTaskC4130ww) arrayDeque2.poll();
-                        c4274ze2.f35362w = abstractAsyncTaskC4130ww2;
-                        if (abstractAsyncTaskC4130ww2 != null) {
-                            abstractAsyncTaskC4130ww2.executeOnExecutor((ThreadPoolExecutor) c4274ze2.f35360u, new Object[0]);
+                    AsyncTaskC4261yw asyncTaskC4261yw2 = new AsyncTaskC4261yw(cVar, hashSet, i6, nanoTime, 1);
+                    C4297ze c4297ze2 = (C4297ze) cVar.f2903v;
+                    asyncTaskC4261yw2.f35685a = c4297ze2;
+                    ArrayDeque arrayDeque2 = (ArrayDeque) c4297ze2.f36134v;
+                    arrayDeque2.add(asyncTaskC4261yw2);
+                    if (((AbstractAsyncTaskC4153ww) c4297ze2.f36135w) == null) {
+                        AbstractAsyncTaskC4153ww abstractAsyncTaskC4153ww2 = (AbstractAsyncTaskC4153ww) arrayDeque2.poll();
+                        c4297ze2.f36135w = abstractAsyncTaskC4153ww2;
+                        if (abstractAsyncTaskC4153ww2 != null) {
+                            abstractAsyncTaskC4153ww2.executeOnExecutor((ThreadPoolExecutor) c4297ze2.f36133u, new Object[0]);
                         }
                     }
                 } else {
                     hashSet = hashSet6;
                     cVar.getClass();
-                    AsyncTaskC4184xw asyncTaskC4184xw = new AsyncTaskC4184xw(cVar);
-                    C4274ze c4274ze3 = (C4274ze) cVar.f2776v;
-                    asyncTaskC4184xw.f34904a = c4274ze3;
-                    ArrayDeque arrayDeque3 = (ArrayDeque) c4274ze3.f35361v;
-                    arrayDeque3.add(asyncTaskC4184xw);
-                    if (((AbstractAsyncTaskC4130ww) c4274ze3.f35362w) == null) {
-                        AbstractAsyncTaskC4130ww abstractAsyncTaskC4130ww3 = (AbstractAsyncTaskC4130ww) arrayDeque3.poll();
-                        c4274ze3.f35362w = abstractAsyncTaskC4130ww3;
-                        if (abstractAsyncTaskC4130ww3 != null) {
-                            abstractAsyncTaskC4130ww3.executeOnExecutor((ThreadPoolExecutor) c4274ze3.f35360u, new Object[0]);
+                    AsyncTaskC4207xw asyncTaskC4207xw = new AsyncTaskC4207xw(cVar);
+                    C4297ze c4297ze3 = (C4297ze) cVar.f2903v;
+                    asyncTaskC4207xw.f35685a = c4297ze3;
+                    ArrayDeque arrayDeque3 = (ArrayDeque) c4297ze3.f36134v;
+                    arrayDeque3.add(asyncTaskC4207xw);
+                    if (((AbstractAsyncTaskC4153ww) c4297ze3.f36135w) == null) {
+                        AbstractAsyncTaskC4153ww abstractAsyncTaskC4153ww3 = (AbstractAsyncTaskC4153ww) arrayDeque3.poll();
+                        c4297ze3.f36135w = abstractAsyncTaskC4153ww3;
+                        if (abstractAsyncTaskC4153ww3 != null) {
+                            abstractAsyncTaskC4153ww3.executeOnExecutor((ThreadPoolExecutor) c4297ze3.f36133u, new Object[0]);
                         }
                     }
                 }
@@ -361,10 +361,10 @@ public final class Y6 implements Runnable {
                 hashSet.clear();
                 hashSet3.clear();
                 hashMap3.clear();
-                c2598Hq.f25389n = false;
+                c2618Hq.f26132n = false;
                 hashSet9.clear();
-                long nanoTime2 = System.nanoTime() - c4076vw.f34769f;
-                ArrayList arrayList2 = c4076vw.f34764a;
+                long nanoTime2 = System.nanoTime() - c4099vw.f35538f;
+                ArrayList arrayList2 = c4099vw.f35533a;
                 if (arrayList2.size() > 0) {
                     Iterator it9 = arrayList2.iterator();
                     if (it9.hasNext()) {
@@ -375,20 +375,20 @@ public final class Y6 implements Runnable {
                         throw null;
                     }
                 }
-                C3537lw c3537lw = C3537lw.f31865d;
-                Context context2 = (Context) c3537lw.f31866a.get();
+                C3614mw c3614mw = C3614mw.f33405d;
+                Context context2 = (Context) c3614mw.f33406a.get();
                 if (context2 == null || (keyguardManager = (KeyguardManager) context2.getSystemService("keyguard")) == null) {
                     return;
                 }
                 boolean isDeviceLocked = keyguardManager.isDeviceLocked();
-                c3537lw.a(c3537lw.f31867b, isDeviceLocked);
-                c3537lw.f31868c = isDeviceLocked;
+                c3614mw.a(c3614mw.f33407b, isDeviceLocked);
+                c3614mw.f33408c = isDeviceLocked;
                 return;
             case 8:
-                Handler handler = C4076vw.i;
+                Handler handler = C4099vw.i;
                 if (handler != null) {
-                    handler.post(C4076vw.f34762j);
-                    C4076vw.i.postDelayed(C4076vw.f34763k, 200L);
+                    handler.post(C4099vw.f35531j);
+                    C4099vw.i.postDelayed(C4099vw.f35532k, 200L);
                     return;
                 }
                 return;

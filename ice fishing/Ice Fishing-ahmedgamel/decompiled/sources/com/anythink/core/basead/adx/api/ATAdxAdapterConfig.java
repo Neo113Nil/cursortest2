@@ -28,7 +28,7 @@ public class ATAdxAdapterConfig {
         if (hVar == null || (b9 = hVar.b()) == null) {
             return 5;
         }
-        return b9.f17297c;
+        return b9.f18084c;
     }
 
     public int getGroupCount() {
@@ -37,7 +37,7 @@ public class ATAdxAdapterConfig {
         if (hVar == null || (b9 = hVar.b()) == null) {
             return 3;
         }
-        return b9.f17295a;
+        return b9.f18082a;
     }
 
     public JSONObject getOriginJSONObject() {
@@ -58,7 +58,7 @@ public class ATAdxAdapterConfig {
         if (hVar == null || (b9 = hVar.b()) == null) {
             return 3;
         }
-        return b9.f17296b;
+        return b9.f18083b;
     }
 
     public boolean isDefault() {
@@ -77,8 +77,8 @@ public class ATAdxAdapterConfig {
         return "ATAdxAdapterConfig{isDefault=" + isDefault() + ", isExpired=" + isExpired() + ", getRuleType=" + getRuleType() + ", getGroupCount=" + getGroupCount() + ", getValuedTimes=" + getValuedTimes() + ", getCoolingTimes=" + getCoolingTimes() + ", getOriginJSONObject=" + this.mOriginJSONObject + '}';
     }
 
-    private ATAdxAdapterConfig(boolean z3) {
-        this.isDefault = z3;
+    private ATAdxAdapterConfig(boolean z6) {
+        this.isDefault = z6;
     }
 
     public static ATAdxAdapterConfig parse(String str) {

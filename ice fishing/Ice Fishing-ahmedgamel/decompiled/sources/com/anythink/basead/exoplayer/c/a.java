@@ -4,10 +4,10 @@ package com.anythink.basead.exoplayer.c;
 public abstract class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private int f6718a;
+    private int f7504a;
 
     public void a() {
-        this.f6718a = 0;
+        this.f7504a = 0;
     }
 
     public final boolean b() {
@@ -23,18 +23,18 @@ public abstract class a {
     }
 
     private void d(int i) {
-        this.f6718a = (~i) & this.f6718a;
+        this.f7504a = (~i) & this.f7504a;
     }
 
     public final void a(int i) {
-        this.f6718a = i;
+        this.f7504a = i;
     }
 
     public final void b(int i) {
-        this.f6718a = i | this.f6718a;
+        this.f7504a = i | this.f7504a;
     }
 
     public final boolean c(int i) {
-        return (this.f6718a & i) == i;
+        return (this.f7504a & i) == i;
     }
 }

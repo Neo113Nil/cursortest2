@@ -14,10 +14,10 @@ public final class c extends a {
 
     @Override // com.anythink.expressad.advanced.c.a
     public final void a(com.anythink.expressad.foundation.d.d dVar) {
-        if (this.f17736d == null) {
-            this.f17736d = new com.anythink.expressad.b.a(t.b().g(), this.f17737e);
+        if (this.f18523d == null) {
+            this.f18523d = new com.anythink.expressad.b.a(t.b().g(), this.f18524e);
         }
-        this.f17736d.a(new q.e() { // from class: com.anythink.expressad.advanced.c.c.1
+        this.f18523d.a(new q.e() { // from class: com.anythink.expressad.advanced.c.c.1
             @Override // com.anythink.expressad.out.q.e
             public final void a() {
             }
@@ -68,8 +68,8 @@ public final class c extends a {
                 u.b();
             }
         });
-        dVar.l(this.f17737e);
-        com.anythink.expressad.advanced.d.d dVar2 = this.f17735c;
+        dVar.l(this.f18524e);
+        com.anythink.expressad.advanced.d.d dVar2 = this.f18522c;
         if (dVar2 != null) {
             dVar2.a(dVar);
         }

@@ -8,29 +8,29 @@ import java.util.logging.Logger;
 public abstract class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Logger f37207a = Logger.getLogger(c.class.getName());
+    public static final Logger f37283a = Logger.getLogger(c.class.getName());
 
     /* renamed from: b, reason: collision with root package name */
-    public static final Object f37208b = new Object();
+    public static final Object f37284b = new Object();
 
     /* renamed from: c, reason: collision with root package name */
-    public static volatile C4467b f37209c;
+    public static volatile C4484b f37285c;
 
     /* renamed from: d, reason: collision with root package name */
-    public static Throwable f37210d;
+    public static Throwable f37286d;
 
-    public static C4467b a() {
+    public static C4484b a() {
         try {
             Class<?> cls = Class.forName("io.opentelemetry.sdk.autoconfigure.AutoConfiguredOpenTelemetrySdk");
             boolean parseBoolean = Boolean.parseBoolean(k6.d.b("otel.java.global-autoconfigure.enabled", "false"));
-            Logger logger = f37207a;
+            Logger logger = f37283a;
             if (!parseBoolean) {
                 logger.log(Level.INFO, "AutoConfiguredOpenTelemetrySdk found on classpath but automatic configuration is disabled. To enable, run your JVM with -Dotel.java.global-autoconfigure.enabled=true");
                 return null;
             }
             try {
                 try {
-                    return new C4467b((d) cls.getMethod("getOpenTelemetrySdk", new Class[0]).invoke(cls.getMethod("initialize", new Class[0]).invoke(null, new Object[0]), new Object[0]));
+                    return new C4484b((d) cls.getMethod("getOpenTelemetrySdk", new Class[0]).invoke(cls.getMethod("initialize", new Class[0]).invoke(null, new Object[0]), new Object[0]));
                 } catch (IllegalAccessException e9) {
                     e = e9;
                     throw new IllegalStateException("AutoConfiguredOpenTelemetrySdk detected on classpath but could not invoke initialize method. This is a bug in OpenTelemetry.", e);
@@ -46,14 +46,14 @@ public abstract class c {
         }
     }
 
-    public static void b(C4466a c4466a) {
-        synchronized (f37208b) {
+    public static void b(C4483a c4483a) {
+        synchronized (f37284b) {
             try {
-                if (f37209c != null) {
-                    throw new IllegalStateException("GlobalOpenTelemetry.set has already been called. GlobalOpenTelemetry.set must be called only once before any calls to GlobalOpenTelemetry.get. If you are using the OpenTelemetrySdk, use OpenTelemetrySdkBuilder.buildAndRegisterGlobal instead. Previous invocation set to cause of this exception.", f37210d);
+                if (f37285c != null) {
+                    throw new IllegalStateException("GlobalOpenTelemetry.set has already been called. GlobalOpenTelemetry.set must be called only once before any calls to GlobalOpenTelemetry.get. If you are using the OpenTelemetrySdk, use OpenTelemetrySdkBuilder.buildAndRegisterGlobal instead. Previous invocation set to cause of this exception.", f37286d);
                 }
-                f37209c = new C4467b(c4466a);
-                f37210d = new Throwable();
+                f37285c = new C4484b(c4483a);
+                f37286d = new Throwable();
             } catch (Throwable th) {
                 throw th;
             }

@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicReference;
 public abstract class v {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final AtomicReference f36017a = new AtomicReference();
+    public static final AtomicReference f36785a = new AtomicReference();
 
     public static Calendar a(Calendar calendar) {
         Calendar c9 = c(calendar);

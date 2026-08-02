@@ -11,14 +11,14 @@ import java.util.Map;
 public final class c extends com.anythink.core.common.m.a {
 
     /* renamed from: a, reason: collision with root package name */
-    String f9079a;
+    String f9865a;
 
     /* renamed from: b, reason: collision with root package name */
-    boolean f9080b;
+    boolean f9866b;
 
-    public c(String str, String str2, boolean z3) {
-        this.f9080b = z3;
-        this.f9079a = str.replaceAll("\\{req_id\\}", str2 == null ? "" : str2);
+    public c(String str, String str2, boolean z6) {
+        this.f9866b = z6;
+        this.f9865a = str.replaceAll("\\{req_id\\}", str2 == null ? "" : str2);
     }
 
     @Override // com.anythink.core.common.m.a
@@ -32,13 +32,13 @@ public final class c extends com.anythink.core.common.m.a {
 
     @Override // com.anythink.core.common.m.a
     public final Map<String, String> c() {
-        if (!this.f9080b) {
+        if (!this.f9866b) {
             return null;
         }
         HashMap hashMap = new HashMap();
-        String h9 = m.h();
-        if (!TextUtils.isEmpty(h9)) {
-            hashMap.put("User-Agent", h9);
+        String h3 = m.h();
+        if (!TextUtils.isEmpty(h3)) {
+            hashMap.put("User-Agent", h3);
         }
         return hashMap;
     }
@@ -80,7 +80,7 @@ public final class c extends com.anythink.core.common.m.a {
 
     @Override // com.anythink.core.common.m.a
     public final String b() {
-        return this.f9079a;
+        return this.f9865a;
     }
 
     @Override // com.anythink.core.common.m.a

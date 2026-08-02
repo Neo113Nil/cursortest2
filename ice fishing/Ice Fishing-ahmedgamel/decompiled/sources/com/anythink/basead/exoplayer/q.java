@@ -7,83 +7,83 @@ import com.anythink.basead.exoplayer.h.af;
 final class q {
 
     /* renamed from: l, reason: collision with root package name */
-    private static final String f8687l = "MediaPeriodHolder";
+    private static final String f9473l = "MediaPeriodHolder";
 
     /* renamed from: a, reason: collision with root package name */
-    public final com.anythink.basead.exoplayer.h.r f8688a;
+    public final com.anythink.basead.exoplayer.h.r f9474a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Object f8689b;
+    public final Object f9475b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final com.anythink.basead.exoplayer.h.y[] f8690c;
+    public final com.anythink.basead.exoplayer.h.y[] f9476c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final boolean[] f8691d;
+    public final boolean[] f9477d;
 
     /* renamed from: e, reason: collision with root package name */
-    public long f8692e;
+    public long f9478e;
 
     /* renamed from: f, reason: collision with root package name */
-    public boolean f8693f;
+    public boolean f9479f;
 
     /* renamed from: g, reason: collision with root package name */
-    public boolean f8694g;
+    public boolean f9480g;
 
     /* renamed from: h, reason: collision with root package name */
-    public r f8695h;
+    public r f9481h;
     public q i;
 
     /* renamed from: j, reason: collision with root package name */
-    public af f8696j;
+    public af f9482j;
 
     /* renamed from: k, reason: collision with root package name */
-    public com.anythink.basead.exoplayer.i.i f8697k;
+    public com.anythink.basead.exoplayer.i.i f9483k;
 
     /* renamed from: m, reason: collision with root package name */
-    private final z[] f8698m;
+    private final z[] f9484m;
 
     /* renamed from: n, reason: collision with root package name */
-    private final com.anythink.basead.exoplayer.i.h f8699n;
+    private final com.anythink.basead.exoplayer.i.h f9485n;
 
     /* renamed from: o, reason: collision with root package name */
-    private final com.anythink.basead.exoplayer.h.s f8700o;
+    private final com.anythink.basead.exoplayer.h.s f9486o;
 
     /* renamed from: p, reason: collision with root package name */
-    private com.anythink.basead.exoplayer.i.i f8701p;
+    private com.anythink.basead.exoplayer.i.i f9487p;
 
     public q(z[] zVarArr, long j6, com.anythink.basead.exoplayer.i.h hVar, com.anythink.basead.exoplayer.j.b bVar, com.anythink.basead.exoplayer.h.s sVar, Object obj, r rVar) {
-        this.f8698m = zVarArr;
-        this.f8692e = j6 - rVar.f8703b;
-        this.f8699n = hVar;
-        this.f8700o = sVar;
-        this.f8689b = com.anythink.basead.exoplayer.k.a.a(obj);
-        this.f8695h = rVar;
-        this.f8690c = new com.anythink.basead.exoplayer.h.y[zVarArr.length];
-        this.f8691d = new boolean[zVarArr.length];
-        com.anythink.basead.exoplayer.h.r a9 = sVar.a(rVar.f8702a, bVar);
-        long j9 = rVar.f8704c;
-        this.f8688a = j9 != Long.MIN_VALUE ? new com.anythink.basead.exoplayer.h.d(a9, true, 0L, j9) : a9;
+        this.f9484m = zVarArr;
+        this.f9478e = j6 - rVar.f9489b;
+        this.f9485n = hVar;
+        this.f9486o = sVar;
+        this.f9475b = com.anythink.basead.exoplayer.k.a.a(obj);
+        this.f9481h = rVar;
+        this.f9476c = new com.anythink.basead.exoplayer.h.y[zVarArr.length];
+        this.f9477d = new boolean[zVarArr.length];
+        com.anythink.basead.exoplayer.h.r a9 = sVar.a(rVar.f9488a, bVar);
+        long j9 = rVar.f9490c;
+        this.f9474a = j9 != Long.MIN_VALUE ? new com.anythink.basead.exoplayer.h.d(a9, true, 0L, j9) : a9;
     }
 
     private long d() {
-        return this.f8692e;
+        return this.f9478e;
     }
 
     private long e() {
-        return this.f8695h.f8706e;
+        return this.f9481h.f9492e;
     }
 
     public final boolean a() {
-        if (this.f8693f) {
-            return !this.f8694g || this.f8688a.d() == Long.MIN_VALUE;
+        if (this.f9479f) {
+            return !this.f9480g || this.f9474a.d() == Long.MIN_VALUE;
         }
         return false;
     }
 
     public final long b() {
-        if (this.f8693f) {
-            return this.f8688a.e();
+        if (this.f9479f) {
+            return this.f9474a.e();
         }
         return 0L;
     }
@@ -91,131 +91,131 @@ final class q {
     public final void c() {
         a((com.anythink.basead.exoplayer.i.i) null);
         try {
-            if (this.f8695h.f8704c != Long.MIN_VALUE) {
-                this.f8700o.a(((com.anythink.basead.exoplayer.h.d) this.f8688a).f7593a);
+            if (this.f9481h.f9490c != Long.MIN_VALUE) {
+                this.f9486o.a(((com.anythink.basead.exoplayer.h.d) this.f9474a).f8379a);
             } else {
-                this.f8700o.a(this.f8688a);
+                this.f9486o.a(this.f9474a);
             }
         } catch (RuntimeException e9) {
-            Log.e(f8687l, "Period release failed.", e9);
+            Log.e(f9473l, "Period release failed.", e9);
         }
     }
 
-    private void b(float f3) {
-        this.f8693f = true;
-        this.f8696j = this.f8688a.b();
-        a(f3);
-        long b9 = b(this.f8695h.f8703b);
-        long j6 = this.f8692e;
-        r rVar = this.f8695h;
-        this.f8692e = (rVar.f8703b - b9) + j6;
-        this.f8695h = new r(rVar.f8702a, b9, rVar.f8704c, rVar.f8705d, rVar.f8706e, rVar.f8707f, rVar.f8708g);
+    private void b(float f2) {
+        this.f9479f = true;
+        this.f9482j = this.f9474a.b();
+        a(f2);
+        long b9 = b(this.f9481h.f9489b);
+        long j6 = this.f9478e;
+        r rVar = this.f9481h;
+        this.f9478e = (rVar.f9489b - b9) + j6;
+        this.f9481h = new r(rVar.f9488a, b9, rVar.f9490c, rVar.f9491d, rVar.f9492e, rVar.f9493f, rVar.f9494g);
     }
 
     private long d(long j6) {
-        return j6 - this.f8692e;
+        return j6 - this.f9478e;
     }
 
     private void e(long j6) {
-        if (this.f8693f) {
-            this.f8688a.a_(j6 - this.f8692e);
+        if (this.f9479f) {
+            this.f9474a.a_(j6 - this.f9478e);
         }
     }
 
-    public final long a(boolean z3) {
-        if (!this.f8693f) {
-            return this.f8695h.f8703b;
+    public final long a(boolean z6) {
+        if (!this.f9479f) {
+            return this.f9481h.f9489b;
         }
-        long d2 = this.f8688a.d();
-        return (d2 == Long.MIN_VALUE && z3) ? this.f8695h.f8706e : d2;
+        long d9 = this.f9474a.d();
+        return (d9 == Long.MIN_VALUE && z6) ? this.f9481h.f9492e : d9;
     }
 
     private static void c(com.anythink.basead.exoplayer.i.i iVar) {
-        for (int i = 0; i < iVar.f7981a; i++) {
+        for (int i = 0; i < iVar.f8767a; i++) {
             iVar.a(i);
-            iVar.f7983c.a(i);
+            iVar.f8769c.a(i);
         }
     }
 
-    public final boolean a(float f3) {
-        com.anythink.basead.exoplayer.i.i a9 = this.f8699n.a(this.f8698m, this.f8696j);
-        if (a9.a(this.f8701p)) {
+    public final boolean a(float f2) {
+        com.anythink.basead.exoplayer.i.i a9 = this.f9485n.a(this.f9484m, this.f9482j);
+        if (a9.a(this.f9487p)) {
             return false;
         }
-        this.f8697k = a9;
-        for (com.anythink.basead.exoplayer.i.f fVar : a9.f7983c.a()) {
+        this.f9483k = a9;
+        for (com.anythink.basead.exoplayer.i.f fVar : a9.f8769c.a()) {
             if (fVar != null) {
-                fVar.a(f3);
+                fVar.a(f2);
             }
         }
         return true;
     }
 
     private long c(long j6) {
-        return j6 + this.f8692e;
+        return j6 + this.f9478e;
     }
 
     public final long b(long j6) {
-        return a(j6, false, new boolean[this.f8698m.length]);
+        return a(j6, false, new boolean[this.f9484m.length]);
     }
 
     private static void b(com.anythink.basead.exoplayer.i.i iVar) {
-        for (int i = 0; i < iVar.f7981a; i++) {
+        for (int i = 0; i < iVar.f8767a; i++) {
             boolean a9 = iVar.a(i);
-            com.anythink.basead.exoplayer.i.f a10 = iVar.f7983c.a(i);
+            com.anythink.basead.exoplayer.i.f a10 = iVar.f8769c.a(i);
             if (a9 && a10 != null) {
                 a10.a();
             }
         }
     }
 
-    public final long a(long j6, boolean z3, boolean[] zArr) {
+    public final long a(long j6, boolean z6, boolean[] zArr) {
         int i = 0;
         while (true) {
-            com.anythink.basead.exoplayer.i.i iVar = this.f8697k;
-            boolean z6 = true;
-            if (i >= iVar.f7981a) {
+            com.anythink.basead.exoplayer.i.i iVar = this.f9483k;
+            boolean z9 = true;
+            if (i >= iVar.f8767a) {
                 break;
             }
-            boolean[] zArr2 = this.f8691d;
-            if (z3 || !iVar.a(this.f8701p, i)) {
-                z6 = false;
+            boolean[] zArr2 = this.f9477d;
+            if (z6 || !iVar.a(this.f9487p, i)) {
+                z9 = false;
             }
-            zArr2[i] = z6;
+            zArr2[i] = z9;
             i++;
         }
-        a(this.f8690c);
-        a(this.f8697k);
-        com.anythink.basead.exoplayer.i.g gVar = this.f8697k.f7983c;
-        long a9 = this.f8688a.a(gVar.a(), this.f8691d, this.f8690c, zArr, j6);
-        b(this.f8690c);
-        this.f8694g = false;
-        int i6 = 0;
+        a(this.f9476c);
+        a(this.f9483k);
+        com.anythink.basead.exoplayer.i.g gVar = this.f9483k.f8769c;
+        long a9 = this.f9474a.a(gVar.a(), this.f9477d, this.f9476c, zArr, j6);
+        b(this.f9476c);
+        this.f9480g = false;
+        int i4 = 0;
         while (true) {
-            com.anythink.basead.exoplayer.h.y[] yVarArr = this.f8690c;
-            if (i6 >= yVarArr.length) {
+            com.anythink.basead.exoplayer.h.y[] yVarArr = this.f9476c;
+            if (i4 >= yVarArr.length) {
                 return a9;
             }
-            if (yVarArr[i6] != null) {
-                com.anythink.basead.exoplayer.k.a.b(this.f8697k.a(i6));
-                if (this.f8698m[i6].a() != 5) {
-                    this.f8694g = true;
+            if (yVarArr[i4] != null) {
+                com.anythink.basead.exoplayer.k.a.b(this.f9483k.a(i4));
+                if (this.f9484m[i4].a() != 5) {
+                    this.f9480g = true;
                 }
             } else {
-                com.anythink.basead.exoplayer.k.a.b(gVar.a(i6) == null);
+                com.anythink.basead.exoplayer.k.a.b(gVar.a(i4) == null);
             }
-            i6++;
+            i4++;
         }
     }
 
     private void b(com.anythink.basead.exoplayer.h.y[] yVarArr) {
         int i = 0;
         while (true) {
-            z[] zVarArr = this.f8698m;
+            z[] zVarArr = this.f9484m;
             if (i >= zVarArr.length) {
                 return;
             }
-            if (zVarArr[i].a() == 5 && this.f8697k.a(i)) {
+            if (zVarArr[i].a() == 5 && this.f9483k.a(i)) {
                 yVarArr[i] = new com.anythink.basead.exoplayer.h.m();
             }
             i++;
@@ -223,11 +223,11 @@ final class q {
     }
 
     private void a(com.anythink.basead.exoplayer.i.i iVar) {
-        com.anythink.basead.exoplayer.i.i iVar2 = this.f8701p;
+        com.anythink.basead.exoplayer.i.i iVar2 = this.f9487p;
         if (iVar2 != null) {
             c(iVar2);
         }
-        this.f8701p = iVar;
+        this.f9487p = iVar;
         if (iVar != null) {
             b(iVar);
         }
@@ -236,7 +236,7 @@ final class q {
     private void a(com.anythink.basead.exoplayer.h.y[] yVarArr) {
         int i = 0;
         while (true) {
-            z[] zVarArr = this.f8698m;
+            z[] zVarArr = this.f9484m;
             if (i >= zVarArr.length) {
                 return;
             }
@@ -248,6 +248,6 @@ final class q {
     }
 
     public final void a(long j6) {
-        this.f8688a.c(j6 - this.f8692e);
+        this.f9474a.c(j6 - this.f9478e);
     }
 }

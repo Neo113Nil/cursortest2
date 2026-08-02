@@ -15,51 +15,51 @@ import java.util.Map;
 public class a {
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile a f21212b;
+    private static volatile a f21999b;
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f21213a = "ChoiceOneDrawBitBg";
+    private final String f22000a = "ChoiceOneDrawBitBg";
 
     /* renamed from: c, reason: collision with root package name */
-    private View f21214c;
+    private View f22001c;
 
     /* renamed from: d, reason: collision with root package name */
-    private Bitmap f21215d;
+    private Bitmap f22002d;
 
     /* renamed from: e, reason: collision with root package name */
-    private Bitmap f21216e;
+    private Bitmap f22003e;
 
     private a() {
     }
 
     public final void b() {
-        if (this.f21214c != null) {
-            this.f21214c = null;
+        if (this.f22001c != null) {
+            this.f22001c = null;
         }
-        Bitmap bitmap = this.f21215d;
+        Bitmap bitmap = this.f22002d;
         if (bitmap != null && !bitmap.isRecycled()) {
-            this.f21215d.recycle();
-            this.f21215d = null;
+            this.f22002d.recycle();
+            this.f22002d = null;
         }
-        Bitmap bitmap2 = this.f21216e;
+        Bitmap bitmap2 = this.f22003e;
         if (bitmap2 == null || bitmap2.isRecycled()) {
             return;
         }
-        this.f21216e.recycle();
-        this.f21216e = null;
+        this.f22003e.recycle();
+        this.f22003e = null;
     }
 
     public static a a() {
         a aVar;
-        if (f21212b != null) {
-            return f21212b;
+        if (f21999b != null) {
+            return f21999b;
         }
         synchronized (a.class) {
             try {
-                if (f21212b == null) {
-                    f21212b = new a();
+                if (f21999b == null) {
+                    f21999b = new a();
                 }
-                aVar = f21212b;
+                aVar = f21999b;
             } catch (Throwable th) {
                 throw th;
             }
@@ -71,14 +71,14 @@ public class a {
         if (view == null || cVar == null || map == null || map.size() == 0 || map.size() < 2 || cVar.g() == null || cVar.g().size() < 2) {
             return;
         }
-        this.f21214c = view;
+        this.f22001c = view;
         int e9 = cVar.e();
-        float d2 = cVar.d();
+        float d9 = cVar.d();
         float c9 = cVar.c();
         try {
-            List<d> g4 = cVar.g();
-            String a9 = g4.get(0) != null ? s.a(g4.get(0).bm()) : "";
-            String a10 = g4.get(1) != null ? s.a(g4.get(1).bm()) : "";
+            List<d> g9 = cVar.g();
+            String a9 = g9.get(0) != null ? s.a(g9.get(0).bm()) : "";
+            String a10 = g9.get(1) != null ? s.a(g9.get(1).bm()) : "";
             Bitmap bitmap = null;
             Bitmap bitmap2 = (TextUtils.isEmpty(a9) || !map.containsKey(a9)) ? null : map.get(a9);
             if (!TextUtils.isEmpty(a10) && map.containsKey(a10)) {
@@ -87,13 +87,13 @@ public class a {
             if (bitmap2 == null || bitmap2.isRecycled() || bitmap == null || bitmap.isRecycled()) {
                 return;
             }
-            a(e9, d2, c9, bitmap2);
+            a(e9, d9, c9, bitmap2);
         } catch (Throwable th) {
             th.getMessage();
         }
     }
 
-    private synchronized void a(final int i, final float f3, final float f9, final Bitmap bitmap) {
+    private synchronized void a(final int i, final float f2, final float f9, final Bitmap bitmap) {
         try {
             try {
                 try {
@@ -106,23 +106,23 @@ public class a {
                                 final a.C0136a a11 = com.anythink.expressad.video.dynview.g.a.a();
                                 a11.a(i).a(a9).b(a10);
                                 if (i == 2) {
-                                    float f10 = f3;
+                                    float f10 = f2;
                                     float f11 = f9;
                                     if (f10 > f11) {
                                         a11.a(f10).b(f9);
                                     } else {
-                                        a11.a(f11).b(f3);
+                                        a11.a(f11).b(f2);
                                     }
                                 } else {
-                                    a11.a(f3).b(f9);
+                                    a11.a(f2).b(f9);
                                 }
-                                if (a.this.f21214c != null) {
-                                    a.this.f21214c.post(new Runnable() { // from class: com.anythink.expressad.video.dynview.i.a.a.1.1
+                                if (a.this.f22001c != null) {
+                                    a.this.f22001c.post(new Runnable() { // from class: com.anythink.expressad.video.dynview.i.a.a.1.1
                                         @Override // java.lang.Runnable
                                         public final void run() {
-                                            if (a.this.f21214c != null) {
+                                            if (a.this.f22001c != null) {
                                                 a11.b();
-                                                a.this.f21214c.setBackgroundDrawable(a11.b());
+                                                a.this.f22001c.setBackgroundDrawable(a11.b());
                                             }
                                         }
                                     });

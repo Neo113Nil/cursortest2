@@ -3,6 +3,7 @@ package com.anythink.basead.exoplayer.g.b;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.anythink.basead.exoplayer.k.af;
+import w.AbstractC5128c;
 
 /* loaded from: classes.dex */
 public final class k extends h {
@@ -27,15 +28,15 @@ public final class k extends h {
     };
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f7334a;
+    public final String f8120a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f7335b;
+    public final String f8121b;
 
     public k(String str, String str2, String str3) {
         super(str);
-        this.f7334a = str2;
-        this.f7335b = str3;
+        this.f8120a = str2;
+        this.f8121b = str3;
     }
 
     public final boolean equals(Object obj) {
@@ -44,7 +45,7 @@ public final class k extends h {
         }
         if (obj != null && k.class == obj.getClass()) {
             k kVar = (k) obj;
-            if (this.f7326g.equals(kVar.f7326g) && af.a((Object) this.f7334a, (Object) kVar.f7334a) && af.a((Object) this.f7335b, (Object) kVar.f7335b)) {
+            if (this.f8112g.equals(kVar.f8112g) && af.a((Object) this.f8120a, (Object) kVar.f8120a) && af.a((Object) this.f8121b, (Object) kVar.f8121b)) {
                 return true;
             }
         }
@@ -52,28 +53,28 @@ public final class k extends h {
     }
 
     public final int hashCode() {
-        int k9 = u1.h.k(527, 31, this.f7326g);
-        String str = this.f7334a;
-        int hashCode = (k9 + (str != null ? str.hashCode() : 0)) * 31;
-        String str2 = this.f7335b;
+        int a9 = AbstractC5128c.a(527, 31, this.f8112g);
+        String str = this.f8120a;
+        int hashCode = (a9 + (str != null ? str.hashCode() : 0)) * 31;
+        String str2 = this.f8121b;
         return hashCode + (str2 != null ? str2.hashCode() : 0);
     }
 
     @Override // com.anythink.basead.exoplayer.g.b.h
     public final String toString() {
-        return this.f7326g + ": value=" + this.f7335b;
+        return this.f8112g + ": value=" + this.f8121b;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(this.f7326g);
-        parcel.writeString(this.f7334a);
-        parcel.writeString(this.f7335b);
+        parcel.writeString(this.f8112g);
+        parcel.writeString(this.f8120a);
+        parcel.writeString(this.f8121b);
     }
 
     public k(Parcel parcel) {
         super(parcel.readString());
-        this.f7334a = parcel.readString();
-        this.f7335b = parcel.readString();
+        this.f8120a = parcel.readString();
+        this.f8121b = parcel.readString();
     }
 }

@@ -16,13 +16,13 @@ public final class YZ extends LinearLayout {
     public static final int A09;
     public final ImageView A00;
     public final ImageView A01;
-    public final C1130Og A02;
-    public final C1840gi A03;
+    public final C1150Og A02;
+    public final C1860gi A03;
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 118);
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 118);
         }
         return new String(copyOfRange);
     }
@@ -40,13 +40,13 @@ public final class YZ extends LinearLayout {
         A07 = (int) (XX.A02 * 12.0f);
     }
 
-    public YZ(C1840gi c1840gi, int i) {
-        super(c1840gi);
-        this.A03 = c1840gi;
-        this.A02 = AbstractC1131Oh.A00(c1840gi.A02());
+    public YZ(C1860gi c1860gi, int i) {
+        super(c1860gi);
+        this.A03 = c1860gi;
+        this.A02 = AbstractC1151Oh.A00(c1860gi.A02());
         setOrientation(0);
-        this.A00 = new ImageView(c1840gi);
-        this.A01 = new ImageView(c1840gi);
+        this.A00 = new ImageView(c1860gi);
+        this.A01 = new ImageView(c1860gi);
         A04(i);
     }
 
@@ -90,8 +90,8 @@ public final class YZ extends LinearLayout {
         imageView.setColorFilter(-1);
     }
 
-    public void setAdDetails(C1110Nm c1110Nm, String str, VI vi, InterfaceC1381Yh interfaceC1381Yh) {
-        setOnClickListener(new YY(this, vi, interfaceC1381Yh, str, c1110Nm));
+    public void setAdDetails(C1130Nm c1130Nm, String str, VI vi, InterfaceC1401Yh interfaceC1401Yh) {
+        setOnClickListener(new YY(this, vi, interfaceC1401Yh, str, c1130Nm));
     }
 
     @Override // android.view.View

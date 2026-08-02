@@ -13,10 +13,10 @@ public final class UU {
         A01();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 34);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 34);
         }
         return new String(copyOfRange);
     }
@@ -29,18 +29,18 @@ public final class UU {
         this(-1, -1);
     }
 
-    public UU(int i, int i6) {
+    public UU(int i, int i4) {
         if (i < -1) {
             throw new IllegalArgumentException(String.format(Locale.US, A00(35, 14, 64), Integer.valueOf(i)));
         }
-        if (i >= 0 && i6 < 0) {
-            throw new IllegalArgumentException(String.format(Locale.US, A00(49, 23, 108), Integer.valueOf(i), Integer.valueOf(i6)));
+        if (i >= 0 && i4 < 0) {
+            throw new IllegalArgumentException(String.format(Locale.US, A00(49, 23, 108), Integer.valueOf(i), Integer.valueOf(i4)));
         }
-        if (i == -1 && i6 != -1) {
-            throw new IllegalArgumentException(String.format(Locale.US, A00(72, 24, 73), Integer.valueOf(i6)));
+        if (i == -1 && i4 != -1) {
+            throw new IllegalArgumentException(String.format(Locale.US, A00(72, 24, 73), Integer.valueOf(i4)));
         }
         this.A00 = i;
-        this.A01 = i6;
+        this.A01 = i4;
     }
 
     public final int A02() {

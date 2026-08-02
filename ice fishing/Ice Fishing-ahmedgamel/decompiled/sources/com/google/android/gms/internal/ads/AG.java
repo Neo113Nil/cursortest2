@@ -6,14 +6,14 @@ import java.util.Objects;
 public final class AG {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Class f23661a;
+    public final Class f24441a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final C3240gK f23662b;
+    public final C3263gK f24442b;
 
-    public /* synthetic */ AG(Class cls, C3240gK c3240gK) {
-        this.f23661a = cls;
-        this.f23662b = c3240gK;
+    public /* synthetic */ AG(Class cls, C3263gK c3263gK) {
+        this.f24441a = cls;
+        this.f24442b = c3263gK;
     }
 
     public final boolean equals(Object obj) {
@@ -21,16 +21,16 @@ public final class AG {
             return false;
         }
         AG ag = (AG) obj;
-        return ag.f23661a.equals(this.f23661a) && ag.f23662b.equals(this.f23662b);
+        return ag.f24441a.equals(this.f24441a) && ag.f24442b.equals(this.f24442b);
     }
 
     public final int hashCode() {
-        return Objects.hash(this.f23661a, this.f23662b);
+        return Objects.hash(this.f24441a, this.f24442b);
     }
 
     public final String toString() {
-        String simpleName = this.f23661a.getSimpleName();
-        String valueOf = String.valueOf(this.f23662b);
-        return D.y.s(new StringBuilder(simpleName.length() + 21 + valueOf.length()), simpleName, ", object identifier: ", valueOf);
+        String simpleName = this.f24441a.getSimpleName();
+        String valueOf = String.valueOf(this.f24442b);
+        return D.x.p(new StringBuilder(simpleName.length() + 21 + valueOf.length()), simpleName, ", object identifier: ", valueOf);
     }
 }

@@ -6,9 +6,9 @@ public final class DJ {
     public final int A00;
     public final boolean A01;
 
-    public DJ(int i, boolean z3) {
+    public DJ(int i, boolean z6) {
         this.A00 = i;
-        this.A01 = z3;
+        this.A01 = z6;
     }
 
     public final boolean equals(Object obj) {

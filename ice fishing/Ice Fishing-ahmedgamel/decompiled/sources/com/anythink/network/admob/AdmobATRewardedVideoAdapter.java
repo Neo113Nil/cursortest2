@@ -1,9 +1,9 @@
 package com.anythink.network.admob;
 
-import G2.c;
-import G2.d;
-import H2.a;
-import H2.b;
+import I2.c;
+import I2.d;
+import J2.a;
+import J2.b;
 import android.app.Activity;
 import android.content.Context;
 import android.os.RemoteException;
@@ -21,130 +21,130 @@ import com.anythink.core.api.MediationInitCallback;
 import com.anythink.core.common.d.j;
 import com.anythink.network.admob.AdmobATConst;
 import com.anythink.rewardvideo.unitgroup.api.CustomRewardVideoAdapter;
-import com.google.android.gms.internal.ads.C3897sf;
-import com.google.android.gms.internal.ads.C4005uf;
-import com.google.android.gms.internal.ads.C4167xf;
-import com.google.android.gms.internal.ads.InterfaceC3198ff;
-import com.google.android.gms.internal.ads.InterfaceC3412jf;
+import com.google.android.gms.internal.ads.C3920sf;
+import com.google.android.gms.internal.ads.C4028uf;
+import com.google.android.gms.internal.ads.C4190xf;
+import com.google.android.gms.internal.ads.InterfaceC3221ff;
+import com.google.android.gms.internal.ads.InterfaceC3435jf;
 import com.google.android.gms.internal.ads.Ux;
 import java.util.HashMap;
 import java.util.Map;
-import k2.C4631a;
-import k2.f;
-import k2.g;
-import k2.i;
-import k2.m;
-import k2.n;
-import k2.p;
-import k2.q;
-import k2.s;
-import q2.E0;
-import q2.InterfaceC4914w0;
-import q2.U0;
+import m2.C4741a;
+import m2.f;
+import m2.g;
+import m2.i;
+import m2.m;
+import m2.n;
+import m2.p;
+import m2.q;
+import m2.s;
+import s2.E0;
+import s2.InterfaceC4963w0;
+import s2.U0;
 
 /* loaded from: classes.dex */
 public class AdmobATRewardedVideoAdapter extends CustomRewardVideoAdapter {
 
     /* renamed from: g, reason: collision with root package name */
-    private static final String f22851g = "AdmobATRewardedVideoAdapter";
+    private static final String f23638g = "AdmobATRewardedVideoAdapter";
 
     /* renamed from: a, reason: collision with root package name */
-    c f22852a;
+    c f23639a;
 
     /* renamed from: c, reason: collision with root package name */
-    a f22854c;
+    a f23641c;
 
     /* renamed from: f, reason: collision with root package name */
-    Map<String, Object> f22857f;
+    Map<String, Object> f23644f;
     private String i;
 
     /* renamed from: k, reason: collision with root package name */
-    private d f22860k;
+    private d f23647k;
 
     /* renamed from: l, reason: collision with root package name */
-    private m f22861l;
+    private m f23648l;
 
     /* renamed from: m, reason: collision with root package name */
-    private q f22862m;
+    private q f23649m;
 
     /* renamed from: n, reason: collision with root package name */
-    private b f22863n;
+    private b f23650n;
 
     /* renamed from: b, reason: collision with root package name */
-    g f22853b = null;
+    g f23640b = null;
 
     /* renamed from: h, reason: collision with root package name */
-    private String f22858h = "";
+    private String f23645h = "";
 
     /* renamed from: j, reason: collision with root package name */
-    private int f22859j = 1;
+    private int f23646j = 1;
 
     /* renamed from: d, reason: collision with root package name */
-    boolean f22855d = false;
+    boolean f23642d = false;
 
     /* renamed from: e, reason: collision with root package name */
-    boolean f22856e = false;
+    boolean f23643e = false;
 
     /* renamed from: o, reason: collision with root package name */
-    private boolean f22864o = false;
+    private boolean f23651o = false;
 
     /* renamed from: p, reason: collision with root package name */
-    private boolean f22865p = false;
+    private boolean f23652p = false;
 
     /* renamed from: com.anythink.network.admob.AdmobATRewardedVideoAdapter$2, reason: invalid class name */
     public class AnonymousClass2 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ Context f22870a;
+        final /* synthetic */ Context f23657a;
 
         public AnonymousClass2(Context context) {
-            this.f22870a = context;
+            this.f23657a = context;
         }
 
         @Override // java.lang.Runnable
         public final void run() {
             try {
-                AdmobATRewardedVideoAdapter.this.f22860k = new d() { // from class: com.anythink.network.admob.AdmobATRewardedVideoAdapter.2.1
-                    @Override // k2.x
+                AdmobATRewardedVideoAdapter.this.f23647k = new d() { // from class: com.anythink.network.admob.AdmobATRewardedVideoAdapter.2.1
+                    @Override // m2.x
                     public final void onAdFailedToLoad(n nVar) {
                         AdmobATRewardedVideoAdapter admobATRewardedVideoAdapter = AdmobATRewardedVideoAdapter.this;
-                        admobATRewardedVideoAdapter.f22852a = null;
+                        admobATRewardedVideoAdapter.f23639a = null;
                         if (((ATBaseAdInternalAdapter) admobATRewardedVideoAdapter).mLoadListener != null) {
-                            ((ATBaseAdInternalAdapter) AdmobATRewardedVideoAdapter.this).mLoadListener.onAdLoadError(String.valueOf(nVar.f38568a), nVar.f38569b);
+                            ((ATBaseAdInternalAdapter) AdmobATRewardedVideoAdapter.this).mLoadListener.onAdLoadError(String.valueOf(nVar.f39357a), nVar.f39358b);
                         }
                     }
 
-                    @Override // k2.x
+                    @Override // m2.x
                     public final void onAdLoaded(c cVar) {
-                        AdmobATRewardedVideoAdapter.this.f22852a = cVar;
-                        AdmobATRewardedVideoAdapter.this.f22857f.put("response_info", cVar.a());
+                        AdmobATRewardedVideoAdapter.this.f23639a = cVar;
+                        AdmobATRewardedVideoAdapter.this.f23644f.put("response_info", cVar.a());
                         AdmobATRewardedVideoAdapter admobATRewardedVideoAdapter = AdmobATRewardedVideoAdapter.this;
-                        admobATRewardedVideoAdapter.f22856e = true;
-                        if (admobATRewardedVideoAdapter.f22864o) {
-                            c cVar2 = AdmobATRewardedVideoAdapter.this.f22852a;
+                        admobATRewardedVideoAdapter.f23643e = true;
+                        if (admobATRewardedVideoAdapter.f23651o) {
+                            c cVar2 = AdmobATRewardedVideoAdapter.this.f23639a;
                             p pVar = new p() { // from class: com.anythink.network.admob.AdmobATRewardedVideoAdapter.2.1.1
-                                @Override // k2.p
+                                @Override // m2.p
                                 public final void onPaidEvent(i iVar) {
-                                    if (AdmobATRewardedVideoAdapter.this.f22865p) {
+                                    if (AdmobATRewardedVideoAdapter.this.f23652p) {
                                         return;
                                     }
                                     AdmobATRewardedVideoAdapter.g(AdmobATRewardedVideoAdapter.this);
                                     AdMobATInitManager.getInstance();
-                                    AdMobATInitManager.a(AdmobATRewardedVideoAdapter.this.f22857f, iVar);
+                                    AdMobATInitManager.a(AdmobATRewardedVideoAdapter.this.f23644f, iVar);
                                     if (((CustomRewardVideoAdapter) AdmobATRewardedVideoAdapter.this).mImpressionListener != null) {
                                         ((CustomRewardVideoAdapter) AdmobATRewardedVideoAdapter.this).mImpressionListener.onRewardedVideoAdPlayStart();
                                     }
                                 }
                             };
-                            C3897sf c3897sf = (C3897sf) cVar2;
-                            c3897sf.getClass();
+                            C3920sf c3920sf = (C3920sf) cVar2;
+                            c3920sf.getClass();
                             try {
-                                InterfaceC3412jf interfaceC3412jf = c3897sf.f33982a;
-                                if (interfaceC3412jf != null) {
-                                    interfaceC3412jf.K1(new U0(pVar));
+                                InterfaceC3435jf interfaceC3435jf = c3920sf.f34748a;
+                                if (interfaceC3435jf != null) {
+                                    interfaceC3435jf.z1(new U0(pVar));
                                 }
                             } catch (RemoteException e9) {
-                                v2.i.i("#007 Could not call remote method.", e9);
+                                x2.i.i("#007 Could not call remote method.", e9);
                             }
                         }
                         if (((ATBaseAdInternalAdapter) AdmobATRewardedVideoAdapter.this).mLoadListener != null) {
@@ -152,10 +152,10 @@ public class AdmobATRewardedVideoAdapter extends CustomRewardVideoAdapter {
                         }
                     }
                 };
-                Context context = this.f22870a;
-                String str = AdmobATRewardedVideoAdapter.this.f22858h;
+                Context context = this.f23657a;
+                String str = AdmobATRewardedVideoAdapter.this.f23645h;
                 AdmobATRewardedVideoAdapter admobATRewardedVideoAdapter = AdmobATRewardedVideoAdapter.this;
-                c.b(context, str, admobATRewardedVideoAdapter.f22853b, admobATRewardedVideoAdapter.f22860k);
+                c.b(context, str, admobATRewardedVideoAdapter.f23640b, admobATRewardedVideoAdapter.f23647k);
             } catch (Throwable th) {
                 if (((ATBaseAdInternalAdapter) AdmobATRewardedVideoAdapter.this).mLoadListener != null) {
                     ((ATBaseAdInternalAdapter) AdmobATRewardedVideoAdapter.this).mLoadListener.onAdLoadError("", th.getMessage());
@@ -168,65 +168,65 @@ public class AdmobATRewardedVideoAdapter extends CustomRewardVideoAdapter {
     public class AnonymousClass3 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ Context f22874a;
+        final /* synthetic */ Context f23661a;
 
         public AnonymousClass3(Context context) {
-            this.f22874a = context;
+            this.f23661a = context;
         }
 
         @Override // java.lang.Runnable
         public final void run() {
             try {
-                AdmobATRewardedVideoAdapter.this.f22863n = new b() { // from class: com.anythink.network.admob.AdmobATRewardedVideoAdapter.3.1
-                    @Override // k2.x
+                AdmobATRewardedVideoAdapter.this.f23650n = new b() { // from class: com.anythink.network.admob.AdmobATRewardedVideoAdapter.3.1
+                    @Override // m2.x
                     public final void onAdFailedToLoad(n nVar) {
                         if (((ATBaseAdInternalAdapter) AdmobATRewardedVideoAdapter.this).mLoadListener != null) {
-                            ((ATBaseAdInternalAdapter) AdmobATRewardedVideoAdapter.this).mLoadListener.onAdLoadError(String.valueOf(nVar.f38568a), nVar.f38569b);
+                            ((ATBaseAdInternalAdapter) AdmobATRewardedVideoAdapter.this).mLoadListener.onAdLoadError(String.valueOf(nVar.f39357a), nVar.f39358b);
                         }
                     }
 
-                    @Override // k2.x
+                    @Override // m2.x
                     public final void onAdLoaded(a aVar) {
-                        AdmobATRewardedVideoAdapter.this.f22854c = aVar;
-                        C4167xf c4167xf = (C4167xf) aVar;
-                        c4167xf.getClass();
-                        InterfaceC4914w0 interfaceC4914w0 = null;
+                        AdmobATRewardedVideoAdapter.this.f23641c = aVar;
+                        C4190xf c4190xf = (C4190xf) aVar;
+                        c4190xf.getClass();
+                        InterfaceC4963w0 interfaceC4963w0 = null;
                         try {
-                            InterfaceC3412jf interfaceC3412jf = c4167xf.f35032a;
-                            if (interfaceC3412jf != null) {
-                                interfaceC4914w0 = interfaceC3412jf.l();
+                            InterfaceC3435jf interfaceC3435jf = c4190xf.f35811a;
+                            if (interfaceC3435jf != null) {
+                                interfaceC4963w0 = interfaceC3435jf.l();
                             }
                         } catch (RemoteException e9) {
-                            v2.i.i("#007 Could not call remote method.", e9);
+                            x2.i.i("#007 Could not call remote method.", e9);
                         }
-                        AdmobATRewardedVideoAdapter.this.f22857f.put("response_info", new s(interfaceC4914w0));
+                        AdmobATRewardedVideoAdapter.this.f23644f.put("response_info", new s(interfaceC4963w0));
                         AdmobATRewardedVideoAdapter admobATRewardedVideoAdapter = AdmobATRewardedVideoAdapter.this;
-                        admobATRewardedVideoAdapter.f22856e = true;
-                        if (admobATRewardedVideoAdapter.f22864o) {
-                            a aVar2 = AdmobATRewardedVideoAdapter.this.f22854c;
+                        admobATRewardedVideoAdapter.f23643e = true;
+                        if (admobATRewardedVideoAdapter.f23651o) {
+                            a aVar2 = AdmobATRewardedVideoAdapter.this.f23641c;
                             p pVar = new p() { // from class: com.anythink.network.admob.AdmobATRewardedVideoAdapter.3.1.1
-                                @Override // k2.p
+                                @Override // m2.p
                                 public final void onPaidEvent(i iVar) {
-                                    if (AdmobATRewardedVideoAdapter.this.f22865p) {
+                                    if (AdmobATRewardedVideoAdapter.this.f23652p) {
                                         return;
                                     }
                                     AdmobATRewardedVideoAdapter.g(AdmobATRewardedVideoAdapter.this);
                                     AdMobATInitManager.getInstance();
-                                    AdMobATInitManager.a(AdmobATRewardedVideoAdapter.this.f22857f, iVar);
+                                    AdMobATInitManager.a(AdmobATRewardedVideoAdapter.this.f23644f, iVar);
                                     if (((CustomRewardVideoAdapter) AdmobATRewardedVideoAdapter.this).mImpressionListener != null) {
                                         ((CustomRewardVideoAdapter) AdmobATRewardedVideoAdapter.this).mImpressionListener.onRewardedVideoAdPlayStart();
                                     }
                                 }
                             };
-                            C4167xf c4167xf2 = (C4167xf) aVar2;
-                            c4167xf2.getClass();
+                            C4190xf c4190xf2 = (C4190xf) aVar2;
+                            c4190xf2.getClass();
                             try {
-                                InterfaceC3412jf interfaceC3412jf2 = c4167xf2.f35032a;
-                                if (interfaceC3412jf2 != null) {
-                                    interfaceC3412jf2.K1(new U0(pVar));
+                                InterfaceC3435jf interfaceC3435jf2 = c4190xf2.f35811a;
+                                if (interfaceC3435jf2 != null) {
+                                    interfaceC3435jf2.z1(new U0(pVar));
                                 }
                             } catch (RemoteException e10) {
-                                v2.i.i("#007 Could not call remote method.", e10);
+                                x2.i.i("#007 Could not call remote method.", e10);
                             }
                         }
                         if (((ATBaseAdInternalAdapter) AdmobATRewardedVideoAdapter.this).mLoadListener != null) {
@@ -234,10 +234,10 @@ public class AdmobATRewardedVideoAdapter extends CustomRewardVideoAdapter {
                         }
                     }
                 };
-                Context context = this.f22874a;
-                String str = AdmobATRewardedVideoAdapter.this.f22858h;
+                Context context = this.f23661a;
+                String str = AdmobATRewardedVideoAdapter.this.f23645h;
                 AdmobATRewardedVideoAdapter admobATRewardedVideoAdapter = AdmobATRewardedVideoAdapter.this;
-                a.a(context, str, admobATRewardedVideoAdapter.f22853b, admobATRewardedVideoAdapter.f22863n);
+                a.a(context, str, admobATRewardedVideoAdapter.f23640b, admobATRewardedVideoAdapter.f23650n);
             } catch (Throwable th) {
                 if (((ATBaseAdInternalAdapter) AdmobATRewardedVideoAdapter.this).mLoadListener != null) {
                     ((ATBaseAdInternalAdapter) AdmobATRewardedVideoAdapter.this).mLoadListener.onAdLoadError("", th.getMessage());
@@ -247,23 +247,23 @@ public class AdmobATRewardedVideoAdapter extends CustomRewardVideoAdapter {
     }
 
     public static /* synthetic */ boolean g(AdmobATRewardedVideoAdapter admobATRewardedVideoAdapter) {
-        admobATRewardedVideoAdapter.f22865p = true;
+        admobATRewardedVideoAdapter.f23652p = true;
         return true;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
         try {
-            c cVar = this.f22852a;
+            c cVar = this.f23639a;
             if (cVar != null) {
-                ((C3897sf) cVar).f33984c.f34845n = null;
-                this.f22852a = null;
+                ((C3920sf) cVar).f34750c.f35622n = null;
+                this.f23639a = null;
             }
-            this.f22860k = null;
-            this.f22861l = null;
-            this.f22862m = null;
-            this.f22863n = null;
-            this.f22853b = null;
+            this.f23647k = null;
+            this.f23648l = null;
+            this.f23649m = null;
+            this.f23650n = null;
+            this.f23640b = null;
         } catch (Exception unused) {
         }
     }
@@ -271,11 +271,11 @@ public class AdmobATRewardedVideoAdapter extends CustomRewardVideoAdapter {
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public void getBidRequestInfo(Context context, Map<String, Object> map, Map<String, Object> map2, ATBidRequestInfoListener aTBidRequestInfoListener) {
         if (map.containsKey("unit_type")) {
-            this.f22859j = Integer.parseInt(map.get("unit_type").toString());
+            this.f23646j = Integer.parseInt(map.get("unit_type").toString());
         }
-        k2.b bVar = k2.b.REWARDED;
-        if (this.f22859j == 2) {
-            bVar = k2.b.REWARDED_INTERSTITIAL;
+        m2.b bVar = m2.b.REWARDED;
+        if (this.f23646j == 2) {
+            bVar = m2.b.REWARDED_INTERSTITIAL;
         }
         AdMobATInitManager.getInstance().a(context, map, map2, bVar, aTBidRequestInfoListener);
     }
@@ -289,7 +289,7 @@ public class AdmobATRewardedVideoAdapter extends CustomRewardVideoAdapter {
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public Map<String, Object> getNetworkInfoMap() {
-        return this.f22857f;
+        return this.f23644f;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -299,7 +299,7 @@ public class AdmobATRewardedVideoAdapter extends CustomRewardVideoAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        return this.f22858h;
+        return this.f23645h;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -310,15 +310,15 @@ public class AdmobATRewardedVideoAdapter extends CustomRewardVideoAdapter {
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public boolean isAdReady() {
         int i;
-        return this.f22856e && (((i = this.f22859j) == 1 && this.f22852a != null) || (i == 2 && this.f22854c != null));
+        return this.f23643e && (((i = this.f23646j) == 1 && this.f23639a != null) || (i == 2 && this.f23641c != null));
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void loadCustomNetworkAd(Context context, final Map<String, Object> map, final Map<String, Object> map2) {
-        this.f22858h = ATInitMediation.getStringFromMap(map, "unit_id");
+        this.f23645h = ATInitMediation.getStringFromMap(map, "unit_id");
         this.i = ATInitMediation.getStringFromMap(map, "payload");
-        this.f22864o = ATInitMediation.getIntFromMap(map, j.w.f12629q, 2) == 1;
-        if (TextUtils.isEmpty(this.f22858h)) {
+        this.f23651o = ATInitMediation.getIntFromMap(map, j.w.f13415q, 2) == 1;
+        if (TextUtils.isEmpty(this.f23645h)) {
             ATCustomLoadListener aTCustomLoadListener = this.mLoadListener;
             if (aTCustomLoadListener != null) {
                 aTCustomLoadListener.onAdLoadError("", "unitId is empty.");
@@ -327,7 +327,7 @@ public class AdmobATRewardedVideoAdapter extends CustomRewardVideoAdapter {
             return;
         }
         if (map.containsKey("unit_type")) {
-            this.f22859j = Integer.parseInt(map.get("unit_type").toString());
+            this.f23646j = Integer.parseInt(map.get("unit_type").toString());
         }
         final Context applicationContext = context.getApplicationContext();
         AdMobATInitManager.getInstance().initSDK(applicationContext, map, new MediationInitCallback() { // from class: com.anythink.network.admob.AdmobATRewardedVideoAdapter.1
@@ -346,27 +346,27 @@ public class AdmobATRewardedVideoAdapter extends CustomRewardVideoAdapter {
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
-    public boolean setUserDataConsent(Context context, boolean z3, boolean z6) {
-        return AdMobATInitManager.getInstance().setUserDataConsent(context, z3, z6);
+    public boolean setUserDataConsent(Context context, boolean z6, boolean z9) {
+        return AdMobATInitManager.getInstance().setUserDataConsent(context, z6, z9);
     }
 
     @Override // com.anythink.rewardvideo.unitgroup.api.CustomRewardVideoAdapter
     public void show(Activity activity) {
         if (isAdReady()) {
             if (activity == null) {
-                Log.e(f22851g, "Admob: show(), activity = null");
+                Log.e(f23638g, "Admob: show(), activity = null");
                 return;
             }
-            this.f22856e = false;
-            this.f22861l = new m() { // from class: com.anythink.network.admob.AdmobATRewardedVideoAdapter.4
-                @Override // k2.m
+            this.f23643e = false;
+            this.f23648l = new m() { // from class: com.anythink.network.admob.AdmobATRewardedVideoAdapter.4
+                @Override // m2.m
                 public final void onAdClicked() {
                     if (((CustomRewardVideoAdapter) AdmobATRewardedVideoAdapter.this).mImpressionListener != null) {
                         ((CustomRewardVideoAdapter) AdmobATRewardedVideoAdapter.this).mImpressionListener.onRewardedVideoAdPlayClicked();
                     }
                 }
 
-                @Override // k2.m
+                @Override // m2.m
                 public final void onAdDismissedFullScreenContent() {
                     try {
                         AdMobATInitManager.getInstance().a(AdmobATRewardedVideoAdapter.this.getTrackingInfo().z());
@@ -377,31 +377,31 @@ public class AdmobATRewardedVideoAdapter extends CustomRewardVideoAdapter {
                     }
                 }
 
-                @Override // k2.m
-                public final void onAdFailedToShowFullScreenContent(C4631a c4631a) {
+                @Override // m2.m
+                public final void onAdFailedToShowFullScreenContent(C4741a c4741a) {
                     if (((CustomRewardVideoAdapter) AdmobATRewardedVideoAdapter.this).mImpressionListener != null) {
-                        ((CustomRewardVideoAdapter) AdmobATRewardedVideoAdapter.this).mImpressionListener.onRewardedVideoAdPlayFailed(String.valueOf(c4631a.f38568a), c4631a.f38569b);
+                        ((CustomRewardVideoAdapter) AdmobATRewardedVideoAdapter.this).mImpressionListener.onRewardedVideoAdPlayFailed(String.valueOf(c4741a.f39357a), c4741a.f39358b);
                     }
                 }
 
-                @Override // k2.m
+                @Override // m2.m
                 public final void onAdShowedFullScreenContent() {
                     try {
-                        if (AdmobATRewardedVideoAdapter.this.f22854c != null) {
-                            AdMobATInitManager.getInstance().a(AdmobATRewardedVideoAdapter.this.getTrackingInfo().z(), AdmobATRewardedVideoAdapter.this.f22854c);
+                        if (AdmobATRewardedVideoAdapter.this.f23641c != null) {
+                            AdMobATInitManager.getInstance().a(AdmobATRewardedVideoAdapter.this.getTrackingInfo().z(), AdmobATRewardedVideoAdapter.this.f23641c);
                         }
-                        if (AdmobATRewardedVideoAdapter.this.f22852a != null) {
-                            AdMobATInitManager.getInstance().a(AdmobATRewardedVideoAdapter.this.getTrackingInfo().z(), AdmobATRewardedVideoAdapter.this.f22852a);
+                        if (AdmobATRewardedVideoAdapter.this.f23639a != null) {
+                            AdMobATInitManager.getInstance().a(AdmobATRewardedVideoAdapter.this.getTrackingInfo().z(), AdmobATRewardedVideoAdapter.this.f23639a);
                         }
                     } catch (Throwable unused) {
                     }
                     AdmobATRewardedVideoAdapter admobATRewardedVideoAdapter = AdmobATRewardedVideoAdapter.this;
-                    admobATRewardedVideoAdapter.f22855d = false;
-                    if (admobATRewardedVideoAdapter.f22864o) {
+                    admobATRewardedVideoAdapter.f23642d = false;
+                    if (admobATRewardedVideoAdapter.f23651o) {
                         AdmobATRewardedVideoAdapter.this.postOnMainThreadDelayed(new Runnable() { // from class: com.anythink.network.admob.AdmobATRewardedVideoAdapter.4.1
                             @Override // java.lang.Runnable
                             public final void run() {
-                                if (AdmobATRewardedVideoAdapter.this.f22865p) {
+                                if (AdmobATRewardedVideoAdapter.this.f23652p) {
                                     return;
                                 }
                                 AdmobATRewardedVideoAdapter.g(AdmobATRewardedVideoAdapter.this);
@@ -415,43 +415,43 @@ public class AdmobATRewardedVideoAdapter extends CustomRewardVideoAdapter {
                     }
                 }
             };
-            this.f22862m = new q() { // from class: com.anythink.network.admob.AdmobATRewardedVideoAdapter.5
-                @Override // k2.q
-                public final void onUserEarnedReward(G2.b bVar) {
+            this.f23649m = new q() { // from class: com.anythink.network.admob.AdmobATRewardedVideoAdapter.5
+                @Override // m2.q
+                public final void onUserEarnedReward(I2.b bVar) {
                     AdmobATRewardedVideoAdapter admobATRewardedVideoAdapter = AdmobATRewardedVideoAdapter.this;
-                    if (!admobATRewardedVideoAdapter.f22855d) {
-                        admobATRewardedVideoAdapter.f22855d = true;
+                    if (!admobATRewardedVideoAdapter.f23642d) {
+                        admobATRewardedVideoAdapter.f23642d = true;
                         if (((CustomRewardVideoAdapter) admobATRewardedVideoAdapter).mImpressionListener != null) {
                             ((CustomRewardVideoAdapter) AdmobATRewardedVideoAdapter.this).mImpressionListener.onRewardedVideoAdPlayEnd();
                         }
                     }
                     try {
                         AdmobATRewardedVideoAdapter admobATRewardedVideoAdapter2 = AdmobATRewardedVideoAdapter.this;
-                        if (admobATRewardedVideoAdapter2.f22857f == null) {
-                            admobATRewardedVideoAdapter2.f22857f = new HashMap();
+                        if (admobATRewardedVideoAdapter2.f23644f == null) {
+                            admobATRewardedVideoAdapter2.f23644f = new HashMap();
                         }
                         if (bVar != null) {
                             HashMap hashMap = new HashMap();
-                            InterfaceC3198ff interfaceC3198ff = (InterfaceC3198ff) ((Ux) bVar).f28050u;
+                            InterfaceC3221ff interfaceC3221ff = (InterfaceC3221ff) ((Ux) bVar).f28847u;
                             int i = 0;
-                            if (interfaceC3198ff != null) {
+                            if (interfaceC3221ff != null) {
                                 try {
-                                    i = interfaceC3198ff.e();
+                                    i = interfaceC3221ff.e();
                                 } catch (RemoteException e9) {
-                                    v2.i.g("Could not forward getAmount to RewardItem", e9);
+                                    x2.i.g("Could not forward getAmount to RewardItem", e9);
                                 }
                             }
                             hashMap.put(AdmobATConst.REWARD_EXTRA.REWARD_EXTRA_KEY_REWARD_AMOUNT, Integer.valueOf(i));
                             String str = null;
-                            if (interfaceC3198ff != null) {
+                            if (interfaceC3221ff != null) {
                                 try {
-                                    str = interfaceC3198ff.d();
+                                    str = interfaceC3221ff.d();
                                 } catch (RemoteException e10) {
-                                    v2.i.g("Could not forward getType to RewardItem", e10);
+                                    x2.i.g("Could not forward getType to RewardItem", e10);
                                 }
                             }
                             hashMap.put(AdmobATConst.REWARD_EXTRA.REWARD_EXTRA_KEY_REWARD_TYPE, str);
-                            AdmobATRewardedVideoAdapter.this.f22857f.put(ATAdConst.REWARD_EXTRA.REWARD_INFO, hashMap);
+                            AdmobATRewardedVideoAdapter.this.f23644f.put(ATAdConst.REWARD_EXTRA.REWARD_INFO, hashMap);
                         }
                     } catch (Throwable th) {
                         th.printStackTrace();
@@ -461,68 +461,68 @@ public class AdmobATRewardedVideoAdapter extends CustomRewardVideoAdapter {
                     }
                 }
             };
-            if (this.f22859j == 2) {
-                ((C4167xf) this.f22854c).f35034c.f34845n = this.f22861l;
+            if (this.f23646j == 2) {
+                ((C4190xf) this.f23641c).f35813c.f35622n = this.f23648l;
                 String str = this.mUserId;
                 String str2 = this.mUserData;
-                C4167xf c4167xf = (C4167xf) this.f22854c;
-                c4167xf.getClass();
+                C4190xf c4190xf = (C4190xf) this.f23641c;
+                c4190xf.getClass();
                 try {
-                    InterfaceC3412jf interfaceC3412jf = c4167xf.f35032a;
-                    if (interfaceC3412jf != null) {
-                        interfaceC3412jf.i3(new C4005uf(str, str2));
+                    InterfaceC3435jf interfaceC3435jf = c4190xf.f35811a;
+                    if (interfaceC3435jf != null) {
+                        interfaceC3435jf.e3(new C4028uf(str, str2));
                     }
                 } catch (RemoteException e9) {
-                    v2.i.i("#007 Could not call remote method.", e9);
+                    x2.i.i("#007 Could not call remote method.", e9);
                 }
                 if (ATSDK.isNetworkLogDebug()) {
-                    Log.i(f22851g, "ServerSideVerificationOptions: userId:" + str + "||userCustomData:" + str2);
+                    Log.i(f23638g, "ServerSideVerificationOptions: userId:" + str + "||userCustomData:" + str2);
                 }
-                this.f22854c.b(activity, this.f22862m);
+                this.f23641c.b(activity, this.f23649m);
                 return;
             }
             if (!TextUtils.isEmpty(this.mUserData) && this.mUserData.contains(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME)) {
-                this.mUserData = this.mUserData.replace(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME, this.f22858h);
+                this.mUserData = this.mUserData.replace(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME, this.f23645h);
             }
             String str3 = this.mUserId;
             String str4 = this.mUserData;
-            C3897sf c3897sf = (C3897sf) this.f22852a;
-            c3897sf.getClass();
+            C3920sf c3920sf = (C3920sf) this.f23639a;
+            c3920sf.getClass();
             try {
-                InterfaceC3412jf interfaceC3412jf2 = c3897sf.f33982a;
-                if (interfaceC3412jf2 != null) {
-                    interfaceC3412jf2.i3(new C4005uf(str3, str4));
+                InterfaceC3435jf interfaceC3435jf2 = c3920sf.f34748a;
+                if (interfaceC3435jf2 != null) {
+                    interfaceC3435jf2.e3(new C4028uf(str3, str4));
                 }
             } catch (RemoteException e10) {
-                v2.i.i("#007 Could not call remote method.", e10);
+                x2.i.i("#007 Could not call remote method.", e10);
             }
             if (ATSDK.isNetworkLogDebug()) {
-                Log.i(f22851g, "ServerSideVerificationOptions: userId:" + str3 + "||userCustomData:" + str4);
+                Log.i(f23638g, "ServerSideVerificationOptions: userId:" + str3 + "||userCustomData:" + str4);
             }
-            c cVar = this.f22852a;
-            ((C3897sf) cVar).f33984c.f34845n = this.f22861l;
-            cVar.d(activity, this.f22862m);
+            c cVar = this.f23639a;
+            ((C3920sf) cVar).f34750c.f35622n = this.f23648l;
+            cVar.d(activity, this.f23649m);
         }
     }
 
     public void startLoadAd(Context context, Map<String, Object> map, Map<String, Object> map2) {
-        this.f22857f = new HashMap();
-        if (this.f22859j != 2) {
-            f a9 = AdMobATInitManager.getInstance().a(context, map, map2, k2.b.REWARDED, !TextUtils.isEmpty(this.i));
+        this.f23644f = new HashMap();
+        if (this.f23646j != 2) {
+            f a9 = AdMobATInitManager.getInstance().a(context, map, map2, m2.b.REWARDED, !TextUtils.isEmpty(this.i));
             if (!TextUtils.isEmpty(this.i)) {
-                ((E0) a9.f1720u).f40022m = this.i;
+                ((E0) a9.f67u).f40321m = this.i;
             }
             a9.getClass();
-            this.f22853b = new g(a9);
+            this.f23640b = new g(a9);
             startLoadRewardedVideoAd(context);
             return;
         }
-        f a10 = AdMobATInitManager.getInstance().a(context, map, map2, k2.b.REWARDED_INTERSTITIAL, !TextUtils.isEmpty(this.i));
+        f a10 = AdMobATInitManager.getInstance().a(context, map, map2, m2.b.REWARDED_INTERSTITIAL, !TextUtils.isEmpty(this.i));
         if (!TextUtils.isEmpty(this.i)) {
-            ((E0) a10.f1720u).f40022m = this.i;
+            ((E0) a10.f67u).f40321m = this.i;
         }
         a10.getClass();
-        this.f22853b = new g(a10);
+        this.f23640b = new g(a10);
         startLoadInterstitlalRewardAd(context);
     }
 
@@ -536,45 +536,45 @@ public class AdmobATRewardedVideoAdapter extends CustomRewardVideoAdapter {
 
     private void b(Activity activity) {
         if (!TextUtils.isEmpty(this.mUserData) && this.mUserData.contains(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME)) {
-            this.mUserData = this.mUserData.replace(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME, this.f22858h);
+            this.mUserData = this.mUserData.replace(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME, this.f23645h);
         }
         String str = this.mUserId;
         String str2 = this.mUserData;
-        C3897sf c3897sf = (C3897sf) this.f22852a;
-        c3897sf.getClass();
+        C3920sf c3920sf = (C3920sf) this.f23639a;
+        c3920sf.getClass();
         try {
-            InterfaceC3412jf interfaceC3412jf = c3897sf.f33982a;
-            if (interfaceC3412jf != null) {
-                interfaceC3412jf.i3(new C4005uf(str, str2));
+            InterfaceC3435jf interfaceC3435jf = c3920sf.f34748a;
+            if (interfaceC3435jf != null) {
+                interfaceC3435jf.e3(new C4028uf(str, str2));
             }
         } catch (RemoteException e9) {
-            v2.i.i("#007 Could not call remote method.", e9);
+            x2.i.i("#007 Could not call remote method.", e9);
         }
         if (ATSDK.isNetworkLogDebug()) {
-            Log.i(f22851g, "ServerSideVerificationOptions: userId:" + str + "||userCustomData:" + str2);
+            Log.i(f23638g, "ServerSideVerificationOptions: userId:" + str + "||userCustomData:" + str2);
         }
-        c cVar = this.f22852a;
-        ((C3897sf) cVar).f33984c.f34845n = this.f22861l;
-        cVar.d(activity, this.f22862m);
+        c cVar = this.f23639a;
+        ((C3920sf) cVar).f34750c.f35622n = this.f23648l;
+        cVar.d(activity, this.f23649m);
     }
 
     private void a(Activity activity) {
-        ((C4167xf) this.f22854c).f35034c.f34845n = this.f22861l;
+        ((C4190xf) this.f23641c).f35813c.f35622n = this.f23648l;
         String str = this.mUserId;
         String str2 = this.mUserData;
-        C4167xf c4167xf = (C4167xf) this.f22854c;
-        c4167xf.getClass();
+        C4190xf c4190xf = (C4190xf) this.f23641c;
+        c4190xf.getClass();
         try {
-            InterfaceC3412jf interfaceC3412jf = c4167xf.f35032a;
-            if (interfaceC3412jf != null) {
-                interfaceC3412jf.i3(new C4005uf(str, str2));
+            InterfaceC3435jf interfaceC3435jf = c4190xf.f35811a;
+            if (interfaceC3435jf != null) {
+                interfaceC3435jf.e3(new C4028uf(str, str2));
             }
         } catch (RemoteException e9) {
-            v2.i.i("#007 Could not call remote method.", e9);
+            x2.i.i("#007 Could not call remote method.", e9);
         }
         if (ATSDK.isNetworkLogDebug()) {
-            Log.i(f22851g, "ServerSideVerificationOptions: userId:" + str + "||userCustomData:" + str2);
+            Log.i(f23638g, "ServerSideVerificationOptions: userId:" + str + "||userCustomData:" + str2);
         }
-        this.f22854c.b(activity, this.f22862m);
+        this.f23641c.b(activity, this.f23649m);
     }
 }

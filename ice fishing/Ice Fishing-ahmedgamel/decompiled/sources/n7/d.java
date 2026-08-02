@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Object f39508a = new Object();
+    public final Object f39675a = new Object();
 
     static {
         Logger.getLogger(d.class.getName());

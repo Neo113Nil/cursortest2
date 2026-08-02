@@ -8,28 +8,28 @@ import java.lang.annotation.RetentionPolicy;
 public final class g extends Exception {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f7266a = 0;
+    public static final int f8052a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f7267b = 1;
+    public static final int f8053b = 1;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f7268c = 2;
+    public static final int f8054c = 2;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f7269d;
+    public final int f8055d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final int f7270e;
+    public final int f8056e;
 
     @Retention(RetentionPolicy.SOURCE)
     public @interface a {
     }
 
-    private g(int i, String str, Throwable th, int i6) {
+    private g(int i, String str, Throwable th, int i4) {
         super(str, th);
-        this.f7269d = i;
-        this.f7270e = i6;
+        this.f8055d = i;
+        this.f8056e = i4;
     }
 
     public static g a(Exception exc, int i) {
@@ -37,12 +37,12 @@ public final class g extends Exception {
     }
 
     private Exception b() {
-        com.anythink.basead.exoplayer.k.a.b(this.f7269d == 1);
+        com.anythink.basead.exoplayer.k.a.b(this.f8055d == 1);
         return (Exception) getCause();
     }
 
     private RuntimeException c() {
-        com.anythink.basead.exoplayer.k.a.b(this.f7269d == 2);
+        com.anythink.basead.exoplayer.k.a.b(this.f8055d == 2);
         return (RuntimeException) getCause();
     }
 
@@ -55,7 +55,7 @@ public final class g extends Exception {
     }
 
     private IOException a() {
-        com.anythink.basead.exoplayer.k.a.b(this.f7269d == 0);
+        com.anythink.basead.exoplayer.k.a.b(this.f8055d == 0);
         return (IOException) getCause();
     }
 }

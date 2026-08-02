@@ -6,10 +6,10 @@ import com.facebook.ads.AdView;
 /* loaded from: assets/audience_network/classes2.dex */
 public final class VO implements AdView.AdViewLoadConfigBuilder, AdView.AdViewLoadConfig {
     public String A00;
-    public final C1201Rd A01;
+    public final C1221Rd A01;
 
-    public VO(C1201Rd c1201Rd) {
-        this.A01 = c1201Rd;
+    public VO(C1221Rd c1221Rd) {
+        this.A01 = c1221Rd;
     }
 
     public final String A00() {

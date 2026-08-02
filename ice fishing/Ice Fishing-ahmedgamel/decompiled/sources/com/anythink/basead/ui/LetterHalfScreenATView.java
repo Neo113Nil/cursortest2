@@ -27,8 +27,8 @@ public class LetterHalfScreenATView extends HalfScreenATView {
         }
 
         @Override // com.anythink.basead.ui.f.b.a
-        public final void a(int i, int i6) {
-            LetterHalfScreenATView.this.a(i, i6);
+        public final void a(int i, int i4) {
+            LetterHalfScreenATView.this.a(i, i4);
         }
     }
 
@@ -37,7 +37,7 @@ public class LetterHalfScreenATView extends HalfScreenATView {
     }
 
     private void ah() {
-        this.an.a(this.f9736g, this.f9735f, new AnonymousClass2());
+        this.an.a(this.f10522g, this.f10521f, new AnonymousClass2());
     }
 
     @Override // com.anythink.basead.ui.BaseScreenATView
@@ -51,7 +51,7 @@ public class LetterHalfScreenATView extends HalfScreenATView {
 
     @Override // com.anythink.basead.ui.BaseScreenATView
     public final void Q() {
-        if (b(this.f9844E)) {
+        if (b(this.f10630E)) {
             super.Q();
         } else {
             aa().setVisibility(8);
@@ -60,9 +60,9 @@ public class LetterHalfScreenATView extends HalfScreenATView {
 
     @Override // com.anythink.basead.ui.HalfScreenATView, com.anythink.basead.ui.BaseScreenATView
     public final void U() {
-        BasePlayerView l9 = this.f9746r.l();
+        BasePlayerView l9 = this.f10532r.l();
         if (l9 != null) {
-            this.f9853O.setPadding(l9.getPaddingLeft(), l9.getPaddingTop(), l9.getPaddingRight(), l9.getPaddingBottom());
+            this.f10639O.setPadding(l9.getPaddingLeft(), l9.getPaddingTop(), l9.getPaddingRight(), l9.getPaddingBottom());
         }
         super.U();
     }
@@ -73,7 +73,7 @@ public class LetterHalfScreenATView extends HalfScreenATView {
         LayoutInflater.from(getContext()).inflate(q.a(getContext(), "myoffer_half_screen_letter_vertical", "layout"), this);
         int i = this.ao;
         setPadding(i, 0, i, 0);
-        setBackgroundResource(q.a(getContext(), "dailog_background_color", k.f19633d));
+        setBackgroundResource(q.a(getContext(), "dailog_background_color", k.f20420d));
     }
 
     @Override // com.anythink.basead.ui.HalfScreenATView
@@ -83,50 +83,50 @@ public class LetterHalfScreenATView extends HalfScreenATView {
 
     @Override // com.anythink.basead.ui.HalfScreenATView
     public final void ag() {
-        RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) this.f9852N.getLayoutParams();
-        RelativeLayout.LayoutParams layoutParams2 = (RelativeLayout.LayoutParams) this.f9851M.getLayoutParams();
-        BasePlayerView l9 = this.f9746r.l();
+        RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) this.f10638N.getLayoutParams();
+        RelativeLayout.LayoutParams layoutParams2 = (RelativeLayout.LayoutParams) this.f10637M.getLayoutParams();
+        BasePlayerView l9 = this.f10532r.l();
         RelativeLayout.LayoutParams layoutParams3 = (RelativeLayout.LayoutParams) l9.getLayoutParams();
-        int i = this.f9864c;
-        int i6 = (i - layoutParams2.leftMargin) - layoutParams2.rightMargin;
-        int i9 = this.ao;
-        int i10 = i6 - (i9 * 2);
-        this.f9840A = i10;
-        this.f9841B = i10;
-        this.an.a(i - (i9 * 2));
+        int i = this.f10650c;
+        int i4 = (i - layoutParams2.leftMargin) - layoutParams2.rightMargin;
+        int i6 = this.ao;
+        int i9 = i4 - (i6 * 2);
+        this.f10626A = i9;
+        this.f10627B = i9;
+        this.an.a(i - (i6 * 2));
         int a9 = this.an.a();
         layoutParams2.width = -1;
         layoutParams2.height = -2;
-        this.f9851M.setLayoutParams(layoutParams2);
-        layoutParams3.width = this.f9840A;
-        layoutParams3.height = this.f9841B;
+        this.f10637M.setLayoutParams(layoutParams2);
+        layoutParams3.width = this.f10626A;
+        layoutParams3.height = this.f10627B;
         l9.setLayoutParams(layoutParams3);
         layoutParams.width = -1;
         layoutParams.height = -2;
-        layoutParams.topMargin = this.f9841B;
+        layoutParams.topMargin = this.f10627B;
         layoutParams.bottomMargin = this.an.b();
-        this.f9852N.setLayoutParams(layoutParams);
-        PanelView panelView = this.f9852N;
-        panelView.setPadding(panelView.getPaddingLeft(), this.f9852N.getPaddingTop(), this.f9852N.getPaddingRight(), q.a(getContext(), 9.0f) + (a9 - this.an.b()));
-        if (!b(this.f9844E)) {
+        this.f10638N.setLayoutParams(layoutParams);
+        PanelView panelView = this.f10638N;
+        panelView.setPadding(panelView.getPaddingLeft(), this.f10638N.getPaddingTop(), this.f10638N.getPaddingRight(), q.a(getContext(), 9.0f) + (a9 - this.an.b()));
+        if (!b(this.f10630E)) {
             layoutParams3.bottomMargin = this.an.b();
-            layoutParams3.height = (this.an.a() + this.f9841B) - (this.an.b() * 2);
+            layoutParams3.height = (this.an.a() + this.f10627B) - (this.an.b() * 2);
             l9.setLayoutParams(layoutParams3);
             l9.setPadding(l9.getPaddingLeft(), l9.getPaddingTop(), l9.getPaddingRight(), this.an.a() - (this.an.b() * 2));
         }
         this.ap = layoutParams3.height;
-        this.an.a(this.f9851M);
+        this.an.a(this.f10637M);
     }
 
     @Override // com.anythink.basead.ui.HalfScreenATView, com.anythink.basead.ui.BaseScreenATView
     public final void b() {
         y yVar;
         super.b();
-        x xVar = this.f9735f;
-        if (xVar == null || (yVar = xVar.f14168o) == null || yVar.J() != 0) {
+        x xVar = this.f10521f;
+        if (xVar == null || (yVar = xVar.f14954o) == null || yVar.J() != 0) {
             return;
         }
-        this.f9851M.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.LetterHalfScreenATView.1
+        this.f10637M.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.LetterHalfScreenATView.1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 LetterHalfScreenATView.this.a(1, 7);
@@ -139,9 +139,9 @@ public class LetterHalfScreenATView extends HalfScreenATView {
         super.c();
         com.anythink.basead.b.d.a aVar = new com.anythink.basead.b.d.a(getContext());
         this.an = aVar;
-        aVar.a((RelativeLayout) this.f9851M.getParent(), this.f9851M.getId());
-        this.f9745q = this.an.d();
-        this.an.a(this.f9736g, this.f9735f, new AnonymousClass2());
+        aVar.a((RelativeLayout) this.f10637M.getParent(), this.f10637M.getId());
+        this.f10531q = this.an.d();
+        this.an.a(this.f10522g, this.f10521f, new AnonymousClass2());
     }
 
     @Override // com.anythink.basead.ui.HalfScreenATView, com.anythink.basead.ui.BaseScreenATView, com.anythink.basead.ui.BaseATView
@@ -153,20 +153,20 @@ public class LetterHalfScreenATView extends HalfScreenATView {
         return layoutParams;
     }
 
-    public LetterHalfScreenATView(Context context, x xVar, w wVar, String str, int i, int i6) {
-        super(context, xVar, wVar, str, i, i6);
-        if (this.f9747s != null) {
+    public LetterHalfScreenATView(Context context, x xVar, w wVar, String str, int i, int i4) {
+        super(context, xVar, wVar, str, i, i4);
+        if (this.f10533s != null) {
             HashMap hashMap = new HashMap();
-            hashMap.put(g.a.f11166a, 1);
-            this.f9747s.a(hashMap);
+            hashMap.put(g.a.f11952a, 1);
+            this.f10533s.a(hashMap);
         }
     }
 
     @Override // com.anythink.basead.ui.HalfScreenATView, com.anythink.basead.ui.BaseScreenATView
     public final boolean b(int i) {
-        if (this.f9736g.n()) {
+        if (this.f10522g.n()) {
             return false;
         }
-        return (TextUtils.isEmpty(this.f9736g.z()) && TextUtils.isEmpty(this.f9736g.x()) && TextUtils.isEmpty(this.f9736g.y())) ? false : true;
+        return (TextUtils.isEmpty(this.f10522g.z()) && TextUtils.isEmpty(this.f10522g.x()) && TextUtils.isEmpty(this.f10522g.y())) ? false : true;
     }
 }

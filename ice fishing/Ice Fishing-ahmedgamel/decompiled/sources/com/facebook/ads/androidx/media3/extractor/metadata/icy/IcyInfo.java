@@ -4,8 +4,8 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.anythink.core.common.s.a.c;
 import com.facebook.ads.androidx.media3.common.Metadata;
-import com.instagram.common.viewpoint.core.AbstractC06243y;
-import com.instagram.common.viewpoint.core.C2400qI;
+import com.instagram.common.viewpoint.core.AbstractC06443y;
+import com.instagram.common.viewpoint.core.C2420qI;
 import com.instagram.common.viewpoint.core.C3E;
 import com.instagram.common.viewpoint.core.I6;
 import java.util.Arrays;
@@ -19,9 +19,9 @@ public final class IcyInfo implements Metadata.Entry {
     public final String A01;
     public final byte[] A02;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i6);
-        int i10 = 0;
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             String[] strArr = A04;
@@ -31,16 +31,16 @@ public final class IcyInfo implements Metadata.Entry {
             String[] strArr2 = A04;
             strArr2[3] = "qKUW1KH6CuSTGDfvrO6Qdp683VdyVHth";
             strArr2[1] = "LPZYmu17yBTH9DPNueNU7kcuuOoRtJJh";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 30);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 30);
+            i9++;
         }
     }
 
     public static void A01() {
-        A03 = new byte[]{c.f16316a, 122, -112, 113, 87, -85, -96, -85, -93, -100, 116, 89, 92, -86, 89, 99, 87, -84, -87, -93, 116, 89, 92, -86, 89, 99, 87, -87, -104, -82, -124, -100, -85, -104, -101, -104, -85, -104, 101, -93, -100, -91, -98, -85, -97, 116, 89, 92, -86, 89};
+        A03 = new byte[]{c.f17103a, 122, -112, 113, 87, -85, -96, -85, -93, -100, 116, 89, 92, -86, 89, 99, 87, -84, -87, -93, 116, 89, 92, -86, 89, 99, 87, -87, -104, -82, -124, -100, -85, -104, -101, -104, -85, -104, 101, -93, -100, -91, -98, -85, -97, 116, 89, 92, -86, 89};
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Metadata.Entry
@@ -49,7 +49,7 @@ public final class IcyInfo implements Metadata.Entry {
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Metadata.Entry
-    public final /* synthetic */ C2400qI A9b() {
+    public final /* synthetic */ C2420qI A9b() {
         return C3E.A00(this);
     }
 
@@ -59,7 +59,7 @@ public final class IcyInfo implements Metadata.Entry {
     }
 
     public IcyInfo(Parcel parcel) {
-        this.A02 = (byte[]) AbstractC06243y.A01(parcel.createByteArray());
+        this.A02 = (byte[]) AbstractC06443y.A01(parcel.createByteArray());
         this.A00 = parcel.readString();
         this.A01 = parcel.readString();
     }

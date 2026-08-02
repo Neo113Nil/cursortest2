@@ -7,57 +7,57 @@ import android.widget.RelativeLayout;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class JD extends FrameLayout implements InterfaceC1382Yi {
+public final class JD extends FrameLayout implements InterfaceC1402Yi {
     public static String[] A03 = {"wtXzJScKRPxajxCcdRbPmb0KadlxC", "7nKoFE8ui8VEpuvPlBMmVCUEP2sqkB6T", "33CWdOtYDTa7rzeiAlLBu", "lc", "strpzcWL7DajPBiGDWIDQH24h3nkF6Q8", "KD2NqWHNK6oFw2qGkV253wUFP2DdgfCk", "fVTYPEGDbO1sEyo8c0rX1ThQbYeRG1Ca", "mBAzb1XhvrptTGzmv2edBpTADNq"};
     public String A00;
-    public final InterfaceC1381Yh A01;
-    public final C1624dC A02;
+    public final InterfaceC1401Yh A01;
+    public final C1644dC A02;
 
-    public JD(C1840gi c1840gi, InterfaceC1381Yh interfaceC1381Yh, C1624dC c1624dC, String str) {
-        super(c1840gi);
-        this.A02 = c1624dC;
-        this.A01 = interfaceC1381Yh;
+    public JD(C1860gi c1860gi, InterfaceC1401Yh interfaceC1401Yh, C1644dC c1644dC, String str) {
+        super(c1860gi);
+        this.A02 = c1644dC;
+        this.A01 = interfaceC1401Yh;
         this.A00 = str;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1382Yi
-    public final void AAu(Intent intent, Bundle bundle, C1202Re c1202Re) {
-        C1624dC.A0B().incrementAndGet();
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1402Yi
+    public final void AAu(Intent intent, Bundle bundle, C1222Re c1222Re) {
+        C1644dC.A0B().incrementAndGet();
         this.A02.A0V();
         YB.A0J(this.A02.A0O());
         addView(this.A02.A0O(), new FrameLayout.LayoutParams(-1, -1));
         this.A01.A45(this, new RelativeLayout.LayoutParams(-1, -1));
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1382Yi
-    public final void AFA(boolean z3) {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1402Yi
+    public final void AFA(boolean z6) {
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1382Yi
-    public final void AFi(boolean z3) {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1402Yi
+    public final void AFi(boolean z6) {
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1382Yi
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1402Yi
     public final void AIv(Bundle bundle) {
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1382Yi
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1402Yi
     public String getCurrentClientToken() {
         return this.A00;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1382Yi
-    public final boolean onActivityResult(int i, int i6, Intent intent) {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1402Yi
+    public final boolean onActivityResult(int i, int i4, Intent intent) {
         return false;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1382Yi
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1402Yi
     public final void onDestroy() {
         this.A02.A0U();
         if (this.A02.A0N() != null) {
             this.A02.A0N().AE2();
         }
-        AtomicInteger A0B = C1624dC.A0B();
+        AtomicInteger A0B = C1644dC.A0B();
         String[] strArr = A03;
         if (strArr[7].length() == strArr[0].length()) {
             throw new RuntimeException();
@@ -68,6 +68,6 @@ public final class JD extends FrameLayout implements InterfaceC1382Yi {
         A0B.decrementAndGet();
     }
 
-    public void setListener(InterfaceC1381Yh interfaceC1381Yh) {
+    public void setListener(InterfaceC1401Yh interfaceC1401Yh) {
     }
 }

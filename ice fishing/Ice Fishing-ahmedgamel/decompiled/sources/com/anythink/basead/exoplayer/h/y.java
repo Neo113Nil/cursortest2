@@ -4,7 +4,7 @@ package com.anythink.basead.exoplayer.h;
 public interface y {
     int a(long j6);
 
-    int a(com.anythink.basead.exoplayer.n nVar, com.anythink.basead.exoplayer.c.e eVar, boolean z3);
+    int a(com.anythink.basead.exoplayer.n nVar, com.anythink.basead.exoplayer.c.e eVar, boolean z6);
 
     boolean b();
 

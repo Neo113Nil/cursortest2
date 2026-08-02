@@ -17,115 +17,115 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class e {
 
     /* renamed from: d, reason: collision with root package name */
-    private static e f15960d;
+    private static e f16747d;
 
     /* renamed from: b, reason: collision with root package name */
-    long f15962b;
+    long f16749b;
 
     /* renamed from: f, reason: collision with root package name */
-    private Context f15965f;
+    private Context f16752f;
 
     /* renamed from: g, reason: collision with root package name */
-    private ActivityManager f15966g;
+    private ActivityManager f16753g;
 
     /* renamed from: h, reason: collision with root package name */
-    private d f15967h;
+    private d f16754h;
 
     /* renamed from: j, reason: collision with root package name */
-    private boolean f15968j;
+    private boolean f16755j;
 
     /* renamed from: k, reason: collision with root package name */
-    private volatile Integer f15969k;
+    private volatile Integer f16756k;
 
     /* renamed from: l, reason: collision with root package name */
-    private volatile Integer f15970l;
+    private volatile Integer f16757l;
 
     /* renamed from: m, reason: collision with root package name */
-    private volatile Long f15971m;
+    private volatile Long f16758m;
 
     /* renamed from: e, reason: collision with root package name */
-    private boolean f15964e = false;
+    private boolean f16751e = false;
     private final File i = Environment.getDataDirectory();
 
     /* renamed from: a, reason: collision with root package name */
-    final long f15961a = f.f7187a;
+    final long f16748a = f.f7973a;
 
     /* renamed from: c, reason: collision with root package name */
-    AtomicInteger f15963c = new AtomicInteger();
+    AtomicInteger f16750c = new AtomicInteger();
 
     private e() {
-        Context g4 = t.b().g();
-        this.f15965f = g4;
-        this.f15966g = (ActivityManager) g4.getSystemService("activity");
-        this.f15967h = new d();
+        Context g9 = t.b().g();
+        this.f16752f = g9;
+        this.f16753g = (ActivityManager) g9.getSystemService("activity");
+        this.f16754h = new d();
     }
 
     public static e a() {
-        if (f15960d == null) {
+        if (f16747d == null) {
             synchronized (e.class) {
                 try {
-                    if (f15960d == null) {
-                        f15960d = new e();
+                    if (f16747d == null) {
+                        f16747d = new e();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f15960d;
+        return f16747d;
     }
 
     private void i() {
-        d dVar = this.f15967h;
-        Context context = this.f15965f;
-        ActivityManager activityManager = this.f15966g;
+        d dVar = this.f16754h;
+        Context context = this.f16752f;
+        ActivityManager activityManager = this.f16753g;
         int memoryClass = activityManager.getMemoryClass();
-        if ((context.getApplicationContext().getApplicationInfo().flags & o.f7742d) == 1048576) {
+        if ((context.getApplicationContext().getApplicationInfo().flags & o.f8528d) == 1048576) {
             memoryClass = activityManager.getLargeMemoryClass();
         }
-        dVar.f15955d = memoryClass;
+        dVar.f16742d = memoryClass;
         if (t.b().c("t_mem")) {
             return;
         }
-        if (this.f15969k == null) {
-            this.f15969k = Integer.valueOf(af.b(this.f15965f, u.b.f12847a, u.a.f12828g, -1));
+        if (this.f16756k == null) {
+            this.f16756k = Integer.valueOf(af.b(this.f16752f, u.b.f13633a, u.a.f13614g, -1));
         }
-        if (this.f15969k.intValue() <= 0) {
-            this.f15969k = Integer.valueOf(b.a());
-            af.a(this.f15965f, u.b.f12847a, u.a.f12828g, this.f15969k.intValue());
+        if (this.f16756k.intValue() <= 0) {
+            this.f16756k = Integer.valueOf(b.a());
+            af.a(this.f16752f, u.b.f13633a, u.a.f13614g, this.f16756k.intValue());
         }
-        this.f15967h.f15952a = this.f15969k.intValue();
+        this.f16754h.f16739a = this.f16756k.intValue();
     }
 
     private void j() {
         if (t.b().c("c_num")) {
             return;
         }
-        if (this.f15970l == null) {
-            this.f15970l = Integer.valueOf(af.b(this.f15965f, u.b.f12847a, u.a.f12829h, -1));
+        if (this.f16757l == null) {
+            this.f16757l = Integer.valueOf(af.b(this.f16752f, u.b.f13633a, u.a.f13615h, -1));
         }
-        if (this.f15970l.intValue() <= 0) {
-            this.f15970l = Integer.valueOf(Runtime.getRuntime().availableProcessors());
-            af.a(this.f15965f, u.b.f12847a, u.a.f12829h, this.f15970l.intValue());
+        if (this.f16757l.intValue() <= 0) {
+            this.f16757l = Integer.valueOf(Runtime.getRuntime().availableProcessors());
+            af.a(this.f16752f, u.b.f13633a, u.a.f13615h, this.f16757l.intValue());
         }
-        this.f15967h.f15956e = this.f15970l.intValue();
+        this.f16754h.f16743e = this.f16757l.intValue();
     }
 
     private void k() {
         if (t.b().c("t_store")) {
             return;
         }
-        if (this.f15971m == null) {
-            this.f15971m = Long.valueOf(af.b(this.f15965f, u.b.f12847a, u.a.i, -1L));
+        if (this.f16758m == null) {
+            this.f16758m = Long.valueOf(af.b(this.f16752f, u.b.f13633a, u.a.i, -1L));
         }
-        if (this.f15971m.longValue() <= 0) {
+        if (this.f16758m.longValue() <= 0) {
             try {
-                this.f15971m = Long.valueOf((new StatFs(this.i.getPath()).getBlockCountLong() * r0.getBlockSize()) / 1048576);
+                this.f16758m = Long.valueOf((new StatFs(this.i.getPath()).getBlockCountLong() * r0.getBlockSize()) / 1048576);
             } catch (Throwable unused) {
             }
-            af.a(this.f15965f, u.b.f12847a, u.a.i, this.f15971m.longValue());
+            af.a(this.f16752f, u.b.f13633a, u.a.i, this.f16758m.longValue());
         }
-        this.f15967h.f15957f = this.f15971m.longValue();
+        this.f16754h.f16744f = this.f16758m.longValue();
     }
 
     private long l() {
@@ -137,41 +137,41 @@ public class e {
     }
 
     public final d b() {
-        if (!this.f15964e) {
+        if (!this.f16751e) {
             return null;
         }
-        if (SystemClock.elapsedRealtime() - this.f15962b <= f.f7187a) {
-            return this.f15967h;
+        if (SystemClock.elapsedRealtime() - this.f16749b <= f.f7973a) {
+            return this.f16754h;
         }
-        this.f15962b = SystemClock.elapsedRealtime();
-        this.f15967h.f15959h = a.a();
-        this.f15967h.f15953b = b.b();
-        this.f15967h.f15958g = l();
-        this.f15967h.f15954c = b.a(this.f15966g);
-        return this.f15967h;
+        this.f16749b = SystemClock.elapsedRealtime();
+        this.f16754h.f16746h = a.a();
+        this.f16754h.f16740b = b.b();
+        this.f16754h.f16745g = l();
+        this.f16754h.f16741c = b.a(this.f16753g);
+        return this.f16754h;
     }
 
     public final synchronized void c() {
-        this.f15963c.incrementAndGet();
+        this.f16750c.incrementAndGet();
     }
 
     public final synchronized void d() {
-        this.f15963c.decrementAndGet();
+        this.f16750c.decrementAndGet();
     }
 
     public final synchronized int e() {
-        return this.f15963c.get();
+        return this.f16750c.get();
     }
 
     public final int f() {
         if (t.b().c("t_mem")) {
             return 0;
         }
-        if (this.f15969k == null) {
-            this.f15969k = Integer.valueOf(af.b(this.f15965f, u.b.f12847a, u.a.f12828g, -1));
+        if (this.f16756k == null) {
+            this.f16756k = Integer.valueOf(af.b(this.f16752f, u.b.f13633a, u.a.f13614g, -1));
         }
-        if (this.f15969k.intValue() > 0) {
-            return this.f15969k.intValue();
+        if (this.f16756k.intValue() > 0) {
+            return this.f16756k.intValue();
         }
         return 0;
     }
@@ -180,11 +180,11 @@ public class e {
         if (t.b().c("c_num")) {
             return 0;
         }
-        if (this.f15970l == null) {
-            this.f15970l = Integer.valueOf(af.b(this.f15965f, u.b.f12847a, u.a.f12829h, -1));
+        if (this.f16757l == null) {
+            this.f16757l = Integer.valueOf(af.b(this.f16752f, u.b.f13633a, u.a.f13615h, -1));
         }
-        if (this.f15970l.intValue() > 0) {
-            return this.f15970l.intValue();
+        if (this.f16757l.intValue() > 0) {
+            return this.f16757l.intValue();
         }
         return 0;
     }
@@ -193,62 +193,62 @@ public class e {
         if (t.b().c("t_store")) {
             return 0L;
         }
-        if (this.f15971m == null) {
-            this.f15971m = Long.valueOf(af.b(this.f15965f, u.b.f12847a, u.a.i, -1L));
+        if (this.f16758m == null) {
+            this.f16758m = Long.valueOf(af.b(this.f16752f, u.b.f13633a, u.a.i, -1L));
         }
-        if (this.f15971m.longValue() > 0) {
-            return this.f15971m.longValue();
+        if (this.f16758m.longValue() > 0) {
+            return this.f16758m.longValue();
         }
         return 0L;
     }
 
     public final void a(com.anythink.core.d.b bVar) {
-        this.f15964e = bVar.i();
+        this.f16751e = bVar.i();
         synchronized (this) {
             try {
-                if (!this.f15968j) {
-                    d dVar = this.f15967h;
-                    Context context = this.f15965f;
-                    ActivityManager activityManager = this.f15966g;
+                if (!this.f16755j) {
+                    d dVar = this.f16754h;
+                    Context context = this.f16752f;
+                    ActivityManager activityManager = this.f16753g;
                     int memoryClass = activityManager.getMemoryClass();
-                    if ((context.getApplicationContext().getApplicationInfo().flags & o.f7742d) == 1048576) {
+                    if ((context.getApplicationContext().getApplicationInfo().flags & o.f8528d) == 1048576) {
                         memoryClass = activityManager.getLargeMemoryClass();
                     }
-                    dVar.f15955d = memoryClass;
+                    dVar.f16742d = memoryClass;
                     if (!t.b().c("t_mem")) {
-                        if (this.f15969k == null) {
-                            this.f15969k = Integer.valueOf(af.b(this.f15965f, u.b.f12847a, u.a.f12828g, -1));
+                        if (this.f16756k == null) {
+                            this.f16756k = Integer.valueOf(af.b(this.f16752f, u.b.f13633a, u.a.f13614g, -1));
                         }
-                        if (this.f15969k.intValue() <= 0) {
-                            this.f15969k = Integer.valueOf(b.a());
-                            af.a(this.f15965f, u.b.f12847a, u.a.f12828g, this.f15969k.intValue());
+                        if (this.f16756k.intValue() <= 0) {
+                            this.f16756k = Integer.valueOf(b.a());
+                            af.a(this.f16752f, u.b.f13633a, u.a.f13614g, this.f16756k.intValue());
                         }
-                        this.f15967h.f15952a = this.f15969k.intValue();
+                        this.f16754h.f16739a = this.f16756k.intValue();
                     }
                     if (!t.b().c("c_num")) {
-                        if (this.f15970l == null) {
-                            this.f15970l = Integer.valueOf(af.b(this.f15965f, u.b.f12847a, u.a.f12829h, -1));
+                        if (this.f16757l == null) {
+                            this.f16757l = Integer.valueOf(af.b(this.f16752f, u.b.f13633a, u.a.f13615h, -1));
                         }
-                        if (this.f15970l.intValue() <= 0) {
-                            this.f15970l = Integer.valueOf(Runtime.getRuntime().availableProcessors());
-                            af.a(this.f15965f, u.b.f12847a, u.a.f12829h, this.f15970l.intValue());
+                        if (this.f16757l.intValue() <= 0) {
+                            this.f16757l = Integer.valueOf(Runtime.getRuntime().availableProcessors());
+                            af.a(this.f16752f, u.b.f13633a, u.a.f13615h, this.f16757l.intValue());
                         }
-                        this.f15967h.f15956e = this.f15970l.intValue();
+                        this.f16754h.f16743e = this.f16757l.intValue();
                     }
                     if (!t.b().c("t_store")) {
-                        if (this.f15971m == null) {
-                            this.f15971m = Long.valueOf(af.b(this.f15965f, u.b.f12847a, u.a.i, -1L));
+                        if (this.f16758m == null) {
+                            this.f16758m = Long.valueOf(af.b(this.f16752f, u.b.f13633a, u.a.i, -1L));
                         }
-                        if (this.f15971m.longValue() <= 0) {
+                        if (this.f16758m.longValue() <= 0) {
                             try {
-                                this.f15971m = Long.valueOf((new StatFs(this.i.getPath()).getBlockCountLong() * r5.getBlockSize()) / 1048576);
+                                this.f16758m = Long.valueOf((new StatFs(this.i.getPath()).getBlockCountLong() * r5.getBlockSize()) / 1048576);
                             } catch (Throwable unused) {
                             }
-                            af.a(this.f15965f, u.b.f12847a, u.a.i, this.f15971m.longValue());
+                            af.a(this.f16752f, u.b.f13633a, u.a.i, this.f16758m.longValue());
                         }
-                        this.f15967h.f15957f = this.f15971m.longValue();
+                        this.f16754h.f16744f = this.f16758m.longValue();
                     }
-                    this.f15968j = true;
+                    this.f16755j = true;
                 }
             } catch (Throwable th) {
                 throw th;

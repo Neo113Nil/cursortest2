@@ -1,6 +1,7 @@
 package s8;
 
 import O.D0;
+import a.AbstractC0426a;
 import android.content.Context;
 import android.net.http.X509TrustManagerExtensions;
 import android.os.Build;
@@ -18,49 +19,49 @@ import t8.h;
 import t8.k;
 import t8.m;
 import t8.n;
-import v7.AbstractC5128i;
+import v7.AbstractC5118i;
 
 /* loaded from: classes2.dex */
 public final class b extends f implements e {
 
     /* renamed from: e, reason: collision with root package name */
-    public static final boolean f40492e;
+    public static final boolean f40546e;
 
     /* renamed from: c, reason: collision with root package name */
-    public Context f40493c;
+    public Context f40547c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final ArrayList f40494d;
+    public final ArrayList f40548d;
 
     static {
-        f40492e = Build.VERSION.SDK_INT >= 29;
+        f40546e = Build.VERSION.SDK_INT >= 29;
     }
 
     public b() {
-        ArrayList w6 = AbstractC5128i.w(new n[]{Build.VERSION.SDK_INT >= 29 ? new t8.a() : null, new m(t8.e.f40929e), new m(k.f40937a), new m(h.f40935a)});
+        ArrayList z6 = AbstractC5118i.z(new n[]{Build.VERSION.SDK_INT >= 29 ? new t8.a() : null, new m(t8.e.f40892e), new m(k.f40899a), new m(h.f40897a)});
         ArrayList arrayList = new ArrayList();
-        Iterator it = w6.iterator();
+        Iterator it = z6.iterator();
         while (it.hasNext()) {
             Object next = it.next();
             if (((n) next).b()) {
                 arrayList.add(next);
             }
         }
-        this.f40494d = arrayList;
+        this.f40548d = arrayList;
     }
 
     @Override // s8.e
     public final void a(Context context) {
-        this.f40493c = context;
+        this.f40547c = context;
     }
 
     @Override // s8.e
     public final Context b() {
-        return this.f40493c;
+        return this.f40547c;
     }
 
     @Override // s8.f
-    public final com.bumptech.glide.e c(X509TrustManager trustManager) {
+    public final AbstractC0426a c(X509TrustManager trustManager) {
         X509TrustManagerExtensions x509TrustManagerExtensions;
         kotlin.jvm.internal.h.e(trustManager, "trustManager");
         try {
@@ -83,7 +84,7 @@ public final class b extends f implements e {
     public final void e(SSLSocket sSLSocket, String str, List protocols) {
         Object obj;
         kotlin.jvm.internal.h.e(protocols, "protocols");
-        Iterator it = this.f40494d.iterator();
+        Iterator it = this.f40548d.iterator();
         while (true) {
             if (!it.hasNext()) {
                 obj = null;
@@ -104,7 +105,7 @@ public final class b extends f implements e {
     @Override // s8.f
     public final String g(SSLSocket sSLSocket) {
         Object obj;
-        Iterator it = this.f40494d.iterator();
+        Iterator it = this.f40548d.iterator();
         while (true) {
             if (!it.hasNext()) {
                 obj = null;
@@ -142,10 +143,10 @@ public final class b extends f implements e {
     public final void j(int i, String message, Throwable th) {
         kotlin.jvm.internal.h.e(message, "message");
         if (i == 5) {
-            boolean z3 = d.f40497e;
+            boolean z6 = d.f40551e;
             Log.w("OkHttp", message, th);
         } else {
-            boolean z6 = d.f40497e;
+            boolean z9 = d.f40551e;
             Log.i("OkHttp", message, th);
         }
     }

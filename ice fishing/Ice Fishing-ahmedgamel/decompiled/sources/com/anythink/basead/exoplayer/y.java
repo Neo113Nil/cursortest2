@@ -8,13 +8,13 @@ import java.lang.annotation.RetentionPolicy;
 public interface y extends x.b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f8789a = 0;
+    public static final int f9575a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f8790b = 1;
+    public static final int f9576b = 1;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f8791c = 2;
+    public static final int f9577c = 2;
 
     @Retention(RetentionPolicy.SOURCE)
     public @interface a {
@@ -28,7 +28,7 @@ public interface y extends x.b {
 
     void a(long j6, long j9);
 
-    void a(aa aaVar, m[] mVarArr, com.anythink.basead.exoplayer.h.y yVar, long j6, boolean z3, long j9);
+    void a(aa aaVar, m[] mVarArr, com.anythink.basead.exoplayer.h.y yVar, long j6, boolean z6, long j9);
 
     void a(m[] mVarArr, com.anythink.basead.exoplayer.h.y yVar, long j6);
 

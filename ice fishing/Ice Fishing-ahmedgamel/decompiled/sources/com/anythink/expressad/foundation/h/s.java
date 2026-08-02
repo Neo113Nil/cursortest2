@@ -10,7 +10,7 @@ import java.util.Locale;
 public final class s implements com.anythink.expressad.g.b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f19694a = "MD5";
+    public static final String f20481a = "MD5";
 
     public static String a(String str) {
         if (TextUtils.isEmpty(str)) {
@@ -66,8 +66,8 @@ public final class s implements com.anythink.expressad.g.b {
         a(bytes);
         byte[] bArr = new byte[length];
         int i = 0;
-        for (int i6 = 0; i6 < bytes.length; i6 += 2) {
-            byte b9 = bytes[i6];
+        for (int i4 = 0; i4 < bytes.length; i4 += 2) {
+            byte b9 = bytes[i4];
             if (b9 != -1 && b9 != -2) {
                 bArr[i] = b9;
                 i++;
@@ -87,8 +87,8 @@ public final class s implements com.anythink.expressad.g.b {
             a(bytes);
             byte[] bArr = new byte[length];
             int i = 0;
-            for (int i6 = 0; i6 < bytes.length; i6 += 2) {
-                byte b9 = bytes[i6];
+            for (int i4 = 0; i4 < bytes.length; i4 += 2) {
+                byte b9 = bytes[i4];
                 if (b9 != -1 && b9 != -2) {
                     bArr[i] = b9;
                     i++;
@@ -103,12 +103,12 @@ public final class s implements com.anythink.expressad.g.b {
             messageDigest.update(bArr);
             byte[] digest = messageDigest.digest();
             char[] cArr2 = new char[digest.length * 2];
-            int i9 = 0;
+            int i6 = 0;
             for (byte b10 : digest) {
-                int i10 = i9 + 1;
-                cArr2[i9] = cArr[(b10 >>> 4) & 15];
-                i9 += 2;
-                cArr2[i10] = cArr[b10 & 15];
+                int i9 = i6 + 1;
+                cArr2[i6] = cArr[(b10 >>> 4) & 15];
+                i6 += 2;
+                cArr2[i9] = cArr[b10 & 15];
             }
             return new String(cArr2);
         } catch (Exception e9) {

@@ -10,29 +10,29 @@ import com.anythink.core.common.d.t;
 public class a {
 
     /* renamed from: d, reason: collision with root package name */
-    private static volatile a f17545d;
+    private static volatile a f18332d;
 
     /* renamed from: a, reason: collision with root package name */
-    Sensor f17546a;
+    Sensor f18333a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final String f17547b = "a";
+    private final String f18334b = "a";
 
     /* renamed from: c, reason: collision with root package name */
-    private SensorManager f17548c;
+    private SensorManager f18335c;
 
     /* renamed from: e, reason: collision with root package name */
-    private float[] f17549e;
+    private float[] f18336e;
 
     private a() {
-        Context g4 = t.b().g();
-        if (g4 != null) {
+        Context g9 = t.b().g();
+        if (g9 != null) {
             try {
-                if (this.f17548c == null) {
-                    this.f17548c = (SensorManager) g4.getSystemService("sensor");
+                if (this.f18335c == null) {
+                    this.f18335c = (SensorManager) g9.getSystemService("sensor");
                 }
-                if (this.f17546a == null) {
-                    this.f17546a = this.f17548c.getDefaultSensor(1);
+                if (this.f18333a == null) {
+                    this.f18333a = this.f18335c.getDefaultSensor(1);
                 }
             } catch (Throwable unused) {
             }
@@ -40,30 +40,30 @@ public class a {
     }
 
     public static a a() {
-        if (f17545d == null) {
+        if (f18332d == null) {
             synchronized (a.class) {
                 try {
-                    if (f17545d == null) {
-                        f17545d = new a();
+                    if (f18332d == null) {
+                        f18332d = new a();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f17545d;
+        return f18332d;
     }
 
     public final boolean b() {
-        return this.f17546a != null;
+        return this.f18333a != null;
     }
 
     public final synchronized float[] c() {
-        return this.f17549e;
+        return this.f18336e;
     }
 
     public final void b(SensorEventListener sensorEventListener) {
-        SensorManager sensorManager = this.f17548c;
+        SensorManager sensorManager = this.f18335c;
         if (sensorManager != null) {
             try {
                 sensorManager.unregisterListener(sensorEventListener);
@@ -75,13 +75,13 @@ public class a {
 
     public final void a(SensorEventListener sensorEventListener) {
         try {
-            this.f17548c.registerListener(sensorEventListener, this.f17546a, 2);
+            this.f18335c.registerListener(sensorEventListener, this.f18333a, 2);
             sensorEventListener.hashCode();
         } catch (Throwable unused) {
         }
     }
 
     public final synchronized void a(float[] fArr) {
-        this.f17549e = fArr;
+        this.f18336e = fArr;
     }
 }

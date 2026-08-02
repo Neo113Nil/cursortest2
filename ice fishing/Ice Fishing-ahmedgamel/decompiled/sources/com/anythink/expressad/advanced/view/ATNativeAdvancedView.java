@@ -22,32 +22,32 @@ import org.json.JSONObject;
 public class ATNativeAdvancedView extends RelativeLayout {
 
     /* renamed from: a, reason: collision with root package name */
-    protected static final String f17911a = "webviewshow";
+    protected static final String f18698a = "webviewshow";
 
     /* renamed from: b, reason: collision with root package name */
-    private static String f17912b = "ATNativeAdvancedView";
+    private static String f18699b = "ATNativeAdvancedView";
 
     /* renamed from: c, reason: collision with root package name */
-    private ATNativeAdvancedWebview f17913c;
+    private ATNativeAdvancedWebview f18700c;
 
     /* renamed from: d, reason: collision with root package name */
-    private View f17914d;
+    private View f18701d;
 
     /* renamed from: e, reason: collision with root package name */
-    private boolean f17915e;
+    private boolean f18702e;
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f17916f;
+    private boolean f18703f;
 
     /* renamed from: g, reason: collision with root package name */
-    private boolean f17917g;
+    private boolean f18704g;
 
     /* renamed from: h, reason: collision with root package name */
-    private c f17918h;
+    private c f18705h;
     private NativeAdvancedJSBridgeImpl i;
 
     /* renamed from: j, reason: collision with root package name */
-    private Context f17919j;
+    private Context f18706j;
 
     /* renamed from: com.anythink.expressad.advanced.view.ATNativeAdvancedView$1, reason: invalid class name */
     public class AnonymousClass1 implements Runnable {
@@ -57,22 +57,22 @@ public class ATNativeAdvancedView extends RelativeLayout {
         @Override // java.lang.Runnable
         public final void run() {
             try {
-                String unused = ATNativeAdvancedView.f17912b;
+                String unused = ATNativeAdvancedView.f18699b;
                 String str = "";
                 try {
-                    ATNativeAdvancedView.this.f17913c.getLocationOnScreen(new int[2]);
-                    String unused2 = ATNativeAdvancedView.f17912b;
+                    ATNativeAdvancedView.this.f18700c.getLocationOnScreen(new int[2]);
+                    String unused2 = ATNativeAdvancedView.f18699b;
                     JSONObject jSONObject = new JSONObject();
                     jSONObject.put("startX", v.a(t.b().g(), r2[0]));
                     jSONObject.put("startY", v.a(t.b().g(), r2[1]));
                     str = jSONObject.toString();
                 } catch (Throwable th) {
-                    String unused3 = ATNativeAdvancedView.f17912b;
+                    String unused3 = ATNativeAdvancedView.f18699b;
                     th.getMessage();
                 }
                 String encodeToString = Base64.encodeToString(str.toString().getBytes(), 2);
                 h.a();
-                com.anythink.core.express.d.a.a((WebView) ATNativeAdvancedView.this.f17913c, ATNativeAdvancedView.f17911a, encodeToString);
+                com.anythink.core.express.d.a.a((WebView) ATNativeAdvancedView.this.f18700c, ATNativeAdvancedView.f18698a, encodeToString);
             } catch (Exception e9) {
                 e9.printStackTrace();
             }
@@ -84,23 +84,23 @@ public class ATNativeAdvancedView extends RelativeLayout {
     }
 
     private void b() {
-        ATNativeAdvancedWebview aTNativeAdvancedWebview = this.f17913c;
+        ATNativeAdvancedWebview aTNativeAdvancedWebview = this.f18700c;
         if (aTNativeAdvancedWebview != null && aTNativeAdvancedWebview.getParent() == null) {
-            addView(this.f17913c, new ViewGroup.LayoutParams(-1, -1));
+            addView(this.f18700c, new ViewGroup.LayoutParams(-1, -1));
         }
         int[] iArr = new int[2];
-        this.f17913c.getLocationInWindow(iArr);
-        ATNativeAdvancedWebview aTNativeAdvancedWebview2 = this.f17913c;
-        transInfoForMraid(aTNativeAdvancedWebview2, iArr[0], iArr[1], aTNativeAdvancedWebview2.getWidth(), this.f17913c.getHeight());
-        ATNativeAdvancedWebview aTNativeAdvancedWebview3 = this.f17913c;
+        this.f18700c.getLocationInWindow(iArr);
+        ATNativeAdvancedWebview aTNativeAdvancedWebview2 = this.f18700c;
+        transInfoForMraid(aTNativeAdvancedWebview2, iArr[0], iArr[1], aTNativeAdvancedWebview2.getWidth(), this.f18700c.getHeight());
+        ATNativeAdvancedWebview aTNativeAdvancedWebview3 = this.f18700c;
         if (aTNativeAdvancedWebview3 != null) {
             aTNativeAdvancedWebview3.setObject(this.i);
-            this.f17913c.post(new AnonymousClass1());
+            this.f18700c.post(new AnonymousClass1());
         }
-        View view = this.f17914d;
+        View view = this.f18701d;
         if (view != null) {
             if (view.getParent() != null) {
-                bringChildToFront(this.f17914d);
+                bringChildToFront(this.f18701d);
                 return;
             }
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(v.b(getContext(), 28.0f), v.b(getContext(), 16.0f));
@@ -108,48 +108,48 @@ public class ATNativeAdvancedView extends RelativeLayout {
             layoutParams.addRule(11);
             layoutParams.rightMargin = v.b(getContext(), 2.0f);
             layoutParams.topMargin = v.b(getContext(), 2.0f);
-            addView(this.f17914d, layoutParams);
+            addView(this.f18701d, layoutParams);
         }
     }
 
     private void c() {
         int[] iArr = new int[2];
-        this.f17913c.getLocationInWindow(iArr);
-        ATNativeAdvancedWebview aTNativeAdvancedWebview = this.f17913c;
-        transInfoForMraid(aTNativeAdvancedWebview, iArr[0], iArr[1], aTNativeAdvancedWebview.getWidth(), this.f17913c.getHeight());
-        ATNativeAdvancedWebview aTNativeAdvancedWebview2 = this.f17913c;
+        this.f18700c.getLocationInWindow(iArr);
+        ATNativeAdvancedWebview aTNativeAdvancedWebview = this.f18700c;
+        transInfoForMraid(aTNativeAdvancedWebview, iArr[0], iArr[1], aTNativeAdvancedWebview.getWidth(), this.f18700c.getHeight());
+        ATNativeAdvancedWebview aTNativeAdvancedWebview2 = this.f18700c;
         if (aTNativeAdvancedWebview2 != null) {
             aTNativeAdvancedWebview2.setObject(this.i);
-            this.f17913c.post(new AnonymousClass1());
+            this.f18700c.post(new AnonymousClass1());
         }
     }
 
-    public static void transInfoForMraid(WebView webView, int i, int i6, int i9, int i10) {
+    public static void transInfoForMraid(WebView webView, int i, int i4, int i6, int i9) {
         try {
-            int i11 = t.b().g().getResources().getConfiguration().orientation;
+            int i10 = t.b().g().getResources().getConfiguration().orientation;
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("orientation", i11 == 2 ? "landscape" : i11 == 1 ? "portrait" : "undefined");
+            jSONObject.put("orientation", i10 == 2 ? "landscape" : i10 == 1 ? "portrait" : "undefined");
             jSONObject.put("locked", "true");
-            float f3 = n.f(t.b().g());
-            float g4 = n.g(t.b().g());
-            HashMap h9 = n.h(t.b().g());
-            int intValue = ((Integer) h9.get("width")).intValue();
-            int intValue2 = ((Integer) h9.get("height")).intValue();
+            float f2 = n.f(t.b().g());
+            float g9 = n.g(t.b().g());
+            HashMap h3 = n.h(t.b().g());
+            int intValue = ((Integer) h3.get("width")).intValue();
+            int intValue2 = ((Integer) h3.get("height")).intValue();
             HashMap hashMap = new HashMap();
-            hashMap.put(com.anythink.core.express.b.a.f17525a, com.anythink.core.express.b.a.f17534k);
-            hashMap.put(com.anythink.core.express.b.a.f17526b, com.anythink.core.express.b.a.f17530f);
-            hashMap.put(com.anythink.core.express.b.a.f17527c, "true");
-            hashMap.put(com.anythink.core.express.b.a.f17528d, jSONObject);
+            hashMap.put(com.anythink.core.express.b.a.f18312a, com.anythink.core.express.b.a.f18321k);
+            hashMap.put(com.anythink.core.express.b.a.f18313b, com.anythink.core.express.b.a.f18317f);
+            hashMap.put(com.anythink.core.express.b.a.f18314c, "true");
+            hashMap.put(com.anythink.core.express.b.a.f18315d, jSONObject);
             com.anythink.core.express.b.a.a();
             float f9 = i;
-            float f10 = i6;
-            float f11 = i9;
-            float f12 = i10;
+            float f10 = i4;
+            float f11 = i6;
+            float f12 = i9;
             com.anythink.core.express.b.a.a(webView, f9, f10, f11, f12);
             com.anythink.core.express.b.a.a();
             com.anythink.core.express.b.a.b(webView, f9, f10, f11, f12);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.b(webView, f3, g4);
+            com.anythink.core.express.b.a.b(webView, f2, g9);
             com.anythink.core.express.b.a.a();
             com.anythink.core.express.b.a.c(webView, intValue, intValue2);
             com.anythink.core.express.b.a.a();
@@ -161,7 +161,7 @@ public class ATNativeAdvancedView extends RelativeLayout {
     }
 
     public void changeCloseBtnState(int i) {
-        View view = this.f17914d;
+        View view = this.f18701d;
         if (view != null) {
             if (i == 2) {
                 view.setVisibility(8);
@@ -172,29 +172,29 @@ public class ATNativeAdvancedView extends RelativeLayout {
     }
 
     public void clearResState() {
-        this.f17917g = false;
-        this.f17916f = false;
-        this.f17915e = false;
+        this.f18704g = false;
+        this.f18703f = false;
+        this.f18702e = false;
     }
 
     public void clearResStateAndRemoveClose() {
         clearResState();
-        View view = this.f17914d;
+        View view = this.f18701d;
         if (view == null || view.getParent() == null) {
             return;
         }
-        removeView(this.f17914d);
+        removeView(this.f18701d);
     }
 
     public void destroy() {
         removeAllViews();
-        ATNativeAdvancedWebview aTNativeAdvancedWebview = this.f17913c;
+        ATNativeAdvancedWebview aTNativeAdvancedWebview = this.f18700c;
         if (aTNativeAdvancedWebview != null && !aTNativeAdvancedWebview.isDestroyed()) {
-            this.f17913c.release();
-            NativeAdvancedJsUtils.sendEventToH5(this.f17913c, "onSystemDestory", "");
+            this.f18700c.release();
+            NativeAdvancedJsUtils.sendEventToH5(this.f18700c, "onSystemDestory", "");
         }
-        if (this.f17919j != null) {
-            this.f17919j = null;
+        if (this.f18706j != null) {
+            this.f18706j = null;
         }
     }
 
@@ -203,23 +203,23 @@ public class ATNativeAdvancedView extends RelativeLayout {
     }
 
     public ATNativeAdvancedWebview getAdvancedNativeWebview() {
-        return this.f17913c;
+        return this.f18700c;
     }
 
     public View getCloseView() {
-        return this.f17914d;
+        return this.f18701d;
     }
 
     public boolean isEndCardReady() {
-        return this.f17917g;
+        return this.f18704g;
     }
 
     public boolean isH5Ready() {
-        return this.f17915e;
+        return this.f18702e;
     }
 
     public boolean isVideoReady() {
-        return this.f17916f;
+        return this.f18703f;
     }
 
     @Override // android.view.View
@@ -228,21 +228,21 @@ public class ATNativeAdvancedView extends RelativeLayout {
     }
 
     public void resetLoadState() {
-        this.f17917g = false;
-        this.f17916f = false;
-        this.f17915e = false;
+        this.f18704g = false;
+        this.f18703f = false;
+        this.f18702e = false;
     }
 
     public void setAdvancedNativeJSBridgeImpl(NativeAdvancedJSBridgeImpl nativeAdvancedJSBridgeImpl) {
         this.i = nativeAdvancedJSBridgeImpl;
-        ATNativeAdvancedWebview aTNativeAdvancedWebview = this.f17913c;
+        ATNativeAdvancedWebview aTNativeAdvancedWebview = this.f18700c;
         if (aTNativeAdvancedWebview != null) {
             aTNativeAdvancedWebview.setObject(nativeAdvancedJSBridgeImpl);
         }
     }
 
     public void setAdvancedNativeWebview(ATNativeAdvancedWebview aTNativeAdvancedWebview) {
-        this.f17913c = aTNativeAdvancedWebview;
+        this.f18700c = aTNativeAdvancedWebview;
         NativeAdvancedJSBridgeImpl nativeAdvancedJSBridgeImpl = this.i;
         if (nativeAdvancedJSBridgeImpl != null) {
             aTNativeAdvancedWebview.setObject(nativeAdvancedJSBridgeImpl);
@@ -250,39 +250,39 @@ public class ATNativeAdvancedView extends RelativeLayout {
     }
 
     public void setCloseView(View view) {
-        this.f17914d = view;
+        this.f18701d = view;
         if (view != null) {
             view.setContentDescription("closeButton");
         }
     }
 
-    public void setEndCardReady(boolean z3) {
-        this.f17917g = z3;
+    public void setEndCardReady(boolean z6) {
+        this.f18704g = z6;
     }
 
-    public void setH5Ready(boolean z3) {
-        this.f17915e = z3;
+    public void setH5Ready(boolean z6) {
+        this.f18702e = z6;
     }
 
-    public void setVideoReady(boolean z3) {
-        this.f17916f = z3;
+    public void setVideoReady(boolean z6) {
+        this.f18703f = z6;
     }
 
     public void show() {
-        ATNativeAdvancedWebview aTNativeAdvancedWebview = this.f17913c;
+        ATNativeAdvancedWebview aTNativeAdvancedWebview = this.f18700c;
         if (aTNativeAdvancedWebview != null && aTNativeAdvancedWebview.getParent() == null) {
-            addView(this.f17913c, new ViewGroup.LayoutParams(-1, -1));
+            addView(this.f18700c, new ViewGroup.LayoutParams(-1, -1));
         }
         int[] iArr = new int[2];
-        this.f17913c.getLocationInWindow(iArr);
-        ATNativeAdvancedWebview aTNativeAdvancedWebview2 = this.f17913c;
-        transInfoForMraid(aTNativeAdvancedWebview2, iArr[0], iArr[1], aTNativeAdvancedWebview2.getWidth(), this.f17913c.getHeight());
-        ATNativeAdvancedWebview aTNativeAdvancedWebview3 = this.f17913c;
+        this.f18700c.getLocationInWindow(iArr);
+        ATNativeAdvancedWebview aTNativeAdvancedWebview2 = this.f18700c;
+        transInfoForMraid(aTNativeAdvancedWebview2, iArr[0], iArr[1], aTNativeAdvancedWebview2.getWidth(), this.f18700c.getHeight());
+        ATNativeAdvancedWebview aTNativeAdvancedWebview3 = this.f18700c;
         if (aTNativeAdvancedWebview3 != null) {
             aTNativeAdvancedWebview3.setObject(this.i);
-            this.f17913c.post(new AnonymousClass1());
+            this.f18700c.post(new AnonymousClass1());
         }
-        View view = this.f17914d;
+        View view = this.f18701d;
         if (view != null) {
             if (view.getParent() == null) {
                 RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(v.b(getContext(), 28.0f), v.b(getContext(), 16.0f));
@@ -290,9 +290,9 @@ public class ATNativeAdvancedView extends RelativeLayout {
                 layoutParams.addRule(11);
                 layoutParams.rightMargin = v.b(getContext(), 2.0f);
                 layoutParams.topMargin = v.b(getContext(), 2.0f);
-                addView(this.f17914d, layoutParams);
+                addView(this.f18701d, layoutParams);
             } else {
-                bringChildToFront(this.f17914d);
+                bringChildToFront(this.f18701d);
             }
         }
         clearResState();
@@ -304,6 +304,6 @@ public class ATNativeAdvancedView extends RelativeLayout {
 
     public ATNativeAdvancedView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f17919j = context;
+        this.f18706j = context;
     }
 }

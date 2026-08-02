@@ -105,7 +105,7 @@ public class ATNative {
             return new ATAdStatusInfo(false, false, null);
         }
         ATAdStatusInfo a9 = this.mAdLoadManager.a(getContext(), this.mTKExtraMap);
-        ab.b(this.mPlacementId, j.r.f12546s, j.r.f12525C, a9.toString(), "");
+        ab.b(this.mPlacementId, j.r.f13332s, j.r.f13311C, a9.toString(), "");
         return a9;
     }
 
@@ -176,7 +176,7 @@ public class ATNative {
     }
 
     public void makeAdRequest(ATAdRequest aTAdRequest) {
-        ab.a(this.mPlacementId, j.r.f12546s, j.r.f12552y, j.r.f12542o, "", true);
+        ab.a(this.mPlacementId, j.r.f13332s, j.r.f13338y, j.r.f13328o, "", true);
         this.mAdLoadManager.a(getContext(), this.adLoadListener, this.mAdSourceEventListener, this.adMultipleLoadedListener, this.mTKExtraMap, aTAdRequest);
     }
 }

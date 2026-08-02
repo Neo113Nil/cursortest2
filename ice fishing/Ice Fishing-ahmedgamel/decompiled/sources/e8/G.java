@@ -1,13 +1,13 @@
 package e8;
 
 import java.util.List;
-import v7.C5135p;
+import v7.C5125p;
 
 /* loaded from: classes2.dex */
 public final class G implements c8.e {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final G f37249a = new G();
+    public static final G f37325a = new G();
 
     @Override // c8.e
     public final String a() {
@@ -21,8 +21,8 @@ public final class G implements c8.e {
     }
 
     @Override // c8.e
-    public final t8.g d() {
-        return c8.i.f5654e;
+    public final com.bumptech.glide.h d() {
+        return c8.i.f5830e;
     }
 
     @Override // c8.e
@@ -46,7 +46,7 @@ public final class G implements c8.e {
 
     @Override // c8.e
     public final List getAnnotations() {
-        return C5135p.f41442n;
+        return C5125p.f41221n;
     }
 
     @Override // c8.e
@@ -55,7 +55,7 @@ public final class G implements c8.e {
     }
 
     public final int hashCode() {
-        return (c8.i.f5654e.hashCode() * 31) - 1818355776;
+        return (c8.i.f5830e.hashCode() * 31) - 1818355776;
     }
 
     @Override // c8.e

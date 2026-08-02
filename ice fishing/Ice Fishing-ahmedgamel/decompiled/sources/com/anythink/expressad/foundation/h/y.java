@@ -6,7 +6,7 @@ import android.text.TextUtils;
 public final class y {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19737a = "StringUtils";
+    private static final String f20524a = "StringUtils";
 
     public static boolean a(String str) {
         return str == null || TextUtils.isEmpty(str.trim()) || "null".equals(str);

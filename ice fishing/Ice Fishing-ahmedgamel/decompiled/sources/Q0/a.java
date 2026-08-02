@@ -1,6 +1,6 @@
 package Q0;
 
-import J0.s;
+import J0.r;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -9,16 +9,16 @@ import android.content.IntentFilter;
 public final class a extends f {
 
     /* renamed from: f, reason: collision with root package name */
-    public final d f2624f;
+    public final d f2459f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final /* synthetic */ int f2625g;
+    public final /* synthetic */ int f2460g;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public a(Context context, Z2.e eVar, int i) {
+    public a(Context context, b3.e eVar, int i) {
         super(context, eVar);
-        this.f2625g = i;
-        this.f2624f = new d(0, this);
+        this.f2460g = i;
+        this.f2459f = new d(0, this);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0036, code lost:
@@ -30,31 +30,31 @@ public final class a extends f {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object a() {
-        switch (this.f2625g) {
+        switch (this.f2460g) {
             case 0:
-                Intent registerReceiver = this.f2632b.registerReceiver(null, new IntentFilter("android.intent.action.BATTERY_CHANGED"));
+                Intent registerReceiver = this.f2467b.registerReceiver(null, new IntentFilter("android.intent.action.BATTERY_CHANGED"));
                 if (registerReceiver == null) {
-                    s.d().b(b.f2626a, "getInitialState - null intent received");
+                    r.d().b(b.f2461a, "getInitialState - null intent received");
                     return Boolean.FALSE;
                 }
                 int intExtra = registerReceiver.getIntExtra("status", -1);
                 return Boolean.valueOf(intExtra == 2 || intExtra == 5);
             case 1:
-                Intent registerReceiver2 = this.f2632b.registerReceiver(null, new IntentFilter("android.intent.action.BATTERY_CHANGED"));
+                Intent registerReceiver2 = this.f2467b.registerReceiver(null, new IntentFilter("android.intent.action.BATTERY_CHANGED"));
                 if (registerReceiver2 == null) {
-                    s.d().b(c.f2627a, "getInitialState - null intent received");
+                    r.d().b(c.f2462a, "getInitialState - null intent received");
                     return Boolean.FALSE;
                 }
                 int intExtra2 = registerReceiver2.getIntExtra("status", -1);
                 float intExtra3 = registerReceiver2.getIntExtra("level", -1) / registerReceiver2.getIntExtra("scale", -1);
-                boolean z3 = true;
-                if (intExtra2 != 1 && intExtra3 <= 0.15f) {
-                    z3 = false;
-                }
-                return Boolean.valueOf(z3);
-            default:
-                Intent registerReceiver3 = this.f2632b.registerReceiver(null, f());
                 boolean z6 = true;
+                if (intExtra2 != 1 && intExtra3 <= 0.15f) {
+                    z6 = false;
+                }
+                return Boolean.valueOf(z6);
+            default:
+                Intent registerReceiver3 = this.f2467b.registerReceiver(null, f());
+                boolean z9 = true;
                 if (registerReceiver3 != null && registerReceiver3.getAction() != null) {
                     String action = registerReceiver3.getAction();
                     if (action != null) {
@@ -65,26 +65,26 @@ public final class a extends f {
                             break;
                         }
                     }
-                    z6 = false;
+                    z9 = false;
                 }
-                return Boolean.valueOf(z6);
+                return Boolean.valueOf(z9);
         }
     }
 
     @Override // Q0.f
     public final void d() {
-        s.d().a(e.f2630a, getClass().getSimpleName().concat(": registering receiver"));
-        this.f2632b.registerReceiver(this.f2624f, f());
+        r.d().a(e.f2465a, getClass().getSimpleName().concat(": registering receiver"));
+        this.f2467b.registerReceiver(this.f2459f, f());
     }
 
     @Override // Q0.f
     public final void e() {
-        s.d().a(e.f2630a, getClass().getSimpleName().concat(": unregistering receiver"));
-        this.f2632b.unregisterReceiver(this.f2624f);
+        r.d().a(e.f2465a, getClass().getSimpleName().concat(": unregistering receiver"));
+        this.f2467b.unregisterReceiver(this.f2459f);
     }
 
     public final IntentFilter f() {
-        switch (this.f2625g) {
+        switch (this.f2460g) {
             case 0:
                 IntentFilter intentFilter = new IntentFilter();
                 intentFilter.addAction("android.os.action.CHARGING");

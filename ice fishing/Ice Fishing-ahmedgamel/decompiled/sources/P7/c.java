@@ -6,14 +6,14 @@ import java.util.Iterator;
 public final class c implements h {
 
     /* renamed from: a, reason: collision with root package name */
-    public final h f2606a;
+    public final h f2441a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f2607b;
+    public final int f2442b;
 
     public c(h hVar, int i) {
-        this.f2606a = hVar;
-        this.f2607b = i;
+        this.f2441a = hVar;
+        this.f2442b = i;
         if (i >= 0) {
             return;
         }

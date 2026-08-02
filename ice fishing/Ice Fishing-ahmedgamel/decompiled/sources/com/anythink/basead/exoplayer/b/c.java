@@ -9,23 +9,23 @@ import java.util.Arrays;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final c f6432a = new c(new int[]{2}, 2);
+    public static final c f7218a = new c(new int[]{2}, 2);
 
     /* renamed from: b, reason: collision with root package name */
-    private final int[] f6433b;
+    private final int[] f7219b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final int f6434c;
+    private final int f7220c;
 
     private c(int[] iArr, int i) {
         if (iArr != null) {
             int[] copyOf = Arrays.copyOf(iArr, iArr.length);
-            this.f6433b = copyOf;
+            this.f7219b = copyOf;
             Arrays.sort(copyOf);
         } else {
-            this.f6433b = new int[0];
+            this.f7219b = new int[0];
         }
-        this.f6434c = i;
+        this.f7220c = i;
     }
 
     public static c a(Context context) {
@@ -40,29 +40,29 @@ public final class c {
             return false;
         }
         c cVar = (c) obj;
-        return Arrays.equals(this.f6433b, cVar.f6433b) && this.f6434c == cVar.f6434c;
+        return Arrays.equals(this.f7219b, cVar.f7219b) && this.f7220c == cVar.f7220c;
     }
 
     public final int hashCode() {
-        return (Arrays.hashCode(this.f6433b) * 31) + this.f6434c;
+        return (Arrays.hashCode(this.f7219b) * 31) + this.f7220c;
     }
 
     public final String toString() {
-        return "AudioCapabilities[maxChannelCount=" + this.f6434c + ", supportedEncodings=" + Arrays.toString(this.f6433b) + "]";
+        return "AudioCapabilities[maxChannelCount=" + this.f7220c + ", supportedEncodings=" + Arrays.toString(this.f7219b) + "]";
     }
 
     public static c a(Intent intent) {
         if (intent != null && intent.getIntExtra("android.media.extra.AUDIO_PLUG_STATE", 0) != 0) {
             return new c(intent.getIntArrayExtra("android.media.extra.ENCODINGS"), intent.getIntExtra("android.media.extra.MAX_CHANNEL_COUNT", 0));
         }
-        return f6432a;
+        return f7218a;
     }
 
     public final boolean a(int i) {
-        return Arrays.binarySearch(this.f6433b, i) >= 0;
+        return Arrays.binarySearch(this.f7219b, i) >= 0;
     }
 
     private int a() {
-        return this.f6434c;
+        return this.f7220c;
     }
 }

@@ -6,14 +6,14 @@ import java.util.Arrays;
 
 @ElementTypesAreNonnullByDefault
 /* loaded from: assets/audience_network/classes2.dex */
-public abstract class CC implements InterfaceC2071kj<Character> {
+public abstract class CC implements InterfaceC2091kj<Character> {
     public static byte[] A00;
     public static String[] A01 = {"hclkFSbi6Vg1BfvH0wmaDr4dbn73", "G9lpasi9RBaNNLModxK5K8gUTz14LheK", "Gftcr", "paUG0VLHuMGB0YhbqyP1Nk9wNO1yz", "Gk6etbpP6dMkcTEXSV9xUYuIVF", "di9Lt", "", "3ewjDWS3ktgbM1wBomSiDURsX5cxFOtv"};
 
-    public static String A06(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 13);
+    public static String A06(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 13);
         }
         return new String(copyOfRange);
     }
@@ -35,21 +35,21 @@ public abstract class CC implements InterfaceC2071kj<Character> {
             public static String[] A02 = {"9yE19", "zOI7IBt", "QcxtIsV3beme0fSshBZEiAbzAb", "54lX5AjhAsj9h7", "50Stt6", "IBfS2nVlEcQ7MYOv0zA4iOMcJ", "2Gh0ygEYZnFezhOBR", "xA0qoezlN6x4dJxmGj9eAbu4w6XV572R"};
             public final char A00;
 
-            public static String A00(int i, int i6, int i9) {
-                byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-                for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-                    byte b9 = (byte) ((copyOfRange[i10] ^ i9) ^ 115);
+            public static String A00(int i, int i4, int i6) {
+                byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+                for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+                    byte b9 = (byte) ((copyOfRange[i9] ^ i6) ^ 115);
                     if (A02[2].length() != 26) {
                         throw new RuntimeException();
                     }
                     A02[1] = "Dls36CWZuql1";
-                    copyOfRange[i10] = b9;
+                    copyOfRange[i9] = b9;
                 }
                 return new String(copyOfRange);
             }
 
             public static void A01() {
-                byte[] bArr = {55, 57, 25, 50, 59, 40, 23, 59, 46, 57, 50, c.f16318c, 40, 116, 51, 41, 114, 125};
+                byte[] bArr = {55, 57, 25, 50, 59, 40, 23, 59, 46, 57, 50, c.f17105c, 40, 116, 51, 41, 114, 125};
                 if (A02[1].length() == 27) {
                     throw new RuntimeException();
                 }
@@ -110,7 +110,7 @@ public abstract class CC implements InterfaceC2071kj<Character> {
 
     public int A08(CharSequence sequence, int start) {
         int length = sequence.length();
-        AbstractC2070ki.A01(start, length);
+        AbstractC2090ki.A01(start, length);
         while (start < length) {
             char charAt = sequence.charAt(start);
             String[] strArr = A01;

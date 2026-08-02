@@ -14,27 +14,27 @@ import java.util.Map;
 public final class d extends c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f11145a = 2;
+    public static final int f11931a = 2;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f11146b = 3;
+    public static final int f11932b = 3;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f11147c = 4;
+    public static final int f11933c = 4;
 
     /* renamed from: l, reason: collision with root package name */
-    public static final int f11148l = 5;
+    public static final int f11934l = 5;
 
     /* renamed from: m, reason: collision with root package name */
-    com.anythink.basead.ui.c.a f11149m;
+    com.anythink.basead.ui.c.a f11935m;
 
     /* renamed from: n, reason: collision with root package name */
-    boolean f11150n = false;
+    boolean f11936n = false;
 
     public interface a {
         View a();
 
-        void a(boolean z3);
+        void a(boolean z6);
 
         void b();
 
@@ -46,20 +46,20 @@ public final class d extends c {
     @Override // com.anythink.basead.ui.improveclick.c
     public final void a(Context context, w wVar, x xVar, ViewGroup viewGroup, RelativeLayout relativeLayout, View view, int i, c.a aVar) {
         super.a(context, wVar, xVar, viewGroup, relativeLayout, view, i, aVar);
-        int aQ = xVar.f14168o.aQ();
+        int aQ = xVar.f14954o.aQ();
         if (aQ == 2) {
-            this.f11149m = new com.anythink.basead.ui.c.b(context, wVar, xVar, aVar, i, viewGroup);
+            this.f11935m = new com.anythink.basead.ui.c.b(context, wVar, xVar, aVar, i, viewGroup);
             return;
         }
         if (aQ == 3) {
-            this.f11149m = new com.anythink.basead.ui.c.c(context, wVar, xVar, aVar, i, viewGroup);
+            this.f11935m = new com.anythink.basead.ui.c.c(context, wVar, xVar, aVar, i, viewGroup);
         } else if (aQ == 4) {
-            this.f11149m = new com.anythink.basead.ui.c.e(context, wVar, xVar, aVar, i, viewGroup);
+            this.f11935m = new com.anythink.basead.ui.c.e(context, wVar, xVar, aVar, i, viewGroup);
         } else {
             if (aQ != 5) {
                 return;
             }
-            this.f11149m = new com.anythink.basead.ui.c.d(context, wVar, xVar, aVar, i, viewGroup);
+            this.f11935m = new com.anythink.basead.ui.c.d(context, wVar, xVar, aVar, i, viewGroup);
         }
     }
 
@@ -67,25 +67,25 @@ public final class d extends c {
     public final void a(int i, Map<String, Object> map) {
         com.anythink.basead.ui.c.a aVar;
         if (i == 102) {
-            if (this.f11150n || (aVar = this.f11149m) == null) {
+            if (this.f11936n || (aVar = this.f11935m) == null) {
                 return;
             }
             aVar.a();
             return;
         }
         if (i == 103) {
-            if (!this.f11150n) {
-                com.anythink.basead.ui.c.a aVar2 = this.f11149m;
+            if (!this.f11936n) {
+                com.anythink.basead.ui.c.a aVar2 = this.f11935m;
                 if (aVar2 != null) {
                     aVar2.a(this.i);
                     return;
                 }
                 return;
             }
-            if (com.anythink.basead.b.e.e(this.f11139e, this.f11140f)) {
+            if (com.anythink.basead.b.e.e(this.f11925e, this.f11926f)) {
                 return;
             }
-            com.anythink.core.common.u.e.a(this.f11139e, this.f11140f, com.anythink.basead.b.e.a(this.f11140f, this.f11141g.getContext()));
+            com.anythink.core.common.u.e.a(this.f11925e, this.f11926f, com.anythink.basead.b.e.a(this.f11926f, this.f11927g.getContext()));
             return;
         }
         if (i == 112) {
@@ -93,8 +93,8 @@ public final class d extends c {
             return;
         }
         if (i == 113) {
-            this.f11150n = true;
-            com.anythink.basead.ui.c.a aVar3 = this.f11149m;
+            this.f11936n = true;
+            com.anythink.basead.ui.c.a aVar3 = this.f11935m;
             if (aVar3 != null) {
                 aVar3.d();
                 return;
@@ -104,7 +104,7 @@ public final class d extends c {
         if (i != 125) {
             return;
         }
-        Object obj = map.get(g.a.f11174j);
+        Object obj = map.get(g.a.f11960j);
         if (((obj == null || !(obj instanceof Integer)) ? 0 : ((Integer) obj).intValue()) == 1) {
             a();
         }
@@ -112,15 +112,15 @@ public final class d extends c {
 
     @Override // com.anythink.basead.ui.improveclick.c
     public final void a() {
-        com.anythink.basead.ui.c.a aVar = this.f11149m;
+        com.anythink.basead.ui.c.a aVar = this.f11935m;
         if (aVar != null) {
             aVar.e();
-            this.f11149m = null;
+            this.f11935m = null;
         }
     }
 
     private void a(a aVar) {
-        com.anythink.basead.ui.c.a aVar2 = this.f11149m;
+        com.anythink.basead.ui.c.a aVar2 = this.f11935m;
         if (aVar2 != null) {
             aVar2.a(aVar);
         }

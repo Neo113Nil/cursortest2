@@ -4,13 +4,13 @@ package com.google.android.gms.internal.ads;
 public abstract class QA extends OA {
 
     /* renamed from: n, reason: collision with root package name */
-    public final String f26999n;
+    public final String f27786n;
 
     public QA(String str) {
-        this.f26999n = str;
+        this.f27786n = str;
     }
 
     public final String toString() {
-        return this.f26999n;
+        return this.f27786n;
     }
 }

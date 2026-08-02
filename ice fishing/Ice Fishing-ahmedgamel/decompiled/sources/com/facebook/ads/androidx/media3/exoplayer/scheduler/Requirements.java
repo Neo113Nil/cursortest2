@@ -10,7 +10,7 @@ import android.net.NetworkInfo;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.PowerManager;
-import com.instagram.common.viewpoint.core.AbstractC06243y;
+import com.instagram.common.viewpoint.core.AbstractC06443y;
 import com.instagram.common.viewpoint.core.C5C;
 import com.instagram.common.viewpoint.core.CO;
 import java.util.Arrays;
@@ -22,10 +22,10 @@ public final class Requirements implements Parcelable {
     public static final Parcelable.Creator<Requirements> CREATOR;
     public final int A00;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 104);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 104);
         }
         return new String(copyOfRange);
     }
@@ -47,7 +47,7 @@ public final class Requirements implements Parcelable {
         if (!A0A()) {
             return 0;
         }
-        ConnectivityManager connectivityManager = (ConnectivityManager) AbstractC06243y.A01(context.getSystemService(A01(77, 12, 28)));
+        ConnectivityManager connectivityManager = (ConnectivityManager) AbstractC06443y.A01(context.getSystemService(A01(77, 12, 28)));
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
         if (activeNetworkInfo != null && activeNetworkInfo.isConnected()) {
             boolean A06 = A06(connectivityManager);
@@ -99,7 +99,7 @@ public final class Requirements implements Parcelable {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private boolean A04(Context context) {
-        PowerManager powerManager = (PowerManager) AbstractC06243y.A01(context.getSystemService(A01(89, 5, 31)));
+        PowerManager powerManager = (PowerManager) AbstractC06443y.A01(context.getSystemService(A01(89, 5, 31)));
         if (C5C.A02 >= 23) {
             return powerManager.isDeviceIdleMode();
         }

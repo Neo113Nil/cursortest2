@@ -1,21 +1,23 @@
 package androidx.coordinatorlayout.widget;
 
 import A.a;
+import A3.o;
 import B.b;
 import B.c;
 import B.e;
 import B.f;
+import B.g;
 import B.h;
-import B.i;
-import B.j;
+import I0.j;
 import N.d;
 import O.A0;
-import O.C0344t;
-import O.InterfaceC0343s;
+import O.C0349t;
+import O.InterfaceC0348s;
 import O.J;
 import O.L;
 import O.X;
 import O.r;
+import S0.i;
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
@@ -36,8 +38,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
-import com.icefishingapp.icefishing.C5275R;
-import g1.C4523c;
+import com.IceFishing.LiveIceFishing.C5248R;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -46,163 +47,163 @@ import java.util.WeakHashMap;
 import s.k;
 
 /* loaded from: classes.dex */
-public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
+public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0348s {
 
     /* renamed from: M, reason: collision with root package name */
-    public static final String f4659M;
+    public static final String f4627M;
 
     /* renamed from: N, reason: collision with root package name */
-    public static final Class[] f4660N;
+    public static final Class[] f4628N;
 
     /* renamed from: O, reason: collision with root package name */
-    public static final ThreadLocal f4661O;
+    public static final ThreadLocal f4629O;
 
     /* renamed from: P, reason: collision with root package name */
-    public static final i f4662P;
+    public static final o f4630P;
 
     /* renamed from: Q, reason: collision with root package name */
-    public static final d f4663Q;
+    public static final d f4631Q;
 
     /* renamed from: A, reason: collision with root package name */
-    public boolean f4664A;
+    public boolean f4632A;
 
     /* renamed from: B, reason: collision with root package name */
-    public final int[] f4665B;
+    public final int[] f4633B;
 
     /* renamed from: C, reason: collision with root package name */
-    public View f4666C;
+    public View f4634C;
 
     /* renamed from: D, reason: collision with root package name */
-    public View f4667D;
+    public View f4635D;
 
     /* renamed from: E, reason: collision with root package name */
-    public f f4668E;
+    public f f4636E;
 
     /* renamed from: F, reason: collision with root package name */
-    public boolean f4669F;
+    public boolean f4637F;
 
     /* renamed from: G, reason: collision with root package name */
-    public A0 f4670G;
+    public A0 f4638G;
 
     /* renamed from: H, reason: collision with root package name */
-    public boolean f4671H;
+    public boolean f4639H;
 
     /* renamed from: I, reason: collision with root package name */
-    public Drawable f4672I;
+    public Drawable f4640I;
     public ViewGroup.OnHierarchyChangeListener J;
 
     /* renamed from: K, reason: collision with root package name */
-    public C4523c f4673K;
+    public j f4641K;
 
     /* renamed from: L, reason: collision with root package name */
-    public final C0344t f4674L;
+    public final C0349t f4642L;
 
     /* renamed from: n, reason: collision with root package name */
-    public final ArrayList f4675n;
+    public final ArrayList f4643n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final S0.i f4676u;
+    public final i f4644u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final ArrayList f4677v;
+    public final ArrayList f4645v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final ArrayList f4678w;
+    public final ArrayList f4646w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final int[] f4679x;
+    public final int[] f4647x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final int[] f4680y;
+    public final int[] f4648y;
 
     /* renamed from: z, reason: collision with root package name */
-    public boolean f4681z;
+    public boolean f4649z;
 
     static {
         Package r02 = CoordinatorLayout.class.getPackage();
-        f4659M = r02 != null ? r02.getName() : null;
-        f4662P = new i(0);
-        f4660N = new Class[]{Context.class, AttributeSet.class};
-        f4661O = new ThreadLocal();
-        f4663Q = new d(12);
+        f4627M = r02 != null ? r02.getName() : null;
+        f4630P = new o(1);
+        f4628N = new Class[]{Context.class, AttributeSet.class};
+        f4629O = new ThreadLocal();
+        f4631Q = new d(12);
     }
 
     public CoordinatorLayout(Context context, AttributeSet attributeSet) {
-        super(context, attributeSet, C5275R.attr.coordinatorLayoutStyle);
-        this.f4675n = new ArrayList();
-        this.f4676u = new S0.i();
-        this.f4677v = new ArrayList();
-        this.f4678w = new ArrayList();
-        this.f4679x = new int[2];
-        this.f4680y = new int[2];
-        this.f4674L = new C0344t();
+        super(context, attributeSet, C5248R.attr.coordinatorLayoutStyle);
+        this.f4643n = new ArrayList();
+        this.f4644u = new i();
+        this.f4645v = new ArrayList();
+        this.f4646w = new ArrayList();
+        this.f4647x = new int[2];
+        this.f4648y = new int[2];
+        this.f4642L = new C0349t();
         int[] iArr = a.f4a;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, iArr, C5275R.attr.coordinatorLayoutStyle, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, iArr, C5248R.attr.coordinatorLayoutStyle, 0);
         if (Build.VERSION.SDK_INT >= 29) {
-            saveAttributeDataForStyleable(context, iArr, attributeSet, obtainStyledAttributes, C5275R.attr.coordinatorLayoutStyle, 0);
+            saveAttributeDataForStyleable(context, iArr, attributeSet, obtainStyledAttributes, C5248R.attr.coordinatorLayoutStyle, 0);
         }
         int resourceId = obtainStyledAttributes.getResourceId(0, 0);
         if (resourceId != 0) {
             Resources resources = context.getResources();
             int[] intArray = resources.getIntArray(resourceId);
-            this.f4665B = intArray;
-            float f3 = resources.getDisplayMetrics().density;
+            this.f4633B = intArray;
+            float f2 = resources.getDisplayMetrics().density;
             int length = intArray.length;
             for (int i = 0; i < length; i++) {
-                this.f4665B[i] = (int) (r2[i] * f3);
+                this.f4633B[i] = (int) (r2[i] * f2);
             }
         }
-        this.f4672I = obtainStyledAttributes.getDrawable(1);
+        this.f4640I = obtainStyledAttributes.getDrawable(1);
         obtainStyledAttributes.recycle();
         w();
         super.setOnHierarchyChangeListener(new B.d(this));
-        WeakHashMap weakHashMap = X.f2054a;
+        WeakHashMap weakHashMap = X.f2142a;
         if (getImportantForAccessibility() == 0) {
             setImportantForAccessibility(1);
         }
     }
 
     public static Rect g() {
-        Rect rect = (Rect) f4663Q.a();
+        Rect rect = (Rect) f4631Q.a();
         return rect == null ? new Rect() : rect;
     }
 
-    public static void l(int i, Rect rect, Rect rect2, e eVar, int i6, int i9) {
-        int i10 = eVar.f73c;
-        if (i10 == 0) {
-            i10 = 17;
+    public static void l(int i, Rect rect, Rect rect2, e eVar, int i4, int i6) {
+        int i9 = eVar.f231c;
+        if (i9 == 0) {
+            i9 = 17;
         }
-        int absoluteGravity = Gravity.getAbsoluteGravity(i10, i);
-        int i11 = eVar.f74d;
-        if ((i11 & 7) == 0) {
-            i11 |= 8388611;
+        int absoluteGravity = Gravity.getAbsoluteGravity(i9, i);
+        int i10 = eVar.f232d;
+        if ((i10 & 7) == 0) {
+            i10 |= 8388611;
         }
-        if ((i11 & 112) == 0) {
-            i11 |= 48;
+        if ((i10 & 112) == 0) {
+            i10 |= 48;
         }
-        int absoluteGravity2 = Gravity.getAbsoluteGravity(i11, i);
-        int i12 = absoluteGravity & 7;
-        int i13 = absoluteGravity & 112;
-        int i14 = absoluteGravity2 & 7;
-        int i15 = absoluteGravity2 & 112;
-        int width = i14 != 1 ? i14 != 5 ? rect.left : rect.right : rect.left + (rect.width() / 2);
-        int height = i15 != 16 ? i15 != 80 ? rect.top : rect.bottom : rect.top + (rect.height() / 2);
-        if (i12 == 1) {
-            width -= i6 / 2;
-        } else if (i12 != 5) {
-            width -= i6;
+        int absoluteGravity2 = Gravity.getAbsoluteGravity(i10, i);
+        int i11 = absoluteGravity & 7;
+        int i12 = absoluteGravity & 112;
+        int i13 = absoluteGravity2 & 7;
+        int i14 = absoluteGravity2 & 112;
+        int width = i13 != 1 ? i13 != 5 ? rect.left : rect.right : rect.left + (rect.width() / 2);
+        int height = i14 != 16 ? i14 != 80 ? rect.top : rect.bottom : rect.top + (rect.height() / 2);
+        if (i11 == 1) {
+            width -= i4 / 2;
+        } else if (i11 != 5) {
+            width -= i4;
         }
-        if (i13 == 16) {
-            height -= i9 / 2;
-        } else if (i13 != 80) {
-            height -= i9;
+        if (i12 == 16) {
+            height -= i6 / 2;
+        } else if (i12 != 80) {
+            height -= i6;
         }
-        rect2.set(width, height, i6 + width, i9 + height);
+        rect2.set(width, height, i4 + width, i6 + height);
     }
 
     public static e n(View view) {
         e eVar = (e) view.getLayoutParams();
-        if (!eVar.f72b) {
+        if (!eVar.f230b) {
             c cVar = null;
             for (Class<?> cls = view.getClass(); cls != null; cls = cls.getSuperclass()) {
                 cVar = (c) cls.getAnnotation(c.class);
@@ -213,13 +214,13 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
             if (cVar != null) {
                 try {
                     b bVar = (b) cVar.value().getDeclaredConstructor(new Class[0]).newInstance(new Object[0]);
-                    b bVar2 = eVar.f71a;
+                    b bVar2 = eVar.f229a;
                     if (bVar2 != bVar) {
                         if (bVar2 != null) {
                             bVar2.e();
                         }
-                        eVar.f71a = bVar;
-                        eVar.f72b = true;
+                        eVar.f229a = bVar;
+                        eVar.f230b = true;
                         if (bVar != null) {
                             bVar.c(eVar);
                         }
@@ -228,90 +229,90 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
                     Log.e("CoordinatorLayout", "Default behavior class " + cVar.value().getName() + " could not be instantiated. Did you forget a default constructor?", e9);
                 }
             }
-            eVar.f72b = true;
+            eVar.f230b = true;
         }
         return eVar;
     }
 
     public static void u(int i, View view) {
         e eVar = (e) view.getLayoutParams();
-        int i6 = eVar.i;
-        if (i6 != i) {
-            WeakHashMap weakHashMap = X.f2054a;
-            view.offsetLeftAndRight(i - i6);
+        int i4 = eVar.i;
+        if (i4 != i) {
+            WeakHashMap weakHashMap = X.f2142a;
+            view.offsetLeftAndRight(i - i4);
             eVar.i = i;
         }
     }
 
     public static void v(int i, View view) {
         e eVar = (e) view.getLayoutParams();
-        int i6 = eVar.f79j;
-        if (i6 != i) {
-            WeakHashMap weakHashMap = X.f2054a;
-            view.offsetTopAndBottom(i - i6);
-            eVar.f79j = i;
+        int i4 = eVar.f237j;
+        if (i4 != i) {
+            WeakHashMap weakHashMap = X.f2142a;
+            view.offsetTopAndBottom(i - i4);
+            eVar.f237j = i;
         }
     }
 
     @Override // O.r
     public final void a(int i, View view) {
-        C0344t c0344t = this.f4674L;
+        C0349t c0349t = this.f4642L;
         if (i == 1) {
-            c0344t.f2134b = 0;
+            c0349t.f2222b = 0;
         } else {
-            c0344t.f2133a = 0;
+            c0349t.f2221a = 0;
         }
         int childCount = getChildCount();
-        for (int i6 = 0; i6 < childCount; i6++) {
-            View childAt = getChildAt(i6);
+        for (int i4 = 0; i4 < childCount; i4++) {
+            View childAt = getChildAt(i4);
             e eVar = (e) childAt.getLayoutParams();
             if (eVar.a(i)) {
-                b bVar = eVar.f71a;
+                b bVar = eVar.f229a;
                 if (bVar != null) {
                     bVar.p(childAt, view, i);
                 }
                 if (i == 0) {
-                    eVar.f82m = false;
+                    eVar.f240m = false;
                 } else if (i == 1) {
-                    eVar.f83n = false;
+                    eVar.f241n = false;
                 }
             }
         }
-        this.f4667D = null;
+        this.f4635D = null;
     }
 
-    @Override // O.InterfaceC0343s
-    public final void b(View view, int i, int i6, int i9, int i10, int i11, int[] iArr) {
+    @Override // O.InterfaceC0348s
+    public final void b(View view, int i, int i4, int i6, int i9, int i10, int[] iArr) {
         b bVar;
         int childCount = getChildCount();
+        int i11 = 0;
         int i12 = 0;
-        int i13 = 0;
-        boolean z3 = false;
-        for (int i14 = 0; i14 < childCount; i14++) {
-            View childAt = getChildAt(i14);
+        boolean z6 = false;
+        for (int i13 = 0; i13 < childCount; i13++) {
+            View childAt = getChildAt(i13);
             if (childAt.getVisibility() != 8) {
                 e eVar = (e) childAt.getLayoutParams();
-                if (eVar.a(i11) && (bVar = eVar.f71a) != null) {
-                    int[] iArr2 = this.f4679x;
+                if (eVar.a(i10) && (bVar = eVar.f229a) != null) {
+                    int[] iArr2 = this.f4647x;
                     iArr2[0] = 0;
                     iArr2[1] = 0;
-                    bVar.k(this, childAt, i6, i9, i10, iArr2);
-                    i12 = i9 > 0 ? Math.max(i12, iArr2[0]) : Math.min(i12, iArr2[0]);
-                    i13 = i10 > 0 ? Math.max(i13, iArr2[1]) : Math.min(i13, iArr2[1]);
-                    z3 = true;
+                    bVar.k(this, childAt, i4, i6, i9, iArr2);
+                    i11 = i6 > 0 ? Math.max(i11, iArr2[0]) : Math.min(i11, iArr2[0]);
+                    i12 = i9 > 0 ? Math.max(i12, iArr2[1]) : Math.min(i12, iArr2[1]);
+                    z6 = true;
                 }
             }
         }
-        iArr[0] = iArr[0] + i12;
-        iArr[1] = iArr[1] + i13;
-        if (z3) {
+        iArr[0] = iArr[0] + i11;
+        iArr[1] = iArr[1] + i12;
+        if (z6) {
             p(1);
         }
     }
 
     @Override // O.r
-    public final void c(View view, int i, int i6, int i9, int i10, int i11) {
-        b(view, i, i6, i9, i10, 0, this.f4680y);
+    public final void c(View view, int i, int i4, int i6, int i9, int i10) {
+        b(view, i, i4, i6, i9, 0, this.f4648y);
     }
 
     @Override // android.view.ViewGroup
@@ -320,35 +321,35 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
     }
 
     @Override // O.r
-    public final boolean d(View view, View view2, int i, int i6) {
+    public final boolean d(View view, View view2, int i, int i4) {
         int childCount = getChildCount();
-        boolean z3 = false;
-        for (int i9 = 0; i9 < childCount; i9++) {
-            View childAt = getChildAt(i9);
+        boolean z6 = false;
+        for (int i6 = 0; i6 < childCount; i6++) {
+            View childAt = getChildAt(i6);
             if (childAt.getVisibility() != 8) {
                 e eVar = (e) childAt.getLayoutParams();
-                b bVar = eVar.f71a;
+                b bVar = eVar.f229a;
                 if (bVar != null) {
-                    boolean o6 = bVar.o(i, i6, childAt);
-                    z3 |= o6;
-                    if (i6 == 0) {
-                        eVar.f82m = o6;
-                    } else if (i6 == 1) {
-                        eVar.f83n = o6;
+                    boolean o4 = bVar.o(i, i4, childAt);
+                    z6 |= o4;
+                    if (i4 == 0) {
+                        eVar.f240m = o4;
+                    } else if (i4 == 1) {
+                        eVar.f241n = o4;
                     }
-                } else if (i6 == 0) {
-                    eVar.f82m = false;
-                } else if (i6 == 1) {
-                    eVar.f83n = false;
+                } else if (i4 == 0) {
+                    eVar.f240m = false;
+                } else if (i4 == 1) {
+                    eVar.f241n = false;
                 }
             }
         }
-        return z3;
+        return z6;
     }
 
     @Override // android.view.ViewGroup
     public final boolean drawChild(Canvas canvas, View view, long j6) {
-        b bVar = ((e) view.getLayoutParams()).f71a;
+        b bVar = ((e) view.getLayoutParams()).f229a;
         if (bVar != null) {
             bVar.getClass();
         }
@@ -359,52 +360,52 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
     public final void drawableStateChanged() {
         super.drawableStateChanged();
         int[] drawableState = getDrawableState();
-        Drawable drawable = this.f4672I;
+        Drawable drawable = this.f4640I;
         if ((drawable == null || !drawable.isStateful()) ? false : drawable.setState(drawableState)) {
             invalidate();
         }
     }
 
     @Override // O.r
-    public final void e(View view, View view2, int i, int i6) {
-        C0344t c0344t = this.f4674L;
-        if (i6 == 1) {
-            c0344t.f2134b = i;
+    public final void e(View view, View view2, int i, int i4) {
+        C0349t c0349t = this.f4642L;
+        if (i4 == 1) {
+            c0349t.f2222b = i;
         } else {
-            c0344t.f2133a = i;
+            c0349t.f2221a = i;
         }
-        this.f4667D = view2;
+        this.f4635D = view2;
         int childCount = getChildCount();
-        for (int i9 = 0; i9 < childCount; i9++) {
-            ((e) getChildAt(i9).getLayoutParams()).getClass();
+        for (int i6 = 0; i6 < childCount; i6++) {
+            ((e) getChildAt(i6).getLayoutParams()).getClass();
         }
     }
 
     @Override // O.r
-    public final void f(View view, int i, int i6, int[] iArr, int i9) {
+    public final void f(View view, int i, int i4, int[] iArr, int i6) {
         b bVar;
         int childCount = getChildCount();
-        boolean z3 = false;
+        boolean z6 = false;
+        int i9 = 0;
         int i10 = 0;
-        int i11 = 0;
-        for (int i12 = 0; i12 < childCount; i12++) {
-            View childAt = getChildAt(i12);
+        for (int i11 = 0; i11 < childCount; i11++) {
+            View childAt = getChildAt(i11);
             if (childAt.getVisibility() != 8) {
                 e eVar = (e) childAt.getLayoutParams();
-                if (eVar.a(i9) && (bVar = eVar.f71a) != null) {
-                    int[] iArr2 = this.f4679x;
+                if (eVar.a(i6) && (bVar = eVar.f229a) != null) {
+                    int[] iArr2 = this.f4647x;
                     iArr2[0] = 0;
                     iArr2[1] = 0;
-                    bVar.j(this, childAt, view, i, i6, iArr2, i9);
-                    i10 = i > 0 ? Math.max(i10, iArr2[0]) : Math.min(i10, iArr2[0]);
-                    i11 = i6 > 0 ? Math.max(i11, iArr2[1]) : Math.min(i11, iArr2[1]);
-                    z3 = true;
+                    bVar.j(this, childAt, view, i, i4, iArr2, i6);
+                    i9 = i > 0 ? Math.max(i9, iArr2[0]) : Math.min(i9, iArr2[0]);
+                    i10 = i4 > 0 ? Math.max(i10, iArr2[1]) : Math.min(i10, iArr2[1]);
+                    z6 = true;
                 }
             }
         }
-        iArr[0] = i10;
-        iArr[1] = i11;
-        if (z3) {
+        iArr[0] = i9;
+        iArr[1] = i10;
+        if (z6) {
             p(1);
         }
     }
@@ -421,21 +422,21 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
 
     public final List<View> getDependencySortedChildren() {
         s();
-        return Collections.unmodifiableList(this.f4675n);
+        return Collections.unmodifiableList(this.f4643n);
     }
 
     public final A0 getLastWindowInsets() {
-        return this.f4670G;
+        return this.f4638G;
     }
 
     @Override // android.view.ViewGroup
     public int getNestedScrollAxes() {
-        C0344t c0344t = this.f4674L;
-        return c0344t.f2134b | c0344t.f2133a;
+        C0349t c0349t = this.f4642L;
+        return c0349t.f2222b | c0349t.f2221a;
     }
 
     public Drawable getStatusBarBackground() {
-        return this.f4672I;
+        return this.f4640I;
     }
 
     @Override // android.view.View
@@ -448,18 +449,18 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
         return Math.max(super.getSuggestedMinimumWidth(), getPaddingRight() + getPaddingLeft());
     }
 
-    public final void h(e eVar, Rect rect, int i, int i6) {
+    public final void h(e eVar, Rect rect, int i, int i4) {
         int width = getWidth();
         int height = getHeight();
         int max = Math.max(getPaddingLeft() + ((ViewGroup.MarginLayoutParams) eVar).leftMargin, Math.min(rect.left, ((width - getPaddingRight()) - i) - ((ViewGroup.MarginLayoutParams) eVar).rightMargin));
-        int max2 = Math.max(getPaddingTop() + ((ViewGroup.MarginLayoutParams) eVar).topMargin, Math.min(rect.top, ((height - getPaddingBottom()) - i6) - ((ViewGroup.MarginLayoutParams) eVar).bottomMargin));
-        rect.set(max, max2, i + max, i6 + max2);
+        int max2 = Math.max(getPaddingTop() + ((ViewGroup.MarginLayoutParams) eVar).topMargin, Math.min(rect.top, ((height - getPaddingBottom()) - i4) - ((ViewGroup.MarginLayoutParams) eVar).bottomMargin));
+        rect.set(max, max2, i + max, i4 + max2);
     }
 
-    public final void i(View view, Rect rect, boolean z3) {
+    public final void i(View view, Rect rect, boolean z6) {
         if (view.isLayoutRequested() || view.getVisibility() == 8) {
             rect.setEmpty();
-        } else if (z3) {
+        } else if (z6) {
             k(rect, view);
         } else {
             rect.set(view.getLeft(), view.getTop(), view.getRight(), view.getBottom());
@@ -467,19 +468,19 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
     }
 
     public final ArrayList j(View view) {
-        k kVar = (k) this.f4676u.f2789v;
-        int i = kVar.f40440v;
+        k kVar = (k) this.f4644u.f2918v;
+        int i = kVar.f40276v;
         ArrayList arrayList = null;
-        for (int i6 = 0; i6 < i; i6++) {
-            ArrayList arrayList2 = (ArrayList) kVar.l(i6);
+        for (int i4 = 0; i4 < i; i4++) {
+            ArrayList arrayList2 = (ArrayList) kVar.l(i4);
             if (arrayList2 != null && arrayList2.contains(view)) {
                 if (arrayList == null) {
                     arrayList = new ArrayList();
                 }
-                arrayList.add(kVar.h(i6));
+                arrayList.add(kVar.h(i4));
             }
         }
-        ArrayList arrayList3 = this.f4678w;
+        ArrayList arrayList3 = this.f4646w;
         arrayList3.clear();
         if (arrayList != null) {
             arrayList3.addAll(arrayList);
@@ -488,9 +489,9 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
     }
 
     public final void k(Rect rect, View view) {
-        ThreadLocal threadLocal = j.f90a;
+        ThreadLocal threadLocal = h.f246a;
         rect.set(0, 0, view.getWidth(), view.getHeight());
-        ThreadLocal threadLocal2 = j.f90a;
+        ThreadLocal threadLocal2 = h.f246a;
         Matrix matrix = (Matrix) threadLocal2.get();
         if (matrix == null) {
             matrix = new Matrix();
@@ -498,8 +499,8 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
         } else {
             matrix.reset();
         }
-        j.a(this, view, matrix);
-        ThreadLocal threadLocal3 = j.f91b;
+        h.a(this, view, matrix);
+        ThreadLocal threadLocal3 = h.f247b;
         RectF rectF = (RectF) threadLocal3.get();
         if (rectF == null) {
             rectF = new RectF();
@@ -511,7 +512,7 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
     }
 
     public final int m(int i) {
-        int[] iArr = this.f4665B;
+        int[] iArr = this.f4633B;
         if (iArr == null) {
             Log.e("CoordinatorLayout", "No keylines defined for " + this + " - attempted index lookup " + i);
             return 0;
@@ -523,15 +524,15 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
         return 0;
     }
 
-    public final boolean o(int i, int i6, View view) {
-        d dVar = f4663Q;
-        Rect g4 = g();
-        k(g4, view);
+    public final boolean o(int i, int i4, View view) {
+        d dVar = f4631Q;
+        Rect g9 = g();
+        k(g9, view);
         try {
-            return g4.contains(i, i6);
+            return g9.contains(i, i4);
         } finally {
-            g4.setEmpty();
-            dVar.c(g4);
+            g9.setEmpty();
+            dVar.c(g9);
         }
     }
 
@@ -539,46 +540,46 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
     public final void onAttachedToWindow() {
         super.onAttachedToWindow();
         t(false);
-        if (this.f4669F) {
-            if (this.f4668E == null) {
-                this.f4668E = new f(this);
+        if (this.f4637F) {
+            if (this.f4636E == null) {
+                this.f4636E = new f(this);
             }
-            getViewTreeObserver().addOnPreDrawListener(this.f4668E);
+            getViewTreeObserver().addOnPreDrawListener(this.f4636E);
         }
-        if (this.f4670G == null) {
-            WeakHashMap weakHashMap = X.f2054a;
+        if (this.f4638G == null) {
+            WeakHashMap weakHashMap = X.f2142a;
             if (getFitsSystemWindows()) {
                 J.c(this);
             }
         }
-        this.f4664A = true;
+        this.f4632A = true;
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public final void onDetachedFromWindow() {
         super.onDetachedFromWindow();
         t(false);
-        if (this.f4669F && this.f4668E != null) {
-            getViewTreeObserver().removeOnPreDrawListener(this.f4668E);
+        if (this.f4637F && this.f4636E != null) {
+            getViewTreeObserver().removeOnPreDrawListener(this.f4636E);
         }
-        View view = this.f4667D;
+        View view = this.f4635D;
         if (view != null) {
             a(0, view);
         }
-        this.f4664A = false;
+        this.f4632A = false;
     }
 
     @Override // android.view.View
     public final void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        if (!this.f4671H || this.f4672I == null) {
+        if (!this.f4639H || this.f4640I == null) {
             return;
         }
-        A0 a02 = this.f4670G;
-        int d2 = a02 != null ? a02.d() : 0;
-        if (d2 > 0) {
-            this.f4672I.setBounds(0, 0, getWidth(), d2);
-            this.f4672I.draw(canvas);
+        A0 a02 = this.f4638G;
+        int d9 = a02 != null ? a02.d() : 0;
+        if (d9 > 0) {
+            this.f4640I.setBounds(0, 0, getWidth(), d9);
+            this.f4640I.draw(canvas);
         }
     }
 
@@ -597,15 +598,15 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
     }
 
     @Override // android.view.ViewGroup, android.view.View
-    public final void onLayout(boolean z3, int i, int i6, int i9, int i10) {
+    public final void onLayout(boolean z6, int i, int i4, int i6, int i9) {
         b bVar;
-        WeakHashMap weakHashMap = X.f2054a;
+        WeakHashMap weakHashMap = X.f2142a;
         int layoutDirection = getLayoutDirection();
-        ArrayList arrayList = this.f4675n;
+        ArrayList arrayList = this.f4643n;
         int size = arrayList.size();
-        for (int i11 = 0; i11 < size; i11++) {
-            View view = (View) arrayList.get(i11);
-            if (view.getVisibility() != 8 && ((bVar = ((e) view.getLayoutParams()).f71a) == null || !bVar.g(this, view, layoutDirection))) {
+        for (int i10 = 0; i10 < size; i10++) {
+            View view = (View) arrayList.get(i10);
+            if (view.getVisibility() != 8 && ((bVar = ((e) view.getLayoutParams()).f229a) == null || !bVar.g(this, view, layoutDirection))) {
                 q(layoutDirection, view);
             }
         }
@@ -617,208 +618,208 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void onMeasure(int i, int i6) {
-        boolean z3;
+    public final void onMeasure(int i, int i4) {
+        boolean z6;
+        int i6;
         int i9;
         int i10;
         int i11;
         int i12;
         int i13;
-        int i14;
         b bVar;
-        int i15;
+        int i14;
         View view;
         ArrayList arrayList;
+        int i15;
         int i16;
         int i17;
+        boolean z9;
         int i18;
-        boolean z6;
         int i19;
         int i20;
-        int i21;
         int max;
         CoordinatorLayout coordinatorLayout = this;
         coordinatorLayout.s();
         int childCount = coordinatorLayout.getChildCount();
-        int i22 = 0;
+        int i21 = 0;
         loop0: while (true) {
-            if (i22 >= childCount) {
-                z3 = false;
+            if (i21 >= childCount) {
+                z6 = false;
                 break;
             }
-            View childAt = coordinatorLayout.getChildAt(i22);
-            k kVar = (k) coordinatorLayout.f4676u.f2789v;
-            int i23 = kVar.f40440v;
-            for (int i24 = 0; i24 < i23; i24++) {
-                ArrayList arrayList2 = (ArrayList) kVar.l(i24);
+            View childAt = coordinatorLayout.getChildAt(i21);
+            k kVar = (k) coordinatorLayout.f4644u.f2918v;
+            int i22 = kVar.f40276v;
+            for (int i23 = 0; i23 < i22; i23++) {
+                ArrayList arrayList2 = (ArrayList) kVar.l(i23);
                 if (arrayList2 != null && arrayList2.contains(childAt)) {
-                    z3 = true;
+                    z6 = true;
                     break loop0;
                 }
             }
-            i22++;
+            i21++;
         }
-        if (z3 != coordinatorLayout.f4669F) {
-            if (z3) {
-                if (coordinatorLayout.f4664A) {
-                    if (coordinatorLayout.f4668E == null) {
-                        coordinatorLayout.f4668E = new f(coordinatorLayout);
+        if (z6 != coordinatorLayout.f4637F) {
+            if (z6) {
+                if (coordinatorLayout.f4632A) {
+                    if (coordinatorLayout.f4636E == null) {
+                        coordinatorLayout.f4636E = new f(coordinatorLayout);
                     }
-                    coordinatorLayout.getViewTreeObserver().addOnPreDrawListener(coordinatorLayout.f4668E);
+                    coordinatorLayout.getViewTreeObserver().addOnPreDrawListener(coordinatorLayout.f4636E);
                 }
-                coordinatorLayout.f4669F = true;
+                coordinatorLayout.f4637F = true;
             } else {
-                if (coordinatorLayout.f4664A && coordinatorLayout.f4668E != null) {
-                    coordinatorLayout.getViewTreeObserver().removeOnPreDrawListener(coordinatorLayout.f4668E);
+                if (coordinatorLayout.f4632A && coordinatorLayout.f4636E != null) {
+                    coordinatorLayout.getViewTreeObserver().removeOnPreDrawListener(coordinatorLayout.f4636E);
                 }
-                coordinatorLayout.f4669F = false;
+                coordinatorLayout.f4637F = false;
             }
         }
         int paddingLeft = coordinatorLayout.getPaddingLeft();
         int paddingTop = coordinatorLayout.getPaddingTop();
         int paddingRight = coordinatorLayout.getPaddingRight();
         int paddingBottom = coordinatorLayout.getPaddingBottom();
-        WeakHashMap weakHashMap = X.f2054a;
+        WeakHashMap weakHashMap = X.f2142a;
         int layoutDirection = coordinatorLayout.getLayoutDirection();
-        boolean z9 = layoutDirection == 1;
+        boolean z10 = layoutDirection == 1;
         int mode = View.MeasureSpec.getMode(i);
         int size = View.MeasureSpec.getSize(i);
-        int mode2 = View.MeasureSpec.getMode(i6);
-        int size2 = View.MeasureSpec.getSize(i6);
-        int i25 = paddingLeft + paddingRight;
-        int i26 = paddingTop + paddingBottom;
+        int mode2 = View.MeasureSpec.getMode(i4);
+        int size2 = View.MeasureSpec.getSize(i4);
+        int i24 = paddingLeft + paddingRight;
+        int i25 = paddingTop + paddingBottom;
         int suggestedMinimumWidth = coordinatorLayout.getSuggestedMinimumWidth();
         int suggestedMinimumHeight = coordinatorLayout.getSuggestedMinimumHeight();
-        boolean z10 = coordinatorLayout.f4670G != null && coordinatorLayout.getFitsSystemWindows();
-        ArrayList arrayList3 = coordinatorLayout.f4675n;
+        boolean z11 = coordinatorLayout.f4638G != null && coordinatorLayout.getFitsSystemWindows();
+        ArrayList arrayList3 = coordinatorLayout.f4643n;
         int size3 = arrayList3.size();
+        int i26 = 0;
         int i27 = 0;
-        int i28 = 0;
-        while (i27 < size3) {
-            View view2 = (View) arrayList3.get(i27);
-            int i29 = suggestedMinimumWidth;
+        while (i26 < size3) {
+            View view2 = (View) arrayList3.get(i26);
+            int i28 = suggestedMinimumWidth;
             if (view2.getVisibility() == 8) {
                 arrayList = arrayList3;
-                i12 = size3;
-                i19 = paddingLeft;
-                i17 = paddingRight;
-                suggestedMinimumWidth = i29;
-                z6 = false;
-                i21 = i27;
+                i11 = size3;
+                i18 = paddingLeft;
+                i16 = paddingRight;
+                suggestedMinimumWidth = i28;
+                z9 = false;
+                i20 = i26;
             } else {
                 e eVar = (e) view2.getLayoutParams();
-                int i30 = eVar.f75e;
-                if (i30 < 0 || mode == 0) {
-                    i9 = suggestedMinimumHeight;
+                int i29 = eVar.f233e;
+                if (i29 < 0 || mode == 0) {
+                    i6 = suggestedMinimumHeight;
                 } else {
-                    int m4 = coordinatorLayout.m(i30);
-                    int i31 = eVar.f73c;
-                    if (i31 == 0) {
-                        i31 = 8388661;
+                    int m9 = coordinatorLayout.m(i29);
+                    int i30 = eVar.f231c;
+                    if (i30 == 0) {
+                        i30 = 8388661;
                     }
-                    int absoluteGravity = Gravity.getAbsoluteGravity(i31, layoutDirection) & 7;
-                    i9 = suggestedMinimumHeight;
-                    if ((absoluteGravity == 3 && !z9) || (absoluteGravity == 5 && z9)) {
-                        max = Math.max(0, (size - paddingRight) - m4);
-                    } else if ((absoluteGravity == 5 && !z9) || (absoluteGravity == 3 && z9)) {
-                        max = Math.max(0, m4 - paddingLeft);
+                    int absoluteGravity = Gravity.getAbsoluteGravity(i30, layoutDirection) & 7;
+                    i6 = suggestedMinimumHeight;
+                    if ((absoluteGravity == 3 && !z10) || (absoluteGravity == 5 && z10)) {
+                        max = Math.max(0, (size - paddingRight) - m9);
+                    } else if ((absoluteGravity == 5 && !z10) || (absoluteGravity == 3 && z10)) {
+                        max = Math.max(0, m9 - paddingLeft);
                     }
-                    int i32 = size3;
-                    i11 = max;
-                    i10 = i32;
-                    if (z10 || view2.getFitsSystemWindows()) {
-                        i12 = i10;
-                        i13 = i;
-                        i14 = i6;
+                    int i31 = size3;
+                    i10 = max;
+                    i9 = i31;
+                    if (z11 || view2.getFitsSystemWindows()) {
+                        i11 = i9;
+                        i12 = i;
+                        i13 = i4;
                     } else {
-                        i12 = i10;
-                        int c9 = coordinatorLayout.f4670G.c() + coordinatorLayout.f4670G.b();
-                        int a9 = coordinatorLayout.f4670G.a() + coordinatorLayout.f4670G.d();
-                        i13 = View.MeasureSpec.makeMeasureSpec(size - c9, mode);
-                        i14 = View.MeasureSpec.makeMeasureSpec(size2 - a9, mode2);
+                        i11 = i9;
+                        int c9 = coordinatorLayout.f4638G.c() + coordinatorLayout.f4638G.b();
+                        int a9 = coordinatorLayout.f4638G.a() + coordinatorLayout.f4638G.d();
+                        i12 = View.MeasureSpec.makeMeasureSpec(size - c9, mode);
+                        i13 = View.MeasureSpec.makeMeasureSpec(size2 - a9, mode2);
                     }
-                    bVar = eVar.f71a;
+                    bVar = eVar.f229a;
                     if (bVar == null) {
                         ArrayList arrayList4 = arrayList3;
-                        int i33 = i13;
+                        int i32 = i12;
                         arrayList = arrayList4;
-                        z6 = false;
-                        i17 = paddingRight;
-                        i18 = i9;
-                        i19 = paddingLeft;
-                        i20 = i29;
-                        i21 = i27;
-                        int i34 = i14;
-                        boolean h9 = bVar.h(this, view2, i33, i11, i34);
+                        z9 = false;
+                        i16 = paddingRight;
+                        i17 = i6;
+                        i18 = paddingLeft;
+                        i19 = i28;
+                        i20 = i26;
+                        int i33 = i13;
+                        boolean h3 = bVar.h(this, view2, i32, i10, i33);
                         view = view2;
-                        i13 = i33;
-                        i16 = i11;
-                        i15 = i34;
-                        if (h9) {
+                        i12 = i32;
+                        i15 = i10;
+                        i14 = i33;
+                        if (h3) {
                             coordinatorLayout = this;
-                            int max2 = Math.max(i20, view.getMeasuredWidth() + i25 + ((ViewGroup.MarginLayoutParams) eVar).leftMargin + ((ViewGroup.MarginLayoutParams) eVar).rightMargin);
-                            int max3 = Math.max(i18, view.getMeasuredHeight() + i26 + ((ViewGroup.MarginLayoutParams) eVar).topMargin + ((ViewGroup.MarginLayoutParams) eVar).bottomMargin);
-                            i28 = View.combineMeasuredStates(i28, view.getMeasuredState());
+                            int max2 = Math.max(i19, view.getMeasuredWidth() + i24 + ((ViewGroup.MarginLayoutParams) eVar).leftMargin + ((ViewGroup.MarginLayoutParams) eVar).rightMargin);
+                            int max3 = Math.max(i17, view.getMeasuredHeight() + i25 + ((ViewGroup.MarginLayoutParams) eVar).topMargin + ((ViewGroup.MarginLayoutParams) eVar).bottomMargin);
+                            i27 = View.combineMeasuredStates(i27, view.getMeasuredState());
                             suggestedMinimumWidth = max2;
                             suggestedMinimumHeight = max3;
                         }
                     } else {
-                        int i35 = i11;
-                        i15 = i14;
+                        int i34 = i10;
+                        i14 = i13;
                         view = view2;
                         arrayList = arrayList3;
-                        i16 = i35;
-                        i17 = paddingRight;
-                        i18 = i9;
-                        z6 = false;
-                        i19 = paddingLeft;
-                        i20 = i29;
-                        i21 = i27;
+                        i15 = i34;
+                        i16 = paddingRight;
+                        i17 = i6;
+                        z9 = false;
+                        i18 = paddingLeft;
+                        i19 = i28;
+                        i20 = i26;
                     }
                     coordinatorLayout = this;
-                    coordinatorLayout.measureChildWithMargins(view, i13, i16, i15, 0);
-                    int max22 = Math.max(i20, view.getMeasuredWidth() + i25 + ((ViewGroup.MarginLayoutParams) eVar).leftMargin + ((ViewGroup.MarginLayoutParams) eVar).rightMargin);
-                    int max32 = Math.max(i18, view.getMeasuredHeight() + i26 + ((ViewGroup.MarginLayoutParams) eVar).topMargin + ((ViewGroup.MarginLayoutParams) eVar).bottomMargin);
-                    i28 = View.combineMeasuredStates(i28, view.getMeasuredState());
+                    coordinatorLayout.measureChildWithMargins(view, i12, i15, i14, 0);
+                    int max22 = Math.max(i19, view.getMeasuredWidth() + i24 + ((ViewGroup.MarginLayoutParams) eVar).leftMargin + ((ViewGroup.MarginLayoutParams) eVar).rightMargin);
+                    int max32 = Math.max(i17, view.getMeasuredHeight() + i25 + ((ViewGroup.MarginLayoutParams) eVar).topMargin + ((ViewGroup.MarginLayoutParams) eVar).bottomMargin);
+                    i27 = View.combineMeasuredStates(i27, view.getMeasuredState());
                     suggestedMinimumWidth = max22;
                     suggestedMinimumHeight = max32;
                 }
-                i10 = size3;
-                i11 = 0;
-                if (z10) {
+                i9 = size3;
+                i10 = 0;
+                if (z11) {
                 }
-                i12 = i10;
-                i13 = i;
-                i14 = i6;
-                bVar = eVar.f71a;
+                i11 = i9;
+                i12 = i;
+                i13 = i4;
+                bVar = eVar.f229a;
                 if (bVar == null) {
                 }
                 coordinatorLayout = this;
-                coordinatorLayout.measureChildWithMargins(view, i13, i16, i15, 0);
-                int max222 = Math.max(i20, view.getMeasuredWidth() + i25 + ((ViewGroup.MarginLayoutParams) eVar).leftMargin + ((ViewGroup.MarginLayoutParams) eVar).rightMargin);
-                int max322 = Math.max(i18, view.getMeasuredHeight() + i26 + ((ViewGroup.MarginLayoutParams) eVar).topMargin + ((ViewGroup.MarginLayoutParams) eVar).bottomMargin);
-                i28 = View.combineMeasuredStates(i28, view.getMeasuredState());
+                coordinatorLayout.measureChildWithMargins(view, i12, i15, i14, 0);
+                int max222 = Math.max(i19, view.getMeasuredWidth() + i24 + ((ViewGroup.MarginLayoutParams) eVar).leftMargin + ((ViewGroup.MarginLayoutParams) eVar).rightMargin);
+                int max322 = Math.max(i17, view.getMeasuredHeight() + i25 + ((ViewGroup.MarginLayoutParams) eVar).topMargin + ((ViewGroup.MarginLayoutParams) eVar).bottomMargin);
+                i27 = View.combineMeasuredStates(i27, view.getMeasuredState());
                 suggestedMinimumWidth = max222;
                 suggestedMinimumHeight = max322;
             }
-            i27 = i21 + 1;
+            i26 = i20 + 1;
             arrayList3 = arrayList;
-            size3 = i12;
-            paddingLeft = i19;
-            paddingRight = i17;
+            size3 = i11;
+            paddingLeft = i18;
+            paddingRight = i16;
         }
-        coordinatorLayout.setMeasuredDimension(View.resolveSizeAndState(suggestedMinimumWidth, i, (-16777216) & i28), View.resolveSizeAndState(suggestedMinimumHeight, i6, i28 << 16));
+        coordinatorLayout.setMeasuredDimension(View.resolveSizeAndState(suggestedMinimumWidth, i, (-16777216) & i27), View.resolveSizeAndState(suggestedMinimumHeight, i4, i27 << 16));
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
-    public final boolean onNestedFling(View view, float f3, float f9, boolean z3) {
+    public final boolean onNestedFling(View view, float f2, float f9, boolean z6) {
         int childCount = getChildCount();
         for (int i = 0; i < childCount; i++) {
             View childAt = getChildAt(i);
             if (childAt.getVisibility() != 8) {
                 e eVar = (e) childAt.getLayoutParams();
                 if (eVar.a(0)) {
-                    b bVar = eVar.f71a;
+                    b bVar = eVar.f229a;
                 }
             }
         }
@@ -826,30 +827,30 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
-    public final boolean onNestedPreFling(View view, float f3, float f9) {
+    public final boolean onNestedPreFling(View view, float f2, float f9) {
         b bVar;
         int childCount = getChildCount();
-        boolean z3 = false;
+        boolean z6 = false;
         for (int i = 0; i < childCount; i++) {
             View childAt = getChildAt(i);
             if (childAt.getVisibility() != 8) {
                 e eVar = (e) childAt.getLayoutParams();
-                if (eVar.a(0) && (bVar = eVar.f71a) != null) {
-                    z3 |= bVar.i(view);
+                if (eVar.a(0) && (bVar = eVar.f229a) != null) {
+                    z6 |= bVar.i(view);
                 }
             }
         }
-        return z3;
+        return z6;
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
-    public final void onNestedPreScroll(View view, int i, int i6, int[] iArr) {
-        f(view, i, i6, iArr, 0);
+    public final void onNestedPreScroll(View view, int i, int i4, int[] iArr) {
+        f(view, i, i4, iArr, 0);
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
-    public final void onNestedScroll(View view, int i, int i6, int i9, int i10) {
-        c(view, i, i6, i9, i10, 0);
+    public final void onNestedScroll(View view, int i, int i4, int i6, int i9) {
+        c(view, i, i4, i6, i9, 0);
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
@@ -860,18 +861,18 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
     @Override // android.view.View
     public final void onRestoreInstanceState(Parcelable parcelable) {
         Parcelable parcelable2;
-        if (!(parcelable instanceof h)) {
+        if (!(parcelable instanceof g)) {
             super.onRestoreInstanceState(parcelable);
             return;
         }
-        h hVar = (h) parcelable;
-        super.onRestoreInstanceState(hVar.f3267n);
-        SparseArray sparseArray = hVar.f88v;
+        g gVar = (g) parcelable;
+        super.onRestoreInstanceState(gVar.f3390n);
+        SparseArray sparseArray = gVar.f245v;
         int childCount = getChildCount();
         for (int i = 0; i < childCount; i++) {
             View childAt = getChildAt(i);
             int id = childAt.getId();
-            b bVar = n(childAt).f71a;
+            b bVar = n(childAt).f229a;
             if (id != -1 && bVar != null && (parcelable2 = (Parcelable) sparseArray.get(id)) != null) {
                 bVar.m(childAt, parcelable2);
             }
@@ -881,19 +882,19 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
     @Override // android.view.View
     public final Parcelable onSaveInstanceState() {
         Parcelable n9;
-        h hVar = new h(super.onSaveInstanceState());
+        g gVar = new g(super.onSaveInstanceState());
         SparseArray sparseArray = new SparseArray();
         int childCount = getChildCount();
         for (int i = 0; i < childCount; i++) {
             View childAt = getChildAt(i);
             int id = childAt.getId();
-            b bVar = ((e) childAt.getLayoutParams()).f71a;
+            b bVar = ((e) childAt.getLayoutParams()).f229a;
             if (id != -1 && bVar != null && (n9 = bVar.n(childAt)) != null) {
                 sparseArray.append(id, n9);
             }
         }
-        hVar.f88v = sparseArray;
-        return hVar;
+        gVar.f245v = sparseArray;
+        return gVar;
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
@@ -918,22 +919,22 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final boolean onTouchEvent(MotionEvent motionEvent) {
-        boolean z3;
+        boolean z6;
         boolean q8;
         MotionEvent motionEvent2;
         int actionMasked = motionEvent.getActionMasked();
-        if (this.f4666C == null) {
-            z3 = r(motionEvent, 1);
+        if (this.f4634C == null) {
+            z6 = r(motionEvent, 1);
         } else {
-            z3 = false;
+            z6 = false;
         }
-        b bVar = ((e) this.f4666C.getLayoutParams()).f71a;
+        b bVar = ((e) this.f4634C.getLayoutParams()).f229a;
         if (bVar != null) {
-            q8 = bVar.q(this.f4666C, motionEvent);
+            q8 = bVar.q(this.f4634C, motionEvent);
             motionEvent2 = null;
-            if (this.f4666C != null) {
+            if (this.f4634C != null) {
                 q8 |= super.onTouchEvent(motionEvent);
-            } else if (z3) {
+            } else if (z6) {
                 long uptimeMillis = SystemClock.uptimeMillis();
                 motionEvent2 = MotionEvent.obtain(uptimeMillis, uptimeMillis, 3, 0.0f, 0.0f, 0);
                 super.onTouchEvent(motionEvent2);
@@ -949,7 +950,7 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
         }
         q8 = false;
         motionEvent2 = null;
-        if (this.f4666C != null) {
+        if (this.f4634C != null) {
         }
         if (motionEvent2 != null) {
         }
@@ -968,344 +969,344 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
     */
     public final void p(int i) {
         Rect rect;
-        int i6;
+        int i4;
         Rect rect2;
+        int i6;
         int i9;
-        int i10;
-        boolean z3;
         boolean z6;
+        boolean z9;
         int width;
+        int i10;
         int i11;
         int i12;
-        int i13;
         int height;
+        int i13;
         int i14;
         int i15;
         int i16;
-        int i17;
         ArrayList arrayList;
         Rect rect3;
         Rect rect4;
-        int i18;
+        int i17;
         d dVar;
-        int i19;
+        int i18;
         b bVar;
-        WeakHashMap weakHashMap = X.f2054a;
+        WeakHashMap weakHashMap = X.f2142a;
         int layoutDirection = getLayoutDirection();
-        ArrayList arrayList2 = this.f4675n;
+        ArrayList arrayList2 = this.f4643n;
         int size = arrayList2.size();
-        Rect g4 = g();
         Rect g9 = g();
         Rect g10 = g();
-        int i20 = 0;
+        Rect g11 = g();
+        int i19 = 0;
         while (true) {
-            d dVar2 = f4663Q;
-            if (i20 >= size) {
-                Rect rect5 = g9;
-                Rect rect6 = g10;
-                g4.setEmpty();
-                dVar2.c(g4);
+            d dVar2 = f4631Q;
+            if (i19 >= size) {
+                Rect rect5 = g10;
+                Rect rect6 = g11;
+                g9.setEmpty();
+                dVar2.c(g9);
                 rect5.setEmpty();
                 dVar2.c(rect5);
                 rect6.setEmpty();
                 dVar2.c(rect6);
                 return;
             }
-            View view = (View) arrayList2.get(i20);
+            View view = (View) arrayList2.get(i19);
             e eVar = (e) view.getLayoutParams();
             if (i == 0 && view.getVisibility() == 8) {
-                rect = g9;
-                rect2 = g10;
-                i6 = i20;
-                i10 = size;
+                rect = g10;
+                rect2 = g11;
+                i4 = i19;
+                i9 = size;
             } else {
-                int i21 = 0;
-                while (i21 < i20) {
-                    if (eVar.f81l == ((View) arrayList2.get(i21))) {
+                int i20 = 0;
+                while (i20 < i19) {
+                    if (eVar.f239l == ((View) arrayList2.get(i20))) {
                         e eVar2 = (e) view.getLayoutParams();
-                        if (eVar2.f80k != null) {
-                            rect3 = g9;
-                            Rect g11 = g();
+                        if (eVar2.f238k != null) {
+                            rect3 = g10;
                             Rect g12 = g();
-                            Rect rect7 = g10;
                             Rect g13 = g();
-                            i17 = i21;
-                            k(g11, eVar2.f80k);
-                            i(view, g12, false);
-                            i18 = i20;
+                            Rect rect7 = g11;
+                            Rect g14 = g();
+                            i16 = i20;
+                            k(g12, eVar2.f238k);
+                            i(view, g13, false);
+                            i17 = i19;
                             int measuredWidth = view.getMeasuredWidth();
                             d dVar3 = dVar2;
                             int measuredHeight = view.getMeasuredHeight();
                             dVar = dVar3;
                             arrayList = arrayList2;
-                            l(layoutDirection, g11, g13, eVar2, measuredWidth, measuredHeight);
-                            i19 = size;
+                            l(layoutDirection, g12, g14, eVar2, measuredWidth, measuredHeight);
+                            i18 = size;
                             rect4 = rect7;
-                            boolean z9 = (g13.left == g12.left && g13.top == g12.top) ? false : true;
-                            h(eVar2, g13, measuredWidth, measuredHeight);
-                            int i22 = g13.left - g12.left;
-                            int i23 = g13.top - g12.top;
+                            boolean z10 = (g14.left == g13.left && g14.top == g13.top) ? false : true;
+                            h(eVar2, g14, measuredWidth, measuredHeight);
+                            int i21 = g14.left - g13.left;
+                            int i22 = g14.top - g13.top;
+                            if (i21 != 0) {
+                                WeakHashMap weakHashMap2 = X.f2142a;
+                                view.offsetLeftAndRight(i21);
+                            }
                             if (i22 != 0) {
-                                WeakHashMap weakHashMap2 = X.f2054a;
-                                view.offsetLeftAndRight(i22);
+                                WeakHashMap weakHashMap3 = X.f2142a;
+                                view.offsetTopAndBottom(i22);
                             }
-                            if (i23 != 0) {
-                                WeakHashMap weakHashMap3 = X.f2054a;
-                                view.offsetTopAndBottom(i23);
+                            if (z10 && (bVar = eVar2.f229a) != null) {
+                                bVar.d(this, view, eVar2.f238k);
                             }
-                            if (z9 && (bVar = eVar2.f71a) != null) {
-                                bVar.d(this, view, eVar2.f80k);
-                            }
-                            g11.setEmpty();
-                            dVar.c(g11);
                             g12.setEmpty();
                             dVar.c(g12);
                             g13.setEmpty();
                             dVar.c(g13);
+                            g14.setEmpty();
+                            dVar.c(g14);
                             dVar2 = dVar;
-                            i21 = i17 + 1;
-                            g9 = rect3;
-                            i20 = i18;
+                            i20 = i16 + 1;
+                            g10 = rect3;
+                            i19 = i17;
                             arrayList2 = arrayList;
-                            size = i19;
-                            g10 = rect4;
+                            size = i18;
+                            g11 = rect4;
                         }
                     }
-                    i17 = i21;
+                    i16 = i20;
                     arrayList = arrayList2;
-                    rect3 = g9;
-                    rect4 = g10;
-                    i18 = i20;
+                    rect3 = g10;
+                    rect4 = g11;
+                    i17 = i19;
                     dVar = dVar2;
-                    i19 = size;
+                    i18 = size;
                     dVar2 = dVar;
-                    i21 = i17 + 1;
-                    g9 = rect3;
-                    i20 = i18;
+                    i20 = i16 + 1;
+                    g10 = rect3;
+                    i19 = i17;
                     arrayList2 = arrayList;
-                    size = i19;
-                    g10 = rect4;
+                    size = i18;
+                    g11 = rect4;
                 }
                 ArrayList arrayList3 = arrayList2;
-                rect = g9;
-                Rect rect8 = g10;
-                i6 = i20;
+                rect = g10;
+                Rect rect8 = g11;
+                i4 = i19;
                 N.c cVar = dVar2;
-                int i24 = size;
+                int i23 = size;
                 i(view, rect, true);
-                if (eVar.f77g != 0 && !rect.isEmpty()) {
-                    int absoluteGravity = Gravity.getAbsoluteGravity(eVar.f77g, layoutDirection);
-                    int i25 = absoluteGravity & 112;
-                    if (i25 == 48) {
-                        g4.top = Math.max(g4.top, rect.bottom);
-                    } else if (i25 == 80) {
-                        g4.bottom = Math.max(g4.bottom, getHeight() - rect.top);
+                if (eVar.f235g != 0 && !rect.isEmpty()) {
+                    int absoluteGravity = Gravity.getAbsoluteGravity(eVar.f235g, layoutDirection);
+                    int i24 = absoluteGravity & 112;
+                    if (i24 == 48) {
+                        g9.top = Math.max(g9.top, rect.bottom);
+                    } else if (i24 == 80) {
+                        g9.bottom = Math.max(g9.bottom, getHeight() - rect.top);
                     }
-                    int i26 = absoluteGravity & 7;
-                    if (i26 == 3) {
-                        g4.left = Math.max(g4.left, rect.right);
-                    } else if (i26 == 5) {
-                        g4.right = Math.max(g4.right, getWidth() - rect.left);
+                    int i25 = absoluteGravity & 7;
+                    if (i25 == 3) {
+                        g9.left = Math.max(g9.left, rect.right);
+                    } else if (i25 == 5) {
+                        g9.right = Math.max(g9.right, getWidth() - rect.left);
                     }
                 }
-                if (eVar.f78h != 0 && view.getVisibility() == 0) {
-                    WeakHashMap weakHashMap4 = X.f2054a;
+                if (eVar.f236h != 0 && view.getVisibility() == 0) {
+                    WeakHashMap weakHashMap4 = X.f2142a;
                     if (view.isLaidOut() && view.getWidth() > 0 && view.getHeight() > 0) {
                         e eVar3 = (e) view.getLayoutParams();
-                        b bVar2 = eVar3.f71a;
-                        Rect g14 = g();
+                        b bVar2 = eVar3.f229a;
                         Rect g15 = g();
-                        g15.set(view.getLeft(), view.getTop(), view.getRight(), view.getBottom());
+                        Rect g16 = g();
+                        g16.set(view.getLeft(), view.getTop(), view.getRight(), view.getBottom());
                         if (bVar2 == null || !bVar2.a(view)) {
-                            g14.set(g15);
-                        } else if (!g15.contains(g14)) {
-                            throw new IllegalArgumentException("Rect should be within the child's bounds. Rect:" + g14.toShortString() + " | Bounds:" + g15.toShortString());
+                            g15.set(g16);
+                        } else if (!g16.contains(g15)) {
+                            throw new IllegalArgumentException("Rect should be within the child's bounds. Rect:" + g15.toShortString() + " | Bounds:" + g16.toShortString());
                         }
-                        g15.setEmpty();
-                        cVar.c(g15);
-                        if (!g14.isEmpty()) {
-                            int absoluteGravity2 = Gravity.getAbsoluteGravity(eVar3.f78h, layoutDirection);
-                            if ((absoluteGravity2 & 48) != 48 || (i15 = (g14.top - ((ViewGroup.MarginLayoutParams) eVar3).topMargin) - eVar3.f79j) >= (i16 = g4.top)) {
-                                z3 = false;
-                            } else {
-                                v(i16 - i15, view);
-                                z3 = true;
-                            }
-                            if ((absoluteGravity2 & 80) == 80 && (height = ((getHeight() - g14.bottom) - ((ViewGroup.MarginLayoutParams) eVar3).bottomMargin) + eVar3.f79j) < (i14 = g4.bottom)) {
-                                v(height - i14, view);
-                                z3 = true;
-                            }
-                            if (!z3) {
-                                v(0, view);
-                            }
-                            if ((absoluteGravity2 & 3) != 3 || (i12 = (g14.left - ((ViewGroup.MarginLayoutParams) eVar3).leftMargin) - eVar3.i) >= (i13 = g4.left)) {
+                        g16.setEmpty();
+                        cVar.c(g16);
+                        if (!g15.isEmpty()) {
+                            int absoluteGravity2 = Gravity.getAbsoluteGravity(eVar3.f236h, layoutDirection);
+                            if ((absoluteGravity2 & 48) != 48 || (i14 = (g15.top - ((ViewGroup.MarginLayoutParams) eVar3).topMargin) - eVar3.f237j) >= (i15 = g9.top)) {
                                 z6 = false;
                             } else {
-                                u(i13 - i12, view);
+                                v(i15 - i14, view);
                                 z6 = true;
                             }
-                            if ((absoluteGravity2 & 5) == 5 && (width = ((getWidth() - g14.right) - ((ViewGroup.MarginLayoutParams) eVar3).rightMargin) + eVar3.i) < (i11 = g4.right)) {
-                                u(width - i11, view);
+                            if ((absoluteGravity2 & 80) == 80 && (height = ((getHeight() - g15.bottom) - ((ViewGroup.MarginLayoutParams) eVar3).bottomMargin) + eVar3.f237j) < (i13 = g9.bottom)) {
+                                v(height - i13, view);
                                 z6 = true;
                             }
                             if (!z6) {
+                                v(0, view);
+                            }
+                            if ((absoluteGravity2 & 3) != 3 || (i11 = (g15.left - ((ViewGroup.MarginLayoutParams) eVar3).leftMargin) - eVar3.i) >= (i12 = g9.left)) {
+                                z9 = false;
+                            } else {
+                                u(i12 - i11, view);
+                                z9 = true;
+                            }
+                            if ((absoluteGravity2 & 5) == 5 && (width = ((getWidth() - g15.right) - ((ViewGroup.MarginLayoutParams) eVar3).rightMargin) + eVar3.i) < (i10 = g9.right)) {
+                                u(width - i10, view);
+                                z9 = true;
+                            }
+                            if (!z9) {
                                 u(0, view);
                             }
-                            g14.setEmpty();
-                            cVar.c(g14);
+                            g15.setEmpty();
+                            cVar.c(g15);
                             if (i == 2) {
                                 rect2 = rect8;
-                                rect2.set(((e) view.getLayoutParams()).f84o);
+                                rect2.set(((e) view.getLayoutParams()).f242o);
                                 if (rect2.equals(rect)) {
                                     arrayList2 = arrayList3;
-                                    i10 = i24;
+                                    i9 = i23;
                                 } else {
-                                    ((e) view.getLayoutParams()).f84o.set(rect);
+                                    ((e) view.getLayoutParams()).f242o.set(rect);
                                 }
                             } else {
                                 rect2 = rect8;
                             }
-                            i9 = i6 + 1;
-                            i10 = i24;
+                            i6 = i4 + 1;
+                            i9 = i23;
                             while (true) {
                                 arrayList2 = arrayList3;
-                                if (i9 < i10) {
+                                if (i6 < i9) {
                                     break;
                                 }
-                                View view2 = (View) arrayList2.get(i9);
-                                b bVar3 = ((e) view2.getLayoutParams()).f71a;
+                                View view2 = (View) arrayList2.get(i6);
+                                b bVar3 = ((e) view2.getLayoutParams()).f229a;
                                 if (bVar3 != null) {
                                     bVar3.b(view2);
                                 }
-                                i9++;
+                                i6++;
                                 arrayList3 = arrayList2;
                             }
                         } else {
-                            g14.setEmpty();
-                            cVar.c(g14);
+                            g15.setEmpty();
+                            cVar.c(g15);
                         }
                     }
                 }
                 if (i == 2) {
                 }
-                i9 = i6 + 1;
-                i10 = i24;
+                i6 = i4 + 1;
+                i9 = i23;
                 while (true) {
                     arrayList2 = arrayList3;
-                    if (i9 < i10) {
+                    if (i6 < i9) {
                     }
-                    i9++;
+                    i6++;
                     arrayList3 = arrayList2;
                 }
             }
-            i20 = i6 + 1;
-            size = i10;
-            g10 = rect2;
-            g9 = rect;
+            i19 = i4 + 1;
+            size = i9;
+            g11 = rect2;
+            g10 = rect;
         }
     }
 
     public final void q(int i, View view) {
-        Rect g4;
         Rect g9;
+        Rect g10;
         e eVar = (e) view.getLayoutParams();
-        View view2 = eVar.f80k;
-        if (view2 == null && eVar.f76f != -1) {
+        View view2 = eVar.f238k;
+        if (view2 == null && eVar.f234f != -1) {
             throw new IllegalStateException("An anchor may not be changed after CoordinatorLayout measurement begins before layout is complete.");
         }
-        d dVar = f4663Q;
+        d dVar = f4631Q;
         if (view2 != null) {
-            g4 = g();
             g9 = g();
+            g10 = g();
             try {
-                k(g4, view2);
+                k(g9, view2);
                 e eVar2 = (e) view.getLayoutParams();
                 int measuredWidth = view.getMeasuredWidth();
                 int measuredHeight = view.getMeasuredHeight();
-                l(i, g4, g9, eVar2, measuredWidth, measuredHeight);
-                h(eVar2, g9, measuredWidth, measuredHeight);
-                view.layout(g9.left, g9.top, g9.right, g9.bottom);
+                l(i, g9, g10, eVar2, measuredWidth, measuredHeight);
+                h(eVar2, g10, measuredWidth, measuredHeight);
+                view.layout(g10.left, g10.top, g10.right, g10.bottom);
                 return;
             } finally {
-                g4.setEmpty();
-                dVar.c(g4);
                 g9.setEmpty();
                 dVar.c(g9);
+                g10.setEmpty();
+                dVar.c(g10);
             }
         }
-        int i6 = eVar.f75e;
-        if (i6 < 0) {
+        int i4 = eVar.f233e;
+        if (i4 < 0) {
             e eVar3 = (e) view.getLayoutParams();
-            g4 = g();
-            g4.set(getPaddingLeft() + ((ViewGroup.MarginLayoutParams) eVar3).leftMargin, getPaddingTop() + ((ViewGroup.MarginLayoutParams) eVar3).topMargin, (getWidth() - getPaddingRight()) - ((ViewGroup.MarginLayoutParams) eVar3).rightMargin, (getHeight() - getPaddingBottom()) - ((ViewGroup.MarginLayoutParams) eVar3).bottomMargin);
-            if (this.f4670G != null) {
-                WeakHashMap weakHashMap = X.f2054a;
+            g9 = g();
+            g9.set(getPaddingLeft() + ((ViewGroup.MarginLayoutParams) eVar3).leftMargin, getPaddingTop() + ((ViewGroup.MarginLayoutParams) eVar3).topMargin, (getWidth() - getPaddingRight()) - ((ViewGroup.MarginLayoutParams) eVar3).rightMargin, (getHeight() - getPaddingBottom()) - ((ViewGroup.MarginLayoutParams) eVar3).bottomMargin);
+            if (this.f4638G != null) {
+                WeakHashMap weakHashMap = X.f2142a;
                 if (getFitsSystemWindows() && !view.getFitsSystemWindows()) {
-                    g4.left = this.f4670G.b() + g4.left;
-                    g4.top = this.f4670G.d() + g4.top;
-                    g4.right -= this.f4670G.c();
-                    g4.bottom -= this.f4670G.a();
+                    g9.left = this.f4638G.b() + g9.left;
+                    g9.top = this.f4638G.d() + g9.top;
+                    g9.right -= this.f4638G.c();
+                    g9.bottom -= this.f4638G.a();
                 }
             }
-            g9 = g();
-            int i9 = eVar3.f73c;
-            if ((i9 & 7) == 0) {
-                i9 |= 8388611;
+            g10 = g();
+            int i6 = eVar3.f231c;
+            if ((i6 & 7) == 0) {
+                i6 |= 8388611;
             }
-            if ((i9 & 112) == 0) {
-                i9 |= 48;
+            if ((i6 & 112) == 0) {
+                i6 |= 48;
             }
-            Gravity.apply(i9, view.getMeasuredWidth(), view.getMeasuredHeight(), g4, g9, i);
-            view.layout(g9.left, g9.top, g9.right, g9.bottom);
+            Gravity.apply(i6, view.getMeasuredWidth(), view.getMeasuredHeight(), g9, g10, i);
+            view.layout(g10.left, g10.top, g10.right, g10.bottom);
             return;
         }
         e eVar4 = (e) view.getLayoutParams();
-        int i10 = eVar4.f73c;
-        if (i10 == 0) {
-            i10 = 8388661;
+        int i9 = eVar4.f231c;
+        if (i9 == 0) {
+            i9 = 8388661;
         }
-        int absoluteGravity = Gravity.getAbsoluteGravity(i10, i);
-        int i11 = absoluteGravity & 7;
-        int i12 = absoluteGravity & 112;
+        int absoluteGravity = Gravity.getAbsoluteGravity(i9, i);
+        int i10 = absoluteGravity & 7;
+        int i11 = absoluteGravity & 112;
         int width = getWidth();
         int height = getHeight();
         int measuredWidth2 = view.getMeasuredWidth();
         int measuredHeight2 = view.getMeasuredHeight();
         if (i == 1) {
-            i6 = width - i6;
+            i4 = width - i4;
         }
-        int m4 = m(i6) - measuredWidth2;
-        if (i11 == 1) {
-            m4 += measuredWidth2 / 2;
-        } else if (i11 == 5) {
-            m4 += measuredWidth2;
+        int m9 = m(i4) - measuredWidth2;
+        if (i10 == 1) {
+            m9 += measuredWidth2 / 2;
+        } else if (i10 == 5) {
+            m9 += measuredWidth2;
         }
-        int i13 = i12 != 16 ? i12 != 80 ? 0 : measuredHeight2 : measuredHeight2 / 2;
-        int max = Math.max(getPaddingLeft() + ((ViewGroup.MarginLayoutParams) eVar4).leftMargin, Math.min(m4, ((width - getPaddingRight()) - measuredWidth2) - ((ViewGroup.MarginLayoutParams) eVar4).rightMargin));
-        int max2 = Math.max(getPaddingTop() + ((ViewGroup.MarginLayoutParams) eVar4).topMargin, Math.min(i13, ((height - getPaddingBottom()) - measuredHeight2) - ((ViewGroup.MarginLayoutParams) eVar4).bottomMargin));
+        int i12 = i11 != 16 ? i11 != 80 ? 0 : measuredHeight2 : measuredHeight2 / 2;
+        int max = Math.max(getPaddingLeft() + ((ViewGroup.MarginLayoutParams) eVar4).leftMargin, Math.min(m9, ((width - getPaddingRight()) - measuredWidth2) - ((ViewGroup.MarginLayoutParams) eVar4).rightMargin));
+        int max2 = Math.max(getPaddingTop() + ((ViewGroup.MarginLayoutParams) eVar4).topMargin, Math.min(i12, ((height - getPaddingBottom()) - measuredHeight2) - ((ViewGroup.MarginLayoutParams) eVar4).bottomMargin));
         view.layout(max, max2, measuredWidth2 + max, measuredHeight2 + max2);
     }
 
     public final boolean r(MotionEvent motionEvent, int i) {
         int actionMasked = motionEvent.getActionMasked();
-        ArrayList arrayList = this.f4677v;
+        ArrayList arrayList = this.f4645v;
         arrayList.clear();
         boolean isChildrenDrawingOrderEnabled = isChildrenDrawingOrderEnabled();
         int childCount = getChildCount();
-        for (int i6 = childCount - 1; i6 >= 0; i6--) {
-            arrayList.add(getChildAt(isChildrenDrawingOrderEnabled ? getChildDrawingOrder(childCount, i6) : i6));
+        for (int i4 = childCount - 1; i4 >= 0; i4--) {
+            arrayList.add(getChildAt(isChildrenDrawingOrderEnabled ? getChildDrawingOrder(childCount, i4) : i4));
         }
-        i iVar = f4662P;
-        if (iVar != null) {
-            Collections.sort(arrayList, iVar);
+        o oVar = f4630P;
+        if (oVar != null) {
+            Collections.sort(arrayList, oVar);
         }
         int size = arrayList.size();
         MotionEvent motionEvent2 = null;
-        boolean z3 = false;
-        for (int i9 = 0; i9 < size; i9++) {
-            View view = (View) arrayList.get(i9);
-            b bVar = ((e) view.getLayoutParams()).f71a;
-            if (z3 && actionMasked != 0) {
+        boolean z6 = false;
+        for (int i6 = 0; i6 < size; i6++) {
+            View view = (View) arrayList.get(i6);
+            b bVar = ((e) view.getLayoutParams()).f229a;
+            if (z6 && actionMasked != 0) {
                 if (bVar != null) {
                     if (motionEvent2 == null) {
                         long uptimeMillis = SystemClock.uptimeMillis();
@@ -1317,38 +1318,38 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
                         bVar.q(view, motionEvent2);
                     }
                 }
-            } else if (!z3 && bVar != null) {
+            } else if (!z6 && bVar != null) {
                 if (i == 0) {
-                    z3 = bVar.f(this, view, motionEvent);
+                    z6 = bVar.f(this, view, motionEvent);
                 } else if (i == 1) {
-                    z3 = bVar.q(view, motionEvent);
+                    z6 = bVar.q(view, motionEvent);
                 }
-                if (z3) {
-                    this.f4666C = view;
+                if (z6) {
+                    this.f4634C = view;
                 }
             }
         }
         arrayList.clear();
-        return z3;
+        return z6;
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
-    public final boolean requestChildRectangleOnScreen(View view, Rect rect, boolean z3) {
-        b bVar = ((e) view.getLayoutParams()).f71a;
+    public final boolean requestChildRectangleOnScreen(View view, Rect rect, boolean z6) {
+        b bVar = ((e) view.getLayoutParams()).f229a;
         if (bVar != null) {
             bVar.l(this, view);
         }
-        return super.requestChildRectangleOnScreen(view, rect, z3);
+        return super.requestChildRectangleOnScreen(view, rect, z6);
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
-    public final void requestDisallowInterceptTouchEvent(boolean z3) {
-        super.requestDisallowInterceptTouchEvent(z3);
-        if (!z3 || this.f4681z) {
+    public final void requestDisallowInterceptTouchEvent(boolean z6) {
+        super.requestDisallowInterceptTouchEvent(z6);
+        if (!z6 || this.f4649z) {
             return;
         }
         t(false);
-        this.f4681z = true;
+        this.f4649z = true;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:54:0x0144, code lost:
@@ -1360,72 +1361,72 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
     */
     public final void s() {
         N.c cVar;
-        ArrayList arrayList = this.f4675n;
+        ArrayList arrayList = this.f4643n;
         arrayList.clear();
-        S0.i iVar = this.f4676u;
-        k kVar = (k) iVar.f2789v;
-        int i = kVar.f40440v;
-        int i6 = 0;
+        i iVar = this.f4644u;
+        k kVar = (k) iVar.f2918v;
+        int i = kVar.f40276v;
+        int i4 = 0;
         while (true) {
-            cVar = (N.c) iVar.f2788u;
-            if (i6 >= i) {
+            cVar = (N.c) iVar.f2917u;
+            if (i4 >= i) {
                 break;
             }
-            ArrayList arrayList2 = (ArrayList) kVar.l(i6);
+            ArrayList arrayList2 = (ArrayList) kVar.l(i4);
             if (arrayList2 != null) {
                 arrayList2.clear();
                 cVar.c(arrayList2);
             }
-            i6++;
+            i4++;
         }
         kVar.clear();
         int childCount = getChildCount();
-        int i9 = 0;
+        int i6 = 0;
         loop1: while (true) {
-            k kVar2 = (k) iVar.f2789v;
-            if (i9 >= childCount) {
-                ArrayList arrayList3 = (ArrayList) iVar.f2790w;
+            k kVar2 = (k) iVar.f2918v;
+            if (i6 >= childCount) {
+                ArrayList arrayList3 = (ArrayList) iVar.f2919w;
                 arrayList3.clear();
-                HashSet hashSet = (HashSet) iVar.f2791x;
+                HashSet hashSet = (HashSet) iVar.f2920x;
                 hashSet.clear();
-                int i10 = kVar2.f40440v;
-                for (int i11 = 0; i11 < i10; i11++) {
-                    iVar.a(kVar2.h(i11), arrayList3, hashSet);
+                int i9 = kVar2.f40276v;
+                for (int i10 = 0; i10 < i9; i10++) {
+                    iVar.a(kVar2.h(i10), arrayList3, hashSet);
                 }
                 arrayList.addAll(arrayList3);
                 Collections.reverse(arrayList);
                 return;
             }
-            View childAt = getChildAt(i9);
+            View childAt = getChildAt(i6);
             e n9 = n(childAt);
-            int i12 = n9.f76f;
-            if (i12 == -1) {
-                n9.f81l = null;
-                n9.f80k = null;
+            int i11 = n9.f234f;
+            if (i11 == -1) {
+                n9.f239l = null;
+                n9.f238k = null;
             } else {
-                View view = n9.f80k;
-                if (view != null && view.getId() == i12) {
-                    View view2 = n9.f80k;
+                View view = n9.f238k;
+                if (view != null && view.getId() == i11) {
+                    View view2 = n9.f238k;
                     for (ViewParent parent = view2.getParent(); parent != this; parent = parent.getParent()) {
                         if (parent == null || parent == childAt) {
-                            n9.f81l = null;
-                            n9.f80k = null;
+                            n9.f239l = null;
+                            n9.f238k = null;
                         } else {
                             if (parent instanceof View) {
                                 view2 = parent;
                             }
                         }
                     }
-                    n9.f81l = view2;
+                    n9.f239l = view2;
                 }
-                View findViewById = findViewById(i12);
-                n9.f80k = findViewById;
+                View findViewById = findViewById(i11);
+                n9.f238k = findViewById;
                 if (findViewById == null) {
                     if (!isInEditMode()) {
-                        throw new IllegalStateException("Could not find CoordinatorLayout descendant view with id " + getResources().getResourceName(i12) + " to anchor view " + childAt);
+                        throw new IllegalStateException("Could not find CoordinatorLayout descendant view with id " + getResources().getResourceName(i11) + " to anchor view " + childAt);
                     }
-                    n9.f81l = null;
-                    n9.f80k = null;
+                    n9.f239l = null;
+                    n9.f238k = null;
                 } else if (findViewById != this) {
                     for (ViewParent parent2 = findViewById.getParent(); parent2 != this && parent2 != null; parent2 = parent2.getParent()) {
                         if (parent2 != childAt) {
@@ -1436,31 +1437,31 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
                             if (!isInEditMode()) {
                                 throw new IllegalStateException("Anchor must not be a descendant of the anchored view");
                             }
-                            n9.f81l = null;
-                            n9.f80k = null;
+                            n9.f239l = null;
+                            n9.f238k = null;
                         }
                     }
-                    n9.f81l = findViewById;
+                    n9.f239l = findViewById;
                 } else {
                     if (!isInEditMode()) {
                         throw new IllegalStateException("View can not be anchored to the the parent CoordinatorLayout");
                     }
-                    n9.f81l = null;
-                    n9.f80k = null;
+                    n9.f239l = null;
+                    n9.f238k = null;
                 }
             }
             if (!kVar2.containsKey(childAt)) {
                 kVar2.put(childAt, null);
             }
-            for (int i13 = 0; i13 < childCount; i13++) {
-                if (i13 != i9) {
-                    View childAt2 = getChildAt(i13);
-                    if (childAt2 != n9.f81l) {
-                        WeakHashMap weakHashMap = X.f2054a;
+            for (int i12 = 0; i12 < childCount; i12++) {
+                if (i12 != i6) {
+                    View childAt2 = getChildAt(i12);
+                    if (childAt2 != n9.f239l) {
+                        WeakHashMap weakHashMap = X.f2142a;
                         int layoutDirection = getLayoutDirection();
-                        int absoluteGravity = Gravity.getAbsoluteGravity(((e) childAt2.getLayoutParams()).f77g, layoutDirection);
-                        if (absoluteGravity == 0 || (Gravity.getAbsoluteGravity(n9.f78h, layoutDirection) & absoluteGravity) != absoluteGravity) {
-                            b bVar = n9.f71a;
+                        int absoluteGravity = Gravity.getAbsoluteGravity(((e) childAt2.getLayoutParams()).f235g, layoutDirection);
+                        if (absoluteGravity == 0 || (Gravity.getAbsoluteGravity(n9.f236h, layoutDirection) & absoluteGravity) != absoluteGravity) {
+                            b bVar = n9.f229a;
                             if (bVar != null) {
                                 bVar.b(childAt);
                             }
@@ -1483,13 +1484,13 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
                     arrayList4.add(childAt);
                 }
             }
-            i9++;
+            i6++;
         }
     }
 
     @Override // android.view.View
-    public void setFitsSystemWindows(boolean z3) {
-        super.setFitsSystemWindows(z3);
+    public void setFitsSystemWindows(boolean z6) {
+        super.setFitsSystemWindows(z6);
         w();
     }
 
@@ -1499,24 +1500,24 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
     }
 
     public void setStatusBarBackground(Drawable drawable) {
-        Drawable drawable2 = this.f4672I;
+        Drawable drawable2 = this.f4640I;
         if (drawable2 != drawable) {
             if (drawable2 != null) {
                 drawable2.setCallback(null);
             }
             Drawable mutate = drawable != null ? drawable.mutate() : null;
-            this.f4672I = mutate;
+            this.f4640I = mutate;
             if (mutate != null) {
                 if (mutate.isStateful()) {
-                    this.f4672I.setState(getDrawableState());
+                    this.f4640I.setState(getDrawableState());
                 }
-                Drawable drawable3 = this.f4672I;
-                WeakHashMap weakHashMap = X.f2054a;
+                Drawable drawable3 = this.f4640I;
+                WeakHashMap weakHashMap = X.f2142a;
                 H.b.b(drawable3, getLayoutDirection());
-                this.f4672I.setVisible(getVisibility() == 0, false);
-                this.f4672I.setCallback(this);
+                this.f4640I.setVisible(getVisibility() == 0, false);
+                this.f4640I.setCallback(this);
             }
-            WeakHashMap weakHashMap2 = X.f2054a;
+            WeakHashMap weakHashMap2 = X.f2142a;
             postInvalidateOnAnimation();
         }
     }
@@ -1532,23 +1533,23 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
     @Override // android.view.View
     public void setVisibility(int i) {
         super.setVisibility(i);
-        boolean z3 = i == 0;
-        Drawable drawable = this.f4672I;
-        if (drawable == null || drawable.isVisible() == z3) {
+        boolean z6 = i == 0;
+        Drawable drawable = this.f4640I;
+        if (drawable == null || drawable.isVisible() == z6) {
             return;
         }
-        this.f4672I.setVisible(z3, false);
+        this.f4640I.setVisible(z6, false);
     }
 
-    public final void t(boolean z3) {
+    public final void t(boolean z6) {
         int childCount = getChildCount();
         for (int i = 0; i < childCount; i++) {
             View childAt = getChildAt(i);
-            b bVar = ((e) childAt.getLayoutParams()).f71a;
+            b bVar = ((e) childAt.getLayoutParams()).f229a;
             if (bVar != null) {
                 long uptimeMillis = SystemClock.uptimeMillis();
                 MotionEvent obtain = MotionEvent.obtain(uptimeMillis, uptimeMillis, 3, 0.0f, 0.0f, 0);
-                if (z3) {
+                if (z6) {
                     bVar.f(this, childAt, obtain);
                 } else {
                     bVar.q(childAt, obtain);
@@ -1556,28 +1557,28 @@ public class CoordinatorLayout extends ViewGroup implements r, InterfaceC0343s {
                 obtain.recycle();
             }
         }
-        for (int i6 = 0; i6 < childCount; i6++) {
-            ((e) getChildAt(i6).getLayoutParams()).getClass();
+        for (int i4 = 0; i4 < childCount; i4++) {
+            ((e) getChildAt(i4).getLayoutParams()).getClass();
         }
-        this.f4666C = null;
-        this.f4681z = false;
+        this.f4634C = null;
+        this.f4649z = false;
     }
 
     @Override // android.view.View
     public final boolean verifyDrawable(Drawable drawable) {
-        return super.verifyDrawable(drawable) || drawable == this.f4672I;
+        return super.verifyDrawable(drawable) || drawable == this.f4640I;
     }
 
     public final void w() {
-        WeakHashMap weakHashMap = X.f2054a;
+        WeakHashMap weakHashMap = X.f2142a;
         if (!getFitsSystemWindows()) {
             L.u(this, null);
             return;
         }
-        if (this.f4673K == null) {
-            this.f4673K = new C4523c(1, this);
+        if (this.f4641K == null) {
+            this.f4641K = new j(2, this);
         }
-        L.u(this, this.f4673K);
+        L.u(this, this.f4641K);
         setSystemUiVisibility(1280);
     }
 

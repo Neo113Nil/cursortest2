@@ -14,56 +14,56 @@ import android.view.ViewTreeObserver;
 import android.view.Window;
 import android.widget.CompoundButton;
 import android.widget.TextView;
-import com.google.android.gms.internal.ads.C2866Yb;
-import com.google.android.gms.internal.ads.ViewTreeObserverOnGlobalLayoutListenerC2572Gh;
-import com.google.android.gms.internal.ads.ViewTreeObserverOnGlobalLayoutListenerC3629ng;
-import g.AbstractC4518a;
+import com.google.android.gms.internal.ads.C2889Yb;
+import com.google.android.gms.internal.ads.ViewTreeObserverOnGlobalLayoutListenerC2592Gh;
+import com.google.android.gms.internal.ads.ViewTreeObserverOnGlobalLayoutListenerC3652ng;
+import g.AbstractC4528a;
 import java.lang.ref.WeakReference;
-import m.AbstractC4694j0;
-import p2.C4835j;
+import m.AbstractC4707j0;
+import r2.C4906k;
 
 /* loaded from: classes2.dex */
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f37555a;
+    public final /* synthetic */ int f37517a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f37556b;
+    public boolean f37518b;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f37557c;
+    public boolean f37519c;
 
     /* renamed from: d, reason: collision with root package name */
-    public boolean f37558d;
+    public boolean f37520d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final Object f37559e;
+    public final Object f37521e;
 
     /* renamed from: f, reason: collision with root package name */
-    public Object f37560f;
+    public Object f37522f;
 
     /* renamed from: g, reason: collision with root package name */
-    public Object f37561g;
+    public Object f37523g;
 
-    public j(Activity activity, ViewTreeObserverOnGlobalLayoutListenerC2572Gh viewTreeObserverOnGlobalLayoutListenerC2572Gh, ViewTreeObserverOnGlobalLayoutListenerC2572Gh viewTreeObserverOnGlobalLayoutListenerC2572Gh2) {
-        this.f37555a = 3;
-        this.f37560f = activity;
-        this.f37559e = viewTreeObserverOnGlobalLayoutListenerC2572Gh;
-        this.f37561g = viewTreeObserverOnGlobalLayoutListenerC2572Gh2;
+    public j(Activity activity, ViewTreeObserverOnGlobalLayoutListenerC2592Gh viewTreeObserverOnGlobalLayoutListenerC2592Gh, ViewTreeObserverOnGlobalLayoutListenerC2592Gh viewTreeObserverOnGlobalLayoutListenerC2592Gh2) {
+        this.f37517a = 3;
+        this.f37522f = activity;
+        this.f37521e = viewTreeObserverOnGlobalLayoutListenerC2592Gh;
+        this.f37523g = viewTreeObserverOnGlobalLayoutListenerC2592Gh2;
     }
 
     public void a() {
-        CompoundButton compoundButton = (CompoundButton) this.f37559e;
+        CompoundButton compoundButton = (CompoundButton) this.f37521e;
         Drawable a9 = U.c.a(compoundButton);
         if (a9 != null) {
-            if (this.f37556b || this.f37557c) {
+            if (this.f37518b || this.f37519c) {
                 Drawable mutate = a9.mutate();
-                if (this.f37556b) {
-                    H.a.h(mutate, (ColorStateList) this.f37560f);
+                if (this.f37518b) {
+                    H.a.h(mutate, (ColorStateList) this.f37522f);
                 }
-                if (this.f37557c) {
-                    H.a.i(mutate, (PorterDuff.Mode) this.f37561g);
+                if (this.f37519c) {
+                    H.a.i(mutate, (PorterDuff.Mode) this.f37523g);
                 }
                 if (mutate.isStateful()) {
                     mutate.setState(compoundButton.getDrawableState());
@@ -74,16 +74,16 @@ public final class j {
     }
 
     public void b() {
-        m.r rVar = (m.r) this.f37559e;
+        m.r rVar = (m.r) this.f37521e;
         Drawable checkMarkDrawable = rVar.getCheckMarkDrawable();
         if (checkMarkDrawable != null) {
-            if (this.f37556b || this.f37557c) {
+            if (this.f37518b || this.f37519c) {
                 Drawable mutate = checkMarkDrawable.mutate();
-                if (this.f37556b) {
-                    H.a.h(mutate, (ColorStateList) this.f37560f);
+                if (this.f37518b) {
+                    H.a.h(mutate, (ColorStateList) this.f37522f);
                 }
-                if (this.f37557c) {
-                    H.a.i(mutate, (PorterDuff.Mode) this.f37561g);
+                if (this.f37519c) {
+                    H.a.i(mutate, (PorterDuff.Mode) this.f37523g);
                 }
                 if (mutate.isStateful()) {
                     mutate.setState(rVar.getDrawableState());
@@ -101,28 +101,28 @@ public final class j {
     public void c(AttributeSet attributeSet, int i) {
         int resourceId;
         int resourceId2;
-        CompoundButton compoundButton = (CompoundButton) this.f37559e;
+        CompoundButton compoundButton = (CompoundButton) this.f37521e;
         Context context = compoundButton.getContext();
-        int[] iArr = AbstractC4518a.f37599m;
-        j4.g s9 = j4.g.s(context, attributeSet, iArr, i);
-        TypedArray typedArray = (TypedArray) s9.f38405v;
-        X.n(compoundButton, compoundButton.getContext(), iArr, attributeSet, (TypedArray) s9.f38405v, i);
+        int[] iArr = AbstractC4528a.f37561m;
+        l4.g s9 = l4.g.s(context, attributeSet, iArr, i);
+        TypedArray typedArray = (TypedArray) s9.f38917v;
+        X.n(compoundButton, compoundButton.getContext(), iArr, attributeSet, (TypedArray) s9.f38917v, i);
         try {
             if (typedArray.hasValue(1) && (resourceId2 = typedArray.getResourceId(1, 0)) != 0) {
                 try {
-                    compoundButton.setButtonDrawable(com.bumptech.glide.g.e(compoundButton.getContext(), resourceId2));
+                    compoundButton.setButtonDrawable(com.bumptech.glide.g.h(compoundButton.getContext(), resourceId2));
                 } catch (Resources.NotFoundException unused) {
                 }
                 if (typedArray.hasValue(2)) {
                     U.b.c(compoundButton, s9.h(2));
                 }
                 if (typedArray.hasValue(3)) {
-                    U.b.d(compoundButton, AbstractC4694j0.b(typedArray.getInt(3, -1), null));
+                    U.b.d(compoundButton, AbstractC4707j0.b(typedArray.getInt(3, -1), null));
                 }
                 s9.t();
             }
             if (typedArray.hasValue(0) && (resourceId = typedArray.getResourceId(0, 0)) != 0) {
-                compoundButton.setButtonDrawable(com.bumptech.glide.g.e(compoundButton.getContext(), resourceId));
+                compoundButton.setButtonDrawable(com.bumptech.glide.g.h(compoundButton.getContext(), resourceId));
             }
             if (typedArray.hasValue(2)) {
             }
@@ -138,59 +138,59 @@ public final class j {
     public void d() {
         ViewTreeObserver viewTreeObserver;
         View decorView;
-        if (this.f37556b) {
+        if (this.f37518b) {
             return;
         }
-        Activity activity = (Activity) this.f37560f;
-        ViewTreeObserverOnGlobalLayoutListenerC2572Gh viewTreeObserverOnGlobalLayoutListenerC2572Gh = (ViewTreeObserverOnGlobalLayoutListenerC2572Gh) this.f37561g;
+        Activity activity = (Activity) this.f37522f;
+        ViewTreeObserverOnGlobalLayoutListenerC2592Gh viewTreeObserverOnGlobalLayoutListenerC2592Gh = (ViewTreeObserverOnGlobalLayoutListenerC2592Gh) this.f37523g;
         ViewTreeObserver viewTreeObserver2 = null;
         if (activity != null) {
             Window window = activity.getWindow();
             ViewTreeObserver viewTreeObserver3 = (window == null || (decorView = window.getDecorView()) == null) ? null : decorView.getViewTreeObserver();
             if (viewTreeObserver3 != null) {
-                viewTreeObserver3.addOnGlobalLayoutListener(viewTreeObserverOnGlobalLayoutListenerC2572Gh);
+                viewTreeObserver3.addOnGlobalLayoutListener(viewTreeObserverOnGlobalLayoutListenerC2592Gh);
             }
         }
-        C2866Yb c2866Yb = C4835j.f39733C.f39735B;
-        ViewTreeObserverOnGlobalLayoutListenerC3629ng viewTreeObserverOnGlobalLayoutListenerC3629ng = new ViewTreeObserverOnGlobalLayoutListenerC3629ng((ViewTreeObserverOnGlobalLayoutListenerC2572Gh) this.f37559e, viewTreeObserverOnGlobalLayoutListenerC2572Gh);
-        View view = (View) ((WeakReference) viewTreeObserverOnGlobalLayoutListenerC3629ng.f26598n).get();
+        C2889Yb c2889Yb = C4906k.f40186C.f40188B;
+        ViewTreeObserverOnGlobalLayoutListenerC3652ng viewTreeObserverOnGlobalLayoutListenerC3652ng = new ViewTreeObserverOnGlobalLayoutListenerC3652ng((ViewTreeObserverOnGlobalLayoutListenerC2592Gh) this.f37521e, viewTreeObserverOnGlobalLayoutListenerC2592Gh);
+        View view = (View) ((WeakReference) viewTreeObserverOnGlobalLayoutListenerC3652ng.f27380n).get();
         if (view != null && (viewTreeObserver = view.getViewTreeObserver()) != null && viewTreeObserver.isAlive()) {
             viewTreeObserver2 = viewTreeObserver;
         }
         if (viewTreeObserver2 != null) {
-            viewTreeObserverOnGlobalLayoutListenerC3629ng.Q1(viewTreeObserver2);
+            viewTreeObserverOnGlobalLayoutListenerC3652ng.R1(viewTreeObserver2);
         }
-        this.f37556b = true;
+        this.f37518b = true;
     }
 
     public String toString() {
-        switch (this.f37555a) {
+        switch (this.f37517a) {
             case 0:
-                return "JsonConfiguration(encodeDefaults=false, ignoreUnknownKeys=" + this.f37556b + ", isLenient=false, allowStructuredMapKeys=false, prettyPrint=false, explicitNulls=" + this.f37557c + ", prettyPrintIndent='" + ((String) this.f37559e) + "', coerceInputValues=false, useArrayPolymorphism=false, classDiscriminator='" + ((String) this.f37560f) + "', allowSpecialFloatingPointValues=false, useAlternativeNames=" + this.f37558d + ", namingStrategy=null, decodeEnumsCaseInsensitive=false, allowTrailingComma=false, classDiscriminatorMode=" + ((EnumC4514a) this.f37561g) + ')';
+                return "JsonConfiguration(encodeDefaults=false, ignoreUnknownKeys=" + this.f37518b + ", isLenient=false, allowStructuredMapKeys=false, prettyPrint=false, explicitNulls=" + this.f37519c + ", prettyPrintIndent='" + ((String) this.f37521e) + "', coerceInputValues=false, useArrayPolymorphism=false, classDiscriminator='" + ((String) this.f37522f) + "', allowSpecialFloatingPointValues=false, useAlternativeNames=" + this.f37520d + ", namingStrategy=null, decodeEnumsCaseInsensitive=false, allowTrailingComma=false, classDiscriminatorMode=" + ((EnumC4524a) this.f37523g) + ')';
             default:
                 return super.toString();
         }
     }
 
     public /* synthetic */ j(TextView textView, int i) {
-        this.f37555a = i;
-        this.f37560f = null;
-        this.f37561g = null;
-        this.f37556b = false;
-        this.f37557c = false;
-        this.f37559e = textView;
+        this.f37517a = i;
+        this.f37522f = null;
+        this.f37523g = null;
+        this.f37518b = false;
+        this.f37519c = false;
+        this.f37521e = textView;
     }
 
-    public j(boolean z3, boolean z6, String prettyPrintIndent, String classDiscriminator, boolean z9, EnumC4514a classDiscriminatorMode) {
-        this.f37555a = 0;
+    public j(boolean z6, boolean z9, String prettyPrintIndent, String classDiscriminator, boolean z10, EnumC4524a classDiscriminatorMode) {
+        this.f37517a = 0;
         kotlin.jvm.internal.h.e(prettyPrintIndent, "prettyPrintIndent");
         kotlin.jvm.internal.h.e(classDiscriminator, "classDiscriminator");
         kotlin.jvm.internal.h.e(classDiscriminatorMode, "classDiscriminatorMode");
-        this.f37556b = z3;
-        this.f37557c = z6;
-        this.f37559e = prettyPrintIndent;
-        this.f37560f = classDiscriminator;
-        this.f37558d = z9;
-        this.f37561g = classDiscriminatorMode;
+        this.f37518b = z6;
+        this.f37519c = z9;
+        this.f37521e = prettyPrintIndent;
+        this.f37522f = classDiscriminator;
+        this.f37520d = z10;
+        this.f37523g = classDiscriminatorMode;
     }
 }

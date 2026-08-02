@@ -9,7 +9,7 @@ import java.net.URL;
 public class al {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f16668a = "al";
+    private static final String f17455a = "al";
 
     private static String a(String str) {
         try {

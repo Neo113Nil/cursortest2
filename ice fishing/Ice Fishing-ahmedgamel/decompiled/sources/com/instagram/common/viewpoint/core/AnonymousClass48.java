@@ -21,7 +21,7 @@ public final class AnonymousClass48 {
     }
 
     public final synchronized void A01() {
-        boolean z3 = false;
+        boolean z6 = false;
         while (true) {
             boolean wasInterrupted = this.A00;
             if (wasInterrupted) {
@@ -30,19 +30,19 @@ public final class AnonymousClass48 {
             try {
                 wait();
             } catch (InterruptedException unused) {
-                z3 = true;
+                z6 = true;
             }
         }
-        if (z3) {
+        if (z6) {
             Thread.currentThread().interrupt();
         }
     }
 
     public final synchronized boolean A02() {
-        boolean z3;
-        z3 = this.A00;
+        boolean z6;
+        z6 = this.A00;
         this.A00 = false;
-        return z3;
+        return z6;
     }
 
     public final synchronized boolean A03() {

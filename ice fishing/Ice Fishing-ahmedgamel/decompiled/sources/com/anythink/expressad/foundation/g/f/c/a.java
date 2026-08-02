@@ -4,17 +4,17 @@ package com.anythink.expressad.foundation.g.f.c;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f19241a;
+    public String f20028a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f19242b;
+    public String f20029b;
 
     /* renamed from: c, reason: collision with root package name */
-    public String f19243c;
+    public String f20030c;
 
     /* renamed from: d, reason: collision with root package name */
-    public boolean f19244d;
+    public boolean f20031d;
 
     /* renamed from: e, reason: collision with root package name */
-    public String f19245e;
+    public String f20032e;
 }

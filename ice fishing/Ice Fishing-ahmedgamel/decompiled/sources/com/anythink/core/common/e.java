@@ -8,19 +8,19 @@ import org.json.JSONObject;
 public class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public static String f12882a = "e";
+    public static String f13668a = "e";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f12883b = "cp_event_callback_info";
+    public static final String f13669b = "cp_event_callback_info";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f12884c = "type_start_load";
+    public static final String f13670c = "type_start_load";
 
     private static JSONObject a(String str, String str2) {
         try {
             JSONObject jSONObject = new JSONObject();
             try {
-                jSONObject.put(l.a.f17401T, str);
+                jSONObject.put(l.a.f18188T, str);
                 jSONObject.put("request_id", str2);
                 return jSONObject;
             } catch (Throwable unused) {
@@ -59,6 +59,6 @@ public class e {
         if (map == null) {
             return;
         }
-        a(map.get(f12883b), str, str2, str3, str4);
+        a(map.get(f13669b), str, str2, str3, str4);
     }
 }

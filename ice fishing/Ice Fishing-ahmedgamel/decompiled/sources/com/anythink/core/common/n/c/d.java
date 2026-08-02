@@ -14,15 +14,15 @@ public interface d extends v, WritableByteChannel {
 
     d b(String str);
 
-    d b(String str, int i, int i6);
+    d b(String str, int i, int i4);
 
-    d b(String str, int i, int i6, Charset charset);
+    d b(String str, int i, int i4, Charset charset);
 
     d b(String str, Charset charset);
 
     c c();
 
-    d c(byte[] bArr, int i, int i6);
+    d c(byte[] bArr, int i, int i4);
 
     d d(f fVar);
 

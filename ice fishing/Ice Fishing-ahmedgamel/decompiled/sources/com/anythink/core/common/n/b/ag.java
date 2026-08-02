@@ -7,55 +7,56 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import w.AbstractC5128c;
 
 /* loaded from: classes.dex */
 public abstract class ag implements Closeable {
 
     /* renamed from: a, reason: collision with root package name */
-    private Reader f15524a;
+    private Reader f16311a;
 
     public static final class a extends Reader {
 
         /* renamed from: a, reason: collision with root package name */
-        private final com.anythink.core.common.n.c.e f15528a;
+        private final com.anythink.core.common.n.c.e f16315a;
 
         /* renamed from: b, reason: collision with root package name */
-        private final Charset f15529b;
+        private final Charset f16316b;
 
         /* renamed from: c, reason: collision with root package name */
-        private boolean f15530c;
+        private boolean f16317c;
 
         /* renamed from: d, reason: collision with root package name */
-        private Reader f15531d;
+        private Reader f16318d;
 
         public a(com.anythink.core.common.n.c.e eVar, Charset charset) {
-            this.f15528a = eVar;
-            this.f15529b = charset;
+            this.f16315a = eVar;
+            this.f16316b = charset;
         }
 
         @Override // java.io.Reader, java.io.Closeable, java.lang.AutoCloseable
         public final void close() {
-            this.f15530c = true;
-            Reader reader = this.f15531d;
+            this.f16317c = true;
+            Reader reader = this.f16318d;
             if (reader != null) {
                 reader.close();
             } else {
-                this.f15528a.close();
+                this.f16315a.close();
             }
         }
 
         @Override // java.io.Reader
-        public final int read(char[] cArr, int i, int i6) {
-            if (this.f15530c) {
+        public final int read(char[] cArr, int i, int i4) {
+            if (this.f16317c) {
                 throw new IOException("Stream closed");
             }
-            Reader reader = this.f15531d;
+            Reader reader = this.f16318d;
             if (reader == null) {
-                InputStreamReader inputStreamReader = new InputStreamReader(this.f15528a.i(), com.anythink.core.common.n.b.a.c.a(this.f15528a, this.f15529b));
-                this.f15531d = inputStreamReader;
+                InputStreamReader inputStreamReader = new InputStreamReader(this.f16315a.i(), com.anythink.core.common.n.b.a.c.a(this.f16315a, this.f16316b));
+                this.f16318d = inputStreamReader;
                 reader = inputStreamReader;
             }
-            return reader.read(cArr, i, i6);
+            return reader.read(cArr, i, i4);
         }
     }
 
@@ -92,7 +93,7 @@ public abstract class ag implements Closeable {
             StringBuilder sb = new StringBuilder("Content-Length (");
             sb.append(b9);
             sb.append(") and stream length (");
-            throw new IOException(u1.h.e(y7.length, ") disagree", sb));
+            throw new IOException(AbstractC5128c.e(y7.length, ") disagree", sb));
         } catch (Throwable th) {
             if (c9 != null) {
                 try {
@@ -106,12 +107,12 @@ public abstract class ag implements Closeable {
     }
 
     private Reader g() {
-        Reader reader = this.f15524a;
+        Reader reader = this.f16311a;
         if (reader != null) {
             return reader;
         }
         a aVar = new a(c(), h());
-        this.f15524a = aVar;
+        this.f16311a = aVar;
         return aVar;
     }
 

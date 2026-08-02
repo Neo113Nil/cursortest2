@@ -4,22 +4,22 @@ package O0;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f2154a;
+    public final boolean f2242a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f2155b;
+    public final boolean f2243b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final boolean f2156c;
+    public final boolean f2244c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final boolean f2157d;
+    public final boolean f2245d;
 
-    public a(boolean z3, boolean z6, boolean z9, boolean z10) {
-        this.f2154a = z3;
-        this.f2155b = z6;
-        this.f2156c = z9;
-        this.f2157d = z10;
+    public a(boolean z6, boolean z9, boolean z10, boolean z11) {
+        this.f2242a = z6;
+        this.f2243b = z9;
+        this.f2244c = z10;
+        this.f2245d = z11;
     }
 
     public final boolean equals(Object obj) {
@@ -30,34 +30,34 @@ public final class a {
             return false;
         }
         a aVar = (a) obj;
-        return this.f2154a == aVar.f2154a && this.f2155b == aVar.f2155b && this.f2156c == aVar.f2156c && this.f2157d == aVar.f2157d;
+        return this.f2242a == aVar.f2242a && this.f2243b == aVar.f2243b && this.f2244c == aVar.f2244c && this.f2245d == aVar.f2245d;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     public final int hashCode() {
-        boolean z3 = this.f2154a;
-        int i = z3;
-        if (z3 != 0) {
+        boolean z6 = this.f2242a;
+        int i = z6;
+        if (z6 != 0) {
             i = 1;
         }
-        int i6 = i * 31;
-        boolean z6 = this.f2155b;
-        int i9 = z6;
-        if (z6 != 0) {
-            i9 = 1;
-        }
-        int i10 = (i6 + i9) * 31;
-        boolean z9 = this.f2156c;
-        int i11 = z9;
+        int i4 = i * 31;
+        boolean z9 = this.f2243b;
+        int i6 = z9;
         if (z9 != 0) {
-            i11 = 1;
+            i6 = 1;
         }
-        int i12 = (i10 + i11) * 31;
-        boolean z10 = this.f2157d;
-        return i12 + (z10 ? 1 : z10 ? 1 : 0);
+        int i9 = (i4 + i6) * 31;
+        boolean z10 = this.f2244c;
+        int i10 = z10;
+        if (z10 != 0) {
+            i10 = 1;
+        }
+        int i11 = (i9 + i10) * 31;
+        boolean z11 = this.f2245d;
+        return i11 + (z11 ? 1 : z11 ? 1 : 0);
     }
 
     public final String toString() {
-        return "NetworkState(isConnected=" + this.f2154a + ", isValidated=" + this.f2155b + ", isMetered=" + this.f2156c + ", isNotRoaming=" + this.f2157d + ')';
+        return "NetworkState(isConnected=" + this.f2242a + ", isValidated=" + this.f2243b + ", isMetered=" + this.f2244c + ", isNotRoaming=" + this.f2245d + ')';
     }
 }

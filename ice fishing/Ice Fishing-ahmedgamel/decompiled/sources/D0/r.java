@@ -13,10 +13,10 @@ import java.util.Iterator;
 public final class r implements ViewTreeObserver.OnPreDrawListener, View.OnAttachStateChangeListener {
 
     /* renamed from: n, reason: collision with root package name */
-    public o f608n;
+    public o f504n;
 
     /* renamed from: u, reason: collision with root package name */
-    public FrameLayout f609u;
+    public FrameLayout f505u;
 
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:11:0x004f  */
@@ -39,27 +39,27 @@ public final class r implements ViewTreeObserver.OnPreDrawListener, View.OnAttac
         int i;
         s.b bVar;
         s.b bVar2;
-        int i6;
+        int i4;
         int[] iArr;
         s.b bVar3;
+        int i6;
         int i9;
         int i10;
-        int i11;
         l lVar;
         View view;
-        boolean z3;
+        boolean z6;
         s.b bVar4;
         w wVar;
         View view2;
         View view3;
-        boolean z6;
+        boolean z9;
         ?? r15;
-        FrameLayout frameLayout = this.f609u;
+        FrameLayout frameLayout = this.f505u;
         frameLayout.getViewTreeObserver().removeOnPreDrawListener(this);
         frameLayout.removeOnAttachStateChangeListener(this);
-        ArrayList arrayList2 = s.f612c;
-        FrameLayout frameLayout2 = this.f609u;
-        boolean z9 = true;
+        ArrayList arrayList2 = s.f508c;
+        FrameLayout frameLayout2 = this.f505u;
+        boolean z10 = true;
         if (!arrayList2.remove(frameLayout2)) {
             return true;
         }
@@ -71,7 +71,7 @@ public final class r implements ViewTreeObserver.OnPreDrawListener, View.OnAttac
             b9.put(frameLayout2, arrayList3);
         } else if (arrayList3.size() > 0) {
             arrayList = new ArrayList(arrayList3);
-            oVar = this.f608n;
+            oVar = this.f504n;
             arrayList3.add(oVar);
             oVar.a(new q(this, b9));
             i = 0;
@@ -82,65 +82,65 @@ public final class r implements ViewTreeObserver.OnPreDrawListener, View.OnAttac
                     ((o) it.next()).D(frameLayout2);
                 }
             }
-            oVar.f588D = new ArrayList();
-            oVar.f589E = new ArrayList();
-            S0.n nVar = oVar.f605z;
-            S0.n nVar2 = oVar.f585A;
-            bVar = new s.b((s.b) nVar.f2802u);
-            bVar2 = new s.b((s.b) nVar2.f2802u);
-            i6 = 0;
+            oVar.f484D = new ArrayList();
+            oVar.f485E = new ArrayList();
+            S0.n nVar = oVar.f501z;
+            S0.n nVar2 = oVar.f481A;
+            bVar = new s.b((s.b) nVar.f2931u);
+            bVar2 = new s.b((s.b) nVar2.f2931u);
+            i4 = 0;
             while (true) {
-                iArr = oVar.f587C;
-                if (i6 < iArr.length) {
+                iArr = oVar.f483C;
+                if (i4 < iArr.length) {
                     break;
                 }
-                int i12 = iArr[i6];
-                if (i12 == z9) {
-                    z3 = z9;
+                int i11 = iArr[i4];
+                if (i11 == z10) {
+                    z6 = z10;
                     bVar4 = bVar2;
-                    for (int i13 = bVar.f40440v - 1; i13 >= 0; i13--) {
-                        View view4 = (View) bVar.h(i13);
-                        if (view4 != null && oVar.y(view4) && (wVar = (w) bVar4.remove(view4)) != null && oVar.y(wVar.f617b)) {
-                            oVar.f588D.add((w) bVar.j(i13));
-                            oVar.f589E.add(wVar);
+                    for (int i12 = bVar.f40276v - 1; i12 >= 0; i12--) {
+                        View view4 = (View) bVar.h(i12);
+                        if (view4 != null && oVar.y(view4) && (wVar = (w) bVar4.remove(view4)) != null && oVar.y(wVar.f513b)) {
+                            oVar.f484D.add((w) bVar.j(i12));
+                            oVar.f485E.add(wVar);
                         }
                     }
-                } else if (i12 == 2) {
-                    z3 = z9;
+                } else if (i11 == 2) {
+                    z6 = z10;
                     bVar4 = bVar2;
-                    s.b bVar5 = (s.b) nVar.f2805x;
-                    s.b bVar6 = (s.b) nVar2.f2805x;
-                    int i14 = bVar5.f40440v;
-                    for (int i15 = 0; i15 < i14; i15++) {
-                        View view5 = (View) bVar5.l(i15);
-                        if (view5 != null && oVar.y(view5) && (view2 = (View) bVar6.getOrDefault(bVar5.h(i15), null)) != null && oVar.y(view2)) {
+                    s.b bVar5 = (s.b) nVar.f2934x;
+                    s.b bVar6 = (s.b) nVar2.f2934x;
+                    int i13 = bVar5.f40276v;
+                    for (int i14 = 0; i14 < i13; i14++) {
+                        View view5 = (View) bVar5.l(i14);
+                        if (view5 != null && oVar.y(view5) && (view2 = (View) bVar6.getOrDefault(bVar5.h(i14), null)) != null && oVar.y(view2)) {
                             w wVar2 = (w) bVar.getOrDefault(view5, null);
                             w wVar3 = (w) bVar4.getOrDefault(view2, null);
                             if (wVar2 != null && wVar3 != null) {
-                                oVar.f588D.add(wVar2);
-                                oVar.f589E.add(wVar3);
+                                oVar.f484D.add(wVar2);
+                                oVar.f485E.add(wVar3);
                                 bVar.remove(view5);
                                 bVar4.remove(view2);
                             }
                         }
                     }
-                } else if (i12 != 3) {
-                    if (i12 == 4) {
-                        s.e eVar = (s.e) nVar.f2804w;
+                } else if (i11 != 3) {
+                    if (i11 == 4) {
+                        s.e eVar = (s.e) nVar.f2933w;
                         int l10 = eVar.l();
-                        int i16 = i;
-                        while (i16 < l10) {
-                            View view6 = (View) eVar.m(i16);
+                        int i15 = i;
+                        while (i15 < l10) {
+                            View view6 = (View) eVar.m(i15);
                             if (view6 == null || !oVar.y(view6)) {
-                                z6 = z9;
+                                z9 = z10;
                                 r15 = bVar2;
                             } else {
-                                if (eVar.f40415n) {
+                                if (eVar.f40251n) {
                                     eVar.i();
                                 }
-                                z6 = z9;
+                                z9 = z10;
                                 s.b bVar7 = bVar2;
-                                View view7 = (View) ((s.e) nVar2.f2804w).j(eVar.f40416u[i16], l9);
+                                View view7 = (View) ((s.e) nVar2.f2933w).j(eVar.f40252u[i15], l9);
                                 if (view7 == null || !oVar.y(view7)) {
                                     r15 = bVar7;
                                 } else {
@@ -148,145 +148,145 @@ public final class r implements ViewTreeObserver.OnPreDrawListener, View.OnAttac
                                     r15 = bVar7;
                                     w wVar5 = (w) r15.getOrDefault(view7, l9);
                                     if (wVar4 != null && wVar5 != null) {
-                                        oVar.f588D.add(wVar4);
-                                        oVar.f589E.add(wVar5);
+                                        oVar.f484D.add(wVar4);
+                                        oVar.f485E.add(wVar5);
                                         bVar.remove(view6);
                                         r15.remove(view7);
                                     }
                                 }
                             }
-                            i16++;
+                            i15++;
                             bVar2 = r15;
-                            z9 = z6;
+                            z10 = z9;
                             l9 = null;
                         }
                     }
-                    z3 = z9;
+                    z6 = z10;
                     bVar4 = bVar2;
                 } else {
-                    z3 = z9;
+                    z6 = z10;
                     bVar4 = bVar2;
-                    SparseArray sparseArray = (SparseArray) nVar.f2803v;
-                    SparseArray sparseArray2 = (SparseArray) nVar2.f2803v;
+                    SparseArray sparseArray = (SparseArray) nVar.f2932v;
+                    SparseArray sparseArray2 = (SparseArray) nVar2.f2932v;
                     int size = sparseArray.size();
-                    for (int i17 = 0; i17 < size; i17++) {
-                        View view8 = (View) sparseArray.valueAt(i17);
-                        if (view8 != null && oVar.y(view8) && (view3 = (View) sparseArray2.get(sparseArray.keyAt(i17))) != null && oVar.y(view3)) {
+                    for (int i16 = 0; i16 < size; i16++) {
+                        View view8 = (View) sparseArray.valueAt(i16);
+                        if (view8 != null && oVar.y(view8) && (view3 = (View) sparseArray2.get(sparseArray.keyAt(i16))) != null && oVar.y(view3)) {
                             w wVar6 = (w) bVar.getOrDefault(view8, null);
                             w wVar7 = (w) bVar4.getOrDefault(view3, null);
                             if (wVar6 != null && wVar7 != null) {
-                                oVar.f588D.add(wVar6);
-                                oVar.f589E.add(wVar7);
+                                oVar.f484D.add(wVar6);
+                                oVar.f485E.add(wVar7);
                                 bVar.remove(view8);
                                 bVar4.remove(view3);
                             }
                         }
                     }
                 }
-                i6++;
+                i4++;
                 bVar2 = bVar4;
-                z9 = z3;
+                z10 = z6;
                 i = 0;
                 l9 = null;
             }
-            boolean z10 = z9;
+            boolean z11 = z10;
             bVar3 = bVar2;
-            for (i9 = 0; i9 < bVar.f40440v; i9++) {
-                w wVar8 = (w) bVar.l(i9);
-                if (oVar.y(wVar8.f617b)) {
-                    oVar.f588D.add(wVar8);
-                    oVar.f589E.add(null);
+            for (i6 = 0; i6 < bVar.f40276v; i6++) {
+                w wVar8 = (w) bVar.l(i6);
+                if (oVar.y(wVar8.f513b)) {
+                    oVar.f484D.add(wVar8);
+                    oVar.f485E.add(null);
                 }
             }
-            for (i10 = 0; i10 < bVar3.f40440v; i10++) {
-                w wVar9 = (w) bVar3.l(i10);
-                if (oVar.y(wVar9.f617b)) {
-                    oVar.f589E.add(wVar9);
-                    oVar.f588D.add(null);
+            for (i9 = 0; i9 < bVar3.f40276v; i9++) {
+                w wVar9 = (w) bVar3.l(i9);
+                if (oVar.y(wVar9.f513b)) {
+                    oVar.f485E.add(wVar9);
+                    oVar.f484D.add(null);
                 }
             }
-            s.b u3 = o.u();
-            int i18 = u3.f40440v;
+            s.b u6 = o.u();
+            int i17 = u6.f40276v;
             WindowId windowId = frameLayout2.getWindowId();
-            i11 = i18 - 1;
-            while (i11 >= 0) {
-                Animator animator = (Animator) u3.h(i11);
-                if (animator != null && (lVar = (l) u3.getOrDefault(animator, null)) != null && (view = lVar.f570a) != null && windowId.equals(lVar.f573d)) {
-                    boolean z11 = z10;
-                    w w6 = oVar.w(view, z11);
-                    w s9 = oVar.s(view, z11);
-                    if (w6 == null && s9 == null) {
-                        s9 = (w) ((s.b) oVar.f585A.f2802u).getOrDefault(view, null);
+            i10 = i17 - 1;
+            while (i10 >= 0) {
+                Animator animator = (Animator) u6.h(i10);
+                if (animator != null && (lVar = (l) u6.getOrDefault(animator, null)) != null && (view = lVar.f465a) != null && windowId.equals(lVar.f468d)) {
+                    boolean z12 = z11;
+                    w w3 = oVar.w(view, z12);
+                    w s9 = oVar.s(view, z12);
+                    if (w3 == null && s9 == null) {
+                        s9 = (w) ((s.b) oVar.f481A.f2931u).getOrDefault(view, null);
                     }
-                    if (w6 != null || s9 != null) {
-                        w wVar10 = lVar.f572c;
-                        o oVar2 = lVar.f574e;
+                    if (w3 != null || s9 != null) {
+                        w wVar10 = lVar.f467c;
+                        o oVar2 = lVar.f469e;
                         if (oVar2.x(wVar10, s9)) {
                             oVar2.t().getClass();
                             if (animator.isRunning() || animator.isStarted()) {
                                 animator.cancel();
                             } else {
-                                u3.remove(animator);
+                                u6.remove(animator);
                             }
                         }
                     }
                 }
-                i11--;
-                z10 = true;
+                i10--;
+                z11 = true;
             }
-            oVar.q(frameLayout2, oVar.f605z, oVar.f585A, oVar.f588D, oVar.f589E);
+            oVar.q(frameLayout2, oVar.f501z, oVar.f481A, oVar.f484D, oVar.f485E);
             oVar.E();
             return true;
         }
         arrayList = null;
-        oVar = this.f608n;
+        oVar = this.f504n;
         arrayList3.add(oVar);
         oVar.a(new q(this, b9));
         i = 0;
         oVar.m(frameLayout2, false);
         if (arrayList != null) {
         }
-        oVar.f588D = new ArrayList();
-        oVar.f589E = new ArrayList();
-        S0.n nVar3 = oVar.f605z;
-        S0.n nVar22 = oVar.f585A;
-        bVar = new s.b((s.b) nVar3.f2802u);
-        bVar2 = new s.b((s.b) nVar22.f2802u);
-        i6 = 0;
+        oVar.f484D = new ArrayList();
+        oVar.f485E = new ArrayList();
+        S0.n nVar3 = oVar.f501z;
+        S0.n nVar22 = oVar.f481A;
+        bVar = new s.b((s.b) nVar3.f2931u);
+        bVar2 = new s.b((s.b) nVar22.f2931u);
+        i4 = 0;
         while (true) {
-            iArr = oVar.f587C;
-            if (i6 < iArr.length) {
+            iArr = oVar.f483C;
+            if (i4 < iArr.length) {
             }
-            i6++;
+            i4++;
             bVar2 = bVar4;
-            z9 = z3;
+            z10 = z6;
             i = 0;
             l9 = null;
         }
-        boolean z102 = z9;
+        boolean z112 = z10;
         bVar3 = bVar2;
-        while (i9 < bVar.f40440v) {
+        while (i6 < bVar.f40276v) {
         }
-        while (i10 < bVar3.f40440v) {
+        while (i9 < bVar3.f40276v) {
         }
-        s.b u32 = o.u();
-        int i182 = u32.f40440v;
+        s.b u62 = o.u();
+        int i172 = u62.f40276v;
         WindowId windowId2 = frameLayout2.getWindowId();
-        i11 = i182 - 1;
-        while (i11 >= 0) {
+        i10 = i172 - 1;
+        while (i10 >= 0) {
         }
-        oVar.q(frameLayout2, oVar.f605z, oVar.f585A, oVar.f588D, oVar.f589E);
+        oVar.q(frameLayout2, oVar.f501z, oVar.f481A, oVar.f484D, oVar.f485E);
         oVar.E();
         return true;
     }
 
     @Override // android.view.View.OnAttachStateChangeListener
     public final void onViewDetachedFromWindow(View view) {
-        FrameLayout frameLayout = this.f609u;
+        FrameLayout frameLayout = this.f505u;
         frameLayout.getViewTreeObserver().removeOnPreDrawListener(this);
         frameLayout.removeOnAttachStateChangeListener(this);
-        ArrayList arrayList = s.f612c;
-        FrameLayout frameLayout2 = this.f609u;
+        ArrayList arrayList = s.f508c;
+        FrameLayout frameLayout2 = this.f505u;
         arrayList.remove(frameLayout2);
         ArrayList arrayList2 = (ArrayList) s.b().getOrDefault(frameLayout2, null);
         if (arrayList2 != null && arrayList2.size() > 0) {
@@ -295,7 +295,7 @@ public final class r implements ViewTreeObserver.OnPreDrawListener, View.OnAttac
                 ((o) it.next()).D(frameLayout2);
             }
         }
-        this.f608n.n(true);
+        this.f504n.n(true);
     }
 
     @Override // android.view.View.OnAttachStateChangeListener

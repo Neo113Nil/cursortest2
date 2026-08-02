@@ -7,35 +7,35 @@ import java.util.List;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private View f21076a;
+    private View f21863a;
 
     /* renamed from: b, reason: collision with root package name */
-    private List<View> f21077b;
+    private List<View> f21864b;
 
     /* renamed from: c, reason: collision with root package name */
-    private boolean f21078c;
+    private boolean f21865c;
 
     public final View a() {
-        return this.f21076a;
+        return this.f21863a;
     }
 
     public final List<View> b() {
-        return this.f21077b;
+        return this.f21864b;
     }
 
     public final boolean c() {
-        return this.f21078c;
+        return this.f21865c;
     }
 
     public final void d() {
-        this.f21078c = false;
+        this.f21865c = false;
     }
 
     public final void a(View view) {
-        this.f21076a = view;
+        this.f21863a = view;
     }
 
     public final void a(List<View> list) {
-        this.f21077b = list;
+        this.f21864b = list;
     }
 }

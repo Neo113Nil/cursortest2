@@ -7,31 +7,31 @@ import java.util.Objects;
 public final class Lv {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f26192a;
+    public final String f26983a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final k2.b f26193b;
+    public final m2.b f26984b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final String f26194c;
+    public final String f26985c;
 
-    public /* synthetic */ Lv(C3481ku c3481ku) {
-        this.f26192a = (String) c3481ku.f31663u;
-        this.f26193b = (k2.b) c3481ku.f31664v;
-        this.f26194c = (String) c3481ku.f31665w;
+    public /* synthetic */ Lv(C3504ku c3504ku) {
+        this.f26983a = (String) c3504ku.f32445u;
+        this.f26984b = (m2.b) c3504ku.f32446v;
+        this.f26985c = (String) c3504ku.f32447w;
     }
 
     public final String a() {
-        k2.b bVar = this.f26193b;
-        return bVar == null ? com.anythink.core.common.v.m.f16809e : bVar.name().toLowerCase(Locale.ENGLISH);
+        m2.b bVar = this.f26984b;
+        return bVar == null ? com.anythink.core.common.v.m.f17596e : bVar.name().toLowerCase(Locale.ENGLISH);
     }
 
     public final boolean equals(Object obj) {
-        k2.b bVar;
-        k2.b bVar2;
+        m2.b bVar;
+        m2.b bVar2;
         if (obj instanceof Lv) {
             Lv lv = (Lv) obj;
-            if (this.f26192a.equals(lv.f26192a) && (bVar = this.f26193b) != null && (bVar2 = lv.f26193b) != null && bVar.equals(bVar2)) {
+            if (this.f26983a.equals(lv.f26983a) && (bVar = this.f26984b) != null && (bVar2 = lv.f26984b) != null && bVar.equals(bVar2)) {
                 return true;
             }
         }
@@ -39,6 +39,6 @@ public final class Lv {
     }
 
     public final int hashCode() {
-        return Objects.hash(this.f26192a, this.f26193b);
+        return Objects.hash(this.f26983a, this.f26984b);
     }
 }

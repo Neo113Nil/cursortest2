@@ -8,11 +8,11 @@ import com.anythink.core.common.l.f.a.a;
 public final class d extends a implements com.anythink.core.common.l.c.a.c {
 
     /* renamed from: b, reason: collision with root package name */
-    private com.anythink.core.common.l.f.a.a f9502b;
+    private com.anythink.core.common.l.f.a.a f10288b;
 
     @Override // com.anythink.core.common.l.c.a.c
     public final void a(Activity activity, com.anythink.core.basead.b.c cVar, a.InterfaceC0083a interfaceC0083a) {
-        com.anythink.core.common.l.e.a.a aVar = this.f9501a;
+        com.anythink.core.common.l.e.a.a aVar = this.f10287a;
         if (aVar != null) {
             aVar.a(activity, cVar, interfaceC0083a);
         }
@@ -20,7 +20,7 @@ public final class d extends a implements com.anythink.core.common.l.c.a.c {
 
     @Override // com.anythink.core.common.l.c.a.c
     public final void a(Activity activity, com.anythink.core.basead.b.c cVar, a.InterfaceC0084a interfaceC0084a) {
-        com.anythink.core.common.l.f.a.a aVar = this.f9502b;
+        com.anythink.core.common.l.f.a.a aVar = this.f10288b;
         if (aVar != null) {
             aVar.a(activity, cVar, interfaceC0084a);
         }
@@ -28,6 +28,6 @@ public final class d extends a implements com.anythink.core.common.l.c.a.c {
 
     @Override // com.anythink.core.common.l.c.a.c
     public final void a(com.anythink.core.common.l.f.a.a aVar) {
-        this.f9502b = aVar;
+        this.f10288b = aVar;
     }
 }

@@ -15,7 +15,7 @@ public abstract class WU {
     public static void A00(Throwable th, Object obj) throws Throwable {
         if (A01.get()) {
             A00.add(obj);
-            AbstractC1334Wj.A00().AAx(3306, th);
+            AbstractC1354Wj.A00().AAx(3306, th);
             WS contextRepairHelper = A02.get();
             if (contextRepairHelper != null) {
                 contextRepairHelper.AIZ(th, obj);
@@ -26,8 +26,8 @@ public abstract class WU {
         throw th;
     }
 
-    public static void A01(boolean z3, WS ws) {
-        A01.set(z3);
+    public static void A01(boolean z6, WS ws) {
+        A01.set(z6);
         A02.set(ws);
     }
 

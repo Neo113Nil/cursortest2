@@ -110,20 +110,20 @@ public final class a extends i {
         i.setOptStringProperty$default(this, "language", str, null, false, 12, null);
     }
 
-    public final void setLocationAccuracy(Float f3) {
-        i.setOptFloatProperty$default(this, "locationAccuracy", f3, null, false, 12, null);
+    public final void setLocationAccuracy(Float f2) {
+        i.setOptFloatProperty$default(this, "locationAccuracy", f2, null, false, 12, null);
     }
 
     public final void setLocationBackground(Boolean bool) {
         i.setOptBooleanProperty$default(this, "locationBackground", bool, null, false, 12, null);
     }
 
-    public final void setLocationLatitude(Double d2) {
-        i.setOptDoubleProperty$default(this, "locationLatitude", d2, null, false, 12, null);
+    public final void setLocationLatitude(Double d9) {
+        i.setOptDoubleProperty$default(this, "locationLatitude", d9, null, false, 12, null);
     }
 
-    public final void setLocationLongitude(Double d2) {
-        i.setOptDoubleProperty$default(this, "locationLongitude", d2, null, false, 12, null);
+    public final void setLocationLongitude(Double d9) {
+        i.setOptDoubleProperty$default(this, "locationLongitude", d9, null, false, 12, null);
     }
 
     public final void setLocationTimestamp(Long l9) {

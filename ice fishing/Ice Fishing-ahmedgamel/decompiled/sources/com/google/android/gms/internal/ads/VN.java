@@ -20,282 +20,280 @@ import java.util.Locale;
 import java.util.Objects;
 
 /* loaded from: classes2.dex */
-public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3620nO, InterfaceC3328i0 {
+public final class VN implements Handler.Callback, InterfaceC3753pQ, InterfaceC3643nO, InterfaceC3351i0 {
 
-    /* renamed from: K0, reason: collision with root package name */
-    public static final long f28137K0 = AbstractC3159eu.t(10000);
+    /* renamed from: F0, reason: collision with root package name */
+    public static final long f28934F0 = AbstractC3182eu.t(10000);
 
     /* renamed from: A, reason: collision with root package name */
-    public final R5 f28138A;
+    public final R5 f28935A;
 
     /* renamed from: A0, reason: collision with root package name */
-    public long f28139A0;
+    public FN f28936A0;
 
     /* renamed from: B, reason: collision with root package name */
-    public final Looper f28140B;
+    public final Looper f28937B;
 
     /* renamed from: B0, reason: collision with root package name */
-    public int f28141B0;
+    public long f28938B0;
 
     /* renamed from: C, reason: collision with root package name */
-    public final U7 f28142C;
+    public final U7 f28939C;
     public boolean C0;
 
     /* renamed from: D, reason: collision with root package name */
-    public final K7 f28143D;
+    public final K7 f28940D;
 
     /* renamed from: D0, reason: collision with root package name */
-    public DN f28144D0;
+    public float f28941D0;
 
     /* renamed from: E, reason: collision with root package name */
-    public final long f28145E;
+    public final long f28942E;
 
     /* renamed from: E0, reason: collision with root package name */
-    public long f28146E0;
+    public final C4289zN f28943E0;
 
     /* renamed from: F, reason: collision with root package name */
-    public final Is f28147F;
-
-    /* renamed from: F0, reason: collision with root package name */
-    public FN f28148F0;
+    public final Is f28944F;
 
     /* renamed from: G, reason: collision with root package name */
-    public final ArrayList f28149G;
-
-    /* renamed from: G0, reason: collision with root package name */
-    public long f28150G0;
+    public final ArrayList f28945G;
 
     /* renamed from: H, reason: collision with root package name */
-    public final V2 f28151H;
-
-    /* renamed from: H0, reason: collision with root package name */
-    public boolean f28152H0;
+    public final V2 f28946H;
 
     /* renamed from: I, reason: collision with root package name */
-    public final C3534lt f28153I;
-
-    /* renamed from: I0, reason: collision with root package name */
-    public float f28154I0;
-    public final C3136eO J;
-
-    /* renamed from: J0, reason: collision with root package name */
-    public final C4266zN f28155J0;
+    public final C3557lt f28947I;
+    public final C3159eO J;
 
     /* renamed from: K, reason: collision with root package name */
-    public final E3.m f28156K;
+    public final G3.m f28948K;
 
     /* renamed from: L, reason: collision with root package name */
-    public final long f28157L;
+    public final long f28949L;
 
     /* renamed from: M, reason: collision with root package name */
-    public final IO f28158M;
+    public final IO f28950M;
 
     /* renamed from: N, reason: collision with root package name */
-    public final boolean f28159N;
+    public final boolean f28951N;
 
     /* renamed from: O, reason: collision with root package name */
-    public final BO f28160O;
+    public final BO f28952O;
 
     /* renamed from: P, reason: collision with root package name */
-    public final C3212ft f28161P;
+    public final C3235ft f28953P;
 
     /* renamed from: Q, reason: collision with root package name */
-    public final boolean f28162Q;
+    public final boolean f28954Q;
 
     /* renamed from: R, reason: collision with root package name */
-    public final Cif f28163R;
+    public final Cif f28955R;
 
     /* renamed from: S, reason: collision with root package name */
-    public boolean f28164S;
+    public boolean f28956S;
 
     /* renamed from: T, reason: collision with root package name */
-    public C3997uO f28165T;
+    public C4020uO f28957T;
 
     /* renamed from: U, reason: collision with root package name */
-    public C3943tO f28166U;
+    public C3966tO f28958U;
 
     /* renamed from: V, reason: collision with root package name */
-    public boolean f28167V;
+    public boolean f28959V;
 
     /* renamed from: W, reason: collision with root package name */
-    public boolean f28168W;
+    public boolean f28960W;
 
     /* renamed from: X, reason: collision with root package name */
-    public UN f28169X;
+    public UN f28961X;
     public int Y;
 
     /* renamed from: Z, reason: collision with root package name */
-    public C3566mO f28170Z;
+    public C3589mO f28962Z;
+
+    /* renamed from: i0, reason: collision with root package name */
+    public C4108w4 f28963i0;
+
+    /* renamed from: j0, reason: collision with root package name */
+    public boolean f28964j0;
+
+    /* renamed from: k0, reason: collision with root package name */
+    public boolean f28965k0;
+
+    /* renamed from: l0, reason: collision with root package name */
+    public boolean f28966l0;
+    public boolean m0;
 
     /* renamed from: n, reason: collision with root package name */
-    public final D0.H[] f28171n;
+    public final D0.H[] f28967n;
 
     /* renamed from: n0, reason: collision with root package name */
-    public C4085w4 f28172n0;
+    public long f28968n0;
 
     /* renamed from: o0, reason: collision with root package name */
-    public boolean f28173o0;
+    public boolean f28969o0;
 
     /* renamed from: p0, reason: collision with root package name */
-    public boolean f28174p0;
+    public int f28970p0;
 
     /* renamed from: q0, reason: collision with root package name */
-    public boolean f28175q0;
+    public boolean f28971q0;
 
     /* renamed from: r0, reason: collision with root package name */
-    public boolean f28176r0;
+    public boolean f28972r0;
 
     /* renamed from: s0, reason: collision with root package name */
-    public long f28177s0;
+    public int f28973s0;
 
     /* renamed from: t0, reason: collision with root package name */
-    public boolean f28178t0;
+    public UN f28974t0;
 
     /* renamed from: u, reason: collision with root package name */
-    public final RP[] f28179u;
+    public final SP[] f28975u;
 
     /* renamed from: u0, reason: collision with root package name */
-    public int f28180u0;
+    public long f28976u0;
 
     /* renamed from: v, reason: collision with root package name */
-    public final boolean[] f28181v;
+    public final boolean[] f28977v;
 
     /* renamed from: v0, reason: collision with root package name */
-    public boolean f28182v0;
+    public long f28978v0;
 
     /* renamed from: w, reason: collision with root package name */
-    public final C3649o f28183w;
+    public final C3672o f28979w;
 
     /* renamed from: w0, reason: collision with root package name */
-    public boolean f28184w0;
+    public int f28980w0;
 
     /* renamed from: x, reason: collision with root package name */
-    public final C3918t f28185x;
+    public final C3941t f28981x;
 
     /* renamed from: x0, reason: collision with root package name */
-    public int f28186x0;
+    public boolean f28982x0;
 
     /* renamed from: y, reason: collision with root package name */
-    public final YN f28187y;
+    public final YN f28983y;
 
     /* renamed from: y0, reason: collision with root package name */
-    public UN f28188y0;
+    public DN f28984y0;
 
     /* renamed from: z, reason: collision with root package name */
-    public final C3212ft f28189z;
+    public final C3235ft f28985z;
 
     /* renamed from: z0, reason: collision with root package name */
-    public long f28190z0;
+    public long f28986z0;
 
-    public VN(Context context, RP[] rpArr, RP[] rpArr2, C3649o c3649o, C3918t c3918t, YN yn, InterfaceC4188y interfaceC4188y, BO bo, C3997uO c3997uO, C4266zN c4266zN, long j6, boolean z3, Looper looper, V2 v22, C3534lt c3534lt, IO io, boolean z6) {
+    public VN(Context context, SP[] spArr, SP[] spArr2, C3672o c3672o, C3941t c3941t, YN yn, InterfaceC4211y interfaceC4211y, BO bo, C4020uO c4020uO, C4289zN c4289zN, long j6, boolean z6, Looper looper, V2 v22, C3557lt c3557lt, IO io, boolean z9) {
         Looper looper2;
-        FN fn = FN.f24796a;
-        this.f28150G0 = com.anythink.basead.exoplayer.b.f6382b;
-        this.f28153I = c3534lt;
-        this.f28183w = c3649o;
-        this.f28185x = c3918t;
-        this.f28187y = yn;
-        boolean z9 = false;
-        this.f28180u0 = 0;
-        this.f28182v0 = false;
-        this.f28165T = c3997uO;
-        this.f28155J0 = c4266zN;
-        this.f28157L = j6;
-        this.f28174p0 = false;
-        this.f28159N = z3;
-        this.f28151H = v22;
-        this.f28158M = io;
-        this.f28148F0 = fn;
-        this.f28160O = bo;
-        this.f28154I0 = 1.0f;
-        this.f28166U = C3943tO.f34276b;
-        this.f28164S = z6;
-        this.f28146E0 = com.anythink.basead.exoplayer.b.f6382b;
-        this.f28177s0 = com.anythink.basead.exoplayer.b.f6382b;
-        this.f28145E = yn.e();
-        C3980u7 c3980u7 = AbstractC3604n8.f32690a;
-        C3566mO a9 = C3566mO.a(c3918t);
-        this.f28170Z = a9;
-        this.f28172n0 = new C4085w4(a9);
-        int length = rpArr.length;
-        this.f28179u = new RP[2];
-        this.f28181v = new boolean[2];
-        c3649o.getClass();
-        this.f28171n = new D0.H[2];
+        FN fn = FN.f25552a;
+        this.f28938B0 = com.anythink.basead.exoplayer.b.f7168b;
+        this.f28947I = c3557lt;
+        this.f28979w = c3672o;
+        this.f28981x = c3941t;
+        this.f28983y = yn;
         boolean z10 = false;
+        this.f28970p0 = 0;
+        this.f28971q0 = false;
+        this.f28957T = c4020uO;
+        this.f28943E0 = c4289zN;
+        this.f28949L = j6;
+        this.f28965k0 = false;
+        this.f28951N = z6;
+        this.f28946H = v22;
+        this.f28950M = io;
+        this.f28936A0 = fn;
+        this.f28952O = bo;
+        this.f28941D0 = 1.0f;
+        this.f28958U = C3966tO.f35062b;
+        this.f28956S = z9;
+        this.f28986z0 = com.anythink.basead.exoplayer.b.f7168b;
+        this.f28968n0 = com.anythink.basead.exoplayer.b.f7168b;
+        this.f28942E = yn.e();
+        C4003u7 c4003u7 = AbstractC3627n8.f33468a;
+        C3589mO a9 = C3589mO.a(c3941t);
+        this.f28962Z = a9;
+        this.f28963i0 = new C4108w4(a9);
+        int length = spArr.length;
+        this.f28975u = new SP[2];
+        this.f28977v = new boolean[2];
+        c3672o.getClass();
+        this.f28967n = new D0.H[2];
+        boolean z11 = false;
         for (int i = 0; i < 2; i++) {
-            RP rp = rpArr[i];
-            rp.f27278x = i;
-            rp.f27280y = io;
-            rp.f27282z = v22;
-            RP[] rpArr3 = this.f28179u;
-            rp.getClass();
-            rpArr3[i] = rp;
-            RP rp2 = this.f28179u[i];
-            synchronized (rp2.f27264n) {
-                rp2.f27226L = c3649o;
+            SP sp = spArr[i];
+            sp.f28267x = i;
+            sp.f28269y = io;
+            sp.f28271z = v22;
+            SP[] spArr3 = this.f28975u;
+            sp.getClass();
+            spArr3[i] = sp;
+            SP sp2 = this.f28975u[i];
+            synchronized (sp2.f28253n) {
+                sp2.f28216L = c3672o;
             }
-            RP rp3 = rpArr2[i];
-            if (rp3 != null) {
-                rp3.f27278x = i;
-                rp3.f27280y = io;
-                rp3.f27282z = v22;
-                z10 = true;
+            SP sp3 = spArr2[i];
+            if (sp3 != null) {
+                sp3.f28267x = i;
+                sp3.f28269y = io;
+                sp3.f28271z = v22;
+                z11 = true;
             }
-            D0.H[] hArr = this.f28171n;
-            RP rp4 = rpArr[i];
-            D0.H h9 = new D0.H();
-            h9.f539e = rp4;
-            h9.f535a = i;
-            h9.f540f = rp3;
-            h9.f536b = 0;
-            h9.f537c = false;
-            h9.f538d = false;
-            hArr[i] = h9;
+            D0.H[] hArr = this.f28967n;
+            SP sp4 = spArr[i];
+            D0.H h3 = new D0.H();
+            h3.f434e = sp4;
+            h3.f430a = i;
+            h3.f435f = sp3;
+            h3.f431b = 0;
+            h3.f432c = false;
+            h3.f433d = false;
+            hArr[i] = h3;
         }
-        this.f28162Q = z10;
-        this.f28147F = new Is(this);
-        this.f28149G = new ArrayList();
-        this.f28142C = new U7();
-        this.f28143D = new K7();
-        AbstractC2772Sd.H(c3649o.f32823a == null);
-        c3649o.f32823a = this;
-        c3649o.f32824b = interfaceC4188y;
-        this.C0 = true;
-        C3212ft x9 = v22.x(looper, null);
-        this.f28161P = x9;
-        this.J = new C3136eO(bo, x9, new C4019ut(11, this));
-        this.f28156K = new E3.m(this, bo, x9, io, interfaceC4188y);
+        this.f28954Q = z11;
+        this.f28944F = new Is(this);
+        this.f28945G = new ArrayList();
+        this.f28939C = new U7();
+        this.f28940D = new K7();
+        AbstractC2792Sd.H(c3672o.f33610a == null);
+        c3672o.f33610a = this;
+        c3672o.f33611b = interfaceC4211y;
+        this.f28982x0 = true;
+        C3235ft x9 = v22.x(looper, null);
+        this.f28953P = x9;
+        this.J = new C3159eO(bo, x9, new C4042ut(11, this));
+        this.f28948K = new G3.m(this, bo, x9, io, interfaceC4211y);
         R5 r52 = new R5();
-        r52.f27173u = new Object();
-        r52.f27174v = null;
-        r52.f27175w = null;
-        r52.f27172n = 0;
-        this.f28138A = r52;
-        synchronized (r52.f27173u) {
+        r52.f27929u = new Object();
+        r52.f27930v = null;
+        r52.f27931w = null;
+        r52.f27928n = 0;
+        this.f28935A = r52;
+        synchronized (r52.f27929u) {
             try {
-                if (((Looper) r52.f27174v) == null) {
-                    if (r52.f27172n == 0 && ((HandlerThread) r52.f27175w) == null) {
-                        z9 = true;
+                if (((Looper) r52.f27930v) == null) {
+                    if (r52.f27928n == 0 && ((HandlerThread) r52.f27931w) == null) {
+                        z10 = true;
                     }
-                    AbstractC2772Sd.H(z9);
+                    AbstractC2792Sd.H(z10);
                     HandlerThread handlerThread = new HandlerThread("ExoPlayer:Playback", -16);
-                    r52.f27175w = handlerThread;
+                    r52.f27931w = handlerThread;
                     handlerThread.start();
-                    r52.f27174v = ((HandlerThread) r52.f27175w).getLooper();
+                    r52.f27930v = ((HandlerThread) r52.f27931w).getLooper();
                 }
-                r52.f27172n++;
-                looper2 = (Looper) r52.f27174v;
+                r52.f27928n++;
+                looper2 = (Looper) r52.f27930v;
             } catch (Throwable th) {
                 throw th;
             }
         }
-        this.f28140B = looper2;
-        C3212ft x10 = v22.x(looper2, this);
-        this.f28189z = x10;
-        this.f28163R = new Cif(context, looper2, this);
-        x10.b(35, new InterfaceC3328i0() { // from class: com.google.android.gms.internal.ads.RN
-            @Override // com.google.android.gms.internal.ads.InterfaceC3328i0
+        this.f28937B = looper2;
+        C3235ft x10 = v22.x(looper2, this);
+        this.f28985z = x10;
+        this.f28955R = new Cif(context, looper2, this);
+        x10.b(35, new InterfaceC3351i0() { // from class: com.google.android.gms.internal.ads.RN
+            @Override // com.google.android.gms.internal.ads.InterfaceC3351i0
             public final /* synthetic */ void a(long j9, long j10, DP dp, MediaFormat mediaFormat) {
                 VN.this.a(j9, j10, dp, mediaFormat);
             }
@@ -303,22 +301,22 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
         x10.b(39, new SN()).a();
     }
 
-    public static final boolean A(C3029cO c3029cO) {
-        if (c3029cO != null) {
+    public static final boolean A(C3052cO c3052cO) {
+        if (c3052cO != null) {
             try {
-                C3300hQ c3300hQ = c3029cO.f29473a;
-                if (c3029cO.f29477e) {
-                    IQ[] iqArr = c3029cO.f29475c;
+                C3483kQ c3483kQ = c3052cO.f30256a;
+                if (c3052cO.f30260e) {
+                    LQ[] lqArr = c3052cO.f30258c;
                     for (int i = 0; i < 2; i++) {
-                        IQ iq = iqArr[i];
-                        if (iq != null) {
-                            iq.f();
+                        LQ lq = lqArr[i];
+                        if (lq != null) {
+                            lq.f();
                         }
                     }
                 } else {
-                    c3300hQ.q();
+                    c3483kQ.q();
                 }
-                if ((!c3029cO.f29477e ? 0L : c3300hQ.i()) != Long.MIN_VALUE) {
+                if ((!c3052cO.f30260e ? 0L : c3483kQ.i()) != Long.MIN_VALUE) {
                     return true;
                 }
             } catch (IOException unused) {
@@ -327,62 +325,62 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
         return false;
     }
 
-    public static int W(U7 u72, K7 k72, int i, boolean z3, Object obj, AbstractC3604n8 abstractC3604n8, AbstractC3604n8 abstractC3604n82) {
+    public static int W(U7 u72, K7 k72, int i, boolean z6, Object obj, AbstractC3627n8 abstractC3627n8, AbstractC3627n8 abstractC3627n82) {
         U7 u73 = u72;
-        AbstractC3604n8 abstractC3604n83 = abstractC3604n8;
-        Object obj2 = abstractC3604n83.b(abstractC3604n83.o(obj, k72).f25867c, u72, 0L).f27893a;
-        for (int i6 = 0; i6 < abstractC3604n82.a(); i6++) {
-            if (abstractC3604n82.b(i6, u72, 0L).f27893a.equals(obj2)) {
-                return i6;
+        AbstractC3627n8 abstractC3627n83 = abstractC3627n8;
+        Object obj2 = abstractC3627n83.b(abstractC3627n83.o(obj, k72).f26619c, u72, 0L).f28690a;
+        for (int i4 = 0; i4 < abstractC3627n82.a(); i4++) {
+            if (abstractC3627n82.b(i4, u72, 0L).f28690a.equals(obj2)) {
+                return i4;
             }
         }
-        int e9 = abstractC3604n83.e(obj);
-        int c9 = abstractC3604n83.c();
-        int i9 = -1;
-        int i10 = 0;
+        int e9 = abstractC3627n83.e(obj);
+        int c9 = abstractC3627n83.c();
+        int i6 = -1;
+        int i9 = 0;
         while (true) {
-            if (i10 >= c9 || i9 != -1) {
+            if (i9 >= c9 || i6 != -1) {
                 break;
             }
-            AbstractC3604n8 abstractC3604n84 = abstractC3604n83;
-            int l9 = abstractC3604n84.l(e9, k72, u73, i, z3);
+            AbstractC3627n8 abstractC3627n84 = abstractC3627n83;
+            int l9 = abstractC3627n84.l(e9, k72, u73, i, z6);
             if (l9 == -1) {
-                i9 = -1;
+                i6 = -1;
                 break;
             }
-            i9 = abstractC3604n82.e(abstractC3604n84.f(l9));
-            i10++;
-            abstractC3604n83 = abstractC3604n84;
+            i6 = abstractC3627n82.e(abstractC3627n84.f(l9));
+            i9++;
+            abstractC3627n83 = abstractC3627n84;
             e9 = l9;
             u73 = u72;
         }
-        if (i9 == -1) {
+        if (i6 == -1) {
             return -1;
         }
-        return abstractC3604n82.d(i9, k72, false).f25867c;
+        return abstractC3627n82.d(i6, k72, false).f26619c;
     }
 
-    public static Pair z(AbstractC3604n8 abstractC3604n8, UN un, int i, boolean z3, U7 u72, K7 k72) {
-        AbstractC3604n8 abstractC3604n82 = un.f27921a;
-        if (abstractC3604n8.g()) {
+    public static Pair z(AbstractC3627n8 abstractC3627n8, UN un, int i, boolean z6, U7 u72, K7 k72) {
+        AbstractC3627n8 abstractC3627n82 = un.f28718a;
+        if (abstractC3627n8.g()) {
             return null;
         }
-        AbstractC3604n8 abstractC3604n83 = true == abstractC3604n82.g() ? abstractC3604n8 : abstractC3604n82;
+        AbstractC3627n8 abstractC3627n83 = true == abstractC3627n82.g() ? abstractC3627n8 : abstractC3627n82;
         try {
-            Pair m4 = abstractC3604n83.m(u72, k72, un.f27922b, un.f27923c);
-            if (!abstractC3604n8.equals(abstractC3604n83)) {
-                if (abstractC3604n8.e(m4.first) == -1) {
-                    int W8 = W(u72, k72, i, z3, m4.first, abstractC3604n83, abstractC3604n8);
-                    if (W8 != -1) {
-                        return abstractC3604n8.m(u72, k72, W8, com.anythink.basead.exoplayer.b.f6382b);
+            Pair m9 = abstractC3627n83.m(u72, k72, un.f28719b, un.f28720c);
+            if (!abstractC3627n8.equals(abstractC3627n83)) {
+                if (abstractC3627n8.e(m9.first) == -1) {
+                    int W3 = W(u72, k72, i, z6, m9.first, abstractC3627n83, abstractC3627n8);
+                    if (W3 != -1) {
+                        return abstractC3627n8.m(u72, k72, W3, com.anythink.basead.exoplayer.b.f7168b);
                     }
                     return null;
                 }
-                if (abstractC3604n83.o(m4.first, k72).f25869e && abstractC3604n83.b(k72.f25867c, u72, 0L).f27902k == abstractC3604n83.e(m4.first)) {
-                    return abstractC3604n8.m(u72, k72, abstractC3604n8.o(m4.first, k72).f25867c, un.f27923c);
+                if (abstractC3627n83.o(m9.first, k72).f26621e && abstractC3627n83.b(k72.f26619c, u72, 0L).f28699k == abstractC3627n83.e(m9.first)) {
+                    return abstractC3627n8.m(u72, k72, abstractC3627n8.o(m9.first, k72).f26619c, un.f28720c);
                 }
             }
-            return m4;
+            return m9;
         } catch (IndexOutOfBoundsException unused) {
             return null;
         }
@@ -390,27 +388,27 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
 
     public final void B() {
         for (int i = 0; i < 2; i++) {
-            D0.H[] hArr = this.f28171n;
+            D0.H[] hArr = this.f28967n;
             int r9 = hArr[i].r();
-            D0.H h9 = hArr[i];
-            RP rp = (RP) h9.f539e;
-            Is is = this.f28147F;
-            h9.i(rp, is);
-            RP rp2 = (RP) h9.f540f;
-            if (rp2 != null) {
-                boolean z3 = (rp2.f27206A == 0 || h9.f536b == 3) ? false : true;
-                h9.i(rp2, is);
-                h9.j(false);
-                if (z3) {
-                    rp2.getClass();
-                    rp2.b(17, (RP) h9.f539e);
+            D0.H h3 = hArr[i];
+            SP sp = (SP) h3.f434e;
+            Is is = this.f28944F;
+            h3.i(sp, is);
+            SP sp2 = (SP) h3.f435f;
+            if (sp2 != null) {
+                boolean z6 = (sp2.f28196A == 0 || h3.f431b == 3) ? false : true;
+                h3.i(sp2, is);
+                h3.j(false);
+                if (z6) {
+                    sp2.getClass();
+                    sp2.b(17, (SP) h3.f434e);
                 }
             }
-            h9.f536b = 0;
+            h3.f431b = 0;
             m(i, false);
-            this.f28186x0 -= r9;
+            this.f28973s0 -= r9;
         }
-        this.f28150G0 = com.anythink.basead.exoplayer.b.f6382b;
+        this.f28938B0 = com.anythink.basead.exoplayer.b.f7168b;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:16:0x003a A[Catch: RuntimeException -> 0x0044, TryCatch #1 {RuntimeException -> 0x0044, blocks: (B:38:0x0035, B:18:0x0040, B:16:0x003a, B:30:0x0047), top: B:37:0x0035 }] */
@@ -420,56 +418,56 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void C() {
-        boolean z3;
-        RP rp;
-        if (!this.f28162Q || !V()) {
+        boolean z6;
+        SP sp;
+        if (!this.f28954Q || !V()) {
             return;
         }
         int i = 0;
         while (true) {
-            int i6 = 2;
+            int i4 = 2;
             if (i >= 2) {
-                this.f28150G0 = com.anythink.basead.exoplayer.b.f6382b;
+                this.f28938B0 = com.anythink.basead.exoplayer.b.f7168b;
                 return;
             }
-            D0.H h9 = this.f28171n[i];
-            int r9 = h9.r();
-            Is is = this.f28147F;
-            if (h9.q()) {
-                int i9 = h9.f536b;
-                if (i9 == 4) {
-                    i6 = i9;
-                } else if (i9 != 2) {
-                    i6 = i9;
-                    z3 = false;
-                    if (z3) {
-                        rp = (RP) h9.f540f;
-                        if (rp == null) {
+            D0.H h3 = this.f28967n[i];
+            int r9 = h3.r();
+            Is is = this.f28944F;
+            if (h3.q()) {
+                int i6 = h3.f431b;
+                if (i6 == 4) {
+                    i4 = i6;
+                } else if (i6 != 2) {
+                    i4 = i6;
+                    z6 = false;
+                    if (z6) {
+                        sp = (SP) h3.f435f;
+                        if (sp == null) {
                             throw null;
                         }
-                        h9.i(rp, is);
-                        h9.j(z3);
-                        h9.f536b = i6 != 4 ? 0 : 1;
+                        h3.i(sp, is);
+                        h3.j(z6);
+                        h3.f431b = i4 != 4 ? 0 : 1;
                     } else {
                         try {
-                            rp = (RP) h9.f539e;
-                            h9.i(rp, is);
+                            sp = (SP) h3.f434e;
+                            h3.i(sp, is);
                         } catch (RuntimeException e9) {
-                            AbstractC2968bG.J("RendererHolder", "Disable prewarming failed.", e9);
+                            AbstractC2991bG.J("RendererHolder", "Disable prewarming failed.", e9);
                         }
                         try {
-                            h9.j(z3);
+                            h3.j(z6);
                         } catch (RuntimeException e10) {
-                            AbstractC2968bG.J("RendererHolder", "Reset prewarming failed.", e10);
+                            AbstractC2991bG.J("RendererHolder", "Reset prewarming failed.", e10);
                         }
-                        h9.f536b = i6 != 4 ? 0 : 1;
+                        h3.f431b = i4 != 4 ? 0 : 1;
                     }
                 }
-                z3 = true;
-                if (z3) {
+                z6 = true;
+                if (z6) {
                 }
             }
-            this.f28186x0 -= r9 - h9.r();
+            this.f28973s0 -= r9 - h3.r();
             i++;
         }
     }
@@ -481,127 +479,127 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
     */
     public final void D() {
         int i;
+        int i4;
         int i6;
-        int i9;
-        Is is = this.f28147F;
-        float f3 = is.j().f34216a;
-        C3136eO c3136eO = this.J;
-        C3029cO c3029cO = c3136eO.f29921h;
-        C3029cO c3029cO2 = c3136eO.i;
-        C3918t c3918t = null;
-        C3029cO c3029cO3 = c3029cO;
-        boolean z3 = true;
-        while (c3029cO3 != null && c3029cO3.f29477e) {
-            C3918t f9 = c3029cO3.f(this.f28170Z.f31948a);
-            C3918t c3918t2 = c3029cO3 == c3136eO.f29921h ? f9 : c3918t;
-            C3918t c3918t3 = c3029cO3.f29486o;
-            boolean z6 = false;
-            if (c3918t3 != null) {
-                InterfaceC3757q[] interfaceC3757qArr = (InterfaceC3757q[]) f9.f34179v;
-                if (((InterfaceC3757q[]) c3918t3.f34179v).length == interfaceC3757qArr.length) {
-                    for (int i10 = 0; i10 < interfaceC3757qArr.length; i10++) {
-                        if (f9.d(c3918t3, i10)) {
+        Is is = this.f28944F;
+        float f2 = is.j().f35002a;
+        C3159eO c3159eO = this.J;
+        C3052cO c3052cO = c3159eO.f30713h;
+        C3052cO c3052cO2 = c3159eO.i;
+        C3941t c3941t = null;
+        C3052cO c3052cO3 = c3052cO;
+        boolean z6 = true;
+        while (c3052cO3 != null && c3052cO3.f30260e) {
+            C3941t f9 = c3052cO3.f(this.f28962Z.f32728a);
+            C3941t c3941t2 = c3052cO3 == c3159eO.f30713h ? f9 : c3941t;
+            C3941t c3941t3 = c3052cO3.f30269o;
+            boolean z9 = false;
+            if (c3941t3 != null) {
+                InterfaceC3780q[] interfaceC3780qArr = (InterfaceC3780q[]) f9.f34965v;
+                if (((InterfaceC3780q[]) c3941t3.f34965v).length == interfaceC3780qArr.length) {
+                    for (int i9 = 0; i9 < interfaceC3780qArr.length; i9++) {
+                        if (f9.d(c3941t3, i9)) {
                         }
                     }
-                    if (c3029cO3 != c3029cO2) {
-                        z6 = true;
+                    if (c3052cO3 != c3052cO2) {
+                        z9 = true;
                     }
-                    z3 &= z6;
-                    c3029cO3 = c3029cO3.f29484m;
-                    c3918t = c3918t2;
+                    z6 &= z9;
+                    c3052cO3 = c3052cO3.f30267m;
+                    c3941t = c3941t2;
                 }
             }
-            if (z3) {
-                C3029cO c3029cO4 = c3136eO.f29921h;
-                int y7 = c3136eO.y(c3029cO4) & 1;
-                D0.H[] hArr = this.f28171n;
+            if (z6) {
+                C3052cO c3052cO4 = c3159eO.f30713h;
+                int y7 = c3159eO.y(c3052cO4) & 1;
+                D0.H[] hArr = this.f28967n;
                 boolean[] zArr = new boolean[2];
-                c3918t2.getClass();
-                long g4 = c3029cO4.g(c3918t2, this.f28170Z.f31964r, 1 == y7, zArr);
-                C3566mO c3566mO = this.f28170Z;
-                boolean z9 = (c3566mO.f31952e == 4 || g4 == c3566mO.f31964r) ? false : true;
-                C3566mO c3566mO2 = this.f28170Z;
-                boolean z10 = z9;
+                c3941t2.getClass();
+                long g9 = c3052cO4.g(c3941t2, this.f28962Z.f32744r, 1 == y7, zArr);
+                C3589mO c3589mO = this.f28962Z;
+                boolean z10 = (c3589mO.f32732e == 4 || g9 == c3589mO.f32744r) ? false : true;
+                C3589mO c3589mO2 = this.f28962Z;
+                boolean z11 = z10;
                 i = 4;
-                this.f28170Z = N(c3566mO2.f31949b, g4, c3566mO2.f31950c, c3566mO2.f31951d, z10, 5);
-                if (z10) {
-                    s(g4, true);
+                this.f28962Z = N(c3589mO2.f32729b, g9, c3589mO2.f32730c, c3589mO2.f32731d, z11, 5);
+                if (z11) {
+                    s(g9, true);
                 }
                 C();
                 boolean[] zArr2 = new boolean[2];
-                int i11 = 0;
-                for (int i12 = 2; i11 < i12; i12 = 2) {
-                    int r9 = hArr[i11].r();
-                    zArr2[i11] = hArr[i11].g();
-                    D0.H h9 = hArr[i11];
-                    IQ iq = c3029cO4.f29475c[i11];
-                    long j6 = this.f28190z0;
-                    boolean z11 = zArr[i11];
-                    RP rp = (RP) h9.f539e;
-                    if (D0.H.l(rp)) {
-                        if (iq != rp.f27208B) {
-                            h9.i(rp, is);
-                        } else if (z11) {
-                            rp.N(j6, false, true);
+                int i10 = 0;
+                for (int i11 = 2; i10 < i11; i11 = 2) {
+                    int r9 = hArr[i10].r();
+                    zArr2[i10] = hArr[i10].g();
+                    D0.H h3 = hArr[i10];
+                    LQ lq = c3052cO4.f30258c[i10];
+                    long j6 = this.f28976u0;
+                    boolean z12 = zArr[i10];
+                    SP sp = (SP) h3.f434e;
+                    if (D0.H.l(sp)) {
+                        if (lq != sp.f28198B) {
+                            h3.i(sp, is);
+                        } else if (z12) {
+                            sp.N(j6, false, true);
                         }
                     }
-                    RP rp2 = (RP) h9.f540f;
-                    if (rp2 != null && D0.H.l(rp2)) {
-                        if (iq != rp2.f27208B) {
-                            h9.i(rp2, is);
-                        } else if (z11) {
-                            rp2.N(j6, false, true);
+                    SP sp2 = (SP) h3.f435f;
+                    if (sp2 != null && D0.H.l(sp2)) {
+                        if (lq != sp2.f28198B) {
+                            h3.i(sp2, is);
+                        } else if (z12) {
+                            sp2.N(j6, false, true);
                         }
                     }
-                    if (r9 - hArr[i11].r() > 0) {
-                        m(i11, false);
+                    if (r9 - hArr[i10].r() > 0) {
+                        m(i10, false);
                     }
-                    this.f28186x0 -= r9 - hArr[i11].r();
-                    i11++;
+                    this.f28973s0 -= r9 - hArr[i10].r();
+                    i10++;
                 }
-                O(zArr2, this.f28190z0);
-                c3029cO4.f29480h = true;
+                O(zArr2, this.f28976u0);
+                c3052cO4.f30263h = true;
             } else {
                 i = 4;
-                c3136eO.y(c3029cO3);
-                if (c3029cO3.f29477e) {
-                    long max = Math.max(c3029cO3.f29479g.f29761b, this.f28190z0 - c3029cO3.f29487p);
-                    if (this.f28162Q && V() && c3136eO.f29922j == c3029cO3) {
+                c3159eO.y(c3052cO3);
+                if (c3052cO3.f30260e) {
+                    long max = Math.max(c3052cO3.f30262g.f30533b, this.f28976u0 - c3052cO3.f30270p);
+                    if (this.f28954Q && V() && c3159eO.f30714j == c3052cO3) {
                         C();
                     }
-                    i6 = 2;
-                    i9 = 4;
-                    c3029cO3.g(f9, max, false, new boolean[2]);
+                    i4 = 2;
+                    i6 = 4;
+                    c3052cO3.g(f9, max, false, new boolean[2]);
                     Q(true);
-                    if (this.f28170Z.f31952e == i9) {
+                    if (this.f28962Z.f32732e == i6) {
                         L();
                         l();
-                        this.f28189z.c(i6);
+                        this.f28985z.c(i4);
                         return;
                     }
                     return;
                 }
             }
-            i9 = i;
-            i6 = 2;
+            i6 = i;
+            i4 = 2;
             Q(true);
-            if (this.f28170Z.f31952e == i9) {
+            if (this.f28962Z.f32732e == i6) {
             }
         }
     }
 
     public final boolean E() {
-        C3029cO c3029cO = this.J.f29921h;
-        long j6 = c3029cO.f29479g.f29764e;
-        if (c3029cO.f29477e) {
-            return j6 == com.anythink.basead.exoplayer.b.f6382b || this.f28170Z.f31964r < j6 || !T();
+        C3052cO c3052cO = this.J.f30713h;
+        long j6 = c3052cO.f30262g.f30536e;
+        if (c3052cO.f30260e) {
+            return j6 == com.anythink.basead.exoplayer.b.f7168b || this.f28962Z.f32744r < j6 || !T();
         }
         return false;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:250:0x0262, code lost:
     
-        r13.f25870f.getClass();
+        r13.f26622f.getClass();
      */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:118:0x03bd A[Catch: all -> 0x03c3, TRY_ENTER, TryCatch #3 {all -> 0x03c3, blocks: (B:118:0x03bd, B:119:0x03cb, B:121:0x03d1, B:59:0x03e5, B:83:0x03f4, B:85:0x03fe, B:87:0x0406), top: B:57:0x037b }] */
@@ -645,7 +643,7 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
     /* JADX WARN: Type inference failed for: r4v82 */
     /* JADX WARN: Type inference failed for: r4v83 */
     /* JADX WARN: Type inference failed for: r4v86 */
-    /* JADX WARN: Type inference failed for: r8v23, types: [com.google.android.gms.internal.ads.RP] */
+    /* JADX WARN: Type inference failed for: r8v23, types: [com.google.android.gms.internal.ads.SP] */
     /* JADX WARN: Type inference failed for: r8v24 */
     /* JADX WARN: Type inference failed for: r8v26, types: [boolean] */
     /* JADX WARN: Type inference failed for: r8v27 */
@@ -654,232 +652,232 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void F(AbstractC3604n8 abstractC3604n8, boolean z3) {
+    public final void F(AbstractC3627n8 abstractC3627n8, boolean z6) {
         long j6;
-        boolean z6;
         boolean z9;
+        boolean z10;
         long j9;
         K7 k72;
-        C3676oQ c3676oQ;
-        AbstractC3604n8 abstractC3604n82;
+        C3860rQ c3860rQ;
+        AbstractC3627n8 abstractC3627n82;
         int i;
         Object obj;
         long j10;
-        int i6;
+        int i4;
         long j11;
-        boolean z10;
-        int i9;
         boolean z11;
+        int i6;
         boolean z12;
         boolean z13;
+        boolean z14;
         K7 k73;
         Object obj2;
         long j12;
-        C3676oQ E8;
-        AbstractC3604n8 abstractC3604n83;
+        C3860rQ E8;
+        AbstractC3627n8 abstractC3627n83;
+        int i9;
+        C3860rQ c3860rQ2;
         int i10;
-        C3676oQ c3676oQ2;
         int i11;
-        int i12;
-        boolean z14;
         boolean z15;
+        boolean z16;
         long j13;
         long j14;
-        boolean z16;
-        int i13;
+        boolean z17;
+        int i12;
         Object obj3;
         K7 k74;
-        boolean z17;
-        C3676oQ c3676oQ3;
-        long j15;
         boolean z18;
+        C3860rQ c3860rQ3;
+        long j15;
         boolean z19;
         boolean z20;
-        ?? r82;
         boolean z21;
+        ?? r82;
+        boolean z22;
+        int i13;
+        AbstractC3627n8 abstractC3627n84;
         int i14;
-        AbstractC3604n8 abstractC3604n84;
         int i15;
-        int i16;
         int[] iArr;
-        int i17;
+        int i16;
         Object obj4;
         long longValue;
-        int i18;
-        boolean z22;
+        int i17;
         boolean z23;
-        long j16;
         boolean z24;
+        long j16;
         boolean z25;
-        ?? r42;
         boolean z26;
-        AbstractC3604n8 abstractC3604n85;
-        C3676oQ c3676oQ4;
-        UN un;
+        ?? r42;
         boolean z27;
-        int i19;
+        AbstractC3627n8 abstractC3627n85;
+        C3860rQ c3860rQ4;
+        UN un;
         boolean z28;
+        int i18;
+        boolean z29;
         long j17;
         long j18;
         UN un2;
-        boolean z29;
+        boolean z30;
         ?? r13;
         long H8;
-        boolean z30;
+        boolean z31;
         int C8;
         UN un3;
-        boolean z31;
+        boolean z32;
         long j19;
         long j20;
         UN un4;
-        boolean z32;
-        C3136eO c3136eO;
-        long j21;
         boolean z33;
-        C3566mO c3566mO = this.f28170Z;
-        UN un5 = this.f28188y0;
-        K7 k75 = this.f28143D;
-        int i20 = this.f28180u0;
-        boolean z34 = this.f28182v0;
-        boolean z35 = this.f28164S;
-        if (abstractC3604n8.g()) {
-            C3676oQ c3676oQ5 = C3566mO.f31947t;
-            C3676oQ c3676oQ6 = c3566mO.f31949b;
-            boolean z36 = (c3676oQ5.equals(c3676oQ6) && c3566mO.f31964r == 0) ? false : true;
-            if (z36 && z3) {
-                AbstractC3604n8 abstractC3604n86 = c3566mO.f31948a;
-                if (!abstractC3604n86.g() && !abstractC3604n86.o(c3676oQ6.f32905a, k75).f25869e) {
-                    z33 = true;
-                    c3676oQ3 = c3676oQ5;
-                    i14 = 4;
+        C3159eO c3159eO;
+        long j21;
+        boolean z34;
+        C3589mO c3589mO = this.f28962Z;
+        UN un5 = this.f28974t0;
+        K7 k75 = this.f28940D;
+        int i19 = this.f28970p0;
+        boolean z35 = this.f28971q0;
+        boolean z36 = this.f28956S;
+        if (abstractC3627n8.g()) {
+            C3860rQ c3860rQ5 = C3589mO.f32727t;
+            C3860rQ c3860rQ6 = c3589mO.f32729b;
+            boolean z37 = (c3860rQ5.equals(c3860rQ6) && c3589mO.f32744r == 0) ? false : true;
+            if (z37 && z6) {
+                AbstractC3627n8 abstractC3627n86 = c3589mO.f32728a;
+                if (!abstractC3627n86.g() && !abstractC3627n86.o(c3860rQ6.f34406a, k75).f26621e) {
+                    z34 = true;
+                    c3860rQ3 = c3860rQ5;
+                    i13 = 4;
                     j15 = 0;
                     j13 = 0;
-                    z19 = false;
+                    z20 = false;
                     r82 = 1;
-                    z21 = false;
-                    j6 = com.anythink.basead.exoplayer.b.f6382b;
-                    j12 = com.anythink.basead.exoplayer.b.f6382b;
-                    abstractC3604n83 = abstractC3604n8;
-                    z20 = z33;
-                    z18 = z36;
+                    z22 = false;
+                    j6 = com.anythink.basead.exoplayer.b.f7168b;
+                    j12 = com.anythink.basead.exoplayer.b.f7168b;
+                    abstractC3627n83 = abstractC3627n8;
+                    z21 = z34;
+                    z19 = z37;
                 }
             }
-            z33 = false;
-            c3676oQ3 = c3676oQ5;
-            i14 = 4;
+            z34 = false;
+            c3860rQ3 = c3860rQ5;
+            i13 = 4;
             j15 = 0;
             j13 = 0;
-            z19 = false;
+            z20 = false;
             r82 = 1;
-            z21 = false;
-            j6 = com.anythink.basead.exoplayer.b.f6382b;
-            j12 = com.anythink.basead.exoplayer.b.f6382b;
-            abstractC3604n83 = abstractC3604n8;
-            z20 = z33;
-            z18 = z36;
+            z22 = false;
+            j6 = com.anythink.basead.exoplayer.b.f7168b;
+            j12 = com.anythink.basead.exoplayer.b.f7168b;
+            abstractC3627n83 = abstractC3627n8;
+            z21 = z34;
+            z19 = z37;
         } else {
-            C3676oQ c3676oQ7 = c3566mO.f31949b;
-            Object obj5 = c3676oQ7.f32905a;
-            AbstractC3604n8 abstractC3604n87 = c3566mO.f31948a;
-            if (abstractC3604n87.g()) {
-                j6 = com.anythink.basead.exoplayer.b.f6382b;
+            C3860rQ c3860rQ7 = c3589mO.f32729b;
+            Object obj5 = c3860rQ7.f34406a;
+            AbstractC3627n8 abstractC3627n87 = c3589mO.f32728a;
+            if (abstractC3627n87.g()) {
+                j6 = com.anythink.basead.exoplayer.b.f7168b;
             } else {
-                j6 = com.anythink.basead.exoplayer.b.f6382b;
-                if (!abstractC3604n87.o(c3676oQ7.f32905a, k75).f25869e) {
-                    z6 = false;
-                    if (!c3676oQ7.b() || z6) {
-                        z9 = z6;
-                        j9 = c3566mO.f31950c;
+                j6 = com.anythink.basead.exoplayer.b.f7168b;
+                if (!abstractC3627n87.o(c3860rQ7.f34406a, k75).f26621e) {
+                    z9 = false;
+                    if (!c3860rQ7.b() || z9) {
+                        z10 = z9;
+                        j9 = c3589mO.f32730c;
                     } else {
-                        z9 = z6;
-                        j9 = c3566mO.f31964r;
+                        z10 = z9;
+                        j9 = c3589mO.f32744r;
                     }
-                    U7 u72 = this.f28142C;
+                    U7 u72 = this.f28939C;
                     if (un5 == null) {
-                        c3676oQ = c3676oQ7;
-                        abstractC3604n82 = abstractC3604n8;
-                        Pair z37 = z(abstractC3604n82, un5, i20, z34, u72, k75);
-                        if (z37 == null) {
-                            i18 = abstractC3604n82.k(z34);
+                        c3860rQ = c3860rQ7;
+                        abstractC3627n82 = abstractC3627n8;
+                        Pair z38 = z(abstractC3627n82, un5, i19, z35, u72, k75);
+                        if (z38 == null) {
+                            i17 = abstractC3627n82.k(z35);
                             obj4 = obj5;
                             j16 = j9;
-                            z25 = true;
-                            z23 = false;
+                            z26 = true;
                             z24 = false;
+                            z25 = false;
                         } else {
-                            if (un5.f27923c == j6) {
-                                i18 = abstractC3604n82.o(z37.first, k75).f25867c;
+                            if (un5.f28720c == j6) {
+                                i17 = abstractC3627n82.o(z38.first, k75).f26619c;
                                 obj4 = obj5;
                                 longValue = j9;
-                                z22 = false;
+                                z23 = false;
                             } else {
-                                obj4 = z37.first;
-                                longValue = ((Long) z37.second).longValue();
-                                i18 = -1;
-                                z22 = true;
+                                obj4 = z38.first;
+                                longValue = ((Long) z38.second).longValue();
+                                i17 = -1;
+                                z23 = true;
                             }
-                            z23 = c3566mO.f31952e == 4;
+                            z24 = c3589mO.f32732e == 4;
                             j16 = longValue;
-                            z24 = z22;
-                            z25 = false;
+                            z25 = z23;
+                            z26 = false;
                         }
-                        z12 = z25;
+                        z13 = z26;
                         j10 = j16;
                         i = 1;
-                        i6 = i18;
-                        z10 = z24;
+                        i4 = i17;
+                        z11 = z25;
                         obj = obj4;
                         k72 = k75;
-                        z11 = z23;
-                        i9 = -1;
+                        z12 = z24;
+                        i6 = -1;
                     } else {
                         k72 = k75;
-                        c3676oQ = c3676oQ7;
-                        abstractC3604n82 = abstractC3604n8;
-                        AbstractC3604n8 abstractC3604n88 = c3566mO.f31948a;
-                        if (abstractC3604n88.g()) {
-                            i6 = abstractC3604n82.k(z34);
+                        c3860rQ = c3860rQ7;
+                        abstractC3627n82 = abstractC3627n8;
+                        AbstractC3627n8 abstractC3627n88 = c3589mO.f32728a;
+                        if (abstractC3627n88.g()) {
+                            i4 = abstractC3627n82.k(z35);
                             obj = obj5;
                             j10 = j9;
-                            i9 = -1;
-                            z11 = false;
+                            i6 = -1;
+                            z12 = false;
                             i = 1;
-                        } else if (abstractC3604n82.e(obj5) == -1) {
+                        } else if (abstractC3627n82.e(obj5) == -1) {
                             i = 1;
-                            int W8 = W(u72, k72, i20, z34, obj5, abstractC3604n88, abstractC3604n82);
+                            int W3 = W(u72, k72, i19, z35, obj5, abstractC3627n88, abstractC3627n82);
                             u72 = u72;
-                            abstractC3604n82 = abstractC3604n82;
+                            abstractC3627n82 = abstractC3627n82;
                             obj5 = obj5;
-                            if (W8 == -1) {
-                                i6 = abstractC3604n82.k(z34);
-                                z13 = true;
+                            if (W3 == -1) {
+                                i4 = abstractC3627n82.k(z35);
+                                z14 = true;
                             } else {
-                                i6 = W8;
-                                z13 = false;
+                                i4 = W3;
+                                z14 = false;
                             }
-                            z12 = z13;
+                            z13 = z14;
                             obj = obj5;
                             j10 = j9;
-                            i9 = -1;
+                            i6 = -1;
+                            z12 = false;
                             z11 = false;
-                            z10 = false;
                         } else {
                             i = 1;
                             if (j9 == j6) {
-                                i6 = abstractC3604n82.o(obj5, k72).f25867c;
+                                i4 = abstractC3627n82.o(obj5, k72).f26619c;
                                 obj = obj5;
                                 j10 = j9;
-                            } else if (z9) {
-                                abstractC3604n88.o(obj5, k72);
-                                if (abstractC3604n88.b(k72.f25867c, u72, 0L).f27902k == abstractC3604n88.e(obj5)) {
-                                    Pair m4 = abstractC3604n82.m(u72, k72, abstractC3604n82.o(obj5, k72).f25867c, j9);
+                            } else if (z10) {
+                                abstractC3627n88.o(obj5, k72);
+                                if (abstractC3627n88.b(k72.f26619c, u72, 0L).f28699k == abstractC3627n88.e(obj5)) {
+                                    Pair m9 = abstractC3627n82.m(u72, k72, abstractC3627n82.o(obj5, k72).f26619c, j9);
                                     u72 = u72;
                                     k72 = k72;
-                                    obj = m4.first;
-                                    j11 = ((Long) m4.second).longValue();
-                                } else if (abstractC3604n82.o(obj5, k72).f25868d != j6) {
-                                    long j22 = k72.f25868d - 1;
-                                    String str = AbstractC3159eu.f29993a;
+                                    obj = m9.first;
+                                    j11 = ((Long) m9.second).longValue();
+                                } else if (abstractC3627n82.o(obj5, k72).f26620d != j6) {
+                                    long j22 = k72.f26620d - 1;
+                                    String str = AbstractC3182eu.f30782a;
                                     j11 = Math.max(0L, Math.min(j9, j22));
                                     obj = obj5;
                                 } else {
@@ -887,28 +885,28 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
                                     j11 = j9;
                                 }
                                 j10 = j11;
-                                z10 = true;
+                                z11 = true;
+                                i4 = -1;
                                 i6 = -1;
-                                i9 = -1;
-                                z11 = false;
                                 z12 = false;
+                                z13 = false;
                             } else {
                                 obj = obj5;
                                 j10 = j9;
-                                i6 = -1;
+                                i4 = -1;
                             }
-                            i9 = -1;
-                            z11 = false;
+                            i6 = -1;
+                            z12 = false;
                         }
-                        z12 = false;
-                        z10 = false;
+                        z13 = false;
+                        z11 = false;
                     }
-                    if (i6 == i9) {
+                    if (i4 == i6) {
                         K7 k76 = k72;
-                        Pair m9 = abstractC3604n82.m(u72, k76, i6, com.anythink.basead.exoplayer.b.f6382b);
+                        Pair m10 = abstractC3627n82.m(u72, k76, i4, com.anythink.basead.exoplayer.b.f7168b);
                         k73 = k76;
-                        Object obj6 = m9.first;
-                        j10 = ((Long) m9.second).longValue();
+                        Object obj6 = m10.first;
+                        j10 = ((Long) m10.second).longValue();
                         obj2 = obj6;
                         j12 = j6;
                     } else {
@@ -918,279 +916,279 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
                     }
                     long j23 = j9;
                     long j24 = j10;
-                    E8 = this.J.E(c3566mO, abstractC3604n8, obj2, z35, z9);
-                    abstractC3604n83 = abstractC3604n8;
-                    i10 = E8.f32909e;
-                    if (i10 == -1) {
-                        c3676oQ2 = c3676oQ;
-                        int i21 = c3676oQ2.f32909e;
-                        if (i21 == -1 || i10 < i21) {
-                            i11 = 0;
+                    E8 = this.J.E(c3589mO, abstractC3627n8, obj2, z36, z10);
+                    abstractC3627n83 = abstractC3627n8;
+                    i9 = E8.f34410e;
+                    if (i9 == -1) {
+                        c3860rQ2 = c3860rQ;
+                        int i20 = c3860rQ2.f34410e;
+                        if (i20 == -1 || i9 < i20) {
+                            i10 = 0;
                             boolean equals = obj5.equals(obj2);
-                            i12 = (equals || c3676oQ2.b() || E8.b() || i11 == 0) ? 0 : i;
-                            K7 o6 = abstractC3604n83.o(obj2, k73);
-                            z14 = z6;
-                            if (!z9) {
+                            i11 = (equals || c3860rQ2.b() || E8.b() || i10 == 0) ? 0 : i;
+                            K7 o4 = abstractC3627n83.o(obj2, k73);
+                            z15 = z9;
+                            if (!z10) {
                                 ?? r12 = (j23 > j12 ? 1 : (j23 == j12 ? 0 : -1));
-                                z14 = r12;
+                                z15 = r12;
                                 if (r12 == 0) {
-                                    boolean equals2 = obj5.equals(E8.f32905a);
-                                    z14 = equals2;
+                                    boolean equals2 = obj5.equals(E8.f34406a);
+                                    z15 = equals2;
                                     if (equals2) {
-                                        if (c3676oQ2.b()) {
-                                            o6.c(c3676oQ2.f32906b);
+                                        if (c3860rQ2.b()) {
+                                            o4.c(c3860rQ2.f34407b);
                                         }
                                         boolean b9 = E8.b();
-                                        z14 = b9;
+                                        z15 = b9;
                                         if (b9) {
-                                            int i22 = E8.f32906b;
-                                            o6.c(i22);
-                                            z14 = i22;
+                                            int i21 = E8.f34407b;
+                                            o4.c(i21);
+                                            z15 = i21;
                                         }
                                     }
                                 }
                             }
-                            if (i == i12) {
-                                E8 = c3676oQ2;
+                            if (i == i11) {
+                                E8 = c3860rQ2;
                             }
                             if (E8.b()) {
-                                if (E8.equals(c3676oQ2)) {
-                                    j14 = c3566mO.f31964r;
-                                    z15 = z11;
+                                if (E8.equals(c3860rQ2)) {
+                                    j14 = c3589mO.f32744r;
+                                    z16 = z12;
                                 } else {
-                                    abstractC3604n83.o(E8.f32905a, k73);
-                                    int i23 = E8.f32907c;
-                                    C2897a a9 = k73.f25870f.a(E8.f32906b);
-                                    int i24 = 0;
+                                    abstractC3627n83.o(E8.f34406a, k73);
+                                    int i22 = E8.f34408c;
+                                    C2920a a9 = k73.f26622f.a(E8.f34407b);
+                                    int i23 = 0;
                                     while (true) {
-                                        int[] iArr2 = a9.f28986d;
-                                        if (i24 >= iArr2.length || (i17 = iArr2[i24]) == 0 || i17 == i) {
+                                        int[] iArr2 = a9.f29756d;
+                                        if (i23 >= iArr2.length || (i16 = iArr2[i23]) == 0 || i16 == i) {
                                             break;
                                         } else {
-                                            i24 += i;
+                                            i23 += i;
                                         }
                                     }
-                                    z15 = z11;
+                                    z16 = z12;
                                     j14 = 0;
                                 }
                                 j13 = 0;
                             } else {
-                                if (equals && c3676oQ2.b()) {
-                                    C2897a a10 = abstractC3604n83.o(obj2, k73).f25870f.a(c3676oQ2.f32906b);
+                                if (equals && c3860rQ2.b()) {
+                                    C2920a a10 = abstractC3627n83.o(obj2, k73).f26622f.a(c3860rQ2.f34407b);
                                     a10.getClass();
-                                    z15 = z11;
-                                    long j25 = c3566mO.f31950c;
+                                    z16 = z12;
+                                    long j25 = c3589mO.f32730c;
                                     j13 = 0;
                                     if (j25 == j6 || j25 < 0) {
-                                        int i25 = a10.f28983a;
-                                        int i26 = c3676oQ2.f32907c;
-                                        if (i25 > i26 && a10.f28986d[i26] == 2) {
-                                            long j26 = abstractC3604n83.o(obj2, k73).f25868d;
+                                        int i24 = a10.f29753a;
+                                        int i25 = c3860rQ2.f34408c;
+                                        if (i24 > i25 && a10.f29756d[i25] == 2) {
+                                            long j26 = abstractC3627n83.o(obj2, k73).f26620d;
                                             j14 = j26 != j6 ? Math.min(j26 - 1, j24) : j24;
                                             j12 = j14;
                                         }
                                     }
                                 } else {
-                                    z15 = z11;
+                                    z16 = z12;
                                     j13 = 0;
                                 }
                                 j14 = j24;
                             }
-                            z16 = E8.equals(c3676oQ2) || j14 != c3566mO.f31964r;
-                            i13 = abstractC3604n83.e(obj5) == -1 ? 4 : 3;
-                            obj3 = E8.f32905a;
-                            if (obj3.equals(obj5) && (i15 = E8.f32906b) != -1) {
-                                C2897a a11 = abstractC3604n83.o(obj3, k73).f25870f.a(i15);
-                                i16 = E8.f32907c;
-                                iArr = a11.f28986d;
-                                if (i16 < iArr.length || iArr[i16] != 2) {
+                            z17 = E8.equals(c3860rQ2) || j14 != c3589mO.f32744r;
+                            i12 = abstractC3627n83.e(obj5) == -1 ? 4 : 3;
+                            obj3 = E8.f34406a;
+                            if (obj3.equals(obj5) && (i14 = E8.f34407b) != -1) {
+                                C2920a a11 = abstractC3627n83.o(obj3, k73).f26622f.a(i14);
+                                i15 = E8.f34408c;
+                                iArr = a11.f29756d;
+                                if (i15 < iArr.length || iArr[i15] != 2) {
                                     k74 = k73;
-                                    i13 = 0;
-                                    if (z16 && z3) {
-                                        abstractC3604n84 = c3566mO.f31948a;
-                                        if (!abstractC3604n84.g() && !abstractC3604n84.o(obj5, k74).f25869e) {
-                                            z17 = true;
-                                            c3676oQ3 = E8;
+                                    i12 = 0;
+                                    if (z17 && z6) {
+                                        abstractC3627n84 = c3589mO.f32728a;
+                                        if (!abstractC3627n84.g() && !abstractC3627n84.o(obj5, k74).f26621e) {
+                                            z18 = true;
+                                            c3860rQ3 = E8;
                                             j15 = j14;
-                                            z18 = z16;
-                                            z19 = z15;
-                                            z20 = z17;
-                                            r82 = z12;
-                                            z21 = z10;
-                                            i14 = i13;
+                                            z19 = z17;
+                                            z20 = z16;
+                                            z21 = z18;
+                                            r82 = z13;
+                                            z22 = z11;
+                                            i13 = i12;
                                         }
                                     }
-                                    z17 = false;
-                                    c3676oQ3 = E8;
+                                    z18 = false;
+                                    c3860rQ3 = E8;
                                     j15 = j14;
-                                    z18 = z16;
-                                    z19 = z15;
-                                    z20 = z17;
-                                    r82 = z12;
-                                    z21 = z10;
-                                    i14 = i13;
+                                    z19 = z17;
+                                    z20 = z16;
+                                    z21 = z18;
+                                    r82 = z13;
+                                    z22 = z11;
+                                    i13 = i12;
                                 }
                             }
                             k74 = k73;
-                            if (z16) {
-                                abstractC3604n84 = c3566mO.f31948a;
-                                if (!abstractC3604n84.g()) {
-                                    z17 = true;
-                                    c3676oQ3 = E8;
+                            if (z17) {
+                                abstractC3627n84 = c3589mO.f32728a;
+                                if (!abstractC3627n84.g()) {
+                                    z18 = true;
+                                    c3860rQ3 = E8;
                                     j15 = j14;
-                                    z18 = z16;
-                                    z19 = z15;
-                                    z20 = z17;
-                                    r82 = z12;
-                                    z21 = z10;
-                                    i14 = i13;
+                                    z19 = z17;
+                                    z20 = z16;
+                                    z21 = z18;
+                                    r82 = z13;
+                                    z22 = z11;
+                                    i13 = i12;
                                 }
                             }
-                            z17 = false;
-                            c3676oQ3 = E8;
+                            z18 = false;
+                            c3860rQ3 = E8;
                             j15 = j14;
-                            z18 = z16;
-                            z19 = z15;
-                            z20 = z17;
-                            r82 = z12;
-                            z21 = z10;
-                            i14 = i13;
+                            z19 = z17;
+                            z20 = z16;
+                            z21 = z18;
+                            r82 = z13;
+                            z22 = z11;
+                            i13 = i12;
                         }
                     } else {
-                        c3676oQ2 = c3676oQ;
+                        c3860rQ2 = c3860rQ;
                     }
-                    i11 = i;
+                    i10 = i;
                     boolean equals3 = obj5.equals(obj2);
                     if (equals3) {
                     }
-                    K7 o62 = abstractC3604n83.o(obj2, k73);
-                    z14 = z6;
-                    if (!z9) {
+                    K7 o42 = abstractC3627n83.o(obj2, k73);
+                    z15 = z9;
+                    if (!z10) {
                     }
-                    if (i == i12) {
+                    if (i == i11) {
                     }
                     if (E8.b()) {
                     }
-                    if (E8.equals(c3676oQ2)) {
+                    if (E8.equals(c3860rQ2)) {
                     }
-                    if (abstractC3604n83.e(obj5) == -1) {
+                    if (abstractC3627n83.e(obj5) == -1) {
                     }
-                    obj3 = E8.f32905a;
+                    obj3 = E8.f34406a;
                     if (obj3.equals(obj5)) {
-                        C2897a a112 = abstractC3604n83.o(obj3, k73).f25870f.a(i15);
-                        i16 = E8.f32907c;
-                        iArr = a112.f28986d;
-                        if (i16 < iArr.length) {
+                        C2920a a112 = abstractC3627n83.o(obj3, k73).f26622f.a(i14);
+                        i15 = E8.f34408c;
+                        iArr = a112.f29756d;
+                        if (i15 < iArr.length) {
                         }
                         k74 = k73;
-                        i13 = 0;
-                        if (z16) {
+                        i12 = 0;
+                        if (z17) {
                         }
-                        z17 = false;
-                        c3676oQ3 = E8;
+                        z18 = false;
+                        c3860rQ3 = E8;
                         j15 = j14;
-                        z18 = z16;
-                        z19 = z15;
-                        z20 = z17;
-                        r82 = z12;
-                        z21 = z10;
-                        i14 = i13;
+                        z19 = z17;
+                        z20 = z16;
+                        z21 = z18;
+                        r82 = z13;
+                        z22 = z11;
+                        i13 = i12;
                     }
                     k74 = k73;
-                    if (z16) {
+                    if (z17) {
                     }
-                    z17 = false;
-                    c3676oQ3 = E8;
+                    z18 = false;
+                    c3860rQ3 = E8;
                     j15 = j14;
-                    z18 = z16;
-                    z19 = z15;
-                    z20 = z17;
-                    r82 = z12;
-                    z21 = z10;
-                    i14 = i13;
+                    z19 = z17;
+                    z20 = z16;
+                    z21 = z18;
+                    r82 = z13;
+                    z22 = z11;
+                    i13 = i12;
                 }
             }
-            z6 = true;
-            if (c3676oQ7.b()) {
+            z9 = true;
+            if (c3860rQ7.b()) {
             }
-            z9 = z6;
-            j9 = c3566mO.f31950c;
-            U7 u722 = this.f28142C;
+            z10 = z9;
+            j9 = c3589mO.f32730c;
+            U7 u722 = this.f28939C;
             if (un5 == null) {
             }
-            if (i6 == i9) {
+            if (i4 == i6) {
             }
             long j232 = j9;
             long j242 = j10;
-            E8 = this.J.E(c3566mO, abstractC3604n8, obj2, z35, z9);
-            abstractC3604n83 = abstractC3604n8;
-            i10 = E8.f32909e;
-            if (i10 == -1) {
+            E8 = this.J.E(c3589mO, abstractC3627n8, obj2, z36, z10);
+            abstractC3627n83 = abstractC3627n8;
+            i9 = E8.f34410e;
+            if (i9 == -1) {
             }
-            i11 = i;
+            i10 = i;
             boolean equals32 = obj5.equals(obj2);
             if (equals32) {
             }
-            K7 o622 = abstractC3604n83.o(obj2, k73);
-            z14 = z6;
-            if (!z9) {
+            K7 o422 = abstractC3627n83.o(obj2, k73);
+            z15 = z9;
+            if (!z10) {
             }
-            if (i == i12) {
+            if (i == i11) {
             }
             if (E8.b()) {
             }
-            if (E8.equals(c3676oQ2)) {
+            if (E8.equals(c3860rQ2)) {
             }
-            if (abstractC3604n83.e(obj5) == -1) {
+            if (abstractC3627n83.e(obj5) == -1) {
             }
-            obj3 = E8.f32905a;
+            obj3 = E8.f34406a;
             if (obj3.equals(obj5)) {
             }
             k74 = k73;
-            if (z16) {
+            if (z17) {
             }
-            z17 = false;
-            c3676oQ3 = E8;
+            z18 = false;
+            c3860rQ3 = E8;
             j15 = j14;
-            z18 = z16;
-            z19 = z15;
-            z20 = z17;
-            r82 = z12;
-            z21 = z10;
-            i14 = i13;
+            z19 = z17;
+            z20 = z16;
+            z21 = z18;
+            r82 = z13;
+            z22 = z11;
+            i13 = i12;
         }
         if (r82 != 0) {
             try {
-                z26 = true;
-                if (this.f28170Z.f31952e != 1) {
+                z27 = true;
+                if (this.f28962Z.f32732e != 1) {
                     try {
                         c(4);
                     } catch (Throwable th) {
                         th = th;
-                        C3676oQ c3676oQ8 = c3676oQ3;
-                        abstractC3604n85 = abstractC3604n83;
-                        c3676oQ4 = c3676oQ8;
+                        C3860rQ c3860rQ8 = c3860rQ3;
+                        abstractC3627n85 = abstractC3627n83;
+                        c3860rQ4 = c3860rQ8;
                         un = null;
-                        z27 = z20;
-                        i19 = i14;
-                        z28 = false;
-                        C3566mO c3566mO2 = this.f28170Z;
-                        AbstractC3604n8 abstractC3604n89 = c3566mO2.f31948a;
-                        C3676oQ c3676oQ9 = c3566mO2.f31949b;
-                        C3676oQ c3676oQ10 = c3676oQ4;
-                        G(abstractC3604n85, c3676oQ10, abstractC3604n89, c3676oQ9, true == z21 ? j6 : j15, false);
-                        if (!z18) {
+                        z28 = z21;
+                        i18 = i13;
+                        z29 = false;
+                        C3589mO c3589mO2 = this.f28962Z;
+                        AbstractC3627n8 abstractC3627n89 = c3589mO2.f32728a;
+                        C3860rQ c3860rQ9 = c3589mO2.f32729b;
+                        C3860rQ c3860rQ10 = c3860rQ4;
+                        G(abstractC3627n85, c3860rQ10, abstractC3627n89, c3860rQ9, true == z22 ? j6 : j15, false);
+                        if (!z19) {
                         }
-                        if (z27) {
+                        if (z28) {
                         }
-                        this.f28170Z = N(c3676oQ10, j18, j12, j17, z27, i19);
+                        this.f28962Z = N(c3860rQ10, j18, j12, j17, z28, i18);
                         J();
-                        x(abstractC3604n85, this.f28170Z.f31948a);
-                        this.f28170Z = this.f28170Z.c(abstractC3604n85);
-                        if (!abstractC3604n85.g()) {
+                        x(abstractC3627n85, this.f28962Z.f32728a);
+                        this.f28962Z = this.f28962Z.c(abstractC3627n85);
+                        if (!abstractC3627n85.g()) {
                         }
-                        Q(z28);
-                        this.f28189z.c(2);
+                        Q(z29);
+                        this.f28985z.c(2);
                         throw th;
                     }
                 }
@@ -1198,93 +1196,93 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
             } catch (Throwable th2) {
                 th = th2;
                 r42 = 0;
-                C3676oQ c3676oQ11 = c3676oQ3;
-                abstractC3604n85 = abstractC3604n83;
-                c3676oQ4 = c3676oQ11;
+                C3860rQ c3860rQ11 = c3860rQ3;
+                abstractC3627n85 = abstractC3627n83;
+                c3860rQ4 = c3860rQ11;
                 un2 = null;
-                z29 = r42;
-                z27 = z20;
-                i19 = i14;
-                z28 = z29;
+                z30 = r42;
+                z28 = z21;
+                i18 = i13;
+                z29 = z30;
                 un = un2;
-                C3566mO c3566mO22 = this.f28170Z;
-                AbstractC3604n8 abstractC3604n892 = c3566mO22.f31948a;
-                C3676oQ c3676oQ92 = c3566mO22.f31949b;
-                C3676oQ c3676oQ102 = c3676oQ4;
-                G(abstractC3604n85, c3676oQ102, abstractC3604n892, c3676oQ92, true == z21 ? j6 : j15, false);
-                if (!z18) {
+                C3589mO c3589mO22 = this.f28962Z;
+                AbstractC3627n8 abstractC3627n892 = c3589mO22.f32728a;
+                C3860rQ c3860rQ92 = c3589mO22.f32729b;
+                C3860rQ c3860rQ102 = c3860rQ4;
+                G(abstractC3627n85, c3860rQ102, abstractC3627n892, c3860rQ92, true == z22 ? j6 : j15, false);
+                if (!z19) {
                 }
-                if (z27) {
+                if (z28) {
                 }
-                this.f28170Z = N(c3676oQ102, j18, j12, j17, z27, i19);
+                this.f28962Z = N(c3860rQ102, j18, j12, j17, z28, i18);
                 J();
-                x(abstractC3604n85, this.f28170Z.f31948a);
-                this.f28170Z = this.f28170Z.c(abstractC3604n85);
-                if (!abstractC3604n85.g()) {
+                x(abstractC3627n85, this.f28962Z.f32728a);
+                this.f28962Z = this.f28962Z.c(abstractC3627n85);
+                if (!abstractC3627n85.g()) {
                 }
-                Q(z28);
-                this.f28189z.c(2);
+                Q(z29);
+                this.f28985z.c(2);
                 throw th;
             }
             try {
                 v(false, false, false, true);
             } catch (Throwable th3) {
                 th = th3;
-                C3676oQ c3676oQ112 = c3676oQ3;
-                abstractC3604n85 = abstractC3604n83;
-                c3676oQ4 = c3676oQ112;
+                C3860rQ c3860rQ112 = c3860rQ3;
+                abstractC3627n85 = abstractC3627n83;
+                c3860rQ4 = c3860rQ112;
                 un2 = null;
-                z29 = r42;
-                z27 = z20;
-                i19 = i14;
-                z28 = z29;
+                z30 = r42;
+                z28 = z21;
+                i18 = i13;
+                z29 = z30;
                 un = un2;
-                C3566mO c3566mO222 = this.f28170Z;
-                AbstractC3604n8 abstractC3604n8922 = c3566mO222.f31948a;
-                C3676oQ c3676oQ922 = c3566mO222.f31949b;
-                C3676oQ c3676oQ1022 = c3676oQ4;
-                G(abstractC3604n85, c3676oQ1022, abstractC3604n8922, c3676oQ922, true == z21 ? j6 : j15, false);
-                if (!z18) {
+                C3589mO c3589mO222 = this.f28962Z;
+                AbstractC3627n8 abstractC3627n8922 = c3589mO222.f32728a;
+                C3860rQ c3860rQ922 = c3589mO222.f32729b;
+                C3860rQ c3860rQ1022 = c3860rQ4;
+                G(abstractC3627n85, c3860rQ1022, abstractC3627n8922, c3860rQ922, true == z22 ? j6 : j15, false);
+                if (!z19) {
                 }
-                if (z27) {
+                if (z28) {
                 }
-                this.f28170Z = N(c3676oQ1022, j18, j12, j17, z27, i19);
+                this.f28962Z = N(c3860rQ1022, j18, j12, j17, z28, i18);
                 J();
-                x(abstractC3604n85, this.f28170Z.f31948a);
-                this.f28170Z = this.f28170Z.c(abstractC3604n85);
-                if (!abstractC3604n85.g()) {
+                x(abstractC3627n85, this.f28962Z.f32728a);
+                this.f28962Z = this.f28962Z.c(abstractC3627n85);
+                if (!abstractC3627n85.g()) {
                 }
-                Q(z28);
-                this.f28189z.c(2);
+                Q(z29);
+                this.f28985z.c(2);
                 throw th;
             }
         } else {
             r42 = 0;
-            z26 = z14;
+            z27 = z15;
         }
-        D0.H[] hArr = this.f28171n;
-        int i27 = r42;
-        AbstractC3604n8 abstractC3604n810 = r82;
-        boolean z38 = z26;
+        D0.H[] hArr = this.f28967n;
+        int i26 = r42;
+        AbstractC3627n8 abstractC3627n810 = r82;
+        boolean z39 = z27;
         while (true) {
             r13 = 2;
-            if (i27 < 2) {
-                D0.H h9 = hArr[i27];
-                ?? r83 = (RP) h9.f539e;
-                if (!Objects.equals(r83.f27221I, abstractC3604n83)) {
-                    r83.f27221I = abstractC3604n83;
+            if (i26 < 2) {
+                D0.H h3 = hArr[i26];
+                ?? r83 = (SP) h3.f434e;
+                if (!Objects.equals(r83.f28211I, abstractC3627n83)) {
+                    r83.f28211I = abstractC3627n83;
                     r83.P();
                     r83.n0();
                 }
-                RP rp = (RP) h9.f540f;
-                if (rp != null && (r83 = Objects.equals(rp.f27221I, abstractC3604n83)) == 0) {
-                    rp.f27221I = abstractC3604n83;
-                    rp.P();
-                    rp.n0();
+                SP sp = (SP) h3.f435f;
+                if (sp != null && (r83 = Objects.equals(sp.f28211I, abstractC3627n83)) == 0) {
+                    sp.f28211I = abstractC3627n83;
+                    sp.P();
+                    sp.n0();
                 }
-                z38 = true;
-                i27++;
-                abstractC3604n810 = r83;
+                z39 = true;
+                i26++;
+                abstractC3627n810 = r83;
             } else {
                 try {
                     break;
@@ -1293,108 +1291,108 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
                 }
             }
         }
-        if (z18) {
-            AbstractC3604n8 abstractC3604n811 = abstractC3604n83;
+        if (z19) {
+            AbstractC3627n8 abstractC3627n811 = abstractC3627n83;
             UN un6 = null;
-            boolean z39 = r42;
-            z32 = z39;
+            boolean z40 = r42;
+            z33 = z40;
             un4 = un6;
-            if (!abstractC3604n811.g()) {
+            if (!abstractC3627n811.g()) {
                 try {
-                    C3136eO c3136eO2 = this.J;
-                    for (C3029cO c3029cO = c3136eO2.f29921h; c3029cO != null; c3029cO = c3029cO.f29484m) {
-                        if (c3029cO.f29479g.f29760a.equals(c3676oQ3)) {
-                            c3029cO.f29479g = c3136eO2.D(abstractC3604n811, c3029cO.f29479g);
+                    C3159eO c3159eO2 = this.J;
+                    for (C3052cO c3052cO = c3159eO2.f30713h; c3052cO != null; c3052cO = c3052cO.f30267m) {
+                        if (c3052cO.f30262g.f30532a.equals(c3860rQ3)) {
+                            c3052cO.f30262g = c3159eO2.D(abstractC3627n811, c3052cO.f30262g);
                         }
                     }
-                    c3136eO = this.J;
-                    c3676oQ4 = c3676oQ3;
+                    c3159eO = this.J;
+                    c3860rQ4 = c3860rQ3;
                     j21 = j15;
                 } catch (Throwable th5) {
                     th = th5;
-                    c3676oQ4 = c3676oQ3;
+                    c3860rQ4 = c3860rQ3;
                 }
                 try {
-                    j15 = r(c3676oQ4, j21, c3136eO.f29921h != c3136eO.i ? true : z39 ? 1 : 0, z19);
-                    z31 = z39;
+                    j15 = r(c3860rQ4, j21, c3159eO.f30713h != c3159eO.i ? true : z40 ? 1 : 0, z20);
+                    z32 = z40;
                     un3 = un6;
-                    C3566mO c3566mO3 = this.f28170Z;
-                    C3676oQ c3676oQ12 = c3676oQ4;
-                    G(abstractC3604n8, c3676oQ12, c3566mO3.f31948a, c3566mO3.f31949b, true == z21 ? j6 : j15, false);
-                    if (!z18 || j12 != this.f28170Z.f31950c) {
-                        if (z20) {
-                            j19 = this.f28170Z.f31951d;
+                    C3589mO c3589mO3 = this.f28962Z;
+                    C3860rQ c3860rQ12 = c3860rQ4;
+                    G(abstractC3627n8, c3860rQ12, c3589mO3.f32728a, c3589mO3.f32729b, true == z22 ? j6 : j15, false);
+                    if (!z19 || j12 != this.f28962Z.f32730c) {
+                        if (z21) {
+                            j19 = this.f28962Z.f32731d;
                             j20 = j15;
                         } else {
                             j20 = j15;
                             j19 = j20;
                         }
-                        this.f28170Z = N(c3676oQ12, j20, j12, j19, z20, i14);
+                        this.f28962Z = N(c3860rQ12, j20, j12, j19, z21, i13);
                     }
                     J();
-                    x(abstractC3604n8, this.f28170Z.f31948a);
-                    this.f28170Z = this.f28170Z.c(abstractC3604n8);
-                    if (!abstractC3604n8.g()) {
-                        this.f28188y0 = un3;
+                    x(abstractC3627n8, this.f28962Z.f32728a);
+                    this.f28962Z = this.f28962Z.c(abstractC3627n8);
+                    if (!abstractC3627n8.g()) {
+                        this.f28974t0 = un3;
                     }
-                    Q(z31);
-                    this.f28189z.c(2);
+                    Q(z32);
+                    this.f28985z.c(2);
                 } catch (Throwable th6) {
                     th = th6;
                     j15 = j21;
-                    abstractC3604n85 = abstractC3604n811;
-                    z29 = z39;
+                    abstractC3627n85 = abstractC3627n811;
+                    z30 = z40;
                     un2 = un6;
-                    z27 = z20;
-                    i19 = i14;
-                    z28 = z29;
+                    z28 = z21;
+                    i18 = i13;
+                    z29 = z30;
                     un = un2;
-                    C3566mO c3566mO2222 = this.f28170Z;
-                    AbstractC3604n8 abstractC3604n89222 = c3566mO2222.f31948a;
-                    C3676oQ c3676oQ9222 = c3566mO2222.f31949b;
-                    C3676oQ c3676oQ10222 = c3676oQ4;
-                    G(abstractC3604n85, c3676oQ10222, abstractC3604n89222, c3676oQ9222, true == z21 ? j6 : j15, false);
-                    if (!z18) {
+                    C3589mO c3589mO2222 = this.f28962Z;
+                    AbstractC3627n8 abstractC3627n89222 = c3589mO2222.f32728a;
+                    C3860rQ c3860rQ9222 = c3589mO2222.f32729b;
+                    C3860rQ c3860rQ10222 = c3860rQ4;
+                    G(abstractC3627n85, c3860rQ10222, abstractC3627n89222, c3860rQ9222, true == z22 ? j6 : j15, false);
+                    if (!z19) {
                     }
-                    if (z27) {
+                    if (z28) {
                     }
-                    this.f28170Z = N(c3676oQ10222, j18, j12, j17, z27, i19);
+                    this.f28962Z = N(c3860rQ10222, j18, j12, j17, z28, i18);
                     J();
-                    x(abstractC3604n85, this.f28170Z.f31948a);
-                    this.f28170Z = this.f28170Z.c(abstractC3604n85);
-                    if (!abstractC3604n85.g()) {
+                    x(abstractC3627n85, this.f28962Z.f32728a);
+                    this.f28962Z = this.f28962Z.c(abstractC3627n85);
+                    if (!abstractC3627n85.g()) {
                     }
-                    Q(z28);
-                    this.f28189z.c(2);
+                    Q(z29);
+                    this.f28985z.c(2);
                     throw th;
                 }
             }
         } else {
             try {
-                C3136eO c3136eO3 = this.J;
-                C3029cO c3029cO2 = c3136eO3.i;
-                long H9 = c3029cO2 == null ? j13 : H(c3029cO2);
+                C3159eO c3159eO3 = this.J;
+                C3052cO c3052cO2 = c3159eO3.i;
+                long H9 = c3052cO2 == null ? j13 : H(c3052cO2);
                 try {
                     try {
                         if (V()) {
                             try {
-                                C3029cO c3029cO3 = c3136eO3.f29922j;
-                                if (c3029cO3 != null) {
-                                    H8 = H(c3029cO3);
-                                    z30 = r42;
+                                C3052cO c3052cO3 = c3159eO3.f30714j;
+                                if (c3052cO3 != null) {
+                                    H8 = H(c3052cO3);
+                                    z31 = r42;
                                     r13 = 0;
-                                    z38 = z30;
-                                    C8 = c3136eO3.C(abstractC3604n8, this.f28190z0, H9, H8);
+                                    z39 = z31;
+                                    C8 = c3159eO3.C(abstractC3627n8, this.f28976u0, H9, H8);
                                     if ((C8 & 1) == 0) {
-                                        h(z38);
-                                        z32 = z38;
+                                        h(z39);
+                                        z33 = z39;
                                         un4 = r13;
                                     } else {
-                                        z32 = z38;
+                                        z33 = z39;
                                         un4 = r13;
                                         if ((C8 & 2) != 0) {
                                             C();
-                                            z32 = z38;
+                                            z33 = z39;
                                             un4 = r13;
                                         }
                                     }
@@ -1402,155 +1400,155 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
                             } catch (Throwable th7) {
                                 th = th7;
                                 un = null;
-                                z28 = r42;
-                                z27 = z20;
-                                c3676oQ4 = c3676oQ3;
-                                i19 = i14;
-                                abstractC3604n85 = abstractC3604n8;
-                                C3566mO c3566mO22222 = this.f28170Z;
-                                AbstractC3604n8 abstractC3604n892222 = c3566mO22222.f31948a;
-                                C3676oQ c3676oQ92222 = c3566mO22222.f31949b;
-                                C3676oQ c3676oQ102222 = c3676oQ4;
-                                G(abstractC3604n85, c3676oQ102222, abstractC3604n892222, c3676oQ92222, true == z21 ? j6 : j15, false);
-                                if (!z18 || j12 != this.f28170Z.f31950c) {
-                                    if (z27) {
-                                        j17 = this.f28170Z.f31951d;
+                                z29 = r42;
+                                z28 = z21;
+                                c3860rQ4 = c3860rQ3;
+                                i18 = i13;
+                                abstractC3627n85 = abstractC3627n8;
+                                C3589mO c3589mO22222 = this.f28962Z;
+                                AbstractC3627n8 abstractC3627n892222 = c3589mO22222.f32728a;
+                                C3860rQ c3860rQ92222 = c3589mO22222.f32729b;
+                                C3860rQ c3860rQ102222 = c3860rQ4;
+                                G(abstractC3627n85, c3860rQ102222, abstractC3627n892222, c3860rQ92222, true == z22 ? j6 : j15, false);
+                                if (!z19 || j12 != this.f28962Z.f32730c) {
+                                    if (z28) {
+                                        j17 = this.f28962Z.f32731d;
                                         j18 = j15;
                                     } else {
                                         j18 = j15;
                                         j17 = j18;
                                     }
-                                    this.f28170Z = N(c3676oQ102222, j18, j12, j17, z27, i19);
+                                    this.f28962Z = N(c3860rQ102222, j18, j12, j17, z28, i18);
                                 }
                                 J();
-                                x(abstractC3604n85, this.f28170Z.f31948a);
-                                this.f28170Z = this.f28170Z.c(abstractC3604n85);
-                                if (!abstractC3604n85.g()) {
-                                    this.f28188y0 = un;
+                                x(abstractC3627n85, this.f28962Z.f32728a);
+                                this.f28962Z = this.f28962Z.c(abstractC3627n85);
+                                if (!abstractC3627n85.g()) {
+                                    this.f28974t0 = un;
                                 }
-                                Q(z28);
-                                this.f28189z.c(2);
+                                Q(z29);
+                                this.f28985z.c(2);
                                 throw th;
                             }
                         }
-                        C8 = c3136eO3.C(abstractC3604n8, this.f28190z0, H9, H8);
+                        C8 = c3159eO3.C(abstractC3627n8, this.f28976u0, H9, H8);
                         if ((C8 & 1) == 0) {
                         }
                     } catch (Throwable th8) {
                         th = th8;
-                        abstractC3604n810 = abstractC3604n8;
-                        z27 = z20;
-                        c3676oQ4 = c3676oQ3;
-                        i19 = i14;
-                        abstractC3604n85 = abstractC3604n810;
-                        z28 = z38;
+                        abstractC3627n810 = abstractC3627n8;
+                        z28 = z21;
+                        c3860rQ4 = c3860rQ3;
+                        i18 = i13;
+                        abstractC3627n85 = abstractC3627n810;
+                        z29 = z39;
                         un = r13;
-                        C3566mO c3566mO222222 = this.f28170Z;
-                        AbstractC3604n8 abstractC3604n8922222 = c3566mO222222.f31948a;
-                        C3676oQ c3676oQ922222 = c3566mO222222.f31949b;
-                        C3676oQ c3676oQ1022222 = c3676oQ4;
-                        G(abstractC3604n85, c3676oQ1022222, abstractC3604n8922222, c3676oQ922222, true == z21 ? j6 : j15, false);
-                        if (!z18) {
+                        C3589mO c3589mO222222 = this.f28962Z;
+                        AbstractC3627n8 abstractC3627n8922222 = c3589mO222222.f32728a;
+                        C3860rQ c3860rQ922222 = c3589mO222222.f32729b;
+                        C3860rQ c3860rQ1022222 = c3860rQ4;
+                        G(abstractC3627n85, c3860rQ1022222, abstractC3627n8922222, c3860rQ922222, true == z22 ? j6 : j15, false);
+                        if (!z19) {
                         }
-                        if (z27) {
+                        if (z28) {
                         }
-                        this.f28170Z = N(c3676oQ1022222, j18, j12, j17, z27, i19);
+                        this.f28962Z = N(c3860rQ1022222, j18, j12, j17, z28, i18);
                         J();
-                        x(abstractC3604n85, this.f28170Z.f31948a);
-                        this.f28170Z = this.f28170Z.c(abstractC3604n85);
-                        if (!abstractC3604n85.g()) {
+                        x(abstractC3627n85, this.f28962Z.f32728a);
+                        this.f28962Z = this.f28962Z.c(abstractC3627n85);
+                        if (!abstractC3627n85.g()) {
                         }
-                        Q(z28);
-                        this.f28189z.c(2);
+                        Q(z29);
+                        this.f28985z.c(2);
                         throw th;
                     }
                     r13 = 0;
-                    z38 = z30;
+                    z39 = z31;
                 } catch (Throwable th9) {
                     th = th9;
-                    abstractC3604n810 = abstractC3604n8;
+                    abstractC3627n810 = abstractC3627n8;
                     r13 = 0;
-                    z38 = z30;
+                    z39 = z31;
                 }
-                z30 = r42;
+                z31 = r42;
                 H8 = j13;
             } catch (Throwable th10) {
                 th = th10;
-                abstractC3604n810 = abstractC3604n8;
+                abstractC3627n810 = abstractC3627n8;
                 r13 = 0;
-                z38 = r42;
+                z39 = r42;
             }
         }
-        c3676oQ4 = c3676oQ3;
-        z31 = z32;
+        c3860rQ4 = c3860rQ3;
+        z32 = z33;
         un3 = un4;
-        C3566mO c3566mO32 = this.f28170Z;
-        C3676oQ c3676oQ122 = c3676oQ4;
-        G(abstractC3604n8, c3676oQ122, c3566mO32.f31948a, c3566mO32.f31949b, true == z21 ? j6 : j15, false);
-        if (!z18) {
+        C3589mO c3589mO32 = this.f28962Z;
+        C3860rQ c3860rQ122 = c3860rQ4;
+        G(abstractC3627n8, c3860rQ122, c3589mO32.f32728a, c3589mO32.f32729b, true == z22 ? j6 : j15, false);
+        if (!z19) {
         }
-        if (z20) {
+        if (z21) {
         }
-        this.f28170Z = N(c3676oQ122, j20, j12, j19, z20, i14);
+        this.f28962Z = N(c3860rQ122, j20, j12, j19, z21, i13);
         J();
-        x(abstractC3604n8, this.f28170Z.f31948a);
-        this.f28170Z = this.f28170Z.c(abstractC3604n8);
-        if (!abstractC3604n8.g()) {
+        x(abstractC3627n8, this.f28962Z.f32728a);
+        this.f28962Z = this.f28962Z.c(abstractC3627n8);
+        if (!abstractC3627n8.g()) {
         }
-        Q(z31);
-        this.f28189z.c(2);
+        Q(z32);
+        this.f28985z.c(2);
     }
 
-    public final void G(AbstractC3604n8 abstractC3604n8, C3676oQ c3676oQ, AbstractC3604n8 abstractC3604n82, C3676oQ c3676oQ2, long j6, boolean z3) {
-        if (!o(abstractC3604n8, c3676oQ)) {
-            C3924t5 c3924t5 = c3676oQ.b() ? C3924t5.f34215d : this.f28170Z.f31961o;
-            Is is = this.f28147F;
-            if (is.j().equals(c3924t5)) {
+    public final void G(AbstractC3627n8 abstractC3627n8, C3860rQ c3860rQ, AbstractC3627n8 abstractC3627n82, C3860rQ c3860rQ2, long j6, boolean z6) {
+        if (!o(abstractC3627n8, c3860rQ)) {
+            C3947t5 c3947t5 = c3860rQ.b() ? C3947t5.f35001d : this.f28962Z.f32741o;
+            Is is = this.f28944F;
+            if (is.j().equals(c3947t5)) {
                 return;
             }
-            this.f28189z.d(16);
-            is.a(c3924t5);
-            K(this.f28170Z.f31961o, c3924t5.f34216a, false, false);
+            this.f28985z.d(16);
+            is.a(c3947t5);
+            K(this.f28962Z.f32741o, c3947t5.f35002a, false, false);
             return;
         }
-        Object obj = c3676oQ.f32905a;
-        K7 k72 = this.f28143D;
-        int i = abstractC3604n8.o(obj, k72).f25867c;
-        U7 u72 = this.f28142C;
-        abstractC3604n8.b(i, u72, 0L);
-        C4135x0 c4135x0 = u72.f27900h;
-        String str = AbstractC3159eu.f29993a;
-        C4266zN c4266zN = this.f28155J0;
-        c4266zN.getClass();
-        c4135x0.getClass();
-        long u3 = AbstractC3159eu.u(com.anythink.basead.exoplayer.b.f6382b);
-        c4266zN.f35320c = u3;
-        c4266zN.f35323f = u3;
-        c4266zN.f35324g = u3;
-        c4266zN.c();
-        if (j6 != com.anythink.basead.exoplayer.b.f6382b) {
-            c4266zN.f35321d = n(abstractC3604n8, obj, j6);
-            c4266zN.c();
+        Object obj = c3860rQ.f34406a;
+        K7 k72 = this.f28940D;
+        int i = abstractC3627n8.o(obj, k72).f26619c;
+        U7 u72 = this.f28939C;
+        abstractC3627n8.b(i, u72, 0L);
+        C4158x0 c4158x0 = u72.f28697h;
+        String str = AbstractC3182eu.f30782a;
+        C4289zN c4289zN = this.f28943E0;
+        c4289zN.getClass();
+        c4158x0.getClass();
+        long u6 = AbstractC3182eu.u(com.anythink.basead.exoplayer.b.f7168b);
+        c4289zN.f36104c = u6;
+        c4289zN.f36107f = u6;
+        c4289zN.f36108g = u6;
+        c4289zN.c();
+        if (j6 != com.anythink.basead.exoplayer.b.f7168b) {
+            c4289zN.f36105d = n(abstractC3627n8, obj, j6);
+            c4289zN.c();
             return;
         }
-        if (!Objects.equals(!abstractC3604n82.g() ? abstractC3604n82.b(abstractC3604n82.o(c3676oQ2.f32905a, k72).f25867c, u72, 0L).f27893a : null, u72.f27893a) || z3) {
-            c4266zN.f35321d = com.anythink.basead.exoplayer.b.f6382b;
-            c4266zN.c();
+        if (!Objects.equals(!abstractC3627n82.g() ? abstractC3627n82.b(abstractC3627n82.o(c3860rQ2.f34406a, k72).f26619c, u72, 0L).f28690a : null, u72.f28690a) || z6) {
+            c4289zN.f36105d = com.anythink.basead.exoplayer.b.f7168b;
+            c4289zN.c();
         }
     }
 
-    public final long H(C3029cO c3029cO) {
-        if (c3029cO == null) {
+    public final long H(C3052cO c3052cO) {
+        if (c3052cO == null) {
             return 0L;
         }
-        long j6 = c3029cO.f29487p;
-        if (c3029cO.f29477e) {
+        long j6 = c3052cO.f30270p;
+        if (c3052cO.f30260e) {
             for (int i = 0; i < 2; i++) {
-                D0.H[] hArr = this.f28171n;
-                if (hArr[i].m(c3029cO) != null) {
-                    RP m4 = hArr[i].m(c3029cO);
-                    Objects.requireNonNull(m4);
-                    long j9 = m4.f27215F;
+                D0.H[] hArr = this.f28967n;
+                if (hArr[i].m(c3052cO) != null) {
+                    SP m9 = hArr[i].m(c3052cO);
+                    Objects.requireNonNull(m9);
+                    long j9 = m9.f28205F;
                     if (j9 == Long.MIN_VALUE) {
                         return Long.MIN_VALUE;
                     }
@@ -1566,95 +1564,95 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void I() {
-        boolean z3;
-        C3136eO c3136eO = this.J;
-        c3136eO.z();
-        C3029cO c3029cO = c3136eO.f29924l;
-        if (c3029cO != null) {
-            if (!c3029cO.f29476d || c3029cO.f29477e) {
-                C3300hQ c3300hQ = c3029cO.f29473a;
-                if (c3300hQ.d()) {
+        boolean z6;
+        C3159eO c3159eO = this.J;
+        c3159eO.z();
+        C3052cO c3052cO = c3159eO.f30716l;
+        if (c3052cO != null) {
+            if (!c3052cO.f30259d || c3052cO.f30260e) {
+                C3483kQ c3483kQ = c3052cO.f30256a;
+                if (c3483kQ.d()) {
                     return;
                 }
-                AbstractC3604n8 abstractC3604n8 = this.f28170Z.f31948a;
-                if (c3029cO.f29477e) {
-                    c3300hQ.f();
+                AbstractC3627n8 abstractC3627n8 = this.f28962Z.f32728a;
+                if (c3052cO.f30260e) {
+                    c3483kQ.f();
                 }
-                if (this.f28187y.j()) {
-                    if (!c3029cO.f29476d) {
-                        C3083dO c3083dO = c3029cO.f29479g;
-                        c3029cO.f29476d = true;
-                        c3300hQ.b(this, c3083dO.f29761b);
+                if (this.f28983y.j()) {
+                    if (!c3052cO.f30259d) {
+                        C3106dO c3106dO = c3052cO.f30262g;
+                        c3052cO.f30259d = true;
+                        c3483kQ.b(this, c3106dO.f30533b);
                         return;
                     }
                     ZN zn = new ZN();
-                    zn.f28881a = this.f28190z0 - c3029cO.f29487p;
-                    float f3 = this.f28147F.j().f34216a;
-                    AbstractC2772Sd.i(f3 > 0.0f || f3 == -3.4028235E38f);
-                    zn.f28882b = f3;
-                    long j6 = this.f28177s0;
+                    zn.f29661a = this.f28976u0 - c3052cO.f30270p;
+                    float f2 = this.f28944F.j().f35002a;
+                    AbstractC2792Sd.i(f2 > 0.0f || f2 == -3.4028235E38f);
+                    zn.f29662b = f2;
+                    long j6 = this.f28968n0;
                     if (j6 < 0) {
-                        if (j6 != com.anythink.basead.exoplayer.b.f6382b) {
-                            z3 = false;
-                            AbstractC2772Sd.i(z3);
-                            zn.f28883c = j6;
-                            C2922aO c2922aO = new C2922aO(zn);
-                            AbstractC2772Sd.H(c3029cO.f29484m == null);
-                            c3300hQ.e(c2922aO);
+                        if (j6 != com.anythink.basead.exoplayer.b.f7168b) {
+                            z6 = false;
+                            AbstractC2792Sd.i(z6);
+                            zn.f29663c = j6;
+                            C2945aO c2945aO = new C2945aO(zn);
+                            AbstractC2792Sd.H(c3052cO.f30267m == null);
+                            c3483kQ.e(c2945aO);
                         }
                         j6 = -9223372036854775807L;
                     }
-                    z3 = true;
-                    AbstractC2772Sd.i(z3);
-                    zn.f28883c = j6;
-                    C2922aO c2922aO2 = new C2922aO(zn);
-                    AbstractC2772Sd.H(c3029cO.f29484m == null);
-                    c3300hQ.e(c2922aO2);
+                    z6 = true;
+                    AbstractC2792Sd.i(z6);
+                    zn.f29663c = j6;
+                    C2945aO c2945aO2 = new C2945aO(zn);
+                    AbstractC2792Sd.H(c3052cO.f30267m == null);
+                    c3483kQ.e(c2945aO2);
                 }
             }
         }
     }
 
     public final void J() {
-        C3029cO c3029cO = this.J.f29921h;
-        boolean z3 = false;
-        if (c3029cO != null && c3029cO.f29479g.f29766g && this.f28174p0) {
-            z3 = true;
+        C3052cO c3052cO = this.J.f30713h;
+        boolean z6 = false;
+        if (c3052cO != null && c3052cO.f30262g.f30538g && this.f28965k0) {
+            z6 = true;
         }
-        this.f28175q0 = z3;
+        this.f28966l0 = z6;
     }
 
-    public final void K(C3924t5 c3924t5, float f3, boolean z3, boolean z6) {
+    public final void K(C3947t5 c3947t5, float f2, boolean z6, boolean z9) {
         int i;
-        if (z3) {
-            if (z6) {
-                this.f28172n0.f(1);
+        if (z6) {
+            if (z9) {
+                this.f28963i0.f(1);
             }
-            C3566mO c3566mO = this.f28170Z;
-            this.f28170Z = new C3566mO(c3566mO.f31948a, c3566mO.f31949b, c3566mO.f31950c, c3566mO.f31951d, c3566mO.f31952e, c3566mO.f31953f, c3566mO.f31954g, c3566mO.f31955h, c3566mO.i, c3566mO.f31956j, c3566mO.f31957k, c3566mO.f31958l, c3566mO.f31959m, c3566mO.f31960n, c3924t5, c3566mO.f31962p, c3566mO.f31963q, c3566mO.f31964r, c3566mO.f31965s);
+            C3589mO c3589mO = this.f28962Z;
+            this.f28962Z = new C3589mO(c3589mO.f32728a, c3589mO.f32729b, c3589mO.f32730c, c3589mO.f32731d, c3589mO.f32732e, c3589mO.f32733f, c3589mO.f32734g, c3589mO.f32735h, c3589mO.i, c3589mO.f32736j, c3589mO.f32737k, c3589mO.f32738l, c3589mO.f32739m, c3589mO.f32740n, c3947t5, c3589mO.f32742p, c3589mO.f32743q, c3589mO.f32744r, c3589mO.f32745s);
         }
-        float f9 = c3924t5.f34216a;
-        C3029cO c3029cO = this.J.f29921h;
+        float f9 = c3947t5.f35002a;
+        C3052cO c3052cO = this.J.f30713h;
         while (true) {
             i = 0;
-            if (c3029cO == null) {
+            if (c3052cO == null) {
                 break;
             }
-            InterfaceC3757q[] interfaceC3757qArr = (InterfaceC3757q[]) c3029cO.f29486o.f34179v;
-            int length = interfaceC3757qArr.length;
+            InterfaceC3780q[] interfaceC3780qArr = (InterfaceC3780q[]) c3052cO.f30269o.f34965v;
+            int length = interfaceC3780qArr.length;
             while (i < length) {
-                InterfaceC3757q interfaceC3757q = interfaceC3757qArr[i];
+                InterfaceC3780q interfaceC3780q = interfaceC3780qArr[i];
                 i++;
             }
-            c3029cO = c3029cO.f29484m;
+            c3052cO = c3052cO.f30267m;
         }
-        D0.H[] hArr = this.f28171n;
+        D0.H[] hArr = this.f28967n;
         while (i < 2) {
-            D0.H h9 = hArr[i];
-            ((RP) h9.f539e).r(f3, f9);
-            RP rp = (RP) h9.f540f;
-            if (rp != null) {
-                rp.r(f3, f9);
+            D0.H h3 = hArr[i];
+            ((SP) h3.f434e).r(f2, f9);
+            SP sp = (SP) h3.f435f;
+            if (sp != null) {
+                sp.r(f2, f9);
             }
             i++;
         }
@@ -1666,400 +1664,400 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
     */
     public final void L() {
         boolean c9;
-        boolean z3;
-        C3136eO c3136eO = this.J;
-        boolean A9 = A(c3136eO.f29923k);
-        long j6 = com.anythink.basead.exoplayer.b.f6382b;
+        boolean z6;
+        C3159eO c3159eO = this.J;
+        boolean A9 = A(c3159eO.f30715k);
+        long j6 = com.anythink.basead.exoplayer.b.f7168b;
         if (A9) {
-            C3029cO c3029cO = c3136eO.f29923k;
-            long R8 = R(!c3029cO.f29477e ? 0L : c3029cO.f29473a.i());
-            long j9 = o(this.f28170Z.f31948a, c3029cO.f29479g.f29760a) ? this.f28155J0.f35325h : -9223372036854775807L;
-            IO io = this.f28158M;
-            AbstractC3604n8 abstractC3604n8 = this.f28170Z.f31948a;
-            C3676oQ c3676oQ = c3029cO.f29479g.f29760a;
-            float f3 = this.f28147F.j().f34216a;
-            boolean z6 = this.f28170Z.f31958l;
-            XN xn = new XN(io, abstractC3604n8, c3676oQ, R8, f3, this.f28176r0, j9);
-            YN yn = this.f28187y;
+            C3052cO c3052cO = c3159eO.f30715k;
+            long R8 = R(!c3052cO.f30260e ? 0L : c3052cO.f30256a.i());
+            long j9 = o(this.f28962Z.f32728a, c3052cO.f30262g.f30532a) ? this.f28943E0.f36109h : -9223372036854775807L;
+            IO io = this.f28950M;
+            AbstractC3627n8 abstractC3627n8 = this.f28962Z.f32728a;
+            C3860rQ c3860rQ = c3052cO.f30262g.f30532a;
+            float f2 = this.f28944F.j().f35002a;
+            boolean z9 = this.f28962Z.f32738l;
+            XN xn = new XN(io, abstractC3627n8, c3860rQ, R8, f2, this.m0, j9);
+            YN yn = this.f28983y;
             c9 = yn.c(xn);
-            C3029cO c3029cO2 = c3136eO.f29921h;
-            if (!c9 && c3029cO2.f29477e && R8 < 500000 && this.f28145E > 0) {
-                c3029cO2.f29473a.X(this.f28170Z.f31964r);
+            C3052cO c3052cO2 = c3159eO.f30713h;
+            if (!c9 && c3052cO2.f30260e && R8 < 500000 && this.f28942E > 0) {
+                c3052cO2.f30256a.X(this.f28962Z.f32744r);
                 c9 = yn.c(xn);
             }
         } else {
             c9 = false;
         }
-        this.f28178t0 = c9;
+        this.f28969o0 = c9;
         if (c9) {
-            C3029cO c3029cO3 = c3136eO.f29923k;
-            c3029cO3.getClass();
+            C3052cO c3052cO3 = c3159eO.f30715k;
+            c3052cO3.getClass();
             ZN zn = new ZN();
-            zn.f28881a = this.f28190z0 - c3029cO3.f29487p;
-            float f9 = this.f28147F.j().f34216a;
-            AbstractC2772Sd.i(f9 > 0.0f || f9 == -3.4028235E38f);
-            zn.f28882b = f9;
-            long j10 = this.f28177s0;
+            zn.f29661a = this.f28976u0 - c3052cO3.f30270p;
+            float f9 = this.f28944F.j().f35002a;
+            AbstractC2792Sd.i(f9 > 0.0f || f9 == -3.4028235E38f);
+            zn.f29662b = f9;
+            long j10 = this.f28968n0;
             if (j10 >= 0) {
                 j6 = j10;
-            } else if (j10 != com.anythink.basead.exoplayer.b.f6382b) {
-                z3 = false;
+            } else if (j10 != com.anythink.basead.exoplayer.b.f7168b) {
+                z6 = false;
                 j6 = j10;
-                AbstractC2772Sd.i(z3);
-                zn.f28883c = j6;
-                C2922aO c2922aO = new C2922aO(zn);
-                AbstractC2772Sd.H(c3029cO3.f29484m == null);
-                c3029cO3.f29473a.e(c2922aO);
+                AbstractC2792Sd.i(z6);
+                zn.f29663c = j6;
+                C2945aO c2945aO = new C2945aO(zn);
+                AbstractC2792Sd.H(c3052cO3.f30267m == null);
+                c3052cO3.f30256a.e(c2945aO);
             }
-            z3 = true;
-            AbstractC2772Sd.i(z3);
-            zn.f28883c = j6;
-            C2922aO c2922aO2 = new C2922aO(zn);
-            AbstractC2772Sd.H(c3029cO3.f29484m == null);
-            c3029cO3.f29473a.e(c2922aO2);
+            z6 = true;
+            AbstractC2792Sd.i(z6);
+            zn.f29663c = j6;
+            C2945aO c2945aO2 = new C2945aO(zn);
+            AbstractC2792Sd.H(c3052cO3.f30267m == null);
+            c3052cO3.f30256a.e(c2945aO2);
         }
         M();
     }
 
     public final void M() {
-        C3029cO c3029cO = this.J.f29923k;
-        boolean z3 = true;
-        if (!this.f28178t0 && (c3029cO == null || !c3029cO.f29473a.d())) {
-            z3 = false;
+        C3052cO c3052cO = this.J.f30715k;
+        boolean z6 = true;
+        if (!this.f28969o0 && (c3052cO == null || !c3052cO.f30256a.d())) {
+            z6 = false;
         }
-        C3566mO c3566mO = this.f28170Z;
-        if (z3 != c3566mO.f31954g) {
-            this.f28170Z = c3566mO.f(z3);
+        C3589mO c3589mO = this.f28962Z;
+        if (z6 != c3589mO.f32734g) {
+            this.f28962Z = c3589mO.f(z6);
         }
     }
 
-    public final C3566mO N(C3676oQ c3676oQ, long j6, long j9, long j10, boolean z3, int i) {
-        PQ pq;
-        C3918t c3918t;
+    public final C3589mO N(C3860rQ c3860rQ, long j6, long j9, long j10, boolean z6, int i) {
+        SQ sq;
+        C3941t c3941t;
         List list;
-        C3500lC c3500lC;
-        int i6;
-        this.C0 = (!this.C0 && j6 == this.f28170Z.f31964r && c3676oQ.equals(this.f28170Z.f31949b)) ? false : true;
+        C3523lC c3523lC;
+        int i4;
+        this.f28982x0 = (!this.f28982x0 && j6 == this.f28962Z.f32744r && c3860rQ.equals(this.f28962Z.f32729b)) ? false : true;
         J();
-        C3566mO c3566mO = this.f28170Z;
-        PQ pq2 = c3566mO.f31955h;
-        C3918t c3918t2 = c3566mO.i;
-        List list2 = c3566mO.f31956j;
-        if (this.f28156K.f802n) {
-            C3136eO c3136eO = this.J;
-            C3029cO c3029cO = c3136eO.f29921h;
-            PQ pq3 = c3029cO == null ? PQ.f26818d : c3029cO.f29485n;
-            C3918t c3918t3 = c3029cO == null ? this.f28185x : c3029cO.f29486o;
-            InterfaceC3757q[] interfaceC3757qArr = (InterfaceC3757q[]) c3918t3.f34179v;
+        C3589mO c3589mO = this.f28962Z;
+        SQ sq2 = c3589mO.f32735h;
+        C3941t c3941t2 = c3589mO.i;
+        List list2 = c3589mO.f32736j;
+        if (this.f28948K.f1144n) {
+            C3159eO c3159eO = this.J;
+            C3052cO c3052cO = c3159eO.f30713h;
+            SQ sq3 = c3052cO == null ? SQ.f28273d : c3052cO.f30268n;
+            C3941t c3941t3 = c3052cO == null ? this.f28981x : c3052cO.f30269o;
+            InterfaceC3780q[] interfaceC3780qArr = (InterfaceC3780q[]) c3941t3.f34965v;
             OB ob = new OB(4);
-            boolean z6 = false;
-            for (InterfaceC3757q interfaceC3757q : interfaceC3757qArr) {
-                if (interfaceC3757q != null) {
-                    O3 o32 = interfaceC3757q.x(0).f24428l;
+            boolean z9 = false;
+            for (InterfaceC3780q interfaceC3780q : interfaceC3780qArr) {
+                if (interfaceC3780q != null) {
+                    O3 o32 = interfaceC3780q.x(0).f25173l;
                     if (o32 == null) {
-                        ob.a(new O3(new InterfaceC3922t3[0]));
+                        ob.a(new O3(new InterfaceC3945t3[0]));
                     } else {
                         ob.a(o32);
-                        z6 = true;
+                        z9 = true;
                     }
                 }
             }
-            if (z6) {
-                c3500lC = ob.f();
+            if (z9) {
+                c3523lC = ob.f();
             } else {
-                PB pb = RB.f27177u;
-                c3500lC = C3500lC.f31745x;
+                PB pb = RB.f27933u;
+                c3523lC = C3523lC.f32525x;
             }
-            if (c3029cO != null) {
-                C3083dO c3083dO = c3029cO.f29479g;
-                long j11 = c3083dO.f29763d;
+            if (c3052cO != null) {
+                C3106dO c3106dO = c3052cO.f30262g;
+                long j11 = c3106dO.f30535d;
                 if (j11 != j9) {
                     if (j9 != j11) {
-                        c3083dO = new C3083dO(c3083dO.f29760a, c3083dO.f29761b, c3083dO.f29762c, j9, c3083dO.f29764e, c3083dO.f29765f, c3083dO.f29766g, c3083dO.f29767h);
+                        c3106dO = new C3106dO(c3106dO.f30532a, c3106dO.f30533b, c3106dO.f30534c, j9, c3106dO.f30536e, c3106dO.f30537f, c3106dO.f30538g, c3106dO.f30539h);
                     }
-                    c3029cO.f29479g = c3083dO;
+                    c3052cO.f30262g = c3106dO;
                 }
             }
-            C3029cO c3029cO2 = c3136eO.f29921h;
-            if (c3029cO2 == c3136eO.i && c3029cO2 != null) {
-                C3918t c3918t4 = c3029cO2.f29486o;
-                int i9 = 0;
+            C3052cO c3052cO2 = c3159eO.f30713h;
+            if (c3052cO2 == c3159eO.i && c3052cO2 != null) {
+                C3941t c3941t4 = c3052cO2.f30269o;
+                int i6 = 0;
                 while (true) {
-                    D0.H[] hArr = this.f28171n;
-                    if (i9 >= 2) {
+                    D0.H[] hArr = this.f28967n;
+                    if (i6 >= 2) {
                         break;
                     }
-                    if (c3918t4.c(i9)) {
-                        i6 = 1;
-                        if (((RP) hArr[i9].f539e).f27272u != 1) {
+                    if (c3941t4.c(i6)) {
+                        i4 = 1;
+                        if (((SP) hArr[i6].f434e).f28261u != 1) {
                             break;
                         }
-                        ((C3889sO[]) c3918t4.f34178u)[i9].getClass();
+                        ((C3912sO[]) c3941t4.f34964u)[i6].getClass();
                     } else {
-                        i6 = 1;
+                        i4 = 1;
                     }
-                    i9 += i6;
+                    i6 += i4;
                 }
             }
-            pq = pq3;
-            c3918t = c3918t3;
-            list = c3500lC;
+            sq = sq3;
+            c3941t = c3941t3;
+            list = c3523lC;
         } else {
-            if (!c3676oQ.equals(c3566mO.f31949b)) {
-                c3918t2 = this.f28185x;
-                pq2 = PQ.f26818d;
-                list2 = C3500lC.f31745x;
+            if (!c3860rQ.equals(c3589mO.f32729b)) {
+                c3941t2 = this.f28981x;
+                sq2 = SQ.f28273d;
+                list2 = C3523lC.f32525x;
             }
-            pq = pq2;
-            c3918t = c3918t2;
+            sq = sq2;
+            c3941t = c3941t2;
             list = list2;
         }
-        if (z3) {
-            C4085w4 c4085w4 = this.f28172n0;
-            if (!c4085w4.f34797d || c4085w4.f34798e == 5) {
-                c4085w4.f34795b = true;
-                c4085w4.f34797d = true;
-                c4085w4.f34798e = i;
+        if (z6) {
+            C4108w4 c4108w4 = this.f28963i0;
+            if (!c4108w4.f35566d || c4108w4.f35567e == 5) {
+                c4108w4.f35564b = true;
+                c4108w4.f35566d = true;
+                c4108w4.f35567e = i;
             } else {
-                AbstractC2772Sd.i(i == 5);
+                AbstractC2792Sd.i(i == 5);
             }
         }
-        C3566mO c3566mO2 = this.f28170Z;
-        return c3566mO2.b(c3676oQ, j6, j9, j10, R(c3566mO2.f31962p), pq, c3918t, list);
+        C3589mO c3589mO2 = this.f28962Z;
+        return c3589mO2.b(c3860rQ, j6, j9, j10, R(c3589mO2.f32742p), sq, c3941t, list);
     }
 
     public final void O(boolean[] zArr, long j6) {
         D0.H[] hArr;
         long j9;
-        C3029cO c3029cO = this.J.i;
-        C3918t c3918t = c3029cO.f29486o;
+        C3052cO c3052cO = this.J.i;
+        C3941t c3941t = c3052cO.f30269o;
         int i = 0;
         while (true) {
-            hArr = this.f28171n;
+            hArr = this.f28967n;
             if (i >= 2) {
                 break;
             }
-            if (!c3918t.c(i)) {
+            if (!c3941t.c(i)) {
                 hArr[i].b();
             }
             i++;
         }
-        int i6 = 0;
-        while (i6 < 2) {
-            if (c3918t.c(i6) && hArr[i6].m(c3029cO) == null) {
+        int i4 = 0;
+        while (i4 < 2) {
+            if (c3941t.c(i4) && hArr[i4].m(c3052cO) == null) {
                 j9 = j6;
-                P(c3029cO, i6, zArr[i6], j9);
+                P(c3052cO, i4, zArr[i4], j9);
             } else {
                 j9 = j6;
             }
-            i6++;
+            i4++;
             j6 = j9;
         }
     }
 
-    public final void P(C3029cO c3029cO, int i, boolean z3, long j6) {
+    public final void P(C3052cO c3052cO, int i, boolean z6, long j6) {
+        int i4;
         int i6;
-        int i9;
-        D0.H h9 = this.f28171n[i];
-        if (h9.g()) {
+        D0.H h3 = this.f28967n[i];
+        if (h3.g()) {
             return;
         }
-        boolean z6 = c3029cO == this.J.f29921h;
-        C3918t c3918t = c3029cO.f29486o;
-        C3889sO c3889sO = ((C3889sO[]) c3918t.f34178u)[i];
-        InterfaceC3757q interfaceC3757q = ((InterfaceC3757q[]) c3918t.f34179v)[i];
-        boolean z9 = T() && this.f28170Z.f31952e == 3;
-        boolean z10 = !z3 && z9;
-        this.f28186x0++;
-        IQ iq = c3029cO.f29475c[i];
-        long j9 = c3029cO.f29487p;
-        C3083dO c3083dO = c3029cO.f29479g;
-        if (interfaceC3757q != null) {
-            i6 = interfaceC3757q.d();
-            i9 = 0;
-        } else {
+        boolean z9 = c3052cO == this.J.f30713h;
+        C3941t c3941t = c3052cO.f30269o;
+        C3912sO c3912sO = ((C3912sO[]) c3941t.f34964u)[i];
+        InterfaceC3780q interfaceC3780q = ((InterfaceC3780q[]) c3941t.f34965v)[i];
+        boolean z10 = T() && this.f28962Z.f32732e == 3;
+        boolean z11 = !z6 && z10;
+        this.f28973s0++;
+        LQ lq = c3052cO.f30258c[i];
+        long j9 = c3052cO.f30270p;
+        C3106dO c3106dO = c3052cO.f30262g;
+        if (interfaceC3780q != null) {
+            i4 = interfaceC3780q.d();
             i6 = 0;
-            i9 = 0;
-        }
-        DP[] dpArr = new DP[i6];
-        while (i9 < i6) {
-            interfaceC3757q.getClass();
-            dpArr[i9] = interfaceC3757q.x(i9);
-            i9++;
-        }
-        int i10 = h9.f536b;
-        C3676oQ c3676oQ = c3083dO.f29760a;
-        Is is = this.f28147F;
-        if (i10 == 0 || i10 == 2 || i10 == 4) {
-            h9.f537c = true;
-            RP rp = (RP) h9.f539e;
-            AbstractC2772Sd.H(rp.f27206A == 0);
-            rp.f27276w = c3889sO;
-            rp.J = c3676oQ;
-            rp.f27206A = 1;
-            rp.u0(z10, z6);
-            rp.p0(dpArr, iq, j6, j9, c3676oQ);
-            rp.N(j6, z10, true);
-            is.b(rp);
         } else {
-            h9.f538d = true;
-            RP rp2 = (RP) h9.f540f;
-            rp2.getClass();
-            AbstractC2772Sd.H(rp2.f27206A == 0);
-            rp2.f27276w = c3889sO;
-            rp2.J = c3676oQ;
-            rp2.f27206A = 1;
-            rp2.u0(z10, z6);
-            rp2.p0(dpArr, iq, j6, j9, c3676oQ);
-            rp2.N(j6, z10, true);
-            is.b(rp2);
+            i4 = 0;
+            i6 = 0;
+        }
+        DP[] dpArr = new DP[i4];
+        while (i6 < i4) {
+            interfaceC3780q.getClass();
+            dpArr[i6] = interfaceC3780q.x(i6);
+            i6++;
+        }
+        int i9 = h3.f431b;
+        C3860rQ c3860rQ = c3106dO.f30532a;
+        Is is = this.f28944F;
+        if (i9 == 0 || i9 == 2 || i9 == 4) {
+            h3.f432c = true;
+            SP sp = (SP) h3.f434e;
+            AbstractC2792Sd.H(sp.f28196A == 0);
+            sp.f28265w = c3912sO;
+            sp.J = c3860rQ;
+            sp.f28196A = 1;
+            sp.u0(z11, z9);
+            sp.p0(dpArr, lq, j6, j9, c3860rQ);
+            sp.N(j6, z11, true);
+            is.b(sp);
+        } else {
+            h3.f433d = true;
+            SP sp2 = (SP) h3.f435f;
+            sp2.getClass();
+            AbstractC2792Sd.H(sp2.f28196A == 0);
+            sp2.f28265w = c3912sO;
+            sp2.J = c3860rQ;
+            sp2.f28196A = 1;
+            sp2.u0(z11, z9);
+            sp2.p0(dpArr, lq, j6, j9, c3860rQ);
+            sp2.N(j6, z11, true);
+            is.b(sp2);
         }
         QN qn = new QN(this);
-        RP m4 = h9.m(c3029cO);
-        m4.getClass();
-        m4.b(11, qn);
-        if (z9 && z6) {
-            h9.C();
+        SP m9 = h3.m(c3052cO);
+        m9.getClass();
+        m9.b(11, qn);
+        if (z10 && z9) {
+            h3.C();
         }
     }
 
-    public final void Q(boolean z3) {
-        C3029cO c3029cO = this.J.f29923k;
-        C3676oQ c3676oQ = c3029cO == null ? this.f28170Z.f31949b : c3029cO.f29479g.f29760a;
-        boolean equals = this.f28170Z.f31957k.equals(c3676oQ);
+    public final void Q(boolean z6) {
+        C3052cO c3052cO = this.J.f30715k;
+        C3860rQ c3860rQ = c3052cO == null ? this.f28962Z.f32729b : c3052cO.f30262g.f30532a;
+        boolean equals = this.f28962Z.f32737k.equals(c3860rQ);
         if (!equals) {
-            this.f28170Z = this.f28170Z.g(c3676oQ);
+            this.f28962Z = this.f28962Z.g(c3860rQ);
         }
-        C3566mO c3566mO = this.f28170Z;
-        c3566mO.f31962p = c3029cO == null ? c3566mO.f31964r : c3029cO.d();
-        C3566mO c3566mO2 = this.f28170Z;
-        c3566mO2.f31963q = R(c3566mO2.f31962p);
-        if ((!equals || z3) && c3029cO != null && c3029cO.f29477e) {
-            S(c3029cO.f29479g.f29760a, c3029cO.f29485n, c3029cO.f29486o);
+        C3589mO c3589mO = this.f28962Z;
+        c3589mO.f32742p = c3052cO == null ? c3589mO.f32744r : c3052cO.d();
+        C3589mO c3589mO2 = this.f28962Z;
+        c3589mO2.f32743q = R(c3589mO2.f32742p);
+        if ((!equals || z6) && c3052cO != null && c3052cO.f30260e) {
+            S(c3052cO.f30262g.f30532a, c3052cO.f30268n, c3052cO.f30269o);
         }
     }
 
     public final long R(long j6) {
-        C3029cO c3029cO = this.J.f29923k;
-        if (c3029cO == null) {
+        C3052cO c3052cO = this.J.f30715k;
+        if (c3052cO == null) {
             return 0L;
         }
-        return Math.max(0L, j6 - (this.f28190z0 - c3029cO.f29487p));
+        return Math.max(0L, j6 - (this.f28976u0 - c3052cO.f30270p));
     }
 
-    public final void S(C3676oQ c3676oQ, PQ pq, C3918t c3918t) {
-        C3029cO c3029cO = this.J.f29923k;
-        c3029cO.getClass();
-        long R8 = R(c3029cO.d());
-        long j6 = o(this.f28170Z.f31948a, c3029cO.f29479g.f29760a) ? this.f28155J0.f35325h : com.anythink.basead.exoplayer.b.f6382b;
-        AbstractC3604n8 abstractC3604n8 = this.f28170Z.f31948a;
-        float f3 = this.f28147F.j().f34216a;
-        boolean z3 = this.f28170Z.f31958l;
-        this.f28187y.a(new XN(this.f28158M, abstractC3604n8, c3676oQ, R8, f3, this.f28176r0, j6), (InterfaceC3757q[]) c3918t.f34179v);
+    public final void S(C3860rQ c3860rQ, SQ sq, C3941t c3941t) {
+        C3052cO c3052cO = this.J.f30715k;
+        c3052cO.getClass();
+        long R8 = R(c3052cO.d());
+        long j6 = o(this.f28962Z.f32728a, c3052cO.f30262g.f30532a) ? this.f28943E0.f36109h : com.anythink.basead.exoplayer.b.f7168b;
+        AbstractC3627n8 abstractC3627n8 = this.f28962Z.f32728a;
+        float f2 = this.f28944F.j().f35002a;
+        boolean z6 = this.f28962Z.f32738l;
+        this.f28983y.a(new XN(this.f28950M, abstractC3627n8, c3860rQ, R8, f2, this.m0, j6), (InterfaceC3780q[]) c3941t.f34965v);
     }
 
     public final boolean T() {
-        C3566mO c3566mO = this.f28170Z;
-        return c3566mO.f31958l && c3566mO.f31960n == 0;
+        C3589mO c3589mO = this.f28962Z;
+        return c3589mO.f32738l && c3589mO.f32740n == 0;
     }
 
     public final void U(int i) {
-        D0.H h9 = this.f28171n[i];
+        D0.H h3 = this.f28967n[i];
         try {
-            C3029cO c3029cO = this.J.f29921h;
-            if (c3029cO == null) {
+            C3052cO c3052cO = this.J.f30713h;
+            if (c3052cO == null) {
                 throw null;
             }
-            RP m4 = h9.m(c3029cO);
-            m4.getClass();
-            IQ iq = m4.f27208B;
-            iq.getClass();
-            iq.f();
+            SP m9 = h3.m(c3052cO);
+            m9.getClass();
+            LQ lq = m9.f28198B;
+            lq.getClass();
+            lq.f();
         } catch (IOException | RuntimeException e9) {
-            int i6 = ((RP) h9.f539e).f27272u;
+            int i4 = ((SP) h3.f434e).f28261u;
             throw e9;
         }
     }
 
     public final boolean V() {
-        if (!this.f28162Q) {
+        if (!this.f28954Q) {
             return false;
         }
         for (int i = 0; i < 2; i++) {
-            if (this.f28171n[i].q()) {
+            if (this.f28967n[i].q()) {
                 return true;
             }
         }
         return false;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3328i0
+    @Override // com.google.android.gms.internal.ads.InterfaceC3351i0
     public final void a(long j6, long j9, DP dp, MediaFormat mediaFormat) {
-        if (this.f28168W) {
-            C3212ft c3212ft = this.f28189z;
-            c3212ft.getClass();
-            C3104dt g4 = C3212ft.g();
-            g4.f29857a = c3212ft.f30468a.obtainMessage(37);
-            g4.a();
+        if (this.f28960W) {
+            C3235ft c3235ft = this.f28985z;
+            c3235ft.getClass();
+            C3127dt g9 = C3235ft.g();
+            g9.f30645a = c3235ft.f31231a.obtainMessage(37);
+            g9.a();
         }
     }
 
     public final void b(IOException iOException, int i) {
         DN dn = new DN(0, iOException, i);
-        C3029cO c3029cO = this.J.f29921h;
-        if (c3029cO != null) {
-            dn = dn.a(c3029cO.f29479g.f29760a);
+        C3052cO c3052cO = this.J.f30713h;
+        if (c3052cO != null) {
+            dn = dn.a(c3052cO.f30262g.f30532a);
         }
-        AbstractC2968bG.J("ExoPlayerImplInternal", "Playback error", dn);
+        AbstractC2991bG.J("ExoPlayerImplInternal", "Playback error", dn);
         u(false, false);
-        this.f28170Z = this.f28170Z.e(dn);
+        this.f28962Z = this.f28962Z.e(dn);
     }
 
     public final void c(int i) {
-        C3566mO c3566mO = this.f28170Z;
-        if (c3566mO.f31952e != i) {
+        C3589mO c3589mO = this.f28962Z;
+        if (c3589mO.f32732e != i) {
             if (i != 2) {
-                this.f28146E0 = com.anythink.basead.exoplayer.b.f6382b;
+                this.f28986z0 = com.anythink.basead.exoplayer.b.f7168b;
             }
-            this.f28170Z = c3566mO.d(i);
+            this.f28962Z = c3589mO.d(i);
         }
     }
 
     public final void d(int i) {
-        C4085w4 c4085w4 = this.f28172n0;
-        C3566mO c3566mO = this.f28170Z;
-        boolean z3 = c4085w4.f34795b | (((C3566mO) c4085w4.f34799f) != c3566mO);
-        c4085w4.f34795b = z3;
-        c4085w4.f34799f = c3566mO;
-        if (z3) {
-            if (!c3566mO.f31948a.g()) {
-                C3566mO c3566mO2 = this.f28170Z;
-                boolean z6 = c3566mO2.f31948a.e(c3566mO2.f31949b.f32905a) != -1;
+        C4108w4 c4108w4 = this.f28963i0;
+        C3589mO c3589mO = this.f28962Z;
+        boolean z6 = c4108w4.f35564b | (((C3589mO) c4108w4.f35568f) != c3589mO);
+        c4108w4.f35564b = z6;
+        c4108w4.f35568f = c3589mO;
+        if (z6) {
+            if (!c3589mO.f32728a.g()) {
+                C3589mO c3589mO2 = this.f28962Z;
+                boolean z9 = c3589mO2.f32728a.e(c3589mO2.f32729b.f34406a) != -1;
                 Locale locale = Locale.US;
-                C3566mO c3566mO3 = this.f28170Z;
-                AbstractC2772Sd.I(String.format(locale, "periodUid %s not found in timeline %s with size %d triggered by msg %d", c3566mO3.f31949b.f32905a, c3566mO3.f31948a.getClass().getName(), Integer.valueOf(this.f28170Z.f31948a.a()), Integer.valueOf(i)), z6);
+                C3589mO c3589mO3 = this.f28962Z;
+                AbstractC2792Sd.I(String.format(locale, "periodUid %s not found in timeline %s with size %d triggered by msg %d", c3589mO3.f32729b.f34406a, c3589mO3.f32728a.getClass().getName(), Integer.valueOf(this.f28962Z.f32728a.a()), Integer.valueOf(i)), z9);
             }
-            C3534lt c3534lt = this.f28153I;
-            C4085w4 c4085w42 = this.f28172n0;
-            PN pn = (PN) c3534lt.f31863u;
+            C3557lt c3557lt = this.f28947I;
+            C4108w4 c4108w42 = this.f28963i0;
+            PN pn = (PN) c3557lt.f32643u;
             pn.getClass();
-            pn.f26770D.e(new RunnableC3048cq(21, pn, c4085w42));
-            this.f28172n0 = new C4085w4(this.f28170Z);
+            pn.f27552D.e(new RunnableC3071cq(21, pn, c4108w42));
+            this.f28963i0 = new C4108w4(this.f28962Z);
         }
     }
 
-    public final void e(float f3) {
-        this.f28154I0 = f3;
-        float f9 = f3 * this.f28163R.f31067g;
+    public final void e(float f2) {
+        this.f28941D0 = f2;
+        float f9 = f2 * this.f28955R.f31838g;
         for (int i = 0; i < 2; i++) {
-            D0.H h9 = this.f28171n[i];
-            RP rp = (RP) h9.f539e;
-            if (rp.f27272u == 1) {
+            D0.H h3 = this.f28967n[i];
+            SP sp = (SP) h3.f434e;
+            if (sp.f28261u == 1) {
                 Float valueOf = Float.valueOf(f9);
-                rp.b(2, valueOf);
-                RP rp2 = (RP) h9.f540f;
-                if (rp2 != null) {
-                    rp2.b(2, valueOf);
+                sp.b(2, valueOf);
+                SP sp2 = (SP) h3.f435f;
+                if (sp2 != null) {
+                    sp2.b(2, valueOf);
                 }
             }
         }
@@ -2075,93 +2073,93 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void f(int i, int i6, int i9, boolean z3) {
-        boolean z6;
-        C3566mO c3566mO;
-        C3029cO c3029cO;
-        if (z3) {
+    public final void f(int i, int i4, int i6, boolean z6) {
+        boolean z9;
+        C3589mO c3589mO;
+        C3052cO c3052cO;
+        if (z6) {
             if (i != -1) {
-                z6 = true;
+                z9 = true;
                 if (i != -1) {
-                    i9 = 2;
-                } else if (i9 == 2) {
-                    i9 = 1;
-                }
-                boolean z9 = this.f28167V;
-                if (i != 0) {
+                    i6 = 2;
+                } else if (i6 == 2) {
                     i6 = 1;
-                } else if (i6 == 1) {
-                    i6 = z9 ? 4 : 0;
                 }
-                c3566mO = this.f28170Z;
-                if (c3566mO.f31958l != z6 && c3566mO.f31960n == i6 && c3566mO.f31959m == i9) {
+                boolean z10 = this.f28959V;
+                if (i != 0) {
+                    i4 = 1;
+                } else if (i4 == 1) {
+                    i4 = z10 ? 4 : 0;
+                }
+                c3589mO = this.f28962Z;
+                if (c3589mO.f32738l != z9 && c3589mO.f32740n == i4 && c3589mO.f32739m == i6) {
                     return;
                 }
-                this.f28170Z = c3566mO.h(i9, i6, z6);
+                this.f28962Z = c3589mO.h(i6, i4, z9);
                 y(false, false);
-                C3136eO c3136eO = this.J;
-                for (c3029cO = c3136eO.f29921h; c3029cO != null; c3029cO = c3029cO.f29484m) {
-                    for (InterfaceC3757q interfaceC3757q : (InterfaceC3757q[]) c3029cO.f29486o.f34179v) {
+                C3159eO c3159eO = this.J;
+                for (c3052cO = c3159eO.f30713h; c3052cO != null; c3052cO = c3052cO.f30267m) {
+                    for (InterfaceC3780q interfaceC3780q : (InterfaceC3780q[]) c3052cO.f30269o.f34965v) {
                     }
                 }
                 if (T()) {
                     k();
                     l();
-                    this.f28170Z.getClass();
-                    c3136eO.n(this.f28190z0);
+                    this.f28962Z.getClass();
+                    c3159eO.n(this.f28976u0);
                     return;
                 }
-                int i10 = this.f28170Z.f31952e;
-                C3212ft c3212ft = this.f28189z;
-                if (i10 != 3) {
-                    if (i10 == 2) {
-                        c3212ft.c(2);
+                int i9 = this.f28962Z.f32732e;
+                C3235ft c3235ft = this.f28985z;
+                if (i9 != 3) {
+                    if (i9 == 2) {
+                        c3235ft.c(2);
                         return;
                     }
                     return;
                 }
-                Is is = this.f28147F;
-                is.f25608u = true;
-                C4105wO c4105wO = (C4105wO) is.f25609v;
-                if (!c4105wO.f34832n) {
-                    c4105wO.f34834v = SystemClock.elapsedRealtime();
-                    c4105wO.f34832n = true;
+                Is is = this.f28944F;
+                is.f26361u = true;
+                C4128wO c4128wO = (C4128wO) is.f26362v;
+                if (!c4128wO.f35601n) {
+                    c4128wO.f35603v = SystemClock.elapsedRealtime();
+                    c4128wO.f35601n = true;
                 }
                 i();
-                c3212ft.c(2);
+                c3235ft.c(2);
                 return;
             }
             i = -1;
         }
-        z6 = false;
+        z9 = false;
         if (i != -1) {
         }
-        boolean z92 = this.f28167V;
+        boolean z102 = this.f28959V;
         if (i != 0) {
         }
-        c3566mO = this.f28170Z;
-        if (c3566mO.f31958l != z6) {
+        c3589mO = this.f28962Z;
+        if (c3589mO.f32738l != z9) {
         }
-        this.f28170Z = c3566mO.h(i9, i6, z6);
+        this.f28962Z = c3589mO.h(i6, i4, z9);
         y(false, false);
-        C3136eO c3136eO2 = this.J;
-        while (c3029cO != null) {
+        C3159eO c3159eO2 = this.J;
+        while (c3052cO != null) {
         }
         if (T()) {
         }
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3568mQ
-    public final void g(InterfaceC3622nQ interfaceC3622nQ) {
-        this.f28189z.b(8, interfaceC3622nQ).a();
+    @Override // com.google.android.gms.internal.ads.InterfaceC3753pQ
+    public final void g(InterfaceC3807qQ interfaceC3807qQ) {
+        this.f28985z.b(8, interfaceC3807qQ).a();
     }
 
-    public final void h(boolean z3) {
-        C3676oQ c3676oQ = this.J.f29921h.f29479g.f29760a;
-        long r9 = r(c3676oQ, this.f28170Z.f31964r, true, false);
-        if (r9 != this.f28170Z.f31964r) {
-            C3566mO c3566mO = this.f28170Z;
-            this.f28170Z = N(c3676oQ, r9, c3566mO.f31950c, c3566mO.f31951d, z3, 5);
+    public final void h(boolean z6) {
+        C3860rQ c3860rQ = this.J.f30713h.f30262g.f30532a;
+        long r9 = r(c3860rQ, this.f28962Z.f32744r, true, false);
+        if (r9 != this.f28962Z.f32744r) {
+            C3589mO c3589mO = this.f28962Z;
+            this.f28962Z = N(c3860rQ, r9, c3589mO.f32730c, c3589mO.f32731d, z6, 5);
         }
     }
 
@@ -2202,51 +2200,51 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
     public final boolean handleMessage(Message message) {
         int i;
         DN dn;
-        boolean z3;
-        int i6;
-        C3676oQ c3676oQ;
-        C3136eO c3136eO;
-        C3029cO u3;
-        C3029cO t6;
-        long uptimeMillis;
-        C3212ft c3212ft;
-        C3566mO c3566mO;
-        int i9;
-        C3136eO c3136eO2;
-        long j6;
-        C3029cO t9;
-        DN dn2;
-        int i10;
-        long j9;
-        int i11;
-        int i12;
         boolean z6;
-        C3029cO t10;
+        int i4;
+        C3860rQ c3860rQ;
+        C3159eO c3159eO;
+        C3052cO u6;
+        C3052cO t6;
+        long uptimeMillis;
+        C3235ft c3235ft;
+        C3589mO c3589mO;
+        int i6;
+        C3159eO c3159eO2;
+        long j6;
+        C3052cO t9;
+        DN dn2;
+        int i9;
+        long j9;
+        int i10;
+        int i11;
         boolean z9;
-        int i13;
-        C3029cO s9;
-        C3029cO i14;
-        C3029cO x9;
-        char c9;
+        C3052cO t10;
         boolean z10;
-        int i15;
-        int i16;
-        C3029cO t11;
-        C3918t k9;
-        int i17;
-        int i18;
-        D0.H[] hArr;
-        C3029cO u6;
-        C3918t c3918t;
-        int i19;
-        C3083dO p9;
-        C3029cO s10;
+        int i12;
+        C3052cO s9;
+        C3052cO i13;
+        C3052cO x9;
+        char c9;
         boolean z11;
+        int i14;
+        int i15;
+        C3052cO t11;
+        C3941t k9;
+        int i16;
+        int i17;
+        D0.H[] hArr;
+        C3052cO u9;
+        C3941t c3941t;
+        int i18;
+        C3106dO p9;
+        C3052cO s10;
         boolean z12;
+        boolean z13;
         long j10;
         long j11;
-        int i20;
-        boolean g4;
+        int i19;
+        boolean g9;
         Message message2 = message;
         try {
             try {
@@ -2259,29 +2257,29 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
             e = e11;
         } catch (U4 e12) {
             e = e12;
-        } catch (C4214yP e13) {
+        } catch (C4237yP e13) {
             e = e13;
         } catch (IOException e14) {
             e = e14;
         }
         switch (message2.what) {
             case 1:
-                boolean z13 = message2.arg1 != 0;
-                int i21 = message2.arg2;
-                this.f28172n0.f(1);
-                f(this.f28163R.b(this.f28170Z.f31952e, z13), i21 >> 4, i21 & 15, z13);
-                z3 = true;
+                boolean z14 = message2.arg1 != 0;
+                int i20 = message2.arg2;
+                this.f28963i0.f(1);
+                f(this.f28955R.b(this.f28962Z.f32732e, z14), i20 >> 4, i20 & 15, z14);
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 2:
-                z3 = true;
+                z6 = true;
                 try {
                     try {
                         uptimeMillis = SystemClock.uptimeMillis();
-                        c3212ft = this.f28189z;
-                        c3212ft.d(2);
-                        c3566mO = this.f28170Z;
-                        i9 = c3566mO.f31952e;
+                        c3235ft = this.f28985z;
+                        c3235ft.d(2);
+                        c3589mO = this.f28962Z;
+                        i6 = c3589mO.f32732e;
                     } catch (DN e15) {
                         e = e15;
                     }
@@ -2289,147 +2287,147 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
                     e = e16;
                 } catch (U4 e17) {
                     e = e17;
-                } catch (C4214yP e18) {
+                } catch (C4237yP e18) {
                     e = e18;
                 } catch (IOException e19) {
                     e = e19;
                 } catch (RuntimeException e20) {
                     e = e20;
                 }
-                if (i9 == 1) {
+                if (i6 == 1) {
                     message2 = message;
-                } else if (i9 != 4) {
-                    if (!c3566mO.f31948a.g()) {
+                } else if (i6 != 4) {
+                    if (!c3589mO.f32728a.g()) {
                         try {
                         } catch (DN e21) {
                             e = e21;
                         }
-                        if (this.f28156K.d()) {
-                            C3136eO c3136eO3 = this.J;
-                            c3136eO3.n(this.f28190z0);
-                            if (c3136eO3.o() && (p9 = c3136eO3.p(this.f28190z0, this.f28170Z)) != null) {
-                                C3029cO q8 = c3136eO3.q(p9);
-                                if (!q8.f29476d) {
-                                    long j12 = p9.f29761b;
-                                    q8.f29476d = true;
-                                    q8.f29473a.b(this, j12);
-                                } else if (q8.f29477e) {
-                                    c3212ft.b(8, q8.f29473a).a();
+                        if (this.f28948K.d()) {
+                            C3159eO c3159eO3 = this.J;
+                            c3159eO3.n(this.f28976u0);
+                            if (c3159eO3.o() && (p9 = c3159eO3.p(this.f28976u0, this.f28962Z)) != null) {
+                                C3052cO q8 = c3159eO3.q(p9);
+                                if (!q8.f30259d) {
+                                    long j12 = p9.f30533b;
+                                    q8.f30259d = true;
+                                    q8.f30256a.b(this, j12);
+                                } else if (q8.f30260e) {
+                                    c3235ft.b(8, q8.f30256a).a();
                                 }
-                                if (c3136eO3.s() == q8) {
-                                    s(p9.f29761b, true);
+                                if (c3159eO3.s() == q8) {
+                                    s(p9.f30533b, true);
                                 }
                                 Q(false);
                             }
-                            if (this.f28178t0) {
-                                this.f28178t0 = A(c3136eO3.f29923k);
+                            if (this.f28969o0) {
+                                this.f28969o0 = A(c3159eO3.f30715k);
                                 M();
                             } else {
                                 L();
                             }
-                            if (!this.f28175q0 && this.f28162Q && !this.f28152H0 && !V() && (u6 = c3136eO3.u()) != null && u6 == c3136eO3.t() && u6.i() != null && u6.i().f29477e) {
-                                AbstractC2772Sd.H(u6.i().f29477e);
-                                if (((long) ((r0.a() - this.f28190z0) / this.f28147F.j().f34216a)) <= 10000000) {
-                                    c3136eO3.w();
-                                    c3136eO2 = c3136eO3;
-                                    C3029cO u9 = c3136eO2.u();
-                                    if (u9 != null) {
-                                        C3918t k10 = u9.k();
-                                        int i22 = 0;
+                            if (!this.f28966l0 && this.f28954Q && !this.C0 && !V() && (u9 = c3159eO3.u()) != null && u9 == c3159eO3.t() && u9.i() != null && u9.i().f30260e) {
+                                AbstractC2792Sd.H(u9.i().f30260e);
+                                if (((long) ((r0.a() - this.f28976u0) / this.f28944F.j().f35002a)) <= 10000000) {
+                                    c3159eO3.w();
+                                    c3159eO2 = c3159eO3;
+                                    C3052cO u10 = c3159eO2.u();
+                                    if (u10 != null) {
+                                        C3941t k10 = u10.k();
+                                        int i21 = 0;
                                         while (true) {
-                                            D0.H[] hArr2 = this.f28171n;
-                                            if (i22 < 2) {
-                                                if (k10.c(i22) && hArr2[i22].o() && !hArr2[i22].q()) {
-                                                    hArr2[i22].p();
-                                                    c3918t = k10;
-                                                    i19 = i22;
-                                                    P(u9, i19, false, u9.a());
+                                            D0.H[] hArr2 = this.f28967n;
+                                            if (i21 < 2) {
+                                                if (k10.c(i21) && hArr2[i21].o() && !hArr2[i21].q()) {
+                                                    hArr2[i21].p();
+                                                    c3941t = k10;
+                                                    i18 = i21;
+                                                    P(u10, i18, false, u10.a());
                                                 } else {
-                                                    c3918t = k10;
-                                                    i19 = i22;
+                                                    c3941t = k10;
+                                                    i18 = i21;
                                                 }
-                                                i22 = i19 + 1;
-                                                k10 = c3918t;
+                                                i21 = i18 + 1;
+                                                k10 = c3941t;
                                             } else {
-                                                j6 = com.anythink.basead.exoplayer.b.f6382b;
+                                                j6 = com.anythink.basead.exoplayer.b.f7168b;
                                                 if (V()) {
-                                                    this.f28150G0 = u9.f29473a.w();
-                                                    if (!u9.b()) {
-                                                        c3136eO2.y(u9);
+                                                    this.f28938B0 = u10.f30256a.w();
+                                                    if (!u10.b()) {
+                                                        c3159eO2.y(u10);
                                                         Q(false);
                                                         L();
                                                     }
                                                 }
-                                                t9 = c3136eO2.t();
+                                                t9 = c3159eO2.t();
                                                 if (t9 != null) {
                                                     if (t9.i() != null) {
                                                         try {
-                                                            if (!this.f28175q0) {
-                                                                C3029cO t12 = c3136eO2.t();
-                                                                if (t12.f29477e) {
-                                                                    int i23 = 0;
+                                                            if (!this.f28966l0) {
+                                                                C3052cO t12 = c3159eO2.t();
+                                                                if (t12.f30260e) {
+                                                                    int i22 = 0;
                                                                     while (true) {
-                                                                        D0.H[] hArr3 = this.f28171n;
-                                                                        if (i23 < 2) {
-                                                                            if (hArr3[i23].z(t12)) {
-                                                                                i23++;
+                                                                        D0.H[] hArr3 = this.f28967n;
+                                                                        if (i22 < 2) {
+                                                                            if (hArr3[i22].z(t12)) {
+                                                                                i22++;
                                                                             }
-                                                                        } else if ((!V() || c3136eO2.u() != c3136eO2.t()) && (t9.i().f29477e || this.f28190z0 >= t9.i().a())) {
-                                                                            if (t9.i().f29477e) {
-                                                                                AbstractC2772Sd.H(t9.i().f29477e);
+                                                                        } else if ((!V() || c3159eO2.u() != c3159eO2.t()) && (t9.i().f30260e || this.f28976u0 >= t9.i().a())) {
+                                                                            if (t9.i().f30260e) {
+                                                                                AbstractC2792Sd.H(t9.i().f30260e);
                                                                                 dn2 = null;
-                                                                                i10 = 1;
-                                                                                if (((long) ((r3.a() - this.f28190z0) / this.f28147F.j().f34216a)) > 10000000) {
+                                                                                i9 = 1;
+                                                                                if (((long) ((r3.a() - this.f28976u0) / this.f28944F.j().f35002a)) > 10000000) {
                                                                                     j9 = uptimeMillis;
                                                                                 }
                                                                             } else {
                                                                                 dn2 = null;
-                                                                                i10 = 1;
+                                                                                i9 = 1;
                                                                             }
-                                                                            C3918t k11 = t9.k();
-                                                                            C3029cO v9 = c3136eO2.v();
-                                                                            C3918t k12 = v9.k();
-                                                                            AbstractC3604n8 abstractC3604n8 = this.f28170Z.f31948a;
+                                                                            C3941t k11 = t9.k();
+                                                                            C3052cO v9 = c3159eO2.v();
+                                                                            C3941t k12 = v9.k();
+                                                                            AbstractC3627n8 abstractC3627n8 = this.f28962Z.f32728a;
                                                                             j9 = uptimeMillis;
-                                                                            G(abstractC3604n8, v9.f29479g.f29760a, abstractC3604n8, t9.f29479g.f29760a, com.anythink.basead.exoplayer.b.f6382b, false);
-                                                                            if (!v9.f29477e || ((!(z6 = this.f28162Q) || this.f28150G0 == j6) && v9.f29473a.w() == j6)) {
-                                                                                i11 = 0;
-                                                                                i12 = 2;
+                                                                            G(abstractC3627n8, v9.f30262g.f30532a, abstractC3627n8, t9.f30262g.f30532a, com.anythink.basead.exoplayer.b.f7168b, false);
+                                                                            if (!v9.f30260e || ((!(z9 = this.f28954Q) || this.f28938B0 == j6) && v9.f30256a.w() == j6)) {
+                                                                                i10 = 0;
+                                                                                i11 = 2;
                                                                             } else {
-                                                                                this.f28150G0 = j6;
-                                                                                if (z6 && !this.f28152H0) {
-                                                                                    int i24 = 0;
+                                                                                this.f28938B0 = j6;
+                                                                                if (z9 && !this.C0) {
+                                                                                    int i23 = 0;
                                                                                     while (true) {
-                                                                                        i12 = 2;
-                                                                                        if (i24 < 2) {
-                                                                                            if (k12.c(i24)) {
-                                                                                                int i25 = ((RP) hArr3[i24].f539e).f27272u;
-                                                                                                InterfaceC3757q[] interfaceC3757qArr = (InterfaceC3757q[]) k12.f34179v;
-                                                                                                if (!H4.d(interfaceC3757qArr[i24].i().f24431o, interfaceC3757qArr[i24].i().f24427k) && !hArr3[i24].q()) {
+                                                                                        i11 = 2;
+                                                                                        if (i23 < 2) {
+                                                                                            if (k12.c(i23)) {
+                                                                                                int i24 = ((SP) hArr3[i23].f434e).f28261u;
+                                                                                                InterfaceC3780q[] interfaceC3780qArr = (InterfaceC3780q[]) k12.f34965v;
+                                                                                                if (!H4.d(interfaceC3780qArr[i23].i().f25176o, interfaceC3780qArr[i23].i().f25172k) && !hArr3[i23].q()) {
                                                                                                 }
                                                                                             }
-                                                                                            i24++;
+                                                                                            i23++;
                                                                                         } else {
-                                                                                            i11 = 0;
+                                                                                            i10 = 0;
                                                                                         }
                                                                                     }
                                                                                 }
                                                                                 v9.a();
-                                                                                for (int i26 = 0; i26 < 2; i26++) {
-                                                                                    hArr3[i26].v();
+                                                                                for (int i25 = 0; i25 < 2; i25++) {
+                                                                                    hArr3[i25].v();
                                                                                 }
                                                                                 if (!v9.b()) {
-                                                                                    c3136eO2.y(v9);
+                                                                                    c3159eO2.y(v9);
                                                                                     Q(false);
                                                                                     L();
                                                                                 }
                                                                             }
-                                                                            while (i11 < i12) {
-                                                                                D0.H h9 = hArr3[i11];
+                                                                            while (i10 < i11) {
+                                                                                D0.H h3 = hArr3[i10];
                                                                                 v9.a();
-                                                                                h9.u(k11, k12);
-                                                                                i11++;
-                                                                                i12 = 2;
+                                                                                h3.u(k11, k12);
+                                                                                i10++;
+                                                                                i11 = 2;
                                                                             }
                                                                         }
                                                                     }
@@ -2438,71 +2436,71 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
                                                         } catch (DN e22) {
                                                             e = e22;
                                                             message2 = message;
-                                                            if (e.f24388v == 1) {
-                                                                e = e.a(t6.f29479g.f29760a);
+                                                            if (e.f25133v == 1) {
+                                                                e = e.a(t6.f30262g.f30532a);
                                                                 break;
                                                             }
-                                                            if (e.f24388v == 1) {
-                                                                int i27 = e.f24390x;
-                                                                c3136eO = this.J;
-                                                                if (c3136eO.u() != null) {
-                                                                    this.f28152H0 = true;
+                                                            if (e.f25133v == 1) {
+                                                                int i26 = e.f25135x;
+                                                                c3159eO = this.J;
+                                                                if (c3159eO.u() != null) {
+                                                                    this.C0 = true;
                                                                     C();
-                                                                    u3 = c3136eO.u();
-                                                                    C3029cO s11 = c3136eO.s();
-                                                                    if (c3136eO.s() != u3) {
+                                                                    u6 = c3159eO.u();
+                                                                    C3052cO s11 = c3159eO.s();
+                                                                    if (c3159eO.s() != u6) {
                                                                     }
-                                                                    c3136eO.y(s11);
-                                                                    if (this.f28170Z.f31952e != 4) {
+                                                                    c3159eO.y(s11);
+                                                                    if (this.f28962Z.f32732e != 4) {
                                                                     }
-                                                                    z3 = true;
+                                                                    z6 = true;
                                                                     d(message2.what);
-                                                                    return z3;
+                                                                    return z6;
                                                                 }
                                                                 break;
                                                             }
-                                                            dn = this.f28144D0;
+                                                            dn = this.f28984y0;
                                                             if (dn != null) {
                                                             }
-                                                            if (e.f24388v == 1) {
+                                                            if (e.f25133v == 1) {
                                                             }
-                                                            if (e.f24385B) {
+                                                            if (e.f25130B) {
                                                                 break;
                                                             }
-                                                            AbstractC2968bG.J("ExoPlayerImplInternal", "Playback error", e);
-                                                            z3 = true;
+                                                            AbstractC2991bG.J("ExoPlayerImplInternal", "Playback error", e);
+                                                            z6 = true;
                                                             u(true, false);
-                                                            this.f28170Z = this.f28170Z.e(e);
+                                                            this.f28962Z = this.f28962Z.e(e);
                                                             d(message2.what);
-                                                            return z3;
+                                                            return z6;
                                                         } catch (NH e23) {
                                                             e = e23;
                                                             message2 = message;
-                                                            b(e, e.f26478n);
-                                                            z3 = true;
+                                                            b(e, e.f27262n);
+                                                            z6 = true;
                                                             d(message2.what);
-                                                            return z3;
+                                                            return z6;
                                                         } catch (U4 e24) {
                                                             e = e24;
                                                             message2 = message;
-                                                            b(e, e.f27886u == 1 ? true != e.f27885n ? 3003 : AdError.MEDIATION_ERROR_CODE : 1000);
-                                                            z3 = true;
+                                                            b(e, e.f28683u == 1 ? true != e.f28682n ? 3003 : AdError.MEDIATION_ERROR_CODE : 1000);
+                                                            z6 = true;
                                                             d(message2.what);
-                                                            return z3;
-                                                        } catch (C4214yP e25) {
+                                                            return z6;
+                                                        } catch (C4237yP e25) {
                                                             e = e25;
                                                             message2 = message;
-                                                            b(e, e.f35157n);
-                                                            z3 = true;
+                                                            b(e, e.f35943n);
+                                                            z6 = true;
                                                             d(message2.what);
-                                                            return z3;
+                                                            return z6;
                                                         } catch (IOException e26) {
                                                             e = e26;
                                                             message2 = message;
                                                             b(e, 2000);
-                                                            z3 = true;
+                                                            z6 = true;
                                                             d(message2.what);
-                                                            return z3;
+                                                            return z6;
                                                         } catch (RuntimeException e27) {
                                                             e = e27;
                                                             message2 = message;
@@ -2511,207 +2509,207 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
                                                                 i = 1000;
                                                             }
                                                             DN dn3 = new DN(2, e, i);
-                                                            AbstractC2968bG.J("ExoPlayerImplInternal", "Playback error", dn3);
+                                                            AbstractC2991bG.J("ExoPlayerImplInternal", "Playback error", dn3);
                                                             u(true, false);
-                                                            this.f28170Z = this.f28170Z.e(dn3);
-                                                            z3 = true;
+                                                            this.f28962Z = this.f28962Z.e(dn3);
+                                                            z6 = true;
                                                             d(message2.what);
-                                                            return z3;
+                                                            return z6;
                                                         }
                                                     }
                                                     j9 = uptimeMillis;
                                                     dn2 = null;
-                                                    i10 = 1;
-                                                    if (t9.f29479g.f29767h || this.f28175q0) {
-                                                        D0.H[] hArr4 = this.f28171n;
-                                                        for (int i28 = 0; i28 < 2; i28++) {
-                                                            D0.H h10 = hArr4[i28];
-                                                            if ((h10.m(t9) != null) && h10.s(t9)) {
-                                                                h10.t(t9);
+                                                    i9 = 1;
+                                                    if (t9.f30262g.f30539h || this.f28966l0) {
+                                                        D0.H[] hArr4 = this.f28967n;
+                                                        for (int i27 = 0; i27 < 2; i27++) {
+                                                            D0.H h9 = hArr4[i27];
+                                                            if ((h9.m(t9) != null) && h9.s(t9)) {
+                                                                h9.t(t9);
                                                             }
                                                         }
                                                     }
-                                                    t10 = c3136eO2.t();
-                                                    if (t10 != null && c3136eO2.s() != t10 && !t10.f29480h) {
-                                                        t11 = c3136eO2.t();
+                                                    t10 = c3159eO2.t();
+                                                    if (t10 != null && c3159eO2.s() != t10 && !t10.f30263h) {
+                                                        t11 = c3159eO2.t();
                                                         k9 = t11.k();
-                                                        i17 = i10;
-                                                        i18 = 0;
+                                                        i16 = i9;
+                                                        i17 = 0;
                                                         while (true) {
-                                                            hArr = this.f28171n;
-                                                            if (i18 >= 2) {
-                                                                int r9 = hArr[i18].r();
-                                                                int c10 = hArr[i18].c(t11, k9, this.f28147F);
-                                                                this.f28186x0 -= r9 - hArr[i18].r();
-                                                                i17 &= c10 & 1;
-                                                                i18++;
-                                                            } else if (i17 != 0) {
-                                                                for (int i29 = 0; i29 < 2; i29++) {
-                                                                    if (k9.c(i29)) {
-                                                                        if ((hArr[i29].m(t11) != null ? i10 : 0) == 0) {
-                                                                            P(t11, i29, false, t11.a());
+                                                            hArr = this.f28967n;
+                                                            if (i17 >= 2) {
+                                                                int r9 = hArr[i17].r();
+                                                                int c10 = hArr[i17].c(t11, k9, this.f28944F);
+                                                                this.f28973s0 -= r9 - hArr[i17].r();
+                                                                i16 &= c10 & 1;
+                                                                i17++;
+                                                            } else if (i16 != 0) {
+                                                                for (int i28 = 0; i28 < 2; i28++) {
+                                                                    if (k9.c(i28)) {
+                                                                        if ((hArr[i28].m(t11) != null ? i9 : 0) == 0) {
+                                                                            P(t11, i28, false, t11.a());
                                                                         }
                                                                     }
                                                                 }
-                                                                c3136eO2.t().f29480h = i10;
+                                                                c3159eO2.t().f30263h = i9;
                                                             }
                                                         }
                                                     }
-                                                    z9 = false;
-                                                    while (T() && !this.f28175q0 && (s9 = c3136eO2.s()) != null && (i14 = s9.i()) != null && this.f28190z0 >= i14.a() && i14.f29480h) {
-                                                        if (z9) {
+                                                    z10 = false;
+                                                    while (T() && !this.f28966l0 && (s9 = c3159eO2.s()) != null && (i13 = s9.i()) != null && this.f28976u0 >= i13.a() && i13.f30263h) {
+                                                        if (z10) {
                                                             d(-1);
                                                         }
-                                                        this.f28152H0 = false;
-                                                        x9 = c3136eO2.x();
+                                                        this.C0 = false;
+                                                        x9 = c3159eO2.x();
                                                         if (x9 != null) {
                                                             throw dn2;
                                                         }
-                                                        if (this.f28170Z.f31949b.f32905a.equals(x9.f29479g.f29760a.f32905a)) {
-                                                            C3676oQ c3676oQ2 = this.f28170Z.f31949b;
+                                                        if (this.f28962Z.f32729b.f34406a.equals(x9.f30262g.f30532a.f34406a)) {
+                                                            C3860rQ c3860rQ2 = this.f28962Z.f32729b;
                                                             c9 = 65535;
-                                                            if (c3676oQ2.f32906b == -1) {
-                                                                C3676oQ c3676oQ3 = x9.f29479g.f29760a;
-                                                                if (c3676oQ3.f32906b == -1 && c3676oQ2.f32909e != c3676oQ3.f32909e) {
-                                                                    z10 = true;
-                                                                    C3083dO c3083dO = x9.f29479g;
-                                                                    C3676oQ c3676oQ4 = c3083dO.f29760a;
-                                                                    boolean z14 = z10;
-                                                                    long j13 = c3083dO.f29761b;
-                                                                    this.f28170Z = N(c3676oQ4, j13, c3083dO.f29763d, j13, !z14, 0);
+                                                            if (c3860rQ2.f34407b == -1) {
+                                                                C3860rQ c3860rQ3 = x9.f30262g.f30532a;
+                                                                if (c3860rQ3.f34407b == -1 && c3860rQ2.f34410e != c3860rQ3.f34410e) {
+                                                                    z11 = true;
+                                                                    C3106dO c3106dO = x9.f30262g;
+                                                                    C3860rQ c3860rQ4 = c3106dO.f30532a;
+                                                                    boolean z15 = z11;
+                                                                    long j13 = c3106dO.f30533b;
+                                                                    this.f28962Z = N(c3860rQ4, j13, c3106dO.f30535d, j13, !z15, 0);
                                                                     J();
                                                                     l();
-                                                                    if (V() && x9 == c3136eO2.u()) {
-                                                                        D0.H[] hArr5 = this.f28171n;
-                                                                        for (i16 = 0; i16 < 2; i16++) {
-                                                                            hArr5[i16].a();
+                                                                    if (V() && x9 == c3159eO2.u()) {
+                                                                        D0.H[] hArr5 = this.f28967n;
+                                                                        for (i15 = 0; i15 < 2; i15++) {
+                                                                            hArr5[i15].a();
                                                                         }
                                                                     }
-                                                                    if (this.f28170Z.f31952e == 3) {
+                                                                    if (this.f28962Z.f32732e == 3) {
                                                                         i();
                                                                     }
-                                                                    C3918t k13 = c3136eO2.s().k();
-                                                                    i15 = 0;
+                                                                    C3941t k13 = c3159eO2.s().k();
+                                                                    i14 = 0;
                                                                     while (true) {
-                                                                        D0.H[] hArr6 = this.f28171n;
-                                                                        if (i15 >= 2) {
-                                                                            if (k13.c(i15)) {
-                                                                                hArr6[i15].w();
+                                                                        D0.H[] hArr6 = this.f28967n;
+                                                                        if (i14 >= 2) {
+                                                                            if (k13.c(i14)) {
+                                                                                hArr6[i14].w();
                                                                             }
-                                                                            i15++;
+                                                                            i14++;
                                                                         }
                                                                     }
-                                                                    z9 = true;
-                                                                    j6 = com.anythink.basead.exoplayer.b.f6382b;
+                                                                    z10 = true;
+                                                                    j6 = com.anythink.basead.exoplayer.b.f7168b;
                                                                 }
                                                             }
                                                         } else {
                                                             c9 = 65535;
                                                         }
-                                                        z10 = false;
-                                                        C3083dO c3083dO2 = x9.f29479g;
-                                                        C3676oQ c3676oQ42 = c3083dO2.f29760a;
-                                                        boolean z142 = z10;
-                                                        long j132 = c3083dO2.f29761b;
-                                                        this.f28170Z = N(c3676oQ42, j132, c3083dO2.f29763d, j132, !z142, 0);
+                                                        z11 = false;
+                                                        C3106dO c3106dO2 = x9.f30262g;
+                                                        C3860rQ c3860rQ42 = c3106dO2.f30532a;
+                                                        boolean z152 = z11;
+                                                        long j132 = c3106dO2.f30533b;
+                                                        this.f28962Z = N(c3860rQ42, j132, c3106dO2.f30535d, j132, !z152, 0);
                                                         J();
                                                         l();
                                                         if (V()) {
-                                                            D0.H[] hArr52 = this.f28171n;
-                                                            while (i16 < 2) {
+                                                            D0.H[] hArr52 = this.f28967n;
+                                                            while (i15 < 2) {
                                                             }
                                                         }
-                                                        if (this.f28170Z.f31952e == 3) {
+                                                        if (this.f28962Z.f32732e == 3) {
                                                         }
-                                                        C3918t k132 = c3136eO2.s().k();
-                                                        i15 = 0;
+                                                        C3941t k132 = c3159eO2.s().k();
+                                                        i14 = 0;
                                                         while (true) {
-                                                            D0.H[] hArr62 = this.f28171n;
-                                                            if (i15 >= 2) {
+                                                            D0.H[] hArr62 = this.f28967n;
+                                                            if (i14 >= 2) {
                                                                 break;
                                                             }
-                                                            i15++;
+                                                            i14++;
                                                         }
-                                                        z9 = true;
-                                                        j6 = com.anythink.basead.exoplayer.b.f6382b;
+                                                        z10 = true;
+                                                        j6 = com.anythink.basead.exoplayer.b.f7168b;
                                                     }
-                                                    i13 = 3;
-                                                    this.f28148F0.getClass();
-                                                    C3136eO c3136eO4 = this.J;
-                                                    s10 = c3136eO4.s();
+                                                    i12 = 3;
+                                                    this.f28936A0.getClass();
+                                                    C3159eO c3159eO4 = this.J;
+                                                    s10 = c3159eO4.s();
                                                     if (s10 == null) {
                                                         p(j9);
                                                     } else {
                                                         long j14 = j9;
                                                         Trace.beginSection("doSomeWork");
                                                         l();
-                                                        if (s10.f29477e) {
-                                                            this.f28139A0 = AbstractC3159eu.u(SystemClock.elapsedRealtime());
-                                                            s10.f29473a.X(this.f28170Z.f31964r - this.f28145E);
-                                                            int i30 = 0;
-                                                            z11 = true;
+                                                        if (s10.f30260e) {
+                                                            this.f28978v0 = AbstractC3182eu.u(SystemClock.elapsedRealtime());
+                                                            s10.f30256a.X(this.f28962Z.f32744r - this.f28942E);
+                                                            int i29 = 0;
                                                             z12 = true;
+                                                            z13 = true;
                                                             while (true) {
-                                                                D0.H[] hArr7 = this.f28171n;
-                                                                if (i30 < 2) {
-                                                                    D0.H h11 = hArr7[i30];
-                                                                    if (h11.r() == 0) {
-                                                                        m(i30, false);
+                                                                D0.H[] hArr7 = this.f28967n;
+                                                                if (i29 < 2) {
+                                                                    D0.H h10 = hArr7[i29];
+                                                                    if (h10.r() == 0) {
+                                                                        m(i29, false);
                                                                     } else {
-                                                                        h11.A(this.f28190z0, this.f28139A0);
-                                                                        z11 = z11 && h11.x();
-                                                                        boolean B9 = h11.B(s10);
-                                                                        m(i30, B9);
-                                                                        z12 = z12 && B9;
-                                                                        if (!B9) {
-                                                                            U(i30);
+                                                                        h10.A(this.f28976u0, this.f28978v0);
+                                                                        z12 = z12 && h10.x();
+                                                                        boolean B3 = h10.B(s10);
+                                                                        m(i29, B3);
+                                                                        z13 = z13 && B3;
+                                                                        if (!B3) {
+                                                                            U(i29);
                                                                         }
                                                                     }
-                                                                    i30++;
+                                                                    i29++;
                                                                 }
                                                             }
                                                         } else {
-                                                            s10.f29473a.q();
-                                                            z11 = true;
+                                                            s10.f30256a.q();
                                                             z12 = true;
+                                                            z13 = true;
                                                         }
-                                                        long j15 = s10.f29479g.f29764e;
-                                                        if (z11 && s10.f29477e) {
-                                                            j10 = com.anythink.basead.exoplayer.b.f6382b;
-                                                            if (j15 == com.anythink.basead.exoplayer.b.f6382b || j15 <= this.f28170Z.f31964r) {
-                                                                if (this.f28175q0) {
-                                                                    this.f28175q0 = false;
-                                                                    int i31 = this.f28170Z.f31960n;
-                                                                    this.f28172n0.f(0);
-                                                                    f(this.f28163R.b(this.f28170Z.f31952e, false), i31, 5, false);
+                                                        long j15 = s10.f30262g.f30536e;
+                                                        if (z12 && s10.f30260e) {
+                                                            j10 = com.anythink.basead.exoplayer.b.f7168b;
+                                                            if (j15 == com.anythink.basead.exoplayer.b.f7168b || j15 <= this.f28962Z.f32744r) {
+                                                                if (this.f28966l0) {
+                                                                    this.f28966l0 = false;
+                                                                    int i30 = this.f28962Z.f32740n;
+                                                                    this.f28963i0.f(0);
+                                                                    f(this.f28955R.b(this.f28962Z.f32732e, false), i30, 5, false);
                                                                 }
-                                                                if (s10.f29479g.f29767h) {
+                                                                if (s10.f30262g.f30539h) {
                                                                     c(4);
                                                                     k();
                                                                     j11 = -9223372036854775807L;
-                                                                    int i32 = 2;
-                                                                    if (this.f28170Z.f31952e == 2) {
-                                                                        int i33 = 0;
+                                                                    int i31 = 2;
+                                                                    if (this.f28962Z.f32732e == 2) {
+                                                                        int i32 = 0;
                                                                         while (true) {
-                                                                            D0.H[] hArr8 = this.f28171n;
-                                                                            if (i33 < i32) {
-                                                                                if (hArr8[i33].m(s10) != null) {
-                                                                                    U(i33);
+                                                                            D0.H[] hArr8 = this.f28967n;
+                                                                            if (i32 < i31) {
+                                                                                if (hArr8[i32].m(s10) != null) {
+                                                                                    U(i32);
                                                                                 }
-                                                                                i33++;
-                                                                                i32 = 2;
+                                                                                i32++;
+                                                                                i31 = 2;
                                                                             } else {
-                                                                                C3566mO c3566mO2 = this.f28170Z;
-                                                                                if (!c3566mO2.f31954g && c3566mO2.f31963q < 500000 && A(c3136eO4.f29923k) && T()) {
-                                                                                    if (this.f28146E0 == j11) {
-                                                                                        this.f28146E0 = SystemClock.elapsedRealtime();
-                                                                                    } else if (SystemClock.elapsedRealtime() - this.f28146E0 >= 4000) {
+                                                                                C3589mO c3589mO2 = this.f28962Z;
+                                                                                if (!c3589mO2.f32734g && c3589mO2.f32743q < 500000 && A(c3159eO4.f30715k) && T()) {
+                                                                                    if (this.f28986z0 == j11) {
+                                                                                        this.f28986z0 = SystemClock.elapsedRealtime();
+                                                                                    } else if (SystemClock.elapsedRealtime() - this.f28986z0 >= 4000) {
                                                                                         throw new Us(0, 4000);
                                                                                     }
-                                                                                    boolean z15 = !T() && this.f28170Z.f31952e == i13;
-                                                                                    this.f28170Z.getClass();
-                                                                                    i20 = this.f28170Z.f31952e;
-                                                                                    if (i20 != 4 && (z15 || i20 == 2 || (i20 == i13 && this.f28186x0 != 0))) {
+                                                                                    boolean z16 = !T() && this.f28962Z.f32732e == i12;
+                                                                                    this.f28962Z.getClass();
+                                                                                    i19 = this.f28962Z.f32732e;
+                                                                                    if (i19 != 4 && (z16 || i19 == 2 || (i19 == i12 && this.f28973s0 != 0))) {
                                                                                         p(j14);
                                                                                     }
                                                                                     Trace.endSection();
@@ -2719,392 +2717,392 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
                                                                             }
                                                                         }
                                                                     }
-                                                                    this.f28146E0 = j11;
+                                                                    this.f28986z0 = j11;
                                                                     if (T()) {
                                                                     }
-                                                                    this.f28170Z.getClass();
-                                                                    i20 = this.f28170Z.f31952e;
-                                                                    if (i20 != 4) {
+                                                                    this.f28962Z.getClass();
+                                                                    i19 = this.f28962Z.f32732e;
+                                                                    if (i19 != 4) {
                                                                         p(j14);
                                                                     }
                                                                     Trace.endSection();
                                                                 }
                                                             }
                                                         } else {
-                                                            j10 = com.anythink.basead.exoplayer.b.f6382b;
+                                                            j10 = com.anythink.basead.exoplayer.b.f7168b;
                                                         }
-                                                        C3566mO c3566mO3 = this.f28170Z;
-                                                        if (c3566mO3.f31952e == 2) {
-                                                            if (this.f28186x0 == 0) {
-                                                                g4 = E();
+                                                        C3589mO c3589mO3 = this.f28962Z;
+                                                        if (c3589mO3.f32732e == 2) {
+                                                            if (this.f28973s0 == 0) {
+                                                                g9 = E();
                                                                 j11 = j10;
-                                                            } else if (z12) {
-                                                                if (c3566mO3.f31954g) {
-                                                                    C3029cO s12 = c3136eO4.s();
-                                                                    long b9 = o(this.f28170Z.f31948a, s12.f29479g.f29760a) ? this.f28155J0.b() : j10;
-                                                                    C3029cO c3029cO = c3136eO4.f29923k;
-                                                                    boolean z16 = c3029cO.b() && c3029cO.f29479g.f29767h;
-                                                                    boolean z17 = c3029cO.f29479g.f29760a.b() && !c3029cO.f29477e;
-                                                                    if (!z16 && !z17) {
-                                                                        long R8 = R(c3029cO.d());
-                                                                        YN yn = this.f28187y;
-                                                                        IO io = this.f28158M;
-                                                                        AbstractC3604n8 abstractC3604n82 = this.f28170Z.f31948a;
-                                                                        C3676oQ c3676oQ5 = s12.f29479g.f29760a;
-                                                                        float f3 = this.f28147F.j().f34216a;
+                                                            } else if (z13) {
+                                                                if (c3589mO3.f32734g) {
+                                                                    C3052cO s12 = c3159eO4.s();
+                                                                    long b9 = o(this.f28962Z.f32728a, s12.f30262g.f30532a) ? this.f28943E0.b() : j10;
+                                                                    C3052cO c3052cO = c3159eO4.f30715k;
+                                                                    boolean z17 = c3052cO.b() && c3052cO.f30262g.f30539h;
+                                                                    boolean z18 = c3052cO.f30262g.f30532a.b() && !c3052cO.f30260e;
+                                                                    if (!z17 && !z18) {
+                                                                        long R8 = R(c3052cO.d());
+                                                                        YN yn = this.f28983y;
+                                                                        IO io = this.f28950M;
+                                                                        AbstractC3627n8 abstractC3627n82 = this.f28962Z.f32728a;
+                                                                        C3860rQ c3860rQ5 = s12.f30262g.f30532a;
+                                                                        float f2 = this.f28944F.j().f35002a;
                                                                         j11 = j10;
-                                                                        boolean z18 = this.f28170Z.f31958l;
-                                                                        g4 = yn.g(new XN(io, abstractC3604n82, c3676oQ5, R8, f3, this.f28176r0, b9));
+                                                                        boolean z19 = this.f28962Z.f32738l;
+                                                                        g9 = yn.g(new XN(io, abstractC3627n82, c3860rQ5, R8, f2, this.m0, b9));
                                                                     }
                                                                 }
                                                                 j11 = j10;
-                                                                c(i13);
-                                                                this.f28144D0 = dn2;
+                                                                c(i12);
+                                                                this.f28984y0 = dn2;
                                                                 if (T()) {
                                                                     y(false, false);
-                                                                    Is is = this.f28147F;
-                                                                    is.f25608u = true;
-                                                                    C4105wO c4105wO = (C4105wO) is.f25609v;
-                                                                    if (!c4105wO.f34832n) {
-                                                                        c4105wO.f34834v = SystemClock.elapsedRealtime();
-                                                                        c4105wO.f34832n = true;
+                                                                    Is is = this.f28944F;
+                                                                    is.f26361u = true;
+                                                                    C4128wO c4128wO = (C4128wO) is.f26362v;
+                                                                    if (!c4128wO.f35601n) {
+                                                                        c4128wO.f35603v = SystemClock.elapsedRealtime();
+                                                                        c4128wO.f35601n = true;
                                                                     }
                                                                     i();
                                                                 }
-                                                                int i322 = 2;
-                                                                if (this.f28170Z.f31952e == 2) {
+                                                                int i312 = 2;
+                                                                if (this.f28962Z.f32732e == 2) {
                                                                 }
-                                                                this.f28146E0 = j11;
+                                                                this.f28986z0 = j11;
                                                                 if (T()) {
                                                                 }
-                                                                this.f28170Z.getClass();
-                                                                i20 = this.f28170Z.f31952e;
-                                                                if (i20 != 4) {
+                                                                this.f28962Z.getClass();
+                                                                i19 = this.f28962Z.f32732e;
+                                                                if (i19 != 4) {
                                                                 }
                                                                 Trace.endSection();
                                                             }
-                                                            if (g4) {
-                                                                c(i13);
-                                                                this.f28144D0 = dn2;
+                                                            if (g9) {
+                                                                c(i12);
+                                                                this.f28984y0 = dn2;
                                                                 if (T()) {
                                                                 }
-                                                                int i3222 = 2;
-                                                                if (this.f28170Z.f31952e == 2) {
+                                                                int i3122 = 2;
+                                                                if (this.f28962Z.f32732e == 2) {
                                                                 }
-                                                                this.f28146E0 = j11;
+                                                                this.f28986z0 = j11;
                                                                 if (T()) {
                                                                 }
-                                                                this.f28170Z.getClass();
-                                                                i20 = this.f28170Z.f31952e;
-                                                                if (i20 != 4) {
+                                                                this.f28962Z.getClass();
+                                                                i19 = this.f28962Z.f32732e;
+                                                                if (i19 != 4) {
                                                                 }
                                                                 Trace.endSection();
                                                             }
-                                                            if (this.f28170Z.f31952e == i13) {
-                                                                if (this.f28186x0 == 0) {
+                                                            if (this.f28962Z.f32732e == i12) {
+                                                                if (this.f28973s0 == 0) {
                                                                     if (!E()) {
                                                                         y(T(), false);
                                                                         c(2);
-                                                                        if (this.f28176r0) {
-                                                                            for (C3029cO s13 = c3136eO4.s(); s13 != null; s13 = s13.i()) {
-                                                                                for (InterfaceC3757q interfaceC3757q : (InterfaceC3757q[]) s13.k().f34179v) {
+                                                                        if (this.m0) {
+                                                                            for (C3052cO s13 = c3159eO4.s(); s13 != null; s13 = s13.i()) {
+                                                                                for (InterfaceC3780q interfaceC3780q : (InterfaceC3780q[]) s13.k().f34965v) {
                                                                                 }
                                                                             }
-                                                                            this.f28155J0.a();
+                                                                            this.f28943E0.a();
                                                                         }
                                                                         k();
                                                                     }
                                                                 }
                                                             }
-                                                            int i32222 = 2;
-                                                            if (this.f28170Z.f31952e == 2) {
+                                                            int i31222 = 2;
+                                                            if (this.f28962Z.f32732e == 2) {
                                                             }
-                                                            this.f28146E0 = j11;
+                                                            this.f28986z0 = j11;
                                                             if (T()) {
                                                             }
-                                                            this.f28170Z.getClass();
-                                                            i20 = this.f28170Z.f31952e;
-                                                            if (i20 != 4) {
+                                                            this.f28962Z.getClass();
+                                                            i19 = this.f28962Z.f32732e;
+                                                            if (i19 != 4) {
                                                             }
                                                             Trace.endSection();
                                                         }
                                                         j11 = j10;
-                                                        if (this.f28170Z.f31952e == i13) {
+                                                        if (this.f28962Z.f32732e == i12) {
                                                         }
-                                                        int i322222 = 2;
-                                                        if (this.f28170Z.f31952e == 2) {
+                                                        int i312222 = 2;
+                                                        if (this.f28962Z.f32732e == 2) {
                                                         }
-                                                        this.f28146E0 = j11;
+                                                        this.f28986z0 = j11;
                                                         if (T()) {
                                                         }
-                                                        this.f28170Z.getClass();
-                                                        i20 = this.f28170Z.f31952e;
-                                                        if (i20 != 4) {
+                                                        this.f28962Z.getClass();
+                                                        i19 = this.f28962Z.f32732e;
+                                                        if (i19 != 4) {
                                                         }
                                                         Trace.endSection();
                                                     }
                                                     message2 = message;
-                                                    z3 = true;
+                                                    z6 = true;
                                                 }
                                                 j9 = uptimeMillis;
                                                 dn2 = null;
-                                                i10 = 1;
-                                                t10 = c3136eO2.t();
+                                                i9 = 1;
+                                                t10 = c3159eO2.t();
                                                 if (t10 != null) {
-                                                    t11 = c3136eO2.t();
+                                                    t11 = c3159eO2.t();
                                                     k9 = t11.k();
-                                                    i17 = i10;
-                                                    i18 = 0;
+                                                    i16 = i9;
+                                                    i17 = 0;
                                                     while (true) {
-                                                        hArr = this.f28171n;
-                                                        if (i18 >= 2) {
+                                                        hArr = this.f28967n;
+                                                        if (i17 >= 2) {
                                                         }
-                                                        int r92 = hArr[i18].r();
-                                                        int c102 = hArr[i18].c(t11, k9, this.f28147F);
-                                                        this.f28186x0 -= r92 - hArr[i18].r();
-                                                        i17 &= c102 & 1;
-                                                        i18++;
+                                                        int r92 = hArr[i17].r();
+                                                        int c102 = hArr[i17].c(t11, k9, this.f28944F);
+                                                        this.f28973s0 -= r92 - hArr[i17].r();
+                                                        i16 &= c102 & 1;
+                                                        i17++;
                                                     }
                                                 }
-                                                z9 = false;
+                                                z10 = false;
                                                 while (T()) {
-                                                    if (z9) {
+                                                    if (z10) {
                                                     }
-                                                    this.f28152H0 = false;
-                                                    x9 = c3136eO2.x();
+                                                    this.C0 = false;
+                                                    x9 = c3159eO2.x();
                                                     if (x9 != null) {
                                                     }
                                                 }
-                                                i13 = 3;
-                                                this.f28148F0.getClass();
-                                                C3136eO c3136eO42 = this.J;
-                                                s10 = c3136eO42.s();
+                                                i12 = 3;
+                                                this.f28936A0.getClass();
+                                                C3159eO c3159eO42 = this.J;
+                                                s10 = c3159eO42.s();
                                                 if (s10 == null) {
                                                 }
                                                 message2 = message;
-                                                z3 = true;
+                                                z6 = true;
                                             }
                                         }
                                     }
-                                    j6 = com.anythink.basead.exoplayer.b.f6382b;
-                                    t9 = c3136eO2.t();
+                                    j6 = com.anythink.basead.exoplayer.b.f7168b;
+                                    t9 = c3159eO2.t();
                                     if (t9 != null) {
                                     }
                                     j9 = uptimeMillis;
                                     dn2 = null;
-                                    i10 = 1;
-                                    t10 = c3136eO2.t();
+                                    i9 = 1;
+                                    t10 = c3159eO2.t();
                                     if (t10 != null) {
                                     }
-                                    z9 = false;
+                                    z10 = false;
                                     while (T()) {
                                     }
-                                    i13 = 3;
-                                    this.f28148F0.getClass();
-                                    C3136eO c3136eO422 = this.J;
-                                    s10 = c3136eO422.s();
+                                    i12 = 3;
+                                    this.f28936A0.getClass();
+                                    C3159eO c3159eO422 = this.J;
+                                    s10 = c3159eO422.s();
                                     if (s10 == null) {
                                     }
                                     message2 = message;
-                                    z3 = true;
+                                    z6 = true;
                                 }
                             }
-                            c3136eO2 = c3136eO3;
-                            j6 = com.anythink.basead.exoplayer.b.f6382b;
-                            t9 = c3136eO2.t();
+                            c3159eO2 = c3159eO3;
+                            j6 = com.anythink.basead.exoplayer.b.f7168b;
+                            t9 = c3159eO2.t();
                             if (t9 != null) {
                             }
                             j9 = uptimeMillis;
                             dn2 = null;
-                            i10 = 1;
-                            t10 = c3136eO2.t();
+                            i9 = 1;
+                            t10 = c3159eO2.t();
                             if (t10 != null) {
                             }
-                            z9 = false;
+                            z10 = false;
                             while (T()) {
                             }
-                            i13 = 3;
-                            this.f28148F0.getClass();
-                            C3136eO c3136eO4222 = this.J;
-                            s10 = c3136eO4222.s();
+                            i12 = 3;
+                            this.f28936A0.getClass();
+                            C3159eO c3159eO4222 = this.J;
+                            s10 = c3159eO4222.s();
                             if (s10 == null) {
                             }
                             message2 = message;
-                            z3 = true;
+                            z6 = true;
                         }
                     }
                     j9 = uptimeMillis;
-                    i13 = 3;
+                    i12 = 3;
                     dn2 = null;
-                    C3136eO c3136eO42222 = this.J;
-                    s10 = c3136eO42222.s();
+                    C3159eO c3159eO42222 = this.J;
+                    s10 = c3159eO42222.s();
                     if (s10 == null) {
                     }
                     message2 = message;
-                    z3 = true;
+                    z6 = true;
                 }
                 d(message2.what);
-                return z3;
+                return z6;
             case 3:
-                z3 = true;
+                z6 = true;
                 q((UN) message2.obj);
                 d(message2.what);
-                return z3;
+                return z6;
             case 4:
-                z3 = true;
-                C3924t5 c3924t5 = (C3924t5) message2.obj;
-                this.f28189z.d(16);
-                this.f28147F.a(c3924t5);
-                C3924t5 j16 = this.f28147F.j();
-                K(j16, j16.f34216a, true, true);
+                z6 = true;
+                C3947t5 c3947t5 = (C3947t5) message2.obj;
+                this.f28985z.d(16);
+                this.f28944F.a(c3947t5);
+                C3947t5 j16 = this.f28944F.j();
+                K(j16, j16.f35002a, true, true);
                 d(message2.what);
-                return z3;
+                return z6;
             case 5:
-                z3 = true;
-                this.f28165T = (C3997uO) message2.obj;
+                z6 = true;
+                this.f28957T = (C4020uO) message2.obj;
                 d(message2.what);
-                return z3;
+                return z6;
             case 6:
-                z3 = true;
+                z6 = true;
                 u(false, true);
                 d(message2.what);
-                return z3;
+                return z6;
             case 7:
-                C2781Sm c2781Sm = (C2781Sm) message2.obj;
+                C2818Tm c2818Tm = (C2818Tm) message2.obj;
                 try {
                     v(true, false, true, false);
-                    int i34 = 0;
+                    int i33 = 0;
                     while (true) {
-                        D0.H[] hArr9 = this.f28171n;
-                        if (i34 >= 2) {
-                            this.f28187y.d(this.f28158M);
-                            this.f28163R.c();
-                            this.f28183w.c();
+                        D0.H[] hArr9 = this.f28967n;
+                        if (i33 >= 2) {
+                            this.f28983y.d(this.f28950M);
+                            this.f28955R.c();
+                            this.f28979w.c();
                             c(1);
-                            this.f28189z.f30468a.removeCallbacksAndMessages(null);
-                            this.f28138A.e();
-                            c2781Sm.a();
+                            this.f28985z.f31231a.removeCallbacksAndMessages(null);
+                            this.f28935A.e();
+                            c2818Tm.a();
                             return true;
                         }
-                        this.f28179u[i34].t0();
-                        hArr9[i34].d();
-                        i34++;
+                        this.f28975u[i33].t0();
+                        hArr9[i33].d();
+                        i33++;
                     }
                 } finally {
-                    this.f28189z.f30468a.removeCallbacksAndMessages(null);
-                    this.f28138A.e();
-                    c2781Sm.a();
+                    this.f28985z.f31231a.removeCallbacksAndMessages(null);
+                    this.f28935A.e();
+                    c2818Tm.a();
                 }
             case 8:
                 try {
                     try {
-                        InterfaceC3622nQ interfaceC3622nQ = (InterfaceC3622nQ) message2.obj;
-                        C3136eO c3136eO5 = this.J;
-                        C3029cO c3029cO2 = c3136eO5.f29923k;
-                        if (!(c3029cO2 != null && c3029cO2.f29473a == interfaceC3622nQ)) {
-                            z3 = true;
-                            C3029cO A9 = c3136eO5.A(interfaceC3622nQ);
+                        InterfaceC3807qQ interfaceC3807qQ = (InterfaceC3807qQ) message2.obj;
+                        C3159eO c3159eO5 = this.J;
+                        C3052cO c3052cO2 = c3159eO5.f30715k;
+                        if (!(c3052cO2 != null && c3052cO2.f30256a == interfaceC3807qQ)) {
+                            z6 = true;
+                            C3052cO A9 = c3159eO5.A(interfaceC3807qQ);
                             if (A9 != null) {
-                                AbstractC2772Sd.H(!A9.f29477e);
-                                float f9 = this.f28147F.j().f34216a;
-                                A9.e(this.f28170Z.f31948a);
-                                C3029cO c3029cO3 = c3136eO5.f29924l;
-                                if (c3029cO3 != null && c3029cO3.f29473a == interfaceC3622nQ) {
+                                AbstractC2792Sd.H(!A9.f30260e);
+                                float f9 = this.f28944F.j().f35002a;
+                                A9.e(this.f28962Z.f32728a);
+                                C3052cO c3052cO3 = c3159eO5.f30716l;
+                                if (c3052cO3 != null && c3052cO3.f30256a == interfaceC3807qQ) {
                                     I();
                                 }
                             }
                         } else {
-                            if (c3029cO2 == null) {
+                            if (c3052cO2 == null) {
                                 throw null;
                             }
-                            if (!c3029cO2.f29477e) {
-                                float f10 = this.f28147F.j().f34216a;
-                                c3029cO2.e(this.f28170Z.f31948a);
+                            if (!c3052cO2.f30260e) {
+                                float f10 = this.f28944F.j().f35002a;
+                                c3052cO2.e(this.f28962Z.f32728a);
                             }
-                            S(c3029cO2.f29479g.f29760a, c3029cO2.j(), c3029cO2.k());
-                            if (c3029cO2 == c3136eO5.s()) {
-                                s(c3029cO2.f29479g.f29761b, true);
+                            S(c3052cO2.f30262g.f30532a, c3052cO2.j(), c3052cO2.k());
+                            if (c3052cO2 == c3159eO5.s()) {
+                                s(c3052cO2.f30262g.f30533b, true);
                                 O(new boolean[2], this.J.i.a());
-                                c3029cO2.f29480h = true;
-                                C3566mO c3566mO4 = this.f28170Z;
+                                c3052cO2.f30263h = true;
+                                C3589mO c3589mO4 = this.f28962Z;
                                 try {
-                                    C3676oQ c3676oQ6 = c3566mO4.f31949b;
-                                    long j17 = c3029cO2.f29479g.f29761b;
-                                    z3 = true;
-                                    this.f28170Z = N(c3676oQ6, j17, c3566mO4.f31950c, j17, false, 5);
+                                    C3860rQ c3860rQ6 = c3589mO4.f32729b;
+                                    long j17 = c3052cO2.f30262g.f30533b;
+                                    z6 = true;
+                                    this.f28962Z = N(c3860rQ6, j17, c3589mO4.f32730c, j17, false, 5);
                                 } catch (DN e28) {
                                     e = e28;
-                                    if (e.f24388v == 1 && (t6 = this.J.t()) != null && e.f24384A == null) {
-                                        e = e.a(t6.f29479g.f29760a);
+                                    if (e.f25133v == 1 && (t6 = this.J.t()) != null && e.f25129A == null) {
+                                        e = e.a(t6.f30262g.f30532a);
                                     }
-                                    if (e.f24388v == 1 && (c3676oQ = e.f24384A) != null) {
-                                        int i272 = e.f24390x;
-                                        c3136eO = this.J;
-                                        if (c3136eO.u() != null && c3136eO.u().f29479g.f29760a.equals(c3676oQ) && this.f28171n[i272].y(c3136eO.u())) {
-                                            this.f28152H0 = true;
+                                    if (e.f25133v == 1 && (c3860rQ = e.f25129A) != null) {
+                                        int i262 = e.f25135x;
+                                        c3159eO = this.J;
+                                        if (c3159eO.u() != null && c3159eO.u().f30262g.f30532a.equals(c3860rQ) && this.f28967n[i262].y(c3159eO.u())) {
+                                            this.C0 = true;
                                             C();
-                                            u3 = c3136eO.u();
-                                            C3029cO s112 = c3136eO.s();
-                                            if (c3136eO.s() != u3) {
-                                                while (s112 != null && s112.i() != u3) {
+                                            u6 = c3159eO.u();
+                                            C3052cO s112 = c3159eO.s();
+                                            if (c3159eO.s() != u6) {
+                                                while (s112 != null && s112.i() != u6) {
                                                     s112 = s112.i();
                                                 }
                                             }
-                                            c3136eO.y(s112);
-                                            if (this.f28170Z.f31952e != 4) {
+                                            c3159eO.y(s112);
+                                            if (this.f28962Z.f32732e != 4) {
                                                 L();
-                                                this.f28189z.c(2);
+                                                this.f28985z.c(2);
                                             }
-                                            z3 = true;
+                                            z6 = true;
                                             d(message2.what);
-                                            return z3;
+                                            return z6;
                                         }
                                     }
-                                    dn = this.f28144D0;
+                                    dn = this.f28984y0;
                                     if (dn != null) {
                                         dn.addSuppressed(e);
-                                        e = this.f28144D0;
+                                        e = this.f28984y0;
                                     }
-                                    if (e.f24388v == 1) {
-                                        C3136eO c3136eO6 = this.J;
-                                        if (c3136eO6.s() != c3136eO6.t()) {
-                                            while (c3136eO6.s() != c3136eO6.t()) {
-                                                c3136eO6.x();
+                                    if (e.f25133v == 1) {
+                                        C3159eO c3159eO6 = this.J;
+                                        if (c3159eO6.s() != c3159eO6.t()) {
+                                            while (c3159eO6.s() != c3159eO6.t()) {
+                                                c3159eO6.x();
                                             }
-                                            C3029cO s14 = c3136eO6.s();
+                                            C3052cO s14 = c3159eO6.s();
                                             s14.getClass();
                                             d(message2.what);
-                                            C3083dO c3083dO3 = s14.f29479g;
-                                            C3676oQ c3676oQ7 = c3083dO3.f29760a;
-                                            long j18 = c3083dO3.f29761b;
-                                            this.f28170Z = N(c3676oQ7, j18, c3083dO3.f29763d, j18, true, 0);
+                                            C3106dO c3106dO3 = s14.f30262g;
+                                            C3860rQ c3860rQ7 = c3106dO3.f30532a;
+                                            long j18 = c3106dO3.f30533b;
+                                            this.f28962Z = N(c3860rQ7, j18, c3106dO3.f30535d, j18, true, 0);
                                         }
                                     }
-                                    if (e.f24385B || !(this.f28144D0 == null || (i6 = e.f24386n) == 5004 || i6 == 5003)) {
-                                        AbstractC2968bG.J("ExoPlayerImplInternal", "Playback error", e);
-                                        z3 = true;
+                                    if (e.f25130B || !(this.f28984y0 == null || (i4 = e.f25131n) == 5004 || i4 == 5003)) {
+                                        AbstractC2991bG.J("ExoPlayerImplInternal", "Playback error", e);
+                                        z6 = true;
                                         u(true, false);
-                                        this.f28170Z = this.f28170Z.e(e);
+                                        this.f28962Z = this.f28962Z.e(e);
                                         d(message2.what);
-                                        return z3;
+                                        return z6;
                                     }
-                                    AbstractC2968bG.C("ExoPlayerImplInternal", "Recoverable renderer error", e);
-                                    if (this.f28144D0 == null) {
-                                        this.f28144D0 = e;
+                                    AbstractC2991bG.C("ExoPlayerImplInternal", "Recoverable renderer error", e);
+                                    if (this.f28984y0 == null) {
+                                        this.f28984y0 = e;
                                     }
-                                    C3212ft c3212ft2 = this.f28189z;
-                                    C3104dt b10 = c3212ft2.b(25, e);
-                                    Message message3 = b10.f29857a;
+                                    C3235ft c3235ft2 = this.f28985z;
+                                    C3127dt b10 = c3235ft2.b(25, e);
+                                    Message message3 = b10.f30645a;
                                     message3.getClass();
-                                    c3212ft2.f30468a.sendMessageAtFrontOfQueue(message3);
-                                    b10.f29857a = null;
-                                    C3212ft.f(b10);
-                                    z3 = true;
+                                    c3235ft2.f31231a.sendMessageAtFrontOfQueue(message3);
+                                    b10.f30645a = null;
+                                    C3235ft.f(b10);
+                                    z6 = true;
                                     d(message2.what);
-                                    return z3;
+                                    return z6;
                                 }
                             } else {
-                                z3 = true;
+                                z6 = true;
                             }
                             L();
                         }
@@ -3113,28 +3111,28 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
                     }
                 } catch (NH e30) {
                     e = e30;
-                    b(e, e.f26478n);
-                    z3 = true;
+                    b(e, e.f27262n);
+                    z6 = true;
                     d(message2.what);
-                    return z3;
+                    return z6;
                 } catch (U4 e31) {
                     e = e31;
-                    b(e, e.f27886u == 1 ? true != e.f27885n ? 3003 : AdError.MEDIATION_ERROR_CODE : 1000);
-                    z3 = true;
+                    b(e, e.f28683u == 1 ? true != e.f28682n ? 3003 : AdError.MEDIATION_ERROR_CODE : 1000);
+                    z6 = true;
                     d(message2.what);
-                    return z3;
-                } catch (C4214yP e32) {
+                    return z6;
+                } catch (C4237yP e32) {
                     e = e32;
-                    b(e, e.f35157n);
-                    z3 = true;
+                    b(e, e.f35943n);
+                    z6 = true;
                     d(message2.what);
-                    return z3;
+                    return z6;
                 } catch (IOException e33) {
                     e = e33;
                     b(e, 2000);
-                    z3 = true;
+                    z6 = true;
                     d(message2.what);
-                    return z3;
+                    return z6;
                 } catch (RuntimeException e34) {
                     e = e34;
                     i = 1004;
@@ -3143,376 +3141,376 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
                         break;
                     }
                     DN dn32 = new DN(2, e, i);
-                    AbstractC2968bG.J("ExoPlayerImplInternal", "Playback error", dn32);
+                    AbstractC2991bG.J("ExoPlayerImplInternal", "Playback error", dn32);
                     u(true, false);
-                    this.f28170Z = this.f28170Z.e(dn32);
-                    z3 = true;
+                    this.f28962Z = this.f28962Z.e(dn32);
+                    z6 = true;
                     d(message2.what);
-                    return z3;
+                    return z6;
                 }
                 d(message2.what);
-                return z3;
+                return z6;
             case 9:
-                InterfaceC3622nQ interfaceC3622nQ2 = (InterfaceC3622nQ) message2.obj;
-                C3136eO c3136eO7 = this.J;
-                C3029cO c3029cO4 = c3136eO7.f29923k;
-                if (c3029cO4 != null && c3029cO4.f29473a == interfaceC3622nQ2) {
-                    c3136eO7.n(this.f28190z0);
+                InterfaceC3807qQ interfaceC3807qQ2 = (InterfaceC3807qQ) message2.obj;
+                C3159eO c3159eO7 = this.J;
+                C3052cO c3052cO4 = c3159eO7.f30715k;
+                if (c3052cO4 != null && c3052cO4.f30256a == interfaceC3807qQ2) {
+                    c3159eO7.n(this.f28976u0);
                     L();
                 } else {
-                    C3029cO c3029cO5 = c3136eO7.f29924l;
-                    if (c3029cO5 != null && c3029cO5.f29473a == interfaceC3622nQ2) {
+                    C3052cO c3052cO5 = c3159eO7.f30716l;
+                    if (c3052cO5 != null && c3052cO5.f30256a == interfaceC3807qQ2) {
                         I();
                     }
                 }
-                z3 = true;
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 10:
                 D();
-                z3 = true;
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 11:
-                int i35 = message2.arg1;
-                this.f28180u0 = i35;
-                int k14 = this.J.k(this.f28170Z.f31948a, i35);
+                int i34 = message2.arg1;
+                this.f28970p0 = i34;
+                int k14 = this.J.k(this.f28962Z.f32728a, i34);
                 if ((k14 & 1) != 0) {
                     h(true);
                 } else if ((k14 & 2) != 0) {
                     C();
                 }
                 Q(false);
-                z3 = true;
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 12:
-                boolean z19 = message2.arg1 != 0;
-                this.f28182v0 = z19;
-                int l9 = this.J.l(this.f28170Z.f31948a, z19);
+                boolean z20 = message2.arg1 != 0;
+                this.f28971q0 = z20;
+                int l9 = this.J.l(this.f28962Z.f32728a, z20);
                 if ((l9 & 1) != 0) {
                     h(true);
                 } else if ((l9 & 2) != 0) {
                     C();
                 }
                 Q(false);
-                z3 = true;
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 13:
-                boolean z20 = message2.arg1 != 0;
-                C2781Sm c2781Sm2 = (C2781Sm) message2.obj;
-                if (this.f28184w0 != z20) {
-                    this.f28184w0 = z20;
-                    if (!z20) {
-                        D0.H[] hArr10 = this.f28171n;
-                        for (int i36 = 0; i36 < 2; i36++) {
-                            hArr10[i36].b();
+                boolean z21 = message2.arg1 != 0;
+                C2818Tm c2818Tm2 = (C2818Tm) message2.obj;
+                if (this.f28972r0 != z21) {
+                    this.f28972r0 = z21;
+                    if (!z21) {
+                        D0.H[] hArr10 = this.f28967n;
+                        for (int i35 = 0; i35 < 2; i35++) {
+                            hArr10[i35].b();
                         }
                     }
                 }
-                if (c2781Sm2 != null) {
-                    c2781Sm2.a();
+                if (c2818Tm2 != null) {
+                    c2818Tm2.a();
                 }
-                z3 = true;
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 14:
-                C3728pO c3728pO = (C3728pO) message2.obj;
-                if (c3728pO.f33068e == this.f28140B) {
-                    synchronized (c3728pO) {
+                C3751pO c3751pO = (C3751pO) message2.obj;
+                if (c3751pO.f33858e == this.f28937B) {
+                    synchronized (c3751pO) {
                     }
                     try {
-                        c3728pO.f33064a.b(c3728pO.f33066c, c3728pO.f33067d);
-                        c3728pO.b(true);
-                        int i37 = this.f28170Z.f31952e;
-                        if (i37 == 3 || i37 == 2) {
-                            this.f28189z.c(2);
+                        c3751pO.f33854a.b(c3751pO.f33856c, c3751pO.f33857d);
+                        c3751pO.b(true);
+                        int i36 = this.f28962Z.f32732e;
+                        if (i36 == 3 || i36 == 2) {
+                            this.f28985z.c(2);
                         }
                     } catch (Throwable th) {
-                        c3728pO.b(true);
+                        c3751pO.b(true);
                         throw th;
                     }
                 } else {
-                    this.f28189z.b(15, c3728pO).a();
+                    this.f28985z.b(15, c3751pO).a();
                 }
-                z3 = true;
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 15:
-                C3728pO c3728pO2 = (C3728pO) message2.obj;
-                Looper looper = c3728pO2.f33068e;
+                C3751pO c3751pO2 = (C3751pO) message2.obj;
+                Looper looper = c3751pO2.f33858e;
                 if (looper.getThread().isAlive()) {
-                    this.f28151H.x(looper, null).e(new RunnableC3807qw(14, c3728pO2));
+                    this.f28946H.x(looper, null).e(new RunnableC3830qw(14, c3751pO2));
                 } else {
-                    AbstractC2968bG.y("TAG", "Trying to send message on a dead thread.");
-                    c3728pO2.b(false);
+                    AbstractC2991bG.y("TAG", "Trying to send message on a dead thread.");
+                    c3751pO2.b(false);
                 }
-                z3 = true;
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 16:
-                C3924t5 c3924t52 = (C3924t5) message2.obj;
-                K(c3924t52, c3924t52.f34216a, true, false);
-                z3 = true;
+                C3947t5 c3947t52 = (C3947t5) message2.obj;
+                K(c3947t52, c3947t52.f35002a, true, false);
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 17:
                 TN tn = (TN) message2.obj;
-                this.f28172n0.f(1);
-                if (tn.f27733b != -1) {
-                    this.f28188y0 = new UN(new C3835rO(tn.f27732a, tn.f27735d), tn.f27733b, tn.a());
+                this.f28963i0.f(1);
+                if (tn.f28516b != -1) {
+                    this.f28974t0 = new UN(new C3858rO(tn.f28515a, tn.f28518d), tn.f28516b, tn.a());
                 }
-                F(this.f28156K.i(tn.f27732a, tn.f27735d), false);
-                z3 = true;
+                F(this.f28948K.i(tn.f28515a, tn.f28518d), false);
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 18:
                 TN tn2 = (TN) message2.obj;
-                int i38 = message2.arg1;
-                this.f28172n0.f(1);
-                E3.m mVar = this.f28156K;
-                if (i38 == -1) {
-                    i38 = ((ArrayList) mVar.f805w).size();
+                int i37 = message2.arg1;
+                this.f28963i0.f(1);
+                G3.m mVar = this.f28948K;
+                if (i37 == -1) {
+                    i37 = ((ArrayList) mVar.f1147w).size();
                 }
-                F(mVar.j(i38, tn2.f27732a, tn2.f27735d), false);
-                z3 = true;
+                F(mVar.j(i37, tn2.f28515a, tn2.f28518d), false);
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 19:
-                D.y.v(message2.obj);
-                this.f28172n0.f(1);
+                D.x.x(message2.obj);
+                this.f28963i0.f(1);
                 throw null;
             case 20:
-                int i39 = message2.arg1;
-                int i40 = message2.arg2;
-                KQ kq = (KQ) message2.obj;
-                this.f28172n0.f(1);
-                F(this.f28156K.k(i39, i40, kq), false);
-                z3 = true;
+                int i38 = message2.arg1;
+                int i39 = message2.arg2;
+                NQ nq = (NQ) message2.obj;
+                this.f28963i0.f(1);
+                F(this.f28948K.k(i38, i39, nq), false);
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 21:
-                KQ kq2 = (KQ) message2.obj;
-                this.f28172n0.f(1);
-                F(this.f28156K.l(kq2), false);
-                z3 = true;
+                NQ nq2 = (NQ) message2.obj;
+                this.f28963i0.f(1);
+                F(this.f28948K.l(nq2), false);
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 22:
-                F(this.f28156K.h(), true);
-                z3 = true;
+                F(this.f28948K.h(), true);
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 23:
-                this.f28174p0 = message2.arg1 != 0;
+                this.f28965k0 = message2.arg1 != 0;
                 J();
-                if (this.f28175q0) {
-                    C3136eO c3136eO8 = this.J;
-                    if (c3136eO8.t() != c3136eO8.s()) {
+                if (this.f28966l0) {
+                    C3159eO c3159eO8 = this.J;
+                    if (c3159eO8.t() != c3159eO8.s()) {
                         h(true);
                         Q(false);
                     }
                 }
-                z3 = true;
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 24:
-                this.f28164S = message2.arg1 != 0;
-                z3 = true;
+                this.f28956S = message2.arg1 != 0;
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 25:
                 D();
                 h(true);
-                z3 = true;
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 26:
                 D();
                 h(true);
-                z3 = true;
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 27:
-                int i41 = message2.arg1;
-                int i42 = message2.arg2;
+                int i40 = message2.arg1;
+                int i41 = message2.arg2;
                 List list = (List) message2.obj;
-                this.f28172n0.f(1);
-                F(this.f28156K.c(i41, i42, list), false);
-                z3 = true;
+                this.f28963i0.f(1);
+                F(this.f28948K.c(i40, i41, list), false);
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 28:
                 FN fn = (FN) message2.obj;
-                this.f28148F0 = fn;
-                C3136eO c3136eO9 = this.J;
-                AbstractC3604n8 abstractC3604n83 = this.f28170Z.f31948a;
-                c3136eO9.m(fn);
-                z3 = true;
+                this.f28936A0 = fn;
+                C3159eO c3159eO9 = this.J;
+                AbstractC3627n8 abstractC3627n83 = this.f28962Z.f32728a;
+                c3159eO9.m(fn);
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 29:
-                this.f28172n0.f(1);
+                this.f28963i0.f(1);
                 v(false, false, false, true);
-                this.f28187y.b(this.f28158M);
-                c(true != this.f28170Z.f31948a.g() ? 2 : 4);
-                C3566mO c3566mO5 = this.f28170Z;
-                boolean z21 = c3566mO5.f31958l;
-                f(this.f28163R.b(c3566mO5.f31952e, z21), c3566mO5.f31960n, c3566mO5.f31959m, z21);
-                this.f28156K.g();
-                this.f28189z.c(2);
-                z3 = true;
+                this.f28983y.b(this.f28950M);
+                c(true != this.f28962Z.f32728a.g() ? 2 : 4);
+                C3589mO c3589mO5 = this.f28962Z;
+                boolean z22 = c3589mO5.f32738l;
+                f(this.f28955R.b(c3589mO5.f32732e, z22), c3589mO5.f32740n, c3589mO5.f32739m, z22);
+                this.f28948K.g();
+                this.f28985z.c(2);
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 30:
                 Pair pair = (Pair) message2.obj;
                 Object obj = pair.first;
-                C2781Sm c2781Sm3 = (C2781Sm) pair.second;
-                D0.H[] hArr11 = this.f28171n;
-                for (int i43 = 0; i43 < 2; i43++) {
-                    hArr11[i43].e(obj);
+                C2818Tm c2818Tm3 = (C2818Tm) pair.second;
+                D0.H[] hArr11 = this.f28967n;
+                for (int i42 = 0; i42 < 2; i42++) {
+                    hArr11[i42].e(obj);
                 }
-                int i44 = this.f28170Z.f31952e;
-                if (i44 == 3 || i44 == 2) {
-                    this.f28189z.c(2);
+                int i43 = this.f28962Z.f32732e;
+                if (i43 == 3 || i43 == 2) {
+                    this.f28985z.c(2);
                 }
-                if (c2781Sm3 != null) {
-                    c2781Sm3.a();
+                if (c2818Tm3 != null) {
+                    c2818Tm3.a();
                 }
-                z3 = true;
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 31:
-                C2744Qj c2744Qj = (C2744Qj) message2.obj;
-                int i45 = message2.arg1;
-                this.f28183w.d(c2744Qj);
-                Cif cif = this.f28163R;
-                if (i45 == 0) {
-                    c2744Qj = null;
+                C2764Qj c2764Qj = (C2764Qj) message2.obj;
+                int i44 = message2.arg1;
+                this.f28979w.d(c2764Qj);
+                Cif cif = this.f28955R;
+                if (i44 == 0) {
+                    c2764Qj = null;
                 }
-                cif.a(c2744Qj);
-                C3566mO c3566mO6 = this.f28170Z;
-                boolean z22 = c3566mO6.f31958l;
-                f(this.f28163R.b(c3566mO6.f31952e, z22), c3566mO6.f31960n, c3566mO6.f31959m, z22);
-                z3 = true;
+                cif.a(c2764Qj);
+                C3589mO c3589mO6 = this.f28962Z;
+                boolean z23 = c3589mO6.f32738l;
+                f(this.f28955R.b(c3589mO6.f32732e, z23), c3589mO6.f32740n, c3589mO6.f32739m, z23);
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 32:
                 e(((Float) message2.obj).floatValue());
-                z3 = true;
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 33:
-                int i46 = message2.arg1;
-                C3566mO c3566mO7 = this.f28170Z;
-                f(i46, c3566mO7.f31960n, c3566mO7.f31959m, c3566mO7.f31958l);
-                z3 = true;
+                int i45 = message2.arg1;
+                C3589mO c3589mO7 = this.f28962Z;
+                f(i45, c3589mO7.f32740n, c3589mO7.f32739m, c3589mO7.f32738l);
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 34:
-                e(this.f28154I0);
-                z3 = true;
+                e(this.f28941D0);
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 35:
-                InterfaceC3328i0 interfaceC3328i0 = (InterfaceC3328i0) message2.obj;
-                D0.H[] hArr12 = this.f28171n;
-                for (int i47 = 0; i47 < 2; i47++) {
-                    hArr12[i47].f(interfaceC3328i0);
+                InterfaceC3351i0 interfaceC3351i0 = (InterfaceC3351i0) message2.obj;
+                D0.H[] hArr12 = this.f28967n;
+                for (int i46 = 0; i46 < 2; i46++) {
+                    hArr12[i46].f(interfaceC3351i0);
                 }
-                z3 = true;
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 36:
                 boolean booleanValue = ((Boolean) message2.obj).booleanValue();
                 if (!booleanValue) {
-                    if (this.f28169X != null && this.f28168W && !this.f28189z.a()) {
+                    if (this.f28961X != null && this.f28960W && !this.f28985z.a()) {
                         this.Y++;
                     }
-                    int i48 = this.Y;
-                    if (i48 > 0) {
-                        this.f28161P.e(new RunnableC3807qw(this, i48));
+                    int i47 = this.Y;
+                    if (i47 > 0) {
+                        this.f28953P.e(new RunnableC3830qw(this, i47));
                     }
                     this.Y = 0;
-                    this.f28168W = false;
-                    this.f28189z.d(37);
-                    UN un = this.f28169X;
+                    this.f28960W = false;
+                    this.f28985z.d(37);
+                    UN un = this.f28961X;
                     if (un != null) {
                         q(un);
-                        this.f28169X = null;
-                        this.f28168W = false;
+                        this.f28961X = null;
+                        this.f28960W = false;
                     }
                 }
-                this.f28167V = booleanValue;
+                this.f28959V = booleanValue;
                 t();
-                z3 = true;
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 37:
-                this.f28168W = false;
-                UN un2 = this.f28169X;
+                this.f28960W = false;
+                UN un2 = this.f28961X;
                 if (un2 != null) {
                     q(un2);
-                    this.f28169X = null;
+                    this.f28961X = null;
                 }
-                z3 = true;
+                z6 = true;
                 d(message2.what);
-                return z3;
-            case com.anythink.basead.b.b.j.f5806M /* 38 */:
-                this.f28166U = (C3943tO) message2.obj;
+                return z6;
+            case com.anythink.basead.b.b.j.f6592M /* 38 */:
+                this.f28958U = (C3966tO) message2.obj;
                 t();
-                z3 = true;
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             case 39:
-                D0.H[] hArr13 = this.f28171n;
-                for (int i49 = 0; i49 < 2; i49++) {
-                    int i50 = ((RP) hArr13[i49].f539e).f27272u;
+                D0.H[] hArr13 = this.f28967n;
+                for (int i48 = 0; i48 < 2; i48++) {
+                    int i49 = ((SP) hArr13[i48].f434e).f28261u;
                 }
-                z3 = true;
+                z6 = true;
                 d(message2.what);
-                return z3;
+                return z6;
             default:
                 return false;
         }
     }
 
     public final void i() {
-        C3029cO c3029cO = this.J.f29921h;
-        if (c3029cO == null) {
+        C3052cO c3052cO = this.J.f30713h;
+        if (c3052cO == null) {
             return;
         }
-        C3918t c3918t = c3029cO.f29486o;
+        C3941t c3941t = c3052cO.f30269o;
         for (int i = 0; i < 2; i++) {
-            if (c3918t.c(i)) {
-                this.f28171n[i].C();
+            if (c3941t.c(i)) {
+                this.f28967n[i].C();
             }
         }
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3568mQ
-    public final /* bridge */ /* synthetic */ void j(JQ jq) {
-        this.f28189z.b(9, (InterfaceC3622nQ) jq).a();
+    @Override // com.google.android.gms.internal.ads.InterfaceC3753pQ
+    public final /* bridge */ /* synthetic */ void j(MQ mq) {
+        this.f28985z.b(9, (InterfaceC3807qQ) mq).a();
     }
 
     public final void k() {
-        Is is = this.f28147F;
-        is.f25608u = false;
-        C4105wO c4105wO = (C4105wO) is.f25609v;
-        if (c4105wO.f34832n) {
-            c4105wO.b(c4105wO.h());
-            c4105wO.f34832n = false;
+        Is is = this.f28944F;
+        is.f26361u = false;
+        C4128wO c4128wO = (C4128wO) is.f26362v;
+        if (c4128wO.f35601n) {
+            c4128wO.b(c4128wO.h());
+            c4128wO.f35601n = false;
         }
         for (int i = 0; i < 2; i++) {
-            D0.H h9 = this.f28171n[i];
-            RP rp = (RP) h9.f539e;
-            if (D0.H.l(rp)) {
-                D0.H.n(rp);
+            D0.H h3 = this.f28967n[i];
+            SP sp = (SP) h3.f434e;
+            if (D0.H.l(sp)) {
+                D0.H.n(sp);
             }
-            RP rp2 = (RP) h9.f540f;
-            if (rp2 != null && rp2.f27206A != 0) {
-                D0.H.n(rp2);
+            SP sp2 = (SP) h3.f435f;
+            if (sp2 != null && sp2.f28196A != 0) {
+                D0.H.n(sp2);
             }
         }
     }
@@ -3525,32 +3523,32 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
     public final void l() {
         long j6;
         int i;
-        boolean z3;
-        float f3;
+        boolean z6;
+        float f2;
         Is is;
-        int i6;
+        int i4;
         long j9;
         long j10;
         long max;
-        C3136eO c3136eO = this.J;
-        C3029cO c3029cO = c3136eO.f29921h;
-        if (c3029cO == null) {
+        C3159eO c3159eO = this.J;
+        C3052cO c3052cO = c3159eO.f30713h;
+        if (c3052cO == null) {
             return;
         }
-        long w6 = c3029cO.f29477e ? c3029cO.f29473a.w() : -9223372036854775807L;
-        if (w6 != com.anythink.basead.exoplayer.b.f6382b) {
-            if (!c3029cO.b()) {
-                c3136eO.y(c3029cO);
+        long w3 = c3052cO.f30260e ? c3052cO.f30256a.w() : -9223372036854775807L;
+        if (w3 != com.anythink.basead.exoplayer.b.f7168b) {
+            if (!c3052cO.b()) {
+                c3159eO.y(c3052cO);
                 C();
                 Q(false);
                 L();
             }
-            s(w6, true);
-            if (w6 != this.f28170Z.f31964r) {
-                C3566mO c3566mO = this.f28170Z;
+            s(w3, true);
+            if (w3 != this.f28962Z.f32744r) {
+                C3589mO c3589mO = this.f28962Z;
                 j6 = -9223372036854775807L;
                 i = 16;
-                this.f28170Z = N(c3566mO.f31949b, w6, c3566mO.f31950c, w6, true, 5);
+                this.f28962Z = N(c3589mO.f32729b, w3, c3589mO.f32730c, w3, true, 5);
             } else {
                 j6 = -9223372036854775807L;
                 i = 16;
@@ -3558,520 +3556,520 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
         } else {
             j6 = -9223372036854775807L;
             i = 16;
-            Is is2 = this.f28147F;
-            boolean z6 = c3029cO != c3136eO.i;
-            RP rp = (RP) is2.f25611x;
-            C4105wO c4105wO = (C4105wO) is2.f25609v;
-            if (rp == null || rp.J() || ((z6 && ((RP) is2.f25611x).f27206A != 2) || (!((RP) is2.f25611x).I() && (z6 || ((RP) is2.f25611x).r0())))) {
-                is2.f25607n = true;
-                if (is2.f25608u && !c4105wO.f34832n) {
-                    c4105wO.f34834v = SystemClock.elapsedRealtime();
-                    c4105wO.f34832n = true;
+            Is is2 = this.f28944F;
+            boolean z9 = c3052cO != c3159eO.i;
+            SP sp = (SP) is2.f26364x;
+            C4128wO c4128wO = (C4128wO) is2.f26362v;
+            if (sp == null || sp.J() || ((z9 && ((SP) is2.f26364x).f28196A != 2) || (!((SP) is2.f26364x).I() && (z9 || ((SP) is2.f26364x).r0())))) {
+                is2.f26360n = true;
+                if (is2.f26361u && !c4128wO.f35601n) {
+                    c4128wO.f35603v = SystemClock.elapsedRealtime();
+                    c4128wO.f35601n = true;
                 }
             } else {
-                InterfaceC2976bO interfaceC2976bO = (InterfaceC2976bO) is2.f25612y;
-                interfaceC2976bO.getClass();
-                long h9 = interfaceC2976bO.h();
-                if (is2.f25607n) {
-                    if (h9 >= c4105wO.h()) {
-                        is2.f25607n = false;
-                        if (is2.f25608u && !c4105wO.f34832n) {
-                            c4105wO.f34834v = SystemClock.elapsedRealtime();
-                            c4105wO.f34832n = true;
+                InterfaceC2999bO interfaceC2999bO = (InterfaceC2999bO) is2.f26365y;
+                interfaceC2999bO.getClass();
+                long h3 = interfaceC2999bO.h();
+                if (is2.f26360n) {
+                    if (h3 >= c4128wO.h()) {
+                        is2.f26360n = false;
+                        if (is2.f26361u && !c4128wO.f35601n) {
+                            c4128wO.f35603v = SystemClock.elapsedRealtime();
+                            c4128wO.f35601n = true;
                         }
-                    } else if (c4105wO.f34832n) {
-                        c4105wO.b(c4105wO.h());
-                        c4105wO.f34832n = false;
+                    } else if (c4128wO.f35601n) {
+                        c4128wO.b(c4128wO.h());
+                        c4128wO.f35601n = false;
                     }
                 }
-                c4105wO.b(h9);
-                C3924t5 j11 = interfaceC2976bO.j();
-                if (!j11.equals(c4105wO.f34835w)) {
-                    c4105wO.a(j11);
-                    ((VN) is2.f25610w).f28189z.b(16, j11).a();
+                c4128wO.b(h3);
+                C3947t5 j11 = interfaceC2999bO.j();
+                if (!j11.equals(c4128wO.f35604w)) {
+                    c4128wO.a(j11);
+                    ((VN) is2.f26363w).f28985z.b(16, j11).a();
                 }
             }
-            long h10 = is2.h();
-            this.f28190z0 = h10;
-            long j12 = h10 - c3029cO.f29487p;
-            long j13 = this.f28170Z.f31964r;
-            ArrayList arrayList = this.f28149G;
-            if (!arrayList.isEmpty() && !this.f28170Z.f31949b.b()) {
-                if (this.C0) {
-                    this.C0 = false;
+            long h9 = is2.h();
+            this.f28976u0 = h9;
+            long j12 = h9 - c3052cO.f30270p;
+            long j13 = this.f28962Z.f32744r;
+            ArrayList arrayList = this.f28945G;
+            if (!arrayList.isEmpty() && !this.f28962Z.f32729b.b()) {
+                if (this.f28982x0) {
+                    this.f28982x0 = false;
                 }
-                C3566mO c3566mO2 = this.f28170Z;
-                c3566mO2.f31948a.e(c3566mO2.f31949b.f32905a);
-                int min = Math.min(this.f28141B0, arrayList.size());
+                C3589mO c3589mO2 = this.f28962Z;
+                c3589mO2.f32728a.e(c3589mO2.f32729b.f34406a);
+                int min = Math.min(this.f28980w0, arrayList.size());
                 if (min > 0 && arrayList.get(min - 1) != null) {
                     throw new ClassCastException();
                 }
                 if (min < arrayList.size() && arrayList.get(min) != null) {
                     throw new ClassCastException();
                 }
-                this.f28141B0 = min;
+                this.f28980w0 = min;
             }
             if (is2.g()) {
-                boolean z9 = !this.f28172n0.f34797d;
-                C3566mO c3566mO3 = this.f28170Z;
-                this.f28170Z = N(c3566mO3.f31949b, j12, c3566mO3.f31950c, j12, z9, 6);
+                boolean z10 = !this.f28963i0.f35566d;
+                C3589mO c3589mO3 = this.f28962Z;
+                this.f28962Z = N(c3589mO3.f32729b, j12, c3589mO3.f32730c, j12, z10, 6);
             } else {
-                C3566mO c3566mO4 = this.f28170Z;
-                c3566mO4.f31964r = j12;
-                c3566mO4.f31965s = SystemClock.elapsedRealtime();
+                C3589mO c3589mO4 = this.f28962Z;
+                c3589mO4.f32744r = j12;
+                c3589mO4.f32745s = SystemClock.elapsedRealtime();
             }
         }
-        this.f28170Z.f31962p = c3136eO.f29923k.d();
-        C3566mO c3566mO5 = this.f28170Z;
-        c3566mO5.f31963q = R(c3566mO5.f31962p);
-        C3566mO c3566mO6 = this.f28170Z;
-        if (!c3566mO6.f31958l || c3566mO6.f31952e != 3 || !o(c3566mO6.f31948a, c3566mO6.f31949b)) {
+        this.f28962Z.f32742p = c3159eO.f30715k.d();
+        C3589mO c3589mO5 = this.f28962Z;
+        c3589mO5.f32743q = R(c3589mO5.f32742p);
+        C3589mO c3589mO6 = this.f28962Z;
+        if (!c3589mO6.f32738l || c3589mO6.f32732e != 3 || !o(c3589mO6.f32728a, c3589mO6.f32729b)) {
             return;
         }
-        C3566mO c3566mO7 = this.f28170Z;
-        if (c3566mO7.f31961o.f34216a != 1.0f) {
+        C3589mO c3589mO7 = this.f28962Z;
+        if (c3589mO7.f32741o.f35002a != 1.0f) {
             return;
         }
-        C4266zN c4266zN = this.f28155J0;
-        long n9 = n(c3566mO7.f31948a, c3566mO7.f31949b.f32905a, c3566mO7.f31964r);
-        long j14 = this.f28170Z.f31963q;
-        if (c4266zN.f35320c != j6) {
+        C4289zN c4289zN = this.f28943E0;
+        long n9 = n(c3589mO7.f32728a, c3589mO7.f32729b.f34406a, c3589mO7.f32744r);
+        long j14 = this.f28962Z.f32743q;
+        if (c4289zN.f36104c != j6) {
             long j15 = n9 - j14;
-            long j16 = c4266zN.f35327k;
+            long j16 = c4289zN.f36111k;
             if (j16 == j6) {
-                c4266zN.f35327k = j15;
-                c4266zN.f35328l = 0L;
-                i6 = 1;
+                c4289zN.f36111k = j15;
+                c4289zN.f36112l = 0L;
+                i4 = 1;
             } else {
-                i6 = 1;
-                c4266zN.f35327k = Math.max(j15, (long) ((j15 * 9.999871E-4f) + (j16 * 0.999f)));
-                c4266zN.f35328l = (long) ((Math.abs(j15 - r13) * 9.999871E-4f) + (c4266zN.f35328l * 0.999f));
+                i4 = 1;
+                c4289zN.f36111k = Math.max(j15, (long) ((j15 * 9.999871E-4f) + (j16 * 0.999f)));
+                c4289zN.f36112l = (long) ((Math.abs(j15 - r13) * 9.999871E-4f) + (c4289zN.f36112l * 0.999f));
             }
-            if (c4266zN.f35326j != j6) {
+            if (c4289zN.f36110j != j6) {
                 j9 = 1000;
-                f3 = SystemClock.elapsedRealtime() - c4266zN.f35326j < 1000 ? c4266zN.i : 1.0f;
+                f2 = SystemClock.elapsedRealtime() - c4289zN.f36110j < 1000 ? c4289zN.i : 1.0f;
             } else {
                 j9 = 1000;
             }
-            c4266zN.f35326j = SystemClock.elapsedRealtime();
-            long j17 = (c4266zN.f35328l * 3) + c4266zN.f35327k;
-            if (c4266zN.f35325h > j17) {
-                long u3 = AbstractC3159eu.u(j9);
-                int i9 = i6;
-                float f9 = c4266zN.i - 1.0f;
-                z3 = false;
-                long j18 = c4266zN.f35322e;
+            c4289zN.f36110j = SystemClock.elapsedRealtime();
+            long j17 = (c4289zN.f36112l * 3) + c4289zN.f36111k;
+            if (c4289zN.f36109h > j17) {
+                long u6 = AbstractC3182eu.u(j9);
+                int i6 = i4;
+                float f9 = c4289zN.i - 1.0f;
+                z6 = false;
+                long j18 = c4289zN.f36106e;
                 j10 = n9;
-                float f10 = u3;
-                long j19 = c4266zN.f35325h - (((long) (f9 * f10)) + ((long) (0.029999971f * f10)));
+                float f10 = u6;
+                long j19 = c4289zN.f36109h - (((long) (f9 * f10)) + ((long) (0.029999971f * f10)));
                 long[] jArr = new long[3];
                 jArr[0] = j17;
-                jArr[i9] = j18;
+                jArr[i6] = j18;
                 jArr[2] = j19;
                 max = jArr[0];
-                for (int i10 = i9; i10 < 3; i10++) {
-                    long j20 = jArr[i10];
+                for (int i9 = i6; i9 < 3; i9++) {
+                    long j20 = jArr[i9];
                     if (j20 > max) {
                         max = j20;
                     }
                 }
-                c4266zN.f35325h = max;
+                c4289zN.f36109h = max;
             } else {
                 j10 = n9;
-                z3 = false;
-                long max2 = j10 - ((long) (Math.max(0.0f, c4266zN.i - 1.0f) / 1.0E-7f));
-                long j21 = c4266zN.f35325h;
-                String str = AbstractC3159eu.f29993a;
+                z6 = false;
+                long max2 = j10 - ((long) (Math.max(0.0f, c4289zN.i - 1.0f) / 1.0E-7f));
+                long j21 = c4289zN.f36109h;
+                String str = AbstractC3182eu.f30782a;
                 max = Math.max(j21, Math.min(max2, j17));
-                c4266zN.f35325h = max;
-                long j22 = c4266zN.f35324g;
+                c4289zN.f36109h = max;
+                long j22 = c4289zN.f36108g;
                 if (j22 != j6 && max > j22) {
-                    c4266zN.f35325h = j22;
+                    c4289zN.f36109h = j22;
                     max = j22;
                 }
             }
             long j23 = j10 - max;
-            if (Math.abs(j23) < c4266zN.f35318a) {
-                c4266zN.i = 1.0f;
-                f3 = 1.0f;
+            if (Math.abs(j23) < c4289zN.f36102a) {
+                c4289zN.i = 1.0f;
+                f2 = 1.0f;
             } else {
-                f3 = Math.max(0.97f, Math.min((j23 * 1.0E-7f) + 1.0f, 1.03f));
-                c4266zN.i = f3;
+                f2 = Math.max(0.97f, Math.min((j23 * 1.0E-7f) + 1.0f, 1.03f));
+                c4289zN.i = f2;
             }
-            is = this.f28147F;
-            if (is.j().f34216a == f3) {
-                C3924t5 c3924t5 = new C3924t5(f3, this.f28170Z.f31961o.f34217b);
-                this.f28189z.d(i);
-                this.f28147F.a(c3924t5);
-                boolean z10 = z3;
-                K(this.f28170Z.f31961o, is.j().f34216a, z10, z10);
+            is = this.f28944F;
+            if (is.j().f35002a == f2) {
+                C3947t5 c3947t5 = new C3947t5(f2, this.f28962Z.f32741o.f35003b);
+                this.f28985z.d(i);
+                this.f28944F.a(c3947t5);
+                boolean z11 = z6;
+                K(this.f28962Z.f32741o, is.j().f35002a, z11, z11);
                 return;
             }
             return;
         }
-        z3 = false;
-        is = this.f28147F;
-        if (is.j().f34216a == f3) {
+        z6 = false;
+        is = this.f28944F;
+        if (is.j().f35002a == f2) {
         }
     }
 
-    public final void m(int i, boolean z3) {
-        boolean[] zArr = this.f28181v;
-        if (zArr[i] != z3) {
-            zArr[i] = z3;
-            this.f28161P.e(new L.a(this, i, z3));
+    public final void m(int i, boolean z6) {
+        boolean[] zArr = this.f28977v;
+        if (zArr[i] != z6) {
+            zArr[i] = z6;
+            this.f28953P.e(new L.a(this, i, z6));
         }
     }
 
-    public final long n(AbstractC3604n8 abstractC3604n8, Object obj, long j6) {
-        int i = abstractC3604n8.o(obj, this.f28143D).f25867c;
-        U7 u72 = this.f28142C;
-        abstractC3604n8.b(i, u72, 0L);
-        if (u72.f27896d == com.anythink.basead.exoplayer.b.f6382b || !u72.b() || !u72.f27899g) {
-            return com.anythink.basead.exoplayer.b.f6382b;
+    public final long n(AbstractC3627n8 abstractC3627n8, Object obj, long j6) {
+        int i = abstractC3627n8.o(obj, this.f28940D).f26619c;
+        U7 u72 = this.f28939C;
+        abstractC3627n8.b(i, u72, 0L);
+        if (u72.f28693d == com.anythink.basead.exoplayer.b.f7168b || !u72.b() || !u72.f28696g) {
+            return com.anythink.basead.exoplayer.b.f7168b;
         }
-        long j9 = u72.f27897e;
-        String str = AbstractC3159eu.f29993a;
-        return AbstractC3159eu.u((j9 == com.anythink.basead.exoplayer.b.f6382b ? System.currentTimeMillis() : j9 + SystemClock.elapsedRealtime()) - u72.f27896d) - j6;
+        long j9 = u72.f28694e;
+        String str = AbstractC3182eu.f30782a;
+        return AbstractC3182eu.u((j9 == com.anythink.basead.exoplayer.b.f7168b ? System.currentTimeMillis() : j9 + SystemClock.elapsedRealtime()) - u72.f28693d) - j6;
     }
 
-    public final boolean o(AbstractC3604n8 abstractC3604n8, C3676oQ c3676oQ) {
-        if (c3676oQ.b() || abstractC3604n8.g()) {
+    public final boolean o(AbstractC3627n8 abstractC3627n8, C3860rQ c3860rQ) {
+        if (c3860rQ.b() || abstractC3627n8.g()) {
             return false;
         }
-        int i = abstractC3604n8.o(c3676oQ.f32905a, this.f28143D).f25867c;
-        U7 u72 = this.f28142C;
-        abstractC3604n8.b(i, u72, 0L);
-        return u72.b() && u72.f27899g && u72.f27896d != com.anythink.basead.exoplayer.b.f6382b;
+        int i = abstractC3627n8.o(c3860rQ.f34406a, this.f28940D).f26619c;
+        U7 u72 = this.f28939C;
+        abstractC3627n8.b(i, u72, 0L);
+        return u72.b() && u72.f28696g && u72.f28693d != com.anythink.basead.exoplayer.b.f7168b;
     }
 
     public final void p(long j6) {
-        boolean z3 = true;
-        if (!this.f28159N) {
-            if (this.f28167V) {
-                this.f28166U.getClass();
+        boolean z6 = true;
+        if (!this.f28951N) {
+            if (this.f28959V) {
+                this.f28958U.getClass();
             } else {
-                z3 = false;
+                z6 = false;
             }
         }
-        long j9 = f28137K0;
-        if (z3) {
-            r3 = this.f28170Z.f31952e != 3 ? j9 : 1000L;
+        long j9 = f28934F0;
+        if (z6) {
+            r3 = this.f28962Z.f32732e != 3 ? j9 : 1000L;
             for (int i = 0; i < 2; i++) {
-                D0.H h9 = this.f28171n[i];
-                long j10 = this.f28190z0;
-                RP rp = (RP) h9.f539e;
-                long T8 = D0.H.l(rp) ? rp.T(j10) : Long.MAX_VALUE;
-                RP rp2 = (RP) h9.f540f;
-                if (rp2 != null && rp2.f27206A != 0) {
-                    T8 = Math.min(T8, rp2.T(j10));
+                D0.H h3 = this.f28967n[i];
+                long j10 = this.f28976u0;
+                SP sp = (SP) h3.f434e;
+                long T8 = D0.H.l(sp) ? sp.T(j10) : Long.MAX_VALUE;
+                SP sp2 = (SP) h3.f435f;
+                if (sp2 != null && sp2.f28196A != 0) {
+                    T8 = Math.min(T8, sp2.T(j10));
                 }
-                r3 = Math.min(r3, AbstractC3159eu.t(T8));
+                r3 = Math.min(r3, AbstractC3182eu.t(T8));
             }
-            if (this.f28170Z.i()) {
-                C3029cO c3029cO = this.J.f29921h;
-                if ((c3029cO != null ? c3029cO.f29484m : null) != null) {
-                    if (this.f28190z0 + (AbstractC3159eu.u(r3) * this.f28170Z.f31961o.f34216a) >= r1.a()) {
+            if (this.f28962Z.i()) {
+                C3052cO c3052cO = this.J.f30713h;
+                if ((c3052cO != null ? c3052cO.f30267m : null) != null) {
+                    if (this.f28976u0 + (AbstractC3182eu.u(r3) * this.f28962Z.f32741o.f35002a) >= r1.a()) {
                         r3 = Math.min(r3, j9);
                     }
                 }
             }
-        } else if (this.f28170Z.f31952e != 3 || T()) {
+        } else if (this.f28962Z.f32732e != 3 || T()) {
             r3 = j9;
         }
-        this.f28189z.f30468a.sendEmptyMessageAtTime(2, j6 + r3);
+        this.f28985z.f31231a.sendEmptyMessageAtTime(2, j6 + r3);
     }
 
     public final void q(UN un) {
         long longValue;
         long j6;
         long j9;
-        C3676oQ E8;
-        boolean z3;
+        C3860rQ E8;
+        boolean z6;
         long j10;
         int i;
         long j11;
-        boolean z6;
+        boolean z9;
         long j12;
         long j13;
         long j14;
-        boolean z9;
-        C3566mO c3566mO;
-        C3676oQ c3676oQ;
+        boolean z10;
+        C3589mO c3589mO;
+        C3860rQ c3860rQ;
         long j15;
         long j16;
-        boolean z10;
-        C3566mO c3566mO2;
-        int i6;
-        if (this.f28168W) {
-            if (this.f28169X != null) {
+        boolean z11;
+        C3589mO c3589mO2;
+        int i4;
+        if (this.f28960W) {
+            if (this.f28961X != null) {
                 this.Y++;
-                this.f28172n0.f(1);
+                this.f28963i0.f(1);
             }
-            this.f28169X = un;
+            this.f28961X = un;
             return;
         }
-        this.f28172n0.f(1);
-        AbstractC3604n8 abstractC3604n8 = this.f28170Z.f31948a;
-        int i9 = this.f28180u0;
-        boolean z11 = this.f28182v0;
-        U7 u72 = this.f28142C;
-        K7 k72 = this.f28143D;
-        Pair z12 = z(abstractC3604n8, un, i9, z11, u72, k72);
-        if (z12 == null) {
-            Pair w6 = w(this.f28170Z.f31948a);
-            C3676oQ c3676oQ2 = (C3676oQ) w6.first;
-            longValue = ((Long) w6.second).longValue();
-            z3 = !this.f28170Z.f31948a.g();
-            E8 = c3676oQ2;
+        this.f28963i0.f(1);
+        AbstractC3627n8 abstractC3627n8 = this.f28962Z.f32728a;
+        int i6 = this.f28970p0;
+        boolean z12 = this.f28971q0;
+        U7 u72 = this.f28939C;
+        K7 k72 = this.f28940D;
+        Pair z13 = z(abstractC3627n8, un, i6, z12, u72, k72);
+        if (z13 == null) {
+            Pair w3 = w(this.f28962Z.f32728a);
+            C3860rQ c3860rQ2 = (C3860rQ) w3.first;
+            longValue = ((Long) w3.second).longValue();
+            z6 = !this.f28962Z.f32728a.g();
+            E8 = c3860rQ2;
             j10 = -9223372036854775807L;
             j6 = -9223372036854775807L;
         } else {
-            Object obj = z12.first;
-            longValue = ((Long) z12.second).longValue();
-            long j17 = un.f27923c;
-            if (j17 == com.anythink.basead.exoplayer.b.f6382b) {
+            Object obj = z13.first;
+            longValue = ((Long) z13.second).longValue();
+            long j17 = un.f28720c;
+            if (j17 == com.anythink.basead.exoplayer.b.f7168b) {
                 j9 = -9223372036854775807L;
                 j6 = -9223372036854775807L;
             } else {
                 j6 = -9223372036854775807L;
                 j9 = longValue;
             }
-            C3136eO c3136eO = this.J;
+            C3159eO c3159eO = this.J;
             long j18 = j9;
-            C3566mO c3566mO3 = this.f28170Z;
-            E8 = c3136eO.E(c3566mO3, c3566mO3.f31948a, obj, true, false);
+            C3589mO c3589mO3 = this.f28962Z;
+            E8 = c3159eO.E(c3589mO3, c3589mO3.f32728a, obj, true, false);
             if (E8.b()) {
-                this.f28170Z.f31948a.o(E8.f32905a, k72);
-                int i10 = E8.f32906b;
-                C2897a a9 = k72.f25870f.a(i10);
-                int i11 = 0;
+                this.f28962Z.f32728a.o(E8.f34406a, k72);
+                int i9 = E8.f34407b;
+                C2920a a9 = k72.f26622f.a(i9);
+                int i10 = 0;
                 while (true) {
-                    int[] iArr = a9.f28986d;
-                    if (i11 >= iArr.length || (i = iArr[i11]) == 0 || i == 1) {
+                    int[] iArr = a9.f29756d;
+                    if (i10 >= iArr.length || (i = iArr[i10]) == 0 || i == 1) {
                         break;
                     } else {
-                        i11++;
+                        i10++;
                     }
                 }
-                if (i11 == E8.f32907c) {
-                    k72.f25870f.getClass();
+                if (i10 == E8.f34408c) {
+                    k72.f26622f.getClass();
                 }
-                k72.f25870f.a(i10).getClass();
+                k72.f26622f.a(i9).getClass();
                 j10 = Math.max(j18, 0L);
                 longValue = 0;
-                z3 = true;
+                z6 = true;
             } else {
-                z3 = j17 == com.anythink.basead.exoplayer.b.f6382b;
+                z6 = j17 == com.anythink.basead.exoplayer.b.f7168b;
                 j10 = j18;
             }
         }
         try {
-            if (this.f28170Z.f31948a.g()) {
-                this.f28188y0 = un;
+            if (this.f28962Z.f32728a.g()) {
+                this.f28974t0 = un;
             } else {
-                if (z12 != null) {
-                    if (E8.equals(this.f28170Z.f31949b)) {
-                        C3029cO c3029cO = this.J.f29921h;
-                        if (c3029cO == null || !c3029cO.f29477e || longValue == 0) {
+                if (z13 != null) {
+                    if (E8.equals(this.f28962Z.f32729b)) {
+                        C3052cO c3052cO = this.J.f30713h;
+                        if (c3052cO == null || !c3052cO.f30260e || longValue == 0) {
                             j13 = longValue;
                         } else {
-                            C3300hQ c3300hQ = c3029cO.f29473a;
-                            long j19 = u72.f27901j;
-                            if (this.f28167V && j19 != j6) {
-                                this.f28166U.getClass();
+                            C3483kQ c3483kQ = c3052cO.f30256a;
+                            long j19 = u72.f28698j;
+                            if (this.f28959V && j19 != j6) {
+                                this.f28958U.getClass();
                             }
-                            j13 = c3300hQ.c(longValue, this.f28165T);
+                            j13 = c3483kQ.c(longValue, this.f28957T);
                         }
-                        if (AbstractC3159eu.t(j13) == AbstractC3159eu.t(this.f28170Z.f31964r) && ((i6 = (c3566mO2 = this.f28170Z).f31952e) == 2 || i6 == 3)) {
-                            longValue = c3566mO2.f31964r;
+                        if (AbstractC3182eu.t(j13) == AbstractC3182eu.t(this.f28962Z.f32744r) && ((i4 = (c3589mO2 = this.f28962Z).f32732e) == 2 || i4 == 3)) {
+                            longValue = c3589mO2.f32744r;
                         }
                     } else {
                         j13 = longValue;
                     }
-                    boolean z13 = this.f28170Z.f31952e == 4;
-                    C3136eO c3136eO2 = this.J;
-                    if (c3136eO2.f29921h != c3136eO2.i) {
+                    boolean z14 = this.f28962Z.f32732e == 4;
+                    C3159eO c3159eO2 = this.J;
+                    if (c3159eO2.f30713h != c3159eO2.i) {
                         j14 = j13;
-                        z9 = true;
+                        z10 = true;
                     } else {
                         j14 = j13;
-                        z9 = false;
+                        z10 = false;
                     }
-                    long r9 = r(E8, j14, z9, z13);
-                    boolean z14 = z3 | (longValue != r9);
+                    long r9 = r(E8, j14, z10, z14);
+                    boolean z15 = z6 | (longValue != r9);
                     try {
-                        c3566mO = this.f28170Z;
-                        c3676oQ = E8;
+                        c3589mO = this.f28962Z;
+                        c3860rQ = E8;
                     } catch (Throwable th) {
                         th = th;
                     }
                     try {
-                        AbstractC3604n8 abstractC3604n82 = c3566mO.f31948a;
+                        AbstractC3627n8 abstractC3627n82 = c3589mO.f32728a;
                         long j20 = j10;
                         try {
-                            G(abstractC3604n82, c3676oQ, abstractC3604n82, c3566mO.f31949b, j20, true);
-                            E8 = c3676oQ;
+                            G(abstractC3627n82, c3860rQ, abstractC3627n82, c3589mO.f32729b, j20, true);
+                            E8 = c3860rQ;
                             j15 = j20;
                             j16 = r9;
-                            z10 = z14;
-                            this.f28170Z = N(E8, j16, j15, j16, z10, 2);
+                            z11 = z15;
+                            this.f28962Z = N(E8, j16, j15, j16, z11, 2);
                         } catch (Throwable th2) {
                             th = th2;
-                            E8 = c3676oQ;
+                            E8 = c3860rQ;
                             j11 = j20;
                             j12 = r9;
-                            z6 = z14;
-                            this.f28170Z = N(E8, j12, j11, j12, z6, 2);
+                            z9 = z15;
+                            this.f28962Z = N(E8, j12, j11, j12, z9, 2);
                             throw th;
                         }
                     } catch (Throwable th3) {
                         th = th3;
-                        E8 = c3676oQ;
+                        E8 = c3860rQ;
                         j11 = j10;
                         j12 = r9;
-                        z6 = z14;
-                        this.f28170Z = N(E8, j12, j11, j12, z6, 2);
+                        z9 = z15;
+                        this.f28962Z = N(E8, j12, j11, j12, z9, 2);
                         throw th;
                     }
                 }
-                if (this.f28170Z.f31952e != 1) {
+                if (this.f28962Z.f32732e != 1) {
                     c(4);
                 }
                 v(false, true, false, true);
             }
-            z10 = z3;
+            z11 = z6;
             j16 = longValue;
             j15 = j10;
-            this.f28170Z = N(E8, j16, j15, j16, z10, 2);
+            this.f28962Z = N(E8, j16, j15, j16, z11, 2);
         } catch (Throwable th4) {
             th = th4;
             j11 = j10;
-            z6 = z3;
+            z9 = z6;
             j12 = longValue;
         }
     }
 
-    public final long r(C3676oQ c3676oQ, long j6, boolean z3, boolean z6) {
+    public final long r(C3860rQ c3860rQ, long j6, boolean z6, boolean z9) {
         k();
-        boolean z9 = true;
+        boolean z10 = true;
         y(false, true);
-        if (z6 || this.f28170Z.f31952e == 3) {
+        if (z9 || this.f28962Z.f32732e == 3) {
             c(2);
         }
-        C3136eO c3136eO = this.J;
-        C3029cO c3029cO = c3136eO.f29921h;
-        C3029cO c3029cO2 = c3029cO;
-        while (c3029cO2 != null && !c3676oQ.equals(c3029cO2.f29479g.f29760a)) {
-            c3029cO2 = c3029cO2.f29484m;
+        C3159eO c3159eO = this.J;
+        C3052cO c3052cO = c3159eO.f30713h;
+        C3052cO c3052cO2 = c3052cO;
+        while (c3052cO2 != null && !c3860rQ.equals(c3052cO2.f30262g.f30532a)) {
+            c3052cO2 = c3052cO2.f30267m;
         }
-        if (z3 || c3029cO != c3029cO2 || (c3029cO2 != null && c3029cO2.f29487p + j6 < 0)) {
+        if (z6 || c3052cO != c3052cO2 || (c3052cO2 != null && c3052cO2.f30270p + j6 < 0)) {
             B();
-            if (c3029cO2 != null) {
-                while (c3136eO.f29921h != c3029cO2) {
-                    c3136eO.x();
+            if (c3052cO2 != null) {
+                while (c3159eO.f30713h != c3052cO2) {
+                    c3159eO.x();
                 }
-                c3136eO.y(c3029cO2);
-                c3029cO2.f29487p = 1000000000000L;
+                c3159eO.y(c3052cO2);
+                c3052cO2.f30270p = 1000000000000L;
                 O(new boolean[2], this.J.i.a());
-                c3029cO2.f29480h = true;
+                c3052cO2.f30263h = true;
             }
         }
         C();
-        if (this.f28167V) {
-            D0.H[] hArr = this.f28171n;
+        if (this.f28959V) {
+            D0.H[] hArr = this.f28967n;
             int i = 0;
             while (true) {
                 if (i >= 2) {
                     break;
                 }
-                D0.H h9 = hArr[i];
-                if (h9.g() && ((RP) h9.f539e).f27272u == 2) {
-                    this.f28168W = true;
+                D0.H h3 = hArr[i];
+                if (h3.g() && ((SP) h3.f434e).f28261u == 2) {
+                    this.f28960W = true;
                     break;
                 }
                 i++;
             }
         }
-        if (c3029cO2 != null) {
-            c3136eO.y(c3029cO2);
-            if (!c3029cO2.f29477e) {
-                c3029cO2.f29479g = c3029cO2.f29479g.a(j6, com.anythink.basead.exoplayer.b.f6382b);
-            } else if (c3029cO2.f29478f) {
-                if (this.f28167V) {
-                    this.f28166U.getClass();
-                    if (!this.f28170Z.f31948a.g() && c3029cO2.f29479g.f29760a.equals(this.f28170Z.f31949b)) {
-                        long j9 = c3029cO2.f29487p + j6;
-                        D0.H[] hArr2 = this.f28171n;
-                        boolean z10 = true;
-                        for (int i6 = 0; i6 < 2; i6++) {
-                            D0.H h10 = hArr2[i6];
-                            if (h10.g()) {
-                                RP m4 = h10.m(c3029cO2);
-                                z10 &= m4 != null && m4.q(j9);
+        if (c3052cO2 != null) {
+            c3159eO.y(c3052cO2);
+            if (!c3052cO2.f30260e) {
+                c3052cO2.f30262g = c3052cO2.f30262g.a(j6, com.anythink.basead.exoplayer.b.f7168b);
+            } else if (c3052cO2.f30261f) {
+                if (this.f28959V) {
+                    this.f28958U.getClass();
+                    if (!this.f28962Z.f32728a.g() && c3052cO2.f30262g.f30532a.equals(this.f28962Z.f32729b)) {
+                        long j9 = c3052cO2.f30270p + j6;
+                        D0.H[] hArr2 = this.f28967n;
+                        boolean z11 = true;
+                        for (int i4 = 0; i4 < 2; i4++) {
+                            D0.H h9 = hArr2[i4];
+                            if (h9.g()) {
+                                SP m9 = h9.m(c3052cO2);
+                                z11 &= m9 != null && m9.q(j9);
                             }
                         }
-                        if (z10) {
-                            C3300hQ c3300hQ = c3029cO2.f29473a;
-                            long j10 = this.f28170Z.f31964r;
-                            C3997uO c3997uO = C3997uO.f34532b;
-                            if (c3300hQ.c(j10, c3997uO) == c3300hQ.c(j6, c3997uO)) {
-                                z9 = false;
+                        if (z11) {
+                            C3483kQ c3483kQ = c3052cO2.f30256a;
+                            long j10 = this.f28962Z.f32744r;
+                            C4020uO c4020uO = C4020uO.f35306b;
+                            if (c3483kQ.c(j10, c4020uO) == c3483kQ.c(j6, c4020uO)) {
+                                z10 = false;
                             }
                         }
                     }
                 }
-                C3300hQ c3300hQ2 = c3029cO2.f29473a;
-                j6 = c3300hQ2.a(j6);
-                c3300hQ2.X(j6 - this.f28145E);
+                C3483kQ c3483kQ2 = c3052cO2.f30256a;
+                j6 = c3483kQ2.a(j6);
+                c3483kQ2.X(j6 - this.f28942E);
             }
-            s(j6, z9);
+            s(j6, z10);
             L();
         } else {
-            c3136eO.B();
+            c3159eO.B();
             s(j6, true);
         }
         Q(false);
-        this.f28189z.c(2);
+        this.f28985z.c(2);
         return j6;
     }
 
-    public final void s(long j6, boolean z3) {
-        C3029cO c3029cO = this.J.f29921h;
-        long j9 = j6 + (c3029cO == null ? 1000000000000L : c3029cO.f29487p);
-        this.f28190z0 = j9;
-        ((C4105wO) this.f28147F.f25609v).b(j9);
+    public final void s(long j6, boolean z6) {
+        C3052cO c3052cO = this.J.f30713h;
+        long j9 = j6 + (c3052cO == null ? 1000000000000L : c3052cO.f30270p);
+        this.f28976u0 = j9;
+        ((C4128wO) this.f28944F.f26362v).b(j9);
         for (int i = 0; i < 2; i++) {
-            D0.H h9 = this.f28171n[i];
-            long j10 = this.f28190z0;
-            RP m4 = h9.m(c3029cO);
-            if (m4 != null) {
-                m4.N(j10, false, z3);
+            D0.H h3 = this.f28967n[i];
+            long j10 = this.f28976u0;
+            SP m9 = h3.m(c3052cO);
+            if (m9 != null) {
+                m9.N(j10, false, z6);
             }
         }
-        for (C3029cO c3029cO2 = r0.f29921h; c3029cO2 != null; c3029cO2 = c3029cO2.f29484m) {
-            for (InterfaceC3757q interfaceC3757q : (InterfaceC3757q[]) c3029cO2.f29486o.f34179v) {
+        for (C3052cO c3052cO2 = r0.f30713h; c3052cO2 != null; c3052cO2 = c3052cO2.f30267m) {
+            for (InterfaceC3780q interfaceC3780q : (InterfaceC3780q[]) c3052cO2.f30269o.f34965v) {
             }
         }
     }
 
     public final void t() {
         for (int i = 0; i < 2; i++) {
-            D0.H h9 = this.f28171n[i];
-            C3943tO c3943tO = this.f28167V ? this.f28166U : null;
-            ((RP) h9.f539e).b(18, c3943tO);
-            RP rp = (RP) h9.f540f;
-            if (rp != null) {
-                rp.b(18, c3943tO);
+            D0.H h3 = this.f28967n[i];
+            C3966tO c3966tO = this.f28959V ? this.f28958U : null;
+            ((SP) h3.f434e).b(18, c3966tO);
+            SP sp = (SP) h3.f435f;
+            if (sp != null) {
+                sp.b(18, c3966tO);
             }
         }
     }
 
-    public final void u(boolean z3, boolean z6) {
-        v(z3 || !this.f28184w0, false, true, false);
-        this.f28172n0.f(z6 ? 1 : 0);
-        this.f28187y.f(this.f28158M);
-        this.f28163R.b(1, this.f28170Z.f31958l);
+    public final void u(boolean z6, boolean z9) {
+        v(z6 || !this.f28972r0, false, true, false);
+        this.f28963i0.f(z9 ? 1 : 0);
+        this.f28983y.f(this.f28950M);
+        this.f28955R.b(1, this.f28962Z.f32738l);
         c(1);
     }
 
@@ -4090,211 +4088,211 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void v(boolean z3, boolean z6, boolean z9, boolean z10) {
+    public final void v(boolean z6, boolean z9, boolean z10, boolean z11) {
         long j6;
-        boolean z11;
-        AbstractC3604n8 abstractC3604n8;
-        C3676oQ c3676oQ;
-        AbstractC3604n8 abstractC3604n82;
+        boolean z12;
+        AbstractC3627n8 abstractC3627n8;
+        C3860rQ c3860rQ;
+        AbstractC3627n8 abstractC3627n82;
         List list;
-        this.f28189z.d(2);
-        this.f28168W = false;
-        boolean z12 = true;
-        if (this.f28169X != null) {
-            this.f28172n0.f(1);
-            this.f28169X = null;
+        this.f28985z.d(2);
+        this.f28960W = false;
+        boolean z13 = true;
+        if (this.f28961X != null) {
+            this.f28963i0.f(1);
+            this.f28961X = null;
         }
-        this.f28144D0 = null;
+        this.f28984y0 = null;
         y(false, true);
-        Is is = this.f28147F;
-        is.f25608u = false;
-        C4105wO c4105wO = (C4105wO) is.f25609v;
-        if (c4105wO.f34832n) {
-            c4105wO.b(c4105wO.h());
-            c4105wO.f34832n = false;
+        Is is = this.f28944F;
+        is.f26361u = false;
+        C4128wO c4128wO = (C4128wO) is.f26362v;
+        if (c4128wO.f35601n) {
+            c4128wO.b(c4128wO.h());
+            c4128wO.f35601n = false;
         }
-        this.f28190z0 = 1000000000000L;
+        this.f28976u0 = 1000000000000L;
         try {
             B();
         } catch (DN | RuntimeException e9) {
-            AbstractC2968bG.J("ExoPlayerImplInternal", "Disable failed.", e9);
+            AbstractC2991bG.J("ExoPlayerImplInternal", "Disable failed.", e9);
         }
-        if (z3) {
-            D0.H[] hArr = this.f28171n;
+        if (z6) {
+            D0.H[] hArr = this.f28967n;
             for (int i = 0; i < 2; i++) {
                 try {
                     hArr[i].b();
                 } catch (RuntimeException e10) {
-                    AbstractC2968bG.J("ExoPlayerImplInternal", "Reset failed.", e10);
+                    AbstractC2991bG.J("ExoPlayerImplInternal", "Reset failed.", e10);
                 }
             }
         }
-        this.f28186x0 = 0;
-        C3566mO c3566mO = this.f28170Z;
-        C3676oQ c3676oQ2 = c3566mO.f31949b;
-        long j9 = c3566mO.f31964r;
-        if (!this.f28170Z.f31949b.b()) {
-            C3566mO c3566mO2 = this.f28170Z;
-            K7 k72 = this.f28143D;
-            C3676oQ c3676oQ3 = c3566mO2.f31949b;
-            AbstractC3604n8 abstractC3604n83 = c3566mO2.f31948a;
-            if (!abstractC3604n83.g() && !abstractC3604n83.o(c3676oQ3.f32905a, k72).f25869e) {
-                j6 = this.f28170Z.f31964r;
-                if (z6) {
-                    this.f28188y0 = null;
-                    Pair w6 = w(this.f28170Z.f31948a);
-                    c3676oQ2 = (C3676oQ) w6.first;
-                    j9 = ((Long) w6.second).longValue();
-                    boolean equals = c3676oQ2.equals(this.f28170Z.f31949b);
-                    j6 = com.anythink.basead.exoplayer.b.f6382b;
+        this.f28973s0 = 0;
+        C3589mO c3589mO = this.f28962Z;
+        C3860rQ c3860rQ2 = c3589mO.f32729b;
+        long j9 = c3589mO.f32744r;
+        if (!this.f28962Z.f32729b.b()) {
+            C3589mO c3589mO2 = this.f28962Z;
+            K7 k72 = this.f28940D;
+            C3860rQ c3860rQ3 = c3589mO2.f32729b;
+            AbstractC3627n8 abstractC3627n83 = c3589mO2.f32728a;
+            if (!abstractC3627n83.g() && !abstractC3627n83.o(c3860rQ3.f34406a, k72).f26621e) {
+                j6 = this.f28962Z.f32744r;
+                if (z9) {
+                    this.f28974t0 = null;
+                    Pair w3 = w(this.f28962Z.f32728a);
+                    c3860rQ2 = (C3860rQ) w3.first;
+                    j9 = ((Long) w3.second).longValue();
+                    boolean equals = c3860rQ2.equals(this.f28962Z.f32729b);
+                    j6 = com.anythink.basead.exoplayer.b.f7168b;
                     if (!equals) {
-                        z11 = true;
+                        z12 = true;
                         long j10 = j9;
                         long j11 = j6;
-                        C3136eO c3136eO = this.J;
-                        c3136eO.B();
-                        this.f28178t0 = false;
-                        abstractC3604n8 = this.f28170Z.f31948a;
-                        if (z9 || !(abstractC3604n8 instanceof C3835rO)) {
-                            c3676oQ = c3676oQ2;
-                            abstractC3604n82 = abstractC3604n8;
+                        C3159eO c3159eO = this.J;
+                        c3159eO.B();
+                        this.f28969o0 = false;
+                        abstractC3627n8 = this.f28962Z.f32728a;
+                        if (z10 || !(abstractC3627n8 instanceof C3858rO)) {
+                            c3860rQ = c3860rQ2;
+                            abstractC3627n82 = abstractC3627n8;
                         } else {
-                            C3835rO c3835rO = (C3835rO) abstractC3604n8;
-                            KQ kq = (KQ) this.f28156K.f801E;
-                            AbstractC3604n8[] abstractC3604n8Arr = c3835rO.f33588h;
-                            AbstractC3604n8[] abstractC3604n8Arr2 = new AbstractC3604n8[abstractC3604n8Arr.length];
-                            int i6 = 0;
-                            while (i6 < abstractC3604n8Arr.length) {
-                                abstractC3604n8Arr2[i6] = new C3782qO(c3835rO, abstractC3604n8Arr[i6]);
-                                i6++;
-                                z12 = z12;
+                            C3858rO c3858rO = (C3858rO) abstractC3627n8;
+                            NQ nq = (NQ) this.f28948K.f1143E;
+                            AbstractC3627n8[] abstractC3627n8Arr = c3858rO.f34356h;
+                            AbstractC3627n8[] abstractC3627n8Arr2 = new AbstractC3627n8[abstractC3627n8Arr.length];
+                            int i4 = 0;
+                            while (i4 < abstractC3627n8Arr.length) {
+                                abstractC3627n8Arr2[i4] = new C3805qO(c3858rO, abstractC3627n8Arr[i4]);
+                                i4++;
+                                z13 = z13;
                             }
-                            C3835rO c3835rO2 = new C3835rO(abstractC3604n8Arr2, c3835rO.i, kq);
-                            if (c3676oQ2.f32906b != -1) {
-                                Object obj = c3676oQ2.f32905a;
-                                K7 k73 = this.f28143D;
-                                c3835rO2.o(obj, k73);
-                                U7 u72 = this.f28142C;
-                                c3835rO2.b(k73.f25867c, u72, 0L);
+                            C3858rO c3858rO2 = new C3858rO(abstractC3627n8Arr2, c3858rO.i, nq);
+                            if (c3860rQ2.f34407b != -1) {
+                                Object obj = c3860rQ2.f34406a;
+                                K7 k73 = this.f28940D;
+                                c3858rO2.o(obj, k73);
+                                U7 u72 = this.f28939C;
+                                c3858rO2.b(k73.f26619c, u72, 0L);
                                 if (u72.b()) {
-                                    abstractC3604n82 = c3835rO2;
-                                    c3676oQ = new C3676oQ(c3676oQ2.f32908d, obj);
+                                    abstractC3627n82 = c3858rO2;
+                                    c3860rQ = new C3860rQ(c3860rQ2.f34409d, obj);
                                 }
                             }
-                            c3676oQ = c3676oQ2;
-                            abstractC3604n82 = c3835rO2;
+                            c3860rQ = c3860rQ2;
+                            abstractC3627n82 = c3858rO2;
                         }
-                        C3566mO c3566mO3 = this.f28170Z;
-                        int i9 = c3566mO3.f31952e;
-                        DN dn = z10 ? null : c3566mO3.f31953f;
-                        PQ pq = z11 ? PQ.f26818d : c3566mO3.f31955h;
-                        C3918t c3918t = z11 ? this.f28185x : c3566mO3.i;
-                        if (z11) {
-                            PB pb = RB.f27177u;
-                            list = C3500lC.f31745x;
+                        C3589mO c3589mO3 = this.f28962Z;
+                        int i6 = c3589mO3.f32732e;
+                        DN dn = z11 ? null : c3589mO3.f32733f;
+                        SQ sq = z12 ? SQ.f28273d : c3589mO3.f32735h;
+                        C3941t c3941t = z12 ? this.f28981x : c3589mO3.i;
+                        if (z12) {
+                            PB pb = RB.f27933u;
+                            list = C3523lC.f32525x;
                         } else {
-                            list = c3566mO3.f31956j;
+                            list = c3589mO3.f32736j;
                         }
-                        this.f28170Z = new C3566mO(abstractC3604n82, c3676oQ, j11, j10, i9, dn, false, pq, c3918t, list, c3676oQ, c3566mO3.f31958l, c3566mO3.f31959m, c3566mO3.f31960n, c3566mO3.f31961o, j10, 0L, j10, 0L);
-                        if (z9) {
-                            c3136eO.r();
-                            E3.m mVar = this.f28156K;
-                            HashMap hashMap = (HashMap) mVar.f797A;
-                            for (C3404jO c3404jO : hashMap.values()) {
+                        this.f28962Z = new C3589mO(abstractC3627n82, c3860rQ, j11, j10, i6, dn, false, sq, c3941t, list, c3860rQ, c3589mO3.f32738l, c3589mO3.f32739m, c3589mO3.f32740n, c3589mO3.f32741o, j10, 0L, j10, 0L);
+                        if (z10) {
+                            c3159eO.r();
+                            G3.m mVar = this.f28948K;
+                            HashMap hashMap = (HashMap) mVar.f1139A;
+                            for (C3427jO c3427jO : hashMap.values()) {
                                 try {
-                                    c3404jO.f31242a.q(c3404jO.f31243b);
+                                    c3427jO.f32029a.q(c3427jO.f32030b);
                                 } catch (RuntimeException e11) {
-                                    AbstractC2968bG.J("MediaSourceList", "Failed to release child source.", e11);
+                                    AbstractC2991bG.J("MediaSourceList", "Failed to release child source.", e11);
                                 }
-                                XP xp = c3404jO.f31242a;
-                                C3352iO c3352iO = c3404jO.f31244c;
-                                xp.l(c3352iO);
-                                xp.m(c3352iO);
+                                AbstractC2947aQ abstractC2947aQ = c3427jO.f32029a;
+                                C3375iO c3375iO = c3427jO.f32031c;
+                                abstractC2947aQ.l(c3375iO);
+                                abstractC2947aQ.m(c3375iO);
                             }
                             hashMap.clear();
-                            ((HashSet) mVar.f798B).clear();
-                            mVar.f802n = false;
+                            ((HashSet) mVar.f1140B).clear();
+                            mVar.f1144n = false;
                             return;
                         }
                         return;
                     }
                 }
-                z11 = false;
+                z12 = false;
                 long j102 = j9;
                 long j112 = j6;
-                C3136eO c3136eO2 = this.J;
-                c3136eO2.B();
-                this.f28178t0 = false;
-                abstractC3604n8 = this.f28170Z.f31948a;
-                if (z9) {
-                }
-                c3676oQ = c3676oQ2;
-                abstractC3604n82 = abstractC3604n8;
-                C3566mO c3566mO32 = this.f28170Z;
-                int i92 = c3566mO32.f31952e;
+                C3159eO c3159eO2 = this.J;
+                c3159eO2.B();
+                this.f28969o0 = false;
+                abstractC3627n8 = this.f28962Z.f32728a;
                 if (z10) {
                 }
-                PQ pq2 = z11 ? PQ.f26818d : c3566mO32.f31955h;
-                C3918t c3918t2 = z11 ? this.f28185x : c3566mO32.i;
+                c3860rQ = c3860rQ2;
+                abstractC3627n82 = abstractC3627n8;
+                C3589mO c3589mO32 = this.f28962Z;
+                int i62 = c3589mO32.f32732e;
                 if (z11) {
                 }
-                this.f28170Z = new C3566mO(abstractC3604n82, c3676oQ, j112, j102, i92, dn, false, pq2, c3918t2, list, c3676oQ, c3566mO32.f31958l, c3566mO32.f31959m, c3566mO32.f31960n, c3566mO32.f31961o, j102, 0L, j102, 0L);
-                if (z9) {
+                SQ sq2 = z12 ? SQ.f28273d : c3589mO32.f32735h;
+                C3941t c3941t2 = z12 ? this.f28981x : c3589mO32.i;
+                if (z12) {
+                }
+                this.f28962Z = new C3589mO(abstractC3627n82, c3860rQ, j112, j102, i62, dn, false, sq2, c3941t2, list, c3860rQ, c3589mO32.f32738l, c3589mO32.f32739m, c3589mO32.f32740n, c3589mO32.f32741o, j102, 0L, j102, 0L);
+                if (z10) {
                 }
             }
         }
-        j6 = this.f28170Z.f31950c;
-        if (z6) {
+        j6 = this.f28962Z.f32730c;
+        if (z9) {
         }
-        z11 = false;
+        z12 = false;
         long j1022 = j9;
         long j1122 = j6;
-        C3136eO c3136eO22 = this.J;
-        c3136eO22.B();
-        this.f28178t0 = false;
-        abstractC3604n8 = this.f28170Z.f31948a;
-        if (z9) {
-        }
-        c3676oQ = c3676oQ2;
-        abstractC3604n82 = abstractC3604n8;
-        C3566mO c3566mO322 = this.f28170Z;
-        int i922 = c3566mO322.f31952e;
+        C3159eO c3159eO22 = this.J;
+        c3159eO22.B();
+        this.f28969o0 = false;
+        abstractC3627n8 = this.f28962Z.f32728a;
         if (z10) {
         }
-        PQ pq22 = z11 ? PQ.f26818d : c3566mO322.f31955h;
-        C3918t c3918t22 = z11 ? this.f28185x : c3566mO322.i;
+        c3860rQ = c3860rQ2;
+        abstractC3627n82 = abstractC3627n8;
+        C3589mO c3589mO322 = this.f28962Z;
+        int i622 = c3589mO322.f32732e;
         if (z11) {
         }
-        this.f28170Z = new C3566mO(abstractC3604n82, c3676oQ, j1122, j1022, i922, dn, false, pq22, c3918t22, list, c3676oQ, c3566mO322.f31958l, c3566mO322.f31959m, c3566mO322.f31960n, c3566mO322.f31961o, j1022, 0L, j1022, 0L);
-        if (z9) {
+        SQ sq22 = z12 ? SQ.f28273d : c3589mO322.f32735h;
+        C3941t c3941t22 = z12 ? this.f28981x : c3589mO322.i;
+        if (z12) {
+        }
+        this.f28962Z = new C3589mO(abstractC3627n82, c3860rQ, j1122, j1022, i622, dn, false, sq22, c3941t22, list, c3860rQ, c3589mO322.f32738l, c3589mO322.f32739m, c3589mO322.f32740n, c3589mO322.f32741o, j1022, 0L, j1022, 0L);
+        if (z10) {
         }
     }
 
-    public final Pair w(AbstractC3604n8 abstractC3604n8) {
+    public final Pair w(AbstractC3627n8 abstractC3627n8) {
         int i;
         long j6 = 0;
-        if (abstractC3604n8.g()) {
-            return Pair.create(C3566mO.f31947t, 0L);
+        if (abstractC3627n8.g()) {
+            return Pair.create(C3589mO.f32727t, 0L);
         }
-        int k9 = abstractC3604n8.k(this.f28182v0);
-        U7 u72 = this.f28142C;
-        K7 k72 = this.f28143D;
-        Pair m4 = abstractC3604n8.m(u72, k72, k9, com.anythink.basead.exoplayer.b.f6382b);
-        C3676oQ E8 = this.J.E(this.f28170Z, abstractC3604n8, m4.first, true, false);
-        long longValue = ((Long) m4.second).longValue();
+        int k9 = abstractC3627n8.k(this.f28971q0);
+        U7 u72 = this.f28939C;
+        K7 k72 = this.f28940D;
+        Pair m9 = abstractC3627n8.m(u72, k72, k9, com.anythink.basead.exoplayer.b.f7168b);
+        C3860rQ E8 = this.J.E(this.f28962Z, abstractC3627n8, m9.first, true, false);
+        long longValue = ((Long) m9.second).longValue();
         if (E8.b()) {
-            abstractC3604n8.o(E8.f32905a, k72);
-            C2897a a9 = k72.f25870f.a(E8.f32906b);
-            int i6 = 0;
+            abstractC3627n8.o(E8.f34406a, k72);
+            C2920a a9 = k72.f26622f.a(E8.f34407b);
+            int i4 = 0;
             while (true) {
-                int[] iArr = a9.f28986d;
-                if (i6 >= iArr.length || (i = iArr[i6]) == 0 || i == 1) {
+                int[] iArr = a9.f29756d;
+                if (i4 >= iArr.length || (i = iArr[i4]) == 0 || i == 1) {
                     break;
                 }
-                i6++;
+                i4++;
             }
-            if (E8.f32907c == i6) {
-                k72.f25870f.getClass();
+            if (E8.f34408c == i4) {
+                k72.f26622f.getClass();
             }
         } else {
             j6 = longValue;
@@ -4302,11 +4300,11 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
         return Pair.create(E8, Long.valueOf(j6));
     }
 
-    public final void x(AbstractC3604n8 abstractC3604n8, AbstractC3604n8 abstractC3604n82) {
-        if (abstractC3604n8.g() && abstractC3604n82.g()) {
+    public final void x(AbstractC3627n8 abstractC3627n8, AbstractC3627n8 abstractC3627n82) {
+        if (abstractC3627n8.g() && abstractC3627n82.g()) {
             return;
         }
-        ArrayList arrayList = this.f28149G;
+        ArrayList arrayList = this.f28945G;
         int size = arrayList.size() - 1;
         if (size < 0) {
             Collections.sort(arrayList);
@@ -4316,12 +4314,12 @@ public final class VN implements Handler.Callback, InterfaceC3568mQ, InterfaceC3
         }
     }
 
-    public final void y(boolean z3, boolean z6) {
-        this.f28176r0 = z3;
-        long j6 = com.anythink.basead.exoplayer.b.f6382b;
-        if (z3 && !z6) {
+    public final void y(boolean z6, boolean z9) {
+        this.m0 = z6;
+        long j6 = com.anythink.basead.exoplayer.b.f7168b;
+        if (z6 && !z9) {
             j6 = SystemClock.elapsedRealtime();
         }
-        this.f28177s0 = j6;
+        this.f28968n0 = j6;
     }
 }

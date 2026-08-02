@@ -22,120 +22,120 @@ final class b<T extends i> implements f<T> {
     private static final String i = "DefaultDrmSession";
 
     /* renamed from: j, reason: collision with root package name */
-    private static final int f6786j = 0;
+    private static final int f7572j = 0;
 
     /* renamed from: k, reason: collision with root package name */
-    private static final int f6787k = 1;
+    private static final int f7573k = 1;
 
     /* renamed from: l, reason: collision with root package name */
-    private static final int f6788l = 60;
+    private static final int f7574l = 60;
 
     /* renamed from: A, reason: collision with root package name */
-    private byte[] f6789A;
+    private byte[] f7575A;
 
     /* renamed from: B, reason: collision with root package name */
-    private Object f6790B;
+    private Object f7576B;
 
     /* renamed from: C, reason: collision with root package name */
-    private Object f6791C;
+    private Object f7577C;
 
     /* renamed from: a, reason: collision with root package name */
-    final n f6792a;
+    final n f7578a;
 
     /* renamed from: b, reason: collision with root package name */
-    final UUID f6793b;
+    final UUID f7579b;
 
     /* renamed from: c, reason: collision with root package name */
-    final b<T>.HandlerC0018b f6794c;
+    final b<T>.HandlerC0018b f7580c;
 
     /* renamed from: m, reason: collision with root package name */
-    private final j<T> f6795m;
+    private final j<T> f7581m;
 
     /* renamed from: n, reason: collision with root package name */
-    private final c<T> f6796n;
+    private final c<T> f7582n;
 
     /* renamed from: o, reason: collision with root package name */
-    private final e.a f6797o;
+    private final e.a f7583o;
 
     /* renamed from: p, reason: collision with root package name */
-    private final int f6798p;
+    private final int f7584p;
 
     /* renamed from: q, reason: collision with root package name */
-    private final HashMap<String, String> f6799q;
+    private final HashMap<String, String> f7585q;
 
     /* renamed from: r, reason: collision with root package name */
-    private final c.a f6800r;
+    private final c.a f7586r;
 
     /* renamed from: s, reason: collision with root package name */
-    private final int f6801s;
+    private final int f7587s;
 
     /* renamed from: t, reason: collision with root package name */
-    private int f6802t;
+    private int f7588t;
 
     /* renamed from: u, reason: collision with root package name */
-    private int f6803u;
+    private int f7589u;
 
     /* renamed from: v, reason: collision with root package name */
-    private HandlerThread f6804v;
+    private HandlerThread f7590v;
 
     /* renamed from: w, reason: collision with root package name */
-    private b<T>.a f6805w;
+    private b<T>.a f7591w;
 
     /* renamed from: x, reason: collision with root package name */
-    private T f6806x;
+    private T f7592x;
 
     /* renamed from: y, reason: collision with root package name */
-    private f.a f6807y;
+    private f.a f7593y;
 
     /* renamed from: z, reason: collision with root package name */
-    private byte[] f6808z;
+    private byte[] f7594z;
 
     public class a extends Handler {
         public a(Looper looper) {
             super(looper);
         }
 
-        public final void a(int i, Object obj, boolean z3) {
-            obtainMessage(i, z3 ? 1 : 0, 0, obj).sendToTarget();
+        public final void a(int i, Object obj, boolean z6) {
+            obtainMessage(i, z6 ? 1 : 0, 0, obj).sendToTarget();
         }
 
         @Override // android.os.Handler
         public final void handleMessage(Message message) {
             Object obj;
             int i;
-            int i6;
+            int i4;
             Object obj2 = message.obj;
             try {
-                int i9 = message.what;
-                if (i9 == 0) {
-                    obj = b.this.f6792a.a();
+                int i6 = message.what;
+                if (i6 == 0) {
+                    obj = b.this.f7578a.a();
                 } else {
-                    if (i9 != 1) {
+                    if (i6 != 1) {
                         throw new RuntimeException();
                     }
                     Object obj3 = ((Pair) obj2).first;
-                    obj = b.this.f6792a.b();
+                    obj = b.this.f7578a.b();
                 }
             } catch (Exception e9) {
-                if (message.arg1 == 1 && (i6 = (i = message.arg2) + 1) <= b.this.f6801s) {
+                if (message.arg1 == 1 && (i4 = (i = message.arg2) + 1) <= b.this.f7587s) {
                     Message obtain = Message.obtain(message);
-                    obtain.arg2 = i6;
+                    obtain.arg2 = i4;
                     sendMessageDelayed(obtain, Math.min(i * 1000, 5000));
                     return;
                 }
                 obj = e9;
             }
-            b.this.f6794c.obtainMessage(message.what, Pair.create(obj2, obj)).sendToTarget();
+            b.this.f7580c.obtainMessage(message.what, Pair.create(obj2, obj)).sendToTarget();
         }
 
         private boolean a(Message message) {
             int i;
-            int i6;
-            if (message.arg1 != 1 || (i6 = (i = message.arg2) + 1) > b.this.f6801s) {
+            int i4;
+            if (message.arg1 != 1 || (i4 = (i = message.arg2) + 1) > b.this.f7587s) {
                 return false;
             }
             Message obtain = Message.obtain(message);
-            obtain.arg2 = i6;
+            obtain.arg2 = i4;
             sendMessageDelayed(obtain, Math.min(i * 1000, 5000));
             return true;
         }
@@ -176,23 +176,23 @@ final class b<T extends i> implements f<T> {
         void a(Exception exc);
     }
 
-    public b(UUID uuid, j<T> jVar, c<T> cVar, e.a aVar, int i6, byte[] bArr, HashMap<String, String> hashMap, n nVar, Looper looper, c.a aVar2, int i9) {
-        this.f6793b = uuid;
-        this.f6796n = cVar;
-        this.f6795m = jVar;
-        this.f6798p = i6;
-        this.f6789A = bArr;
-        this.f6797o = bArr != null ? null : aVar;
-        this.f6799q = hashMap;
-        this.f6792a = nVar;
-        this.f6801s = i9;
-        this.f6800r = aVar2;
-        this.f6802t = 2;
-        this.f6794c = new HandlerC0018b(looper);
+    public b(UUID uuid, j<T> jVar, c<T> cVar, e.a aVar, int i4, byte[] bArr, HashMap<String, String> hashMap, n nVar, Looper looper, c.a aVar2, int i6) {
+        this.f7579b = uuid;
+        this.f7582n = cVar;
+        this.f7581m = jVar;
+        this.f7584p = i4;
+        this.f7575A = bArr;
+        this.f7583o = bArr != null ? null : aVar;
+        this.f7585q = hashMap;
+        this.f7578a = nVar;
+        this.f7587s = i6;
+        this.f7586r = aVar2;
+        this.f7588t = 2;
+        this.f7580c = new HandlerC0018b(looper);
         HandlerThread handlerThread = new HandlerThread("DrmRequestHandler");
-        this.f6804v = handlerThread;
+        this.f7590v = handlerThread;
         handlerThread.start();
-        this.f6805w = new a(this.f6804v.getLooper());
+        this.f7591w = new a(this.f7590v.getLooper());
     }
 
     private boolean j() {
@@ -200,10 +200,10 @@ final class b<T extends i> implements f<T> {
             return true;
         }
         try {
-            byte[] a9 = this.f6795m.a();
-            this.f6808z = a9;
-            this.f6806x = this.f6795m.d(a9);
-            this.f6802t = 3;
+            byte[] a9 = this.f7581m.a();
+            this.f7594z = a9;
+            this.f7592x = this.f7581m.d(a9);
+            this.f7588t = 3;
             return true;
         } catch (Exception e9) {
             c(e9);
@@ -213,7 +213,7 @@ final class b<T extends i> implements f<T> {
 
     private boolean k() {
         try {
-            this.f6795m.b(this.f6808z, this.f6789A);
+            this.f7581m.b(this.f7594z, this.f7575A);
             return true;
         } catch (Exception e9) {
             Log.e(i, "Error trying to restore Widevine keys.", e9);
@@ -223,7 +223,7 @@ final class b<T extends i> implements f<T> {
     }
 
     private long l() {
-        if (!com.anythink.basead.exoplayer.b.bk.equals(this.f6793b)) {
+        if (!com.anythink.basead.exoplayer.b.bk.equals(this.f7579b)) {
             return Long.MAX_VALUE;
         }
         Pair<Long, Long> a9 = p.a(this);
@@ -231,45 +231,45 @@ final class b<T extends i> implements f<T> {
     }
 
     private void m() {
-        if (this.f6802t == 4) {
-            this.f6802t = 3;
+        if (this.f7588t == 4) {
+            this.f7588t = 3;
             c(new m());
         }
     }
 
     private boolean n() {
-        int i6 = this.f6802t;
-        return i6 == 3 || i6 == 4;
+        int i4 = this.f7588t;
+        return i4 == 3 || i4 == 4;
     }
 
     public final boolean b() {
-        int i6 = this.f6803u - 1;
-        this.f6803u = i6;
-        if (i6 != 0) {
+        int i4 = this.f7589u - 1;
+        this.f7589u = i4;
+        if (i4 != 0) {
             return false;
         }
-        this.f6802t = 0;
-        this.f6794c.removeCallbacksAndMessages(null);
-        this.f6805w.removeCallbacksAndMessages(null);
-        this.f6805w = null;
-        this.f6804v.quit();
-        this.f6804v = null;
-        this.f6806x = null;
-        this.f6807y = null;
-        this.f6790B = null;
-        this.f6791C = null;
-        byte[] bArr = this.f6808z;
+        this.f7588t = 0;
+        this.f7580c.removeCallbacksAndMessages(null);
+        this.f7591w.removeCallbacksAndMessages(null);
+        this.f7591w = null;
+        this.f7590v.quit();
+        this.f7590v = null;
+        this.f7592x = null;
+        this.f7593y = null;
+        this.f7576B = null;
+        this.f7577C = null;
+        byte[] bArr = this.f7594z;
         if (bArr != null) {
-            this.f6795m.a(bArr);
-            this.f6808z = null;
+            this.f7581m.a(bArr);
+            this.f7594z = null;
         }
         return true;
     }
 
     public final void c() {
-        j.h b9 = this.f6795m.b();
-        this.f6791C = b9;
-        this.f6805w.a(0, b9, true);
+        j.h b9 = this.f7581m.b();
+        this.f7577C = b9;
+        this.f7591w.a(0, b9, true);
     }
 
     public final void d() {
@@ -280,66 +280,66 @@ final class b<T extends i> implements f<T> {
 
     @Override // com.anythink.basead.exoplayer.d.f
     public final int e() {
-        return this.f6802t;
+        return this.f7588t;
     }
 
     @Override // com.anythink.basead.exoplayer.d.f
     public final f.a f() {
-        if (this.f6802t == 1) {
-            return this.f6807y;
+        if (this.f7588t == 1) {
+            return this.f7593y;
         }
         return null;
     }
 
     @Override // com.anythink.basead.exoplayer.d.f
     public final T g() {
-        return this.f6806x;
+        return this.f7592x;
     }
 
     @Override // com.anythink.basead.exoplayer.d.f
     public final Map<String, String> h() {
-        byte[] bArr = this.f6808z;
+        byte[] bArr = this.f7594z;
         if (bArr == null) {
             return null;
         }
-        return this.f6795m.c(bArr);
+        return this.f7581m.c(bArr);
     }
 
     @Override // com.anythink.basead.exoplayer.d.f
     public final byte[] i() {
-        return this.f6789A;
+        return this.f7575A;
     }
 
     public final void a() {
-        int i6 = this.f6803u + 1;
-        this.f6803u = i6;
-        if (i6 == 1 && this.f6802t != 1 && j()) {
+        int i4 = this.f7589u + 1;
+        this.f7589u = i4;
+        if (i4 == 1 && this.f7588t != 1 && j()) {
             a(true);
         }
     }
 
     private void c(Exception exc) {
-        this.f6807y = new f.a(exc);
-        this.f6800r.a(exc);
-        if (this.f6802t != 4) {
-            this.f6802t = 1;
+        this.f7593y = new f.a(exc);
+        this.f7586r.a(exc);
+        if (this.f7588t != 4) {
+            this.f7588t = 1;
         }
     }
 
     public final boolean a(byte[] bArr) {
-        e.a aVar = this.f6797o;
-        return Arrays.equals(aVar != null ? aVar.f6850c : null, bArr);
+        e.a aVar = this.f7583o;
+        return Arrays.equals(aVar != null ? aVar.f7636c : null, bArr);
     }
 
-    public final void a(int i6) {
+    public final void a(int i4) {
         if (n()) {
-            if (i6 == 1) {
-                this.f6802t = 3;
-                this.f6796n.a(this);
+            if (i4 == 1) {
+                this.f7588t = 3;
+                this.f7582n.a(this);
             } else {
-                if (i6 != 2) {
-                    if (i6 == 3 && this.f6802t == 4) {
-                        this.f6802t = 3;
+                if (i4 != 2) {
+                    if (i4 == 3 && this.f7588t == 4) {
+                        this.f7588t = 3;
                         c(new m());
                         return;
                     }
@@ -355,138 +355,138 @@ final class b<T extends i> implements f<T> {
     }
 
     private void a(Object obj, Object obj2) {
-        if (obj == this.f6791C) {
-            if (this.f6802t == 2 || n()) {
-                this.f6791C = null;
+        if (obj == this.f7577C) {
+            if (this.f7588t == 2 || n()) {
+                this.f7577C = null;
                 if (obj2 instanceof Exception) {
-                    this.f6796n.a((Exception) obj2);
+                    this.f7582n.a((Exception) obj2);
                     return;
                 }
                 try {
-                    this.f6795m.b((byte[]) obj2);
-                    this.f6796n.a();
+                    this.f7581m.b((byte[]) obj2);
+                    this.f7582n.a();
                 } catch (Exception e9) {
-                    this.f6796n.a(e9);
+                    this.f7582n.a(e9);
                 }
             }
         }
     }
 
     public final boolean b(byte[] bArr) {
-        return Arrays.equals(this.f6808z, bArr);
+        return Arrays.equals(this.f7594z, bArr);
     }
 
     private void b(Object obj, Object obj2) {
-        if (obj == this.f6790B && n()) {
-            this.f6790B = null;
+        if (obj == this.f7576B && n()) {
+            this.f7576B = null;
             if (obj2 instanceof Exception) {
                 b((Exception) obj2);
                 return;
             }
             try {
                 byte[] bArr = (byte[]) obj2;
-                if (this.f6798p == 3) {
-                    this.f6795m.a(this.f6789A, bArr);
-                    this.f6800r.c();
+                if (this.f7584p == 3) {
+                    this.f7581m.a(this.f7575A, bArr);
+                    this.f7586r.c();
                     return;
                 }
-                byte[] a9 = this.f6795m.a(this.f6808z, bArr);
-                int i6 = this.f6798p;
-                if ((i6 == 2 || (i6 == 0 && this.f6789A != null)) && a9 != null && a9.length != 0) {
-                    this.f6789A = a9;
+                byte[] a9 = this.f7581m.a(this.f7594z, bArr);
+                int i4 = this.f7584p;
+                if ((i4 == 2 || (i4 == 0 && this.f7575A != null)) && a9 != null && a9.length != 0) {
+                    this.f7575A = a9;
                 }
-                this.f6802t = 4;
-                this.f6800r.a();
+                this.f7588t = 4;
+                this.f7586r.a();
             } catch (Exception e9) {
                 b(e9);
             }
         }
     }
 
-    private void a(boolean z3) {
-        int i6 = this.f6798p;
-        if (i6 != 0 && i6 != 1) {
-            if (i6 != 2) {
-                if (i6 == 3 && k()) {
-                    a(3, z3);
+    private void a(boolean z6) {
+        int i4 = this.f7584p;
+        if (i4 != 0 && i4 != 1) {
+            if (i4 != 2) {
+                if (i4 == 3 && k()) {
+                    a(3, z6);
                     return;
                 }
                 return;
             }
-            if (this.f6789A == null) {
-                a(2, z3);
+            if (this.f7575A == null) {
+                a(2, z6);
                 return;
             } else {
                 if (k()) {
-                    a(2, z3);
+                    a(2, z6);
                     return;
                 }
                 return;
             }
         }
-        if (this.f6789A == null) {
-            a(1, z3);
+        if (this.f7575A == null) {
+            a(1, z6);
             return;
         }
-        if (this.f6802t == 4 || k()) {
+        if (this.f7588t == 4 || k()) {
             long l9 = l();
-            if (this.f6798p == 0 && l9 <= 60) {
+            if (this.f7584p == 0 && l9 <= 60) {
                 Log.d(i, "Offline license has expired or will expire soon. Remaining seconds: ".concat(String.valueOf(l9)));
-                a(2, z3);
+                a(2, z6);
             } else if (l9 <= 0) {
                 c(new m());
             } else {
-                this.f6802t = 4;
-                this.f6800r.b();
+                this.f7588t = 4;
+                this.f7586r.b();
             }
         }
     }
 
     private void b(Exception exc) {
         if (exc instanceof NotProvisionedException) {
-            this.f6796n.a(this);
+            this.f7582n.a(this);
         } else {
             c(exc);
         }
     }
 
     public static /* synthetic */ void b(b bVar, Object obj, Object obj2) {
-        if (obj == bVar.f6790B && bVar.n()) {
-            bVar.f6790B = null;
+        if (obj == bVar.f7576B && bVar.n()) {
+            bVar.f7576B = null;
             if (obj2 instanceof Exception) {
                 bVar.b((Exception) obj2);
                 return;
             }
             try {
                 byte[] bArr = (byte[]) obj2;
-                if (bVar.f6798p == 3) {
-                    bVar.f6795m.a(bVar.f6789A, bArr);
-                    bVar.f6800r.c();
+                if (bVar.f7584p == 3) {
+                    bVar.f7581m.a(bVar.f7575A, bArr);
+                    bVar.f7586r.c();
                     return;
                 }
-                byte[] a9 = bVar.f6795m.a(bVar.f6808z, bArr);
-                int i6 = bVar.f6798p;
-                if ((i6 == 2 || (i6 == 0 && bVar.f6789A != null)) && a9 != null && a9.length != 0) {
-                    bVar.f6789A = a9;
+                byte[] a9 = bVar.f7581m.a(bVar.f7594z, bArr);
+                int i4 = bVar.f7584p;
+                if ((i4 == 2 || (i4 == 0 && bVar.f7575A != null)) && a9 != null && a9.length != 0) {
+                    bVar.f7575A = a9;
                 }
-                bVar.f6802t = 4;
-                bVar.f6800r.a();
+                bVar.f7588t = 4;
+                bVar.f7586r.a();
             } catch (Exception e9) {
                 bVar.b(e9);
             }
         }
     }
 
-    private void a(int i6, boolean z3) {
+    private void a(int i4, boolean z6) {
         String str;
         byte[] bArr;
         String str2;
-        byte[] bArr2 = i6 == 3 ? this.f6789A : this.f6808z;
-        e.a aVar = this.f6797o;
+        byte[] bArr2 = i4 == 3 ? this.f7575A : this.f7594z;
+        e.a aVar = this.f7583o;
         if (aVar != null) {
-            byte[] bArr3 = aVar.f6850c;
-            String str3 = aVar.f6849b;
-            str = aVar.f6848a;
+            byte[] bArr3 = aVar.f7636c;
+            String str3 = aVar.f7635b;
+            str = aVar.f7634a;
             str2 = str3;
             bArr = bArr3;
         } else {
@@ -495,27 +495,27 @@ final class b<T extends i> implements f<T> {
             str2 = null;
         }
         try {
-            Pair create = Pair.create(this.f6795m.a(bArr2, bArr, str2, i6, this.f6799q), str);
-            this.f6790B = create;
-            this.f6805w.a(1, create, z3);
+            Pair create = Pair.create(this.f7581m.a(bArr2, bArr, str2, i4, this.f7585q), str);
+            this.f7576B = create;
+            this.f7591w.a(1, create, z6);
         } catch (Exception e9) {
             b(e9);
         }
     }
 
     public static /* synthetic */ void a(b bVar, Object obj, Object obj2) {
-        if (obj == bVar.f6791C) {
-            if (bVar.f6802t == 2 || bVar.n()) {
-                bVar.f6791C = null;
+        if (obj == bVar.f7577C) {
+            if (bVar.f7588t == 2 || bVar.n()) {
+                bVar.f7577C = null;
                 if (obj2 instanceof Exception) {
-                    bVar.f6796n.a((Exception) obj2);
+                    bVar.f7582n.a((Exception) obj2);
                     return;
                 }
                 try {
-                    bVar.f6795m.b((byte[]) obj2);
-                    bVar.f6796n.a();
+                    bVar.f7581m.b((byte[]) obj2);
+                    bVar.f7582n.a();
                 } catch (Exception e9) {
-                    bVar.f6796n.a(e9);
+                    bVar.f7582n.a(e9);
                 }
             }
         }

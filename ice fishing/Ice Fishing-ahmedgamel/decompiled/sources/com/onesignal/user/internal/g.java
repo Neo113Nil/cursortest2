@@ -1,9 +1,9 @@
 package com.onesignal.user.internal;
 
-import b6.InterfaceC0520b;
+import b6.InterfaceC0528b;
 
 /* loaded from: classes2.dex */
-public class g extends i implements InterfaceC0520b {
+public class g extends i implements InterfaceC0528b {
     private final com.onesignal.common.events.b changeHandlersNotifier;
     private b6.g savedState;
 
@@ -19,7 +19,7 @@ public class g extends i implements InterfaceC0520b {
         return new b6.g(getId(), getToken(), getOptedIn());
     }
 
-    @Override // b6.InterfaceC0520b
+    @Override // b6.InterfaceC0528b
     public void addObserver(b6.c observer) {
         kotlin.jvm.internal.h.e(observer, "observer");
         this.changeHandlersNotifier.subscribe(observer);
@@ -29,7 +29,7 @@ public class g extends i implements InterfaceC0520b {
         return this.changeHandlersNotifier;
     }
 
-    @Override // b6.InterfaceC0520b
+    @Override // b6.InterfaceC0528b
     public boolean getOptedIn() {
         return getModel().getOptedIn() && getModel().getStatus() != Z5.f.NO_PERMISSION;
     }
@@ -38,17 +38,17 @@ public class g extends i implements InterfaceC0520b {
         return this.savedState;
     }
 
-    @Override // b6.InterfaceC0520b
+    @Override // b6.InterfaceC0528b
     public String getToken() {
         return getModel().getAddress();
     }
 
-    @Override // b6.InterfaceC0520b
+    @Override // b6.InterfaceC0528b
     public void optIn() {
         com.onesignal.common.modeling.i.setBooleanProperty$default(getModel(), "optedIn", true, null, true, 4, null);
     }
 
-    @Override // b6.InterfaceC0520b
+    @Override // b6.InterfaceC0528b
     public void optOut() {
         getModel().setOptedIn(false);
     }
@@ -59,7 +59,7 @@ public class g extends i implements InterfaceC0520b {
         return fetchState;
     }
 
-    @Override // b6.InterfaceC0520b
+    @Override // b6.InterfaceC0528b
     public void removeObserver(b6.c observer) {
         kotlin.jvm.internal.h.e(observer, "observer");
         this.changeHandlersNotifier.unsubscribe(observer);

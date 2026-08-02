@@ -4,5 +4,5 @@ package com.google.android.gms.internal.ads;
 public final class FN {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final FN f24796a = new FN();
+    public static final FN f25552a = new FN();
 }

@@ -7,6 +7,6 @@ import android.view.accessibility.AccessibilityNodeInfo;
 public final class m extends l {
     @Override // android.view.accessibility.AccessibilityNodeProvider
     public final void addExtraDataToAccessibilityNodeInfo(int i, AccessibilityNodeInfo accessibilityNodeInfo, String str, Bundle bundle) {
-        this.f2411a.getClass();
+        this.f2342a.getClass();
     }
 }

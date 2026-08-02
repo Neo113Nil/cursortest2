@@ -20,5 +20,5 @@ public interface TB {
 
     void ACn();
 
-    void ADI(C1836ge c1836ge);
+    void ADI(C1856ge c1856ge);
 }

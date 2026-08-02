@@ -1,6 +1,6 @@
 package d8;
 
-import b8.InterfaceC0529a;
+import b8.InterfaceC0537a;
 import c8.e;
 import e8.L;
 
@@ -10,7 +10,7 @@ public interface a {
 
     int f(L l9, int i);
 
-    Object i(e eVar, int i, InterfaceC0529a interfaceC0529a, Object obj);
+    Object i(e eVar, int i, InterfaceC0537a interfaceC0537a, Object obj);
 
     void k(e eVar);
 

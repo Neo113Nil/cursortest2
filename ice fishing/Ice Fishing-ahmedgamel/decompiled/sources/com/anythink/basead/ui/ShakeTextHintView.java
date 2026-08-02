@@ -16,7 +16,7 @@ import com.anythink.core.common.v.q;
 public class ShakeTextHintView extends BaseShakeView {
 
     /* renamed from: l, reason: collision with root package name */
-    protected TextView f10272l;
+    protected TextView f11058l;
 
     public ShakeTextHintView(Context context) {
         super(context);
@@ -31,8 +31,8 @@ public class ShakeTextHintView extends BaseShakeView {
         setPadding(a9, a9, a9, a9);
         int a10 = q.a(t.b().g(), "myoffer_shake_text_hint_img", "id");
         int a11 = q.a(t.b().g(), "myoffer_shake_text_hint_title", "id");
-        this.f9905a = (ImageView) findViewById(a10);
-        this.f10272l = (TextView) findViewById(a11);
+        this.f10691a = (ImageView) findViewById(a10);
+        this.f11058l = (TextView) findViewById(a11);
     }
 
     public int d() {
@@ -42,11 +42,11 @@ public class ShakeTextHintView extends BaseShakeView {
     @Override // com.anythink.basead.ui.BaseShakeView
     public void setShakeSetting(y yVar, int i) {
         super.setShakeSetting(yVar, i);
-        if (this.f10272l != null) {
-            if (TextUtils.isEmpty(this.f9910f)) {
-                this.f10272l.setText(e.a(getContext(), i));
+        if (this.f11058l != null) {
+            if (TextUtils.isEmpty(this.f10696f)) {
+                this.f11058l.setText(e.a(getContext(), i));
             } else {
-                this.f10272l.setText(this.f9910f);
+                this.f11058l.setText(this.f10696f);
             }
         }
     }
@@ -59,7 +59,7 @@ public class ShakeTextHintView extends BaseShakeView {
         super(context, attributeSet, i);
     }
 
-    public ShakeTextHintView(Context context, AttributeSet attributeSet, int i, int i6) {
-        super(context, attributeSet, i, i6);
+    public ShakeTextHintView(Context context, AttributeSet attributeSet, int i, int i4) {
+        super(context, attributeSet, i, i4);
     }
 }

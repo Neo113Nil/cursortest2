@@ -4,7 +4,7 @@ package F7;
 public abstract class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Integer f994a;
+    public static final Integer f1020a;
 
     static {
         Integer num;
@@ -19,12 +19,12 @@ public abstract class a {
             if (num != null && num.intValue() > 0) {
                 num2 = num;
             }
-            f994a = num2;
+            f1020a = num2;
         }
         num = null;
         if (num != null) {
             num2 = num;
         }
-        f994a = num2;
+        f1020a = num2;
     }
 }

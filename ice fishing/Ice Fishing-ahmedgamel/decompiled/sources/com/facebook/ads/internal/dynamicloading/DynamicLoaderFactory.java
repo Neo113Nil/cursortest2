@@ -1,16 +1,17 @@
 package com.facebook.ads.internal.dynamicloading;
 
-import B1.F;
+import D1.E;
 import android.content.Context;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
-import com.anythink.core.common.n.b.A;
+import com.anythink.core.common.n.b.B;
 import com.facebook.ads.AudienceNetworkAds;
 import com.facebook.ads.BuildConfig;
 import com.facebook.ads.internal.settings.MultithreadedBundleWrapper;
 import com.facebook.ads.internal.util.common.Preconditions;
+import com.google.android.gms.internal.ads.Wv;
 import dalvik.system.DexClassLoader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -20,8 +21,7 @@ import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
-import u.AbstractC5049e;
-import u1.h;
+import u.AbstractC5050e;
 
 /* loaded from: classes.dex */
 public class DynamicLoaderFactory {
@@ -83,12 +83,12 @@ public class DynamicLoaderFactory {
             byteArrayOutputStream.close();
             byteBufferArr[i] = ByteBuffer.wrap(byteArrayOutputStream.toByteArray());
         }
-        A.w();
-        return F.c(byteBufferArr, DynamicLoaderFactory.class.getClassLoader());
+        B.w();
+        return E.c(byteBufferArr, DynamicLoaderFactory.class.getClassLoader());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static void doCallInitialize(Context context, DynamicLoader dynamicLoader, Throwable th, boolean z3, MultithreadedBundleWrapper multithreadedBundleWrapper, AudienceNetworkAds.InitListener initListener) {
+    public static void doCallInitialize(Context context, DynamicLoader dynamicLoader, Throwable th, boolean z6, MultithreadedBundleWrapper multithreadedBundleWrapper, AudienceNetworkAds.InitListener initListener) {
         if (th != null) {
             if (initListener != null) {
                 new Handler(Looper.getMainLooper()).postDelayed(new c(initListener, th), 100L);
@@ -99,7 +99,7 @@ public class DynamicLoaderFactory {
             }
         }
         if (dynamicLoader != null) {
-            if (z3) {
+            if (z6) {
                 dynamicLoader.createAudienceNetworkAdsApi().onContentProviderCreated(context);
             } else {
                 dynamicLoader.createAudienceNetworkAdsApi().initialize(context, multithreadedBundleWrapper, initListener);
@@ -108,7 +108,7 @@ public class DynamicLoaderFactory {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static DynamicLoader doMakeLoader(Context context, boolean z3) {
+    public static DynamicLoader doMakeLoader(Context context, boolean z6) {
         DynamicLoader dynamicLoader;
         AtomicReference<DynamicLoader> atomicReference = sDynamicLoader;
         DynamicLoader dynamicLoader2 = atomicReference.get();
@@ -122,7 +122,7 @@ public class DynamicLoaderFactory {
         } else {
             dynamicLoader = (DynamicLoader) Class.forName("com.facebook.ads.internal.dynamicloading.DynamicLoaderImpl").newInstance();
         }
-        if (z3) {
+        if (z6) {
             dynamicLoader.maybeInitInternally(context);
         }
         atomicReference.set(dynamicLoader);
@@ -164,18 +164,18 @@ public class DynamicLoaderFactory {
         return file2;
     }
 
-    public static void initialize(Context context, MultithreadedBundleWrapper multithreadedBundleWrapper, AudienceNetworkAds.InitListener initListener, boolean z3) {
-        if (z3 || !sInitializing.getAndSet(true)) {
-            new Thread(new b(context, multithreadedBundleWrapper, initListener, z3)).start();
+    public static void initialize(Context context, MultithreadedBundleWrapper multithreadedBundleWrapper, AudienceNetworkAds.InitListener initListener, boolean z6) {
+        if (z6 || !sInitializing.getAndSet(true)) {
+            new Thread(new b(context, multithreadedBundleWrapper, initListener, z6)).start();
         }
     }
 
     public static synchronized boolean isFallbackMode() {
-        boolean z3;
+        boolean z6;
         synchronized (DynamicLoaderFactory.class) {
-            z3 = sFallbackMode;
+            z6 = sFallbackMode;
         }
-        return z3;
+        return z6;
     }
 
     private static ClassLoader makeAdsSdkClassLoader(Context context) {
@@ -193,9 +193,9 @@ public class DynamicLoaderFactory {
         String[] strArr = new String[length];
         for (int i = 0; i < list.length; i++) {
             String str = list[i];
-            StringBuilder b9 = AbstractC5049e.b(path);
+            StringBuilder b9 = AbstractC5050e.b(path);
             String str2 = File.separator;
-            strArr[i] = h.g(b9, str2, str);
+            strArr[i] = Wv.i(b9, str2, str);
             InputStream open = context.getAssets().open("audience_network" + str2 + str);
             FileOutputStream fileOutputStream = new FileOutputStream(strArr[i]);
             byte[] bArr = new byte[1024];
@@ -216,9 +216,9 @@ public class DynamicLoaderFactory {
         StringBuilder sb = new StringBuilder();
         if (length > 0) {
             sb.append((CharSequence) strArr[0]);
-            for (int i6 = 1; i6 < length; i6++) {
+            for (int i4 = 1; i4 < length; i4++) {
                 sb.append((CharSequence) str3);
-                sb.append((CharSequence) strArr[i6]);
+                sb.append((CharSequence) strArr[i4]);
             }
         }
         return new DexClassLoader(sb.toString(), context.getDir(OPTIMIZED_DEX_PATH, 0).getPath(), null, DynamicLoaderFactory.class.getClassLoader());
@@ -262,10 +262,10 @@ public class DynamicLoaderFactory {
         throw new IOException("Failed to create directory " + file.getPath() + ", detailed message: " + str);
     }
 
-    public static synchronized void setFallbackMode(boolean z3) {
+    public static synchronized void setFallbackMode(boolean z6) {
         synchronized (DynamicLoaderFactory.class) {
             try {
-                if (z3) {
+                if (z6) {
                     sDynamicLoader.set(DynamicLoaderFallback.makeFallbackLoader());
                     sFallbackMode = true;
                 } else {
@@ -282,12 +282,12 @@ public class DynamicLoaderFactory {
         return Log.getStackTraceString(th);
     }
 
-    public static synchronized DynamicLoader makeLoader(Context context, boolean z3) {
+    public static synchronized DynamicLoader makeLoader(Context context, boolean z6) {
         DynamicLoader doMakeLoader;
         synchronized (DynamicLoaderFactory.class) {
             Preconditions.checkNotNull(context, "Context can not be null.");
             try {
-                doMakeLoader = doMakeLoader(context, z3);
+                doMakeLoader = doMakeLoader(context, z6);
             } catch (Throwable th) {
                 Log.e(AudienceNetworkAds.TAG, DEX_LOADING_ERROR_MESSAGE, th);
                 DexLoadErrorReporter.reportDexLoadingIssue(context, createErrorMessage(th), 0.1d);

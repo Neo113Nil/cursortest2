@@ -11,28 +11,28 @@ import java.util.List;
 public class b implements com.anythink.basead.j.b {
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f9125a = "b";
+    private final String f9911a = "b";
 
     /* renamed from: b, reason: collision with root package name */
-    private AdSession f9126b;
+    private AdSession f9912b;
 
     /* renamed from: c, reason: collision with root package name */
-    private AdEvents f9127c;
+    private AdEvents f9913c;
 
     /* renamed from: d, reason: collision with root package name */
-    private MediaEvents f9128d;
+    private MediaEvents f9914d;
 
-    public b(AdSession adSession, boolean z3) {
-        this.f9126b = adSession;
-        this.f9127c = AdEvents.createAdEvents(adSession);
-        if (z3) {
-            this.f9128d = MediaEvents.createMediaEvents(this.f9126b);
+    public b(AdSession adSession, boolean z6) {
+        this.f9912b = adSession;
+        this.f9913c = AdEvents.createAdEvents(adSession);
+        if (z6) {
+            this.f9914d = MediaEvents.createMediaEvents(this.f9912b);
         }
     }
 
     @Override // com.anythink.basead.j.b
     public final void a(View view) {
-        AdSession adSession = this.f9126b;
+        AdSession adSession = this.f9912b;
         if (adSession == null || view == null) {
             return;
         }
@@ -41,7 +41,7 @@ public class b implements com.anythink.basead.j.b {
 
     @Override // com.anythink.basead.j.b
     public final void b() {
-        AdSession adSession = this.f9126b;
+        AdSession adSession = this.f9912b;
         if (adSession != null) {
             adSession.finish();
         }
@@ -50,7 +50,7 @@ public class b implements com.anythink.basead.j.b {
     @Override // com.anythink.basead.j.b
     public final com.anythink.basead.j.a c() {
         AdEvents adEvents;
-        if (this.f9126b == null || (adEvents = this.f9127c) == null) {
+        if (this.f9912b == null || (adEvents = this.f9913c) == null) {
             return null;
         }
         return new a(adEvents);
@@ -59,7 +59,7 @@ public class b implements com.anythink.basead.j.b {
     @Override // com.anythink.basead.j.b
     public final com.anythink.basead.j.d d() {
         MediaEvents mediaEvents;
-        if (this.f9126b == null || (mediaEvents = this.f9128d) == null) {
+        if (this.f9912b == null || (mediaEvents = this.f9914d) == null) {
             return null;
         }
         return new d(mediaEvents);
@@ -67,7 +67,7 @@ public class b implements com.anythink.basead.j.b {
 
     @Override // com.anythink.basead.j.b
     public final void a() {
-        AdSession adSession = this.f9126b;
+        AdSession adSession = this.f9912b;
         if (adSession != null) {
             adSession.start();
         }
@@ -75,7 +75,7 @@ public class b implements com.anythink.basead.j.b {
 
     @Override // com.anythink.basead.j.b
     public final void b(View view) {
-        AdSession adSession = this.f9126b;
+        AdSession adSession = this.f9912b;
         if (adSession == null || view == null) {
             return;
         }
@@ -85,11 +85,11 @@ public class b implements com.anythink.basead.j.b {
     @Override // com.anythink.basead.j.b
     public final void a(List<View> list) {
         list.size();
-        if (this.f9126b == null || list.isEmpty()) {
+        if (this.f9912b == null || list.isEmpty()) {
             return;
         }
         for (int i = 0; i < list.size(); i++) {
-            this.f9126b.addFriendlyObstruction(list.get(i), FriendlyObstructionPurpose.OTHER, null);
+            this.f9912b.addFriendlyObstruction(list.get(i), FriendlyObstructionPurpose.OTHER, null);
         }
     }
 }

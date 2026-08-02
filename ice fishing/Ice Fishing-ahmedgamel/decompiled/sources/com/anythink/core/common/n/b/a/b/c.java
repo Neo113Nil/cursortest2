@@ -16,56 +16,56 @@ import java.net.ProtocolException;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    final j f14952a;
+    final j f15739a;
 
     /* renamed from: b, reason: collision with root package name */
-    final com.anythink.core.common.n.b.e f14953b;
+    final com.anythink.core.common.n.b.e f15740b;
 
     /* renamed from: c, reason: collision with root package name */
-    final r f14954c;
+    final r f15741c;
 
     /* renamed from: d, reason: collision with root package name */
-    final d f14955d;
+    final d f15742d;
 
     /* renamed from: e, reason: collision with root package name */
-    final com.anythink.core.common.n.b.a.c.c f14956e;
+    final com.anythink.core.common.n.b.a.c.c f15743e;
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f14957f;
+    private boolean f15744f;
 
     public final class b extends com.anythink.core.common.n.c.i {
 
         /* renamed from: b, reason: collision with root package name */
-        private final long f14964b;
+        private final long f15751b;
 
         /* renamed from: c, reason: collision with root package name */
-        private long f14965c;
+        private long f15752c;
 
         /* renamed from: d, reason: collision with root package name */
-        private boolean f14966d;
+        private boolean f15753d;
 
         /* renamed from: e, reason: collision with root package name */
-        private boolean f14967e;
+        private boolean f15754e;
 
         public b(w wVar, long j6) {
             super(wVar);
-            this.f14964b = j6;
+            this.f15751b = j6;
             if (j6 == 0) {
                 a(null);
             }
         }
 
         private IOException a(IOException iOException) {
-            if (this.f14966d) {
+            if (this.f15753d) {
                 return iOException;
             }
-            this.f14966d = true;
+            this.f15753d = true;
             return c.this.a(true, false, iOException);
         }
 
         @Override // com.anythink.core.common.n.c.i, com.anythink.core.common.n.c.w
         public final long a_(com.anythink.core.common.n.c.c cVar, long j6) {
-            if (this.f14967e) {
+            if (this.f15754e) {
                 throw new IllegalStateException("closed");
             }
             try {
@@ -74,12 +74,12 @@ public final class c {
                     a(null);
                     return -1L;
                 }
-                long j9 = this.f14965c + a_;
-                long j10 = this.f14964b;
+                long j9 = this.f15752c + a_;
+                long j10 = this.f15751b;
                 if (j10 != -1 && j9 > j10) {
-                    throw new ProtocolException("expected " + this.f14964b + " bytes but received " + j9);
+                    throw new ProtocolException("expected " + this.f15751b + " bytes but received " + j9);
                 }
-                this.f14965c = j9;
+                this.f15752c = j9;
                 if (j9 == j10) {
                     a(null);
                 }
@@ -91,10 +91,10 @@ public final class c {
 
         @Override // com.anythink.core.common.n.c.i, com.anythink.core.common.n.c.w, java.io.Closeable, java.lang.AutoCloseable
         public final void close() {
-            if (this.f14967e) {
+            if (this.f15754e) {
                 return;
             }
-            this.f14967e = true;
+            this.f15754e = true;
             try {
                 super.close();
                 a(null);
@@ -105,11 +105,11 @@ public final class c {
     }
 
     public c(j jVar, com.anythink.core.common.n.b.e eVar, r rVar, d dVar, com.anythink.core.common.n.b.a.c.c cVar) {
-        this.f14952a = jVar;
-        this.f14953b = eVar;
-        this.f14954c = rVar;
-        this.f14955d = dVar;
-        this.f14956e = cVar;
+        this.f15739a = jVar;
+        this.f15740b = eVar;
+        this.f15741c = rVar;
+        this.f15742d = dVar;
+        this.f15743e = cVar;
     }
 
     private static void k() {
@@ -119,24 +119,24 @@ public final class c {
     }
 
     private void m() {
-        this.f14952a.c();
+        this.f15739a.c();
     }
 
     private void n() {
-        this.f14956e.e();
+        this.f15743e.e();
     }
 
     public final e a() {
-        return this.f14956e.a();
+        return this.f15743e.a();
     }
 
     public final boolean b() {
-        return this.f14957f;
+        return this.f15744f;
     }
 
     public final void c() {
         try {
-            this.f14956e.b();
+            this.f15743e.b();
         } catch (IOException e9) {
             a(e9);
             throw e9;
@@ -145,7 +145,7 @@ public final class c {
 
     public final void d() {
         try {
-            this.f14956e.c();
+            this.f15743e.c();
         } catch (IOException e9) {
             a(e9);
             throw e9;
@@ -153,12 +153,12 @@ public final class c {
     }
 
     public final u e() {
-        return this.f14956e.d();
+        return this.f15743e.d();
     }
 
     public final a.e f() {
-        this.f14952a.c();
-        return this.f14956e.a().a(this);
+        this.f15739a.c();
+        return this.f15743e.a().a(this);
     }
 
     public final void g() {
@@ -166,21 +166,21 @@ public final class c {
     }
 
     public final void h() {
-        this.f14956e.a().e();
+        this.f15743e.a().e();
     }
 
     public final void i() {
-        this.f14956e.e();
-        this.f14952a.a(this, true, true, null);
+        this.f15743e.e();
+        this.f15739a.a(this, true, true, null);
     }
 
     public final void j() {
-        this.f14952a.a(this, true, false, null);
+        this.f15739a.a(this, true, false, null);
     }
 
     public final void a(ad adVar) {
         try {
-            this.f14956e.a(adVar);
+            this.f15743e.a(adVar);
         } catch (IOException e9) {
             a(e9);
             throw e9;
@@ -188,18 +188,18 @@ public final class c {
     }
 
     public final v b(ad adVar) {
-        this.f14957f = false;
+        this.f15744f = false;
         long b9 = adVar.d().b();
-        return new a(this.f14956e.a(adVar, b9), b9);
+        return new a(this.f15743e.a(adVar, b9), b9);
     }
 
-    public final af.a a(boolean z3) {
+    public final af.a a(boolean z6) {
         try {
-            af.a a9 = this.f14956e.a(z3);
+            af.a a9 = this.f15743e.a(z6);
             if (a9 == null) {
                 return a9;
             }
-            com.anythink.core.common.n.b.a.a.f14869a.a(a9, this);
+            com.anythink.core.common.n.b.a.a.f15656a.a(a9, this);
             return a9;
         } catch (IOException e9) {
             a(e9);
@@ -210,48 +210,48 @@ public final class c {
     public final class a extends com.anythink.core.common.n.c.h {
 
         /* renamed from: b, reason: collision with root package name */
-        private boolean f14959b;
+        private boolean f15746b;
 
         /* renamed from: c, reason: collision with root package name */
-        private long f14960c;
+        private long f15747c;
 
         /* renamed from: d, reason: collision with root package name */
-        private long f14961d;
+        private long f15748d;
 
         /* renamed from: e, reason: collision with root package name */
-        private boolean f14962e;
+        private boolean f15749e;
 
         public a(v vVar, long j6) {
             super(vVar);
-            this.f14960c = j6;
+            this.f15747c = j6;
         }
 
         @Override // com.anythink.core.common.n.c.h, com.anythink.core.common.n.c.v
         public final void a(com.anythink.core.common.n.c.c cVar, long j6) {
-            if (this.f14962e) {
+            if (this.f15749e) {
                 throw new IllegalStateException("closed");
             }
-            long j9 = this.f14960c;
-            if (j9 == -1 || this.f14961d + j6 <= j9) {
+            long j9 = this.f15747c;
+            if (j9 == -1 || this.f15748d + j6 <= j9) {
                 try {
                     super.a(cVar, j6);
-                    this.f14961d += j6;
+                    this.f15748d += j6;
                     return;
                 } catch (IOException e9) {
                     throw a(e9);
                 }
             }
-            throw new ProtocolException("expected " + this.f14960c + " bytes but received " + (this.f14961d + j6));
+            throw new ProtocolException("expected " + this.f15747c + " bytes but received " + (this.f15748d + j6));
         }
 
         @Override // com.anythink.core.common.n.c.h, com.anythink.core.common.n.c.v, java.io.Closeable, java.lang.AutoCloseable
         public final void close() {
-            if (this.f14962e) {
+            if (this.f15749e) {
                 return;
             }
-            this.f14962e = true;
-            long j6 = this.f14960c;
-            if (j6 != -1 && this.f14961d != j6) {
+            this.f15749e = true;
+            long j6 = this.f15747c;
+            if (j6 != -1 && this.f15748d != j6) {
                 throw new ProtocolException("unexpected end of stream");
             }
             try {
@@ -272,10 +272,10 @@ public final class c {
         }
 
         private IOException a(IOException iOException) {
-            if (this.f14959b) {
+            if (this.f15746b) {
                 return iOException;
             }
-            this.f14959b = true;
+            this.f15746b = true;
             return c.this.a(false, true, iOException);
         }
     }
@@ -283,8 +283,8 @@ public final class c {
     public final ag a(af afVar) {
         try {
             String a9 = afVar.a("Content-Type");
-            long a10 = this.f14956e.a(afVar);
-            return new com.anythink.core.common.n.b.a.c.h(a9, a10, n.a(new b(this.f14956e.b(afVar), a10)));
+            long a10 = this.f15743e.a(afVar);
+            return new com.anythink.core.common.n.b.a.c.h(a9, a10, n.a(new b(this.f15743e.b(afVar), a10)));
         } catch (IOException e9) {
             a(e9);
             throw e9;
@@ -292,14 +292,14 @@ public final class c {
     }
 
     private void a(IOException iOException) {
-        this.f14955d.b();
-        this.f14956e.a().a(iOException);
+        this.f15742d.b();
+        this.f15743e.a().a(iOException);
     }
 
-    public final IOException a(boolean z3, boolean z6, IOException iOException) {
+    public final IOException a(boolean z6, boolean z9, IOException iOException) {
         if (iOException != null) {
             a(iOException);
         }
-        return this.f14952a.a(this, z6, z3, iOException);
+        return this.f15739a.a(this, z9, z6, iOException);
     }
 }

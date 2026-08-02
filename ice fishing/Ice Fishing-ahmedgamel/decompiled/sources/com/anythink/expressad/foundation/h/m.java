@@ -6,7 +6,7 @@ import android.os.SystemClock;
 public final class m {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final int f19646a = 10;
+    private static final int f20433a = 10;
 
     private m() {
     }

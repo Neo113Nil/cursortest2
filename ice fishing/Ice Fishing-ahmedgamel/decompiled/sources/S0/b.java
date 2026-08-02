@@ -1,30 +1,31 @@
 package S0;
 
-import D.y;
+import D.x;
+import a.AbstractC0426a;
 import android.os.Build;
 import androidx.work.impl.WorkDatabase;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.io.ByteArrayOutputStream;
 import java.io.ObjectOutputStream;
 import java.util.Set;
-import u.AbstractC5049e;
-import z0.C5253i;
+import u.AbstractC5050e;
+import z0.C5220i;
 
 /* loaded from: classes.dex */
 public final class b extends s.j {
 
     /* renamed from: d, reason: collision with root package name */
-    public final /* synthetic */ int f2773d;
+    public final /* synthetic */ int f2900d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public /* synthetic */ b(WorkDatabase workDatabase, int i) {
         super(workDatabase);
-        this.f2773d = i;
+        this.f2900d = i;
     }
 
     @Override // s.j
     public final String l() {
-        switch (this.f2773d) {
+        switch (this.f2900d) {
             case 0:
                 return "INSERT OR IGNORE INTO `Dependency` (`work_spec_id`,`prerequisite_id`) VALUES (?,?)";
             case 1:
@@ -42,171 +43,171 @@ public final class b extends s.j {
         }
     }
 
-    public final void p(C5253i c5253i, Object obj) {
+    public final void p(C5220i c5220i, Object obj) {
         int i;
-        int i6;
+        int i4;
         byte[] byteArray;
-        switch (this.f2773d) {
+        switch (this.f2900d) {
             case 0:
                 a aVar = (a) obj;
-                c5253i.c(1, aVar.f2771a);
-                String str = aVar.f2772b;
+                c5220i.c(1, aVar.f2898a);
+                String str = aVar.f2899b;
                 if (str == null) {
-                    c5253i.o(2);
+                    c5220i.o(2);
                     return;
                 } else {
-                    c5253i.c(2, str);
+                    c5220i.c(2, str);
                     return;
                 }
             case 1:
                 d dVar = (d) obj;
-                c5253i.c(1, dVar.f2777a);
-                c5253i.g(2, dVar.f2778b.longValue());
+                c5220i.c(1, dVar.f2904a);
+                c5220i.g(2, dVar.f2905b.longValue());
                 return;
             case 2:
-                String str2 = ((g) obj).f2783a;
+                String str2 = ((g) obj).f2912a;
                 if (str2 == null) {
-                    c5253i.o(1);
+                    c5220i.o(1);
                 } else {
-                    c5253i.c(1, str2);
+                    c5220i.c(1, str2);
                 }
-                c5253i.g(2, r2.f2784b);
-                c5253i.g(3, r2.f2785c);
+                c5220i.g(2, r2.f2913b);
+                c5220i.g(3, r2.f2914c);
                 return;
             case 3:
                 k kVar = (k) obj;
-                String str3 = kVar.f2794a;
+                String str3 = kVar.f2923a;
                 if (str3 == null) {
-                    c5253i.o(1);
+                    c5220i.o(1);
                 } else {
-                    c5253i.c(1, str3);
+                    c5220i.c(1, str3);
                 }
-                c5253i.c(2, kVar.f2795b);
+                c5220i.c(2, kVar.f2924b);
                 return;
             case 4:
                 m mVar = (m) obj;
-                String str4 = mVar.f2799a;
+                String str4 = mVar.f2928a;
                 if (str4 == null) {
-                    c5253i.o(1);
+                    c5220i.o(1);
                 } else {
-                    c5253i.c(1, str4);
+                    c5220i.c(1, str4);
                 }
-                byte[] c9 = J0.h.c(mVar.f2800b);
+                byte[] c9 = J0.g.c(mVar.f2929b);
                 if (c9 == null) {
-                    c5253i.o(2);
+                    c5220i.o(2);
                     return;
                 } else {
-                    c5253i.h(2, c9);
+                    c5220i.h(2, c9);
                     return;
                 }
             case 5:
                 p pVar = (p) obj;
-                String str5 = pVar.f2808a;
-                int i9 = 1;
+                String str5 = pVar.f2937a;
+                int i6 = 1;
                 if (str5 == null) {
-                    c5253i.o(1);
+                    c5220i.o(1);
                 } else {
-                    c5253i.c(1, str5);
+                    c5220i.c(1, str5);
                 }
-                c5253i.g(2, com.bumptech.glide.f.A(pVar.f2809b));
-                String str6 = pVar.f2810c;
+                c5220i.g(2, AbstractC0426a.o(pVar.f2938b));
+                String str6 = pVar.f2939c;
                 if (str6 == null) {
-                    c5253i.o(3);
+                    c5220i.o(3);
                 } else {
-                    c5253i.c(3, str6);
+                    c5220i.c(3, str6);
                 }
-                String str7 = pVar.f2811d;
+                String str7 = pVar.f2940d;
                 if (str7 == null) {
-                    c5253i.o(4);
+                    c5220i.o(4);
                 } else {
-                    c5253i.c(4, str7);
+                    c5220i.c(4, str7);
                 }
-                byte[] c10 = J0.h.c(pVar.f2812e);
+                byte[] c10 = J0.g.c(pVar.f2941e);
                 if (c10 == null) {
-                    c5253i.o(5);
+                    c5220i.o(5);
                 } else {
-                    c5253i.h(5, c10);
+                    c5220i.h(5, c10);
                 }
-                byte[] c11 = J0.h.c(pVar.f2813f);
+                byte[] c11 = J0.g.c(pVar.f2942f);
                 if (c11 == null) {
-                    c5253i.o(6);
+                    c5220i.o(6);
                 } else {
-                    c5253i.h(6, c11);
+                    c5220i.h(6, c11);
                 }
-                c5253i.g(7, pVar.f2814g);
-                c5253i.g(8, pVar.f2815h);
-                c5253i.g(9, pVar.i);
-                c5253i.g(10, pVar.f2817k);
-                int i10 = pVar.f2818l;
-                AbstractC4404f.l(i10, "backoffPolicy");
-                int d2 = AbstractC5049e.d(i10);
-                if (d2 == 0) {
-                    i = 0;
-                } else {
-                    if (d2 != 1) {
-                        throw new B0.c();
-                    }
-                    i = 1;
-                }
-                c5253i.g(11, i);
-                c5253i.g(12, pVar.f2819m);
-                c5253i.g(13, pVar.f2820n);
-                c5253i.g(14, pVar.f2821o);
-                c5253i.g(15, pVar.f2822p);
-                c5253i.g(16, pVar.f2823q ? 1L : 0L);
-                int i11 = pVar.f2824r;
-                AbstractC4404f.l(i11, "policy");
-                int d9 = AbstractC5049e.d(i11);
+                c5220i.g(7, pVar.f2943g);
+                c5220i.g(8, pVar.f2944h);
+                c5220i.g(9, pVar.i);
+                c5220i.g(10, pVar.f2946k);
+                int i9 = pVar.f2947l;
+                Wv.n(i9, "backoffPolicy");
+                int d9 = AbstractC5050e.d(i9);
                 if (d9 == 0) {
-                    i6 = 0;
+                    i = 0;
                 } else {
                     if (d9 != 1) {
                         throw new B0.c();
                     }
-                    i6 = 1;
+                    i = 1;
                 }
-                c5253i.g(17, i6);
-                c5253i.g(18, pVar.f2825s);
-                c5253i.g(19, pVar.f2826t);
-                J0.d dVar2 = pVar.f2816j;
+                c5220i.g(11, i);
+                c5220i.g(12, pVar.f2948m);
+                c5220i.g(13, pVar.f2949n);
+                c5220i.g(14, pVar.f2950o);
+                c5220i.g(15, pVar.f2951p);
+                c5220i.g(16, pVar.f2952q ? 1L : 0L);
+                int i10 = pVar.f2953r;
+                Wv.n(i10, "policy");
+                int d10 = AbstractC5050e.d(i10);
+                if (d10 == 0) {
+                    i4 = 0;
+                } else {
+                    if (d10 != 1) {
+                        throw new B0.c();
+                    }
+                    i4 = 1;
+                }
+                c5220i.g(17, i4);
+                c5220i.g(18, pVar.f2954s);
+                c5220i.g(19, pVar.f2955t);
+                J0.d dVar2 = pVar.f2945j;
                 if (dVar2 == null) {
-                    c5253i.o(20);
-                    c5253i.o(21);
-                    c5253i.o(22);
-                    c5253i.o(23);
-                    c5253i.o(24);
-                    c5253i.o(25);
-                    c5253i.o(26);
-                    c5253i.o(27);
+                    c5220i.o(20);
+                    c5220i.o(21);
+                    c5220i.o(22);
+                    c5220i.o(23);
+                    c5220i.o(24);
+                    c5220i.o(25);
+                    c5220i.o(26);
+                    c5220i.o(27);
                     return;
                 }
-                int i12 = dVar2.f1374a;
-                AbstractC4404f.l(i12, "networkType");
-                int d10 = AbstractC5049e.d(i12);
-                if (d10 == 0) {
-                    i9 = 0;
-                } else if (d10 != 1) {
-                    if (d10 == 2) {
-                        i9 = 2;
-                    } else if (d10 == 3) {
-                        i9 = 3;
-                    } else if (d10 == 4) {
-                        i9 = 4;
+                int i11 = dVar2.f1403a;
+                Wv.n(i11, "networkType");
+                int d11 = AbstractC5050e.d(i11);
+                if (d11 == 0) {
+                    i6 = 0;
+                } else if (d11 != 1) {
+                    if (d11 == 2) {
+                        i6 = 2;
+                    } else if (d11 == 3) {
+                        i6 = 3;
+                    } else if (d11 == 4) {
+                        i6 = 4;
                     } else {
-                        if (Build.VERSION.SDK_INT < 30 || i12 != 6) {
-                            throw new IllegalArgumentException("Could not convert " + y.y(i12) + " to int");
+                        if (Build.VERSION.SDK_INT < 30 || i11 != 6) {
+                            throw new IllegalArgumentException("Could not convert " + x.y(i11) + " to int");
                         }
-                        i9 = 5;
+                        i6 = 5;
                     }
                 }
-                c5253i.g(20, i9);
-                c5253i.g(21, dVar2.f1375b ? 1L : 0L);
-                c5253i.g(22, dVar2.f1376c ? 1L : 0L);
-                c5253i.g(23, dVar2.f1377d ? 1L : 0L);
-                c5253i.g(24, dVar2.f1378e ? 1L : 0L);
-                c5253i.g(25, dVar2.f1379f);
-                c5253i.g(26, dVar2.f1380g);
-                Set<J0.c> triggers = dVar2.f1381h;
+                c5220i.g(20, i6);
+                c5220i.g(21, dVar2.f1404b ? 1L : 0L);
+                c5220i.g(22, dVar2.f1405c ? 1L : 0L);
+                c5220i.g(23, dVar2.f1406d ? 1L : 0L);
+                c5220i.g(24, dVar2.f1407e ? 1L : 0L);
+                c5220i.g(25, dVar2.f1408f);
+                c5220i.g(26, dVar2.f1409g);
+                Set<J0.c> triggers = dVar2.f1410h;
                 kotlin.jvm.internal.h.e(triggers, "triggers");
                 if (triggers.isEmpty()) {
                     byteArray = new byte[0];
@@ -217,8 +218,8 @@ public final class b extends s.j {
                         try {
                             objectOutputStream.writeInt(triggers.size());
                             for (J0.c cVar : triggers) {
-                                objectOutputStream.writeUTF(cVar.f1372a.toString());
-                                objectOutputStream.writeBoolean(cVar.f1373b);
+                                objectOutputStream.writeUTF(cVar.f1401a.toString());
+                                objectOutputStream.writeBoolean(cVar.f1402b);
                             }
                             objectOutputStream.close();
                             byteArrayOutputStream.close();
@@ -230,31 +231,31 @@ public final class b extends s.j {
                         try {
                             throw th;
                         } catch (Throwable th2) {
-                            com.bumptech.glide.d.c(byteArrayOutputStream, th);
+                            com.bumptech.glide.d.h(byteArrayOutputStream, th);
                             throw th2;
                         }
                     }
                 }
-                c5253i.h(27, byteArray);
+                c5220i.h(27, byteArray);
                 return;
             default:
                 r rVar = (r) obj;
-                String str8 = rVar.f2837a;
+                String str8 = rVar.f2966a;
                 if (str8 == null) {
-                    c5253i.o(1);
+                    c5220i.o(1);
                 } else {
-                    c5253i.c(1, str8);
+                    c5220i.c(1, str8);
                 }
-                c5253i.c(2, rVar.f2838b);
+                c5220i.c(2, rVar.f2967b);
                 return;
         }
     }
 
     public final void q(Object obj) {
-        C5253i a9 = a();
+        C5220i a9 = a();
         try {
             p(a9, obj);
-            a9.f42249u.executeInsert();
+            a9.f42220u.executeInsert();
         } finally {
             n(a9);
         }

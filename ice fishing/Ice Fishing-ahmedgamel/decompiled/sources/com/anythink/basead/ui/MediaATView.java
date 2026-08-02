@@ -33,31 +33,31 @@ public class MediaATView extends BaseMediaATView implements a {
     public static final String TAG = "anythink_MediaATView";
 
     /* renamed from: j, reason: collision with root package name */
-    protected TextView f10093j;
+    protected TextView f10879j;
 
     /* renamed from: k, reason: collision with root package name */
-    protected TextView f10094k;
+    protected TextView f10880k;
 
     /* renamed from: l, reason: collision with root package name */
-    protected ImageView f10095l;
+    protected ImageView f10881l;
 
     /* renamed from: m, reason: collision with root package name */
-    protected ImageView f10096m;
+    protected ImageView f10882m;
 
     /* renamed from: n, reason: collision with root package name */
-    protected RoundImageView f10097n;
+    protected RoundImageView f10883n;
 
     /* renamed from: o, reason: collision with root package name */
-    protected TextView f10098o;
+    protected TextView f10884o;
 
     /* renamed from: p, reason: collision with root package name */
-    protected ImageView f10099p;
+    protected ImageView f10885p;
 
     /* renamed from: q, reason: collision with root package name */
-    RelativeLayout f10100q;
+    RelativeLayout f10886q;
 
     /* renamed from: r, reason: collision with root package name */
-    private SimplePlayerMediaView f10101r;
+    private SimplePlayerMediaView f10887r;
 
     /* renamed from: com.anythink.basead.ui.MediaATView$2, reason: invalid class name */
     public class AnonymousClass2 implements b.a {
@@ -71,9 +71,9 @@ public class MediaATView extends BaseMediaATView implements a {
 
         @Override // com.anythink.core.common.res.b.a
         public final void onSuccess(String str, final Bitmap bitmap) {
-            if (TextUtils.equals(MediaATView.this.f9826a.B(), str)) {
-                MediaATView.this.f10096m.setVisibility(0);
-                MediaATView.this.f10096m.setImageBitmap(bitmap);
+            if (TextUtils.equals(MediaATView.this.f10612a.B(), str)) {
+                MediaATView.this.f10882m.setVisibility(0);
+                MediaATView.this.f10882m.setImageBitmap(bitmap);
                 MediaATView.this.post(new Runnable() { // from class: com.anythink.basead.ui.MediaATView.2.1
                     @Override // java.lang.Runnable
                     public final void run() {
@@ -83,12 +83,12 @@ public class MediaATView extends BaseMediaATView implements a {
                             return;
                         }
                         int[] a9 = am.a(width, height, bitmap.getWidth() / bitmap.getHeight());
-                        RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) MediaATView.this.f10096m.getLayoutParams();
+                        RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) MediaATView.this.f10882m.getLayoutParams();
                         if (layoutParams != null) {
                             layoutParams.width = a9[0];
                             layoutParams.height = a9[1];
                             layoutParams.addRule(13);
-                            MediaATView.this.f10096m.setLayoutParams(layoutParams);
+                            MediaATView.this.f10882m.setLayoutParams(layoutParams);
                         }
                     }
                 });
@@ -99,21 +99,21 @@ public class MediaATView extends BaseMediaATView implements a {
 
                     @Override // com.anythink.core.common.v.h.a
                     public final void a(Bitmap bitmap2) {
-                        MediaATView.this.f10095l.setVisibility(0);
-                        MediaATView.this.f10095l.setScaleType(ImageView.ScaleType.FIT_XY);
-                        MediaATView.this.f10095l.setImageBitmap(bitmap2);
+                        MediaATView.this.f10881l.setVisibility(0);
+                        MediaATView.this.f10881l.setScaleType(ImageView.ScaleType.FIT_XY);
+                        MediaATView.this.f10881l.setImageBitmap(bitmap2);
                     }
                 });
             }
         }
     }
 
-    public MediaATView(Context context, w wVar, x xVar, boolean z3, BaseMediaATView.a aVar) {
-        super(context, wVar, xVar, z3, aVar);
+    public MediaATView(Context context, w wVar, x xVar, boolean z6, BaseMediaATView.a aVar) {
+        super(context, wVar, xVar, z6, aVar);
     }
 
     private String b() {
-        int i = this.f9833h;
+        int i = this.f10619h;
         return i != 1 ? i != 2 ? i != 3 ? i != 4 ? i != 5 ? "myoffer_media_ad_view" : "myoffer_template_text_float" : "myoffer_template_top_text" : "myoffer_template_top_image" : "myoffer_template_left_text" : "myoffer_template_left_image";
     }
 
@@ -121,7 +121,7 @@ public class MediaATView extends BaseMediaATView implements a {
         FrameLayout frameLayout;
         TextView textView;
         if (a()) {
-            int i = this.f9833h;
+            int i = this.f10619h;
             if (i == 3 || i == 4 || i == 5) {
                 ViewGroup viewGroup = (ViewGroup) findViewById(q.a(getContext(), "myoffer_title_desc", "id"));
                 if (viewGroup != null) {
@@ -131,32 +131,32 @@ public class MediaATView extends BaseMediaATView implements a {
                         viewGroup.setLayoutParams(layoutParams);
                     }
                 }
-            } else if ((i == 1 || i == 2) && (textView = this.f10093j) != null) {
+            } else if ((i == 1 || i == 2) && (textView = this.f10879j) != null) {
                 ViewGroup.LayoutParams layoutParams2 = textView.getLayoutParams();
                 if (layoutParams2 instanceof LinearLayout.LayoutParams) {
                     ((LinearLayout.LayoutParams) layoutParams2).leftMargin = 0;
-                    this.f10093j.setLayoutParams(layoutParams2);
+                    this.f10879j.setLayoutParams(layoutParams2);
                 }
             }
         }
-        if (TextUtils.isEmpty(this.f9826a.x()) && this.f9833h == 6) {
-            ViewGroup.LayoutParams layoutParams3 = this.f10098o.getLayoutParams();
+        if (TextUtils.isEmpty(this.f10612a.x()) && this.f10619h == 6) {
+            ViewGroup.LayoutParams layoutParams3 = this.f10884o.getLayoutParams();
             if (layoutParams3 instanceof LinearLayout.LayoutParams) {
                 ((LinearLayout.LayoutParams) layoutParams3).topMargin = 0;
-                this.f10098o.setLayoutParams(layoutParams3);
+                this.f10884o.setLayoutParams(layoutParams3);
             }
         }
-        if (TextUtils.isEmpty(this.f9826a.y())) {
-            int i6 = this.f9833h;
-            if (i6 == 2 || i6 == 1) {
-                ViewGroup.LayoutParams layoutParams4 = this.f10094k.getLayoutParams();
+        if (TextUtils.isEmpty(this.f10612a.y())) {
+            int i4 = this.f10619h;
+            if (i4 == 2 || i4 == 1) {
+                ViewGroup.LayoutParams layoutParams4 = this.f10880k.getLayoutParams();
                 if (layoutParams4 instanceof RelativeLayout.LayoutParams) {
                     RelativeLayout.LayoutParams layoutParams5 = (RelativeLayout.LayoutParams) layoutParams4;
                     layoutParams5.addRule(13);
                     layoutParams5.removeRule(12);
                 }
             }
-            if (this.f9833h != 5 || (frameLayout = (FrameLayout) findViewById(q.a(getContext(), "myoffer_template_bg_desc", "id"))) == null) {
+            if (this.f10619h != 5 || (frameLayout = (FrameLayout) findViewById(q.a(getContext(), "myoffer_template_bg_desc", "id"))) == null) {
                 return;
             }
             frameLayout.setVisibility(8);
@@ -165,20 +165,20 @@ public class MediaATView extends BaseMediaATView implements a {
 
     private void d() {
         SimplePlayerMediaView simplePlayerMediaView = (SimplePlayerMediaView) findViewById(q.a(getContext(), "myoffer_media_ad_simple_player_view_no_g2c", "id"));
-        this.f10101r = simplePlayerMediaView;
+        this.f10887r = simplePlayerMediaView;
         if (simplePlayerMediaView != null) {
             simplePlayerMediaView.setVisibility(0);
         }
     }
 
-    public void a(int i, int i6) {
-        if (!e.a(this.f9826a, this.f9828c)) {
-            this.f10096m.setScaleType(ImageView.ScaleType.FIT_CENTER);
-            com.anythink.core.common.res.b.a(getContext()).a(new com.anythink.core.common.res.e(1, this.f9826a.B()), i, i6, new AnonymousClass2());
+    public void a(int i, int i4) {
+        if (!e.a(this.f10612a, this.f10614c)) {
+            this.f10882m.setScaleType(ImageView.ScaleType.FIT_CENTER);
+            com.anythink.core.common.res.b.a(getContext()).a(new com.anythink.core.common.res.e(1, this.f10612a.B()), i, i4, new AnonymousClass2());
             return;
         }
         SimplePlayerMediaView simplePlayerMediaView = (SimplePlayerMediaView) findViewById(q.a(getContext(), "myoffer_media_ad_simple_player_view_no_g2c", "id"));
-        this.f10101r = simplePlayerMediaView;
+        this.f10887r = simplePlayerMediaView;
         if (simplePlayerMediaView != null) {
             simplePlayerMediaView.setVisibility(0);
         }
@@ -186,7 +186,7 @@ public class MediaATView extends BaseMediaATView implements a {
 
     @Override // com.anythink.basead.ui.a
     public void destroyPlayerView(int i) {
-        SimplePlayerMediaView simplePlayerMediaView = this.f10101r;
+        SimplePlayerMediaView simplePlayerMediaView = this.f10887r;
         if (simplePlayerMediaView != null) {
             simplePlayerMediaView.destroyPlayerView(i);
         }
@@ -195,16 +195,16 @@ public class MediaATView extends BaseMediaATView implements a {
     @Override // com.anythink.basead.ui.BaseMediaATView
     public List<View> getClickViews() {
         ArrayList arrayList = new ArrayList();
-        arrayList.add(this.f10094k);
-        if (this.f9827b.J() != 1) {
-            arrayList.add(this.f10093j);
-            arrayList.add(this.f10096m);
-            arrayList.add(this.f10097n);
-            arrayList.add(this.f10098o);
-            y yVar = this.f9827b;
+        arrayList.add(this.f10880k);
+        if (this.f10613b.J() != 1) {
+            arrayList.add(this.f10879j);
+            arrayList.add(this.f10882m);
+            arrayList.add(this.f10883n);
+            arrayList.add(this.f10884o);
+            y yVar = this.f10613b;
             if (yVar != null && yVar.J() == 0) {
-                arrayList.add(this.f10095l);
-                arrayList.add(this.f10100q);
+                arrayList.add(this.f10881l);
+                arrayList.add(this.f10886q);
             }
         }
         return arrayList;
@@ -213,19 +213,19 @@ public class MediaATView extends BaseMediaATView implements a {
     @Override // com.anythink.basead.ui.BaseMediaATView
     public List<View> getContainerClickViews() {
         ArrayList arrayList = new ArrayList();
-        arrayList.add(this.f10095l);
-        arrayList.add(this.f10100q);
+        arrayList.add(this.f10881l);
+        arrayList.add(this.f10886q);
         return arrayList;
     }
 
     @Override // com.anythink.basead.ui.BaseMediaATView
     public View getMonitorClickView() {
-        return this.f10094k;
+        return this.f10880k;
     }
 
     @Override // com.anythink.basead.ui.a
     public long getVideoCurrentPosition() {
-        SimplePlayerMediaView simplePlayerMediaView = this.f10101r;
+        SimplePlayerMediaView simplePlayerMediaView = this.f10887r;
         if (simplePlayerMediaView != null) {
             return simplePlayerMediaView.getVideoCurrentPosition();
         }
@@ -233,81 +233,81 @@ public class MediaATView extends BaseMediaATView implements a {
     }
 
     @Override // com.anythink.basead.ui.BaseMediaATView
-    public void init(int i, int i6, int i9) {
+    public void init(int i, int i4, int i6) {
         FrameLayout frameLayout;
         TextView textView;
         w wVar;
         View findViewById;
-        super.init(i, i6, i9);
-        int i10 = this.f9833h;
-        View inflate = LayoutInflater.from(getContext()).inflate(q.a(getContext(), i10 != 1 ? i10 != 2 ? i10 != 3 ? i10 != 4 ? i10 != 5 ? "myoffer_media_ad_view" : "myoffer_template_text_float" : "myoffer_template_top_text" : "myoffer_template_top_image" : "myoffer_template_left_text" : "myoffer_template_left_image", "layout"), (ViewGroup) null, false);
-        FrameLayout frameLayout2 = this.f9831f;
+        super.init(i, i4, i6);
+        int i9 = this.f10619h;
+        View inflate = LayoutInflater.from(getContext()).inflate(q.a(getContext(), i9 != 1 ? i9 != 2 ? i9 != 3 ? i9 != 4 ? i9 != 5 ? "myoffer_media_ad_view" : "myoffer_template_text_float" : "myoffer_template_top_text" : "myoffer_template_top_image" : "myoffer_template_left_text" : "myoffer_template_left_image", "layout"), (ViewGroup) null, false);
+        FrameLayout frameLayout2 = this.f10617f;
         if (frameLayout2 != null) {
             frameLayout2.removeAllViews();
-            this.f9831f.addView(inflate, new ViewGroup.LayoutParams(-1, -1));
+            this.f10617f.addView(inflate, new ViewGroup.LayoutParams(-1, -1));
         }
-        this.f10093j = (TextView) findViewById(q.a(getContext(), "myoffer_banner_ad_title", "id"));
-        this.f10094k = (TextView) findViewById(q.a(getContext(), "myoffer_media_ad_cta", "id"));
-        this.f10095l = (ImageView) findViewById(q.a(getContext(), "myoffer_media_ad_bg_blur", "id"));
-        this.f10096m = (ImageView) findViewById(q.a(getContext(), "myoffer_media_ad_main_image", "id"));
-        this.f10099p = (ImageView) findViewById(q.a(getContext(), "myoffer_ad_logo", "id"));
-        this.f10097n = (RoundImageView) findViewById(q.a(getContext(), "myoffer_media_ad_icon", "id"));
-        this.f10098o = (TextView) findViewById(q.a(getContext(), "myoffer_banner_ad_desc", "id"));
-        this.f10100q = (RelativeLayout) findViewById(q.a(getContext(), "myoffer_media_ad_container", "id"));
-        String x9 = this.f9826a.x();
+        this.f10879j = (TextView) findViewById(q.a(getContext(), "myoffer_banner_ad_title", "id"));
+        this.f10880k = (TextView) findViewById(q.a(getContext(), "myoffer_media_ad_cta", "id"));
+        this.f10881l = (ImageView) findViewById(q.a(getContext(), "myoffer_media_ad_bg_blur", "id"));
+        this.f10882m = (ImageView) findViewById(q.a(getContext(), "myoffer_media_ad_main_image", "id"));
+        this.f10885p = (ImageView) findViewById(q.a(getContext(), "myoffer_ad_logo", "id"));
+        this.f10883n = (RoundImageView) findViewById(q.a(getContext(), "myoffer_media_ad_icon", "id"));
+        this.f10884o = (TextView) findViewById(q.a(getContext(), "myoffer_banner_ad_desc", "id"));
+        this.f10886q = (RelativeLayout) findViewById(q.a(getContext(), "myoffer_media_ad_container", "id"));
+        String x9 = this.f10612a.x();
         if (TextUtils.isEmpty(x9)) {
-            this.f10093j.setVisibility(8);
+            this.f10879j.setVisibility(8);
         } else {
-            this.f10093j.setText(x9);
+            this.f10879j.setText(x9);
         }
-        String D8 = this.f9826a.D();
+        String D8 = this.f10612a.D();
         if (TextUtils.isEmpty(D8)) {
-            this.f10094k.setText(q.a(getContext(), "myoffer_cta_learn_more", k.f19636g));
+            this.f10880k.setText(q.a(getContext(), "myoffer_cta_learn_more", k.f20423g));
         } else {
-            this.f10094k.setText(D8);
+            this.f10880k.setText(D8);
         }
-        String y7 = this.f9826a.y();
+        String y7 = this.f10612a.y();
         if (TextUtils.isEmpty(y7)) {
-            this.f10098o.setVisibility(8);
+            this.f10884o.setVisibility(8);
         } else {
-            this.f10098o.setText(y7);
+            this.f10884o.setText(y7);
         }
-        if (TextUtils.isEmpty(this.f9826a.z())) {
-            this.f10097n.setVisibility(8);
+        if (TextUtils.isEmpty(this.f10612a.z())) {
+            this.f10883n.setVisibility(8);
         } else {
-            this.f10097n.setRadiusInDip(6);
-            this.f10097n.setNeedRadiu(true);
-            ViewGroup.LayoutParams layoutParams = this.f10097n.getLayoutParams();
-            com.anythink.core.common.res.b.a(getContext()).a(new com.anythink.core.common.res.e(1, this.f9826a.z()), layoutParams.width, layoutParams.height, new b.a() { // from class: com.anythink.basead.ui.MediaATView.1
+            this.f10883n.setRadiusInDip(6);
+            this.f10883n.setNeedRadiu(true);
+            ViewGroup.LayoutParams layoutParams = this.f10883n.getLayoutParams();
+            com.anythink.core.common.res.b.a(getContext()).a(new com.anythink.core.common.res.e(1, this.f10612a.z()), layoutParams.width, layoutParams.height, new b.a() { // from class: com.anythink.basead.ui.MediaATView.1
                 @Override // com.anythink.core.common.res.b.a
                 public final void onFail(String str, String str2) {
                 }
 
                 @Override // com.anythink.core.common.res.b.a
                 public final void onSuccess(String str, Bitmap bitmap) {
-                    if (TextUtils.equals(MediaATView.this.f9826a.z(), str)) {
-                        MediaATView.this.f10097n.setImageBitmap(bitmap);
+                    if (TextUtils.equals(MediaATView.this.f10612a.z(), str)) {
+                        MediaATView.this.f10883n.setImageBitmap(bitmap);
                     }
                 }
             });
         }
-        com.anythink.basead.ui.f.a aVar = new com.anythink.basead.ui.f.a(this.f9826a, this.f9828c);
+        com.anythink.basead.ui.f.a aVar = new com.anythink.basead.ui.f.a(this.f10612a, this.f10614c);
         this.i = aVar;
         aVar.b(this);
-        if (!e.a(this.f9826a) && (findViewById = findViewById(q.a(getContext(), "myoffer_media_ad_main_image_container", "id"))) != null) {
+        if (!e.a(this.f10612a) && (findViewById = findViewById(q.a(getContext(), "myoffer_media_ad_main_image_container", "id"))) != null) {
             ViewGroup.LayoutParams layoutParams2 = findViewById.getLayoutParams();
             if (layoutParams2 instanceof RelativeLayout.LayoutParams) {
                 ((RelativeLayout.LayoutParams) layoutParams2).bottomMargin = q.a(getContext(), 84.0f);
                 findViewById.setLayoutParams(layoutParams2);
             }
         }
-        a(i, i6);
-        if ((this.f10094k instanceof ScanningAnimButton) && (wVar = this.f9826a) != null && wVar.r() != null) {
-            ((ScanningAnimButton) this.f10094k).startAnimation(this.f9826a.r().aH());
+        a(i, i4);
+        if ((this.f10880k instanceof ScanningAnimButton) && (wVar = this.f10612a) != null && wVar.r() != null) {
+            ((ScanningAnimButton) this.f10880k).startAnimation(this.f10612a.r().aH());
         }
         if (a()) {
-            int i11 = this.f9833h;
-            if (i11 == 3 || i11 == 4 || i11 == 5) {
+            int i10 = this.f10619h;
+            if (i10 == 3 || i10 == 4 || i10 == 5) {
                 ViewGroup viewGroup = (ViewGroup) findViewById(q.a(getContext(), "myoffer_title_desc", "id"));
                 if (viewGroup != null) {
                     ViewGroup.LayoutParams layoutParams3 = viewGroup.getLayoutParams();
@@ -316,32 +316,32 @@ public class MediaATView extends BaseMediaATView implements a {
                         viewGroup.setLayoutParams(layoutParams3);
                     }
                 }
-            } else if ((i11 == 1 || i11 == 2) && (textView = this.f10093j) != null) {
+            } else if ((i10 == 1 || i10 == 2) && (textView = this.f10879j) != null) {
                 ViewGroup.LayoutParams layoutParams4 = textView.getLayoutParams();
                 if (layoutParams4 instanceof LinearLayout.LayoutParams) {
                     ((LinearLayout.LayoutParams) layoutParams4).leftMargin = 0;
-                    this.f10093j.setLayoutParams(layoutParams4);
+                    this.f10879j.setLayoutParams(layoutParams4);
                 }
             }
         }
-        if (TextUtils.isEmpty(this.f9826a.x()) && this.f9833h == 6) {
-            ViewGroup.LayoutParams layoutParams5 = this.f10098o.getLayoutParams();
+        if (TextUtils.isEmpty(this.f10612a.x()) && this.f10619h == 6) {
+            ViewGroup.LayoutParams layoutParams5 = this.f10884o.getLayoutParams();
             if (layoutParams5 instanceof LinearLayout.LayoutParams) {
                 ((LinearLayout.LayoutParams) layoutParams5).topMargin = 0;
-                this.f10098o.setLayoutParams(layoutParams5);
+                this.f10884o.setLayoutParams(layoutParams5);
             }
         }
-        if (TextUtils.isEmpty(this.f9826a.y())) {
-            int i12 = this.f9833h;
-            if (i12 == 2 || i12 == 1) {
-                ViewGroup.LayoutParams layoutParams6 = this.f10094k.getLayoutParams();
+        if (TextUtils.isEmpty(this.f10612a.y())) {
+            int i11 = this.f10619h;
+            if (i11 == 2 || i11 == 1) {
+                ViewGroup.LayoutParams layoutParams6 = this.f10880k.getLayoutParams();
                 if (layoutParams6 instanceof RelativeLayout.LayoutParams) {
                     RelativeLayout.LayoutParams layoutParams7 = (RelativeLayout.LayoutParams) layoutParams6;
                     layoutParams7.addRule(13);
                     layoutParams7.removeRule(12);
                 }
             }
-            if (this.f9833h != 5 || (frameLayout = (FrameLayout) findViewById(q.a(getContext(), "myoffer_template_bg_desc", "id"))) == null) {
+            if (this.f10619h != 5 || (frameLayout = (FrameLayout) findViewById(q.a(getContext(), "myoffer_template_bg_desc", "id"))) == null) {
                 return;
             }
             frameLayout.setVisibility(8);
@@ -350,20 +350,20 @@ public class MediaATView extends BaseMediaATView implements a {
 
     @Override // com.anythink.basead.ui.a
     public void initPlayerView(w wVar, x xVar, a.InterfaceC0056a interfaceC0056a, com.anythink.basead.j.e eVar) {
-        SimplePlayerMediaView simplePlayerMediaView = this.f10101r;
+        SimplePlayerMediaView simplePlayerMediaView = this.f10887r;
         if (simplePlayerMediaView != null) {
             simplePlayerMediaView.initPlayerView(wVar, xVar, interfaceC0056a, eVar);
         }
     }
 
     @Override // android.widget.FrameLayout, android.view.ViewGroup, android.view.View
-    public void onLayout(boolean z3, int i, int i6, int i9, int i10) {
-        super.onLayout(z3, i, i6, i9, i10);
+    public void onLayout(boolean z6, int i, int i4, int i6, int i9) {
+        super.onLayout(z6, i, i4, i6, i9);
     }
 
     @Override // com.anythink.basead.ui.a
     public void pauseVideo() {
-        SimplePlayerMediaView simplePlayerMediaView = this.f10101r;
+        SimplePlayerMediaView simplePlayerMediaView = this.f10887r;
         if (simplePlayerMediaView != null) {
             simplePlayerMediaView.pauseVideo();
         }
@@ -371,7 +371,7 @@ public class MediaATView extends BaseMediaATView implements a {
 
     @Override // com.anythink.basead.ui.a
     public void resumeVideo() {
-        SimplePlayerMediaView simplePlayerMediaView = this.f10101r;
+        SimplePlayerMediaView simplePlayerMediaView = this.f10887r;
         if (simplePlayerMediaView != null) {
             simplePlayerMediaView.resumeVideo();
         }
@@ -379,7 +379,7 @@ public class MediaATView extends BaseMediaATView implements a {
 
     @Override // com.anythink.basead.ui.a
     public void setATImproveClickViewController(com.anythink.basead.ui.improveclick.a aVar) {
-        SimplePlayerMediaView simplePlayerMediaView = this.f10101r;
+        SimplePlayerMediaView simplePlayerMediaView = this.f10887r;
         if (simplePlayerMediaView != null) {
             simplePlayerMediaView.setATImproveClickViewController(aVar);
         }
@@ -387,23 +387,23 @@ public class MediaATView extends BaseMediaATView implements a {
 
     @Override // com.anythink.basead.ui.a
     public void setAutoPlay(String str) {
-        SimplePlayerMediaView simplePlayerMediaView = this.f10101r;
+        SimplePlayerMediaView simplePlayerMediaView = this.f10887r;
         if (simplePlayerMediaView != null) {
             simplePlayerMediaView.setAutoPlay(str);
         }
     }
 
     @Override // com.anythink.basead.ui.a
-    public void setIsMuted(boolean z3) {
-        SimplePlayerMediaView simplePlayerMediaView = this.f10101r;
+    public void setIsMuted(boolean z6) {
+        SimplePlayerMediaView simplePlayerMediaView = this.f10887r;
         if (simplePlayerMediaView != null) {
-            simplePlayerMediaView.setIsMuted(z3);
+            simplePlayerMediaView.setIsMuted(z6);
         }
     }
 
     @Override // com.anythink.basead.ui.a
     public void setPlayerOnClickListener(View.OnClickListener onClickListener) {
-        SimplePlayerMediaView simplePlayerMediaView = this.f10101r;
+        SimplePlayerMediaView simplePlayerMediaView = this.f10887r;
         if (simplePlayerMediaView != null) {
             simplePlayerMediaView.setPlayerOnClickListener(onClickListener);
         }
@@ -411,18 +411,18 @@ public class MediaATView extends BaseMediaATView implements a {
 
     @Override // com.anythink.basead.ui.a
     public void setVideoListener(a.InterfaceC0050a interfaceC0050a) {
-        SimplePlayerMediaView simplePlayerMediaView = this.f10101r;
+        SimplePlayerMediaView simplePlayerMediaView = this.f10887r;
         if (simplePlayerMediaView != null) {
             simplePlayerMediaView.setVideoListener(interfaceC0050a);
         }
     }
 
-    private void b(int i, int i6) {
-        this.f10096m.setScaleType(ImageView.ScaleType.FIT_CENTER);
-        com.anythink.core.common.res.b.a(getContext()).a(new com.anythink.core.common.res.e(1, this.f9826a.B()), i, i6, new AnonymousClass2());
+    private void b(int i, int i4) {
+        this.f10882m.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        com.anythink.core.common.res.b.a(getContext()).a(new com.anythink.core.common.res.e(1, this.f10612a.B()), i, i4, new AnonymousClass2());
     }
 
     public boolean a() {
-        return TextUtils.isEmpty(this.f9826a.z());
+        return TextUtils.isEmpty(this.f10612a.z());
     }
 }

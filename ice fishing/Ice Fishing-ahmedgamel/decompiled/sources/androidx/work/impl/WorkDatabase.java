@@ -18,64 +18,64 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import kotlin.jvm.internal.h;
-import u0.C5052b;
-import u0.C5056f;
-import u0.InterfaceC5053c;
-import v7.C5135p;
+import u0.C5053b;
+import u0.C5057f;
+import u0.InterfaceC5054c;
+import v7.C5125p;
 import v7.q;
 import v7.r;
-import y0.b;
-import y0.d;
-import z0.C5247c;
+import y0.InterfaceC5197b;
+import y0.InterfaceC5199d;
+import z0.C5214c;
 
 /* loaded from: classes.dex */
 public abstract class WorkDatabase {
 
     /* renamed from: a, reason: collision with root package name */
-    public volatile C5247c f5366a;
+    public volatile C5214c f5331a;
 
     /* renamed from: b, reason: collision with root package name */
-    public Executor f5367b;
+    public Executor f5332b;
 
     /* renamed from: c, reason: collision with root package name */
-    public b f5368c;
+    public InterfaceC5197b f5333c;
 
     /* renamed from: e, reason: collision with root package name */
-    public boolean f5370e;
+    public boolean f5335e;
 
     /* renamed from: f, reason: collision with root package name */
-    public ArrayList f5371f;
+    public ArrayList f5336f;
 
     /* renamed from: j, reason: collision with root package name */
-    public final LinkedHashMap f5374j;
+    public final LinkedHashMap f5339j;
 
     /* renamed from: d, reason: collision with root package name */
-    public final C5056f f5369d = d();
+    public final C5057f f5334d = d();
 
     /* renamed from: g, reason: collision with root package name */
-    public final LinkedHashMap f5372g = new LinkedHashMap();
+    public final LinkedHashMap f5337g = new LinkedHashMap();
 
     /* renamed from: h, reason: collision with root package name */
-    public final ReentrantReadWriteLock f5373h = new ReentrantReadWriteLock();
+    public final ReentrantReadWriteLock f5338h = new ReentrantReadWriteLock();
     public final ThreadLocal i = new ThreadLocal();
 
     public WorkDatabase() {
         h.d(Collections.synchronizedMap(new LinkedHashMap()), "synchronizedMap(mutableMapOf())");
-        this.f5374j = new LinkedHashMap();
+        this.f5339j = new LinkedHashMap();
     }
 
-    public static Object q(Class cls, b bVar) {
-        if (cls.isInstance(bVar)) {
-            return bVar;
+    public static Object q(Class cls, InterfaceC5197b interfaceC5197b) {
+        if (cls.isInstance(interfaceC5197b)) {
+            return interfaceC5197b;
         }
-        if (bVar instanceof InterfaceC5053c) {
-            return q(cls, ((InterfaceC5053c) bVar).b());
+        if (interfaceC5197b instanceof InterfaceC5054c) {
+            return q(cls, ((InterfaceC5054c) interfaceC5197b).b());
         }
         return null;
     }
 
     public final void a() {
-        if (!this.f5370e && Looper.getMainLooper().getThread() == Thread.currentThread()) {
+        if (!this.f5335e && Looper.getMainLooper().getThread() == Thread.currentThread()) {
             throw new IllegalStateException("Cannot access database on the main thread since it may potentially lock the UI for a long period of time.");
         }
     }
@@ -89,8 +89,8 @@ public abstract class WorkDatabase {
     public final void c() {
         a();
         a();
-        C5247c R8 = h().R();
-        this.f5369d.c(R8);
+        C5214c R8 = h().R();
+        this.f5334d.c(R8);
         if (R8.D()) {
             R8.j();
         } else {
@@ -98,32 +98,32 @@ public abstract class WorkDatabase {
         }
     }
 
-    public abstract C5056f d();
+    public abstract C5057f d();
 
-    public abstract b e(C5052b c5052b);
+    public abstract InterfaceC5197b e(C5053b c5053b);
 
     public abstract c f();
 
     public List g(LinkedHashMap autoMigrationSpecs) {
         h.e(autoMigrationSpecs, "autoMigrationSpecs");
-        return C5135p.f41442n;
+        return C5125p.f41221n;
     }
 
-    public final b h() {
-        b bVar = this.f5368c;
-        if (bVar != null) {
-            return bVar;
+    public final InterfaceC5197b h() {
+        InterfaceC5197b interfaceC5197b = this.f5333c;
+        if (interfaceC5197b != null) {
+            return interfaceC5197b;
         }
         h.k("internalOpenHelper");
         throw null;
     }
 
     public Set i() {
-        return r.f41444n;
+        return r.f41223n;
     }
 
     public Map j() {
-        return q.f41443n;
+        return q.f41222n;
     }
 
     public final void k() {
@@ -131,11 +131,11 @@ public abstract class WorkDatabase {
         if (h().R().C()) {
             return;
         }
-        C5056f c5056f = this.f5369d;
-        if (c5056f.f41006e.compareAndSet(false, true)) {
-            Executor executor = c5056f.f41002a.f5367b;
+        C5057f c5057f = this.f5334d;
+        if (c5057f.f40968e.compareAndSet(false, true)) {
+            Executor executor = c5057f.f40964a.f5332b;
             if (executor != null) {
-                executor.execute(c5056f.f41012l);
+                executor.execute(c5057f.f40974l);
             } else {
                 h.k("internalQueryExecutor");
                 throw null;
@@ -145,10 +145,10 @@ public abstract class WorkDatabase {
 
     public abstract e l();
 
-    public final Cursor m(d dVar) {
+    public final Cursor m(InterfaceC5199d interfaceC5199d) {
         a();
         b();
-        return h().R().F(dVar);
+        return h().R().F(interfaceC5199d);
     }
 
     public final Object n(Callable callable) {

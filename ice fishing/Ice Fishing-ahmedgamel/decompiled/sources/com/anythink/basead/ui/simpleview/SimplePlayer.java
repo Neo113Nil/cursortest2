@@ -19,45 +19,45 @@ import com.anythink.basead.exoplayer.j.q;
 import com.anythink.basead.exoplayer.l.g;
 import com.anythink.basead.exoplayer.w;
 import java.io.File;
-import u.AbstractC5049e;
+import u.AbstractC5050e;
 
 /* loaded from: classes.dex */
 public class SimplePlayer extends RelativeLayout {
     public static final String TAG = "SimplePlayer";
 
     /* renamed from: a, reason: collision with root package name */
-    w.a f11273a;
+    w.a f12059a;
 
     /* renamed from: b, reason: collision with root package name */
-    g f11274b;
+    g f12060b;
 
     /* renamed from: c, reason: collision with root package name */
-    boolean f11275c;
+    boolean f12061c;
 
     /* renamed from: d, reason: collision with root package name */
-    boolean f11276d;
+    boolean f12062d;
 
     /* renamed from: e, reason: collision with root package name */
-    private ad f11277e;
+    private ad f12063e;
 
     /* renamed from: f, reason: collision with root package name */
-    private s f11278f;
+    private s f12064f;
 
     /* renamed from: g, reason: collision with root package name */
-    private TextureView f11279g;
+    private TextureView f12065g;
 
     /* renamed from: h, reason: collision with root package name */
-    private boolean f11280h;
+    private boolean f12066h;
     private String i;
 
     /* renamed from: j, reason: collision with root package name */
-    private String f11281j;
+    private String f12067j;
 
     /* renamed from: k, reason: collision with root package name */
-    private final long f11282k;
+    private final long f12068k;
 
     /* renamed from: l, reason: collision with root package name */
-    private a f11283l;
+    private a f12069l;
 
     /* renamed from: com.anythink.basead.ui.simpleview.SimplePlayer$2, reason: invalid class name */
     public class AnonymousClass2 extends w.a {
@@ -68,36 +68,36 @@ public class SimplePlayer extends RelativeLayout {
         public final void onPlayerError(com.anythink.basead.exoplayer.g gVar) {
             String str;
             super.onPlayerError(gVar);
-            boolean z3 = false;
+            boolean z6 = false;
             if (gVar != null) {
-                int i = gVar.f7269d;
+                int i = gVar.f8055d;
                 if (i != 0) {
                     str = i != 1 ? i != 2 ? "Play error and ExoPlayer have not message." : "Play error, because have a UnexpectedException." : "Play error, because have a RendererException.";
                 } else {
                     str = "Play error, because have a SourceException.";
-                    z3 = true;
+                    z6 = true;
                 }
                 if (gVar.getCause() != null && !TextUtils.isEmpty(gVar.getCause().getMessage())) {
-                    AbstractC5049e.c(str, ",eception:").append(gVar.getCause().getMessage());
+                    AbstractC5050e.c(str, ",eception:").append(gVar.getCause().getMessage());
                 }
             }
-            if (SimplePlayer.this.f11280h && z3) {
+            if (SimplePlayer.this.f12066h && z6) {
                 SimplePlayer.c(SimplePlayer.this);
                 SimplePlayer.d(SimplePlayer.this);
             }
         }
 
         @Override // com.anythink.basead.exoplayer.w.a, com.anythink.basead.exoplayer.w.c
-        public final void onPlayerStateChanged(boolean z3, int i) {
-            super.onPlayerStateChanged(z3, i);
+        public final void onPlayerStateChanged(boolean z6, int i) {
+            super.onPlayerStateChanged(z6, i);
             String str = SimplePlayer.TAG;
             if (i != 3) {
                 return;
             }
             SimplePlayer simplePlayer = SimplePlayer.this;
-            simplePlayer.f11276d = true;
-            if (simplePlayer.f11283l != null) {
-                SimplePlayer.this.f11283l.a();
+            simplePlayer.f12062d = true;
+            if (simplePlayer.f12069l != null) {
+                SimplePlayer.this.f12069l.a();
             }
         }
     }
@@ -112,9 +112,9 @@ public class SimplePlayer extends RelativeLayout {
         }
 
         @Override // com.anythink.basead.exoplayer.l.g
-        public final void a(int i, int i6) {
+        public final void a(int i, int i4) {
             SimplePlayer simplePlayer = SimplePlayer.this;
-            simplePlayer.autoFitVideoSize(i, i6, simplePlayer.f11279g);
+            simplePlayer.autoFitVideoSize(i, i4, simplePlayer.f12065g);
         }
     }
 
@@ -129,36 +129,36 @@ public class SimplePlayer extends RelativeLayout {
     }
 
     public static /* synthetic */ boolean c(SimplePlayer simplePlayer) {
-        simplePlayer.f11280h = false;
+        simplePlayer.f12066h = false;
         return false;
     }
 
     private void d() {
-        this.f11277e.a(this.f11278f);
+        this.f12063e.a(this.f12064f);
     }
 
     private void g() {
-        ad adVar = this.f11277e;
+        ad adVar = this.f12063e;
         if (adVar != null) {
             if (adVar.J()) {
-                this.f11277e.m();
+                this.f12063e.m();
             }
-            w.a aVar = this.f11273a;
+            w.a aVar = this.f12059a;
             if (aVar != null) {
-                this.f11277e.b(aVar);
+                this.f12063e.b(aVar);
             }
-            g gVar = this.f11274b;
+            g gVar = this.f12060b;
             if (gVar != null) {
-                this.f11277e.b(gVar);
+                this.f12063e.b(gVar);
             }
-            this.f11277e.n();
-            this.f11277e = null;
+            this.f12063e.n();
+            this.f12063e = null;
         }
-        this.f11283l = null;
+        this.f12069l = null;
     }
 
-    public void autoFitVideoSize(int i, int i6, View view) {
-        float max = Math.max(i / view.getMeasuredWidth(), i6 / view.getMeasuredHeight());
+    public void autoFitVideoSize(int i, int i4, View view) {
+        float max = Math.max(i / view.getMeasuredWidth(), i4 / view.getMeasuredHeight());
         int ceil = (int) Math.ceil(r4 / max);
         int ceil2 = (int) Math.ceil(r5 / max);
         RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) view.getLayoutParams();
@@ -167,71 +167,71 @@ public class SimplePlayer extends RelativeLayout {
         view.setLayoutParams(layoutParams);
     }
 
-    public void load(String str, boolean z3) {
-        this.f11281j = str;
+    public void load(String str, boolean z6) {
+        this.f12067j = str;
         f.a();
         this.i = f.a(3, str);
-        this.f11276d = false;
-        if (!new File(this.i).exists() && TextUtils.isEmpty(this.f11281j)) {
+        this.f12062d = false;
+        if (!new File(this.i).exists() && TextUtils.isEmpty(this.f12067j)) {
             e();
             return;
         }
-        if (this.f11277e == null) {
-            this.f11277e = i.a(new com.anythink.basead.exoplayer.f(getContext()), new c(), new d());
+        if (this.f12063e == null) {
+            this.f12063e = i.a(new com.anythink.basead.exoplayer.f(getContext()), new c(), new d());
             AnonymousClass2 anonymousClass2 = new AnonymousClass2();
-            this.f11273a = anonymousClass2;
-            this.f11277e.a(anonymousClass2);
+            this.f12059a = anonymousClass2;
+            this.f12063e.a(anonymousClass2);
             AnonymousClass3 anonymousClass3 = new AnonymousClass3();
-            this.f11274b = anonymousClass3;
-            this.f11277e.a(anonymousClass3);
-            this.f11277e.a(1.0f);
-            this.f11277e.a(z3);
-            a(new File(this.i).exists() ? this.i : this.f11281j, false);
+            this.f12060b = anonymousClass3;
+            this.f12063e.a(anonymousClass3);
+            this.f12063e.a(1.0f);
+            this.f12063e.a(z6);
+            a(new File(this.i).exists() ? this.i : this.f12067j, false);
         }
         postDelayed(new Runnable() { // from class: com.anythink.basead.ui.simpleview.SimplePlayer.1
             @Override // java.lang.Runnable
             public final void run() {
                 SimplePlayer simplePlayer = SimplePlayer.this;
-                if (simplePlayer.f11276d) {
+                if (simplePlayer.f12062d) {
                     return;
                 }
                 simplePlayer.e();
             }
-        }, com.anythink.basead.exoplayer.f.f7187a);
+        }, com.anythink.basead.exoplayer.f.f7973a);
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        ad adVar = this.f11277e;
+        ad adVar = this.f12063e;
         if (adVar != null) {
             if (adVar.J()) {
-                this.f11277e.m();
+                this.f12063e.m();
             }
-            w.a aVar = this.f11273a;
+            w.a aVar = this.f12059a;
             if (aVar != null) {
-                this.f11277e.b(aVar);
+                this.f12063e.b(aVar);
             }
-            g gVar = this.f11274b;
+            g gVar = this.f12060b;
             if (gVar != null) {
-                this.f11277e.b(gVar);
+                this.f12063e.b(gVar);
             }
-            this.f11277e.n();
-            this.f11277e = null;
+            this.f12063e.n();
+            this.f12063e = null;
         }
-        this.f11283l = null;
+        this.f12069l = null;
     }
 
     public void setSimplePlayerViewListener(a aVar) {
-        this.f11283l = aVar;
+        this.f12069l = aVar;
     }
 
     public void stopVideo() {
-        ad adVar = this.f11277e;
+        ad adVar = this.f12063e;
         if (adVar == null || !adVar.J()) {
             return;
         }
-        this.f11277e.m();
+        this.f12063e.m();
     }
 
     public SimplePlayer(Context context, AttributeSet attributeSet) {
@@ -239,117 +239,117 @@ public class SimplePlayer extends RelativeLayout {
     }
 
     private void a() {
-        this.f11280h = false;
+        this.f12066h = false;
         setBackgroundColor(Color.parseColor("#000000"));
-        if (this.f11279g == null) {
+        if (this.f12065g == null) {
             TextureView textureView = new TextureView(getContext());
-            this.f11279g = textureView;
+            this.f12065g = textureView;
             textureView.setKeepScreenOn(true);
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -1);
             layoutParams.addRule(13);
             removeAllViews();
-            addView(this.f11279g, layoutParams);
+            addView(this.f12065g, layoutParams);
         }
     }
 
     private void b() {
-        if (this.f11279g == null) {
+        if (this.f12065g == null) {
             TextureView textureView = new TextureView(getContext());
-            this.f11279g = textureView;
+            this.f12065g = textureView;
             textureView.setKeepScreenOn(true);
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -1);
             layoutParams.addRule(13);
             removeAllViews();
-            addView(this.f11279g, layoutParams);
+            addView(this.f12065g, layoutParams);
         }
     }
 
     private String c() {
-        return new File(this.i).exists() ? this.i : this.f11281j;
+        return new File(this.i).exists() ? this.i : this.f12067j;
     }
 
     public static /* synthetic */ void d(SimplePlayer simplePlayer) {
-        simplePlayer.f11277e.a(simplePlayer.f11278f);
+        simplePlayer.f12063e.a(simplePlayer.f12064f);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void e() {
-        a aVar = this.f11283l;
+        a aVar = this.f12069l;
         if (aVar != null) {
             aVar.b();
         }
     }
 
     private boolean f() {
-        return !new File(this.i).exists() && TextUtils.isEmpty(this.f11281j);
+        return !new File(this.i).exists() && TextUtils.isEmpty(this.f12067j);
     }
 
     public SimplePlayer(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
         this.i = "";
-        this.f11281j = "";
-        this.f11282k = com.anythink.basead.exoplayer.f.f7187a;
-        this.f11280h = false;
+        this.f12067j = "";
+        this.f12068k = com.anythink.basead.exoplayer.f.f7973a;
+        this.f12066h = false;
         setBackgroundColor(Color.parseColor("#000000"));
-        if (this.f11279g == null) {
+        if (this.f12065g == null) {
             TextureView textureView = new TextureView(getContext());
-            this.f11279g = textureView;
+            this.f12065g = textureView;
             textureView.setKeepScreenOn(true);
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -1);
             layoutParams.addRule(13);
             removeAllViews();
-            addView(this.f11279g, layoutParams);
+            addView(this.f12065g, layoutParams);
         }
     }
 
-    private void a(boolean z3) {
+    private void a(boolean z6) {
         String str;
-        if (this.f11277e == null) {
-            this.f11277e = i.a(new com.anythink.basead.exoplayer.f(getContext()), new c(), new d());
+        if (this.f12063e == null) {
+            this.f12063e = i.a(new com.anythink.basead.exoplayer.f(getContext()), new c(), new d());
             AnonymousClass2 anonymousClass2 = new AnonymousClass2();
-            this.f11273a = anonymousClass2;
-            this.f11277e.a(anonymousClass2);
+            this.f12059a = anonymousClass2;
+            this.f12063e.a(anonymousClass2);
             AnonymousClass3 anonymousClass3 = new AnonymousClass3();
-            this.f11274b = anonymousClass3;
-            this.f11277e.a(anonymousClass3);
-            this.f11277e.a(1.0f);
-            this.f11277e.a(z3);
+            this.f12060b = anonymousClass3;
+            this.f12063e.a(anonymousClass3);
+            this.f12063e.a(1.0f);
+            this.f12063e.a(z6);
             if (new File(this.i).exists()) {
                 str = this.i;
             } else {
-                str = this.f11281j;
+                str = this.f12067j;
             }
             a(str, false);
         }
     }
 
-    private void a(String str, boolean z3) {
+    private void a(String str, boolean z6) {
         while (true) {
             try {
                 if (TextUtils.isEmpty(str)) {
                     return;
                 }
-                if (this.f11277e == null) {
+                if (this.f12063e == null) {
                     e();
                     return;
                 }
-                this.f11280h = TextUtils.equals(str, this.i);
+                this.f12066h = TextUtils.equals(str, this.i);
                 Uri parse = Uri.parse(str);
                 if (str.toLowerCase().startsWith("http")) {
-                    this.f11278f = new o.c(new q("Anythink_ExoPlayer")).b(parse);
-                    this.f11275c = true;
+                    this.f12064f = new o.c(new q("Anythink_ExoPlayer")).b(parse);
+                    this.f12061c = true;
                 } else {
-                    this.f11278f = new o.c(new com.anythink.basead.exoplayer.j.o(getContext(), "Anythink_ExoPlayer")).b(parse);
-                    this.f11275c = false;
+                    this.f12064f = new o.c(new com.anythink.basead.exoplayer.j.o(getContext(), "Anythink_ExoPlayer")).b(parse);
+                    this.f12061c = false;
                 }
-                this.f11277e.a(this.f11279g);
-                this.f11277e.a(this.f11278f);
+                this.f12063e.a(this.f12065g);
+                this.f12063e.a(this.f12064f);
                 return;
             } catch (Throwable th) {
                 th.printStackTrace();
-                if (!TextUtils.equals(str, this.f11281j) && !z3) {
-                    str = this.f11281j;
-                    z3 = true;
+                if (!TextUtils.equals(str, this.f12067j) && !z6) {
+                    str = this.f12067j;
+                    z6 = true;
                 } else {
                     th.getMessage();
                     e();

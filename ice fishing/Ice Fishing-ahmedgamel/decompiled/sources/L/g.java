@@ -1,6 +1,6 @@
 package L;
 
-import C2.N;
+import E2.M;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Typeface;
@@ -14,23 +14,23 @@ import s.k;
 public abstract class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final C0 f1594a = new C0(16);
+    public static final C0 f1703a = new C0(16);
 
     /* renamed from: b, reason: collision with root package name */
-    public static final ThreadPoolExecutor f1595b;
+    public static final ThreadPoolExecutor f1704b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final Object f1596c;
+    public static final Object f1705c;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final k f1597d;
+    public static final k f1706d;
 
     static {
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(0, 1, 10000, TimeUnit.MILLISECONDS, new LinkedBlockingDeque(), new j(0));
         threadPoolExecutor.allowCoreThreadTimeOut(true);
-        f1595b = threadPoolExecutor;
-        f1596c = new Object();
-        f1597d = new k();
+        f1704b = threadPoolExecutor;
+        f1705c = new Object();
+        f1706d = new k();
     }
 
     /* JADX WARN: Removed duplicated region for block: B:13:0x003f  */
@@ -38,51 +38,51 @@ public abstract class g {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static f a(String str, Context context, N n9, int i) {
-        C0 c02 = f1594a;
+    public static f a(String str, Context context, M m9, int i) {
+        C0 c02 = f1703a;
         Typeface typeface = (Typeface) c02.a(str);
         if (typeface != null) {
             return new f(typeface);
         }
         try {
-            G1.a a9 = c.a(context, n9);
-            int i6 = 1;
-            h[] hVarArr = (h[]) a9.f1051v;
-            int i9 = a9.f1050u;
-            if (i9 != 0) {
-                if (i9 == 1) {
-                    i6 = -2;
-                    if (i6 != 0) {
-                        return new f(i6);
+            I1.a a9 = c.a(context, m9);
+            int i4 = 1;
+            h[] hVarArr = (h[]) a9.f1304v;
+            int i6 = a9.f1303u;
+            if (i6 != 0) {
+                if (i6 == 1) {
+                    i4 = -2;
+                    if (i4 != 0) {
+                        return new f(i4);
                     }
-                    Typeface e9 = G.j.f1012a.e(context, hVarArr, i);
-                    if (e9 == null) {
+                    Typeface d9 = G.j.f1038a.d(context, hVarArr, i);
+                    if (d9 == null) {
                         return new f(-3);
                     }
-                    c02.b(str, e9);
-                    return new f(e9);
+                    c02.b(str, d9);
+                    return new f(d9);
                 }
-                i6 = -3;
-                if (i6 != 0) {
+                i4 = -3;
+                if (i4 != 0) {
                 }
             } else {
                 if (hVarArr != null && hVarArr.length != 0) {
                     int length = hVarArr.length;
-                    i6 = 0;
-                    int i10 = 0;
+                    i4 = 0;
+                    int i9 = 0;
                     while (true) {
-                        if (i10 >= length) {
+                        if (i9 >= length) {
                             break;
                         }
-                        int i11 = hVarArr[i10].f1602e;
-                        if (i11 == 0) {
-                            i10++;
-                        } else if (i11 >= 0) {
-                            i6 = i11;
+                        int i10 = hVarArr[i9].f1711e;
+                        if (i10 == 0) {
+                            i9++;
+                        } else if (i10 >= 0) {
+                            i4 = i10;
                         }
                     }
                 }
-                if (i6 != 0) {
+                if (i4 != 0) {
                 }
             }
         } catch (PackageManager.NameNotFoundException unused) {

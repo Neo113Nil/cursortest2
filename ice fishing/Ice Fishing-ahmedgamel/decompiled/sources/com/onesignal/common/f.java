@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import v7.AbstractC5131l;
+import v7.AbstractC5121l;
 import v7.t;
 
 /* loaded from: classes2.dex */
@@ -56,11 +56,11 @@ public final class f {
         }
         try {
             int length = jSONArray.length();
-            int i6 = 0;
-            while (i6 < length) {
+            int i4 = 0;
+            while (i4 < length) {
                 int length2 = jSONArray2.length();
                 for (0; i < length2; i + 1) {
-                    Object obj = jSONArray.get(i6);
+                    Object obj = jSONArray.get(i4);
                     kotlin.jvm.internal.h.d(obj, "get(...)");
                     Object normalizeType = normalizeType(obj);
                     Object obj2 = jSONArray2.get(i);
@@ -98,11 +98,11 @@ public final class f {
                 arrayList.add(obj2);
             }
         }
-        int P8 = t.P(AbstractC5131l.y(arrayList, 10));
-        if (P8 < 16) {
-            P8 = 16;
+        int t6 = t.t(AbstractC5121l.w(arrayList, 10));
+        if (t6 < 16) {
+            t6 = 16;
         }
-        LinkedHashMap linkedHashMap = new LinkedHashMap(P8);
+        LinkedHashMap linkedHashMap = new LinkedHashMap(t6);
         for (Map.Entry entry : arrayList) {
             Object key = entry.getKey();
             kotlin.jvm.internal.h.c(key, "null cannot be cast to non-null type kotlin.String");
@@ -112,8 +112,8 @@ public final class f {
     }
 
     public final boolean isValidJsonObject(Object obj) {
-        boolean z3;
         boolean z6;
+        boolean z9;
         if (obj == null ? true : obj instanceof Boolean ? true : obj instanceof Number ? true : obj instanceof String ? true : obj instanceof JSONObject ? true : obj instanceof JSONArray) {
             return true;
         }
@@ -139,25 +139,25 @@ public final class f {
             Iterator it2 = keySet.iterator();
             while (it2.hasNext()) {
                 if (!(it2.next() instanceof String)) {
-                    z3 = false;
+                    z6 = false;
                     break;
                 }
             }
         }
-        z3 = true;
-        if (z3) {
+        z6 = true;
+        if (z6) {
             Collection values = map.values();
             if (values == null || !values.isEmpty()) {
                 Iterator it3 = values.iterator();
                 while (it3.hasNext()) {
                     if (!INSTANCE.isValidJsonObject(it3.next())) {
-                        z6 = false;
+                        z9 = false;
                         break;
                     }
                 }
             }
-            z6 = true;
-            if (z6) {
+            z9 = true;
+            if (z9) {
                 return true;
             }
         }
@@ -242,7 +242,7 @@ public final class f {
         if (json.has(EXTERNAL_USER_ID)) {
             Matcher matcher = Pattern.compile("(?<=\"external_user_id\":\").*?(?=\")").matcher(jSONObject);
             if (matcher.find() && (group = matcher.group(0)) != null) {
-                String replaceAll = matcher.replaceAll(Matcher.quoteReplacement(q.P(group, "\\/", "/")));
+                String replaceAll = matcher.replaceAll(Matcher.quoteReplacement(q.f0(group, "\\/", "/")));
                 kotlin.jvm.internal.h.d(replaceAll, "replaceAll(...)");
                 return replaceAll;
             }

@@ -10,22 +10,22 @@ import java.lang.reflect.Method;
 public final class a implements InvocationHandler {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f68a;
+    public final /* synthetic */ int f225a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Object f69b;
+    public final Object f226b;
 
     public /* synthetic */ a(int i, Object obj) {
-        this.f68a = i;
-        this.f69b = obj;
+        this.f225a = i;
+        this.f226b = obj;
     }
 
     @Override // java.lang.reflect.InvocationHandler
     public final Object invoke(Object obj, Method method, Object[] objArr) {
-        switch (this.f68a) {
+        switch (this.f225a) {
             case 0:
                 try {
-                    return Class.forName(method.getDeclaringClass().getName(), true, j.class.getClassLoader()).getDeclaredMethod(method.getName(), method.getParameterTypes()).invoke((j) this.f69b, objArr);
+                    return Class.forName(method.getDeclaringClass().getName(), true, j.class.getClassLoader()).getDeclaredMethod(method.getName(), method.getParameterTypes()).invoke((j) this.f226b, objArr);
                 } catch (InvocationTargetException e9) {
                     throw e9.getTargetException();
                 } catch (ReflectiveOperationException e10) {
@@ -35,7 +35,7 @@ public final class a implements InvocationHandler {
                 if ("toString".equals(method.getName())) {
                     return null;
                 }
-                ((g) this.f69b).f23525a = method;
+                ((g) this.f226b).f24310a = method;
                 return null;
         }
     }

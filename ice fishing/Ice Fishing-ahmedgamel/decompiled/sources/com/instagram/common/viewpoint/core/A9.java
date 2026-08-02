@@ -6,9 +6,9 @@ import java.io.IOException;
 import java.util.List;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class A9 implements InterfaceC2304oj {
+public class A9 implements InterfaceC2324oj {
     @Override // com.instagram.common.viewpoint.core.C3U
-    public final /* synthetic */ void ADZ(C2348pR c2348pR) {
+    public final /* synthetic */ void ADZ(C2368pR c2368pR) {
     }
 
     @Override // com.instagram.common.viewpoint.core.C3U
@@ -16,31 +16,31 @@ public class A9 implements InterfaceC2304oj {
     }
 
     @Override // com.instagram.common.viewpoint.core.D9
-    public final /* synthetic */ void ADk(int i, C2248no c2248no, C0833Cs c0833Cs) {
+    public final /* synthetic */ void ADk(int i, C2268no c2268no, C0853Cs c0853Cs) {
     }
 
     @Override // com.instagram.common.viewpoint.core.D9
-    public final /* synthetic */ void AEb(int i, C2248no c2248no, Cq cq, C0833Cs c0833Cs) {
+    public final /* synthetic */ void AEb(int i, C2268no c2268no, Cq cq, C0853Cs c0853Cs) {
     }
 
     @Override // com.instagram.common.viewpoint.core.D9
-    public final /* synthetic */ void AEd(int i, C2248no c2248no, Cq cq, C0833Cs c0833Cs, Object obj, Object obj2) {
+    public final /* synthetic */ void AEd(int i, C2268no c2268no, Cq cq, C0853Cs c0853Cs, Object obj, Object obj2) {
     }
 
     @Override // com.instagram.common.viewpoint.core.D9
-    public final /* synthetic */ void AEg(int i, C2248no c2248no, Cq cq, C0833Cs c0833Cs, IOException iOException, boolean z3) {
+    public final /* synthetic */ void AEg(int i, C2268no c2268no, Cq cq, C0853Cs c0853Cs, IOException iOException, boolean z6) {
     }
 
     @Override // com.instagram.common.viewpoint.core.C3U
-    public final /* synthetic */ void AFI(C2379px c2379px) {
+    public final /* synthetic */ void AFI(C2399px c2399px) {
     }
 
     @Override // com.instagram.common.viewpoint.core.C3U
-    public final /* synthetic */ void AFK(C2381pz c2381pz) {
+    public final /* synthetic */ void AFK(C2401pz c2401pz) {
     }
 
     @Override // com.instagram.common.viewpoint.core.C3U
-    public final /* synthetic */ void AFM(boolean z3, int i) {
+    public final /* synthetic */ void AFM(boolean z6, int i) {
     }
 
     @Override // com.instagram.common.viewpoint.core.C3U
@@ -53,14 +53,14 @@ public class A9 implements InterfaceC2304oj {
     }
 
     @Override // com.instagram.common.viewpoint.core.C3U
-    public final /* synthetic */ void AGE(C2355pY c2355pY) {
+    public final /* synthetic */ void AGE(C2375pY c2375pY) {
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2304oj
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2324oj
     public final void ACe() {
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2304oj
-    public final void AJf(InterfaceC06033b interfaceC06033b, Looper looper) {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2324oj
+    public final void AJf(InterfaceC06233b interfaceC06233b, Looper looper) {
     }
 }

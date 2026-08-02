@@ -1,18 +1,12 @@
 package G3;
 
-import android.os.Handler;
-import android.os.Looper;
-import android.view.animation.LinearInterpolator;
-import l3.AbstractC4661a;
-
 /* loaded from: classes2.dex */
-public abstract class d {
-
-    /* renamed from: a, reason: collision with root package name */
-    public static final /* synthetic */ int f1070a = 0;
-
-    static {
-        LinearInterpolator linearInterpolator = AbstractC4661a.f38903a;
-        new Handler(Looper.getMainLooper(), new a(0));
+public final class d extends X2.a {
+    @Override // X2.a
+    public final void j(u uVar, float f2, float f9) {
+        uVar.d(f9 * f2, 180.0f, 90.0f);
+        double d9 = f9;
+        double d10 = f2;
+        uVar.c((float) (Math.sin(Math.toRadians(90.0f)) * d9 * d10), (float) (Math.sin(Math.toRadians(0.0f)) * d9 * d10));
     }
 }

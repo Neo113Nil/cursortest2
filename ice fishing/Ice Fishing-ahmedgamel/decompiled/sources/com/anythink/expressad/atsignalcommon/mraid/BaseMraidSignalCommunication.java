@@ -13,7 +13,7 @@ import org.json.JSONObject;
 public class BaseMraidSignalCommunication extends AbsFeedBackForH5 {
 
     /* renamed from: a, reason: collision with root package name */
-    private IMraidSignalCommunication f18032a;
+    private IMraidSignalCommunication f18819a;
 
     /* JADX WARN: Multi-variable type inference failed */
     @Override // com.anythink.expressad.atsignalcommon.windvane.j
@@ -21,18 +21,18 @@ public class BaseMraidSignalCommunication extends AbsFeedBackForH5 {
         super.initialize(context, windVaneWebView);
         try {
             if (context instanceof IMraidSignalCommunication) {
-                this.f18032a = (IMraidSignalCommunication) context;
+                this.f18819a = (IMraidSignalCommunication) context;
                 return;
             }
             if (windVaneWebView.getObject() != null && (windVaneWebView.getObject() instanceof IMraidSignalCommunication)) {
-                this.f18032a = (IMraidSignalCommunication) windVaneWebView.getObject();
+                this.f18819a = (IMraidSignalCommunication) windVaneWebView.getObject();
             }
             if (windVaneWebView.getMraidObject() == null || !(windVaneWebView.getMraidObject() instanceof IMraidSignalCommunication)) {
                 return;
             }
-            this.f18032a = (IMraidSignalCommunication) windVaneWebView.getMraidObject();
+            this.f18819a = (IMraidSignalCommunication) windVaneWebView.getMraidObject();
         } catch (Exception e9) {
-            if (a.f17618a) {
+            if (a.f18405a) {
                 e9.printStackTrace();
             }
         }
@@ -41,7 +41,7 @@ public class BaseMraidSignalCommunication extends AbsFeedBackForH5 {
     public void open(Object obj, String str) {
         WindVaneWebView windVaneWebView;
         if (obj instanceof b) {
-            windVaneWebView = ((b) obj).f18062a;
+            windVaneWebView = ((b) obj).f18849a;
             com.anythink.core.express.b.a.a();
             com.anythink.core.express.b.a.a(windVaneWebView, "open");
         } else {
@@ -49,14 +49,14 @@ public class BaseMraidSignalCommunication extends AbsFeedBackForH5 {
         }
         try {
             String optString = new JSONObject(str).optString("url");
-            if (this.f18032a == null || TextUtils.isEmpty(optString)) {
+            if (this.f18819a == null || TextUtils.isEmpty(optString)) {
                 return;
             }
-            if (windVaneWebView == null || System.currentTimeMillis() - windVaneWebView.lastTouchTime <= com.anythink.expressad.b.c.a.f18198c) {
-                this.f18032a.open(optString);
+            if (windVaneWebView == null || System.currentTimeMillis() - windVaneWebView.lastTouchTime <= com.anythink.expressad.b.c.a.f18985c) {
+                this.f18819a.open(optString);
                 return;
             }
-            d mraidCampaign = this.f18032a.getMraidCampaign();
+            d mraidCampaign = this.f18819a.getMraidCampaign();
             windVaneWebView.getUrl();
             com.anythink.expressad.b.c.a.a(mraidCampaign);
         } catch (Throwable unused) {

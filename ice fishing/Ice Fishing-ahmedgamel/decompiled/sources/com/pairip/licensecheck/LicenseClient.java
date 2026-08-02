@@ -51,10 +51,10 @@ public class LicenseClient implements ServiceConnection {
     protected static boolean eventualShutdownEnabled = true;
     public static boolean gracefulShutdownEnabled = true;
     private static final Handler handler;
-    protected static String licensePubKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtpxiA2uQK77ppbtYkFrXk/3BARbk/qOhqrTr8KDOsNKAu+qlp25Alroiusx5xGUmyuhGQ8NlaGIMI9EoDLEnzUPZqDnMgG2pz4UWzB5rHsVPW+0ebTXXVNJQ577y1D9yAGAP31oVYnQFEFQT+MsR3Bzrk6LjEgTZ2JYE4KAyALxCUUw620woAVPbT3EXKWzPp0iuLlImjchq4RnF+X+4Af0i4bGzlb9jh5B3+/X3xkxljRrl2Xb6t8E5T7yVLOHy2LbUBgH+4awC8l8Ql/IWXJOfOCM4mYQs5JDDXZK2mELqA5yw2W46FuIW8C+OuhStbua82gOevHFqIeN2cfcBtwIDAQAB";
+    protected static String licensePubKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA00ebqNuoN4zEL1FLRMsuQeCNyw9Bp6h77TqhT/o+BgkwrGuo9IExkTaaU2M4ar4sH0NnNDI9hrfpXiJe8N3XGIrv2yaamelXjzAsHjZva+Ed+vVAlSo1dLkiXAcKQOrR6us9trVm4ZD57MQbCmxLJHJpGb7X167vnVrtiTsRWu0joXioSd80yu96F1/0DeR+3hY6ITBNHrsPctTgTgLPX4zCqxDwQPSbFJadad7zWzISk1f1OK3LyUjRJNzmwx3TrV3aAr20rW5tfJBJalDPZN/+rP35Gr7CmWTrusfT7Ct/QMvZIpLgKHsnvwu0H0QQ0Rz0CXEm9tKVEu4fiFe9/wIDAQAB";
     protected static boolean localCheckEnabled = true;
     protected static ImmediateTaskExecutor mainThreadRunner = null;
-    protected static String packageName = "com.icefishingapp.icefishing";
+    protected static String packageName = "com.IceFishing.LiveIceFishing";
     protected static boolean repeatedCheckEnabled = true;
     private static Bundle responsePayload;
     private final Context context;
@@ -170,11 +170,11 @@ public class LicenseClient implements ServiceConnection {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public /* synthetic */ void lambda$initializeLicenseCheck$1(boolean z3) {
-        if (z3) {
+    public /* synthetic */ void lambda$initializeLicenseCheck$1(boolean z6) {
+        if (z6) {
             licenseCheckState = LicenseCheckState.LOCAL_CHECK_OK;
         }
-        lambda$retryOrThrow$0(z3 && backgroundLicensingServiceEnabled);
+        lambda$retryOrThrow$0(z6 && backgroundLicensingServiceEnabled);
     }
 
     private boolean performLocalInstallerCheck() {

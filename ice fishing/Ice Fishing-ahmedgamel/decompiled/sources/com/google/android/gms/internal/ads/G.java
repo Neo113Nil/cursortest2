@@ -9,7 +9,7 @@ public final class G extends IOException {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public G(Throwable th) {
-        super(D.y.s(new StringBuilder(r1.length() + r0.length() + 11), "Unexpected ", r0, r1), th);
+        super(D.x.p(new StringBuilder(r1.length() + r0.length() + 11), "Unexpected ", r0, r1), th);
         String simpleName = th.getClass().getSimpleName();
         String concat = th.getMessage() != null ? ": ".concat(String.valueOf(th.getMessage())) : "";
     }

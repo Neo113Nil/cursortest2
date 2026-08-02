@@ -1,7 +1,5 @@
 package A2;
 
-import android.widget.RelativeLayout;
-
 /* loaded from: classes.dex */
-public abstract class a extends RelativeLayout {
+public interface a {
 }

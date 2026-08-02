@@ -21,7 +21,7 @@ public final class JQ {
     public long[] A0D = new long[0];
     public boolean[] A0G = new boolean[0];
     public boolean[] A0F = new boolean[0];
-    public final C06474v A0H = new C06474v();
+    public final C06674v A0H = new C06674v();
 
     public final long A00(int i) {
         return this.A0D[i];
@@ -42,30 +42,30 @@ public final class JQ {
         this.A0A = true;
     }
 
-    public final void A03(int i, int i6) {
+    public final void A03(int i, int i4) {
         this.A01 = i;
-        this.A00 = i6;
+        this.A00 = i4;
         if (this.A0C.length < i) {
             this.A0E = new long[i];
             this.A0C = new int[i];
         }
-        if (this.A0B.length < i6) {
-            int i9 = (i6 * 125) / 100;
-            this.A0B = new int[i9];
-            this.A0D = new long[i9];
-            this.A0G = new boolean[i9];
-            this.A0F = new boolean[i9];
+        if (this.A0B.length < i4) {
+            int i6 = (i4 * 125) / 100;
+            this.A0B = new int[i6];
+            this.A0D = new long[i6];
+            this.A0G = new boolean[i6];
+            this.A0F = new boolean[i6];
         }
     }
 
-    public final void A04(C06474v c06474v) {
-        c06474v.A0k(this.A0H.A0l(), 0, this.A0H.A0A());
+    public final void A04(C06674v c06674v) {
+        c06674v.A0k(this.A0H.A0l(), 0, this.A0H.A0A());
         this.A0H.A0f(0);
         this.A0A = false;
     }
 
-    public final void A05(InterfaceC2191ms interfaceC2191ms) throws IOException {
-        interfaceC2191ms.readFully(this.A0H.A0l(), 0, this.A0H.A0A());
+    public final void A05(InterfaceC2211ms interfaceC2211ms) throws IOException {
+        interfaceC2211ms.readFully(this.A0H.A0l(), 0, this.A0H.A0A());
         this.A0H.A0f(0);
         this.A0A = false;
     }

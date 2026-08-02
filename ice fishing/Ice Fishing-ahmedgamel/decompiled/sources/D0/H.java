@@ -1,278 +1,278 @@
 package D0;
 
-import com.google.android.gms.internal.ads.AbstractC2772Sd;
-import com.google.android.gms.internal.ads.C3029cO;
-import com.google.android.gms.internal.ads.C3889sO;
-import com.google.android.gms.internal.ads.C3918t;
+import com.google.android.gms.internal.ads.AbstractC2792Sd;
+import com.google.android.gms.internal.ads.C3052cO;
+import com.google.android.gms.internal.ads.C3912sO;
+import com.google.android.gms.internal.ads.C3941t;
 import com.google.android.gms.internal.ads.DP;
-import com.google.android.gms.internal.ads.IQ;
-import com.google.android.gms.internal.ads.InterfaceC3328i0;
-import com.google.android.gms.internal.ads.InterfaceC3757q;
+import com.google.android.gms.internal.ads.InterfaceC3351i0;
+import com.google.android.gms.internal.ads.InterfaceC3780q;
 import com.google.android.gms.internal.ads.Is;
-import com.google.android.gms.internal.ads.RP;
+import com.google.android.gms.internal.ads.LQ;
+import com.google.android.gms.internal.ads.SP;
 import java.util.Objects;
 
 /* loaded from: classes.dex */
 public final class H {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f535a;
+    public int f430a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f536b;
+    public int f431b;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f537c;
+    public boolean f432c;
 
     /* renamed from: d, reason: collision with root package name */
-    public boolean f538d;
+    public boolean f433d;
 
     /* renamed from: e, reason: collision with root package name */
-    public Object f539e;
+    public Object f434e;
 
     /* renamed from: f, reason: collision with root package name */
-    public Object f540f;
+    public Object f435f;
 
-    public static boolean l(RP rp) {
-        return rp.f27206A != 0;
+    public static boolean l(SP sp) {
+        return sp.f28196A != 0;
     }
 
-    public static final void n(RP rp) {
-        int i = rp.f27206A;
+    public static final void n(SP sp) {
+        int i = sp.f28196A;
         if (i == 2) {
-            AbstractC2772Sd.H(i == 2);
-            rp.f27206A = 1;
-            rp.e();
+            AbstractC2792Sd.H(i == 2);
+            sp.f28196A = 1;
+            sp.e();
         }
     }
 
     public void A(long j6, long j9) {
-        RP rp = (RP) this.f539e;
-        if (l(rp)) {
-            rp.H(j6, j9);
+        SP sp = (SP) this.f434e;
+        if (l(sp)) {
+            sp.H(j6, j9);
         }
-        RP rp2 = (RP) this.f540f;
-        if (rp2 == null || rp2.f27206A == 0) {
+        SP sp2 = (SP) this.f435f;
+        if (sp2 == null || sp2.f28196A == 0) {
             return;
         }
-        rp2.H(j6, j9);
+        sp2.H(j6, j9);
     }
 
-    public boolean B(C3029cO c3029cO) {
-        RP m4 = m(c3029cO);
-        return m4 == null || m4.r0() || m4.I() || m4.J();
+    public boolean B(C3052cO c3052cO) {
+        SP m9 = m(c3052cO);
+        return m9 == null || m9.r0() || m9.I() || m9.J();
     }
 
     public void C() {
         int i;
-        RP rp = (RP) this.f539e;
-        int i6 = rp.f27206A;
-        if (i6 == 1 && this.f536b != 4) {
-            AbstractC2772Sd.H(i6 == 1);
-            rp.f27206A = 2;
-            rp.d();
+        SP sp = (SP) this.f434e;
+        int i4 = sp.f28196A;
+        if (i4 == 1 && this.f431b != 4) {
+            AbstractC2792Sd.H(i4 == 1);
+            sp.f28196A = 2;
+            sp.d();
             return;
         }
-        RP rp2 = (RP) this.f540f;
-        if (rp2 == null || (i = rp2.f27206A) != 1 || this.f536b == 3) {
+        SP sp2 = (SP) this.f435f;
+        if (sp2 == null || (i = sp2.f28196A) != 1 || this.f431b == 3) {
             return;
         }
-        AbstractC2772Sd.H(i == 1);
-        rp2.f27206A = 2;
-        rp2.d();
+        AbstractC2792Sd.H(i == 1);
+        sp2.f28196A = 2;
+        sp2.d();
     }
 
     public void a() {
-        int i = this.f536b;
+        int i = this.f431b;
         if (i != 3 && i != 4) {
             if (i == 2) {
-                this.f536b = 0;
+                this.f431b = 0;
                 return;
             }
             return;
         }
-        boolean z3 = i == 4;
-        RP rp = (RP) this.f539e;
-        RP rp2 = (RP) this.f540f;
-        if (z3) {
-            rp2.getClass();
-            rp2.b(17, rp);
+        boolean z6 = i == 4;
+        SP sp = (SP) this.f434e;
+        SP sp2 = (SP) this.f435f;
+        if (z6) {
+            sp2.getClass();
+            sp2.b(17, sp);
         } else {
-            rp2.getClass();
-            rp.b(17, rp2);
+            sp2.getClass();
+            sp.b(17, sp2);
         }
-        this.f536b = this.f536b != 4 ? 1 : 0;
+        this.f431b = this.f431b != 4 ? 1 : 0;
     }
 
     public void b() {
-        if (!l((RP) this.f539e)) {
+        if (!l((SP) this.f434e)) {
             j(true);
         }
-        RP rp = (RP) this.f540f;
-        if (rp == null || rp.f27206A != 0) {
+        SP sp = (SP) this.f435f;
+        if (sp == null || sp.f28196A != 0) {
             return;
         }
         j(false);
     }
 
-    public int c(C3029cO c3029cO, C3918t c3918t, Is is) {
-        int k9 = k((RP) this.f539e, c3029cO, c3918t, is);
-        return k9 == 1 ? k((RP) this.f540f, c3029cO, c3918t, is) : k9;
+    public int c(C3052cO c3052cO, C3941t c3941t, Is is) {
+        int k9 = k((SP) this.f434e, c3052cO, c3941t, is);
+        return k9 == 1 ? k((SP) this.f435f, c3052cO, c3941t, is) : k9;
     }
 
     public void d() {
-        RP rp = (RP) this.f539e;
-        AbstractC2772Sd.H(rp.f27206A == 0);
-        rp.k();
-        this.f537c = false;
-        RP rp2 = (RP) this.f540f;
-        if (rp2 != null) {
-            AbstractC2772Sd.H(rp2.f27206A == 0);
-            rp2.k();
-            this.f538d = false;
+        SP sp = (SP) this.f434e;
+        AbstractC2792Sd.H(sp.f28196A == 0);
+        sp.k();
+        this.f432c = false;
+        SP sp2 = (SP) this.f435f;
+        if (sp2 != null) {
+            AbstractC2792Sd.H(sp2.f28196A == 0);
+            sp2.k();
+            this.f433d = false;
         }
     }
 
     public void e(Object obj) {
-        RP rp = (RP) this.f539e;
-        if (rp.f27272u != 2) {
+        SP sp = (SP) this.f434e;
+        if (sp.f28261u != 2) {
             return;
         }
-        int i = this.f536b;
+        int i = this.f431b;
         if (i != 4 && i != 1) {
-            rp.b(1, obj);
+            sp.b(1, obj);
             return;
         }
-        RP rp2 = (RP) this.f540f;
-        rp2.getClass();
-        rp2.b(1, obj);
+        SP sp2 = (SP) this.f435f;
+        sp2.getClass();
+        sp2.b(1, obj);
     }
 
-    public void f(InterfaceC3328i0 interfaceC3328i0) {
-        RP rp = (RP) this.f539e;
-        if (rp.f27272u != 2) {
+    public void f(InterfaceC3351i0 interfaceC3351i0) {
+        SP sp = (SP) this.f434e;
+        if (sp.f28261u != 2) {
             return;
         }
-        rp.b(7, interfaceC3328i0);
-        RP rp2 = (RP) this.f540f;
-        if (rp2 != null) {
-            rp2.b(7, interfaceC3328i0);
+        sp.b(7, interfaceC3351i0);
+        SP sp2 = (SP) this.f435f;
+        if (sp2 != null) {
+            sp2.b(7, interfaceC3351i0);
         }
     }
 
     public boolean g() {
-        int i = this.f536b;
+        int i = this.f431b;
         if (i == 0 || i == 2 || i == 4) {
-            return l((RP) this.f539e);
+            return l((SP) this.f434e);
         }
-        RP rp = (RP) this.f540f;
-        rp.getClass();
-        return rp.f27206A != 0;
+        SP sp = (SP) this.f435f;
+        sp.getClass();
+        return sp.f28196A != 0;
     }
 
-    public boolean h(C3029cO c3029cO, RP rp) {
-        if (rp == null) {
+    public boolean h(C3052cO c3052cO, SP sp) {
+        if (sp == null) {
             return true;
         }
-        IQ[] iqArr = c3029cO.f29475c;
-        int i = this.f535a;
-        IQ iq = iqArr[i];
-        IQ iq2 = rp.f27208B;
-        if (iq2 == null) {
+        LQ[] lqArr = c3052cO.f30258c;
+        int i = this.f430a;
+        LQ lq = lqArr[i];
+        LQ lq2 = sp.f28198B;
+        if (lq2 == null) {
             return true;
         }
-        if (iq2 == iq && (iq == null || rp.r0())) {
+        if (lq2 == lq && (lq == null || sp.r0())) {
             return true;
         }
-        C3029cO c3029cO2 = c3029cO.f29484m;
-        return c3029cO2 != null && c3029cO2.f29475c[i] == rp.f27208B;
+        C3052cO c3052cO2 = c3052cO.f30267m;
+        return c3052cO2 != null && c3052cO2.f30258c[i] == sp.f28198B;
     }
 
-    public void i(RP rp, Is is) {
-        AbstractC2772Sd.H(((RP) this.f539e) == rp || ((RP) this.f540f) == rp);
-        if (l(rp)) {
-            if (rp == ((RP) is.f25611x)) {
-                is.f25612y = null;
-                is.f25611x = null;
-                is.f25607n = true;
+    public void i(SP sp, Is is) {
+        AbstractC2792Sd.H(((SP) this.f434e) == sp || ((SP) this.f435f) == sp);
+        if (l(sp)) {
+            if (sp == ((SP) is.f26364x)) {
+                is.f26365y = null;
+                is.f26364x = null;
+                is.f26360n = true;
             }
-            n(rp);
-            AbstractC2772Sd.H(rp.f27206A == 1);
-            S0.l lVar = rp.f27274v;
-            lVar.f2797u = null;
-            lVar.f2798v = null;
-            rp.f27206A = 0;
-            rp.f27208B = null;
-            rp.f27210C = null;
-            rp.f27217G = false;
-            rp.f();
-            rp.J = null;
-            rp.f27224K = com.anythink.basead.exoplayer.b.f6382b;
+            n(sp);
+            AbstractC2792Sd.H(sp.f28196A == 1);
+            S0.l lVar = sp.f28263v;
+            lVar.f2926u = null;
+            lVar.f2927v = null;
+            sp.f28196A = 0;
+            sp.f28198B = null;
+            sp.f28200C = null;
+            sp.f28207G = false;
+            sp.f();
+            sp.J = null;
+            sp.f28214K = com.anythink.basead.exoplayer.b.f7168b;
         }
     }
 
-    public void j(boolean z3) {
-        if (z3) {
-            if (this.f537c) {
-                RP rp = (RP) this.f539e;
-                AbstractC2772Sd.H(rp.f27206A == 0);
-                S0.l lVar = rp.f27274v;
-                lVar.f2797u = null;
-                lVar.f2798v = null;
-                rp.i();
-                this.f537c = false;
+    public void j(boolean z6) {
+        if (z6) {
+            if (this.f432c) {
+                SP sp = (SP) this.f434e;
+                AbstractC2792Sd.H(sp.f28196A == 0);
+                S0.l lVar = sp.f28263v;
+                lVar.f2926u = null;
+                lVar.f2927v = null;
+                sp.i();
+                this.f432c = false;
                 return;
             }
             return;
         }
-        if (this.f538d) {
-            RP rp2 = (RP) this.f540f;
-            rp2.getClass();
-            AbstractC2772Sd.H(rp2.f27206A == 0);
-            S0.l lVar2 = rp2.f27274v;
-            lVar2.f2797u = null;
-            lVar2.f2798v = null;
-            rp2.i();
-            this.f538d = false;
+        if (this.f433d) {
+            SP sp2 = (SP) this.f435f;
+            sp2.getClass();
+            AbstractC2792Sd.H(sp2.f28196A == 0);
+            S0.l lVar2 = sp2.f28263v;
+            lVar2.f2926u = null;
+            lVar2.f2927v = null;
+            sp2.i();
+            this.f433d = false;
         }
     }
 
-    public int k(RP rp, C3029cO c3029cO, C3918t c3918t, Is is) {
+    public int k(SP sp, C3052cO c3052cO, C3941t c3941t, Is is) {
         int i;
-        if (rp != null && rp.f27206A != 0) {
-            RP rp2 = (RP) this.f539e;
-            boolean z3 = rp != rp2;
-            if (rp == rp2 && ((i = this.f536b) == 2 || i == 4)) {
+        if (sp != null && sp.f28196A != 0) {
+            SP sp2 = (SP) this.f434e;
+            boolean z6 = sp != sp2;
+            if (sp == sp2 && ((i = this.f431b) == 2 || i == 4)) {
                 return 1;
             }
-            if (rp == ((RP) this.f540f) && this.f536b == 3) {
+            if (sp == ((SP) this.f435f) && this.f431b == 3) {
                 return 1;
             }
-            IQ iq = rp.f27208B;
-            IQ[] iqArr = c3029cO.f29475c;
-            int i6 = this.f535a;
-            IQ iq2 = iqArr[i6];
-            boolean c9 = c3918t.c(i6);
-            if (!c9 || iq != iq2) {
-                if (!rp.f27217G) {
-                    InterfaceC3757q interfaceC3757q = ((InterfaceC3757q[]) c3918t.f34179v)[i6];
-                    int d2 = interfaceC3757q != null ? interfaceC3757q.d() : 0;
-                    DP[] dpArr = new DP[d2];
-                    for (int i9 = 0; i9 < d2; i9++) {
-                        interfaceC3757q.getClass();
-                        dpArr[i9] = interfaceC3757q.x(i9);
+            LQ lq = sp.f28198B;
+            LQ[] lqArr = c3052cO.f30258c;
+            int i4 = this.f430a;
+            LQ lq2 = lqArr[i4];
+            boolean c9 = c3941t.c(i4);
+            if (!c9 || lq != lq2) {
+                if (!sp.f28207G) {
+                    InterfaceC3780q interfaceC3780q = ((InterfaceC3780q[]) c3941t.f34965v)[i4];
+                    int d9 = interfaceC3780q != null ? interfaceC3780q.d() : 0;
+                    DP[] dpArr = new DP[d9];
+                    for (int i6 = 0; i6 < d9; i6++) {
+                        interfaceC3780q.getClass();
+                        dpArr[i6] = interfaceC3780q.x(i6);
                     }
-                    IQ iq3 = iqArr[i6];
-                    iq3.getClass();
-                    rp.p0(dpArr, iq3, c3029cO.a(), c3029cO.f29487p, c3029cO.f29479g.f29760a);
+                    LQ lq3 = lqArr[i4];
+                    lq3.getClass();
+                    sp.p0(dpArr, lq3, c3052cO.a(), c3052cO.f30270p, c3052cO.f30262g.f30532a);
                     return 3;
                 }
-                if (!rp.J()) {
+                if (!sp.J()) {
                     return 0;
                 }
-                i(rp, is);
+                i(sp, is);
                 if (!c9 || q()) {
-                    j(!z3);
+                    j(!z6);
                     return 1;
                 }
             }
@@ -280,17 +280,17 @@ public final class H {
         return 1;
     }
 
-    public RP m(C3029cO c3029cO) {
-        if (c3029cO != null) {
-            IQ iq = c3029cO.f29475c[this.f535a];
-            if (iq != null) {
-                RP rp = (RP) this.f539e;
-                if (rp.f27208B == iq) {
-                    return rp;
+    public SP m(C3052cO c3052cO) {
+        if (c3052cO != null) {
+            LQ lq = c3052cO.f30258c[this.f430a];
+            if (lq != null) {
+                SP sp = (SP) this.f434e;
+                if (sp.f28198B == lq) {
+                    return sp;
                 }
-                RP rp2 = (RP) this.f540f;
-                if (rp2 != null && rp2.f27208B == iq) {
-                    return rp2;
+                SP sp2 = (SP) this.f435f;
+                if (sp2 != null && sp2.f28198B == lq) {
+                    return sp2;
                 }
             }
         }
@@ -298,112 +298,112 @@ public final class H {
     }
 
     public boolean o() {
-        return ((RP) this.f540f) != null;
+        return ((SP) this.f435f) != null;
     }
 
     public void p() {
         int i;
-        AbstractC2772Sd.H(!q());
-        if (l((RP) this.f539e)) {
+        AbstractC2792Sd.H(!q());
+        if (l((SP) this.f434e)) {
             i = 3;
         } else {
             i = 2;
-            RP rp = (RP) this.f540f;
-            if (rp != null && rp.f27206A != 0) {
+            SP sp = (SP) this.f435f;
+            if (sp != null && sp.f28196A != 0) {
                 i = 4;
             }
         }
-        this.f536b = i;
+        this.f431b = i;
     }
 
     public boolean q() {
-        int i = this.f536b;
+        int i = this.f431b;
         return i == 2 || i == 4 || i == 3;
     }
 
     public int r() {
-        boolean l9 = l((RP) this.f539e);
+        boolean l9 = l((SP) this.f434e);
         int i = 0;
-        RP rp = (RP) this.f540f;
-        if (rp != null && rp.f27206A != 0) {
+        SP sp = (SP) this.f435f;
+        if (sp != null && sp.f28196A != 0) {
             i = 1;
         }
         return (l9 ? 1 : 0) + i;
     }
 
-    public boolean s(C3029cO c3029cO) {
-        RP m4 = m(c3029cO);
-        m4.getClass();
-        return m4.r0();
+    public boolean s(C3052cO c3052cO) {
+        SP m9 = m(c3052cO);
+        m9.getClass();
+        return m9.r0();
     }
 
-    public void t(C3029cO c3029cO) {
-        RP m4 = m(c3029cO);
-        m4.getClass();
-        m4.f27217G = true;
+    public void t(C3052cO c3052cO) {
+        SP m9 = m(c3052cO);
+        m9.getClass();
+        m9.f28207G = true;
     }
 
-    public void u(C3918t c3918t, C3918t c3918t2) {
+    public void u(C3941t c3941t, C3941t c3941t2) {
         int i;
-        int i6 = this.f535a;
-        boolean c9 = c3918t.c(i6);
-        boolean c10 = c3918t2.c(i6);
-        RP rp = (RP) this.f539e;
-        RP rp2 = (RP) this.f540f;
-        if (rp2 == null || (i = this.f536b) == 3 || (i == 0 && l(rp))) {
-            rp2 = rp;
+        int i4 = this.f430a;
+        boolean c9 = c3941t.c(i4);
+        boolean c10 = c3941t2.c(i4);
+        SP sp = (SP) this.f434e;
+        SP sp2 = (SP) this.f435f;
+        if (sp2 == null || (i = this.f431b) == 3 || (i == 0 && l(sp))) {
+            sp2 = sp;
         }
-        if (!c9 || rp2.f27217G) {
+        if (!c9 || sp2.f28207G) {
             return;
         }
-        int i9 = rp.f27272u;
-        C3889sO c3889sO = ((C3889sO[]) c3918t.f34178u)[i6];
-        C3889sO c3889sO2 = ((C3889sO[]) c3918t2.f34178u)[i6];
-        if (c10 && Objects.equals(c3889sO2, c3889sO) && !q()) {
+        int i6 = sp.f28261u;
+        C3912sO c3912sO = ((C3912sO[]) c3941t.f34964u)[i4];
+        C3912sO c3912sO2 = ((C3912sO[]) c3941t2.f34964u)[i4];
+        if (c10 && Objects.equals(c3912sO2, c3912sO) && !q()) {
             return;
         }
-        rp2.f27217G = true;
+        sp2.f28207G = true;
     }
 
     public void v() {
         int i;
-        RP rp = (RP) this.f539e;
-        if (l(rp) && (i = this.f536b) != 4 && i != 2) {
-            rp.f27217G = true;
+        SP sp = (SP) this.f434e;
+        if (l(sp) && (i = this.f431b) != 4 && i != 2) {
+            sp.f28207G = true;
         }
-        RP rp2 = (RP) this.f540f;
-        if (rp2 == null || rp2.f27206A == 0 || this.f536b == 3) {
+        SP sp2 = (SP) this.f435f;
+        if (sp2 == null || sp2.f28196A == 0 || this.f431b == 3) {
             return;
         }
-        rp2.f27217G = true;
+        sp2.f28207G = true;
     }
 
     public void w() {
-        RP rp = (RP) this.f539e;
-        if (l(rp)) {
-            rp.s();
+        SP sp = (SP) this.f434e;
+        if (l(sp)) {
+            sp.s();
             return;
         }
-        RP rp2 = (RP) this.f540f;
-        if (rp2 == null || rp2.f27206A == 0) {
+        SP sp2 = (SP) this.f435f;
+        if (sp2 == null || sp2.f28196A == 0) {
             return;
         }
-        rp2.s();
+        sp2.s();
     }
 
     public boolean x() {
-        RP rp = (RP) this.f539e;
-        boolean J = l(rp) ? rp.J() : true;
-        RP rp2 = (RP) this.f540f;
-        return (rp2 == null || rp2.f27206A == 0) ? J : J & rp2.J();
+        SP sp = (SP) this.f434e;
+        boolean J = l(sp) ? sp.J() : true;
+        SP sp2 = (SP) this.f435f;
+        return (sp2 == null || sp2.f28196A == 0) ? J : J & sp2.J();
     }
 
-    public boolean y(C3029cO c3029cO) {
-        int i = this.f536b;
-        return ((i == 2 || i == 4) && m(c3029cO) == ((RP) this.f539e)) || (this.f536b == 3 && m(c3029cO) == ((RP) this.f540f));
+    public boolean y(C3052cO c3052cO) {
+        int i = this.f431b;
+        return ((i == 2 || i == 4) && m(c3052cO) == ((SP) this.f434e)) || (this.f431b == 3 && m(c3052cO) == ((SP) this.f435f));
     }
 
-    public boolean z(C3029cO c3029cO) {
-        return h(c3029cO, (RP) this.f539e) && h(c3029cO, (RP) this.f540f);
+    public boolean z(C3052cO c3052cO) {
+        return h(c3052cO, (SP) this.f434e) && h(c3052cO, (SP) this.f435f);
     }
 }

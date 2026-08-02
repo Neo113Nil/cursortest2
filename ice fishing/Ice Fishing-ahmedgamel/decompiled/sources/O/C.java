@@ -8,8 +8,8 @@ public abstract class C {
         return velocityTracker.getAxisVelocity(i);
     }
 
-    public static float b(VelocityTracker velocityTracker, int i, int i6) {
-        return velocityTracker.getAxisVelocity(i, i6);
+    public static float b(VelocityTracker velocityTracker, int i, int i4) {
+        return velocityTracker.getAxisVelocity(i, i4);
     }
 
     public static boolean c(VelocityTracker velocityTracker, int i) {

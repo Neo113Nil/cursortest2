@@ -4,7 +4,7 @@ import android.view.MenuItem;
 
 /* loaded from: classes.dex */
 public interface k {
-    void k(m mVar);
+    void h(m mVar);
 
-    boolean q(m mVar, MenuItem menuItem);
+    boolean m(m mVar, MenuItem menuItem);
 }

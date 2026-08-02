@@ -7,27 +7,27 @@ import com.anythink.core.common.d.t;
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static volatile a f22213a;
+    private static volatile a f23000a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final com.anythink.core.common.res.b.c f22214b = com.anythink.core.common.res.b.c.a();
+    private final com.anythink.core.common.res.b.c f23001b = com.anythink.core.common.res.b.c.a();
 
     private a() {
     }
 
     public static a a() {
-        if (f22213a == null) {
+        if (f23000a == null) {
             synchronized (a.class) {
                 try {
-                    if (f22213a == null) {
-                        f22213a = new a();
+                    if (f23000a == null) {
+                        f23000a = new a();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f22213a;
+        return f23000a;
     }
 
     public static com.anythink.core.common.a.n b(String str) {

@@ -20,7 +20,7 @@ public class RewardedInterstitialAd implements FullScreenAd {
         @Override // com.facebook.ads.Ad.LoadConfigBuilder
         RewardedInterstitialAdLoadConfigBuilder withBid(String str);
 
-        RewardedInterstitialAdLoadConfigBuilder withFailOnCacheFailureEnabled(boolean z3);
+        RewardedInterstitialAdLoadConfigBuilder withFailOnCacheFailureEnabled(boolean z6);
 
         RewardedInterstitialAdLoadConfigBuilder withRewardData(RewardData rewardData);
     }

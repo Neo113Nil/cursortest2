@@ -1,28 +1,28 @@
 package com.anythink.expressad.foundation.g.f.c;
 
 import android.text.TextUtils;
-import u1.h;
+import com.google.android.gms.internal.ads.Wv;
 
 /* loaded from: classes.dex */
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f19253a;
+    private final String f20040a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final String f19254b;
+    private final String f20041b;
 
     public c(String str, String str2) {
-        this.f19253a = str;
-        this.f19254b = str2;
+        this.f20040a = str;
+        this.f20041b = str2;
     }
 
     public final String a() {
-        return this.f19253a;
+        return this.f20040a;
     }
 
     public final String b() {
-        return this.f19254b;
+        return this.f20041b;
     }
 
     public final boolean equals(Object obj) {
@@ -31,7 +31,7 @@ public final class c {
         }
         if (obj != null && c.class == obj.getClass()) {
             c cVar = (c) obj;
-            if (TextUtils.equals(this.f19253a, cVar.f19253a) && TextUtils.equals(this.f19254b, cVar.f19254b)) {
+            if (TextUtils.equals(this.f20040a, cVar.f20040a) && TextUtils.equals(this.f20041b, cVar.f20041b)) {
                 return true;
             }
         }
@@ -39,13 +39,13 @@ public final class c {
     }
 
     public final int hashCode() {
-        return this.f19254b.hashCode() + (this.f19253a.hashCode() * 31);
+        return this.f20041b.hashCode() + (this.f20040a.hashCode() * 31);
     }
 
     public final String toString() {
         StringBuilder sb = new StringBuilder("Header[name=");
-        sb.append(this.f19253a);
+        sb.append(this.f20040a);
         sb.append(",value=");
-        return h.g(sb, this.f19254b, "]");
+        return Wv.i(sb, this.f20041b, "]");
     }
 }

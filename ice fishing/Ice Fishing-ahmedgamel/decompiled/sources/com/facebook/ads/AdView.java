@@ -28,9 +28,9 @@ public class AdView extends RelativeLayout implements Ad {
 
     public AdView(Context context, String str, AdSize adSize) {
         super(context);
-        F1.a aVar = new F1.a(11, this);
-        this.mAdViewParentApi = aVar;
-        this.mAdViewApi = DynamicLoaderFactory.makeLoader(context).createAdViewApi(context, str, adSize, aVar, this);
+        n4.c cVar = new n4.c(27, this);
+        this.mAdViewParentApi = cVar;
+        this.mAdViewApi = DynamicLoaderFactory.makeLoader(context).createAdViewApi(context, str, adSize, cVar, this);
     }
 
     public AdViewLoadConfigBuilder buildLoadAdConfig() {
@@ -74,8 +74,8 @@ public class AdView extends RelativeLayout implements Ad {
 
     public AdView(Context context, String str, String str2) {
         super(context);
-        F1.a aVar = new F1.a(11, this);
-        this.mAdViewParentApi = aVar;
-        this.mAdViewApi = DynamicLoaderFactory.makeLoader(context).createAdViewApi(context, str, str2, aVar, this);
+        n4.c cVar = new n4.c(27, this);
+        this.mAdViewParentApi = cVar;
+        this.mAdViewApi = DynamicLoaderFactory.makeLoader(context).createAdViewApi(context, str, str2, cVar, this);
     }
 }

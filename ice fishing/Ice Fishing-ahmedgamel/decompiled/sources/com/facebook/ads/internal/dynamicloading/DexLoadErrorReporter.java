@@ -11,7 +11,7 @@ public class DexLoadErrorReporter {
     public static final double SAMPLING = 0.1d;
 
     /* renamed from: a, reason: collision with root package name */
-    public static final AtomicBoolean f23504a = new AtomicBoolean();
+    public static final AtomicBoolean f24289a = new AtomicBoolean();
 
     public static void a(Context context, String str, JSONObject jSONObject) {
         String packageName = context.getPackageName();
@@ -27,9 +27,9 @@ public class DexLoadErrorReporter {
         jSONObject.put("OS", "Android");
     }
 
-    public static void reportDexLoadingIssue(Context context, String str, double d2) {
-        AtomicBoolean atomicBoolean = f23504a;
-        if (atomicBoolean.get() || Math.random() >= d2) {
+    public static void reportDexLoadingIssue(Context context, String str, double d9) {
+        AtomicBoolean atomicBoolean = f24289a;
+        if (atomicBoolean.get() || Math.random() >= d9) {
             return;
         }
         atomicBoolean.set(true);

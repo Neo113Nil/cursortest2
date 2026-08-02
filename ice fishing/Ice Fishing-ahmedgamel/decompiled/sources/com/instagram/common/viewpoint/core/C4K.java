@@ -5,9 +5,9 @@ package com.instagram.common.viewpoint.core;
 public final class C4K extends EB {
     public int A00;
 
-    public C4K(int i, int i6) {
+    public C4K(int i, int i4) {
         super(i);
-        this.A00 = i6;
+        this.A00 = i4;
     }
 
     public final int A01() {

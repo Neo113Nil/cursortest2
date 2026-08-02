@@ -11,9 +11,9 @@ public final class MK {
         this("", false, "", "");
     }
 
-    public MK(String str, boolean z3, String str2, String str3) {
+    public MK(String str, boolean z6, String str2, String str3) {
         this.A02 = str;
-        this.A03 = z3;
+        this.A03 = z6;
         this.A00 = str2;
         this.A01 = str3;
     }

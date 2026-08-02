@@ -2,7 +2,7 @@ package com.anythink.core.common.n.b;
 
 import com.anythink.basead.ui.BaseATView;
 import com.anythink.core.common.n.b.u;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.io.Closeable;
 import java.util.Collections;
 import java.util.List;
@@ -11,125 +11,125 @@ import java.util.List;
 public final class af implements Closeable {
 
     /* renamed from: a, reason: collision with root package name */
-    final ad f15499a;
+    final ad f16286a;
 
     /* renamed from: b, reason: collision with root package name */
-    final ab f15500b;
+    final ab f16287b;
 
     /* renamed from: c, reason: collision with root package name */
-    final int f15501c;
+    final int f16288c;
 
     /* renamed from: d, reason: collision with root package name */
-    final String f15502d;
+    final String f16289d;
 
     /* renamed from: e, reason: collision with root package name */
-    final t f15503e;
+    final t f16290e;
 
     /* renamed from: f, reason: collision with root package name */
-    final u f15504f;
+    final u f16291f;
 
     /* renamed from: g, reason: collision with root package name */
-    final ag f15505g;
+    final ag f16292g;
 
     /* renamed from: h, reason: collision with root package name */
-    final af f15506h;
+    final af f16293h;
     final af i;
 
     /* renamed from: j, reason: collision with root package name */
-    final af f15507j;
+    final af f16294j;
 
     /* renamed from: k, reason: collision with root package name */
-    final long f15508k;
+    final long f16295k;
 
     /* renamed from: l, reason: collision with root package name */
-    final long f15509l;
+    final long f16296l;
 
     /* renamed from: m, reason: collision with root package name */
-    final com.anythink.core.common.n.b.a.b.c f15510m;
+    final com.anythink.core.common.n.b.a.b.c f16297m;
 
     /* renamed from: n, reason: collision with root package name */
-    private volatile d f15511n;
+    private volatile d f16298n;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        ad f15512a;
+        ad f16299a;
 
         /* renamed from: b, reason: collision with root package name */
-        ab f15513b;
+        ab f16300b;
 
         /* renamed from: c, reason: collision with root package name */
-        int f15514c;
+        int f16301c;
 
         /* renamed from: d, reason: collision with root package name */
-        String f15515d;
+        String f16302d;
 
         /* renamed from: e, reason: collision with root package name */
-        t f15516e;
+        t f16303e;
 
         /* renamed from: f, reason: collision with root package name */
-        u.a f15517f;
+        u.a f16304f;
 
         /* renamed from: g, reason: collision with root package name */
-        ag f15518g;
+        ag f16305g;
 
         /* renamed from: h, reason: collision with root package name */
-        af f15519h;
+        af f16306h;
         af i;
 
         /* renamed from: j, reason: collision with root package name */
-        af f15520j;
+        af f16307j;
 
         /* renamed from: k, reason: collision with root package name */
-        long f15521k;
+        long f16308k;
 
         /* renamed from: l, reason: collision with root package name */
-        long f15522l;
+        long f16309l;
 
         /* renamed from: m, reason: collision with root package name */
-        com.anythink.core.common.n.b.a.b.c f15523m;
+        com.anythink.core.common.n.b.a.b.c f16310m;
 
         public a() {
-            this.f15514c = -1;
-            this.f15517f = new u.a();
+            this.f16301c = -1;
+            this.f16304f = new u.a();
         }
 
         private static void d(af afVar) {
-            if (afVar.f15505g != null) {
+            if (afVar.f16292g != null) {
                 throw new IllegalArgumentException("priorResponse.body != null");
             }
         }
 
         public final a a(ad adVar) {
-            this.f15512a = adVar;
+            this.f16299a = adVar;
             return this;
         }
 
         public final a b(String str, String str2) {
-            this.f15517f.a(str, str2);
+            this.f16304f.a(str, str2);
             return this;
         }
 
         public final a c(af afVar) {
-            if (afVar != null && afVar.f15505g != null) {
+            if (afVar != null && afVar.f16292g != null) {
                 throw new IllegalArgumentException("priorResponse.body != null");
             }
-            this.f15520j = afVar;
+            this.f16307j = afVar;
             return this;
         }
 
         private a b(String str) {
-            this.f15517f.b(str);
+            this.f16304f.b(str);
             return this;
         }
 
         public final a a(ab abVar) {
-            this.f15513b = abVar;
+            this.f16300b = abVar;
             return this;
         }
 
         public final a a(int i) {
-            this.f15514c = i;
+            this.f16301c = i;
             return this;
         }
 
@@ -142,49 +142,49 @@ public final class af implements Closeable {
         }
 
         public a(af afVar) {
-            this.f15514c = -1;
-            this.f15512a = afVar.f15499a;
-            this.f15513b = afVar.f15500b;
-            this.f15514c = afVar.f15501c;
-            this.f15515d = afVar.f15502d;
-            this.f15516e = afVar.f15503e;
-            this.f15517f = afVar.f15504f.b();
-            this.f15518g = afVar.f15505g;
-            this.f15519h = afVar.f15506h;
+            this.f16301c = -1;
+            this.f16299a = afVar.f16286a;
+            this.f16300b = afVar.f16287b;
+            this.f16301c = afVar.f16288c;
+            this.f16302d = afVar.f16289d;
+            this.f16303e = afVar.f16290e;
+            this.f16304f = afVar.f16291f.b();
+            this.f16305g = afVar.f16292g;
+            this.f16306h = afVar.f16293h;
             this.i = afVar.i;
-            this.f15520j = afVar.f15507j;
-            this.f15521k = afVar.f15508k;
-            this.f15522l = afVar.f15509l;
-            this.f15523m = afVar.f15510m;
+            this.f16307j = afVar.f16294j;
+            this.f16308k = afVar.f16295k;
+            this.f16309l = afVar.f16296l;
+            this.f16310m = afVar.f16297m;
         }
 
         public final a a(String str) {
-            this.f15515d = str;
+            this.f16302d = str;
             return this;
         }
 
         public final a a(t tVar) {
-            this.f15516e = tVar;
+            this.f16303e = tVar;
             return this;
         }
 
         public final a b(long j6) {
-            this.f15522l = j6;
+            this.f16309l = j6;
             return this;
         }
 
         public final a a(String str, String str2) {
-            this.f15517f.d(str, str2);
+            this.f16304f.d(str, str2);
             return this;
         }
 
         public final a a(u uVar) {
-            this.f15517f = uVar.b();
+            this.f16304f = uVar.b();
             return this;
         }
 
         public final a a(ag agVar) {
-            this.f15518g = agVar;
+            this.f16305g = agVar;
             return this;
         }
 
@@ -192,45 +192,45 @@ public final class af implements Closeable {
             if (afVar != null) {
                 a("networkResponse", afVar);
             }
-            this.f15519h = afVar;
+            this.f16306h = afVar;
             return this;
         }
 
         private static void a(String str, af afVar) {
-            if (afVar.f15505g == null) {
-                if (afVar.f15506h == null) {
+            if (afVar.f16292g == null) {
+                if (afVar.f16293h == null) {
                     if (afVar.i == null) {
-                        if (afVar.f15507j != null) {
-                            throw new IllegalArgumentException(AbstractC4404f.f(str, ".priorResponse != null"));
+                        if (afVar.f16294j != null) {
+                            throw new IllegalArgumentException(Wv.g(str, ".priorResponse != null"));
                         }
                         return;
                     }
-                    throw new IllegalArgumentException(AbstractC4404f.f(str, ".cacheResponse != null"));
+                    throw new IllegalArgumentException(Wv.g(str, ".cacheResponse != null"));
                 }
-                throw new IllegalArgumentException(AbstractC4404f.f(str, ".networkResponse != null"));
+                throw new IllegalArgumentException(Wv.g(str, ".networkResponse != null"));
             }
-            throw new IllegalArgumentException(AbstractC4404f.f(str, ".body != null"));
+            throw new IllegalArgumentException(Wv.g(str, ".body != null"));
         }
 
         public final a a(long j6) {
-            this.f15521k = j6;
+            this.f16308k = j6;
             return this;
         }
 
         private void a(com.anythink.core.common.n.b.a.b.c cVar) {
-            this.f15523m = cVar;
+            this.f16310m = cVar;
         }
 
         public final af a() {
-            if (this.f15512a != null) {
-                if (this.f15513b != null) {
-                    if (this.f15514c >= 0) {
-                        if (this.f15515d != null) {
+            if (this.f16299a != null) {
+                if (this.f16300b != null) {
+                    if (this.f16301c >= 0) {
+                        if (this.f16302d != null) {
                             return new af(this);
                         }
                         throw new IllegalStateException("message == null");
                     }
-                    throw new IllegalStateException("code < 0: " + this.f15514c);
+                    throw new IllegalStateException("code < 0: " + this.f16301c);
                 }
                 throw new IllegalStateException("protocol == null");
             }
@@ -239,28 +239,28 @@ public final class af implements Closeable {
     }
 
     public af(a aVar) {
-        this.f15499a = aVar.f15512a;
-        this.f15500b = aVar.f15513b;
-        this.f15501c = aVar.f15514c;
-        this.f15502d = aVar.f15515d;
-        this.f15503e = aVar.f15516e;
-        this.f15504f = aVar.f15517f.a();
-        this.f15505g = aVar.f15518g;
-        this.f15506h = aVar.f15519h;
+        this.f16286a = aVar.f16299a;
+        this.f16287b = aVar.f16300b;
+        this.f16288c = aVar.f16301c;
+        this.f16289d = aVar.f16302d;
+        this.f16290e = aVar.f16303e;
+        this.f16291f = aVar.f16304f.a();
+        this.f16292g = aVar.f16305g;
+        this.f16293h = aVar.f16306h;
         this.i = aVar.i;
-        this.f15507j = aVar.f15520j;
-        this.f15508k = aVar.f15521k;
-        this.f15509l = aVar.f15522l;
-        this.f15510m = aVar.f15523m;
+        this.f16294j = aVar.f16307j;
+        this.f16295k = aVar.f16308k;
+        this.f16296l = aVar.f16309l;
+        this.f16297m = aVar.f16310m;
     }
 
     private boolean n() {
-        int i = this.f15501c;
+        int i = this.f16288c;
         return i >= 200 && i < 300;
     }
 
     private u o() {
-        com.anythink.core.common.n.b.a.b.c cVar = this.f15510m;
+        com.anythink.core.common.n.b.a.b.c cVar = this.f16297m;
         if (cVar != null) {
             return cVar.e();
         }
@@ -268,15 +268,15 @@ public final class af implements Closeable {
     }
 
     private boolean p() {
-        int i = this.f15501c;
+        int i = this.f16288c;
         if (i == 307 || i == 308) {
             return true;
         }
         switch (i) {
             case 300:
-            case BaseATView.a.f9775L /* 301 */:
+            case BaseATView.a.f10561L /* 301 */:
             case 302:
-            case BaseATView.a.f9777N /* 303 */:
+            case BaseATView.a.f10563N /* 303 */:
                 return true;
             default:
                 return false;
@@ -289,7 +289,7 @@ public final class af implements Closeable {
 
     private List<h> r() {
         String str;
-        int i = this.f15501c;
+        int i = this.f16288c;
         if (i == 401) {
             str = "WWW-Authenticate";
         } else {
@@ -298,24 +298,24 @@ public final class af implements Closeable {
             }
             str = "Proxy-Authenticate";
         }
-        return com.anythink.core.common.n.b.a.c.e.a(this.f15504f, str);
+        return com.anythink.core.common.n.b.a.c.e.a(this.f16291f, str);
     }
 
     public final ad a() {
-        return this.f15499a;
+        return this.f16286a;
     }
 
     public final ab b() {
-        return this.f15500b;
+        return this.f16287b;
     }
 
     public final int c() {
-        return this.f15501c;
+        return this.f16288c;
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
-        ag agVar = this.f15505g;
+        ag agVar = this.f16292g;
         if (agVar == null) {
             throw new IllegalStateException("response is not eligible for a body and must not be closed");
         }
@@ -323,19 +323,19 @@ public final class af implements Closeable {
     }
 
     public final String d() {
-        return this.f15502d;
+        return this.f16289d;
     }
 
     public final t e() {
-        return this.f15503e;
+        return this.f16290e;
     }
 
     public final u f() {
-        return this.f15504f;
+        return this.f16291f;
     }
 
     public final ag g() {
-        return this.f15505g;
+        return this.f16292g;
     }
 
     public final a h() {
@@ -343,54 +343,54 @@ public final class af implements Closeable {
     }
 
     public final af i() {
-        return this.f15506h;
+        return this.f16293h;
     }
 
     public final af j() {
-        return this.f15507j;
+        return this.f16294j;
     }
 
     public final d k() {
-        d dVar = this.f15511n;
+        d dVar = this.f16298n;
         if (dVar != null) {
             return dVar;
         }
-        d a9 = d.a(this.f15504f);
-        this.f15511n = a9;
+        d a9 = d.a(this.f16291f);
+        this.f16298n = a9;
         return a9;
     }
 
     public final long l() {
-        return this.f15508k;
+        return this.f16295k;
     }
 
     public final long m() {
-        return this.f15509l;
+        return this.f16296l;
     }
 
     public final String toString() {
-        return "Response{protocol=" + this.f15500b + ", code=" + this.f15501c + ", message=" + this.f15502d + ", url=" + this.f15499a.f15480a + '}';
+        return "Response{protocol=" + this.f16287b + ", code=" + this.f16288c + ", message=" + this.f16289d + ", url=" + this.f16286a.f16267a + '}';
     }
 
     private String a(String str, String str2) {
-        String a9 = this.f15504f.a(str);
+        String a9 = this.f16291f.a(str);
         return a9 != null ? a9 : str2;
     }
 
     private List<String> b(String str) {
-        return this.f15504f.b(str);
+        return this.f16291f.b(str);
     }
 
     private ag a(long j6) {
-        com.anythink.core.common.n.c.e h9 = this.f15505g.c().h();
+        com.anythink.core.common.n.c.e h3 = this.f16292g.c().h();
         com.anythink.core.common.n.c.c cVar = new com.anythink.core.common.n.c.c();
-        h9.b(j6);
-        cVar.a(h9, Math.min(j6, h9.d().b()));
-        return ag.a(this.f15505g.a(), cVar.b(), cVar);
+        h3.b(j6);
+        cVar.a(h3, Math.min(j6, h3.d().b()));
+        return ag.a(this.f16292g.a(), cVar.b(), cVar);
     }
 
     public final String a(String str) {
-        String a9 = this.f15504f.a(str);
+        String a9 = this.f16291f.a(str);
         if (a9 != null) {
             return a9;
         }

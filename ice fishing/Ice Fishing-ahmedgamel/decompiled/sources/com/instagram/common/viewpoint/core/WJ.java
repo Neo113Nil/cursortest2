@@ -4,14 +4,14 @@ import android.util.Log;
 import java.util.Arrays;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class WJ implements InterfaceC1792fw {
+public class WJ implements InterfaceC1812fw {
     public static byte[] A01;
     public static String[] A02 = {"Pvxnryfp5C2YJ", "58Tt8xWVSP1vJRxeZG7By0J4DHdpZFgc", "d8fJjrUVSDGdkyzleHZclvn63G4sHX0L", "2vkexQ2kDfwHm", "C5INcofoFkRix0Rm4DG2QIlt8jox4BBj", "", "Y25u3HoHlGlpJYy8Y", "MTcvQGxX9nLrxfee4M1dH5SKsx5IsifC"};
     public final /* synthetic */ T8 A00;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        int i10 = 0;
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             if (A02[5].length() == 8) {
@@ -20,11 +20,11 @@ public class WJ implements InterfaceC1792fw {
             String[] strArr = A02;
             strArr[1] = "YNZl3vrESdm0ZjqRAgqNuDMkNkDkDjcM";
             strArr[2] = "T4MR0Bp8ShJAOBNGhRUi97nIryoGWHBS";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 37);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 37);
+            i9++;
         }
     }
 
@@ -40,14 +40,14 @@ public class WJ implements InterfaceC1792fw {
         this.A00 = t82;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1792fw
-    public final void ADR(InterfaceC1790fu interfaceC1790fu) {
-        if (this.A00.A05().AAO() && interfaceC1790fu != null) {
-            String str = A00(24, 31, 44) + interfaceC1790fu.A73();
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1812fw
+    public final void ADR(InterfaceC1810fu interfaceC1810fu) {
+        if (this.A00.A05().AAO() && interfaceC1810fu != null) {
+            String str = A00(24, 31, 44) + interfaceC1810fu.A73();
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1792fw
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1812fw
     public final void ADq(Exception exc) {
         String str;
         if (this.A00.A05().AAO()) {

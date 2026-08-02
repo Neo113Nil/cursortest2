@@ -9,8 +9,8 @@ public final class h extends PopupWindow {
     private Boolean wasDismissedManually;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public h(View view, int i, int i6, boolean z3, g listener) {
-        super(view, i, i6, z3);
+    public h(View view, int i, int i4, boolean z6, g listener) {
+        super(view, i, i4, z6);
         kotlin.jvm.internal.h.e(listener, "listener");
         this.listener = listener;
     }

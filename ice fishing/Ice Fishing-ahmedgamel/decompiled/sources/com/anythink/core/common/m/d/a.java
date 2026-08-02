@@ -19,55 +19,55 @@ import org.json.JSONObject;
 public final class a extends d {
 
     /* renamed from: a, reason: collision with root package name */
-    List<String> f14570a;
+    List<String> f15356a;
 
     /* renamed from: b, reason: collision with root package name */
-    int f14571b;
+    int f15357b;
 
     /* renamed from: c, reason: collision with root package name */
-    boolean f14572c;
+    boolean f15358c;
 
     /* renamed from: l, reason: collision with root package name */
-    private final String f14573l = "a";
+    private final String f15359l = "a";
 
     public a(List<String> list) {
-        this.f14570a = list;
-        this.f14571b = list.size();
+        this.f15356a = list;
+        this.f15357b = list.size();
     }
 
     private String j() {
-        JSONObject h9 = h();
+        JSONObject h3 = h();
         JSONObject i = i();
-        if (h9 != null) {
+        if (h3 != null) {
             try {
-                h9.put("app_id", t.b().p());
-                h9.put("nw_ver", m.g());
+                h3.put("app_id", t.b().p());
+                h3.put("nw_ver", m.g());
                 JSONArray jSONArray = new JSONArray();
-                List<String> list = this.f14570a;
+                List<String> list = this.f15356a;
                 if (list != null && list.size() > 0) {
-                    for (String str : this.f14570a) {
+                    for (String str : this.f15356a) {
                         if (!TextUtils.isEmpty(str)) {
                             jSONArray.put(new JSONObject(str));
                         }
                     }
                 }
-                h9.put("data", jSONArray);
+                h3.put("data", jSONArray);
             } catch (Exception unused) {
             }
         }
         if (i != null) {
             try {
-                i.put(com.anythink.core.common.m.e.f14627S, this.f14600j);
-                i.put(com.anythink.core.common.m.e.f14629U, this.f14601k);
+                i.put(com.anythink.core.common.m.e.f15413S, this.f15386j);
+                i.put(com.anythink.core.common.m.e.f15415U, this.f15387k);
             } catch (Exception unused2) {
             }
         }
         HashMap hashMap = new HashMap();
-        String a9 = k.a(h9.toString());
+        String a9 = k.a(h3.toString());
         String a10 = k.a(i.toString());
-        hashMap.put(com.anythink.core.common.m.e.f14624P, j.e.f12436a);
+        hashMap.put(com.anythink.core.common.m.e.f15410P, j.e.f13222a);
         hashMap.put("p", a9);
-        hashMap.put(com.anythink.core.common.m.e.f14631W, a10);
+        hashMap.put(com.anythink.core.common.m.e.f15417W, a10);
         ArrayList arrayList = new ArrayList(hashMap.size());
         arrayList.addAll(hashMap.keySet());
         Collections.sort(arrayList);
@@ -87,11 +87,11 @@ public final class a extends d {
     }
 
     public final void a() {
-        this.f14572c = true;
+        this.f15358c = true;
     }
 
     public final int b() {
-        return this.f14571b;
+        return this.f15357b;
     }
 
     @Override // com.anythink.core.common.m.d.d
@@ -121,7 +121,7 @@ public final class a extends d {
 
     @Override // com.anythink.core.common.m.d.d
     public final void a(String str, String str2, String str3, int i) {
-        if (this.f14572c) {
+        if (this.f15358c) {
             com.anythink.core.common.t.a().a(3, "", "", j(), aq.a(1001));
         }
     }

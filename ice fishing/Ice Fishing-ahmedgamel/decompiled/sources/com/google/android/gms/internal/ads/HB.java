@@ -3,7 +3,7 @@ package com.google.android.gms.internal.ads;
 import java.io.Serializable;
 
 /* loaded from: classes2.dex */
-public final class HB extends AbstractC3446kC implements Serializable {
+public final class HB extends AbstractC3469kC implements Serializable {
     @Override // java.util.Comparator
     public final int compare(Object obj, Object obj2) {
         Integer num = (Integer) obj2;
@@ -25,16 +25,16 @@ public final class HB extends AbstractC3446kC implements Serializable {
         if (!(obj instanceof HB)) {
             return false;
         }
-        Object obj2 = C3004c.f29397y;
+        Object obj2 = C3027c.f30180y;
         ((HB) obj).getClass();
         return obj2.equals(obj2);
     }
 
     public final int hashCode() {
-        return C3004c.f29397y.hashCode();
+        return C3027c.f30180y.hashCode();
     }
 
     public final String toString() {
-        return C3004c.f29397y.toString();
+        return C3027c.f30180y.toString();
     }
 }

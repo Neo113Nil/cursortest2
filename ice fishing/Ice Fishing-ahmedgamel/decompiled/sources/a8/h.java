@@ -1,8 +1,9 @@
 package a8;
 
-import J0.l;
-import S7.C0389g;
-import S7.InterfaceC0388f;
+import E2.C0316m;
+import J0.k;
+import S7.C0393g;
+import S7.InterfaceC0392f;
 import X7.t;
 import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 import java.util.concurrent.atomic.AtomicLongFieldUpdater;
@@ -14,23 +15,23 @@ import u7.v;
 public class h {
 
     /* renamed from: b, reason: collision with root package name */
-    public static final /* synthetic */ AtomicReferenceFieldUpdater f4396b = AtomicReferenceFieldUpdater.newUpdater(h.class, Object.class, "head$volatile");
+    public static final /* synthetic */ AtomicReferenceFieldUpdater f4364b = AtomicReferenceFieldUpdater.newUpdater(h.class, Object.class, "head$volatile");
 
     /* renamed from: c, reason: collision with root package name */
-    public static final /* synthetic */ AtomicLongFieldUpdater f4397c = AtomicLongFieldUpdater.newUpdater(h.class, "deqIdx$volatile");
+    public static final /* synthetic */ AtomicLongFieldUpdater f4365c = AtomicLongFieldUpdater.newUpdater(h.class, "deqIdx$volatile");
 
     /* renamed from: d, reason: collision with root package name */
-    public static final /* synthetic */ AtomicReferenceFieldUpdater f4398d = AtomicReferenceFieldUpdater.newUpdater(h.class, Object.class, "tail$volatile");
+    public static final /* synthetic */ AtomicReferenceFieldUpdater f4366d = AtomicReferenceFieldUpdater.newUpdater(h.class, Object.class, "tail$volatile");
 
     /* renamed from: e, reason: collision with root package name */
-    public static final /* synthetic */ AtomicLongFieldUpdater f4399e = AtomicLongFieldUpdater.newUpdater(h.class, "enqIdx$volatile");
+    public static final /* synthetic */ AtomicLongFieldUpdater f4367e = AtomicLongFieldUpdater.newUpdater(h.class, "enqIdx$volatile");
 
     /* renamed from: f, reason: collision with root package name */
-    public static final /* synthetic */ AtomicIntegerFieldUpdater f4400f = AtomicIntegerFieldUpdater.newUpdater(h.class, "_availablePermits$volatile");
+    public static final /* synthetic */ AtomicIntegerFieldUpdater f4368f = AtomicIntegerFieldUpdater.newUpdater(h.class, "_availablePermits$volatile");
     private volatile /* synthetic */ int _availablePermits$volatile;
 
     /* renamed from: a, reason: collision with root package name */
-    public final l f4401a;
+    public final k f4369a;
     private volatile /* synthetic */ long deqIdx$volatile;
     private volatile /* synthetic */ long enqIdx$volatile;
     private volatile /* synthetic */ Object head$volatile;
@@ -41,36 +42,36 @@ public class h {
         this.head$volatile = jVar;
         this.tail$volatile = jVar;
         this._availablePermits$volatile = 1;
-        this.f4401a = new l(3, this);
+        this.f4369a = new k(3, this);
     }
 
     public final void a(c cVar) {
         Object b9;
-        C0389g c0389g;
+        C0393g c0393g;
         while (true) {
-            int andDecrement = f4400f.getAndDecrement(this);
+            int andDecrement = f4368f.getAndDecrement(this);
             if (andDecrement <= 1) {
-                v vVar = v.f41353a;
-                C0389g c0389g2 = cVar.f4390n;
-                d dVar = cVar.f4391u;
+                v vVar = v.f41073a;
+                C0393g c0393g2 = cVar.f4358n;
+                d dVar = cVar.f4359u;
                 if (andDecrement > 0) {
-                    d.f4392g.set(dVar, null);
-                    c0389g2.z(vVar, new C0448b(dVar, cVar, 0));
+                    d.f4360g.set(dVar, null);
+                    c0393g2.z(vVar, new C0452b(dVar, cVar, 0));
                     return;
                 }
-                AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f4398d;
+                AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f4366d;
                 j jVar = (j) atomicReferenceFieldUpdater.get(this);
-                long andIncrement = f4399e.getAndIncrement(this);
-                f fVar = f.f4394v;
-                long j6 = andIncrement / i.f4407f;
+                long andIncrement = f4367e.getAndIncrement(this);
+                f fVar = f.f4362v;
+                long j6 = andIncrement / i.f4375f;
                 while (true) {
                     b9 = X7.a.b(jVar, j6, fVar);
                     if (!X7.a.e(b9)) {
                         t c9 = X7.a.c(b9);
                         while (true) {
                             t tVar = (t) atomicReferenceFieldUpdater.get(this);
-                            c0389g = c0389g2;
-                            if (tVar.f3860v >= c9.f3860v) {
+                            c0393g = c0393g2;
+                            if (tVar.f3815v >= c9.f3815v) {
                                 break;
                             }
                             if (!c9.i()) {
@@ -81,7 +82,7 @@ public class h {
                                     if (c9.e()) {
                                         c9.d();
                                     }
-                                    c0389g2 = c0389g;
+                                    c0393g2 = c0393g;
                                 }
                             }
                             if (tVar.e()) {
@@ -89,28 +90,28 @@ public class h {
                             }
                         }
                     } else {
-                        c0389g = c0389g2;
+                        c0393g = c0393g2;
                         break;
                     }
-                    c0389g2 = c0389g;
+                    c0393g2 = c0393g;
                 }
                 j jVar2 = (j) X7.a.c(b9);
-                int i = (int) (andIncrement % i.f4407f);
-                AtomicReferenceArray atomicReferenceArray = jVar2.f4408x;
+                int i = (int) (andIncrement % i.f4375f);
+                AtomicReferenceArray atomicReferenceArray = jVar2.f4376x;
                 while (!atomicReferenceArray.compareAndSet(i, null, cVar)) {
                     if (atomicReferenceArray.get(i) != null) {
-                        D2.b bVar = i.f4403b;
-                        D2.b bVar2 = i.f4404c;
-                        while (!atomicReferenceArray.compareAndSet(i, bVar, bVar2)) {
-                            C0389g c0389g3 = c0389g;
-                            if (atomicReferenceArray.get(i) != bVar) {
+                        C0316m c0316m = i.f4371b;
+                        C0316m c0316m2 = i.f4372c;
+                        while (!atomicReferenceArray.compareAndSet(i, c0316m, c0316m2)) {
+                            C0393g c0393g3 = c0393g;
+                            if (atomicReferenceArray.get(i) != c0316m) {
                                 break;
                             } else {
-                                c0389g = c0389g3;
+                                c0393g = c0393g3;
                             }
                         }
-                        d.f4392g.set(dVar, null);
-                        c0389g.z(vVar, new C0448b(dVar, cVar, 0));
+                        d.f4360g.set(dVar, null);
+                        c0393g.z(vVar, new C0452b(dVar, cVar, 0));
                         return;
                     }
                 }
@@ -121,13 +122,13 @@ public class h {
     }
 
     public final void b() {
-        boolean z3;
+        boolean z6;
         int i;
         Object b9;
         do {
-            AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f4400f;
+            AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f4368f;
             int andIncrement = atomicIntegerFieldUpdater.getAndIncrement(this);
-            z3 = true;
+            z6 = true;
             if (andIncrement >= 1) {
                 do {
                     i = atomicIntegerFieldUpdater.get(this);
@@ -140,18 +141,18 @@ public class h {
             if (andIncrement >= 0) {
                 return;
             }
-            AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f4396b;
+            AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f4364b;
             j jVar = (j) atomicReferenceFieldUpdater.get(this);
-            long andIncrement2 = f4397c.getAndIncrement(this);
-            long j6 = andIncrement2 / i.f4407f;
-            g gVar = g.f4395v;
+            long andIncrement2 = f4365c.getAndIncrement(this);
+            long j6 = andIncrement2 / i.f4375f;
+            g gVar = g.f4363v;
             while (true) {
                 b9 = X7.a.b(jVar, j6, gVar);
                 if (!X7.a.e(b9)) {
                     t c9 = X7.a.c(b9);
                     while (true) {
                         t tVar = (t) atomicReferenceFieldUpdater.get(this);
-                        if (tVar.f3860v >= c9.f3860v) {
+                        if (tVar.f3815v >= c9.f3815v) {
                             break;
                         }
                         if (!c9.i()) {
@@ -174,46 +175,46 @@ public class h {
             }
             j jVar2 = (j) X7.a.c(b9);
             jVar2.a();
-            boolean z6 = false;
-            if (jVar2.f3860v <= j6) {
-                int i6 = (int) (andIncrement2 % i.f4407f);
-                D2.b bVar = i.f4403b;
-                AtomicReferenceArray atomicReferenceArray = jVar2.f4408x;
-                Object andSet = atomicReferenceArray.getAndSet(i6, bVar);
+            boolean z9 = false;
+            if (jVar2.f3815v <= j6) {
+                int i4 = (int) (andIncrement2 % i.f4375f);
+                C0316m c0316m = i.f4371b;
+                AtomicReferenceArray atomicReferenceArray = jVar2.f4376x;
+                Object andSet = atomicReferenceArray.getAndSet(i4, c0316m);
                 if (andSet == null) {
-                    int i9 = i.f4402a;
-                    int i10 = 0;
+                    int i6 = i.f4370a;
+                    int i9 = 0;
                     while (true) {
-                        if (i10 >= i9) {
-                            D2.b bVar2 = i.f4403b;
-                            D2.b bVar3 = i.f4405d;
+                        if (i9 >= i6) {
+                            C0316m c0316m2 = i.f4371b;
+                            C0316m c0316m3 = i.f4373d;
                             while (true) {
-                                if (atomicReferenceArray.compareAndSet(i6, bVar2, bVar3)) {
-                                    z6 = true;
+                                if (atomicReferenceArray.compareAndSet(i4, c0316m2, c0316m3)) {
+                                    z9 = true;
                                     break;
-                                } else if (atomicReferenceArray.get(i6) != bVar2) {
+                                } else if (atomicReferenceArray.get(i4) != c0316m2) {
                                     break;
                                 }
                             }
-                            z3 = true ^ z6;
-                        } else if (atomicReferenceArray.get(i6) == i.f4404c) {
+                            z6 = true ^ z9;
+                        } else if (atomicReferenceArray.get(i4) == i.f4372c) {
                             break;
                         } else {
-                            i10++;
+                            i9++;
                         }
                     }
-                } else if (andSet != i.f4406e) {
-                    if (!(andSet instanceof InterfaceC0388f)) {
+                } else if (andSet != i.f4374e) {
+                    if (!(andSet instanceof InterfaceC0392f)) {
                         throw new IllegalStateException(("unexpected: " + andSet).toString());
                     }
-                    InterfaceC0388f interfaceC0388f = (InterfaceC0388f) andSet;
-                    D2.b c10 = interfaceC0388f.c(v.f41353a, this.f4401a);
+                    InterfaceC0392f interfaceC0392f = (InterfaceC0392f) andSet;
+                    C0316m c10 = interfaceC0392f.c(v.f41073a, this.f4369a);
                     if (c10 != null) {
-                        interfaceC0388f.f(c10);
+                        interfaceC0392f.f(c10);
                     }
                 }
             }
-            z3 = false;
-        } while (!z3);
+            z6 = false;
+        } while (!z6);
     }
 }

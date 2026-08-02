@@ -15,46 +15,46 @@ import java.util.Map;
 public class j extends c<al> {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f13005a = "j";
+    private static final String f13791a = "j";
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile j f13006b;
+    private static volatile j f13792b;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        static final String f13007a = "dyn_wf_ad_source_filter";
+        static final String f13793a = "dyn_wf_ad_source_filter";
 
         /* renamed from: b, reason: collision with root package name */
-        static final String f13008b = "placement_id";
+        static final String f13794b = "placement_id";
 
         /* renamed from: c, reason: collision with root package name */
-        static final String f13009c = "ad_source_id";
+        static final String f13795c = "ad_source_id";
 
         /* renamed from: d, reason: collision with root package name */
-        static final String f13010d = "request_id";
+        static final String f13796d = "request_id";
 
         /* renamed from: e, reason: collision with root package name */
-        static final String f13011e = "expired_timestamp";
+        static final String f13797e = "expired_timestamp";
 
         /* renamed from: f, reason: collision with root package name */
-        static final String f13012f = "match_error_code";
+        static final String f13798f = "match_error_code";
 
         /* renamed from: g, reason: collision with root package name */
-        public static final String f13013g = "CREATE TABLE IF NOT EXISTS dyn_wf_ad_source_filter(placement_id TEXT ,ad_source_id TEXT ,request_id TEXT ,match_error_code TEXT ,expired_timestamp INTEGER)";
+        public static final String f13799g = "CREATE TABLE IF NOT EXISTS dyn_wf_ad_source_filter(placement_id TEXT ,ad_source_id TEXT ,request_id TEXT ,match_error_code TEXT ,expired_timestamp INTEGER)";
 
         /* renamed from: h, reason: collision with root package name */
-        public static final String f13014h = "CREATE INDEX IF NOT EXISTS idx_placement_id ON dyn_wf_ad_source_filter(placement_id)";
+        public static final String f13800h = "CREATE INDEX IF NOT EXISTS idx_placement_id ON dyn_wf_ad_source_filter(placement_id)";
         public static final String i = "CREATE INDEX IF NOT EXISTS idx_ad_source_id ON dyn_wf_ad_source_filter(ad_source_id)";
 
         /* renamed from: j, reason: collision with root package name */
-        public static final String f13015j = "CREATE INDEX IF NOT EXISTS idx_ad_request_id ON dyn_wf_ad_source_filter(request_id)";
+        public static final String f13801j = "CREATE INDEX IF NOT EXISTS idx_ad_request_id ON dyn_wf_ad_source_filter(request_id)";
 
         /* renamed from: k, reason: collision with root package name */
-        public static final String f13016k = "CREATE INDEX IF NOT EXISTS idx_expired_timestamp ON dyn_wf_ad_source_filter(expired_timestamp)";
+        public static final String f13802k = "CREATE INDEX IF NOT EXISTS idx_expired_timestamp ON dyn_wf_ad_source_filter(expired_timestamp)";
 
         /* renamed from: l, reason: collision with root package name */
-        public static final String f13017l = "CREATE INDEX IF NOT EXISTS idx_match_error_code ON dyn_wf_ad_source_filter(match_error_code)";
+        public static final String f13803l = "CREATE INDEX IF NOT EXISTS idx_match_error_code ON dyn_wf_ad_source_filter(match_error_code)";
     }
 
     private j(d dVar) {
@@ -62,18 +62,18 @@ public class j extends c<al> {
     }
 
     public static j a(Context context) {
-        if (f13006b == null) {
+        if (f13792b == null) {
             synchronized (j.class) {
                 try {
-                    if (f13006b == null) {
-                        f13006b = new j(e.a(context));
+                    if (f13792b == null) {
+                        f13792b = new j(e.a(context));
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f13006b;
+        return f13792b;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:17:0x004f, code lost:
@@ -129,7 +129,7 @@ public class j extends c<al> {
             return;
         }
         try {
-            SQLiteDatabase d2 = d();
+            SQLiteDatabase d9 = d();
             ContentValues contentValues = new ContentValues();
             contentValues.put("placement_id", alVar.b());
             contentValues.put("ad_source_id", alVar.a());
@@ -139,12 +139,12 @@ public class j extends c<al> {
             Cursor query = c().query("dyn_wf_ad_source_filter", new String[]{"request_id"}, "request_id = ? AND ad_source_id = ?", new String[]{alVar.g(), alVar.a()}, null, null, null);
             if (query != null && query.getCount() > 0) {
                 query.close();
-                d2.update("dyn_wf_ad_source_filter", contentValues, "request_id = ? AND ad_source_id = ?", new String[]{alVar.g(), alVar.a()});
+                d9.update("dyn_wf_ad_source_filter", contentValues, "request_id = ? AND ad_source_id = ?", new String[]{alVar.g(), alVar.a()});
             } else {
                 if (query != null) {
                     query.close();
                 }
-                d2.insertOrThrow("dyn_wf_ad_source_filter", null, contentValues);
+                d9.insertOrThrow("dyn_wf_ad_source_filter", null, contentValues);
             }
         } catch (Throwable th) {
             th.getMessage();

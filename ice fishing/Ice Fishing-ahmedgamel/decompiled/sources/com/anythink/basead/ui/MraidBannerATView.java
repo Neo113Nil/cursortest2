@@ -14,16 +14,16 @@ import com.anythink.core.common.v.q;
 public class MraidBannerATView extends BaseBannerATView {
 
     /* renamed from: A, reason: collision with root package name */
-    MraidContainerView f10107A;
+    MraidContainerView f10893A;
 
     /* renamed from: B, reason: collision with root package name */
-    boolean f10108B;
+    boolean f10894B;
 
     /* renamed from: C, reason: collision with root package name */
-    boolean f10109C;
+    boolean f10895C;
 
     /* renamed from: D, reason: collision with root package name */
-    boolean f10110D;
+    boolean f10896D;
 
     public MraidBannerATView(Context context) {
         super(context);
@@ -32,9 +32,9 @@ public class MraidBannerATView extends BaseBannerATView {
     private void w() {
         int a9;
         int a10;
-        String D8 = this.f9735f.f14168o.D();
+        String D8 = this.f10521f.f14954o.D();
         LayoutInflater.from(getContext()).inflate(q.a(getContext(), "myoffer_web_banner_ad_layout", "layout"), this);
-        this.f9815b = (CloseImageView) findViewById(q.a(getContext(), "myoffer_banner_close", "id"));
+        this.f10601b = (CloseImageView) findViewById(q.a(getContext(), "myoffer_banner_close", "id"));
         a9 = q.a(getContext(), 50.0f);
         a10 = q.a(getContext(), 320.0f);
         D8.getClass();
@@ -53,24 +53,24 @@ public class MraidBannerATView extends BaseBannerATView {
                 break;
         }
         int min = Math.min(a10, getResources().getDisplayMetrics().widthPixels);
-        if (this.f9754z != null) {
+        if (this.f10540z != null) {
             a(findViewById(q.a(getContext(), "myoffer_banner_root", "id")));
-            this.f9754z.a(this.f9815b);
+            this.f10540z.a(this.f10601b);
         }
-        MraidContainerView mraidContainerView = new MraidContainerView(getContext(), this.f9736g, this.f9735f, this.f9754z, new AnonymousClass1());
-        this.f10107A = mraidContainerView;
+        MraidContainerView mraidContainerView = new MraidContainerView(getContext(), this.f10522g, this.f10521f, this.f10540z, new AnonymousClass1());
+        this.f10893A = mraidContainerView;
         mraidContainerView.init();
         FrameLayout frameLayout = (FrameLayout) findViewById(q.a(getContext(), "myoffer_banner_web", "id"));
-        this.f10107A.setMinimumHeight(q.a(getContext(), 50.0f));
+        this.f10893A.setMinimumHeight(q.a(getContext(), 50.0f));
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(min, a9);
         layoutParams.gravity = 17;
-        frameLayout.addView(this.f10107A, 0, layoutParams);
+        frameLayout.addView(this.f10893A, 0, layoutParams);
         setLayoutParams(new ViewGroup.LayoutParams(min, a9));
-        if (this.f9735f.f14168o.E() != 0) {
-            this.f9815b.setVisibility(8);
+        if (this.f10521f.f14954o.E() != 0) {
+            this.f10601b.setVisibility(8);
         } else {
-            this.f9815b.setVisibility(0);
-            a((b) this.f9815b, false);
+            this.f10601b.setVisibility(0);
+            a((b) this.f10601b, false);
         }
     }
 
@@ -78,9 +78,9 @@ public class MraidBannerATView extends BaseBannerATView {
     public final void a() {
         int a9;
         int a10;
-        String D8 = this.f9735f.f14168o.D();
+        String D8 = this.f10521f.f14954o.D();
         LayoutInflater.from(getContext()).inflate(q.a(getContext(), "myoffer_web_banner_ad_layout", "layout"), this);
-        this.f9815b = (CloseImageView) findViewById(q.a(getContext(), "myoffer_banner_close", "id"));
+        this.f10601b = (CloseImageView) findViewById(q.a(getContext(), "myoffer_banner_close", "id"));
         a9 = q.a(getContext(), 50.0f);
         a10 = q.a(getContext(), 320.0f);
         D8.getClass();
@@ -99,49 +99,49 @@ public class MraidBannerATView extends BaseBannerATView {
                 break;
         }
         int min = Math.min(a10, getResources().getDisplayMetrics().widthPixels);
-        if (this.f9754z != null) {
+        if (this.f10540z != null) {
             a(findViewById(q.a(getContext(), "myoffer_banner_root", "id")));
-            this.f9754z.a(this.f9815b);
+            this.f10540z.a(this.f10601b);
         }
-        MraidContainerView mraidContainerView = new MraidContainerView(getContext(), this.f9736g, this.f9735f, this.f9754z, new AnonymousClass1());
-        this.f10107A = mraidContainerView;
+        MraidContainerView mraidContainerView = new MraidContainerView(getContext(), this.f10522g, this.f10521f, this.f10540z, new AnonymousClass1());
+        this.f10893A = mraidContainerView;
         mraidContainerView.init();
         FrameLayout frameLayout = (FrameLayout) findViewById(q.a(getContext(), "myoffer_banner_web", "id"));
-        this.f10107A.setMinimumHeight(q.a(getContext(), 50.0f));
+        this.f10893A.setMinimumHeight(q.a(getContext(), 50.0f));
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(min, a9);
         layoutParams.gravity = 17;
-        frameLayout.addView(this.f10107A, 0, layoutParams);
+        frameLayout.addView(this.f10893A, 0, layoutParams);
         setLayoutParams(new ViewGroup.LayoutParams(min, a9));
-        if (this.f9735f.f14168o.E() == 0) {
-            this.f9815b.setVisibility(0);
-            a((b) this.f9815b, false);
+        if (this.f10521f.f14954o.E() == 0) {
+            this.f10601b.setVisibility(0);
+            a((b) this.f10601b, false);
         } else {
-            this.f9815b.setVisibility(8);
+            this.f10601b.setVisibility(8);
         }
-        com.anythink.basead.ui.f.a aVar = new com.anythink.basead.ui.f.a(this.f9736g, this.f9735f);
-        this.f9817d = aVar;
+        com.anythink.basead.ui.f.a aVar = new com.anythink.basead.ui.f.a(this.f10522g, this.f10521f);
+        this.f10603d = aVar;
         aVar.b(this);
     }
 
     @Override // com.anythink.basead.ui.BaseBannerATView
     public final void b() {
-        if (this.f10107A == null) {
+        if (this.f10893A == null) {
             return;
         }
         super.b();
     }
 
     public final synchronized void d() {
-        if (this.f10108B && this.f10109C && !this.f10110D) {
-            this.f10110D = true;
-            e.a(this.f9735f, this.f9736g);
+        if (this.f10894B && this.f10895C && !this.f10896D) {
+            this.f10896D = true;
+            e.a(this.f10521f, this.f10522g);
         }
     }
 
     @Override // com.anythink.basead.ui.BaseATView
     public void destroy() {
         super.destroy();
-        MraidContainerView mraidContainerView = this.f10107A;
+        MraidContainerView mraidContainerView = this.f10893A;
         if (mraidContainerView != null) {
             mraidContainerView.release();
         }
@@ -150,14 +150,14 @@ public class MraidBannerATView extends BaseBannerATView {
     @Override // com.anythink.basead.ui.BaseBannerATView, com.anythink.basead.ui.BaseATView, android.view.ViewGroup, android.view.View
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        this.f10109C = true;
+        this.f10895C = true;
         d();
     }
 
     @Override // com.anythink.basead.ui.BaseATView, android.view.ViewGroup, android.view.View
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        this.f10109C = false;
+        this.f10895C = false;
     }
 
     /* renamed from: com.anythink.basead.ui.MraidBannerATView$1, reason: invalid class name */
@@ -167,7 +167,7 @@ public class MraidBannerATView extends BaseBannerATView {
 
         @Override // com.anythink.basead.ui.MraidContainerView.a
         public final void a(String str) {
-            MraidBannerATView.this.f9736g.w(str);
+            MraidBannerATView.this.f10522g.w(str);
             MraidBannerATView.this.a(1, 13);
         }
 
@@ -182,7 +182,7 @@ public class MraidBannerATView extends BaseBannerATView {
         @Override // com.anythink.basead.ui.MraidContainerView.a
         public final void a() {
             MraidBannerATView mraidBannerATView = MraidBannerATView.this;
-            mraidBannerATView.f10108B = true;
+            mraidBannerATView.f10894B = true;
             mraidBannerATView.d();
             try {
                 MraidBannerATView.this.b();

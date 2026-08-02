@@ -6,7 +6,7 @@ import android.graphics.Canvas;
 public interface b {
     void a();
 
-    void a(int i, int i6);
+    void a(int i, int i4);
 
     void a(Canvas canvas);
 

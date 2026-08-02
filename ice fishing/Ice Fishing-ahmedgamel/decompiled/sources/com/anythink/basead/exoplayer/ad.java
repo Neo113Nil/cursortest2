@@ -25,71 +25,71 @@ import java.util.concurrent.TimeoutException;
 public class ad implements h, w.e, w.g {
 
     /* renamed from: x, reason: collision with root package name */
-    private static final String f6318x = "SimpleExoPlayer";
+    private static final String f7104x = "SimpleExoPlayer";
 
     /* renamed from: A, reason: collision with root package name */
-    private final a f6319A;
+    private final a f7105A;
 
     /* renamed from: B, reason: collision with root package name */
-    private final CopyOnWriteArraySet<com.anythink.basead.exoplayer.l.g> f6320B;
+    private final CopyOnWriteArraySet<com.anythink.basead.exoplayer.l.g> f7106B;
 
     /* renamed from: C, reason: collision with root package name */
-    private final CopyOnWriteArraySet<com.anythink.basead.exoplayer.g.f> f6321C;
+    private final CopyOnWriteArraySet<com.anythink.basead.exoplayer.g.f> f7107C;
 
     /* renamed from: D, reason: collision with root package name */
-    private final CopyOnWriteArraySet<com.anythink.basead.exoplayer.l.h> f6322D;
+    private final CopyOnWriteArraySet<com.anythink.basead.exoplayer.l.h> f7108D;
 
     /* renamed from: E, reason: collision with root package name */
-    private final CopyOnWriteArraySet<com.anythink.basead.exoplayer.b.g> f6323E;
+    private final CopyOnWriteArraySet<com.anythink.basead.exoplayer.b.g> f7109E;
 
     /* renamed from: F, reason: collision with root package name */
-    private final com.anythink.basead.exoplayer.a.a f6324F;
+    private final com.anythink.basead.exoplayer.a.a f7110F;
 
     /* renamed from: G, reason: collision with root package name */
-    private m f6325G;
+    private m f7111G;
 
     /* renamed from: H, reason: collision with root package name */
-    private m f6326H;
+    private m f7112H;
 
     /* renamed from: I, reason: collision with root package name */
-    private Surface f6327I;
+    private Surface f7113I;
     private boolean J;
 
     /* renamed from: K, reason: collision with root package name */
-    private int f6328K;
+    private int f7114K;
 
     /* renamed from: L, reason: collision with root package name */
-    private SurfaceHolder f6329L;
+    private SurfaceHolder f7115L;
 
     /* renamed from: M, reason: collision with root package name */
-    private TextureView f6330M;
+    private TextureView f7116M;
 
     /* renamed from: N, reason: collision with root package name */
-    private com.anythink.basead.exoplayer.c.d f6331N;
+    private com.anythink.basead.exoplayer.c.d f7117N;
 
     /* renamed from: O, reason: collision with root package name */
-    private com.anythink.basead.exoplayer.c.d f6332O;
+    private com.anythink.basead.exoplayer.c.d f7118O;
 
     /* renamed from: P, reason: collision with root package name */
-    private int f6333P;
+    private int f7119P;
 
     /* renamed from: Q, reason: collision with root package name */
-    private com.anythink.basead.exoplayer.b.b f6334Q;
+    private com.anythink.basead.exoplayer.b.b f7120Q;
 
     /* renamed from: R, reason: collision with root package name */
-    private float f6335R;
+    private float f7121R;
 
     /* renamed from: S, reason: collision with root package name */
-    private com.anythink.basead.exoplayer.h.s f6336S;
+    private com.anythink.basead.exoplayer.h.s f7122S;
 
     /* renamed from: w, reason: collision with root package name */
-    protected final y[] f6337w;
+    protected final y[] f7123w;
 
     /* renamed from: y, reason: collision with root package name */
-    private final h f6338y;
+    private final h f7124y;
 
     /* renamed from: z, reason: collision with root package name */
-    private final Handler f6339z;
+    private final Handler f7125z;
 
     public final class a implements SurfaceHolder.Callback, TextureView.SurfaceTextureListener, com.anythink.basead.exoplayer.b.g, com.anythink.basead.exoplayer.g.f, com.anythink.basead.exoplayer.l.h {
         private a() {
@@ -97,8 +97,8 @@ public class ad implements h, w.e, w.g {
 
         @Override // com.anythink.basead.exoplayer.l.h
         public final void a(com.anythink.basead.exoplayer.c.d dVar) {
-            ad.this.f6331N = dVar;
-            Iterator it = ad.this.f6322D.iterator();
+            ad.this.f7117N = dVar;
+            Iterator it = ad.this.f7108D.iterator();
             while (it.hasNext()) {
                 ((com.anythink.basead.exoplayer.l.h) it.next()).a(dVar);
             }
@@ -106,18 +106,18 @@ public class ad implements h, w.e, w.g {
 
         @Override // com.anythink.basead.exoplayer.l.h
         public final void b(com.anythink.basead.exoplayer.c.d dVar) {
-            Iterator it = ad.this.f6322D.iterator();
+            Iterator it = ad.this.f7108D.iterator();
             while (it.hasNext()) {
                 ((com.anythink.basead.exoplayer.l.h) it.next()).b(dVar);
             }
-            ad.this.f6325G = null;
-            ad.this.f6331N = null;
+            ad.this.f7111G = null;
+            ad.this.f7117N = null;
         }
 
         @Override // com.anythink.basead.exoplayer.b.g
         public final void c(com.anythink.basead.exoplayer.c.d dVar) {
-            ad.this.f6332O = dVar;
-            Iterator it = ad.this.f6323E.iterator();
+            ad.this.f7118O = dVar;
+            Iterator it = ad.this.f7109E.iterator();
             while (it.hasNext()) {
                 ((com.anythink.basead.exoplayer.b.g) it.next()).c(dVar);
             }
@@ -125,17 +125,17 @@ public class ad implements h, w.e, w.g {
 
         @Override // com.anythink.basead.exoplayer.b.g
         public final void d(com.anythink.basead.exoplayer.c.d dVar) {
-            Iterator it = ad.this.f6323E.iterator();
+            Iterator it = ad.this.f7109E.iterator();
             while (it.hasNext()) {
                 ((com.anythink.basead.exoplayer.b.g) it.next()).d(dVar);
             }
-            ad.this.f6326H = null;
-            ad.this.f6332O = null;
-            ad.this.f6333P = 0;
+            ad.this.f7112H = null;
+            ad.this.f7118O = null;
+            ad.this.f7119P = 0;
         }
 
         @Override // android.view.TextureView.SurfaceTextureListener
-        public final void onSurfaceTextureAvailable(SurfaceTexture surfaceTexture, int i, int i6) {
+        public final void onSurfaceTextureAvailable(SurfaceTexture surfaceTexture, int i, int i4) {
             ad.this.a(new Surface(surfaceTexture), true);
         }
 
@@ -146,7 +146,7 @@ public class ad implements h, w.e, w.g {
         }
 
         @Override // android.view.TextureView.SurfaceTextureListener
-        public final void onSurfaceTextureSizeChanged(SurfaceTexture surfaceTexture, int i, int i6) {
+        public final void onSurfaceTextureSizeChanged(SurfaceTexture surfaceTexture, int i, int i4) {
         }
 
         @Override // android.view.TextureView.SurfaceTextureListener
@@ -154,7 +154,7 @@ public class ad implements h, w.e, w.g {
         }
 
         @Override // android.view.SurfaceHolder.Callback
-        public final void surfaceChanged(SurfaceHolder surfaceHolder, int i, int i6, int i9) {
+        public final void surfaceChanged(SurfaceHolder surfaceHolder, int i, int i4, int i6) {
         }
 
         @Override // android.view.SurfaceHolder.Callback
@@ -173,7 +173,7 @@ public class ad implements h, w.e, w.g {
 
         @Override // com.anythink.basead.exoplayer.l.h
         public final void a(String str, long j6, long j9) {
-            Iterator it = ad.this.f6322D.iterator();
+            Iterator it = ad.this.f7108D.iterator();
             while (it.hasNext()) {
                 ((com.anythink.basead.exoplayer.l.h) it.next()).a(str, j6, j9);
             }
@@ -181,7 +181,7 @@ public class ad implements h, w.e, w.g {
 
         @Override // com.anythink.basead.exoplayer.b.g
         public final void b(String str, long j6, long j9) {
-            Iterator it = ad.this.f6323E.iterator();
+            Iterator it = ad.this.f7109E.iterator();
             while (it.hasNext()) {
                 ((com.anythink.basead.exoplayer.b.g) it.next()).b(str, j6, j9);
             }
@@ -189,8 +189,8 @@ public class ad implements h, w.e, w.g {
 
         @Override // com.anythink.basead.exoplayer.l.h
         public final void a(m mVar) {
-            ad.this.f6325G = mVar;
-            Iterator it = ad.this.f6322D.iterator();
+            ad.this.f7111G = mVar;
+            Iterator it = ad.this.f7108D.iterator();
             while (it.hasNext()) {
                 ((com.anythink.basead.exoplayer.l.h) it.next()).a(mVar);
             }
@@ -198,8 +198,8 @@ public class ad implements h, w.e, w.g {
 
         @Override // com.anythink.basead.exoplayer.b.g
         public final void b(m mVar) {
-            ad.this.f6326H = mVar;
-            Iterator it = ad.this.f6323E.iterator();
+            ad.this.f7112H = mVar;
+            Iterator it = ad.this.f7109E.iterator();
             while (it.hasNext()) {
                 ((com.anythink.basead.exoplayer.b.g) it.next()).b(mVar);
             }
@@ -207,33 +207,33 @@ public class ad implements h, w.e, w.g {
 
         @Override // com.anythink.basead.exoplayer.l.h
         public final void a(int i, long j6) {
-            Iterator it = ad.this.f6322D.iterator();
+            Iterator it = ad.this.f7108D.iterator();
             while (it.hasNext()) {
                 ((com.anythink.basead.exoplayer.l.h) it.next()).a(i, j6);
             }
         }
 
         @Override // com.anythink.basead.exoplayer.l.h
-        public final void a(int i, int i6, int i9, float f3) {
-            Iterator it = ad.this.f6320B.iterator();
+        public final void a(int i, int i4, int i6, float f2) {
+            Iterator it = ad.this.f7106B.iterator();
             while (it.hasNext()) {
-                ((com.anythink.basead.exoplayer.l.g) it.next()).a(i, i6);
+                ((com.anythink.basead.exoplayer.l.g) it.next()).a(i, i4);
             }
-            Iterator it2 = ad.this.f6322D.iterator();
+            Iterator it2 = ad.this.f7108D.iterator();
             while (it2.hasNext()) {
-                ((com.anythink.basead.exoplayer.l.h) it2.next()).a(i, i6, i9, f3);
+                ((com.anythink.basead.exoplayer.l.h) it2.next()).a(i, i4, i6, f2);
             }
         }
 
         @Override // com.anythink.basead.exoplayer.l.h
         public final void a(Surface surface) {
-            if (ad.this.f6327I == surface) {
-                Iterator it = ad.this.f6320B.iterator();
+            if (ad.this.f7113I == surface) {
+                Iterator it = ad.this.f7106B.iterator();
                 while (it.hasNext()) {
                     it.next();
                 }
             }
-            Iterator it2 = ad.this.f6322D.iterator();
+            Iterator it2 = ad.this.f7108D.iterator();
             while (it2.hasNext()) {
                 ((com.anythink.basead.exoplayer.l.h) it2.next()).a(surface);
             }
@@ -241,8 +241,8 @@ public class ad implements h, w.e, w.g {
 
         @Override // com.anythink.basead.exoplayer.b.g
         public final void a(int i) {
-            ad.this.f6333P = i;
-            Iterator it = ad.this.f6323E.iterator();
+            ad.this.f7119P = i;
+            Iterator it = ad.this.f7109E.iterator();
             while (it.hasNext()) {
                 ((com.anythink.basead.exoplayer.b.g) it.next()).a(i);
             }
@@ -250,7 +250,7 @@ public class ad implements h, w.e, w.g {
 
         @Override // com.anythink.basead.exoplayer.b.g
         public final void a(int i, long j6, long j9) {
-            Iterator it = ad.this.f6323E.iterator();
+            Iterator it = ad.this.f7109E.iterator();
             while (it.hasNext()) {
                 ((com.anythink.basead.exoplayer.b.g) it.next()).a(i, j6, j9);
             }
@@ -258,7 +258,7 @@ public class ad implements h, w.e, w.g {
 
         @Override // com.anythink.basead.exoplayer.g.f
         public final void a(com.anythink.basead.exoplayer.g.a aVar) {
-            Iterator it = ad.this.f6321C.iterator();
+            Iterator it = ad.this.f7107C.iterator();
             while (it.hasNext()) {
                 ((com.anythink.basead.exoplayer.g.f) it.next()).a(aVar);
             }
@@ -277,96 +277,96 @@ public class ad implements h, w.e, w.g {
 
     @Deprecated
     private int K() {
-        return af.f(this.f6334Q.f6427d);
+        return af.f(this.f7120Q.f7213d);
     }
 
     private com.anythink.basead.exoplayer.a.a L() {
-        return this.f6324F;
+        return this.f7110F;
     }
 
     private com.anythink.basead.exoplayer.b.b M() {
-        return this.f6334Q;
+        return this.f7120Q;
     }
 
     private float N() {
-        return this.f6335R;
+        return this.f7121R;
     }
 
     private m O() {
-        return this.f6325G;
+        return this.f7111G;
     }
 
     private m P() {
-        return this.f6326H;
+        return this.f7112H;
     }
 
     private int Q() {
-        return this.f6333P;
+        return this.f7119P;
     }
 
     private com.anythink.basead.exoplayer.c.d R() {
-        return this.f6331N;
+        return this.f7117N;
     }
 
     private com.anythink.basead.exoplayer.c.d S() {
-        return this.f6332O;
+        return this.f7118O;
     }
 
     private void T() {
-        TextureView textureView = this.f6330M;
+        TextureView textureView = this.f7116M;
         if (textureView != null) {
-            if (textureView.getSurfaceTextureListener() != this.f6319A) {
-                Log.w(f6318x, "SurfaceTextureListener already unset or replaced.");
+            if (textureView.getSurfaceTextureListener() != this.f7105A) {
+                Log.w(f7104x, "SurfaceTextureListener already unset or replaced.");
             } else {
-                this.f6330M.setSurfaceTextureListener(null);
+                this.f7116M.setSurfaceTextureListener(null);
             }
-            this.f6330M = null;
+            this.f7116M = null;
         }
-        SurfaceHolder surfaceHolder = this.f6329L;
+        SurfaceHolder surfaceHolder = this.f7115L;
         if (surfaceHolder != null) {
-            surfaceHolder.removeCallback(this.f6319A);
-            this.f6329L = null;
+            surfaceHolder.removeCallback(this.f7105A);
+            this.f7115L = null;
         }
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final int A() {
-        return this.f6338y.A();
+        return this.f7124y.A();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final long B() {
-        return this.f6338y.B();
+        return this.f7124y.B();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final int C() {
-        return this.f6338y.C();
+        return this.f7124y.C();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final com.anythink.basead.exoplayer.h.af D() {
-        return this.f6338y.D();
+        return this.f7124y.D();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final com.anythink.basead.exoplayer.i.g E() {
-        return this.f6338y.E();
+        return this.f7124y.E();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final ae F() {
-        return this.f6338y.F();
+        return this.f7124y.F();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final Object G() {
-        return this.f6338y.G();
+        return this.f7124y.G();
     }
 
     @Override // com.anythink.basead.exoplayer.w.g
     public final int H() {
-        return this.f6328K;
+        return this.f7114K;
     }
 
     @Override // com.anythink.basead.exoplayer.w.g
@@ -390,38 +390,38 @@ public class ad implements h, w.e, w.g {
 
     @Override // com.anythink.basead.exoplayer.w
     public final boolean f() {
-        return this.f6338y.f();
+        return this.f7124y.f();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final int g() {
-        return this.f6338y.g();
+        return this.f7124y.g();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final boolean h() {
-        return this.f6338y.h();
+        return this.f7124y.h();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final boolean i() {
-        return this.f6338y.i();
+        return this.f7124y.i();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final void j() {
-        this.f6324F.a();
-        this.f6338y.j();
+        this.f7110F.a();
+        this.f7124y.j();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final v k() {
-        return this.f6338y.k();
+        return this.f7124y.k();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final Object l() {
-        return this.f6338y.l();
+        return this.f7124y.l();
     }
 
     @Override // com.anythink.basead.exoplayer.w
@@ -431,45 +431,45 @@ public class ad implements h, w.e, w.g {
 
     @Override // com.anythink.basead.exoplayer.w
     public final void n() {
-        this.f6338y.n();
+        this.f7124y.n();
         T();
-        Surface surface = this.f6327I;
+        Surface surface = this.f7113I;
         if (surface != null) {
             if (this.J) {
                 surface.release();
             }
-            this.f6327I = null;
+            this.f7113I = null;
         }
-        com.anythink.basead.exoplayer.h.s sVar = this.f6336S;
+        com.anythink.basead.exoplayer.h.s sVar = this.f7122S;
         if (sVar != null) {
-            sVar.a(this.f6324F);
+            sVar.a(this.f7110F);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final int o() {
-        return this.f6338y.o();
+        return this.f7124y.o();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final int p() {
-        return this.f6338y.p();
+        return this.f7124y.p();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final int q() {
-        return this.f6338y.q();
+        return this.f7124y.q();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final int r() {
-        return this.f6338y.r();
+        return this.f7124y.r();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final long s() {
         try {
-            return this.f6338y.s();
+            return this.f7124y.s();
         } catch (Throwable unused) {
             return 0L;
         }
@@ -477,85 +477,85 @@ public class ad implements h, w.e, w.g {
 
     @Override // com.anythink.basead.exoplayer.w
     public final long t() {
-        return this.f6338y.t();
+        return this.f7124y.t();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final long u() {
-        return this.f6338y.u();
+        return this.f7124y.u();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final int v() {
-        return this.f6338y.v();
+        return this.f7124y.v();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final boolean w() {
-        return this.f6338y.w();
+        return this.f7124y.w();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final boolean x() {
-        return this.f6338y.x();
+        return this.f7124y.x();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final boolean y() {
-        return this.f6338y.y();
+        return this.f7124y.y();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final int z() {
-        return this.f6338y.z();
+        return this.f7124y.z();
     }
 
     public ad(ab abVar, com.anythink.basead.exoplayer.i.h hVar, p pVar, com.anythink.basead.exoplayer.d.g<com.anythink.basead.exoplayer.d.k> gVar, byte b9) {
-        this(abVar, hVar, pVar, gVar, com.anythink.basead.exoplayer.k.c.f8365a);
+        this(abVar, hVar, pVar, gVar, com.anythink.basead.exoplayer.k.c.f9151a);
     }
 
     @Deprecated
     private void e(int i) {
         com.anythink.basead.exoplayer.b.b a9 = new b.a().b(af.d(i)).a(af.e(i)).a();
-        this.f6334Q = a9;
-        for (y yVar : this.f6337w) {
+        this.f7120Q = a9;
+        for (y yVar : this.f7123w) {
             if (yVar.a() == 1) {
-                this.f6338y.a(yVar).a(3).a(a9).i();
+                this.f7124y.a(yVar).a(3).a(a9).i();
             }
         }
     }
 
     @Override // com.anythink.basead.exoplayer.w.g
     public final void d(int i) {
-        this.f6328K = i;
-        for (y yVar : this.f6337w) {
+        this.f7114K = i;
+        for (y yVar : this.f7123w) {
             if (yVar.a() == 2) {
-                this.f6338y.a(yVar).a(4).a(Integer.valueOf(i)).i();
+                this.f7124y.a(yVar).a(4).a(Integer.valueOf(i)).i();
             }
         }
     }
 
     private ad(ab abVar, com.anythink.basead.exoplayer.i.h hVar, p pVar, com.anythink.basead.exoplayer.d.g<com.anythink.basead.exoplayer.d.k> gVar, com.anythink.basead.exoplayer.k.c cVar) {
         a aVar = new a(this, (byte) 0);
-        this.f6319A = aVar;
-        this.f6320B = new CopyOnWriteArraySet<>();
-        this.f6321C = new CopyOnWriteArraySet<>();
+        this.f7105A = aVar;
+        this.f7106B = new CopyOnWriteArraySet<>();
+        this.f7107C = new CopyOnWriteArraySet<>();
         CopyOnWriteArraySet<com.anythink.basead.exoplayer.l.h> copyOnWriteArraySet = new CopyOnWriteArraySet<>();
-        this.f6322D = copyOnWriteArraySet;
+        this.f7108D = copyOnWriteArraySet;
         CopyOnWriteArraySet<com.anythink.basead.exoplayer.b.g> copyOnWriteArraySet2 = new CopyOnWriteArraySet<>();
-        this.f6323E = copyOnWriteArraySet2;
+        this.f7109E = copyOnWriteArraySet2;
         Handler handler = new Handler(Looper.myLooper() != null ? Looper.myLooper() : Looper.getMainLooper());
-        this.f6339z = handler;
+        this.f7125z = handler;
         y[] a9 = abVar.a(handler, aVar, aVar, aVar, gVar);
-        this.f6337w = a9;
-        this.f6335R = 1.0f;
-        this.f6333P = 0;
-        this.f6334Q = com.anythink.basead.exoplayer.b.b.f6424a;
-        this.f6328K = 1;
+        this.f7123w = a9;
+        this.f7121R = 1.0f;
+        this.f7119P = 0;
+        this.f7120Q = com.anythink.basead.exoplayer.b.b.f7210a;
+        this.f7114K = 1;
         j jVar = new j(a9, hVar, pVar, cVar);
-        this.f6338y = jVar;
+        this.f7124y = jVar;
         com.anythink.basead.exoplayer.a.a a10 = a.C0014a.a(jVar, cVar);
-        this.f6324F = a10;
+        this.f7110F = a10;
         a((w.c) a10);
         copyOnWriteArraySet.add(a10);
         copyOnWriteArraySet2.add(a10);
@@ -567,7 +567,7 @@ public class ad implements h, w.e, w.g {
 
     @Deprecated
     private void c(com.anythink.basead.exoplayer.g.f fVar) {
-        this.f6321C.retainAll(Collections.singleton(this.f6324F));
+        this.f7107C.retainAll(Collections.singleton(this.f7110F));
         if (fVar != null) {
             a(fVar);
         }
@@ -575,12 +575,12 @@ public class ad implements h, w.e, w.g {
 
     @Deprecated
     private void c(com.anythink.basead.exoplayer.l.h hVar) {
-        this.f6322D.remove(hVar);
+        this.f7108D.remove(hVar);
     }
 
     @Override // com.anythink.basead.exoplayer.w.g
     public final void b(Surface surface) {
-        if (surface == null || surface != this.f6327I) {
+        if (surface == null || surface != this.f7113I) {
             return;
         }
         a((Surface) null);
@@ -588,7 +588,7 @@ public class ad implements h, w.e, w.g {
 
     @Deprecated
     private void c(com.anythink.basead.exoplayer.b.g gVar) {
-        this.f6323E.remove(gVar);
+        this.f7109E.remove(gVar);
     }
 
     @Override // com.anythink.basead.exoplayer.w.g
@@ -599,20 +599,20 @@ public class ad implements h, w.e, w.g {
 
     @Override // com.anythink.basead.exoplayer.w.g
     public final void b(SurfaceHolder surfaceHolder) {
-        if (surfaceHolder == null || surfaceHolder != this.f6329L) {
+        if (surfaceHolder == null || surfaceHolder != this.f7115L) {
             return;
         }
         a((SurfaceHolder) null);
     }
 
     @Override // com.anythink.basead.exoplayer.w
-    public final void c(boolean z3) {
-        this.f6338y.c(z3);
-        com.anythink.basead.exoplayer.h.s sVar = this.f6336S;
+    public final void c(boolean z6) {
+        this.f7124y.c(z6);
+        com.anythink.basead.exoplayer.h.s sVar = this.f7122S;
         if (sVar != null) {
-            sVar.a(this.f6324F);
-            this.f6336S = null;
-            this.f6324F.b();
+            sVar.a(this.f7110F);
+            this.f7122S = null;
+            this.f7110F.b();
         }
     }
 
@@ -627,9 +627,9 @@ public class ad implements h, w.e, w.g {
     public final void a(SurfaceHolder surfaceHolder) {
         Surface surface;
         T();
-        this.f6329L = surfaceHolder;
+        this.f7115L = surfaceHolder;
         if (surfaceHolder != null) {
-            surfaceHolder.addCallback(this.f6319A);
+            surfaceHolder.addCallback(this.f7105A);
             surface = surfaceHolder.getSurface();
             if (surface != null) {
             }
@@ -641,7 +641,7 @@ public class ad implements h, w.e, w.g {
     @Override // com.anythink.basead.exoplayer.w.g
     public final void b(SurfaceView surfaceView) {
         SurfaceHolder holder = surfaceView == null ? null : surfaceView.getHolder();
-        if (holder == null || holder != this.f6329L) {
+        if (holder == null || holder != this.f7115L) {
             return;
         }
         a((SurfaceHolder) null);
@@ -649,17 +649,17 @@ public class ad implements h, w.e, w.g {
 
     @Override // com.anythink.basead.exoplayer.w
     public final int d() {
-        return this.f6338y.d();
+        return this.f7124y.d();
     }
 
     @Deprecated
     private void d(com.anythink.basead.exoplayer.g.f fVar) {
-        this.f6321C.remove(fVar);
+        this.f7107C.remove(fVar);
     }
 
     @Override // com.anythink.basead.exoplayer.w.g
     public final void b(TextureView textureView) {
-        if (textureView == null || textureView != this.f6330M) {
+        if (textureView == null || textureView != this.f7116M) {
             return;
         }
         a((TextureView) null);
@@ -667,7 +667,7 @@ public class ad implements h, w.e, w.g {
 
     @Override // com.anythink.basead.exoplayer.w
     public final int c(int i) {
-        return this.f6338y.c(i);
+        return this.f7124y.c(i);
     }
 
     @Override // com.anythink.basead.exoplayer.w.g
@@ -676,19 +676,19 @@ public class ad implements h, w.e, w.g {
     }
 
     private void b(com.anythink.basead.exoplayer.a.b bVar) {
-        this.f6324F.b(bVar);
+        this.f7110F.b(bVar);
     }
 
     @Override // com.anythink.basead.exoplayer.w.g
     public final void a(TextureView textureView) {
         T();
-        this.f6330M = textureView;
+        this.f7116M = textureView;
         Surface surface = null;
         if (textureView != null) {
             if (textureView.getSurfaceTextureListener() != null) {
-                Log.w(f6318x, "Replacing existing SurfaceTextureListener.");
+                Log.w(f7104x, "Replacing existing SurfaceTextureListener.");
             }
-            textureView.setSurfaceTextureListener(this.f6319A);
+            textureView.setSurfaceTextureListener(this.f7105A);
             SurfaceTexture surfaceTexture = textureView.isAvailable() ? textureView.getSurfaceTexture() : null;
             if (surfaceTexture != null) {
                 surface = new Surface(surfaceTexture);
@@ -699,12 +699,12 @@ public class ad implements h, w.e, w.g {
 
     @Override // com.anythink.basead.exoplayer.w
     public final g e() {
-        return this.f6338y.e();
+        return this.f7124y.e();
     }
 
     @Override // com.anythink.basead.exoplayer.w.g
     public final void b(com.anythink.basead.exoplayer.l.g gVar) {
-        this.f6320B.remove(gVar);
+        this.f7106B.remove(gVar);
     }
 
     @Deprecated
@@ -713,58 +713,58 @@ public class ad implements h, w.e, w.g {
     }
 
     private void b(com.anythink.basead.exoplayer.g.f fVar) {
-        this.f6321C.remove(fVar);
+        this.f7107C.remove(fVar);
     }
 
     @Deprecated
     private void b(com.anythink.basead.exoplayer.l.h hVar) {
-        this.f6322D.add(hVar);
+        this.f7108D.add(hVar);
     }
 
     @Deprecated
     private void b(com.anythink.basead.exoplayer.b.g gVar) {
-        this.f6323E.add(gVar);
+        this.f7109E.add(gVar);
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final void b(w.c cVar) {
-        this.f6338y.b(cVar);
+        this.f7124y.b(cVar);
     }
 
     private void a(com.anythink.basead.exoplayer.a.b bVar) {
-        this.f6324F.a(bVar);
+        this.f7110F.a(bVar);
     }
 
     @Override // com.anythink.basead.exoplayer.w
-    public final void b(boolean z3) {
-        this.f6338y.b(z3);
+    public final void b(boolean z6) {
+        this.f7124y.b(z6);
     }
 
     private void a(com.anythink.basead.exoplayer.b.b bVar) {
-        this.f6334Q = bVar;
-        for (y yVar : this.f6337w) {
+        this.f7120Q = bVar;
+        for (y yVar : this.f7123w) {
             if (yVar.a() == 1) {
-                this.f6338y.a(yVar).a(3).a(bVar).i();
+                this.f7124y.a(yVar).a(3).a(bVar).i();
             }
         }
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final void b(int i) {
-        this.f6324F.a();
-        this.f6338y.b(i);
+        this.f7110F.a();
+        this.f7124y.b(i);
     }
 
     @Override // com.anythink.basead.exoplayer.h
     public final void b(h.c... cVarArr) {
-        this.f6338y.b(cVarArr);
+        this.f7124y.b(cVarArr);
     }
 
-    public final void a(float f3) {
-        this.f6335R = f3;
-        for (y yVar : this.f6337w) {
+    public final void a(float f2) {
+        this.f7121R = f2;
+        for (y yVar : this.f7123w) {
             if (yVar.a() == 1) {
-                this.f6338y.a(yVar).a(2).a(Float.valueOf(f3)).i();
+                this.f7124y.a(yVar).a(2).a(Float.valueOf(f2)).i();
             }
         }
     }
@@ -783,45 +783,45 @@ public class ad implements h, w.e, w.g {
 
     @Override // com.anythink.basead.exoplayer.w.g
     public final void a(com.anythink.basead.exoplayer.l.g gVar) {
-        this.f6320B.add(gVar);
+        this.f7106B.add(gVar);
     }
 
     @Deprecated
     private void a(b bVar) {
-        this.f6320B.clear();
+        this.f7106B.clear();
         if (bVar != null) {
             a((com.anythink.basead.exoplayer.l.g) bVar);
         }
     }
 
     private void a(com.anythink.basead.exoplayer.g.f fVar) {
-        this.f6321C.add(fVar);
+        this.f7107C.add(fVar);
     }
 
     @Deprecated
     private void a(com.anythink.basead.exoplayer.l.h hVar) {
-        this.f6322D.retainAll(Collections.singleton(this.f6324F));
+        this.f7108D.retainAll(Collections.singleton(this.f7110F));
         if (hVar != null) {
-            this.f6322D.add(hVar);
+            this.f7108D.add(hVar);
         }
     }
 
     @Deprecated
     private void a(com.anythink.basead.exoplayer.b.g gVar) {
-        this.f6323E.retainAll(Collections.singleton(this.f6324F));
+        this.f7109E.retainAll(Collections.singleton(this.f7110F));
         if (gVar != null) {
-            this.f6323E.add(gVar);
+            this.f7109E.add(gVar);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.h
     public final Looper a() {
-        return this.f6338y.a();
+        return this.f7124y.a();
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final void a(w.c cVar) {
-        this.f6338y.a(cVar);
+        this.f7124y.a(cVar);
     }
 
     @Override // com.anythink.basead.exoplayer.h
@@ -830,59 +830,59 @@ public class ad implements h, w.e, w.g {
     }
 
     @Override // com.anythink.basead.exoplayer.h
-    public final void a(com.anythink.basead.exoplayer.h.s sVar, boolean z3, boolean z6) {
-        com.anythink.basead.exoplayer.h.s sVar2 = this.f6336S;
+    public final void a(com.anythink.basead.exoplayer.h.s sVar, boolean z6, boolean z9) {
+        com.anythink.basead.exoplayer.h.s sVar2 = this.f7122S;
         if (sVar2 != sVar) {
             if (sVar2 != null) {
-                sVar2.a(this.f6324F);
-                this.f6324F.b();
+                sVar2.a(this.f7110F);
+                this.f7110F.b();
             }
-            sVar.a(this.f6339z, this.f6324F);
-            this.f6336S = sVar;
+            sVar.a(this.f7125z, this.f7110F);
+            this.f7122S = sVar;
         }
-        this.f6338y.a(sVar, z3, z6);
+        this.f7124y.a(sVar, z6, z9);
     }
 
     @Override // com.anythink.basead.exoplayer.w
-    public final void a(boolean z3) {
-        this.f6338y.a(z3);
+    public final void a(boolean z6) {
+        this.f7124y.a(z6);
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final void a(int i) {
-        this.f6338y.a(i);
+        this.f7124y.a(i);
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final void a(long j6) {
-        this.f6324F.a();
-        this.f6338y.a(j6);
+        this.f7110F.a();
+        this.f7124y.a(j6);
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final void a(int i, long j6) {
-        this.f6324F.a();
-        this.f6338y.a(i, j6);
+        this.f7110F.a();
+        this.f7124y.a(i, j6);
     }
 
     @Override // com.anythink.basead.exoplayer.w
     public final void a(v vVar) {
-        this.f6338y.a(vVar);
+        this.f7124y.a(vVar);
     }
 
     @Override // com.anythink.basead.exoplayer.h
     public final void a(ac acVar) {
-        this.f6338y.a(acVar);
+        this.f7124y.a(acVar);
     }
 
     @Override // com.anythink.basead.exoplayer.h
     public final void a(h.c... cVarArr) {
-        this.f6338y.a(cVarArr);
+        this.f7124y.a(cVarArr);
     }
 
     @Override // com.anythink.basead.exoplayer.h
     public final x a(x.b bVar) {
-        return this.f6338y.a(bVar);
+        return this.f7124y.a(bVar);
     }
 
     private static h a(y[] yVarArr, com.anythink.basead.exoplayer.i.h hVar, p pVar, com.anythink.basead.exoplayer.k.c cVar) {
@@ -890,14 +890,14 @@ public class ad implements h, w.e, w.g {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(Surface surface, boolean z3) {
+    public void a(Surface surface, boolean z6) {
         ArrayList arrayList = new ArrayList();
-        for (y yVar : this.f6337w) {
+        for (y yVar : this.f7123w) {
             if (yVar.a() == 2) {
-                arrayList.add(this.f6338y.a(yVar).a(1).a(surface).i());
+                arrayList.add(this.f7124y.a(yVar).a(1).a(surface).i());
             }
         }
-        Surface surface2 = this.f6327I;
+        Surface surface2 = this.f7113I;
         if (surface2 != null && surface2 != surface) {
             try {
                 Iterator it = arrayList.iterator();
@@ -907,13 +907,13 @@ public class ad implements h, w.e, w.g {
             } catch (InterruptedException unused) {
                 Thread.currentThread().interrupt();
             } catch (TimeoutException unused2) {
-                this.f6338y.c(false);
+                this.f7124y.c(false);
             }
             if (this.J) {
-                this.f6327I.release();
+                this.f7113I.release();
             }
         }
-        this.f6327I = surface;
-        this.J = z3;
+        this.f7113I = surface;
+        this.J = z6;
     }
 }

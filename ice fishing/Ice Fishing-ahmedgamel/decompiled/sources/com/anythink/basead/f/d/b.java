@@ -4,24 +4,24 @@ package com.anythink.basead.f.d;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f8942a = "262";
+    public static final String f9728a = "262";
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile a f8943b;
+    private static volatile a f9729b;
 
     public static void a(a aVar) {
-        f8943b = aVar;
+        f9729b = aVar;
     }
 
     private static boolean b() {
         try {
-            return f8943b != null;
+            return f9729b != null;
         } catch (Throwable unused) {
             return false;
         }
     }
 
     public static a a() {
-        return f8943b;
+        return f9729b;
     }
 }

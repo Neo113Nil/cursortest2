@@ -6,10 +6,10 @@ import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 public abstract class d {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final /* synthetic */ AtomicReferenceFieldUpdater f3828n = AtomicReferenceFieldUpdater.newUpdater(d.class, Object.class, "_next$volatile");
+    public static final /* synthetic */ AtomicReferenceFieldUpdater f3783n = AtomicReferenceFieldUpdater.newUpdater(d.class, Object.class, "_next$volatile");
 
     /* renamed from: u, reason: collision with root package name */
-    public static final /* synthetic */ AtomicReferenceFieldUpdater f3829u = AtomicReferenceFieldUpdater.newUpdater(d.class, Object.class, "_prev$volatile");
+    public static final /* synthetic */ AtomicReferenceFieldUpdater f3784u = AtomicReferenceFieldUpdater.newUpdater(d.class, Object.class, "_prev$volatile");
     private volatile /* synthetic */ Object _next$volatile;
     private volatile /* synthetic */ Object _prev$volatile;
 
@@ -18,12 +18,12 @@ public abstract class d {
     }
 
     public final void a() {
-        f3829u.set(this, null);
+        f3784u.set(this, null);
     }
 
     public final d b() {
-        Object obj = f3828n.get(this);
-        if (obj == a.f3821b) {
+        Object obj = f3783n.get(this);
+        if (obj == a.f3776b) {
             return null;
         }
         return (d) obj;
@@ -37,7 +37,7 @@ public abstract class d {
             return;
         }
         while (true) {
-            AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f3829u;
+            AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f3784u;
             d dVar = (d) atomicReferenceFieldUpdater.get(this);
             while (dVar != null && dVar.c()) {
                 dVar = (d) atomicReferenceFieldUpdater.get(dVar);
@@ -57,7 +57,7 @@ public abstract class d {
                 }
             }
             if (dVar != null) {
-                f3828n.set(dVar, b10);
+                f3783n.set(dVar, b10);
             }
             if (!b10.c() || b10.b() == null) {
                 if (dVar == null || !dVar.c()) {

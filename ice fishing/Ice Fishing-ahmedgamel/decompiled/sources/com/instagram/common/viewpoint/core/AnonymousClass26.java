@@ -7,10 +7,10 @@ import javax.annotation.CheckForNull;
 
 /* renamed from: com.facebook.ads.redexgen.X.26, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public class AnonymousClass26<E> extends C0787Av<E> implements SortedSet<E> {
+public class AnonymousClass26<E> extends C0807Av<E> implements SortedSet<E> {
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.26 != com.google.common.collect.Sets$FilteredSortedSet<E> */
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.kj != com.google.common.base.Predicate<? super E> */
-    public AnonymousClass26(SortedSet<E> unfiltered, InterfaceC2071kj<? super E> predicate) {
+    public AnonymousClass26(SortedSet<E> unfiltered, InterfaceC2091kj<? super E> predicate) {
         super(unfiltered, predicate);
     }
 
@@ -25,7 +25,7 @@ public class AnonymousClass26<E> extends C0787Av<E> implements SortedSet<E> {
     @Override // java.util.SortedSet
     @ParametricNullness
     public final E first() {
-        return (E) AbstractC2330p9.A05(this.A01.iterator(), this.A00);
+        return (E) AbstractC2350p9.A05(this.A01.iterator(), this.A00);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.26 != com.google.common.collect.Sets$FilteredSortedSet<E> */

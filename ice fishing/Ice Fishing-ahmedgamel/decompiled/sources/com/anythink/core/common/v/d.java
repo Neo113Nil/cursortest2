@@ -16,32 +16,32 @@ import org.json.JSONArray;
 public class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f16728a = "anythink_imp_check";
+    public static final String f17515a = "anythink_imp_check";
 
     /* renamed from: b, reason: collision with root package name */
-    public static int f16729b = 999;
+    public static int f17516b = 999;
 
     /* renamed from: c, reason: collision with root package name */
-    public static int f16730c = 888;
+    public static int f17517c = 888;
 
     /* renamed from: d, reason: collision with root package name */
-    public static int f16731d = 5;
+    public static int f17518d = 5;
 
     /* renamed from: e, reason: collision with root package name */
-    private static volatile d f16732e;
+    private static volatile d f17519e;
 
     /* renamed from: f, reason: collision with root package name */
-    private final List<Integer> f16733f = Arrays.asList(50, 15, 8, 22, 28, 59, 6, 37, 3);
+    private final List<Integer> f17520f = Arrays.asList(50, 15, 8, 22, 28, 59, 6, 37, 3);
 
     /* renamed from: g, reason: collision with root package name */
-    private final Map<String, List<Integer>> f16734g = new HashMap();
+    private final Map<String, List<Integer>> f17521g = new HashMap();
 
     /* renamed from: h, reason: collision with root package name */
-    private final Map<String, String> f16735h = new HashMap();
+    private final Map<String, String> f17522h = new HashMap();
     private final Map<String, List<Integer>> i = new HashMap();
 
     /* renamed from: j, reason: collision with root package name */
-    private final Map<String, String> f16736j = new HashMap();
+    private final Map<String, String> f17523j = new HashMap();
 
     public interface a {
         void a();
@@ -68,7 +68,7 @@ public class d {
             if (TextUtils.isEmpty(b9) || TextUtils.isEmpty(M8)) {
                 return "";
             }
-            return this.f16736j.get(M8 + "_" + b9);
+            return this.f17523j.get(M8 + "_" + b9);
         } catch (Exception e9) {
             e9.printStackTrace();
             return "";
@@ -79,7 +79,7 @@ public class d {
         if (aTBaseAdAdapter != null) {
             try {
                 bv unitGroupInfo = aTBaseAdAdapter.getUnitGroupInfo();
-                if (unitGroupInfo == null || !this.f16733f.contains(Integer.valueOf(unitGroupInfo.g())) || unitGroupInfo.bg() != 1) {
+                if (unitGroupInfo == null || !this.f17520f.contains(Integer.valueOf(unitGroupInfo.g())) || unitGroupInfo.bg() != 1) {
                     return true;
                 }
                 List<Integer> a9 = a(unitGroupInfo, false);
@@ -88,7 +88,7 @@ public class d {
                 }
                 return a(aTBaseAdAdapter, a9, false);
             } catch (Throwable th) {
-                D.y.w("check imp error", th.getMessage() + ", " + q.a(th.getStackTrace()));
+                com.IceFishing.LiveIceFishing.k.x("check imp error", th.getMessage() + ", " + q.a(th.getStackTrace()));
             }
         }
         return true;
@@ -98,7 +98,7 @@ public class d {
         if (aTBaseAdAdapter != null) {
             try {
                 bv unitGroupInfo = aTBaseAdAdapter.getUnitGroupInfo();
-                if (unitGroupInfo == null || !this.f16733f.contains(Integer.valueOf(unitGroupInfo.g())) || unitGroupInfo.bj() != 1) {
+                if (unitGroupInfo == null || !this.f17520f.contains(Integer.valueOf(unitGroupInfo.g())) || unitGroupInfo.bj() != 1) {
                     return true;
                 }
                 List<Integer> a9 = a(unitGroupInfo, true);
@@ -107,7 +107,7 @@ public class d {
                 }
                 return a(aTBaseAdAdapter, a9, true);
             } catch (Throwable th) {
-                D.y.w("check reward error", th.getMessage() + ", " + q.a(th.getStackTrace()));
+                com.IceFishing.LiveIceFishing.k.x("check reward error", th.getMessage() + ", " + q.a(th.getStackTrace()));
             }
         }
         return true;
@@ -124,17 +124,17 @@ public class d {
                         return;
                     }
                     String str = M8 + "_" + b9;
-                    if (this.f16734g.containsKey(str)) {
-                        Objects.toString(this.f16734g.remove(str));
+                    if (this.f17521g.containsKey(str)) {
+                        Objects.toString(this.f17521g.remove(str));
                     }
-                    if (this.f16735h.containsKey(str)) {
-                        this.f16735h.remove(str);
+                    if (this.f17522h.containsKey(str)) {
+                        this.f17522h.remove(str);
                     }
                     if (this.i.containsKey(str)) {
                         Objects.toString(this.i.remove(str));
                     }
-                    if (this.f16736j.containsKey(str)) {
-                        this.f16736j.remove(str);
+                    if (this.f17523j.containsKey(str)) {
+                        this.f17523j.remove(str);
                     }
                 }
             } catch (Exception e9) {
@@ -144,18 +144,18 @@ public class d {
     }
 
     public static d a() {
-        if (f16732e == null) {
+        if (f17519e == null) {
             synchronized (d.class) {
                 try {
-                    if (f16732e == null) {
-                        f16732e = new d();
+                    if (f17519e == null) {
+                        f17519e = new d();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16732e;
+        return f17519e;
     }
 
     public final boolean a(ATBaseAdAdapter aTBaseAdAdapter) {
@@ -164,7 +164,7 @@ public class d {
         if (aTBaseAdAdapter != null) {
             try {
                 bv unitGroupInfo = aTBaseAdAdapter.getUnitGroupInfo();
-                if (unitGroupInfo == null || !this.f16733f.contains(Integer.valueOf(unitGroupInfo.g())) || unitGroupInfo.bg() != 1 || (bm = unitGroupInfo.bm()) == null || bm.length() <= 0 || (b9 = b()) == null || b9.length <= 0) {
+                if (unitGroupInfo == null || !this.f17520f.contains(Integer.valueOf(unitGroupInfo.g())) || unitGroupInfo.bg() != 1 || (bm = unitGroupInfo.bm()) == null || bm.length() <= 0 || (b9 = b()) == null || b9.length <= 0) {
                     return true;
                 }
                 StringBuilder sb = new StringBuilder();
@@ -176,7 +176,7 @@ public class d {
                 }
                 String str = "";
                 String name = aTBaseAdAdapter.getClass().getName();
-                int lastIndexOf = name.lastIndexOf(com.anythink.core.common.d.j.f12378z);
+                int lastIndexOf = name.lastIndexOf(com.anythink.core.common.d.j.f13164z);
                 if (lastIndexOf != -1) {
                     str = name.substring(0, lastIndexOf);
                 }
@@ -184,7 +184,7 @@ public class d {
                 com.anythink.core.common.u.e.a(aTBaseAdAdapter.getTrackingInfo(), sb.toString(), a9);
                 return a9;
             } catch (Throwable th) {
-                D.y.w("check imp error", th.getMessage() + ", " + q.a(th.getStackTrace()));
+                com.IceFishing.LiveIceFishing.k.x("check imp error", th.getMessage() + ", " + q.a(th.getStackTrace()));
             }
         }
         return true;
@@ -259,20 +259,20 @@ public class d {
                     }
                 }
             } catch (Throwable th) {
-                D.y.w("check checkWinResult error", th.getMessage() + ", " + q.a(th.getStackTrace()));
+                com.IceFishing.LiveIceFishing.k.x("check checkWinResult error", th.getMessage() + ", " + q.a(th.getStackTrace()));
             }
         }
         aVar.a();
     }
 
-    private static List<Integer> a(bv bvVar, boolean z3) {
+    private static List<Integer> a(bv bvVar, boolean z6) {
         JSONArray bi;
         JSONArray bh;
         ArrayList arrayList = new ArrayList();
         try {
             int i = 0;
             if (bvVar.o()) {
-                if (z3) {
+                if (z6) {
                     bh = bvVar.bk();
                 } else {
                     bh = bvVar.bh();
@@ -284,7 +284,7 @@ public class d {
                     }
                 }
             } else {
-                if (z3) {
+                if (z6) {
                     bi = bvVar.bl();
                 } else {
                     bi = bvVar.bi();
@@ -316,14 +316,14 @@ public class d {
                 }
                 String str = M8 + "_" + b9;
                 List<Integer> list = this.i.get(str);
-                List<Integer> list2 = this.f16734g.get(str);
+                List<Integer> list2 = this.f17521g.get(str);
                 Objects.toString(list2);
                 Objects.toString(list2);
                 if (list2 == null) {
                     return false;
                 }
                 if (list != null) {
-                    return !list.contains(Integer.valueOf(f16729b));
+                    return !list.contains(Integer.valueOf(f17516b));
                 }
                 return true;
             }
@@ -334,7 +334,7 @@ public class d {
         }
     }
 
-    private boolean a(ATBaseAdAdapter aTBaseAdAdapter, List<Integer> list, boolean z3) {
+    private boolean a(ATBaseAdAdapter aTBaseAdAdapter, List<Integer> list, boolean z6) {
         if (aTBaseAdAdapter == null) {
             return true;
         }
@@ -350,14 +350,14 @@ public class d {
                 return true;
             }
             String str = M8 + "_" + b9;
-            List<Integer> list2 = this.f16734g.get(str);
-            String str2 = this.f16735h.get(str);
+            List<Integer> list2 = this.f17521g.get(str);
+            String str2 = this.f17522h.get(str);
             Objects.toString(list2);
             list.toString();
             if (list2 == null || new HashSet(list2).containsAll(list)) {
                 return true;
             }
-            if (z3) {
+            if (z6) {
                 com.anythink.core.common.u.e.c(trackingInfo, list2.toString(), str2);
                 return false;
             }
@@ -376,18 +376,18 @@ public class d {
             e9.printStackTrace();
         }
         if (!TextUtils.isEmpty(str) && jSONArray != null) {
-            int i6 = -1;
-            for (int i9 = 0; i9 < strArr.length; i9++) {
-                String str2 = strArr[i9];
+            int i4 = -1;
+            for (int i6 = 0; i6 < strArr.length; i6++) {
+                String str2 = strArr[i6];
                 if (str2 != null && str2.startsWith(str)) {
-                    i6 = i9;
+                    i4 = i6;
                 }
             }
-            if (i6 != -1 && (i = i6 + 1) < strArr.length) {
+            if (i4 != -1 && (i = i4 + 1) < strArr.length) {
                 String str3 = strArr[i];
                 if (!TextUtils.isEmpty(str3) && jSONArray.length() > 0) {
-                    for (int i10 = 0; i10 < jSONArray.length(); i10++) {
-                        String str4 = (String) jSONArray.get(i10);
+                    for (int i9 = 0; i9 < jSONArray.length(); i9++) {
+                        String str4 = (String) jSONArray.get(i9);
                         if (!TextUtils.isEmpty(str4) && str3.startsWith(str4)) {
                             return true;
                         }
@@ -411,8 +411,8 @@ public class d {
                     return;
                 }
                 String str2 = M8 + "_" + b9;
-                if (i != f16730c && i != f16729b) {
-                    List<Integer> list3 = this.f16734g.get(str2);
+                if (i != f17517c && i != f17516b) {
+                    List<Integer> list3 = this.f17521g.get(str2);
                     if (list3 != null) {
                         boolean contains = list3.contains(Integer.valueOf(i));
                         list2 = list3;
@@ -423,11 +423,11 @@ public class d {
                     } else {
                         ArrayList arrayList = new ArrayList();
                         arrayList.add(Integer.valueOf(i));
-                        this.f16734g.put(str2, arrayList);
+                        this.f17521g.put(str2, arrayList);
                         list2 = arrayList;
                     }
-                    if (i == f16731d && !TextUtils.isEmpty(str)) {
-                        this.f16735h.put(str2, str);
+                    if (i == f17518d && !TextUtils.isEmpty(str)) {
+                        this.f17522h.put(str2, str);
                     }
                     nVar.a(list2);
                     list2.toString();
@@ -448,8 +448,8 @@ public class d {
                         this.i.put(str2, arrayList2);
                         list = arrayList2;
                     }
-                    if (i == f16730c && !TextUtils.isEmpty(str)) {
-                        this.f16736j.put(str2, str);
+                    if (i == f17517c && !TextUtils.isEmpty(str)) {
+                        this.f17523j.put(str2, str);
                     }
                     list.toString();
                 } catch (Exception e9) {
@@ -486,8 +486,8 @@ public class d {
                 this.i.put(str, arrayList);
                 list = arrayList;
             }
-            if (i == f16730c && !TextUtils.isEmpty(str2)) {
-                this.f16736j.put(str, str2);
+            if (i == f17517c && !TextUtils.isEmpty(str2)) {
+                this.f17523j.put(str, str2);
             }
             list.toString();
         } catch (Exception e9) {

@@ -4,154 +4,154 @@ import N6.o;
 import N6.p;
 import N6.q;
 import N6.t;
-import g6.InterfaceC4532b;
-import h6.C4574a;
+import g6.InterfaceC4536b;
+import h6.C4579a;
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Objects;
-import u.AbstractC5049e;
+import u.AbstractC5050e;
 
 /* loaded from: classes2.dex */
 public final class a implements q, p {
 
     /* renamed from: b, reason: collision with root package name */
-    public static final a f2560b = new a(0);
+    public static final a f2395b = new a(0);
 
     /* renamed from: c, reason: collision with root package name */
-    public static final a f2561c = new a(1);
+    public static final a f2396c = new a(1);
 
     /* renamed from: d, reason: collision with root package name */
-    public static final a f2562d = new a(2);
+    public static final a f2397d = new a(2);
 
     /* renamed from: e, reason: collision with root package name */
-    public static final a f2563e = new a(3);
+    public static final a f2398e = new a(3);
 
     /* renamed from: f, reason: collision with root package name */
-    public static final a f2564f = new a(4);
+    public static final a f2399f = new a(4);
 
     /* renamed from: g, reason: collision with root package name */
-    public static final a f2565g = new a(5);
+    public static final a f2400g = new a(5);
 
     /* renamed from: h, reason: collision with root package name */
-    public static final a f2566h = new a(6);
+    public static final a f2401h = new a(6);
     public static final a i = new a(7);
 
     /* renamed from: j, reason: collision with root package name */
-    public static final a f2567j = new a(8);
+    public static final a f2402j = new a(8);
 
     /* renamed from: k, reason: collision with root package name */
-    public static final a f2568k = new a(9);
+    public static final a f2403k = new a(9);
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f2569a;
+    public final /* synthetic */ int f2404a;
 
-    public /* synthetic */ a(int i6) {
-        this.f2569a = i6;
+    public /* synthetic */ a(int i4) {
+        this.f2404a = i4;
     }
 
     @Override // N6.p
     public int a(Object obj, Object obj2, N6.j jVar) {
-        int i6 = 0;
-        a aVar = f2561c;
-        switch (this.f2569a) {
+        int i4 = 0;
+        a aVar = f2396c;
+        switch (this.f2404a) {
             case 1:
                 List list = (List) obj2;
                 int ordinal = ((f6.b) obj).ordinal();
                 if (ordinal != 4) {
                     if (ordinal == 5) {
-                        return t.c(U6.b.f3212a, list, f2564f, jVar);
+                        return t.c(U6.b.f3335a, list, f2399f, jVar);
                     }
                     if (ordinal == 6) {
-                        return t.c(U6.b.f3212a, list, i, jVar);
+                        return t.c(U6.b.f3335a, list, i, jVar);
                     }
                     if (ordinal == 7) {
-                        return t.c(U6.b.f3212a, list, f2565g, jVar);
+                        return t.c(U6.b.f3335a, list, f2400g, jVar);
                     }
                     throw new IllegalArgumentException("Unsupported attribute type.");
                 }
-                N6.b bVar = U6.b.f3212a;
+                N6.b bVar = U6.b.f3335a;
                 if (list.isEmpty()) {
                     return 0;
                 }
-                int i9 = bVar.f1955c;
-                int i10 = 0;
-                while (i6 < list.size()) {
-                    Object obj3 = list.get(i6);
+                int i6 = bVar.f2043c;
+                int i9 = 0;
+                while (i4 < list.size()) {
+                    Object obj3 = list.get(i4);
                     int b9 = jVar.b();
-                    int d2 = t.d(U6.a.f3205a, (String) obj3, jVar);
-                    jVar.f1978c[b9] = d2;
-                    i10 += N6.d.b(d2) + i9 + d2;
-                    i6++;
+                    int d9 = t.d(U6.a.f3328a, (String) obj3, jVar);
+                    jVar.f2066c[b9] = d9;
+                    i9 += N6.d.b(d9) + i6 + d9;
+                    i4++;
                 }
-                return i10;
+                return i9;
             case 2:
-                f6.b bVar2 = ((k6.e) obj).f38685a;
+                f6.b bVar2 = ((k6.e) obj).f38612a;
                 switch (bVar2.ordinal()) {
                     case 0:
-                        return t.d(U6.a.f3205a, (String) obj2, jVar);
+                        return t.d(U6.a.f3328a, (String) obj2, jVar);
                     case 1:
-                        int i11 = U6.a.f3206b.f1955c;
+                        int i10 = U6.a.f3329b.f2043c;
                         ((Boolean) obj2).getClass();
-                        int i12 = N6.d.f1961e;
-                        return i11 + 1;
+                        int i11 = N6.d.f2049e;
+                        return i10 + 1;
                     case 2:
-                        return U6.a.f3207c.f1955c + N6.d.a(((Long) obj2).longValue());
+                        return U6.a.f3330c.f2043c + N6.d.a(((Long) obj2).longValue());
                     case 3:
-                        int i13 = U6.a.f3208d.f1955c;
+                        int i12 = U6.a.f3331d.f2043c;
                         ((Double) obj2).getClass();
-                        int i14 = N6.d.f1961e;
-                        return i13 + 8;
+                        int i13 = N6.d.f2049e;
+                        return i12 + 8;
                     case 4:
                     case 5:
                     case 6:
                     case 7:
-                        return t.b(U6.a.f3209e, bVar2, (List) obj2, aVar, jVar);
+                        return t.b(U6.a.f3332e, bVar2, (List) obj2, aVar, jVar);
                     default:
                         throw new IllegalArgumentException("Unsupported attribute type.");
                 }
             case 3:
                 k6.e eVar = (k6.e) obj;
-                if (!eVar.f38686b.isEmpty()) {
-                    byte[] bArr = eVar.f38688d;
+                if (!eVar.f38613b.isEmpty()) {
+                    byte[] bArr = eVar.f38615d;
                     if (bArr == null) {
-                        bArr = eVar.f38686b.getBytes(StandardCharsets.UTF_8);
-                        eVar.f38688d = bArr;
+                        bArr = eVar.f38613b.getBytes(StandardCharsets.UTF_8);
+                        eVar.f38615d = bArr;
                     }
-                    i6 = N6.k.b(U6.d.f3216a, bArr);
+                    i4 = N6.k.b(U6.d.f3339a, bArr);
                 }
-                return t.b(U6.d.f3217b, eVar, obj2, f2562d, jVar) + i6;
+                return t.b(U6.d.f3340b, eVar, obj2, f2397d, jVar) + i4;
             default:
-                C4574a c4574a = (C4574a) obj;
-                switch (AbstractC5049e.d(c4574a.f38019a)) {
+                C4579a c4579a = (C4579a) obj;
+                switch (AbstractC5050e.d(c4579a.f38136a)) {
                     case 0:
-                        return t.d(U6.a.f3205a, (String) obj2, jVar);
+                        return t.d(U6.a.f3328a, (String) obj2, jVar);
                     case 1:
-                        int i15 = U6.a.f3206b.f1955c;
+                        int i14 = U6.a.f3329b.f2043c;
                         ((Boolean) obj2).getClass();
-                        int i16 = N6.d.f1961e;
-                        return i15 + 1;
+                        int i15 = N6.d.f2049e;
+                        return i14 + 1;
                     case 2:
-                        return N6.d.a(((Long) obj2).longValue()) + U6.a.f3207c.f1955c;
+                        return N6.d.a(((Long) obj2).longValue()) + U6.a.f3330c.f2043c;
                     case 3:
-                        int i17 = U6.a.f3208d.f1955c;
+                        int i16 = U6.a.f3331d.f2043c;
                         ((Double) obj2).getClass();
-                        int i18 = N6.d.f1961e;
-                        return i17 + 8;
+                        int i17 = N6.d.f2049e;
+                        return i16 + 8;
                     case 4:
                     case 5:
                     case 6:
                     case 7:
-                        N6.b bVar3 = U6.a.f3209e;
-                        k6.e a9 = c4574a.a();
+                        N6.b bVar3 = U6.a.f3332e;
+                        k6.e a9 = c4579a.a();
                         Objects.requireNonNull(a9);
-                        return t.b(bVar3, a9.f38685a, (List) obj2, aVar, jVar);
+                        return t.b(bVar3, a9.f38612a, (List) obj2, aVar, jVar);
                     case 8:
-                        N6.b bVar4 = U6.a.f3210f;
+                        N6.b bVar4 = U6.a.f3333f;
                         int b10 = jVar.b();
-                        int f3 = i.f(U6.e.f3218a, (InterfaceC4532b) obj2, jVar);
-                        int b11 = N6.d.b(f3) + bVar4.f1955c + f3;
-                        jVar.f1978c[b10] = f3;
+                        int f2 = i.f(U6.e.f3341a, (InterfaceC4536b) obj2, jVar);
+                        int b11 = N6.d.b(f2) + bVar4.f2043c + f2;
+                        jVar.f2066c[b10] = f2;
                         return b11;
                     default:
                         throw new IllegalArgumentException("Unsupported attribute type.");
@@ -161,96 +161,96 @@ public final class a implements q, p {
 
     @Override // N6.p
     public void b(o oVar, Object obj, Object obj2, N6.j jVar) {
-        switch (this.f2569a) {
+        switch (this.f2404a) {
             case 1:
                 List list = (List) obj2;
                 int ordinal = ((f6.b) obj).ordinal();
                 if (ordinal == 4) {
-                    oVar.l(U6.b.f3212a, list, f2568k, jVar);
+                    oVar.l(U6.b.f3335a, list, f2403k, jVar);
                     return;
                 }
                 if (ordinal == 5) {
-                    oVar.l(U6.b.f3212a, list, f2564f, jVar);
+                    oVar.l(U6.b.f3335a, list, f2399f, jVar);
                     return;
                 } else if (ordinal == 6) {
-                    oVar.l(U6.b.f3212a, list, i, jVar);
+                    oVar.l(U6.b.f3335a, list, i, jVar);
                     return;
                 } else {
                     if (ordinal != 7) {
                         throw new IllegalArgumentException("Unsupported attribute type.");
                     }
-                    oVar.l(U6.b.f3212a, list, f2565g, jVar);
+                    oVar.l(U6.b.f3335a, list, f2400g, jVar);
                     return;
                 }
             case 2:
-                f6.b bVar = ((k6.e) obj).f38685a;
+                f6.b bVar = ((k6.e) obj).f38612a;
                 switch (bVar.ordinal()) {
                     case 0:
-                        oVar.p(U6.a.f3205a, (String) obj2, jVar);
+                        oVar.p(U6.a.f3328a, (String) obj2, jVar);
                         return;
                     case 1:
-                        oVar.q(U6.a.f3206b, ((Boolean) obj2).booleanValue());
+                        oVar.q(U6.a.f3329b, ((Boolean) obj2).booleanValue());
                         return;
                     case 2:
-                        oVar.G(U6.a.f3207c, ((Long) obj2).longValue());
+                        oVar.G(U6.a.f3330c, ((Long) obj2).longValue());
                         return;
                     case 3:
-                        oVar.x(U6.a.f3208d, ((Double) obj2).doubleValue());
+                        oVar.x(U6.a.f3331d, ((Double) obj2).doubleValue());
                         return;
                     case 4:
                     case 5:
                     case 6:
                     case 7:
-                        oVar.i(U6.a.f3209e, bVar, (List) obj2, f2561c, jVar);
+                        oVar.i(U6.a.f3332e, bVar, (List) obj2, f2396c, jVar);
                         return;
                     default:
                         throw new IllegalArgumentException("Unsupported attribute type.");
                 }
             case 3:
                 k6.e eVar = (k6.e) obj;
-                if (eVar.f38686b.isEmpty()) {
-                    N6.b bVar2 = U6.d.f3216a;
+                if (eVar.f38613b.isEmpty()) {
+                    N6.b bVar2 = U6.d.f3339a;
                     oVar.getClass();
                 } else {
-                    byte[] bArr = eVar.f38688d;
+                    byte[] bArr = eVar.f38615d;
                     if (bArr == null) {
-                        bArr = eVar.f38686b.getBytes(StandardCharsets.UTF_8);
-                        eVar.f38688d = bArr;
+                        bArr = eVar.f38613b.getBytes(StandardCharsets.UTF_8);
+                        eVar.f38615d = bArr;
                     }
-                    oVar.n(U6.d.f3216a, bArr);
+                    oVar.n(U6.d.f3339a, bArr);
                 }
-                oVar.i(U6.d.f3217b, eVar, obj2, f2562d, jVar);
+                oVar.i(U6.d.f3340b, eVar, obj2, f2397d, jVar);
                 return;
             default:
-                C4574a c4574a = (C4574a) obj;
-                switch (AbstractC5049e.d(c4574a.f38019a)) {
+                C4579a c4579a = (C4579a) obj;
+                switch (AbstractC5050e.d(c4579a.f38136a)) {
                     case 0:
-                        oVar.p(U6.a.f3205a, (String) obj2, jVar);
+                        oVar.p(U6.a.f3328a, (String) obj2, jVar);
                         return;
                     case 1:
-                        oVar.q(U6.a.f3206b, ((Boolean) obj2).booleanValue());
+                        oVar.q(U6.a.f3329b, ((Boolean) obj2).booleanValue());
                         return;
                     case 2:
-                        oVar.G(U6.a.f3207c, ((Long) obj2).longValue());
+                        oVar.G(U6.a.f3330c, ((Long) obj2).longValue());
                         return;
                     case 3:
-                        oVar.x(U6.a.f3208d, ((Double) obj2).doubleValue());
+                        oVar.x(U6.a.f3331d, ((Double) obj2).doubleValue());
                         return;
                     case 4:
                     case 5:
                     case 6:
                     case 7:
-                        N6.b bVar3 = U6.a.f3209e;
-                        k6.e a9 = c4574a.a();
+                        N6.b bVar3 = U6.a.f3332e;
+                        k6.e a9 = c4579a.a();
                         Objects.requireNonNull(a9);
-                        p pVar = f2561c;
-                        oVar.i(bVar3, a9.f38685a, (List) obj2, pVar, jVar);
+                        p pVar = f2396c;
+                        oVar.i(bVar3, a9.f38612a, (List) obj2, pVar, jVar);
                         return;
                     case 8:
-                        N6.b bVar4 = U6.a.f3210f;
+                        N6.b bVar4 = U6.a.f3333f;
                         oVar.getClass();
                         oVar.K(bVar4, jVar.e());
-                        i.e(oVar, U6.e.f3218a, (InterfaceC4532b) obj2, jVar);
+                        i.e(oVar, U6.e.f3341a, (InterfaceC4536b) obj2, jVar);
                         oVar.z();
                         return;
                     default:
@@ -261,38 +261,38 @@ public final class a implements q, p {
 
     @Override // N6.q
     public void c(o oVar, Object obj, N6.j jVar) {
-        switch (this.f2569a) {
+        switch (this.f2404a) {
             case 0:
                 f6.g gVar = (f6.g) obj;
-                switch (AbstractC5049e.d(gVar.getType())) {
+                switch (AbstractC5050e.d(gVar.getType())) {
                     case 0:
-                        oVar.p(U6.a.f3205a, (String) gVar.getValue(), jVar);
+                        oVar.p(U6.a.f3328a, (String) gVar.getValue(), jVar);
                         return;
                     case 1:
-                        oVar.q(U6.a.f3206b, ((Boolean) gVar.getValue()).booleanValue());
+                        oVar.q(U6.a.f3329b, ((Boolean) gVar.getValue()).booleanValue());
                         return;
                     case 2:
-                        oVar.G(U6.a.f3207c, ((Long) gVar.getValue()).longValue());
+                        oVar.G(U6.a.f3330c, ((Long) gVar.getValue()).longValue());
                         return;
                     case 3:
-                        oVar.x(U6.a.f3208d, ((Double) gVar.getValue()).doubleValue());
+                        oVar.x(U6.a.f3331d, ((Double) gVar.getValue()).doubleValue());
                         return;
                     case 4:
-                        N6.b bVar = U6.a.f3209e;
+                        N6.b bVar = U6.a.f3332e;
                         List list = (List) gVar.getValue();
                         oVar.K(bVar, jVar.e());
-                        oVar.l(U6.b.f3212a, list, f2560b, jVar);
+                        oVar.l(U6.b.f3335a, list, f2395b, jVar);
                         oVar.z();
                         return;
                     case 5:
-                        N6.b bVar2 = U6.a.f3210f;
+                        N6.b bVar2 = U6.a.f3333f;
                         List list2 = (List) gVar.getValue();
                         oVar.K(bVar2, jVar.e());
-                        oVar.l(U6.e.f3218a, list2, f2567j, jVar);
+                        oVar.l(U6.e.f3341a, list2, f2402j, jVar);
                         oVar.z();
                         return;
                     case 6:
-                        oVar.w(U6.a.f3211g, (byte[]) jVar.c(byte[].class));
+                        oVar.w(U6.a.f3334g, (byte[]) jVar.c(byte[].class));
                         return;
                     default:
                         throw new IllegalArgumentException("Unsupported value type.");
@@ -302,26 +302,26 @@ public final class a implements q, p {
             case 3:
             case 6:
             default:
-                oVar.p(U6.a.f3205a, (String) obj, jVar);
+                oVar.p(U6.a.f3328a, (String) obj, jVar);
                 return;
             case 4:
-                oVar.q(U6.a.f3206b, ((Boolean) obj).booleanValue());
+                oVar.q(U6.a.f3329b, ((Boolean) obj).booleanValue());
                 return;
             case 5:
-                oVar.x(U6.a.f3208d, ((Double) obj).doubleValue());
+                oVar.x(U6.a.f3331d, ((Double) obj).doubleValue());
                 return;
             case 7:
-                oVar.G(U6.a.f3207c, ((Long) obj).longValue());
+                oVar.G(U6.a.f3330c, ((Long) obj).longValue());
                 return;
             case 8:
                 f6.d dVar = (f6.d) obj;
-                String str = dVar.f37523a;
+                String str = dVar.f37485a;
                 if (str.isEmpty()) {
-                    N6.b bVar3 = U6.d.f3216a;
+                    N6.b bVar3 = U6.d.f3339a;
                 } else {
-                    oVar.p(U6.d.f3216a, str, jVar);
+                    oVar.p(U6.d.f3339a, str, jVar);
                 }
-                oVar.b(U6.d.f3217b, dVar.f37524b, jVar);
+                oVar.b(U6.d.f3340b, dVar.f37486b, jVar);
                 return;
         }
     }
@@ -329,41 +329,41 @@ public final class a implements q, p {
     @Override // N6.q
     public int d(Object obj, N6.j jVar) {
         int b9;
-        switch (this.f2569a) {
+        switch (this.f2404a) {
             case 0:
                 f6.g gVar = (f6.g) obj;
-                switch (AbstractC5049e.d(gVar.getType())) {
+                switch (AbstractC5050e.d(gVar.getType())) {
                     case 0:
-                        return t.d(U6.a.f3205a, (String) gVar.getValue(), jVar);
+                        return t.d(U6.a.f3328a, (String) gVar.getValue(), jVar);
                     case 1:
                         Boolean bool = (Boolean) gVar.getValue();
-                        int i6 = U6.a.f3206b.f1955c;
+                        int i4 = U6.a.f3329b.f2043c;
                         bool.getClass();
-                        int i9 = N6.d.f1961e;
-                        return i6 + 1;
+                        int i6 = N6.d.f2049e;
+                        return i4 + 1;
                     case 2:
-                        return U6.a.f3207c.f1955c + N6.d.a(((Long) gVar.getValue()).longValue());
+                        return U6.a.f3330c.f2043c + N6.d.a(((Long) gVar.getValue()).longValue());
                     case 3:
-                        Double d2 = (Double) gVar.getValue();
-                        int i10 = U6.a.f3208d.f1955c;
-                        d2.getClass();
-                        int i11 = N6.d.f1961e;
-                        return i10 + 8;
+                        Double d9 = (Double) gVar.getValue();
+                        int i9 = U6.a.f3331d.f2043c;
+                        d9.getClass();
+                        int i10 = N6.d.f2049e;
+                        return i9 + 8;
                     case 4:
-                        N6.b bVar = U6.a.f3209e;
+                        N6.b bVar = U6.a.f3332e;
                         List list = (List) gVar.getValue();
                         int b10 = jVar.b();
-                        int c9 = t.c(U6.b.f3212a, list, f2560b, jVar);
-                        b9 = N6.d.b(c9) + bVar.f1955c + c9;
-                        jVar.f1978c[b10] = c9;
+                        int c9 = t.c(U6.b.f3335a, list, f2395b, jVar);
+                        b9 = N6.d.b(c9) + bVar.f2043c + c9;
+                        jVar.f2066c[b10] = c9;
                         break;
                     case 5:
-                        N6.b bVar2 = U6.a.f3210f;
+                        N6.b bVar2 = U6.a.f3333f;
                         List list2 = (List) gVar.getValue();
                         int b11 = jVar.b();
-                        int c10 = t.c(U6.e.f3218a, list2, f2567j, jVar);
-                        b9 = N6.d.b(c10) + bVar2.f1955c + c10;
-                        jVar.f1978c[b11] = c10;
+                        int c10 = t.c(U6.e.f3341a, list2, f2402j, jVar);
+                        b9 = N6.d.b(c10) + bVar2.f2043c + c10;
+                        jVar.f2066c[b11] = c10;
                         break;
                     case 6:
                         ByteBuffer byteBuffer = (ByteBuffer) gVar.getValue();
@@ -371,7 +371,7 @@ public final class a implements q, p {
                         byte[] bArr = new byte[remaining];
                         byteBuffer.get(bArr);
                         jVar.a(bArr);
-                        return N6.d.b(remaining) + remaining + U6.a.f3211g.f1955c;
+                        return N6.d.b(remaining) + remaining + U6.a.f3334g.f2043c;
                     default:
                         throw new IllegalArgumentException("Unsupported value type.");
                 }
@@ -381,23 +381,23 @@ public final class a implements q, p {
             case 3:
             case 6:
             default:
-                return t.d(U6.a.f3205a, (String) obj, jVar);
+                return t.d(U6.a.f3328a, (String) obj, jVar);
             case 4:
-                int i12 = U6.a.f3206b.f1955c;
+                int i11 = U6.a.f3329b.f2043c;
                 ((Boolean) obj).getClass();
-                int i13 = N6.d.f1961e;
-                return i12 + 1;
+                int i12 = N6.d.f2049e;
+                return i11 + 1;
             case 5:
-                int i14 = U6.a.f3208d.f1955c;
+                int i13 = U6.a.f3331d.f2043c;
                 ((Double) obj).getClass();
-                int i15 = N6.d.f1961e;
-                return i14 + 8;
+                int i14 = N6.d.f2049e;
+                return i13 + 8;
             case 7:
-                return N6.d.a(((Long) obj).longValue()) + U6.a.f3207c.f1955c;
+                return N6.d.a(((Long) obj).longValue()) + U6.a.f3330c.f2043c;
             case 8:
                 f6.d dVar = (f6.d) obj;
-                String str = dVar.f37523a;
-                return t.a(U6.d.f3217b, dVar.f37524b, jVar) + (!str.isEmpty() ? t.d(U6.d.f3216a, str, jVar) : 0);
+                String str = dVar.f37485a;
+                return t.a(U6.d.f3340b, dVar.f37486b, jVar) + (!str.isEmpty() ? t.d(U6.d.f3339a, str, jVar) : 0);
         }
     }
 }

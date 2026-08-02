@@ -17,7 +17,7 @@ import com.anythink.core.common.h.x;
 import com.anythink.core.common.v.m;
 import com.anythink.core.common.v.q;
 import com.anythink.core.common.v.y;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -27,29 +27,29 @@ import org.json.JSONObject;
 public class e implements b {
 
     /* renamed from: a, reason: collision with root package name */
-    final String f11447a = getClass().getSimpleName();
+    final String f12233a = getClass().getSimpleName();
 
     /* renamed from: b, reason: collision with root package name */
-    w f11448b;
+    w f12234b;
 
     /* renamed from: c, reason: collision with root package name */
-    x f11449c;
+    x f12235c;
 
     /* renamed from: d, reason: collision with root package name */
-    private a f11450d;
+    private a f12236d;
 
     /* renamed from: e, reason: collision with root package name */
-    private com.anythink.basead.ui.component.a f11451e;
+    private com.anythink.basead.ui.component.a f12237e;
 
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void controlShakeView(Object obj, String str) {
         try {
-            if (!com.anythink.basead.b.e.a(this.f11449c)) {
+            if (!com.anythink.basead.b.e.a(this.f12235c)) {
                 com.anythink.basead.webtemplet.a.a(obj, "not support shake");
                 return;
             }
             int optInt = new JSONObject(str).optInt("control_show", 0);
-            a aVar = this.f11450d;
+            a aVar = this.f12236d;
             if (aVar == null) {
                 com.anythink.basead.webtemplet.a.a(obj, "bridgeListener empty");
             } else {
@@ -65,7 +65,7 @@ public class e implements b {
     public void h5ShowException(Object obj, String str) {
         if (obj instanceof com.anythink.basead.webtemplet.e) {
             try {
-                WTWebView wTWebView = ((com.anythink.basead.webtemplet.e) obj).f11491a;
+                WTWebView wTWebView = ((com.anythink.basead.webtemplet.e) obj).f12277a;
                 if (wTWebView == null) {
                     com.anythink.basead.webtemplet.a.a(obj, "WTWebView empty");
                 } else {
@@ -83,58 +83,58 @@ public class e implements b {
         String str2;
         if (obj instanceof com.anythink.basead.webtemplet.e) {
             try {
-                WTWebView wTWebView = ((com.anythink.basead.webtemplet.e) obj).f11491a;
+                WTWebView wTWebView = ((com.anythink.basead.webtemplet.e) obj).f12277a;
                 if (wTWebView == null) {
                     com.anythink.basead.webtemplet.a.a(obj, "WTWebView empty");
                     return;
                 }
                 wTWebView.jsCallInitSuccess();
                 try {
-                    Context g4 = t.b().g();
+                    Context g9 = t.b().g();
                     JSONObject jSONObject = new JSONObject();
-                    jSONObject.put(b.c.f11434a, 2);
-                    jSONObject.put(b.c.f11435b, 1);
-                    int k9 = m.k(g4) + q.b(g4);
+                    jSONObject.put(b.c.f12220a, 2);
+                    jSONObject.put(b.c.f12221b, 1);
+                    int k9 = m.k(g9) + q.b(g9);
                     JSONObject jSONObject2 = new JSONObject();
-                    jSONObject2.put("screen_width", m.j(g4));
+                    jSONObject2.put("screen_width", m.j(g9));
                     jSONObject2.put("screen_height", k9);
-                    int i = this.f11449c.f14163j;
+                    int i = this.f12235c.f14949j;
                     if (i == 1 || i == 3 || i == 4) {
-                        jSONObject2.put("top_padding", q.b(g4));
+                        jSONObject2.put("top_padding", q.b(g9));
                     } else {
                         jSONObject2.put("top_padding", 0);
                     }
-                    jSONObject.put(b.c.f11437d, jSONObject2);
+                    jSONObject.put(b.c.f12223d, jSONObject2);
                     JSONObject jSONObject3 = new JSONObject();
-                    jSONObject3.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_WIDTH, m.j(g4));
+                    jSONObject3.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_WIDTH, m.j(g9));
                     jSONObject3.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_HEIGHT, k9);
-                    HashMap<String, Object> hashMap = this.f11449c.f14176w;
+                    HashMap<String, Object> hashMap = this.f12235c.f14962w;
                     if (hashMap != null) {
                         Object obj2 = hashMap.get(ATAdConst.KEY.AD_WIDTH);
                         if (obj2 != null) {
                             jSONObject3.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_WIDTH, obj2);
                         }
-                        Object obj3 = this.f11449c.f14176w.get(ATAdConst.KEY.AD_HEIGHT);
+                        Object obj3 = this.f12235c.f14962w.get(ATAdConst.KEY.AD_HEIGHT);
                         if (obj3 != null) {
                             jSONObject3.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_HEIGHT, obj3);
                         }
-                        Object obj4 = this.f11449c.f14176w.get("orientation");
+                        Object obj4 = this.f12235c.f14962w.get("orientation");
                         if (obj4 != null) {
                             jSONObject3.put(ATAdConst.KEY.AD_ORIENTATION, obj4);
                         }
                     }
-                    jSONObject.put(b.c.f11438e, jSONObject3);
+                    jSONObject.put(b.c.f12224e, jSONObject3);
                     JSONObject jSONObject4 = new JSONObject();
-                    if (!TextUtils.isEmpty(this.f11449c.f14175v)) {
+                    if (!TextUtils.isEmpty(this.f12235c.f14961v)) {
                         try {
-                            jSONObject4 = new JSONObject(this.f11449c.f14175v);
+                            jSONObject4 = new JSONObject(this.f12235c.f14961v);
                         } catch (Throwable unused) {
                         }
                     }
-                    jSONObject.put(b.c.f11439f, jSONObject4);
-                    jSONObject.put("format", this.f11449c.f14163j);
+                    jSONObject.put(b.c.f12225f, jSONObject4);
+                    jSONObject.put("format", this.f12235c.f14949j);
                     jSONObject.put(b.c.i, wTWebView.isPreload() ? "1" : "2");
-                    jSONObject.put(b.c.f11442j, Locale.getDefault().getLanguage());
+                    jSONObject.put(b.c.f12228j, Locale.getDefault().getLanguage());
                     str2 = jSONObject.toString();
                 } catch (Throwable unused2) {
                     str2 = "";
@@ -157,7 +157,7 @@ public class e implements b {
             JSONObject jSONObject = new JSONObject(str);
             int optInt = jSONObject.optInt("cl_s_type", 0);
             int optInt2 = jSONObject.optInt("cl_area", 0);
-            a aVar = this.f11450d;
+            a aVar = this.f12236d;
             if (aVar == null) {
                 com.anythink.basead.webtemplet.a.a(obj, "bridgeListener empty");
             } else {
@@ -172,8 +172,8 @@ public class e implements b {
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void notifyClose(Object obj, String str) {
         try {
-            int optInt = new JSONObject(str).optInt(b.C0074b.f12108a, 0);
-            a aVar = this.f11450d;
+            int optInt = new JSONObject(str).optInt(b.C0074b.f12894a, 0);
+            a aVar = this.f12236d;
             if (aVar == null) {
                 com.anythink.basead.webtemplet.a.a(obj, "bridgeListener empty");
             } else {
@@ -188,7 +188,7 @@ public class e implements b {
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void notifyReward(Object obj, String str) {
         try {
-            a aVar = this.f11450d;
+            a aVar = this.f12236d;
             if (aVar != null && (aVar instanceof d)) {
                 ((d) aVar).c();
                 com.anythink.basead.webtemplet.a.b(obj, "");
@@ -215,7 +215,7 @@ public class e implements b {
         JSONObject jSONObject;
         if (obj instanceof com.anythink.basead.webtemplet.e) {
             try {
-                WTWebView wTWebView = ((com.anythink.basead.webtemplet.e) obj).f11491a;
+                WTWebView wTWebView = ((com.anythink.basead.webtemplet.e) obj).f12277a;
                 if (wTWebView != null) {
                     context = wTWebView.getContext();
                     if (context == null) {
@@ -258,14 +258,14 @@ public class e implements b {
         com.anythink.core.common.v.b.b.a().b(new Runnable() { // from class: com.anythink.basead.webtemplet.adformat.e.2
             @Override // java.lang.Runnable
             public final void run() {
-                if (e.this.f11451e == null || e.this.f11451e.l() == null) {
+                if (e.this.f12237e == null || e.this.f12237e.l() == null) {
                     com.anythink.basead.webtemplet.a.a(obj, "videoComponent empty");
                     return;
                 }
-                long i = e.this.f11451e.i();
+                long i = e.this.f12237e.i();
                 try {
                     JSONObject jSONObject = new JSONObject();
-                    jSONObject.put(g.a.f12949C, i);
+                    jSONObject.put(g.a.f13735C, i);
                     com.anythink.basead.webtemplet.a.a(obj, jSONObject);
                 } catch (Throwable th) {
                     e.b(obj, "playerViewGetProgress", th);
@@ -276,7 +276,7 @@ public class e implements b {
 
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void playerViewInit(final Object obj, String str) {
-        com.anythink.basead.ui.component.a aVar = this.f11451e;
+        com.anythink.basead.ui.component.a aVar = this.f12237e;
         if (aVar == null || aVar.l() == null) {
             com.anythink.basead.webtemplet.a.a(obj, "videoComponent empty");
             return;
@@ -295,30 +295,30 @@ public class e implements b {
             t.b().b(new Runnable() { // from class: com.anythink.basead.webtemplet.adformat.e.1
                 @Override // java.lang.Runnable
                 public final void run() {
-                    View m4 = e.this.f11451e.m();
-                    if (m4 == null) {
-                        m4 = e.this.f11451e.l();
+                    View m9 = e.this.f12237e.m();
+                    if (m9 == null) {
+                        m9 = e.this.f12237e.l();
                     }
-                    if (m4 == null) {
+                    if (m9 == null) {
                         com.anythink.basead.webtemplet.a.a(obj, "playerViewContainer empty");
                         return;
                     }
-                    m4.setX(optInt);
-                    m4.setY(optInt2);
-                    ViewGroup.LayoutParams layoutParams = m4.getLayoutParams();
+                    m9.setX(optInt);
+                    m9.setY(optInt2);
+                    ViewGroup.LayoutParams layoutParams = m9.getLayoutParams();
                     if (layoutParams != null) {
                         layoutParams.width = optInt3;
                         layoutParams.height = optInt4;
-                        m4.setLayoutParams(layoutParams);
+                        m9.setLayoutParams(layoutParams);
                     }
-                    e.this.f11451e.a(optInt5 == 1, (List<Bitmap>) null, (com.anythink.basead.j.e) null);
-                    if (m4 instanceof RoundCornerRelativeLayout) {
-                        ((RoundCornerRelativeLayout) m4).setRadius(optInt8, optInt6, optInt7, optInt9);
+                    e.this.f12237e.a(optInt5 == 1, (List<Bitmap>) null, (com.anythink.basead.j.e) null);
+                    if (m9 instanceof RoundCornerRelativeLayout) {
+                        ((RoundCornerRelativeLayout) m9).setRadius(optInt8, optInt6, optInt7, optInt9);
                     }
-                    m4.requestLayout();
+                    m9.requestLayout();
                     com.anythink.basead.webtemplet.a.b(obj, "");
-                    if (e.this.f11450d != null) {
-                        e.this.f11450d.b();
+                    if (e.this.f12236d != null) {
+                        e.this.f12236d.b();
                     }
                 }
             });
@@ -329,19 +329,19 @@ public class e implements b {
 
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void playerViewMute(Object obj, String str) {
-        com.anythink.basead.ui.component.a aVar = this.f11451e;
+        com.anythink.basead.ui.component.a aVar = this.f12237e;
         if (aVar == null || aVar.l() == null) {
             com.anythink.basead.webtemplet.a.a(obj, "videoComponent empty");
             return;
         }
         try {
-            boolean z3 = true;
+            boolean z6 = true;
             int optInt = new JSONObject(str).optInt("mute", 1);
-            com.anythink.basead.ui.component.a aVar2 = this.f11451e;
+            com.anythink.basead.ui.component.a aVar2 = this.f12237e;
             if (optInt != 1) {
-                z3 = false;
+                z6 = false;
             }
-            aVar2.c(z3);
+            aVar2.c(z6);
             com.anythink.basead.webtemplet.a.b(obj, "");
         } catch (Throwable th) {
             b(obj, "playerViewMute", th);
@@ -350,7 +350,7 @@ public class e implements b {
 
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void playerViewPauseOrResumePlay(Object obj, String str) {
-        com.anythink.basead.ui.component.a aVar = this.f11451e;
+        com.anythink.basead.ui.component.a aVar = this.f12237e;
         if (aVar == null || aVar.l() == null) {
             com.anythink.basead.webtemplet.a.a(obj, "videoComponent empty");
             return;
@@ -358,11 +358,11 @@ public class e implements b {
         try {
             JSONObject jSONObject = new JSONObject(str);
             int optInt = jSONObject.optInt("is_resume", 1);
-            boolean z3 = jSONObject.optInt("can_resume", 1) == 1;
+            boolean z6 = jSONObject.optInt("can_resume", 1) == 1;
             if (optInt == 1) {
-                this.f11451e.a(z3);
+                this.f12237e.a(z6);
             } else {
-                this.f11451e.b(z3);
+                this.f12237e.b(z6);
             }
             com.anythink.basead.webtemplet.a.b(obj, "");
         } catch (Throwable th) {
@@ -381,7 +381,7 @@ public class e implements b {
         final int optInt6;
         final int optInt7;
         final int optInt8;
-        com.anythink.basead.ui.component.a aVar = this.f11451e;
+        com.anythink.basead.ui.component.a aVar = this.f12237e;
         if (aVar == null || aVar.l() == null) {
             com.anythink.basead.webtemplet.a.a(obj, "videoComponent empty");
             return;
@@ -405,26 +405,26 @@ public class e implements b {
             t.b().b(new Runnable() { // from class: com.anythink.basead.webtemplet.adformat.e.3
                 @Override // java.lang.Runnable
                 public final void run() {
-                    View m4 = e.this.f11451e.m();
-                    if (m4 == null) {
-                        e.this.f11451e.l();
+                    View m9 = e.this.f12237e.m();
+                    if (m9 == null) {
+                        e.this.f12237e.l();
                     }
-                    if (m4 == null) {
+                    if (m9 == null) {
                         com.anythink.basead.webtemplet.a.a(obj2, "videoComponent empty");
                         return;
                     }
-                    m4.setX(optInt);
-                    m4.setY(optInt2);
-                    ViewGroup.LayoutParams layoutParams = m4.getLayoutParams();
+                    m9.setX(optInt);
+                    m9.setY(optInt2);
+                    ViewGroup.LayoutParams layoutParams = m9.getLayoutParams();
                     if (layoutParams != null) {
                         layoutParams.width = optInt3;
                         layoutParams.height = optInt4;
-                        m4.setLayoutParams(layoutParams);
+                        m9.setLayoutParams(layoutParams);
                     }
-                    if (m4 instanceof RoundCornerRelativeLayout) {
-                        ((RoundCornerRelativeLayout) m4).setRadius(optInt7, optInt5, optInt6, optInt8);
+                    if (m9 instanceof RoundCornerRelativeLayout) {
+                        ((RoundCornerRelativeLayout) m9).setRadius(optInt7, optInt5, optInt6, optInt8);
                     }
-                    m4.requestLayout();
+                    m9.requestLayout();
                     com.anythink.basead.webtemplet.a.b(obj2, "");
                 }
             });
@@ -436,13 +436,13 @@ public class e implements b {
 
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void playerViewRemove(Object obj, String str) {
-        com.anythink.basead.ui.component.a aVar = this.f11451e;
+        com.anythink.basead.ui.component.a aVar = this.f12237e;
         if (aVar == null || aVar.l() == null) {
             com.anythink.basead.webtemplet.a.a(obj, "videoComponent empty");
             return;
         }
         try {
-            this.f11451e.b();
+            this.f12237e.b();
             com.anythink.basead.webtemplet.a.b(obj, "");
         } catch (Throwable th) {
             b(obj, "playerViewRemove", th);
@@ -453,7 +453,7 @@ public class e implements b {
     public void renderSuccess(Object obj, String str) {
         if (obj instanceof com.anythink.basead.webtemplet.e) {
             try {
-                WTWebView wTWebView = ((com.anythink.basead.webtemplet.e) obj).f11491a;
+                WTWebView wTWebView = ((com.anythink.basead.webtemplet.e) obj).f12277a;
                 if (wTWebView == null) {
                     com.anythink.basead.webtemplet.a.a(obj, "WTWebView empty");
                 } else {
@@ -470,7 +470,7 @@ public class e implements b {
     public void sendEventDA(Object obj, String str) {
         if (obj instanceof com.anythink.basead.webtemplet.e) {
             try {
-                WTWebView wTWebView = ((com.anythink.basead.webtemplet.e) obj).f11491a;
+                WTWebView wTWebView = ((com.anythink.basead.webtemplet.e) obj).f12277a;
                 if (wTWebView == null) {
                     com.anythink.basead.webtemplet.a.a(obj, "WTWebView empty");
                 } else {
@@ -485,7 +485,7 @@ public class e implements b {
 
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void showFeedbackDialog(Object obj, String str) {
-        a aVar = this.f11450d;
+        a aVar = this.f12236d;
         if (aVar == null) {
             com.anythink.basead.webtemplet.a.a(obj, "bridgeListener empty");
         } else {
@@ -499,25 +499,25 @@ public class e implements b {
         if (obj == null || th == null) {
             return;
         }
-        StringBuilder j6 = AbstractC4404f.j("call method ", str, " fail with exception:");
-        j6.append(th.getMessage());
-        com.anythink.basead.webtemplet.a.a(obj, j6.toString());
+        StringBuilder l9 = Wv.l("call method ", str, " fail with exception:");
+        l9.append(th.getMessage());
+        com.anythink.basead.webtemplet.a.a(obj, l9.toString());
     }
 
     public final void a(w wVar, x xVar) {
-        this.f11448b = wVar;
-        this.f11449c = xVar;
+        this.f12234b = wVar;
+        this.f12235c = xVar;
     }
 
     public final void a(a aVar) {
-        this.f11450d = aVar;
+        this.f12236d = aVar;
     }
 
     public final a a() {
-        return this.f11450d;
+        return this.f12236d;
     }
 
     public final void a(com.anythink.basead.ui.component.a aVar) {
-        this.f11451e = aVar;
+        this.f12237e = aVar;
     }
 }

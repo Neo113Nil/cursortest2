@@ -1,35 +1,36 @@
 package androidx.activity;
 
-import D.AbstractC0288g;
+import D.AbstractC0276f;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Parcelable;
-import f.AbstractC4494a;
+import f.AbstractC4511a;
+import i1.C4586c;
 
 /* loaded from: classes.dex */
 public final class n extends e.i {
 
     /* renamed from: h, reason: collision with root package name */
-    public final /* synthetic */ p f4458h;
+    public final /* synthetic */ p f4426h;
 
     public n(p pVar) {
-        this.f4458h = pVar;
+        this.f4426h = pVar;
     }
 
     @Override // e.i
-    public final void b(int i, AbstractC4494a abstractC4494a, Parcelable parcelable) {
+    public final void b(int i, AbstractC4511a abstractC4511a, Parcelable parcelable) {
         Bundle bundle;
-        int i6;
-        p pVar = this.f4458h;
-        I0.j b9 = abstractC4494a.b(pVar, parcelable);
+        int i4;
+        p pVar = this.f4426h;
+        C4586c b9 = abstractC4511a.b(pVar, parcelable);
         if (b9 != null) {
             new Handler(Looper.getMainLooper()).post(new m(i, 0, this, b9));
             return;
         }
-        Intent a9 = abstractC4494a.a(pVar, parcelable);
+        Intent a9 = abstractC4511a.a(pVar, parcelable);
         if (a9.getExtras() != null) {
             Bundle extras = a9.getExtras();
             kotlin.jvm.internal.h.b(extras);
@@ -49,7 +50,7 @@ public final class n extends e.i {
             if (stringArrayExtra == null) {
                 stringArrayExtra = new String[0];
             }
-            AbstractC0288g.d(pVar, stringArrayExtra, i);
+            AbstractC0276f.d(pVar, stringArrayExtra, i);
             return;
         }
         if (!"androidx.activity.result.contract.action.INTENT_SENDER_REQUEST".equals(a9.getAction())) {
@@ -59,16 +60,16 @@ public final class n extends e.i {
         e.j jVar = (e.j) a9.getParcelableExtra("androidx.activity.result.contract.extra.INTENT_SENDER_REQUEST");
         try {
             kotlin.jvm.internal.h.b(jVar);
-            i6 = i;
+            i4 = i;
         } catch (IntentSender.SendIntentException e9) {
             e = e9;
-            i6 = i;
+            i4 = i;
         }
         try {
-            pVar.startIntentSenderForResult(jVar.f37098n, i6, jVar.f37099u, jVar.f37100v, jVar.f37101w, 0, bundle2);
+            pVar.startIntentSenderForResult(jVar.f37206n, i4, jVar.f37207u, jVar.f37208v, jVar.f37209w, 0, bundle2);
         } catch (IntentSender.SendIntentException e10) {
             e = e10;
-            new Handler(Looper.getMainLooper()).post(new m(i6, 1, this, e));
+            new Handler(Looper.getMainLooper()).post(new m(i4, 1, this, e));
         }
     }
 }

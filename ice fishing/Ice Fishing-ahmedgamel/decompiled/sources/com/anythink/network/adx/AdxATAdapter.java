@@ -22,50 +22,50 @@ import org.json.JSONArray;
 public class AdxATAdapter extends CustomNativeAdapter {
 
     /* renamed from: a, reason: collision with root package name */
-    f f22983a;
+    f f23770a;
 
     /* renamed from: b, reason: collision with root package name */
-    x f22984b;
+    x f23771b;
 
     /* renamed from: c, reason: collision with root package name */
-    boolean f22985c;
+    boolean f23772c;
 
     /* renamed from: d, reason: collision with root package name */
-    boolean f22986d;
+    boolean f23773d;
 
     /* renamed from: e, reason: collision with root package name */
-    String f22987e;
+    String f23774e;
 
     /* renamed from: f, reason: collision with root package name */
-    int f22988f;
+    int f23775f;
 
     /* renamed from: g, reason: collision with root package name */
-    int f22989g;
+    int f23776g;
 
     /* renamed from: h, reason: collision with root package name */
-    JSONArray f22990h;
+    JSONArray f23777h;
     private boolean i;
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
-        if (this.f22983a != null) {
-            this.f22983a = null;
+        if (this.f23770a != null) {
+            this.f23770a = null;
         }
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter
     public BaseAd getBaseAdObject(Context context) {
         a a9;
-        f fVar = this.f22983a;
-        if (fVar == null || !fVar.c() || (a9 = this.f22983a.a()) == null) {
+        f fVar = this.f23770a;
+        if (fVar == null || !fVar.c() || (a9 = this.f23770a.a()) == null) {
             return null;
         }
-        a9.a(this.f22988f, this.f22989g);
-        a9.a(this.f22990h);
-        a9.a(this.f22986d);
-        a9.a(this.f22987e);
-        AdxATNativeAd adxATNativeAd = new AdxATNativeAd(context.getApplicationContext(), a9, this.f22984b, this.i, this.f22985c);
-        adxATNativeAd.setNetworkInfoMap(d.a(this.f22983a.d()));
+        a9.a(this.f23775f, this.f23776g);
+        a9.a(this.f23777h);
+        a9.a(this.f23773d);
+        a9.a(this.f23774e);
+        AdxATNativeAd adxATNativeAd = new AdxATNativeAd(context.getApplicationContext(), a9, this.f23771b, this.i, this.f23772c);
+        adxATNativeAd.setNetworkInfoMap(d.a(this.f23770a.d()));
         return adxATNativeAd;
     }
 
@@ -81,8 +81,8 @@ public class AdxATAdapter extends CustomNativeAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        x xVar = this.f22984b;
-        return xVar != null ? xVar.f14156b : "";
+        x xVar = this.f23771b;
+        return xVar != null ? xVar.f14942b : "";
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -93,7 +93,7 @@ public class AdxATAdapter extends CustomNativeAdapter {
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public boolean initNetworkObjectByPlacementId(Context context, Map<String, Object> map, Map<String, Object> map2) {
         a(context, map, map2);
-        f fVar = this.f22983a;
+        f fVar = this.f23770a;
         if (fVar == null) {
             return true;
         }
@@ -101,7 +101,7 @@ public class AdxATAdapter extends CustomNativeAdapter {
             @Override // com.anythink.basead.f.c.a
             public final void onAdCacheLoaded() {
                 if (AdxATAdapter.this.getTrackingInfo() != null) {
-                    AdxATAdapter.this.getTrackingInfo().M(AdxATAdapter.this.f22983a.f());
+                    AdxATAdapter.this.getTrackingInfo().M(AdxATAdapter.this.f23770a.f());
                 }
             }
         });
@@ -111,7 +111,7 @@ public class AdxATAdapter extends CustomNativeAdapter {
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void loadCustomNetworkAd(final Context context, Map<String, Object> map, Map<String, Object> map2) {
         a(context, map, map2);
-        this.f22983a.a(new com.anythink.basead.g.d() { // from class: com.anythink.network.adx.AdxATAdapter.1
+        this.f23770a.a(new com.anythink.basead.g.d() { // from class: com.anythink.network.adx.AdxATAdapter.1
             @Override // com.anythink.basead.g.d
             public final void onNativeAdLoadError(com.anythink.basead.d.f fVar) {
                 if (((ATBaseAdInternalAdapter) AdxATAdapter.this).mLoadListener != null) {
@@ -125,16 +125,16 @@ public class AdxATAdapter extends CustomNativeAdapter {
                 for (int i = 0; i < aVarArr.length; i++) {
                     a aVar = aVarArr[i];
                     AdxATAdapter adxATAdapter = AdxATAdapter.this;
-                    aVar.a(adxATAdapter.f22988f, adxATAdapter.f22989g);
-                    aVar.a(AdxATAdapter.this.f22990h);
-                    aVar.a(AdxATAdapter.this.f22986d);
-                    aVar.a(AdxATAdapter.this.f22987e);
+                    aVar.a(adxATAdapter.f23775f, adxATAdapter.f23776g);
+                    aVar.a(AdxATAdapter.this.f23777h);
+                    aVar.a(AdxATAdapter.this.f23773d);
+                    aVar.a(AdxATAdapter.this.f23774e);
                     Context applicationContext = context.getApplicationContext();
                     AdxATAdapter adxATAdapter2 = AdxATAdapter.this;
-                    adxATNativeAdArr[i] = new AdxATNativeAd(applicationContext, aVar, adxATAdapter2.f22984b, adxATAdapter2.i, AdxATAdapter.this.f22985c);
+                    adxATNativeAdArr[i] = new AdxATNativeAd(applicationContext, aVar, adxATAdapter2.f23771b, adxATAdapter2.i, AdxATAdapter.this.f23772c);
                 }
                 if (AdxATAdapter.this.getTrackingInfo() != null) {
-                    AdxATAdapter.this.getTrackingInfo().M(AdxATAdapter.this.f22983a.f());
+                    AdxATAdapter.this.getTrackingInfo().M(AdxATAdapter.this.f23770a.f());
                 }
                 if (((ATBaseAdInternalAdapter) AdxATAdapter.this).mLoadListener != null) {
                     ((ATBaseAdInternalAdapter) AdxATAdapter.this).mLoadListener.onAdCacheLoaded(adxATNativeAdArr);
@@ -145,44 +145,44 @@ public class AdxATAdapter extends CustomNativeAdapter {
 
     private void a(Context context, Map<String, Object> map, Map<String, Object> map2) {
         int i;
-        int i6;
+        int i4;
         AdxATInitManager.getInstance().initSDK(context, map, null);
         this.i = TextUtils.equals("1", ATInitMediation.getStringFromMap(map, "layout_type"));
-        x xVar = (x) map.get(j.w.f12614a);
-        this.f22984b = xVar;
-        this.f22983a = new f(context, c.b.ADX_OFFER_REQUEST_TYPE, xVar, this.i);
-        this.f22985c = TextUtils.equals("0", ATInitMediation.getStringFromMap(map, k.aM, "0"));
-        this.f22986d = TextUtils.equals("0", ATInitMediation.getStringFromMap(map, "v_m", "0"));
-        this.f22987e = ATInitMediation.getStringFromMap(map, "video_autoplay", "1");
+        x xVar = (x) map.get(j.w.f13400a);
+        this.f23771b = xVar;
+        this.f23770a = new f(context, c.b.ADX_OFFER_REQUEST_TYPE, xVar, this.i);
+        this.f23772c = TextUtils.equals("0", ATInitMediation.getStringFromMap(map, k.aM, "0"));
+        this.f23773d = TextUtils.equals("0", ATInitMediation.getStringFromMap(map, "v_m", "0"));
+        this.f23774e = ATInitMediation.getStringFromMap(map, "video_autoplay", "1");
         if (this.i) {
             AdxATInitManager.getInstance();
-            this.f22990h = AdxATInitManager.a(map);
+            this.f23777h = AdxATInitManager.a(map);
         }
         if (!this.i) {
-            this.f22986d = true;
-            this.f22987e = ATInitMediation.getStringFromMap(map2, AdxATConst.NATIVE_VIDEO_AUTO_PLAY, "1");
+            this.f23773d = true;
+            this.f23774e = ATInitMediation.getStringFromMap(map2, AdxATConst.NATIVE_VIDEO_AUTO_PLAY, "1");
         }
         if (map2 != null) {
             i = ATInitMediation.getIntFromMap(map2, ATAdConst.KEY.AD_WIDTH);
-            i6 = ATInitMediation.getIntFromMap(map2, ATAdConst.KEY.AD_HEIGHT);
+            i4 = ATInitMediation.getIntFromMap(map2, ATAdConst.KEY.AD_HEIGHT);
         } else {
             i = -1;
-            i6 = -1;
+            i4 = -1;
         }
-        int i9 = context.getResources().getDisplayMetrics().widthPixels;
-        int i10 = context.getResources().getDisplayMetrics().heightPixels;
+        int i6 = context.getResources().getDisplayMetrics().widthPixels;
+        int i9 = context.getResources().getDisplayMetrics().heightPixels;
         if (i <= 0) {
-            i = Math.min(i9, i10);
+            i = Math.min(i6, i9);
         }
-        if (i <= i9) {
-            i9 = i;
+        if (i <= i6) {
+            i6 = i;
         }
-        if (i6 > i10) {
-            i6 = i10;
+        if (i4 > i9) {
+            i4 = i9;
         }
-        this.f22988f = i9;
-        this.f22989g = i6;
+        this.f23775f = i6;
+        this.f23776g = i4;
         AdxATInitManager.getInstance();
-        AdxATInitManager.a(getTrackingInfo(), this.f22984b);
+        AdxATInitManager.a(getTrackingInfo(), this.f23771b);
     }
 }

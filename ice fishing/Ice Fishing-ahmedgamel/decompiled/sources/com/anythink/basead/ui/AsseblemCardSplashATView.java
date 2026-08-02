@@ -1,6 +1,5 @@
 package com.anythink.basead.ui;
 
-import D.y;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -10,6 +9,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.IceFishing.LiveIceFishing.k;
 import com.anythink.basead.ui.BaseShakeView;
 import com.anythink.basead.ui.f.d;
 import com.anythink.core.common.a.b;
@@ -27,18 +27,18 @@ import com.anythink.core.common.v.q;
 public class AsseblemCardSplashATView extends BaseNewStyleSDKSplashATView {
 
     /* renamed from: a, reason: collision with root package name */
-    protected TextView f9666a;
+    protected TextView f10452a;
     private SplashShakeTextHintView ad;
     private ImageView ae;
 
     /* renamed from: b, reason: collision with root package name */
-    protected TextView f9667b;
+    protected TextView f10453b;
 
     /* renamed from: c, reason: collision with root package name */
-    protected TextView f9668c;
+    protected TextView f10454c;
 
     /* renamed from: d, reason: collision with root package name */
-    protected RoundImageView f9669d;
+    protected RoundImageView f10455d;
 
     public AsseblemCardSplashATView(Context context) {
         super(context);
@@ -46,62 +46,62 @@ public class AsseblemCardSplashATView extends BaseNewStyleSDKSplashATView {
 
     @Override // com.anythink.basead.ui.BaseSdkSplashATView
     public final void b() {
-        this.f9666a = (TextView) findViewById(q.a(getContext(), "myoffer_splash_ad_title", "id"));
-        this.f9667b = (TextView) findViewById(q.a(getContext(), "myoffer_splash_desc", "id"));
-        this.f9668c = (TextView) findViewById(q.a(getContext(), "myoffer_splash_cta_text", "id"));
-        this.f9669d = (RoundImageView) findViewById(q.a(getContext(), "myoffer_splash_icon", "id"));
-        this.f9745q = findViewById(q.a(getContext(), "myoffer_splash_ad_cta_layout", "id"));
+        this.f10452a = (TextView) findViewById(q.a(getContext(), "myoffer_splash_ad_title", "id"));
+        this.f10453b = (TextView) findViewById(q.a(getContext(), "myoffer_splash_desc", "id"));
+        this.f10454c = (TextView) findViewById(q.a(getContext(), "myoffer_splash_cta_text", "id"));
+        this.f10455d = (RoundImageView) findViewById(q.a(getContext(), "myoffer_splash_icon", "id"));
+        this.f10531q = findViewById(q.a(getContext(), "myoffer_splash_ad_cta_layout", "id"));
         this.ad = (SplashShakeTextHintView) findViewById(q.a(getContext(), "myoffer_splash_cta_shake", "id"));
         this.ae = (ImageView) findViewById(q.a(getContext(), "myoffer_splash_ambience_bg", "id"));
-        if (TextUtils.isEmpty(this.f9736g.z())) {
-            am.a(this.f9669d, 0, 0);
+        if (TextUtils.isEmpty(this.f10522g.z())) {
+            am.a(this.f10455d, 0, 0);
         } else {
-            this.f9669d.setVisibility(0);
-            this.f9669d.setNeedRadiu(true);
-            this.f9669d.setRadiusInDip(12);
-            int i = this.f9669d.getLayoutParams().width;
-            com.anythink.core.common.res.b.a(getContext()).a(new e(1, this.f9736g.z()), i, i, new b.a() { // from class: com.anythink.basead.ui.AsseblemCardSplashATView.2
+            this.f10455d.setVisibility(0);
+            this.f10455d.setNeedRadiu(true);
+            this.f10455d.setRadiusInDip(12);
+            int i = this.f10455d.getLayoutParams().width;
+            com.anythink.core.common.res.b.a(getContext()).a(new e(1, this.f10522g.z()), i, i, new b.a() { // from class: com.anythink.basead.ui.AsseblemCardSplashATView.2
                 @Override // com.anythink.core.common.res.b.a
                 public final void onFail(String str, String str2) {
                 }
 
                 @Override // com.anythink.core.common.res.b.a
                 public final void onSuccess(String str, Bitmap bitmap) {
-                    if (TextUtils.equals(str, AsseblemCardSplashATView.this.f9736g.z())) {
-                        AsseblemCardSplashATView.this.f9669d.setImageBitmap(bitmap);
+                    if (TextUtils.equals(str, AsseblemCardSplashATView.this.f10522g.z())) {
+                        AsseblemCardSplashATView.this.f10455d.setImageBitmap(bitmap);
                     }
                 }
             });
         }
-        if (TextUtils.isEmpty(this.f9736g.x())) {
-            am.a(this.f9666a, 0, 0);
+        if (TextUtils.isEmpty(this.f10522g.x())) {
+            am.a(this.f10452a, 0, 0);
         } else {
-            this.f9666a.setText(this.f9736g.x());
-            this.f9666a.setVisibility(0);
+            this.f10452a.setText(this.f10522g.x());
+            this.f10452a.setVisibility(0);
         }
-        if (this.f9667b != null) {
-            if (TextUtils.isEmpty(this.f9736g.y())) {
-                this.f9667b.setVisibility(8);
+        if (this.f10453b != null) {
+            if (TextUtils.isEmpty(this.f10522g.y())) {
+                this.f10453b.setVisibility(8);
             } else {
-                this.f9667b.setText(this.f9736g.y());
+                this.f10453b.setText(this.f10522g.y());
             }
         }
-        View view = this.f9745q;
+        View view = this.f10531q;
         if (view != null) {
-            this.f9742n.add(view);
+            this.f10528n.add(view);
         }
         if (n()) {
-            TextView textView = this.f9668c;
+            TextView textView = this.f10454c;
             if (textView != null) {
                 textView.setVisibility(8);
             }
             SplashShakeTextHintView splashShakeTextHintView = this.ad;
             if (splashShakeTextHintView != null) {
-                if (((BaseNewStyleSDKSplashATView) this).f9837A > ((BaseNewStyleSDKSplashATView) this).f9838B) {
+                if (((BaseNewStyleSDKSplashATView) this).f10623A > ((BaseNewStyleSDKSplashATView) this).f10624B) {
                     splashShakeTextHintView.setTextSize(17);
                 }
                 this.ad.setVisibility(0);
-                this.ad.setShakeSetting(this.f9735f.f14168o, this.f9736g.K());
+                this.ad.setShakeSetting(this.f10521f.f14954o, this.f10522g.K());
                 this.ad.setOnShakeListener(new BaseShakeView.a() { // from class: com.anythink.basead.ui.AsseblemCardSplashATView.3
                     @Override // com.anythink.basead.ui.BaseShakeView.a
                     public final boolean a() {
@@ -111,14 +111,14 @@ public class AsseblemCardSplashATView extends BaseNewStyleSDKSplashATView {
                         AsseblemCardSplashATView.this.a(4, 5);
                         return true;
                     }
-                }, this.f9735f.f14168o);
+                }, this.f10521f.f14954o);
             }
         } else {
-            if (this.f9668c != null && ((BaseNewStyleSDKSplashATView) this).f9837A > ((BaseNewStyleSDKSplashATView) this).f9838B) {
-                if (TextUtils.isEmpty(this.f9736g.D())) {
-                    this.f9668c.setText(com.anythink.basead.b.e.a(getContext(), this.f9736g));
+            if (this.f10454c != null && ((BaseNewStyleSDKSplashATView) this).f10623A > ((BaseNewStyleSDKSplashATView) this).f10624B) {
+                if (TextUtils.isEmpty(this.f10522g.D())) {
+                    this.f10454c.setText(com.anythink.basead.b.e.a(getContext(), this.f10522g));
                 } else {
-                    this.f9668c.setText(this.f9736g.D());
+                    this.f10454c.setText(this.f10522g.D());
                 }
             }
             SplashShakeTextHintView splashShakeTextHintView2 = this.ad;
@@ -127,11 +127,11 @@ public class AsseblemCardSplashATView extends BaseNewStyleSDKSplashATView {
             }
         }
         if (this.ae != null) {
-            String a9 = g.a().a(b.d.f12124j);
+            String a9 = g.a().a(b.d.f12910j);
             if (TextUtils.isEmpty(a9)) {
                 return;
             }
-            y.f().a(new e(3, a9), new b.a() { // from class: com.anythink.basead.ui.AsseblemCardSplashATView.4
+            k.j().a(new e(3, a9), new b.a() { // from class: com.anythink.basead.ui.AsseblemCardSplashATView.4
                 @Override // com.anythink.core.common.res.b.a
                 public final void onFail(String str, String str2) {
                 }
@@ -163,18 +163,18 @@ public class AsseblemCardSplashATView extends BaseNewStyleSDKSplashATView {
         frameLayout.setVisibility(0);
         roundImageView.setNeedRadiu(false);
         roundImageView.setVisibility(0);
-        if (TextUtils.isEmpty(this.f9736g.B())) {
+        if (TextUtils.isEmpty(this.f10522g.B())) {
             roundImageView.setBackgroundColor(Color.parseColor("#EFEFEF"));
             return;
         }
-        com.anythink.core.common.res.b.a(getContext()).a(new e(1, this.f9736g.B()), getResources().getDisplayMetrics().widthPixels, getResources().getDisplayMetrics().heightPixels, new b.a() { // from class: com.anythink.basead.ui.AsseblemCardSplashATView.5
+        com.anythink.core.common.res.b.a(getContext()).a(new e(1, this.f10522g.B()), getResources().getDisplayMetrics().widthPixels, getResources().getDisplayMetrics().heightPixels, new b.a() { // from class: com.anythink.basead.ui.AsseblemCardSplashATView.5
             @Override // com.anythink.core.common.res.b.a
             public final void onFail(String str, String str2) {
             }
 
             @Override // com.anythink.core.common.res.b.a
             public final void onSuccess(String str, final Bitmap bitmap) {
-                if (TextUtils.equals(str, AsseblemCardSplashATView.this.f9736g.B())) {
+                if (TextUtils.equals(str, AsseblemCardSplashATView.this.f10522g.B())) {
                     frameLayout.post(new Runnable() { // from class: com.anythink.basead.ui.AsseblemCardSplashATView.5.1
                         @Override // java.lang.Runnable
                         public final void run() {
@@ -196,18 +196,18 @@ public class AsseblemCardSplashATView extends BaseNewStyleSDKSplashATView {
                 }
             }
         });
-        if (this.f9735f.f14168o.J() != 1) {
-            this.f9742n.add(wrapRoundImageView);
+        if (this.f10521f.f14954o.J() != 1) {
+            this.f10528n.add(wrapRoundImageView);
         }
     }
 
     @Override // com.anythink.basead.ui.BaseSdkSplashATView
     public final void d() {
-        super.a(this.f9735f.f14168o.ab() < 0 ? 100 : this.f9735f.f14168o.ab(), new Runnable() { // from class: com.anythink.basead.ui.AsseblemCardSplashATView.6
+        super.a(this.f10521f.f14954o.ab() < 0 ? 100 : this.f10521f.f14954o.ab(), new Runnable() { // from class: com.anythink.basead.ui.AsseblemCardSplashATView.6
             @Override // java.lang.Runnable
             public final void run() {
                 AsseblemCardSplashATView asseblemCardSplashATView = AsseblemCardSplashATView.this;
-                if (asseblemCardSplashATView.f9941O == null) {
+                if (asseblemCardSplashATView.f10727O == null) {
                     return;
                 }
                 asseblemCardSplashATView.j();
@@ -222,18 +222,18 @@ public class AsseblemCardSplashATView extends BaseNewStyleSDKSplashATView {
     @Override // com.anythink.basead.ui.BaseATView
     public final void a() {
         View inflate;
-        if (((BaseNewStyleSDKSplashATView) this).f9837A > ((BaseNewStyleSDKSplashATView) this).f9838B) {
+        if (((BaseNewStyleSDKSplashATView) this).f10623A > ((BaseNewStyleSDKSplashATView) this).f10624B) {
             inflate = LayoutInflater.from(getContext()).inflate(q.a(getContext(), "myoffer_splash_ad_layout_asseblem_card_horizontal", "layout"), this);
         } else {
             inflate = LayoutInflater.from(getContext()).inflate(q.a(getContext(), "myoffer_splash_ad_layout_asseblem_card_vertical", "layout"), this);
         }
         w();
-        d dVar = this.f9946T;
+        d dVar = this.f10732T;
         if (dVar != null) {
-            dVar.a(d.f10801c).a(new com.anythink.basead.ui.d.a() { // from class: com.anythink.basead.ui.AsseblemCardSplashATView.1
+            dVar.a(d.f11587c).a(new com.anythink.basead.ui.d.a() { // from class: com.anythink.basead.ui.AsseblemCardSplashATView.1
                 @Override // com.anythink.basead.ui.d.a
-                public final void a(int i, int i6) {
-                    AsseblemCardSplashATView.this.a(i, i6);
+                public final void a(int i, int i4) {
+                    AsseblemCardSplashATView.this.a(i, i4);
                 }
             }).a(getContext(), inflate);
         }

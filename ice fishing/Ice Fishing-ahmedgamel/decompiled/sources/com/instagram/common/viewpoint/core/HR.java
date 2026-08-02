@@ -17,20 +17,20 @@ public final class HR {
     public final boolean A0C;
     public final boolean A0D;
 
-    public HR(int i, int i6, int i9, int i10, int i11, int i12, int i13, float f3, boolean z3, boolean z6, int i14, int i15, int i16, boolean z9) {
+    public HR(int i, int i4, int i6, int i9, int i10, int i11, int i12, float f2, boolean z6, boolean z9, int i13, int i14, int i15, boolean z10) {
         this.A08 = i;
-        this.A01 = i6;
-        this.A04 = i9;
-        this.A09 = i10;
-        this.A05 = i11;
-        this.A0A = i12;
-        this.A03 = i13;
-        this.A00 = f3;
-        this.A0D = z3;
-        this.A0C = z6;
-        this.A02 = i14;
-        this.A07 = i15;
-        this.A06 = i16;
-        this.A0B = z9;
+        this.A01 = i4;
+        this.A04 = i6;
+        this.A09 = i9;
+        this.A05 = i10;
+        this.A0A = i11;
+        this.A03 = i12;
+        this.A00 = f2;
+        this.A0D = z6;
+        this.A0C = z9;
+        this.A02 = i13;
+        this.A07 = i14;
+        this.A06 = i15;
+        this.A0B = z10;
     }
 }

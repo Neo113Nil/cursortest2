@@ -15,31 +15,31 @@ import org.json.JSONObject;
 public class AnythinkBTLayout extends BTBaseView {
 
     /* renamed from: p, reason: collision with root package name */
-    private static final String f20953p = "portrait";
+    private static final String f21740p = "portrait";
 
     /* renamed from: q, reason: collision with root package name */
-    private static final String f20954q = "landscape";
+    private static final String f21741q = "landscape";
 
     /* renamed from: r, reason: collision with root package name */
-    private WebView f20955r;
+    private WebView f21742r;
 
     public AnythinkBTLayout(Context context) {
         super(context);
     }
 
     public void broadcast(String str, JSONObject jSONObject) {
-        if (this.f20955r != null) {
+        if (this.f21742r != null) {
             try {
                 JSONObject jSONObject2 = new JSONObject();
-                jSONObject2.put("code", BTBaseView.f21043n);
+                jSONObject2.put("code", BTBaseView.f21830n);
                 jSONObject2.put("id", getInstanceId());
                 jSONObject2.put("eventName", str);
                 jSONObject2.put("data", jSONObject);
                 h.a();
-                a.a(this.f20955r, "broadcast", Base64.encodeToString(jSONObject2.toString().getBytes(), 2));
+                a.a(this.f21742r, "broadcast", Base64.encodeToString(jSONObject2.toString().getBytes(), 2));
             } catch (Exception unused) {
                 c.a();
-                c.a(this.f20955r, "broadcast", getInstanceId());
+                c.a(this.f21742r, "broadcast", getInstanceId());
             }
         }
     }
@@ -49,35 +49,35 @@ public class AnythinkBTLayout extends BTBaseView {
     }
 
     public void notifyEvent(String str) {
-        WebView webView = this.f20955r;
+        WebView webView = this.f21742r;
         if (webView != null) {
-            BTBaseView.a(webView, str, this.f21049d);
+            BTBaseView.a(webView, str, this.f21836d);
         }
     }
 
     public void onBackPressed() {
-        if (this.f20955r != null) {
+        if (this.f21742r != null) {
             c.a();
-            c.a(this.f20955r, "onSystemBackPressed", this.f21049d);
+            c.a(this.f21742r, "onSystemBackPressed", this.f21836d);
         }
     }
 
     @Override // com.anythink.expressad.video.bt.module.BTBaseView, android.view.View
     public void onConfigurationChanged(Configuration configuration) {
-        if (this.f20955r != null) {
+        if (this.f21742r != null) {
             try {
-                d dVar = this.f21047b;
+                d dVar = this.f21834b;
                 if (dVar == null || !dVar.j()) {
                     JSONObject jSONObject = new JSONObject();
                     if (configuration.orientation == 2) {
-                        jSONObject.put("orientation", f20954q);
+                        jSONObject.put("orientation", f21741q);
                     } else {
-                        jSONObject.put("orientation", f20953p);
+                        jSONObject.put("orientation", f21740p);
                     }
-                    jSONObject.put("instanceId", this.f21049d);
+                    jSONObject.put("instanceId", this.f21836d);
                     String encodeToString = Base64.encodeToString(jSONObject.toString().getBytes(), 2);
                     h.a();
-                    a.a(this.f20955r, "orientation", encodeToString);
+                    a.a(this.f21742r, "orientation", encodeToString);
                 }
             } catch (Exception e9) {
                 e9.printStackTrace();
@@ -90,7 +90,7 @@ public class AnythinkBTLayout extends BTBaseView {
     }
 
     public void setWebView(WebView webView) {
-        this.f20955r = webView;
+        this.f21742r = webView;
     }
 
     public AnythinkBTLayout(Context context, AttributeSet attributeSet) {

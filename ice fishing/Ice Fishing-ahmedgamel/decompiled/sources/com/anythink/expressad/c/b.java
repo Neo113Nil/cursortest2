@@ -9,11 +9,11 @@ import java.util.Map;
 public final class b extends com.anythink.core.common.res.image.b {
 
     /* renamed from: a, reason: collision with root package name */
-    String f18300a;
+    String f19087a;
 
     private b(String str, String str2) {
         super(str);
-        this.f18300a = str2;
+        this.f19087a = str2;
     }
 
     @Override // com.anythink.core.common.res.image.b
@@ -36,7 +36,7 @@ public final class b extends com.anythink.core.common.res.image.b {
     @Override // com.anythink.core.common.res.image.b
     public final boolean a(InputStream inputStream) {
         try {
-            FileOutputStream fileOutputStream = new FileOutputStream(this.f18300a);
+            FileOutputStream fileOutputStream = new FileOutputStream(this.f19087a);
             byte[] bArr = new byte[2048];
             while (true) {
                 int read = inputStream.read(bArr);

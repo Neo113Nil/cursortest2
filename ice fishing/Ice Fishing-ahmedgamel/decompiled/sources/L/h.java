@@ -6,26 +6,26 @@ import android.net.Uri;
 public final class h {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Uri f1598a;
+    public final Uri f1707a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f1599b;
+    public final int f1708b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f1600c;
+    public final int f1709c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final boolean f1601d;
+    public final boolean f1710d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final int f1602e;
+    public final int f1711e;
 
-    public h(Uri uri, int i, int i6, boolean z3, int i9) {
+    public h(Uri uri, int i, int i4, boolean z6, int i6) {
         uri.getClass();
-        this.f1598a = uri;
-        this.f1599b = i;
-        this.f1600c = i6;
-        this.f1601d = z3;
-        this.f1602e = i9;
+        this.f1707a = uri;
+        this.f1708b = i;
+        this.f1709c = i4;
+        this.f1710d = z6;
+        this.f1711e = i6;
     }
 }

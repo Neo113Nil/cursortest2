@@ -4,10 +4,10 @@ import com.facebook.ads.androidx.media3.exoplayer.scheduler.Requirements;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public class D3 implements C4 {
-    public final /* synthetic */ C1771fb A00;
+    public final /* synthetic */ C1791fb A00;
 
     @Override // com.instagram.common.viewpoint.core.C4
-    public final /* synthetic */ void ADi(C5 c52, C0802Bk c0802Bk) {
+    public final /* synthetic */ void ADi(C5 c52, C0822Bk c0822Bk) {
     }
 
     @Override // com.instagram.common.viewpoint.core.C4
@@ -15,15 +15,15 @@ public class D3 implements C4 {
     }
 
     @Override // com.instagram.common.viewpoint.core.C4
-    public final /* synthetic */ void AGf(C5 c52, boolean z3) {
+    public final /* synthetic */ void AGf(C5 c52, boolean z6) {
     }
 
-    public D3(C1771fb c1771fb) {
-        this.A00 = c1771fb;
+    public D3(C1791fb c1791fb) {
+        this.A00 = c1791fb;
     }
 
     @Override // com.instagram.common.viewpoint.core.C4
-    public final void ADh(C5 c52, C0802Bk c0802Bk, Exception exc) {
+    public final void ADh(C5 c52, C0822Bk c0822Bk, Exception exc) {
         this.A00.A0A();
     }
 

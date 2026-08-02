@@ -2,9 +2,9 @@ package com.onesignal.core.internal.background.impl;
 
 import B7.h;
 import I7.p;
-import S7.AbstractC0406y;
+import S7.AbstractC0410y;
 import S7.F;
-import S7.InterfaceC0404w;
+import S7.InterfaceC0408w;
 import S7.Y;
 import android.app.job.JobInfo;
 import android.app.job.JobScheduler;
@@ -17,16 +17,16 @@ import kotlin.jvm.internal.i;
 import u7.v;
 import x4.e;
 import x4.f;
-import z4.InterfaceC5260a;
-import z4.InterfaceC5261b;
-import z7.InterfaceC5267d;
+import z4.InterfaceC5233a;
+import z4.InterfaceC5234b;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
-public final class a implements e, InterfaceC5260a, com.onesignal.core.internal.startup.b {
+public final class a implements e, InterfaceC5233a, com.onesignal.core.internal.startup.b {
     public static final C0184a Companion = new C0184a(null);
     private static final int SYNC_TASK_ID = 2071862118;
     private final f _applicationService;
-    private final List<InterfaceC5261b> _backgroundServices;
+    private final List<InterfaceC5234b> _backgroundServices;
     private final K4.a _time;
     private Y backgroundSyncJob;
     private final Object lock;
@@ -51,12 +51,12 @@ public final class a implements e, InterfaceC5260a, com.onesignal.core.internal.
 
         @Override // I7.a
         public /* bridge */ /* synthetic */ Object invoke() {
-            m17invoke();
-            return v.f41353a;
+            m16invoke();
+            return v.f41073a;
         }
 
         /* renamed from: invoke, reason: collision with other method in class */
-        public final void m17invoke() {
+        public final void m16invoke() {
             a.this.cancelSyncTask();
         }
     }
@@ -68,12 +68,12 @@ public final class a implements e, InterfaceC5260a, com.onesignal.core.internal.
 
         @Override // I7.a
         public /* bridge */ /* synthetic */ Object invoke() {
-            m18invoke();
-            return v.f41353a;
+            m17invoke();
+            return v.f41073a;
         }
 
         /* renamed from: invoke, reason: collision with other method in class */
-        public final void m18invoke() {
+        public final void m17invoke() {
             a.this.scheduleBackground();
         }
     }
@@ -89,28 +89,28 @@ public final class a implements e, InterfaceC5260a, com.onesignal.core.internal.
             final /* synthetic */ a this$0;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public C0185a(a aVar, InterfaceC5267d interfaceC5267d) {
-                super(2, interfaceC5267d);
+            public C0185a(a aVar, InterfaceC5240d interfaceC5240d) {
+                super(2, interfaceC5240d);
                 this.this$0 = aVar;
             }
 
             @Override // B7.a
-            public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-                return new C0185a(this.this$0, interfaceC5267d);
+            public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+                return new C0185a(this.this$0, interfaceC5240d);
             }
 
             @Override // I7.p
-            public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-                return ((C0185a) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+            public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+                return ((C0185a) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
             }
 
             @Override // B7.a
             public final Object invokeSuspend(Object obj) {
                 Iterator it;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 int i = this.label;
                 if (i == 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     Object obj2 = this.this$0.lock;
                     a aVar2 = this.this$0;
                     synchronized (obj2) {
@@ -122,54 +122,54 @@ public final class a implements e, InterfaceC5260a, com.onesignal.core.internal.
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     it = (Iterator) this.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 while (it.hasNext()) {
-                    InterfaceC5261b interfaceC5261b = (InterfaceC5261b) it.next();
+                    InterfaceC5234b interfaceC5234b = (InterfaceC5234b) it.next();
                     this.L$0 = it;
                     this.label = 1;
-                    if (interfaceC5261b.backgroundRun(this) == aVar) {
+                    if (interfaceC5234b.backgroundRun(this) == aVar) {
                         return aVar;
                     }
                 }
                 this.this$0.scheduleBackground();
-                return v.f41353a;
+                return v.f41073a;
             }
         }
 
-        public d(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public d(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            d dVar = a.this.new d(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            d dVar = a.this.new d(interfaceC5240d);
             dVar.L$0 = obj;
             return dVar;
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((d) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((d) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
-            InterfaceC0404w interfaceC0404w = (InterfaceC0404w) this.L$0;
+            Q3.b.s(obj);
+            InterfaceC0408w interfaceC0408w = (InterfaceC0408w) this.L$0;
             com.onesignal.debug.internal.logging.b.debug$default("OSBackground sync, calling initWithContext", null, 2, null);
             a aVar2 = a.this;
-            aVar2.backgroundSyncJob = AbstractC0406y.o(interfaceC0404w, F.f2916b, new C0185a(aVar2, null), 2);
-            return v.f41353a;
+            aVar2.backgroundSyncJob = AbstractC0410y.o(interfaceC0408w, F.f2999b, new C0185a(aVar2, null), 2);
+            return v.f41073a;
         }
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    public a(f _applicationService, K4.a _time, List<? extends InterfaceC5261b> _backgroundServices) {
+    public a(f _applicationService, K4.a _time, List<? extends InterfaceC5234b> _backgroundServices) {
         kotlin.jvm.internal.h.e(_applicationService, "_applicationService");
         kotlin.jvm.internal.h.e(_time, "_time");
         kotlin.jvm.internal.h.e(_backgroundServices, "_backgroundServices");
@@ -219,7 +219,7 @@ public final class a implements e, InterfaceC5260a, com.onesignal.core.internal.
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void scheduleBackground() {
-        Iterator<InterfaceC5261b> it = this._backgroundServices.iterator();
+        Iterator<InterfaceC5234b> it = this._backgroundServices.iterator();
         Long l9 = null;
         while (it.hasNext()) {
             Long scheduleBackgroundRunIn = it.next().getScheduleBackgroundRunIn();
@@ -270,7 +270,7 @@ public final class a implements e, InterfaceC5260a, com.onesignal.core.internal.
             if (this.nextScheduledSyncTimeMs != 0 && this._time.getCurrentTimeMillis() + j6 > this.nextScheduledSyncTimeMs) {
                 com.onesignal.debug.internal.logging.b.debug$default("OSSyncService scheduleSyncTask already update scheduled nextScheduledSyncTimeMs: " + this.nextScheduledSyncTimeMs, null, 2, null);
             } else {
-                if (j6 < com.anythink.basead.exoplayer.f.f7187a) {
+                if (j6 < com.anythink.basead.exoplayer.f.f7973a) {
                     j6 = 5000;
                 }
                 scheduleBackgroundSyncTask(j6);
@@ -279,7 +279,7 @@ public final class a implements e, InterfaceC5260a, com.onesignal.core.internal.
         }
     }
 
-    @Override // z4.InterfaceC5260a
+    @Override // z4.InterfaceC5233a
     public boolean cancelRunBackgroundServices() {
         Y y7 = this.backgroundSyncJob;
         if (y7 == null || !y7.j()) {
@@ -291,13 +291,13 @@ public final class a implements e, InterfaceC5260a, com.onesignal.core.internal.
         return true;
     }
 
-    @Override // z4.InterfaceC5260a
+    @Override // z4.InterfaceC5233a
     public boolean getNeedsJobReschedule() {
         return this.needsJobReschedule;
     }
 
     @Override // x4.e
-    public void onFocus(boolean z3) {
+    public void onFocus(boolean z6) {
         com.onesignal.common.threading.c.runOnSerialIOIfBackgroundThreading(new b());
     }
 
@@ -306,15 +306,15 @@ public final class a implements e, InterfaceC5260a, com.onesignal.core.internal.
         com.onesignal.common.threading.c.runOnSerialIOIfBackgroundThreading(new c());
     }
 
-    @Override // z4.InterfaceC5260a
-    public Object runBackgroundServices(InterfaceC5267d interfaceC5267d) {
-        Object e9 = AbstractC0406y.e(new d(null), interfaceC5267d);
-        return e9 == A7.a.f58n ? e9 : v.f41353a;
+    @Override // z4.InterfaceC5233a
+    public Object runBackgroundServices(InterfaceC5240d interfaceC5240d) {
+        Object e9 = AbstractC0410y.e(new d(null), interfaceC5240d);
+        return e9 == A7.a.f215n ? e9 : v.f41073a;
     }
 
-    @Override // z4.InterfaceC5260a
-    public void setNeedsJobReschedule(boolean z3) {
-        this.needsJobReschedule = z3;
+    @Override // z4.InterfaceC5233a
+    public void setNeedsJobReschedule(boolean z6) {
+        this.needsJobReschedule = z6;
     }
 
     @Override // com.onesignal.core.internal.startup.b

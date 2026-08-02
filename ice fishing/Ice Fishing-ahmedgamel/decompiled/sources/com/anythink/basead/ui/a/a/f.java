@@ -13,7 +13,7 @@ public final class f extends a {
 
     @Override // com.anythink.basead.ui.a.a.a
     public final ValueAnimator e() {
-        ObjectAnimator ofFloat = ObjectAnimator.ofFloat(this.f10407a, "rotation", 0.0f, 4.0f, 0.0f, -4.0f, 0.0f);
+        ObjectAnimator ofFloat = ObjectAnimator.ofFloat(this.f11193a, "rotation", 0.0f, 4.0f, 0.0f, -4.0f, 0.0f);
         ofFloat.setDuration(1000L);
         ofFloat.setRepeatMode(1);
         ofFloat.setRepeatCount(-1);

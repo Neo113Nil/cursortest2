@@ -3,27 +3,27 @@ package androidx.lifecycle;
 import java.util.HashMap;
 
 /* loaded from: classes.dex */
-public final class CompositeGeneratedAdaptersObserver implements InterfaceC0501t {
+public final class CompositeGeneratedAdaptersObserver implements InterfaceC0505t {
 
     /* renamed from: n, reason: collision with root package name */
-    public final InterfaceC0491i[] f5100n;
+    public final InterfaceC0495i[] f5067n;
 
-    public CompositeGeneratedAdaptersObserver(InterfaceC0491i[] interfaceC0491iArr) {
-        this.f5100n = interfaceC0491iArr;
+    public CompositeGeneratedAdaptersObserver(InterfaceC0495i[] interfaceC0495iArr) {
+        this.f5067n = interfaceC0495iArr;
     }
 
-    @Override // androidx.lifecycle.InterfaceC0501t
-    public final void a(InterfaceC0503v interfaceC0503v, EnumC0496n enumC0496n) {
+    @Override // androidx.lifecycle.InterfaceC0505t
+    public final void a(InterfaceC0507v interfaceC0507v, EnumC0500n enumC0500n) {
         new HashMap();
-        InterfaceC0491i[] interfaceC0491iArr = this.f5100n;
-        if (interfaceC0491iArr.length > 0) {
-            InterfaceC0491i interfaceC0491i = interfaceC0491iArr[0];
+        InterfaceC0495i[] interfaceC0495iArr = this.f5067n;
+        if (interfaceC0495iArr.length > 0) {
+            InterfaceC0495i interfaceC0495i = interfaceC0495iArr[0];
             throw null;
         }
-        if (interfaceC0491iArr.length <= 0) {
+        if (interfaceC0495iArr.length <= 0) {
             return;
         }
-        InterfaceC0491i interfaceC0491i2 = interfaceC0491iArr[0];
+        InterfaceC0495i interfaceC0495i2 = interfaceC0495iArr[0];
         throw null;
     }
 }

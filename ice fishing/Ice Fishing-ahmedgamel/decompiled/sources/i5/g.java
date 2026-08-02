@@ -2,7 +2,7 @@ package i5;
 
 /* loaded from: classes2.dex */
 public interface g {
-    InterfaceC4589f getNotification();
+    InterfaceC4598f getNotification();
 
     i getResult();
 }

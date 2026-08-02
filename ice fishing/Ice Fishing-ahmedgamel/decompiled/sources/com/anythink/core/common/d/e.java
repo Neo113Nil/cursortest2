@@ -19,32 +19,32 @@ public final class e {
     public final class a {
 
         /* renamed from: b, reason: collision with root package name */
-        private final String f12322b;
+        private final String f13108b;
 
         /* renamed from: c, reason: collision with root package name */
-        private final boolean f12323c;
+        private final boolean f13109c;
 
-        public a(String str, boolean z3) {
-            this.f12322b = str;
-            this.f12323c = z3;
+        public a(String str, boolean z6) {
+            this.f13108b = str;
+            this.f13109c = z6;
         }
 
         private boolean b() {
-            return this.f12323c;
+            return this.f13109c;
         }
 
         public final String a() {
-            return this.f12322b;
+            return this.f13108b;
         }
     }
 
     public final class c implements IInterface {
 
         /* renamed from: b, reason: collision with root package name */
-        private IBinder f12328b;
+        private IBinder f13114b;
 
         public c(IBinder iBinder) {
-            this.f12328b = iBinder;
+            this.f13114b = iBinder;
         }
 
         public final String a() {
@@ -52,7 +52,7 @@ public final class e {
             Parcel obtain2 = Parcel.obtain();
             try {
                 obtain.writeInterfaceToken("com.google.android.gms.ads.identifier.internal.IAdvertisingIdService");
-                this.f12328b.transact(1, obtain, obtain2, 0);
+                this.f13114b.transact(1, obtain, obtain2, 0);
                 obtain2.readException();
                 return obtain2.readString();
             } finally {
@@ -63,7 +63,7 @@ public final class e {
 
         @Override // android.os.IInterface
         public final IBinder asBinder() {
-            return this.f12328b;
+            return this.f13114b;
         }
 
         public final boolean b() {
@@ -72,7 +72,7 @@ public final class e {
             try {
                 obtain.writeInterfaceToken("com.google.android.gms.ads.identifier.internal.IAdvertisingIdService");
                 obtain.writeInt(1);
-                this.f12328b.transact(2, obtain, obtain2, 0);
+                this.f13114b.transact(2, obtain, obtain2, 0);
                 obtain2.readException();
                 return obtain2.readInt() != 0;
             } finally {
@@ -103,28 +103,28 @@ public final class e {
     public final class b implements ServiceConnection {
 
         /* renamed from: a, reason: collision with root package name */
-        boolean f12324a;
+        boolean f13110a;
 
         /* renamed from: c, reason: collision with root package name */
-        private final LinkedBlockingQueue<IBinder> f12326c;
+        private final LinkedBlockingQueue<IBinder> f13112c;
 
         private b() {
-            this.f12324a = false;
-            this.f12326c = new LinkedBlockingQueue<>(1);
+            this.f13110a = false;
+            this.f13112c = new LinkedBlockingQueue<>(1);
         }
 
         public final IBinder a() {
-            if (this.f12324a) {
+            if (this.f13110a) {
                 throw new IllegalStateException();
             }
-            this.f12324a = true;
-            return this.f12326c.take();
+            this.f13110a = true;
+            return this.f13112c.take();
         }
 
         @Override // android.content.ServiceConnection
         public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {
             try {
-                this.f12326c.put(iBinder);
+                this.f13112c.put(iBinder);
             } catch (InterruptedException unused) {
             }
         }

@@ -7,7 +7,7 @@ import android.os.Parcelable;
 import android.util.Size;
 import android.util.SizeF;
 import android.util.SparseArray;
-import androidx.activity.C0454f;
+import androidx.activity.C0458f;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,46 +15,46 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
-import u7.C5089g;
-import x0.InterfaceC5180b;
+import u7.C5081g;
+import x0.InterfaceC5179b;
 
 /* loaded from: classes.dex */
 public final class K {
 
     /* renamed from: f, reason: collision with root package name */
-    public static final Class[] f5114f = {Boolean.TYPE, boolean[].class, Double.TYPE, double[].class, Integer.TYPE, int[].class, Long.TYPE, long[].class, String.class, String[].class, Binder.class, Bundle.class, Byte.TYPE, byte[].class, Character.TYPE, char[].class, CharSequence.class, CharSequence[].class, ArrayList.class, Float.TYPE, float[].class, Parcelable.class, Parcelable[].class, Serializable.class, Short.TYPE, short[].class, SparseArray.class, Size.class, SizeF.class};
+    public static final Class[] f5081f = {Boolean.TYPE, boolean[].class, Double.TYPE, double[].class, Integer.TYPE, int[].class, Long.TYPE, long[].class, String.class, String[].class, Binder.class, Bundle.class, Byte.TYPE, byte[].class, Character.TYPE, char[].class, CharSequence.class, CharSequence[].class, ArrayList.class, Float.TYPE, float[].class, Parcelable.class, Parcelable[].class, Serializable.class, Short.TYPE, short[].class, SparseArray.class, Size.class, SizeF.class};
 
     /* renamed from: a, reason: collision with root package name */
-    public final LinkedHashMap f5115a;
+    public final LinkedHashMap f5082a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final LinkedHashMap f5116b;
+    public final LinkedHashMap f5083b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final LinkedHashMap f5117c;
+    public final LinkedHashMap f5084c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final LinkedHashMap f5118d;
+    public final LinkedHashMap f5085d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final InterfaceC5180b f5119e;
+    public final InterfaceC5179b f5086e;
 
     public K(HashMap hashMap) {
         LinkedHashMap linkedHashMap = new LinkedHashMap();
-        this.f5115a = linkedHashMap;
-        this.f5116b = new LinkedHashMap();
-        this.f5117c = new LinkedHashMap();
-        this.f5118d = new LinkedHashMap();
-        this.f5119e = new C0454f(1, this);
+        this.f5082a = linkedHashMap;
+        this.f5083b = new LinkedHashMap();
+        this.f5084c = new LinkedHashMap();
+        this.f5085d = new LinkedHashMap();
+        this.f5086e = new C0458f(1, this);
         linkedHashMap.putAll(hashMap);
     }
 
     public static Bundle a(K this$0) {
         kotlin.jvm.internal.h.e(this$0, "this$0");
-        Iterator it = v7.t.U(this$0.f5116b).entrySet().iterator();
+        Iterator it = v7.t.y(this$0.f5083b).entrySet().iterator();
         while (true) {
             boolean hasNext = it.hasNext();
-            LinkedHashMap linkedHashMap = this$0.f5115a;
+            LinkedHashMap linkedHashMap = this$0.f5082a;
             int i = 0;
             if (!hasNext) {
                 Set<String> keySet = linkedHashMap.keySet();
@@ -64,12 +64,12 @@ public final class K {
                     arrayList.add(str);
                     arrayList2.add(linkedHashMap.get(str));
                 }
-                C5089g[] c5089gArr = {new C5089g("keys", arrayList), new C5089g("values", arrayList2)};
+                C5081g[] c5081gArr = {new C5081g("keys", arrayList), new C5081g("values", arrayList2)};
                 Bundle bundle = new Bundle(2);
                 while (i < 2) {
-                    C5089g c5089g = c5089gArr[i];
-                    String str2 = (String) c5089g.f41332n;
-                    Object obj = c5089g.f41333u;
+                    C5081g c5081g = c5081gArr[i];
+                    String str2 = (String) c5081g.f41052n;
+                    Object obj = c5081g.f41053u;
                     if (obj == null) {
                         bundle.putString(str2, null);
                     } else if (obj instanceof Boolean) {
@@ -143,10 +143,10 @@ public final class K {
             }
             Map.Entry entry = (Map.Entry) it.next();
             String key = (String) entry.getKey();
-            Bundle a9 = ((InterfaceC5180b) entry.getValue()).a();
+            Bundle a9 = ((InterfaceC5179b) entry.getValue()).a();
             kotlin.jvm.internal.h.e(key, "key");
             if (a9 != null) {
-                Class[] clsArr = f5114f;
+                Class[] clsArr = f5081f;
                 while (i < 29) {
                     Class cls = clsArr[i];
                     kotlin.jvm.internal.h.b(cls);
@@ -156,14 +156,14 @@ public final class K {
                 }
                 throw new IllegalArgumentException("Can't put value with type " + a9.getClass() + " into saved state");
             }
-            Object obj2 = this$0.f5117c.get(key);
+            Object obj2 = this$0.f5084c.get(key);
             C c9 = obj2 instanceof C ? (C) obj2 : null;
             if (c9 != null) {
                 c9.e(a9);
             } else {
                 linkedHashMap.put(key, a9);
             }
-            V7.k kVar = (V7.k) this$0.f5118d.get(key);
+            V7.k kVar = (V7.k) this$0.f5085d.get(key);
             if (kVar != null) {
                 ((V7.n) kVar).F(a9);
             }
@@ -171,10 +171,10 @@ public final class K {
     }
 
     public K() {
-        this.f5115a = new LinkedHashMap();
-        this.f5116b = new LinkedHashMap();
-        this.f5117c = new LinkedHashMap();
-        this.f5118d = new LinkedHashMap();
-        this.f5119e = new C0454f(1, this);
+        this.f5082a = new LinkedHashMap();
+        this.f5083b = new LinkedHashMap();
+        this.f5084c = new LinkedHashMap();
+        this.f5085d = new LinkedHashMap();
+        this.f5086e = new C0458f(1, this);
     }
 }

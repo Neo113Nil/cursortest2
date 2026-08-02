@@ -6,16 +6,16 @@ import com.facebook.ads.AudienceNetworkAds;
 public final class d implements AudienceNetworkAds.InitResult {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ Throwable f23514a;
+    public final /* synthetic */ Throwable f24299a;
 
     public d(Throwable th) {
-        this.f23514a = th;
+        this.f24299a = th;
     }
 
     @Override // com.facebook.ads.AudienceNetworkAds.InitResult
     public final String getMessage() {
         String createErrorMessage;
-        createErrorMessage = DynamicLoaderFactory.createErrorMessage(this.f23514a);
+        createErrorMessage = DynamicLoaderFactory.createErrorMessage(this.f24299a);
         return createErrorMessage;
     }
 

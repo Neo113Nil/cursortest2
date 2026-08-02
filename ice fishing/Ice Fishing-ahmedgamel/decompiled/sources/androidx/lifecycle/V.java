@@ -1,6 +1,6 @@
 package androidx.lifecycle;
 
-import h0.C4556d;
+import h0.C4561d;
 
 /* loaded from: classes.dex */
 public interface V {
@@ -8,7 +8,7 @@ public interface V {
         throw new UnsupportedOperationException("Factory.create(String) is unsupported.  This Factory requires `CreationExtras` to be passed into `create` method.");
     }
 
-    default S b(Class cls, C4556d c4556d) {
+    default S b(Class cls, C4561d c4561d) {
         return a(cls);
     }
 }

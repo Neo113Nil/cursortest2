@@ -6,48 +6,48 @@ import android.content.res.XmlResourceParser;
 import android.util.TypedValue;
 import android.util.Xml;
 import java.util.HashMap;
-import u.AbstractC5049e;
+import u.AbstractC5050e;
 
 /* loaded from: classes.dex */
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public boolean f42006a = false;
+    public boolean f41977a = false;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f42007b;
+    public int f41978b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f42008c;
+    public int f41979c;
 
     /* renamed from: d, reason: collision with root package name */
-    public float f42009d;
+    public float f41980d;
 
     /* renamed from: e, reason: collision with root package name */
-    public String f42010e;
+    public String f41981e;
 
     /* renamed from: f, reason: collision with root package name */
-    public boolean f42011f;
+    public boolean f41982f;
 
     /* renamed from: g, reason: collision with root package name */
-    public int f42012g;
+    public int f41983g;
 
     public b(b bVar, Object obj) {
         bVar.getClass();
-        this.f42007b = bVar.f42007b;
+        this.f41978b = bVar.f41978b;
         b(obj);
     }
 
     public static void a(Context context, XmlResourceParser xmlResourceParser, HashMap hashMap) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(Xml.asAttributeSet(xmlResourceParser), r.f42215d);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(Xml.asAttributeSet(xmlResourceParser), r.f42186d);
         int indexCount = obtainStyledAttributes.getIndexCount();
         String str = null;
         int i = 0;
-        boolean z3 = false;
+        boolean z6 = false;
         Object obj = null;
-        for (int i6 = 0; i6 < indexCount; i6++) {
-            int index = obtainStyledAttributes.getIndex(i6);
-            int i9 = 1;
+        for (int i4 = 0; i4 < indexCount; i4++) {
+            int index = obtainStyledAttributes.getIndex(i4);
+            int i6 = 1;
             if (index == 0) {
                 str = obtainStyledAttributes.getString(index);
                 if (str != null && str.length() > 0) {
@@ -55,16 +55,16 @@ public final class b {
                 }
             } else if (index == 10) {
                 str = obtainStyledAttributes.getString(index);
-                z3 = true;
+                z6 = true;
             } else if (index == 1) {
                 obj = Boolean.valueOf(obtainStyledAttributes.getBoolean(index, false));
                 i = 6;
             } else {
-                int i10 = 3;
+                int i9 = 3;
                 if (index == 3) {
                     obj = Integer.valueOf(obtainStyledAttributes.getColor(index, 0));
                 } else {
-                    i10 = 4;
+                    i9 = 4;
                     if (index == 2) {
                         obj = Integer.valueOf(obtainStyledAttributes.getColor(index, 0));
                     } else {
@@ -73,7 +73,7 @@ public final class b {
                         } else if (index == 4) {
                             obj = Float.valueOf(obtainStyledAttributes.getDimension(index, 0.0f));
                         } else {
-                            i10 = 5;
+                            i9 = 5;
                             if (index == 5) {
                                 obj = Float.valueOf(obtainStyledAttributes.getFloat(index, Float.NaN));
                                 i = 2;
@@ -83,7 +83,7 @@ public final class b {
                                 } else if (index == 9) {
                                     obj = obtainStyledAttributes.getString(index);
                                 } else {
-                                    i9 = 8;
+                                    i6 = 8;
                                     if (index == 8) {
                                         int resourceId = obtainStyledAttributes.getResourceId(index, -1);
                                         if (resourceId == -1) {
@@ -92,19 +92,19 @@ public final class b {
                                         obj = Integer.valueOf(resourceId);
                                     }
                                 }
-                                i = i9;
+                                i = i6;
                             }
                         }
                         i = 7;
                     }
                 }
-                i = i10;
+                i = i9;
             }
         }
         if (str != null && obj != null) {
             b bVar = new b();
-            bVar.f42007b = i;
-            bVar.f42006a = z3;
+            bVar.f41978b = i;
+            bVar.f41977a = z6;
             bVar.b(obj);
             hashMap.put(str, bVar);
         }
@@ -112,26 +112,26 @@ public final class b {
     }
 
     public final void b(Object obj) {
-        switch (AbstractC5049e.d(this.f42007b)) {
+        switch (AbstractC5050e.d(this.f41978b)) {
             case 0:
             case 7:
-                this.f42008c = ((Integer) obj).intValue();
+                this.f41979c = ((Integer) obj).intValue();
                 break;
             case 1:
-                this.f42009d = ((Float) obj).floatValue();
+                this.f41980d = ((Float) obj).floatValue();
                 break;
             case 2:
             case 3:
-                this.f42012g = ((Integer) obj).intValue();
+                this.f41983g = ((Integer) obj).intValue();
                 break;
             case 4:
-                this.f42010e = (String) obj;
+                this.f41981e = (String) obj;
                 break;
             case 5:
-                this.f42011f = ((Boolean) obj).booleanValue();
+                this.f41982f = ((Boolean) obj).booleanValue();
                 break;
             case 6:
-                this.f42009d = ((Float) obj).floatValue();
+                this.f41980d = ((Float) obj).floatValue();
                 break;
         }
     }

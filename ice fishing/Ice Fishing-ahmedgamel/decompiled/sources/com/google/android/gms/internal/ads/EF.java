@@ -6,48 +6,48 @@ import java.security.GeneralSecurityException;
 public abstract class EF {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final C3504lG f24570a;
+    public static final C3527lG f25331a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final C3396jG f24571b;
+    public static final C3419jG f25332b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final TF f24572c;
+    public static final TF f25333c;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final RF f24573d;
+    public static final RF f25334d;
 
     static {
-        C3240gK a9 = DG.a("type.googleapis.com/google.crypto.tink.XChaCha20Poly1305Key");
-        f24570a = new C3504lG(C3395jF.class, C3880sF.f33931C);
-        f24571b = new C3396jG(a9, C3880sF.f33956z);
-        f24572c = new TF(C3289hF.class, C3880sF.f33929A);
-        f24573d = new RF(a9, C3880sF.f33930B);
+        C3263gK a9 = DG.a("type.googleapis.com/google.crypto.tink.XChaCha20Poly1305Key");
+        f25331a = new C3527lG(C3418jF.class, C3903sF.f34699C);
+        f25332b = new C3419jG(a9, C3903sF.f34724z);
+        f25333c = new TF(C3312hF.class, C3903sF.f34697A);
+        f25334d = new RF(a9, C3903sF.f34698B);
     }
 
-    public static C3933tE a(C3879sE c3879sE) {
-        if (c3879sE.equals(C3879sE.f33918m)) {
-            return C3933tE.f34230d;
+    public static C3956tE a(C3902sE c3902sE) {
+        if (c3902sE.equals(C3902sE.f34686m)) {
+            return C3956tE.f35016d;
         }
-        if (c3879sE.equals(C3879sE.f33919n)) {
-            return C3933tE.f34233g;
+        if (c3902sE.equals(C3902sE.f34687n)) {
+            return C3956tE.f35019g;
         }
-        if (c3879sE.equals(C3879sE.f33920o)) {
-            return C3933tE.f34232f;
+        if (c3902sE.equals(C3902sE.f34688o)) {
+            return C3956tE.f35018f;
         }
-        throw new GeneralSecurityException("Unable to serialize variant: ".concat(c3879sE.f33928b));
+        throw new GeneralSecurityException("Unable to serialize variant: ".concat(c3902sE.f34696b));
     }
 
-    public static C3879sE b(C3933tE c3933tE) {
-        if (c3933tE == C3933tE.f34230d) {
-            return C3879sE.f33918m;
+    public static C3902sE b(C3956tE c3956tE) {
+        if (c3956tE == C3956tE.f35016d) {
+            return C3902sE.f34686m;
         }
-        if (c3933tE == C3933tE.f34233g || c3933tE == C3933tE.f34231e) {
-            return C3879sE.f33919n;
+        if (c3956tE == C3956tE.f35019g || c3956tE == C3956tE.f35017e) {
+            return C3902sE.f34687n;
         }
-        if (c3933tE == C3933tE.f34232f) {
-            return C3879sE.f33920o;
+        if (c3956tE == C3956tE.f35018f) {
+            return C3902sE.f34688o;
         }
-        throw new GeneralSecurityException("Unable to parse OutputPrefixType: ".concat(c3933tE.f34252b));
+        throw new GeneralSecurityException("Unable to parse OutputPrefixType: ".concat(c3956tE.f35038b));
     }
 }

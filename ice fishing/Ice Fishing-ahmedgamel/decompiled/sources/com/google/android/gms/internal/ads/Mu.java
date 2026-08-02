@@ -8,5 +8,5 @@ public interface Mu {
 
     void o(Ju ju, String str);
 
-    void x(Ju ju, String str);
+    void w(Ju ju, String str);
 }

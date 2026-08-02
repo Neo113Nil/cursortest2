@@ -4,13 +4,13 @@ package L7;
 public abstract class e {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final d f1758n = new d();
+    public static final d f1789n = new d();
 
     /* renamed from: u, reason: collision with root package name */
-    public static final a f1759u;
+    public static final a f1790u;
 
     static {
-        Integer num = F7.a.f994a;
-        f1759u = (num == null || num.intValue() >= 34) ? new M7.a() : new c();
+        Integer num = F7.a.f1020a;
+        f1790u = (num == null || num.intValue() >= 34) ? new M7.a() : new c();
     }
 }

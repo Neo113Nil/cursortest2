@@ -1,8 +1,8 @@
 package com.google.firebase.provider;
 
-import O3.a;
-import O3.g;
-import P2.w;
+import Q3.a;
+import Q3.g;
+import R2.w;
 import android.content.ContentProvider;
 import android.content.ContentValues;
 import android.content.Context;
@@ -17,10 +17,10 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class FirebaseInitProvider extends ContentProvider {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final a f36203n = new a(System.currentTimeMillis(), SystemClock.elapsedRealtime(), SystemClock.uptimeMillis());
+    public static final a f36970n = new a(System.currentTimeMillis(), SystemClock.elapsedRealtime(), SystemClock.uptimeMillis());
 
     /* renamed from: u, reason: collision with root package name */
-    public static final AtomicBoolean f36204u = new AtomicBoolean(false);
+    public static final AtomicBoolean f36971u = new AtomicBoolean(false);
 
     @Override // android.content.ContentProvider
     public final void attachInfo(Context context, ProviderInfo providerInfo) {
@@ -48,7 +48,7 @@ public class FirebaseInitProvider extends ContentProvider {
 
     @Override // android.content.ContentProvider
     public final boolean onCreate() {
-        AtomicBoolean atomicBoolean = f36204u;
+        AtomicBoolean atomicBoolean = f36971u;
         try {
             atomicBoolean.set(true);
             if (g.g(getContext()) == null) {

@@ -6,18 +6,18 @@ public abstract class J4 {
 
     public static J3 A00(int i, long[] jArr, int[] iArr, long j6) {
         int chunkSamplesRemaining = 8192 / i;
-        int i6 = 0;
-        for (int i9 : iArr) {
-            i6 += C5C.A05(i9, chunkSamplesRemaining);
+        int i4 = 0;
+        for (int i6 : iArr) {
+            i4 += C5C.A05(i6, chunkSamplesRemaining);
         }
-        long[] jArr2 = new long[i6];
-        int[] iArr2 = new int[i6];
+        long[] jArr2 = new long[i4];
+        int[] iArr2 = new int[i4];
         int originalSampleIndex = 0;
-        long[] timestamps = new long[i6];
-        int[] flags = new int[i6];
-        int i10 = 0;
+        long[] timestamps = new long[i4];
+        int[] flags = new int[i4];
+        int i9 = 0;
         int bufferSampleCount = 0;
-        int i11 = 0;
+        int i10 = 0;
         String[] strArr = A00;
         String str = strArr[2];
         String str2 = strArr[3];
@@ -36,8 +36,8 @@ public abstract class J4 {
                     break;
                 }
                 A00[5] = "uTdlUcyBkPhiZ9U2ydDZL";
-                if (i11 < rechunkedSampleCount) {
-                    int rechunkedSampleCount2 = iArr[i11];
+                if (i10 < rechunkedSampleCount) {
+                    int rechunkedSampleCount2 = iArr[i10];
                     int maxSampleCount3 = A00[5].length();
                     if (maxSampleCount3 == 5) {
                         throw new RuntimeException();
@@ -45,22 +45,22 @@ public abstract class J4 {
                     String[] strArr4 = A00;
                     strArr4[2] = "PmQbGcH";
                     strArr4[3] = "fT2ewQCR49";
-                    long j9 = jArr[i11];
+                    long j9 = jArr[i10];
                     while (rechunkedSampleCount2 > 0) {
                         int maximumSize = Math.min(chunkSamplesRemaining, rechunkedSampleCount2);
                         jArr2[bufferSampleCount] = j9;
                         iArr2[bufferSampleCount] = i * maximumSize;
                         originalSampleIndex = Math.max(originalSampleIndex, iArr2[bufferSampleCount]);
-                        timestamps[bufferSampleCount] = i10 * j6;
+                        timestamps[bufferSampleCount] = i9 * j6;
                         flags[bufferSampleCount] = 1;
                         j9 += iArr2[bufferSampleCount];
-                        i10 += maximumSize;
+                        i9 += maximumSize;
                         rechunkedSampleCount2 -= maximumSize;
                         bufferSampleCount++;
                     }
-                    i11++;
+                    i10++;
                 } else {
-                    return new J3(jArr2, iArr2, originalSampleIndex, timestamps, flags, j6 * i10);
+                    return new J3(jArr2, iArr2, originalSampleIndex, timestamps, flags, j6 * i9);
                 }
             }
         }

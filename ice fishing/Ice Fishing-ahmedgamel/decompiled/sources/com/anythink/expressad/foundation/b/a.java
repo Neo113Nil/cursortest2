@@ -11,64 +11,64 @@ import org.json.JSONObject;
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f18498a = "a";
+    public static final String f19285a = "a";
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile a f18499b;
+    private static volatile a f19286b;
 
     /* renamed from: c, reason: collision with root package name */
-    private Context f18500c;
+    private Context f19287c;
 
     /* renamed from: d, reason: collision with root package name */
-    private String f18501d;
+    private String f19288d;
 
     /* renamed from: e, reason: collision with root package name */
-    private String f18502e;
+    private String f19289e;
 
     /* renamed from: g, reason: collision with root package name */
-    private JSONObject f18504g;
+    private JSONObject f19291g;
     private boolean i;
 
     /* renamed from: j, reason: collision with root package name */
-    private WeakReference<Context> f18506j;
+    private WeakReference<Context> f19293j;
 
     /* renamed from: k, reason: collision with root package name */
-    private WeakReference<Activity> f18507k;
+    private WeakReference<Activity> f19294k;
 
     /* renamed from: l, reason: collision with root package name */
-    private String f18508l;
+    private String f19295l;
 
     /* renamed from: f, reason: collision with root package name */
-    private int f18503f = 0;
+    private int f19290f = 0;
 
     /* renamed from: h, reason: collision with root package name */
-    private boolean f18505h = false;
+    private boolean f19292h = false;
 
     private a() {
     }
 
     public static a c() {
-        if (f18499b == null) {
+        if (f19286b == null) {
             synchronized (a.class) {
                 try {
-                    if (f18499b == null) {
-                        f18499b = new a();
+                    if (f19286b == null) {
+                        f19286b = new a();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f18499b;
+        return f19286b;
     }
 
     public final void a(String str) {
-        this.f18508l = str;
+        this.f19295l = str;
     }
 
     public final String b() {
         try {
-            Context context = this.f18500c;
+            Context context = this.f19287c;
             if (context != null) {
                 return context.getPackageName();
             }
@@ -80,12 +80,12 @@ public class a {
     }
 
     public final void d() {
-        if (this.f18505h) {
+        if (this.f19292h) {
             return;
         }
         try {
             JSONObject jSONObject = new JSONObject();
-            this.f18504g = jSONObject;
+            this.f19291g = jSONObject;
             jSONObject.put("webgl", 0);
         } catch (JSONException e9) {
             e9.printStackTrace();
@@ -93,19 +93,19 @@ public class a {
     }
 
     public final Context e() {
-        return this.f18500c;
+        return this.f19287c;
     }
 
     public final String f() {
-        return !TextUtils.isEmpty(this.f18501d) ? this.f18501d : "";
+        return !TextUtils.isEmpty(this.f19288d) ? this.f19288d : "";
     }
 
     public final String g() {
-        return !TextUtils.isEmpty(this.f18502e) ? this.f18502e : "";
+        return !TextUtils.isEmpty(this.f19289e) ? this.f19289e : "";
     }
 
     public final Context h() {
-        WeakReference<Context> weakReference = this.f18506j;
+        WeakReference<Context> weakReference = this.f19293j;
         if (weakReference == null) {
             return null;
         }
@@ -113,38 +113,38 @@ public class a {
     }
 
     public final int i() {
-        return this.f18503f;
+        return this.f19290f;
     }
 
     public final JSONObject j() {
-        return this.f18504g;
+        return this.f19291g;
     }
 
     public final String a() {
-        return this.f18508l;
+        return this.f19295l;
     }
 
     public final void a(Context context) {
-        this.f18500c = context;
+        this.f19287c = context;
     }
 
     private void a(int i) {
-        this.f18503f = i;
+        this.f19290f = i;
     }
 
     public final void b(String str) {
-        this.f18501d = str;
+        this.f19288d = str;
     }
 
     private void a(JSONObject jSONObject) {
-        this.f18504g = jSONObject;
+        this.f19291g = jSONObject;
     }
 
     public final void b(Context context) {
-        this.f18506j = new WeakReference<>(context);
+        this.f19293j = new WeakReference<>(context);
     }
 
     public final void c(String str) {
-        this.f18502e = str;
+        this.f19289e = str;
     }
 }

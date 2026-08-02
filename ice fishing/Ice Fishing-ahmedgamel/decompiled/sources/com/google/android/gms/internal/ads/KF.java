@@ -7,42 +7,42 @@ import java.math.BigInteger;
 public abstract class KF {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final long[] f25882a;
+    public static final long[] f26634a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final long[] f25883b;
+    public static final long[] f26635b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final long[] f25884c;
+    public static final long[] f26636c;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final IF[][] f25885d;
+    public static final IF[][] f26637d;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final IF[] f25886e;
+    public static final IF[] f26638e;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final BigInteger f25887f;
+    public static final BigInteger f26639f;
 
     /* renamed from: g, reason: collision with root package name */
-    public static final BigInteger f25888g;
+    public static final BigInteger f26640g;
 
     /* renamed from: h, reason: collision with root package name */
-    public static final BigInteger f25889h;
+    public static final BigInteger f26641h;
 
     static {
-        BigInteger subtract = BigInteger.valueOf(2L).pow(com.anythink.basead.exoplayer.k.p.f8473b).subtract(BigInteger.valueOf(19L));
-        f25887f = subtract;
+        BigInteger subtract = BigInteger.valueOf(2L).pow(com.anythink.basead.exoplayer.k.p.f9259b).subtract(BigInteger.valueOf(19L));
+        f26639f = subtract;
         BigInteger mod = BigInteger.valueOf(-121665L).multiply(BigInteger.valueOf(121666L).modInverse(subtract)).mod(subtract);
-        f25888g = mod;
+        f26640g = mod;
         BigInteger mod2 = BigInteger.valueOf(2L).multiply(mod).mod(subtract);
-        f25889h = mod2;
+        f26641h = mod2;
         BigInteger valueOf = BigInteger.valueOf(2L);
         BigInteger bigInteger = BigInteger.ONE;
         BigInteger modPow = valueOf.modPow(subtract.subtract(bigInteger).divide(BigInteger.valueOf(4L)), subtract);
-        S0.c cVar = new S0.c(23, false);
+        S0.c cVar = new S0.c(26, false);
         BigInteger mod3 = BigInteger.valueOf(4L).multiply(BigInteger.valueOf(5L).modInverse(subtract)).mod(subtract);
-        cVar.f2776v = mod3;
+        cVar.f2903v = mod3;
         BigInteger multiply = mod3.pow(2).subtract(bigInteger).multiply(mod.multiply(mod3.pow(2)).add(bigInteger).modInverse(subtract));
         BigInteger modPow2 = multiply.modPow(subtract.add(BigInteger.valueOf(3L)).divide(BigInteger.valueOf(8L)), subtract);
         if (!modPow2.pow(2).subtract(multiply).mod(subtract).equals(BigInteger.ZERO)) {
@@ -51,39 +51,39 @@ public abstract class KF {
         if (modPow2.testBit(0)) {
             modPow2 = subtract.subtract(modPow2);
         }
-        cVar.f2775u = modPow2;
-        f25882a = AbstractC2968bG.N(b(mod));
-        f25883b = AbstractC2968bG.N(b(mod2));
-        f25884c = AbstractC2968bG.N(b(modPow));
-        f25885d = (IF[][]) Array.newInstance((Class<?>) IF.class, 32, 8);
+        cVar.f2902u = modPow2;
+        f26634a = AbstractC2991bG.N(b(mod));
+        f26635b = AbstractC2991bG.N(b(mod2));
+        f26636c = AbstractC2991bG.N(b(modPow));
+        f26637d = (IF[][]) Array.newInstance((Class<?>) IF.class, 32, 8);
         S0.c cVar2 = cVar;
         for (int i = 0; i < 32; i++) {
             S0.c cVar3 = cVar2;
-            for (int i6 = 0; i6 < 8; i6++) {
-                f25885d[i][i6] = c(cVar3);
+            for (int i4 = 0; i4 < 8; i4++) {
+                f26637d[i][i4] = c(cVar3);
                 cVar3 = a(cVar3, cVar2);
             }
-            for (int i9 = 0; i9 < 8; i9++) {
+            for (int i6 = 0; i6 < 8; i6++) {
                 cVar2 = a(cVar2, cVar2);
             }
         }
         S0.c a9 = a(cVar, cVar);
-        f25886e = new IF[8];
-        for (int i10 = 0; i10 < 8; i10++) {
-            f25886e[i10] = c(cVar);
+        f26638e = new IF[8];
+        for (int i9 = 0; i9 < 8; i9++) {
+            f26638e[i9] = c(cVar);
             cVar = a(cVar, a9);
         }
     }
 
     public static S0.c a(S0.c cVar, S0.c cVar2) {
-        S0.c cVar3 = new S0.c(23, false);
-        BigInteger multiply = f25888g.multiply(((BigInteger) cVar.f2775u).multiply((BigInteger) cVar2.f2775u).multiply((BigInteger) cVar.f2776v).multiply((BigInteger) cVar2.f2776v));
-        BigInteger bigInteger = f25887f;
+        S0.c cVar3 = new S0.c(26, false);
+        BigInteger multiply = f26640g.multiply(((BigInteger) cVar.f2902u).multiply((BigInteger) cVar2.f2902u).multiply((BigInteger) cVar.f2903v).multiply((BigInteger) cVar2.f2903v));
+        BigInteger bigInteger = f26639f;
         BigInteger mod = multiply.mod(bigInteger);
-        BigInteger add = ((BigInteger) cVar.f2775u).multiply((BigInteger) cVar2.f2776v).add(((BigInteger) cVar2.f2775u).multiply((BigInteger) cVar.f2776v));
+        BigInteger add = ((BigInteger) cVar.f2902u).multiply((BigInteger) cVar2.f2903v).add(((BigInteger) cVar2.f2902u).multiply((BigInteger) cVar.f2903v));
         BigInteger bigInteger2 = BigInteger.ONE;
-        cVar3.f2775u = add.multiply(bigInteger2.add(mod).modInverse(bigInteger)).mod(bigInteger);
-        cVar3.f2776v = ((BigInteger) cVar.f2776v).multiply((BigInteger) cVar2.f2776v).add(((BigInteger) cVar.f2775u).multiply((BigInteger) cVar2.f2775u)).multiply(bigInteger2.subtract(mod).modInverse(bigInteger)).mod(bigInteger);
+        cVar3.f2902u = add.multiply(bigInteger2.add(mod).modInverse(bigInteger)).mod(bigInteger);
+        cVar3.f2903v = ((BigInteger) cVar.f2903v).multiply((BigInteger) cVar2.f2903v).add(((BigInteger) cVar.f2902u).multiply((BigInteger) cVar2.f2902u)).multiply(bigInteger2.subtract(mod).modInverse(bigInteger)).mod(bigInteger);
         return cVar3;
     }
 
@@ -94,16 +94,16 @@ public abstract class KF {
         System.arraycopy(byteArray, 0, bArr, 32 - length, length);
         for (int i = 0; i < 16; i++) {
             byte b9 = bArr[i];
-            int i6 = 31 - i;
-            bArr[i] = bArr[i6];
-            bArr[i6] = b9;
+            int i4 = 31 - i;
+            bArr[i] = bArr[i4];
+            bArr[i4] = b9;
         }
         return bArr;
     }
 
     public static IF c(S0.c cVar) {
-        BigInteger add = ((BigInteger) cVar.f2776v).add((BigInteger) cVar.f2775u);
-        BigInteger bigInteger = f25887f;
-        return new IF(AbstractC2968bG.N(b(add.mod(bigInteger))), AbstractC2968bG.N(b(((BigInteger) cVar.f2776v).subtract((BigInteger) cVar.f2775u).mod(bigInteger))), AbstractC2968bG.N(b(f25889h.multiply((BigInteger) cVar.f2775u).multiply((BigInteger) cVar.f2776v).mod(bigInteger))));
+        BigInteger add = ((BigInteger) cVar.f2903v).add((BigInteger) cVar.f2902u);
+        BigInteger bigInteger = f26639f;
+        return new IF(AbstractC2991bG.N(b(add.mod(bigInteger))), AbstractC2991bG.N(b(((BigInteger) cVar.f2903v).subtract((BigInteger) cVar.f2902u).mod(bigInteger))), AbstractC2991bG.N(b(f26641h.multiply((BigInteger) cVar.f2902u).multiply((BigInteger) cVar.f2903v).mod(bigInteger))));
     }
 }

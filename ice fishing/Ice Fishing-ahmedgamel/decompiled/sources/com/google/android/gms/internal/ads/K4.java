@@ -6,97 +6,97 @@ import java.math.RoundingMode;
 public final class K4 implements J4 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final CQ f25841a;
+    public final FQ f26593a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final InterfaceC3543m1 f25842b;
+    public final InterfaceC3566m1 f26594b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final M4 f25843c;
+    public final M4 f26595c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final DP f25844d;
+    public final DP f26596d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final int f25845e;
+    public final int f26597e;
 
     /* renamed from: f, reason: collision with root package name */
-    public long f25846f;
+    public long f26598f;
 
     /* renamed from: g, reason: collision with root package name */
-    public int f25847g;
+    public int f26599g;
 
     /* renamed from: h, reason: collision with root package name */
-    public long f25848h;
+    public long f26600h;
 
-    public K4(CQ cq, InterfaceC3543m1 interfaceC3543m1, M4 m4, String str, int i) {
-        this.f25841a = cq;
-        this.f25842b = interfaceC3543m1;
-        this.f25843c = m4;
-        int i6 = m4.f26242d;
-        int i9 = m4.f26239a;
-        int i10 = (i6 * i9) / 8;
-        int i11 = m4.f26241c;
-        if (i11 != i10) {
-            throw U4.a(null, D.y.r(new StringBuilder(String.valueOf(i10).length() + 28 + String.valueOf(i11).length()), "Expected block size: ", i10, "; got: ", i11));
+    public K4(FQ fq, InterfaceC3566m1 interfaceC3566m1, M4 m42, String str, int i) {
+        this.f26593a = fq;
+        this.f26594b = interfaceC3566m1;
+        this.f26595c = m42;
+        int i4 = m42.f27033d;
+        int i6 = m42.f27030a;
+        int i9 = (i4 * i6) / 8;
+        int i10 = m42.f27032c;
+        if (i10 != i9) {
+            throw U4.a(null, D.x.o(new StringBuilder(String.valueOf(i9).length() + 28 + String.valueOf(i10).length()), "Expected block size: ", i9, "; got: ", i10));
         }
-        int i12 = m4.f26240b;
-        int i13 = i12 * i10;
-        int i14 = i13 * 8;
-        int max = Math.max(i10, i13 / 10);
-        this.f25845e = max;
-        C3299hP c3299hP = new C3299hP();
-        c3299hP.d("audio/wav");
-        c3299hP.e(str);
-        c3299hP.f30787h = i14;
-        c3299hP.i = i14;
-        c3299hP.f30793o = max;
-        c3299hP.f30772G = i9;
-        int i15 = m4.f26243e;
-        c3299hP.f30773H = i15 == 0 ? -1 : i15 << 2;
-        c3299hP.f30774I = i12;
-        c3299hP.J = i;
-        this.f25844d = new DP(c3299hP);
+        int i11 = m42.f27031b;
+        int i12 = i11 * i9;
+        int i13 = i12 * 8;
+        int max = Math.max(i9, i12 / 10);
+        this.f26597e = max;
+        C3322hP c3322hP = new C3322hP();
+        c3322hP.d("audio/wav");
+        c3322hP.e(str);
+        c3322hP.f31553h = i13;
+        c3322hP.i = i13;
+        c3322hP.f31559o = max;
+        c3322hP.f31538G = i6;
+        int i14 = m42.f27034e;
+        c3322hP.f31539H = i14 == 0 ? -1 : i14 << 2;
+        c3322hP.f31540I = i11;
+        c3322hP.J = i;
+        this.f26596d = new DP(c3322hP);
     }
 
     @Override // com.google.android.gms.internal.ads.J4
     public final boolean a(K0 k02, long j6) {
         int i;
-        int i6;
+        int i4;
         long j9 = j6;
-        while (j9 > 0 && (i = this.f25847g) < (i6 = this.f25845e)) {
-            int d2 = this.f25842b.d(k02, (int) Math.min(i6 - i, j9), true);
-            if (d2 == -1) {
+        while (j9 > 0 && (i = this.f26599g) < (i4 = this.f26597e)) {
+            int d9 = this.f26594b.d(k02, (int) Math.min(i4 - i, j9), true);
+            if (d9 == -1) {
                 j9 = 0;
             } else {
-                this.f25847g += d2;
-                j9 -= d2;
+                this.f26599g += d9;
+                j9 -= d9;
             }
         }
-        int i9 = this.f25847g;
-        int i10 = this.f25843c.f26241c;
-        int i11 = i9 / i10;
-        if (i11 > 0) {
-            long w6 = this.f25846f + AbstractC3159eu.w(this.f25848h, 1000000L, r2.f26240b, RoundingMode.DOWN);
-            int i12 = i11 * i10;
-            int i13 = this.f25847g - i12;
-            this.f25842b.c(w6, 1, i12, i13, null);
-            this.f25848h += i11;
-            this.f25847g = i13;
+        int i6 = this.f26599g;
+        int i9 = this.f26595c.f27032c;
+        int i10 = i6 / i9;
+        if (i10 > 0) {
+            long w3 = this.f26598f + AbstractC3182eu.w(this.f26600h, 1000000L, r2.f27031b, RoundingMode.DOWN);
+            int i11 = i10 * i9;
+            int i12 = this.f26599g - i11;
+            this.f26594b.c(w3, 1, i11, i12, null);
+            this.f26600h += i10;
+            this.f26599g = i12;
         }
         return j9 <= 0;
     }
 
     @Override // com.google.android.gms.internal.ads.J4
     public final void b(long j6) {
-        this.f25846f = j6;
-        this.f25847g = 0;
-        this.f25848h = 0L;
+        this.f26598f = j6;
+        this.f26599g = 0;
+        this.f26600h = 0L;
     }
 
     @Override // com.google.android.gms.internal.ads.J4
     public final void c(int i, long j6) {
-        this.f25841a.D(new N4(this.f25843c, 1, i, j6));
-        this.f25842b.e(this.f25844d);
+        this.f26593a.D(new N4(this.f26595c, 1, i, j6));
+        this.f26594b.e(this.f26596d);
     }
 }

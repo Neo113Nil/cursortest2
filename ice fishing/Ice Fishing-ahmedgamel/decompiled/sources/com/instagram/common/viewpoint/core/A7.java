@@ -3,37 +3,37 @@ package com.instagram.common.viewpoint.core;
 import java.nio.ByteBuffer;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class A7 extends AbstractC2285oQ {
+public final class A7 extends AbstractC2305oQ {
     public int[] A00;
     public int[] A01;
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC2285oQ
-    public final C06083i A09(C06083i c06083i) throws C06093j {
+    @Override // com.instagram.common.viewpoint.core.AbstractC2305oQ
+    public final C06283i A09(C06283i c06283i) throws C06293j {
         int[] iArr = this.A01;
         if (iArr == null) {
-            return C06083i.A05;
+            return C06283i.A05;
         }
-        if (c06083i.A02 == 2) {
-            int i = c06083i.A01 != iArr.length ? 1 : 0;
-            int i6 = 0;
-            while (i6 < iArr.length) {
-                int i9 = iArr[i6];
-                if (i9 < c06083i.A01) {
-                    i |= i9 != i6 ? 1 : 0;
-                    i6++;
+        if (c06283i.A02 == 2) {
+            int i = c06283i.A01 != iArr.length ? 1 : 0;
+            int i4 = 0;
+            while (i4 < iArr.length) {
+                int i6 = iArr[i4];
+                if (i6 < c06283i.A01) {
+                    i |= i6 != i4 ? 1 : 0;
+                    i4++;
                 } else {
-                    throw new C06093j(c06083i);
+                    throw new C06293j(c06283i);
                 }
             }
             if (i != 0) {
-                return new C06083i(c06083i.A03, iArr.length, 2);
+                return new C06283i(c06283i.A03, iArr.length, 2);
             }
-            return C06083i.A05;
+            return C06283i.A05;
         }
-        throw new C06093j(c06083i);
+        throw new C06293j(c06283i);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC2285oQ
+    @Override // com.instagram.common.viewpoint.core.AbstractC2305oQ
     public final void A0A() {
         this.A00 = this.A01;
     }
@@ -42,9 +42,9 @@ public final class A7 extends AbstractC2285oQ {
         this.A01 = iArr;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC06103k
+    @Override // com.instagram.common.viewpoint.core.InterfaceC06303k
     public final void AHH(ByteBuffer byteBuffer) {
-        int[] iArr = (int[]) AbstractC06243y.A01(this.A00);
+        int[] iArr = (int[]) AbstractC06443y.A01(this.A00);
         int position = byteBuffer.position();
         int outputSize = byteBuffer.limit();
         int position2 = outputSize - position;

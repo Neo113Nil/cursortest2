@@ -8,9 +8,9 @@ public interface h {
 
     void a(String str);
 
-    void a(boolean z3, int i);
+    void a(boolean z6, int i);
 
-    void a(boolean z3, com.anythink.expressad.videocommon.c.c cVar);
+    void a(boolean z6, com.anythink.expressad.videocommon.c.c cVar);
 
     void b();
 

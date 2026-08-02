@@ -4,17 +4,17 @@ package com.google.android.gms.internal.ads;
 public final class N2 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f26389a;
+    public final long f27174a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f26390b;
+    public final boolean f27175b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f26391c;
+    public final int f27176c;
 
-    public N2(int i, long j6, boolean z3) {
-        this.f26389a = j6;
-        this.f26390b = z3;
-        this.f26391c = i;
+    public N2(int i, long j6, boolean z6) {
+        this.f27174a = j6;
+        this.f27175b = z6;
+        this.f27176c = i;
     }
 }

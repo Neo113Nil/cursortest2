@@ -23,50 +23,50 @@ public class RedPacketView extends View {
     public static final String TAG = "RedPacketView";
 
     /* renamed from: e, reason: collision with root package name */
-    private static final int f10522e = 400;
+    private static final int f11308e = 400;
 
     /* renamed from: a, reason: collision with root package name */
-    protected double f10523a;
+    protected double f11309a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected double f10524b;
+    protected double f11310b;
 
     /* renamed from: c, reason: collision with root package name */
-    protected final List<a> f10525c;
+    protected final List<a> f11311c;
 
     /* renamed from: d, reason: collision with root package name */
-    Random f10526d;
+    Random f11312d;
 
     /* renamed from: f, reason: collision with root package name */
-    private final Matrix f10527f;
+    private final Matrix f11313f;
 
     /* renamed from: g, reason: collision with root package name */
-    private final Map<Integer, Float> f10528g;
+    private final Map<Integer, Float> f11314g;
 
     /* renamed from: h, reason: collision with root package name */
-    private List<Integer> f10529h;
+    private List<Integer> f11315h;
     private Paint i;
 
     /* renamed from: j, reason: collision with root package name */
-    private int f10530j;
+    private int f11316j;
 
     /* renamed from: k, reason: collision with root package name */
-    private int f10531k;
+    private int f11317k;
 
     /* renamed from: l, reason: collision with root package name */
-    private int f10532l;
+    private int f11318l;
 
     /* renamed from: m, reason: collision with root package name */
-    private int f10533m;
+    private int f11319m;
 
     /* renamed from: n, reason: collision with root package name */
-    private int f10534n;
+    private int f11320n;
 
     /* renamed from: o, reason: collision with root package name */
-    private Bitmap f10535o;
+    private Bitmap f11321o;
 
     /* renamed from: p, reason: collision with root package name */
-    private boolean f10536p;
+    private boolean f11322p;
 
     public RedPacketView(Context context) {
         this(context, null);
@@ -79,98 +79,98 @@ public class RedPacketView extends View {
         this.i.setDither(true);
         this.i.setAntiAlias(true);
         setLayerType(2, null);
-        this.f10526d = new Random(System.currentTimeMillis());
+        this.f11312d = new Random(System.currentTimeMillis());
     }
 
     private a b(Bitmap bitmap) {
-        return new a(getContext(), bitmap, this.f10523a, this.f10524b, this.f10533m);
+        return new a(getContext(), bitmap, this.f11309a, this.f11310b, this.f11319m);
     }
 
     public void initRedPacketList(Bitmap bitmap) {
-        Float f3;
-        this.f10535o = bitmap;
-        if (this.f10536p) {
+        Float f2;
+        this.f11321o = bitmap;
+        if (this.f11322p) {
             return;
         }
-        this.f10536p = true;
+        this.f11322p = true;
         if (bitmap == null) {
             try {
-                this.f10535o = BitmapFactory.decodeResource(getResources(), q.a(getContext(), "myoffer_icon_red_packet", k.f19632c));
+                this.f11321o = BitmapFactory.decodeResource(getResources(), q.a(getContext(), "myoffer_icon_red_packet", k.f20419c));
             } catch (Exception e9) {
                 Log.e(TAG, "initRedPacketList failed: " + e9.getMessage());
             }
         }
-        if (this.f10535o == null) {
+        if (this.f11321o == null) {
             Log.e(TAG, "redPacketBitmap is null, decodeResource failed.");
             return;
         }
-        int height = (int) (this.f10534n / (((this.f10533m * this.f10524b) * r13.getHeight()) / r13.getWidth()));
-        this.f10532l = height;
-        this.f10531k = 3;
+        int height = (int) (this.f11320n / (((this.f11319m * this.f11310b) * r13.getHeight()) / r13.getWidth()));
+        this.f11318l = height;
+        this.f11317k = 3;
         int i = (height * 12) / 9;
-        this.f10530j = i;
+        this.f11316j = i;
         if (i <= 0 || height <= 0) {
             return;
         }
-        this.f10525c.clear();
-        for (int i6 = 0; i6 < this.f10530j; i6++) {
-            a aVar = new a(getContext(), this.f10535o, this.f10523a, this.f10524b, this.f10533m);
+        this.f11311c.clear();
+        for (int i4 = 0; i4 < this.f11316j; i4++) {
+            a aVar = new a(getContext(), this.f11321o, this.f11309a, this.f11310b, this.f11319m);
             if (aVar.b() > 0 && aVar.a() > 0) {
-                int i9 = i6 % 4;
-                if (i9 == 0) {
-                    i9 = (i6 / 4) * 9;
-                } else if (i9 == 1) {
-                    i9 = ((i6 / 4) * 9) + 2;
-                } else if (i9 == 2) {
-                    i9 = ((i6 / 4) * 9) + 4;
-                } else if (i9 == 3) {
-                    i9 = ((i6 / 4) * 9) + 8;
+                int i6 = i4 % 4;
+                if (i6 == 0) {
+                    i6 = (i4 / 4) * 9;
+                } else if (i6 == 1) {
+                    i6 = ((i4 / 4) * 9) + 2;
+                } else if (i6 == 2) {
+                    i6 = ((i4 / 4) * 9) + 4;
+                } else if (i6 == 3) {
+                    i6 = ((i4 / 4) * 9) + 8;
                 }
-                int i10 = this.f10531k;
-                int i11 = i9 / i10;
-                int i12 = i9 % i10;
-                int i13 = this.f10533m / i10;
-                int i14 = this.f10534n / this.f10532l;
+                int i9 = this.f11317k;
+                int i10 = i6 / i9;
+                int i11 = i6 % i9;
+                int i12 = this.f11319m / i9;
+                int i13 = this.f11320n / this.f11318l;
                 int b9 = aVar.b();
                 int a9 = aVar.a();
-                aVar.f10537a = (i12 * i13) + ((i13 - b9) >> 1);
-                int nextInt = this.f10526d.nextInt(21) - 10;
-                int nextInt2 = this.f10526d.nextInt(a9 / 3) + (a9 / 3);
-                if (i11 > 0 && (f3 = this.f10528g.get(Integer.valueOf(i9 - this.f10531k))) != null) {
-                    float floatValue = f3.floatValue() + nextInt2 + nextInt;
-                    aVar.f10538b = floatValue;
-                    if ((this.f10534n - floatValue) - b() < a9) {
-                        if (this.f10529h == null) {
-                            this.f10529h = new ArrayList();
+                aVar.f11323a = (i11 * i12) + ((i12 - b9) >> 1);
+                int nextInt = this.f11312d.nextInt(21) - 10;
+                int nextInt2 = this.f11312d.nextInt(a9 / 3) + (a9 / 3);
+                if (i10 > 0 && (f2 = this.f11314g.get(Integer.valueOf(i6 - this.f11317k))) != null) {
+                    float floatValue = f2.floatValue() + nextInt2 + nextInt;
+                    aVar.f11324b = floatValue;
+                    if ((this.f11320n - floatValue) - b() < a9) {
+                        if (this.f11315h == null) {
+                            this.f11315h = new ArrayList();
                         }
-                        this.f10529h.add(Integer.valueOf(i6));
+                        this.f11315h.add(Integer.valueOf(i4));
                     }
                 }
-                if (aVar.f10538b == 0.0f) {
-                    aVar.f10538b = (i11 * i14) + nextInt2 + nextInt;
+                if (aVar.f11324b == 0.0f) {
+                    aVar.f11324b = (i10 * i13) + nextInt2 + nextInt;
                 }
                 float f9 = a9;
-                if (aVar.f10538b + f9 > this.f10534n) {
-                    aVar.f10538b = (r7 - a9) - b();
+                if (aVar.f11324b + f9 > this.f11320n) {
+                    aVar.f11324b = (r7 - a9) - b();
                 }
-                if (aVar.f10538b < 0.0f) {
-                    aVar.f10538b = a9 >> 1;
+                if (aVar.f11324b < 0.0f) {
+                    aVar.f11324b = a9 >> 1;
                 }
-                this.f10528g.put(Integer.valueOf(i9), Float.valueOf(aVar.f10538b + f9));
+                this.f11314g.put(Integer.valueOf(i6), Float.valueOf(aVar.f11324b + f9));
             }
-            this.f10525c.add(aVar);
+            this.f11311c.add(aVar);
         }
-        List<Integer> list = this.f10529h;
+        List<Integer> list = this.f11315h;
         if (list != null && list.size() > 0) {
-            Iterator<Integer> it = this.f10529h.iterator();
+            Iterator<Integer> it = this.f11315h.iterator();
             while (it.hasNext()) {
                 int intValue = it.next().intValue();
-                if (intValue >= 0 && intValue < this.f10525c.size()) {
-                    a aVar2 = this.f10525c.get(intValue);
+                if (intValue >= 0 && intValue < this.f11311c.size()) {
+                    a aVar2 = this.f11311c.get(intValue);
                     if (aVar2 != null) {
                         aVar2.d();
                     }
-                    this.f10525c.remove(intValue);
+                    this.f11311c.remove(intValue);
                 }
             }
         }
@@ -182,39 +182,39 @@ public class RedPacketView extends View {
         a next;
         Bitmap c9;
         super.onDraw(canvas);
-        Iterator<a> it = this.f10525c.iterator();
+        Iterator<a> it = this.f11311c.iterator();
         while (it.hasNext() && (c9 = (next = it.next()).c()) != null) {
-            this.f10527f.setTranslate((-next.b()) >> 1, (-next.a()) >> 1);
-            this.f10527f.postRotate(next.e());
-            this.f10527f.postTranslate((next.b() >> 1) + next.f10537a, (next.a() >> 1) + next.f10538b);
-            canvas.drawBitmap(c9, this.f10527f, this.i);
+            this.f11313f.setTranslate((-next.b()) >> 1, (-next.a()) >> 1);
+            this.f11313f.postRotate(next.e());
+            this.f11313f.postTranslate((next.b() >> 1) + next.f11323a, (next.a() >> 1) + next.f11324b);
+            canvas.drawBitmap(c9, this.f11313f, this.i);
         }
     }
 
     @Override // android.view.View
-    public void onMeasure(int i, int i6) {
-        super.onMeasure(i, i6);
-        this.f10533m = getMeasuredWidth();
-        this.f10534n = getMeasuredHeight();
+    public void onMeasure(int i, int i4) {
+        super.onMeasure(i, i4);
+        this.f11319m = getMeasuredWidth();
+        this.f11320n = getMeasuredHeight();
     }
 
     public void release() {
-        this.f10536p = false;
+        this.f11322p = false;
         try {
-            Bitmap bitmap = this.f10535o;
+            Bitmap bitmap = this.f11321o;
             if (bitmap != null && !bitmap.isRecycled()) {
-                this.f10535o.recycle();
+                this.f11321o.recycle();
             }
-            Iterator<a> it = this.f10525c.iterator();
+            Iterator<a> it = this.f11311c.iterator();
             while (it.hasNext()) {
                 it.next().d();
             }
-            this.f10525c.clear();
-            Map<Integer, Float> map = this.f10528g;
+            this.f11311c.clear();
+            Map<Integer, Float> map = this.f11314g;
             if (map != null) {
                 map.clear();
             }
-            List<Integer> list = this.f10529h;
+            List<Integer> list = this.f11315h;
             if (list != null) {
                 list.clear();
             }
@@ -233,99 +233,99 @@ public class RedPacketView extends View {
 
     public RedPacketView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f10523a = 0.15d;
-        this.f10524b = 0.2d;
-        this.f10527f = new Matrix();
-        this.f10525c = new ArrayList();
-        this.f10528g = new HashMap();
+        this.f11309a = 0.15d;
+        this.f11310b = 0.2d;
+        this.f11313f = new Matrix();
+        this.f11311c = new ArrayList();
+        this.f11314g = new HashMap();
         Paint paint = new Paint();
         this.i = paint;
         paint.setFilterBitmap(true);
         this.i.setDither(true);
         this.i.setAntiAlias(true);
         setLayerType(2, null);
-        this.f10526d = new Random(System.currentTimeMillis());
+        this.f11312d = new Random(System.currentTimeMillis());
     }
 
     private void a(Canvas canvas) {
         a next;
         Bitmap c9;
-        Iterator<a> it = this.f10525c.iterator();
+        Iterator<a> it = this.f11311c.iterator();
         while (it.hasNext() && (c9 = (next = it.next()).c()) != null) {
-            this.f10527f.setTranslate((-next.b()) >> 1, (-next.a()) >> 1);
-            this.f10527f.postRotate(next.e());
-            this.f10527f.postTranslate((next.b() >> 1) + next.f10537a, (next.a() >> 1) + next.f10538b);
-            canvas.drawBitmap(c9, this.f10527f, this.i);
+            this.f11313f.setTranslate((-next.b()) >> 1, (-next.a()) >> 1);
+            this.f11313f.postRotate(next.e());
+            this.f11313f.postTranslate((next.b() >> 1) + next.f11323a, (next.a() >> 1) + next.f11324b);
+            canvas.drawBitmap(c9, this.f11313f, this.i);
         }
     }
 
     private void a(Bitmap bitmap) {
-        int height = (int) (this.f10534n / (((this.f10533m * this.f10524b) * bitmap.getHeight()) / bitmap.getWidth()));
-        this.f10532l = height;
-        this.f10531k = 3;
-        this.f10530j = (height * 12) / 9;
+        int height = (int) (this.f11320n / (((this.f11319m * this.f11310b) * bitmap.getHeight()) / bitmap.getWidth()));
+        this.f11318l = height;
+        this.f11317k = 3;
+        this.f11316j = (height * 12) / 9;
     }
 
     private static int a(int i) {
-        int i6 = i % 4;
-        if (i6 == 0) {
+        int i4 = i % 4;
+        if (i4 == 0) {
             return (i / 4) * 9;
         }
-        if (i6 == 1) {
+        if (i4 == 1) {
             return ((i / 4) * 9) + 2;
         }
-        if (i6 == 2) {
+        if (i4 == 2) {
             return ((i / 4) * 9) + 4;
         }
-        return i6 == 3 ? ((i / 4) * 9) + 8 : i6;
+        return i4 == 3 ? ((i / 4) * 9) + 8 : i4;
     }
 
     private void a(a aVar, int i) {
-        Float f3;
+        Float f2;
         if (aVar.b() <= 0 || aVar.a() <= 0) {
             return;
         }
-        int i6 = i % 4;
-        if (i6 == 0) {
-            i6 = (i / 4) * 9;
-        } else if (i6 == 1) {
-            i6 = ((i / 4) * 9) + 2;
-        } else if (i6 == 2) {
-            i6 = ((i / 4) * 9) + 4;
-        } else if (i6 == 3) {
-            i6 = ((i / 4) * 9) + 8;
+        int i4 = i % 4;
+        if (i4 == 0) {
+            i4 = (i / 4) * 9;
+        } else if (i4 == 1) {
+            i4 = ((i / 4) * 9) + 2;
+        } else if (i4 == 2) {
+            i4 = ((i / 4) * 9) + 4;
+        } else if (i4 == 3) {
+            i4 = ((i / 4) * 9) + 8;
         }
-        int i9 = this.f10531k;
-        int i10 = i6 / i9;
-        int i11 = i6 % i9;
-        int i12 = this.f10533m / i9;
-        int i13 = this.f10534n / this.f10532l;
+        int i6 = this.f11317k;
+        int i9 = i4 / i6;
+        int i10 = i4 % i6;
+        int i11 = this.f11319m / i6;
+        int i12 = this.f11320n / this.f11318l;
         int b9 = aVar.b();
         int a9 = aVar.a();
-        aVar.f10537a = (i11 * i12) + ((i12 - b9) >> 1);
-        int nextInt = this.f10526d.nextInt(21) - 10;
-        int i14 = a9 / 3;
-        int nextInt2 = this.f10526d.nextInt(i14) + i14;
-        if (i10 > 0 && (f3 = this.f10528g.get(Integer.valueOf(i6 - this.f10531k))) != null) {
-            float floatValue = f3.floatValue() + nextInt2 + nextInt;
-            aVar.f10538b = floatValue;
-            if ((this.f10534n - floatValue) - b() < a9) {
-                if (this.f10529h == null) {
-                    this.f10529h = new ArrayList();
+        aVar.f11323a = (i10 * i11) + ((i11 - b9) >> 1);
+        int nextInt = this.f11312d.nextInt(21) - 10;
+        int i13 = a9 / 3;
+        int nextInt2 = this.f11312d.nextInt(i13) + i13;
+        if (i9 > 0 && (f2 = this.f11314g.get(Integer.valueOf(i4 - this.f11317k))) != null) {
+            float floatValue = f2.floatValue() + nextInt2 + nextInt;
+            aVar.f11324b = floatValue;
+            if ((this.f11320n - floatValue) - b() < a9) {
+                if (this.f11315h == null) {
+                    this.f11315h = new ArrayList();
                 }
-                this.f10529h.add(Integer.valueOf(i));
+                this.f11315h.add(Integer.valueOf(i));
             }
         }
-        if (aVar.f10538b == 0.0f) {
-            aVar.f10538b = (i10 * i13) + nextInt2 + nextInt;
+        if (aVar.f11324b == 0.0f) {
+            aVar.f11324b = (i9 * i12) + nextInt2 + nextInt;
         }
         float f9 = a9;
-        if (aVar.f10538b + f9 > this.f10534n) {
-            aVar.f10538b = (r3 - a9) - b();
+        if (aVar.f11324b + f9 > this.f11320n) {
+            aVar.f11324b = (r3 - a9) - b();
         }
-        if (aVar.f10538b < 0.0f) {
-            aVar.f10538b = a9 >> 1;
+        if (aVar.f11324b < 0.0f) {
+            aVar.f11324b = a9 >> 1;
         }
-        this.f10528g.put(Integer.valueOf(i6), Float.valueOf(aVar.f10538b + f9));
+        this.f11314g.put(Integer.valueOf(i4), Float.valueOf(aVar.f11324b + f9));
     }
 }

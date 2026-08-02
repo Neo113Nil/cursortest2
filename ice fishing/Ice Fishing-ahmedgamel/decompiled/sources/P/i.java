@@ -31,8 +31,8 @@ public abstract class i {
         return accessibilityNodeInfo.isAccessibilityDataSensitive();
     }
 
-    public static void g(AccessibilityNodeInfo accessibilityNodeInfo, boolean z3) {
-        accessibilityNodeInfo.setAccessibilityDataSensitive(z3);
+    public static void g(AccessibilityNodeInfo accessibilityNodeInfo, boolean z6) {
+        accessibilityNodeInfo.setAccessibilityDataSensitive(z6);
     }
 
     public static void h(AccessibilityNodeInfo accessibilityNodeInfo, Rect rect) {
@@ -47,11 +47,11 @@ public abstract class i {
         accessibilityNodeInfo.setMinDurationBetweenContentChanges(Duration.ofMillis(j6));
     }
 
-    public static void k(AccessibilityNodeInfo accessibilityNodeInfo, View view, boolean z3) {
-        accessibilityNodeInfo.setQueryFromAppProcessEnabled(view, z3);
+    public static void k(AccessibilityNodeInfo accessibilityNodeInfo, View view, boolean z6) {
+        accessibilityNodeInfo.setQueryFromAppProcessEnabled(view, z6);
     }
 
-    public static void l(AccessibilityNodeInfo accessibilityNodeInfo, boolean z3) {
-        accessibilityNodeInfo.setRequestInitialAccessibilityFocus(z3);
+    public static void l(AccessibilityNodeInfo accessibilityNodeInfo, boolean z6) {
+        accessibilityNodeInfo.setRequestInitialAccessibilityFocus(z6);
     }
 }

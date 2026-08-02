@@ -6,96 +6,96 @@ import java.io.Serializable;
 public final class b implements com.anythink.expressad.g.b, Serializable {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f18125a = 1;
+    public static final int f18912a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f18126b = 2;
+    public static final int f18913b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f18127c = 3;
+    public static final int f18914c = 3;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f18128d = 4;
+    public static final int f18915d = 4;
 
     /* renamed from: e, reason: collision with root package name */
-    private static final long f18129e = 1;
+    private static final long f18916e = 1;
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f18130f;
+    private boolean f18917f;
 
     /* renamed from: g, reason: collision with root package name */
-    private String f18131g;
+    private String f18918g;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f18132h;
+    private int f18919h;
     private String i;
 
     /* renamed from: j, reason: collision with root package name */
-    private String f18133j;
+    private String f18920j;
 
     /* renamed from: k, reason: collision with root package name */
-    private boolean f18134k;
+    private boolean f18921k;
 
     /* renamed from: l, reason: collision with root package name */
-    private String f18135l;
+    private String f18922l;
 
     /* renamed from: m, reason: collision with root package name */
-    private String f18136m;
+    private String f18923m;
 
     /* renamed from: n, reason: collision with root package name */
-    private String f18137n;
+    private String f18924n;
 
     /* renamed from: o, reason: collision with root package name */
-    private int f18138o;
+    private int f18925o;
 
     /* renamed from: p, reason: collision with root package name */
-    private boolean f18139p;
+    private boolean f18926p;
 
     /* renamed from: q, reason: collision with root package name */
-    private int f18140q;
+    private int f18927q;
 
     private boolean k() {
-        return this.f18139p;
+        return this.f18926p;
     }
 
     private String l() {
-        return this.f18133j;
+        return this.f18920j;
     }
 
     private int m() {
-        return this.f18132h;
+        return this.f18919h;
     }
 
     public final int a() {
-        return this.f18140q;
+        return this.f18927q;
     }
 
     public final void b() {
-        this.f18139p = true;
+        this.f18926p = true;
     }
 
     public final int c() {
-        return this.f18138o;
+        return this.f18925o;
     }
 
     public final String d() {
-        return this.f18137n;
+        return this.f18924n;
     }
 
     public final String e() {
-        return this.f18136m;
+        return this.f18923m;
     }
 
     public final String f() {
-        return this.f18135l;
+        return this.f18922l;
     }
 
     public final boolean g() {
-        return this.f18130f;
+        return this.f18917f;
     }
 
     public final String h() {
-        return this.f18131g;
+        return this.f18918g;
     }
 
     public final String i() {
@@ -103,27 +103,27 @@ public final class b implements com.anythink.expressad.g.b, Serializable {
     }
 
     public final boolean j() {
-        return this.f18134k;
+        return this.f18921k;
     }
 
     private void f(String str) {
-        this.f18133j = str;
+        this.f18920j = str;
     }
 
     public final void a(int i) {
-        this.f18140q = i;
+        this.f18927q = i;
     }
 
     public final void b(int i) {
-        this.f18138o = i;
+        this.f18925o = i;
     }
 
     public final void c(String str) {
-        this.f18135l = str;
+        this.f18922l = str;
     }
 
     public final void d(String str) {
-        this.f18131g = str;
+        this.f18918g = str;
     }
 
     public final void e(String str) {
@@ -131,22 +131,22 @@ public final class b implements com.anythink.expressad.g.b, Serializable {
     }
 
     public final void a(String str) {
-        this.f18137n = str;
+        this.f18924n = str;
     }
 
     public final void b(String str) {
-        this.f18136m = str;
+        this.f18923m = str;
     }
 
     public final void c(int i) {
-        this.f18132h = i;
+        this.f18919h = i;
     }
 
-    public final void a(boolean z3) {
-        this.f18130f = z3;
+    public final void a(boolean z6) {
+        this.f18917f = z6;
     }
 
-    public final void b(boolean z3) {
-        this.f18134k = z3;
+    public final void b(boolean z6) {
+        this.f18921k = z6;
     }
 }

@@ -4,5 +4,5 @@ package com.onesignal.core.internal.permissions;
 public interface f {
     void onAccept();
 
-    void onReject(boolean z3);
+    void onReject(boolean z6);
 }

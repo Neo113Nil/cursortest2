@@ -8,12 +8,12 @@ import android.view.WindowInsets;
 public final class x0 extends w0 {
 
     /* renamed from: q, reason: collision with root package name */
-    public static final A0 f2151q;
+    public static final A0 f2239q;
 
     static {
         WindowInsets windowInsets;
         windowInsets = WindowInsets.CONSUMED;
-        f2151q = A0.h(null, windowInsets);
+        f2239q = A0.h(null, windowInsets);
     }
 
     public x0(A0 a02, WindowInsets windowInsets) {
@@ -23,7 +23,7 @@ public final class x0 extends w0 {
     @Override // O.t0, O.y0
     public G.e f(int i) {
         Insets insets;
-        insets = this.f2139c.getInsets(z0.a(i));
+        insets = this.f2227c.getInsets(z0.a(i));
         return G.e.c(insets);
     }
 

@@ -30,7 +30,7 @@ public class AN extends BS<String, List<String>> {
         return entry.getKey() != null;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC2272oD
+    @Override // com.instagram.common.viewpoint.core.AbstractC2292oD
     /* renamed from: A05, reason: merged with bridge method [inline-methods] */
     public final Map<String, List<String>> A03() {
         return this.A00;
@@ -48,8 +48,8 @@ public class AN extends BS<String, List<String>> {
 
     @Override // com.instagram.common.viewpoint.core.BS, java.util.Map
     public final Set<Map.Entry<String, List<String>>> entrySet() {
-        return AbstractC2423qj.A07(super.entrySet(), new InterfaceC2071kj() { // from class: com.facebook.ads.redexgen.X.pC
-            @Override // com.instagram.common.viewpoint.core.InterfaceC2071kj
+        return AbstractC2443qj.A07(super.entrySet(), new InterfaceC2091kj() { // from class: com.facebook.ads.redexgen.X.pC
+            @Override // com.instagram.common.viewpoint.core.InterfaceC2091kj
             public final boolean A4C(Object obj) {
                 return AN.A02((Map.Entry) obj);
             }
@@ -76,8 +76,8 @@ public class AN extends BS<String, List<String>> {
 
     @Override // com.instagram.common.viewpoint.core.BS, java.util.Map
     public final Set<String> keySet() {
-        return AbstractC2423qj.A07(super.keySet(), new InterfaceC2071kj() { // from class: com.facebook.ads.redexgen.X.pD
-            @Override // com.instagram.common.viewpoint.core.InterfaceC2071kj
+        return AbstractC2443qj.A07(super.keySet(), new InterfaceC2091kj() { // from class: com.facebook.ads.redexgen.X.pD
+            @Override // com.instagram.common.viewpoint.core.InterfaceC2091kj
             public final boolean A4C(Object obj) {
                 return AN.A01((String) obj);
             }

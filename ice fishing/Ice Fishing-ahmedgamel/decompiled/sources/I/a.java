@@ -45,7 +45,7 @@ public interface a extends MenuItem {
     MenuItem setNumericShortcut(char c9, int i);
 
     @Override // android.view.MenuItem
-    MenuItem setShortcut(char c9, char c10, int i, int i6);
+    MenuItem setShortcut(char c9, char c10, int i, int i4);
 
     @Override // android.view.MenuItem
     a setTooltipText(CharSequence charSequence);

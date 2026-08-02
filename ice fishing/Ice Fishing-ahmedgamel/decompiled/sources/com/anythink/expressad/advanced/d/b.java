@@ -9,65 +9,65 @@ import java.util.ArrayList;
 public final class b implements com.anythink.expressad.advanced.b.a {
 
     /* renamed from: a, reason: collision with root package name */
-    private p f17824a;
+    private p f18611a;
 
     /* renamed from: b, reason: collision with root package name */
-    private c f17825b;
+    private c f18612b;
 
     public b(c cVar) {
-        this.f17825b = cVar;
+        this.f18612b = cVar;
     }
 
     private static void a() {
     }
 
     private void b() {
-        if (this.f17824a != null) {
-            this.f17824a = null;
+        if (this.f18611a != null) {
+            this.f18611a = null;
         }
-        if (this.f17825b != null) {
-            this.f17825b = null;
+        if (this.f18612b != null) {
+            this.f18612b = null;
         }
     }
 
     public final void a(p pVar) {
-        this.f17824a = pVar;
+        this.f18611a = pVar;
     }
 
     @Override // com.anythink.expressad.advanced.b.a
     public final void a(com.anythink.expressad.foundation.d.d dVar, int i) {
         c cVar;
-        c cVar2 = this.f17825b;
+        c cVar2 = this.f18612b;
         if (cVar2 == null || !cVar2.a() || dVar == null) {
             return;
         }
-        p pVar = this.f17824a;
-        if (pVar != null && this.f17825b != null) {
+        p pVar = this.f18611a;
+        if (pVar != null && this.f18612b != null) {
             pVar.a();
         }
-        this.f17825b.b();
+        this.f18612b.b();
         new ArrayList().add(dVar);
-        if (i != 2 || (cVar = this.f17825b) == null) {
+        if (i != 2 || (cVar = this.f18612b) == null) {
             return;
         }
         cVar.a(dVar, true);
     }
 
     private void a(h hVar) {
-        c cVar = this.f17825b;
+        c cVar = this.f18612b;
         if (cVar == null || !cVar.a()) {
             return;
         }
-        p pVar = this.f17824a;
+        p pVar = this.f18611a;
         if (pVar != null) {
             pVar.a(hVar != null ? hVar.a() : "");
         }
-        this.f17825b.b();
+        this.f18612b.b();
     }
 
     @Override // com.anythink.expressad.advanced.b.a
     public final void a(com.anythink.expressad.foundation.e.c cVar) {
-        c cVar2 = this.f17825b;
+        c cVar2 = this.f18612b;
         if (cVar2 == null || !cVar2.a()) {
             return;
         }
@@ -78,10 +78,10 @@ public final class b implements com.anythink.expressad.advanced.b.a {
                 str = a9;
             }
         }
-        p pVar = this.f17824a;
+        p pVar = this.f18611a;
         if (pVar != null) {
             pVar.a(str);
         }
-        this.f17825b.b();
+        this.f18612b.b();
     }
 }

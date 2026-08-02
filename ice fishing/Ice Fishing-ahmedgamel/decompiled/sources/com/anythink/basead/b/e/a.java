@@ -22,55 +22,55 @@ import org.json.JSONObject;
 public final class a {
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f6003c = k.b("eyJkc3BfY2xpY2tfbWFjcm9fY29uZmlnIjp7IjQ5Ijp7Im1hcHBpbmdzIjpbeyJtYWNybyI6Il9fUkVfQ19ET1dOX1hfXyIsImFjdGlvbiI6IjMiLCJ2YWx1ZSI6IiRkeCQifSx7Im1hY3JvIjoiX19SRV9DX0RPV05fWV9fIiwiYWN0aW9uIjoiMyIsInZhbHVlIjoiJGR5JCJ9LHsibWFjcm8iOiJfX1JFX0NfVVBfWF9fIiwiYWN0aW9uIjoiMyIsInZhbHVlIjoiJHV4JCJ9LHsibWFjcm8iOiJfX1JFX0NfVVBfWV9fIiwiYWN0aW9uIjoiMyIsInZhbHVlIjoiJHV5JCJ9LHsibWFjcm8iOiJfX01fWF9BQ0NfXyIsImFjdGlvbiI6IjMiLCJ2YWx1ZSI6IiR6bWEkIn0seyJtYWNybyI6Il9fTV9ZX0FDQ19fIiwiYWN0aW9uIjoiMyIsInZhbHVlIjoiJHltYSQifSx7Im1hY3JvIjoiX19NX1pfQUNDX18iLCJhY3Rpb24iOiIzIiwidmFsdWUiOiIkem1hJCJ9XX19fQ==");
+    private static final String f6789c = k.b("eyJkc3BfY2xpY2tfbWFjcm9fY29uZmlnIjp7IjQ5Ijp7Im1hcHBpbmdzIjpbeyJtYWNybyI6Il9fUkVfQ19ET1dOX1hfXyIsImFjdGlvbiI6IjMiLCJ2YWx1ZSI6IiRkeCQifSx7Im1hY3JvIjoiX19SRV9DX0RPV05fWV9fIiwiYWN0aW9uIjoiMyIsInZhbHVlIjoiJGR5JCJ9LHsibWFjcm8iOiJfX1JFX0NfVVBfWF9fIiwiYWN0aW9uIjoiMyIsInZhbHVlIjoiJHV4JCJ9LHsibWFjcm8iOiJfX1JFX0NfVVBfWV9fIiwiYWN0aW9uIjoiMyIsInZhbHVlIjoiJHV5JCJ9LHsibWFjcm8iOiJfX01fWF9BQ0NfXyIsImFjdGlvbiI6IjMiLCJ2YWx1ZSI6IiR6bWEkIn0seyJtYWNybyI6Il9fTV9ZX0FDQ19fIiwiYWN0aW9uIjoiMyIsInZhbHVlIjoiJHltYSQifSx7Im1hY3JvIjoiX19NX1pfQUNDX18iLCJhY3Rpb24iOiIzIiwidmFsdWUiOiIkem1hJCJ9XX19fQ==");
 
     /* renamed from: a, reason: collision with root package name */
-    boolean f6004a;
+    boolean f6790a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final String f6005b;
+    private final String f6791b;
 
     /* renamed from: d, reason: collision with root package name */
-    private volatile String f6006d;
+    private volatile String f6792d;
 
     /* renamed from: e, reason: collision with root package name */
-    private File f6007e;
+    private File f6793e;
 
     /* renamed from: f, reason: collision with root package name */
-    private final Object f6008f;
+    private final Object f6794f;
 
     /* renamed from: g, reason: collision with root package name */
-    private final String f6009g;
+    private final String f6795g;
 
     /* renamed from: h, reason: collision with root package name */
-    private final String f6010h;
+    private final String f6796h;
     private final String i;
 
     /* renamed from: j, reason: collision with root package name */
-    private Map<String, b> f6011j;
+    private Map<String, b> f6797j;
 
     /* renamed from: com.anythink.basead.b.e.a$3, reason: invalid class name */
     public class AnonymousClass3 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ String f6016a;
+        final /* synthetic */ String f6802a;
 
         public AnonymousClass3(String str) {
-            this.f6016a = str;
+            this.f6802a = str;
         }
 
         @Override // java.lang.Runnable
         public final void run() {
-            synchronized (a.this.f6008f) {
+            synchronized (a.this.f6794f) {
                 try {
-                    if (!a.this.f6007e.exists()) {
-                        a.this.f6007e.mkdirs();
+                    if (!a.this.f6793e.exists()) {
+                        a.this.f6793e.mkdirs();
                     }
-                    File file = new File(a.this.f6007e, "tracker_mapping.txt");
+                    File file = new File(a.this.f6793e, "tracker_mapping.txt");
                     if (file.exists()) {
                         file.delete();
                     }
-                    w.a(this.f6016a.getBytes(), file);
+                    w.a(this.f6802a.getBytes(), file);
                 } catch (Throwable unused) {
                 }
             }
@@ -81,7 +81,7 @@ public final class a {
     public static class C0011a {
 
         /* renamed from: a, reason: collision with root package name */
-        private static final a f6018a = new a(0);
+        private static final a f6804a = new a(0);
 
         private C0011a() {
         }
@@ -95,24 +95,24 @@ public final class a {
     }
 
     private a() {
-        this.f6005b = "a";
-        this.f6008f = new Object();
-        this.f6009g = "tracker_mapping";
-        this.f6010h = "anythink_tracker_mapping/";
+        this.f6791b = "a";
+        this.f6794f = new Object();
+        this.f6795g = "tracker_mapping";
+        this.f6796h = "anythink_tracker_mapping/";
         this.i = "tracker_mapping.txt";
-        this.f6004a = false;
+        this.f6790a = false;
         try {
-            this.f6007e = new File(t.b().g().getFilesDir().getAbsoluteFile().getAbsolutePath() + "/anythink_tracker_mapping/");
+            this.f6793e = new File(t.b().g().getFilesDir().getAbsoluteFile().getAbsolutePath() + "/anythink_tracker_mapping/");
         } catch (Throwable unused) {
         }
-        this.f6011j = new HashMap();
+        this.f6797j = new HashMap();
         com.anythink.core.common.v.b.b.a().b(new Runnable() { // from class: com.anythink.basead.b.e.a.1
             @Override // java.lang.Runnable
             public final void run() {
                 a aVar = a.this;
-                aVar.f6006d = aVar.c();
+                aVar.f6792d = aVar.c();
                 a aVar2 = a.this;
-                aVar2.b(aVar2.f6006d);
+                aVar2.b(aVar2.f6792d);
             }
         }, 2);
     }
@@ -122,13 +122,13 @@ public final class a {
     }
 
     public static a a() {
-        return C0011a.f6018a;
+        return C0011a.f6804a;
     }
 
     public final void b(String str) {
         JSONArray optJSONArray;
         try {
-            Map<String, b> map = this.f6011j;
+            Map<String, b> map = this.f6797j;
             if (map == null) {
                 return;
             }
@@ -145,7 +145,7 @@ public final class a {
                     if (optJSONObject2 != null && (optJSONArray = optJSONObject2.optJSONArray("mappings")) != null) {
                         b bVar = new b();
                         bVar.a(optJSONArray);
-                        this.f6011j.put(next, bVar);
+                        this.f6797j.put(next, bVar);
                     }
                 }
             }
@@ -157,10 +157,10 @@ public final class a {
     /* JADX INFO: Access modifiers changed from: private */
     public String c() {
         String str;
-        synchronized (this.f6008f) {
-            str = f6003c;
+        synchronized (this.f6794f) {
+            str = f6789c;
             try {
-                File file = new File(this.f6007e, "tracker_mapping.txt");
+                File file = new File(this.f6793e, "tracker_mapping.txt");
                 if (file.exists() && file.canRead()) {
                     str = w.a(file);
                 }
@@ -171,7 +171,7 @@ public final class a {
     }
 
     public final synchronized void a(Context context, final String str) {
-        if (this.f6004a) {
+        if (this.f6790a) {
             return;
         }
         if (context == null) {
@@ -181,35 +181,35 @@ public final class a {
             return;
         }
         final Context applicationContext = context.getApplicationContext();
-        String c9 = af.c(applicationContext, u.b.f12847a, "tracker_mapping", "");
+        String c9 = af.c(applicationContext, u.b.f13633a, "tracker_mapping", "");
         if (TextUtils.isEmpty(c9) || !TextUtils.equals(c9, str)) {
-            this.f6004a = true;
+            this.f6790a = true;
             try {
                 new h(str).a(1, new q() { // from class: com.anythink.basead.b.e.a.2
                     @Override // com.anythink.core.common.m.q
                     public final void onLoadCanceled(int i) {
-                        a.this.f6004a = false;
+                        a.this.f6790a = false;
                     }
 
                     @Override // com.anythink.core.common.m.q
                     public final void onLoadError(int i, String str2, AdError adError) {
                         a aVar = a.this;
-                        aVar.f6004a = false;
-                        String unused = aVar.f6005b;
+                        aVar.f6790a = false;
+                        String unused = aVar.f6791b;
                     }
 
                     @Override // com.anythink.core.common.m.q
                     public final void onLoadFinish(int i, Object obj) {
                         String obj2 = obj != null ? obj.toString() : "";
                         if (!TextUtils.isEmpty(obj2)) {
-                            String unused = a.this.f6005b;
-                            a.this.f6006d = obj2;
+                            String unused = a.this.f6791b;
+                            a.this.f6792d = obj2;
                             a.b(a.this, obj2);
-                            af.b(applicationContext, u.b.f12847a, "tracker_mapping", str);
+                            af.b(applicationContext, u.b.f13633a, "tracker_mapping", str);
                             a aVar = a.this;
-                            aVar.b(aVar.f6006d);
+                            aVar.b(aVar.f6792d);
                         }
-                        a.this.f6004a = false;
+                        a.this.f6790a = false;
                     }
 
                     @Override // com.anythink.core.common.m.q
@@ -217,7 +217,7 @@ public final class a {
                     }
                 });
             } catch (Throwable unused) {
-                this.f6004a = false;
+                this.f6790a = false;
             }
         }
     }
@@ -227,7 +227,7 @@ public final class a {
     }
 
     public final b a(String str) {
-        Map<String, b> map = this.f6011j;
+        Map<String, b> map = this.f6797j;
         if (map != null) {
             return map.get(str);
         }

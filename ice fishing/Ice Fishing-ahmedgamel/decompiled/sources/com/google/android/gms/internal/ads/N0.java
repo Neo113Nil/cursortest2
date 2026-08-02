@@ -10,37 +10,37 @@ import java.util.Map;
 public final class N0 implements T0 {
 
     /* renamed from: v, reason: collision with root package name */
-    public static final int[] f26384v = {5, 4, 12, 8, 3, 10, 9, 11, 6, 2, 0, 1, 7, 16, 15, 14, 17, 18, 19, 20, 21};
+    public static final int[] f27169v = {5, 4, 12, 8, 3, 10, 9, 11, 6, 2, 0, 1, 7, 16, 15, 14, 17, 18, 19, 20, 21};
 
     /* renamed from: w, reason: collision with root package name */
-    public static final S0.l f26385w = new S0.l(V2.f28070G);
+    public static final S0.l f27170w = new S0.l(V2.f28867G);
 
     /* renamed from: x, reason: collision with root package name */
-    public static final S0.l f26386x = new S0.l(V2.f28069F);
+    public static final S0.l f27171x = new S0.l(V2.f28866F);
 
     /* renamed from: n, reason: collision with root package name */
-    public C3500lC f26387n;
+    public C3523lC f27172n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final V2 f26388u = new V2(18);
+    public final V2 f27173u = new V2(18);
 
     public final void a(int i, ArrayList arrayList) {
-        V2 v22 = this.f26388u;
+        V2 v22 = this.f27173u;
         switch (i) {
             case 0:
-                arrayList.add(new C3009c4());
+                arrayList.add(new C3032c4());
                 break;
             case 1:
-                arrayList.add(new C3116e4());
+                arrayList.add(new C3139e4());
                 break;
             case 2:
-                arrayList.add(new C3170f4());
+                arrayList.add(new C3193f4());
                 break;
             case 3:
-                arrayList.add(new C3705p1());
+                arrayList.add(new C3728p1());
                 break;
             case 4:
-                Q0 J = f26385w.J(0);
+                Q0 J = f27170w.J(0);
                 if (J == null) {
                     arrayList.add(new D1());
                     break;
@@ -52,54 +52,54 @@ public final class N0 implements T0 {
                 arrayList.add(new F1());
                 break;
             case 6:
-                arrayList.add(new C3867s2(new C3598n2(), 0, v22));
+                arrayList.add(new C3890s2(new C3621n2(), 0, v22));
                 break;
             case 7:
-                arrayList.add(new C4137x2());
+                arrayList.add(new C4160x2());
                 break;
             case 8:
-                arrayList.add(new Q2(v22, 704, C3500lC.f31745x));
+                arrayList.add(new Q2(v22, 704, C3523lC.f32525x));
                 arrayList.add(new U2(v22, 160));
                 break;
             case 9:
-                arrayList.add(new C3277h3());
+                arrayList.add(new C3300h3());
                 break;
             case 10:
                 arrayList.add(new A4());
                 break;
             case 11:
-                if (this.f26387n == null) {
-                    PB pb = RB.f27177u;
-                    this.f26387n = C3500lC.f31745x;
+                if (this.f27172n == null) {
+                    PB pb = RB.f27933u;
+                    this.f27172n = C3523lC.f32525x;
                 }
-                arrayList.add(new D4(v22, new Dt(), new Qx(4, this.f26387n)));
+                arrayList.add(new D4(v22, new Dt(), new Qx(4, this.f27172n)));
                 break;
             case 12:
                 L4 l42 = new L4();
-                l42.f26060c = 0;
-                l42.f26061d = -1L;
-                l42.f26063f = -1;
-                l42.f26064g = -1L;
+                l42.f26860c = 0;
+                l42.f26861d = -1L;
+                l42.f26863f = -1;
+                l42.f26864g = -1L;
                 arrayList.add(l42);
                 break;
             case 14:
                 arrayList.add(new K1(1));
                 break;
             case 15:
-                Q0 J2 = f26386x.J(new Object[0]);
-                if (J2 != null) {
-                    arrayList.add(J2);
+                Q0 J8 = f27171x.J(new Object[0]);
+                if (J8 != null) {
+                    arrayList.add(J8);
                     break;
                 }
                 break;
             case 16:
-                arrayList.add(new C3866s1(v22));
+                arrayList.add(new C3889s1(v22));
                 break;
             case 17:
                 arrayList.add(new A1(1));
                 break;
             case 18:
-                arrayList.add(new C4244z1(1));
+                arrayList.add(new C4267z1(1));
                 break;
             case 19:
                 arrayList.add(new A1(0));
@@ -108,7 +108,7 @@ public final class N0 implements T0 {
                 arrayList.add(new K1(0));
                 break;
             case 21:
-                arrayList.add(new C4244z1(0));
+                arrayList.add(new C4267z1(0));
                 break;
         }
     }
@@ -138,7 +138,7 @@ public final class N0 implements T0 {
         char c9;
         int i;
         String lastPathSegment;
-        int i6;
+        int i4;
         try {
             arrayList = new ArrayList(21);
             List list = (List) map.get("Content-Type");
@@ -146,229 +146,229 @@ public final class N0 implements T0 {
             if (list != null && !list.isEmpty()) {
                 str = (String) list.get(0);
             }
-            int i9 = 20;
+            int i6 = 20;
             if (str != null) {
-                String h9 = H4.h(str);
-                switch (h9.hashCode()) {
+                String h3 = H4.h(str);
+                switch (h3.hashCode()) {
                     case -2123537834:
-                        if (h9.equals(com.anythink.basead.exoplayer.k.o.f8421B)) {
+                        if (h3.equals(com.anythink.basead.exoplayer.k.o.f9207B)) {
                             c9 = 2;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case -1662384011:
-                        if (h9.equals("video/mp2p")) {
+                        if (h3.equals("video/mp2p")) {
                             c9 = 20;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case -1662384007:
-                        if (h9.equals("video/mp2t")) {
+                        if (h3.equals("video/mp2t")) {
                             c9 = 21;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case -1662095187:
-                        if (h9.equals(com.anythink.basead.exoplayer.k.o.f8449f)) {
+                        if (h3.equals(com.anythink.basead.exoplayer.k.o.f9235f)) {
                             c9 = '\f';
                             break;
                         }
                         c9 = 65535;
                         break;
                     case -1606874997:
-                        if (h9.equals(com.anythink.basead.exoplayer.k.o.J)) {
+                        if (h3.equals(com.anythink.basead.exoplayer.k.o.J)) {
                             c9 = 6;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case -1487656890:
-                        if (h9.equals("image/avif")) {
+                        if (h3.equals("image/avif")) {
                             c9 = 31;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case -1487464693:
-                        if (h9.equals("image/heic")) {
+                        if (h3.equals("image/heic")) {
                             c9 = 30;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case -1487464690:
-                        if (h9.equals("image/heif")) {
+                        if (h3.equals("image/heif")) {
                             c9 = 29;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case -1487394660:
-                        if (h9.equals("image/jpeg")) {
+                        if (h3.equals("image/jpeg")) {
                             c9 = 24;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case -1487018032:
-                        if (h9.equals("image/webp")) {
+                        if (h3.equals("image/webp")) {
                             c9 = 27;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case -1248337486:
-                        if (h9.equals(com.anythink.basead.exoplayer.k.o.f8435Q)) {
+                        if (h3.equals(com.anythink.basead.exoplayer.k.o.f9221Q)) {
                             c9 = 18;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case -1079884372:
-                        if (h9.equals("video/x-msvideo")) {
+                        if (h3.equals("video/x-msvideo")) {
                             c9 = 25;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case -1004728940:
-                        if (h9.equals(com.anythink.basead.exoplayer.k.o.f8433O)) {
+                        if (h3.equals(com.anythink.basead.exoplayer.k.o.f9219O)) {
                             c9 = 23;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case -879272239:
-                        if (h9.equals("image/bmp")) {
+                        if (h3.equals("image/bmp")) {
                             c9 = 28;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case -879258763:
-                        if (h9.equals("image/png")) {
+                        if (h3.equals("image/png")) {
                             c9 = 26;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case -387023398:
-                        if (h9.equals("audio/x-matroska")) {
+                        if (h3.equals("audio/x-matroska")) {
                             c9 = 11;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case -43467528:
-                        if (h9.equals(com.anythink.basead.exoplayer.k.o.f8436R)) {
+                        if (h3.equals(com.anythink.basead.exoplayer.k.o.f9222R)) {
                             c9 = 14;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 13915911:
-                        if (h9.equals("video/x-flv")) {
+                        if (h3.equals("video/x-flv")) {
                             c9 = '\b';
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 187078296:
-                        if (h9.equals(com.anythink.basead.exoplayer.k.o.f8468z)) {
+                        if (h3.equals(com.anythink.basead.exoplayer.k.o.f9254z)) {
                             c9 = 0;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 187078297:
-                        if (h9.equals("audio/ac4")) {
+                        if (h3.equals("audio/ac4")) {
                             c9 = 3;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 187078669:
-                        if (h9.equals("audio/amr")) {
+                        if (h3.equals("audio/amr")) {
                             c9 = 4;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 187090232:
-                        if (h9.equals(com.anythink.basead.exoplayer.k.o.f8459q)) {
+                        if (h3.equals(com.anythink.basead.exoplayer.k.o.f9245q)) {
                             c9 = 17;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 187091926:
-                        if (h9.equals("audio/ogg")) {
+                        if (h3.equals("audio/ogg")) {
                             c9 = 19;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 187099443:
-                        if (h9.equals("audio/wav")) {
+                        if (h3.equals("audio/wav")) {
                             c9 = 22;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 1331848029:
-                        if (h9.equals(com.anythink.basead.exoplayer.k.o.f8448e)) {
+                        if (h3.equals(com.anythink.basead.exoplayer.k.o.f9234e)) {
                             c9 = 16;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 1503095341:
-                        if (h9.equals(com.anythink.basead.exoplayer.k.o.f8428I)) {
+                        if (h3.equals(com.anythink.basead.exoplayer.k.o.f9214I)) {
                             c9 = 5;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 1504578661:
-                        if (h9.equals(com.anythink.basead.exoplayer.k.o.f8420A)) {
+                        if (h3.equals(com.anythink.basead.exoplayer.k.o.f9206A)) {
                             c9 = 1;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 1504619009:
-                        if (h9.equals(com.anythink.basead.exoplayer.k.o.f8429K)) {
+                        if (h3.equals(com.anythink.basead.exoplayer.k.o.f9215K)) {
                             c9 = 7;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 1504824762:
-                        if (h9.equals("audio/midi")) {
+                        if (h3.equals("audio/midi")) {
                             c9 = '\t';
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 1504831518:
-                        if (h9.equals(com.anythink.basead.exoplayer.k.o.f8462t)) {
+                        if (h3.equals(com.anythink.basead.exoplayer.k.o.f9248t)) {
                             c9 = 15;
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 1505118770:
-                        if (h9.equals(com.anythink.basead.exoplayer.k.o.f8461s)) {
+                        if (h3.equals(com.anythink.basead.exoplayer.k.o.f9247s)) {
                             c9 = '\r';
                             break;
                         }
                         c9 = 65535;
                         break;
                     case 2039520277:
-                        if (h9.equals("video/x-matroska")) {
+                        if (h3.equals("video/x-matroska")) {
                             c9 = '\n';
                             break;
                         }
@@ -460,61 +460,61 @@ public final class N0 implements T0 {
                 lastPathSegment = uri.getLastPathSegment();
                 if (lastPathSegment != null) {
                     if (lastPathSegment.endsWith(".ac3") || lastPathSegment.endsWith(".ec3")) {
-                        i9 = 0;
+                        i6 = 0;
                     } else if (lastPathSegment.endsWith(".ac4")) {
-                        i9 = 1;
+                        i6 = 1;
                     } else if (lastPathSegment.endsWith(".adts") || lastPathSegment.endsWith(".aac")) {
-                        i9 = 2;
+                        i6 = 2;
                     } else if (lastPathSegment.endsWith(".amr")) {
-                        i9 = 3;
+                        i6 = 3;
                     } else if (lastPathSegment.endsWith(".flac")) {
-                        i9 = 4;
+                        i6 = 4;
                     } else if (lastPathSegment.endsWith(".flv")) {
-                        i9 = 5;
+                        i6 = 5;
                     } else if (lastPathSegment.endsWith(".mid") || lastPathSegment.endsWith(".midi") || lastPathSegment.endsWith(".smf")) {
-                        i9 = 15;
+                        i6 = 15;
                     } else if (lastPathSegment.startsWith(".mk", lastPathSegment.length() - 4) || lastPathSegment.endsWith(".webm")) {
-                        i9 = 6;
+                        i6 = 6;
                     } else if (lastPathSegment.endsWith(".mp3")) {
-                        i9 = 7;
+                        i6 = 7;
                     } else if (lastPathSegment.endsWith(".mp4") || lastPathSegment.startsWith(".m4", lastPathSegment.length() - 4) || lastPathSegment.startsWith(".mp4", lastPathSegment.length() - 5) || lastPathSegment.startsWith(".cmf", lastPathSegment.length() - 5)) {
-                        i9 = 8;
+                        i6 = 8;
                     } else if (lastPathSegment.startsWith(".og", lastPathSegment.length() - 4) || lastPathSegment.endsWith(".opus")) {
-                        i9 = 9;
+                        i6 = 9;
                     } else if (lastPathSegment.endsWith(".ps") || lastPathSegment.endsWith(".mpeg") || lastPathSegment.endsWith(".mpg") || lastPathSegment.endsWith(".m2p")) {
-                        i9 = 10;
+                        i6 = 10;
                     } else if (lastPathSegment.endsWith(".ts") || lastPathSegment.startsWith(".ts", lastPathSegment.length() - 4)) {
-                        i9 = 11;
+                        i6 = 11;
                     } else if (lastPathSegment.endsWith(".wav") || lastPathSegment.endsWith(".wave")) {
-                        i9 = 12;
+                        i6 = 12;
                     } else if (lastPathSegment.endsWith(".vtt") || lastPathSegment.endsWith(".webvtt")) {
-                        i9 = 13;
+                        i6 = 13;
                     } else if (lastPathSegment.endsWith(".jpg") || lastPathSegment.endsWith(".jpeg")) {
-                        i9 = 14;
+                        i6 = 14;
                     } else if (lastPathSegment.endsWith(".avi")) {
-                        i9 = 16;
+                        i6 = 16;
                     } else if (lastPathSegment.endsWith(".png")) {
-                        i9 = 17;
+                        i6 = 17;
                     } else if (lastPathSegment.endsWith(".webp")) {
-                        i9 = 18;
+                        i6 = 18;
                     } else if (lastPathSegment.endsWith(".bmp") || lastPathSegment.endsWith(".dib")) {
-                        i9 = 19;
+                        i6 = 19;
                     } else if (!lastPathSegment.endsWith(".heic") && !lastPathSegment.endsWith(".heif")) {
                         if (lastPathSegment.endsWith(".avif")) {
-                            i9 = 21;
+                            i6 = 21;
                         }
                     }
-                    int[] iArr = f26384v;
-                    for (i6 = 0; i6 < 21; i6++) {
-                        int i10 = iArr[i6];
-                        if (i10 != i && i10 != i9) {
-                            a(i10, arrayList);
+                    int[] iArr = f27169v;
+                    for (i4 = 0; i4 < 21; i4++) {
+                        int i9 = iArr[i4];
+                        if (i9 != i && i9 != i6) {
+                            a(i9, arrayList);
                         }
                     }
                 }
-                i9 = -1;
-                int[] iArr2 = f26384v;
-                while (i6 < 21) {
+                i6 = -1;
+                int[] iArr2 = f27169v;
+                while (i4 < 21) {
                 }
             }
             i = -1;
@@ -523,9 +523,9 @@ public final class N0 implements T0 {
             lastPathSegment = uri.getLastPathSegment();
             if (lastPathSegment != null) {
             }
-            i9 = -1;
-            int[] iArr22 = f26384v;
-            while (i6 < 21) {
+            i6 = -1;
+            int[] iArr22 = f27169v;
+            while (i4 < 21) {
             }
         } catch (Throwable th) {
             throw th;

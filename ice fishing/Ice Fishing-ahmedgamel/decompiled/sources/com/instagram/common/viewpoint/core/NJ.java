@@ -4,19 +4,19 @@ import com.facebook.ads.AdError;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public interface NJ {
-    void AFj(AbstractC2009jh abstractC2009jh);
+    void AFj(AbstractC2029jh abstractC2029jh);
 
-    void AFk(AbstractC2009jh abstractC2009jh);
+    void AFk(AbstractC2029jh abstractC2029jh);
 
-    void AFl(AbstractC2009jh abstractC2009jh);
+    void AFl(AbstractC2029jh abstractC2029jh);
 
-    void AFm(AbstractC2009jh abstractC2009jh);
+    void AFm(AbstractC2029jh abstractC2029jh);
 
-    void AFn(AbstractC2009jh abstractC2009jh);
+    void AFn(AbstractC2029jh abstractC2029jh);
 
-    void AFo(AbstractC2009jh abstractC2009jh);
+    void AFo(AbstractC2029jh abstractC2029jh);
 
-    void AFp(AbstractC2009jh abstractC2009jh, AdError adError);
+    void AFp(AbstractC2029jh abstractC2029jh, AdError adError);
 
     void onRewardedVideoActivityDestroyed();
 

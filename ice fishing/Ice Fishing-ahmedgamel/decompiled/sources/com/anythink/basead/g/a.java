@@ -8,7 +8,7 @@ public interface a {
 
     void onAdShow(j jVar);
 
-    void onDeeplinkCallback(boolean z3);
+    void onDeeplinkCallback(boolean z6);
 
     void onShowFailed(com.anythink.basead.d.f fVar);
 }

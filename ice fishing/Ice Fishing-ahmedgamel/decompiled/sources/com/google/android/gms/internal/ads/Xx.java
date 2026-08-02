@@ -4,13 +4,13 @@ package com.google.android.gms.internal.ads;
 public final class Xx {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f28611a;
+    public final int f29388a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f28612b;
+    public final int f29389b;
 
-    public Xx(int i, int i6) {
-        this.f28611a = i;
-        this.f28612b = i6;
+    public Xx(int i, int i4) {
+        this.f29388a = i;
+        this.f29389b = i4;
     }
 }

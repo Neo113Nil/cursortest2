@@ -9,57 +9,57 @@ import java.util.Set;
 public final class c implements Collection, Set {
 
     /* renamed from: A, reason: collision with root package name */
-    public static int f40401A;
+    public static int f40237A;
 
     /* renamed from: B, reason: collision with root package name */
-    public static Object[] f40402B;
+    public static Object[] f40238B;
 
     /* renamed from: C, reason: collision with root package name */
-    public static int f40403C;
+    public static int f40239C;
 
     /* renamed from: x, reason: collision with root package name */
-    public static final int[] f40404x = new int[0];
+    public static final int[] f40240x = new int[0];
 
     /* renamed from: y, reason: collision with root package name */
-    public static final Object[] f40405y = new Object[0];
+    public static final Object[] f40241y = new Object[0];
 
     /* renamed from: z, reason: collision with root package name */
-    public static Object[] f40406z;
+    public static Object[] f40242z;
 
     /* renamed from: n, reason: collision with root package name */
-    public int[] f40407n;
+    public int[] f40243n;
 
     /* renamed from: u, reason: collision with root package name */
-    public Object[] f40408u;
+    public Object[] f40244u;
 
     /* renamed from: v, reason: collision with root package name */
-    public int f40409v;
+    public int f40245v;
 
     /* renamed from: w, reason: collision with root package name */
-    public C4964a f40410w;
+    public C4914a f40246w;
 
     public c(int i) {
         if (i == 0) {
-            this.f40407n = f40404x;
-            this.f40408u = f40405y;
+            this.f40243n = f40240x;
+            this.f40244u = f40241y;
         } else {
             a(i);
         }
-        this.f40409v = 0;
+        this.f40245v = 0;
     }
 
     public static void c(int[] iArr, Object[] objArr, int i) {
         if (iArr.length == 8) {
             synchronized (c.class) {
                 try {
-                    if (f40403C < 10) {
-                        objArr[0] = f40402B;
+                    if (f40239C < 10) {
+                        objArr[0] = f40238B;
                         objArr[1] = iArr;
-                        for (int i6 = i - 1; i6 >= 2; i6--) {
-                            objArr[i6] = null;
+                        for (int i4 = i - 1; i4 >= 2; i4--) {
+                            objArr[i4] = null;
                         }
-                        f40402B = objArr;
-                        f40403C++;
+                        f40238B = objArr;
+                        f40239C++;
                     }
                 } finally {
                 }
@@ -69,14 +69,14 @@ public final class c implements Collection, Set {
         if (iArr.length == 4) {
             synchronized (c.class) {
                 try {
-                    if (f40401A < 10) {
-                        objArr[0] = f40406z;
+                    if (f40237A < 10) {
+                        objArr[0] = f40242z;
                         objArr[1] = iArr;
-                        for (int i9 = i - 1; i9 >= 2; i9--) {
-                            objArr[i9] = null;
+                        for (int i6 = i - 1; i6 >= 2; i6--) {
+                            objArr[i6] = null;
                         }
-                        f40406z = objArr;
-                        f40401A++;
+                        f40242z = objArr;
+                        f40237A++;
                     }
                 } finally {
                 }
@@ -88,14 +88,14 @@ public final class c implements Collection, Set {
         if (i == 8) {
             synchronized (c.class) {
                 try {
-                    Object[] objArr = f40402B;
+                    Object[] objArr = f40238B;
                     if (objArr != null) {
-                        this.f40408u = objArr;
-                        f40402B = (Object[]) objArr[0];
-                        this.f40407n = (int[]) objArr[1];
+                        this.f40244u = objArr;
+                        f40238B = (Object[]) objArr[0];
+                        this.f40243n = (int[]) objArr[1];
                         objArr[1] = null;
                         objArr[0] = null;
-                        f40403C--;
+                        f40239C--;
                         return;
                     }
                 } finally {
@@ -104,102 +104,102 @@ public final class c implements Collection, Set {
         } else if (i == 4) {
             synchronized (c.class) {
                 try {
-                    Object[] objArr2 = f40406z;
+                    Object[] objArr2 = f40242z;
                     if (objArr2 != null) {
-                        this.f40408u = objArr2;
-                        f40406z = (Object[]) objArr2[0];
-                        this.f40407n = (int[]) objArr2[1];
+                        this.f40244u = objArr2;
+                        f40242z = (Object[]) objArr2[0];
+                        this.f40243n = (int[]) objArr2[1];
                         objArr2[1] = null;
                         objArr2[0] = null;
-                        f40401A--;
+                        f40237A--;
                         return;
                     }
                 } finally {
                 }
             }
         }
-        this.f40407n = new int[i];
-        this.f40408u = new Object[i];
+        this.f40243n = new int[i];
+        this.f40244u = new Object[i];
     }
 
     @Override // java.util.Collection, java.util.Set
     public final boolean add(Object obj) {
         int i;
-        int d2;
+        int d9;
         if (obj == null) {
-            d2 = e();
+            d9 = e();
             i = 0;
         } else {
             int hashCode = obj.hashCode();
             i = hashCode;
-            d2 = d(hashCode, obj);
+            d9 = d(hashCode, obj);
         }
-        if (d2 >= 0) {
+        if (d9 >= 0) {
             return false;
         }
-        int i6 = ~d2;
-        int i9 = this.f40409v;
-        int[] iArr = this.f40407n;
-        if (i9 >= iArr.length) {
-            int i10 = 8;
-            if (i9 >= 8) {
-                i10 = (i9 >> 1) + i9;
-            } else if (i9 < 4) {
-                i10 = 4;
+        int i4 = ~d9;
+        int i6 = this.f40245v;
+        int[] iArr = this.f40243n;
+        if (i6 >= iArr.length) {
+            int i9 = 8;
+            if (i6 >= 8) {
+                i9 = (i6 >> 1) + i6;
+            } else if (i6 < 4) {
+                i9 = 4;
             }
-            Object[] objArr = this.f40408u;
-            a(i10);
-            int[] iArr2 = this.f40407n;
+            Object[] objArr = this.f40244u;
+            a(i9);
+            int[] iArr2 = this.f40243n;
             if (iArr2.length > 0) {
                 System.arraycopy(iArr, 0, iArr2, 0, iArr.length);
-                System.arraycopy(objArr, 0, this.f40408u, 0, objArr.length);
+                System.arraycopy(objArr, 0, this.f40244u, 0, objArr.length);
             }
-            c(iArr, objArr, this.f40409v);
+            c(iArr, objArr, this.f40245v);
         }
-        int i11 = this.f40409v;
-        if (i6 < i11) {
-            int[] iArr3 = this.f40407n;
-            int i12 = i6 + 1;
-            System.arraycopy(iArr3, i6, iArr3, i12, i11 - i6);
-            Object[] objArr2 = this.f40408u;
-            System.arraycopy(objArr2, i6, objArr2, i12, this.f40409v - i6);
+        int i10 = this.f40245v;
+        if (i4 < i10) {
+            int[] iArr3 = this.f40243n;
+            int i11 = i4 + 1;
+            System.arraycopy(iArr3, i4, iArr3, i11, i10 - i4);
+            Object[] objArr2 = this.f40244u;
+            System.arraycopy(objArr2, i4, objArr2, i11, this.f40245v - i4);
         }
-        this.f40407n[i6] = i;
-        this.f40408u[i6] = obj;
-        this.f40409v++;
+        this.f40243n[i4] = i;
+        this.f40244u[i4] = obj;
+        this.f40245v++;
         return true;
     }
 
     @Override // java.util.Collection, java.util.Set
     public final boolean addAll(Collection collection) {
-        int size = collection.size() + this.f40409v;
-        int[] iArr = this.f40407n;
-        boolean z3 = false;
+        int size = collection.size() + this.f40245v;
+        int[] iArr = this.f40243n;
+        boolean z6 = false;
         if (iArr.length < size) {
-            Object[] objArr = this.f40408u;
+            Object[] objArr = this.f40244u;
             a(size);
-            int i = this.f40409v;
+            int i = this.f40245v;
             if (i > 0) {
-                System.arraycopy(iArr, 0, this.f40407n, 0, i);
-                System.arraycopy(objArr, 0, this.f40408u, 0, this.f40409v);
+                System.arraycopy(iArr, 0, this.f40243n, 0, i);
+                System.arraycopy(objArr, 0, this.f40244u, 0, this.f40245v);
             }
-            c(iArr, objArr, this.f40409v);
+            c(iArr, objArr, this.f40245v);
         }
         Iterator it = collection.iterator();
         while (it.hasNext()) {
-            z3 |= add(it.next());
+            z6 |= add(it.next());
         }
-        return z3;
+        return z6;
     }
 
     @Override // java.util.Collection, java.util.Set
     public final void clear() {
-        int i = this.f40409v;
+        int i = this.f40245v;
         if (i != 0) {
-            c(this.f40407n, this.f40408u, i);
-            this.f40407n = f40404x;
-            this.f40408u = f40405y;
-            this.f40409v = 0;
+            c(this.f40243n, this.f40244u, i);
+            this.f40243n = f40240x;
+            this.f40244u = f40241y;
+            this.f40245v = 0;
         }
     }
 
@@ -220,51 +220,51 @@ public final class c implements Collection, Set {
     }
 
     public final int d(int i, Object obj) {
-        int i6 = this.f40409v;
-        if (i6 == 0) {
+        int i4 = this.f40245v;
+        if (i4 == 0) {
             return -1;
         }
-        int a9 = d.a(i6, i, this.f40407n);
-        if (a9 < 0 || obj.equals(this.f40408u[a9])) {
-            return a9;
-        }
-        int i9 = a9 + 1;
-        while (i9 < i6 && this.f40407n[i9] == i) {
-            if (obj.equals(this.f40408u[i9])) {
-                return i9;
-            }
-            i9++;
-        }
-        for (int i10 = a9 - 1; i10 >= 0 && this.f40407n[i10] == i; i10--) {
-            if (obj.equals(this.f40408u[i10])) {
-                return i10;
-            }
-        }
-        return ~i9;
-    }
-
-    public final int e() {
-        int i = this.f40409v;
-        if (i == 0) {
-            return -1;
-        }
-        int a9 = d.a(i, 0, this.f40407n);
-        if (a9 < 0 || this.f40408u[a9] == null) {
+        int a9 = d.a(i4, i, this.f40243n);
+        if (a9 < 0 || obj.equals(this.f40244u[a9])) {
             return a9;
         }
         int i6 = a9 + 1;
-        while (i6 < i && this.f40407n[i6] == 0) {
-            if (this.f40408u[i6] == null) {
+        while (i6 < i4 && this.f40243n[i6] == i) {
+            if (obj.equals(this.f40244u[i6])) {
                 return i6;
             }
             i6++;
         }
-        for (int i9 = a9 - 1; i9 >= 0 && this.f40407n[i9] == 0; i9--) {
-            if (this.f40408u[i9] == null) {
+        for (int i9 = a9 - 1; i9 >= 0 && this.f40243n[i9] == i; i9--) {
+            if (obj.equals(this.f40244u[i9])) {
                 return i9;
             }
         }
         return ~i6;
+    }
+
+    public final int e() {
+        int i = this.f40245v;
+        if (i == 0) {
+            return -1;
+        }
+        int a9 = d.a(i, 0, this.f40243n);
+        if (a9 < 0 || this.f40244u[a9] == null) {
+            return a9;
+        }
+        int i4 = a9 + 1;
+        while (i4 < i && this.f40243n[i4] == 0) {
+            if (this.f40244u[i4] == null) {
+                return i4;
+            }
+            i4++;
+        }
+        for (int i6 = a9 - 1; i6 >= 0 && this.f40243n[i6] == 0; i6--) {
+            if (this.f40244u[i6] == null) {
+                return i6;
+            }
+        }
+        return ~i4;
     }
 
     @Override // java.util.Collection, java.util.Set
@@ -274,12 +274,12 @@ public final class c implements Collection, Set {
         }
         if (obj instanceof Set) {
             Set set = (Set) obj;
-            if (this.f40409v != set.size()) {
+            if (this.f40245v != set.size()) {
                 return false;
             }
-            for (int i = 0; i < this.f40409v; i++) {
+            for (int i = 0; i < this.f40245v; i++) {
                 try {
-                    if (!set.contains(this.f40408u[i])) {
+                    if (!set.contains(this.f40244u[i])) {
                         return false;
                     }
                 } catch (ClassCastException | NullPointerException unused) {
@@ -291,69 +291,69 @@ public final class c implements Collection, Set {
     }
 
     public final void f(int i) {
-        Object[] objArr = this.f40408u;
+        Object[] objArr = this.f40244u;
         Object obj = objArr[i];
-        int i6 = this.f40409v;
-        if (i6 <= 1) {
-            c(this.f40407n, objArr, i6);
-            this.f40407n = f40404x;
-            this.f40408u = f40405y;
-            this.f40409v = 0;
+        int i4 = this.f40245v;
+        if (i4 <= 1) {
+            c(this.f40243n, objArr, i4);
+            this.f40243n = f40240x;
+            this.f40244u = f40241y;
+            this.f40245v = 0;
             return;
         }
-        int[] iArr = this.f40407n;
-        if (iArr.length <= 8 || i6 >= iArr.length / 3) {
-            int i9 = i6 - 1;
-            this.f40409v = i9;
-            if (i < i9) {
-                int i10 = i + 1;
-                System.arraycopy(iArr, i10, iArr, i, i9 - i);
-                Object[] objArr2 = this.f40408u;
-                System.arraycopy(objArr2, i10, objArr2, i, this.f40409v - i);
+        int[] iArr = this.f40243n;
+        if (iArr.length <= 8 || i4 >= iArr.length / 3) {
+            int i6 = i4 - 1;
+            this.f40245v = i6;
+            if (i < i6) {
+                int i9 = i + 1;
+                System.arraycopy(iArr, i9, iArr, i, i6 - i);
+                Object[] objArr2 = this.f40244u;
+                System.arraycopy(objArr2, i9, objArr2, i, this.f40245v - i);
             }
-            this.f40408u[this.f40409v] = null;
+            this.f40244u[this.f40245v] = null;
             return;
         }
-        a(i6 > 8 ? i6 + (i6 >> 1) : 8);
-        this.f40409v--;
+        a(i4 > 8 ? i4 + (i4 >> 1) : 8);
+        this.f40245v--;
         if (i > 0) {
-            System.arraycopy(iArr, 0, this.f40407n, 0, i);
-            System.arraycopy(objArr, 0, this.f40408u, 0, i);
+            System.arraycopy(iArr, 0, this.f40243n, 0, i);
+            System.arraycopy(objArr, 0, this.f40244u, 0, i);
         }
-        int i11 = this.f40409v;
-        if (i < i11) {
-            int i12 = i + 1;
-            System.arraycopy(iArr, i12, this.f40407n, i, i11 - i);
-            System.arraycopy(objArr, i12, this.f40408u, i, this.f40409v - i);
+        int i10 = this.f40245v;
+        if (i < i10) {
+            int i11 = i + 1;
+            System.arraycopy(iArr, i11, this.f40243n, i, i10 - i);
+            System.arraycopy(objArr, i11, this.f40244u, i, this.f40245v - i);
         }
     }
 
     @Override // java.util.Collection, java.util.Set
     public final int hashCode() {
-        int[] iArr = this.f40407n;
-        int i = this.f40409v;
-        int i6 = 0;
-        for (int i9 = 0; i9 < i; i9++) {
-            i6 += iArr[i9];
+        int[] iArr = this.f40243n;
+        int i = this.f40245v;
+        int i4 = 0;
+        for (int i6 = 0; i6 < i; i6++) {
+            i4 += iArr[i6];
         }
-        return i6;
+        return i4;
     }
 
     @Override // java.util.Collection, java.util.Set
     public final boolean isEmpty() {
-        return this.f40409v <= 0;
+        return this.f40245v <= 0;
     }
 
     @Override // java.util.Collection, java.lang.Iterable, java.util.Set
     public final Iterator iterator() {
-        if (this.f40410w == null) {
-            this.f40410w = new C4964a(1, this);
+        if (this.f40246w == null) {
+            this.f40246w = new C4914a(1, this);
         }
-        C4964a c4964a = this.f40410w;
-        if (((g) c4964a.f40432b) == null) {
-            c4964a.f40432b = new g(c4964a, 1);
+        C4914a c4914a = this.f40246w;
+        if (((g) c4914a.f40268b) == null) {
+            c4914a.f40268b = new g(c4914a, 1);
         }
-        return ((g) c4964a.f40432b).iterator();
+        return ((g) c4914a.f40268b).iterator();
     }
 
     @Override // java.util.Collection, java.util.Set
@@ -369,35 +369,35 @@ public final class c implements Collection, Set {
     @Override // java.util.Collection, java.util.Set
     public final boolean removeAll(Collection collection) {
         Iterator it = collection.iterator();
-        boolean z3 = false;
+        boolean z6 = false;
         while (it.hasNext()) {
-            z3 |= remove(it.next());
+            z6 |= remove(it.next());
         }
-        return z3;
+        return z6;
     }
 
     @Override // java.util.Collection, java.util.Set
     public final boolean retainAll(Collection collection) {
-        boolean z3 = false;
-        for (int i = this.f40409v - 1; i >= 0; i--) {
-            if (!collection.contains(this.f40408u[i])) {
+        boolean z6 = false;
+        for (int i = this.f40245v - 1; i >= 0; i--) {
+            if (!collection.contains(this.f40244u[i])) {
                 f(i);
-                z3 = true;
+                z6 = true;
             }
         }
-        return z3;
+        return z6;
     }
 
     @Override // java.util.Collection, java.util.Set
     public final int size() {
-        return this.f40409v;
+        return this.f40245v;
     }
 
     @Override // java.util.Collection, java.util.Set
     public final Object[] toArray() {
-        int i = this.f40409v;
+        int i = this.f40245v;
         Object[] objArr = new Object[i];
-        System.arraycopy(this.f40408u, 0, objArr, 0, i);
+        System.arraycopy(this.f40244u, 0, objArr, 0, i);
         return objArr;
     }
 
@@ -405,13 +405,13 @@ public final class c implements Collection, Set {
         if (isEmpty()) {
             return "{}";
         }
-        StringBuilder sb = new StringBuilder(this.f40409v * 14);
+        StringBuilder sb = new StringBuilder(this.f40245v * 14);
         sb.append('{');
-        for (int i = 0; i < this.f40409v; i++) {
+        for (int i = 0; i < this.f40245v; i++) {
             if (i > 0) {
                 sb.append(", ");
             }
-            Object obj = this.f40408u[i];
+            Object obj = this.f40244u[i];
             if (obj != this) {
                 sb.append(obj);
             } else {
@@ -424,12 +424,12 @@ public final class c implements Collection, Set {
 
     @Override // java.util.Collection, java.util.Set
     public final Object[] toArray(Object[] objArr) {
-        if (objArr.length < this.f40409v) {
-            objArr = (Object[]) Array.newInstance(objArr.getClass().getComponentType(), this.f40409v);
+        if (objArr.length < this.f40245v) {
+            objArr = (Object[]) Array.newInstance(objArr.getClass().getComponentType(), this.f40245v);
         }
-        System.arraycopy(this.f40408u, 0, objArr, 0, this.f40409v);
+        System.arraycopy(this.f40244u, 0, objArr, 0, this.f40245v);
         int length = objArr.length;
-        int i = this.f40409v;
+        int i = this.f40245v;
         if (length > i) {
             objArr[i] = null;
         }

@@ -1,41 +1,41 @@
 package Q7;
 
-import D.y;
+import D.x;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-import u7.C5089g;
+import u7.C5081g;
 
 /* loaded from: classes2.dex */
 public final class b implements Iterator, J7.a {
 
     /* renamed from: n, reason: collision with root package name */
-    public int f2665n = -1;
+    public int f2702n = -1;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f2666u;
+    public int f2703u;
 
     /* renamed from: v, reason: collision with root package name */
-    public int f2667v;
+    public int f2704v;
 
     /* renamed from: w, reason: collision with root package name */
-    public N7.c f2668w;
+    public N7.c f2705w;
 
     /* renamed from: x, reason: collision with root package name */
-    public int f2669x;
+    public int f2706x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final /* synthetic */ c f2670y;
+    public final /* synthetic */ c f2707y;
 
     public b(c cVar) {
-        this.f2670y = cVar;
+        this.f2707y = cVar;
         cVar.getClass();
-        int length = cVar.f2671a.length();
+        int length = cVar.f2708a.length();
         if (length < 0) {
-            throw new IllegalArgumentException(y.k(length, "Cannot coerce value to an empty range: maximum ", " is less than minimum 0."));
+            throw new IllegalArgumentException(x.j(length, "Cannot coerce value to an empty range: maximum ", " is less than minimum 0."));
         }
         length = length >= 0 ? 0 : length;
-        this.f2666u = length;
-        this.f2667v = length;
+        this.f2703u = length;
+        this.f2704v = length;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0018, code lost:
@@ -46,58 +46,58 @@ public final class b implements Iterator, J7.a {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void a() {
-        int i = this.f2667v;
+        int i = this.f2704v;
         if (i < 0) {
-            this.f2665n = 0;
-            this.f2668w = null;
+            this.f2702n = 0;
+            this.f2705w = null;
             return;
         }
-        c cVar = this.f2670y;
-        int i6 = cVar.f2672b;
-        if (i6 > 0) {
-            int i9 = this.f2669x + 1;
-            this.f2669x = i9;
+        c cVar = this.f2707y;
+        int i4 = cVar.f2709b;
+        if (i4 > 0) {
+            int i6 = this.f2706x + 1;
+            this.f2706x = i6;
         }
-        if (i <= cVar.f2671a.length()) {
-            C5089g c5089g = (C5089g) cVar.f2673c.invoke(cVar.f2671a, Integer.valueOf(this.f2667v));
-            if (c5089g == null) {
-                this.f2668w = new N7.c(this.f2666u, j.X(cVar.f2671a), 1);
-                this.f2667v = -1;
+        if (i <= cVar.f2708a.length()) {
+            C5081g c5081g = (C5081g) cVar.f2710c.invoke(cVar.f2708a, Integer.valueOf(this.f2704v));
+            if (c5081g == null) {
+                this.f2705w = new N7.c(this.f2703u, j.n0(cVar.f2708a), 1);
+                this.f2704v = -1;
             } else {
-                int intValue = ((Number) c5089g.f41332n).intValue();
-                int intValue2 = ((Number) c5089g.f41333u).intValue();
-                this.f2668w = V2.a.x(this.f2666u, intValue);
-                int i10 = intValue + intValue2;
-                this.f2666u = i10;
-                this.f2667v = i10 + (intValue2 == 0 ? 1 : 0);
+                int intValue = ((Number) c5081g.f41052n).intValue();
+                int intValue2 = ((Number) c5081g.f41053u).intValue();
+                this.f2705w = S0.f.x(this.f2703u, intValue);
+                int i9 = intValue + intValue2;
+                this.f2703u = i9;
+                this.f2704v = i9 + (intValue2 == 0 ? 1 : 0);
             }
-            this.f2665n = 1;
+            this.f2702n = 1;
         }
-        this.f2668w = new N7.c(this.f2666u, j.X(cVar.f2671a), 1);
-        this.f2667v = -1;
-        this.f2665n = 1;
+        this.f2705w = new N7.c(this.f2703u, j.n0(cVar.f2708a), 1);
+        this.f2704v = -1;
+        this.f2702n = 1;
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        if (this.f2665n == -1) {
+        if (this.f2702n == -1) {
             a();
         }
-        return this.f2665n == 1;
+        return this.f2702n == 1;
     }
 
     @Override // java.util.Iterator
     public final Object next() {
-        if (this.f2665n == -1) {
+        if (this.f2702n == -1) {
             a();
         }
-        if (this.f2665n == 0) {
+        if (this.f2702n == 0) {
             throw new NoSuchElementException();
         }
-        N7.c cVar = this.f2668w;
+        N7.c cVar = this.f2705w;
         kotlin.jvm.internal.h.c(cVar, "null cannot be cast to non-null type kotlin.ranges.IntRange");
-        this.f2668w = null;
-        this.f2665n = -1;
+        this.f2705w = null;
+        this.f2702n = -1;
         return cVar;
     }
 

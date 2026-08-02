@@ -4,10 +4,10 @@ package S7;
 public final class U implements V {
 
     /* renamed from: n, reason: collision with root package name */
-    public final k0 f2937n;
+    public final k0 f3020n;
 
     public U(k0 k0Var) {
-        this.f2937n = k0Var;
+        this.f3020n = k0Var;
     }
 
     @Override // S7.V
@@ -17,6 +17,6 @@ public final class U implements V {
 
     @Override // S7.V
     public final k0 k() {
-        return this.f2937n;
+        return this.f3020n;
     }
 }

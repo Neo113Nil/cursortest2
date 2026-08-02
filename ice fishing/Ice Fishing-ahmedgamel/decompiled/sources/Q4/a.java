@@ -3,12 +3,12 @@ package Q4;
 import java.util.List;
 import java.util.Map;
 import kotlin.jvm.internal.h;
-import v7.AbstractC5130k;
+import v7.AbstractC5120k;
 
 /* loaded from: classes2.dex */
 public final class a {
     public static final a INSTANCE = new a();
-    private static final List<String> PREFERRED_VARIANT_ORDER = AbstractC5130k.v(com.onesignal.core.internal.backend.impl.a.TURBINE_FEATURES_PLATFORM_ANDROID, "app", "all");
+    private static final List<String> PREFERRED_VARIANT_ORDER = AbstractC5120k.t(com.onesignal.core.internal.backend.impl.a.TURBINE_FEATURES_PLATFORM_ANDROID, "app", "all");
 
     private a() {
     }
@@ -23,7 +23,7 @@ public final class a {
                 h.b(map);
                 Map<String, String> map2 = map;
                 if (!map2.containsKey(language)) {
-                    language = com.anythink.core.express.b.a.f17530f;
+                    language = com.anythink.core.express.b.a.f18317f;
                 }
                 return map2.get(language);
             }

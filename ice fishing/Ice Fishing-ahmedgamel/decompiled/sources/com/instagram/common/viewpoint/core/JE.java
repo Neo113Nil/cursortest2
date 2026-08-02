@@ -7,14 +7,14 @@ public final class JE {
     public static byte[] A05;
     public static String[] A06 = {"OUufb3XpwzKYnlflZdZ6sRl07O4y2xde", "sKTdS4Xom3soESmXE0UV17qKIdPOParu", "kk23Dr8l3bATGrEguhsdZQtf", "3jRjB5CH7VItg40f0wyJnaKmLrgr1NBM", "BH8vD2JIXWvofCU6hHaybnU4mVSHqFOc", "vohsQcTTzwLv029o6bcJNqcBVW1DxWoo", "Jn5KmPxuP80vuetXL26eN8MkgXOAz5Tn", "UdULkD"};
     public int A00;
-    public final InterfaceC0947Hd A01;
-    public final C0948He A02;
+    public final InterfaceC0967Hd A01;
+    public final C0968He A02;
     public final JO A03;
     public final JR A04;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i6);
-        int i10 = 0;
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             String[] strArr = A06;
@@ -24,11 +24,11 @@ public final class JE {
             String[] strArr2 = A06;
             strArr2[2] = "SmGAr1wQXpWbqjnIPPUcEk3V";
             strArr2[7] = "BndLoX";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 105);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 105);
+            i9++;
         }
     }
 
@@ -40,16 +40,16 @@ public final class JE {
         A01();
     }
 
-    public JE(JO jo, JR jr, InterfaceC0947Hd interfaceC0947Hd) {
-        C0948He c0948He;
+    public JE(JO jo, JR jr, InterfaceC0967Hd interfaceC0967Hd) {
+        C0968He c0968He;
         this.A03 = jo;
         this.A04 = jr;
-        this.A01 = interfaceC0947Hd;
+        this.A01 = interfaceC0967Hd;
         if (A00(0, 13, 34).equals(jo.A07.A0W)) {
-            c0948He = new C0948He();
+            c0968He = new C0968He();
         } else {
-            c0948He = null;
+            c0968He = null;
         }
-        this.A02 = c0948He;
+        this.A02 = c0968He;
     }
 }

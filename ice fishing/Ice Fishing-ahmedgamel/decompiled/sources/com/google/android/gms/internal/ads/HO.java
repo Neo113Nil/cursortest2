@@ -31,141 +31,141 @@ import java.util.concurrent.Executor;
 import java.util.regex.Matcher;
 
 /* loaded from: classes2.dex */
-public final class HO implements InterfaceC4213yO {
+public final class HO implements InterfaceC4236yO {
 
     /* renamed from: C, reason: collision with root package name */
-    public String f25267C;
+    public String f26039C;
 
     /* renamed from: D, reason: collision with root package name */
-    public PlaybackMetrics.Builder f25268D;
+    public PlaybackMetrics.Builder f26040D;
 
     /* renamed from: G, reason: collision with root package name */
-    public DN f25271G;
+    public DN f26043G;
 
     /* renamed from: H, reason: collision with root package name */
-    public S0.e f25272H;
+    public S0.e f26044H;
 
     /* renamed from: I, reason: collision with root package name */
-    public S0.e f25273I;
+    public S0.e f26045I;
     public S0.e J;
 
     /* renamed from: K, reason: collision with root package name */
-    public DP f25274K;
+    public DP f26046K;
 
     /* renamed from: L, reason: collision with root package name */
-    public DP f25275L;
+    public DP f26047L;
 
     /* renamed from: M, reason: collision with root package name */
-    public DP f25276M;
+    public DP f26048M;
 
     /* renamed from: N, reason: collision with root package name */
-    public boolean f25277N;
+    public boolean f26049N;
 
     /* renamed from: O, reason: collision with root package name */
-    public boolean f25278O;
+    public boolean f26050O;
 
     /* renamed from: P, reason: collision with root package name */
-    public int f25279P;
+    public int f26051P;
 
     /* renamed from: Q, reason: collision with root package name */
-    public int f25280Q;
+    public int f26052Q;
 
     /* renamed from: R, reason: collision with root package name */
-    public int f25281R;
+    public int f26053R;
 
     /* renamed from: S, reason: collision with root package name */
-    public boolean f25282S;
+    public boolean f26054S;
 
     /* renamed from: n, reason: collision with root package name */
-    public final Context f25283n;
+    public final Context f26055n;
 
     /* renamed from: v, reason: collision with root package name */
-    public final DO f25285v;
+    public final DO f26057v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final PlaybackSession f25286w;
+    public final PlaybackSession f26058w;
 
     /* renamed from: u, reason: collision with root package name */
-    public final Executor f25284u = AbstractC3043cl.j();
+    public final Executor f26056u = AbstractC3066cl.j();
 
     /* renamed from: y, reason: collision with root package name */
-    public final U7 f25288y = new U7();
+    public final U7 f26060y = new U7();
 
     /* renamed from: z, reason: collision with root package name */
-    public final K7 f25289z = new K7();
+    public final K7 f26061z = new K7();
 
     /* renamed from: B, reason: collision with root package name */
-    public final HashMap f25266B = new HashMap();
+    public final HashMap f26038B = new HashMap();
 
     /* renamed from: A, reason: collision with root package name */
-    public final HashMap f25265A = new HashMap();
+    public final HashMap f26037A = new HashMap();
 
     /* renamed from: x, reason: collision with root package name */
-    public final long f25287x = SystemClock.elapsedRealtime();
+    public final long f26059x = SystemClock.elapsedRealtime();
 
     /* renamed from: E, reason: collision with root package name */
-    public int f25269E = 0;
+    public int f26041E = 0;
 
     /* renamed from: F, reason: collision with root package name */
-    public int f25270F = 0;
+    public int f26042F = 0;
 
     public HO(Context context, PlaybackSession playbackSession) {
-        this.f25283n = context.getApplicationContext();
-        this.f25286w = playbackSession;
-        DO r12 = new DO();
-        this.f25285v = r12;
-        r12.f24397d = this;
+        this.f26055n = context.getApplicationContext();
+        this.f26058w = playbackSession;
+        DO r1 = new DO();
+        this.f26057v = r1;
+        r1.f25142d = this;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC4213yO
+    @Override // com.google.android.gms.internal.ads.InterfaceC4236yO
     public final void a(int i) {
         if (i == 1) {
-            this.f25277N = true;
+            this.f26049N = true;
         }
     }
 
-    public final void c(int i, long j6, DP dp, int i6) {
+    public final void c(int i, long j6, DP dp, int i4) {
         TrackChangeEvent.Builder timeSinceCreatedMillis;
         TrackChangeEvent build;
-        timeSinceCreatedMillis = GO.s(i).setTimeSinceCreatedMillis(j6 - this.f25287x);
+        timeSinceCreatedMillis = GO.s(i).setTimeSinceCreatedMillis(j6 - this.f26059x);
         if (dp != null) {
             timeSinceCreatedMillis.setTrackState(1);
-            timeSinceCreatedMillis.setTrackChangeReason(i6 != 1 ? 1 : 2);
-            String str = dp.f24430n;
+            timeSinceCreatedMillis.setTrackChangeReason(i4 != 1 ? 1 : 2);
+            String str = dp.f25175n;
             if (str != null) {
                 timeSinceCreatedMillis.setContainerMimeType(str);
             }
-            String str2 = dp.f24431o;
+            String str2 = dp.f25176o;
             if (str2 != null) {
                 timeSinceCreatedMillis.setSampleMimeType(str2);
             }
-            String str3 = dp.f24427k;
+            String str3 = dp.f25172k;
             if (str3 != null) {
                 timeSinceCreatedMillis.setCodecName(str3);
             }
-            int i9 = dp.f24426j;
+            int i6 = dp.f25171j;
+            if (i6 != -1) {
+                timeSinceCreatedMillis.setBitrate(i6);
+            }
+            int i9 = dp.f25183v;
             if (i9 != -1) {
-                timeSinceCreatedMillis.setBitrate(i9);
+                timeSinceCreatedMillis.setWidth(i9);
             }
-            int i10 = dp.f24438v;
+            int i10 = dp.f25184w;
             if (i10 != -1) {
-                timeSinceCreatedMillis.setWidth(i10);
+                timeSinceCreatedMillis.setHeight(i10);
             }
-            int i11 = dp.f24439w;
+            int i11 = dp.f25154H;
             if (i11 != -1) {
-                timeSinceCreatedMillis.setHeight(i11);
+                timeSinceCreatedMillis.setChannelCount(i11);
             }
-            int i12 = dp.f24409H;
+            int i12 = dp.J;
             if (i12 != -1) {
-                timeSinceCreatedMillis.setChannelCount(i12);
+                timeSinceCreatedMillis.setAudioSampleRate(i12);
             }
-            int i13 = dp.J;
-            if (i13 != -1) {
-                timeSinceCreatedMillis.setAudioSampleRate(i13);
-            }
-            String str4 = dp.f24421d;
+            String str4 = dp.f25166d;
             if (str4 != null) {
-                String str5 = AbstractC3159eu.f29993a;
+                String str5 = AbstractC3182eu.f30782a;
                 String[] split = str4.split("-", -1);
                 Pair create = Pair.create(split[0], split.length >= 2 ? split[1] : null);
                 timeSinceCreatedMillis.setLanguage((String) create.first);
@@ -174,78 +174,78 @@ public final class HO implements InterfaceC4213yO {
                     timeSinceCreatedMillis.setLanguageRegion((String) obj);
                 }
             }
-            float f3 = dp.f24442z;
-            if (f3 != -1.0f) {
-                timeSinceCreatedMillis.setVideoFrameRate(f3);
+            float f2 = dp.f25187z;
+            if (f2 != -1.0f) {
+                timeSinceCreatedMillis.setVideoFrameRate(f2);
             }
         } else {
             timeSinceCreatedMillis.setTrackState(0);
         }
-        this.f25282S = true;
+        this.f26054S = true;
         build = timeSinceCreatedMillis.build();
-        this.f25284u.execute(new RunnableC3048cq(24, this, build));
+        this.f26056u.execute(new RunnableC3071cq(24, this, build));
     }
 
     /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
-    public final void e(AbstractC3604n8 abstractC3604n8, C3676oQ c3676oQ) {
-        PlaybackMetrics.Builder builder = this.f25268D;
-        if (c3676oQ == null) {
+    public final void e(AbstractC3627n8 abstractC3627n8, C3860rQ c3860rQ) {
+        PlaybackMetrics.Builder builder = this.f26040D;
+        if (c3860rQ == null) {
             return;
         }
-        int e9 = abstractC3604n8.e(c3676oQ.f32905a);
+        int e9 = abstractC3627n8.e(c3860rQ.f34406a);
         char c9 = 65535;
         if (e9 != -1) {
-            K7 k72 = this.f25289z;
+            K7 k72 = this.f26061z;
             int i = 0;
-            abstractC3604n8.d(e9, k72, false);
-            int i6 = k72.f25867c;
-            U7 u72 = this.f25288y;
-            abstractC3604n8.b(i6, u72, 0L);
-            L0 l02 = u72.f27894b.f29185b;
+            abstractC3627n8.d(e9, k72, false);
+            int i4 = k72.f26619c;
+            U7 u72 = this.f26060y;
+            abstractC3627n8.b(i4, u72, 0L);
+            L0 l02 = u72.f28691b.f29973b;
             if (l02 != null) {
-                String str = AbstractC3159eu.f29993a;
-                Uri uri = l02.f26006a;
+                String str = AbstractC3182eu.f30782a;
+                Uri uri = l02.f26806a;
                 String scheme = uri.getScheme();
-                if (scheme == null || !(AbstractC3043cl.D("rtsp", scheme) || AbstractC3043cl.D("rtspt", scheme))) {
+                if (scheme == null || !(AbstractC3066cl.D("rtsp", scheme) || AbstractC3066cl.D("rtspt", scheme))) {
                     String lastPathSegment = uri.getLastPathSegment();
                     if (lastPathSegment != null) {
                         int lastIndexOf = lastPathSegment.lastIndexOf(46);
                         if (lastIndexOf >= 0) {
-                            String f3 = AbstractC3043cl.f(lastPathSegment.substring(lastIndexOf + 1));
-                            switch (f3.hashCode()) {
+                            String f2 = AbstractC3066cl.f(lastPathSegment.substring(lastIndexOf + 1));
+                            switch (f2.hashCode()) {
                                 case 104579:
-                                    if (f3.equals("ism")) {
+                                    if (f2.equals("ism")) {
                                         c9 = 2;
                                         break;
                                     }
                                     break;
                                 case 108321:
-                                    if (f3.equals("mpd")) {
+                                    if (f2.equals("mpd")) {
                                         c9 = 0;
                                         break;
                                     }
                                     break;
                                 case 3242057:
-                                    if (f3.equals("isml")) {
+                                    if (f2.equals("isml")) {
                                         c9 = 3;
                                         break;
                                     }
                                     break;
                                 case 3299913:
-                                    if (f3.equals("m3u8")) {
+                                    if (f2.equals("m3u8")) {
                                         c9 = 1;
                                         break;
                                     }
                                     break;
                             }
-                            int i9 = c9 != 0 ? c9 != 1 ? (c9 == 2 || c9 == 3) ? 1 : 4 : 2 : 0;
-                            if (i9 != 4) {
-                                i = i9;
+                            int i6 = c9 != 0 ? c9 != 1 ? (c9 == 2 || c9 == 3) ? 1 : 4 : 2 : 0;
+                            if (i6 != 4) {
+                                i = i6;
                             }
                         }
                         String path = uri.getPath();
                         path.getClass();
-                        Matcher matcher = AbstractC3159eu.f29995c.matcher(path);
+                        Matcher matcher = AbstractC3182eu.f30784c.matcher(path);
                         if (matcher.matches()) {
                             String group = matcher.group(2);
                             if (group != null) {
@@ -265,23 +265,23 @@ public final class HO implements InterfaceC4213yO {
                 i = i != 0 ? i != 1 ? i != 2 ? 1 : 4 : 5 : 3;
             }
             builder.setStreamType(i);
-            long j6 = u72.f27901j;
-            if (j6 != com.anythink.basead.exoplayer.b.f6382b && !u72.i && !u72.f27899g && !u72.b()) {
-                builder.setMediaDurationMillis(AbstractC3159eu.t(j6));
+            long j6 = u72.f28698j;
+            if (j6 != com.anythink.basead.exoplayer.b.f7168b && !u72.i && !u72.f28696g && !u72.b()) {
+                builder.setMediaDurationMillis(AbstractC3182eu.t(j6));
             }
             builder.setPlaybackType(true != u72.b() ? 1 : 2);
-            this.f25282S = true;
+            this.f26054S = true;
         }
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC4213yO
-    public final void f(C4159xO c4159xO, int i, long j6) {
-        C3676oQ c3676oQ = c4159xO.f35007d;
-        if (c3676oQ != null) {
-            String a9 = this.f25285v.a(c4159xO.f35005b, c3676oQ);
-            HashMap hashMap = this.f25266B;
+    @Override // com.google.android.gms.internal.ads.InterfaceC4236yO
+    public final void f(C4182xO c4182xO, int i, long j6) {
+        C3860rQ c3860rQ = c4182xO.f35788d;
+        if (c3860rQ != null) {
+            String a9 = this.f26057v.a(c4182xO.f35786b, c3860rQ);
+            HashMap hashMap = this.f26038B;
             Long l9 = (Long) hashMap.get(a9);
-            HashMap hashMap2 = this.f25265A;
+            HashMap hashMap2 = this.f26037A;
             Long l10 = (Long) hashMap2.get(a9);
             hashMap.put(a9, Long.valueOf((l9 == null ? 0L : l9.longValue()) + j6));
             hashMap2.put(a9, Long.valueOf((l10 != null ? l10.longValue() : 0L) + i));
@@ -327,15 +327,15 @@ public final class HO implements InterfaceC4213yO {
     /* JADX WARN: Type inference failed for: r8v0 */
     /* JADX WARN: Type inference failed for: r8v1, types: [S0.e, java.lang.Throwable] */
     /* JADX WARN: Type inference failed for: r8v3 */
-    @Override // com.google.android.gms.internal.ads.InterfaceC4213yO
+    @Override // com.google.android.gms.internal.ads.InterfaceC4236yO
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void g(C4051vO c4051vO, S0.s sVar) {
+    public final void g(C4074vO c4074vO, S0.s sVar) {
         ?? r82;
         int i;
         PN pn;
-        int i6;
+        int i4;
         HO ho;
         PlaybackStateEvent.Builder state;
         PlaybackStateEvent.Builder timeSinceCreatedMillis;
@@ -343,364 +343,364 @@ public final class HO implements InterfaceC4213yO {
         NetworkEvent.Builder networkType;
         NetworkEvent.Builder timeSinceCreatedMillis2;
         NetworkEvent build2;
-        boolean z3;
+        boolean z6;
         DP dp;
+        int i6;
         int i9;
-        int i10;
         PlaybackErrorEvent.Builder timeSinceCreatedMillis3;
         PlaybackErrorEvent.Builder errorCode;
         PlaybackErrorEvent.Builder subErrorCode;
         PlaybackErrorEvent.Builder exception;
         PlaybackErrorEvent build3;
         EO eo;
+        int i10;
         int i11;
-        int i12;
-        int i13 = 26;
-        if (((XO) sVar.f2840u).f28523a.size() == 0) {
+        int i12 = 26;
+        if (((XO) sVar.f2969u).f29303a.size() == 0) {
             return;
         }
-        int i14 = 0;
-        for (int i15 = 0; i15 < ((XO) sVar.f2840u).f28523a.size(); i15++) {
-            SparseBooleanArray sparseBooleanArray = ((XO) sVar.f2840u).f28523a;
-            AbstractC2772Sd.K(i15, sparseBooleanArray.size());
-            int keyAt = sparseBooleanArray.keyAt(i15);
-            C4159xO c4159xO = (C4159xO) ((SparseArray) sVar.f2841v).get(keyAt);
-            c4159xO.getClass();
+        int i13 = 0;
+        for (int i14 = 0; i14 < ((XO) sVar.f2969u).f29303a.size(); i14++) {
+            SparseBooleanArray sparseBooleanArray = ((XO) sVar.f2969u).f29303a;
+            AbstractC2792Sd.K(i14, sparseBooleanArray.size());
+            int keyAt = sparseBooleanArray.keyAt(i14);
+            C4182xO c4182xO = (C4182xO) ((SparseArray) sVar.f2970v).get(keyAt);
+            c4182xO.getClass();
             if (keyAt == 0) {
-                DO r13 = this.f25285v;
+                DO r13 = this.f26057v;
                 synchronized (r13) {
                     try {
-                        if (r13.f24397d == null) {
+                        if (r13.f25142d == null) {
                             throw null;
                         }
-                        AbstractC3604n8 abstractC3604n8 = r13.f24398e;
-                        r13.f24398e = c4159xO.f35005b;
-                        Iterator it = r13.f24396c.values().iterator();
+                        AbstractC3627n8 abstractC3627n8 = r13.f25143e;
+                        r13.f25143e = c4182xO.f35786b;
+                        Iterator it = r13.f25141c.values().iterator();
                         while (it.hasNext()) {
                             CO co = (CO) it.next();
-                            if (co.a(abstractC3604n8, r13.f24398e) && !co.b(c4159xO)) {
+                            if (co.a(abstractC3627n8, r13.f25143e) && !co.b(c4182xO)) {
                             }
                             it.remove();
-                            if (co.f24109a.equals(r13.f24399f)) {
+                            if (co.f24872a.equals(r13.f25144f)) {
                                 r13.d(co);
                             }
-                            if (co.f24113e) {
-                                r13.f24397d.p(c4159xO, co.f24109a);
+                            if (co.f24876e) {
+                                r13.f25142d.p(c4182xO, co.f24872a);
                             }
                         }
-                        r13.c(c4159xO);
+                        r13.c(c4182xO);
                     } finally {
                     }
                 }
             } else if (keyAt == 11) {
-                DO r42 = this.f25285v;
+                DO r42 = this.f26057v;
                 synchronized (r42) {
                     try {
-                        if (r42.f24397d == null) {
+                        if (r42.f25142d == null) {
                             throw null;
                         }
-                        Iterator it2 = r42.f24396c.values().iterator();
+                        Iterator it2 = r42.f25141c.values().iterator();
                         while (it2.hasNext()) {
                             CO co2 = (CO) it2.next();
-                            if (co2.b(c4159xO)) {
+                            if (co2.b(c4182xO)) {
                                 it2.remove();
-                                if (co2.f24109a.equals(r42.f24399f)) {
+                                if (co2.f24872a.equals(r42.f25144f)) {
                                     r42.d(co2);
                                 }
-                                if (co2.f24113e) {
-                                    r42.f24397d.p(c4159xO, co2.f24109a);
+                                if (co2.f24876e) {
+                                    r42.f25142d.p(c4182xO, co2.f24872a);
                                 }
                             }
                         }
-                        r42.c(c4159xO);
+                        r42.c(c4182xO);
                     } finally {
                     }
                 }
             } else {
-                this.f25285v.b(c4159xO);
+                this.f26057v.b(c4182xO);
             }
         }
         long elapsedRealtime = SystemClock.elapsedRealtime();
         if (sVar.s(0)) {
-            C4159xO c4159xO2 = (C4159xO) ((SparseArray) sVar.f2841v).get(0);
-            c4159xO2.getClass();
-            if (this.f25268D != null) {
-                e(c4159xO2.f35005b, c4159xO2.f35007d);
+            C4182xO c4182xO2 = (C4182xO) ((SparseArray) sVar.f2970v).get(0);
+            c4182xO2.getClass();
+            if (this.f26040D != null) {
+                e(c4182xO2.f35786b, c4182xO2.f35788d);
             }
         }
-        if (sVar.s(2) && this.f25268D != null) {
-            RB rb = c4051vO.Q1().f34843a;
+        if (sVar.s(2) && this.f26040D != null) {
+            RB rb = c4074vO.R1().f35620a;
             int size = rb.size();
-            int i16 = 0;
+            int i15 = 0;
             loop3: while (true) {
-                if (i16 >= size) {
+                if (i15 >= size) {
                     eo = null;
                     break;
                 }
-                C3140eb c3140eb = (C3140eb) rb.get(i16);
+                C3163eb c3163eb = (C3163eb) rb.get(i15);
                 while (true) {
-                    i12 = i16 + 1;
-                    if (i14 < c3140eb.f29941a) {
-                        if (c3140eb.f29945e[i14] && (eo = c3140eb.f29942b.f23638d[i14].f24435s) != null) {
+                    i11 = i15 + 1;
+                    if (i13 < c3163eb.f30732a) {
+                        if (c3163eb.f30736e[i13] && (eo = c3163eb.f30733b.f24418d[i13].f25180s) != null) {
                             break loop3;
                         } else {
-                            i14++;
+                            i13++;
                         }
                     }
                 }
-                i16 = i12;
-                i14 = 0;
+                i15 = i11;
+                i13 = 0;
             }
             if (eo != null) {
-                PlaybackMetrics.Builder builder = this.f25268D;
-                String str = AbstractC3159eu.f29993a;
+                PlaybackMetrics.Builder builder = this.f26040D;
+                String str = AbstractC3182eu.f30782a;
                 PlaybackMetrics.Builder b9 = FO.b(builder);
-                int i17 = 0;
+                int i16 = 0;
                 while (true) {
-                    if (i17 >= eo.f24612w) {
-                        i11 = 1;
+                    if (i16 >= eo.f25373w) {
+                        i10 = 1;
                         break;
                     }
-                    UUID uuid = eo.f24609n[i17].f23671u;
-                    if (uuid.equals(Yw.f28763d)) {
-                        i11 = 3;
+                    UUID uuid = eo.f25370n[i16].f24451u;
+                    if (uuid.equals(Yw.f29543d)) {
+                        i10 = 3;
                         break;
-                    } else if (uuid.equals(Yw.f28764e)) {
-                        i11 = 2;
+                    } else if (uuid.equals(Yw.f29544e)) {
+                        i10 = 2;
                         break;
                     } else {
-                        if (uuid.equals(Yw.f28762c)) {
-                            i11 = 6;
+                        if (uuid.equals(Yw.f29542c)) {
+                            i10 = 6;
                             break;
                         }
-                        i17++;
+                        i16++;
                     }
                 }
-                b9.setDrmType(i11);
+                b9.setDrmType(i10);
             }
         }
         if (sVar.s(1011)) {
-            this.f25281R++;
+            this.f26053R++;
         }
-        DN dn = this.f25271G;
+        DN dn = this.f26043G;
         if (dn != null) {
-            Context context = this.f25283n;
-            int i18 = dn.f24386n;
-            if (i18 == 1001) {
-                i9 = 20;
+            Context context = this.f26055n;
+            int i17 = dn.f25131n;
+            if (i17 == 1001) {
+                i6 = 20;
             } else {
-                boolean z6 = dn.f24388v == 1;
-                int i19 = dn.f24392z;
+                boolean z9 = dn.f25133v == 1;
+                int i18 = dn.f25137z;
                 Throwable cause = dn.getCause();
                 cause.getClass();
                 if (cause instanceof IOException) {
                     if (cause instanceof VL) {
-                        i10 = ((VL) cause).f28136v;
-                        i9 = 5;
+                        i9 = ((VL) cause).f28933v;
+                        i6 = 5;
                     } else if (cause instanceof U4) {
-                        i10 = 0;
-                        i9 = 11;
+                        i9 = 0;
+                        i6 = 11;
                     } else {
-                        boolean z9 = cause instanceof C3886sL;
-                        if (z9 || (cause instanceof AbstractC3781qN)) {
-                            if (C3640nr.a(context).b() == 1) {
-                                i9 = 3;
+                        boolean z10 = cause instanceof C3909sL;
+                        if (z10 || (cause instanceof AbstractC3804qN)) {
+                            if (C3663nr.a(context).b() == 1) {
+                                i6 = 3;
                             } else {
                                 Throwable cause2 = cause.getCause();
                                 if (cause2 instanceof UnknownHostException) {
-                                    i10 = 0;
-                                    i9 = 6;
+                                    i9 = 0;
+                                    i6 = 6;
                                 } else if (cause2 instanceof SocketTimeoutException) {
-                                    i10 = 0;
-                                    i9 = 7;
-                                } else if (z9 && ((C3886sL) cause).f33970u == 1) {
-                                    i10 = 0;
-                                    i9 = 4;
+                                    i9 = 0;
+                                    i6 = 7;
+                                } else if (z10 && ((C3909sL) cause).f34738u == 1) {
+                                    i9 = 0;
+                                    i6 = 4;
                                 } else {
-                                    i10 = 0;
-                                    i9 = 8;
+                                    i9 = 0;
+                                    i6 = 8;
                                 }
                             }
-                        } else if (i18 == 1002) {
-                            i9 = 21;
-                        } else if (cause instanceof C4214yP) {
+                        } else if (i17 == 1002) {
+                            i6 = 21;
+                        } else if (cause instanceof C4237yP) {
                             Throwable cause3 = cause.getCause();
                             cause3.getClass();
                             if (cause3 instanceof MediaDrm.MediaDrmStateException) {
-                                i10 = AbstractC3159eu.k(((MediaDrm.MediaDrmStateException) cause3).getDiagnosticInfo());
-                                switch (AbstractC3159eu.g(i10)) {
+                                i9 = AbstractC3182eu.k(((MediaDrm.MediaDrmStateException) cause3).getDiagnosticInfo());
+                                switch (AbstractC3182eu.g(i9)) {
                                     case 6002:
-                                        i9 = 24;
+                                        i6 = 24;
                                         break;
                                     case 6003:
-                                        i9 = 28;
+                                        i6 = 28;
                                         break;
                                     case 6004:
-                                        i9 = 25;
+                                        i6 = 25;
                                         break;
                                     case 6005:
-                                        i9 = 26;
+                                        i6 = 26;
                                         break;
                                     default:
-                                        i9 = 27;
+                                        i6 = 27;
                                         break;
                                 }
                             } else if (cause3 instanceof MediaDrmResetException) {
-                                i9 = 27;
+                                i6 = 27;
                             } else if (cause3 instanceof NotProvisionedException) {
-                                i9 = 24;
+                                i6 = 24;
                             } else if (cause3 instanceof DeniedByServerException) {
-                                i9 = 29;
+                                i6 = 29;
                             } else {
                                 if (!(cause3 instanceof CP)) {
-                                    i9 = 30;
+                                    i6 = 30;
                                 }
-                                i10 = 0;
-                                i9 = 23;
+                                i9 = 0;
+                                i6 = 23;
                             }
                         } else if ((cause instanceof DK) && (cause.getCause() instanceof FileNotFoundException)) {
                             Throwable cause4 = cause.getCause();
                             cause4.getClass();
                             Throwable cause5 = cause4.getCause();
-                            i9 = ((cause5 instanceof ErrnoException) && ((ErrnoException) cause5).errno == OsConstants.EACCES) ? 32 : 31;
+                            i6 = ((cause5 instanceof ErrnoException) && ((ErrnoException) cause5).errno == OsConstants.EACCES) ? 32 : 31;
                         } else {
-                            i9 = 9;
+                            i6 = 9;
                         }
                     }
-                    timeSinceCreatedMillis3 = GO.k().setTimeSinceCreatedMillis(elapsedRealtime - this.f25287x);
-                    errorCode = timeSinceCreatedMillis3.setErrorCode(i9);
-                    subErrorCode = errorCode.setSubErrorCode(i10);
+                    timeSinceCreatedMillis3 = GO.k().setTimeSinceCreatedMillis(elapsedRealtime - this.f26059x);
+                    errorCode = timeSinceCreatedMillis3.setErrorCode(i6);
+                    subErrorCode = errorCode.setSubErrorCode(i9);
                     exception = subErrorCode.setException(dn);
                     build3 = exception.build();
-                    this.f25284u.execute(new RunnableC3048cq(i13, this, build3));
-                    this.f25282S = true;
-                    this.f25271G = null;
+                    this.f26056u.execute(new RunnableC3071cq(i12, this, build3));
+                    this.f26054S = true;
+                    this.f26043G = null;
                 } else {
-                    if (z6) {
-                        i9 = 35;
-                        if (i19 != 0) {
+                    if (z9) {
+                        i6 = 35;
+                        if (i18 != 0) {
                         }
                     }
-                    if (z6 && i19 == 3) {
-                        i9 = 15;
+                    if (z9 && i18 == 3) {
+                        i6 = 15;
                     } else {
-                        if (!z6 || i19 != 2) {
-                            if (cause instanceof PP) {
-                                i10 = AbstractC3159eu.k(((PP) cause).f26817v);
-                                i9 = 13;
+                        if (!z9 || i18 != 2) {
+                            if (cause instanceof QP) {
+                                i9 = AbstractC3182eu.k(((QP) cause).f27813v);
+                                i6 = 13;
                             } else {
-                                i9 = 14;
-                                if (cause instanceof NP) {
-                                    i10 = ((NP) cause).f26489n;
+                                i6 = 14;
+                                if (cause instanceof OP) {
+                                    i9 = ((OP) cause).f27386n;
                                 } else if (!(cause instanceof OutOfMemoryError)) {
-                                    if (cause instanceof C2923aP) {
-                                        i9 = 17;
-                                    } else if (cause instanceof C2977bP) {
-                                        i10 = ((C2977bP) cause).f29291n;
-                                        i9 = 18;
+                                    if (cause instanceof C2946aP) {
+                                        i6 = 17;
+                                    } else if (cause instanceof C3000bP) {
+                                        i9 = ((C3000bP) cause).f30079n;
+                                        i6 = 18;
                                     } else if (cause instanceof MediaCodec.CryptoException) {
-                                        i10 = ((MediaCodec.CryptoException) cause).getErrorCode();
-                                        switch (AbstractC3159eu.g(i10)) {
+                                        i9 = ((MediaCodec.CryptoException) cause).getErrorCode();
+                                        switch (AbstractC3182eu.g(i9)) {
                                         }
                                     } else {
-                                        i10 = 0;
-                                        i9 = 22;
+                                        i9 = 0;
+                                        i6 = 22;
                                     }
                                 }
                             }
-                            timeSinceCreatedMillis3 = GO.k().setTimeSinceCreatedMillis(elapsedRealtime - this.f25287x);
-                            errorCode = timeSinceCreatedMillis3.setErrorCode(i9);
-                            subErrorCode = errorCode.setSubErrorCode(i10);
+                            timeSinceCreatedMillis3 = GO.k().setTimeSinceCreatedMillis(elapsedRealtime - this.f26059x);
+                            errorCode = timeSinceCreatedMillis3.setErrorCode(i6);
+                            subErrorCode = errorCode.setSubErrorCode(i9);
                             exception = subErrorCode.setException(dn);
                             build3 = exception.build();
-                            this.f25284u.execute(new RunnableC3048cq(i13, this, build3));
-                            this.f25282S = true;
-                            this.f25271G = null;
+                            this.f26056u.execute(new RunnableC3071cq(i12, this, build3));
+                            this.f26054S = true;
+                            this.f26043G = null;
                         }
-                        i10 = 0;
-                        i9 = 23;
-                        timeSinceCreatedMillis3 = GO.k().setTimeSinceCreatedMillis(elapsedRealtime - this.f25287x);
-                        errorCode = timeSinceCreatedMillis3.setErrorCode(i9);
-                        subErrorCode = errorCode.setSubErrorCode(i10);
+                        i9 = 0;
+                        i6 = 23;
+                        timeSinceCreatedMillis3 = GO.k().setTimeSinceCreatedMillis(elapsedRealtime - this.f26059x);
+                        errorCode = timeSinceCreatedMillis3.setErrorCode(i6);
+                        subErrorCode = errorCode.setSubErrorCode(i9);
                         exception = subErrorCode.setException(dn);
                         build3 = exception.build();
-                        this.f25284u.execute(new RunnableC3048cq(i13, this, build3));
-                        this.f25282S = true;
-                        this.f25271G = null;
+                        this.f26056u.execute(new RunnableC3071cq(i12, this, build3));
+                        this.f26054S = true;
+                        this.f26043G = null;
                     }
                 }
             }
-            i10 = 0;
-            timeSinceCreatedMillis3 = GO.k().setTimeSinceCreatedMillis(elapsedRealtime - this.f25287x);
-            errorCode = timeSinceCreatedMillis3.setErrorCode(i9);
-            subErrorCode = errorCode.setSubErrorCode(i10);
+            i9 = 0;
+            timeSinceCreatedMillis3 = GO.k().setTimeSinceCreatedMillis(elapsedRealtime - this.f26059x);
+            errorCode = timeSinceCreatedMillis3.setErrorCode(i6);
+            subErrorCode = errorCode.setSubErrorCode(i9);
             exception = subErrorCode.setException(dn);
             build3 = exception.build();
-            this.f25284u.execute(new RunnableC3048cq(i13, this, build3));
-            this.f25282S = true;
-            this.f25271G = null;
+            this.f26056u.execute(new RunnableC3071cq(i12, this, build3));
+            this.f26054S = true;
+            this.f26043G = null;
         }
         if (sVar.s(2)) {
-            C4109wb Q12 = c4051vO.Q1();
-            boolean a9 = Q12.a(2);
-            boolean a10 = Q12.a(1);
-            boolean a11 = Q12.a(3);
+            C4132wb R1 = c4074vO.R1();
+            boolean a9 = R1.a(2);
+            boolean a10 = R1.a(1);
+            boolean a11 = R1.a(3);
             if (a9 || a10) {
-                z3 = a11;
+                z6 = a11;
             } else if (a11) {
-                z3 = true;
+                z6 = true;
             }
             if (a9) {
                 dp = null;
             } else {
                 dp = null;
-                if (!Objects.equals(this.f25274K, null)) {
-                    int i20 = this.f25274K == null ? 1 : 0;
-                    this.f25274K = null;
-                    c(1, elapsedRealtime, null, i20);
+                if (!Objects.equals(this.f26046K, null)) {
+                    int i19 = this.f26046K == null ? 1 : 0;
+                    this.f26046K = null;
+                    c(1, elapsedRealtime, null, i19);
                 }
             }
-            if (!a10 && !Objects.equals(this.f25275L, dp)) {
-                int i21 = this.f25275L == null ? 1 : 0;
-                this.f25275L = dp;
-                c(0, elapsedRealtime, dp, i21);
+            if (!a10 && !Objects.equals(this.f26047L, dp)) {
+                int i20 = this.f26047L == null ? 1 : 0;
+                this.f26047L = dp;
+                c(0, elapsedRealtime, dp, i20);
             }
-            if (!z3 && !Objects.equals(this.f25276M, dp)) {
-                int i22 = this.f25276M == null ? 1 : 0;
-                this.f25276M = dp;
-                c(2, elapsedRealtime, dp, i22);
+            if (!z6 && !Objects.equals(this.f26048M, dp)) {
+                int i21 = this.f26048M == null ? 1 : 0;
+                this.f26048M = dp;
+                c(2, elapsedRealtime, dp, i21);
             }
             r82 = dp;
-            if (q(this.f25272H)) {
-                DP dp2 = (DP) this.f25272H.f2781u;
-                if (dp2.f24439w != -1) {
-                    if (!Objects.equals(this.f25274K, dp2)) {
-                        int i23 = this.f25274K == null ? 1 : 0;
-                        this.f25274K = dp2;
-                        c(1, elapsedRealtime, dp2, i23);
+            if (q(this.f26044H)) {
+                DP dp2 = (DP) this.f26044H.f2908u;
+                if (dp2.f25184w != -1) {
+                    if (!Objects.equals(this.f26046K, dp2)) {
+                        int i22 = this.f26046K == null ? 1 : 0;
+                        this.f26046K = dp2;
+                        c(1, elapsedRealtime, dp2, i22);
                     }
-                    this.f25272H = r82;
+                    this.f26044H = r82;
                 }
             }
-            if (q(this.f25273I)) {
-                DP dp3 = (DP) this.f25273I.f2781u;
-                if (!Objects.equals(this.f25275L, dp3)) {
-                    int i24 = this.f25275L == null ? 1 : 0;
-                    this.f25275L = dp3;
-                    c(0, elapsedRealtime, dp3, i24);
+            if (q(this.f26045I)) {
+                DP dp3 = (DP) this.f26045I.f2908u;
+                if (!Objects.equals(this.f26047L, dp3)) {
+                    int i23 = this.f26047L == null ? 1 : 0;
+                    this.f26047L = dp3;
+                    c(0, elapsedRealtime, dp3, i23);
                 }
-                this.f25273I = r82;
+                this.f26045I = r82;
             }
             if (q(this.J)) {
-                DP dp4 = (DP) this.J.f2781u;
-                if (!Objects.equals(this.f25276M, dp4)) {
-                    int i25 = this.f25276M == null ? 1 : 0;
-                    this.f25276M = dp4;
-                    c(2, elapsedRealtime, dp4, i25);
+                DP dp4 = (DP) this.J.f2908u;
+                if (!Objects.equals(this.f26048M, dp4)) {
+                    int i24 = this.f26048M == null ? 1 : 0;
+                    this.f26048M = dp4;
+                    c(2, elapsedRealtime, dp4, i24);
                 }
                 this.J = r82;
             }
-            switch (C3640nr.a(this.f25283n).b()) {
+            switch (C3663nr.a(this.f26055n).b()) {
                 case 0:
                     i = 0;
                     break;
@@ -734,72 +734,72 @@ public final class HO implements InterfaceC4213yO {
                     i = 7;
                     break;
             }
-            if (i != this.f25270F) {
-                this.f25270F = i;
+            if (i != this.f26042F) {
+                this.f26042F = i;
                 networkType = GO.h().setNetworkType(i);
-                timeSinceCreatedMillis2 = networkType.setTimeSinceCreatedMillis(elapsedRealtime - this.f25287x);
+                timeSinceCreatedMillis2 = networkType.setTimeSinceCreatedMillis(elapsedRealtime - this.f26059x);
                 build2 = timeSinceCreatedMillis2.build();
-                this.f25284u.execute(new RunnableC3048cq(22, this, build2));
+                this.f26056u.execute(new RunnableC3071cq(22, this, build2));
             }
-            if (c4051vO.u1() != 2) {
-                this.f25277N = false;
+            if (c4074vO.u1() != 2) {
+                this.f26049N = false;
             }
-            c4051vO.f34696w.b();
-            pn = c4051vO.f34695v;
-            pn.P0();
-            if (pn.f26771D0.f31953f != null) {
-                this.f25278O = false;
+            c4074vO.f35459w.b();
+            pn = c4074vO.f35458v;
+            pn.O0();
+            if (pn.f27592y0.f32733f != null) {
+                this.f26050O = false;
             } else if (sVar.s(10)) {
-                this.f25278O = true;
+                this.f26050O = true;
             }
-            int u12 = c4051vO.u1();
-            if (!this.f25277N) {
-                i6 = 5;
-            } else if (this.f25278O) {
-                i6 = 13;
+            int u12 = c4074vO.u1();
+            if (!this.f26049N) {
+                i4 = 5;
+            } else if (this.f26050O) {
+                i4 = 13;
             } else if (u12 == 4) {
-                i6 = 11;
+                i4 = 11;
             } else {
-                i6 = 12;
+                i4 = 12;
                 if (u12 == 2) {
-                    int i26 = this.f25269E;
-                    i6 = (i26 == 0 || i26 == 2 || i26 == 12) ? 2 : !c4051vO.A1() ? 7 : c4051vO.w1() != 0 ? 10 : 6;
+                    int i25 = this.f26041E;
+                    i4 = (i25 == 0 || i25 == 2 || i25 == 12) ? 2 : !c4074vO.A1() ? 7 : c4074vO.w1() != 0 ? 10 : 6;
                 } else if (u12 == 3) {
-                    i6 = !c4051vO.A1() ? 4 : c4051vO.w1() != 0 ? 9 : 3;
-                } else if (u12 != 1 || this.f25269E == 0) {
-                    i6 = this.f25269E;
+                    i4 = !c4074vO.A1() ? 4 : c4074vO.w1() != 0 ? 9 : 3;
+                } else if (u12 != 1 || this.f26041E == 0) {
+                    i4 = this.f26041E;
                 }
             }
-            if (this.f25269E != i6) {
-                this.f25269E = i6;
-                this.f25282S = true;
-                state = GO.r().setState(this.f25269E);
-                timeSinceCreatedMillis = state.setTimeSinceCreatedMillis(elapsedRealtime - this.f25287x);
+            if (this.f26041E != i4) {
+                this.f26041E = i4;
+                this.f26054S = true;
+                state = GO.r().setState(this.f26041E);
+                timeSinceCreatedMillis = state.setTimeSinceCreatedMillis(elapsedRealtime - this.f26059x);
                 build = timeSinceCreatedMillis.build();
-                this.f25284u.execute(new RunnableC3048cq(23, this, build));
+                this.f26056u.execute(new RunnableC3071cq(23, this, build));
             }
             if (sVar.s(1028)) {
                 return;
             }
-            DO r22 = this.f25285v;
-            C4159xO c4159xO3 = (C4159xO) ((SparseArray) sVar.f2841v).get(1028);
-            c4159xO3.getClass();
+            DO r22 = this.f26057v;
+            C4182xO c4182xO3 = (C4182xO) ((SparseArray) sVar.f2970v).get(1028);
+            c4182xO3.getClass();
             synchronized (r22) {
                 try {
-                    String str2 = r22.f24399f;
+                    String str2 = r22.f25144f;
                     if (str2 != null) {
-                        CO co3 = (CO) r22.f24396c.get(str2);
+                        CO co3 = (CO) r22.f25141c.get(str2);
                         if (co3 == null) {
                             throw r82;
                         }
                         r22.d(co3);
                     }
-                    Iterator it3 = r22.f24396c.values().iterator();
+                    Iterator it3 = r22.f25141c.values().iterator();
                     while (it3.hasNext()) {
                         CO co4 = (CO) it3.next();
                         it3.remove();
-                        if (co4.f24113e && (ho = r22.f24397d) != null) {
-                            ho.p(c4159xO3, co4.f24109a);
+                        if (co4.f24876e && (ho = r22.f25142d) != null) {
+                            ho.p(c4182xO3, co4.f24872a);
                         }
                     }
                 } finally {
@@ -808,91 +808,91 @@ public final class HO implements InterfaceC4213yO {
             return;
         }
         r82 = 0;
-        if (q(this.f25272H)) {
+        if (q(this.f26044H)) {
         }
-        if (q(this.f25273I)) {
+        if (q(this.f26045I)) {
         }
         if (q(this.J)) {
         }
-        switch (C3640nr.a(this.f25283n).b()) {
+        switch (C3663nr.a(this.f26055n).b()) {
         }
-        if (i != this.f25270F) {
+        if (i != this.f26042F) {
         }
-        if (c4051vO.u1() != 2) {
+        if (c4074vO.u1() != 2) {
         }
-        c4051vO.f34696w.b();
-        pn = c4051vO.f34695v;
-        pn.P0();
-        if (pn.f26771D0.f31953f != null) {
+        c4074vO.f35459w.b();
+        pn = c4074vO.f35458v;
+        pn.O0();
+        if (pn.f27592y0.f32733f != null) {
         }
-        int u122 = c4051vO.u1();
-        if (!this.f25277N) {
+        int u122 = c4074vO.u1();
+        if (!this.f26049N) {
         }
-        if (this.f25269E != i6) {
+        if (this.f26041E != i4) {
         }
         if (sVar.s(1028)) {
         }
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC4213yO
-    public final void h(C4158xN c4158xN) {
-        this.f25279P += c4158xN.f34999g;
-        this.f25280Q += c4158xN.f34997e;
+    @Override // com.google.android.gms.internal.ads.InterfaceC4236yO
+    public final void h(C4181xN c4181xN) {
+        this.f26051P += c4181xN.f35780g;
+        this.f26052Q += c4181xN.f35778e;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC4213yO
-    public final void i(C3035cd c3035cd) {
-        S0.e eVar = this.f25272H;
+    @Override // com.google.android.gms.internal.ads.InterfaceC4236yO
+    public final void i(C3058cd c3058cd) {
+        S0.e eVar = this.f26044H;
         if (eVar != null) {
-            DP dp = (DP) eVar.f2781u;
-            if (dp.f24439w == -1) {
-                C3299hP c3299hP = new C3299hP(dp);
-                c3299hP.f30799u = c3035cd.f29501a;
-                c3299hP.f30800v = c3035cd.f29502b;
-                this.f25272H = new S0.e(25, new DP(c3299hP), (String) eVar.f2782v);
+            DP dp = (DP) eVar.f2908u;
+            if (dp.f25184w == -1) {
+                C3322hP c3322hP = new C3322hP(dp);
+                c3322hP.f31565u = c3058cd.f30286a;
+                c3322hP.f31566v = c3058cd.f30287b;
+                this.f26044H = new S0.e(29, new DP(c3322hP), (String) eVar.f2909v);
             }
         }
     }
 
     public final void l() {
         PlaybackMetrics build;
-        PlaybackMetrics.Builder builder = this.f25268D;
-        if (builder != null && this.f25282S) {
-            builder.setAudioUnderrunCount(this.f25281R);
-            this.f25268D.setVideoFramesDropped(this.f25279P);
-            this.f25268D.setVideoFramesPlayed(this.f25280Q);
-            Long l9 = (Long) this.f25265A.get(this.f25267C);
-            this.f25268D.setNetworkTransferDurationMillis(l9 == null ? 0L : l9.longValue());
-            Long l10 = (Long) this.f25266B.get(this.f25267C);
-            this.f25268D.setNetworkBytesRead(l10 == null ? 0L : l10.longValue());
-            this.f25268D.setStreamSource((l10 == null || l10.longValue() <= 0) ? 0 : 1);
-            build = this.f25268D.build();
-            this.f25284u.execute(new RunnableC3048cq(25, this, build));
+        PlaybackMetrics.Builder builder = this.f26040D;
+        if (builder != null && this.f26054S) {
+            builder.setAudioUnderrunCount(this.f26053R);
+            this.f26040D.setVideoFramesDropped(this.f26051P);
+            this.f26040D.setVideoFramesPlayed(this.f26052Q);
+            Long l9 = (Long) this.f26037A.get(this.f26039C);
+            this.f26040D.setNetworkTransferDurationMillis(l9 == null ? 0L : l9.longValue());
+            Long l10 = (Long) this.f26038B.get(this.f26039C);
+            this.f26040D.setNetworkBytesRead(l10 == null ? 0L : l10.longValue());
+            this.f26040D.setStreamSource((l10 == null || l10.longValue() <= 0) ? 0 : 1);
+            build = this.f26040D.build();
+            this.f26056u.execute(new RunnableC3071cq(25, this, build));
         }
-        this.f25268D = null;
-        this.f25267C = null;
-        this.f25281R = 0;
-        this.f25279P = 0;
-        this.f25280Q = 0;
-        this.f25274K = null;
-        this.f25275L = null;
-        this.f25276M = null;
-        this.f25282S = false;
+        this.f26040D = null;
+        this.f26039C = null;
+        this.f26053R = 0;
+        this.f26051P = 0;
+        this.f26052Q = 0;
+        this.f26046K = null;
+        this.f26047L = null;
+        this.f26048M = null;
+        this.f26054S = false;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC4213yO
-    public final void m(C4159xO c4159xO, C3514lQ c3514lQ) {
-        C3676oQ c3676oQ = c4159xO.f35007d;
-        if (c3676oQ == null) {
+    @Override // com.google.android.gms.internal.ads.InterfaceC4236yO
+    public final void m(C4182xO c4182xO, C3699oQ c3699oQ) {
+        C3860rQ c3860rQ = c4182xO.f35788d;
+        if (c3860rQ == null) {
             return;
         }
-        DP dp = c3514lQ.f31765b;
+        DP dp = c3699oQ.f33693b;
         dp.getClass();
-        S0.e eVar = new S0.e(25, dp, this.f25285v.a(c4159xO.f35005b, c3676oQ));
-        int i = c3514lQ.f31764a;
+        S0.e eVar = new S0.e(29, dp, this.f26057v.a(c4182xO.f35786b, c3860rQ));
+        int i = c3699oQ.f33692a;
         if (i != 0) {
             if (i == 1) {
-                this.f25273I = eVar;
+                this.f26045I = eVar;
                 return;
             } else if (i != 2) {
                 if (i != 3) {
@@ -902,21 +902,21 @@ public final class HO implements InterfaceC4213yO {
                 return;
             }
         }
-        this.f25272H = eVar;
+        this.f26044H = eVar;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC4213yO
+    @Override // com.google.android.gms.internal.ads.InterfaceC4236yO
     public final void o(DN dn) {
-        this.f25271G = dn;
+        this.f26043G = dn;
     }
 
-    public final void p(C4159xO c4159xO, String str) {
-        C3676oQ c3676oQ = c4159xO.f35007d;
-        if ((c3676oQ == null || !c3676oQ.b()) && str.equals(this.f25267C)) {
+    public final void p(C4182xO c4182xO, String str) {
+        C3860rQ c3860rQ = c4182xO.f35788d;
+        if ((c3860rQ == null || !c3860rQ.b()) && str.equals(this.f26039C)) {
             l();
         }
-        this.f25265A.remove(str);
-        this.f25266B.remove(str);
+        this.f26037A.remove(str);
+        this.f26038B.remove(str);
     }
 
     public final boolean q(S0.e eVar) {
@@ -924,15 +924,15 @@ public final class HO implements InterfaceC4213yO {
         if (eVar == null) {
             return false;
         }
-        DO r02 = this.f25285v;
-        String str2 = (String) eVar.f2782v;
+        DO r02 = this.f26057v;
+        String str2 = (String) eVar.f2909v;
         synchronized (r02) {
-            str = r02.f24399f;
+            str = r02.f25144f;
         }
         return str2.equals(str);
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC4213yO
+    @Override // com.google.android.gms.internal.ads.InterfaceC4236yO
     public final void n(IOException iOException) {
     }
 }

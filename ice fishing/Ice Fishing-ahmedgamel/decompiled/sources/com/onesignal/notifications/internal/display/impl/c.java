@@ -1,7 +1,7 @@
 package com.onesignal.notifications.internal.display.impl;
 
-import D.N;
-import D.v;
+import D.M;
+import D.u;
 import android.R;
 import android.app.Notification;
 import android.app.PendingIntent;
@@ -27,19 +27,20 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import kotlin.jvm.internal.h;
 import org.json.JSONObject;
-import t4.C5041b;
-import v5.InterfaceC5115a;
-import v5.InterfaceC5116b;
-import v5.InterfaceC5117c;
+import t4.C5042b;
+import u7.v;
+import v5.InterfaceC5105a;
+import v5.InterfaceC5106b;
+import v5.InterfaceC5107c;
 import x4.f;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
-public final class c implements InterfaceC5116b {
+public final class c implements InterfaceC5106b {
     private final f _applicationService;
-    private final InterfaceC5115a _notificationDisplayBuilder;
+    private final InterfaceC5105a _notificationDisplayBuilder;
     private final y5.b _notificationLimitManager;
-    private final InterfaceC5117c _summaryNotificationDisplayer;
+    private final InterfaceC5107c _summaryNotificationDisplayer;
 
     public static final class a extends B7.c {
         int I$0;
@@ -54,8 +55,8 @@ public final class c implements InterfaceC5116b {
         int label;
         /* synthetic */ Object result;
 
-        public a(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public a(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -66,7 +67,7 @@ public final class c implements InterfaceC5116b {
         }
     }
 
-    public c(f _applicationService, y5.b _notificationLimitManager, InterfaceC5117c _summaryNotificationDisplayer, InterfaceC5115a _notificationDisplayBuilder) {
+    public c(f _applicationService, y5.b _notificationLimitManager, InterfaceC5107c _summaryNotificationDisplayer, InterfaceC5105a _notificationDisplayBuilder) {
         h.e(_applicationService, "_applicationService");
         h.e(_notificationLimitManager, "_notificationLimitManager");
         h.e(_summaryNotificationDisplayer, "_summaryNotificationDisplayer");
@@ -77,7 +78,7 @@ public final class c implements InterfaceC5116b {
         this._notificationDisplayBuilder = _notificationDisplayBuilder;
     }
 
-    private final void addBackgroundImage(JSONObject jSONObject, v vVar) {
+    private final void addBackgroundImage(JSONObject jSONObject, u uVar) {
         Bitmap bitmap;
         JSONObject jSONObject2;
         String str;
@@ -109,7 +110,7 @@ public final class c implements InterfaceC5116b {
             if (jSONObject2 == null || !jSONObject2.has("img_align")) {
                 Resources contextResources = getContextResources();
                 h.b(contextResources);
-                int identifier = contextResources.getIdentifier("onesignal_bgimage_notif_image_align", k.f19636g, getPackageName());
+                int identifier = contextResources.getIdentifier("onesignal_bgimage_notif_image_align", k.f20423g, getPackageName());
                 if (identifier != 0) {
                     Resources contextResources2 = getContextResources();
                     h.b(contextResources2);
@@ -128,23 +129,23 @@ public final class c implements InterfaceC5116b {
             } else {
                 remoteViews.setImageViewBitmap(p.os_bgimage_notif_bgimage, bitmap);
             }
-            h.b(vVar);
-            vVar.f514v.contentView = remoteViews;
-            vVar.g(null);
+            h.b(uVar);
+            uVar.f409v.contentView = remoteViews;
+            uVar.g(null);
         }
     }
 
-    private final void applyNotificationExtender(t5.d dVar, v vVar) {
+    private final void applyNotificationExtender(t5.d dVar, u uVar) {
         if (dVar.hasExtender()) {
             try {
-                Field declaredField = v.class.getDeclaredField("v");
+                Field declaredField = u.class.getDeclaredField("v");
                 declaredField.setAccessible(true);
-                Object obj = declaredField.get(vVar);
+                Object obj = declaredField.get(uVar);
                 h.c(obj, "null cannot be cast to non-null type android.app.Notification");
                 Notification notification = (Notification) obj;
                 dVar.setOrgFlags(Integer.valueOf(notification.flags));
                 dVar.setOrgSound(notification.sound);
-                h.b(vVar);
+                h.b(uVar);
                 com.onesignal.notifications.internal.c notification2 = dVar.getNotification();
                 h.b(notification2);
                 notification2.getNotificationExtender();
@@ -156,16 +157,16 @@ public final class c implements InterfaceC5116b {
         }
     }
 
-    private final Notification createGenericPendingIntentsForNotif(v vVar, com.onesignal.notifications.internal.display.impl.a aVar, JSONObject jSONObject, int i) {
+    private final Notification createGenericPendingIntentsForNotif(u uVar, com.onesignal.notifications.internal.display.impl.a aVar, JSONObject jSONObject, int i) {
         SecureRandom secureRandom = new SecureRandom();
         int nextInt = secureRandom.nextInt();
         Intent putExtra = aVar.getNewBaseIntent(i).putExtra("onesignalData", jSONObject.toString());
         h.d(putExtra, "putExtra(...)");
         PendingIntent newActionPendingIntent = aVar.getNewActionPendingIntent(nextInt, putExtra);
-        h.b(vVar);
-        vVar.f500g = newActionPendingIntent;
-        vVar.f514v.deleteIntent = this._notificationDisplayBuilder.getNewDismissActionPendingIntent(secureRandom.nextInt(), this._notificationDisplayBuilder.getNewBaseDismissIntent(i));
-        Notification a9 = vVar.a();
+        h.b(uVar);
+        uVar.f395g = newActionPendingIntent;
+        uVar.f409v.deleteIntent = this._notificationDisplayBuilder.getNewDismissActionPendingIntent(secureRandom.nextInt(), this._notificationDisplayBuilder.getNewBaseDismissIntent(i));
+        Notification a9 = uVar.a();
         h.d(a9, "build(...)");
         return a9;
     }
@@ -176,22 +177,22 @@ public final class c implements InterfaceC5116b {
         }
         int length = str.length() - 1;
         int i = 0;
-        boolean z3 = false;
+        boolean z6 = false;
         while (i <= length) {
-            boolean z6 = h.f(str.charAt(!z3 ? i : length), 32) <= 0;
-            if (z3) {
-                if (!z6) {
+            boolean z9 = h.f(str.charAt(!z6 ? i : length), 32) <= 0;
+            if (z6) {
+                if (!z9) {
                     break;
                 }
                 length--;
-            } else if (z6) {
+            } else if (z9) {
                 i++;
             } else {
-                z3 = true;
+                z6 = true;
             }
         }
         String obj = str.subSequence(i, length + 1).toString();
-        return (Q7.q.R(obj, "http://") || Q7.q.R(obj, "https://")) ? getBitmapFromURL(obj) : getBitmapFromAssetsOrResourceName(str);
+        return (Q7.q.h0(obj, "http://") || Q7.q.h0(obj, "https://")) ? getBitmapFromURL(obj) : getBitmapFromAssetsOrResourceName(str);
     }
 
     private final Bitmap getBitmapFromAssetsOrResourceName(String str) {
@@ -247,7 +248,7 @@ public final class c implements InterfaceC5116b {
     private final int getDrawableId(String str) {
         Resources contextResources = getContextResources();
         h.b(contextResources);
-        return contextResources.getIdentifier(str, k.f19632c, getPackageName());
+        return contextResources.getIdentifier(str, k.f20419c, getPackageName());
     }
 
     private final String getPackageName() {
@@ -260,18 +261,18 @@ public final class c implements InterfaceC5116b {
         }
         int length = str.length() - 1;
         int i = 0;
-        boolean z3 = false;
+        boolean z6 = false;
         while (i <= length) {
-            boolean z6 = h.f(str.charAt(!z3 ? i : length), 32) <= 0;
-            if (z3) {
-                if (!z6) {
+            boolean z9 = h.f(str.charAt(!z6 ? i : length), 32) <= 0;
+            if (z6) {
+                if (!z9) {
                     break;
                 }
                 length--;
-            } else if (z6) {
+            } else if (z9) {
                 i++;
             } else {
-                z3 = true;
+                z6 = true;
             }
         }
         String obj = str.subSequence(i, length + 1).toString();
@@ -311,7 +312,7 @@ public final class c implements InterfaceC5116b {
         }
         Resources contextResources = getContextResources();
         h.b(contextResources);
-        int identifier = contextResources.getIdentifier(str2, k.f19633d, getPackageName());
+        int identifier = contextResources.getIdentifier(str2, k.f20420d, getPackageName());
         if (identifier != 0) {
             remoteViews.setTextColor(i, E.b.a(getCurrentContext(), identifier));
         }
@@ -341,7 +342,7 @@ public final class c implements InterfaceC5116b {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object showNotification(t5.d dVar, InterfaceC5267d interfaceC5267d) {
+    public final Object showNotification(t5.d dVar, InterfaceC5240d interfaceC5240d) {
         a aVar;
         int i;
         ArrayList<StatusBarNotification> activeGrouplessNotifications;
@@ -350,26 +351,26 @@ public final class c implements InterfaceC5116b {
         JSONObject jSONObject;
         com.onesignal.notifications.internal.display.impl.a aVar2;
         t5.d dVar2;
-        int i6;
-        v vVar;
+        int i4;
+        u uVar;
         c cVar;
         b.a aVar3;
         String str2;
-        int i9;
+        int i6;
         Notification createGenericPendingIntentsForNotif;
         String channelId;
-        if (interfaceC5267d instanceof a) {
-            aVar = (a) interfaceC5267d;
-            int i10 = aVar.label;
-            if ((i10 & Integer.MIN_VALUE) != 0) {
-                aVar.label = i10 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof a) {
+            aVar = (a) interfaceC5240d;
+            int i9 = aVar.label;
+            if ((i9 & Integer.MIN_VALUE) != 0) {
+                aVar.label = i9 - Integer.MIN_VALUE;
                 a aVar4 = aVar;
                 Object obj = aVar4.result;
-                A7.a aVar5 = A7.a.f58n;
+                A7.a aVar5 = A7.a.f215n;
                 i = aVar4.label;
-                boolean z3 = true;
+                boolean z6 = true;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     int androidId = dVar.getAndroidId();
                     JSONObject jsonPayload = dVar.getJsonPayload();
                     h.b(jsonPayload);
@@ -385,7 +386,7 @@ public final class c implements InterfaceC5116b {
                         str = t5.e.GROUPLESS_SUMMARY_KEY;
                     }
                     baseOneSignalNotificationBuilder = this._notificationDisplayBuilder.getBaseOneSignalNotificationBuilder(dVar);
-                    v compatBuilder = baseOneSignalNotificationBuilder.getCompatBuilder();
+                    u compatBuilder = baseOneSignalNotificationBuilder.getCompatBuilder();
                     this._notificationDisplayBuilder.addNotificationActionButtons(jsonPayload, aVar6, compatBuilder, androidId, null);
                     jSONObject = jsonPayload;
                     aVar2 = aVar6;
@@ -398,7 +399,7 @@ public final class c implements InterfaceC5116b {
                     if (dVar.isRestoring()) {
                         this._notificationDisplayBuilder.removeNotifyOptions(compatBuilder);
                     }
-                    int i11 = str == null ? 1 : 2;
+                    int i10 = str == null ? 1 : 2;
                     y5.b bVar = this._notificationLimitManager;
                     aVar4.L$0 = this;
                     aVar4.L$1 = dVar;
@@ -410,10 +411,10 @@ public final class c implements InterfaceC5116b {
                     aVar4.L$7 = compatBuilder;
                     aVar4.I$0 = androidId;
                     aVar4.label = 1;
-                    if (bVar.clearOldestOverLimit(i11, aVar4) != aVar5) {
+                    if (bVar.clearOldestOverLimit(i10, aVar4) != aVar5) {
                         dVar2 = dVar;
-                        i6 = androidId;
-                        vVar = compatBuilder;
+                        i4 = androidId;
+                        uVar = compatBuilder;
                         cVar = this;
                     }
                     return aVar5;
@@ -422,29 +423,29 @@ public final class c implements InterfaceC5116b {
                     if (i != 2 && i != 3) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    int i12 = aVar4.I$0;
+                    int i11 = aVar4.I$0;
                     createGenericPendingIntentsForNotif = (Notification) aVar4.L$2;
                     b.a aVar7 = (b.a) aVar4.L$1;
                     c cVar2 = (c) aVar4.L$0;
-                    com.bumptech.glide.d.k(obj);
-                    i9 = i12;
+                    Q3.b.s(obj);
+                    i6 = i11;
                     aVar3 = aVar7;
                     cVar = cVar2;
                     cVar._notificationDisplayBuilder.addXiaomiSettings(aVar3, createGenericPendingIntentsForNotif);
                     Context currentContext = cVar.getCurrentContext();
                     h.b(currentContext);
-                    new N(currentContext).a(i9, createGenericPendingIntentsForNotif);
+                    new M(currentContext).a(i6, createGenericPendingIntentsForNotif);
                     if (Build.VERSION.SDK_INT >= 26) {
                         t5.e eVar2 = t5.e.INSTANCE;
                         Context currentContext2 = cVar.getCurrentContext();
                         h.b(currentContext2);
                         channelId = createGenericPendingIntentsForNotif.getChannelId();
-                        z3 = eVar2.areNotificationsEnabled(currentContext2, channelId);
+                        z6 = eVar2.areNotificationsEnabled(currentContext2, channelId);
                     }
-                    return Boolean.valueOf(z3);
+                    return Boolean.valueOf(z6);
                 }
-                int i13 = aVar4.I$0;
-                v vVar2 = (v) aVar4.L$7;
+                int i12 = aVar4.I$0;
+                u uVar2 = (u) aVar4.L$7;
                 baseOneSignalNotificationBuilder = (b.a) aVar4.L$6;
                 activeGrouplessNotifications = (ArrayList) aVar4.L$5;
                 aVar2 = (com.onesignal.notifications.internal.display.impl.a) aVar4.L$4;
@@ -452,30 +453,30 @@ public final class c implements InterfaceC5116b {
                 jSONObject = (JSONObject) aVar4.L$2;
                 dVar2 = (t5.d) aVar4.L$1;
                 c cVar3 = (c) aVar4.L$0;
-                com.bumptech.glide.d.k(obj);
-                i6 = i13;
-                vVar = vVar2;
+                Q3.b.s(obj);
+                i4 = i12;
+                uVar = uVar2;
                 cVar = cVar3;
                 aVar3 = baseOneSignalNotificationBuilder;
                 com.onesignal.notifications.internal.display.impl.a aVar8 = aVar2;
                 str2 = str;
                 JSONObject jSONObject2 = jSONObject;
                 if (str2 != null) {
-                    i9 = i6;
-                    createGenericPendingIntentsForNotif = cVar.createGenericPendingIntentsForNotif(vVar, aVar8, jSONObject2, i9);
+                    i6 = i4;
+                    createGenericPendingIntentsForNotif = cVar.createGenericPendingIntentsForNotif(uVar, aVar8, jSONObject2, i6);
                     cVar._notificationDisplayBuilder.addXiaomiSettings(aVar3, createGenericPendingIntentsForNotif);
                     Context currentContext3 = cVar.getCurrentContext();
                     h.b(currentContext3);
-                    new N(currentContext3).a(i9, createGenericPendingIntentsForNotif);
+                    new M(currentContext3).a(i6, createGenericPendingIntentsForNotif);
                     if (Build.VERSION.SDK_INT >= 26) {
                     }
-                    return Boolean.valueOf(z3);
+                    return Boolean.valueOf(z6);
                 }
-                cVar._summaryNotificationDisplayer.createGenericPendingIntentsForGroup(vVar, aVar8, jSONObject2, str2, i6);
-                int i14 = i6;
-                Notification createSingleNotificationBeforeSummaryBuilder = cVar._summaryNotificationDisplayer.createSingleNotificationBeforeSummaryBuilder(dVar2, vVar);
+                cVar._summaryNotificationDisplayer.createGenericPendingIntentsForGroup(uVar, aVar8, jSONObject2, str2, i4);
+                int i13 = i4;
+                Notification createSingleNotificationBeforeSummaryBuilder = cVar._summaryNotificationDisplayer.createSingleNotificationBeforeSummaryBuilder(dVar2, uVar);
                 if (str2.equals(t5.e.GROUPLESS_SUMMARY_KEY)) {
-                    InterfaceC5117c interfaceC5117c = cVar._summaryNotificationDisplayer;
+                    InterfaceC5107c interfaceC5107c = cVar._summaryNotificationDisplayer;
                     int size = activeGrouplessNotifications.size() + 1;
                     int groupAlertBehavior = cVar._notificationDisplayBuilder.getGroupAlertBehavior();
                     aVar4.L$0 = cVar;
@@ -486,10 +487,10 @@ public final class c implements InterfaceC5116b {
                     aVar4.L$5 = null;
                     aVar4.L$6 = null;
                     aVar4.L$7 = null;
-                    aVar4.I$0 = i14;
+                    aVar4.I$0 = i13;
                     aVar4.label = 2;
                 } else {
-                    InterfaceC5117c interfaceC5117c2 = cVar._summaryNotificationDisplayer;
+                    InterfaceC5107c interfaceC5107c2 = cVar._summaryNotificationDisplayer;
                     int groupAlertBehavior2 = cVar._notificationDisplayBuilder.getGroupAlertBehavior();
                     aVar4.L$0 = cVar;
                     aVar4.L$1 = aVar3;
@@ -499,27 +500,27 @@ public final class c implements InterfaceC5116b {
                     aVar4.L$5 = null;
                     aVar4.L$6 = null;
                     aVar4.L$7 = null;
-                    aVar4.I$0 = i14;
+                    aVar4.I$0 = i13;
                     aVar4.label = 3;
                 }
-                i9 = i12;
+                i6 = i11;
                 aVar3 = aVar7;
                 cVar = cVar2;
                 cVar._notificationDisplayBuilder.addXiaomiSettings(aVar3, createGenericPendingIntentsForNotif);
                 Context currentContext32 = cVar.getCurrentContext();
                 h.b(currentContext32);
-                new N(currentContext32).a(i9, createGenericPendingIntentsForNotif);
+                new M(currentContext32).a(i6, createGenericPendingIntentsForNotif);
                 if (Build.VERSION.SDK_INT >= 26) {
                 }
-                return Boolean.valueOf(z3);
+                return Boolean.valueOf(z6);
             }
         }
-        aVar = new a(interfaceC5267d);
+        aVar = new a(interfaceC5240d);
         a aVar42 = aVar;
         Object obj2 = aVar42.result;
-        A7.a aVar52 = A7.a.f58n;
+        A7.a aVar52 = A7.a.f215n;
         i = aVar42.label;
-        boolean z32 = true;
+        boolean z62 = true;
         if (i != 0) {
         }
         aVar3 = baseOneSignalNotificationBuilder;
@@ -530,16 +531,16 @@ public final class c implements InterfaceC5116b {
         }
     }
 
-    @Override // v5.InterfaceC5116b
-    public Object displayNotification(t5.d dVar, InterfaceC5267d interfaceC5267d) {
+    @Override // v5.InterfaceC5106b
+    public Object displayNotification(t5.d dVar, InterfaceC5240d interfaceC5240d) {
         isRunningOnMainThreadCheck();
-        return showNotification(dVar, interfaceC5267d);
+        return showNotification(dVar, interfaceC5240d);
     }
 
-    public final u7.v isRunningOnMainThreadCheck() {
+    public final v isRunningOnMainThreadCheck() {
         if (AndroidUtils.INSTANCE.isRunningOnMainThread()) {
-            throw new C5041b("Process for showing a notification should never been done on Main Thread!");
+            throw new C5042b("Process for showing a notification should never been done on Main Thread!");
         }
-        return u7.v.f41353a;
+        return v.f41073a;
     }
 }

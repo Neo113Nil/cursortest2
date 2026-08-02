@@ -10,7 +10,7 @@ public interface e {
 
     int c(String str);
 
-    t8.g d();
+    com.bumptech.glide.h d();
 
     int e();
 

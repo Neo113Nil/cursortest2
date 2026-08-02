@@ -5,7 +5,7 @@ import com.anythink.basead.exoplayer.k.o;
 /* loaded from: classes2.dex */
 public enum ErrorType {
     GENERIC("generic"),
-    VIDEO(o.f8444a);
+    VIDEO(o.f9230a);
 
     private final String errorType;
 

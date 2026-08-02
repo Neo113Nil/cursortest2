@@ -1,6 +1,6 @@
 package com.google.android.gms.internal.ads;
 
-import O.C0344t;
+import O.C0349t;
 import android.text.Layout;
 import android.text.TextUtils;
 import com.anythink.expressad.foundation.d.d;
@@ -16,39 +16,39 @@ import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 /* loaded from: classes2.dex */
-public final class N3 implements InterfaceC3868s3 {
+public final class N3 implements InterfaceC3891s3 {
 
     /* renamed from: n, reason: collision with root package name */
-    public final XmlPullParserFactory f26400n;
+    public final XmlPullParserFactory f27185n;
 
     /* renamed from: u, reason: collision with root package name */
-    public static final Pattern f26394u = Pattern.compile("^([0-9][0-9]+):([0-9][0-9]):([0-9][0-9])(?:(\\.[0-9]+)|:([0-9][0-9])(?:\\.([0-9]+))?)?$");
+    public static final Pattern f27179u = Pattern.compile("^([0-9][0-9]+):([0-9][0-9]):([0-9][0-9])(?:(\\.[0-9]+)|:([0-9][0-9])(?:\\.([0-9]+))?)?$");
 
     /* renamed from: v, reason: collision with root package name */
-    public static final Pattern f26395v = Pattern.compile("^([0-9]+(?:\\.[0-9]+)?)(h|m|s|ms|f|t)$");
+    public static final Pattern f27180v = Pattern.compile("^([0-9]+(?:\\.[0-9]+)?)(h|m|s|ms|f|t)$");
 
     /* renamed from: w, reason: collision with root package name */
-    public static final Pattern f26396w = Pattern.compile("^(([0-9]*.)?[0-9]+)(px|em|%)$");
+    public static final Pattern f27181w = Pattern.compile("^(([0-9]*.)?[0-9]+)(px|em|%)$");
 
     /* renamed from: x, reason: collision with root package name */
-    public static final Pattern f26397x = Pattern.compile("^([-+]?\\d+\\.?\\d*?)%$");
+    public static final Pattern f27182x = Pattern.compile("^([-+]?\\d+\\.?\\d*?)%$");
 
     /* renamed from: y, reason: collision with root package name */
-    public static final Pattern f26398y = Pattern.compile("^([-+]?\\d+\\.?\\d*?)% ([-+]?\\d+\\.?\\d*?)%$");
+    public static final Pattern f27183y = Pattern.compile("^([-+]?\\d+\\.?\\d*?)% ([-+]?\\d+\\.?\\d*?)%$");
 
     /* renamed from: z, reason: collision with root package name */
-    public static final Pattern f26399z = Pattern.compile("^([-+]?\\d+\\.?\\d*?)px ([-+]?\\d+\\.?\\d*?)px$");
+    public static final Pattern f27184z = Pattern.compile("^([-+]?\\d+\\.?\\d*?)px ([-+]?\\d+\\.?\\d*?)px$");
 
     /* renamed from: A, reason: collision with root package name */
-    public static final Pattern f26392A = Pattern.compile("^(\\d+) (\\d+)$");
+    public static final Pattern f27177A = Pattern.compile("^(\\d+) (\\d+)$");
 
     /* renamed from: B, reason: collision with root package name */
-    public static final M3 f26393B = new M3(1, 1, 30.0f);
+    public static final M3 f27178B = new M3(1, 1, 30.0f);
 
     public N3() {
         try {
             XmlPullParserFactory newInstance = XmlPullParserFactory.newInstance();
-            this.f26400n = newInstance;
+            this.f27185n = newInstance;
             newInstance.setNamespaceAware(true);
         } catch (XmlPullParserException e9) {
             throw new RuntimeException("Couldn't create XmlPullParserFactory instance", e9);
@@ -75,15 +75,15 @@ public final class N3 implements InterfaceC3868s3 {
         char c14;
         K3 k32;
         char c15;
-        C3931tC f3;
+        C3954tC f2;
         int i;
         char c16;
-        int i6;
+        int i4;
         int attributeCount = xmlPullParser.getAttributeCount();
         Q3 q33 = q32;
-        for (int i9 = 0; i9 < attributeCount; i9++) {
-            String attributeValue = xmlPullParser.getAttributeValue(i9);
-            String attributeName = xmlPullParser.getAttributeName(i9);
+        for (int i6 = 0; i6 < attributeCount; i6++) {
+            String attributeValue = xmlPullParser.getAttributeValue(i6);
+            String attributeName = xmlPullParser.getAttributeName(i6);
             switch (attributeName.hashCode()) {
                 case -1550943582:
                     if (attributeName.equals("fontStyle")) {
@@ -149,7 +149,7 @@ public final class N3 implements InterfaceC3868s3 {
                     c9 = 65535;
                     break;
                 case 94842723:
-                    if (attributeName.equals(com.anythink.expressad.foundation.h.k.f19633d)) {
+                    if (attributeName.equals(com.anythink.expressad.foundation.h.k.f20420d)) {
                         c9 = 2;
                         break;
                     }
@@ -217,41 +217,41 @@ public final class N3 implements InterfaceC3868s3 {
             }
             switch (c9) {
                 case 0:
-                    if (com.anythink.expressad.foundation.h.k.f19634e.equals(xmlPullParser.getName())) {
+                    if (com.anythink.expressad.foundation.h.k.f20421e.equals(xmlPullParser.getName())) {
                         q33 = c(q33);
-                        q33.f26968l = attributeValue;
+                        q33.f27755l = attributeValue;
                         continue;
                     }
                 case 1:
                     q33 = c(q33);
                     try {
-                        q33.f26961d = AbstractC2628Jm.a(attributeValue, false);
-                        q33.f26962e = true;
+                        q33.f27748d = AbstractC2665Km.a(attributeValue, false);
+                        q33.f27749e = true;
                         continue;
                     } catch (IllegalArgumentException unused) {
-                        com.anythink.basead.exoplayer.f.f.v(attributeValue, "Failed parsing background value: ", "TtmlParser");
+                        com.IceFishing.LiveIceFishing.k.y(attributeValue, "Failed parsing background value: ", "TtmlParser");
                     }
                 case 2:
                     q33 = c(q33);
                     try {
-                        q33.f26959b = AbstractC2628Jm.a(attributeValue, false);
-                        q33.f26960c = true;
+                        q33.f27746b = AbstractC2665Km.a(attributeValue, false);
+                        q33.f27747c = true;
                         break;
                     } catch (IllegalArgumentException unused2) {
-                        com.anythink.basead.exoplayer.f.f.v(attributeValue, "Failed parsing color value: ", "TtmlParser");
+                        com.IceFishing.LiveIceFishing.k.y(attributeValue, "Failed parsing color value: ", "TtmlParser");
                         break;
                     }
                 case 3:
                     q33 = c(q33);
-                    q33.f26958a = attributeValue;
+                    q33.f27745a = attributeValue;
                     break;
                 case 4:
                     try {
                         q33 = c(q33);
-                        String str = AbstractC3159eu.f29993a;
+                        String str = AbstractC3182eu.f30782a;
                         String[] split = attributeValue.split("\\s+", -1);
                         int length = split.length;
-                        Pattern pattern = f26396w;
+                        Pattern pattern = f27181w;
                         if (length == 1) {
                             matcher = pattern.matcher(attributeValue);
                         } else {
@@ -259,18 +259,18 @@ public final class N3 implements InterfaceC3868s3 {
                                 StringBuilder sb = new StringBuilder(String.valueOf(length).length() + 41);
                                 sb.append("Invalid number of entries for fontSize: ");
                                 sb.append(length);
-                                sb.append(com.anythink.core.common.d.j.f12378z);
-                                throw new C3761q3(sb.toString());
+                                sb.append(com.anythink.core.common.d.j.f13164z);
+                                throw new C3784q3(sb.toString());
                             }
                             matcher = pattern.matcher(split[1]);
-                            AbstractC2968bG.y("TtmlParser", "Multiple values in fontSize attribute. Picking the second value for vertical font size and ignoring the first.");
+                            AbstractC2991bG.y("TtmlParser", "Multiple values in fontSize attribute. Picking the second value for vertical font size and ignoring the first.");
                         }
                         if (!matcher.matches()) {
                             StringBuilder sb2 = new StringBuilder(attributeValue.length() + 36);
                             sb2.append("Invalid expression for fontSize: '");
                             sb2.append(attributeValue);
                             sb2.append("'.");
-                            throw new C3761q3(sb2.toString());
+                            throw new C3784q3(sb2.toString());
                         }
                         String group = matcher.group(3);
                         if (group == null) {
@@ -294,33 +294,33 @@ public final class N3 implements InterfaceC3868s3 {
                             c10 = 65535;
                         }
                         if (c10 == 0) {
-                            q33.f26966j = 1;
+                            q33.f27753j = 1;
                         } else if (c10 == 1) {
-                            q33.f26966j = 2;
+                            q33.f27753j = 2;
                         } else {
                             if (c10 != 2) {
                                 StringBuilder sb3 = new StringBuilder(group.length() + 30);
                                 sb3.append("Invalid unit for fontSize: '");
                                 sb3.append(group);
                                 sb3.append("'.");
-                                throw new C3761q3(sb3.toString());
+                                throw new C3784q3(sb3.toString());
                             }
-                            q33.f26966j = 3;
+                            q33.f27753j = 3;
                         }
                         String group2 = matcher.group(1);
                         if (group2 == null) {
                             throw null;
                         }
-                        q33.f26967k = Float.parseFloat(group2);
+                        q33.f27754k = Float.parseFloat(group2);
                         break;
-                    } catch (C3761q3 unused3) {
-                        com.anythink.basead.exoplayer.f.f.v(attributeValue, "Failed parsing fontSize value: ", "TtmlParser");
+                    } catch (C3784q3 unused3) {
+                        com.IceFishing.LiveIceFishing.k.y(attributeValue, "Failed parsing fontSize value: ", "TtmlParser");
                         break;
                     }
                     break;
                 case 5:
                     q33 = c(q33);
-                    q33.f26965h = "bold".equalsIgnoreCase(attributeValue) ? 1 : 0;
+                    q33.f27752h = "bold".equalsIgnoreCase(attributeValue) ? 1 : 0;
                     break;
                 case 6:
                     q33 = c(q33);
@@ -328,14 +328,14 @@ public final class N3 implements InterfaceC3868s3 {
                     break;
                 case 7:
                     q33 = c(q33);
-                    q33.f26971o = d(attributeValue);
+                    q33.f27758o = d(attributeValue);
                     break;
                 case '\b':
                     q33 = c(q33);
-                    q33.f26972p = d(attributeValue);
+                    q33.f27759p = d(attributeValue);
                     break;
                 case '\t':
-                    String f9 = AbstractC3043cl.f(attributeValue);
+                    String f9 = AbstractC3066cl.f(attributeValue);
                     int hashCode2 = f9.hashCode();
                     if (hashCode2 != 96673) {
                         if (hashCode2 == 3387192 && f9.equals("none")) {
@@ -351,17 +351,17 @@ public final class N3 implements InterfaceC3868s3 {
                     if (c11 != 0) {
                         if (c11 == 1) {
                             q33 = c(q33);
-                            q33.f26973q = 1;
+                            q33.f27760q = 1;
                             break;
                         }
                     } else {
                         q33 = c(q33);
-                        q33.f26973q = 0;
+                        q33.f27760q = 0;
                         break;
                     }
                     break;
                 case '\n':
-                    String f10 = AbstractC3043cl.f(attributeValue);
+                    String f10 = AbstractC3066cl.f(attributeValue);
                     switch (f10.hashCode()) {
                         case -618561360:
                             if (f10.equals("baseContainer")) {
@@ -399,7 +399,7 @@ public final class N3 implements InterfaceC3868s3 {
                             c12 = 65535;
                             break;
                         case 3556653:
-                            if (f10.equals(com.anythink.basead.exoplayer.k.o.f8446c)) {
+                            if (f10.equals(com.anythink.basead.exoplayer.k.o.f9232c)) {
                                 c12 = 3;
                                 break;
                             }
@@ -414,27 +414,27 @@ public final class N3 implements InterfaceC3868s3 {
                             if (c12 != 3 && c12 != 4) {
                                 if (c12 == 5) {
                                     q33 = c(q33);
-                                    q33.f26969m = 4;
+                                    q33.f27756m = 4;
                                     break;
                                 }
                             } else {
                                 q33 = c(q33);
-                                q33.f26969m = 3;
+                                q33.f27756m = 3;
                                 break;
                             }
                         } else {
                             q33 = c(q33);
-                            q33.f26969m = 2;
+                            q33.f27756m = 2;
                             break;
                         }
                     } else {
                         q33 = c(q33);
-                        q33.f26969m = 1;
+                        q33.f27756m = 1;
                         break;
                     }
                     break;
                 case 11:
-                    String f11 = AbstractC3043cl.f(attributeValue);
+                    String f11 = AbstractC3066cl.f(attributeValue);
                     int hashCode3 = f11.hashCode();
                     if (hashCode3 != -1392885889) {
                         if (hashCode3 == 92734940 && f11.equals("after")) {
@@ -450,17 +450,17 @@ public final class N3 implements InterfaceC3868s3 {
                     if (c13 != 0) {
                         if (c13 == 1) {
                             q33 = c(q33);
-                            q33.f26970n = 2;
+                            q33.f27757n = 2;
                             break;
                         }
                     } else {
                         q33 = c(q33);
-                        q33.f26970n = 1;
+                        q33.f27757n = 1;
                         break;
                     }
                     break;
                 case '\f':
-                    String f12 = AbstractC3043cl.f(attributeValue);
+                    String f12 = AbstractC3066cl.f(attributeValue);
                     switch (f12.hashCode()) {
                         case -1461280213:
                             if (f12.equals("nounderline")) {
@@ -496,52 +496,52 @@ public final class N3 implements InterfaceC3868s3 {
                     }
                     if (c14 == 0) {
                         q33 = c(q33);
-                        q33.f26963f = 1;
+                        q33.f27750f = 1;
                         break;
                     } else if (c14 == 1) {
                         q33 = c(q33);
-                        q33.f26963f = 0;
+                        q33.f27750f = 0;
                         break;
                     } else {
                         if (c14 == 2) {
                             q33 = c(q33);
-                            q33.f26964g = 1;
+                            q33.f27751g = 1;
                         } else if (c14 == 3) {
                             q33 = c(q33);
-                            q33.f26964g = 0;
+                            q33.f27751g = 0;
                         }
                     }
                     break;
                 case '\r':
                     q33 = c(q33);
-                    Pattern pattern2 = K3.f25833d;
+                    Pattern pattern2 = K3.f26585d;
                     if (attributeValue != null) {
-                        String f13 = AbstractC3043cl.f(attributeValue.trim());
+                        String f13 = AbstractC3066cl.f(attributeValue.trim());
                         if (!f13.isEmpty()) {
-                            XB l9 = XB.l(TextUtils.split(f13, K3.f25833d));
-                            String str2 = (String) MA.o(AbstractC2639Kg.f(K3.f25837h, l9), "outside");
+                            XB l9 = XB.l(TextUtils.split(f13, K3.f26585d));
+                            String str2 = (String) MA.o(AbstractC2659Kg.f(K3.f26589h, l9), "outside");
                             int hashCode4 = str2.hashCode();
                             if (hashCode4 != -1106037339) {
                                 if (hashCode4 == 92734940 && str2.equals("after")) {
                                     c15 = 0;
-                                    int i10 = c15 == 0 ? c15 != 1 ? 1 : -2 : 2;
-                                    f3 = AbstractC2639Kg.f(K3.f25834e, l9);
-                                    if (f3.isEmpty()) {
-                                        String str3 = (String) new C2910aC(f3, f3.f34227n, f3.f34228u).next();
+                                    int i9 = c15 == 0 ? c15 != 1 ? 1 : -2 : 2;
+                                    f2 = AbstractC2659Kg.f(K3.f26586e, l9);
+                                    if (f2.isEmpty()) {
+                                        String str3 = (String) new C2933aC(f2, f2.f35013n, f2.f35014u).next();
                                         if (str3.hashCode() == 3387192 && str3.equals("none")) {
                                             i = 0;
-                                            i6 = 0;
-                                            k32 = new K3(i6, i, i10);
-                                            q33.f26974r = k32;
+                                            i4 = 0;
+                                            k32 = new K3(i4, i, i9);
+                                            q33.f27761r = k32;
                                             break;
                                         }
                                         i = 0;
-                                        i6 = -1;
-                                        k32 = new K3(i6, i, i10);
-                                        q33.f26974r = k32;
+                                        i4 = -1;
+                                        k32 = new K3(i4, i, i9);
+                                        q33.f27761r = k32;
                                     } else {
-                                        C3931tC f14 = AbstractC2639Kg.f(K3.f25836g, l9);
-                                        C3931tC f15 = AbstractC2639Kg.f(K3.f25835f, l9);
+                                        C3954tC f14 = AbstractC2659Kg.f(K3.f26588g, l9);
+                                        C3954tC f15 = AbstractC2659Kg.f(K3.f26587f, l9);
                                         if (!f14.isEmpty() || !f15.isEmpty()) {
                                             String str4 = (String) MA.o(f14, "filled");
                                             i = (str4.hashCode() == 3417674 && str4.equals("open")) ? 2 : 1;
@@ -550,66 +550,66 @@ public final class N3 implements InterfaceC3868s3 {
                                             if (hashCode5 != -905816648) {
                                                 if (hashCode5 == 99657 && str5.equals("dot")) {
                                                     c16 = 0;
-                                                    i6 = c16 == 0 ? c16 != 1 ? 1 : 3 : 2;
-                                                    k32 = new K3(i6, i, i10);
-                                                    q33.f26974r = k32;
+                                                    i4 = c16 == 0 ? c16 != 1 ? 1 : 3 : 2;
+                                                    k32 = new K3(i4, i, i9);
+                                                    q33.f27761r = k32;
                                                 }
                                                 c16 = 65535;
                                                 if (c16 == 0) {
                                                 }
-                                                k32 = new K3(i6, i, i10);
-                                                q33.f26974r = k32;
+                                                k32 = new K3(i4, i, i9);
+                                                q33.f27761r = k32;
                                             } else {
                                                 if (str5.equals("sesame")) {
                                                     c16 = 1;
                                                     if (c16 == 0) {
                                                     }
-                                                    k32 = new K3(i6, i, i10);
-                                                    q33.f26974r = k32;
+                                                    k32 = new K3(i4, i, i9);
+                                                    q33.f27761r = k32;
                                                 }
                                                 c16 = 65535;
                                                 if (c16 == 0) {
                                                 }
-                                                k32 = new K3(i6, i, i10);
-                                                q33.f26974r = k32;
+                                                k32 = new K3(i4, i, i9);
+                                                q33.f27761r = k32;
                                             }
                                         }
                                         i = 0;
-                                        i6 = -1;
-                                        k32 = new K3(i6, i, i10);
-                                        q33.f26974r = k32;
+                                        i4 = -1;
+                                        k32 = new K3(i4, i, i9);
+                                        q33.f27761r = k32;
                                     }
                                 }
                                 c15 = 65535;
                                 if (c15 == 0) {
                                 }
-                                f3 = AbstractC2639Kg.f(K3.f25834e, l9);
-                                if (f3.isEmpty()) {
+                                f2 = AbstractC2659Kg.f(K3.f26586e, l9);
+                                if (f2.isEmpty()) {
                                 }
                             } else {
                                 if (str2.equals("outside")) {
                                     c15 = 1;
                                     if (c15 == 0) {
                                     }
-                                    f3 = AbstractC2639Kg.f(K3.f25834e, l9);
-                                    if (f3.isEmpty()) {
+                                    f2 = AbstractC2659Kg.f(K3.f26586e, l9);
+                                    if (f2.isEmpty()) {
                                     }
                                 }
                                 c15 = 65535;
                                 if (c15 == 0) {
                                 }
-                                f3 = AbstractC2639Kg.f(K3.f25834e, l9);
-                                if (f3.isEmpty()) {
+                                f2 = AbstractC2659Kg.f(K3.f26586e, l9);
+                                if (f2.isEmpty()) {
                                 }
                             }
                         }
                     }
                     k32 = null;
-                    q33.f26974r = k32;
+                    q33.f27761r = k32;
                     break;
                 case 14:
                     Q3 c17 = c(q33);
-                    Matcher matcher2 = f26397x.matcher(attributeValue);
+                    Matcher matcher2 = f27182x.matcher(attributeValue);
                     float f16 = Float.MAX_VALUE;
                     if (matcher2.matches()) {
                         try {
@@ -621,25 +621,25 @@ public final class N3 implements InterfaceC3868s3 {
                                 f16 = Math.min(100.0f, Math.max(-100.0f, Float.parseFloat(group3)));
                             }
                         } catch (NumberFormatException e9) {
-                            AbstractC2968bG.C("TtmlParser", "Failed to parse shear: ".concat(String.valueOf(attributeValue)), e9);
+                            AbstractC2991bG.C("TtmlParser", "Failed to parse shear: ".concat(String.valueOf(attributeValue)), e9);
                         }
                     } else {
-                        com.anythink.basead.exoplayer.f.f.v(attributeValue, "Invalid value for shear: ", "TtmlParser");
+                        com.IceFishing.LiveIceFishing.k.y(attributeValue, "Invalid value for shear: ", "TtmlParser");
                     }
-                    c17.f26975s = f16;
+                    c17.f27762s = f16;
                     q33 = c17;
                     break;
                 case 15:
                     q33 = c(q33);
-                    q33.f26976t = attributeValue;
+                    q33.f27763t = attributeValue;
                     break;
                 case 16:
                     q33 = c(q33);
-                    q33.f26977u = attributeValue;
+                    q33.f27764u = attributeValue;
                     break;
                 case 17:
                     q33 = c(q33);
-                    q33.f26978v = attributeValue;
+                    q33.f27765v = attributeValue;
                     break;
             }
         }
@@ -653,38 +653,38 @@ public final class N3 implements InterfaceC3868s3 {
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     public static Layout.Alignment d(String str) {
         char c9;
-        String f3 = AbstractC3043cl.f(str);
-        switch (f3.hashCode()) {
+        String f2 = AbstractC3066cl.f(str);
+        switch (f2.hashCode()) {
             case -1364013995:
-                if (f3.equals("center")) {
+                if (f2.equals("center")) {
                     c9 = 4;
                     break;
                 }
                 c9 = 65535;
                 break;
             case 100571:
-                if (f3.equals("end")) {
+                if (f2.equals("end")) {
                     c9 = 3;
                     break;
                 }
                 c9 = 65535;
                 break;
             case 3317767:
-                if (f3.equals("left")) {
+                if (f2.equals("left")) {
                     c9 = 0;
                     break;
                 }
                 c9 = 65535;
                 break;
             case 108511772:
-                if (f3.equals("right")) {
+                if (f2.equals("right")) {
                     c9 = 2;
                     break;
                 }
                 c9 = 65535;
                 break;
             case 109757538:
-                if (f3.equals(com.anythink.expressad.foundation.d.d.cg)) {
+                if (f2.equals(com.anythink.expressad.foundation.d.d.cg)) {
                     c9 = 1;
                     break;
                 }
@@ -708,35 +708,35 @@ public final class N3 implements InterfaceC3868s3 {
 
     /* JADX WARN: Code restructure failed: missing block: B:50:0x00c7, code lost:
     
-        if (r13.equals(com.anythink.core.common.s.f16249a) != false) goto L51;
+        if (r13.equals(com.anythink.core.common.s.f17036a) != false) goto L51;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static long e(String str, M3 m32) {
-        double d2;
         double d9;
-        Matcher matcher = f26394u.matcher(str);
+        double d10;
+        Matcher matcher = f27179u.matcher(str);
         char c9 = 2;
         if (matcher.matches()) {
             String group = matcher.group(1);
             group.getClass();
-            long parseLong = Long.parseLong(group) * com.anythink.expressad.f.a.b.f18401P;
+            long parseLong = Long.parseLong(group) * com.anythink.expressad.f.a.b.f19188P;
             String group2 = matcher.group(2);
             group2.getClass();
             long parseLong2 = Long.parseLong(group2) * 60;
             String group3 = matcher.group(3);
             group3.getClass();
-            double d10 = parseLong + parseLong2;
+            double d11 = parseLong + parseLong2;
             double parseLong3 = Long.parseLong(group3);
             String group4 = matcher.group(4);
             double parseDouble = group4 != null ? Double.parseDouble(group4) : 0.0d;
-            double d11 = d10 + parseLong3;
-            return (long) ((d11 + parseDouble + (matcher.group(5) != null ? Long.parseLong(r13) / m32.f26236a : 0.0d) + (matcher.group(6) != null ? (Long.parseLong(r13) / m32.f26237b) / m32.f26236a : 0.0d)) * 1000000.0d);
+            double d12 = d11 + parseLong3;
+            return (long) ((d12 + parseDouble + (matcher.group(5) != null ? Long.parseLong(r13) / m32.f27027a : 0.0d) + (matcher.group(6) != null ? (Long.parseLong(r13) / m32.f27028b) / m32.f27027a : 0.0d)) * 1000000.0d);
         }
-        Matcher matcher2 = f26395v.matcher(str);
+        Matcher matcher2 = f27180v.matcher(str);
         if (!matcher2.matches()) {
-            throw new C3761q3("Malformed time expression: ".concat(String.valueOf(str)));
+            throw new C3784q3("Malformed time expression: ".concat(String.valueOf(str)));
         }
         String group5 = matcher2.group(1);
         group5.getClass();
@@ -771,26 +771,26 @@ public final class N3 implements InterfaceC3868s3 {
             c9 = 65535;
         }
         if (c9 == 0) {
-            d2 = 3600.0d;
+            d9 = 3600.0d;
         } else {
             if (c9 != 1) {
                 if (c9 == 3) {
-                    d9 = 1000.0d;
+                    d10 = 1000.0d;
                 } else {
                     if (c9 != 4) {
                         if (c9 == 5) {
-                            d9 = m32.f26238c;
+                            d10 = m32.f27029c;
                         }
                         return (long) (parseDouble2 * 1000000.0d);
                     }
-                    d9 = m32.f26236a;
+                    d10 = m32.f27027a;
                 }
-                parseDouble2 /= d9;
+                parseDouble2 /= d10;
                 return (long) (parseDouble2 * 1000000.0d);
             }
-            d2 = 60.0d;
+            d9 = 60.0d;
         }
-        parseDouble2 *= d2;
+        parseDouble2 *= d9;
         return (long) (parseDouble2 * 1000000.0d);
     }
 
@@ -823,7 +823,7 @@ public final class N3 implements InterfaceC3868s3 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final C3864s a(byte[] bArr, int i, int i6) {
+    public final C3887s a(byte[] bArr, int i, int i4) {
         String str;
         String str2;
         String str3;
@@ -831,16 +831,16 @@ public final class N3 implements InterfaceC3868s3 {
         HashMap hashMap2;
         ArrayDeque arrayDeque;
         M3 m32;
-        int i9;
+        int i6;
         ArrayDeque arrayDeque2;
         L3 l32;
         M3 m33;
-        C0344t c0344t;
-        int i10;
+        C0349t c0349t;
+        int i9;
         boolean equals;
         HashMap hashMap3;
         boolean equals2;
-        int i11;
+        int i10;
         M3 m34;
         L3 l33;
         L3 l34;
@@ -858,9 +858,9 @@ public final class N3 implements InterfaceC3868s3 {
         String str10;
         String str11;
         String str12;
-        int i12;
+        int i11;
         HashMap hashMap4;
-        float f3;
+        float f2;
         float f9;
         P3 p32;
         String v10;
@@ -868,9 +868,9 @@ public final class N3 implements InterfaceC3868s3 {
         float f11;
         String v11;
         float f12;
-        int i13;
+        int i12;
         String v12;
-        int i14;
+        int i13;
         char c10;
         char c11;
         String v13;
@@ -883,41 +883,41 @@ public final class N3 implements InterfaceC3868s3 {
         String[] split;
         float f14;
         String group;
-        int i15;
-        boolean z3;
+        int i14;
+        boolean z6;
         String v15;
         String group2;
-        C0344t c0344t2;
-        int i16 = 1;
+        C0349t c0349t2;
+        int i15 = 1;
         String str14 = "";
         String str15 = "http://www.w3.org/ns/ttml#parameter";
         String str16 = "Ignoring unsupported tag: ";
         try {
-            XmlPullParser newPullParser = this.f26400n.newPullParser();
+            XmlPullParser newPullParser = this.f27185n.newPullParser();
             HashMap hashMap5 = new HashMap();
             HashMap hashMap6 = new HashMap();
             HashMap hashMap7 = new HashMap();
             hashMap6.put("", new P3("", -3.4028235E38f, -3.4028235E38f, Integer.MIN_VALUE, Integer.MIN_VALUE, -3.4028235E38f, -3.4028235E38f, Integer.MIN_VALUE, -3.4028235E38f, Integer.MIN_VALUE));
             Object obj2 = null;
-            newPullParser.setInput(new ByteArrayInputStream(bArr, i, i6), null);
+            newPullParser.setInput(new ByteArrayInputStream(bArr, i, i4), null);
             ArrayDeque arrayDeque3 = new ArrayDeque();
             int eventType = newPullParser.getEventType();
-            M3 m35 = f26393B;
-            C3864s c3864s = null;
+            M3 m35 = f27178B;
+            C3887s c3887s = null;
             M3 m36 = null;
             M3 m37 = m35;
-            int i17 = 0;
-            int i18 = 15;
-            while (eventType != i16) {
+            int i16 = 0;
+            int i17 = 15;
+            while (eventType != i15) {
                 L3 l35 = (L3) arrayDeque3.peek();
                 ?? r51 = obj2;
-                if (i17 == 0) {
-                    int i19 = 0;
+                if (i16 == 0) {
+                    int i18 = 0;
                     String name = newPullParser.getName();
-                    int i20 = i16;
+                    int i19 = i15;
                     if (eventType == 2) {
                         boolean equals3 = "tt".equals(name);
-                        Pattern pattern = f26399z;
+                        Pattern pattern = f27184z;
                         str = str14;
                         if (equals3) {
                             String attributeValue = newPullParser.getAttributeValue(str15, "frameRate");
@@ -925,47 +925,47 @@ public final class N3 implements InterfaceC3868s3 {
                             String attributeValue2 = newPullParser.getAttributeValue(str15, "frameRateMultiplier");
                             if (attributeValue2 != null) {
                                 arrayDeque2 = arrayDeque3;
-                                String str17 = AbstractC3159eu.f29993a;
+                                String str17 = AbstractC3182eu.f30782a;
                                 l32 = l35;
-                                AbstractC2772Sd.q("frameRateMultiplier doesn't have 2 parts", attributeValue2.split(" ", -1).length == 2 ? i20 : 0);
-                                f14 = Integer.parseInt(r6[0]) / Integer.parseInt(r6[i20]);
+                                AbstractC2792Sd.q("frameRateMultiplier doesn't have 2 parts", attributeValue2.split(" ", -1).length == 2 ? i19 : 0);
+                                f14 = Integer.parseInt(r6[0]) / Integer.parseInt(r6[i19]);
                             } else {
                                 arrayDeque2 = arrayDeque3;
                                 l32 = l35;
                                 f14 = 1.0f;
                             }
-                            int i21 = m35.f26237b;
+                            int i20 = m35.f27028b;
                             String attributeValue3 = newPullParser.getAttributeValue(str15, "subFrameRate");
                             if (attributeValue3 != null) {
-                                i21 = Integer.parseInt(attributeValue3);
+                                i20 = Integer.parseInt(attributeValue3);
                             }
-                            int i22 = m35.f26238c;
+                            int i21 = m35.f27029c;
                             float f15 = f14;
                             String attributeValue4 = newPullParser.getAttributeValue(str15, "tickRate");
                             if (attributeValue4 != null) {
-                                i22 = Integer.parseInt(attributeValue4);
+                                i21 = Integer.parseInt(attributeValue4);
                             }
-                            M3 m38 = new M3(i21, i22, parseInt * f15);
+                            M3 m38 = new M3(i20, i21, parseInt * f15);
                             String attributeValue5 = newPullParser.getAttributeValue(str15, "cellResolution");
                             if (attributeValue5 != null) {
-                                Matcher matcher = f26392A.matcher(attributeValue5);
+                                Matcher matcher = f27177A.matcher(attributeValue5);
                                 if (matcher.matches()) {
                                     str2 = str15;
                                     try {
-                                        group = matcher.group(i20);
+                                        group = matcher.group(i19);
                                         try {
                                         } catch (NumberFormatException unused) {
-                                            AbstractC2968bG.y("TtmlParser", "Ignoring malformed cell resolution: ".concat(attributeValue5));
-                                            i18 = 15;
-                                            v15 = AbstractC2639Kg.v(newPullParser, "extent");
+                                            AbstractC2991bG.y("TtmlParser", "Ignoring malformed cell resolution: ".concat(attributeValue5));
+                                            i17 = 15;
+                                            v15 = AbstractC2659Kg.v(newPullParser, "extent");
                                             if (v15 != null) {
                                             }
-                                            c0344t2 = r51;
+                                            c0349t2 = r51;
                                             m33 = m36;
-                                            c0344t = c0344t2;
-                                            i10 = i18;
+                                            c0349t = c0349t2;
+                                            i9 = i17;
                                             equals = name.equals("tt");
-                                            String str18 = d.c.f18635e;
+                                            String str18 = d.c.f19422e;
                                             String str19 = "metadata";
                                             String str20 = "region";
                                             m37 = m33;
@@ -976,21 +976,21 @@ public final class N3 implements InterfaceC3868s3 {
                                                 StringBuilder sb = new StringBuilder(String.valueOf(name2).length() + 26);
                                                 sb.append(str16);
                                                 sb.append(name2);
-                                                AbstractC2968bG.t("TtmlParser", sb.toString());
+                                                AbstractC2991bG.t("TtmlParser", sb.toString());
                                                 str3 = str16;
-                                                i18 = i10;
+                                                i17 = i9;
                                                 hashMap = hashMap6;
-                                                m36 = c0344t;
+                                                m36 = c0349t;
                                                 arrayDeque = arrayDeque2;
                                                 hashMap2 = hashMap3;
-                                                i17 = 1;
-                                                i9 = 1;
+                                                i16 = 1;
+                                                i6 = 1;
                                                 newPullParser.next();
                                                 eventType = newPullParser.getEventType();
                                                 hashMap6 = hashMap;
                                                 arrayDeque3 = arrayDeque;
                                                 hashMap7 = hashMap2;
-                                                i16 = i9;
+                                                i15 = i6;
                                                 str14 = str;
                                                 str15 = str2;
                                                 m35 = m32;
@@ -1002,15 +1002,15 @@ public final class N3 implements InterfaceC3868s3 {
                                             if (equals2) {
                                             }
                                             m37 = m34;
-                                            i18 = i11;
-                                            m36 = c0344t;
-                                            i9 = 1;
+                                            i17 = i10;
+                                            m36 = c0349t;
+                                            i6 = 1;
                                             newPullParser.next();
                                             eventType = newPullParser.getEventType();
                                             hashMap6 = hashMap;
                                             arrayDeque3 = arrayDeque;
                                             hashMap7 = hashMap2;
-                                            i16 = i9;
+                                            i15 = i6;
                                             str14 = str;
                                             str15 = str2;
                                             m35 = m32;
@@ -1030,27 +1030,27 @@ public final class N3 implements InterfaceC3868s3 {
                                     }
                                     int parseInt3 = Integer.parseInt(group3);
                                     if (parseInt2 == 0) {
-                                        i15 = parseInt3;
-                                        z3 = false;
+                                        i14 = parseInt3;
+                                        z6 = false;
                                     } else if (parseInt3 != 0) {
-                                        i15 = parseInt3;
-                                        z3 = true;
+                                        i14 = parseInt3;
+                                        z6 = true;
                                     } else {
-                                        i15 = 0;
-                                        z3 = false;
+                                        i14 = 0;
+                                        z6 = false;
                                     }
-                                    if (z3) {
+                                    if (z6) {
                                         m36 = m38;
                                         m32 = m35;
-                                        i18 = i15;
-                                        v15 = AbstractC2639Kg.v(newPullParser, "extent");
+                                        i17 = i14;
+                                        v15 = AbstractC2659Kg.v(newPullParser, "extent");
                                         if (v15 != null) {
                                             Matcher matcher2 = pattern.matcher(v15);
                                             if (matcher2.matches()) {
                                                 try {
                                                     group2 = matcher2.group(1);
                                                 } catch (NumberFormatException unused3) {
-                                                    AbstractC2968bG.y("TtmlParser", "Ignoring malformed tts extent: ".concat(v15));
+                                                    AbstractC2991bG.y("TtmlParser", "Ignoring malformed tts extent: ".concat(v15));
                                                 }
                                                 if (group2 == null) {
                                                     throw r51;
@@ -1060,33 +1060,33 @@ public final class N3 implements InterfaceC3868s3 {
                                                 if (group4 == null) {
                                                     throw r51;
                                                 }
-                                                c0344t2 = new C0344t(parseInt4, Integer.parseInt(group4));
+                                                c0349t2 = new C0349t(parseInt4, Integer.parseInt(group4));
                                                 m33 = m36;
-                                                c0344t = c0344t2;
+                                                c0349t = c0349t2;
                                             } else {
-                                                AbstractC2968bG.y("TtmlParser", "Ignoring non-pixel tts extent: ".concat(v15));
+                                                AbstractC2991bG.y("TtmlParser", "Ignoring non-pixel tts extent: ".concat(v15));
                                             }
                                         }
-                                        c0344t2 = r51;
+                                        c0349t2 = r51;
                                         m33 = m36;
-                                        c0344t = c0344t2;
+                                        c0349t = c0349t2;
                                     } else {
                                         m36 = m38;
                                         try {
-                                            throw new IllegalArgumentException(AbstractC2639Kg.x("Invalid cell resolution %s %s", Integer.valueOf(parseInt2), Integer.valueOf(i15)));
+                                            throw new IllegalArgumentException(AbstractC2659Kg.x("Invalid cell resolution %s %s", Integer.valueOf(parseInt2), Integer.valueOf(i14)));
                                         } catch (NumberFormatException unused4) {
                                             m32 = m35;
-                                            AbstractC2968bG.y("TtmlParser", "Ignoring malformed cell resolution: ".concat(attributeValue5));
-                                            i18 = 15;
-                                            v15 = AbstractC2639Kg.v(newPullParser, "extent");
+                                            AbstractC2991bG.y("TtmlParser", "Ignoring malformed cell resolution: ".concat(attributeValue5));
+                                            i17 = 15;
+                                            v15 = AbstractC2659Kg.v(newPullParser, "extent");
                                             if (v15 != null) {
                                             }
-                                            c0344t2 = r51;
+                                            c0349t2 = r51;
                                             m33 = m36;
-                                            c0344t = c0344t2;
-                                            i10 = i18;
+                                            c0349t = c0349t2;
+                                            i9 = i17;
                                             equals = name.equals("tt");
-                                            String str182 = d.c.f18635e;
+                                            String str182 = d.c.f19422e;
                                             String str192 = "metadata";
                                             String str202 = "region";
                                             m37 = m33;
@@ -1099,15 +1099,15 @@ public final class N3 implements InterfaceC3868s3 {
                                             if (equals2) {
                                             }
                                             m37 = m34;
-                                            i18 = i11;
-                                            m36 = c0344t;
-                                            i9 = 1;
+                                            i17 = i10;
+                                            m36 = c0349t;
+                                            i6 = 1;
                                             newPullParser.next();
                                             eventType = newPullParser.getEventType();
                                             hashMap6 = hashMap;
                                             arrayDeque3 = arrayDeque;
                                             hashMap7 = hashMap2;
-                                            i16 = i9;
+                                            i15 = i6;
                                             str14 = str;
                                             str15 = str2;
                                             m35 = m32;
@@ -1116,73 +1116,73 @@ public final class N3 implements InterfaceC3868s3 {
                                         }
                                     }
                                 } else {
-                                    AbstractC2968bG.y("TtmlParser", "Ignoring malformed cell resolution: ".concat(attributeValue5));
+                                    AbstractC2991bG.y("TtmlParser", "Ignoring malformed cell resolution: ".concat(attributeValue5));
                                 }
                             }
                             str2 = str15;
                             m36 = m38;
                             m32 = m35;
-                            i18 = 15;
-                            v15 = AbstractC2639Kg.v(newPullParser, "extent");
+                            i17 = 15;
+                            v15 = AbstractC2659Kg.v(newPullParser, "extent");
                             if (v15 != null) {
                             }
-                            c0344t2 = r51;
+                            c0349t2 = r51;
                             m33 = m36;
-                            c0344t = c0344t2;
+                            c0349t = c0349t2;
                         } else {
                             str2 = str15;
                             arrayDeque2 = arrayDeque3;
                             m32 = m35;
                             l32 = l35;
                             m33 = m37;
-                            c0344t = m36;
+                            c0349t = m36;
                         }
-                        i10 = i18;
+                        i9 = i17;
                         equals = name.equals("tt");
-                        String str1822 = d.c.f18635e;
+                        String str1822 = d.c.f19422e;
                         String str1922 = "metadata";
                         String str2022 = "region";
                         m37 = m33;
                         String str2122 = "head";
                         hashMap3 = hashMap7;
-                        if (!equals && !name.equals("head") && !name.equals("body") && !name.equals("div") && !name.equals("p") && !name.equals("span") && !name.equals("br") && !name.equals(com.anythink.expressad.foundation.h.k.f19634e) && !name.equals("styling") && !name.equals("layout") && !name.equals("region") && !name.equals("metadata") && !name.equals(d.c.f18635e) && !name.equals("data") && !name.equals("information")) {
+                        if (!equals && !name.equals("head") && !name.equals("body") && !name.equals("div") && !name.equals("p") && !name.equals("span") && !name.equals("br") && !name.equals(com.anythink.expressad.foundation.h.k.f20421e) && !name.equals("styling") && !name.equals("layout") && !name.equals("region") && !name.equals("metadata") && !name.equals(d.c.f19422e) && !name.equals("data") && !name.equals("information")) {
                             String name22 = newPullParser.getName();
                             StringBuilder sb2 = new StringBuilder(String.valueOf(name22).length() + 26);
                             sb2.append(str16);
                             sb2.append(name22);
-                            AbstractC2968bG.t("TtmlParser", sb2.toString());
+                            AbstractC2991bG.t("TtmlParser", sb2.toString());
                             str3 = str16;
-                            i18 = i10;
+                            i17 = i9;
                             hashMap = hashMap6;
-                            m36 = c0344t;
+                            m36 = c0349t;
                             arrayDeque = arrayDeque2;
                             hashMap2 = hashMap3;
-                            i17 = 1;
+                            i16 = 1;
                         }
                         equals2 = "head".equals(name);
                         String str2222 = "\\s+";
                         if (equals2) {
                             while (true) {
                                 newPullParser.next();
-                                if (AbstractC2639Kg.s(newPullParser, com.anythink.expressad.foundation.h.k.f19634e)) {
-                                    String v16 = AbstractC2639Kg.v(newPullParser, com.anythink.expressad.foundation.h.k.f19634e);
+                                if (AbstractC2659Kg.s(newPullParser, com.anythink.expressad.foundation.h.k.f20421e)) {
+                                    String v16 = AbstractC2659Kg.v(newPullParser, com.anythink.expressad.foundation.h.k.f20421e);
                                     str3 = str16;
                                     Q3 b9 = b(newPullParser, new Q3());
                                     if (v16 != null) {
                                         String trim = v16.trim();
                                         if (trim.isEmpty()) {
                                             str13 = str2122;
-                                            split = new String[i19];
+                                            split = new String[i18];
                                         } else {
                                             str13 = str2122;
-                                            String str23 = AbstractC3159eu.f29993a;
+                                            String str23 = AbstractC3182eu.f30782a;
                                             split = trim.split(str2222, -1);
                                         }
                                         str5 = str2222;
-                                        int i23 = 0;
-                                        for (int length = split.length; i23 < length; length = length) {
-                                            b9.d((Q3) hashMap5.get(split[i23]));
-                                            i23++;
+                                        int i22 = 0;
+                                        for (int length = split.length; i22 < length; length = length) {
+                                            b9.d((Q3) hashMap5.get(split[i22]));
+                                            i22++;
                                         }
                                     } else {
                                         str13 = str2122;
@@ -1192,9 +1192,9 @@ public final class N3 implements InterfaceC3868s3 {
                                     if (e9 != null) {
                                         hashMap5.put(e9, b9);
                                     }
-                                    int i24 = i10;
+                                    int i23 = i9;
                                     str8 = str1822;
-                                    i11 = i24;
+                                    i10 = i23;
                                     hashMap = hashMap6;
                                     str6 = str1922;
                                     str7 = str2022;
@@ -1204,28 +1204,28 @@ public final class N3 implements InterfaceC3868s3 {
                                     String str24 = str2122;
                                     str3 = str16;
                                     str5 = str2222;
-                                    if (AbstractC2639Kg.s(newPullParser, str2022)) {
+                                    if (AbstractC2659Kg.s(newPullParser, str2022)) {
                                         str7 = str2022;
                                         String str25 = str1822;
-                                        String v17 = AbstractC2639Kg.v(newPullParser, "id");
+                                        String v17 = AbstractC2659Kg.v(newPullParser, "id");
                                         if (v17 == null) {
                                             p32 = r51;
-                                            i11 = i10;
+                                            i10 = i9;
                                             hashMap4 = hashMap6;
                                             str11 = str1922;
                                         } else {
-                                            String v18 = AbstractC2639Kg.v(newPullParser, "origin");
+                                            String v18 = AbstractC2659Kg.v(newPullParser, "origin");
                                             if (v18 == null) {
                                                 str9 = v18;
-                                                String v19 = AbstractC2639Kg.v(newPullParser, com.anythink.expressad.foundation.h.k.f19634e);
+                                                String v19 = AbstractC2659Kg.v(newPullParser, com.anythink.expressad.foundation.h.k.f20421e);
                                                 if (v19 != null && (q34 = (Q3) hashMap5.get(v19)) != null) {
                                                     str10 = q34.a();
                                                     str11 = str1922;
-                                                    Pattern pattern2 = f26398y;
+                                                    Pattern pattern2 = f27183y;
                                                     if (str10 == null) {
                                                         hashMap4 = hashMap6;
                                                         Matcher matcher3 = pattern2.matcher(str10);
-                                                        i12 = i10;
+                                                        i11 = i9;
                                                         Matcher matcher4 = pattern.matcher(str10);
                                                         if (matcher3.matches()) {
                                                             str12 = "Ignoring region with unsupported extent: ";
@@ -1239,17 +1239,17 @@ public final class N3 implements InterfaceC3868s3 {
                                                                 if (group6 == null) {
                                                                     throw r51;
                                                                 }
-                                                                f3 = Float.parseFloat(group6) / 100.0f;
+                                                                f2 = Float.parseFloat(group6) / 100.0f;
                                                                 f9 = f13;
                                                             } catch (NumberFormatException unused5) {
-                                                                AbstractC2968bG.y("TtmlParser", "Ignoring region with malformed origin: ".concat(str10));
+                                                                AbstractC2991bG.y("TtmlParser", "Ignoring region with malformed origin: ".concat(str10));
                                                             }
                                                         } else {
                                                             str12 = "Ignoring region with unsupported extent: ";
                                                             if (!matcher4.matches()) {
-                                                                AbstractC2968bG.y("TtmlParser", "Ignoring region with unsupported origin: ".concat(str10));
-                                                            } else if (c0344t == 0) {
-                                                                AbstractC2968bG.y("TtmlParser", "Ignoring region with missing tts:extent: ".concat(str10));
+                                                                AbstractC2991bG.y("TtmlParser", "Ignoring region with unsupported origin: ".concat(str10));
+                                                            } else if (c0349t == 0) {
+                                                                AbstractC2991bG.y("TtmlParser", "Ignoring region with missing tts:extent: ".concat(str10));
                                                             } else {
                                                                 try {
                                                                     String group7 = matcher4.group(1);
@@ -1261,25 +1261,25 @@ public final class N3 implements InterfaceC3868s3 {
                                                                     if (group8 == null) {
                                                                         throw r51;
                                                                     }
-                                                                    f13 = parseInt5 / c0344t.f2133a;
-                                                                    f3 = Integer.parseInt(group8) / c0344t.f2134b;
+                                                                    f13 = parseInt5 / c0349t.f2221a;
+                                                                    f2 = Integer.parseInt(group8) / c0349t.f2222b;
                                                                     f9 = f13;
                                                                 } catch (NumberFormatException unused6) {
-                                                                    AbstractC2968bG.y("TtmlParser", "Ignoring region with malformed origin: ".concat(str10));
+                                                                    AbstractC2991bG.y("TtmlParser", "Ignoring region with malformed origin: ".concat(str10));
                                                                 }
                                                             }
                                                             p32 = r51;
-                                                            i11 = i12;
+                                                            i10 = i11;
                                                         }
                                                     } else {
                                                         str12 = "Ignoring region with unsupported extent: ";
-                                                        i12 = i10;
+                                                        i11 = i9;
                                                         hashMap4 = hashMap6;
-                                                        f3 = 0.0f;
+                                                        f2 = 0.0f;
                                                         f9 = 0.0f;
                                                     }
-                                                    v10 = AbstractC2639Kg.v(newPullParser, "extent");
-                                                    if (v10 == null && (v14 = AbstractC2639Kg.v(newPullParser, com.anythink.expressad.foundation.h.k.f19634e)) != null && (q33 = (Q3) hashMap5.get(v14)) != null) {
+                                                    v10 = AbstractC2659Kg.v(newPullParser, "extent");
+                                                    if (v10 == null && (v14 = AbstractC2659Kg.v(newPullParser, com.anythink.expressad.foundation.h.k.f20421e)) != null && (q33 = (Q3) hashMap5.get(v14)) != null) {
                                                         v10 = q33.b();
                                                     }
                                                     if (v10 == null) {
@@ -1299,13 +1299,13 @@ public final class N3 implements InterfaceC3868s3 {
                                                                 f10 = parseFloat;
                                                                 f11 = Float.parseFloat(group10) / 100.0f;
                                                             } catch (NumberFormatException unused7) {
-                                                                AbstractC2968bG.y("TtmlParser", "Ignoring region with malformed extent: ".concat(String.valueOf(str10)));
+                                                                AbstractC2991bG.y("TtmlParser", "Ignoring region with malformed extent: ".concat(String.valueOf(str10)));
                                                             }
                                                         } else {
                                                             if (!matcher6.matches()) {
-                                                                AbstractC2968bG.y("TtmlParser", str12.concat(String.valueOf(str10)));
-                                                            } else if (c0344t == 0) {
-                                                                AbstractC2968bG.y("TtmlParser", "Ignoring region with missing tts:extent: ".concat(String.valueOf(str10)));
+                                                                AbstractC2991bG.y("TtmlParser", str12.concat(String.valueOf(str10)));
+                                                            } else if (c0349t == 0) {
+                                                                AbstractC2991bG.y("TtmlParser", "Ignoring region with missing tts:extent: ".concat(String.valueOf(str10)));
                                                             } else {
                                                                 try {
                                                                     String group11 = matcher6.group(1);
@@ -1317,164 +1317,164 @@ public final class N3 implements InterfaceC3868s3 {
                                                                     if (group12 == null) {
                                                                         throw r51;
                                                                     }
-                                                                    f11 = Integer.parseInt(group12) / c0344t.f2134b;
-                                                                    f10 = parseInt6 / c0344t.f2133a;
+                                                                    f11 = Integer.parseInt(group12) / c0349t.f2222b;
+                                                                    f10 = parseInt6 / c0349t.f2221a;
                                                                 } catch (NumberFormatException unused8) {
-                                                                    AbstractC2968bG.y("TtmlParser", "Ignoring region with malformed extent: ".concat(String.valueOf(str10)));
+                                                                    AbstractC2991bG.y("TtmlParser", "Ignoring region with malformed extent: ".concat(String.valueOf(str10)));
                                                                 }
                                                             }
                                                             p32 = r51;
-                                                            i11 = i12;
+                                                            i10 = i11;
                                                         }
                                                     } else {
                                                         f10 = 1.0f;
                                                         f11 = 1.0f;
                                                     }
-                                                    v11 = AbstractC2639Kg.v(newPullParser, "displayAlign");
-                                                    if (v11 == null && (v13 = AbstractC2639Kg.v(newPullParser, com.anythink.expressad.foundation.h.k.f19634e)) != null && (q32 = (Q3) hashMap5.get(v13)) != null) {
+                                                    v11 = AbstractC2659Kg.v(newPullParser, "displayAlign");
+                                                    if (v11 == null && (v13 = AbstractC2659Kg.v(newPullParser, com.anythink.expressad.foundation.h.k.f20421e)) != null && (q32 = (Q3) hashMap5.get(v13)) != null) {
                                                         v11 = q32.c();
                                                     }
                                                     if (v11 != null) {
-                                                        String f16 = AbstractC3043cl.f(v11);
+                                                        String f16 = AbstractC3066cl.f(v11);
                                                         int hashCode = f16.hashCode();
                                                         if (hashCode != -1364013995) {
                                                             if (hashCode == 92734940 && f16.equals("after")) {
                                                                 c11 = 1;
                                                                 if (c11 != 0) {
-                                                                    f12 = f3 + (f11 / 2.0f);
-                                                                    i11 = i12;
-                                                                    i13 = 1;
+                                                                    f12 = f2 + (f11 / 2.0f);
+                                                                    i10 = i11;
+                                                                    i12 = 1;
                                                                 } else if (c11 == 1) {
-                                                                    f12 = f3 + f11;
-                                                                    i11 = i12;
-                                                                    i13 = 2;
+                                                                    f12 = f2 + f11;
+                                                                    i10 = i11;
+                                                                    i12 = 2;
                                                                 }
-                                                                float f17 = 1.0f / i11;
-                                                                v12 = AbstractC2639Kg.v(newPullParser, "writingMode");
+                                                                float f17 = 1.0f / i10;
+                                                                v12 = AbstractC2659Kg.v(newPullParser, "writingMode");
                                                                 if (v12 != null) {
-                                                                    String f18 = AbstractC3043cl.f(v12);
+                                                                    String f18 = AbstractC3066cl.f(v12);
                                                                     int hashCode2 = f18.hashCode();
                                                                     if (hashCode2 == 3694) {
                                                                         if (f18.equals("tb")) {
                                                                             c10 = 0;
                                                                             if (c10 != 0) {
                                                                             }
-                                                                            i14 = 2;
-                                                                            p32 = new P3(v17, f9, f12, 0, i13, f10, f11, 1, f17, i14);
+                                                                            i13 = 2;
+                                                                            p32 = new P3(v17, f9, f12, 0, i12, f10, f11, 1, f17, i13);
                                                                         }
                                                                         c10 = 65535;
                                                                         if (c10 != 0) {
                                                                         }
-                                                                        i14 = 2;
-                                                                        p32 = new P3(v17, f9, f12, 0, i13, f10, f11, 1, f17, i14);
+                                                                        i13 = 2;
+                                                                        p32 = new P3(v17, f9, f12, 0, i12, f10, f11, 1, f17, i13);
                                                                     } else if (hashCode2 != 3553396) {
                                                                         if (hashCode2 == 3553576 && f18.equals("tbrl")) {
                                                                             c10 = 2;
                                                                             if (c10 != 0 || c10 == 1) {
-                                                                                i14 = 2;
+                                                                                i13 = 2;
                                                                             } else if (c10 == 2) {
-                                                                                i14 = 1;
+                                                                                i13 = 1;
                                                                             }
-                                                                            p32 = new P3(v17, f9, f12, 0, i13, f10, f11, 1, f17, i14);
+                                                                            p32 = new P3(v17, f9, f12, 0, i12, f10, f11, 1, f17, i13);
                                                                         }
                                                                         c10 = 65535;
                                                                         if (c10 != 0) {
                                                                         }
-                                                                        i14 = 2;
-                                                                        p32 = new P3(v17, f9, f12, 0, i13, f10, f11, 1, f17, i14);
+                                                                        i13 = 2;
+                                                                        p32 = new P3(v17, f9, f12, 0, i12, f10, f11, 1, f17, i13);
                                                                     } else {
                                                                         if (f18.equals("tblr")) {
                                                                             c10 = 1;
                                                                             if (c10 != 0) {
                                                                             }
-                                                                            i14 = 2;
-                                                                            p32 = new P3(v17, f9, f12, 0, i13, f10, f11, 1, f17, i14);
+                                                                            i13 = 2;
+                                                                            p32 = new P3(v17, f9, f12, 0, i12, f10, f11, 1, f17, i13);
                                                                         }
                                                                         c10 = 65535;
                                                                         if (c10 != 0) {
                                                                         }
-                                                                        i14 = 2;
-                                                                        p32 = new P3(v17, f9, f12, 0, i13, f10, f11, 1, f17, i14);
+                                                                        i13 = 2;
+                                                                        p32 = new P3(v17, f9, f12, 0, i12, f10, f11, 1, f17, i13);
                                                                     }
                                                                 }
-                                                                i14 = Integer.MIN_VALUE;
-                                                                p32 = new P3(v17, f9, f12, 0, i13, f10, f11, 1, f17, i14);
+                                                                i13 = Integer.MIN_VALUE;
+                                                                p32 = new P3(v17, f9, f12, 0, i12, f10, f11, 1, f17, i13);
                                                             }
                                                             c11 = 65535;
                                                             if (c11 != 0) {
                                                             }
-                                                            float f172 = 1.0f / i11;
-                                                            v12 = AbstractC2639Kg.v(newPullParser, "writingMode");
+                                                            float f172 = 1.0f / i10;
+                                                            v12 = AbstractC2659Kg.v(newPullParser, "writingMode");
                                                             if (v12 != null) {
                                                             }
-                                                            i14 = Integer.MIN_VALUE;
-                                                            p32 = new P3(v17, f9, f12, 0, i13, f10, f11, 1, f172, i14);
+                                                            i13 = Integer.MIN_VALUE;
+                                                            p32 = new P3(v17, f9, f12, 0, i12, f10, f11, 1, f172, i13);
                                                         } else {
                                                             if (f16.equals("center")) {
                                                                 c11 = 0;
                                                                 if (c11 != 0) {
                                                                 }
-                                                                float f1722 = 1.0f / i11;
-                                                                v12 = AbstractC2639Kg.v(newPullParser, "writingMode");
+                                                                float f1722 = 1.0f / i10;
+                                                                v12 = AbstractC2659Kg.v(newPullParser, "writingMode");
                                                                 if (v12 != null) {
                                                                 }
-                                                                i14 = Integer.MIN_VALUE;
-                                                                p32 = new P3(v17, f9, f12, 0, i13, f10, f11, 1, f1722, i14);
+                                                                i13 = Integer.MIN_VALUE;
+                                                                p32 = new P3(v17, f9, f12, 0, i12, f10, f11, 1, f1722, i13);
                                                             }
                                                             c11 = 65535;
                                                             if (c11 != 0) {
                                                             }
-                                                            float f17222 = 1.0f / i11;
-                                                            v12 = AbstractC2639Kg.v(newPullParser, "writingMode");
+                                                            float f17222 = 1.0f / i10;
+                                                            v12 = AbstractC2659Kg.v(newPullParser, "writingMode");
                                                             if (v12 != null) {
                                                             }
-                                                            i14 = Integer.MIN_VALUE;
-                                                            p32 = new P3(v17, f9, f12, 0, i13, f10, f11, 1, f17222, i14);
+                                                            i13 = Integer.MIN_VALUE;
+                                                            p32 = new P3(v17, f9, f12, 0, i12, f10, f11, 1, f17222, i13);
                                                         }
                                                     }
-                                                    f12 = f3;
-                                                    i11 = i12;
-                                                    i13 = 0;
-                                                    float f172222 = 1.0f / i11;
-                                                    v12 = AbstractC2639Kg.v(newPullParser, "writingMode");
+                                                    f12 = f2;
+                                                    i10 = i11;
+                                                    i12 = 0;
+                                                    float f172222 = 1.0f / i10;
+                                                    v12 = AbstractC2659Kg.v(newPullParser, "writingMode");
                                                     if (v12 != null) {
                                                     }
-                                                    i14 = Integer.MIN_VALUE;
-                                                    p32 = new P3(v17, f9, f12, 0, i13, f10, f11, 1, f172222, i14);
+                                                    i13 = Integer.MIN_VALUE;
+                                                    p32 = new P3(v17, f9, f12, 0, i12, f10, f11, 1, f172222, i13);
                                                 }
                                             } else {
                                                 str9 = v18;
                                             }
                                             str10 = str9;
                                             str11 = str1922;
-                                            Pattern pattern22 = f26398y;
+                                            Pattern pattern22 = f27183y;
                                             if (str10 == null) {
                                             }
-                                            v10 = AbstractC2639Kg.v(newPullParser, "extent");
+                                            v10 = AbstractC2659Kg.v(newPullParser, "extent");
                                             if (v10 == null) {
                                                 v10 = q33.b();
                                             }
                                             if (v10 == null) {
                                             }
-                                            v11 = AbstractC2639Kg.v(newPullParser, "displayAlign");
+                                            v11 = AbstractC2659Kg.v(newPullParser, "displayAlign");
                                             if (v11 == null) {
                                                 v11 = q32.c();
                                             }
                                             if (v11 != null) {
                                             }
-                                            f12 = f3;
-                                            i11 = i12;
-                                            i13 = 0;
-                                            float f1722222 = 1.0f / i11;
-                                            v12 = AbstractC2639Kg.v(newPullParser, "writingMode");
+                                            f12 = f2;
+                                            i10 = i11;
+                                            i12 = 0;
+                                            float f1722222 = 1.0f / i10;
+                                            v12 = AbstractC2659Kg.v(newPullParser, "writingMode");
                                             if (v12 != null) {
                                             }
-                                            i14 = Integer.MIN_VALUE;
-                                            p32 = new P3(v17, f9, f12, 0, i13, f10, f11, 1, f1722222, i14);
+                                            i13 = Integer.MIN_VALUE;
+                                            p32 = new P3(v17, f9, f12, 0, i12, f10, f11, 1, f1722222, i13);
                                         }
                                         if (p32 != null) {
                                             hashMap = hashMap4;
-                                            hashMap.put(p32.f26729a, p32);
+                                            hashMap.put(p32.f27512a, p32);
                                         } else {
                                             hashMap = hashMap4;
                                         }
@@ -1484,21 +1484,21 @@ public final class N3 implements InterfaceC3868s3 {
                                         str6 = str11;
                                     } else {
                                         String str26 = str1822;
-                                        i11 = i10;
+                                        i10 = i9;
                                         hashMap = hashMap6;
                                         str6 = str1922;
                                         str7 = str2022;
-                                        if (AbstractC2639Kg.s(newPullParser, str6)) {
+                                        if (AbstractC2659Kg.s(newPullParser, str6)) {
                                             while (true) {
                                                 newPullParser.next();
                                                 str8 = str26;
-                                                if (!AbstractC2639Kg.s(newPullParser, str8) || (v9 = AbstractC2639Kg.v(newPullParser, "id")) == null) {
+                                                if (!AbstractC2659Kg.s(newPullParser, str8) || (v9 = AbstractC2659Kg.v(newPullParser, "id")) == null) {
                                                     hashMap2 = hashMap3;
                                                 } else {
                                                     hashMap2 = hashMap3;
                                                     hashMap2.put(v9, newPullParser.nextText());
                                                 }
-                                                if (!AbstractC2639Kg.l(newPullParser, str6)) {
+                                                if (!AbstractC2659Kg.l(newPullParser, str6)) {
                                                     str26 = str8;
                                                     hashMap3 = hashMap2;
                                                 }
@@ -1510,12 +1510,12 @@ public final class N3 implements InterfaceC3868s3 {
                                         str2122 = str24;
                                     }
                                 }
-                                if (AbstractC2639Kg.l(newPullParser, str2122)) {
+                                if (AbstractC2659Kg.l(newPullParser, str2122)) {
                                     m34 = m37;
                                     arrayDeque = arrayDeque2;
                                 } else {
                                     String str27 = str8;
-                                    i10 = i11;
+                                    i9 = i10;
                                     str1822 = str27;
                                     str1922 = str6;
                                     hashMap6 = hashMap;
@@ -1523,12 +1523,12 @@ public final class N3 implements InterfaceC3868s3 {
                                     str2222 = str5;
                                     str16 = str3;
                                     str2022 = str7;
-                                    i19 = 0;
+                                    i18 = 0;
                                 }
                             }
                         } else {
                             str3 = str16;
-                            i11 = i10;
+                            i10 = i9;
                             hashMap = hashMap6;
                             String str28 = "\\s+";
                             Object obj3 = "region";
@@ -1537,16 +1537,16 @@ public final class N3 implements InterfaceC3868s3 {
                                 int attributeCount = newPullParser.getAttributeCount();
                                 Q3 b10 = b(newPullParser, r51);
                                 String str29 = str;
-                                int i25 = 0;
-                                long j9 = com.anythink.basead.exoplayer.b.f6382b;
-                                long j10 = com.anythink.basead.exoplayer.b.f6382b;
+                                int i24 = 0;
+                                long j9 = com.anythink.basead.exoplayer.b.f7168b;
+                                long j10 = com.anythink.basead.exoplayer.b.f7168b;
                                 String[] strArr2 = null;
                                 String str30 = null;
-                                long j11 = com.anythink.basead.exoplayer.b.f6382b;
-                                while (i25 < attributeCount) {
+                                long j11 = com.anythink.basead.exoplayer.b.f7168b;
+                                while (i24 < attributeCount) {
                                     try {
-                                        String attributeName = newPullParser.getAttributeName(i25);
-                                        String attributeValue6 = newPullParser.getAttributeValue(i25);
+                                        String attributeName = newPullParser.getAttributeName(i24);
+                                        String attributeValue6 = newPullParser.getAttributeValue(i24);
                                         switch (attributeName.hashCode()) {
                                             case -934795532:
                                                 obj = obj3;
@@ -1584,7 +1584,7 @@ public final class N3 implements InterfaceC3868s3 {
                                                 c9 = 65535;
                                                 break;
                                             case 109780401:
-                                                if (attributeName.equals(com.anythink.expressad.foundation.h.k.f19634e)) {
+                                                if (attributeName.equals(com.anythink.expressad.foundation.h.k.f20421e)) {
                                                     obj = obj3;
                                                     c9 = 3;
                                                     break;
@@ -1622,22 +1622,22 @@ public final class N3 implements InterfaceC3868s3 {
                                                         try {
                                                             strArr = new String[0];
                                                             str4 = str28;
-                                                        } catch (C3761q3 e10) {
+                                                        } catch (C3784q3 e10) {
                                                             e = e10;
                                                             m34 = m37;
                                                             arrayDeque = arrayDeque2;
-                                                            AbstractC2968bG.C("TtmlParser", "Suppressing parser error", e);
+                                                            AbstractC2991bG.C("TtmlParser", "Suppressing parser error", e);
                                                             m37 = m34;
-                                                            i18 = i11;
-                                                            m36 = c0344t;
-                                                            i17 = 1;
-                                                            i9 = 1;
+                                                            i17 = i10;
+                                                            m36 = c0349t;
+                                                            i16 = 1;
+                                                            i6 = 1;
                                                             newPullParser.next();
                                                             eventType = newPullParser.getEventType();
                                                             hashMap6 = hashMap;
                                                             arrayDeque3 = arrayDeque;
                                                             hashMap7 = hashMap2;
-                                                            i16 = i9;
+                                                            i15 = i6;
                                                             str14 = str;
                                                             str15 = str2;
                                                             m35 = m32;
@@ -1645,14 +1645,14 @@ public final class N3 implements InterfaceC3868s3 {
                                                             obj2 = null;
                                                         }
                                                     } else {
-                                                        String str31 = AbstractC3159eu.f29993a;
+                                                        String str31 = AbstractC3182eu.f30782a;
                                                         str4 = str28;
                                                         strArr = trim2.split(str4, -1);
                                                     }
                                                     if (strArr.length > 0) {
                                                         strArr2 = strArr;
                                                     }
-                                                } catch (C3761q3 e11) {
+                                                } catch (C3784q3 e11) {
                                                     e = e11;
                                                 }
                                             } else if (c9 != 4) {
@@ -1677,44 +1677,44 @@ public final class N3 implements InterfaceC3868s3 {
                                             j11 = e(attributeValue6, m34);
                                         }
                                         try {
-                                            i25++;
+                                            i24++;
                                             m37 = m34;
                                             obj3 = obj;
                                             str28 = str4;
-                                        } catch (C3761q3 e12) {
+                                        } catch (C3784q3 e12) {
                                             e = e12;
                                             arrayDeque = arrayDeque2;
-                                            AbstractC2968bG.C("TtmlParser", "Suppressing parser error", e);
+                                            AbstractC2991bG.C("TtmlParser", "Suppressing parser error", e);
                                             m37 = m34;
-                                            i18 = i11;
-                                            m36 = c0344t;
-                                            i17 = 1;
-                                            i9 = 1;
+                                            i17 = i10;
+                                            m36 = c0349t;
+                                            i16 = 1;
+                                            i6 = 1;
                                             newPullParser.next();
                                             eventType = newPullParser.getEventType();
                                             hashMap6 = hashMap;
                                             arrayDeque3 = arrayDeque;
                                             hashMap7 = hashMap2;
-                                            i16 = i9;
+                                            i15 = i6;
                                             str14 = str;
                                             str15 = str2;
                                             m35 = m32;
                                             str16 = str3;
                                             obj2 = null;
                                         }
-                                    } catch (C3761q3 e13) {
+                                    } catch (C3784q3 e13) {
                                         e = e13;
                                         m34 = m37;
                                     }
                                 }
                                 m34 = m37;
-                                long j12 = com.anythink.basead.exoplayer.b.f6382b;
+                                long j12 = com.anythink.basead.exoplayer.b.f7168b;
                                 if (l32 != null) {
                                     l33 = l32;
-                                    long j13 = l33.f26049d;
-                                    if (j13 != com.anythink.basead.exoplayer.b.f6382b) {
-                                        j10 = j10 != com.anythink.basead.exoplayer.b.f6382b ? j10 + j13 : -9223372036854775807L;
-                                        if (j9 != com.anythink.basead.exoplayer.b.f6382b) {
+                                    long j13 = l33.f26849d;
+                                    if (j13 != com.anythink.basead.exoplayer.b.f7168b) {
+                                        j10 = j10 != com.anythink.basead.exoplayer.b.f7168b ? j10 + j13 : -9223372036854775807L;
+                                        if (j9 != com.anythink.basead.exoplayer.b.f7168b) {
                                             j9 += j13;
                                         } else {
                                             l34 = l33;
@@ -1726,12 +1726,12 @@ public final class N3 implements InterfaceC3868s3 {
                                     l33 = l32;
                                     l34 = null;
                                 }
-                                if (j9 == com.anythink.basead.exoplayer.b.f6382b) {
-                                    if (j11 != com.anythink.basead.exoplayer.b.f6382b) {
+                                if (j9 == com.anythink.basead.exoplayer.b.f7168b) {
+                                    if (j11 != com.anythink.basead.exoplayer.b.f7168b) {
                                         j6 = j10 + j11;
                                     } else if (l34 != null) {
-                                        j6 = l34.f26050e;
-                                        if (j6 != com.anythink.basead.exoplayer.b.f6382b) {
+                                        j6 = l34.f26850e;
+                                        if (j6 != com.anythink.basead.exoplayer.b.f7168b) {
                                         }
                                     }
                                     j12 = j6;
@@ -1743,40 +1743,40 @@ public final class N3 implements InterfaceC3868s3 {
                                 try {
                                     arrayDeque.push(b11);
                                     if (l33 != null) {
-                                        if (l33.f26057m == null) {
-                                            l33.f26057m = new ArrayList();
+                                        if (l33.f26857m == null) {
+                                            l33.f26857m = new ArrayList();
                                         }
-                                        l33.f26057m.add(b11);
+                                        l33.f26857m.add(b11);
                                     }
-                                } catch (C3761q3 e14) {
+                                } catch (C3784q3 e14) {
                                     e = e14;
-                                    AbstractC2968bG.C("TtmlParser", "Suppressing parser error", e);
+                                    AbstractC2991bG.C("TtmlParser", "Suppressing parser error", e);
                                     m37 = m34;
-                                    i18 = i11;
-                                    m36 = c0344t;
-                                    i17 = 1;
-                                    i9 = 1;
+                                    i17 = i10;
+                                    m36 = c0349t;
+                                    i16 = 1;
+                                    i6 = 1;
                                     newPullParser.next();
                                     eventType = newPullParser.getEventType();
                                     hashMap6 = hashMap;
                                     arrayDeque3 = arrayDeque;
                                     hashMap7 = hashMap2;
-                                    i16 = i9;
+                                    i15 = i6;
                                     str14 = str;
                                     str15 = str2;
                                     m35 = m32;
                                     str16 = str3;
                                     obj2 = null;
                                 }
-                            } catch (C3761q3 e15) {
+                            } catch (C3784q3 e15) {
                                 e = e15;
                                 m34 = m37;
                                 arrayDeque = arrayDeque2;
                             }
                         }
                         m37 = m34;
-                        i18 = i11;
-                        m36 = c0344t;
+                        i17 = i10;
+                        m36 = c0349t;
                     } else {
                         str = str14;
                         str2 = str15;
@@ -1790,22 +1790,22 @@ public final class N3 implements InterfaceC3868s3 {
                                 throw null;
                             }
                             L3 a9 = L3.a(newPullParser.getText());
-                            if (l35.f26057m == null) {
-                                l35.f26057m = new ArrayList();
+                            if (l35.f26857m == null) {
+                                l35.f26857m = new ArrayList();
                             }
-                            l35.f26057m.add(a9);
+                            l35.f26857m.add(a9);
                         } else if (eventType == 3) {
                             if (newPullParser.getName().equals("tt")) {
                                 L3 l36 = (L3) arrayDeque.peek();
                                 if (l36 == null) {
                                     throw null;
                                 }
-                                c3864s = new C3864s(l36, hashMap5, hashMap, hashMap2);
+                                c3887s = new C3887s(l36, hashMap5, hashMap, hashMap2);
                             }
                             arrayDeque.pop();
                         }
                     }
-                    i9 = 1;
+                    i6 = 1;
                 } else {
                     str = str14;
                     str2 = str15;
@@ -1815,19 +1815,19 @@ public final class N3 implements InterfaceC3868s3 {
                     arrayDeque = arrayDeque3;
                     m32 = m35;
                     if (eventType == 2) {
-                        i9 = 1;
-                        i17++;
+                        i6 = 1;
+                        i16++;
                     } else {
-                        i9 = 1;
+                        i6 = 1;
                         if (eventType == 3) {
-                            i17--;
+                            i16--;
                         }
                         newPullParser.next();
                         eventType = newPullParser.getEventType();
                         hashMap6 = hashMap;
                         arrayDeque3 = arrayDeque;
                         hashMap7 = hashMap2;
-                        i16 = i9;
+                        i15 = i6;
                         str14 = str;
                         str15 = str2;
                         m35 = m32;
@@ -1840,15 +1840,15 @@ public final class N3 implements InterfaceC3868s3 {
                 hashMap6 = hashMap;
                 arrayDeque3 = arrayDeque;
                 hashMap7 = hashMap2;
-                i16 = i9;
+                i15 = i6;
                 str14 = str;
                 str15 = str2;
                 m35 = m32;
                 str16 = str3;
                 obj2 = null;
             }
-            if (c3864s != null) {
-                return c3864s;
+            if (c3887s != null) {
+                return c3887s;
             }
             throw null;
         } catch (IOException e16) {
@@ -1858,8 +1858,8 @@ public final class N3 implements InterfaceC3868s3 {
         }
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3868s3
-    public final void h(byte[] bArr, int i, int i6, X1.b bVar) {
-        MA.h(a(bArr, i, i6), bVar);
+    @Override // com.google.android.gms.internal.ads.InterfaceC3891s3
+    public final void x(byte[] bArr, int i, int i4, Z1.b bVar) {
+        MA.h(a(bArr, i, i4), bVar);
     }
 }

@@ -23,48 +23,48 @@ import org.json.JSONObject;
 public final class a {
 
     /* renamed from: e, reason: collision with root package name */
-    private static volatile a f11999e;
+    private static volatile a f12785e;
 
     /* renamed from: a, reason: collision with root package name */
-    final String f12000a = "a";
+    final String f12786a = "a";
 
     /* renamed from: b, reason: collision with root package name */
-    private final String f12001b = "sv_request_id";
+    private final String f12787b = "sv_request_id";
 
     /* renamed from: c, reason: collision with root package name */
-    private final String f12002c = "sv_price";
+    private final String f12788c = "sv_price";
 
     /* renamed from: d, reason: collision with root package name */
-    private Map<String, LinkedList<C0073a>> f12003d = new HashMap();
+    private Map<String, LinkedList<C0073a>> f12789d = new HashMap();
 
     /* renamed from: com.anythink.core.c.a$1, reason: invalid class name */
     public class AnonymousClass1 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ String f12004a;
+        final /* synthetic */ String f12790a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ LinkedList f12005b;
+        final /* synthetic */ LinkedList f12791b;
 
         public AnonymousClass1(String str, LinkedList linkedList) {
-            this.f12004a = str;
-            this.f12005b = linkedList;
+            this.f12790a = str;
+            this.f12791b = linkedList;
         }
 
         @Override // java.lang.Runnable
         public final void run() {
             String str;
-            if (TextUtils.isEmpty(this.f12004a) || this.f12005b == null) {
+            if (TextUtils.isEmpty(this.f12790a) || this.f12791b == null) {
                 return;
             }
             try {
                 JSONArray jSONArray = new JSONArray();
-                Iterator it = this.f12005b.iterator();
+                Iterator it = this.f12791b.iterator();
                 while (it.hasNext()) {
                     C0073a c0073a = (C0073a) it.next();
                     JSONObject jSONObject = new JSONObject();
-                    jSONObject.put("sv_request_id", c0073a.f12007a);
-                    jSONObject.put("sv_price", c0073a.f12008b);
+                    jSONObject.put("sv_request_id", c0073a.f12793a);
+                    jSONObject.put("sv_price", c0073a.f12794b);
                     jSONArray.put(jSONObject);
                 }
                 str = jSONArray.toString();
@@ -74,7 +74,7 @@ public final class a {
             if (TextUtils.isEmpty(str)) {
                 return;
             }
-            af.b(t.b().g(), u.b.f12858m, this.f12004a, str);
+            af.b(t.b().g(), u.b.f13644m, this.f12790a, str);
         }
     }
 
@@ -82,18 +82,18 @@ public final class a {
     public class C0073a {
 
         /* renamed from: a, reason: collision with root package name */
-        public String f12007a;
+        public String f12793a;
 
         /* renamed from: b, reason: collision with root package name */
-        public double f12008b;
+        public double f12794b;
 
-        public C0073a(String str, double d2) {
-            this.f12007a = str;
-            this.f12008b = d2;
+        public C0073a(String str, double d9) {
+            this.f12793a = str;
+            this.f12794b = d9;
         }
 
         public final String toString() {
-            return "ProverbPriceBean{requestId='" + this.f12007a + "', impPrice=" + this.f12008b + '}';
+            return "ProverbPriceBean{requestId='" + this.f12793a + "', impPrice=" + this.f12794b + '}';
         }
     }
 
@@ -101,23 +101,23 @@ public final class a {
     }
 
     public static a a() {
-        if (f11999e == null) {
+        if (f12785e == null) {
             synchronized (b.class) {
                 try {
-                    if (f11999e == null) {
-                        f11999e = new a();
+                    if (f12785e == null) {
+                        f12785e = new a();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f11999e;
+        return f12785e;
     }
 
     private LinkedList<C0073a> b(String str) {
         try {
-            String c9 = af.c(t.b().g(), u.b.f12858m, str, "");
+            String c9 = af.c(t.b().g(), u.b.f13644m, str, "");
             if (TextUtils.isEmpty(c9)) {
                 return null;
             }
@@ -147,7 +147,7 @@ public final class a {
         try {
             JSONObject jSONObject = new JSONObject();
             for (C0073a c0073a : a9) {
-                jSONObject.put(c0073a.f12007a, c0073a.f12008b);
+                jSONObject.put(c0073a.f12793a, c0073a.f12794b);
             }
             return jSONObject.toString();
         } catch (Throwable unused) {
@@ -164,67 +164,67 @@ public final class a {
     */
     public final void a(n nVar, bv bvVar) {
         l b9;
-        double d2;
+        double d9;
         n nVar2;
         l lVar;
         double parseDouble;
-        double d9;
-        double L6;
+        double d10;
+        double L2;
         if (nVar == null || bvVar == null || (b9 = com.anythink.core.d.n.a(t.b().g()).b(nVar.aI())) == null || bvVar.az() != 1) {
             return;
         }
         try {
-            Map<String, Object> h9 = nVar.h();
-            if (h9 != null) {
-                h9.toString();
+            Map<String, Object> h3 = nVar.h();
+            if (h3 != null) {
+                h3.toString();
             }
-            if (h9 != null) {
-                if (bvVar.g() == 2 && h9.containsKey("value_micros")) {
-                    parseDouble = Double.parseDouble(h9.get("value_micros").toString());
-                    d9 = 1000.0d;
-                } else if (h9.containsKey(ATAdConst.NETWORK_CUSTOM_KEY.NETWORK_ECPM)) {
-                    parseDouble = Double.parseDouble(h9.get(ATAdConst.NETWORK_CUSTOM_KEY.NETWORK_ECPM).toString());
-                    d9 = 100.0d;
-                    if (j.C0076j.f12486b.equalsIgnoreCase(bvVar.au())) {
-                        L6 = (parseDouble / 100.0d) * b9.L();
-                        d2 = L6;
-                        if (d2 == -1.0d) {
+            if (h3 != null) {
+                if (bvVar.g() == 2 && h3.containsKey("value_micros")) {
+                    parseDouble = Double.parseDouble(h3.get("value_micros").toString());
+                    d10 = 1000.0d;
+                } else if (h3.containsKey(ATAdConst.NETWORK_CUSTOM_KEY.NETWORK_ECPM)) {
+                    parseDouble = Double.parseDouble(h3.get(ATAdConst.NETWORK_CUSTOM_KEY.NETWORK_ECPM).toString());
+                    d10 = 100.0d;
+                    if (j.C0076j.f13272b.equalsIgnoreCase(bvVar.au())) {
+                        L2 = (parseDouble / 100.0d) * b9.L();
+                        d9 = L2;
+                        if (d9 == -1.0d) {
                             StringBuilder sb = new StringBuilder();
                             sb.append(bvVar.g());
                             String sb2 = sb.toString();
-                            String z3 = bvVar.z();
+                            String z6 = bvVar.z();
                             StringBuilder sb3 = new StringBuilder();
                             sb3.append(bvVar.at());
                             String sb4 = sb3.toString();
                             lVar = b9;
                             nVar2 = nVar;
-                            e.a(nVar2, lVar, sb2, z3, sb4, a(bvVar.z(), b9.t()) <= 0.0d ? 1 : 2);
+                            e.a(nVar2, lVar, sb2, z6, sb4, a(bvVar.z(), b9.t()) <= 0.0d ? 1 : 2);
                         } else {
                             nVar2 = nVar;
                             lVar = b9;
                         }
-                        nVar2.d(d2);
-                        if (d2 > 0.0d) {
-                            bvVar.f(d2);
-                            a(bvVar.z(), nVar2.aJ(), d2, lVar.t());
+                        nVar2.d(d9);
+                        if (d9 > 0.0d) {
+                            bvVar.f(d9);
+                            a(bvVar.z(), nVar2.aJ(), d9, lVar.t());
                             return;
                         }
                         return;
                     }
                 }
-                L6 = parseDouble / d9;
-                d2 = L6;
-                if (d2 == -1.0d) {
+                L2 = parseDouble / d10;
+                d9 = L2;
+                if (d9 == -1.0d) {
                 }
-                nVar2.d(d2);
-                if (d2 > 0.0d) {
+                nVar2.d(d9);
+                if (d9 > 0.0d) {
                 }
             }
-            d2 = -1.0d;
-            if (d2 == -1.0d) {
+            d9 = -1.0d;
+            if (d9 == -1.0d) {
             }
-            nVar2.d(d2);
-            if (d2 > 0.0d) {
+            nVar2.d(d9);
+            if (d9 > 0.0d) {
             }
         } catch (Throwable unused) {
         }
@@ -252,7 +252,7 @@ public final class a {
         }
     }
 
-    private synchronized void a(String str, String str2, double d2, int i) {
+    private synchronized void a(String str, String str2, double d9, int i) {
         try {
             LinkedList<C0073a> a9 = a(str);
             if (a9 != null) {
@@ -266,12 +266,12 @@ public final class a {
             } else {
                 if (a9.size() >= i - 1) {
                     int size = (a9.size() - i) + 1;
-                    for (int i6 = 0; i6 < size; i6++) {
+                    for (int i4 = 0; i4 < size; i4++) {
                         a9.removeLast();
                     }
                 }
                 if (a9.size() < i) {
-                    a9.addFirst(new C0073a(str2, d2));
+                    a9.addFirst(new C0073a(str2, d9));
                 }
             }
             a9.toString();
@@ -289,11 +289,11 @@ public final class a {
             return -1.0d;
         }
         Iterator<C0073a> it = a9.subList(0, Math.min(i, a9.size())).iterator();
-        double d2 = 0.0d;
+        double d9 = 0.0d;
         while (it.hasNext()) {
-            d2 += it.next().f12008b;
+            d9 += it.next().f12794b;
         }
-        return d2 / r5.size();
+        return d9 / r5.size();
     }
 
     private synchronized LinkedList<C0073a> a(String str) {
@@ -301,13 +301,13 @@ public final class a {
             if (TextUtils.isEmpty(str)) {
                 return null;
             }
-            LinkedList<C0073a> linkedList = this.f12003d.get(str);
+            LinkedList<C0073a> linkedList = this.f12789d.get(str);
             if (linkedList == null) {
                 linkedList = b(str);
                 if (linkedList == null) {
                     linkedList = new LinkedList<>();
                 }
-                this.f12003d.put(str, linkedList);
+                this.f12789d.put(str, linkedList);
             }
             return linkedList;
         } catch (Throwable th) {

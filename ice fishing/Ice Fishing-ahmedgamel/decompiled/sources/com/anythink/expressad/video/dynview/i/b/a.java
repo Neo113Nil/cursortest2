@@ -17,7 +17,7 @@ public final class a {
         }
     }
 
-    public static void a(View view, float f3, float f9, String str, String[] strArr, GradientDrawable.Orientation orientation) {
+    public static void a(View view, float f2, float f9, String str, String[] strArr, GradientDrawable.Orientation orientation) {
         if (view != null) {
             int[] iArr = new int[2];
             for (int i = 0; i < 2; i++) {
@@ -25,7 +25,7 @@ public final class a {
             }
             GradientDrawable gradientDrawable = new GradientDrawable(orientation, iArr);
             gradientDrawable.setCornerRadius(v.b(view.getContext(), f9));
-            gradientDrawable.setStroke(v.b(view.getContext(), f3), Color.parseColor(str));
+            gradientDrawable.setStroke(v.b(view.getContext(), f2), Color.parseColor(str));
             view.setBackgroundDrawable(gradientDrawable);
         }
     }

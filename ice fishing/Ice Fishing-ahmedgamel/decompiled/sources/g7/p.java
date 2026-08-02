@@ -1,5 +1,6 @@
 package g7;
 
+import com.google.android.gms.internal.ads.Wv;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import p6.C4840a;
@@ -8,27 +9,27 @@ import p6.C4840a;
 public class p extends a implements m6.j {
 
     /* renamed from: w, reason: collision with root package name */
-    public static final Logger f37679w = Logger.getLogger(p.class.getName());
+    public static final Logger f37704w = Logger.getLogger(p.class.getName());
 
     /* renamed from: u, reason: collision with root package name */
-    public final a7.l f37680u;
+    public final a7.l f37705u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final s f37681v;
+    public final s f37706v;
 
     public p(k7.b bVar, s sVar) {
         super(bVar);
-        this.f37680u = new a7.l(f37679w);
-        this.f37681v = sVar;
+        this.f37705u = new a7.l(f37704w);
+        this.f37706v = sVar;
     }
 
     @Override // m6.j
-    public final void f(double d2, f6.c cVar) {
+    public final void f(double d9, f6.c cVar) {
         C4840a a9 = C4840a.a();
-        if (d2 >= 0.0d) {
-            this.f37681v.a(d2, cVar, a9);
+        if (d9 >= 0.0d) {
+            this.f37706v.a(d9, cVar, a9);
             return;
         }
-        this.f37680u.a(Level.WARNING, u1.h.g(new StringBuilder("Histograms can only record non-negative values. Instrument "), this.f37659n.f38694b, " has recorded a negative value."), null);
+        this.f37705u.a(Level.WARNING, Wv.i(new StringBuilder("Histograms can only record non-negative values. Instrument "), this.f37684n.f38621b, " has recorded a negative value."), null);
     }
 }

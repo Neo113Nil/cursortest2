@@ -26,13 +26,13 @@ import java.util.List;
 
 /* loaded from: classes2.dex */
 public final class c {
-    private static final List<Class<? extends InterfaceC4758a>> BADGERS;
+    private static final List<Class<? extends InterfaceC4774a>> BADGERS;
     private static final String LOG_TAG = "ShortcutBadger";
     private static final int SUPPORTED_CHECK_ATTEMPTS = 3;
     private static ComponentName sComponentName;
     private static final Object sCounterSupportedLock;
     private static volatile Boolean sIsBadgeCounterSupported;
-    private static InterfaceC4758a sShortcutBadger;
+    private static InterfaceC4774a sShortcutBadger;
 
     static {
         LinkedList linkedList = new LinkedList();
@@ -93,7 +93,7 @@ public final class c {
     }
 
     private static boolean initBadger(Context context) {
-        InterfaceC4758a interfaceC4758a;
+        InterfaceC4774a interfaceC4774a;
         Intent launchIntentForPackage = context.getPackageManager().getLaunchIntentForPackage(context.getPackageName());
         if (launchIntentForPackage == null) {
             Log.e(LOG_TAG, "Unable to find launch intent for package " + context.getPackageName());
@@ -107,18 +107,18 @@ public final class c {
             return false;
         }
         String str = resolveActivity.activityInfo.packageName;
-        Iterator<Class<? extends InterfaceC4758a>> it = BADGERS.iterator();
+        Iterator<Class<? extends InterfaceC4774a>> it = BADGERS.iterator();
         while (true) {
             if (!it.hasNext()) {
                 break;
             }
             try {
-                interfaceC4758a = it.next().newInstance();
+                interfaceC4774a = it.next().newInstance();
             } catch (Exception unused) {
-                interfaceC4758a = null;
+                interfaceC4774a = null;
             }
-            if (interfaceC4758a != null && interfaceC4758a.getSupportLaunchers().contains(str)) {
-                sShortcutBadger = interfaceC4758a;
+            if (interfaceC4774a != null && interfaceC4774a.getSupportLaunchers().contains(str)) {
+                sShortcutBadger = interfaceC4774a;
                 break;
             }
         }

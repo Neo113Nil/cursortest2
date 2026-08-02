@@ -14,92 +14,92 @@ import org.json.JSONObject;
 public class as {
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f13562a = "as";
+    private final String f14348a = "as";
 
     /* renamed from: b, reason: collision with root package name */
-    private String f13563b;
+    private String f14349b;
 
     /* renamed from: c, reason: collision with root package name */
-    private List<c> f13564c;
+    private List<c> f14350c;
 
     /* renamed from: d, reason: collision with root package name */
-    private boolean f13565d;
+    private boolean f14351d;
 
     /* renamed from: e, reason: collision with root package name */
-    private boolean f13566e;
+    private boolean f14352e;
 
     public final synchronized void a(String str, List<c> list) {
-        boolean z3;
-        if (TextUtils.equals(this.f13563b, str) && this.f13566e) {
+        boolean z6;
+        if (TextUtils.equals(this.f14349b, str) && this.f14352e) {
             return;
         }
-        this.f13563b = str;
+        this.f14349b = str;
         if (list != null && list.size() > 0) {
             for (int i = 0; i < list.size(); i++) {
                 bv unitGroupInfo = list.get(i).e().getUnitGroupInfo();
                 if (unitGroupInfo.g() == 8 && unitGroupInfo.aV() && unitGroupInfo.aY() == 1) {
-                    z3 = true;
+                    z6 = true;
                     break;
                 }
             }
         }
-        z3 = false;
-        this.f13565d = z3;
-        if (z3) {
-            this.f13564c = list;
-            this.f13566e = false;
+        z6 = false;
+        this.f14351d = z6;
+        if (z6) {
+            this.f14350c = list;
+            this.f14352e = false;
         } else {
-            this.f13564c = null;
-            this.f13566e = true;
+            this.f14350c = null;
+            this.f14352e = true;
         }
     }
 
     public final synchronized void a(String str, String str2, String str3) {
         List<c> list;
-        double d2;
+        double d9;
         String str4;
         Map<String, Object> networkInfoMap;
         Object obj;
         try {
-            List<c> list2 = this.f13564c;
+            List<c> list2 = this.f14350c;
             if (list2 != null) {
                 list2.size();
             }
-            if (TextUtils.equals(this.f13563b, str2) && this.f13565d && !this.f13566e && (list = this.f13564c) != null && list.size() > 0) {
-                this.f13566e = true;
+            if (TextUtils.equals(this.f14349b, str2) && this.f14351d && !this.f14352e && (list = this.f14350c) != null && list.size() > 0) {
+                this.f14352e = true;
                 try {
                     ArrayList arrayList = new ArrayList();
-                    Collections.sort(this.f13564c);
+                    Collections.sort(this.f14350c);
                     String str5 = "";
                     JSONObject jSONObject = new JSONObject();
                     JSONObject jSONObject2 = new JSONObject();
                     JSONObject jSONObject3 = new JSONObject();
                     int i = 0;
-                    int i6 = 0;
-                    double d9 = 0.0d;
-                    while (i < this.f13564c.size()) {
-                        c cVar = this.f13564c.get(i);
+                    int i4 = 0;
+                    double d10 = 0.0d;
+                    while (i < this.f14350c.size()) {
+                        c cVar = this.f14350c.get(i);
                         if (cVar.e() == null || cVar.e().getUnitGroupInfo() == null) {
-                            d2 = 0.0d;
+                            d9 = 0.0d;
                         } else {
                             bv unitGroupInfo = cVar.e().getUnitGroupInfo();
-                            d2 = 0.0d;
+                            d9 = 0.0d;
                             if (TextUtils.equals(str3, unitGroupInfo.z())) {
                                 str5 = cVar.i().aK();
                                 jSONObject.put("nw_firm_id", unitGroupInfo.g());
-                                jSONObject.put(e.a.f12068h, a(unitGroupInfo.D()));
-                                BaseAd f3 = cVar.f();
-                                if (f3 != null) {
-                                    jSONObject.put("advertiser_name", f3.getAdvertiserName());
-                                    jSONObject.put("title", f3.getTitle());
-                                    jSONObject.put("image_url", f3.getMainImageUrl());
-                                    jSONObject.put("desc", f3.getDescriptionText());
-                                    jSONObject.put("video_url", f3.getVideoUrl());
+                                jSONObject.put(e.a.f12854h, a(unitGroupInfo.D()));
+                                BaseAd f2 = cVar.f();
+                                if (f2 != null) {
+                                    jSONObject.put("advertiser_name", f2.getAdvertiserName());
+                                    jSONObject.put("title", f2.getTitle());
+                                    jSONObject.put("image_url", f2.getMainImageUrl());
+                                    jSONObject.put("desc", f2.getDescriptionText());
+                                    jSONObject.put("video_url", f2.getVideoUrl());
                                 }
-                                i6 = i;
+                                i4 = i;
                             }
                         }
-                        if (i < i6 || cVar.e() == null || cVar.e().getUnitGroupInfo() == null) {
+                        if (i < i4 || cVar.e() == null || cVar.e().getUnitGroupInfo() == null) {
                             str4 = str5;
                         } else {
                             bv unitGroupInfo2 = cVar.e().getUnitGroupInfo();
@@ -111,8 +111,8 @@ public class as {
                             String networkPlacementId = cVar.e().getNetworkPlacementId();
                             str4 = str5;
                             if (unitGroupInfo2.g() == 8) {
-                                if (d9 == d2) {
-                                    d9 = a(unitGroupInfo2.D());
+                                if (d10 == d9) {
+                                    d10 = a(unitGroupInfo2.D());
                                 }
                                 if (!TextUtils.isEmpty(networkPlacementId)) {
                                     String str6 = "";
@@ -131,8 +131,8 @@ public class as {
                         i++;
                         str5 = str4;
                     }
-                    com.anythink.core.common.u.e.a(str, str2, str5, d9, jSONObject2.toString(), jSONObject.toString(), jSONObject3.toString());
-                    this.f13564c = null;
+                    com.anythink.core.common.u.e.a(str, str2, str5, d10, jSONObject2.toString(), jSONObject.toString(), jSONObject3.toString());
+                    this.f14350c = null;
                     jSONObject.toString();
                     jSONObject2.toString();
                     jSONObject3.toString();
@@ -145,7 +145,7 @@ public class as {
         }
     }
 
-    private static double a(double d2) {
-        return ATSDKUtils.getUsdChangeToRmbRate() > 0.0d ? ATSDKUtils.getUsdChangeToRmbRate() * d2 : d2;
+    private static double a(double d9) {
+        return ATSDKUtils.getUsdChangeToRmbRate() > 0.0d ? ATSDKUtils.getUsdChangeToRmbRate() * d9 : d9;
     }
 }

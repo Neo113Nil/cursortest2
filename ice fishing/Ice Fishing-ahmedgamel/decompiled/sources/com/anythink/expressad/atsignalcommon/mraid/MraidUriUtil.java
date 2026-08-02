@@ -18,10 +18,10 @@ import org.json.JSONObject;
 public class MraidUriUtil {
 
     /* renamed from: a, reason: collision with root package name */
-    private static volatile ConcurrentHashMap<String, String> f18034a = new ConcurrentHashMap<>();
+    private static volatile ConcurrentHashMap<String, String> f18821a = new ConcurrentHashMap<>();
 
     /* renamed from: b, reason: collision with root package name */
-    private static ArrayList<String> f18035b = new ArrayList<>();
+    private static ArrayList<String> f18822b = new ArrayList<>();
 
     private static Set<String> a(Uri uri) {
         String encodedQuery = uri.getEncodedQuery();
@@ -46,8 +46,8 @@ public class MraidUriUtil {
     }
 
     public static void clearUnSupportMraidMethodMap() {
-        if (f18034a.size() > 0) {
-            f18034a.clear();
+        if (f18821a.size() > 0) {
+            f18821a.clear();
         }
     }
 
@@ -55,38 +55,38 @@ public class MraidUriUtil {
         Set<String> unmodifiableSet;
         Uri parse = Uri.parse(str);
         String scheme = parse.getScheme();
-        if (TextUtils.isEmpty(scheme) || !scheme.contains(d.f18594s)) {
+        if (TextUtils.isEmpty(scheme) || !scheme.contains(d.f19381s)) {
             return null;
         }
         b bVar = new b();
-        bVar.f18065d = a.b("n+ztLkxpVTzBLkxgHN==");
-        bVar.f18066e = parse.getHost();
+        bVar.f18852d = a.b("n+ztLkxpVTzBLkxgHN==");
+        bVar.f18853e = parse.getHost();
         int i = 0;
-        if (f18035b.size() == 0) {
+        if (f18822b.size() == 0) {
             for (Method method : IMraidSignalCommunication.class.getDeclaredMethods()) {
-                f18035b.add(method.getName());
+                f18822b.add(method.getName());
             }
         }
-        if (!f18035b.contains(bVar.f18066e) && windVaneWebView != null) {
+        if (!f18822b.contains(bVar.f18853e) && windVaneWebView != null) {
             String campaignId = windVaneWebView.getCampaignId();
-            String str2 = bVar.f18066e;
+            String str2 = bVar.f18853e;
             if (!TextUtils.isEmpty(campaignId)) {
-                if (f18034a.containsKey(campaignId)) {
-                    String str3 = f18034a.get(campaignId);
+                if (f18821a.containsKey(campaignId)) {
+                    String str3 = f18821a.get(campaignId);
                     if (!TextUtils.isEmpty(str2) && !str3.contains(str2)) {
                         if (str3.length() > 0) {
                             str3 = str3.concat(",");
                         }
-                        f18034a.put(campaignId, str3.concat(str2));
+                        f18821a.put(campaignId, str3.concat(str2));
                     }
                 } else {
-                    f18034a.put(campaignId, str2);
+                    f18821a.put(campaignId, str2);
                 }
             }
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.a(windVaneWebView, bVar.f18066e);
+            com.anythink.core.express.b.a.a(windVaneWebView, bVar.f18853e);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.a(windVaneWebView, bVar.f18066e, "Specified command is not implemented");
+            com.anythink.core.express.b.a.a(windVaneWebView, bVar.f18853e, "Specified command is not implemented");
             return null;
         }
         String encodedQuery = parse.getEncodedQuery();
@@ -113,7 +113,7 @@ public class MraidUriUtil {
             for (String str4 : unmodifiableSet) {
                 jSONObject.put(str4, parse.getQueryParameter(str4));
             }
-            bVar.f18067f = jSONObject.toString();
+            bVar.f18854f = jSONObject.toString();
             return bVar;
         } catch (Exception e9) {
             e9.printStackTrace();
@@ -122,8 +122,8 @@ public class MraidUriUtil {
     }
 
     public static String getUnSupportMraidMethodString(String str) {
-        if (f18034a.containsKey(str)) {
-            return f18034a.get(str);
+        if (f18821a.containsKey(str)) {
+            return f18821a.get(str);
         }
         return null;
     }
@@ -132,12 +132,12 @@ public class MraidUriUtil {
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        f18034a.remove(str);
+        f18821a.remove(str);
     }
 
     private static void a() {
         for (Method method : IMraidSignalCommunication.class.getDeclaredMethods()) {
-            f18035b.add(method.getName());
+            f18822b.add(method.getName());
         }
     }
 
@@ -145,17 +145,17 @@ public class MraidUriUtil {
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        if (f18034a.containsKey(str)) {
-            String str3 = f18034a.get(str);
+        if (f18821a.containsKey(str)) {
+            String str3 = f18821a.get(str);
             if (TextUtils.isEmpty(str2) || str3.contains(str2)) {
                 return;
             }
             if (str3.length() > 0) {
                 str3 = str3.concat(",");
             }
-            f18034a.put(str, str3.concat(str2));
+            f18821a.put(str, str3.concat(str2));
             return;
         }
-        f18034a.put(str, str2);
+        f18821a.put(str, str2);
     }
 }

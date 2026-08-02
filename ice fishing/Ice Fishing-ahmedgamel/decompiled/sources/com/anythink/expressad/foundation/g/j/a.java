@@ -6,48 +6,48 @@ import android.media.MediaPlayer;
 public final class a {
 
     /* renamed from: b, reason: collision with root package name */
-    private String f19581b;
+    private String f20368b;
 
     /* renamed from: c, reason: collision with root package name */
-    private MediaPlayer f19582c;
+    private MediaPlayer f20369c;
 
     /* renamed from: d, reason: collision with root package name */
-    private volatile boolean f19583d;
+    private volatile boolean f20370d;
 
     /* renamed from: f, reason: collision with root package name */
-    private volatile MediaPlayer.OnPreparedListener f19585f;
+    private volatile MediaPlayer.OnPreparedListener f20372f;
 
     /* renamed from: a, reason: collision with root package name */
-    Object f19580a = new Object();
+    Object f20367a = new Object();
 
     /* renamed from: e, reason: collision with root package name */
-    private volatile boolean f19584e = false;
+    private volatile boolean f20371e = false;
 
     public static /* synthetic */ boolean a(a aVar) {
-        aVar.f19584e = true;
+        aVar.f20371e = true;
         return true;
     }
 
     private String c() {
-        return this.f19581b;
+        return this.f20368b;
     }
 
     private MediaPlayer d() {
-        return this.f19582c;
+        return this.f20369c;
     }
 
     private void a(MediaPlayer mediaPlayer, String str) {
-        this.f19582c = mediaPlayer;
-        this.f19581b = str;
-        this.f19583d = true;
-        this.f19582c.setOnPreparedListener(new MediaPlayer.OnPreparedListener() { // from class: com.anythink.expressad.foundation.g.j.a.1
+        this.f20369c = mediaPlayer;
+        this.f20368b = str;
+        this.f20370d = true;
+        this.f20369c.setOnPreparedListener(new MediaPlayer.OnPreparedListener() { // from class: com.anythink.expressad.foundation.g.j.a.1
             @Override // android.media.MediaPlayer.OnPreparedListener
             public final void onPrepared(MediaPlayer mediaPlayer2) {
-                synchronized (a.this.f19580a) {
+                synchronized (a.this.f20367a) {
                     try {
                         a.a(a.this);
-                        if (a.this.f19585f != null) {
-                            a.this.f19585f.onPrepared(mediaPlayer2);
+                        if (a.this.f20372f != null) {
+                            a.this.f20372f.onPrepared(mediaPlayer2);
                         }
                     } catch (Throwable th) {
                         throw th;
@@ -56,30 +56,30 @@ public final class a {
             }
         });
         try {
-            this.f19582c.prepareAsync();
+            this.f20369c.prepareAsync();
         } catch (Throwable unused) {
         }
     }
 
     private boolean b() {
-        boolean z3;
-        synchronized (this.f19580a) {
-            z3 = this.f19584e;
+        boolean z6;
+        synchronized (this.f20367a) {
+            z6 = this.f20371e;
         }
-        return z3;
+        return z6;
     }
 
     private boolean a() {
-        boolean z3;
-        synchronized (this.f19580a) {
-            z3 = this.f19583d;
+        boolean z6;
+        synchronized (this.f20367a) {
+            z6 = this.f20370d;
         }
-        return z3;
+        return z6;
     }
 
     private void a(MediaPlayer.OnPreparedListener onPreparedListener) {
-        synchronized (this.f19580a) {
-            this.f19585f = onPreparedListener;
+        synchronized (this.f20367a) {
+            this.f20372f = onPreparedListener;
         }
     }
 }

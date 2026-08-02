@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import v7.AbstractC5129j;
-import v7.AbstractC5130k;
+import v7.AbstractC5119j;
+import v7.AbstractC5120k;
 
 /* loaded from: classes2.dex */
 public final class d implements b {
@@ -41,7 +41,7 @@ public final class d implements b {
                     kotlin.jvm.internal.h.b(list);
                     list.add(eVar);
                 } else {
-                    this.serviceMap.put(cls, AbstractC5130k.w(eVar));
+                    this.serviceMap.put(cls, AbstractC5120k.u(eVar));
                 }
             }
         }
@@ -101,7 +101,7 @@ public final class d implements b {
         kotlin.jvm.internal.h.e(c9, "c");
         synchronized (this.serviceMap) {
             List<e> list = this.serviceMap.get(c9);
-            t6 = (list == null || (eVar = (e) AbstractC5129j.F(list)) == null) ? null : (T) eVar.resolve(this);
+            t6 = (list == null || (eVar = (e) AbstractC5119j.D(list)) == null) ? null : (T) eVar.resolve(this);
         }
         return t6;
     }

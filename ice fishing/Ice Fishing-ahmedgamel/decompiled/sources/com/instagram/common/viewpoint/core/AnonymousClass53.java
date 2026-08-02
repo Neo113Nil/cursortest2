@@ -18,10 +18,10 @@ public final class AnonymousClass53 {
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
     public final synchronized long A06(long j6) {
-        if (j6 == b.f6382b) {
-            return b.f6382b;
+        if (j6 == b.f7168b) {
+            return b.f7168b;
         }
-        if (this.A01 != b.f6382b) {
+        if (this.A01 != b.f7168b) {
             long A01 = A01(this.A01);
             long j9 = (4294967296L + A01) / 8589934592L;
             long j10 = ((j9 - 1) * 8589934592L) + j6;
@@ -51,13 +51,13 @@ public final class AnonymousClass53 {
         if (this.A00 != Long.MAX_VALUE && this.A00 != 9223372036854775806L) {
             j6 = this.A00;
         }
-        j6 = b.f6382b;
+        j6 = b.f7168b;
         return j6;
     }
 
     public final synchronized long A03() {
         long A02;
-        if (this.A01 != b.f6382b) {
+        if (this.A01 != b.f7168b) {
             A02 = this.A01 + this.A02;
         } else {
             A02 = A02();
@@ -71,12 +71,12 @@ public final class AnonymousClass53 {
 
     public final synchronized long A05(long j6) {
         long desiredSampleTimestampUs;
-        if (j6 == b.f6382b) {
-            return b.f6382b;
+        if (j6 == b.f7168b) {
+            return b.f7168b;
         }
-        if (this.A02 == b.f6382b) {
+        if (this.A02 == b.f7168b) {
             if (this.A00 == 9223372036854775806L) {
-                desiredSampleTimestampUs = ((Long) AbstractC06243y.A01(this.A03.get())).longValue();
+                desiredSampleTimestampUs = ((Long) AbstractC06443y.A01(this.A03.get())).longValue();
             } else {
                 desiredSampleTimestampUs = this.A00;
             }
@@ -90,6 +90,6 @@ public final class AnonymousClass53 {
     public final synchronized void A07(long j6) {
         this.A00 = j6;
         this.A02 = j6 == Long.MAX_VALUE ? 0L : -9223372036854775807L;
-        this.A01 = b.f6382b;
+        this.A01 = b.f7168b;
     }
 }

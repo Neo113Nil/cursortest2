@@ -30,36 +30,36 @@ public class FacebookATRewardedVideoAdapter extends CustomRewardVideoAdapter {
     public static final String TAG = "FacebookATRewardedVideoAdapter";
 
     /* renamed from: e, reason: collision with root package name */
-    private static final int f23093e = 1;
+    private static final int f23880e = 1;
 
     /* renamed from: f, reason: collision with root package name */
-    private static final int f23094f = 2;
+    private static final int f23881f = 2;
 
     /* renamed from: a, reason: collision with root package name */
-    String f23095a;
+    String f23882a;
 
     /* renamed from: b, reason: collision with root package name */
-    String f23096b;
+    String f23883b;
 
     /* renamed from: c, reason: collision with root package name */
-    Map<String, Object> f23097c;
+    Map<String, Object> f23884c;
 
     /* renamed from: d, reason: collision with root package name */
-    boolean f23098d;
+    boolean f23885d;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f23099g = 1;
+    private int f23886g = 1;
 
     /* renamed from: h, reason: collision with root package name */
-    private a f23100h;
+    private a f23887h;
 
     public class a {
 
         /* renamed from: b, reason: collision with root package name */
-        private RewardedVideoAd f23105b;
+        private RewardedVideoAd f23892b;
 
         /* renamed from: c, reason: collision with root package name */
-        private RewardedInterstitialAd f23106c;
+        private RewardedInterstitialAd f23893c;
 
         /* renamed from: com.anythink.network.facebook.FacebookATRewardedVideoAdapter$a$1, reason: invalid class name */
         public class AnonymousClass1 implements RewardedInterstitialAdListener {
@@ -93,10 +93,10 @@ public class FacebookATRewardedVideoAdapter extends CustomRewardVideoAdapter {
             @Override // com.facebook.ads.AdListener
             public final void onLoggingImpression(Ad ad) {
                 FacebookATRewardedVideoAdapter facebookATRewardedVideoAdapter = FacebookATRewardedVideoAdapter.this;
-                if (facebookATRewardedVideoAdapter.f23098d) {
+                if (facebookATRewardedVideoAdapter.f23885d) {
                     return;
                 }
-                facebookATRewardedVideoAdapter.f23098d = true;
+                facebookATRewardedVideoAdapter.f23885d = true;
                 if (((CustomRewardVideoAdapter) facebookATRewardedVideoAdapter).mImpressionListener != null) {
                     ((CustomRewardVideoAdapter) FacebookATRewardedVideoAdapter.this).mImpressionListener.onRewardedVideoAdPlayStart();
                 }
@@ -152,10 +152,10 @@ public class FacebookATRewardedVideoAdapter extends CustomRewardVideoAdapter {
             @Override // com.facebook.ads.AdListener
             public final void onLoggingImpression(Ad ad) {
                 FacebookATRewardedVideoAdapter facebookATRewardedVideoAdapter = FacebookATRewardedVideoAdapter.this;
-                if (facebookATRewardedVideoAdapter.f23098d) {
+                if (facebookATRewardedVideoAdapter.f23885d) {
                     return;
                 }
-                facebookATRewardedVideoAdapter.f23098d = true;
+                facebookATRewardedVideoAdapter.f23885d = true;
                 if (((CustomRewardVideoAdapter) facebookATRewardedVideoAdapter).mImpressionListener != null) {
                     ((CustomRewardVideoAdapter) FacebookATRewardedVideoAdapter.this).mImpressionListener.onRewardedVideoAdPlayStart();
                 }
@@ -193,53 +193,53 @@ public class FacebookATRewardedVideoAdapter extends CustomRewardVideoAdapter {
         }
 
         private void a(Context context) {
-            this.f23106c = new RewardedInterstitialAd(context.getApplicationContext(), FacebookATRewardedVideoAdapter.this.f23095a);
-            RewardedInterstitialAd.RewardedInterstitialAdLoadConfigBuilder withFailOnCacheFailureEnabled = this.f23106c.buildLoadAdConfig().withAdListener(new AnonymousClass1()).withFailOnCacheFailureEnabled(true);
+            this.f23893c = new RewardedInterstitialAd(context.getApplicationContext(), FacebookATRewardedVideoAdapter.this.f23882a);
+            RewardedInterstitialAd.RewardedInterstitialAdLoadConfigBuilder withFailOnCacheFailureEnabled = this.f23893c.buildLoadAdConfig().withAdListener(new AnonymousClass1()).withFailOnCacheFailureEnabled(true);
             if (!TextUtils.isEmpty(((ATBaseAdInternalAdapter) FacebookATRewardedVideoAdapter.this).mUserData) && ((ATBaseAdInternalAdapter) FacebookATRewardedVideoAdapter.this).mUserData.contains(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME)) {
                 FacebookATRewardedVideoAdapter facebookATRewardedVideoAdapter = FacebookATRewardedVideoAdapter.this;
-                ((ATBaseAdInternalAdapter) facebookATRewardedVideoAdapter).mUserData = ((ATBaseAdInternalAdapter) facebookATRewardedVideoAdapter).mUserData.replace(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME, FacebookATRewardedVideoAdapter.this.f23095a);
+                ((ATBaseAdInternalAdapter) facebookATRewardedVideoAdapter).mUserData = ((ATBaseAdInternalAdapter) facebookATRewardedVideoAdapter).mUserData.replace(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME, FacebookATRewardedVideoAdapter.this.f23882a);
             }
             withFailOnCacheFailureEnabled.withRewardData(new RewardData(((ATBaseAdInternalAdapter) FacebookATRewardedVideoAdapter.this).mUserId, ((ATBaseAdInternalAdapter) FacebookATRewardedVideoAdapter.this).mUserData));
-            if (!TextUtils.isEmpty(FacebookATRewardedVideoAdapter.this.f23096b)) {
-                withFailOnCacheFailureEnabled.withBid(FacebookATRewardedVideoAdapter.this.f23096b);
+            if (!TextUtils.isEmpty(FacebookATRewardedVideoAdapter.this.f23883b)) {
+                withFailOnCacheFailureEnabled.withBid(FacebookATRewardedVideoAdapter.this.f23883b);
             }
-            this.f23106c.loadAd(withFailOnCacheFailureEnabled.build());
+            this.f23893c.loadAd(withFailOnCacheFailureEnabled.build());
         }
 
         private void b(Context context) {
-            this.f23105b = new RewardedVideoAd(context.getApplicationContext(), FacebookATRewardedVideoAdapter.this.f23095a);
-            RewardedVideoAd.RewardedVideoAdLoadConfigBuilder withFailOnCacheFailureEnabled = this.f23105b.buildLoadAdConfig().withAdListener(new AnonymousClass2()).withFailOnCacheFailureEnabled(true);
+            this.f23892b = new RewardedVideoAd(context.getApplicationContext(), FacebookATRewardedVideoAdapter.this.f23882a);
+            RewardedVideoAd.RewardedVideoAdLoadConfigBuilder withFailOnCacheFailureEnabled = this.f23892b.buildLoadAdConfig().withAdListener(new AnonymousClass2()).withFailOnCacheFailureEnabled(true);
             if (!TextUtils.isEmpty(((ATBaseAdInternalAdapter) FacebookATRewardedVideoAdapter.this).mUserData) && ((ATBaseAdInternalAdapter) FacebookATRewardedVideoAdapter.this).mUserData.contains(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME)) {
                 FacebookATRewardedVideoAdapter facebookATRewardedVideoAdapter = FacebookATRewardedVideoAdapter.this;
-                ((ATBaseAdInternalAdapter) facebookATRewardedVideoAdapter).mUserData = ((ATBaseAdInternalAdapter) facebookATRewardedVideoAdapter).mUserData.replace(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME, FacebookATRewardedVideoAdapter.this.f23095a);
+                ((ATBaseAdInternalAdapter) facebookATRewardedVideoAdapter).mUserData = ((ATBaseAdInternalAdapter) facebookATRewardedVideoAdapter).mUserData.replace(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME, FacebookATRewardedVideoAdapter.this.f23882a);
             }
             withFailOnCacheFailureEnabled.withRewardData(new RewardData(((ATBaseAdInternalAdapter) FacebookATRewardedVideoAdapter.this).mUserId, ((ATBaseAdInternalAdapter) FacebookATRewardedVideoAdapter.this).mUserData));
-            if (!TextUtils.isEmpty(FacebookATRewardedVideoAdapter.this.f23096b)) {
-                withFailOnCacheFailureEnabled.withBid(FacebookATRewardedVideoAdapter.this.f23096b);
+            if (!TextUtils.isEmpty(FacebookATRewardedVideoAdapter.this.f23883b)) {
+                withFailOnCacheFailureEnabled.withBid(FacebookATRewardedVideoAdapter.this.f23883b);
             }
-            this.f23105b.loadAd(withFailOnCacheFailureEnabled.build());
+            this.f23892b.loadAd(withFailOnCacheFailureEnabled.build());
         }
 
         public final void destroy() {
-            RewardedVideoAd rewardedVideoAd = this.f23105b;
+            RewardedVideoAd rewardedVideoAd = this.f23892b;
             if (rewardedVideoAd != null) {
                 rewardedVideoAd.destroy();
-                this.f23105b = null;
+                this.f23892b = null;
             }
-            RewardedInterstitialAd rewardedInterstitialAd = this.f23106c;
+            RewardedInterstitialAd rewardedInterstitialAd = this.f23893c;
             if (rewardedInterstitialAd != null) {
                 rewardedInterstitialAd.destroy();
-                this.f23106c = null;
+                this.f23893c = null;
             }
         }
 
         public final boolean isAdInvalidated() {
             RewardedInterstitialAd rewardedInterstitialAd;
             RewardedVideoAd rewardedVideoAd;
-            if (FacebookATRewardedVideoAdapter.this.f23099g == 1 && (rewardedVideoAd = this.f23105b) != null) {
+            if (FacebookATRewardedVideoAdapter.this.f23886g == 1 && (rewardedVideoAd = this.f23892b) != null) {
                 return rewardedVideoAd.isAdInvalidated();
             }
-            if (FacebookATRewardedVideoAdapter.this.f23099g != 2 || (rewardedInterstitialAd = this.f23106c) == null) {
+            if (FacebookATRewardedVideoAdapter.this.f23886g != 2 || (rewardedInterstitialAd = this.f23893c) == null) {
                 return false;
             }
             return rewardedInterstitialAd.isAdInvalidated();
@@ -248,50 +248,50 @@ public class FacebookATRewardedVideoAdapter extends CustomRewardVideoAdapter {
         public final boolean isAdLoaded() {
             RewardedInterstitialAd rewardedInterstitialAd;
             RewardedVideoAd rewardedVideoAd;
-            if (FacebookATRewardedVideoAdapter.this.f23099g == 1 && (rewardedVideoAd = this.f23105b) != null) {
+            if (FacebookATRewardedVideoAdapter.this.f23886g == 1 && (rewardedVideoAd = this.f23892b) != null) {
                 return rewardedVideoAd.isAdLoaded();
             }
-            if (FacebookATRewardedVideoAdapter.this.f23099g != 2 || (rewardedInterstitialAd = this.f23106c) == null) {
+            if (FacebookATRewardedVideoAdapter.this.f23886g != 2 || (rewardedInterstitialAd = this.f23893c) == null) {
                 return false;
             }
             return rewardedInterstitialAd.isAdLoaded();
         }
 
         public final void loadAd(Context context) {
-            if (FacebookATRewardedVideoAdapter.this.f23099g == 1) {
-                this.f23105b = new RewardedVideoAd(context.getApplicationContext(), FacebookATRewardedVideoAdapter.this.f23095a);
-                RewardedVideoAd.RewardedVideoAdLoadConfigBuilder withFailOnCacheFailureEnabled = this.f23105b.buildLoadAdConfig().withAdListener(new AnonymousClass2()).withFailOnCacheFailureEnabled(true);
+            if (FacebookATRewardedVideoAdapter.this.f23886g == 1) {
+                this.f23892b = new RewardedVideoAd(context.getApplicationContext(), FacebookATRewardedVideoAdapter.this.f23882a);
+                RewardedVideoAd.RewardedVideoAdLoadConfigBuilder withFailOnCacheFailureEnabled = this.f23892b.buildLoadAdConfig().withAdListener(new AnonymousClass2()).withFailOnCacheFailureEnabled(true);
                 if (!TextUtils.isEmpty(((ATBaseAdInternalAdapter) FacebookATRewardedVideoAdapter.this).mUserData) && ((ATBaseAdInternalAdapter) FacebookATRewardedVideoAdapter.this).mUserData.contains(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME)) {
                     FacebookATRewardedVideoAdapter facebookATRewardedVideoAdapter = FacebookATRewardedVideoAdapter.this;
-                    ((ATBaseAdInternalAdapter) facebookATRewardedVideoAdapter).mUserData = ((ATBaseAdInternalAdapter) facebookATRewardedVideoAdapter).mUserData.replace(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME, FacebookATRewardedVideoAdapter.this.f23095a);
+                    ((ATBaseAdInternalAdapter) facebookATRewardedVideoAdapter).mUserData = ((ATBaseAdInternalAdapter) facebookATRewardedVideoAdapter).mUserData.replace(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME, FacebookATRewardedVideoAdapter.this.f23882a);
                 }
                 withFailOnCacheFailureEnabled.withRewardData(new RewardData(((ATBaseAdInternalAdapter) FacebookATRewardedVideoAdapter.this).mUserId, ((ATBaseAdInternalAdapter) FacebookATRewardedVideoAdapter.this).mUserData));
-                if (!TextUtils.isEmpty(FacebookATRewardedVideoAdapter.this.f23096b)) {
-                    withFailOnCacheFailureEnabled.withBid(FacebookATRewardedVideoAdapter.this.f23096b);
+                if (!TextUtils.isEmpty(FacebookATRewardedVideoAdapter.this.f23883b)) {
+                    withFailOnCacheFailureEnabled.withBid(FacebookATRewardedVideoAdapter.this.f23883b);
                 }
-                this.f23105b.loadAd(withFailOnCacheFailureEnabled.build());
+                this.f23892b.loadAd(withFailOnCacheFailureEnabled.build());
                 return;
             }
-            this.f23106c = new RewardedInterstitialAd(context.getApplicationContext(), FacebookATRewardedVideoAdapter.this.f23095a);
-            RewardedInterstitialAd.RewardedInterstitialAdLoadConfigBuilder withFailOnCacheFailureEnabled2 = this.f23106c.buildLoadAdConfig().withAdListener(new AnonymousClass1()).withFailOnCacheFailureEnabled(true);
+            this.f23893c = new RewardedInterstitialAd(context.getApplicationContext(), FacebookATRewardedVideoAdapter.this.f23882a);
+            RewardedInterstitialAd.RewardedInterstitialAdLoadConfigBuilder withFailOnCacheFailureEnabled2 = this.f23893c.buildLoadAdConfig().withAdListener(new AnonymousClass1()).withFailOnCacheFailureEnabled(true);
             if (!TextUtils.isEmpty(((ATBaseAdInternalAdapter) FacebookATRewardedVideoAdapter.this).mUserData) && ((ATBaseAdInternalAdapter) FacebookATRewardedVideoAdapter.this).mUserData.contains(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME)) {
                 FacebookATRewardedVideoAdapter facebookATRewardedVideoAdapter2 = FacebookATRewardedVideoAdapter.this;
-                ((ATBaseAdInternalAdapter) facebookATRewardedVideoAdapter2).mUserData = ((ATBaseAdInternalAdapter) facebookATRewardedVideoAdapter2).mUserData.replace(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME, FacebookATRewardedVideoAdapter.this.f23095a);
+                ((ATBaseAdInternalAdapter) facebookATRewardedVideoAdapter2).mUserData = ((ATBaseAdInternalAdapter) facebookATRewardedVideoAdapter2).mUserData.replace(ATAdConst.REWARD_EXTRA_REPLACE_HODLER_KEY.NETWORK_PLACEMENT_ID_HOLDER_NAME, FacebookATRewardedVideoAdapter.this.f23882a);
             }
             withFailOnCacheFailureEnabled2.withRewardData(new RewardData(((ATBaseAdInternalAdapter) FacebookATRewardedVideoAdapter.this).mUserId, ((ATBaseAdInternalAdapter) FacebookATRewardedVideoAdapter.this).mUserData));
-            if (!TextUtils.isEmpty(FacebookATRewardedVideoAdapter.this.f23096b)) {
-                withFailOnCacheFailureEnabled2.withBid(FacebookATRewardedVideoAdapter.this.f23096b);
+            if (!TextUtils.isEmpty(FacebookATRewardedVideoAdapter.this.f23883b)) {
+                withFailOnCacheFailureEnabled2.withBid(FacebookATRewardedVideoAdapter.this.f23883b);
             }
-            this.f23106c.loadAd(withFailOnCacheFailureEnabled2.build());
+            this.f23893c.loadAd(withFailOnCacheFailureEnabled2.build());
         }
 
         public final void show() {
             RewardedInterstitialAd rewardedInterstitialAd;
             RewardedVideoAd rewardedVideoAd;
-            if (FacebookATRewardedVideoAdapter.this.f23099g == 1 && (rewardedVideoAd = this.f23105b) != null) {
+            if (FacebookATRewardedVideoAdapter.this.f23886g == 1 && (rewardedVideoAd = this.f23892b) != null) {
                 rewardedVideoAd.show();
             } else {
-                if (FacebookATRewardedVideoAdapter.this.f23099g != 2 || (rewardedInterstitialAd = this.f23106c) == null) {
+                if (FacebookATRewardedVideoAdapter.this.f23886g != 2 || (rewardedInterstitialAd = this.f23893c) == null) {
                     return;
                 }
                 rewardedInterstitialAd.show();
@@ -306,10 +306,10 @@ public class FacebookATRewardedVideoAdapter extends CustomRewardVideoAdapter {
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
         try {
-            a aVar = this.f23100h;
+            a aVar = this.f23887h;
             if (aVar != null) {
                 aVar.destroy();
-                this.f23100h = null;
+                this.f23887h = null;
             }
         } catch (Exception unused) {
         }
@@ -323,7 +323,7 @@ public class FacebookATRewardedVideoAdapter extends CustomRewardVideoAdapter {
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public void getBidRequestInfo(Context context, Map<String, Object> map, Map<String, Object> map2, ATBidRequestInfoListener aTBidRequestInfoListener) {
         try {
-            this.f23095a = (String) map.get("unit_id");
+            this.f23882a = (String) map.get("unit_id");
         } catch (Throwable th) {
             th.printStackTrace();
         }
@@ -344,7 +344,7 @@ public class FacebookATRewardedVideoAdapter extends CustomRewardVideoAdapter {
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public Map<String, Object> getNetworkInfoMap() {
-        return this.f23097c;
+        return this.f23884c;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -354,7 +354,7 @@ public class FacebookATRewardedVideoAdapter extends CustomRewardVideoAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        return this.f23095a;
+        return this.f23882a;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -364,8 +364,8 @@ public class FacebookATRewardedVideoAdapter extends CustomRewardVideoAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public boolean isAdReady() {
-        a aVar = this.f23100h;
-        return (aVar == null || !aVar.isAdLoaded() || this.f23100h.isAdInvalidated()) ? false : true;
+        a aVar = this.f23887h;
+        return (aVar == null || !aVar.isAdLoaded() || this.f23887h.isAdInvalidated()) ? false : true;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -378,19 +378,19 @@ public class FacebookATRewardedVideoAdapter extends CustomRewardVideoAdapter {
             }
             return;
         }
-        this.f23095a = (String) map.get("unit_id");
+        this.f23882a = (String) map.get("unit_id");
         if (map.containsKey("payload")) {
-            this.f23096b = (String) map.get("payload");
+            this.f23883b = (String) map.get("payload");
             HashMap hashMap = new HashMap();
-            this.f23097c = hashMap;
+            this.f23884c = hashMap;
             FacebookATInitManager.getInstance();
-            hashMap.put(AdSDKNotificationListener.ENCRYPTED_CPM_KEY, FacebookATInitManager.a(this.f23096b));
+            hashMap.put(AdSDKNotificationListener.ENCRYPTED_CPM_KEY, FacebookATInitManager.a(this.f23883b));
         }
         if (map.containsKey("unit_type")) {
             try {
                 Object obj = map.get("unit_type");
                 if (obj != null) {
-                    this.f23099g = Integer.parseInt(obj.toString());
+                    this.f23886g = Integer.parseInt(obj.toString());
                 }
             } catch (Exception unused) {
             }
@@ -415,35 +415,35 @@ public class FacebookATRewardedVideoAdapter extends CustomRewardVideoAdapter {
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
-    public boolean setUserDataConsent(Context context, boolean z3, boolean z6) {
+    public boolean setUserDataConsent(Context context, boolean z6, boolean z9) {
         return false;
     }
 
     @Override // com.anythink.rewardvideo.unitgroup.api.CustomRewardVideoAdapter
     public void show(Activity activity) {
-        a aVar = this.f23100h;
+        a aVar = this.f23887h;
         if (aVar != null) {
             aVar.show();
         }
     }
 
     private void a(Context context) {
-        a aVar = this.f23100h;
+        a aVar = this.f23887h;
         if (aVar != null) {
             aVar.destroy();
         }
         a aVar2 = new a(this, (byte) 0);
-        this.f23100h = aVar2;
+        this.f23887h = aVar2;
         aVar2.loadAd(context);
     }
 
     public static /* synthetic */ void a(FacebookATRewardedVideoAdapter facebookATRewardedVideoAdapter, Context context) {
-        a aVar = facebookATRewardedVideoAdapter.f23100h;
+        a aVar = facebookATRewardedVideoAdapter.f23887h;
         if (aVar != null) {
             aVar.destroy();
         }
         a aVar2 = new a(facebookATRewardedVideoAdapter, (byte) 0);
-        facebookATRewardedVideoAdapter.f23100h = aVar2;
+        facebookATRewardedVideoAdapter.f23887h = aVar2;
         aVar2.loadAd(context);
     }
 }

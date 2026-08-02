@@ -22,15 +22,15 @@ public final class Z3 extends RelativeLayout {
     public static final int A0A = (int) (XX.A02 * 24.0f);
     public static final int A06 = (int) (XX.A02 * 12.0f);
 
-    public Z3(C1840gi c1840gi, int i, int i6, String str, String str2, String str3, String str4, Bitmap bitmap) {
-        super(c1840gi);
-        this.A05 = new TextView(c1840gi);
-        this.A02 = new Button(c1840gi);
-        this.A01 = new Button(c1840gi);
-        this.A03 = new ImageView(c1840gi);
-        this.A04 = new LinearLayout(c1840gi);
+    public Z3(C1860gi c1860gi, int i, int i4, String str, String str2, String str3, String str4, Bitmap bitmap) {
+        super(c1860gi);
+        this.A05 = new TextView(c1860gi);
+        this.A02 = new Button(c1860gi);
+        this.A01 = new Button(c1860gi);
+        this.A03 = new ImageView(c1860gi);
+        this.A04 = new LinearLayout(c1860gi);
         if (!TextUtils.isEmpty(str2)) {
-            this.A00 = new TextView(c1840gi);
+            this.A00 = new TextView(c1860gi);
         }
         this.A05.setText(str);
         this.A05.setTextColor(i);
@@ -45,14 +45,14 @@ public final class Z3 extends RelativeLayout {
         this.A02.setText(str3);
         YB.A0a(this.A02, true, 18);
         this.A02.setAllCaps(true);
-        this.A02.setTextColor(i6);
+        this.A02.setTextColor(i4);
         this.A02.setPadding(A06, A06, A06, A06);
         this.A01.setText(str4);
         YB.A0a(this.A01, true, 18);
         this.A01.setAllCaps(true);
         this.A01.setTextColor(i);
         this.A01.setPadding(A06, A06, A06, A06);
-        int A02 = P3.A02(i6, 20);
+        int A02 = P3.A02(i4, 20);
         YB.A0Q(this.A02, i, A07);
         YB.A0Q(this.A01, A02, A07);
         A00();

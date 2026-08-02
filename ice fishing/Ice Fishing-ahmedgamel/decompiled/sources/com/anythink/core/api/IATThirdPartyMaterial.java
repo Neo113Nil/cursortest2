@@ -67,9 +67,9 @@ public interface IATThirdPartyMaterial {
 
     View getRoateView(Map<String, Object> map, ATCompViewListener aTCompViewListener);
 
-    View getShakeView(int i, int i6, ATShakeViewListener aTShakeViewListener);
+    View getShakeView(int i, int i4, ATShakeViewListener aTShakeViewListener);
 
-    View getSlideView(int i, int i6, int i9, ATShakeViewListener aTShakeViewListener);
+    View getSlideView(int i, int i4, int i6, ATShakeViewListener aTShakeViewListener);
 
     Double getStarRating();
 

@@ -26,25 +26,25 @@ import java.util.ArrayList;
 public class AdxATNativeAd extends CustomNativeAd {
 
     /* renamed from: a, reason: collision with root package name */
-    a f23025a;
+    a f23812a;
 
     /* renamed from: b, reason: collision with root package name */
-    x f23026b;
+    x f23813b;
 
     /* renamed from: c, reason: collision with root package name */
-    Context f23027c;
+    Context f23814c;
 
     /* renamed from: d, reason: collision with root package name */
-    boolean f23028d;
+    boolean f23815d;
 
     /* renamed from: e, reason: collision with root package name */
-    boolean f23029e;
+    boolean f23816e;
 
     /* renamed from: f, reason: collision with root package name */
-    View f23030f;
+    View f23817f;
 
     /* renamed from: g, reason: collision with root package name */
-    e f23031g;
+    e f23818g;
 
     /* JADX WARN: Code restructure failed: missing block: B:20:0x00be, code lost:
     
@@ -53,16 +53,16 @@ public class AdxATNativeAd extends CustomNativeAd {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public AdxATNativeAd(final Context context, a aVar, x xVar, boolean z3, boolean z6) {
-        this.f23027c = context.getApplicationContext();
-        this.f23025a = aVar;
-        this.f23026b = xVar;
+    public AdxATNativeAd(final Context context, a aVar, x xVar, boolean z6, boolean z9) {
+        this.f23814c = context.getApplicationContext();
+        this.f23812a = aVar;
+        this.f23813b = xVar;
         setNetworkInfoMap(d.a(aVar.a()));
-        f fVar = new f(this.f23025a.a(), null) { // from class: com.anythink.network.adx.AdxATNativeAd.1
+        f fVar = new f(this.f23812a.a(), null) { // from class: com.anythink.network.adx.AdxATNativeAd.1
             @Override // com.anythink.basead.g.f
             public final void onATImproveClickViewRenderFail(int i) {
-                if (AdxATNativeAd.this.f23025a.a() != null && AdxATNativeAd.this.f23025a.a().b() == 2 && (AdxATNativeAd.this.f23025a.a() instanceof bj)) {
-                    com.anythink.core.common.u.e.a(AdxATNativeAd.this.getDetail(), ((bj) AdxATNativeAd.this.f23025a.a()).aD(), AdxATNativeAd.this.f23025a.a().v(), i);
+                if (AdxATNativeAd.this.f23812a.a() != null && AdxATNativeAd.this.f23812a.a().b() == 2 && (AdxATNativeAd.this.f23812a.a() instanceof bj)) {
+                    com.anythink.core.common.u.e.a(AdxATNativeAd.this.getDetail(), ((bj) AdxATNativeAd.this.f23812a.a()).aD(), AdxATNativeAd.this.f23812a.a().v(), i);
                 }
             }
 
@@ -70,12 +70,12 @@ public class AdxATNativeAd extends CustomNativeAd {
             public final void onAdClick(j jVar) {
                 super.onAdClick(jVar);
                 AdxATNativeAd.this.notifyAdClicked();
-                if (AdxATNativeAd.this.f23025a.a().t() == 67) {
-                    if (AdxATNativeAd.this.f23025a.a(true, false)) {
-                        c.a(context).a(AdxATNativeAd.this.f23025a.a().v(), 1, 0);
+                if (AdxATNativeAd.this.f23812a.a().t() == 67) {
+                    if (AdxATNativeAd.this.f23812a.a(true, false)) {
+                        c.a(context).a(AdxATNativeAd.this.f23812a.a().v(), 1, 0);
                     }
-                    if (AdxATNativeAd.this.f23025a.a(false, false)) {
-                        b.a(context).a(AdxATNativeAd.this.f23025a.a().v(), 1, 0);
+                    if (AdxATNativeAd.this.f23812a.a(false, false)) {
+                        b.a(context).a(AdxATNativeAd.this.f23812a.a().v(), 1, 0);
                     }
                 }
             }
@@ -89,22 +89,22 @@ public class AdxATNativeAd extends CustomNativeAd {
             public final void onAdShow(j jVar) {
                 super.onAdShow(jVar);
                 AdxATNativeAd.this.notifyAdImpression();
-                if (AdxATNativeAd.this.f23025a.a().t() == 67) {
-                    if (AdxATNativeAd.this.f23025a.a(true, true)) {
-                        c.a(context).a(AdxATNativeAd.this.f23025a.a().v(), 0, 1);
+                if (AdxATNativeAd.this.f23812a.a().t() == 67) {
+                    if (AdxATNativeAd.this.f23812a.a(true, true)) {
+                        c.a(context).a(AdxATNativeAd.this.f23812a.a().v(), 0, 1);
                     }
-                    if (AdxATNativeAd.this.f23025a.a(false, true)) {
-                        b.a(context).a(AdxATNativeAd.this.f23025a.a().v(), 0, 1);
+                    if (AdxATNativeAd.this.f23812a.a(false, true)) {
+                        b.a(context).a(AdxATNativeAd.this.f23812a.a().v(), 0, 1);
                     }
                 }
             }
 
             @Override // com.anythink.basead.g.a
-            public final void onDeeplinkCallback(boolean z9) {
+            public final void onDeeplinkCallback(boolean z10) {
                 y yVar;
-                x xVar2 = AdxATNativeAd.this.f23026b;
-                if (xVar2 == null || (yVar = xVar2.f14168o) == null || yVar.bI() <= 0) {
-                    AdxATNativeAd.this.notifyDeeplinkCallback(z9);
+                x xVar2 = AdxATNativeAd.this.f23813b;
+                if (xVar2 == null || (yVar = xVar2.f14954o) == null || yVar.bI() <= 0) {
+                    AdxATNativeAd.this.notifyDeeplinkCallback(z10);
                 }
             }
 
@@ -112,9 +112,9 @@ public class AdxATNativeAd extends CustomNativeAd {
             public final void onShowFailed(com.anythink.basead.d.f fVar2) {
             }
         };
-        this.f23031g = fVar;
-        this.f23025a.a(fVar);
-        this.f23025a.a(new a.InterfaceC0050a() { // from class: com.anythink.network.adx.AdxATNativeAd.2
+        this.f23818g = fVar;
+        this.f23812a.a(fVar);
+        this.f23812a.a(new a.InterfaceC0050a() { // from class: com.anythink.network.adx.AdxATNativeAd.2
             @Override // com.anythink.basead.ui.a.InterfaceC0050a
             public final void onProgressUpdate(long j6, long j9) {
                 if (AdxATNativeAd.this.getVideoDuration() == 0.0d) {
@@ -139,54 +139,54 @@ public class AdxATNativeAd extends CustomNativeAd {
                 AdxATNativeAd.this.notifyAdVideoVideoPlayFail(str, str2);
             }
         });
-        this.f23028d = z3;
-        this.f23029e = z6;
-        int w6 = this.f23025a.w();
-        if (w6 == 1) {
+        this.f23815d = z6;
+        this.f23816e = z9;
+        int w3 = this.f23812a.w();
+        if (w3 == 1) {
             this.mAdSourceType = "1";
-        } else if (w6 == 2) {
+        } else if (w3 == 2) {
             this.mAdSourceType = "2";
         }
-        if (this.f23025a.p()) {
+        if (this.f23812a.p()) {
             return;
         }
-        setAdChoiceIconUrl(this.f23025a.h());
-        setTitle(this.f23025a.c());
-        setDescriptionText(this.f23025a.d());
-        setIconImageUrl(this.f23025a.f());
-        String g4 = this.f23025a.g();
-        setMainImageUrl(g4);
+        setAdChoiceIconUrl(this.f23812a.h());
+        setTitle(this.f23812a.c());
+        setDescriptionText(this.f23812a.d());
+        setIconImageUrl(this.f23812a.f());
+        String g9 = this.f23812a.g();
+        setMainImageUrl(g9);
         ArrayList arrayList = new ArrayList();
-        if (!TextUtils.isEmpty(g4)) {
-            arrayList.add(g4);
+        if (!TextUtils.isEmpty(g9)) {
+            arrayList.add(g9);
         }
         setImageUrlList(arrayList);
-        setCallToActionText(this.f23025a.e());
-        if (this.f23025a.o()) {
-            setAdAppInfo(new AdxAppInfo(this.f23025a));
+        setCallToActionText(this.f23812a.e());
+        if (this.f23812a.o()) {
+            setAdAppInfo(new AdxAppInfo(this.f23812a));
         }
-        int z9 = this.f23025a.z();
-        if (z9 != 1) {
-            if (z9 == 2 || z9 == 3) {
+        int z10 = this.f23812a.z();
+        if (z10 != 1) {
+            if (z10 == 2 || z10 == 3) {
                 setNativeInteractionType(2);
             }
-            setMainImageWidth(this.f23025a.x());
-            setMainImageHeight(this.f23025a.y());
-            setVideoWidth(this.f23025a.D());
-            setVideoHeight(this.f23025a.E());
-            setVideoDuration(this.f23025a.F() / 1000.0d);
+            setMainImageWidth(this.f23812a.x());
+            setMainImageHeight(this.f23812a.y());
+            setVideoWidth(this.f23812a.D());
+            setVideoHeight(this.f23812a.E());
+            setVideoDuration(this.f23812a.F() / 1000.0d);
         }
         setNativeInteractionType(1);
-        setMainImageWidth(this.f23025a.x());
-        setMainImageHeight(this.f23025a.y());
-        setVideoWidth(this.f23025a.D());
-        setVideoHeight(this.f23025a.E());
-        setVideoDuration(this.f23025a.F() / 1000.0d);
+        setMainImageWidth(this.f23812a.x());
+        setMainImageHeight(this.f23812a.y());
+        setVideoWidth(this.f23812a.D());
+        setVideoHeight(this.f23812a.E());
+        setVideoDuration(this.f23812a.F() / 1000.0d);
     }
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.core.api.BaseAd
     public void clear(View view) {
-        com.anythink.basead.f.a aVar = this.f23025a;
+        com.anythink.basead.f.a aVar = this.f23812a;
         if (aVar != null) {
             aVar.q();
         }
@@ -194,35 +194,35 @@ public class AdxATNativeAd extends CustomNativeAd {
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.core.api.BaseAd
     public void destroy() {
-        com.anythink.basead.f.a aVar = this.f23025a;
+        com.anythink.basead.f.a aVar = this.f23812a;
         if (aVar != null) {
             aVar.a((com.anythink.basead.g.a) null);
-            this.f23025a.r();
+            this.f23812a.r();
         }
     }
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.nativead.unitgroup.a, com.anythink.core.api.IATThirdPartyMaterial
     public View getAdMediaView(Object... objArr) {
-        if (this.f23030f == null) {
-            this.f23030f = this.f23025a.a(this.f23027c, this.f23029e, new BaseMediaATView.a() { // from class: com.anythink.network.adx.AdxATNativeAd.3
+        if (this.f23817f == null) {
+            this.f23817f = this.f23812a.a(this.f23814c, this.f23816e, new BaseMediaATView.a() { // from class: com.anythink.network.adx.AdxATNativeAd.3
                 @Override // com.anythink.basead.ui.BaseMediaATView.a
                 public final void onClickCloseView() {
                     AdxATNativeAd.this.notifyAdDislikeClick();
                 }
             });
         }
-        return this.f23030f;
+        return this.f23817f;
     }
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.core.api.BaseAd
     public ViewGroup getCustomAdContainer() {
-        return this.f23025a.b();
+        return this.f23812a.b();
     }
 
     @Override // com.anythink.nativead.unitgroup.a, com.anythink.core.api.IATThirdPartyMaterial
     public int getDownloadStatus() {
         int A9;
-        com.anythink.basead.f.a aVar = this.f23025a;
+        com.anythink.basead.f.a aVar = this.f23812a;
         if (aVar == null || (A9 = aVar.A()) < 0) {
             return 0;
         }
@@ -230,23 +230,23 @@ public class AdxATNativeAd extends CustomNativeAd {
     }
 
     @Override // com.anythink.nativead.unitgroup.a, com.anythink.core.api.IATThirdPartyMaterial
-    public View getShakeView(int i, int i6, ATShakeViewListener aTShakeViewListener) {
-        return this.f23025a.B();
+    public View getShakeView(int i, int i4, ATShakeViewListener aTShakeViewListener) {
+        return this.f23812a.B();
     }
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.core.api.IATThirdPartyMaterial
     public double getVideoProgress() {
-        return this.f23025a != null ? r0.C() / 1000.0d : super.getVideoProgress();
+        return this.f23812a != null ? r0.C() / 1000.0d : super.getVideoProgress();
     }
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.core.api.BaseAd
     public boolean isNativeExpress() {
-        return this.f23025a.p();
+        return this.f23812a.p();
     }
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.nativead.unitgroup.a
     public void onPause() {
-        com.anythink.basead.f.a aVar = this.f23025a;
+        com.anythink.basead.f.a aVar = this.f23812a;
         if (aVar != null) {
             aVar.t();
         }
@@ -254,7 +254,7 @@ public class AdxATNativeAd extends CustomNativeAd {
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.nativead.unitgroup.a
     public void onResume() {
-        com.anythink.basead.f.a aVar = this.f23025a;
+        com.anythink.basead.f.a aVar = this.f23812a;
         if (aVar != null) {
             aVar.s();
         }
@@ -262,38 +262,38 @@ public class AdxATNativeAd extends CustomNativeAd {
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.core.api.BaseAd
     public void pauseVideo() {
-        this.f23025a.v();
+        this.f23812a.v();
     }
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.nativead.unitgroup.a
     public void prepare(View view, ATNativePrepareInfo aTNativePrepareInfo) {
-        e eVar = this.f23031g;
+        e eVar = this.f23818g;
         if (eVar != null) {
             eVar.updateTrackingInfo(getDetail());
             AdxATInitManager.getInstance();
-            AdxATInitManager.a(getDetail(), this.f23026b);
+            AdxATInitManager.a(getDetail(), this.f23813b);
         }
-        com.anythink.basead.f.a aVar = this.f23025a;
+        com.anythink.basead.f.a aVar = this.f23812a;
         if (aVar != null) {
             aVar.s();
         }
-        if (this.f23025a != null) {
-            this.f23025a.a(view, aTNativePrepareInfo.getClickViewList(), aTNativePrepareInfo instanceof ATNativePrepareExInfo ? ((ATNativePrepareExInfo) aTNativePrepareInfo).getCreativeClickViewList() : null, aTNativePrepareInfo.getChoiceViewLayoutParams(), aTNativePrepareInfo.getCloseView());
-            if (this.f23028d || this.f23025a.a() == null || this.f23025a.a().b() != 2 || !(this.f23025a.a() instanceof bj)) {
+        if (this.f23812a != null) {
+            this.f23812a.a(view, aTNativePrepareInfo.getClickViewList(), aTNativePrepareInfo instanceof ATNativePrepareExInfo ? ((ATNativePrepareExInfo) aTNativePrepareInfo).getCreativeClickViewList() : null, aTNativePrepareInfo.getChoiceViewLayoutParams(), aTNativePrepareInfo.getCloseView());
+            if (this.f23815d || this.f23812a.a() == null || this.f23812a.a().b() != 2 || !(this.f23812a.a() instanceof bj)) {
                 return;
             }
-            View view2 = this.f23030f;
-            com.anythink.core.common.u.e.a(getDetail(), ((bj) this.f23025a.a()).aD(), this.f23025a.a().v(), (view2 == null || view2.getParent() == null) ? false : true);
+            View view2 = this.f23817f;
+            com.anythink.core.common.u.e.a(getDetail(), ((bj) this.f23812a.a()).aD(), this.f23812a.a().v(), (view2 == null || view2.getParent() == null) ? false : true);
         }
     }
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.core.api.BaseAd
     public void resumeVideo() {
-        this.f23025a.u();
+        this.f23812a.u();
     }
 
     @Override // com.anythink.nativead.unitgroup.api.CustomNativeAd, com.anythink.core.api.BaseAd
-    public void setVideoMute(boolean z3) {
-        this.f23025a.b(z3);
+    public void setVideoMute(boolean z6) {
+        this.f23812a.b(z6);
     }
 }

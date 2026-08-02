@@ -4,13 +4,13 @@ package com.anythink.expressad.foundation.g.g.a;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    private String f19557a;
+    private String f20344a;
 
     private String a() {
-        return this.f19557a;
+        return this.f20344a;
     }
 
     private void a(String str) {
-        this.f19557a = str;
+        this.f20344a = str;
     }
 }

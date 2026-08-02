@@ -16,53 +16,53 @@ import java.util.Objects;
 public final class E extends Handler implements Runnable {
 
     /* renamed from: A, reason: collision with root package name */
-    public final /* synthetic */ C4274ze f24509A;
+    public final /* synthetic */ C4297ze f25270A;
 
     /* renamed from: n, reason: collision with root package name */
-    public final C4269zQ f24510n;
+    public final CQ f25271n;
 
     /* renamed from: u, reason: collision with root package name */
-    public CQ f24511u;
+    public FQ f25272u;
 
     /* renamed from: v, reason: collision with root package name */
-    public IOException f24512v;
+    public IOException f25273v;
 
     /* renamed from: w, reason: collision with root package name */
-    public int f24513w;
+    public int f25274w;
 
     /* renamed from: x, reason: collision with root package name */
-    public Thread f24514x;
+    public Thread f25275x;
 
     /* renamed from: y, reason: collision with root package name */
-    public boolean f24515y;
+    public boolean f25276y;
 
     /* renamed from: z, reason: collision with root package name */
-    public volatile boolean f24516z;
+    public volatile boolean f25277z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public E(C4274ze c4274ze, Looper looper, C4269zQ c4269zQ, CQ cq, long j6) {
+    public E(C4297ze c4297ze, Looper looper, CQ cq, FQ fq, long j6) {
         super(looper);
-        Objects.requireNonNull(c4274ze);
-        this.f24509A = c4274ze;
-        this.f24510n = c4269zQ;
-        this.f24511u = cq;
+        Objects.requireNonNull(c4297ze);
+        this.f25270A = c4297ze;
+        this.f25271n = cq;
+        this.f25272u = fq;
     }
 
-    public final void a(boolean z3) {
-        this.f24516z = z3;
-        this.f24512v = null;
+    public final void a(boolean z6) {
+        this.f25277z = z6;
+        this.f25273v = null;
         if (hasMessages(1)) {
-            this.f24515y = true;
+            this.f25276y = true;
             removeMessages(1);
-            if (!z3) {
+            if (!z6) {
                 sendEmptyMessage(2);
             }
         } else {
             synchronized (this) {
                 try {
-                    this.f24515y = true;
-                    this.f24510n.f35338g = true;
-                    Thread thread = this.f24514x;
+                    this.f25276y = true;
+                    this.f25271n.f24885g = true;
+                    Thread thread = this.f25275x;
                     if (thread != null) {
                         thread.interrupt();
                     }
@@ -71,49 +71,49 @@ public final class E extends Handler implements Runnable {
                 }
             }
         }
-        if (z3) {
-            this.f24509A.f35361v = null;
+        if (z6) {
+            this.f25270A.f36134v = null;
             SystemClock.elapsedRealtime();
-            CQ cq = this.f24511u;
-            cq.getClass();
-            cq.g(this.f24510n, true);
-            this.f24511u = null;
+            FQ fq = this.f25272u;
+            fq.getClass();
+            fq.g(this.f25271n, true);
+            this.f25272u = null;
         }
     }
 
     public final void b() {
-        C3246gQ c3246gQ;
+        C3429jQ c3429jQ;
         SystemClock.elapsedRealtime();
-        CQ cq = this.f24511u;
-        cq.getClass();
-        int i = this.f24513w;
-        C4269zQ c4269zQ = this.f24510n;
-        C2991bm c2991bm = c4269zQ.f35333b;
+        FQ fq = this.f25272u;
+        fq.getClass();
+        int i = this.f25274w;
+        CQ cq = this.f25271n;
+        C3067cm c3067cm = cq.f24880b;
         if (i == 0) {
-            Uri uri = c4269zQ.f35340j.f29279a;
+            Uri uri = cq.f24887j.f30067a;
             Map map = Collections.EMPTY_MAP;
-            c3246gQ = new C3246gQ();
+            c3429jQ = new C3429jQ();
         } else {
-            Object obj = c2991bm.f29324v;
-            c3246gQ = new C3246gQ();
+            Object obj = c3067cm.f30366v;
+            c3429jQ = new C3429jQ();
         }
-        C3514lQ c3514lQ = new C3514lQ(-1, null, AbstractC3159eu.t(c4269zQ.i), AbstractC3159eu.t(cq.f24136T));
-        AP ap = cq.f24152w;
-        ap.a(new R5(ap, c3246gQ, c3514lQ, i));
-        this.f24512v = null;
-        C4274ze c4274ze = this.f24509A;
-        E e9 = (E) c4274ze.f35361v;
+        C3699oQ c3699oQ = new C3699oQ(-1, null, AbstractC3182eu.t(cq.i), AbstractC3182eu.t(fq.f25575T));
+        AP ap = fq.f25590w;
+        ap.a(new R5(ap, c3429jQ, c3699oQ, i));
+        this.f25273v = null;
+        C4297ze c4297ze = this.f25270A;
+        E e9 = (E) c4297ze.f36134v;
         e9.getClass();
-        ((J) c4274ze.f35360u).execute(e9);
+        ((J) c4297ze.f36133u).execute(e9);
     }
 
     @Override // android.os.Handler
     public final void handleMessage(Message message) {
         long min;
-        D d2;
-        InterfaceC3113e1 interfaceC3113e1;
-        boolean z3 = true;
-        if (this.f24516z) {
+        D d9;
+        InterfaceC3136e1 interfaceC3136e1;
+        boolean z6 = true;
+        if (this.f25277z) {
             return;
         }
         int i = message.what;
@@ -124,97 +124,97 @@ public final class E extends Handler implements Runnable {
         if (i == 4) {
             throw ((Error) message.obj);
         }
-        C4274ze c4274ze = this.f24509A;
-        c4274ze.f35361v = null;
+        C4297ze c4297ze = this.f25270A;
+        c4297ze.f36134v = null;
         SystemClock.elapsedRealtime();
-        CQ cq = this.f24511u;
-        cq.getClass();
-        if (this.f24515y) {
-            cq.g(this.f24510n, false);
+        FQ fq = this.f25272u;
+        fq.getClass();
+        if (this.f25276y) {
+            fq.g(this.f25271n, false);
             return;
         }
-        int i6 = message.what;
-        if (i6 == 2) {
+        int i4 = message.what;
+        if (i4 == 2) {
             try {
-                cq.j(this.f24510n);
+                fq.j(this.f25271n);
                 return;
             } catch (RuntimeException e9) {
-                AbstractC2968bG.J("LoadTask", "Unexpected exception handling load completed", e9);
-                this.f24509A.f35362w = new G(e9);
+                AbstractC2991bG.J("LoadTask", "Unexpected exception handling load completed", e9);
+                this.f25270A.f36135w = new G(e9);
                 return;
             }
         }
-        if (i6 != 3) {
+        if (i4 != 3) {
             return;
         }
         IOException iOException = (IOException) message.obj;
-        this.f24512v = iOException;
-        int i9 = this.f24513w;
-        this.f24513w = i9 + 1;
-        C4269zQ c4269zQ = this.f24510n;
-        Object obj = c4269zQ.f35333b.f29324v;
-        C3246gQ c3246gQ = new C3246gQ();
-        String str = AbstractC3159eu.f29993a;
+        this.f25273v = iOException;
+        int i6 = this.f25274w;
+        this.f25274w = i6 + 1;
+        CQ cq = this.f25271n;
+        Object obj = cq.f24880b.f30366v;
+        C3429jQ c3429jQ = new C3429jQ();
+        String str = AbstractC3182eu.f30782a;
         for (Throwable th = iOException; th != null; th = th.getCause()) {
-            if ((th instanceof U4) || (th instanceof FileNotFoundException) || (th instanceof C3133eL) || (th instanceof G) || ((th instanceof NH) && ((NH) th).f26478n == 2008)) {
+            if ((th instanceof U4) || (th instanceof FileNotFoundException) || (th instanceof C3156eL) || (th instanceof G) || ((th instanceof NH) && ((NH) th).f27262n == 2008)) {
                 min = -9223372036854775807L;
                 break;
             }
         }
-        min = Math.min(i9 * 1000, 5000);
-        if (min == com.anythink.basead.exoplayer.b.f6382b) {
-            d2 = C4274ze.f35358z;
+        min = Math.min(i6 * 1000, 5000);
+        if (min == com.anythink.basead.exoplayer.b.f7168b) {
+            d9 = C4297ze.f36131z;
         } else {
-            int t6 = cq.t();
-            int i10 = t6 > cq.f24147r0 ? 1 : 0;
-            if (cq.f24143n0 || !((interfaceC3113e1 = cq.f24135S) == null || interfaceC3113e1.c() == com.anythink.basead.exoplayer.b.f6382b)) {
-                cq.f24147r0 = t6;
+            int t6 = fq.t();
+            int i9 = t6 > fq.m0 ? 1 : 0;
+            if (fq.f25581i0 || !((interfaceC3136e1 = fq.f25574S) == null || interfaceC3136e1.c() == com.anythink.basead.exoplayer.b.f7168b)) {
+                fq.m0 = t6;
             } else {
-                boolean z6 = cq.f24131O;
-                if (!z6 || cq.n()) {
-                    cq.f24140X = z6;
-                    cq.f24144o0 = 0L;
-                    cq.f24147r0 = 0;
-                    HQ[] hqArr = cq.f24128L;
-                    int length = hqArr.length;
-                    int i11 = 0;
-                    while (i11 < length) {
-                        hqArr[i11].k(false);
-                        i11++;
-                        z3 = z3;
+                boolean z9 = fq.f25570O;
+                if (!z9 || fq.n()) {
+                    fq.f25579X = z9;
+                    fq.f25582j0 = 0L;
+                    fq.m0 = 0;
+                    KQ[] kqArr = fq.f25567L;
+                    int length = kqArr.length;
+                    int i10 = 0;
+                    while (i10 < length) {
+                        kqArr[i10].k(false);
+                        i10++;
+                        z6 = z6;
                     }
-                    c4269zQ.f35337f.f27844n = 0L;
-                    c4269zQ.i = 0L;
-                    c4269zQ.f35339h = z3;
-                    c4269zQ.f35342l = false;
+                    cq.f24884f.f28641n = 0L;
+                    cq.i = 0L;
+                    cq.f24886h = z6;
+                    cq.f24889l = false;
                 } else {
-                    cq.f24146q0 = true;
-                    d2 = C4274ze.f35357y;
+                    fq.f25584l0 = true;
+                    d9 = C4297ze.f36130y;
                 }
             }
-            d2 = new D(i10, min);
+            d9 = new D(i9, min);
         }
-        int i12 = d2.f24288a;
-        boolean z9 = i12 == 0 || i12 == 1;
-        C3514lQ c3514lQ = new C3514lQ(-1, null, AbstractC3159eu.t(c4269zQ.i), AbstractC3159eu.t(cq.f24136T));
-        AP ap = cq.f24152w;
-        ap.a(new Xw(ap, c3246gQ, c3514lQ, iOException, !z9));
-        int i13 = d2.f24288a;
-        if (i13 == 3) {
-            c4274ze.f35362w = this.f24512v;
+        int i11 = d9.f25033a;
+        boolean z10 = i11 == 0 || i11 == 1;
+        C3699oQ c3699oQ = new C3699oQ(-1, null, AbstractC3182eu.t(cq.i), AbstractC3182eu.t(fq.f25575T));
+        AP ap = fq.f25590w;
+        ap.a(new Xw(ap, c3429jQ, c3699oQ, iOException, !z10));
+        int i12 = d9.f25033a;
+        if (i12 == 3) {
+            c4297ze.f36135w = this.f25273v;
             return;
         }
-        if (i13 != 2) {
-            if (i13 == 1) {
-                this.f24513w = 1;
+        if (i12 != 2) {
+            if (i12 == 1) {
+                this.f25274w = 1;
             }
-            long j6 = d2.f24289b;
-            if (j6 == com.anythink.basead.exoplayer.b.f6382b) {
-                j6 = Math.min((this.f24513w - 1) * 1000, 5000);
+            long j6 = d9.f25034b;
+            if (j6 == com.anythink.basead.exoplayer.b.f7168b) {
+                j6 = Math.min((this.f25274w - 1) * 1000, 5000);
             }
-            C4274ze c4274ze2 = this.f24509A;
-            AbstractC2772Sd.H(((E) c4274ze2.f35361v) == null);
-            c4274ze2.f35361v = this;
+            C4297ze c4297ze2 = this.f25270A;
+            AbstractC2792Sd.H(((E) c4297ze2.f36134v) == null);
+            c4297ze2.f36134v = this;
             if (j6 > 0) {
                 sendEmptyMessageDelayed(1, j6);
             } else {
@@ -225,21 +225,21 @@ public final class E extends Handler implements Runnable {
 
     @Override // java.lang.Runnable
     public final void run() {
-        boolean z3;
+        boolean z6;
         try {
             synchronized (this) {
-                z3 = this.f24515y;
-                this.f24514x = Thread.currentThread();
+                z6 = this.f25276y;
+                this.f25275x = Thread.currentThread();
             }
-            if (!z3) {
-                C4269zQ c4269zQ = this.f24510n;
-                String simpleName = c4269zQ.getClass().getSimpleName();
+            if (!z6) {
+                CQ cq = this.f25271n;
+                String simpleName = cq.getClass().getSimpleName();
                 StringBuilder sb = new StringBuilder(simpleName.length() + 5);
                 sb.append("load:");
                 sb.append(simpleName);
                 Trace.beginSection(sb.toString());
                 try {
-                    c4269zQ.a();
+                    cq.a();
                     Trace.endSection();
                 } catch (Throwable th) {
                     Trace.endSection();
@@ -247,33 +247,33 @@ public final class E extends Handler implements Runnable {
                 }
             }
             synchronized (this) {
-                this.f24514x = null;
+                this.f25275x = null;
                 Thread.interrupted();
             }
-            if (this.f24516z) {
+            if (this.f25277z) {
                 return;
             }
             sendEmptyMessage(2);
         } catch (IOException e9) {
-            if (this.f24516z) {
+            if (this.f25277z) {
                 return;
             }
             obtainMessage(3, e9).sendToTarget();
         } catch (Exception e10) {
-            if (this.f24516z) {
+            if (this.f25277z) {
                 return;
             }
-            AbstractC2968bG.J("LoadTask", "Unexpected exception loading stream", e10);
+            AbstractC2991bG.J("LoadTask", "Unexpected exception loading stream", e10);
             obtainMessage(3, new G(e10)).sendToTarget();
         } catch (OutOfMemoryError e11) {
-            if (this.f24516z) {
+            if (this.f25277z) {
                 return;
             }
-            AbstractC2968bG.J("LoadTask", "OutOfMemory error loading stream", e11);
+            AbstractC2991bG.J("LoadTask", "OutOfMemory error loading stream", e11);
             obtainMessage(3, new G(e11)).sendToTarget();
         } catch (Error e12) {
-            if (!this.f24516z) {
-                AbstractC2968bG.J("LoadTask", "Unexpected error loading stream", e12);
+            if (!this.f25277z) {
+                AbstractC2991bG.J("LoadTask", "Unexpected error loading stream", e12);
                 obtainMessage(4, e12).sendToTarget();
             }
             throw e12;

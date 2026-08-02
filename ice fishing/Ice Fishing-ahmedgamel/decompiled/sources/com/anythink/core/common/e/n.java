@@ -10,56 +10,56 @@ import java.util.List;
 public class n extends c<be> {
 
     /* renamed from: b, reason: collision with root package name */
-    private static n f13053b;
+    private static n f13839b;
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f13054a;
+    private final String f13840a;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f13055a = "offer_action_record";
+        public static final String f13841a = "offer_action_record";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f13056b = "adsource_id";
+        public static final String f13842b = "adsource_id";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f13057c = "type";
+        public static final String f13843c = "type";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f13058d = "unit_id";
+        public static final String f13844d = "unit_id";
 
         /* renamed from: e, reason: collision with root package name */
-        public static final String f13059e = "click_count";
+        public static final String f13845e = "click_count";
 
         /* renamed from: f, reason: collision with root package name */
-        public static final String f13060f = "show_count";
+        public static final String f13846f = "show_count";
 
         /* renamed from: g, reason: collision with root package name */
-        public static final String f13061g = "expire_time";
+        public static final String f13847g = "expire_time";
 
         /* renamed from: h, reason: collision with root package name */
-        public static final String f13062h = "CREATE TABLE IF NOT EXISTS offer_action_record(adsource_id TEXT ,type INTEGER ,unit_id TEXT ,click_count INTEGER ,show_count INTEGER ,expire_time INTEGER )";
+        public static final String f13848h = "CREATE TABLE IF NOT EXISTS offer_action_record(adsource_id TEXT ,type INTEGER ,unit_id TEXT ,click_count INTEGER ,show_count INTEGER ,expire_time INTEGER )";
     }
 
     private n(d dVar) {
         super(dVar);
-        this.f13054a = n.class.getName();
+        this.f13840a = n.class.getName();
     }
 
     public static n a(d dVar) {
-        if (f13053b == null) {
+        if (f13839b == null) {
             synchronized (n.class) {
                 try {
-                    if (f13053b == null) {
-                        f13053b = new n(dVar);
+                    if (f13839b == null) {
+                        f13839b = new n(dVar);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f13053b;
+        return f13839b;
     }
 
     private static String b(int i) {
@@ -68,14 +68,14 @@ public class n extends c<be> {
         }
         StringBuilder sb = new StringBuilder((i * 2) - 1);
         sb.append("?");
-        for (int i6 = 1; i6 < i; i6++) {
+        for (int i4 = 1; i4 < i; i4++) {
             sb.append(",?");
         }
         return sb.toString();
     }
 
     private boolean c(String str, int i, String str2) {
-        Cursor query = c().query(a.f13055a, null, "adsource_id = ? and type = ? and unit_id = ?", new String[]{str, String.valueOf(i), str2}, null, null, null);
+        Cursor query = c().query(a.f13841a, null, "adsource_id = ? and type = ? and unit_id = ?", new String[]{str, String.valueOf(i), str2}, null, null, null);
         if (query != null && query.getCount() > 0) {
             query.close();
             return true;
@@ -99,15 +99,15 @@ public class n extends c<be> {
                 contentValues.put("unit_id", str2);
                 be a9 = a(i, str2);
                 if (a9 != null) {
-                    contentValues.put(a.f13059e, Integer.valueOf(a9.d()));
+                    contentValues.put(a.f13845e, Integer.valueOf(a9.d()));
                     contentValues.put("show_count", Integer.valueOf(a9.c()));
-                    contentValues.put(a.f13061g, Long.valueOf(a9.b()));
+                    contentValues.put(a.f13847g, Long.valueOf(a9.b()));
                 } else {
-                    contentValues.put(a.f13059e, (Integer) 0);
+                    contentValues.put(a.f13845e, (Integer) 0);
                     contentValues.put("show_count", (Integer) 0);
-                    contentValues.put(a.f13061g, (Integer) (-1));
+                    contentValues.put(a.f13847g, (Integer) (-1));
                 }
-                return d().insert(a.f13055a, null, contentValues);
+                return d().insert(a.f13841a, null, contentValues);
             } catch (Exception unused) {
                 return -1L;
             }
@@ -116,11 +116,11 @@ public class n extends c<be> {
         }
     }
 
-    public final synchronized void a(int i, String str, int i6, int i9) {
+    public final synchronized void a(int i, String str, int i4, int i6) {
         be a9 = a(i, str);
         if (a9 != null) {
-            a9.b(a9.d() + i6);
-            a9.a(a9.c() + i9);
+            a9.b(a9.d() + i4);
+            a9.a(a9.c() + i6);
             a(a9);
         }
     }
@@ -162,13 +162,13 @@ public class n extends c<be> {
         Cursor cursor = null;
         try {
             try {
-                cursor = c().query(a.f13055a, null, "type = ? and expire_time > ?", new String[]{String.valueOf(i), String.valueOf(System.currentTimeMillis())}, null, null, null);
+                cursor = c().query(a.f13841a, null, "type = ? and expire_time > ?", new String[]{String.valueOf(i), String.valueOf(System.currentTimeMillis())}, null, null, null);
                 if (cursor != null && cursor.getCount() > 0) {
                     while (cursor.moveToNext()) {
                         be beVar = new be(i, cursor.getString(cursor.getColumnIndex("unit_id")));
-                        beVar.b(cursor.getInt(cursor.getColumnIndex(a.f13059e)));
+                        beVar.b(cursor.getInt(cursor.getColumnIndex(a.f13845e)));
                         beVar.a(cursor.getInt(cursor.getColumnIndex("show_count")));
-                        beVar.a(cursor.getLong(cursor.getColumnIndex(a.f13061g)));
+                        beVar.a(cursor.getLong(cursor.getColumnIndex(a.f13847g)));
                         arrayList.add(beVar);
                     }
                 }
@@ -183,7 +183,7 @@ public class n extends c<be> {
     }
 
     private boolean b(int i, String str) {
-        Cursor query = c().query(a.f13055a, null, "type = ? and unit_id = ?", new String[]{String.valueOf(i), str}, null, null, null);
+        Cursor query = c().query(a.f13841a, null, "type = ? and unit_id = ?", new String[]{String.valueOf(i), str}, null, null, null);
         if (query != null && query.getCount() > 0) {
             query.close();
             return true;
@@ -229,13 +229,13 @@ public class n extends c<be> {
                 list.toArray(strArr);
                 strArr[list.size()] = String.valueOf(i);
                 strArr[list.size() + 1] = String.valueOf(System.currentTimeMillis());
-                cursor = c().query(a.f13055a, null, "adsource_id IN (" + b(list.size()) + ") and type = ? and expire_time > ?", strArr, null, null, null);
+                cursor = c().query(a.f13841a, null, "adsource_id IN (" + b(list.size()) + ") and type = ? and expire_time > ?", strArr, null, null, null);
                 if (cursor != null && cursor.getCount() > 0) {
                     while (cursor.moveToNext()) {
                         be beVar = new be(i, cursor.getString(cursor.getColumnIndex("unit_id")));
-                        beVar.b(cursor.getInt(cursor.getColumnIndex(a.f13059e)));
+                        beVar.b(cursor.getInt(cursor.getColumnIndex(a.f13845e)));
                         beVar.a(cursor.getInt(cursor.getColumnIndex("show_count")));
-                        beVar.a(cursor.getLong(cursor.getColumnIndex(a.f13061g)));
+                        beVar.a(cursor.getLong(cursor.getColumnIndex(a.f13847g)));
                         arrayList.add(beVar);
                     }
                 }
@@ -257,10 +257,10 @@ public class n extends c<be> {
             ContentValues contentValues = new ContentValues();
             contentValues.put("type", Integer.valueOf(beVar.e()));
             contentValues.put("unit_id", beVar.a());
-            contentValues.put(a.f13059e, Integer.valueOf(beVar.d()));
+            contentValues.put(a.f13845e, Integer.valueOf(beVar.d()));
             contentValues.put("show_count", Integer.valueOf(beVar.c()));
-            contentValues.put(a.f13061g, Long.valueOf(beVar.b()));
-            return d().update(a.f13055a, contentValues, "type = ? and unit_id = ?", new String[]{String.valueOf(beVar.e()), beVar.a()});
+            contentValues.put(a.f13847g, Long.valueOf(beVar.b()));
+            return d().update(a.f13841a, contentValues, "type = ? and unit_id = ?", new String[]{String.valueOf(beVar.e()), beVar.a()});
         } catch (Exception unused) {
             return -1L;
         }
@@ -280,15 +280,15 @@ public class n extends c<be> {
     private synchronized be a(int i, String str) {
         Cursor cursor;
         try {
-            cursor = c().query(a.f13055a, null, "type=? and unit_id = ?", new String[]{String.valueOf(i), str}, null, null, null);
+            cursor = c().query(a.f13841a, null, "type=? and unit_id = ?", new String[]{String.valueOf(i), str}, null, null, null);
             if (cursor != null) {
                 try {
                     if (cursor.getCount() > 0) {
                         cursor.moveToNext();
                         be beVar = new be(i, str);
-                        beVar.b(cursor.getInt(cursor.getColumnIndex(a.f13059e)));
+                        beVar.b(cursor.getInt(cursor.getColumnIndex(a.f13845e)));
                         beVar.a(cursor.getInt(cursor.getColumnIndex("show_count")));
-                        beVar.a(cursor.getLong(cursor.getColumnIndex(a.f13061g)));
+                        beVar.a(cursor.getLong(cursor.getColumnIndex(a.f13847g)));
                         cursor.close();
                         cursor.close();
                         return beVar;
@@ -321,7 +321,7 @@ public class n extends c<be> {
 
     public final synchronized void a(String str, int i, String str2) {
         try {
-            Cursor query = c().query(a.f13055a, null, "adsource_id = ? and type = ? and unit_id = ?", new String[]{str, String.valueOf(i), str2}, null, null, null);
+            Cursor query = c().query(a.f13841a, null, "adsource_id = ? and type = ? and unit_id = ?", new String[]{str, String.valueOf(i), str2}, null, null, null);
             if (query != null && query.getCount() > 0) {
                 query.close();
             } else {

@@ -16,16 +16,16 @@ public final class y {
         try {
             Intent intent = new Intent("android.intent.action.VIEW", Uri.parse(str));
             intent.addFlags(268468224);
-            Context g4 = com.anythink.core.common.d.t.b().g();
-            if (g4 != null) {
+            Context g9 = com.anythink.core.common.d.t.b().g();
+            if (g9 != null) {
                 com.anythink.core.d.b b9 = com.anythink.core.d.d.a(com.anythink.core.common.d.t.b().g()).b(com.anythink.core.common.d.t.b().p());
-                if (b9 != null && b9.aZ() && (a9 = a(g4, intent)) != null && a9.size() > 1) {
+                if (b9 != null && b9.aZ() && (a9 = a(g9, intent)) != null && a9.size() > 1) {
                     String str2 = a9.get(0).activityInfo != null ? a9.get(0).activityInfo.packageName : "";
                     if (!TextUtils.isEmpty(str2)) {
                         intent.setPackage(str2);
                     }
                 }
-                g4.startActivity(intent);
+                g9.startActivity(intent);
             }
         } catch (Throwable th) {
             th.printStackTrace();

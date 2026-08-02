@@ -4,17 +4,17 @@ package com.anythink.basead.ui.guidetoclickv2.picverify;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    int f11085a;
+    int f11871a;
 
     /* renamed from: b, reason: collision with root package name */
-    int f11086b;
+    int f11872b;
 
     /* renamed from: c, reason: collision with root package name */
-    int f11087c;
+    int f11873c;
 
-    public c(int i, int i6) {
-        this.f11085a = i;
-        this.f11086b = i6;
-        this.f11087c = i;
+    public c(int i, int i4) {
+        this.f11871a = i;
+        this.f11872b = i4;
+        this.f11873c = i;
     }
 }

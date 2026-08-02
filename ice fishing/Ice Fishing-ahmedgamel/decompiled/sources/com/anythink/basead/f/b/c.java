@@ -12,11 +12,11 @@ import java.util.Map;
 public interface c {
     View a(Context context);
 
-    com.anythink.basead.f.b.a.d a(Context context, bj bjVar, x xVar, boolean z3);
+    com.anythink.basead.f.b.a.d a(Context context, bj bjVar, x xVar, boolean z6);
 
     void a(Activity activity, Map<String, Object> map, int i, String str, String str2, String str3);
 
-    void a(ViewGroup viewGroup, Map<String, Object> map, boolean z3);
+    void a(ViewGroup viewGroup, Map<String, Object> map, boolean z6);
 
     void a(com.anythink.basead.g.a aVar);
 

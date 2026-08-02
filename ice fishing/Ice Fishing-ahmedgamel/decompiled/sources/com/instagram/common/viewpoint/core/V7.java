@@ -20,10 +20,10 @@ public final class V7 {
         A02();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 42);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 42);
         }
         return new String(copyOfRange);
     }
@@ -52,9 +52,9 @@ public final class V7 {
         A07 = new byte[]{36, 43, 36, 41, 42, 34, 107, 118, 109, 99, 109, 106, 101, 104, 91, 103, 104, 109, 97, 106, 112, 91, 112, 107, 111, 97, 106, 75, 80, 87, 77, 84, 92, 103, 81, 86, 91, 84, 77, 92, 93, 103, 81, 86, 103, 94, 77, 86, 86, 93, 84};
     }
 
-    public V7(T8 t82, String str, double d2, String str2, Map<String, String> map, VC vc, VD vd, boolean z3) {
+    public V7(T8 t82, String str, double d9, String str2, Map<String, String> map, VC vc, VD vd, boolean z6) {
         this.A05 = str;
-        this.A00 = d2;
+        this.A00 = d9;
         this.A04 = str2;
         this.A02 = vc;
         this.A03 = vd;
@@ -62,16 +62,16 @@ public final class V7 {
         if (map != null && !map.isEmpty()) {
             hashMap.putAll(map);
         }
-        if (z3) {
-            hashMap.put(A00(27, 24, 18), String.valueOf(z3));
+        if (z6) {
+            hashMap.put(A00(27, 24, 18), String.valueOf(z6));
         }
         String A01 = VK.A01(str);
-        if (!TextUtils.isEmpty(A01) && (z3 || vd == VD.A0C)) {
+        if (!TextUtils.isEmpty(A01) && (z6 || vd == VD.A0C)) {
             hashMap.put(A00(6, 21, 46), A01);
         }
         if (A0B()) {
             Map<String, String> extraData = t82.A04().A6w();
-            hashMap.put(A00(0, 6, 111), AbstractC1351Xd.A01(extraData));
+            hashMap.put(A00(0, 6, 111), AbstractC1371Xd.A01(extraData));
         }
         Map<String, String> extraData2 = A01(hashMap);
         this.A06 = extraData2;

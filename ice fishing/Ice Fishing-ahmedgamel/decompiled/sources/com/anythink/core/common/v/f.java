@@ -9,7 +9,7 @@ import java.util.Map;
 public class f {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f16746a = "f";
+    private static final String f17533a = "f";
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0033, code lost:
     
@@ -34,41 +34,41 @@ public class f {
         }
         int k9 = acVar.k();
         boolean l9 = acVar.l();
-        List<Integer> m4 = lVar.m();
-        if (m4 == null) {
+        List<Integer> m9 = lVar.m();
+        if (m9 == null) {
             return;
         }
-        boolean o6 = bvVar.o();
+        boolean o4 = bvVar.o();
         int i = 2;
-        boolean z3 = false;
+        boolean z6 = false;
         if (k9 == 22) {
-            if (o6) {
+            if (o4) {
             }
-            if (!o6) {
+            if (!o4) {
             }
-            if (!z3) {
-                m4.toString();
+            if (!z6) {
+                m9.toString();
                 return;
             }
-            int L6 = (int) ((j6 / lVar.L()) * 100.0d);
-            int i6 = l9 ? 3 : 1;
-            boolean f3 = acVar.f();
+            int L2 = (int) ((j6 / lVar.L()) * 100.0d);
+            int i4 = l9 ? 3 : 1;
+            boolean f2 = acVar.f();
             bvVar.toString();
-            m4.toString();
-            map.put(j.w.f12633u, Integer.valueOf(i));
-            map.put(j.w.f12634v, Integer.valueOf(L6));
-            map.put(j.w.f12635w, Integer.valueOf(i6));
-            map.put(j.w.f12636x, Integer.valueOf(f3 ? 1 : 0));
+            m9.toString();
+            map.put(j.w.f13419u, Integer.valueOf(i));
+            map.put(j.w.f13420v, Integer.valueOf(L2));
+            map.put(j.w.f13421w, Integer.valueOf(i4));
+            map.put(j.w.f13422x, Integer.valueOf(f2 ? 1 : 0));
             return;
         }
-        if (!(o6 && m4.contains(4)) && (o6 || !m4.contains(2))) {
+        if (!(o4 && m9.contains(4)) && (o4 || !m9.contains(2))) {
             i = 5;
-            if (!z3) {
+            if (!z6) {
             }
         } else {
             i = 5;
-            z3 = true;
-            if (!z3) {
+            z6 = true;
+            if (!z6) {
             }
         }
     }

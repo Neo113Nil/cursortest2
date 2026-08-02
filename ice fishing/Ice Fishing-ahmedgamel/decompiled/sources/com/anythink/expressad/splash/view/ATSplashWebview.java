@@ -7,10 +7,10 @@ import com.anythink.expressad.atsignalcommon.windvane.WindVaneWebView;
 public class ATSplashWebview extends WindVaneWebView {
 
     /* renamed from: d, reason: collision with root package name */
-    private static final String f20754d = "ATSplashWebview";
+    private static final String f21541d = "ATSplashWebview";
 
     /* renamed from: e, reason: collision with root package name */
-    private String f20755e;
+    private String f21542e;
 
     public ATSplashWebview(Context context) {
         super(context);
@@ -21,10 +21,10 @@ public class ATSplashWebview extends WindVaneWebView {
     }
 
     public String getRequestId() {
-        return this.f20755e;
+        return this.f21542e;
     }
 
     public void setRequestId(String str) {
-        this.f20755e = str;
+        this.f21542e = str;
     }
 }

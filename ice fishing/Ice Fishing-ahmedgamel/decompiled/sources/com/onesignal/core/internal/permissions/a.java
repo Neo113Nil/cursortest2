@@ -7,27 +7,27 @@ import com.onesignal.notifications.internal.registration.impl.a;
 public final /* synthetic */ class a implements DialogInterface.OnClickListener {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f36951n;
+    public final /* synthetic */ int f37104n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final /* synthetic */ Object f36952u;
+    public final /* synthetic */ Object f37105u;
 
     public /* synthetic */ a(int i, Object obj) {
-        this.f36951n = i;
-        this.f36952u = obj;
+        this.f37104n = i;
+        this.f37105u = obj;
     }
 
     @Override // android.content.DialogInterface.OnClickListener
     public final void onClick(DialogInterface dialogInterface, int i) {
-        switch (this.f36951n) {
+        switch (this.f37104n) {
             case 0:
-                e.show$lambda$0((d) this.f36952u, dialogInterface, i);
+                e.show$lambda$0((d) this.f37105u, dialogInterface, i);
                 break;
             case 1:
-                e.show$lambda$1((d) this.f36952u, dialogInterface, i);
+                e.show$lambda$1((d) this.f37105u, dialogInterface, i);
                 break;
             default:
-                a.b.invokeSuspend$lambda$1((com.onesignal.notifications.internal.registration.impl.a) this.f36952u, dialogInterface, i);
+                a.b.invokeSuspend$lambda$1((com.onesignal.notifications.internal.registration.impl.a) this.f37105u, dialogInterface, i);
                 break;
         }
     }

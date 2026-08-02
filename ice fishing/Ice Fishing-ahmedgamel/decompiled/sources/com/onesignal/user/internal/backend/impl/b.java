@@ -14,7 +14,7 @@ import java.util.Map;
 import kotlin.jvm.internal.i;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import q4.C4926b;
+import q4.C4875b;
 import v7.q;
 import v7.t;
 
@@ -70,9 +70,9 @@ public final class b {
         kotlin.jvm.internal.h.e(jsonObject, "jsonObject");
         JSONObject safeJSONObject2 = e.safeJSONObject(jsonObject, U5.c.IDENTITY_NAME_SPACE);
         if (safeJSONObject2 == null || (map3 = e.toMap(safeJSONObject2)) == null) {
-            map = q.f41443n;
+            map = q.f41222n;
         } else {
-            map = new LinkedHashMap(t.P(map3.size()));
+            map = new LinkedHashMap(t.t(map3.size()));
             Iterator<T> it = map3.entrySet().iterator();
             while (it.hasNext()) {
                 Map.Entry entry = (Map.Entry) it.next();
@@ -83,7 +83,7 @@ public final class b {
         if (safeJSONObject3 == null || (safeJSONObject = e.safeJSONObject(safeJSONObject3, "tags")) == null || (map2 = e.toMap(safeJSONObject)) == null) {
             linkedHashMap = null;
         } else {
-            LinkedHashMap linkedHashMap2 = new LinkedHashMap(t.P(map2.size()));
+            LinkedHashMap linkedHashMap2 = new LinkedHashMap(t.t(map2.size()));
             Iterator<T> it2 = map2.entrySet().iterator();
             while (it2.hasNext()) {
                 Map.Entry entry2 = (Map.Entry) it2.next();
@@ -94,7 +94,7 @@ public final class b {
         f fVar = new f(linkedHashMap, safeJSONObject3 != null ? e.safeString(safeJSONObject3, "language") : null, safeJSONObject3 != null ? e.safeString(safeJSONObject3, "timezone_id") : null, safeJSONObject3 != null ? e.safeString(safeJSONObject3, "country") : null, safeJSONObject3 != null ? e.safeDouble(safeJSONObject3, "lat") : null, safeJSONObject3 != null ? e.safeDouble(safeJSONObject3, "long") : null);
         List expandJSONArray = e.expandJSONArray(jsonObject, "subscriptions", a.INSTANCE);
         String safeString = e.safeString(jsonObject, "ryw_token");
-        return new Q5.a(map, fVar, expandJSONArray, safeString != null ? new C4926b(safeString, e.safeLong(jsonObject, "ryw_delay")) : null);
+        return new Q5.a(map, fVar, expandJSONArray, safeString != null ? new C4875b(safeString, e.safeLong(jsonObject, "ryw_delay")) : null);
     }
 
     public final JSONObject convertToJSON(f properties) {

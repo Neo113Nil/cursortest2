@@ -14,25 +14,25 @@ import java.nio.channels.FileChannel;
 public final class e implements h {
 
     /* renamed from: a, reason: collision with root package name */
-    private final ContentResolver f8116a;
+    private final ContentResolver f8902a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final aa<? super e> f8117b;
+    private final aa<? super e> f8903b;
 
     /* renamed from: c, reason: collision with root package name */
-    private Uri f8118c;
+    private Uri f8904c;
 
     /* renamed from: d, reason: collision with root package name */
-    private AssetFileDescriptor f8119d;
+    private AssetFileDescriptor f8905d;
 
     /* renamed from: e, reason: collision with root package name */
-    private FileInputStream f8120e;
+    private FileInputStream f8906e;
 
     /* renamed from: f, reason: collision with root package name */
-    private long f8121f;
+    private long f8907f;
 
     /* renamed from: g, reason: collision with root package name */
-    private boolean f8122g;
+    private boolean f8908g;
 
     public static class a extends IOException {
         public a(IOException iOException) {
@@ -47,42 +47,42 @@ public final class e implements h {
     @Override // com.anythink.basead.exoplayer.j.h
     public final long a(k kVar) {
         try {
-            Uri uri = kVar.f8137c;
-            this.f8118c = uri;
-            AssetFileDescriptor openAssetFileDescriptor = this.f8116a.openAssetFileDescriptor(uri, com.anythink.expressad.foundation.d.d.bv);
-            this.f8119d = openAssetFileDescriptor;
+            Uri uri = kVar.f8923c;
+            this.f8904c = uri;
+            AssetFileDescriptor openAssetFileDescriptor = this.f8902a.openAssetFileDescriptor(uri, com.anythink.expressad.foundation.d.d.bv);
+            this.f8905d = openAssetFileDescriptor;
             if (openAssetFileDescriptor == null) {
-                throw new FileNotFoundException("Could not open file descriptor for: " + this.f8118c);
+                throw new FileNotFoundException("Could not open file descriptor for: " + this.f8904c);
             }
-            this.f8120e = new FileInputStream(this.f8119d.getFileDescriptor());
-            long startOffset = this.f8119d.getStartOffset();
-            long skip = this.f8120e.skip(kVar.f8140f + startOffset) - startOffset;
-            if (skip != kVar.f8140f) {
+            this.f8906e = new FileInputStream(this.f8905d.getFileDescriptor());
+            long startOffset = this.f8905d.getStartOffset();
+            long skip = this.f8906e.skip(kVar.f8926f + startOffset) - startOffset;
+            if (skip != kVar.f8926f) {
                 throw new EOFException();
             }
-            long j6 = kVar.f8141g;
+            long j6 = kVar.f8927g;
             long j9 = -1;
             if (j6 != -1) {
-                this.f8121f = j6;
+                this.f8907f = j6;
             } else {
-                long length = this.f8119d.getLength();
+                long length = this.f8905d.getLength();
                 if (length == -1) {
-                    FileChannel channel = this.f8120e.getChannel();
+                    FileChannel channel = this.f8906e.getChannel();
                     long size = channel.size();
                     if (size != 0) {
                         j9 = size - channel.position();
                     }
-                    this.f8121f = j9;
+                    this.f8907f = j9;
                 } else {
-                    this.f8121f = length - skip;
+                    this.f8907f = length - skip;
                 }
             }
-            this.f8122g = true;
-            aa<? super e> aaVar = this.f8117b;
+            this.f8908g = true;
+            aa<? super e> aaVar = this.f8903b;
             if (aaVar != null) {
                 aaVar.b();
             }
-            return this.f8121f;
+            return this.f8907f;
         } catch (IOException e9) {
             throw new a(e9);
         }
@@ -90,17 +90,17 @@ public final class e implements h {
 
     @Override // com.anythink.basead.exoplayer.j.h
     public final void b() {
-        this.f8118c = null;
+        this.f8904c = null;
         try {
             try {
-                FileInputStream fileInputStream = this.f8120e;
+                FileInputStream fileInputStream = this.f8906e;
                 if (fileInputStream != null) {
                     fileInputStream.close();
                 }
-                this.f8120e = null;
+                this.f8906e = null;
                 try {
                     try {
-                        AssetFileDescriptor assetFileDescriptor = this.f8119d;
+                        AssetFileDescriptor assetFileDescriptor = this.f8905d;
                         if (assetFileDescriptor != null) {
                             assetFileDescriptor.close();
                         }
@@ -108,10 +108,10 @@ public final class e implements h {
                         throw new a(e9);
                     }
                 } finally {
-                    this.f8119d = null;
-                    if (this.f8122g) {
-                        this.f8122g = false;
-                        aa<? super e> aaVar = this.f8117b;
+                    this.f8905d = null;
+                    if (this.f8908g) {
+                        this.f8908g = false;
+                        aa<? super e> aaVar = this.f8903b;
                         if (aaVar != null) {
                             aaVar.c();
                         }
@@ -121,17 +121,17 @@ public final class e implements h {
                 throw new a(e10);
             }
         } catch (Throwable th) {
-            this.f8120e = null;
+            this.f8906e = null;
             try {
                 try {
-                    AssetFileDescriptor assetFileDescriptor2 = this.f8119d;
+                    AssetFileDescriptor assetFileDescriptor2 = this.f8905d;
                     if (assetFileDescriptor2 != null) {
                         assetFileDescriptor2.close();
                     }
-                    this.f8119d = null;
-                    if (this.f8122g) {
-                        this.f8122g = false;
-                        aa<? super e> aaVar2 = this.f8117b;
+                    this.f8905d = null;
+                    if (this.f8908g) {
+                        this.f8908g = false;
+                        aa<? super e> aaVar2 = this.f8903b;
                         if (aaVar2 != null) {
                             aaVar2.c();
                         }
@@ -141,10 +141,10 @@ public final class e implements h {
                     throw new a(e11);
                 }
             } finally {
-                this.f8119d = null;
-                if (this.f8122g) {
-                    this.f8122g = false;
-                    aa<? super e> aaVar3 = this.f8117b;
+                this.f8905d = null;
+                if (this.f8908g) {
+                    this.f8908g = false;
+                    aa<? super e> aaVar3 = this.f8903b;
                     if (aaVar3 != null) {
                         aaVar3.c();
                     }
@@ -154,38 +154,38 @@ public final class e implements h {
     }
 
     public e(Context context, aa<? super e> aaVar) {
-        this.f8116a = context.getContentResolver();
-        this.f8117b = aaVar;
+        this.f8902a = context.getContentResolver();
+        this.f8903b = aaVar;
     }
 
     @Override // com.anythink.basead.exoplayer.j.h
-    public final int a(byte[] bArr, int i, int i6) {
-        if (i6 == 0) {
+    public final int a(byte[] bArr, int i, int i4) {
+        if (i4 == 0) {
             return 0;
         }
-        long j6 = this.f8121f;
+        long j6 = this.f8907f;
         if (j6 == 0) {
             return -1;
         }
         if (j6 != -1) {
             try {
-                i6 = (int) Math.min(j6, i6);
+                i4 = (int) Math.min(j6, i4);
             } catch (IOException e9) {
                 throw new a(e9);
             }
         }
-        int read = this.f8120e.read(bArr, i, i6);
+        int read = this.f8906e.read(bArr, i, i4);
         if (read == -1) {
-            if (this.f8121f == -1) {
+            if (this.f8907f == -1) {
                 return -1;
             }
             throw new a(new EOFException());
         }
-        long j9 = this.f8121f;
+        long j9 = this.f8907f;
         if (j9 != -1) {
-            this.f8121f = j9 - read;
+            this.f8907f = j9 - read;
         }
-        aa<? super e> aaVar = this.f8117b;
+        aa<? super e> aaVar = this.f8903b;
         if (aaVar != null) {
             aaVar.a(read);
         }
@@ -194,6 +194,6 @@ public final class e implements h {
 
     @Override // com.anythink.basead.exoplayer.j.h
     public final Uri a() {
-        return this.f8118c;
+        return this.f8904c;
     }
 }

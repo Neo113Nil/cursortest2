@@ -29,44 +29,44 @@ import org.json.JSONObject;
 public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
 
     /* renamed from: c, reason: collision with root package name */
-    private WeakReference<Context> f17884c;
+    private WeakReference<Context> f18671c;
 
     /* renamed from: d, reason: collision with root package name */
-    private List<d> f17885d;
+    private List<d> f18672d;
 
     /* renamed from: e, reason: collision with root package name */
-    private String f17886e;
+    private String f18673e;
 
     /* renamed from: f, reason: collision with root package name */
-    private String f17887f;
+    private String f18674f;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f17888g;
+    private int f18675g;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f17889h;
+    private int f18676h;
 
     /* renamed from: j, reason: collision with root package name */
-    private a f17890j;
+    private a f18677j;
 
     /* renamed from: k, reason: collision with root package name */
-    private NativeAdvancedExpandDialog f17891k;
+    private NativeAdvancedExpandDialog f18678k;
 
     /* renamed from: b, reason: collision with root package name */
-    private String f17883b = "NativeAdvancedJSBridgeImpl";
+    private String f18670b = "NativeAdvancedJSBridgeImpl";
     private int i = 5;
 
     public NativeAdvancedJSBridgeImpl(Context context, String str, String str2) {
-        this.f17887f = str;
-        this.f17886e = str2;
-        this.f17884c = new WeakReference<>(context);
+        this.f18674f = str;
+        this.f18673e = str2;
+        this.f18671c = new WeakReference<>(context);
     }
 
     @Override // com.anythink.expressad.atsignalcommon.bridge.CommonBannerJSBridgeImp, com.anythink.expressad.atsignalcommon.bridge.IBannerJSBridge
     public void click(Object obj, String str) {
         try {
-            List<d> list = this.f17885d;
-            d dVar = (list == null || list.size() <= 0) ? null : this.f17885d.get(0);
+            List<d> list = this.f18672d;
+            d dVar = (list == null || list.size() <= 0) ? null : this.f18672d.get(0);
             if (TextUtils.isEmpty(str)) {
                 return;
             }
@@ -87,7 +87,7 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
             } catch (JSONException e9) {
                 e9.printStackTrace();
             }
-            a aVar = this.f17890j;
+            a aVar = this.f18677j;
             if (aVar != null) {
                 aVar.a(dVar);
             }
@@ -98,7 +98,7 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
     @Override // com.anythink.core.express.b.b
     public void close() {
         try {
-            a aVar = this.f17890j;
+            a aVar = this.f18677j;
             if (aVar != null) {
                 aVar.e();
             }
@@ -107,22 +107,22 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
     }
 
     @Override // com.anythink.core.express.b.b
-    public void expand(String str, boolean z3) {
+    public void expand(String str, boolean z6) {
         try {
             Bundle bundle = new Bundle();
             bundle.putString("url", str);
-            bundle.putBoolean("shouldUseCustomClose", z3);
-            WeakReference<Context> weakReference = this.f17884c;
+            bundle.putBoolean("shouldUseCustomClose", z6);
+            WeakReference<Context> weakReference = this.f18671c;
             if (weakReference == null || weakReference.get() == null) {
                 return;
             }
-            NativeAdvancedExpandDialog nativeAdvancedExpandDialog = this.f17891k;
+            NativeAdvancedExpandDialog nativeAdvancedExpandDialog = this.f18678k;
             if (nativeAdvancedExpandDialog == null || !nativeAdvancedExpandDialog.isShowing()) {
-                NativeAdvancedExpandDialog nativeAdvancedExpandDialog2 = new NativeAdvancedExpandDialog(this.f17884c.get(), bundle, this.f17890j);
-                this.f17891k = nativeAdvancedExpandDialog2;
-                nativeAdvancedExpandDialog2.setCampaignList(this.f17886e, this.f17885d);
-                this.f17891k.show();
-                a aVar = this.f17890j;
+                NativeAdvancedExpandDialog nativeAdvancedExpandDialog2 = new NativeAdvancedExpandDialog(this.f18671c.get(), bundle, this.f18677j);
+                this.f18678k = nativeAdvancedExpandDialog2;
+                nativeAdvancedExpandDialog2.setCampaignList(this.f18673e, this.f18672d);
+                this.f18678k.show();
+                a aVar = this.f18677j;
                 if (aVar != null) {
                     aVar.a(true);
                 }
@@ -146,15 +146,15 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
 
     @Override // com.anythink.expressad.atsignalcommon.mraid.IMraidJSBridge
     public d getMraidCampaign() {
-        List<d> list = this.f17885d;
+        List<d> list = this.f18672d;
         if (list == null || list.isEmpty()) {
             return null;
         }
-        return this.f17885d.get(0);
+        return this.f18672d.get(0);
     }
 
     public List<d> getmCampaignList() {
-        return this.f17885d;
+        return this.f18672d;
     }
 
     @Override // com.anythink.expressad.atsignalcommon.bridge.CommonBannerJSBridgeImp, com.anythink.expressad.atsignalcommon.bridge.IBannerJSBridge
@@ -163,25 +163,25 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
             JSONObject jSONObject = new JSONObject();
             c cVar = new c(t.b().g());
             JSONObject jSONObject2 = new JSONObject();
-            jSONObject2.put("dev_close_state", this.f17888g);
+            jSONObject2.put("dev_close_state", this.f18675g);
             jSONObject2.put("customURLScheme", 1);
             jSONObject.put("sdkSetting", jSONObject2);
             jSONObject.put("device", cVar.a());
-            jSONObject.put("campaignList", d.b(this.f17885d));
+            jSONObject.put("campaignList", d.b(this.f18672d));
             b.a();
-            com.anythink.expressad.f.c d2 = b.d(com.anythink.expressad.foundation.b.a.c().f(), this.f17886e);
-            if (d2 == null) {
-                d2 = com.anythink.expressad.f.c.y();
+            com.anythink.expressad.f.c d9 = b.d(com.anythink.expressad.foundation.b.a.c().f(), this.f18673e);
+            if (d9 == null) {
+                d9 = com.anythink.expressad.f.c.y();
             }
-            if (!TextUtils.isEmpty(this.f17887f)) {
-                d2.e(this.f17887f);
+            if (!TextUtils.isEmpty(this.f18674f)) {
+                d9.e(this.f18674f);
             }
-            d2.a(this.f17886e);
-            d2.b(this.i);
-            d2.a(this.f17889h);
-            jSONObject.put("unitSetting", d2.s());
+            d9.a(this.f18673e);
+            d9.b(this.i);
+            d9.a(this.f18676h);
+            jSONObject.put("unitSetting", d9.s());
             jSONObject.put("appSetting", new JSONObject());
-            jSONObject.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.SDK_INFO, com.anythink.expressad.atsignalcommon.a.a.f17933a);
+            jSONObject.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.SDK_INFO, com.anythink.expressad.atsignalcommon.a.a.f18720a);
             jSONObject.toString();
             h.a().a(obj, Base64.encodeToString(jSONObject.toString().getBytes(), 2));
         } catch (Throwable unused) {
@@ -191,8 +191,8 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
     @Override // com.anythink.expressad.atsignalcommon.bridge.CommonBannerJSBridgeImp, com.anythink.expressad.atsignalcommon.bridge.IBannerJSBridge
     public void install(Object obj, String str) {
         try {
-            List<d> list = this.f17885d;
-            d dVar = (list == null || list.size() <= 0) ? null : this.f17885d.get(0);
+            List<d> list = this.f18672d;
+            d dVar = (list == null || list.size() <= 0) ? null : this.f18672d.get(0);
             if (TextUtils.isEmpty(str)) {
                 return;
             }
@@ -213,7 +213,7 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
             } catch (JSONException e9) {
                 e9.printStackTrace();
             }
-            a aVar = this.f17890j;
+            a aVar = this.f18677j;
             if (aVar != null) {
                 aVar.a(dVar);
             }
@@ -226,7 +226,7 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
         try {
             if (obj instanceof com.anythink.expressad.atsignalcommon.windvane.b) {
                 h.a();
-                com.anythink.core.express.d.a.a(((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a);
+                com.anythink.core.express.d.a.a(((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a);
             }
         } catch (Throwable unused) {
         }
@@ -234,7 +234,7 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
 
     @Override // com.anythink.core.express.b.b
     public void open(String str) {
-        a aVar = this.f17890j;
+        a aVar = this.f18677j;
         if (aVar != null) {
             aVar.a(str);
         }
@@ -244,7 +244,7 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
     public void readyStatus(Object obj, String str) {
         WindVaneWebView windVaneWebView;
         try {
-            if (!(obj instanceof com.anythink.expressad.atsignalcommon.windvane.b) || (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) == null) {
+            if (!(obj instanceof com.anythink.expressad.atsignalcommon.windvane.b) || (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) == null) {
                 return;
             }
             try {
@@ -258,8 +258,8 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
     }
 
     public void release() {
-        if (this.f17890j != null) {
-            this.f17890j = null;
+        if (this.f18677j != null) {
+            this.f18677j = null;
         }
     }
 
@@ -282,19 +282,19 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
                 sb.append(n.k());
                 String a9 = v.a(optString, "&tun=", sb.toString());
                 int optInt2 = jSONObject.optInt("report");
-                boolean z3 = true;
+                boolean z6 = true;
                 if (optInt2 == 0) {
-                    Context g4 = t.b().g();
-                    List<d> list = this.f17885d;
+                    Context g9 = t.b().g();
+                    List<d> list = this.f18672d;
                     d dVar = list != null ? list.get(0) : null;
                     if (optInt == 0) {
-                        z3 = false;
+                        z6 = false;
                     }
-                    com.anythink.expressad.b.a.a(g4, dVar, "", a9, z3);
+                    com.anythink.expressad.b.a.a(g9, dVar, "", a9, z6);
                 } else {
-                    Context g9 = t.b().g();
-                    List<d> list2 = this.f17885d;
-                    com.anythink.expressad.b.a.a(g9, list2 != null ? list2.get(0) : null, "", a9, false, optInt != 0, optInt2);
+                    Context g10 = t.b().g();
+                    List<d> list2 = this.f18672d;
+                    com.anythink.expressad.b.a.a(g10, list2 != null ? list2.get(0) : null, "", a9, false, optInt != 0, optInt2);
                 }
             }
             h.a().a(obj, CommonJSBridgeImpUtils.codeToJsonString(0));
@@ -309,7 +309,7 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
                 return;
             }
             new JSONObject(str).getInt(com.anythink.expressad.f.a.b.dl);
-            a aVar = this.f17890j;
+            a aVar = this.f18677j;
             if (aVar != null) {
                 aVar.c();
             }
@@ -328,9 +328,9 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
             ArrayList arrayList = new ArrayList();
             for (int i = 0; i < jSONArray.length(); i++) {
                 String string = jSONArray.getString(i);
-                for (d dVar : this.f17885d) {
+                for (d dVar : this.f18672d) {
                     if (dVar.bh().equals(string)) {
-                        f.a(this.f17886e, dVar, f.f19125g);
+                        f.a(this.f18673e, dVar, f.f19912g);
                         arrayList.add(string);
                     }
                 }
@@ -340,11 +340,11 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
     }
 
     public void setAllowSkip(int i) {
-        this.f17889h = i;
+        this.f18676h = i;
     }
 
     public void setCampaignList(List<d> list) {
-        this.f17885d = list;
+        this.f18672d = list;
     }
 
     public void setCountdownS(int i) {
@@ -352,12 +352,12 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
     }
 
     public void setDevCloseBtnStatus(int i) {
-        this.f17888g = i;
+        this.f18675g = i;
     }
 
     public void setNativeAdvancedBridgeListener(a aVar) {
         if (aVar != null) {
-            this.f17890j = aVar;
+            this.f18677j = aVar;
         }
     }
 
@@ -367,8 +367,8 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
             if (TextUtils.isEmpty(str)) {
                 return;
             }
-            int optInt = new JSONObject(str).optInt(com.anythink.core.express.b.a.f17526b);
-            a aVar = this.f17890j;
+            int optInt = new JSONObject(str).optInt(com.anythink.core.express.b.a.f18313b);
+            a aVar = this.f18677j;
             if (aVar != null) {
                 aVar.a(optInt);
             }
@@ -378,9 +378,9 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
 
     @Override // com.anythink.expressad.atsignalcommon.bridge.CommonBannerJSBridgeImp, com.anythink.expressad.atsignalcommon.bridge.IBannerJSBridge
     public void triggerCloseBtn(Object obj, String str) {
-        if (this.f17890j != null) {
+        if (this.f18677j != null) {
             NativeAdvancedJsUtils.callbackSuccess(obj);
-            this.f17890j.a();
+            this.f18677j.a();
         }
     }
 
@@ -390,15 +390,15 @@ public class NativeAdvancedJSBridgeImpl extends CommonBannerJSBridgeImp {
     }
 
     public void updateContext(Context context) {
-        this.f17884c = new WeakReference<>(context);
+        this.f18671c = new WeakReference<>(context);
     }
 
     @Override // com.anythink.core.express.b.b
-    public void useCustomClose(boolean z3) {
+    public void useCustomClose(boolean z6) {
         try {
-            if (this.f17889h == -1) {
-                int i = z3 ? 2 : 1;
-                a aVar = this.f17890j;
+            if (this.f18676h == -1) {
+                int i = z6 ? 2 : 1;
+                a aVar = this.f18677j;
                 if (aVar != null) {
                     aVar.a(i);
                 }

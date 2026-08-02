@@ -8,15 +8,15 @@ import java.util.concurrent.Executor;
 public final class j implements Executor {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final j f3162n;
+    public static final j f3279n;
 
     /* renamed from: u, reason: collision with root package name */
-    public static final /* synthetic */ j[] f3163u;
+    public static final /* synthetic */ j[] f3280u;
 
     static {
         j jVar = new j("INSTANCE", 0);
-        f3162n = jVar;
-        f3163u = new j[]{jVar};
+        f3279n = jVar;
+        f3280u = new j[]{jVar};
     }
 
     public static j valueOf(String str) {
@@ -24,7 +24,7 @@ public final class j implements Executor {
     }
 
     public static j[] values() {
-        return (j[]) f3163u.clone();
+        return (j[]) f3280u.clone();
     }
 
     @Override // java.util.concurrent.Executor

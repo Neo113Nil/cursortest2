@@ -1,36 +1,36 @@
 package com.google.android.gms.internal.ads;
 
-import P2.InterfaceC0372b;
-import P2.InterfaceC0373c;
+import R2.InterfaceC0376b;
+import R2.InterfaceC0377c;
 import android.content.Context;
 import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Looper;
-import p2.AbstractC4827b;
+import r2.AbstractC4897b;
 
 /* loaded from: classes2.dex */
-public final class W8 extends AbstractC4827b {
+public final class W8 extends AbstractC4897b {
 
     /* renamed from: W, reason: collision with root package name */
-    public final /* synthetic */ int f28321W;
+    public final /* synthetic */ int f29119W;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public /* synthetic */ W8(Context context, Looper looper, int i, InterfaceC0372b interfaceC0372b, InterfaceC0373c interfaceC0373c) {
-        super(context, looper, i, interfaceC0372b, interfaceC0373c);
-        this.f28321W = 1;
+    public /* synthetic */ W8(Context context, Looper looper, int i, InterfaceC0376b interfaceC0376b, InterfaceC0377c interfaceC0377c) {
+        super(context, looper, i, interfaceC0376b, interfaceC0377c);
+        this.f29119W = 1;
     }
 
     public boolean A() {
-        M2.d[] k9 = k();
-        if (((Boolean) q2.r.f40207e.f40210c.a(AbstractC3569ma.f32409x2)).booleanValue()) {
-            M2.d dVar = k2.x.f38623c;
-            int length = k9 != null ? k9.length : 0;
+        O2.d[] j6 = j();
+        if (((Boolean) s2.r.f40506e.f40509c.a(AbstractC3592ma.f33188x2)).booleanValue()) {
+            O2.d dVar = m2.x.f39412c;
+            int length = j6 != null ? j6.length : 0;
             int i = 0;
             while (true) {
                 if (i >= length) {
                     break;
                 }
-                if (!P2.w.l(k9[i], dVar)) {
+                if (!R2.w.l(j6[i], dVar)) {
                     i++;
                 } else if (i >= 0) {
                     return true;
@@ -40,53 +40,53 @@ public final class W8 extends AbstractC4827b {
         return false;
     }
 
-    @Override // P2.AbstractC0376f, N2.c
-    public int j() {
-        switch (this.f28321W) {
+    @Override // R2.AbstractC0380f, P2.c
+    public int i() {
+        switch (this.f29119W) {
             case 2:
                 return 254730000;
             default:
-                return super.j();
+                return super.i();
         }
     }
 
-    @Override // P2.AbstractC0376f
+    @Override // R2.AbstractC0380f
     public final IInterface p(IBinder iBinder) {
-        switch (this.f28321W) {
+        switch (this.f29119W) {
             case 0:
                 if (iBinder == null) {
                     return null;
                 }
                 IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.ads.internal.cache.ICacheService");
-                return queryLocalInterface instanceof Y8 ? (Y8) queryLocalInterface : new Y8(iBinder, "com.google.android.gms.ads.internal.cache.ICacheService", 2);
+                return queryLocalInterface instanceof Y8 ? (Y8) queryLocalInterface : new Y8(iBinder, "com.google.android.gms.ads.internal.cache.ICacheService", 1);
             case 1:
                 if (iBinder == null) {
                     return null;
                 }
                 IInterface queryLocalInterface2 = iBinder.queryLocalInterface("com.google.android.gms.ads.internal.httpcache.IHttpAssetsCacheService");
-                return queryLocalInterface2 instanceof C4056vc ? (C4056vc) queryLocalInterface2 : new C4056vc(iBinder, "com.google.android.gms.ads.internal.httpcache.IHttpAssetsCacheService", 2);
+                return queryLocalInterface2 instanceof C4079vc ? (C4079vc) queryLocalInterface2 : new C4079vc(iBinder, "com.google.android.gms.ads.internal.httpcache.IHttpAssetsCacheService", 1);
             default:
                 if (iBinder == null) {
                     return null;
                 }
                 IInterface queryLocalInterface3 = iBinder.queryLocalInterface("com.google.android.gms.ads.internal.request.IAdRequestService");
-                return queryLocalInterface3 instanceof InterfaceC2637Ke ? (InterfaceC2637Ke) queryLocalInterface3 : new C2620Je(iBinder, "com.google.android.gms.ads.internal.request.IAdRequestService", 2);
+                return queryLocalInterface3 instanceof InterfaceC2657Ke ? (InterfaceC2657Ke) queryLocalInterface3 : new C2640Je(iBinder, "com.google.android.gms.ads.internal.request.IAdRequestService", 1);
         }
     }
 
-    @Override // P2.AbstractC0376f
-    public M2.d[] r() {
-        switch (this.f28321W) {
+    @Override // R2.AbstractC0380f
+    public O2.d[] r() {
+        switch (this.f29119W) {
             case 0:
-                return k2.x.f38624d;
+                return m2.x.f39413d;
             default:
                 return super.r();
         }
     }
 
-    @Override // P2.AbstractC0376f
+    @Override // R2.AbstractC0380f
     public final String v() {
-        switch (this.f28321W) {
+        switch (this.f29119W) {
             case 0:
                 return "com.google.android.gms.ads.internal.cache.ICacheService";
             case 1:
@@ -96,9 +96,9 @@ public final class W8 extends AbstractC4827b {
         }
     }
 
-    @Override // P2.AbstractC0376f
+    @Override // R2.AbstractC0380f
     public final String w() {
-        switch (this.f28321W) {
+        switch (this.f29119W) {
             case 0:
                 return "com.google.android.gms.ads.service.CACHE";
             case 1:
@@ -112,17 +112,17 @@ public final class W8 extends AbstractC4827b {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public W8(Context context, Looper looper, InterfaceC0372b interfaceC0372b, InterfaceC0373c interfaceC0373c, int i) {
-        super(r15 == null ? context : r15, looper, 123, interfaceC0372b, interfaceC0373c);
-        this.f28321W = i;
+    public W8(Context context, Looper looper, InterfaceC0376b interfaceC0376b, InterfaceC0377c interfaceC0377c, int i) {
+        super(r15 == null ? context : r15, looper, 123, interfaceC0376b, interfaceC0377c);
+        this.f29119W = i;
         switch (i) {
             case 2:
-                int i6 = AbstractC2837We.f28362a;
+                int i4 = AbstractC2860We.f29161a;
                 Context applicationContext = context.getApplicationContext();
-                super(applicationContext != null ? applicationContext : context, looper, 8, interfaceC0372b, interfaceC0373c);
+                super(applicationContext != null ? applicationContext : context, looper, 8, interfaceC0376b, interfaceC0377c);
                 break;
             default:
-                int i9 = AbstractC2837We.f28362a;
+                int i6 = AbstractC2860We.f29161a;
                 Context applicationContext2 = context.getApplicationContext();
                 break;
         }

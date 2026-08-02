@@ -19,25 +19,25 @@ public final class N0 {
     public static String[] A0A = {"jjDsG8QlYrxY", "", "TMhFK0S9G1", "6qW7u5SP6R0wlmhQUiBuXDFp8yf", "n7Dasyj9dq5sG0xOL43e0c5rVQV9l70l", "dOqhBdKnx9bW", "a7CXWDqETze4gqUmjqRBhcRjVGu0d2y8", "nE3PHSl6bqsIePbBJ"};
     public static final String A0B;
     public Application A02;
-    public InterfaceC1091Ms A04;
+    public InterfaceC1111Ms A04;
     public UserReturnTracker$UserReturnListener A05;
     public final VA A08;
     public long A01 = 0;
     public long A00 = 0;
     public String A06 = null;
-    public EnumC1089Mq A03 = null;
+    public EnumC1109Mq A03 = null;
     public boolean A07 = false;
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A09, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 17);
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A09, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 17);
         }
         return new String(copyOfRange);
     }
 
     public static void A03() {
-        A09 = new byte[]{104, 83, 92, 95, 81, 88, 29, 73, 82, 29, 113, 82, 90, 29, 104, 78, 88, 79, 29, 111, 88, 73, 72, 79, 83, 29, 74, 85, 88, 83, 29, 73, 82, 86, 88, 83, 29, 84, 78, 29, 83, 72, 81, 81, 19, 2, 1, 3, 11, c.f16318c, 20, 9, 13, 5, 18, 27, 31, 8, 27, 33, 10, 23, 19, 27, 60, 38, 39, 48, 60, 62, 54, 118, 97, 116, 107, 118, 112, 109, 106, 99};
+        A09 = new byte[]{104, 83, 92, 95, 81, 88, 29, 73, 82, 29, 113, 82, 90, 29, 104, 78, 88, 79, 29, 111, 88, 73, 72, 79, 83, 29, 74, 85, 88, 83, 29, 73, 82, 86, 88, 83, 29, 84, 78, 29, 83, 72, 81, 81, 19, 2, 1, 3, 11, c.f17105c, 20, 9, 13, 5, 18, 27, 31, 8, 27, 33, 10, 23, 19, 27, 60, 38, 39, 48, 60, 62, 54, 118, 97, 116, 107, 118, 112, 109, 106, 99};
     }
 
     static {
@@ -106,33 +106,33 @@ public final class N0 {
         return null;
     }
 
-    private void A04(String str, long j6, long j9, EnumC1089Mq enumC1089Mq) {
+    private void A04(String str, long j6, long j9, EnumC1109Mq enumC1109Mq) {
         HashMap hashMap = new HashMap();
         hashMap.put(A02(54, 10, 111), Long.toString(j6));
         hashMap.put(A02(45, 9, 113), Long.toString(j9));
-        if (enumC1089Mq != null) {
-            hashMap.put(A02(64, 7, 66), enumC1089Mq.name());
+        if (enumC1109Mq != null) {
+            hashMap.put(A02(64, 7, 66), enumC1109Mq.name());
         }
         this.A08.AC9(str, hashMap);
     }
 
     public final void A05() {
         this.A00 = System.currentTimeMillis();
-        if (this.A00 - this.A01 < a.f7883f && this.A04 != null) {
-            InterfaceC1091Ms interfaceC1091Ms = this.A04;
+        if (this.A00 - this.A01 < a.f8669f && this.A04 != null) {
+            InterfaceC1111Ms interfaceC1111Ms = this.A04;
             if (A0A[2].length() != 10) {
                 throw new RuntimeException();
             }
             A0A[1] = "";
-            interfaceC1091Ms.AFa();
+            interfaceC1111Ms.AFa();
         }
         if (this.A06 != null) {
             A04(this.A06, this.A01, this.A00, this.A03);
         } else {
             Application application = this.A02;
             String A02 = A02(0, 45, 44);
-            if (application != null && (this.A02.getBaseContext() instanceof C1840gi)) {
-                ((C1840gi) this.A02.getBaseContext()).A08().ABC(A02(71, 9, 21), AbstractC1252Td.A22, new C1253Te(A02));
+            if (application != null && (this.A02.getBaseContext() instanceof C1860gi)) {
+                ((C1860gi) this.A02.getBaseContext()).A08().ABC(A02(71, 9, 21), AbstractC1272Td.A22, new C1273Te(A02));
             }
             Log.w(A0B, A02);
         }
@@ -142,19 +142,19 @@ public final class N0 {
         }
     }
 
-    public final void A06(EnumC1089Mq enumC1089Mq) {
-        this.A03 = enumC1089Mq;
+    public final void A06(EnumC1109Mq enumC1109Mq) {
+        this.A03 = enumC1109Mq;
     }
 
-    public final void A07(InterfaceC1091Ms interfaceC1091Ms) {
-        this.A04 = interfaceC1091Ms;
+    public final void A07(InterfaceC1111Ms interfaceC1111Ms) {
+        this.A04 = interfaceC1111Ms;
     }
 
     public final void A08(String str) {
         this.A06 = str;
         this.A01 = System.currentTimeMillis();
         if (this.A05 == null || this.A02 == null || this.A07) {
-            A04(str, -1L, -1L, EnumC1089Mq.A05);
+            A04(str, -1L, -1L, EnumC1109Mq.A05);
         } else {
             this.A07 = true;
             this.A02.registerActivityLifecycleCallbacks(this.A05);

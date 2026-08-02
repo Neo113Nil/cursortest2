@@ -48,7 +48,7 @@ public final class a {
         return i == 200 || i == 202 || i == 304 || i == 201;
     }
 
-    public /* synthetic */ a(int i, String str, Throwable th, Integer num, Integer num2, int i6, e eVar) {
-        this(i, str, (i6 & 4) != 0 ? null : th, (i6 & 8) != 0 ? null : num, (i6 & 16) != 0 ? null : num2);
+    public /* synthetic */ a(int i, String str, Throwable th, Integer num, Integer num2, int i4, e eVar) {
+        this(i, str, (i4 & 4) != 0 ? null : th, (i4 & 8) != 0 ? null : num, (i4 & 16) != 0 ? null : num2);
     }
 }

@@ -6,134 +6,134 @@ import com.anythink.basead.exoplayer.e.m;
 final class w {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final int f7836a = 1000;
+    private static final int f8622a = 1000;
 
     /* renamed from: j, reason: collision with root package name */
-    private int f7844j;
+    private int f8630j;
 
     /* renamed from: k, reason: collision with root package name */
-    private int f7845k;
+    private int f8631k;
 
     /* renamed from: l, reason: collision with root package name */
-    private int f7846l;
+    private int f8632l;
 
     /* renamed from: m, reason: collision with root package name */
-    private int f7847m;
+    private int f8633m;
 
     /* renamed from: r, reason: collision with root package name */
-    private com.anythink.basead.exoplayer.m f7852r;
+    private com.anythink.basead.exoplayer.m f8638r;
 
     /* renamed from: s, reason: collision with root package name */
-    private int f7853s;
+    private int f8639s;
 
     /* renamed from: b, reason: collision with root package name */
-    private int f7837b = 1000;
+    private int f8623b = 1000;
 
     /* renamed from: c, reason: collision with root package name */
-    private int[] f7838c = new int[1000];
+    private int[] f8624c = new int[1000];
 
     /* renamed from: d, reason: collision with root package name */
-    private long[] f7839d = new long[1000];
+    private long[] f8625d = new long[1000];
 
     /* renamed from: g, reason: collision with root package name */
-    private long[] f7842g = new long[1000];
+    private long[] f8628g = new long[1000];
 
     /* renamed from: f, reason: collision with root package name */
-    private int[] f7841f = new int[1000];
+    private int[] f8627f = new int[1000];
 
     /* renamed from: e, reason: collision with root package name */
-    private int[] f7840e = new int[1000];
+    private int[] f8626e = new int[1000];
 
     /* renamed from: h, reason: collision with root package name */
-    private m.a[] f7843h = new m.a[1000];
+    private m.a[] f8629h = new m.a[1000];
     private com.anythink.basead.exoplayer.m[] i = new com.anythink.basead.exoplayer.m[1000];
 
     /* renamed from: n, reason: collision with root package name */
-    private long f7848n = Long.MIN_VALUE;
+    private long f8634n = Long.MIN_VALUE;
 
     /* renamed from: o, reason: collision with root package name */
-    private long f7849o = Long.MIN_VALUE;
+    private long f8635o = Long.MIN_VALUE;
 
     /* renamed from: q, reason: collision with root package name */
-    private boolean f7851q = true;
+    private boolean f8637q = true;
 
     /* renamed from: p, reason: collision with root package name */
-    private boolean f7850p = true;
+    private boolean f8636p = true;
 
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public int f7854a;
+        public int f8640a;
 
         /* renamed from: b, reason: collision with root package name */
-        public long f7855b;
+        public long f8641b;
 
         /* renamed from: c, reason: collision with root package name */
-        public m.a f7856c;
+        public m.a f8642c;
     }
 
     public final void a() {
-        this.f7844j = 0;
-        this.f7845k = 0;
-        this.f7846l = 0;
-        this.f7847m = 0;
-        this.f7850p = true;
-        this.f7848n = Long.MIN_VALUE;
-        this.f7849o = Long.MIN_VALUE;
+        this.f8630j = 0;
+        this.f8631k = 0;
+        this.f8632l = 0;
+        this.f8633m = 0;
+        this.f8636p = true;
+        this.f8634n = Long.MIN_VALUE;
+        this.f8635o = Long.MIN_VALUE;
     }
 
     public final int b() {
-        return this.f7845k + this.f7844j;
+        return this.f8631k + this.f8630j;
     }
 
     public final int c() {
-        return this.f7845k;
+        return this.f8631k;
     }
 
     public final int d() {
-        return this.f7845k + this.f7847m;
+        return this.f8631k + this.f8633m;
     }
 
     public final int e() {
-        return f() ? this.f7838c[f(this.f7847m)] : this.f7853s;
+        return f() ? this.f8624c[f(this.f8633m)] : this.f8639s;
     }
 
     public final synchronized boolean f() {
-        return this.f7847m != this.f7844j;
+        return this.f8633m != this.f8630j;
     }
 
     public final synchronized com.anythink.basead.exoplayer.m g() {
-        if (this.f7851q) {
+        if (this.f8637q) {
             return null;
         }
-        return this.f7852r;
+        return this.f8638r;
     }
 
     public final synchronized long h() {
-        return this.f7849o;
+        return this.f8635o;
     }
 
     public final synchronized long i() {
-        if (this.f7844j == 0) {
+        if (this.f8630j == 0) {
             return Long.MIN_VALUE;
         }
-        return this.f7842g[this.f7846l];
+        return this.f8628g[this.f8632l];
     }
 
     public final synchronized void j() {
-        this.f7847m = 0;
+        this.f8633m = 0;
     }
 
     public final synchronized int k() {
         int i;
-        int i6 = this.f7844j;
-        i = i6 - this.f7847m;
-        this.f7847m = i6;
+        int i4 = this.f8630j;
+        i = i4 - this.f8633m;
+        this.f8633m = i4;
         return i;
     }
 
     public final synchronized long l() {
-        int i = this.f7847m;
+        int i = this.f8633m;
         if (i == 0) {
             return -1L;
         }
@@ -141,7 +141,7 @@ final class w {
     }
 
     public final synchronized long m() {
-        int i = this.f7844j;
+        int i = this.f8630j;
         if (i == 0) {
             return -1L;
         }
@@ -149,52 +149,52 @@ final class w {
     }
 
     private long d(int i) {
-        this.f7848n = Math.max(this.f7848n, e(i));
-        int i6 = this.f7844j - i;
-        this.f7844j = i6;
-        this.f7845k += i;
-        int i9 = this.f7846l + i;
-        this.f7846l = i9;
-        int i10 = this.f7837b;
-        if (i9 >= i10) {
-            this.f7846l = i9 - i10;
+        this.f8634n = Math.max(this.f8634n, e(i));
+        int i4 = this.f8630j - i;
+        this.f8630j = i4;
+        this.f8631k += i;
+        int i6 = this.f8632l + i;
+        this.f8632l = i6;
+        int i9 = this.f8623b;
+        if (i6 >= i9) {
+            this.f8632l = i6 - i9;
         }
-        int i11 = this.f7847m - i;
-        this.f7847m = i11;
-        if (i11 < 0) {
-            this.f7847m = 0;
+        int i10 = this.f8633m - i;
+        this.f8633m = i10;
+        if (i10 < 0) {
+            this.f8633m = 0;
         }
-        if (i6 != 0) {
-            return this.f7839d[this.f7846l];
+        if (i4 != 0) {
+            return this.f8625d[this.f8632l];
         }
-        int i12 = this.f7846l;
-        if (i12 != 0) {
-            i10 = i12;
+        int i11 = this.f8632l;
+        if (i11 != 0) {
+            i9 = i11;
         }
-        return this.f7839d[i10 - 1] + this.f7840e[r2];
+        return this.f8625d[i9 - 1] + this.f8626e[r2];
     }
 
     private int f(int i) {
-        int i6 = this.f7846l + i;
-        int i9 = this.f7837b;
-        return i6 < i9 ? i6 : i6 - i9;
+        int i4 = this.f8632l + i;
+        int i6 = this.f8623b;
+        return i4 < i6 ? i4 : i4 - i6;
     }
 
     public final void b(int i) {
-        this.f7853s = i;
+        this.f8639s = i;
     }
 
     public final synchronized boolean c(int i) {
-        int i6 = this.f7845k;
-        if (i6 > i || i > this.f7844j + i6) {
+        int i4 = this.f8631k;
+        if (i4 > i || i > this.f8630j + i4) {
             return false;
         }
-        this.f7847m = i - i6;
+        this.f8633m = i - i4;
         return true;
     }
 
     private synchronized void b(long j6) {
-        this.f7849o = Math.max(this.f7849o, j6);
+        this.f8635o = Math.max(this.f8635o, j6);
     }
 
     private long e(int i) {
@@ -202,15 +202,15 @@ final class w {
         if (i == 0) {
             return Long.MIN_VALUE;
         }
-        int f3 = f(i - 1);
-        for (int i6 = 0; i6 < i; i6++) {
-            j6 = Math.max(j6, this.f7842g[f3]);
-            if ((this.f7841f[f3] & 1) != 0) {
+        int f2 = f(i - 1);
+        for (int i4 = 0; i4 < i; i4++) {
+            j6 = Math.max(j6, this.f8628g[f2]);
+            if ((this.f8627f[f2] & 1) != 0) {
                 break;
             }
-            f3--;
-            if (f3 == -1) {
-                f3 = this.f7837b - 1;
+            f2--;
+            if (f2 == -1) {
+                f2 = this.f8623b - 1;
             }
         }
         return j6;
@@ -218,59 +218,59 @@ final class w {
 
     public final long a(int i) {
         int b9 = b() - i;
-        com.anythink.basead.exoplayer.k.a.a(b9 >= 0 && b9 <= this.f7844j - this.f7847m);
-        int i6 = this.f7844j - b9;
-        this.f7844j = i6;
-        this.f7849o = Math.max(this.f7848n, e(i6));
-        int i9 = this.f7844j;
-        if (i9 == 0) {
+        com.anythink.basead.exoplayer.k.a.a(b9 >= 0 && b9 <= this.f8630j - this.f8633m);
+        int i4 = this.f8630j - b9;
+        this.f8630j = i4;
+        this.f8635o = Math.max(this.f8634n, e(i4));
+        int i6 = this.f8630j;
+        if (i6 == 0) {
             return 0L;
         }
-        return this.f7839d[f(i9 - 1)] + this.f7840e[r6];
+        return this.f8625d[f(i6 - 1)] + this.f8626e[r6];
     }
 
-    public final synchronized int a(com.anythink.basead.exoplayer.n nVar, com.anythink.basead.exoplayer.c.e eVar, boolean z3, boolean z6, com.anythink.basead.exoplayer.m mVar, a aVar) {
+    public final synchronized int a(com.anythink.basead.exoplayer.n nVar, com.anythink.basead.exoplayer.c.e eVar, boolean z6, boolean z9, com.anythink.basead.exoplayer.m mVar, a aVar) {
         if (!f()) {
-            if (z6) {
+            if (z9) {
                 eVar.a(4);
                 return -4;
             }
-            com.anythink.basead.exoplayer.m mVar2 = this.f7852r;
-            if (mVar2 == null || (!z3 && mVar2 == mVar)) {
+            com.anythink.basead.exoplayer.m mVar2 = this.f8638r;
+            if (mVar2 == null || (!z6 && mVar2 == mVar)) {
                 return -3;
             }
-            nVar.f8683a = mVar2;
+            nVar.f9469a = mVar2;
             return -5;
         }
-        int f3 = f(this.f7847m);
-        if (!z3 && this.i[f3] == mVar) {
+        int f2 = f(this.f8633m);
+        if (!z6 && this.i[f2] == mVar) {
             if (eVar.f()) {
                 return -3;
             }
-            eVar.f6743f = this.f7842g[f3];
-            eVar.a(this.f7841f[f3]);
-            aVar.f7854a = this.f7840e[f3];
-            aVar.f7855b = this.f7839d[f3];
-            aVar.f7856c = this.f7843h[f3];
-            this.f7847m++;
+            eVar.f7529f = this.f8628g[f2];
+            eVar.a(this.f8627f[f2]);
+            aVar.f8640a = this.f8626e[f2];
+            aVar.f8641b = this.f8625d[f2];
+            aVar.f8642c = this.f8629h[f2];
+            this.f8633m++;
             return -4;
         }
-        nVar.f8683a = this.i[f3];
+        nVar.f9469a = this.i[f2];
         return -5;
     }
 
-    public final synchronized int a(long j6, boolean z3) {
+    public final synchronized int a(long j6, boolean z6) {
         try {
             try {
-                int f3 = f(this.f7847m);
-                if (!f() || j6 < this.f7842g[f3] || (j6 > this.f7849o && !z3)) {
+                int f2 = f(this.f8633m);
+                if (!f() || j6 < this.f8628g[f2] || (j6 > this.f8635o && !z6)) {
                     return -1;
                 }
-                int a9 = a(f3, this.f7844j - this.f7847m, j6, true);
+                int a9 = a(f2, this.f8630j - this.f8633m, j6, true);
                 if (a9 == -1) {
                     return -1;
                 }
-                this.f7847m += a9;
+                this.f8633m += a9;
                 return a9;
             } catch (Throwable th) {
                 th = th;
@@ -282,27 +282,27 @@ final class w {
         }
     }
 
-    public final synchronized long a(long j6, boolean z3, boolean z6) {
+    public final synchronized long a(long j6, boolean z6, boolean z9) {
         Throwable th;
         try {
             try {
-                int i = this.f7844j;
+                int i = this.f8630j;
                 if (i != 0) {
-                    long[] jArr = this.f7842g;
-                    int i6 = this.f7846l;
-                    if (j6 >= jArr[i6]) {
-                        if (z6) {
+                    long[] jArr = this.f8628g;
+                    int i4 = this.f8632l;
+                    if (j6 >= jArr[i4]) {
+                        if (z9) {
                             try {
-                                int i9 = this.f7847m;
-                                if (i9 != i) {
-                                    i = i9 + 1;
+                                int i6 = this.f8633m;
+                                if (i6 != i) {
+                                    i = i6 + 1;
                                 }
                             } catch (Throwable th2) {
                                 th = th2;
                                 throw th;
                             }
                         }
-                        int a9 = a(i6, i, j6, z3);
+                        int a9 = a(i4, i, j6, z6);
                         if (a9 == -1) {
                             return -1L;
                         }
@@ -324,76 +324,76 @@ final class w {
 
     public final synchronized boolean a(com.anythink.basead.exoplayer.m mVar) {
         if (mVar == null) {
-            this.f7851q = true;
+            this.f8637q = true;
             return false;
         }
-        this.f7851q = false;
-        if (com.anythink.basead.exoplayer.k.af.a(mVar, this.f7852r)) {
+        this.f8637q = false;
+        if (com.anythink.basead.exoplayer.k.af.a(mVar, this.f8638r)) {
             return false;
         }
-        this.f7852r = mVar;
+        this.f8638r = mVar;
         return true;
     }
 
-    public final synchronized void a(long j6, int i, long j9, int i6, m.a aVar) {
+    public final synchronized void a(long j6, int i, long j9, int i4, m.a aVar) {
         try {
-            if (this.f7850p) {
+            if (this.f8636p) {
                 if ((i & 1) == 0) {
                     return;
                 } else {
-                    this.f7850p = false;
+                    this.f8636p = false;
                 }
             }
-            com.anythink.basead.exoplayer.k.a.b(!this.f7851q);
+            com.anythink.basead.exoplayer.k.a.b(!this.f8637q);
             b(j6);
-            int f3 = f(this.f7844j);
-            this.f7842g[f3] = j6;
-            long[] jArr = this.f7839d;
-            jArr[f3] = j9;
-            this.f7840e[f3] = i6;
-            this.f7841f[f3] = i;
-            this.f7843h[f3] = aVar;
-            this.i[f3] = this.f7852r;
-            this.f7838c[f3] = this.f7853s;
-            int i9 = this.f7844j + 1;
-            this.f7844j = i9;
-            int i10 = this.f7837b;
-            if (i9 == i10) {
-                int i11 = i10 + 1000;
-                int[] iArr = new int[i11];
-                long[] jArr2 = new long[i11];
-                long[] jArr3 = new long[i11];
-                int[] iArr2 = new int[i11];
-                int[] iArr3 = new int[i11];
-                m.a[] aVarArr = new m.a[i11];
-                com.anythink.basead.exoplayer.m[] mVarArr = new com.anythink.basead.exoplayer.m[i11];
-                int i12 = this.f7846l;
-                int i13 = i10 - i12;
-                System.arraycopy(jArr, i12, jArr2, 0, i13);
-                System.arraycopy(this.f7842g, this.f7846l, jArr3, 0, i13);
-                System.arraycopy(this.f7841f, this.f7846l, iArr2, 0, i13);
-                System.arraycopy(this.f7840e, this.f7846l, iArr3, 0, i13);
-                System.arraycopy(this.f7843h, this.f7846l, aVarArr, 0, i13);
-                System.arraycopy(this.i, this.f7846l, mVarArr, 0, i13);
-                System.arraycopy(this.f7838c, this.f7846l, iArr, 0, i13);
-                int i14 = this.f7846l;
-                System.arraycopy(this.f7839d, 0, jArr2, i13, i14);
-                System.arraycopy(this.f7842g, 0, jArr3, i13, i14);
-                System.arraycopy(this.f7841f, 0, iArr2, i13, i14);
-                System.arraycopy(this.f7840e, 0, iArr3, i13, i14);
-                System.arraycopy(this.f7843h, 0, aVarArr, i13, i14);
-                System.arraycopy(this.i, 0, mVarArr, i13, i14);
-                System.arraycopy(this.f7838c, 0, iArr, i13, i14);
-                this.f7839d = jArr2;
-                this.f7842g = jArr3;
-                this.f7841f = iArr2;
-                this.f7840e = iArr3;
-                this.f7843h = aVarArr;
+            int f2 = f(this.f8630j);
+            this.f8628g[f2] = j6;
+            long[] jArr = this.f8625d;
+            jArr[f2] = j9;
+            this.f8626e[f2] = i4;
+            this.f8627f[f2] = i;
+            this.f8629h[f2] = aVar;
+            this.i[f2] = this.f8638r;
+            this.f8624c[f2] = this.f8639s;
+            int i6 = this.f8630j + 1;
+            this.f8630j = i6;
+            int i9 = this.f8623b;
+            if (i6 == i9) {
+                int i10 = i9 + 1000;
+                int[] iArr = new int[i10];
+                long[] jArr2 = new long[i10];
+                long[] jArr3 = new long[i10];
+                int[] iArr2 = new int[i10];
+                int[] iArr3 = new int[i10];
+                m.a[] aVarArr = new m.a[i10];
+                com.anythink.basead.exoplayer.m[] mVarArr = new com.anythink.basead.exoplayer.m[i10];
+                int i11 = this.f8632l;
+                int i12 = i9 - i11;
+                System.arraycopy(jArr, i11, jArr2, 0, i12);
+                System.arraycopy(this.f8628g, this.f8632l, jArr3, 0, i12);
+                System.arraycopy(this.f8627f, this.f8632l, iArr2, 0, i12);
+                System.arraycopy(this.f8626e, this.f8632l, iArr3, 0, i12);
+                System.arraycopy(this.f8629h, this.f8632l, aVarArr, 0, i12);
+                System.arraycopy(this.i, this.f8632l, mVarArr, 0, i12);
+                System.arraycopy(this.f8624c, this.f8632l, iArr, 0, i12);
+                int i13 = this.f8632l;
+                System.arraycopy(this.f8625d, 0, jArr2, i12, i13);
+                System.arraycopy(this.f8628g, 0, jArr3, i12, i13);
+                System.arraycopy(this.f8627f, 0, iArr2, i12, i13);
+                System.arraycopy(this.f8626e, 0, iArr3, i12, i13);
+                System.arraycopy(this.f8629h, 0, aVarArr, i12, i13);
+                System.arraycopy(this.i, 0, mVarArr, i12, i13);
+                System.arraycopy(this.f8624c, 0, iArr, i12, i13);
+                this.f8625d = jArr2;
+                this.f8628g = jArr3;
+                this.f8627f = iArr2;
+                this.f8626e = iArr3;
+                this.f8629h = aVarArr;
                 this.i = mVarArr;
-                this.f7838c = iArr;
-                this.f7846l = 0;
-                this.f7844j = this.f7837b;
-                this.f7837b = i11;
+                this.f8624c = iArr;
+                this.f8632l = 0;
+                this.f8630j = this.f8623b;
+                this.f8623b = i10;
             }
         } catch (Throwable th) {
             throw th;
@@ -401,36 +401,36 @@ final class w {
     }
 
     public final synchronized boolean a(long j6) {
-        if (this.f7844j == 0) {
-            return j6 > this.f7848n;
+        if (this.f8630j == 0) {
+            return j6 > this.f8634n;
         }
-        if (Math.max(this.f7848n, e(this.f7847m)) >= j6) {
+        if (Math.max(this.f8634n, e(this.f8633m)) >= j6) {
             return false;
         }
-        int i = this.f7844j;
-        int f3 = f(i - 1);
-        while (i > this.f7847m && this.f7842g[f3] >= j6) {
+        int i = this.f8630j;
+        int f2 = f(i - 1);
+        while (i > this.f8633m && this.f8628g[f2] >= j6) {
             i--;
-            f3--;
-            if (f3 == -1) {
-                f3 = this.f7837b - 1;
+            f2--;
+            if (f2 == -1) {
+                f2 = this.f8623b - 1;
             }
         }
-        a(this.f7845k + i);
+        a(this.f8631k + i);
         return true;
     }
 
-    private int a(int i, int i6, long j6, boolean z3) {
-        int i9 = -1;
-        for (int i10 = 0; i10 < i6 && this.f7842g[i] <= j6; i10++) {
-            if (!z3 || (this.f7841f[i] & 1) != 0) {
-                i9 = i10;
+    private int a(int i, int i4, long j6, boolean z6) {
+        int i6 = -1;
+        for (int i9 = 0; i9 < i4 && this.f8628g[i] <= j6; i9++) {
+            if (!z6 || (this.f8627f[i] & 1) != 0) {
+                i6 = i9;
             }
             i++;
-            if (i == this.f7837b) {
+            if (i == this.f8623b) {
                 i = 0;
             }
         }
-        return i9;
+        return i6;
     }
 }

@@ -6,11 +6,11 @@ import android.util.SparseIntArray;
 public abstract class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final SparseIntArray f42020a;
+    public static final SparseIntArray f41991a;
 
     static {
         SparseIntArray sparseIntArray = new SparseIntArray();
-        f42020a = sparseIntArray;
+        f41991a = sparseIntArray;
         sparseIntArray.append(98, 64);
         sparseIntArray.append(75, 65);
         sparseIntArray.append(84, 8);
@@ -40,7 +40,7 @@ public abstract class d {
         sparseIntArray.append(70, 20);
         sparseIntArray.append(108, 21);
         sparseIntArray.append(111, 22);
-        sparseIntArray.append(com.anythink.expressad.video.module.a.a.f21756z, 23);
+        sparseIntArray.append(com.anythink.expressad.video.module.a.a.f22543z, 23);
         sparseIntArray.append(106, 24);
         sparseIntArray.append(110, 25);
         sparseIntArray.append(107, 26);

@@ -15,11 +15,11 @@ public final class k {
         kotlin.jvm.internal.h.e(operation, "operation");
         kotlin.jvm.internal.h.e(propertiesObject, "propertiesObject");
         Map<String, String> tags = propertiesObject.getTags();
-        LinkedHashMap V8 = tags != null ? t.V(tags) : null;
-        if (V8 == null) {
-            V8 = new LinkedHashMap();
+        LinkedHashMap z6 = tags != null ? t.z(tags) : null;
+        if (z6 == null) {
+            z6 = new LinkedHashMap();
         }
-        LinkedHashMap linkedHashMap = V8;
+        LinkedHashMap linkedHashMap = z6;
         linkedHashMap.put(operation.getKey(), operation.getValue());
         return new Q5.f(linkedHashMap, propertiesObject.getLanguage(), propertiesObject.getTimezoneId(), propertiesObject.getCountry(), propertiesObject.getLatitude(), propertiesObject.getLongitude());
     }
@@ -28,11 +28,11 @@ public final class k {
         kotlin.jvm.internal.h.e(operation, "operation");
         kotlin.jvm.internal.h.e(propertiesObject, "propertiesObject");
         Map<String, String> tags = propertiesObject.getTags();
-        LinkedHashMap V8 = tags != null ? t.V(tags) : null;
-        if (V8 == null) {
-            V8 = new LinkedHashMap();
+        LinkedHashMap z6 = tags != null ? t.z(tags) : null;
+        if (z6 == null) {
+            z6 = new LinkedHashMap();
         }
-        LinkedHashMap linkedHashMap = V8;
+        LinkedHashMap linkedHashMap = z6;
         linkedHashMap.put(operation.getKey(), null);
         return new Q5.f(linkedHashMap, propertiesObject.getLanguage(), propertiesObject.getTimezoneId(), propertiesObject.getCountry(), propertiesObject.getLatitude(), propertiesObject.getLongitude());
     }
@@ -45,9 +45,9 @@ public final class k {
         kotlin.jvm.internal.h.e(propertiesObject, "propertiesObject");
         String property = operation.getProperty();
         r2 = null;
-        Double d2 = null;
-        r2 = null;
         Double d9 = null;
+        r2 = null;
+        Double d10 = null;
         switch (property.hashCode()) {
             case -2076227591:
                 if (property.equals("timezone")) {
@@ -72,9 +72,9 @@ public final class k {
                     String country = propertiesObject.getCountry();
                     Object value3 = operation.getValue();
                     if (value3 != null && (obj = value3.toString()) != null) {
-                        d9 = Double.valueOf(Double.parseDouble(obj));
+                        d10 = Double.valueOf(Double.parseDouble(obj));
                     }
-                    return new Q5.f(tags3, language2, timezoneId, country, d9, propertiesObject.getLongitude());
+                    return new Q5.f(tags3, language2, timezoneId, country, d10, propertiesObject.getLongitude());
                 }
                 break;
             case 957831062:
@@ -95,9 +95,9 @@ public final class k {
                     Double latitude = propertiesObject.getLatitude();
                     Object value5 = operation.getValue();
                     if (value5 != null && (obj2 = value5.toString()) != null) {
-                        d2 = Double.valueOf(Double.parseDouble(obj2));
+                        d9 = Double.valueOf(Double.parseDouble(obj2));
                     }
-                    return new Q5.f(tags5, language4, timezoneId3, country2, latitude, d2);
+                    return new Q5.f(tags5, language4, timezoneId3, country2, latitude, d9);
                 }
                 break;
         }

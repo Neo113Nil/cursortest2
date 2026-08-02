@@ -7,35 +7,35 @@ import com.anythink.expressad.video.module.AnythinkContainerView;
 public final class o extends e {
 
     /* renamed from: n, reason: collision with root package name */
-    private Activity f21837n;
+    private Activity f22624n;
 
     /* renamed from: o, reason: collision with root package name */
-    private AnythinkContainerView f21838o;
+    private AnythinkContainerView f22625o;
 
     private o(Activity activity, AnythinkContainerView anythinkContainerView) {
-        this.f21837n = activity;
-        this.f21838o = anythinkContainerView;
+        this.f22624n = activity;
+        this.f22625o = anythinkContainerView;
     }
 
     @Override // com.anythink.expressad.video.signal.a.e, com.anythink.expressad.video.signal.g
     public final void a(int i, String str) {
         Activity activity;
         super.a(i, str);
-        int i6 = 1;
+        int i4 = 1;
         if (i != 1) {
-            if (i == 2 && (activity = this.f21837n) != null) {
+            if (i == 2 && (activity = this.f22624n) != null) {
                 activity.finish();
                 return;
             }
             return;
         }
-        if (this.f21838o != null) {
+        if (this.f22625o != null) {
             try {
-                i6 = Integer.valueOf(str).intValue();
+                i4 = Integer.valueOf(str).intValue();
             } catch (Throwable th) {
                 th.printStackTrace();
             }
-            this.f21838o.showVideoClickView(i6);
+            this.f22625o.showVideoClickView(i4);
         }
     }
 }

@@ -6,29 +6,29 @@ import java.util.concurrent.ExecutorService;
 public final class Oy {
 
     /* renamed from: a, reason: collision with root package name */
-    public final InterfaceC3135eN f26691a;
+    public final InterfaceC3158eN f27474a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final InterfaceC3135eN f26692b;
+    public final InterfaceC3158eN f27475b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final InterfaceC3135eN f26693c;
+    public final InterfaceC3158eN f27476c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final ExecutorService f26694d;
+    public final ExecutorService f27477d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final C3983uA f26695e;
+    public final C4006uA f27478e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final int f26696f;
+    public final int f27479f;
 
-    public Oy(InterfaceC3135eN interfaceC3135eN, InterfaceC3135eN interfaceC3135eN2, InterfaceC3135eN interfaceC3135eN3, C2949ay c2949ay, ExecutorService executorService, C3983uA c3983uA) {
-        this.f26691a = interfaceC3135eN;
-        this.f26692b = interfaceC3135eN2;
-        this.f26693c = interfaceC3135eN3;
-        this.f26694d = executorService;
-        this.f26695e = c3983uA;
-        this.f26696f = c2949ay.K();
+    public Oy(InterfaceC3158eN interfaceC3158eN, InterfaceC3158eN interfaceC3158eN2, InterfaceC3158eN interfaceC3158eN3, C2972ay c2972ay, ExecutorService executorService, C4006uA c4006uA) {
+        this.f27474a = interfaceC3158eN;
+        this.f27475b = interfaceC3158eN2;
+        this.f27476c = interfaceC3158eN3;
+        this.f27477d = executorService;
+        this.f27478e = c4006uA;
+        this.f27479f = c2972ay.K();
     }
 }

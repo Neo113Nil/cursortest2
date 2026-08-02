@@ -4,7 +4,7 @@ import android.view.View;
 
 /* loaded from: classes.dex */
 public interface ATSplashEyeAdListener {
-    void onAdDismiss(boolean z3, String str);
+    void onAdDismiss(boolean z6, String str);
 
     void onAnimationStart(View view);
 }

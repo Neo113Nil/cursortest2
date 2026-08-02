@@ -17,9 +17,9 @@ public class C3K extends IOException {
         super(str);
     }
 
-    public C3K(String str, Throwable th, boolean z3, int i) {
+    public C3K(String str, Throwable th, boolean z6, int i) {
         super(str, th);
-        this.A01 = z3;
+        this.A01 = z6;
         this.A00 = i;
     }
 

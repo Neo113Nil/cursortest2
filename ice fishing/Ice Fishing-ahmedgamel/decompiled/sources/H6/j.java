@@ -6,27 +6,27 @@ import c6.n;
 public final class j extends c6.f {
 
     /* renamed from: x, reason: collision with root package name */
-    public static final i f1246x;
+    public static final i f1271x;
 
     /* renamed from: v, reason: collision with root package name */
-    public final String f1247v;
+    public final String f1272v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final b f1248w;
+    public final b f1273w;
 
     static {
-        c6.d dVar = c6.d.f5578u;
-        n nVar = n.f5618u;
-        f1246x = new i(j.class);
+        c6.d dVar = c6.d.f5754u;
+        n nVar = n.f5794u;
+        f1271x = new i(j.class);
     }
 
     public j(String str, b bVar, y8.h hVar) {
-        super(f1246x, hVar);
+        super(f1271x, hVar);
         if (str == null) {
             throw new IllegalArgumentException("key == null");
         }
-        this.f1247v = str;
-        this.f1248w = bVar;
+        this.f1272v = str;
+        this.f1273w = bVar;
     }
 
     public final boolean equals(Object obj) {
@@ -37,31 +37,31 @@ public final class j extends c6.f {
             return false;
         }
         j jVar = (j) obj;
-        return a().equals(jVar.a()) && V2.a.i(this.f1247v, jVar.f1247v) && V2.a.i(this.f1248w, jVar.f1248w);
+        return a().equals(jVar.a()) && A8.b.i(this.f1272v, jVar.f1272v) && A8.b.i(this.f1273w, jVar.f1273w);
     }
 
     public final int hashCode() {
-        int i = this.f5587u;
+        int i = this.f5763u;
         if (i != 0) {
             return i;
         }
         int hashCode = a().hashCode() * 37;
-        String str = this.f1247v;
+        String str = this.f1272v;
         int hashCode2 = (hashCode + (str != null ? str.hashCode() : 0)) * 37;
-        b bVar = this.f1248w;
+        b bVar = this.f1273w;
         int hashCode3 = hashCode2 + (bVar != null ? bVar.hashCode() : 0);
-        this.f5587u = hashCode3;
+        this.f5763u = hashCode3;
         return hashCode3;
     }
 
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        String str = this.f1247v;
+        String str = this.f1272v;
         if (str != null) {
             sb.append(", key=");
-            sb.append(V2.a.t(str));
+            sb.append(A8.b.u(str));
         }
-        b bVar = this.f1248w;
+        b bVar = this.f1273w;
         if (bVar != null) {
             sb.append(", value=");
             sb.append(bVar);

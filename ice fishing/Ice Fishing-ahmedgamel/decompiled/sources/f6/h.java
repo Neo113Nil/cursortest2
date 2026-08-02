@@ -4,22 +4,22 @@ package f6;
 public final class h implements g {
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f37527a;
+    public final boolean f37489a;
 
-    public h(boolean z3) {
-        this.f37527a = z3;
+    public h(boolean z6) {
+        this.f37489a = z6;
     }
 
     @Override // f6.g
     public final String a() {
-        return String.valueOf(this.f37527a);
+        return String.valueOf(this.f37489a);
     }
 
     public final boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof g) && Boolean.valueOf(this.f37527a).equals(((g) obj).getValue());
+        return (obj instanceof g) && Boolean.valueOf(this.f37489a).equals(((g) obj).getValue());
     }
 
     @Override // f6.g
@@ -29,14 +29,14 @@ public final class h implements g {
 
     @Override // f6.g
     public final Object getValue() {
-        return Boolean.valueOf(this.f37527a);
+        return Boolean.valueOf(this.f37489a);
     }
 
     public final int hashCode() {
-        return Boolean.hashCode(this.f37527a);
+        return Boolean.hashCode(this.f37489a);
     }
 
     public final String toString() {
-        return "ValueBoolean{" + String.valueOf(this.f37527a) + "}";
+        return "ValueBoolean{" + String.valueOf(this.f37489a) + "}";
     }
 }

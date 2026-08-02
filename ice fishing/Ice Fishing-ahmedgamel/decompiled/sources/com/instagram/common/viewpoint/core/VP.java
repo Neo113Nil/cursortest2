@@ -6,7 +6,7 @@ public interface VP {
 
     void ACq();
 
-    void ADp(C1312Vm c1312Vm);
+    void ADp(C1332Vm c1332Vm);
 
     void AEl();
 }

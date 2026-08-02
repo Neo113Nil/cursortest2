@@ -1,21 +1,21 @@
 package com.google.android.gms.ads.mediation.customevent;
 
+import A2.a;
+import A2.c;
 import android.content.Context;
 import android.os.Bundle;
-import x2.InterfaceC5190d;
-import y2.InterfaceC5229a;
-import y2.InterfaceC5231c;
+import z2.InterfaceC5227d;
 
 @Deprecated
 /* loaded from: classes.dex */
-public interface CustomEventInterstitial extends InterfaceC5229a {
+public interface CustomEventInterstitial extends a {
     /* synthetic */ void onDestroy();
 
     /* synthetic */ void onPause();
 
     /* synthetic */ void onResume();
 
-    void requestInterstitialAd(Context context, InterfaceC5231c interfaceC5231c, String str, InterfaceC5190d interfaceC5190d, Bundle bundle);
+    void requestInterstitialAd(Context context, c cVar, String str, InterfaceC5227d interfaceC5227d, Bundle bundle);
 
     void showInterstitial();
 }

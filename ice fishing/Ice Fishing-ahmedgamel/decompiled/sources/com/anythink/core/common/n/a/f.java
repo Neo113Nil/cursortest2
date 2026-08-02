@@ -4,29 +4,29 @@ package com.anythink.core.common.n.a;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f14813a;
+    private final String f15599a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final int f14814b;
+    private final int f15600b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final long f14815c;
+    private final long f15601c;
 
     public f(String str, int i, long j6) {
-        this.f14813a = str;
-        this.f14814b = i;
-        this.f14815c = j6;
+        this.f15599a = str;
+        this.f15600b = i;
+        this.f15601c = j6;
     }
 
     public final String a() {
-        return this.f14813a;
+        return this.f15599a;
     }
 
     public final int b() {
-        return this.f14814b;
+        return this.f15600b;
     }
 
     public final long c() {
-        return this.f14815c;
+        return this.f15601c;
     }
 }

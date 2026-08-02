@@ -15,114 +15,114 @@ import android.widget.ImageView;
 public class AnyThinkImageView extends ImageView {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f21357a = "AnyThinkImageView";
+    private static final String f22144a = "AnyThinkImageView";
 
     /* renamed from: b, reason: collision with root package name */
-    private Xfermode f21358b;
+    private Xfermode f22145b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f21359c;
+    private int f22146c;
 
     /* renamed from: d, reason: collision with root package name */
-    private int f21360d;
+    private int f22147d;
 
     /* renamed from: e, reason: collision with root package name */
-    private int f21361e;
+    private int f22148e;
 
     /* renamed from: f, reason: collision with root package name */
-    private int f21362f;
+    private int f22149f;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f21363g;
+    private int f22150g;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f21364h;
+    private int f22151h;
     private int i;
 
     /* renamed from: j, reason: collision with root package name */
-    private int f21365j;
+    private int f22152j;
 
     /* renamed from: k, reason: collision with root package name */
-    private int f21366k;
+    private int f22153k;
 
     /* renamed from: l, reason: collision with root package name */
-    private float[] f21367l;
+    private float[] f22154l;
 
     /* renamed from: m, reason: collision with root package name */
-    private float[] f21368m;
+    private float[] f22155m;
 
     /* renamed from: n, reason: collision with root package name */
-    private RectF f21369n;
+    private RectF f22156n;
 
     /* renamed from: o, reason: collision with root package name */
-    private RectF f21370o;
+    private RectF f22157o;
 
     /* renamed from: p, reason: collision with root package name */
-    private boolean f21371p;
+    private boolean f22158p;
 
     /* renamed from: q, reason: collision with root package name */
-    private boolean f21372q;
+    private boolean f22159q;
 
     /* renamed from: r, reason: collision with root package name */
-    private Path f21373r;
+    private Path f22160r;
 
     /* renamed from: s, reason: collision with root package name */
-    private Paint f21374s;
+    private Paint f22161s;
 
     public AnyThinkImageView(Context context) {
         this(context, null);
     }
 
     private void a(Canvas canvas) {
-        a(canvas, this.f21365j, this.f21366k, this.f21370o, this.f21367l);
+        a(canvas, this.f22152j, this.f22153k, this.f22157o, this.f22154l);
     }
 
     private void b() {
         int i;
+        int i4;
         int i6;
-        int i9;
         try {
-            if (this.f21367l == null || this.f21368m == null) {
+            if (this.f22154l == null || this.f22155m == null) {
                 return;
             }
-            int i10 = 0;
+            int i9 = 0;
             while (true) {
                 i = 2;
-                if (i10 >= 2) {
+                if (i9 >= 2) {
                     break;
                 }
-                float[] fArr = this.f21367l;
-                int i11 = this.f21362f;
-                fArr[i10] = i11;
-                this.f21368m[i10] = i11 - (this.f21365j / 2.0f);
-                i10++;
+                float[] fArr = this.f22154l;
+                int i10 = this.f22149f;
+                fArr[i9] = i10;
+                this.f22155m[i9] = i10 - (this.f22152j / 2.0f);
+                i9++;
             }
             while (true) {
-                i6 = 4;
+                i4 = 4;
                 if (i >= 4) {
                     break;
                 }
-                float[] fArr2 = this.f21367l;
-                int i12 = this.f21363g;
-                fArr2[i] = i12;
-                this.f21368m[i] = i12 - (this.f21365j / 2.0f);
+                float[] fArr2 = this.f22154l;
+                int i11 = this.f22150g;
+                fArr2[i] = i11;
+                this.f22155m[i] = i11 - (this.f22152j / 2.0f);
                 i++;
             }
             while (true) {
-                if (i6 >= 6) {
+                if (i4 >= 6) {
                     break;
                 }
-                float[] fArr3 = this.f21367l;
-                int i13 = this.f21364h;
-                fArr3[i6] = i13;
-                this.f21368m[i6] = i13 - (this.f21365j / 2.0f);
-                i6++;
+                float[] fArr3 = this.f22154l;
+                int i12 = this.f22151h;
+                fArr3[i4] = i12;
+                this.f22155m[i4] = i12 - (this.f22152j / 2.0f);
+                i4++;
             }
-            for (i9 = 6; i9 < 8; i9++) {
-                float[] fArr4 = this.f21367l;
-                int i14 = this.i;
-                fArr4[i9] = i14;
-                this.f21368m[i9] = i14 - (this.f21365j / 2.0f);
+            for (i6 = 6; i6 < 8; i6++) {
+                float[] fArr4 = this.f22154l;
+                int i13 = this.i;
+                fArr4[i6] = i13;
+                this.f22155m[i6] = i13 - (this.f22152j / 2.0f);
             }
         } catch (Exception e9) {
             e9.printStackTrace();
@@ -130,17 +130,17 @@ public class AnyThinkImageView extends ImageView {
     }
 
     private void c() {
-        RectF rectF = this.f21370o;
+        RectF rectF = this.f22157o;
         if (rectF != null) {
-            int i = this.f21365j;
-            rectF.set(i / 2.0f, i / 2.0f, this.f21359c - (i / 2.0f), this.f21360d - (i / 2.0f));
+            int i = this.f22152j;
+            rectF.set(i / 2.0f, i / 2.0f, this.f22146c - (i / 2.0f), this.f22147d - (i / 2.0f));
         }
     }
 
     private void d() {
-        RectF rectF = this.f21369n;
+        RectF rectF = this.f22156n;
         if (rectF != null) {
-            rectF.set(0.0f, 0.0f, this.f21359c, this.f21360d);
+            rectF.set(0.0f, 0.0f, this.f22146c, this.f22147d);
         }
     }
 
@@ -150,32 +150,32 @@ public class AnyThinkImageView extends ImageView {
             return;
         }
         try {
-            canvas.saveLayer(this.f21369n, null, 31);
-            int i = this.f21359c;
-            int i6 = this.f21365j;
-            int i9 = this.f21360d;
-            canvas.scale(((i - (i6 * 2)) * 1.0f) / i, ((i9 - (i6 * 2)) * 1.0f) / i9, i / 2.0f, i9 / 2.0f);
+            canvas.saveLayer(this.f22156n, null, 31);
+            int i = this.f22146c;
+            int i4 = this.f22152j;
+            int i6 = this.f22147d;
+            canvas.scale(((i - (i4 * 2)) * 1.0f) / i, ((i6 - (i4 * 2)) * 1.0f) / i6, i / 2.0f, i6 / 2.0f);
             super.onDraw(canvas);
-            Paint paint = this.f21374s;
+            Paint paint = this.f22161s;
             if (paint != null) {
                 paint.reset();
-                this.f21374s.setAntiAlias(true);
-                this.f21374s.setStyle(Paint.Style.FILL);
-                this.f21374s.setXfermode(this.f21358b);
+                this.f22161s.setAntiAlias(true);
+                this.f22161s.setStyle(Paint.Style.FILL);
+                this.f22161s.setXfermode(this.f22145b);
             }
-            Path path = this.f21373r;
+            Path path = this.f22160r;
             if (path != null) {
                 path.reset();
-                this.f21373r.addRoundRect(this.f21369n, this.f21368m, Path.Direction.CCW);
+                this.f22160r.addRoundRect(this.f22156n, this.f22155m, Path.Direction.CCW);
             }
-            canvas.drawPath(this.f21373r, this.f21374s);
-            Paint paint2 = this.f21374s;
+            canvas.drawPath(this.f22160r, this.f22161s);
+            Paint paint2 = this.f22161s;
             if (paint2 != null) {
                 paint2.setXfermode(null);
             }
             canvas.restore();
-            if (this.f21371p) {
-                a(canvas, this.f21365j, this.f21366k, this.f21370o, this.f21367l);
+            if (this.f22158p) {
+                a(canvas, this.f22152j, this.f22153k, this.f22157o, this.f22154l);
             }
         } catch (Exception e9) {
             e9.getMessage();
@@ -183,121 +183,121 @@ public class AnyThinkImageView extends ImageView {
     }
 
     @Override // android.view.View
-    public void onSizeChanged(int i, int i6, int i9, int i10) {
+    public void onSizeChanged(int i, int i4, int i6, int i9) {
+        int i10;
         int i11;
         int i12;
-        int i13;
-        super.onSizeChanged(i, i6, i9, i10);
-        this.f21359c = i;
-        this.f21360d = i6;
-        int i14 = 0;
-        if (this.f21372q) {
+        super.onSizeChanged(i, i4, i6, i9);
+        this.f22146c = i;
+        this.f22147d = i4;
+        int i13 = 0;
+        if (this.f22159q) {
             try {
-                if (this.f21367l != null && this.f21368m != null) {
+                if (this.f22154l != null && this.f22155m != null) {
                     while (true) {
-                        i11 = 2;
-                        if (i14 >= 2) {
+                        i10 = 2;
+                        if (i13 >= 2) {
                             break;
                         }
-                        float[] fArr = this.f21367l;
-                        int i15 = this.f21362f;
-                        fArr[i14] = i15;
-                        this.f21368m[i14] = i15 - (this.f21365j / 2.0f);
-                        i14++;
+                        float[] fArr = this.f22154l;
+                        int i14 = this.f22149f;
+                        fArr[i13] = i14;
+                        this.f22155m[i13] = i14 - (this.f22152j / 2.0f);
+                        i13++;
                     }
                     while (true) {
-                        i12 = 4;
-                        if (i11 >= 4) {
+                        i11 = 4;
+                        if (i10 >= 4) {
                             break;
                         }
-                        float[] fArr2 = this.f21367l;
-                        int i16 = this.f21363g;
-                        fArr2[i11] = i16;
-                        this.f21368m[i11] = i16 - (this.f21365j / 2.0f);
+                        float[] fArr2 = this.f22154l;
+                        int i15 = this.f22150g;
+                        fArr2[i10] = i15;
+                        this.f22155m[i10] = i15 - (this.f22152j / 2.0f);
+                        i10++;
+                    }
+                    while (true) {
+                        if (i11 >= 6) {
+                            break;
+                        }
+                        float[] fArr3 = this.f22154l;
+                        int i16 = this.f22151h;
+                        fArr3[i11] = i16;
+                        this.f22155m[i11] = i16 - (this.f22152j / 2.0f);
                         i11++;
                     }
-                    while (true) {
-                        if (i12 >= 6) {
-                            break;
-                        }
-                        float[] fArr3 = this.f21367l;
-                        int i17 = this.f21364h;
-                        fArr3[i12] = i17;
-                        this.f21368m[i12] = i17 - (this.f21365j / 2.0f);
-                        i12++;
-                    }
-                    for (i13 = 6; i13 < 8; i13++) {
-                        float[] fArr4 = this.f21367l;
-                        int i18 = this.i;
-                        fArr4[i13] = i18;
-                        this.f21368m[i13] = i18 - (this.f21365j / 2.0f);
+                    for (i12 = 6; i12 < 8; i12++) {
+                        float[] fArr4 = this.f22154l;
+                        int i17 = this.i;
+                        fArr4[i12] = i17;
+                        this.f22155m[i12] = i17 - (this.f22152j / 2.0f);
                     }
                 }
             } catch (Exception e9) {
                 e9.printStackTrace();
             }
-        } else if (this.f21367l != null && this.f21368m != null) {
+        } else if (this.f22154l != null && this.f22155m != null) {
             while (true) {
                 try {
-                    float[] fArr5 = this.f21367l;
-                    if (i14 >= fArr5.length) {
+                    float[] fArr5 = this.f22154l;
+                    if (i13 >= fArr5.length) {
                         break;
                     }
-                    int i19 = this.f21361e;
-                    fArr5[i14] = i19;
-                    this.f21368m[i14] = i19 - (this.f21365j / 2.0f);
-                    i14++;
+                    int i18 = this.f22148e;
+                    fArr5[i13] = i18;
+                    this.f22155m[i13] = i18 - (this.f22152j / 2.0f);
+                    i13++;
                 } catch (Exception e10) {
                     e10.printStackTrace();
                 }
             }
         }
-        RectF rectF = this.f21370o;
+        RectF rectF = this.f22157o;
         if (rectF != null) {
-            int i20 = this.f21365j;
-            rectF.set(i20 / 2.0f, i20 / 2.0f, this.f21359c - (i20 / 2.0f), this.f21360d - (i20 / 2.0f));
+            int i19 = this.f22152j;
+            rectF.set(i19 / 2.0f, i19 / 2.0f, this.f22146c - (i19 / 2.0f), this.f22147d - (i19 / 2.0f));
         }
-        RectF rectF2 = this.f21369n;
+        RectF rectF2 = this.f22156n;
         if (rectF2 != null) {
-            rectF2.set(0.0f, 0.0f, this.f21359c, this.f21360d);
+            rectF2.set(0.0f, 0.0f, this.f22146c, this.f22147d);
         }
     }
 
-    public void setBorder(int i, int i6, int i9) {
-        this.f21371p = true;
-        this.f21365j = i6;
-        this.f21366k = i9;
-        this.f21361e = i;
+    public void setBorder(int i, int i4, int i6) {
+        this.f22158p = true;
+        this.f22152j = i4;
+        this.f22153k = i6;
+        this.f22148e = i;
     }
 
     public void setCornerRadius(int i) {
-        this.f21361e = i;
+        this.f22148e = i;
     }
 
-    public void setCustomBorder(int i, int i6, int i9, int i10, int i11, int i12) {
-        this.f21371p = true;
-        this.f21372q = true;
-        this.f21365j = i11;
-        this.f21366k = i12;
-        this.f21362f = i;
-        this.f21364h = i9;
-        this.f21363g = i6;
-        this.i = i10;
+    public void setCustomBorder(int i, int i4, int i6, int i9, int i10, int i11) {
+        this.f22158p = true;
+        this.f22159q = true;
+        this.f22152j = i10;
+        this.f22153k = i11;
+        this.f22149f = i;
+        this.f22151h = i6;
+        this.f22150g = i4;
+        this.i = i9;
     }
 
     public AnyThinkImageView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0);
     }
 
-    private void a(Canvas canvas, int i, int i6, RectF rectF, float[] fArr) {
+    private void a(Canvas canvas, int i, int i4, RectF rectF, float[] fArr) {
         try {
-            a(i, i6);
-            Path path = this.f21373r;
+            a(i, i4);
+            Path path = this.f22160r;
             if (path != null) {
                 path.addRoundRect(rectF, fArr, Path.Direction.CCW);
             }
             if (canvas != null) {
-                canvas.drawPath(this.f21373r, this.f21374s);
+                canvas.drawPath(this.f22160r, this.f22161s);
             }
         } catch (Exception e9) {
             e9.printStackTrace();
@@ -306,42 +306,42 @@ public class AnyThinkImageView extends ImageView {
 
     public AnyThinkImageView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f21373r = new Path();
-        this.f21374s = new Paint();
-        this.f21367l = new float[8];
-        this.f21368m = new float[8];
-        this.f21370o = new RectF();
-        this.f21369n = new RectF();
-        this.f21358b = new PorterDuffXfermode(PorterDuff.Mode.DST_IN);
+        this.f22160r = new Path();
+        this.f22161s = new Paint();
+        this.f22154l = new float[8];
+        this.f22155m = new float[8];
+        this.f22157o = new RectF();
+        this.f22156n = new RectF();
+        this.f22145b = new PorterDuffXfermode(PorterDuff.Mode.DST_IN);
     }
 
-    private void a(int i, int i6) {
-        Path path = this.f21373r;
+    private void a(int i, int i4) {
+        Path path = this.f22160r;
         if (path != null) {
             path.reset();
         }
-        Paint paint = this.f21374s;
+        Paint paint = this.f22161s;
         if (paint != null) {
             paint.setStrokeWidth(i);
-            this.f21374s.setColor(i6);
-            this.f21374s.setStyle(Paint.Style.STROKE);
+            this.f22161s.setColor(i4);
+            this.f22161s.setStyle(Paint.Style.STROKE);
         }
     }
 
     private void a() {
-        if (this.f21367l == null || this.f21368m == null) {
+        if (this.f22154l == null || this.f22155m == null) {
             return;
         }
         int i = 0;
         while (true) {
             try {
-                float[] fArr = this.f21367l;
+                float[] fArr = this.f22154l;
                 if (i >= fArr.length) {
                     return;
                 }
-                int i6 = this.f21361e;
-                fArr[i] = i6;
-                this.f21368m[i] = i6 - (this.f21365j / 2.0f);
+                int i4 = this.f22148e;
+                fArr[i] = i4;
+                this.f22155m[i] = i4 - (this.f22152j / 2.0f);
                 i++;
             } catch (Exception e9) {
                 e9.printStackTrace();

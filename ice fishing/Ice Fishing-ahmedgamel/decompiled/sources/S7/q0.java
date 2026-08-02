@@ -4,16 +4,16 @@ package S7;
 public abstract class q0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final ThreadLocal f2984a = new ThreadLocal();
+    public static final ThreadLocal f3067a = new ThreadLocal();
 
     public static P a() {
-        ThreadLocal threadLocal = f2984a;
+        ThreadLocal threadLocal = f3067a;
         P p9 = (P) threadLocal.get();
         if (p9 != null) {
             return p9;
         }
-        C0386d c0386d = new C0386d(Thread.currentThread());
-        threadLocal.set(c0386d);
-        return c0386d;
+        C0390d c0390d = new C0390d(Thread.currentThread());
+        threadLocal.set(c0390d);
+        return c0390d;
     }
 }

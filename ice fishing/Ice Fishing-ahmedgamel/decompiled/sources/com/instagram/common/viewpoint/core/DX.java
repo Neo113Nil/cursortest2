@@ -10,7 +10,7 @@ public interface DX {
     long A76(long j6);
 
     @MetaExoPlayerCustomization("D19875605 Prevent further error loading once pausing video")
-    void AJc(boolean z3);
+    void AJc(boolean z6);
 
     @MetaExoPlayerCustomization("D13267633")
     void AKb(byte b9);

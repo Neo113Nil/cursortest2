@@ -6,7 +6,7 @@ import com.anythink.core.common.h.bk;
 import com.anythink.core.common.h.w;
 import com.anythink.core.common.h.y;
 import com.anythink.core.common.v.af;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
@@ -16,34 +16,34 @@ import org.json.JSONArray;
 public class c {
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile c f8957b;
+    private static volatile c f9743b;
 
     /* renamed from: c, reason: collision with root package name */
-    private Object f8959c = new Object();
+    private Object f9745c = new Object();
 
     /* renamed from: a, reason: collision with root package name */
-    ConcurrentHashMap<String, ArrayList<String>> f8958a = new ConcurrentHashMap<>();
+    ConcurrentHashMap<String, ArrayList<String>> f9744a = new ConcurrentHashMap<>();
 
     private c() {
     }
 
     public static String a(String str, String str2) {
-        return AbstractC4404f.f(str, str2);
+        return Wv.g(str, str2);
     }
 
     public static c a() {
-        if (f8957b == null) {
+        if (f9743b == null) {
             synchronized (c.class) {
                 try {
-                    if (f8957b == null) {
-                        f8957b = new c();
+                    if (f9743b == null) {
+                        f9743b = new c();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f8957b;
+        return f9743b;
     }
 
     public final void a(final Context context, final String str, final w wVar, final y yVar) {
@@ -51,9 +51,9 @@ public class c {
             com.anythink.core.common.v.b.b.a().b(new Runnable() { // from class: com.anythink.basead.f.f.c.1
                 @Override // java.lang.Runnable
                 public final void run() {
-                    synchronized (c.this.f8959c) {
+                    synchronized (c.this.f9745c) {
                         bk bkVar = (bk) yVar;
-                        ArrayList<String> arrayList = c.this.f8958a.get(str);
+                        ArrayList<String> arrayList = c.this.f9744a.get(str);
                         if (arrayList == null) {
                             arrayList = new ArrayList<>();
                             try {
@@ -65,7 +65,7 @@ public class c {
                                 }
                             } catch (Exception unused) {
                             }
-                            c.this.f8958a.put(str, arrayList);
+                            c.this.f9744a.put(str, arrayList);
                         }
                         if (arrayList.size() >= bkVar.a()) {
                             arrayList.remove(arrayList.size() - 1);
@@ -79,7 +79,7 @@ public class c {
     }
 
     public final String[] a(Context context, String str) {
-        ArrayList<String> arrayList = this.f8958a.get(str);
+        ArrayList<String> arrayList = this.f9744a.get(str);
         if (arrayList == null) {
             try {
                 JSONArray jSONArray = new JSONArray(af.c(context, u.b.i, str, ""));
@@ -99,7 +99,7 @@ public class c {
         if (arrayList == null) {
             return null;
         }
-        this.f8958a.put(str, arrayList);
+        this.f9744a.put(str, arrayList);
         String[] strArr = new String[arrayList.size()];
         arrayList.toArray(strArr);
         return strArr;

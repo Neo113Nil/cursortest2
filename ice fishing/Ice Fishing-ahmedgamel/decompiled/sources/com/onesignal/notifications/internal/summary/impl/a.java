@@ -6,13 +6,13 @@ import java.util.List;
 import kotlin.jvm.internal.h;
 import org.json.JSONObject;
 import t5.e;
-import u5.AbstractC5081b;
-import u5.C5082c;
+import u5.AbstractC5073b;
+import u5.C5074c;
 import u7.v;
-import v5.InterfaceC5117c;
-import v7.AbstractC5129j;
+import v5.InterfaceC5107c;
+import v7.AbstractC5119j;
 import x4.f;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class a implements E5.a {
@@ -20,7 +20,7 @@ public final class a implements E5.a {
     private final com.onesignal.core.internal.config.c _configModelStore;
     private final u5.d _dataController;
     private final D5.b _notificationRestoreProcessor;
-    private final InterfaceC5117c _summaryNotificationDisplayer;
+    private final InterfaceC5107c _summaryNotificationDisplayer;
     private final K4.a _time;
 
     /* renamed from: com.onesignal.notifications.internal.summary.impl.a$a, reason: collision with other inner class name */
@@ -31,8 +31,8 @@ public final class a implements E5.a {
         int label;
         /* synthetic */ Object result;
 
-        public C0241a(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public C0241a(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -52,8 +52,8 @@ public final class a implements E5.a {
         int label;
         /* synthetic */ Object result;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -70,8 +70,8 @@ public final class a implements E5.a {
         int label;
         /* synthetic */ Object result;
 
-        public c(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public c(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -87,8 +87,8 @@ public final class a implements E5.a {
         int label;
         /* synthetic */ Object result;
 
-        public d(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public d(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -99,7 +99,7 @@ public final class a implements E5.a {
         }
     }
 
-    public a(f _applicationService, u5.d _dataController, InterfaceC5117c _summaryNotificationDisplayer, com.onesignal.core.internal.config.c _configModelStore, D5.b _notificationRestoreProcessor, K4.a _time) {
+    public a(f _applicationService, u5.d _dataController, InterfaceC5107c _summaryNotificationDisplayer, com.onesignal.core.internal.config.c _configModelStore, D5.b _notificationRestoreProcessor, K4.a _time) {
         h.e(_applicationService, "_applicationService");
         h.e(_dataController, "_dataController");
         h.e(_summaryNotificationDisplayer, "_summaryNotificationDisplayer");
@@ -135,7 +135,7 @@ public final class a implements E5.a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object internalUpdateSummaryNotificationAfterChildRemoved(String str, boolean z3, InterfaceC5267d interfaceC5267d) {
+    public final Object internalUpdateSummaryNotificationAfterChildRemoved(String str, boolean z6, InterfaceC5240d interfaceC5240d) {
         b bVar;
         A7.a aVar;
         int i;
@@ -143,24 +143,24 @@ public final class a implements E5.a {
         List list;
         Object androidIdForGroup;
         String str2;
-        int i6;
+        int i4;
         Integer num;
-        if (interfaceC5267d instanceof b) {
-            bVar = (b) interfaceC5267d;
-            int i9 = bVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                bVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof b) {
+            bVar = (b) interfaceC5240d;
+            int i6 = bVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                bVar.label = i6 - Integer.MIN_VALUE;
                 b bVar2 = bVar;
                 Object obj = bVar2.result;
-                aVar = A7.a.f58n;
+                aVar = A7.a.f215n;
                 i = bVar2.label;
-                v vVar = v.f41353a;
+                v vVar = v.f41073a;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     u5.d dVar = this._dataController;
                     bVar2.L$0 = this;
                     bVar2.L$1 = str;
-                    bVar2.Z$0 = z3;
+                    bVar2.Z$0 = z6;
                     bVar2.label = 1;
                     obj = dVar.listNotificationsForGroup(str, bVar2);
                     if (obj != aVar) {
@@ -171,39 +171,39 @@ public final class a implements E5.a {
                 if (i != 1) {
                     if (i != 2) {
                         if (i == 3) {
-                            com.bumptech.glide.d.k(obj);
+                            Q3.b.s(obj);
                             return vVar;
                         }
                         if (i == 4) {
-                            com.bumptech.glide.d.k(obj);
+                            Q3.b.s(obj);
                             return vVar;
                         }
                         if (i != 5) {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                         return vVar;
                     }
-                    i6 = bVar2.I$0;
-                    z3 = bVar2.Z$0;
+                    i4 = bVar2.I$0;
+                    z6 = bVar2.Z$0;
                     list = (List) bVar2.L$2;
                     str2 = (String) bVar2.L$1;
                     aVar2 = (a) bVar2.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     num = (Integer) obj;
                     if (num != null) {
                         int intValue = num.intValue();
-                        if (i6 == 0) {
+                        if (i4 == 0) {
                             e.INSTANCE.getNotificationManager(aVar2._applicationService.getAppContext()).cancel(intValue);
                             u5.d dVar2 = aVar2._dataController;
                             bVar2.L$0 = null;
                             bVar2.L$1 = null;
                             bVar2.L$2 = null;
                             bVar2.label = 3;
-                            if (AbstractC5081b.markAsConsumed$default(dVar2, intValue, z3, null, false, bVar2, 12, null) != aVar) {
+                            if (AbstractC5073b.markAsConsumed$default(dVar2, intValue, z6, null, false, bVar2, 12, null) != aVar) {
                                 return vVar;
                             }
-                        } else if (i6 == 1) {
+                        } else if (i4 == 1) {
                             bVar2.L$0 = null;
                             bVar2.L$1 = null;
                             bVar2.L$2 = null;
@@ -212,11 +212,11 @@ public final class a implements E5.a {
                                 return vVar;
                             }
                         } else {
-                            C5082c c5082c = (C5082c) AbstractC5129j.A(list);
-                            t5.d dVar3 = new t5.d(new JSONObject(c5082c.getFullData()), aVar2._time);
+                            C5074c c5074c = (C5074c) AbstractC5119j.y(list);
+                            t5.d dVar3 = new t5.d(new JSONObject(c5074c.getFullData()), aVar2._time);
                             dVar3.setRestoring(true);
-                            dVar3.setShownTimeStamp(new Long(c5082c.getCreatedAt()));
-                            InterfaceC5117c interfaceC5117c = aVar2._summaryNotificationDisplayer;
+                            dVar3.setShownTimeStamp(new Long(c5074c.getCreatedAt()));
+                            InterfaceC5107c interfaceC5107c = aVar2._summaryNotificationDisplayer;
                             bVar2.L$0 = null;
                             bVar2.L$1 = null;
                             bVar2.L$2 = null;
@@ -226,10 +226,10 @@ public final class a implements E5.a {
                     }
                     return vVar;
                 }
-                z3 = bVar2.Z$0;
+                z6 = bVar2.Z$0;
                 str = (String) bVar2.L$1;
                 a aVar3 = (a) bVar2.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 aVar2 = aVar3;
                 list = (List) obj;
                 int size = list.size();
@@ -237,13 +237,13 @@ public final class a implements E5.a {
                 bVar2.L$0 = aVar2;
                 bVar2.L$1 = str;
                 bVar2.L$2 = list;
-                bVar2.Z$0 = z3;
+                bVar2.Z$0 = z6;
                 bVar2.I$0 = size;
                 bVar2.label = 2;
                 androidIdForGroup = dVar4.getAndroidIdForGroup(str, true, bVar2);
                 if (androidIdForGroup != aVar) {
                     str2 = str;
-                    i6 = size;
+                    i4 = size;
                     obj = androidIdForGroup;
                     num = (Integer) obj;
                     if (num != null) {
@@ -253,12 +253,12 @@ public final class a implements E5.a {
                 return aVar;
             }
         }
-        bVar = new b(interfaceC5267d);
+        bVar = new b(interfaceC5240d);
         b bVar22 = bVar;
         Object obj2 = bVar22.result;
-        aVar = A7.a.f58n;
+        aVar = A7.a.f215n;
         i = bVar22.label;
-        v vVar2 = v.f41353a;
+        v vVar2 = v.f41073a;
         if (i != 0) {
         }
         list = (List) obj2;
@@ -267,7 +267,7 @@ public final class a implements E5.a {
         bVar22.L$0 = aVar2;
         bVar22.L$1 = str;
         bVar22.L$2 = list;
-        bVar22.Z$0 = z3;
+        bVar22.Z$0 = z6;
         bVar22.I$0 = size2;
         bVar22.label = 2;
         androidIdForGroup = dVar42.getAndroidIdForGroup(str, true, bVar22);
@@ -283,22 +283,22 @@ public final class a implements E5.a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object restoreSummary(String str, InterfaceC5267d interfaceC5267d) {
+    public final Object restoreSummary(String str, InterfaceC5240d interfaceC5240d) {
         c cVar;
         int i;
         a aVar;
         a aVar2;
         Iterator it;
-        if (interfaceC5267d instanceof c) {
-            cVar = (c) interfaceC5267d;
-            int i6 = cVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                cVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof c) {
+            cVar = (c) interfaceC5240d;
+            int i4 = cVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                cVar.label = i4 - Integer.MIN_VALUE;
                 Object obj = cVar.result;
-                A7.a aVar3 = A7.a.f58n;
+                A7.a aVar3 = A7.a.f215n;
                 i = cVar.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     u5.d dVar = this._dataController;
                     cVar.L$0 = this;
                     cVar.label = 1;
@@ -314,33 +314,33 @@ public final class a implements E5.a {
                     }
                     it = (Iterator) cVar.L$1;
                     aVar2 = (a) cVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     c cVar2 = cVar;
                     while (it.hasNext()) {
-                        C5082c c5082c = (C5082c) it.next();
+                        C5074c c5074c = (C5074c) it.next();
                         D5.b bVar = aVar2._notificationRestoreProcessor;
                         cVar2.L$0 = aVar2;
                         cVar2.L$1 = it;
                         cVar2.label = 2;
-                        if (D5.a.processNotification$default(bVar, c5082c, 0, cVar2, 2, null) == aVar3) {
+                        if (D5.a.processNotification$default(bVar, c5074c, 0, cVar2, 2, null) == aVar3) {
                             return aVar3;
                         }
                     }
-                    return v.f41353a;
+                    return v.f41073a;
                 }
                 aVar = (a) cVar.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 aVar2 = aVar;
                 it = ((List) obj).iterator();
                 c cVar22 = cVar;
                 while (it.hasNext()) {
                 }
-                return v.f41353a;
+                return v.f41073a;
             }
         }
-        cVar = new c(interfaceC5267d);
+        cVar = new c(interfaceC5240d);
         Object obj2 = cVar.result;
-        A7.a aVar32 = A7.a.f58n;
+        A7.a aVar32 = A7.a.f215n;
         i = cVar.label;
         if (i != 0) {
         }
@@ -349,7 +349,7 @@ public final class a implements E5.a {
         c cVar222 = cVar;
         while (it.hasNext()) {
         }
-        return v.f41353a;
+        return v.f41073a;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:19:0x00b6  */
@@ -360,7 +360,7 @@ public final class a implements E5.a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object clearNotificationOnSummaryClick(String str, InterfaceC5267d interfaceC5267d) {
+    public Object clearNotificationOnSummaryClick(String str, InterfaceC5240d interfaceC5240d) {
         C0241a c0241a;
         int i;
         NotificationManager notificationManager;
@@ -369,17 +369,17 @@ public final class a implements E5.a {
         Integer num;
         NotificationManager notificationManager2;
         Integer num2;
-        if (interfaceC5267d instanceof C0241a) {
-            c0241a = (C0241a) interfaceC5267d;
-            int i6 = c0241a.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                c0241a.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof C0241a) {
+            c0241a = (C0241a) interfaceC5240d;
+            int i4 = c0241a.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                c0241a.label = i4 - Integer.MIN_VALUE;
                 Object obj = c0241a.result;
-                A7.a aVar2 = A7.a.f58n;
+                A7.a aVar2 = A7.a.f215n;
                 i = c0241a.label;
-                v vVar = v.f41353a;
+                v vVar = v.f41073a;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     notificationManager = e.INSTANCE.getNotificationManager(this._applicationService.getAppContext());
                     u5.d dVar = this._dataController;
                     c0241a.L$0 = this;
@@ -397,11 +397,11 @@ public final class a implements E5.a {
                         if (i != 3) {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                         return vVar;
                     }
                     notificationManager2 = (NotificationManager) c0241a.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     Integer num3 = (Integer) obj;
                     notificationManager = notificationManager2;
                     num2 = num3;
@@ -413,7 +413,7 @@ public final class a implements E5.a {
                 NotificationManager notificationManager3 = (NotificationManager) c0241a.L$2;
                 String str2 = (String) c0241a.L$1;
                 aVar = (a) c0241a.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 notificationManager = notificationManager3;
                 str = str2;
                 androidIdForGroup = obj;
@@ -455,11 +455,11 @@ public final class a implements E5.a {
                 return vVar;
             }
         }
-        c0241a = new C0241a(interfaceC5267d);
+        c0241a = new C0241a(interfaceC5240d);
         Object obj2 = c0241a.result;
-        A7.a aVar22 = A7.a.f58n;
+        A7.a aVar22 = A7.a.f215n;
         i = c0241a.label;
-        v vVar2 = v.f41353a;
+        v vVar2 = v.f41073a;
         if (i != 0) {
         }
         num = (Integer) androidIdForGroup;
@@ -475,22 +475,22 @@ public final class a implements E5.a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object updatePossibleDependentSummaryOnDismiss(int i, InterfaceC5267d interfaceC5267d) {
+    public Object updatePossibleDependentSummaryOnDismiss(int i, InterfaceC5240d interfaceC5240d) {
         d dVar;
-        int i6;
+        int i4;
         a aVar;
         String str;
-        if (interfaceC5267d instanceof d) {
-            dVar = (d) interfaceC5267d;
-            int i9 = dVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                dVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof d) {
+            dVar = (d) interfaceC5240d;
+            int i6 = dVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                dVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = dVar.result;
-                A7.a aVar2 = A7.a.f58n;
-                i6 = dVar.label;
-                v vVar = v.f41353a;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar2 = A7.a.f215n;
+                i4 = dVar.label;
+                v vVar = v.f41073a;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     u5.d dVar2 = this._dataController;
                     dVar.L$0 = this;
                     dVar.label = 1;
@@ -500,15 +500,15 @@ public final class a implements E5.a {
                     }
                     return aVar2;
                 }
-                if (i6 != 1) {
-                    if (i6 != 2) {
+                if (i4 != 1) {
+                    if (i4 != 2) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     return vVar;
                 }
                 aVar = (a) dVar.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 str = (String) obj;
                 if (str != null) {
                     dVar.L$0 = null;
@@ -520,12 +520,12 @@ public final class a implements E5.a {
                 return vVar;
             }
         }
-        dVar = new d(interfaceC5267d);
+        dVar = new d(interfaceC5240d);
         Object obj2 = dVar.result;
-        A7.a aVar22 = A7.a.f58n;
-        i6 = dVar.label;
-        v vVar2 = v.f41353a;
-        if (i6 != 0) {
+        A7.a aVar22 = A7.a.f215n;
+        i4 = dVar.label;
+        v vVar2 = v.f41073a;
+        if (i4 != 0) {
         }
         str = (String) obj2;
         if (str != null) {
@@ -534,8 +534,8 @@ public final class a implements E5.a {
     }
 
     @Override // E5.a
-    public Object updateSummaryNotificationAfterChildRemoved(String str, boolean z3, InterfaceC5267d interfaceC5267d) {
-        Object internalUpdateSummaryNotificationAfterChildRemoved = internalUpdateSummaryNotificationAfterChildRemoved(str, z3, interfaceC5267d);
-        return internalUpdateSummaryNotificationAfterChildRemoved == A7.a.f58n ? internalUpdateSummaryNotificationAfterChildRemoved : v.f41353a;
+    public Object updateSummaryNotificationAfterChildRemoved(String str, boolean z6, InterfaceC5240d interfaceC5240d) {
+        Object internalUpdateSummaryNotificationAfterChildRemoved = internalUpdateSummaryNotificationAfterChildRemoved(str, z6, interfaceC5240d);
+        return internalUpdateSummaryNotificationAfterChildRemoved == A7.a.f215n ? internalUpdateSummaryNotificationAfterChildRemoved : v.f41073a;
     }
 }

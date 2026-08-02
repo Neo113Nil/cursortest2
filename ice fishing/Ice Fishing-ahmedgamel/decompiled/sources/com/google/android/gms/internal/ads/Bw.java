@@ -12,19 +12,19 @@ import java.util.Arrays;
 public final class Bw {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final byte[] f23986a = {61, 122, 18, 35, 1, -102, -93, -99, -98, -96, -29, 67, 106, -73, -64, -119, 107, -5, 79, -74, 121, -12, -34, 95, -25, -62, com.anythink.core.common.s.a.c.f16318c, 50, 108, -113, -103, 74};
+    public static final byte[] f24749a = {61, 122, 18, 35, 1, -102, -93, -99, -98, -96, -29, 67, 106, -73, -64, -119, 107, -5, 79, -74, 121, -12, -34, 95, -25, -62, com.anythink.core.common.s.a.c.f17105c, 50, 108, -113, -103, 74};
 
     /* renamed from: b, reason: collision with root package name */
-    public static final byte[] f23987b = {-110, -13, -34, 70, -83, 43, 97, 21, -44, 16, -54, -125, -28, -57, -125, -127, -7, 17, 102, -69, 116, -121, -79, 43, -13, 120, 58, 55, -29, -108, 95, 83};
+    public static final byte[] f24750b = {-110, -13, -34, 70, -83, 43, 97, 21, -44, 16, -54, -125, -28, -57, -125, -127, -7, 17, 102, -69, 116, -121, -79, 43, -13, 120, 58, 55, -29, -108, 95, 83};
 
     public static boolean a(File file) {
         try {
-            X509Certificate[][] m4 = MA.m(file.getAbsolutePath());
-            if (m4.length != 1) {
+            X509Certificate[][] m9 = MA.m(file.getAbsolutePath());
+            if (m9.length != 1) {
                 throw new GeneralSecurityException("APK has more than one signature.");
             }
-            byte[] digest = MessageDigest.getInstance("SHA-256").digest(m4[0][0].getEncoded());
-            return Arrays.equals(f23986a, digest) || (!"user".equals(Build.TYPE) && Arrays.equals(f23987b, digest));
+            byte[] digest = MessageDigest.getInstance("SHA-256").digest(m9[0][0].getEncoded());
+            return Arrays.equals(f24749a, digest) || (!"user".equals(Build.TYPE) && Arrays.equals(f24750b, digest));
         } catch (S4 e9) {
             throw new GeneralSecurityException("Package is not signed", e9);
         } catch (IOException | RuntimeException e10) {

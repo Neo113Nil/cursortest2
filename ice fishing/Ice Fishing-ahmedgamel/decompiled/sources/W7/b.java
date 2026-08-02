@@ -1,6 +1,6 @@
 package W7;
 
-import com.google.android.gms.internal.ads.C3295hL;
+import com.google.android.gms.internal.ads.C3318hL;
 import com.google.android.gms.internal.ads.HK;
 import com.google.android.gms.internal.ads.KK;
 
@@ -8,20 +8,20 @@ import com.google.android.gms.internal.ads.KK;
 public abstract class b {
 
     /* renamed from: n, reason: collision with root package name */
-    public int f3414n;
+    public int f3576n;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f3415u;
+    public int f3577u;
 
     /* renamed from: v, reason: collision with root package name */
-    public Object f3416v;
+    public Object f3578v;
 
-    public static KK f(byte[] bArr, int i, int i6) {
-        KK kk = new KK(bArr, i, i6);
+    public static KK f(byte[] bArr, int i, int i4) {
+        KK kk = new KK(bArr, i, i4);
         try {
-            kk.b(i6);
+            kk.b(i4);
             return kk;
-        } catch (C3295hL e9) {
+        } catch (C3318hL e9) {
             throw new IllegalArgumentException(e9);
         }
     }
@@ -57,27 +57,27 @@ public abstract class b {
             if (j6 == 0) {
                 return;
             }
-            int i = this.f3414n;
-            int i6 = this.f3415u;
-            if (i + i6 >= 100) {
-                throw new C3295hL("Protocol message had too many levels of nesting.  May be malicious.  Use setRecursionLimit() to increase the recursion depth limit.");
+            int i = this.f3576n;
+            int i4 = this.f3577u;
+            if (i + i4 >= 100) {
+                throw new C3318hL("Protocol message had too many levels of nesting.  May be malicious.  Use setRecursionLimit() to increase the recursion depth limit.");
             }
-            this.f3415u = i6 + 1;
-            this.f3415u--;
-        } while (l(j6));
+            this.f3577u = i4 + 1;
+            this.f3577u--;
+        } while (m(j6));
     }
 
     public abstract int j();
 
     public abstract void k(int i);
 
-    public abstract boolean l(int i);
+    public abstract boolean m(int i);
 
-    public abstract double m();
+    public abstract double n();
 
-    public abstract float n();
+    public abstract float o();
 
-    public abstract long o();
+    public abstract long p();
 
     public abstract long q();
 

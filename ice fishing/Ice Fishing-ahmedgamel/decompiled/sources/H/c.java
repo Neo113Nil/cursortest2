@@ -44,7 +44,7 @@ public abstract class c {
 
     public static Icon c(IconCompat iconCompat, Context context) {
         Icon createWithBitmap;
-        int i = iconCompat.f4689a;
+        int i = iconCompat.f4657a;
         String str = null;
         r2 = null;
         InputStream openInputStream = null;
@@ -52,18 +52,18 @@ public abstract class c {
         str = null;
         switch (i) {
             case -1:
-                return (Icon) iconCompat.f4690b;
+                return (Icon) iconCompat.f4658b;
             case 0:
             default:
                 throw new IllegalArgumentException("Unknown type");
             case 1:
-                createWithBitmap = Icon.createWithBitmap((Bitmap) iconCompat.f4690b);
+                createWithBitmap = Icon.createWithBitmap((Bitmap) iconCompat.f4658b);
                 break;
             case 2:
                 if (i == -1) {
-                    int i6 = Build.VERSION.SDK_INT;
-                    Object obj = iconCompat.f4690b;
-                    if (i6 >= 28) {
+                    int i4 = Build.VERSION.SDK_INT;
+                    Object obj = iconCompat.f4658b;
+                    if (i4 >= 28) {
                         str = e.b(obj);
                     } else {
                         try {
@@ -80,23 +80,23 @@ public abstract class c {
                     if (i != 2) {
                         throw new IllegalStateException("called getResPackage() on " + iconCompat);
                     }
-                    String str2 = iconCompat.f4697j;
-                    str = (str2 == null || TextUtils.isEmpty(str2)) ? ((String) iconCompat.f4690b).split(":", -1)[0] : iconCompat.f4697j;
+                    String str2 = iconCompat.f4665j;
+                    str = (str2 == null || TextUtils.isEmpty(str2)) ? ((String) iconCompat.f4658b).split(":", -1)[0] : iconCompat.f4665j;
                 }
-                createWithBitmap = Icon.createWithResource(str, iconCompat.f4693e);
+                createWithBitmap = Icon.createWithResource(str, iconCompat.f4661e);
                 break;
             case 3:
-                createWithBitmap = Icon.createWithData((byte[]) iconCompat.f4690b, iconCompat.f4693e, iconCompat.f4694f);
+                createWithBitmap = Icon.createWithData((byte[]) iconCompat.f4658b, iconCompat.f4661e, iconCompat.f4662f);
                 break;
             case 4:
-                createWithBitmap = Icon.createWithContentUri((String) iconCompat.f4690b);
+                createWithBitmap = Icon.createWithContentUri((String) iconCompat.f4658b);
                 break;
             case 5:
                 if (Build.VERSION.SDK_INT < 26) {
-                    createWithBitmap = Icon.createWithBitmap(IconCompat.a((Bitmap) iconCompat.f4690b, false));
+                    createWithBitmap = Icon.createWithBitmap(IconCompat.a((Bitmap) iconCompat.f4658b, false));
                     break;
                 } else {
-                    createWithBitmap = d.b((Bitmap) iconCompat.f4690b);
+                    createWithBitmap = d.b((Bitmap) iconCompat.f4658b);
                     break;
                 }
             case 6:
@@ -117,7 +117,7 @@ public abstract class c {
                         }
                     } else {
                         try {
-                            openInputStream = new FileInputStream(new File((String) iconCompat.f4690b));
+                            openInputStream = new FileInputStream(new File((String) iconCompat.f4658b));
                         } catch (FileNotFoundException e14) {
                             Log.w("IconCompat", "Unable to load image from path: " + e12, e14);
                         }
@@ -134,12 +134,12 @@ public abstract class c {
                     }
                 }
         }
-        ColorStateList colorStateList = iconCompat.f4695g;
+        ColorStateList colorStateList = iconCompat.f4663g;
         if (colorStateList != null) {
             createWithBitmap.setTintList(colorStateList);
         }
-        PorterDuff.Mode mode = iconCompat.f4696h;
-        if (mode != IconCompat.f4688k) {
+        PorterDuff.Mode mode = iconCompat.f4664h;
+        if (mode != IconCompat.f4656k) {
             createWithBitmap.setTintMode(mode);
         }
         return createWithBitmap;

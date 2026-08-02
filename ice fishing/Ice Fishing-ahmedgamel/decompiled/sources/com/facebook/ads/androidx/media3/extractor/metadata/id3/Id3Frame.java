@@ -1,7 +1,7 @@
 package com.facebook.ads.androidx.media3.extractor.metadata.id3;
 
 import com.facebook.ads.androidx.media3.common.Metadata;
-import com.instagram.common.viewpoint.core.C2400qI;
+import com.instagram.common.viewpoint.core.C2420qI;
 import com.instagram.common.viewpoint.core.C3E;
 
 /* loaded from: assets/audience_network/classes2.dex */
@@ -14,7 +14,7 @@ public abstract class Id3Frame implements Metadata.Entry {
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Metadata.Entry
-    public final /* synthetic */ C2400qI A9b() {
+    public final /* synthetic */ C2420qI A9b() {
         return C3E.A00(this);
     }
 

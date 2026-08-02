@@ -4,31 +4,31 @@ package com.anythink.core.common.res;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f16228a = 1;
+    public static final int f17015a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f16229b = 2;
+    public static final int f17016b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f16230c = 3;
+    public static final int f17017c = 3;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f16231d = 4;
+    public static final int f17018d = 4;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f16232e = 5;
+    public static final int f17019e = 5;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final int f16233f = 6;
+    public static final int f17020f = 6;
 
     /* renamed from: g, reason: collision with root package name */
-    public int f16234g;
+    public int f17021g;
 
     /* renamed from: h, reason: collision with root package name */
-    public String f16235h;
+    public String f17022h;
 
     public e(int i, String str) {
-        this.f16234g = i;
-        this.f16235h = str;
+        this.f17021g = i;
+        this.f17022h = str;
     }
 }

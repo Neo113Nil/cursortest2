@@ -4,9 +4,9 @@ package com.google.android.gms.internal.consent_sdk;
 public abstract class E2 {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final /* synthetic */ int f35508a = 0;
+    public static final /* synthetic */ int f36277a = 0;
 
     static {
-        int i = AbstractC4315e2.f35667a;
+        int i = AbstractC4338e2.f36436a;
     }
 }

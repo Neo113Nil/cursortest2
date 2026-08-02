@@ -6,7 +6,7 @@ import android.app.Application;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final a f3024a = new a();
+    public static final a f3107a = new a();
 
     public final String a() {
         String processName = Application.getProcessName();

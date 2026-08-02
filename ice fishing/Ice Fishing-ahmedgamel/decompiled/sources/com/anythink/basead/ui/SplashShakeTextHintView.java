@@ -17,7 +17,7 @@ public class SplashShakeTextHintView extends ShakeTextHintView {
     }
 
     public void setTextSize(int i) {
-        TextView textView = ((ShakeTextHintView) this).f10272l;
+        TextView textView = ((ShakeTextHintView) this).f11058l;
         if (textView != null) {
             textView.setTextSize(1, i);
         }
@@ -31,7 +31,7 @@ public class SplashShakeTextHintView extends ShakeTextHintView {
         super(context, attributeSet, i);
     }
 
-    public SplashShakeTextHintView(Context context, AttributeSet attributeSet, int i, int i6) {
-        super(context, attributeSet, i, i6);
+    public SplashShakeTextHintView(Context context, AttributeSet attributeSet, int i, int i4) {
+        super(context, attributeSet, i, i4);
     }
 }

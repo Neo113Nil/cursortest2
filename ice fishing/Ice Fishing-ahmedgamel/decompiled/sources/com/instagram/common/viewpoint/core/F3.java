@@ -7,9 +7,9 @@ public final class F3 {
     public static byte[] A00;
     public static String[] A01 = {"hxRtgXLlXZBZOOikVlBghnrqRk8D", "kooIKi1fx1Hb2qPm3oF2lCQrgWRqeUq9", "tAS3MHwJkliRqJEhDeJC9YibHYE", "z1PlvRauaFfgQg02R7fRgUIUzlYZ", "X9uQKTEyJl", "tATbEztK", "lnp2iYjILHnNLb0EhQTEEhT3vvCpm0GE", "ASuPVfTQk0HiiSTBHvF2"};
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        int i10 = 0;
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             String[] strArr = A01;
@@ -17,11 +17,11 @@ public final class F3 {
                 throw new RuntimeException();
             }
             A01[7] = "l0wMWtKaafBi6h";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 96);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 96);
+            i9++;
         }
     }
 
@@ -33,7 +33,7 @@ public final class F3 {
         A01();
     }
 
-    public static /* synthetic */ boolean A02(F3 f3) {
+    public static /* synthetic */ boolean A02(F3 f32) {
         throw new NullPointerException(A00(0, 8, 28));
     }
 }

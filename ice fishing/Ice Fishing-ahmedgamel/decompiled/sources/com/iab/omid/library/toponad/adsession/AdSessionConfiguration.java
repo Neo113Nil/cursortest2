@@ -12,7 +12,7 @@ public class AdSessionConfiguration {
     private final boolean isolateVerificationScripts;
     private final Owner mediaEventsOwner;
 
-    private AdSessionConfiguration(CreativeType creativeType, ImpressionType impressionType, Owner owner, Owner owner2, boolean z3) {
+    private AdSessionConfiguration(CreativeType creativeType, ImpressionType impressionType, Owner owner, Owner owner2, boolean z6) {
         this.creativeType = creativeType;
         this.impressionType = impressionType;
         this.impressionOwner = owner;
@@ -21,15 +21,15 @@ public class AdSessionConfiguration {
         } else {
             this.mediaEventsOwner = owner2;
         }
-        this.isolateVerificationScripts = z3;
+        this.isolateVerificationScripts = z6;
     }
 
-    public static AdSessionConfiguration createAdSessionConfiguration(CreativeType creativeType, ImpressionType impressionType, Owner owner, Owner owner2, boolean z3) {
+    public static AdSessionConfiguration createAdSessionConfiguration(CreativeType creativeType, ImpressionType impressionType, Owner owner, Owner owner2, boolean z6) {
         g.a(creativeType, "CreativeType is null");
         g.a(impressionType, "ImpressionType is null");
         g.a(owner, "Impression owner is null");
         g.a(owner, creativeType, impressionType);
-        return new AdSessionConfiguration(creativeType, impressionType, owner, owner2, z3);
+        return new AdSessionConfiguration(creativeType, impressionType, owner, owner2, z6);
     }
 
     public boolean isNativeImpressionOwner() {

@@ -125,7 +125,7 @@ public final class b {
             }
         } catch (Exception unused) {
         }
-        return str == null ? this.context == null ? ERROR_APP_ID_PREFIX_NO_CONTEXT : hasEmptyConfigStore() ? ERROR_APP_ID_PREFIX_NO_APPID_IN_CONFIG_STORE : jSONObject == null ? ERROR_APP_ID_PREFIX_NO_CONFIG_STORE : !jSONObject.has(com.anythink.expressad.videocommon.e.b.f22407u) ? ERROR_APP_ID_PREFIX_NO_APPID_IN_CONFIG : ERROR_APP_ID_PREFIX_UNKNOWN : str;
+        return str == null ? this.context == null ? ERROR_APP_ID_PREFIX_NO_CONTEXT : hasEmptyConfigStore() ? ERROR_APP_ID_PREFIX_NO_APPID_IN_CONFIG_STORE : jSONObject == null ? ERROR_APP_ID_PREFIX_NO_CONFIG_STORE : !jSONObject.has(com.anythink.expressad.videocommon.e.b.f23194u) ? ERROR_APP_ID_PREFIX_NO_APPID_IN_CONFIG : ERROR_APP_ID_PREFIX_UNKNOWN : str;
     }
 
     public final String resolveAppId() {

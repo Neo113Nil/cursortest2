@@ -6,17 +6,17 @@ import com.onesignal.core.internal.operations.impl.b;
 import java.util.Iterator;
 import java.util.List;
 import kotlin.jvm.internal.h;
-import v7.AbstractC5129j;
+import v7.AbstractC5119j;
 
 /* loaded from: classes2.dex */
 public abstract class d {
-    public static final boolean handleFailUnauthorized(b bVar, b.C0192b startingOp, List<b.C0192b> ops, com.onesignal.user.internal.jwt.c jwtTokenStore, boolean z3) {
+    public static final boolean handleFailUnauthorized(b bVar, b.C0192b startingOp, List<b.C0192b> ops, com.onesignal.user.internal.jwt.c jwtTokenStore, boolean z6) {
         String externalId;
         h.e(bVar, "<this>");
         h.e(startingOp, "startingOp");
         h.e(ops, "ops");
         h.e(jwtTokenStore, "jwtTokenStore");
-        if (!z3 || (externalId = startingOp.getOperation().getExternalId()) == null) {
+        if (!z6 || (externalId = startingOp.getOperation().getExternalId()) == null) {
             return false;
         }
         jwtTokenStore.invalidateJwt(externalId);
@@ -29,18 +29,18 @@ public abstract class d {
             }
         }
         synchronized (bVar.getQueue$com_onesignal_core()) {
-            for (b.C0192b c0192b : AbstractC5129j.I(ops)) {
+            for (b.C0192b c0192b : AbstractC5119j.G(ops)) {
                 bVar.getQueue$com_onesignal_core().add(0, new b.C0192b(c0192b.getOperation(), null, c0192b.getBucket(), c0192b.getRetries()));
             }
         }
         return true;
     }
 
-    public static final boolean hasValidJwtIfRequired(b bVar, com.onesignal.user.internal.jwt.c jwtTokenStore, g op, boolean z3) {
+    public static final boolean hasValidJwtIfRequired(b bVar, com.onesignal.user.internal.jwt.c jwtTokenStore, g op, boolean z6) {
         h.e(bVar, "<this>");
         h.e(jwtTokenStore, "jwtTokenStore");
         h.e(op, "op");
-        if (!z3 || !op.getRequiresJwt()) {
+        if (!z6 || !op.getRequiresJwt()) {
             return true;
         }
         String externalId = op.getExternalId();

@@ -63,16 +63,16 @@ public class DebuggerSdkInfo {
         this.deniedUploadDeviceInfo = strArr;
     }
 
-    public void setHaveLoadAd(boolean z3) {
-        this.isHaveLoadAd = z3;
+    public void setHaveLoadAd(boolean z6) {
+        this.isHaveLoadAd = z6;
     }
 
-    public void setHavePreInitNetwork(boolean z3) {
-        this.isHavePreInitNetwork = z3;
+    public void setHavePreInitNetwork(boolean z6) {
+        this.isHavePreInitNetwork = z6;
     }
 
-    public void setInitSdk(boolean z3) {
-        this.isInitSdk = z3;
+    public void setInitSdk(boolean z6) {
+        this.isInitSdk = z6;
     }
 
     public void setVersionName(String str) {

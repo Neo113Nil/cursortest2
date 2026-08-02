@@ -1,10 +1,9 @@
 package com.google.android.gms.common.api;
 
-import D.y;
-import M2.b;
-import O2.C0354d;
-import P2.w;
-import a3.e;
+import D.x;
+import O2.b;
+import Q2.C0359d;
+import R2.w;
 import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.ActivityNotFoundException;
@@ -14,43 +13,44 @@ import android.content.IntentSender;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import c3.e;
 import com.anythink.core.common.d.j;
 
 /* loaded from: classes.dex */
 public class GoogleApiActivity extends Activity implements DialogInterface.OnCancelListener {
 
     /* renamed from: u, reason: collision with root package name */
-    public static final /* synthetic */ int f23610u = 0;
+    public static final /* synthetic */ int f24390u = 0;
 
     /* renamed from: n, reason: collision with root package name */
-    public int f23611n = 0;
+    public int f24391n = 0;
 
     @Override // android.app.Activity
-    public final void onActivityResult(int i, int i6, Intent intent) {
-        super.onActivityResult(i, i6, intent);
+    public final void onActivityResult(int i, int i4, Intent intent) {
+        super.onActivityResult(i, i4, intent);
         if (i == 1) {
             boolean booleanExtra = getIntent().getBooleanExtra("notify_manager", true);
-            this.f23611n = 0;
-            setResult(i6, intent);
+            this.f24391n = 0;
+            setResult(i4, intent);
             if (booleanExtra) {
-                C0354d e9 = C0354d.e(this);
-                if (i6 == -1) {
-                    e eVar = e9.f2235F;
+                C0359d e9 = C0359d.e(this);
+                if (i4 == -1) {
+                    e eVar = e9.f2553F;
                     eVar.sendMessage(eVar.obtainMessage(3));
-                } else if (i6 == 0) {
+                } else if (i4 == 0) {
                     e9.f(new b(13, null, null), getIntent().getIntExtra("failing_client_id", -1));
                 }
             }
         } else if (i == 2) {
-            this.f23611n = 0;
-            setResult(i6, intent);
+            this.f24391n = 0;
+            setResult(i4, intent);
         }
         finish();
     }
 
     @Override // android.content.DialogInterface.OnCancelListener
     public final void onCancel(DialogInterface dialogInterface) {
-        this.f23611n = 0;
+        this.f24391n = 0;
         setResult(0);
         finish();
     }
@@ -60,9 +60,9 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
         GoogleApiActivity googleApiActivity;
         super.onCreate(bundle);
         if (bundle != null) {
-            this.f23611n = bundle.getInt("resolution");
+            this.f24391n = bundle.getInt("resolution");
         }
-        if (this.f23611n == 1) {
+        if (this.f24391n == 1) {
             return;
         }
         Bundle extras = getIntent().getExtras();
@@ -80,28 +80,28 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
         }
         if (pendingIntent == null) {
             w.h(num);
-            M2.e.f1842d.d(this, num.intValue(), this);
-            this.f23611n = 1;
+            O2.e.f2268d.d(this, num.intValue(), this);
+            this.f24391n = 1;
             return;
         }
         try {
             googleApiActivity = this;
             try {
                 googleApiActivity.startIntentSenderForResult(pendingIntent.getIntentSender(), 1, null, 0, 0, 0);
-                googleApiActivity.f23611n = 1;
+                googleApiActivity.f24391n = 1;
             } catch (ActivityNotFoundException e9) {
                 e = e9;
                 if (extras.getBoolean("notify_manager", true)) {
-                    C0354d.e(this).f(new b(22, null, null), getIntent().getIntExtra("failing_client_id", -1));
+                    C0359d.e(this).f(new b(22, null, null), getIntent().getIntExtra("failing_client_id", -1));
                 } else {
                     String obj = pendingIntent.toString();
-                    String s9 = y.s(new StringBuilder(obj.length() + 36), "Activity not found while launching ", obj, j.f12378z);
+                    String p9 = x.p(new StringBuilder(obj.length() + 36), "Activity not found while launching ", obj, j.f13164z);
                     if (Build.FINGERPRINT.contains("generic")) {
-                        s9 = s9.concat(" This may occur when resolving Google Play services connection issues on emulators with Google APIs but not Google Play Store.");
+                        p9 = p9.concat(" This may occur when resolving Google Play services connection issues on emulators with Google APIs but not Google Play Store.");
                     }
-                    Log.e("GoogleApiActivity", s9, e);
+                    Log.e("GoogleApiActivity", p9, e);
                 }
-                googleApiActivity.f23611n = 1;
+                googleApiActivity.f24391n = 1;
                 finish();
             } catch (IntentSender.SendIntentException e10) {
                 e = e10;
@@ -118,7 +118,7 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
 
     @Override // android.app.Activity
     public final void onSaveInstanceState(Bundle bundle) {
-        bundle.putInt("resolution", this.f23611n);
+        bundle.putInt("resolution", this.f24391n);
         super.onSaveInstanceState(bundle);
     }
 }

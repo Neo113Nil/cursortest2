@@ -23,8 +23,8 @@ import java.lang.reflect.Method;
 
 /* loaded from: classes.dex */
 public final class a {
-    public static void a(WebView webView, boolean z3) {
-        if (z3) {
+    public static void a(WebView webView, boolean z6) {
+        if (z6) {
             webView.stopLoading();
             webView.loadUrl("");
         }
@@ -152,8 +152,8 @@ public final class a {
         }
         try {
             if (context.checkPermission("android.permission.ACCESS_FINE_LOCATION", Process.myPid(), Process.myUid()) == 0) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(context, q.a(context, "system_dialog", com.anythink.expressad.foundation.h.k.f19634e));
-                builder.setMessage(context.getString(q.a(context, "location_ask_title", com.anythink.expressad.foundation.h.k.f19636g))).setCancelable(true).setPositiveButton(context.getString(q.a(context, "location_allow", com.anythink.expressad.foundation.h.k.f19636g)), new DialogInterface.OnClickListener() { // from class: com.anythink.core.basead.ui.a.a.3
+                AlertDialog.Builder builder = new AlertDialog.Builder(context, q.a(context, "system_dialog", com.anythink.expressad.foundation.h.k.f20421e));
+                builder.setMessage(context.getString(q.a(context, "location_ask_title", com.anythink.expressad.foundation.h.k.f20423g))).setCancelable(true).setPositiveButton(context.getString(q.a(context, "location_allow", com.anythink.expressad.foundation.h.k.f20423g)), new DialogInterface.OnClickListener() { // from class: com.anythink.core.basead.ui.a.a.3
                     @Override // android.content.DialogInterface.OnClickListener
                     public final void onClick(DialogInterface dialogInterface, int i) {
                         GeolocationPermissions.Callback callback2 = callback;
@@ -161,7 +161,7 @@ public final class a {
                             callback2.invoke(str, true, false);
                         }
                     }
-                }).setNegativeButton(context.getString(q.a(context, "location_deny", com.anythink.expressad.foundation.h.k.f19636g)), new DialogInterface.OnClickListener() { // from class: com.anythink.core.basead.ui.a.a.2
+                }).setNegativeButton(context.getString(q.a(context, "location_deny", com.anythink.expressad.foundation.h.k.f20423g)), new DialogInterface.OnClickListener() { // from class: com.anythink.core.basead.ui.a.a.2
                     @Override // android.content.DialogInterface.OnClickListener
                     public final void onClick(DialogInterface dialogInterface, int i) {
                         GeolocationPermissions.Callback callback2 = callback;

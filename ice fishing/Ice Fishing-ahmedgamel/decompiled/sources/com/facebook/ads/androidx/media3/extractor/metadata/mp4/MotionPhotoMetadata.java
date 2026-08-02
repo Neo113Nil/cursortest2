@@ -4,8 +4,8 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.anythink.core.common.s.a.c;
 import com.facebook.ads.androidx.media3.common.Metadata;
-import com.instagram.common.viewpoint.core.AbstractC2459rd;
-import com.instagram.common.viewpoint.core.C2400qI;
+import com.instagram.common.viewpoint.core.AbstractC2479rd;
+import com.instagram.common.viewpoint.core.C2420qI;
 import com.instagram.common.viewpoint.core.C3E;
 import com.instagram.common.viewpoint.core.IN;
 import java.util.Arrays;
@@ -20,16 +20,16 @@ public final class MotionPhotoMetadata implements Metadata.Entry {
     public final long A03;
     public final long A04;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 104);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 104);
         }
         return new String(copyOfRange);
     }
 
     public static void A01() {
-        A05 = new byte[]{13, 1, 81, 73, 80, 85, 80, 49, 83, 70, 84, 70, 79, 85, 66, 85, 74, 80, 79, 53, 74, 78, 70, 84, 85, 66, 78, 81, 54, 84, 30, -27, -39, 41, 33, 40, 45, 40, 12, 34, 51, 30, -10, 3, -9, 77, c.f16317b, 59, 60, 70, 42, c.f16317b, 81, 60, 20, -49, -61, 25, 12, 7, 8, 18, -10, 23, 4, 21, 23, -13, 18, 22, 12, 23, 12, 18, 17, -32, 18, 52, 57, 46, 52, 51, -27, 53, 45, 52, 57, 52, -27, 50, 42, 57, 38, 41, 38, 57, 38, -1, -27, 53, 45, 52, 57, 52, 24, 57, 38, 55, 57, 21, 52, 56, 46, 57, 46, 52, 51, 2};
+        A05 = new byte[]{13, 1, 81, 73, 80, 85, 80, 49, 83, 70, 84, 70, 79, 85, 66, 85, 74, 80, 79, 53, 74, 78, 70, 84, 85, 66, 78, 81, 54, 84, 30, -27, -39, 41, 33, 40, 45, 40, 12, 34, 51, 30, -10, 3, -9, 77, c.f17104b, 59, 60, 70, 42, c.f17104b, 81, 60, 20, -49, -61, 25, 12, 7, 8, 18, -10, 23, 4, 21, 23, -13, 18, 22, 12, 23, 12, 18, 17, -32, 18, 52, 57, 46, 52, 51, -27, 53, 45, 52, 57, 52, -27, 50, 42, 57, 38, 41, 38, 57, 38, -1, -27, 53, 45, 52, 57, 52, 24, 57, 38, 55, 57, 21, 52, 56, 46, 57, 46, 52, 51, 2};
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Metadata.Entry
@@ -38,7 +38,7 @@ public final class MotionPhotoMetadata implements Metadata.Entry {
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Metadata.Entry
-    public final /* synthetic */ C2400qI A9b() {
+    public final /* synthetic */ C2420qI A9b() {
         return C3E.A00(this);
     }
 
@@ -84,11 +84,11 @@ public final class MotionPhotoMetadata implements Metadata.Entry {
     }
 
     public final int hashCode() {
-        int result = AbstractC2459rd.A00(this.A02);
-        int A00 = ((((17 * 31) + result) * 31) + AbstractC2459rd.A00(this.A01)) * 31;
-        int result2 = AbstractC2459rd.A00(this.A00);
-        int A002 = (((A00 + result2) * 31) + AbstractC2459rd.A00(this.A04)) * 31;
-        int result3 = AbstractC2459rd.A00(this.A03);
+        int result = AbstractC2479rd.A00(this.A02);
+        int A00 = ((((17 * 31) + result) * 31) + AbstractC2479rd.A00(this.A01)) * 31;
+        int result2 = AbstractC2479rd.A00(this.A00);
+        int A002 = (((A00 + result2) * 31) + AbstractC2479rd.A00(this.A04)) * 31;
+        int result3 = AbstractC2479rd.A00(this.A03);
         return A002 + result3;
     }
 

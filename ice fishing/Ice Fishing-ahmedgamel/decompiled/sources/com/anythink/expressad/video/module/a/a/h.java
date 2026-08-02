@@ -2,8 +2,8 @@ package com.anythink.expressad.video.module.a.a;
 
 /* loaded from: classes.dex */
 public final class h extends k {
-    public h(com.anythink.expressad.foundation.d.d dVar, com.anythink.expressad.videocommon.b.c cVar, com.anythink.expressad.videocommon.c.c cVar2, String str, String str2, com.anythink.expressad.video.module.a.a aVar, int i, boolean z3) {
-        super(dVar, cVar, cVar2, str, str2, aVar, i, z3);
+    public h(com.anythink.expressad.foundation.d.d dVar, com.anythink.expressad.videocommon.b.c cVar, com.anythink.expressad.videocommon.c.c cVar2, String str, String str2, com.anythink.expressad.video.module.a.a aVar, int i, boolean z6) {
+        super(dVar, cVar, cVar2, str, str2, aVar, i, z6);
     }
 
     @Override // com.anythink.expressad.video.module.a.a.k, com.anythink.expressad.video.module.a.a.f, com.anythink.expressad.video.module.a.a
@@ -31,7 +31,7 @@ public final class h extends k {
                 a(4, str);
             }
         } else {
-            com.anythink.expressad.foundation.d.d dVar = this.f21769Z;
+            com.anythink.expressad.foundation.d.d dVar = this.f22556Z;
             if (dVar != null && dVar.K() == 2) {
                 e();
                 d();

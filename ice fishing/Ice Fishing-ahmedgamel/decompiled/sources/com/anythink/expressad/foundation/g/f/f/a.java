@@ -18,20 +18,20 @@ import org.apache.http.conn.ConnectTimeoutException;
 public class a implements h {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19312a = "a";
+    private static final String f20099a = "a";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final int f19313b = 3000;
+    private static final int f20100b = 3000;
 
     /* renamed from: c, reason: collision with root package name */
-    private com.anythink.expressad.foundation.g.f.e.a f19314c;
+    private com.anythink.expressad.foundation.g.f.e.a f20101c;
 
     /* renamed from: d, reason: collision with root package name */
-    private com.anythink.expressad.foundation.g.f.c f19315d;
+    private com.anythink.expressad.foundation.g.f.c f20102d;
 
     public a(com.anythink.expressad.foundation.g.f.e.a aVar, com.anythink.expressad.foundation.g.f.c cVar) {
-        this.f19314c = aVar;
-        this.f19315d = cVar;
+        this.f20101c = aVar;
+        this.f20102d = cVar;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:152:0x02a7  */
@@ -66,10 +66,10 @@ public class a implements h {
                         try {
                             jVar.i();
                             try {
-                                bVar = this.f19314c.a(jVar);
+                                bVar = this.f20101c.a(jVar);
                                 try {
                                     a9 = bVar.a();
-                                    bArr = jVar.a(bVar, this.f19315d);
+                                    bArr = jVar.a(bVar, this.f20102d);
                                     try {
                                         str2 = str3;
                                     } catch (IOException e9) {
@@ -204,21 +204,21 @@ public class a implements h {
                 }
             }
             jVar.c();
-            this.f19315d.b(jVar);
+            this.f20102d.b(jVar);
             throw new com.anythink.expressad.foundation.g.f.a.a(-2, null);
         }
         if (jVar.f()) {
             jVar.c();
-            this.f19315d.b(jVar);
+            this.f20102d.b(jVar);
             throw new com.anythink.expressad.foundation.g.f.a.a(-2, null);
         }
         try {
             try {
                 jVar.i();
-                bVar2 = this.f19314c.a(jVar);
+                bVar2 = this.f20101c.a(jVar);
                 try {
                     a10 = bVar2.a();
-                    bArr2 = jVar.a(bVar2, this.f19315d);
+                    bArr2 = jVar.a(bVar2, this.f20102d);
                     try {
                         j6 = elapsedRealtime;
                     } catch (IOException e29) {
@@ -309,36 +309,36 @@ public class a implements h {
     }
 
     private static void a(long j6, j<?> jVar, byte[] bArr, int i) {
-        if (com.anythink.expressad.a.f17618a) {
+        if (com.anythink.expressad.a.f18405a) {
             Object obj = "null";
             try {
                 if (j6 > com.anythink.expressad.video.module.a.a.m.ai) {
-                    String d2 = jVar.d();
+                    String d9 = jVar.d();
                     Integer valueOf = Integer.valueOf(jVar.a());
                     Long valueOf2 = Long.valueOf(j6);
                     if (bArr != null) {
                         obj = Integer.valueOf(bArr.length);
                     }
-                    String.format("Slow HTTP response for request=<%s> [method=%s] [lifetime=%d], [size=%s], [statusCode=%d], [retryCount=%s]", d2, valueOf, valueOf2, obj, Integer.valueOf(i), Integer.valueOf(jVar.l().c()));
+                    String.format("Slow HTTP response for request=<%s> [method=%s] [lifetime=%d], [size=%s], [statusCode=%d], [retryCount=%s]", d9, valueOf, valueOf2, obj, Integer.valueOf(i), Integer.valueOf(jVar.l().c()));
                     return;
                 }
-                String d9 = jVar.d();
+                String d10 = jVar.d();
                 Integer valueOf3 = Integer.valueOf(jVar.a());
                 Long valueOf4 = Long.valueOf(j6);
                 if (bArr != null) {
                     obj = Integer.valueOf(bArr.length);
                 }
-                String.format("Normal HTTP response for request=<%s> [method=%s] [lifetime=%d], [size=%s], [statusCode=%d], [retryCount=%s]", d9, valueOf3, valueOf4, obj, Integer.valueOf(i), Integer.valueOf(jVar.l().c()));
+                String.format("Normal HTTP response for request=<%s> [method=%s] [lifetime=%d], [size=%s], [statusCode=%d], [retryCount=%s]", d10, valueOf3, valueOf4, obj, Integer.valueOf(i), Integer.valueOf(jVar.l().c()));
             } catch (Exception unused) {
             }
         }
     }
 
     private static void a(String str, long j6, j<?> jVar) {
-        if (com.anythink.expressad.a.f17618a) {
+        if (com.anythink.expressad.a.f18405a) {
             try {
                 URL url = new URL(jVar.d());
-                String str2 = f19312a;
+                String str2 = f20099a;
                 String str3 = url.getHost() + url.getPath();
                 Long valueOf = Long.valueOf(j6);
                 if (str == null) {
@@ -355,12 +355,12 @@ public class a implements h {
             try {
                 m l9 = jVar.l();
                 if (l9 != null) {
-                    long h9 = l9.h();
+                    long h3 = l9.h();
                     if (!l9.d()) {
                         throw aVar;
                     }
-                    if (j6 < h9) {
-                        this.f19315d.e(jVar);
+                    if (j6 < h3) {
+                        this.f20102d.e(jVar);
                         return;
                     }
                     throw aVar;

@@ -6,116 +6,116 @@ import org.xmlpull.v1.XmlPullParser;
 public final class am extends ay {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f9302a = "NonLinear";
+    private static final String f10088a = "NonLinear";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f9303b = "StaticResource";
+    private static final String f10089b = "StaticResource";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f9304c = "IFrameResource";
+    private static final String f10090c = "IFrameResource";
 
     /* renamed from: d, reason: collision with root package name */
-    private static final String f9305d = "HTMLResource";
+    private static final String f10091d = "HTMLResource";
 
     /* renamed from: e, reason: collision with root package name */
-    private static final String f9306e = "AdParameters";
+    private static final String f10092e = "AdParameters";
 
     /* renamed from: f, reason: collision with root package name */
-    private static final String f9307f = "NonLinearClickThrough";
+    private static final String f10093f = "NonLinearClickThrough";
 
     /* renamed from: g, reason: collision with root package name */
-    private static final String f9308g = "NonLinearClickTracking";
+    private static final String f10094g = "NonLinearClickTracking";
 
     /* renamed from: h, reason: collision with root package name */
-    private String f9309h;
+    private String f10095h;
     private String i;
 
     /* renamed from: j, reason: collision with root package name */
-    private String f9310j;
+    private String f10096j;
 
     /* renamed from: k, reason: collision with root package name */
-    private String f9311k;
+    private String f10097k;
 
     /* renamed from: l, reason: collision with root package name */
-    private String f9312l;
+    private String f10098l;
 
     /* renamed from: m, reason: collision with root package name */
-    private String f9313m;
+    private String f10099m;
 
     /* renamed from: n, reason: collision with root package name */
-    private String f9314n;
+    private String f10100n;
 
     /* renamed from: o, reason: collision with root package name */
-    private String f9315o;
+    private String f10101o;
 
     /* renamed from: p, reason: collision with root package name */
-    private String f9316p;
+    private String f10102p;
 
     /* renamed from: q, reason: collision with root package name */
-    private ar f9317q;
+    private ar f10103q;
 
     /* renamed from: r, reason: collision with root package name */
-    private aa f9318r;
+    private aa f10104r;
 
     /* renamed from: s, reason: collision with root package name */
-    private z f9319s;
+    private z f10105s;
 
     /* renamed from: t, reason: collision with root package name */
-    private b f9320t;
+    private b f10106t;
 
     /* renamed from: u, reason: collision with root package name */
-    private ao f9321u;
+    private ao f10107u;
 
     /* renamed from: v, reason: collision with root package name */
-    private ap f9322v;
+    private ap f10108v;
 
     public am(XmlPullParser xmlPullParser) {
-        xmlPullParser.require(2, null, f9302a);
-        this.f9309h = xmlPullParser.getAttributeValue(null, "id");
+        xmlPullParser.require(2, null, f10088a);
+        this.f10095h = xmlPullParser.getAttributeValue(null, "id");
         this.i = xmlPullParser.getAttributeValue(null, "width");
-        this.f9310j = xmlPullParser.getAttributeValue(null, "height");
-        this.f9311k = xmlPullParser.getAttributeValue(null, "expandedWidth");
-        this.f9312l = xmlPullParser.getAttributeValue(null, "expandedHeight");
-        this.f9313m = xmlPullParser.getAttributeValue(null, "scalable");
-        this.f9314n = xmlPullParser.getAttributeValue(null, "maintainAspectRatio");
-        this.f9315o = xmlPullParser.getAttributeValue(null, "minSuggestedDuration");
-        this.f9316p = xmlPullParser.getAttributeValue(null, "apiFramework");
+        this.f10096j = xmlPullParser.getAttributeValue(null, "height");
+        this.f10097k = xmlPullParser.getAttributeValue(null, "expandedWidth");
+        this.f10098l = xmlPullParser.getAttributeValue(null, "expandedHeight");
+        this.f10099m = xmlPullParser.getAttributeValue(null, "scalable");
+        this.f10100n = xmlPullParser.getAttributeValue(null, "maintainAspectRatio");
+        this.f10101o = xmlPullParser.getAttributeValue(null, "minSuggestedDuration");
+        this.f10102p = xmlPullParser.getAttributeValue(null, "apiFramework");
         while (xmlPullParser.next() != 3) {
             if (xmlPullParser.getEventType() == 2) {
                 String name = xmlPullParser.getName();
-                if (name != null && name.equals(f9303b)) {
-                    xmlPullParser.require(2, null, f9303b);
-                    this.f9317q = new ar(xmlPullParser);
-                    xmlPullParser.require(3, null, f9303b);
-                } else if (name != null && name.equals(f9304c)) {
-                    xmlPullParser.require(2, null, f9304c);
-                    this.f9318r = new aa(xmlPullParser);
-                    xmlPullParser.require(3, null, f9304c);
-                } else if (name != null && name.equals(f9305d)) {
-                    xmlPullParser.require(2, null, f9305d);
-                    this.f9319s = new z(xmlPullParser);
-                    xmlPullParser.require(3, null, f9305d);
-                } else if (name != null && name.equals(f9306e)) {
-                    xmlPullParser.require(2, null, f9306e);
-                    this.f9320t = new b(xmlPullParser);
-                    xmlPullParser.require(3, null, f9306e);
-                } else if (name != null && name.equals(f9307f)) {
-                    xmlPullParser.require(2, null, f9307f);
-                    this.f9321u = new ao(xmlPullParser);
-                    xmlPullParser.require(3, null, f9307f);
-                } else if (name == null || !name.equals(f9308g)) {
+                if (name != null && name.equals(f10089b)) {
+                    xmlPullParser.require(2, null, f10089b);
+                    this.f10103q = new ar(xmlPullParser);
+                    xmlPullParser.require(3, null, f10089b);
+                } else if (name != null && name.equals(f10090c)) {
+                    xmlPullParser.require(2, null, f10090c);
+                    this.f10104r = new aa(xmlPullParser);
+                    xmlPullParser.require(3, null, f10090c);
+                } else if (name != null && name.equals(f10091d)) {
+                    xmlPullParser.require(2, null, f10091d);
+                    this.f10105s = new z(xmlPullParser);
+                    xmlPullParser.require(3, null, f10091d);
+                } else if (name != null && name.equals(f10092e)) {
+                    xmlPullParser.require(2, null, f10092e);
+                    this.f10106t = new b(xmlPullParser);
+                    xmlPullParser.require(3, null, f10092e);
+                } else if (name != null && name.equals(f10093f)) {
+                    xmlPullParser.require(2, null, f10093f);
+                    this.f10107u = new ao(xmlPullParser);
+                    xmlPullParser.require(3, null, f10093f);
+                } else if (name == null || !name.equals(f10094g)) {
                     ay.b(xmlPullParser);
                 } else {
-                    xmlPullParser.require(2, null, f9308g);
-                    this.f9322v = new ap(xmlPullParser);
-                    xmlPullParser.require(3, null, f9308g);
+                    xmlPullParser.require(2, null, f10094g);
+                    this.f10108v = new ap(xmlPullParser);
+                    xmlPullParser.require(3, null, f10094g);
                 }
             }
         }
     }
 
     private String a() {
-        return this.f9309h;
+        return this.f10095h;
     }
 
     private String b() {
@@ -123,54 +123,54 @@ public final class am extends ay {
     }
 
     private String c() {
-        return this.f9310j;
+        return this.f10096j;
     }
 
     private String d() {
-        return this.f9311k;
+        return this.f10097k;
     }
 
     private String e() {
-        return this.f9312l;
+        return this.f10098l;
     }
 
     private String f() {
-        return this.f9313m;
+        return this.f10099m;
     }
 
     private String g() {
-        return this.f9314n;
+        return this.f10100n;
     }
 
     private String h() {
-        return this.f9315o;
+        return this.f10101o;
     }
 
     private String i() {
-        return this.f9316p;
+        return this.f10102p;
     }
 
     private ar j() {
-        return this.f9317q;
+        return this.f10103q;
     }
 
     private aa k() {
-        return this.f9318r;
+        return this.f10104r;
     }
 
     private z l() {
-        return this.f9319s;
+        return this.f10105s;
     }
 
     private b m() {
-        return this.f9320t;
+        return this.f10106t;
     }
 
     private ao n() {
-        return this.f9321u;
+        return this.f10107u;
     }
 
     private ap o() {
-        return this.f9322v;
+        return this.f10108v;
     }
 }

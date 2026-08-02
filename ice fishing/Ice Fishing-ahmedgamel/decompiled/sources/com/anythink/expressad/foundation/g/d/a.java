@@ -59,19 +59,19 @@ public final class a {
         }
     }
 
-    private static int a(BitmapFactory.Options options, int i, int i6) {
+    private static int a(BitmapFactory.Options options, int i, int i4) {
         int min;
-        double d2 = options.outWidth;
-        double d9 = options.outHeight;
-        int ceil = i6 == -1 ? 1 : (int) Math.ceil(Math.sqrt((d2 * d9) / i6));
+        double d9 = options.outWidth;
+        double d10 = options.outHeight;
+        int ceil = i4 == -1 ? 1 : (int) Math.ceil(Math.sqrt((d9 * d10) / i4));
         if (i == -1) {
             min = 128;
         } else {
-            double d10 = i;
-            min = (int) Math.min(Math.floor(d2 / d10), Math.floor(d9 / d10));
+            double d11 = i;
+            min = (int) Math.min(Math.floor(d9 / d11), Math.floor(d10 / d11));
         }
         if (min >= ceil) {
-            if (i6 == -1 && i == -1) {
+            if (i4 == -1 && i == -1) {
                 return 1;
             }
             if (i != -1) {
@@ -82,7 +82,7 @@ public final class a {
     }
 
     private static Bitmap a(Bitmap bitmap) {
-        float f3;
+        float f2;
         float f9;
         float f10;
         float f11;
@@ -94,12 +94,12 @@ public final class a {
         if (width <= height) {
             f11 = width / 2;
             f10 = width;
-            f3 = 0.0f;
+            f2 = 0.0f;
             f9 = f10;
         } else {
-            f3 = (width - height) / 2;
+            f2 = (width - height) / 2;
             f9 = height;
-            f10 = width - f3;
+            f10 = width - f2;
             width = height;
             f11 = height / 2;
         }
@@ -108,7 +108,7 @@ public final class a {
             Canvas canvas = new Canvas(createBitmap);
             Paint paint = new Paint();
             int i = (int) f9;
-            Rect rect = new Rect((int) f3, 0, (int) f10, i);
+            Rect rect = new Rect((int) f2, 0, (int) f10, i);
             Rect rect2 = new Rect(0, 0, i, i);
             RectF rectF = new RectF(rect2);
             paint.setAntiAlias(true);

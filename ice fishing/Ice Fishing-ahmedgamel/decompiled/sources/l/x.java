@@ -2,7 +2,7 @@ package l;
 
 /* loaded from: classes.dex */
 public interface x {
-    void b(m mVar, boolean z3);
+    void b(m mVar, boolean z6);
 
-    boolean j(m mVar);
+    boolean e(m mVar);
 }

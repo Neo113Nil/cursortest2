@@ -10,8 +10,8 @@ public final class ZT extends View {
     @Nullable
     public ZS A00;
 
-    public ZT(C1840gi c1840gi, ZS zs) {
-        super(c1840gi);
+    public ZT(C1860gi c1860gi, ZS zs) {
+        super(c1860gi);
         this.A00 = zs;
         setLayoutParams(new ViewGroup.LayoutParams(0, 0));
     }

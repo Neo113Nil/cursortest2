@@ -1,6 +1,6 @@
 package kotlin.jvm.internal;
 
-import D.y;
+import D.x;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Collection;
@@ -10,7 +10,7 @@ import java.util.Iterator;
 public abstract class h {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Object[] f38713a = new Object[0];
+    public static final Object[] f38640a = new Object[0];
 
     public static boolean a(Object obj, Object obj2) {
         return obj == null ? obj2 == null : obj.equals(obj2);
@@ -55,17 +55,17 @@ public abstract class h {
                 i++;
             }
             StackTraceElement stackTraceElement = stackTrace[i];
-            NullPointerException nullPointerException = new NullPointerException("Parameter specified as non-null is null: method " + stackTraceElement.getClassName() + com.anythink.core.common.d.j.f12378z + stackTraceElement.getMethodName() + ", parameter " + str);
+            NullPointerException nullPointerException = new NullPointerException("Parameter specified as non-null is null: method " + stackTraceElement.getClassName() + com.anythink.core.common.d.j.f13164z + stackTraceElement.getMethodName() + ", parameter " + str);
             i(nullPointerException, h.class.getName());
             throw nullPointerException;
         }
     }
 
-    public static int f(int i, int i6) {
-        if (i < i6) {
+    public static int f(int i, int i4) {
+        if (i < i4) {
             return -1;
         }
-        return i == i6 ? 0 : 1;
+        return i == i4 ? 0 : 1;
     }
 
     public static int g(long j6, long j9) {
@@ -83,9 +83,9 @@ public abstract class h {
         StackTraceElement[] stackTrace = runtimeException.getStackTrace();
         int length = stackTrace.length;
         int i = -1;
-        for (int i6 = 0; i6 < length; i6++) {
-            if (str.equals(stackTrace[i6].getClassName())) {
-                i = i6;
+        for (int i4 = 0; i4 < length; i4++) {
+            if (str.equals(stackTrace[i4].getClassName())) {
+                i = i4;
             }
         }
         runtimeException.setStackTrace((StackTraceElement[]) Arrays.copyOfRange(stackTrace, i + 1, length));
@@ -455,41 +455,41 @@ public abstract class h {
     }
 
     public static void k(String str) {
-        B0.c cVar = new B0.c(y.o("lateinit property ", str, " has not been initialized"));
+        B0.c cVar = new B0.c(x.l("lateinit property ", str, " has not been initialized"));
         i(cVar, h.class.getName());
         throw cVar;
     }
 
     public static final Object[] l(Collection collection) {
         int size = collection.size();
-        Object[] objArr = f38713a;
+        Object[] objArr = f38640a;
         if (size != 0) {
             Iterator it = collection.iterator();
             if (it.hasNext()) {
                 Object[] objArr2 = new Object[size];
                 int i = 0;
                 while (true) {
-                    int i6 = i + 1;
+                    int i4 = i + 1;
                     objArr2[i] = it.next();
-                    if (i6 >= objArr2.length) {
+                    if (i4 >= objArr2.length) {
                         if (!it.hasNext()) {
                             return objArr2;
                         }
-                        int i9 = ((i6 * 3) + 1) >>> 1;
-                        if (i9 <= i6) {
-                            i9 = 2147483645;
-                            if (i6 >= 2147483645) {
+                        int i6 = ((i4 * 3) + 1) >>> 1;
+                        if (i6 <= i4) {
+                            i6 = 2147483645;
+                            if (i4 >= 2147483645) {
                                 throw new OutOfMemoryError();
                             }
                         }
-                        objArr2 = Arrays.copyOf(objArr2, i9);
+                        objArr2 = Arrays.copyOf(objArr2, i6);
                         d(objArr2, "copyOf(...)");
                     } else if (!it.hasNext()) {
-                        Object[] copyOf = Arrays.copyOf(objArr2, i6);
+                        Object[] copyOf = Arrays.copyOf(objArr2, i4);
                         d(copyOf, "copyOf(...)");
                         return copyOf;
                     }
-                    i = i6;
+                    i = i4;
                 }
             }
         }
@@ -511,31 +511,31 @@ public abstract class h {
                     objArr2 = (Object[]) newInstance;
                 }
                 while (true) {
-                    int i6 = i + 1;
+                    int i4 = i + 1;
                     objArr2[i] = it.next();
-                    if (i6 >= objArr2.length) {
+                    if (i4 >= objArr2.length) {
                         if (!it.hasNext()) {
                             return objArr2;
                         }
-                        int i9 = ((i6 * 3) + 1) >>> 1;
-                        if (i9 <= i6) {
-                            i9 = 2147483645;
-                            if (i6 >= 2147483645) {
+                        int i6 = ((i4 * 3) + 1) >>> 1;
+                        if (i6 <= i4) {
+                            i6 = 2147483645;
+                            if (i4 >= 2147483645) {
                                 throw new OutOfMemoryError();
                             }
                         }
-                        objArr2 = Arrays.copyOf(objArr2, i9);
+                        objArr2 = Arrays.copyOf(objArr2, i6);
                         d(objArr2, "copyOf(...)");
                     } else if (!it.hasNext()) {
                         if (objArr2 == objArr) {
-                            objArr[i6] = null;
+                            objArr[i4] = null;
                             return objArr;
                         }
-                        Object[] copyOf = Arrays.copyOf(objArr2, i6);
+                        Object[] copyOf = Arrays.copyOf(objArr2, i4);
                         d(copyOf, "copyOf(...)");
                         return copyOf;
                     }
-                    i = i6;
+                    i = i4;
                 }
             } else if (objArr.length > 0) {
                 objArr[0] = null;

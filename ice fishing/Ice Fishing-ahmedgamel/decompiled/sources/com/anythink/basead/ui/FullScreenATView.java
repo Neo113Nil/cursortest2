@@ -48,30 +48,30 @@ public class FullScreenATView extends BaseScreenATView {
     }
 
     private void ag() {
-        this.f9853O.setLayoutParams(new RelativeLayout.LayoutParams(-1, -1));
+        this.f10639O.setLayoutParams(new RelativeLayout.LayoutParams(-1, -1));
         if (o()) {
-            this.f9851M.addView(this.f9853O, 0);
+            this.f10637M.addView(this.f10639O, 0);
             return;
         }
-        if (b(this.f9844E)) {
+        if (b(this.f10630E)) {
             PanelView aa = aa();
-            int i = this.f9844E;
+            int i = this.f10630E;
             if (i != 1) {
                 if (i != 2) {
                     if (i == 5) {
-                        int i6 = this.f9865d;
-                        int i9 = (int) (i6 * 0.5f);
-                        this.f9853O.setLayoutParams(new RelativeLayout.LayoutParams(-1, i6 - i9));
+                        int i4 = this.f10651d;
+                        int i6 = (int) (i4 * 0.5f);
+                        this.f10639O.setLayoutParams(new RelativeLayout.LayoutParams(-1, i4 - i6));
                         RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) aa.getLayoutParams();
                         if (layoutParams != null) {
-                            layoutParams.width = this.f9864c;
-                            layoutParams.height = i9;
+                            layoutParams.width = this.f10650c;
+                            layoutParams.height = i6;
                             aa.setLayoutParams(layoutParams);
                             aa.removeAllViews();
-                            aa.setLayoutType(this.f9844E);
+                            aa.setLayoutType(this.f10630E);
                         }
                     } else if (i != 6) {
-                        if (this.f9735f.f14168o.J() != 0) {
+                        if (this.f10521f.f14954o.J() != 0) {
                             View shakeView = aa.getShakeView();
                             if (n()) {
                                 if (shakeView != null) {
@@ -84,44 +84,44 @@ public class FullScreenATView extends BaseScreenATView {
                     }
                 }
                 int a9 = q.a(getContext(), 300.0f);
-                this.f9853O.setLayoutParams(new RelativeLayout.LayoutParams(this.f9864c - a9, -1));
+                this.f10639O.setLayoutParams(new RelativeLayout.LayoutParams(this.f10650c - a9, -1));
                 RelativeLayout.LayoutParams layoutParams2 = (RelativeLayout.LayoutParams) aa.getLayoutParams();
                 if (layoutParams2 != null) {
                     layoutParams2.width = a9;
                     layoutParams2.height = -1;
                     aa.setLayoutParams(layoutParams2);
                     aa.removeAllViews();
-                    aa.setLayoutType(this.f9844E);
+                    aa.setLayoutType(this.f10630E);
                 }
             } else {
-                this.f9851M.setBackgroundColor(-1);
-                int i10 = (int) (this.f9865d * 0.5f);
-                int a10 = TextUtils.isEmpty(this.f9736g.z()) ? this.f9865d - i10 : (this.f9865d - i10) + q.a(getContext(), 50.0f);
-                this.f9853O.setLayoutParams(new RelativeLayout.LayoutParams(-1, i10));
-                this.f9853O.setNeedArc(true);
+                this.f10637M.setBackgroundColor(-1);
+                int i9 = (int) (this.f10651d * 0.5f);
+                int a10 = TextUtils.isEmpty(this.f10522g.z()) ? this.f10651d - i9 : (this.f10651d - i9) + q.a(getContext(), 50.0f);
+                this.f10639O.setLayoutParams(new RelativeLayout.LayoutParams(-1, i9));
+                this.f10639O.setNeedArc(true);
                 RelativeLayout.LayoutParams layoutParams3 = (RelativeLayout.LayoutParams) aa.getLayoutParams();
                 if (layoutParams3 != null) {
-                    layoutParams3.width = this.f9864c;
+                    layoutParams3.width = this.f10650c;
                     layoutParams3.height = a10;
                     aa.setLayoutParams(layoutParams3);
                     aa.removeAllViews();
-                    aa.setLayoutType(this.f9844E);
+                    aa.setLayoutType(this.f10630E);
                 }
             }
         }
-        this.f9851M.addView(this.f9853O, 0);
+        this.f10637M.addView(this.f10639O, 0);
     }
 
     private void ah() {
-        if (((BaseScreenATView) this).f9862a == 1 && this.J) {
+        if (((BaseScreenATView) this).f10648a == 1 && this.J) {
             RoundImageView roundImageView = new RoundImageView(getContext().getApplicationContext());
-            roundImageView.setImageResource(q.a(getContext(), "myoffer_reward_icon", k.f19632c));
+            roundImageView.setImageResource(q.a(getContext(), "myoffer_reward_icon", k.f20419c));
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(q.a(getContext(), 60.0f), q.a(getContext(), 60.0f));
             int i = 2;
-            if (b(this.f9844E)) {
-                int i6 = this.f9844E;
-                if (i6 == 2 || i6 == 6) {
-                    layoutParams.leftMargin = this.f9864c - q.a(getContext(), 330.0f);
+            if (b(this.f10630E)) {
+                int i4 = this.f10630E;
+                if (i4 == 2 || i4 == 6) {
+                    layoutParams.leftMargin = this.f10650c - q.a(getContext(), 330.0f);
                     layoutParams.topMargin = q.a(getContext(), 22.0f);
                 } else {
                     layoutParams.leftMargin = q.a(getContext(), 12.0f);
@@ -133,10 +133,10 @@ public class FullScreenATView extends BaseScreenATView {
             }
             roundImageView.setLayoutParams(layoutParams);
             try {
-                i = this.f9851M.indexOfChild(this.f9852N) + 1;
+                i = this.f10637M.indexOfChild(this.f10638N) + 1;
             } catch (Throwable unused) {
             }
-            this.f9851M.addView(roundImageView, i);
+            this.f10637M.addView(roundImageView, i);
         }
         LinearLayout linearLayout = this.ah;
         if (linearLayout != null) {
@@ -145,14 +145,14 @@ public class FullScreenATView extends BaseScreenATView {
     }
 
     private boolean ai() {
-        return ((BaseScreenATView) this).f9862a == 1 && this.f9845F != 100;
+        return ((BaseScreenATView) this).f10648a == 1 && this.f10631F != 100;
     }
 
     private boolean aj() {
-        if (((BaseScreenATView) this).f9862a != 1) {
+        if (((BaseScreenATView) this).f10648a != 1) {
             return false;
         }
-        int i = this.f9845F;
+        int i = this.f10631F;
         return i == 1 || i == 101;
     }
 
@@ -162,12 +162,12 @@ public class FullScreenATView extends BaseScreenATView {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void al() {
-        if (Y() || ((BaseScreenATView) this).f9862a != 1 || this.f9735f.f14168o.bj() <= 0) {
+        if (Y() || ((BaseScreenATView) this).f10648a != 1 || this.f10521f.f14954o.bj() <= 0) {
             return;
         }
-        long min = Math.min(this.f9847H, this.f9846G);
-        this.ap = Math.max(0L, min - this.f9735f.f14168o.bj());
-        this.aq = Math.min(min, this.f9735f.f14168o.bj());
+        long min = Math.min(this.f10633H, this.f10632G);
+        this.ap = Math.max(0L, min - this.f10521f.f14954o.bj());
+        this.aq = Math.min(min, this.f10521f.f14954o.bj());
     }
 
     @Override // com.anythink.basead.ui.BaseScreenATView
@@ -175,10 +175,10 @@ public class FullScreenATView extends BaseScreenATView {
         PanelView panelView = this.am;
         if (panelView != null) {
             panelView.setVisibility(4);
-            this.am.init(this.f9736g, this.f9735f, this.f9863b, n(), new PanelView.a() { // from class: com.anythink.basead.ui.FullScreenATView.3
+            this.am.init(this.f10522g, this.f10521f, this.f10649b, n(), new PanelView.a() { // from class: com.anythink.basead.ui.FullScreenATView.3
                 @Override // com.anythink.basead.ui.PanelView.a
-                public final void a(int i, int i6) {
-                    FullScreenATView.this.a(i, i6);
+                public final void a(int i, int i4) {
+                    FullScreenATView.this.a(i, i4);
                 }
 
                 @Override // com.anythink.basead.ui.PanelView.a
@@ -197,22 +197,22 @@ public class FullScreenATView extends BaseScreenATView {
     @Override // com.anythink.basead.ui.BaseScreenATView
     public void I() {
         super.I();
-        if (e.a(this.f9736g)) {
-            this.f9844E = 0;
+        if (e.a(this.f10522g)) {
+            this.f10630E = 0;
         } else {
-            this.f9844E = 8;
+            this.f10630E = 8;
         }
-        PanelView panelView = this.f9852N;
+        PanelView panelView = this.f10638N;
         if (panelView != null) {
-            panelView.setLayoutType(this.f9844E);
-            if (this.f9844E == 8 && this.f9735f.f14168o.J() == 0) {
-                this.f9852N.getCTAButton().setVisibility(8);
+            panelView.setLayoutType(this.f10630E);
+            if (this.f10630E == 8 && this.f10521f.f14954o.J() == 0) {
+                this.f10638N.getCTAButton().setVisibility(8);
             }
         }
         PanelView panelView2 = this.am;
         if (panelView2 != null) {
-            panelView2.setLayoutType(this.f9844E);
-            if (this.f9844E == 8 && this.f9735f.f14168o.J() == 0) {
+            panelView2.setLayoutType(this.f10630E);
+            if (this.f10630E == 8 && this.f10521f.f14954o.J() == 0) {
                 this.am.getCTAButton().setVisibility(8);
             }
         }
@@ -222,7 +222,7 @@ public class FullScreenATView extends BaseScreenATView {
     public final void L() {
         super.L();
         if (ai()) {
-            if (this.f9845F != 101) {
+            if (this.f10631F != 101) {
                 CountDownCloseView countDownCloseView = this.ak;
                 if (countDownCloseView != null) {
                     countDownCloseView.setVisibility(0);
@@ -242,14 +242,14 @@ public class FullScreenATView extends BaseScreenATView {
 
     @Override // com.anythink.basead.ui.BaseScreenATView
     public final void M() {
-        int aC = this.f9735f.f14168o.aC();
-        int i = ((BaseScreenATView) this).f9862a;
+        int aC = this.f10521f.f14954o.aC();
+        int i = ((BaseScreenATView) this).f10648a;
         if (i != 1) {
             if (i != 3) {
                 c(1);
                 return;
             }
-            if (this.f9848I) {
+            if (this.f10634I) {
                 c(1);
                 return;
             }
@@ -259,12 +259,12 @@ public class FullScreenATView extends BaseScreenATView {
                 return;
             }
             if (p()) {
-                this.f9744p = true;
+                this.f10530p = true;
             }
             x();
             return;
         }
-        if (this.f9744p) {
+        if (this.f10530p) {
             c(1);
             return;
         }
@@ -276,7 +276,7 @@ public class FullScreenATView extends BaseScreenATView {
             } else {
                 N();
                 if (p()) {
-                    this.f9744p = true;
+                    this.f10530p = true;
                 }
                 x();
                 return;
@@ -284,15 +284,15 @@ public class FullScreenATView extends BaseScreenATView {
         }
         if (aC == 1 || aC == 2) {
             try {
-                Toast.makeText(getContext().getApplicationContext(), getContext().getString(q.a(getContext(), "myoffer_reward_exit_tips_msg", k.f19636g)), 0).show();
+                Toast.makeText(getContext().getApplicationContext(), getContext().getString(q.a(getContext(), "myoffer_reward_exit_tips_msg", k.f20423g)), 0).show();
             } catch (Throwable unused) {
             }
             N();
             c(1);
             return;
         }
-        double ceil = Math.ceil(this.f9847H / 1000.0d);
-        if (this.f9746r != null) {
+        double ceil = Math.ceil(this.f10633H / 1000.0d);
+        if (this.f10532r != null) {
             double ceil2 = Math.ceil(r2.h() / 1000.0d);
             if (ceil > ceil2) {
                 ceil = ceil2;
@@ -318,7 +318,7 @@ public class FullScreenATView extends BaseScreenATView {
     @Override // com.anythink.basead.ui.BaseScreenATView
     public final void P() {
         super.P();
-        if (this.f9845F != 100) {
+        if (this.f10631F != 100) {
             d(8);
         }
         al();
@@ -345,33 +345,33 @@ public class FullScreenATView extends BaseScreenATView {
     @Override // com.anythink.basead.ui.BaseScreenATView
     public void U() {
         BaseEndCardView baseEndCardView;
-        if (this.f9851M == null || (baseEndCardView = this.f9853O) == null || baseEndCardView.getParent() != null) {
+        if (this.f10637M == null || (baseEndCardView = this.f10639O) == null || baseEndCardView.getParent() != null) {
             return;
         }
-        if (!e.a(this.f9736g, this.f9735f)) {
+        if (!e.a(this.f10522g, this.f10521f)) {
             af();
             return;
         }
-        this.f9853O.setLayoutParams(new RelativeLayout.LayoutParams(-1, -1));
-        if (!o() && b(this.f9844E)) {
+        this.f10639O.setLayoutParams(new RelativeLayout.LayoutParams(-1, -1));
+        if (!o() && b(this.f10630E)) {
             PanelView aa = aa();
-            int i = this.f9844E;
+            int i = this.f10630E;
             if (i != 1) {
                 if (i != 2) {
                     if (i == 5) {
-                        int i6 = this.f9865d;
-                        int i9 = (int) (i6 * 0.5f);
-                        this.f9853O.setLayoutParams(new RelativeLayout.LayoutParams(-1, i6 - i9));
+                        int i4 = this.f10651d;
+                        int i6 = (int) (i4 * 0.5f);
+                        this.f10639O.setLayoutParams(new RelativeLayout.LayoutParams(-1, i4 - i6));
                         RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) aa.getLayoutParams();
                         if (layoutParams != null) {
-                            layoutParams.width = this.f9864c;
-                            layoutParams.height = i9;
+                            layoutParams.width = this.f10650c;
+                            layoutParams.height = i6;
                             aa.setLayoutParams(layoutParams);
                             aa.removeAllViews();
-                            aa.setLayoutType(this.f9844E);
+                            aa.setLayoutType(this.f10630E);
                         }
                     } else if (i != 6) {
-                        if (this.f9735f.f14168o.J() != 0) {
+                        if (this.f10521f.f14954o.J() != 0) {
                             View shakeView = aa.getShakeView();
                             if (n()) {
                                 if (shakeView != null) {
@@ -384,46 +384,46 @@ public class FullScreenATView extends BaseScreenATView {
                     }
                 }
                 int a9 = q.a(getContext(), 300.0f);
-                this.f9853O.setLayoutParams(new RelativeLayout.LayoutParams(this.f9864c - a9, -1));
+                this.f10639O.setLayoutParams(new RelativeLayout.LayoutParams(this.f10650c - a9, -1));
                 RelativeLayout.LayoutParams layoutParams2 = (RelativeLayout.LayoutParams) aa.getLayoutParams();
                 if (layoutParams2 != null) {
                     layoutParams2.width = a9;
                     layoutParams2.height = -1;
                     aa.setLayoutParams(layoutParams2);
                     aa.removeAllViews();
-                    aa.setLayoutType(this.f9844E);
+                    aa.setLayoutType(this.f10630E);
                 }
             } else {
-                this.f9851M.setBackgroundColor(-1);
-                int i10 = (int) (this.f9865d * 0.5f);
-                int a10 = TextUtils.isEmpty(this.f9736g.z()) ? this.f9865d - i10 : (this.f9865d - i10) + q.a(getContext(), 50.0f);
-                this.f9853O.setLayoutParams(new RelativeLayout.LayoutParams(-1, i10));
-                this.f9853O.setNeedArc(true);
+                this.f10637M.setBackgroundColor(-1);
+                int i9 = (int) (this.f10651d * 0.5f);
+                int a10 = TextUtils.isEmpty(this.f10522g.z()) ? this.f10651d - i9 : (this.f10651d - i9) + q.a(getContext(), 50.0f);
+                this.f10639O.setLayoutParams(new RelativeLayout.LayoutParams(-1, i9));
+                this.f10639O.setNeedArc(true);
                 RelativeLayout.LayoutParams layoutParams3 = (RelativeLayout.LayoutParams) aa.getLayoutParams();
                 if (layoutParams3 != null) {
-                    layoutParams3.width = this.f9864c;
+                    layoutParams3.width = this.f10650c;
                     layoutParams3.height = a10;
                     aa.setLayoutParams(layoutParams3);
                     aa.removeAllViews();
-                    aa.setLayoutType(this.f9844E);
+                    aa.setLayoutType(this.f10630E);
                 }
             }
         }
-        this.f9851M.addView(this.f9853O, 0);
+        this.f10637M.addView(this.f10639O, 0);
     }
 
     @Override // com.anythink.basead.ui.BaseScreenATView
     public void V() {
         super.V();
-        if (((BaseScreenATView) this).f9862a == 1 && this.J) {
+        if (((BaseScreenATView) this).f10648a == 1 && this.J) {
             RoundImageView roundImageView = new RoundImageView(getContext().getApplicationContext());
-            roundImageView.setImageResource(q.a(getContext(), "myoffer_reward_icon", k.f19632c));
+            roundImageView.setImageResource(q.a(getContext(), "myoffer_reward_icon", k.f20419c));
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(q.a(getContext(), 60.0f), q.a(getContext(), 60.0f));
             int i = 2;
-            if (b(this.f9844E)) {
-                int i6 = this.f9844E;
-                if (i6 == 2 || i6 == 6) {
-                    layoutParams.leftMargin = this.f9864c - q.a(getContext(), 330.0f);
+            if (b(this.f10630E)) {
+                int i4 = this.f10630E;
+                if (i4 == 2 || i4 == 6) {
+                    layoutParams.leftMargin = this.f10650c - q.a(getContext(), 330.0f);
                     layoutParams.topMargin = q.a(getContext(), 22.0f);
                 } else {
                     layoutParams.leftMargin = q.a(getContext(), 12.0f);
@@ -435,17 +435,17 @@ public class FullScreenATView extends BaseScreenATView {
             }
             roundImageView.setLayoutParams(layoutParams);
             try {
-                i = this.f9851M.indexOfChild(this.f9852N) + 1;
+                i = this.f10637M.indexOfChild(this.f10638N) + 1;
             } catch (Throwable unused) {
             }
-            this.f9851M.addView(roundImageView, i);
+            this.f10637M.addView(roundImageView, i);
         }
         LinearLayout linearLayout = this.ah;
         if (linearLayout != null) {
             linearLayout.setVisibility(8);
         }
         if (o()) {
-            PanelView panelView = this.f9852N;
+            PanelView panelView = this.f10638N;
             if (panelView != null) {
                 panelView.setVisibility(8);
             }
@@ -459,7 +459,7 @@ public class FullScreenATView extends BaseScreenATView {
     @Override // com.anythink.basead.ui.BaseScreenATView
     public final CloseImageView X() {
         if (ai()) {
-            if (this.f9845F == 101) {
+            if (this.f10631F == 101) {
                 CloseHeaderView closeHeaderView = this.al;
                 if (closeHeaderView != null && closeHeaderView.getCloseImageView() != null) {
                     return this.al.getCloseImageView();
@@ -484,7 +484,7 @@ public class FullScreenATView extends BaseScreenATView {
     public final PanelView aa() {
         PanelView panelView;
         PanelView panelView2;
-        return (e.a(this.f9736g, this.f9735f) || (panelView2 = this.am) == null) ? (this.f9848I || this.f9845F == 1 || (panelView = this.am) == null) ? super.aa() : panelView : panelView2;
+        return (e.a(this.f10522g, this.f10521f) || (panelView2 = this.am) == null) ? (this.f10634I || this.f10631F == 1 || (panelView = this.am) == null) ? super.aa() : panelView : panelView2;
     }
 
     @Override // com.anythink.basead.ui.BaseScreenATView
@@ -493,7 +493,7 @@ public class FullScreenATView extends BaseScreenATView {
         if (Y()) {
             return;
         }
-        if (((BaseScreenATView) this).f9862a != 1 || this.f9845F == 100) {
+        if (((BaseScreenATView) this).f10648a != 1 || this.f10631F == 100) {
             super.ab();
             if (!p() || (panelView = this.am) == null) {
                 return;
@@ -501,11 +501,11 @@ public class FullScreenATView extends BaseScreenATView {
             panelView.setVisibility(8);
             return;
         }
-        com.anythink.basead.ui.component.a aVar = this.f9746r;
+        com.anythink.basead.ui.component.a aVar = this.f10532r;
         if (aVar == null || !aVar.a()) {
             return;
         }
-        final BasePlayerView l9 = this.f9746r.l();
+        final BasePlayerView l9 = this.f10532r.l();
         TranslateAnimation translateAnimation = new TranslateAnimation(0.0f, -getMeasuredWidth(), 0.0f, 0.0f);
         AlphaAnimation alphaAnimation = new AlphaAnimation(1.0f, 0.4f);
         AnimationSet animationSet = new AnimationSet(true);
@@ -551,37 +551,37 @@ public class FullScreenATView extends BaseScreenATView {
         super.ad();
         TextView textView = this.ai;
         if (textView != null) {
-            textView.setText(getContext().getString(q.a(getContext(), "myoffer_reward_tips_rewarded", k.f19636g)));
+            textView.setText(getContext().getString(q.a(getContext(), "myoffer_reward_tips_rewarded", k.f20423g)));
         }
         ImageView imageView = this.aj;
         if (imageView != null) {
-            imageView.setImageResource(q.a(getContext(), "reward_tips_icon_check", k.f19632c));
+            imageView.setImageResource(q.a(getContext(), "reward_tips_icon_check", k.f20419c));
         }
     }
 
     public final void af() {
-        this.f9853O.setLayoutParams(new RelativeLayout.LayoutParams(-1, -1));
+        this.f10639O.setLayoutParams(new RelativeLayout.LayoutParams(-1, -1));
         if (o()) {
-            this.f9851M.addView(this.f9853O, 0);
+            this.f10637M.addView(this.f10639O, 0);
         } else {
             aa().setVisibility(0);
-            this.f9851M.addView(this.f9853O, 0);
+            this.f10637M.addView(this.f10639O, 0);
         }
     }
 
     @Override // com.anythink.basead.ui.BaseScreenATView
     public final void d() {
         super.d();
-        if (this.f9746r == null || !ai()) {
+        if (this.f10532r == null || !ai()) {
             return;
         }
-        if (this.f9747s != null) {
+        if (this.f10533s != null) {
             HashMap hashMap = new HashMap();
-            hashMap.put(g.a.f11174j, Integer.valueOf(this.f9845F));
-            this.f9747s.a(hashMap);
+            hashMap.put(g.a.f11960j, Integer.valueOf(this.f10631F));
+            this.f10533s.a(hashMap);
         }
         a(125);
-        this.f9746r.e(this.f9845F);
+        this.f10532r.e(this.f10631F);
     }
 
     @Override // com.anythink.basead.ui.BaseScreenATView
@@ -590,8 +590,8 @@ public class FullScreenATView extends BaseScreenATView {
             super.e(i);
             return;
         }
-        this.f9855Q.setVisibility(8);
-        com.anythink.basead.ui.component.b bVar = this.f9860V;
+        this.f10641Q.setVisibility(8);
+        com.anythink.basead.ui.component.b bVar = this.f10646V;
         if (bVar != null) {
             bVar.a(8);
         }
@@ -623,34 +623,34 @@ public class FullScreenATView extends BaseScreenATView {
                     return;
                 }
                 FullScreenATView fullScreenATView = FullScreenATView.this;
-                fullScreenATView.f9847H = Math.max(0L, fullScreenATView.f9847H - j6);
+                fullScreenATView.f10633H = Math.max(0L, fullScreenATView.f10633H - j6);
                 FullScreenATView fullScreenATView2 = FullScreenATView.this;
                 if (fullScreenATView2.J) {
                     return;
                 }
                 fullScreenATView2.al();
                 FullScreenATView fullScreenATView3 = FullScreenATView.this;
-                if (fullScreenATView3.f9847H <= 0) {
+                if (fullScreenATView3.f10633H <= 0) {
                     fullScreenATView3.ad();
                     return;
                 }
-                com.anythink.basead.ui.component.a aVar = fullScreenATView3.f9746r;
+                com.anythink.basead.ui.component.a aVar = fullScreenATView3.f10532r;
                 if (aVar != null) {
                     long i = aVar.i();
                     if (i > 0) {
                         FullScreenATView fullScreenATView4 = FullScreenATView.this;
-                        if (i >= fullScreenATView4.f9847H) {
+                        if (i >= fullScreenATView4.f10633H) {
                             fullScreenATView4.ad();
                         } else {
-                            fullScreenATView4.b(fullScreenATView4.f9746r.i());
+                            fullScreenATView4.b(fullScreenATView4.f10532r.i());
                         }
                     }
                 }
             }
 
             @Override // com.anythink.basead.ui.improveclick.c.a
-            public final void a(int i, int i6) {
-                FullScreenATView.this.a(i, i6);
+            public final void a(int i, int i4) {
+                FullScreenATView.this.a(i, i4);
             }
         };
     }
@@ -666,24 +666,24 @@ public class FullScreenATView extends BaseScreenATView {
     @Override // com.anythink.basead.ui.BaseScreenATView
     public int y() {
         com.anythink.basead.ui.f.a aVar;
-        int i = this.f9844E;
+        int i = this.f10630E;
         if (i == 8) {
             return i;
         }
-        if (this.f9864c < this.f9865d) {
+        if (this.f10650c < this.f10651d) {
             return this.af >= this.ag ? 1 : 5;
         }
-        if (e.a(this.f9736g, this.f9735f) && (aVar = this.f9859U) != null) {
+        if (e.a(this.f10522g, this.f10521f) && (aVar = this.f10645U) != null) {
             aVar.a();
         }
         return this.af < this.ag ? 2 : 6;
     }
 
-    public FullScreenATView(Context context, x xVar, w wVar, String str, int i, int i6) {
-        super(context, xVar, wVar, str, i, i6);
+    public FullScreenATView(Context context, x xVar, w wVar, String str, int i, int i4) {
+        super(context, xVar, wVar, str, i, i4);
         setId(q.a(getContext(), "myoffer_full_screen_view_id", "id"));
         if (xVar != null) {
-            this.an = new d(wVar, xVar.f14168o);
+            this.an = new d(wVar, xVar.f14954o);
         }
         this.ap = -1L;
     }
@@ -698,10 +698,10 @@ public class FullScreenATView extends BaseScreenATView {
         super.b();
         d dVar = this.an;
         if (dVar != null) {
-            dVar.a(this.f9844E == 8 ? d.f10800b : -100).a(new com.anythink.basead.ui.d.a() { // from class: com.anythink.basead.ui.FullScreenATView.1
+            dVar.a(this.f10630E == 8 ? d.f11586b : -100).a(new com.anythink.basead.ui.d.a() { // from class: com.anythink.basead.ui.FullScreenATView.1
                 @Override // com.anythink.basead.ui.d.a
-                public final void a(int i, int i6) {
-                    FullScreenATView.this.a(i, i6);
+                public final void a(int i, int i4) {
+                    FullScreenATView.this.a(i, i4);
                 }
             }).a(getContext(), this);
         }
@@ -715,14 +715,14 @@ public class FullScreenATView extends BaseScreenATView {
         this.am = (PanelView) findViewById(q.a(getContext(), "myoffer_banner_view_for_anim_player_id", "id"));
         FullScreenHeaderPanelView fullScreenHeaderPanelView = (FullScreenHeaderPanelView) findViewById(q.a(getContext(), "myoffer_header_panel_view_id", "id"));
         this.ao = fullScreenHeaderPanelView;
-        if (fullScreenHeaderPanelView != null && e.a(this.f9736g)) {
-            this.ao.initSetting(this.f9736g, this.f9735f, new FullScreenHeaderPanelView.a() { // from class: com.anythink.basead.ui.FullScreenATView.2
+        if (fullScreenHeaderPanelView != null && e.a(this.f10522g)) {
+            this.ao.initSetting(this.f10522g, this.f10521f, new FullScreenHeaderPanelView.a() { // from class: com.anythink.basead.ui.FullScreenATView.2
                 @Override // com.anythink.basead.ui.FullScreenHeaderPanelView.a
                 public final void a() {
                     FullScreenATView.this.a(1, 23);
                 }
             });
-            this.f9858T = this.ao;
+            this.f10644T = this.ao;
         }
         this.ah = (LinearLayout) findViewById(q.a(getContext(), "myoffer_tv_reward_tips_ll_id", "id"));
         this.ai = (TextView) findViewById(q.a(getContext(), "myoffer_tv_reward_tips_id", "id"));
@@ -732,17 +732,17 @@ public class FullScreenATView extends BaseScreenATView {
     @Override // com.anythink.basead.ui.BaseATView
     public final boolean a(String str, IOfferClickHandler iOfferClickHandler) {
         if (Y()) {
-            this.f9848I = true;
-            com.anythink.basead.ui.component.a aVar = this.f9746r;
-            boolean z3 = aVar != null && aVar.a(str, iOfferClickHandler);
-            if (z3) {
+            this.f10634I = true;
+            com.anythink.basead.ui.component.a aVar = this.f10532r;
+            boolean z6 = aVar != null && aVar.a(str, iOfferClickHandler);
+            if (z6) {
                 a(105);
                 d dVar = this.an;
                 if (dVar != null) {
                     dVar.a();
                 }
             }
-            return z3;
+            return z6;
         }
         return super.a(str, iOfferClickHandler);
     }
@@ -750,7 +750,7 @@ public class FullScreenATView extends BaseScreenATView {
     @Override // com.anythink.basead.ui.BaseScreenATView
     public boolean b(int i) {
         if (i == 0 || i == 1 || i == 2 || i == 5 || i == 6) {
-            return e.a(this.f9736g);
+            return e.a(this.f10522g);
         }
         return i == 8;
     }
@@ -781,13 +781,13 @@ public class FullScreenATView extends BaseScreenATView {
         if (textView == null || this.aq <= j6 - this.ap) {
             return;
         }
-        textView.setText(String.format(getContext().getString(q.a(getContext(), "myoffer_reward_tips", k.f19636g)), Integer.valueOf((((int) (this.aq - (j6 - this.ap))) / 1000) + 1)));
+        textView.setText(String.format(getContext().getString(q.a(getContext(), "myoffer_reward_tips", k.f20423g)), Integer.valueOf((((int) (this.aq - (j6 - this.ap))) / 1000) + 1)));
     }
 
     @Override // com.anythink.basead.ui.BaseScreenATView
     public final void a(long j6) {
         int i;
-        if (((BaseScreenATView) this).f9862a == 1 && ((i = this.f9845F) == 1 || i == 101)) {
+        if (((BaseScreenATView) this).f10648a == 1 && ((i = this.f10631F) == 1 || i == 101)) {
             return;
         }
         super.a(j6);

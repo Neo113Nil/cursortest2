@@ -1,6 +1,6 @@
 package com.google.android.gms.internal.consent_sdk;
 
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.Arrays;
 import java.util.Objects;
 import java.util.Set;
@@ -9,7 +9,7 @@ import java.util.Set;
 public abstract class K extends G implements Set {
 
     /* renamed from: u, reason: collision with root package name */
-    public transient J f35555u;
+    public transient J f36324u;
 
     public static int f(int i) {
         int max = Math.max(i, 2);
@@ -28,33 +28,33 @@ public abstract class K extends G implements Set {
 
     public static K g(Object[] objArr, int i) {
         if (i == 0) {
-            return N.f35572B;
+            return N.f36341B;
         }
         if (i == 1) {
             Object obj = objArr[0];
             Objects.requireNonNull(obj);
             return new P(obj);
         }
-        int f3 = f(i);
-        Object[] objArr2 = new Object[f3];
-        int i6 = f3 - 1;
+        int f2 = f(i);
+        Object[] objArr2 = new Object[f2];
+        int i4 = f2 - 1;
+        int i6 = 0;
         int i9 = 0;
-        int i10 = 0;
-        for (int i11 = 0; i11 < i; i11++) {
-            Object obj2 = objArr[i11];
+        for (int i10 = 0; i10 < i; i10++) {
+            Object obj2 = objArr[i10];
             if (obj2 == null) {
-                throw new NullPointerException(AbstractC4404f.e(i11, "at index "));
+                throw new NullPointerException(Wv.f(i10, "at index "));
             }
             int hashCode = obj2.hashCode();
             int rotateLeft = (int) (Integer.rotateLeft((int) (hashCode * (-862048943)), 15) * 461845907);
             while (true) {
-                int i12 = rotateLeft & i6;
-                Object obj3 = objArr2[i12];
+                int i11 = rotateLeft & i4;
+                Object obj3 = objArr2[i11];
                 if (obj3 == null) {
-                    objArr[i10] = obj2;
-                    objArr2[i12] = obj2;
-                    i9 += hashCode;
-                    i10++;
+                    objArr[i9] = obj2;
+                    objArr2[i11] = obj2;
+                    i6 += hashCode;
+                    i9++;
                     break;
                 }
                 if (!obj3.equals(obj2)) {
@@ -62,19 +62,19 @@ public abstract class K extends G implements Set {
                 }
             }
         }
-        Arrays.fill(objArr, i10, i, (Object) null);
-        if (i10 == 1) {
+        Arrays.fill(objArr, i9, i, (Object) null);
+        if (i9 == 1) {
             Object obj4 = objArr[0];
             Objects.requireNonNull(obj4);
             return new P(obj4);
         }
-        if (f(i10) < f3 / 2) {
-            return g(objArr, i10);
+        if (f(i9) < f2 / 2) {
+            return g(objArr, i9);
         }
-        if (i10 < 3) {
-            objArr = Arrays.copyOf(objArr, i10);
+        if (i9 < 3) {
+            objArr = Arrays.copyOf(objArr, i9);
         }
-        return new N(i9, i6, i10, objArr, objArr2);
+        return new N(i6, i4, i9, objArr, objArr2);
     }
 
     @Override // java.util.Collection, java.util.Set

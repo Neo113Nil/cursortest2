@@ -1,6 +1,6 @@
 package com.anythink.basead.exoplayer.b;
 
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
@@ -8,17 +8,17 @@ import java.nio.ByteOrder;
 public interface f {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final ByteBuffer f6440a = ByteBuffer.allocateDirect(0).order(ByteOrder.nativeOrder());
+    public static final ByteBuffer f7226a = ByteBuffer.allocateDirect(0).order(ByteOrder.nativeOrder());
 
     public static final class a extends Exception {
         /* JADX WARN: Illegal instructions before constructor call */
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public a(int i, int i6, int i9) {
+        public a(int i, int i4, int i6) {
             super(r4.toString());
-            StringBuilder h9 = AbstractC4404f.h(i, i6, "Unhandled format: ", " Hz, ", " channels in encoding ");
-            h9.append(i9);
+            StringBuilder j6 = Wv.j(i, i4, "Unhandled format: ", " Hz, ", " channels in encoding ");
+            j6.append(i6);
         }
     }
 
@@ -26,7 +26,7 @@ public interface f {
 
     boolean a();
 
-    boolean a(int i, int i6, int i9);
+    boolean a(int i, int i4, int i6);
 
     int b();
 

@@ -6,5 +6,5 @@ import java.io.Serializable;
 public final class a implements Serializable {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final a f38708n = new a();
+    public static final a f38635n = new a();
 }

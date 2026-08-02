@@ -1,8 +1,8 @@
 package M0;
 
-import J0.s;
+import J0.r;
 import K0.p;
-import O2.B;
+import Q2.A;
 import T0.n;
 import T0.u;
 import android.content.Context;
@@ -11,7 +11,8 @@ import android.os.Looper;
 import android.os.PowerManager;
 import android.text.TextUtils;
 import androidx.work.impl.background.systemalarm.SystemAlarmService;
-import g1.C4523c;
+import com.google.android.gms.internal.ads.C3067cm;
+import i1.C4586c;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -19,48 +20,48 @@ import java.util.Iterator;
 public final class j implements K0.c {
 
     /* renamed from: C, reason: collision with root package name */
-    public static final String f1811C = s.f("SystemAlarmDispatcher");
+    public static final String f1844C = r.f("SystemAlarmDispatcher");
 
     /* renamed from: A, reason: collision with root package name */
-    public Intent f1812A;
+    public Intent f1845A;
 
     /* renamed from: B, reason: collision with root package name */
-    public SystemAlarmService f1813B;
+    public SystemAlarmService f1846B;
 
     /* renamed from: n, reason: collision with root package name */
-    public final Context f1814n;
+    public final Context f1847n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final Z2.e f1815u;
+    public final b3.e f1848u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final u f1816v;
+    public final u f1849v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final K0.f f1817w;
+    public final K0.f f1850w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final p f1818x;
+    public final p f1851x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final c f1819y;
+    public final c f1852y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final ArrayList f1820z;
+    public final ArrayList f1853z;
 
     public j(SystemAlarmService systemAlarmService) {
         Context applicationContext = systemAlarmService.getApplicationContext();
-        this.f1814n = applicationContext;
-        this.f1819y = new c(applicationContext, new S0.c(3));
+        this.f1847n = applicationContext;
+        this.f1852y = new c(applicationContext, new C3067cm(2));
         p b9 = p.b(systemAlarmService);
-        this.f1818x = b9;
-        this.f1816v = new u((C4523c) b9.f1533b.f1371h);
-        K0.f fVar = b9.f1537f;
-        this.f1817w = fVar;
-        this.f1815u = b9.f1535d;
+        this.f1851x = b9;
+        this.f1849v = new u((C4586c) b9.f1642b.f1400h);
+        K0.f fVar = b9.f1646f;
+        this.f1850w = fVar;
+        this.f1848u = b9.f1644d;
         fVar.a(this);
-        this.f1820z = new ArrayList();
-        this.f1812A = null;
+        this.f1853z = new ArrayList();
+        this.f1845A = null;
     }
 
     public static void c() {
@@ -70,20 +71,20 @@ public final class j implements K0.c {
     }
 
     public final void a(int i, Intent intent) {
-        s d2 = s.d();
-        String str = f1811C;
-        d2.a(str, "Adding command " + intent + " (" + i + ")");
+        r d9 = r.d();
+        String str = f1844C;
+        d9.a(str, "Adding command " + intent + " (" + i + ")");
         c();
         String action = intent.getAction();
         if (TextUtils.isEmpty(action)) {
-            s.d().g(str, "Unknown command. Ignoring");
+            r.d().g(str, "Unknown command. Ignoring");
             return;
         }
         if ("ACTION_CONSTRAINTS_CHANGED".equals(action)) {
             c();
-            synchronized (this.f1820z) {
+            synchronized (this.f1853z) {
                 try {
-                    Iterator it = this.f1820z.iterator();
+                    Iterator it = this.f1853z.iterator();
                     while (it.hasNext()) {
                         if ("ACTION_CONSTRAINTS_CHANGED".equals(((Intent) it.next()).getAction())) {
                             return;
@@ -94,10 +95,10 @@ public final class j implements K0.c {
             }
         }
         intent.putExtra("KEY_START_ID", i);
-        synchronized (this.f1820z) {
+        synchronized (this.f1853z) {
             try {
-                boolean isEmpty = this.f1820z.isEmpty();
-                this.f1820z.add(intent);
+                boolean isEmpty = this.f1853z.isEmpty();
+                this.f1853z.add(intent);
                 if (isEmpty) {
                     d();
                 }
@@ -107,22 +108,22 @@ public final class j implements K0.c {
     }
 
     @Override // K0.c
-    public final void b(S0.j jVar, boolean z3) {
-        B b9 = (B) this.f1815u.f4172w;
-        String str = c.f1780x;
-        Intent intent = new Intent(this.f1814n, (Class<?>) SystemAlarmService.class);
+    public final void b(S0.j jVar, boolean z6) {
+        A a9 = (A) this.f1848u.f5559w;
+        String str = c.f1813x;
+        Intent intent = new Intent(this.f1847n, (Class<?>) SystemAlarmService.class);
         intent.setAction("ACTION_EXECUTION_COMPLETED");
-        intent.putExtra("KEY_NEEDS_RESCHEDULE", z3);
+        intent.putExtra("KEY_NEEDS_RESCHEDULE", z6);
         c.d(intent, jVar);
-        b9.execute(new i(0, 0, this, intent));
+        a9.execute(new i(0, 0, this, intent));
     }
 
     public final void d() {
         c();
-        PowerManager.WakeLock a9 = n.a(this.f1814n, "ProcessCommand");
+        PowerManager.WakeLock a9 = n.a(this.f1847n, "ProcessCommand");
         try {
             a9.acquire();
-            this.f1818x.f1535d.i(new h(this, 0));
+            this.f1851x.f1644d.h(new h(this, 0));
         } finally {
             a9.release();
         }

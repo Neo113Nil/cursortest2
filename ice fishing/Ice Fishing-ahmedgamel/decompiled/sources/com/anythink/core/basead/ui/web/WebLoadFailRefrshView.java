@@ -10,7 +10,7 @@ import com.anythink.core.common.v.q;
 public class WebLoadFailRefrshView extends LinearLayout {
 
     /* renamed from: a, reason: collision with root package name */
-    private View.OnClickListener f11990a;
+    private View.OnClickListener f12776a;
 
     /* renamed from: com.anythink.core.basead.ui.web.WebLoadFailRefrshView$1, reason: invalid class name */
     public class AnonymousClass1 implements View.OnClickListener {
@@ -19,8 +19,8 @@ public class WebLoadFailRefrshView extends LinearLayout {
 
         @Override // android.view.View.OnClickListener
         public final void onClick(View view) {
-            if (WebLoadFailRefrshView.this.f11990a != null) {
-                WebLoadFailRefrshView.this.f11990a.onClick(view);
+            if (WebLoadFailRefrshView.this.f12776a != null) {
+                WebLoadFailRefrshView.this.f12776a.onClick(view);
             }
         }
     }
@@ -34,7 +34,7 @@ public class WebLoadFailRefrshView extends LinearLayout {
     }
 
     public void setOnRefreshListener(View.OnClickListener onClickListener) {
-        this.f11990a = onClickListener;
+        this.f12776a = onClickListener;
     }
 
     private void a() {

@@ -6,15 +6,15 @@ import com.anythink.core.common.m.d.d;
 public class a extends c {
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f14574b = "a";
+    private static final String f15360b = "a";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final int f14575c = 1;
+    private static final int f15361c = 1;
 
     @Override // com.anythink.core.common.m.d.a.c
     public final synchronized void a(d dVar, d.a aVar) {
         try {
-            int a9 = a(this.f14580a.getInputStream());
+            int a9 = a(this.f15366a.getInputStream());
             if (a9 != 1) {
                 throw new Exception("Response Error Code:".concat(String.valueOf(a9)));
             }

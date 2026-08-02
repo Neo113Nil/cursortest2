@@ -9,10 +9,10 @@ import com.anythink.basead.ui.ScanningAnimButton;
 public abstract class a implements d {
 
     /* renamed from: a, reason: collision with root package name */
-    protected ScanningAnimButton f10689a;
+    protected ScanningAnimButton f11475a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected ScanningAnimButton f10690b;
+    protected ScanningAnimButton f11476b;
 
     @Override // com.anythink.basead.ui.component.a.d
     public void a(ViewGroup viewGroup) {
@@ -20,17 +20,17 @@ public abstract class a implements d {
 
     @Override // com.anythink.basead.ui.component.a.d
     public final View b() {
-        return this.f10689a;
+        return this.f11475a;
     }
 
     @Override // com.anythink.basead.ui.component.a.d
     public final View c() {
-        return this.f10690b;
+        return this.f11476b;
     }
 
     @Override // com.anythink.basead.ui.component.a.d
     public final void a(Drawable drawable) {
-        ScanningAnimButton scanningAnimButton = this.f10689a;
+        ScanningAnimButton scanningAnimButton = this.f11475a;
         if (scanningAnimButton == null || drawable == null) {
             return;
         }
@@ -42,7 +42,7 @@ public abstract class a implements d {
 
     @Override // com.anythink.basead.ui.component.a.d
     public final void a(String str) {
-        ScanningAnimButton scanningAnimButton = this.f10689a;
+        ScanningAnimButton scanningAnimButton = this.f11475a;
         if (scanningAnimButton != null) {
             scanningAnimButton.setText(str);
         }
@@ -50,7 +50,7 @@ public abstract class a implements d {
 
     @Override // com.anythink.basead.ui.component.a.d
     public final String a() {
-        ScanningAnimButton scanningAnimButton = this.f10689a;
+        ScanningAnimButton scanningAnimButton = this.f11475a;
         if (scanningAnimButton != null) {
             scanningAnimButton.getText().toString();
             return "";

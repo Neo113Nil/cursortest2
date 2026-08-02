@@ -10,7 +10,7 @@ import com.iab.omid.library.toponad.utils.g;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private boolean f36220a;
+    private boolean f36987a;
 
     private void b(Context context) {
         g.a(context, "Application Context cannot be null");
@@ -42,10 +42,10 @@ public class b {
     }
 
     public boolean b() {
-        return this.f36220a;
+        return this.f36987a;
     }
 
-    public void a(boolean z3) {
-        this.f36220a = z3;
+    public void a(boolean z6) {
+        this.f36987a = z6;
     }
 }

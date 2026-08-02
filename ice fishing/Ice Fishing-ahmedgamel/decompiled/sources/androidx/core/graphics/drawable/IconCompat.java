@@ -21,59 +21,59 @@ import java.lang.reflect.InvocationTargetException;
 public class IconCompat extends CustomVersionedParcelable {
 
     /* renamed from: k, reason: collision with root package name */
-    public static final PorterDuff.Mode f4688k = PorterDuff.Mode.SRC_IN;
+    public static final PorterDuff.Mode f4656k = PorterDuff.Mode.SRC_IN;
 
     /* renamed from: a, reason: collision with root package name */
-    public int f4689a;
+    public int f4657a;
 
     /* renamed from: b, reason: collision with root package name */
-    public Object f4690b;
+    public Object f4658b;
 
     /* renamed from: c, reason: collision with root package name */
-    public byte[] f4691c;
+    public byte[] f4659c;
 
     /* renamed from: d, reason: collision with root package name */
-    public Parcelable f4692d;
+    public Parcelable f4660d;
 
     /* renamed from: e, reason: collision with root package name */
-    public int f4693e;
+    public int f4661e;
 
     /* renamed from: f, reason: collision with root package name */
-    public int f4694f;
+    public int f4662f;
 
     /* renamed from: g, reason: collision with root package name */
-    public ColorStateList f4695g;
+    public ColorStateList f4663g;
 
     /* renamed from: h, reason: collision with root package name */
-    public PorterDuff.Mode f4696h;
+    public PorterDuff.Mode f4664h;
     public String i;
 
     /* renamed from: j, reason: collision with root package name */
-    public String f4697j;
+    public String f4665j;
 
     public IconCompat() {
-        this.f4689a = -1;
-        this.f4691c = null;
-        this.f4692d = null;
-        this.f4693e = 0;
-        this.f4694f = 0;
-        this.f4695g = null;
-        this.f4696h = f4688k;
+        this.f4657a = -1;
+        this.f4659c = null;
+        this.f4660d = null;
+        this.f4661e = 0;
+        this.f4662f = 0;
+        this.f4663g = null;
+        this.f4664h = f4656k;
         this.i = null;
     }
 
-    public static Bitmap a(Bitmap bitmap, boolean z3) {
+    public static Bitmap a(Bitmap bitmap, boolean z6) {
         int min = (int) (Math.min(bitmap.getWidth(), bitmap.getHeight()) * 0.6666667f);
         Bitmap createBitmap = Bitmap.createBitmap(min, min, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(createBitmap);
         Paint paint = new Paint(3);
-        float f3 = min;
-        float f9 = 0.5f * f3;
+        float f2 = min;
+        float f9 = 0.5f * f2;
         float f10 = 0.9166667f * f9;
-        if (z3) {
-            float f11 = 0.010416667f * f3;
+        if (z6) {
+            float f11 = 0.010416667f * f2;
             paint.setColor(0);
-            paint.setShadowLayer(f11, 0.0f, f3 * 0.020833334f, 1023410176);
+            paint.setShadowLayer(f11, 0.0f, f2 * 0.020833334f, 1023410176);
             canvas.drawCircle(f9, f9, f10, paint);
             paint.setShadowLayer(f11, 0.0f, 0.0f, 503316480);
             canvas.drawCircle(f9, f9, f10, paint);
@@ -96,23 +96,23 @@ public class IconCompat extends CustomVersionedParcelable {
             throw new IllegalArgumentException("Drawable resource ID must not be 0");
         }
         IconCompat iconCompat = new IconCompat(2);
-        iconCompat.f4693e = i;
-        iconCompat.f4690b = "";
-        iconCompat.f4697j = "";
+        iconCompat.f4661e = i;
+        iconCompat.f4658b = "";
+        iconCompat.f4665j = "";
         return iconCompat;
     }
 
     public final int c() {
-        int i = this.f4689a;
+        int i = this.f4657a;
         if (i != -1) {
             if (i == 2) {
-                return this.f4693e;
+                return this.f4661e;
             }
             throw new IllegalStateException("called getResId() on " + this);
         }
-        int i6 = Build.VERSION.SDK_INT;
-        Object obj = this.f4690b;
-        if (i6 >= 28) {
+        int i4 = Build.VERSION.SDK_INT;
+        Object obj = this.f4658b;
+        if (i4 >= 28) {
             return e.a(obj);
         }
         try {
@@ -130,13 +130,13 @@ public class IconCompat extends CustomVersionedParcelable {
     }
 
     public final int d() {
-        int i = this.f4689a;
+        int i = this.f4657a;
         if (i != -1) {
             return i;
         }
-        int i6 = Build.VERSION.SDK_INT;
-        Object obj = this.f4690b;
-        if (i6 >= 28) {
+        int i4 = Build.VERSION.SDK_INT;
+        Object obj = this.f4658b;
+        if (i4 >= 28) {
             return e.c(obj);
         }
         try {
@@ -154,23 +154,23 @@ public class IconCompat extends CustomVersionedParcelable {
     }
 
     public final Uri e() {
-        int i = this.f4689a;
+        int i = this.f4657a;
         if (i == -1) {
-            return c.a(this.f4690b);
+            return c.a(this.f4658b);
         }
         if (i == 4 || i == 6) {
-            return Uri.parse((String) this.f4690b);
+            return Uri.parse((String) this.f4658b);
         }
         throw new IllegalStateException("called getUri() on " + this);
     }
 
     public final String toString() {
         String str;
-        if (this.f4689a == -1) {
-            return String.valueOf(this.f4690b);
+        if (this.f4657a == -1) {
+            return String.valueOf(this.f4658b);
         }
         StringBuilder sb = new StringBuilder("Icon(typ=");
-        switch (this.f4689a) {
+        switch (this.f4657a) {
             case 1:
                 str = "BITMAP";
                 break;
@@ -194,55 +194,55 @@ public class IconCompat extends CustomVersionedParcelable {
                 break;
         }
         sb.append(str);
-        switch (this.f4689a) {
+        switch (this.f4657a) {
             case 1:
             case 5:
                 sb.append(" size=");
-                sb.append(((Bitmap) this.f4690b).getWidth());
+                sb.append(((Bitmap) this.f4658b).getWidth());
                 sb.append("x");
-                sb.append(((Bitmap) this.f4690b).getHeight());
+                sb.append(((Bitmap) this.f4658b).getHeight());
                 break;
             case 2:
                 sb.append(" pkg=");
-                sb.append(this.f4697j);
+                sb.append(this.f4665j);
                 sb.append(" id=");
                 sb.append(String.format("0x%08x", Integer.valueOf(c())));
                 break;
             case 3:
                 sb.append(" len=");
-                sb.append(this.f4693e);
-                if (this.f4694f != 0) {
+                sb.append(this.f4661e);
+                if (this.f4662f != 0) {
                     sb.append(" off=");
-                    sb.append(this.f4694f);
+                    sb.append(this.f4662f);
                     break;
                 }
                 break;
             case 4:
             case 6:
                 sb.append(" uri=");
-                sb.append(this.f4690b);
+                sb.append(this.f4658b);
                 break;
         }
-        if (this.f4695g != null) {
+        if (this.f4663g != null) {
             sb.append(" tint=");
-            sb.append(this.f4695g);
+            sb.append(this.f4663g);
         }
-        if (this.f4696h != f4688k) {
+        if (this.f4664h != f4656k) {
             sb.append(" mode=");
-            sb.append(this.f4696h);
+            sb.append(this.f4664h);
         }
         sb.append(")");
         return sb.toString();
     }
 
     public IconCompat(int i) {
-        this.f4691c = null;
-        this.f4692d = null;
-        this.f4693e = 0;
-        this.f4694f = 0;
-        this.f4695g = null;
-        this.f4696h = f4688k;
+        this.f4659c = null;
+        this.f4660d = null;
+        this.f4661e = 0;
+        this.f4662f = 0;
+        this.f4663g = null;
+        this.f4664h = f4656k;
         this.i = null;
-        this.f4689a = i;
+        this.f4657a = i;
     }
 }

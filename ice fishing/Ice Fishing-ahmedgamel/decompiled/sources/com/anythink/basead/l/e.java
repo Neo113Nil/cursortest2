@@ -12,16 +12,16 @@ import java.util.regex.Pattern;
 public class e {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f9467a = "e";
+    private static final String f10253a = "e";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f9468b = "<VAST\\s.*version\\s*=\\s*\".*\"(\\s.*|)?>";
+    private static final String f10254b = "<VAST\\s.*version\\s*=\\s*\".*\"(\\s.*|)?>";
 
     public static boolean a(String str) {
         if (TextUtils.isEmpty(str)) {
             return false;
         }
-        return Pattern.compile(f9468b).matcher(str).find();
+        return Pattern.compile(f10254b).matcher(str).find();
     }
 
     public static boolean b(CharSequence charSequence) {

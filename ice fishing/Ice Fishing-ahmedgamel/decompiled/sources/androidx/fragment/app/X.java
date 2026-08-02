@@ -4,60 +4,60 @@ import android.app.Application;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.os.Bundle;
-import androidx.lifecycle.AbstractC0498p;
-import androidx.lifecycle.C0505x;
-import androidx.lifecycle.EnumC0496n;
-import androidx.lifecycle.InterfaceC0492j;
-import h0.AbstractC4554b;
-import h0.C4556d;
+import androidx.lifecycle.AbstractC0502p;
+import androidx.lifecycle.C0509x;
+import androidx.lifecycle.EnumC0500n;
+import androidx.lifecycle.InterfaceC0496j;
+import h0.AbstractC4559b;
+import h0.C4561d;
 import java.util.LinkedHashMap;
-import x0.C5181c;
-import x0.C5182d;
-import x0.InterfaceC5183e;
+import x0.C5180c;
+import x0.C5181d;
+import x0.InterfaceC5182e;
 
 /* loaded from: classes.dex */
-public final class X implements InterfaceC0492j, InterfaceC5183e, androidx.lifecycle.Y {
+public final class X implements InterfaceC0496j, InterfaceC5182e, androidx.lifecycle.Y {
 
     /* renamed from: n, reason: collision with root package name */
-    public final AbstractComponentCallbacksC0475s f4918n;
+    public final AbstractComponentCallbacksC0479s f4886n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final androidx.lifecycle.X f4919u;
+    public final androidx.lifecycle.X f4887u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final RunnableC0472o f4920v;
+    public final RunnableC0476o f4888v;
 
     /* renamed from: w, reason: collision with root package name */
-    public C0505x f4921w = null;
+    public C0509x f4889w = null;
 
     /* renamed from: x, reason: collision with root package name */
-    public C5182d f4922x = null;
+    public C5181d f4890x = null;
 
-    public X(AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s, androidx.lifecycle.X x9, RunnableC0472o runnableC0472o) {
-        this.f4918n = abstractComponentCallbacksC0475s;
-        this.f4919u = x9;
-        this.f4920v = runnableC0472o;
+    public X(AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s, androidx.lifecycle.X x9, RunnableC0476o runnableC0476o) {
+        this.f4886n = abstractComponentCallbacksC0479s;
+        this.f4887u = x9;
+        this.f4888v = runnableC0476o;
     }
 
-    public final void a(EnumC0496n enumC0496n) {
-        this.f4921w.e(enumC0496n);
+    public final void a(EnumC0500n enumC0500n) {
+        this.f4889w.e(enumC0500n);
     }
 
     public final void b() {
-        if (this.f4921w == null) {
-            this.f4921w = new C0505x(this);
-            C5182d c5182d = new C5182d(this);
-            this.f4922x = c5182d;
-            c5182d.a();
-            this.f4920v.run();
+        if (this.f4889w == null) {
+            this.f4889w = new C0509x(this);
+            C5181d c5181d = new C5181d(this);
+            this.f4890x = c5181d;
+            c5181d.a();
+            this.f4888v.run();
         }
     }
 
-    @Override // androidx.lifecycle.InterfaceC0492j
-    public final AbstractC4554b getDefaultViewModelCreationExtras() {
+    @Override // androidx.lifecycle.InterfaceC0496j
+    public final AbstractC4559b getDefaultViewModelCreationExtras() {
         Application application;
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = this.f4918n;
-        Context applicationContext = abstractComponentCallbacksC0475s.y().getApplicationContext();
+        AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s = this.f4886n;
+        Context applicationContext = abstractComponentCallbacksC0479s.y().getApplicationContext();
         while (true) {
             if (!(applicationContext instanceof ContextWrapper)) {
                 application = null;
@@ -69,35 +69,35 @@ public final class X implements InterfaceC0492j, InterfaceC5183e, androidx.lifec
             }
             applicationContext = ((ContextWrapper) applicationContext).getBaseContext();
         }
-        C4556d c4556d = new C4556d(0);
-        LinkedHashMap linkedHashMap = c4556d.f37943a;
+        C4561d c4561d = new C4561d(0);
+        LinkedHashMap linkedHashMap = c4561d.f37969a;
         if (application != null) {
-            linkedHashMap.put(androidx.lifecycle.T.f5148a, application);
+            linkedHashMap.put(androidx.lifecycle.T.f5115a, application);
         }
-        linkedHashMap.put(androidx.lifecycle.L.f5120a, abstractComponentCallbacksC0475s);
-        linkedHashMap.put(androidx.lifecycle.L.f5121b, this);
-        Bundle bundle = abstractComponentCallbacksC0475s.f5068y;
+        linkedHashMap.put(androidx.lifecycle.L.f5087a, abstractComponentCallbacksC0479s);
+        linkedHashMap.put(androidx.lifecycle.L.f5088b, this);
+        Bundle bundle = abstractComponentCallbacksC0479s.f5035y;
         if (bundle != null) {
-            linkedHashMap.put(androidx.lifecycle.L.f5122c, bundle);
+            linkedHashMap.put(androidx.lifecycle.L.f5089c, bundle);
         }
-        return c4556d;
+        return c4561d;
     }
 
-    @Override // androidx.lifecycle.InterfaceC0503v
-    public final AbstractC0498p getLifecycle() {
+    @Override // androidx.lifecycle.InterfaceC0507v
+    public final AbstractC0502p getLifecycle() {
         b();
-        return this.f4921w;
+        return this.f4889w;
     }
 
-    @Override // x0.InterfaceC5183e
-    public final C5181c getSavedStateRegistry() {
+    @Override // x0.InterfaceC5182e
+    public final C5180c getSavedStateRegistry() {
         b();
-        return this.f4922x.f41757b;
+        return this.f4890x.f41812b;
     }
 
     @Override // androidx.lifecycle.Y
     public final androidx.lifecycle.X getViewModelStore() {
         b();
-        return this.f4919u;
+        return this.f4887u;
     }
 }

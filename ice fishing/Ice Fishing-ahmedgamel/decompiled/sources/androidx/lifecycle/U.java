@@ -1,25 +1,25 @@
 package androidx.lifecycle;
 
 import android.app.Application;
-import h0.C4556d;
+import h0.C4561d;
 import java.lang.reflect.InvocationTargetException;
 
 /* loaded from: classes.dex */
 public final class U extends W {
 
     /* renamed from: c, reason: collision with root package name */
-    public static U f5150c;
+    public static U f5117c;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Application f5151b;
+    public final Application f5118b;
 
     public U(Application application) {
-        this.f5151b = application;
+        this.f5118b = application;
     }
 
     @Override // androidx.lifecycle.W, androidx.lifecycle.V
     public final S a(Class cls) {
-        Application application = this.f5151b;
+        Application application = this.f5118b;
         if (application != null) {
             return c(cls, application);
         }
@@ -27,22 +27,22 @@ public final class U extends W {
     }
 
     @Override // androidx.lifecycle.V
-    public final S b(Class cls, C4556d c4556d) {
-        if (this.f5151b != null) {
+    public final S b(Class cls, C4561d c4561d) {
+        if (this.f5118b != null) {
             return a(cls);
         }
-        Application application = (Application) c4556d.f37943a.get(T.f5148a);
+        Application application = (Application) c4561d.f37969a.get(T.f5115a);
         if (application != null) {
             return c(cls, application);
         }
-        if (AbstractC0483a.class.isAssignableFrom(cls)) {
+        if (AbstractC0487a.class.isAssignableFrom(cls)) {
             throw new IllegalArgumentException("CreationExtras must have an application by `APPLICATION_KEY`");
         }
         return super.a(cls);
     }
 
     public final S c(Class cls, Application application) {
-        if (!AbstractC0483a.class.isAssignableFrom(cls)) {
+        if (!AbstractC0487a.class.isAssignableFrom(cls)) {
             return super.a(cls);
         }
         try {

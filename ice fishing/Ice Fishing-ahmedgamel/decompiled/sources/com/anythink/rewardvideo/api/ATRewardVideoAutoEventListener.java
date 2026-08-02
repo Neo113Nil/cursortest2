@@ -13,7 +13,7 @@ public abstract class ATRewardVideoAutoEventListener {
     public void onAgainRewardFailed(ATAdInfo aTAdInfo) {
     }
 
-    public void onDeeplinkCallback(ATAdInfo aTAdInfo, boolean z3) {
+    public void onDeeplinkCallback(ATAdInfo aTAdInfo, boolean z6) {
     }
 
     public void onDownloadConfirm(Context context, ATAdInfo aTAdInfo, ATNetworkConfirmInfo aTNetworkConfirmInfo) {

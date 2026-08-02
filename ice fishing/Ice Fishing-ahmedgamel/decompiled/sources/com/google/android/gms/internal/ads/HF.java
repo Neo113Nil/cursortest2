@@ -7,12 +7,12 @@ import java.util.logging.Logger;
 public abstract class HF {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Logger f25248a = Logger.getLogger(HF.class.getName());
+    public static final Logger f26020a = Logger.getLogger(HF.class.getName());
 
     /* renamed from: b, reason: collision with root package name */
-    public static final AtomicBoolean f25249b = new AtomicBoolean(false);
+    public static final AtomicBoolean f26021b = new AtomicBoolean(false);
 
     public static boolean a() {
-        return f25249b.get();
+        return f26021b.get();
     }
 }

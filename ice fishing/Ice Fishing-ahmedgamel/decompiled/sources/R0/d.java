@@ -1,6 +1,6 @@
 package R0;
 
-import J0.s;
+import J0.r;
 import android.app.ForegroundServiceStartNotAllowedException;
 import android.app.Notification;
 import android.app.Service;
@@ -9,13 +9,13 @@ import androidx.work.impl.foreground.SystemForegroundService;
 
 /* loaded from: classes.dex */
 public abstract class d {
-    public static void a(Service service, int i, Notification notification, int i6) {
+    public static void a(Service service, int i, Notification notification, int i4) {
         try {
-            service.startForeground(i, notification, i6);
+            service.startForeground(i, notification, i4);
         } catch (ForegroundServiceStartNotAllowedException e9) {
-            s d2 = s.d();
-            String str = SystemForegroundService.f5392y;
-            if (d2.f1405a <= 5) {
+            r d9 = r.d();
+            String str = SystemForegroundService.f5357y;
+            if (d9.f1433a <= 5) {
                 Log.w(str, "Unable to start foreground service", e9);
             }
         }

@@ -14,16 +14,16 @@ public final class XD {
     public static byte[] A02;
     public static final Map<String, String> A03;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 29);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 29);
         }
         return new String(copyOfRange);
     }
 
     public static void A03() {
-        A02 = new byte[]{-10, -14, -66, -11, -62, -11, -66, -76, -80, 124, -64, -61, -68, -68, -73, -68, -75, -83, -77, c.f16316a, -77, -84, -86, -83, -99};
+        A02 = new byte[]{-10, -14, -66, -11, -62, -11, -66, -76, -80, 124, -64, -61, -68, -68, -73, -68, -75, -83, -77, c.f17103a, -77, -84, -86, -83, -99};
     }
 
     static {
@@ -50,22 +50,22 @@ public final class XD {
     }
 
     public static synchronized boolean A04() {
-        boolean z3;
+        boolean z6;
         synchronized (XD.class) {
             if (!A00) {
                 A01 = A00(21, 4, 27).equals(System.getProperty(A00(7, 14, 49)));
                 A00 = true;
             }
-            z3 = A01;
+            z6 = A01;
         }
-        return z3;
+        return z6;
     }
 
     public static synchronized boolean A05(String str) {
-        boolean z3;
+        boolean z6;
         synchronized (XD.class) {
-            z3 = !TextUtils.isEmpty(A01(str));
+            z6 = !TextUtils.isEmpty(A01(str));
         }
-        return z3;
+        return z6;
     }
 }

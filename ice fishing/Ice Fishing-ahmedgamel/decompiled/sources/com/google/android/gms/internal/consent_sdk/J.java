@@ -11,7 +11,7 @@ import java.util.RandomAccess;
 public abstract class J extends G implements List, RandomAccess {
 
     /* renamed from: u, reason: collision with root package name */
-    public static final H f35532u = new H(M.f35568x, 0);
+    public static final H f36301u = new H(M.f36337x, 0);
 
     @Override // com.google.android.gms.internal.consent_sdk.G
     public int a(Object[] objArr) {
@@ -71,25 +71,25 @@ public abstract class J extends G implements List, RandomAccess {
 
     @Override // java.util.List
     /* renamed from: f, reason: merged with bridge method [inline-methods] */
-    public J subList(int i, int i6) {
-        E.f(i, i6, size());
-        int i9 = i6 - i;
-        return i9 == size() ? this : i9 == 0 ? M.f35568x : new I(this, i, i9);
+    public J subList(int i, int i4) {
+        E.f(i, i4, size());
+        int i6 = i4 - i;
+        return i6 == size() ? this : i6 == 0 ? M.f36337x : new I(this, i, i6);
     }
 
     @Override // java.util.List
     /* renamed from: g, reason: merged with bridge method [inline-methods] */
     public final H listIterator(int i) {
         E.d(i, size());
-        return isEmpty() ? f35532u : new H(this, i);
+        return isEmpty() ? f36301u : new H(this, i);
     }
 
     @Override // java.util.Collection, java.util.List
     public final int hashCode() {
         int size = size();
         int i = 1;
-        for (int i6 = 0; i6 < size; i6++) {
-            i = (i * 31) + get(i6).hashCode();
+        for (int i4 = 0; i4 < size; i4++) {
+            i = (i * 31) + get(i4).hashCode();
         }
         return i;
     }

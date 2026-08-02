@@ -8,53 +8,53 @@ import java.util.Map;
 import kotlin.Metadata;
 import kotlin.jvm.JvmStatic;
 
-@Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\t\bÆ\u0002\u0018\u00002\u00020\u0001:\u0003\u0017\u0018\u0019B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0011\u0010\u000e\u001a\u00020\u00072\u0006\u0010\u000f\u001a\u00020\u0006H\u0087\u0002J\u0019\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u000f\u001a\u00020\u00062\u0006\u0010\u0012\u001a\u00020\u0007H\u0087\u0002J\u0010\u0010\u0013\u001a\u00020\n2\u0006\u0010\u000f\u001a\u00020\tH\u0007J\u0018\u0010\u0014\u001a\u00020\u00112\u0006\u0010\u000f\u001a\u00020\t2\u0006\u0010\u0012\u001a\u00020\nH\u0007J\u0010\u0010\u0015\u001a\u00020\r2\u0006\u0010\u000f\u001a\u00020\fH\u0007J\u0018\u0010\u0016\u001a\u00020\u00112\u0006\u0010\u000f\u001a\u00020\f2\u0006\u0010\u0012\u001a\u00020\rH\u0007R\u001a\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00070\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\r0\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001a"}, d2 = {"Lcom/facebook/video/heroplayer/exocustom/MetaExoPlayerUpgradeConfig;", "", "<init>", "()V", "CONFIG", "", "Lcom/facebook/video/heroplayer/exocustom/MetaExoPlayerUpgradeConfig$ID;", "", "INTEGER_CONFIG", "Lcom/facebook/video/heroplayer/exocustom/MetaExoPlayerUpgradeConfig$INTEGER_ID;", "", "LONG_CONFIG", "Lcom/facebook/video/heroplayer/exocustom/MetaExoPlayerUpgradeConfig$LONG_ID;", "", "get", "upgradeIdentifier", "set", "", "value", "getInteger", "setInteger", "getLong", "setLong", "ID", "INTEGER_ID", "LONG_ID", "fbandroid.java.com.facebook.video.heroplayer.exocustom.exocustom"}, k = 1, mv = {2, 1, 0}, xi = j.f5816W)
+@Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\t\bÆ\u0002\u0018\u00002\u00020\u0001:\u0003\u0017\u0018\u0019B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0011\u0010\u000e\u001a\u00020\u00072\u0006\u0010\u000f\u001a\u00020\u0006H\u0087\u0002J\u0019\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u000f\u001a\u00020\u00062\u0006\u0010\u0012\u001a\u00020\u0007H\u0087\u0002J\u0010\u0010\u0013\u001a\u00020\n2\u0006\u0010\u000f\u001a\u00020\tH\u0007J\u0018\u0010\u0014\u001a\u00020\u00112\u0006\u0010\u000f\u001a\u00020\t2\u0006\u0010\u0012\u001a\u00020\nH\u0007J\u0010\u0010\u0015\u001a\u00020\r2\u0006\u0010\u000f\u001a\u00020\fH\u0007J\u0018\u0010\u0016\u001a\u00020\u00112\u0006\u0010\u000f\u001a\u00020\f2\u0006\u0010\u0012\u001a\u00020\rH\u0007R\u001a\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00070\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\r0\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001a"}, d2 = {"Lcom/facebook/video/heroplayer/exocustom/MetaExoPlayerUpgradeConfig;", "", "<init>", "()V", "CONFIG", "", "Lcom/facebook/video/heroplayer/exocustom/MetaExoPlayerUpgradeConfig$ID;", "", "INTEGER_CONFIG", "Lcom/facebook/video/heroplayer/exocustom/MetaExoPlayerUpgradeConfig$INTEGER_ID;", "", "LONG_CONFIG", "Lcom/facebook/video/heroplayer/exocustom/MetaExoPlayerUpgradeConfig$LONG_ID;", "", "get", "upgradeIdentifier", "set", "", "value", "getInteger", "setInteger", "getLong", "setLong", "ID", "INTEGER_ID", "LONG_ID", "fbandroid.java.com.facebook.video.heroplayer.exocustom.exocustom"}, k = 1, mv = {2, 1, 0}, xi = j.f6602W)
 /* renamed from: com.facebook.ads.redexgen.X.ja, reason: from Kotlin metadata */
 /* loaded from: assets/audience_network/classes2.dex */
 public final class MetaExoPlayerUpgradeConfig {
     public static byte[] A00;
     public static final MetaExoPlayerUpgradeConfig A01;
-    public static final Map<EnumC2000jX, Boolean> A02;
-    public static final Map<EnumC2001jY, Integer> A03;
-    public static final Map<EnumC2002jZ, Long> A04;
+    public static final Map<EnumC2020jX, Boolean> A02;
+    public static final Map<EnumC2021jY, Integer> A03;
+    public static final Map<EnumC2022jZ, Long> A04;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 122);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 122);
         }
         return new String(copyOfRange);
     }
 
     public static void A02() {
-        A00 = new byte[]{126, 73, 93, 89, 69, 94, 73, 72, 12, 90, 77, c.f16317b, 89, 73, 12, 91, 77, 95, 12, 66, 89, c.f16317b, c.f16317b, 2, 39, 34, 53, 32, 51, 54, 55, 27, 54, 55, 60, 38, 59, 52, 59, 55, 32};
+        A00 = new byte[]{126, 73, 93, 89, 69, 94, 73, 72, 12, 90, 77, c.f17104b, 89, 73, 12, 91, 77, 95, 12, 66, 89, c.f17104b, c.f17104b, 2, 39, 34, 53, 32, 51, 54, 55, 27, 54, 55, 60, 38, 59, 52, 59, 55, 32};
     }
 
     static {
         A02();
         A01 = new MetaExoPlayerUpgradeConfig();
-        A02 = new EnumMap(EnumC2000jX.class);
-        A03 = new EnumMap(EnumC2001jY.class);
-        A04 = new EnumMap(EnumC2002jZ.class);
-        for (EnumC2000jX enumC2000jX : EnumC2000jX.valuesCustom()) {
-            A02.put(enumC2000jX, false);
+        A02 = new EnumMap(EnumC2020jX.class);
+        A03 = new EnumMap(EnumC2021jY.class);
+        A04 = new EnumMap(EnumC2022jZ.class);
+        for (EnumC2020jX enumC2020jX : EnumC2020jX.valuesCustom()) {
+            A02.put(enumC2020jX, false);
         }
-        for (EnumC2001jY enumC2001jY : EnumC2001jY.valuesCustom()) {
-            A03.put(enumC2001jY, -1);
+        for (EnumC2021jY enumC2021jY : EnumC2021jY.valuesCustom()) {
+            A03.put(enumC2021jY, -1);
         }
-        for (EnumC2002jZ id : EnumC2002jZ.values()) {
+        for (EnumC2022jZ id : EnumC2022jZ.values()) {
             A04.put(id, -1L);
         }
-        A02.put(EnumC2000jX.A0W, true);
-        A02.put(EnumC2000jX.A0Q, true);
-        A02.put(EnumC2000jX.A1j, true);
-        A03.put(EnumC2001jY.A05, 100);
+        A02.put(EnumC2020jX.A0W, true);
+        A02.put(EnumC2020jX.A0Q, true);
+        A02.put(EnumC2020jX.A1j, true);
+        A03.put(EnumC2021jY.A05, 100);
     }
 
     @JvmStatic
-    public static final int A00(EnumC2001jY enumC2001jY) {
-        C2414qY.A09(enumC2001jY, A01(24, 17, 40));
-        Integer num = A03.get(enumC2001jY);
+    public static final int A00(EnumC2021jY enumC2021jY) {
+        C2434qY.A09(enumC2021jY, A01(24, 17, 40));
+        Integer num = A03.get(enumC2021jY);
         if (num != null) {
             return num.intValue();
         }
@@ -62,8 +62,8 @@ public final class MetaExoPlayerUpgradeConfig {
     }
 
     @JvmStatic
-    public static final boolean A03(EnumC2000jX enumC2000jX) {
-        C2414qY.A09(enumC2000jX, A01(24, 17, 40));
-        return C2414qY.A0C(true, A02.get(enumC2000jX));
+    public static final boolean A03(EnumC2020jX enumC2020jX) {
+        C2434qY.A09(enumC2020jX, A01(24, 17, 40));
+        return C2434qY.A0C(true, A02.get(enumC2020jX));
     }
 }

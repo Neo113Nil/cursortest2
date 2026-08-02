@@ -7,81 +7,81 @@ import java.util.ArrayList;
 public final class o {
 
     /* renamed from: A, reason: collision with root package name */
-    public static final String f8420A = "audio/eac3";
+    public static final String f9206A = "audio/eac3";
 
     /* renamed from: B, reason: collision with root package name */
-    public static final String f8421B = "audio/eac3-joc";
+    public static final String f9207B = "audio/eac3-joc";
 
     /* renamed from: C, reason: collision with root package name */
-    public static final String f8422C = "audio/true-hd";
+    public static final String f9208C = "audio/true-hd";
 
     /* renamed from: D, reason: collision with root package name */
-    public static final String f8423D = "audio/vnd.dts";
+    public static final String f9209D = "audio/vnd.dts";
 
     /* renamed from: E, reason: collision with root package name */
-    public static final String f8424E = "audio/vnd.dts.hd";
+    public static final String f9210E = "audio/vnd.dts.hd";
 
     /* renamed from: F, reason: collision with root package name */
-    public static final String f8425F = "audio/vnd.dts.hd;profile=lbr";
+    public static final String f9211F = "audio/vnd.dts.hd;profile=lbr";
 
     /* renamed from: G, reason: collision with root package name */
-    public static final String f8426G = "audio/vorbis";
+    public static final String f9212G = "audio/vorbis";
 
     /* renamed from: H, reason: collision with root package name */
-    public static final String f8427H = "audio/opus";
+    public static final String f9213H = "audio/opus";
 
     /* renamed from: I, reason: collision with root package name */
-    public static final String f8428I = "audio/3gpp";
+    public static final String f9214I = "audio/3gpp";
     public static final String J = "audio/amr-wb";
 
     /* renamed from: K, reason: collision with root package name */
-    public static final String f8429K = "audio/flac";
+    public static final String f9215K = "audio/flac";
 
     /* renamed from: L, reason: collision with root package name */
-    public static final String f8430L = "audio/alac";
+    public static final String f9216L = "audio/alac";
 
     /* renamed from: M, reason: collision with root package name */
-    public static final String f8431M = "audio/gsm";
+    public static final String f9217M = "audio/gsm";
 
     /* renamed from: N, reason: collision with root package name */
-    public static final String f8432N = "audio/x-unknown";
+    public static final String f9218N = "audio/x-unknown";
 
     /* renamed from: O, reason: collision with root package name */
-    public static final String f8433O = "text/vtt";
+    public static final String f9219O = "text/vtt";
 
     /* renamed from: P, reason: collision with root package name */
-    public static final String f8434P = "text/x-ssa";
+    public static final String f9220P = "text/x-ssa";
 
     /* renamed from: Q, reason: collision with root package name */
-    public static final String f8435Q = "application/mp4";
+    public static final String f9221Q = "application/mp4";
 
     /* renamed from: R, reason: collision with root package name */
-    public static final String f8436R = "application/webm";
+    public static final String f9222R = "application/webm";
 
     /* renamed from: S, reason: collision with root package name */
-    public static final String f8437S = "application/dash+xml";
+    public static final String f9223S = "application/dash+xml";
 
     /* renamed from: T, reason: collision with root package name */
-    public static final String f8438T = "application/x-mpegURL";
+    public static final String f9224T = "application/x-mpegURL";
 
     /* renamed from: U, reason: collision with root package name */
-    public static final String f8439U = "application/vnd.ms-sstr+xml";
+    public static final String f9225U = "application/vnd.ms-sstr+xml";
 
     /* renamed from: V, reason: collision with root package name */
-    public static final String f8440V = "application/id3";
+    public static final String f9226V = "application/id3";
 
     /* renamed from: W, reason: collision with root package name */
-    public static final String f8441W = "application/cea-608";
+    public static final String f9227W = "application/cea-608";
 
     /* renamed from: X, reason: collision with root package name */
-    public static final String f8442X = "application/cea-708";
+    public static final String f9228X = "application/cea-708";
     public static final String Y = "application/x-subrip";
 
     /* renamed from: Z, reason: collision with root package name */
-    public static final String f8443Z = "application/ttml+xml";
+    public static final String f9229Z = "application/ttml+xml";
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f8444a = "video";
+    public static final String f9230a = "video";
     public static final String aa = "application/x-quicktime-tx3g";
     public static final String ab = "application/x-mp4-vtt";
     public static final String ac = "application/x-mp4-cea-608";
@@ -96,119 +96,119 @@ public final class o {
     private static final ArrayList<a> al = new ArrayList<>();
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f8445b = "audio";
+    public static final String f9231b = "audio";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f8446c = "text";
+    public static final String f9232c = "text";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final String f8447d = "application";
+    public static final String f9233d = "application";
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f8448e = "video/mp4";
+    public static final String f9234e = "video/mp4";
 
     /* renamed from: f, reason: collision with root package name */
-    public static final String f8449f = "video/webm";
+    public static final String f9235f = "video/webm";
 
     /* renamed from: g, reason: collision with root package name */
-    public static final String f8450g = "video/3gpp";
+    public static final String f9236g = "video/3gpp";
 
     /* renamed from: h, reason: collision with root package name */
-    public static final String f8451h = "video/avc";
+    public static final String f9237h = "video/avc";
     public static final String i = "video/hevc";
 
     /* renamed from: j, reason: collision with root package name */
-    public static final String f8452j = "video/x-vnd.on2.vp8";
+    public static final String f9238j = "video/x-vnd.on2.vp8";
 
     /* renamed from: k, reason: collision with root package name */
-    public static final String f8453k = "video/x-vnd.on2.vp9";
+    public static final String f9239k = "video/x-vnd.on2.vp9";
 
     /* renamed from: l, reason: collision with root package name */
-    public static final String f8454l = "video/mp4v-es";
+    public static final String f9240l = "video/mp4v-es";
 
     /* renamed from: m, reason: collision with root package name */
-    public static final String f8455m = "video/mpeg";
+    public static final String f9241m = "video/mpeg";
 
     /* renamed from: n, reason: collision with root package name */
-    public static final String f8456n = "video/mpeg2";
+    public static final String f9242n = "video/mpeg2";
 
     /* renamed from: o, reason: collision with root package name */
-    public static final String f8457o = "video/wvc1";
+    public static final String f9243o = "video/wvc1";
 
     /* renamed from: p, reason: collision with root package name */
-    public static final String f8458p = "video/x-unknown";
+    public static final String f9244p = "video/x-unknown";
 
     /* renamed from: q, reason: collision with root package name */
-    public static final String f8459q = "audio/mp4";
+    public static final String f9245q = "audio/mp4";
 
     /* renamed from: r, reason: collision with root package name */
-    public static final String f8460r = "audio/mp4a-latm";
+    public static final String f9246r = "audio/mp4a-latm";
 
     /* renamed from: s, reason: collision with root package name */
-    public static final String f8461s = "audio/webm";
+    public static final String f9247s = "audio/webm";
 
     /* renamed from: t, reason: collision with root package name */
-    public static final String f8462t = "audio/mpeg";
+    public static final String f9248t = "audio/mpeg";
 
     /* renamed from: u, reason: collision with root package name */
-    public static final String f8463u = "audio/mpeg-L1";
+    public static final String f9249u = "audio/mpeg-L1";
 
     /* renamed from: v, reason: collision with root package name */
-    public static final String f8464v = "audio/mpeg-L2";
+    public static final String f9250v = "audio/mpeg-L2";
 
     /* renamed from: w, reason: collision with root package name */
-    public static final String f8465w = "audio/raw";
+    public static final String f9251w = "audio/raw";
 
     /* renamed from: x, reason: collision with root package name */
-    public static final String f8466x = "audio/g711-alaw";
+    public static final String f9252x = "audio/g711-alaw";
 
     /* renamed from: y, reason: collision with root package name */
-    public static final String f8467y = "audio/g711-mlaw";
+    public static final String f9253y = "audio/g711-mlaw";
 
     /* renamed from: z, reason: collision with root package name */
-    public static final String f8468z = "audio/ac3";
+    public static final String f9254z = "audio/ac3";
 
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public final String f8469a;
+        public final String f9255a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final String f8470b;
+        public final String f9256b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final int f8471c;
+        public final int f9257c;
 
         public a(String str, String str2, int i) {
-            this.f8469a = str;
-            this.f8470b = str2;
-            this.f8471c = i;
+            this.f9255a = str;
+            this.f9256b = str2;
+            this.f9257c = i;
         }
     }
 
     private o() {
     }
 
-    private static void a(String str, String str2, int i6) {
-        a aVar = new a(str, str2, i6);
+    private static void a(String str, String str2, int i4) {
+        a aVar = new a(str, str2, i4);
         int size = al.size();
-        int i9 = 0;
+        int i6 = 0;
         while (true) {
-            if (i9 >= size) {
+            if (i6 >= size) {
                 break;
             }
             ArrayList<a> arrayList = al;
-            if (str.equals(arrayList.get(i9).f8469a)) {
-                arrayList.remove(i9);
+            if (str.equals(arrayList.get(i6).f9255a)) {
+                arrayList.remove(i6);
                 break;
             }
-            i9++;
+            i6++;
         }
         al.add(aVar);
     }
 
     public static boolean b(String str) {
-        return f8444a.equals(k(str));
+        return f9230a.equals(k(str));
     }
 
     public static String c(String str) {
@@ -218,16 +218,16 @@ public final class o {
         }
         String trim = str.trim();
         if (trim.startsWith("avc1") || trim.startsWith("avc3")) {
-            return f8451h;
+            return f9237h;
         }
         if (trim.startsWith("hev1") || trim.startsWith("hvc1")) {
             return i;
         }
         if (trim.startsWith("vp9") || trim.startsWith("vp09")) {
-            return f8453k;
+            return f9239k;
         }
         if (trim.startsWith("vp8") || trim.startsWith("vp08")) {
-            return f8452j;
+            return f9238j;
         }
         if (trim.startsWith("mp4a")) {
             if (trim.startsWith("mp4a.")) {
@@ -239,34 +239,34 @@ public final class o {
                     }
                 }
             }
-            return str2 == null ? f8460r : str2;
+            return str2 == null ? f9246r : str2;
         }
         if (trim.startsWith("ac-3") || trim.startsWith("dac3")) {
-            return f8468z;
+            return f9254z;
         }
         if (trim.startsWith("ec-3") || trim.startsWith("dec3")) {
-            return f8420A;
+            return f9206A;
         }
         if (trim.startsWith("ec+3")) {
-            return f8421B;
+            return f9207B;
         }
         if (trim.startsWith("dtsc") || trim.startsWith("dtse")) {
-            return f8423D;
+            return f9209D;
         }
         if (trim.startsWith("dtsh") || trim.startsWith("dtsl")) {
-            return f8424E;
+            return f9210E;
         }
         if (trim.startsWith("opus")) {
-            return f8427H;
+            return f9213H;
         }
         if (trim.startsWith("vorbis")) {
-            return f8426G;
+            return f9212G;
         }
         int size = al.size();
-        for (int i6 = 0; i6 < size; i6++) {
-            a aVar = al.get(i6);
-            if (trim.startsWith(aVar.f8470b)) {
-                return aVar.f8469a;
+        for (int i4 = 0; i4 < size; i4++) {
+            a aVar = al.get(i4);
+            if (trim.startsWith(aVar.f9256b)) {
+                return aVar.f9255a;
             }
         }
         return null;
@@ -282,17 +282,17 @@ public final class o {
         if (b(str)) {
             return 2;
         }
-        if (f8446c.equals(k(str)) || f8441W.equals(str) || f8442X.equals(str) || ac.equals(str) || Y.equals(str) || f8443Z.equals(str) || aa.equals(str) || ab.equals(str) || ad.equals(str) || ae.equals(str) || af.equals(str) || aj.equals(str)) {
+        if (f9232c.equals(k(str)) || f9227W.equals(str) || f9228X.equals(str) || ac.equals(str) || Y.equals(str) || f9229Z.equals(str) || aa.equals(str) || ab.equals(str) || ad.equals(str) || ae.equals(str) || af.equals(str) || aj.equals(str)) {
             return 3;
         }
-        if (f8440V.equals(str) || ai.equals(str) || ag.equals(str) || ah.equals(str)) {
+        if (f9226V.equals(str) || ai.equals(str) || ag.equals(str) || ah.equals(str)) {
             return 4;
         }
         int size = al.size();
-        for (int i6 = 0; i6 < size; i6++) {
-            a aVar = al.get(i6);
-            if (str.equals(aVar.f8469a)) {
-                return aVar.f8471c;
+        for (int i4 = 0; i4 < size; i4++) {
+            a aVar = al.get(i4);
+            if (str.equals(aVar.f9255a)) {
+                return aVar.f9257c;
             }
         }
         return -1;
@@ -322,11 +322,11 @@ public final class o {
     }
 
     private static boolean g(String str) {
-        return f8446c.equals(k(str));
+        return f9232c.equals(k(str));
     }
 
     private static boolean h(String str) {
-        return f8447d.equals(k(str));
+        return f9233d.equals(k(str));
     }
 
     private static String i(String str) {
@@ -368,10 +368,10 @@ public final class o {
 
     private static String l(String str) {
         int size = al.size();
-        for (int i6 = 0; i6 < size; i6++) {
-            a aVar = al.get(i6);
-            if (str.startsWith(aVar.f8470b)) {
-                return aVar.f8469a;
+        for (int i4 = 0; i4 < size; i4++) {
+            a aVar = al.get(i4);
+            if (str.startsWith(aVar.f9256b)) {
+                return aVar.f9255a;
             }
         }
         return null;
@@ -379,74 +379,74 @@ public final class o {
 
     private static int m(String str) {
         int size = al.size();
-        for (int i6 = 0; i6 < size; i6++) {
-            a aVar = al.get(i6);
-            if (str.equals(aVar.f8469a)) {
-                return aVar.f8471c;
+        for (int i4 = 0; i4 < size; i4++) {
+            a aVar = al.get(i4);
+            if (str.equals(aVar.f9255a)) {
+                return aVar.f9257c;
             }
         }
         return -1;
     }
 
     public static boolean a(String str) {
-        return f8445b.equals(k(str));
+        return f9231b.equals(k(str));
     }
 
-    public static String a(int i6) {
-        if (i6 == 32) {
-            return f8454l;
+    public static String a(int i4) {
+        if (i4 == 32) {
+            return f9240l;
         }
-        if (i6 == 33) {
-            return f8451h;
+        if (i4 == 33) {
+            return f9237h;
         }
-        if (i6 == 35) {
+        if (i4 == 35) {
             return i;
         }
-        if (i6 == 64) {
-            return f8460r;
+        if (i4 == 64) {
+            return f9246r;
         }
-        if (i6 == 163) {
-            return f8457o;
+        if (i4 == 163) {
+            return f9243o;
         }
-        if (i6 == 177) {
-            return f8453k;
+        if (i4 == 177) {
+            return f9239k;
         }
-        if (i6 == 165) {
-            return f8468z;
+        if (i4 == 165) {
+            return f9254z;
         }
-        if (i6 != 166) {
-            switch (i6) {
+        if (i4 != 166) {
+            switch (i4) {
                 case 96:
                 case 97:
                 case 98:
                 case 99:
                 case 100:
                 case 101:
-                    return f8456n;
+                    return f9242n;
                 case 102:
                 case 103:
                 case 104:
-                    return f8460r;
+                    return f9246r;
                 case 105:
                 case 107:
-                    return f8462t;
+                    return f9248t;
                 case 106:
-                    return f8455m;
+                    return f9241m;
                 default:
-                    switch (i6) {
+                    switch (i4) {
                         case 169:
                         case 172:
-                            return f8423D;
+                            return f9209D;
                         case 170:
                         case 171:
-                            return f8424E;
+                            return f9210E;
                         case 173:
-                            return f8427H;
+                            return f9213H;
                         default:
                             return null;
                     }
             }
         }
-        return f8420A;
+        return f9206A;
     }
 }

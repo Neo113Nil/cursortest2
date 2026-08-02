@@ -11,43 +11,43 @@ import org.json.JSONObject;
 public final class VastProperties {
 
     /* renamed from: a, reason: collision with root package name */
-    private final boolean f36216a;
+    private final boolean f36983a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final Float f36217b;
+    private final Float f36984b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final boolean f36218c;
+    private final boolean f36985c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final Position f36219d;
+    private final Position f36986d;
 
-    private VastProperties(boolean z3, Float f3, boolean z6, Position position) {
-        this.f36216a = z3;
-        this.f36217b = f3;
-        this.f36218c = z6;
-        this.f36219d = position;
+    private VastProperties(boolean z6, Float f2, boolean z9, Position position) {
+        this.f36983a = z6;
+        this.f36984b = f2;
+        this.f36985c = z9;
+        this.f36986d = position;
     }
 
-    public static VastProperties createVastPropertiesForNonSkippableMedia(boolean z3, Position position) {
+    public static VastProperties createVastPropertiesForNonSkippableMedia(boolean z6, Position position) {
         g.a(position, "Position is null");
-        return new VastProperties(false, null, z3, position);
+        return new VastProperties(false, null, z6, position);
     }
 
-    public static VastProperties createVastPropertiesForSkippableMedia(float f3, boolean z3, Position position) {
+    public static VastProperties createVastPropertiesForSkippableMedia(float f2, boolean z6, Position position) {
         g.a(position, "Position is null");
-        return new VastProperties(true, Float.valueOf(f3), z3, position);
+        return new VastProperties(true, Float.valueOf(f2), z6, position);
     }
 
     public JSONObject a() {
         JSONObject jSONObject = new JSONObject();
         try {
-            jSONObject.put("skippable", this.f36216a);
-            if (this.f36216a) {
-                jSONObject.put("skipOffset", this.f36217b);
+            jSONObject.put("skippable", this.f36983a);
+            if (this.f36983a) {
+                jSONObject.put("skipOffset", this.f36984b);
             }
-            jSONObject.put(NativeAdvancedJsUtils.f17901k, this.f36218c);
-            jSONObject.put(b.ab, this.f36219d);
+            jSONObject.put(NativeAdvancedJsUtils.f18688k, this.f36985c);
+            jSONObject.put(b.ab, this.f36986d);
             return jSONObject;
         } catch (JSONException e9) {
             d.a("VastProperties: JSON error", e9);
@@ -56,18 +56,18 @@ public final class VastProperties {
     }
 
     public Position getPosition() {
-        return this.f36219d;
+        return this.f36986d;
     }
 
     public Float getSkipOffset() {
-        return this.f36217b;
+        return this.f36984b;
     }
 
     public boolean isAutoPlay() {
-        return this.f36218c;
+        return this.f36985c;
     }
 
     public boolean isSkippable() {
-        return this.f36216a;
+        return this.f36983a;
     }
 }

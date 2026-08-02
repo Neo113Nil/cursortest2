@@ -9,31 +9,31 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public final class Hv {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Cv f25408a;
+    public final Cv f26151a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final AtomicBoolean f25409b = new AtomicBoolean(false);
+    public final AtomicBoolean f26152b = new AtomicBoolean(false);
 
     /* renamed from: c, reason: collision with root package name */
-    public volatile ScheduledFuture f25410c;
+    public volatile ScheduledFuture f26153c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final Fv f25411d;
+    public final Fv f26154d;
 
     public Hv(Cv cv, ScheduledExecutorService scheduledExecutorService, long j6, Fv fv) {
-        this.f25411d = fv;
-        this.f25408a = cv;
+        this.f26154d = fv;
+        this.f26151a = cv;
         if (j6 > 0) {
-            this.f25410c = scheduledExecutorService.schedule(new RunnableC3865s0(9, this, cv, fv), j6, TimeUnit.MILLISECONDS);
+            this.f26153c = scheduledExecutorService.schedule(new RunnableC3888s0(9, this, cv, fv), j6, TimeUnit.MILLISECONDS);
         }
     }
 
     public final void a() {
-        if (this.f25409b.compareAndSet(false, true)) {
-            if (this.f25410c != null) {
-                this.f25410c.cancel(false);
+        if (this.f26152b.compareAndSet(false, true)) {
+            if (this.f26153c != null) {
+                this.f26153c.cancel(false);
             }
-            this.f25408a.b(this.f25411d, false);
+            this.f26151a.b(this.f26154d, false);
         }
     }
 }

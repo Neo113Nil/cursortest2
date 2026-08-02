@@ -4,14 +4,14 @@ package g8;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final char[] f37710a = new char[117];
+    public static final char[] f37735a = new char[117];
 
     /* renamed from: b, reason: collision with root package name */
-    public static final byte[] f37711b = new byte[com.anythink.expressad.video.module.a.a.f21727Q];
+    public static final byte[] f37736b = new byte[com.anythink.expressad.video.module.a.a.f22514Q];
 
     static {
         int i = 0;
-        for (int i6 = 0; i6 < 32; i6++) {
+        for (int i4 = 0; i4 < 32; i4++) {
         }
         a('b', 8);
         a('t', 9);
@@ -22,7 +22,7 @@ public final class c {
         a('\"', 34);
         a('\\', 92);
         while (true) {
-            byte[] bArr = f37711b;
+            byte[] bArr = f37736b;
             if (i >= 33) {
                 bArr[9] = 3;
                 bArr[10] = 3;
@@ -45,7 +45,7 @@ public final class c {
 
     public static void a(char c9, int i) {
         if (c9 != 'u') {
-            f37710a[c9] = (char) i;
+            f37735a[c9] = (char) i;
         }
     }
 }

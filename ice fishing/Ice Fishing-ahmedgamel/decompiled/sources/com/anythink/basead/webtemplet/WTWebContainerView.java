@@ -18,28 +18,28 @@ import java.util.Map;
 public class WTWebContainerView extends FrameLayout {
 
     /* renamed from: a, reason: collision with root package name */
-    protected w f11373a;
+    protected w f12159a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected y f11374b;
+    protected y f12160b;
 
     /* renamed from: c, reason: collision with root package name */
-    protected x f11375c;
+    protected x f12161c;
 
     /* renamed from: d, reason: collision with root package name */
-    a f11376d;
+    a f12162d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final String f11377e;
+    private final String f12163e;
 
     /* renamed from: f, reason: collision with root package name */
-    private WTWebView f11378f;
+    private WTWebView f12164f;
 
     /* renamed from: g, reason: collision with root package name */
-    private final List<i> f11379g;
+    private final List<i> f12165g;
 
     /* renamed from: h, reason: collision with root package name */
-    private volatile boolean f11380h;
+    private volatile boolean f12166h;
 
     public interface a {
         void a();
@@ -51,13 +51,13 @@ public class WTWebContainerView extends FrameLayout {
 
     public WTWebContainerView(Context context) {
         super(context);
-        this.f11377e = "WTWebContainerView";
-        this.f11379g = Collections.synchronizedList(new ArrayList());
-        this.f11380h = false;
+        this.f12163e = "WTWebContainerView";
+        this.f12165g = Collections.synchronizedList(new ArrayList());
+        this.f12166h = false;
     }
 
     public Object getJsCommunicationObject() {
-        WTWebView wTWebView = this.f11378f;
+        WTWebView wTWebView = this.f12164f;
         if (wTWebView != null) {
             return wTWebView.getJsCommunicationObject();
         }
@@ -65,15 +65,15 @@ public class WTWebContainerView extends FrameLayout {
     }
 
     public void init(Object obj) {
-        if (com.anythink.basead.b.c.d.a(this.f11373a)) {
+        if (com.anythink.basead.b.c.d.a(this.f12159a)) {
             a();
             return;
         }
-        String a9 = com.anythink.core.common.res.d.a(t.b().g()).a(this.f11373a.an());
-        String a10 = com.anythink.basead.b.c.d.a((x) null, this.f11373a, 3);
+        String a9 = com.anythink.core.common.res.d.a(t.b().g()).a(this.f12159a.an());
+        String a10 = com.anythink.basead.b.c.d.a((x) null, this.f12159a, 3);
         try {
-            this.f11378f = new WTWebView(t.b().g());
-            l.a(a10, new File(a9).toURI().toString(), this.f11378f, new l.a() { // from class: com.anythink.basead.webtemplet.WTWebContainerView.1
+            this.f12164f = new WTWebView(t.b().g());
+            l.a(a10, new File(a9).toURI().toString(), this.f12164f, new l.a() { // from class: com.anythink.basead.webtemplet.WTWebContainerView.1
                 @Override // com.anythink.basead.webtemplet.l.a
                 public final void a() {
                     WTWebContainerView.this.a();
@@ -81,27 +81,27 @@ public class WTWebContainerView extends FrameLayout {
 
                 @Override // com.anythink.basead.webtemplet.l.a
                 public final void a(com.anythink.basead.d.f fVar) {
-                    a aVar = WTWebContainerView.this.f11376d;
+                    a aVar = WTWebContainerView.this.f12162d;
                     if (aVar != null) {
                         aVar.a(fVar);
                     }
                 }
-            }, this.f11373a, this.f11375c, 2, obj);
+            }, this.f12159a, this.f12161c, 2, obj);
         } catch (Throwable th) {
-            a aVar = this.f11376d;
+            a aVar = this.f12162d;
             if (aVar != null) {
-                aVar.a(com.anythink.basead.d.g.a(com.anythink.basead.d.g.f6171b, "wtWebView create fail with " + th.getMessage()));
+                aVar.a(com.anythink.basead.d.g.a(com.anythink.basead.d.g.f6957b, "wtWebView create fail with " + th.getMessage()));
             }
         }
     }
 
     public void notifyInnerAdEvent(int i, Map<String, Object> map) {
-        if (!this.f11380h) {
-            synchronized (this.f11379g) {
-                this.f11379g.add(new i(i, map));
+        if (!this.f12166h) {
+            synchronized (this.f12165g) {
+                this.f12165g.add(new i(i, map));
             }
         } else {
-            WTWebView wTWebView = this.f11378f;
+            WTWebView wTWebView = this.f12164f;
             if (wTWebView != null) {
                 wTWebView.notifyInnerAdEvent(i, map);
             }
@@ -109,7 +109,7 @@ public class WTWebContainerView extends FrameLayout {
     }
 
     public void release() {
-        WTWebView wTWebView = this.f11378f;
+        WTWebView wTWebView = this.f12164f;
         if (wTWebView != null) {
             wTWebView.release();
         }
@@ -117,45 +117,45 @@ public class WTWebContainerView extends FrameLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a() {
-        if (this.f11378f == null) {
-            this.f11378f = com.anythink.basead.b.c.d.c(com.anythink.basead.b.c.d.a((x) null, this.f11373a, 3));
+        if (this.f12164f == null) {
+            this.f12164f = com.anythink.basead.b.c.d.c(com.anythink.basead.b.c.d.a((x) null, this.f12159a, 3));
         }
-        if (this.f11378f != null) {
-            this.f11380h = true;
-            synchronized (this.f11379g) {
+        if (this.f12164f != null) {
+            this.f12166h = true;
+            synchronized (this.f12165g) {
                 try {
-                    if (!this.f11379g.isEmpty()) {
-                        for (i iVar : this.f11379g) {
-                            notifyInnerAdEvent(iVar.f11514a, iVar.f11515b);
+                    if (!this.f12165g.isEmpty()) {
+                        for (i iVar : this.f12165g) {
+                            notifyInnerAdEvent(iVar.f12300a, iVar.f12301b);
                         }
-                        this.f11379g.clear();
+                        this.f12165g.clear();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
-            this.f11378f.prepare(new WTWebView.a() { // from class: com.anythink.basead.webtemplet.WTWebContainerView.2
+            this.f12164f.prepare(new WTWebView.a() { // from class: com.anythink.basead.webtemplet.WTWebContainerView.2
                 @Override // com.anythink.basead.webtemplet.WTWebView.a
                 public final void a() {
-                    a aVar = WTWebContainerView.this.f11376d;
+                    a aVar = WTWebContainerView.this.f12162d;
                     if (aVar != null) {
                         aVar.b();
                     }
                 }
             });
-            this.f11378f.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
-            addView(this.f11378f);
+            this.f12164f.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
+            addView(this.f12164f);
         }
     }
 
     public WTWebContainerView(Context context, w wVar, x xVar, a aVar) {
         super(context);
-        this.f11377e = "WTWebContainerView";
-        this.f11379g = Collections.synchronizedList(new ArrayList());
-        this.f11380h = false;
-        this.f11373a = wVar;
-        this.f11374b = xVar.f14168o;
-        this.f11375c = xVar;
-        this.f11376d = aVar;
+        this.f12163e = "WTWebContainerView";
+        this.f12165g = Collections.synchronizedList(new ArrayList());
+        this.f12166h = false;
+        this.f12159a = wVar;
+        this.f12160b = xVar.f14954o;
+        this.f12161c = xVar;
+        this.f12162d = aVar;
     }
 }

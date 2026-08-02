@@ -7,13 +7,13 @@ import k6.d;
 public final class a {
 
     /* renamed from: c, reason: collision with root package name */
-    public static final a f4178c;
+    public static final a f4156c;
 
     /* renamed from: a, reason: collision with root package name */
-    public final Duration f4179a;
+    public final Duration f4157a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Duration f4180b;
+    public final Duration f4158b;
 
     static {
         Duration ofSeconds;
@@ -36,7 +36,7 @@ public final class a {
             d.a("initialBackoff must be greater than 0", nanos > 0);
             nanos2 = ofSeconds2.toNanos();
             d.a("maxBackoff must be greater than 0", nanos2 > 0);
-            f4178c = aVar;
+            f4156c = aVar;
             return;
         }
         StringBuilder sb = new StringBuilder();
@@ -50,8 +50,8 @@ public final class a {
     }
 
     public a(Duration duration, Duration duration2) {
-        this.f4179a = duration;
-        this.f4180b = duration2;
+        this.f4157a = duration;
+        this.f4158b = duration2;
     }
 
     public final boolean equals(Object obj) {
@@ -65,23 +65,23 @@ public final class a {
         }
         a aVar = (a) obj;
         aVar.getClass();
-        equals = this.f4179a.equals(aVar.f4179a);
+        equals = this.f4157a.equals(aVar.f4157a);
         if (!equals) {
             return false;
         }
-        equals2 = this.f4180b.equals(aVar.f4180b);
+        equals2 = this.f4158b.equals(aVar.f4158b);
         return equals2 && Double.doubleToLongBits(1.5d) == Double.doubleToLongBits(1.5d);
     }
 
     public final int hashCode() {
         int hashCode;
         int hashCode2;
-        hashCode = this.f4179a.hashCode();
-        hashCode2 = this.f4180b.hashCode();
+        hashCode = this.f4157a.hashCode();
+        hashCode2 = this.f4158b.hashCode();
         return (((((hashCode ^ (-718379950)) * 1000003) ^ hashCode2) * 1000003) ^ ((int) (Double.doubleToLongBits(1.5d) ^ (Double.doubleToLongBits(1.5d) >>> 32)))) * 1000003;
     }
 
     public final String toString() {
-        return "RetryPolicy{maxAttempts=5, initialBackoff=" + this.f4179a + ", maxBackoff=" + this.f4180b + ", backoffMultiplier=1.5, retryExceptionPredicate=null}";
+        return "RetryPolicy{maxAttempts=5, initialBackoff=" + this.f4157a + ", maxBackoff=" + this.f4158b + ", backoffMultiplier=1.5, retryExceptionPredicate=null}";
     }
 }

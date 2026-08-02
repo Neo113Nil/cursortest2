@@ -17,8 +17,8 @@ public class QR implements Runnable {
     public final void run() {
         Iterator it = this.A01.iterator();
         while (it.hasNext()) {
-            C1173Qa c1173Qa = (C1173Qa) it.next();
-            this.A00.A0e(c1173Qa.A04, c1173Qa.A00, c1173Qa.A01, c1173Qa.A02, c1173Qa.A03);
+            C1193Qa c1193Qa = (C1193Qa) it.next();
+            this.A00.A0e(c1193Qa.A04, c1193Qa.A00, c1193Qa.A01, c1193Qa.A02, c1193Qa.A03);
         }
         this.A01.clear();
         this.A00.A05.remove(this.A01);

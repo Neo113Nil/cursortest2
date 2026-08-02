@@ -11,69 +11,69 @@ import java.util.List;
 public class l extends c<at> {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f13029a = "com.anythink.core.common.e.l";
+    private static final String f13815a = "com.anythink.core.common.e.l";
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile l f13030b;
+    private static volatile l f13816b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f13031c;
+    private int f13817c;
 
     /* renamed from: d, reason: collision with root package name */
-    private int f13032d;
+    private int f13818d;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f13033a = "inspect_info";
+        public static final String f13819a = "inspect_info";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f13034b = "inspect_id";
+        public static final String f13820b = "inspect_id";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f13035c = "update_time";
+        public static final String f13821c = "update_time";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f13036d = "inspect_result";
+        public static final String f13822d = "inspect_result";
 
         /* renamed from: e, reason: collision with root package name */
-        public static final String f13037e = "pgk_name";
+        public static final String f13823e = "pgk_name";
 
         /* renamed from: f, reason: collision with root package name */
-        public static final String f13038f = "CREATE TABLE IF NOT EXISTS inspect_info(inspect_id TEXT, inspect_result INTEGER, pgk_name TEXT, update_time INTEGER )";
+        public static final String f13824f = "CREATE TABLE IF NOT EXISTS inspect_info(inspect_id TEXT, inspect_result INTEGER, pgk_name TEXT, update_time INTEGER )";
 
         /* renamed from: g, reason: collision with root package name */
-        public static final String f13039g = "CREATE TABLE IF NOT EXISTS inspect_info(inspect_id TEXT, update_time INTEGER )";
+        public static final String f13825g = "CREATE TABLE IF NOT EXISTS inspect_info(inspect_id TEXT, update_time INTEGER )";
 
         /* renamed from: h, reason: collision with root package name */
-        public static final String f13040h = "ALTER TABLE inspect_info ADD COLUMN inspect_result INTEGER DEFAULT 1";
+        public static final String f13826h = "ALTER TABLE inspect_info ADD COLUMN inspect_result INTEGER DEFAULT 1";
         public static final String i = "ALTER TABLE inspect_info DROP COLUMN pgk_name";
     }
 
     private l(d dVar) {
         super(dVar);
-        this.f13031c = 500;
-        this.f13032d = -1627869184;
+        this.f13817c = 500;
+        this.f13818d = -1627869184;
     }
 
     public static l a(d dVar) {
-        if (f13030b == null) {
+        if (f13816b == null) {
             synchronized (l.class) {
                 try {
-                    if (f13030b == null) {
-                        f13030b = new l(dVar);
+                    if (f13816b == null) {
+                        f13816b = new l(dVar);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f13030b;
+        return f13816b;
     }
 
     private synchronized void b(String str) {
         try {
-            d().delete(a.f13033a, "inspect_id = ? ", new String[]{str});
+            d().delete(a.f13819a, "inspect_id = ? ", new String[]{str});
         } catch (Throwable unused) {
         }
     }
@@ -92,7 +92,7 @@ public class l extends c<at> {
     public final synchronized List<at> b() {
         Cursor cursor;
         try {
-            cursor = c().query(a.f13033a, null, null, null, null, null, null, null);
+            cursor = c().query(a.f13819a, null, null, null, null, null, null, null);
             if (cursor != null) {
                 try {
                     if (cursor.getCount() > 0) {
@@ -100,9 +100,9 @@ public class l extends c<at> {
                         while (cursor.moveToNext()) {
                             try {
                                 at atVar = new at();
-                                String string = cursor.getString(cursor.getColumnIndex(a.f13034b));
+                                String string = cursor.getString(cursor.getColumnIndex(a.f13820b));
                                 if (!TextUtils.isEmpty(string)) {
-                                    int i = cursor.getInt(cursor.getColumnIndex(a.f13036d));
+                                    int i = cursor.getInt(cursor.getColumnIndex(a.f13822d));
                                     long j6 = cursor.getLong(cursor.getColumnIndex("update_time"));
                                     atVar.a(string);
                                     atVar.a(i);
@@ -140,19 +140,19 @@ public class l extends c<at> {
         }
     }
 
-    public final synchronized long a(String str, boolean z3) {
+    public final synchronized long a(String str, boolean z6) {
         if (d() == null) {
             return -1L;
         }
         try {
             ContentValues contentValues = new ContentValues();
-            contentValues.put(a.f13034b, str);
-            contentValues.put(a.f13036d, Integer.valueOf(z3 ? 1 : 2));
+            contentValues.put(a.f13820b, str);
+            contentValues.put(a.f13822d, Integer.valueOf(z6 ? 1 : 2));
             contentValues.put("update_time", Long.valueOf(System.currentTimeMillis()));
             if (a(str)) {
-                return d().update(a.f13033a, contentValues, "inspect_id = ? ", new String[]{str});
+                return d().update(a.f13819a, contentValues, "inspect_id = ? ", new String[]{str});
             }
-            return d().insert(a.f13033a, null, contentValues);
+            return d().insert(a.f13819a, null, contentValues);
         } catch (Exception unused) {
             return -1L;
         }
@@ -171,7 +171,7 @@ public class l extends c<at> {
             return false;
         }
         try {
-            cursor = c().query(a.f13033a, new String[]{a.f13034b}, "inspect_id=?", new String[]{str}, null, null, null);
+            cursor = c().query(a.f13819a, new String[]{a.f13820b}, "inspect_id=?", new String[]{str}, null, null, null);
             if (cursor != null) {
                 try {
                     if (cursor.getCount() > 0) {
@@ -208,8 +208,8 @@ public class l extends c<at> {
         Cursor cursor = null;
         long j6 = -1;
         try {
-            cursor = c().query(a.f13033a, null, null, null, null, null, "update_time DESC", String.valueOf(this.f13031c));
-            if (cursor != null && cursor.getCount() >= this.f13031c) {
+            cursor = c().query(a.f13819a, null, null, null, null, null, "update_time DESC", String.valueOf(this.f13817c));
+            if (cursor != null && cursor.getCount() >= this.f13817c) {
                 cursor.moveToLast();
                 j6 = cursor.getLong(cursor.getColumnIndex("update_time"));
                 cursor.close();
@@ -218,13 +218,13 @@ public class l extends c<at> {
             if (cursor != null) {
                 cursor.close();
             }
-            currentTimeMillis = System.currentTimeMillis() - this.f13032d;
+            currentTimeMillis = System.currentTimeMillis() - this.f13818d;
             if (j6 != 0 || j6 > currentTimeMillis) {
                 j6 = currentTimeMillis;
             }
             if (j6 > 0) {
                 try {
-                    d().delete(a.f13033a, "update_time<?", new String[]{String.valueOf(j6)});
+                    d().delete(a.f13819a, "update_time<?", new String[]{String.valueOf(j6)});
                 } catch (Throwable unused2) {
                 }
             }
@@ -234,7 +234,7 @@ public class l extends c<at> {
             try {
                 System.gc();
                 j6 = j9;
-                currentTimeMillis = System.currentTimeMillis() - this.f13032d;
+                currentTimeMillis = System.currentTimeMillis() - this.f13818d;
                 if (j6 != 0) {
                 }
                 j6 = currentTimeMillis;

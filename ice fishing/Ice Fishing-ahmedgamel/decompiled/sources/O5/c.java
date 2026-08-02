@@ -100,7 +100,7 @@ public final class c extends i {
         i.setLongProperty$default(this, "startTime", j6, null, false, 12, null);
     }
 
-    public final void setValid(boolean z3) {
-        i.setBooleanProperty$default(this, "isValid", z3, null, false, 12, null);
+    public final void setValid(boolean z6) {
+        i.setBooleanProperty$default(this, "isValid", z6, null, false, 12, null);
     }
 }

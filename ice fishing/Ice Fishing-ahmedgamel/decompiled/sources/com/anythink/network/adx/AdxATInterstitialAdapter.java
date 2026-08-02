@@ -24,29 +24,29 @@ import java.util.Map;
 public class AdxATInterstitialAdapter extends CustomInterstitialAdapter {
 
     /* renamed from: a, reason: collision with root package name */
-    protected x f23018a;
+    protected x f23805a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected e f23019b;
+    protected e f23806b;
 
     /* renamed from: c, reason: collision with root package name */
-    protected int f23020c = 0;
+    protected int f23807c = 0;
 
     /* renamed from: d, reason: collision with root package name */
-    Map<String, Object> f23021d;
+    Map<String, Object> f23808d;
 
     @Override // com.anythink.interstitial.unitgroup.api.CustomInterstitialAdapter, com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
-        e eVar = this.f23019b;
+        e eVar = this.f23806b;
         if (eVar != null) {
             eVar.b();
-            this.f23019b = null;
+            this.f23806b = null;
         }
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter
     public Map<String, Object> getAdExtraInfoMap() {
-        e eVar = this.f23019b;
+        e eVar = this.f23806b;
         if (eVar != null) {
             return eVar.e();
         }
@@ -60,7 +60,7 @@ public class AdxATInterstitialAdapter extends CustomInterstitialAdapter {
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public Map<String, Object> getNetworkInfoMap() {
-        return this.f23021d;
+        return this.f23808d;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -70,8 +70,8 @@ public class AdxATInterstitialAdapter extends CustomInterstitialAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        x xVar = this.f23018a;
-        return xVar != null ? xVar.f14156b : "";
+        x xVar = this.f23805a;
+        return xVar != null ? xVar.f14942b : "";
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -82,7 +82,7 @@ public class AdxATInterstitialAdapter extends CustomInterstitialAdapter {
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public boolean initNetworkObjectByPlacementId(Context context, Map<String, Object> map, Map<String, Object> map2) {
         a(context, map);
-        e eVar = this.f23019b;
+        e eVar = this.f23806b;
         if (eVar == null) {
             return true;
         }
@@ -90,7 +90,7 @@ public class AdxATInterstitialAdapter extends CustomInterstitialAdapter {
             @Override // com.anythink.basead.f.c.a
             public final void onAdCacheLoaded() {
                 if (AdxATInterstitialAdapter.this.getTrackingInfo() != null) {
-                    AdxATInterstitialAdapter.this.getTrackingInfo().M(AdxATInterstitialAdapter.this.f23019b.f());
+                    AdxATInterstitialAdapter.this.getTrackingInfo().M(AdxATInterstitialAdapter.this.f23806b.f());
                 }
             }
         });
@@ -99,24 +99,24 @@ public class AdxATInterstitialAdapter extends CustomInterstitialAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public boolean isAdReady() {
-        e eVar = this.f23019b;
-        boolean z3 = eVar != null && eVar.c();
-        if (z3 && this.f23021d == null) {
-            this.f23021d = d.a(this.f23019b);
+        e eVar = this.f23806b;
+        boolean z6 = eVar != null && eVar.c();
+        if (z6 && this.f23808d == null) {
+            this.f23808d = d.a(this.f23806b);
         }
-        return z3;
+        return z6;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void loadCustomNetworkAd(Context context, Map<String, Object> map, Map<String, Object> map2) {
         a(context, map);
-        this.f23019b.a(new com.anythink.basead.g.c() { // from class: com.anythink.network.adx.AdxATInterstitialAdapter.2
+        this.f23806b.a(new com.anythink.basead.g.c() { // from class: com.anythink.network.adx.AdxATInterstitialAdapter.2
             @Override // com.anythink.basead.g.c
             public final void onAdCacheLoaded() {
                 AdxATInterstitialAdapter adxATInterstitialAdapter = AdxATInterstitialAdapter.this;
-                adxATInterstitialAdapter.f23021d = d.a(adxATInterstitialAdapter.f23019b);
+                adxATInterstitialAdapter.f23808d = d.a(adxATInterstitialAdapter.f23806b);
                 if (AdxATInterstitialAdapter.this.getTrackingInfo() != null) {
-                    AdxATInterstitialAdapter.this.getTrackingInfo().M(AdxATInterstitialAdapter.this.f23019b.f());
+                    AdxATInterstitialAdapter.this.getTrackingInfo().M(AdxATInterstitialAdapter.this.f23806b.f());
                 }
                 if (((ATBaseAdInternalAdapter) AdxATInterstitialAdapter.this).mLoadListener != null) {
                     ((ATBaseAdInternalAdapter) AdxATInterstitialAdapter.this).mLoadListener.onAdCacheLoaded(new BaseAd[0]);
@@ -141,13 +141,13 @@ public class AdxATInterstitialAdapter extends CustomInterstitialAdapter {
 
     @Override // com.anythink.interstitial.unitgroup.api.CustomInterstitialAdapter
     public void show(Activity activity) {
-        int f3 = m.f(activity);
+        int f2 = m.f(activity);
         HashMap hashMap = new HashMap(1);
         hashMap.put("extra_scenario", this.mScenario);
-        hashMap.put(com.anythink.basead.h.c.f9001j, Integer.valueOf(f3));
+        hashMap.put(com.anythink.basead.h.c.f9787j, Integer.valueOf(f2));
         AdxATInitManager.getInstance();
-        AdxATInitManager.a(getTrackingInfo(), this.f23018a);
-        e eVar = this.f23019b;
+        AdxATInitManager.a(getTrackingInfo(), this.f23805a);
+        e eVar = this.f23806b;
         eVar.a(new g(eVar.d(), getTrackingInfo()) { // from class: com.anythink.network.adx.AdxATInterstitialAdapter.1
             @Override // com.anythink.basead.g.e, com.anythink.basead.g.a
             public final void onAdClick(j jVar) {
@@ -173,10 +173,10 @@ public class AdxATInterstitialAdapter extends CustomInterstitialAdapter {
             }
 
             @Override // com.anythink.basead.g.a
-            public final void onDeeplinkCallback(boolean z3) {
-                e eVar2 = AdxATInterstitialAdapter.this.f23019b;
+            public final void onDeeplinkCallback(boolean z6) {
+                e eVar2 = AdxATInterstitialAdapter.this.f23806b;
                 if ((eVar2 == null || eVar2.g()) && ((CustomInterstitialAdapter) AdxATInterstitialAdapter.this).mImpressListener != null) {
-                    ((CustomInterstitialAdapter) AdxATInterstitialAdapter.this).mImpressListener.onDeeplinkCallback(z3);
+                    ((CustomInterstitialAdapter) AdxATInterstitialAdapter.this).mImpressListener.onDeeplinkCallback(z6);
                 }
             }
 
@@ -205,7 +205,7 @@ public class AdxATInterstitialAdapter extends CustomInterstitialAdapter {
                 }
             }
         });
-        e eVar2 = this.f23019b;
+        e eVar2 = this.f23806b;
         if (eVar2 != null) {
             eVar2.a(activity, hashMap);
         }
@@ -218,16 +218,16 @@ public class AdxATInterstitialAdapter extends CustomInterstitialAdapter {
         AdxATInitManager.getInstance().initSDK(context, map, null);
         int parseInt = (!map.containsKey("v_m") || (obj3 = map.get("v_m")) == null) ? 0 : Integer.parseInt(obj3.toString());
         int parseInt2 = (!map.containsKey("s_c_t") || (obj2 = map.get("s_c_t")) == null) ? -1 : Integer.parseInt(obj2.toString());
-        x xVar = (x) map.get(j.w.f12614a);
-        this.f23018a = xVar;
-        this.f23019b = new e(context, c.b.ADX_OFFER_REQUEST_TYPE, xVar);
+        x xVar = (x) map.get(j.w.f13400a);
+        this.f23805a = xVar;
+        this.f23806b = new e(context, c.b.ADX_OFFER_REQUEST_TYPE, xVar);
         d.a b9 = new d.a().a((!map.containsKey(k.aF) || (obj = map.get(k.aF)) == null) ? "1" : obj.toString()).a(parseInt).b(parseInt2);
-        int i = this.f23020c;
+        int i = this.f23807c;
         if (i > 0) {
             b9.a(i == 1);
         }
-        this.f23019b.a(b9.a());
+        this.f23806b.a(b9.a());
         AdxATInitManager.getInstance();
-        AdxATInitManager.a(getTrackingInfo(), this.f23018a);
+        AdxATInitManager.a(getTrackingInfo(), this.f23805a);
     }
 }

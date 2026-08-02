@@ -11,7 +11,7 @@ public class d extends b {
     @Override // android.os.AsyncTask
     /* renamed from: a, reason: merged with bridge method [inline-methods] */
     public String doInBackground(Object... objArr) {
-        this.f36325b.a(null);
+        this.f37092b.a(null);
         return null;
     }
 }

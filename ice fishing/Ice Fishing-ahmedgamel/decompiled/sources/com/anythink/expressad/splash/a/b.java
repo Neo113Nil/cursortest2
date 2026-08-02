@@ -6,99 +6,99 @@ import com.anythink.expressad.foundation.d.d;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private String f20481a;
+    private String f21268a;
 
     /* renamed from: b, reason: collision with root package name */
-    private String f20482b;
+    private String f21269b;
 
     /* renamed from: c, reason: collision with root package name */
-    private d f20483c;
+    private d f21270c;
 
     /* renamed from: d, reason: collision with root package name */
-    private String f20484d;
+    private String f21271d;
 
     /* renamed from: e, reason: collision with root package name */
-    private boolean f20485e;
+    private boolean f21272e;
 
     /* renamed from: f, reason: collision with root package name */
-    private int f20486f;
+    private int f21273f;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f20487g;
+    private int f21274g;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f20488h;
+    private int f21275h;
     private int i;
 
     /* renamed from: j, reason: collision with root package name */
-    private int f20489j;
+    private int f21276j;
 
     /* renamed from: k, reason: collision with root package name */
-    private int f20490k;
+    private int f21277k;
 
     /* renamed from: l, reason: collision with root package name */
-    private int f20491l;
+    private int f21278l;
 
     /* renamed from: m, reason: collision with root package name */
-    private int f20492m;
+    private int f21279m;
 
     /* renamed from: n, reason: collision with root package name */
-    private int f20493n;
+    private int f21280n;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private String f20494a;
+        private String f21281a;
 
         /* renamed from: b, reason: collision with root package name */
-        private String f20495b;
+        private String f21282b;
 
         /* renamed from: c, reason: collision with root package name */
-        private d f20496c;
+        private d f21283c;
 
         /* renamed from: d, reason: collision with root package name */
-        private String f20497d;
+        private String f21284d;
 
         /* renamed from: e, reason: collision with root package name */
-        private boolean f20498e;
+        private boolean f21285e;
 
         /* renamed from: f, reason: collision with root package name */
-        private int f20499f;
+        private int f21286f;
 
         /* renamed from: g, reason: collision with root package name */
-        private int f20500g = 0;
+        private int f21287g = 0;
 
         /* renamed from: h, reason: collision with root package name */
-        private int f20501h = 1;
+        private int f21288h = 1;
         private int i = 0;
 
         /* renamed from: j, reason: collision with root package name */
-        private int f20502j = 0;
+        private int f21289j = 0;
 
         /* renamed from: k, reason: collision with root package name */
-        private int f20503k = 10;
+        private int f21290k = 10;
 
         /* renamed from: l, reason: collision with root package name */
-        private int f20504l = 5;
+        private int f21291l = 5;
 
         /* renamed from: m, reason: collision with root package name */
-        private int f20505m = 1;
+        private int f21292m = 1;
 
         /* renamed from: n, reason: collision with root package name */
-        private int f20506n;
+        private int f21293n;
 
         private a c(String str) {
-            this.f20497d = str;
+            this.f21284d = str;
             return this;
         }
 
         public final a a(String str) {
-            this.f20494a = str;
+            this.f21281a = str;
             return this;
         }
 
         public final a b(String str) {
-            this.f20495b = str;
+            this.f21282b = str;
             return this;
         }
 
@@ -108,52 +108,52 @@ public class b {
         }
 
         public final a e(int i) {
-            this.f20502j = i;
+            this.f21289j = i;
             return this;
         }
 
         public final a f(int i) {
-            this.f20503k = i;
+            this.f21290k = i;
             return this;
         }
 
         public final a g(int i) {
-            this.f20504l = i;
+            this.f21291l = i;
             return this;
         }
 
         public final a h(int i) {
-            this.f20506n = i;
+            this.f21293n = i;
             return this;
         }
 
         public final a i(int i) {
-            this.f20505m = i;
+            this.f21292m = i;
             return this;
         }
 
         public final a a(d dVar) {
-            this.f20496c = dVar;
+            this.f21283c = dVar;
             return this;
         }
 
         public final a b(int i) {
-            this.f20500g = i;
+            this.f21287g = i;
             return this;
         }
 
         public final a c(int i) {
-            this.f20501h = i;
+            this.f21288h = i;
             return this;
         }
 
-        public final a a(boolean z3) {
-            this.f20498e = z3;
+        public final a a(boolean z6) {
+            this.f21285e = z6;
             return this;
         }
 
         public final a a(int i) {
-            this.f20499f = i;
+            this.f21286f = i;
             return this;
         }
 
@@ -163,59 +163,59 @@ public class b {
     }
 
     public b(a aVar) {
-        this.f20487g = 0;
-        this.f20488h = 1;
+        this.f21274g = 0;
+        this.f21275h = 1;
         this.i = 0;
-        this.f20489j = 0;
-        this.f20490k = 10;
-        this.f20491l = 5;
-        this.f20492m = 1;
-        this.f20481a = aVar.f20494a;
-        this.f20482b = aVar.f20495b;
-        this.f20483c = aVar.f20496c;
-        this.f20484d = aVar.f20497d;
-        this.f20485e = aVar.f20498e;
-        this.f20486f = aVar.f20499f;
-        this.f20487g = aVar.f20500g;
-        this.f20488h = aVar.f20501h;
+        this.f21276j = 0;
+        this.f21277k = 10;
+        this.f21278l = 5;
+        this.f21279m = 1;
+        this.f21268a = aVar.f21281a;
+        this.f21269b = aVar.f21282b;
+        this.f21270c = aVar.f21283c;
+        this.f21271d = aVar.f21284d;
+        this.f21272e = aVar.f21285e;
+        this.f21273f = aVar.f21286f;
+        this.f21274g = aVar.f21287g;
+        this.f21275h = aVar.f21288h;
         this.i = aVar.i;
-        this.f20489j = aVar.f20502j;
-        this.f20490k = aVar.f20503k;
-        this.f20491l = aVar.f20504l;
-        this.f20493n = aVar.f20506n;
-        this.f20492m = aVar.f20505m;
+        this.f21276j = aVar.f21289j;
+        this.f21277k = aVar.f21290k;
+        this.f21278l = aVar.f21291l;
+        this.f21280n = aVar.f21293n;
+        this.f21279m = aVar.f21292m;
     }
 
     private String n() {
-        return this.f20484d;
+        return this.f21271d;
     }
 
     public final String a() {
-        return this.f20481a;
+        return this.f21268a;
     }
 
     public final String b() {
-        return this.f20482b;
+        return this.f21269b;
     }
 
     public final d c() {
-        return this.f20483c;
+        return this.f21270c;
     }
 
     public final boolean d() {
-        return this.f20485e;
+        return this.f21272e;
     }
 
     public final int e() {
-        return this.f20486f;
+        return this.f21273f;
     }
 
     public final int f() {
-        return this.f20487g;
+        return this.f21274g;
     }
 
     public final int g() {
-        return this.f20488h;
+        return this.f21275h;
     }
 
     public final int h() {
@@ -223,22 +223,22 @@ public class b {
     }
 
     public final int i() {
-        return this.f20489j;
+        return this.f21276j;
     }
 
     public final int j() {
-        return this.f20490k;
+        return this.f21277k;
     }
 
     public final int k() {
-        return this.f20491l;
+        return this.f21278l;
     }
 
     public final int l() {
-        return this.f20493n;
+        return this.f21280n;
     }
 
     public final int m() {
-        return this.f20492m;
+        return this.f21279m;
     }
 }

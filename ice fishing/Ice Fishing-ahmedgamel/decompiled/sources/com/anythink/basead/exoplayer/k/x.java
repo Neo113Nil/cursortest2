@@ -7,22 +7,22 @@ import java.io.OutputStream;
 public final class x extends BufferedOutputStream {
 
     /* renamed from: a, reason: collision with root package name */
-    private boolean f8515a;
+    private boolean f9301a;
 
     public x(OutputStream outputStream) {
         super(outputStream);
     }
 
     public final void a(OutputStream outputStream) {
-        a.b(this.f8515a);
+        a.b(this.f9301a);
         ((BufferedOutputStream) this).out = outputStream;
         ((BufferedOutputStream) this).count = 0;
-        this.f8515a = false;
+        this.f9301a = false;
     }
 
     @Override // java.io.FilterOutputStream, java.io.OutputStream, java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
-        this.f8515a = true;
+        this.f9301a = true;
         try {
             flush();
             th = null;

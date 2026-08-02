@@ -29,32 +29,32 @@ import org.json.JSONObject;
 public class NativeAdvancedExpandDialog extends Dialog {
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f17869a;
+    private final String f18656a;
 
     /* renamed from: b, reason: collision with root package name */
-    private String f17870b;
+    private String f18657b;
 
     /* renamed from: c, reason: collision with root package name */
-    private boolean f17871c;
+    private boolean f18658c;
 
     /* renamed from: d, reason: collision with root package name */
-    private FrameLayout f17872d;
+    private FrameLayout f18659d;
 
     /* renamed from: e, reason: collision with root package name */
-    private WindVaneWebView f17873e;
+    private WindVaneWebView f18660e;
 
     /* renamed from: f, reason: collision with root package name */
-    private TextView f17874f;
+    private TextView f18661f;
 
     /* renamed from: g, reason: collision with root package name */
-    private String f17875g;
+    private String f18662g;
 
     /* renamed from: h, reason: collision with root package name */
-    private List<d> f17876h;
+    private List<d> f18663h;
     private a i;
 
     /* renamed from: j, reason: collision with root package name */
-    private IMraidJSBridge f17877j;
+    private IMraidJSBridge f18664j;
 
     /* renamed from: com.anythink.expressad.advanced.js.NativeAdvancedExpandDialog$1, reason: invalid class name */
     public class AnonymousClass1 implements View.OnClickListener {
@@ -94,25 +94,25 @@ public class NativeAdvancedExpandDialog extends Dialog {
             if (NativeAdvancedExpandDialog.this.i != null) {
                 NativeAdvancedExpandDialog.this.i.a(false);
             }
-            NativeAdvancedExpandDialog.this.f17873e.loadDataWithBaseURL(null, "", "text/html", com.anythink.expressad.foundation.g.a.bR, null);
-            NativeAdvancedExpandDialog.this.f17872d.removeView(NativeAdvancedExpandDialog.this.f17873e);
-            NativeAdvancedExpandDialog.this.f17873e.release();
-            NativeAdvancedExpandDialog.this.f17873e = null;
+            NativeAdvancedExpandDialog.this.f18660e.loadDataWithBaseURL(null, "", "text/html", com.anythink.expressad.foundation.g.a.bR, null);
+            NativeAdvancedExpandDialog.this.f18659d.removeView(NativeAdvancedExpandDialog.this.f18660e);
+            NativeAdvancedExpandDialog.this.f18660e.release();
+            NativeAdvancedExpandDialog.this.f18660e = null;
             NativeAdvancedExpandDialog.this.i = null;
         }
     }
 
     public NativeAdvancedExpandDialog(Context context, Bundle bundle, a aVar) {
         super(context);
-        this.f17869a = "NativeAdvancedExpandDialog";
-        this.f17877j = new IMraidJSBridge() { // from class: com.anythink.expressad.advanced.js.NativeAdvancedExpandDialog.4
+        this.f18656a = "NativeAdvancedExpandDialog";
+        this.f18664j = new IMraidJSBridge() { // from class: com.anythink.expressad.advanced.js.NativeAdvancedExpandDialog.4
             @Override // com.anythink.core.express.b.b
             public void close() {
                 NativeAdvancedExpandDialog.this.dismiss();
             }
 
             @Override // com.anythink.core.express.b.b
-            public void expand(String str, boolean z3) {
+            public void expand(String str, boolean z6) {
             }
 
             @Override // com.anythink.expressad.atsignalcommon.mraid.IMraidJSBridge
@@ -123,12 +123,12 @@ public class NativeAdvancedExpandDialog extends Dialog {
             @Override // com.anythink.core.express.b.b
             public void open(String str) {
                 try {
-                    if (NativeAdvancedExpandDialog.this.f17873e != null && System.currentTimeMillis() - NativeAdvancedExpandDialog.this.f17873e.lastTouchTime > com.anythink.expressad.b.c.a.f18198c) {
-                        d dVar = (d) NativeAdvancedExpandDialog.this.f17876h.get(0);
-                        NativeAdvancedExpandDialog.this.f17873e.getUrl();
+                    if (NativeAdvancedExpandDialog.this.f18660e != null && System.currentTimeMillis() - NativeAdvancedExpandDialog.this.f18660e.lastTouchTime > com.anythink.expressad.b.c.a.f18985c) {
+                        d dVar = (d) NativeAdvancedExpandDialog.this.f18663h.get(0);
+                        NativeAdvancedExpandDialog.this.f18660e.getUrl();
                         com.anythink.expressad.b.c.a.a(dVar);
                     } else {
-                        if (NativeAdvancedExpandDialog.this.f17876h.size() > 1) {
+                        if (NativeAdvancedExpandDialog.this.f18663h.size() > 1) {
                             t.b().g().startActivity(new Intent("android.intent.action.VIEW", Uri.parse(str)));
                             str = null;
                         }
@@ -146,16 +146,16 @@ public class NativeAdvancedExpandDialog extends Dialog {
             }
 
             @Override // com.anythink.core.express.b.b
-            public void useCustomClose(boolean z3) {
+            public void useCustomClose(boolean z6) {
                 try {
-                    NativeAdvancedExpandDialog.this.f17874f.setVisibility(z3 ? 4 : 0);
+                    NativeAdvancedExpandDialog.this.f18661f.setVisibility(z6 ? 4 : 0);
                 } catch (Throwable unused) {
                 }
             }
         };
         if (bundle != null) {
-            this.f17870b = bundle.getString("url");
-            this.f17871c = bundle.getBoolean("shouldUseCustomClose");
+            this.f18657b = bundle.getString("url");
+            this.f18658c = bundle.getBoolean("shouldUseCustomClose");
         }
         this.i = aVar;
     }
@@ -172,23 +172,23 @@ public class NativeAdvancedExpandDialog extends Dialog {
         setCanceledOnTouchOutside(false);
         setCancelable(true);
         FrameLayout frameLayout = new FrameLayout(getContext());
-        this.f17872d = frameLayout;
+        this.f18659d = frameLayout;
         frameLayout.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
         WindVaneWebView windVaneWebView = new WindVaneWebView(getContext().getApplicationContext());
-        this.f17873e = windVaneWebView;
+        this.f18660e = windVaneWebView;
         windVaneWebView.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
-        this.f17872d.addView(this.f17873e);
+        this.f18659d.addView(this.f18660e);
         TextView textView = new TextView(getContext());
-        this.f17874f = textView;
+        this.f18661f = textView;
         textView.setBackgroundColor(0);
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(96, 96);
         layoutParams.gravity = 8388661;
         layoutParams.setMargins(30, 30, 30, 30);
-        this.f17874f.setLayoutParams(layoutParams);
-        this.f17874f.setVisibility(this.f17871c ? 4 : 0);
-        this.f17874f.setOnClickListener(new AnonymousClass1());
-        this.f17872d.addView(this.f17874f);
-        setContentView(this.f17872d);
+        this.f18661f.setLayoutParams(layoutParams);
+        this.f18661f.setVisibility(this.f18658c ? 4 : 0);
+        this.f18661f.setOnClickListener(new AnonymousClass1());
+        this.f18659d.addView(this.f18661f);
+        setContentView(this.f18659d);
         if (getWindow() != null) {
             getWindow().setBackgroundDrawable(new ColorDrawable(0));
             getWindow().getDecorView().setPadding(0, 0, 0, 0);
@@ -198,15 +198,15 @@ public class NativeAdvancedExpandDialog extends Dialog {
             getWindow().setAttributes(attributes);
             getWindow().getDecorView().setSystemUiVisibility(4615);
         }
-        this.f17873e.setWebViewListener(new AnonymousClass2());
-        this.f17873e.setObject(this.f17877j);
-        this.f17873e.loadUrl(this.f17870b);
+        this.f18660e.setWebViewListener(new AnonymousClass2());
+        this.f18660e.setObject(this.f18664j);
+        this.f18660e.loadUrl(this.f18657b);
         setOnDismissListener(new AnonymousClass3());
     }
 
     public void setCampaignList(String str, List<d> list) {
-        this.f17875g = str;
-        this.f17876h = list;
+        this.f18662g = str;
+        this.f18663h = list;
     }
 
     private void b() {
@@ -227,52 +227,52 @@ public class NativeAdvancedExpandDialog extends Dialog {
             JSONObject jSONObject = new JSONObject();
             jSONObject.put("orientation", i == 2 ? "landscape" : i == 1 ? "portrait" : "undefined");
             jSONObject.put("locked", "true");
-            float f3 = n.f(t.b().g());
-            float g4 = n.g(t.b().g());
-            HashMap h9 = n.h(t.b().g());
-            int intValue = ((Integer) h9.get("width")).intValue();
-            int intValue2 = ((Integer) h9.get("height")).intValue();
+            float f2 = n.f(t.b().g());
+            float g9 = n.g(t.b().g());
+            HashMap h3 = n.h(t.b().g());
+            int intValue = ((Integer) h3.get("width")).intValue();
+            int intValue2 = ((Integer) h3.get("height")).intValue();
             HashMap hashMap = new HashMap();
-            hashMap.put(com.anythink.core.express.b.a.f17525a, com.anythink.core.express.b.a.f17534k);
-            hashMap.put(com.anythink.core.express.b.a.f17526b, com.anythink.core.express.b.a.f17531g);
-            hashMap.put(com.anythink.core.express.b.a.f17527c, "true");
-            hashMap.put(com.anythink.core.express.b.a.f17528d, jSONObject);
-            this.f17873e.getLocationInWindow(new int[2]);
+            hashMap.put(com.anythink.core.express.b.a.f18312a, com.anythink.core.express.b.a.f18321k);
+            hashMap.put(com.anythink.core.express.b.a.f18313b, com.anythink.core.express.b.a.f18318g);
+            hashMap.put(com.anythink.core.express.b.a.f18314c, "true");
+            hashMap.put(com.anythink.core.express.b.a.f18315d, jSONObject);
+            this.f18660e.getLocationInWindow(new int[2]);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.a(this.f17873e, r0[0], r0[1], r2.getWidth(), this.f17873e.getHeight());
+            com.anythink.core.express.b.a.a(this.f18660e, r0[0], r0[1], r2.getWidth(), this.f18660e.getHeight());
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.b(this.f17873e, r0[0], r0[1], r2.getWidth(), this.f17873e.getHeight());
+            com.anythink.core.express.b.a.b(this.f18660e, r0[0], r0[1], r2.getWidth(), this.f18660e.getHeight());
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.b(this.f17873e, f3, g4);
+            com.anythink.core.express.b.a.b(this.f18660e, f2, g9);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.c(this.f17873e, intValue, intValue2);
+            com.anythink.core.express.b.a.c(this.f18660e, intValue, intValue2);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.a(this.f17873e, hashMap);
+            com.anythink.core.express.b.a.a(this.f18660e, hashMap);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.a(this.f17873e);
+            com.anythink.core.express.b.a.a(this.f18660e);
         } catch (Throwable unused) {
         }
     }
 
     private void a() {
         FrameLayout frameLayout = new FrameLayout(getContext());
-        this.f17872d = frameLayout;
+        this.f18659d = frameLayout;
         frameLayout.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
         WindVaneWebView windVaneWebView = new WindVaneWebView(getContext().getApplicationContext());
-        this.f17873e = windVaneWebView;
+        this.f18660e = windVaneWebView;
         windVaneWebView.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
-        this.f17872d.addView(this.f17873e);
+        this.f18659d.addView(this.f18660e);
         TextView textView = new TextView(getContext());
-        this.f17874f = textView;
+        this.f18661f = textView;
         textView.setBackgroundColor(0);
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(96, 96);
         layoutParams.gravity = 8388661;
         layoutParams.setMargins(30, 30, 30, 30);
-        this.f17874f.setLayoutParams(layoutParams);
-        this.f17874f.setVisibility(this.f17871c ? 4 : 0);
-        this.f17874f.setOnClickListener(new AnonymousClass1());
-        this.f17872d.addView(this.f17874f);
-        setContentView(this.f17872d);
+        this.f18661f.setLayoutParams(layoutParams);
+        this.f18661f.setVisibility(this.f18658c ? 4 : 0);
+        this.f18661f.setOnClickListener(new AnonymousClass1());
+        this.f18659d.addView(this.f18661f);
+        setContentView(this.f18659d);
         if (getWindow() != null) {
             getWindow().setBackgroundDrawable(new ColorDrawable(0));
             getWindow().getDecorView().setPadding(0, 0, 0, 0);
@@ -282,9 +282,9 @@ public class NativeAdvancedExpandDialog extends Dialog {
             getWindow().setAttributes(attributes);
             getWindow().getDecorView().setSystemUiVisibility(4615);
         }
-        this.f17873e.setWebViewListener(new AnonymousClass2());
-        this.f17873e.setObject(this.f17877j);
-        this.f17873e.loadUrl(this.f17870b);
+        this.f18660e.setWebViewListener(new AnonymousClass2());
+        this.f18660e.setObject(this.f18664j);
+        this.f18660e.loadUrl(this.f18657b);
         setOnDismissListener(new AnonymousClass3());
     }
 
@@ -300,29 +300,29 @@ public class NativeAdvancedExpandDialog extends Dialog {
             }
             jSONObject.put("orientation", str);
             jSONObject.put("locked", "true");
-            float f3 = n.f(t.b().g());
-            float g4 = n.g(t.b().g());
-            HashMap h9 = n.h(t.b().g());
-            int intValue = ((Integer) h9.get("width")).intValue();
-            int intValue2 = ((Integer) h9.get("height")).intValue();
+            float f2 = n.f(t.b().g());
+            float g9 = n.g(t.b().g());
+            HashMap h3 = n.h(t.b().g());
+            int intValue = ((Integer) h3.get("width")).intValue();
+            int intValue2 = ((Integer) h3.get("height")).intValue();
             HashMap hashMap = new HashMap();
-            hashMap.put(com.anythink.core.express.b.a.f17525a, com.anythink.core.express.b.a.f17534k);
-            hashMap.put(com.anythink.core.express.b.a.f17526b, com.anythink.core.express.b.a.f17531g);
-            hashMap.put(com.anythink.core.express.b.a.f17527c, "true");
-            hashMap.put(com.anythink.core.express.b.a.f17528d, jSONObject);
-            nativeAdvancedExpandDialog.f17873e.getLocationInWindow(new int[2]);
+            hashMap.put(com.anythink.core.express.b.a.f18312a, com.anythink.core.express.b.a.f18321k);
+            hashMap.put(com.anythink.core.express.b.a.f18313b, com.anythink.core.express.b.a.f18318g);
+            hashMap.put(com.anythink.core.express.b.a.f18314c, "true");
+            hashMap.put(com.anythink.core.express.b.a.f18315d, jSONObject);
+            nativeAdvancedExpandDialog.f18660e.getLocationInWindow(new int[2]);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.a(nativeAdvancedExpandDialog.f17873e, r0[0], r0[1], r2.getWidth(), nativeAdvancedExpandDialog.f17873e.getHeight());
+            com.anythink.core.express.b.a.a(nativeAdvancedExpandDialog.f18660e, r0[0], r0[1], r2.getWidth(), nativeAdvancedExpandDialog.f18660e.getHeight());
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.b(nativeAdvancedExpandDialog.f17873e, r0[0], r0[1], r2.getWidth(), nativeAdvancedExpandDialog.f17873e.getHeight());
+            com.anythink.core.express.b.a.b(nativeAdvancedExpandDialog.f18660e, r0[0], r0[1], r2.getWidth(), nativeAdvancedExpandDialog.f18660e.getHeight());
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.b(nativeAdvancedExpandDialog.f17873e, f3, g4);
+            com.anythink.core.express.b.a.b(nativeAdvancedExpandDialog.f18660e, f2, g9);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.c(nativeAdvancedExpandDialog.f17873e, intValue, intValue2);
+            com.anythink.core.express.b.a.c(nativeAdvancedExpandDialog.f18660e, intValue, intValue2);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.a(nativeAdvancedExpandDialog.f17873e, hashMap);
+            com.anythink.core.express.b.a.a(nativeAdvancedExpandDialog.f18660e, hashMap);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.a(nativeAdvancedExpandDialog.f17873e);
+            com.anythink.core.express.b.a.a(nativeAdvancedExpandDialog.f18660e);
         } catch (Throwable unused) {
         }
     }

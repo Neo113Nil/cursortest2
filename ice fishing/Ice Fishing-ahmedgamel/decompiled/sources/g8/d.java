@@ -1,20 +1,20 @@
 package g8;
 
 /* loaded from: classes2.dex */
-public final class d extends L3.h {
+public final class d extends M.h {
 
     /* renamed from: v, reason: collision with root package name */
-    public final boolean f37712v;
+    public final boolean f37737v;
 
-    public d(G1.a aVar, boolean z3) {
+    public d(I1.a aVar, boolean z6) {
         super(aVar);
-        this.f37712v = z3;
+        this.f37737v = z6;
     }
 
-    @Override // L3.h
+    @Override // M.h
     public final void o(String value) {
         kotlin.jvm.internal.h.e(value, "value");
-        if (this.f37712v) {
+        if (this.f37737v) {
             super.o(value);
         } else {
             l(value);

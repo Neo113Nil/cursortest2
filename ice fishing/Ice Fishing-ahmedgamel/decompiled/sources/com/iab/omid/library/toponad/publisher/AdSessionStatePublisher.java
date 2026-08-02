@@ -20,22 +20,22 @@ import org.json.JSONObject;
 public abstract class AdSessionStatePublisher {
 
     /* renamed from: a, reason: collision with root package name */
-    private String f36273a;
+    private String f37040a;
 
     /* renamed from: b, reason: collision with root package name */
-    private com.iab.omid.library.toponad.weakreference.b f36274b;
+    private com.iab.omid.library.toponad.weakreference.b f37041b;
 
     /* renamed from: c, reason: collision with root package name */
-    private AdEvents f36275c;
+    private AdEvents f37042c;
 
     /* renamed from: d, reason: collision with root package name */
-    private MediaEvents f36276d;
+    private MediaEvents f37043d;
 
     /* renamed from: e, reason: collision with root package name */
-    private a f36277e;
+    private a f37044e;
 
     /* renamed from: f, reason: collision with root package name */
-    private long f36278f;
+    private long f37045f;
 
     public enum a {
         AD_STATE_IDLE,
@@ -45,41 +45,41 @@ public abstract class AdSessionStatePublisher {
 
     public AdSessionStatePublisher(String str) {
         a();
-        this.f36273a = str;
-        this.f36274b = new com.iab.omid.library.toponad.weakreference.b(null);
+        this.f37040a = str;
+        this.f37041b = new com.iab.omid.library.toponad.weakreference.b(null);
     }
 
     public void a() {
-        this.f36278f = f.b();
-        this.f36277e = a.AD_STATE_IDLE;
+        this.f37045f = f.b();
+        this.f37044e = a.AD_STATE_IDLE;
     }
 
     public void b() {
-        this.f36274b.clear();
+        this.f37041b.clear();
     }
 
     public AdEvents c() {
-        return this.f36275c;
+        return this.f37042c;
     }
 
     public MediaEvents d() {
-        return this.f36276d;
+        return this.f37043d;
     }
 
     public boolean e() {
-        return this.f36274b.get() != null;
+        return this.f37041b.get() != null;
     }
 
     public void f() {
-        h.a().a(getWebView(), this.f36273a);
+        h.a().a(getWebView(), this.f37040a);
     }
 
     public void g() {
-        h.a().b(getWebView(), this.f36273a);
+        h.a().b(getWebView(), this.f37040a);
     }
 
     public WebView getWebView() {
-        return this.f36274b.get();
+        return this.f37041b.get();
     }
 
     public void h() {
@@ -89,37 +89,37 @@ public abstract class AdSessionStatePublisher {
     public void i() {
     }
 
-    public void a(float f3) {
-        h.a().a(getWebView(), this.f36273a, f3);
+    public void a(float f2) {
+        h.a().a(getWebView(), this.f37040a, f2);
     }
 
     public void b(String str, long j6) {
-        if (j6 >= this.f36278f) {
-            this.f36277e = a.AD_STATE_VISIBLE;
-            h.a().b(getWebView(), this.f36273a, str);
+        if (j6 >= this.f37045f) {
+            this.f37044e = a.AD_STATE_VISIBLE;
+            h.a().b(getWebView(), this.f37040a, str);
         }
     }
 
     public void a(WebView webView) {
-        this.f36274b = new com.iab.omid.library.toponad.weakreference.b(webView);
+        this.f37041b = new com.iab.omid.library.toponad.weakreference.b(webView);
     }
 
-    public void b(boolean z3) {
+    public void b(boolean z6) {
         if (e()) {
-            h.a().a(getWebView(), this.f36273a, z3 ? "locked" : "unlocked");
+            h.a().a(getWebView(), this.f37040a, z6 ? "locked" : "unlocked");
         }
     }
 
     public void a(AdEvents adEvents) {
-        this.f36275c = adEvents;
+        this.f37042c = adEvents;
     }
 
     public void a(AdSessionConfiguration adSessionConfiguration) {
-        h.a().a(getWebView(), this.f36273a, adSessionConfiguration.toJsonObject());
+        h.a().a(getWebView(), this.f37040a, adSessionConfiguration.toJsonObject());
     }
 
     public void a(ErrorType errorType, String str) {
-        h.a().a(getWebView(), this.f36273a, errorType, str);
+        h.a().a(getWebView(), this.f37040a, errorType, str);
     }
 
     public void a(com.iab.omid.library.toponad.adsession.a aVar, AdSessionContext adSessionContext) {
@@ -143,7 +143,7 @@ public abstract class AdSessionStatePublisher {
         c.a(jSONObject2, "omidNativeInfo", jSONObject3);
         JSONObject jSONObject4 = new JSONObject();
         c.a(jSONObject4, "libraryVersion", "1.5.2-Toponad");
-        c.a(jSONObject4, com.anythink.expressad.videocommon.e.b.f22407u, g.b().a().getApplicationContext().getPackageName());
+        c.a(jSONObject4, com.anythink.expressad.videocommon.e.b.f23194u, g.b().a().getApplicationContext().getPackageName());
         c.a(jSONObject2, "app", jSONObject4);
         if (adSessionContext.getContentUrl() != null) {
             c.a(jSONObject2, "contentUrl", adSessionContext.getContentUrl());
@@ -159,7 +159,7 @@ public abstract class AdSessionStatePublisher {
     }
 
     public void a(MediaEvents mediaEvents) {
-        this.f36276d = mediaEvents;
+        this.f37043d = mediaEvents;
     }
 
     public void a(String str) {
@@ -167,18 +167,18 @@ public abstract class AdSessionStatePublisher {
     }
 
     public void a(String str, long j6) {
-        if (j6 >= this.f36278f) {
-            a aVar = this.f36277e;
+        if (j6 >= this.f37045f) {
+            a aVar = this.f37044e;
             a aVar2 = a.AD_STATE_NOTVISIBLE;
             if (aVar != aVar2) {
-                this.f36277e = aVar2;
-                h.a().b(getWebView(), this.f36273a, str);
+                this.f37044e = aVar2;
+                h.a().b(getWebView(), this.f37040a, str);
             }
         }
     }
 
     public void a(String str, JSONObject jSONObject) {
-        h.a().a(getWebView(), this.f36273a, str, jSONObject);
+        h.a().a(getWebView(), this.f37040a, str, jSONObject);
     }
 
     public void a(Date date) {
@@ -186,17 +186,17 @@ public abstract class AdSessionStatePublisher {
             return;
         }
         JSONObject jSONObject = new JSONObject();
-        c.a(jSONObject, d.f18596u, Long.valueOf(date.getTime()));
+        c.a(jSONObject, d.f19383u, Long.valueOf(date.getTime()));
         h.a().a(getWebView(), jSONObject);
     }
 
     public void a(JSONObject jSONObject) {
-        h.a().b(getWebView(), this.f36273a, jSONObject);
+        h.a().b(getWebView(), this.f37040a, jSONObject);
     }
 
-    public void a(boolean z3) {
+    public void a(boolean z6) {
         if (e()) {
-            h.a().c(getWebView(), this.f36273a, z3 ? "foregrounded" : "backgrounded");
+            h.a().c(getWebView(), this.f37040a, z6 ? "foregrounded" : "backgrounded");
         }
     }
 }

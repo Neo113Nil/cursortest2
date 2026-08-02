@@ -8,258 +8,258 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class BN implements YN {
 
     /* renamed from: p, reason: collision with root package name */
-    public static final C3500lC f23880p;
+    public static final C3523lC f24651p;
 
     /* renamed from: a, reason: collision with root package name */
-    public final U7 f23881a;
+    public final U7 f24652a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final K7 f23882b;
+    public final K7 f24653b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final C4242z f23883c;
+    public final C4265z f24654c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final long f23884d;
+    public final long f24655d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final long f23885e;
+    public final long f24656e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final long f23886f;
+    public final long f24657f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final long f23887g;
+    public final long f24658g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final long f23888h;
+    public final long f24659h;
     public final long i;
 
     /* renamed from: j, reason: collision with root package name */
-    public final long f23889j;
+    public final long f24660j;
 
     /* renamed from: k, reason: collision with root package name */
-    public final long f23890k;
+    public final long f24661k;
 
     /* renamed from: l, reason: collision with root package name */
-    public final long f23891l;
+    public final long f24662l;
 
     /* renamed from: m, reason: collision with root package name */
-    public final C3770qC f23892m;
+    public final C3793qC f24663m;
 
     /* renamed from: n, reason: collision with root package name */
-    public final ConcurrentHashMap f23893n;
+    public final ConcurrentHashMap f24664n;
 
     /* renamed from: o, reason: collision with root package name */
-    public long f23894o;
+    public long f24665o;
 
     static {
-        PB pb = RB.f27177u;
-        Object[] objArr = {"file", "content", "data", "android.resource", com.anythink.basead.exoplayer.j.y.f8269a, "asset"};
-        AbstractC2772Sd.j(objArr, 6);
-        f23880p = RB.p(objArr, 6);
+        PB pb = RB.f27933u;
+        Object[] objArr = {"file", "content", "data", "android.resource", com.anythink.basead.exoplayer.j.y.f9055a, "asset"};
+        AbstractC2792Sd.j(objArr, 6);
+        f24651p = RB.p(objArr, 6);
     }
 
     public BN() {
-        C4242z c4242z = new C4242z();
-        C3770qC c3770qC = C3770qC.f33209z;
+        C4265z c4265z = new C4265z();
+        C3793qC c3793qC = C3793qC.f33993z;
         l(1000, 0, "bufferForPlaybackMs", "0");
         l(1000, 0, "bufferForPlaybackForLocalPlaybackMs", "0");
         l(2000, 0, "bufferForPlaybackAfterRebufferMs", "0");
         l(1000, 0, "bufferForPlaybackAfterRebufferForLocalPlaybackMs", "0");
-        l(com.anythink.basead.exoplayer.d.f6763b, 1000, "minBufferMs", "bufferForPlaybackMs");
+        l(com.anythink.basead.exoplayer.d.f7549b, 1000, "minBufferMs", "bufferForPlaybackMs");
         l(1000, 1000, "minBufferForLocalPlaybackMs", "bufferForPlaybackForLocalPlaybackMs");
-        l(com.anythink.basead.exoplayer.d.f6763b, 2000, "minBufferMs", "bufferForPlaybackAfterRebufferMs");
+        l(com.anythink.basead.exoplayer.d.f7549b, 2000, "minBufferMs", "bufferForPlaybackAfterRebufferMs");
         l(1000, 1000, "minBufferForLocalPlaybackMs", "bufferForPlaybackAfterRebufferForLocalPlaybackMs");
-        l(com.anythink.basead.exoplayer.d.f6763b, com.anythink.basead.exoplayer.d.f6763b, "maxBufferMs", "minBufferMs");
-        l(com.anythink.basead.exoplayer.d.f6763b, 1000, "maxBufferForLocalPlaybackMs", "minBufferForLocalPlaybackMs");
+        l(com.anythink.basead.exoplayer.d.f7549b, com.anythink.basead.exoplayer.d.f7549b, "maxBufferMs", "minBufferMs");
+        l(com.anythink.basead.exoplayer.d.f7549b, 1000, "maxBufferForLocalPlaybackMs", "minBufferForLocalPlaybackMs");
         l(0, 0, "backBufferDurationMs", "0");
-        this.f23881a = new U7();
-        this.f23882b = new K7();
-        this.f23883c = c4242z;
-        long u3 = AbstractC3159eu.u(50000L);
-        this.f23884d = u3;
-        long u6 = AbstractC3159eu.u(1000L);
-        this.f23885e = u6;
-        this.f23886f = u3;
-        this.f23887g = u3;
-        this.f23888h = u6;
-        this.i = u6;
-        this.f23889j = AbstractC3159eu.u(com.anythink.basead.exoplayer.i.a.f7883f);
-        this.f23890k = u6;
-        this.f23891l = AbstractC3159eu.u(0L);
-        this.f23893n = new ConcurrentHashMap();
-        this.f23892m = C3770qC.a(c3770qC);
-        this.f23894o = -1L;
+        this.f24652a = new U7();
+        this.f24653b = new K7();
+        this.f24654c = c4265z;
+        long u6 = AbstractC3182eu.u(50000L);
+        this.f24655d = u6;
+        long u9 = AbstractC3182eu.u(1000L);
+        this.f24656e = u9;
+        this.f24657f = u6;
+        this.f24658g = u6;
+        this.f24659h = u9;
+        this.i = u9;
+        this.f24660j = AbstractC3182eu.u(com.anythink.basead.exoplayer.i.a.f8669f);
+        this.f24661k = u9;
+        this.f24662l = AbstractC3182eu.u(0L);
+        this.f24664n = new ConcurrentHashMap();
+        this.f24663m = C3793qC.a(c3793qC);
+        this.f24665o = -1L;
     }
 
-    public static void l(int i, int i6, String str, String str2) {
-        if (!(i >= i6)) {
-            throw new IllegalArgumentException(AbstractC2639Kg.x("%s cannot be less than %s", str, str2));
+    public static void l(int i, int i4, String str, String str2) {
+        if (!(i >= i4)) {
+            throw new IllegalArgumentException(AbstractC2659Kg.x("%s cannot be less than %s", str, str2));
         }
     }
 
     @Override // com.google.android.gms.internal.ads.YN
-    public final void a(XN xn, InterfaceC3757q[] interfaceC3757qArr) {
-        ConcurrentHashMap concurrentHashMap = this.f23893n;
-        IO io = xn.f28516a;
-        Integer num = (Integer) this.f23892m.get(io.f25499a);
+    public final void a(XN xn, InterfaceC3780q[] interfaceC3780qArr) {
+        ConcurrentHashMap concurrentHashMap = this.f24664n;
+        IO io = xn.f29296a;
+        Integer num = (Integer) this.f24663m.get(io.f26242a);
         int intValue = (num == null || num.intValue() == -1) ? -1 : num.intValue();
         AN an = (AN) concurrentHashMap.get(io);
         an.getClass();
         if (intValue == -1) {
             boolean k9 = k(xn);
-            int length = interfaceC3757qArr.length;
+            int length = interfaceC3780qArr.length;
             int i = 0;
-            int i6 = 0;
+            int i4 = 0;
             while (true) {
-                int i9 = com.anythink.basead.exoplayer.b.aY;
+                int i6 = com.anythink.basead.exoplayer.b.aY;
                 if (i >= length) {
                     break;
                 }
-                InterfaceC3757q interfaceC3757q = interfaceC3757qArr[i];
-                if (interfaceC3757q != null) {
-                    int i10 = interfaceC3757q.c().f23637c;
-                    if (i10 != -1) {
-                        if (i10 == 0) {
-                            i9 = 144310272;
-                        } else if (i10 != 1) {
-                            i9 = i10 != 2 ? i10 != 4 ? 131072 : 26214400 : k9 ? 19660800 : 131072000;
+                InterfaceC3780q interfaceC3780q = interfaceC3780qArr[i];
+                if (interfaceC3780q != null) {
+                    int i9 = interfaceC3780q.c().f24417c;
+                    if (i9 != -1) {
+                        if (i9 == 0) {
+                            i6 = 144310272;
+                        } else if (i9 != 1) {
+                            i6 = i9 != 2 ? i9 != 4 ? 131072 : 26214400 : k9 ? 19660800 : 131072000;
                         }
                     }
-                    i6 += i9;
+                    i4 += i6;
                 }
                 i++;
             }
-            String str = AbstractC3159eu.f29993a;
-            intValue = Math.max(com.anythink.basead.exoplayer.b.aY, Math.min(i6, 210239488));
+            String str = AbstractC3182eu.f30782a;
+            intValue = Math.max(com.anythink.basead.exoplayer.b.aY, Math.min(i4, 210239488));
         }
-        an.f23668c = intValue;
+        an.f24448c = intValue;
         i();
     }
 
     @Override // com.google.android.gms.internal.ads.YN
     public final void b(IO io) {
         long id = Thread.currentThread().getId();
-        long j6 = this.f23894o;
-        AbstractC2772Sd.I("Players that share the same LoadControl must share the same playback thread. See ExoPlayer.Builder.setPlaybackLooper(Looper).", j6 == -1 || j6 == id);
-        this.f23894o = id;
-        ConcurrentHashMap concurrentHashMap = this.f23893n;
+        long j6 = this.f24665o;
+        AbstractC2792Sd.I("Players that share the same LoadControl must share the same playback thread. See ExoPlayer.Builder.setPlaybackLooper(Looper).", j6 == -1 || j6 == id);
+        this.f24665o = id;
+        ConcurrentHashMap concurrentHashMap = this.f24664n;
         AN an = (AN) concurrentHashMap.get(io);
         if (an == null) {
             AN an2 = new AN();
-            an2.f23666a = 1;
+            an2.f24446a = 1;
             concurrentHashMap.put(io, an2);
         } else {
-            an.f23666a++;
+            an.f24446a++;
         }
         AN an3 = (AN) concurrentHashMap.get(io);
         an3.getClass();
-        Integer num = (Integer) this.f23892m.get(io.f25499a);
+        Integer num = (Integer) this.f24663m.get(io.f26242a);
         int intValue = (num == null || num.intValue() == -1) ? -1 : num.intValue();
         if (intValue == -1) {
             intValue = com.anythink.basead.exoplayer.b.aY;
         }
-        an3.f23668c = intValue;
-        an3.f23667b = false;
+        an3.f24448c = intValue;
+        an3.f24447b = false;
     }
 
     @Override // com.google.android.gms.internal.ads.YN
     public final boolean c(XN xn) {
         int i;
-        boolean z3;
         boolean z6;
-        int i6;
-        ConcurrentHashMap concurrentHashMap = this.f23893n;
-        IO io = xn.f28516a;
+        boolean z9;
+        int i4;
+        ConcurrentHashMap concurrentHashMap = this.f24664n;
+        IO io = xn.f29296a;
         AN an = (AN) concurrentHashMap.get(io);
         an.getClass();
-        AN an2 = (AN) this.f23893n.get(io);
+        AN an2 = (AN) this.f24664n.get(io);
         an2.getClass();
         synchronized (an2) {
-            i = an2.f23669d;
+            i = an2.f24449d;
         }
-        int i9 = i * com.anythink.basead.exoplayer.b.aX;
-        AN an3 = (AN) this.f23893n.get(io);
+        int i6 = i * com.anythink.basead.exoplayer.b.aX;
+        AN an3 = (AN) this.f24664n.get(io);
         an3.getClass();
-        int i10 = an3.f23668c;
-        if (io.equals(IO.f25498c)) {
-            return i9 < i10;
+        int i9 = an3.f24448c;
+        if (io.equals(IO.f26241c)) {
+            return i6 < i9;
         }
         boolean k9 = k(xn);
-        long j6 = k9 ? this.f23885e : this.f23884d;
-        long j9 = k9 ? this.f23887g : this.f23886f;
-        float f3 = xn.f28520e;
-        if (f3 > 1.0f) {
-            j6 = Math.min(AbstractC3159eu.y(j6, f3), j9);
+        long j6 = k9 ? this.f24656e : this.f24655d;
+        long j9 = k9 ? this.f24658g : this.f24657f;
+        float f2 = xn.f29300e;
+        if (f2 > 1.0f) {
+            j6 = Math.min(AbstractC3182eu.y(j6, f2), j9);
         }
-        long j10 = xn.f28519d;
+        long j10 = xn.f29299d;
         if (j10 < Math.max(j6, 500000L)) {
             Runtime runtime = Runtime.getRuntime();
             long maxMemory = runtime.maxMemory();
             if (runtime.totalMemory() >= maxMemory) {
                 long freeMemory = runtime.freeMemory();
-                C4242z c4242z = this.f23883c;
-                synchronized (c4242z) {
-                    i6 = c4242z.f35259v * com.anythink.basead.exoplayer.b.aX;
+                C4265z c4265z = this.f24654c;
+                synchronized (c4265z) {
+                    i4 = c4265z.f36043v * com.anythink.basead.exoplayer.b.aX;
                 }
-                if (freeMemory + i6 < maxMemory / 25) {
-                    z3 = false;
-                    z6 = k9 ? i9 < i10 : !(!z3 && i9 >= i10);
-                    an.f23667b = z6;
-                    if (!z6 && k9 && !z3) {
-                        AbstractC2968bG.t("DefaultLoadControl", "Stopped loading before minBufferUs reached due to memory pressure, despite prioritizeTimeOverSizeThresholds=true.");
+                if (freeMemory + i4 < maxMemory / 25) {
+                    z6 = false;
+                    z9 = k9 ? i6 < i9 : !(!z6 && i6 >= i9);
+                    an.f24447b = z9;
+                    if (!z9 && k9 && !z6) {
+                        AbstractC2991bG.t("DefaultLoadControl", "Stopped loading before minBufferUs reached due to memory pressure, despite prioritizeTimeOverSizeThresholds=true.");
                     }
-                    if (!an.f23667b && j10 < 500000) {
-                        AbstractC2968bG.y("DefaultLoadControl", "Target buffer size reached with less than 500ms of buffered media data.");
+                    if (!an.f24447b && j10 < 500000) {
+                        AbstractC2991bG.y("DefaultLoadControl", "Target buffer size reached with less than 500ms of buffered media data.");
                     }
                 }
             }
-            z3 = true;
+            z6 = true;
             if (k9) {
             }
-            an.f23667b = z6;
-            if (!z6) {
-                AbstractC2968bG.t("DefaultLoadControl", "Stopped loading before minBufferUs reached due to memory pressure, despite prioritizeTimeOverSizeThresholds=true.");
+            an.f24447b = z9;
+            if (!z9) {
+                AbstractC2991bG.t("DefaultLoadControl", "Stopped loading before minBufferUs reached due to memory pressure, despite prioritizeTimeOverSizeThresholds=true.");
             }
-            if (!an.f23667b) {
-                AbstractC2968bG.y("DefaultLoadControl", "Target buffer size reached with less than 500ms of buffered media data.");
+            if (!an.f24447b) {
+                AbstractC2991bG.y("DefaultLoadControl", "Target buffer size reached with less than 500ms of buffered media data.");
             }
-        } else if (j10 >= j9 || i9 >= i10) {
-            an.f23667b = false;
+        } else if (j10 >= j9 || i6 >= i9) {
+            an.f24447b = false;
         }
-        return an.f23667b;
+        return an.f24447b;
     }
 
     @Override // com.google.android.gms.internal.ads.YN
     public final void d(IO io) {
-        ConcurrentHashMap concurrentHashMap = this.f23893n;
+        ConcurrentHashMap concurrentHashMap = this.f24664n;
         AN an = (AN) concurrentHashMap.get(io);
         if (an != null) {
-            int i = an.f23666a - 1;
-            an.f23666a = i;
+            int i = an.f24446a - 1;
+            an.f24446a = i;
             if (i == 0) {
                 concurrentHashMap.remove(io);
                 i();
             }
         }
         if (concurrentHashMap.isEmpty()) {
-            this.f23894o = -1L;
+            this.f24665o = -1L;
         }
     }
 
     @Override // com.google.android.gms.internal.ads.YN
     public final long e() {
-        return this.f23891l;
+        return this.f24662l;
     }
 
     @Override // com.google.android.gms.internal.ads.YN
     public final void f(IO io) {
-        ConcurrentHashMap concurrentHashMap = this.f23893n;
+        ConcurrentHashMap concurrentHashMap = this.f24664n;
         AN an = (AN) concurrentHashMap.get(io);
         if (an != null) {
-            int i = an.f23666a - 1;
-            an.f23666a = i;
+            int i = an.f24446a - 1;
+            an.f24446a = i;
             if (i == 0) {
                 concurrentHashMap.remove(io);
                 i();
@@ -270,47 +270,47 @@ public final class BN implements YN {
     @Override // com.google.android.gms.internal.ads.YN
     public final boolean g(XN xn) {
         long j6;
-        boolean z3;
+        boolean z6;
         int i;
-        boolean z6 = xn.f28521f;
+        boolean z9 = xn.f29301f;
         boolean k9 = k(xn);
-        long j9 = xn.f28519d;
-        float f3 = xn.f28520e;
-        String str = AbstractC3159eu.f29993a;
-        if (f3 != 1.0f) {
-            j9 = Math.round(j9 / f3);
+        long j9 = xn.f29299d;
+        float f2 = xn.f29300e;
+        String str = AbstractC3182eu.f30782a;
+        if (f2 != 1.0f) {
+            j9 = Math.round(j9 / f2);
         }
-        if (z6) {
+        if (z9) {
             if (k9) {
-                j6 = this.f23890k;
-                z3 = true;
+                j6 = this.f24661k;
+                z6 = true;
             } else {
-                j6 = this.f23889j;
-                z3 = false;
+                j6 = this.f24660j;
+                z6 = false;
             }
         } else if (k9) {
             j6 = this.i;
-            z3 = true;
+            z6 = true;
         } else {
-            j6 = this.f23888h;
-            z3 = false;
+            j6 = this.f24659h;
+            z6 = false;
         }
-        long j10 = xn.f28522g;
-        if (j10 != com.anythink.basead.exoplayer.b.f6382b) {
+        long j10 = xn.f29302g;
+        if (j10 != com.anythink.basead.exoplayer.b.f7168b) {
             j6 = Math.min(j10 / 2, j6);
         }
         if (j6 > 0 && j9 < j6) {
-            if (!z3) {
-                IO io = xn.f28516a;
-                AN an = (AN) this.f23893n.get(io);
+            if (!z6) {
+                IO io = xn.f29296a;
+                AN an = (AN) this.f24664n.get(io);
                 an.getClass();
                 synchronized (an) {
-                    i = an.f23669d;
+                    i = an.f24449d;
                 }
-                int i6 = i * com.anythink.basead.exoplayer.b.aX;
-                AN an2 = (AN) this.f23893n.get(io);
+                int i4 = i * com.anythink.basead.exoplayer.b.aX;
+                AN an2 = (AN) this.f24664n.get(io);
                 an2.getClass();
-                if (i6 >= an2.f23668c) {
+                if (i4 >= an2.f24448c) {
                 }
             }
             return false;
@@ -319,33 +319,33 @@ public final class BN implements YN {
     }
 
     @Override // com.google.android.gms.internal.ads.YN
-    public final InterfaceC4026v h(IO io) {
-        return new C3481ku(this, io);
+    public final InterfaceC4049v h(IO io) {
+        return new C3504ku(this, io);
     }
 
     public final void i() {
-        ConcurrentHashMap concurrentHashMap = this.f23893n;
+        ConcurrentHashMap concurrentHashMap = this.f24664n;
         boolean isEmpty = concurrentHashMap.isEmpty();
-        C4242z c4242z = this.f23883c;
+        C4265z c4265z = this.f24654c;
         int i = 0;
         if (isEmpty) {
-            synchronized (c4242z) {
-                c4242z.C(0);
+            synchronized (c4265z) {
+                c4265z.C(0);
             }
         } else {
             Iterator it = concurrentHashMap.values().iterator();
             while (it.hasNext()) {
-                i += ((AN) it.next()).f23668c;
+                i += ((AN) it.next()).f24448c;
             }
-            c4242z.C(i);
+            c4265z.C(i);
         }
     }
 
     @Override // com.google.android.gms.internal.ads.YN
     public final boolean j() {
-        Iterator it = this.f23893n.values().iterator();
+        Iterator it = this.f24664n.values().iterator();
         while (it.hasNext()) {
-            if (((AN) it.next()).f23667b) {
+            if (((AN) it.next()).f24447b) {
                 return false;
             }
         }
@@ -353,14 +353,14 @@ public final class BN implements YN {
     }
 
     public final boolean k(XN xn) {
-        Object obj = xn.f28518c.f32905a;
-        K7 k72 = this.f23882b;
-        AbstractC3604n8 abstractC3604n8 = xn.f28517b;
-        L0 l02 = abstractC3604n8.b(abstractC3604n8.o(obj, k72).f25867c, this.f23881a, 0L).f27894b.f29185b;
+        Object obj = xn.f29298c.f34406a;
+        K7 k72 = this.f24653b;
+        AbstractC3627n8 abstractC3627n8 = xn.f29297b;
+        L0 l02 = abstractC3627n8.b(abstractC3627n8.o(obj, k72).f26619c, this.f24652a, 0L).f28691b.f29973b;
         if (l02 == null) {
             return false;
         }
-        String scheme = l02.f26006a.getScheme();
-        return TextUtils.isEmpty(scheme) || f23880p.contains(scheme);
+        String scheme = l02.f26806a.getScheme();
+        return TextUtils.isEmpty(scheme) || f24651p.contains(scheme);
     }
 }

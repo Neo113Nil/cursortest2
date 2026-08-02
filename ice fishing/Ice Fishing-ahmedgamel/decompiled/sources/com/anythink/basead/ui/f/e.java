@@ -9,37 +9,37 @@ import android.view.ViewTreeObserver;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f10817a = "TouchEventClickTrigger";
+    private static final String f11603a = "TouchEventClickTrigger";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final int f10818b = -1;
+    private static final int f11604b = -1;
 
     /* renamed from: c, reason: collision with root package name */
-    private static final int f10819c = 10;
+    private static final int f11605c = 10;
 
     /* renamed from: e, reason: collision with root package name */
-    private int f10821e;
+    private int f11607e;
 
     /* renamed from: f, reason: collision with root package name */
-    private int f10822f;
+    private int f11608f;
 
     /* renamed from: h, reason: collision with root package name */
-    private com.anythink.basead.ui.d.a f10824h;
+    private com.anythink.basead.ui.d.a f11610h;
     private boolean i;
 
     /* renamed from: d, reason: collision with root package name */
-    private int f10820d = -1;
+    private int f11606d = -1;
 
     /* renamed from: g, reason: collision with root package name */
-    private boolean f10823g = false;
+    private boolean f11609g = false;
 
-    public final e a(boolean z3) {
-        this.i = z3;
+    public final e a(boolean z6) {
+        this.i = z6;
         return this;
     }
 
     public final e a(com.anythink.basead.ui.d.a aVar) {
-        this.f10824h = aVar;
+        this.f11610h = aVar;
         return this;
     }
 
@@ -75,12 +75,12 @@ public final class e {
                                 int rawY = (int) motionEvent.getRawY();
                                 int[] iArr2 = iArr;
                                 int i = iArr2[0];
-                                int i6 = iArr2[1];
+                                int i4 = iArr2[1];
                                 int action = motionEvent.getAction();
                                 if (action == 0) {
                                     zArr[0] = false;
                                 } else if (action != 1) {
-                                    if (action == 2 && rawX > i && rawX < i + width && rawY > i6 && rawY < i6 + height) {
+                                    if (action == 2 && rawX > i && rawX < i + width && rawY > i4 && rawY < i4 + height) {
                                         zArr[0] = true;
                                     }
                                 } else if (zArr[0]) {
@@ -99,7 +99,7 @@ public final class e {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(int i) {
-        com.anythink.basead.ui.d.a aVar = this.f10824h;
+        com.anythink.basead.ui.d.a aVar = this.f11610h;
         if (aVar != null) {
             aVar.a(i, 13);
         }
@@ -118,58 +118,58 @@ public final class e {
         if (action != 0) {
             if (action != 1) {
                 if (action == 2) {
-                    int i = this.f10820d;
+                    int i = this.f11606d;
                     if (i != -1 && (findPointerIndex = motionEvent.findPointerIndex(i)) != -1) {
                         int y7 = (int) motionEvent.getY(findPointerIndex);
                         int x9 = (int) motionEvent.getX(findPointerIndex);
-                        int abs = Math.abs(y7 - this.f10821e);
-                        int abs2 = Math.abs(x9 - this.f10822f);
+                        int abs = Math.abs(y7 - this.f11607e);
+                        int abs2 = Math.abs(x9 - this.f11608f);
                         if (abs > 10 || abs2 > 10) {
-                            this.f10823g = true;
+                            this.f11609g = true;
                         }
                     }
                 }
             }
-            if (this.f10823g) {
+            if (this.f11609g) {
                 a(13);
             }
-            int findPointerIndex2 = motionEvent.findPointerIndex(this.f10820d);
-            this.f10822f = (int) motionEvent.getX(findPointerIndex2);
-            this.f10821e = (int) motionEvent.getY(findPointerIndex2);
-            this.f10823g = false;
-            this.f10820d = -1;
+            int findPointerIndex2 = motionEvent.findPointerIndex(this.f11606d);
+            this.f11608f = (int) motionEvent.getX(findPointerIndex2);
+            this.f11607e = (int) motionEvent.getY(findPointerIndex2);
+            this.f11609g = false;
+            this.f11606d = -1;
         } else {
-            this.f10821e = (int) motionEvent.getY();
-            this.f10822f = (int) motionEvent.getX();
-            this.f10820d = motionEvent.getPointerId(0);
-            this.f10823g = false;
+            this.f11607e = (int) motionEvent.getY();
+            this.f11608f = (int) motionEvent.getX();
+            this.f11606d = motionEvent.getPointerId(0);
+            this.f11609g = false;
         }
-        return this.f10823g;
+        return this.f11609g;
     }
 
     public final boolean a(View view, MotionEvent motionEvent) {
         int findPointerIndex;
         int action = motionEvent.getAction();
         if (action == 0) {
-            this.f10821e = (int) motionEvent.getY();
-            this.f10822f = (int) motionEvent.getX();
-            this.f10820d = motionEvent.getPointerId(0);
-            this.f10823g = false;
+            this.f11607e = (int) motionEvent.getY();
+            this.f11608f = (int) motionEvent.getX();
+            this.f11606d = motionEvent.getPointerId(0);
+            this.f11609g = false;
         } else if (action == 1) {
-            if (this.f10823g) {
+            if (this.f11609g) {
                 a(13);
             }
-            int findPointerIndex2 = motionEvent.findPointerIndex(this.f10820d);
-            this.f10822f = (int) motionEvent.getX(findPointerIndex2);
-            this.f10821e = (int) motionEvent.getY(findPointerIndex2);
-            this.f10823g = false;
-            this.f10820d = -1;
-        } else if (action == 2 && (findPointerIndex = motionEvent.findPointerIndex(this.f10820d)) != -1) {
+            int findPointerIndex2 = motionEvent.findPointerIndex(this.f11606d);
+            this.f11608f = (int) motionEvent.getX(findPointerIndex2);
+            this.f11607e = (int) motionEvent.getY(findPointerIndex2);
+            this.f11609g = false;
+            this.f11606d = -1;
+        } else if (action == 2 && (findPointerIndex = motionEvent.findPointerIndex(this.f11606d)) != -1) {
             int x9 = (int) motionEvent.getX(findPointerIndex);
             int y7 = (int) motionEvent.getY(findPointerIndex);
-            int abs = Math.abs(x9 - this.f10822f);
-            if (Math.abs(y7 - this.f10821e) > 10 || abs > 10) {
-                this.f10823g = true;
+            int abs = Math.abs(x9 - this.f11608f);
+            if (Math.abs(y7 - this.f11607e) > 10 || abs > 10) {
+                this.f11609g = true;
                 ViewParent parent = view.getParent();
                 if (parent != null) {
                     parent.requestDisallowInterceptTouchEvent(true);

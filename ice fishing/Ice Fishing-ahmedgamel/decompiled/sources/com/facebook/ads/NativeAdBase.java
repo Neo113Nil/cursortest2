@@ -60,7 +60,7 @@ public abstract class NativeAdBase implements Ad {
 
         NativeAdLoadConfigBuilder withMediaCacheFlag(MediaCacheFlag mediaCacheFlag);
 
-        NativeAdLoadConfigBuilder withPreloadedIconView(int i, int i6);
+        NativeAdLoadConfigBuilder withPreloadedIconView(int i, int i4);
     }
 
     public enum NativeComponentTag {

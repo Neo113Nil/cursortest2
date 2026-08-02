@@ -42,30 +42,30 @@ public final class q {
     public static class d {
 
         /* renamed from: a, reason: collision with root package name */
-        private int f20065a;
+        private int f20852a;
 
         /* renamed from: b, reason: collision with root package name */
-        private int f20066b;
+        private int f20853b;
 
-        private d(int i, int i6) {
-            this.f20065a = i;
-            this.f20066b = i6;
+        private d(int i, int i4) {
+            this.f20852a = i;
+            this.f20853b = i4;
         }
 
         private int a() {
-            return this.f20065a;
+            return this.f20852a;
         }
 
         private int b() {
-            return this.f20066b;
+            return this.f20853b;
         }
 
         private void a(int i) {
-            this.f20065a = i;
+            this.f20852a = i;
         }
 
         private void b(int i) {
-            this.f20066b = i;
+            this.f20853b = i;
         }
     }
 

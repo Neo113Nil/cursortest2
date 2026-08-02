@@ -12,14 +12,14 @@ import java.util.Map;
 public final class b extends c {
 
     /* renamed from: a, reason: collision with root package name */
-    com.anythink.basead.g.a f8998a;
+    com.anythink.basead.g.a f9784a;
 
     /* renamed from: k, reason: collision with root package name */
-    private final String f8999k;
+    private final String f9785k;
 
-    public b(Context context, x xVar, String str, boolean z3) {
-        super(context, xVar, str, z3);
-        this.f8999k = "b";
+    public b(Context context, x xVar, String str, boolean z6) {
+        super(context, xVar, str, z6);
+        this.f9785k = "b";
     }
 
     @Override // com.anythink.basead.h.a
@@ -28,17 +28,17 @@ public final class b extends c {
 
     public final View b() {
         if (a()) {
-            return this.f9007g.n() ? new MraidBannerATView(this.f9003c, this.f9004d, this.f9007g, this.f8998a) : new SdkBannerATView(this.f9003c, this.f9004d, this.f9007g, this.f8998a);
+            return this.f9793g.n() ? new MraidBannerATView(this.f9789c, this.f9790d, this.f9793g, this.f9784a) : new SdkBannerATView(this.f9789c, this.f9790d, this.f9793g, this.f9784a);
         }
         return null;
     }
 
     @Override // com.anythink.basead.h.c
     public final void c() {
-        this.f8998a = null;
+        this.f9784a = null;
     }
 
     public final void a(com.anythink.basead.g.a aVar) {
-        this.f8998a = aVar;
+        this.f9784a = aVar;
     }
 }

@@ -4,17 +4,17 @@ package U0;
 public final class b extends Throwable {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f3138n;
+    public final /* synthetic */ int f3255n;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public /* synthetic */ b(String str, int i) {
         super(str);
-        this.f3138n = i;
+        this.f3255n = i;
     }
 
     @Override // java.lang.Throwable
     public final synchronized Throwable fillInStackTrace() {
-        int i = this.f3138n;
+        int i = this.f3255n;
         synchronized (this) {
             switch (i) {
             }

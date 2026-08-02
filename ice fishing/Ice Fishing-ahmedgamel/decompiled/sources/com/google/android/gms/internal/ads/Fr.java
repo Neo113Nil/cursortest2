@@ -1,41 +1,41 @@
 package com.google.android.gms.internal.ads;
 
 import android.os.RemoteException;
-import q2.InterfaceC4870a;
-import q2.InterfaceC4909u;
+import s2.InterfaceC4919a;
+import s2.InterfaceC4958u;
 
 /* loaded from: classes2.dex */
-public final class Fr implements InterfaceC4870a, InterfaceC2542El {
+public final class Fr implements InterfaceC4919a, InterfaceC2579Fl {
 
     /* renamed from: n, reason: collision with root package name */
-    public InterfaceC4909u f24853n;
+    public InterfaceC4958u f25643n;
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC2542El
-    public final synchronized void J() {
-        InterfaceC4909u interfaceC4909u = this.f24853n;
-        if (interfaceC4909u != null) {
+    @Override // com.google.android.gms.internal.ads.InterfaceC2579Fl
+    public final synchronized void D() {
+        InterfaceC4958u interfaceC4958u = this.f25643n;
+        if (interfaceC4958u != null) {
             try {
-                interfaceC4909u.t();
+                interfaceC4958u.t();
             } catch (RemoteException e9) {
-                int i = u2.z.f41322b;
-                v2.i.g("Remote Exception at onPhysicalClick.", e9);
+                int i = w2.z.f41712b;
+                x2.i.g("Remote Exception at onPhysicalClick.", e9);
             }
         }
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC2542El
-    public final synchronized void M() {
+    @Override // com.google.android.gms.internal.ads.InterfaceC2579Fl
+    public final synchronized void L() {
     }
 
-    @Override // q2.InterfaceC4870a
+    @Override // s2.InterfaceC4919a
     public final synchronized void onAdClicked() {
-        InterfaceC4909u interfaceC4909u = this.f24853n;
-        if (interfaceC4909u != null) {
+        InterfaceC4958u interfaceC4958u = this.f25643n;
+        if (interfaceC4958u != null) {
             try {
-                interfaceC4909u.t();
+                interfaceC4958u.t();
             } catch (RemoteException e9) {
-                int i = u2.z.f41322b;
-                v2.i.g("Remote Exception at onAdClicked.", e9);
+                int i = w2.z.f41712b;
+                x2.i.g("Remote Exception at onAdClicked.", e9);
             }
         }
     }

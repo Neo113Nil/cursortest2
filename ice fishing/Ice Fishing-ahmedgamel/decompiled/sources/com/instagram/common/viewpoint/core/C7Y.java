@@ -8,17 +8,17 @@ import java.util.EnumSet;
 
 /* renamed from: com.facebook.ads.redexgen.X.7Y, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public final class C7Y extends AbstractC1960ik {
-    public static final OJ A02 = new C1947iV();
-    public C1954id A00;
-    public final C1950iY A01;
+public final class C7Y extends AbstractC1980ik {
+    public static final OJ A02 = new C1967iV();
+    public C1974id A00;
+    public final C1970iY A01;
 
-    public C7Y(C1950iY c1950iY, String str) {
-        super(c1950iY.A05(), str, A02.A5T(c1950iY));
-        this.A01 = c1950iY;
+    public C7Y(C1970iY c1970iY, String str) {
+        super(c1970iY.A05(), str, A02.A5T(c1970iY));
+        this.A01 = c1970iY;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1960ik
+    @Override // com.instagram.common.viewpoint.core.AbstractC1980ik
     public final void A08() {
         if (this.A00 != null) {
             this.A00.destroy();
@@ -26,15 +26,15 @@ public final class C7Y extends AbstractC1960ik {
         super.A00.AJM(OD.A03);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1960ik
+    @Override // com.instagram.common.viewpoint.core.AbstractC1980ik
     public final void A09() {
-        this.A00 = new C1954id(this.A01, this, A04());
+        this.A00 = new C1974id(this.A01, this, A04());
         this.A00.A0G(this.A01.A0B(), this.A01.A07());
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1960ik
-    public final void A0D(boolean z3) {
-        this.A05.AJn(z3);
+    @Override // com.instagram.common.viewpoint.core.AbstractC1980ik
+    public final void A0D(boolean z6) {
+        this.A05.AJn(z6);
     }
 
     public final void A0E(InterstitialAd interstitialAd, EnumSet<CacheFlag> cacheFlags, String str) {
@@ -48,8 +48,8 @@ public final class C7Y extends AbstractC1960ik {
         }
         this.A01.A0K(cacheFlags);
         this.A01.A0H(str);
-        if (AbstractC1293Us.A09(this.A02) && AbstractC1293Us.A0A(this.A02)) {
-            if (AbstractC1293Us.A0M(str)) {
+        if (AbstractC1313Us.A09(this.A02) && AbstractC1313Us.A0A(this.A02)) {
+            if (AbstractC1313Us.A0M(str)) {
                 A05();
                 return;
             } else {
@@ -93,7 +93,7 @@ public final class C7Y extends AbstractC1960ik {
         if (this.A00 != null) {
             return this.A00.A0J();
         }
-        this.A00 = new C1954id(this.A01, this, A04());
+        this.A00 = new C1974id(this.A01, this, A04());
         this.A00.A0J();
         return false;
     }

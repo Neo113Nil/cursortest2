@@ -7,7 +7,7 @@ import java.io.File;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final a f1486a = new a();
+    public static final a f1595a = new a();
 
     public final File a(Context context) {
         kotlin.jvm.internal.h.e(context, "context");

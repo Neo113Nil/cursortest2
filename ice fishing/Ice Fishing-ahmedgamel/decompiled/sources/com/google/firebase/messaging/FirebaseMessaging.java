@@ -1,16 +1,12 @@
 package com.google.firebase.messaging;
 
-import C2.N;
-import L2.d;
-import L2.h;
-import L2.n;
-import O3.g;
-import P2.w;
-import R3.f;
-import U2.a;
-import X2.e;
-import Z3.b;
-import a.AbstractC0422a;
+import E2.M;
+import N2.h;
+import N2.o;
+import Q3.g;
+import R2.w;
+import T3.f;
+import W2.a;
 import android.app.Application;
 import android.app.NotificationManager;
 import android.content.Context;
@@ -20,20 +16,16 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import androidx.annotation.Keep;
-import androidx.fragment.app.C0461d;
-import c4.InterfaceC0542a;
-import com.bumptech.glide.manager.o;
-import com.google.android.gms.internal.ads.C2545Eo;
-import com.google.android.gms.internal.ads.RunnableC2807Ug;
+import androidx.fragment.app.C0465d;
+import b4.InterfaceC0525b;
+import com.bumptech.glide.b;
+import com.bumptech.glide.manager.n;
+import com.google.android.gms.internal.ads.C2582Fo;
+import com.google.android.gms.internal.ads.RunnableC2829Ug;
 import com.google.firebase.messaging.FirebaseMessaging;
-import d4.InterfaceC4450d;
-import e2.C4461a;
-import g1.C4523c;
-import j3.m;
-import j4.j;
-import j4.l;
-import j4.r;
-import j4.v;
+import e4.InterfaceC4481a;
+import f4.d;
+import i1.C4586c;
 import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.util.concurrent.Callable;
@@ -44,95 +36,100 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
-import n.ExecutorC4742a;
-import q2.C4896n;
+import l3.m;
+import l4.j;
+import l4.l;
+import l4.r;
+import l4.v;
+import n.ExecutorC4756a;
+import s2.C4945n;
 
 /* loaded from: classes2.dex */
 public class FirebaseMessaging {
 
     /* renamed from: k, reason: collision with root package name */
-    public static C4523c f36190k;
+    public static C4586c f36957k;
 
     /* renamed from: m, reason: collision with root package name */
-    public static ScheduledThreadPoolExecutor f36192m;
+    public static ScheduledThreadPoolExecutor f36959m;
 
     /* renamed from: a, reason: collision with root package name */
-    public final g f36193a;
+    public final g f36960a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Context f36194b;
+    public final Context f36961b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final C4896n f36195c;
+    public final C4945n f36962c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final j f36196d;
+    public final j f36963d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final o f36197e;
+    public final n f36964e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final ScheduledThreadPoolExecutor f36198f;
+    public final ScheduledThreadPoolExecutor f36965f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final ThreadPoolExecutor f36199g;
+    public final ThreadPoolExecutor f36966g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final C2545Eo f36200h;
+    public final C2582Fo f36967h;
     public boolean i;
 
     /* renamed from: j, reason: collision with root package name */
-    public static final long f36189j = TimeUnit.HOURS.toSeconds(8);
+    public static final long f36956j = TimeUnit.HOURS.toSeconds(8);
 
     /* renamed from: l, reason: collision with root package name */
-    public static InterfaceC0542a f36191l = new f(6);
+    public static InterfaceC4481a f36958l = new f(6);
 
-    public FirebaseMessaging(g gVar, InterfaceC0542a interfaceC0542a, InterfaceC0542a interfaceC0542a2, InterfaceC4450d interfaceC4450d, InterfaceC0542a interfaceC0542a3, b bVar) {
+    public FirebaseMessaging(g gVar, InterfaceC4481a interfaceC4481a, InterfaceC4481a interfaceC4481a2, d dVar, InterfaceC4481a interfaceC4481a3, InterfaceC0525b interfaceC0525b) {
         final int i = 1;
-        final int i6 = 0;
+        final int i4 = 0;
         gVar.a();
-        Context context = gVar.f2345a;
-        final C2545Eo c2545Eo = new C2545Eo(context, 2);
-        final C4896n c4896n = new C4896n(gVar, c2545Eo, interfaceC0542a, interfaceC0542a2, interfaceC4450d);
+        Context context = gVar.f2661a;
+        final C2582Fo c2582Fo = new C2582Fo(context, 2);
+        final C4945n c4945n = new C4945n(gVar, c2582Fo, interfaceC4481a, interfaceC4481a2, dVar);
         ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor(new a("Firebase-Messaging-Task"));
         ScheduledThreadPoolExecutor scheduledThreadPoolExecutor = new ScheduledThreadPoolExecutor(1, new a("Firebase-Messaging-Init"));
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(0, 1, 30L, TimeUnit.SECONDS, new LinkedBlockingQueue(), new a("Firebase-Messaging-File-Io"));
         this.i = false;
-        f36191l = interfaceC0542a3;
-        this.f36193a = gVar;
-        this.f36197e = new o(this, bVar);
+        f36958l = interfaceC4481a3;
+        this.f36960a = gVar;
+        this.f36964e = new n(this, interfaceC0525b);
         gVar.a();
-        final Context context2 = gVar.f2345a;
-        this.f36194b = context2;
-        com.bumptech.glide.b bVar2 = new com.bumptech.glide.b();
-        this.f36200h = c2545Eo;
-        this.f36195c = c4896n;
-        this.f36196d = new j(newSingleThreadExecutor);
-        this.f36198f = scheduledThreadPoolExecutor;
-        this.f36199g = threadPoolExecutor;
+        final Context context2 = gVar.f2661a;
+        this.f36961b = context2;
+        b bVar = new b();
+        this.f36967h = c2582Fo;
+        this.f36962c = c4945n;
+        this.f36963d = new j(newSingleThreadExecutor);
+        this.f36965f = scheduledThreadPoolExecutor;
+        this.f36966g = threadPoolExecutor;
         gVar.a();
         if (context instanceof Application) {
-            ((Application) context).registerActivityLifecycleCallbacks(bVar2);
+            ((Application) context).registerActivityLifecycleCallbacks(bVar);
         } else {
             Log.w("FirebaseMessaging", "Context " + context + " was not an application, can't register for lifecycle callbacks. Some notification events may be dropped as a result.");
         }
-        scheduledThreadPoolExecutor.execute(new Runnable(this) { // from class: j4.k
+        scheduledThreadPoolExecutor.execute(new Runnable(this) { // from class: l4.k
 
             /* renamed from: u, reason: collision with root package name */
-            public final /* synthetic */ FirebaseMessaging f38420u;
+            public final /* synthetic */ FirebaseMessaging f38932u;
 
             {
-                this.f38420u = this;
+                this.f38932u = this;
             }
 
             @Override // java.lang.Runnable
             public final void run() {
-                j3.m h9;
-                int i9;
-                switch (i6) {
+                l3.m q8;
+                int i6;
+                switch (i4) {
                     case 0:
-                        FirebaseMessaging firebaseMessaging = this.f38420u;
-                        if (firebaseMessaging.f36197e.e() && firebaseMessaging.h(firebaseMessaging.d())) {
+                        FirebaseMessaging firebaseMessaging = this.f38932u;
+                        if (firebaseMessaging.f36964e.e() && firebaseMessaging.h(firebaseMessaging.d())) {
                             synchronized (firebaseMessaging) {
                                 if (!firebaseMessaging.i) {
                                     firebaseMessaging.g(0L);
@@ -142,31 +139,31 @@ public class FirebaseMessaging {
                         }
                         return;
                     default:
-                        FirebaseMessaging firebaseMessaging2 = this.f38420u;
-                        final Context context3 = firebaseMessaging2.f36194b;
-                        AbstractC0422a.n(context3);
-                        final boolean f3 = firebaseMessaging2.f();
+                        FirebaseMessaging firebaseMessaging2 = this.f38932u;
+                        final Context context3 = firebaseMessaging2.f36961b;
+                        com.bumptech.glide.g.r(context3);
+                        final boolean f2 = firebaseMessaging2.f();
                         if (Build.VERSION.SDK_INT >= 29) {
-                            SharedPreferences g4 = com.bumptech.glide.d.g(context3);
-                            if (!g4.contains("proxy_retention") || g4.getBoolean("proxy_retention", false) != f3) {
-                                L2.b bVar3 = (L2.b) firebaseMessaging2.f36195c.f40194w;
-                                if (bVar3.f1625c.a() >= 241100000) {
+                            SharedPreferences g9 = com.bumptech.glide.h.g(context3);
+                            if (!g9.contains("proxy_retention") || g9.getBoolean("proxy_retention", false) != f2) {
+                                N2.b bVar2 = (N2.b) firebaseMessaging2.f36962c.f40493w;
+                                if (bVar2.f1914c.a() >= 241100000) {
                                     Bundle bundle = new Bundle();
-                                    bundle.putBoolean("proxy_retention", f3);
-                                    L2.n c9 = L2.n.c(bVar3.f1624b);
+                                    bundle.putBoolean("proxy_retention", f2);
+                                    N2.o c9 = N2.o.c(bVar2.f1913b);
                                     synchronized (c9) {
-                                        i9 = c9.f1659a;
-                                        c9.f1659a = i9 + 1;
+                                        i6 = c9.f1949a;
+                                        c9.f1949a = i6 + 1;
                                     }
-                                    h9 = c9.d(new L2.l(i9, 4, bundle, 0));
+                                    q8 = c9.d(new N2.m(i6, 4, bundle, 0));
                                 } else {
-                                    h9 = S0.f.h(new IOException("SERVICE_NOT_AVAILABLE"));
+                                    q8 = com.bumptech.glide.d.q(new IOException("SERVICE_NOT_AVAILABLE"));
                                 }
-                                h9.c(new ExecutorC4742a(1), new j3.e() { // from class: j4.p
-                                    @Override // j3.e
-                                    public final void h(Object obj) {
-                                        SharedPreferences.Editor edit = com.bumptech.glide.d.g(context3).edit();
-                                        edit.putBoolean("proxy_retention", f3);
+                                q8.c(new ExecutorC4756a(1), new l3.e() { // from class: l4.p
+                                    @Override // l3.e
+                                    public final void b(Object obj) {
+                                        SharedPreferences.Editor edit = com.bumptech.glide.h.g(context3).edit();
+                                        edit.putBoolean("proxy_retention", f2);
                                         edit.apply();
                                     }
                                 });
@@ -181,53 +178,53 @@ public class FirebaseMessaging {
             }
         });
         final ScheduledThreadPoolExecutor scheduledThreadPoolExecutor2 = new ScheduledThreadPoolExecutor(1, new a("Firebase-Messaging-Topics-Io"));
-        int i9 = v.f38453j;
-        S0.f.d(new Callable() { // from class: j4.u
+        int i6 = v.f38965j;
+        com.bumptech.glide.d.g(new Callable() { // from class: l4.u
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 t tVar;
                 Context context3 = context2;
                 ScheduledThreadPoolExecutor scheduledThreadPoolExecutor3 = scheduledThreadPoolExecutor2;
                 FirebaseMessaging firebaseMessaging = this;
-                C2545Eo c2545Eo2 = c2545Eo;
-                C4896n c4896n2 = c4896n;
+                C2582Fo c2582Fo2 = c2582Fo;
+                C4945n c4945n2 = c4945n;
                 synchronized (t.class) {
                     try {
-                        WeakReference weakReference = t.f38445c;
+                        WeakReference weakReference = t.f38957c;
                         tVar = weakReference != null ? (t) weakReference.get() : null;
                         if (tVar == null) {
                             SharedPreferences sharedPreferences = context3.getSharedPreferences("com.google.android.gms.appid", 0);
                             t tVar2 = new t(sharedPreferences, scheduledThreadPoolExecutor3);
                             synchronized (tVar2) {
-                                tVar2.f38446a = N.i(sharedPreferences, scheduledThreadPoolExecutor3);
+                                tVar2.f38958a = M.i(sharedPreferences, scheduledThreadPoolExecutor3);
                             }
-                            t.f38445c = new WeakReference(tVar2);
+                            t.f38957c = new WeakReference(tVar2);
                             tVar = tVar2;
                         }
                     } catch (Throwable th) {
                         throw th;
                     }
                 }
-                return new v(firebaseMessaging, c2545Eo2, tVar, c4896n2, context3, scheduledThreadPoolExecutor3);
+                return new v(firebaseMessaging, c2582Fo2, tVar, c4945n2, context3, scheduledThreadPoolExecutor3);
             }
-        }, scheduledThreadPoolExecutor2).c(scheduledThreadPoolExecutor, new l(this, i6));
-        scheduledThreadPoolExecutor.execute(new Runnable(this) { // from class: j4.k
+        }, scheduledThreadPoolExecutor2).c(scheduledThreadPoolExecutor, new l(this, i4));
+        scheduledThreadPoolExecutor.execute(new Runnable(this) { // from class: l4.k
 
             /* renamed from: u, reason: collision with root package name */
-            public final /* synthetic */ FirebaseMessaging f38420u;
+            public final /* synthetic */ FirebaseMessaging f38932u;
 
             {
-                this.f38420u = this;
+                this.f38932u = this;
             }
 
             @Override // java.lang.Runnable
             public final void run() {
-                j3.m h9;
-                int i92;
+                l3.m q8;
+                int i62;
                 switch (i) {
                     case 0:
-                        FirebaseMessaging firebaseMessaging = this.f38420u;
-                        if (firebaseMessaging.f36197e.e() && firebaseMessaging.h(firebaseMessaging.d())) {
+                        FirebaseMessaging firebaseMessaging = this.f38932u;
+                        if (firebaseMessaging.f36964e.e() && firebaseMessaging.h(firebaseMessaging.d())) {
                             synchronized (firebaseMessaging) {
                                 if (!firebaseMessaging.i) {
                                     firebaseMessaging.g(0L);
@@ -237,31 +234,31 @@ public class FirebaseMessaging {
                         }
                         return;
                     default:
-                        FirebaseMessaging firebaseMessaging2 = this.f38420u;
-                        final Context context3 = firebaseMessaging2.f36194b;
-                        AbstractC0422a.n(context3);
-                        final boolean f3 = firebaseMessaging2.f();
+                        FirebaseMessaging firebaseMessaging2 = this.f38932u;
+                        final Context context3 = firebaseMessaging2.f36961b;
+                        com.bumptech.glide.g.r(context3);
+                        final boolean f2 = firebaseMessaging2.f();
                         if (Build.VERSION.SDK_INT >= 29) {
-                            SharedPreferences g4 = com.bumptech.glide.d.g(context3);
-                            if (!g4.contains("proxy_retention") || g4.getBoolean("proxy_retention", false) != f3) {
-                                L2.b bVar3 = (L2.b) firebaseMessaging2.f36195c.f40194w;
-                                if (bVar3.f1625c.a() >= 241100000) {
+                            SharedPreferences g9 = com.bumptech.glide.h.g(context3);
+                            if (!g9.contains("proxy_retention") || g9.getBoolean("proxy_retention", false) != f2) {
+                                N2.b bVar2 = (N2.b) firebaseMessaging2.f36962c.f40493w;
+                                if (bVar2.f1914c.a() >= 241100000) {
                                     Bundle bundle = new Bundle();
-                                    bundle.putBoolean("proxy_retention", f3);
-                                    L2.n c9 = L2.n.c(bVar3.f1624b);
+                                    bundle.putBoolean("proxy_retention", f2);
+                                    N2.o c9 = N2.o.c(bVar2.f1913b);
                                     synchronized (c9) {
-                                        i92 = c9.f1659a;
-                                        c9.f1659a = i92 + 1;
+                                        i62 = c9.f1949a;
+                                        c9.f1949a = i62 + 1;
                                     }
-                                    h9 = c9.d(new L2.l(i92, 4, bundle, 0));
+                                    q8 = c9.d(new N2.m(i62, 4, bundle, 0));
                                 } else {
-                                    h9 = S0.f.h(new IOException("SERVICE_NOT_AVAILABLE"));
+                                    q8 = com.bumptech.glide.d.q(new IOException("SERVICE_NOT_AVAILABLE"));
                                 }
-                                h9.c(new ExecutorC4742a(1), new j3.e() { // from class: j4.p
-                                    @Override // j3.e
-                                    public final void h(Object obj) {
-                                        SharedPreferences.Editor edit = com.bumptech.glide.d.g(context3).edit();
-                                        edit.putBoolean("proxy_retention", f3);
+                                q8.c(new ExecutorC4756a(1), new l3.e() { // from class: l4.p
+                                    @Override // l3.e
+                                    public final void b(Object obj) {
+                                        SharedPreferences.Editor edit = com.bumptech.glide.h.g(context3).edit();
+                                        edit.putBoolean("proxy_retention", f2);
                                         edit.apply();
                                     }
                                 });
@@ -280,29 +277,29 @@ public class FirebaseMessaging {
     public static void b(Runnable runnable, long j6) {
         synchronized (FirebaseMessaging.class) {
             try {
-                if (f36192m == null) {
-                    f36192m = new ScheduledThreadPoolExecutor(1, new a("TAG"));
+                if (f36959m == null) {
+                    f36959m = new ScheduledThreadPoolExecutor(1, new a("TAG"));
                 }
-                f36192m.schedule(runnable, j6, TimeUnit.SECONDS);
+                f36959m.schedule(runnable, j6, TimeUnit.SECONDS);
             } catch (Throwable th) {
                 throw th;
             }
         }
     }
 
-    public static synchronized C4523c c(Context context) {
-        C4523c c4523c;
+    public static synchronized C4586c c(Context context) {
+        C4586c c4586c;
         synchronized (FirebaseMessaging.class) {
             try {
-                if (f36190k == null) {
-                    f36190k = new C4523c(context);
+                if (f36957k == null) {
+                    f36957k = new C4586c(context);
                 }
-                c4523c = f36190k;
+                c4586c = f36957k;
             } catch (Throwable th) {
                 throw th;
             }
         }
-        return c4523c;
+        return c4586c;
     }
 
     @Keep
@@ -317,27 +314,27 @@ public class FirebaseMessaging {
 
     public final String a() {
         m mVar;
-        r d2 = d();
-        if (!h(d2)) {
-            return d2.f38438a;
+        r d9 = d();
+        if (!h(d9)) {
+            return d9.f38950a;
         }
-        String b9 = C2545Eo.b(this.f36193a);
-        j jVar = this.f36196d;
+        String c9 = C2582Fo.c(this.f36960a);
+        j jVar = this.f36963d;
         synchronized (jVar) {
-            mVar = (m) ((s.b) jVar.f38418b).getOrDefault(b9, null);
+            mVar = (m) ((s.b) jVar.f38930b).getOrDefault(c9, null);
             if (mVar == null) {
                 if (Log.isLoggable("FirebaseMessaging", 3)) {
-                    Log.d("FirebaseMessaging", "Making new request for: " + b9);
+                    Log.d("FirebaseMessaging", "Making new request for: " + c9);
                 }
-                C4896n c4896n = this.f36195c;
-                mVar = c4896n.e(c4896n.n(C2545Eo.b((g) c4896n.f40192u), new Bundle(), "*")).j(this.f36199g, new C4461a(4, this, b9, d2)).e((ExecutorService) jVar.f38417a, new C0461d(5, jVar, b9));
-                ((s.b) jVar.f38418b).put(b9, mVar);
+                C4945n c4945n = this.f36962c;
+                mVar = c4945n.e(c4945n.n(C2582Fo.c((g) c4945n.f40491u), new Bundle(), "*")).j(this.f36966g, new g2.a(4, this, c9, d9)).e((ExecutorService) jVar.f38929a, new C0465d(5, jVar, c9));
+                ((s.b) jVar.f38930b).put(c9, mVar);
             } else if (Log.isLoggable("FirebaseMessaging", 3)) {
-                Log.d("FirebaseMessaging", "Joining ongoing request for: " + b9);
+                Log.d("FirebaseMessaging", "Joining ongoing request for: " + c9);
             }
         }
         try {
-            return (String) S0.f.b(mVar);
+            return (String) com.bumptech.glide.d.d(mVar);
         } catch (InterruptedException | ExecutionException e9) {
             throw new IOException(e9);
         }
@@ -345,39 +342,39 @@ public class FirebaseMessaging {
 
     public final r d() {
         r b9;
-        C4523c c9 = c(this.f36194b);
-        g gVar = this.f36193a;
+        C4586c c9 = c(this.f36961b);
+        g gVar = this.f36960a;
         gVar.a();
-        String d2 = "[DEFAULT]".equals(gVar.f2346b) ? "" : gVar.d();
-        String b10 = C2545Eo.b(this.f36193a);
+        String d9 = "[DEFAULT]".equals(gVar.f2662b) ? "" : gVar.d();
+        String c10 = C2582Fo.c(this.f36960a);
         synchronized (c9) {
-            b9 = r.b(((SharedPreferences) c9.f37627u).getString(d2 + "|T|" + b10 + "|*", null));
+            b9 = r.b(((SharedPreferences) c9.f38154u).getString(d9 + "|T|" + c10 + "|*", null));
         }
         return b9;
     }
 
     public final void e() {
-        m h9;
+        m q8;
         int i;
-        L2.b bVar = (L2.b) this.f36195c.f40194w;
-        if (bVar.f1625c.a() >= 241100000) {
-            n c9 = n.c(bVar.f1624b);
+        N2.b bVar = (N2.b) this.f36962c.f40493w;
+        if (bVar.f1914c.a() >= 241100000) {
+            o c9 = o.c(bVar.f1913b);
             Bundle bundle = Bundle.EMPTY;
             synchronized (c9) {
-                i = c9.f1659a;
-                c9.f1659a = i + 1;
+                i = c9.f1949a;
+                c9.f1949a = i + 1;
             }
-            h9 = c9.d(new L2.l(i, 5, bundle, 1)).d(h.f1638v, d.f1632v);
+            q8 = c9.d(new N2.m(i, 5, bundle, 1)).d(h.f1927v, N2.d.f1921v);
         } else {
-            h9 = S0.f.h(new IOException("SERVICE_NOT_AVAILABLE"));
+            q8 = com.bumptech.glide.d.q(new IOException("SERVICE_NOT_AVAILABLE"));
         }
-        h9.c(this.f36198f, new l(this, 1));
+        q8.c(this.f36965f, new l(this, 1));
     }
 
     public final boolean f() {
         String notificationDelegate;
-        Context context = this.f36194b;
-        AbstractC0422a.n(context);
+        Context context = this.f36961b;
+        com.bumptech.glide.g.r(context);
         if (Build.VERSION.SDK_INT >= 29) {
             if (!(Binder.getCallingUid() == context.getApplicationInfo().uid)) {
                 Log.e("FirebaseMessaging", "error retrieving notification delegate for package " + context.getPackageName());
@@ -388,7 +385,7 @@ public class FirebaseMessaging {
                 if (Log.isLoggable("FirebaseMessaging", 3)) {
                     Log.d("FirebaseMessaging", "GMS core is set for proxying");
                 }
-                if (this.f36193a.b(P3.a.class) != null || (e.F() && f36191l != null)) {
+                if (this.f36960a.b(R3.a.class) != null || (com.bumptech.glide.f.h() && f36958l != null)) {
                     return true;
                 }
             }
@@ -400,13 +397,13 @@ public class FirebaseMessaging {
     }
 
     public final synchronized void g(long j6) {
-        b(new RunnableC2807Ug(this, Math.min(Math.max(30L, 2 * j6), f36189j)), j6);
+        b(new RunnableC2829Ug(this, Math.min(Math.max(30L, 2 * j6), f36956j)), j6);
         this.i = true;
     }
 
     public final boolean h(r rVar) {
         if (rVar != null) {
-            return System.currentTimeMillis() > rVar.f38440c + r.f38437d || !this.f36200h.a().equals(rVar.f38439b);
+            return System.currentTimeMillis() > rVar.f38952c + r.f38949d || !this.f36967h.a().equals(rVar.f38951b);
         }
         return true;
     }

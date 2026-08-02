@@ -24,169 +24,169 @@ import com.anythink.expressad.foundation.h.k;
 public final class d extends a {
 
     /* renamed from: o, reason: collision with root package name */
-    SecondEndCardView f10639o;
+    SecondEndCardView f11425o;
 
     /* renamed from: p, reason: collision with root package name */
-    com.anythink.basead.ui.f.a f10640p;
+    com.anythink.basead.ui.f.a f11426p;
 
     /* renamed from: q, reason: collision with root package name */
-    int f10641q;
+    int f11427q;
 
     /* renamed from: r, reason: collision with root package name */
-    boolean f10642r;
+    boolean f11428r;
 
     /* renamed from: s, reason: collision with root package name */
-    boolean f10643s;
+    boolean f11429s;
 
     /* renamed from: t, reason: collision with root package name */
-    private View f10644t;
+    private View f11430t;
 
     public d(Context context, w wVar, x xVar, c.a aVar, int i, ViewGroup viewGroup) {
         super(context, wVar, xVar, aVar, i, viewGroup);
-        this.f10641q = 1;
+        this.f11427q = 1;
     }
 
     @Override // com.anythink.basead.ui.c.a
     public final void d() {
         super.d();
-        this.f10643s = true;
+        this.f11429s = true;
     }
 
     @Override // com.anythink.basead.ui.c.a
     public final View f() {
-        return this.f10644t;
+        return this.f11430t;
     }
 
     @Override // com.anythink.basead.ui.c.a
     public final void a(final ViewGroup viewGroup) {
         super.a(viewGroup);
-        this.f10644t = this.f10616g;
-        this.f10641q = this.f10612c.f14168o.aY();
-        SecondEndCardView secondEndCardView = new SecondEndCardView(this.f10610a);
-        this.f10639o = secondEndCardView;
-        secondEndCardView.setAdTitle(this.f10611b.x());
-        this.f10639o.setAdDesc(this.f10611b.y());
-        if (TextUtils.isEmpty(this.f10611b.z())) {
-            this.f10639o.setAdIcon(this.f10611b.B());
+        this.f11430t = this.f11402g;
+        this.f11427q = this.f11398c.f14954o.aY();
+        SecondEndCardView secondEndCardView = new SecondEndCardView(this.f11396a);
+        this.f11425o = secondEndCardView;
+        secondEndCardView.setAdTitle(this.f11397b.x());
+        this.f11425o.setAdDesc(this.f11397b.y());
+        if (TextUtils.isEmpty(this.f11397b.z())) {
+            this.f11425o.setAdIcon(this.f11397b.B());
         } else {
-            this.f10639o.setAdIcon(this.f10611b.z());
+            this.f11425o.setAdIcon(this.f11397b.z());
         }
-        if (TextUtils.isEmpty(this.f10611b.D())) {
-            SecondEndCardView secondEndCardView2 = this.f10639o;
-            Context context = this.f10610a;
-            secondEndCardView2.setCTAText(context.getString(com.anythink.basead.b.e.a(context, this.f10611b)));
+        if (TextUtils.isEmpty(this.f11397b.D())) {
+            SecondEndCardView secondEndCardView2 = this.f11425o;
+            Context context = this.f11396a;
+            secondEndCardView2.setCTAText(context.getString(com.anythink.basead.b.e.a(context, this.f11397b)));
         } else {
-            this.f10639o.setCTAText(this.f10611b.D());
+            this.f11425o.setCTAText(this.f11397b.D());
         }
-        boolean z3 = this.f10615f != 1;
-        this.f10642r = z3;
-        this.f10639o.addApkComplianceElements(!z3);
-        if (!this.f10642r) {
-            this.f10639o.setBackgroundColor(Color.parseColor("#CC000000"));
+        boolean z6 = this.f11401f != 1;
+        this.f11428r = z6;
+        this.f11425o.addApkComplianceElements(!z6);
+        if (!this.f11428r) {
+            this.f11425o.setBackgroundColor(Color.parseColor("#CC000000"));
         }
-        d.a aVar = this.f10617h;
+        d.a aVar = this.f11403h;
         View c9 = aVar != null ? aVar.c() : null;
         if (c9 == null) {
             c9 = b();
         }
         if (c9 != null) {
-            if ((c9 instanceof TextView) && TextUtils.isEmpty(this.f10612c.f14168o.bm())) {
-                ((TextView) c9).setText(q.a(this.f10610a, "myoffer_sub_close_default_skip_text", k.f19636g));
+            if ((c9 instanceof TextView) && TextUtils.isEmpty(this.f11398c.f14954o.bm())) {
+                ((TextView) c9).setText(q.a(this.f11396a, "myoffer_sub_close_default_skip_text", k.f20423g));
             }
             if (c9 instanceof ImageView) {
-                c9.setBackgroundResource(q.a(this.f10610a, "myoffer_base_skip_icon", k.f19632c));
+                c9.setBackgroundResource(q.a(this.f11396a, "myoffer_base_skip_icon", k.f20419c));
             }
             c9.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.c.d.1
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     CountDownView countDownView;
-                    d.a aVar2 = d.this.f10617h;
+                    d.a aVar2 = d.this.f11403h;
                     if (aVar2 != null) {
                         aVar2.a(true);
                     }
-                    SecondEndCardView secondEndCardView3 = d.this.f10639o;
+                    SecondEndCardView secondEndCardView3 = d.this.f11425o;
                     if (secondEndCardView3 != null && secondEndCardView3.getParent() == null) {
                         d dVar = d.this;
-                        if (dVar.f10642r) {
-                            ViewGroup viewGroup2 = dVar.f10616g;
+                        if (dVar.f11428r) {
+                            ViewGroup viewGroup2 = dVar.f11402g;
                             if (viewGroup2 != null) {
                                 viewGroup2.setVisibility(4);
-                                if (d.this.f10616g.getParent() instanceof ViewGroup) {
-                                    ((ViewGroup) d.this.f10616g.getParent()).addView(d.this.f10639o, -1, -1);
+                                if (d.this.f11402g.getParent() instanceof ViewGroup) {
+                                    ((ViewGroup) d.this.f11402g.getParent()).addView(d.this.f11425o, -1, -1);
                                 }
                             }
                         } else {
-                            viewGroup.addView(dVar.f10639o, -1, -1);
+                            viewGroup.addView(dVar.f11425o, -1, -1);
                         }
                         d dVar2 = d.this;
-                        dVar2.f10644t = dVar2.f10639o;
+                        dVar2.f11430t = dVar2.f11425o;
                         d dVar3 = d.this;
-                        dVar3.f10640p = new com.anythink.basead.ui.f.a(dVar3.f10611b, dVar3.f10612c);
+                        dVar3.f11426p = new com.anythink.basead.ui.f.a(dVar3.f11397b, dVar3.f11398c);
                         d dVar4 = d.this;
-                        dVar4.f10640p.b(dVar4.f10639o);
-                        d.this.f10639o.setSecondECClickListener(new b.a() { // from class: com.anythink.basead.ui.c.d.1.1
+                        dVar4.f11426p.b(dVar4.f11425o);
+                        d.this.f11425o.setSecondECClickListener(new b.a() { // from class: com.anythink.basead.ui.c.d.1.1
                             @Override // com.anythink.basead.ui.f.b.a
-                            public final void a(int i, int i6) {
-                                switch (i6) {
+                            public final void a(int i, int i4) {
+                                switch (i4) {
                                     case 36:
                                         break;
                                     case 37:
-                                        if (d.this.f10641q < 2) {
+                                        if (d.this.f11427q < 2) {
                                             return;
                                         }
                                         break;
-                                    case j.f5806M /* 38 */:
-                                        if (d.this.f10641q < 3) {
+                                    case j.f6592M /* 38 */:
+                                        if (d.this.f11427q < 3) {
                                             return;
                                         }
                                         break;
                                     default:
                                         return;
                                 }
-                                c.a aVar3 = d.this.f10614e;
+                                c.a aVar3 = d.this.f11400e;
                                 if (aVar3 != null) {
-                                    aVar3.a(i, i6);
+                                    aVar3.a(i, i4);
                                 }
                             }
                         });
                     }
                     d dVar5 = d.this;
-                    dVar5.b(dVar5.f10612c.f14168o.ba());
+                    dVar5.b(dVar5.f11398c.f14954o.ba());
                     d dVar6 = d.this;
-                    if (dVar6.f10642r && (countDownView = dVar6.f10622n) != null) {
+                    if (dVar6.f11428r && (countDownView = dVar6.f11408n) != null) {
                         am.a(countDownView);
-                        ViewGroup.LayoutParams layoutParams = d.this.f10622n.getLayoutParams();
+                        ViewGroup.LayoutParams layoutParams = d.this.f11408n.getLayoutParams();
                         RelativeLayout.LayoutParams layoutParams2 = new RelativeLayout.LayoutParams(layoutParams.width, layoutParams.height);
                         layoutParams2.addRule(11);
-                        layoutParams2.setMargins(0, q.a(d.this.f10610a, 8.0f), q.a(d.this.f10610a, 8.0f), 0);
+                        layoutParams2.setMargins(0, q.a(d.this.f11396a, 8.0f), q.a(d.this.f11396a, 8.0f), 0);
                         d dVar7 = d.this;
-                        dVar7.f10639o.addCloseView(dVar7.f10622n, layoutParams2);
+                        dVar7.f11425o.addCloseView(dVar7.f11408n, layoutParams2);
                     }
                     d.this.a(true);
                 }
             });
         }
-        this.f10643s = false;
+        this.f11429s = false;
     }
 
     @Override // com.anythink.basead.ui.c.a
     public final void a(long j6) {
         super.a(j6);
-        if (this.f10620l >= this.f10621m) {
-            com.anythink.basead.ui.f.b.a(this.f10622n, true, this.f10612c, false);
-            this.f10622n.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.c.d.2
+        if (this.f11406l >= this.f11407m) {
+            com.anythink.basead.ui.f.b.a(this.f11408n, true, this.f11398c, false);
+            this.f11408n.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.c.d.2
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     d dVar = d.this;
-                    if (dVar.f10643s || dVar.f10641q != 4) {
-                        d.a aVar = dVar.f10617h;
+                    if (dVar.f11429s || dVar.f11427q != 4) {
+                        d.a aVar = dVar.f11403h;
                         if (aVar != null) {
                             aVar.b();
                             return;
                         }
                         return;
                     }
-                    c.a aVar2 = dVar.f10614e;
+                    c.a aVar2 = dVar.f11400e;
                     if (aVar2 != null) {
                         aVar2.a(1, 39);
                     }

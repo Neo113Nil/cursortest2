@@ -12,13 +12,13 @@ import com.anythink.basead.ui.guidetoclickv2.d;
 public class OwnNativeATView extends FrameLayout implements com.anythink.basead.ui.guidetoclickv2.c {
 
     /* renamed from: a, reason: collision with root package name */
-    d f10159a;
+    d f10945a;
 
     /* renamed from: b, reason: collision with root package name */
-    private com.anythink.basead.ui.f.c f10160b;
+    private com.anythink.basead.ui.f.c f10946b;
 
     /* renamed from: c, reason: collision with root package name */
-    private a f10161c;
+    private a f10947c;
 
     public interface a {
         void a();
@@ -33,7 +33,7 @@ public class OwnNativeATView extends FrameLayout implements com.anythink.basead.
     private boolean a(MotionEvent motionEvent) {
         synchronized (this) {
             try {
-                d dVar = this.f10159a;
+                d dVar = this.f10945a;
                 if (dVar != null) {
                     if (dVar.a(motionEvent)) {
                         return true;
@@ -46,7 +46,7 @@ public class OwnNativeATView extends FrameLayout implements com.anythink.basead.
     }
 
     private void b() {
-        a aVar = this.f10161c;
+        a aVar = this.f10947c;
         if (aVar != null) {
             aVar.b();
         }
@@ -57,18 +57,18 @@ public class OwnNativeATView extends FrameLayout implements com.anythink.basead.
         com.anythink.basead.ui.f.c cVar;
         int action = motionEvent.getAction();
         if (action == 0) {
-            com.anythink.basead.ui.f.c cVar2 = this.f10160b;
+            com.anythink.basead.ui.f.c cVar2 = this.f10946b;
             if (cVar2 != null) {
                 cVar2.a((int) motionEvent.getRawX(), (int) motionEvent.getRawY(), (int) motionEvent.getX(), (int) motionEvent.getY());
             }
-        } else if ((action == 1 || action == 3) && (cVar = this.f10160b) != null) {
+        } else if ((action == 1 || action == 3) && (cVar = this.f10946b) != null) {
             cVar.b((int) motionEvent.getRawX(), (int) motionEvent.getRawY(), (int) motionEvent.getX(), (int) motionEvent.getY());
         }
         return super.dispatchTouchEvent(motionEvent);
     }
 
     public com.anythink.basead.d.a getAdClickRecord(int i) {
-        com.anythink.basead.ui.f.c cVar = this.f10160b;
+        com.anythink.basead.ui.f.c cVar = this.f10946b;
         if (cVar != null) {
             return cVar.a(i);
         }
@@ -94,9 +94,9 @@ public class OwnNativeATView extends FrameLayout implements com.anythink.basead.
     }
 
     @Override // android.view.View
-    public void onVisibilityAggregated(boolean z3) {
-        super.onVisibilityAggregated(z3);
-        if (z3) {
+    public void onVisibilityAggregated(boolean z6) {
+        super.onVisibilityAggregated(z6);
+        if (z6) {
             a();
         } else {
             b();
@@ -109,10 +109,10 @@ public class OwnNativeATView extends FrameLayout implements com.anythink.basead.
     }
 
     @Override // android.view.View
-    public void onWindowFocusChanged(boolean z3) {
-        super.onWindowFocusChanged(z3);
+    public void onWindowFocusChanged(boolean z6) {
+        super.onWindowFocusChanged(z6);
         if (Build.VERSION.SDK_INT < 28) {
-            if (z3) {
+            if (z6) {
                 a();
             } else {
                 b();
@@ -121,24 +121,24 @@ public class OwnNativeATView extends FrameLayout implements com.anythink.basead.
     }
 
     public void releaseAllCallback() {
-        this.f10159a = null;
-        this.f10160b = null;
-        this.f10161c = null;
+        this.f10945a = null;
+        this.f10946b = null;
+        this.f10947c = null;
     }
 
     @Override // com.anythink.basead.ui.guidetoclickv2.c
     public void setCallback(d dVar) {
         synchronized (this) {
-            this.f10159a = dVar;
+            this.f10945a = dVar;
         }
     }
 
     public void setClickRecordHelper(com.anythink.basead.ui.f.c cVar) {
-        this.f10160b = cVar;
+        this.f10946b = cVar;
     }
 
     public void setLifeCallback(a aVar) {
-        this.f10161c = aVar;
+        this.f10947c = aVar;
     }
 
     public OwnNativeATView(Context context, AttributeSet attributeSet) {
@@ -150,7 +150,7 @@ public class OwnNativeATView extends FrameLayout implements com.anythink.basead.
     }
 
     private void a() {
-        a aVar = this.f10161c;
+        a aVar = this.f10947c;
         if (aVar != null) {
             aVar.a();
         }

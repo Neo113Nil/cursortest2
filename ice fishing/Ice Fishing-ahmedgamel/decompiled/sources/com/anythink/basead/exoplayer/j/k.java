@@ -4,33 +4,34 @@ import android.net.Uri;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.Arrays;
+import w.AbstractC5128c;
 
 /* loaded from: classes.dex */
 public final class k {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f8135a = 1;
+    public static final int f8921a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f8136b = 2;
+    public static final int f8922b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Uri f8137c;
+    public final Uri f8923c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final byte[] f8138d;
+    public final byte[] f8924d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final long f8139e;
+    public final long f8925e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final long f8140f;
+    public final long f8926f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final long f8141g;
+    public final long f8927g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final String f8142h;
+    public final String f8928h;
     public final int i;
 
     @Retention(RetentionPolicy.SOURCE)
@@ -47,19 +48,19 @@ public final class k {
 
     public final String toString() {
         StringBuilder sb = new StringBuilder("DataSpec[");
-        sb.append(this.f8137c);
+        sb.append(this.f8923c);
         sb.append(", ");
-        sb.append(Arrays.toString(this.f8138d));
+        sb.append(Arrays.toString(this.f8924d));
         sb.append(", ");
-        sb.append(this.f8139e);
+        sb.append(this.f8925e);
         sb.append(", ");
-        sb.append(this.f8140f);
+        sb.append(this.f8926f);
         sb.append(", ");
-        sb.append(this.f8141g);
+        sb.append(this.f8927g);
         sb.append(", ");
-        sb.append(this.f8142h);
+        sb.append(this.f8928h);
         sb.append(", ");
-        return u1.h.e(this.i, "]", sb);
+        return AbstractC5128c.e(this.i, "]", sb);
     }
 
     public k(Uri uri, int i) {
@@ -67,9 +68,9 @@ public final class k {
     }
 
     public final k a(long j6) {
-        long j9 = this.f8141g;
+        long j9 = this.f8927g;
         long j10 = j9 != -1 ? j9 - j6 : -1L;
-        return (j6 == 0 && j9 == j10) ? this : new k(this.f8137c, this.f8138d, this.f8139e + j6, this.f8140f + j6, j10, this.f8142h, this.i);
+        return (j6 == 0 && j9 == j10) ? this : new k(this.f8923c, this.f8924d, this.f8925e + j6, this.f8926f + j6, j10, this.f8928h, this.i);
     }
 
     public k(Uri uri, long j6, String str) {
@@ -81,7 +82,7 @@ public final class k {
     }
 
     private k a(long j6, long j9) {
-        return (j6 == 0 && this.f8141g == j9) ? this : new k(this.f8137c, this.f8138d, this.f8139e + j6, this.f8140f + j6, j9, this.f8142h, this.i);
+        return (j6 == 0 && this.f8927g == j9) ? this : new k(this.f8923c, this.f8924d, this.f8925e + j6, this.f8926f + j6, j9, this.f8928h, this.i);
     }
 
     public k(Uri uri, long j6, long j9, long j10, String str, int i) {
@@ -92,16 +93,16 @@ public final class k {
         com.anythink.basead.exoplayer.k.a.a(j6 >= 0);
         com.anythink.basead.exoplayer.k.a.a(j9 >= 0);
         com.anythink.basead.exoplayer.k.a.a(j10 > 0 || j10 == -1);
-        this.f8137c = uri;
-        this.f8138d = bArr;
-        this.f8139e = j6;
-        this.f8140f = j9;
-        this.f8141g = j10;
-        this.f8142h = str;
+        this.f8923c = uri;
+        this.f8924d = bArr;
+        this.f8925e = j6;
+        this.f8926f = j9;
+        this.f8927g = j10;
+        this.f8928h = str;
         this.i = i;
     }
 
     private k a(Uri uri) {
-        return new k(uri, this.f8138d, this.f8139e, this.f8140f, this.f8141g, this.f8142h, this.i);
+        return new k(uri, this.f8924d, this.f8925e, this.f8926f, this.f8927g, this.f8928h, this.i);
     }
 }

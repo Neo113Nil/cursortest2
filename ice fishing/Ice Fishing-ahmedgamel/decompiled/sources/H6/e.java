@@ -1,82 +1,82 @@
 package H6;
 
-import c6.C0544a;
-import g1.C4523c;
+import c6.C0555a;
+import i1.C4586c;
 import java.util.Objects;
 
 /* loaded from: classes2.dex */
 public final class e extends c6.i {
     @Override // c6.i
-    public final Object c(C4523c c4523c) {
+    public final Object c(C4586c c4586c) {
         y8.e eVar;
-        y8.h value = y8.h.f41954w;
+        y8.h value = y8.h.f41925w;
         d6.d dVar = new d6.d();
         d6.d dVar2 = new d6.d();
-        long A9 = c4523c.A();
+        long n9 = c4586c.n();
         String str = "";
         String str2 = "";
         while (true) {
-            int f3 = ((C0544a) c4523c.f37627u).f();
-            if (f3 == -1) {
+            int f2 = ((C0555a) c4586c.f38154u).f();
+            if (f2 == -1) {
                 break;
             }
-            c6.c cVar = c6.i.f5598o;
-            if (f3 == 1) {
-                str = (String) cVar.c(c4523c);
-            } else if (f3 == 2) {
-                str2 = (String) cVar.c(c4523c);
-            } else if (f3 == 3) {
-                dVar.add((String) cVar.c(c4523c));
-            } else if (f3 != 4) {
-                c4523c.F(f3);
+            c6.c cVar = c6.i.f5774o;
+            if (f2 == 1) {
+                str = (String) cVar.c(c4586c);
+            } else if (f2 == 2) {
+                str2 = (String) cVar.c(c4586c);
+            } else if (f2 == 3) {
+                dVar.add((String) cVar.c(c4586c));
+            } else if (f2 != 4) {
+                c4586c.t(f2);
             } else {
-                dVar2.add((String) cVar.c(c4523c));
+                dVar2.add((String) cVar.c(c4586c));
             }
         }
-        y8.h unknownFields = c4523c.C(A9);
+        y8.h unknownFields = c4586c.p(n9);
         kotlin.jvm.internal.h.e(unknownFields, "unknownFields");
         if (unknownFields.a() > 0) {
             eVar = new y8.e();
             kotlin.jvm.internal.h.e(value, "value");
             eVar.K(value);
-            value = y8.h.f41954w;
+            value = y8.h.f41925w;
             eVar.K(unknownFields);
         } else {
             eVar = null;
         }
         if (eVar != null) {
-            value = eVar.B(eVar.f41953u);
+            value = eVar.B(eVar.f41924u);
         }
         return new f(str, str2, dVar, dVar2, value);
     }
 
     @Override // c6.i
-    public final void d(F1.a aVar, Object obj) {
+    public final void d(n4.c cVar, Object obj) {
         f fVar = (f) obj;
-        boolean equals = Objects.equals(fVar.f1237v, "");
-        c6.c cVar = c6.i.f5598o;
+        boolean equals = Objects.equals(fVar.f1262v, "");
+        c6.c cVar2 = c6.i.f5774o;
         if (!equals) {
-            cVar.e(aVar, 1, fVar.f1237v);
+            cVar2.e(cVar, 1, fVar.f1262v);
         }
-        String str = fVar.f1238w;
+        String str = fVar.f1263w;
         if (!Objects.equals(str, "")) {
-            cVar.e(aVar, 2, str);
+            cVar2.e(cVar, 2, str);
         }
-        cVar.a().e(aVar, 3, fVar.f1239x);
-        cVar.a().e(aVar, 4, fVar.f1240y);
-        aVar.v(fVar.a());
+        cVar2.a().e(cVar, 3, fVar.f1264x);
+        cVar2.a().e(cVar, 4, fVar.f1265y);
+        cVar.C(fVar.a());
     }
 
     @Override // c6.i
     public final int f(Object obj) {
         f fVar = (f) obj;
-        boolean equals = Objects.equals(fVar.f1237v, "");
-        c6.c cVar = c6.i.f5598o;
-        int g4 = !equals ? cVar.g(1, fVar.f1237v) : 0;
-        String str = fVar.f1238w;
+        boolean equals = Objects.equals(fVar.f1262v, "");
+        c6.c cVar = c6.i.f5774o;
+        int g9 = !equals ? cVar.g(1, fVar.f1262v) : 0;
+        String str = fVar.f1263w;
         if (!Objects.equals(str, "")) {
-            g4 += cVar.g(2, str);
+            g9 += cVar.g(2, str);
         }
-        return fVar.a().a() + cVar.a().g(4, fVar.f1240y) + cVar.a().g(3, fVar.f1239x) + g4;
+        return fVar.a().a() + cVar.a().g(4, fVar.f1265y) + cVar.a().g(3, fVar.f1264x) + g9;
     }
 }

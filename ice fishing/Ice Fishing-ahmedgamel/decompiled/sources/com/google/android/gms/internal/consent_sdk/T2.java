@@ -13,25 +13,25 @@ import sun.misc.Unsafe;
 public abstract class T2 {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Unsafe f35615a;
+    public static final Unsafe f36384a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final Class f35616b;
+    public static final Class f36385b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final S2 f35617c;
+    public static final S2 f36386c;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final boolean f35618d;
+    public static final boolean f36387d;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final boolean f35619e;
+    public static final boolean f36388e;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final long f35620f;
+    public static final long f36389f;
 
     /* renamed from: g, reason: collision with root package name */
-    public static final boolean f35621g;
+    public static final boolean f36390g;
 
     /* JADX WARN: Can't wrap try/catch for region: R(21:0|1|(18:(1:65)(1:(1:67))|4|(7:43|44|45|46|47|(4:51|52|(1:54)|57)|(14:50|8|(14:36|37|38|39|11|12|13|(3:26|27|(6:31|(1:19)|20|(1:22)|23|24))|15|(2:17|19)|20|(0)|23|24)|10|11|12|13|(0)|15|(0)|20|(0)|23|24))|6|7|8|(0)|10|11|12|13|(0)|15|(0)|20|(0)|23|24)|3|4|(0)|6|7|8|(0)|10|11|12|13|(0)|15|(0)|20|(0)|23|24) */
     /* JADX WARN: Code restructure failed: missing block: B:35:0x0157, code lost:
@@ -51,30 +51,30 @@ public abstract class T2 {
         S2 q22;
         Class cls;
         Field field;
-        boolean z3;
-        S2 s22;
         boolean z6;
+        S2 s22;
+        boolean z9;
         Field field2;
         Field field3;
         S2 s23;
-        Unsafe h9 = h();
-        f35615a = h9;
-        int i = AbstractC4315e2.f35667a;
-        f35616b = Memory.class;
+        Unsafe h3 = h();
+        f36384a = h3;
+        int i = AbstractC4338e2.f36436a;
+        f36385b = Memory.class;
         Class<?> cls2 = Long.TYPE;
         boolean n9 = n(cls2);
         Class cls3 = Integer.TYPE;
         boolean n10 = n(cls3);
-        if (h9 != null) {
+        if (h3 != null) {
             if (n9) {
-                q22 = new R2(h9);
+                q22 = new R2(h3);
             } else if (n10) {
-                q22 = new Q2(h9);
+                q22 = new Q2(h3);
             }
-            f35617c = q22;
+            f36386c = q22;
             if (q22 != null) {
                 try {
-                    Class<?> cls4 = q22.f35614a.getClass();
+                    Class<?> cls4 = q22.f36383a.getClass();
                     cls4.getMethod("objectFieldOffset", Field.class);
                     cls4.getMethod("getLong", Object.class, cls2);
                     try {
@@ -98,12 +98,12 @@ public abstract class T2 {
                 }
                 if (field != null) {
                     cls = Class.class;
-                    z3 = true;
-                    f35618d = z3;
-                    s22 = f35617c;
+                    z6 = true;
+                    f36387d = z6;
+                    s22 = f36386c;
                     if (s22 != null) {
                         try {
-                            Class<?> cls5 = s22.f35614a.getClass();
+                            Class<?> cls5 = s22.f36383a.getClass();
                             cls5.getMethod("objectFieldOffset", Field.class);
                             cls5.getMethod("arrayBaseOffset", cls);
                             cls5.getMethod("arrayIndexScale", cls);
@@ -113,12 +113,12 @@ public abstract class T2 {
                             cls5.getMethod("putLong", Object.class, cls2, cls2);
                             cls5.getMethod("getObject", Object.class, cls2);
                             cls5.getMethod("putObject", Object.class, cls2, Object.class);
-                            z6 = true;
+                            z9 = true;
                         } catch (Throwable th2) {
                             Logger.getLogger(T2.class.getName()).logp(Level.WARNING, "com.google.protobuf.UnsafeUtil", "logMissingMethod", "platform method missing - proto runtime falling back to safer methods: ".concat(th2.toString()));
                         }
-                        f35619e = z6;
-                        f35620f = o(byte[].class);
+                        f36388e = z9;
+                        f36389f = o(byte[].class);
                         o(boolean[].class);
                         a(boolean[].class);
                         o(int[].class);
@@ -131,7 +131,7 @@ public abstract class T2 {
                         a(double[].class);
                         o(Object[].class);
                         a(Object[].class);
-                        int i6 = AbstractC4315e2.f35667a;
+                        int i4 = AbstractC4338e2.f36436a;
                         field2 = Buffer.class.getDeclaredField("effectiveDirectAddress");
                         if (field2 == null) {
                             try {
@@ -141,21 +141,21 @@ public abstract class T2 {
                             }
                             if (field2 == null || field2.getType() != cls2) {
                                 field3 = null;
-                                if (field3 != null && (s23 = f35617c) != null) {
-                                    s23.f35614a.objectFieldOffset(field3);
+                                if (field3 != null && (s23 = f36386c) != null) {
+                                    s23.f36383a.objectFieldOffset(field3);
                                 }
-                                f35621g = ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN;
+                                f36390g = ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN;
                             }
                         }
                         field3 = field2;
                         if (field3 != null) {
-                            s23.f35614a.objectFieldOffset(field3);
+                            s23.f36383a.objectFieldOffset(field3);
                         }
-                        f35621g = ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN;
+                        f36390g = ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN;
                     }
-                    z6 = false;
-                    f35619e = z6;
-                    f35620f = o(byte[].class);
+                    z9 = false;
+                    f36388e = z9;
+                    f36389f = o(byte[].class);
                     o(boolean[].class);
                     a(boolean[].class);
                     o(int[].class);
@@ -168,25 +168,25 @@ public abstract class T2 {
                     a(double[].class);
                     o(Object[].class);
                     a(Object[].class);
-                    int i62 = AbstractC4315e2.f35667a;
+                    int i42 = AbstractC4338e2.f36436a;
                     field2 = Buffer.class.getDeclaredField("effectiveDirectAddress");
                     if (field2 == null) {
                     }
                     field3 = field2;
                     if (field3 != null) {
                     }
-                    f35621g = ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN;
+                    f36390g = ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN;
                 }
             }
             cls = Class.class;
-            z3 = false;
-            f35618d = z3;
-            s22 = f35617c;
+            z6 = false;
+            f36387d = z6;
+            s22 = f36386c;
             if (s22 != null) {
             }
-            z6 = false;
-            f35619e = z6;
-            f35620f = o(byte[].class);
+            z9 = false;
+            f36388e = z9;
+            f36389f = o(byte[].class);
             o(boolean[].class);
             a(boolean[].class);
             o(int[].class);
@@ -199,28 +199,28 @@ public abstract class T2 {
             a(double[].class);
             o(Object[].class);
             a(Object[].class);
-            int i622 = AbstractC4315e2.f35667a;
+            int i422 = AbstractC4338e2.f36436a;
             field2 = Buffer.class.getDeclaredField("effectiveDirectAddress");
             if (field2 == null) {
             }
             field3 = field2;
             if (field3 != null) {
             }
-            f35621g = ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN;
+            f36390g = ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN;
         }
         q22 = null;
-        f35617c = q22;
+        f36386c = q22;
         if (q22 != null) {
         }
         cls = Class.class;
-        z3 = false;
-        f35618d = z3;
-        s22 = f35617c;
+        z6 = false;
+        f36387d = z6;
+        s22 = f36386c;
         if (s22 != null) {
         }
-        z6 = false;
-        f35619e = z6;
-        f35620f = o(byte[].class);
+        z9 = false;
+        f36388e = z9;
+        f36389f = o(byte[].class);
         o(boolean[].class);
         a(boolean[].class);
         o(int[].class);
@@ -233,55 +233,55 @@ public abstract class T2 {
         a(double[].class);
         o(Object[].class);
         a(Object[].class);
-        int i6222 = AbstractC4315e2.f35667a;
+        int i4222 = AbstractC4338e2.f36436a;
         field2 = Buffer.class.getDeclaredField("effectiveDirectAddress");
         if (field2 == null) {
         }
         field3 = field2;
         if (field3 != null) {
         }
-        f35621g = ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN;
+        f36390g = ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN;
     }
 
     public static void a(Class cls) {
-        if (f35619e) {
-            f35617c.f35614a.arrayIndexScale(cls);
+        if (f36388e) {
+            f36386c.f36383a.arrayIndexScale(cls);
         }
     }
 
     public static void b(Object obj, long j6, byte b9) {
-        Unsafe unsafe = f35617c.f35614a;
+        Unsafe unsafe = f36386c.f36383a;
         long j9 = (-4) & j6;
         int i = unsafe.getInt(obj, j9);
-        int i6 = ((~((int) j6)) & 3) << 3;
-        unsafe.putInt(obj, j9, ((255 & b9) << i6) | (i & (~(com.anythink.basead.exoplayer.k.p.f8473b << i6))));
+        int i4 = ((~((int) j6)) & 3) << 3;
+        unsafe.putInt(obj, j9, ((255 & b9) << i4) | (i & (~(com.anythink.basead.exoplayer.k.p.f9259b << i4))));
     }
 
     public static void c(Object obj, long j6, byte b9) {
-        Unsafe unsafe = f35617c.f35614a;
+        Unsafe unsafe = f36386c.f36383a;
         long j9 = (-4) & j6;
         int i = (((int) j6) & 3) << 3;
-        unsafe.putInt(obj, j9, ((255 & b9) << i) | (unsafe.getInt(obj, j9) & (~(com.anythink.basead.exoplayer.k.p.f8473b << i))));
+        unsafe.putInt(obj, j9, ((255 & b9) << i) | (unsafe.getInt(obj, j9) & (~(com.anythink.basead.exoplayer.k.p.f9259b << i))));
     }
 
     public static int d(long j6, Object obj) {
-        return f35617c.f35614a.getInt(obj, j6);
+        return f36386c.f36383a.getInt(obj, j6);
     }
 
     public static long e(long j6, Object obj) {
-        return f35617c.f35614a.getLong(obj, j6);
+        return f36386c.f36383a.getLong(obj, j6);
     }
 
     public static Object f(Class cls) {
         try {
-            return f35615a.allocateInstance(cls);
+            return f36384a.allocateInstance(cls);
         } catch (InstantiationException e9) {
             throw new IllegalStateException(e9);
         }
     }
 
     public static Object g(long j6, Object obj) {
-        return f35617c.f35614a.getObject(obj, j6);
+        return f36386c.f36383a.getObject(obj, j6);
     }
 
     public static Unsafe h() {
@@ -293,29 +293,29 @@ public abstract class T2 {
     }
 
     public static void i(int i, long j6, Object obj) {
-        f35617c.f35614a.putInt(obj, j6, i);
+        f36386c.f36383a.putInt(obj, j6, i);
     }
 
     public static void j(Object obj, long j6, long j9) {
-        f35617c.f35614a.putLong(obj, j6, j9);
+        f36386c.f36383a.putLong(obj, j6, j9);
     }
 
     public static void k(long j6, Object obj, Object obj2) {
-        f35617c.f35614a.putObject(obj, j6, obj2);
+        f36386c.f36383a.putObject(obj, j6, obj2);
     }
 
     public static /* bridge */ /* synthetic */ boolean l(long j6, Object obj) {
-        return ((byte) ((f35617c.f35614a.getInt(obj, (-4) & j6) >>> ((int) (((~j6) & 3) << 3))) & com.anythink.basead.exoplayer.k.p.f8473b)) != 0;
+        return ((byte) ((f36386c.f36383a.getInt(obj, (-4) & j6) >>> ((int) (((~j6) & 3) << 3))) & com.anythink.basead.exoplayer.k.p.f9259b)) != 0;
     }
 
     public static /* bridge */ /* synthetic */ boolean m(long j6, Object obj) {
-        return ((byte) ((f35617c.f35614a.getInt(obj, (-4) & j6) >>> ((int) ((j6 & 3) << 3))) & com.anythink.basead.exoplayer.k.p.f8473b)) != 0;
+        return ((byte) ((f36386c.f36383a.getInt(obj, (-4) & j6) >>> ((int) ((j6 & 3) << 3))) & com.anythink.basead.exoplayer.k.p.f9259b)) != 0;
     }
 
     public static boolean n(Class cls) {
-        int i = AbstractC4315e2.f35667a;
+        int i = AbstractC4338e2.f36436a;
         try {
-            Class cls2 = f35616b;
+            Class cls2 = f36385b;
             Class cls3 = Boolean.TYPE;
             cls2.getMethod("peekLong", cls, cls3);
             cls2.getMethod("pokeLong", cls, Long.TYPE, cls3);
@@ -333,8 +333,8 @@ public abstract class T2 {
     }
 
     public static int o(Class cls) {
-        if (f35619e) {
-            return f35617c.f35614a.arrayBaseOffset(cls);
+        if (f36388e) {
+            return f36386c.f36383a.arrayBaseOffset(cls);
         }
         return -1;
     }

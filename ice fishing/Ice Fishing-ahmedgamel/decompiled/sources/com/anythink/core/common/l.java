@@ -17,73 +17,73 @@ import java.util.Set;
 public final class l {
 
     /* renamed from: a, reason: collision with root package name */
-    static final int f14327a = 1;
+    static final int f15113a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f14328b = "InnerBroadcastManager";
+    private static final String f15114b = "InnerBroadcastManager";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final boolean f14329c = false;
+    private static final boolean f15115c = false;
     private static final Object i = new Object();
 
     /* renamed from: j, reason: collision with root package name */
-    private static l f14330j;
+    private static l f15116j;
 
     /* renamed from: d, reason: collision with root package name */
-    private final Context f14331d;
+    private final Context f15117d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final HashMap<BroadcastReceiver, ArrayList<b>> f14332e = new HashMap<>();
+    private final HashMap<BroadcastReceiver, ArrayList<b>> f15118e = new HashMap<>();
 
     /* renamed from: f, reason: collision with root package name */
-    private final HashMap<String, ArrayList<b>> f14333f = new HashMap<>();
+    private final HashMap<String, ArrayList<b>> f15119f = new HashMap<>();
 
     /* renamed from: g, reason: collision with root package name */
-    private final ArrayList<a> f14334g = new ArrayList<>();
+    private final ArrayList<a> f15120g = new ArrayList<>();
 
     /* renamed from: h, reason: collision with root package name */
-    private final Handler f14335h;
+    private final Handler f15121h;
 
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        final Intent f14337a;
+        final Intent f15123a;
 
         /* renamed from: b, reason: collision with root package name */
-        final ArrayList<b> f14338b;
+        final ArrayList<b> f15124b;
 
         public a(Intent intent, ArrayList<b> arrayList) {
-            this.f14337a = intent;
-            this.f14338b = arrayList;
+            this.f15123a = intent;
+            this.f15124b = arrayList;
         }
     }
 
     public static final class b {
 
         /* renamed from: a, reason: collision with root package name */
-        final IntentFilter f14344a;
+        final IntentFilter f15130a;
 
         /* renamed from: b, reason: collision with root package name */
-        final BroadcastReceiver f14345b;
+        final BroadcastReceiver f15131b;
 
         /* renamed from: c, reason: collision with root package name */
-        boolean f14346c;
+        boolean f15132c;
 
         /* renamed from: d, reason: collision with root package name */
-        boolean f14347d;
+        boolean f15133d;
 
         public b(IntentFilter intentFilter, BroadcastReceiver broadcastReceiver) {
-            this.f14344a = intentFilter;
-            this.f14345b = broadcastReceiver;
+            this.f15130a = intentFilter;
+            this.f15131b = broadcastReceiver;
         }
 
         public final String toString() {
             StringBuilder sb = new StringBuilder(128);
             sb.append("Receiver{");
-            sb.append(this.f14345b);
+            sb.append(this.f15131b);
             sb.append(" filter=");
-            sb.append(this.f14344a);
-            if (this.f14347d) {
+            sb.append(this.f15130a);
+            if (this.f15133d) {
                 sb.append(" DEAD");
             }
             sb.append("}");
@@ -92,8 +92,8 @@ public final class l {
     }
 
     private l(Context context) {
-        this.f14331d = context;
-        this.f14335h = new Handler(context.getMainLooper()) { // from class: com.anythink.core.common.l.1
+        this.f15117d = context;
+        this.f15121h = new Handler(context.getMainLooper()) { // from class: com.anythink.core.common.l.1
             @Override // android.os.Handler
             public final void handleMessage(Message message) {
                 if (message.what != 1) {
@@ -109,10 +109,10 @@ public final class l {
         l lVar;
         synchronized (i) {
             try {
-                if (f14330j == null) {
-                    f14330j = new l(context.getApplicationContext());
+                if (f15116j == null) {
+                    f15116j = new l(context.getApplicationContext());
                 }
-                lVar = f14330j;
+                lVar = f15116j;
             } catch (Throwable th) {
                 throw th;
             }
@@ -127,21 +127,21 @@ public final class l {
     }
 
     public final void a(BroadcastReceiver broadcastReceiver, IntentFilter intentFilter) {
-        synchronized (this.f14332e) {
+        synchronized (this.f15118e) {
             try {
                 b bVar = new b(intentFilter, broadcastReceiver);
-                ArrayList<b> arrayList = this.f14332e.get(broadcastReceiver);
+                ArrayList<b> arrayList = this.f15118e.get(broadcastReceiver);
                 if (arrayList == null) {
                     arrayList = new ArrayList<>(1);
-                    this.f14332e.put(broadcastReceiver, arrayList);
+                    this.f15118e.put(broadcastReceiver, arrayList);
                 }
                 arrayList.add(bVar);
-                for (int i6 = 0; i6 < intentFilter.countActions(); i6++) {
-                    String action = intentFilter.getAction(i6);
-                    ArrayList<b> arrayList2 = this.f14333f.get(action);
+                for (int i4 = 0; i4 < intentFilter.countActions(); i4++) {
+                    String action = intentFilter.getAction(i4);
+                    ArrayList<b> arrayList2 = this.f15119f.get(action);
                     if (arrayList2 == null) {
                         arrayList2 = new ArrayList<>(1);
-                        this.f14333f.put(action, arrayList2);
+                        this.f15119f.put(action, arrayList2);
                     }
                     arrayList2.add(bVar);
                 }
@@ -152,26 +152,26 @@ public final class l {
     }
 
     public final void a(BroadcastReceiver broadcastReceiver) {
-        synchronized (this.f14332e) {
+        synchronized (this.f15118e) {
             try {
-                ArrayList<b> remove = this.f14332e.remove(broadcastReceiver);
+                ArrayList<b> remove = this.f15118e.remove(broadcastReceiver);
                 if (remove != null) {
                     for (int size = remove.size() - 1; size >= 0; size--) {
                         b bVar = remove.get(size);
-                        bVar.f14347d = true;
-                        for (int i6 = 0; i6 < bVar.f14344a.countActions(); i6++) {
-                            String action = bVar.f14344a.getAction(i6);
-                            ArrayList<b> arrayList = this.f14333f.get(action);
+                        bVar.f15133d = true;
+                        for (int i4 = 0; i4 < bVar.f15130a.countActions(); i4++) {
+                            String action = bVar.f15130a.getAction(i4);
+                            ArrayList<b> arrayList = this.f15119f.get(action);
                             if (arrayList != null) {
                                 for (int size2 = arrayList.size() - 1; size2 >= 0; size2--) {
                                     b bVar2 = arrayList.get(size2);
-                                    if (bVar2.f14345b == broadcastReceiver) {
-                                        bVar2.f14347d = true;
+                                    if (bVar2.f15131b == broadcastReceiver) {
+                                        bVar2.f15133d = true;
                                         arrayList.remove(size2);
                                     }
                                 }
                                 if (arrayList.size() <= 0) {
-                                    this.f14333f.remove(action);
+                                    this.f15119f.remove(action);
                                 }
                             }
                         }
@@ -186,38 +186,38 @@ public final class l {
     public final boolean a(Intent intent) {
         String str;
         String str2;
-        synchronized (this.f14332e) {
+        synchronized (this.f15118e) {
             try {
                 String action = intent.getAction();
-                String resolveTypeIfNeeded = intent.resolveTypeIfNeeded(this.f14331d.getContentResolver());
+                String resolveTypeIfNeeded = intent.resolveTypeIfNeeded(this.f15117d.getContentResolver());
                 Uri data = intent.getData();
                 String scheme = intent.getScheme();
                 Set<String> categories = intent.getCategories();
-                boolean z3 = (intent.getFlags() & 8) != 0;
-                if (z3) {
+                boolean z6 = (intent.getFlags() & 8) != 0;
+                if (z6) {
                     Log.v("LocalBroadcastManager", "Resolving type " + resolveTypeIfNeeded + " scheme " + scheme + " of intent " + intent);
                 }
-                ArrayList<b> arrayList = this.f14333f.get(intent.getAction());
+                ArrayList<b> arrayList = this.f15119f.get(intent.getAction());
                 if (arrayList != null) {
-                    if (z3) {
+                    if (z6) {
                         Log.v("LocalBroadcastManager", "Action list: ".concat(String.valueOf(arrayList)));
                     }
                     ArrayList arrayList2 = null;
-                    int i6 = 0;
-                    while (i6 < arrayList.size()) {
-                        b bVar = arrayList.get(i6);
-                        if (z3) {
-                            Log.v("LocalBroadcastManager", "Matching against filter " + bVar.f14344a);
+                    int i4 = 0;
+                    while (i4 < arrayList.size()) {
+                        b bVar = arrayList.get(i4);
+                        if (z6) {
+                            Log.v("LocalBroadcastManager", "Matching against filter " + bVar.f15130a);
                         }
-                        if (bVar.f14346c) {
-                            if (z3) {
+                        if (bVar.f15132c) {
+                            if (z6) {
                                 Log.v("LocalBroadcastManager", "  Filter's target already added");
                             }
                             str = action;
                         } else {
-                            int match = bVar.f14344a.match(action, resolveTypeIfNeeded, scheme, data, categories, "LocalBroadcastManager");
+                            int match = bVar.f15130a.match(action, resolveTypeIfNeeded, scheme, data, categories, "LocalBroadcastManager");
                             if (match >= 0) {
-                                if (z3) {
+                                if (z6) {
                                     str = action;
                                     Log.v("LocalBroadcastManager", "  Filter matched!  match=0x" + Integer.toHexString(match));
                                 } else {
@@ -227,14 +227,14 @@ public final class l {
                                     arrayList2 = new ArrayList();
                                 }
                                 arrayList2.add(bVar);
-                                bVar.f14346c = true;
+                                bVar.f15132c = true;
                             } else {
                                 str = action;
-                                if (z3) {
+                                if (z6) {
                                     if (match == -4) {
                                         str2 = "category";
                                     } else if (match == -3) {
-                                        str2 = NativeAdvancedJsUtils.f17906p;
+                                        str2 = NativeAdvancedJsUtils.f18693p;
                                     } else if (match == -2) {
                                         str2 = "data";
                                     } else if (match != -1) {
@@ -246,16 +246,16 @@ public final class l {
                                 }
                             }
                         }
-                        i6++;
+                        i4++;
                         action = str;
                     }
                     if (arrayList2 != null) {
-                        for (int i9 = 0; i9 < arrayList2.size(); i9++) {
-                            ((b) arrayList2.get(i9)).f14346c = false;
+                        for (int i6 = 0; i6 < arrayList2.size(); i6++) {
+                            ((b) arrayList2.get(i6)).f15132c = false;
                         }
-                        this.f14334g.add(new a(intent, arrayList2));
-                        if (!this.f14335h.hasMessages(1)) {
-                            this.f14335h.sendEmptyMessage(1);
+                        this.f15120g.add(new a(intent, arrayList2));
+                        if (!this.f15121h.hasMessages(1)) {
+                            this.f15121h.sendEmptyMessage(1);
                         }
                         return true;
                     }
@@ -271,26 +271,26 @@ public final class l {
         int size;
         a[] aVarArr;
         while (true) {
-            synchronized (this.f14332e) {
+            synchronized (this.f15118e) {
                 try {
-                    size = this.f14334g.size();
+                    size = this.f15120g.size();
                     if (size <= 0) {
                         return;
                     }
                     aVarArr = new a[size];
-                    this.f14334g.toArray(aVarArr);
-                    this.f14334g.clear();
+                    this.f15120g.toArray(aVarArr);
+                    this.f15120g.clear();
                 } catch (Throwable th) {
                     throw th;
                 }
             }
-            for (int i6 = 0; i6 < size; i6++) {
-                a aVar = aVarArr[i6];
-                int size2 = aVar.f14338b.size();
-                for (int i9 = 0; i9 < size2; i9++) {
-                    b bVar = aVar.f14338b.get(i9);
-                    if (!bVar.f14347d) {
-                        bVar.f14345b.onReceive(this.f14331d, aVar.f14337a);
+            for (int i4 = 0; i4 < size; i4++) {
+                a aVar = aVarArr[i4];
+                int size2 = aVar.f15124b.size();
+                for (int i6 = 0; i6 < size2; i6++) {
+                    b bVar = aVar.f15124b.get(i6);
+                    if (!bVar.f15133d) {
+                        bVar.f15131b.onReceive(this.f15117d, aVar.f15123a);
                     }
                 }
             }

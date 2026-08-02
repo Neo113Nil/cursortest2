@@ -10,92 +10,92 @@ import java.io.File;
 public class ac {
 
     /* renamed from: f, reason: collision with root package name */
-    private static volatile ac f16626f;
+    private static volatile ac f17413f;
 
     /* renamed from: k, reason: collision with root package name */
-    private volatile String f16635k;
+    private volatile String f17422k;
 
     /* renamed from: l, reason: collision with root package name */
-    private volatile String f16636l;
+    private volatile String f17423l;
 
     /* renamed from: m, reason: collision with root package name */
-    private volatile String f16637m;
+    private volatile String f17424m;
 
     /* renamed from: n, reason: collision with root package name */
-    private volatile String f16638n;
+    private volatile String f17425n;
 
     /* renamed from: p, reason: collision with root package name */
-    private File f16640p;
+    private File f17427p;
 
     /* renamed from: e, reason: collision with root package name */
-    private final String f16631e = "ac";
+    private final String f17418e = "ac";
 
     /* renamed from: g, reason: collision with root package name */
-    private final String f16632g = k.b("aHR0cHM6Ly9kMnExeTd0aXIyODF4Ni5jbG91ZGZyb250Lm5ldC9vbXNkay9vbXNka192MS41LjIuanM=");
+    private final String f17419g = k.b("aHR0cHM6Ly9kMnExeTd0aXIyODF4Ni5jbG91ZGZyb250Lm5ldC9vbXNkay9vbXNka192MS41LjIuanM=");
 
     /* renamed from: h, reason: collision with root package name */
-    private final String f16633h = k.b("aHR0cHM6Ly9kMnExeTd0aXIyODF4Ni5jbG91ZGZyb250Lm5ldC9vbXNkay9vbXNka193ZWJ2aWV3X2luamVjdGlvbl9jb250ZW50LnR4dA==");
+    private final String f17420h = k.b("aHR0cHM6Ly9kMnExeTd0aXIyODF4Ni5jbG91ZGZyb250Lm5ldC9vbXNkay9vbXNka193ZWJ2aWV3X2luamVjdGlvbl9jb250ZW50LnR4dA==");
     private final String i = "omsdk_sdk_js.txt";
 
     /* renamed from: j, reason: collision with root package name */
-    private final String f16634j = "omsdk_webview_injection_content.txt";
+    private final String f17421j = "omsdk_webview_injection_content.txt";
 
     /* renamed from: o, reason: collision with root package name */
-    private final String f16639o = "anythink_omsdk/";
+    private final String f17426o = "anythink_omsdk/";
 
     /* renamed from: a, reason: collision with root package name */
-    boolean f16627a = false;
+    boolean f17414a = false;
 
     /* renamed from: b, reason: collision with root package name */
-    boolean f16628b = false;
+    boolean f17415b = false;
 
     /* renamed from: c, reason: collision with root package name */
-    final String f16629c = "omsdk_sdk_js_url";
+    final String f17416c = "omsdk_sdk_js_url";
 
     /* renamed from: d, reason: collision with root package name */
-    final String f16630d = "omsdk_webview_injection_content_url";
+    final String f17417d = "omsdk_webview_injection_content_url";
 
     /* renamed from: q, reason: collision with root package name */
-    private final Object f16641q = new Object();
+    private final Object f17428q = new Object();
 
     /* renamed from: r, reason: collision with root package name */
-    private String f16642r = "";
+    private String f17429r = "";
 
     /* renamed from: s, reason: collision with root package name */
-    private String f16643s = "";
+    private String f17430s = "";
 
     /* renamed from: t, reason: collision with root package name */
-    private String f16644t = "";
+    private String f17431t = "";
 
     /* renamed from: u, reason: collision with root package name */
-    private String f16645u = "";
+    private String f17432u = "";
 
     /* renamed from: com.anythink.core.common.v.ac$4, reason: invalid class name */
     public class AnonymousClass4 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ String f16652a;
+        final /* synthetic */ String f17439a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ String f16653b;
+        final /* synthetic */ String f17440b;
 
         public AnonymousClass4(String str, String str2) {
-            this.f16652a = str;
-            this.f16653b = str2;
+            this.f17439a = str;
+            this.f17440b = str2;
         }
 
         @Override // java.lang.Runnable
         public final void run() {
-            synchronized (ac.this.f16641q) {
+            synchronized (ac.this.f17428q) {
                 try {
-                    if (!ac.this.f16640p.exists()) {
-                        ac.this.f16640p.mkdirs();
+                    if (!ac.this.f17427p.exists()) {
+                        ac.this.f17427p.mkdirs();
                     }
-                    File file = new File(ac.this.f16640p, this.f16652a);
+                    File file = new File(ac.this.f17427p, this.f17439a);
                     if (file.exists()) {
                         file.delete();
                     }
-                    w.a(this.f16653b.getBytes(), file);
+                    w.a(this.f17440b.getBytes(), file);
                 } catch (Throwable unused) {
                 }
             }
@@ -103,7 +103,7 @@ public class ac {
     }
 
     public static boolean d() {
-        return D.y.h().b(com.anythink.core.common.d.t.b().p()).aK() == 1;
+        return com.IceFishing.LiveIceFishing.k.l().b(com.anythink.core.common.d.t.b().p()).aK() == 1;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -115,7 +115,7 @@ public class ac {
                 throw th;
             }
         }
-        this.f16642r = af.c(context, u.b.f12847a, "omsdk_sdk_js_url", "");
+        this.f17429r = af.c(context, u.b.f13633a, "omsdk_sdk_js_url", "");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -127,41 +127,41 @@ public class ac {
                 throw th;
             }
         }
-        this.f16644t = af.c(context, u.b.f12847a, "omsdk_webview_injection_content_url", "");
+        this.f17431t = af.c(context, u.b.f13633a, "omsdk_webview_injection_content_url", "");
     }
 
     public final void c(final Context context) {
         if (b(context)) {
-            this.f16627a = true;
+            this.f17414a = true;
             try {
-                new com.anythink.core.common.m.h(this.f16635k).a(1, new com.anythink.core.common.m.q() { // from class: com.anythink.core.common.v.ac.2
+                new com.anythink.core.common.m.h(this.f17422k).a(1, new com.anythink.core.common.m.q() { // from class: com.anythink.core.common.v.ac.2
                     @Override // com.anythink.core.common.m.q
                     public final void onLoadCanceled(int i) {
-                        ac.this.f16627a = false;
+                        ac.this.f17414a = false;
                     }
 
                     @Override // com.anythink.core.common.m.q
                     public final void onLoadError(int i, String str, AdError adError) {
                         ac acVar = ac.this;
-                        acVar.f16643s = acVar.f16635k;
+                        acVar.f17430s = acVar.f17422k;
                         ac acVar2 = ac.this;
-                        acVar2.f16627a = false;
-                        com.anythink.core.common.u.e.a(1, acVar2.f16635k, adError != null ? adError.printStackTrace() : "");
+                        acVar2.f17414a = false;
+                        com.anythink.core.common.u.e.a(1, acVar2.f17422k, adError != null ? adError.printStackTrace() : "");
                     }
 
                     @Override // com.anythink.core.common.m.q
                     public final void onLoadFinish(int i, Object obj) {
                         String obj2 = obj != null ? obj.toString() : "";
-                        String unused = ac.this.f16631e;
-                        String unused2 = ac.this.f16635k;
+                        String unused = ac.this.f17418e;
+                        String unused2 = ac.this.f17422k;
                         obj2.length();
                         if (!TextUtils.isEmpty(obj2)) {
                             ac acVar = ac.this;
-                            acVar.a(context, acVar.f16635k);
-                            ac.this.f16636l = obj2;
+                            acVar.a(context, acVar.f17422k);
+                            ac.this.f17423l = obj2;
                             ac.a(ac.this, obj2, "omsdk_sdk_js.txt");
                         }
-                        ac.this.f16627a = false;
+                        ac.this.f17414a = false;
                     }
 
                     @Override // com.anythink.core.common.m.q
@@ -169,43 +169,43 @@ public class ac {
                     }
                 });
             } catch (Throwable unused) {
-                this.f16627a = false;
+                this.f17414a = false;
             }
         }
     }
 
     public final void e(final Context context) {
         if (d(context)) {
-            this.f16628b = true;
+            this.f17415b = true;
             try {
-                new com.anythink.core.common.m.h(this.f16637m).a(1, new com.anythink.core.common.m.q() { // from class: com.anythink.core.common.v.ac.3
+                new com.anythink.core.common.m.h(this.f17424m).a(1, new com.anythink.core.common.m.q() { // from class: com.anythink.core.common.v.ac.3
                     @Override // com.anythink.core.common.m.q
                     public final void onLoadCanceled(int i) {
-                        ac.this.f16628b = false;
+                        ac.this.f17415b = false;
                     }
 
                     @Override // com.anythink.core.common.m.q
                     public final void onLoadError(int i, String str, AdError adError) {
                         ac acVar = ac.this;
-                        acVar.f16645u = acVar.f16637m;
+                        acVar.f17432u = acVar.f17424m;
                         ac acVar2 = ac.this;
-                        acVar2.f16628b = false;
-                        com.anythink.core.common.u.e.a(2, acVar2.f16637m, adError != null ? adError.printStackTrace() : "");
+                        acVar2.f17415b = false;
+                        com.anythink.core.common.u.e.a(2, acVar2.f17424m, adError != null ? adError.printStackTrace() : "");
                     }
 
                     @Override // com.anythink.core.common.m.q
                     public final void onLoadFinish(int i, Object obj) {
                         String obj2 = obj != null ? obj.toString() : "";
-                        String unused = ac.this.f16631e;
-                        String unused2 = ac.this.f16637m;
+                        String unused = ac.this.f17418e;
+                        String unused2 = ac.this.f17424m;
                         obj2.length();
                         if (!TextUtils.isEmpty(obj2)) {
                             ac acVar = ac.this;
-                            acVar.b(context, acVar.f16637m);
-                            ac.this.f16638n = obj2;
+                            acVar.b(context, acVar.f17424m);
+                            ac.this.f17425n = obj2;
                             ac.a(ac.this, obj2, "omsdk_webview_injection_content.txt");
                         }
-                        ac.this.f16628b = false;
+                        ac.this.f17415b = false;
                     }
 
                     @Override // com.anythink.core.common.m.q
@@ -213,120 +213,120 @@ public class ac {
                     }
                 });
             } catch (Throwable unused) {
-                this.f16628b = false;
+                this.f17415b = false;
             }
         }
     }
 
     private synchronized String f() {
-        return this.f16644t;
+        return this.f17431t;
     }
 
     public static ac a() {
-        if (f16626f == null) {
+        if (f17413f == null) {
             synchronized (ac.class) {
                 try {
-                    if (f16626f == null) {
-                        f16626f = new ac();
+                    if (f17413f == null) {
+                        f17413f = new ac();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16626f;
+        return f17413f;
     }
 
     public final boolean b(Context context) {
-        boolean z3;
+        boolean z6;
         String str;
-        if (this.f16627a) {
+        if (this.f17414a) {
             return false;
         }
-        com.anythink.core.d.b g4 = D.y.g(com.anythink.core.d.d.a(context));
-        if (g4 != null && !g4.S()) {
-            z3 = d();
+        com.anythink.core.d.b k9 = com.IceFishing.LiveIceFishing.k.k(com.anythink.core.d.d.a(context));
+        if (k9 != null && !k9.S()) {
+            z6 = d();
         } else {
             com.anythink.core.common.d.t.b();
-            z3 = true;
+            z6 = true;
         }
-        if (!z3) {
+        if (!z6) {
             return false;
         }
-        if (g4 != null && !g4.S()) {
-            str = g4.aM();
+        if (k9 != null && !k9.S()) {
+            str = k9.aM();
         } else {
             str = "";
         }
         if (TextUtils.isEmpty(str)) {
-            str = this.f16632g;
+            str = this.f17419g;
         }
-        if (TextUtils.isEmpty(str) || TextUtils.equals(this.f16643s, str)) {
+        if (TextUtils.isEmpty(str) || TextUtils.equals(this.f17430s, str)) {
             return false;
         }
         String e9 = e();
         if (!TextUtils.isEmpty(e9) && TextUtils.equals(e9, str)) {
-            if (TextUtils.isEmpty(this.f16636l)) {
-                this.f16636l = a("omsdk_sdk_js.txt");
+            if (TextUtils.isEmpty(this.f17423l)) {
+                this.f17423l = a("omsdk_sdk_js.txt");
             }
             return false;
         }
-        this.f16635k = str;
+        this.f17422k = str;
         return true;
     }
 
     private synchronized String e() {
-        return this.f16642r;
+        return this.f17429r;
     }
 
     public final String c() {
         if (!d()) {
             return "";
         }
-        return this.f16638n;
+        return this.f17425n;
     }
 
     public final boolean d(Context context) {
-        boolean z3;
+        boolean z6;
         String str;
-        if (this.f16628b) {
+        if (this.f17415b) {
             return false;
         }
-        com.anythink.core.d.b g4 = D.y.g(com.anythink.core.d.d.a(context));
-        if (g4 != null && !g4.S()) {
-            z3 = d();
+        com.anythink.core.d.b k9 = com.IceFishing.LiveIceFishing.k.k(com.anythink.core.d.d.a(context));
+        if (k9 != null && !k9.S()) {
+            z6 = d();
         } else {
             com.anythink.core.common.d.t.b();
-            z3 = true;
+            z6 = true;
         }
-        if (!z3) {
+        if (!z6) {
             return false;
         }
-        if (g4 != null && !g4.S()) {
-            str = g4.aL();
+        if (k9 != null && !k9.S()) {
+            str = k9.aL();
         } else {
             str = "";
         }
         if (TextUtils.isEmpty(str)) {
-            str = this.f16633h;
+            str = this.f17420h;
         }
-        if (TextUtils.isEmpty(str) || TextUtils.equals(this.f16645u, str)) {
+        if (TextUtils.isEmpty(str) || TextUtils.equals(this.f17432u, str)) {
             return false;
         }
-        String f3 = f();
-        if (!TextUtils.isEmpty(f3) && TextUtils.equals(f3, str)) {
-            if (TextUtils.isEmpty(this.f16638n)) {
-                this.f16638n = a("omsdk_webview_injection_content.txt");
+        String f2 = f();
+        if (!TextUtils.isEmpty(f2) && TextUtils.equals(f2, str)) {
+            if (TextUtils.isEmpty(this.f17425n)) {
+                this.f17425n = a("omsdk_webview_injection_content.txt");
             }
             return false;
         }
-        this.f16637m = str;
+        this.f17424m = str;
         return true;
     }
 
     public final void a(final Context context) {
         try {
-            this.f16640p = new File(com.anythink.core.common.d.t.b().g().getFilesDir().getAbsoluteFile().getAbsolutePath() + "/anythink_omsdk/");
+            this.f17427p = new File(com.anythink.core.common.d.t.b().g().getFilesDir().getAbsoluteFile().getAbsolutePath() + "/anythink_omsdk/");
         } catch (Throwable unused) {
         }
         com.anythink.core.common.v.b.b.a().b(new Runnable() { // from class: com.anythink.core.common.v.ac.1
@@ -335,9 +335,9 @@ public class ac {
                 ac.this.f(context);
                 ac.this.g(context);
                 ac acVar = ac.this;
-                acVar.f16636l = acVar.a("omsdk_sdk_js.txt");
+                acVar.f17423l = acVar.a("omsdk_sdk_js.txt");
                 ac acVar2 = ac.this;
-                acVar2.f16638n = acVar2.a("omsdk_webview_injection_content.txt");
+                acVar2.f17425n = acVar2.a("omsdk_webview_injection_content.txt");
             }
         }, 2);
     }
@@ -345,10 +345,10 @@ public class ac {
     /* JADX INFO: Access modifiers changed from: private */
     public synchronized String a(String str) {
         String str2;
-        synchronized (this.f16641q) {
+        synchronized (this.f17428q) {
             str2 = "";
             try {
-                File file = new File(this.f16640p, str);
+                File file = new File(this.f17427p, str);
                 if (file.exists() && file.canRead()) {
                     str2 = w.a(file);
                 }
@@ -364,15 +364,15 @@ public class ac {
 
     /* JADX INFO: Access modifiers changed from: private */
     public synchronized void a(Context context, String str) {
-        this.f16642r = str;
-        af.b(context, u.b.f12847a, "omsdk_sdk_js_url", str);
+        this.f17429r = str;
+        af.b(context, u.b.f13633a, "omsdk_sdk_js_url", str);
     }
 
     public final String b() {
         if (!d()) {
             return "";
         }
-        return this.f16636l;
+        return this.f17423l;
     }
 
     public static /* synthetic */ void a(ac acVar, String str, String str2) {
@@ -381,7 +381,7 @@ public class ac {
 
     /* JADX INFO: Access modifiers changed from: private */
     public synchronized void b(Context context, String str) {
-        this.f16644t = str;
-        af.b(context, u.b.f12847a, "omsdk_webview_injection_content_url", str);
+        this.f17431t = str;
+        af.b(context, u.b.f13633a, "omsdk_webview_injection_content_url", str);
     }
 }

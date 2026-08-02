@@ -12,24 +12,24 @@ import t.l;
 public abstract class h {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final l f40327a = new l();
+    public static final l f40138a = new l();
 
     /* renamed from: b, reason: collision with root package name */
-    public static final Object f40328b = new Object();
+    public static final Object f40139b = new Object();
 
     /* renamed from: c, reason: collision with root package name */
-    public static a4.e f40329c = null;
+    public static G3.e f40140c = null;
 
     public static long a(Context context) {
         PackageManager packageManager = context.getApplicationContext().getPackageManager();
         return Build.VERSION.SDK_INT >= 33 ? f.a(packageManager, context).lastUpdateTime : packageManager.getPackageInfo(context.getPackageName(), 0).lastUpdateTime;
     }
 
-    public static a4.e b() {
-        a4.e eVar = new a4.e();
-        f40329c = eVar;
-        f40327a.j(eVar);
-        return f40329c;
+    public static G3.e b() {
+        G3.e eVar = new G3.e(24);
+        f40140c = eVar;
+        f40138a.j(eVar);
+        return f40140c;
     }
 
     /* JADX WARN: Can't wrap try/catch for region: R(17:33|34|35|(2:75|76)(1:37)|38|(9:45|(1:49)|(1:56)|57|(2:65|66)|61|62|63|64)|(1:72)(1:(1:74))|(1:49)|(3:51|54|56)|57|(1:59)|65|66|61|62|63|64) */
@@ -40,37 +40,37 @@ public abstract class h {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static void c(Context context, boolean z3) {
-        boolean z6;
+    public static void c(Context context, boolean z6) {
+        boolean z9;
         g a9;
         g gVar;
         int i;
-        if (z3 || f40329c == null) {
-            synchronized (f40328b) {
-                if (!z3) {
-                    if (f40329c != null) {
+        if (z6 || f40140c == null) {
+            synchronized (f40139b) {
+                if (!z6) {
+                    if (f40140c != null) {
                         return;
                     }
                 }
-                int i6 = 0;
+                int i4 = 0;
                 try {
                     AssetFileDescriptor openFd = context.getAssets().openFd("dexopt/baseline.prof");
                     try {
-                        z6 = openFd.getLength() > 0;
+                        z9 = openFd.getLength() > 0;
                         openFd.close();
                     } finally {
                     }
                 } catch (IOException unused) {
-                    z6 = false;
+                    z9 = false;
                 }
-                int i9 = Build.VERSION.SDK_INT;
-                if (i9 >= 28 && i9 != 30) {
+                int i6 = Build.VERSION.SDK_INT;
+                if (i6 >= 28 && i6 != 30) {
                     File file = new File(new File("/data/misc/profiles/ref/", context.getPackageName()), "primary.prof");
                     long length = file.length();
-                    boolean z9 = file.exists() && length > 0;
+                    boolean z10 = file.exists() && length > 0;
                     File file2 = new File(new File("/data/misc/profiles/cur/0/", context.getPackageName()), "primary.prof");
                     long length2 = file2.length();
-                    boolean z10 = file2.exists() && length2 > 0;
+                    boolean z11 = file2.exists() && length2 > 0;
                     try {
                         long a10 = a(context);
                         File file3 = new File(context.getFilesDir(), "profileInstalled");
@@ -84,33 +84,33 @@ public abstract class h {
                         } else {
                             a9 = null;
                         }
-                        if (a9 != null && a9.f40325c == a10 && (i = a9.f40324b) != 2) {
-                            i6 = i;
-                            if (z3 && z10 && i6 != 1) {
-                                i6 = 2;
+                        if (a9 != null && a9.f40136c == a10 && (i = a9.f40135b) != 2) {
+                            i4 = i;
+                            if (z6 && z11 && i4 != 1) {
+                                i4 = 2;
                             }
-                            if (a9 != null && a9.f40324b == 2 && i6 == 1 && length < a9.f40326d) {
-                                i6 = 3;
+                            if (a9 != null && a9.f40135b == 2 && i4 == 1 && length < a9.f40137d) {
+                                i4 = 3;
                             }
-                            gVar = new g(a10, length2, 1, i6);
+                            gVar = new g(a10, length2, 1, i4);
                             if (a9 != null || !a9.equals(gVar)) {
                                 gVar.b(file3);
                             }
                             b();
                             return;
                         }
-                        if (z9) {
-                            i6 = 1;
-                        } else if (z10) {
-                            i6 = 2;
+                        if (z10) {
+                            i4 = 1;
+                        } else if (z11) {
+                            i4 = 2;
                         }
-                        if (z3) {
-                            i6 = 2;
+                        if (z6) {
+                            i4 = 2;
                         }
                         if (a9 != null) {
-                            i6 = 3;
+                            i4 = 3;
                         }
-                        gVar = new g(a10, length2, 1, i6);
+                        gVar = new g(a10, length2, 1, i4);
                         if (a9 != null) {
                         }
                         gVar.b(file3);

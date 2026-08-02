@@ -28,31 +28,31 @@ import java.util.List;
 public abstract class BaseAnimPlayerView extends BasePlayerView {
 
     /* renamed from: A, reason: collision with root package name */
-    private boolean f10436A;
+    private boolean f11222A;
 
     /* renamed from: a, reason: collision with root package name */
-    protected final String f10437a;
+    protected final String f11223a;
 
     /* renamed from: b, reason: collision with root package name */
-    long f10438b;
+    long f11224b;
 
     /* renamed from: c, reason: collision with root package name */
-    long f10439c;
+    long f11225c;
 
     /* renamed from: d, reason: collision with root package name */
-    protected List<Bitmap> f10440d;
+    protected List<Bitmap> f11226d;
 
     /* renamed from: e, reason: collision with root package name */
-    protected String f10441e;
+    protected String f11227e;
 
     /* renamed from: f, reason: collision with root package name */
-    protected RecycleImageView f10442f;
+    protected RecycleImageView f11228f;
 
     /* renamed from: g, reason: collision with root package name */
-    protected WrapRoundImageView f10443g;
+    protected WrapRoundImageView f11229g;
 
     /* renamed from: h, reason: collision with root package name */
-    private boolean f10444h;
+    private boolean f11230h;
 
     /* renamed from: com.anythink.basead.ui.animplayerview.BaseAnimPlayerView$3, reason: invalid class name */
     public class AnonymousClass3 implements Runnable {
@@ -64,10 +64,10 @@ public abstract class BaseAnimPlayerView extends BasePlayerView {
             Handler handler;
             while (true) {
                 BaseAnimPlayerView baseAnimPlayerView = BaseAnimPlayerView.this;
-                if (!baseAnimPlayerView.f10466r) {
+                if (!baseAnimPlayerView.f11252r) {
                     return;
                 }
-                if (baseAnimPlayerView.f10468t || (handler = baseAnimPlayerView.f10470v) == null) {
+                if (baseAnimPlayerView.f11254t || (handler = baseAnimPlayerView.f11256v) == null) {
                     try {
                         Thread.sleep(10L);
                     } catch (Throwable th) {
@@ -90,70 +90,70 @@ public abstract class BaseAnimPlayerView extends BasePlayerView {
 
     public BaseAnimPlayerView(Context context) {
         super(context);
-        this.f10437a = getClass().getSimpleName();
-        this.f10438b = 0L;
-        this.f10439c = 0L;
-        this.f10441e = "";
-        this.f10444h = false;
-        this.f10436A = false;
+        this.f11223a = getClass().getSimpleName();
+        this.f11224b = 0L;
+        this.f11225c = 0L;
+        this.f11227e = "";
+        this.f11230h = false;
+        this.f11222A = false;
         i();
     }
 
     public static /* synthetic */ boolean b(BaseAnimPlayerView baseAnimPlayerView) {
-        baseAnimPlayerView.f10444h = false;
+        baseAnimPlayerView.f11230h = false;
         return false;
     }
 
     private void i() {
-        this.f10470v = new Handler(Looper.getMainLooper()) { // from class: com.anythink.basead.ui.animplayerview.BaseAnimPlayerView.2
+        this.f11256v = new Handler(Looper.getMainLooper()) { // from class: com.anythink.basead.ui.animplayerview.BaseAnimPlayerView.2
             @Override // android.os.Handler
             public final void handleMessage(Message message) {
                 BaseAnimPlayerView baseAnimPlayerView = BaseAnimPlayerView.this;
-                if (baseAnimPlayerView.f10471w != null && baseAnimPlayerView.f10466r) {
-                    long elapsedRealtime = SystemClock.elapsedRealtime() + baseAnimPlayerView.f10438b;
+                if (baseAnimPlayerView.f11257w != null && baseAnimPlayerView.f11252r) {
+                    long elapsedRealtime = SystemClock.elapsedRealtime() + baseAnimPlayerView.f11224b;
                     BaseAnimPlayerView baseAnimPlayerView2 = BaseAnimPlayerView.this;
-                    baseAnimPlayerView.f10458j = elapsedRealtime - baseAnimPlayerView2.f10439c;
-                    if (!baseAnimPlayerView2.f10467s && !baseAnimPlayerView2.f10468t) {
-                        baseAnimPlayerView2.f10467s = true;
-                        BasePlayerView.a aVar = baseAnimPlayerView2.f10471w;
+                    baseAnimPlayerView.f11244j = elapsedRealtime - baseAnimPlayerView2.f11225c;
+                    if (!baseAnimPlayerView2.f11253s && !baseAnimPlayerView2.f11254t) {
+                        baseAnimPlayerView2.f11253s = true;
+                        BasePlayerView.a aVar = baseAnimPlayerView2.f11257w;
                         if (aVar != null) {
                             aVar.a();
                         }
                     }
                     BaseAnimPlayerView baseAnimPlayerView3 = BaseAnimPlayerView.this;
-                    BasePlayerView.a aVar2 = baseAnimPlayerView3.f10471w;
+                    BasePlayerView.a aVar2 = baseAnimPlayerView3.f11257w;
                     if (aVar2 != null) {
-                        aVar2.a(baseAnimPlayerView3.f10458j);
+                        aVar2.a(baseAnimPlayerView3.f11244j);
                     }
                     BaseAnimPlayerView baseAnimPlayerView4 = BaseAnimPlayerView.this;
-                    if (!baseAnimPlayerView4.f10462n && baseAnimPlayerView4.f10458j >= baseAnimPlayerView4.f10459k) {
-                        baseAnimPlayerView4.f10462n = true;
-                        BasePlayerView.a aVar3 = baseAnimPlayerView4.f10471w;
+                    if (!baseAnimPlayerView4.f11248n && baseAnimPlayerView4.f11244j >= baseAnimPlayerView4.f11245k) {
+                        baseAnimPlayerView4.f11248n = true;
+                        BasePlayerView.a aVar3 = baseAnimPlayerView4.f11257w;
                         if (aVar3 != null) {
                             aVar3.a(25);
                         }
-                    } else if (!baseAnimPlayerView4.f10463o && baseAnimPlayerView4.f10458j >= baseAnimPlayerView4.f10460l) {
-                        baseAnimPlayerView4.f10463o = true;
-                        BasePlayerView.a aVar4 = baseAnimPlayerView4.f10471w;
+                    } else if (!baseAnimPlayerView4.f11249o && baseAnimPlayerView4.f11244j >= baseAnimPlayerView4.f11246l) {
+                        baseAnimPlayerView4.f11249o = true;
+                        BasePlayerView.a aVar4 = baseAnimPlayerView4.f11257w;
                         if (aVar4 != null) {
                             aVar4.a(50);
                         }
-                    } else if (!baseAnimPlayerView4.f10464p && baseAnimPlayerView4.f10458j >= baseAnimPlayerView4.f10461m) {
-                        baseAnimPlayerView4.f10464p = true;
-                        BasePlayerView.a aVar5 = baseAnimPlayerView4.f10471w;
+                    } else if (!baseAnimPlayerView4.f11250p && baseAnimPlayerView4.f11244j >= baseAnimPlayerView4.f11247m) {
+                        baseAnimPlayerView4.f11250p = true;
+                        BasePlayerView.a aVar5 = baseAnimPlayerView4.f11257w;
                         if (aVar5 != null) {
                             aVar5.a(75);
                         }
                     }
                     BaseAnimPlayerView baseAnimPlayerView5 = BaseAnimPlayerView.this;
-                    if (baseAnimPlayerView5.f10468t || baseAnimPlayerView5.f10458j < baseAnimPlayerView5.i) {
+                    if (baseAnimPlayerView5.f11254t || baseAnimPlayerView5.f11244j < baseAnimPlayerView5.i) {
                         return;
                     }
                     baseAnimPlayerView5.k();
                     BaseAnimPlayerView.b(BaseAnimPlayerView.this);
                     BaseAnimPlayerView baseAnimPlayerView6 = BaseAnimPlayerView.this;
-                    baseAnimPlayerView6.f10468t = true;
-                    BasePlayerView.a aVar6 = baseAnimPlayerView6.f10471w;
+                    baseAnimPlayerView6.f11254t = true;
+                    BasePlayerView.a aVar6 = baseAnimPlayerView6.f11257w;
                     if (aVar6 != null) {
                         aVar6.c();
                     }
@@ -164,20 +164,20 @@ public abstract class BaseAnimPlayerView extends BasePlayerView {
     }
 
     private void j() {
-        if (this.f10469u != null) {
+        if (this.f11255u != null) {
             return;
         }
-        this.f10466r = true;
+        this.f11252r = true;
         Thread thread = new Thread(new AnonymousClass3());
-        this.f10469u = thread;
+        this.f11255u = thread;
         thread.setName("anythink_type_anim_player_progress");
-        this.f10469u.start();
+        this.f11255u.start();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void k() {
-        this.f10466r = false;
-        this.f10469u = null;
+        this.f11252r = false;
+        this.f11255u = null;
     }
 
     public abstract void a();
@@ -193,8 +193,8 @@ public abstract class BaseAnimPlayerView extends BasePlayerView {
     }
 
     public void f() {
-        if (TextUtils.isEmpty(this.f10441e)) {
-            a(g.a(g.f6180l, g.f6164T));
+        if (TextUtils.isEmpty(this.f11227e)) {
+            a(g.a(g.f6966l, g.f6950T));
         }
     }
 
@@ -204,7 +204,7 @@ public abstract class BaseAnimPlayerView extends BasePlayerView {
 
     @Override // com.anythink.basead.ui.animplayerview.BasePlayerView
     public long getCurrentPosition() {
-        return this.f10458j;
+        return this.f11244j;
     }
 
     @Override // com.anythink.basead.ui.animplayerview.BasePlayerView
@@ -214,45 +214,45 @@ public abstract class BaseAnimPlayerView extends BasePlayerView {
 
     @Override // com.anythink.basead.ui.animplayerview.BasePlayerView
     public boolean hasVideo() {
-        return this.f10472x != null;
+        return this.f11258x != null;
     }
 
     @Override // com.anythink.basead.ui.animplayerview.BasePlayerView
-    public void init(w wVar, x xVar, boolean z3, List<Bitmap> list, e eVar) {
-        super.init(wVar, xVar, z3, list, eVar);
-        this.f10440d = list;
-        this.f10441e = wVar.B();
-        long max = Math.max(this.f10473y.f14168o.ao(), e());
+    public void init(w wVar, x xVar, boolean z6, List<Bitmap> list, e eVar) {
+        super.init(wVar, xVar, z6, list, eVar);
+        this.f11226d = list;
+        this.f11227e = wVar.B();
+        long max = Math.max(this.f11259y.f14954o.ao(), e());
         this.i = max;
-        this.f10459k = Math.round(max * 0.25f);
-        this.f10460l = Math.round(this.i * 0.5f);
-        this.f10461m = Math.round(this.i * 0.75f);
-        BasePlayerView.a aVar = this.f10471w;
+        this.f11245k = Math.round(max * 0.25f);
+        this.f11246l = Math.round(this.i * 0.5f);
+        this.f11247m = Math.round(this.i * 0.75f);
+        BasePlayerView.a aVar = this.f11257w;
         if (aVar != null) {
             aVar.b(this.i);
         }
         setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.animplayerview.BaseAnimPlayerView.1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                BasePlayerView.a aVar2 = BaseAnimPlayerView.this.f10471w;
+                BasePlayerView.a aVar2 = BaseAnimPlayerView.this.f11257w;
                 if (aVar2 != null) {
                     aVar2.b(1);
                 }
             }
         });
         f();
-        List<Bitmap> list2 = this.f10440d;
+        List<Bitmap> list2 = this.f11226d;
         (list2 == null ? "null" : Integer.valueOf(list2.size())).toString();
     }
 
     @Override // com.anythink.basead.ui.animplayerview.BasePlayerView
     public boolean isMute() {
-        return this.f10465q;
+        return this.f11251q;
     }
 
     @Override // com.anythink.basead.ui.animplayerview.BasePlayerView
     public boolean isPlaying() {
-        return this.f10444h;
+        return this.f11230h;
     }
 
     @Override // android.view.ViewGroup, android.view.View
@@ -263,10 +263,10 @@ public abstract class BaseAnimPlayerView extends BasePlayerView {
 
     @Override // com.anythink.basead.ui.animplayerview.BasePlayerView
     public void pause() {
-        if (this.f10444h) {
-            this.f10438b = (SystemClock.elapsedRealtime() - this.f10439c) + this.f10438b;
+        if (this.f11230h) {
+            this.f11224b = (SystemClock.elapsedRealtime() - this.f11225c) + this.f11224b;
         }
-        this.f10444h = false;
+        this.f11230h = false;
         k();
         b();
     }
@@ -275,7 +275,7 @@ public abstract class BaseAnimPlayerView extends BasePlayerView {
     public void release(int i) {
         k();
         h();
-        Handler handler = this.f10470v;
+        Handler handler = this.f11256v;
         if (handler != null) {
             handler.removeCallbacksAndMessages(null);
         }
@@ -284,61 +284,61 @@ public abstract class BaseAnimPlayerView extends BasePlayerView {
 
     @Override // com.anythink.basead.ui.animplayerview.BasePlayerView
     public void setListener(BasePlayerView.a aVar) {
-        this.f10471w = aVar;
+        this.f11257w = aVar;
     }
 
     @Override // com.anythink.basead.ui.animplayerview.BasePlayerView
-    public void setMute(boolean z3) {
-        this.f10465q = z3;
+    public void setMute(boolean z6) {
+        this.f11251q = z6;
     }
 
     @Override // com.anythink.basead.ui.animplayerview.BasePlayerView
     public void start() {
-        if (this.f10436A) {
+        if (this.f11222A) {
             return;
         }
-        this.f10444h = !this.f10468t;
-        this.f10439c = SystemClock.elapsedRealtime();
-        if (this.f10469u == null) {
-            this.f10466r = true;
+        this.f11230h = !this.f11254t;
+        this.f11225c = SystemClock.elapsedRealtime();
+        if (this.f11255u == null) {
+            this.f11252r = true;
             Thread thread = new Thread(new AnonymousClass3());
-            this.f10469u = thread;
+            this.f11255u = thread;
             thread.setName("anythink_type_anim_player_progress");
-            this.f10469u.start();
+            this.f11255u.start();
         }
-        if (this.f10444h) {
+        if (this.f11230h) {
             a();
         }
     }
 
     @Override // com.anythink.basead.ui.animplayerview.BasePlayerView
     public void stop() {
-        this.f10444h = false;
+        this.f11230h = false;
         k();
         c();
         h();
     }
 
-    public final void a(final int i, final int i6) {
+    public final void a(final int i, final int i4) {
         RecycleImageView recycleImageView = new RecycleImageView(getContext());
-        this.f10442f = recycleImageView;
+        this.f11228f = recycleImageView;
         recycleImageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        addView(this.f10442f, -1, -1);
-        this.f10443g = new WrapRoundImageView(getContext());
+        addView(this.f11228f, -1, -1);
+        this.f11229g = new WrapRoundImageView(getContext());
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -1);
         layoutParams.addRule(13);
-        this.f10443g.setScaleType(ImageView.ScaleType.FIT_CENTER);
-        addView(this.f10443g, layoutParams);
-        com.anythink.core.common.res.b.a(getContext()).a(new com.anythink.core.common.res.e(1, this.f10441e), i, i6, new b.a() { // from class: com.anythink.basead.ui.animplayerview.BaseAnimPlayerView.4
+        this.f11229g.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        addView(this.f11229g, layoutParams);
+        com.anythink.core.common.res.b.a(getContext()).a(new com.anythink.core.common.res.e(1, this.f11227e), i, i4, new b.a() { // from class: com.anythink.basead.ui.animplayerview.BaseAnimPlayerView.4
             @Override // com.anythink.core.common.res.b.a
             public final void onFail(String str, String str2) {
-                BaseAnimPlayerView.this.a(g.a(g.f6180l, g.f6164T));
+                BaseAnimPlayerView.this.a(g.a(g.f6966l, g.f6950T));
             }
 
             @Override // com.anythink.core.common.res.b.a
             public final void onSuccess(String str, Bitmap bitmap) {
-                if (TextUtils.equals(str, BaseAnimPlayerView.this.f10441e)) {
-                    BaseAnimPlayerView.this.f10443g.setBitmapAndResize(bitmap, i, i6);
+                if (TextUtils.equals(str, BaseAnimPlayerView.this.f11227e)) {
+                    BaseAnimPlayerView.this.f11229g.setBitmapAndResize(bitmap, i, i4);
                     h.a(BaseAnimPlayerView.this.getContext(), bitmap, new h.a() { // from class: com.anythink.basead.ui.animplayerview.BaseAnimPlayerView.4.1
                         @Override // com.anythink.core.common.v.h.a
                         public final void a() {
@@ -346,14 +346,14 @@ public abstract class BaseAnimPlayerView extends BasePlayerView {
 
                         @Override // com.anythink.core.common.v.h.a
                         public final void a(Bitmap bitmap2) {
-                            BaseAnimPlayerView.this.f10442f.setImageBitmap(bitmap2);
+                            BaseAnimPlayerView.this.f11228f.setImageBitmap(bitmap2);
                         }
                     });
                     AlphaAnimation alphaAnimation = new AlphaAnimation(0.3f, 1.0f);
                     alphaAnimation.setFillAfter(true);
                     alphaAnimation.setDuration(100L);
-                    BaseAnimPlayerView.this.f10443g.startAnimation(alphaAnimation);
-                    BaseAnimPlayerView.this.f10442f.startAnimation(alphaAnimation);
+                    BaseAnimPlayerView.this.f11229g.startAnimation(alphaAnimation);
+                    BaseAnimPlayerView.this.f11228f.startAnimation(alphaAnimation);
                 }
             }
         });
@@ -361,29 +361,29 @@ public abstract class BaseAnimPlayerView extends BasePlayerView {
 
     public BaseAnimPlayerView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f10437a = getClass().getSimpleName();
-        this.f10438b = 0L;
-        this.f10439c = 0L;
-        this.f10441e = "";
-        this.f10444h = false;
-        this.f10436A = false;
+        this.f11223a = getClass().getSimpleName();
+        this.f11224b = 0L;
+        this.f11225c = 0L;
+        this.f11227e = "";
+        this.f11230h = false;
+        this.f11222A = false;
         i();
     }
 
     @Override // com.anythink.basead.ui.animplayerview.BasePlayerView
     public final void a(f fVar) {
-        this.f10436A = true;
+        this.f11222A = true;
         super.a(fVar);
     }
 
     public BaseAnimPlayerView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f10437a = getClass().getSimpleName();
-        this.f10438b = 0L;
-        this.f10439c = 0L;
-        this.f10441e = "";
-        this.f10444h = false;
-        this.f10436A = false;
+        this.f11223a = getClass().getSimpleName();
+        this.f11224b = 0L;
+        this.f11225c = 0L;
+        this.f11227e = "";
+        this.f11230h = false;
+        this.f11222A = false;
         i();
     }
 }

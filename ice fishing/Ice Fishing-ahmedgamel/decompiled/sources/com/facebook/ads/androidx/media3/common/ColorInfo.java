@@ -7,7 +7,7 @@ import com.anythink.core.common.s.a.c;
 import com.facebook.ads.androidx.media3.common.ColorInfo;
 import com.instagram.common.viewpoint.core.AnonymousClass23;
 import com.instagram.common.viewpoint.core.AnonymousClass24;
-import com.instagram.common.viewpoint.core.C05782a;
+import com.instagram.common.viewpoint.core.C05982a;
 import com.instagram.common.viewpoint.core.C5C;
 import java.util.Arrays;
 import org.checkerframework.dataflow.qual.Pure;
@@ -26,41 +26,41 @@ public final class ColorInfo implements AnonymousClass24, Parcelable {
     public final int A03;
     public final byte[] A04;
 
-    public static String A07(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i6);
-        int i10 = 0;
+    public static String A07(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             if (A06[7].charAt(5) != 's') {
                 throw new RuntimeException();
             }
             A06[2] = "3J0fS2w4pJ";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            byte b9 = (byte) ((copyOfRange[i10] ^ i9) ^ 90);
+            byte b9 = (byte) ((copyOfRange[i9] ^ i6) ^ 90);
             if (A06[2].length() != 10) {
                 A06[4] = "NZQ27YGgzUvTQnYJbnO7KrKPnOKajcu0";
-                copyOfRange[i10] = b9;
-                i10 += 0;
+                copyOfRange[i9] = b9;
+                i9 += 0;
             } else {
                 String[] strArr = A06;
                 strArr[3] = "apS4Da1AN2CX9NcLFevAWz";
                 strArr[1] = "J8xda0JkxA2JO9OskXZrhx";
-                copyOfRange[i10] = b9;
-                i10++;
+                copyOfRange[i9] = b9;
+                i9++;
             }
         }
     }
 
     public static void A08() {
-        A05 = new byte[]{49, 97, 109, 59, 45, 75, 73, 75, 73, 59, 45, 79, 73, 72, 62, 40, 75, 76, 69, 32, 12, 15, 12, 17, 42, 13, 5, 12, 75, 13, 62, 39, 39, 107, 57, 42, 37, 44, 46, 71, 97, 109, 109, 97, 32, 50, 46, 50, 42, 46, 37, 122, 95, 91, 95, 66, 83, 82, 22, 68, 87, 88, 81, 83, 92, 121, 126, 117, 113, 98, 83, 68, 82, 32, 83, 77, 80, 84, 69, 32, 49, 55, 48, 77, 39, 32, 70, 68, 76, c.f16317b, 84, 36, 37, 74, 113, 123, 122, 121, 118, 113, 122, 123, c.f16318c, 124, 112, 115, 112, 109, c.f16318c, 109, 126, 113, 120, 122, 121, 66, 72, 73, 74, 69, 66, 73, 72, 12, 79, 67, c.f16317b, 67, 94, 12, 95, 92, 77, 79, 73, 47, 20, 30, 31, 28, 19, 20, 31, 30, 90, 25, 21, 22, 21, 8, 90, 14, 8, 27, 20, 9, 28, 31, 8, 9, 50, 47, 57, 40, 124, c.f16318c, 51, 48, 51, 46, 124, 46, 61, 50, 59, 57, 90, 97, 124, 106, 123, 47, 108, 96, 99, 96, 125, 47, 124, Byte.MAX_VALUE, 110, 108, 106, 58, 1, 28, 10, 27, 79, 12, 0, 3, 0, 29, 79, 27, 29, 14, 1, 28, 9, 10, 29, 1, 32, 53, 48};
+        A05 = new byte[]{49, 97, 109, 59, 45, 75, 73, 75, 73, 59, 45, 79, 73, 72, 62, 40, 75, 76, 69, 32, 12, 15, 12, 17, 42, 13, 5, 12, 75, 13, 62, 39, 39, 107, 57, 42, 37, 44, 46, 71, 97, 109, 109, 97, 32, 50, 46, 50, 42, 46, 37, 122, 95, 91, 95, 66, 83, 82, 22, 68, 87, 88, 81, 83, 92, 121, 126, 117, 113, 98, 83, 68, 82, 32, 83, 77, 80, 84, 69, 32, 49, 55, 48, 77, 39, 32, 70, 68, 76, c.f17104b, 84, 36, 37, 74, 113, 123, 122, 121, 118, 113, 122, 123, c.f17105c, 124, 112, 115, 112, 109, c.f17105c, 109, 126, 113, 120, 122, 121, 66, 72, 73, 74, 69, 66, 73, 72, 12, 79, 67, c.f17104b, 67, 94, 12, 95, 92, 77, 79, 73, 47, 20, 30, 31, 28, 19, 20, 31, 30, 90, 25, 21, 22, 21, 8, 90, 14, 8, 27, 20, 9, 28, 31, 8, 9, 50, 47, 57, 40, 124, c.f17105c, 51, 48, 51, 46, 124, 46, 61, 50, 59, 57, 90, 97, 124, 106, 123, 47, 108, 96, 99, 96, 125, 47, 124, Byte.MAX_VALUE, 110, 108, 106, 58, 1, 28, 10, 27, 79, 12, 0, 3, 0, 29, 79, 27, 29, 14, 1, 28, 9, 10, 29, 1, 32, 53, 48};
     }
 
     static {
         A08();
         A09 = new ColorInfo(1, 2, 3, null);
-        A0A = new C05782a().A01(1).A00(1).A02(2).A03();
+        A0A = new C05982a().A01(1).A00(1).A02(2).A03();
         A07 = new Parcelable.Creator<ColorInfo>() { // from class: com.facebook.ads.redexgen.X.2Z
             /* JADX INFO: Access modifiers changed from: private */
             @Override // android.os.Parcelable.Creator
@@ -84,10 +84,10 @@ public final class ColorInfo implements AnonymousClass24, Parcelable {
         };
     }
 
-    public ColorInfo(int i, int i6, int i9, byte[] bArr) {
+    public ColorInfo(int i, int i4, int i6, byte[] bArr) {
         this.A02 = i;
-        this.A01 = i6;
-        this.A03 = i9;
+        this.A01 = i4;
+        this.A03 = i6;
         this.A04 = bArr;
     }
 
@@ -227,8 +227,8 @@ public final class ColorInfo implements AnonymousClass24, Parcelable {
         return colorInfo != null && (colorInfo.A03 == 7 || colorInfo.A03 == 6);
     }
 
-    public final C05782a A0A() {
-        return new C05782a(this);
+    public final C05982a A0A() {
+        return new C05982a(this);
     }
 
     @Override // android.os.Parcelable

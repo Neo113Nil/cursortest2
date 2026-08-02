@@ -1,7 +1,7 @@
 package Y2;
 
-import android.os.IInterface;
+import c3.AbstractC0549a;
 
-/* loaded from: classes2.dex */
-public interface d extends IInterface {
+/* loaded from: classes.dex */
+public final class d extends AbstractC0549a implements a {
 }

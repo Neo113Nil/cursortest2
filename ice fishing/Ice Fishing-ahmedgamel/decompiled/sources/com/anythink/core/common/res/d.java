@@ -8,7 +8,7 @@ import com.anythink.core.common.h.x;
 import com.anythink.core.common.res.a;
 import com.anythink.core.common.v.o;
 import com.anythink.core.common.v.w;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -23,72 +23,72 @@ import java.util.concurrent.ConcurrentHashMap;
 public class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f16215a = "about:blank";
+    public static final String f17002a = "about:blank";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final String f16216d = "foldername";
+    public static final String f17003d = "foldername";
 
     /* renamed from: f, reason: collision with root package name */
-    private static final String f16217f = "anythink_internal_resouce";
+    private static final String f17004f = "anythink_internal_resouce";
 
     /* renamed from: g, reason: collision with root package name */
-    private static final String f16218g = "anythink_custom_resouce";
+    private static final String f17005g = "anythink_custom_resouce";
 
     /* renamed from: h, reason: collision with root package name */
-    private static final String f16219h = "anythink_internal_extra_resource";
+    private static final String f17006h = "anythink_internal_extra_resource";
     private static final String i = "anythink_internal_video_resource";
 
     /* renamed from: j, reason: collision with root package name */
-    private static final String f16220j = "anythink_internal_html_resouce";
+    private static final String f17007j = "anythink_internal_html_resouce";
 
     /* renamed from: k, reason: collision with root package name */
-    private static final String f16221k = "anythink_internal_html_template";
+    private static final String f17008k = "anythink_internal_html_template";
 
     /* renamed from: l, reason: collision with root package name */
-    private static volatile d f16222l;
+    private static volatile d f17009l;
 
     /* renamed from: m, reason: collision with root package name */
-    private Context f16226m;
+    private Context f17013m;
 
     /* renamed from: n, reason: collision with root package name */
-    private File f16227n;
+    private File f17014n;
 
     /* renamed from: e, reason: collision with root package name */
-    private final String f16225e = getClass().getSimpleName();
+    private final String f17012e = getClass().getSimpleName();
 
     /* renamed from: b, reason: collision with root package name */
-    ConcurrentHashMap<Integer, a> f16223b = new ConcurrentHashMap<>();
+    ConcurrentHashMap<Integer, a> f17010b = new ConcurrentHashMap<>();
 
     /* renamed from: c, reason: collision with root package name */
-    final long f16224c = 172800000;
+    final long f17011c = 172800000;
 
     private d(Context context) {
         Context applicationContext = context.getApplicationContext();
-        this.f16226m = applicationContext;
-        this.f16227n = w.a(applicationContext);
+        this.f17013m = applicationContext;
+        this.f17014n = w.a(applicationContext);
     }
 
     public static d a(Context context) {
-        if (f16222l == null) {
+        if (f17009l == null) {
             synchronized (d.class) {
                 try {
-                    if (f16222l == null) {
-                        f16222l = new d(context);
+                    if (f17009l == null) {
+                        f17009l = new d(context);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16222l;
+        return f17009l;
     }
 
     public static void c() {
         try {
-            long d2 = t.b().d(1);
+            long d9 = t.b().d(1);
             String a9 = a(t.b().g()).a(1);
             long a10 = w.a(a9);
-            if (a10 <= 0 || a10 <= d2 * 1.5d) {
+            if (a10 <= 0 || a10 <= d9 * 1.5d) {
                 return;
             }
             File[] listFiles = new File(a9).listFiles();
@@ -98,8 +98,8 @@ public class d {
             }
             long currentTimeMillis = System.currentTimeMillis();
             if (arrayList.size() > 0) {
-                for (int i6 = 0; i6 < arrayList.size(); i6++) {
-                    File file = (File) arrayList.get(i6);
+                for (int i4 = 0; i4 < arrayList.size(); i4++) {
+                    File file = (File) arrayList.get(i4);
                     if (currentTimeMillis - file.lastModified() > 172800000) {
                         try {
                             file.delete();
@@ -113,13 +113,13 @@ public class d {
         }
     }
 
-    private static String d(int i6, String str) {
-        if (i6 != 4) {
-            if (i6 == 5) {
-                return AbstractC4404f.f(str, ".zip");
+    private static String d(int i4, String str) {
+        if (i4 != 4) {
+            if (i4 == 5) {
+                return Wv.g(str, ".zip");
             }
-            if (i6 != 6) {
-                return AbstractC4404f.f(str, ".0");
+            if (i4 != 6) {
+                return Wv.g(str, ".0");
             }
         }
         return str;
@@ -128,7 +128,7 @@ public class d {
     public final void b() {
         File[] listFiles;
         try {
-            File file = new File(this.f16227n, f16220j);
+            File file = new File(this.f17014n, f17007j);
             if (!file.exists() || (listFiles = file.listFiles()) == null || listFiles.length <= 0) {
                 return;
             }
@@ -145,17 +145,17 @@ public class d {
     }
 
     public final String a() {
-        return this.f16227n.getAbsolutePath();
+        return this.f17014n.getAbsolutePath();
     }
 
     public final String a(String str, x xVar, com.anythink.core.common.h.w wVar) {
         FileOutputStream fileOutputStream;
         byte[] bytes;
-        File file = new File(this.f16227n, f16220j);
+        File file = new File(this.f17014n, f17007j);
         if (!file.exists()) {
             file.mkdirs();
         }
-        File file2 = new File(file, xVar.f14158d + "_" + wVar.v() + ".html");
+        File file2 = new File(file, xVar.f14944d + "_" + wVar.v() + ".html");
         try {
             bytes = str.getBytes(com.anythink.expressad.foundation.g.a.bR);
             fileOutputStream = new FileOutputStream(file2);
@@ -183,18 +183,18 @@ public class d {
     }
 
     public final File b(x xVar, com.anythink.core.common.h.w wVar) {
-        File file = new File(new File(this.f16227n, f16220j), xVar.f14158d + "_" + wVar.v() + ".html");
+        File file = new File(new File(this.f17014n, f17007j), xVar.f14944d + "_" + wVar.v() + ".html");
         if (file.exists()) {
             return file;
         }
         return null;
     }
 
-    public final boolean b(int i6, String str) {
+    public final boolean b(int i4, String str) {
         if (TextUtils.isEmpty(str)) {
             return false;
         }
-        return new File(c(i6, str)).exists();
+        return new File(c(i4, str)).exists();
     }
 
     public final void b(String str) {
@@ -207,13 +207,13 @@ public class d {
         }
     }
 
-    public final String c(int i6, String str) {
-        return a(i6) + File.separator + d(i6, str);
+    public final String c(int i4, String str) {
+        return a(i4) + File.separator + d(i4, str);
     }
 
     public final void a(x xVar, com.anythink.core.common.h.w wVar) {
         try {
-            File file = new File(new File(this.f16227n, f16220j), xVar.f14158d + "_" + wVar.v() + ".html");
+            File file = new File(new File(this.f17014n, f17007j), xVar.f14944d + "_" + wVar.v() + ".html");
             if (file.exists()) {
                 file.delete();
             }
@@ -227,12 +227,12 @@ public class d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final boolean a(int i6, String str, InputStream inputStream) {
+    public final boolean a(int i4, String str, InputStream inputStream) {
         OutputStream outputStream;
         if (str == null || inputStream == null) {
             return false;
         }
-        String a9 = a(i6);
+        String a9 = a(i4);
         if (TextUtils.isEmpty(a9)) {
             return false;
         }
@@ -240,7 +240,7 @@ public class d {
         if (!file.exists()) {
             file.mkdirs();
         }
-        a a10 = a(i6, file);
+        a a10 = a(i4, file);
         if (a10 == null) {
             return false;
         }
@@ -327,10 +327,10 @@ public class d {
         }
     }
 
-    public final FileInputStream a(int i6, String str) {
+    public final FileInputStream a(int i4, String str) {
         InputStream a9;
-        if (i6 != 4) {
-            String a10 = a(i6);
+        if (i4 != 4) {
+            String a10 = a(i4);
             if (TextUtils.isEmpty(a10)) {
                 return null;
             }
@@ -338,7 +338,7 @@ public class d {
             if (!file.exists()) {
                 file.mkdirs();
             }
-            a a11 = a(i6, file);
+            a a11 = a(i4, file);
             if (a11 != null) {
                 try {
                     a.c a12 = a11.a(str);
@@ -358,16 +358,16 @@ public class d {
         }
     }
 
-    private synchronized a a(int i6, File file) {
+    private synchronized a a(int i4, File file) {
         a aVar;
-        aVar = this.f16223b.get(Integer.valueOf(i6));
+        aVar = this.f17010b.get(Integer.valueOf(i4));
         if (aVar == null) {
             try {
-                aVar = a.a(file, t.b().d(i6));
-                this.f16223b.put(Integer.valueOf(i6), aVar);
+                aVar = a.a(file, t.b().d(i4));
+                this.f17010b.put(Integer.valueOf(i4), aVar);
             } catch (Throwable th) {
                 if (t.b().F()) {
-                    Log.e(this.f16225e, "Create DiskCache error.");
+                    Log.e(this.f17012e, "Create DiskCache error.");
                     th.printStackTrace();
                 }
             }
@@ -375,20 +375,20 @@ public class d {
         return aVar;
     }
 
-    public final String a(int i6) {
+    public final String a(int i4) {
         String str;
-        if (i6 == 1) {
-            str = f16217f;
-        } else if (i6 == 3) {
-            str = f16219h;
-        } else if (i6 == 4) {
+        if (i4 == 1) {
+            str = f17004f;
+        } else if (i4 == 3) {
+            str = f17006h;
+        } else if (i4 == 4) {
             str = i;
-        } else if (i6 != 5 && i6 != 6) {
-            str = f16218g;
+        } else if (i4 != 5 && i4 != 6) {
+            str = f17005g;
         } else {
-            str = f16221k;
+            str = f17008k;
         }
-        return new File(this.f16227n, str).getAbsolutePath();
+        return new File(this.f17014n, str).getAbsolutePath();
     }
 
     public final String a(String str) {

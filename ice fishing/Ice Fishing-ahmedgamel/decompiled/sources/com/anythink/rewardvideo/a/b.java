@@ -14,14 +14,14 @@ import com.anythink.rewardvideo.api.ATRewardVideoExListener;
 public final class b implements ATRewardVideoExListener {
 
     /* renamed from: a, reason: collision with root package name */
-    ATRewardVideoAutoEventListener f23247a;
+    ATRewardVideoAutoEventListener f24034a;
 
     /* renamed from: b, reason: collision with root package name */
-    ATAdRevenueListener f23248b;
+    ATAdRevenueListener f24035b;
 
     public b(ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener, ATAdRevenueListener aTAdRevenueListener) {
-        this.f23247a = aTRewardVideoAutoEventListener;
-        this.f23248b = aTAdRevenueListener;
+        this.f24034a = aTRewardVideoAutoEventListener;
+        this.f24035b = aTAdRevenueListener;
     }
 
     @Override // com.anythink.rewardvideo.api.ATRewardVideoExListener
@@ -29,7 +29,7 @@ public final class b implements ATRewardVideoExListener {
         t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.a.b.13
             @Override // java.lang.Runnable
             public final void run() {
-                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f23247a;
+                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f24034a;
                 if (aTRewardVideoAutoEventListener != null) {
                     aTRewardVideoAutoEventListener.onAgainReward(aTAdInfo);
                 }
@@ -43,7 +43,7 @@ public final class b implements ATRewardVideoExListener {
             @Override // java.lang.Runnable
             public final void run() {
                 try {
-                    ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f23247a;
+                    ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f24034a;
                     if (aTRewardVideoAutoEventListener != null) {
                         aTRewardVideoAutoEventListener.onAgainRewardFailed(aTAdInfo);
                     }
@@ -55,13 +55,13 @@ public final class b implements ATRewardVideoExListener {
     }
 
     @Override // com.anythink.rewardvideo.api.ATRewardVideoExListener
-    public final void onDeeplinkCallback(final ATAdInfo aTAdInfo, final boolean z3) {
+    public final void onDeeplinkCallback(final ATAdInfo aTAdInfo, final boolean z6) {
         t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.a.b.1
             @Override // java.lang.Runnable
             public final void run() {
-                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f23247a;
+                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f24034a;
                 if (aTRewardVideoAutoEventListener != null) {
-                    aTRewardVideoAutoEventListener.onDeeplinkCallback(aTAdInfo, z3);
+                    aTRewardVideoAutoEventListener.onDeeplinkCallback(aTAdInfo, z6);
                 }
             }
         });
@@ -72,7 +72,7 @@ public final class b implements ATRewardVideoExListener {
         t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.a.b.8
             @Override // java.lang.Runnable
             public final void run() {
-                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f23247a;
+                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f24034a;
                 if (aTRewardVideoAutoEventListener != null) {
                     aTRewardVideoAutoEventListener.onDownloadConfirm(context, aTAdInfo, aTNetworkConfirmInfo);
                 }
@@ -85,7 +85,7 @@ public final class b implements ATRewardVideoExListener {
         t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.a.b.7
             @Override // java.lang.Runnable
             public final void run() {
-                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f23247a;
+                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f24034a;
                 if (aTRewardVideoAutoEventListener != null) {
                     aTRewardVideoAutoEventListener.onReward(aTAdInfo);
                 }
@@ -99,7 +99,7 @@ public final class b implements ATRewardVideoExListener {
             @Override // java.lang.Runnable
             public final void run() {
                 try {
-                    ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f23247a;
+                    ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f24034a;
                     if (aTRewardVideoAutoEventListener != null) {
                         aTRewardVideoAutoEventListener.onRewardFailed(aTAdInfo);
                     }
@@ -115,7 +115,7 @@ public final class b implements ATRewardVideoExListener {
         t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.a.b.12
             @Override // java.lang.Runnable
             public final void run() {
-                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f23247a;
+                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f24034a;
                 if (aTRewardVideoAutoEventListener != null) {
                     aTRewardVideoAutoEventListener.onRewardedVideoAdAgainPlayClicked(aTAdInfo);
                 }
@@ -128,7 +128,7 @@ public final class b implements ATRewardVideoExListener {
         t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.a.b.10
             @Override // java.lang.Runnable
             public final void run() {
-                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f23247a;
+                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f24034a;
                 if (aTRewardVideoAutoEventListener != null) {
                     aTRewardVideoAutoEventListener.onRewardedVideoAdAgainPlayEnd(aTAdInfo);
                 }
@@ -141,7 +141,7 @@ public final class b implements ATRewardVideoExListener {
         t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.a.b.11
             @Override // java.lang.Runnable
             public final void run() {
-                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f23247a;
+                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f24034a;
                 if (aTRewardVideoAutoEventListener != null) {
                     aTRewardVideoAutoEventListener.onRewardedVideoAdAgainPlayFailed(adError, aTAdInfo);
                 }
@@ -154,7 +154,7 @@ public final class b implements ATRewardVideoExListener {
         t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.a.b.9
             @Override // java.lang.Runnable
             public final void run() {
-                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f23247a;
+                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f24034a;
                 if (aTRewardVideoAutoEventListener != null) {
                     aTRewardVideoAutoEventListener.onRewardedVideoAdAgainPlayStart(aTAdInfo);
                 }
@@ -167,7 +167,7 @@ public final class b implements ATRewardVideoExListener {
         t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.a.b.5
             @Override // java.lang.Runnable
             public final void run() {
-                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f23247a;
+                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f24034a;
                 if (aTRewardVideoAutoEventListener != null) {
                     aTRewardVideoAutoEventListener.onRewardedVideoAdClosed(aTAdInfo);
                 }
@@ -188,7 +188,7 @@ public final class b implements ATRewardVideoExListener {
         t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.a.b.6
             @Override // java.lang.Runnable
             public final void run() {
-                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f23247a;
+                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f24034a;
                 if (aTRewardVideoAutoEventListener != null) {
                     aTRewardVideoAutoEventListener.onRewardedVideoAdPlayClicked(aTAdInfo);
                 }
@@ -201,7 +201,7 @@ public final class b implements ATRewardVideoExListener {
         t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.a.b.3
             @Override // java.lang.Runnable
             public final void run() {
-                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f23247a;
+                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f24034a;
                 if (aTRewardVideoAutoEventListener != null) {
                     aTRewardVideoAutoEventListener.onRewardedVideoAdPlayEnd(aTAdInfo);
                 }
@@ -214,7 +214,7 @@ public final class b implements ATRewardVideoExListener {
         t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.a.b.4
             @Override // java.lang.Runnable
             public final void run() {
-                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f23247a;
+                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f24034a;
                 if (aTRewardVideoAutoEventListener != null) {
                     aTRewardVideoAutoEventListener.onRewardedVideoAdPlayFailed(adError, aTAdInfo);
                 }
@@ -227,11 +227,11 @@ public final class b implements ATRewardVideoExListener {
         t.b().b(new Runnable() { // from class: com.anythink.rewardvideo.a.b.2
             @Override // java.lang.Runnable
             public final void run() {
-                ATAdRevenueListener aTAdRevenueListener = b.this.f23248b;
+                ATAdRevenueListener aTAdRevenueListener = b.this.f24035b;
                 if (aTAdRevenueListener != null) {
                     aTAdRevenueListener.onAdRevenuePaid(aTAdInfo);
                 }
-                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f23247a;
+                ATRewardVideoAutoEventListener aTRewardVideoAutoEventListener = b.this.f24034a;
                 if (aTRewardVideoAutoEventListener != null) {
                     aTRewardVideoAutoEventListener.onRewardedVideoAdPlayStart(aTAdInfo);
                 }

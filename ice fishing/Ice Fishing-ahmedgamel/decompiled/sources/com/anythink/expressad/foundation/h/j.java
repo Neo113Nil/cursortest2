@@ -6,10 +6,10 @@ import android.net.ConnectivityManager;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19628a = "NetManager";
+    private static final String f20415a = "NetManager";
 
     /* renamed from: b, reason: collision with root package name */
-    private static ConnectivityManager f19629b;
+    private static ConnectivityManager f20416b;
 
     private j() {
     }
@@ -18,13 +18,13 @@ public final class j {
         ConnectivityManager connectivityManager;
         synchronized (j.class) {
             try {
-                if (f19629b == null && com.anythink.core.common.d.t.b().g() != null) {
-                    f19629b = (ConnectivityManager) com.anythink.core.common.d.t.b().g().getSystemService("connectivity");
+                if (f20416b == null && com.anythink.core.common.d.t.b().g() != null) {
+                    f20416b = (ConnectivityManager) com.anythink.core.common.d.t.b().g().getSystemService("connectivity");
                 }
             } catch (Exception e9) {
                 e9.getMessage();
             }
-            connectivityManager = f19629b;
+            connectivityManager = f20416b;
         }
         return connectivityManager;
     }

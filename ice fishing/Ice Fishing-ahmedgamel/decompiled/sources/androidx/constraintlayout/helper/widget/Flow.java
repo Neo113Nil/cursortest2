@@ -7,13 +7,13 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import w.C5138c;
-import w.C5139d;
-import w.C5140e;
-import w.f;
+import w.C5129d;
+import w.C5130e;
 import w.g;
 import w.h;
-import x.C5164b;
+import w.i;
+import x.C5163b;
+import z.f;
 import z.r;
 import z.t;
 
@@ -21,136 +21,136 @@ import z.t;
 public class Flow extends t {
 
     /* renamed from: C, reason: collision with root package name */
-    public final g f4642C;
+    public final h f4610C;
 
     public Flow(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f42013n = new int[32];
-        this.f42019z = new HashMap();
-        this.f42015v = context;
+        this.f41984n = new int[32];
+        this.f41990z = new HashMap();
+        this.f41986v = context;
         super.g(attributeSet);
-        g gVar = new g();
-        gVar.f41608s0 = 0;
-        gVar.f41609t0 = 0;
-        gVar.f41610u0 = 0;
-        gVar.f41611v0 = 0;
-        gVar.f41612w0 = 0;
-        gVar.f41613x0 = 0;
-        gVar.f41614y0 = false;
-        gVar.f41615z0 = 0;
-        gVar.f41581A0 = 0;
-        gVar.f41582B0 = new C5164b();
-        gVar.C0 = null;
-        gVar.f41583D0 = -1;
-        gVar.f41584E0 = -1;
-        gVar.f41585F0 = -1;
-        gVar.f41586G0 = -1;
-        gVar.f41587H0 = -1;
-        gVar.f41588I0 = -1;
-        gVar.f41589J0 = 0.5f;
-        gVar.f41590K0 = 0.5f;
-        gVar.f41591L0 = 0.5f;
-        gVar.f41592M0 = 0.5f;
-        gVar.f41593N0 = 0.5f;
-        gVar.f41594O0 = 0.5f;
-        gVar.f41595P0 = 0;
-        gVar.f41596Q0 = 0;
-        gVar.f41597R0 = 2;
-        gVar.f41598S0 = 2;
-        gVar.f41599T0 = 0;
-        gVar.f41600U0 = -1;
-        gVar.f41601V0 = 0;
-        gVar.f41602W0 = new ArrayList();
-        gVar.f41603X0 = null;
-        gVar.f41604Y0 = null;
-        gVar.f41605Z0 = null;
-        gVar.f41607b1 = 0;
-        this.f4642C = gVar;
+        h hVar = new h();
+        hVar.f41387s0 = 0;
+        hVar.f41388t0 = 0;
+        hVar.f41389u0 = 0;
+        hVar.f41390v0 = 0;
+        hVar.f41391w0 = 0;
+        hVar.f41392x0 = 0;
+        hVar.f41393y0 = false;
+        hVar.f41394z0 = 0;
+        hVar.f41360A0 = 0;
+        hVar.f41361B0 = new C5163b();
+        hVar.C0 = null;
+        hVar.f41362D0 = -1;
+        hVar.f41363E0 = -1;
+        hVar.f41364F0 = -1;
+        hVar.f41365G0 = -1;
+        hVar.f41366H0 = -1;
+        hVar.f41367I0 = -1;
+        hVar.f41368J0 = 0.5f;
+        hVar.f41369K0 = 0.5f;
+        hVar.f41370L0 = 0.5f;
+        hVar.f41371M0 = 0.5f;
+        hVar.f41372N0 = 0.5f;
+        hVar.f41373O0 = 0.5f;
+        hVar.f41374P0 = 0;
+        hVar.f41375Q0 = 0;
+        hVar.f41376R0 = 2;
+        hVar.f41377S0 = 2;
+        hVar.f41378T0 = 0;
+        hVar.f41379U0 = -1;
+        hVar.f41380V0 = 0;
+        hVar.f41381W0 = new ArrayList();
+        hVar.f41382X0 = null;
+        hVar.f41383Y0 = null;
+        hVar.f41384Z0 = null;
+        hVar.f41386b1 = 0;
+        this.f4610C = hVar;
         if (attributeSet != null) {
-            TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, r.f42213b);
+            TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, r.f42184b);
             int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i = 0; i < indexCount; i++) {
                 int index = obtainStyledAttributes.getIndex(i);
                 if (index == 0) {
-                    this.f4642C.f41601V0 = obtainStyledAttributes.getInt(index, 0);
+                    this.f4610C.f41380V0 = obtainStyledAttributes.getInt(index, 0);
                 } else if (index == 1) {
-                    g gVar2 = this.f4642C;
+                    h hVar2 = this.f4610C;
                     int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(index, 0);
-                    gVar2.f41608s0 = dimensionPixelSize;
-                    gVar2.f41609t0 = dimensionPixelSize;
-                    gVar2.f41610u0 = dimensionPixelSize;
-                    gVar2.f41611v0 = dimensionPixelSize;
+                    hVar2.f41387s0 = dimensionPixelSize;
+                    hVar2.f41388t0 = dimensionPixelSize;
+                    hVar2.f41389u0 = dimensionPixelSize;
+                    hVar2.f41390v0 = dimensionPixelSize;
                 } else if (index == 18) {
-                    g gVar3 = this.f4642C;
+                    h hVar3 = this.f4610C;
                     int dimensionPixelSize2 = obtainStyledAttributes.getDimensionPixelSize(index, 0);
-                    gVar3.f41610u0 = dimensionPixelSize2;
-                    gVar3.f41612w0 = dimensionPixelSize2;
-                    gVar3.f41613x0 = dimensionPixelSize2;
+                    hVar3.f41389u0 = dimensionPixelSize2;
+                    hVar3.f41391w0 = dimensionPixelSize2;
+                    hVar3.f41392x0 = dimensionPixelSize2;
                 } else if (index == 19) {
-                    this.f4642C.f41611v0 = obtainStyledAttributes.getDimensionPixelSize(index, 0);
+                    this.f4610C.f41390v0 = obtainStyledAttributes.getDimensionPixelSize(index, 0);
                 } else if (index == 2) {
-                    this.f4642C.f41612w0 = obtainStyledAttributes.getDimensionPixelSize(index, 0);
+                    this.f4610C.f41391w0 = obtainStyledAttributes.getDimensionPixelSize(index, 0);
                 } else if (index == 3) {
-                    this.f4642C.f41608s0 = obtainStyledAttributes.getDimensionPixelSize(index, 0);
+                    this.f4610C.f41387s0 = obtainStyledAttributes.getDimensionPixelSize(index, 0);
                 } else if (index == 4) {
-                    this.f4642C.f41613x0 = obtainStyledAttributes.getDimensionPixelSize(index, 0);
+                    this.f4610C.f41392x0 = obtainStyledAttributes.getDimensionPixelSize(index, 0);
                 } else if (index == 5) {
-                    this.f4642C.f41609t0 = obtainStyledAttributes.getDimensionPixelSize(index, 0);
+                    this.f4610C.f41388t0 = obtainStyledAttributes.getDimensionPixelSize(index, 0);
                 } else if (index == 54) {
-                    this.f4642C.f41599T0 = obtainStyledAttributes.getInt(index, 0);
+                    this.f4610C.f41378T0 = obtainStyledAttributes.getInt(index, 0);
                 } else if (index == 44) {
-                    this.f4642C.f41583D0 = obtainStyledAttributes.getInt(index, 0);
+                    this.f4610C.f41362D0 = obtainStyledAttributes.getInt(index, 0);
                 } else if (index == 53) {
-                    this.f4642C.f41584E0 = obtainStyledAttributes.getInt(index, 0);
+                    this.f4610C.f41363E0 = obtainStyledAttributes.getInt(index, 0);
                 } else if (index == 38) {
-                    this.f4642C.f41585F0 = obtainStyledAttributes.getInt(index, 0);
+                    this.f4610C.f41364F0 = obtainStyledAttributes.getInt(index, 0);
                 } else if (index == 46) {
-                    this.f4642C.f41587H0 = obtainStyledAttributes.getInt(index, 0);
+                    this.f4610C.f41366H0 = obtainStyledAttributes.getInt(index, 0);
                 } else if (index == 40) {
-                    this.f4642C.f41586G0 = obtainStyledAttributes.getInt(index, 0);
+                    this.f4610C.f41365G0 = obtainStyledAttributes.getInt(index, 0);
                 } else if (index == 48) {
-                    this.f4642C.f41588I0 = obtainStyledAttributes.getInt(index, 0);
+                    this.f4610C.f41367I0 = obtainStyledAttributes.getInt(index, 0);
                 } else if (index == 42) {
-                    this.f4642C.f41589J0 = obtainStyledAttributes.getFloat(index, 0.5f);
+                    this.f4610C.f41368J0 = obtainStyledAttributes.getFloat(index, 0.5f);
                 } else if (index == 37) {
-                    this.f4642C.f41591L0 = obtainStyledAttributes.getFloat(index, 0.5f);
+                    this.f4610C.f41370L0 = obtainStyledAttributes.getFloat(index, 0.5f);
                 } else if (index == 45) {
-                    this.f4642C.f41593N0 = obtainStyledAttributes.getFloat(index, 0.5f);
+                    this.f4610C.f41372N0 = obtainStyledAttributes.getFloat(index, 0.5f);
                 } else if (index == 39) {
-                    this.f4642C.f41592M0 = obtainStyledAttributes.getFloat(index, 0.5f);
+                    this.f4610C.f41371M0 = obtainStyledAttributes.getFloat(index, 0.5f);
                 } else if (index == 47) {
-                    this.f4642C.f41594O0 = obtainStyledAttributes.getFloat(index, 0.5f);
+                    this.f4610C.f41373O0 = obtainStyledAttributes.getFloat(index, 0.5f);
                 } else if (index == 51) {
-                    this.f4642C.f41590K0 = obtainStyledAttributes.getFloat(index, 0.5f);
+                    this.f4610C.f41369K0 = obtainStyledAttributes.getFloat(index, 0.5f);
                 } else if (index == 41) {
-                    this.f4642C.f41597R0 = obtainStyledAttributes.getInt(index, 2);
+                    this.f4610C.f41376R0 = obtainStyledAttributes.getInt(index, 2);
                 } else if (index == 50) {
-                    this.f4642C.f41598S0 = obtainStyledAttributes.getInt(index, 2);
+                    this.f4610C.f41377S0 = obtainStyledAttributes.getInt(index, 2);
                 } else if (index == 43) {
-                    this.f4642C.f41595P0 = obtainStyledAttributes.getDimensionPixelSize(index, 0);
+                    this.f4610C.f41374P0 = obtainStyledAttributes.getDimensionPixelSize(index, 0);
                 } else if (index == 52) {
-                    this.f4642C.f41596Q0 = obtainStyledAttributes.getDimensionPixelSize(index, 0);
+                    this.f4610C.f41375Q0 = obtainStyledAttributes.getDimensionPixelSize(index, 0);
                 } else if (index == 49) {
-                    this.f4642C.f41600U0 = obtainStyledAttributes.getInt(index, -1);
+                    this.f4610C.f41379U0 = obtainStyledAttributes.getInt(index, -1);
                 }
             }
             obtainStyledAttributes.recycle();
         }
-        this.f42016w = this.f4642C;
+        this.f41987w = this.f4610C;
         i();
     }
 
     @Override // z.c
-    public final void h(C5139d c5139d, boolean z3) {
-        g gVar = this.f4642C;
-        int i = gVar.f41610u0;
-        if (i > 0 || gVar.f41611v0 > 0) {
-            if (z3) {
-                gVar.f41612w0 = gVar.f41611v0;
-                gVar.f41613x0 = i;
+    public final void h(C5130e c5130e, boolean z6) {
+        h hVar = this.f4610C;
+        int i = hVar.f41389u0;
+        if (i > 0 || hVar.f41390v0 > 0) {
+            if (z6) {
+                hVar.f41391w0 = hVar.f41390v0;
+                hVar.f41392x0 = i;
             } else {
-                gVar.f41612w0 = i;
-                gVar.f41613x0 = gVar.f41611v0;
+                hVar.f41391w0 = i;
+                hVar.f41392x0 = hVar.f41390v0;
             }
         }
     }
@@ -168,772 +168,772 @@ public class Flow extends t {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void j(g gVar, int i, int i6) {
+    public final void j(h hVar, int i, int i4) {
+        int i6;
         int i9;
+        C5130e[] c5130eArr;
         int i10;
-        C5139d[] c5139dArr;
         int i11;
         int i12;
-        int i13;
         int[] iArr;
+        int i13;
         int i14;
-        int i15;
-        f fVar;
+        g gVar;
         ?? r28;
+        int i15;
         int i16;
         int i17;
         int i18;
         int i19;
-        int i20;
         Object obj;
-        C5139d c5139d;
+        C5130e c5130e;
+        int i20;
         int i21;
         int i22;
         int i23;
         int i24;
-        int i25;
         int mode = View.MeasureSpec.getMode(i);
         int size = View.MeasureSpec.getSize(i);
-        int mode2 = View.MeasureSpec.getMode(i6);
-        int size2 = View.MeasureSpec.getSize(i6);
-        if (gVar == null) {
+        int mode2 = View.MeasureSpec.getMode(i4);
+        int size2 = View.MeasureSpec.getSize(i4);
+        if (hVar == null) {
             setMeasuredDimension(0, 0);
             return;
         }
-        if (gVar.f41623r0 > 0) {
-            C5139d c5139d2 = gVar.f41497T;
-            z.f fVar2 = c5139d2 != null ? ((C5140e) c5139d2).f41558u0 : null;
-            if (fVar2 == null) {
-                gVar.f41615z0 = 0;
-                gVar.f41581A0 = 0;
-                gVar.f41614y0 = false;
-                setMeasuredDimension(gVar.f41615z0, gVar.f41581A0);
+        if (hVar.f41402r0 > 0) {
+            C5130e c5130e2 = hVar.f41276T;
+            f fVar = c5130e2 != null ? ((w.f) c5130e2).f41337u0 : null;
+            if (fVar == null) {
+                hVar.f41394z0 = 0;
+                hVar.f41360A0 = 0;
+                hVar.f41393y0 = false;
+                setMeasuredDimension(hVar.f41394z0, hVar.f41360A0);
             }
-            for (int i26 = 0; i26 < gVar.f41623r0; i26++) {
-                C5139d c5139d3 = gVar.f41622q0[i26];
-                if (c5139d3 != null && !(c5139d3 instanceof h)) {
-                    int j6 = c5139d3.j(0);
-                    int j9 = c5139d3.j(1);
-                    if (j6 != 3 || c5139d3.f41534r == 1 || j9 != 3 || c5139d3.f41535s == 1) {
+            for (int i25 = 0; i25 < hVar.f41402r0; i25++) {
+                C5130e c5130e3 = hVar.f41401q0[i25];
+                if (c5130e3 != null && !(c5130e3 instanceof i)) {
+                    int j6 = c5130e3.j(0);
+                    int j9 = c5130e3.j(1);
+                    if (j6 != 3 || c5130e3.f41313r == 1 || j9 != 3 || c5130e3.f41314s == 1) {
                         if (j6 == 3) {
                             j6 = 2;
                         }
                         if (j9 == 3) {
                             j9 = 2;
                         }
-                        C5164b c5164b = gVar.f41582B0;
-                        c5164b.f41698a = j6;
-                        c5164b.f41699b = j9;
-                        c5164b.f41700c = c5139d3.q();
-                        c5164b.f41701d = c5139d3.k();
-                        fVar2.b(c5139d3, c5164b);
-                        c5139d3.O(c5164b.f41702e);
-                        c5139d3.L(c5164b.f41703f);
-                        c5139d3.I(c5164b.f41704g);
+                        C5163b c5163b = hVar.f41361B0;
+                        c5163b.f41753a = j6;
+                        c5163b.f41754b = j9;
+                        c5163b.f41755c = c5130e3.q();
+                        c5163b.f41756d = c5130e3.k();
+                        fVar.b(c5130e3, c5163b);
+                        c5130e3.O(c5163b.f41757e);
+                        c5130e3.L(c5163b.f41758f);
+                        c5130e3.I(c5163b.f41759g);
                     }
                 }
             }
         }
-        int i27 = gVar.f41612w0;
-        int i28 = gVar.f41613x0;
-        int i29 = gVar.f41608s0;
-        int i30 = gVar.f41609t0;
+        int i26 = hVar.f41391w0;
+        int i27 = hVar.f41392x0;
+        int i28 = hVar.f41387s0;
+        int i29 = hVar.f41388t0;
         int[] iArr2 = new int[2];
-        int i31 = (size - i27) - i28;
-        int i32 = gVar.f41601V0;
-        if (i32 == 1) {
-            i31 = (size2 - i29) - i30;
+        int i30 = (size - i26) - i27;
+        int i31 = hVar.f41380V0;
+        if (i31 == 1) {
+            i30 = (size2 - i28) - i29;
         }
-        if (i32 == 0) {
-            if (gVar.f41583D0 == -1) {
-                gVar.f41583D0 = 0;
+        if (i31 == 0) {
+            if (hVar.f41362D0 == -1) {
+                hVar.f41362D0 = 0;
             }
-            if (gVar.f41584E0 == -1) {
-                gVar.f41584E0 = 0;
+            if (hVar.f41363E0 == -1) {
+                hVar.f41363E0 = 0;
             }
         } else {
-            if (gVar.f41583D0 == -1) {
-                gVar.f41583D0 = 0;
+            if (hVar.f41362D0 == -1) {
+                hVar.f41362D0 = 0;
             }
-            if (gVar.f41584E0 == -1) {
-                gVar.f41584E0 = 0;
+            if (hVar.f41363E0 == -1) {
+                hVar.f41363E0 = 0;
             }
         }
-        C5139d[] c5139dArr2 = gVar.f41622q0;
+        C5130e[] c5130eArr2 = hVar.f41401q0;
+        int i32 = 0;
         int i33 = 0;
-        int i34 = 0;
         char c9 = 0;
         while (true) {
-            i9 = gVar.f41623r0;
-            if (i33 >= i9) {
+            i6 = hVar.f41402r0;
+            if (i32 >= i6) {
                 break;
             }
-            if (gVar.f41622q0[i33].f41516g0 == 8) {
-                i34++;
+            if (hVar.f41401q0[i32].f41295g0 == 8) {
+                i33++;
             }
-            i33++;
+            i32++;
         }
-        if (i34 > 0) {
-            C5139d[] c5139dArr3 = new C5139d[i9 - i34];
-            int i35 = 0;
-            i10 = 0;
-            while (i35 < gVar.f41623r0) {
-                C5139d c5139d4 = gVar.f41622q0[i35];
-                int i36 = i27;
-                C5139d[] c5139dArr4 = c5139dArr3;
-                if (c5139d4.f41516g0 != 8) {
-                    c5139dArr4[i10] = c5139d4;
-                    i10++;
+        if (i33 > 0) {
+            C5130e[] c5130eArr3 = new C5130e[i6 - i33];
+            int i34 = 0;
+            i9 = 0;
+            while (i34 < hVar.f41402r0) {
+                C5130e c5130e4 = hVar.f41401q0[i34];
+                int i35 = i26;
+                C5130e[] c5130eArr4 = c5130eArr3;
+                if (c5130e4.f41295g0 != 8) {
+                    c5130eArr4[i9] = c5130e4;
+                    i9++;
                 }
-                i35++;
-                i27 = i36;
-                c5139dArr3 = c5139dArr4;
+                i34++;
+                i26 = i35;
+                c5130eArr3 = c5130eArr4;
             }
-            c5139dArr = c5139dArr3;
+            c5130eArr = c5130eArr3;
         } else {
-            i10 = i9;
-            c5139dArr = c5139dArr2;
+            i9 = i6;
+            c5130eArr = c5130eArr2;
         }
-        int i37 = i27;
-        gVar.f41606a1 = c5139dArr;
-        gVar.f41607b1 = i10;
-        int i38 = gVar.f41599T0;
-        ArrayList arrayList = gVar.f41602W0;
-        if (i38 != 0) {
-            C5138c c5138c = gVar.J;
-            C5138c c5138c2 = gVar.f41487I;
-            C5138c c5138c3 = gVar.f41488K;
-            C5138c c5138c4 = gVar.f41489L;
-            int[] iArr3 = gVar.f41532p0;
-            if (i38 == 1) {
+        int i36 = i26;
+        hVar.f41385a1 = c5130eArr;
+        hVar.f41386b1 = i9;
+        int i37 = hVar.f41378T0;
+        ArrayList arrayList = hVar.f41381W0;
+        if (i37 != 0) {
+            C5129d c5129d = hVar.J;
+            C5129d c5129d2 = hVar.f41266I;
+            C5129d c5129d3 = hVar.f41267K;
+            C5129d c5129d4 = hVar.f41268L;
+            int[] iArr3 = hVar.f41311p0;
+            if (i37 == 1) {
+                i10 = i27;
                 i11 = i28;
                 i12 = i29;
-                i13 = i30;
                 iArr = iArr2;
-                i14 = size2;
-                i15 = i37;
-                int i39 = gVar.f41601V0;
-                if (i10 != 0) {
+                i13 = size2;
+                i14 = i36;
+                int i38 = hVar.f41380V0;
+                if (i9 != 0) {
                     arrayList.clear();
-                    f fVar3 = new f(gVar, i39, gVar.f41487I, gVar.J, gVar.f41488K, gVar.f41489L, i31);
-                    arrayList.add(fVar3);
-                    if (i39 == 0) {
+                    g gVar2 = new g(hVar, i38, hVar.f41266I, hVar.J, hVar.f41267K, hVar.f41268L, i30);
+                    arrayList.add(gVar2);
+                    if (i38 == 0) {
+                        int i39 = 0;
+                        i15 = 0;
                         int i40 = 0;
-                        i16 = 0;
-                        int i41 = 0;
-                        while (i40 < i10) {
-                            C5139d c5139d5 = c5139dArr[i40];
-                            int U3 = gVar.U(c5139d5, i31);
-                            if (c5139d5.f41532p0[0] == 3) {
-                                i16++;
+                        while (i39 < i9) {
+                            C5130e c5130e5 = c5130eArr[i39];
+                            int U8 = hVar.U(c5130e5, i30);
+                            if (c5130e5.f41311p0[0] == 3) {
+                                i15++;
                             }
-                            int i42 = i16;
-                            boolean z3 = (i41 == i31 || (gVar.f41595P0 + i41) + U3 > i31) && fVar3.f41565b != null;
-                            if (!z3 && i40 > 0 && (i18 = gVar.f41600U0) > 0 && i40 % i18 == 0) {
-                                z3 = true;
-                            }
-                            if (z3) {
-                                fVar3 = new f(gVar, i39, gVar.f41487I, gVar.J, gVar.f41488K, gVar.f41489L, i31);
-                                fVar3.f41576n = i40;
-                                arrayList.add(fVar3);
-                            } else if (i40 > 0) {
-                                i41 = gVar.f41595P0 + U3 + i41;
-                                fVar3.a(c5139d5);
-                                i40++;
-                                i16 = i42;
-                            }
-                            i41 = U3;
-                            fVar3.a(c5139d5);
-                            i40++;
-                            i16 = i42;
-                        }
-                    } else {
-                        int i43 = 0;
-                        i16 = 0;
-                        int i44 = 0;
-                        while (i43 < i10) {
-                            C5139d c5139d6 = c5139dArr[i43];
-                            int T8 = gVar.T(c5139d6, i31);
-                            if (c5139d6.f41532p0[1] == 3) {
-                                i16++;
-                            }
-                            int i45 = i16;
-                            boolean z6 = (i44 == i31 || (gVar.f41596Q0 + i44) + T8 > i31) && fVar3.f41565b != null;
-                            if (!z6 && i43 > 0 && (i17 = gVar.f41600U0) > 0 && i43 % i17 == 0) {
+                            int i41 = i15;
+                            boolean z6 = (i40 == i30 || (hVar.f41374P0 + i40) + U8 > i30) && gVar2.f41344b != null;
+                            if (!z6 && i39 > 0 && (i17 = hVar.f41379U0) > 0 && i39 % i17 == 0) {
                                 z6 = true;
                             }
                             if (z6) {
-                                fVar3 = new f(gVar, i39, gVar.f41487I, gVar.J, gVar.f41488K, gVar.f41489L, i31);
-                                fVar3.f41576n = i43;
-                                arrayList.add(fVar3);
-                            } else if (i43 > 0) {
-                                i44 = gVar.f41596Q0 + T8 + i44;
-                                fVar3.a(c5139d6);
-                                i43++;
-                                i16 = i45;
+                                gVar2 = new g(hVar, i38, hVar.f41266I, hVar.J, hVar.f41267K, hVar.f41268L, i30);
+                                gVar2.f41355n = i39;
+                                arrayList.add(gVar2);
+                            } else if (i39 > 0) {
+                                i40 = hVar.f41374P0 + U8 + i40;
+                                gVar2.a(c5130e5);
+                                i39++;
+                                i15 = i41;
                             }
-                            i44 = T8;
-                            fVar3.a(c5139d6);
-                            i43++;
-                            i16 = i45;
+                            i40 = U8;
+                            gVar2.a(c5130e5);
+                            i39++;
+                            i15 = i41;
+                        }
+                    } else {
+                        int i42 = 0;
+                        i15 = 0;
+                        int i43 = 0;
+                        while (i42 < i9) {
+                            C5130e c5130e6 = c5130eArr[i42];
+                            int T8 = hVar.T(c5130e6, i30);
+                            if (c5130e6.f41311p0[1] == 3) {
+                                i15++;
+                            }
+                            int i44 = i15;
+                            boolean z9 = (i43 == i30 || (hVar.f41375Q0 + i43) + T8 > i30) && gVar2.f41344b != null;
+                            if (!z9 && i42 > 0 && (i16 = hVar.f41379U0) > 0 && i42 % i16 == 0) {
+                                z9 = true;
+                            }
+                            if (z9) {
+                                gVar2 = new g(hVar, i38, hVar.f41266I, hVar.J, hVar.f41267K, hVar.f41268L, i30);
+                                gVar2.f41355n = i42;
+                                arrayList.add(gVar2);
+                            } else if (i42 > 0) {
+                                i43 = hVar.f41375Q0 + T8 + i43;
+                                gVar2.a(c5130e6);
+                                i42++;
+                                i15 = i44;
+                            }
+                            i43 = T8;
+                            gVar2.a(c5130e6);
+                            i42++;
+                            i15 = i44;
                         }
                     }
                     int size3 = arrayList.size();
-                    int i46 = gVar.f41612w0;
-                    int i47 = gVar.f41608s0;
-                    int i48 = gVar.f41613x0;
-                    int i49 = gVar.f41609t0;
-                    boolean z9 = iArr3[0] == 2 || iArr3[1] == 2;
-                    if (i16 > 0 && z9) {
-                        for (int i50 = 0; i50 < size3; i50++) {
-                            f fVar4 = (f) arrayList.get(i50);
-                            if (i39 == 0) {
-                                fVar4.e(i31 - fVar4.d());
+                    int i45 = hVar.f41391w0;
+                    int i46 = hVar.f41387s0;
+                    int i47 = hVar.f41392x0;
+                    int i48 = hVar.f41388t0;
+                    boolean z10 = iArr3[0] == 2 || iArr3[1] == 2;
+                    if (i15 > 0 && z10) {
+                        for (int i49 = 0; i49 < size3; i49++) {
+                            g gVar3 = (g) arrayList.get(i49);
+                            if (i38 == 0) {
+                                gVar3.e(i30 - gVar3.d());
                             } else {
-                                fVar4.e(i31 - fVar4.c());
+                                gVar3.e(i30 - gVar3.c());
                             }
                         }
                     }
+                    int i50 = i45;
                     int i51 = i46;
                     int i52 = i47;
                     int i53 = i48;
-                    int i54 = i49;
-                    C5138c c5138c5 = c5138c2;
-                    C5138c c5138c6 = c5138c;
+                    C5129d c5129d5 = c5129d2;
+                    C5129d c5129d6 = c5129d;
+                    int i54 = 0;
                     int i55 = 0;
-                    int i56 = 0;
-                    C5138c c5138c7 = c5138c3;
-                    C5138c c5138c8 = c5138c4;
-                    for (int i57 = 0; i57 < size3; i57++) {
-                        f fVar5 = (f) arrayList.get(i57);
-                        if (i39 == 0) {
-                            if (i57 < size3 - 1) {
-                                c5138c8 = ((f) arrayList.get(i57 + 1)).f41565b.J;
-                                i54 = 0;
-                            } else {
-                                i54 = gVar.f41609t0;
-                                c5138c8 = c5138c4;
-                            }
-                            C5138c c5138c9 = fVar5.f41565b.f41489L;
-                            fVar5.f(i39, c5138c5, c5138c6, c5138c7, c5138c8, i51, i52, i53, i54, i31);
-                            i55 = Math.max(i55, fVar5.d());
-                            int c10 = fVar5.c() + i56;
-                            if (i57 > 0) {
-                                c10 += gVar.f41596Q0;
-                            }
-                            i56 = c10;
-                            c5138c6 = c5138c9;
-                            i52 = 0;
-                        } else {
-                            if (i57 < size3 - 1) {
-                                c5138c7 = ((f) arrayList.get(i57 + 1)).f41565b.f41487I;
+                    C5129d c5129d7 = c5129d3;
+                    C5129d c5129d8 = c5129d4;
+                    for (int i56 = 0; i56 < size3; i56++) {
+                        g gVar4 = (g) arrayList.get(i56);
+                        if (i38 == 0) {
+                            if (i56 < size3 - 1) {
+                                c5129d8 = ((g) arrayList.get(i56 + 1)).f41344b.J;
                                 i53 = 0;
                             } else {
-                                i53 = gVar.f41613x0;
-                                c5138c7 = c5138c3;
+                                i53 = hVar.f41388t0;
+                                c5129d8 = c5129d4;
                             }
-                            C5138c c5138c10 = fVar5.f41565b.f41488K;
-                            fVar5.f(i39, c5138c5, c5138c6, c5138c7, c5138c8, i51, i52, i53, i54, i31);
-                            int d2 = fVar5.d() + i55;
-                            int max = Math.max(i56, fVar5.c());
-                            if (i57 > 0) {
-                                d2 += gVar.f41595P0;
+                            C5129d c5129d9 = gVar4.f41344b.f41268L;
+                            gVar4.f(i38, c5129d5, c5129d6, c5129d7, c5129d8, i50, i51, i52, i53, i30);
+                            i54 = Math.max(i54, gVar4.d());
+                            int c10 = gVar4.c() + i55;
+                            if (i56 > 0) {
+                                c10 += hVar.f41375Q0;
                             }
-                            i56 = max;
-                            i55 = d2;
-                            c5138c5 = c5138c10;
+                            i55 = c10;
+                            c5129d6 = c5129d9;
                             i51 = 0;
+                        } else {
+                            if (i56 < size3 - 1) {
+                                c5129d7 = ((g) arrayList.get(i56 + 1)).f41344b.f41266I;
+                                i52 = 0;
+                            } else {
+                                i52 = hVar.f41392x0;
+                                c5129d7 = c5129d3;
+                            }
+                            C5129d c5129d10 = gVar4.f41344b.f41267K;
+                            gVar4.f(i38, c5129d5, c5129d6, c5129d7, c5129d8, i50, i51, i52, i53, i30);
+                            int d9 = gVar4.d() + i54;
+                            int max = Math.max(i55, gVar4.c());
+                            if (i56 > 0) {
+                                d9 += hVar.f41374P0;
+                            }
+                            i55 = max;
+                            i54 = d9;
+                            c5129d5 = c5129d10;
+                            i50 = 0;
                         }
                     }
-                    iArr[0] = i55;
-                    iArr[1] = i56;
+                    iArr[0] = i54;
+                    iArr[1] = i55;
                 }
-            } else if (i38 != 2) {
-                if (i38 == 3) {
-                    int i58 = gVar.f41601V0;
-                    if (i10 != 0) {
+            } else if (i37 != 2) {
+                if (i37 == 3) {
+                    int i57 = hVar.f41380V0;
+                    if (i9 != 0) {
                         arrayList.clear();
-                        i15 = i37;
+                        i14 = i36;
+                        i10 = i27;
                         i11 = i28;
                         i12 = i29;
-                        i13 = i30;
                         iArr = iArr2;
-                        f fVar6 = new f(gVar, i58, gVar.f41487I, gVar.J, gVar.f41488K, gVar.f41489L, i31);
-                        arrayList.add(fVar6);
-                        if (i58 == 0) {
+                        g gVar5 = new g(hVar, i57, hVar.f41266I, hVar.J, hVar.f41267K, hVar.f41268L, i30);
+                        arrayList.add(gVar5);
+                        if (i57 == 0) {
+                            int i58 = 0;
                             int i59 = 0;
+                            i20 = 0;
                             int i60 = 0;
-                            i21 = 0;
-                            int i61 = 0;
-                            while (i59 < i10) {
-                                i60++;
-                                C5139d c5139d7 = c5139dArr[i59];
-                                int U8 = gVar.U(c5139d7, i31);
+                            while (i58 < i9) {
+                                i59++;
+                                C5130e c5130e7 = c5130eArr[i58];
+                                int U9 = hVar.U(c5130e7, i30);
+                                int i61 = i57;
                                 int i62 = i58;
-                                int i63 = i59;
-                                if (c5139d7.f41532p0[0] == 3) {
-                                    i21++;
+                                if (c5130e7.f41311p0[0] == 3) {
+                                    i20++;
                                 }
-                                int i64 = i21;
-                                boolean z10 = (i61 == i31 || (gVar.f41595P0 + i61) + U8 > i31) && fVar6.f41565b != null;
-                                if (!z10 && i63 > 0 && (i25 = gVar.f41600U0) > 0 && i60 > i25) {
-                                    z10 = true;
-                                }
-                                if (z10) {
-                                    i58 = i62;
-                                    i23 = size2;
-                                    i24 = i63;
-                                    fVar6 = new f(gVar, i58, gVar.f41487I, gVar.J, gVar.f41488K, gVar.f41489L, i31);
-                                    fVar6.f41576n = i24;
-                                    arrayList.add(fVar6);
-                                    i61 = U8;
-                                    i60 = 1;
-                                } else {
-                                    i58 = i62;
-                                    i23 = size2;
-                                    i24 = i63;
-                                    i61 = i24 > 0 ? gVar.f41595P0 + U8 + i61 : U8;
-                                }
-                                fVar6.a(c5139d7);
-                                i59 = i24 + 1;
-                                i21 = i64;
-                                size2 = i23;
-                            }
-                            i14 = size2;
-                        } else {
-                            i14 = size2;
-                            int i65 = 0;
-                            int i66 = 0;
-                            int i67 = 0;
-                            int i68 = 0;
-                            while (i65 < i10) {
-                                i66++;
-                                C5139d c5139d8 = c5139dArr[i65];
-                                int T9 = gVar.T(c5139d8, i31);
-                                int i69 = i58;
-                                if (c5139d8.f41532p0[1] == 3) {
-                                    i67++;
-                                }
-                                int i70 = i67;
-                                boolean z11 = (i68 == i31 || (gVar.f41596Q0 + i68) + T9 > i31) && fVar6.f41565b != null;
-                                if (!z11 && i65 > 0 && (i22 = gVar.f41600U0) > 0 && i66 > i22) {
+                                int i63 = i20;
+                                boolean z11 = (i60 == i30 || (hVar.f41374P0 + i60) + U9 > i30) && gVar5.f41344b != null;
+                                if (!z11 && i62 > 0 && (i24 = hVar.f41379U0) > 0 && i59 > i24) {
                                     z11 = true;
                                 }
                                 if (z11) {
-                                    i58 = i69;
-                                    fVar6 = new f(gVar, i58, gVar.f41487I, gVar.J, gVar.f41488K, gVar.f41489L, i31);
-                                    fVar6.f41576n = i65;
-                                    arrayList.add(fVar6);
-                                    i68 = T9;
-                                    i66 = 1;
+                                    i57 = i61;
+                                    i22 = size2;
+                                    i23 = i62;
+                                    gVar5 = new g(hVar, i57, hVar.f41266I, hVar.J, hVar.f41267K, hVar.f41268L, i30);
+                                    gVar5.f41355n = i23;
+                                    arrayList.add(gVar5);
+                                    i60 = U9;
+                                    i59 = 1;
                                 } else {
-                                    i58 = i69;
-                                    i68 = i65 > 0 ? gVar.f41596Q0 + T9 + i68 : T9;
+                                    i57 = i61;
+                                    i22 = size2;
+                                    i23 = i62;
+                                    i60 = i23 > 0 ? hVar.f41374P0 + U9 + i60 : U9;
                                 }
-                                fVar6.a(c5139d8);
-                                i65++;
-                                i67 = i70;
+                                gVar5.a(c5130e7);
+                                i58 = i23 + 1;
+                                i20 = i63;
+                                size2 = i22;
                             }
-                            i21 = i67;
+                            i13 = size2;
+                        } else {
+                            i13 = size2;
+                            int i64 = 0;
+                            int i65 = 0;
+                            int i66 = 0;
+                            int i67 = 0;
+                            while (i64 < i9) {
+                                i65++;
+                                C5130e c5130e8 = c5130eArr[i64];
+                                int T9 = hVar.T(c5130e8, i30);
+                                int i68 = i57;
+                                if (c5130e8.f41311p0[1] == 3) {
+                                    i66++;
+                                }
+                                int i69 = i66;
+                                boolean z12 = (i67 == i30 || (hVar.f41375Q0 + i67) + T9 > i30) && gVar5.f41344b != null;
+                                if (!z12 && i64 > 0 && (i21 = hVar.f41379U0) > 0 && i65 > i21) {
+                                    z12 = true;
+                                }
+                                if (z12) {
+                                    i57 = i68;
+                                    gVar5 = new g(hVar, i57, hVar.f41266I, hVar.J, hVar.f41267K, hVar.f41268L, i30);
+                                    gVar5.f41355n = i64;
+                                    arrayList.add(gVar5);
+                                    i67 = T9;
+                                    i65 = 1;
+                                } else {
+                                    i57 = i68;
+                                    i67 = i64 > 0 ? hVar.f41375Q0 + T9 + i67 : T9;
+                                }
+                                gVar5.a(c5130e8);
+                                i64++;
+                                i66 = i69;
+                            }
+                            i20 = i66;
                         }
                         int size4 = arrayList.size();
-                        int i71 = gVar.f41612w0;
-                        int i72 = gVar.f41608s0;
-                        int i73 = gVar.f41613x0;
-                        int i74 = gVar.f41609t0;
-                        boolean z12 = iArr3[0] == 2 || iArr3[1] == 2;
-                        if (i21 > 0 && z12) {
-                            for (int i75 = 0; i75 < size4; i75++) {
-                                f fVar7 = (f) arrayList.get(i75);
-                                if (i58 == 0) {
-                                    fVar7.e(i31 - fVar7.d());
+                        int i70 = hVar.f41391w0;
+                        int i71 = hVar.f41387s0;
+                        int i72 = hVar.f41392x0;
+                        int i73 = hVar.f41388t0;
+                        boolean z13 = iArr3[0] == 2 || iArr3[1] == 2;
+                        if (i20 > 0 && z13) {
+                            for (int i74 = 0; i74 < size4; i74++) {
+                                g gVar6 = (g) arrayList.get(i74);
+                                if (i57 == 0) {
+                                    gVar6.e(i30 - gVar6.d());
                                 } else {
-                                    fVar7.e(i31 - fVar7.c());
+                                    gVar6.e(i30 - gVar6.c());
                                 }
                             }
                         }
+                        int i75 = i70;
                         int i76 = i71;
                         int i77 = i72;
                         int i78 = i73;
-                        int i79 = i74;
-                        C5138c c5138c11 = c5138c2;
-                        C5138c c5138c12 = c5138c;
+                        C5129d c5129d11 = c5129d2;
+                        C5129d c5129d12 = c5129d;
+                        int i79 = 0;
                         int i80 = 0;
-                        int i81 = 0;
-                        C5138c c5138c13 = c5138c3;
-                        C5138c c5138c14 = c5138c4;
-                        for (int i82 = 0; i82 < size4; i82++) {
-                            f fVar8 = (f) arrayList.get(i82);
-                            if (i58 == 0) {
-                                if (i82 < size4 - 1) {
-                                    c5138c14 = ((f) arrayList.get(i82 + 1)).f41565b.J;
-                                    i79 = 0;
-                                } else {
-                                    i79 = gVar.f41609t0;
-                                    c5138c14 = c5138c4;
-                                }
-                                C5138c c5138c15 = fVar8.f41565b.f41489L;
-                                fVar8.f(i58, c5138c11, c5138c12, c5138c13, c5138c14, i76, i77, i78, i79, i31);
-                                i80 = Math.max(i80, fVar8.d());
-                                int c11 = fVar8.c() + i81;
-                                if (i82 > 0) {
-                                    c11 += gVar.f41596Q0;
-                                }
-                                i81 = c11;
-                                c5138c12 = c5138c15;
-                                i77 = 0;
-                            } else {
-                                if (i82 < size4 - 1) {
-                                    c5138c13 = ((f) arrayList.get(i82 + 1)).f41565b.f41487I;
+                        C5129d c5129d13 = c5129d3;
+                        C5129d c5129d14 = c5129d4;
+                        for (int i81 = 0; i81 < size4; i81++) {
+                            g gVar7 = (g) arrayList.get(i81);
+                            if (i57 == 0) {
+                                if (i81 < size4 - 1) {
+                                    c5129d14 = ((g) arrayList.get(i81 + 1)).f41344b.J;
                                     i78 = 0;
                                 } else {
-                                    i78 = gVar.f41613x0;
-                                    c5138c13 = c5138c3;
+                                    i78 = hVar.f41388t0;
+                                    c5129d14 = c5129d4;
                                 }
-                                C5138c c5138c16 = fVar8.f41565b.f41488K;
-                                fVar8.f(i58, c5138c11, c5138c12, c5138c13, c5138c14, i76, i77, i78, i79, i31);
-                                int d9 = fVar8.d() + i80;
-                                int max2 = Math.max(i81, fVar8.c());
-                                if (i82 > 0) {
-                                    d9 += gVar.f41595P0;
+                                C5129d c5129d15 = gVar7.f41344b.f41268L;
+                                gVar7.f(i57, c5129d11, c5129d12, c5129d13, c5129d14, i75, i76, i77, i78, i30);
+                                i79 = Math.max(i79, gVar7.d());
+                                int c11 = gVar7.c() + i80;
+                                if (i81 > 0) {
+                                    c11 += hVar.f41375Q0;
                                 }
-                                i81 = max2;
-                                i80 = d9;
-                                c5138c11 = c5138c16;
+                                i80 = c11;
+                                c5129d12 = c5129d15;
                                 i76 = 0;
+                            } else {
+                                if (i81 < size4 - 1) {
+                                    c5129d13 = ((g) arrayList.get(i81 + 1)).f41344b.f41266I;
+                                    i77 = 0;
+                                } else {
+                                    i77 = hVar.f41392x0;
+                                    c5129d13 = c5129d3;
+                                }
+                                C5129d c5129d16 = gVar7.f41344b.f41267K;
+                                gVar7.f(i57, c5129d11, c5129d12, c5129d13, c5129d14, i75, i76, i77, i78, i30);
+                                int d10 = gVar7.d() + i79;
+                                int max2 = Math.max(i80, gVar7.c());
+                                if (i81 > 0) {
+                                    d10 += hVar.f41374P0;
+                                }
+                                i80 = max2;
+                                i79 = d10;
+                                c5129d11 = c5129d16;
+                                i75 = 0;
                             }
                         }
-                        iArr[0] = i80;
-                        iArr[1] = i81;
+                        iArr[0] = i79;
+                        iArr[1] = i80;
                     }
                 }
+                i10 = i27;
                 i11 = i28;
                 i12 = i29;
-                i13 = i30;
                 iArr = iArr2;
-                i14 = size2;
-                i15 = i37;
+                i13 = size2;
+                i14 = i36;
             } else {
+                i10 = i27;
                 i11 = i28;
                 i12 = i29;
-                i13 = i30;
                 iArr = iArr2;
-                i14 = size2;
-                i15 = i37;
-                int i83 = gVar.f41601V0;
-                if (i83 == 0) {
-                    int i84 = gVar.f41600U0;
-                    if (i84 <= 0) {
-                        int i85 = 0;
-                        i20 = 0;
-                        for (int i86 = 0; i86 < i10; i86++) {
-                            if (i86 > 0) {
-                                i85 += gVar.f41595P0;
+                i13 = size2;
+                i14 = i36;
+                int i82 = hVar.f41380V0;
+                if (i82 == 0) {
+                    int i83 = hVar.f41379U0;
+                    if (i83 <= 0) {
+                        int i84 = 0;
+                        i19 = 0;
+                        for (int i85 = 0; i85 < i9; i85++) {
+                            if (i85 > 0) {
+                                i84 += hVar.f41374P0;
                             }
-                            C5139d c5139d9 = c5139dArr[i86];
-                            if (c5139d9 != null) {
-                                int U9 = gVar.U(c5139d9, i31) + i85;
-                                if (U9 > i31) {
+                            C5130e c5130e9 = c5130eArr[i85];
+                            if (c5130e9 != null) {
+                                int U10 = hVar.U(c5130e9, i30) + i84;
+                                if (U10 > i30) {
                                     break;
                                 }
-                                i20++;
-                                i85 = U9;
+                                i19++;
+                                i84 = U10;
                             }
                         }
                     } else {
-                        i20 = i84;
+                        i19 = i83;
+                    }
+                    i18 = 0;
+                } else {
+                    i18 = hVar.f41379U0;
+                    if (i18 <= 0) {
+                        int i86 = 0;
+                        int i87 = 0;
+                        for (int i88 = 0; i88 < i9; i88++) {
+                            if (i88 > 0) {
+                                i86 += hVar.f41375Q0;
+                            }
+                            C5130e c5130e10 = c5130eArr[i88];
+                            if (c5130e10 != null) {
+                                int T10 = hVar.T(c5130e10, i30) + i86;
+                                if (T10 > i30) {
+                                    break;
+                                }
+                                i87++;
+                                i86 = T10;
+                            }
+                        }
+                        i18 = i87;
                     }
                     i19 = 0;
-                } else {
-                    i19 = gVar.f41600U0;
-                    if (i19 <= 0) {
-                        int i87 = 0;
-                        int i88 = 0;
-                        for (int i89 = 0; i89 < i10; i89++) {
-                            if (i89 > 0) {
-                                i87 += gVar.f41596Q0;
-                            }
-                            C5139d c5139d10 = c5139dArr[i89];
-                            if (c5139d10 != null) {
-                                int T10 = gVar.T(c5139d10, i31) + i87;
-                                if (T10 > i31) {
-                                    break;
-                                }
-                                i88++;
-                                i87 = T10;
-                            }
-                        }
-                        i19 = i88;
-                    }
-                    i20 = 0;
                 }
-                if (gVar.f41605Z0 == null) {
-                    gVar.f41605Z0 = new int[2];
+                if (hVar.f41384Z0 == null) {
+                    hVar.f41384Z0 = new int[2];
                 }
-                boolean z13 = (i19 == 0 && i83 == 1) || (i20 == 0 && i83 == 0);
-                while (!z13) {
-                    if (i83 == 0) {
-                        i19 = (int) Math.ceil(i10 / i20);
+                boolean z14 = (i18 == 0 && i82 == 1) || (i19 == 0 && i82 == 0);
+                while (!z14) {
+                    if (i82 == 0) {
+                        i18 = (int) Math.ceil(i9 / i19);
                     } else {
-                        i20 = (int) Math.ceil(i10 / i19);
+                        i19 = (int) Math.ceil(i9 / i18);
                     }
-                    C5139d[] c5139dArr5 = gVar.f41604Y0;
-                    if (c5139dArr5 == null || c5139dArr5.length < i20) {
+                    C5130e[] c5130eArr5 = hVar.f41383Y0;
+                    if (c5130eArr5 == null || c5130eArr5.length < i19) {
                         obj = null;
-                        gVar.f41604Y0 = new C5139d[i20];
+                        hVar.f41383Y0 = new C5130e[i19];
                     } else {
                         obj = null;
-                        Arrays.fill(c5139dArr5, (Object) null);
+                        Arrays.fill(c5130eArr5, (Object) null);
                     }
-                    C5139d[] c5139dArr6 = gVar.f41603X0;
-                    if (c5139dArr6 == null || c5139dArr6.length < i19) {
-                        gVar.f41603X0 = new C5139d[i19];
+                    C5130e[] c5130eArr6 = hVar.f41382X0;
+                    if (c5130eArr6 == null || c5130eArr6.length < i18) {
+                        hVar.f41382X0 = new C5130e[i18];
                     } else {
-                        Arrays.fill(c5139dArr6, obj);
+                        Arrays.fill(c5130eArr6, obj);
                     }
-                    for (int i90 = 0; i90 < i20; i90++) {
-                        for (int i91 = 0; i91 < i19; i91++) {
-                            int i92 = (i91 * i20) + i90;
-                            if (i83 == 1) {
-                                i92 = (i90 * i19) + i91;
+                    for (int i89 = 0; i89 < i19; i89++) {
+                        for (int i90 = 0; i90 < i18; i90++) {
+                            int i91 = (i90 * i19) + i89;
+                            if (i82 == 1) {
+                                i91 = (i89 * i18) + i90;
                             }
-                            if (i92 < c5139dArr.length && (c5139d = c5139dArr[i92]) != null) {
-                                int U10 = gVar.U(c5139d, i31);
-                                C5139d c5139d11 = gVar.f41604Y0[i90];
-                                if (c5139d11 == null || c5139d11.q() < U10) {
-                                    gVar.f41604Y0[i90] = c5139d;
+                            if (i91 < c5130eArr.length && (c5130e = c5130eArr[i91]) != null) {
+                                int U11 = hVar.U(c5130e, i30);
+                                C5130e c5130e11 = hVar.f41383Y0[i89];
+                                if (c5130e11 == null || c5130e11.q() < U11) {
+                                    hVar.f41383Y0[i89] = c5130e;
                                 }
-                                int T11 = gVar.T(c5139d, i31);
-                                C5139d c5139d12 = gVar.f41603X0[i91];
-                                if (c5139d12 == null || c5139d12.k() < T11) {
-                                    gVar.f41603X0[i91] = c5139d;
+                                int T11 = hVar.T(c5130e, i30);
+                                C5130e c5130e12 = hVar.f41382X0[i90];
+                                if (c5130e12 == null || c5130e12.k() < T11) {
+                                    hVar.f41382X0[i90] = c5130e;
                                 }
                             }
                         }
                     }
-                    int i93 = 0;
-                    for (int i94 = 0; i94 < i20; i94++) {
-                        C5139d c5139d13 = gVar.f41604Y0[i94];
-                        if (c5139d13 != null) {
-                            if (i94 > 0) {
-                                i93 += gVar.f41595P0;
+                    int i92 = 0;
+                    for (int i93 = 0; i93 < i19; i93++) {
+                        C5130e c5130e13 = hVar.f41383Y0[i93];
+                        if (c5130e13 != null) {
+                            if (i93 > 0) {
+                                i92 += hVar.f41374P0;
                             }
-                            i93 = gVar.U(c5139d13, i31) + i93;
+                            i92 = hVar.U(c5130e13, i30) + i92;
                         }
                     }
-                    int i95 = 0;
-                    for (int i96 = 0; i96 < i19; i96++) {
-                        C5139d c5139d14 = gVar.f41603X0[i96];
-                        if (c5139d14 != null) {
-                            if (i96 > 0) {
-                                i95 += gVar.f41596Q0;
+                    int i94 = 0;
+                    for (int i95 = 0; i95 < i18; i95++) {
+                        C5130e c5130e14 = hVar.f41382X0[i95];
+                        if (c5130e14 != null) {
+                            if (i95 > 0) {
+                                i94 += hVar.f41375Q0;
                             }
-                            i95 = gVar.T(c5139d14, i31) + i95;
+                            i94 = hVar.T(c5130e14, i30) + i94;
                         }
                     }
-                    iArr[0] = i93;
-                    iArr[1] = i95;
-                    if (i83 == 0) {
-                        if (i93 > i31 && i20 > 1) {
-                            i20--;
-                        }
-                        z13 = true;
-                    } else {
-                        if (i95 > i31 && i19 > 1) {
+                    iArr[0] = i92;
+                    iArr[1] = i94;
+                    if (i82 == 0) {
+                        if (i92 > i30 && i19 > 1) {
                             i19--;
                         }
-                        z13 = true;
+                        z14 = true;
+                    } else {
+                        if (i94 > i30 && i18 > 1) {
+                            i18--;
+                        }
+                        z14 = true;
                     }
                 }
-                int[] iArr4 = gVar.f41605Z0;
-                iArr4[0] = i20;
-                iArr4[1] = i19;
+                int[] iArr4 = hVar.f41384Z0;
+                iArr4[0] = i19;
+                iArr4[1] = i18;
             }
         } else {
+            i10 = i27;
             i11 = i28;
             i12 = i29;
-            i13 = i30;
             iArr = iArr2;
-            i14 = size2;
-            i15 = i37;
-            int i97 = gVar.f41601V0;
-            if (i10 != 0) {
+            i13 = size2;
+            i14 = i36;
+            int i96 = hVar.f41380V0;
+            if (i9 != 0) {
                 if (arrayList.size() == 0) {
-                    fVar = new f(gVar, i97, gVar.f41487I, gVar.J, gVar.f41488K, gVar.f41489L, i31);
-                    arrayList.add(fVar);
+                    gVar = new g(hVar, i96, hVar.f41266I, hVar.J, hVar.f41267K, hVar.f41268L, i30);
+                    arrayList.add(gVar);
                 } else {
-                    fVar = (f) arrayList.get(0);
-                    fVar.f41566c = 0;
-                    fVar.f41565b = null;
-                    fVar.f41574l = 0;
-                    fVar.f41575m = 0;
-                    fVar.f41576n = 0;
-                    fVar.f41577o = 0;
-                    fVar.f41578p = 0;
-                    fVar.f(i97, gVar.f41487I, gVar.J, gVar.f41488K, gVar.f41489L, gVar.f41612w0, gVar.f41608s0, gVar.f41613x0, gVar.f41609t0, i31);
+                    gVar = (g) arrayList.get(0);
+                    gVar.f41345c = 0;
+                    gVar.f41344b = null;
+                    gVar.f41353l = 0;
+                    gVar.f41354m = 0;
+                    gVar.f41355n = 0;
+                    gVar.f41356o = 0;
+                    gVar.f41357p = 0;
+                    gVar.f(i96, hVar.f41266I, hVar.J, hVar.f41267K, hVar.f41268L, hVar.f41391w0, hVar.f41387s0, hVar.f41392x0, hVar.f41388t0, i30);
                 }
-                for (int i98 = 0; i98 < i10; i98++) {
-                    fVar.a(c5139dArr[i98]);
+                for (int i97 = 0; i97 < i9; i97++) {
+                    gVar.a(c5130eArr[i97]);
                 }
                 c9 = 0;
-                iArr[0] = fVar.d();
+                iArr[0] = gVar.d();
                 r28 = 1;
-                iArr[1] = fVar.c();
-                int i99 = iArr[c9] + i15 + i11;
-                int i100 = iArr[r28] + i12 + i13;
+                iArr[1] = gVar.c();
+                int i98 = iArr[c9] + i14 + i10;
+                int i99 = iArr[r28] + i11 + i12;
                 if (mode != 1073741824) {
-                    size = mode == Integer.MIN_VALUE ? Math.min(i99, size) : mode == 0 ? i99 : 0;
+                    size = mode == Integer.MIN_VALUE ? Math.min(i98, size) : mode == 0 ? i98 : 0;
                 }
-                int min = mode2 != 1073741824 ? i14 : mode2 == Integer.MIN_VALUE ? Math.min(i100, i14) : mode2 == 0 ? i100 : 0;
-                gVar.f41615z0 = size;
-                gVar.f41581A0 = min;
-                gVar.O(size);
-                gVar.L(min);
-                gVar.f41614y0 = gVar.f41623r0 <= 0 ? r28 : false;
-                setMeasuredDimension(gVar.f41615z0, gVar.f41581A0);
+                int min = mode2 != 1073741824 ? i13 : mode2 == Integer.MIN_VALUE ? Math.min(i99, i13) : mode2 == 0 ? i99 : 0;
+                hVar.f41394z0 = size;
+                hVar.f41360A0 = min;
+                hVar.O(size);
+                hVar.L(min);
+                hVar.f41393y0 = hVar.f41402r0 <= 0 ? r28 : false;
+                setMeasuredDimension(hVar.f41394z0, hVar.f41360A0);
             }
         }
         r28 = 1;
-        int i992 = iArr[c9] + i15 + i11;
-        int i1002 = iArr[r28] + i12 + i13;
+        int i982 = iArr[c9] + i14 + i10;
+        int i992 = iArr[r28] + i11 + i12;
         if (mode != 1073741824) {
         }
         if (mode2 != 1073741824) {
         }
-        gVar.f41615z0 = size;
-        gVar.f41581A0 = min;
-        gVar.O(size);
-        gVar.L(min);
-        gVar.f41614y0 = gVar.f41623r0 <= 0 ? r28 : false;
-        setMeasuredDimension(gVar.f41615z0, gVar.f41581A0);
+        hVar.f41394z0 = size;
+        hVar.f41360A0 = min;
+        hVar.O(size);
+        hVar.L(min);
+        hVar.f41393y0 = hVar.f41402r0 <= 0 ? r28 : false;
+        setMeasuredDimension(hVar.f41394z0, hVar.f41360A0);
     }
 
     @Override // z.c, android.view.View
-    public final void onMeasure(int i, int i6) {
-        j(this.f4642C, i, i6);
+    public final void onMeasure(int i, int i4) {
+        j(this.f4610C, i, i4);
     }
 
-    public void setFirstHorizontalBias(float f3) {
-        this.f4642C.f41591L0 = f3;
+    public void setFirstHorizontalBias(float f2) {
+        this.f4610C.f41370L0 = f2;
         requestLayout();
     }
 
     public void setFirstHorizontalStyle(int i) {
-        this.f4642C.f41585F0 = i;
+        this.f4610C.f41364F0 = i;
         requestLayout();
     }
 
-    public void setFirstVerticalBias(float f3) {
-        this.f4642C.f41592M0 = f3;
+    public void setFirstVerticalBias(float f2) {
+        this.f4610C.f41371M0 = f2;
         requestLayout();
     }
 
     public void setFirstVerticalStyle(int i) {
-        this.f4642C.f41586G0 = i;
+        this.f4610C.f41365G0 = i;
         requestLayout();
     }
 
     public void setHorizontalAlign(int i) {
-        this.f4642C.f41597R0 = i;
+        this.f4610C.f41376R0 = i;
         requestLayout();
     }
 
-    public void setHorizontalBias(float f3) {
-        this.f4642C.f41589J0 = f3;
+    public void setHorizontalBias(float f2) {
+        this.f4610C.f41368J0 = f2;
         requestLayout();
     }
 
     public void setHorizontalGap(int i) {
-        this.f4642C.f41595P0 = i;
+        this.f4610C.f41374P0 = i;
         requestLayout();
     }
 
     public void setHorizontalStyle(int i) {
-        this.f4642C.f41583D0 = i;
+        this.f4610C.f41362D0 = i;
         requestLayout();
     }
 
-    public void setLastHorizontalBias(float f3) {
-        this.f4642C.f41593N0 = f3;
+    public void setLastHorizontalBias(float f2) {
+        this.f4610C.f41372N0 = f2;
         requestLayout();
     }
 
     public void setLastHorizontalStyle(int i) {
-        this.f4642C.f41587H0 = i;
+        this.f4610C.f41366H0 = i;
         requestLayout();
     }
 
-    public void setLastVerticalBias(float f3) {
-        this.f4642C.f41594O0 = f3;
+    public void setLastVerticalBias(float f2) {
+        this.f4610C.f41373O0 = f2;
         requestLayout();
     }
 
     public void setLastVerticalStyle(int i) {
-        this.f4642C.f41588I0 = i;
+        this.f4610C.f41367I0 = i;
         requestLayout();
     }
 
     public void setMaxElementsWrap(int i) {
-        this.f4642C.f41600U0 = i;
+        this.f4610C.f41379U0 = i;
         requestLayout();
     }
 
     public void setOrientation(int i) {
-        this.f4642C.f41601V0 = i;
+        this.f4610C.f41380V0 = i;
         requestLayout();
     }
 
     public void setPadding(int i) {
-        g gVar = this.f4642C;
-        gVar.f41608s0 = i;
-        gVar.f41609t0 = i;
-        gVar.f41610u0 = i;
-        gVar.f41611v0 = i;
+        h hVar = this.f4610C;
+        hVar.f41387s0 = i;
+        hVar.f41388t0 = i;
+        hVar.f41389u0 = i;
+        hVar.f41390v0 = i;
         requestLayout();
     }
 
     public void setPaddingBottom(int i) {
-        this.f4642C.f41609t0 = i;
+        this.f4610C.f41388t0 = i;
         requestLayout();
     }
 
     public void setPaddingLeft(int i) {
-        this.f4642C.f41612w0 = i;
+        this.f4610C.f41391w0 = i;
         requestLayout();
     }
 
     public void setPaddingRight(int i) {
-        this.f4642C.f41613x0 = i;
+        this.f4610C.f41392x0 = i;
         requestLayout();
     }
 
     public void setPaddingTop(int i) {
-        this.f4642C.f41608s0 = i;
+        this.f4610C.f41387s0 = i;
         requestLayout();
     }
 
     public void setVerticalAlign(int i) {
-        this.f4642C.f41598S0 = i;
+        this.f4610C.f41377S0 = i;
         requestLayout();
     }
 
-    public void setVerticalBias(float f3) {
-        this.f4642C.f41590K0 = f3;
+    public void setVerticalBias(float f2) {
+        this.f4610C.f41369K0 = f2;
         requestLayout();
     }
 
     public void setVerticalGap(int i) {
-        this.f4642C.f41596Q0 = i;
+        this.f4610C.f41375Q0 = i;
         requestLayout();
     }
 
     public void setVerticalStyle(int i) {
-        this.f4642C.f41584E0 = i;
+        this.f4610C.f41363E0 = i;
         requestLayout();
     }
 
     public void setWrapMode(int i) {
-        this.f4642C.f41599T0 = i;
+        this.f4610C.f41378T0 = i;
         requestLayout();
     }
 }

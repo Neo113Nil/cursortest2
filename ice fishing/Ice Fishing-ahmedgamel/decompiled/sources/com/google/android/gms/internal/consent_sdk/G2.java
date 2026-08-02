@@ -3,87 +3,88 @@ package com.google.android.gms.internal.consent_sdk;
 import java.util.AbstractList;
 import java.util.Arrays;
 import java.util.RandomAccess;
+import w.AbstractC5128c;
 
 /* loaded from: classes2.dex */
-public final class G2 extends AbstractC4311d2 implements RandomAccess {
+public final class G2 extends AbstractC4334d2 implements RandomAccess {
 
     /* renamed from: w, reason: collision with root package name */
-    public static final Object[] f35518w;
+    public static final Object[] f36287w;
 
     /* renamed from: x, reason: collision with root package name */
-    public static final G2 f35519x;
+    public static final G2 f36288x;
 
     /* renamed from: u, reason: collision with root package name */
-    public Object[] f35520u;
+    public Object[] f36289u;
 
     /* renamed from: v, reason: collision with root package name */
-    public int f35521v;
+    public int f36290v;
 
     static {
         Object[] objArr = new Object[0];
-        f35518w = objArr;
-        f35519x = new G2(objArr, 0, false);
+        f36287w = objArr;
+        f36288x = new G2(objArr, 0, false);
     }
 
-    public G2(Object[] objArr, int i, boolean z3) {
-        super(z3);
-        this.f35520u = objArr;
-        this.f35521v = i;
+    public G2(Object[] objArr, int i, boolean z6) {
+        super(z6);
+        this.f36289u = objArr;
+        this.f36290v = i;
     }
 
     @Override // java.util.AbstractList, java.util.List
     public final void add(int i, Object obj) {
-        int i6;
+        int i4;
         a();
-        if (i < 0 || i > (i6 = this.f35521v)) {
-            throw new IndexOutOfBoundsException(u1.h.c(i, this.f35521v, "Index:", ", Size:"));
+        if (i < 0 || i > (i4 = this.f36290v)) {
+            throw new IndexOutOfBoundsException(AbstractC5128c.c(i, this.f36290v, "Index:", ", Size:"));
         }
-        int i9 = i + 1;
-        Object[] objArr = this.f35520u;
+        int i6 = i + 1;
+        Object[] objArr = this.f36289u;
         int length = objArr.length;
-        if (i6 < length) {
-            System.arraycopy(objArr, i, objArr, i9, i6 - i);
+        if (i4 < length) {
+            System.arraycopy(objArr, i, objArr, i6, i4 - i);
         } else {
             Object[] objArr2 = new Object[Math.max(((length * 3) / 2) + 1, 10)];
-            System.arraycopy(this.f35520u, 0, objArr2, 0, i);
-            System.arraycopy(this.f35520u, i, objArr2, i9, this.f35521v - i);
-            this.f35520u = objArr2;
+            System.arraycopy(this.f36289u, 0, objArr2, 0, i);
+            System.arraycopy(this.f36289u, i, objArr2, i6, this.f36290v - i);
+            this.f36289u = objArr2;
         }
-        this.f35520u[i] = obj;
-        this.f35521v++;
+        this.f36289u[i] = obj;
+        this.f36290v++;
         ((AbstractList) this).modCount++;
     }
 
-    @Override // com.google.android.gms.internal.consent_sdk.InterfaceC4366r2
-    public final /* bridge */ /* synthetic */ InterfaceC4366r2 b(int i) {
-        if (i >= this.f35521v) {
-            return new G2(i == 0 ? f35518w : Arrays.copyOf(this.f35520u, i), this.f35521v, true);
+    @Override // com.google.android.gms.internal.consent_sdk.InterfaceC4389r2
+    public final /* bridge */ /* synthetic */ InterfaceC4389r2 b(int i) {
+        if (i >= this.f36290v) {
+            return new G2(i == 0 ? f36287w : Arrays.copyOf(this.f36289u, i), this.f36290v, true);
         }
         throw new IllegalArgumentException();
     }
 
     public final void c(int i) {
-        if (i < 0 || i >= this.f35521v) {
-            throw new IndexOutOfBoundsException(u1.h.c(i, this.f35521v, "Index:", ", Size:"));
+        if (i < 0 || i >= this.f36290v) {
+            throw new IndexOutOfBoundsException(AbstractC5128c.c(i, this.f36290v, "Index:", ", Size:"));
         }
     }
 
     @Override // java.util.AbstractList, java.util.List
     public final Object get(int i) {
         c(i);
-        return this.f35520u[i];
+        return this.f36289u[i];
     }
 
-    @Override // com.google.android.gms.internal.consent_sdk.AbstractC4311d2, java.util.AbstractList, java.util.List
+    @Override // com.google.android.gms.internal.consent_sdk.AbstractC4334d2, java.util.AbstractList, java.util.List
     public final Object remove(int i) {
         a();
         c(i);
-        Object[] objArr = this.f35520u;
+        Object[] objArr = this.f36289u;
         Object obj = objArr[i];
-        if (i < this.f35521v - 1) {
+        if (i < this.f36290v - 1) {
             System.arraycopy(objArr, i + 1, objArr, i, (r2 - i) - 1);
         }
-        this.f35521v--;
+        this.f36290v--;
         ((AbstractList) this).modCount++;
         return obj;
     }
@@ -92,7 +93,7 @@ public final class G2 extends AbstractC4311d2 implements RandomAccess {
     public final Object set(int i, Object obj) {
         a();
         c(i);
-        Object[] objArr = this.f35520u;
+        Object[] objArr = this.f36289u;
         Object obj2 = objArr[i];
         objArr[i] = obj;
         ((AbstractList) this).modCount++;
@@ -101,21 +102,21 @@ public final class G2 extends AbstractC4311d2 implements RandomAccess {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
-        return this.f35521v;
+        return this.f36290v;
     }
 
     @Override // java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.util.List
     public final boolean add(Object obj) {
         a();
-        int i = this.f35521v;
-        int length = this.f35520u.length;
+        int i = this.f36290v;
+        int length = this.f36289u.length;
         if (i == length) {
-            this.f35520u = Arrays.copyOf(this.f35520u, Math.max(((length * 3) / 2) + 1, 10));
+            this.f36289u = Arrays.copyOf(this.f36289u, Math.max(((length * 3) / 2) + 1, 10));
         }
-        Object[] objArr = this.f35520u;
-        int i6 = this.f35521v;
-        this.f35521v = i6 + 1;
-        objArr[i6] = obj;
+        Object[] objArr = this.f36289u;
+        int i4 = this.f36290v;
+        this.f36290v = i4 + 1;
+        objArr[i4] = obj;
         ((AbstractList) this).modCount++;
         return true;
     }

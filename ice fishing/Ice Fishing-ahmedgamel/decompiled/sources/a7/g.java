@@ -6,34 +6,34 @@ import java.util.concurrent.atomic.AtomicLong;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public final double f4362a;
+    public final double f4330a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final long f4363b;
+    public final long f4331b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final AtomicLong f4364c;
+    public final AtomicLong f4332c;
 
-    public g(double d2, double d9) {
-        double d10 = d2 / 1.0E9d;
-        this.f4362a = d10;
-        long j6 = (long) (d9 / d10);
-        this.f4363b = j6;
-        this.f4364c = new AtomicLong(System.nanoTime() - j6);
+    public g(double d9, double d10) {
+        double d11 = d9 / 1.0E9d;
+        this.f4330a = d11;
+        long j6 = (long) (d10 / d11);
+        this.f4331b = j6;
+        this.f4332c = new AtomicLong(System.nanoTime() - j6);
     }
 
-    public final boolean a(double d2) {
+    public final boolean a(double d9) {
         AtomicLong atomicLong;
         long j6;
         long nanoTime;
         long j9;
-        long j10 = (long) (d2 / this.f4362a);
+        long j10 = (long) (d9 / this.f4330a);
         do {
-            atomicLong = this.f4364c;
+            atomicLong = this.f4332c;
             j6 = atomicLong.get();
             nanoTime = System.nanoTime();
             long j11 = nanoTime - j6;
-            long j12 = this.f4363b;
+            long j12 = this.f4331b;
             if (j11 > j12) {
                 j11 = j12;
             }

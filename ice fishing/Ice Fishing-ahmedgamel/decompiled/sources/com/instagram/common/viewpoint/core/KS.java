@@ -1,7 +1,7 @@
 package com.instagram.common.viewpoint.core;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class KS implements InterfaceC1482au {
+public class KS implements InterfaceC1502au {
     public static String[] A01 = {"Kf9IFIGkXS68FEluY8iO", "HZKyOot4e1aVyegaf8lIb0bgnGZodGvN", "MGWXSz8iondoAx3vwHSWPDz", "1vF28DvouTYuJpgxZbcCtj3BonOpfXf0", "hNMoe3gYfV5QWpuVljUPjUuKx8toPdic", "kDVCOfKU1nzjkl2JPkHRjE9k6FSheaPB", "SHeKxuODcoO7wzXqEy6VB5XREjq4nAxo", "ViwjD0ocXU7cRIhjEHnYvFil28fnYSUL"};
     public final /* synthetic */ KE A00;
 
@@ -9,14 +9,14 @@ public class KS implements InterfaceC1482au {
         this.A00 = ke;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1482au
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1502au
     public final void ADO() {
         this.A00.A0i(false);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1482au
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1502au
     public final void AF0() {
-        if (C1290Up.A15(this.A00.getAdContextWrapper())) {
+        if (C1310Up.A15(this.A00.getAdContextWrapper())) {
             KE ke = this.A00;
             String[] strArr = A01;
             if (strArr[2].length() == strArr[0].length()) {

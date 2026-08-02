@@ -14,10 +14,10 @@ public abstract class T2 {
         A04();
     }
 
-    public static String A03(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 31);
+    public static String A03(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 31);
         }
         return new String(copyOfRange);
     }
@@ -40,31 +40,31 @@ public abstract class T2 {
         return halfHeight;
     }
 
-    public static Bitmap A01(InputStream inputStream, int i, int i6) throws IOException {
-        C1061Lo c1061Lo = new C1061Lo(inputStream);
-        c1061Lo.mark(8192);
+    public static Bitmap A01(InputStream inputStream, int i, int i4) throws IOException {
+        C1081Lo c1081Lo = new C1081Lo(inputStream);
+        c1081Lo.mark(8192);
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inJustDecodeBounds = true;
-        BitmapFactory.decodeStream(c1061Lo, null, options);
-        c1061Lo.reset();
-        if (!c1061Lo.A00()) {
-            options.inSampleSize = A00(options, i6, i);
+        BitmapFactory.decodeStream(c1081Lo, null, options);
+        c1081Lo.reset();
+        if (!c1081Lo.A00()) {
+            options.inSampleSize = A00(options, i4, i);
             options.inJustDecodeBounds = false;
-            return BitmapFactory.decodeStream(c1061Lo, null, options);
+            return BitmapFactory.decodeStream(c1081Lo, null, options);
         }
-        return BitmapFactory.decodeStream(c1061Lo);
+        return BitmapFactory.decodeStream(c1081Lo);
     }
 
-    public static Bitmap A02(String str, int i, int i6, T8 t82) {
+    public static Bitmap A02(String str, int i, int i4, T8 t82) {
         try {
             BitmapFactory.Options options = new BitmapFactory.Options();
             options.inJustDecodeBounds = true;
             BitmapFactory.decodeFile(str, options);
-            options.inSampleSize = A00(options, i6, i);
+            options.inSampleSize = A00(options, i4, i);
             options.inJustDecodeBounds = false;
             return BitmapFactory.decodeFile(str, options);
         } catch (Throwable t6) {
-            t82.A08().ABC(A03(0, 5, 116), AbstractC1252Td.A1h, new C1253Te(t6));
+            t82.A08().ABC(A03(0, 5, 116), AbstractC1272Td.A1h, new C1273Te(t6));
             return null;
         }
     }

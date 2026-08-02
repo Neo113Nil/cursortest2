@@ -1,44 +1,37 @@
 package com.google.android.gms.internal.ads;
 
 /* loaded from: classes2.dex */
-public final class QP {
+public final class QP extends Exception {
 
-    /* renamed from: g, reason: collision with root package name */
-    public static final QP f27024g = new QP(com.anythink.basead.exoplayer.b.f6382b, com.anythink.basead.exoplayer.b.f6382b, com.anythink.basead.exoplayer.b.f6382b);
+    /* renamed from: n, reason: collision with root package name */
+    public final String f27811n;
 
-    /* renamed from: a, reason: collision with root package name */
-    public final long f27025a;
+    /* renamed from: u, reason: collision with root package name */
+    public final PP f27812u;
 
-    /* renamed from: b, reason: collision with root package name */
-    public final long f27026b;
+    /* renamed from: v, reason: collision with root package name */
+    public final String f27813v;
 
-    /* renamed from: c, reason: collision with root package name */
-    public final long f27027c;
-
-    /* renamed from: e, reason: collision with root package name */
-    public boolean f27029e;
-
-    /* renamed from: d, reason: collision with root package name */
-    public final H3.q f27028d = new H3.q();
-
-    /* renamed from: f, reason: collision with root package name */
-    public long f27030f = com.anythink.basead.exoplayer.b.f6382b;
-
-    public QP(long j6, long j9, long j10) {
-        this.f27025a = j6;
-        this.f27026b = j9;
-        this.f27027c = j10;
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public QP(DP dp, UP up, int i) {
+        this(r5, up, dp.f25176o, null, D.x.k(r13, "androidx.media3.exoplayer.mediacodec.MediaCodecRenderer_neg_", new StringBuilder(String.valueOf(r13).length() + 60)));
+        String dp2 = dp.toString();
+        StringBuilder sb = new StringBuilder(String.valueOf(i).length() + 25 + dp2.length());
+        sb.append("Decoder init failed: [");
+        sb.append(i);
+        sb.append("], ");
+        sb.append(dp2);
+        String sb2 = sb.toString();
+        int abs = Math.abs(i);
     }
 
-    public final /* synthetic */ long a() {
-        return this.f27027c;
-    }
-
-    public final /* synthetic */ void b() {
-        this.f27029e = true;
-    }
-
-    public final /* synthetic */ void c(long j6) {
-        this.f27030f = j6;
+    public QP(String str, Throwable th, String str2, PP pp, String str3) {
+        super(str, th);
+        this.f27811n = str2;
+        this.f27812u = pp;
+        this.f27813v = str3;
     }
 }

@@ -1,11 +1,11 @@
 package com.google.android.gms.internal.ads;
 
-import u.AbstractC5049e;
+import u.AbstractC5050e;
 
 /* loaded from: classes2.dex */
 public final class CM extends VK {
     private static final CM zzd;
-    private static volatile InterfaceC4048vL zze;
+    private static volatile InterfaceC4071vL zze;
     private int zza;
     private int zzb;
     private int zzc;
@@ -18,42 +18,42 @@ public final class CM extends VK {
 
     @Override // com.google.android.gms.internal.ads.VK
     public final Object w(int i, VK vk) {
-        InterfaceC4048vL interfaceC4048vL;
-        int d2 = AbstractC5049e.d(i);
-        if (d2 == 0) {
+        InterfaceC4071vL interfaceC4071vL;
+        int d9 = AbstractC5050e.d(i);
+        if (d9 == 0) {
             return (byte) 1;
         }
-        if (d2 == 2) {
-            C3027cM c3027cM = C3027cM.f29459n;
-            return new C4264zL(zzd, "\u0001\u0002\u0000\u0001\u0001\u0002\u0002\u0000\u0000\u0000\u0001᠌\u0000\u0002᠌\u0001", new Object[]{"zza", "zzb", c3027cM, "zzc", c3027cM});
+        if (d9 == 2) {
+            C3050cM c3050cM = C3050cM.f30242n;
+            return new C4287zL(zzd, "\u0001\u0002\u0000\u0001\u0001\u0002\u0002\u0000\u0000\u0000\u0001᠌\u0000\u0002᠌\u0001", new Object[]{"zza", "zzb", c3050cM, "zzc", c3050cM});
         }
-        if (d2 == 3) {
+        if (d9 == 3) {
             return new CM();
         }
-        if (d2 == 4) {
-            return new C3294hK(zzd);
+        if (d9 == 4) {
+            return new C3317hK(zzd);
         }
-        if (d2 == 5) {
+        if (d9 == 5) {
             return zzd;
         }
-        if (d2 != 6) {
+        if (d9 != 6) {
             throw null;
         }
-        InterfaceC4048vL interfaceC4048vL2 = zze;
-        if (interfaceC4048vL2 != null) {
-            return interfaceC4048vL2;
+        InterfaceC4071vL interfaceC4071vL2 = zze;
+        if (interfaceC4071vL2 != null) {
+            return interfaceC4071vL2;
         }
         synchronized (CM.class) {
             try {
-                interfaceC4048vL = zze;
-                if (interfaceC4048vL == null) {
-                    interfaceC4048vL = new UK(zzd);
-                    zze = interfaceC4048vL;
+                interfaceC4071vL = zze;
+                if (interfaceC4071vL == null) {
+                    interfaceC4071vL = new UK(zzd);
+                    zze = interfaceC4071vL;
                 }
             } catch (Throwable th) {
                 throw th;
             }
         }
-        return interfaceC4048vL;
+        return interfaceC4071vL;
     }
 }

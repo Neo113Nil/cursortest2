@@ -1,43 +1,28 @@
 package m;
 
-import android.content.Context;
-import android.view.View;
-import android.view.Window;
-import l.C4644a;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 /* loaded from: classes.dex */
-public final class W0 implements View.OnClickListener {
+public final class W0 extends V.b {
+    public static final Parcelable.Creator<W0> CREATOR = new A3.b(7);
 
-    /* renamed from: n, reason: collision with root package name */
-    public final C4644a f39078n;
+    /* renamed from: v, reason: collision with root package name */
+    public int f39145v;
 
-    /* renamed from: u, reason: collision with root package name */
-    public final /* synthetic */ X0 f39079u;
+    /* renamed from: w, reason: collision with root package name */
+    public boolean f39146w;
 
-    public W0(X0 x02) {
-        this.f39079u = x02;
-        Context context = x02.f39081a.getContext();
-        CharSequence charSequence = x02.f39088h;
-        C4644a c4644a = new C4644a();
-        c4644a.f38753x = 4096;
-        c4644a.f38755z = 4096;
-        c4644a.f38744E = null;
-        c4644a.f38745F = null;
-        c4644a.f38746G = false;
-        c4644a.f38747H = false;
-        c4644a.f38748I = 16;
-        c4644a.f38741B = context;
-        c4644a.f38749n = charSequence;
-        this.f39078n = c4644a;
+    public W0(Parcel parcel, ClassLoader classLoader) {
+        super(parcel, classLoader);
+        this.f39145v = parcel.readInt();
+        this.f39146w = parcel.readInt() != 0;
     }
 
-    @Override // android.view.View.OnClickListener
-    public final void onClick(View view) {
-        X0 x02 = this.f39079u;
-        Window.Callback callback = x02.f39090k;
-        if (callback == null || !x02.f39091l) {
-            return;
-        }
-        callback.onMenuItemSelected(0, this.f39078n);
+    @Override // V.b, android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        super.writeToParcel(parcel, i);
+        parcel.writeInt(this.f39145v);
+        parcel.writeInt(this.f39146w ? 1 : 0);
     }
 }

@@ -17,7 +17,7 @@ import com.anythink.expressad.foundation.h.k;
 public class ShakeBorderThumbView extends BaseShakeView {
 
     /* renamed from: l, reason: collision with root package name */
-    TextView f10262l;
+    TextView f11048l;
 
     public ShakeBorderThumbView(Context context) {
         super(context);
@@ -28,14 +28,14 @@ public class ShakeBorderThumbView extends BaseShakeView {
         setOrientation(0);
         setGravity(17);
         setClipToPadding(false);
-        setBackgroundResource(q.a(t.b().g(), "myoffer_bg_shake_border_thumb", k.f19632c));
+        setBackgroundResource(q.a(t.b().g(), "myoffer_bg_shake_border_thumb", k.f20419c));
         LayoutInflater.from(getContext()).inflate(d(), (ViewGroup) this, true);
         int a9 = q.a(getContext(), 10.0f);
         int a10 = q.a(getContext(), 10.0f);
         int a11 = q.a(getContext(), 6.0f);
         setPadding(a9, a11, a10, a11);
-        this.f9905a = (ImageView) findViewById(q.a(t.b().g(), "myoffer_splash_shake_border_img", "id"));
-        this.f10262l = (TextView) findViewById(q.a(t.b().g(), "myoffer_splash_shake_hint_text", "id"));
+        this.f10691a = (ImageView) findViewById(q.a(t.b().g(), "myoffer_splash_shake_border_img", "id"));
+        this.f11048l = (TextView) findViewById(q.a(t.b().g(), "myoffer_splash_shake_hint_text", "id"));
     }
 
     public int d() {
@@ -45,11 +45,11 @@ public class ShakeBorderThumbView extends BaseShakeView {
     @Override // com.anythink.basead.ui.BaseShakeView
     public void setShakeSetting(y yVar, int i) {
         super.setShakeSetting(yVar, i);
-        if (this.f10262l != null) {
-            if (TextUtils.isEmpty(this.f9912h)) {
-                this.f10262l.setText(e.a(getContext(), i));
+        if (this.f11048l != null) {
+            if (TextUtils.isEmpty(this.f10698h)) {
+                this.f11048l.setText(e.a(getContext(), i));
             } else {
-                this.f10262l.setText(this.f9912h);
+                this.f11048l.setText(this.f10698h);
             }
         }
     }
@@ -62,7 +62,7 @@ public class ShakeBorderThumbView extends BaseShakeView {
         super(context, attributeSet, i);
     }
 
-    public ShakeBorderThumbView(Context context, AttributeSet attributeSet, int i, int i6) {
-        super(context, attributeSet, i, i6);
+    public ShakeBorderThumbView(Context context, AttributeSet attributeSet, int i, int i4) {
+        super(context, attributeSet, i, i4);
     }
 }

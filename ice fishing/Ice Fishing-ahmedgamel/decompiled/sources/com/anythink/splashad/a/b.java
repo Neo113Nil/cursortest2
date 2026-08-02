@@ -40,7 +40,7 @@ public abstract class b implements com.anythink.core.common.d.a {
         onAdLoaded(this.mRequestId, this.isAdTimeout);
     }
 
-    public abstract void onAdLoaded(String str, boolean z3);
+    public abstract void onAdLoaded(String str, boolean z6);
 
     public abstract void onNoAdError(String str, AdError adError);
 

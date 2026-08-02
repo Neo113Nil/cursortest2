@@ -6,8 +6,8 @@ import com.anythink.core.common.v.t;
 
 /* loaded from: classes.dex */
 public class ATSDKUtils {
-    public static int dip2px(Context context, float f3) {
-        return q.a(context, f3);
+    public static int dip2px(Context context, float f2) {
+        return q.a(context, f2);
     }
 
     public static double getRmbChangeToUsdRate() {
@@ -18,7 +18,7 @@ public class ATSDKUtils {
         return t.a();
     }
 
-    public static int px2dip(Context context, float f3) {
-        return q.b(context, f3);
+    public static int px2dip(Context context, float f2) {
+        return q.b(context, f2);
     }
 }

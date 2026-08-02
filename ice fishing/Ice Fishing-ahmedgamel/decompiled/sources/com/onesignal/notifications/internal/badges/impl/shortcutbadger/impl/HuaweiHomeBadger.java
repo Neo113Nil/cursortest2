@@ -7,11 +7,11 @@ import android.net.Uri;
 import android.os.Bundle;
 import java.util.Arrays;
 import java.util.List;
-import n5.InterfaceC4758a;
+import n5.InterfaceC4774a;
 
 /* loaded from: classes2.dex */
-public class HuaweiHomeBadger implements InterfaceC4758a {
-    @Override // n5.InterfaceC4758a
+public class HuaweiHomeBadger implements InterfaceC4774a {
+    @Override // n5.InterfaceC4774a
     @SuppressLint({"NewApi"})
     public void executeBadge(Context context, ComponentName componentName, int i) {
         Bundle bundle = new Bundle();
@@ -21,7 +21,7 @@ public class HuaweiHomeBadger implements InterfaceC4758a {
         context.getContentResolver().call(Uri.parse("content://com.huawei.android.launcher.settings/badge/"), "change_badge", (String) null, bundle);
     }
 
-    @Override // n5.InterfaceC4758a
+    @Override // n5.InterfaceC4774a
     public List<String> getSupportLaunchers() {
         return Arrays.asList("com.huawei.android.launcher");
     }

@@ -1,22 +1,29 @@
 {
-  "app_id": "com.icefishinglive.icefishing",
+  "app_id": "com.IceFishing.LiveIceFishing",
   "title": "Ice Fishing",
   "developer": "ahmedgamel",
   "score": null,
-  "icon": "https://play-lh.googleusercontent.com/Pos09SuDnwRYQ-BFjzFhW8Dndo1sTMb4ImBxA65iV-qJpLf1V5G12lwoCcPCvz0Nc4uM1blluIcmkUlcM9qu1Q",
-  "url": "https://play.google.com/store/apps/details?id=com.icefishinglive.icefishing&hl=en&gl=us",
+  "icon": "https://play-lh.googleusercontent.com/lsblW3Fa229wS4s2Fu_EMtBNf9rzfSxidt_qo7-hKGZs_VQRkmiAkARy4yszAMSBR-nq2T-vgxlsglrjnQti3Q",
+  "url": "https://play.google.com/store/apps/details?id=com.IceFishing.LiveIceFishing&hl=en&gl=us",
   "keyword": "ice fishing",
   "developer_id": "ahmedgamel",
   "released": "",
   "updated": "Jun 22, 2026",
   "version": "Varies with device",
-  "summary": "Melt ice fast and climb through tougher levels each run.",
+  "summary": "Find the target before time runs out!",
   "folder": "Ice Fishing-ahmedgamel",
   "path": "ice fishing/Ice Fishing-ahmedgamel",
   "updates_count": 1,
   "ok": true,
-  "source": "apkeep:apk-pure",
+  "source": "gplaydl",
   "files": [
+    "com.IceFishing.LiveIceFishing-1-asset.apk",
+    "com.IceFishing.LiveIceFishing-1-config.arm64_v8a.apk",
+    "com.IceFishing.LiveIceFishing-1-config.en.apk",
+    "com.IceFishing.LiveIceFishing-1-config.lt.apk",
+    "com.IceFishing.LiveIceFishing-1-config.ru.apk",
+    "com.IceFishing.LiveIceFishing-1-config.xxhdpi.apk",
+    "com.IceFishing.LiveIceFishing-1.apk",
     "com.icefishing.icefishingbigwin.xapk",
     "com.icefishing.icefishingmoney.xapk",
     "com.icefishingapp.icefishing.xapk",
@@ -28,13 +35,32 @@
     {
       "method": "apkeep",
       "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.IceFishing.LiveIceFishing...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.IceFishing.LiveIceFishing...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
       "ok": true,
       "exit_code": 0,
-      "stdout": "Downloading com.icefishinglive.icefishing...\ncom.icefishinglive.icefishing downloaded successfully!\n",
-      "stderr": ""
+      "stdout": "╭─ com.IceFishing.LiveIceFishing ─╮\n│ Ice Fishing                     │\n│ 1.0  (vc 1)                     │\n╰─────────────────────────────────╯\n\nDownloading 7 files  (42.1 MB)\n  com.IceFishing.LiveIceFishing-1.apk                  ━━━━ 100% 26.… 11.8 0:00…\n                                                                 MB   MB/s      \n  com.IceFishing.LiveIceFishing-1-config.arm64_v8a.apk ━━━━ 100% 74.… 4.2  0:00…\n                                                                 kB   MB/s      \n  com.IceFishing.LiveIceFishing-1-config.en.apk        ━━━━ 100% 61.… ?    0:00…\n                                                                 kB             \n  com.IceFishing.LiveIceFishing-1-config.lt.apk        ━━━━ 100% 37.… ?    0:00…\n                                                                 kB             \n  com.IceFishing.LiveIceFishing-1-config.ru.apk        ━━━━ 100% 37.… ?    0:00…\n                                                                 kB             \n  com.IceFishing.LiveIceFishing-1-config.xxhdpi.apk    ━━━━ 100% 88.… 4.4  0:00…\n                                                                 kB   MB/s      \n  com.IceFishing.LiveIceFishing-1-asset.apk            ━━━━ 100% 17.… 13.1 0:00…\n                                                                 MB   MB/s      \n\n                         Downloaded files                         \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                 ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.IceFishing.LiveIceFishing-1.apk                  │ 24.8 MB │\n│ com.IceFishing.LiveIceFishing-1-config.arm64_v8a.apk │ 72.4 KB │\n│ com.IceFishing.LiveIceFishing-1-config.en.apk        │ 60.4 KB │\n│ com.IceFishing.LiveIceFishing-1-config.lt.apk        │ 36.4 KB │\n│ com.IceFishing.LiveIceFishing-1-config.ru.apk        │ 36.4 KB │\n│ com.IceFishing.LiveIceFishing-1-config.xxhdpi.apk    │ 86.0 KB │\n│ com.IceFishing.LiveIceFishing-1-asset.apk            │ 24.8 MB │\n└──────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n"
     }
   ],
-  "stdout": "Downloading com.icefishinglive.icefishing...\ncom.icefishinglive.icefishing downloaded successfully!\n",
-  "stderr": "",
+  "stdout": "╭─ com.IceFishing.LiveIceFishing ─╮\n│ Ice Fishing                     │\n│ 1.0  (vc 1)                     │\n╰─────────────────────────────────╯\n\nDownloading 7 files  (42.1 MB)\n  com.IceFishing.LiveIceFishing-1.apk                  ━━━━ 100% 26.… 11.8 0:00…\n                                                                 MB   MB/s      \n  com.IceFishing.LiveIceFishing-1-config.arm64_v8a.apk ━━━━ 100% 74.… 4.2  0:00…\n                                                                 kB   MB/s      \n  com.IceFishing.LiveIceFishing-1-config.en.apk        ━━━━ 100% 61.… ?    0:00…\n                                                                 kB             \n  com.IceFishing.LiveIceFishing-1-config.lt.apk        ━━━━ 100% 37.… ?    0:00…\n                                                                 kB             \n  com.IceFishing.LiveIceFishing-1-config.ru.apk        ━━━━ 100% 37.… ?    0:00…\n                                                                 kB             \n  com.IceFishing.LiveIceFishing-1-config.xxhdpi.apk    ━━━━ 100% 88.… 4.4  0:00…\n                                                                 kB   MB/s      \n  com.IceFishing.LiveIceFishing-1-asset.apk            ━━━━ 100% 17.… 13.1 0:00…\n                                                                 MB   MB/s      \n\n                         Downloaded files                         \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                 ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.IceFishing.LiveIceFishing-1.apk                  │ 24.8 MB │\n│ com.IceFishing.LiveIceFishing-1-config.arm64_v8a.apk │ 72.4 KB │\n│ com.IceFishing.LiveIceFishing-1-config.en.apk        │ 60.4 KB │\n│ com.IceFishing.LiveIceFishing-1-config.lt.apk        │ 36.4 KB │\n│ com.IceFishing.LiveIceFishing-1-config.ru.apk        │ 36.4 KB │\n│ com.IceFishing.LiveIceFishing-1-config.xxhdpi.apk    │ 86.0 KB │\n│ com.IceFishing.LiveIceFishing-1-asset.apk            │ 24.8 MB │\n└──────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
   "exit_code": 0
 }

@@ -7,24 +7,24 @@ import java.io.IOException;
 public class NH extends IOException {
 
     /* renamed from: n, reason: collision with root package name */
-    public final int f26478n;
+    public final int f27262n;
 
     public NH() {
-        this.f26478n = AdError.REMOTE_ADS_SERVICE_ERROR;
+        this.f27262n = AdError.REMOTE_ADS_SERVICE_ERROR;
     }
 
     public NH(String str, int i) {
         super(str);
-        this.f26478n = i;
+        this.f27262n = i;
     }
 
     public NH(String str, Exception exc, int i) {
         super(str, exc);
-        this.f26478n = i;
+        this.f27262n = i;
     }
 
     public NH(int i, Exception exc) {
         super(exc);
-        this.f26478n = i;
+        this.f27262n = i;
     }
 }

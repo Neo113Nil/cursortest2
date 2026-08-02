@@ -1,29 +1,29 @@
 package com.instagram.common.viewpoint.core;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class K4 implements InterfaceC1531bh {
-    public final /* synthetic */ C1003Ji A00;
+public class K4 implements InterfaceC1551bh {
+    public final /* synthetic */ C1023Ji A00;
 
-    public K4(C1003Ji c1003Ji) {
-        this.A00 = c1003Ji;
+    public K4(C1023Ji c1023Ji) {
+        this.A00 = c1023Ji;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1531bh
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1551bh
     public final void ACt() {
-        C1557c7 c1557c7;
-        C1557c7 c1557c72;
-        c1557c7 = this.A00.A0b;
-        AbstractC2005jd A05 = c1557c7.A05();
-        c1557c72 = this.A00.A0b;
-        A05.A2H(c1557c72.A0C());
+        C1577c7 c1577c7;
+        C1577c7 c1577c72;
+        c1577c7 = this.A00.A0b;
+        AbstractC2025jd A05 = c1577c7.A05();
+        c1577c72 = this.A00.A0b;
+        A05.A2H(c1577c72.A0C());
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1531bh
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1551bh
     public final void AEm() {
         this.A00.A0O = false;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1531bh
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1551bh
     public final void AEn() {
         this.A00.A0O = true;
     }

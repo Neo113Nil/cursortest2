@@ -7,52 +7,52 @@ import java.util.Collections;
 public final class W0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f28291a;
+    public final int f29089a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f28292b;
+    public final int f29090b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f28293c;
+    public final int f29091c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f28294d;
+    public final int f29092d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final int f28295e;
+    public final int f29093e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final int f28296f;
+    public final int f29094f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final int f28297g;
+    public final int f29095g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final int f28298h;
+    public final int f29096h;
     public final int i;
 
     /* renamed from: j, reason: collision with root package name */
-    public final long f28299j;
+    public final long f29097j;
 
     /* renamed from: k, reason: collision with root package name */
-    public final S0.s f28300k;
+    public final S0.s f29098k;
 
     /* renamed from: l, reason: collision with root package name */
-    public final O3 f28301l;
+    public final O3 f29099l;
 
-    public W0(int i, int i6, int i9, int i10, int i11, int i12, int i13, long j6, S0.s sVar, O3 o32) {
-        this.f28291a = i;
-        this.f28292b = i6;
-        this.f28293c = i9;
-        this.f28294d = i10;
-        this.f28295e = i11;
-        this.f28296f = c(i11);
-        this.f28297g = i12;
-        this.f28298h = i13;
-        this.i = d(i13);
-        this.f28299j = j6;
-        this.f28300k = sVar;
-        this.f28301l = o32;
+    public W0(int i, int i4, int i6, int i9, int i10, int i11, int i12, long j6, S0.s sVar, O3 o32) {
+        this.f29089a = i;
+        this.f29090b = i4;
+        this.f29091c = i6;
+        this.f29092d = i9;
+        this.f29093e = i10;
+        this.f29094f = c(i10);
+        this.f29095g = i11;
+        this.f29096h = i12;
+        this.i = d(i12);
+        this.f29097j = j6;
+        this.f29098k = sVar;
+        this.f29099l = o32;
     }
 
     public static int c(int i) {
@@ -104,47 +104,47 @@ public final class W0 {
     }
 
     public final long a() {
-        long j6 = this.f28299j;
-        return j6 == 0 ? com.anythink.basead.exoplayer.b.f6382b : (j6 * 1000000) / this.f28295e;
+        long j6 = this.f29097j;
+        return j6 == 0 ? com.anythink.basead.exoplayer.b.f7168b : (j6 * 1000000) / this.f29093e;
     }
 
     public final DP b(byte[] bArr, O3 o32) {
-        bArr[4] = com.anythink.core.common.s.a.c.f16316a;
-        O3 o33 = this.f28301l;
+        bArr[4] = com.anythink.core.common.s.a.c.f17103a;
+        O3 o33 = this.f29099l;
         if (o33 != null) {
             o32 = o33.b(o32);
         }
-        C3299hP c3299hP = new C3299hP();
-        c3299hP.e(com.anythink.basead.exoplayer.k.o.f8429K);
-        int i = this.f28294d;
+        C3322hP c3322hP = new C3322hP();
+        c3322hP.e(com.anythink.basead.exoplayer.k.o.f9215K);
+        int i = this.f29092d;
         if (i <= 0) {
             i = -1;
         }
-        c3299hP.f30793o = i;
-        c3299hP.f30772G = this.f28297g;
-        c3299hP.f30774I = this.f28295e;
-        c3299hP.J = AbstractC3159eu.b(this.f28298h, ByteOrder.LITTLE_ENDIAN);
-        c3299hP.f30795q = Collections.singletonList(bArr);
-        c3299hP.f30789k = o32;
-        return new DP(c3299hP);
+        c3322hP.f31559o = i;
+        c3322hP.f31538G = this.f29095g;
+        c3322hP.f31540I = this.f29093e;
+        c3322hP.J = AbstractC3182eu.b(this.f29096h, ByteOrder.LITTLE_ENDIAN);
+        c3322hP.f31561q = Collections.singletonList(bArr);
+        c3322hP.f31555k = o32;
+        return new DP(c3322hP);
     }
 
     public W0(byte[] bArr, int i) {
-        C4233yr c4233yr = new C4233yr(bArr, bArr.length);
-        c4233yr.d(i * 8);
-        this.f28291a = c4233yr.h(16);
-        this.f28292b = c4233yr.h(16);
-        this.f28293c = c4233yr.h(24);
-        this.f28294d = c4233yr.h(24);
-        int h9 = c4233yr.h(20);
-        this.f28295e = h9;
-        this.f28296f = c(h9);
-        this.f28297g = c4233yr.h(3) + 1;
-        int h10 = c4233yr.h(5) + 1;
-        this.f28298h = h10;
-        this.i = d(h10);
-        this.f28299j = c4233yr.i(36);
-        this.f28300k = null;
-        this.f28301l = null;
+        C4256yr c4256yr = new C4256yr(bArr, bArr.length);
+        c4256yr.d(i * 8);
+        this.f29089a = c4256yr.h(16);
+        this.f29090b = c4256yr.h(16);
+        this.f29091c = c4256yr.h(24);
+        this.f29092d = c4256yr.h(24);
+        int h3 = c4256yr.h(20);
+        this.f29093e = h3;
+        this.f29094f = c(h3);
+        this.f29095g = c4256yr.h(3) + 1;
+        int h9 = c4256yr.h(5) + 1;
+        this.f29096h = h9;
+        this.i = d(h9);
+        this.f29097j = c4256yr.i(36);
+        this.f29098k = null;
+        this.f29099l = null;
     }
 }

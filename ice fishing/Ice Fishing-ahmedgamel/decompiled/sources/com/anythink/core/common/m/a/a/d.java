@@ -13,33 +13,33 @@ import java.util.concurrent.TimeUnit;
 public class d {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f14429a = "d";
+    private static final String f15215a = "d";
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile d f14430b;
+    private static volatile d f15216b;
 
     /* renamed from: c, reason: collision with root package name */
-    private volatile z f14431c;
+    private volatile z f15217c;
 
     /* renamed from: d, reason: collision with root package name */
-    private volatile z f14432d;
+    private volatile z f15218d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final k f14433e = new k(10, TimeUnit.MINUTES);
+    private final k f15219e = new k(10, TimeUnit.MINUTES);
 
     public static class a implements q {
 
         /* renamed from: b, reason: collision with root package name */
-        private final com.anythink.core.common.m.a.d f14434b;
+        private final com.anythink.core.common.m.a.d f15220b;
 
         public a(com.anythink.core.common.m.a.d dVar) {
-            this.f14434b = dVar;
+            this.f15220b = dVar;
         }
 
         @Override // com.anythink.core.common.n.b.q
         public final List<InetAddress> lookup(String str) {
-            com.anythink.core.common.m.a.d dVar = this.f14434b;
-            return dVar != null ? dVar.a(str) : q.f15708a.lookup(str);
+            com.anythink.core.common.m.a.d dVar = this.f15220b;
+            return dVar != null ? dVar.a(str) : q.f16495a.lookup(str);
         }
     }
 
@@ -47,18 +47,18 @@ public class d {
     }
 
     public static d a() {
-        if (f14430b == null) {
+        if (f15216b == null) {
             synchronized (d.class) {
                 try {
-                    if (f14430b == null) {
-                        f14430b = new d();
+                    if (f15216b == null) {
+                        f15216b = new d();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f14430b;
+        return f15216b;
     }
 
     public final synchronized z a(com.anythink.core.common.m.a.f fVar, i iVar) {
@@ -66,22 +66,22 @@ public class d {
         try {
             com.anythink.core.common.m.a.d dVar = fVar.i;
             if (dVar != null) {
-                if (this.f14432d == null) {
-                    this.f14432d = new z.a().c(fVar.f14446c, fVar.f14447d).b(fVar.f14444a, fVar.f14445b).a(fVar.f14448e, fVar.f14449f).a(this.f14433e).a(new p(fVar.f14450g)).a(new a(dVar)).a();
+                if (this.f15218d == null) {
+                    this.f15218d = new z.a().c(fVar.f15232c, fVar.f15233d).b(fVar.f15230a, fVar.f15231b).a(fVar.f15234e, fVar.f15235f).a(this.f15219e).a(new p(fVar.f15236g)).a(new a(dVar)).a();
                 } else {
-                    this.f14432d = this.f14432d.t().a(new a(dVar)).a();
+                    this.f15218d = this.f15218d.t().a(new a(dVar)).a();
                 }
-                zVar = this.f14432d;
-                String str = iVar.f14462a;
+                zVar = this.f15218d;
+                String str = iVar.f15248a;
             } else {
                 zVar = null;
             }
             if (zVar == null) {
-                if (this.f14431c == null) {
-                    this.f14431c = new z.a().c(fVar.f14446c, fVar.f14447d).b(fVar.f14444a, fVar.f14445b).a(fVar.f14448e, fVar.f14449f).a(this.f14433e).a(new p(fVar.f14450g)).a();
+                if (this.f15217c == null) {
+                    this.f15217c = new z.a().c(fVar.f15232c, fVar.f15233d).b(fVar.f15230a, fVar.f15231b).a(fVar.f15234e, fVar.f15235f).a(this.f15219e).a(new p(fVar.f15236g)).a();
                 }
-                zVar = this.f14431c;
-                String str2 = iVar.f14462a;
+                zVar = this.f15217c;
+                String str2 = iVar.f15248a;
             }
         } catch (Throwable th) {
             throw th;

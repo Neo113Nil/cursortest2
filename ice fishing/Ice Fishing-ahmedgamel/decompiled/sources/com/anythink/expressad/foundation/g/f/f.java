@@ -4,16 +4,16 @@ package com.anythink.expressad.foundation.g.f;
 public class f<T> implements e<T> {
 
     /* renamed from: a, reason: collision with root package name */
-    private long f19308a;
+    private long f20095a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f19309b = "";
+    public String f20096b = "";
 
     /* renamed from: c, reason: collision with root package name */
-    public String f19310c = "";
+    public String f20097c = "";
 
     /* renamed from: d, reason: collision with root package name */
-    public int f19311d = 0;
+    public int f20098d = 0;
 
     private static void f() {
         new com.anythink.expressad.foundation.d.n();
@@ -31,7 +31,7 @@ public class f<T> implements e<T> {
 
     @Override // com.anythink.expressad.foundation.g.f.e
     public void b() {
-        this.f19308a = System.currentTimeMillis();
+        this.f20095a = System.currentTimeMillis();
     }
 
     @Override // com.anythink.expressad.foundation.g.f.e
@@ -47,7 +47,7 @@ public class f<T> implements e<T> {
     }
 
     private void b(String str) {
-        this.f19310c = str;
+        this.f20097c = str;
     }
 
     @Override // com.anythink.expressad.foundation.g.f.e
@@ -63,10 +63,10 @@ public class f<T> implements e<T> {
     }
 
     private void a(String str) {
-        this.f19309b = str;
+        this.f20096b = str;
     }
 
     private void a(int i) {
-        this.f19311d = i;
+        this.f20098d = i;
     }
 }

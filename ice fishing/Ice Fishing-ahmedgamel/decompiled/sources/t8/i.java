@@ -7,11 +7,11 @@ import org.conscrypt.Conscrypt;
 public final class i implements l {
     @Override // t8.l
     public final boolean a(SSLSocket sSLSocket) {
-        return k.f40938b && Conscrypt.isConscrypt(sSLSocket);
+        return k.f40900b && Conscrypt.isConscrypt(sSLSocket);
     }
 
     @Override // t8.l
-    public final n l(SSLSocket sSLSocket) {
+    public final n i(SSLSocket sSLSocket) {
         return new k();
     }
 }

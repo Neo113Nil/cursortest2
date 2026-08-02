@@ -4,28 +4,28 @@ package com.google.android.gms.internal.ads;
 public final class JF extends IF {
 
     /* renamed from: d, reason: collision with root package name */
-    public final long[] f25661d;
+    public final long[] f26414d;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public JF(C2991bm c2991bm) {
+    public JF(C3067cm c3067cm) {
         super(r1, r2, r4);
         long[] jArr = new long[10];
         long[] jArr2 = new long[10];
         long[] jArr3 = new long[10];
         long[] jArr4 = new long[10];
-        this.f25661d = jArr3;
-        C3481ku c3481ku = (C3481ku) c2991bm.f29323u;
-        AbstractC2968bG.l(jArr, (long[]) c3481ku.f31664v, (long[]) c3481ku.f31663u);
-        AbstractC2968bG.u(jArr2, (long[]) c3481ku.f31664v, (long[]) c3481ku.f31663u);
-        System.arraycopy((long[]) c3481ku.f31665w, 0, jArr3, 0, 10);
-        AbstractC2968bG.I(jArr4, (long[]) c2991bm.f29324v, KF.f25883b);
+        this.f26414d = jArr3;
+        C3504ku c3504ku = (C3504ku) c3067cm.f30365u;
+        AbstractC2991bG.l(jArr, (long[]) c3504ku.f32446v, (long[]) c3504ku.f32445u);
+        AbstractC2991bG.u(jArr2, (long[]) c3504ku.f32446v, (long[]) c3504ku.f32445u);
+        System.arraycopy((long[]) c3504ku.f32447w, 0, jArr3, 0, 10);
+        AbstractC2991bG.I(jArr4, (long[]) c3067cm.f30366v, KF.f26635b);
     }
 
     @Override // com.google.android.gms.internal.ads.IF
     public final void a(long[] jArr, long[] jArr2) {
-        AbstractC2968bG.I(jArr, jArr2, this.f25661d);
+        AbstractC2991bG.I(jArr, jArr2, this.f26414d);
     }
 }

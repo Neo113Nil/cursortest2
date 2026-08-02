@@ -10,26 +10,26 @@ import java.io.IOException;
 public abstract class l implements d {
 
     /* renamed from: n, reason: collision with root package name */
-    public final boolean f23439n;
+    public final boolean f24226n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final Uri f23440u;
+    public final Uri f24227u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final ContentResolver f23441v;
+    public final ContentResolver f24228v;
 
     /* renamed from: w, reason: collision with root package name */
-    public Object f23442w;
+    public Object f24229w;
 
-    public l(ContentResolver contentResolver, Uri uri, boolean z3) {
-        this.f23441v = contentResolver;
-        this.f23440u = uri;
-        this.f23439n = z3;
+    public l(ContentResolver contentResolver, Uri uri, boolean z6) {
+        this.f24228v = contentResolver;
+        this.f24227u = uri;
+        this.f24226n = z6;
     }
 
     @Override // com.bumptech.glide.load.data.d
     public final void b() {
-        Object obj = this.f23442w;
+        Object obj = this.f24229w;
         if (obj != null) {
             try {
                 c(obj);
@@ -52,9 +52,9 @@ public abstract class l implements d {
     @Override // com.bumptech.glide.load.data.d
     public final void e(com.bumptech.glide.j jVar, c cVar) {
         try {
-            Object f3 = f(this.f23441v, this.f23440u);
-            this.f23442w = f3;
-            cVar.f(f3);
+            Object f2 = f(this.f24228v, this.f24227u);
+            this.f24229w = f2;
+            cVar.f(f2);
         } catch (FileNotFoundException e9) {
             if (Log.isLoggable("LocalUriFetcher", 3)) {
                 Log.d("LocalUriFetcher", "Failed to open Uri", e9);

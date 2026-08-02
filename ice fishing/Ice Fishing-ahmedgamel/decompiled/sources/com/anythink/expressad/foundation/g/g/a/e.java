@@ -11,159 +11,159 @@ import java.util.Map;
 public final class e implements Serializable, Cloneable {
 
     /* renamed from: A, reason: collision with root package name */
-    private boolean f19528A;
+    private boolean f20315A;
 
     /* renamed from: B, reason: collision with root package name */
-    private com.anythink.expressad.foundation.d.d f19529B;
+    private com.anythink.expressad.foundation.d.d f20316B;
 
     /* renamed from: C, reason: collision with root package name */
-    private List<com.anythink.expressad.foundation.d.d> f19530C;
+    private List<com.anythink.expressad.foundation.d.d> f20317C;
 
     /* renamed from: a, reason: collision with root package name */
-    private boolean f19531a;
+    private boolean f20318a;
 
     /* renamed from: b, reason: collision with root package name */
-    private Map<String, Map<String, String>> f19532b;
+    private Map<String, Map<String, String>> f20319b;
 
     /* renamed from: c, reason: collision with root package name */
-    private Map<String, Map<String, String>> f19533c;
+    private Map<String, Map<String, String>> f20320c;
 
     /* renamed from: d, reason: collision with root package name */
-    private Map<String, Long> f19534d;
+    private Map<String, Long> f20321d;
 
     /* renamed from: e, reason: collision with root package name */
-    private com.anythink.expressad.foundation.e.c f19535e;
+    private com.anythink.expressad.foundation.e.c f20322e;
 
     /* renamed from: f, reason: collision with root package name */
-    private String f19536f;
+    private String f20323f;
 
     /* renamed from: g, reason: collision with root package name */
-    private List<com.anythink.expressad.foundation.d.d> f19537g;
+    private List<com.anythink.expressad.foundation.d.d> f20324g;
 
     /* renamed from: h, reason: collision with root package name */
-    private long f19538h;
+    private long f20325h;
     private String i;
 
     /* renamed from: j, reason: collision with root package name */
-    private int f19539j;
+    private int f20326j;
 
     /* renamed from: k, reason: collision with root package name */
-    private String f19540k;
+    private String f20327k;
 
     /* renamed from: l, reason: collision with root package name */
-    private String f19541l;
+    private String f20328l;
 
     /* renamed from: m, reason: collision with root package name */
-    private String f19542m;
+    private String f20329m;
 
     /* renamed from: n, reason: collision with root package name */
-    private String f19543n;
+    private String f20330n;
 
     /* renamed from: o, reason: collision with root package name */
-    private String f19544o;
+    private String f20331o;
 
     /* renamed from: p, reason: collision with root package name */
-    private String f19545p;
+    private String f20332p;
 
     /* renamed from: q, reason: collision with root package name */
-    private String f19546q;
+    private String f20333q;
 
     /* renamed from: r, reason: collision with root package name */
-    private String f19547r;
+    private String f20334r;
 
     /* renamed from: s, reason: collision with root package name */
-    private String f19548s;
+    private String f20335s;
 
     /* renamed from: t, reason: collision with root package name */
-    private String f19549t;
+    private String f20336t;
 
     /* renamed from: u, reason: collision with root package name */
-    private String f19550u;
+    private String f20337u;
 
     /* renamed from: v, reason: collision with root package name */
-    private int f19551v;
+    private int f20338v;
 
     /* renamed from: w, reason: collision with root package name */
-    private int f19552w;
+    private int f20339w;
 
     /* renamed from: x, reason: collision with root package name */
-    private boolean f19553x;
+    private boolean f20340x;
 
     /* renamed from: y, reason: collision with root package name */
-    private boolean f19554y;
+    private boolean f20341y;
 
     /* renamed from: z, reason: collision with root package name */
-    private boolean f19555z;
+    private boolean f20342z;
 
     public e() {
-        this.f19531a = false;
-        this.f19532b = new HashMap();
-        this.f19533c = new HashMap();
-        this.f19534d = new HashMap();
-        this.f19536f = "";
-        this.f19551v = -1;
-        this.f19553x = false;
-        this.f19555z = false;
+        this.f20318a = false;
+        this.f20319b = new HashMap();
+        this.f20320c = new HashMap();
+        this.f20321d = new HashMap();
+        this.f20323f = "";
+        this.f20338v = -1;
+        this.f20340x = false;
+        this.f20342z = false;
     }
 
     private boolean A() {
-        return this.f19555z;
+        return this.f20342z;
     }
 
     private boolean B() {
-        return this.f19528A;
+        return this.f20315A;
     }
 
     private String C() {
-        return this.f19544o;
+        return this.f20331o;
     }
 
-    private void a(boolean z3) {
-        this.f19553x = z3;
+    private void a(boolean z6) {
+        this.f20340x = z6;
     }
 
     private void b(String str) {
-        this.f19549t = str;
+        this.f20336t = str;
     }
 
     private boolean c() {
-        return this.f19531a;
+        return this.f20318a;
     }
 
     private boolean d() {
-        return this.f19553x;
+        return this.f20340x;
     }
 
     private int e() {
-        return this.f19551v;
+        return this.f20338v;
     }
 
     private String f() {
-        return this.f19550u;
+        return this.f20337u;
     }
 
     private String g() {
-        return this.f19549t;
+        return this.f20336t;
     }
 
     private List<com.anythink.expressad.foundation.d.d> h() {
-        return this.f19537g;
+        return this.f20324g;
     }
 
     private String i() {
-        return this.f19536f;
+        return this.f20323f;
     }
 
     private com.anythink.expressad.foundation.d.d j() {
-        return this.f19529B;
+        return this.f20316B;
     }
 
     private List<com.anythink.expressad.foundation.d.d> k() {
-        return this.f19530C;
+        return this.f20317C;
     }
 
     private long l() {
-        return this.f19538h;
+        return this.f20325h;
     }
 
     private String m() {
@@ -173,14 +173,14 @@ public final class e implements Serializable, Cloneable {
         }
         try {
             if (TextUtils.isEmpty(this.i)) {
-                String str = this.f19536f + this.f19550u;
-                Map<String, Map<String, String>> map2 = this.f19532b;
-                if (map2 != null && map2.containsKey(str) && (map = this.f19532b.get(str)) != null && map.containsKey("unit_id")) {
+                String str = this.f20323f + this.f20337u;
+                Map<String, Map<String, String>> map2 = this.f20319b;
+                if (map2 != null && map2.containsKey(str) && (map = this.f20319b.get(str)) != null && map.containsKey("unit_id")) {
                     this.i = map.get("unit_id");
                 }
             }
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.printStackTrace();
             }
         }
@@ -188,66 +188,66 @@ public final class e implements Serializable, Cloneable {
     }
 
     private int n() {
-        return this.f19539j;
+        return this.f20326j;
     }
 
     private String o() {
-        return this.f19540k;
+        return this.f20327k;
     }
 
     private String p() {
-        return this.f19541l;
+        return this.f20328l;
     }
 
     private String q() {
-        return this.f19543n;
+        return this.f20330n;
     }
 
     private String r() {
-        return this.f19546q;
+        return this.f20333q;
     }
 
     private int s() {
-        return this.f19552w;
+        return this.f20339w;
     }
 
     private String t() {
-        return this.f19547r;
+        return this.f20334r;
     }
 
     private static void u() {
     }
 
     private void v() {
-        Map<String, Map<String, String>> map = this.f19532b;
+        Map<String, Map<String, String>> map = this.f20319b;
         if (map != null) {
             map.clear();
         }
-        Map<String, Map<String, String>> map2 = this.f19533c;
+        Map<String, Map<String, String>> map2 = this.f20320c;
         if (map2 != null) {
             map2.clear();
         }
-        List<com.anythink.expressad.foundation.d.d> list = this.f19530C;
+        List<com.anythink.expressad.foundation.d.d> list = this.f20317C;
         if (list != null) {
             list.clear();
         }
-        this.f19536f = "";
+        this.f20323f = "";
     }
 
     private com.anythink.expressad.foundation.e.c w() {
-        return this.f19535e;
+        return this.f20322e;
     }
 
     private Map<String, Map<String, String>> x() {
-        return this.f19532b;
+        return this.f20319b;
     }
 
     private Map<String, Map<String, String>> y() {
-        return this.f19533c;
+        return this.f20320c;
     }
 
     private boolean z() {
-        return this.f19554y;
+        return this.f20341y;
     }
 
     public final Object clone() {
@@ -258,11 +258,11 @@ public final class e implements Serializable, Cloneable {
         if (list == null || list.size() <= 0) {
             return;
         }
-        this.f19530C = list;
+        this.f20317C = list;
     }
 
     private void c(String str) {
-        this.f19536f = str;
+        this.f20323f = str;
     }
 
     private void d(String str) {
@@ -270,23 +270,23 @@ public final class e implements Serializable, Cloneable {
     }
 
     private void e(String str) {
-        this.f19540k = str;
+        this.f20327k = str;
     }
 
     private void f(String str) {
-        this.f19541l = str;
+        this.f20328l = str;
     }
 
     private void g(String str) {
-        this.f19543n = str;
+        this.f20330n = str;
     }
 
     private void h(String str) {
-        this.f19546q = str;
+        this.f20333q = str;
     }
 
     private void i(String str) {
-        this.f19547r = str;
+        this.f20334r = str;
     }
 
     private Map<String, String> j(String str) {
@@ -297,28 +297,28 @@ public final class e implements Serializable, Cloneable {
         }
         f fVar = new f();
         try {
-            this.f19550u = str;
+            this.f20337u = str;
             fVar.a("ts", Long.valueOf(System.currentTimeMillis()));
             if (!TextUtils.isEmpty(m())) {
                 fVar.a("unit_id", m());
             }
-            int i = this.f19539j;
+            int i = this.f20326j;
             if (i != 0) {
-                fVar.a(b.f19436e, Integer.valueOf(i));
+                fVar.a(b.f20223e, Integer.valueOf(i));
             }
-            if (!TextUtils.isEmpty(this.f19547r)) {
-                fVar.a("hb", this.f19547r);
+            if (!TextUtils.isEmpty(this.f20334r)) {
+                fVar.a("hb", this.f20334r);
             }
-            if (!TextUtils.isEmpty(this.f19540k)) {
-                fVar.a(b.f19447q, this.f19540k);
+            if (!TextUtils.isEmpty(this.f20327k)) {
+                fVar.a(b.f20234q, this.f20327k);
             }
             if (!TextUtils.isEmpty(str)) {
                 fVar.a("key", str);
             }
-            if (Arrays.asList(d.f19516l).contains(str)) {
-                fVar.a(b.aR, this.f19553x ? "1" : "2");
+            if (Arrays.asList(d.f20303l).contains(str)) {
+                fVar.a(b.aR, this.f20340x ? "1" : "2");
             }
-            if (c.f19460D.contains(str) && (cVar2 = this.f19535e) != null) {
+            if (c.f20247D.contains(str) && (cVar2 = this.f20322e) != null) {
                 fVar.a("type", Integer.valueOf(cVar2.d()));
                 fVar.a("reason", cVar2.a());
                 if (!TextUtils.isEmpty(cVar2.f())) {
@@ -326,12 +326,12 @@ public final class e implements Serializable, Cloneable {
                     fVar.a(b.al, Integer.valueOf(cVar2.e()));
                 }
             }
-            if (c.f19461E.contains(str) && (cVar = this.f19535e) != null && !TextUtils.isEmpty(cVar.f())) {
+            if (c.f20248E.contains(str) && (cVar = this.f20322e) != null && !TextUtils.isEmpty(cVar.f())) {
                 fVar.a("type", Integer.valueOf(cVar.e()));
                 fVar.a("reason", cVar.f());
             }
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.printStackTrace();
             }
         }
@@ -343,14 +343,14 @@ public final class e implements Serializable, Cloneable {
             return;
         }
         try {
-            String str2 = this.f19536f + str;
-            Map<String, Map<String, String>> map = this.f19532b;
+            String str2 = this.f20323f + str;
+            Map<String, Map<String, String>> map = this.f20319b;
             if (map == null || !map.containsKey(str2)) {
                 return;
             }
-            this.f19532b.remove(str2);
+            this.f20319b.remove(str2);
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.printStackTrace();
             }
         }
@@ -359,12 +359,12 @@ public final class e implements Serializable, Cloneable {
     private long l(String str) {
         Map<String, Long> map;
         try {
-            if (!TextUtils.isEmpty(str) && (map = this.f19534d) != null && map.containsKey(str)) {
-                Long l9 = this.f19534d.get(str);
+            if (!TextUtils.isEmpty(str) && (map = this.f20321d) != null && map.containsKey(str)) {
+                Long l9 = this.f20321d.get(str);
                 return System.currentTimeMillis() - (l9 != null ? l9.longValue() : 0L);
             }
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.printStackTrace();
             }
         }
@@ -372,47 +372,47 @@ public final class e implements Serializable, Cloneable {
     }
 
     private void n(String str) {
-        this.f19544o = str;
+        this.f20331o = str;
     }
 
     public final void a() {
-        this.f19551v = 2;
+        this.f20338v = 2;
     }
 
     private void a(String str) {
-        this.f19550u = str;
+        this.f20337u = str;
     }
 
-    private void c(boolean z3) {
-        this.f19555z = z3;
+    private void c(boolean z6) {
+        this.f20342z = z6;
     }
 
-    private void d(boolean z3) {
-        this.f19528A = z3;
+    private void d(boolean z6) {
+        this.f20315A = z6;
     }
 
     private void a(List<com.anythink.expressad.foundation.d.d> list) {
-        this.f19537g = list;
+        this.f20324g = list;
     }
 
     public final void b() {
-        this.f19539j = com.anythink.expressad.foundation.g.a.aZ;
+        this.f20326j = com.anythink.expressad.foundation.g.a.aZ;
     }
 
-    private void b(boolean z3) {
-        this.f19554y = z3;
+    private void b(boolean z6) {
+        this.f20341y = z6;
     }
 
     public final void a(com.anythink.expressad.foundation.d.d dVar) {
-        this.f19529B = dVar;
+        this.f20316B = dVar;
     }
 
     private void a(long j6) {
-        this.f19538h = j6;
+        this.f20325h = j6;
     }
 
     public final void a(int i) {
-        this.f19552w = i;
+        this.f20339w = i;
     }
 
     public final void a(String str, f fVar) {
@@ -421,39 +421,39 @@ public final class e implements Serializable, Cloneable {
             return;
         }
         try {
-            String str2 = this.f19536f + str;
-            Map<String, Map<String, String>> map2 = this.f19532b;
+            String str2 = this.f20323f + str;
+            Map<String, Map<String, String>> map2 = this.f20319b;
             if (map2 != null) {
-                if (map2.containsKey(str2) && (map = this.f19532b.get(str2)) != null) {
+                if (map2.containsKey(str2) && (map = this.f20319b.get(str2)) != null) {
                     map.putAll(fVar.a());
                 } else {
-                    this.f19532b.put(str2, fVar.a());
+                    this.f20319b.put(str2, fVar.a());
                 }
             }
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.printStackTrace();
             }
         }
     }
 
-    private e(boolean z3) {
-        this.f19531a = false;
-        this.f19532b = new HashMap();
-        this.f19533c = new HashMap();
-        this.f19534d = new HashMap();
-        this.f19536f = "";
-        this.f19551v = -1;
-        this.f19553x = false;
-        this.f19555z = false;
-        this.f19531a = z3;
+    private e(boolean z6) {
+        this.f20318a = false;
+        this.f20319b = new HashMap();
+        this.f20320c = new HashMap();
+        this.f20321d = new HashMap();
+        this.f20323f = "";
+        this.f20338v = -1;
+        this.f20340x = false;
+        this.f20342z = false;
+        this.f20318a = z6;
     }
 
     private void m(String str) {
-        if (this.f19534d == null || TextUtils.isEmpty(str)) {
+        if (this.f20321d == null || TextUtils.isEmpty(str)) {
             return;
         }
-        this.f19534d.put(str, Long.valueOf(System.currentTimeMillis()));
+        this.f20321d.put(str, Long.valueOf(System.currentTimeMillis()));
     }
 
     private void a(String str, f fVar, int i) {
@@ -462,23 +462,23 @@ public final class e implements Serializable, Cloneable {
             return;
         }
         try {
-            String str2 = this.f19536f + "_" + i + "_" + str;
-            Map<String, Map<String, String>> map2 = this.f19533c;
+            String str2 = this.f20323f + "_" + i + "_" + str;
+            Map<String, Map<String, String>> map2 = this.f20320c;
             if (map2 != null) {
-                if (map2.containsKey(str2) && (map = this.f19533c.get(str2)) != null) {
+                if (map2.containsKey(str2) && (map = this.f20320c.get(str2)) != null) {
                     map.putAll(fVar.a());
                 } else {
-                    this.f19533c.put(str2, fVar.a());
+                    this.f20320c.put(str2, fVar.a());
                 }
             }
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.printStackTrace();
             }
         }
     }
 
     private void a(com.anythink.expressad.foundation.e.c cVar) {
-        this.f19535e = cVar;
+        this.f20322e = cVar;
     }
 }

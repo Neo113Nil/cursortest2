@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.facebook.ads.androidx.media3.common.DrmInitData;
 import com.facebook.video.heroplayer.exocustom.MetaExoPlayerCustomization;
-import com.instagram.common.viewpoint.core.AbstractC06243y;
+import com.instagram.common.viewpoint.core.AbstractC06443y;
 import com.instagram.common.viewpoint.core.C2Y;
 import com.instagram.common.viewpoint.core.C5C;
 import java.util.Arrays;
@@ -66,9 +66,9 @@ public final class DrmInitData implements Comparator<SchemeData>, Parcelable {
         }
 
         public SchemeData(UUID uuid, String str, String str2, byte[] bArr) {
-            this.A03 = (UUID) AbstractC06243y.A01(uuid);
+            this.A03 = (UUID) AbstractC06443y.A01(uuid);
             this.A01 = str;
-            this.A02 = (String) AbstractC06243y.A01(str2);
+            this.A02 = (String) AbstractC06443y.A01(str2);
             this.A04 = bArr;
         }
 
@@ -120,9 +120,9 @@ public final class DrmInitData implements Comparator<SchemeData>, Parcelable {
         this.A01 = this.A03.length;
     }
 
-    public DrmInitData(String str, boolean z3, SchemeData... schemeDataArr) {
+    public DrmInitData(String str, boolean z6, SchemeData... schemeDataArr) {
         this.A02 = str;
-        schemeDataArr = z3 ? (SchemeData[]) schemeDataArr.clone() : schemeDataArr;
+        schemeDataArr = z6 ? (SchemeData[]) schemeDataArr.clone() : schemeDataArr;
         this.A03 = schemeDataArr;
         this.A01 = schemeDataArr.length;
         Arrays.sort(this.A03, this);

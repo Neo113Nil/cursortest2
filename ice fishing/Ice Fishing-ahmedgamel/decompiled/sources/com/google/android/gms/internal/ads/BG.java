@@ -6,14 +6,14 @@ import java.util.Objects;
 public final class BG {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Class f23869a;
+    public final Class f24640a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Class f23870b;
+    public final Class f24641b;
 
     public /* synthetic */ BG(Class cls, Class cls2) {
-        this.f23869a = cls;
-        this.f23870b = cls2;
+        this.f24640a = cls;
+        this.f24641b = cls2;
     }
 
     public final boolean equals(Object obj) {
@@ -21,16 +21,16 @@ public final class BG {
             return false;
         }
         BG bg = (BG) obj;
-        return bg.f23869a.equals(this.f23869a) && bg.f23870b.equals(this.f23870b);
+        return bg.f24640a.equals(this.f24640a) && bg.f24641b.equals(this.f24641b);
     }
 
     public final int hashCode() {
-        return Objects.hash(this.f23869a, this.f23870b);
+        return Objects.hash(this.f24640a, this.f24641b);
     }
 
     public final String toString() {
-        String simpleName = this.f23869a.getSimpleName();
-        String simpleName2 = this.f23870b.getSimpleName();
-        return D.y.s(new StringBuilder(simpleName.length() + 26 + simpleName2.length()), simpleName, " with serialization type: ", simpleName2);
+        String simpleName = this.f24640a.getSimpleName();
+        String simpleName2 = this.f24641b.getSimpleName();
+        return D.x.p(new StringBuilder(simpleName.length() + 26 + simpleName2.length()), simpleName, " with serialization type: ", simpleName2);
     }
 }

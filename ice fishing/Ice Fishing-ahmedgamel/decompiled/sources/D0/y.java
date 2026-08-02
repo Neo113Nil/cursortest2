@@ -8,26 +8,26 @@ import android.view.View;
 public abstract class y {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final D f619a;
+    public static final D f515a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final C0301b f620b;
+    public static final C0289b f516b;
 
     static {
         if (Build.VERSION.SDK_INT >= 29) {
-            f619a = new E();
+            f515a = new E();
         } else {
-            f619a = new D();
+            f515a = new D();
         }
-        f620b = new C0301b(Float.class, "translationAlpha", 5);
-        new C0301b(Rect.class, "clipBounds", 6);
+        f516b = new C0289b(Float.class, "translationAlpha", 5);
+        new C0289b(Rect.class, "clipBounds", 6);
     }
 
-    public static void a(View view, int i, int i6, int i9, int i10) {
-        f619a.q(view, i, i6, i9, i10);
+    public static void a(View view, int i, int i4, int i6, int i9) {
+        f515a.Q(view, i, i4, i6, i9);
     }
 
     public static void b(View view, int i) {
-        f619a.m(view, i);
+        f515a.I(view, i);
     }
 }

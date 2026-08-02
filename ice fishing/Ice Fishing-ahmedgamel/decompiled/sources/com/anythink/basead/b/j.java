@@ -1,6 +1,5 @@
 package com.anythink.basead.b;
 
-import D.y;
 import android.content.Context;
 import android.text.TextUtils;
 import com.anythink.core.common.d.t;
@@ -27,7 +26,7 @@ public final class j {
     public static void a(int i, bj bjVar, com.anythink.basead.d.j jVar) {
         String D8;
         String[] strArr;
-        String[] h9;
+        String[] h3;
         boolean ag;
         bl aH = bjVar.aH();
         if (aH == null) {
@@ -37,154 +36,154 @@ public final class j {
         try {
             switch (i) {
                 case 1:
-                    h9 = aH.h();
-                    strArr = h9;
+                    h3 = aH.h();
+                    strArr = h3;
                     break;
                 case 2:
-                    h9 = aH.i();
-                    strArr = h9;
+                    h3 = aH.i();
+                    strArr = h3;
                     break;
                 case 3:
-                    h9 = aH.j();
-                    strArr = h9;
+                    h3 = aH.j();
+                    strArr = h3;
                     break;
                 case 4:
-                    h9 = aH.k();
-                    strArr = h9;
+                    h3 = aH.k();
+                    strArr = h3;
                     break;
                 case 5:
-                    h9 = aH.l();
-                    strArr = h9;
+                    h3 = aH.l();
+                    strArr = h3;
                     break;
                 case 6:
-                    h9 = aH.q();
-                    strArr = h9;
+                    h3 = aH.q();
+                    strArr = h3;
                     break;
                 case 7:
-                    h9 = aH.r();
-                    strArr = h9;
+                    h3 = aH.r();
+                    strArr = h3;
                     break;
                 case 8:
-                    h9 = aH.f();
-                    strArr = h9;
+                    h3 = aH.f();
+                    strArr = h3;
                     break;
                 case 9:
-                    h9 = aH.g();
-                    strArr = h9;
+                    h3 = aH.g();
+                    strArr = h3;
                     break;
                 case 10:
-                    h9 = aH.d();
-                    strArr = h9;
+                    h3 = aH.d();
+                    strArr = h3;
                     break;
                 case 11:
-                    h9 = aH.m();
-                    strArr = h9;
+                    h3 = aH.m();
+                    strArr = h3;
                     break;
                 case 12:
-                    h9 = aH.o();
-                    strArr = h9;
+                    h3 = aH.o();
+                    strArr = h3;
                     break;
                 case 13:
-                    h9 = aH.p();
-                    strArr = h9;
+                    h3 = aH.p();
+                    strArr = h3;
                     break;
                 case 14:
-                    h9 = aH.n();
-                    strArr = h9;
+                    h3 = aH.n();
+                    strArr = h3;
                     break;
                 case 15:
-                    h9 = aH.R();
-                    strArr = h9;
+                    h3 = aH.R();
+                    strArr = h3;
                     break;
                 case 16:
-                    h9 = aH.S();
-                    strArr = h9;
+                    h3 = aH.S();
+                    strArr = h3;
                     break;
                 case 17:
-                    h9 = aH.T();
-                    strArr = h9;
+                    h3 = aH.T();
+                    strArr = h3;
                     break;
                 case 18:
-                    h9 = aH.s();
-                    strArr = h9;
+                    h3 = aH.s();
+                    strArr = h3;
                     break;
                 case 19:
-                    h9 = aH.t();
-                    strArr = h9;
+                    h3 = aH.t();
+                    strArr = h3;
                     break;
                 case 20:
-                    h9 = aH.U();
-                    strArr = h9;
+                    h3 = aH.U();
+                    strArr = h3;
                     break;
                 case 21:
-                    h9 = aH.u();
-                    strArr = h9;
+                    h3 = aH.u();
+                    strArr = h3;
                     break;
                 case 22:
                 default:
                     strArr = null;
                     break;
                 case 23:
-                    h9 = aH.V();
-                    strArr = h9;
+                    h3 = aH.V();
+                    strArr = h3;
                     break;
                 case 24:
-                    h9 = aH.W();
-                    strArr = h9;
+                    h3 = aH.W();
+                    strArr = h3;
                     break;
                 case 25:
-                    h9 = aH.X();
-                    strArr = h9;
+                    h3 = aH.X();
+                    strArr = h3;
                     break;
                 case 26:
-                    h9 = aH.Y();
-                    strArr = h9;
+                    h3 = aH.Y();
+                    strArr = h3;
                     break;
                 case 27:
-                    h9 = aH.Z();
-                    strArr = h9;
+                    h3 = aH.Z();
+                    strArr = h3;
                     break;
                 case 28:
-                    h9 = aH.w();
-                    strArr = h9;
+                    h3 = aH.w();
+                    strArr = h3;
                     break;
                 case 29:
-                    h9 = aH.v();
-                    strArr = h9;
+                    h3 = aH.v();
+                    strArr = h3;
                     break;
                 case 30:
-                    h9 = aH.x();
-                    strArr = h9;
+                    h3 = aH.x();
+                    strArr = h3;
                     break;
                 case 31:
-                    h9 = aH.y();
-                    strArr = h9;
+                    h3 = aH.y();
+                    strArr = h3;
                     break;
                 case 32:
-                    com.anythink.basead.d.k kVar = jVar.f6214j;
-                    Map<Integer, String[]> z3 = aH.z();
-                    if (kVar != null && z3 != null) {
-                        h9 = z3.get(Integer.valueOf(kVar.i));
-                        strArr = h9;
+                    com.anythink.basead.d.k kVar = jVar.f7000j;
+                    Map<Integer, String[]> z6 = aH.z();
+                    if (kVar != null && z6 != null) {
+                        h3 = z6.get(Integer.valueOf(kVar.i));
+                        strArr = h3;
                         break;
                     }
                     strArr = null;
                     break;
                 case 33:
-                    h9 = aH.a();
-                    strArr = h9;
+                    h3 = aH.a();
+                    strArr = h3;
                     break;
                 case 34:
-                    h9 = aH.b();
-                    strArr = h9;
+                    h3 = aH.b();
+                    strArr = h3;
                     break;
                 case 35:
-                    h9 = aH.ap();
-                    strArr = h9;
+                    h3 = aH.ap();
+                    strArr = h3;
                     break;
                 case 36:
-                    h9 = aH.e();
-                    strArr = h9;
+                    h3 = aH.e();
+                    strArr = h3;
                     break;
             }
             if (strArr != null) {
@@ -317,7 +316,7 @@ public final class j {
             return;
         }
         com.anythink.basead.i.f fVar = new com.anythink.basead.i.f(i, bjVar, D8, c9);
-        fVar.a(jVar.f6209d);
+        fVar.a(jVar.f6995d);
         fVar.a(0, (com.anythink.core.common.m.q) null);
     }
 
@@ -330,7 +329,7 @@ public final class j {
         String[] strArr;
         boolean ag;
         int length;
-        int i6;
+        int i4;
         bj bjVar2;
         com.anythink.basead.d.j jVar2;
         try {
@@ -430,10 +429,10 @@ public final class j {
                     strArr = blVar.y();
                     break;
                 case 32:
-                    com.anythink.basead.d.k kVar = jVar.f6214j;
-                    Map<Integer, String[]> z3 = blVar.z();
-                    if (kVar != null && z3 != null) {
-                        strArr = z3.get(Integer.valueOf(kVar.i));
+                    com.anythink.basead.d.k kVar = jVar.f7000j;
+                    Map<Integer, String[]> z6 = blVar.z();
+                    if (kVar != null && z6 != null) {
+                        strArr = z6.get(Integer.valueOf(kVar.i));
                         break;
                     }
                     strArr = null;
@@ -456,9 +455,9 @@ public final class j {
                     ag = false;
                     long currentTimeMillis = System.currentTimeMillis();
                     length = strArr.length;
-                    i6 = 0;
-                    while (i6 < length) {
-                        String str = strArr[i6];
+                    i4 = 0;
+                    while (i4 < length) {
+                        String str = strArr[i4];
                         if (TextUtils.isEmpty(str)) {
                             bjVar2 = bjVar;
                             jVar2 = jVar;
@@ -469,7 +468,7 @@ public final class j {
                             eVar.a(ag);
                             eVar.a(0, (com.anythink.core.common.m.q) null);
                         }
-                        i6++;
+                        i4++;
                         jVar = jVar2;
                         bjVar = bjVar2;
                     }
@@ -477,8 +476,8 @@ public final class j {
                 ag = bjVar.r().ag();
                 long currentTimeMillis2 = System.currentTimeMillis();
                 length = strArr.length;
-                i6 = 0;
-                while (i6 < length) {
+                i4 = 0;
+                while (i4 < length) {
                 }
             }
         } catch (Throwable th) {
@@ -598,7 +597,7 @@ public final class j {
             return;
         }
         com.anythink.basead.i.f fVar = new com.anythink.basead.i.f(i, bjVar, D8, map);
-        fVar.a(jVar.f6209d);
+        fVar.a(jVar.f6995d);
         fVar.a(0, (com.anythink.core.common.m.q) null);
     }
 
@@ -606,7 +605,7 @@ public final class j {
         return a(str, jVar, j6, wVar, false);
     }
 
-    public static String a(String str, com.anythink.basead.d.j jVar, long j6, w wVar, boolean z3) {
+    public static String a(String str, com.anythink.basead.d.j jVar, long j6, w wVar, boolean z6) {
         String sb;
         String sb2;
         String str2;
@@ -614,45 +613,45 @@ public final class j {
             return "";
         }
         if (jVar.i != null) {
-            str = a(str, jVar, wVar, z3);
+            str = a(str, jVar, wVar, z6);
         }
-        com.anythink.basead.d.k kVar = jVar.f6214j;
+        com.anythink.basead.d.k kVar = jVar.f7000j;
         if (kVar != null) {
             str = a(str, kVar);
         }
-        com.anythink.basead.d.b bVar = jVar.f6215k;
+        com.anythink.basead.d.b bVar = jVar.f7001k;
         if (bVar != null) {
             str = a(str, bVar);
         }
-        Map<String, Object> map = jVar.f6222r;
+        Map<String, Object> map = jVar.f7008r;
         if (map != null) {
             str = a(str, map);
         }
         long j9 = j6 / 1000;
-        if (jVar.f6210e == 0) {
+        if (jVar.f6996e == 0) {
             sb = "__REQ_WIDTH__";
         } else {
             StringBuilder sb3 = new StringBuilder();
-            sb3.append(jVar.f6210e);
+            sb3.append(jVar.f6996e);
             sb = sb3.toString();
         }
         String replaceAll = str.replaceAll("\\{__REQ_WIDTH__\\}", sb);
-        if (jVar.f6211f == 0) {
+        if (jVar.f6997f == 0) {
             sb2 = "__REQ_HEIGHT__";
         } else {
             StringBuilder sb4 = new StringBuilder();
-            sb4.append(jVar.f6211f);
+            sb4.append(jVar.f6997f);
             sb2 = sb4.toString();
         }
-        String l9 = y.l(jVar.f6219o, y.l(jVar.f6218n, y.l(jVar.f6213h, y.l(jVar.f6212g, replaceAll.replaceAll("\\{__REQ_HEIGHT__\\}", sb2), "__WIDTH__", new StringBuilder()), "__HEIGHT__", new StringBuilder()).replaceAll("\\{__PLAY_SEC__\\}", "0"), "__S_SCREEN_X__", new StringBuilder()), "__S_SCREEN_Y__", new StringBuilder());
-        Context g4 = t.b().g();
-        if (g4 != null) {
-            l9 = y.n(g4, jVar.f6219o, new StringBuilder(), y.n(g4, jVar.f6218n, new StringBuilder(), y.n(g4, jVar.f6213h, new StringBuilder(), y.n(g4, jVar.f6212g, new StringBuilder(), l9, "__WIDTH_DT__"), "__HEIGHT_DT__"), "__S_SCREEN_X_DT__"), "__S_SCREEN_Y_DT__");
+        String p9 = com.IceFishing.LiveIceFishing.k.p(jVar.f7005o, com.IceFishing.LiveIceFishing.k.p(jVar.f7004n, com.IceFishing.LiveIceFishing.k.p(jVar.f6999h, com.IceFishing.LiveIceFishing.k.p(jVar.f6998g, replaceAll.replaceAll("\\{__REQ_HEIGHT__\\}", sb2), "__WIDTH__", new StringBuilder()), "__HEIGHT__", new StringBuilder()).replaceAll("\\{__PLAY_SEC__\\}", "0"), "__S_SCREEN_X__", new StringBuilder()), "__S_SCREEN_Y__", new StringBuilder());
+        Context g9 = t.b().g();
+        if (g9 != null) {
+            p9 = com.IceFishing.LiveIceFishing.k.q(g9, jVar.f7005o, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(g9, jVar.f7004n, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(g9, jVar.f6999h, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(g9, jVar.f6998g, new StringBuilder(), p9, "__WIDTH_DT__"), "__HEIGHT_DT__"), "__S_SCREEN_X_DT__"), "__S_SCREEN_Y_DT__");
         }
         if (jVar.i == null) {
-            l9 = l9.replaceAll("__TS__", String.valueOf(j9)).replaceAll("__TS_MSEC__", String.valueOf(j6)).replaceAll("__END_TS__", String.valueOf(j9)).replaceAll("__END_TS_MSEC__", String.valueOf(j6));
+            p9 = p9.replaceAll("__TS__", String.valueOf(j9)).replaceAll("__TS_MSEC__", String.valueOf(j6)).replaceAll("__END_TS__", String.valueOf(j9)).replaceAll("__END_TS_MSEC__", String.valueOf(j6));
         }
-        long j10 = jVar.f6221q;
+        long j10 = jVar.f7007q;
         if (j10 == 0) {
             j10 = System.currentTimeMillis();
         }
@@ -660,13 +659,13 @@ public final class j {
         if (currentTimeMillis < 500) {
             currentTimeMillis = new Random().nextInt(500) + 500;
         }
-        String replaceAll2 = l9.replaceAll("__SHOW_T__", String.valueOf(currentTimeMillis));
-        int i = jVar.f6220p;
+        String replaceAll2 = p9.replaceAll("__SHOW_T__", String.valueOf(currentTimeMillis));
+        int i = jVar.f7006p;
         if (i <= 0 || i > 100) {
             str2 = "__M_SHOW_RATIO__";
         } else {
             StringBuilder sb5 = new StringBuilder();
-            sb5.append(jVar.f6220p);
+            sb5.append(jVar.f7006p);
             str2 = sb5.toString();
         }
         return replaceAll2.replaceAll("__M_SHOW_RATIO__", str2).replaceAll("__DENSITY__", m.q(t.b().g())).replaceAll("\\{", "").replaceAll("\\}", "");
@@ -686,41 +685,41 @@ public final class j {
 
     private static String a(String str, com.anythink.basead.d.k kVar) {
         StringBuilder sb = new StringBuilder();
-        sb.append(kVar.f6231a);
+        sb.append(kVar.f7017a);
         String replaceAll = str.replaceAll("\\{__VIDEO_TIME__\\}", sb.toString());
         StringBuilder sb2 = new StringBuilder();
-        sb2.append(kVar.f6232b);
+        sb2.append(kVar.f7018b);
         String replaceAll2 = replaceAll.replaceAll("\\{__BEGIN_TIME__\\}", sb2.toString());
         StringBuilder sb3 = new StringBuilder();
-        sb3.append(kVar.f6233c);
-        String l9 = y.l(kVar.f6242u, y.l(kVar.f6241r, y.l(kVar.f6240o, y.l(kVar.f6239l, y.l(kVar.f6235e, y.l(kVar.f6234d, replaceAll2.replaceAll("\\{__END_TIME__\\}", sb3.toString()), "\\{__PLAY_FIRST_FRAME__\\}", new StringBuilder()), "\\{__PLAY_LAST_FRAME__\\}", new StringBuilder()), "\\{__SCENE__\\}", new StringBuilder()), "\\{__TYPE__\\}", new StringBuilder()), "\\{__BEHAVIOR__\\}", new StringBuilder()), "\\{__STATUS__\\}", new StringBuilder());
+        sb3.append(kVar.f7019c);
+        String p9 = com.IceFishing.LiveIceFishing.k.p(kVar.f7028u, com.IceFishing.LiveIceFishing.k.p(kVar.f7027r, com.IceFishing.LiveIceFishing.k.p(kVar.f7026o, com.IceFishing.LiveIceFishing.k.p(kVar.f7025l, com.IceFishing.LiveIceFishing.k.p(kVar.f7021e, com.IceFishing.LiveIceFishing.k.p(kVar.f7020d, replaceAll2.replaceAll("\\{__END_TIME__\\}", sb3.toString()), "\\{__PLAY_FIRST_FRAME__\\}", new StringBuilder()), "\\{__PLAY_LAST_FRAME__\\}", new StringBuilder()), "\\{__SCENE__\\}", new StringBuilder()), "\\{__TYPE__\\}", new StringBuilder()), "\\{__BEHAVIOR__\\}", new StringBuilder()), "\\{__STATUS__\\}", new StringBuilder());
         StringBuilder sb4 = new StringBuilder();
-        sb4.append(kVar.f6236f / 1000);
-        String replaceAll3 = l9.replaceAll("__TS__", sb4.toString());
+        sb4.append(kVar.f7022f / 1000);
+        String replaceAll3 = p9.replaceAll("__TS__", sb4.toString());
         StringBuilder sb5 = new StringBuilder();
-        sb5.append(kVar.f6236f);
+        sb5.append(kVar.f7022f);
         String replaceAll4 = replaceAll3.replaceAll("__TS_MSEC__", sb5.toString());
         StringBuilder sb6 = new StringBuilder();
-        sb6.append(kVar.f6237g / 1000);
+        sb6.append(kVar.f7023g / 1000);
         String replaceAll5 = replaceAll4.replaceAll("__END_TS__", sb6.toString());
         StringBuilder sb7 = new StringBuilder();
-        sb7.append(kVar.f6237g);
+        sb7.append(kVar.f7023g);
         String replaceAll6 = replaceAll5.replaceAll("__END_TS_MSEC__", sb7.toString());
         StringBuilder sb8 = new StringBuilder();
-        sb8.append(kVar.f6238h / 1000);
+        sb8.append(kVar.f7024h / 1000);
         String replaceAll7 = replaceAll6.replaceAll("\\{__PLAY_SEC__\\}", sb8.toString());
         StringBuilder sb9 = new StringBuilder();
-        sb9.append(kVar.f6238h);
+        sb9.append(kVar.f7024h);
         return replaceAll7.replaceAll("\\{__PLAY_MSEC__\\}", sb9.toString());
     }
 
     private static String a(String str, com.anythink.basead.d.b bVar) {
-        String str2 = bVar.f6131a;
+        String str2 = bVar.f6917a;
         if (str2 == null) {
             str2 = "";
         }
         String replaceAll = str.replaceAll("\\{__CLICK_ID__\\}", str2);
-        int i = bVar.f6132b;
+        int i = bVar.f6918b;
         return i > 0 ? str.replaceAll("__DP_APP_INSTALL__", String.valueOf(i)) : replaceAll;
     }
 
@@ -747,25 +746,25 @@ public final class j {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static String a(String str, com.anythink.basead.d.j jVar, w wVar, boolean z3) {
+    private static String a(String str, com.anythink.basead.d.j jVar, w wVar, boolean z6) {
         String str2;
         String str3;
         String str4;
         String str5;
         String str6;
-        boolean z6;
+        boolean z9;
         String str7;
         String sb;
         String replaceAll;
         String replaceAll2;
         int i;
-        int i6;
+        int i4;
         String str8;
         String str9;
         String str10;
         String str11;
         Context context;
-        int i9;
+        int i6;
         String str12;
         com.anythink.basead.b.e.b bVar;
         String str13;
@@ -774,29 +773,29 @@ public final class j {
         String replaceAll3;
         String str16;
         String str17;
-        boolean z9;
-        int i10;
+        boolean z10;
+        int i9;
         String str18;
         String str19;
         String str20;
         String str21;
         String str22;
         String str23;
-        int i11;
+        int i10;
         com.anythink.basead.b.e.b bVar2;
         com.anythink.basead.d.a aVar;
         String sb2;
         String sb3;
-        String l9;
+        String p9;
         String str24;
         String str25;
-        boolean z10;
-        int i12;
+        boolean z11;
+        int i11;
         String replaceAll4;
         long j6;
         long j9;
         com.anythink.basead.b.e.b bVar3;
-        int i13;
+        int i12;
         String a9;
         String a10;
         String a11;
@@ -806,14 +805,14 @@ public final class j {
         String str28;
         String str29;
         String str30;
-        int i14;
+        int i13;
         com.anythink.basead.b.e.b bVar4;
         String str31;
         String str32;
         com.anythink.basead.d.a aVar2 = jVar.i;
-        int i15 = jVar.f6212g;
-        int i16 = jVar.f6213h;
-        Context g4 = t.b().g();
+        int i14 = jVar.f6998g;
+        int i15 = jVar.f6999h;
+        Context g9 = t.b().g();
         if (wVar instanceof r) {
             str2 = ((r) wVar).aD();
         } else {
@@ -822,36 +821,36 @@ public final class j {
         com.anythink.basead.b.e.b a12 = com.anythink.basead.b.e.a.a().a(str2);
         JSONObject jSONObject = new JSONObject();
         try {
-            com.anythink.basead.d.a aVar3 = aVar2.f6122p;
+            com.anythink.basead.d.a aVar3 = aVar2.f6908p;
             if (aVar3 != null) {
-                jSONObject.put("down_x", aVar3.f6112e);
-                jSONObject.put("down_y", aVar2.f6122p.f6113f);
-                jSONObject.put("up_x", aVar2.f6122p.f6114g);
-                jSONObject.put("up_y", aVar2.f6122p.f6115h);
+                jSONObject.put("down_x", aVar3.f6898e);
+                jSONObject.put("down_y", aVar2.f6908p.f6899f);
+                jSONObject.put("up_x", aVar2.f6908p.f6900g);
+                jSONObject.put("up_y", aVar2.f6908p.f6901h);
             } else {
-                jSONObject.put("down_x", aVar2.f6112e);
-                jSONObject.put("down_y", aVar2.f6113f);
-                jSONObject.put("up_x", aVar2.f6114g);
-                jSONObject.put("up_y", aVar2.f6115h);
+                jSONObject.put("down_x", aVar2.f6898e);
+                jSONObject.put("down_y", aVar2.f6899f);
+                jSONObject.put("up_x", aVar2.f6900g);
+                jSONObject.put("up_y", aVar2.f6901h);
             }
         } catch (JSONException unused) {
         }
         JSONObject jSONObject2 = new JSONObject();
         try {
-            if (aVar2.f6122p != null) {
-                float f3 = i15;
-                jSONObject2.put("down_x", (int) ((r10.f6112e / f3) * 1000.0f));
-                float f9 = i16;
-                jSONObject2.put("down_y", (int) ((aVar2.f6122p.f6113f / f9) * 1000.0f));
-                jSONObject2.put("up_x", (int) ((aVar2.f6122p.f6114g / f3) * 1000.0f));
-                jSONObject2.put("up_y", (int) ((aVar2.f6122p.f6115h / f9) * 1000.0f));
+            if (aVar2.f6908p != null) {
+                float f2 = i14;
+                jSONObject2.put("down_x", (int) ((r10.f6898e / f2) * 1000.0f));
+                float f9 = i15;
+                jSONObject2.put("down_y", (int) ((aVar2.f6908p.f6899f / f9) * 1000.0f));
+                jSONObject2.put("up_x", (int) ((aVar2.f6908p.f6900g / f2) * 1000.0f));
+                jSONObject2.put("up_y", (int) ((aVar2.f6908p.f6901h / f9) * 1000.0f));
             } else {
-                float f10 = i15;
-                jSONObject2.put("down_x", (int) ((aVar2.f6112e / f10) * 1000.0f));
-                float f11 = i16;
-                jSONObject2.put("down_y", (int) ((aVar2.f6113f / f11) * 1000.0f));
-                jSONObject2.put("up_x", (int) ((aVar2.f6114g / f10) * 1000.0f));
-                jSONObject2.put("up_y", (int) ((aVar2.f6115h / f11) * 1000.0f));
+                float f10 = i14;
+                jSONObject2.put("down_x", (int) ((aVar2.f6898e / f10) * 1000.0f));
+                float f11 = i15;
+                jSONObject2.put("down_y", (int) ((aVar2.f6899f / f11) * 1000.0f));
+                jSONObject2.put("up_x", (int) ((aVar2.f6900g / f10) * 1000.0f));
+                jSONObject2.put("up_y", (int) ((aVar2.f6901h / f11) * 1000.0f));
             }
         } catch (Throwable unused2) {
         }
@@ -868,7 +867,7 @@ public final class j {
             th2.printStackTrace();
             str4 = "{}";
         }
-        boolean z11 = str.contains("__SLD__") || str.contains("__DOWN_X__") || str.contains("__RE_DOWN_X__") || str.contains("__DOWN_Y__") || str.contains("__RE_DOWN_Y__") || str.contains("__UP_X__") || str.contains("__RE_UP_X__") || str.contains("__UP_Y__") || str.contains("__RE_UP_Y__") || str.contains("__DOWN_X_DT__") || str.contains("__RE_DOWN_X_DT__") || str.contains("__DOWN_Y_DT__") || str.contains("__RE_DOWN_Y_DT__") || str.contains("__UP_X_DT__") || str.contains("__RE_UP_X_DT__") || str.contains("__UP_Y_DT__") || str.contains("__RE_UP_Y_DT__");
+        boolean z12 = str.contains("__SLD__") || str.contains("__DOWN_X__") || str.contains("__RE_DOWN_X__") || str.contains("__DOWN_Y__") || str.contains("__RE_DOWN_Y__") || str.contains("__UP_X__") || str.contains("__RE_UP_X__") || str.contains("__UP_Y__") || str.contains("__RE_UP_Y__") || str.contains("__DOWN_X_DT__") || str.contains("__RE_DOWN_X_DT__") || str.contains("__DOWN_Y_DT__") || str.contains("__RE_DOWN_Y_DT__") || str.contains("__UP_X_DT__") || str.contains("__RE_UP_X_DT__") || str.contains("__UP_Y_DT__") || str.contains("__RE_UP_Y_DT__");
         String str34 = str4;
         if (str.contains("__C_SLD__") || str.contains("__C_DOWN_X__") || str.contains("__RE_C_DOWN_X__") || str.contains("__C_DOWN_Y__") || str.contains("__RE_C_DOWN_Y__") || str.contains("__C_UP_X__") || str.contains("__RE_C_UP_X__") || str.contains("__C_UP_Y__") || str.contains("__RE_C_UP_Y__") || str.contains("__C_DOWN_X_DT__") || str.contains("__RE_C_DOWN_X_DT__") || str.contains("__C_DOWN_Y_DT__") || str.contains("__RE_C_DOWN_Y_DT__") || str.contains("__C_UP_X_DT__") || str.contains("__RE_C_UP_X_DT__") || str.contains("__C_UP_Y_DT__")) {
             str5 = "__RE_C_UP_X_DT__";
@@ -877,60 +876,60 @@ public final class j {
             str5 = "__RE_C_UP_X_DT__";
             str6 = "__RE_C_UP_Y_DT__";
             if (!str.contains(str6)) {
-                z6 = false;
-                boolean z12 = !z11 && z6;
+                z9 = false;
+                boolean z13 = !z12 && z9;
                 String str35 = str6;
-                if (aVar2.f6122p == null && !z12) {
+                if (aVar2.f6908p == null && !z13) {
                     StringBuilder sb4 = new StringBuilder();
                     str7 = "__RE_C_DOWN_X_DT__";
-                    sb4.append(aVar2.f6122p.f6120n);
+                    sb4.append(aVar2.f6908p.f6906n);
                     sb = sb4.toString();
                     replaceAll = str.replaceAll("__SLD__", sb);
                 } else {
                     str7 = "__RE_C_DOWN_X_DT__";
                     StringBuilder sb5 = new StringBuilder();
-                    sb5.append(aVar2.f6120n);
+                    sb5.append(aVar2.f6906n);
                     sb = sb5.toString();
                     replaceAll = str.replaceAll("__SLD__", sb);
                 }
                 StringBuilder sb6 = new StringBuilder();
                 String str36 = sb;
-                sb6.append(aVar2.f6120n);
+                sb6.append(aVar2.f6906n);
                 String sb7 = sb6.toString();
                 replaceAll2 = replaceAll.replaceAll("__C_SLD__", sb7);
                 i = !aVar2.i ? 1 : 2;
-                boolean z13 = aVar2.f6108a <= 0 || aVar2.f6109b > 0 || aVar2.f6110c > 0 || aVar2.f6111d > 0;
-                if (aVar2.f6122p == null && !z12) {
-                    int i17 = i;
+                boolean z14 = aVar2.f6894a <= 0 || aVar2.f6895b > 0 || aVar2.f6896c > 0 || aVar2.f6897d > 0;
+                if (aVar2.f6908p == null && !z13) {
+                    int i16 = i;
                     StringBuilder sb8 = new StringBuilder();
                     str10 = "__C_UP_Y_DT__";
-                    sb8.append(aVar2.f6122p.f6108a);
+                    sb8.append(aVar2.f6908p.f6894a);
                     String sb9 = sb8.toString();
                     StringBuilder sb10 = new StringBuilder();
                     str11 = "__C_UP_X_DT__";
-                    sb10.append(aVar2.f6122p.f6109b);
+                    sb10.append(aVar2.f6908p.f6895b);
                     String sb11 = sb10.toString();
                     StringBuilder sb12 = new StringBuilder();
                     str8 = "__C_DOWN_Y_DT__";
-                    sb12.append(aVar2.f6122p.f6110c);
+                    sb12.append(aVar2.f6908p.f6896c);
                     String sb13 = sb12.toString();
                     StringBuilder sb14 = new StringBuilder();
                     str9 = "__C_DOWN_X_DT__";
-                    sb14.append(aVar2.f6122p.f6111d);
+                    sb14.append(aVar2.f6908p.f6897d);
                     String sb15 = sb14.toString();
-                    replaceAll3 = y.l(aVar2.f6122p.f6115h, y.l(aVar2.f6122p.f6114g, y.l(aVar2.f6122p.f6113f, y.l(aVar2.f6122p.f6112e, replaceAll2.replaceAll("__DOWN_X__", sb9).replaceAll("__DOWN_Y__", sb11).replaceAll("__UP_X__", sb13).replaceAll("__UP_Y__", sb15), "__RE_DOWN_X__", new StringBuilder()), "__RE_DOWN_Y__", new StringBuilder()), "__RE_UP_X__", new StringBuilder()), "__RE_UP_Y__", new StringBuilder()).replaceAll("\\{ABSOLUTE_COORD\\}", str33).replaceAll("\\{RELATIVE_COORD\\}", str34);
-                    if (g4 != null) {
+                    replaceAll3 = com.IceFishing.LiveIceFishing.k.p(aVar2.f6908p.f6901h, com.IceFishing.LiveIceFishing.k.p(aVar2.f6908p.f6900g, com.IceFishing.LiveIceFishing.k.p(aVar2.f6908p.f6899f, com.IceFishing.LiveIceFishing.k.p(aVar2.f6908p.f6898e, replaceAll2.replaceAll("__DOWN_X__", sb9).replaceAll("__DOWN_Y__", sb11).replaceAll("__UP_X__", sb13).replaceAll("__UP_Y__", sb15), "__RE_DOWN_X__", new StringBuilder()), "__RE_DOWN_Y__", new StringBuilder()), "__RE_UP_X__", new StringBuilder()), "__RE_UP_Y__", new StringBuilder()).replaceAll("\\{ABSOLUTE_COORD\\}", str33).replaceAll("\\{RELATIVE_COORD\\}", str34);
+                    if (g9 != null) {
                         str32 = sb15;
-                        context = g4;
-                        replaceAll3 = y.n(context, aVar2.f6122p.f6115h, new StringBuilder(), y.n(context, aVar2.f6122p.f6114g, new StringBuilder(), y.n(context, aVar2.f6122p.f6113f, new StringBuilder(), y.n(context, aVar2.f6122p.f6112e, new StringBuilder(), y.n(context, aVar2.f6122p.f6111d, new StringBuilder(), y.n(context, aVar2.f6122p.f6110c, new StringBuilder(), y.n(context, aVar2.f6122p.f6109b, new StringBuilder(), y.n(context, aVar2.f6122p.f6108a, new StringBuilder(), replaceAll3, "__DOWN_X_DT__"), "__DOWN_Y_DT__"), "__UP_X_DT__"), "__UP_Y_DT__"), "__RE_DOWN_X_DT__"), "__RE_DOWN_Y_DT__"), "__RE_UP_X_DT__"), "__RE_UP_Y_DT__");
+                        context = g9;
+                        replaceAll3 = com.IceFishing.LiveIceFishing.k.q(context, aVar2.f6908p.f6901h, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context, aVar2.f6908p.f6900g, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context, aVar2.f6908p.f6899f, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context, aVar2.f6908p.f6898e, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context, aVar2.f6908p.f6897d, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context, aVar2.f6908p.f6896c, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context, aVar2.f6908p.f6895b, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context, aVar2.f6908p.f6894a, new StringBuilder(), replaceAll3, "__DOWN_X_DT__"), "__DOWN_Y_DT__"), "__UP_X_DT__"), "__UP_Y_DT__"), "__RE_DOWN_X_DT__"), "__RE_DOWN_Y_DT__"), "__RE_UP_X_DT__"), "__RE_UP_Y_DT__");
                     } else {
                         str32 = sb15;
-                        context = g4;
+                        context = g9;
                     }
                     str15 = "__RE_C_DOWN_Y__";
                     str12 = "__RE_C_UP_X__";
-                    z9 = false;
-                    i10 = i17;
+                    z10 = false;
+                    i9 = i16;
                     str18 = str32;
                     str17 = sb9;
                     str16 = sb13;
@@ -939,14 +938,14 @@ public final class j {
                     bVar = a12;
                     str13 = "__RE_C_UP_Y__";
                 } else {
-                    i6 = i;
+                    i4 = i;
                     str8 = "__C_DOWN_Y_DT__";
                     str9 = "__C_DOWN_X_DT__";
                     str10 = "__C_UP_Y_DT__";
                     str11 = "__C_UP_X_DT__";
-                    context = g4;
-                    i9 = aVar2.f6120n;
-                    if ((i9 == 0 && i9 != 1) || !z13) {
+                    context = g9;
+                    i6 = aVar2.f6906n;
+                    if ((i6 == 0 && i6 != 1) || !z14) {
                         bVar = a12;
                         String a13 = a(bVar, "__DOWN_X__", "-999");
                         String a14 = a(bVar, "__DOWN_Y__", "-999");
@@ -966,24 +965,24 @@ public final class j {
                             str21 = str20;
                             replaceAll3 = str21.replaceAll("__DOWN_X_DT__", a(bVar, "__DOWN_X_DT__", "-999")).replaceAll("__DOWN_Y_DT__", a(bVar, "__DOWN_Y_DT__", "-999")).replaceAll("__UP_X_DT__", a(bVar, "__UP_X_DT__", "-999")).replaceAll("__UP_Y_DT__", a(bVar, "__UP_Y_DT__", "-999")).replaceAll("__RE_DOWN_X_DT__", a(bVar, "__RE_DOWN_X_DT__", "-999")).replaceAll("__RE_DOWN_Y_DT__", a(bVar, "__RE_DOWN_Y_DT__", "-999")).replaceAll("__RE_UP_X_DT__", a(bVar, "__RE_UP_X_DT__", "-999")).replaceAll("__RE_UP_Y_DT__", a(bVar, "__RE_UP_Y_DT__", "-999"));
                             str15 = "__RE_C_DOWN_Y__";
-                            z9 = false;
+                            z10 = false;
                             str19 = a14;
                             str16 = a15;
                             str17 = a13;
-                            i10 = i6;
+                            i9 = i4;
                             str18 = a16;
                             str14 = "-999";
-                            if (aVar2.f6120n == 2) {
+                            if (aVar2.f6906n == 2) {
                             }
-                            String replaceAll7 = l9.replaceAll("\\{__DPLINK_TYPE__\\}", String.valueOf(i11));
+                            String replaceAll7 = p9.replaceAll("\\{__DPLINK_TYPE__\\}", String.valueOf(i10));
                             if (aVar.i) {
                             }
-                            i12 = aVar.f6116j;
-                            if (i12 == -1) {
+                            i11 = aVar.f6902j;
+                            if (i11 == -1) {
                             }
                             String replaceAll8 = replaceAll4.replaceAll("\\{opdptype\\}", aVar.i ? "1" : "0");
-                            j6 = aVar.f6117k;
-                            j9 = aVar.f6118l;
+                            j6 = aVar.f6903k;
+                            j9 = aVar.f6904l;
                             long currentTimeMillis = System.currentTimeMillis();
                             if (j6 <= 0) {
                             }
@@ -999,7 +998,7 @@ public final class j {
                             StringBuilder sb17 = new StringBuilder();
                             sb17.append(j9 / 1000);
                             String replaceAll10 = replaceAll9.replaceAll("__END_TS__", sb17.toString()).replaceAll("__END_TS_MSEC__", String.valueOf(j9));
-                            if (aVar.f6120n == 2) {
+                            if (aVar.f6906n == 2) {
                             }
                             str26 = replaceAll5;
                             str28 = a10;
@@ -1010,23 +1009,23 @@ public final class j {
                             }
                             String str38 = str30;
                             String str39 = str37;
-                            String str40 = jVar.f6207b;
+                            String str40 = jVar.f6993b;
                             bVar4 = bVar3;
-                            String str41 = jVar.f6208c;
-                            x xVar = jVar.f6206a;
-                            boolean z14 = z10;
+                            String str41 = jVar.f6994c;
+                            x xVar = jVar.f6992a;
+                            boolean z15 = z11;
                             if (bVar4 != null) {
                             }
-                            com.anythink.core.common.u.e.a(str40, str41, xVar, str39, str38, i14, str, sb7, str24, sb2, sb3, str25, valueOf, valueOf2, str36, str29, str19, str22, str18, z14, z3, a9, str28, str27);
+                            com.anythink.core.common.u.e.a(str40, str41, xVar, str39, str38, i13, str, sb7, str24, sb2, sb3, str25, valueOf, valueOf2, str36, str29, str19, str22, str18, z15, z6, a9, str28, str27);
                             return str26;
                         }
                         replaceAll3 = str21.replaceAll("__DOWN_X_DT__", a(bVar, "__DOWN_X_DT__", "-999")).replaceAll("__DOWN_Y_DT__", a(bVar, "__DOWN_Y_DT__", "-999")).replaceAll("__UP_X_DT__", a(bVar, "__UP_X_DT__", "-999")).replaceAll("__UP_Y_DT__", a(bVar, "__UP_Y_DT__", "-999")).replaceAll("__RE_DOWN_X_DT__", a(bVar, "__RE_DOWN_X_DT__", "-999")).replaceAll("__RE_DOWN_Y_DT__", a(bVar, "__RE_DOWN_Y_DT__", "-999")).replaceAll("__RE_UP_X_DT__", a(bVar, "__RE_UP_X_DT__", "-999")).replaceAll("__RE_UP_Y_DT__", a(bVar, "__RE_UP_Y_DT__", "-999"));
                         str15 = "__RE_C_DOWN_Y__";
-                        z9 = false;
+                        z10 = false;
                         str19 = a14;
                         str16 = a15;
                         str17 = a13;
-                        i10 = i6;
+                        i9 = i4;
                         str18 = a16;
                         str14 = "-999";
                     } else {
@@ -1034,32 +1033,32 @@ public final class j {
                         bVar = a12;
                         str13 = "__RE_C_UP_Y__";
                         StringBuilder sb18 = new StringBuilder();
-                        sb18.append(aVar2.f6108a);
+                        sb18.append(aVar2.f6894a);
                         String sb19 = sb18.toString();
                         StringBuilder sb20 = new StringBuilder();
-                        sb20.append(aVar2.f6109b);
+                        sb20.append(aVar2.f6895b);
                         String sb21 = sb20.toString();
                         StringBuilder sb22 = new StringBuilder();
                         str14 = "-999";
-                        sb22.append(aVar2.f6110c);
+                        sb22.append(aVar2.f6896c);
                         String sb23 = sb22.toString();
                         StringBuilder sb24 = new StringBuilder();
                         str15 = "__RE_C_DOWN_Y__";
-                        sb24.append(aVar2.f6111d);
+                        sb24.append(aVar2.f6897d);
                         String sb25 = sb24.toString();
-                        replaceAll3 = y.l(aVar2.f6115h, y.l(aVar2.f6114g, y.l(aVar2.f6113f, y.l(aVar2.f6112e, replaceAll2.replaceAll("__DOWN_X__", sb19).replaceAll("__DOWN_Y__", sb21).replaceAll("__UP_X__", sb23).replaceAll("__UP_Y__", sb25), "__RE_DOWN_X__", new StringBuilder()), "__RE_DOWN_Y__", new StringBuilder()), "__RE_UP_X__", new StringBuilder()), "__RE_UP_Y__", new StringBuilder()).replaceAll("\\{ABSOLUTE_COORD\\}", str33).replaceAll("\\{RELATIVE_COORD\\}", str34);
+                        replaceAll3 = com.IceFishing.LiveIceFishing.k.p(aVar2.f6901h, com.IceFishing.LiveIceFishing.k.p(aVar2.f6900g, com.IceFishing.LiveIceFishing.k.p(aVar2.f6899f, com.IceFishing.LiveIceFishing.k.p(aVar2.f6898e, replaceAll2.replaceAll("__DOWN_X__", sb19).replaceAll("__DOWN_Y__", sb21).replaceAll("__UP_X__", sb23).replaceAll("__UP_Y__", sb25), "__RE_DOWN_X__", new StringBuilder()), "__RE_DOWN_Y__", new StringBuilder()), "__RE_UP_X__", new StringBuilder()), "__RE_UP_Y__", new StringBuilder()).replaceAll("\\{ABSOLUTE_COORD\\}", str33).replaceAll("\\{RELATIVE_COORD\\}", str34);
                         if (context != null) {
-                            replaceAll3 = y.n(context, aVar2.f6115h, new StringBuilder(), y.n(context, aVar2.f6114g, new StringBuilder(), y.n(context, aVar2.f6113f, new StringBuilder(), y.n(context, aVar2.f6112e, new StringBuilder(), y.n(context, aVar2.f6111d, new StringBuilder(), y.n(context, aVar2.f6110c, new StringBuilder(), y.n(context, aVar2.f6109b, new StringBuilder(), y.n(context, aVar2.f6108a, new StringBuilder(), replaceAll3, "__DOWN_X_DT__"), "__DOWN_Y_DT__"), "__UP_X_DT__"), "__UP_Y_DT__"), "__RE_DOWN_X_DT__"), "__RE_DOWN_Y_DT__"), "__RE_UP_X_DT__"), "__RE_UP_Y_DT__");
+                            replaceAll3 = com.IceFishing.LiveIceFishing.k.q(context, aVar2.f6901h, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context, aVar2.f6900g, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context, aVar2.f6899f, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context, aVar2.f6898e, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context, aVar2.f6897d, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context, aVar2.f6896c, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context, aVar2.f6895b, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context, aVar2.f6894a, new StringBuilder(), replaceAll3, "__DOWN_X_DT__"), "__DOWN_Y_DT__"), "__UP_X_DT__"), "__UP_Y_DT__"), "__RE_DOWN_X_DT__"), "__RE_DOWN_Y_DT__"), "__RE_UP_X_DT__"), "__RE_UP_Y_DT__");
                         }
                         str16 = sb23;
                         str17 = sb19;
-                        z9 = false;
-                        i10 = i6;
+                        z10 = false;
+                        i9 = i4;
                         str18 = sb25;
                         str19 = sb21;
                     }
                 }
-                if (aVar2.f6120n == 2) {
+                if (aVar2.f6906n == 2) {
                     String a17 = a(bVar, "__C_DOWN_X__", "__C_DOWN_X__");
                     sb2 = a(bVar, "__C_DOWN_Y__", "__C_DOWN_Y__");
                     String a18 = a(bVar, "__C_UP_X__", "__C_UP_X__");
@@ -1081,10 +1080,10 @@ public final class j {
                     String str49 = str7;
                     String replaceAll18 = replaceAll17.replaceAll(str49, a(bVar, str49, str49)).replaceAll("__RE_C_DOWN_Y_DT__", a(bVar, "__RE_C_DOWN_Y_DT__", "__RE_C_DOWN_Y_DT__"));
                     String str50 = str5;
-                    l9 = replaceAll18.replaceAll(str50, a(bVar, str50, str50)).replaceAll(str35, a(bVar, str35, str35));
-                    z10 = z9;
+                    p9 = replaceAll18.replaceAll(str50, a(bVar, str50, str50)).replaceAll(str35, a(bVar, str35, str35));
+                    z11 = z10;
                     str24 = a17;
-                    i11 = i10;
+                    i10 = i9;
                     str22 = str16;
                     bVar2 = bVar;
                     aVar = aVar2;
@@ -1099,63 +1098,63 @@ public final class j {
                     String str54 = str5;
                     String str55 = str7;
                     String str56 = str8;
-                    boolean z15 = z9;
+                    boolean z16 = z10;
                     String str57 = str11;
                     String str58 = str13;
-                    i11 = i10;
+                    i10 = i9;
                     Context context2 = context;
                     String str59 = str9;
-                    if (!z13) {
+                    if (!z14) {
                         String str60 = str14;
                         String a19 = a(bVar, "__C_DOWN_X__", str60);
                         sb2 = a(bVar, "__C_DOWN_Y__", str60);
                         String a20 = a(bVar, "__C_UP_X__", str60);
                         String a21 = a(bVar, "__C_UP_Y__", str60);
-                        l9 = replaceAll3.replaceAll("__C_DOWN_X__", a19).replaceAll("__C_DOWN_Y__", sb2).replaceAll("__C_UP_X__", a20).replaceAll("__C_UP_Y__", a21).replaceAll("__RE_C_DOWN_X__", a(bVar, "__RE_C_DOWN_X__", str60)).replaceAll(str52, a(bVar, str52, str60)).replaceAll(str51, a(bVar, str51, str60)).replaceAll(str58, a(bVar, str58, str60)).replaceAll(str59, a(bVar, str59, str60)).replaceAll(str56, a(bVar, str56, str60)).replaceAll(str57, a(bVar, str57, str60)).replaceAll(str53, a(bVar, str53, str60)).replaceAll(str55, a(bVar, str55, str60)).replaceAll("__RE_C_DOWN_Y_DT__", a(bVar, "__RE_C_DOWN_Y_DT__", str60)).replaceAll(str54, a(bVar, str54, str60)).replaceAll(str35, a(bVar, str35, str60));
+                        p9 = replaceAll3.replaceAll("__C_DOWN_X__", a19).replaceAll("__C_DOWN_Y__", sb2).replaceAll("__C_UP_X__", a20).replaceAll("__C_UP_Y__", a21).replaceAll("__RE_C_DOWN_X__", a(bVar, "__RE_C_DOWN_X__", str60)).replaceAll(str52, a(bVar, str52, str60)).replaceAll(str51, a(bVar, str51, str60)).replaceAll(str58, a(bVar, str58, str60)).replaceAll(str59, a(bVar, str59, str60)).replaceAll(str56, a(bVar, str56, str60)).replaceAll(str57, a(bVar, str57, str60)).replaceAll(str53, a(bVar, str53, str60)).replaceAll(str55, a(bVar, str55, str60)).replaceAll("__RE_C_DOWN_Y_DT__", a(bVar, "__RE_C_DOWN_Y_DT__", str60)).replaceAll(str54, a(bVar, str54, str60)).replaceAll(str35, a(bVar, str35, str60));
                         str14 = str60;
                         str25 = a21;
                         bVar2 = bVar;
                         str24 = a19;
                         aVar = aVar2;
                         sb3 = a20;
-                        z10 = z15;
+                        z11 = z16;
                     } else {
                         bVar2 = bVar;
                         StringBuilder sb26 = new StringBuilder();
                         aVar = aVar2;
-                        sb26.append(aVar.f6108a);
+                        sb26.append(aVar.f6894a);
                         String sb27 = sb26.toString();
                         StringBuilder sb28 = new StringBuilder();
-                        sb28.append(aVar.f6109b);
+                        sb28.append(aVar.f6895b);
                         sb2 = sb28.toString();
                         StringBuilder sb29 = new StringBuilder();
-                        sb29.append(aVar.f6110c);
+                        sb29.append(aVar.f6896c);
                         sb3 = sb29.toString();
                         StringBuilder sb30 = new StringBuilder();
-                        sb30.append(aVar.f6111d);
+                        sb30.append(aVar.f6897d);
                         String sb31 = sb30.toString();
-                        l9 = y.l(aVar.f6115h, y.l(aVar.f6114g, y.l(aVar.f6113f, y.l(aVar.f6112e, replaceAll3.replaceAll("__C_DOWN_X__", sb27).replaceAll("__C_DOWN_Y__", sb2).replaceAll("__C_UP_X__", sb3).replaceAll("__C_UP_Y__", sb31), "__RE_C_DOWN_X__", new StringBuilder()), str52, new StringBuilder()), str51, new StringBuilder()), str58, new StringBuilder());
+                        p9 = com.IceFishing.LiveIceFishing.k.p(aVar.f6901h, com.IceFishing.LiveIceFishing.k.p(aVar.f6900g, com.IceFishing.LiveIceFishing.k.p(aVar.f6899f, com.IceFishing.LiveIceFishing.k.p(aVar.f6898e, replaceAll3.replaceAll("__C_DOWN_X__", sb27).replaceAll("__C_DOWN_Y__", sb2).replaceAll("__C_UP_X__", sb3).replaceAll("__C_UP_Y__", sb31), "__RE_C_DOWN_X__", new StringBuilder()), str52, new StringBuilder()), str51, new StringBuilder()), str58, new StringBuilder());
                         if (context2 != null) {
-                            l9 = y.n(context2, aVar.f6115h, new StringBuilder(), y.n(context2, aVar.f6114g, new StringBuilder(), y.n(context2, aVar.f6113f, new StringBuilder(), y.n(context2, aVar.f6112e, new StringBuilder(), y.n(context2, aVar.f6111d, new StringBuilder(), y.n(context2, aVar.f6110c, new StringBuilder(), y.n(context2, aVar.f6109b, new StringBuilder(), y.n(context2, aVar.f6108a, new StringBuilder(), l9, str59), str56), str57), str53), str55), "__RE_C_DOWN_Y_DT__"), str54), str35);
+                            p9 = com.IceFishing.LiveIceFishing.k.q(context2, aVar.f6901h, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context2, aVar.f6900g, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context2, aVar.f6899f, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context2, aVar.f6898e, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context2, aVar.f6897d, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context2, aVar.f6896c, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context2, aVar.f6895b, new StringBuilder(), com.IceFishing.LiveIceFishing.k.q(context2, aVar.f6894a, new StringBuilder(), p9, str59), str56), str57), str53), str55), "__RE_C_DOWN_Y_DT__"), str54), str35);
                         }
                         str24 = sb27;
                         str25 = sb31;
-                        z10 = z15;
+                        z11 = z16;
                     }
                 }
-                String replaceAll72 = l9.replaceAll("\\{__DPLINK_TYPE__\\}", String.valueOf(i11));
+                String replaceAll72 = p9.replaceAll("\\{__DPLINK_TYPE__\\}", String.valueOf(i10));
                 if (aVar.i) {
                     replaceAll72 = replaceAll72.replaceAll("&apk_ptype=\\{apk_ptype\\}", "");
                 }
-                i12 = aVar.f6116j;
-                if (i12 == -1) {
+                i11 = aVar.f6902j;
+                if (i11 == -1) {
                     replaceAll4 = replaceAll72.replaceAll("&apk_ptype=\\{apk_ptype\\}", "");
                 } else {
-                    replaceAll4 = replaceAll72.replaceAll("\\{apk_ptype\\}", String.valueOf(i12));
+                    replaceAll4 = replaceAll72.replaceAll("\\{apk_ptype\\}", String.valueOf(i11));
                 }
                 String replaceAll82 = replaceAll4.replaceAll("\\{opdptype\\}", aVar.i ? "1" : "0");
-                j6 = aVar.f6117k;
-                j9 = aVar.f6118l;
+                j6 = aVar.f6903k;
+                j9 = aVar.f6904l;
                 long currentTimeMillis2 = System.currentTimeMillis();
                 if (j6 <= 0) {
                     j6 = currentTimeMillis2;
@@ -1174,19 +1173,19 @@ public final class j {
                 StringBuilder sb172 = new StringBuilder();
                 sb172.append(j9 / 1000);
                 String replaceAll102 = replaceAll92.replaceAll("__END_TS__", sb172.toString()).replaceAll("__END_TS_MSEC__", String.valueOf(j9));
-                if (aVar.f6120n == 2) {
-                    float[] fArr = aVar.f6119m;
+                if (aVar.f6906n == 2) {
+                    float[] fArr = aVar.f6905m;
                     if (fArr == null || fArr.length != 3) {
-                        i13 = 1;
+                        i12 = 1;
                         str31 = str14;
                         bVar3 = bVar2;
                     } else {
-                        if (fArr[z10 ? 1 : 0] > 0.0f || fArr[1] > 0.0f || fArr[2] > 0.0f) {
+                        if (fArr[z11 ? 1 : 0] > 0.0f || fArr[1] > 0.0f || fArr[2] > 0.0f) {
                             StringBuilder sb32 = new StringBuilder();
-                            sb32.append((int) (fArr[z10 ? 1 : 0] * 100.0f));
+                            sb32.append((int) (fArr[z11 ? 1 : 0] * 100.0f));
                             a9 = sb32.toString();
                             StringBuilder sb33 = new StringBuilder();
-                            i13 = 1;
+                            i12 = 1;
                             sb33.append((int) (fArr[1] * 100.0f));
                             String sb34 = sb33.toString();
                             StringBuilder sb35 = new StringBuilder();
@@ -1203,27 +1202,27 @@ public final class j {
                                 if (wVar instanceof bj) {
                                     str372 = ((bj) wVar).aD();
                                 }
-                                i14 = wVar.ai();
+                                i13 = wVar.ai();
                             } else {
                                 str30 = "";
-                                i14 = i13;
+                                i13 = i12;
                             }
                             String str382 = str30;
                             String str392 = str372;
-                            String str402 = jVar.f6207b;
+                            String str402 = jVar.f6993b;
                             bVar4 = bVar3;
-                            String str412 = jVar.f6208c;
-                            x xVar2 = jVar.f6206a;
-                            boolean z142 = z10;
+                            String str412 = jVar.f6994c;
+                            x xVar2 = jVar.f6992a;
+                            boolean z152 = z11;
                             if (bVar4 != null) {
-                                z142 = i13;
+                                z152 = i12;
                             }
-                            com.anythink.core.common.u.e.a(str402, str412, xVar2, str392, str382, i14, str, sb7, str24, sb2, sb3, str25, valueOf3, valueOf22, str36, str29, str19, str22, str18, z142, z3, a9, str28, str27);
+                            com.anythink.core.common.u.e.a(str402, str412, xVar2, str392, str382, i13, str, sb7, str24, sb2, sb3, str25, valueOf3, valueOf22, str36, str29, str19, str22, str18, z152, z6, a9, str28, str27);
                             return str26;
                         }
                         str31 = str14;
                         bVar3 = bVar2;
-                        i13 = 1;
+                        i12 = 1;
                     }
                     a9 = a(bVar3, "__M_X_ACC__", str31);
                     a10 = a(bVar3, "__M_Y_ACC__", str31);
@@ -1231,7 +1230,7 @@ public final class j {
                     replaceAll5 = replaceAll102.replaceAll("__M_X_ACC__", a9).replaceAll("__M_Y_ACC__", a10).replaceAll("__M_Z_ACC__", a11);
                 } else {
                     bVar3 = bVar2;
-                    i13 = 1;
+                    i12 = 1;
                     a9 = a(bVar3, "__M_X_ACC__", "__M_X_ACC__");
                     a10 = a(bVar3, "__M_Y_ACC__", "__M_Y_ACC__");
                     a11 = a(bVar3, "__M_Z_ACC__", "__M_Z_ACC__");
@@ -1246,85 +1245,85 @@ public final class j {
                 }
                 String str3822 = str30;
                 String str3922 = str3722;
-                String str4022 = jVar.f6207b;
+                String str4022 = jVar.f6993b;
                 bVar4 = bVar3;
-                String str4122 = jVar.f6208c;
-                x xVar22 = jVar.f6206a;
-                boolean z1422 = z10;
+                String str4122 = jVar.f6994c;
+                x xVar22 = jVar.f6992a;
+                boolean z1522 = z11;
                 if (bVar4 != null) {
                 }
-                com.anythink.core.common.u.e.a(str4022, str4122, xVar22, str3922, str3822, i14, str, sb7, str24, sb2, sb3, str25, valueOf3, valueOf22, str36, str29, str19, str22, str18, z1422, z3, a9, str28, str27);
+                com.anythink.core.common.u.e.a(str4022, str4122, xVar22, str3922, str3822, i13, str, sb7, str24, sb2, sb3, str25, valueOf3, valueOf22, str36, str29, str19, str22, str18, z1522, z6, a9, str28, str27);
                 return str26;
             }
         }
-        z6 = true;
-        if (z11) {
+        z9 = true;
+        if (z12) {
         }
         String str352 = str6;
-        if (aVar2.f6122p == null) {
+        if (aVar2.f6908p == null) {
         }
         str7 = "__RE_C_DOWN_X_DT__";
         StringBuilder sb52 = new StringBuilder();
-        sb52.append(aVar2.f6120n);
+        sb52.append(aVar2.f6906n);
         sb = sb52.toString();
         replaceAll = str.replaceAll("__SLD__", sb);
         StringBuilder sb62 = new StringBuilder();
         String str362 = sb;
-        sb62.append(aVar2.f6120n);
+        sb62.append(aVar2.f6906n);
         String sb72 = sb62.toString();
         replaceAll2 = replaceAll.replaceAll("__C_SLD__", sb72);
         if (!aVar2.i) {
         }
-        if (aVar2.f6108a <= 0) {
+        if (aVar2.f6894a <= 0) {
         }
-        if (aVar2.f6122p == null) {
+        if (aVar2.f6908p == null) {
         }
-        i6 = i;
+        i4 = i;
         str8 = "__C_DOWN_Y_DT__";
         str9 = "__C_DOWN_X_DT__";
         str10 = "__C_UP_Y_DT__";
         str11 = "__C_UP_X_DT__";
-        context = g4;
-        i9 = aVar2.f6120n;
-        if (i9 == 0) {
+        context = g9;
+        i6 = aVar2.f6906n;
+        if (i6 == 0) {
         }
         str12 = "__RE_C_UP_X__";
         bVar = a12;
         str13 = "__RE_C_UP_Y__";
         StringBuilder sb182 = new StringBuilder();
-        sb182.append(aVar2.f6108a);
+        sb182.append(aVar2.f6894a);
         String sb192 = sb182.toString();
         StringBuilder sb202 = new StringBuilder();
-        sb202.append(aVar2.f6109b);
+        sb202.append(aVar2.f6895b);
         String sb212 = sb202.toString();
         StringBuilder sb222 = new StringBuilder();
         str14 = "-999";
-        sb222.append(aVar2.f6110c);
+        sb222.append(aVar2.f6896c);
         String sb232 = sb222.toString();
         StringBuilder sb242 = new StringBuilder();
         str15 = "__RE_C_DOWN_Y__";
-        sb242.append(aVar2.f6111d);
+        sb242.append(aVar2.f6897d);
         String sb252 = sb242.toString();
-        replaceAll3 = y.l(aVar2.f6115h, y.l(aVar2.f6114g, y.l(aVar2.f6113f, y.l(aVar2.f6112e, replaceAll2.replaceAll("__DOWN_X__", sb192).replaceAll("__DOWN_Y__", sb212).replaceAll("__UP_X__", sb232).replaceAll("__UP_Y__", sb252), "__RE_DOWN_X__", new StringBuilder()), "__RE_DOWN_Y__", new StringBuilder()), "__RE_UP_X__", new StringBuilder()), "__RE_UP_Y__", new StringBuilder()).replaceAll("\\{ABSOLUTE_COORD\\}", str33).replaceAll("\\{RELATIVE_COORD\\}", str34);
+        replaceAll3 = com.IceFishing.LiveIceFishing.k.p(aVar2.f6901h, com.IceFishing.LiveIceFishing.k.p(aVar2.f6900g, com.IceFishing.LiveIceFishing.k.p(aVar2.f6899f, com.IceFishing.LiveIceFishing.k.p(aVar2.f6898e, replaceAll2.replaceAll("__DOWN_X__", sb192).replaceAll("__DOWN_Y__", sb212).replaceAll("__UP_X__", sb232).replaceAll("__UP_Y__", sb252), "__RE_DOWN_X__", new StringBuilder()), "__RE_DOWN_Y__", new StringBuilder()), "__RE_UP_X__", new StringBuilder()), "__RE_UP_Y__", new StringBuilder()).replaceAll("\\{ABSOLUTE_COORD\\}", str33).replaceAll("\\{RELATIVE_COORD\\}", str34);
         if (context != null) {
         }
         str16 = sb232;
         str17 = sb192;
-        z9 = false;
-        i10 = i6;
+        z10 = false;
+        i9 = i4;
         str18 = sb252;
         str19 = sb212;
-        if (aVar2.f6120n == 2) {
+        if (aVar2.f6906n == 2) {
         }
-        String replaceAll722 = l9.replaceAll("\\{__DPLINK_TYPE__\\}", String.valueOf(i11));
+        String replaceAll722 = p9.replaceAll("\\{__DPLINK_TYPE__\\}", String.valueOf(i10));
         if (aVar.i) {
         }
-        i12 = aVar.f6116j;
-        if (i12 == -1) {
+        i11 = aVar.f6902j;
+        if (i11 == -1) {
         }
         String replaceAll822 = replaceAll4.replaceAll("\\{opdptype\\}", aVar.i ? "1" : "0");
-        j6 = aVar.f6117k;
-        j9 = aVar.f6118l;
+        j6 = aVar.f6903k;
+        j9 = aVar.f6904l;
         long currentTimeMillis22 = System.currentTimeMillis();
         if (j6 <= 0) {
         }
@@ -1340,7 +1339,7 @@ public final class j {
         StringBuilder sb1722 = new StringBuilder();
         sb1722.append(j9 / 1000);
         String replaceAll1022 = replaceAll922.replaceAll("__END_TS__", sb1722.toString()).replaceAll("__END_TS_MSEC__", String.valueOf(j9));
-        if (aVar.f6120n == 2) {
+        if (aVar.f6906n == 2) {
         }
         str26 = replaceAll5;
         str28 = a10;
@@ -1351,14 +1350,14 @@ public final class j {
         }
         String str38222 = str30;
         String str39222 = str37222;
-        String str40222 = jVar.f6207b;
+        String str40222 = jVar.f6993b;
         bVar4 = bVar3;
-        String str41222 = jVar.f6208c;
-        x xVar222 = jVar.f6206a;
-        boolean z14222 = z10;
+        String str41222 = jVar.f6994c;
+        x xVar222 = jVar.f6992a;
+        boolean z15222 = z11;
         if (bVar4 != null) {
         }
-        com.anythink.core.common.u.e.a(str40222, str41222, xVar222, str39222, str38222, i14, str, sb72, str24, sb2, sb3, str25, valueOf32, valueOf222, str362, str29, str19, str22, str18, z14222, z3, a9, str28, str27);
+        com.anythink.core.common.u.e.a(str40222, str41222, xVar222, str39222, str38222, i13, str, sb72, str24, sb2, sb3, str25, valueOf32, valueOf222, str362, str29, str19, str22, str18, z15222, z6, a9, str28, str27);
         return str26;
     }
 

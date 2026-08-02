@@ -11,16 +11,16 @@ import java.util.List;
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f22207a = 1;
+    public static final int f22994a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f22208b = 2;
+    public static final int f22995b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f22209c = "com.anythink.expressad.videocommon.a.a";
+    private static final String f22996c = "com.anythink.expressad.videocommon.a.a";
 
     /* renamed from: d, reason: collision with root package name */
-    private static a f22210d;
+    private static a f22997d;
 
     private a() {
         try {
@@ -31,18 +31,18 @@ public class a {
     }
 
     public static a a() {
-        if (f22210d == null) {
+        if (f22997d == null) {
             synchronized (a.class) {
                 try {
-                    if (f22210d == null) {
-                        f22210d = new a();
+                    if (f22997d == null) {
+                        f22997d = new a();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f22210d;
+        return f22997d;
     }
 
     private static void b() {
@@ -73,12 +73,12 @@ public class a {
             long c9 = b9 != null ? b9.c() : 0L;
             long currentTimeMillis = System.currentTimeMillis();
             if (dVar != null) {
-                long o6 = dVar.o() * 1000;
+                long o4 = dVar.o() * 1000;
                 long bo = currentTimeMillis - dVar.bo();
-                if (o6 > 0 && o6 >= bo) {
+                if (o4 > 0 && o4 >= bo) {
                     return false;
                 }
-                if (o6 <= 0 && c9 >= bo) {
+                if (o4 <= 0 && c9 >= bo) {
                     return false;
                 }
             }
@@ -101,9 +101,9 @@ public class a {
                     try {
                         for (d dVar : list) {
                             if (dVar != null) {
-                                long o6 = dVar.o() * 1000;
+                                long o4 = dVar.o() * 1000;
                                 long bo = currentTimeMillis - dVar.bo();
-                                if ((o6 > 0 && o6 >= bo) || (o6 <= 0 && c9 >= bo)) {
+                                if ((o4 > 0 && o4 >= bo) || (o4 <= 0 && c9 >= bo)) {
                                     arrayList2.add(dVar);
                                 }
                             }

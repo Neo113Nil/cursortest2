@@ -10,7 +10,7 @@ public enum j {
     EF2("OTLP_HTTP_JSON_SPAN_EXPORTER", "otlp_http_json_span_exporter"),
     /* JADX INFO: Fake field, exist only in values array */
     EF3("OTLP_GRPC_LOG_EXPORTER", "otlp_grpc_log_exporter"),
-    f4372v("OTLP_HTTP_LOG_EXPORTER", "otlp_http_log_exporter"),
+    f4340v("OTLP_HTTP_LOG_EXPORTER", "otlp_http_log_exporter"),
     /* JADX INFO: Fake field, exist only in values array */
     EF61("OTLP_HTTP_JSON_LOG_EXPORTER", "otlp_http_json_log_exporter"),
     /* JADX INFO: Fake field, exist only in values array */
@@ -28,13 +28,13 @@ public enum j {
 
 
     /* renamed from: n, reason: collision with root package name */
-    public final String f4374n;
+    public final String f4342n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final int f4375u;
+    public final int f4343u;
 
     j(String str, String str2) {
-        this.f4374n = str2;
-        this.f4375u = r2;
+        this.f4342n = str2;
+        this.f4343u = r2;
     }
 }

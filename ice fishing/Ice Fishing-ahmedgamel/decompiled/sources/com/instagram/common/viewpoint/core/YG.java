@@ -30,10 +30,10 @@ public final class YG implements Executor {
     public ThreadPoolExecutor A01;
     public final int A02;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 100);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 100);
         }
         return new String(copyOfRange);
     }
@@ -101,8 +101,8 @@ public final class YG implements Executor {
     }
 
     public static void A05(Context context) {
-        A0D.set(C1290Up.A2s(context));
-        A0E.set(C1290Up.A2r(context));
+        A0D.set(C1310Up.A2s(context));
+        A0E.set(C1310Up.A2r(context));
     }
 
     @Override // java.util.concurrent.Executor
@@ -121,9 +121,9 @@ public final class YG implements Executor {
             if (size == reservedExecutorQueueSize) {
                 int reservedExecutorQueueSize2 = A03;
                 A03 = reservedExecutorQueueSize2 * 2;
-                C1836ge A00 = T7.A00();
+                C1856ge A00 = T7.A00();
                 if (A00 != null) {
-                    A00.A08().ABC(A00(42, 7, 34), AbstractC1252Td.A1d, new C1253Te(A00(21, 21, 34), A00(14, 7, 32) + i));
+                    A00.A08().ABC(A00(42, 7, 34), AbstractC1272Td.A1d, new C1273Te(A00(21, 21, 34), A00(14, 7, 32) + i));
                 }
             }
         }

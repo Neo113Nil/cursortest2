@@ -28,7 +28,7 @@ public abstract class N2 {
     public void A0A() {
     }
 
-    public void A0B(C2022ju c2022ju) {
+    public void A0B(C2042ju c2042ju) {
     }
 
     public void A0C() {
@@ -40,9 +40,9 @@ public abstract class N2 {
     public void A0E(View view) {
     }
 
-    public void A0F(N1 n1) {
+    public void A0F(N1 n12) {
     }
 
-    public void A0G(C1312Vm c1312Vm) {
+    public void A0G(C1332Vm c1332Vm) {
     }
 }

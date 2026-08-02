@@ -1,5 +1,7 @@
 package com.onesignal.user.internal.operations.impl.executors;
 
+import w.AbstractC5128c;
+
 /* loaded from: classes2.dex */
 public final class f {
     public static final a Companion = new a(null);
@@ -84,9 +86,9 @@ public final class f {
     }
 
     public int hashCode() {
-        int k9 = u1.h.k(this.aliasLabel.hashCode() * 31, 31, this.aliasValue);
+        int a9 = AbstractC5128c.a(this.aliasLabel.hashCode() * 31, 31, this.aliasValue);
         String str = this.jwt;
-        return k9 + (str == null ? 0 : str.hashCode());
+        return a9 + (str == null ? 0 : str.hashCode());
     }
 
     public String toString() {

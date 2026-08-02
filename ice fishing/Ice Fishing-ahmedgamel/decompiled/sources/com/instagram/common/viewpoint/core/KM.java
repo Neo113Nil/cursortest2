@@ -34,20 +34,20 @@ public final class KM {
     public final HashMap<String, Integer> A0B;
     public final String[] A0C;
 
-    public static String A03(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0D, i, i + i6);
-        int i10 = 0;
+    public static String A03(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0D, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             if (A0E[1].length() == 19) {
                 throw new RuntimeException();
             }
             A0E[1] = "X7T2v9MzXPQN9wm4iApZn5l";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 80);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 80);
+            i9++;
         }
     }
 
@@ -68,24 +68,24 @@ public final class KM {
         this.A09 = str2 != null;
         this.A02 = j6;
         this.A01 = j9;
-        this.A06 = (String) AbstractC06243y.A01(str3);
+        this.A06 = (String) AbstractC06443y.A01(str3);
         this.A03 = km;
         this.A0B = new HashMap<>();
         this.A0A = new HashMap<>();
     }
 
-    public static SpannableStringBuilder A00(String str, Map<String, C06143o> map) {
+    public static SpannableStringBuilder A00(String str, Map<String, C06343o> map) {
         if (!map.containsKey(str)) {
-            C06143o c06143o = new C06143o();
-            c06143o.A0G(new SpannableStringBuilder());
-            map.put(str, c06143o);
+            C06343o c06343o = new C06343o();
+            c06343o.A0G(new SpannableStringBuilder());
+            map.put(str, c06343o);
         }
-        C06143o regionOutput = map.get(str);
-        return (SpannableStringBuilder) AbstractC06243y.A01(regionOutput.A0I());
+        C06343o regionOutput = map.get(str);
+        return (SpannableStringBuilder) AbstractC06443y.A01(regionOutput.A0I());
     }
 
     public static KM A01(String str) {
-        return new KM(null, KO.A04(str), b.f6382b, b.f6382b, null, null, A03(0, 0, 119), null, null);
+        return new KM(null, KO.A04(str), b.f7168b, b.f7168b, null, null, A03(0, 0, 119), null, null);
     }
 
     public static KM A02(String str, long j6, long j9, KT kt, String[] strArr, String str2, String str3, KM km) {
@@ -116,7 +116,7 @@ public final class KM {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private void A06(long j6, Map<String, KT> map, Map<String, KN> map2, String str, Map<String, C06143o> map3) {
+    private void A06(long j6, Map<String, KT> map, Map<String, KN> map2, String str, Map<String, C06343o> map3) {
         int end;
         String str2 = str;
         if (A0B(j6)) {
@@ -132,7 +132,7 @@ public final class KM {
                 }
                 int intValue = entry.getValue().intValue();
                 if (end != intValue) {
-                    A09(map, (C06143o) AbstractC06243y.A01(map3.get(key)), end, intValue, ((KN) AbstractC06243y.A01(map2.get(str2))).A08);
+                    A09(map, (C06343o) AbstractC06443y.A01(map3.get(key)), end, intValue, ((KN) AbstractC06443y.A01(map2.get(str2))).A08);
                 }
             }
             for (int i = 0; i < i; i++) {
@@ -164,8 +164,8 @@ public final class KM {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private void A07(long j6, boolean z3, String str, Map<String, C06143o> map) {
-        boolean z6;
+    private void A07(long j6, boolean z6, String str, Map<String, C06343o> map) {
+        boolean z9;
         String str2 = str;
         this.A0B.clear();
         this.A0A.clear();
@@ -175,15 +175,15 @@ public final class KM {
         if (!A03(0, 0, 119).equals(this.A06)) {
             str2 = this.A06;
         }
-        if (this.A09 && z3) {
+        if (this.A09 && z6) {
             SpannableStringBuilder A00 = A00(str2, map);
             String resolvedRegionId = this.A08;
-            A00.append((CharSequence) AbstractC06243y.A01(resolvedRegionId));
+            A00.append((CharSequence) AbstractC06443y.A01(resolvedRegionId));
             return;
         }
         String A03 = A03(0, 2, 44);
         String resolvedRegionId2 = this.A07;
-        if (A03.equals(resolvedRegionId2) && z3) {
+        if (A03.equals(resolvedRegionId2) && z6) {
             SpannableStringBuilder A002 = A00(str2, map);
             String[] strArr = A0E;
             if (strArr[0].charAt(26) == strArr[2].charAt(26)) {
@@ -198,10 +198,10 @@ public final class KM {
         if (!A0B(j6)) {
             return;
         }
-        for (Map.Entry<String, C06143o> entry : map.entrySet()) {
-            this.A0B.put(entry.getKey(), Integer.valueOf(((CharSequence) AbstractC06243y.A01(entry.getValue().A0I())).length()));
+        for (Map.Entry<String, C06343o> entry : map.entrySet()) {
+            this.A0B.put(entry.getKey(), Integer.valueOf(((CharSequence) AbstractC06443y.A01(entry.getValue().A0I())).length()));
         }
-        String A032 = A03(13, 1, a.f21728R);
+        String A032 = A03(13, 1, a.f22515R);
         String resolvedRegionId3 = this.A07;
         boolean equals = A032.equals(resolvedRegionId3);
         for (int i = 0; i < A0C(); i++) {
@@ -212,26 +212,26 @@ public final class KM {
             if (str3.length() == resolvedRegionId4.length()) {
                 A0E[1] = "BxcnzhC5XqKLAs";
             }
-            A0D2.A07(j6, z6, str2, map);
+            A0D2.A07(j6, z9, str2, map);
         }
         if (equals) {
             KO.A07(A00(str2, map));
         }
-        for (Map.Entry<String, C06143o> entry2 : map.entrySet()) {
+        for (Map.Entry<String, C06343o> entry2 : map.entrySet()) {
             HashMap<String, Integer> hashMap = this.A0A;
             String key = entry2.getKey();
-            C06143o value = entry2.getValue();
+            C06343o value = entry2.getValue();
             String[] strArr4 = A0E;
             if (strArr4[0].charAt(26) != strArr4[2].charAt(26)) {
                 String[] strArr5 = A0E;
                 strArr5[3] = "NvsWEQBQe6VAGnQhJA54b4pVjA";
                 strArr5[6] = "RDTsakCOEzYFACc9hnpkZM81VS";
-                hashMap.put(key, Integer.valueOf(((CharSequence) AbstractC06243y.A01(value.A0I())).length()));
+                hashMap.put(key, Integer.valueOf(((CharSequence) AbstractC06443y.A01(value.A0I())).length()));
             } else {
                 String[] strArr6 = A0E;
                 strArr6[5] = "CHxe0vxZr8lPRHvaCG5LBeS6gh9aVBuv";
                 strArr6[7] = "HeV50lBh9JGf3GNHX7ZdMbjxgTQZONIp";
-                hashMap.put(key, Integer.valueOf(((CharSequence) AbstractC06243y.A01(value.A0I())).length()));
+                hashMap.put(key, Integer.valueOf(((CharSequence) AbstractC06443y.A01(value.A0I())).length()));
             }
         }
     }
@@ -242,14 +242,14 @@ public final class KM {
         }
         loop1: for (int i = 0; i < spannableStringBuilder.length(); i++) {
             if (spannableStringBuilder.charAt(i) == ' ') {
-                int i6 = i + 1;
-                while (i6 < spannableStringBuilder.length()) {
-                    char charAt = spannableStringBuilder.charAt(i6);
+                int i4 = i + 1;
+                while (i4 < spannableStringBuilder.length()) {
+                    char charAt = spannableStringBuilder.charAt(i4);
                     String[] strArr = A0E;
                     String str = strArr[5];
                     String str2 = strArr[7];
-                    int i9 = str.charAt(24);
-                    if (i9 != str2.charAt(24)) {
+                    int i6 = str.charAt(24);
+                    if (i6 != str2.charAt(24)) {
                         break loop1;
                     }
                     String[] strArr2 = A0E;
@@ -258,39 +258,39 @@ public final class KM {
                     if (charAt != ' ') {
                         break;
                     } else {
-                        i6++;
+                        i4++;
                     }
                 }
                 int j6 = i + 1;
                 String[] strArr3 = A0E;
                 String str3 = strArr3[0];
                 String str4 = strArr3[2];
-                int i10 = str3.charAt(26);
-                if (i10 == str4.charAt(26)) {
+                int i9 = str3.charAt(26);
+                if (i9 == str4.charAt(26)) {
                     throw new RuntimeException();
                 }
                 A0E[1] = "2IIAODStabB9";
-                int i11 = i6 - j6;
-                if (i11 > 0) {
-                    spannableStringBuilder.delete(i, i + i11);
+                int i10 = i4 - j6;
+                if (i10 > 0) {
+                    spannableStringBuilder.delete(i, i + i10);
                 }
             }
         }
         if (spannableStringBuilder.length() > 0 && spannableStringBuilder.charAt(0) == ' ') {
             spannableStringBuilder.delete(0, 1);
         }
-        for (int i12 = 0; i12 < spannableStringBuilder.length() - 1; i12++) {
-            if (spannableStringBuilder.charAt(i12) == '\n' && spannableStringBuilder.charAt(i12 + 1) == ' ') {
-                int i13 = i12 + 1;
-                spannableStringBuilder.delete(i13, i12 + 2);
+        for (int i11 = 0; i11 < spannableStringBuilder.length() - 1; i11++) {
+            if (spannableStringBuilder.charAt(i11) == '\n' && spannableStringBuilder.charAt(i11 + 1) == ' ') {
+                int i12 = i11 + 1;
+                spannableStringBuilder.delete(i12, i11 + 2);
             }
         }
         if (spannableStringBuilder.length() > 0 && spannableStringBuilder.charAt(spannableStringBuilder.length() - 1) == ' ') {
             spannableStringBuilder.delete(spannableStringBuilder.length() - 1, spannableStringBuilder.length());
         }
-        for (int i14 = 0; i14 < spannableStringBuilder.length() - 1; i14++) {
-            if (spannableStringBuilder.charAt(i14) == ' ' && spannableStringBuilder.charAt(i14 + 1) == '\n') {
-                spannableStringBuilder.delete(i14, i14 + 1);
+        for (int i13 = 0; i13 < spannableStringBuilder.length() - 1; i13++) {
+            if (spannableStringBuilder.charAt(i13) == ' ' && spannableStringBuilder.charAt(i13 + 1) == '\n') {
+                spannableStringBuilder.delete(i13, i13 + 1);
             }
         }
         if (spannableStringBuilder.length() > 0 && spannableStringBuilder.charAt(spannableStringBuilder.length() - 1) == '\n') {
@@ -298,37 +298,37 @@ public final class KM {
         }
     }
 
-    private void A09(Map<String, KT> map, C06143o c06143o, int i, int i6, int i9) {
+    private void A09(Map<String, KT> map, C06343o c06343o, int i, int i4, int i6) {
         KT A02 = KO.A02(this.A04, this.A0C, map);
-        SpannableStringBuilder spannableStringBuilder = (SpannableStringBuilder) c06143o.A0I();
+        SpannableStringBuilder spannableStringBuilder = (SpannableStringBuilder) c06343o.A0I();
         if (spannableStringBuilder == null) {
             spannableStringBuilder = new SpannableStringBuilder();
-            c06143o.A0G(spannableStringBuilder);
+            c06343o.A0G(spannableStringBuilder);
         }
         if (A02 != null) {
-            KO.A06(spannableStringBuilder, i, i6, A02, this.A03, map, i9);
-            if (A03(13, 1, a.f21728R).equals(this.A07)) {
+            KO.A06(spannableStringBuilder, i, i4, A02, this.A03, map, i6);
+            if (A03(13, 1, a.f22515R).equals(this.A07)) {
                 if (A02.A04() != Float.MAX_VALUE) {
-                    c06143o.A05((A02.A04() * (-90.0f)) / 100.0f);
+                    c06343o.A05((A02.A04() * (-90.0f)) / 100.0f);
                 }
                 if (A02.A0C() != null) {
-                    c06143o.A0F(A02.A0C());
+                    c06343o.A0F(A02.A0C());
                 }
                 if (A02.A0B() != null) {
-                    c06143o.A0E(A02.A0B());
+                    c06343o.A0E(A02.A0B());
                 }
             }
         }
     }
 
-    private void A0A(TreeSet<Long> treeSet, boolean z3) {
-        boolean equals = A03(13, 1, a.f21728R).equals(this.A07);
+    private void A0A(TreeSet<Long> treeSet, boolean z6) {
+        boolean equals = A03(13, 1, a.f22515R).equals(this.A07);
         boolean isPNode = A03(2, 3, 18).equals(this.A07);
-        if (z3 || equals || (isPNode && this.A05 != null)) {
-            if (this.A02 != b.f6382b) {
+        if (z6 || equals || (isPNode && this.A05 != null)) {
+            if (this.A02 != b.f7168b) {
                 treeSet.add(Long.valueOf(this.A02));
             }
-            if (this.A01 != b.f6382b) {
+            if (this.A01 != b.f7168b) {
                 treeSet.add(Long.valueOf(this.A01));
             }
         }
@@ -337,20 +337,20 @@ public final class KM {
         }
         for (int i = 0; i < this.A00.size(); i++) {
             KM km = this.A00.get(i);
-            boolean isPNode2 = z3 || equals;
+            boolean isPNode2 = z6 || equals;
             km.A0A(treeSet, isPNode2);
         }
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0034, code lost:
     
-        if (r2 != com.anythink.basead.exoplayer.b.f6382b) goto L12;
+        if (r2 != com.anythink.basead.exoplayer.b.f7168b) goto L12;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private final boolean A0B(long j6) {
-        if (this.A02 != b.f6382b || this.A01 != b.f6382b) {
+        if (this.A02 != b.f7168b || this.A01 != b.f7168b) {
             if (this.A02 <= j6) {
                 long j9 = this.A01;
                 if (A0E[1].length() == 19) {
@@ -360,7 +360,7 @@ public final class KM {
                 strArr[5] = "RgXDLQ3a08cIBfoVnl1r1eLIg5MUrfoW";
                 strArr[7] = "Ter36j0QNwpTucwH0VATqUwzgkfFz8sj";
             }
-            if ((this.A02 != b.f6382b || j6 >= this.A01) && (this.A02 > j6 || j6 >= this.A01)) {
+            if ((this.A02 != b.f7168b || j6 >= this.A01) && (this.A02 > j6 || j6 >= this.A01)) {
                 return false;
             }
         }
@@ -386,7 +386,7 @@ public final class KM {
         throw new IndexOutOfBoundsException();
     }
 
-    public final List<C2350pT> A0E(long j6, Map<String, KT> map, Map<String, KN> map2, Map<String, String> imageMap) {
+    public final List<C2370pT> A0E(long j6, Map<String, KT> map, Map<String, KN> map2, Map<String, String> imageMap) {
         List<Pair<String, String>> arrayList = new ArrayList<>();
         A05(j6, this.A06, arrayList);
         TreeMap treeMap = new TreeMap();
@@ -398,21 +398,21 @@ public final class KM {
             if (str != null) {
                 byte[] decode = Base64.decode(str, 0);
                 Bitmap decodeByteArray = BitmapFactory.decodeByteArray(decode, 0, decode.length);
-                KN kn = (KN) AbstractC06243y.A01(map2.get(pair.first));
-                arrayList2.add(new C06143o().A0D(decodeByteArray).A04(kn.A02).A0A(0).A07(kn.A01, 0).A09(kn.A05).A06(kn.A04).A03(kn.A00).A0B(kn.A08).A0H());
+                KN kn = (KN) AbstractC06443y.A01(map2.get(pair.first));
+                arrayList2.add(new C06343o().A0D(decodeByteArray).A04(kn.A02).A0A(0).A07(kn.A01, 0).A09(kn.A05).A06(kn.A04).A03(kn.A00).A0B(kn.A08).A0H());
             }
         }
         for (Map.Entry entry : treeMap.entrySet()) {
-            KN kn2 = (KN) AbstractC06243y.A01(map2.get(entry.getKey()));
-            C06143o c06143o = (C06143o) entry.getValue();
-            A08((SpannableStringBuilder) AbstractC06243y.A01(c06143o.A0I()));
-            c06143o.A07(kn2.A01, kn2.A06);
-            c06143o.A09(kn2.A05);
-            c06143o.A04(kn2.A02);
-            c06143o.A06(kn2.A04);
-            c06143o.A08(kn2.A03, kn2.A07);
-            c06143o.A0B(kn2.A08);
-            arrayList2.add(c06143o.A0H());
+            KN kn2 = (KN) AbstractC06443y.A01(map2.get(entry.getKey()));
+            C06343o c06343o = (C06343o) entry.getValue();
+            A08((SpannableStringBuilder) AbstractC06443y.A01(c06343o.A0I()));
+            c06343o.A07(kn2.A01, kn2.A06);
+            c06343o.A09(kn2.A05);
+            c06343o.A04(kn2.A02);
+            c06343o.A06(kn2.A04);
+            c06343o.A08(kn2.A03, kn2.A07);
+            c06343o.A0B(kn2.A08);
+            arrayList2.add(c06343o.A0H());
         }
         return arrayList2;
     }

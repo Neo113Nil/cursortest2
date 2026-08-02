@@ -4,64 +4,64 @@ package com.google.android.gms.internal.ads;
 public final class A1 implements Q0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f23620a;
+    public final /* synthetic */ int f24400a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final C3221g1 f23621b;
+    public final C3244g1 f24401b;
 
     public A1(int i) {
-        this.f23620a = i;
+        this.f24400a = i;
         switch (i) {
             case 1:
-                this.f23621b = new C3221g1(35152, 2, "image/png");
+                this.f24401b = new C3244g1(35152, 2, "image/png");
                 break;
             default:
-                this.f23621b = new C3221g1(16973, 2, "image/bmp");
+                this.f24401b = new C3244g1(16973, 2, "image/bmp");
                 break;
         }
     }
 
     @Override // com.google.android.gms.internal.ads.Q0
     public final int a(R0 r02, U0 u02) {
-        switch (this.f23620a) {
+        switch (this.f24400a) {
         }
-        return this.f23621b.a(r02, u02);
+        return this.f24401b.a(r02, u02);
     }
 
     @Override // com.google.android.gms.internal.ads.Q0
     public final void b(S0 s02) {
-        switch (this.f23620a) {
+        switch (this.f24400a) {
             case 0:
-                this.f23621b.b(s02);
+                this.f24401b.b(s02);
                 break;
             default:
-                this.f23621b.b(s02);
+                this.f24401b.b(s02);
                 break;
         }
     }
 
     @Override // com.google.android.gms.internal.ads.Q0
     public final void c(long j6, long j9) {
-        switch (this.f23620a) {
+        switch (this.f24400a) {
             case 0:
-                this.f23621b.c(j6, j9);
+                this.f24401b.c(j6, j9);
                 break;
             default:
-                this.f23621b.c(j6, j9);
+                this.f24401b.c(j6, j9);
                 break;
         }
     }
 
     @Override // com.google.android.gms.internal.ads.Q0
     public final boolean d(R0 r02) {
-        switch (this.f23620a) {
+        switch (this.f24400a) {
         }
-        return this.f23621b.d(r02);
+        return this.f24401b.d(r02);
     }
 
     @Override // com.google.android.gms.internal.ads.Q0
     public final void e() {
-        int i = this.f23620a;
+        int i = this.f24400a;
     }
 
     private final void g() {

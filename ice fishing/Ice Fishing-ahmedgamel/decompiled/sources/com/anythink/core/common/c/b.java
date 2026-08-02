@@ -1,12 +1,12 @@
 package com.anythink.core.common.c;
 
-import D.y;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.text.TextUtils;
+import com.IceFishing.LiveIceFishing.k;
 import com.anythink.core.api.ATSDKGlobalSetting;
 import com.anythink.core.common.c.h;
 import com.anythink.core.common.d.t;
@@ -14,8 +14,8 @@ import com.anythink.core.common.d.u;
 import com.anythink.core.common.e.l;
 import com.anythink.core.common.h.at;
 import com.anythink.core.common.v.af;
-import com.anythink.core.common.v.k;
 import com.anythink.core.common.v.q;
+import com.anythink.core.common.v.y;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -31,76 +31,76 @@ import org.json.JSONArray;
 public class b {
 
     /* renamed from: c, reason: collision with root package name */
-    private static b f12256c = null;
+    private static b f13042c = null;
 
     /* renamed from: k, reason: collision with root package name */
-    private static final long f12257k = 86400000;
+    private static final long f13043k = 86400000;
 
     /* renamed from: a, reason: collision with root package name */
-    Runnable f12258a;
+    Runnable f13044a;
 
     /* renamed from: d, reason: collision with root package name */
-    private long f12260d;
+    private long f13046d;
 
     /* renamed from: j, reason: collision with root package name */
-    private boolean f12265j;
+    private boolean f13051j;
 
     /* renamed from: l, reason: collision with root package name */
-    private long f12266l;
+    private long f13052l;
 
     /* renamed from: b, reason: collision with root package name */
-    private final String f12259b = getClass().getSimpleName();
+    private final String f13045b = getClass().getSimpleName();
     private final Set<String> i = Collections.synchronizedSet(new HashSet());
 
     /* renamed from: h, reason: collision with root package name */
-    private final Object f12264h = new Object();
+    private final Object f13050h = new Object();
 
     /* renamed from: e, reason: collision with root package name */
-    private ConcurrentLinkedQueue<f> f12261e = new ConcurrentLinkedQueue<>();
+    private ConcurrentLinkedQueue<f> f13047e = new ConcurrentLinkedQueue<>();
 
     /* renamed from: f, reason: collision with root package name */
-    private ConcurrentHashMap<String, c> f12262f = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<String, c> f13048f = new ConcurrentHashMap<>();
 
     /* renamed from: g, reason: collision with root package name */
-    private ConcurrentHashMap<String, c> f12263g = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<String, c> f13049g = new ConcurrentHashMap<>();
 
     public b() {
-        com.anythink.core.d.b g4;
-        this.f12260d = 0L;
-        this.f12260d = Math.max(0L, ATSDKGlobalSetting.mInspectInterval);
-        this.f12265j = false;
-        if (!TextUtils.isEmpty(t.b().p()) && (g4 = y.g(y.h())) != null && !g4.S()) {
-            this.f12260d = g4.aE();
-            this.f12265j = a(g4.aJ());
+        com.anythink.core.d.b k9;
+        this.f13046d = 0L;
+        this.f13046d = Math.max(0L, ATSDKGlobalSetting.mInspectInterval);
+        this.f13051j = false;
+        if (!TextUtils.isEmpty(t.b().p()) && (k9 = k.k(k.l())) != null && !k9.S()) {
+            this.f13046d = k9.aE();
+            this.f13051j = a(k9.aJ());
         }
         a(new Runnable() { // from class: com.anythink.core.common.c.b.1
             @Override // java.lang.Runnable
             public final void run() {
-                String unused = b.this.f12259b;
-                synchronized (b.this.f12264h) {
+                String unused = b.this.f13045b;
+                synchronized (b.this.f13050h) {
                     try {
-                        if (b.this.f12265j) {
+                        if (b.this.f13051j) {
                             b.d(b.this);
                         } else {
                             l a9 = l.a(com.anythink.core.common.e.e.a(t.b().g()));
-                            String unused2 = b.this.f12259b;
+                            String unused2 = b.this.f13045b;
                             a9.a();
                             List<at> b9 = a9.b();
                             if (b9 != null) {
                                 for (at atVar : b9) {
-                                    if (!b.this.f12263g.containsKey(atVar.a())) {
-                                        ConcurrentHashMap concurrentHashMap = b.this.f12263g;
+                                    if (!b.this.f13049g.containsKey(atVar.a())) {
+                                        ConcurrentHashMap concurrentHashMap = b.this.f13049g;
                                         String a10 = atVar.a();
                                         String a11 = atVar.a();
                                         long c9 = atVar.c();
-                                        boolean z3 = true;
+                                        boolean z6 = true;
                                         if (atVar.b() != 1) {
-                                            z3 = false;
+                                            z6 = false;
                                         }
-                                        concurrentHashMap.put(a10, new c("", a11, false, c9, z3));
-                                        String unused3 = b.this.f12259b;
+                                        concurrentHashMap.put(a10, new c("", a11, false, c9, z6));
+                                        String unused3 = b.this.f13045b;
                                         Thread.currentThread().getName();
-                                        ((c) b.this.f12263g.get(atVar.a())).toString();
+                                        ((c) b.this.f13049g.get(atVar.a())).toString();
                                     }
                                 }
                             }
@@ -114,10 +114,10 @@ public class b {
     }
 
     public static /* synthetic */ void i(b bVar) {
-        synchronized (bVar.f12264h) {
+        synchronized (bVar.f13050h) {
             try {
-                if (bVar.f12258a != null) {
-                    bVar.f12258a = null;
+                if (bVar.f13044a != null) {
+                    bVar.f13044a = null;
                 }
             } catch (Throwable th) {
                 throw th;
@@ -127,9 +127,9 @@ public class b {
 
     public final List<c> d() {
         ArrayList arrayList = new ArrayList();
-        Iterator<String> it = this.f12262f.keySet().iterator();
+        Iterator<String> it = this.f13048f.keySet().iterator();
         while (it.hasNext()) {
-            c cVar = this.f12262f.get(it.next());
+            c cVar = this.f13048f.get(it.next());
             if (cVar != null && cVar.b()) {
                 arrayList.add(cVar);
             }
@@ -138,26 +138,26 @@ public class b {
     }
 
     public static b a() {
-        if (f12256c == null) {
+        if (f13042c == null) {
             synchronized (b.class) {
                 try {
-                    if (f12256c == null) {
-                        f12256c = new b();
+                    if (f13042c == null) {
+                        f13042c = new b();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f12256c;
+        return f13042c;
     }
 
     private void b(List<f> list) {
-        synchronized (this.f12264h) {
+        synchronized (this.f13050h) {
             if (list != null) {
                 try {
                     if (list.size() > 0) {
-                        this.f12261e.addAll(list);
+                        this.f13047e.addAll(list);
                         e();
                     }
                 } catch (Throwable th) {
@@ -169,13 +169,13 @@ public class b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void e() {
-        synchronized (this.f12264h) {
+        synchronized (this.f13050h) {
             try {
-                if (this.f12260d >= 0 && this.f12261e.size() > 0 && this.f12258a == null) {
-                    f poll = this.f12261e.poll();
+                if (this.f13046d >= 0 && this.f13047e.size() > 0 && this.f13044a == null) {
+                    f poll = this.f13047e.poll();
                     if (poll != null) {
                         Runnable a9 = a(poll);
-                        this.f12258a = a9;
+                        this.f13044a = a9;
                         a(a9);
                     } else {
                         e();
@@ -188,10 +188,10 @@ public class b {
     }
 
     private void f() {
-        synchronized (this.f12264h) {
+        synchronized (this.f13050h) {
             try {
-                if (this.f12258a != null) {
-                    this.f12258a = null;
+                if (this.f13044a != null) {
+                    this.f13044a = null;
                 }
             } catch (Throwable th) {
                 throw th;
@@ -200,20 +200,20 @@ public class b {
     }
 
     private boolean g() {
-        if (this.f12265j) {
-            return this.i.isEmpty() || System.currentTimeMillis() - this.f12266l > 86400000;
+        if (this.f13051j) {
+            return this.i.isEmpty() || System.currentTimeMillis() - this.f13052l > 86400000;
         }
         return false;
     }
 
     private void h() {
-        if (this.f12265j) {
-            if (this.i.isEmpty() || System.currentTimeMillis() - this.f12266l > 86400000) {
+        if (this.f13051j) {
+            if (this.i.isEmpty() || System.currentTimeMillis() - this.f13052l > 86400000) {
                 this.i.clear();
                 try {
                     Intent intent = new Intent("android.intent.action.MAIN", (Uri) null);
                     intent.addCategory("android.intent.category.LAUNCHER");
-                    List<ResolveInfo> a9 = com.anythink.core.common.v.y.a(t.b().g(), intent);
+                    List<ResolveInfo> a9 = y.a(t.b().g(), intent);
                     if (a9 != null) {
                         Iterator<ResolveInfo> it = a9.iterator();
                         while (it.hasNext()) {
@@ -223,7 +223,7 @@ public class b {
                             }
                         }
                     }
-                    this.f12266l = System.currentTimeMillis();
+                    this.f13052l = System.currentTimeMillis();
                 } catch (Throwable unused) {
                 }
             }
@@ -235,9 +235,9 @@ public class b {
         try {
             JSONArray jSONArray = new JSONArray();
             JSONArray jSONArray2 = new JSONArray();
-            Iterator<String> it = this.f12263g.keySet().iterator();
+            Iterator<String> it = this.f13049g.keySet().iterator();
             while (it.hasNext()) {
-                c cVar = this.f12263g.get(it.next());
+                c cVar = this.f13049g.get(it.next());
                 if (cVar != null && cVar.b()) {
                     jSONArray.put(Long.parseLong(cVar.e()));
                     jSONArray2.put(Math.floor(((System.currentTimeMillis() - cVar.a()) / 1000.0d) / 3600.0d));
@@ -251,13 +251,13 @@ public class b {
     }
 
     public static /* synthetic */ void d(b bVar) {
-        if (bVar.f12265j) {
-            if (bVar.i.isEmpty() || System.currentTimeMillis() - bVar.f12266l > 86400000) {
+        if (bVar.f13051j) {
+            if (bVar.i.isEmpty() || System.currentTimeMillis() - bVar.f13052l > 86400000) {
                 bVar.i.clear();
                 try {
                     Intent intent = new Intent("android.intent.action.MAIN", (Uri) null);
                     intent.addCategory("android.intent.category.LAUNCHER");
-                    List<ResolveInfo> a9 = com.anythink.core.common.v.y.a(t.b().g(), intent);
+                    List<ResolveInfo> a9 = y.a(t.b().g(), intent);
                     if (a9 != null) {
                         Iterator<ResolveInfo> it = a9.iterator();
                         while (it.hasNext()) {
@@ -267,7 +267,7 @@ public class b {
                             }
                         }
                     }
-                    bVar.f12266l = System.currentTimeMillis();
+                    bVar.f13052l = System.currentTimeMillis();
                 } catch (Throwable unused) {
                 }
             }
@@ -275,7 +275,7 @@ public class b {
     }
 
     public static int b() {
-        return af.b(t.b().g(), u.b.f12847a, u.a.f12814B, 0);
+        return af.b(t.b().g(), u.b.f13633a, u.a.f13600B, 0);
     }
 
     public final void a(final List<a> list) {
@@ -288,20 +288,20 @@ public class b {
             com.anythink.core.common.v.b.b.a().a(new Runnable() { // from class: com.anythink.core.common.c.b.2
                 @Override // java.lang.Runnable
                 public final void run() {
-                    Context g4;
-                    String unused = b.this.f12259b;
+                    Context g9;
+                    String unused = b.this.f13045b;
                     Thread.currentThread().getName();
                     list.size();
                     ATSDKGlobalSetting.SHAKE_TYPE shake_type = ATSDKGlobalSetting.shakeControlType;
                     List list2 = list;
-                    if (list2 == null || list2.size() <= 0 || (g4 = t.b().g()) == null) {
+                    if (list2 == null || list2.size() <= 0 || (g9 = t.b().g()) == null) {
                         return;
                     }
                     ArrayList arrayList = new ArrayList();
                     for (int i = 0; i < list.size(); i++) {
                         a aVar = (a) list.get(i);
                         if (aVar != null) {
-                            arrayList.add(new g(g4, aVar.a(), aVar.b(), af.b(g4, u.b.f12847a, "det_time_" + aVar.b(), 0L)));
+                            arrayList.add(new g(g9, aVar.a(), aVar.b(), af.b(g9, u.b.f13633a, "det_time_" + aVar.b(), 0L)));
                         }
                     }
                     if (arrayList.size() > 0) {
@@ -312,9 +312,9 @@ public class b {
         }
     }
 
-    public final void a(final String str, final int i, final long j6, final int i6) {
-        this.f12260d = j6;
-        this.f12265j = a(i6);
+    public final void a(final String str, final int i, final long j6, final int i4) {
+        this.f13046d = j6;
+        this.f13051j = a(i4);
         if (t.b().c(com.anythink.core.common.m.e.bu) || TextUtils.isEmpty(str)) {
             return;
         }
@@ -326,29 +326,29 @@ public class b {
             */
             public final void run() {
                 String str2;
-                Context g4;
-                synchronized (b.this.f12264h) {
+                Context g9;
+                synchronized (b.this.f13050h) {
                     try {
-                        String unused = b.this.f12259b;
+                        String unused = b.this.f13045b;
                         Thread.currentThread().getName();
                         try {
-                            str2 = k.c(str);
+                            str2 = com.anythink.core.common.v.k.c(str);
                         } catch (Throwable unused2) {
                             com.anythink.core.common.u.e.b("handleUpdateInspectInfo error", "cur offset: " + b.b() + ", error string: " + str, t.b().r());
                             str2 = null;
                         }
-                        String unused3 = b.this.f12259b;
-                        String unused4 = b.this.f12259b;
+                        String unused3 = b.this.f13045b;
+                        String unused4 = b.this.f13045b;
                         Map<String, Object> c9 = q.c(str2);
-                        String unused5 = b.this.f12259b;
+                        String unused5 = b.this.f13045b;
                         c9.size();
                         if (i != 1 && c9.size() != 0) {
-                            af.a(t.b().g(), u.b.f12847a, u.a.f12814B, b.b() + c9.size());
-                            String unused6 = b.this.f12259b;
+                            af.a(t.b().g(), u.b.f13633a, u.a.f13600B, b.b() + c9.size());
+                            String unused6 = b.this.f13045b;
                             Iterator<Map.Entry<String, Object>> it = c9.entrySet().iterator();
-                            g4 = t.b().g();
-                            if (g4 != null) {
-                                if (b.this.f12265j) {
+                            g9 = t.b().g();
+                            if (g9 != null) {
+                                if (b.this.f13051j) {
                                     b.d(b.this);
                                     if (!b.this.i.isEmpty()) {
                                         while (it.hasNext()) {
@@ -357,10 +357,10 @@ public class b {
                                                 String key = next.getKey();
                                                 String obj = next.getValue().toString();
                                                 boolean contains = b.this.i.contains(obj);
-                                                String unused7 = b.this.f12259b;
+                                                String unused7 = b.this.f13045b;
                                                 Thread.currentThread().getName();
-                                                b.this.f12263g.put(key, new c(obj, key, true, System.currentTimeMillis(), contains));
-                                                l.a(com.anythink.core.common.e.e.a(g4)).a(key, contains);
+                                                b.this.f13049g.put(key, new c(obj, key, true, System.currentTimeMillis(), contains));
+                                                l.a(com.anythink.core.common.e.e.a(g9)).a(key, contains);
                                             } catch (Throwable unused8) {
                                             }
                                         }
@@ -372,11 +372,11 @@ public class b {
                                         try {
                                             String key2 = next2.getKey();
                                             String obj2 = next2.getValue().toString();
-                                            c cVar = (c) b.this.f12263g.get(key2);
+                                            c cVar = (c) b.this.f13049g.get(key2);
                                             if (cVar != null) {
-                                                arrayList.add(new d(g4, obj2, key2, cVar.a(), cVar.b()));
+                                                arrayList.add(new d(g9, obj2, key2, cVar.a(), cVar.b()));
                                             } else {
-                                                arrayList.add(new d(g4, obj2, key2, 0L));
+                                                arrayList.add(new d(g9, obj2, key2, 0L));
                                             }
                                         } catch (Throwable unused9) {
                                         }
@@ -385,14 +385,14 @@ public class b {
                                         b.a(b.this, arrayList);
                                     }
                                 }
-                                com.anythink.core.common.u.e.a(i6, b.this.i.size(), i, j6);
+                                com.anythink.core.common.u.e.a(i4, b.this.i.size(), i, j6);
                             }
                         }
-                        String unused10 = b.this.f12259b;
-                        af.a(t.b().g(), u.b.f12847a, u.a.f12814B, 0);
+                        String unused10 = b.this.f13045b;
+                        af.a(t.b().g(), u.b.f13633a, u.a.f13600B, 0);
                         Iterator<Map.Entry<String, Object>> it2 = c9.entrySet().iterator();
-                        g4 = t.b().g();
-                        if (g4 != null) {
+                        g9 = t.b().g();
+                        if (g9 != null) {
                         }
                     } catch (Throwable th) {
                         throw th;
@@ -417,7 +417,7 @@ public class b {
         return new Runnable() { // from class: com.anythink.core.common.c.b.5
             @Override // java.lang.Runnable
             public final void run() {
-                synchronized (b.this.f12264h) {
+                synchronized (b.this.f13050h) {
                     try {
                         try {
                             f fVar2 = fVar;
@@ -426,20 +426,20 @@ public class b {
                                 if (a9 != null) {
                                     int b9 = fVar.b();
                                     if (b9 == 1) {
-                                        b.this.f12262f.put(a9.e(), a9);
+                                        b.this.f13048f.put(a9.e(), a9);
                                     } else if (b9 == 2) {
-                                        b.this.f12263g.put(a9.e(), a9);
+                                        b.this.f13049g.put(a9.e(), a9);
                                     }
                                 }
-                                if ((a9 == null || a9.d()) && b.this.f12260d > 0) {
+                                if ((a9 == null || a9.d()) && b.this.f13046d > 0) {
                                     try {
-                                        Thread.sleep(b.this.f12260d);
+                                        Thread.sleep(b.this.f13046d);
                                     } catch (Throwable unused) {
                                     }
                                 }
-                                String unused2 = b.this.f12259b;
+                                String unused2 = b.this.f13045b;
                                 Thread.currentThread().getName();
-                                long unused3 = b.this.f12260d;
+                                long unused3 = b.this.f13046d;
                                 if (a9 != null) {
                                     a9.toString();
                                 }
@@ -449,7 +449,7 @@ public class b {
                         } catch (Throwable th) {
                             StackTraceElement[] stackTrace = th.getStackTrace();
                             StringBuilder sb = new StringBuilder("queue size=");
-                            sb.append(b.this.f12261e != null ? b.this.f12261e.size() : -1);
+                            sb.append(b.this.f13047e != null ? b.this.f13047e.size() : -1);
                             sb.append(" , ");
                             sb.append(q.a(stackTrace));
                             com.anythink.core.common.u.e.b("inspect error", sb.toString(), t.b().r());
@@ -475,10 +475,10 @@ public class b {
     }
 
     public static /* synthetic */ void a(b bVar, List list) {
-        synchronized (bVar.f12264h) {
+        synchronized (bVar.f13050h) {
             try {
                 if (list.size() > 0) {
-                    bVar.f12261e.addAll(list);
+                    bVar.f13047e.addAll(list);
                     bVar.e();
                 }
             } catch (Throwable th) {

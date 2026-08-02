@@ -1,7 +1,7 @@
 package A5;
 
 import com.onesignal.common.events.d;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public interface b extends d {
@@ -10,7 +10,7 @@ public interface b extends d {
     @Override // com.onesignal.common.events.d
     /* synthetic */ boolean getHasSubscribers();
 
-    Object prompt(boolean z3, InterfaceC5267d interfaceC5267d);
+    Object prompt(boolean z6, InterfaceC5240d interfaceC5240d);
 
     @Override // com.onesignal.common.events.d
     /* synthetic */ void subscribe(Object obj);

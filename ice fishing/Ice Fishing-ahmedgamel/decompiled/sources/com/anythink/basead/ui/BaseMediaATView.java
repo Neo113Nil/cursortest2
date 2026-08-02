@@ -15,35 +15,35 @@ import java.util.List;
 public abstract class BaseMediaATView extends FrameLayout {
 
     /* renamed from: a, reason: collision with root package name */
-    protected w f9826a;
+    protected w f10612a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected y f9827b;
+    protected y f10613b;
 
     /* renamed from: c, reason: collision with root package name */
-    protected x f9828c;
+    protected x f10614c;
 
     /* renamed from: d, reason: collision with root package name */
-    protected a f9829d;
+    protected a f10615d;
 
     /* renamed from: e, reason: collision with root package name */
-    protected boolean f9830e;
+    protected boolean f10616e;
 
     /* renamed from: f, reason: collision with root package name */
-    protected FrameLayout f9831f;
+    protected FrameLayout f10617f;
 
     /* renamed from: g, reason: collision with root package name */
-    protected CloseImageView f9832g;
+    protected CloseImageView f10618g;
 
     /* renamed from: h, reason: collision with root package name */
-    protected int f9833h;
+    protected int f10619h;
     protected com.anythink.basead.ui.f.a i;
 
     /* renamed from: j, reason: collision with root package name */
-    private int f9834j;
+    private int f10620j;
 
     /* renamed from: k, reason: collision with root package name */
-    private int f9835k;
+    private int f10621k;
 
     /* renamed from: com.anythink.basead.ui.BaseMediaATView$1, reason: invalid class name */
     public class AnonymousClass1 implements View.OnClickListener {
@@ -52,7 +52,7 @@ public abstract class BaseMediaATView extends FrameLayout {
 
         @Override // android.view.View.OnClickListener
         public final void onClick(View view) {
-            a aVar = BaseMediaATView.this.f9829d;
+            a aVar = BaseMediaATView.this.f10615d;
             if (aVar != null) {
                 aVar.onClickCloseView();
             }
@@ -65,38 +65,38 @@ public abstract class BaseMediaATView extends FrameLayout {
 
     public BaseMediaATView(Context context) {
         super(context);
-        this.f9834j = 0;
-        this.f9835k = 0;
+        this.f10620j = 0;
+        this.f10621k = 0;
     }
 
     private void a() {
-        if (this.f9835k <= 0) {
-            int i = this.f9833h;
+        if (this.f10621k <= 0) {
+            int i = this.f10619h;
             if (i == 1 || i == 2) {
-                this.f9835k = (int) (this.f9834j * 0.5f);
+                this.f10621k = (int) (this.f10620j * 0.5f);
             } else {
-                this.f9835k = (int) (this.f9834j * 0.75f);
+                this.f10621k = (int) (this.f10620j * 0.75f);
             }
         }
     }
 
     private void b() {
-        CloseImageView closeImageView = this.f9832g;
+        CloseImageView closeImageView = this.f10618g;
         if (closeImageView == null) {
             return;
         }
-        if (this.f9830e) {
+        if (this.f10616e) {
             closeImageView.setVisibility(0);
         } else {
             closeImageView.setVisibility(8);
         }
-        a(this.f9832g, false);
-        this.f9832g.setOnClickListener(new AnonymousClass1());
+        a(this.f10618g, false);
+        this.f10618g.setOnClickListener(new AnonymousClass1());
     }
 
     public void changeCloseViewSizeAfterClick() {
-        CloseImageView closeImageView = this.f9832g;
-        if (closeImageView == null || this.f9827b == null) {
+        CloseImageView closeImageView = this.f10618g;
+        if (closeImageView == null || this.f10613b == null) {
             return;
         }
         a(closeImageView, true);
@@ -114,55 +114,55 @@ public abstract class BaseMediaATView extends FrameLayout {
     }
 
     public int getMediaViewHeight() {
-        return this.f9835k;
+        return this.f10621k;
     }
 
     public int getMediaViewWidth() {
-        return this.f9834j;
+        return this.f10620j;
     }
 
     public View getMonitorClickView() {
         return null;
     }
 
-    public void init(int i, int i6, int i9) {
-        this.f9834j = i;
-        this.f9835k = i6;
-        this.f9833h = i9;
-        if (i6 <= 0) {
-            if (i9 == 1 || i9 == 2) {
-                this.f9835k = (int) (i * 0.5f);
+    public void init(int i, int i4, int i6) {
+        this.f10620j = i;
+        this.f10621k = i4;
+        this.f10619h = i6;
+        if (i4 <= 0) {
+            if (i6 == 1 || i6 == 2) {
+                this.f10621k = (int) (i * 0.5f);
             } else {
-                this.f9835k = (int) (i * 0.75f);
+                this.f10621k = (int) (i * 0.75f);
             }
         }
-        CloseImageView closeImageView = this.f9832g;
+        CloseImageView closeImageView = this.f10618g;
         if (closeImageView != null) {
-            if (this.f9830e) {
+            if (this.f10616e) {
                 closeImageView.setVisibility(0);
             } else {
                 closeImageView.setVisibility(8);
             }
-            a(this.f9832g, false);
-            this.f9832g.setOnClickListener(new AnonymousClass1());
+            a(this.f10618g, false);
+            this.f10618g.setOnClickListener(new AnonymousClass1());
         }
     }
 
-    public BaseMediaATView(Context context, w wVar, x xVar, boolean z3, a aVar) {
+    public BaseMediaATView(Context context, w wVar, x xVar, boolean z6, a aVar) {
         super(context);
-        this.f9834j = 0;
-        this.f9835k = 0;
-        this.f9826a = wVar;
-        this.f9827b = xVar.f14168o;
-        this.f9830e = z3;
-        this.f9829d = aVar;
-        this.f9828c = xVar;
+        this.f10620j = 0;
+        this.f10621k = 0;
+        this.f10612a = wVar;
+        this.f10613b = xVar.f14954o;
+        this.f10616e = z6;
+        this.f10615d = aVar;
+        this.f10614c = xVar;
         LayoutInflater.from(getContext()).inflate(q.a(getContext(), "base_myoffer_media_ad_view", "layout"), this);
-        this.f9831f = (FrameLayout) findViewById(q.a(getContext(), "base_media_view_content", "id"));
-        this.f9832g = (CloseImageView) findViewById(q.a(getContext(), "base_media_ad_close", "id"));
+        this.f10617f = (FrameLayout) findViewById(q.a(getContext(), "base_media_view_content", "id"));
+        this.f10618g = (CloseImageView) findViewById(q.a(getContext(), "base_media_ad_close", "id"));
     }
 
-    private void a(b bVar, boolean z3) {
-        com.anythink.basead.ui.f.b.a(bVar, z3, this.f9828c, true);
+    private void a(b bVar, boolean z6) {
+        com.anythink.basead.ui.f.b.a(bVar, z6, this.f10614c, true);
     }
 }

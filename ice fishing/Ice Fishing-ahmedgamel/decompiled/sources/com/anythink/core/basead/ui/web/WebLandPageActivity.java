@@ -49,107 +49,107 @@ import org.json.JSONException;
 public class WebLandPageActivity extends Activity implements b {
 
     /* renamed from: g, reason: collision with root package name */
-    private static final int f11942g = 343452;
+    private static final int f12728g = 343452;
 
     /* renamed from: B, reason: collision with root package name */
-    private w f11944B;
+    private w f12730B;
 
     /* renamed from: C, reason: collision with root package name */
-    private x f11945C;
+    private x f12731C;
 
     /* renamed from: D, reason: collision with root package name */
-    private String f11946D;
+    private String f12732D;
 
     /* renamed from: E, reason: collision with root package name */
-    private IOfferClickHandler f11947E;
+    private IOfferClickHandler f12733E;
 
     /* renamed from: F, reason: collision with root package name */
-    private c f11948F;
+    private c f12734F;
 
     /* renamed from: G, reason: collision with root package name */
-    private int f11949G;
+    private int f12735G;
 
     /* renamed from: b, reason: collision with root package name */
-    JSONArray f11953b;
+    JSONArray f12739b;
 
     /* renamed from: e, reason: collision with root package name */
-    long f11956e;
+    long f12742e;
 
     /* renamed from: l, reason: collision with root package name */
-    private WebProgressBarView f11961l;
+    private WebProgressBarView f12747l;
 
     /* renamed from: m, reason: collision with root package name */
-    private WebView f11962m;
+    private WebView f12748m;
 
     /* renamed from: n, reason: collision with root package name */
-    private ImageView f11963n;
+    private ImageView f12749n;
 
     /* renamed from: o, reason: collision with root package name */
-    private ImageView f11964o;
+    private ImageView f12750o;
 
     /* renamed from: p, reason: collision with root package name */
-    private TextView f11965p;
+    private TextView f12751p;
 
     /* renamed from: q, reason: collision with root package name */
-    private ValueAnimator f11966q;
+    private ValueAnimator f12752q;
 
     /* renamed from: r, reason: collision with root package name */
-    private Random f11967r;
+    private Random f12753r;
 
     /* renamed from: s, reason: collision with root package name */
-    private int f11968s;
+    private int f12754s;
 
     /* renamed from: t, reason: collision with root package name */
-    private long f11969t;
+    private long f12755t;
 
     /* renamed from: u, reason: collision with root package name */
-    private Map<String, JSONArray> f11970u;
+    private Map<String, JSONArray> f12756u;
 
     /* renamed from: x, reason: collision with root package name */
-    private WebLoadFailRefrshView f11973x;
+    private WebLoadFailRefrshView f12759x;
 
     /* renamed from: y, reason: collision with root package name */
-    private RelativeLayout f11974y;
+    private RelativeLayout f12760y;
 
     /* renamed from: h, reason: collision with root package name */
-    private final int f11958h = 1;
+    private final int f12744h = 1;
     private final int i = 2;
 
     /* renamed from: j, reason: collision with root package name */
-    private final int f11959j = 3;
+    private final int f12745j = 3;
 
     /* renamed from: k, reason: collision with root package name */
-    private final int f11960k = 0;
+    private final int f12746k = 0;
 
     /* renamed from: a, reason: collision with root package name */
-    int f11952a = 8;
+    int f12738a = 8;
 
     /* renamed from: v, reason: collision with root package name */
-    private String f11971v = "";
+    private String f12757v = "";
 
     /* renamed from: w, reason: collision with root package name */
-    private int f11972w = 0;
+    private int f12758w = 0;
 
     /* renamed from: z, reason: collision with root package name */
-    private boolean f11975z = false;
+    private boolean f12761z = false;
 
     /* renamed from: A, reason: collision with root package name */
-    private boolean f11943A = true;
+    private boolean f12729A = true;
 
     /* renamed from: H, reason: collision with root package name */
-    private ValueCallback<Uri[]> f11950H = null;
+    private ValueCallback<Uri[]> f12736H = null;
 
     /* renamed from: I, reason: collision with root package name */
-    private final int f11951I = 512;
+    private final int f12737I = 512;
 
     /* renamed from: c, reason: collision with root package name */
-    int f11954c = 0;
+    int f12740c = 0;
 
     /* renamed from: d, reason: collision with root package name */
-    int f11955d = 0;
+    int f12741d = 0;
 
     /* renamed from: f, reason: collision with root package name */
-    final long f11957f = 2500;
+    final long f12743f = 2500;
 
     /* renamed from: com.anythink.core.basead.ui.web.WebLandPageActivity$3, reason: invalid class name */
     public class AnonymousClass3 implements DownloadListener {
@@ -159,31 +159,31 @@ public class WebLandPageActivity extends Activity implements b {
         @Override // android.webkit.DownloadListener
         public final void onDownloadStart(String str, String str2, String str3, String str4, long j6) {
             t.b();
-            if (WebLandPageActivity.this.f11945C != null && WebLandPageActivity.this.f11945C.f14168o != null && WebLandPageActivity.this.f11945C.f14168o.bn() != 2) {
+            if (WebLandPageActivity.this.f12731C != null && WebLandPageActivity.this.f12731C.f14954o != null && WebLandPageActivity.this.f12731C.f14954o.bn() != 2) {
                 WebLandPageActivity.d(WebLandPageActivity.this);
                 try {
-                    Toast.makeText(WebLandPageActivity.this.getApplicationContext(), q.a(WebLandPageActivity.this.getApplicationContext(), "myoffer_intercept_web_file_download", k.f19636g), 0).show();
+                    Toast.makeText(WebLandPageActivity.this.getApplicationContext(), q.a(WebLandPageActivity.this.getApplicationContext(), "myoffer_intercept_web_file_download", k.f20423g), 0).show();
                     return;
                 } catch (Throwable unused) {
                     return;
                 }
             }
-            if (WebLandPageActivity.this.f11944B == null || WebLandPageActivity.this.f11945C == null || TextUtils.isEmpty(WebLandPageActivity.this.f11944B.I())) {
+            if (WebLandPageActivity.this.f12730B == null || WebLandPageActivity.this.f12731C == null || TextUtils.isEmpty(WebLandPageActivity.this.f12730B.I())) {
                 if (WebLandPageActivity.g(WebLandPageActivity.this)) {
                     WebLandPageActivity.a(WebLandPageActivity.this, str, 11);
                     return;
                 }
                 WebLandPageActivity.b(WebLandPageActivity.this, str, 11);
-            } else if (WebLandPageActivity.this.f11947E != null && WebLandPageActivity.this.f11947E != null && WebLandPageActivity.this.f11947E.startDataFetchApp(WebLandPageActivity.this.getApplicationContext(), WebLandPageActivity.this.f11944B, WebLandPageActivity.this.f11945C, str)) {
+            } else if (WebLandPageActivity.this.f12733E != null && WebLandPageActivity.this.f12733E != null && WebLandPageActivity.this.f12733E.startDataFetchApp(WebLandPageActivity.this.getApplicationContext(), WebLandPageActivity.this.f12730B, WebLandPageActivity.this.f12731C, str)) {
                 WebLandPageActivity webLandPageActivity = WebLandPageActivity.this;
-                webLandPageActivity.f11952a = 6;
-                webLandPageActivity.f11955d = 1;
+                webLandPageActivity.f12738a = 6;
+                webLandPageActivity.f12741d = 1;
             } else if (WebLandPageActivity.g(WebLandPageActivity.this)) {
                 WebLandPageActivity.a(WebLandPageActivity.this, str, 7);
                 return;
             } else {
                 WebLandPageActivity webLandPageActivity2 = WebLandPageActivity.this;
-                webLandPageActivity2.f11955d = 2;
+                webLandPageActivity2.f12741d = 2;
                 WebLandPageActivity.b(webLandPageActivity2, str, 7);
             }
             WebLandPageActivity.h(WebLandPageActivity.this);
@@ -195,15 +195,15 @@ public class WebLandPageActivity extends Activity implements b {
     public class AnonymousClass4 implements DialogInterface.OnClickListener {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ String f11980a;
+        final /* synthetic */ String f12766a;
 
         public AnonymousClass4(String str) {
-            this.f11980a = str;
+            this.f12766a = str;
         }
 
         @Override // android.content.DialogInterface.OnClickListener
         public final void onClick(DialogInterface dialogInterface, int i) {
-            e.a(WebLandPageActivity.this.f11944B, WebLandPageActivity.this.f11945C, 3, WebLandPageActivity.this.f11956e > 0, 2, this.f11980a);
+            e.a(WebLandPageActivity.this.f12730B, WebLandPageActivity.this.f12731C, 3, WebLandPageActivity.this.f12742e > 0, 2, this.f12766a);
         }
     }
 
@@ -211,25 +211,25 @@ public class WebLandPageActivity extends Activity implements b {
     public class AnonymousClass5 implements DialogInterface.OnClickListener {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ int f11982a;
+        final /* synthetic */ int f12768a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ String f11983b;
+        final /* synthetic */ String f12769b;
 
         public AnonymousClass5(int i, String str) {
-            this.f11982a = i;
-            this.f11983b = str;
+            this.f12768a = i;
+            this.f12769b = str;
         }
 
         @Override // android.content.DialogInterface.OnClickListener
         public final void onClick(DialogInterface dialogInterface, int i) {
-            int i6 = this.f11982a;
-            if (i6 == 7) {
-                WebLandPageActivity.this.f11955d = 2;
+            int i4 = this.f12768a;
+            if (i4 == 7) {
+                WebLandPageActivity.this.f12741d = 2;
             }
-            WebLandPageActivity.b(WebLandPageActivity.this, this.f11983b, i6);
+            WebLandPageActivity.b(WebLandPageActivity.this, this.f12769b, i4);
             WebLandPageActivity.h(WebLandPageActivity.this);
-            e.a(WebLandPageActivity.this.f11944B, WebLandPageActivity.this.f11945C, 3, WebLandPageActivity.this.f11956e > 0, 1, this.f11983b);
+            e.a(WebLandPageActivity.this.f12730B, WebLandPageActivity.this.f12731C, 3, WebLandPageActivity.this.f12742e > 0, 1, this.f12769b);
             WebLandPageActivity.this.e();
         }
     }
@@ -241,10 +241,10 @@ public class WebLandPageActivity extends Activity implements b {
 
         @Override // android.view.View.OnClickListener
         public final void onClick(View view) {
-            if (WebLandPageActivity.this.f11962m == null || !WebLandPageActivity.this.f11962m.canGoBack()) {
+            if (WebLandPageActivity.this.f12748m == null || !WebLandPageActivity.this.f12748m.canGoBack()) {
                 WebLandPageActivity.this.finish();
             } else {
-                WebLandPageActivity.this.f11962m.goBack();
+                WebLandPageActivity.this.f12748m.goBack();
             }
         }
     }
@@ -267,7 +267,7 @@ public class WebLandPageActivity extends Activity implements b {
     }
 
     public static /* synthetic */ boolean d(WebLandPageActivity webLandPageActivity) {
-        webLandPageActivity.f11975z = true;
+        webLandPageActivity.f12761z = true;
         return true;
     }
 
@@ -283,22 +283,22 @@ public class WebLandPageActivity extends Activity implements b {
     }
 
     public static /* synthetic */ int h(WebLandPageActivity webLandPageActivity) {
-        webLandPageActivity.f11972w = 2;
+        webLandPageActivity.f12758w = 2;
         return 2;
     }
 
     @Override // com.anythink.core.basead.ui.web.b
     public void callbackClickResult(cc ccVar) {
-        this.f11952a = ccVar.f13905l;
-        if (ccVar.f13907n) {
-            if (ccVar.f13906m) {
-                this.f11954c = 1;
-                this.f11972w = 2;
+        this.f12738a = ccVar.f14691l;
+        if (ccVar.f14693n) {
+            if (ccVar.f14692m) {
+                this.f12740c = 1;
+                this.f12758w = 2;
                 e();
             } else {
-                this.f11954c = 2;
-                if (ccVar.f13909p) {
-                    e.a(this.f11944B, this.f11945C, 2, this.f11956e > 0, 0, ccVar.f13908o);
+                this.f12740c = 2;
+                if (ccVar.f14695p) {
+                    e.a(this.f12730B, this.f12731C, 2, this.f12742e > 0, 0, ccVar.f14694o);
                 }
             }
         }
@@ -307,8 +307,8 @@ public class WebLandPageActivity extends Activity implements b {
     @Override // android.app.Activity, android.view.Window.Callback
     public boolean dispatchTouchEvent(MotionEvent motionEvent) {
         if (motionEvent.getAction() == 0) {
-            this.f11956e = System.currentTimeMillis();
-            this.f11943A = true;
+            this.f12742e = System.currentTimeMillis();
+            this.f12729A = true;
         }
         return super.dispatchTouchEvent(motionEvent);
     }
@@ -316,29 +316,29 @@ public class WebLandPageActivity extends Activity implements b {
     @Override // android.app.Activity
     public void finish() {
         y yVar;
-        x xVar = this.f11945C;
-        if (xVar != null && (yVar = xVar.f14168o) != null && yVar.j() == 1) {
+        x xVar = this.f12731C;
+        if (xVar != null && (yVar = xVar.f14954o) != null && yVar.j() == 1) {
             try {
-                AlertDialog.Builder builder = new AlertDialog.Builder(this, q.a(this, "system_dialog", k.f19634e));
-                builder.setMessage(getString(q.a(this, "web_land_page_dialog_title", k.f19636g))).setCancelable(true).setPositiveButton(getString(q.a(this, "web_land_page_dialog_stay", k.f19636g)), new DialogInterface.OnClickListener() { // from class: com.anythink.core.basead.ui.web.WebLandPageActivity.10
+                AlertDialog.Builder builder = new AlertDialog.Builder(this, q.a(this, "system_dialog", k.f20421e));
+                builder.setMessage(getString(q.a(this, "web_land_page_dialog_title", k.f20423g))).setCancelable(true).setPositiveButton(getString(q.a(this, "web_land_page_dialog_stay", k.f20423g)), new DialogInterface.OnClickListener() { // from class: com.anythink.core.basead.ui.web.WebLandPageActivity.10
                     @Override // android.content.DialogInterface.OnClickListener
                     public final void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.dismiss();
-                        x xVar2 = WebLandPageActivity.this.f11945C;
-                        int b9 = WebLandPageActivity.this.f11944B.b();
-                        String v9 = WebLandPageActivity.this.f11944B.v();
+                        x xVar2 = WebLandPageActivity.this.f12731C;
+                        int b9 = WebLandPageActivity.this.f12730B.b();
+                        String v9 = WebLandPageActivity.this.f12730B.v();
                         WebLandPageActivity webLandPageActivity = WebLandPageActivity.this;
-                        e.a(xVar2, b9, v9, webLandPageActivity.f11953b, webLandPageActivity.f11971v, 0);
+                        e.a(xVar2, b9, v9, webLandPageActivity.f12739b, webLandPageActivity.f12757v, 0);
                     }
-                }).setNegativeButton(getString(q.a(this, "web_land_page_dialog_yes", k.f19636g)), new DialogInterface.OnClickListener() { // from class: com.anythink.core.basead.ui.web.WebLandPageActivity.9
+                }).setNegativeButton(getString(q.a(this, "web_land_page_dialog_yes", k.f20423g)), new DialogInterface.OnClickListener() { // from class: com.anythink.core.basead.ui.web.WebLandPageActivity.9
                     @Override // android.content.DialogInterface.OnClickListener
                     public final void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.dismiss();
-                        x xVar2 = WebLandPageActivity.this.f11945C;
-                        int b9 = WebLandPageActivity.this.f11944B.b();
-                        String v9 = WebLandPageActivity.this.f11944B.v();
+                        x xVar2 = WebLandPageActivity.this.f12731C;
+                        int b9 = WebLandPageActivity.this.f12730B.b();
+                        String v9 = WebLandPageActivity.this.f12730B.v();
                         WebLandPageActivity webLandPageActivity = WebLandPageActivity.this;
-                        e.a(xVar2, b9, v9, webLandPageActivity.f11953b, webLandPageActivity.f11971v, 1);
+                        e.a(xVar2, b9, v9, webLandPageActivity.f12739b, webLandPageActivity.f12757v, 1);
                         WebLandPageActivity.this.e();
                     }
                 });
@@ -352,12 +352,12 @@ public class WebLandPageActivity extends Activity implements b {
 
     @Override // com.anythink.core.basead.ui.web.b
     public w getBaseAdContent() {
-        return this.f11944B;
+        return this.f12730B;
     }
 
     @Override // com.anythink.core.basead.ui.web.b
     public WebProgressBarView getWebProgressBarView() {
-        return this.f11961l;
+        return this.f12747l;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:25:0x0036 A[Catch: all -> 0x0047, TRY_ENTER, TryCatch #2 {all -> 0x0047, blocks: (B:4:0x0004, B:12:0x000f, B:25:0x0036, B:26:0x0040), top: B:3:0x0004 }] */
@@ -365,14 +365,14 @@ public class WebLandPageActivity extends Activity implements b {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public void onActivityResult(int i, int i6, Intent intent) {
+    public void onActivityResult(int i, int i4, Intent intent) {
         Uri[] uriArr;
         ClipData clipData;
         if (i == 512) {
-            if (this.f11950H == null) {
+            if (this.f12736H == null) {
                 return;
             }
-            if (i6 != -1 || intent == null) {
+            if (i4 != -1 || intent == null) {
                 uriArr = null;
             } else {
                 String dataString = intent.getDataString();
@@ -382,9 +382,9 @@ public class WebLandPageActivity extends Activity implements b {
                 }
                 if (clipData != null) {
                     uriArr = new Uri[clipData.getItemCount()];
-                    for (int i9 = 0; i9 < clipData.getItemCount(); i9++) {
+                    for (int i6 = 0; i6 < clipData.getItemCount(); i6++) {
                         try {
-                            uriArr[i9] = clipData.getItemAt(i9).getUri();
+                            uriArr[i6] = clipData.getItemAt(i6).getUri();
                         } catch (Throwable unused2) {
                         }
                     }
@@ -396,157 +396,157 @@ public class WebLandPageActivity extends Activity implements b {
                 if (dataString != null) {
                 }
             }
-            this.f11950H.onReceiveValue(uriArr);
-            this.f11950H = null;
-            super.onActivityResult(i, i6, intent);
+            this.f12736H.onReceiveValue(uriArr);
+            this.f12736H = null;
+            super.onActivityResult(i, i4, intent);
         }
     }
 
     @Override // android.app.Activity
     public void onBackPressed() {
-        WebView webView = this.f11962m;
+        WebView webView = this.f12748m;
         if (webView == null || !webView.canGoBack()) {
             super.onBackPressed();
         } else {
-            this.f11962m.goBack();
+            this.f12748m.goBack();
         }
     }
 
     @Override // android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        this.f11969t = SystemClock.elapsedRealtime();
-        this.f11970u = new LinkedHashMap();
+        this.f12755t = SystemClock.elapsedRealtime();
+        this.f12756u = new LinkedHashMap();
         setResult(-1);
         Intent intent = getIntent();
         if (intent != null) {
             try {
-                Serializable serializableExtra = intent.getSerializableExtra(a.C0072a.f11868c);
+                Serializable serializableExtra = intent.getSerializableExtra(a.C0072a.f12654c);
                 if (serializableExtra != null && (serializableExtra instanceof w)) {
                     w wVar = (w) serializableExtra;
-                    this.f11944B = wVar;
-                    this.f11948F = new c(wVar);
+                    this.f12730B = wVar;
+                    this.f12734F = new c(wVar);
                 }
             } catch (Throwable th) {
                 th.printStackTrace();
             }
             try {
-                Serializable serializableExtra2 = intent.getSerializableExtra(a.C0072a.f11870e);
+                Serializable serializableExtra2 = intent.getSerializableExtra(a.C0072a.f12656e);
                 if (serializableExtra2 != null && (serializableExtra2 instanceof x)) {
-                    this.f11945C = (x) serializableExtra2;
+                    this.f12731C = (x) serializableExtra2;
                 }
             } catch (Throwable th2) {
                 th2.printStackTrace();
             }
             try {
-                Serializable serializableExtra3 = intent.getSerializableExtra(a.C0072a.f11875k);
+                Serializable serializableExtra3 = intent.getSerializableExtra(a.C0072a.f12661k);
                 if (serializableExtra3 != null && (serializableExtra3 instanceof IOfferClickHandler)) {
-                    this.f11947E = (IOfferClickHandler) serializableExtra3;
+                    this.f12733E = (IOfferClickHandler) serializableExtra3;
                 }
             } catch (Throwable th3) {
                 th3.printStackTrace();
             }
             try {
-                this.f11946D = intent.getStringExtra(a.C0072a.i);
+                this.f12732D = intent.getStringExtra(a.C0072a.i);
             } catch (Throwable th4) {
                 th4.printStackTrace();
             }
             try {
-                this.f11949G = intent.getIntExtra(a.C0072a.f11880p, -1);
+                this.f12735G = intent.getIntExtra(a.C0072a.f12666p, -1);
             } catch (Throwable th5) {
                 th5.printStackTrace();
             }
-            this.f11943A = true;
+            this.f12729A = true;
             try {
-                this.f11943A = intent.getBooleanExtra(a.C0072a.f11881q, true);
+                this.f12729A = intent.getBooleanExtra(a.C0072a.f12667q, true);
             } catch (Throwable th6) {
                 th6.printStackTrace();
             }
         }
-        String str = this.f11946D;
+        String str = this.f12732D;
         if (TextUtils.isEmpty(str)) {
-            w wVar2 = this.f11944B;
+            w wVar2 = this.f12730B;
             str = wVar2 != null ? wVar2.H() : "";
         }
         Context applicationContext = getApplicationContext();
         if (TextUtils.isEmpty(str)) {
-            Toast.makeText(applicationContext, q.a(applicationContext, "basead_click_empty", k.f19636g), 0).show();
-            this.f11972w = 3;
+            Toast.makeText(applicationContext, q.a(applicationContext, "basead_click_empty", k.f20423g), 0).show();
+            this.f12758w = 3;
             e();
             return;
         }
-        if (this.f11943A) {
+        if (this.f12729A) {
             cc a9 = com.anythink.core.basead.a.e.a(applicationContext, str, getBaseAdContent());
-            if (a9.f13906m) {
+            if (a9.f14692m) {
                 callbackClickResult(a9);
                 return;
             }
             callbackClickResult(a9);
         }
-        RelativeLayout f3 = f();
-        this.f11974y = f3;
-        if (f3 == null) {
+        RelativeLayout f2 = f();
+        this.f12760y = f2;
+        if (f2 == null) {
             com.anythink.core.basead.a.e.b(str);
             e();
             return;
         }
-        setContentView(f3);
-        this.f11963n.setOnClickListener(new AnonymousClass6());
-        this.f11964o.setOnClickListener(new AnonymousClass7());
+        setContentView(f2);
+        this.f12749n.setOnClickListener(new AnonymousClass6());
+        this.f12750o.setOnClickListener(new AnonymousClass7());
         com.anythink.core.basead.ui.a.a.a(this);
-        com.anythink.core.basead.ui.a.a.a(this.f11962m, this, this);
-        this.f11962m.setDownloadListener(new AnonymousClass3());
+        com.anythink.core.basead.ui.a.a.a(this.f12748m, this, this);
+        this.f12748m.setDownloadListener(new AnonymousClass3());
         cc a10 = com.anythink.core.basead.a.e.a(str);
-        this.f11952a = a10.f13905l;
-        this.f11962m.loadUrl(a10.f13908o);
-        recordRedirectUrl(this.f11962m.getUrl());
+        this.f12738a = a10.f14691l;
+        this.f12748m.loadUrl(a10.f14694o);
+        recordRedirectUrl(this.f12748m.getUrl());
     }
 
     @Override // android.app.Activity
     public void onDestroy() {
         x xVar;
         super.onDestroy();
-        ValueAnimator valueAnimator = this.f11966q;
+        ValueAnimator valueAnimator = this.f12752q;
         if (valueAnimator != null) {
             valueAnimator.cancel();
-            this.f11966q = null;
+            this.f12752q = null;
         }
-        WebView webView = this.f11962m;
+        WebView webView = this.f12748m;
         if (webView != null) {
             webView.setDownloadListener(null);
-            this.f11962m.destroy();
+            this.f12748m.destroy();
         }
-        this.f11962m = null;
-        w wVar = this.f11944B;
-        if (wVar == null || (xVar = this.f11945C) == null) {
+        this.f12748m = null;
+        w wVar = this.f12730B;
+        if (wVar == null || (xVar = this.f12731C) == null) {
             return;
         }
         int b9 = wVar.b();
-        String v9 = this.f11944B.v();
-        Map<String, JSONArray> map = this.f11970u;
-        int i = this.f11954c;
-        int i6 = this.f11955d;
-        int i9 = this.f11952a;
-        String str = this.f11946D;
-        int i10 = this.f11945C.f14163j;
-        int i11 = this.f11949G;
-        long elapsedRealtime = SystemClock.elapsedRealtime() - this.f11969t;
-        String str2 = this.f11971v;
-        int i12 = this.f11972w;
-        if (i12 == 0) {
-            i12 = 1;
+        String v9 = this.f12730B.v();
+        Map<String, JSONArray> map = this.f12756u;
+        int i = this.f12740c;
+        int i4 = this.f12741d;
+        int i6 = this.f12738a;
+        String str = this.f12732D;
+        int i9 = this.f12731C.f14949j;
+        int i10 = this.f12735G;
+        long elapsedRealtime = SystemClock.elapsedRealtime() - this.f12755t;
+        String str2 = this.f12757v;
+        int i11 = this.f12758w;
+        if (i11 == 0) {
+            i11 = 1;
         }
-        e.a(xVar, b9, v9, map, i, i6, i9, str, i10, i11, elapsedRealtime, str2, i12, this.f11975z);
+        e.a(xVar, b9, v9, map, i, i4, i6, str, i9, i10, elapsedRealtime, str2, i11, this.f12761z);
     }
 
     @Override // android.app.Activity
     public void onPause() {
         super.onPause();
         CookieSyncManager.getInstance().stopSync();
-        WebView webView = this.f11962m;
+        WebView webView = this.f12748m;
         if (webView != null) {
             webView.setWebChromeClient(null);
-            com.anythink.core.basead.ui.a.a.a(this.f11962m, isFinishing());
+            com.anythink.core.basead.ui.a.a.a(this.f12748m, isFinishing());
         }
     }
 
@@ -554,7 +554,7 @@ public class WebLandPageActivity extends Activity implements b {
     public void onResume() {
         super.onResume();
         CookieSyncManager.getInstance().startSync();
-        WebView webView = this.f11962m;
+        WebView webView = this.f12748m;
         if (webView != null) {
             webView.setWebChromeClient(new WebChromeClient() { // from class: com.anythink.core.basead.ui.web.WebLandPageActivity.8
                 @Override // android.webkit.WebChromeClient
@@ -565,19 +565,19 @@ public class WebLandPageActivity extends Activity implements b {
 
                 @Override // android.webkit.WebChromeClient
                 public final void onProgressChanged(WebView webView2, int i) {
-                    if (WebLandPageActivity.this.f11961l != null) {
-                        if (!WebLandPageActivity.this.f11966q.isRunning()) {
-                            WebLandPageActivity.this.f11961l.setProgress(((i * 30) / 100) + 70);
+                    if (WebLandPageActivity.this.f12747l != null) {
+                        if (!WebLandPageActivity.this.f12752q.isRunning()) {
+                            WebLandPageActivity.this.f12747l.setProgress(((i * 30) / 100) + 70);
                         }
                         if (i == 100) {
-                            if (WebLandPageActivity.this.f11966q.isRunning()) {
-                                WebLandPageActivity.this.f11966q.cancel();
-                                WebLandPageActivity.this.f11961l.setProgress(100);
+                            if (WebLandPageActivity.this.f12752q.isRunning()) {
+                                WebLandPageActivity.this.f12752q.cancel();
+                                WebLandPageActivity.this.f12747l.setProgress(100);
                             }
                             t.b().a(new Runnable() { // from class: com.anythink.core.basead.ui.web.WebLandPageActivity.8.1
                                 @Override // java.lang.Runnable
                                 public final void run() {
-                                    WebLandPageActivity.this.f11961l.setVisibility(8);
+                                    WebLandPageActivity.this.f12747l.setVisibility(8);
                                 }
                             }, 200L);
                         }
@@ -587,16 +587,16 @@ public class WebLandPageActivity extends Activity implements b {
                 @Override // android.webkit.WebChromeClient
                 public final void onReceivedTitle(WebView webView2, String str) {
                     super.onReceivedTitle(webView2, str);
-                    if (TextUtils.isEmpty(str) || WebLandPageActivity.this.f11965p == null || WebLandPageActivity.this.f11965p.getText().toString().length() != 0) {
+                    if (TextUtils.isEmpty(str) || WebLandPageActivity.this.f12751p == null || WebLandPageActivity.this.f12751p.getText().toString().length() != 0) {
                         return;
                     }
-                    WebLandPageActivity.this.f11965p.setText(str);
+                    WebLandPageActivity.this.f12751p.setText(str);
                 }
 
                 @Override // android.webkit.WebChromeClient
                 public final boolean onShowFileChooser(WebView webView2, ValueCallback<Uri[]> valueCallback, WebChromeClient.FileChooserParams fileChooserParams) {
                     try {
-                        WebLandPageActivity.this.f11950H = valueCallback;
+                        WebLandPageActivity.this.f12736H = valueCallback;
                         Intent intent = new Intent("android.intent.action.GET_CONTENT");
                         intent.putExtra("android.intent.extra.MIME_TYPES", new String[]{"image/*", "video/*", "audio/*"});
                         intent.addCategory("android.intent.category.OPENABLE");
@@ -608,7 +608,7 @@ public class WebLandPageActivity extends Activity implements b {
                     }
                 }
             });
-            this.f11962m.onResume();
+            this.f12748m.onResume();
         }
     }
 
@@ -625,26 +625,26 @@ public class WebLandPageActivity extends Activity implements b {
     @Override // com.anythink.core.basead.ui.web.b
     public void onWebPageFinish(WebView webView, String str) {
         WebView webView2;
-        WebLoadFailRefrshView webLoadFailRefrshView = this.f11973x;
-        if (webLoadFailRefrshView != null && webLoadFailRefrshView.getParent() == null && (webView2 = this.f11962m) != null) {
+        WebLoadFailRefrshView webLoadFailRefrshView = this.f12759x;
+        if (webLoadFailRefrshView != null && webLoadFailRefrshView.getParent() == null && (webView2 = this.f12748m) != null) {
             webView2.setVisibility(0);
         }
         webView.canGoBack();
         webView.canGoForward();
-        if (!TextUtils.isEmpty(str) && this.f11972w != 3 && TextUtils.equals(this.f11971v, str) && !isFinishing()) {
-            this.f11972w = 2;
-            JSONArray jSONArray = this.f11970u.get(str);
+        if (!TextUtils.isEmpty(str) && this.f12758w != 3 && TextUtils.equals(this.f12757v, str) && !isFinishing()) {
+            this.f12758w = 2;
+            JSONArray jSONArray = this.f12756u.get(str);
             if (jSONArray != null) {
                 try {
                     StringBuilder sb = new StringBuilder();
                     sb.append(System.currentTimeMillis());
                     jSONArray.put(1, sb.toString());
-                    this.f11970u.put(str, jSONArray);
+                    this.f12756u.put(str, jSONArray);
                 } catch (JSONException unused) {
                 }
             }
         }
-        c cVar = this.f11948F;
+        c cVar = this.f12734F;
         if (cVar != null) {
             cVar.a(webView, str);
         }
@@ -652,55 +652,55 @@ public class WebLandPageActivity extends Activity implements b {
 
     @Override // com.anythink.core.basead.ui.web.b
     public void onWebPageLoadError(WebView webView, String str) {
-        if (TextUtils.equals(this.f11971v, str)) {
-            this.f11972w = 3;
+        if (TextUtils.equals(this.f12757v, str)) {
+            this.f12758w = 3;
         }
-        WebLoadFailRefrshView webLoadFailRefrshView = this.f11973x;
+        WebLoadFailRefrshView webLoadFailRefrshView = this.f12759x;
         if (webLoadFailRefrshView != null) {
             am.a(webLoadFailRefrshView);
         } else {
             WebLoadFailRefrshView webLoadFailRefrshView2 = new WebLoadFailRefrshView(this);
-            this.f11973x = webLoadFailRefrshView2;
-            WebView webView2 = this.f11962m;
+            this.f12759x = webLoadFailRefrshView2;
+            WebView webView2 = this.f12748m;
             if (webView2 != null) {
                 webLoadFailRefrshView2.setLayoutParams(webView2.getLayoutParams());
             }
-            this.f11973x.setOnRefreshListener(new View.OnClickListener() { // from class: com.anythink.core.basead.ui.web.WebLandPageActivity.1
+            this.f12759x.setOnRefreshListener(new View.OnClickListener() { // from class: com.anythink.core.basead.ui.web.WebLandPageActivity.1
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    am.a(WebLandPageActivity.this.f11973x);
-                    if (WebLandPageActivity.this.f11962m != null) {
-                        WebLandPageActivity.this.f11962m.reload();
+                    am.a(WebLandPageActivity.this.f12759x);
+                    if (WebLandPageActivity.this.f12748m != null) {
+                        WebLandPageActivity.this.f12748m.reload();
                     }
                 }
             });
         }
-        WebView webView3 = this.f11962m;
+        WebView webView3 = this.f12748m;
         if (webView3 != null) {
             webView3.setVisibility(8);
         }
-        this.f11974y.addView(this.f11973x);
+        this.f12760y.addView(this.f12759x);
     }
 
     @Override // com.anythink.core.basead.ui.web.b
     public void onWebPageStart(WebView webView, String str) {
         if (!TextUtils.isEmpty(str)) {
-            if (TextUtils.equals(this.f11971v, str)) {
-                this.f11972w = 1;
+            if (TextUtils.equals(this.f12757v, str)) {
+                this.f12758w = 1;
             }
-            JSONArray jSONArray = this.f11970u.get(str);
+            JSONArray jSONArray = this.f12756u.get(str);
             if (jSONArray != null) {
                 try {
                     StringBuilder sb = new StringBuilder();
                     sb.append(System.currentTimeMillis());
                     jSONArray.put(0, sb.toString());
                     jSONArray.put(1, "");
-                    this.f11970u.put(str, jSONArray);
+                    this.f12756u.put(str, jSONArray);
                 } catch (JSONException unused) {
                 }
             }
         }
-        WebLoadFailRefrshView webLoadFailRefrshView = this.f11973x;
+        WebLoadFailRefrshView webLoadFailRefrshView = this.f12759x;
         if (webLoadFailRefrshView != null) {
             am.a(webLoadFailRefrshView);
         }
@@ -708,20 +708,20 @@ public class WebLandPageActivity extends Activity implements b {
 
     @Override // com.anythink.core.basead.ui.web.b
     public void recordRedirectUrl(String str) {
-        if (this.f11953b == null) {
-            this.f11953b = new JSONArray();
+        if (this.f12739b == null) {
+            this.f12739b = new JSONArray();
         }
-        this.f11953b.put(str);
-        if (this.f11970u.size() > 0) {
-            JSONArray jSONArray = this.f11970u.get(this.f11971v);
+        this.f12739b.put(str);
+        if (this.f12756u.size() > 0) {
+            JSONArray jSONArray = this.f12756u.get(this.f12757v);
             try {
-                if (this.f11972w == 0 && jSONArray != null) {
+                if (this.f12758w == 0 && jSONArray != null) {
                     if (TextUtils.isEmpty(jSONArray.getString(1))) {
                         StringBuilder sb = new StringBuilder();
                         sb.append(System.currentTimeMillis());
                         jSONArray.put(1, sb.toString());
                     }
-                    this.f11970u.put(this.f11971v, jSONArray);
+                    this.f12756u.put(this.f12757v, jSONArray);
                 }
             } catch (Throwable unused) {
             }
@@ -731,19 +731,19 @@ public class WebLandPageActivity extends Activity implements b {
         sb2.append(System.currentTimeMillis());
         jSONArray2.put(sb2.toString());
         jSONArray2.put("");
-        this.f11970u.put(str, jSONArray2);
-        this.f11971v = str;
-        this.f11972w = 0;
+        this.f12756u.put(str, jSONArray2);
+        this.f12757v = str;
+        this.f12758w = 0;
     }
 
     @Override // com.anythink.core.basead.ui.web.b
     public boolean supportDeeplinkJump() {
-        return this.f11943A;
+        return this.f12729A;
     }
 
     private void d() {
-        this.f11963n.setOnClickListener(new AnonymousClass6());
-        this.f11964o.setOnClickListener(new AnonymousClass7());
+        this.f12749n.setOnClickListener(new AnonymousClass6());
+        this.f12750o.setOnClickListener(new AnonymousClass7());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -760,7 +760,7 @@ public class WebLandPageActivity extends Activity implements b {
         relativeLayout.setBackgroundColor(-1);
         relativeLayout.setLayoutParams(new LinearLayout.LayoutParams(-1, -1));
         LinearLayout linearLayout = new LinearLayout(this);
-        linearLayout.setId(f11942g);
+        linearLayout.setId(f12728g);
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, q.a((Context) this, 55.0f));
         layoutParams.addRule(10);
         linearLayout.setGravity(16);
@@ -769,10 +769,10 @@ public class WebLandPageActivity extends Activity implements b {
         int a9 = q.a((Context) this, 16.0f);
         linearLayout.setPadding(a9, 0, a9, 0);
         relativeLayout.addView(linearLayout);
-        this.f11963n = a(getResources().getDrawable(q.a(this, "browser_left_icon", k.f19632c)));
-        this.f11964o = a(getResources().getDrawable(q.a(this, "browser_close_icon", k.f19632c)));
-        linearLayout.addView(this.f11963n);
-        linearLayout.addView(this.f11964o);
+        this.f12749n = a(getResources().getDrawable(q.a(this, "browser_left_icon", k.f20419c)));
+        this.f12750o = a(getResources().getDrawable(q.a(this, "browser_close_icon", k.f20419c)));
+        linearLayout.addView(this.f12749n);
+        linearLayout.addView(this.f12750o);
         TextView textView = new TextView(this);
         new LinearLayout.LayoutParams(0, -2, 1.0f);
         textView.setPadding(q.a((Context) this, 20.0f), 0, 0, q.a((Context) this, 2.0f));
@@ -780,45 +780,45 @@ public class WebLandPageActivity extends Activity implements b {
         textView.setTextColor(Color.parseColor("#666666"));
         textView.setMaxLines(1);
         textView.setEllipsize(TextUtils.TruncateAt.END);
-        this.f11965p = textView;
+        this.f12751p = textView;
         linearLayout.addView(textView);
         try {
-            this.f11962m = new BaseWebView(getApplicationContext());
+            this.f12748m = new BaseWebView(getApplicationContext());
             RelativeLayout.LayoutParams layoutParams2 = new RelativeLayout.LayoutParams(-1, -1);
-            layoutParams2.addRule(3, f11942g);
-            this.f11962m.setLayoutParams(layoutParams2);
-            relativeLayout.addView(this.f11962m);
+            layoutParams2.addRule(3, f12728g);
+            this.f12748m.setLayoutParams(layoutParams2);
+            relativeLayout.addView(this.f12748m);
             View view = new View(this);
             view.setBackgroundColor(-2434342);
             RelativeLayout.LayoutParams layoutParams3 = new RelativeLayout.LayoutParams(-1, q.a((Context) this, 1.0f));
-            layoutParams3.addRule(3, f11942g);
+            layoutParams3.addRule(3, f12728g);
             view.setLayoutParams(layoutParams3);
             relativeLayout.addView(view);
             WebProgressBarView webProgressBarView = new WebProgressBarView(this);
-            this.f11961l = webProgressBarView;
+            this.f12747l = webProgressBarView;
             webProgressBarView.setProgress(0);
             RelativeLayout.LayoutParams layoutParams4 = new RelativeLayout.LayoutParams(-1, q.a((Context) this, 4.0f));
-            layoutParams4.addRule(3, f11942g);
-            relativeLayout.addView(this.f11961l, layoutParams4);
+            layoutParams4.addRule(3, f12728g);
+            relativeLayout.addView(this.f12747l, layoutParams4);
             Random random = new Random();
-            this.f11967r = random;
-            this.f11968s = random.nextInt(12) + 3;
+            this.f12753r = random;
+            this.f12754s = random.nextInt(12) + 3;
             ValueAnimator ofInt = ValueAnimator.ofInt(0, 70);
-            this.f11966q = ofInt;
+            this.f12752q = ofInt;
             ofInt.setDuration(1000L);
-            this.f11966q.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.anythink.core.basead.ui.web.WebLandPageActivity.2
+            this.f12752q.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.anythink.core.basead.ui.web.WebLandPageActivity.2
                 @Override // android.animation.ValueAnimator.AnimatorUpdateListener
                 public final void onAnimationUpdate(ValueAnimator valueAnimator) {
                     int intValue = ((Integer) valueAnimator.getAnimatedValue()).intValue();
-                    if (WebLandPageActivity.this.f11961l == null || intValue % WebLandPageActivity.this.f11968s != 0) {
+                    if (WebLandPageActivity.this.f12747l == null || intValue % WebLandPageActivity.this.f12754s != 0) {
                         return;
                     }
                     WebLandPageActivity webLandPageActivity = WebLandPageActivity.this;
-                    webLandPageActivity.f11968s = webLandPageActivity.f11967r.nextInt(12) + 3;
-                    WebLandPageActivity.this.f11961l.setProgress(intValue);
+                    webLandPageActivity.f12754s = webLandPageActivity.f12753r.nextInt(12) + 3;
+                    WebLandPageActivity.this.f12747l.setProgress(intValue);
                 }
             });
-            this.f11966q.start();
+            this.f12752q.start();
             return relativeLayout;
         } catch (Throwable unused) {
             return null;
@@ -826,7 +826,7 @@ public class WebLandPageActivity extends Activity implements b {
     }
 
     private boolean h() {
-        return System.currentTimeMillis() - this.f11956e > 2500;
+        return System.currentTimeMillis() - this.f12742e > 2500;
     }
 
     private void b(String str, int i) {
@@ -834,20 +834,20 @@ public class WebLandPageActivity extends Activity implements b {
             return;
         }
         com.anythink.core.common.v.y.a(str);
-        this.f11952a = i;
+        this.f12738a = i;
     }
 
     public static void a(Context context, com.anythink.core.basead.b.c cVar) {
         Intent intent = new Intent();
         intent.setClass(context, WebLandPageActivity.class);
-        intent.putExtra(a.C0072a.f11868c, cVar.f11919c);
-        intent.putExtra(a.C0072a.f11870e, cVar.f11924h);
-        intent.putExtra(a.C0072a.i, cVar.f11922f);
-        intent.putExtra(a.C0072a.f11880p, cVar.i);
-        intent.putExtra(a.C0072a.f11881q, cVar.f11926k);
-        IOfferClickHandler iOfferClickHandler = cVar.f11923g;
+        intent.putExtra(a.C0072a.f12654c, cVar.f12705c);
+        intent.putExtra(a.C0072a.f12656e, cVar.f12710h);
+        intent.putExtra(a.C0072a.i, cVar.f12708f);
+        intent.putExtra(a.C0072a.f12666p, cVar.i);
+        intent.putExtra(a.C0072a.f12667q, cVar.f12712k);
+        IOfferClickHandler iOfferClickHandler = cVar.f12709g;
         if (iOfferClickHandler != null) {
-            intent.putExtra(a.C0072a.f11875k, iOfferClickHandler);
+            intent.putExtra(a.C0072a.f12661k, iOfferClickHandler);
         }
         intent.addFlags(268435456);
         context.startActivity(intent);
@@ -858,16 +858,16 @@ public class WebLandPageActivity extends Activity implements b {
             return;
         }
         com.anythink.core.common.v.y.a(str);
-        webLandPageActivity.f11952a = i;
+        webLandPageActivity.f12738a = i;
     }
 
     public static /* synthetic */ boolean g(WebLandPageActivity webLandPageActivity) {
-        return System.currentTimeMillis() - webLandPageActivity.f11956e > 2500;
+        return System.currentTimeMillis() - webLandPageActivity.f12742e > 2500;
     }
 
     public static void a(Context context, String str) {
         com.anythink.core.basead.b.c cVar = new com.anythink.core.basead.b.c();
-        cVar.f11922f = str;
+        cVar.f12708f = str;
         a(context, cVar);
     }
 
@@ -875,44 +875,44 @@ public class WebLandPageActivity extends Activity implements b {
         Intent intent = getIntent();
         if (intent != null) {
             try {
-                Serializable serializableExtra = intent.getSerializableExtra(a.C0072a.f11868c);
+                Serializable serializableExtra = intent.getSerializableExtra(a.C0072a.f12654c);
                 if (serializableExtra != null && (serializableExtra instanceof w)) {
                     w wVar = (w) serializableExtra;
-                    this.f11944B = wVar;
-                    this.f11948F = new c(wVar);
+                    this.f12730B = wVar;
+                    this.f12734F = new c(wVar);
                 }
             } catch (Throwable th) {
                 th.printStackTrace();
             }
             try {
-                Serializable serializableExtra2 = intent.getSerializableExtra(a.C0072a.f11870e);
+                Serializable serializableExtra2 = intent.getSerializableExtra(a.C0072a.f12656e);
                 if (serializableExtra2 != null && (serializableExtra2 instanceof x)) {
-                    this.f11945C = (x) serializableExtra2;
+                    this.f12731C = (x) serializableExtra2;
                 }
             } catch (Throwable th2) {
                 th2.printStackTrace();
             }
             try {
-                Serializable serializableExtra3 = intent.getSerializableExtra(a.C0072a.f11875k);
+                Serializable serializableExtra3 = intent.getSerializableExtra(a.C0072a.f12661k);
                 if (serializableExtra3 != null && (serializableExtra3 instanceof IOfferClickHandler)) {
-                    this.f11947E = (IOfferClickHandler) serializableExtra3;
+                    this.f12733E = (IOfferClickHandler) serializableExtra3;
                 }
             } catch (Throwable th3) {
                 th3.printStackTrace();
             }
             try {
-                this.f11946D = intent.getStringExtra(a.C0072a.i);
+                this.f12732D = intent.getStringExtra(a.C0072a.i);
             } catch (Throwable th4) {
                 th4.printStackTrace();
             }
             try {
-                this.f11949G = intent.getIntExtra(a.C0072a.f11880p, -1);
+                this.f12735G = intent.getIntExtra(a.C0072a.f12666p, -1);
             } catch (Throwable th5) {
                 th5.printStackTrace();
             }
-            this.f11943A = true;
+            this.f12729A = true;
             try {
-                this.f11943A = intent.getBooleanExtra(a.C0072a.f11881q, true);
+                this.f12729A = intent.getBooleanExtra(a.C0072a.f12667q, true);
             } catch (Throwable th6) {
                 th6.printStackTrace();
             }
@@ -920,20 +920,20 @@ public class WebLandPageActivity extends Activity implements b {
     }
 
     private void a(String str) {
-        com.anythink.core.basead.ui.a.a.a(this.f11962m, this, this);
-        this.f11962m.setDownloadListener(new AnonymousClass3());
+        com.anythink.core.basead.ui.a.a.a(this.f12748m, this, this);
+        this.f12748m.setDownloadListener(new AnonymousClass3());
         cc a9 = com.anythink.core.basead.a.e.a(str);
-        this.f11952a = a9.f13905l;
-        this.f11962m.loadUrl(a9.f13908o);
-        recordRedirectUrl(this.f11962m.getUrl());
+        this.f12738a = a9.f14691l;
+        this.f12748m.loadUrl(a9.f14694o);
+        recordRedirectUrl(this.f12748m.getUrl());
     }
 
     private void a(String str, int i) {
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        AlertDialog.Builder builder = new AlertDialog.Builder(this, q.a(this, "system_dialog", k.f19634e));
-        builder.setMessage(getString(q.a(this, "web_download_file_confirm_title", k.f19636g))).setCancelable(true).setPositiveButton(getString(q.a(this, "web_download_file_confirm", k.f19636g)), new AnonymousClass5(i, str)).setNegativeButton(getString(q.a(this, "web_download_file_cancel", k.f19636g)), new AnonymousClass4(str));
+        AlertDialog.Builder builder = new AlertDialog.Builder(this, q.a(this, "system_dialog", k.f20421e));
+        builder.setMessage(getString(q.a(this, "web_download_file_confirm_title", k.f20423g))).setCancelable(true).setPositiveButton(getString(q.a(this, "web_download_file_confirm", k.f20423g)), new AnonymousClass5(i, str)).setNegativeButton(getString(q.a(this, "web_download_file_cancel", k.f20423g)), new AnonymousClass4(str));
         builder.create().show();
     }
 
@@ -954,8 +954,8 @@ public class WebLandPageActivity extends Activity implements b {
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        AlertDialog.Builder builder = new AlertDialog.Builder(webLandPageActivity, q.a(webLandPageActivity, "system_dialog", k.f19634e));
-        builder.setMessage(webLandPageActivity.getString(q.a(webLandPageActivity, "web_download_file_confirm_title", k.f19636g))).setCancelable(true).setPositiveButton(webLandPageActivity.getString(q.a(webLandPageActivity, "web_download_file_confirm", k.f19636g)), webLandPageActivity.new AnonymousClass5(i, str)).setNegativeButton(webLandPageActivity.getString(q.a(webLandPageActivity, "web_download_file_cancel", k.f19636g)), webLandPageActivity.new AnonymousClass4(str));
+        AlertDialog.Builder builder = new AlertDialog.Builder(webLandPageActivity, q.a(webLandPageActivity, "system_dialog", k.f20421e));
+        builder.setMessage(webLandPageActivity.getString(q.a(webLandPageActivity, "web_download_file_confirm_title", k.f20423g))).setCancelable(true).setPositiveButton(webLandPageActivity.getString(q.a(webLandPageActivity, "web_download_file_confirm", k.f20423g)), webLandPageActivity.new AnonymousClass5(i, str)).setNegativeButton(webLandPageActivity.getString(q.a(webLandPageActivity, "web_download_file_cancel", k.f20423g)), webLandPageActivity.new AnonymousClass4(str));
         builder.create().show();
     }
 }

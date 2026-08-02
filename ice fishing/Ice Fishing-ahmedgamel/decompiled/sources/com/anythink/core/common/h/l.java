@@ -7,39 +7,39 @@ import org.json.JSONObject;
 public final class l {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final int f13977a = 10;
+    private static final int f14763a = 10;
 
     /* renamed from: b, reason: collision with root package name */
-    private int f13978b;
+    private int f14764b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f13979c;
+    private int f14765c;
 
     /* renamed from: d, reason: collision with root package name */
-    private int f13980d;
+    private int f14766d;
 
     /* renamed from: e, reason: collision with root package name */
-    private long f13981e;
+    private long f14767e;
 
     /* renamed from: f, reason: collision with root package name */
-    private int f13982f;
+    private int f14768f;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f13983g;
+    private int f14769g;
 
     /* renamed from: h, reason: collision with root package name */
-    private long f13984h;
+    private long f14770h;
 
     public interface a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final int f13985a = 1;
+        public static final int f14771a = 1;
 
         /* renamed from: b, reason: collision with root package name */
-        public static final int f13986b = 2;
+        public static final int f14772b = 2;
 
         /* renamed from: c, reason: collision with root package name */
-        public static final int f13987c = 3;
+        public static final int f14773c = 3;
     }
 
     private l() {
@@ -56,83 +56,83 @@ public final class l {
         l lVar = new l();
         int optInt = jSONObject.optInt("id");
         if (optInt == 1) {
-            lVar.f13979c = jSONObject.optInt("req_no_fill_nc");
+            lVar.f14765c = jSONObject.optInt("req_no_fill_nc");
         } else if (optInt == 2) {
-            lVar.f13980d = jSONObject.optInt("req_no_fill_s");
-            lVar.f13981e = jSONObject.optLong("req_no_fill_sgt");
+            lVar.f14766d = jSONObject.optInt("req_no_fill_s");
+            lVar.f14767e = jSONObject.optLong("req_no_fill_sgt");
         } else {
             if (optInt != 3) {
                 return null;
             }
-            lVar.f13982f = jSONObject.optInt("req_no_fill_sr");
-            lVar.f13981e = jSONObject.optLong("req_no_fill_sgt");
-            lVar.f13983g = jSONObject.optInt(a.C0077a.f12915n, 10);
+            lVar.f14768f = jSONObject.optInt("req_no_fill_sr");
+            lVar.f14767e = jSONObject.optLong("req_no_fill_sgt");
+            lVar.f14769g = jSONObject.optInt(a.C0077a.f13701n, 10);
         }
-        lVar.f13978b = optInt;
-        lVar.f13984h = optLong;
-        if (lVar.f13979c > 0 || lVar.f13980d > 0 || lVar.f13981e > 0 || lVar.f13982f > 0 || optLong > 0) {
+        lVar.f14764b = optInt;
+        lVar.f14770h = optLong;
+        if (lVar.f14765c > 0 || lVar.f14766d > 0 || lVar.f14767e > 0 || lVar.f14768f > 0 || optLong > 0) {
             return lVar;
         }
         return null;
     }
 
     public final int b() {
-        return this.f13979c;
+        return this.f14765c;
     }
 
     public final int c() {
-        return this.f13980d;
+        return this.f14766d;
     }
 
     public final long d() {
-        return this.f13981e;
+        return this.f14767e;
     }
 
     public final int e() {
-        return this.f13982f;
+        return this.f14768f;
     }
 
     public final long f() {
-        return this.f13984h;
+        return this.f14770h;
     }
 
     public final int g() {
-        return this.f13983g;
+        return this.f14769g;
     }
 
     public final String toString() {
-        return "AdSourceFltRuleEntity{id=" + this.f13978b + ", reqNoFillNc=" + this.f13979c + ", reqNoFillS=" + this.f13980d + ", reqNoFillSgtTime=" + this.f13981e + ", reqNoFillSr=" + this.f13982f + ", reqPacingTime=" + this.f13984h + '}';
+        return "AdSourceFltRuleEntity{id=" + this.f14764b + ", reqNoFillNc=" + this.f14765c + ", reqNoFillS=" + this.f14766d + ", reqNoFillSgtTime=" + this.f14767e + ", reqNoFillSr=" + this.f14768f + ", reqPacingTime=" + this.f14770h + '}';
     }
 
     private void b(int i) {
-        this.f13979c = i;
+        this.f14765c = i;
     }
 
     private void c(int i) {
-        this.f13980d = i;
+        this.f14766d = i;
     }
 
     private void d(int i) {
-        this.f13982f = i;
+        this.f14768f = i;
     }
 
     private void e(int i) {
-        this.f13983g = i;
+        this.f14769g = i;
     }
 
     private void b(long j6) {
-        this.f13984h = j6;
+        this.f14770h = j6;
     }
 
     public final int a() {
-        return this.f13978b;
+        return this.f14764b;
     }
 
     private void a(int i) {
-        this.f13978b = i;
+        this.f14764b = i;
     }
 
     private void a(long j6) {
-        this.f13981e = j6;
+        this.f14767e = j6;
     }
 }

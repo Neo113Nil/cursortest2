@@ -6,12 +6,12 @@ import javax.net.ssl.SSLSocket;
 public final class f implements l {
     @Override // t8.l
     public final boolean a(SSLSocket sSLSocket) {
-        boolean z3 = h.f40936b;
+        boolean z6 = h.f40898b;
         return false;
     }
 
     @Override // t8.l
-    public final n l(SSLSocket sSLSocket) {
+    public final n i(SSLSocket sSLSocket) {
         return new h();
     }
 }

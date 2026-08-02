@@ -15,39 +15,39 @@ import java.util.WeakHashMap;
 public final class e implements InvocationHandler {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ ArrayList f23515a;
+    public final /* synthetic */ ArrayList f24300a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final /* synthetic */ HashMap f23516b;
+    public final /* synthetic */ HashMap f24301b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final /* synthetic */ ArrayList f23517c;
+    public final /* synthetic */ ArrayList f24302c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final /* synthetic */ ArrayList f23518d;
+    public final /* synthetic */ ArrayList f24303d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final /* synthetic */ HashMap f23519e;
+    public final /* synthetic */ HashMap f24304e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final /* synthetic */ ArrayList f23520f;
+    public final /* synthetic */ ArrayList f24305f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final /* synthetic */ ArrayList f23521g;
+    public final /* synthetic */ ArrayList f24306g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final /* synthetic */ Method f23522h;
+    public final /* synthetic */ Method f24307h;
     public final /* synthetic */ Method i;
 
     public e(ArrayList arrayList, HashMap hashMap, ArrayList arrayList2, ArrayList arrayList3, HashMap hashMap2, ArrayList arrayList4, ArrayList arrayList5, Method method, Method method2) {
-        this.f23515a = arrayList;
-        this.f23516b = hashMap;
-        this.f23517c = arrayList2;
-        this.f23518d = arrayList3;
-        this.f23519e = hashMap2;
-        this.f23520f = arrayList4;
-        this.f23521g = arrayList5;
-        this.f23522h = method;
+        this.f24300a = arrayList;
+        this.f24301b = hashMap;
+        this.f24302c = arrayList2;
+        this.f24303d = arrayList3;
+        this.f24304e = hashMap2;
+        this.f24305f = arrayList4;
+        this.f24306g = arrayList5;
+        this.f24307h = method;
         this.i = method2;
     }
 
@@ -65,12 +65,12 @@ public final class e implements InvocationHandler {
         boolean equalsMethods7;
         boolean reportError2;
         boolean isPrimitive = method.getReturnType().isPrimitive();
-        HashMap hashMap2 = this.f23516b;
+        HashMap hashMap2 = this.f24301b;
         if (isPrimitive) {
             if (!method.getReturnType().equals(Void.TYPE)) {
                 return Array.get(Array.newInstance(method.getReturnType(), 1), 0);
             }
-            Iterator it = this.f23515a.iterator();
+            Iterator it = this.f24300a.iterator();
             while (it.hasNext()) {
                 equalsMethods7 = DynamicLoaderFallback.equalsMethods(method, (Method) it.next());
                 if (equalsMethods7) {
@@ -80,7 +80,7 @@ public final class e implements InvocationHandler {
                     }
                 }
             }
-            Iterator it2 = this.f23517c.iterator();
+            Iterator it2 = this.f24302c.iterator();
             while (it2.hasNext()) {
                 equalsMethods6 = DynamicLoaderFallback.equalsMethods(method, (Method) it2.next());
                 if (equalsMethods6) {
@@ -96,10 +96,10 @@ public final class e implements InvocationHandler {
             return "";
         }
         Object newProxyInstance = method.getReturnType().equals(obj.getClass().getInterfaces()[0]) ? obj : Proxy.newProxyInstance(DynamicLoaderFallback.class.getClassLoader(), new Class[]{method.getReturnType()}, this);
-        Iterator it3 = this.f23518d.iterator();
+        Iterator it3 = this.f24303d.iterator();
         while (true) {
             boolean hasNext = it3.hasNext();
-            hashMap = this.f23519e;
+            hashMap = this.f24304e;
             if (!hasNext) {
                 break;
             }
@@ -110,14 +110,14 @@ public final class e implements InvocationHandler {
                 break;
             }
         }
-        Iterator it4 = this.f23520f.iterator();
+        Iterator it4 = this.f24305f.iterator();
         while (it4.hasNext()) {
             equalsMethods4 = DynamicLoaderFallback.equalsMethods(method, (Method) it4.next());
             if (equalsMethods4) {
                 hashMap.put(newProxyInstance, obj);
             }
         }
-        Iterator it5 = this.f23521g.iterator();
+        Iterator it5 = this.f24306g.iterator();
         while (it5.hasNext()) {
             equalsMethods3 = DynamicLoaderFallback.equalsMethods(method, (Method) it5.next());
             if (equalsMethods3) {
@@ -128,7 +128,7 @@ public final class e implements InvocationHandler {
                 }
             }
         }
-        equalsMethods = DynamicLoaderFallback.equalsMethods(method, this.f23522h);
+        equalsMethods = DynamicLoaderFallback.equalsMethods(method, this.f24307h);
         if (equalsMethods) {
             hashMap2.put(objArr[1], (Ad) objArr[0]);
         }

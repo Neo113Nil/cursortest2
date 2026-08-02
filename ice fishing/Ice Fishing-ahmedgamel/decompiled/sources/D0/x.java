@@ -8,7 +8,7 @@ public abstract class x {
         return viewGroup.getChildDrawingOrder(i);
     }
 
-    public static void b(ViewGroup viewGroup, boolean z3) {
-        viewGroup.suppressLayout(z3);
+    public static void b(ViewGroup viewGroup, boolean z6) {
+        viewGroup.suppressLayout(z6);
     }
 }

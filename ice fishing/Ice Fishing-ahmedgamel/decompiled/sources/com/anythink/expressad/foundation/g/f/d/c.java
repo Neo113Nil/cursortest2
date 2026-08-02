@@ -9,7 +9,7 @@ import org.json.JSONException;
 public class c extends e<JSONArray> {
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f19294c = "c";
+    private static final String f20081c = "c";
 
     public c(int i, String str, String str2, com.anythink.expressad.foundation.g.f.e<JSONArray> eVar) {
         super(i, str, str2, eVar);
@@ -18,7 +18,7 @@ public class c extends e<JSONArray> {
     @Override // com.anythink.expressad.foundation.g.f.j
     public final l<JSONArray> a(com.anythink.expressad.foundation.g.f.f.c cVar) {
         try {
-            return l.a(new JSONArray(new String(cVar.f19320b, com.anythink.expressad.foundation.g.f.g.d.a(cVar.f19322d))), cVar);
+            return l.a(new JSONArray(new String(cVar.f20107b, com.anythink.expressad.foundation.g.f.g.d.a(cVar.f20109d))), cVar);
         } catch (UnsupportedEncodingException e9) {
             e9.getMessage();
             return l.a(new com.anythink.expressad.foundation.g.f.a.a(8, cVar));

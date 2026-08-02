@@ -6,13 +6,13 @@ import android.view.MotionEvent;
 public final class Sy {
 
     /* renamed from: a, reason: collision with root package name */
-    public final float f27662a;
+    public final float f28445a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final float f27663b;
+    public final float f28446b;
 
     public Sy(MotionEvent motionEvent) {
-        this.f27662a = motionEvent.getX();
-        this.f27663b = motionEvent.getY();
+        this.f28445a = motionEvent.getX();
+        this.f28446b = motionEvent.getY();
     }
 }

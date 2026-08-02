@@ -21,41 +21,41 @@ import java.util.Map;
 public class BaseWebView extends WebView {
 
     /* renamed from: a, reason: collision with root package name */
-    private boolean f17576a;
+    private boolean f18363a;
 
     /* renamed from: b, reason: collision with root package name */
-    private View.OnTouchListener f17577b;
+    private View.OnTouchListener f18364b;
 
     /* renamed from: c, reason: collision with root package name */
-    private View.OnTouchListener f17578c;
+    private View.OnTouchListener f18365c;
 
     /* renamed from: h, reason: collision with root package name */
-    protected Context f17579h;
+    protected Context f18366h;
     public long lastTouchTime;
     public b mWebViewClient;
 
     public BaseWebView(Context context) {
         super(context);
         this.lastTouchTime = 0L;
-        this.f17576a = false;
-        this.f17577b = new View.OnTouchListener() { // from class: com.anythink.core.express.web.BaseWebView.1
+        this.f18363a = false;
+        this.f18364b = new View.OnTouchListener() { // from class: com.anythink.core.express.web.BaseWebView.1
             @Override // android.view.View.OnTouchListener
             public final boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == 0) {
                     BaseWebView.this.lastTouchTime = System.currentTimeMillis();
                 }
-                if (BaseWebView.this.f17578c != null) {
-                    return BaseWebView.this.f17578c.onTouch(view, motionEvent);
+                if (BaseWebView.this.f18365c != null) {
+                    return BaseWebView.this.f18365c.onTouch(view, motionEvent);
                 }
                 return false;
             }
         };
-        this.f17579h = context.getApplicationContext();
+        this.f18366h = context.getApplicationContext();
         a();
     }
 
     public static /* synthetic */ boolean b(BaseWebView baseWebView) {
-        baseWebView.f17576a = true;
+        baseWebView.f18363a = true;
         return true;
     }
 
@@ -73,7 +73,7 @@ public class BaseWebView extends WebView {
             }
         }
         Log.e("anythink_express", "illegal URL: ".concat(String.valueOf(str)));
-        return com.anythink.core.common.res.d.f16215a;
+        return com.anythink.core.common.res.d.f17002a;
     }
 
     public b getBaseWebViewClient() {
@@ -81,7 +81,7 @@ public class BaseWebView extends WebView {
     }
 
     public boolean isDestroyed() {
-        return this.f17576a;
+        return this.f18363a;
     }
 
     @Override // android.webkit.WebView
@@ -112,7 +112,7 @@ public class BaseWebView extends WebView {
                     }
                 }, (long) (i * 1000.0f));
             } else {
-                this.f17576a = true;
+                this.f18363a = true;
                 destroy();
             }
         } catch (Throwable th) {
@@ -135,7 +135,7 @@ public class BaseWebView extends WebView {
 
     @Override // android.view.View
     public void setOnTouchListener(View.OnTouchListener onTouchListener) {
-        this.f17578c = onTouchListener;
+        this.f18365c = onTouchListener;
     }
 
     public void setTransparent() {
@@ -200,7 +200,7 @@ public class BaseWebView extends WebView {
         } catch (Throwable unused2) {
         }
         settings.setDatabaseEnabled(true);
-        String path = this.f17579h.getDir("database", 0).getPath();
+        String path = this.f18366h.getDir("database", 0).getPath();
         settings.setDatabasePath(path);
         settings.setGeolocationEnabled(true);
         settings.setGeolocationDatabasePath(path);
@@ -216,7 +216,7 @@ public class BaseWebView extends WebView {
             declaredMethod3.invoke(settings, Boolean.TRUE);
         } catch (Throwable unused4) {
         }
-        super.setOnTouchListener(this.f17577b);
+        super.setOnTouchListener(this.f18364b);
     }
 
     @Override // android.webkit.WebView
@@ -227,40 +227,40 @@ public class BaseWebView extends WebView {
     public BaseWebView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         this.lastTouchTime = 0L;
-        this.f17576a = false;
-        this.f17577b = new View.OnTouchListener() { // from class: com.anythink.core.express.web.BaseWebView.1
+        this.f18363a = false;
+        this.f18364b = new View.OnTouchListener() { // from class: com.anythink.core.express.web.BaseWebView.1
             @Override // android.view.View.OnTouchListener
             public final boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == 0) {
                     BaseWebView.this.lastTouchTime = System.currentTimeMillis();
                 }
-                if (BaseWebView.this.f17578c != null) {
-                    return BaseWebView.this.f17578c.onTouch(view, motionEvent);
+                if (BaseWebView.this.f18365c != null) {
+                    return BaseWebView.this.f18365c.onTouch(view, motionEvent);
                 }
                 return false;
             }
         };
-        this.f17579h = context.getApplicationContext();
+        this.f18366h = context.getApplicationContext();
         a();
     }
 
     public BaseWebView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
         this.lastTouchTime = 0L;
-        this.f17576a = false;
-        this.f17577b = new View.OnTouchListener() { // from class: com.anythink.core.express.web.BaseWebView.1
+        this.f18363a = false;
+        this.f18364b = new View.OnTouchListener() { // from class: com.anythink.core.express.web.BaseWebView.1
             @Override // android.view.View.OnTouchListener
             public final boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == 0) {
                     BaseWebView.this.lastTouchTime = System.currentTimeMillis();
                 }
-                if (BaseWebView.this.f17578c != null) {
-                    return BaseWebView.this.f17578c.onTouch(view, motionEvent);
+                if (BaseWebView.this.f18365c != null) {
+                    return BaseWebView.this.f18365c.onTouch(view, motionEvent);
                 }
                 return false;
             }
         };
-        this.f17579h = context.getApplicationContext();
+        this.f18366h = context.getApplicationContext();
         a();
     }
 }

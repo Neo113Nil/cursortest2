@@ -7,72 +7,72 @@ import com.anythink.core.common.d.t;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    long f16433a;
+    long f17220a;
 
     /* renamed from: b, reason: collision with root package name */
-    long f16434b;
+    long f17221b;
 
     /* renamed from: c, reason: collision with root package name */
-    Runnable f16435c;
+    Runnable f17222c;
 
     /* renamed from: d, reason: collision with root package name */
-    boolean f16436d;
+    boolean f17223d;
 
     /* renamed from: e, reason: collision with root package name */
-    boolean f16437e;
+    boolean f17224e;
 
     /* renamed from: f, reason: collision with root package name */
-    b f16438f;
+    b f17225f;
 
     /* renamed from: g, reason: collision with root package name */
-    private final a f16439g;
+    private final a f17226g;
 
     public c(long j6, Runnable runnable) {
-        this.f16436d = false;
-        this.f16437e = true;
-        this.f16439g = d.a();
-        this.f16438f = new b() { // from class: com.anythink.core.common.t.c.1
+        this.f17223d = false;
+        this.f17224e = true;
+        this.f17226g = d.a();
+        this.f17225f = new b() { // from class: com.anythink.core.common.t.c.1
             @Override // java.lang.Runnable
             public final void run() {
                 c cVar = c.this;
-                cVar.f16436d = false;
-                cVar.f16434b = -1L;
-                if (cVar.f16437e) {
-                    t.b().b(c.this.f16435c);
+                cVar.f17223d = false;
+                cVar.f17221b = -1L;
+                if (cVar.f17224e) {
+                    t.b().b(c.this.f17222c);
                 } else {
                     t.b();
-                    t.c(c.this.f16435c);
+                    t.c(c.this.f17222c);
                 }
             }
         };
-        this.f16434b = j6;
-        this.f16435c = runnable;
+        this.f17221b = j6;
+        this.f17222c = runnable;
     }
 
     public final synchronized void a() {
-        if (this.f16434b >= 0 && !this.f16436d) {
-            this.f16436d = true;
-            this.f16433a = SystemClock.elapsedRealtime();
-            this.f16439g.a(this.f16438f, this.f16434b, false);
+        if (this.f17221b >= 0 && !this.f17223d) {
+            this.f17223d = true;
+            this.f17220a = SystemClock.elapsedRealtime();
+            this.f17226g.a(this.f17225f, this.f17221b, false);
         }
     }
 
     public final synchronized void b() {
-        if (this.f16436d) {
-            this.f16436d = false;
-            this.f16434b -= SystemClock.elapsedRealtime() - this.f16433a;
-            this.f16439g.b(this.f16438f);
+        if (this.f17223d) {
+            this.f17223d = false;
+            this.f17221b -= SystemClock.elapsedRealtime() - this.f17220a;
+            this.f17226g.b(this.f17225f);
         }
     }
 
     public final synchronized void c() {
-        this.f16436d = false;
-        this.f16439g.b(this.f16438f);
-        this.f16434b = -1L;
+        this.f17223d = false;
+        this.f17226g.b(this.f17225f);
+        this.f17221b = -1L;
     }
 
-    public c(long j6, Runnable runnable, boolean z3) {
+    public c(long j6, Runnable runnable, boolean z6) {
         this(j6, runnable);
-        this.f16437e = z3;
+        this.f17224e = z6;
     }
 }

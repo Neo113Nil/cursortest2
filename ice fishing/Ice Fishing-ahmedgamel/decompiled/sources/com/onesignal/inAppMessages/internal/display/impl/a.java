@@ -115,8 +115,8 @@ public final class a extends RelativeLayout {
             this.dragThresholdY = i;
         }
 
-        public final void setDraggingDisabled(boolean z3) {
-            this.draggingDisabled = z3;
+        public final void setDraggingDisabled(boolean z6) {
+            this.draggingDisabled = z6;
         }
 
         public final void setHeight(int i) {
@@ -151,7 +151,7 @@ public final class a extends RelativeLayout {
         }
 
         @Override // W.d
-        public int clampViewPositionHorizontal(View child, int i, int i6) {
+        public int clampViewPositionHorizontal(View child, int i, int i4) {
             kotlin.jvm.internal.h.e(child, "child");
             b bVar = a.this.params;
             kotlin.jvm.internal.h.b(bVar);
@@ -159,7 +159,7 @@ public final class a extends RelativeLayout {
         }
 
         @Override // W.d
-        public int clampViewPositionVertical(View child, int i, int i6) {
+        public int clampViewPositionVertical(View child, int i, int i4) {
             kotlin.jvm.internal.h.e(child, "child");
             b bVar = a.this.params;
             kotlin.jvm.internal.h.b(bVar);
@@ -217,7 +217,7 @@ public final class a extends RelativeLayout {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public void onViewReleased(View releasedChild, float f3, float f9) {
+        public void onViewReleased(View releasedChild, float f2, float f9) {
             kotlin.jvm.internal.h.e(releasedChild, "releasedChild");
             b bVar = a.this.params;
             kotlin.jvm.internal.h.b(bVar);
@@ -242,10 +242,10 @@ public final class a extends RelativeLayout {
                         bVar5.onDismiss();
                     }
                 } else {
-                    int i6 = this.lastYPos;
+                    int i4 = this.lastYPos;
                     b bVar6 = a.this.params;
                     kotlin.jvm.internal.h.b(bVar6);
-                    if (i6 >= bVar6.getDismissingYPos()) {
+                    if (i4 >= bVar6.getDismissingYPos()) {
                         kotlin.jvm.internal.h.b(a.this.params);
                     }
                     b bVar7 = a.this.params;
@@ -265,7 +265,7 @@ public final class a extends RelativeLayout {
             kotlin.jvm.internal.h.b(bVar9);
             if (eVar.q(bVar9.getMaxXPos(), maxYPos)) {
                 a aVar = a.this;
-                WeakHashMap weakHashMap = X.f2054a;
+                WeakHashMap weakHashMap = X.f2142a;
                 aVar.postInvalidateOnAnimation();
             }
         }
@@ -291,7 +291,7 @@ public final class a extends RelativeLayout {
 
     private final void createDragHelper() {
         W.e eVar = new W.e(getContext(), this, new c());
-        eVar.f3380b = (int) (1.0f * eVar.f3380b);
+        eVar.f3510b = (int) (1.0f * eVar.f3510b);
         this.mDragHelper = eVar;
     }
 
@@ -301,7 +301,7 @@ public final class a extends RelativeLayout {
         W.e eVar = this.mDragHelper;
         kotlin.jvm.internal.h.b(eVar);
         if (eVar.g()) {
-            WeakHashMap weakHashMap = X.f2054a;
+            WeakHashMap weakHashMap = X.f2142a;
             postInvalidateOnAnimation();
         }
     }
@@ -314,7 +314,7 @@ public final class a extends RelativeLayout {
         b bVar = this.params;
         kotlin.jvm.internal.h.b(bVar);
         eVar.s(left, bVar.getOffScreenYPos(), this);
-        WeakHashMap weakHashMap = X.f2054a;
+        WeakHashMap weakHashMap = X.f2142a;
         postInvalidateOnAnimation();
     }
 

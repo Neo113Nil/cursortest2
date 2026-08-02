@@ -19,16 +19,16 @@ public final class ChapterFrame extends Id3Frame {
     public final String A04;
     public final Id3Frame[] A05;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A06, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 99);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A06, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 99);
         }
         return new String(copyOfRange);
     }
 
     public static void A01() {
-        A06 = new byte[]{61, 54, c.f16318c, 46};
+        A06 = new byte[]{61, 54, c.f17105c, 46};
         String[] strArr = A07;
         if (strArr[0].charAt(9) == strArr[6].charAt(9)) {
             throw new RuntimeException();
@@ -57,11 +57,11 @@ public final class ChapterFrame extends Id3Frame {
         }
     }
 
-    public ChapterFrame(String str, int i, int i6, long j6, long j9, Id3Frame[] id3FrameArr) {
+    public ChapterFrame(String str, int i, int i4, long j6, long j9, Id3Frame[] id3FrameArr) {
         super(A00(0, 4, 29));
         this.A04 = str;
         this.A01 = i;
-        this.A00 = i6;
+        this.A00 = i4;
         this.A03 = j6;
         this.A02 = j9;
         this.A05 = id3FrameArr;

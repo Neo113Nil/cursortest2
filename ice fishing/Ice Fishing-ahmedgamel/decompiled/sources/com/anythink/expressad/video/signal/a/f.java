@@ -7,7 +7,7 @@ import java.util.Objects;
 public class f implements com.anythink.expressad.video.signal.i {
 
     /* renamed from: a, reason: collision with root package name */
-    protected static final String f21799a = "js";
+    protected static final String f22586a = "js";
 
     @Override // com.anythink.expressad.video.signal.i
     public void a(String str) {

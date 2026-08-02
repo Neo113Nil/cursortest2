@@ -25,16 +25,16 @@ public final class GA {
     public final G8 A0A;
     public final G9 A0B;
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0C, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 113);
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0C, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 113);
         }
         return new String(copyOfRange);
     }
 
     public static void A04() {
-        A0C = new byte[]{108, 97, 123, 120, 100, 105, 113, 38, 56, c.f16318c, 53, 62, 38};
+        A0C = new byte[]{108, 97, 123, 120, 100, 105, 113, 38, 56, c.f17105c, 53, 62, 38};
     }
 
     static {
@@ -58,8 +58,8 @@ public final class GA {
             this.A0A = null;
             this.A0B = null;
         }
-        this.A06 = b.f6382b;
-        this.A07 = b.f6382b;
+        this.A06 = b.f7168b;
+        this.A07 = b.f7168b;
     }
 
     public static long A00(long j6, long j9, long j10) {
@@ -150,11 +150,11 @@ public final class GA {
         }
         this.A02 = j6;
         this.A03 = j11;
-        if (this.A0B == null || this.A06 == b.f6382b) {
+        if (this.A0B == null || this.A06 == b.f7168b) {
             return j12;
         }
         long j15 = this.A0B.A04;
-        if (j15 == b.f6382b) {
+        if (j15 == b.f7168b) {
             return j12;
         }
         return A00(j12, j15, this.A06) - this.A07;

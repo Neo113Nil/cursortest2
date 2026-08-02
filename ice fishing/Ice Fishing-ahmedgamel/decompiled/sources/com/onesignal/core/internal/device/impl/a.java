@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.onesignal.common.AndroidUtils;
-import g1.C4523c;
+import i1.C4586c;
 import kotlin.jvm.internal.e;
 import kotlin.jvm.internal.h;
 import x4.f;
@@ -114,7 +114,7 @@ public final class a implements c {
     @Override // C4.c
     public boolean getHasFCMLibrary() {
         try {
-            C4523c c4523c = FirebaseMessaging.f36190k;
+            C4586c c4586c = FirebaseMessaging.f36957k;
             return true;
         } catch (ClassNotFoundException unused) {
             return false;

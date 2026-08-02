@@ -1,6 +1,5 @@
 package com.anythink.core.common.g;
 
-import D.y;
 import android.app.Activity;
 import android.content.Context;
 import android.text.TextUtils;
@@ -31,79 +30,79 @@ import org.json.JSONObject;
 public class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final long f13264a = 86400000;
+    public static final long f14050a = 86400000;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final long f13265b = 3600000;
+    public static final long f14051b = 3600000;
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f13266c = "DomainManager";
+    private static final String f14052c = "DomainManager";
 
     /* renamed from: d, reason: collision with root package name */
-    private static final String f13267d = "anythink_sdk";
+    private static final String f14053d = "anythink_sdk";
 
     /* renamed from: e, reason: collision with root package name */
-    private static final String f13268e = "ru";
+    private static final String f14054e = "ru";
 
     /* renamed from: f, reason: collision with root package name */
-    private static final String f13269f = "api.";
+    private static final String f14055f = "api.";
 
     /* renamed from: g, reason: collision with root package name */
-    private static final String f13270g = k.b(j.g.b.f12477e);
+    private static final String f14056g = k.b(j.g.b.f13263e);
 
     /* renamed from: s, reason: collision with root package name */
-    private static volatile c f13271s;
+    private static volatile c f14057s;
 
     /* renamed from: k, reason: collision with root package name */
-    private volatile boolean f13274k;
+    private volatile boolean f14060k;
 
     /* renamed from: l, reason: collision with root package name */
-    private volatile boolean f13275l;
+    private volatile boolean f14061l;
 
     /* renamed from: m, reason: collision with root package name */
-    private volatile long f13276m;
+    private volatile long f14062m;
 
     /* renamed from: p, reason: collision with root package name */
-    private volatile String f13279p;
+    private volatile String f14065p;
 
     /* renamed from: q, reason: collision with root package name */
-    private ArrayDeque<a> f13280q;
+    private ArrayDeque<a> f14066q;
 
     /* renamed from: r, reason: collision with root package name */
-    private ConcurrentHashMap<Long, String> f13281r;
+    private ConcurrentHashMap<Long, String> f14067r;
 
     /* renamed from: h, reason: collision with root package name */
-    private final Object f13272h = new Object();
+    private final Object f14058h = new Object();
     private final Object i = new Object();
 
     /* renamed from: j, reason: collision with root package name */
-    private final List<String> f13273j = Collections.synchronizedList(new ArrayList());
+    private final List<String> f14059j = Collections.synchronizedList(new ArrayList());
 
     /* renamed from: n, reason: collision with root package name */
-    private volatile String f13277n = "";
+    private volatile String f14063n = "";
 
     /* renamed from: o, reason: collision with root package name */
-    private volatile String f13278o = "";
+    private volatile String f14064o = "";
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private d f13300a;
+        private d f14086a;
 
         /* renamed from: b, reason: collision with root package name */
-        private boolean f13301b;
+        private boolean f14087b;
 
-        public a(d dVar, boolean z3) {
-            this.f13300a = dVar;
-            this.f13301b = z3;
+        public a(d dVar, boolean z6) {
+            this.f14086a = dVar;
+            this.f14087b = z6;
         }
 
         public final d a() {
-            return this.f13300a;
+            return this.f14086a;
         }
 
         public final boolean b() {
-            return this.f13301b;
+            return this.f14087b;
         }
     }
 
@@ -120,20 +119,20 @@ public class c {
 
     private c() {
         String[] strArr;
-        this.f13279p = "";
-        if (ATSDK.isCnSDK() || (strArr = com.anythink.core.common.g.b.f13263a) == null || strArr.length <= 0) {
+        this.f14065p = "";
+        if (ATSDK.isCnSDK() || (strArr = com.anythink.core.common.g.b.f14049a) == null || strArr.length <= 0) {
             return;
         }
         List asList = Arrays.asList(strArr);
         String country = Locale.getDefault().getCountry();
         if (asList.contains(country)) {
-            this.f13279p = country;
+            this.f14065p = country;
         }
     }
 
     private static boolean c(String str, String str2) {
-        com.anythink.core.d.b g4 = y.g(y.h());
-        return ((g4 != null && !TextUtils.isEmpty(g4.aH())) || TextUtils.isEmpty(str) || str.equals(str2)) ? false : true;
+        com.anythink.core.d.b k9 = com.IceFishing.LiveIceFishing.k.k(com.IceFishing.LiveIceFishing.k.l());
+        return ((k9 != null && !TextUtils.isEmpty(k9.aH())) || TextUtils.isEmpty(str) || str.equals(str2)) ? false : true;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -142,8 +141,8 @@ public class c {
     }
 
     private static boolean g() {
-        com.anythink.core.d.b g4 = y.g(y.h());
-        return (g4 == null || TextUtils.isEmpty(g4.aH())) && q.a(t.b().g());
+        com.anythink.core.d.b k9 = com.IceFishing.LiveIceFishing.k.k(com.IceFishing.LiveIceFishing.k.l());
+        return (k9 == null || TextUtils.isEmpty(k9.aH())) && q.a(t.b().g());
     }
 
     private static void h() {
@@ -155,12 +154,12 @@ public class c {
 
     private a j() {
         a removeFirst;
-        ArrayDeque<a> arrayDeque = this.f13280q;
+        ArrayDeque<a> arrayDeque = this.f14066q;
         if (arrayDeque == null || arrayDeque.isEmpty()) {
             return null;
         }
         synchronized (this.i) {
-            removeFirst = this.f13280q.removeFirst();
+            removeFirst = this.f14066q.removeFirst();
         }
         e("getDomainRequest() >>> called");
         return removeFirst;
@@ -168,18 +167,18 @@ public class c {
 
     private synchronized ConcurrentHashMap<Long, String> k() {
         try {
-            if (this.f13281r == null) {
-                this.f13281r = new ConcurrentHashMap<>(1);
+            if (this.f14067r == null) {
+                this.f14067r = new ConcurrentHashMap<>(1);
             }
         } catch (Throwable th) {
             throw th;
         }
-        return this.f13281r;
+        return this.f14067r;
     }
 
     private static long l() {
         if (c()) {
-            return f13265b;
+            return f14051b;
         }
         return 86400000L;
     }
@@ -202,8 +201,8 @@ public class c {
 
     public final void a(final String str, final int i, final String str2, final d dVar) {
         String str3;
-        com.anythink.core.d.b g4 = y.g(y.h());
-        if ((g4 != null && !TextUtils.isEmpty(g4.aH())) || !q.a(t.b().g())) {
+        com.anythink.core.d.b k9 = com.IceFishing.LiveIceFishing.k.k(com.IceFishing.LiveIceFishing.k.l());
+        if ((k9 != null && !TextUtils.isEmpty(k9.aH())) || !q.a(t.b().g())) {
             e("tryGetDomainFromCdn() >>> not allow switch domain.");
             return;
         }
@@ -215,8 +214,8 @@ public class c {
         }
         final String str4 = str3;
         final AtomicBoolean atomicBoolean = new AtomicBoolean(false);
-        final List<String> list = this.f13273j;
-        e("tryGetDomainFromCdn() >>> start isTrying: " + this.f13275l + " url: " + str + " failedDomain: " + str4);
+        final List<String> list = this.f14059j;
+        e("tryGetDomainFromCdn() >>> start isTrying: " + this.f14061l + " url: " + str + " failedDomain: " + str4);
         if (TextUtils.isEmpty(str4)) {
             return;
         }
@@ -234,13 +233,13 @@ public class c {
             }
 
             @Override // com.anythink.core.common.g.c.InterfaceC0079c
-            public final void a(int i6, String str5, AdError adError, long j6) {
+            public final void a(int i4, String str5, AdError adError, long j6) {
                 c.e("tryGetDomainFromCdn() >>> onCallbackFailed::msg = ".concat(String.valueOf(str5)));
                 c.this.a(list, "", str4, str, i, str2, dVar, atomicBoolean);
             }
 
             @Override // com.anythink.core.common.g.c.InterfaceC0079c
-            public final void a(int i6, Object obj, long j6) {
+            public final void a(int i4, Object obj, long j6) {
                 c.e("tryGetDomainFromCdn() >>> onCallbackSucceed::result = ".concat(String.valueOf(obj)));
                 if ((obj instanceof String) && !TextUtils.isEmpty(obj.toString())) {
                     Context g9 = t.b().g();
@@ -257,7 +256,7 @@ public class c {
     private String d(String str) {
         ATOsDmEntity osDmEntity;
         if (TextUtils.isEmpty(str)) {
-            return this.f13277n;
+            return this.f14063n;
         }
         s c9 = t.b().c();
         if (c9 == null || c9.getOsDmEntity() == null) {
@@ -281,41 +280,41 @@ public class c {
 
     public static /* synthetic */ long e() {
         if (c()) {
-            return f13265b;
+            return f14051b;
         }
         return 86400000L;
     }
 
     private static String f() {
         t.b();
-        return u.a.f12819G;
+        return u.a.f13605G;
     }
 
     public static class b implements InterfaceC0079c, d {
 
         /* renamed from: a, reason: collision with root package name */
-        private boolean f13302a;
+        private boolean f14088a;
 
         /* renamed from: b, reason: collision with root package name */
-        private final InterfaceC0079c f13303b;
+        private final InterfaceC0079c f14089b;
 
         public b(InterfaceC0079c interfaceC0079c) {
-            this.f13303b = interfaceC0079c;
+            this.f14089b = interfaceC0079c;
         }
 
         @Override // com.anythink.core.common.g.c.InterfaceC0079c
         public final void a(String str) {
             InterfaceC0079c interfaceC0079c;
-            if (this.f13302a || (interfaceC0079c = this.f13303b) == null) {
+            if (this.f14088a || (interfaceC0079c = this.f14089b) == null) {
                 return;
             }
-            this.f13302a = true;
+            this.f14088a = true;
             interfaceC0079c.a(str);
         }
 
         @Override // com.anythink.core.common.g.c.InterfaceC0079c
         public final void b(String str) {
-            InterfaceC0079c interfaceC0079c = this.f13303b;
+            InterfaceC0079c interfaceC0079c = this.f14089b;
             if (interfaceC0079c != null) {
                 interfaceC0079c.b(str);
             }
@@ -324,7 +323,7 @@ public class c {
 
         @Override // com.anythink.core.common.g.c.InterfaceC0079c
         public final void a(int i, String str, AdError adError, long j6) {
-            InterfaceC0079c interfaceC0079c = this.f13303b;
+            InterfaceC0079c interfaceC0079c = this.f14089b;
             if (interfaceC0079c != null) {
                 interfaceC0079c.a(i, str, adError, j6);
             }
@@ -333,7 +332,7 @@ public class c {
 
         @Override // com.anythink.core.common.g.c.InterfaceC0079c
         public final void a(int i, Object obj, long j6) {
-            InterfaceC0079c interfaceC0079c = this.f13303b;
+            InterfaceC0079c interfaceC0079c = this.f14089b;
             if (interfaceC0079c != null) {
                 interfaceC0079c.a(i, obj, j6);
             }
@@ -358,7 +357,7 @@ public class c {
     }
 
     public final String b() {
-        return this.f13277n;
+        return this.f14063n;
     }
 
     public static String b(String str, String str2) {
@@ -395,22 +394,22 @@ public class c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void c(String str) {
-        this.f13277n = str;
-        Context g4 = t.b().g();
+        this.f14063n = str;
+        Context g9 = t.b().g();
         t.b();
-        af.b(g4, "anythink_sdk", u.a.f12819G, str);
+        af.b(g9, "anythink_sdk", u.a.f13605G, str);
         e("setCurrentDomain() >>> currentDomain = ".concat(String.valueOf(str)));
     }
 
     public static String d() {
-        return f13270g;
+        return f14056g;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public Long b(Context context) {
-        long j6 = this.f13276m;
+        long j6 = this.f14062m;
         if (j6 == 0) {
-            j6 = af.b(context, "anythink_sdk", u.a.f12818F, 0L);
+            j6 = af.b(context, "anythink_sdk", u.a.f13604F, 0L);
         }
         return Long.valueOf(j6);
     }
@@ -426,16 +425,16 @@ public class c {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void b(d dVar, boolean z3) {
+    public void b(d dVar, boolean z6) {
         if (dVar == null) {
             return;
         }
         synchronized (this.i) {
             try {
-                if (this.f13280q == null) {
-                    this.f13280q = new ArrayDeque<>();
+                if (this.f14066q == null) {
+                    this.f14066q = new ArrayDeque<>();
                 }
-                this.f13280q.addLast(new a(dVar, z3));
+                this.f14066q.addLast(new a(dVar, z6));
             } catch (Throwable th) {
                 throw th;
             }
@@ -445,17 +444,17 @@ public class c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public String c(Context context) {
-        String str = this.f13276m > 0 ? k().get(Long.valueOf(this.f13276m)) : "";
-        return TextUtils.isEmpty(str) ? af.c(context, "anythink_sdk", u.a.f12820H, "") : str;
+        String str = this.f14062m > 0 ? k().get(Long.valueOf(this.f14062m)) : "";
+        return TextUtils.isEmpty(str) ? af.c(context, "anythink_sdk", u.a.f13606H, "") : str;
     }
 
     public static c a() {
-        if (f13271s == null) {
+        if (f14057s == null) {
             synchronized (c.class) {
-                f13271s = new c();
+                f14057s = new c();
             }
         }
-        return f13271s;
+        return f14057s;
     }
 
     public final void a(Context context) {
@@ -465,17 +464,17 @@ public class c {
         if (context instanceof Activity) {
             context = context.getApplicationContext();
         }
-        if (this.f13274k) {
+        if (this.f14060k) {
             return;
         }
-        this.f13274k = true;
-        List<String> list = this.f13273j;
+        this.f14060k = true;
+        List<String> list = this.f14059j;
         if (!c()) {
-            list.add(j.g.a.f12468a);
+            list.add(j.g.a.f13254a);
         }
-        list.add(f13270g);
+        list.add(f14056g);
         t.b();
-        String c9 = af.c(context, "anythink_sdk", u.a.f12819G, "");
+        String c9 = af.c(context, "anythink_sdk", u.a.f13605G, "");
         if (!TextUtils.isEmpty(c9)) {
             a(list, c9);
         }
@@ -496,11 +495,11 @@ public class c {
         if (list.isEmpty()) {
             return;
         }
-        this.f13278o = list.get(0);
-        if (TextUtils.isEmpty(this.f13278o)) {
+        this.f14064o = list.get(0);
+        if (TextUtils.isEmpty(this.f14064o)) {
             return;
         }
-        c(this.f13278o);
+        c(this.f14064o);
     }
 
     private static void a(List<String> list) {
@@ -539,15 +538,15 @@ public class c {
             }
             atomicBoolean.set(true);
             String a9 = a(list, str, str2);
-            e("handleSwitchDomain() >>> targetDomain: " + a9 + " currentDomain: " + this.f13277n);
-            if (!TextUtils.isEmpty(a9) && str2.equals(this.f13277n)) {
+            e("handleSwitchDomain() >>> targetDomain: " + a9 + " currentDomain: " + this.f14063n);
+            if (!TextUtils.isEmpty(a9) && str2.equals(this.f14063n)) {
                 c(a9);
                 com.anythink.core.d.d.a(t.b().g()).c();
-                e.a(this.f13278o, a9, str3, String.valueOf(b(t.b().g())), String.valueOf(i), str4, str2);
+                e.a(this.f14064o, a9, str3, String.valueOf(b(t.b().g())), String.valueOf(i), str4, str2);
                 a(dVar, a9, str2);
                 return;
             }
-            a(dVar, this.f13277n, str2);
+            a(dVar, this.f14063n, str2);
         } catch (Throwable unused) {
         }
     }
@@ -555,7 +554,7 @@ public class c {
     private void a(String str, String str2, String str3, int i, String str4) {
         c(str);
         com.anythink.core.d.d.a(t.b().g()).c();
-        e.a(this.f13278o, str, str3, String.valueOf(b(t.b().g())), String.valueOf(i), str4, str2);
+        e.a(this.f14064o, str, str3, String.valueOf(b(t.b().g())), String.valueOf(i), str4, str2);
     }
 
     private static void a(d dVar, String str, String str2) {
@@ -621,7 +620,7 @@ public class c {
     }
 
     private void a(String str, String str2, int i, String str3, String str4) {
-        e.a(this.f13278o, str, str2, String.valueOf(b(t.b().g())), String.valueOf(i), str3, str4);
+        e.a(this.f14064o, str, str2, String.valueOf(b(t.b().g())), String.valueOf(i), str3, str4);
     }
 
     private void a(List<String> list, String str, Context context) {
@@ -629,7 +628,7 @@ public class c {
             return;
         }
         try {
-            list.remove(f13270g);
+            list.remove(f14056g);
             String c9 = c(context);
             if (!TextUtils.isEmpty(c9) && !c9.equals(str)) {
                 list.remove(c9);
@@ -640,24 +639,24 @@ public class c {
         }
     }
 
-    private void a(boolean z3, String str, long j6, int i) {
-        e.a(this.f13278o, this.f13277n, "", String.valueOf(this.f13276m), "", "", "", "1", z3 ? "1" : "0", str, String.valueOf(j6), i);
+    private void a(boolean z6, String str, long j6, int i) {
+        e.a(this.f14064o, this.f14063n, "", String.valueOf(this.f14062m), "", "", "", "1", z6 ? "1" : "0", str, String.valueOf(j6), i);
     }
 
     private void a(Context context, String str) {
         long currentTimeMillis = System.currentTimeMillis();
-        this.f13276m = currentTimeMillis;
-        af.a(context, "anythink_sdk", u.a.f12818F, currentTimeMillis);
+        this.f14062m = currentTimeMillis;
+        af.a(context, "anythink_sdk", u.a.f13604F, currentTimeMillis);
         k().put(Long.valueOf(currentTimeMillis), str);
-        af.b(context, "anythink_sdk", u.a.f12820H, str);
+        af.b(context, "anythink_sdk", u.a.f13606H, str);
     }
 
     public final void a(d dVar) {
         a(dVar, true);
     }
 
-    public final void a(final d dVar, boolean z3) {
-        final boolean z6 = c() && z3;
+    public final void a(final d dVar, boolean z6) {
+        final boolean z9 = c() && z6;
         a(new InterfaceC0079c() { // from class: com.anythink.core.common.g.c.2
             @Override // com.anythink.core.common.g.c.InterfaceC0079c
             public final void a(int i, String str, AdError adError, long j6) {
@@ -680,61 +679,61 @@ public class c {
                 if (!(obj instanceof String) || TextUtils.isEmpty(obj.toString())) {
                     return;
                 }
-                Context g4 = t.b().g();
+                Context g9 = t.b().g();
                 String obj2 = obj.toString();
                 c cVar = c.this;
-                c.a(cVar, cVar.f13273j, obj2, g4);
-                if (z6) {
+                c.a(cVar, cVar.f14059j, obj2, g9);
+                if (z9) {
                     c.this.c(obj2);
                 }
             }
-        }, z6);
+        }, z9);
     }
 
-    private void a(InterfaceC0079c interfaceC0079c, final boolean z3) {
-        String str = this.f13277n;
-        final Context g4 = t.b().g();
-        if (g4 != null && !ATSDK.isCnSDK() && q.a(g4)) {
+    private void a(InterfaceC0079c interfaceC0079c, final boolean z6) {
+        String str = this.f14063n;
+        final Context g9 = t.b().g();
+        if (g9 != null && !ATSDK.isCnSDK() && q.a(g9)) {
             final b bVar = new b(interfaceC0079c);
-            if (!z3) {
+            if (!z6) {
                 bVar.a(str);
             }
-            if (this.f13275l) {
-                b(bVar, z3);
+            if (this.f14061l) {
+                b(bVar, z6);
                 return;
             } else {
                 com.anythink.core.common.v.b.b.a().c(new Runnable() { // from class: com.anythink.core.common.g.c.3
                     @Override // java.lang.Runnable
                     public final void run() {
-                        synchronized (c.this.f13272h) {
+                        synchronized (c.this.f14058h) {
                             try {
-                                if (c.this.f13275l) {
-                                    c.this.b(bVar, z3);
+                                if (c.this.f14061l) {
+                                    c.this.b(bVar, z6);
                                     return;
                                 }
-                                c.this.f13275l = true;
+                                c.this.f14061l = true;
                                 c cVar = c.this;
-                                cVar.f13276m = cVar.b(g4).longValue();
+                                cVar.f14062m = cVar.b(g9).longValue();
                                 final long currentTimeMillis = System.currentTimeMillis();
-                                long j6 = currentTimeMillis - c.this.f13276m;
+                                long j6 = currentTimeMillis - c.this.f14062m;
                                 long e9 = c.e();
-                                if (c.this.f13276m > 0 && j6 < e9) {
-                                    String c9 = c.this.c(g4);
+                                if (c.this.f14062m > 0 && j6 < e9) {
+                                    String c9 = c.this.c(g9);
                                     c.e("requestDomain() >>> cache valid. cdnDomain: ".concat(String.valueOf(c9)));
                                     if (!TextUtils.isEmpty(c9)) {
-                                        c.this.f13275l = false;
+                                        c.this.f14061l = false;
                                         bVar.b(c9);
                                         c.e(c.this);
                                         return;
                                     }
                                 }
-                                c.e("requestDomain() >>> cache was expired. start request. currentDomain: " + c.this.f13277n);
+                                c.e("requestDomain() >>> cache was expired. start request. currentDomain: " + c.this.f14063n);
                                 com.anythink.core.d.a aVar = new com.anythink.core.d.a(com.anythink.core.d.d.a());
                                 final int a9 = aVar.a();
                                 aVar.a(new com.anythink.core.common.m.b() { // from class: com.anythink.core.common.g.c.3.1
                                     @Override // com.anythink.core.common.m.q
                                     public final void onLoadError(int i, String str2, AdError adError) {
-                                        c.this.f13275l = false;
+                                        c.this.f14061l = false;
                                         c.a(c.this, false, str2, System.currentTimeMillis() - currentTimeMillis, a9);
                                         bVar.a(-1, str2, null, currentTimeMillis);
                                         c.e(c.this);
@@ -751,7 +750,7 @@ public class c {
                                         String str2;
                                         String str3;
                                         String str4;
-                                        c.this.f13275l = false;
+                                        c.this.f14061l = false;
                                         try {
                                         } catch (Throwable th) {
                                             str2 = "parse cdn domain error: " + th.getMessage();
@@ -766,10 +765,10 @@ public class c {
                                                 str3 = jSONObject.optString("data");
                                                 if (!TextUtils.isEmpty(str3)) {
                                                     AnonymousClass3 anonymousClass3 = AnonymousClass3.this;
-                                                    c.a(c.this, g4, str3);
+                                                    c.a(c.this, g9, str3);
                                                 }
                                                 long currentTimeMillis2 = System.currentTimeMillis() - currentTimeMillis;
-                                                String unused = c.this.f13277n;
+                                                String unused = c.this.f14063n;
                                                 if (TextUtils.isEmpty(str4)) {
                                                     c.a(c.this, false, str4, currentTimeMillis2, a9);
                                                     bVar.a(0, str4, null, currentTimeMillis);
@@ -786,7 +785,7 @@ public class c {
                                         if (!TextUtils.isEmpty(str3)) {
                                         }
                                         long currentTimeMillis22 = System.currentTimeMillis() - currentTimeMillis;
-                                        String unused2 = c.this.f13277n;
+                                        String unused2 = c.this.f14063n;
                                         if (TextUtils.isEmpty(str4)) {
                                         }
                                         c.e(c.this);
@@ -807,7 +806,7 @@ public class c {
     public static /* synthetic */ void a(c cVar, List list, String str, Context context) {
         if (list != null) {
             try {
-                list.remove(f13270g);
+                list.remove(f14056g);
                 String c9 = cVar.c(context);
                 if (!TextUtils.isEmpty(c9) && !c9.equals(str)) {
                     list.remove(c9);
@@ -821,13 +820,13 @@ public class c {
 
     public static /* synthetic */ void a(c cVar, Context context, String str) {
         long currentTimeMillis = System.currentTimeMillis();
-        cVar.f13276m = currentTimeMillis;
-        af.a(context, "anythink_sdk", u.a.f12818F, currentTimeMillis);
+        cVar.f14062m = currentTimeMillis;
+        af.a(context, "anythink_sdk", u.a.f13604F, currentTimeMillis);
         cVar.k().put(Long.valueOf(currentTimeMillis), str);
-        af.b(context, "anythink_sdk", u.a.f12820H, str);
+        af.b(context, "anythink_sdk", u.a.f13606H, str);
     }
 
-    public static /* synthetic */ void a(c cVar, boolean z3, String str, long j6, int i) {
-        e.a(cVar.f13278o, cVar.f13277n, "", String.valueOf(cVar.f13276m), "", "", "", "1", z3 ? "1" : "0", str, String.valueOf(j6), i);
+    public static /* synthetic */ void a(c cVar, boolean z6, String str, long j6, int i) {
+        e.a(cVar.f14064o, cVar.f14063n, "", String.valueOf(cVar.f14062m), "", "", "", "1", z6 ? "1" : "0", str, String.valueOf(j6), i);
     }
 }

@@ -12,9 +12,9 @@ public class EN extends UN<E3> {
     @Override // com.instagram.common.viewpoint.core.UN
     /* renamed from: A00, reason: merged with bridge method [inline-methods] */
     public final void A03(E3 e32) {
-        boolean z3;
-        z3 = this.A00.A02;
-        if (!z3) {
+        boolean z6;
+        z6 = this.A00.A02;
+        if (!z6) {
             this.A00.A02 = true;
         } else {
             this.A00.A0d();

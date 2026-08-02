@@ -1,13 +1,13 @@
 package com.onesignal.common.threading;
 
-import S7.AbstractC0402u;
-import S7.AbstractC0406y;
+import N3.C;
+import S7.AbstractC0406u;
+import S7.AbstractC0410y;
 import S7.F;
-import S7.InterfaceC0404w;
+import S7.InterfaceC0408w;
 import S7.S;
 import S7.Y;
 import S7.o0;
-import a.AbstractC0422a;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -16,9 +16,9 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
-import u.AbstractC5049e;
-import u7.InterfaceC5087e;
-import z7.InterfaceC5267d;
+import u.AbstractC5050e;
+import u7.InterfaceC5079e;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class b {
@@ -36,15 +36,15 @@ public final class b {
     private static final String UNKNOWN_ERROR = "Unknown error";
     private static volatile boolean prewarmStarted;
     public static final b INSTANCE = new b();
-    private static final InterfaceC5087e ioExecutor$delegate = AbstractC0422a.q(o.INSTANCE);
-    private static final InterfaceC5087e serialIOExecutor$delegate = AbstractC0422a.q(v.INSTANCE);
-    private static final InterfaceC5087e defaultExecutor$delegate = AbstractC0422a.q(h.INSTANCE);
-    private static final InterfaceC5087e IO$delegate = AbstractC0422a.q(c.INSTANCE);
-    private static final InterfaceC5087e Default$delegate = AbstractC0422a.q(a.INSTANCE);
-    private static final InterfaceC5087e SerialIO$delegate = AbstractC0422a.q(f.INSTANCE);
-    private static final InterfaceC5087e IOScope$delegate = AbstractC0422a.q(d.INSTANCE);
-    private static final InterfaceC5087e DefaultScope$delegate = AbstractC0422a.q(C0178b.INSTANCE);
-    private static final InterfaceC5087e SerialIOScope$delegate = AbstractC0422a.q(g.INSTANCE);
+    private static final InterfaceC5079e ioExecutor$delegate = C.O(o.INSTANCE);
+    private static final InterfaceC5079e serialIOExecutor$delegate = C.O(v.INSTANCE);
+    private static final InterfaceC5079e defaultExecutor$delegate = C.O(h.INSTANCE);
+    private static final InterfaceC5079e IO$delegate = C.O(c.INSTANCE);
+    private static final InterfaceC5079e Default$delegate = C.O(a.INSTANCE);
+    private static final InterfaceC5079e SerialIO$delegate = C.O(f.INSTANCE);
+    private static final InterfaceC5079e IOScope$delegate = C.O(d.INSTANCE);
+    private static final InterfaceC5079e DefaultScope$delegate = C.O(C0178b.INSTANCE);
+    private static final InterfaceC5079e SerialIOScope$delegate = C.O(g.INSTANCE);
     private static final Object prewarmLock = new Object();
 
     public static final class a extends kotlin.jvm.internal.i implements I7.a {
@@ -55,12 +55,12 @@ public final class b {
         }
 
         @Override // I7.a
-        public final AbstractC0402u invoke() {
+        public final AbstractC0406u invoke() {
             try {
                 return new S(b.INSTANCE.getDefaultExecutor());
             } catch (Exception e9) {
                 com.onesignal.debug.internal.logging.b.error$default("OneSignalDispatchers: Using fallback Dispatchers.Default dispatcher: " + e9.getMessage(), null, 2, null);
-                return F.f2915a;
+                return F.f2998a;
             }
         }
     }
@@ -74,8 +74,8 @@ public final class b {
         }
 
         @Override // I7.a
-        public final InterfaceC0404w invoke() {
-            return AbstractC0406y.b(A8.b.r(new o0(), b.INSTANCE.getDefault()));
+        public final InterfaceC0408w invoke() {
+            return AbstractC0410y.b(A8.b.t(new o0(), b.INSTANCE.getDefault()));
         }
     }
 
@@ -87,12 +87,12 @@ public final class b {
         }
 
         @Override // I7.a
-        public final AbstractC0402u invoke() {
+        public final AbstractC0406u invoke() {
             try {
                 return new S(b.INSTANCE.getIoExecutor());
             } catch (Exception e9) {
                 com.onesignal.debug.internal.logging.b.error$default("OneSignalDispatchers: Using fallback Dispatchers.IO dispatcher: " + e9.getMessage(), null, 2, null);
-                return F.f2917c;
+                return F.f3000c;
             }
         }
     }
@@ -105,8 +105,8 @@ public final class b {
         }
 
         @Override // I7.a
-        public final InterfaceC0404w invoke() {
-            return AbstractC0406y.b(A8.b.r(new o0(), b.INSTANCE.getIO()));
+        public final InterfaceC0408w invoke() {
+            return AbstractC0410y.b(A8.b.t(new o0(), b.INSTANCE.getIO()));
         }
     }
 
@@ -118,13 +118,13 @@ public final class b {
         }
 
         @Override // I7.a
-        public final AbstractC0402u invoke() {
+        public final AbstractC0406u invoke() {
             try {
                 return new S(b.INSTANCE.getSerialIOExecutor());
             } catch (Exception e9) {
                 com.onesignal.debug.internal.logging.b.error$default("OneSignalDispatchers: Using fallback serialized Dispatchers.IO: " + e9.getMessage(), null, 2, null);
-                F.f2917c.getClass();
-                return Z7.l.f4223v.A(1);
+                F.f3000c.getClass();
+                return Z7.l.f4201v.A(1);
             }
         }
     }
@@ -137,8 +137,8 @@ public final class b {
         }
 
         @Override // I7.a
-        public final InterfaceC0404w invoke() {
-            return AbstractC0406y.b(A8.b.r(new o0(), b.INSTANCE.getSerialIO()));
+        public final InterfaceC0408w invoke() {
+            return AbstractC0410y.b(A8.b.t(new o0(), b.INSTANCE.getSerialIO()));
         }
     }
 
@@ -210,7 +210,7 @@ public final class b {
 
         @Override // I7.a
         public final Boolean invoke() {
-            return Boolean.valueOf(AbstractC0406y.n(b.INSTANCE.getIOScope()));
+            return Boolean.valueOf(AbstractC0410y.n(b.INSTANCE.getIOScope()));
         }
     }
 
@@ -223,7 +223,7 @@ public final class b {
 
         @Override // I7.a
         public final Boolean invoke() {
-            return Boolean.valueOf(AbstractC0406y.n(b.INSTANCE.getDefaultScope()));
+            return Boolean.valueOf(AbstractC0410y.n(b.INSTANCE.getDefaultScope()));
         }
     }
 
@@ -236,7 +236,7 @@ public final class b {
 
         @Override // I7.a
         public final Boolean invoke() {
-            return Boolean.valueOf(AbstractC0406y.n(b.INSTANCE.getSerialIOScope()));
+            return Boolean.valueOf(AbstractC0410y.n(b.INSTANCE.getSerialIOScope()));
         }
     }
 
@@ -265,27 +265,27 @@ public final class b {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public p(I7.l lVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public p(I7.l lVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$block = lVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return new p(this.$block, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return new p(this.$block, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((p) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((p) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 I7.l lVar = this.$block;
                 this.label = 1;
                 if (lVar.invoke(this) == aVar) {
@@ -295,9 +295,9 @@ public final class b {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
     }
 
@@ -306,27 +306,27 @@ public final class b {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public q(I7.l lVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public q(I7.l lVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$block = lVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return new q(this.$block, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return new q(this.$block, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((q) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((q) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 I7.l lVar = this.$block;
                 this.label = 1;
                 if (lVar.invoke(this) == aVar) {
@@ -336,9 +336,9 @@ public final class b {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
     }
 
@@ -347,27 +347,27 @@ public final class b {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public r(I7.l lVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public r(I7.l lVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$block = lVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return new r(this.$block, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return new r(this.$block, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((r) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((r) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 I7.l lVar = this.$block;
                 this.label = 1;
                 if (lVar.invoke(this) == aVar) {
@@ -377,93 +377,93 @@ public final class b {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         }
     }
 
     public static final class s extends B7.h implements I7.l {
         int label;
 
-        public s(InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public s(InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return new s(interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return new s(interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
-            return u7.v.f41353a;
+            Q3.b.s(obj);
+            return u7.v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((s) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((s) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
     public static final class t extends B7.h implements I7.l {
         int label;
 
-        public t(InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public t(InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return new t(interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return new t(interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
-            return u7.v.f41353a;
+            Q3.b.s(obj);
+            return u7.v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((t) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((t) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
     public static final class u extends B7.h implements I7.l {
         int label;
 
-        public u(InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public u(InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return new u(interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return new u(interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
-            return u7.v.f41353a;
+            Q3.b.s(obj);
+            return u7.v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((u) create(interfaceC5267d)).invokeSuspend(u7.v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((u) create(interfaceC5240d)).invokeSuspend(u7.v.f41073a);
         }
     }
 
@@ -494,13 +494,13 @@ public final class b {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final InterfaceC0404w getDefaultScope() {
-        return (InterfaceC0404w) DefaultScope$delegate.getValue();
+    public final InterfaceC0408w getDefaultScope() {
+        return (InterfaceC0408w) DefaultScope$delegate.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final InterfaceC0404w getIOScope() {
-        return (InterfaceC0404w) IOScope$delegate.getValue();
+    public final InterfaceC0408w getIOScope() {
+        return (InterfaceC0408w) IOScope$delegate.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -516,8 +516,8 @@ public final class b {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final InterfaceC0404w getSerialIOScope() {
-        return (InterfaceC0404w) SerialIOScope$delegate.getValue();
+    public final InterfaceC0408w getSerialIOScope() {
+        return (InterfaceC0408w) SerialIOScope$delegate.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -538,7 +538,7 @@ public final class b {
         try {
             return ((Boolean) isShutdown.invoke()).booleanValue() ? "Shutdown" : "Active";
         } catch (Exception e9) {
-            StringBuilder c9 = AbstractC5049e.c(name, " Not initialized ");
+            StringBuilder c9 = AbstractC5050e.c(name, " Not initialized ");
             String message = e9.getMessage();
             if (message == null) {
                 message = UNKNOWN_ERROR;
@@ -548,12 +548,12 @@ public final class b {
         }
     }
 
-    public final AbstractC0402u getDefault() {
-        return (AbstractC0402u) Default$delegate.getValue();
+    public final AbstractC0406u getDefault() {
+        return (AbstractC0406u) Default$delegate.getValue();
     }
 
-    public final AbstractC0402u getIO() {
-        return (AbstractC0402u) IO$delegate.getValue();
+    public final AbstractC0406u getIO() {
+        return (AbstractC0406u) IO$delegate.getValue();
     }
 
     public final String getPerformanceMetrics$com_onesignal_core() {
@@ -567,33 +567,33 @@ public final class b {
             }
             ExecutorService serialIOExecutor2 = getSerialIOExecutor();
             ThreadPoolExecutor threadPoolExecutor2 = serialIOExecutor2 instanceof ThreadPoolExecutor ? (ThreadPoolExecutor) serialIOExecutor2 : null;
-            return Q7.k.H("\n            OneSignalDispatchers Performance Metrics:\n            - IO Pool: " + getIoExecutor().getActiveCount() + '/' + getIoExecutor().getCorePoolSize() + " active/core threads\n            - IO Queue: " + getIoExecutor().getQueue().size() + " pending tasks\n            - Default Pool: " + getDefaultExecutor().getActiveCount() + '/' + getDefaultExecutor().getCorePoolSize() + " active/core threads\n            - Default Queue: " + getDefaultExecutor().getQueue().size() + " pending tasks\n            - SerialIO Queue: " + str + " pending tasks\n            - Total completed tasks: " + (getIoExecutor().getCompletedTaskCount() + getDefaultExecutor().getCompletedTaskCount() + (threadPoolExecutor2 != null ? threadPoolExecutor2.getCompletedTaskCount() : 0L)) + "\n            - Memory usage: ~" + ((getIoExecutor().getActiveCount() + getDefaultExecutor().getActiveCount() + 1) * 1024) + "KB (thread stacks, ~1MB each)\n            ");
+            return Q7.k.X("\n            OneSignalDispatchers Performance Metrics:\n            - IO Pool: " + getIoExecutor().getActiveCount() + '/' + getIoExecutor().getCorePoolSize() + " active/core threads\n            - IO Queue: " + getIoExecutor().getQueue().size() + " pending tasks\n            - Default Pool: " + getDefaultExecutor().getActiveCount() + '/' + getDefaultExecutor().getCorePoolSize() + " active/core threads\n            - Default Queue: " + getDefaultExecutor().getQueue().size() + " pending tasks\n            - SerialIO Queue: " + str + " pending tasks\n            - Total completed tasks: " + (getIoExecutor().getCompletedTaskCount() + getDefaultExecutor().getCompletedTaskCount() + (threadPoolExecutor2 != null ? threadPoolExecutor2.getCompletedTaskCount() : 0L)) + "\n            - Memory usage: ~" + ((getIoExecutor().getActiveCount() + getDefaultExecutor().getActiveCount() + 1) * 1024) + "KB (thread stacks, ~1MB each)\n            ");
         } catch (Exception e9) {
             return "OneSignalDispatchers not initialized or using fallback dispatchers " + e9.getMessage();
         }
     }
 
-    public final AbstractC0402u getSerialIO() {
-        return (AbstractC0402u) SerialIO$delegate.getValue();
+    public final AbstractC0406u getSerialIO() {
+        return (AbstractC0406u) SerialIO$delegate.getValue();
     }
 
     public final String getStatus$com_onesignal_core() {
-        return Q7.k.H("\n            OneSignalDispatchers Status:\n            - IO Executor: " + executorStatus$com_onesignal_core("ioExecutor", i.INSTANCE) + "\n            - Default Executor: " + executorStatus$com_onesignal_core("defaultExecutor", j.INSTANCE) + "\n            - SerialIO Executor: " + executorStatus$com_onesignal_core("serialIOExecutor", k.INSTANCE) + "\n            - IO Scope: " + scopeStatus$com_onesignal_core("IOScope", l.INSTANCE) + "\n            - Default Scope: " + scopeStatus$com_onesignal_core("DefaultScope", m.INSTANCE) + "\n            - SerialIO Scope: " + scopeStatus$com_onesignal_core("SerialIOScope", n.INSTANCE) + "\n        ");
+        return Q7.k.X("\n            OneSignalDispatchers Status:\n            - IO Executor: " + executorStatus$com_onesignal_core("ioExecutor", i.INSTANCE) + "\n            - Default Executor: " + executorStatus$com_onesignal_core("defaultExecutor", j.INSTANCE) + "\n            - SerialIO Executor: " + executorStatus$com_onesignal_core("serialIOExecutor", k.INSTANCE) + "\n            - IO Scope: " + scopeStatus$com_onesignal_core("IOScope", l.INSTANCE) + "\n            - Default Scope: " + scopeStatus$com_onesignal_core("DefaultScope", m.INSTANCE) + "\n            - SerialIO Scope: " + scopeStatus$com_onesignal_core("SerialIOScope", n.INSTANCE) + "\n        ");
     }
 
     public final Y launchOnDefault(I7.l block) {
         kotlin.jvm.internal.h.e(block, "block");
-        return AbstractC0406y.o(getDefaultScope(), null, new p(block, null), 3);
+        return AbstractC0410y.o(getDefaultScope(), null, new p(block, null), 3);
     }
 
     public final Y launchOnIO(I7.l block) {
         kotlin.jvm.internal.h.e(block, "block");
-        return AbstractC0406y.o(getIOScope(), null, new q(block, null), 3);
+        return AbstractC0410y.o(getIOScope(), null, new q(block, null), 3);
     }
 
     public final Y launchOnSerialIO(I7.l block) {
         kotlin.jvm.internal.h.e(block, "block");
-        return AbstractC0406y.o(getSerialIOScope(), null, new r(block, null), 3);
+        return AbstractC0410y.o(getSerialIOScope(), null, new r(block, null), 3);
     }
 
     public final void prewarm() {
@@ -624,7 +624,7 @@ public final class b {
         try {
             return ((Boolean) isActive.invoke()).booleanValue() ? "Active" : "Cancelled";
         } catch (Exception e9) {
-            StringBuilder c9 = AbstractC5049e.c(name, " Not initialized ");
+            StringBuilder c9 = AbstractC5050e.c(name, " Not initialized ");
             String message = e9.getMessage();
             if (message == null) {
                 message = UNKNOWN_ERROR;
@@ -655,8 +655,8 @@ public final class b {
             return thread;
         }
 
-        public /* synthetic */ e(String str, int i, int i6, kotlin.jvm.internal.e eVar) {
-            this(str, (i6 & 2) != 0 ? 5 : i);
+        public /* synthetic */ e(String str, int i, int i4, kotlin.jvm.internal.e eVar) {
+            this(str, (i4 & 2) != 0 ? 5 : i);
         }
     }
 }

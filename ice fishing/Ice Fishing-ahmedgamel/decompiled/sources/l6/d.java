@@ -4,13 +4,13 @@ package l6;
 public final class d implements h {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final d f38922n = new d();
+    public static final d f38990n = new d();
 
     /* renamed from: u, reason: collision with root package name */
-    public static final c f38923u = new c();
+    public static final c f38991u = new c();
 
     @Override // l6.h
     public final g a(String str) {
-        return f38923u;
+        return f38991u;
     }
 }

@@ -20,7 +20,7 @@ public interface b {
 
     void onClose();
 
-    void onDeeplinkCallback(boolean z3);
+    void onDeeplinkCallback(boolean z6);
 
     void onDownloadConfirmCallback(Context context, View view, ATNetworkConfirmInfo aTNetworkConfirmInfo);
 

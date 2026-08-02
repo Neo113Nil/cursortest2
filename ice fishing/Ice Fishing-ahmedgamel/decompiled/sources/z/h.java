@@ -6,100 +6,100 @@ import java.util.Arrays;
 public final class h {
 
     /* renamed from: a, reason: collision with root package name */
-    public int[] f42098a;
+    public int[] f42069a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int[] f42099b;
+    public int[] f42070b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f42100c;
+    public int f42071c;
 
     /* renamed from: d, reason: collision with root package name */
-    public int[] f42101d;
+    public int[] f42072d;
 
     /* renamed from: e, reason: collision with root package name */
-    public float[] f42102e;
+    public float[] f42073e;
 
     /* renamed from: f, reason: collision with root package name */
-    public int f42103f;
+    public int f42074f;
 
     /* renamed from: g, reason: collision with root package name */
-    public int[] f42104g;
+    public int[] f42075g;
 
     /* renamed from: h, reason: collision with root package name */
-    public String[] f42105h;
+    public String[] f42076h;
     public int i;
 
     /* renamed from: j, reason: collision with root package name */
-    public int[] f42106j;
+    public int[] f42077j;
 
     /* renamed from: k, reason: collision with root package name */
-    public boolean[] f42107k;
+    public boolean[] f42078k;
 
     /* renamed from: l, reason: collision with root package name */
-    public int f42108l;
+    public int f42079l;
 
-    public final void a(float f3, int i) {
-        int i6 = this.f42103f;
-        int[] iArr = this.f42101d;
-        if (i6 >= iArr.length) {
-            this.f42101d = Arrays.copyOf(iArr, iArr.length * 2);
-            float[] fArr = this.f42102e;
-            this.f42102e = Arrays.copyOf(fArr, fArr.length * 2);
+    public final void a(float f2, int i) {
+        int i4 = this.f42074f;
+        int[] iArr = this.f42072d;
+        if (i4 >= iArr.length) {
+            this.f42072d = Arrays.copyOf(iArr, iArr.length * 2);
+            float[] fArr = this.f42073e;
+            this.f42073e = Arrays.copyOf(fArr, fArr.length * 2);
         }
-        int[] iArr2 = this.f42101d;
-        int i9 = this.f42103f;
-        iArr2[i9] = i;
-        float[] fArr2 = this.f42102e;
-        this.f42103f = i9 + 1;
-        fArr2[i9] = f3;
+        int[] iArr2 = this.f42072d;
+        int i6 = this.f42074f;
+        iArr2[i6] = i;
+        float[] fArr2 = this.f42073e;
+        this.f42074f = i6 + 1;
+        fArr2[i6] = f2;
     }
 
-    public final void b(int i, int i6) {
-        int i9 = this.f42100c;
-        int[] iArr = this.f42098a;
-        if (i9 >= iArr.length) {
-            this.f42098a = Arrays.copyOf(iArr, iArr.length * 2);
-            int[] iArr2 = this.f42099b;
-            this.f42099b = Arrays.copyOf(iArr2, iArr2.length * 2);
+    public final void b(int i, int i4) {
+        int i6 = this.f42071c;
+        int[] iArr = this.f42069a;
+        if (i6 >= iArr.length) {
+            this.f42069a = Arrays.copyOf(iArr, iArr.length * 2);
+            int[] iArr2 = this.f42070b;
+            this.f42070b = Arrays.copyOf(iArr2, iArr2.length * 2);
         }
-        int[] iArr3 = this.f42098a;
-        int i10 = this.f42100c;
-        iArr3[i10] = i;
-        int[] iArr4 = this.f42099b;
-        this.f42100c = i10 + 1;
-        iArr4[i10] = i6;
+        int[] iArr3 = this.f42069a;
+        int i9 = this.f42071c;
+        iArr3[i9] = i;
+        int[] iArr4 = this.f42070b;
+        this.f42071c = i9 + 1;
+        iArr4[i9] = i4;
     }
 
     public final void c(int i, String str) {
-        int i6 = this.i;
-        int[] iArr = this.f42104g;
-        if (i6 >= iArr.length) {
-            this.f42104g = Arrays.copyOf(iArr, iArr.length * 2);
-            String[] strArr = this.f42105h;
-            this.f42105h = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
+        int i4 = this.i;
+        int[] iArr = this.f42075g;
+        if (i4 >= iArr.length) {
+            this.f42075g = Arrays.copyOf(iArr, iArr.length * 2);
+            String[] strArr = this.f42076h;
+            this.f42076h = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
         }
-        int[] iArr2 = this.f42104g;
-        int i9 = this.i;
-        iArr2[i9] = i;
-        String[] strArr2 = this.f42105h;
-        this.i = i9 + 1;
-        strArr2[i9] = str;
+        int[] iArr2 = this.f42075g;
+        int i6 = this.i;
+        iArr2[i6] = i;
+        String[] strArr2 = this.f42076h;
+        this.i = i6 + 1;
+        strArr2[i6] = str;
     }
 
-    public final void d(int i, boolean z3) {
-        int i6 = this.f42108l;
-        int[] iArr = this.f42106j;
-        if (i6 >= iArr.length) {
-            this.f42106j = Arrays.copyOf(iArr, iArr.length * 2);
-            boolean[] zArr = this.f42107k;
-            this.f42107k = Arrays.copyOf(zArr, zArr.length * 2);
+    public final void d(int i, boolean z6) {
+        int i4 = this.f42079l;
+        int[] iArr = this.f42077j;
+        if (i4 >= iArr.length) {
+            this.f42077j = Arrays.copyOf(iArr, iArr.length * 2);
+            boolean[] zArr = this.f42078k;
+            this.f42078k = Arrays.copyOf(zArr, zArr.length * 2);
         }
-        int[] iArr2 = this.f42106j;
-        int i9 = this.f42108l;
-        iArr2[i9] = i;
-        boolean[] zArr2 = this.f42107k;
-        this.f42108l = i9 + 1;
-        zArr2[i9] = z3;
+        int[] iArr2 = this.f42077j;
+        int i6 = this.f42079l;
+        iArr2[i6] = i;
+        boolean[] zArr2 = this.f42078k;
+        this.f42079l = i6 + 1;
+        zArr2[i6] = z6;
     }
 }

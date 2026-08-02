@@ -37,12 +37,12 @@ public class d {
         this.contentHtml = com.onesignal.common.e.safeString(jsonObject, HTML);
         this.displayDuration = com.onesignal.common.e.safeDouble(jsonObject, DISPLAY_DURATION);
         JSONObject safeJSONObject = com.onesignal.common.e.safeJSONObject(jsonObject, STYLES);
-        boolean z3 = false;
+        boolean z6 = false;
         this.useHeightMargin = !((safeJSONObject == null || (safeBool2 = com.onesignal.common.e.safeBool(safeJSONObject, REMOVE_HEIGHT_MARGIN)) == null) ? false : safeBool2.booleanValue());
         if (safeJSONObject != null && (safeBool = com.onesignal.common.e.safeBool(safeJSONObject, REMOVE_WIDTH_MARGIN)) != null) {
-            z3 = safeBool.booleanValue();
+            z6 = safeBool.booleanValue();
         }
-        this.useWidthMargin = !z3;
+        this.useWidthMargin = !z6;
         this.isFullBleed = !this.useHeightMargin;
     }
 
@@ -78,27 +78,27 @@ public class d {
         this.contentHtml = str;
     }
 
-    public final void setDisplayDuration(Double d2) {
-        this.displayDuration = d2;
+    public final void setDisplayDuration(Double d9) {
+        this.displayDuration = d9;
     }
 
     public final void setDisplayLocation(m.c cVar) {
         this.displayLocation = cVar;
     }
 
-    public final void setFullBleed(boolean z3) {
-        this.isFullBleed = z3;
+    public final void setFullBleed(boolean z6) {
+        this.isFullBleed = z6;
     }
 
     public final void setPageHeight(int i) {
         this.pageHeight = i;
     }
 
-    public final void setUseHeightMargin(boolean z3) {
-        this.useHeightMargin = z3;
+    public final void setUseHeightMargin(boolean z6) {
+        this.useHeightMargin = z6;
     }
 
-    public final void setUseWidthMargin(boolean z3) {
-        this.useWidthMargin = z3;
+    public final void setUseWidthMargin(boolean z6) {
+        this.useWidthMargin = z6;
     }
 }

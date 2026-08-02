@@ -11,18 +11,18 @@ import java.security.spec.RSAPrivateCrtKeySpec;
 import java.util.Objects;
 
 /* loaded from: classes2.dex */
-public final class EJ implements InterfaceC3987uE {
+public final class EJ implements InterfaceC4010uE {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final byte[] f24578a = {48, 46, 2, 1, 0, 48, 5, 6, 3, 43, 101, 112, 4, 34, 4, 32};
+    public static final byte[] f25339a = {48, 46, 2, 1, 0, 48, 5, 6, 3, 43, 101, 112, 4, 34, 4, 32};
 
-    public static EJ a(C3185fJ c3185fJ) {
-        Provider h9 = AbstractC3043cl.h();
-        if (h9 == null) {
+    public static EJ a(C3208fJ c3208fJ) {
+        Provider h3 = AbstractC3066cl.h();
+        if (h3 == null) {
             throw new NoSuchProviderException("Ed25519SignJce requires the Conscrypt provider.");
         }
-        byte[] b9 = ((C3240gK) c3185fJ.f30242c.f29859u).b();
-        c3185fJ.f30241b.f30758d.b();
+        byte[] b9 = ((C3263gK) c3208fJ.f31029c.f30647u).b();
+        c3208fJ.f31028b.f31524d.b();
         EJ ej = new EJ();
         if (!WC.c(1)) {
             throw new GeneralSecurityException("Can not use Ed25519 in FIPS-mode.");
@@ -30,7 +30,7 @@ public final class EJ implements InterfaceC3987uE {
         if (b9.length != 32) {
             throw new IllegalArgumentException("Given private key's length is not 32");
         }
-        KeyFactory.getInstance("Ed25519", h9).generatePrivate(new PKCS8EncodedKeySpec(AbstractC4094wD.d(f24578a, b9)));
+        KeyFactory.getInstance("Ed25519", h3).generatePrivate(new PKCS8EncodedKeySpec(AbstractC4117wD.d(f25339a, b9)));
         return ej;
     }
 
@@ -41,30 +41,30 @@ public final class EJ implements InterfaceC3987uE {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static EJ b(C4046vJ c4046vJ) {
-        Provider h9;
-        int i = DG.f24377a;
+    public static EJ b(C4069vJ c4069vJ) {
+        Provider h3;
+        int i = DG.f25122a;
         if (Objects.equals(System.getProperty("java.vendor"), "The Android Project")) {
-            h9 = null;
+            h3 = null;
         }
-        h9 = AbstractC3043cl.h();
-        if (h9 == null) {
+        h3 = AbstractC3066cl.h();
+        if (h3 == null) {
             throw new NoSuchProviderException("RSA SSA PSS using Conscrypt is not supported.");
         }
-        KeyFactory keyFactory = KeyFactory.getInstance("RSA", h9);
-        C3992uJ c3992uJ = c4046vJ.f34680b.f34824b;
-        C4100wJ c4100wJ = c4046vJ.f34680b;
-        RSAPrivateCrtKey rSAPrivateCrtKey = (RSAPrivateCrtKey) keyFactory.generatePrivate(new RSAPrivateCrtKeySpec(c4100wJ.f34825c, c3992uJ.f34512b, (BigInteger) c4046vJ.f34681c.f31863u, (BigInteger) c4046vJ.f34682d.f31863u, (BigInteger) c4046vJ.f34683e.f31863u, (BigInteger) c4046vJ.f34684f.f31863u, (BigInteger) c4046vJ.f34685g.f31863u, (BigInteger) c4046vJ.f34686h.f31863u));
-        c4100wJ.f34826d.b();
+        KeyFactory keyFactory = KeyFactory.getInstance("RSA", h3);
+        C4015uJ c4015uJ = c4069vJ.f35443b.f35593b;
+        C4123wJ c4123wJ = c4069vJ.f35443b;
+        RSAPrivateCrtKey rSAPrivateCrtKey = (RSAPrivateCrtKey) keyFactory.generatePrivate(new RSAPrivateCrtKeySpec(c4123wJ.f35594c, c4015uJ.f35286b, (BigInteger) c4069vJ.f35444c.f32643u, (BigInteger) c4069vJ.f35445d.f32643u, (BigInteger) c4069vJ.f35446e.f32643u, (BigInteger) c4069vJ.f35447f.f32643u, (BigInteger) c4069vJ.f35448g.f32643u, (BigInteger) c4069vJ.f35449h.f32643u));
+        c4123wJ.f35595d.b();
         EJ ej = new EJ();
         if (!WC.c(2)) {
             throw new GeneralSecurityException("Cannot use RSA PSS in FIPS-mode, as BoringCrypto module is not available.");
         }
-        AbstractC3341iD.k(rSAPrivateCrtKey.getModulus().bitLength());
-        AbstractC3341iD.n(rSAPrivateCrtKey.getPublicExponent());
-        C3938tJ c3938tJ = c3992uJ.f34514d;
-        MJ.b(c3938tJ);
-        MJ.c(c3938tJ, c3992uJ.f34515e, c3992uJ.f34516f);
+        AbstractC3364iD.k(rSAPrivateCrtKey.getModulus().bitLength());
+        AbstractC3364iD.n(rSAPrivateCrtKey.getPublicExponent());
+        C3961tJ c3961tJ = c4015uJ.f35288d;
+        MJ.b(c3961tJ);
+        MJ.c(c3961tJ, c4015uJ.f35289e, c4015uJ.f35290f);
         return ej;
     }
 }

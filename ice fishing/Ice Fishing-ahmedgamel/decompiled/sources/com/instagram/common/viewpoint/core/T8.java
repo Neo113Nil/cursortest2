@@ -15,7 +15,7 @@ public class T8 extends ContextWrapper {
         this.A00 = ta;
     }
 
-    public final InterfaceC1070Lx A00(T8 t82) {
+    public final InterfaceC1090Lx A00(T8 t82) {
         return this.A00.A8C(t82);
     }
 
@@ -23,7 +23,7 @@ public class T8 extends ContextWrapper {
         return this.A00.A7G();
     }
 
-    public final C1836ge A02() {
+    public final C1856ge A02() {
         return this.A00.A8z(this);
     }
 
@@ -47,7 +47,7 @@ public class T8 extends ContextWrapper {
         return this.A00.A7l(this);
     }
 
-    public final InterfaceC1251Tc A08() {
+    public final InterfaceC1271Tc A08() {
         return this.A00.A7n(this);
     }
 

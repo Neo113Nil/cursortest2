@@ -4,97 +4,98 @@ import android.view.View;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import java.util.ArrayList;
 import java.util.Collections;
-import t0.AbstractC4990E;
+import t0.AbstractC4987C;
+import t0.C5004U;
 
 /* loaded from: classes2.dex */
 public final class I {
 
     /* renamed from: a, reason: collision with root package name */
-    public final ArrayList f25421a;
+    public final ArrayList f26164a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f25422b;
+    public int f26165b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f25423c;
+    public int f26166c;
 
     /* renamed from: d, reason: collision with root package name */
-    public int f25424d;
+    public int f26167d;
 
     /* renamed from: e, reason: collision with root package name */
-    public int f25425e;
+    public int f26168e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final Object f25426f;
+    public final Object f26169f;
 
     public I() {
-        this.f25426f = new H[5];
-        this.f25421a = new ArrayList();
-        this.f25422b = -1;
+        this.f26169f = new H[5];
+        this.f26164a = new ArrayList();
+        this.f26165b = -1;
     }
 
     public void a() {
-        View view = (View) this.f25421a.get(r0.size() - 1);
-        t0.W w6 = (t0.W) view.getLayoutParams();
-        this.f25423c = ((StaggeredGridLayoutManager) this.f25426f).f5288r.b(view);
-        w6.getClass();
+        View view = (View) this.f26164a.get(r0.size() - 1);
+        C5004U c5004u = (C5004U) view.getLayoutParams();
+        this.f26166c = ((StaggeredGridLayoutManager) this.f26169f).f5254r.b(view);
+        c5004u.getClass();
     }
 
     public void b() {
-        this.f25421a.clear();
-        this.f25422b = Integer.MIN_VALUE;
-        this.f25423c = Integer.MIN_VALUE;
-        this.f25424d = 0;
+        this.f26164a.clear();
+        this.f26165b = Integer.MIN_VALUE;
+        this.f26166c = Integer.MIN_VALUE;
+        this.f26167d = 0;
     }
 
     public int c() {
-        return ((StaggeredGridLayoutManager) this.f25426f).f5293w ? e(r1.size() - 1, -1) : e(0, this.f25421a.size());
+        return ((StaggeredGridLayoutManager) this.f26169f).f5259w ? e(r1.size() - 1, -1) : e(0, this.f26164a.size());
     }
 
     public int d() {
-        return ((StaggeredGridLayoutManager) this.f25426f).f5293w ? e(0, this.f25421a.size()) : e(r1.size() - 1, -1);
+        return ((StaggeredGridLayoutManager) this.f26169f).f5259w ? e(0, this.f26164a.size()) : e(r1.size() - 1, -1);
     }
 
-    public int e(int i, int i6) {
-        StaggeredGridLayoutManager staggeredGridLayoutManager = (StaggeredGridLayoutManager) this.f25426f;
-        int k9 = staggeredGridLayoutManager.f5288r.k();
-        int g4 = staggeredGridLayoutManager.f5288r.g();
-        int i9 = i6 > i ? 1 : -1;
-        while (i != i6) {
-            View view = (View) this.f25421a.get(i);
-            int e9 = staggeredGridLayoutManager.f5288r.e(view);
-            int b9 = staggeredGridLayoutManager.f5288r.b(view);
-            boolean z3 = e9 <= g4;
-            boolean z6 = b9 >= k9;
-            if (z3 && z6 && (e9 < k9 || b9 > g4)) {
-                return AbstractC4990E.H(view);
+    public int e(int i, int i4) {
+        StaggeredGridLayoutManager staggeredGridLayoutManager = (StaggeredGridLayoutManager) this.f26169f;
+        int k9 = staggeredGridLayoutManager.f5254r.k();
+        int g9 = staggeredGridLayoutManager.f5254r.g();
+        int i6 = i4 > i ? 1 : -1;
+        while (i != i4) {
+            View view = (View) this.f26164a.get(i);
+            int e9 = staggeredGridLayoutManager.f5254r.e(view);
+            int b9 = staggeredGridLayoutManager.f5254r.b(view);
+            boolean z6 = e9 <= g9;
+            boolean z9 = b9 >= k9;
+            if (z6 && z9 && (e9 < k9 || b9 > g9)) {
+                return AbstractC4987C.H(view);
             }
-            i += i9;
+            i += i6;
         }
         return -1;
     }
 
     public int f(int i) {
-        int i6 = this.f25423c;
-        if (i6 != Integer.MIN_VALUE) {
-            return i6;
+        int i4 = this.f26166c;
+        if (i4 != Integer.MIN_VALUE) {
+            return i4;
         }
-        if (this.f25421a.size() == 0) {
+        if (this.f26164a.size() == 0) {
             return i;
         }
         a();
-        return this.f25423c;
+        return this.f26166c;
     }
 
-    public View g(int i, int i6) {
-        StaggeredGridLayoutManager staggeredGridLayoutManager = (StaggeredGridLayoutManager) this.f25426f;
-        ArrayList arrayList = this.f25421a;
+    public View g(int i, int i4) {
+        StaggeredGridLayoutManager staggeredGridLayoutManager = (StaggeredGridLayoutManager) this.f26169f;
+        ArrayList arrayList = this.f26164a;
         View view = null;
-        if (i6 != -1) {
+        if (i4 != -1) {
             int size = arrayList.size() - 1;
             while (size >= 0) {
                 View view2 = (View) arrayList.get(size);
-                if ((staggeredGridLayoutManager.f5293w && AbstractC4990E.H(view2) >= i) || ((!staggeredGridLayoutManager.f5293w && AbstractC4990E.H(view2) <= i) || !view2.hasFocusable())) {
+                if ((staggeredGridLayoutManager.f5259w && AbstractC4987C.H(view2) >= i) || ((!staggeredGridLayoutManager.f5259w && AbstractC4987C.H(view2) <= i) || !view2.hasFocusable())) {
                     break;
                 }
                 size--;
@@ -103,109 +104,109 @@ public final class I {
             return view;
         }
         int size2 = arrayList.size();
-        int i9 = 0;
-        while (i9 < size2) {
-            View view3 = (View) arrayList.get(i9);
-            if ((staggeredGridLayoutManager.f5293w && AbstractC4990E.H(view3) <= i) || ((!staggeredGridLayoutManager.f5293w && AbstractC4990E.H(view3) >= i) || !view3.hasFocusable())) {
+        int i6 = 0;
+        while (i6 < size2) {
+            View view3 = (View) arrayList.get(i6);
+            if ((staggeredGridLayoutManager.f5259w && AbstractC4987C.H(view3) <= i) || ((!staggeredGridLayoutManager.f5259w && AbstractC4987C.H(view3) >= i) || !view3.hasFocusable())) {
                 break;
             }
-            i9++;
+            i6++;
             view = view3;
         }
         return view;
     }
 
     public int h(int i) {
-        int i6 = this.f25422b;
-        if (i6 != Integer.MIN_VALUE) {
-            return i6;
+        int i4 = this.f26165b;
+        if (i4 != Integer.MIN_VALUE) {
+            return i4;
         }
-        if (this.f25421a.size() == 0) {
+        if (this.f26164a.size() == 0) {
             return i;
         }
-        View view = (View) this.f25421a.get(0);
-        t0.W w6 = (t0.W) view.getLayoutParams();
-        this.f25422b = ((StaggeredGridLayoutManager) this.f25426f).f5288r.e(view);
-        w6.getClass();
-        return this.f25422b;
+        View view = (View) this.f26164a.get(0);
+        C5004U c5004u = (C5004U) view.getLayoutParams();
+        this.f26165b = ((StaggeredGridLayoutManager) this.f26169f).f5254r.e(view);
+        c5004u.getClass();
+        return this.f26165b;
     }
 
-    public void i(float f3, int i) {
-        H h9;
-        int i6 = this.f25422b;
-        ArrayList arrayList = this.f25421a;
-        if (i6 != 1) {
-            Collections.sort(arrayList, C3004c.f29388F);
-            this.f25422b = 1;
+    public void i(float f2, int i) {
+        H h3;
+        int i4 = this.f26165b;
+        ArrayList arrayList = this.f26164a;
+        if (i4 != 1) {
+            Collections.sort(arrayList, C3027c.f30171F);
+            this.f26165b = 1;
         }
-        int i9 = this.f25425e;
-        H[] hArr = (H[]) this.f25426f;
-        if (i9 > 0) {
-            int i10 = i9 - 1;
-            this.f25425e = i10;
-            h9 = hArr[i10];
+        int i6 = this.f26168e;
+        H[] hArr = (H[]) this.f26169f;
+        if (i6 > 0) {
+            int i9 = i6 - 1;
+            this.f26168e = i9;
+            h3 = hArr[i9];
         } else {
-            h9 = new H();
+            h3 = new H();
         }
-        int i11 = this.f25423c;
-        this.f25423c = i11 + 1;
-        h9.f25197a = i11;
-        h9.f25198b = i;
-        h9.f25199c = f3;
-        arrayList.add(h9);
-        this.f25424d += i;
+        int i10 = this.f26166c;
+        this.f26166c = i10 + 1;
+        h3.f25969a = i10;
+        h3.f25970b = i;
+        h3.f25971c = f2;
+        arrayList.add(h3);
+        this.f26167d += i;
         while (true) {
-            int i12 = this.f25424d;
-            if (i12 <= 2000) {
+            int i11 = this.f26167d;
+            if (i11 <= 2000) {
                 return;
             }
-            int i13 = i12 - 2000;
-            H h10 = (H) arrayList.get(0);
-            int i14 = h10.f25198b;
-            if (i14 <= i13) {
-                this.f25424d -= i14;
+            int i12 = i11 - 2000;
+            H h9 = (H) arrayList.get(0);
+            int i13 = h9.f25970b;
+            if (i13 <= i12) {
+                this.f26167d -= i13;
                 arrayList.remove(0);
-                int i15 = this.f25425e;
-                if (i15 < 5) {
-                    this.f25425e = i15 + 1;
-                    hArr[i15] = h10;
+                int i14 = this.f26168e;
+                if (i14 < 5) {
+                    this.f26168e = i14 + 1;
+                    hArr[i14] = h9;
                 }
             } else {
-                h10.f25198b = i14 - i13;
-                this.f25424d -= i13;
+                h9.f25970b = i13 - i12;
+                this.f26167d -= i12;
             }
         }
     }
 
     public float j() {
-        int i = this.f25422b;
-        ArrayList arrayList = this.f25421a;
+        int i = this.f26165b;
+        ArrayList arrayList = this.f26164a;
         if (i != 0) {
-            Collections.sort(arrayList, C3004c.f29387E);
-            this.f25422b = 0;
+            Collections.sort(arrayList, C3027c.f30170E);
+            this.f26165b = 0;
         }
-        float f3 = this.f25424d;
-        int i6 = 0;
-        for (int i9 = 0; i9 < arrayList.size(); i9++) {
-            float f9 = 0.5f * f3;
-            H h9 = (H) arrayList.get(i9);
-            i6 += h9.f25198b;
-            if (i6 >= f9) {
-                return h9.f25199c;
+        float f2 = this.f26167d;
+        int i4 = 0;
+        for (int i6 = 0; i6 < arrayList.size(); i6++) {
+            float f9 = 0.5f * f2;
+            H h3 = (H) arrayList.get(i6);
+            i4 += h3.f25970b;
+            if (i4 >= f9) {
+                return h3.f25971c;
             }
         }
         if (arrayList.isEmpty()) {
             return Float.NaN;
         }
-        return ((H) arrayList.get(arrayList.size() - 1)).f25199c;
+        return ((H) arrayList.get(arrayList.size() - 1)).f25971c;
     }
 
     public I(StaggeredGridLayoutManager staggeredGridLayoutManager, int i) {
-        this.f25426f = staggeredGridLayoutManager;
-        this.f25421a = new ArrayList();
-        this.f25422b = Integer.MIN_VALUE;
-        this.f25423c = Integer.MIN_VALUE;
-        this.f25424d = 0;
-        this.f25425e = i;
+        this.f26169f = staggeredGridLayoutManager;
+        this.f26164a = new ArrayList();
+        this.f26165b = Integer.MIN_VALUE;
+        this.f26166c = Integer.MIN_VALUE;
+        this.f26167d = 0;
+        this.f26168e = i;
     }
 }

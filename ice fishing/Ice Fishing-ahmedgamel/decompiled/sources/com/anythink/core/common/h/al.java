@@ -1,132 +1,134 @@
 package com.anythink.core.common.h;
 
+import com.google.android.gms.internal.ads.Wv;
+
 /* loaded from: classes.dex */
 public final class al {
 
     /* renamed from: a, reason: collision with root package name */
-    private String f13498a;
+    private String f14284a;
 
     /* renamed from: b, reason: collision with root package name */
-    private String f13499b;
+    private String f14285b;
 
     /* renamed from: c, reason: collision with root package name */
-    private String f13500c;
+    private String f14286c;
 
     /* renamed from: d, reason: collision with root package name */
-    private String f13501d;
+    private String f14287d;
 
     /* renamed from: e, reason: collision with root package name */
-    private int f13502e;
+    private int f14288e;
 
     /* renamed from: f, reason: collision with root package name */
-    private long f13503f;
+    private long f14289f;
 
     /* renamed from: g, reason: collision with root package name */
-    private long f13504g;
+    private long f14290g;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f13505h;
+    private int f14291h;
     private String i;
 
     /* renamed from: j, reason: collision with root package name */
-    private String f13506j;
+    private String f14292j;
 
     /* renamed from: k, reason: collision with root package name */
-    private n f13507k;
+    private n f14293k;
 
     /* renamed from: l, reason: collision with root package name */
-    private boolean f13508l;
+    private boolean f14294l;
 
     private al() {
     }
 
     public static al a(n nVar, String str, String str2, int i) {
         al alVar = new al();
-        alVar.f13499b = nVar.M();
-        alVar.f13501d = nVar.aJ();
-        alVar.f13498a = nVar.aI();
-        alVar.f13502e = nVar.Y();
-        alVar.f13503f = System.currentTimeMillis();
-        alVar.f13505h = i;
+        alVar.f14285b = nVar.M();
+        alVar.f14287d = nVar.aJ();
+        alVar.f14284a = nVar.aI();
+        alVar.f14288e = nVar.Y();
+        alVar.f14289f = System.currentTimeMillis();
+        alVar.f14291h = i;
         alVar.i = str;
-        alVar.f13506j = str2;
-        alVar.f13507k = nVar;
+        alVar.f14292j = str2;
+        alVar.f14293k = nVar;
         return alVar;
     }
 
     public final String b() {
-        String str = this.f13498a;
+        String str = this.f14284a;
         return str != null ? str : "";
     }
 
     public final int c() {
-        return this.f13502e;
+        return this.f14288e;
     }
 
     public final int d() {
-        return this.f13505h;
+        return this.f14291h;
     }
 
     public final String e() {
-        return this.i + "," + this.f13506j;
+        return this.i + "," + this.f14292j;
     }
 
     public final long f() {
-        return this.f13503f + this.f13504g;
+        return this.f14289f + this.f14290g;
     }
 
     public final String g() {
-        return this.f13501d;
+        return this.f14287d;
     }
 
     public final String h() {
-        return this.f13500c;
+        return this.f14286c;
     }
 
     public final n i() {
-        return this.f13507k;
+        return this.f14293k;
     }
 
     public final boolean j() {
-        return this.f13508l;
+        return this.f14294l;
     }
 
     public final String toString() {
         StringBuilder sb = new StringBuilder("DynWFAdSourceRecordEntity{placementId='");
-        sb.append(this.f13498a);
+        sb.append(this.f14284a);
         sb.append("', adSourceId='");
-        sb.append(this.f13499b);
+        sb.append(this.f14285b);
         sb.append("', requestId='");
-        sb.append(this.f13501d);
+        sb.append(this.f14287d);
         sb.append("', networkFirmId=");
-        sb.append(this.f13502e);
+        sb.append(this.f14288e);
         sb.append("', recordTimeStamp=");
-        sb.append(this.f13503f);
+        sb.append(this.f14289f);
         sb.append("', recordTimeInterval=");
-        sb.append(this.f13504g);
+        sb.append(this.f14290g);
         sb.append("', recordTimeType=");
-        sb.append(this.f13505h);
+        sb.append(this.f14291h);
         sb.append("', networkErrorCode='");
         sb.append(this.i);
         sb.append("', networkErrorMsg='");
-        sb.append(this.f13506j);
+        sb.append(this.f14292j);
         sb.append("', serverErrorCode='");
-        return u1.h.g(sb, this.f13500c, "'}");
+        return Wv.i(sb, this.f14286c, "'}");
     }
 
     public final String a() {
-        return this.f13499b;
+        return this.f14285b;
     }
 
     public final void a(long j6) {
-        this.f13504g = j6;
+        this.f14290g = j6;
     }
 
     public final void a(String str) {
-        this.f13500c = str;
+        this.f14286c = str;
     }
 
-    public final void a(boolean z3) {
-        this.f13508l = z3;
+    public final void a(boolean z6) {
+        this.f14294l = z6;
     }
 }

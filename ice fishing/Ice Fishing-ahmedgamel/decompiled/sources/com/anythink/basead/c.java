@@ -1,10 +1,10 @@
 package com.anythink.basead;
 
-import D.y;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import android.webkit.WebView;
+import com.IceFishing.LiveIceFishing.k;
 import com.anythink.basead.j.f;
 import com.anythink.core.common.d.t;
 import com.anythink.core.common.v.ac;
@@ -15,68 +15,68 @@ import java.lang.ref.WeakReference;
 public class c {
 
     /* renamed from: e, reason: collision with root package name */
-    private static volatile c f6045e;
+    private static volatile c f6831e;
 
     /* renamed from: a, reason: collision with root package name */
-    long f6046a;
+    long f6832a;
 
     /* renamed from: f, reason: collision with root package name */
-    private Context f6050f;
+    private Context f6836f;
 
     /* renamed from: h, reason: collision with root package name */
-    private volatile boolean f6052h;
+    private volatile boolean f6838h;
     private com.anythink.basead.b.a.b i;
 
     /* renamed from: j, reason: collision with root package name */
-    private com.anythink.basead.b.a.c f6053j;
+    private com.anythink.basead.b.a.c f6839j;
 
     /* renamed from: k, reason: collision with root package name */
-    private WeakReference<Activity> f6054k;
+    private WeakReference<Activity> f6840k;
 
     /* renamed from: l, reason: collision with root package name */
-    private volatile Boolean f6055l;
+    private volatile Boolean f6841l;
 
     /* renamed from: m, reason: collision with root package name */
-    private volatile Boolean f6056m;
+    private volatile Boolean f6842m;
 
     /* renamed from: n, reason: collision with root package name */
-    private volatile boolean f6057n;
+    private volatile boolean f6843n;
 
     /* renamed from: d, reason: collision with root package name */
-    private final String f6049d = getClass().getSimpleName();
+    private final String f6835d = getClass().getSimpleName();
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f6047b = false;
+    public boolean f6833b = false;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f6048c = false;
+    public boolean f6834c = false;
 
     /* renamed from: g, reason: collision with root package name */
-    private boolean f6051g = false;
+    private boolean f6837g = false;
 
     private c() {
     }
 
     private void i() {
-        if (this.f6055l != null) {
+        if (this.f6841l != null) {
             return;
         }
-        if (this.f6056m == null) {
-            com.anythink.core.d.b g4 = y.g(y.h());
-            if (!g4.S()) {
-                this.f6056m = Boolean.valueOf(g4.aS() == 1);
+        if (this.f6842m == null) {
+            com.anythink.core.d.b k9 = k.k(k.l());
+            if (!k9.S()) {
+                this.f6842m = Boolean.valueOf(k9.aS() == 1);
             }
         }
-        if (this.f6056m == null || !this.f6056m.booleanValue()) {
+        if (this.f6842m == null || !this.f6842m.booleanValue()) {
             return;
         }
         t.b().b(new Runnable() { // from class: com.anythink.basead.c.3
             @Override // java.lang.Runnable
             public final void run() {
                 WebView webView;
-                String unused = c.this.f6049d;
+                String unused = c.this.f6835d;
                 try {
-                    webView = new WebView(c.this.f6050f);
+                    webView = new WebView(c.this.f6836f);
                 } catch (Throwable unused2) {
                     webView = null;
                 }
@@ -85,18 +85,18 @@ public class c {
                         webView.destroy();
                     } catch (Throwable unused3) {
                     }
-                    c.this.f6055l = Boolean.TRUE;
+                    c.this.f6841l = Boolean.TRUE;
                 } else {
-                    c.this.f6055l = Boolean.FALSE;
+                    c.this.f6841l = Boolean.FALSE;
                 }
-                String unused4 = c.this.f6049d;
-                Boolean unused5 = c.this.f6055l;
+                String unused4 = c.this.f6835d;
+                Boolean unused5 = c.this.f6841l;
             }
         });
     }
 
     public final Activity d() {
-        WeakReference<Activity> weakReference = this.f6054k;
+        WeakReference<Activity> weakReference = this.f6840k;
         if (weakReference != null) {
             return weakReference.get();
         }
@@ -104,125 +104,125 @@ public class c {
     }
 
     public final boolean e() {
-        return this.f6052h;
+        return this.f6838h;
     }
 
     public final Context f() {
-        return this.f6050f;
+        return this.f6836f;
     }
 
     public final boolean g() {
-        if (this.f6056m != null && !this.f6056m.booleanValue()) {
+        if (this.f6842m != null && !this.f6842m.booleanValue()) {
             return true;
         }
-        com.anythink.core.d.b g4 = y.g(y.h());
-        if (g4.S()) {
+        com.anythink.core.d.b k9 = k.k(k.l());
+        if (k9.S()) {
             return true;
         }
-        this.f6056m = Boolean.valueOf(g4.aS() == 1);
-        if (!this.f6056m.booleanValue()) {
+        this.f6842m = Boolean.valueOf(k9.aS() == 1);
+        if (!this.f6842m.booleanValue()) {
             return true;
         }
         i();
-        if (this.f6055l != null) {
-            return this.f6055l.booleanValue();
+        if (this.f6841l != null) {
+            return this.f6841l.booleanValue();
         }
         return true;
     }
 
     public final boolean h() {
-        return this.f6057n;
+        return this.f6843n;
     }
 
     public final void b() {
         if (f.a().b()) {
-            ac.a().b(this.f6050f);
-            ac.a().d(this.f6050f);
-            if (ac.a().b(this.f6050f) || ac.a().d(this.f6050f)) {
+            ac.a().b(this.f6836f);
+            ac.a().d(this.f6836f);
+            if (ac.a().b(this.f6836f) || ac.a().d(this.f6836f)) {
                 t.b();
                 t.a(new Runnable() { // from class: com.anythink.basead.c.1
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ac.a().c(c.this.f6050f);
-                        ac.a().e(c.this.f6050f);
+                        ac.a().c(c.this.f6836f);
+                        ac.a().e(c.this.f6836f);
                     }
                 });
             }
         }
-        g.a().b(this.f6050f);
-        if (g.a().b(this.f6050f)) {
+        g.a().b(this.f6836f);
+        if (g.a().b(this.f6836f)) {
             t.b();
             t.a(new Runnable() { // from class: com.anythink.basead.c.2
                 @Override // java.lang.Runnable
                 public final void run() {
-                    g.a().c(c.this.f6050f);
+                    g.a().c(c.this.f6836f);
                 }
             });
         }
     }
 
     public final void c() {
-        boolean z3 = !this.f6047b && this.f6048c;
-        com.anythink.basead.b.a.c cVar = this.f6053j;
+        boolean z6 = !this.f6833b && this.f6834c;
+        com.anythink.basead.b.a.c cVar = this.f6839j;
         if (cVar != null) {
-            cVar.a(z3);
-            this.f6053j = null;
+            cVar.a(z6);
+            this.f6839j = null;
         }
-        this.f6048c = false;
-        this.f6047b = false;
+        this.f6834c = false;
+        this.f6833b = false;
     }
 
     public static c a() {
-        if (f6045e == null) {
+        if (f6831e == null) {
             synchronized (c.class) {
                 try {
-                    if (f6045e == null) {
-                        f6045e = new c();
+                    if (f6831e == null) {
+                        f6831e = new c();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f6045e;
+        return f6831e;
     }
 
     public final synchronized void a(Context context) {
         try {
-            if (this.f6051g) {
+            if (this.f6837g) {
                 return;
             }
-            this.f6051g = true;
-            this.f6050f = context.getApplicationContext();
+            this.f6837g = true;
+            this.f6836f = context.getApplicationContext();
             if (context instanceof Activity) {
                 a((Activity) context);
             } else {
                 a(t.b().N());
             }
-            this.f6052h = t.b().W();
-            this.f6057n = false;
-            ((Application) this.f6050f).registerActivityLifecycleCallbacks(new com.anythink.basead.b.a());
+            this.f6838h = t.b().W();
+            this.f6843n = false;
+            ((Application) this.f6836f).registerActivityLifecycleCallbacks(new com.anythink.basead.b.a());
             i();
         } catch (Throwable th) {
             throw th;
         }
     }
 
-    public final void a(boolean z3) {
-        if (!this.f6057n) {
-            this.f6057n = true;
+    public final void a(boolean z6) {
+        if (!this.f6843n) {
+            this.f6843n = true;
         }
-        this.f6052h = z3;
-        if (z3) {
+        this.f6838h = z6;
+        if (z6) {
             com.anythink.basead.b.a.b bVar = this.i;
             if (bVar != null) {
-                bVar.a(this.f6046a);
+                bVar.a(this.f6832a);
                 this.i = null;
                 return;
             }
             return;
         }
-        this.f6046a = System.currentTimeMillis();
+        this.f6832a = System.currentTimeMillis();
     }
 
     public final void a(com.anythink.basead.b.a.b bVar) {
@@ -230,13 +230,13 @@ public class c {
     }
 
     public final void a(com.anythink.basead.b.a.c cVar) {
-        this.f6053j = cVar;
-        this.f6047b = false;
+        this.f6839j = cVar;
+        this.f6833b = false;
     }
 
     public final void a(Activity activity) {
         if (activity != null) {
-            this.f6054k = new WeakReference<>(activity);
+            this.f6840k = new WeakReference<>(activity);
         }
     }
 }

@@ -24,48 +24,48 @@ import java.util.HashMap;
 public final class a extends b {
 
     /* renamed from: a, reason: collision with root package name */
-    String f17926a;
+    String f18713a;
 
     /* renamed from: b, reason: collision with root package name */
-    com.anythink.expressad.advanced.d.a f17927b;
+    com.anythink.expressad.advanced.d.a f18714b;
 
     /* renamed from: d, reason: collision with root package name */
-    private c f17929d;
+    private c f18716d;
 
     /* renamed from: c, reason: collision with root package name */
-    private final String f17928c = "NativeAdvancedWebViewClient";
+    private final String f18715c = "NativeAdvancedWebViewClient";
 
     /* renamed from: e, reason: collision with root package name */
-    private final String f17930e = com.anythink.core.express.a.a.b("YkRXhr5AWBPfNgzuH7JQ+2Ha");
+    private final String f18717e = com.anythink.core.express.a.a.b("YkRXhr5AWBPfNgzuH7JQ+2Ha");
 
     /* renamed from: f, reason: collision with root package name */
-    private final String f17931f = com.anythink.core.express.a.a.b("Y+xgWkl2");
+    private final String f18718f = com.anythink.core.express.a.a.b("Y+xgWkl2");
 
     public a(String str, com.anythink.expressad.advanced.d.a aVar, c cVar) {
-        this.f17926a = str;
-        this.f17927b = aVar;
-        this.f17929d = cVar;
+        this.f18713a = str;
+        this.f18714b = aVar;
+        this.f18716d = cVar;
     }
 
     private WebResourceResponse a(WebView webView, String str) {
         Uri parse;
         String scheme;
-        if (!TextUtils.isEmpty(str) && this.f17929d != null) {
+        if (!TextUtils.isEmpty(str) && this.f18716d != null) {
             try {
                 String replace = str.startsWith("file") ? str.replace("file://", "") : "";
-                if (!TextUtils.isEmpty(str) && (parse = Uri.parse(str)) != null && (scheme = parse.getScheme()) != null && !TextUtils.isEmpty(scheme) && (scheme.equals(this.f17931f) || scheme.equals("mb-h5"))) {
-                    replace = this.f17929d.a(URLDecoder.decode(Uri.parse(str).getQueryParameter("uri")));
+                if (!TextUtils.isEmpty(str) && (parse = Uri.parse(str)) != null && (scheme = parse.getScheme()) != null && !TextUtils.isEmpty(scheme) && (scheme.equals(this.f18718f) || scheme.equals("mb-h5"))) {
+                    replace = this.f18716d.a(URLDecoder.decode(Uri.parse(str).getQueryParameter("uri")));
                 }
                 Context context = webView.getContext();
                 if (context == null) {
                     context = com.anythink.expressad.foundation.b.a.c().e();
                 }
                 boolean a9 = al.a(replace, d.a(context).a(4));
-                boolean z3 = com.anythink.expressad.a.f17618a;
+                boolean z6 = com.anythink.expressad.a.f18405a;
                 if (!TextUtils.isEmpty(replace) && a9 && !replace.contains("127.0.0.1") && !replace.startsWith("http")) {
                     HashMap hashMap = new HashMap();
                     hashMap.put("Access-Control-Allow-Origin", "*");
-                    WebResourceResponse webResourceResponse = new WebResourceResponse(o.f8448e, com.anythink.expressad.foundation.g.a.bR, new FileInputStream(replace));
+                    WebResourceResponse webResourceResponse = new WebResourceResponse(o.f9234e, com.anythink.expressad.foundation.g.a.bR, new FileInputStream(replace));
                     webResourceResponse.setResponseHeaders(hashMap);
                     return webResourceResponse;
                 }
@@ -78,8 +78,8 @@ public final class a extends b {
     }
 
     public final void b() {
-        if (this.f17929d != null) {
-            this.f17929d = null;
+        if (this.f18716d != null) {
+            this.f18716d = null;
         }
     }
 
@@ -109,7 +109,7 @@ public final class a extends b {
         try {
             try {
                 WindVaneWebView windVaneWebView = (WindVaneWebView) webView;
-                if (System.currentTimeMillis() - windVaneWebView.lastTouchTime > com.anythink.expressad.b.c.a.f18198c) {
+                if (System.currentTimeMillis() - windVaneWebView.lastTouchTime > com.anythink.expressad.b.c.a.f18985c) {
                     com.anythink.expressad.foundation.d.d dVar = ((NativeAdvancedJSBridgeImpl) windVaneWebView.getObject()).getmCampaignList().get(0);
                     windVaneWebView.getUrl();
                     com.anythink.expressad.b.c.a.a(dVar);
@@ -118,7 +118,7 @@ public final class a extends b {
             } catch (Exception e9) {
                 e9.printStackTrace();
             }
-            com.anythink.expressad.advanced.d.a aVar = this.f17927b;
+            com.anythink.expressad.advanced.d.a aVar = this.f18714b;
             if (aVar == null) {
                 return true;
             }
@@ -140,6 +140,6 @@ public final class a extends b {
         if (TextUtils.isEmpty(str) || (parse = Uri.parse(str)) == null || (scheme = parse.getScheme()) == null || TextUtils.isEmpty(scheme)) {
             return false;
         }
-        return scheme.equals(this.f17931f) || scheme.equals("mb-h5");
+        return scheme.equals(this.f18718f) || scheme.equals("mb-h5");
     }
 }

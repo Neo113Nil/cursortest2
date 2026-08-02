@@ -26,7 +26,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class KE extends AbstractC1553c3 {
+public final class KE extends AbstractC1573c3 {
     public static byte[] A0k;
     public static String[] A0l = {"fr3Y9tf6ePgTPq", "pEcG", "X6n0DjY1D3c56kEYNT7NkudbHULcUpi8", "xLfqb7j3EStc", "2nglUwJ7J1gVDM", "1eQzmRPEbuFcZFemJlVYaDXjMdIAS51D", "mnsD3rfSZRPYnMaeA3V0PZWjFbonJuRI", "JvQjcWyuZKXxmxTpCuNSfYxSgxmPRmOD"};
     public static final int A0m;
@@ -48,13 +48,13 @@ public final class KE extends AbstractC1553c3 {
     public LinearLayout A0B;
     public LinearLayout A0C;
     public TextView A0D;
-    public AbstractC2005jd A0E;
-    public AbstractRunnableC1327Wc A0F;
+    public AbstractC2025jd A0E;
+    public AbstractRunnableC1347Wc A0F;
     public M6 A0G;
-    public C1469ah A0H;
+    public C1489ah A0H;
     public M3 A0I;
-    public C1557c7 A0J;
-    public C1589cd A0K;
+    public C1577c7 A0J;
+    public C1609cd A0K;
     public boolean A0L;
     public boolean A0M;
     public boolean A0N;
@@ -71,19 +71,19 @@ public final class KE extends AbstractC1553c3 {
     public boolean A0Y;
     public final Handler A0Z;
     public final View A0a;
-    public final AbstractC1092Mt A0b;
+    public final AbstractC1112Mt A0b;
     public final VI A0c;
-    public final InterfaceC1518bU A0d;
-    public final InterfaceC1531bh A0e;
-    public final C1532bi A0f;
+    public final InterfaceC1538bU A0d;
+    public final InterfaceC1551bh A0e;
+    public final C1552bi A0f;
     public final DZ A0g;
     public final Runnable A0h;
     public final boolean A0i;
     public final boolean A0j;
 
-    public static String A0I(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0k, i, i + i6);
-        int i10 = 0;
+    public static String A0I(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0k, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             String[] strArr = A0l;
@@ -93,11 +93,11 @@ public final class KE extends AbstractC1553c3 {
             String[] strArr2 = A0l;
             strArr2[3] = "BAn7g4Tg6kNh";
             strArr2[1] = "sSvO";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 34);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 34);
+            i9++;
         }
     }
 
@@ -114,8 +114,8 @@ public final class KE extends AbstractC1553c3 {
         A0p = XV.A05;
     }
 
-    public KE(C1557c7 c1557c7) {
-        super(c1557c7, true);
+    public KE(C1577c7 c1577c7) {
+        super(c1577c7, true);
         this.A02 = 0;
         this.A0L = false;
         this.A0T = false;
@@ -132,21 +132,21 @@ public final class KE extends AbstractC1553c3 {
         this.A01 = 0;
         this.A0S = false;
         this.A0Z = new Handler(Looper.getMainLooper());
-        this.A0h = new RunnableC1574cO(this);
+        this.A0h = new RunnableC1594cO(this);
         this.A0N = false;
         this.A08 = new Handler(Looper.getMainLooper());
-        this.A0A = (InputMethodManager) c1557c7.A06().getSystemService(A0I(12, 12, 29));
-        this.A0J = c1557c7;
+        this.A0A = (InputMethodManager) c1577c7.A06().getSystemService(A0I(12, 12, 29));
+        this.A0J = c1577c7;
         this.A0E = this.A0J.A05();
-        this.A0c = new VI(c1557c7.A05().A2E(), c1557c7.A07());
+        this.A0c = new VI(c1577c7.A05().A2E(), c1577c7.A07());
         this.A0g = this.A0J.A0E();
         if (this.A0g != null) {
             YB.A0K(this.A0g);
         }
         this.A0a = this.A0J.A03();
-        this.A0b = C1093Mu.A01(c1557c7.A06(), c1557c7.A07(), c1557c7.A05().A2E(), XB.A00(c1557c7.A05().A29().A0J().A05()), new HashMap(), false, true, this.A0E.A2A());
+        this.A0b = C1113Mu.A01(c1577c7.A06(), c1577c7.A07(), c1577c7.A05().A2E(), XB.A00(c1577c7.A05().A29().A0J().A05()), new HashMap(), false, true, this.A0E.A2A());
         this.A0d = new KP(this);
-        AbstractC1541br.A00(c1557c7.A06(), this, c1557c7.A05().A29().A0H().A08());
+        AbstractC1561br.A00(c1577c7.A06(), this, c1577c7.A05().A29().A0H().A08());
         setupLayoutConfiguration(false);
         A0R();
         A0N();
@@ -154,16 +154,16 @@ public final class KE extends AbstractC1553c3 {
         postDelayed(this.A0F, 1000L);
         A0V();
         this.A0e = new KG(this);
-        C0877Ek c0877Ek = this.A0J.A02() instanceof C0877Ek ? (C0877Ek) this.A0J.A02() : null;
-        this.A0f = new C1532bi(c1557c7, this.A0E, c0877Ek, this.A0J.A0C(), this.A0e, this.A0D, this.A0K, this.A0g, this.A0a);
-        if (c0877Ek != null && C1290Up.A1L(getAdContextWrapper())) {
-            AbstractC1500bC.A00(c0877Ek.getVideoImplView(), C1290Up.A1M(getAdContextWrapper()), new ViewOnClickListenerC1575cP(this));
-        } else if (c0877Ek == null && this.A09 != null && C1290Up.A1J(getAdContextWrapper())) {
-            AbstractC1500bC.A00(this.A09, C1290Up.A1K(getAdContextWrapper()), new ViewOnClickListenerC1576cQ(this));
+        C0897Ek c0897Ek = this.A0J.A02() instanceof C0897Ek ? (C0897Ek) this.A0J.A02() : null;
+        this.A0f = new C1552bi(c1577c7, this.A0E, c0897Ek, this.A0J.A0C(), this.A0e, this.A0D, this.A0K, this.A0g, this.A0a);
+        if (c0897Ek != null && C1310Up.A1L(getAdContextWrapper())) {
+            AbstractC1520bC.A00(c0897Ek.getVideoImplView(), C1310Up.A1M(getAdContextWrapper()), new ViewOnClickListenerC1595cP(this));
+        } else if (c0897Ek == null && this.A09 != null && C1310Up.A1J(getAdContextWrapper())) {
+            AbstractC1520bC.A00(this.A09, C1310Up.A1K(getAdContextWrapper()), new ViewOnClickListenerC1596cQ(this));
         }
-        this.A0i = c1557c7.A05().A1m();
-        this.A0j = c1557c7.A05().A1z();
-        getAdContextWrapper().A0F().ACI(this.A0i, this.A0j, c1557c7.A05().A2L());
+        this.A0i = c1577c7.A05().A1m();
+        this.A0j = c1577c7.A05().A1z();
+        getAdContextWrapper().A0F().ACI(this.A0i, this.A0j, c1577c7.A05().A2L());
     }
 
     public static /* synthetic */ int A03(KE ke) {
@@ -199,14 +199,14 @@ public final class KE extends AbstractC1553c3 {
     private void A0L() {
         if (this.A0E.A1e() && this.A0N) {
             this.A0N = false;
-            Map<String, String> A05 = new C1497b9().A03(null).A02(null).A05();
+            Map<String, String> A05 = new C1517b9().A03(null).A02(null).A05();
             A05.put(A0I(0, 12, 10), A0I(24, 18, 60));
             getAdEventManager().AB6(this.A0E.A2E(), A05);
         }
     }
 
     private void A0M() {
-        AbstractC1375Yb A0B;
+        AbstractC1395Yb A0B;
         if (this.A0J.A05().A1x() && (A0B = this.A0J.A0B()) != null) {
             A0B.setProgressSpinnerInvisible(false);
         }
@@ -225,10 +225,10 @@ public final class KE extends AbstractC1553c3 {
     private void A0O() {
         if (this.A0a != null) {
             YB.A0J(this.A0a);
-            RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(AbstractC1553c3.A09, AbstractC1553c3.A09);
+            RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(AbstractC1573c3.A09, AbstractC1573c3.A09);
             layoutParams.addRule(10);
             layoutParams.addRule(11);
-            layoutParams.setMargins(AbstractC1553c3.A08, this.A06, AbstractC1553c3.A08, AbstractC1553c3.A08);
+            layoutParams.setMargins(AbstractC1573c3.A08, this.A06, AbstractC1573c3.A08, AbstractC1573c3.A08);
             addView(this.A0a, layoutParams);
         }
     }
@@ -246,7 +246,7 @@ public final class KE extends AbstractC1553c3 {
     }
 
     private void A0Q() {
-        AbstractC1375Yb A0B = this.A0J.A0B();
+        AbstractC1395Yb A0B = this.A0J.A0B();
         if (A0B == null) {
             return;
         }
@@ -257,7 +257,7 @@ public final class KE extends AbstractC1553c3 {
         this.A09 = this.A0J.A02();
         if (this.A09 != null) {
             if (this.A0E.A1e()) {
-                this.A09.setOnClickListener(new ViewOnClickListenerC1577cR(this));
+                this.A09.setOnClickListener(new ViewOnClickListenerC1597cR(this));
             }
             YB.A0J(this.A09);
             YB.A0K(this.A09);
@@ -276,17 +276,17 @@ public final class KE extends AbstractC1553c3 {
         layoutParams2.setMargins(A0q, A0q / 2, A0q, this.A0g == null ? A0q : A0o);
         addView(this.A0D, layoutParams2);
         YB.A0K(this.A0D);
-        this.A0K = new C1589cd(this.A0J.A06(), getCtaButton(), this.A0J.A05(), this.A0J.A07(), this.A0J.A0C(), this.A0J.A0F(), this.A0J.A0A(), getColors(), this.A0d);
+        this.A0K = new C1609cd(this.A0J.A06(), getCtaButton(), this.A0J.A05(), this.A0J.A07(), this.A0J.A0C(), this.A0J.A0F(), this.A0J.A0A(), getColors(), this.A0d);
         this.A0K.setAutoClickTime(this.A0J.A05(), this.A0J.A0B());
         YB.A0G(1010, this.A0K);
         addView(this.A0K);
         A0U();
         A0J();
-        if (C1290Up.A17(this.A0J.A06())) {
-            View.OnClickListener onClickListener = new ViewOnClickListenerC1578cS(this);
+        if (C1310Up.A17(this.A0J.A06())) {
+            View.OnClickListener onClickListener = new ViewOnClickListenerC1598cS(this);
             this.A0C.setOnClickListener(onClickListener);
             if (this.A0J.A0B() != null) {
-                View.OnClickListener onClickListener2 = new ViewOnClickListenerC1579cT(this);
+                View.OnClickListener onClickListener2 = new ViewOnClickListenerC1599cT(this);
                 this.A0J.A0B().setCTAClickListener(onClickListener2);
             }
         }
@@ -307,21 +307,21 @@ public final class KE extends AbstractC1553c3 {
                 parentView.setPadding(0, 0, 0, 0);
             }
         }
-        if (this.A09 instanceof C0877Ek) {
-            C0877Ek c0877Ek = (C0877Ek) this.A09;
-            Iterator<InterfaceC1728eu> it = c0877Ek.getPlugins().iterator();
+        if (this.A09 instanceof C0897Ek) {
+            C0897Ek c0897Ek = (C0897Ek) this.A09;
+            Iterator<InterfaceC1748eu> it = c0897Ek.getPlugins().iterator();
             while (true) {
                 if (!it.hasNext()) {
                     break;
                 }
-                InterfaceC1728eu next = it.next();
+                InterfaceC1748eu next = it.next();
                 if (next instanceof AnonymousClass34) {
-                    c0877Ek.A0g(next);
+                    c0897Ek.A0g(next);
                     break;
                 }
             }
         }
-        addView(new C1569cJ(this.A0J.A06(), this.A0E, this.A0c, this.A0Z, this.A0J.A0C()).A0C(getRegularCtaForEndCard()));
+        addView(new C1589cJ(this.A0J.A06(), this.A0E, this.A0c, this.A0Z, this.A0J.A0C()).A0C(getRegularCtaForEndCard()));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -380,13 +380,13 @@ public final class KE extends AbstractC1553c3 {
         if (this.A0J.A06().A0E() == null) {
             this.A0J.A06().A0F().A9v();
         }
-        if (AbstractC1291Uq.A02(this.A0J.A06()) || this.A0J.A06().A0E() == null) {
+        if (AbstractC1311Uq.A02(this.A0J.A06()) || this.A0J.A06().A0E() == null) {
             m32 = new M3(this.A0J.A06(), kr);
         } else {
             m32 = new M3(this.A0J.A06(), this.A0J.A06().A0E(), kr);
         }
         this.A0I = m32;
-        this.A0I.setOnTouchListener(new ViewOnTouchListenerC1571cL(this));
+        this.A0I.setOnTouchListener(new ViewOnTouchListenerC1591cL(this));
         setUpBrowserControls(this.A0I);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, -1);
         layoutParams.weight = 0.9f;
@@ -395,16 +395,16 @@ public final class KE extends AbstractC1553c3 {
     }
 
     private void A0g(String str) {
-        Map<String, String> A05 = new C1497b9().A03(null).A02(null).A05();
+        Map<String, String> A05 = new C1517b9().A03(null).A02(null).A05();
         A05.put(A0I(0, 12, 10), str);
         this.A0c.A04(VH.A0J, A05);
         this.A0J.A0C().A4j(this.A0E.A0w());
         getAdEventManager().ABM(this.A0E.A2E(), A05);
-        if (C1290Up.A2U(this.A0J.A06())) {
+        if (C1310Up.A2U(this.A0J.A06())) {
             HashMap hashMap = new HashMap();
-            hashMap.put(AbstractC2044kH.A04, Boolean.TRUE.toString());
-            hashMap.put(AbstractC2044kH.A05, Boolean.TRUE.toString());
-            hashMap.put(AbstractC2044kH.A06, Boolean.TRUE.toString());
+            hashMap.put(AbstractC2064kH.A04, Boolean.TRUE.toString());
+            hashMap.put(AbstractC2064kH.A05, Boolean.TRUE.toString());
+            hashMap.put(AbstractC2064kH.A06, Boolean.TRUE.toString());
             getAdEventManager().ABn(this.A0E.A2E(), hashMap);
         }
     }
@@ -425,13 +425,13 @@ public final class KE extends AbstractC1553c3 {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void A0i(boolean z3) {
-        if (!z3 && A0m()) {
+    public void A0i(boolean z6) {
+        if (!z6 && A0m()) {
             return;
         }
-        this.A0M = z3;
+        this.A0M = z6;
         ObjectAnimator objectAnimator = null;
-        if (!z3) {
+        if (!z6) {
             this.A08.removeCallbacksAndMessages(null);
         } else {
             this.A01 = 0;
@@ -444,16 +444,16 @@ public final class KE extends AbstractC1553c3 {
             A0M();
         }
         if (!this.A0S) {
-            postDelayed(new KQ(this, z3), 250L);
+            postDelayed(new KQ(this, z6), 250L);
         }
         String A0I = A0I(48, 1, 26);
-        if (z3) {
+        if (z6) {
             objectAnimator = ObjectAnimator.ofFloat(this.A0K, A0I, this.A0K.getY(), this.A04 / 5);
         }
         LinearLayout linearLayout = this.A0B;
         float y7 = this.A0B.getY();
         int i = this.A04;
-        if (z3) {
+        if (z6) {
             i /= 5;
         }
         ObjectAnimator ofFloat = ObjectAnimator.ofFloat(linearLayout, A0I, y7, i);
@@ -462,12 +462,12 @@ public final class KE extends AbstractC1553c3 {
             ObjectAnimator ofFloat2 = ObjectAnimator.ofFloat(this.A09, A0I, this.A09.getY(), 0.0f);
             ofFloat2.setDuration(500L);
             int height = this.A09.getHeight();
-            int i6 = this.A04;
-            if (z3) {
-                i6 /= 5;
+            int i4 = this.A04;
+            if (z6) {
+                i4 /= 5;
             }
-            ValueAnimator duration = ValueAnimator.ofInt(height, i6).setDuration(500L);
-            duration.addUpdateListener(new C1572cM(this));
+            ValueAnimator duration = ValueAnimator.ofInt(height, i4).setDuration(500L);
+            duration.addUpdateListener(new C1592cM(this));
             AnimatorSet animatorSet = new AnimatorSet();
             animatorSet.setInterpolator(new AccelerateDecelerateInterpolator());
             animatorSet.playTogether(ofFloat, ofFloat2, duration);
@@ -475,9 +475,9 @@ public final class KE extends AbstractC1553c3 {
                 objectAnimator.setDuration(500L);
                 animatorSet.playTogether(objectAnimator);
             }
-            animatorSet.addListener(new C1573cN(this, z3));
+            animatorSet.addListener(new C1593cN(this, z6));
             if (this.A0j) {
-                boolean z6 = this.A09 instanceof C0877Ek;
+                boolean z9 = this.A09 instanceof C0897Ek;
                 String[] strArr = A0l;
                 if (strArr[6].charAt(18) != strArr[5].charAt(18)) {
                     throw new RuntimeException();
@@ -485,23 +485,23 @@ public final class KE extends AbstractC1553c3 {
                 String[] strArr2 = A0l;
                 strArr2[3] = "kmPKPZPxIo82";
                 strArr2[1] = "o2de";
-                if (z6) {
-                    ((C0877Ek) this.A09).A0c(animatorSet, z3);
+                if (z9) {
+                    ((C0897Ek) this.A09).A0c(animatorSet, z6);
                 }
             }
             animatorSet.start();
         }
     }
 
-    private void A0j(boolean z3) {
+    private void A0j(boolean z6) {
         RelativeLayout.LayoutParams layoutParams;
-        setupLayoutConfiguration(z3);
+        setupLayoutConfiguration(z6);
         YB.A0J(this.A09);
         if (this.A09 == null) {
             this.A09 = this.A0J.A02();
             YB.A0K(this.A09);
         }
-        boolean z6 = this.A0M;
+        boolean z9 = this.A0M;
         String[] strArr = A0l;
         if (strArr[6].charAt(18) != strArr[5].charAt(18)) {
             throw new RuntimeException();
@@ -509,13 +509,13 @@ public final class KE extends AbstractC1553c3 {
         String[] strArr2 = A0l;
         strArr2[2] = "vsQMzuL85pElT0uyLkCOYkbLp6FYZ6Kp";
         strArr2[7] = "Jg0wEDfumSgIDDBadFZcUW5HjHx0Xq4t";
-        if (z6) {
+        if (z9) {
             layoutParams = new RelativeLayout.LayoutParams(-1, this.A04 / 5);
             layoutParams.addRule(14);
             layoutParams.addRule(10);
         } else {
             layoutParams = new RelativeLayout.LayoutParams(-1, -2);
-            if (C1290Up.A1J(getAdContextWrapper()) && getResources().getConfiguration().orientation == 2 && !(this.A09 instanceof C0877Ek)) {
+            if (C1310Up.A1J(getAdContextWrapper()) && getResources().getConfiguration().orientation == 2 && !(this.A09 instanceof C0897Ek)) {
                 layoutParams = new RelativeLayout.LayoutParams(-2, -1);
             }
             layoutParams.addRule(13);
@@ -529,10 +529,10 @@ public final class KE extends AbstractC1553c3 {
         A0U();
     }
 
-    private void A0k(boolean z3, int i) {
+    private void A0k(boolean z6, int i) {
         if (this.A0G != null && this.A0i) {
-            this.A0G.setCloseButtonVisibility(z3 ? 0 : 4);
-            C1840gi adContextWrapper = getAdContextWrapper();
+            this.A0G.setCloseButtonVisibility(z6 ? 0 : 4);
+            C1860gi adContextWrapper = getAdContextWrapper();
             String[] strArr = A0l;
             if (strArr[4].length() != strArr[0].length()) {
                 throw new RuntimeException();
@@ -540,7 +540,7 @@ public final class KE extends AbstractC1553c3 {
             String[] strArr2 = A0l;
             strArr2[4] = "GBT9VwLYKrAlXj";
             strArr2[0] = "vffPPOX2qjrj4g";
-            adContextWrapper.A0F().ACG(!z3, i);
+            adContextWrapper.A0F().ACG(!z6, i);
         }
     }
 
@@ -552,28 +552,28 @@ public final class KE extends AbstractC1553c3 {
         return this.A0i && this.A0W;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
-    public final EnumC1089Mq A1B(String str) {
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
+    public final EnumC1109Mq A1B(String str) {
         return this.A0K.A02(str);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final void A1C() {
         this.A0Z.removeCallbacksAndMessages(null);
         A0L();
         super.A1C();
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final void A1D() {
-        AbstractC1375Yb A0B = this.A0J.A0B();
+        AbstractC1395Yb A0B = this.A0J.A0B();
         if (A0B != null) {
             A0B.setPageDetailsVisible((A1Q() || A0B.A0E()) ? false : true);
         }
         this.A0X = false;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final void A1E() {
         if (this.A0J.A0B() != null) {
             this.A0J.A0B().setPageDetailsVisible(false);
@@ -581,14 +581,14 @@ public final class KE extends AbstractC1553c3 {
         this.A0X = true;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final void A1F() {
         this.A0V = false;
         this.A0W = false;
         A0k(true, 3);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final void A1G() {
         this.A0V = this.A0E.A29().A0H().A04() > 0;
         this.A0W = true;
@@ -598,19 +598,19 @@ public final class KE extends AbstractC1553c3 {
     /* JADX WARN: Removed duplicated region for block: B:12:0x005d  */
     /* JADX WARN: Removed duplicated region for block: B:16:0x0062  */
     /* JADX WARN: Removed duplicated region for block: B:9:0x0052  */
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void A1H(NR nr, String str, double d2, Bundle bundle) {
-        super.A1H(nr, str, d2, bundle);
+    public final void A1H(NR nr, String str, double d9, Bundle bundle) {
+        super.A1H(nr, str, d9, bundle);
         this.A0K.setCta(this.A0E.A29().A0J(), this.A0E.A2E(), new HashMap<>(), this.A0d);
         String A0F = nr.A0I().A0F();
         if (A0F != null) {
             String description = A0F.trim();
             if (description.length() != 0) {
                 this.A0D.setText(A0F);
-                if (C1290Up.A17(this.A0J.A06())) {
+                if (C1310Up.A17(this.A0J.A06())) {
                     LinearLayout linearLayout = this.A0C;
                     String[] strArr = A0l;
                     if (strArr[2].charAt(25) == strArr[7].charAt(25)) {
@@ -621,22 +621,22 @@ public final class KE extends AbstractC1553c3 {
                     strArr2[1] = "I37n";
                     linearLayout.setClickable(true);
                 }
-                if (d2 > 0.0d) {
-                    this.A02 = (int) (this.A05 / d2);
+                if (d9 > 0.0d) {
+                    this.A02 = (int) (this.A05 / d9);
                 }
                 this.A02 = !this.A0L ? this.A03 : this.A02;
             }
         }
         YB.A0O(this.A0C, 8);
-        if (C1290Up.A17(this.A0J.A06())) {
+        if (C1310Up.A17(this.A0J.A06())) {
             this.A0C.setClickable(false);
         }
-        if (d2 > 0.0d) {
+        if (d9 > 0.0d) {
         }
         this.A02 = !this.A0L ? this.A03 : this.A02;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final void A1I(C4K c4k) {
         super.A1I(c4k);
         if (this.A0E.A29().A0K().A04() && !A1Q()) {
@@ -644,18 +644,18 @@ public final class KE extends AbstractC1553c3 {
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final boolean A1N() {
         return !A1Q();
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final boolean A1O() {
         return true;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
-    public final boolean A1P(boolean z3) {
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
+    public final boolean A1P(boolean z6) {
         if (A1Q()) {
             getAdContextWrapper().A0F().ACF();
             A0i(false);
@@ -668,8 +668,8 @@ public final class KE extends AbstractC1553c3 {
         }
         if (this.A0E.A29().A0K().A04()) {
             getAdContextWrapper().A0F().ACK();
-            if (this.A09 instanceof C0877Ek) {
-                C0877Ek simpleVideoView = (C0877Ek) this.A09;
+            if (this.A09 instanceof C0897Ek) {
+                C0897Ek simpleVideoView = (C0897Ek) this.A09;
                 simpleVideoView.A0h(true);
             }
             A0S();
@@ -683,7 +683,7 @@ public final class KE extends AbstractC1553c3 {
         return this.A0M;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public int getCloseButtonStyle() {
         if (A1Q()) {
             return A0m() ? 2 : 3;
@@ -706,17 +706,17 @@ public final class KE extends AbstractC1553c3 {
         return super.getCloseButtonStyle();
     }
 
-    private ViewOnClickListenerC1038Kr getRegularCtaForEndCard() {
-        ViewOnClickListenerC1038Kr viewOnClickListenerC1038Kr = new ViewOnClickListenerC1038Kr(getAdContextWrapper(), this.A0J.A05().A0w(), this.A0E.A28().A01(), getAdEventManager(), this.A0J.A0C(), (C1785fp) null, this.A0J.A0A(), this.A0E.A2A());
-        viewOnClickListenerC1038Kr.setViewShowsOverMedia(true);
-        YB.A0K(viewOnClickListenerC1038Kr);
-        viewOnClickListenerC1038Kr.setText(this.A0E.A29().A0J().A04());
-        YB.A0G(1001, viewOnClickListenerC1038Kr);
-        viewOnClickListenerC1038Kr.setCta(this.A0E.A29().A0J(), this.A0E.A2E(), new HashMap(), null);
-        return viewOnClickListenerC1038Kr;
+    private ViewOnClickListenerC1058Kr getRegularCtaForEndCard() {
+        ViewOnClickListenerC1058Kr viewOnClickListenerC1058Kr = new ViewOnClickListenerC1058Kr(getAdContextWrapper(), this.A0J.A05().A0w(), this.A0E.A28().A01(), getAdEventManager(), this.A0J.A0C(), (C1805fp) null, this.A0J.A0A(), this.A0E.A2A());
+        viewOnClickListenerC1058Kr.setViewShowsOverMedia(true);
+        YB.A0K(viewOnClickListenerC1058Kr);
+        viewOnClickListenerC1058Kr.setText(this.A0E.A29().A0J().A04());
+        YB.A0G(1001, viewOnClickListenerC1058Kr);
+        viewOnClickListenerC1058Kr.setCta(this.A0E.A29().A0J(), this.A0E.A2E(), new HashMap(), null);
+        return viewOnClickListenerC1058Kr;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3, android.view.View
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3, android.view.View
     public final void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
         A0j(A1Q());
@@ -740,14 +740,14 @@ public final class KE extends AbstractC1553c3 {
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
-    public void setChainedWatchAndBrowseSkippableStatus(boolean z3) {
-        this.A0W = !z3;
-        A0k(z3, 4);
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
+    public void setChainedWatchAndBrowseSkippableStatus(boolean z6) {
+        this.A0W = !z6;
+        A0k(z6, 4);
     }
 
-    public void setChildChainedAd(boolean z3) {
-        this.A0S = z3;
+    public void setChildChainedAd(boolean z6) {
+        this.A0S = z6;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -775,10 +775,10 @@ public final class KE extends AbstractC1553c3 {
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, -2);
         layoutParams.weight = 0.1f;
         this.A0G.setListener(new KS(this));
-        this.A0G.setOnTouchListener(new ViewOnTouchListenerC1570cK(this));
+        this.A0G.setOnTouchListener(new ViewOnTouchListenerC1590cK(this));
         this.A0B.addView(this.A0G, layoutParams);
         YB.A0J(this.A0H);
-        this.A0H = new C1469ah(this.A0J.A06(), null, R.attr.progressBarStyleHorizontal);
+        this.A0H = new C1489ah(this.A0J.A06(), null, R.attr.progressBarStyleHorizontal);
         this.A0B.addView(this.A0H, new LinearLayout.LayoutParams(-1, A0m));
     }
 
@@ -789,10 +789,10 @@ public final class KE extends AbstractC1553c3 {
         }
     }
 
-    private void setupLayoutConfiguration(boolean z3) {
+    private void setupLayoutConfiguration(boolean z6) {
         this.A0L = getResources().getConfiguration().orientation == 2;
         this.A06 = this.A0J.A0B() != null ? this.A0J.A0B().getToolbarHeight() : 0;
-        this.A0M = z3;
+        this.A0M = z6;
         this.A03 = Resources.getSystem().getDisplayMetrics().heightPixels;
         this.A05 = Resources.getSystem().getDisplayMetrics().widthPixels;
         Point point = new Point();

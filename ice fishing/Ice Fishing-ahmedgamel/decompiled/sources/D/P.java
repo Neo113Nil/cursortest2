@@ -1,5 +1,8 @@
 package D;
 
+import android.content.Intent;
+
 /* loaded from: classes.dex */
-public abstract class P {
+public interface P {
+    Intent getSupportParentActivityIntent();
 }

@@ -6,9 +6,9 @@ import F5.o;
 import I7.l;
 import I7.p;
 import Q7.k;
-import S7.AbstractC0406y;
+import S7.AbstractC0410y;
 import S7.F;
-import S7.InterfaceC0404w;
+import S7.InterfaceC0408w;
 import S7.o0;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -20,7 +20,7 @@ import java.util.concurrent.CopyOnWriteArraySet;
 import kotlin.jvm.internal.i;
 import u7.v;
 import x4.f;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class b {
@@ -30,7 +30,7 @@ public final class b {
     public static final b INSTANCE = new b();
     private static final CopyOnWriteArraySet<M4.b> logListeners = new CopyOnWriteArraySet<>();
     private static volatile l shouldSendLogLevel = c.INSTANCE;
-    private static final InterfaceC0404w otelLoggingScope = AbstractC0406y.b(A8.b.r(new o0(), F.f2915a));
+    private static final InterfaceC0408w otelLoggingScope = AbstractC0410y.b(A8.b.t(new o0(), F.f2998a));
     private static M4.c logLevel = M4.c.WARN;
     private static M4.c visualLogLevel = M4.c.NONE;
 
@@ -42,8 +42,8 @@ public final class b {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public a(e eVar, M4.c cVar, String str, Throwable th, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public a(e eVar, M4.c cVar, String str, Throwable th, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$telemetry = eVar;
             this.$level = cVar;
             this.$message = str;
@@ -51,23 +51,23 @@ public final class b {
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return new a(this.$telemetry, this.$level, this.$message, this.$throwable, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return new a(this.$telemetry, this.$level, this.$message, this.$throwable, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((a) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((a) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             try {
                 if (i == 0) {
-                    com.bumptech.glide.d.k(obj);
-                    o oVar = o.f991a;
+                    Q3.b.s(obj);
+                    o oVar = o.f1017a;
                     e eVar = this.$telemetry;
                     String name = this.$level.name();
                     String str = this.$message;
@@ -76,21 +76,21 @@ public final class b {
                     Throwable th2 = this.$throwable;
                     String message = th2 != null ? th2.getMessage() : null;
                     Throwable th3 = this.$throwable;
-                    String P8 = th3 != null ? X2.e.P(th3) : null;
+                    String w3 = th3 != null ? A8.b.w(th3) : null;
                     this.label = 1;
-                    if (oVar.a(eVar, name, str, name2, message, P8, this) == aVar) {
+                    if (oVar.a(eVar, name, str, name2, message, w3, this) == aVar) {
                         return aVar;
                     }
                 } else {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
             } catch (Throwable th4) {
                 Log.e("OneSignal", "Failed to log to Otel: " + th4.getMessage(), th4);
             }
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
@@ -129,35 +129,35 @@ public final class b {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public d(M4.c cVar, String str, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public d(M4.c cVar, String str, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$level = cVar;
             this.$finalFullMessage = str;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return new d(this.$level, this.$finalFullMessage, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return new d(this.$level, this.$finalFullMessage, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             f applicationService = b.INSTANCE.getApplicationService();
             Activity current = applicationService != null ? applicationService.getCurrent() : null;
             if (current != null) {
                 new AlertDialog.Builder(current).setTitle(this.$level.toString()).setMessage(this.$finalFullMessage).show();
             }
-            return v.f41353a;
+            return v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((d) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((d) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -284,7 +284,7 @@ public final class b {
         if (eVar == null || cVar == M4.c.NONE || !((Boolean) shouldSendLogLevel.invoke(cVar)).booleanValue()) {
             return;
         }
-        AbstractC0406y.o(otelLoggingScope, null, new a(eVar, cVar, str, th, null), 3);
+        AbstractC0410y.o(otelLoggingScope, null, new a(eVar, cVar, str, th, null), 3);
     }
 
     public static final void setLogLevel(M4.c cVar) {
@@ -309,14 +309,14 @@ public final class b {
             return;
         }
         try {
-            String H8 = k.H(str + '\n');
+            String X8 = k.X(str + '\n');
             if (th != null) {
-                String str2 = H8 + th.getMessage();
+                String str2 = X8 + th.getMessage();
                 StringWriter stringWriter = new StringWriter();
                 th.printStackTrace(new PrintWriter(stringWriter));
-                H8 = str2 + stringWriter;
+                X8 = str2 + stringWriter;
             }
-            com.onesignal.common.threading.c.suspendifyOnMain(new d(cVar, H8, null));
+            com.onesignal.common.threading.c.suspendifyOnMain(new d(cVar, X8, null));
         } catch (Throwable th2) {
             Log.e("OneSignal", "Error showing logging message.", th2);
         }

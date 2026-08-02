@@ -9,7 +9,7 @@ import com.anythink.core.api.BaseAd;
 
 /* loaded from: classes.dex */
 public interface g extends ATNativeAdInfo {
-    View a(int i, int i6, ATShakeViewListener aTShakeViewListener);
+    View a(int i, int i4, ATShakeViewListener aTShakeViewListener);
 
     BaseAd a();
 

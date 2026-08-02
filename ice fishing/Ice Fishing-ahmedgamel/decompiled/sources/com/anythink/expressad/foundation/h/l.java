@@ -13,28 +13,28 @@ import org.json.JSONObject;
 public final class l {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f19638a = 0;
+    public static final int f20425a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f19639b = 1;
+    public static final int f20426b = 1;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f19640c = "mbridge.msdk.db";
+    public static final String f20427c = "mbridge.msdk.db";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f19641d = 30000;
+    public static final int f20428d = 30000;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f19642e = 60000;
+    public static final int f20429e = 60000;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final int f19643f = 60000;
+    public static final int f20430f = 60000;
 
     /* renamed from: g, reason: collision with root package name */
-    public static final int f19644g = 60000;
+    public static final int f20431g = 60000;
 
     /* renamed from: h, reason: collision with root package name */
-    private static final String f19645h = "SameCommon";
+    private static final String f20432h = "SameCommon";
 
     public static abstract class a {
         public abstract void a();
@@ -58,7 +58,7 @@ public final class l {
             try {
                 eVar = new com.anythink.expressad.foundation.g.g.a.e();
             } catch (Exception e9) {
-                if (com.anythink.expressad.a.f17618a) {
+                if (com.anythink.expressad.a.f18405a) {
                     e9.printStackTrace();
                     return;
                 }
@@ -83,15 +83,15 @@ public final class l {
             fVar.a(com.anythink.expressad.foundation.g.g.a.b.aZ, Integer.valueOf(i));
             if (a9) {
                 if (b9 == 1) {
-                    eVar.a(com.anythink.expressad.foundation.g.g.a.c.f19472Q, fVar);
+                    eVar.a(com.anythink.expressad.foundation.g.g.a.c.f20259Q, fVar);
                 }
-                eVar.a(com.anythink.expressad.foundation.g.g.a.c.f19474S, fVar);
+                eVar.a(com.anythink.expressad.foundation.g.g.a.c.f20261S, fVar);
                 return;
             } else {
                 if (b9 != 1) {
-                    eVar.a(com.anythink.expressad.foundation.g.g.a.c.f19472Q, fVar);
+                    eVar.a(com.anythink.expressad.foundation.g.g.a.c.f20259Q, fVar);
                 }
-                eVar.a(com.anythink.expressad.foundation.g.g.a.c.f19473R, fVar);
+                eVar.a(com.anythink.expressad.foundation.g.g.a.c.f20260R, fVar);
                 return;
             }
         }
@@ -211,7 +211,7 @@ public final class l {
             try {
                 eVar = new com.anythink.expressad.foundation.g.g.a.e();
             } catch (Exception e9) {
-                if (com.anythink.expressad.a.f17618a) {
+                if (com.anythink.expressad.a.f18405a) {
                     e9.printStackTrace();
                     return;
                 }
@@ -236,15 +236,15 @@ public final class l {
             fVar.a(com.anythink.expressad.foundation.g.g.a.b.aZ, Integer.valueOf(i));
             if (!a9) {
                 if (b9 != 1) {
-                    eVar.a(com.anythink.expressad.foundation.g.g.a.c.f19472Q, fVar);
+                    eVar.a(com.anythink.expressad.foundation.g.g.a.c.f20259Q, fVar);
                 }
-                eVar.a(com.anythink.expressad.foundation.g.g.a.c.f19473R, fVar);
+                eVar.a(com.anythink.expressad.foundation.g.g.a.c.f20260R, fVar);
                 return;
             } else {
                 if (b9 == 1) {
-                    eVar.a(com.anythink.expressad.foundation.g.g.a.c.f19472Q, fVar);
+                    eVar.a(com.anythink.expressad.foundation.g.g.a.c.f20259Q, fVar);
                 }
-                eVar.a(com.anythink.expressad.foundation.g.g.a.c.f19474S, fVar);
+                eVar.a(com.anythink.expressad.foundation.g.g.a.c.f20261S, fVar);
                 return;
             }
         }

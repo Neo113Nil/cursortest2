@@ -9,7 +9,7 @@ import android.widget.FrameLayout;
 public class AnyThinkFramLayout extends FrameLayout {
 
     /* renamed from: a, reason: collision with root package name */
-    private AnimatorSet f21356a;
+    private AnimatorSet f22143a;
 
     public AnyThinkFramLayout(Context context) {
         super(context);
@@ -18,7 +18,7 @@ public class AnyThinkFramLayout extends FrameLayout {
     @Override // android.view.ViewGroup, android.view.View
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        AnimatorSet animatorSet = this.f21356a;
+        AnimatorSet animatorSet = this.f22143a;
         if (animatorSet != null) {
             try {
                 animatorSet.start();
@@ -31,7 +31,7 @@ public class AnyThinkFramLayout extends FrameLayout {
     @Override // android.view.ViewGroup, android.view.View
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        AnimatorSet animatorSet = this.f21356a;
+        AnimatorSet animatorSet = this.f22143a;
         if (animatorSet != null) {
             try {
                 animatorSet.cancel();
@@ -42,7 +42,7 @@ public class AnyThinkFramLayout extends FrameLayout {
     }
 
     public void setAnimatorSet(AnimatorSet animatorSet) {
-        this.f21356a = animatorSet;
+        this.f22143a = animatorSet;
     }
 
     public AnyThinkFramLayout(Context context, AttributeSet attributeSet) {

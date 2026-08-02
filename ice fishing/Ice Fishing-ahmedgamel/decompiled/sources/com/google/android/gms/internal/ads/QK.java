@@ -8,13 +8,13 @@ import java.util.Map;
 public final class QK {
 
     /* renamed from: c, reason: collision with root package name */
-    public static final /* synthetic */ int f27020c = 0;
+    public static final /* synthetic */ int f27807c = 0;
 
     /* renamed from: a, reason: collision with root package name */
-    public final FL f27021a = new FL();
+    public final FL f27808a = new FL();
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f27022b;
+    public boolean f27809b;
 
     static {
         new QK(0);
@@ -24,20 +24,20 @@ public final class QK {
     }
 
     public static void b(OK ok, SL sl, int i, Object obj) {
-        if (sl == SL.f27473w) {
+        if (sl == SL.f28186w) {
             ok.Y(i, 3);
-            ((VK) ((AbstractC4263zK) obj)).v(ok);
+            ((VK) ((AbstractC4286zK) obj)).v(ok);
             ok.Y(i, 4);
             return;
         }
-        ok.Y(i, sl.f27477u);
-        TL tl = TL.f27725n;
+        ok.Y(i, sl.f28190u);
+        TL tl = TL.f28508n;
         switch (sl.ordinal()) {
             case 0:
                 ok.O1(Double.doubleToRawLongBits(((Double) obj).doubleValue()));
                 break;
             case 1:
-                ok.K1(Float.floatToRawIntBits(((Float) obj).floatValue()));
+                ok.L1(Float.floatToRawIntBits(((Float) obj).floatValue()));
                 break;
             case 2:
                 ok.N1(((Long) obj).longValue());
@@ -46,13 +46,13 @@ public final class QK {
                 ok.N1(((Long) obj).longValue());
                 break;
             case 4:
-                ok.G1(((Integer) obj).intValue());
+                ok.H1(((Integer) obj).intValue());
                 break;
             case 5:
                 ok.O1(((Long) obj).longValue());
                 break;
             case 6:
-                ok.K1(((Integer) obj).intValue());
+                ok.L1(((Integer) obj).intValue());
                 break;
             case 7:
                 ok.E1(((Boolean) obj).booleanValue() ? (byte) 1 : (byte) 0);
@@ -66,10 +66,10 @@ public final class QK {
                     break;
                 }
             case 9:
-                ((VK) ((AbstractC4263zK) obj)).v(ok);
+                ((VK) ((AbstractC4286zK) obj)).v(ok);
                 break;
             case 10:
-                ok.D1((AbstractC4263zK) obj);
+                ok.D1((AbstractC4286zK) obj);
                 break;
             case 11:
                 if (!(obj instanceof JK)) {
@@ -81,25 +81,25 @@ public final class QK {
                     break;
                 }
             case 12:
-                ok.I1(((Integer) obj).intValue());
+                ok.J1(((Integer) obj).intValue());
                 break;
             case 13:
                 if (!(obj instanceof XK)) {
-                    ok.G1(((Integer) obj).intValue());
+                    ok.H1(((Integer) obj).intValue());
                     break;
                 } else {
-                    ok.G1(((XK) obj).c());
+                    ok.H1(((XK) obj).c());
                     break;
                 }
             case 14:
-                ok.K1(((Integer) obj).intValue());
+                ok.L1(((Integer) obj).intValue());
                 break;
             case 15:
                 ok.O1(((Long) obj).longValue());
                 break;
             case 16:
                 int intValue = ((Integer) obj).intValue();
-                ok.I1((intValue >> 31) ^ (intValue + intValue));
+                ok.J1((intValue >> 31) ^ (intValue + intValue));
                 break;
             case 17:
                 long longValue = ((Long) obj).longValue();
@@ -109,13 +109,13 @@ public final class QK {
     }
 
     public final void a() {
-        if (this.f27022b) {
+        if (this.f27809b) {
             return;
         }
-        FL fl = this.f27021a;
-        int i = fl.f24791u;
-        for (int i6 = 0; i6 < i; i6++) {
-            Object obj = fl.a(i6).f24968n;
+        FL fl = this.f27808a;
+        int i = fl.f25547u;
+        for (int i4 = 0; i4 < i; i4++) {
+            Object obj = fl.a(i4).f25758n;
             if (obj instanceof VK) {
                 ((VK) obj).q();
             }
@@ -127,8 +127,8 @@ public final class QK {
                 ((VK) value).q();
             }
         }
-        if (!fl.f24793w) {
-            if (fl.f24791u > 0) {
+        if (!fl.f25549w) {
+            if (fl.f25547u > 0) {
                 fl.a(0).getClass();
                 throw null;
             }
@@ -138,21 +138,21 @@ public final class QK {
                 throw new ClassCastException();
             }
         }
-        if (!fl.f24793w) {
-            fl.f24792v = fl.f24792v.isEmpty() ? Collections.EMPTY_MAP : Collections.unmodifiableMap(fl.f24792v);
-            fl.f24795y = fl.f24795y.isEmpty() ? Collections.EMPTY_MAP : Collections.unmodifiableMap(fl.f24795y);
-            fl.f24793w = true;
+        if (!fl.f25549w) {
+            fl.f25548v = fl.f25548v.isEmpty() ? Collections.EMPTY_MAP : Collections.unmodifiableMap(fl.f25548v);
+            fl.f25551y = fl.f25551y.isEmpty() ? Collections.EMPTY_MAP : Collections.unmodifiableMap(fl.f25551y);
+            fl.f25549w = true;
         }
-        this.f27022b = true;
+        this.f27809b = true;
     }
 
     public final Object clone() {
         QK qk = new QK();
-        FL fl = this.f27021a;
-        if (fl.f24791u > 0) {
+        FL fl = this.f27808a;
+        if (fl.f25547u > 0) {
             GL a9 = fl.a(0);
             a9.getClass();
-            Object obj = a9.f24968n;
+            Object obj = a9.f25758n;
             throw null;
         }
         Iterator it = fl.b().iterator();
@@ -172,13 +172,13 @@ public final class QK {
             return true;
         }
         if (obj instanceof QK) {
-            return this.f27021a.equals(((QK) obj).f27021a);
+            return this.f27808a.equals(((QK) obj).f27808a);
         }
         return false;
     }
 
     public final int hashCode() {
-        return this.f27021a.hashCode();
+        return this.f27808a.hashCode();
     }
 
     public QK(int i) {

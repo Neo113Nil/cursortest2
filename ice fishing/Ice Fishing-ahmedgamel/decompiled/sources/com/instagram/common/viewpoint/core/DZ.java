@@ -12,7 +12,7 @@ import android.widget.RelativeLayout;
 import java.util.Arrays;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class DZ extends RelativeLayout implements InterfaceC1728eu {
+public final class DZ extends RelativeLayout implements InterfaceC1748eu {
     public static byte[] A0B;
     public static String[] A0C = {"QrML4Ecz92sfYCeCtaSnFCosFmipGlTz", "VhmrcYjsqpOA7Iy", "ZK9HRS350jRidth", "ZjYoflRzQYTDfI0m0JAvuVl9vp7GlkSu", "MmC", "ZvQ3uBw3DQ7M1xesozkO3pU9", "XD5i8EmzP8U96tjWoOsk6YaJBmNCgDM7", "cjtQcAKtxYCLU"};
     public static final int A0D;
@@ -20,7 +20,7 @@ public final class DZ extends RelativeLayout implements InterfaceC1728eu {
     public int A00;
     public int A01;
     public ObjectAnimator A02;
-    public C0877Ek A03;
+    public C0897Ek A03;
     public boolean A04;
     public boolean A05;
     public final ProgressBar A06;
@@ -29,10 +29,10 @@ public final class DZ extends RelativeLayout implements InterfaceC1728eu {
     public final UN A09;
     public final UN A0A;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0B, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 83);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0B, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 83);
         }
         return new String(copyOfRange);
     }
@@ -52,27 +52,27 @@ public final class DZ extends RelativeLayout implements InterfaceC1728eu {
         A0E = (int) (XX.A02 * 6.0f);
     }
 
-    public DZ(C1840gi c1840gi, int i) {
-        this(c1840gi, A0E, -12549889, 0, i);
+    public DZ(C1860gi c1860gi, int i) {
+        this(c1860gi, A0E, -12549889, 0, i);
     }
 
-    public DZ(C1840gi c1840gi, int i, int i6) {
-        this(c1840gi, i6, -12549889, 0, i);
+    public DZ(C1860gi c1860gi, int i, int i4) {
+        this(c1860gi, i4, -12549889, 0, i);
     }
 
-    public DZ(C1840gi c1840gi, int i, int i6, int i9, int i10) {
-        super(c1840gi);
+    public DZ(C1860gi c1860gi, int i, int i4, int i6, int i9) {
+        super(c1860gi);
         this.A04 = false;
         this.A01 = -1;
         this.A05 = true;
-        this.A0A = new AbstractC0866Dz() { // from class: com.facebook.ads.redexgen.X.33
+        this.A0A = new AbstractC0886Dz() { // from class: com.facebook.ads.redexgen.X.33
             /* JADX INFO: Access modifiers changed from: private */
             @Override // com.instagram.common.viewpoint.core.UN
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final void A03(C4A c4a) {
-                C0877Ek c0877Ek;
-                c0877Ek = DZ.this.A03;
-                if (c0877Ek != null) {
+                C0897Ek c0897Ek;
+                c0897Ek = DZ.this.A03;
+                if (c0897Ek != null) {
                     DZ.this.A09(true);
                 }
             }
@@ -90,9 +90,9 @@ public final class DZ extends RelativeLayout implements InterfaceC1728eu {
             @Override // com.instagram.common.viewpoint.core.UN
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final void A03(E3 e32) {
-                C0877Ek c0877Ek;
-                c0877Ek = DZ.this.A03;
-                if (c0877Ek != null) {
+                C0897Ek c0897Ek;
+                c0897Ek = DZ.this.A03;
+                if (c0897Ek != null) {
                     DZ.this.A09(true);
                 }
             }
@@ -102,21 +102,21 @@ public final class DZ extends RelativeLayout implements InterfaceC1728eu {
             @Override // com.instagram.common.viewpoint.core.UN
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final void A03(C4K c4k) {
-                C0877Ek c0877Ek;
-                boolean z3;
-                c0877Ek = DZ.this.A03;
-                if (c0877Ek == null) {
+                C0897Ek c0897Ek;
+                boolean z6;
+                c0897Ek = DZ.this.A03;
+                if (c0897Ek == null) {
                     return;
                 }
-                z3 = DZ.this.A05;
-                if (z3) {
+                z6 = DZ.this.A05;
+                if (z6) {
                     DZ.this.A06();
                 }
             }
         };
-        this.A00 = i10;
-        this.A06 = new ProgressBar(c1840gi, null, R.attr.progressBarStyleHorizontal);
-        A08(i6, i9, false);
+        this.A00 = i9;
+        this.A06 = new ProgressBar(c1860gi, null, R.attr.progressBarStyleHorizontal);
+        A08(i4, i6, false);
         this.A06.setMax(10000);
         addView(this.A06, new RelativeLayout.LayoutParams(-1, i));
     }
@@ -145,9 +145,9 @@ public final class DZ extends RelativeLayout implements InterfaceC1728eu {
             return;
         }
         A02();
-        int i6 = this.A00;
-        int i9 = i6 > 0 ? (i * 10000) / i6 : 0;
-        int i10 = this.A01;
+        int i4 = this.A00;
+        int i6 = i4 > 0 ? (i * 10000) / i4 : 0;
+        int i9 = this.A01;
         int progress = A0C[3].charAt(25);
         if (progress != 112) {
             throw new RuntimeException();
@@ -155,7 +155,7 @@ public final class DZ extends RelativeLayout implements InterfaceC1728eu {
         String[] strArr = A0C;
         strArr[0] = "EPor81PzILPcuU6FixKr7Fru1uzRlGJl";
         strArr[6] = "FnG13n1zUgJ6jZbSKNpX0gvuGbObv9dX";
-        if (i10 >= i9 || i6 <= i) {
+        if (i9 >= i6 || i4 <= i) {
             int progress2 = this.A00;
             if (progress2 != -1) {
                 int duration = this.A06.getProgress();
@@ -169,22 +169,22 @@ public final class DZ extends RelativeLayout implements InterfaceC1728eu {
         }
         ProgressBar progressBar = this.A06;
         int duration2 = this.A01;
-        this.A02 = ObjectAnimator.ofInt(progressBar, A01(0, 8, 56), duration2, i9);
+        this.A02 = ObjectAnimator.ofInt(progressBar, A01(0, 8, 56), duration2, i6);
         ObjectAnimator objectAnimator = this.A02;
-        int duration3 = Math.min(250, i6 - i);
+        int duration3 = Math.min(250, i4 - i);
         objectAnimator.setDuration(duration3);
         this.A02.setInterpolator(new LinearInterpolator());
         this.A02.start();
-        this.A01 = i9;
+        this.A01 = i6;
     }
 
-    public final void A08(int i, int i6, boolean z3) {
+    public final void A08(int i, int i4, boolean z6) {
         GradientDrawable gradientDrawable = new GradientDrawable();
-        gradientDrawable.setColor(i6);
+        gradientDrawable.setColor(i4);
         GradientDrawable gradientDrawable2 = new GradientDrawable();
         gradientDrawable2.setColor(i);
         GradientDrawable gradientDrawable3 = new GradientDrawable();
-        if (z3) {
+        if (z6) {
             gradientDrawable.setCornerRadius(40.0f);
             gradientDrawable2.setCornerRadius(40.0f);
             gradientDrawable3.setCornerRadius(40.0f);
@@ -196,7 +196,7 @@ public final class DZ extends RelativeLayout implements InterfaceC1728eu {
         this.A06.setProgressDrawable(layerDrawable);
     }
 
-    public final void A09(boolean z3) {
+    public final void A09(boolean z6) {
         if (this.A03 == null) {
             return;
         }
@@ -228,7 +228,7 @@ public final class DZ extends RelativeLayout implements InterfaceC1728eu {
             }
             return;
         }
-        if (z3) {
+        if (z6) {
             ProgressBar progressBar2 = this.A06;
             int position5 = this.A01;
             this.A02 = ObjectAnimator.ofInt(progressBar2, A01(0, 8, 56), position5, i);
@@ -250,15 +250,15 @@ public final class DZ extends RelativeLayout implements InterfaceC1728eu {
         this.A01 = i;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1728eu
-    public final void AAv(C0877Ek c0877Ek) {
-        this.A03 = c0877Ek;
-        c0877Ek.getEventBus().A03(this.A08, this.A09, this.A0A, this.A07);
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1748eu
+    public final void AAv(C0897Ek c0897Ek) {
+        this.A03 = c0897Ek;
+        c0897Ek.getEventBus().A03(this.A08, this.A09, this.A0A, this.A07);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1728eu
-    public final void AKV(C0877Ek c0877Ek) {
-        c0877Ek.getEventBus().A04(this.A0A, this.A09, this.A08, this.A07);
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1748eu
+    public final void AKV(C0897Ek c0897Ek) {
+        c0897Ek.getEventBus().A04(this.A0A, this.A09, this.A08, this.A07);
         this.A03 = null;
     }
 
@@ -270,7 +270,7 @@ public final class DZ extends RelativeLayout implements InterfaceC1728eu {
         this.A00 = i;
     }
 
-    public void setShouldClearAnimationWhenVideoCompleted(boolean z3) {
-        this.A05 = z3;
+    public void setShouldClearAnimationWhenVideoCompleted(boolean z6) {
+        this.A05 = z6;
     }
 }

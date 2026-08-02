@@ -14,7 +14,7 @@ public class UH extends WebViewClient {
 
     @Override // android.webkit.WebViewClient
     public final boolean onRenderProcessGone(WebView webView, RenderProcessGoneDetail renderProcessGoneDetail) {
-        AbstractC1486ay.A0D(AbstractC1252Td.A2j);
+        AbstractC1506ay.A0D(AbstractC1272Td.A2j);
         return true;
     }
 }

@@ -59,12 +59,12 @@ public abstract class AdComponentFrameLayout extends FrameLayout implements AdCo
     }
 
     @Override // android.widget.FrameLayout, android.view.View
-    public void onMeasure(int i, int i6) {
+    public void onMeasure(int i, int i4) {
         AdComponentViewApi adComponentViewApi = this.mAdComponentViewApi;
         if (adComponentViewApi != null) {
-            adComponentViewApi.onMeasure(i, i6);
+            adComponentViewApi.onMeasure(i, i4);
         } else {
-            super.onMeasure(i, i6);
+            super.onMeasure(i, i4);
         }
     }
 
@@ -79,12 +79,12 @@ public abstract class AdComponentFrameLayout extends FrameLayout implements AdCo
     }
 
     @Override // android.view.View, com.facebook.ads.internal.api.AdComponentView
-    public void onWindowFocusChanged(boolean z3) {
+    public void onWindowFocusChanged(boolean z6) {
         AdComponentViewApi adComponentViewApi = this.mAdComponentViewApi;
         if (adComponentViewApi != null) {
-            adComponentViewApi.onWindowFocusChanged(z3);
+            adComponentViewApi.onWindowFocusChanged(z6);
         } else {
-            super.onWindowFocusChanged(z3);
+            super.onWindowFocusChanged(z6);
         }
     }
 
@@ -118,8 +118,8 @@ public abstract class AdComponentFrameLayout extends FrameLayout implements AdCo
         this.mAdComponentViewParentApi = new a(this);
     }
 
-    public AdComponentFrameLayout(Context context, AttributeSet attributeSet, int i, int i6) {
-        super(context, attributeSet, i, i6);
+    public AdComponentFrameLayout(Context context, AttributeSet attributeSet, int i, int i4) {
+        super(context, attributeSet, i, i4);
         this.mAdComponentViewParentApi = new a(this);
     }
 
@@ -134,12 +134,12 @@ public abstract class AdComponentFrameLayout extends FrameLayout implements AdCo
     }
 
     @Override // android.view.ViewGroup, com.facebook.ads.internal.api.AdComponentView
-    public void addView(View view, int i, int i6) {
+    public void addView(View view, int i, int i4) {
         AdComponentViewApi adComponentViewApi = this.mAdComponentViewApi;
         if (adComponentViewApi != null) {
-            adComponentViewApi.addView(view, i, i6);
+            adComponentViewApi.addView(view, i, i4);
         } else {
-            super.addView(view, i, i6);
+            super.addView(view, i, i4);
         }
     }
 

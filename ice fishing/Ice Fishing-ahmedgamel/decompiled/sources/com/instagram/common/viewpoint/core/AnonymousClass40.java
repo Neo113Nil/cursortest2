@@ -19,10 +19,10 @@ public final class AnonymousClass40 {
     public final File A00;
     public final File A01;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 79);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 79);
         }
         return new String(copyOfRange);
     }
@@ -53,7 +53,7 @@ public final class AnonymousClass40 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0058, code lost:
     
-        com.instagram.common.viewpoint.core.AbstractC06324g.A07(A00(20, 10, 48), A00(46, 21, 97) + r6.A01 + A00(0, 16, 76) + r6.A00);
+        com.instagram.common.viewpoint.core.AbstractC06524g.A07(A00(20, 10, 48), A00(46, 21, 97) + r6.A01 + A00(0, 16, 76) + r6.A00);
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x009d, code lost:
     
@@ -64,7 +64,7 @@ public final class AnonymousClass40 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final C06253z A03() throws IOException {
+    public final C06453z A03() throws IOException {
         if (this.A01.exists()) {
             File file = this.A00;
             String[] strArr = A03;
@@ -97,16 +97,16 @@ public final class AnonymousClass40 {
                     A01();
                 }
 
-                public static String A00(int i, int i6, int i9) {
-                    byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-                    for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-                        copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 96);
+                public static String A00(int i, int i4, int i6) {
+                    byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+                    for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+                        copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 96);
                     }
                     return new String(copyOfRange);
                 }
 
                 public static void A01() {
-                    A02 = new byte[]{-25, 26, 21, 19, 15, 9, -20, 15, 18, 11, 36, c.f16318c, 71, 74, 67, 66, -2, 82, 77, -2, 81, 87, 76, 65, -2, 68, 71, 74, 67, -2, 66, 67, 81, 65, 80, 71, 78, 82, 77, 80, 24};
+                    A02 = new byte[]{-25, 26, 21, 19, 15, 9, -20, 15, 18, 11, 36, c.f17105c, 71, 74, 67, 66, -2, 82, 77, -2, 81, 87, 76, 65, -2, 68, 71, 74, 67, -2, 66, 67, 81, 65, 80, 71, 78, 82, 77, 80, 24};
                 }
 
                 {
@@ -123,7 +123,7 @@ public final class AnonymousClass40 {
                     try {
                         this.A01.getFD().sync();
                     } catch (IOException e9) {
-                        AbstractC06324g.A0A(A00(0, 10, 70), A00(10, 31, a.f21727Q), e9);
+                        AbstractC06524g.A0A(A00(0, 10, 70), A00(10, 31, a.f22514Q), e9);
                     }
                     this.A01.close();
                 }
@@ -144,8 +144,8 @@ public final class AnonymousClass40 {
                 }
 
                 @Override // java.io.OutputStream
-                public final void write(byte[] bArr, int i, int i6) throws IOException {
-                    this.A01.write(bArr, i, i6);
+                public final void write(byte[] bArr, int i, int i4) throws IOException {
+                    this.A01.write(bArr, i, i4);
                 }
             };
         } catch (FileNotFoundException e9) {
@@ -163,16 +163,16 @@ public final class AnonymousClass40 {
                             A01();
                         }
 
-                        public static String A00(int i, int i6, int i9) {
-                            byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-                            for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-                                copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 96);
+                        public static String A00(int i, int i4, int i6) {
+                            byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+                            for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+                                copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 96);
                             }
                             return new String(copyOfRange);
                         }
 
                         public static void A01() {
-                            A02 = new byte[]{-25, 26, 21, 19, 15, 9, -20, 15, 18, 11, 36, c.f16318c, 71, 74, 67, 66, -2, 82, 77, -2, 81, 87, 76, 65, -2, 68, 71, 74, 67, -2, 66, 67, 81, 65, 80, 71, 78, 82, 77, 80, 24};
+                            A02 = new byte[]{-25, 26, 21, 19, 15, 9, -20, 15, 18, 11, 36, c.f17105c, 71, 74, 67, 66, -2, 82, 77, -2, 81, 87, 76, 65, -2, 68, 71, 74, 67, -2, 66, 67, 81, 65, 80, 71, 78, 82, 77, 80, 24};
                         }
 
                         {
@@ -189,7 +189,7 @@ public final class AnonymousClass40 {
                             try {
                                 this.A01.getFD().sync();
                             } catch (IOException e92) {
-                                AbstractC06324g.A0A(A00(0, 10, 70), A00(10, 31, a.f21727Q), e92);
+                                AbstractC06524g.A0A(A00(0, 10, 70), A00(10, 31, a.f22514Q), e92);
                             }
                             this.A01.close();
                         }
@@ -210,8 +210,8 @@ public final class AnonymousClass40 {
                         }
 
                         @Override // java.io.OutputStream
-                        public final void write(byte[] bArr, int i, int i6) throws IOException {
-                            this.A01.write(bArr, i, i6);
+                        public final void write(byte[] bArr, int i, int i4) throws IOException {
+                            this.A01.write(bArr, i, i4);
                         }
                     };
                 } catch (FileNotFoundException e10) {

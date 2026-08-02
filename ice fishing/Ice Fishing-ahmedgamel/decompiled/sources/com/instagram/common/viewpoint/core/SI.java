@@ -44,8 +44,8 @@ public final class SI implements RewardedVideoAd.RewardedVideoAdLoadConfigBuilde
     }
 
     @Override // com.facebook.ads.RewardedVideoAd.RewardedVideoAdLoadConfigBuilder
-    public final RewardedVideoAd.RewardedVideoAdLoadConfigBuilder withFailOnCacheFailureEnabled(boolean z3) {
-        this.A03 = z3;
+    public final RewardedVideoAd.RewardedVideoAdLoadConfigBuilder withFailOnCacheFailureEnabled(boolean z6) {
+        this.A03 = z6;
         return this;
     }
 

@@ -10,19 +10,19 @@ public final class o extends a {
 
     @Override // com.anythink.basead.b.b.a, com.anythink.basead.b.b.m
     public final n a() {
-        b bVar = this.f5747f;
+        b bVar = this.f6533f;
         if (bVar != null) {
             bVar.b();
-            this.f5747f.a();
+            this.f6533f.a();
         }
-        if (!com.anythink.core.basead.a.e.a(this.f5744c, this.f5745d)) {
+        if (!com.anythink.core.basead.a.e.a(this.f6530c, this.f6531d)) {
             return n.a(false, "WXMiniClickAction execute fail");
         }
-        k kVar = this.f5746e;
+        k kVar = this.f6532e;
         if (kVar != null) {
             kVar.b();
         }
-        b bVar2 = this.f5747f;
+        b bVar2 = this.f6533f;
         if (bVar2 != null) {
             bVar2.c();
         }

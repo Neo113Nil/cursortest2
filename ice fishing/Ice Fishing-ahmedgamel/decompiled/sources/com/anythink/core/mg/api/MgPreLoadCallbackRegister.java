@@ -18,8 +18,8 @@ public class MgPreLoadCallbackRegister {
     private final AtomicReference<MgAdInfo> mgAdInfoRef = new AtomicReference<>();
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void notifyCallback(boolean z3) {
-        notifyCallback(z3, false);
+    public void notifyCallback(boolean z6) {
+        notifyCallback(z6, false);
     }
 
     public MgAdInfo getMgAdInfo() {
@@ -75,7 +75,7 @@ public class MgPreLoadCallbackRegister {
         }
     }
 
-    private void notifyCallback(final boolean z3, boolean z6) {
+    private void notifyCallback(final boolean z6, boolean z9) {
         CopyOnWriteArrayList<MgPreLoadCallback> copyOnWriteArrayList;
         if (this.preLoadCallbackList.isEmpty()) {
             return;
@@ -100,13 +100,13 @@ public class MgPreLoadCallbackRegister {
         try {
             for (final MgPreLoadCallback mgPreLoadCallback : copyOnWriteArrayList) {
                 if (mgPreLoadCallback != null) {
-                    if (!z3 && !z6) {
+                    if (!z6 && !z9) {
                         mgPreLoadCallback.onMgAdInfo(mgAdInfo, false);
                     }
                     com.anythink.core.common.v.b.b.a().a(new Runnable() { // from class: com.anythink.core.mg.api.MgPreLoadCallbackRegister.2
                         @Override // java.lang.Runnable
                         public final void run() {
-                            mgPreLoadCallback.onMgAdInfo(mgAdInfo, z3);
+                            mgPreLoadCallback.onMgAdInfo(mgAdInfo, z6);
                         }
                     });
                 }

@@ -14,8 +14,8 @@ public class AnonymousClass32 {
     public static byte[] A09;
     public static String[] A0A = {"x4YClL2ZysfVPCFZjhpW4oP0jWiK4Q3l", "qTcDzMP2wLEx15nCuEUhgp4TY7vV", "SIpQOLlqDgpshhwjhc8D2jgDkVzbvCX7", "J0RaUpvVzbbvSqSgIYK8O25JdvitlZZ4", "cm5jE18fh6qtcHu4S6QHstxeiM", "n", "LQDJUPwAzqbXUo9Li69tSY6YDGIQDwU", "wUCT9e8FTOqtQKr8s0xzb6XHsL6fqF1p"};
     public final Uri A00;
-    public final C05952t A01;
-    public final C06002y A02;
+    public final C06152t A01;
+    public final C06202y A02;
     public final Object A03;
     public final String A04;
     public final String A05;
@@ -25,10 +25,10 @@ public class AnonymousClass32 {
     @Deprecated
     public final List<MediaItem.Subtitle> A08;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A09, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 79);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A09, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 79);
         }
         return new String(copyOfRange);
     }
@@ -41,11 +41,11 @@ public class AnonymousClass32 {
         A01();
     }
 
-    public AnonymousClass32(Uri uri, String str, C06002y c06002y, C05952t c05952t, List<StreamKey> streamKeys, String str2, List<MediaItem.SubtitleConfiguration> subtitleConfigurations, Object obj) {
+    public AnonymousClass32(Uri uri, String str, C06202y c06202y, C06152t c06152t, List<StreamKey> streamKeys, String str2, List<MediaItem.SubtitleConfiguration> subtitleConfigurations, Object obj) {
         this.A00 = uri;
         this.A05 = str;
-        this.A02 = c06002y;
-        this.A01 = c05952t;
+        this.A02 = c06202y;
+        this.A01 = c06152t;
         this.A06 = streamKeys;
         this.A04 = str2;
         this.A07 = subtitleConfigurations;

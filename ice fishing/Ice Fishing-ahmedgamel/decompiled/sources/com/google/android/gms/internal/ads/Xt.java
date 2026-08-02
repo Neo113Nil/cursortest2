@@ -6,13 +6,13 @@ import org.json.JSONObject;
 public final class Xt {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f28597a;
+    public final String f29378a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final JSONObject f28598b;
+    public final JSONObject f29379b;
 
     public Xt(String str, JSONObject jSONObject) {
-        this.f28597a = str;
-        this.f28598b = jSONObject;
+        this.f29378a = str;
+        this.f29379b = jSONObject;
     }
 }

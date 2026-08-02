@@ -9,7 +9,7 @@ import java.util.WeakHashMap;
 public abstract class GoogleApiClient {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final Set f23612n = Collections.newSetFromMap(new WeakHashMap());
+    public static final Set f24392n = Collections.newSetFromMap(new WeakHashMap());
 
     public abstract boolean a();
 

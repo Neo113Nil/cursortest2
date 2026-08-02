@@ -9,7 +9,7 @@ import java.util.List;
 public interface q {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final q f15708a = new B1.x(24);
+    public static final q f16495a = new A(0);
 
     /* JADX INFO: Access modifiers changed from: private */
     static /* synthetic */ List a(String str) {

@@ -26,25 +26,25 @@ import java.lang.reflect.Method;
 public class BrowserView extends LinearLayout {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19739a = "BrowserView";
+    private static final String f20526a = "BrowserView";
 
     /* renamed from: b, reason: collision with root package name */
-    private String f19740b;
+    private String f20527b;
 
     /* renamed from: c, reason: collision with root package name */
-    private ProgressBar f19741c;
+    private ProgressBar f20528c;
 
     /* renamed from: d, reason: collision with root package name */
-    private WebView f19742d;
+    private WebView f20529d;
 
     /* renamed from: e, reason: collision with root package name */
-    private ToolBar f19743e;
+    private ToolBar f20530e;
 
     /* renamed from: f, reason: collision with root package name */
-    private a f19744f;
+    private a f20531f;
 
     /* renamed from: g, reason: collision with root package name */
-    private d f19745g;
+    private d f20532g;
 
     public interface a {
         void a();
@@ -62,17 +62,17 @@ public class BrowserView extends LinearLayout {
 
     public BrowserView(Context context, d dVar) {
         super(context);
-        this.f19745g = dVar;
+        this.f20532g = dVar;
         init();
     }
 
     public void destroy() {
-        WebView webView = this.f19742d;
+        WebView webView = this.f20529d;
         if (webView != null) {
             webView.stopLoading();
-            this.f19742d.setWebViewClient(null);
-            this.f19742d.destroy();
-            this.f19742d = null;
+            this.f20529d.setWebViewClient(null);
+            this.f20529d.destroy();
+            this.f20529d = null;
             removeAllViews();
         }
     }
@@ -81,94 +81,94 @@ public class BrowserView extends LinearLayout {
         setOrientation(1);
         setGravity(17);
         ProgressBar progressBar = new ProgressBar(getContext());
-        this.f19741c = progressBar;
+        this.f20528c = progressBar;
         progressBar.setLayoutParams(new LinearLayout.LayoutParams(-1, 4));
         try {
-            if (this.f19742d == null) {
-                this.f19742d = b();
+            if (this.f20529d == null) {
+                this.f20529d = b();
             }
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, -1);
             layoutParams.weight = 1.0f;
-            this.f19742d.setLayoutParams(layoutParams);
+            this.f20529d.setLayoutParams(layoutParams);
         } catch (Throwable unused) {
         }
-        this.f19743e = new ToolBar(getContext());
-        this.f19743e.setLayoutParams(new LinearLayout.LayoutParams(-1, v.b(getContext(), 40.0f)));
-        this.f19743e.setBackgroundColor(-1);
-        addView(this.f19741c);
-        WebView webView = this.f19742d;
+        this.f20530e = new ToolBar(getContext());
+        this.f20530e.setLayoutParams(new LinearLayout.LayoutParams(-1, v.b(getContext(), 40.0f)));
+        this.f20530e.setBackgroundColor(-1);
+        addView(this.f20528c);
+        WebView webView = this.f20529d;
         if (webView != null) {
             addView(webView);
         }
-        addView(this.f19743e);
-        this.f19741c.initResource(true);
-        this.f19743e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.BACKWARD).setEnabled(false);
-        this.f19743e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.FORWARD).setEnabled(false);
-        this.f19743e.setOnItemClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.foundation.webview.BrowserView.1
+        addView(this.f20530e);
+        this.f20528c.initResource(true);
+        this.f20530e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.BACKWARD).setEnabled(false);
+        this.f20530e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.FORWARD).setEnabled(false);
+        this.f20530e.setOnItemClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.foundation.webview.BrowserView.1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                if (BrowserView.this.f19742d != null) {
-                    BrowserView.this.f19742d.stopLoading();
+                if (BrowserView.this.f20529d != null) {
+                    BrowserView.this.f20529d.stopLoading();
                 }
                 String str = (String) view.getTag();
-                boolean z3 = false;
+                boolean z6 = false;
                 if (TextUtils.equals(str, com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.BACKWARD)) {
-                    BrowserView.this.f19743e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.FORWARD).setEnabled(true);
-                    if (BrowserView.this.f19742d != null && BrowserView.this.f19742d.canGoBack()) {
-                        BrowserView.this.f19742d.goBack();
+                    BrowserView.this.f20530e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.FORWARD).setEnabled(true);
+                    if (BrowserView.this.f20529d != null && BrowserView.this.f20529d.canGoBack()) {
+                        BrowserView.this.f20529d.goBack();
                     }
-                    View item = BrowserView.this.f19743e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.BACKWARD);
-                    if (BrowserView.this.f19742d != null && BrowserView.this.f19742d.canGoBack()) {
-                        z3 = true;
+                    View item = BrowserView.this.f20530e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.BACKWARD);
+                    if (BrowserView.this.f20529d != null && BrowserView.this.f20529d.canGoBack()) {
+                        z6 = true;
                     }
-                    item.setEnabled(z3);
+                    item.setEnabled(z6);
                     return;
                 }
                 if (TextUtils.equals(str, com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.FORWARD)) {
-                    BrowserView.this.f19743e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.BACKWARD).setEnabled(true);
-                    if (BrowserView.this.f19742d != null && BrowserView.this.f19742d.canGoForward()) {
-                        BrowserView.this.f19742d.goForward();
+                    BrowserView.this.f20530e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.BACKWARD).setEnabled(true);
+                    if (BrowserView.this.f20529d != null && BrowserView.this.f20529d.canGoForward()) {
+                        BrowserView.this.f20529d.goForward();
                     }
-                    View item2 = BrowserView.this.f19743e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.FORWARD);
-                    if (BrowserView.this.f19742d != null && BrowserView.this.f19742d.canGoForward()) {
-                        z3 = true;
+                    View item2 = BrowserView.this.f20530e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.FORWARD);
+                    if (BrowserView.this.f20529d != null && BrowserView.this.f20529d.canGoForward()) {
+                        z6 = true;
                     }
-                    item2.setEnabled(z3);
+                    item2.setEnabled(z6);
                     return;
                 }
                 if (!TextUtils.equals(str, com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.REFRESH)) {
-                    if (!TextUtils.equals(str, com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.EXITS) || BrowserView.this.f19744f == null) {
+                    if (!TextUtils.equals(str, com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.EXITS) || BrowserView.this.f20531f == null) {
                         return;
                     }
-                    a unused2 = BrowserView.this.f19744f;
+                    a unused2 = BrowserView.this.f20531f;
                     return;
                 }
-                BrowserView.this.f19743e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.BACKWARD).setEnabled(BrowserView.this.f19742d != null && BrowserView.this.f19742d.canGoBack());
-                View item3 = BrowserView.this.f19743e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.FORWARD);
-                if (BrowserView.this.f19742d != null && BrowserView.this.f19742d.canGoForward()) {
-                    z3 = true;
+                BrowserView.this.f20530e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.BACKWARD).setEnabled(BrowserView.this.f20529d != null && BrowserView.this.f20529d.canGoBack());
+                View item3 = BrowserView.this.f20530e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.FORWARD);
+                if (BrowserView.this.f20529d != null && BrowserView.this.f20529d.canGoForward()) {
+                    z6 = true;
                 }
-                item3.setEnabled(z3);
-                if (BrowserView.this.f19742d != null) {
-                    BrowserView.this.f19742d.loadUrl(BrowserView.this.f19740b);
+                item3.setEnabled(z6);
+                if (BrowserView.this.f20529d != null) {
+                    BrowserView.this.f20529d.loadUrl(BrowserView.this.f20527b);
                 }
             }
         });
     }
 
     public void loadUrl(String str) {
-        WebView webView = this.f19742d;
+        WebView webView = this.f20529d;
         if (webView != null) {
             webView.loadUrl(str);
         }
     }
 
     public void setListener(a aVar) {
-        this.f19744f = aVar;
+        this.f20531f = aVar;
     }
 
     public void setWebView(WebView webView) {
-        this.f19742d = webView;
+        this.f20529d = webView;
     }
 
     public static final class DownloadListener implements android.webkit.DownloadListener {
@@ -251,37 +251,37 @@ public class BrowserView extends LinearLayout {
         } catch (Throwable th3) {
             th3.getMessage();
         }
-        webView.setDownloadListener(new DownloadListener(this.f19745g));
+        webView.setDownloadListener(new DownloadListener(this.f20532g));
         webView.setWebViewClient(new WebViewClient() { // from class: com.anythink.expressad.foundation.webview.BrowserView.2
             @Override // android.webkit.WebViewClient
             public final void onLoadResource(WebView webView2, String str) {
                 super.onLoadResource(webView2, str);
-                if (BrowserView.this.f19744f != null) {
-                    a unused3 = BrowserView.this.f19744f;
+                if (BrowserView.this.f20531f != null) {
+                    a unused3 = BrowserView.this.f20531f;
                 }
             }
 
             @Override // android.webkit.WebViewClient
             public final void onPageFinished(WebView webView2, String str) {
-                if (BrowserView.this.f19744f != null) {
-                    a unused3 = BrowserView.this.f19744f;
+                if (BrowserView.this.f20531f != null) {
+                    a unused3 = BrowserView.this.f20531f;
                 }
             }
 
             @Override // android.webkit.WebViewClient
             public final void onPageStarted(WebView webView2, String str, Bitmap bitmap) {
-                BrowserView.this.f19740b = str;
-                if (BrowserView.this.f19744f != null) {
-                    a unused3 = BrowserView.this.f19744f;
+                BrowserView.this.f20527b = str;
+                if (BrowserView.this.f20531f != null) {
+                    a unused3 = BrowserView.this.f20531f;
                 }
-                BrowserView.this.f19741c.setVisible(true);
-                BrowserView.this.f19741c.setProgressState(5);
+                BrowserView.this.f20528c.setVisible(true);
+                BrowserView.this.f20528c.setProgressState(5);
             }
 
             @Override // android.webkit.WebViewClient
             public final void onReceivedError(WebView webView2, int i, String str, String str2) {
-                if (BrowserView.this.f19744f != null) {
-                    a unused3 = BrowserView.this.f19744f;
+                if (BrowserView.this.f20531f != null) {
+                    a unused3 = BrowserView.this.f20531f;
                 }
             }
 
@@ -299,18 +299,18 @@ public class BrowserView extends LinearLayout {
                         return true;
                     }
                 }
-                if (BrowserView.this.f19744f != null) {
-                    a unused3 = BrowserView.this.f19744f;
+                if (BrowserView.this.f20531f != null) {
+                    a unused3 = BrowserView.this.f20531f;
                 }
                 return true;
             }
 
             @Override // android.webkit.WebViewClient
             public final boolean shouldOverrideUrlLoading(WebView webView2, String str) {
-                BrowserView.this.f19743e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.BACKWARD).setEnabled(true);
-                BrowserView.this.f19743e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.FORWARD).setEnabled(false);
-                if (BrowserView.this.f19744f != null) {
-                    return BrowserView.this.f19744f.d();
+                BrowserView.this.f20530e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.BACKWARD).setEnabled(true);
+                BrowserView.this.f20530e.getItem(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.FORWARD).setEnabled(false);
+                if (BrowserView.this.f20531f != null) {
+                    return BrowserView.this.f20531f.d();
                 }
                 return false;
             }
@@ -334,11 +334,11 @@ public class BrowserView extends LinearLayout {
             @Override // android.webkit.WebChromeClient
             public final void onProgressChanged(WebView webView2, int i) {
                 if (i == 100) {
-                    BrowserView.this.f19741c.setProgressState(7);
+                    BrowserView.this.f20528c.setProgressState(7);
                     new Handler().postDelayed(new Runnable() { // from class: com.anythink.expressad.foundation.webview.BrowserView.3.1
                         @Override // java.lang.Runnable
                         public final void run() {
-                            BrowserView.this.f19741c.setVisible(false);
+                            BrowserView.this.f20528c.setVisible(false);
                         }
                     }, 200L);
                 }
@@ -347,11 +347,11 @@ public class BrowserView extends LinearLayout {
             @Override // android.webkit.WebChromeClient
             public final void onProgressChanged(WebView webView2, int i) {
                 if (i == 100) {
-                    BrowserView.this.f19741c.setProgressState(7);
+                    BrowserView.this.f20528c.setProgressState(7);
                     new Handler().postDelayed(new Runnable() { // from class: com.anythink.expressad.foundation.webview.BrowserView.4.1
                         @Override // java.lang.Runnable
                         public final void run() {
-                            BrowserView.this.f19741c.setVisible(false);
+                            BrowserView.this.f20528c.setVisible(false);
                         }
                     }, 200L);
                 }
@@ -362,26 +362,26 @@ public class BrowserView extends LinearLayout {
 
     private void a() {
         ProgressBar progressBar = new ProgressBar(getContext());
-        this.f19741c = progressBar;
+        this.f20528c = progressBar;
         progressBar.setLayoutParams(new LinearLayout.LayoutParams(-1, 4));
         try {
-            if (this.f19742d == null) {
-                this.f19742d = b();
+            if (this.f20529d == null) {
+                this.f20529d = b();
             }
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, -1);
             layoutParams.weight = 1.0f;
-            this.f19742d.setLayoutParams(layoutParams);
+            this.f20529d.setLayoutParams(layoutParams);
         } catch (Throwable unused) {
         }
-        this.f19743e = new ToolBar(getContext());
-        this.f19743e.setLayoutParams(new LinearLayout.LayoutParams(-1, v.b(getContext(), 40.0f)));
-        this.f19743e.setBackgroundColor(-1);
-        addView(this.f19741c);
-        WebView webView = this.f19742d;
+        this.f20530e = new ToolBar(getContext());
+        this.f20530e.setLayoutParams(new LinearLayout.LayoutParams(-1, v.b(getContext(), 40.0f)));
+        this.f20530e.setBackgroundColor(-1);
+        addView(this.f20528c);
+        WebView webView = this.f20529d;
         if (webView != null) {
             addView(webView);
         }
-        addView(this.f19743e);
+        addView(this.f20530e);
     }
 
     public BrowserView(Context context) {

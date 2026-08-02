@@ -13,7 +13,7 @@ public class Z5 implements View.OnClickListener {
     @Override // android.view.View.OnClickListener
     public final void onClick(View view) {
         VI vi;
-        InterfaceC1381Yh interfaceC1381Yh;
+        InterfaceC1401Yh interfaceC1401Yh;
         ZU zu;
         if (WU.A02(this)) {
             return;
@@ -21,9 +21,9 @@ public class Z5 implements View.OnClickListener {
         try {
             vi = this.A00.A0T;
             vi.A04(VH.A07, null);
-            interfaceC1381Yh = this.A00.A0W;
+            interfaceC1401Yh = this.A00.A0W;
             zu = this.A00.A0X;
-            interfaceC1381Yh.A4j(zu.A7w());
+            interfaceC1401Yh.A4j(zu.A7w());
         } catch (Throwable th) {
             WU.A00(th, this);
         }

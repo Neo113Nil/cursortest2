@@ -71,11 +71,11 @@ public final class a extends c6.i {
     /* JADX WARN: Type inference failed for: r9v7 */
     /* JADX WARN: Type inference failed for: r9v8 */
     @Override // c6.i
-    public final java.lang.Object c(g1.C4523c r14) {
+    public final java.lang.Object c(i1.C4586c r14) {
         /*
             r13 = this;
-            y8.h r0 = y8.h.f41954w
-            long r1 = r14.A()
+            y8.h r0 = y8.h.f41925w
+            long r1 = r14.n()
             r3 = 0
             r5 = r3
             r6 = r5
@@ -90,8 +90,8 @@ public final class a extends c6.i {
         Ld:
             r11 = r10
         Le:
-            java.lang.Object r4 = r14.f37627u
-            c6.a r4 = (c6.C0544a) r4
+            java.lang.Object r4 = r14.f38154u
+            c6.a r4 = (c6.C0555a) r4
             int r4 = r4.f()
             r12 = -1
             if (r4 == r12) goto L81
@@ -106,10 +106,10 @@ public final class a extends c6.i {
                 default: goto L1c;
             }
         L1c:
-            r14.F(r4)
+            r14.t(r4)
             goto Le
         L20:
-            c6.c r4 = c6.i.f5597n
+            c6.c r4 = c6.i.f5773n
             java.lang.Object r4 = r4.c(r14)
             r11 = r4
             y8.h r11 = (y8.h) r11
@@ -121,7 +121,7 @@ public final class a extends c6.i {
             r10 = r9
             goto Le
         L30:
-            H6.k r4 = H6.l.f1249w
+            H6.k r4 = H6.l.f1274w
             java.lang.Object r4 = r4.c(r14)
             r10 = r4
             H6.l r10 = (H6.l) r10
@@ -133,7 +133,7 @@ public final class a extends c6.i {
             r11 = r9
             goto Le
         L40:
-            H6.c r4 = H6.d.f1234w
+            H6.c r4 = H6.d.f1259w
             java.lang.Object r4 = r4.c(r14)
             r9 = r4
             H6.d r9 = (H6.d) r9
@@ -144,7 +144,7 @@ public final class a extends c6.i {
             r10 = r8
             goto Ld
         L4f:
-            c6.c r4 = c6.i.f5596m
+            c6.c r4 = c6.i.f5772m
             java.lang.Object r4 = r4.c(r14)
             r8 = r4
             java.lang.Double r8 = (java.lang.Double) r8
@@ -154,7 +154,7 @@ public final class a extends c6.i {
             r9 = r7
             goto Lc
         L5d:
-            c6.c r4 = c6.i.f5593j
+            c6.c r4 = c6.i.f5769j
             java.lang.Object r4 = r4.c(r14)
             r7 = r4
             java.lang.Long r7 = (java.lang.Long) r7
@@ -163,7 +163,7 @@ public final class a extends c6.i {
             r8 = r6
             goto Lb
         L6a:
-            c6.c r4 = c6.i.f5590f
+            c6.c r4 = c6.i.f5766f
             java.lang.Object r4 = r4.c(r14)
             r6 = r4
             java.lang.Boolean r6 = (java.lang.Boolean) r6
@@ -171,14 +171,14 @@ public final class a extends c6.i {
             r7 = r5
             goto La
         L76:
-            c6.c r4 = c6.i.f5598o
+            c6.c r4 = c6.i.f5774o
             java.lang.Object r4 = r4.c(r14)
             r5 = r4
             java.lang.String r5 = (java.lang.String) r5
             r6 = r3
             goto L9
         L81:
-            y8.h r14 = r14.C(r1)
+            y8.h r14 = r14.p(r1)
             java.lang.String r1 = "unknownFields"
             kotlin.jvm.internal.h.e(r14, r1)
             int r1 = r14.a()
@@ -188,37 +188,37 @@ public final class a extends c6.i {
             java.lang.String r1 = "value"
             kotlin.jvm.internal.h.e(r0, r1)
             r3.K(r0)
-            y8.h r0 = y8.h.f41954w
+            y8.h r0 = y8.h.f41925w
             r3.K(r14)
         La2:
             H6.b r4 = new H6.b
             if (r3 == 0) goto Lac
-            long r0 = r3.f41953u
+            long r0 = r3.f41924u
             y8.h r0 = r3.B(r0)
         Lac:
             r12 = r0
             r4.<init>(r5, r6, r7, r8, r9, r10, r11, r12)
             return r4
         */
-        throw new UnsupportedOperationException("Method not decompiled: H6.a.c(g1.c):java.lang.Object");
+        throw new UnsupportedOperationException("Method not decompiled: H6.a.c(i1.c):java.lang.Object");
     }
 
     @Override // c6.i
-    public final void d(F1.a aVar, Object obj) {
+    public final void d(n4.c cVar, Object obj) {
         b bVar = (b) obj;
-        c6.i.f5598o.e(aVar, 1, bVar.f1229v);
-        c6.i.f5590f.e(aVar, 2, bVar.f1230w);
-        c6.i.f5593j.e(aVar, 3, bVar.f1231x);
-        c6.i.f5596m.e(aVar, 4, bVar.f1232y);
-        d.f1234w.e(aVar, 5, bVar.f1233z);
-        l.f1249w.e(aVar, 6, bVar.f1227A);
-        c6.i.f5597n.e(aVar, 7, bVar.f1228B);
-        aVar.v(bVar.a());
+        c6.i.f5774o.e(cVar, 1, bVar.f1254v);
+        c6.i.f5766f.e(cVar, 2, bVar.f1255w);
+        c6.i.f5769j.e(cVar, 3, bVar.f1256x);
+        c6.i.f5772m.e(cVar, 4, bVar.f1257y);
+        d.f1259w.e(cVar, 5, bVar.f1258z);
+        l.f1274w.e(cVar, 6, bVar.f1252A);
+        c6.i.f5773n.e(cVar, 7, bVar.f1253B);
+        cVar.C(bVar.a());
     }
 
     @Override // c6.i
     public final int f(Object obj) {
         b bVar = (b) obj;
-        return bVar.a().a() + c6.i.f5597n.g(7, bVar.f1228B) + l.f1249w.g(6, bVar.f1227A) + d.f1234w.g(5, bVar.f1233z) + c6.i.f5596m.g(4, bVar.f1232y) + c6.i.f5593j.g(3, bVar.f1231x) + c6.i.f5590f.g(2, bVar.f1230w) + c6.i.f5598o.g(1, bVar.f1229v);
+        return bVar.a().a() + c6.i.f5773n.g(7, bVar.f1253B) + l.f1274w.g(6, bVar.f1252A) + d.f1259w.g(5, bVar.f1258z) + c6.i.f5772m.g(4, bVar.f1257y) + c6.i.f5769j.g(3, bVar.f1256x) + c6.i.f5766f.g(2, bVar.f1255w) + c6.i.f5774o.g(1, bVar.f1254v);
     }
 }

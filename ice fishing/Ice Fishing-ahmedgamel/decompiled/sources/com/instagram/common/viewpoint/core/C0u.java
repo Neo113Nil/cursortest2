@@ -101,14 +101,14 @@ public final class C0u<K> extends C2L<K, V>.SortedKeySet implements NavigableSet
     @Override // java.util.NavigableSet
     @CheckForNull
     public final K pollFirst() {
-        return (K) AbstractC2330p9.A04(iterator());
+        return (K) AbstractC2350p9.A04(iterator());
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.0u != com.google.common.collect.AbstractMapBasedMultimap<K, V>$NavigableKeySet */
     @Override // java.util.NavigableSet
     @CheckForNull
     public final K pollLast() {
-        return (K) AbstractC2330p9.A04(descendingIterator());
+        return (K) AbstractC2350p9.A04(descendingIterator());
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.0u != com.google.common.collect.AbstractMapBasedMultimap<K, V>$NavigableKeySet */

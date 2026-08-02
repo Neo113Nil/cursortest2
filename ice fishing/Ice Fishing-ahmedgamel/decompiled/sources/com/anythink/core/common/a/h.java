@@ -11,29 +11,29 @@ import org.json.JSONObject;
 public class h {
 
     /* renamed from: a, reason: collision with root package name */
-    final String f12173a = "h";
+    final String f12959a = "h";
 
     /* renamed from: b, reason: collision with root package name */
-    Map<String, Integer> f12174b = new ConcurrentHashMap();
+    Map<String, Integer> f12960b = new ConcurrentHashMap();
 
     /* renamed from: c, reason: collision with root package name */
-    Map<String, Integer> f12175c = new ConcurrentHashMap();
+    Map<String, Integer> f12961c = new ConcurrentHashMap();
 
     /* renamed from: d, reason: collision with root package name */
-    int f12176d = 0;
+    int f12962d = 0;
 
     /* renamed from: e, reason: collision with root package name */
-    int f12177e = 0;
+    int f12963e = 0;
 
     public final synchronized void a(g gVar) {
         if (gVar != null) {
             try {
                 gVar.toString();
                 String b9 = gVar.b();
-                int d2 = gVar.d();
-                if (d2 == 4) {
+                int d9 = gVar.d();
+                if (d9 == 4) {
                     a(b9);
-                } else if (d2 == 6) {
+                } else if (d9 == 6) {
                     b(b9);
                 }
             } finally {
@@ -43,15 +43,15 @@ public class h {
 
     public final synchronized void b(String str) {
         if (!TextUtils.isEmpty(str)) {
-            this.f12177e++;
-            this.f12175c.put(str, Integer.valueOf(a(this.f12175c, str) + 1));
+            this.f12963e++;
+            this.f12961c.put(str, Integer.valueOf(a(this.f12961c, str) + 1));
         }
     }
 
     public final synchronized void a(String str) {
         if (!TextUtils.isEmpty(str)) {
-            this.f12176d++;
-            this.f12174b.put(str, Integer.valueOf(a(this.f12174b, str) + 1));
+            this.f12962d++;
+            this.f12960b.put(str, Integer.valueOf(a(this.f12960b, str) + 1));
         }
     }
 
@@ -59,11 +59,11 @@ public class h {
         if (jSONObject != null) {
             try {
                 JSONArray jSONArray = new JSONArray();
-                Iterator<Map.Entry<String, Integer>> it = this.f12174b.entrySet().iterator();
+                Iterator<Map.Entry<String, Integer>> it = this.f12960b.entrySet().iterator();
                 while (it.hasNext()) {
                     String key = it.next().getKey();
-                    int a9 = a(this.f12174b, key);
-                    int a10 = a(this.f12175c, key);
+                    int a9 = a(this.f12960b, key);
+                    int a10 = a(this.f12961c, key);
                     JSONObject jSONObject2 = new JSONObject();
                     jSONObject2.put("dsp_id", key);
                     jSONObject2.put("show_c", a9);

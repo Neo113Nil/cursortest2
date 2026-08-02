@@ -4,7 +4,7 @@ import java.nio.ByteBuffer;
 
 /* renamed from: com.facebook.ads.redexgen.X.9x, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public final class C9x extends AbstractC2285oQ {
+public final class C9x extends AbstractC2305oQ {
     public int A00;
     public int A01;
     public int A02;
@@ -13,16 +13,16 @@ public final class C9x extends AbstractC2285oQ {
     public boolean A05;
     public byte[] A06 = C5C.A07;
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC2285oQ
-    public final C06083i A09(C06083i c06083i) throws C06093j {
-        if (c06083i.A02 == 2) {
+    @Override // com.instagram.common.viewpoint.core.AbstractC2305oQ
+    public final C06283i A09(C06283i c06283i) throws C06293j {
+        if (c06283i.A02 == 2) {
             this.A05 = true;
-            return (this.A03 == 0 && this.A02 == 0) ? C06083i.A05 : c06083i;
+            return (this.A03 == 0 && this.A02 == 0) ? C06283i.A05 : c06283i;
         }
-        throw new C06093j(c06083i);
+        throw new C06293j(c06283i);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC2285oQ
+    @Override // com.instagram.common.viewpoint.core.AbstractC2305oQ
     public final void A0A() {
         if (this.A05) {
             this.A05 = false;
@@ -32,7 +32,7 @@ public final class C9x extends AbstractC2285oQ {
         this.A00 = 0;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC2285oQ
+    @Override // com.instagram.common.viewpoint.core.AbstractC2305oQ
     public final void A0B() {
         if (this.A05) {
             if (this.A00 > 0) {
@@ -50,12 +50,12 @@ public final class C9x extends AbstractC2285oQ {
         this.A04 = 0L;
     }
 
-    public final void A0E(int i, int i6) {
+    public final void A0E(int i, int i4) {
         this.A03 = i;
-        this.A02 = i6;
+        this.A02 = i4;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC2285oQ, com.instagram.common.viewpoint.core.InterfaceC06103k
+    @Override // com.instagram.common.viewpoint.core.AbstractC2305oQ, com.instagram.common.viewpoint.core.InterfaceC06303k
     public final ByteBuffer A8d() {
         if (super.AAP() && this.A00 > 0) {
             A00(this.A00).put(this.A06, 0, this.A00).flip();
@@ -64,12 +64,12 @@ public final class C9x extends AbstractC2285oQ {
         return super.A8d();
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC2285oQ, com.instagram.common.viewpoint.core.InterfaceC06103k
+    @Override // com.instagram.common.viewpoint.core.AbstractC2305oQ, com.instagram.common.viewpoint.core.InterfaceC06303k
     public final boolean AAP() {
         return super.AAP() && this.A00 == 0;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC06103k
+    @Override // com.instagram.common.viewpoint.core.InterfaceC06303k
     public final void AHH(ByteBuffer byteBuffer) {
         int position = byteBuffer.position();
         int remaining = byteBuffer.limit();

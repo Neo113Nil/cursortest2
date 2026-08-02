@@ -29,40 +29,40 @@ import org.json.JSONObject;
 public class SplashJSBridgeImpl implements ISplashBridge {
 
     /* renamed from: b, reason: collision with root package name */
-    private WeakReference<Context> f20675b;
+    private WeakReference<Context> f21462b;
 
     /* renamed from: c, reason: collision with root package name */
-    private List<d> f20676c;
+    private List<d> f21463c;
 
     /* renamed from: d, reason: collision with root package name */
-    private String f20677d;
+    private String f21464d;
 
     /* renamed from: e, reason: collision with root package name */
-    private String f20678e;
+    private String f21465e;
 
     /* renamed from: f, reason: collision with root package name */
-    private int f20679f;
+    private int f21466f;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f20680g;
+    private int f21467g;
     private int i;
 
     /* renamed from: j, reason: collision with root package name */
-    private a f20682j;
+    private a f21469j;
 
     /* renamed from: k, reason: collision with root package name */
-    private SplashExpandDialog f20683k;
+    private SplashExpandDialog f21470k;
 
     /* renamed from: a, reason: collision with root package name */
-    private String f20674a = "SplashJSBridgeImpl";
+    private String f21461a = "SplashJSBridgeImpl";
 
     /* renamed from: h, reason: collision with root package name */
-    private int f20681h = 5;
+    private int f21468h = 5;
 
     public SplashJSBridgeImpl(Context context, String str, String str2) {
-        this.f20678e = str;
-        this.f20677d = str2;
-        this.f20675b = new WeakReference<>(context);
+        this.f21465e = str;
+        this.f21464d = str2;
+        this.f21462b = new WeakReference<>(context);
     }
 
     @Override // com.anythink.expressad.splash.js.ISplashBridge
@@ -83,7 +83,7 @@ public class SplashJSBridgeImpl implements ISplashBridge {
                 int i = v.a(t.b().g(), optString) ? 1 : 2;
                 try {
                     JSONObject jSONObject = new JSONObject();
-                    jSONObject.put("code", CommonJSBridgeImpUtils.f17949b);
+                    jSONObject.put("code", CommonJSBridgeImpUtils.f18736b);
                     JSONObject jSONObject2 = new JSONObject();
                     jSONObject2.put("result", i);
                     jSONObject.put("data", jSONObject2);
@@ -103,7 +103,7 @@ public class SplashJSBridgeImpl implements ISplashBridge {
     @Override // com.anythink.core.express.b.b
     public void close() {
         try {
-            a aVar = this.f20682j;
+            a aVar = this.f21469j;
             if (aVar != null) {
                 aVar.c();
             }
@@ -112,22 +112,22 @@ public class SplashJSBridgeImpl implements ISplashBridge {
     }
 
     @Override // com.anythink.core.express.b.b
-    public void expand(String str, boolean z3) {
+    public void expand(String str, boolean z6) {
         try {
             Bundle bundle = new Bundle();
             bundle.putString("url", str);
-            bundle.putBoolean("shouldUseCustomClose", z3);
-            WeakReference<Context> weakReference = this.f20675b;
+            bundle.putBoolean("shouldUseCustomClose", z6);
+            WeakReference<Context> weakReference = this.f21462b;
             if (weakReference == null || weakReference.get() == null) {
                 return;
             }
-            SplashExpandDialog splashExpandDialog = this.f20683k;
+            SplashExpandDialog splashExpandDialog = this.f21470k;
             if (splashExpandDialog == null || !splashExpandDialog.isShowing()) {
-                SplashExpandDialog splashExpandDialog2 = new SplashExpandDialog(this.f20675b.get(), bundle, this.f20682j);
-                this.f20683k = splashExpandDialog2;
-                splashExpandDialog2.setCampaignList(this.f20677d, this.f20676c);
-                this.f20683k.show();
-                a aVar = this.f20682j;
+                SplashExpandDialog splashExpandDialog2 = new SplashExpandDialog(this.f21462b.get(), bundle, this.f21469j);
+                this.f21470k = splashExpandDialog2;
+                splashExpandDialog2.setCampaignList(this.f21464d, this.f21463c);
+                this.f21470k.show();
+                a aVar = this.f21469j;
                 if (aVar != null) {
                     aVar.a(true);
                 }
@@ -138,26 +138,26 @@ public class SplashJSBridgeImpl implements ISplashBridge {
 
     @Override // com.anythink.expressad.atsignalcommon.mraid.IMraidJSBridge
     public d getMraidCampaign() {
-        List<d> list = this.f20676c;
+        List<d> list = this.f21463c;
         if (list == null || list.size() <= 0) {
             return null;
         }
-        return this.f20676c.get(0);
+        return this.f21463c.get(0);
     }
 
     public a getSplashBridgeListener() {
-        return this.f20682j;
+        return this.f21469j;
     }
 
     public List<d> getmCampaignList() {
-        return this.f20676c;
+        return this.f21463c;
     }
 
     @Override // com.anythink.expressad.splash.js.ISplashBridge
     public void gial(Object obj, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", CommonJSBridgeImpUtils.f17949b);
+            jSONObject.put("code", CommonJSBridgeImpUtils.f18736b);
             JSONObject jSONObject2 = new JSONObject();
             jSONObject2.put("packageNameList", new JSONArray());
             jSONObject.put("data", jSONObject2);
@@ -181,28 +181,28 @@ public class SplashJSBridgeImpl implements ISplashBridge {
             JSONObject jSONObject = new JSONObject();
             com.anythink.expressad.splash.a.a aVar = new com.anythink.expressad.splash.a.a(t.b().g());
             JSONObject jSONObject2 = new JSONObject();
-            jSONObject2.put("dev_close_state", this.f20679f);
+            jSONObject2.put("dev_close_state", this.f21466f);
             jSONObject.put("sdkSetting", jSONObject2);
             jSONObject.put("device", aVar.a());
-            jSONObject.put("campaignList", d.b(this.f20676c));
+            jSONObject.put("campaignList", d.b(this.f21463c));
             b.a();
-            c c9 = b.c(com.anythink.expressad.foundation.b.a.c().f(), this.f20677d);
+            c c9 = b.c(com.anythink.expressad.foundation.b.a.c().f(), this.f21464d);
             if (c9 == null) {
-                c9 = c.c(this.f20677d);
+                c9 = c.c(this.f21464d);
             }
-            if (!TextUtils.isEmpty(this.f20678e)) {
-                c9.e(this.f20678e);
+            if (!TextUtils.isEmpty(this.f21465e)) {
+                c9.e(this.f21465e);
             }
-            c9.a(this.f20677d);
-            c9.b(this.f20681h);
-            c9.a(this.f20680g);
+            c9.a(this.f21464d);
+            c9.b(this.f21468h);
+            c9.a(this.f21467g);
             jSONObject.put("unitSetting", c9.s());
             b.a();
             String a9 = b.a(com.anythink.expressad.foundation.b.a.c().f());
             if (!TextUtils.isEmpty(a9)) {
                 jSONObject.put("appSetting", new JSONObject(a9));
             }
-            jSONObject.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.SDK_INFO, com.anythink.expressad.atsignalcommon.a.a.f17933a);
+            jSONObject.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.SDK_INFO, com.anythink.expressad.atsignalcommon.a.a.f18720a);
             jSONObject.toString();
             h.a().a(obj, Base64.encodeToString(jSONObject.toString().getBytes(), 2));
         } catch (Throwable unused) {
@@ -212,11 +212,11 @@ public class SplashJSBridgeImpl implements ISplashBridge {
     @Override // com.anythink.expressad.splash.js.ISplashBridge
     public void install(Object obj, String str) {
         try {
-            List<d> list = this.f20676c;
+            List<d> list = this.f21463c;
             if (list == null) {
                 return;
             }
-            d dVar = (list == null || list.size() <= 0) ? null : this.f20676c.get(0);
+            d dVar = (list == null || list.size() <= 0) ? null : this.f21463c.get(0);
             if (TextUtils.isEmpty(str)) {
                 return;
             }
@@ -237,7 +237,7 @@ public class SplashJSBridgeImpl implements ISplashBridge {
             } catch (JSONException e9) {
                 e9.printStackTrace();
             }
-            a aVar = this.f20682j;
+            a aVar = this.f21469j;
             if (aVar != null) {
                 aVar.a(dVar);
             }
@@ -250,7 +250,7 @@ public class SplashJSBridgeImpl implements ISplashBridge {
         try {
             if (obj instanceof com.anythink.expressad.atsignalcommon.windvane.b) {
                 h.a();
-                com.anythink.core.express.d.a.a(((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a);
+                com.anythink.core.express.d.a.a(((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a);
             }
         } catch (Throwable unused) {
         }
@@ -258,7 +258,7 @@ public class SplashJSBridgeImpl implements ISplashBridge {
 
     @Override // com.anythink.core.express.b.b
     public void open(String str) {
-        a aVar = this.f20682j;
+        a aVar = this.f21469j;
         if (aVar != null) {
             aVar.b(str);
         }
@@ -271,20 +271,20 @@ public class SplashJSBridgeImpl implements ISplashBridge {
             CommonJSBridgeImpUtils.callbackExcep(obj, "params is null");
             return;
         }
-        Context g4 = t.b().g();
+        Context g9 = t.b().g();
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        if (g4 == null) {
+        if (g9 == null) {
             try {
-                if ((obj instanceof com.anythink.expressad.atsignalcommon.windvane.b) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                    g4 = windVaneWebView.getContext();
+                if ((obj instanceof com.anythink.expressad.atsignalcommon.windvane.b) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                    g9 = windVaneWebView.getContext();
                 }
             } catch (Exception e9) {
                 e9.getMessage();
             }
         }
-        if (g4 == null) {
+        if (g9 == null) {
             return;
         }
         try {
@@ -294,7 +294,7 @@ public class SplashJSBridgeImpl implements ISplashBridge {
             if (optInt == 1) {
                 y.a(optString);
             } else if (optInt == 2) {
-                y.a(g4, optString);
+                y.a(g9, optString);
             }
         } catch (JSONException e10) {
             e10.getMessage();
@@ -316,7 +316,7 @@ public class SplashJSBridgeImpl implements ISplashBridge {
         } catch (Exception e9) {
             e9.getMessage();
         }
-        a aVar = this.f20682j;
+        a aVar = this.f21469j;
         if (aVar != null) {
             aVar.a(1, -1);
         }
@@ -327,8 +327,8 @@ public class SplashJSBridgeImpl implements ISplashBridge {
     }
 
     public void release() {
-        if (this.f20682j != null) {
-            this.f20682j = null;
+        if (this.f21469j != null) {
+            this.f21469j = null;
         }
     }
 
@@ -355,13 +355,13 @@ public class SplashJSBridgeImpl implements ISplashBridge {
                 sb.append(n.k());
                 String a9 = v.a(optString, "&tun=", sb.toString());
                 int optInt2 = jSONObject.optInt("report");
-                boolean z3 = true;
+                boolean z6 = true;
                 if (optInt2 == 0) {
-                    Context g4 = t.b().g();
+                    Context g9 = t.b().g();
                     if (optInt == 0) {
-                        z3 = false;
+                        z6 = false;
                     }
-                    com.anythink.expressad.b.a.a(g4, (d) null, "", a9, z3);
+                    com.anythink.expressad.b.a.a(g9, (d) null, "", a9, z6);
                 } else {
                     com.anythink.expressad.b.a.a(t.b().g(), null, "", a9, false, optInt != 0, optInt2);
                 }
@@ -378,7 +378,7 @@ public class SplashJSBridgeImpl implements ISplashBridge {
                 return;
             }
             int i = new JSONObject(str).getInt(com.anythink.expressad.f.a.b.dl);
-            a aVar = this.f20682j;
+            a aVar = this.f21469j;
             if (aVar != null) {
                 aVar.b(i);
             }
@@ -406,7 +406,7 @@ public class SplashJSBridgeImpl implements ISplashBridge {
                     e = e9;
                     i = optInt;
                     e.getMessage();
-                    aVar = this.f20682j;
+                    aVar = this.f21469j;
                     if (aVar == null) {
                     }
                 }
@@ -414,7 +414,7 @@ public class SplashJSBridgeImpl implements ISplashBridge {
                 e = e10;
             }
         }
-        aVar = this.f20682j;
+        aVar = this.f21469j;
         if (aVar == null) {
             aVar.a(2, i);
         }
@@ -430,9 +430,9 @@ public class SplashJSBridgeImpl implements ISplashBridge {
             ArrayList arrayList = new ArrayList();
             for (int i = 0; i < jSONArray.length(); i++) {
                 String string = jSONArray.getString(i);
-                for (d dVar : this.f20676c) {
+                for (d dVar : this.f21463c) {
                     if (dVar.bh().equals(string)) {
-                        f.a(this.f20677d, dVar, f.f19124f);
+                        f.a(this.f21464d, dVar, f.f19911f);
                         arrayList.add(string);
                     }
                 }
@@ -442,24 +442,24 @@ public class SplashJSBridgeImpl implements ISplashBridge {
     }
 
     public void setAllowSkip(int i) {
-        this.f20680g = i;
+        this.f21467g = i;
     }
 
     public void setCampaignList(List<d> list) {
-        this.f20676c = list;
+        this.f21463c = list;
     }
 
     public void setCountdownS(int i) {
-        this.f20681h = i;
+        this.f21468h = i;
     }
 
     public void setDevCloseBtnStatus(int i) {
-        this.f20679f = i;
+        this.f21466f = i;
     }
 
     public void setSplashBridgeListener(a aVar) {
         if (aVar != null) {
-            this.f20682j = aVar;
+            this.f21469j = aVar;
         }
     }
 
@@ -469,8 +469,8 @@ public class SplashJSBridgeImpl implements ISplashBridge {
             if (TextUtils.isEmpty(str)) {
                 return;
             }
-            int optInt = new JSONObject(str).optInt(com.anythink.core.express.b.a.f17526b);
-            a aVar = this.f20682j;
+            int optInt = new JSONObject(str).optInt(com.anythink.core.express.b.a.f18313b);
+            a aVar = this.f21469j;
             if (aVar != null) {
                 aVar.a(optInt);
             }
@@ -480,7 +480,7 @@ public class SplashJSBridgeImpl implements ISplashBridge {
 
     @Override // com.anythink.expressad.splash.js.ISplashBridge
     public void triggerCloseBtn(Object obj, String str) {
-        a aVar = this.f20682j;
+        a aVar = this.f21469j;
         if (aVar != null) {
             aVar.a();
         }
@@ -492,7 +492,7 @@ public class SplashJSBridgeImpl implements ISplashBridge {
     }
 
     public void updateContext(Context context) {
-        this.f20675b = new WeakReference<>(context);
+        this.f21462b = new WeakReference<>(context);
     }
 
     public void updateCountDown(int i) {
@@ -500,10 +500,10 @@ public class SplashJSBridgeImpl implements ISplashBridge {
     }
 
     @Override // com.anythink.core.express.b.b
-    public void useCustomClose(boolean z3) {
-        int i = z3 ? 2 : 1;
+    public void useCustomClose(boolean z6) {
+        int i = z6 ? 2 : 1;
         try {
-            a aVar = this.f20682j;
+            a aVar = this.f21469j;
             if (aVar != null) {
                 aVar.a(i);
             }

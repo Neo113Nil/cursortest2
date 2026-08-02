@@ -9,60 +9,60 @@ import java.util.List;
 public class i extends c<com.anythink.core.common.a.l> {
 
     /* renamed from: c, reason: collision with root package name */
-    private static volatile i f12994c;
+    private static volatile i f13780c;
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f12995a;
+    private final String f13781a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final long f12996b;
+    private final long f13782b;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f12997a = "dsp_offer_show_record";
+        public static final String f13783a = "dsp_offer_show_record";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f12998b = "dsp_id";
+        public static final String f13784b = "dsp_id";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f12999c = "dsp_offer_id";
+        public static final String f13785c = "dsp_offer_id";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f13000d = "show_limit";
+        public static final String f13786d = "show_limit";
 
         /* renamed from: e, reason: collision with root package name */
-        public static final String f13001e = "show_count";
+        public static final String f13787e = "show_count";
 
         /* renamed from: f, reason: collision with root package name */
-        public static final String f13002f = "create_time";
+        public static final String f13788f = "create_time";
 
         /* renamed from: g, reason: collision with root package name */
-        public static final String f13003g = "last_update_time";
+        public static final String f13789g = "last_update_time";
 
         /* renamed from: h, reason: collision with root package name */
-        public static final String f13004h = "CREATE TABLE IF NOT EXISTS dsp_offer_show_record(dsp_id TEXT ,dsp_offer_id TEXT ,show_limit INTEGER ,show_count INTEGER ,create_time INTEGER ,last_update_time INTEGER)";
+        public static final String f13790h = "CREATE TABLE IF NOT EXISTS dsp_offer_show_record(dsp_id TEXT ,dsp_offer_id TEXT ,show_limit INTEGER ,show_count INTEGER ,create_time INTEGER ,last_update_time INTEGER)";
     }
 
     private i(d dVar) {
         super(dVar);
-        this.f12995a = i.class.getName();
-        this.f12996b = 86400000L;
+        this.f13781a = i.class.getName();
+        this.f13782b = 86400000L;
     }
 
     public static i a(d dVar) {
-        if (f12994c == null) {
+        if (f13780c == null) {
             synchronized (i.class) {
                 try {
-                    if (f12994c == null) {
-                        f12994c = new i(dVar);
+                    if (f13780c == null) {
+                        f13780c = new i(dVar);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f12994c;
+        return f13780c;
     }
 
     public final synchronized long b(com.anythink.core.common.a.l lVar) {
@@ -78,14 +78,14 @@ public class i extends c<com.anythink.core.common.a.l> {
                 ContentValues contentValues = new ContentValues();
                 contentValues.put("dsp_id", lVar.a());
                 contentValues.put("dsp_offer_id", lVar.b());
-                contentValues.put(a.f13000d, Integer.valueOf(lVar.c()));
+                contentValues.put(a.f13786d, Integer.valueOf(lVar.c()));
                 contentValues.put("show_count", Integer.valueOf(a9.d() + 1));
                 contentValues.put("last_update_time", Long.valueOf(System.currentTimeMillis()));
                 lVar.a();
                 lVar.b();
                 a9.d();
                 lVar.c();
-                return d().update(a.f12997a, contentValues, "dsp_id = ? and dsp_offer_id = ? ", new String[]{lVar.a(), lVar.b()});
+                return d().update(a.f13783a, contentValues, "dsp_id = ? and dsp_offer_id = ? ", new String[]{lVar.a(), lVar.b()});
             } catch (Exception unused) {
             }
         }
@@ -103,13 +103,13 @@ public class i extends c<com.anythink.core.common.a.l> {
             ContentValues contentValues = new ContentValues();
             contentValues.put("dsp_id", lVar.a());
             contentValues.put("dsp_offer_id", lVar.b());
-            contentValues.put(a.f13000d, Integer.valueOf(lVar.c()));
+            contentValues.put(a.f13786d, Integer.valueOf(lVar.c()));
             contentValues.put("show_count", (Integer) 0);
             contentValues.put("create_time", Long.valueOf(System.currentTimeMillis()));
             contentValues.put("last_update_time", Long.valueOf(System.currentTimeMillis()));
             lVar.a();
             lVar.b();
-            return d().insert(a.f12997a, null, contentValues);
+            return d().insert(a.f13783a, null, contentValues);
         }
         lVar.a();
         lVar.b();
@@ -130,7 +130,7 @@ public class i extends c<com.anythink.core.common.a.l> {
     private synchronized com.anythink.core.common.a.l a(String str, String str2) {
         Cursor cursor;
         try {
-            cursor = c().query(a.f12997a, null, "dsp_id = ?  AND dsp_offer_id = ? ", new String[]{str, str2}, null, null, null);
+            cursor = c().query(a.f13783a, null, "dsp_id = ?  AND dsp_offer_id = ? ", new String[]{str, str2}, null, null, null);
             try {
                 List<com.anythink.core.common.a.l> a9 = a(cursor);
                 cursor.close();
@@ -172,7 +172,7 @@ public class i extends c<com.anythink.core.common.a.l> {
                         com.anythink.core.common.a.l lVar = new com.anythink.core.common.a.l();
                         lVar.a(cursor.getString(cursor.getColumnIndex("dsp_id")));
                         lVar.b(cursor.getString(cursor.getColumnIndex("dsp_offer_id")));
-                        lVar.a(cursor.getInt(cursor.getColumnIndex(a.f13000d)));
+                        lVar.a(cursor.getInt(cursor.getColumnIndex(a.f13786d)));
                         lVar.b(cursor.getInt(cursor.getColumnIndex("show_count")));
                         arrayList.add(lVar);
                     } catch (Throwable unused) {
@@ -206,7 +206,7 @@ public class i extends c<com.anythink.core.common.a.l> {
         Cursor cursor = null;
         try {
             try {
-                cursor = c().query(a.f12997a, null, "show_count > show_limit", null, null, null, "last_update_time DESC", String.valueOf(i));
+                cursor = c().query(a.f13783a, null, "show_count > show_limit", null, null, null, "last_update_time DESC", String.valueOf(i));
                 List<com.anythink.core.common.a.l> a9 = a(cursor);
                 a9.size();
                 cursor.close();
@@ -228,7 +228,7 @@ public class i extends c<com.anythink.core.common.a.l> {
             if (d() == null) {
                 return;
             }
-            d().delete(a.f12997a, str, null);
+            d().delete(a.f13783a, str, null);
         } catch (Exception unused) {
         }
     }

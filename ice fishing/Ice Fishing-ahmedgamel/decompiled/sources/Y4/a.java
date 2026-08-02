@@ -37,7 +37,7 @@ public final class a {
         this.lastTimeInAppDismissed = l9;
     }
 
-    public final void setPaused(boolean z3) {
-        this.paused = z3;
+    public final void setPaused(boolean z6) {
+        this.paused = z6;
     }
 }

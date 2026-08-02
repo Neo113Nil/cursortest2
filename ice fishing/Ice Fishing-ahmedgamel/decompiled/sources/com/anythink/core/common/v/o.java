@@ -8,10 +8,10 @@ import java.util.Locale;
 public final class o {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f16844a = "MD5";
+    public static final String f17631a = "MD5";
 
     /* renamed from: b, reason: collision with root package name */
-    private static char[] f16845b = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+    private static char[] f17632b = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
     public static String a(String str) {
         try {
@@ -56,8 +56,8 @@ public final class o {
             byte[] digest = messageDigest.digest();
             StringBuilder sb = new StringBuilder(digest.length * 2);
             for (int i = 0; i < digest.length; i++) {
-                sb.append(f16845b[(digest[i] & 240) >>> 4]);
-                sb.append(f16845b[digest[i] & 15]);
+                sb.append(f17632b[(digest[i] & 240) >>> 4]);
+                sb.append(f17632b[digest[i] & 15]);
             }
             return sb.toString().toLowerCase();
         } catch (Exception unused) {
@@ -68,8 +68,8 @@ public final class o {
     private static String c(byte[] bArr) {
         StringBuilder sb = new StringBuilder(bArr.length * 2);
         for (int i = 0; i < bArr.length; i++) {
-            sb.append(f16845b[(bArr[i] & 240) >>> 4]);
-            sb.append(f16845b[bArr[i] & 15]);
+            sb.append(f17632b[(bArr[i] & 240) >>> 4]);
+            sb.append(f17632b[bArr[i] & 15]);
         }
         return sb.toString();
     }

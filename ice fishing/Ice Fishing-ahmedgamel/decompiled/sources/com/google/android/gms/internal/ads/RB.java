@@ -11,27 +11,27 @@ import java.util.RandomAccess;
 public abstract class RB extends NB implements List, RandomAccess {
 
     /* renamed from: u, reason: collision with root package name */
-    public static final PB f27177u = new PB(C3500lC.f31745x, 0);
+    public static final PB f27933u = new PB(C3523lC.f32525x, 0);
 
-    public static C3500lC j(Object obj) {
+    public static C3523lC j(Object obj) {
         Object[] objArr = {obj};
-        AbstractC2772Sd.j(objArr, 1);
+        AbstractC2792Sd.j(objArr, 1);
         return p(objArr, 1);
     }
 
-    public static C3500lC k(Object obj, Object obj2) {
+    public static C3523lC k(Object obj, Object obj2) {
         Object[] objArr = {obj, obj2};
-        AbstractC2772Sd.j(objArr, 2);
+        AbstractC2792Sd.j(objArr, 2);
         return p(objArr, 2);
     }
 
-    public static C3500lC l(Long l9, Long l10, Long l11, Long l12, Long l13) {
+    public static C3523lC l(Long l9, Long l10, Long l11, Long l12, Long l13) {
         Object[] objArr = {l9, l10, l11, l12, l13};
-        AbstractC2772Sd.j(objArr, 5);
+        AbstractC2792Sd.j(objArr, 5);
         return p(objArr, 5);
     }
 
-    public static C3500lC m(Object obj, Object obj2, Object obj3, Object obj4, Object obj5, Object obj6, Object obj7, Object obj8, Object obj9, Object obj10, Object obj11, Object obj12, Object... objArr) {
+    public static C3523lC m(Object obj, Object obj2, Object obj3, Object obj4, Object obj5, Object obj6, Object obj7, Object obj8, Object obj9, Object obj10, Object obj11, Object obj12, Object... objArr) {
         int length = objArr.length;
         int i = length + 12;
         Object[] objArr2 = new Object[i];
@@ -48,7 +48,7 @@ public abstract class RB extends NB implements List, RandomAccess {
         objArr2[10] = obj11;
         objArr2[11] = obj12;
         System.arraycopy(objArr, 0, objArr2, 12, length);
-        AbstractC2772Sd.j(objArr2, i);
+        AbstractC2792Sd.j(objArr2, i);
         return p(objArr2, i);
     }
 
@@ -56,33 +56,33 @@ public abstract class RB extends NB implements List, RandomAccess {
         if (!(collection instanceof NB)) {
             Object[] array = collection.toArray();
             int length = array.length;
-            AbstractC2772Sd.j(array, length);
+            AbstractC2792Sd.j(array, length);
             return p(array, length);
         }
-        RB f3 = ((NB) collection).f();
-        if (!f3.g()) {
-            return f3;
+        RB f2 = ((NB) collection).f();
+        if (!f2.g()) {
+            return f2;
         }
-        Object[] array2 = f3.toArray(NB.f26471n);
+        Object[] array2 = f2.toArray(NB.f27255n);
         return p(array2, array2.length);
     }
 
-    public static C3500lC o(Object[] objArr) {
+    public static C3523lC o(Object[] objArr) {
         if (objArr.length == 0) {
-            return C3500lC.f31745x;
+            return C3523lC.f32525x;
         }
         Object[] objArr2 = (Object[]) objArr.clone();
         int length = objArr2.length;
-        AbstractC2772Sd.j(objArr2, length);
+        AbstractC2792Sd.j(objArr2, length);
         return p(objArr2, length);
     }
 
-    public static C3500lC p(Object[] objArr, int i) {
-        return i == 0 ? C3500lC.f31745x : new C3500lC(objArr, i);
+    public static C3523lC p(Object[] objArr, int i) {
+        return i == 0 ? C3523lC.f32525x : new C3523lC(objArr, i);
     }
 
     @Override // com.google.android.gms.internal.ads.NB
-    public final AbstractC4255zC a() {
+    public final AbstractC4278zC a() {
         return listIterator(0);
     }
 
@@ -141,8 +141,8 @@ public abstract class RB extends NB implements List, RandomAccess {
     @Override // com.google.android.gms.internal.ads.NB
     public int h(Object[] objArr, int i) {
         int size = size();
-        for (int i6 = 0; i6 < size; i6++) {
-            objArr[i + i6] = get(i6);
+        for (int i4 = 0; i4 < size; i4++) {
+            objArr[i + i4] = get(i4);
         }
         return i + size;
     }
@@ -151,18 +151,18 @@ public abstract class RB extends NB implements List, RandomAccess {
     public final int hashCode() {
         int size = size();
         int i = 1;
-        for (int i6 = 0; i6 < size; i6++) {
-            i = (i * 31) + get(i6).hashCode();
+        for (int i4 = 0; i4 < size; i4++) {
+            i = (i * 31) + get(i4).hashCode();
         }
         return i;
     }
 
     @Override // java.util.List
     /* renamed from: i, reason: merged with bridge method [inline-methods] */
-    public RB subList(int i, int i6) {
-        AbstractC2772Sd.M(i, i6, size());
-        int i9 = i6 - i;
-        return i9 == size() ? this : i9 == 0 ? C3500lC.f31745x : new QB(this, i, i9);
+    public RB subList(int i, int i4) {
+        AbstractC2792Sd.M(i, i4, size());
+        int i6 = i4 - i;
+        return i6 == size() ? this : i6 == 0 ? C3523lC.f32525x : new QB(this, i, i6);
     }
 
     @Override // java.util.List
@@ -205,8 +205,8 @@ public abstract class RB extends NB implements List, RandomAccess {
     @Override // java.util.List
     /* renamed from: q, reason: merged with bridge method [inline-methods] */
     public final PB listIterator(int i) {
-        AbstractC2772Sd.L(i, size());
-        return isEmpty() ? f27177u : new PB(this, i);
+        AbstractC2792Sd.L(i, size());
+        return isEmpty() ? f27933u : new PB(this, i);
     }
 
     @Override // java.util.List

@@ -6,7 +6,7 @@ import com.anythink.expressad.foundation.d.d;
 public interface IMraidSignalCommunication {
     void close();
 
-    void expand(String str, boolean z3);
+    void expand(String str, boolean z6);
 
     d getMraidCampaign();
 
@@ -14,5 +14,5 @@ public interface IMraidSignalCommunication {
 
     void unload();
 
-    void useCustomClose(boolean z3);
+    void useCustomClose(boolean z6);
 }

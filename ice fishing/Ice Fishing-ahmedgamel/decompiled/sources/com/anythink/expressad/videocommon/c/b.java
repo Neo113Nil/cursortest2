@@ -9,42 +9,42 @@ import org.json.JSONObject;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private int f22346a;
+    private int f23133a;
 
     /* renamed from: b, reason: collision with root package name */
-    private int f22347b;
+    private int f23134b;
 
     /* renamed from: c, reason: collision with root package name */
-    private a f22348c;
+    private a f23135c;
 
-    public b(int i, int i6, a aVar) {
-        this.f22346a = i;
-        this.f22347b = i6;
-        this.f22348c = aVar;
+    public b(int i, int i4, a aVar) {
+        this.f23133a = i;
+        this.f23134b = i4;
+        this.f23135c = aVar;
     }
 
     private a c() {
-        return this.f22348c;
+        return this.f23135c;
     }
 
     public final int a() {
-        return this.f22346a;
+        return this.f23133a;
     }
 
     public final int b() {
-        return this.f22347b;
+        return this.f23134b;
     }
 
     private void a(int i) {
-        this.f22346a = i;
+        this.f23133a = i;
     }
 
     private void b(int i) {
-        this.f22347b = i;
+        this.f23134b = i;
     }
 
     private void a(a aVar) {
-        this.f22348c = aVar;
+        this.f23135c = aVar;
     }
 
     public static List<b> a(JSONArray jSONArray) {

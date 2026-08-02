@@ -12,16 +12,16 @@ import java.io.InputStreamReader;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final int f15944a = 100;
+    private static final int f16731a = 100;
 
     /* renamed from: b, reason: collision with root package name */
-    private static long f15945b;
+    private static long f16732b;
 
     /* renamed from: c, reason: collision with root package name */
-    private static long f15946c = SystemClock.uptimeMillis();
+    private static long f16733c = SystemClock.uptimeMillis();
 
     /* renamed from: d, reason: collision with root package name */
-    private static final File f15947d = new File(k.b("L3Byb2Mv") + Process.myPid() + k.b("L3N0YXQ="));
+    private static final File f16734d = new File(k.b("L3Byb2Mv") + Process.myPid() + k.b("L3N0YXQ="));
 
     public static int a() {
         InputStreamReader inputStreamReader;
@@ -29,7 +29,7 @@ public final class a {
         Throwable th;
         FileInputStream fileInputStream;
         try {
-            fileInputStream = new FileInputStream(f15947d);
+            fileInputStream = new FileInputStream(f16734d);
             try {
                 inputStreamReader = new InputStreamReader(fileInputStream);
                 try {
@@ -37,12 +37,12 @@ public final class a {
                     try {
                         String[] split = bufferedReader.readLine().split(" ");
                         long parseLong = Long.parseLong(split[13]) + Long.parseLong(split[14]);
-                        long j6 = parseLong - f15945b;
+                        long j6 = parseLong - f16732b;
                         long uptimeMillis = SystemClock.uptimeMillis();
-                        float f3 = ((uptimeMillis - f15946c) / 1000.0f) * 100.0f;
-                        f15945b = parseLong;
-                        f15946c = uptimeMillis;
-                        int availableProcessors = (int) (((j6 / f3) * 100.0f) / Runtime.getRuntime().availableProcessors());
+                        float f2 = ((uptimeMillis - f16733c) / 1000.0f) * 100.0f;
+                        f16732b = parseLong;
+                        f16733c = uptimeMillis;
+                        int availableProcessors = (int) (((j6 / f2) * 100.0f) / Runtime.getRuntime().availableProcessors());
                         try {
                             bufferedReader.close();
                             inputStreamReader.close();

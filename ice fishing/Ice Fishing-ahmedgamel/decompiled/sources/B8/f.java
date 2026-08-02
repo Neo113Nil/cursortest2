@@ -11,19 +11,19 @@ import pl.droidsonroids.gif.GifImageView;
 public abstract class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final List f235a = Arrays.asList("raw", k.f19632c, "mipmap");
+    public static final List f301a = Arrays.asList("raw", k.f20419c, "mipmap");
 
-    public static boolean a(GifImageView gifImageView, boolean z3, int i) {
+    public static boolean a(GifImageView gifImageView, boolean z6, int i) {
         Resources resources = gifImageView.getResources();
         if (resources == null) {
             return false;
         }
         try {
-            if (!f235a.contains(resources.getResourceTypeName(i))) {
+            if (!f301a.contains(resources.getResourceTypeName(i))) {
                 return false;
             }
             pl.droidsonroids.gif.c cVar = new pl.droidsonroids.gif.c(resources, i);
-            if (z3) {
+            if (z6) {
                 gifImageView.setImageDrawable(cVar);
                 return true;
             }

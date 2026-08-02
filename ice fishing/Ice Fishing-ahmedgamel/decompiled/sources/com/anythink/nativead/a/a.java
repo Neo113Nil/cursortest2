@@ -23,28 +23,28 @@ import java.util.concurrent.ConcurrentHashMap;
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f22736a = "a";
+    public static final String f23523a = "a";
 
     /* renamed from: e, reason: collision with root package name */
-    private static Map<String, a> f22737e = new ConcurrentHashMap(3);
+    private static Map<String, a> f23524e = new ConcurrentHashMap(3);
 
     /* renamed from: b, reason: collision with root package name */
-    private Context f22738b;
+    private Context f23525b;
 
     /* renamed from: c, reason: collision with root package name */
-    private String f22739c;
+    private String f23526c;
 
     /* renamed from: d, reason: collision with root package name */
-    private f f22740d;
+    private f f23527d;
 
     private a(Context context, String str) {
-        this.f22738b = context.getApplicationContext();
-        this.f22739c = str;
-        this.f22740d = f.a(context, str, "0");
+        this.f23525b = context.getApplicationContext();
+        this.f23526c = str;
+        this.f23527d = f.a(context, str, "0");
     }
 
     public static a a(Context context, String str) {
-        a aVar = f22737e.get(str);
+        a aVar = f23524e.get(str);
         if (aVar != null) {
             return aVar;
         }
@@ -52,7 +52,7 @@ public class a {
             if (aVar == null) {
                 try {
                     aVar = new a(context, str);
-                    f22737e.put(str, aVar);
+                    f23524e.put(str, aVar);
                 } catch (Throwable th) {
                     throw th;
                 }
@@ -64,7 +64,7 @@ public class a {
     private ae a(Map<String, Object> map) {
         ae aeVar = new ae();
         aeVar.a(map);
-        f fVar = this.f22740d;
+        f fVar = this.f23527d;
         if (fVar != null) {
             aeVar.a(fVar.i());
         }
@@ -75,27 +75,27 @@ public class a {
         ar arVar = new ar();
         arVar.a(context);
         arVar.a(aTAdRequest);
-        arVar.f13548d = cVar;
-        arVar.f13550f = aTAdMultipleLoadedListener;
-        arVar.f13547c = 0;
+        arVar.f14334d = cVar;
+        arVar.f14336f = aTAdMultipleLoadedListener;
+        arVar.f14333c = 0;
         if (map != null) {
             try {
-                arVar.f13551g = new HashMap(map);
+                arVar.f14337g = new HashMap(map);
             } catch (Throwable unused) {
             }
         }
         if (aTAdRequest != null) {
-            arVar.f13555l = aTAdRequest.getATAdxBidFloorInfo();
+            arVar.f14341l = aTAdRequest.getATAdxBidFloorInfo();
         }
-        this.f22740d.b(this.f22738b, "0", this.f22739c, arVar, aVar);
+        this.f23527d.b(this.f23525b, "0", this.f23526c, arVar, aVar);
     }
 
     public final List<ATAdInfo> a(Context context) {
-        return this.f22740d.a(context);
+        return this.f23527d.a(context);
     }
 
     public final ATAdStatusInfo a(Context context, Map<String, Object> map) {
-        return this.f22740d.a(context, map);
+        return this.f23527d.a(context, map);
     }
 
     public final com.anythink.core.common.h.c a(ATShowConfig aTShowConfig, Map<String, Object> map) {
@@ -103,11 +103,11 @@ public class a {
         String str2;
         ae aeVar = new ae();
         aeVar.a(map);
-        f fVar = this.f22740d;
+        f fVar = this.f23527d;
         if (fVar != null) {
             aeVar.a(fVar.i());
         }
-        final com.anythink.core.common.h.c b9 = this.f22740d.b(this.f22738b, false, true, aeVar);
+        final com.anythink.core.common.h.c b9 = this.f23527d.b(this.f23525b, false, true, aeVar);
         if (b9 == null || b9.f() == null || !(b9.e() instanceof CustomNativeAdapter)) {
             return null;
         }
@@ -120,7 +120,7 @@ public class a {
             str = "";
             str2 = "";
         }
-        detail.f14011F = str;
+        detail.f14797F = str;
         detail.z(str2);
         b9.a(b9.c() + 1);
         com.anythink.core.common.v.b.b.a().a(new Runnable() { // from class: com.anythink.nativead.a.a.1
@@ -130,7 +130,7 @@ public class a {
             }
         });
         aj.a(map, detail);
-        aj.a(this.f22739c, detail);
+        aj.a(this.f23526c, detail);
         return b9;
     }
 }

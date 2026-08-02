@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class M6 extends LinearLayout implements InterfaceC1483av {
+public final class M6 extends LinearLayout implements InterfaceC1503av {
     public static byte[] A0E;
     public static String[] A0F = {"SfnKd94fp0LIHLn5JRYBcVoydcWvvWC", "zcIUR0bnd2fDOpnzxhHInmQw6nqRGEtO", "", "Rlzv6bB7Czucpp1t79MjvCXFuIOZg8dc", "c1MACJD11uXVhN3Ickl6ZqMudEgzXQA", "WTgVZUaV9yT0hbCJXLqGbS", "77CVi", "3ZIeaeVMqGSC8jDTqrHFXNca0PmxnycW"};
     public static final int A0G;
@@ -35,20 +35,20 @@ public final class M6 extends LinearLayout implements InterfaceC1483av {
     public ImageView A02;
     public ImageView A03;
     public LinearLayout A04;
-    public C1475an A05;
-    public InterfaceC1482au A06;
+    public C1495an A05;
+    public InterfaceC1502au A06;
     public String A07;
     public final WebView A08;
-    public final C1840gi A09;
-    public final InterfaceC1479ar A0A;
+    public final C1860gi A09;
+    public final InterfaceC1499ar A0A;
     public final boolean A0B;
     public final boolean A0C;
     public final boolean A0D;
 
-    public static String A06(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0E, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 59);
+    public static String A06(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0E, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 59);
         }
         return new String(copyOfRange);
     }
@@ -61,33 +61,33 @@ public final class M6 extends LinearLayout implements InterfaceC1483av {
         A0A();
         A0I = Color.rgb(224, 224, 224);
         A0L = XB.A00(A06(90, 23, 25));
-        A0M = new ViewOnTouchListenerC1464ac();
+        A0M = new ViewOnTouchListenerC1484ac();
         A0K = Color.argb(34, 0, 0, 0);
         A0G = XV.A0P;
         A0H = XV.A0I;
         A0J = XV.A0A;
     }
 
-    public M6(C1840gi c1840gi, WebView webView) {
-        this(c1840gi, webView, false, false);
+    public M6(C1860gi c1860gi, WebView webView) {
+        this(c1860gi, webView, false, false);
     }
 
-    public M6(C1840gi c1840gi, WebView webView, boolean z3, boolean z6) {
-        super(c1840gi);
+    public M6(C1860gi c1860gi, WebView webView, boolean z6, boolean z9) {
+        super(c1860gi);
         this.A0A = new M7(this);
         this.A08 = webView;
-        this.A09 = c1840gi;
-        this.A0B = AbstractC1291Uq.A06(c1840gi);
-        this.A0D = z3;
-        this.A0C = z6;
+        this.A09 = c1860gi;
+        this.A0B = AbstractC1311Uq.A06(c1860gi);
+        this.A0D = z6;
+        this.A0C = z9;
         A08();
-        if (z6) {
+        if (z9) {
             A0C(false);
         }
     }
 
     private void A08() {
-        float f3;
+        float f2;
         YB.A0N(this, -1);
         setGravity(16);
         this.A01 = new ImageView(this.A09);
@@ -96,9 +96,9 @@ public final class M6 extends LinearLayout implements InterfaceC1483av {
         this.A01.setScaleType(ImageView.ScaleType.CENTER);
         this.A01.setImageBitmap(YN.A01(YM.BROWSER_CLOSE));
         this.A01.setOnTouchListener(A0M);
-        this.A01.setOnClickListener(new ViewOnClickListenerC1465ad(this));
+        this.A01.setOnClickListener(new ViewOnClickListenerC1485ad(this));
         addView(this.A01, layoutParams);
-        if (this.A0B && !C1290Up.A2w(this.A09)) {
+        if (this.A0B && !C1310Up.A2w(this.A09)) {
             this.A00 = new ImageView(this.A09);
             this.A00.setEnabled(false);
             this.A00.setAlpha(0.3f);
@@ -107,19 +107,19 @@ public final class M6 extends LinearLayout implements InterfaceC1483av {
             this.A00.setScaleType(ImageView.ScaleType.CENTER);
             this.A00.setImageBitmap(YN.A01(YM.BACK_ARROW));
             this.A00.setOnTouchListener(A0M);
-            this.A00.setOnClickListener(new ViewOnClickListenerC1466ae(this));
+            this.A00.setOnClickListener(new ViewOnClickListenerC1486ae(this));
             addView(this.A00, backButtonParams);
         }
-        this.A05 = new C1475an(this.A09);
+        this.A05 = new C1495an(this.A09);
         LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(0, -2);
-        if (this.A0B || C1290Up.A2w(this.A09)) {
-            f3 = 0.5f;
+        if (this.A0B || C1310Up.A2w(this.A09)) {
+            f2 = 0.5f;
         } else {
-            f3 = 1.0f;
+            f2 = 1.0f;
         }
-        layoutParams2.weight = f3;
+        layoutParams2.weight = f2;
         this.A05.setGravity(17);
-        if (C1290Up.A2w(this.A09) && !this.A0D) {
+        if (C1310Up.A2w(this.A09) && !this.A0D) {
             this.A04 = new LinearLayout(this.A09);
             this.A04.setOrientation(1);
             this.A04.setPadding(0, A0J, 0, A0J);
@@ -136,7 +136,7 @@ public final class M6 extends LinearLayout implements InterfaceC1483av {
         } else {
             addView(this.A05, layoutParams2);
         }
-        if (this.A0B && !C1290Up.A2w(this.A09)) {
+        if (this.A0B && !C1310Up.A2w(this.A09)) {
             this.A02 = new ImageView(this.A09);
             this.A02.setEnabled(false);
             this.A02.setAlpha(0.3f);
@@ -145,7 +145,7 @@ public final class M6 extends LinearLayout implements InterfaceC1483av {
             this.A02.setScaleType(ImageView.ScaleType.CENTER);
             this.A02.setImageBitmap(YN.A02(YM.BACK_ARROW));
             this.A02.setOnTouchListener(A0M);
-            this.A02.setOnClickListener(new ViewOnClickListenerC1467af(this));
+            this.A02.setOnClickListener(new ViewOnClickListenerC1487af(this));
             addView(this.A02, titleViewsParams2);
         }
         this.A03 = new ImageView(this.A09);
@@ -153,7 +153,7 @@ public final class M6 extends LinearLayout implements InterfaceC1483av {
         this.A03.setContentDescription(A06(16, 19, 44));
         this.A03.setScaleType(ImageView.ScaleType.CENTER);
         this.A03.setOnTouchListener(A0M);
-        this.A03.setOnClickListener(new ViewOnClickListenerC1468ag(this));
+        this.A03.setOnClickListener(new ViewOnClickListenerC1488ag(this));
         addView(this.A03, layoutParams3);
         A09();
     }
@@ -176,7 +176,7 @@ public final class M6 extends LinearLayout implements InterfaceC1483av {
     private void A09() {
         PackageManager packageManager;
         Bitmap bitmap = null;
-        boolean A0k = C1290Up.A0k(this.A09);
+        boolean A0k = C1310Up.A0k(this.A09);
         if (!A0k && (packageManager = this.A09.getPackageManager()) != null) {
             List<ResolveInfo> queryIntentActivities = packageManager.queryIntentActivities(new Intent(A06(46, 26, 123), A0L), b.aX);
             if (queryIntentActivities.isEmpty()) {
@@ -201,15 +201,15 @@ public final class M6 extends LinearLayout implements InterfaceC1483av {
                 bitmap = getExternalBrowserBitmap();
             }
         }
-        if (C1290Up.A2w(this.A09) || A0k) {
+        if (C1310Up.A2w(this.A09) || A0k) {
             this.A03.setVisibility(0);
             bitmap = getExternalBrowserBitmap();
         }
         this.A03.setImageBitmap(bitmap);
     }
 
-    private void A0C(boolean z3) {
-        int i = z3 ? 0 : 8;
+    private void A0C(boolean z6) {
+        int i = z6 ? 0 : 8;
         ImageView imageView = this.A00;
         if (A0F[1].charAt(15) == 'W') {
             throw new RuntimeException();
@@ -224,14 +224,14 @@ public final class M6 extends LinearLayout implements InterfaceC1483av {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void A0D(boolean z3) {
-        if (z3) {
+    public void A0D(boolean z6) {
+        if (z6) {
             A0C(true);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1483av
-    public InterfaceC1479ar getBrowserNavigationListener() {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1503av
+    public InterfaceC1499ar getBrowserNavigationListener() {
         return this.A0A;
     }
 
@@ -246,17 +246,17 @@ public final class M6 extends LinearLayout implements InterfaceC1483av {
         this.A01.setVisibility(i);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1483av
-    public void setListener(InterfaceC1482au interfaceC1482au) {
-        this.A06 = interfaceC1482au;
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1503av
+    public void setListener(InterfaceC1502au interfaceC1502au) {
+        this.A06 = interfaceC1502au;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1483av
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1503av
     public void setTitle(String str) {
         this.A05.setTitle(str);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1483av
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1503av
     public void setUrl(String str) {
         this.A07 = str;
         if (TextUtils.isEmpty(this.A07) || A06(35, 11, 94).equals(this.A07)) {

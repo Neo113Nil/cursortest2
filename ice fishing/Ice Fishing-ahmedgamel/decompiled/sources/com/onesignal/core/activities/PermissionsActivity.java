@@ -1,10 +1,10 @@
 package com.onesignal.core.activities;
 
-import C2.N;
-import D.AbstractC0288g;
-import D.H;
-import S7.AbstractC0406y;
-import S7.InterfaceC0404w;
+import D.AbstractC0276f;
+import D.G;
+import E2.M;
+import S7.AbstractC0410y;
+import S7.InterfaceC0408w;
 import V7.l;
 import W7.n;
 import android.content.Intent;
@@ -14,19 +14,20 @@ import androidx.lifecycle.L;
 import androidx.lifecycle.V;
 import androidx.lifecycle.X;
 import com.onesignal.core.internal.permissions.h;
-import h0.AbstractC4554b;
+import h0.AbstractC4559b;
 import kotlin.jvm.internal.i;
 import kotlin.jvm.internal.s;
-import u7.InterfaceC5087e;
+import u7.InterfaceC5079e;
 import u7.v;
-import w4.C5151a;
-import z7.C5273j;
-import z7.InterfaceC5267d;
-import z7.InterfaceC5272i;
+import w.AbstractC5128c;
+import w4.C5150a;
+import z7.C5246j;
+import z7.InterfaceC5240d;
+import z7.InterfaceC5245i;
 
 /* loaded from: classes2.dex */
 public final class PermissionsActivity extends p {
-    private final InterfaceC5087e viewModel$delegate = new N(s.a(h.class), new f(this), new e(this), new g(null, this));
+    private final InterfaceC5079e viewModel$delegate = new M(s.a(h.class), new f(this), new e(this), new g(null, this));
 
     public static final class a extends B7.c {
         Object L$0;
@@ -34,8 +35,8 @@ public final class PermissionsActivity extends p {
         int label;
         /* synthetic */ Object result;
 
-        public a(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public a(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -55,111 +56,111 @@ public final class PermissionsActivity extends p {
             final /* synthetic */ PermissionsActivity this$0;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public a(PermissionsActivity permissionsActivity, InterfaceC5267d interfaceC5267d) {
-                super(2, interfaceC5267d);
+            public a(PermissionsActivity permissionsActivity, InterfaceC5240d interfaceC5240d) {
+                super(2, interfaceC5240d);
                 this.this$0 = permissionsActivity;
             }
 
             @Override // B7.a
-            public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-                a aVar = new a(this.this$0, interfaceC5267d);
+            public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+                a aVar = new a(this.this$0, interfaceC5240d);
                 aVar.Z$0 = ((Boolean) obj).booleanValue();
                 return aVar;
             }
 
             @Override // I7.p
             public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-                return invoke(((Boolean) obj).booleanValue(), (InterfaceC5267d) obj2);
+                return invoke(((Boolean) obj).booleanValue(), (InterfaceC5240d) obj2);
             }
 
             @Override // B7.a
             public final Object invokeSuspend(Object obj) {
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 if (this.label != 0) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 if (this.Z$0) {
                     this.this$0.finishActivity();
                 }
-                return v.f41353a;
+                return v.f41073a;
             }
 
-            public final Object invoke(boolean z3, InterfaceC5267d interfaceC5267d) {
-                return ((a) create(Boolean.valueOf(z3), interfaceC5267d)).invokeSuspend(v.f41353a);
+            public final Object invoke(boolean z6, InterfaceC5240d interfaceC5240d) {
+                return ((a) create(Boolean.valueOf(z6), interfaceC5240d)).invokeSuspend(v.f41073a);
             }
         }
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return PermissionsActivity.this.new b(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return PermissionsActivity.this.new b(interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((b) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((b) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
-            v vVar = v.f41353a;
+            v vVar = v.f41073a;
             if (i != 0) {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 return vVar;
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             l shouldFinish = PermissionsActivity.this.getViewModel().getShouldFinish();
             a aVar2 = new a(PermissionsActivity.this, null);
             this.label = 1;
-            int i6 = V7.h.f3341a;
+            int i4 = V7.h.f3471a;
             V7.g gVar = new V7.g(aVar2, null);
-            InterfaceC5272i interfaceC5272i = C5273j.f42272n;
-            U7.a aVar3 = U7.a.f3219n;
-            interfaceC5272i.n(interfaceC5272i);
-            kotlin.jvm.internal.h.a(interfaceC5272i, interfaceC5272i);
-            Object p9 = new H(gVar, shouldFinish, interfaceC5272i, 0, aVar3).p(n.f3447n, this);
-            if (p9 != aVar) {
-                p9 = vVar;
+            InterfaceC5245i interfaceC5245i = C5246j.f42241n;
+            U7.a aVar3 = U7.a.f3342n;
+            interfaceC5245i.n(interfaceC5245i);
+            kotlin.jvm.internal.h.a(interfaceC5245i, interfaceC5245i);
+            Object l9 = new G(gVar, shouldFinish, interfaceC5245i, 0, aVar3).l(n.f3609n, this);
+            if (l9 != aVar) {
+                l9 = vVar;
             }
-            if (p9 != aVar) {
-                p9 = vVar;
+            if (l9 != aVar) {
+                l9 = vVar;
             }
-            return p9 == aVar ? aVar : vVar;
+            return l9 == aVar ? aVar : vVar;
         }
     }
 
     public static final class c extends B7.h implements I7.p {
         int label;
 
-        public c(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public c(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return PermissionsActivity.this.new c(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return PermissionsActivity.this.new c(interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((c) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((c) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 if (PermissionsActivity.this.getViewModel().getPermissionRequestType() == null) {
                     PermissionsActivity permissionsActivity = PermissionsActivity.this;
                     Bundle extras = permissionsActivity.getIntent().getExtras();
@@ -172,9 +173,9 @@ public final class PermissionsActivity extends p {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
@@ -183,27 +184,27 @@ public final class PermissionsActivity extends p {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public d(Intent intent, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public d(Intent intent, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$intent = intent;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return PermissionsActivity.this.new d(this.$intent, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return PermissionsActivity.this.new d(this.$intent, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((d) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((d) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 PermissionsActivity permissionsActivity = PermissionsActivity.this;
                 Bundle extras = this.$intent.getExtras();
                 this.label = 1;
@@ -214,9 +215,9 @@ public final class PermissionsActivity extends p {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
@@ -266,13 +267,13 @@ public final class PermissionsActivity extends p {
         }
 
         @Override // I7.a
-        public final AbstractC4554b invoke() {
-            AbstractC4554b abstractC4554b;
+        public final AbstractC4559b invoke() {
+            AbstractC4559b abstractC4559b;
             I7.a aVar = this.$extrasProducer;
-            if (aVar != null && (abstractC4554b = (AbstractC4554b) aVar.invoke()) != null) {
-                return abstractC4554b;
+            if (aVar != null && (abstractC4559b = (AbstractC4559b) aVar.invoke()) != null) {
+                return abstractC4559b;
             }
-            AbstractC4554b defaultViewModelCreationExtras = this.$this_viewModels.getDefaultViewModelCreationExtras();
+            AbstractC4559b defaultViewModelCreationExtras = this.$this_viewModels.getDefaultViewModelCreationExtras();
             kotlin.jvm.internal.h.d(defaultViewModelCreationExtras, "this.defaultViewModelCreationExtras");
             return defaultViewModelCreationExtras;
         }
@@ -281,7 +282,7 @@ public final class PermissionsActivity extends p {
     /* JADX INFO: Access modifiers changed from: private */
     public final void finishActivity() {
         finish();
-        overridePendingTransition(C5151a.onesignal_fade_in, C5151a.onesignal_fade_out);
+        overridePendingTransition(C5150a.onesignal_fade_in, C5150a.onesignal_fade_out);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -297,22 +298,22 @@ public final class PermissionsActivity extends p {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object handleBundleParams(Bundle bundle, InterfaceC5267d interfaceC5267d) {
+    public final Object handleBundleParams(Bundle bundle, InterfaceC5240d interfaceC5240d) {
         a aVar;
         Object obj;
         int i;
         String string;
         PermissionsActivity permissionsActivity;
-        if (interfaceC5267d instanceof a) {
-            aVar = (a) interfaceC5267d;
-            int i6 = aVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                aVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof a) {
+            aVar = (a) interfaceC5240d;
+            int i4 = aVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                aVar.label = i4 - Integer.MIN_VALUE;
                 obj = aVar.result;
-                A7.a aVar2 = A7.a.f58n;
+                A7.a aVar2 = A7.a.f215n;
                 i = aVar.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     if (bundle != null) {
                         reregisterCallbackHandlers(bundle);
                         String string2 = bundle.getString(h.INTENT_EXTRA_PERMISSION_TYPE);
@@ -327,37 +328,37 @@ public final class PermissionsActivity extends p {
                         }
                         permissionsActivity = this;
                     }
-                    return v.f41353a;
+                    return v.f41073a;
                 }
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 string = (String) aVar.L$1;
                 permissionsActivity = (PermissionsActivity) aVar.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 if (((Boolean) obj).booleanValue()) {
                     permissionsActivity.finishActivity();
                 } else if (string != null) {
                     permissionsActivity.requestPermission(string);
                 }
-                return v.f41353a;
+                return v.f41073a;
             }
         }
-        aVar = new a(interfaceC5267d);
+        aVar = new a(interfaceC5240d);
         obj = aVar.result;
-        A7.a aVar22 = A7.a.f58n;
+        A7.a aVar22 = A7.a.f215n;
         i = aVar.label;
         if (i != 0) {
         }
         if (((Boolean) obj).booleanValue()) {
         }
-        return v.f41353a;
+        return v.f41073a;
     }
 
     private final void requestPermission(String str) {
         if (getViewModel().shouldRequestPermission()) {
-            getViewModel().recordRationaleState(AbstractC0288g.e(this, str));
-            AbstractC0288g.d(this, new String[]{str}, 2);
+            getViewModel().recordRationaleState(AbstractC0276f.e(this, str));
+            AbstractC0276f.d(this, new String[]{str}, 2);
         }
     }
 
@@ -367,18 +368,18 @@ public final class PermissionsActivity extends p {
         try {
             Class.forName(string);
         } catch (ClassNotFoundException unused) {
-            throw new RuntimeException(u1.h.f("Could not find callback class for PermissionActivity: ", string));
+            throw new RuntimeException(AbstractC5128c.f("Could not find callback class for PermissionActivity: ", string));
         }
     }
 
-    @Override // androidx.activity.p, D.AbstractActivityC0295n, android.app.Activity
+    @Override // androidx.activity.p, D.AbstractActivityC0283m, android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         if (getIntent().getExtras() == null) {
             finishActivity();
         } else {
-            AbstractC0406y.o(L.e(this), null, new b(null), 3);
-            AbstractC0406y.o(L.e(this), null, new c(null), 3);
+            AbstractC0410y.o(L.e(this), null, new b(null), 3);
+            AbstractC0410y.o(L.e(this), null, new c(null), 3);
         }
     }
 
@@ -386,7 +387,7 @@ public final class PermissionsActivity extends p {
     public void onNewIntent(Intent intent) {
         kotlin.jvm.internal.h.e(intent, "intent");
         super.onNewIntent(intent);
-        AbstractC0406y.o(L.e(this), null, new d(intent, null), 3);
+        AbstractC0410y.o(L.e(this), null, new d(intent, null), 3);
     }
 
     @Override // android.app.Activity
@@ -401,7 +402,7 @@ public final class PermissionsActivity extends p {
         kotlin.jvm.internal.h.e(grantResults, "grantResults");
         super.onRequestPermissionsResult(i, permissions, grantResults);
         if (i == 2) {
-            getViewModel().onRequestPermissionsResult(permissions, grantResults, permissions.length != 0 ? AbstractC0288g.e(this, permissions[0]) : false);
+            getViewModel().onRequestPermissionsResult(permissions, grantResults, permissions.length != 0 ? AbstractC0276f.e(this, permissions[0]) : false);
         }
     }
 }

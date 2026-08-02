@@ -6,7 +6,7 @@ import java.util.concurrent.locks.AbstractOwnableSynchronizer;
 public final class OD extends AbstractOwnableSynchronizer implements Runnable {
 
     /* renamed from: n, reason: collision with root package name */
-    public final PD f26590n;
+    public final PD f27372n;
 
     public final /* synthetic */ void a(Thread thread) {
         setExclusiveOwnerThread(thread);
@@ -17,6 +17,6 @@ public final class OD extends AbstractOwnableSynchronizer implements Runnable {
     }
 
     public final String toString() {
-        return this.f26590n.toString();
+        return this.f27372n.toString();
     }
 }

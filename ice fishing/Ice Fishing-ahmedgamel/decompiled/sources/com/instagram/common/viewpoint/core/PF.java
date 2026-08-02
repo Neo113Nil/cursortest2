@@ -17,16 +17,16 @@ public class PF<K, V> {
     public Object[] A02 = P5.A03;
     public int A00 = 0;
 
-    public static String A03(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 97);
+    public static String A03(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 97);
         }
         return new String(copyOfRange);
     }
 
     public static void A04() {
-        A07 = new byte[]{44, 112, 108, 109, 119, 36, 73, 101, 116, 45, 34, 46, c.f16318c, 57};
+        A07 = new byte[]{44, 112, 108, 109, 119, 36, 73, 101, 116, 45, 34, 46, c.f17105c, 57};
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:24:0x006f, code lost:
@@ -71,44 +71,44 @@ public class PF<K, V> {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final V A0A(int i) {
-        int i6;
+        int i4;
         int[] iArr;
         Object[] objArr;
         V v9 = (V) this.A02[(i << 1) + 1];
-        int i9 = this.A00;
-        if (i9 <= 1) {
-            A06(this.A01, this.A02, i9);
+        int i6 = this.A00;
+        if (i6 <= 1) {
+            A06(this.A01, this.A02, i6);
             this.A01 = P5.A01;
             this.A02 = P5.A03;
-            i6 = 0;
+            i4 = 0;
         } else {
-            i6 = i9 - 1;
+            i4 = i6 - 1;
             if (this.A01.length <= 8 || this.A00 >= this.A01.length / 3) {
-                if (i < i6) {
-                    System.arraycopy(this.A01, i + 1, this.A01, i, i6 - i);
-                    System.arraycopy(this.A02, (i + 1) << 1, this.A02, i << 1, (i6 - i) << 1);
+                if (i < i4) {
+                    System.arraycopy(this.A01, i + 1, this.A01, i, i4 - i);
+                    System.arraycopy(this.A02, (i + 1) << 1, this.A02, i << 1, (i4 - i) << 1);
                 }
-                this.A02[i6 << 1] = null;
-                this.A02[(i6 << 1) + 1] = null;
+                this.A02[i4 << 1] = null;
+                this.A02[(i4 << 1) + 1] = null;
             } else {
-                int i10 = i9 > 8 ? i9 + (i9 >> 1) : 8;
+                int i9 = i6 > 8 ? i6 + (i6 >> 1) : 8;
                 String[] strArr = A08;
                 if (strArr[3].length() != strArr[5].length()) {
                     iArr = this.A01;
                     objArr = this.A02;
-                    A05(i10);
+                    A05(i9);
                 } else {
                     A08[4] = "WH99ujY4Es6AewxBY41FF";
                     iArr = this.A01;
                     objArr = this.A02;
-                    A05(i10);
+                    A05(i9);
                 }
             }
         }
-        if (i9 != this.A00) {
+        if (i6 != this.A00) {
             throw new ConcurrentModificationException();
         }
-        this.A00 = i6;
+        this.A00 = i4;
         if (A08[4].length() == 22) {
             throw new RuntimeException();
         }
@@ -163,10 +163,10 @@ public class PF<K, V> {
         if (size() != map.size()) {
             return false;
         }
-        for (int i6 = 0; i6 < this.A00; i6++) {
+        for (int i4 = 0; i4 < this.A00; i4++) {
             try {
-                K A092 = A09(i6);
-                V A0B2 = A0B(i6);
+                K A092 = A09(i4);
+                V A0B2 = A0B(i4);
                 Object obj3 = map.get(A092);
                 if (A0B2 == null) {
                     if (obj3 == null && map.containsKey(A092)) {
@@ -197,14 +197,14 @@ public class PF<K, V> {
         int[] iArr = this.A01;
         Object[] objArr = this.A02;
         int i = 0;
-        int i6 = 0;
-        int i9 = 1;
-        int i10 = this.A00;
-        while (i6 < i10) {
-            Object obj = objArr[i9];
-            i += iArr[i6] ^ (obj == null ? 0 : obj.hashCode());
-            i6++;
-            i9 += 2;
+        int i4 = 0;
+        int i6 = 1;
+        int i9 = this.A00;
+        while (i4 < i9) {
+            Object obj = objArr[i6];
+            i += iArr[i4] ^ (obj == null ? 0 : obj.hashCode());
+            i4++;
+            i6 += 2;
         }
         return i;
     }
@@ -229,22 +229,22 @@ public class PF<K, V> {
             A01 = A01(k9, hashCode);
         }
         if (A01 >= 0) {
-            int i6 = (A01 << 1) + 1;
-            V v10 = (V) this.A02[i6];
-            this.A02[i6] = v9;
+            int i4 = (A01 << 1) + 1;
+            V v10 = (V) this.A02[i4];
+            this.A02[i4] = v9;
             return v10;
         }
-        int i9 = ~A01;
+        int i6 = ~A01;
         if (i >= this.A01.length) {
-            int i10 = 8;
+            int i9 = 8;
             if (i >= 8) {
-                i10 = (i >> 1) + i;
+                i9 = (i >> 1) + i;
             } else if (i < 4) {
-                i10 = 4;
+                i9 = 4;
             }
             int[] iArr = this.A01;
             Object[] objArr = this.A02;
-            A05(i10);
+            A05(i9);
             if (i != this.A00) {
                 throw new ConcurrentModificationException();
             }
@@ -254,9 +254,9 @@ public class PF<K, V> {
             }
             A06(iArr, objArr, i);
         }
-        if (i9 < i) {
-            System.arraycopy(this.A01, i9, this.A01, i9 + 1, i - i9);
-            System.arraycopy(this.A02, i9 << 1, this.A02, (i9 + 1) << 1, (this.A00 - i9) << 1);
+        if (i6 < i) {
+            System.arraycopy(this.A01, i6, this.A01, i6 + 1, i - i6);
+            System.arraycopy(this.A02, i6 << 1, this.A02, (i6 + 1) << 1, (this.A00 - i6) << 1);
         }
         if (i == this.A00) {
             int[] iArr2 = this.A01;
@@ -266,10 +266,10 @@ public class PF<K, V> {
             String[] strArr = A08;
             strArr[6] = "wNq2gfAl4zWIB1XFoKeYdvHUl0gsJJAY";
             strArr[0] = "ABvHOLLiQ2Gbe1PeIygvGpsQN2lfiJ3N";
-            if (i9 < iArr2.length) {
-                this.A01[i9] = hashCode;
-                this.A02[i9 << 1] = k9;
-                this.A02[(i9 << 1) + 1] = v9;
+            if (i6 < iArr2.length) {
+                this.A01[i6] = hashCode;
+                this.A02[i6 << 1] = k9;
+                this.A02[(i6 << 1) + 1] = v9;
                 this.A00++;
                 return null;
             }
@@ -295,20 +295,20 @@ public class PF<K, V> {
         if (this.A02[N8] == null) {
             return end;
         }
-        int i6 = end + 1;
-        while (i6 < i) {
-            int N9 = this.A01[i6];
+        int i4 = end + 1;
+        while (i4 < i) {
+            int N9 = this.A01[i4];
             if (N9 != 0) {
                 break;
             }
-            int N10 = i6 << 1;
+            int N10 = i4 << 1;
             if (this.A02[N10] == null) {
-                return i6;
+                return i4;
             }
-            i6++;
+            i4++;
         }
-        for (int i9 = end - 1; i9 >= 0; i9--) {
-            int N11 = this.A01[i9];
+        for (int i6 = end - 1; i6 >= 0; i6--) {
+            int N11 = this.A01[i6];
             if (N11 != 0) {
                 break;
             }
@@ -324,22 +324,22 @@ public class PF<K, V> {
             String[] strArr2 = A08;
             strArr2[3] = "nljZKXIH96LM";
             strArr2[5] = "33MSJmaTT2hK";
-            int N13 = i9 << 1;
+            int N13 = i6 << 1;
             if (objArr[N13] == null) {
-                return i9;
+                return i6;
             }
         }
-        int N14 = ~i6;
+        int N14 = ~i4;
         return N14;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.PF != com.facebook.ads.internal.androidx.support.v4.util.SimpleArrayMap<K, V> */
     private final int A01(Object obj, int i) {
-        int i6 = this.A00;
-        if (i6 == 0) {
+        int i4 = this.A00;
+        if (i4 == 0) {
             return -1;
         }
-        int end = A02(this.A01, i6, i);
+        int end = A02(this.A01, i4, i);
         if (end < 0) {
             return end;
         }
@@ -347,41 +347,41 @@ public class PF<K, V> {
         if (obj.equals(this.A02[N8])) {
             return end;
         }
-        int i9 = end + 1;
-        while (i9 < i6) {
-            int N9 = this.A01[i9];
+        int i6 = end + 1;
+        while (i6 < i4) {
+            int N9 = this.A01[i6];
             if (N9 != i) {
                 break;
             }
-            int N10 = i9 << 1;
+            int N10 = i6 << 1;
             if (obj.equals(this.A02[N10])) {
-                return i9;
+                return i6;
             }
-            i9++;
+            i6++;
         }
-        for (int i10 = end - 1; i10 >= 0; i10--) {
+        for (int i9 = end - 1; i9 >= 0; i9--) {
             int[] iArr = this.A01;
             int index = A08[2].length();
             if (index != 11) {
                 throw new RuntimeException();
             }
             A08[2] = "0KWp7g9eUEy";
-            int N11 = iArr[i10];
+            int N11 = iArr[i9];
             if (N11 != i) {
                 break;
             }
-            int N12 = i10 << 1;
+            int N12 = i9 << 1;
             if (obj.equals(this.A02[N12])) {
-                return i10;
+                return i9;
             }
         }
-        int N13 = ~i9;
+        int N13 = ~i6;
         return N13;
     }
 
-    public static int A02(int[] iArr, int i, int i6) {
+    public static int A02(int[] iArr, int i, int i4) {
         try {
-            return P5.A02(iArr, i, i6);
+            return P5.A02(iArr, i, i4);
         } catch (ArrayIndexOutOfBoundsException unused) {
             throw new ConcurrentModificationException();
         }
@@ -390,7 +390,7 @@ public class PF<K, V> {
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.PF != com.facebook.ads.internal.androidx.support.v4.util.SimpleArrayMap<K, V> */
     private void A05(int i) {
         if (i == 8) {
-            synchronized (C1924i7.class) {
+            synchronized (C1944i7.class) {
                 if (A06 != null) {
                     Object[] objArr = A06;
                     this.A02 = objArr;
@@ -403,7 +403,7 @@ public class PF<K, V> {
                 }
             }
         } else if (i == 4) {
-            synchronized (C1924i7.class) {
+            synchronized (C1944i7.class) {
                 if (A05 != null) {
                     Object[] objArr2 = A05;
                     this.A02 = objArr2;
@@ -422,12 +422,12 @@ public class PF<K, V> {
 
     public static void A06(int[] iArr, Object[] objArr, int i) {
         if (iArr.length == 8) {
-            synchronized (C1924i7.class) {
+            synchronized (C1944i7.class) {
                 if (A04 < 10) {
                     objArr[0] = A06;
                     objArr[1] = iArr;
-                    for (int i6 = (i << 1) - 1; i6 >= 2; i6--) {
-                        objArr[i6] = null;
+                    for (int i4 = (i << 1) - 1; i4 >= 2; i4--) {
+                        objArr[i4] = null;
                     }
                     A06 = objArr;
                     A04++;
@@ -436,12 +436,12 @@ public class PF<K, V> {
             return;
         }
         if (iArr.length == 4) {
-            synchronized (C1924i7.class) {
+            synchronized (C1944i7.class) {
                 if (A03 < 10) {
                     objArr[0] = A05;
                     objArr[1] = iArr;
-                    for (int i9 = (i << 1) - 1; i9 >= 2; i9--) {
-                        objArr[i9] = null;
+                    for (int i6 = (i << 1) - 1; i6 >= 2; i6--) {
+                        objArr[i6] = null;
                     }
                     A05 = objArr;
                     A03++;
@@ -455,21 +455,21 @@ public class PF<K, V> {
         int i = this.A00 * 2;
         Object[] objArr = this.A02;
         if (obj == null) {
-            for (int i6 = 1; i6 < i; i6 += 2) {
-                if (objArr[i6] == null) {
-                    int N8 = i6 >> 1;
+            for (int i4 = 1; i4 < i; i4 += 2) {
+                if (objArr[i4] == null) {
+                    int N8 = i4 >> 1;
                     return N8;
                 }
             }
         } else {
-            for (int i9 = 1; i9 < i; i9 += 2) {
-                boolean equals = obj.equals(objArr[i9]);
+            for (int i6 = 1; i6 < i; i6 += 2) {
+                boolean equals = obj.equals(objArr[i6]);
                 if (A08[4].length() != 22) {
                     String[] strArr = A08;
                     strArr[3] = "bt44SpsCW8by";
                     strArr[5] = "Iovdsjym1Cx2";
                     if (equals) {
-                        int i10 = i9 >> 1;
+                        int i9 = i6 >> 1;
                         String[] strArr2 = A08;
                         String str = strArr2[3];
                         String str2 = strArr2[5];
@@ -479,7 +479,7 @@ public class PF<K, V> {
                             String[] strArr3 = A08;
                             strArr3[1] = "ZvOUY6";
                             strArr3[7] = "nVlZAl";
-                            return i10;
+                            return i9;
                         }
                     }
                 }
@@ -518,15 +518,15 @@ public class PF<K, V> {
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.PF != com.facebook.ads.internal.androidx.support.v4.util.SimpleArrayMap<K, V> */
     public final V A0C(int i, V v9) {
-        int i6 = (i << 1) + 1;
-        V v10 = (V) this.A02[i6];
-        this.A02[i6] = v9;
+        int i4 = (i << 1) + 1;
+        V v10 = (V) this.A02[i4];
+        this.A02[i4] = v9;
         return v10;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.PF != com.facebook.ads.internal.androidx.support.v4.util.SimpleArrayMap<K, V> */
     public final void A0D(int i) {
-        int i6 = this.A00;
+        int i4 = this.A00;
         int osize = this.A01.length;
         if (osize < i) {
             int[] iArr = this.A01;
@@ -534,14 +534,14 @@ public class PF<K, V> {
             A05(i);
             int osize2 = this.A00;
             if (osize2 > 0) {
-                System.arraycopy(iArr, 0, this.A01, 0, i6);
-                int osize3 = i6 << 1;
+                System.arraycopy(iArr, 0, this.A01, 0, i4);
+                int osize3 = i4 << 1;
                 System.arraycopy(objArr, 0, this.A02, 0, osize3);
             }
-            A06(iArr, objArr, i6);
+            A06(iArr, objArr, i4);
         }
         int osize4 = this.A00;
-        if (osize4 == i6) {
+        if (osize4 == i4) {
         } else {
             throw new ConcurrentModificationException();
         }

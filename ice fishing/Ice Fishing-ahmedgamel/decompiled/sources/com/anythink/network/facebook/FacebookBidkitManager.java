@@ -13,33 +13,33 @@ import org.json.JSONObject;
 public class FacebookBidkitManager extends MediationBidManager {
 
     /* renamed from: d, reason: collision with root package name */
-    private static volatile FacebookBidkitManager f23139d;
+    private static volatile FacebookBidkitManager f23926d;
 
     /* renamed from: a, reason: collision with root package name */
-    boolean f23140a;
+    boolean f23927a;
 
     /* renamed from: b, reason: collision with root package name */
-    ConcurrentHashMap<String, FacebookBidkitAuction> f23141b = new ConcurrentHashMap<>();
+    ConcurrentHashMap<String, FacebookBidkitAuction> f23928b = new ConcurrentHashMap<>();
 
     /* renamed from: c, reason: collision with root package name */
-    ConcurrentHashMap<String, FacebookBidkitAuction> f23142c = new ConcurrentHashMap<>();
+    ConcurrentHashMap<String, FacebookBidkitAuction> f23929c = new ConcurrentHashMap<>();
 
     /* renamed from: com.anythink.network.facebook.FacebookBidkitManager$2, reason: invalid class name */
     public class AnonymousClass2 implements MediationBidManager.BidListener {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ MediationBidManager.BidListener f23146a;
+        final /* synthetic */ MediationBidManager.BidListener f23933a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ FacebookBidkitAuction f23147b;
+        final /* synthetic */ FacebookBidkitAuction f23934b;
 
         /* renamed from: c, reason: collision with root package name */
-        final /* synthetic */ a f23148c;
+        final /* synthetic */ a f23935c;
 
         public AnonymousClass2(MediationBidManager.BidListener bidListener, FacebookBidkitAuction facebookBidkitAuction, a aVar) {
-            this.f23146a = bidListener;
-            this.f23147b = facebookBidkitAuction;
-            this.f23148c = aVar;
+            this.f23933a = bidListener;
+            this.f23934b = facebookBidkitAuction;
+            this.f23935c = aVar;
         }
 
         @Override // com.anythink.core.api.MediationBidManager.BidListener
@@ -48,7 +48,7 @@ public class FacebookBidkitManager extends MediationBidManager {
 
         @Override // com.anythink.core.api.MediationBidManager.BidListener
         public final void onBidStart(bv bvVar, ATBaseAdAdapter aTBaseAdAdapter) {
-            MediationBidManager.BidListener bidListener = this.f23146a;
+            MediationBidManager.BidListener bidListener = this.f23933a;
             if (bidListener != null) {
                 bidListener.onBidStart(bvVar, aTBaseAdAdapter);
             }
@@ -56,9 +56,9 @@ public class FacebookBidkitManager extends MediationBidManager {
 
         @Override // com.anythink.core.api.MediationBidManager.BidListener
         public final void onBidSuccess(List<bv> list) {
-            FacebookBidkitManager.this.f23142c.remove(this.f23147b);
-            FacebookBidkitManager.this.f23141b.put(this.f23148c.f13330e, this.f23147b);
-            MediationBidManager.BidListener bidListener = this.f23146a;
+            FacebookBidkitManager.this.f23929c.remove(this.f23934b);
+            FacebookBidkitManager.this.f23928b.put(this.f23935c.f14116e, this.f23934b);
+            MediationBidManager.BidListener bidListener = this.f23933a;
             if (bidListener != null) {
                 bidListener.onBidSuccess(list);
             }
@@ -70,19 +70,19 @@ public class FacebookBidkitManager extends MediationBidManager {
 
     private void a(a aVar, MediationBidManager.BidListener bidListener) {
         try {
-            if (!this.f23140a) {
+            if (!this.f23927a) {
                 JSONObject jSONObject = new JSONObject();
                 JSONObject jSONObject2 = new JSONObject();
                 try {
-                    jSONObject2.put("timeout_ms", aVar.f13332g);
+                    jSONObject2.put("timeout_ms", aVar.f14118g);
                     jSONObject.put("auction", jSONObject2);
                 } catch (Throwable unused) {
                 }
-                BiddingKit.init(aVar.f13327b.getApplicationContext(), jSONObject.toString());
-                this.f23140a = true;
+                BiddingKit.init(aVar.f14113b.getApplicationContext(), jSONObject.toString());
+                this.f23927a = true;
             }
             FacebookBidkitAuction facebookBidkitAuction = new FacebookBidkitAuction(aVar);
-            this.f23142c.put(facebookBidkitAuction.toString(), facebookBidkitAuction);
+            this.f23929c.put(facebookBidkitAuction.toString(), facebookBidkitAuction);
             facebookBidkitAuction.startBidding(this.mRequestUrl, new AnonymousClass2(bidListener, facebookBidkitAuction, aVar));
         } catch (Throwable th) {
             if (bidListener != null) {
@@ -92,24 +92,24 @@ public class FacebookBidkitManager extends MediationBidManager {
     }
 
     public static FacebookBidkitManager getInstance() {
-        if (f23139d == null) {
+        if (f23926d == null) {
             synchronized (FacebookBidkitManager.class) {
                 try {
-                    if (f23139d == null) {
-                        f23139d = new FacebookBidkitManager();
+                    if (f23926d == null) {
+                        f23926d = new FacebookBidkitManager();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f23139d;
+        return f23926d;
     }
 
     @Override // com.anythink.core.api.MediationBidManager
     public void notifyWinnerDisplay(String str, bv bvVar) {
         try {
-            FacebookBidkitAuction facebookBidkitAuction = this.f23141b.get(str);
+            FacebookBidkitAuction facebookBidkitAuction = this.f23928b.get(str);
             if (facebookBidkitAuction != null) {
                 facebookBidkitAuction.a(bvVar);
             }
@@ -129,19 +129,19 @@ public class FacebookBidkitManager extends MediationBidManager {
 
     public static /* synthetic */ void a(FacebookBidkitManager facebookBidkitManager, a aVar, MediationBidManager.BidListener bidListener) {
         try {
-            if (!facebookBidkitManager.f23140a) {
+            if (!facebookBidkitManager.f23927a) {
                 JSONObject jSONObject = new JSONObject();
                 JSONObject jSONObject2 = new JSONObject();
                 try {
-                    jSONObject2.put("timeout_ms", aVar.f13332g);
+                    jSONObject2.put("timeout_ms", aVar.f14118g);
                     jSONObject.put("auction", jSONObject2);
                 } catch (Throwable unused) {
                 }
-                BiddingKit.init(aVar.f13327b.getApplicationContext(), jSONObject.toString());
-                facebookBidkitManager.f23140a = true;
+                BiddingKit.init(aVar.f14113b.getApplicationContext(), jSONObject.toString());
+                facebookBidkitManager.f23927a = true;
             }
             FacebookBidkitAuction facebookBidkitAuction = new FacebookBidkitAuction(aVar);
-            facebookBidkitManager.f23142c.put(facebookBidkitAuction.toString(), facebookBidkitAuction);
+            facebookBidkitManager.f23929c.put(facebookBidkitAuction.toString(), facebookBidkitAuction);
             facebookBidkitAuction.startBidding(facebookBidkitManager.mRequestUrl, facebookBidkitManager.new AnonymousClass2(bidListener, facebookBidkitAuction, aVar));
         } catch (Throwable th) {
             if (bidListener != null) {

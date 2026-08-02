@@ -1,6 +1,6 @@
 package T0;
 
-import J0.y;
+import J0.x;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.os.Build;
@@ -14,12 +14,12 @@ import java.util.List;
 public abstract class k {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f3042a;
+    public static final String f3125a;
 
     static {
-        String f3 = J0.s.f("ProcessUtils");
-        kotlin.jvm.internal.h.d(f3, "tagWithPrefix(\"ProcessUtils\")");
-        f3042a = f3;
+        String f2 = J0.r.f("ProcessUtils");
+        kotlin.jvm.internal.h.d(f2, "tagWithPrefix(\"ProcessUtils\")");
+        f3125a = f2;
     }
 
     public static final boolean a(Context context, J0.b configuration) {
@@ -28,11 +28,11 @@ public abstract class k {
         kotlin.jvm.internal.h.e(context, "context");
         kotlin.jvm.internal.h.e(configuration, "configuration");
         if (Build.VERSION.SDK_INT >= 28) {
-            str = a.f3024a.a();
+            str = a.f3107a.a();
         } else {
             str = null;
             try {
-                Method declaredMethod = Class.forName("android.app.ActivityThread", false, y.class.getClassLoader()).getDeclaredMethod("currentProcessName", new Class[0]);
+                Method declaredMethod = Class.forName("android.app.ActivityThread", false, x.class.getClassLoader()).getDeclaredMethod("currentProcessName", new Class[0]);
                 declaredMethod.setAccessible(true);
                 Object invoke = declaredMethod.invoke(null, new Object[0]);
                 kotlin.jvm.internal.h.b(invoke);
@@ -40,8 +40,8 @@ public abstract class k {
                     str = (String) invoke;
                 }
             } catch (Throwable th) {
-                if (J0.s.d().f1405a <= 3) {
-                    Log.d(f3042a, "Unable to check ActivityThread for processName", th);
+                if (J0.r.d().f1433a <= 3) {
+                    Log.d(f3125a, "Unable to check ActivityThread for processName", th);
                 }
             }
             int myPid = Process.myPid();

@@ -6,22 +6,22 @@ import java.util.Objects;
 public final class QN {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ VN f27023a;
+    public final /* synthetic */ VN f27810a;
 
     public QN(VN vn) {
         Objects.requireNonNull(vn);
-        this.f27023a = vn;
+        this.f27810a = vn;
     }
 
     public final void a() {
-        VN vn = this.f27023a;
-        if (!vn.f28159N) {
-            if (!vn.f28167V) {
+        VN vn = this.f27810a;
+        if (!vn.f28951N) {
+            if (!vn.f28959V) {
                 return;
             } else {
-                vn.f28166U.getClass();
+                vn.f28958U.getClass();
             }
         }
-        vn.f28189z.c(2);
+        vn.f28985z.c(2);
     }
 }

@@ -1,7 +1,7 @@
 package com.facebook.ads;
 
 import android.text.TextUtils;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.Locale;
 
 /* loaded from: classes.dex */
@@ -52,7 +52,7 @@ public class AdError {
 
     public static AdError internalError(int i) {
         Locale locale = Locale.US;
-        return new AdError(i, AbstractC4404f.e(i, "Internal error "));
+        return new AdError(i, Wv.f(i, "Internal error "));
     }
 
     public int getErrorCode() {

@@ -12,10 +12,10 @@ public final class P6<E> implements Cloneable {
     public long[] A02;
     public Object[] A03;
 
-    public static String A03(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 104);
+    public static String A03(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 104);
         }
         return new String(copyOfRange);
     }
@@ -129,22 +129,22 @@ public final class P6<E> implements Cloneable {
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.P6 != com.facebook.ads.internal.androidx.support.v4.util.LongSparseArray<E> */
     private void A04() {
         int i = this.A00;
-        int i6 = 0;
+        int i4 = 0;
         long[] jArr = this.A02;
         Object[] objArr = this.A03;
-        for (int i9 = 0; i9 < i; i9++) {
-            Object obj = objArr[i9];
+        for (int i6 = 0; i6 < i; i6++) {
+            Object obj = objArr[i6];
             if (obj != A06) {
-                if (i9 != i6) {
-                    jArr[i6] = jArr[i9];
-                    objArr[i6] = obj;
-                    objArr[i9] = null;
+                if (i6 != i4) {
+                    jArr[i4] = jArr[i6];
+                    objArr[i4] = obj;
+                    objArr[i6] = null;
                 }
-                i6++;
+                i4++;
             }
         }
         this.A01 = false;
-        this.A00 = i6;
+        this.A00 = i4;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.P6 != com.facebook.ads.internal.androidx.support.v4.util.LongSparseArray<E> */
@@ -178,8 +178,8 @@ public final class P6<E> implements Cloneable {
     public final void A09() {
         int i = this.A00;
         Object[] objArr = this.A03;
-        for (int i6 = 0; i6 < i; i6++) {
-            objArr[i6] = null;
+        for (int i4 = 0; i4 < i; i4++) {
+            objArr[i4] = null;
         }
         this.A00 = 0;
         this.A01 = false;
@@ -303,19 +303,19 @@ public final class P6<E> implements Cloneable {
             }
         } else {
             int i = ~A03;
-            int i6 = this.A00;
-            if (i < i6 && this.A03[i] == A06) {
+            int i4 = this.A00;
+            if (i < i4 && this.A03[i] == A06) {
                 this.A02[i] = j6;
                 this.A03[i] = e9;
                 return;
             }
-            boolean z3 = this.A01;
+            boolean z6 = this.A01;
             String[] strArr = A05;
             String str = strArr[1];
             String str2 = strArr[3];
             int charAt = str.charAt(17);
-            int i9 = str2.charAt(17);
-            if (charAt != i9) {
+            int i6 = str2.charAt(17);
+            if (charAt != i6) {
                 A05[0] = "5FIvphvUgQVU1M732kCMD6tquLVSGC6u";
             } else {
                 A05[2] = "2a9UU1wdCLKEgsYJNRrqpR";

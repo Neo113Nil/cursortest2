@@ -37,12 +37,12 @@ public final class d {
         h.e(label, "label");
         i iVar = FEATURES_SDK_VERSION_LABEL_REGEX;
         iVar.getClass();
-        return iVar.f2685n.matcher(label).matches();
+        return iVar.f2722n.matcher(label).matches();
     }
 
     public final String percentEncodePathSegmentUtf8$com_onesignal_core(String segment) {
         h.e(segment, "segment");
-        byte[] bytes = segment.getBytes(Q7.a.f2664a);
+        byte[] bytes = segment.getBytes(Q7.a.f2701a);
         h.d(bytes, "getBytes(...)");
         StringBuilder sb = new StringBuilder(bytes.length * 3);
         for (byte b9 : bytes) {

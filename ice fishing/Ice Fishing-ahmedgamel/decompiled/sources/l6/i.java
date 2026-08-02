@@ -48,9 +48,9 @@ public enum i {
 
 
     /* renamed from: n, reason: collision with root package name */
-    public final int f38932n;
+    public final int f39000n;
 
     i(int i) {
-        this.f38932n = i;
+        this.f39000n = i;
     }
 }

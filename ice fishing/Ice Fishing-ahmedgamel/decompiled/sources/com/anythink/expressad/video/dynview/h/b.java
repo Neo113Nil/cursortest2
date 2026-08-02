@@ -22,17 +22,17 @@ public final class b {
     public class AnonymousClass5 implements ValueAnimator.AnimatorUpdateListener {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ View f21208a;
+        final /* synthetic */ View f21995a;
 
         public AnonymousClass5(View view) {
-            this.f21208a = view;
+            this.f21995a = view;
         }
 
         @Override // android.animation.ValueAnimator.AnimatorUpdateListener
         public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-            ViewGroup.LayoutParams layoutParams = this.f21208a.getLayoutParams();
+            ViewGroup.LayoutParams layoutParams = this.f21995a.getLayoutParams();
             layoutParams.width = ((Integer) valueAnimator.getAnimatedValue()).intValue();
-            this.f21208a.setLayoutParams(layoutParams);
+            this.f21995a.setLayoutParams(layoutParams);
         }
     }
 
@@ -40,16 +40,16 @@ public final class b {
     public class AnonymousClass6 implements ValueAnimator.AnimatorUpdateListener {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ View f21210a;
+        final /* synthetic */ View f21997a;
 
         public AnonymousClass6(View view) {
-            this.f21210a = view;
+            this.f21997a = view;
         }
 
         @Override // android.animation.ValueAnimator.AnimatorUpdateListener
         public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-            this.f21210a.setScaleX(((Float) valueAnimator.getAnimatedValue()).floatValue());
-            this.f21210a.setScaleY(((Float) valueAnimator.getAnimatedValue()).floatValue());
+            this.f21997a.setScaleX(((Float) valueAnimator.getAnimatedValue()).floatValue());
+            this.f21997a.setScaleY(((Float) valueAnimator.getAnimatedValue()).floatValue());
         }
     }
 
@@ -85,11 +85,11 @@ public final class b {
     }
 
     private static ObjectAnimator g(View view) {
-        return ObjectAnimator.ofPropertyValuesHolder(view, a(View.SCALE_X), a(View.SCALE_Y), a(View.ROTATION_X, 5.0f)).setDuration(com.anythink.basead.exoplayer.i.a.f7883f);
+        return ObjectAnimator.ofPropertyValuesHolder(view, a(View.SCALE_X), a(View.SCALE_Y), a(View.ROTATION_X, 5.0f)).setDuration(com.anythink.basead.exoplayer.i.a.f8669f);
     }
 
     private static ObjectAnimator h(View view) {
-        return ObjectAnimator.ofPropertyValuesHolder(view, b(View.SCALE_X), b(View.SCALE_Y)).setDuration(com.anythink.basead.exoplayer.i.a.f7883f);
+        return ObjectAnimator.ofPropertyValuesHolder(view, b(View.SCALE_X), b(View.SCALE_Y)).setDuration(com.anythink.basead.exoplayer.i.a.f8669f);
     }
 
     private static ObjectAnimator i(View view) {
@@ -145,13 +145,13 @@ public final class b {
     }
 
     public static ObjectAnimator b(View view) {
-        ObjectAnimator duration = ObjectAnimator.ofPropertyValuesHolder(view, b(View.SCALE_X), b(View.SCALE_Y)).setDuration(com.anythink.basead.exoplayer.i.a.f7883f);
+        ObjectAnimator duration = ObjectAnimator.ofPropertyValuesHolder(view, b(View.SCALE_X), b(View.SCALE_Y)).setDuration(com.anythink.basead.exoplayer.i.a.f8669f);
         duration.setRepeatCount(-1);
         return duration;
     }
 
-    private void a(final List<View> list, int i, int i6, long j6) {
-        ValueAnimator duration = ValueAnimator.ofInt(i, i6).setDuration(j6);
+    private void a(final List<View> list, int i, int i4, long j6) {
+        ValueAnimator duration = ValueAnimator.ofInt(i, i4).setDuration(j6);
         duration.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.anythink.expressad.video.dynview.h.b.2
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
@@ -170,8 +170,8 @@ public final class b {
         duration.start();
     }
 
-    private void a(final View view, int i, int i6, int i9, int i10, long j6) {
-        ValueAnimator ofInt = ValueAnimator.ofInt(i, i6);
+    private void a(final View view, int i, int i4, int i6, int i9, long j6) {
+        ValueAnimator ofInt = ValueAnimator.ofInt(i, i4);
         ofInt.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.anythink.expressad.video.dynview.h.b.3
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
@@ -182,7 +182,7 @@ public final class b {
                 }
             }
         });
-        ValueAnimator ofInt2 = ValueAnimator.ofInt(i9, i10);
+        ValueAnimator ofInt2 = ValueAnimator.ofInt(i6, i9);
         ofInt2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.anythink.expressad.video.dynview.h.b.4
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
@@ -228,14 +228,14 @@ public final class b {
         return PropertyValuesHolder.ofKeyframe(property, Keyframe.ofFloat(0.0f, 1.0f), Keyframe.ofFloat(0.1f, 0.6f), Keyframe.ofFloat(0.2f, 0.8f), Keyframe.ofFloat(0.3f, 1.3f), Keyframe.ofFloat(0.4f, 0.8f), Keyframe.ofFloat(0.5f, 1.3f), Keyframe.ofFloat(0.6f, 0.9f), Keyframe.ofFloat(0.7f, 1.3f), Keyframe.ofFloat(0.8f, 1.0f), Keyframe.ofFloat(0.9f, 1.1f), Keyframe.ofFloat(1.0f, 1.0f));
     }
 
-    private static PropertyValuesHolder a(Property property, float f3) {
-        float f9 = (-2.0f) * f3;
-        float f10 = f3 * 2.0f;
+    private static PropertyValuesHolder a(Property property, float f2) {
+        float f9 = (-2.0f) * f2;
+        float f10 = f2 * 2.0f;
         return PropertyValuesHolder.ofKeyframe(property, Keyframe.ofFloat(0.0f, 0.0f), Keyframe.ofFloat(0.1f, f9), Keyframe.ofFloat(0.2f, f9), Keyframe.ofFloat(0.3f, f10), Keyframe.ofFloat(0.4f, f9), Keyframe.ofFloat(0.5f, f10), Keyframe.ofFloat(0.6f, f9), Keyframe.ofFloat(0.7f, f10), Keyframe.ofFloat(0.8f, f9), Keyframe.ofFloat(0.9f, f10), Keyframe.ofFloat(1.0f, 0.0f));
     }
 
     public static ObjectAnimator a(View view) {
-        ObjectAnimator duration = ObjectAnimator.ofPropertyValuesHolder(view, a(View.SCALE_X), a(View.SCALE_Y), a(View.ROTATION_X, 5.0f)).setDuration(com.anythink.basead.exoplayer.i.a.f7883f);
+        ObjectAnimator duration = ObjectAnimator.ofPropertyValuesHolder(view, a(View.SCALE_X), a(View.SCALE_Y), a(View.ROTATION_X, 5.0f)).setDuration(com.anythink.basead.exoplayer.i.a.f8669f);
         duration.setRepeatCount(-1);
         return duration;
     }

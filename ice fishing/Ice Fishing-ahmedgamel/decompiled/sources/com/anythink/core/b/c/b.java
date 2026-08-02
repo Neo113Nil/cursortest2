@@ -7,21 +7,21 @@ import com.anythink.core.api.BaseAd;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    ATBaseAdAdapter f11733a;
+    ATBaseAdAdapter f12519a;
 
     /* renamed from: b, reason: collision with root package name */
-    BaseAd f11734b;
+    BaseAd f12520b;
 
     public b(ATBaseAdAdapter aTBaseAdAdapter, BaseAd baseAd) {
-        this.f11733a = aTBaseAdAdapter;
-        this.f11734b = baseAd;
+        this.f12519a = aTBaseAdAdapter;
+        this.f12520b = baseAd;
     }
 
     public final ATBaseAdAdapter a() {
-        return this.f11733a;
+        return this.f12519a;
     }
 
     public final BaseAd b() {
-        return this.f11734b;
+        return this.f12520b;
     }
 }

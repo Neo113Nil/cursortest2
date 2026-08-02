@@ -46,74 +46,74 @@ public abstract class J0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static ColorInfo A0B(C06474v c06474v) {
-        C05782a c05782a = new C05782a();
-        C06464u c06464u = new C06464u(c06474v.A0l());
-        c06464u.A08(c06474v.A09() * 8);
-        c06464u.A0A(1);
-        c06464u.A04(3);
-        c06464u.A09(6);
-        c06464u.A0H();
-        c06464u.A0H();
-        c06464u.A09(13);
-        c06464u.A07();
-        int A04 = c06464u.A04(4);
+    public static ColorInfo A0B(C06674v c06674v) {
+        C05982a c05982a = new C05982a();
+        C06664u c06664u = new C06664u(c06674v.A0l());
+        c06664u.A08(c06674v.A09() * 8);
+        c06664u.A0A(1);
+        c06664u.A04(3);
+        c06664u.A09(6);
+        c06664u.A0H();
+        c06664u.A0H();
+        c06664u.A09(13);
+        c06664u.A07();
+        int A04 = c06664u.A04(4);
         String A0M = A0M(178, 11, 68);
         if (A04 != 1) {
-            AbstractC06324g.A06(A0M, A0M(593, 22, 87) + A04);
-            return c05782a.A03();
+            AbstractC06524g.A06(A0M, A0M(593, 22, 87) + A04);
+            return c05982a.A03();
         }
-        if (c06464u.A0H()) {
-            AbstractC06324g.A06(A0M, A0M(563, 30, 42));
-            return c05782a.A03();
+        if (c06664u.A0H()) {
+            AbstractC06524g.A06(A0M, A0M(563, 30, 42));
+            return c05982a.A03();
         }
-        boolean A0H = c06464u.A0H();
-        c06464u.A07();
-        if (A0H && c06464u.A04(8) > 127) {
-            AbstractC06324g.A06(A0M, A0M(189, 18, 61));
-            return c05782a.A03();
+        boolean A0H = c06664u.A0H();
+        c06664u.A07();
+        if (A0H && c06664u.A04(8) > 127) {
+            AbstractC06524g.A06(A0M, A0M(189, 18, 61));
+            return c05982a.A03();
         }
-        int A042 = c06464u.A04(3);
-        c06464u.A07();
-        if (c06464u.A0H()) {
-            AbstractC06324g.A06(A0M, A0M(615, 40, 96));
-            return c05782a.A03();
+        int A042 = c06664u.A04(3);
+        c06664u.A07();
+        if (c06664u.A0H()) {
+            AbstractC06524g.A06(A0M, A0M(615, 40, 96));
+            return c05982a.A03();
         }
-        if (c06464u.A0H()) {
-            AbstractC06324g.A06(A0M, A0M(655, 36, 7));
-            return c05782a.A03();
+        if (c06664u.A0H()) {
+            AbstractC06524g.A06(A0M, A0M(655, 36, 7));
+            return c05982a.A03();
         }
-        if (c06464u.A0H()) {
-            AbstractC06324g.A06(A0M, A0M(494, 46, 123));
-            return c05782a.A03();
+        if (c06664u.A0H()) {
+            AbstractC06524g.A06(A0M, A0M(494, 46, 123));
+            return c05982a.A03();
         }
-        int A043 = c06464u.A04(5);
+        int A043 = c06664u.A04(5);
         for (int i = 0; i <= A043; i++) {
-            c06464u.A09(12);
-            if (c06464u.A04(5) > 7) {
-                c06464u.A07();
+            c06664u.A09(12);
+            if (c06664u.A04(5) > 7) {
+                c06664u.A07();
             }
         }
-        int A044 = c06464u.A04(4);
-        int A045 = c06464u.A04(4);
-        c06464u.A09(A044 + 1);
-        c06464u.A09(A045 + 1);
-        if (c06464u.A0H()) {
-            c06464u.A09(7);
+        int A044 = c06664u.A04(4);
+        int A045 = c06664u.A04(4);
+        c06664u.A09(A044 + 1);
+        c06664u.A09(A045 + 1);
+        if (c06664u.A0H()) {
+            c06664u.A09(7);
         }
-        c06464u.A09(7);
-        boolean A0H2 = c06464u.A0H();
+        c06664u.A09(7);
+        boolean A0H2 = c06664u.A0H();
         if (A0H2) {
-            c06464u.A09(2);
+            c06664u.A09(2);
         }
-        boolean A0H3 = c06464u.A0H();
+        boolean A0H3 = c06664u.A0H();
         String[] strArr = A01;
         if (strArr[1].charAt(26) == strArr[6].charAt(26)) {
             throw new RuntimeException();
         }
         A01[2] = "spdqEdfVqdQubNKbzHaSCSbA";
-        if ((A0H3 ? 2 : c06464u.A04(1)) > 0) {
-            boolean A0H4 = c06464u.A0H();
+        if ((A0H3 ? 2 : c06664u.A04(1)) > 0) {
+            boolean A0H4 = c06664u.A0H();
             if (A01[5].charAt(23) != 'W') {
                 A01[5] = "fpomjt14ZeQUreCUx8H2Qj9W8NeulNVr";
             } else {
@@ -123,57 +123,57 @@ public abstract class J0 {
             }
         }
         if (A0H2) {
-            c06464u.A09(3);
+            c06664u.A09(3);
         }
-        c06464u.A09(3);
-        boolean A0H5 = c06464u.A0H();
+        c06664u.A09(3);
+        boolean A0H5 = c06664u.A0H();
         if (A042 == 2 && A0H5) {
-            c06464u.A07();
+            c06664u.A07();
         }
-        boolean z3 = A042 != 1 && c06464u.A0H();
-        if (c06464u.A0H()) {
-            int A046 = c06464u.A04(8);
-            int A047 = c06464u.A04(8);
-            c05782a.A01(ColorInfo.A00(A046)).A00(((z3 || A046 != 1 || A047 != 13 || c06464u.A04(8) != 0) ? c06464u.A04(1) : 1) != 1 ? 2 : 1).A02(ColorInfo.A01(A047));
+        boolean z6 = A042 != 1 && c06664u.A0H();
+        if (c06664u.A0H()) {
+            int A046 = c06664u.A04(8);
+            int A047 = c06664u.A04(8);
+            c05982a.A01(ColorInfo.A00(A046)).A00(((z6 || A046 != 1 || A047 != 13 || c06664u.A04(8) != 0) ? c06664u.A04(1) : 1) != 1 ? 2 : 1).A02(ColorInfo.A01(A047));
         }
-        return c05782a.A03();
+        return c05982a.A03();
     }
 
     /* JADX WARN: Failed to parse debug info
     java.lang.ArrayIndexOutOfBoundsException
      */
-    public static Metadata A0F(C2163mE c2163mE) {
-        C2162mD A07 = c2163mE.A07(1751411826);
-        C2162mD A072 = c2163mE.A07(1801812339);
-        C2162mD A073 = c2163mE.A07(1768715124);
+    public static Metadata A0F(C2183mE c2183mE) {
+        C2182mD A07 = c2183mE.A07(1751411826);
+        C2182mD A072 = c2183mE.A07(1801812339);
+        C2182mD A073 = c2183mE.A07(1768715124);
         if (A07 == null || A072 == null || A073 == null || A03(A07.A00) != 1835299937) {
             return null;
         }
-        C06474v c06474v = A072.A00;
-        c06474v.A0f(12);
-        int A0C = c06474v.A0C();
+        C06674v c06674v = A072.A00;
+        c06674v.A0f(12);
+        int A0C = c06674v.A0C();
         String[] strArr = new String[A0C];
         for (int i = 0; i < A0C; i++) {
-            int A0C2 = c06474v.A0C();
-            c06474v.A0g(4);
-            strArr[i] = c06474v.A0W(A0C2 - 8);
+            int A0C2 = c06674v.A0C();
+            c06674v.A0g(4);
+            strArr[i] = c06674v.A0W(A0C2 - 8);
         }
-        C06474v c06474v2 = A073.A00;
-        c06474v2.A0f(8);
+        C06674v c06674v2 = A073.A00;
+        c06674v2.A0f(8);
         ArrayList arrayList = new ArrayList();
-        while (c06474v2.A07() > 8) {
-            int A09 = c06474v2.A09();
-            int A0C3 = c06474v2.A0C();
-            int A0C4 = c06474v2.A0C() - 1;
+        while (c06674v2.A07() > 8) {
+            int A09 = c06674v2.A09();
+            int A0C3 = c06674v2.A0C();
+            int A0C4 = c06674v2.A0C() - 1;
             if (A0C4 < 0 || A0C4 >= strArr.length) {
-                AbstractC06324g.A07(A0M(178, 11, 68), A0M(359, 41, 107) + A0C4);
+                AbstractC06524g.A07(A0M(178, 11, 68), A0M(359, 41, 107) + A0C4);
             } else {
-                MdtaMetadataEntry A092 = JB.A09(c06474v2, A09 + A0C3, strArr[A0C4]);
+                MdtaMetadataEntry A092 = JB.A09(c06674v2, A09 + A0C3, strArr[A0C4]);
                 if (A092 != null) {
                     arrayList.add(A092);
                 }
             }
-            c06474v2.A0f(A09 + A0C3);
+            c06674v2.A0f(A09 + A0C3);
         }
         if (arrayList.isEmpty()) {
             return null;
@@ -184,119 +184,119 @@ public abstract class J0 {
     /* JADX WARN: Failed to parse debug info
     java.lang.ArrayIndexOutOfBoundsException
      */
-    public static C0991Iw A0G(C06474v c06474v, int i) {
-        c06474v.A0f(i + 8 + 4);
-        c06474v.A0g(1);
-        A02(c06474v);
-        c06474v.A0g(2);
-        int A0I = c06474v.A0I();
+    public static C1011Iw A0G(C06674v c06674v, int i) {
+        c06674v.A0f(i + 8 + 4);
+        c06674v.A0g(1);
+        A02(c06674v);
+        c06674v.A0g(2);
+        int A0I = c06674v.A0I();
         if ((A0I & 128) != 0) {
-            c06474v.A0g(2);
+            c06674v.A0g(2);
         }
         if ((A0I & 64) != 0) {
-            c06474v.A0g(c06474v.A0I());
+            c06674v.A0g(c06674v.A0I());
         }
         if ((A0I & 32) != 0) {
-            c06474v.A0g(2);
+            c06674v.A0g(2);
         }
-        c06474v.A0g(1);
-        A02(c06474v);
-        String A05 = C3J.A05(c06474v.A0I());
+        c06674v.A0g(1);
+        A02(c06674v);
+        String A05 = C3J.A05(c06674v.A0I());
         if (A0M(947, 10, 17).equals(A05) || A0M(989, 13, 117).equals(A05) || A0M(AdError.LOAD_TOO_FREQUENTLY_ERROR_CODE, 16, 39).equals(A05)) {
-            return new C0991Iw(A05, null, -1L, -1L);
+            return new C1011Iw(A05, null, -1L, -1L);
         }
-        c06474v.A0g(4);
-        long A0Q = c06474v.A0Q();
-        long A0Q2 = c06474v.A0Q();
-        c06474v.A0g(1);
-        int A022 = A02(c06474v);
+        c06674v.A0g(4);
+        long A0Q = c06674v.A0Q();
+        long A0Q2 = c06674v.A0Q();
+        c06674v.A0g(1);
+        int A022 = A02(c06674v);
         byte[] bArr = new byte[A022];
-        c06474v.A0k(bArr, 0, A022);
+        c06674v.A0k(bArr, 0, A022);
         if (A0Q2 <= 0) {
             A0Q2 = -1;
         }
         if (A0Q <= 0) {
             A0Q = -1;
         }
-        return new C0991Iw(A05, bArr, A0Q2, A0Q);
+        return new C1011Iw(A05, bArr, A0Q2, A0Q);
     }
 
     /* JADX WARN: Failed to parse debug info
     java.lang.ArrayIndexOutOfBoundsException
      */
-    public static C0994Iz A0I(C06474v c06474v) {
+    public static C1014Iz A0I(C06674v c06674v) {
         long A0Q;
-        c06474v.A0f(8);
-        int A012 = AbstractC0989Iu.A01(c06474v.A0C());
-        c06474v.A0g(A012 == 0 ? 8 : 16);
-        int A0C = c06474v.A0C();
-        c06474v.A0g(4);
-        boolean z3 = true;
-        int A09 = c06474v.A09();
+        c06674v.A0f(8);
+        int A012 = AbstractC1009Iu.A01(c06674v.A0C());
+        c06674v.A0g(A012 == 0 ? 8 : 16);
+        int A0C = c06674v.A0C();
+        c06674v.A0g(4);
+        boolean z6 = true;
+        int A09 = c06674v.A09();
         int i = A012 == 0 ? 4 : 8;
-        int i6 = 0;
+        int i4 = 0;
         while (true) {
-            if (i6 >= i) {
+            if (i4 >= i) {
                 break;
             }
-            if (c06474v.A0l()[A09 + i6] != -1) {
-                z3 = false;
+            if (c06674v.A0l()[A09 + i4] != -1) {
+                z6 = false;
                 break;
             }
-            i6++;
+            i4++;
         }
-        if (z3) {
-            c06474v.A0g(i);
-            A0Q = b.f6382b;
+        if (z6) {
+            c06674v.A0g(i);
+            A0Q = b.f7168b;
         } else {
-            A0Q = A012 == 0 ? c06474v.A0Q() : c06474v.A0R();
+            A0Q = A012 == 0 ? c06674v.A0Q() : c06674v.A0R();
             if (A0Q == 0) {
-                A0Q = b.f6382b;
+                A0Q = b.f7168b;
             }
         }
-        c06474v.A0g(16);
-        int A0C2 = c06474v.A0C();
-        int A0C3 = c06474v.A0C();
-        c06474v.A0g(4);
-        int A0C4 = c06474v.A0C();
-        int A0C5 = c06474v.A0C();
-        return new C0994Iz(A0C, A0Q, (A0C2 == 0 && A0C3 == 65536 && A0C4 == (-b.aX) && A0C5 == 0) ? 90 : (A0C2 == 0 && A0C3 == (-b.aX) && A0C4 == 65536 && A0C5 == 0) ? 270 : (A0C2 == (-b.aX) && A0C3 == 0 && A0C4 == 0 && A0C5 == (-b.aX)) ? 180 : 0);
+        c06674v.A0g(16);
+        int A0C2 = c06674v.A0C();
+        int A0C3 = c06674v.A0C();
+        c06674v.A0g(4);
+        int A0C4 = c06674v.A0C();
+        int A0C5 = c06674v.A0C();
+        return new C1014Iz(A0C, A0Q, (A0C2 == 0 && A0C3 == 65536 && A0C4 == (-b.aX) && A0C5 == 0) ? 90 : (A0C2 == 0 && A0C3 == (-b.aX) && A0C4 == 65536 && A0C5 == 0) ? 270 : (A0C2 == (-b.aX) && A0C3 == 0 && A0C4 == 0 && A0C5 == (-b.aX)) ? 180 : 0);
     }
 
     /* JADX WARN: Failed to parse debug info
     java.lang.ArrayIndexOutOfBoundsException
      */
     @MetaExoPlayerCustomization(type = {"INCREASE_VISIBILITY"}, value = "To support OculusMp4Extractor")
-    public static JO A0J(C2163mE c2163mE, C2162mD c2162mD, long j6, DrmInitData drmInitData, boolean z3, boolean z6) throws C3K {
+    public static JO A0J(C2183mE c2183mE, C2182mD c2182mD, long j6, DrmInitData drmInitData, boolean z6, boolean z9) throws C3K {
         int i;
+        int i4;
         int i6;
-        int i9;
-        C2163mE A06;
+        C2183mE A06;
         long j9 = j6;
-        C2163mE c2163mE2 = (C2163mE) AbstractC06243y.A01(c2163mE.A06(1835297121));
-        int A012 = A01(A03(((C2162mD) AbstractC06243y.A01(c2163mE2.A07(1751411826))).A00));
+        C2183mE c2183mE2 = (C2183mE) AbstractC06443y.A01(c2183mE.A06(1835297121));
+        int A012 = A01(A03(((C2182mD) AbstractC06443y.A01(c2183mE2.A07(1751411826))).A00));
         if (A012 == -1) {
             return null;
         }
-        C0994Iz A0I = A0I(((C2162mD) AbstractC06243y.A01(c2163mE.A07(1953196132))).A00);
-        if (j9 == b.f6382b) {
+        C1014Iz A0I = A0I(((C2182mD) AbstractC06443y.A01(c2183mE.A07(1953196132))).A00);
+        if (j9 == b.f7168b) {
             j9 = A0I.A02;
         }
-        long A05 = A05(c2162mD.A00);
-        long A0U = j9 == b.f6382b ? b.f6382b : C5C.A0U(j9, 1000000L, A05);
-        C2163mE c2163mE3 = (C2163mE) AbstractC06243y.A01(((C2163mE) AbstractC06243y.A01(c2163mE2.A06(1835626086))).A06(1937007212));
-        Pair<Long, String> A062 = A06(((C2162mD) AbstractC06243y.A01(c2163mE2.A07(1835296868))).A00);
-        C2162mD A07 = c2163mE3.A07(1937011556);
+        long A05 = A05(c2182mD.A00);
+        long A0U = j9 == b.f7168b ? b.f7168b : C5C.A0U(j9, 1000000L, A05);
+        C2183mE c2183mE3 = (C2183mE) AbstractC06443y.A01(((C2183mE) AbstractC06443y.A01(c2183mE2.A06(1835626086))).A06(1937007212));
+        Pair<Long, String> A062 = A06(((C2182mD) AbstractC06443y.A01(c2183mE2.A07(1835296868))).A00);
+        C2182mD A07 = c2183mE3.A07(1937011556);
         if (A07 == null) {
             throw C3K.A01(A0M(a.ba, 63, 20), null);
         }
-        C06474v c06474v = A07.A00;
+        C06674v c06674v = A07.A00;
         i = A0I.A00;
-        i6 = A0I.A01;
-        C0993Iy A0H = A0H(c06474v, i, i6, (String) A062.second, drmInitData, z6);
+        i4 = A0I.A01;
+        C1013Iy A0H = A0H(c06674v, i, i4, (String) A062.second, drmInitData, z9);
         long[] jArr = null;
         long[] jArr2 = null;
-        if (!z3 && (A06 = c2163mE.A06(1701082227)) != null) {
+        if (!z6 && (A06 = c2183mE.A06(1701082227)) != null) {
             Pair<long[], long[]> A09 = A09(A06);
             String[] strArr = A01;
             if (strArr[1].charAt(26) == strArr[6].charAt(26)) {
@@ -313,43 +313,43 @@ public abstract class J0 {
         if (A0H.A02 == null) {
             return null;
         }
-        i9 = A0I.A00;
-        return new JO(i9, A012, ((Long) A062.first).longValue(), A05, A0U, A0H.A02, A0H.A01, A0H.A03, A0H.A00, jArr, jArr2);
+        i6 = A0I.A00;
+        return new JO(i6, A012, ((Long) A062.first).longValue(), A05, A0U, A0H.A02, A0H.A01, A0H.A03, A0H.A00, jArr, jArr2);
     }
 
     /* JADX WARN: Failed to parse debug info
     java.lang.ArrayIndexOutOfBoundsException
      */
-    public static JP A0K(C06474v c06474v, int i, int i6, String str) {
-        int i9 = i + 8;
-        while (i9 - i < i6) {
-            c06474v.A0f(i9);
-            int A0C = c06474v.A0C();
-            if (c06474v.A0C() == 1952804451) {
-                int A012 = AbstractC0989Iu.A01(c06474v.A0C());
-                c06474v.A0g(1);
+    public static JP A0K(C06674v c06674v, int i, int i4, String str) {
+        int i6 = i + 8;
+        while (i6 - i < i4) {
+            c06674v.A0f(i6);
+            int A0C = c06674v.A0C();
+            if (c06674v.A0C() == 1952804451) {
+                int A012 = AbstractC1009Iu.A01(c06674v.A0C());
+                c06674v.A0g(1);
+                int i9 = 0;
                 int i10 = 0;
-                int i11 = 0;
                 if (A012 == 0) {
-                    c06474v.A0g(1);
+                    c06674v.A0g(1);
                 } else {
-                    int A0I = c06474v.A0I();
-                    i10 = (A0I & 240) >> 4;
-                    i11 = A0I & 15;
+                    int A0I = c06674v.A0I();
+                    i9 = (A0I & 240) >> 4;
+                    i10 = A0I & 15;
                 }
-                boolean z3 = c06474v.A0I() == 1;
-                int A0I2 = c06474v.A0I();
+                boolean z6 = c06674v.A0I() == 1;
+                int A0I2 = c06674v.A0I();
                 byte[] bArr = new byte[16];
-                c06474v.A0k(bArr, 0, bArr.length);
+                c06674v.A0k(bArr, 0, bArr.length);
                 byte[] bArr2 = null;
-                if (z3 && A0I2 == 0) {
-                    int A0I3 = c06474v.A0I();
+                if (z6 && A0I2 == 0) {
+                    int A0I3 = c06674v.A0I();
                     bArr2 = new byte[A0I3];
-                    c06474v.A0k(bArr2, 0, A0I3);
+                    c06674v.A0k(bArr2, 0, A0I3);
                 }
-                return new JP(z3, str, A0I2, bArr, i10, i11, bArr2);
+                return new JP(z6, str, A0I2, bArr, i9, i10, bArr2);
             }
-            i9 += A0C;
+            i6 += A0C;
         }
         return null;
     }
@@ -415,7 +415,7 @@ public abstract class J0 {
     /* JADX WARN: Code restructure failed: missing block: B:226:0x02b5, code lost:
     
         r0 = r34;
-        r8 = new java.lang.StringBuilder().append(A0M(com.anythink.basead.ui.BaseATView.a.f9770F, 32, 24)).append(r0.A00).append(A0M(144, 34, 36)).append(r9).append(A0M(14, 35, 65)).append(r12).append(A0M(85, 26, 14)).append(r8).append(A0M(111, 33, 41)).append(r13).append(A0M(49, 36, 31)).append(r10);
+        r8 = new java.lang.StringBuilder().append(A0M(com.anythink.basead.ui.BaseATView.a.f10556F, 32, 24)).append(r0.A00).append(A0M(144, 34, 36)).append(r9).append(A0M(14, 35, 65)).append(r12).append(A0M(85, 26, 14)).append(r8).append(A0M(111, 33, 41)).append(r13).append(A0M(49, 36, 31)).append(r10);
      */
     /* JADX WARN: Code restructure failed: missing block: B:227:0x032a, code lost:
     
@@ -427,7 +427,7 @@ public abstract class J0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:229:0x0335, code lost:
     
-        com.instagram.common.viewpoint.core.AbstractC06324g.A07(r16, r8.append(r3).toString());
+        com.instagram.common.viewpoint.core.AbstractC06524g.A07(r16, r8.append(r3).toString());
      */
     /* JADX WARN: Code restructure failed: missing block: B:231:0x05ef, code lost:
     
@@ -451,8 +451,8 @@ public abstract class J0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static JR A0L(JO jo, C2163mE c2163mE, HK hk) throws C3K {
-        InterfaceC0992Ix c2160mB;
+    public static JR A0L(JO jo, C2183mE c2183mE, HK hk) throws C3K {
+        InterfaceC1012Ix c2180mB;
         long[] jArr;
         int[] iArr;
         long[] jArr2;
@@ -462,151 +462,151 @@ public abstract class J0 {
         long[] jArr3;
         int i;
         int[] iArr3;
-        C2162mD A07 = c2163mE.A07(1937011578);
+        C2182mD A07 = c2183mE.A07(1937011578);
         if (A07 != null) {
-            c2160mB = new C2161mC(A07, jo.A07);
+            c2180mB = new C2181mC(A07, jo.A07);
         } else {
-            C2162mD A072 = c2163mE.A07(1937013298);
+            C2182mD A072 = c2183mE.A07(1937013298);
             if (A072 == null) {
                 throw C3K.A01(A0M(400, 42, 111), null);
             }
-            c2160mB = new C2160mB(A072);
+            c2180mB = new C2180mB(A072);
         }
-        int A8v = c2160mB.A8v();
+        int A8v = c2180mB.A8v();
         String[] strArr = A01;
         if (strArr[7].charAt(30) != strArr[4].charAt(30)) {
             A01[5] = "VWWx1kGHZbX2q2PAsWKgJgHWMUDi0u3b";
             if (A8v == 0) {
                 return new JR(jo, new long[0], new int[0], 0, new long[0], new int[0], 0L);
             }
-            boolean z3 = false;
-            C2162mD A073 = c2163mE.A07(1937007471);
+            boolean z6 = false;
+            C2182mD A073 = c2183mE.A07(1937007471);
             if (A073 == null) {
-                z3 = true;
-                A073 = (C2162mD) AbstractC06243y.A01(c2163mE.A07(1668232756));
+                z6 = true;
+                A073 = (C2182mD) AbstractC06443y.A01(c2183mE.A07(1668232756));
             }
-            C06474v c06474v = A073.A00;
-            C06474v c06474v2 = ((C2162mD) AbstractC06243y.A01(c2163mE.A07(1937011555))).A00;
-            C06474v c06474v3 = ((C2162mD) AbstractC06243y.A01(c2163mE.A07(1937011827))).A00;
-            C2162mD A074 = c2163mE.A07(1937011571);
-            C06474v c06474v4 = A074 != null ? A074.A00 : null;
-            C2162mD A075 = c2163mE.A07(1668576371);
-            C06474v c06474v5 = A075 != null ? A075.A00 : null;
-            C0990Iv c0990Iv = new C0990Iv(c06474v2, c06474v, z3);
-            c06474v3.A0f(12);
-            int A0L = c06474v3.A0L() - 1;
-            int A0L2 = c06474v3.A0L();
-            int A0L3 = c06474v3.A0L();
+            C06674v c06674v = A073.A00;
+            C06674v c06674v2 = ((C2182mD) AbstractC06443y.A01(c2183mE.A07(1937011555))).A00;
+            C06674v c06674v3 = ((C2182mD) AbstractC06443y.A01(c2183mE.A07(1937011827))).A00;
+            C2182mD A074 = c2183mE.A07(1937011571);
+            C06674v c06674v4 = A074 != null ? A074.A00 : null;
+            C2182mD A075 = c2183mE.A07(1668576371);
+            C06674v c06674v5 = A075 != null ? A075.A00 : null;
+            C1010Iv c1010Iv = new C1010Iv(c06674v2, c06674v, z6);
+            c06674v3.A0f(12);
+            int A0L = c06674v3.A0L() - 1;
+            int A0L2 = c06674v3.A0L();
+            int A0L3 = c06674v3.A0L();
+            int i4 = 0;
             int i6 = 0;
             int i9 = 0;
-            int i10 = 0;
-            if (c06474v5 != null) {
-                c06474v5.A0f(12);
-                i9 = c06474v5.A0L();
+            if (c06674v5 != null) {
+                c06674v5.A0f(12);
+                i6 = c06674v5.A0L();
             }
-            int i11 = -1;
-            int i12 = 0;
-            if (c06474v4 != null) {
-                c06474v4.A0f(12);
-                i12 = c06474v4.A0L();
-                if (i12 > 0) {
-                    i11 = c06474v4.A0L() - 1;
+            int i10 = -1;
+            int i11 = 0;
+            if (c06674v4 != null) {
+                c06674v4.A0f(12);
+                i11 = c06674v4.A0L();
+                if (i11 > 0) {
+                    i10 = c06674v4.A0L() - 1;
                 } else {
-                    c06474v4 = null;
+                    c06674v4 = null;
                 }
             }
-            int A8A = c2160mB.A8A();
+            int A8A = c2180mB.A8A();
             String str = jo.A07.A0W;
-            int i13 = 0;
+            int i12 = 0;
             long j9 = 0;
-            if (!(A8A != -1 && (A0M(967, 9, 94).equals(str) || A0M(897, 15, 77).equals(str) || A0M(882, 15, 96).equals(str)) && A0L == 0 && i9 == 0 && i12 == 0)) {
+            if (!(A8A != -1 && (A0M(967, 9, 94).equals(str) || A0M(897, 15, 77).equals(str) || A0M(882, 15, 96).equals(str)) && A0L == 0 && i6 == 0 && i11 == 0)) {
                 jArr = new long[A8v];
                 iArr = new int[A8v];
                 jArr2 = new long[A8v];
                 iArr2 = new int[A8v];
                 long j10 = 0;
+                int i13 = 0;
                 int i14 = 0;
-                int i15 = 0;
                 while (true) {
                     String A0M = A0M(178, 11, 68);
-                    if (i15 >= A8v) {
-                        i15 = A8v;
+                    if (i14 >= A8v) {
+                        i14 = A8v;
                         break;
                     }
-                    boolean z6 = true;
-                    while (i14 == 0) {
-                        z6 = c0990Iv.A02();
-                        if (!z6) {
+                    boolean z9 = true;
+                    while (i13 == 0) {
+                        z9 = c1010Iv.A02();
+                        if (!z9) {
                             break;
                         }
                         if (A01[5].charAt(23) != 'W') {
                             throw new RuntimeException();
                         }
                         A01[5] = "M5jbBIfsv36G8eW66Ax72viWGVpCEb4z";
-                        j10 = c0990Iv.A02;
-                        i14 = c0990Iv.A01;
+                        j10 = c1010Iv.A02;
+                        i13 = c1010Iv.A01;
                     }
-                    if (!z6) {
-                        AbstractC06324g.A07(A0M, A0M(442, 28, 94));
-                        jArr = Arrays.copyOf(jArr, i15);
-                        iArr = Arrays.copyOf(iArr, i15);
-                        jArr2 = Arrays.copyOf(jArr2, i15);
-                        iArr2 = Arrays.copyOf(iArr2, i15);
+                    if (!z9) {
+                        AbstractC06524g.A07(A0M, A0M(442, 28, 94));
+                        jArr = Arrays.copyOf(jArr, i14);
+                        iArr = Arrays.copyOf(iArr, i14);
+                        jArr2 = Arrays.copyOf(jArr2, i14);
+                        iArr2 = Arrays.copyOf(iArr2, i14);
                         break;
                     }
-                    if (c06474v5 != null) {
-                        while (i6 == 0 && i9 > 0) {
-                            i6 = c06474v5.A0L();
-                            i10 = c06474v5.A0C();
-                            i9--;
+                    if (c06674v5 != null) {
+                        while (i4 == 0 && i6 > 0) {
+                            i4 = c06674v5.A0L();
+                            i9 = c06674v5.A0C();
+                            i6--;
                         }
-                        i6--;
+                        i4--;
                     }
-                    jArr[i15] = j10;
-                    iArr[i15] = c2160mB.AHS();
-                    if (iArr[i15] > i13) {
-                        i13 = iArr[i15];
+                    jArr[i14] = j10;
+                    iArr[i14] = c2180mB.AHS();
+                    if (iArr[i14] > i12) {
+                        i12 = iArr[i14];
                     }
-                    jArr2[i15] = j9 + i10;
-                    iArr2[i15] = c06474v4 == null ? 1 : 0;
-                    if (i15 == i11) {
-                        iArr2[i15] = 1;
-                        i12--;
-                        if (i12 > 0) {
-                            i11 = ((C06474v) AbstractC06243y.A01(c06474v4)).A0L() - 1;
+                    jArr2[i14] = j9 + i9;
+                    iArr2[i14] = c06674v4 == null ? 1 : 0;
+                    if (i14 == i10) {
+                        iArr2[i14] = 1;
+                        i11--;
+                        if (i11 > 0) {
+                            i10 = ((C06674v) AbstractC06443y.A01(c06674v4)).A0L() - 1;
                         }
                     }
                     j9 += A0L3;
                     A0L2--;
                     if (A0L2 == 0 && A0L > 0) {
-                        A0L2 = c06474v3.A0L();
-                        A0L3 = c06474v3.A0C();
+                        A0L2 = c06674v3.A0L();
+                        A0L3 = c06674v3.A0C();
                         A0L--;
                     }
-                    j10 += iArr[i15];
-                    i14--;
-                    i15++;
+                    j10 += iArr[i14];
+                    i13--;
+                    i14++;
                 }
             } else {
-                long[] jArr4 = new long[c0990Iv.A05];
+                long[] jArr4 = new long[c1010Iv.A05];
                 String[] strArr2 = A01;
                 if (strArr2[1].charAt(26) != strArr2[6].charAt(26)) {
                     A01[2] = "it49YraTc1fDpxLwGLRBh0ec";
-                    iArr3 = new int[c0990Iv.A05];
+                    iArr3 = new int[c1010Iv.A05];
                 } else {
                     String[] strArr3 = A01;
                     strArr3[0] = "cQxifTbk";
                     strArr3[3] = "kvbBtLxb";
-                    iArr3 = new int[c0990Iv.A05];
+                    iArr3 = new int[c1010Iv.A05];
                 }
-                while (c0990Iv.A02()) {
-                    jArr4[c0990Iv.A00] = c0990Iv.A02;
-                    iArr3[c0990Iv.A00] = c0990Iv.A01;
+                while (c1010Iv.A02()) {
+                    jArr4[c1010Iv.A00] = c1010Iv.A02;
+                    iArr3[c1010Iv.A00] = c1010Iv.A01;
                 }
                 J3 A002 = J4.A00(A8A, jArr4, iArr3, A0L3);
                 jArr = A002.A04;
                 iArr = A002.A03;
-                i13 = A002.A00;
+                i12 = A002.A00;
                 jArr2 = A002.A05;
                 iArr2 = A002.A02;
                 j6 = A002.A01;
@@ -620,10 +620,10 @@ public abstract class J0 {
                 long A0U = C5C.A0U(j6, 1000000L, j11);
                 if (jo2.A08 == null) {
                     C5C.A13(jArr2, 1000000L, jo2.A06);
-                    return new JR(jo, jArr, iArr, i13, jArr2, iArr2, A0U);
+                    return new JR(jo, jArr, iArr, i12, jArr2, iArr2, A0U);
                 }
                 if (jo2.A08.length == 1 && jo2.A03 == 1 && jArr2.length >= 2) {
-                    long j12 = ((long[]) AbstractC06243y.A01(jo2.A09))[0];
+                    long j12 = ((long[]) AbstractC06443y.A01(jo2.A09))[0];
                     long A0U2 = j12 + C5C.A0U(jo2.A08[0], jo2.A06, jo2.A05);
                     jArr2 = jArr2;
                     if (A0V(jArr2, j6, j12, A0U2)) {
@@ -633,32 +633,32 @@ public abstract class J0 {
                             hk.A00 = (int) A0U3;
                             hk.A01 = (int) A0U4;
                             C5C.A13(jArr2, 1000000L, jo2.A06);
-                            return new JR(jo, jArr, iArr, i13, jArr2, iArr2, C5C.A0U(jo2.A08[0], 1000000L, jo2.A05));
+                            return new JR(jo, jArr, iArr, i12, jArr2, iArr2, C5C.A0U(jo2.A08[0], 1000000L, jo2.A05));
                         }
                     }
                 }
                 if (jo2.A08.length == 1 && jo2.A08[0] == 0) {
-                    long j13 = ((long[]) AbstractC06243y.A01(jo2.A09))[0];
-                    for (int i16 = 0; i16 < jArr2.length; i16++) {
-                        jArr2[i16] = C5C.A0U(jArr2[i16] - j13, 1000000L, jo2.A06);
+                    long j13 = ((long[]) AbstractC06443y.A01(jo2.A09))[0];
+                    for (int i15 = 0; i15 < jArr2.length; i15++) {
+                        jArr2[i15] = C5C.A0U(jArr2[i15] - j13, 1000000L, jo2.A06);
                     }
-                    return new JR(jo, jArr, iArr, i13, jArr2, iArr2, C5C.A0U(j6 - j13, 1000000L, jo2.A06));
+                    return new JR(jo, jArr, iArr, i12, jArr2, iArr2, C5C.A0U(j6 - j13, 1000000L, jo2.A06));
                 }
-                boolean z9 = jo2.A03 == 1;
+                boolean z10 = jo2.A03 == 1;
+                int i16 = 0;
                 int i17 = 0;
-                int i18 = 0;
-                boolean z10 = false;
+                boolean z11 = false;
                 int[] iArr4 = new int[jo2.A08.length];
                 int[] iArr5 = new int[jo2.A08.length];
                 long[] jArr5 = jo2.A09;
                 if (A01[5].charAt(23) != 'W') {
-                    jArr3 = (long[]) AbstractC06243y.A01(jArr5);
+                    jArr3 = (long[]) AbstractC06443y.A01(jArr5);
                     i = 0;
                 } else {
                     String[] strArr5 = A01;
                     strArr5[0] = "YPXXFbwg";
                     strArr5[3] = "nX0rcUWc";
-                    jArr3 = (long[]) AbstractC06243y.A01(jArr5);
+                    jArr3 = (long[]) AbstractC06443y.A01(jArr5);
                     i = 0;
                 }
                 while (true) {
@@ -667,11 +667,11 @@ public abstract class J0 {
                         if (j14 != -1) {
                             long A0U5 = C5C.A0U(jo2.A08[i], jo2.A06, jo2.A05);
                             iArr4[i] = C5C.A0L(jArr2, j14, true, true);
-                            iArr5[i] = C5C.A0K(jArr2, j14 + A0U5, z9, false);
+                            iArr5[i] = C5C.A0K(jArr2, j14 + A0U5, z10, false);
                             while (iArr4[i] < iArr5[i] && (iArr2[iArr4[i]] & 1) == 0) {
                                 iArr4[i] = iArr4[i] + 1;
                             }
-                            i17 += iArr5[i] - iArr4[i];
+                            i16 += iArr5[i] - iArr4[i];
                             String[] strArr6 = A01;
                             if (strArr6[1].charAt(26) == strArr6[6].charAt(26)) {
                                 break;
@@ -679,33 +679,33 @@ public abstract class J0 {
                             String[] strArr7 = A01;
                             strArr7[0] = "N8MUiUXq";
                             strArr7[3] = "O0bSFd8k";
-                            z10 |= i18 != iArr4[i];
-                            i18 = iArr5[i];
+                            z11 |= i17 != iArr4[i];
+                            i17 = iArr5[i];
                         }
                         i++;
                     } else {
-                        boolean z11 = z10 | (i17 != A8v);
-                        long[] jArr6 = z11 ? new long[i17] : jArr;
-                        int[] iArr6 = z11 ? new int[i17] : iArr;
-                        if (z11) {
-                            i13 = 0;
+                        boolean z12 = z11 | (i16 != A8v);
+                        long[] jArr6 = z12 ? new long[i16] : jArr;
+                        int[] iArr6 = z12 ? new int[i16] : iArr;
+                        if (z12) {
+                            i12 = 0;
                         }
                         String[] strArr8 = A01;
                         if (strArr8[7].charAt(30) != strArr8[4].charAt(30)) {
                             A01[5] = "xPfk6NQdScK777382m5CuwBWtM3rjqH6";
-                            int[] iArr7 = z11 ? new int[i17] : iArr2;
-                            long[] jArr7 = new long[i17];
+                            int[] iArr7 = z12 ? new int[i16] : iArr2;
+                            long[] jArr7 = new long[i16];
                             long j15 = 0;
-                            int i19 = 0;
-                            for (int i20 = 0; i20 < jo2.A08.length; i20++) {
-                                long j16 = jo2.A09[i20];
-                                int i21 = iArr4[i20];
-                                int i22 = iArr5[i20];
-                                if (z11) {
-                                    int i23 = i22 - i21;
-                                    System.arraycopy(jArr, i21, jArr6, i19, i23);
-                                    System.arraycopy(iArr, i21, iArr6, i19, i23);
-                                    System.arraycopy(iArr2, i21, iArr7, i19, i23);
+                            int i18 = 0;
+                            for (int i19 = 0; i19 < jo2.A08.length; i19++) {
+                                long j16 = jo2.A09[i19];
+                                int i20 = iArr4[i19];
+                                int i21 = iArr5[i19];
+                                if (z12) {
+                                    int i22 = i21 - i20;
+                                    System.arraycopy(jArr, i20, jArr6, i18, i22);
+                                    System.arraycopy(iArr, i20, iArr6, i18, i22);
+                                    System.arraycopy(iArr2, i20, iArr7, i18, i22);
                                 } else if (A01[5].charAt(23) != 'W') {
                                     A01[2] = "bpFLG5yiCjaNBTatiJL832yJ";
                                 } else {
@@ -713,17 +713,17 @@ public abstract class J0 {
                                     strArr9[0] = "uU6cy1oD";
                                     strArr9[3] = "C1luViVj";
                                 }
-                                while (i21 < i22) {
-                                    jArr7[i19] = C5C.A0U(j15, 1000000L, jo2.A05) + C5C.A0U(Math.max(0L, jArr2[i21] - j16), 1000000L, jo2.A06);
-                                    if (z11 && iArr6[i19] > i13) {
-                                        i13 = iArr[i21];
+                                while (i20 < i21) {
+                                    jArr7[i18] = C5C.A0U(j15, 1000000L, jo2.A05) + C5C.A0U(Math.max(0L, jArr2[i20] - j16), 1000000L, jo2.A06);
+                                    if (z12 && iArr6[i18] > i12) {
+                                        i12 = iArr[i20];
                                     }
-                                    i19++;
-                                    i21++;
+                                    i18++;
+                                    i20++;
                                 }
-                                j15 += jo2.A08[i20];
+                                j15 += jo2.A08[i19];
                             }
-                            return new JR(jo, jArr6, iArr6, i13, jArr7, iArr7, C5C.A0U(j15, 1000000L, jo2.A05));
+                            return new JR(jo, jArr6, iArr6, i12, jArr7, iArr7, C5C.A0U(j15, 1000000L, jo2.A05));
                         }
                     }
                 }
@@ -732,17 +732,17 @@ public abstract class J0 {
         throw new RuntimeException();
     }
 
-    public static String A0M(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 102);
+    public static String A0M(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 102);
         }
         return new String(copyOfRange);
     }
 
     public static void A0P() {
-        A00 = new byte[]{70, 74, 9, 30, 30, 25, 74, 3, 4, 28, 11, 6, 3, 14, 11, 7, 85, 66, 74, 70, 78, 73, 78, 73, c.f16317b, 116, 70, 74, 87, 75, 66, 84, 102, 83, 115, 78, 74, 66, 84, 83, 70, 74, 87, 99, 66, 75, 83, 70, 7, 85, 89, 11, 28, 20, 24, 16, 23, 16, 23, 30, 42, 24, 20, 9, 21, 28, 10, 56, 13, 45, 16, 20, 28, 10, 13, 24, 20, 9, 54, 31, 31, 10, 28, 13, 89, 68, 72, 26, 13, 5, 9, 1, 6, 1, 6, 15, 59, 9, 5, 24, 4, 13, 27, 33, 6, 43, 0, 29, 6, 3, 72, 99, 111, 61, 42, 34, 46, 38, 33, 38, 33, 40, 27, 38, 34, 42, 60, 59, 46, 34, c.f16318c, 11, 42, 35, 59, 46, 12, 39, 46, 33, 40, 42, 60, 111, 120, 98, 48, 39, 47, 35, 43, 44, 43, 44, 37, 17, 59, 44, 33, 42, 48, 45, 44, 43, 56, 35, 54, 43, 45, 44, 17, 35, 47, 50, 46, 39, 49, 98, 99, 86, 77, 79, 114, 67, 80, 81, 71, 80, 81, 30, 35, 56, 62, 40, 40, 50, 45, 62, 123, 52, 57, 46, 4, 40, 50, 33, 62, 55, 16, 29, 17, 16, 13, 23, 13, 10, 27, 16, 10, 94, 13, 10, 28, 18, 94, 28, 17, 6, 94, 24, 17, 12, 94, 10, 12, 31, 29, 21, 94, 8, 47, 55, 32, 45, 40, 37, 97, 50, 32, 44, 49, 45, 36, 97, 51, 32, 53, 36, 97, 39, 46, 51, 97, 5, 46, 45, 35, 56, 97, 21, 51, 52, 36, 9, 5, 97, 12, 13, 17, 97, 50, 53, 51, 36, 32, 44, 123, 97, c.f16318c, 19, 30, 20, 29, 0, 31, 23, 22, 82, 1, 19, 31, 2, 30, 23, 82, 6, 19, 16, 30, 23, 82, 90, 1, 6, 16, 30, 91, 82, 31, 27, 1, 1, 27, 28, 21, 82, 1, 19, 31, 2, 30, 23, 82, 22, 23, 1, 17, 0, 27, 2, 6, 27, 29, 28, 82, 90, 1, 6, 1, 22, 91, 33, 30, 27, 29, 38, 11, 15, 10, 94, 102, 100, 125, 125, 104, 105, 45, 96, 104, 121, 108, 105, 108, 121, 108, 45, 122, 100, 121, 101, 45, 120, 99, 102, 99, 98, 122, 99, 45, 102, 104, 116, 45, 100, 99, 105, 104, 117, 55, 45, 93, 123, 104, 106, 98, 41, 97, 104, 122, 41, 103, 102, 41, 122, 104, 100, 121, 101, 108, 41, 125, 104, 107, 101, 108, 41, 122, 96, 115, 108, 41, 96, 103, 111, 102, 123, 100, 104, 125, 96, 102, 103, 109, 86, 93, c.f16317b, 72, 93, 91, 76, 93, 92, 24, 93, 86, 92, 24, 87, 94, 24, 91, 80, 77, 86, 83, 24, 92, 89, 76, 89, 90, 97, 124, 122, Byte.MAX_VALUE, Byte.MAX_VALUE, 96, 125, 123, 106, 107, 47, 108, 96, 99, 96, 125, 47, 123, 118, Byte.MAX_VALUE, 106, 53, 47, 72, 115, 110, 104, 109, 109, 114, 111, 105, 120, 121, 61, 116, 115, 116, 105, 116, 124, 113, 66, 121, 116, 110, 109, 113, 124, 100, 66, 121, 120, 113, 124, 100, 66, 109, 111, 120, 110, 120, 115, 105, 66, 123, 113, 124, 122, 105, 82, 79, 73, 76, 76, 83, 78, 72, 89, 88, 28, 81, 89, 88, 85, 93, 28, 78, 93, 72, 89, 18, 25, 34, c.f16318c, 57, 60, 60, 35, 62, 56, 41, 40, 108, 35, 46, 57, 19, 41, 52, 56, 41, 34, c.f16318c, 37, 35, 34, 19, 42, 32, 45, 43, 100, 95, 66, 68, 65, 65, 94, 67, 69, 84, 85, 17, 94, 83, 68, 110, 69, 72, 65, 84, 11, 17, 83, 104, 117, 115, 118, 118, 105, 116, 114, 99, 98, 38, 116, 99, 98, 115, 101, 99, 98, 89, 117, 114, 111, 106, 106, 89, 118, 111, 101, 114, 115, 116, 99, 89, 110, 99, 103, 98, 99, 116, 52, 15, 18, 20, 17, 17, 14, 19, 21, 4, 5, 65, 21, 8, 12, 8, 15, 6, 62, 8, 15, 7, 14, 62, 17, 19, 4, 18, 4, 15, 21, 62, 7, 13, 0, 6, 96, 113, 113, 109, 104, 98, 96, 117, 104, 110, 111, 46, 117, 117, 108, 109, 42, 121, 108, 109, 33, 48, 48, 44, 41, 35, 33, 52, 41, 47, 46, 111, 56, 109, 35, 33, 45, 37, 50, 33, 109, 45, 47, 52, 41, 47, 46, 78, 95, 95, 67, 70, 76, 78, 91, 70, c.f16317b, 65, 0, 87, 2, 66, 95, 27, 2, 76, 74, 78, 2, 25, 31, 23, 95, 78, 78, 82, 87, 93, 95, 74, 87, 81, 80, 17, 70, 19, 83, 78, 10, 19, 72, 74, 74, 61, 44, 44, 48, 53, c.f16318c, 61, 40, 53, 51, 50, 115, 36, 113, 45, 41, 53, c.f16318c, 55, 40, 53, 49, 57, 113, 40, 36, 111, 59, 80, 68, 85, 88, 94, 30, 2, 86, 65, 65, 58, 46, c.f16318c, 50, 52, 116, 58, 56, 104, 42, 62, 47, 34, 36, 100, 42, 40, Byte.MAX_VALUE, 46, 58, 43, 38, 32, 96, 46, 35, 46, 44, 34, 54, 39, 42, 44, 108, 34, 46, 49, 110, 52, 33, 77, 89, 72, 69, 67, 3, 73, 77, 79, 31, 3, 23, 6, 11, 13, 77, 4, 14, 3, 1, 103, 115, 98, 111, 105, 41, 97, 49, 55, 55, 43, 103, 106, 103, 113, 74, 94, 79, 66, 68, 4, 76, 28, 26, 26, 6, 70, 71, 74, 92, 34, 54, 39, 42, 44, 108, 46, 43, 34, 114, 23, 3, 18, 31, 25, 89, 27, 30, 27, 71, 96, 116, 101, 104, 110, 46, 108, 113, 53, 96, 44, 109, 96, 117, 108, 22, 2, 19, 30, 24, 88, 26, 7, 18, 16, 68, 80, 65, 76, 74, 10, 74, 85, 80, 86, 89, 77, 92, 81, 87, 23, 74, 89, 79, 74, 94, 79, 66, 68, 4, 95, 89, 94, 78, 6, 67, 79, 114, 102, 119, 122, 124, 60, 101, 125, 119, 61, 119, 
-        103, 96, 32, 52, 37, 40, 46, 110, 55, 47, 37, 111, 37, 53, 50, 111, 41, 37, 68, 80, 65, 76, 74, 10, 83, 75, 65, 11, 65, 81, 86, 11, 77, 65, 30, 85, 87, 74, 67, 76, 73, c.f16317b, 24, 73, 71, 87, 88, 76, 93, 80, 86, 22, 79, 87, 93, 23, 93, 77, 74, 23, 76, 81, 93, 2, 73, 75, 86, 95, 80, 85, 92, 4, 73, 11, 54, 55, 54, 100, 87, 86, 87, 71, 79, 73, 66, 79, 50, 52, c.f16318c, 34, 74, 65, c.f16317b, 69, 77, 104, 93, 70, 68, 122, c.f16317b, 83, 76, 9, 68, 92, 90, 93, 9, 75, 76, 9, 89, 70, 90, c.f16317b, 93, c.f16317b, 95, 76, 49, 37, 58, 54, 119, 54, 35, 56, 58, 119, 62, 36, 119, 58, 54, 57, 51, 54, 35, 56, 37, 46, 59, 43, 32, 33, 104, 41, 60, 39, 37, 104, 33, 59, 104, 37, 41, 38, 44, 41, 60, 39, 58, 49, 15, 30, 21, 24, 91, 26, 15, 20, 22, 91, 18, 8, 91, 22, 26, 21, 31, 26, 15, 20, 9, 2, 5, 26, 23, 22, 28, 92, c.f16317b, 20, 3, 3, 67, 92, 81, 80, 90, 26, 84, 67, 5, 4, 35, 60, 49, 48, 58, 122, 52, 35, 54, 72, 87, 90, 91, 81, 17, 90, 81, 82, 92, 71, 19, 72, 87, 77, 87, 81, 80, 68, 91, 86, 87, 93, 29, 90, 87, 68, 81, 26, 5, 8, 9, 3, 67, 1, 28, 9, 11, 95, c.f16317b, 77, 76, 70, 6, 81, 4, 95, 71, 77, 7, 70, 71, 27, 7, 95, 89, 17, 3, 28, 17, 16, 26, 90, 13, 88, 3, 27, 17, 91, 26, 27, 71, 91, 3, 5, 76};
+        A00 = new byte[]{70, 74, 9, 30, 30, 25, 74, 3, 4, 28, 11, 6, 3, 14, 11, 7, 85, 66, 74, 70, 78, 73, 78, 73, c.f17104b, 116, 70, 74, 87, 75, 66, 84, 102, 83, 115, 78, 74, 66, 84, 83, 70, 74, 87, 99, 66, 75, 83, 70, 7, 85, 89, 11, 28, 20, 24, 16, 23, 16, 23, 30, 42, 24, 20, 9, 21, 28, 10, 56, 13, 45, 16, 20, 28, 10, 13, 24, 20, 9, 54, 31, 31, 10, 28, 13, 89, 68, 72, 26, 13, 5, 9, 1, 6, 1, 6, 15, 59, 9, 5, 24, 4, 13, 27, 33, 6, 43, 0, 29, 6, 3, 72, 99, 111, 61, 42, 34, 46, 38, 33, 38, 33, 40, 27, 38, 34, 42, 60, 59, 46, 34, c.f17105c, 11, 42, 35, 59, 46, 12, 39, 46, 33, 40, 42, 60, 111, 120, 98, 48, 39, 47, 35, 43, 44, 43, 44, 37, 17, 59, 44, 33, 42, 48, 45, 44, 43, 56, 35, 54, 43, 45, 44, 17, 35, 47, 50, 46, 39, 49, 98, 99, 86, 77, 79, 114, 67, 80, 81, 71, 80, 81, 30, 35, 56, 62, 40, 40, 50, 45, 62, 123, 52, 57, 46, 4, 40, 50, 33, 62, 55, 16, 29, 17, 16, 13, 23, 13, 10, 27, 16, 10, 94, 13, 10, 28, 18, 94, 28, 17, 6, 94, 24, 17, 12, 94, 10, 12, 31, 29, 21, 94, 8, 47, 55, 32, 45, 40, 37, 97, 50, 32, 44, 49, 45, 36, 97, 51, 32, 53, 36, 97, 39, 46, 51, 97, 5, 46, 45, 35, 56, 97, 21, 51, 52, 36, 9, 5, 97, 12, 13, 17, 97, 50, 53, 51, 36, 32, 44, 123, 97, c.f17105c, 19, 30, 20, 29, 0, 31, 23, 22, 82, 1, 19, 31, 2, 30, 23, 82, 6, 19, 16, 30, 23, 82, 90, 1, 6, 16, 30, 91, 82, 31, 27, 1, 1, 27, 28, 21, 82, 1, 19, 31, 2, 30, 23, 82, 22, 23, 1, 17, 0, 27, 2, 6, 27, 29, 28, 82, 90, 1, 6, 1, 22, 91, 33, 30, 27, 29, 38, 11, 15, 10, 94, 102, 100, 125, 125, 104, 105, 45, 96, 104, 121, 108, 105, 108, 121, 108, 45, 122, 100, 121, 101, 45, 120, 99, 102, 99, 98, 122, 99, 45, 102, 104, 116, 45, 100, 99, 105, 104, 117, 55, 45, 93, 123, 104, 106, 98, 41, 97, 104, 122, 41, 103, 102, 41, 122, 104, 100, 121, 101, 108, 41, 125, 104, 107, 101, 108, 41, 122, 96, 115, 108, 41, 96, 103, 111, 102, 123, 100, 104, 125, 96, 102, 103, 109, 86, 93, c.f17104b, 72, 93, 91, 76, 93, 92, 24, 93, 86, 92, 24, 87, 94, 24, 91, 80, 77, 86, 83, 24, 92, 89, 76, 89, 90, 97, 124, 122, Byte.MAX_VALUE, Byte.MAX_VALUE, 96, 125, 123, 106, 107, 47, 108, 96, 99, 96, 125, 47, 123, 118, Byte.MAX_VALUE, 106, 53, 47, 72, 115, 110, 104, 109, 109, 114, 111, 105, 120, 121, 61, 116, 115, 116, 105, 116, 124, 113, 66, 121, 116, 110, 109, 113, 124, 100, 66, 121, 120, 113, 124, 100, 66, 109, 111, 120, 110, 120, 115, 105, 66, 123, 113, 124, 122, 105, 82, 79, 73, 76, 76, 83, 78, 72, 89, 88, 28, 81, 89, 88, 85, 93, 28, 78, 93, 72, 89, 18, 25, 34, c.f17105c, 57, 60, 60, 35, 62, 56, 41, 40, 108, 35, 46, 57, 19, 41, 52, 56, 41, 34, c.f17105c, 37, 35, 34, 19, 42, 32, 45, 43, 100, 95, 66, 68, 65, 65, 94, 67, 69, 84, 85, 17, 94, 83, 68, 110, 69, 72, 65, 84, 11, 17, 83, 104, 117, 115, 118, 118, 105, 116, 114, 99, 98, 38, 116, 99, 98, 115, 101, 99, 98, 89, 117, 114, 111, 106, 106, 89, 118, 111, 101, 114, 115, 116, 99, 89, 110, 99, 103, 98, 99, 116, 52, 15, 18, 20, 17, 17, 14, 19, 21, 4, 5, 65, 21, 8, 12, 8, 15, 6, 62, 8, 15, 7, 14, 62, 17, 19, 4, 18, 4, 15, 21, 62, 7, 13, 0, 6, 96, 113, 113, 109, 104, 98, 96, 117, 104, 110, 111, 46, 117, 117, 108, 109, 42, 121, 108, 109, 33, 48, 48, 44, 41, 35, 33, 52, 41, 47, 46, 111, 56, 109, 35, 33, 45, 37, 50, 33, 109, 45, 47, 52, 41, 47, 46, 78, 95, 95, 67, 70, 76, 78, 91, 70, c.f17104b, 65, 0, 87, 2, 66, 95, 27, 2, 76, 74, 78, 2, 25, 31, 23, 95, 78, 78, 82, 87, 93, 95, 74, 87, 81, 80, 17, 70, 19, 83, 78, 10, 19, 72, 74, 74, 61, 44, 44, 48, 53, c.f17105c, 61, 40, 53, 51, 50, 115, 36, 113, 45, 41, 53, c.f17105c, 55, 40, 53, 49, 57, 113, 40, 36, 111, 59, 80, 68, 85, 88, 94, 30, 2, 86, 65, 65, 58, 46, c.f17105c, 50, 52, 116, 58, 56, 104, 42, 62, 47, 34, 36, 100, 42, 40, Byte.MAX_VALUE, 46, 58, 43, 38, 32, 96, 46, 35, 46, 44, 34, 54, 39, 42, 44, 108, 34, 46, 49, 110, 52, 33, 77, 89, 72, 69, 67, 3, 73, 77, 79, 31, 3, 23, 6, 11, 13, 77, 4, 14, 3, 1, 103, 115, 98, 111, 105, 41, 97, 49, 55, 55, 43, 103, 106, 103, 113, 74, 94, 79, 66, 68, 4, 76, 28, 26, 26, 6, 70, 71, 74, 92, 34, 54, 39, 42, 44, 108, 46, 43, 34, 114, 23, 3, 18, 31, 25, 89, 27, 30, 27, 71, 96, 116, 101, 104, 110, 46, 108, 113, 53, 96, 44, 109, 96, 117, 108, 22, 2, 19, 30, 24, 88, 26, 7, 18, 16, 68, 80, 65, 76, 74, 10, 74, 85, 80, 86, 89, 77, 92, 81, 87, 23, 74, 89, 79, 74, 94, 79, 66, 68, 4, 95, 89, 94, 78, 6, 67, 79, 114, 102, 119, 122, 124, 60, 101, 125, 119, 61, 119, 
+        103, 96, 32, 52, 37, 40, 46, 110, 55, 47, 37, 111, 37, 53, 50, 111, 41, 37, 68, 80, 65, 76, 74, 10, 83, 75, 65, 11, 65, 81, 86, 11, 77, 65, 30, 85, 87, 74, 67, 76, 73, c.f17104b, 24, 73, 71, 87, 88, 76, 93, 80, 86, 22, 79, 87, 93, 23, 93, 77, 74, 23, 76, 81, 93, 2, 73, 75, 86, 95, 80, 85, 92, 4, 73, 11, 54, 55, 54, 100, 87, 86, 87, 71, 79, 73, 66, 79, 50, 52, c.f17105c, 34, 74, 65, c.f17104b, 69, 77, 104, 93, 70, 68, 122, c.f17104b, 83, 76, 9, 68, 92, 90, 93, 9, 75, 76, 9, 89, 70, 90, c.f17104b, 93, c.f17104b, 95, 76, 49, 37, 58, 54, 119, 54, 35, 56, 58, 119, 62, 36, 119, 58, 54, 57, 51, 54, 35, 56, 37, 46, 59, 43, 32, 33, 104, 41, 60, 39, 37, 104, 33, 59, 104, 37, 41, 38, 44, 41, 60, 39, 58, 49, 15, 30, 21, 24, 91, 26, 15, 20, 22, 91, 18, 8, 91, 22, 26, 21, 31, 26, 15, 20, 9, 2, 5, 26, 23, 22, 28, 92, c.f17104b, 20, 3, 3, 67, 92, 81, 80, 90, 26, 84, 67, 5, 4, 35, 60, 49, 48, 58, 122, 52, 35, 54, 72, 87, 90, 91, 81, 17, 90, 81, 82, 92, 71, 19, 72, 87, 77, 87, 81, 80, 68, 91, 86, 87, 93, 29, 90, 87, 68, 81, 26, 5, 8, 9, 3, 67, 1, 28, 9, 11, 95, c.f17104b, 77, 76, 70, 6, 81, 4, 95, 71, 77, 7, 70, 71, 27, 7, 95, 89, 17, 3, 28, 17, 16, 26, 90, 13, 88, 3, 27, 17, 91, 26, 27, 71, 91, 3, 5, 76};
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:100:0x02a6, code lost:
@@ -975,7 +975,7 @@ public abstract class J0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:169:0x043f, code lost:
     
-        com.instagram.common.viewpoint.core.AbstractC06324g.A07(A0M(178, 11, 68), A0M(470, 24, 105) + com.instagram.common.viewpoint.core.AbstractC0989Iu.A02(r2));
+        com.instagram.common.viewpoint.core.AbstractC06524g.A07(A0M(178, 11, 68), A0M(470, 24, 105) + com.instagram.common.viewpoint.core.AbstractC1009Iu.A02(r2));
      */
     /* JADX WARN: Code restructure failed: missing block: B:170:0x0417, code lost:
     
@@ -1067,7 +1067,7 @@ public abstract class J0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:27:0x00b0, code lost:
     
-        r3 = new com.instagram.common.viewpoint.core.C05912p().A0g(r37).A11(r6).A0w(r13).A0r(r29).A0f(r28).A0Y(r27).A0l(r38).A13(r26).A0o(r11).A12(r12).A0u(r25);
+        r3 = new com.instagram.common.viewpoint.core.C06112p().A0g(r37).A11(r6).A0w(r13).A0r(r29).A0f(r28).A0Y(r27).A0l(r38).A13(r26).A0o(r11).A12(r12).A0u(r25);
      */
     /* JADX WARN: Code restructure failed: missing block: B:28:0x00f0, code lost:
     
@@ -1092,9 +1092,9 @@ public abstract class J0 {
     /* JADX WARN: Code restructure failed: missing block: B:33:0x0129, code lost:
     
         r0 = r17.A00;
-        r2 = r3.A0a(com.instagram.common.viewpoint.core.AbstractC0784As.A03(r0));
+        r2 = r3.A0a(com.instagram.common.viewpoint.core.AbstractC0804As.A03(r0));
         r0 = r17.A01;
-        r2.A0j(com.instagram.common.viewpoint.core.AbstractC0784As.A03(r0));
+        r2.A0j(com.instagram.common.viewpoint.core.AbstractC0804As.A03(r0));
      */
     /* JADX WARN: Code restructure failed: missing block: B:34:0x0140, code lost:
     
@@ -1152,7 +1152,7 @@ public abstract class J0 {
         com.instagram.common.viewpoint.core.HB.A01(r2, null);
         r6 = A0M(1206, 9, 51);
         r33.A0f(r1 + 8);
-        r2 = com.instagram.common.viewpoint.core.C0939Gv.A00(r33);
+        r2 = com.instagram.common.viewpoint.core.C0959Gv.A00(r33);
         r12 = r2.A05;
         r40.A00 = r2.A02;
      */
@@ -1332,60 +1332,60 @@ public abstract class J0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static void A0R(C06474v c06474v, int i, int i6, int i9, int i10, int i11, DrmInitData drmInitData, C0993Iy c0993Iy, int i12) throws C3K {
+    public static void A0R(C06674v c06674v, int i, int i4, int i6, int i9, int i10, DrmInitData drmInitData, C1013Iy c1013Iy, int i11) throws C3K {
         int A0C;
         DrmInitData drmInitData2 = drmInitData;
-        int i13 = i;
-        c06474v.A0f(i6 + 8 + 8);
-        c06474v.A0g(16);
-        int A0M = c06474v.A0M();
-        int A0M2 = c06474v.A0M();
-        boolean z3 = false;
-        float f3 = 1.0f;
-        c06474v.A0g(50);
-        int A09 = c06474v.A09();
-        if (i13 == 1701733238) {
-            Pair<Integer, JP> A08 = A08(c06474v, i6, i9);
+        int i12 = i;
+        c06674v.A0f(i4 + 8 + 8);
+        c06674v.A0g(16);
+        int A0M = c06674v.A0M();
+        int A0M2 = c06674v.A0M();
+        boolean z6 = false;
+        float f2 = 1.0f;
+        c06674v.A0g(50);
+        int A09 = c06674v.A09();
+        if (i12 == 1701733238) {
+            Pair<Integer, JP> A08 = A08(c06674v, i4, i6);
             if (A08 != null) {
-                i13 = ((Integer) A08.first).intValue();
+                i12 = ((Integer) A08.first).intValue();
                 drmInitData2 = drmInitData2 == null ? null : drmInitData2.A01(((JP) A08.second).A02);
-                c0993Iy.A03[i12] = (JP) A08.second;
+                c1013Iy.A03[i11] = (JP) A08.second;
             }
-            c06474v.A0f(A09);
+            c06674v.A0f(A09);
         }
         String str = null;
-        if (i13 == 1831958048) {
+        if (i12 == 1831958048) {
             str = A0M(1243, 10, 10);
-        } else if (i13 == 1211250227) {
+        } else if (i12 == 1211250227) {
             str = A0M(1186, 10, 21);
         }
         List<byte[]> list = null;
         String str2 = null;
         byte[] bArr = null;
+        int i13 = -1;
+        C1011Iw c1011Iw = null;
         int i14 = -1;
-        C0991Iw c0991Iw = null;
         int i15 = -1;
         int i16 = -1;
-        int i17 = -1;
         ByteBuffer byteBuffer = null;
         while (true) {
-            int i18 = A09 - i6;
+            int i17 = A09 - i4;
             if (A01[5].charAt(23) == 'W') {
                 A01[5] = "UV8763Z4eJ1eqclMrzFGVnLWDHgV5Y7v";
-                if (i18 < i9) {
-                    c06474v.A0f(A09);
-                    int A092 = c06474v.A09();
-                    int A0C2 = c06474v.A0C();
-                    if (A0C2 != 0 || c06474v.A09() - i6 != i9) {
-                        boolean z6 = A0C2 > 0;
+                if (i17 < i6) {
+                    c06674v.A0f(A09);
+                    int A092 = c06674v.A09();
+                    int A0C2 = c06674v.A0C();
+                    if (A0C2 != 0 || c06674v.A09() - i4 != i6) {
+                        boolean z9 = A0C2 > 0;
                         String A0M3 = A0M(1090, 30, 79);
                         if (A01[5].charAt(23) != 'W') {
-                            HB.A01(z6, A0M3);
-                            A0C = c06474v.A0C();
+                            HB.A01(z9, A0M3);
+                            A0C = c06674v.A0C();
                         } else {
                             A01[2] = "a7F234D58gsc4SWrdwKeU3Lp";
-                            HB.A01(z6, A0M3);
-                            A0C = c06474v.A0C();
+                            HB.A01(z9, A0M3);
+                            A0C = c06674v.A0C();
                         }
                         A09 += A0C2;
                     }
@@ -1656,7 +1656,7 @@ public abstract class J0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:98:0x020d, code lost:
     
-        r27.A02 = new com.instagram.common.viewpoint.core.C05912p().A0g(r23).A11(r7).A0b(r12).A0m(r9).A0u(r2).A10(r24).A14();
+        r27.A02 = new com.instagram.common.viewpoint.core.C06112p().A0g(r23).A11(r7).A0b(r12).A0m(r9).A0u(r2).A10(r24).A14();
      */
     /* JADX WARN: Failed to parse debug info
     java.lang.ArrayIndexOutOfBoundsException
@@ -1664,53 +1664,53 @@ public abstract class J0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static void A0T(C06474v c06474v, int i, int i6, int i9, int i10, String str, boolean z3, DrmInitData drmInitData, C0993Iy c0993Iy, int i11) throws C3K {
+    public static void A0T(C06674v c06674v, int i, int i4, int i6, int i9, String str, boolean z6, DrmInitData drmInitData, C1013Iy c1013Iy, int i10) throws C3K {
         int A0M;
         int A0J;
         long j6;
         long j9;
         byte[] bArr;
-        int i12 = i;
+        int i11 = i;
         DrmInitData drmInitData2 = drmInitData;
-        c06474v.A0f(i6 + 8 + 8);
-        int i13 = 0;
-        if (z3) {
-            i13 = c06474v.A0M();
-            c06474v.A0g(6);
+        c06674v.A0f(i4 + 8 + 8);
+        int i12 = 0;
+        if (z6) {
+            i12 = c06674v.A0M();
+            c06674v.A0g(6);
         } else {
-            c06474v.A0g(8);
+            c06674v.A0g(8);
         }
-        int i14 = 0;
-        int i15 = -1;
+        int i13 = 0;
+        int i14 = -1;
         String str2 = null;
-        C0991Iw c0991Iw = null;
+        C1011Iw c1011Iw = null;
         if (A01[2].length() == 24) {
             String[] strArr = A01;
             strArr[0] = "6JAwliLs";
             strArr[3] = "MHNM5nZH";
-            if (i13 == 0 || i13 == 1) {
-                A0M = c06474v.A0M();
-                c06474v.A0g(6);
-                A0J = c06474v.A0J();
-                c06474v.A0f(c06474v.A09() - 4);
-                i14 = c06474v.A0C();
-                if (i13 == 1) {
-                    c06474v.A0g(16);
+            if (i12 == 0 || i12 == 1) {
+                A0M = c06674v.A0M();
+                c06674v.A0g(6);
+                A0J = c06674v.A0J();
+                c06674v.A0f(c06674v.A09() - 4);
+                i13 = c06674v.A0C();
+                if (i12 == 1) {
+                    c06674v.A0g(16);
                 }
             } else {
-                if (i13 != 2) {
+                if (i12 != 2) {
                     return;
                 }
-                c06474v.A0g(16);
-                A0J = (int) Math.round(c06474v.A06());
-                A0M = c06474v.A0L();
-                c06474v.A0g(20);
+                c06674v.A0g(16);
+                A0J = (int) Math.round(c06674v.A06());
+                A0M = c06674v.A0L();
+                c06674v.A0g(20);
             }
-            int A09 = c06474v.A09();
-            if (i12 == 1701733217) {
-                Pair<Integer, JP> A08 = A08(c06474v, i6, i9);
+            int A09 = c06674v.A09();
+            if (i11 == 1701733217) {
+                Pair<Integer, JP> A08 = A08(c06674v, i4, i6);
                 if (A08 != null) {
-                    i12 = ((Integer) A08.first).intValue();
+                    i11 = ((Integer) A08.first).intValue();
                     if (drmInitData2 != null) {
                         drmInitData2 = drmInitData2.A01(((JP) A08.second).A02);
                     } else if (A01[2].length() != 24) {
@@ -1721,19 +1721,19 @@ public abstract class J0 {
                         strArr2[3] = "8R10f2wp";
                         drmInitData2 = null;
                     }
-                    JP[] jpArr = c0993Iy.A03;
+                    JP[] jpArr = c1013Iy.A03;
                     JP jp = (JP) A08.second;
                     String[] strArr3 = A01;
                     if (strArr3[1].charAt(26) != strArr3[6].charAt(26)) {
                         String[] strArr4 = A01;
                         strArr4[7] = "lvh8KGFHktoLjastkJ82cPetj14Rk4EU";
                         strArr4[4] = "lCZg4scnRLhDwR3AaCs1YjGUJehF9RDz";
-                        jpArr[i11] = jp;
+                        jpArr[i10] = jp;
                     } else {
                         String[] strArr5 = A01;
                         strArr5[0] = "dju2geGd";
                         strArr5[3] = "bzT2ebja";
-                        jpArr[i11] = jp;
+                        jpArr[i10] = jp;
                     }
                 } else {
                     String[] strArr6 = A01;
@@ -1744,14 +1744,14 @@ public abstract class J0 {
                     strArr7[7] = "gPFMLbY3dC1lU3feUmGywMAQlXFn4oyw";
                     strArr7[4] = "p7gqQJ524nkvgJLmUWGAgmNX9hqHunnJ";
                 }
-                c06474v.A0f(A09);
+                c06674v.A0f(A09);
             }
             String str3 = null;
-            if (i12 == 1633889587) {
+            if (i11 == 1633889587) {
                 str3 = A0M(822, 9, 61);
-            } else if (i12 == 1700998451) {
+            } else if (i11 == 1700998451) {
                 str3 = A0M(862, 10, 74);
-            } else if (i12 == 1633889588) {
+            } else if (i11 == 1633889588) {
                 String[] strArr8 = A01;
                 if (strArr8[7].charAt(30) != strArr8[4].charAt(30)) {
                     String[] strArr9 = A01;
@@ -1761,7 +1761,7 @@ public abstract class J0 {
                 } else {
                     str3 = A0M(831, 9, 45);
                 }
-            } else if (i12 == 1685353315) {
+            } else if (i11 == 1685353315) {
                 String[] strArr10 = A01;
                 if (strArr10[1].charAt(26) != strArr10[6].charAt(26)) {
                     A01[2] = "KJpCB4t3K52AuUO24XLWBqo9";
@@ -1780,25 +1780,25 @@ public abstract class J0 {
                 }
             }
             List<byte[]> list = null;
-            while (A09 - i6 < i9) {
-                c06474v.A0f(A09);
-                int A0C = c06474v.A0C();
-                boolean z6 = A0C > 0;
+            while (A09 - i4 < i6) {
+                c06674v.A0f(A09);
+                int A0C = c06674v.A0C();
+                boolean z9 = A0C > 0;
                 String A0M2 = A0M(1090, 30, 79);
                 String[] strArr14 = A01;
                 if (strArr14[7].charAt(30) != strArr14[4].charAt(30)) {
                     A01[2] = "1WqyRoRGMALZfYpxNfh8k5AQ";
-                    HB.A01(z6, A0M2);
-                    int A0C2 = c06474v.A0C();
+                    HB.A01(z9, A0M2);
+                    int A0C2 = c06674v.A0C();
                     if (A0C2 == 1835557187) {
-                        int i16 = A0C - 13;
-                        byte[] bArr2 = new byte[i16];
-                        c06474v.A0f(13 + A09);
-                        c06474v.A0k(bArr2, 0, i16);
+                        int i15 = A0C - 13;
+                        byte[] bArr2 = new byte[i15];
+                        c06674v.A0f(13 + A09);
+                        c06674v.A0k(bArr2, 0, i15);
                         list = BP.A04(bArr2);
                     } else {
                         if (A0C2 != 1702061171) {
-                            if (z3) {
+                            if (z6) {
                                 if (A01[5].charAt(23) == 'W') {
                                     String[] strArr15 = A01;
                                     strArr15[0] = "uRIbW45A";
@@ -1806,14 +1806,14 @@ public abstract class J0 {
                                 }
                             }
                             if (A0C2 == 1684103987) {
-                                c06474v.A0f(A09 + 8);
-                                c0993Iy.A02 = AbstractC0935Gr.A07(c06474v, Integer.toString(i10), str, drmInitData2);
+                                c06674v.A0f(A09 + 8);
+                                c1013Iy.A02 = AbstractC0955Gr.A07(c06674v, Integer.toString(i9), str, drmInitData2);
                             } else if (A0C2 == 1684366131) {
-                                c06474v.A0f(A09 + 8);
-                                c0993Iy.A02 = AbstractC0935Gr.A08(c06474v, Integer.toString(i10), str, drmInitData2);
+                                c06674v.A0f(A09 + 8);
+                                c1013Iy.A02 = AbstractC0955Gr.A08(c06674v, Integer.toString(i9), str, drmInitData2);
                             } else if (A0C2 == 1684103988) {
-                                c06474v.A0f(A09 + 8);
-                                c0993Iy.A02 = AbstractC0938Gu.A03(c06474v, Integer.toString(i10), str, drmInitData2);
+                                c06674v.A0f(A09 + 8);
+                                c1013Iy.A02 = AbstractC0958Gu.A03(c06674v, Integer.toString(i9), str, drmInitData2);
                             } else {
                                 String[] strArr16 = A01;
                                 if (strArr16[7].charAt(30) != strArr16[4].charAt(30)) {
@@ -1823,14 +1823,14 @@ public abstract class J0 {
                                 }
                             }
                         }
-                        int A04 = A0C2 == 1702061171 ? A09 : A04(c06474v, 1702061171, A09, A0C);
+                        int A04 = A0C2 == 1702061171 ? A09 : A04(c06674v, 1702061171, A09, A0C);
                         if (A04 != -1) {
-                            c0991Iw = A0G(c06474v, A04);
-                            str3 = c0991Iw.A02;
-                            bArr = c0991Iw.A03;
+                            c1011Iw = A0G(c06674v, A04);
+                            str3 = c1011Iw.A02;
+                            bArr = c1011Iw.A03;
                             if (bArr != null) {
                                 if (A0M(932, 15, 103).equals(str3)) {
-                                    C0930Gm A032 = AbstractC0931Gn.A03(bArr);
+                                    C0950Gm A032 = AbstractC0951Gn.A03(bArr);
                                     A0J = A032.A01;
                                     A0M = A032.A00;
                                     str2 = A032.A02;
@@ -1842,17 +1842,17 @@ public abstract class J0 {
                     A09 += A0C;
                 }
             }
-            if (c0993Iy.A02 != null || str3 == null) {
+            if (c1013Iy.A02 != null || str3 == null) {
                 return;
             }
-            C05912p A10 = new C05912p().A0g(i10).A11(str3).A0w(str2).A0b(A0M).A0m(A0J).A0i(i15).A12(list).A0u(drmInitData2).A10(str);
-            if (c0991Iw != null) {
-                j6 = c0991Iw.A00;
-                C05912p A0a = A10.A0a(AbstractC0784As.A03(j6));
-                j9 = c0991Iw.A01;
-                A0a.A0j(AbstractC0784As.A03(j9));
+            C06112p A10 = new C06112p().A0g(i9).A11(str3).A0w(str2).A0b(A0M).A0m(A0J).A0i(i14).A12(list).A0u(drmInitData2).A10(str);
+            if (c1011Iw != null) {
+                j6 = c1011Iw.A00;
+                C06112p A0a = A10.A0a(AbstractC0804As.A03(j6));
+                j9 = c1011Iw.A01;
+                A0a.A0j(AbstractC0804As.A03(j9));
             }
-            c0993Iy.A02 = A10.A14();
+            c1013Iy.A02 = A10.A14();
             return;
         }
         throw new RuntimeException();
@@ -1864,10 +1864,10 @@ public abstract class J0 {
         A02 = C5C.A1G(A0M(351, 8, 8));
     }
 
-    public static float A00(C06474v c06474v, int i) {
-        c06474v.A0f(i + 8);
-        int vSpacing = c06474v.A0L();
-        int hSpacing = c06474v.A0L();
+    public static float A00(C06674v c06674v, int i) {
+        c06674v.A0f(i + 8);
+        int vSpacing = c06674v.A0L();
+        int hSpacing = c06674v.A0L();
         return vSpacing / hSpacing;
     }
 
@@ -1894,11 +1894,11 @@ public abstract class J0 {
         return -1;
     }
 
-    public static int A02(C06474v c06474v) {
-        int A0I = c06474v.A0I();
-        int i = A0I & com.anythink.expressad.video.module.a.a.f21728R;
+    public static int A02(C06674v c06674v) {
+        int A0I = c06674v.A0I();
+        int i = A0I & com.anythink.expressad.video.module.a.a.f22515R;
         while (true) {
-            int i6 = A0I & 128;
+            int i4 = A0I & 128;
             String[] strArr = A01;
             String str = strArr[7];
             String str2 = strArr[4];
@@ -1908,9 +1908,9 @@ public abstract class J0 {
                 throw new RuntimeException();
             }
             A01[5] = "pSNibJ1kKp1RE21akOqiyNuWX3n84SWQ";
-            if (i6 == 128) {
-                A0I = c06474v.A0I();
-                int i9 = i << 7;
+            if (i4 == 128) {
+                A0I = c06674v.A0I();
+                int i6 = i << 7;
                 String[] strArr2 = A01;
                 String str3 = strArr2[0];
                 String str4 = strArr2[3];
@@ -1920,12 +1920,12 @@ public abstract class J0 {
                     String[] strArr3 = A01;
                     strArr3[0] = "dUXzi2Ex";
                     strArr3[3] = "FqHw8aws";
-                    int currentByte3 = A0I & com.anythink.expressad.video.module.a.a.f21728R;
-                    i = i9 | currentByte3;
+                    int currentByte3 = A0I & com.anythink.expressad.video.module.a.a.f22515R;
+                    i = i6 | currentByte3;
                 } else {
                     A01[2] = "53iEjHDa99dBpQfClHLnj3Lr";
-                    int currentByte4 = A0I & com.anythink.expressad.video.module.a.a.f21728R;
-                    i = i9 | currentByte4;
+                    int currentByte4 = A0I & com.anythink.expressad.video.module.a.a.f22515R;
+                    i = i6 | currentByte4;
                 }
             } else {
                 return i;
@@ -1933,30 +1933,30 @@ public abstract class J0 {
         }
     }
 
-    public static int A03(C06474v c06474v) {
-        c06474v.A0f(16);
-        return c06474v.A0C();
+    public static int A03(C06674v c06674v) {
+        c06674v.A0f(16);
+        return c06674v.A0C();
     }
 
     /* JADX WARN: Incorrect condition in loop: B:6:0x000d */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static int A04(C06474v c06474v, int i, int i6, int i9) throws C3K {
-        int childAtomSize = c06474v.A09();
-        HB.A01(childAtomSize >= i6, null);
-        while (childAtomPosition < i9) {
-            c06474v.A0f(childAtomSize);
-            int A0C = c06474v.A0C();
-            boolean z3 = A0C > 0;
+    public static int A04(C06674v c06674v, int i, int i4, int i6) throws C3K {
+        int childAtomSize = c06674v.A09();
+        HB.A01(childAtomSize >= i4, null);
+        while (childAtomPosition < i6) {
+            c06674v.A0f(childAtomSize);
+            int A0C = c06674v.A0C();
+            boolean z6 = A0C > 0;
             if (A01[5].charAt(23) != 'W') {
                 throw new RuntimeException();
             }
             String[] strArr = A01;
             strArr[7] = "6gtDIh58mAlo0zqgdjwPUqi1ndJRBK82";
             strArr[4] = "DRBAnAjKoyJp6qnYv3HHxzBKoLLYYD5q";
-            HB.A01(z3, A0M(1090, 30, 79));
-            int childAtomPosition = c06474v.A0C();
+            HB.A01(z6, A0M(1090, 30, 79));
+            int childAtomPosition = c06674v.A0C();
             if (childAtomPosition == i) {
                 return childAtomSize;
             }
@@ -1965,25 +1965,25 @@ public abstract class J0 {
         return -1;
     }
 
-    public static long A05(C06474v c06474v) {
+    public static long A05(C06674v c06674v) {
         int fullAtom = 8;
-        c06474v.A0f(8);
-        if (AbstractC0989Iu.A01(c06474v.A0C()) != 0) {
+        c06674v.A0f(8);
+        if (AbstractC1009Iu.A01(c06674v.A0C()) != 0) {
             fullAtom = 16;
         }
-        c06474v.A0g(fullAtom);
-        return c06474v.A0Q();
+        c06674v.A0g(fullAtom);
+        return c06674v.A0Q();
     }
 
-    public static Pair<Long, String> A06(C06474v c06474v) {
-        c06474v.A0f(8);
-        int fullAtom = AbstractC0989Iu.A01(c06474v.A0C());
+    public static Pair<Long, String> A06(C06674v c06674v) {
+        c06674v.A0f(8);
+        int fullAtom = AbstractC1009Iu.A01(c06674v.A0C());
         int languageCode = fullAtom == 0 ? 8 : 16;
-        c06474v.A0g(languageCode);
-        long A0Q = c06474v.A0Q();
+        c06674v.A0g(languageCode);
+        long A0Q = c06674v.A0Q();
         int version = fullAtom == 0 ? 4 : 8;
-        c06474v.A0g(version);
-        int A0M = c06474v.A0M();
+        c06674v.A0g(version);
+        int A0M = c06674v.A0M();
         int languageCode2 = A0M >> 10;
         StringBuilder append = new StringBuilder().append(A0M(0, 0, 93)).append((char) ((languageCode2 & 31) + 96));
         int languageCode3 = A0M >> 5;
@@ -1999,18 +1999,18 @@ public abstract class J0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static Pair<Integer, JP> A07(C06474v c06474v, int i, int i6) throws C3K {
-        int i9 = i + 8;
+    public static Pair<Integer, JP> A07(C06674v c06674v, int i, int i4) throws C3K {
+        int i6 = i + 8;
         int childAtomType = -1;
         int childAtomSize = 0;
         String str = null;
         Integer num = null;
         while (true) {
-            int childPosition = i9 - i;
-            if (childPosition < i6) {
-                c06474v.A0f(i9);
-                int A0C = c06474v.A0C();
-                int A0C2 = c06474v.A0C();
+            int childPosition = i6 - i;
+            if (childPosition < i4) {
+                c06674v.A0f(i6);
+                int A0C = c06674v.A0C();
+                int A0C2 = c06674v.A0C();
                 int schemeInformationBoxPosition = A01[2].length();
                 if (schemeInformationBoxPosition != 24) {
                     break;
@@ -2019,29 +2019,29 @@ public abstract class J0 {
                 strArr[0] = "312zVnav";
                 strArr[3] = "fwhHyPzp";
                 if (A0C2 == 1718775137) {
-                    int childPosition2 = c06474v.A0C();
+                    int childPosition2 = c06674v.A0C();
                     num = Integer.valueOf(childPosition2);
                 } else if (A0C2 == 1935894637) {
-                    c06474v.A0g(4);
-                    str = c06474v.A0W(4);
+                    c06674v.A0g(4);
+                    str = c06674v.A0W(4);
                 } else if (A0C2 == 1935894633) {
-                    childAtomType = i9;
+                    childAtomType = i6;
                     childAtomSize = A0C;
                 }
-                i9 += A0C;
+                i6 += A0C;
             } else {
                 int schemeInformationBoxPosition2 = A01[2].length();
                 if (schemeInformationBoxPosition2 == 24) {
                     A01[5] = "Q2dt9svTwucQVjxlQtJloRQWafbIItZ7";
                     if (A0M(1082, 4, 74).equals(str) || A0M(1074, 4, 51).equals(str) || A0M(1086, 4, 55).equals(str) || A0M(1078, 4, 82).equals(str)) {
-                        boolean z3 = true;
+                        boolean z6 = true;
                         HB.A01(num != null, A0M(1120, 22, 49));
                         HB.A01(childAtomType != -1, A0M(1142, 22, 46));
-                        JP A0K = A0K(c06474v, childAtomType, childAtomSize, str);
+                        JP A0K = A0K(c06674v, childAtomType, childAtomSize, str);
                         if (A0K == null) {
-                            z3 = false;
+                            z6 = false;
                         }
-                        HB.A01(z3, A0M(1164, 22, 29));
+                        HB.A01(z6, A0M(1164, 22, 29));
                         return Pair.create(num, (JP) C5C.A0f(A0K));
                     }
                     return null;
@@ -2069,13 +2069,13 @@ public abstract class J0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static Pair<Integer, JP> A08(C06474v c06474v, int i, int i6) throws C3K {
+    public static Pair<Integer, JP> A08(C06674v c06674v, int i, int i4) throws C3K {
         int childPosition;
-        boolean z3;
+        boolean z6;
         Pair<Integer, JP> A07;
-        int A09 = c06474v.A09();
+        int A09 = c06674v.A09();
         while (true) {
-            int i9 = A09 - i;
+            int i6 = A09 - i;
             String[] strArr = A01;
             String str = strArr[0];
             String str2 = strArr[3];
@@ -2085,8 +2085,8 @@ public abstract class J0 {
                 throw new RuntimeException();
             }
             A01[2] = "alPn9WvAmZr8sIghV9sZ4SJG";
-            if (i9 < i6) {
-                c06474v.A0f(A09);
+            if (i6 < i4) {
+                c06674v.A0f(A09);
                 String[] strArr2 = A01;
                 String str3 = strArr2[1];
                 String str4 = strArr2[6];
@@ -2096,16 +2096,16 @@ public abstract class J0 {
                     String[] strArr3 = A01;
                     strArr3[0] = "bSC6gQO3";
                     strArr3[3] = "sEisHoVo";
-                    childPosition = c06474v.A0C();
+                    childPosition = c06674v.A0C();
                 } else {
                     String[] strArr4 = A01;
                     strArr4[1] = "sCQufaVXehZdAx160HDrkvqq2FYTSg6V";
                     strArr4[6] = "xgFgm7GbjtAXUGsxujgneuzUGgVoDuJS";
-                    childPosition = c06474v.A0C();
+                    childPosition = c06674v.A0C();
                 }
-                HB.A01(z3, A0M(1090, 30, 79));
-                int childAtomType = c06474v.A0C();
-                if (childAtomType == 1936289382 && (A07 = A07(c06474v, A09, childPosition)) != null) {
+                HB.A01(z6, A0M(1090, 30, 79));
+                int childAtomType = c06674v.A0C();
+                if (childAtomType == 1936289382 && (A07 = A07(c06674v, A09, childPosition)) != null) {
                     return A07;
                 }
                 A09 += childPosition;
@@ -2115,13 +2115,13 @@ public abstract class J0 {
         }
     }
 
-    public static Pair<long[], long[]> A09(C2163mE c2163mE) {
+    public static Pair<long[], long[]> A09(C2183mE c2183mE) {
         long j6;
-        C2162mD elstAtom = c2163mE.A07(1701606260);
+        C2182mD elstAtom = c2183mE.A07(1701606260);
         if (elstAtom == null) {
             return null;
         }
-        C06474v c06474v = elstAtom.A00;
+        C06674v c06674v = elstAtom.A00;
         String[] strArr = A01;
         if (strArr[1].charAt(26) == strArr[6].charAt(26)) {
             throw new RuntimeException();
@@ -2129,23 +2129,23 @@ public abstract class J0 {
         String[] strArr2 = A01;
         strArr2[7] = "nlx0JEXKjNTNdSyjBy8qhdzuridSUNe7";
         strArr2[4] = "QPF9oPdHODxNb0EXvgymvar5stnTE0Tg";
-        c06474v.A0f(8);
-        int version = AbstractC0989Iu.A01(c06474v.A0C());
-        int fullAtom = c06474v.A0L();
+        c06674v.A0f(8);
+        int version = AbstractC1009Iu.A01(c06674v.A0C());
+        int fullAtom = c06674v.A0L();
         long[] jArr = new long[fullAtom];
         long[] jArr2 = new long[fullAtom];
         for (int i = 0; i < fullAtom; i++) {
-            jArr[i] = version == 1 ? c06474v.A0R() : c06474v.A0Q();
+            jArr[i] = version == 1 ? c06674v.A0R() : c06674v.A0Q();
             if (version == 1) {
-                j6 = c06474v.A0P();
+                j6 = c06674v.A0P();
             } else {
-                int entryCount = c06474v.A0C();
+                int entryCount = c06674v.A0C();
                 j6 = entryCount;
             }
             jArr2[i] = j6;
-            int entryCount2 = c06474v.A0b();
+            int entryCount2 = c06674v.A0b();
             if (entryCount2 == 1) {
-                c06474v.A0g(2);
+                c06674v.A0g(2);
             } else {
                 throw new IllegalArgumentException(A0M(540, 23, 90));
             }
@@ -2153,13 +2153,13 @@ public abstract class J0 {
         return Pair.create(jArr, jArr2);
     }
 
-    public static Pair<Metadata, Metadata> A0A(C2162mD c2162mD) {
-        C06474v c06474v = c2162mD.A00;
-        c06474v.A0f(8);
+    public static Pair<Metadata, Metadata> A0A(C2182mD c2182mD) {
+        C06674v c06674v = c2182mD.A00;
+        c06674v.A0f(8);
         Metadata metadata = null;
         Metadata metadata2 = null;
         while (true) {
-            int A07 = c06474v.A07();
+            int A07 = c06674v.A07();
             String[] strArr = A01;
             if (strArr[7].charAt(30) == strArr[4].charAt(30)) {
                 throw new RuntimeException();
@@ -2168,17 +2168,17 @@ public abstract class J0 {
             strArr2[0] = "ATF6ss1I";
             strArr2[3] = "jntry4xS";
             if (A07 >= 8) {
-                int A09 = c06474v.A09();
-                int A0C = c06474v.A0C();
-                int A0C2 = c06474v.A0C();
+                int A09 = c06674v.A09();
+                int A0C = c06674v.A0C();
+                int A0C2 = c06674v.A0C();
                 if (A0C2 == 1835365473) {
-                    c06474v.A0f(A09);
-                    metadata = A0E(c06474v, A09 + A0C);
+                    c06674v.A0f(A09);
+                    metadata = A0E(c06674v, A09 + A0C);
                 } else if (A0C2 == 1936553057) {
-                    c06474v.A0f(A09);
-                    metadata2 = A0D(c06474v, A09 + A0C);
+                    c06674v.A0f(A09);
+                    metadata2 = A0D(c06674v, A09 + A0C);
                 }
-                c06474v.A0f(A09 + A0C);
+                c06674v.A0f(A09 + A0C);
             } else {
                 return Pair.create(metadata, metadata2);
             }
@@ -2204,11 +2204,11 @@ public abstract class J0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static Metadata A0C(C06474v c06474v, int i) {
-        c06474v.A0g(8);
+    public static Metadata A0C(C06674v c06674v, int i) {
+        c06674v.A0g(8);
         ArrayList arrayList = new ArrayList();
-        while (c06474v.A09() < i) {
-            Id3Frame A04 = JB.A04(c06474v);
+        while (c06674v.A09() < i) {
+            Id3Frame A04 = JB.A04(c06674v);
             if (A01[2].length() != 24) {
                 throw new RuntimeException();
             }
@@ -2228,10 +2228,10 @@ public abstract class J0 {
         }
     }
 
-    public static Metadata A0D(C06474v c06474v, int i) {
-        c06474v.A0g(12);
+    public static Metadata A0D(C06674v c06674v, int i) {
+        c06674v.A0g(12);
         while (true) {
-            int A09 = c06474v.A09();
+            int A09 = c06674v.A09();
             if (A01[5].charAt(23) != 'W') {
                 throw new RuntimeException();
             }
@@ -2239,38 +2239,38 @@ public abstract class J0 {
             if (A09 >= i) {
                 return null;
             }
-            int atomSize = c06474v.A09();
-            int A0C = c06474v.A0C();
-            int atomPosition = c06474v.A0C();
+            int atomSize = c06674v.A09();
+            int A0C = c06674v.A0C();
+            int atomPosition = c06674v.A0C();
             if (atomPosition == 1935766900) {
                 if (A0C < 14) {
                     return null;
                 }
-                c06474v.A0g(5);
-                int A0I = c06474v.A0I();
+                c06674v.A0g(5);
+                int A0I = c06674v.A0I();
                 if (A0I != 12 && A0I != 13) {
                     return null;
                 }
-                float f3 = A0I == 12 ? 240.0f : 120.0f;
-                c06474v.A0g(1);
-                return new Metadata(new SmtaMetadataEntry(f3, c06474v.A0I()));
+                float f2 = A0I == 12 ? 240.0f : 120.0f;
+                c06674v.A0g(1);
+                return new Metadata(new SmtaMetadataEntry(f2, c06674v.A0I()));
             }
-            c06474v.A0f(atomSize + A0C);
+            c06674v.A0f(atomSize + A0C);
         }
     }
 
-    public static Metadata A0E(C06474v c06474v, int i) {
-        c06474v.A0g(8);
-        A0Q(c06474v);
-        while (c06474v.A09() < i) {
-            int A09 = c06474v.A09();
-            int atomType = c06474v.A0C();
-            int atomSize = c06474v.A0C();
+    public static Metadata A0E(C06674v c06674v, int i) {
+        c06674v.A0g(8);
+        A0Q(c06674v);
+        while (c06674v.A09() < i) {
+            int A09 = c06674v.A09();
+            int atomType = c06674v.A0C();
+            int atomSize = c06674v.A0C();
             if (atomSize == 1768715124) {
-                c06474v.A0f(A09);
-                return A0C(c06474v, A09 + atomType);
+                c06674v.A0f(A09);
+                return A0C(c06674v, A09 + atomType);
             }
-            c06474v.A0f(A09 + atomType);
+            c06674v.A0f(A09 + atomType);
         }
         return null;
     }
@@ -2301,7 +2301,7 @@ public abstract class J0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:113:0x01d7, code lost:
     
-        r14.A02 = new com.instagram.common.viewpoint.core.C05912p().A0g(r25).A11(A0M(711, 27, 38)).A14();
+        r14.A02 = new com.instagram.common.viewpoint.core.C06112p().A0g(r25).A11(A0M(711, 27, 38)).A14();
      */
     /* JADX WARN: Code restructure failed: missing block: B:118:0x01a3, code lost:
     
@@ -2428,15 +2428,15 @@ public abstract class J0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static C0993Iy A0H(C06474v c06474v, int i, int i6, String str, DrmInitData drmInitData, boolean z3) throws C3K {
-        c06474v.A0f(12);
-        int A0C = c06474v.A0C();
-        C0993Iy c0993Iy = new C0993Iy(A0C);
+    public static C1013Iy A0H(C06674v c06674v, int i, int i4, String str, DrmInitData drmInitData, boolean z6) throws C3K {
+        c06674v.A0f(12);
+        int A0C = c06674v.A0C();
+        C1013Iy c1013Iy = new C1013Iy(A0C);
         for (int childStartPosition = 0; childStartPosition < A0C; childStartPosition++) {
-            int A09 = c06474v.A09();
-            int A0C2 = c06474v.A0C();
+            int A09 = c06674v.A09();
+            int A0C2 = c06674v.A0C();
             HB.A01(A0C2 > 0, A0M(1090, 30, 79));
-            int A0C3 = c06474v.A0C();
+            int A0C3 = c06674v.A0C();
             if (A0C3 != 1635148593 && A0C3 != 1635148595 && A0C3 != 1701733238 && A0C3 != 1831958048 && A0C3 != 1836070006 && A0C3 != 1752589105 && A0C3 != 1751479857 && A0C3 != 1932670515 && A0C3 != 1211250227 && A0C3 != 1987063864 && A0C3 != 1987063865 && A0C3 != 1635135537 && A0C3 != 1685479798 && A0C3 != 1685479729 && A0C3 != 1685481573 && A0C3 != 1685481521) {
                 if (A01[5].charAt(23) == 'W') {
                     String[] strArr = A01;
@@ -2451,14 +2451,14 @@ public abstract class J0 {
                             A01[2] = "3e9ArAGLRrjfeL1rnoEKSVyw";
                         }
                     }
-                    A0T(c06474v, A0C3, A09, A0C2, i, str, z3, drmInitData, c0993Iy, childStartPosition);
+                    A0T(c06674v, A0C3, A09, A0C2, i, str, z6, drmInitData, c1013Iy, childStartPosition);
                 }
                 throw new RuntimeException();
             }
-            A0R(c06474v, A0C3, A09, A0C2, i, i6, drmInitData, c0993Iy, childStartPosition);
-            c06474v.A0f(A09 + A0C2);
+            A0R(c06674v, A0C3, A09, A0C2, i, i4, drmInitData, c1013Iy, childStartPosition);
+            c06674v.A0f(A09 + A0C2);
         }
-        return c0993Iy;
+        return c1013Iy;
     }
 
     public static ByteBuffer A0N() {
@@ -2466,47 +2466,47 @@ public abstract class J0 {
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.kO != com.google.common.base.Function<com.facebook.ads.androidx.media3.extractor.mp4.Track, com.facebook.ads.androidx.media3.extractor.mp4.Track> */
-    public static List<JR> A0O(C2163mE c2163mE, HK hk, long j6, DrmInitData drmInitData, boolean z3, boolean z6, InterfaceC2051kO<JO, JO> interfaceC2051kO) throws C3K {
+    public static List<JR> A0O(C2183mE c2183mE, HK hk, long j6, DrmInitData drmInitData, boolean z6, boolean z9, InterfaceC2071kO<JO, JO> interfaceC2071kO) throws C3K {
         JO A4B;
         ArrayList arrayList = new ArrayList();
-        for (int i = 0; i < c2163mE.A01.size(); i++) {
-            C2163mE c2163mE2 = c2163mE.A01.get(i);
-            if (((AbstractC0989Iu) c2163mE2).A00 == 1953653099 && (A4B = interfaceC2051kO.A4B(A0J(c2163mE2, (C2162mD) AbstractC06243y.A01(c2163mE.A07(1836476516)), j6, drmInitData, z3, z6))) != null) {
-                C2163mE c2163mE3 = (C2163mE) AbstractC06243y.A01(c2163mE2.A06(1835297121));
+        for (int i = 0; i < c2183mE.A01.size(); i++) {
+            C2183mE c2183mE2 = c2183mE.A01.get(i);
+            if (((AbstractC1009Iu) c2183mE2).A00 == 1953653099 && (A4B = interfaceC2071kO.A4B(A0J(c2183mE2, (C2182mD) AbstractC06443y.A01(c2183mE.A07(1836476516)), j6, drmInitData, z6, z9))) != null) {
+                C2183mE c2183mE3 = (C2183mE) AbstractC06443y.A01(c2183mE2.A06(1835297121));
                 if (A01[2].length() != 24) {
                     throw new RuntimeException();
                 }
                 String[] strArr = A01;
                 strArr[0] = "jveTcVJC";
                 strArr[3] = "kDhQUkZe";
-                arrayList.add(A0L(A4B, (C2163mE) AbstractC06243y.A01(((C2163mE) AbstractC06243y.A01(c2163mE3.A06(1835626086))).A06(1937007212)), hk));
+                arrayList.add(A0L(A4B, (C2183mE) AbstractC06443y.A01(((C2183mE) AbstractC06443y.A01(c2183mE3.A06(1835626086))).A06(1937007212)), hk));
             }
         }
         return arrayList;
     }
 
-    public static void A0Q(C06474v c06474v) {
-        int A09 = c06474v.A09();
-        c06474v.A0g(4);
-        if (c06474v.A0C() != 1751411826) {
+    public static void A0Q(C06674v c06674v) {
+        int A09 = c06674v.A09();
+        c06674v.A0g(4);
+        if (c06674v.A0C() != 1751411826) {
             A09 += 4;
         }
-        c06474v.A0f(A09);
+        c06674v.A0f(A09);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BP != com.google.common.collect.ImmutableList<byte[]> */
-    public static void A0S(C06474v c06474v, int i, int i6, int i9, int i10, String str, C0993Iy c0993Iy) {
+    public static void A0S(C06674v c06674v, int i, int i4, int i6, int i9, String str, C1013Iy c1013Iy) {
         String A0M;
-        c06474v.A0f(i6 + 8 + 8);
+        c06674v.A0f(i4 + 8 + 8);
         BP bp = null;
         long j6 = Long.MAX_VALUE;
         if (i == 1414810956) {
             A0M = A0M(691, 20, 103);
         } else if (i == 1954034535) {
             A0M = A0M(784, 28, 58);
-            int sampleDescriptionLength = (i9 - 8) - 8;
+            int sampleDescriptionLength = (i6 - 8) - 8;
             byte[] bArr = new byte[sampleDescriptionLength];
-            c06474v.A0k(bArr, 0, sampleDescriptionLength);
+            c06674v.A0k(bArr, 0, sampleDescriptionLength);
             bp = BP.A04(bArr);
         } else if (i == 2004251764) {
             A0M = A0M(763, 21, 88);
@@ -2515,20 +2515,20 @@ public abstract class J0 {
             j6 = 0;
         } else if (i == 1664495672) {
             A0M = A0M(738, 25, 73);
-            c0993Iy.A01 = 1;
+            c1013Iy.A01 = 1;
         } else {
             throw new IllegalStateException();
         }
-        c0993Iy.A02 = new C05912p().A0g(i10).A11(A0M).A10(str).A0s(j6).A12(bp).A14();
+        c1013Iy.A02 = new C06112p().A0g(i9).A11(A0M).A10(str).A0s(j6).A12(bp).A14();
     }
 
-    public static void A0U(C06474v c06474v, int i, int i6, int i9, C0993Iy c0993Iy) {
-        c06474v.A0f(i6 + 8 + 8);
+    public static void A0U(C06674v c06674v, int i, int i4, int i6, C1013Iy c1013Iy) {
+        c06674v.A0f(i4 + 8 + 8);
         if (i == 1835365492) {
-            c06474v.A0U();
-            String A0U = c06474v.A0U();
+            c06674v.A0U();
+            String A0U = c06674v.A0U();
             if (A0U != null) {
-                c0993Iy.A02 = new C05912p().A0g(i9).A11(A0U).A14();
+                c1013Iy.A02 = new C06112p().A0g(i6).A11(A0U).A14();
             }
         }
     }
@@ -2562,12 +2562,12 @@ public abstract class J0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static byte[] A0W(C06474v c06474v, int i, int i6) {
-        int i9 = i + 8;
-        while (childPosition < i6) {
-            c06474v.A0f(i9);
-            int A0C = c06474v.A0C();
-            int A0C2 = c06474v.A0C();
+    public static byte[] A0W(C06674v c06674v, int i, int i4) {
+        int i6 = i + 8;
+        while (childPosition < i4) {
+            c06674v.A0f(i6);
+            int A0C = c06674v.A0C();
+            int A0C2 = c06674v.A0C();
             String[] strArr = A01;
             String str = strArr[7];
             String str2 = strArr[4];
@@ -2580,10 +2580,10 @@ public abstract class J0 {
             strArr2[0] = "QfAHDCYR";
             strArr2[3] = "If6V2JqI";
             if (A0C2 == 1886547818) {
-                int childPosition2 = i9 + A0C;
-                return Arrays.copyOfRange(c06474v.A0l(), i9, childPosition2);
+                int childPosition2 = i6 + A0C;
+                return Arrays.copyOfRange(c06674v.A0l(), i6, childPosition2);
             }
-            i9 += A0C;
+            i6 += A0C;
         }
         return null;
     }

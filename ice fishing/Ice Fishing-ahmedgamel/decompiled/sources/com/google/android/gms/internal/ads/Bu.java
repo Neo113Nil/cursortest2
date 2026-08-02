@@ -4,10 +4,10 @@ package com.google.android.gms.internal.ads;
 public final class Bu implements Cloneable {
 
     /* renamed from: n, reason: collision with root package name */
-    public boolean f23982n;
+    public boolean f24745n;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f23983u;
+    public int f24746u;
 
     /* renamed from: h, reason: merged with bridge method [inline-methods] */
     public final Bu clone() {

@@ -1,11 +1,11 @@
 package javax.annotation;
 
-import com.instagram.common.viewpoint.core.EnumC2431qy;
+import com.instagram.common.viewpoint.core.EnumC2451qy;
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-@Nonnull(when = EnumC2431qy.A05)
+@Nonnull(when = EnumC2451qy.A05)
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 /* loaded from: assets/audience_network/classes2.dex */

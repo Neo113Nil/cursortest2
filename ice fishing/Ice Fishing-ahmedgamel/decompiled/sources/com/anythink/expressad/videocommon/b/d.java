@@ -10,31 +10,31 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public final class d implements i.c {
 
     /* renamed from: a, reason: collision with root package name */
-    private static String f22271a = "DownLoadH5SourceListener";
+    private static String f23058a = "DownLoadH5SourceListener";
 
     /* renamed from: b, reason: collision with root package name */
-    private ConcurrentMap<String, d> f22272b;
+    private ConcurrentMap<String, d> f23059b;
 
     /* renamed from: c, reason: collision with root package name */
-    private n f22273c;
+    private n f23060c;
 
     /* renamed from: d, reason: collision with root package name */
-    private CopyOnWriteArrayList<i.d> f22274d;
+    private CopyOnWriteArrayList<i.d> f23061d;
 
     /* renamed from: e, reason: collision with root package name */
-    private String f22275e;
+    private String f23062e;
 
     /* renamed from: f, reason: collision with root package name */
-    private String f22276f;
+    private String f23063f;
 
     public d(ConcurrentMap<String, d> concurrentMap, n nVar, i.d dVar, String str, String str2) {
         CopyOnWriteArrayList<i.d> copyOnWriteArrayList = new CopyOnWriteArrayList<>();
-        this.f22274d = copyOnWriteArrayList;
-        this.f22272b = concurrentMap;
-        this.f22273c = nVar;
+        this.f23061d = copyOnWriteArrayList;
+        this.f23059b = concurrentMap;
+        this.f23060c = nVar;
         copyOnWriteArrayList.add(dVar);
-        this.f22275e = str;
-        this.f22276f = str2;
+        this.f23062e = str;
+        this.f23063f = str2;
     }
 
     @Override // com.anythink.expressad.videocommon.b.i.c
@@ -42,7 +42,7 @@ public final class d implements i.c {
     }
 
     public final void a(i.d dVar) {
-        this.f22274d.add(dVar);
+        this.f23061d.add(dVar);
     }
 
     @Override // com.anythink.expressad.videocommon.b.i.c
@@ -50,9 +50,9 @@ public final class d implements i.c {
         String str3;
         ConcurrentMap<String, d> concurrentMap;
         try {
-            concurrentMap = this.f22272b;
+            concurrentMap = this.f23059b;
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.printStackTrace();
             }
             try {
@@ -63,28 +63,28 @@ public final class d implements i.c {
             }
         }
         if (concurrentMap == null) {
-            Iterator<i.d> it = this.f22274d.iterator();
+            Iterator<i.d> it = this.f23061d.iterator();
             while (it.hasNext()) {
                 i.d next = it.next();
                 if (next != null) {
                     next.a(str2, "mResDownloadingMap  is null");
-                    this.f22274d.remove(next);
+                    this.f23061d.remove(next);
                 }
             }
             return;
         }
-        if (concurrentMap.containsKey(this.f22276f)) {
-            this.f22272b.remove(this.f22276f);
+        if (concurrentMap.containsKey(this.f23063f)) {
+            this.f23059b.remove(this.f23063f);
         }
         if (!TextUtils.isEmpty(str)) {
-            String a9 = this.f22273c.a(str2, str);
+            String a9 = this.f23060c.a(str2, str);
             if (TextUtils.isEmpty(a9)) {
-                Iterator<i.d> it2 = this.f22274d.iterator();
+                Iterator<i.d> it2 = this.f23061d.iterator();
                 while (it2.hasNext()) {
                     i.d next2 = it2.next();
                     if (next2 != null) {
                         next2.a(str2);
-                        this.f22274d.remove(next2);
+                        this.f23061d.remove(next2);
                     }
                 }
                 return;
@@ -93,7 +93,7 @@ public final class d implements i.c {
         } else {
             str3 = "response data is error";
         }
-        Iterator<i.d> it3 = this.f22274d.iterator();
+        Iterator<i.d> it3 = this.f23061d.iterator();
         while (it3.hasNext()) {
             i.d next3 = it3.next();
             if (next3 != null) {
@@ -106,9 +106,9 @@ public final class d implements i.c {
     public final void a(String str) {
         ConcurrentMap<String, d> concurrentMap;
         try {
-            concurrentMap = this.f22272b;
+            concurrentMap = this.f23059b;
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.printStackTrace();
             }
             try {
@@ -118,25 +118,25 @@ public final class d implements i.c {
             }
         }
         if (concurrentMap == null) {
-            Iterator<i.d> it = this.f22274d.iterator();
+            Iterator<i.d> it = this.f23061d.iterator();
             while (it.hasNext()) {
                 i.d next = it.next();
                 if (next != null) {
-                    next.a(this.f22275e, "mResDownloadingMap  is null");
-                    this.f22274d.remove(next);
+                    next.a(this.f23062e, "mResDownloadingMap  is null");
+                    this.f23061d.remove(next);
                 }
             }
             return;
         }
-        if (concurrentMap.containsKey(this.f22276f)) {
-            this.f22272b.remove(this.f22276f);
+        if (concurrentMap.containsKey(this.f23063f)) {
+            this.f23059b.remove(this.f23063f);
         }
-        Iterator<i.d> it2 = this.f22274d.iterator();
+        Iterator<i.d> it2 = this.f23061d.iterator();
         while (it2.hasNext()) {
             i.d next2 = it2.next();
             if (next2 != null) {
-                next2.a(this.f22275e, str);
-                this.f22274d.remove(next2);
+                next2.a(this.f23062e, str);
+                this.f23061d.remove(next2);
             }
         }
     }

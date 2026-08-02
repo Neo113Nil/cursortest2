@@ -5,8 +5,8 @@ import android.os.Parcelable;
 import com.anythink.basead.exoplayer.b;
 import com.anythink.core.common.s.a.c;
 import com.facebook.ads.androidx.media3.common.Metadata;
-import com.instagram.common.viewpoint.core.AbstractC2459rd;
-import com.instagram.common.viewpoint.core.C2400qI;
+import com.instagram.common.viewpoint.core.AbstractC2479rd;
+import com.instagram.common.viewpoint.core.C2420qI;
 import com.instagram.common.viewpoint.core.C5C;
 import java.util.Arrays;
 import java.util.List;
@@ -22,12 +22,12 @@ public final class Metadata implements Parcelable {
     public interface Entry extends Parcelable {
         byte[] A9a();
 
-        C2400qI A9b();
+        C2420qI A9b();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        int i10 = 0;
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             String[] strArr = A03;
@@ -37,11 +37,11 @@ public final class Metadata implements Parcelable {
             String[] strArr2 = A03;
             strArr2[2] = "jJYb5XESnreQmnafz5VJdwPxqQSxn5xg";
             strArr2[7] = "kTpneR3tTrjWo9SwHImypXlm89YhFqkJ";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 102);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 102);
+            i9++;
         }
     }
 
@@ -53,7 +53,7 @@ public final class Metadata implements Parcelable {
         String[] strArr2 = A03;
         strArr2[0] = "FHzPVNHLMxLnXBjwMdKkWWwrPs5hsjYz";
         strArr2[4] = "XDjvnqVH9aBEFffbIwnkls2Q80ahFTsl";
-        A02 = new byte[]{56, 52, 100, 102, 113, 103, 113, 122, 96, 117, 96, 125, 123, 122, c.f16317b, 125, 121, 113, 65, 103, 41, 92, 87, 77, 75, 80, 92, 74, 4};
+        A02 = new byte[]{56, 52, 100, 102, 113, 103, 113, 122, 96, 117, 96, 125, 123, 122, c.f17104b, 125, 121, 113, 65, 103, 41, 92, 87, 77, 75, 80, 92, 74, 4};
     }
 
     static {
@@ -97,7 +97,7 @@ public final class Metadata implements Parcelable {
     }
 
     public Metadata(Entry... entryArr) {
-        this(b.f6382b, entryArr);
+        this(b.f7168b, entryArr);
     }
 
     public final int A02() {
@@ -141,12 +141,12 @@ public final class Metadata implements Parcelable {
     public final int hashCode() {
         int result = Arrays.hashCode(this.A01);
         int i = result * 31;
-        int result2 = AbstractC2459rd.A00(this.A00);
+        int result2 = AbstractC2479rd.A00(this.A00);
         return i + result2;
     }
 
     public final String toString() {
-        return A00(21, 8, 95) + Arrays.toString(this.A01) + (this.A00 == b.f6382b ? A00(0, 0, 66) : A00(0, 21, 114) + this.A00);
+        return A00(21, 8, 95) + Arrays.toString(this.A01) + (this.A00 == b.f7168b ? A00(0, 0, 66) : A00(0, 21, 114) + this.A00);
     }
 
     @Override // android.os.Parcelable

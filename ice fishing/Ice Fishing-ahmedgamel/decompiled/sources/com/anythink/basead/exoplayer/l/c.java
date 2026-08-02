@@ -14,51 +14,51 @@ import com.anythink.basead.exoplayer.k.af;
 public final class c extends Surface {
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f8554b = "DummySurface";
+    private static final String f9340b = "DummySurface";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f8555c = "EGL_EXT_protected_content";
+    private static final String f9341c = "EGL_EXT_protected_content";
 
     /* renamed from: d, reason: collision with root package name */
-    private static final String f8556d = "EGL_KHR_surfaceless_context";
+    private static final String f9342d = "EGL_KHR_surfaceless_context";
 
     /* renamed from: e, reason: collision with root package name */
-    private static int f8557e;
+    private static int f9343e;
 
     /* renamed from: f, reason: collision with root package name */
-    private static boolean f8558f;
+    private static boolean f9344f;
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f8559a;
+    public final boolean f9345a;
 
     /* renamed from: g, reason: collision with root package name */
-    private final a f8560g;
+    private final a f9346g;
 
     /* renamed from: h, reason: collision with root package name */
-    private boolean f8561h;
+    private boolean f9347h;
 
-    public /* synthetic */ c(a aVar, SurfaceTexture surfaceTexture, boolean z3, byte b9) {
-        this(aVar, surfaceTexture, z3);
+    public /* synthetic */ c(a aVar, SurfaceTexture surfaceTexture, boolean z6, byte b9) {
+        this(aVar, surfaceTexture, z6);
     }
 
     public static synchronized boolean a(Context context) {
         int i;
         String eglQueryString;
-        int i6;
+        int i4;
         synchronized (c.class) {
             try {
-                if (!f8558f) {
-                    int i9 = af.f8346a;
-                    if (i9 >= 24 && ((i9 >= 26 || (!"samsung".equals(af.f8348c) && !"XT1650".equals(af.f8349d))) && ((i9 >= 26 || context.getPackageManager().hasSystemFeature("android.hardware.vr.high_performance")) && (eglQueryString = EGL14.eglQueryString(EGL14.eglGetDisplay(0), 12373)) != null && eglQueryString.contains(f8555c)))) {
-                        i6 = eglQueryString.contains(f8556d) ? 1 : 2;
-                        f8557e = i6;
-                        f8558f = true;
+                if (!f9344f) {
+                    int i6 = af.f9132a;
+                    if (i6 >= 24 && ((i6 >= 26 || (!"samsung".equals(af.f9134c) && !"XT1650".equals(af.f9135d))) && ((i6 >= 26 || context.getPackageManager().hasSystemFeature("android.hardware.vr.high_performance")) && (eglQueryString = EGL14.eglQueryString(EGL14.eglGetDisplay(0), 12373)) != null && eglQueryString.contains(f9341c)))) {
+                        i4 = eglQueryString.contains(f9342d) ? 1 : 2;
+                        f9343e = i4;
+                        f9344f = true;
                     }
-                    i6 = 0;
-                    f8557e = i6;
-                    f8558f = true;
+                    i4 = 0;
+                    f9343e = i4;
+                    f9344f = true;
                 }
-                i = f8557e;
+                i = f9343e;
             } catch (Throwable th) {
                 throw th;
             }
@@ -68,12 +68,12 @@ public final class c extends Surface {
 
     private static int b(Context context) {
         String eglQueryString;
-        int i = af.f8346a;
-        if (i < 26 && ("samsung".equals(af.f8348c) || "XT1650".equals(af.f8349d))) {
+        int i = af.f9132a;
+        if (i < 26 && ("samsung".equals(af.f9134c) || "XT1650".equals(af.f9135d))) {
             return 0;
         }
-        if ((i >= 26 || context.getPackageManager().hasSystemFeature("android.hardware.vr.high_performance")) && (eglQueryString = EGL14.eglQueryString(EGL14.eglGetDisplay(0), 12373)) != null && eglQueryString.contains(f8555c)) {
-            return eglQueryString.contains(f8556d) ? 1 : 2;
+        if ((i >= 26 || context.getPackageManager().hasSystemFeature("android.hardware.vr.high_performance")) && (eglQueryString = EGL14.eglQueryString(EGL14.eglGetDisplay(0), 12373)) != null && eglQueryString.contains(f9341c)) {
+            return eglQueryString.contains(f9342d) ? 1 : 2;
         }
         return 0;
     }
@@ -81,11 +81,11 @@ public final class c extends Surface {
     @Override // android.view.Surface
     public final void release() {
         super.release();
-        synchronized (this.f8560g) {
+        synchronized (this.f9346g) {
             try {
-                if (!this.f8561h) {
-                    this.f8560g.a();
-                    this.f8561h = true;
+                if (!this.f9347h) {
+                    this.f9346g.a();
+                    this.f9347h = true;
                 }
             } catch (Throwable th) {
                 throw th;
@@ -93,72 +93,72 @@ public final class c extends Surface {
         }
     }
 
-    private c(a aVar, SurfaceTexture surfaceTexture, boolean z3) {
+    private c(a aVar, SurfaceTexture surfaceTexture, boolean z6) {
         super(surfaceTexture);
-        this.f8560g = aVar;
-        this.f8559a = z3;
+        this.f9346g = aVar;
+        this.f9345a = z6;
     }
 
     public static class a extends HandlerThread implements Handler.Callback {
 
         /* renamed from: a, reason: collision with root package name */
-        private static final int f8562a = 1;
+        private static final int f9348a = 1;
 
         /* renamed from: b, reason: collision with root package name */
-        private static final int f8563b = 2;
+        private static final int f9349b = 2;
 
         /* renamed from: c, reason: collision with root package name */
-        private com.anythink.basead.exoplayer.k.g f8564c;
+        private com.anythink.basead.exoplayer.k.g f9350c;
 
         /* renamed from: d, reason: collision with root package name */
-        private Handler f8565d;
+        private Handler f9351d;
 
         /* renamed from: e, reason: collision with root package name */
-        private Error f8566e;
+        private Error f9352e;
 
         /* renamed from: f, reason: collision with root package name */
-        private RuntimeException f8567f;
+        private RuntimeException f9353f;
 
         /* renamed from: g, reason: collision with root package name */
-        private c f8568g;
+        private c f9354g;
 
         public a() {
             super("dummySurface");
         }
 
         private void b(int i) {
-            com.anythink.basead.exoplayer.k.a.a(this.f8564c);
-            this.f8564c.a(i);
-            this.f8568g = new c(this, this.f8564c.b(), i != 0, (byte) 0);
+            com.anythink.basead.exoplayer.k.a.a(this.f9350c);
+            this.f9350c.a(i);
+            this.f9354g = new c(this, this.f9350c.b(), i != 0, (byte) 0);
         }
 
         public final c a(int i) {
-            boolean z3;
+            boolean z6;
             start();
             Handler handler = new Handler(getLooper(), this);
-            this.f8565d = handler;
-            this.f8564c = new com.anythink.basead.exoplayer.k.g(handler);
+            this.f9351d = handler;
+            this.f9350c = new com.anythink.basead.exoplayer.k.g(handler);
             synchronized (this) {
-                z3 = false;
-                this.f8565d.obtainMessage(1, i, 0).sendToTarget();
-                while (this.f8568g == null && this.f8567f == null && this.f8566e == null) {
+                z6 = false;
+                this.f9351d.obtainMessage(1, i, 0).sendToTarget();
+                while (this.f9354g == null && this.f9353f == null && this.f9352e == null) {
                     try {
                         wait();
                     } catch (InterruptedException unused) {
-                        z3 = true;
+                        z6 = true;
                     }
                 }
             }
-            if (z3) {
+            if (z6) {
                 Thread.currentThread().interrupt();
             }
-            RuntimeException runtimeException = this.f8567f;
+            RuntimeException runtimeException = this.f9353f;
             if (runtimeException != null) {
                 throw runtimeException;
             }
-            Error error = this.f8566e;
+            Error error = this.f9352e;
             if (error == null) {
-                return (c) com.anythink.basead.exoplayer.k.a.a(this.f8568g);
+                return (c) com.anythink.basead.exoplayer.k.a.a(this.f9354g);
             }
             throw error;
         }
@@ -172,8 +172,8 @@ public final class c extends Surface {
                         return true;
                     }
                     try {
-                        com.anythink.basead.exoplayer.k.a.a(this.f8564c);
-                        this.f8564c.a();
+                        com.anythink.basead.exoplayer.k.a.a(this.f9350c);
+                        this.f9350c.a();
                     } finally {
                         try {
                             return true;
@@ -183,22 +183,22 @@ public final class c extends Surface {
                     return true;
                 }
                 try {
-                    int i6 = message.arg1;
-                    com.anythink.basead.exoplayer.k.a.a(this.f8564c);
-                    this.f8564c.a(i6);
-                    this.f8568g = new c(this, this.f8564c.b(), i6 != 0, (byte) 0);
+                    int i4 = message.arg1;
+                    com.anythink.basead.exoplayer.k.a.a(this.f9350c);
+                    this.f9350c.a(i4);
+                    this.f9354g = new c(this, this.f9350c.b(), i4 != 0, (byte) 0);
                     synchronized (this) {
                         notify();
                     }
                 } catch (Error e9) {
-                    Log.e(c.f8554b, "Failed to initialize dummy surface", e9);
-                    this.f8566e = e9;
+                    Log.e(c.f9340b, "Failed to initialize dummy surface", e9);
+                    this.f9352e = e9;
                     synchronized (this) {
                         notify();
                     }
                 } catch (RuntimeException e10) {
-                    Log.e(c.f8554b, "Failed to initialize dummy surface", e10);
-                    this.f8567f = e10;
+                    Log.e(c.f9340b, "Failed to initialize dummy surface", e10);
+                    this.f9353f = e10;
                     synchronized (this) {
                         notify();
                     }
@@ -213,26 +213,26 @@ public final class c extends Surface {
         }
 
         private void b() {
-            com.anythink.basead.exoplayer.k.a.a(this.f8564c);
-            this.f8564c.a();
+            com.anythink.basead.exoplayer.k.a.a(this.f9350c);
+            this.f9350c.a();
         }
 
         public final void a() {
-            com.anythink.basead.exoplayer.k.a.a(this.f8565d);
-            this.f8565d.sendEmptyMessage(2);
+            com.anythink.basead.exoplayer.k.a.a(this.f9351d);
+            this.f9351d.sendEmptyMessage(2);
         }
     }
 
     private static void a() {
-        if (af.f8346a < 17) {
+        if (af.f9132a < 17) {
             throw new UnsupportedOperationException("Unsupported prior to API level 17");
         }
     }
 
-    public static c a(Context context, boolean z3) {
-        if (af.f8346a >= 17) {
-            com.anythink.basead.exoplayer.k.a.b(!z3 || a(context));
-            return new a().a(z3 ? f8557e : 0);
+    public static c a(Context context, boolean z6) {
+        if (af.f9132a >= 17) {
+            com.anythink.basead.exoplayer.k.a.b(!z6 || a(context));
+            return new a().a(z6 ? f9343e : 0);
         }
         throw new UnsupportedOperationException("Unsupported prior to API level 17");
     }

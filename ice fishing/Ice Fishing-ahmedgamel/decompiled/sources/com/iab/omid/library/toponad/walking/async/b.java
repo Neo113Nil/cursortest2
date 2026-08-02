@@ -8,10 +8,10 @@ import org.json.JSONObject;
 public abstract class b extends AsyncTask<Object, Void, String> {
 
     /* renamed from: a, reason: collision with root package name */
-    private a f36324a;
+    private a f37091a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected final InterfaceC0173b f36325b;
+    protected final InterfaceC0173b f37092b;
 
     public interface a {
         void a(b bVar);
@@ -25,17 +25,17 @@ public abstract class b extends AsyncTask<Object, Void, String> {
     }
 
     public b(InterfaceC0173b interfaceC0173b) {
-        this.f36325b = interfaceC0173b;
+        this.f37092b = interfaceC0173b;
     }
 
     public void a(a aVar) {
-        this.f36324a = aVar;
+        this.f37091a = aVar;
     }
 
     @Override // android.os.AsyncTask
     /* renamed from: a, reason: merged with bridge method [inline-methods] */
     public void onPostExecute(String str) {
-        a aVar = this.f36324a;
+        a aVar = this.f37091a;
         if (aVar != null) {
             aVar.a(this);
         }

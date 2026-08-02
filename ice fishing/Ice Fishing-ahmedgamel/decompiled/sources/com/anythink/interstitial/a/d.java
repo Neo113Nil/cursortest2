@@ -26,20 +26,20 @@ import java.util.Map;
 public class d implements com.anythink.core.common.p.b {
 
     /* renamed from: c, reason: collision with root package name */
-    private static volatile d f22694c;
+    private static volatile d f23481c;
 
     /* renamed from: a, reason: collision with root package name */
-    String f22695a = "InterstitialAuto";
+    String f23482a = "InterstitialAuto";
 
     /* renamed from: b, reason: collision with root package name */
-    ATInterstitialAutoLoadListener f22696b = new ATInterstitialAutoLoadListener() { // from class: com.anythink.interstitial.a.d.1
+    ATInterstitialAutoLoadListener f23483b = new ATInterstitialAutoLoadListener() { // from class: com.anythink.interstitial.a.d.1
         @Override // com.anythink.interstitial.api.ATInterstitialAutoLoadListener
         public final void onInterstitialAutoLoadFail(final String str, final AdError adError) {
             t.b().b(new Runnable() { // from class: com.anythink.interstitial.a.d.1.2
                 @Override // java.lang.Runnable
                 public final void run() {
-                    if (d.this.f22697d != null) {
-                        d.this.f22697d.onInterstitialAutoLoadFail(str, adError);
+                    if (d.this.f23484d != null) {
+                        d.this.f23484d.onInterstitialAutoLoadFail(str, adError);
                     }
                 }
             });
@@ -50,8 +50,8 @@ public class d implements com.anythink.core.common.p.b {
             t.b().b(new Runnable() { // from class: com.anythink.interstitial.a.d.1.1
                 @Override // java.lang.Runnable
                 public final void run() {
-                    if (d.this.f22697d != null) {
-                        d.this.f22697d.onInterstitialAutoLoaded(str);
+                    if (d.this.f23484d != null) {
+                        d.this.f23484d.onInterstitialAutoLoaded(str);
                     }
                 }
             });
@@ -59,27 +59,27 @@ public class d implements com.anythink.core.common.p.b {
     };
 
     /* renamed from: d, reason: collision with root package name */
-    private ATInterstitialAutoLoadListener f22697d;
+    private ATInterstitialAutoLoadListener f23484d;
 
     /* renamed from: e, reason: collision with root package name */
-    private ATNativeAdCustomRender f22698e;
+    private ATNativeAdCustomRender f23485e;
 
     public static List<ATAdInfo> d(String str) {
-        com.anythink.core.common.f f3 = f(str);
-        if (f3 != null) {
-            return f3.a(t.b().M());
+        com.anythink.core.common.f f2 = f(str);
+        if (f2 != null) {
+            return f2.a(t.b().M());
         }
         return null;
     }
 
     private ATAdStatusInfo e(String str) {
         if (t.b().g() == null || TextUtils.isEmpty(t.b().p()) || TextUtils.isEmpty(t.b().q())) {
-            Log.e(this.f22695a, "SDK init error!");
+            Log.e(this.f23482a, "SDK init error!");
             return null;
         }
-        com.anythink.core.common.f f3 = f(str);
-        if (f3 != null) {
-            return f3.a(t.b().M(), (Map<String, Object>) null);
+        com.anythink.core.common.f f2 = f(str);
+        if (f2 != null) {
+            return f2.a(t.b().M(), (Map<String, Object>) null);
         }
         return null;
     }
@@ -89,16 +89,16 @@ public class d implements com.anythink.core.common.p.b {
     }
 
     public final boolean b(String str) {
-        boolean z3 = false;
+        boolean z6 = false;
         if (!TextUtils.isEmpty(str)) {
             ATAdStatusInfo e9 = e(str);
             if (e9 == null) {
                 return false;
             }
-            z3 = e9.isReady();
+            z6 = e9.isReady();
         }
-        ab.b(str, j.r.f12549v, j.r.f12524B, String.valueOf(z3), "");
-        return z3;
+        ab.b(str, j.r.f13335v, j.r.f13310B, String.valueOf(z6), "");
+        return z6;
     }
 
     public final ATAdStatusInfo c(String str) {
@@ -111,32 +111,32 @@ public class d implements com.anythink.core.common.p.b {
                 aTAdStatusInfo = new ATAdStatusInfo(false, false, null);
             }
         }
-        ab.b(str, j.r.f12549v, j.r.f12525C, aTAdStatusInfo.toString(), "");
+        ab.b(str, j.r.f13335v, j.r.f13311C, aTAdStatusInfo.toString(), "");
         return aTAdStatusInfo;
     }
 
     public static d a() {
-        if (f22694c == null) {
+        if (f23481c == null) {
             synchronized (d.class) {
                 try {
-                    if (f22694c == null) {
-                        f22694c = new d();
+                    if (f23481c == null) {
+                        f23481c = new d();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f22694c;
+        return f23481c;
     }
 
     private ATInterstitialAutoLoadListener b() {
-        return this.f22696b;
+        return this.f23483b;
     }
 
     public final void a(Context context, String[] strArr, ATInterstitialAutoLoadListener aTInterstitialAutoLoadListener, ATAdRequest aTAdRequest) {
         if (context == null) {
-            Log.e("anythink", this.f22695a + " init failed: context = null");
+            Log.e("anythink", this.f23482a + " init failed: context = null");
             return;
         }
         if (context instanceof Activity) {
@@ -160,7 +160,7 @@ public class d implements com.anythink.core.common.p.b {
                 }
             }
         }
-        this.f22697d = aTInterstitialAutoLoadListener;
+        this.f23484d = aTInterstitialAutoLoadListener;
     }
 
     public final void a(ATAdRequest aTAdRequest, String... strArr) {
@@ -217,7 +217,7 @@ public class d implements com.anythink.core.common.p.b {
 
     @Override // com.anythink.core.common.p.b
     public final void a(String str) {
-        ATInterstitialAutoLoadListener aTInterstitialAutoLoadListener = a().f22696b;
+        ATInterstitialAutoLoadListener aTInterstitialAutoLoadListener = a().f23483b;
         if (aTInterstitialAutoLoadListener != null) {
             aTInterstitialAutoLoadListener.onInterstitialAutoLoaded(str);
         }
@@ -225,33 +225,33 @@ public class d implements com.anythink.core.common.p.b {
 
     @Override // com.anythink.core.common.p.b
     public final void a(String str, AdError adError) {
-        ATInterstitialAutoLoadListener aTInterstitialAutoLoadListener = a().f22696b;
+        ATInterstitialAutoLoadListener aTInterstitialAutoLoadListener = a().f23483b;
         if (aTInterstitialAutoLoadListener != null) {
             aTInterstitialAutoLoadListener.onInterstitialAutoLoadFail(str, adError);
         }
     }
 
     public final void a(ATNativeAdCustomRender aTNativeAdCustomRender) {
-        this.f22698e = aTNativeAdCustomRender;
+        this.f23485e = aTNativeAdCustomRender;
     }
 
     public final void a(Activity activity, String str, ATShowConfig aTShowConfig, ATInterstitialAutoEventListener aTInterstitialAutoEventListener, ATAdRevenueListener aTAdRevenueListener) {
-        ab.b(str, j.r.f12549v, j.r.f12523A, j.r.f12542o, "");
+        ab.b(str, j.r.f13335v, j.r.f13309A, j.r.f13328o, "");
         if (TextUtils.isEmpty(str)) {
-            Log.e(this.f22695a, "PlacementId is Empty!");
+            Log.e(this.f23482a, "PlacementId is Empty!");
             return;
         }
         if (t.b().g() != null && !TextUtils.isEmpty(t.b().p()) && !TextUtils.isEmpty(t.b().q())) {
             if (activity == null) {
-                Log.e(this.f22695a, "Interstitial Show Activity is null.");
+                Log.e(this.f23482a, "Interstitial Show Activity is null.");
             }
-            b.a(activity, str).a(activity, aTShowConfig, new e(aTInterstitialAutoEventListener, aTAdRevenueListener), null, null, this.f22698e);
+            b.a(activity, str).a(activity, aTShowConfig, new e(aTInterstitialAutoEventListener, aTAdRevenueListener), null, null, this.f23485e);
             return;
         }
-        Log.e(this.f22695a, "Show error: SDK init error!");
+        Log.e(this.f23482a, "Show error: SDK init error!");
     }
 
     public final void a(ATInterstitialAutoLoadListener aTInterstitialAutoLoadListener) {
-        this.f22697d = aTInterstitialAutoLoadListener;
+        this.f23484d = aTInterstitialAutoLoadListener;
     }
 }

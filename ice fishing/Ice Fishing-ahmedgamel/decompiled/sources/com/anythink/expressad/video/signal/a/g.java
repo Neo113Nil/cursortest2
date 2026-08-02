@@ -4,14 +4,14 @@ package com.anythink.expressad.video.signal.a;
 public class g implements com.anythink.expressad.video.signal.j {
 
     /* renamed from: n, reason: collision with root package name */
-    protected static final String f21800n = "DefaultJSVideoModule";
+    protected static final String f22587n = "DefaultJSVideoModule";
 
     @Override // com.anythink.expressad.video.signal.j
     public void alertWebViewShowed() {
     }
 
     @Override // com.anythink.expressad.video.signal.j
-    public void closeVideoOperate(int i, int i6) {
+    public void closeVideoOperate(int i, int i4) {
     }
 
     @Override // com.anythink.expressad.video.signal.j
@@ -66,19 +66,19 @@ public class g implements com.anythink.expressad.video.signal.j {
     }
 
     @Override // com.anythink.expressad.video.signal.j
-    public void progressOperate(int i, int i6) {
+    public void progressOperate(int i, int i4) {
     }
 
     @Override // com.anythink.expressad.video.signal.j
-    public void setCover(boolean z3) {
+    public void setCover(boolean z6) {
     }
 
     @Override // com.anythink.expressad.video.signal.j
-    public void setInstallDialogState(boolean z3) {
+    public void setInstallDialogState(boolean z6) {
     }
 
     @Override // com.anythink.expressad.video.signal.j
-    public void setMiniEndCardState(boolean z3) {
+    public void setMiniEndCardState(boolean z6) {
     }
 
     @Override // com.anythink.expressad.video.signal.j
@@ -98,11 +98,11 @@ public class g implements com.anythink.expressad.video.signal.j {
     }
 
     @Override // com.anythink.expressad.video.signal.j
-    public void showVideoLocation(int i, int i6, int i9, int i10, int i11, int i12, int i13, int i14, int i15) {
+    public void showVideoLocation(int i, int i4, int i6, int i9, int i10, int i11, int i12, int i13, int i14) {
     }
 
     @Override // com.anythink.expressad.video.signal.j
-    public void soundOperate(int i, int i6) {
+    public void soundOperate(int i, int i4) {
     }
 
     @Override // com.anythink.expressad.video.signal.j
@@ -110,6 +110,6 @@ public class g implements com.anythink.expressad.video.signal.j {
     }
 
     @Override // com.anythink.expressad.video.signal.j
-    public void soundOperate(int i, int i6, String str) {
+    public void soundOperate(int i, int i4, String str) {
     }
 }

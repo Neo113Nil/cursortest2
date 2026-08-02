@@ -3,7 +3,7 @@ package com.instagram.common.viewpoint.core;
 import android.os.Bundle;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class AX extends AbstractC2375pt {
+public final class AX extends AbstractC2395pt {
     public final boolean A00;
     public final boolean A01;
     public static final String A04 = C5C.A0h(1);
@@ -22,14 +22,14 @@ public final class AX extends AbstractC2375pt {
         this.A00 = false;
     }
 
-    public AX(boolean z3) {
+    public AX(boolean z6) {
         this.A01 = true;
-        this.A00 = z3;
+        this.A00 = z6;
     }
 
     public static AX A00(Bundle bundle) {
-        boolean isRated = bundle.getInt(AbstractC2375pt.A02, -1) == 0;
-        AbstractC06243y.A07(isRated);
+        boolean isRated = bundle.getInt(AbstractC2395pt.A02, -1) == 0;
+        AbstractC06443y.A07(isRated);
         boolean isRated2 = bundle.getBoolean(A04, false);
         if (isRated2) {
             return new AX(bundle.getBoolean(A03, false));

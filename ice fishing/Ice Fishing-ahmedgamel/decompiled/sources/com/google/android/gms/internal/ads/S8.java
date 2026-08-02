@@ -6,22 +6,22 @@ import java.util.Objects;
 public final class S8 implements B8 {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f27415n = 1;
+    public final /* synthetic */ int f28129n = 1;
 
     /* renamed from: u, reason: collision with root package name */
-    public final /* synthetic */ Object f27416u;
+    public final /* synthetic */ Object f28130u;
 
     public S8(T8 t82) {
         Objects.requireNonNull(t82);
-        this.f27416u = t82;
+        this.f28130u = t82;
     }
 
     @Override // com.google.android.gms.internal.ads.B8
-    public final void e0(boolean z3) {
-        switch (this.f27415n) {
+    public final void e0(boolean z6) {
+        switch (this.f28129n) {
             case 0:
-                T8 t82 = (T8) this.f27416u;
-                if (!z3) {
+                T8 t82 = (T8) this.f28130u;
+                if (!z6) {
                     t82.q();
                     break;
                 } else {
@@ -29,14 +29,14 @@ public final class S8 implements B8 {
                     break;
                 }
             case 1:
-                if (((Boolean) q2.r.f40207e.f40210c.a(AbstractC3569ma.f31996D)).booleanValue()) {
-                    ((Ev) this.f27416u).a(z3);
+                if (((Boolean) s2.r.f40506e.f40509c.a(AbstractC3592ma.f32776D)).booleanValue()) {
+                    ((Ev) this.f28130u).a(z6);
                     break;
                 }
                 break;
             default:
-                if (((Boolean) q2.r.f40207e.f40210c.a(AbstractC3569ma.f31996D)).booleanValue()) {
-                    ((Kv) this.f27416u).c(z3);
+                if (((Boolean) s2.r.f40506e.f40509c.a(AbstractC3592ma.f32776D)).booleanValue()) {
+                    ((Kv) this.f28130u).c(z6);
                     break;
                 }
                 break;
@@ -45,11 +45,11 @@ public final class S8 implements B8 {
 
     public S8(Ev ev) {
         Objects.requireNonNull(ev);
-        this.f27416u = ev;
+        this.f28130u = ev;
     }
 
     public S8(Kv kv) {
         Objects.requireNonNull(kv);
-        this.f27416u = kv;
+        this.f28130u = kv;
     }
 }

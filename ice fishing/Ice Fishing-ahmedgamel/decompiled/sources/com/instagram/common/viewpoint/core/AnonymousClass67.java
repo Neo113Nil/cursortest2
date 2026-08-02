@@ -12,7 +12,7 @@ import javax.annotation.Nullable;
 
 /* renamed from: com.facebook.ads.redexgen.X.67, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public abstract class AnonymousClass67 extends AbstractC1001Jg implements XQ {
+public abstract class AnonymousClass67 extends AbstractC1021Jg implements XQ {
     public static byte[] A0L;
     public static String[] A0M = {"XgHadHW09EVAxZ9Csjyh8Iwd", "cGY", "0gnHO0byxZtUV0t5q6", "nitlVKI6s75UlUdu4qHy2TBluRJ6Vnqb", "dqu", "CAnKNEP5j3LNWAO1IgUwk41cBq", "Gj8h5dX0pUMTu0Q6FRM85YsFx7LjGw4a", "ydUjPQqek3X4wwrCfoz9Rz5n"};
     public static final int A0N;
@@ -22,29 +22,29 @@ public abstract class AnonymousClass67 extends AbstractC1001Jg implements XQ {
     public ZI A01;
 
     @Nullable
-    public InterfaceC1602cq A02;
-    public C0916Fy A03;
-    public C1681e8 A04;
+    public InterfaceC1622cq A02;
+    public C0936Fy A03;
+    public C1701e8 A04;
     public boolean A05;
     public boolean A06;
     public boolean A07;
     public final Paint A08;
     public final Path A09;
     public final RectF A0A;
-    public final C1840gi A0B;
+    public final C1860gi A0B;
     public final XS A0C;
-    public final InterfaceC1381Yh A0D;
-    public final C1557c7 A0E;
+    public final InterfaceC1401Yh A0D;
+    public final C1577c7 A0E;
     public final EA A0F;
     public final E4 A0G;
     public final E2 A0H;
     public final E0 A0I;
-    public final AbstractC0858Dr A0J;
+    public final AbstractC0878Dr A0J;
     public final String A0K;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0L, i, i + i6);
-        int i10 = 0;
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0L, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             String[] strArr = A0M;
@@ -54,11 +54,11 @@ public abstract class AnonymousClass67 extends AbstractC1001Jg implements XQ {
             String[] strArr2 = A0M;
             strArr2[1] = "5LW";
             strArr2[4] = "hlZ";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 11);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 11);
+            i9++;
         }
     }
 
@@ -66,7 +66,7 @@ public abstract class AnonymousClass67 extends AbstractC1001Jg implements XQ {
         A0L = new byte[]{68, 70, 85, 72, 82, 84, 66, 75, 120, 68, 70, 85, 67};
     }
 
-    public abstract void A1X(C1840gi c1840gi);
+    public abstract void A1X(C1860gi c1860gi);
 
     static {
         A03();
@@ -75,18 +75,18 @@ public abstract class AnonymousClass67 extends AbstractC1001Jg implements XQ {
         A0N = (int) (XX.A02 * 6.0f);
     }
 
-    public AnonymousClass67(C1557c7 c1557c7, boolean z3, String str, C0916Fy c0916Fy) {
-        super(c1557c7, z3);
+    public AnonymousClass67(C1577c7 c1577c7, boolean z6, String str, C0936Fy c0936Fy) {
+        super(c1577c7, z6);
         this.A09 = new Path();
         this.A0A = new RectF();
-        this.A0J = new AbstractC0858Dr() { // from class: com.facebook.ads.redexgen.X.6C
+        this.A0J = new AbstractC0878Dr() { // from class: com.facebook.ads.redexgen.X.6C
             /* JADX INFO: Access modifiers changed from: private */
             @Override // com.instagram.common.viewpoint.core.UN
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
-            public final void A03(C0859Ds c0859Ds) {
-                C0916Fy c0916Fy2;
-                c0916Fy2 = AnonymousClass67.this.A03;
-                c0916Fy2.A0P().setVolume(AnonymousClass67.this.getVideoView().getVolume());
+            public final void A03(C0879Ds c0879Ds) {
+                C0936Fy c0936Fy2;
+                c0936Fy2 = AnonymousClass67.this.A03;
+                c0936Fy2.A0P().setVolume(AnonymousClass67.this.getVideoView().getVolume());
             }
         };
         this.A0F = new EA() { // from class: com.facebook.ads.redexgen.X.6B
@@ -94,9 +94,9 @@ public abstract class AnonymousClass67 extends AbstractC1001Jg implements XQ {
             @Override // com.instagram.common.viewpoint.core.UN
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final void A03(C4K c4k) {
-                C0916Fy c0916Fy2;
-                c0916Fy2 = AnonymousClass67.this.A03;
-                c0916Fy2.A0N().AGM(((Integer) AnonymousClass67.this.getTag(-1593835536)).intValue());
+                C0936Fy c0936Fy2;
+                c0936Fy2 = AnonymousClass67.this.A03;
+                c0936Fy2.A0N().AGM(((Integer) AnonymousClass67.this.getTag(-1593835536)).intValue());
             }
         };
         this.A0H = new E2() { // from class: com.facebook.ads.redexgen.X.6A
@@ -104,9 +104,9 @@ public abstract class AnonymousClass67 extends AbstractC1001Jg implements XQ {
             @Override // com.instagram.common.viewpoint.core.UN
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final void A03(E3 e32) {
-                C0916Fy c0916Fy2;
-                c0916Fy2 = AnonymousClass67.this.A03;
-                c0916Fy2.A0O().AGY(AnonymousClass67.this);
+                C0936Fy c0936Fy2;
+                c0936Fy2 = AnonymousClass67.this.A03;
+                c0936Fy2.A0O().AGY(AnonymousClass67.this);
             }
         };
         this.A0G = new E4() { // from class: com.facebook.ads.redexgen.X.69
@@ -114,9 +114,9 @@ public abstract class AnonymousClass67 extends AbstractC1001Jg implements XQ {
             @Override // com.instagram.common.viewpoint.core.UN
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final void A03(C4B c4b) {
-                C0916Fy c0916Fy2;
-                c0916Fy2 = AnonymousClass67.this.A03;
-                c0916Fy2.A0O().AGW(AnonymousClass67.this);
+                C0936Fy c0936Fy2;
+                c0936Fy2 = AnonymousClass67.this.A03;
+                c0936Fy2.A0O().AGW(AnonymousClass67.this);
             }
         };
         this.A0I = new E0() { // from class: com.facebook.ads.redexgen.X.68
@@ -128,12 +128,12 @@ public abstract class AnonymousClass67 extends AbstractC1001Jg implements XQ {
                 AnonymousClass67.this.A02();
             }
         };
-        this.A0D = c1557c7.A0C();
-        this.A0E = c1557c7;
-        this.A03 = c0916Fy;
+        this.A0D = c1577c7.A0C();
+        this.A0E = c1577c7;
+        this.A03 = c0936Fy;
         this.A0K = str;
-        this.A0B = c1557c7.A06();
-        this.A0C = XS.A00(c1557c7.A06(), c1557c7.A05(), this);
+        this.A0B = c1577c7.A06();
+        this.A0C = XS.A00(c1577c7.A06(), c1577c7.A05(), this);
         setGravity(17);
         setPadding(A0O, 0, A0O, A0O);
         YB.A0N(this, 0);
@@ -160,62 +160,62 @@ public abstract class AnonymousClass67 extends AbstractC1001Jg implements XQ {
         YB.A0K(view);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public boolean A0A() {
         return false;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final void A1C() {
         super.A1C();
         this.A0C.A03();
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final boolean A1O() {
         return false;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1001Jg
+    @Override // com.instagram.common.viewpoint.core.AbstractC1021Jg
     public final void A1R() {
         if (A1V()) {
             this.A04.A01();
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1001Jg
+    @Override // com.instagram.common.viewpoint.core.AbstractC1021Jg
     public final void A1S() {
         if (A1V()) {
             A1T();
-            C1681e8 c1681e8 = this.A04;
-            EnumC1727et enumC1727et = EnumC1727et.A02;
+            C1701e8 c1701e8 = this.A04;
+            EnumC1747et enumC1747et = EnumC1747et.A02;
             if (A0M[2].length() == 4) {
                 throw new RuntimeException();
             }
             A0M[2] = "GrzUS";
-            c1681e8.A05(enumC1727et);
+            c1701e8.A05(enumC1747et);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1001Jg
+    @Override // com.instagram.common.viewpoint.core.AbstractC1021Jg
     public final void A1T() {
         float volume = this.A03.A0P().getVolume();
         if (A1V()) {
             float newVolume = this.A04.getVolume();
             if (volume != newVolume) {
-                C1681e8 c1681e8 = this.A04;
+                C1701e8 c1701e8 = this.A04;
                 if (A0M[5].length() == 9) {
                     throw new RuntimeException();
                 }
                 String[] strArr = A0M;
                 strArr[1] = "cdp";
                 strArr[4] = "iOc";
-                c1681e8.setVolume(volume);
+                c1701e8.setVolume(volume);
             }
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1001Jg
+    @Override // com.instagram.common.viewpoint.core.AbstractC1021Jg
     public final boolean A1U() {
         if (A1V()) {
             boolean A06 = this.A04.A06();
@@ -230,7 +230,7 @@ public abstract class AnonymousClass67 extends AbstractC1001Jg implements XQ {
         return false;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1001Jg
+    @Override // com.instagram.common.viewpoint.core.AbstractC1021Jg
     public final boolean A1V() {
         return this.A05;
     }
@@ -250,7 +250,7 @@ public abstract class AnonymousClass67 extends AbstractC1001Jg implements XQ {
         return this.A00;
     }
 
-    public final C1681e8 getVideoView() {
+    public final C1701e8 getVideoView() {
         return this.A04;
     }
 
@@ -270,40 +270,40 @@ public abstract class AnonymousClass67 extends AbstractC1001Jg implements XQ {
         getTitleDescContainer().A04(str, str2, null, true, false);
     }
 
-    public void setCTAInfo(C1100Nc c1100Nc, Map<String, String> extraData) {
-        getCtaButton().setCta(c1100Nc, this.A0K, extraData);
+    public void setCTAInfo(C1120Nc c1120Nc, Map<String, String> extraData) {
+        getCtaButton().setCta(c1120Nc, this.A0K, extraData);
     }
 
     public void setImageUrl(String str) {
         this.A01.setVisibility(0);
         this.A04.setVisibility(8);
-        new LM(this.A01, this.A0B).A04().A06(new C1000Jf(this)).A07(str);
+        new LM(this.A01, this.A0B).A04().A06(new C1020Jf(this)).A07(str);
     }
 
-    public void setIsVideo(boolean z3) {
-        this.A05 = z3;
+    public void setIsVideo(boolean z6) {
+        this.A05 = z6;
     }
 
-    public void setOnAssetsLoadedListener(InterfaceC1602cq interfaceC1602cq) {
-        this.A02 = interfaceC1602cq;
+    public void setOnAssetsLoadedListener(InterfaceC1622cq interfaceC1622cq) {
+        this.A02 = interfaceC1622cq;
     }
 
-    public void setUpImageView(C1840gi c1840gi) {
-        this.A01 = new ZI(c1840gi);
-        if (C1290Up.A1J(c1840gi)) {
-            AbstractC1500bC.A00(this.A01, C1290Up.A1K(c1840gi), new ViewOnClickListenerC1608cw(this));
+    public void setUpImageView(C1860gi c1860gi) {
+        this.A01 = new ZI(c1860gi);
+        if (C1310Up.A1J(c1860gi)) {
+            AbstractC1520bC.A00(this.A01, C1310Up.A1K(c1860gi), new ViewOnClickListenerC1628cw(this));
         }
         A04(this.A01);
     }
 
-    public void setUpMediaContainer(C1840gi c1840gi) {
-        this.A00 = new RelativeLayout(c1840gi);
+    public void setUpMediaContainer(C1860gi c1860gi) {
+        this.A00 = new RelativeLayout(c1860gi);
         A04(this.A00);
         XR A02 = this.A0C.A02(this.A0E.A05());
         this.A0E.A06().A0H().A00(A02.A01);
         getCtaButton().setCreativeAsCtaLoggingHelper(this.A0C);
-        if (this.A0E.A05().A1e() && C1290Up.A2w(this.A0B)) {
-            this.A00.setOnClickListener(new ViewOnClickListenerC1607cv(this));
+        if (this.A0E.A05().A1e() && C1310Up.A2w(this.A0B)) {
+            this.A00.setOnClickListener(new ViewOnClickListenerC1627cv(this));
         } else {
             if (!A02.A00) {
                 return;
@@ -317,21 +317,21 @@ public abstract class AnonymousClass67 extends AbstractC1001Jg implements XQ {
         }
     }
 
-    public void setUpVideoView(C1840gi c1840gi) {
-        this.A04 = new C1681e8(c1840gi, new VI(this.A0K, getAdEventManager()));
-        if (C1290Up.A1L(c1840gi)) {
-            AbstractC1500bC.A00(this.A04, C1290Up.A1M(c1840gi), new ViewOnClickListenerC1609cx(this));
+    public void setUpVideoView(C1860gi c1860gi) {
+        this.A04 = new C1701e8(c1860gi, new VI(this.A0K, getAdEventManager()));
+        if (C1310Up.A1L(c1860gi)) {
+            AbstractC1520bC.A00(this.A04, C1310Up.A1M(c1860gi), new ViewOnClickListenerC1629cx(this));
         }
         A04(this.A04);
     }
 
-    private void setUpView(C1840gi c1840gi) {
-        setUpImageView(c1840gi);
-        setUpVideoView(c1840gi);
-        setUpMediaContainer(c1840gi);
+    private void setUpView(C1860gi c1860gi) {
+        setUpImageView(c1860gi);
+        setUpVideoView(c1860gi);
+        setUpMediaContainer(c1860gi);
         this.A00.addView(this.A01);
         this.A00.addView(this.A04);
-        A1X(c1840gi);
+        A1X(c1860gi);
     }
 
     public void setVideoPlaceholderUrl(String str) {

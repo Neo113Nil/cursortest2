@@ -20,14 +20,14 @@ import org.json.JSONObject;
 public class b extends AdSessionStatePublisher {
 
     /* renamed from: g, reason: collision with root package name */
-    private WebView f36283g;
+    private WebView f37050g;
 
     /* renamed from: h, reason: collision with root package name */
-    private Long f36284h;
+    private Long f37051h;
     private final Map<String, VerificationScriptResource> i;
 
     /* renamed from: j, reason: collision with root package name */
-    private final String f36285j;
+    private final String f37052j;
 
     public class a extends WebViewClient {
         public a() {
@@ -49,30 +49,30 @@ public class b extends AdSessionStatePublisher {
     public class RunnableC0171b implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        private final WebView f36287a;
+        private final WebView f37054a;
 
         public RunnableC0171b() {
-            this.f36287a = b.this.f36283g;
+            this.f37054a = b.this.f37050g;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            this.f36287a.destroy();
+            this.f37054a.destroy();
         }
     }
 
     public b(String str, Map<String, VerificationScriptResource> map, String str2) {
         super(str);
-        this.f36284h = null;
+        this.f37051h = null;
         this.i = map;
-        this.f36285j = str2;
+        this.f37052j = str2;
     }
 
     @Override // com.iab.omid.library.toponad.publisher.AdSessionStatePublisher
     public void b() {
         super.b();
-        new Handler().postDelayed(new RunnableC0171b(), Math.max(4000 - (this.f36284h == null ? 4000L : TimeUnit.MILLISECONDS.convert(f.b() - this.f36284h.longValue(), TimeUnit.NANOSECONDS)), com.anythink.basead.exoplayer.i.a.f7883f));
-        this.f36283g = null;
+        new Handler().postDelayed(new RunnableC0171b(), Math.max(4000 - (this.f37051h == null ? 4000L : TimeUnit.MILLISECONDS.convert(f.b() - this.f37051h.longValue(), TimeUnit.NANOSECONDS)), com.anythink.basead.exoplayer.i.a.f8669f));
+        this.f37050g = null;
     }
 
     @Override // com.iab.omid.library.toponad.publisher.AdSessionStatePublisher
@@ -84,17 +84,17 @@ public class b extends AdSessionStatePublisher {
     @SuppressLint({"SetJavaScriptEnabled"})
     public void j() {
         WebView webView = new WebView(g.b().a());
-        this.f36283g = webView;
+        this.f37050g = webView;
         webView.getSettings().setJavaScriptEnabled(true);
-        this.f36283g.getSettings().setAllowContentAccess(false);
-        this.f36283g.getSettings().setAllowFileAccess(false);
-        this.f36283g.setWebViewClient(new a());
-        a(this.f36283g);
-        h.a().c(this.f36283g, this.f36285j);
+        this.f37050g.getSettings().setAllowContentAccess(false);
+        this.f37050g.getSettings().setAllowFileAccess(false);
+        this.f37050g.setWebViewClient(new a());
+        a(this.f37050g);
+        h.a().c(this.f37050g, this.f37052j);
         for (String str : this.i.keySet()) {
-            h.a().d(this.f36283g, this.i.get(str).getResourceUrl().toExternalForm(), str);
+            h.a().d(this.f37050g, this.i.get(str).getResourceUrl().toExternalForm(), str);
         }
-        this.f36284h = Long.valueOf(f.b());
+        this.f37051h = Long.valueOf(f.b());
     }
 
     @Override // com.iab.omid.library.toponad.publisher.AdSessionStatePublisher

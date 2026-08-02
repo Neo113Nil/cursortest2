@@ -1,67 +1,42 @@
 package K3;
 
-import android.os.Bundle;
-import android.os.IBinder;
-import android.os.Parcel;
-import android.os.Parcelable;
-import java.util.Objects;
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.util.TypedValue;
+import com.IceFishing.LiveIceFishing.C5248R;
+import com.bumptech.glide.e;
+import m.Z;
+import m3.AbstractC4742a;
 
 /* loaded from: classes2.dex */
-public final class a implements Parcelable {
-    public static final Parcelable.Creator<a> CREATOR = new B8.d(4);
-
-    /* renamed from: n, reason: collision with root package name */
-    public final String f1571n;
-
-    /* renamed from: u, reason: collision with root package name */
-    public final String f1572u;
-
-    /* renamed from: v, reason: collision with root package name */
-    public final IBinder f1573v;
-
-    /* renamed from: w, reason: collision with root package name */
-    public final Bundle f1574w;
-
-    public /* synthetic */ a(Parcel parcel) {
-        String readString = parcel.readString();
-        Objects.requireNonNull(readString);
-        this.f1571n = readString;
-        String readString2 = parcel.readString();
-        Objects.requireNonNull(readString2);
-        this.f1572u = readString2;
-        if (parcel.readByte() != 0) {
-            this.f1573v = parcel.readStrongBinder();
-        } else {
-            this.f1573v = null;
+public final class a extends Z {
+    public static int k(Context context, TypedArray typedArray, int... iArr) {
+        int i = -1;
+        for (int i4 = 0; i4 < iArr.length && i < 0; i4++) {
+            int i6 = iArr[i4];
+            TypedValue typedValue = new TypedValue();
+            if (typedArray.getValue(i6, typedValue) && typedValue.type == 2) {
+                TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(new int[]{typedValue.data});
+                int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(0, -1);
+                obtainStyledAttributes.recycle();
+                i = dimensionPixelSize;
+            } else {
+                i = typedArray.getDimensionPixelSize(i6, -1);
+            }
         }
-        Bundle readBundle = parcel.readBundle(a.class.getClassLoader());
-        this.f1574w = readBundle == null ? Bundle.EMPTY : readBundle;
+        return i;
     }
 
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(this.f1571n);
-        parcel.writeString(this.f1572u);
-        IBinder iBinder = this.f1573v;
-        if (iBinder != null) {
-            parcel.writeByte((byte) 1);
-            parcel.writeStrongBinder(iBinder);
-        } else {
-            parcel.writeByte((byte) 0);
+    @Override // m.Z, android.widget.TextView
+    public final void setTextAppearance(Context context, int i) {
+        super.setTextAppearance(context, i);
+        if (e.g(context, C5248R.attr.textAppearanceLineHeightEnabled, true)) {
+            TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(i, AbstractC4742a.f39433q);
+            int k9 = k(getContext(), obtainStyledAttributes, 1, 2);
+            obtainStyledAttributes.recycle();
+            if (k9 >= 0) {
+                setLineHeight(k9);
+            }
         }
-        parcel.writeBundle(this.f1574w);
-    }
-
-    public a(String str, String str2, IBinder iBinder) {
-        this.f1571n = str;
-        Objects.requireNonNull(str2, "url cannot be null");
-        this.f1572u = str2;
-        this.f1573v = iBinder;
-        this.f1574w = Bundle.EMPTY;
     }
 }

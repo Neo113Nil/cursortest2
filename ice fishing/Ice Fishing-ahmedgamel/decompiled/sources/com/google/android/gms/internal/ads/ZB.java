@@ -8,18 +8,18 @@ import java.util.Map;
 public class ZB extends BB implements Serializable {
 
     /* renamed from: w, reason: collision with root package name */
-    public final transient C3770qC f28848w;
+    public final transient C3793qC f29628w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final transient int f28849x;
+    public final transient int f29629x;
 
     /* renamed from: y, reason: collision with root package name */
-    public transient YB f28850y;
+    public transient YB f29630y;
 
-    public ZB(C3770qC c3770qC, int i) {
-        this.f28848w = c3770qC;
-        this.f28849x = i;
-        Object[] objArr = C3823rC.f33536B;
+    public ZB(C3793qC c3793qC, int i) {
+        this.f29628w = c3793qC;
+        this.f29629x = i;
+        Object[] objArr = C3846rC.f34304B;
     }
 
     @Override // com.google.android.gms.internal.ads.AB
@@ -39,6 +39,6 @@ public class ZB extends BB implements Serializable {
 
     @Override // com.google.android.gms.internal.ads.AB
     public /* synthetic */ Map e() {
-        return this.f28848w;
+        return this.f29628w;
     }
 }

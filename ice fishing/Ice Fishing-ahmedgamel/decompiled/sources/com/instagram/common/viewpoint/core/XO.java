@@ -12,10 +12,10 @@ public final class XO {
     public final Handler A05;
     public final XN A06;
 
-    public XO(int i, float f3, long j6, Handler handler, XN xn) {
+    public XO(int i, float f2, long j6, Handler handler, XN xn) {
         this(i, xn, handler);
         this.A02 = j6;
-        this.A01 = f3;
+        this.A01 = f2;
     }
 
     public XO(int i, XN xn) {
@@ -68,7 +68,7 @@ public final class XO {
         }
         this.A04 = true;
         this.A06.AFV(this.A00);
-        this.A05.postDelayed(new C1177Qe(this), this.A02);
+        this.A05.postDelayed(new C1197Qe(this), this.A02);
         return true;
     }
 }

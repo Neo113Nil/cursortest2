@@ -6,22 +6,22 @@ import java.util.Objects;
 public final class YO {
 
     /* renamed from: a, reason: collision with root package name */
-    public final DP f28677a;
+    public final DP f29454a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final RC f28678b;
+    public final RC f29455b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final AbstractC3604n8 f28679c;
+    public final AbstractC3627n8 f29456c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final C3676oQ f28680d;
+    public final C3860rQ f29457d;
 
     public /* synthetic */ YO(ME me) {
-        this.f28677a = (DP) me.f26270b;
-        this.f28678b = (RC) me.f26271c;
-        this.f28679c = (AbstractC3604n8) me.f26272d;
-        this.f28680d = (C3676oQ) me.f26273e;
+        this.f29454a = (DP) me.f27061b;
+        this.f29455b = (RC) me.f27062c;
+        this.f29456c = (AbstractC3627n8) me.f27063d;
+        this.f29457d = (C3860rQ) me.f27064e;
     }
 
     public final boolean equals(Object obj) {
@@ -33,14 +33,14 @@ public final class YO {
         }
         YO yo = (YO) obj;
         yo.getClass();
-        return this.f28677a.equals(yo.f28677a) && Objects.equals(this.f28678b, yo.f28678b) && this.f28679c.equals(yo.f28679c) && Objects.equals(this.f28680d, yo.f28680d);
+        return this.f29454a.equals(yo.f29454a) && Objects.equals(this.f29455b, yo.f29455b) && this.f29456c.equals(yo.f29456c) && Objects.equals(this.f29457d, yo.f29457d);
     }
 
     public final int hashCode() {
-        int hashCode = this.f28677a.hashCode() * 961;
-        RC rc = this.f28678b;
-        int hashCode2 = this.f28679c.hashCode() + ((hashCode + (rc == null ? 0 : rc.hashCode())) * 31);
-        C3676oQ c3676oQ = this.f28680d;
-        return (hashCode2 * 31) + (c3676oQ != null ? c3676oQ.hashCode() : 0);
+        int hashCode = this.f29454a.hashCode() * 961;
+        RC rc = this.f29455b;
+        int hashCode2 = this.f29456c.hashCode() + ((hashCode + (rc == null ? 0 : rc.hashCode())) * 31);
+        C3860rQ c3860rQ = this.f29457d;
+        return (hashCode2 * 31) + (c3860rQ != null ? c3860rQ.hashCode() : 0);
     }
 }

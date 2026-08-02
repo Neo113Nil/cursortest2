@@ -97,36 +97,36 @@ public class AdInternalSettings {
         }
     }
 
-    public static void setDebugBuild(boolean z3) {
+    public static void setDebugBuild(boolean z6) {
         DynamicLoader dynamicLoader = DynamicLoaderFactory.getDynamicLoader();
-        if (dynamicLoader != null && z3) {
+        if (dynamicLoader != null && z6) {
             dynamicLoader.createAdSettingsApi().turnOnDebugger();
         }
-        sSettingsBundle.putBoolean(BOOL_DEBUG_BUILD_KEY, z3);
+        sSettingsBundle.putBoolean(BOOL_DEBUG_BUILD_KEY, z6);
     }
 
     public static void setMediationService(String str) {
         sSettingsBundle.putString(STR_MEDIATION_SERVICE_KEY, str);
     }
 
-    public static void setTestMode(boolean z3) {
-        sSettingsBundle.putBoolean(BOOL_EXPLICIT_TEST_MODE_KEY, z3);
+    public static void setTestMode(boolean z6) {
+        sSettingsBundle.putBoolean(BOOL_EXPLICIT_TEST_MODE_KEY, z6);
     }
 
     public static void setUrlPrefix(String str) {
         sSettingsBundle.putString(STR_URL_PREFIX_KEY, str);
     }
 
-    public static void setVideoAutoplay(boolean z3) {
-        sSettingsBundle.putBoolean(BOOL_VIDEO_AUTOPLAY_KEY, z3);
+    public static void setVideoAutoplay(boolean z6) {
+        sSettingsBundle.putBoolean(BOOL_VIDEO_AUTOPLAY_KEY, z6);
     }
 
-    public static void setVideoAutoplayOnMobile(boolean z3) {
-        sSettingsBundle.putBoolean(BOOL_AUTOPLAY_ON_MOBILE_KEY, z3);
+    public static void setVideoAutoplayOnMobile(boolean z6) {
+        sSettingsBundle.putBoolean(BOOL_AUTOPLAY_ON_MOBILE_KEY, z6);
     }
 
-    public static void setVisibleAnimation(boolean z3) {
-        sSettingsBundle.putBoolean(BOOL_VISIBLE_ANIMATION_KEY, z3);
+    public static void setVisibleAnimation(boolean z6) {
+        sSettingsBundle.putBoolean(BOOL_VISIBLE_ANIMATION_KEY, z6);
     }
 
     public static void turnOnSDKDebugger(Context context) {

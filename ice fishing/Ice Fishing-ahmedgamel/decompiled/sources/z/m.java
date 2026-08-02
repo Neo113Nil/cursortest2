@@ -9,48 +9,48 @@ import android.util.SparseIntArray;
 public final class m {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final SparseIntArray f42192n;
+    public static final SparseIntArray f42163n;
 
     /* renamed from: a, reason: collision with root package name */
-    public float f42193a;
+    public float f42164a;
 
     /* renamed from: b, reason: collision with root package name */
-    public float f42194b;
+    public float f42165b;
 
     /* renamed from: c, reason: collision with root package name */
-    public float f42195c;
+    public float f42166c;
 
     /* renamed from: d, reason: collision with root package name */
-    public float f42196d;
+    public float f42167d;
 
     /* renamed from: e, reason: collision with root package name */
-    public float f42197e;
+    public float f42168e;
 
     /* renamed from: f, reason: collision with root package name */
-    public float f42198f;
+    public float f42169f;
 
     /* renamed from: g, reason: collision with root package name */
-    public float f42199g;
+    public float f42170g;
 
     /* renamed from: h, reason: collision with root package name */
-    public int f42200h;
+    public int f42171h;
     public float i;
 
     /* renamed from: j, reason: collision with root package name */
-    public float f42201j;
+    public float f42172j;
 
     /* renamed from: k, reason: collision with root package name */
-    public float f42202k;
+    public float f42173k;
 
     /* renamed from: l, reason: collision with root package name */
-    public boolean f42203l;
+    public boolean f42174l;
 
     /* renamed from: m, reason: collision with root package name */
-    public float f42204m;
+    public float f42175m;
 
     static {
         SparseIntArray sparseIntArray = new SparseIntArray();
-        f42192n = sparseIntArray;
+        f42163n = sparseIntArray;
         sparseIntArray.append(6, 1);
         sparseIntArray.append(7, 2);
         sparseIntArray.append(8, 3);
@@ -70,43 +70,43 @@ public final class m {
         int indexCount = obtainStyledAttributes.getIndexCount();
         for (int i = 0; i < indexCount; i++) {
             int index = obtainStyledAttributes.getIndex(i);
-            switch (f42192n.get(index)) {
+            switch (f42163n.get(index)) {
                 case 1:
-                    this.f42193a = obtainStyledAttributes.getFloat(index, this.f42193a);
+                    this.f42164a = obtainStyledAttributes.getFloat(index, this.f42164a);
                     break;
                 case 2:
-                    this.f42194b = obtainStyledAttributes.getFloat(index, this.f42194b);
+                    this.f42165b = obtainStyledAttributes.getFloat(index, this.f42165b);
                     break;
                 case 3:
-                    this.f42195c = obtainStyledAttributes.getFloat(index, this.f42195c);
+                    this.f42166c = obtainStyledAttributes.getFloat(index, this.f42166c);
                     break;
                 case 4:
-                    this.f42196d = obtainStyledAttributes.getFloat(index, this.f42196d);
+                    this.f42167d = obtainStyledAttributes.getFloat(index, this.f42167d);
                     break;
                 case 5:
-                    this.f42197e = obtainStyledAttributes.getFloat(index, this.f42197e);
+                    this.f42168e = obtainStyledAttributes.getFloat(index, this.f42168e);
                     break;
                 case 6:
-                    this.f42198f = obtainStyledAttributes.getDimension(index, this.f42198f);
+                    this.f42169f = obtainStyledAttributes.getDimension(index, this.f42169f);
                     break;
                 case 7:
-                    this.f42199g = obtainStyledAttributes.getDimension(index, this.f42199g);
+                    this.f42170g = obtainStyledAttributes.getDimension(index, this.f42170g);
                     break;
                 case 8:
                     this.i = obtainStyledAttributes.getDimension(index, this.i);
                     break;
                 case 9:
-                    this.f42201j = obtainStyledAttributes.getDimension(index, this.f42201j);
+                    this.f42172j = obtainStyledAttributes.getDimension(index, this.f42172j);
                     break;
                 case 10:
-                    this.f42202k = obtainStyledAttributes.getDimension(index, this.f42202k);
+                    this.f42173k = obtainStyledAttributes.getDimension(index, this.f42173k);
                     break;
                 case 11:
-                    this.f42203l = true;
-                    this.f42204m = obtainStyledAttributes.getDimension(index, this.f42204m);
+                    this.f42174l = true;
+                    this.f42175m = obtainStyledAttributes.getDimension(index, this.f42175m);
                     break;
                 case 12:
-                    this.f42200h = n.f(obtainStyledAttributes, index, this.f42200h);
+                    this.f42171h = n.f(obtainStyledAttributes, index, this.f42171h);
                     break;
             }
         }

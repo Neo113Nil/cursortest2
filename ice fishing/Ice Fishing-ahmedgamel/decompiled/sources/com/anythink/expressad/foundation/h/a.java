@@ -2,7 +2,7 @@ package com.anythink.expressad.foundation.h;
 
 import android.text.TextUtils;
 import android.util.Base64;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.security.MessageDigest;
 import java.security.Provider;
 import java.security.Security;
@@ -15,13 +15,13 @@ import javax.crypto.spec.SecretKeySpec;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19587a = "HkzwDFeD4QuyLdx5igfZYcu9xTM9NN==";
+    private static final String f20374a = "HkzwDFeD4QuyLdx5igfZYcu9xTM9NN==";
 
     /* renamed from: b, reason: collision with root package name */
-    private static byte[] f19588b = new byte[32];
+    private static byte[] f20375b = new byte[32];
 
     /* renamed from: c, reason: collision with root package name */
-    private static byte[] f19589c = new byte[16];
+    private static byte[] f20376c = new byte[16];
 
     /* renamed from: com.anythink.expressad.foundation.h.a$a, reason: collision with other inner class name */
     public static class C0125a extends Provider {
@@ -33,21 +33,21 @@ public final class a {
     }
 
     static {
-        String b9 = com.anythink.core.express.a.a.b(f19587a);
+        String b9 = com.anythink.core.express.a.a.b(f20374a);
         if (TextUtils.isEmpty(b9)) {
             return;
         }
         try {
             byte[] digest = MessageDigest.getInstance("sha-384").digest(b9.getBytes());
-            System.arraycopy(digest, 0, f19588b, 0, 32);
-            System.arraycopy(digest, 32, f19589c, 0, 16);
+            System.arraycopy(digest, 0, f20375b, 0, 32);
+            System.arraycopy(digest, 32, f20376c, 0, 16);
         } catch (Exception e9) {
             e9.printStackTrace();
         }
     }
 
     public static String a(String str) {
-        return a(str, f19588b, f19589c);
+        return a(str, f20375b, f20376c);
     }
 
     private static void b(String str) {
@@ -56,15 +56,15 @@ public final class a {
         }
         try {
             byte[] digest = MessageDigest.getInstance("sha-384").digest(str.getBytes());
-            System.arraycopy(digest, 0, f19588b, 0, 32);
-            System.arraycopy(digest, 32, f19589c, 0, 16);
+            System.arraycopy(digest, 0, f20375b, 0, 32);
+            System.arraycopy(digest, 32, f20376c, 0, 16);
         } catch (Exception e9) {
             e9.printStackTrace();
         }
     }
 
     private static String c(String str) {
-        return b(str, f19588b, f19589c);
+        return b(str, f20375b, f20376c);
     }
 
     private static byte[] d(String str) {
@@ -72,9 +72,9 @@ public final class a {
         int length = upperCase.length() / 2;
         byte[] bArr = new byte[length];
         for (int i = 0; i < length; i++) {
-            int i6 = i * 2;
-            int i9 = i6 + 1;
-            bArr[i] = (byte) (Integer.decode("0x" + upperCase.substring(i6, i9) + upperCase.substring(i9, i6 + 2)).intValue() & com.anythink.basead.exoplayer.k.p.f8473b);
+            int i4 = i * 2;
+            int i6 = i4 + 1;
+            bArr[i] = (byte) (Integer.decode("0x" + upperCase.substring(i4, i6) + upperCase.substring(i6, i4 + 2)).intValue() & com.anythink.basead.exoplayer.k.p.f9259b);
         }
         return bArr;
     }
@@ -111,9 +111,9 @@ public final class a {
         for (byte b9 : bArr) {
             String hexString = Integer.toHexString(b9 & 255);
             if (hexString.length() == 1) {
-                str = AbstractC4404f.g(str, "0", hexString);
+                str = Wv.h(str, "0", hexString);
             } else {
-                str = AbstractC4404f.f(str, hexString);
+                str = Wv.g(str, hexString);
             }
         }
         return str;

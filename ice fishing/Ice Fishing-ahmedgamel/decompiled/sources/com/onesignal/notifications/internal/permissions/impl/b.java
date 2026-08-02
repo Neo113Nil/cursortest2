@@ -2,9 +2,9 @@ package com.onesignal.notifications.internal.permissions.impl;
 
 import I7.l;
 import I7.p;
-import S7.AbstractC0402u;
-import S7.AbstractC0406y;
-import S7.InterfaceC0404w;
+import S7.AbstractC0406u;
+import S7.AbstractC0410y;
+import S7.InterfaceC0408w;
 import S7.P;
 import S7.q0;
 import S7.z0;
@@ -14,9 +14,9 @@ import com.onesignal.common.AndroidUtils;
 import com.onesignal.core.activities.PermissionsActivity;
 import i5.r;
 import u7.v;
-import v7.C5127h;
-import z7.InterfaceC5267d;
-import z7.InterfaceC5272i;
+import v7.C5117h;
+import z7.InterfaceC5240d;
+import z7.InterfaceC5245i;
 
 /* loaded from: classes2.dex */
 public final class b implements com.onesignal.core.internal.permissions.f, A5.b {
@@ -38,21 +38,21 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
     public static final class a extends B7.h implements l {
         int label;
 
-        public a(InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public a(InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return b.this.new a(interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return b.this.new a(interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 b bVar = b.this;
                 this.label = 1;
                 if (bVar.pollForPermission(this) == aVar) {
@@ -62,14 +62,14 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return v.f41353a;
+            return v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((a) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((a) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -87,15 +87,15 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
         final /* synthetic */ boolean $enabled;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public c(boolean z3) {
+        public c(boolean z6) {
             super(1);
-            this.$enabled = z3;
+            this.$enabled = z6;
         }
 
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((A5.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(A5.a it) {
@@ -109,8 +109,8 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
         int label;
         /* synthetic */ Object result;
 
-        public d(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public d(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -125,15 +125,15 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
         final /* synthetic */ boolean $enabled;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public e(boolean z3) {
+        public e(boolean z6) {
             super(1);
-            this.$enabled = z3;
+            this.$enabled = z6;
         }
 
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((A5.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(A5.a it) {
@@ -145,32 +145,32 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
     public static final class f extends B7.h implements p {
         int label;
 
-        public f(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public f(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return b.this.new f(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return b.this.new f(interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((f) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((f) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i != 0) {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 return obj;
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             com.onesignal.common.threading.e eVar = b.this.pollingWaiter;
             this.label = 1;
             Object waitForWake = eVar.waitForWake(this);
@@ -184,8 +184,8 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
         int label;
         /* synthetic */ Object result;
 
-        public g(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public g(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -209,12 +209,12 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
 
             @Override // I7.a
             public /* bridge */ /* synthetic */ Object invoke() {
-                m42invoke();
-                return v.f41353a;
+                m41invoke();
+                return v.f41073a;
             }
 
             /* renamed from: invoke, reason: collision with other method in class */
-            public final void m42invoke() {
+            public final void m41invoke() {
                 b bVar = this.this$0;
                 bVar.pollingWaitInterval = ((com.onesignal.core.internal.config.b) bVar._configModelStore.getModel()).getForegroundFetchNotificationPermissionInterval();
                 this.this$0.pollingWaiter.wake();
@@ -233,12 +233,12 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
 
             @Override // I7.a
             public /* bridge */ /* synthetic */ Object invoke() {
-                m43invoke();
-                return v.f41353a;
+                m42invoke();
+                return v.f41073a;
             }
 
             /* renamed from: invoke, reason: collision with other method in class */
-            public final void m43invoke() {
+            public final void m42invoke() {
                 b bVar = this.this$0;
                 bVar.pollingWaitInterval = ((com.onesignal.core.internal.config.b) bVar._configModelStore.getModel()).getBackgroundFetchNotificationPermissionInterval();
             }
@@ -248,8 +248,8 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
         }
 
         @Override // x4.c, x4.e
-        public void onFocus(boolean z3) {
-            super.onFocus(z3);
+        public void onFocus(boolean z6) {
+            super.onFocus(z6);
             com.onesignal.common.threading.c.runOnSerialIOIfBackgroundThreading(new a(b.this));
         }
 
@@ -291,8 +291,8 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
             }
 
             @Override // x4.c, x4.e
-            public void onFocus(boolean z3) {
-                if (z3) {
+            public void onFocus(boolean z6) {
+                if (z6) {
                     return;
                 }
                 super.onFocus(false);
@@ -344,10 +344,10 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final void permissionPromptCompleted(boolean z3) {
-        this.enabled = z3;
-        this.waiter.wake(Boolean.valueOf(z3));
-        this.events.fire(new c(z3));
+    public final void permissionPromptCompleted(boolean z6) {
+        this.enabled = z6;
+        this.waiter.wake(Boolean.valueOf(z6));
+        this.events.fire(new c(z6));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -357,31 +357,31 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object pollForPermission(InterfaceC5267d interfaceC5267d) {
+    public final Object pollForPermission(InterfaceC5240d interfaceC5240d) {
         d dVar;
         A7.a aVar;
-        int i6;
+        int i4;
         b bVar;
         boolean notificationsEnabled;
         long j6;
         f fVar;
-        if (interfaceC5267d instanceof d) {
-            dVar = (d) interfaceC5267d;
-            int i9 = dVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                dVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof d) {
+            dVar = (d) interfaceC5240d;
+            int i6 = dVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                dVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = dVar.result;
-                aVar = A7.a.f58n;
-                i6 = dVar.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                aVar = A7.a.f215n;
+                i4 = dVar.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     bVar = this;
                 } else {
-                    if (i6 != 1) {
+                    if (i4 != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     bVar = (b) dVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 do {
                     notificationsEnabled = bVar.notificationsEnabled();
@@ -393,15 +393,15 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
                     fVar = bVar.new f(null);
                     dVar.L$0 = bVar;
                     dVar.label = 1;
-                } while (AbstractC0406y.A(j6, fVar, dVar) != aVar);
+                } while (AbstractC0410y.A(j6, fVar, dVar) != aVar);
                 return aVar;
             }
         }
-        dVar = new d(interfaceC5267d);
+        dVar = new d(interfaceC5240d);
         Object obj2 = dVar.result;
-        aVar = A7.a.f58n;
-        i6 = dVar.label;
-        if (i6 != 0) {
+        aVar = A7.a.f215n;
+        i4 = dVar.label;
+        if (i4 != 0) {
         }
         do {
             notificationsEnabled = bVar.notificationsEnabled();
@@ -411,7 +411,7 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
             fVar = bVar.new f(null);
             dVar.L$0 = bVar;
             dVar.label = 1;
-        } while (AbstractC0406y.A(j6, fVar, dVar) != aVar);
+        } while (AbstractC0410y.A(j6, fVar, dVar) != aVar);
         return aVar;
     }
 
@@ -460,8 +460,8 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
     }
 
     @Override // com.onesignal.core.internal.permissions.f
-    public void onReject(boolean z3) {
-        if (z3 ? showFallbackAlertDialog() : false) {
+    public void onReject(boolean z6) {
+        if (z6 ? showFallbackAlertDialog() : false) {
             return;
         }
         permissionPromptCompleted(false);
@@ -477,48 +477,48 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object prompt(boolean z3, InterfaceC5267d interfaceC5267d) {
+    public Object prompt(boolean z6, InterfaceC5240d interfaceC5240d) {
         g gVar;
-        int i6;
+        int i4;
         Object obj;
         b bVar;
-        if (interfaceC5267d instanceof g) {
-            gVar = (g) interfaceC5267d;
-            int i9 = gVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                gVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof g) {
+            gVar = (g) interfaceC5240d;
+            int i6 = gVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                gVar.label = i6 - Integer.MIN_VALUE;
                 Object obj2 = gVar.result;
-                Object obj3 = A7.a.f58n;
-                i6 = gVar.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj2);
+                Object obj3 = A7.a.f215n;
+                i4 = gVar.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj2);
                     gVar.L$0 = this;
-                    gVar.Z$0 = z3;
+                    gVar.Z$0 = z6;
                     gVar.label = 1;
-                    InterfaceC5272i context = gVar.getContext();
-                    AbstractC0406y.g(context);
-                    InterfaceC5267d l9 = A8.b.l(gVar);
-                    X7.h hVar = l9 instanceof X7.h ? (X7.h) l9 : null;
-                    Object obj4 = v.f41353a;
+                    InterfaceC5245i context = gVar.getContext();
+                    AbstractC0410y.g(context);
+                    InterfaceC5240d n9 = A8.b.n(gVar);
+                    X7.h hVar = n9 instanceof X7.h ? (X7.h) n9 : null;
+                    Object obj4 = v.f41073a;
                     if (hVar != null) {
-                        AbstractC0402u abstractC0402u = hVar.f3834w;
-                        if (abstractC0402u.z()) {
-                            hVar.f3836y = obj4;
-                            hVar.f2914v = 1;
-                            abstractC0402u.q(context, hVar);
+                        AbstractC0406u abstractC0406u = hVar.f3789w;
+                        if (abstractC0406u.z()) {
+                            hVar.f3791y = obj4;
+                            hVar.f2997v = 1;
+                            abstractC0406u.q(context, hVar);
                         } else {
-                            z0 z0Var = new z0(z0.f3018v);
-                            InterfaceC5272i n9 = context.n(z0Var);
-                            hVar.f3836y = obj4;
-                            hVar.f2914v = 1;
-                            abstractC0402u.q(n9, hVar);
-                            if (z0Var.f3019u) {
+                            z0 z0Var = new z0(z0.f3101v);
+                            InterfaceC5245i n10 = context.n(z0Var);
+                            hVar.f3791y = obj4;
+                            hVar.f2997v = 1;
+                            abstractC0406u.q(n10, hVar);
+                            if (z0Var.f3102u) {
                                 P a9 = q0.a();
-                                C5127h c5127h = a9.f2934x;
-                                if (!(c5127h != null ? c5127h.isEmpty() : true)) {
-                                    if (a9.f2932v >= 4294967296L) {
-                                        hVar.f3836y = obj4;
-                                        hVar.f2914v = 1;
+                                C5117h c5117h = a9.f3017x;
+                                if (!(c5117h != null ? c5117h.isEmpty() : true)) {
+                                    if (a9.f3015v >= 4294967296L) {
+                                        hVar.f3791y = obj4;
+                                        hVar.f2997v = 1;
                                         a9.B(hVar);
                                     } else {
                                         a9.D(true);
@@ -536,7 +536,7 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
                             }
                         }
                         obj = obj3;
-                        if (obj == A7.a.f58n) {
+                        if (obj == A7.a.f215n) {
                             obj4 = obj;
                         }
                         if (obj4 != obj3) {
@@ -544,28 +544,28 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
                         }
                     }
                     obj = obj4;
-                    if (obj == A7.a.f58n) {
+                    if (obj == A7.a.f215n) {
                     }
                     if (obj4 != obj3) {
                     }
                 }
-                if (i6 != 1) {
-                    if (i6 != 2) {
+                if (i4 != 1) {
+                    if (i4 != 2) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj2);
+                    Q3.b.s(obj2);
                     return obj2;
                 }
-                z3 = gVar.Z$0;
+                z6 = gVar.Z$0;
                 bVar = (b) gVar.L$0;
-                com.bumptech.glide.d.k(obj2);
+                Q3.b.s(obj2);
                 if (!bVar.notificationsEnabled()) {
                     return Boolean.TRUE;
                 }
                 if (bVar.supportsNativePrompt) {
-                    bVar._requestPermission.startPrompt(z3, PERMISSION_TYPE, ANDROID_PERMISSION_STRING, b.class);
+                    bVar._requestPermission.startPrompt(z6, PERMISSION_TYPE, ANDROID_PERMISSION_STRING, b.class);
                 } else {
-                    if (!z3) {
+                    if (!z6) {
                         return Boolean.FALSE;
                     }
                     bVar.showFallbackAlertDialog();
@@ -577,11 +577,11 @@ public final class b implements com.onesignal.core.internal.permissions.f, A5.b 
                 return waitForWake == obj3 ? obj3 : waitForWake;
             }
         }
-        gVar = new g(interfaceC5267d);
+        gVar = new g(interfaceC5240d);
         Object obj22 = gVar.result;
-        Object obj32 = A7.a.f58n;
-        i6 = gVar.label;
-        if (i6 != 0) {
+        Object obj32 = A7.a.f215n;
+        i4 = gVar.label;
+        if (i4 != 0) {
         }
         if (!bVar.notificationsEnabled()) {
         }

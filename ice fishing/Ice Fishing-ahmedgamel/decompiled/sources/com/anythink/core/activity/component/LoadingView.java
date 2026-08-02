@@ -17,7 +17,7 @@ public class LoadingView extends ImageView {
     }
 
     private void a() {
-        setImageDrawable(getResources().getDrawable(q.a(getContext(), "core_loading", k.f19632c)));
+        setImageDrawable(getResources().getDrawable(q.a(getContext(), "core_loading", k.f20419c)));
         try {
             setLayerType(2, null);
         } catch (Exception unused) {

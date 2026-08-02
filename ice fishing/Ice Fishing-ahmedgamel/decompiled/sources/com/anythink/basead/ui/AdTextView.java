@@ -14,9 +14,9 @@ public class AdTextView extends TextView {
     }
 
     private void a(Context context) {
-        setBackgroundResource(q.a(context, "myoffer_bg_banner_ad_choice", k.f19632c));
+        setBackgroundResource(q.a(context, "myoffer_bg_banner_ad_choice", k.f20419c));
         setTextColor(-1);
-        setText(context.getResources().getString(q.a(context, "basead_ad_text", k.f19636g)));
+        setText(context.getResources().getString(q.a(context, "basead_ad_text", k.f20423g)));
         setTextSize(8.0f);
         setGravity(17);
         setPadding(q.a(context, 3.0f), 0, q.a(context, 3.0f), 0);

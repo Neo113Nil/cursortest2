@@ -10,13 +10,13 @@ public final class LN {
     public final int A05;
     public final byte[] A06;
 
-    public LN(int i, int i6, int i9, int i10, int i11, int i12, byte[] bArr) {
+    public LN(int i, int i4, int i6, int i9, int i10, int i11, byte[] bArr) {
         this.A03 = i;
-        this.A05 = i6;
-        this.A04 = i9;
-        this.A00 = i10;
-        this.A02 = i11;
-        this.A01 = i12;
+        this.A05 = i4;
+        this.A04 = i6;
+        this.A00 = i9;
+        this.A02 = i10;
+        this.A01 = i11;
         this.A06 = bArr;
     }
 }

@@ -11,21 +11,21 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f8066a = 131072;
+    public static final int f8852a = 131072;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public volatile long f8067a;
+        public volatile long f8853a;
 
         /* renamed from: b, reason: collision with root package name */
-        public volatile long f8068b;
+        public volatile long f8854b;
 
         /* renamed from: c, reason: collision with root package name */
-        public volatile long f8069c = -1;
+        public volatile long f8855c = -1;
 
         private long a() {
-            return this.f8067a + this.f8068b;
+            return this.f8853a + this.f8854b;
         }
     }
 
@@ -37,26 +37,26 @@ public final class f {
     }
 
     public static String a(com.anythink.basead.exoplayer.j.k kVar) {
-        String str = kVar.f8142h;
-        return str != null ? str : kVar.f8137c.toString();
+        String str = kVar.f8928h;
+        return str != null ? str : kVar.f8923c.toString();
     }
 
     private static void a(com.anythink.basead.exoplayer.j.k kVar, com.anythink.basead.exoplayer.j.a.a aVar, a aVar2) {
         String a9 = a(kVar);
-        long j6 = kVar.f8139e;
-        long j9 = kVar.f8141g;
+        long j6 = kVar.f8925e;
+        long j9 = kVar.f8927g;
         com.anythink.basead.exoplayer.j.a.a aVar3 = aVar;
         if (j9 == -1) {
             j9 = aVar3.b(a9);
         }
-        aVar2.f8069c = j9;
-        aVar2.f8067a = 0L;
-        aVar2.f8068b = 0L;
+        aVar2.f8855c = j9;
+        aVar2.f8853a = 0L;
+        aVar2.f8854b = 0L;
         long j10 = j9;
         while (j10 != 0) {
             long b9 = aVar3.b(a9, j6, j10 != -1 ? j10 : Long.MAX_VALUE);
             if (b9 > 0) {
-                aVar2.f8067a += b9;
+                aVar2.f8853a += b9;
             } else {
                 b9 = -b9;
                 if (b9 == Long.MAX_VALUE) {
@@ -87,14 +87,14 @@ public final class f {
         com.anythink.basead.exoplayer.k.a.a(bArr2);
         if (aVar5 != null) {
             String a9 = a(kVar2);
-            long j10 = kVar2.f8139e;
-            long j11 = kVar2.f8141g;
+            long j10 = kVar2.f8925e;
+            long j11 = kVar2.f8927g;
             if (j11 == -1) {
                 j11 = aVar4.b(a9);
             }
-            aVar5.f8069c = j11;
-            aVar5.f8067a = 0L;
-            aVar5.f8068b = 0L;
+            aVar5.f8855c = j11;
+            aVar5.f8853a = 0L;
+            aVar5.f8854b = 0L;
             long j12 = j11;
             while (true) {
                 if (j12 == 0) {
@@ -109,7 +109,7 @@ public final class f {
                         break;
                     }
                 } else {
-                    aVar5.f8067a += b9;
+                    aVar5.f8853a += b9;
                 }
                 j10 += b9;
                 if (j12 == -1) {
@@ -122,8 +122,8 @@ public final class f {
             aVar5 = new a();
         }
         String a10 = a(kVar2);
-        long j13 = kVar2.f8139e;
-        long j14 = kVar2.f8141g;
+        long j13 = kVar2.f8925e;
+        long j14 = kVar2.f8927g;
         if (j14 == -1) {
             j14 = aVar4.b(a10);
         }
@@ -178,14 +178,14 @@ public final class f {
         com.anythink.basead.exoplayer.k.a.a(bArr);
         if (aVar2 != null) {
             String a9 = a(kVar2);
-            long j9 = kVar2.f8139e;
-            long j10 = kVar2.f8141g;
+            long j9 = kVar2.f8925e;
+            long j10 = kVar2.f8927g;
             if (j10 == -1) {
                 j10 = aVar4.b(a9);
             }
-            aVar2.f8069c = j10;
-            aVar2.f8067a = 0L;
-            aVar2.f8068b = 0L;
+            aVar2.f8855c = j10;
+            aVar2.f8853a = 0L;
+            aVar2.f8854b = 0L;
             long j11 = j10;
             while (true) {
                 if (j11 == 0) {
@@ -200,7 +200,7 @@ public final class f {
                         break;
                     }
                 } else {
-                    aVar2.f8067a += b9;
+                    aVar2.f8853a += b9;
                 }
                 j9 += b9;
                 if (j11 == -1) {
@@ -214,8 +214,8 @@ public final class f {
             aVar3 = new a();
         }
         String a10 = a(kVar2);
-        long j12 = kVar2.f8139e;
-        long j13 = kVar2.f8141g;
+        long j12 = kVar2.f8925e;
+        long j13 = kVar2.f8927g;
         if (j13 == -1) {
             j13 = aVar4.b(a10);
         }
@@ -256,11 +256,11 @@ public final class f {
             try {
                 try {
                     if (!Thread.interrupted()) {
-                        com.anythink.basead.exoplayer.j.k kVar3 = new com.anythink.basead.exoplayer.j.k(kVar2.f8137c, kVar2.f8138d, j6, (kVar2.f8140f + j6) - kVar2.f8139e, -1L, kVar2.f8142h, kVar2.i | 2);
+                        com.anythink.basead.exoplayer.j.k kVar3 = new com.anythink.basead.exoplayer.j.k(kVar2.f8923c, kVar2.f8924d, j6, (kVar2.f8926f + j6) - kVar2.f8925e, -1L, kVar2.f8928h, kVar2.i | 2);
                         try {
                             long a9 = hVar.a(kVar3);
-                            if (aVar.f8069c == -1 && a9 != -1) {
-                                aVar.f8069c = kVar3.f8139e + a9;
+                            if (aVar.f8855c == -1 && a9 != -1) {
+                                aVar.f8855c = kVar3.f8925e + a9;
                             }
                             long j10 = 0;
                             while (true) {
@@ -277,9 +277,9 @@ public final class f {
                                     if (a10 != -1) {
                                         long j11 = a10;
                                         j10 += j11;
-                                        aVar.f8068b += j11;
-                                    } else if (aVar.f8069c == -1) {
-                                        aVar.f8069c = kVar3.f8139e + j10;
+                                        aVar.f8854b += j11;
+                                    } else if (aVar.f8855c == -1) {
+                                        aVar.f8855c = kVar3.f8925e + j10;
                                     }
                                 } else {
                                     throw new InterruptedException();

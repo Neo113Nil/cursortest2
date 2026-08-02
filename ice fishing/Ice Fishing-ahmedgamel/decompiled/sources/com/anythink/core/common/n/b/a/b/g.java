@@ -8,17 +8,17 @@ import java.util.Set;
 final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    private final Set<ah> f15006a = new LinkedHashSet();
+    private final Set<ah> f15793a = new LinkedHashSet();
 
     public final synchronized void a(ah ahVar) {
-        this.f15006a.add(ahVar);
+        this.f15793a.add(ahVar);
     }
 
     public final synchronized void b(ah ahVar) {
-        this.f15006a.remove(ahVar);
+        this.f15793a.remove(ahVar);
     }
 
     public final synchronized boolean c(ah ahVar) {
-        return this.f15006a.contains(ahVar);
+        return this.f15793a.contains(ahVar);
     }
 }

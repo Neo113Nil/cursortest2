@@ -4,24 +4,24 @@ package com.anythink.expressad.foundation.d;
 public final class q {
 
     /* renamed from: a, reason: collision with root package name */
-    private int f18868a;
+    private int f19655a;
 
     /* renamed from: b, reason: collision with root package name */
-    private int f18869b;
+    private int f19656b;
 
     private int a() {
-        return this.f18868a;
+        return this.f19655a;
     }
 
     private int b() {
-        return this.f18869b;
+        return this.f19656b;
     }
 
     private void a(int i) {
-        this.f18868a = i;
+        this.f19655a = i;
     }
 
     private void b(int i) {
-        this.f18869b = i;
+        this.f19656b = i;
     }
 }

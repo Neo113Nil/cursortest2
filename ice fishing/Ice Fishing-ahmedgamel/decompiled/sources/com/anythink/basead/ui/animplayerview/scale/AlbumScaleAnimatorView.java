@@ -14,29 +14,29 @@ import java.util.List;
 public class AlbumScaleAnimatorView extends FrameLayout implements c {
 
     /* renamed from: a, reason: collision with root package name */
-    private List<Bitmap> f10544a;
+    private List<Bitmap> f11330a;
 
     /* renamed from: b, reason: collision with root package name */
-    private AlbumScaleMainView f10545b;
+    private AlbumScaleMainView f11331b;
 
     /* renamed from: c, reason: collision with root package name */
-    private BaseAlbumScaleItemView f10546c;
+    private BaseAlbumScaleItemView f11332c;
 
     /* renamed from: d, reason: collision with root package name */
-    private BaseAlbumScaleItemView f10547d;
+    private BaseAlbumScaleItemView f11333d;
 
     /* renamed from: e, reason: collision with root package name */
-    private BaseAlbumScaleItemView f10548e;
+    private BaseAlbumScaleItemView f11334e;
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f10549f;
+    private boolean f11335f;
 
     public AlbumScaleAnimatorView(Context context) {
         this(context, null);
     }
 
     public static /* synthetic */ boolean a(AlbumScaleAnimatorView albumScaleAnimatorView) {
-        albumScaleAnimatorView.f10549f = true;
+        albumScaleAnimatorView.f11335f = true;
         return true;
     }
 
@@ -46,48 +46,48 @@ public class AlbumScaleAnimatorView extends FrameLayout implements c {
             return;
         }
         AlbumScaleMainView albumScaleMainView = new AlbumScaleMainView(getContext());
-        this.f10545b = albumScaleMainView;
+        this.f11331b = albumScaleMainView;
         boolean c9 = q.c(getContext());
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(c9 ? a(90) : a(42), c9 ? a(42) : a(90));
         layoutParams.gravity = 17;
         albumScaleMainView.setLayoutParams(layoutParams);
-        addView(this.f10545b);
-        this.f10545b.initView(bitmap, true);
+        addView(this.f11331b);
+        this.f11331b.initView(bitmap, true);
         ViewGroup.LayoutParams layoutParams2 = new FrameLayout.LayoutParams(-1, -1);
         AlbumScaleItemView03 albumScaleItemView03 = new AlbumScaleItemView03(getContext());
-        albumScaleItemView03.setBitmapResources(this.f10544a);
+        albumScaleItemView03.setBitmapResources(this.f11330a);
         albumScaleItemView03.setOrientation(q.c(getContext()));
         addView(albumScaleItemView03, layoutParams2);
-        this.f10548e = albumScaleItemView03;
+        this.f11334e = albumScaleItemView03;
         ViewGroup.LayoutParams layoutParams3 = new FrameLayout.LayoutParams(-1, -1);
         AlbumScaleItemView02 albumScaleItemView02 = new AlbumScaleItemView02(getContext());
         albumScaleItemView02.setOrientation(q.c(getContext()));
-        albumScaleItemView02.setBitmapResources(this.f10544a);
+        albumScaleItemView02.setBitmapResources(this.f11330a);
         addView(albumScaleItemView02, layoutParams3);
-        this.f10547d = albumScaleItemView02;
+        this.f11333d = albumScaleItemView02;
         ViewGroup.LayoutParams layoutParams4 = new FrameLayout.LayoutParams(-1, -1);
         AlbumScaleItemView01 albumScaleItemView01 = new AlbumScaleItemView01(getContext());
-        albumScaleItemView01.setBitmapResources(this.f10544a);
+        albumScaleItemView01.setBitmapResources(this.f11330a);
         albumScaleItemView01.setOrientation(q.c(getContext()));
         addView(albumScaleItemView01, layoutParams4);
-        this.f10546c = albumScaleItemView01;
+        this.f11332c = albumScaleItemView01;
     }
 
     @Override // com.anythink.basead.ui.animplayerview.b
     public void pause() {
-        AlbumScaleMainView albumScaleMainView = this.f10545b;
+        AlbumScaleMainView albumScaleMainView = this.f11331b;
         if (albumScaleMainView != null) {
             albumScaleMainView.pause();
         }
-        BaseAlbumScaleItemView baseAlbumScaleItemView = this.f10546c;
+        BaseAlbumScaleItemView baseAlbumScaleItemView = this.f11332c;
         if (baseAlbumScaleItemView != null) {
             baseAlbumScaleItemView.pause();
         }
-        BaseAlbumScaleItemView baseAlbumScaleItemView2 = this.f10547d;
+        BaseAlbumScaleItemView baseAlbumScaleItemView2 = this.f11333d;
         if (baseAlbumScaleItemView2 != null) {
             baseAlbumScaleItemView2.pause();
         }
-        BaseAlbumScaleItemView baseAlbumScaleItemView3 = this.f10548e;
+        BaseAlbumScaleItemView baseAlbumScaleItemView3 = this.f11334e;
         if (baseAlbumScaleItemView3 != null) {
             baseAlbumScaleItemView3.pause();
         }
@@ -95,28 +95,28 @@ public class AlbumScaleAnimatorView extends FrameLayout implements c {
 
     @Override // com.anythink.basead.ui.animplayerview.c
     public void release() {
-        List<Bitmap> list = this.f10544a;
+        List<Bitmap> list = this.f11330a;
         if (list != null) {
             for (Bitmap bitmap : list) {
                 if (!bitmap.isRecycled()) {
                     bitmap.recycle();
                 }
             }
-            this.f10544a.clear();
+            this.f11330a.clear();
         }
-        AlbumScaleMainView albumScaleMainView = this.f10545b;
+        AlbumScaleMainView albumScaleMainView = this.f11331b;
         if (albumScaleMainView != null) {
             albumScaleMainView.release();
         }
-        BaseAlbumScaleItemView baseAlbumScaleItemView = this.f10546c;
+        BaseAlbumScaleItemView baseAlbumScaleItemView = this.f11332c;
         if (baseAlbumScaleItemView != null) {
             baseAlbumScaleItemView.release();
         }
-        BaseAlbumScaleItemView baseAlbumScaleItemView2 = this.f10547d;
+        BaseAlbumScaleItemView baseAlbumScaleItemView2 = this.f11333d;
         if (baseAlbumScaleItemView2 != null) {
             baseAlbumScaleItemView2.release();
         }
-        BaseAlbumScaleItemView baseAlbumScaleItemView3 = this.f10548e;
+        BaseAlbumScaleItemView baseAlbumScaleItemView3 = this.f11334e;
         if (baseAlbumScaleItemView3 != null) {
             baseAlbumScaleItemView3.release();
         }
@@ -125,19 +125,19 @@ public class AlbumScaleAnimatorView extends FrameLayout implements c {
 
     @Override // com.anythink.basead.ui.animplayerview.b
     public void resume() {
-        AlbumScaleMainView albumScaleMainView = this.f10545b;
+        AlbumScaleMainView albumScaleMainView = this.f11331b;
         if (albumScaleMainView != null) {
             albumScaleMainView.resume();
         }
-        BaseAlbumScaleItemView baseAlbumScaleItemView = this.f10546c;
+        BaseAlbumScaleItemView baseAlbumScaleItemView = this.f11332c;
         if (baseAlbumScaleItemView != null) {
             baseAlbumScaleItemView.resume();
         }
-        BaseAlbumScaleItemView baseAlbumScaleItemView2 = this.f10547d;
+        BaseAlbumScaleItemView baseAlbumScaleItemView2 = this.f11333d;
         if (baseAlbumScaleItemView2 != null) {
             baseAlbumScaleItemView2.resume();
         }
-        BaseAlbumScaleItemView baseAlbumScaleItemView3 = this.f10548e;
+        BaseAlbumScaleItemView baseAlbumScaleItemView3 = this.f11334e;
         if (baseAlbumScaleItemView3 != null) {
             baseAlbumScaleItemView3.resume();
         }
@@ -145,29 +145,29 @@ public class AlbumScaleAnimatorView extends FrameLayout implements c {
 
     @Override // com.anythink.basead.ui.animplayerview.b
     public void setBitmapResources(List<Bitmap> list) {
-        this.f10544a = list;
+        this.f11330a = list;
     }
 
     @Override // com.anythink.basead.ui.animplayerview.b
     public void start() {
-        if (this.f10545b == null || this.f10546c == null || this.f10547d == null || this.f10548e == null) {
+        if (this.f11331b == null || this.f11332c == null || this.f11333d == null || this.f11334e == null) {
             return;
         }
-        if (this.f10549f) {
+        if (this.f11335f) {
             resume();
         } else {
             post(new Runnable() { // from class: com.anythink.basead.ui.animplayerview.scale.AlbumScaleAnimatorView.1
                 @Override // java.lang.Runnable
                 public final void run() {
                     AlbumScaleAnimatorView.a(AlbumScaleAnimatorView.this);
-                    AlbumScaleAnimatorView.this.f10546c.start();
-                    AlbumScaleAnimatorView.this.f10547d.setStartDelay(200L);
-                    AlbumScaleAnimatorView.this.f10547d.start();
-                    AlbumScaleAnimatorView.this.f10545b.setStartDelay(300L);
-                    AlbumScaleAnimatorView.this.f10545b.start();
-                    AlbumScaleAnimatorView.this.f10548e.setMainViewScale(AlbumScaleAnimatorView.this.f10545b.getMainViewScale());
-                    AlbumScaleAnimatorView.this.f10548e.setStartDelay(300L);
-                    AlbumScaleAnimatorView.this.f10548e.start();
+                    AlbumScaleAnimatorView.this.f11332c.start();
+                    AlbumScaleAnimatorView.this.f11333d.setStartDelay(200L);
+                    AlbumScaleAnimatorView.this.f11333d.start();
+                    AlbumScaleAnimatorView.this.f11331b.setStartDelay(300L);
+                    AlbumScaleAnimatorView.this.f11331b.start();
+                    AlbumScaleAnimatorView.this.f11334e.setMainViewScale(AlbumScaleAnimatorView.this.f11331b.getMainViewScale());
+                    AlbumScaleAnimatorView.this.f11334e.setStartDelay(300L);
+                    AlbumScaleAnimatorView.this.f11334e.start();
                 }
             });
         }
@@ -175,23 +175,23 @@ public class AlbumScaleAnimatorView extends FrameLayout implements c {
 
     @Override // com.anythink.basead.ui.animplayerview.b
     public void stop() {
-        AlbumScaleMainView albumScaleMainView = this.f10545b;
+        AlbumScaleMainView albumScaleMainView = this.f11331b;
         if (albumScaleMainView != null) {
             albumScaleMainView.stop();
         }
-        BaseAlbumScaleItemView baseAlbumScaleItemView = this.f10546c;
+        BaseAlbumScaleItemView baseAlbumScaleItemView = this.f11332c;
         if (baseAlbumScaleItemView != null) {
             baseAlbumScaleItemView.stop();
         }
-        BaseAlbumScaleItemView baseAlbumScaleItemView2 = this.f10547d;
+        BaseAlbumScaleItemView baseAlbumScaleItemView2 = this.f11333d;
         if (baseAlbumScaleItemView2 != null) {
             baseAlbumScaleItemView2.stop();
         }
-        BaseAlbumScaleItemView baseAlbumScaleItemView3 = this.f10548e;
+        BaseAlbumScaleItemView baseAlbumScaleItemView3 = this.f11334e;
         if (baseAlbumScaleItemView3 != null) {
             baseAlbumScaleItemView3.stop();
         }
-        this.f10549f = false;
+        this.f11335f = false;
     }
 
     public AlbumScaleAnimatorView(Context context, AttributeSet attributeSet) {
@@ -205,48 +205,48 @@ public class AlbumScaleAnimatorView extends FrameLayout implements c {
     private void b() {
         ViewGroup.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -1);
         AlbumScaleItemView01 albumScaleItemView01 = new AlbumScaleItemView01(getContext());
-        albumScaleItemView01.setBitmapResources(this.f10544a);
+        albumScaleItemView01.setBitmapResources(this.f11330a);
         albumScaleItemView01.setOrientation(q.c(getContext()));
         addView(albumScaleItemView01, layoutParams);
-        this.f10546c = albumScaleItemView01;
+        this.f11332c = albumScaleItemView01;
     }
 
     private void c() {
         ViewGroup.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -1);
         AlbumScaleItemView02 albumScaleItemView02 = new AlbumScaleItemView02(getContext());
         albumScaleItemView02.setOrientation(q.c(getContext()));
-        albumScaleItemView02.setBitmapResources(this.f10544a);
+        albumScaleItemView02.setBitmapResources(this.f11330a);
         addView(albumScaleItemView02, layoutParams);
-        this.f10547d = albumScaleItemView02;
+        this.f11333d = albumScaleItemView02;
     }
 
     private void d() {
         ViewGroup.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -1);
         AlbumScaleItemView03 albumScaleItemView03 = new AlbumScaleItemView03(getContext());
-        albumScaleItemView03.setBitmapResources(this.f10544a);
+        albumScaleItemView03.setBitmapResources(this.f11330a);
         albumScaleItemView03.setOrientation(q.c(getContext()));
         addView(albumScaleItemView03, layoutParams);
-        this.f10548e = albumScaleItemView03;
+        this.f11334e = albumScaleItemView03;
     }
 
     public AlbumScaleAnimatorView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f10549f = false;
+        this.f11335f = false;
     }
 
     private void a(Bitmap bitmap) {
         AlbumScaleMainView albumScaleMainView = new AlbumScaleMainView(getContext());
-        this.f10545b = albumScaleMainView;
+        this.f11331b = albumScaleMainView;
         boolean c9 = q.c(getContext());
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(c9 ? a(90) : a(42), c9 ? a(42) : a(90));
         layoutParams.gravity = 17;
         albumScaleMainView.setLayoutParams(layoutParams);
-        addView(this.f10545b);
-        this.f10545b.initView(bitmap, true);
+        addView(this.f11331b);
+        this.f11331b.initView(bitmap, true);
     }
 
-    private ViewGroup.LayoutParams a(boolean z3) {
-        FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(z3 ? a(90) : a(42), z3 ? a(42) : a(90));
+    private ViewGroup.LayoutParams a(boolean z6) {
+        FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(z6 ? a(90) : a(42), z6 ? a(42) : a(90));
         layoutParams.gravity = 17;
         return layoutParams;
     }

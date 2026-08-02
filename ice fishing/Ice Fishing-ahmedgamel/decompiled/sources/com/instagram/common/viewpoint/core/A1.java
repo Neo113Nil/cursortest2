@@ -6,20 +6,20 @@ import java.util.concurrent.CopyOnWriteArrayList;
 /* loaded from: assets/audience_network/classes2.dex */
 public class A1 {
     public final int A00;
-    public final C2248no A01;
+    public final C2268no A01;
     public final CopyOnWriteArrayList<DrmSessionEventListener.EventDispatcher.ListenerAndHandler> A02;
 
     public A1() {
         this(new CopyOnWriteArrayList(), 0, null);
     }
 
-    public A1(CopyOnWriteArrayList<DrmSessionEventListener.EventDispatcher.ListenerAndHandler> listenerAndHandlers, int i, C2248no c2248no) {
+    public A1(CopyOnWriteArrayList<DrmSessionEventListener.EventDispatcher.ListenerAndHandler> listenerAndHandlers, int i, C2268no c2268no) {
         this.A02 = listenerAndHandlers;
         this.A00 = i;
-        this.A01 = c2248no;
+        this.A01 = c2268no;
     }
 
-    public final A1 A00(int i, C2248no c2248no) {
-        return new A1(this.A02, i, c2248no);
+    public final A1 A00(int i, C2268no c2268no) {
+        return new A1(this.A02, i, c2268no);
     }
 }

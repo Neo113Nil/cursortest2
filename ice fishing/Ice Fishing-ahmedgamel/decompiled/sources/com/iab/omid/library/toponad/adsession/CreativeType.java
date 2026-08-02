@@ -7,8 +7,8 @@ public enum CreativeType {
     DEFINED_BY_JAVASCRIPT("definedByJavaScript"),
     HTML_DISPLAY("htmlDisplay"),
     NATIVE_DISPLAY("nativeDisplay"),
-    VIDEO(o.f8444a),
-    AUDIO(o.f8445b);
+    VIDEO(o.f9230a),
+    AUDIO(o.f9231b);
 
     private final String creativeType;
 

@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Locale;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class Y3<T> implements InterfaceC1277Uc<T> {
+public final class Y3<T> implements InterfaceC1297Uc<T> {
     public static byte[] A06;
     public static String[] A07 = {"EKA8QeB4steRJ5RPBpFUjw3mjvi5", "fve4ITv79qbm2xvzEK1yqXI", "ABPapESs8CyLRtVNwfFPA7A05iROvZsV", "0Lyphf8QRYP2FOEDF4CKVyWqrMlG", "sjHSRvprFPL1Hzs2shXil", "0UuY0i89chpuUt8804PTKlfzEuvvqf4a", "FkeetCIpWmPLoPieiedf1X3IWnyHYH7Q", "bw9eqk6z"};
     public UU A00;
@@ -18,18 +18,18 @@ public final class Y3<T> implements InterfaceC1277Uc<T> {
     public List<Y3<T>.RecordFileBasedFetch> A02 = new ArrayList();
     public boolean A03;
     public final UT A04;
-    public final C1284Uj A05;
+    public final C1304Uj A05;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A06, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 25);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A06, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 25);
         }
         return new String(copyOfRange);
     }
 
     public static void A01() {
-        byte[] bArr = {68, 102, 105, 39, 104, 105, 107, 126, 39, 99, 98, 107, 98, 115, 98, 39, 100, 114, 117, 116, 104, 117, 116, 39, 119, 104, 110, 105, 115, 110, 105, 96, 39, 102, 115, 39, 115, 111, 98, 39, 99, 102, 115, 102, 101, 102, 116, 98, 39, 116, 115, 102, 117, 115, 87, 97, 102, 103, 123, 102, 52, 100, 123, 103, 125, 96, 125, 123, 122, 52, 125, 103, 52, 117, 96, 52, 60, 49, 112, 56, 49, 112, 61, 56, 52, 117, 122, 112, 52, 102, 113, 119, 123, 102, 112, 52, 114, 125, 120, 113, 52, 103, 113, 101, 97, 113, 122, 119, 113, 52, 103, 96, 117, 102, 96, 103, 52, 117, 96, 52, 60, 49, 112, 56, 49, 112, 61, 46, 52, 112, 117, 96, 117, 52, 124, 117, 103, 52, 100, 102, 123, 118, 117, 118, 120, 109, 52, 118, 113, 113, 122, 52, 120, 123, 103, 96, 28, 42, 45, 44, 48, 45, Byte.MAX_VALUE, 47, 48, 44, 54, 43, 54, 48, 49, Byte.MAX_VALUE, 54, 44, Byte.MAX_VALUE, 62, 43, Byte.MAX_VALUE, 119, 122, 59, 115, 122, 59, 118, 115, Byte.MAX_VALUE, 61, 42, 43, Byte.MAX_VALUE, 45, 58, 60, 48, 45, 59, Byte.MAX_VALUE, 57, 54, 51, 58, Byte.MAX_VALUE, 44, 58, 46, 42, 58, 49, 60, 58, Byte.MAX_VALUE, 48, 49, 51, 38, Byte.MAX_VALUE, 55, 62, 44, Byte.MAX_VALUE, 57, 54, 51, 58, Byte.MAX_VALUE, 122, 59, 101, Byte.MAX_VALUE, 59, 62, 43, 62, Byte.MAX_VALUE, 55, 62, 44, Byte.MAX_VALUE, 47, 45, 48, 61, 62, 61, 51, 38, Byte.MAX_VALUE, 61, 58, 58, 49, Byte.MAX_VALUE, 51, 48, 44, 43, 97, 70, 78, 75, 66, 67, 7, 83, 72, 7, 70, 67, 67, 7, 67, 70, 83, 70, 7, 83, 72, 7, 75, 72, c.f16317b, 8, 47, 39, 34, 43, 42, 110, 58, 33, 110, 45, 34, 43, 47, 60, 110, 42, 47, 58, 47, 44, 47, 61, 43, 11, 44, 36, 33, 40, 41, 109, 57, 34, 109, 43, 40, 57, 46, 37, 109, 41, 44, 57, 44, 109, 43, c.f16318c, 34, 32, 109, 33, 34, 42, 102, 65, 73, 76, 69, 68, 0, 84, 79, 0, 71, 69, 84, 0, 82, 69, 67, 79, 82, 68, 0, 67, 79, 85, 78, 84, 73, 110, 102, 99, 106, 107, 47, 123, 96, 47, 122, Byte.MAX_VALUE, 107, 110, 123, 106, 47, 105, 102, 99, 106, 47, 124, 106, 126, 122, 106, 97, 108, 106, 48, 7, 1, 13, 16, 6, 36, 11, 14, 7, 32, 3, 17, 7, 6, 48, 7, 1, 13, 16, 6, 38, 3, 22, 3, 0, 3, 17, 7, 66, 1, 14, 13, 17, 7, 6, 119, c.f16317b, 70, 74, 87, 65, 99, 76, 73, c.f16317b, 103, 68, 86, c.f16317b, 65, 119, c.f16317b, 70, 74, 87, 65, 97, 68, 81, 68, 71, 68, 86, c.f16317b, 5, 76, 86, 5, 70, 73, 74, 86, c.f16317b, 65, 119, 76, 73, 76, 77, 85, 76, 2, 112, 71, 65, 77, 80, 70, 100, 75, 78, 71, 96, 67, 81, 71, 70, 112, 71, 65, 77, 80, 70, 102, 67, 86, 67, c.f16317b, 67, 81, 71, 2, 68, 71, 86, 65, 74, 70, 80, 87, 86, 74, 87, 26, 31, 10, 31};
+        byte[] bArr = {68, 102, 105, 39, 104, 105, 107, 126, 39, 99, 98, 107, 98, 115, 98, 39, 100, 114, 117, 116, 104, 117, 116, 39, 119, 104, 110, 105, 115, 110, 105, 96, 39, 102, 115, 39, 115, 111, 98, 39, 99, 102, 115, 102, 101, 102, 116, 98, 39, 116, 115, 102, 117, 115, 87, 97, 102, 103, 123, 102, 52, 100, 123, 103, 125, 96, 125, 123, 122, 52, 125, 103, 52, 117, 96, 52, 60, 49, 112, 56, 49, 112, 61, 56, 52, 117, 122, 112, 52, 102, 113, 119, 123, 102, 112, 52, 114, 125, 120, 113, 52, 103, 113, 101, 97, 113, 122, 119, 113, 52, 103, 96, 117, 102, 96, 103, 52, 117, 96, 52, 60, 49, 112, 56, 49, 112, 61, 46, 52, 112, 117, 96, 117, 52, 124, 117, 103, 52, 100, 102, 123, 118, 117, 118, 120, 109, 52, 118, 113, 113, 122, 52, 120, 123, 103, 96, 28, 42, 45, 44, 48, 45, Byte.MAX_VALUE, 47, 48, 44, 54, 43, 54, 48, 49, Byte.MAX_VALUE, 54, 44, Byte.MAX_VALUE, 62, 43, Byte.MAX_VALUE, 119, 122, 59, 115, 122, 59, 118, 115, Byte.MAX_VALUE, 61, 42, 43, Byte.MAX_VALUE, 45, 58, 60, 48, 45, 59, Byte.MAX_VALUE, 57, 54, 51, 58, Byte.MAX_VALUE, 44, 58, 46, 42, 58, 49, 60, 58, Byte.MAX_VALUE, 48, 49, 51, 38, Byte.MAX_VALUE, 55, 62, 44, Byte.MAX_VALUE, 57, 54, 51, 58, Byte.MAX_VALUE, 122, 59, 101, Byte.MAX_VALUE, 59, 62, 43, 62, Byte.MAX_VALUE, 55, 62, 44, Byte.MAX_VALUE, 47, 45, 48, 61, 62, 61, 51, 38, Byte.MAX_VALUE, 61, 58, 58, 49, Byte.MAX_VALUE, 51, 48, 44, 43, 97, 70, 78, 75, 66, 67, 7, 83, 72, 7, 70, 67, 67, 7, 67, 70, 83, 70, 7, 83, 72, 7, 75, 72, c.f17104b, 8, 47, 39, 34, 43, 42, 110, 58, 33, 110, 45, 34, 43, 47, 60, 110, 42, 47, 58, 47, 44, 47, 61, 43, 11, 44, 36, 33, 40, 41, 109, 57, 34, 109, 43, 40, 57, 46, 37, 109, 41, 44, 57, 44, 109, 43, c.f17105c, 34, 32, 109, 33, 34, 42, 102, 65, 73, 76, 69, 68, 0, 84, 79, 0, 71, 69, 84, 0, 82, 69, 67, 79, 82, 68, 0, 67, 79, 85, 78, 84, 73, 110, 102, 99, 106, 107, 47, 123, 96, 47, 122, Byte.MAX_VALUE, 107, 110, 123, 106, 47, 105, 102, 99, 106, 47, 124, 106, 126, 122, 106, 97, 108, 106, 48, 7, 1, 13, 16, 6, 36, 11, 14, 7, 32, 3, 17, 7, 6, 48, 7, 1, 13, 16, 6, 38, 3, 22, 3, 0, 3, 17, 7, 66, 1, 14, 13, 17, 7, 6, 119, c.f17104b, 70, 74, 87, 65, 99, 76, 73, c.f17104b, 103, 68, 86, c.f17104b, 65, 119, c.f17104b, 70, 74, 87, 65, 97, 68, 81, 68, 71, 68, 86, c.f17104b, 5, 76, 86, 5, 70, 73, 74, 86, c.f17104b, 65, 119, 76, 73, 76, 77, 85, 76, 2, 112, 71, 65, 77, 80, 70, 100, 75, 78, 71, 96, 67, 81, 71, 70, 112, 71, 65, 77, 80, 70, 102, 67, 86, 67, c.f17104b, 67, 81, 71, 2, 68, 71, 86, 65, 74, 70, 80, 87, 86, 74, 87, 26, 31, 10, 31};
         if (A07[6].charAt(28) == 'd') {
             throw new RuntimeException();
         }
@@ -64,17 +64,17 @@ public final class Y3<T> implements InterfaceC1277Uc<T> {
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.Y3 != com.facebook.ads.internal.eventstorage.record.RecordFileBasedRecordDatabase<T> */
-    public Y3(UZ uz, InterfaceC1282Uh interfaceC1282Uh) throws IOException {
-        this.A05 = new C1284Uj(uz.A04(A00(515, 4, 103)), interfaceC1282Uh);
+    public Y3(UZ uz, InterfaceC1302Uh interfaceC1302Uh) throws IOException {
+        this.A05 = new C1304Uj(uz.A04(A00(515, 4, 103)), interfaceC1302Uh);
         this.A04 = new UT(new File(uz.A05(), A00(509, 6, 60)));
         this.A00 = this.A04.A03();
-        A05(interfaceC1282Uh);
+        A05(interfaceC1302Uh);
         this.A01 = this.A00;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.Y3 != com.facebook.ads.internal.eventstorage.record.RecordFileBasedRecordDatabase<T> */
-    private void A02(int i, int i6) throws IOException {
-        this.A00 = new UU(i, i6);
+    private void A02(int i, int i4) throws IOException {
+        this.A00 = new UU(i, i4);
         this.A04.A04(this.A00);
     }
 
@@ -82,7 +82,7 @@ public final class Y3<T> implements InterfaceC1277Uc<T> {
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.Y3 != com.facebook.ads.internal.eventstorage.record.RecordFileBasedRecordDatabase<T> */
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.Y8 != com.facebook.ads.internal.eventstorage.record.RecordFileBasedRecordDatabase<T>$RecordFileBasedFetch */
     /* JADX WARN: Incorrect inner types in method signature: (Lcom/facebook/ads/redexgen/X/Y3<TT;>.RecordFileBasedFetch;)V */
-    public synchronized void A03(Y8 y82) throws C1286Ul {
+    public synchronized void A03(Y8 y82) throws C1306Ul {
         if (!this.A03) {
             if (A06(y82)) {
                 if (y82.A6X() == 0) {
@@ -90,7 +90,7 @@ public final class Y3<T> implements InterfaceC1277Uc<T> {
                 }
                 if (this.A00.A04(y82.A00().A02) == 0) {
                     try {
-                        Iterator<C1281Ug> it = y82.A00.iterator();
+                        Iterator<C1301Ug> it = y82.A00.iterator();
                         while (it.hasNext()) {
                             if (it.next().A00 == this.A05.A07() && this.A05.A0D()) {
                                 A02(this.A05.A06(), 0);
@@ -104,14 +104,14 @@ public final class Y3<T> implements InterfaceC1277Uc<T> {
                         }
                         return;
                     } catch (IOException e9) {
-                        throw new C1286Ul(A00(361, 30, 22), e9);
+                        throw new C1306Ul(A00(361, 30, 22), e9);
                     }
                 }
-                throw new C1286Ul(A00(0, 54, 30));
+                throw new C1306Ul(A00(0, 54, 30));
             }
-            throw new C1286Ul(A00(466, 43, 59));
+            throw new C1306Ul(A00(466, 43, 59));
         }
-        throw new C1286Ul(A00(427, 39, 60));
+        throw new C1306Ul(A00(427, 39, 60));
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.Y3 != com.facebook.ads.internal.eventstorage.record.RecordFileBasedRecordDatabase<T> */
@@ -119,7 +119,7 @@ public final class Y3<T> implements InterfaceC1277Uc<T> {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private void A05(InterfaceC1282Uh interfaceC1282Uh) throws IOException {
+    private void A05(InterfaceC1302Uh interfaceC1302Uh) throws IOException {
         UU uu = new UU(this.A05.A06(), 0);
         UU recordSequenceStart = this.A00;
         if (uu.A04(recordSequenceStart) > 0) {
@@ -127,7 +127,7 @@ public final class Y3<T> implements InterfaceC1277Uc<T> {
             UU recordSequenceStart2 = this.A00;
             Integer valueOf = Integer.valueOf(recordSequenceStart2.A02());
             UU recordSequenceStart3 = this.A00;
-            interfaceC1282Uh.AIc(String.format(locale, A00(54, 102, 13), valueOf, Integer.valueOf(recordSequenceStart3.A03()), Integer.valueOf(uu.A02()), Integer.valueOf(uu.A03())));
+            interfaceC1302Uh.AIc(String.format(locale, A00(54, 102, 13), valueOf, Integer.valueOf(recordSequenceStart3.A03()), Integer.valueOf(uu.A02()), Integer.valueOf(uu.A03())));
             this.A00 = uu;
             return;
         }
@@ -139,7 +139,7 @@ public final class Y3<T> implements InterfaceC1277Uc<T> {
                 UU recordSequenceStart4 = this.A00;
                 Integer valueOf2 = Integer.valueOf(recordSequenceStart4.A02());
                 UU recordSequenceStart5 = this.A00;
-                interfaceC1282Uh.AIc(String.format(locale2, A00(156, 101, 70), valueOf2, Integer.valueOf(recordSequenceStart5.A03()), Integer.valueOf(uu.A02())));
+                interfaceC1302Uh.AIc(String.format(locale2, A00(156, 101, 70), valueOf2, Integer.valueOf(recordSequenceStart5.A03()), Integer.valueOf(uu.A02())));
                 UU recordSequenceStart6 = new UU(this.A05.A06(), this.A05.A07());
                 this.A00 = recordSequenceStart6;
                 UT ut = this.A04;
@@ -151,23 +151,23 @@ public final class Y3<T> implements InterfaceC1277Uc<T> {
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.Y3 != com.facebook.ads.internal.eventstorage.record.RecordFileBasedRecordDatabase<T> */
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.Y8 != com.facebook.ads.internal.eventstorage.record.RecordFileBasedRecordDatabase<T>$RecordFileBasedFetch */
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1277Uc
-    public final synchronized InterfaceC1276Ub A6W(byte[] bArr, int[] iArr) throws C1286Ul {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1297Uc
+    public final synchronized InterfaceC1296Ub A6W(byte[] bArr, int[] iArr) throws C1306Ul {
         Y3<T>.RecordFileBasedFetch y82;
         if (!this.A03) {
             int i = 0;
-            int i6 = 0;
+            int i4 = 0;
             try {
                 ArrayList arrayList = new ArrayList();
                 boolean mayHaveMoreData = true;
                 while (true) {
-                    UX A0A = this.A05.A0A(this.A01.A02(), this.A01.A03(), bArr, i, iArr, i6);
+                    UX A0A = this.A05.A0A(this.A01.A02(), this.A01.A03(), bArr, i, iArr, i4);
                     int A00 = A0A.A01().A00();
                     int storageOffset = A0A.A01().A01();
-                    int i9 = A00 - storageOffset;
+                    int i6 = A00 - storageOffset;
                     int storageOffset2 = A0A.A01().A02();
                     i += storageOffset2;
-                    i6 += i9;
+                    i4 += i6;
                     if (A0A.A01().A03() == UV.A03) {
                         arrayList.add(A0A);
                     }
@@ -186,7 +186,7 @@ public final class Y3<T> implements InterfaceC1277Uc<T> {
                         int storageOffset5 = this.A01.A02();
                         this.A01 = new UU(storageOffset5 + 1, 0);
                     } else {
-                        this.A01 = this.A01.A05(i9);
+                        this.A01 = this.A01.A05(i6);
                     }
                 }
                 y82 = new Y8(this, arrayList, mayHaveMoreData);
@@ -197,17 +197,17 @@ public final class Y3<T> implements InterfaceC1277Uc<T> {
                     this.A01 = uu.A05(storageOffset6);
                 }
             } catch (IOException e9) {
-                throw new C1286Ul(A00(306, 29, 84), e9);
+                throw new C1306Ul(A00(306, 29, 84), e9);
             }
         } else {
-            throw new C1286Ul(A00(391, 36, 123));
+            throw new C1306Ul(A00(391, 36, 123));
         }
         return y82;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.Y3 != com.facebook.ads.internal.eventstorage.record.RecordFileBasedRecordDatabase<T> */
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1277Uc
-    public final synchronized int A8s() throws C1286Ul {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1297Uc
+    public final synchronized int A8s() throws C1306Ul {
         int A09;
         if (!this.A03) {
             try {
@@ -219,37 +219,37 @@ public final class Y3<T> implements InterfaceC1277Uc<T> {
                     A09 -= count2;
                 }
             } catch (IOException e9) {
-                throw new C1286Ul(A00(335, 26, 57), e9);
+                throw new C1306Ul(A00(335, 26, 57), e9);
             }
         } else {
-            throw new C1286Ul(A00(427, 39, 60));
+            throw new C1306Ul(A00(427, 39, 60));
         }
         return A09;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.Y3 != com.facebook.ads.internal.eventstorage.record.RecordFileBasedRecordDatabase<T> */
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1277Uc
-    public final synchronized void AKH(byte[] bArr) throws C1286Ul {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1297Uc
+    public final synchronized void AKH(byte[] bArr) throws C1306Ul {
         if (!this.A03) {
             try {
                 this.A05.A0C(bArr);
             } catch (IOException e9) {
-                throw new C1286Ul(A00(257, 25, 62), e9);
+                throw new C1306Ul(A00(257, 25, 62), e9);
             }
         } else {
-            throw new C1286Ul(A00(427, 39, 60));
+            throw new C1306Ul(A00(427, 39, 60));
         }
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.Y3 != com.facebook.ads.internal.eventstorage.record.RecordFileBasedRecordDatabase<T> */
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1277Uc
-    public final synchronized void clear() throws C1286Ul {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1297Uc
+    public final synchronized void clear() throws C1306Ul {
         try {
             this.A05.A0B();
             A02(this.A05.A06(), 0);
             this.A02.clear();
         } catch (IOException e9) {
-            throw new C1286Ul(A00(282, 24, 87), e9);
+            throw new C1306Ul(A00(282, 24, 87), e9);
         }
     }
 

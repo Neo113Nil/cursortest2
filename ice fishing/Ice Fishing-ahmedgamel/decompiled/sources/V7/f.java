@@ -2,28 +2,28 @@ package V7;
 
 import W7.w;
 import u7.v;
-import z7.InterfaceC5267d;
-import z7.InterfaceC5272i;
+import z7.InterfaceC5240d;
+import z7.InterfaceC5245i;
 
 /* loaded from: classes2.dex */
 public final class f implements c {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f3333n = 1;
+    public final /* synthetic */ int f3463n = 1;
 
     /* renamed from: u, reason: collision with root package name */
-    public final Object f3334u;
+    public final Object f3464u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final Object f3335v;
+    public final Object f3465v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final B7.h f3336w;
+    public final B7.h f3466w;
 
     public f(kotlin.jvm.internal.p pVar, c cVar, X.o oVar) {
-        this.f3334u = pVar;
-        this.f3335v = cVar;
-        this.f3336w = oVar;
+        this.f3464u = pVar;
+        this.f3465v = cVar;
+        this.f3466w = oVar;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:16:0x0040  */
@@ -33,34 +33,34 @@ public final class f implements c {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object a(Object obj, InterfaceC5267d interfaceC5267d) {
+    public final Object a(Object obj, InterfaceC5240d interfaceC5240d) {
         e eVar;
         int i;
         f fVar;
-        switch (this.f3333n) {
+        switch (this.f3463n) {
             case 0:
-                if (interfaceC5267d instanceof e) {
-                    eVar = (e) interfaceC5267d;
-                    int i6 = eVar.f3332x;
-                    if ((i6 & Integer.MIN_VALUE) != 0) {
-                        eVar.f3332x = i6 - Integer.MIN_VALUE;
-                        Object obj2 = eVar.f3330v;
-                        A7.a aVar = A7.a.f58n;
-                        i = eVar.f3332x;
-                        v vVar = v.f41353a;
+                if (interfaceC5240d instanceof e) {
+                    eVar = (e) interfaceC5240d;
+                    int i4 = eVar.f3462x;
+                    if ((i4 & Integer.MIN_VALUE) != 0) {
+                        eVar.f3462x = i4 - Integer.MIN_VALUE;
+                        Object obj2 = eVar.f3460v;
+                        A7.a aVar = A7.a.f215n;
+                        i = eVar.f3462x;
+                        v vVar = v.f41073a;
                         if (i != 0) {
-                            com.bumptech.glide.d.k(obj2);
-                            if (((kotlin.jvm.internal.p) this.f3334u).f38715n) {
-                                eVar.f3332x = 1;
-                                if (((c) this.f3335v).a(obj, eVar) == aVar) {
+                            Q3.b.s(obj2);
+                            if (((kotlin.jvm.internal.p) this.f3464u).f38642n) {
+                                eVar.f3462x = 1;
+                                if (((c) this.f3465v).a(obj, eVar) == aVar) {
                                     return aVar;
                                 }
                                 return vVar;
                             }
-                            eVar.f3328n = this;
-                            eVar.f3329u = obj;
-                            eVar.f3332x = 2;
-                            obj2 = ((X.o) this.f3336w).invoke(obj, eVar);
+                            eVar.f3458n = this;
+                            eVar.f3459u = obj;
+                            eVar.f3462x = 2;
+                            obj2 = ((X.o) this.f3466w).invoke(obj, eVar);
                             if (obj2 == aVar) {
                                 return aVar;
                             }
@@ -71,15 +71,15 @@ public final class f implements c {
                         }
                         if (i != 1) {
                             if (i == 2) {
-                                obj = eVar.f3329u;
-                                fVar = eVar.f3328n;
-                                com.bumptech.glide.d.k(obj2);
+                                obj = eVar.f3459u;
+                                fVar = eVar.f3458n;
+                                Q3.b.s(obj2);
                                 if (!((Boolean) obj2).booleanValue()) {
-                                    ((kotlin.jvm.internal.p) fVar.f3334u).f38715n = true;
-                                    eVar.f3328n = null;
-                                    eVar.f3329u = null;
-                                    eVar.f3332x = 3;
-                                    if (((c) fVar.f3335v).a(obj, eVar) == aVar) {
+                                    ((kotlin.jvm.internal.p) fVar.f3464u).f38642n = true;
+                                    eVar.f3458n = null;
+                                    eVar.f3459u = null;
+                                    eVar.f3462x = 3;
+                                    if (((c) fVar.f3465v).a(obj, eVar) == aVar) {
                                         return aVar;
                                     }
                                 }
@@ -89,26 +89,26 @@ public final class f implements c {
                                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                             }
                         }
-                        com.bumptech.glide.d.k(obj2);
+                        Q3.b.s(obj2);
                         return vVar;
                     }
                 }
-                eVar = new e(this, interfaceC5267d);
-                Object obj22 = eVar.f3330v;
-                A7.a aVar2 = A7.a.f58n;
-                i = eVar.f3332x;
-                v vVar2 = v.f41353a;
+                eVar = new e(this, interfaceC5240d);
+                Object obj22 = eVar.f3460v;
+                A7.a aVar2 = A7.a.f215n;
+                i = eVar.f3462x;
+                v vVar2 = v.f41073a;
                 if (i != 0) {
                 }
             default:
-                Object a9 = W7.o.a((InterfaceC5272i) this.f3334u, obj, this.f3335v, (w) this.f3336w, interfaceC5267d);
-                return a9 == A7.a.f58n ? a9 : v.f41353a;
+                Object a9 = W7.o.a((InterfaceC5245i) this.f3464u, obj, this.f3465v, (w) this.f3466w, interfaceC5240d);
+                return a9 == A7.a.f215n ? a9 : v.f41073a;
         }
     }
 
-    public f(c cVar, InterfaceC5272i interfaceC5272i) {
-        this.f3334u = interfaceC5272i;
-        this.f3335v = X7.a.l(interfaceC5272i);
-        this.f3336w = new w(cVar, null);
+    public f(c cVar, InterfaceC5245i interfaceC5245i) {
+        this.f3464u = interfaceC5245i;
+        this.f3465v = X7.a.l(interfaceC5245i);
+        this.f3466w = new w(cVar, null);
     }
 }

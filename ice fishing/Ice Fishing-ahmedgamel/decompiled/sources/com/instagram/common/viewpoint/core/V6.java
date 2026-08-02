@@ -12,8 +12,8 @@ public class V6 {
     public Map<String, String> A05;
     public boolean A06;
 
-    public final V6 A00(double d2) {
-        this.A00 = d2;
+    public final V6 A00(double d9) {
+        this.A00 = d9;
         return this;
     }
 
@@ -42,8 +42,8 @@ public class V6 {
         return this;
     }
 
-    public final V6 A06(boolean z3) {
-        this.A06 = z3;
+    public final V6 A06(boolean z6) {
+        this.A06 = z6;
         return this;
     }
 

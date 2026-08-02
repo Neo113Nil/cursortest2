@@ -1,10 +1,10 @@
 package com.google.firebase.ktx;
 
-import R3.b;
+import S0.f;
+import T3.b;
+import Z2.d;
 import androidx.annotation.Keep;
-import com.bumptech.glide.h;
 import com.google.firebase.components.ComponentRegistrar;
-import d6.c;
 import java.util.List;
 
 @Keep
@@ -12,6 +12,6 @@ import java.util.List;
 public final class FirebaseCommonLegacyRegistrar implements ComponentRegistrar {
     @Override // com.google.firebase.components.ComponentRegistrar
     public List<b> getComponents() {
-        return c.k(h.e("fire-core-ktx", "21.0.0"));
+        return d.n(f.i("fire-core-ktx", "21.0.0"));
     }
 }

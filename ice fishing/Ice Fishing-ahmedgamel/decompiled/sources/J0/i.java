@@ -1,40 +1,44 @@
 package J0;
 
-import java.util.concurrent.Executor;
+import android.app.Notification;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: classes.dex */
-public final class i implements Executor {
+public final class i {
 
-    /* renamed from: n, reason: collision with root package name */
-    public static final i f1392n;
+    /* renamed from: a, reason: collision with root package name */
+    public final int f1422a;
 
-    /* renamed from: u, reason: collision with root package name */
-    public static final /* synthetic */ i[] f1393u;
+    /* renamed from: b, reason: collision with root package name */
+    public final int f1423b;
 
-    static {
-        i iVar = new i("INSTANCE", 0);
-        f1392n = iVar;
-        f1393u = new i[]{iVar};
+    /* renamed from: c, reason: collision with root package name */
+    public final Notification f1424c;
+
+    public i(int i, Notification notification, int i4) {
+        this.f1422a = i;
+        this.f1424c = notification;
+        this.f1423b = i4;
     }
 
-    public static i valueOf(String str) {
-        return (i) Enum.valueOf(i.class, str);
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || i.class != obj.getClass()) {
+            return false;
+        }
+        i iVar = (i) obj;
+        if (this.f1422a == iVar.f1422a && this.f1423b == iVar.f1423b) {
+            return this.f1424c.equals(iVar.f1424c);
+        }
+        return false;
     }
 
-    public static i[] values() {
-        return (i[]) f1393u.clone();
+    public final int hashCode() {
+        return this.f1424c.hashCode() + (((this.f1422a * 31) + this.f1423b) * 31);
     }
 
-    @Override // java.util.concurrent.Executor
-    public final void execute(Runnable command) {
-        kotlin.jvm.internal.h.e(command, "command");
-        command.run();
-    }
-
-    @Override // java.lang.Enum
     public final String toString() {
-        return "DirectExecutor";
+        return "ForegroundInfo{mNotificationId=" + this.f1422a + ", mForegroundServiceType=" + this.f1423b + ", mNotification=" + this.f1424c + '}';
     }
 }

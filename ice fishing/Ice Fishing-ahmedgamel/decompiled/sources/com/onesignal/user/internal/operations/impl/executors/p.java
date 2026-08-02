@@ -4,12 +4,12 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import q4.C4926b;
-import r4.EnumC4958a;
-import t4.C5040a;
-import v7.AbstractC5129j;
-import v7.AbstractC5130k;
-import z7.InterfaceC5267d;
+import q4.C4875b;
+import r4.EnumC4908a;
+import t4.C5041a;
+import v7.AbstractC5119j;
+import v7.AbstractC5120k;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class p implements H4.d {
@@ -46,8 +46,8 @@ public final class p implements H4.d {
         int label;
         /* synthetic */ Object result;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -79,7 +79,7 @@ public final class p implements H4.d {
 
     /* JADX WARN: Code restructure failed: missing block: B:83:0x02ca, code lost:
     
-        if (r2.resolveConditionsWithID(q4.C4925a.ID, r12) == r3) goto L99;
+        if (r2.resolveConditionsWithID(q4.C4874a.ID, r12) == r3) goto L99;
      */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:17:0x02df A[Catch: a -> 0x0048, TryCatch #3 {a -> 0x0048, blocks: (B:14:0x0043, B:15:0x02cd, B:17:0x02df, B:18:0x02e3, B:20:0x02e9, B:37:0x02f3, B:23:0x0316, B:34:0x031a, B:26:0x0337, B:29:0x033b), top: B:13:0x0043 }] */
@@ -93,7 +93,7 @@ public final class p implements H4.d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object execute(List<? extends H4.g> list, InterfaceC5267d interfaceC5267d) {
+    public Object execute(List<? extends H4.g> list, InterfaceC5240d interfaceC5240d) {
         b bVar;
         int i;
         String str;
@@ -107,31 +107,31 @@ public final class p implements H4.d {
         String jwt;
         String str5;
         p pVar2;
-        int i6;
+        int i4;
         long sessionTime;
         BigDecimal amountSpent;
         ArrayList arrayList;
-        C4926b c4926b;
-        int i9;
+        C4875b c4875b;
+        int i6;
         List<? extends H4.g> list2 = list;
-        if (interfaceC5267d instanceof b) {
-            bVar = (b) interfaceC5267d;
-            int i10 = bVar.label;
-            if ((i10 & Integer.MIN_VALUE) != 0) {
-                bVar.label = i10 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof b) {
+            bVar = (b) interfaceC5240d;
+            int i9 = bVar.label;
+            if ((i9 & Integer.MIN_VALUE) != 0) {
+                bVar.label = i9 - Integer.MIN_VALUE;
                 b bVar2 = bVar;
                 Object obj = bVar2.result;
-                Object obj2 = A7.a.f58n;
+                Object obj2 = A7.a.f215n;
                 i = bVar2.label;
-                int i11 = 1;
+                int i10 = 1;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "UpdateUserOperationExecutor(operation: " + list2 + ')');
                     Q5.f fVar = new Q5.f(null, null, null, null, null, null, 63, null);
                     Q5.e eVar = new Q5.e(null, null, null, null, 15, null);
                     Iterator<? extends H4.g> it = list2.iterator();
                     Q5.e eVar2 = eVar;
-                    boolean z3 = 0;
+                    boolean z6 = 0;
                     String str6 = null;
                     str = null;
                     Q5.f fVar2 = fVar;
@@ -167,12 +167,12 @@ public final class p implements H4.d {
                             if (eVar2.getSessionCount() != null) {
                                 Integer sessionCount = eVar2.getSessionCount();
                                 kotlin.jvm.internal.h.b(sessionCount);
-                                i6 = sessionCount.intValue() + i11;
+                                i4 = sessionCount.intValue() + i10;
                             } else {
-                                i6 = i11;
+                                i4 = i10;
                             }
-                            eVar2 = new Q5.e(eVar2.getSessionTime(), new Integer(i6), eVar2.getAmountSpent(), eVar2.getPurchases());
-                            z3 = i11;
+                            eVar2 = new Q5.e(eVar2.getSessionTime(), new Integer(i4), eVar2.getAmountSpent(), eVar2.getPurchases());
+                            z6 = i10;
                         } else if (next instanceof V5.n) {
                             if (str == null) {
                                 V5.n nVar = (V5.n) next;
@@ -207,7 +207,7 @@ public final class p implements H4.d {
                             if (eVar2.getPurchases() != null) {
                                 List<Q5.g> purchases = eVar2.getPurchases();
                                 kotlin.jvm.internal.h.b(purchases);
-                                arrayList = AbstractC5129j.M(purchases);
+                                arrayList = AbstractC5119j.K(purchases);
                             } else {
                                 arrayList = new ArrayList();
                             }
@@ -217,11 +217,11 @@ public final class p implements H4.d {
                             }
                             eVar2 = new Q5.e(eVar2.getSessionTime(), eVar2.getSessionCount(), amountSpent, arrayList);
                             it = it;
-                            i11 = 1;
+                            i10 = 1;
                         }
                     }
                     if (str != null && str6 != null) {
-                        f resolveBackendParams = c.resolveBackendParams((H4.g) AbstractC5129j.A(list2), str6, this._jwtTokenStore, this._identityVerificationService);
+                        f resolveBackendParams = c.resolveBackendParams((H4.g) AbstractC5119j.y(list2), str6, this._jwtTokenStore, this._identityVerificationService);
                         try {
                             dVar = this._userBackend;
                             aliasLabel = resolveBackendParams.getAliasLabel();
@@ -233,25 +233,25 @@ public final class p implements H4.d {
                             bVar2.L$3 = str6;
                             bVar2.label = 1;
                             str2 = str6;
-                        } catch (C5040a e9) {
+                        } catch (C5041a e9) {
                             e = e9;
                             str2 = str6;
                         }
                         try {
-                            Object updateUser = dVar.updateUser(str, aliasLabel, aliasValue, fVar2, z3, eVar2, jwt, bVar2);
+                            Object updateUser = dVar.updateUser(str, aliasLabel, aliasValue, fVar2, z6, eVar2, jwt, bVar2);
                             if (updateUser != obj2) {
                                 str5 = str2;
                                 obj = updateUser;
                                 pVar2 = this;
                             }
                             return obj2;
-                        } catch (C5040a e10) {
+                        } catch (C5041a e10) {
                             e = e10;
                             str3 = str2;
                             str4 = str;
                             pVar = this;
-                            i9 = q.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
-                            if (i9 == 1) {
+                            i6 = q.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
+                            if (i6 == 1) {
                             }
                         }
                     }
@@ -273,7 +273,7 @@ public final class p implements H4.d {
                         pVar = (p) bVar2.L$0;
                     }
                     try {
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                         if (kotlin.jvm.internal.h.a(((U5.a) pVar._identityModelStore.getModel()).getOnesignalId(), str3)) {
                             for (H4.g gVar2 : list2) {
                                 if (gVar2 instanceof V5.k) {
@@ -286,10 +286,10 @@ public final class p implements H4.d {
                             }
                         }
                         return new H4.a(H4.b.SUCCESS, null, null, null, 14, null);
-                    } catch (C5040a e11) {
+                    } catch (C5041a e11) {
                         e = e11;
-                        i9 = q.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
-                        if (i9 == 1) {
+                        i6 = q.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
+                        if (i6 == 1) {
                         }
                     }
                 } else {
@@ -298,20 +298,20 @@ public final class p implements H4.d {
                     list2 = (List) bVar2.L$1;
                     pVar2 = (p) bVar2.L$0;
                     try {
-                        com.bumptech.glide.d.k(obj);
-                    } catch (C5040a e12) {
+                        Q3.b.s(obj);
+                    } catch (C5041a e12) {
                         e = e12;
                         str3 = str5;
                         str4 = str;
                         pVar = pVar2;
-                        i9 = q.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
-                        if (i9 == 1) {
+                        i6 = q.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
+                        if (i6 == 1) {
                             return new H4.a(H4.b.FAIL_RETRY, null, null, e.getRetryAfterSeconds(), 6, null);
                         }
-                        if (i9 == 2) {
+                        if (i6 == 2) {
                             return new H4.a(H4.b.FAIL_UNAUTHORIZED, null, null, e.getRetryAfterSeconds(), 6, null);
                         }
-                        if (i9 != 3) {
+                        if (i6 != 3) {
                             return new H4.a(H4.b.FAIL_NORETRY, null, null, null, 14, null);
                         }
                         if (e.getStatusCode() == 404 && pVar._newRecordState.isInMissingRetryWindow(str3)) {
@@ -321,16 +321,16 @@ public final class p implements H4.d {
                         return rebuildOperationsIfCurrentUser == null ? new H4.a(H4.b.FAIL_NORETRY, null, null, null, 14, null) : new H4.a(H4.b.FAIL_RETRY, null, rebuildOperationsIfCurrentUser, e.getRetryAfterSeconds(), 2, null);
                     }
                 }
-                c4926b = (C4926b) obj;
-                if (c4926b == null) {
+                c4875b = (C4875b) obj;
+                if (c4875b == null) {
                     s4.c cVar = pVar2._consistencyManager;
-                    EnumC4958a enumC4958a = EnumC4958a.USER;
+                    EnumC4908a enumC4908a = EnumC4908a.USER;
                     bVar2.L$0 = pVar2;
                     bVar2.L$1 = list2;
                     bVar2.L$2 = str;
                     bVar2.L$3 = str5;
                     bVar2.label = 2;
-                    if (cVar.setRywData(str5, enumC4958a, c4926b, bVar2) == obj2) {
+                    if (cVar.setRywData(str5, enumC4908a, c4875b, bVar2) == obj2) {
                         return obj2;
                     }
                     str3 = str5;
@@ -349,16 +349,16 @@ public final class p implements H4.d {
                 return new H4.a(H4.b.SUCCESS, null, null, null, 14, null);
             }
         }
-        bVar = new b(interfaceC5267d);
+        bVar = new b(interfaceC5240d);
         b bVar22 = bVar;
         Object obj3 = bVar22.result;
-        Object obj22 = A7.a.f58n;
+        Object obj22 = A7.a.f215n;
         i = bVar22.label;
-        int i112 = 1;
+        int i102 = 1;
         if (i != 0) {
         }
-        c4926b = (C4926b) obj3;
-        if (c4926b == null) {
+        c4875b = (C4875b) obj3;
+        if (c4875b == null) {
         }
         if (kotlin.jvm.internal.h.a(((U5.a) pVar._identityModelStore.getModel()).getOnesignalId(), str3)) {
         }
@@ -367,6 +367,6 @@ public final class p implements H4.d {
 
     @Override // H4.d
     public List<String> getOperations() {
-        return AbstractC5130k.v(SET_TAG, DELETE_TAG, SET_PROPERTY, TRACK_SESSION_START, TRACK_SESSION_END, TRACK_PURCHASE);
+        return AbstractC5120k.t(SET_TAG, DELETE_TAG, SET_PROPERTY, TRACK_SESSION_START, TRACK_SESSION_END, TRACK_PURCHASE);
     }
 }

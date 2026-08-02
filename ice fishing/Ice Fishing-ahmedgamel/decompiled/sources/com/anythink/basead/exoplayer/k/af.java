@@ -12,6 +12,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.Display;
 import android.view.WindowManager;
+import com.google.android.gms.internal.ads.Wv;
 import java.io.ByteArrayOutputStream;
 import java.io.Closeable;
 import java.io.File;
@@ -38,56 +39,56 @@ import java.util.regex.Pattern;
 public final class af {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f8346a;
+    public static final int f9132a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f8347b;
+    public static final String f9133b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f8348c;
+    public static final String f9134c;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final String f8349d;
+    public static final String f9135d;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f8350e;
+    public static final String f9136e;
 
     /* renamed from: f, reason: collision with root package name */
-    private static final String f8351f = "Util";
+    private static final String f9137f = "Util";
 
     /* renamed from: g, reason: collision with root package name */
-    private static final Pattern f8352g;
+    private static final Pattern f9138g;
 
     /* renamed from: h, reason: collision with root package name */
-    private static final Pattern f8353h;
+    private static final Pattern f9139h;
     private static final Pattern i;
 
     /* renamed from: j, reason: collision with root package name */
-    private static final int[] f8354j;
+    private static final int[] f9140j;
 
     static {
-        int i6 = Build.VERSION.SDK_INT;
-        if (i6 == 25 && Build.VERSION.CODENAME.charAt(0) == 'O') {
-            i6 = 26;
+        int i4 = Build.VERSION.SDK_INT;
+        if (i4 == 25 && Build.VERSION.CODENAME.charAt(0) == 'O') {
+            i4 = 26;
         }
-        f8346a = i6;
+        f9132a = i4;
         String str = Build.DEVICE;
-        f8347b = str;
+        f9133b = str;
         String str2 = Build.MANUFACTURER;
-        f8348c = str2;
+        f9134c = str2;
         String str3 = Build.MODEL;
-        f8349d = str3;
+        f9135d = str3;
         StringBuilder sb = new StringBuilder();
         sb.append(str);
         sb.append(", ");
         sb.append(str3);
         sb.append(", ");
         sb.append(str2);
-        f8350e = D.y.m(i6, ", ", sb);
-        f8352g = Pattern.compile("(\\d\\d\\d\\d)\\-(\\d\\d)\\-(\\d\\d)[Tt](\\d\\d):(\\d\\d):(\\d\\d)([\\.,](\\d+))?([Zz]|((\\+|\\-)(\\d?\\d):?(\\d\\d)))?");
-        f8353h = Pattern.compile("^(-)?P(([0-9]*)Y)?(([0-9]*)M)?(([0-9]*)D)?(T(([0-9]*)H)?(([0-9]*)M)?(([0-9.]*)S)?)?$");
+        f9136e = D.x.k(i4, ", ", sb);
+        f9138g = Pattern.compile("(\\d\\d\\d\\d)\\-(\\d\\d)\\-(\\d\\d)[Tt](\\d\\d):(\\d\\d):(\\d\\d)([\\.,](\\d+))?([Zz]|((\\+|\\-)(\\d?\\d):?(\\d\\d)))?");
+        f9139h = Pattern.compile("^(-)?P(([0-9]*)Y)?(([0-9]*)M)?(([0-9]*)D)?(T(([0-9]*)H)?(([0-9]*)M)?(([0-9.]*)S)?)?$");
         i = Pattern.compile("%([A-Fa-f0-9]{2})");
-        f8354j = new int[]{0, 79764919, 159529838, 222504665, 319059676, 398814059, 445009330, 507990021, 638119352, 583659535, 797628118, 726387553, 890018660, 835552979, 1015980042, 944750013, 1276238704, 1221641927, 1167319070, 1095957929, 1595256236, 1540665371, 1452775106, 1381403509, 1780037320, 1859660671, 1671105958, 1733955601, 2031960084, 2111593891, 1889500026, 1952343757, -1742489888, -1662866601, -1851683442, -1788833735, -1960329156, -1880695413, -2103051438, -2040207643, -1104454824, -1159051537, -1213636554, -1284997759, -1389417084, -1444007885, -1532160278, -1603531939, -734892656, -789352409, -575645954, -646886583, -952755380, -1007220997, -827056094, -898286187, -231047128, -151282273, -71779514, -8804623, -515967244, -436212925, -390279782, -327299027, 881225847, 809987520, 1023691545, 969234094, 662832811, 591600412, 771767749, 717299826, 311336399, 374308984, 453813921, 533576470, 25881363, 88864420, 134795389, 214552010, 2023205639, 2086057648, 1897238633, 1976864222, 1804852699, 1867694188, 1645340341, 1724971778, 1587496639, 1516133128, 1461550545, 1406951526, 1302016099, 1230646740, 1142491917, 1087903418, -1398421865, -1469785312, -1524105735, -1578704818, -1079922613, -1151291908, -1239184603, -1293773166, -1968362705, -1905510760, -2094067647, -2014441994, -1716953613, -1654112188, -1876203875, -1796572374, -525066777, -462094256, -382327159, -302564546, -206542021, -143559028, -97365931, -17609246, -960696225, -1031934488, -817968335, -872425850, -709327229, -780559564, -600130067, -654598054, 1762451694, 1842216281, 1619975040, 1682949687, 2047383090, 2127137669, 1938468188, 2001449195, 1325665622, 1271206113, 1183200824, 1111960463, 1543535498, 1489069629, 1434599652, 1363369299, 622672798, 568075817, 748617968, 677256519, 907627842, 853037301, 1067152940, 995781531, 51762726, 131386257, 177728840, 240578815, 269590778, 349224269, 429104020, 491947555, -248556018, -168932423, -122852000, -60002089, -500490030, -420856475, -341238852, -278395381, -685261898, -739858943, -559578920, -630940305, -1004286614, -1058877219, -845023740, -916395085, -1119974018, -1174433591, -1262701040, -1333941337, -1371866206, -1426332139, -1481064244, -1552294533, -1690935098, -1611170447, -1833673816, -1770699233, -2009983462, -1930228819, -2119160460, -2056179517, 1569362073, 1498123566, 1409854455, 1355396672, 1317987909, 1246755826, 1192025387, 1137557660, 2072149281, 2135122070, 1912620623, 1992383480, 1753615357, 1816598090, 1627664531, 1707420964, 295390185, 358241886, 404320391, 483945776, 43990325, 106832002, 186451547, 266083308, 932423249, 861060070, 1041341759, 986742920, 613929101, 542559546, 756411363, 701822548, -978770311, -1050133554, -869589737, -924188512, -693284699, -764654318, -550540341, -605129092, -475935807, -413084042, -366743377, -287118056, -257573603, -194731862, -114850189, -35218492, -1984365303, -1921392450, -2143631769, -2063868976, -1698919467, -1635936670, -1824608069, -1744851700, -1347415887, -1418654458, -1506661409, -1561119128, -1129027987, -1200260134, -1254728445, -1309196108};
+        f9140j = new int[]{0, 79764919, 159529838, 222504665, 319059676, 398814059, 445009330, 507990021, 638119352, 583659535, 797628118, 726387553, 890018660, 835552979, 1015980042, 944750013, 1276238704, 1221641927, 1167319070, 1095957929, 1595256236, 1540665371, 1452775106, 1381403509, 1780037320, 1859660671, 1671105958, 1733955601, 2031960084, 2111593891, 1889500026, 1952343757, -1742489888, -1662866601, -1851683442, -1788833735, -1960329156, -1880695413, -2103051438, -2040207643, -1104454824, -1159051537, -1213636554, -1284997759, -1389417084, -1444007885, -1532160278, -1603531939, -734892656, -789352409, -575645954, -646886583, -952755380, -1007220997, -827056094, -898286187, -231047128, -151282273, -71779514, -8804623, -515967244, -436212925, -390279782, -327299027, 881225847, 809987520, 1023691545, 969234094, 662832811, 591600412, 771767749, 717299826, 311336399, 374308984, 453813921, 533576470, 25881363, 88864420, 134795389, 214552010, 2023205639, 2086057648, 1897238633, 1976864222, 1804852699, 1867694188, 1645340341, 1724971778, 1587496639, 1516133128, 1461550545, 1406951526, 1302016099, 1230646740, 1142491917, 1087903418, -1398421865, -1469785312, -1524105735, -1578704818, -1079922613, -1151291908, -1239184603, -1293773166, -1968362705, -1905510760, -2094067647, -2014441994, -1716953613, -1654112188, -1876203875, -1796572374, -525066777, -462094256, -382327159, -302564546, -206542021, -143559028, -97365931, -17609246, -960696225, -1031934488, -817968335, -872425850, -709327229, -780559564, -600130067, -654598054, 1762451694, 1842216281, 1619975040, 1682949687, 2047383090, 2127137669, 1938468188, 2001449195, 1325665622, 1271206113, 1183200824, 1111960463, 1543535498, 1489069629, 1434599652, 1363369299, 622672798, 568075817, 748617968, 677256519, 907627842, 853037301, 1067152940, 995781531, 51762726, 131386257, 177728840, 240578815, 269590778, 349224269, 429104020, 491947555, -248556018, -168932423, -122852000, -60002089, -500490030, -420856475, -341238852, -278395381, -685261898, -739858943, -559578920, -630940305, -1004286614, -1058877219, -845023740, -916395085, -1119974018, -1174433591, -1262701040, -1333941337, -1371866206, -1426332139, -1481064244, -1552294533, -1690935098, -1611170447, -1833673816, -1770699233, -2009983462, -1930228819, -2119160460, -2056179517, 1569362073, 1498123566, 1409854455, 1355396672, 1317987909, 1246755826, 1192025387, 1137557660, 2072149281, 2135122070, 1912620623, 1992383480, 1753615357, 1816598090, 1627664531, 1707420964, 295390185, 358241886, 404320391, 483945776, 43990325, 106832002, 186451547, 266083308, 932423249, 861060070, 1041341759, 986742920, 613929101, 542559546, 756411363, 701822548, -978770311, -1050133554, -869589737, -924188512, -693284699, -764654318, -550540341, -605129092, -475935807, -413084042, -366743377, -287118056, -257573603, -194731862, -114850189, -35218492, -1984365303, -1921392450, -2143631769, -2063868976, -1698919467, -1635936670, -1824608069, -1744851700, -1347415887, -1418654458, -1506661409, -1561119128, -1129027987, -1200260134, -1254728445, -1309196108};
     }
 
     private af() {
@@ -104,42 +105,42 @@ public final class af {
         return j6 == j9 ? 0 : 1;
     }
 
-    public static boolean c(int i6) {
-        return i6 == Integer.MIN_VALUE || i6 == 1073741824;
+    public static boolean c(int i4) {
+        return i4 == Integer.MIN_VALUE || i4 == 1073741824;
     }
 
-    public static int d(int i6) {
-        if (i6 == 0) {
+    public static int d(int i4) {
+        if (i4 == 0) {
             return 2;
         }
-        if (i6 == 1) {
+        if (i4 == 1) {
             return 13;
         }
-        if (i6 == 2) {
+        if (i4 == 2) {
             return 6;
         }
-        int i9 = 4;
-        if (i6 != 4) {
-            i9 = 5;
-            if (i6 != 5) {
-                return i6 != 8 ? 1 : 3;
+        int i6 = 4;
+        if (i4 != 4) {
+            i6 = 5;
+            if (i4 != 5) {
+                return i4 != 8 ? 1 : 3;
             }
         }
-        return i9;
+        return i6;
     }
 
-    public static int e(int i6) {
-        if (i6 != 0) {
-            return (i6 == 1 || i6 == 2 || i6 == 4 || i6 == 5 || i6 == 8) ? 4 : 2;
+    public static int e(int i4) {
+        if (i4 != 0) {
+            return (i4 == 1 || i4 == 2 || i4 == 4 || i4 == 5 || i4 == 8) ? 4 : 2;
         }
         return 1;
     }
 
-    public static int f(int i6) {
-        if (i6 == 13) {
+    public static int f(int i4) {
+        if (i4 == 13) {
             return 1;
         }
-        switch (i6) {
+        switch (i4) {
             case 2:
                 return 0;
             case 3:
@@ -162,28 +163,28 @@ public final class af {
     public static byte[] g(String str) {
         int length = str.length() / 2;
         byte[] bArr = new byte[length];
-        for (int i6 = 0; i6 < length; i6++) {
-            int i9 = i6 * 2;
-            bArr[i6] = (byte) (Character.digit(str.charAt(i9 + 1), 16) + (Character.digit(str.charAt(i9), 16) << 4));
+        for (int i4 = 0; i4 < length; i4++) {
+            int i6 = i4 * 2;
+            bArr[i4] = (byte) (Character.digit(str.charAt(i6 + 1), 16) + (Character.digit(str.charAt(i6), 16) << 4));
         }
         return bArr;
     }
 
-    private static int h(int i6) {
-        if (i6 == 8) {
+    private static int h(int i4) {
+        if (i4 == 8) {
             return 3;
         }
-        if (i6 == 16) {
+        if (i4 == 16) {
             return 2;
         }
-        if (i6 != 24) {
-            return i6 != 32 ? 0 : 1073741824;
+        if (i4 != 24) {
+            return i4 != 32 ? 0 : 1073741824;
         }
         return Integer.MIN_VALUE;
     }
 
     private static long i(String str) {
-        Matcher matcher = f8353h.matcher(str);
+        Matcher matcher = f9139h.matcher(str);
         if (!matcher.matches()) {
             return (long) (Double.parseDouble(str) * 3600.0d * 1000.0d);
         }
@@ -204,15 +205,15 @@ public final class af {
     }
 
     private static long j(String str) {
-        Matcher matcher = f8352g.matcher(str);
+        Matcher matcher = f9138g.matcher(str);
         if (!matcher.matches()) {
             throw new com.anythink.basead.exoplayer.t("Invalid date/time format: ".concat(String.valueOf(str)));
         }
-        int i6 = 0;
+        int i4 = 0;
         if (matcher.group(9) != null && !matcher.group(9).equalsIgnoreCase("Z")) {
-            i6 = Integer.parseInt(matcher.group(13)) + (Integer.parseInt(matcher.group(12)) * 60);
+            i4 = Integer.parseInt(matcher.group(13)) + (Integer.parseInt(matcher.group(12)) * 60);
             if ("-".equals(matcher.group(11))) {
-                i6 *= -1;
+                i4 *= -1;
             }
         }
         GregorianCalendar gregorianCalendar = new GregorianCalendar(TimeZone.getTimeZone("GMT"));
@@ -222,13 +223,13 @@ public final class af {
             gregorianCalendar.set(14, new BigDecimal("0." + matcher.group(8)).movePointRight(3).intValue());
         }
         long timeInMillis = gregorianCalendar.getTimeInMillis();
-        return i6 != 0 ? timeInMillis - (i6 * 60000) : timeInMillis;
+        return i4 != 0 ? timeInMillis - (i4 * 60000) : timeInMillis;
     }
 
     private static UUID k(String str) {
-        String d2 = d(str);
-        d2.getClass();
-        switch (d2) {
+        String d9 = d(str);
+        d9.getClass();
+        switch (d9) {
             case "playready":
                 return com.anythink.basead.exoplayer.b.bl;
             case "widevine":
@@ -245,43 +246,43 @@ public final class af {
     }
 
     private static int l(String str) {
-        String d2 = d(str);
-        if (d2.endsWith(".mpd")) {
+        String d9 = d(str);
+        if (d9.endsWith(".mpd")) {
             return 0;
         }
-        if (d2.endsWith(".m3u8")) {
+        if (d9.endsWith(".m3u8")) {
             return 2;
         }
-        return d2.matches(".*\\.ism(l)?(/manifest(\\(.+\\))?)?") ? 1 : 3;
+        return d9.matches(".*\\.ism(l)?(/manifest(\\(.+\\))?)?") ? 1 : 3;
     }
 
     private static String m(String str) {
         int length = str.length();
+        int i4 = 0;
         int i6 = 0;
-        int i9 = 0;
-        for (int i10 = 0; i10 < length; i10++) {
-            if (a(str.charAt(i10))) {
-                i9++;
+        for (int i9 = 0; i9 < length; i9++) {
+            if (a(str.charAt(i9))) {
+                i6++;
             }
         }
-        if (i9 == 0) {
+        if (i6 == 0) {
             return str;
         }
-        StringBuilder sb = new StringBuilder((i9 * 2) + length);
-        while (i9 > 0) {
-            int i11 = i6 + 1;
-            char charAt = str.charAt(i6);
+        StringBuilder sb = new StringBuilder((i6 * 2) + length);
+        while (i6 > 0) {
+            int i10 = i4 + 1;
+            char charAt = str.charAt(i4);
             if (a(charAt)) {
                 sb.append('%');
                 sb.append(Integer.toHexString(charAt));
-                i9--;
+                i6--;
             } else {
                 sb.append(charAt);
             }
-            i6 = i11;
+            i4 = i10;
         }
-        if (i6 < length) {
-            sb.append((CharSequence) str, i6, length);
+        if (i4 < length) {
+            sb.append((CharSequence) str, i4, length);
         }
         return sb.toString();
     }
@@ -290,8 +291,8 @@ public final class af {
         return c9 == '\"' || c9 == '%' || c9 == '*' || c9 == '/' || c9 == ':' || c9 == '<' || c9 == '\\' || c9 == '|' || c9 == '>' || c9 == '?';
     }
 
-    public static boolean b(int i6) {
-        return i6 == 3 || i6 == 2 || i6 == Integer.MIN_VALUE || i6 == 1073741824 || i6 == 4;
+    public static boolean b(int i4) {
+        return i4 == 3 || i4 == 2 || i4 == Integer.MIN_VALUE || i4 == 1073741824 || i4 == 4;
     }
 
     public static byte[] c(String str) {
@@ -317,46 +318,46 @@ public final class af {
     public static int f(String str) {
         int length = str.length();
         a.a(length <= 4);
-        int i6 = 0;
-        for (int i9 = 0; i9 < length; i9++) {
-            i6 = (i6 << 8) | str.charAt(i9);
+        int i4 = 0;
+        for (int i6 = 0; i6 < length; i6++) {
+            i4 = (i4 << 8) | str.charAt(i6);
         }
-        return i6;
+        return i4;
     }
 
     public static String h(String str) {
         int length = str.length();
+        int i4 = 0;
         int i6 = 0;
-        int i9 = 0;
-        for (int i10 = 0; i10 < length; i10++) {
-            if (str.charAt(i10) == '%') {
-                i9++;
+        for (int i9 = 0; i9 < length; i9++) {
+            if (str.charAt(i9) == '%') {
+                i6++;
             }
         }
-        if (i9 == 0) {
+        if (i6 == 0) {
             return str;
         }
-        int i11 = length - (i9 * 2);
-        StringBuilder sb = new StringBuilder(i11);
+        int i10 = length - (i6 * 2);
+        StringBuilder sb = new StringBuilder(i10);
         Matcher matcher = i.matcher(str);
-        while (i9 > 0 && matcher.find()) {
+        while (i6 > 0 && matcher.find()) {
             char parseInt = (char) Integer.parseInt(matcher.group(1), 16);
-            sb.append((CharSequence) str, i6, matcher.start());
+            sb.append((CharSequence) str, i4, matcher.start());
             sb.append(parseInt);
-            i6 = matcher.end();
-            i9--;
+            i4 = matcher.end();
+            i6--;
         }
-        if (i6 < length) {
-            sb.append((CharSequence) str, i6, length);
+        if (i4 < length) {
+            sb.append((CharSequence) str, i4, length);
         }
-        if (sb.length() != i11) {
+        if (sb.length() != i10) {
             return null;
         }
         return sb.toString();
     }
 
-    public static boolean a(int i6) {
-        return i6 == 10 || i6 == 13;
+    public static boolean a(int i4) {
+        return i4 == 10 || i4 == 13;
     }
 
     public static String b(String str) {
@@ -410,17 +411,17 @@ public final class af {
         point.y = display.getHeight();
     }
 
-    public static int g(int i6) {
-        if (i6 == 0) {
+    public static int g(int i4) {
+        if (i4 == 0) {
             return com.anythink.basead.exoplayer.b.bc;
         }
-        if (i6 == 1) {
+        if (i4 == 1) {
             return com.anythink.basead.exoplayer.b.aZ;
         }
-        if (i6 == 2) {
+        if (i4 == 2) {
             return com.anythink.basead.exoplayer.b.aY;
         }
-        if (i6 == 3 || i6 == 4) {
+        if (i4 == 3 || i4 == 4) {
             return 131072;
         }
         throw new IllegalStateException();
@@ -434,55 +435,55 @@ public final class af {
         display.getSize(point);
     }
 
-    private static <T> int b(List<? extends Comparable<? super T>> list, T t6, boolean z3, boolean z6) {
+    private static <T> int b(List<? extends Comparable<? super T>> list, T t6, boolean z6, boolean z9) {
+        int i4;
         int i6;
-        int i9;
         int binarySearch = Collections.binarySearch(list, t6);
         if (binarySearch < 0) {
-            i9 = ~binarySearch;
+            i6 = ~binarySearch;
         } else {
             int size = list.size();
             while (true) {
-                i6 = binarySearch + 1;
-                if (i6 >= size || list.get(i6).compareTo(t6) != 0) {
+                i4 = binarySearch + 1;
+                if (i4 >= size || list.get(i4).compareTo(t6) != 0) {
                     break;
                 }
-                binarySearch = i6;
+                binarySearch = i4;
             }
-            i9 = z3 ? binarySearch : i6;
+            i6 = z6 ? binarySearch : i4;
         }
-        return z6 ? Math.min(list.size() - 1, i9) : i9;
+        return z9 ? Math.min(list.size() - 1, i6) : i6;
     }
 
     public static ComponentName a(Context context, Intent intent) {
         ComponentName startForegroundService;
-        if (f8346a >= 26) {
+        if (f9132a >= 26) {
             startForegroundService = context.startForegroundService(intent);
             return startForegroundService;
         }
         return context.startService(intent);
     }
 
-    public static long b(long j6, float f3) {
-        return f3 == 1.0f ? j6 : Math.round(j6 / f3);
+    public static long b(long j6, float f2) {
+        return f2 == 1.0f ? j6 : Math.round(j6 / f2);
     }
 
-    public static int b(int i6, int i9) {
-        if (i6 == Integer.MIN_VALUE) {
-            return i9 * 3;
+    public static int b(int i4, int i6) {
+        if (i4 == Integer.MIN_VALUE) {
+            return i6 * 3;
         }
-        if (i6 != 1073741824) {
-            if (i6 == 2) {
-                return i9 * 2;
+        if (i4 != 1073741824) {
+            if (i4 == 2) {
+                return i6 * 2;
             }
-            if (i6 == 3) {
-                return i9;
+            if (i4 == 3) {
+                return i6;
             }
-            if (i6 != 4) {
+            if (i4 != 4) {
                 throw new IllegalArgumentException();
             }
         }
-        return i9 * 4;
+        return i6 * 4;
     }
 
     public static boolean a(Uri uri) {
@@ -529,13 +530,13 @@ public final class af {
         return createTempFile;
     }
 
-    public static <T> void a(List<T> list, int i6, int i9) {
-        list.subList(i6, i9).clear();
+    public static <T> void a(List<T> list, int i4, int i6) {
+        list.subList(i4, i6).clear();
     }
 
-    public static <T> T[] a(T[] tArr, int i6) {
-        a.a(i6 <= tArr.length);
-        return (T[]) Arrays.copyOf(tArr, i6);
+    public static <T> T[] a(T[] tArr, int i4) {
+        a.a(i4 <= tArr.length);
+        return (T[]) Arrays.copyOf(tArr, i4);
     }
 
     public static ExecutorService a(final String str) {
@@ -569,16 +570,16 @@ public final class af {
         return parcel.readInt() != 0;
     }
 
-    public static void a(Parcel parcel, boolean z3) {
-        parcel.writeInt(z3 ? 1 : 0);
+    public static void a(Parcel parcel, boolean z6) {
+        parcel.writeInt(z6 ? 1 : 0);
     }
 
     public static String a(byte[] bArr) {
         return new String(bArr, Charset.forName("UTF-8"));
     }
 
-    public static String a(byte[] bArr, int i6, int i9) {
-        return new String(bArr, i6, i9, Charset.forName("UTF-8"));
+    public static String a(byte[] bArr, int i4, int i6) {
+        return new String(bArr, i4, i6, Charset.forName("UTF-8"));
     }
 
     public static String[] a(String str, String str2) {
@@ -589,24 +590,24 @@ public final class af {
         return String.format(Locale.US, str, objArr);
     }
 
-    public static int a(int i6, int i9) {
-        return ((i6 + i9) - 1) / i9;
+    public static int a(int i4, int i6) {
+        return ((i4 + i6) - 1) / i6;
     }
 
-    public static int a(int i6, int i9, int i10) {
-        return Math.max(i9, Math.min(i6, i10));
+    public static int a(int i4, int i6, int i9) {
+        return Math.max(i6, Math.min(i4, i9));
     }
 
     public static long a(long j6, long j9) {
         return Math.max(0L, Math.min(j6, j9));
     }
 
-    public static float a(float f3) {
-        return Math.max(0.1f, Math.min(f3, 8.0f));
+    public static float a(float f2) {
+        return Math.max(0.1f, Math.min(f2, 8.0f));
     }
 
-    public static int a(int[] iArr, int i6) {
-        int binarySearch = Arrays.binarySearch(iArr, i6);
+    public static int a(int[] iArr, int i4) {
+        int binarySearch = Arrays.binarySearch(iArr, i4);
         if (binarySearch < 0) {
             return -(binarySearch + 2);
         }
@@ -615,64 +616,64 @@ public final class af {
             if (binarySearch < 0) {
                 break;
             }
-        } while (iArr[binarySearch] == i6);
+        } while (iArr[binarySearch] == i4);
         return binarySearch;
     }
 
-    public static int a(long[] jArr, long j6, boolean z3) {
-        int i6;
+    public static int a(long[] jArr, long j6, boolean z6) {
+        int i4;
         int binarySearch = Arrays.binarySearch(jArr, j6);
+        if (binarySearch < 0) {
+            i4 = -(binarySearch + 2);
+        } else {
+            while (true) {
+                int i6 = binarySearch - 1;
+                if (i6 < 0 || jArr[i6] != j6) {
+                    break;
+                }
+                binarySearch = i6;
+            }
+            i4 = binarySearch;
+        }
+        return z6 ? Math.max(0, i4) : i4;
+    }
+
+    private static <T> int a(List<? extends Comparable<? super T>> list, T t6, boolean z6, boolean z9) {
+        int i4;
+        int i6;
+        int binarySearch = Collections.binarySearch(list, t6);
         if (binarySearch < 0) {
             i6 = -(binarySearch + 2);
         } else {
             while (true) {
-                int i9 = binarySearch - 1;
-                if (i9 < 0 || jArr[i9] != j6) {
+                i4 = binarySearch - 1;
+                if (i4 < 0 || list.get(i4).compareTo(t6) != 0) {
                     break;
                 }
-                binarySearch = i9;
+                binarySearch = i4;
             }
-            i6 = binarySearch;
+            i6 = z6 ? binarySearch : i4;
         }
-        return z3 ? Math.max(0, i6) : i6;
+        return z9 ? Math.max(0, i6) : i6;
     }
 
-    private static <T> int a(List<? extends Comparable<? super T>> list, T t6, boolean z3, boolean z6) {
+    public static int a(long[] jArr, long j6, boolean z6, boolean z9) {
+        int i4;
         int i6;
-        int i9;
-        int binarySearch = Collections.binarySearch(list, t6);
-        if (binarySearch < 0) {
-            i9 = -(binarySearch + 2);
-        } else {
-            while (true) {
-                i6 = binarySearch - 1;
-                if (i6 < 0 || list.get(i6).compareTo(t6) != 0) {
-                    break;
-                }
-                binarySearch = i6;
-            }
-            i9 = z3 ? binarySearch : i6;
-        }
-        return z6 ? Math.max(0, i9) : i9;
-    }
-
-    public static int a(long[] jArr, long j6, boolean z3, boolean z6) {
-        int i6;
-        int i9;
         int binarySearch = Arrays.binarySearch(jArr, j6);
         if (binarySearch < 0) {
-            i9 = ~binarySearch;
+            i6 = ~binarySearch;
         } else {
             while (true) {
-                i6 = binarySearch + 1;
-                if (i6 >= jArr.length || jArr[i6] != j6) {
+                i4 = binarySearch + 1;
+                if (i4 >= jArr.length || jArr[i4] != j6) {
                     break;
                 }
-                binarySearch = i6;
+                binarySearch = i4;
             }
-            i9 = z3 ? binarySearch : i6;
+            i6 = z6 ? binarySearch : i4;
         }
-        return z6 ? Math.min(jArr.length - 1, i9) : i9;
+        return z9 ? Math.min(jArr.length - 1, i6) : i6;
     }
 
     public static long a(long j6, long j9, long j10) {
@@ -688,56 +689,56 @@ public final class af {
     private static long[] a(List<Long> list, long j6, long j9) {
         int size = list.size();
         long[] jArr = new long[size];
-        int i6 = 0;
+        int i4 = 0;
         if (j9 >= j6 && j9 % j6 == 0) {
             long j10 = j9 / j6;
-            while (i6 < size) {
-                jArr[i6] = list.get(i6).longValue() / j10;
-                i6++;
+            while (i4 < size) {
+                jArr[i4] = list.get(i4).longValue() / j10;
+                i4++;
             }
         } else if (j9 >= j6 || j6 % j9 != 0) {
-            double d2 = j6 / j9;
-            while (i6 < size) {
-                jArr[i6] = (long) (list.get(i6).longValue() * d2);
-                i6++;
+            double d9 = j6 / j9;
+            while (i4 < size) {
+                jArr[i4] = (long) (list.get(i4).longValue() * d9);
+                i4++;
             }
         } else {
             long j11 = j6 / j9;
-            while (i6 < size) {
-                jArr[i6] = list.get(i6).longValue() * j11;
-                i6++;
+            while (i4 < size) {
+                jArr[i4] = list.get(i4).longValue() * j11;
+                i4++;
             }
         }
         return jArr;
     }
 
     public static void a(long[] jArr, long j6) {
-        int i6 = 0;
+        int i4 = 0;
         if (j6 >= 1000000 && j6 % 1000000 == 0) {
             long j9 = j6 / 1000000;
-            while (i6 < jArr.length) {
-                jArr[i6] = jArr[i6] / j9;
-                i6++;
+            while (i4 < jArr.length) {
+                jArr[i4] = jArr[i4] / j9;
+                i4++;
             }
             return;
         }
         if (j6 < 1000000 && 1000000 % j6 == 0) {
             long j10 = 1000000 / j6;
-            while (i6 < jArr.length) {
-                jArr[i6] = jArr[i6] * j10;
-                i6++;
+            while (i4 < jArr.length) {
+                jArr[i4] = jArr[i4] * j10;
+                i4++;
             }
             return;
         }
-        double d2 = 1000000.0d / j6;
-        while (i6 < jArr.length) {
-            jArr[i6] = (long) (jArr[i6] * d2);
-            i6++;
+        double d9 = 1000000.0d / j6;
+        while (i4 < jArr.length) {
+            jArr[i4] = (long) (jArr[i4] * d9);
+            i4++;
         }
     }
 
-    public static long a(long j6, float f3) {
-        return f3 == 1.0f ? j6 : Math.round(j6 * f3);
+    public static long a(long j6, float f2) {
+        return f2 == 1.0f ? j6 : Math.round(j6 * f2);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:25:0x005a A[RETURN] */
@@ -745,27 +746,27 @@ public final class af {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static long a(long j6, com.anythink.basead.exoplayer.ac acVar, long j9, long j10) {
-        if (com.anythink.basead.exoplayer.ac.f6311a.equals(acVar)) {
+        if (com.anythink.basead.exoplayer.ac.f7097a.equals(acVar)) {
             return j6;
         }
-        long j11 = acVar.f6316f;
+        long j11 = acVar.f7102f;
         long j12 = j6 - j11;
         if (((j11 ^ j6) & (j6 ^ j12)) < 0) {
             j12 = Long.MIN_VALUE;
         }
-        long j13 = acVar.f6317g;
+        long j13 = acVar.f7103g;
         long j14 = j6 + j13;
         if (((j13 ^ j14) & (j6 ^ j14)) < 0) {
             j14 = Long.MAX_VALUE;
         }
-        boolean z3 = false;
-        boolean z6 = j12 <= j9 && j9 <= j14;
+        boolean z6 = false;
+        boolean z9 = j12 <= j9 && j9 <= j14;
         if (j12 <= j10 && j10 <= j14) {
-            z3 = true;
+            z6 = true;
         }
-        if (!z6 || !z3) {
-            if (!z6) {
-                return z3 ? j10 : j12;
+        if (!z9 || !z6) {
+            if (!z9) {
+                return z6 ? j10 : j12;
             }
             return j9;
         }
@@ -780,17 +781,17 @@ public final class af {
         }
         int size = list.size();
         int[] iArr = new int[size];
-        for (int i6 = 0; i6 < size; i6++) {
-            iArr[i6] = list.get(i6).intValue();
+        for (int i4 = 0; i4 < size; i4++) {
+            iArr[i4] = list.get(i4).intValue();
         }
         return iArr;
     }
 
     public static String a(Object[] objArr) {
         StringBuilder sb = new StringBuilder();
-        for (int i6 = 0; i6 < objArr.length; i6++) {
-            sb.append(objArr[i6].getClass().getSimpleName());
-            if (i6 < objArr.length - 1) {
+        for (int i4 = 0; i4 < objArr.length; i4++) {
+            sb.append(objArr[i4].getClass().getSimpleName());
+            if (i4 < objArr.length - 1) {
                 sb.append(", ");
             }
         }
@@ -809,17 +810,17 @@ public final class af {
         sb.append("/");
         sb.append(str2);
         sb.append(" (Linux;Android ");
-        return u1.h.g(sb, Build.VERSION.RELEASE, ") ExoPlayerLib/2.8.4");
+        return Wv.i(sb, Build.VERSION.RELEASE, ") ExoPlayerLib/2.8.4");
     }
 
-    private static String a(String str, int i6) {
+    private static String a(String str, int i4) {
         if (TextUtils.isEmpty(str)) {
             return null;
         }
         String[] split = str.trim().split("(\\s*,\\s*)", -1);
         StringBuilder sb = new StringBuilder();
         for (String str2 : split) {
-            if (i6 == o.f(str2)) {
+            if (i4 == o.f(str2)) {
                 if (sb.length() > 0) {
                     sb.append(",");
                 }
@@ -840,17 +841,17 @@ public final class af {
             }
             return l(path);
         }
-        return l(com.anythink.core.common.d.j.f12378z.concat(String.valueOf(str)));
+        return l(com.anythink.core.common.d.j.f13164z.concat(String.valueOf(str)));
     }
 
     private static String a(StringBuilder sb, Formatter formatter, long j6) {
-        if (j6 == com.anythink.basead.exoplayer.b.f6382b) {
+        if (j6 == com.anythink.basead.exoplayer.b.f7168b) {
             j6 = 0;
         }
         long j9 = (j6 + 500) / 1000;
         long j10 = j9 % 60;
         long j11 = (j9 / 60) % 60;
-        long j12 = j9 / com.anythink.expressad.f.a.b.f18401P;
+        long j12 = j9 / com.anythink.expressad.f.a.b.f19188P;
         sb.setLength(0);
         if (j12 > 0) {
             return formatter.format("%d:%02d:%02d", Long.valueOf(j12), Long.valueOf(j11), Long.valueOf(j10)).toString();
@@ -867,12 +868,12 @@ public final class af {
         file.delete();
     }
 
-    private static int a(byte[] bArr, int i6, int i9, int i10) {
-        while (i6 < i9) {
-            i10 = f8354j[((i10 >>> 24) ^ (bArr[i6] & p.f8473b)) & p.f8473b] ^ (i10 << 8);
-            i6++;
+    private static int a(byte[] bArr, int i4, int i6, int i9) {
+        while (i4 < i6) {
+            i9 = f9140j[((i9 >>> 24) ^ (bArr[i4] & p.f9259b)) & p.f9259b] ^ (i9 << 8);
+            i4++;
         }
-        return i10;
+        return i9;
     }
 
     public static Point a(Context context) {
@@ -888,14 +889,14 @@ public final class af {
     */
     private static Point a(Context context, Display display) {
         String str;
-        if (f8346a < 25 && display.getDisplayId() == 0) {
-            String str2 = f8348c;
-            if ("Sony".equals(str2) && f8349d.startsWith("BRAVIA") && context.getPackageManager().hasSystemFeature("com.sony.dtv.hardware.panel.qfhd")) {
+        if (f9132a < 25 && display.getDisplayId() == 0) {
+            String str2 = f9134c;
+            if ("Sony".equals(str2) && f9135d.startsWith("BRAVIA") && context.getPackageManager().hasSystemFeature("com.sony.dtv.hardware.panel.qfhd")) {
                 return new Point(3840, 2160);
             }
-            if (!"NVIDIA".equals(str2) || !f8349d.contains("SHIELD")) {
+            if (!"NVIDIA".equals(str2) || !f9135d.contains("SHIELD")) {
                 if ("philips".equals(d(str2))) {
-                    String str3 = f8349d;
+                    String str3 = f9135d;
                     if (!str3.startsWith("QM1")) {
                         if (!str3.equals("QV151E")) {
                         }
@@ -906,7 +907,7 @@ public final class af {
                 Class<?> cls = Class.forName("android.os.SystemProperties");
                 str = (String) cls.getMethod("get", String.class).invoke(cls, "sys.display-size");
             } catch (Exception e9) {
-                Log.e(f8351f, "Failed to read sys.display-size", e9);
+                Log.e(f9137f, "Failed to read sys.display-size", e9);
                 str = null;
             }
             if (!TextUtils.isEmpty(str)) {
@@ -921,18 +922,18 @@ public final class af {
                     }
                 } catch (NumberFormatException unused) {
                 }
-                Log.e(f8351f, "Invalid sys.display-size: ".concat(String.valueOf(str)));
+                Log.e(f9137f, "Invalid sys.display-size: ".concat(String.valueOf(str)));
             }
         }
         Point point = new Point();
-        int i6 = f8346a;
-        if (i6 >= 23) {
+        int i4 = f9132a;
+        if (i4 >= 23) {
             Display.Mode mode = display.getMode();
             point.x = mode.getPhysicalWidth();
             point.y = mode.getPhysicalHeight();
-        } else if (i6 >= 17) {
+        } else if (i4 >= 17) {
             display.getRealSize(point);
-        } else if (i6 >= 16) {
+        } else if (i4 >= 16) {
             display.getSize(point);
         } else {
             point.x = display.getWidth();

@@ -6,13 +6,13 @@ import java.util.Objects;
 public class c implements h {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f21060a = "ShowRewardListener";
+    private static final String f21847a = "ShowRewardListener";
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f21061b = false;
+    public boolean f21848b = false;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f21062c = false;
+    public boolean f21849c = false;
 
     @Override // com.anythink.expressad.video.bt.module.b.h
     public void a() {
@@ -35,11 +35,11 @@ public class c implements h {
     }
 
     @Override // com.anythink.expressad.video.bt.module.b.h
-    public void a(boolean z3, int i) {
+    public void a(boolean z6, int i) {
     }
 
     @Override // com.anythink.expressad.video.bt.module.b.h
-    public void a(boolean z3, com.anythink.expressad.videocommon.c.c cVar) {
+    public void a(boolean z6, com.anythink.expressad.videocommon.c.c cVar) {
         Objects.toString(cVar);
     }
 }

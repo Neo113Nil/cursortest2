@@ -18,51 +18,51 @@ import com.anythink.core.common.v.q;
 public final class h extends bf {
 
     /* renamed from: a, reason: collision with root package name */
-    String f6195a;
+    String f6981a;
 
     /* renamed from: b, reason: collision with root package name */
-    String f6196b;
+    String f6982b;
 
     /* renamed from: c, reason: collision with root package name */
-    com.anythink.core.common.k.c f6197c;
+    com.anythink.core.common.k.c f6983c;
 
     public h(w wVar, String str, String str2, com.anythink.core.common.k.c cVar) {
-        this.f6195a = str;
-        this.f6196b = str2;
-        this.f13627d = wVar;
-        this.f6197c = cVar;
+        this.f6981a = str;
+        this.f6982b = str2;
+        this.f14413d = wVar;
+        this.f6983c = cVar;
     }
 
     @Override // com.anythink.core.common.h.bf
     public final void a(Activity activity) {
         try {
-            w wVar = this.f13627d;
+            w wVar = this.f14413d;
             String aL = wVar instanceof bj ? ((bj) wVar).aL() : "";
             if (TextUtils.isEmpty(aL)) {
-                aL = this.f13627d.x();
+                aL = this.f14413d.x();
             }
-            final Context g4 = t.b().g();
-            View inflate = LayoutInflater.from(activity).inflate(q.a(g4, "myoffer_confirm_dialog", "layout"), (ViewGroup) null, false);
-            TextView textView = (TextView) inflate.findViewById(q.a(g4, "myoffer_confirm_msg", "id"));
-            TextView textView2 = (TextView) inflate.findViewById(q.a(g4, "myoffer_confirm_give_up", "id"));
-            TextView textView3 = (TextView) inflate.findViewById(q.a(g4, "myoffer_confirm_continue", "id"));
-            String string = g4.getString(q.a(t.b().g(), "myoffer_confirm_msg", com.anythink.expressad.foundation.h.k.f19636g));
-            String string2 = g4.getString(q.a(t.b().g(), "myoffer_give_up", com.anythink.expressad.foundation.h.k.f19636g));
-            String string3 = g4.getString(q.a(t.b().g(), "myoffer_continue", com.anythink.expressad.foundation.h.k.f19636g));
+            final Context g9 = t.b().g();
+            View inflate = LayoutInflater.from(activity).inflate(q.a(g9, "myoffer_confirm_dialog", "layout"), (ViewGroup) null, false);
+            TextView textView = (TextView) inflate.findViewById(q.a(g9, "myoffer_confirm_msg", "id"));
+            TextView textView2 = (TextView) inflate.findViewById(q.a(g9, "myoffer_confirm_give_up", "id"));
+            TextView textView3 = (TextView) inflate.findViewById(q.a(g9, "myoffer_confirm_continue", "id"));
+            String string = g9.getString(q.a(t.b().g(), "myoffer_confirm_msg", com.anythink.expressad.foundation.h.k.f20423g));
+            String string2 = g9.getString(q.a(t.b().g(), "myoffer_give_up", com.anythink.expressad.foundation.h.k.f20423g));
+            String string3 = g9.getString(q.a(t.b().g(), "myoffer_continue", com.anythink.expressad.foundation.h.k.f20423g));
             textView.setText(string + "\"" + aL + "\"?");
             textView2.setText(string2);
             textView3.setText(string3);
-            final Dialog dialog = new Dialog(activity, q.a(g4, "style_full_screen_translucent_dialog", com.anythink.expressad.foundation.h.k.f19634e));
+            final Dialog dialog = new Dialog(activity, q.a(g9, "style_full_screen_translucent_dialog", com.anythink.expressad.foundation.h.k.f20421e));
             dialog.setContentView(inflate);
             dialog.setCancelable(false);
             textView2.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.d.h.1
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     h hVar = h.this;
-                    String str = hVar.f6196b;
-                    String v9 = ((bf) hVar).f13627d.v();
+                    String str = hVar.f6982b;
+                    String v9 = ((bf) hVar).f14413d.v();
                     h hVar2 = h.this;
-                    com.anythink.core.common.u.e.a(str, v9, hVar2.f6195a, 7, (String) null, 0L, 0L, ((bf) hVar2).f13627d.ap(), ((bf) h.this).f13627d.aq());
+                    com.anythink.core.common.u.e.a(str, v9, hVar2.f6981a, 7, (String) null, 0L, 0L, ((bf) hVar2).f14413d.ap(), ((bf) h.this).f14413d.aq());
                     try {
                         dialog.dismiss();
                     } catch (Throwable unused) {
@@ -74,20 +74,20 @@ public final class h extends bf {
                 public final void onClick(View view) {
                     try {
                         h hVar = h.this;
-                        String str = hVar.f6196b;
-                        String v9 = ((bf) hVar).f13627d.v();
+                        String str = hVar.f6982b;
+                        String v9 = ((bf) hVar).f14413d.v();
                         h hVar2 = h.this;
-                        com.anythink.core.common.u.e.a(str, v9, hVar2.f6195a, 8, (String) null, 0L, 0L, ((bf) hVar2).f13627d.ap(), ((bf) h.this).f13627d.aq());
-                        boolean a9 = com.anythink.basead.b.b.a(g4, ((bf) h.this).f13627d);
+                        com.anythink.core.common.u.e.a(str, v9, hVar2.f6981a, 8, (String) null, 0L, 0L, ((bf) hVar2).f14413d.ap(), ((bf) h.this).f14413d.aq());
+                        boolean a9 = com.anythink.basead.b.b.a(g9, ((bf) h.this).f14413d);
                         if (a9) {
                             h hVar3 = h.this;
-                            String str2 = hVar3.f6196b;
-                            String v10 = ((bf) hVar3).f13627d.v();
+                            String str2 = hVar3.f6982b;
+                            String v10 = ((bf) hVar3).f14413d.v();
                             h hVar4 = h.this;
-                            com.anythink.core.common.u.e.a(str2, v10, hVar4.f6195a, 9, (String) null, 0L, 0L, ((bf) hVar4).f13627d.ap(), ((bf) h.this).f13627d.aq());
+                            com.anythink.core.common.u.e.a(str2, v10, hVar4.f6981a, 9, (String) null, 0L, 0L, ((bf) hVar4).f14413d.ap(), ((bf) h.this).f14413d.aq());
                         }
                         dialog.dismiss();
-                        com.anythink.core.common.k.c cVar = h.this.f6197c;
+                        com.anythink.core.common.k.c cVar = h.this.f6983c;
                         if (cVar != null) {
                             cVar.a(a9);
                         }

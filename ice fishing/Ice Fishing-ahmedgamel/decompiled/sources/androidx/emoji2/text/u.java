@@ -1,67 +1,67 @@
 package androidx.emoji2.text;
 
-import b0.C0511a;
-import b0.C0512b;
+import b0.C0515a;
+import b0.C0516b;
 import java.nio.ByteBuffer;
 
 /* loaded from: classes.dex */
 public final class u {
 
     /* renamed from: d, reason: collision with root package name */
-    public static final ThreadLocal f4802d = new ThreadLocal();
+    public static final ThreadLocal f4770d = new ThreadLocal();
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f4803a;
+    public final int f4771a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final S0.i f4804b;
+    public final S0.n f4772b;
 
     /* renamed from: c, reason: collision with root package name */
-    public volatile int f4805c = 0;
+    public volatile int f4773c = 0;
 
-    public u(S0.i iVar, int i) {
-        this.f4804b = iVar;
-        this.f4803a = i;
+    public u(S0.n nVar, int i) {
+        this.f4772b = nVar;
+        this.f4771a = i;
     }
 
     public final int a(int i) {
-        C0511a b9 = b();
+        C0515a b9 = b();
         int a9 = b9.a(16);
         if (a9 == 0) {
             return 0;
         }
-        ByteBuffer byteBuffer = (ByteBuffer) b9.f2045w;
-        int i6 = a9 + b9.f2042n;
-        return byteBuffer.getInt((i * 4) + byteBuffer.getInt(i6) + i6 + 4);
+        ByteBuffer byteBuffer = (ByteBuffer) b9.f2133w;
+        int i4 = a9 + b9.f2130n;
+        return byteBuffer.getInt((i * 4) + byteBuffer.getInt(i4) + i4 + 4);
     }
 
-    public final C0511a b() {
-        ThreadLocal threadLocal = f4802d;
-        C0511a c0511a = (C0511a) threadLocal.get();
-        if (c0511a == null) {
-            c0511a = new C0511a();
-            threadLocal.set(c0511a);
+    public final C0515a b() {
+        ThreadLocal threadLocal = f4770d;
+        C0515a c0515a = (C0515a) threadLocal.get();
+        if (c0515a == null) {
+            c0515a = new C0515a();
+            threadLocal.set(c0515a);
         }
-        C0512b c0512b = (C0512b) this.f4804b.f2788u;
-        int a9 = c0512b.a(6);
+        C0516b c0516b = (C0516b) this.f4772b.f2931u;
+        int a9 = c0516b.a(6);
         if (a9 != 0) {
-            int i = a9 + c0512b.f2042n;
-            int i6 = (this.f4803a * 4) + ((ByteBuffer) c0512b.f2045w).getInt(i) + i + 4;
-            int i9 = ((ByteBuffer) c0512b.f2045w).getInt(i6) + i6;
-            ByteBuffer byteBuffer = (ByteBuffer) c0512b.f2045w;
-            c0511a.f2045w = byteBuffer;
+            int i = a9 + c0516b.f2130n;
+            int i4 = (this.f4771a * 4) + ((ByteBuffer) c0516b.f2133w).getInt(i) + i + 4;
+            int i6 = ((ByteBuffer) c0516b.f2133w).getInt(i4) + i4;
+            ByteBuffer byteBuffer = (ByteBuffer) c0516b.f2133w;
+            c0515a.f2133w = byteBuffer;
             if (byteBuffer != null) {
-                c0511a.f2042n = i9;
-                int i10 = i9 - byteBuffer.getInt(i9);
-                c0511a.f2043u = i10;
-                c0511a.f2044v = ((ByteBuffer) c0511a.f2045w).getShort(i10);
-                return c0511a;
+                c0515a.f2130n = i6;
+                int i9 = i6 - byteBuffer.getInt(i6);
+                c0515a.f2131u = i9;
+                c0515a.f2132v = ((ByteBuffer) c0515a.f2133w).getShort(i9);
+                return c0515a;
             }
-            c0511a.f2042n = 0;
-            c0511a.f2043u = 0;
-            c0511a.f2044v = 0;
+            c0515a.f2130n = 0;
+            c0515a.f2131u = 0;
+            c0515a.f2132v = 0;
         }
-        return c0511a;
+        return c0515a;
     }
 
     public final String toString() {
@@ -69,20 +69,20 @@ public final class u {
         StringBuilder sb = new StringBuilder();
         sb.append(super.toString());
         sb.append(", id:");
-        C0511a b9 = b();
+        C0515a b9 = b();
         int a9 = b9.a(4);
-        sb.append(Integer.toHexString(a9 != 0 ? ((ByteBuffer) b9.f2045w).getInt(a9 + b9.f2042n) : 0));
+        sb.append(Integer.toHexString(a9 != 0 ? ((ByteBuffer) b9.f2133w).getInt(a9 + b9.f2130n) : 0));
         sb.append(", codepoints:");
-        C0511a b10 = b();
+        C0515a b10 = b();
         int a10 = b10.a(16);
         if (a10 != 0) {
-            int i6 = a10 + b10.f2042n;
-            i = ((ByteBuffer) b10.f2045w).getInt(((ByteBuffer) b10.f2045w).getInt(i6) + i6);
+            int i4 = a10 + b10.f2130n;
+            i = ((ByteBuffer) b10.f2133w).getInt(((ByteBuffer) b10.f2133w).getInt(i4) + i4);
         } else {
             i = 0;
         }
-        for (int i9 = 0; i9 < i; i9++) {
-            sb.append(Integer.toHexString(a(i9)));
+        for (int i6 = 0; i6 < i; i6++) {
+            sb.append(Integer.toHexString(a(i6)));
             sb.append(" ");
         }
         return sb.toString();

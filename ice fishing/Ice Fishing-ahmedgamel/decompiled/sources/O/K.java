@@ -9,37 +9,37 @@ import java.util.WeakHashMap;
 public final class K implements View.OnApplyWindowInsetsListener {
 
     /* renamed from: a, reason: collision with root package name */
-    public A0 f2046a = null;
+    public A0 f2134a = null;
 
     /* renamed from: b, reason: collision with root package name */
-    public final /* synthetic */ View f2047b;
+    public final /* synthetic */ View f2135b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final /* synthetic */ InterfaceC0345u f2048c;
+    public final /* synthetic */ InterfaceC0350u f2136c;
 
-    public K(View view, InterfaceC0345u interfaceC0345u) {
-        this.f2047b = view;
-        this.f2048c = interfaceC0345u;
+    public K(View view, InterfaceC0350u interfaceC0350u) {
+        this.f2135b = view;
+        this.f2136c = interfaceC0350u;
     }
 
     @Override // android.view.View.OnApplyWindowInsetsListener
     public WindowInsets onApplyWindowInsets(View view, WindowInsets windowInsets) {
-        A0 h9 = A0.h(view, windowInsets);
+        A0 h3 = A0.h(view, windowInsets);
         int i = Build.VERSION.SDK_INT;
-        InterfaceC0345u interfaceC0345u = this.f2048c;
+        InterfaceC0350u interfaceC0350u = this.f2136c;
         if (i < 30) {
-            L.a(windowInsets, this.f2047b);
-            if (h9.equals(this.f2046a)) {
-                return interfaceC0345u.q(view, h9).g();
+            L.a(windowInsets, this.f2135b);
+            if (h3.equals(this.f2134a)) {
+                return interfaceC0350u.p(view, h3).g();
             }
         }
-        this.f2046a = h9;
-        A0 q8 = interfaceC0345u.q(view, h9);
+        this.f2134a = h3;
+        A0 p9 = interfaceC0350u.p(view, h3);
         if (i >= 30) {
-            return q8.g();
+            return p9.g();
         }
-        WeakHashMap weakHashMap = X.f2054a;
+        WeakHashMap weakHashMap = X.f2142a;
         J.c(view);
-        return q8.g();
+        return p9.g();
     }
 }

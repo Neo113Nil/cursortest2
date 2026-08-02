@@ -6,17 +6,17 @@ import java.util.HashMap;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static String f17522a = a.b("YFPpVTzBLkxgHVfXYrPQDbN=");
+    public static String f18309a = a.b("YFPpVTzBLkxgHVfXYrPQDbN=");
 
     /* renamed from: b, reason: collision with root package name */
-    public static String f17523b = a.b("YFPpVTzBLkxgHVfXYrPQDbxQHv==");
+    public static String f18310b = a.b("YFPpVTzBLkxgHVfXYrPQDbxQHv==");
 
     /* renamed from: c, reason: collision with root package name */
-    public static HashMap<String, String> f17524c;
+    public static HashMap<String, String> f18311c;
 
     static {
         HashMap<String, String> hashMap = new HashMap<>();
-        f17524c = hashMap;
-        hashMap.put(f17522a, "onSignalCommunication");
+        f18311c = hashMap;
+        hashMap.put(f18309a, "onSignalCommunication");
     }
 }

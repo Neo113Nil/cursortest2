@@ -1,19 +1,21 @@
 package com.google.android.gms.internal.ads;
 
-import android.media.MediaCodec;
+import android.os.Bundle;
 
 /* loaded from: classes2.dex */
-public class NP extends AbstractC3888sN {
+public interface NP {
+    void b(int i, C3857rN c3857rN, long j6, int i4);
 
-    /* renamed from: n, reason: collision with root package name */
-    public final int f26489n;
+    /* renamed from: c */
+    void mo11c();
 
-    public NP(IllegalStateException illegalStateException, OP op) {
-        super("Decoder failed: ".concat(String.valueOf(op == null ? null : op.f26604a)), illegalStateException);
-        boolean z3 = illegalStateException instanceof MediaCodec.CodecException;
-        if (z3) {
-            ((MediaCodec.CodecException) illegalStateException).getDiagnosticInfo();
-        }
-        this.f26489n = z3 ? ((MediaCodec.CodecException) illegalStateException).getErrorCode() : 0;
-    }
+    void d();
+
+    void e();
+
+    void f(Bundle bundle);
+
+    void g(int i, int i4, int i6, long j6);
+
+    void h();
 }

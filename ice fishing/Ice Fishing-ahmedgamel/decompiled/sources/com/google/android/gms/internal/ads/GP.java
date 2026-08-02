@@ -6,17 +6,17 @@ import android.media.MediaCodec;
 public final class GP {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f24971a;
+    public int f25761a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f24972b;
+    public int f25762b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final MediaCodec.CryptoInfo f24973c = new MediaCodec.CryptoInfo();
+    public final MediaCodec.CryptoInfo f25763c = new MediaCodec.CryptoInfo();
 
     /* renamed from: d, reason: collision with root package name */
-    public long f24974d;
+    public long f25764d;
 
     /* renamed from: e, reason: collision with root package name */
-    public int f24975e;
+    public int f25765e;
 }

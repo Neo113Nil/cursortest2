@@ -12,10 +12,10 @@ import org.json.JSONObject;
 public final class t extends a {
 
     /* renamed from: a, reason: collision with root package name */
-    bd f14733a;
+    bd f15519a;
 
     public t(bd bdVar) {
-        this.f14733a = bdVar;
+        this.f15519a = bdVar;
     }
 
     @Override // com.anythink.core.common.m.a
@@ -29,7 +29,7 @@ public final class t extends a {
 
     @Override // com.anythink.core.common.m.a
     public final Map<String, String> c() {
-        String str = this.f14733a.f13617c;
+        String str = this.f15519a.f14403c;
         HashMap hashMap = new HashMap();
         try {
             JSONObject jSONObject = new JSONObject(str);
@@ -84,11 +84,11 @@ public final class t extends a {
 
     @Override // com.anythink.core.common.m.a
     public final int a() {
-        return this.f14733a.f13616b;
+        return this.f15519a.f14402b;
     }
 
     @Override // com.anythink.core.common.m.a
     public final String b() {
-        return this.f14733a.f13618d;
+        return this.f15519a.f14404d;
     }
 }

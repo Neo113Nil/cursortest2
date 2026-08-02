@@ -28,7 +28,7 @@ import java.util.List;
 public class SinglePictureBottomSlideSplashATView extends BaseNewStyleSDKSplashATView {
 
     /* renamed from: a, reason: collision with root package name */
-    View f10341a;
+    View f11127a;
     TextView ad;
     final long ae;
     ObjectAnimator af;
@@ -36,13 +36,13 @@ public class SinglePictureBottomSlideSplashATView extends BaseNewStyleSDKSplashA
     private List<Integer> ah;
 
     /* renamed from: b, reason: collision with root package name */
-    ImageView f10342b;
+    ImageView f11128b;
 
     /* renamed from: c, reason: collision with root package name */
-    SplashBottomShakeTextHintView f10343c;
+    SplashBottomShakeTextHintView f11129c;
 
     /* renamed from: d, reason: collision with root package name */
-    TextView f10344d;
+    TextView f11130d;
 
     /* renamed from: com.anythink.basead.ui.SinglePictureBottomSlideSplashATView$3, reason: invalid class name */
     public class AnonymousClass3 implements ValueAnimator.AnimatorUpdateListener {
@@ -53,11 +53,11 @@ public class SinglePictureBottomSlideSplashATView extends BaseNewStyleSDKSplashA
         public final void onAnimationUpdate(ValueAnimator valueAnimator) {
             int intValue = ((Integer) valueAnimator.getAnimatedValue()).intValue();
             SinglePictureBottomSlideSplashATView singlePictureBottomSlideSplashATView = SinglePictureBottomSlideSplashATView.this;
-            if (singlePictureBottomSlideSplashATView.f10342b == null || intValue >= singlePictureBottomSlideSplashATView.ah.size()) {
+            if (singlePictureBottomSlideSplashATView.f11128b == null || intValue >= singlePictureBottomSlideSplashATView.ah.size()) {
                 return;
             }
             SinglePictureBottomSlideSplashATView singlePictureBottomSlideSplashATView2 = SinglePictureBottomSlideSplashATView.this;
-            singlePictureBottomSlideSplashATView2.f10342b.setImageResource(((Integer) singlePictureBottomSlideSplashATView2.ah.get(intValue)).intValue());
+            singlePictureBottomSlideSplashATView2.f11128b.setImageResource(((Integer) singlePictureBottomSlideSplashATView2.ah.get(intValue)).intValue());
         }
     }
 
@@ -67,7 +67,7 @@ public class SinglePictureBottomSlideSplashATView extends BaseNewStyleSDKSplashA
     }
 
     private void D() {
-        View view = this.f10341a;
+        View view = this.f11127a;
         if (view != null) {
             ObjectAnimator ofFloat = ObjectAnimator.ofFloat(view, "scaleY", 1.0f, 1.1f);
             this.af = ofFloat;
@@ -75,12 +75,12 @@ public class SinglePictureBottomSlideSplashATView extends BaseNewStyleSDKSplashA
             this.af.setRepeatCount(-1);
             this.af.setRepeatMode(2);
         }
-        if (this.f10342b != null) {
+        if (this.f11128b != null) {
             ArrayList arrayList = new ArrayList();
             this.ah = arrayList;
-            arrayList.add(Integer.valueOf(q.a(getContext(), "myoffer_slide_up_arrow_1", k.f19632c)));
-            this.ah.add(Integer.valueOf(q.a(getContext(), "myoffer_slide_up_arrow_2", k.f19632c)));
-            this.ah.add(Integer.valueOf(q.a(getContext(), "myoffer_slide_up_arrow_3", k.f19632c)));
+            arrayList.add(Integer.valueOf(q.a(getContext(), "myoffer_slide_up_arrow_1", k.f20419c)));
+            this.ah.add(Integer.valueOf(q.a(getContext(), "myoffer_slide_up_arrow_2", k.f20419c)));
+            this.ah.add(Integer.valueOf(q.a(getContext(), "myoffer_slide_up_arrow_3", k.f20419c)));
             ValueAnimator ofInt = ValueAnimator.ofInt(0, this.ah.size());
             this.ag = ofInt;
             ofInt.setDuration(700L);
@@ -127,21 +127,21 @@ public class SinglePictureBottomSlideSplashATView extends BaseNewStyleSDKSplashA
     @Override // com.anythink.basead.ui.BaseSdkSplashATView
     public final void b() {
         View findViewById = findViewById(q.a(getContext(), "myoffer_splash_ad_bottom_container", "id"));
-        this.f9745q = findViewById;
-        this.f9742n.add(findViewById);
-        this.f10341a = findViewById(q.a(getContext(), "myoffer_splash_ad_bottom_bg", "id"));
-        this.f10342b = (ImageView) findViewById(q.a(getContext(), "myoffer_splash_ad_bottom_slide_icon", "id"));
-        this.f10343c = (SplashBottomShakeTextHintView) findViewById(q.a(getContext(), "myoffer_splash_cta_shake", "id"));
-        this.f10344d = (TextView) findViewById(q.a(getContext(), "myoffer_splash_ad_bottom_slide_hint", "id"));
+        this.f10531q = findViewById;
+        this.f10528n.add(findViewById);
+        this.f11127a = findViewById(q.a(getContext(), "myoffer_splash_ad_bottom_bg", "id"));
+        this.f11128b = (ImageView) findViewById(q.a(getContext(), "myoffer_splash_ad_bottom_slide_icon", "id"));
+        this.f11129c = (SplashBottomShakeTextHintView) findViewById(q.a(getContext(), "myoffer_splash_cta_shake", "id"));
+        this.f11130d = (TextView) findViewById(q.a(getContext(), "myoffer_splash_ad_bottom_slide_hint", "id"));
         this.ad = (TextView) findViewById(q.a(getContext(), "myoffer_splash_ad_bottom_slide_title", "id"));
         if (n()) {
-            if (this.f10343c != null) {
-                this.f10342b.setVisibility(8);
-                this.f10344d.setVisibility(8);
-                this.ad.setText(e.a(getContext(), this.f9736g.K()));
-                this.f10343c.setVisibility(0);
-                this.f10343c.setShakeSetting(this.f9735f.f14168o, this.f9736g.K());
-                this.f10343c.setOnShakeListener(new BaseShakeView.a() { // from class: com.anythink.basead.ui.SinglePictureBottomSlideSplashATView.2
+            if (this.f11129c != null) {
+                this.f11128b.setVisibility(8);
+                this.f11130d.setVisibility(8);
+                this.ad.setText(e.a(getContext(), this.f10522g.K()));
+                this.f11129c.setVisibility(0);
+                this.f11129c.setShakeSetting(this.f10521f.f14954o, this.f10522g.K());
+                this.f11129c.setOnShakeListener(new BaseShakeView.a() { // from class: com.anythink.basead.ui.SinglePictureBottomSlideSplashATView.2
                     @Override // com.anythink.basead.ui.BaseShakeView.a
                     public final boolean a() {
                         if (!SinglePictureBottomSlideSplashATView.this.C()) {
@@ -150,12 +150,12 @@ public class SinglePictureBottomSlideSplashATView extends BaseNewStyleSDKSplashA
                         SinglePictureBottomSlideSplashATView.this.a(4, 5);
                         return true;
                     }
-                }, this.f9735f.f14168o);
+                }, this.f10521f.f14954o);
                 return;
             }
             return;
         }
-        View view = this.f10341a;
+        View view = this.f11127a;
         if (view != null) {
             ObjectAnimator ofFloat = ObjectAnimator.ofFloat(view, "scaleY", 1.0f, 1.1f);
             this.af = ofFloat;
@@ -163,12 +163,12 @@ public class SinglePictureBottomSlideSplashATView extends BaseNewStyleSDKSplashA
             this.af.setRepeatCount(-1);
             this.af.setRepeatMode(2);
         }
-        if (this.f10342b != null) {
+        if (this.f11128b != null) {
             ArrayList arrayList = new ArrayList();
             this.ah = arrayList;
-            arrayList.add(Integer.valueOf(q.a(getContext(), "myoffer_slide_up_arrow_1", k.f19632c)));
-            this.ah.add(Integer.valueOf(q.a(getContext(), "myoffer_slide_up_arrow_2", k.f19632c)));
-            this.ah.add(Integer.valueOf(q.a(getContext(), "myoffer_slide_up_arrow_3", k.f19632c)));
+            arrayList.add(Integer.valueOf(q.a(getContext(), "myoffer_slide_up_arrow_1", k.f20419c)));
+            this.ah.add(Integer.valueOf(q.a(getContext(), "myoffer_slide_up_arrow_2", k.f20419c)));
+            this.ah.add(Integer.valueOf(q.a(getContext(), "myoffer_slide_up_arrow_3", k.f20419c)));
             ValueAnimator ofInt = ValueAnimator.ofInt(0, this.ah.size());
             this.ag = ofInt;
             ofInt.setDuration(700L);
@@ -180,20 +180,20 @@ public class SinglePictureBottomSlideSplashATView extends BaseNewStyleSDKSplashA
     @Override // com.anythink.basead.ui.BaseSdkSplashATView
     public final void c() {
         super.c();
-        com.anythink.core.common.res.b.a(getContext()).a(new com.anythink.core.common.res.e(1, this.f9736g.B()), getResources().getDisplayMetrics().widthPixels, getResources().getDisplayMetrics().heightPixels, new b.a() { // from class: com.anythink.basead.ui.SinglePictureBottomSlideSplashATView.4
+        com.anythink.core.common.res.b.a(getContext()).a(new com.anythink.core.common.res.e(1, this.f10522g.B()), getResources().getDisplayMetrics().widthPixels, getResources().getDisplayMetrics().heightPixels, new b.a() { // from class: com.anythink.basead.ui.SinglePictureBottomSlideSplashATView.4
             @Override // com.anythink.core.common.res.b.a
             public final void onFail(String str, String str2) {
             }
 
             @Override // com.anythink.core.common.res.b.a
             public final void onSuccess(String str, final Bitmap bitmap) {
-                if (TextUtils.equals(str, SinglePictureBottomSlideSplashATView.this.f9736g.B())) {
+                if (TextUtils.equals(str, SinglePictureBottomSlideSplashATView.this.f10522g.B())) {
                     SinglePictureBottomSlideSplashATView singlePictureBottomSlideSplashATView = SinglePictureBottomSlideSplashATView.this;
                     final WrapRoundImageView wrapRoundImageView = (WrapRoundImageView) singlePictureBottomSlideSplashATView.findViewById(q.a(singlePictureBottomSlideSplashATView.getContext(), "myoffer_splash_ad_content_image_area", "id"));
                     SinglePictureBottomSlideSplashATView singlePictureBottomSlideSplashATView2 = SinglePictureBottomSlideSplashATView.this;
                     final RoundImageView roundImageView = (RoundImageView) singlePictureBottomSlideSplashATView2.findViewById(q.a(singlePictureBottomSlideSplashATView2.getContext(), "myoffer_splash_bg", "id"));
                     wrapRoundImageView.setVisibility(0);
-                    if (SinglePictureBottomSlideSplashATView.this.f9735f.f14168o.t() == 2) {
+                    if (SinglePictureBottomSlideSplashATView.this.f10521f.f14954o.t() == 2) {
                         wrapRoundImageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
                         wrapRoundImageView.setImageBitmap(bitmap);
                     } else {
@@ -225,23 +225,23 @@ public class SinglePictureBottomSlideSplashATView extends BaseNewStyleSDKSplashA
 
     @Override // com.anythink.basead.ui.BaseSdkSplashATView
     public final void d() {
-        a(this.f9735f.f14168o.ab() < 0 ? 100 : this.f9735f.f14168o.ab(), new Runnable() { // from class: com.anythink.basead.ui.SinglePictureBottomSlideSplashATView.5
+        a(this.f10521f.f14954o.ab() < 0 ? 100 : this.f10521f.f14954o.ab(), new Runnable() { // from class: com.anythink.basead.ui.SinglePictureBottomSlideSplashATView.5
             @Override // java.lang.Runnable
             public final void run() {
                 SinglePictureBottomSlideSplashATView singlePictureBottomSlideSplashATView = SinglePictureBottomSlideSplashATView.this;
-                if (singlePictureBottomSlideSplashATView.f9941O == null) {
+                if (singlePictureBottomSlideSplashATView.f10727O == null) {
                     return;
                 }
                 int width = singlePictureBottomSlideSplashATView.getWidth();
                 int height = SinglePictureBottomSlideSplashATView.this.getHeight();
                 int i = (int) (SinglePictureBottomSlideSplashATView.this.getResources().getDisplayMetrics().heightPixels * 0.5d);
                 if (width < ((int) (SinglePictureBottomSlideSplashATView.this.getResources().getDisplayMetrics().widthPixels * 0.5d))) {
-                    SinglePictureBottomSlideSplashATView.this.a(g.a(g.f6179k, "Splash display width is less than 50% of screen width!"));
+                    SinglePictureBottomSlideSplashATView.this.a(g.a(g.f6965k, "Splash display width is less than 50% of screen width!"));
                     Log.e("anythink", "Splash display width is less than 50% of screen width!");
                 } else if (height >= i) {
                     SinglePictureBottomSlideSplashATView.this.j();
                 } else {
-                    SinglePictureBottomSlideSplashATView.this.a(g.a(g.f6179k, "Splash display height is less than 50% of screen height!"));
+                    SinglePictureBottomSlideSplashATView.this.a(g.a(g.f6965k, "Splash display height is less than 50% of screen height!"));
                     Log.e("anythink", "Splash display height is less than 50% of screen height!");
                 }
             }
@@ -252,12 +252,12 @@ public class SinglePictureBottomSlideSplashATView extends BaseNewStyleSDKSplashA
     public final void a() {
         View inflate = LayoutInflater.from(getContext()).inflate(q.a(getContext(), "myoffer_splash_ad_layout_single_bottom_slide", "layout"), this);
         w();
-        d dVar = this.f9946T;
+        d dVar = this.f10732T;
         if (dVar != null) {
-            dVar.a(d.f10801c).a(new com.anythink.basead.ui.d.a() { // from class: com.anythink.basead.ui.SinglePictureBottomSlideSplashATView.1
+            dVar.a(d.f11587c).a(new com.anythink.basead.ui.d.a() { // from class: com.anythink.basead.ui.SinglePictureBottomSlideSplashATView.1
                 @Override // com.anythink.basead.ui.d.a
-                public final void a(int i, int i6) {
-                    SinglePictureBottomSlideSplashATView.this.a(i, i6);
+                public final void a(int i, int i4) {
+                    SinglePictureBottomSlideSplashATView.this.a(i, i4);
                 }
             }).a(getContext(), inflate);
         }

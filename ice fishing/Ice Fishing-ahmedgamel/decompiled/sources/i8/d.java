@@ -1,24 +1,25 @@
 package i8;
 
+import a.AbstractC0426a;
 import java.util.ArrayList;
 import java.util.Set;
-import v7.AbstractC5129j;
+import v7.AbstractC5119j;
 
 /* loaded from: classes2.dex */
 public final class d {
 
     /* renamed from: c, reason: collision with root package name */
-    public static final d f38092c = new d(AbstractC5129j.P(new ArrayList()), null);
+    public static final d f38211c = new d(AbstractC5119j.N(new ArrayList()), null);
 
     /* renamed from: a, reason: collision with root package name */
-    public final Set f38093a;
+    public final Set f38212a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final com.bumptech.glide.e f38094b;
+    public final AbstractC0426a f38213b;
 
-    public d(Set set, com.bumptech.glide.e eVar) {
-        this.f38093a = set;
-        this.f38094b = eVar;
+    public d(Set set, AbstractC0426a abstractC0426a) {
+        this.f38212a = set;
+        this.f38213b = abstractC0426a;
     }
 
     public final boolean equals(Object obj) {
@@ -26,12 +27,12 @@ public final class d {
             return false;
         }
         d dVar = (d) obj;
-        return kotlin.jvm.internal.h.a(dVar.f38093a, this.f38093a) && kotlin.jvm.internal.h.a(dVar.f38094b, this.f38094b);
+        return kotlin.jvm.internal.h.a(dVar.f38212a, this.f38212a) && kotlin.jvm.internal.h.a(dVar.f38213b, this.f38213b);
     }
 
     public final int hashCode() {
-        int hashCode = (this.f38093a.hashCode() + 1517) * 41;
-        com.bumptech.glide.e eVar = this.f38094b;
-        return hashCode + (eVar != null ? eVar.hashCode() : 0);
+        int hashCode = (this.f38212a.hashCode() + 1517) * 41;
+        AbstractC0426a abstractC0426a = this.f38213b;
+        return hashCode + (abstractC0426a != null ? abstractC0426a.hashCode() : 0);
     }
 }

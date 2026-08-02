@@ -8,10 +8,10 @@ import com.anythink.expressad.atsignalcommon.windvane.j;
 public class BaseBannerSignalPlugin extends j {
 
     /* renamed from: a, reason: collision with root package name */
-    protected c f18019a;
+    protected c f18806a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final String f18020b = "BaseBannerSignalPlugin";
+    private final String f18807b = "BaseBannerSignalPlugin";
 
     public void click(Object obj, String str) {
     }
@@ -37,12 +37,12 @@ public class BaseBannerSignalPlugin extends j {
         super.initialize(context, windVaneWebView);
         try {
             if (context instanceof c) {
-                this.f18019a = (c) context;
+                this.f18806a = (c) context;
             } else {
                 if (windVaneWebView.getObject() == null || !(windVaneWebView.getObject() instanceof c)) {
                     return;
                 }
-                this.f18019a = (c) windVaneWebView.getObject();
+                this.f18806a = (c) windVaneWebView.getObject();
             }
         } catch (Throwable unused) {
         }

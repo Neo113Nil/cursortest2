@@ -13,10 +13,10 @@ import com.anythink.core.common.v.p;
 public class BaseWebView extends WebView {
 
     /* renamed from: a, reason: collision with root package name */
-    private static boolean f11940a = false;
+    private static boolean f12726a = false;
 
     /* renamed from: g, reason: collision with root package name */
-    protected boolean f11941g;
+    protected boolean f12727g;
 
     public BaseWebView(Context context) {
         super(context);
@@ -41,10 +41,10 @@ public class BaseWebView extends WebView {
 
     @Override // android.webkit.WebView
     public void destroy() {
-        if (this.f11941g) {
+        if (this.f12727g) {
             return;
         }
-        this.f11941g = true;
+        this.f12727g = true;
         am.a(this);
         stopLoading();
         setWebChromeClient(null);
@@ -52,13 +52,13 @@ public class BaseWebView extends WebView {
         clearHistory();
         clearCache(true);
         getSettings().setJavaScriptEnabled(false);
-        loadUrl(d.f16215a);
+        loadUrl(d.f17002a);
         removeAllViews();
         super.destroy();
     }
 
     public boolean isDestroyed() {
-        return this.f11941g;
+        return this.f12727g;
     }
 
     @Override // android.webkit.WebView, android.view.ViewGroup, android.view.View
@@ -74,11 +74,11 @@ public class BaseWebView extends WebView {
         getSettings().setAllowUniversalAccessFromFileURLs(false);
         com.anythink.core.basead.ui.a.a.a(this);
         p.a(this);
-        if (f11940a) {
+        if (f12726a) {
             return;
         }
         getContext();
-        f11940a = true;
+        f12726a = true;
     }
 
     public BaseWebView(Context context, AttributeSet attributeSet) {

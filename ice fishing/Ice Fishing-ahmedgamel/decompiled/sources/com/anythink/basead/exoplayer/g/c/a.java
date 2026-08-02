@@ -27,45 +27,45 @@ public final class a extends b {
     };
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f7338a;
+    public final long f8124a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final long f7339b;
+    public final long f8125b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final byte[] f7340c;
+    public final byte[] f8126c;
 
     public /* synthetic */ a(Parcel parcel, byte b9) {
         this(parcel);
     }
 
     public static a a(s sVar, int i, long j6) {
-        long h9 = sVar.h();
-        int i6 = i - 4;
-        byte[] bArr = new byte[i6];
-        sVar.a(bArr, 0, i6);
-        return new a(h9, bArr, j6);
+        long h3 = sVar.h();
+        int i4 = i - 4;
+        byte[] bArr = new byte[i4];
+        sVar.a(bArr, 0, i4);
+        return new a(h3, bArr, j6);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeLong(this.f7338a);
-        parcel.writeLong(this.f7339b);
-        parcel.writeInt(this.f7340c.length);
-        parcel.writeByteArray(this.f7340c);
+        parcel.writeLong(this.f8124a);
+        parcel.writeLong(this.f8125b);
+        parcel.writeInt(this.f8126c.length);
+        parcel.writeByteArray(this.f8126c);
     }
 
     private a(long j6, byte[] bArr, long j9) {
-        this.f7338a = j9;
-        this.f7339b = j6;
-        this.f7340c = bArr;
+        this.f8124a = j9;
+        this.f8125b = j6;
+        this.f8126c = bArr;
     }
 
     private a(Parcel parcel) {
-        this.f7338a = parcel.readLong();
-        this.f7339b = parcel.readLong();
+        this.f8124a = parcel.readLong();
+        this.f8125b = parcel.readLong();
         byte[] bArr = new byte[parcel.readInt()];
-        this.f7340c = bArr;
+        this.f8126c = bArr;
         parcel.readByteArray(bArr);
     }
 }

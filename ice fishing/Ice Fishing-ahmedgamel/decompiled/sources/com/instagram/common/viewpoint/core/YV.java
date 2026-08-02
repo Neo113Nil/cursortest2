@@ -10,16 +10,16 @@ public final class YV {
     public static String[] A01 = {"CRKlMdJj7sWkVQXvhxP2gtYMKrwrdBdz", "MDVslC7yGiRJk7iB8DE8e8h4fEVrC5ER", "lH08WA", "RxIchMFZh", "vNyd6Jid8bvsA1cw15Ve5Ic9LBA7HcUI", "txgfdNfKSs8Co5f2ObGoVq", "d8ndlqqx7tIKNJdyWXTDq8r8sQB5dgXc", "5RbatCjsfF363SonahZsted9lIdQCMHb"};
     public static final String A02;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            int i11 = copyOfRange[i10] - i9;
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            int i10 = copyOfRange[i9] - i6;
             String[] strArr = A01;
             if (strArr[4].charAt(3) != strArr[6].charAt(3)) {
                 throw new RuntimeException();
             }
             A01[2] = "R3kMyn";
-            copyOfRange[i10] = (byte) (i11 - 20);
+            copyOfRange[i9] = (byte) (i10 - 20);
         }
         return new String(copyOfRange);
     }
@@ -33,19 +33,19 @@ public final class YV {
         A02 = YV.class.getSimpleName();
     }
 
-    public static boolean A02(C1840gi c1840gi) {
-        return A03(c1840gi) && YW.A03(c1840gi);
+    public static boolean A02(C1860gi c1860gi) {
+        return A03(c1860gi) && YW.A03(c1860gi);
     }
 
-    public static boolean A03(C1840gi c1840gi) {
-        if (c1840gi == null) {
+    public static boolean A03(C1860gi c1860gi) {
+        if (c1860gi == null) {
             return true;
         }
         try {
-            return ((PowerManager) c1840gi.getSystemService(A00(60, 5, 91))).isInteractive();
+            return ((PowerManager) c1860gi.getSystemService(A00(60, 5, 91))).isInteractive();
         } catch (Exception e9) {
             Log.e(A02, A00(0, 60, 20), e9);
-            c1840gi.A08().ABC(A00(65, 5, 53), AbstractC1252Td.A2S, new C1253Te(e9));
+            c1860gi.A08().ABC(A00(65, 5, 53), AbstractC1272Td.A2S, new C1273Te(e9));
             return true;
         }
     }

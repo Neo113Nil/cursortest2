@@ -5,7 +5,7 @@ import android.os.Handler;
 import android.os.Looper;
 import com.anythink.core.common.s.a.b;
 import com.anythink.core.common.s.a.e;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -23,173 +23,173 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public abstract class a implements SharedPreferences, SharedPreferences.Editor {
 
     /* renamed from: a, reason: collision with root package name */
-    protected static final String f16260a = "both files error";
+    protected static final String f17047a = "both files error";
 
     /* renamed from: b, reason: collision with root package name */
-    protected static final String f16261b = "parse dara failed";
+    protected static final String f17048b = "parse dara failed";
 
     /* renamed from: c, reason: collision with root package name */
-    protected static final String f16262c = "open file failed";
+    protected static final String f17049c = "open file failed";
 
     /* renamed from: d, reason: collision with root package name */
-    protected static final String f16263d = "map failed";
+    protected static final String f17050d = "map failed";
 
     /* renamed from: e, reason: collision with root package name */
-    protected static final String f16264e = "miss cipher";
+    protected static final String f17051e = "miss cipher";
 
     /* renamed from: f, reason: collision with root package name */
-    protected static final String f16265f = "Encrypt failed";
+    protected static final String f17052f = "Encrypt failed";
 
     /* renamed from: g, reason: collision with root package name */
-    static final String f16266g = "truncate finish";
+    static final String f17053g = "truncate finish";
 
     /* renamed from: h, reason: collision with root package name */
-    static final String f16267h = "gc finish";
+    static final String f17054h = "gc finish";
     protected static final String i = ".kva";
 
     /* renamed from: j, reason: collision with root package name */
-    protected static final String f16268j = ".kvb";
+    protected static final String f17055j = ".kvb";
 
     /* renamed from: k, reason: collision with root package name */
-    protected static final String f16269k = ".kvc";
+    protected static final String f17056k = ".kvc";
 
     /* renamed from: l, reason: collision with root package name */
-    protected static final String f16270l = ".tmp";
+    protected static final String f17057l = ".tmp";
 
     /* renamed from: m, reason: collision with root package name */
-    protected static final int f16271m = 268435456;
+    protected static final int f17058m = 268435456;
 
     /* renamed from: n, reason: collision with root package name */
-    protected static final int f16272n = 1073741824;
+    protected static final int f17059n = 1073741824;
 
     /* renamed from: p, reason: collision with root package name */
-    protected static final int f16274p = 12;
+    protected static final int f17061p = 12;
 
     /* renamed from: r, reason: collision with root package name */
-    protected static final int f16275r;
+    protected static final int f17062r;
 
     /* renamed from: s, reason: collision with root package name */
-    protected static final int f16276s;
+    protected static final int f17063s;
 
     /* renamed from: t, reason: collision with root package name */
-    protected static final int f16277t = 8192;
+    protected static final int f17064t = 8192;
 
     /* renamed from: u, reason: collision with root package name */
-    protected static final int f16278u = 80;
+    protected static final int f17065u = 80;
 
     /* renamed from: A, reason: collision with root package name */
-    protected int f16279A;
+    protected int f17066A;
 
     /* renamed from: B, reason: collision with root package name */
-    protected long f16280B;
+    protected long f17067B;
 
     /* renamed from: E, reason: collision with root package name */
-    protected f f16283E;
+    protected f f17070E;
 
     /* renamed from: F, reason: collision with root package name */
-    protected int f16284F;
+    protected int f17071F;
 
     /* renamed from: G, reason: collision with root package name */
-    protected int f16285G;
+    protected int f17072G;
 
     /* renamed from: K, reason: collision with root package name */
-    protected String f16288K;
+    protected String f17075K;
 
     /* renamed from: P, reason: collision with root package name */
-    protected int f16293P;
+    protected int f17080P;
 
     /* renamed from: v, reason: collision with root package name */
-    protected final String f16298v;
+    protected final String f17085v;
 
     /* renamed from: w, reason: collision with root package name */
-    protected final String f16299w;
+    protected final String f17086w;
 
     /* renamed from: x, reason: collision with root package name */
-    protected final Map<String, com.anythink.core.common.s.a.a.b> f16300x;
+    protected final Map<String, com.anythink.core.common.s.a.a.b> f17087x;
 
     /* renamed from: z, reason: collision with root package name */
-    protected final com.anythink.core.common.s.a.a.a f16302z;
+    protected final com.anythink.core.common.s.a.a.a f17089z;
 
     /* renamed from: S, reason: collision with root package name */
-    private static final byte[] f16259S = new byte[0];
+    private static final byte[] f17046S = new byte[0];
 
     /* renamed from: o, reason: collision with root package name */
-    protected static final int[] f16273o = {0, 1, 4, 4, 8, 8};
+    protected static final int[] f17060o = {0, 1, 4, 4, 8, 8};
 
     /* renamed from: q, reason: collision with root package name */
-    protected final int f16297q = h.f16352c;
+    protected final int f17084q = h.f17139c;
 
     /* renamed from: y, reason: collision with root package name */
-    protected final com.anythink.core.common.s.a.a.c f16301y = h.f16350a;
+    protected final com.anythink.core.common.s.a.a.c f17088y = h.f17137a;
 
     /* renamed from: C, reason: collision with root package name */
-    protected final HashMap<String, b.AbstractC0098b> f16281C = new HashMap<>();
+    protected final HashMap<String, b.AbstractC0098b> f17068C = new HashMap<>();
 
     /* renamed from: D, reason: collision with root package name */
-    protected volatile boolean f16282D = false;
+    protected volatile boolean f17069D = false;
 
     /* renamed from: H, reason: collision with root package name */
-    protected final List<String> f16286H = new ArrayList();
+    protected final List<String> f17073H = new ArrayList();
 
     /* renamed from: I, reason: collision with root package name */
-    protected boolean f16287I = false;
+    protected boolean f17074I = false;
     protected boolean J = false;
 
     /* renamed from: L, reason: collision with root package name */
-    protected final m f16289L = new m();
+    protected final m f17076L = new m();
 
     /* renamed from: M, reason: collision with root package name */
-    protected final m f16290M = new m();
+    protected final m f17077M = new m();
 
     /* renamed from: N, reason: collision with root package name */
-    protected final e f16291N = new e();
+    protected final e f17078N = new e();
 
     /* renamed from: O, reason: collision with root package name */
-    protected final Executor f16292O = new i();
+    protected final Executor f17079O = new i();
 
     /* renamed from: Q, reason: collision with root package name */
-    protected final ArrayList<C0097a> f16294Q = new ArrayList<>();
+    protected final ArrayList<C0097a> f17081Q = new ArrayList<>();
 
     /* renamed from: R, reason: collision with root package name */
-    protected final ArrayList<SharedPreferences.OnSharedPreferenceChangeListener> f16295R = new ArrayList<>();
+    protected final ArrayList<SharedPreferences.OnSharedPreferenceChangeListener> f17082R = new ArrayList<>();
 
     /* renamed from: T, reason: collision with root package name */
-    private final Handler f16296T = new Handler(Looper.getMainLooper());
+    private final Handler f17083T = new Handler(Looper.getMainLooper());
 
     /* renamed from: com.anythink.core.common.s.a.a$a, reason: collision with other inner class name */
     public static class C0097a implements Comparable<C0097a> {
 
         /* renamed from: a, reason: collision with root package name */
-        int f16303a;
+        int f17090a;
 
         /* renamed from: b, reason: collision with root package name */
-        int f16304b;
+        int f17091b;
 
-        public C0097a(int i, int i6) {
-            this.f16303a = i;
-            this.f16304b = i6;
+        public C0097a(int i, int i4) {
+            this.f17090a = i;
+            this.f17091b = i4;
         }
 
         private int a(C0097a c0097a) {
-            return this.f16303a - c0097a.f16303a;
+            return this.f17090a - c0097a.f17090a;
         }
 
         @Override // java.lang.Comparable
         public final /* bridge */ /* synthetic */ int compareTo(C0097a c0097a) {
-            return this.f16303a - c0097a.f16303a;
+            return this.f17090a - c0097a.f17090a;
         }
     }
 
     static {
         int b9 = l.b();
-        f16275r = b9;
-        f16276s = Math.max(b9, 32768);
+        f17062r = b9;
+        f17063s = Math.max(b9, 32768);
     }
 
     public a(String str, String str2, com.anythink.core.common.s.a.a.b[] bVarArr, com.anythink.core.common.s.a.a.a aVar) {
-        this.f16298v = str;
-        this.f16299w = str2;
-        this.f16302z = aVar;
+        this.f17085v = str;
+        this.f17086w = str2;
+        this.f17089z = aVar;
         HashMap hashMap = new HashMap();
         if (bVarArr != null) {
             for (com.anythink.core.common.s.a.a.b bVar : bVarArr) {
@@ -201,16 +201,16 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
                 }
             }
         }
-        hashMap.put("StringSet", k.f16370a);
-        this.f16300x = hashMap;
+        hashMap.put("StringSet", k.f17157a);
+        this.f17087x = hashMap;
     }
 
-    private static int e(int i6) {
-        return i6 & (-1073741825);
+    private static int e(int i4) {
+        return i4 & (-1073741825);
     }
 
-    private static void f(int i6) {
-        if (i6 > 255) {
+    private static void f(int i4) {
+        if (i4 > 255) {
             throw new IllegalArgumentException("key's length must less than 256");
         }
     }
@@ -226,13 +226,13 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
     }
 
     private void j() {
-        f fVar = this.f16283E;
-        if (fVar == null || fVar.f16334a.length != f16275r) {
-            this.f16283E = new f(f16275r);
+        f fVar = this.f17070E;
+        if (fVar == null || fVar.f17121a.length != f17062r) {
+            this.f17070E = new f(f17062r);
         } else {
             fVar.a(4, 0L);
         }
-        this.f16283E.a(0, a(0));
+        this.f17070E.a(0, a(0));
     }
 
     private float k(String str) {
@@ -252,7 +252,7 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
     }
 
     private byte[] o(String str) {
-        return b(str, f16259S);
+        return b(str, f17046S);
     }
 
     private synchronized Set<String> p(String str) {
@@ -261,37 +261,37 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
 
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void q(String str) {
-        if (this.f16291N.a(str)) {
+        if (this.f17078N.a(str)) {
             return;
         }
-        l.c(new File(this.f16298v + this.f16299w, str));
+        l.c(new File(this.f17085v + this.f17086w, str));
     }
 
-    public abstract void a(byte b9, int i6);
+    public abstract void a(byte b9, int i4);
 
-    public abstract void a(int i6, int i9, int i10);
+    public abstract void a(int i4, int i6, int i9);
 
-    public abstract void a(int i6, long j6, int i9);
+    public abstract void a(int i4, long j6, int i6);
 
-    public abstract void a(long j6, long j9, int i6);
+    public abstract void a(long j6, long j9, int i4);
 
     public abstract void a(g gVar);
 
     @Override // android.content.SharedPreferences
     public synchronized boolean contains(String str) {
-        return this.f16281C.containsKey(str);
+        return this.f17068C.containsKey(str);
     }
 
     public void d() {
-        this.f16279A = 12;
-        this.f16280B = 0L;
-        this.f16281C.clear();
-        this.f16290M.a();
-        this.f16289L.a();
+        this.f17066A = 12;
+        this.f17067B = 0L;
+        this.f17068C.clear();
+        this.f17077M.a();
+        this.f17076L.a();
         e();
     }
 
-    public abstract void d(int i6);
+    public abstract void d(int i4);
 
     @Override // android.content.SharedPreferences
     public SharedPreferences.Editor edit() {
@@ -308,55 +308,55 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
     @Override // android.content.SharedPreferences
     public synchronized Map<String, Object> getAll() {
         Object valueOf;
-        int size = this.f16281C.size();
+        int size = this.f17068C.size();
         if (size == 0) {
             return new HashMap();
         }
         HashMap hashMap = new HashMap(((size * 4) / 3) + 1);
-        for (Map.Entry<String, b.AbstractC0098b> entry : this.f16281C.entrySet()) {
+        for (Map.Entry<String, b.AbstractC0098b> entry : this.f17068C.entrySet()) {
             String key = entry.getKey();
             b.AbstractC0098b value = entry.getValue();
             switch (value.a()) {
                 case 1:
-                    valueOf = Boolean.valueOf(((b.c) value).f16306b);
+                    valueOf = Boolean.valueOf(((b.c) value).f17093b);
                     break;
                 case 2:
-                    valueOf = Integer.valueOf(((b.f) value).f16309b);
+                    valueOf = Integer.valueOf(((b.f) value).f17096b);
                     break;
                 case 3:
-                    valueOf = Float.valueOf(((b.e) value).f16308b);
+                    valueOf = Float.valueOf(((b.e) value).f17095b);
                     break;
                 case 4:
-                    valueOf = Long.valueOf(((b.g) value).f16310b);
+                    valueOf = Long.valueOf(((b.g) value).f17097b);
                     break;
                 case 5:
-                    valueOf = Double.valueOf(((b.d) value).f16307b);
+                    valueOf = Double.valueOf(((b.d) value).f17094b);
                     break;
                 case 6:
                     b.i iVar = (b.i) value;
-                    if (iVar.f16315f) {
-                        valueOf = a(iVar, this.f16302z);
+                    if (iVar.f17102f) {
+                        valueOf = a(iVar, this.f17089z);
                         break;
                     } else {
-                        valueOf = iVar.f16312c;
+                        valueOf = iVar.f17099c;
                         break;
                     }
                 case 7:
                     b.a aVar = (b.a) value;
-                    if (aVar.f16315f) {
-                        valueOf = a(aVar, this.f16302z);
+                    if (aVar.f17102f) {
+                        valueOf = a(aVar, this.f17089z);
                         break;
                     } else {
-                        valueOf = aVar.f16312c;
+                        valueOf = aVar.f17099c;
                         break;
                     }
                 case 8:
                     b.h hVar = (b.h) value;
-                    if (hVar.f16315f) {
-                        valueOf = a(hVar, this.f16302z);
+                    if (hVar.f17102f) {
+                        valueOf = a(hVar, this.f17089z);
                         break;
                     } else {
-                        valueOf = ((b.h) value).f16312c;
+                        valueOf = ((b.h) value).f17099c;
                         break;
                     }
                 default:
@@ -371,56 +371,56 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
     }
 
     @Override // android.content.SharedPreferences
-    public synchronized boolean getBoolean(String str, boolean z3) {
-        b.AbstractC0098b abstractC0098b = this.f16281C.get(str);
+    public synchronized boolean getBoolean(String str, boolean z6) {
+        b.AbstractC0098b abstractC0098b = this.f17068C.get(str);
         if (abstractC0098b != null && abstractC0098b.a() == 1) {
-            return ((b.c) abstractC0098b).f16306b;
+            return ((b.c) abstractC0098b).f17093b;
         }
-        return z3;
+        return z6;
     }
 
     @Override // android.content.SharedPreferences
-    public synchronized float getFloat(String str, float f3) {
-        b.AbstractC0098b abstractC0098b = this.f16281C.get(str);
+    public synchronized float getFloat(String str, float f2) {
+        b.AbstractC0098b abstractC0098b = this.f17068C.get(str);
         if (abstractC0098b != null && abstractC0098b.a() == 3) {
-            return ((b.e) abstractC0098b).f16308b;
+            return ((b.e) abstractC0098b).f17095b;
         }
-        return f3;
+        return f2;
     }
 
     @Override // android.content.SharedPreferences
-    public synchronized int getInt(String str, int i6) {
-        b.AbstractC0098b abstractC0098b = this.f16281C.get(str);
+    public synchronized int getInt(String str, int i4) {
+        b.AbstractC0098b abstractC0098b = this.f17068C.get(str);
         if (abstractC0098b != null && abstractC0098b.a() == 2) {
-            return ((b.f) abstractC0098b).f16309b;
+            return ((b.f) abstractC0098b).f17096b;
         }
-        return i6;
+        return i4;
     }
 
     @Override // android.content.SharedPreferences
     public synchronized long getLong(String str, long j6) {
-        b.AbstractC0098b abstractC0098b = this.f16281C.get(str);
+        b.AbstractC0098b abstractC0098b = this.f17068C.get(str);
         if (abstractC0098b != null && abstractC0098b.a() == 4) {
-            return ((b.g) abstractC0098b).f16310b;
+            return ((b.g) abstractC0098b).f17097b;
         }
         return j6;
     }
 
     @Override // android.content.SharedPreferences
     public synchronized String getString(String str, String str2) {
-        b.AbstractC0098b abstractC0098b = this.f16281C.get(str);
+        b.AbstractC0098b abstractC0098b = this.f17068C.get(str);
         if (abstractC0098b != null && abstractC0098b.a() == 6) {
             b.i iVar = (b.i) abstractC0098b;
-            if (!iVar.f16315f) {
-                return (String) iVar.f16312c;
+            if (!iVar.f17102f) {
+                return (String) iVar.f17099c;
             }
-            Object a9 = this.f16290M.a(str);
+            Object a9 = this.f17077M.a(str);
             if (a9 instanceof String) {
                 return (String) a9;
             }
-            String a10 = a(iVar, this.f16302z);
+            String a10 = a(iVar, this.f17089z);
             if (a10 != null && !a10.isEmpty()) {
-                this.f16290M.a(str, a10);
+                this.f17077M.a(str, a10);
                 return a10;
             }
             remove(str);
@@ -440,14 +440,14 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
     public abstract void i();
 
     @Override // android.content.SharedPreferences.Editor
-    public synchronized SharedPreferences.Editor putBoolean(String str, boolean z3) {
+    public synchronized SharedPreferences.Editor putBoolean(String str, boolean z6) {
         try {
             if (this.J) {
                 return this;
             }
             h(str);
             g();
-            b.AbstractC0098b abstractC0098b = this.f16281C.get(str);
+            b.AbstractC0098b abstractC0098b = this.f17068C.get(str);
             if (abstractC0098b != null && abstractC0098b.a() != 1) {
                 remove(str);
                 abstractC0098b = null;
@@ -457,15 +457,15 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
                 if (!a(str, (byte) 1)) {
                     return this;
                 }
-                f fVar = this.f16283E;
-                int i6 = fVar.f16335b;
-                fVar.a(z3 ? (byte) 1 : (byte) 0);
+                f fVar = this.f17070E;
+                int i4 = fVar.f17122b;
+                fVar.a(z6 ? (byte) 1 : (byte) 0);
                 i();
-                this.f16281C.put(str, new b.c(i6, z3));
+                this.f17068C.put(str, new b.c(i4, z6));
                 f(str);
-            } else if (cVar.f16306b != z3) {
-                cVar.f16306b = z3;
-                a(z3 ? (byte) 1 : (byte) 0, cVar.f16305a);
+            } else if (cVar.f17093b != z6) {
+                cVar.f17093b = z6;
+                a(z6 ? (byte) 1 : (byte) 0, cVar.f17092a);
                 f(str);
             }
             return this;
@@ -475,14 +475,14 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
     }
 
     @Override // android.content.SharedPreferences.Editor
-    public synchronized SharedPreferences.Editor putFloat(String str, float f3) {
+    public synchronized SharedPreferences.Editor putFloat(String str, float f2) {
         try {
             if (this.J) {
                 return this;
             }
             h(str);
             g();
-            b.AbstractC0098b abstractC0098b = this.f16281C.get(str);
+            b.AbstractC0098b abstractC0098b = this.f17068C.get(str);
             if (abstractC0098b != null && abstractC0098b.a() != 3) {
                 remove(str);
                 abstractC0098b = null;
@@ -492,15 +492,15 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
                 if (!a(str, (byte) 3)) {
                     return this;
                 }
-                f fVar = this.f16283E;
-                int i6 = fVar.f16335b;
-                fVar.b(a(f3));
+                f fVar = this.f17070E;
+                int i4 = fVar.f17122b;
+                fVar.b(a(f2));
                 i();
-                this.f16281C.put(str, new b.e(i6, f3));
+                this.f17068C.put(str, new b.e(i4, f2));
                 f(str);
-            } else if (eVar.f16308b != f3) {
-                eVar.f16308b = f3;
-                a(a(f3), (this.f16283E.a(eVar.f16305a) ^ r1) & 4294967295L, eVar.f16305a);
+            } else if (eVar.f17095b != f2) {
+                eVar.f17095b = f2;
+                a(a(f2), (this.f17070E.a(eVar.f17092a) ^ r1) & 4294967295L, eVar.f17092a);
                 f(str);
             }
             return this;
@@ -510,14 +510,14 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
     }
 
     @Override // android.content.SharedPreferences.Editor
-    public synchronized SharedPreferences.Editor putInt(String str, int i6) {
+    public synchronized SharedPreferences.Editor putInt(String str, int i4) {
         try {
             if (this.J) {
                 return this;
             }
             h(str);
             g();
-            b.AbstractC0098b abstractC0098b = this.f16281C.get(str);
+            b.AbstractC0098b abstractC0098b = this.f17068C.get(str);
             if (abstractC0098b != null && abstractC0098b.a() != 2) {
                 remove(str);
                 abstractC0098b = null;
@@ -527,19 +527,19 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
                 if (!a(str, (byte) 2)) {
                     return this;
                 }
-                f fVar2 = this.f16283E;
-                int i9 = fVar2.f16335b;
-                com.anythink.core.common.s.a.a.a aVar = this.f16302z;
-                fVar2.b(aVar != null ? aVar.c() : i6);
+                f fVar2 = this.f17070E;
+                int i6 = fVar2.f17122b;
+                com.anythink.core.common.s.a.a.a aVar = this.f17089z;
+                fVar2.b(aVar != null ? aVar.c() : i4);
                 i();
-                this.f16281C.put(str, new b.f(i9, i6));
+                this.f17068C.put(str, new b.f(i6, i4));
                 f(str);
-            } else if (fVar.f16309b != i6) {
-                com.anythink.core.common.s.a.a.a aVar2 = this.f16302z;
-                int c9 = aVar2 != null ? aVar2.c() : i6;
-                int a9 = this.f16302z != null ? this.f16283E.a(fVar.f16305a) : fVar.f16309b;
-                fVar.f16309b = i6;
-                a(c9, (a9 ^ c9) & 4294967295L, fVar.f16305a);
+            } else if (fVar.f17096b != i4) {
+                com.anythink.core.common.s.a.a.a aVar2 = this.f17089z;
+                int c9 = aVar2 != null ? aVar2.c() : i4;
+                int a9 = this.f17089z != null ? this.f17070E.a(fVar.f17092a) : fVar.f17096b;
+                fVar.f17096b = i4;
+                a(c9, (a9 ^ c9) & 4294967295L, fVar.f17092a);
                 f(str);
             }
             return this;
@@ -559,7 +559,7 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
                 }
                 h(str);
                 g();
-                b.AbstractC0098b abstractC0098b = this.f16281C.get(str);
+                b.AbstractC0098b abstractC0098b = this.f17068C.get(str);
                 if (abstractC0098b != null) {
                     try {
                         if (abstractC0098b.a() != 4) {
@@ -576,20 +576,20 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
                     if (!a(str, (byte) 4)) {
                         return this;
                     }
-                    f fVar = this.f16283E;
-                    int i6 = fVar.f16335b;
-                    com.anythink.core.common.s.a.a.a aVar2 = this.f16302z;
+                    f fVar = this.f17070E;
+                    int i4 = fVar.f17122b;
+                    com.anythink.core.common.s.a.a.a aVar2 = this.f17089z;
                     fVar.a(aVar2 != null ? aVar2.e() : j6);
                     i();
-                    this.f16281C.put(str, new b.g(i6, j6));
+                    this.f17068C.put(str, new b.g(i4, j6));
                     f(str);
-                } else if (gVar.f16310b != j6) {
-                    com.anythink.core.common.s.a.a.a aVar3 = this.f16302z;
+                } else if (gVar.f17097b != j6) {
+                    com.anythink.core.common.s.a.a.a aVar3 = this.f17089z;
                     long e9 = aVar3 != null ? aVar3.e() : j6;
-                    long c9 = (this.f16302z != null ? this.f16283E.c(gVar.f16305a) : gVar.f16310b) ^ e9;
-                    gVar.f16310b = j6;
+                    long c9 = (this.f17089z != null ? this.f17070E.c(gVar.f17092a) : gVar.f17097b) ^ e9;
+                    gVar.f17097b = j6;
                     aVar = this;
-                    aVar.a(e9, c9, gVar.f16305a);
+                    aVar.a(e9, c9, gVar.f17092a);
                     f(str);
                     return aVar;
                 }
@@ -617,7 +617,7 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
             if (str2 == null) {
                 remove(str);
             } else {
-                b.AbstractC0098b abstractC0098b = this.f16281C.get(str);
+                b.AbstractC0098b abstractC0098b = this.f17068C.get(str);
                 b.AbstractC0098b abstractC0098b2 = abstractC0098b;
                 if (abstractC0098b != null) {
                     byte a9 = abstractC0098b.a();
@@ -628,19 +628,19 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
                     }
                 }
                 b.i iVar = (b.i) abstractC0098b2;
-                if (iVar != null && !iVar.f16315f && str2.equals(iVar.f16312c)) {
+                if (iVar != null && !iVar.f17102f && str2.equals(iVar.f17099c)) {
                     return this;
                 }
                 g();
-                if (this.f16302z != null || str2.length() * 3 >= this.f16297q) {
-                    byte[] bytes = str2.isEmpty() ? f16259S : str2.getBytes(StandardCharsets.UTF_8);
-                    com.anythink.core.common.s.a.a.a aVar = this.f16302z;
+                if (this.f17089z != null || str2.length() * 3 >= this.f17084q) {
+                    byte[] bytes = str2.isEmpty() ? f17046S : str2.getBytes(StandardCharsets.UTF_8);
+                    com.anythink.core.common.s.a.a.a aVar = this.f17089z;
                     if (aVar != null) {
                         bytes = aVar.a();
                     }
                     byte[] bArr = bytes;
                     if (bArr == null) {
-                        a(new Exception(f16265f));
+                        a(new Exception(f17052f));
                         return this;
                     }
                     a(str, str2, bArr, iVar, (byte) 6);
@@ -649,54 +649,54 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
                     if (iVar == null) {
                         int b10 = f.b(str);
                         f(b10);
-                        int i6 = b10 + 4;
-                        this.f16285G = i6 + b9;
+                        int i4 = b10 + 4;
+                        this.f17072G = i4 + b9;
                         k();
-                        this.f16283E.a((byte) 6);
+                        this.f17070E.a((byte) 6);
                         a(str, b10);
                         b(str2, b9);
-                        HashMap<String, b.AbstractC0098b> hashMap = this.f16281C;
-                        int i9 = this.f16284F;
-                        hashMap.put(str, new b.i(i9, i6 + i9, str2, b9, false));
+                        HashMap<String, b.AbstractC0098b> hashMap = this.f17068C;
+                        int i6 = this.f17071F;
+                        hashMap.put(str, new b.i(i6, i4 + i6, str2, b9, false));
                         i();
                     } else {
-                        int i10 = iVar.f16305a;
-                        int i11 = i10 - iVar.f16313d;
-                        int i12 = iVar.f16314e;
-                        boolean z3 = false;
-                        if (i12 == b9) {
-                            this.f16280B = this.f16283E.b(i10, i12) ^ this.f16280B;
+                        int i9 = iVar.f17092a;
+                        int i10 = i9 - iVar.f17100d;
+                        int i11 = iVar.f17101e;
+                        boolean z6 = false;
+                        if (i11 == b9) {
+                            this.f17067B = this.f17070E.b(i9, i11) ^ this.f17067B;
                             if (b9 == str2.length()) {
-                                str2.getBytes(0, b9, this.f16283E.f16334a, iVar.f16305a);
+                                str2.getBytes(0, b9, this.f17070E.f17121a, iVar.f17092a);
                             } else {
-                                f fVar = this.f16283E;
-                                fVar.f16335b = iVar.f16305a;
+                                f fVar = this.f17070E;
+                                fVar.f17122b = iVar.f17092a;
                                 fVar.a(str2);
                             }
-                            this.f16284F = iVar.f16305a;
-                            this.f16285G = b9;
+                            this.f17071F = iVar.f17092a;
+                            this.f17072G = b9;
                         } else {
-                            this.f16285G = i11 + b9;
+                            this.f17072G = i10 + b9;
                             k();
-                            this.f16283E.a((byte) 6);
-                            int i13 = i11 - 3;
-                            f fVar2 = this.f16283E;
-                            byte[] bArr2 = fVar2.f16334a;
-                            System.arraycopy(bArr2, iVar.f16313d + 1, bArr2, fVar2.f16335b, i13);
-                            this.f16283E.f16335b += i13;
+                            this.f17070E.a((byte) 6);
+                            int i12 = i10 - 3;
+                            f fVar2 = this.f17070E;
+                            byte[] bArr2 = fVar2.f17121a;
+                            System.arraycopy(bArr2, iVar.f17100d + 1, bArr2, fVar2.f17122b, i12);
+                            this.f17070E.f17122b += i12;
                             b(str2, b9);
-                            a((byte) 6, iVar.f16313d, iVar.f16305a + iVar.f16314e);
-                            r1 = iVar.f16315f ? (String) iVar.f16312c : null;
-                            iVar.f16315f = false;
-                            int i14 = this.f16284F;
-                            iVar.f16313d = i14;
-                            iVar.f16305a = i14 + i11;
-                            iVar.f16314e = b9;
-                            z3 = true;
+                            a((byte) 6, iVar.f17100d, iVar.f17092a + iVar.f17101e);
+                            r1 = iVar.f17102f ? (String) iVar.f17099c : null;
+                            iVar.f17102f = false;
+                            int i13 = this.f17071F;
+                            iVar.f17100d = i13;
+                            iVar.f17092a = i13 + i10;
+                            iVar.f17101e = b9;
+                            z6 = true;
                         }
-                        iVar.f16312c = str2;
+                        iVar.f17099c = str2;
                         i();
-                        if (z3) {
+                        if (z6) {
                             h();
                         }
                         if (r1 != null) {
@@ -721,7 +721,7 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
             if (set == null) {
                 remove(str);
             } else {
-                a(str, (String) set, (com.anythink.core.common.s.a.a.b<String>) k.f16370a);
+                a(str, (String) set, (com.anythink.core.common.s.a.a.b<String>) k.f17157a);
             }
             return this;
         } catch (Throwable th) {
@@ -734,184 +734,184 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
         if (onSharedPreferenceChangeListener == null) {
             return;
         }
-        if (!this.f16295R.contains(onSharedPreferenceChangeListener)) {
-            this.f16295R.add(onSharedPreferenceChangeListener);
+        if (!this.f17082R.contains(onSharedPreferenceChangeListener)) {
+            this.f17082R.add(onSharedPreferenceChangeListener);
         }
     }
 
     @Override // android.content.SharedPreferences
     public synchronized void unregisterOnSharedPreferenceChangeListener(SharedPreferences.OnSharedPreferenceChangeListener onSharedPreferenceChangeListener) {
-        this.f16295R.remove(onSharedPreferenceChangeListener);
+        this.f17082R.remove(onSharedPreferenceChangeListener);
     }
 
-    public static long a(long j6, int i6) {
-        int i9 = (i6 & 7) << 3;
-        return (j6 >>> (64 - i9)) | (j6 << i9);
+    public static long a(long j6, int i4) {
+        int i6 = (i4 & 7) << 3;
+        return (j6 >>> (64 - i6)) | (j6 << i6);
     }
 
-    public static boolean b(int i6) {
-        return (i6 & 1073741824) != 0;
+    public static boolean b(int i4) {
+        return (i4 & 1073741824) != 0;
     }
 
     private void k() {
-        d(this.f16285G);
-        int i6 = this.f16279A;
-        this.f16284F = i6;
-        this.f16279A = this.f16285G + i6;
-        this.f16283E.f16335b = i6;
+        d(this.f17072G);
+        int i4 = this.f17066A;
+        this.f17071F = i4;
+        this.f17066A = this.f17072G + i4;
+        this.f17070E.f17122b = i4;
     }
 
-    public final void c(int i6) {
-        ArrayList<C0097a> arrayList = this.f16294Q;
+    public final void c(int i4) {
+        ArrayList<C0097a> arrayList = this.f17081Q;
         Collections.sort(arrayList);
         C0097a c0097a = arrayList.get(0);
         int size = arrayList.size();
-        boolean z3 = true;
-        int i9 = 0;
-        for (int i10 = 1; i10 < size; i10++) {
-            C0097a c0097a2 = arrayList.get(i10);
-            if (c0097a2.f16303a == c0097a.f16304b) {
-                c0097a.f16304b = c0097a2.f16304b;
+        boolean z6 = true;
+        int i6 = 0;
+        for (int i9 = 1; i9 < size; i9++) {
+            C0097a c0097a2 = arrayList.get(i9);
+            if (c0097a2.f17090a == c0097a.f17091b) {
+                c0097a.f17091b = c0097a2.f17091b;
             } else {
-                i9++;
-                if (i9 != i10) {
-                    arrayList.set(i9, c0097a2);
+                i6++;
+                if (i6 != i9) {
+                    arrayList.set(i6, c0097a2);
                 }
                 c0097a = c0097a2;
             }
         }
-        int i11 = i9 + 1;
-        if (size > i11) {
-            arrayList.subList(i11, size).clear();
+        int i10 = i6 + 1;
+        if (size > i10) {
+            arrayList.subList(i10, size).clear();
         }
-        C0097a c0097a3 = this.f16294Q.get(0);
-        int i12 = c0097a3.f16303a;
-        int i13 = this.f16279A;
-        int i14 = i13 - this.f16293P;
-        int i15 = i14 - 12;
-        int i16 = i14 - i12;
-        int i17 = i13 - i12;
-        boolean z6 = i15 < i17 + i16;
-        if (!z6) {
-            this.f16280B ^= this.f16283E.b(i12, i17);
+        C0097a c0097a3 = this.f17081Q.get(0);
+        int i11 = c0097a3.f17090a;
+        int i12 = this.f17066A;
+        int i13 = i12 - this.f17080P;
+        int i14 = i13 - 12;
+        int i15 = i13 - i11;
+        int i16 = i12 - i11;
+        boolean z9 = i14 < i16 + i15;
+        if (!z9) {
+            this.f17067B ^= this.f17070E.b(i11, i16);
         }
-        int size2 = this.f16294Q.size();
-        int i18 = size2 - 1;
-        int i19 = this.f16279A - this.f16294Q.get(i18).f16304b;
-        int i20 = i19 > 0 ? size2 : i18;
-        int[] iArr = new int[i20];
-        int[] iArr2 = new int[i20];
-        int i21 = c0097a3.f16303a;
-        int i22 = c0097a3.f16304b;
-        int i23 = 1;
-        while (i23 < size2) {
-            boolean z9 = z3;
-            C0097a c0097a4 = this.f16294Q.get(i23);
-            int i24 = i23;
-            int i25 = c0097a4.f16303a - i22;
-            int i26 = size2;
-            byte[] bArr = this.f16283E.f16334a;
-            System.arraycopy(bArr, i22, bArr, i21, i25);
-            int i27 = i24 - 1;
-            iArr[i27] = i22;
-            iArr2[i27] = i22 - i21;
-            i21 += i25;
-            i22 = c0097a4.f16304b;
-            i23 = i24 + 1;
-            z3 = z9;
-            size2 = i26;
+        int size2 = this.f17081Q.size();
+        int i17 = size2 - 1;
+        int i18 = this.f17066A - this.f17081Q.get(i17).f17091b;
+        int i19 = i18 > 0 ? size2 : i17;
+        int[] iArr = new int[i19];
+        int[] iArr2 = new int[i19];
+        int i20 = c0097a3.f17090a;
+        int i21 = c0097a3.f17091b;
+        int i22 = 1;
+        while (i22 < size2) {
+            boolean z10 = z6;
+            C0097a c0097a4 = this.f17081Q.get(i22);
+            int i23 = i22;
+            int i24 = c0097a4.f17090a - i21;
+            int i25 = size2;
+            byte[] bArr = this.f17070E.f17121a;
+            System.arraycopy(bArr, i21, bArr, i20, i24);
+            int i26 = i23 - 1;
+            iArr[i26] = i21;
+            iArr2[i26] = i21 - i20;
+            i20 += i24;
+            i21 = c0097a4.f17091b;
+            i22 = i23 + 1;
+            z6 = z10;
+            size2 = i25;
         }
-        if (i19 > 0) {
-            byte[] bArr2 = this.f16283E.f16334a;
-            System.arraycopy(bArr2, i22, bArr2, i21, i19);
-            iArr[i18] = i22;
-            iArr2[i18] = i22 - i21;
+        if (i18 > 0) {
+            byte[] bArr2 = this.f17070E.f17121a;
+            System.arraycopy(bArr2, i21, bArr2, i20, i18);
+            iArr[i17] = i21;
+            iArr2[i17] = i21 - i20;
         }
         e();
-        if (z6) {
-            this.f16280B = this.f16283E.b(12, i15);
+        if (z9) {
+            this.f17067B = this.f17070E.b(12, i14);
         } else {
-            this.f16280B ^= this.f16283E.b(i12, i16);
+            this.f17067B ^= this.f17070E.b(i11, i15);
         }
-        this.f16279A = i14;
-        a(i12, i6, i16);
-        for (b.AbstractC0098b abstractC0098b : this.f16281C.values()) {
-            int i28 = abstractC0098b.f16305a;
-            if (i28 > i12) {
-                int i29 = i20 - 1;
-                int i30 = 0;
+        this.f17066A = i13;
+        a(i11, i4, i15);
+        for (b.AbstractC0098b abstractC0098b : this.f17068C.values()) {
+            int i27 = abstractC0098b.f17092a;
+            if (i27 > i11) {
+                int i28 = i19 - 1;
+                int i29 = 0;
                 while (true) {
-                    if (i30 > i29) {
+                    if (i29 > i28) {
                         break;
                     }
-                    int i31 = (i30 + i29) >>> 1;
-                    int i32 = iArr[i31];
-                    if (i32 >= i28) {
-                        if (i32 <= i28) {
-                            i29 = i31;
+                    int i30 = (i29 + i28) >>> 1;
+                    int i31 = iArr[i30];
+                    if (i31 >= i27) {
+                        if (i31 <= i27) {
+                            i28 = i30;
                             break;
                         }
-                        i29 = i31 - 1;
+                        i28 = i30 - 1;
                     } else {
-                        i30 = i31 + 1;
+                        i29 = i30 + 1;
                     }
                 }
-                int i33 = iArr2[i29];
-                abstractC0098b.f16305a -= i33;
+                int i32 = iArr2[i28];
+                abstractC0098b.f17092a -= i32;
                 if (abstractC0098b.a() >= 6) {
-                    ((b.j) abstractC0098b).f16313d -= i33;
+                    ((b.j) abstractC0098b).f17100d -= i32;
                 }
             }
         }
-        c(f16267h);
+        c(f17054h);
     }
 
     public final void e() {
-        this.f16293P = 0;
-        this.f16294Q.clear();
+        this.f17080P = 0;
+        this.f17081Q.clear();
     }
 
     public final int f() {
-        if (this.f16279A <= 16384) {
-            return f16277t;
+        if (this.f17066A <= 16384) {
+            return f17064t;
         }
         return 16384;
     }
 
-    public final int a(int i6) {
-        return this.f16302z == null ? i6 : i6 | 1073741824;
+    public final int a(int i4) {
+        return this.f17089z == null ? i4 : i4 | 1073741824;
     }
 
     public final void b() {
         try {
-            l.c(new File(this.f16298v, this.f16299w + f16269k));
-            l.c(new File(this.f16298v, this.f16299w + f16270l));
+            l.c(new File(this.f17085v, this.f17086w + f17056k));
+            l.c(new File(this.f17085v, this.f17086w + f17057l));
         } catch (Exception e9) {
             a(e9);
         }
     }
 
-    public static int a(int i6, int i9) {
-        if (i9 < f16271m) {
-            int i10 = f16275r;
-            if (i9 <= i10) {
-                return i10;
+    public static int a(int i4, int i6) {
+        if (i6 < f17058m) {
+            int i9 = f17062r;
+            if (i6 <= i9) {
+                return i9;
             }
-            while (i6 < i9) {
-                i6 <<= 1;
+            while (i4 < i6) {
+                i4 <<= 1;
             }
-            return i6;
+            return i4;
         }
         throw new IllegalStateException("data size out of limit");
     }
 
     public final synchronized void e(String str) {
-        if (this.f16295R.isEmpty()) {
+        if (this.f17082R.isEmpty()) {
             return;
         }
-        Iterator<SharedPreferences.OnSharedPreferenceChangeListener> it = this.f16295R.iterator();
+        Iterator<SharedPreferences.OnSharedPreferenceChangeListener> it = this.f17082R.iterator();
         while (it.hasNext()) {
-            this.f16296T.post(new androidx.emoji2.text.k(3, this, it.next(), str));
+            this.f17083T.post(new androidx.emoji2.text.k(3, this, it.next(), str));
         }
     }
 
@@ -919,153 +919,153 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
         return getInt(str, 0);
     }
 
-    private void b(int i6, int i9) {
-        this.f16293P = (i9 - i6) + this.f16293P;
-        this.f16294Q.add(new C0097a(i6, i9));
+    private void b(int i4, int i6) {
+        this.f17080P = (i6 - i4) + this.f17080P;
+        this.f17081Q.add(new C0097a(i4, i6));
     }
 
     public final void a() {
         com.anythink.core.common.s.a.a.b bVar;
-        com.anythink.core.common.s.a.a.b[] bVarArr = (com.anythink.core.common.s.a.a.b[]) this.f16300x.values().toArray(new com.anythink.core.common.s.a.a.b[this.f16300x.size()]);
-        String str = "temp_" + this.f16299w;
-        g gVar = new g(this.f16298v, str, bVarArr, this.f16302z, 2);
-        gVar.f16341V = false;
+        com.anythink.core.common.s.a.a.b[] bVarArr = (com.anythink.core.common.s.a.a.b[]) this.f17087x.values().toArray(new com.anythink.core.common.s.a.a.b[this.f17087x.size()]);
+        String str = "temp_" + this.f17086w;
+        g gVar = new g(this.f17085v, str, bVarArr, this.f17089z, 2);
+        gVar.f17128V = false;
         ArrayList arrayList = new ArrayList();
-        for (Map.Entry<String, b.AbstractC0098b> entry : this.f16281C.entrySet()) {
+        for (Map.Entry<String, b.AbstractC0098b> entry : this.f17068C.entrySet()) {
             String key = entry.getKey();
             b.AbstractC0098b value = entry.getValue();
             if (value instanceof b.i) {
                 b.i iVar = (b.i) value;
-                if (iVar.f16315f) {
-                    arrayList.add((String) iVar.f16312c);
+                if (iVar.f17102f) {
+                    arrayList.add((String) iVar.f17099c);
                     String a9 = a(iVar, (com.anythink.core.common.s.a.a.a) null);
                     if (a9 != null) {
                         gVar.putString(key, a9);
                     }
                 } else {
-                    gVar.putString(key, (String) iVar.f16312c);
+                    gVar.putString(key, (String) iVar.f17099c);
                 }
             } else if (value instanceof b.c) {
-                gVar.putBoolean(key, ((b.c) value).f16306b);
+                gVar.putBoolean(key, ((b.c) value).f17093b);
             } else if (value instanceof b.f) {
-                gVar.putInt(key, ((b.f) value).f16309b);
+                gVar.putInt(key, ((b.f) value).f17096b);
             } else if (value instanceof b.g) {
-                gVar.putLong(key, ((b.g) value).f16310b);
+                gVar.putLong(key, ((b.g) value).f17097b);
             } else if (value instanceof b.e) {
-                gVar.putFloat(key, ((b.e) value).f16308b);
+                gVar.putFloat(key, ((b.e) value).f17095b);
             } else if (value instanceof b.d) {
-                gVar.b(key, ((b.d) value).f16307b);
+                gVar.b(key, ((b.d) value).f17094b);
             } else if (value instanceof b.a) {
                 b.a aVar = (b.a) value;
-                if (aVar.f16315f) {
-                    arrayList.add((String) aVar.f16312c);
+                if (aVar.f17102f) {
+                    arrayList.add((String) aVar.f17099c);
                     byte[] a10 = a(aVar, (com.anythink.core.common.s.a.a.a) null);
                     if (a10 != null) {
                         gVar.a(key, a10);
                     }
                 } else {
-                    gVar.a(key, (byte[]) aVar.f16312c);
+                    gVar.a(key, (byte[]) aVar.f17099c);
                 }
             } else if (value instanceof b.h) {
                 b.h hVar = (b.h) value;
-                if (hVar.f16315f) {
-                    arrayList.add((String) hVar.f16312c);
+                if (hVar.f17102f) {
+                    arrayList.add((String) hVar.f17099c);
                     Object a11 = a(hVar, (com.anythink.core.common.s.a.a.a) null);
-                    if (a11 != null && (bVar = hVar.f16311b) != null) {
+                    if (a11 != null && (bVar = hVar.f17098b) != null) {
                         gVar.a(key, (String) a11, (com.anythink.core.common.s.a.a.b<String>) bVar);
                     }
                 } else {
-                    com.anythink.core.common.s.a.a.b bVar2 = hVar.f16311b;
+                    com.anythink.core.common.s.a.a.b bVar2 = hVar.f17098b;
                     if (bVar2 != null) {
-                        gVar.a(key, (String) hVar.f16312c, (com.anythink.core.common.s.a.a.b<String>) bVar2);
+                        gVar.a(key, (String) hVar.f17099c, (com.anythink.core.common.s.a.a.b<String>) bVar2);
                     }
                 }
             }
         }
         gVar.contains("");
-        this.f16283E = gVar.f16283E;
-        this.f16280B = gVar.f16280B;
-        this.f16279A = gVar.f16279A;
+        this.f17070E = gVar.f17070E;
+        this.f17067B = gVar.f17067B;
+        this.f17066A = gVar.f17066A;
         e();
-        this.f16281C.clear();
-        this.f16281C.putAll(gVar.f16281C);
+        this.f17068C.clear();
+        this.f17068C.putAll(gVar.f17068C);
         a(gVar);
-        while (gVar.f16291N.a()) {
+        while (gVar.f17078N.a()) {
             try {
                 Thread.sleep(10L);
             } catch (Exception unused) {
             }
         }
-        File file = new File(this.f16298v, str);
-        String str2 = this.f16298v + this.f16299w;
+        File file = new File(this.f17085v, str);
+        String str2 = this.f17085v + this.f17086w;
         l.a(file, str2);
         l.c(file);
         Iterator it = arrayList.iterator();
         while (it.hasNext()) {
             l.c(new File(str2, (String) it.next()));
         }
-        this.f16287I = false;
+        this.f17074I = false;
     }
 
     public final synchronized <T> T d(String str) {
-        b.AbstractC0098b abstractC0098b = this.f16281C.get(str);
+        b.AbstractC0098b abstractC0098b = this.f17068C.get(str);
         if (abstractC0098b != null && abstractC0098b.a() == 8) {
             b.h hVar = (b.h) abstractC0098b;
-            if (hVar.f16315f) {
-                T t6 = (T) this.f16290M.a(str);
+            if (hVar.f17102f) {
+                T t6 = (T) this.f17077M.a(str);
                 if (t6 != null) {
                     return t6;
                 }
-                T t9 = (T) a(hVar, this.f16302z);
+                T t9 = (T) a(hVar, this.f17089z);
                 if (t9 == null) {
                     remove(str);
                     return null;
                 }
-                this.f16290M.a(str, t9);
+                this.f17077M.a(str, t9);
                 return t9;
             }
-            return (T) hVar.f16312c;
+            return (T) hVar.f17099c;
         }
         return null;
     }
 
     public final void b(String str) {
-        com.anythink.core.common.s.a.a.c cVar = this.f16301y;
+        com.anythink.core.common.s.a.a.c cVar = this.f17088y;
         if (cVar != null) {
-            cVar.b(this.f16299w, new Exception(str));
+            cVar.b(this.f17086w, new Exception(str));
         }
     }
 
     public final void b(Exception exc) {
-        com.anythink.core.common.s.a.a.c cVar = this.f16301y;
+        com.anythink.core.common.s.a.a.c cVar = this.f17088y;
         if (cVar != null) {
-            cVar.a(this.f16299w, exc);
+            cVar.a(this.f17086w, exc);
         }
     }
 
     private synchronized byte[] b(String str, byte[] bArr) {
-        b.AbstractC0098b abstractC0098b = this.f16281C.get(str);
+        b.AbstractC0098b abstractC0098b = this.f17068C.get(str);
         if (abstractC0098b != null && abstractC0098b.a() == 7) {
             b.a aVar = (b.a) abstractC0098b;
-            if (aVar.f16315f) {
-                Object a9 = this.f16290M.a(str);
+            if (aVar.f17102f) {
+                Object a9 = this.f17077M.a(str);
                 if (a9 instanceof byte[]) {
                     return (byte[]) a9;
                 }
-                byte[] a10 = a(aVar, this.f16302z);
+                byte[] a10 = a(aVar, this.f17089z);
                 if (a10 != null && a10.length != 0) {
-                    this.f16290M.a(str, a10);
+                    this.f17077M.a(str, a10);
                     return a10;
                 }
                 remove(str);
                 return bArr;
             }
-            return (byte[]) aVar.f16312c;
+            return (byte[]) aVar.f17099c;
         }
         return bArr;
     }
 
-    public final synchronized SharedPreferences.Editor b(String str, double d2) {
+    public final synchronized SharedPreferences.Editor b(String str, double d9) {
         Throwable th;
         a aVar;
         try {
@@ -1075,7 +1075,7 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
                 }
                 h(str);
                 g();
-                b.AbstractC0098b abstractC0098b = this.f16281C.get(str);
+                b.AbstractC0098b abstractC0098b = this.f17068C.get(str);
                 if (abstractC0098b != null) {
                     try {
                         if (abstractC0098b.a() != 5) {
@@ -1092,18 +1092,18 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
                     if (!a(str, (byte) 5)) {
                         return this;
                     }
-                    f fVar = this.f16283E;
-                    int i6 = fVar.f16335b;
-                    fVar.a(a(d2));
+                    f fVar = this.f17070E;
+                    int i4 = fVar.f17122b;
+                    fVar.a(a(d9));
                     i();
-                    this.f16281C.put(str, new b.d(i6, d2));
+                    this.f17068C.put(str, new b.d(i4, d9));
                     f(str);
-                } else if (dVar.f16307b != d2) {
-                    long a9 = a(d2);
-                    long c9 = a9 ^ this.f16283E.c(dVar.f16305a);
-                    dVar.f16307b = d2;
+                } else if (dVar.f17094b != d9) {
+                    long a9 = a(d9);
+                    long c9 = a9 ^ this.f17070E.c(dVar.f17092a);
+                    dVar.f17094b = d9;
                     aVar = this;
-                    aVar.a(a9, c9, dVar.f16305a);
+                    aVar.a(a9, c9, dVar.f17092a);
                     f(str);
                     return aVar;
                 }
@@ -1127,19 +1127,19 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
     }
 
     public final void c(String str) {
-        com.anythink.core.common.s.a.a.c cVar = this.f16301y;
+        com.anythink.core.common.s.a.a.c cVar = this.f17088y;
         if (cVar != null) {
-            cVar.a(this.f16299w, str);
+            cVar.a(this.f17086w, str);
         }
     }
 
-    private void b(String str, int i6) {
-        this.f16283E.a((short) i6);
-        if (i6 == str.length()) {
-            f fVar = this.f16283E;
-            str.getBytes(0, i6, fVar.f16334a, fVar.f16335b);
+    private void b(String str, int i4) {
+        this.f17070E.a((short) i4);
+        if (i4 == str.length()) {
+            f fVar = this.f17070E;
+            str.getBytes(0, i4, fVar.f17121a, fVar.f17122b);
         } else {
-            this.f16283E.a(str);
+            this.f17070E.a(str);
         }
     }
 
@@ -1147,36 +1147,36 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
         if (!a(str, b9, bArr.length + 2)) {
             return 0;
         }
-        this.f16283E.a((short) bArr.length);
-        f fVar = this.f16283E;
-        int i6 = fVar.f16335b;
+        this.f17070E.a((short) bArr.length);
+        f fVar = this.f17070E;
+        int i4 = fVar.f17122b;
         fVar.a(bArr);
-        return i6;
+        return i4;
     }
 
     public final boolean a(File file) {
         long length = file.length();
         if (length != 0 && length < 268435456) {
-            int i6 = (int) length;
-            int a9 = a(f16275r, i6);
-            f fVar = this.f16283E;
-            if (fVar != null && fVar.f16334a.length == a9) {
-                fVar.f16335b = 0;
+            int i4 = (int) length;
+            int a9 = a(f17062r, i4);
+            f fVar = this.f17070E;
+            if (fVar != null && fVar.f17121a.length == a9) {
+                fVar.f17122b = 0;
             } else {
                 fVar = new f(new byte[a9]);
-                this.f16283E = fVar;
+                this.f17070E = fVar;
             }
-            l.a(file, fVar.f16334a, i6);
+            l.a(file, fVar.f17121a, i4);
             int c9 = fVar.c();
             if (c9 < 0) {
                 return false;
             }
-            int i9 = (-1073741825) & c9;
+            int i6 = (-1073741825) & c9;
             boolean b9 = b(c9);
-            long d2 = fVar.d();
-            this.f16279A = i9 + 12;
-            if (i9 >= 0 && i9 <= i6 - 12 && d2 == fVar.b(12, i9) && a(b9)) {
-                this.f16280B = d2;
+            long d9 = fVar.d();
+            this.f17066A = i6 + 12;
+            if (i6 >= 0 && i6 <= i4 - 12 && d9 == fVar.b(12, i6) && a(b9)) {
+                this.f17067B = d9;
                 return true;
             }
         }
@@ -1189,41 +1189,41 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
 
     /* JADX WARN: Code restructure failed: missing block: B:127:0x01cb, code lost:
     
-        throw new java.lang.Exception(com.anythink.core.common.s.a.a.f16261b);
+        throw new java.lang.Exception(com.anythink.core.common.s.a.a.f17048b);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final boolean a(boolean z3) {
+    public final boolean a(boolean z6) {
         int length;
         f fVar;
         Object obj;
-        boolean z6 = false;
-        if (z3 && this.f16302z == null) {
-            b(f16264e);
+        boolean z9 = false;
+        if (z6 && this.f17089z == null) {
+            b(f17051e);
             return false;
         }
-        com.anythink.core.common.s.a.a.a aVar = z3 ? this.f16302z : null;
-        f fVar2 = this.f16283E;
-        fVar2.f16335b = 12;
+        com.anythink.core.common.s.a.a.a aVar = z6 ? this.f17089z : null;
+        f fVar2 = this.f17070E;
+        fVar2.f17122b = 12;
         while (true) {
             try {
-                int i6 = fVar2.f16335b;
-                int i9 = this.f16279A;
-                boolean z9 = true;
-                if (i6 >= i9) {
-                    if (i6 != i9) {
-                        a(new Exception(f16261b));
+                int i4 = fVar2.f17122b;
+                int i6 = this.f17066A;
+                boolean z10 = true;
+                if (i4 >= i6) {
+                    if (i4 != i6) {
+                        a(new Exception(f17048b));
                         return false;
                     }
-                    if (!z3 && this.f16302z != null && i9 != 12) {
-                        z6 = true;
+                    if (!z6 && this.f17089z != null && i6 != 12) {
+                        z9 = true;
                     }
-                    this.f16287I = z6;
+                    this.f17074I = z9;
                     return true;
                 }
                 byte a9 = fVar2.a();
-                byte b9 = (byte) (a9 & c.f16318c);
+                byte b9 = (byte) (a9 & c.f17105c);
                 if (b9 <= 0 || b9 > 8) {
                     break;
                 }
@@ -1232,82 +1232,82 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
                     throw new IllegalStateException("invalid key size");
                 }
                 if (a9 < 0) {
-                    fVar2.f16335b += a10;
-                    int b10 = fVar2.f16335b + (b9 <= 5 ? f16273o[b9] : fVar2.b() & 65535);
-                    fVar2.f16335b = b10;
-                    b(i6, b10);
+                    fVar2.f17122b += a10;
+                    int b10 = fVar2.f17122b + (b9 <= 5 ? f17060o[b9] : fVar2.b() & 65535);
+                    fVar2.f17122b = b10;
+                    b(i4, b10);
                 } else {
                     String a11 = fVar2.a(aVar, a10);
-                    int i10 = fVar2.f16335b;
+                    int i9 = fVar2.f17122b;
                     if (b9 > 5) {
                         int b11 = fVar2.b() & 65535;
-                        boolean z10 = (a9 & c.f16317b) != 0;
-                        if (z10 && b11 != 32) {
+                        boolean z11 = (a9 & c.f17104b) != 0;
+                        if (z11 && b11 != 32) {
                             throw new IllegalStateException("name size not match");
                         }
                         if (b9 == 6) {
-                            this.f16281C.put(a11, new b.i(i6, i10 + 2, z10 ? fVar2.d(b11) : fVar2.a(aVar, b11), b11, z10));
+                            this.f17068C.put(a11, new b.i(i4, i9 + 2, z11 ? fVar2.d(b11) : fVar2.a(aVar, b11), b11, z11));
                         } else if (b9 == 7) {
-                            if (z10) {
+                            if (z11) {
                                 obj = fVar2.d(b11);
                             } else {
                                 obj = new byte[b11];
-                                System.arraycopy(fVar2.f16334a, fVar2.f16335b, obj, 0, b11);
-                                fVar2.f16335b += b11;
+                                System.arraycopy(fVar2.f17121a, fVar2.f17122b, obj, 0, b11);
+                                fVar2.f17122b += b11;
                                 if (aVar != null) {
                                     obj = aVar.b();
                                 }
                             }
-                            this.f16281C.put(a11, new b.a(i6, i10 + 2, obj, b11, z10));
-                        } else if (z10) {
-                            this.f16281C.put(a11, new b.h(i6, i10 + 2, fVar2.d(b11), b11, true));
+                            this.f17068C.put(a11, new b.a(i4, i9 + 2, obj, b11, z11));
+                        } else if (z11) {
+                            this.f17068C.put(a11, new b.h(i4, i9 + 2, fVar2.d(b11), b11, true));
                         } else {
                             if (aVar == null) {
-                                fVar = this.f16283E;
+                                fVar = this.f17070E;
                                 length = b11;
                             } else {
-                                f fVar3 = this.f16283E;
-                                System.arraycopy(fVar3.f16334a, fVar3.f16335b, new byte[b11], 0, b11);
+                                f fVar3 = this.f17070E;
+                                System.arraycopy(fVar3.f17121a, fVar3.f17122b, new byte[b11], 0, b11);
                                 byte[] b12 = aVar.b();
                                 f fVar4 = new f(b12);
                                 length = b12.length;
                                 fVar = fVar4;
                             }
                             int a12 = fVar.a() & 255;
-                            String d2 = fVar.d(a12);
-                            com.anythink.core.common.s.a.a.b bVar = this.f16300x.get(d2);
-                            int i11 = length - (a12 + 1);
-                            if (i11 >= 0) {
+                            String d9 = fVar.d(a12);
+                            com.anythink.core.common.s.a.a.b bVar = this.f17087x.get(d9);
+                            int i10 = length - (a12 + 1);
+                            if (i10 >= 0) {
                                 if (bVar != null) {
                                     try {
-                                        b.h hVar = new b.h(i6, i10 + 2, bVar.a(fVar.f16334a, fVar.f16335b, i11), b11, false);
-                                        hVar.f16311b = bVar;
-                                        this.f16281C.put(a11, hVar);
+                                        b.h hVar = new b.h(i4, i9 + 2, bVar.a(fVar.f17121a, fVar.f17122b, i10), b11, false);
+                                        hVar.f17098b = bVar;
+                                        this.f17068C.put(a11, hVar);
                                     } catch (Exception e9) {
                                         a(e9);
                                     }
                                 } else {
-                                    b("object with tag: " + d2 + " without encoder");
+                                    b("object with tag: " + d9 + " without encoder");
                                 }
-                                fVar2.f16335b = i10 + 2 + b11;
+                                fVar2.f17122b = i9 + 2 + b11;
                             } else {
-                                throw new Exception(f16261b);
+                                throw new Exception(f17048b);
                             }
                         }
                     } else if (b9 == 1) {
-                        HashMap<String, b.AbstractC0098b> hashMap = this.f16281C;
+                        HashMap<String, b.AbstractC0098b> hashMap = this.f17068C;
                         if (fVar2.a() != 1) {
-                            z9 = false;
+                            z10 = false;
                         }
-                        hashMap.put(a11, new b.c(i10, z9));
+                        hashMap.put(a11, new b.c(i9, z10));
                     } else if (b9 == 2) {
-                        this.f16281C.put(a11, new b.f(i10, fVar2.a(aVar)));
+                        this.f17068C.put(a11, new b.f(i9, fVar2.a(aVar)));
                     } else if (b9 == 3) {
-                        this.f16281C.put(a11, new b.e(i10, Float.intBitsToFloat(fVar2.a(aVar))));
+                        this.f17068C.put(a11, new b.e(i9, Float.intBitsToFloat(fVar2.a(aVar))));
                     } else if (b9 != 4) {
-                        this.f16281C.put(a11, new b.d(i10, Double.longBitsToDouble(fVar2.b(aVar))));
+                        this.f17068C.put(a11, new b.d(i9, Double.longBitsToDouble(fVar2.b(aVar))));
                     } else {
-                        this.f16281C.put(a11, new b.g(i10, fVar2.b(aVar)));
+                        this.f17068C.put(a11, new b.g(i9, fVar2.b(aVar)));
                     }
                 }
             } catch (Exception e10) {
@@ -1317,90 +1317,90 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
         }
     }
 
-    private void a(int i6, String str, int i9, int i10, com.anythink.core.common.s.a.a.a aVar) {
+    private void a(int i4, String str, int i6, int i9, com.anythink.core.common.s.a.a.a aVar) {
         int length;
         f fVar;
         if (aVar == null) {
-            fVar = this.f16283E;
-            length = i6;
+            fVar = this.f17070E;
+            length = i4;
         } else {
-            f fVar2 = this.f16283E;
-            System.arraycopy(fVar2.f16334a, fVar2.f16335b, new byte[i6], 0, i6);
+            f fVar2 = this.f17070E;
+            System.arraycopy(fVar2.f17121a, fVar2.f17122b, new byte[i4], 0, i4);
             byte[] b9 = aVar.b();
             f fVar3 = new f(b9);
             length = b9.length;
             fVar = fVar3;
         }
         int a9 = fVar.a() & 255;
-        String d2 = fVar.d(a9);
-        com.anythink.core.common.s.a.a.b bVar = this.f16300x.get(d2);
-        int i11 = length - (a9 + 1);
-        if (i11 < 0) {
-            throw new Exception(f16261b);
+        String d9 = fVar.d(a9);
+        com.anythink.core.common.s.a.a.b bVar = this.f17087x.get(d9);
+        int i10 = length - (a9 + 1);
+        if (i10 < 0) {
+            throw new Exception(f17048b);
         }
         if (bVar != null) {
             try {
-                b.h hVar = new b.h(i9, i10 + 2, bVar.a(fVar.f16334a, fVar.f16335b, i11), i6, false);
-                hVar.f16311b = bVar;
-                this.f16281C.put(str, hVar);
+                b.h hVar = new b.h(i6, i9 + 2, bVar.a(fVar.f17121a, fVar.f17122b, i10), i4, false);
+                hVar.f17098b = bVar;
+                this.f17068C.put(str, hVar);
                 return;
             } catch (Exception e9) {
                 a(e9);
                 return;
             }
         }
-        b("object with tag: " + d2 + " without encoder");
+        b("object with tag: " + d9 + " without encoder");
     }
 
     private static void a(ArrayList<C0097a> arrayList) {
         Collections.sort(arrayList);
-        int i6 = 0;
+        int i4 = 0;
         C0097a c0097a = arrayList.get(0);
         int size = arrayList.size();
-        for (int i9 = 1; i9 < size; i9++) {
-            C0097a c0097a2 = arrayList.get(i9);
-            if (c0097a2.f16303a == c0097a.f16304b) {
-                c0097a.f16304b = c0097a2.f16304b;
+        for (int i6 = 1; i6 < size; i6++) {
+            C0097a c0097a2 = arrayList.get(i6);
+            if (c0097a2.f17090a == c0097a.f17091b) {
+                c0097a.f17091b = c0097a2.f17091b;
             } else {
-                i6++;
-                if (i6 != i9) {
-                    arrayList.set(i6, c0097a2);
+                i4++;
+                if (i4 != i6) {
+                    arrayList.set(i4, c0097a2);
                 }
                 c0097a = c0097a2;
             }
         }
-        int i10 = i6 + 1;
-        if (size > i10) {
-            arrayList.subList(i10, size).clear();
+        int i9 = i4 + 1;
+        if (size > i9) {
+            arrayList.subList(i9, size).clear();
         }
     }
 
-    private void a(int i6, int[] iArr, int[] iArr2) {
-        for (b.AbstractC0098b abstractC0098b : this.f16281C.values()) {
-            int i9 = abstractC0098b.f16305a;
-            if (i9 > i6) {
+    private void a(int i4, int[] iArr, int[] iArr2) {
+        for (b.AbstractC0098b abstractC0098b : this.f17068C.values()) {
+            int i6 = abstractC0098b.f17092a;
+            if (i6 > i4) {
                 int length = iArr.length - 1;
-                int i10 = 0;
+                int i9 = 0;
                 while (true) {
-                    if (i10 > length) {
+                    if (i9 > length) {
                         break;
                     }
-                    int i11 = (i10 + length) >>> 1;
-                    int i12 = iArr[i11];
-                    if (i12 >= i9) {
-                        if (i12 <= i9) {
-                            length = i11;
+                    int i10 = (i9 + length) >>> 1;
+                    int i11 = iArr[i10];
+                    if (i11 >= i6) {
+                        if (i11 <= i6) {
+                            length = i10;
                             break;
                         }
-                        length = i11 - 1;
+                        length = i10 - 1;
                     } else {
-                        i10 = i11 + 1;
+                        i9 = i10 + 1;
                     }
                 }
-                int i13 = iArr2[length];
-                abstractC0098b.f16305a -= i13;
+                int i12 = iArr2[length];
+                abstractC0098b.f17092a -= i12;
                 if (abstractC0098b.a() >= 6) {
-                    ((b.j) abstractC0098b).f16313d -= i13;
+                    ((b.j) abstractC0098b).f17100d -= i12;
                 }
             }
         }
@@ -1426,26 +1426,26 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
     }
 
     public final void a(Exception exc) {
-        com.anythink.core.common.s.a.a.c cVar = this.f16301y;
+        com.anythink.core.common.s.a.a.c cVar = this.f17088y;
         if (cVar != null) {
-            cVar.b(this.f16299w, exc);
+            cVar.b(this.f17086w, exc);
         }
     }
 
-    public final synchronized double a(String str, double d2) {
-        b.AbstractC0098b abstractC0098b = this.f16281C.get(str);
+    public final synchronized double a(String str, double d9) {
+        b.AbstractC0098b abstractC0098b = this.f17068C.get(str);
         if (abstractC0098b != null && abstractC0098b.a() == 5) {
-            return ((b.d) abstractC0098b).f16307b;
+            return ((b.d) abstractC0098b).f17094b;
         }
-        return d2;
+        return d9;
     }
 
     private String a(b.i iVar, com.anythink.core.common.s.a.a.a aVar) {
-        String str = (String) iVar.f16312c;
-        byte[] bArr = (byte[]) this.f16289L.a(str);
+        String str = (String) iVar.f17099c;
+        byte[] bArr = (byte[]) this.f17076L.a(str);
         if (bArr == null) {
             try {
-                bArr = l.b(new File(this.f16298v + this.f16299w, str));
+                bArr = l.b(new File(this.f17085v + this.f17086w, str));
             } catch (Exception e9) {
                 a(e9);
             }
@@ -1463,11 +1463,11 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
     }
 
     private byte[] a(b.a aVar, com.anythink.core.common.s.a.a.a aVar2) {
-        String str = (String) aVar.f16312c;
-        byte[] bArr = (byte[]) this.f16289L.a(str);
+        String str = (String) aVar.f17099c;
+        byte[] bArr = (byte[]) this.f17076L.a(str);
         if (bArr == null) {
             try {
-                bArr = l.b(new File(this.f16298v + this.f16299w, str));
+                bArr = l.b(new File(this.f17085v + this.f17086w, str));
             } catch (Exception e9) {
                 a(e9);
                 return null;
@@ -1480,11 +1480,11 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
     }
 
     private Object a(b.h hVar, com.anythink.core.common.s.a.a.a aVar) {
-        String str = (String) hVar.f16312c;
-        byte[] bArr = (byte[]) this.f16289L.a(str);
+        String str = (String) hVar.f17099c;
+        byte[] bArr = (byte[]) this.f17076L.a(str);
         if (bArr == null) {
             try {
-                bArr = l.b(new File(this.f16298v + this.f16299w, str));
+                bArr = l.b(new File(this.f17085v + this.f17086w, str));
             } catch (Exception e9) {
                 a(e9);
                 return null;
@@ -1494,13 +1494,13 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
             if (aVar != null) {
                 bArr = aVar.b();
             }
-            int i6 = bArr[0] & 255;
-            String a9 = this.f16283E.a(bArr, 1, i6);
-            com.anythink.core.common.s.a.a.b bVar = this.f16300x.get(a9);
+            int i4 = bArr[0] & 255;
+            String a9 = this.f17070E.a(bArr, 1, i4);
+            com.anythink.core.common.s.a.a.b bVar = this.f17087x.get(a9);
             if (bVar != null) {
-                hVar.f16311b = bVar;
-                int i9 = i6 + 1;
-                return bVar.a(bArr, i9, bArr.length - i9);
+                hVar.f17098b = bVar;
+                int i6 = i4 + 1;
+                return bVar.a(bArr, i6, bArr.length - i6);
             }
             b(new Exception("No encoder for tag:".concat(String.valueOf(a9))));
             return null;
@@ -1514,55 +1514,55 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
         if (iVar == null) {
             int b10 = f.b(str);
             f(b10);
-            int i6 = b10 + 4;
-            this.f16285G = i6 + b9;
+            int i4 = b10 + 4;
+            this.f17072G = i4 + b9;
             k();
-            this.f16283E.a((byte) 6);
+            this.f17070E.a((byte) 6);
             a(str, b10);
             b(str2, b9);
-            HashMap<String, b.AbstractC0098b> hashMap = this.f16281C;
-            int i9 = this.f16284F;
-            hashMap.put(str, new b.i(i9, i6 + i9, str2, b9, false));
+            HashMap<String, b.AbstractC0098b> hashMap = this.f17068C;
+            int i6 = this.f17071F;
+            hashMap.put(str, new b.i(i6, i4 + i6, str2, b9, false));
             i();
             return;
         }
-        int i10 = iVar.f16305a;
-        int i11 = i10 - iVar.f16313d;
-        int i12 = iVar.f16314e;
-        boolean z3 = false;
-        if (i12 == b9) {
-            this.f16280B = this.f16283E.b(i10, i12) ^ this.f16280B;
+        int i9 = iVar.f17092a;
+        int i10 = i9 - iVar.f17100d;
+        int i11 = iVar.f17101e;
+        boolean z6 = false;
+        if (i11 == b9) {
+            this.f17067B = this.f17070E.b(i9, i11) ^ this.f17067B;
             if (b9 == str2.length()) {
-                str2.getBytes(0, b9, this.f16283E.f16334a, iVar.f16305a);
+                str2.getBytes(0, b9, this.f17070E.f17121a, iVar.f17092a);
             } else {
-                f fVar = this.f16283E;
-                fVar.f16335b = iVar.f16305a;
+                f fVar = this.f17070E;
+                fVar.f17122b = iVar.f17092a;
                 fVar.a(str2);
             }
-            this.f16284F = iVar.f16305a;
-            this.f16285G = b9;
+            this.f17071F = iVar.f17092a;
+            this.f17072G = b9;
         } else {
-            this.f16285G = i11 + b9;
+            this.f17072G = i10 + b9;
             k();
-            this.f16283E.a((byte) 6);
-            int i13 = i11 - 3;
-            f fVar2 = this.f16283E;
-            byte[] bArr = fVar2.f16334a;
-            System.arraycopy(bArr, iVar.f16313d + 1, bArr, fVar2.f16335b, i13);
-            this.f16283E.f16335b += i13;
+            this.f17070E.a((byte) 6);
+            int i12 = i10 - 3;
+            f fVar2 = this.f17070E;
+            byte[] bArr = fVar2.f17121a;
+            System.arraycopy(bArr, iVar.f17100d + 1, bArr, fVar2.f17122b, i12);
+            this.f17070E.f17122b += i12;
             b(str2, b9);
-            a((byte) 6, iVar.f16313d, iVar.f16305a + iVar.f16314e);
-            r2 = iVar.f16315f ? (String) iVar.f16312c : null;
-            iVar.f16315f = false;
-            int i14 = this.f16284F;
-            iVar.f16313d = i14;
-            iVar.f16305a = i14 + i11;
-            iVar.f16314e = b9;
-            z3 = true;
+            a((byte) 6, iVar.f17100d, iVar.f17092a + iVar.f17101e);
+            r2 = iVar.f17102f ? (String) iVar.f17099c : null;
+            iVar.f17102f = false;
+            int i13 = this.f17071F;
+            iVar.f17100d = i13;
+            iVar.f17092a = i13 + i10;
+            iVar.f17101e = b9;
+            z6 = true;
         }
-        iVar.f16312c = str2;
+        iVar.f17099c = str2;
         i();
-        if (z3) {
+        if (z6) {
             h();
         }
         if (r2 != null) {
@@ -1585,7 +1585,7 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
                         aVar = this;
                     } else {
                         g();
-                        b.AbstractC0098b abstractC0098b = this.f16281C.get(str);
+                        b.AbstractC0098b abstractC0098b = this.f17068C.get(str);
                         b.AbstractC0098b abstractC0098b2 = abstractC0098b;
                         if (abstractC0098b != null) {
                             byte a9 = abstractC0098b.a();
@@ -1596,10 +1596,10 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
                             }
                         }
                         b.a aVar2 = (b.a) abstractC0098b2;
-                        com.anythink.core.common.s.a.a.a aVar3 = this.f16302z;
+                        com.anythink.core.common.s.a.a.a aVar3 = this.f17089z;
                         byte[] a10 = aVar3 != null ? aVar3.a() : bArr;
                         if (a10 == null) {
-                            a(new Exception(f16265f));
+                            a(new Exception(f17052f));
                             return this;
                         }
                         aVar = this;
@@ -1635,7 +1635,7 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
                 if (bVar != null) {
                     String a9 = bVar.a();
                     if (!a9.isEmpty() && a9.length() <= 50) {
-                        if (!this.f16300x.containsKey(a9)) {
+                        if (!this.f17087x.containsKey(a9)) {
                             throw new IllegalArgumentException("Encoder hasn't been registered");
                         }
                         try {
@@ -1655,7 +1655,7 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
                                 return this;
                             }
                             g();
-                            b.AbstractC0098b abstractC0098b2 = this.f16281C.get(str);
+                            b.AbstractC0098b abstractC0098b2 = this.f17068C.get(str);
                             if (abstractC0098b2 == null || abstractC0098b2.a() == 8) {
                                 abstractC0098b = abstractC0098b2;
                             } else {
@@ -1667,8 +1667,8 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
                             fVar.a((byte) b9);
                             fVar.a(a9);
                             fVar.a(bArr);
-                            byte[] bArr2 = fVar.f16334a;
-                            com.anythink.core.common.s.a.a.a aVar = this.f16302z;
+                            byte[] bArr2 = fVar.f17121a;
+                            com.anythink.core.common.s.a.a.a aVar = this.f17089z;
                             if (aVar != null) {
                                 bArr2 = aVar.a();
                             }
@@ -1777,85 +1777,85 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
     }
 
     private boolean a(String str, byte b9) {
-        return a(str, b9, f16273o[b9]);
+        return a(str, b9, f17060o[b9]);
     }
 
-    private boolean a(String str, byte b9, int i6) {
-        com.anythink.core.common.s.a.a.a aVar = this.f16302z;
+    private boolean a(String str, byte b9, int i4) {
+        com.anythink.core.common.s.a.a.a aVar = this.f17089z;
         if (aVar != null) {
             str.getBytes(StandardCharsets.UTF_8);
             byte[] a9 = aVar.a();
             if (a9 == null) {
-                a(new Exception(f16265f));
+                a(new Exception(f17052f));
                 return false;
             }
             int length = a9.length;
-            a(length, i6, b9);
-            this.f16283E.a((byte) length);
-            f fVar = this.f16283E;
-            System.arraycopy(a9, 0, fVar.f16334a, fVar.f16335b, length);
-            this.f16283E.f16335b += length;
+            a(length, i4, b9);
+            this.f17070E.a((byte) length);
+            f fVar = this.f17070E;
+            System.arraycopy(a9, 0, fVar.f17121a, fVar.f17122b, length);
+            this.f17070E.f17122b += length;
             return true;
         }
         int b10 = f.b(str);
-        a(b10, i6, b9);
+        a(b10, i4, b9);
         a(str, b10);
         return true;
     }
 
-    private void a(int i6, int i9, byte b9) {
-        f(i6);
-        this.f16285G = i6 + 2 + i9;
+    private void a(int i4, int i6, byte b9) {
+        f(i4);
+        this.f17072G = i4 + 2 + i6;
         k();
-        this.f16283E.a(b9);
+        this.f17070E.a(b9);
     }
 
-    private void a(String str, int i6) {
-        this.f16283E.a((byte) i6);
-        if (i6 == str.length()) {
-            f fVar = this.f16283E;
-            str.getBytes(0, i6, fVar.f16334a, fVar.f16335b);
-            this.f16283E.f16335b += i6;
+    private void a(String str, int i4) {
+        this.f17070E.a((byte) i4);
+        if (i4 == str.length()) {
+            f fVar = this.f17070E;
+            str.getBytes(0, i4, fVar.f17121a, fVar.f17122b);
+            this.f17070E.f17122b += i4;
             return;
         }
-        this.f16283E.a(str);
+        this.f17070E.a(str);
     }
 
-    public void a(byte b9, int i6, int i9) {
-        b(i6, i9);
-        byte b10 = (byte) (b9 | c.f16316a);
-        byte[] bArr = this.f16283E.f16334a;
-        this.f16280B = (((bArr[i6] ^ b10) & 255) << ((i6 & 7) << 3)) ^ this.f16280B;
-        bArr[i6] = b10;
+    public void a(byte b9, int i4, int i6) {
+        b(i4, i6);
+        byte b10 = (byte) (b9 | c.f17103a);
+        byte[] bArr = this.f17070E.f17121a;
+        this.f17067B = (((bArr[i4] ^ b10) & 255) << ((i4 & 7) << 3)) ^ this.f17067B;
+        bArr[i4] = b10;
     }
 
-    public void a(int i6, byte[] bArr) {
+    public void a(int i4, byte[] bArr) {
         int length = bArr.length;
-        this.f16280B ^= this.f16283E.b(i6, length);
-        f fVar = this.f16283E;
-        fVar.f16335b = i6;
+        this.f17067B ^= this.f17070E.b(i4, length);
+        f fVar = this.f17070E;
+        fVar.f17122b = i4;
         fVar.a(bArr);
-        this.f16280B = this.f16283E.b(i6, length) ^ this.f16280B;
+        this.f17067B = this.f17070E.b(i4, length) ^ this.f17067B;
     }
 
-    private int a(float f3) {
-        int floatToRawIntBits = Float.floatToRawIntBits(f3);
-        com.anythink.core.common.s.a.a.a aVar = this.f16302z;
+    private int a(float f2) {
+        int floatToRawIntBits = Float.floatToRawIntBits(f2);
+        com.anythink.core.common.s.a.a.a aVar = this.f17089z;
         return aVar != null ? aVar.c() : floatToRawIntBits;
     }
 
-    private long a(double d2) {
-        long doubleToRawLongBits = Double.doubleToRawLongBits(d2);
-        com.anythink.core.common.s.a.a.a aVar = this.f16302z;
+    private long a(double d9) {
+        long doubleToRawLongBits = Double.doubleToRawLongBits(d9);
+        com.anythink.core.common.s.a.a.a aVar = this.f17089z;
         return aVar != null ? aVar.e() : doubleToRawLongBits;
     }
 
     private void a(String str, Object obj, byte[] bArr, b.j jVar, byte b9) {
         if (jVar == null) {
             a(str, obj, bArr, b9);
-        } else if (!jVar.f16315f && jVar.f16314e == bArr.length) {
-            a(jVar.f16305a, bArr);
-            jVar.f16312c = obj;
+        } else if (!jVar.f17102f && jVar.f17101e == bArr.length) {
+            a(jVar.f17092a, bArr);
+            jVar.f17099c = obj;
         } else {
             a(str, obj, bArr, jVar);
         }
@@ -1866,25 +1866,25 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
         b.AbstractC0098b hVar;
         int a9 = a(str, bArr, b9);
         if (a9 > 0) {
-            boolean z3 = this.f16288K != null;
-            if (z3) {
-                this.f16290M.a(str, obj);
-                obj = this.f16288K;
-                this.f16288K = null;
+            boolean z6 = this.f17075K != null;
+            if (z6) {
+                this.f17077M.a(str, obj);
+                obj = this.f17075K;
+                this.f17075K = null;
                 length = 32;
             } else {
                 length = bArr.length;
             }
             Object obj2 = obj;
-            int i6 = length;
+            int i4 = length;
             if (b9 == 6) {
-                hVar = new b.i(this.f16284F, a9, (String) obj2, i6, z3);
+                hVar = new b.i(this.f17071F, a9, (String) obj2, i4, z6);
             } else if (b9 == 7) {
-                hVar = new b.a(this.f16284F, a9, obj2, i6, z3);
+                hVar = new b.a(this.f17071F, a9, obj2, i4, z6);
             } else {
-                hVar = new b.h(this.f16284F, a9, obj2, i6, z3);
+                hVar = new b.h(this.f17071F, a9, obj2, i4, z6);
             }
-            this.f16281C.put(str, hVar);
+            this.f17068C.put(str, hVar);
             i();
         }
     }
@@ -1892,20 +1892,20 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
     private void a(String str, Object obj, byte[] bArr, b.j jVar) {
         int a9 = a(str, bArr, jVar.a());
         if (a9 > 0) {
-            String str2 = jVar.f16315f ? (String) jVar.f16312c : null;
-            a(jVar.a(), jVar.f16313d, jVar.f16305a + jVar.f16314e);
-            boolean z3 = this.f16288K != null;
-            jVar.f16313d = this.f16284F;
-            jVar.f16305a = a9;
-            jVar.f16315f = z3;
-            if (z3) {
-                this.f16290M.a(str, obj);
-                jVar.f16312c = this.f16288K;
-                jVar.f16314e = 32;
-                this.f16288K = null;
+            String str2 = jVar.f17102f ? (String) jVar.f17099c : null;
+            a(jVar.a(), jVar.f17100d, jVar.f17092a + jVar.f17101e);
+            boolean z6 = this.f17075K != null;
+            jVar.f17100d = this.f17071F;
+            jVar.f17092a = a9;
+            jVar.f17102f = z6;
+            if (z6) {
+                this.f17077M.a(str, obj);
+                jVar.f17099c = this.f17075K;
+                jVar.f17101e = 32;
+                this.f17075K = null;
             } else {
-                jVar.f16312c = obj;
-                jVar.f16314e = bArr.length;
+                jVar.f17099c = obj;
+                jVar.f17101e = bArr.length;
             }
             i();
             h();
@@ -1916,26 +1916,26 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
     }
 
     private int a(final String str, final byte[] bArr, byte b9) {
-        this.f16288K = null;
-        if (bArr.length < this.f16297q) {
+        this.f17075K = null;
+        if (bArr.length < this.f17084q) {
             return b(str, bArr, b9);
         }
-        StringBuilder j6 = AbstractC4404f.j("Large value, key: ", str, ", size: ");
-        j6.append(bArr.length);
-        c(j6.toString());
+        StringBuilder l9 = Wv.l("Large value, key: ", str, ", size: ");
+        l9.append(bArr.length);
+        c(l9.toString());
         final String a9 = l.a();
         byte[] bArr2 = new byte[32];
         a9.getBytes(0, 32, bArr2, 0);
-        int b10 = b(str, bArr2, (byte) (b9 | c.f16317b));
+        int b10 = b(str, bArr2, (byte) (b9 | c.f17104b));
         if (b10 > 0) {
-            this.f16289L.a(a9, bArr);
-            this.f16291N.a(a9, new e.a() { // from class: com.anythink.core.common.s.a.n
+            this.f17076L.a(a9, bArr);
+            this.f17078N.a(a9, new e.a() { // from class: com.anythink.core.common.s.a.n
                 @Override // com.anythink.core.common.s.a.e.a
                 public final void execute(AtomicBoolean atomicBoolean) {
                     a.this.a(a9, bArr, str, atomicBoolean);
                 }
             });
-            this.f16288K = a9;
+            this.f17075K = a9;
         }
         return b10;
     }
@@ -1945,7 +1945,7 @@ public abstract class a implements SharedPreferences, SharedPreferences.Editor {
         if (atomicBoolean.get()) {
             return;
         }
-        if (l.a(new File(this.f16298v + this.f16299w, str), bArr, atomicBoolean)) {
+        if (l.a(new File(this.f17085v + this.f17086w, str), bArr, atomicBoolean)) {
             return;
         }
         c("Write large value with key:" + str2 + " failed");

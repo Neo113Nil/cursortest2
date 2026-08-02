@@ -4,5 +4,5 @@ package com.instagram.common.viewpoint.core;
 public final class DN {
     public int A00;
     public long A01;
-    public C0945Hb A02;
+    public C0965Hb A02;
 }

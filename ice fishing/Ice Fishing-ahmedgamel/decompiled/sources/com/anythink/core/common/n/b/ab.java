@@ -13,10 +13,10 @@ public enum ab {
 
 
     /* renamed from: g, reason: collision with root package name */
-    private final String f15470g;
+    private final String f16257g;
 
     ab(String str) {
-        this.f15470g = str;
+        this.f16257g = str;
     }
 
     private static /* synthetic */ ab[] a() {
@@ -25,32 +25,32 @@ public enum ab {
 
     @Override // java.lang.Enum
     public final String toString() {
-        return this.f15470g;
+        return this.f16257g;
     }
 
     public static ab a(String str) {
         ab abVar = HTTP_1_0;
-        if (str.equals(abVar.f15470g)) {
+        if (str.equals(abVar.f16257g)) {
             return abVar;
         }
         ab abVar2 = HTTP_1_1;
-        if (str.equals(abVar2.f15470g)) {
+        if (str.equals(abVar2.f16257g)) {
             return abVar2;
         }
         ab abVar3 = H2_PRIOR_KNOWLEDGE;
-        if (str.equals(abVar3.f15470g)) {
+        if (str.equals(abVar3.f16257g)) {
             return abVar3;
         }
         ab abVar4 = HTTP_2;
-        if (str.equals(abVar4.f15470g)) {
+        if (str.equals(abVar4.f16257g)) {
             return abVar4;
         }
         ab abVar5 = SPDY_3;
-        if (str.equals(abVar5.f15470g)) {
+        if (str.equals(abVar5.f16257g)) {
             return abVar5;
         }
         ab abVar6 = QUIC;
-        if (str.equals(abVar6.f15470g)) {
+        if (str.equals(abVar6.f16257g)) {
             return abVar6;
         }
         throw new IOException("Unexpected protocol: ".concat(str));

@@ -22,105 +22,105 @@ import org.json.JSONObject;
 public class n extends bu implements Cloneable {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f13990a = 1;
+    public static final int f14776a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f13991b = 2;
+    public static final int f14777b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f13992c = 3;
+    public static final int f14778c = 3;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f13993d = 4;
+    public static final int f14779d = 4;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f13994e = 5;
+    public static final int f14780e = 5;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final int f13995f = 6;
+    public static final int f14781f = 6;
 
     /* renamed from: g, reason: collision with root package name */
-    public static final int f13996g = 7;
+    public static final int f14782g = 7;
 
     /* renamed from: h, reason: collision with root package name */
-    public static final int f13997h = 8;
+    public static final int f14783h = 8;
     public static final int i = 0;
 
     /* renamed from: j, reason: collision with root package name */
-    public static final int f13998j = 1;
+    public static final int f14784j = 1;
 
     /* renamed from: k, reason: collision with root package name */
-    public static final int f13999k = 2;
+    public static final int f14785k = 2;
 
     /* renamed from: l, reason: collision with root package name */
-    public static final int f14000l = 0;
+    public static final int f14786l = 0;
 
     /* renamed from: m, reason: collision with root package name */
-    public static final int f14001m = 1;
+    public static final int f14787m = 1;
 
     /* renamed from: n, reason: collision with root package name */
-    public static final int f14002n = 2;
+    public static final int f14788n = 2;
 
     /* renamed from: o, reason: collision with root package name */
-    public static final int f14003o = 0;
+    public static final int f14789o = 0;
 
     /* renamed from: p, reason: collision with root package name */
-    public static final int f14004p = 1;
+    public static final int f14790p = 1;
 
     /* renamed from: q, reason: collision with root package name */
-    public static final int f14005q = 2;
+    public static final int f14791q = 2;
 
     /* renamed from: A, reason: collision with root package name */
-    protected double f14006A;
+    protected double f14792A;
 
     /* renamed from: B, reason: collision with root package name */
-    String f14007B;
+    String f14793B;
 
     /* renamed from: C, reason: collision with root package name */
-    public int f14008C;
+    public int f14794C;
 
     /* renamed from: D, reason: collision with root package name */
-    int f14009D;
+    int f14795D;
 
     /* renamed from: E, reason: collision with root package name */
-    int f14010E;
+    int f14796E;
 
     /* renamed from: F, reason: collision with root package name */
-    public String f14011F;
+    public String f14797F;
 
     /* renamed from: G, reason: collision with root package name */
-    protected int f14012G;
+    protected int f14798G;
 
     /* renamed from: H, reason: collision with root package name */
-    protected int f14013H;
+    protected int f14799H;
 
     /* renamed from: I, reason: collision with root package name */
-    protected int f14014I;
+    protected int f14800I;
     protected int J;
 
     /* renamed from: K, reason: collision with root package name */
-    protected double f14015K;
+    protected double f14801K;
 
     /* renamed from: L, reason: collision with root package name */
-    List<Integer> f14016L;
+    List<Integer> f14802L;
 
     /* renamed from: M, reason: collision with root package name */
-    boolean f14017M;
+    boolean f14803M;
 
     /* renamed from: N, reason: collision with root package name */
-    int f14018N;
+    int f14804N;
 
     /* renamed from: O, reason: collision with root package name */
-    String f14019O;
+    String f14805O;
 
     /* renamed from: P, reason: collision with root package name */
-    long f14020P;
+    long f14806P;
 
     /* renamed from: Q, reason: collision with root package name */
-    long f14021Q;
+    long f14807Q;
 
     /* renamed from: R, reason: collision with root package name */
-    String f14022R;
+    String f14808R;
     private int aX;
     private String aY;
     private String aZ;
@@ -236,34 +236,34 @@ public class n extends bu implements Cloneable {
     private int dz;
 
     /* renamed from: r, reason: collision with root package name */
-    protected int f14023r;
+    protected int f14809r;
 
     /* renamed from: w, reason: collision with root package name */
-    public int f14028w;
+    public int f14814w;
 
     /* renamed from: x, reason: collision with root package name */
-    public String f14029x;
+    public String f14815x;
 
     /* renamed from: y, reason: collision with root package name */
-    int f14030y;
+    int f14816y;
 
     /* renamed from: z, reason: collision with root package name */
-    protected double f14031z;
+    protected double f14817z;
     private int be = -1;
     private int bf = -1;
     private int bg = -1;
 
     /* renamed from: s, reason: collision with root package name */
-    public String f14024s = "";
+    public String f14810s = "";
 
     /* renamed from: t, reason: collision with root package name */
-    public int f14025t = 0;
+    public int f14811t = 0;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f14026u = 0;
+    public int f14812u = 0;
 
     /* renamed from: v, reason: collision with root package name */
-    public int f14027v = 0;
+    public int f14813v = 0;
     private String bF = "unknow";
     private int ce = -1;
     private int ch = 1;
@@ -288,11 +288,11 @@ public class n extends bu implements Cloneable {
     private int dB = -1;
 
     private void M(String str) {
-        this.f14011F = str;
+        this.f14797F = str;
     }
 
     private void N(String str) {
-        this.f14029x = str;
+        this.f14815x = str;
     }
 
     private int aN() {
@@ -308,7 +308,7 @@ public class n extends bu implements Cloneable {
     }
 
     private double aQ() {
-        return this.f14015K;
+        return this.f14801K;
     }
 
     private int aR() {
@@ -320,23 +320,23 @@ public class n extends bu implements Cloneable {
     }
 
     private String aT() {
-        return this.f14011F;
+        return this.f14797F;
     }
 
     private int aU() {
-        return this.f14008C;
+        return this.f14794C;
     }
 
     private void aV() {
-        this.f14008C = 1;
+        this.f14794C = 1;
     }
 
     private double aW() {
-        return this.f14006A;
+        return this.f14792A;
     }
 
     private String aX() {
-        return this.f14029x;
+        return this.f14815x;
     }
 
     private boolean aY() {
@@ -347,48 +347,48 @@ public class n extends bu implements Cloneable {
         return this.aY;
     }
 
-    private void aq(int i6) {
-        this.f14025t = i6;
+    private void aq(int i4) {
+        this.f14811t = i4;
     }
 
-    private void ar(int i6) {
-        this.f14026u = i6;
+    private void ar(int i4) {
+        this.f14812u = i4;
     }
 
-    private void as(int i6) {
-        this.f14027v = i6;
+    private void as(int i4) {
+        this.f14813v = i4;
     }
 
-    private void at(int i6) {
-        this.f14028w = i6;
+    private void at(int i4) {
+        this.f14814w = i4;
     }
 
-    private JSONObject au(int i6) {
-        return super.O(i6);
+    private JSONObject au(int i4) {
+        return super.O(i4);
     }
 
     private int ba() {
-        return this.f14025t;
+        return this.f14811t;
     }
 
     private int bb() {
-        return this.f14026u;
+        return this.f14812u;
     }
 
     private int bc() {
-        return this.f14028w;
+        return this.f14814w;
     }
 
     private boolean bd() {
-        return this.f14017M;
+        return this.f14803M;
     }
 
     private int be() {
-        return this.f14018N;
+        return this.f14804N;
     }
 
     private String bf() {
-        return this.f14019O;
+        return this.f14805O;
     }
 
     private int bg() {
@@ -396,15 +396,15 @@ public class n extends bu implements Cloneable {
     }
 
     private long bh() {
-        return this.f14020P;
+        return this.f14806P;
     }
 
     private long bi() {
-        return this.f14021Q;
+        return this.f14807Q;
     }
 
     private String bj() {
-        return this.f14022R;
+        return this.f14808R;
     }
 
     private int bk() {
@@ -472,23 +472,23 @@ public class n extends bu implements Cloneable {
     }
 
     public final int H() {
-        return this.f14009D;
+        return this.f14795D;
     }
 
     public final int I() {
-        return this.f14010E;
+        return this.f14796E;
     }
 
     public final int J() {
-        return this.f14030y;
+        return this.f14816y;
     }
 
     public final boolean K() {
-        return this.f14030y == 1;
+        return this.f14816y == 1;
     }
 
     public final double L() {
-        return this.f14031z;
+        return this.f14817z;
     }
 
     public final int O() {
@@ -532,7 +532,7 @@ public class n extends bu implements Cloneable {
     }
 
     public final int Y() {
-        return this.f14023r;
+        return this.f14809r;
     }
 
     public final int Z() {
@@ -556,8 +556,8 @@ public class n extends bu implements Cloneable {
     }
 
     public final int ad() {
-        int i6 = this.ce;
-        return i6 == -1 ? Integer.parseInt(this.aN) : i6;
+        int i4 = this.ce;
+        return i4 == -1 ? Integer.parseInt(this.aN) : i4;
     }
 
     public final int ae() {
@@ -720,7 +720,7 @@ public class n extends bu implements Cloneable {
     }
 
     public final String x() {
-        return this.f14007B;
+        return this.f14793B;
     }
 
     public final String y() {
@@ -731,52 +731,52 @@ public class n extends bu implements Cloneable {
         return this.bD;
     }
 
-    public final void A(int i6) {
-        this.bb = i6;
+    public final void A(int i4) {
+        this.bb = i4;
     }
 
-    public final void B(int i6) {
-        this.bd = i6;
+    public final void B(int i4) {
+        this.bd = i4;
     }
 
-    public final void C(int i6) {
-        this.be = i6;
+    public final void C(int i4) {
+        this.be = i4;
     }
 
-    public final void D(int i6) {
-        this.bf = i6;
+    public final void D(int i4) {
+        this.bf = i4;
     }
 
-    public final void E(int i6) {
-        this.bg = i6;
+    public final void E(int i4) {
+        this.bg = i4;
     }
 
-    public final void F(int i6) {
-        this.f14023r = i6;
+    public final void F(int i4) {
+        this.f14809r = i4;
     }
 
-    public final void G(int i6) {
-        this.aX = i6;
+    public final void G(int i4) {
+        this.aX = i4;
     }
 
-    public final void H(int i6) {
-        this.ce = i6;
+    public final void H(int i4) {
+        this.ce = i4;
     }
 
-    public final void I(int i6) {
-        this.ch = i6;
+    public final void I(int i4) {
+        this.ch = i4;
     }
 
-    public final void J(int i6) {
-        this.ci = i6;
+    public final void J(int i4) {
+        this.ci = i4;
     }
 
-    public final void K(int i6) {
-        this.cj = i6;
+    public final void K(int i4) {
+        this.cj = i4;
     }
 
-    public final void L(int i6) {
-        this.f14018N = i6;
+    public final void L(int i4) {
+        this.f14804N = i4;
     }
 
     public final String M() {
@@ -784,9 +784,9 @@ public class n extends bu implements Cloneable {
     }
 
     public final int N() {
-        int i6 = this.cb;
-        if (i6 != 8) {
-            return i6 != 9 ? 0 : 1;
+        int i4 = this.cb;
+        if (i4 != 8) {
+            return i4 != 9 ? 0 : 1;
         }
         return 2;
     }
@@ -897,9 +897,9 @@ public class n extends bu implements Cloneable {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final JSONObject O(int i6) {
+    public final JSONObject O(int i4) {
+        int i6;
         int i9;
-        int i10;
         MgPreLoadAdRequest preLoadInfo;
         Map<String, Object> map;
         JSONObject jSONObject;
@@ -907,23 +907,24 @@ public class n extends bu implements Cloneable {
         Object obj2;
         Object obj3;
         Object obj4;
+        int i10;
         int i11;
-        int i12;
         Map<String, Object> map2;
-        int i13;
+        int i12;
         d dVar;
+        int i13;
         int i14;
         int i15;
-        int i16;
         ATAdRequest aTAdRequest;
-        int i17;
+        int i16;
         String str;
         String str2;
         String str3;
+        int i17;
         int i18;
-        int i19;
         String str4;
         String str5;
+        int i19;
         int i20;
         int i21;
         int i22;
@@ -933,23 +934,22 @@ public class n extends bu implements Cloneable {
         int i26;
         int i27;
         int i28;
-        int i29;
-        double d2;
-        String str6;
-        int i30;
         double d9;
+        String str6;
+        int i29;
+        double d10;
         String str7;
         bc bcVar;
-        JSONObject O8 = super.O(i6);
+        JSONObject O8 = super.O(i4);
         try {
-            O8.put("nw_ver", this.f14029x);
-            int i31 = this.be;
-            if (i31 != -1) {
-                O8.put(ToolBar.REFRESH, i31);
+            O8.put("nw_ver", this.f14815x);
+            int i30 = this.be;
+            if (i30 != -1) {
+                O8.put(ToolBar.REFRESH, i30);
             }
-            int i32 = this.bf;
-            if (i32 != -1) {
-                O8.put("refresh_v2", i32);
+            int i31 = this.bf;
+            if (i31 != -1) {
+                O8.put("refresh_v2", i31);
             }
             O8.put("load_mode", this.bg);
             if (!TextUtils.isEmpty(this.bT)) {
@@ -957,46 +957,46 @@ public class n extends bu implements Cloneable {
             }
             if ("4".equals(this.aN) || "2".equals(this.aN) || "3".equals(this.aN) || "1".equals(this.aN)) {
                 try {
-                    int i33 = this.ce;
-                    if (i33 == -1) {
-                        i33 = Integer.parseInt(this.aN);
+                    int i32 = this.ce;
+                    if (i32 == -1) {
+                        i32 = Integer.parseInt(this.aN);
                     }
-                    O8.put("ad_type", i33);
+                    O8.put("ad_type", i32);
                 } catch (Exception unused) {
                 }
             }
-            if (i6 == 1 || i6 == 2 || i6 == 4 || i6 == 6 || i6 == 13 || i6 == 24) {
+            if (i4 == 1 || i4 == 2 || i4 == 4 || i4 == 6 || i4 == 13 || i4 == 24) {
                 O8.put("extra", this.bS);
             }
         } catch (Exception e9) {
             e = e9;
-            i9 = i6;
+            i6 = i4;
         }
-        if (i6 != 1 && i6 != 2) {
-            if (i6 != 4 && i6 != 6 && i6 != 8) {
-                if (i6 != 13) {
-                    if (i6 != 25) {
+        if (i4 != 1 && i4 != 2) {
+            if (i4 != 4 && i4 != 6 && i4 != 8) {
+                if (i4 != 13) {
+                    if (i4 != 25) {
                         dVar = this.cq;
                         if (dVar != null) {
                             O8.put("real_p", dVar.a());
-                            O8.put("real_s", this.f14011F);
+                            O8.put("real_s", this.f14797F);
                             O8.put("real_g", this.cq.b());
                             O8.put("real_t", this.cq.c());
                         }
-                        i14 = this.cc;
-                        if (i14 > 0) {
-                            O8.put("ads_list_type", i14);
+                        i13 = this.cc;
+                        if (i13 > 0) {
+                            O8.put("ads_list_type", i13);
                         }
                         if (this.cF) {
                             O8.put(com.anythink.core.common.m.e.be, 1);
                         }
-                        i15 = this.de;
-                        if (i15 > 0) {
-                            O8.put("s_type", i15);
+                        i14 = this.de;
+                        if (i14 > 0) {
+                            O8.put("s_type", i14);
                         }
-                        i16 = this.df;
-                        if (i16 > 0) {
-                            O8.put("imp_type", i16);
+                        i15 = this.df;
+                        if (i15 > 0) {
+                            O8.put("imp_type", i15);
                         }
                         O8.put("network_pl_id", this.bC);
                         aTAdRequest = this.dw;
@@ -1005,25 +1005,25 @@ public class n extends bu implements Cloneable {
                         } else {
                             O8.put(com.anythink.core.common.m.e.bp, com.anythink.core.common.d.t.b().E());
                         }
-                        i17 = this.dB;
-                        if (i17 != -1) {
-                            O8.put("f_device_pub", i17);
+                        i16 = this.dB;
+                        if (i16 != -1) {
+                            O8.put("f_device_pub", i16);
                         }
                         if (!TextUtils.isEmpty(this.dC)) {
                             O8.put("b_network_ids", this.dC);
                         }
                         String str8 = "unit_type";
-                        switch (i6) {
+                        switch (i4) {
                             case 1:
-                                i10 = i6;
+                                i9 = i4;
                                 O8.put("unit_id", this.bA);
-                                O8.put("nw_firm_id", this.f14023r);
+                                O8.put("nw_firm_id", this.f14809r);
                                 O8.put("gro_id", this.aX);
-                                O8.put("auto_req", this.f14025t);
+                                O8.put("auto_req", this.f14811t);
                                 O8.put("aprn_auto_req", N());
-                                O8.put("bidtype", this.f14030y);
-                                O8.put("bidprice", String.valueOf(this.f14031z));
-                                O8.put("bidprice_cny", String.valueOf(this.f14006A));
+                                O8.put("bidtype", this.f14816y);
+                                O8.put("bidprice", String.valueOf(this.f14817z));
+                                O8.put("bidprice_cny", String.valueOf(this.f14792A));
                                 O8.put("ad_reqt", this.cd);
                                 O8.put("unit_type", this.cK);
                                 O8.put(com.anythink.core.common.k.bi, this.f0do);
@@ -1031,17 +1031,17 @@ public class n extends bu implements Cloneable {
                                 f(O8);
                                 break;
                             case 2:
-                                i10 = i6;
+                                i9 = i4;
                                 O8.put("unit_id", this.bA);
-                                O8.put("nw_firm_id", this.f14023r);
+                                O8.put("nw_firm_id", this.f14809r);
                                 O8.put("gro_id", this.aX);
-                                O8.put("auto_req", this.f14025t);
+                                O8.put("auto_req", this.f14811t);
                                 O8.put("aprn_auto_req", N());
-                                O8.put("status", this.f14026u);
-                                O8.put("flag", this.f14027v);
-                                O8.put("bidtype", this.f14030y);
-                                O8.put("bidprice", String.valueOf(this.f14031z));
-                                O8.put("bidprice_cny", String.valueOf(this.f14006A));
+                                O8.put("status", this.f14812u);
+                                O8.put("flag", this.f14813v);
+                                O8.put("bidtype", this.f14816y);
+                                O8.put("bidprice", String.valueOf(this.f14817z));
+                                O8.put("bidprice_cny", String.valueOf(this.f14792A));
                                 O8.put(ATAdConst.KEY.CP_LOAD_MODE, aA());
                                 O8.put("ft_t", this.bl);
                                 O8.put("filled_t", this.bm);
@@ -1055,9 +1055,9 @@ public class n extends bu implements Cloneable {
                                     O8.put("filledtime", this.bk);
                                     O8.put("data_ft", this.bk);
                                 }
-                                int i34 = this.cG;
-                                if (i34 > 0) {
-                                    O8.put("material_type", i34);
+                                int i33 = this.cG;
+                                if (i33 > 0) {
+                                    O8.put("material_type", i33);
                                 }
                                 O8.put("unit_type", this.cK);
                                 if (!TextUtils.isEmpty(this.bM)) {
@@ -1072,17 +1072,17 @@ public class n extends bu implements Cloneable {
                                 e(O8);
                                 break;
                             case 3:
-                                i10 = i6;
+                                i9 = i4;
                                 O8.put("unit_id", this.bA);
-                                O8.put("nw_firm_id", this.f14023r);
+                                O8.put("nw_firm_id", this.f14809r);
                                 O8.put("gro_id", this.aX);
-                                O8.put("auto_req", this.f14025t);
+                                O8.put("auto_req", this.f14811t);
                                 O8.put("aprn_auto_req", N());
-                                O8.put("status", this.f14026u);
-                                O8.put("flag", this.f14027v);
-                                O8.put("bidtype", this.f14030y);
-                                O8.put("bidprice", String.valueOf(this.f14031z));
-                                O8.put("bidprice_cny", String.valueOf(this.f14006A));
+                                O8.put("status", this.f14812u);
+                                O8.put("flag", this.f14813v);
+                                O8.put("bidtype", this.f14816y);
+                                O8.put("bidprice", String.valueOf(this.f14817z));
+                                O8.put("bidprice_cny", String.valueOf(this.f14792A));
                                 O8.put(ATAdConst.KEY.CP_LOAD_MODE, aA());
                                 O8.put("unit_type", this.cK);
                                 O8.put("nw_err_c", this.dc);
@@ -1091,9 +1091,9 @@ public class n extends bu implements Cloneable {
                                 break;
                             case 4:
                                 str = "aprn_auto_req";
-                                O8.put(com.anythink.expressad.foundation.d.e.f18662h, this.f14012G);
-                                O8.put("ahs", this.f14013H);
-                                O8.put("pds", this.f14014I);
+                                O8.put(com.anythink.expressad.foundation.d.e.f19449h, this.f14798G);
+                                O8.put("ahs", this.f14799H);
+                                O8.put("pds", this.f14800I);
                                 str2 = "show_custom_ext";
                                 O8.put("phs", this.J);
                                 O8.put("cl_imp", this.bU);
@@ -1103,56 +1103,56 @@ public class n extends bu implements Cloneable {
                                 if (!TextUtils.isEmpty(this.cC)) {
                                     O8.put("render_w_h", this.cC);
                                 }
-                                i29 = this.cJ;
-                                if (i29 > 0) {
-                                    O8.put("offer_install", i29);
+                                i28 = this.cJ;
+                                if (i28 > 0) {
+                                    O8.put("offer_install", i28);
                                 }
                                 O8.put("rotation_order", this.dp);
                                 O8.put(l.a.aO, this.dq);
-                                if (this.f14023r == 22) {
-                                    O8.put(j.w.f12613K, this.dv);
+                                if (this.f14809r == 22) {
+                                    O8.put(j.w.f13399K, this.dv);
                                 }
                                 O8.put("unit_id", this.bA);
-                                O8.put("nw_firm_id", this.f14023r);
+                                O8.put("nw_firm_id", this.f14809r);
                                 O8.put("gro_id", this.aX);
-                                O8.put("auto_req", this.f14025t);
+                                O8.put("auto_req", this.f14811t);
                                 O8.put(str, N());
-                                O8.put("bidtype", this.f14030y);
+                                O8.put("bidtype", this.f14816y);
                                 c(O8);
-                                O8.put("bidprice_cny", String.valueOf(this.f14006A));
-                                O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14015K));
-                                O8.put("myoffer_showtype", this.f14008C);
-                                if (!TextUtils.isEmpty(this.f14011F)) {
-                                    O8.put("scenario", this.f14011F);
+                                O8.put("bidprice_cny", String.valueOf(this.f14792A));
+                                O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14801K));
+                                O8.put("myoffer_showtype", this.f14794C);
+                                if (!TextUtils.isEmpty(this.f14797F)) {
+                                    O8.put("scenario", this.f14797F);
                                 }
-                                O8.put(com.anythink.expressad.foundation.d.e.f18662h, this.f14012G);
-                                O8.put("ahs", this.f14013H);
-                                O8.put("pds", this.f14014I);
+                                O8.put(com.anythink.expressad.foundation.d.e.f19449h, this.f14798G);
+                                O8.put("ahs", this.f14799H);
+                                O8.put("pds", this.f14800I);
                                 O8.put("phs", this.J);
-                                i20 = i6;
-                                if (i20 == 6) {
+                                i19 = i4;
+                                if (i19 == 6) {
                                     O8.put("cl_s_type", this.ch);
                                     O8.put("cl_area", this.ci);
-                                    if ("3".equals(this.aN) && this.ce == Integer.parseInt("0") && (i28 = this.cw) > 0) {
-                                        O8.put("bn_click_area", i28);
+                                    if ("3".equals(this.aN) && this.ce == Integer.parseInt("0") && (i27 = this.cw) > 0) {
+                                        O8.put("bn_click_area", i27);
                                     }
                                     if (this.dy && !this.dx) {
                                         O8.put("tk_x_cl_sent", "1");
                                     }
                                 }
-                                i21 = this.cl;
-                                if (i21 > 0) {
-                                    O8.put("render_type_video", i21);
+                                i20 = this.cl;
+                                if (i20 > 0) {
+                                    O8.put("render_type_video", i20);
                                 }
-                                i22 = this.cz;
-                                if (i22 > 0) {
-                                    O8.put("close_button_m", i22);
+                                i21 = this.cz;
+                                if (i21 > 0) {
+                                    O8.put("close_button_m", i21);
                                 }
                                 d(O8);
                                 O8.put(str8, this.cK);
-                                i23 = this.cG;
-                                if (i23 > 0) {
-                                    O8.put("material_type", i23);
+                                i22 = this.cG;
+                                if (i22 > 0) {
+                                    O8.put("material_type", i22);
                                 }
                                 e(O8);
                                 O8.put("show_spec_nw_ad", this.dz);
@@ -1166,68 +1166,68 @@ public class n extends bu implements Cloneable {
                                 if (!TextUtils.isEmpty(this.bO)) {
                                     O8.put(com.anythink.core.common.k.aT, this.bO);
                                 }
-                                i24 = this.da;
+                                i23 = this.da;
+                                if (i23 > 0) {
+                                    O8.put("cls_style", i23);
+                                }
+                                i24 = this.cZ;
                                 if (i24 > 0) {
-                                    O8.put("cls_style", i24);
+                                    O8.put("iv_template_id", i24);
                                 }
-                                i25 = this.cZ;
-                                if (i25 > 0) {
-                                    O8.put("iv_template_id", i25);
+                                i25 = this.db;
+                                if (i25 >= -1) {
+                                    O8.put("adx_mix_type", i25);
                                 }
-                                i26 = this.db;
-                                if (i26 >= -1) {
-                                    O8.put("adx_mix_type", i26);
-                                }
-                                i27 = this.dm;
-                                if (i27 != 0) {
-                                    O8.put(com.anythink.core.common.k.aZ, i27);
+                                i26 = this.dm;
+                                if (i26 != 0) {
+                                    O8.put(com.anythink.core.common.k.aZ, i26);
                                 }
                                 f(O8);
                                 O8.put(com.anythink.core.common.k.bi, this.f0do);
                                 O8.put(com.anythink.core.common.k.bj, this.dn);
                                 O8.put("rotation_order", this.dp);
                                 O8.put(l.a.aO, this.dq);
-                                i10 = i20;
+                                i9 = i19;
                                 break;
                             case 5:
                             case 14:
                             case 17:
                             case 21:
                             default:
-                                i10 = i6;
+                                i9 = i4;
                                 break;
                             case 6:
                                 str = "aprn_auto_req";
                                 str2 = "show_custom_ext";
                                 O8.put("unit_id", this.bA);
-                                O8.put("nw_firm_id", this.f14023r);
+                                O8.put("nw_firm_id", this.f14809r);
                                 O8.put("gro_id", this.aX);
-                                O8.put("auto_req", this.f14025t);
+                                O8.put("auto_req", this.f14811t);
                                 O8.put(str, N());
-                                O8.put("bidtype", this.f14030y);
+                                O8.put("bidtype", this.f14816y);
                                 c(O8);
-                                O8.put("bidprice_cny", String.valueOf(this.f14006A));
-                                O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14015K));
-                                O8.put("myoffer_showtype", this.f14008C);
-                                if (!TextUtils.isEmpty(this.f14011F)) {
+                                O8.put("bidprice_cny", String.valueOf(this.f14792A));
+                                O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14801K));
+                                O8.put("myoffer_showtype", this.f14794C);
+                                if (!TextUtils.isEmpty(this.f14797F)) {
                                 }
-                                O8.put(com.anythink.expressad.foundation.d.e.f18662h, this.f14012G);
-                                O8.put("ahs", this.f14013H);
-                                O8.put("pds", this.f14014I);
+                                O8.put(com.anythink.expressad.foundation.d.e.f19449h, this.f14798G);
+                                O8.put("ahs", this.f14799H);
+                                O8.put("pds", this.f14800I);
                                 O8.put("phs", this.J);
-                                i20 = i6;
-                                if (i20 == 6) {
+                                i19 = i4;
+                                if (i19 == 6) {
                                 }
-                                i21 = this.cl;
+                                i20 = this.cl;
+                                if (i20 > 0) {
+                                }
+                                i21 = this.cz;
                                 if (i21 > 0) {
-                                }
-                                i22 = this.cz;
-                                if (i22 > 0) {
                                 }
                                 d(O8);
                                 O8.put(str8, this.cK);
-                                i23 = this.cG;
-                                if (i23 > 0) {
+                                i22 = this.cG;
+                                if (i22 > 0) {
                                 }
                                 e(O8);
                                 O8.put("show_spec_nw_ad", this.dz);
@@ -1237,52 +1237,52 @@ public class n extends bu implements Cloneable {
                                 }
                                 if (!TextUtils.isEmpty(this.bO)) {
                                 }
-                                i24 = this.da;
+                                i23 = this.da;
+                                if (i23 > 0) {
+                                }
+                                i24 = this.cZ;
                                 if (i24 > 0) {
                                 }
-                                i25 = this.cZ;
-                                if (i25 > 0) {
+                                i25 = this.db;
+                                if (i25 >= -1) {
                                 }
-                                i26 = this.db;
-                                if (i26 >= -1) {
-                                }
-                                i27 = this.dm;
-                                if (i27 != 0) {
+                                i26 = this.dm;
+                                if (i26 != 0) {
                                 }
                                 f(O8);
                                 O8.put(com.anythink.core.common.k.bi, this.f0do);
                                 O8.put(com.anythink.core.common.k.bj, this.dn);
                                 O8.put("rotation_order", this.dp);
                                 O8.put(l.a.aO, this.dq);
-                                i10 = i20;
+                                i9 = i19;
                                 break;
                             case 7:
                                 O8.put("unit_id", this.bA);
-                                O8.put("nw_firm_id", this.f14023r);
+                                O8.put("nw_firm_id", this.f14809r);
                                 O8.put("gro_id", this.aX);
-                                O8.put("auto_req", this.f14025t);
+                                O8.put("auto_req", this.f14811t);
                                 O8.put("aprn_auto_req", N());
-                                O8.put(g.a.f12949C, this.f14028w);
-                                O8.put("bidtype", this.f14030y);
-                                O8.put("bidprice", String.valueOf(this.f14031z));
-                                O8.put("bidprice_cny", String.valueOf(this.f14006A));
+                                O8.put(g.a.f13735C, this.f14814w);
+                                O8.put("bidtype", this.f14816y);
+                                O8.put("bidprice", String.valueOf(this.f14817z));
+                                O8.put("bidprice_cny", String.valueOf(this.f14792A));
                                 O8.put("unit_type", this.cK);
                                 e(O8);
                                 O8.put("show_custom_ext", this.cU);
-                                i10 = i6;
+                                i9 = i4;
                                 break;
                             case 8:
                             case 9:
                                 O8.put("unit_id", this.bA);
-                                O8.put("nw_firm_id", this.f14023r);
+                                O8.put("nw_firm_id", this.f14809r);
                                 O8.put("gro_id", this.aX);
-                                O8.put("auto_req", this.f14025t);
+                                O8.put("auto_req", this.f14811t);
                                 O8.put("aprn_auto_req", N());
-                                O8.put("bidtype", this.f14030y);
+                                O8.put("bidtype", this.f14816y);
                                 c(O8);
-                                O8.put("bidprice_cny", String.valueOf(this.f14006A));
-                                if (!TextUtils.isEmpty(this.f14011F)) {
-                                    O8.put("scenario", this.f14011F);
+                                O8.put("bidprice_cny", String.valueOf(this.f14792A));
+                                if (!TextUtils.isEmpty(this.f14797F)) {
+                                    O8.put("scenario", this.f14797F);
                                 }
                                 d(O8);
                                 O8.put("unit_type", this.cK);
@@ -1290,11 +1290,11 @@ public class n extends bu implements Cloneable {
                                 O8.put("show_custom_ext", this.cU);
                                 O8.put("network_pl_id", this.bC);
                                 f(O8);
-                                i10 = i6;
+                                i9 = i4;
                                 break;
                             case 10:
-                                O8.put("isload", this.f14017M ? 1 : 0);
-                                O8.put("reason", this.f14018N);
+                                O8.put("isload", this.f14803M ? 1 : 0);
+                                O8.put("reason", this.f14804N);
                                 O8.put("gro_id", this.aX);
                                 O8.put("req_par", this.cf);
                                 O8.put("req_par_num", this.cg);
@@ -1307,95 +1307,95 @@ public class n extends bu implements Cloneable {
                                 O8.put("filter_st_end_t", this.bt);
                                 O8.put("adx_cache_t", this.bu);
                                 O8.put("cache_st_type", this.bx);
-                                i10 = i6;
+                                i9 = i4;
                                 break;
                             case 11:
-                                O8.put("auto_req", this.f14025t);
+                                O8.put("auto_req", this.f14811t);
                                 O8.put("gro_id", this.aX);
-                                O8.put("bidrequesttime", this.f14020P);
-                                O8.put("bidresponselist", TextUtils.isEmpty(this.f14022R) ? "[]" : new JSONArray(this.f14022R));
+                                O8.put("bidrequesttime", this.f14806P);
+                                O8.put("bidresponselist", TextUtils.isEmpty(this.f14808R) ? "[]" : new JSONArray(this.f14808R));
                                 O8.put("ft_t", this.bl);
                                 if (this.cA == 2) {
-                                    O8.put("bidresponsetime", this.f14021Q);
-                                    O8.put("data_bidresponsetime", this.f14021Q);
+                                    O8.put("bidresponsetime", this.f14807Q);
+                                    O8.put("data_bidresponsetime", this.f14807Q);
                                 } else {
                                     O8.put("data_bidresponsetime", this.dA);
-                                    O8.put("bidresponsetime", this.f14021Q);
+                                    O8.put("bidresponsetime", this.f14807Q);
                                 }
                                 f(O8);
-                                i10 = i6;
+                                i9 = i4;
                                 break;
                             case 12:
                                 O8.put("loadtime", this.bz);
                                 O8.put("gro_id", this.aX);
                                 O8.put("unit_id", this.bA);
-                                O8.put("bidprice", String.valueOf(this.f14031z));
-                                O8.put("bidprice_cny", String.valueOf(this.f14006A));
+                                O8.put("bidprice", String.valueOf(this.f14817z));
+                                O8.put("bidprice_cny", String.valueOf(this.f14792A));
                                 O8.put("first_hb_fill_t", this.bv);
                                 O8.put("first_nor_fill_t", this.bw);
                                 O8.put("load_t", this.bm);
                                 O8.put("loaded_ad_type", this.by);
-                                int i35 = this.f14018N;
-                                if (i35 != 5 && i35 != 13) {
-                                    switch (i35) {
+                                int i34 = this.f14804N;
+                                if (i34 != 5 && i34 != 13) {
+                                    switch (i34) {
                                     }
                                     O8.put("req_par", this.cf);
                                     O8.put("req_par_num", this.cg);
-                                    i10 = i6;
+                                    i9 = i4;
                                     break;
                                 }
-                                O8.put("reason", i35);
+                                O8.put("reason", i34);
                                 O8.put("req_par", this.cf);
                                 O8.put("req_par_num", this.cg);
-                                i10 = i6;
+                                i9 = i4;
                                 break;
                             case 13:
                                 str3 = "unit_type";
                                 try {
                                     O8.put("unit_id", this.bA);
-                                    O8.put("nw_firm_id", this.f14023r);
+                                    O8.put("nw_firm_id", this.f14809r);
                                     O8.put("gro_id", this.aX);
-                                    O8.put("bidtype", this.f14030y);
-                                    O8.put("bidprice", String.valueOf(this.f14031z));
-                                    O8.put("bidprice_cny", String.valueOf(this.f14006A));
-                                    O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14015K));
-                                    O8.put("as_result", !TextUtils.isEmpty(this.f14019O) ? "[]" : new JSONArray(this.f14019O));
+                                    O8.put("bidtype", this.f14816y);
+                                    O8.put("bidprice", String.valueOf(this.f14817z));
+                                    O8.put("bidprice_cny", String.valueOf(this.f14792A));
+                                    O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14801K));
+                                    O8.put("as_result", !TextUtils.isEmpty(this.f14805O) ? "[]" : new JSONArray(this.f14805O));
                                     O8.put("new_req_id", this.aM);
-                                    O8.put("auto_req", this.f14025t);
+                                    O8.put("auto_req", this.f14811t);
                                     O8.put("req_id_match", 0);
-                                    O8.put("myoffer_showtype", this.f14008C);
-                                    if (!TextUtils.isEmpty(this.f14011F)) {
-                                        O8.put("scenario", this.f14011F);
+                                    O8.put("myoffer_showtype", this.f14794C);
+                                    if (!TextUtils.isEmpty(this.f14797F)) {
+                                        O8.put("scenario", this.f14797F);
                                     }
-                                    O8.put(com.anythink.expressad.foundation.d.e.f18662h, this.f14012G);
-                                    O8.put("ahs", this.f14013H);
-                                    O8.put("pds", this.f14014I);
+                                    O8.put(com.anythink.expressad.foundation.d.e.f19449h, this.f14798G);
+                                    O8.put("ahs", this.f14799H);
+                                    O8.put("pds", this.f14800I);
                                     O8.put("phs", this.J);
-                                    i18 = this.f14018N;
-                                    if (i18 != 12) {
-                                        O8.put("reason", i18);
+                                    i17 = this.f14804N;
+                                    if (i17 != 12) {
+                                        O8.put("reason", i17);
                                     }
                                     O8.put(str3, this.cK);
                                     e(O8);
                                     O8.put("show_spec_nw_ad", this.dz);
                                     O8.put("show_custom_ext", this.cU);
-                                    i19 = this.dm;
-                                    if (i19 != 0) {
-                                        O8.put(com.anythink.core.common.k.aZ, i19);
+                                    i18 = this.dm;
+                                    if (i18 != 0) {
+                                        O8.put(com.anythink.core.common.k.aZ, i18);
                                     }
                                     O8.put(com.anythink.core.common.k.bj, this.dn);
                                     O8.put(l.a.aO, this.dq);
                                     f(O8);
-                                    i10 = i6;
+                                    i9 = i4;
                                 } catch (Exception e10) {
                                     e = e10;
-                                    i9 = i6;
+                                    i6 = i4;
                                     e.printStackTrace();
-                                    i10 = i9;
+                                    i9 = i6;
                                     if (TextUtils.equals(this.aN, "2")) {
                                     }
                                     com.anythink.core.common.u.b a9 = com.anythink.core.common.u.b.a();
-                                    if (i10 == 4) {
+                                    if (i9 == 4) {
                                     }
                                     if (TextUtils.equals(this.aN, "0")) {
                                     }
@@ -1404,7 +1404,7 @@ public class n extends bu implements Cloneable {
                                     }
                                     if (preLoadInfo != null) {
                                     }
-                                    if (this.f14023r == 8) {
+                                    if (this.f14809r == 8) {
                                     }
                                     if (O8 != null) {
                                     }
@@ -1413,65 +1413,65 @@ public class n extends bu implements Cloneable {
                                 break;
                             case 15:
                                 O8.put("gro_id", this.aX);
-                                O8.put("bidresponselist", TextUtils.isEmpty(this.f14022R) ? "[]" : new JSONArray(this.f14022R));
-                                i10 = i6;
+                                O8.put("bidresponselist", TextUtils.isEmpty(this.f14808R) ? "[]" : new JSONArray(this.f14808R));
+                                i9 = i4;
                                 break;
                             case 16:
                                 str3 = "unit_type";
                                 O8.put("ad_ch_st", this.ca);
                                 O8.put("unit_id", this.bA);
-                                O8.put("nw_firm_id", this.f14023r);
+                                O8.put("nw_firm_id", this.f14809r);
                                 O8.put("gro_id", this.aX);
-                                O8.put("bidtype", this.f14030y);
-                                O8.put("bidprice", String.valueOf(this.f14031z));
-                                O8.put("bidprice_cny", String.valueOf(this.f14006A));
-                                O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14015K));
-                                O8.put("as_result", !TextUtils.isEmpty(this.f14019O) ? "[]" : new JSONArray(this.f14019O));
+                                O8.put("bidtype", this.f14816y);
+                                O8.put("bidprice", String.valueOf(this.f14817z));
+                                O8.put("bidprice_cny", String.valueOf(this.f14792A));
+                                O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14801K));
+                                O8.put("as_result", !TextUtils.isEmpty(this.f14805O) ? "[]" : new JSONArray(this.f14805O));
                                 O8.put("new_req_id", this.aM);
-                                O8.put("auto_req", this.f14025t);
+                                O8.put("auto_req", this.f14811t);
                                 O8.put("req_id_match", 0);
-                                O8.put("myoffer_showtype", this.f14008C);
-                                if (!TextUtils.isEmpty(this.f14011F)) {
+                                O8.put("myoffer_showtype", this.f14794C);
+                                if (!TextUtils.isEmpty(this.f14797F)) {
                                 }
-                                O8.put(com.anythink.expressad.foundation.d.e.f18662h, this.f14012G);
-                                O8.put("ahs", this.f14013H);
-                                O8.put("pds", this.f14014I);
+                                O8.put(com.anythink.expressad.foundation.d.e.f19449h, this.f14798G);
+                                O8.put("ahs", this.f14799H);
+                                O8.put("pds", this.f14800I);
                                 O8.put("phs", this.J);
-                                i18 = this.f14018N;
-                                if (i18 != 12) {
+                                i17 = this.f14804N;
+                                if (i17 != 12) {
                                 }
                                 O8.put(str3, this.cK);
                                 e(O8);
                                 O8.put("show_spec_nw_ad", this.dz);
                                 O8.put("show_custom_ext", this.cU);
-                                i19 = this.dm;
-                                if (i19 != 0) {
+                                i18 = this.dm;
+                                if (i18 != 0) {
                                 }
                                 O8.put(com.anythink.core.common.k.bj, this.dn);
                                 O8.put(l.a.aO, this.dq);
                                 f(O8);
-                                i10 = i6;
+                                i9 = i4;
                                 break;
                             case 18:
                             case 20:
                                 O8.put("unit_id", this.bA);
-                                O8.put("nw_firm_id", this.f14023r);
+                                O8.put("nw_firm_id", this.f14809r);
                                 O8.put("app_nm", this.bW);
-                                i10 = i6;
+                                i9 = i4;
                                 break;
                             case 19:
                                 O8.put("dl_ts", this.bX);
                                 O8.put("unit_id", this.bA);
-                                O8.put("nw_firm_id", this.f14023r);
+                                O8.put("nw_firm_id", this.f14809r);
                                 O8.put("app_nm", this.bW);
-                                i10 = i6;
+                                i9 = i4;
                                 break;
                             case 22:
                                 str4 = "aprn_auto_req";
-                                d9 = this.cQ;
-                                if (d9 == -1.0d) {
+                                d10 = this.cQ;
+                                if (d10 == -1.0d) {
                                     str5 = "unit_type";
-                                    O8.put("mmb_secprice", d9);
+                                    O8.put("mmb_secprice", d10);
                                 } else {
                                     str5 = "unit_type";
                                 }
@@ -1479,24 +1479,24 @@ public class n extends bu implements Cloneable {
                                 if (str7 != null) {
                                     O8.put("mmb_secBidder", str7);
                                 }
-                                d2 = this.cO;
-                                if (d2 != -1.0d) {
-                                    O8.put("mmb_firstPrice", d2);
+                                d9 = this.cO;
+                                if (d9 != -1.0d) {
+                                    O8.put("mmb_firstPrice", d9);
                                 }
                                 str6 = this.cP;
                                 if (str6 != null) {
                                     O8.put("mmb_firstBidder", str6);
                                 }
-                                i30 = this.cS;
-                                if (i30 != -1) {
-                                    O8.put("mmb_lossReason", i30);
+                                i29 = this.cS;
+                                if (i29 != -1) {
+                                    O8.put("mmb_lossReason", i29);
                                 }
                                 O8.put("mmb_ilrd", this.cT);
                                 str = str4;
                                 str8 = str5;
-                                O8.put(com.anythink.expressad.foundation.d.e.f18662h, this.f14012G);
-                                O8.put("ahs", this.f14013H);
-                                O8.put("pds", this.f14014I);
+                                O8.put(com.anythink.expressad.foundation.d.e.f19449h, this.f14798G);
+                                O8.put("ahs", this.f14799H);
+                                O8.put("pds", this.f14800I);
                                 str2 = "show_custom_ext";
                                 O8.put("phs", this.J);
                                 O8.put("cl_imp", this.bU);
@@ -1504,42 +1504,42 @@ public class n extends bu implements Cloneable {
                                 }
                                 if (!TextUtils.isEmpty(this.cC)) {
                                 }
-                                i29 = this.cJ;
-                                if (i29 > 0) {
+                                i28 = this.cJ;
+                                if (i28 > 0) {
                                 }
                                 O8.put("rotation_order", this.dp);
                                 O8.put(l.a.aO, this.dq);
-                                if (this.f14023r == 22) {
+                                if (this.f14809r == 22) {
                                 }
                                 O8.put("unit_id", this.bA);
-                                O8.put("nw_firm_id", this.f14023r);
+                                O8.put("nw_firm_id", this.f14809r);
                                 O8.put("gro_id", this.aX);
-                                O8.put("auto_req", this.f14025t);
+                                O8.put("auto_req", this.f14811t);
                                 O8.put(str, N());
-                                O8.put("bidtype", this.f14030y);
+                                O8.put("bidtype", this.f14816y);
                                 c(O8);
-                                O8.put("bidprice_cny", String.valueOf(this.f14006A));
-                                O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14015K));
-                                O8.put("myoffer_showtype", this.f14008C);
-                                if (!TextUtils.isEmpty(this.f14011F)) {
+                                O8.put("bidprice_cny", String.valueOf(this.f14792A));
+                                O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14801K));
+                                O8.put("myoffer_showtype", this.f14794C);
+                                if (!TextUtils.isEmpty(this.f14797F)) {
                                 }
-                                O8.put(com.anythink.expressad.foundation.d.e.f18662h, this.f14012G);
-                                O8.put("ahs", this.f14013H);
-                                O8.put("pds", this.f14014I);
+                                O8.put(com.anythink.expressad.foundation.d.e.f19449h, this.f14798G);
+                                O8.put("ahs", this.f14799H);
+                                O8.put("pds", this.f14800I);
                                 O8.put("phs", this.J);
-                                i20 = i6;
-                                if (i20 == 6) {
+                                i19 = i4;
+                                if (i19 == 6) {
                                 }
-                                i21 = this.cl;
+                                i20 = this.cl;
+                                if (i20 > 0) {
+                                }
+                                i21 = this.cz;
                                 if (i21 > 0) {
-                                }
-                                i22 = this.cz;
-                                if (i22 > 0) {
                                 }
                                 d(O8);
                                 O8.put(str8, this.cK);
-                                i23 = this.cG;
-                                if (i23 > 0) {
+                                i22 = this.cG;
+                                if (i22 > 0) {
                                 }
                                 e(O8);
                                 O8.put("show_spec_nw_ad", this.dz);
@@ -1549,43 +1549,43 @@ public class n extends bu implements Cloneable {
                                 }
                                 if (!TextUtils.isEmpty(this.bO)) {
                                 }
-                                i24 = this.da;
+                                i23 = this.da;
+                                if (i23 > 0) {
+                                }
+                                i24 = this.cZ;
                                 if (i24 > 0) {
                                 }
-                                i25 = this.cZ;
-                                if (i25 > 0) {
+                                i25 = this.db;
+                                if (i25 >= -1) {
                                 }
-                                i26 = this.db;
-                                if (i26 >= -1) {
-                                }
-                                i27 = this.dm;
-                                if (i27 != 0) {
+                                i26 = this.dm;
+                                if (i26 != 0) {
                                 }
                                 f(O8);
                                 O8.put(com.anythink.core.common.k.bi, this.f0do);
                                 O8.put(com.anythink.core.common.k.bj, this.dn);
                                 O8.put("rotation_order", this.dp);
                                 O8.put(l.a.aO, this.dq);
-                                i10 = i20;
+                                i9 = i19;
                                 break;
                             case 23:
                                 str4 = "aprn_auto_req";
                                 str5 = "unit_type";
-                                d2 = this.cO;
-                                if (d2 != -1.0d) {
+                                d9 = this.cO;
+                                if (d9 != -1.0d) {
                                 }
                                 str6 = this.cP;
                                 if (str6 != null) {
                                 }
-                                i30 = this.cS;
-                                if (i30 != -1) {
+                                i29 = this.cS;
+                                if (i29 != -1) {
                                 }
                                 O8.put("mmb_ilrd", this.cT);
                                 str = str4;
                                 str8 = str5;
-                                O8.put(com.anythink.expressad.foundation.d.e.f18662h, this.f14012G);
-                                O8.put("ahs", this.f14013H);
-                                O8.put("pds", this.f14014I);
+                                O8.put(com.anythink.expressad.foundation.d.e.f19449h, this.f14798G);
+                                O8.put("ahs", this.f14799H);
+                                O8.put("pds", this.f14800I);
                                 str2 = "show_custom_ext";
                                 O8.put("phs", this.J);
                                 O8.put("cl_imp", this.bU);
@@ -1593,42 +1593,42 @@ public class n extends bu implements Cloneable {
                                 }
                                 if (!TextUtils.isEmpty(this.cC)) {
                                 }
-                                i29 = this.cJ;
-                                if (i29 > 0) {
+                                i28 = this.cJ;
+                                if (i28 > 0) {
                                 }
                                 O8.put("rotation_order", this.dp);
                                 O8.put(l.a.aO, this.dq);
-                                if (this.f14023r == 22) {
+                                if (this.f14809r == 22) {
                                 }
                                 O8.put("unit_id", this.bA);
-                                O8.put("nw_firm_id", this.f14023r);
+                                O8.put("nw_firm_id", this.f14809r);
                                 O8.put("gro_id", this.aX);
-                                O8.put("auto_req", this.f14025t);
+                                O8.put("auto_req", this.f14811t);
                                 O8.put(str, N());
-                                O8.put("bidtype", this.f14030y);
+                                O8.put("bidtype", this.f14816y);
                                 c(O8);
-                                O8.put("bidprice_cny", String.valueOf(this.f14006A));
-                                O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14015K));
-                                O8.put("myoffer_showtype", this.f14008C);
-                                if (!TextUtils.isEmpty(this.f14011F)) {
+                                O8.put("bidprice_cny", String.valueOf(this.f14792A));
+                                O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14801K));
+                                O8.put("myoffer_showtype", this.f14794C);
+                                if (!TextUtils.isEmpty(this.f14797F)) {
                                 }
-                                O8.put(com.anythink.expressad.foundation.d.e.f18662h, this.f14012G);
-                                O8.put("ahs", this.f14013H);
-                                O8.put("pds", this.f14014I);
+                                O8.put(com.anythink.expressad.foundation.d.e.f19449h, this.f14798G);
+                                O8.put("ahs", this.f14799H);
+                                O8.put("pds", this.f14800I);
                                 O8.put("phs", this.J);
-                                i20 = i6;
-                                if (i20 == 6) {
+                                i19 = i4;
+                                if (i19 == 6) {
                                 }
-                                i21 = this.cl;
+                                i20 = this.cl;
+                                if (i20 > 0) {
+                                }
+                                i21 = this.cz;
                                 if (i21 > 0) {
-                                }
-                                i22 = this.cz;
-                                if (i22 > 0) {
                                 }
                                 d(O8);
                                 O8.put(str8, this.cK);
-                                i23 = this.cG;
-                                if (i23 > 0) {
+                                i22 = this.cG;
+                                if (i22 > 0) {
                                 }
                                 e(O8);
                                 O8.put("show_spec_nw_ad", this.dz);
@@ -1638,24 +1638,24 @@ public class n extends bu implements Cloneable {
                                 }
                                 if (!TextUtils.isEmpty(this.bO)) {
                                 }
-                                i24 = this.da;
+                                i23 = this.da;
+                                if (i23 > 0) {
+                                }
+                                i24 = this.cZ;
                                 if (i24 > 0) {
                                 }
-                                i25 = this.cZ;
-                                if (i25 > 0) {
+                                i25 = this.db;
+                                if (i25 >= -1) {
                                 }
-                                i26 = this.db;
-                                if (i26 >= -1) {
-                                }
-                                i27 = this.dm;
-                                if (i27 != 0) {
+                                i26 = this.dm;
+                                if (i26 != 0) {
                                 }
                                 f(O8);
                                 O8.put(com.anythink.core.common.k.bi, this.f0do);
                                 O8.put(com.anythink.core.common.k.bj, this.dn);
                                 O8.put("rotation_order", this.dp);
                                 O8.put(l.a.aO, this.dq);
-                                i10 = i20;
+                                i9 = i19;
                                 break;
                             case 24:
                                 ab abVar = this.di;
@@ -1666,27 +1666,27 @@ public class n extends bu implements Cloneable {
                                     if (bcVar != null) {
                                         O8.put("reward", bcVar.a());
                                     }
-                                    d9 = this.cQ;
-                                    if (d9 == -1.0d) {
+                                    d10 = this.cQ;
+                                    if (d10 == -1.0d) {
                                     }
                                     str7 = this.cR;
                                     if (str7 != null) {
                                     }
-                                    d2 = this.cO;
-                                    if (d2 != -1.0d) {
+                                    d9 = this.cO;
+                                    if (d9 != -1.0d) {
                                     }
                                     str6 = this.cP;
                                     if (str6 != null) {
                                     }
-                                    i30 = this.cS;
-                                    if (i30 != -1) {
+                                    i29 = this.cS;
+                                    if (i29 != -1) {
                                     }
                                     O8.put("mmb_ilrd", this.cT);
                                     str = str4;
                                     str8 = str5;
-                                    O8.put(com.anythink.expressad.foundation.d.e.f18662h, this.f14012G);
-                                    O8.put("ahs", this.f14013H);
-                                    O8.put("pds", this.f14014I);
+                                    O8.put(com.anythink.expressad.foundation.d.e.f19449h, this.f14798G);
+                                    O8.put("ahs", this.f14799H);
+                                    O8.put("pds", this.f14800I);
                                     str2 = "show_custom_ext";
                                     O8.put("phs", this.J);
                                     O8.put("cl_imp", this.bU);
@@ -1694,42 +1694,42 @@ public class n extends bu implements Cloneable {
                                     }
                                     if (!TextUtils.isEmpty(this.cC)) {
                                     }
-                                    i29 = this.cJ;
-                                    if (i29 > 0) {
+                                    i28 = this.cJ;
+                                    if (i28 > 0) {
                                     }
                                     O8.put("rotation_order", this.dp);
                                     O8.put(l.a.aO, this.dq);
-                                    if (this.f14023r == 22) {
+                                    if (this.f14809r == 22) {
                                     }
                                     O8.put("unit_id", this.bA);
-                                    O8.put("nw_firm_id", this.f14023r);
+                                    O8.put("nw_firm_id", this.f14809r);
                                     O8.put("gro_id", this.aX);
-                                    O8.put("auto_req", this.f14025t);
+                                    O8.put("auto_req", this.f14811t);
                                     O8.put(str, N());
-                                    O8.put("bidtype", this.f14030y);
+                                    O8.put("bidtype", this.f14816y);
                                     c(O8);
-                                    O8.put("bidprice_cny", String.valueOf(this.f14006A));
-                                    O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14015K));
-                                    O8.put("myoffer_showtype", this.f14008C);
-                                    if (!TextUtils.isEmpty(this.f14011F)) {
+                                    O8.put("bidprice_cny", String.valueOf(this.f14792A));
+                                    O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14801K));
+                                    O8.put("myoffer_showtype", this.f14794C);
+                                    if (!TextUtils.isEmpty(this.f14797F)) {
                                     }
-                                    O8.put(com.anythink.expressad.foundation.d.e.f18662h, this.f14012G);
-                                    O8.put("ahs", this.f14013H);
-                                    O8.put("pds", this.f14014I);
+                                    O8.put(com.anythink.expressad.foundation.d.e.f19449h, this.f14798G);
+                                    O8.put("ahs", this.f14799H);
+                                    O8.put("pds", this.f14800I);
                                     O8.put("phs", this.J);
-                                    i20 = i6;
-                                    if (i20 == 6) {
+                                    i19 = i4;
+                                    if (i19 == 6) {
                                     }
-                                    i21 = this.cl;
+                                    i20 = this.cl;
+                                    if (i20 > 0) {
+                                    }
+                                    i21 = this.cz;
                                     if (i21 > 0) {
-                                    }
-                                    i22 = this.cz;
-                                    if (i22 > 0) {
                                     }
                                     d(O8);
                                     O8.put(str8, this.cK);
-                                    i23 = this.cG;
-                                    if (i23 > 0) {
+                                    i22 = this.cG;
+                                    if (i22 > 0) {
                                     }
                                     e(O8);
                                     O8.put("show_spec_nw_ad", this.dz);
@@ -1739,51 +1739,51 @@ public class n extends bu implements Cloneable {
                                     }
                                     if (!TextUtils.isEmpty(this.bO)) {
                                     }
-                                    i24 = this.da;
+                                    i23 = this.da;
+                                    if (i23 > 0) {
+                                    }
+                                    i24 = this.cZ;
                                     if (i24 > 0) {
                                     }
-                                    i25 = this.cZ;
-                                    if (i25 > 0) {
+                                    i25 = this.db;
+                                    if (i25 >= -1) {
                                     }
-                                    i26 = this.db;
-                                    if (i26 >= -1) {
-                                    }
-                                    i27 = this.dm;
-                                    if (i27 != 0) {
+                                    i26 = this.dm;
+                                    if (i26 != 0) {
                                     }
                                     f(O8);
                                     O8.put(com.anythink.core.common.k.bi, this.f0do);
                                     O8.put(com.anythink.core.common.k.bj, this.dn);
                                     O8.put("rotation_order", this.dp);
                                     O8.put(l.a.aO, this.dq);
-                                    i10 = i20;
+                                    i9 = i19;
                                     break;
                                 }
                                 str4 = "aprn_auto_req";
                                 bcVar = this.dj;
                                 if (bcVar != null) {
                                 }
-                                d9 = this.cQ;
-                                if (d9 == -1.0d) {
+                                d10 = this.cQ;
+                                if (d10 == -1.0d) {
                                 }
                                 str7 = this.cR;
                                 if (str7 != null) {
                                 }
-                                d2 = this.cO;
-                                if (d2 != -1.0d) {
+                                d9 = this.cO;
+                                if (d9 != -1.0d) {
                                 }
                                 str6 = this.cP;
                                 if (str6 != null) {
                                 }
-                                i30 = this.cS;
-                                if (i30 != -1) {
+                                i29 = this.cS;
+                                if (i29 != -1) {
                                 }
                                 O8.put("mmb_ilrd", this.cT);
                                 str = str4;
                                 str8 = str5;
-                                O8.put(com.anythink.expressad.foundation.d.e.f18662h, this.f14012G);
-                                O8.put("ahs", this.f14013H);
-                                O8.put("pds", this.f14014I);
+                                O8.put(com.anythink.expressad.foundation.d.e.f19449h, this.f14798G);
+                                O8.put("ahs", this.f14799H);
+                                O8.put("pds", this.f14800I);
                                 str2 = "show_custom_ext";
                                 O8.put("phs", this.J);
                                 O8.put("cl_imp", this.bU);
@@ -1791,42 +1791,42 @@ public class n extends bu implements Cloneable {
                                 }
                                 if (!TextUtils.isEmpty(this.cC)) {
                                 }
-                                i29 = this.cJ;
-                                if (i29 > 0) {
+                                i28 = this.cJ;
+                                if (i28 > 0) {
                                 }
                                 O8.put("rotation_order", this.dp);
                                 O8.put(l.a.aO, this.dq);
-                                if (this.f14023r == 22) {
+                                if (this.f14809r == 22) {
                                 }
                                 O8.put("unit_id", this.bA);
-                                O8.put("nw_firm_id", this.f14023r);
+                                O8.put("nw_firm_id", this.f14809r);
                                 O8.put("gro_id", this.aX);
-                                O8.put("auto_req", this.f14025t);
+                                O8.put("auto_req", this.f14811t);
                                 O8.put(str, N());
-                                O8.put("bidtype", this.f14030y);
+                                O8.put("bidtype", this.f14816y);
                                 c(O8);
-                                O8.put("bidprice_cny", String.valueOf(this.f14006A));
-                                O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14015K));
-                                O8.put("myoffer_showtype", this.f14008C);
-                                if (!TextUtils.isEmpty(this.f14011F)) {
+                                O8.put("bidprice_cny", String.valueOf(this.f14792A));
+                                O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14801K));
+                                O8.put("myoffer_showtype", this.f14794C);
+                                if (!TextUtils.isEmpty(this.f14797F)) {
                                 }
-                                O8.put(com.anythink.expressad.foundation.d.e.f18662h, this.f14012G);
-                                O8.put("ahs", this.f14013H);
-                                O8.put("pds", this.f14014I);
+                                O8.put(com.anythink.expressad.foundation.d.e.f19449h, this.f14798G);
+                                O8.put("ahs", this.f14799H);
+                                O8.put("pds", this.f14800I);
                                 O8.put("phs", this.J);
-                                i20 = i6;
-                                if (i20 == 6) {
+                                i19 = i4;
+                                if (i19 == 6) {
                                 }
-                                i21 = this.cl;
+                                i20 = this.cl;
+                                if (i20 > 0) {
+                                }
+                                i21 = this.cz;
                                 if (i21 > 0) {
-                                }
-                                i22 = this.cz;
-                                if (i22 > 0) {
                                 }
                                 d(O8);
                                 O8.put(str8, this.cK);
-                                i23 = this.cG;
-                                if (i23 > 0) {
+                                i22 = this.cG;
+                                if (i22 > 0) {
                                 }
                                 e(O8);
                                 O8.put("show_spec_nw_ad", this.dz);
@@ -1836,51 +1836,51 @@ public class n extends bu implements Cloneable {
                                 }
                                 if (!TextUtils.isEmpty(this.bO)) {
                                 }
-                                i24 = this.da;
+                                i23 = this.da;
+                                if (i23 > 0) {
+                                }
+                                i24 = this.cZ;
                                 if (i24 > 0) {
                                 }
-                                i25 = this.cZ;
-                                if (i25 > 0) {
+                                i25 = this.db;
+                                if (i25 >= -1) {
                                 }
-                                i26 = this.db;
-                                if (i26 >= -1) {
-                                }
-                                i27 = this.dm;
-                                if (i27 != 0) {
+                                i26 = this.dm;
+                                if (i26 != 0) {
                                 }
                                 f(O8);
                                 O8.put(com.anythink.core.common.k.bi, this.f0do);
                                 O8.put(com.anythink.core.common.k.bj, this.dn);
                                 O8.put("rotation_order", this.dp);
                                 O8.put(l.a.aO, this.dq);
-                                i10 = i20;
+                                i9 = i19;
                                 break;
                             case 25:
                                 str4 = "aprn_auto_req";
                                 bcVar = this.dj;
                                 if (bcVar != null) {
                                 }
-                                d9 = this.cQ;
-                                if (d9 == -1.0d) {
+                                d10 = this.cQ;
+                                if (d10 == -1.0d) {
                                 }
                                 str7 = this.cR;
                                 if (str7 != null) {
                                 }
-                                d2 = this.cO;
-                                if (d2 != -1.0d) {
+                                d9 = this.cO;
+                                if (d9 != -1.0d) {
                                 }
                                 str6 = this.cP;
                                 if (str6 != null) {
                                 }
-                                i30 = this.cS;
-                                if (i30 != -1) {
+                                i29 = this.cS;
+                                if (i29 != -1) {
                                 }
                                 O8.put("mmb_ilrd", this.cT);
                                 str = str4;
                                 str8 = str5;
-                                O8.put(com.anythink.expressad.foundation.d.e.f18662h, this.f14012G);
-                                O8.put("ahs", this.f14013H);
-                                O8.put("pds", this.f14014I);
+                                O8.put(com.anythink.expressad.foundation.d.e.f19449h, this.f14798G);
+                                O8.put("ahs", this.f14799H);
+                                O8.put("pds", this.f14800I);
                                 str2 = "show_custom_ext";
                                 O8.put("phs", this.J);
                                 O8.put("cl_imp", this.bU);
@@ -1888,42 +1888,42 @@ public class n extends bu implements Cloneable {
                                 }
                                 if (!TextUtils.isEmpty(this.cC)) {
                                 }
-                                i29 = this.cJ;
-                                if (i29 > 0) {
+                                i28 = this.cJ;
+                                if (i28 > 0) {
                                 }
                                 O8.put("rotation_order", this.dp);
                                 O8.put(l.a.aO, this.dq);
-                                if (this.f14023r == 22) {
+                                if (this.f14809r == 22) {
                                 }
                                 O8.put("unit_id", this.bA);
-                                O8.put("nw_firm_id", this.f14023r);
+                                O8.put("nw_firm_id", this.f14809r);
                                 O8.put("gro_id", this.aX);
-                                O8.put("auto_req", this.f14025t);
+                                O8.put("auto_req", this.f14811t);
                                 O8.put(str, N());
-                                O8.put("bidtype", this.f14030y);
+                                O8.put("bidtype", this.f14816y);
                                 c(O8);
-                                O8.put("bidprice_cny", String.valueOf(this.f14006A));
-                                O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14015K));
-                                O8.put("myoffer_showtype", this.f14008C);
-                                if (!TextUtils.isEmpty(this.f14011F)) {
+                                O8.put("bidprice_cny", String.valueOf(this.f14792A));
+                                O8.put(com.anythink.core.common.k.ap, String.valueOf(this.f14801K));
+                                O8.put("myoffer_showtype", this.f14794C);
+                                if (!TextUtils.isEmpty(this.f14797F)) {
                                 }
-                                O8.put(com.anythink.expressad.foundation.d.e.f18662h, this.f14012G);
-                                O8.put("ahs", this.f14013H);
-                                O8.put("pds", this.f14014I);
+                                O8.put(com.anythink.expressad.foundation.d.e.f19449h, this.f14798G);
+                                O8.put("ahs", this.f14799H);
+                                O8.put("pds", this.f14800I);
                                 O8.put("phs", this.J);
-                                i20 = i6;
-                                if (i20 == 6) {
+                                i19 = i4;
+                                if (i19 == 6) {
                                 }
-                                i21 = this.cl;
+                                i20 = this.cl;
+                                if (i20 > 0) {
+                                }
+                                i21 = this.cz;
                                 if (i21 > 0) {
-                                }
-                                i22 = this.cz;
-                                if (i22 > 0) {
                                 }
                                 d(O8);
                                 O8.put(str8, this.cK);
-                                i23 = this.cG;
-                                if (i23 > 0) {
+                                i22 = this.cG;
+                                if (i22 > 0) {
                                 }
                                 e(O8);
                                 O8.put("show_spec_nw_ad", this.dz);
@@ -1933,38 +1933,38 @@ public class n extends bu implements Cloneable {
                                 }
                                 if (!TextUtils.isEmpty(this.bO)) {
                                 }
-                                i24 = this.da;
+                                i23 = this.da;
+                                if (i23 > 0) {
+                                }
+                                i24 = this.cZ;
                                 if (i24 > 0) {
                                 }
-                                i25 = this.cZ;
-                                if (i25 > 0) {
+                                i25 = this.db;
+                                if (i25 >= -1) {
                                 }
-                                i26 = this.db;
-                                if (i26 >= -1) {
-                                }
-                                i27 = this.dm;
-                                if (i27 != 0) {
+                                i26 = this.dm;
+                                if (i26 != 0) {
                                 }
                                 f(O8);
                                 O8.put(com.anythink.core.common.k.bi, this.f0do);
                                 O8.put(com.anythink.core.common.k.bj, this.dn);
                                 O8.put("rotation_order", this.dp);
                                 O8.put(l.a.aO, this.dq);
-                                i10 = i20;
+                                i9 = i19;
                                 break;
                             case 26:
                                 e eVar = this.dh;
                                 if (eVar != null) {
-                                    O8.put("sdk_chif_lt", eVar.f13940d);
-                                    O8.put("ad_wipl_tp", this.dh.f13941e);
-                                    O8.put("ad_wipl_if", this.dh.f13942f);
-                                    O8.put("ad_wipl_time", this.dh.f13943g);
+                                    O8.put("sdk_chif_lt", eVar.f14726d);
+                                    O8.put("ad_wipl_tp", this.dh.f14727e);
+                                    O8.put("ad_wipl_if", this.dh.f14728f);
+                                    O8.put("ad_wipl_time", this.dh.f14729g);
                                 }
-                                i10 = i6;
+                                i9 = i4;
                                 break;
                         }
-                        if (TextUtils.equals(this.aN, "2") && (i10 == 1 || i10 == 2 || i10 == 4 || i10 == 13 || i10 == 11 || i10 == 6)) {
-                            if (this.ce != 0 || i10 == 11) {
+                        if (TextUtils.equals(this.aN, "2") && (i9 == 1 || i9 == 2 || i9 == 4 || i9 == 13 || i9 == 11 || i9 == 6)) {
+                            if (this.ce != 0 || i9 == 11) {
                                 O8.put(l.a.aq, this.cx);
                             }
                             map2 = this.cp;
@@ -1986,13 +1986,13 @@ public class n extends bu implements Cloneable {
                                     }
                                 }
                             }
-                            if (i10 == 6 && (i13 = this.cw) > 0) {
-                                O8.put("bn_click_area", i13);
+                            if (i9 == 6 && (i12 = this.cw) > 0) {
+                                O8.put("bn_click_area", i12);
                             }
                         }
                         com.anythink.core.common.u.b a92 = com.anythink.core.common.u.b.a();
-                        if (i10 == 4) {
-                            if (i10 == 6 && this.f14023r == 66) {
+                        if (i9 == 4) {
+                            if (i9 == 6 && this.f14809r == 66) {
                                 long b9 = com.anythink.core.common.u.b.b((n) this);
                                 if (b9 > 0) {
                                     O8.put("s_c_interval", b9);
@@ -2008,14 +2008,14 @@ public class n extends bu implements Cloneable {
                                 O8.put("bidads_show_interval", b10);
                             }
                         }
-                        if (TextUtils.equals(this.aN, "0") && (i10 == 1 || i10 == 4 || i10 == 6)) {
-                            i11 = this.cX;
-                            if (i11 > 0) {
-                                O8.put(j.w.f12608E, i11);
+                        if (TextUtils.equals(this.aN, "0") && (i9 == 1 || i9 == 4 || i9 == 6)) {
+                            i10 = this.cX;
+                            if (i10 > 0) {
+                                O8.put(j.w.f13394E, i10);
                             }
-                            i12 = this.cY;
-                            if (i12 > 0) {
-                                O8.put(j.w.f12609F, i12);
+                            i11 = this.cY;
+                            if (i11 > 0) {
+                                O8.put(j.w.f13395F, i11);
                             }
                         }
                         ATAdRequest aTAdRequest22 = this.dw;
@@ -2037,7 +2037,7 @@ public class n extends bu implements Cloneable {
                                 O8.put("mmed_wait_price_sw", preLoadInfo.getCpEcpmSwitch());
                                 O8.put("mmed_wait_price_t", preLoadInfo.getCpEcpmTimeout());
                                 MgComparedResult mgComparedResult = preLoadInfo.getMgComparedResult();
-                                if (!(i10 == 4 || i10 == 6 || i10 == 13) || (mgComparedResult != null ? mgComparedResult.isCompared() : false)) {
+                                if (!(i9 == 4 || i9 == 6 || i9 == 13) || (mgComparedResult != null ? mgComparedResult.isCompared() : false)) {
                                     MgPreLoadCallbackRegister preLoadCallbackRegister = preLoadInfo.getPreLoadCallbackRegister();
                                     MgAdInfo mgAdInfo = preLoadCallbackRegister != null ? preLoadCallbackRegister.getMgAdInfo() : null;
                                     double uSDEcpm = mgAdInfo != null ? mgAdInfo.getUSDEcpm() : 0.0d;
@@ -2048,7 +2048,7 @@ public class n extends bu implements Cloneable {
                             } catch (Throwable unused2) {
                             }
                         }
-                        if (this.f14023r == 8 && (i10 == 1 || i10 == 6)) {
+                        if (this.f14809r == 8 && (i9 == 1 || i9 == 6)) {
                             try {
                                 map = this.cp;
                                 if (map != null && !map.isEmpty()) {
@@ -2076,7 +2076,7 @@ public class n extends bu implements Cloneable {
                             } catch (Exception unused3) {
                             }
                         }
-                        if (O8 != null && i10 == 6) {
+                        if (O8 != null && i9 == 6) {
                             try {
                                 if (this.dx) {
                                     this.dy = true;
@@ -2089,9 +2089,9 @@ public class n extends bu implements Cloneable {
                     }
                 }
             }
-            List<Integer> list = this.f14016L;
+            List<Integer> list = this.f14802L;
             if (list != null && !list.isEmpty()) {
-                O8.put("bid_link", this.f14016L.toString());
+                O8.put("bid_link", this.f14802L.toString());
             }
         }
         if (!TextUtils.isEmpty(this.bB)) {
@@ -2100,28 +2100,28 @@ public class n extends bu implements Cloneable {
         dVar = this.cq;
         if (dVar != null) {
         }
-        i14 = this.cc;
-        if (i14 > 0) {
+        i13 = this.cc;
+        if (i13 > 0) {
         }
         if (this.cF) {
         }
-        i15 = this.de;
-        if (i15 > 0) {
+        i14 = this.de;
+        if (i14 > 0) {
         }
-        i16 = this.df;
-        if (i16 > 0) {
+        i15 = this.df;
+        if (i15 > 0) {
         }
         O8.put("network_pl_id", this.bC);
         aTAdRequest = this.dw;
         if (aTAdRequest == null) {
         }
-        i17 = this.dB;
-        if (i17 != -1) {
+        i16 = this.dB;
+        if (i16 != -1) {
         }
         if (!TextUtils.isEmpty(this.dC)) {
         }
         String str82 = "unit_type";
-        switch (i6) {
+        switch (i4) {
         }
         if (TextUtils.equals(this.aN, "2")) {
             if (this.ce != 0) {
@@ -2130,19 +2130,19 @@ public class n extends bu implements Cloneable {
             map2 = this.cp;
             if (map2 != null) {
             }
-            if (i10 == 6) {
-                O8.put("bn_click_area", i13);
+            if (i9 == 6) {
+                O8.put("bn_click_area", i12);
             }
         }
         com.anythink.core.common.u.b a922 = com.anythink.core.common.u.b.a();
-        if (i10 == 4) {
+        if (i9 == 4) {
         }
         if (TextUtils.equals(this.aN, "0")) {
-            i11 = this.cX;
-            if (i11 > 0) {
+            i10 = this.cX;
+            if (i10 > 0) {
             }
-            i12 = this.cY;
-            if (i12 > 0) {
+            i11 = this.cY;
+            if (i11 > 0) {
             }
         }
         ATAdRequest aTAdRequest222 = this.dw;
@@ -2150,7 +2150,7 @@ public class n extends bu implements Cloneable {
         }
         if (preLoadInfo != null) {
         }
-        if (this.f14023r == 8) {
+        if (this.f14809r == 8) {
             map = this.cp;
             if (map != null) {
                 jSONObject = new JSONObject();
@@ -2177,92 +2177,92 @@ public class n extends bu implements Cloneable {
         return O8;
     }
 
-    public final void P(int i6) {
-        this.cw = i6;
+    public final void P(int i4) {
+        this.cw = i4;
     }
 
-    public final void Q(int i6) {
-        this.cx = i6;
+    public final void Q(int i4) {
+        this.cx = i4;
     }
 
-    public final void R(int i6) {
-        this.cB = i6;
+    public final void R(int i4) {
+        this.cB = i4;
     }
 
-    public final void S(int i6) {
-        this.cH = i6;
+    public final void S(int i4) {
+        this.cH = i4;
     }
 
-    public final void T(int i6) {
-        this.cI = i6;
+    public final void T(int i4) {
+        this.cI = i4;
     }
 
-    public final void U(int i6) {
-        this.cJ = i6;
+    public final void U(int i4) {
+        this.cJ = i4;
     }
 
-    public final void V(int i6) {
-        this.dz = i6;
+    public final void V(int i4) {
+        this.dz = i4;
     }
 
-    public final void W(int i6) {
-        this.cV = i6;
+    public final void W(int i4) {
+        this.cV = i4;
     }
 
-    public final void X(int i6) {
-        this.cX = i6;
+    public final void X(int i4) {
+        this.cX = i4;
     }
 
-    public final void Y(int i6) {
-        this.cY = i6;
+    public final void Y(int i4) {
+        this.cY = i4;
     }
 
-    public final void Z(int i6) {
-        this.cZ = i6;
+    public final void Z(int i4) {
+        this.cZ = i4;
     }
 
-    public final void a(int i6) {
-        this.bx = i6;
+    public final void a(int i4) {
+        this.bx = i4;
     }
 
-    public final void aa(int i6) {
-        this.da = i6;
+    public final void aa(int i4) {
+        this.da = i4;
     }
 
-    public final void ab(int i6) {
-        this.db = i6;
+    public final void ab(int i4) {
+        this.db = i4;
     }
 
-    public final void ac(int i6) {
-        this.dd = i6;
+    public final void ac(int i4) {
+        this.dd = i4;
     }
 
-    public final void ad(int i6) {
-        this.de = i6;
+    public final void ad(int i4) {
+        this.de = i4;
     }
 
-    public final void ae(int i6) {
-        this.dk = i6;
+    public final void ae(int i4) {
+        this.dk = i4;
     }
 
-    public final void ag(int i6) {
-        this.dr = i6;
+    public final void ag(int i4) {
+        this.dr = i4;
     }
 
-    public final void ah(int i6) {
-        this.ds = i6;
+    public final void ah(int i4) {
+        this.ds = i4;
     }
 
-    public final void ai(int i6) {
-        this.dp = i6;
+    public final void ai(int i4) {
+        this.dp = i4;
     }
 
-    public final void aj(int i6) {
-        this.dq = i6;
+    public final void aj(int i4) {
+        this.dq = i4;
     }
 
-    public final void ak(int i6) {
-        this.dv = i6;
+    public final void ak(int i4) {
+        this.dv = i4;
     }
 
     public final ATCustomContentResult aq() {
@@ -2285,16 +2285,16 @@ public class n extends bu implements Cloneable {
         return this.dt;
     }
 
-    public final void b(int i6) {
-        this.by = i6;
+    public final void b(int i4) {
+        this.by = i4;
     }
 
-    public final void c(int i6) {
-        this.cS = i6;
+    public final void c(int i4) {
+        this.cS = i4;
     }
 
-    public final void d(int i6) {
-        this.cK = i6;
+    public final void d(int i4) {
+        this.cK = i4;
     }
 
     public final double e() {
@@ -2326,12 +2326,12 @@ public class n extends bu implements Cloneable {
         return this.cc;
     }
 
-    public final void l(int i6) {
-        this.bZ = i6;
+    public final void l(int i4) {
+        this.bZ = i4;
     }
 
-    public final void m(int i6) {
-        this.bY = i6;
+    public final void m(int i4) {
+        this.bY = i4;
     }
 
     public final void n() {
@@ -2348,44 +2348,44 @@ public class n extends bu implements Cloneable {
         return this.bL;
     }
 
-    public final void q(int i6) {
-        this.f14014I = i6;
+    public final void q(int i4) {
+        this.f14800I = i4;
     }
 
-    public final void r(int i6) {
-        this.J = i6;
+    public final void r(int i4) {
+        this.J = i4;
     }
 
-    public final void s(int i6) {
-        this.bE = i6;
+    public final void s(int i4) {
+        this.bE = i4;
     }
 
-    public final void t(int i6) {
-        this.cl = i6;
+    public final void t(int i4) {
+        this.cl = i4;
     }
 
-    public final void u(int i6) {
-        this.f14009D = i6;
+    public final void u(int i4) {
+        this.f14795D = i4;
     }
 
-    public final void v(int i6) {
-        this.f14010E = i6;
+    public final void v(int i4) {
+        this.f14796E = i4;
     }
 
-    public final void w(int i6) {
-        this.f14030y = i6;
+    public final void w(int i4) {
+        this.f14816y = i4;
     }
 
-    public final void x(int i6) {
-        this.bh = i6;
+    public final void x(int i4) {
+        this.bh = i4;
     }
 
-    public final void y(int i6) {
-        this.bi = i6;
+    public final void y(int i4) {
+        this.bi = i4;
     }
 
-    public final void z(int i6) {
-        this.ba = i6;
+    public final void z(int i4) {
+        this.ba = i4;
     }
 
     public final void A(String str) {
@@ -2400,20 +2400,20 @@ public class n extends bu implements Cloneable {
         this.du = str;
     }
 
-    public final void M(int i6) {
-        this.cG = i6;
+    public final void M(int i4) {
+        this.cG = i4;
     }
 
-    public final void N(int i6) {
-        this.dB = i6;
+    public final void N(int i4) {
+        this.dB = i4;
     }
 
     public final ATAdRequest a() {
         return this.dw;
     }
 
-    public final void b(double d2) {
-        this.cQ = d2;
+    public final void b(double d9) {
+        this.cQ = d9;
     }
 
     public final void c(String str) {
@@ -2424,28 +2424,28 @@ public class n extends bu implements Cloneable {
         this.cA = 2;
     }
 
-    public final void e(int i6) {
-        this.cz = i6;
+    public final void e(int i4) {
+        this.cz = i4;
     }
 
-    public final void f(int i6) {
-        this.cv = i6;
+    public final void f(int i4) {
+        this.cv = i4;
     }
 
-    public final void h(int i6) {
-        this.cg = i6;
+    public final void h(int i4) {
+        this.cg = i4;
     }
 
-    public final void i(int i6) {
-        this.cb = i6;
+    public final void i(int i4) {
+        this.cb = i4;
     }
 
-    public final void j(int i6) {
-        this.cc = i6;
+    public final void j(int i4) {
+        this.cc = i4;
     }
 
-    public final void k(int i6) {
-        this.ca = i6;
+    public final void k(int i4) {
+        this.ca = i4;
     }
 
     public final int l() {
@@ -2456,12 +2456,12 @@ public class n extends bu implements Cloneable {
         this.bV = 1;
     }
 
-    public final void o(int i6) {
-        this.f14012G = i6;
+    public final void o(int i4) {
+        this.f14798G = i4;
     }
 
-    public final void p(int i6) {
-        this.f14013H = i6;
+    public final void p(int i4) {
+        this.f14799H = i4;
     }
 
     public final void q(String str) {
@@ -2489,11 +2489,11 @@ public class n extends bu implements Cloneable {
     }
 
     public final void w(String str) {
-        this.f14019O = str;
+        this.f14805O = str;
     }
 
     public final void x(String str) {
-        this.f14022R = str;
+        this.f14808R = str;
     }
 
     public final void y(String str) {
@@ -2516,20 +2516,20 @@ public class n extends bu implements Cloneable {
         return this.cE;
     }
 
-    public final void d(double d2) {
-        this.cu = d2;
+    public final void d(double d9) {
+        this.cu = d9;
     }
 
-    public final void e(double d2) {
-        this.ct = d2;
+    public final void e(double d9) {
+        this.ct = d9;
     }
 
-    public final void f(double d2) {
-        this.f14015K = d2;
+    public final void f(double d9) {
+        this.f14801K = d9;
     }
 
-    public final void h(double d2) {
-        this.bN = d2;
+    public final void h(double d9) {
+        this.bN = d9;
     }
 
     public final void i(String str) {
@@ -2545,19 +2545,19 @@ public class n extends bu implements Cloneable {
     }
 
     public final void l(String str) {
-        this.f14007B = str;
+        this.f14793B = str;
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        this.bB = com.anythink.core.common.v.o.b(this.f14007B);
+        this.bB = com.anythink.core.common.v.o.b(this.f14793B);
     }
 
     public final void m(String str) {
         this.bC = str;
     }
 
-    public final void n(int i6) {
-        this.bP = i6;
+    public final void n(int i4) {
+        this.bP = i4;
     }
 
     public final void o(String str) {
@@ -2577,11 +2577,11 @@ public class n extends bu implements Cloneable {
     }
 
     public final void s(long j6) {
-        this.f14020P = j6;
+        this.f14806P = j6;
     }
 
     public final void t(long j6) {
-        this.f14021Q = j6;
+        this.f14807Q = j6;
     }
 
     public final void u(long j6) {
@@ -2592,16 +2592,16 @@ public class n extends bu implements Cloneable {
         this.f0do = j6;
     }
 
-    public final void a(double d2) {
-        this.cO = d2;
+    public final void a(double d9) {
+        this.cO = d9;
     }
 
     public final long b() {
         return this.cD;
     }
 
-    public final void c(double d2) {
-        this.cy = d2;
+    public final void c(double d9) {
+        this.cy = d9;
     }
 
     public final void d(String str) {
@@ -2616,43 +2616,43 @@ public class n extends bu implements Cloneable {
         this.bT = str;
     }
 
-    public final void g(int i6) {
-        this.cf = i6;
+    public final void g(int i4) {
+        this.cf = i4;
     }
 
     public final void h(String str) {
         this.bO = str;
     }
 
-    public final void i(double d2) {
-        this.bI = d2;
+    public final void i(double d9) {
+        this.bI = d9;
     }
 
-    public final void j(double d2) {
-        this.f14031z = d2;
+    public final void j(double d9) {
+        this.f14817z = d9;
     }
 
-    public final void k(double d2) {
-        this.f14006A = d2;
+    public final void k(double d9) {
+        this.f14792A = d9;
     }
 
-    public final void m(double d2) {
-        this.cM = d2;
+    public final void m(double d9) {
+        this.cM = d9;
     }
 
     public final void n(String str) {
         this.bD = str;
     }
 
-    private void e(boolean z3) {
-        this.bj = z3;
+    private void e(boolean z6) {
+        this.bj = z6;
     }
 
-    private void f(JSONObject jSONObject, int i6) {
+    private void f(JSONObject jSONObject, int i4) {
         com.anythink.core.common.u.b a9 = com.anythink.core.common.u.b.a();
         try {
-            if (i6 != 4) {
-                if (i6 == 6 && this.f14023r == 66) {
+            if (i4 != 4) {
+                if (i4 == 6 && this.f14809r == 66) {
                     long b9 = com.anythink.core.common.u.b.b(this);
                     if (b9 > 0) {
                         jSONObject.put("s_c_interval", b9);
@@ -2694,34 +2694,34 @@ public class n extends bu implements Cloneable {
         this.co = map;
     }
 
-    public final void g(double d2) {
-        this.bL = d2;
+    public final void g(double d9) {
+        this.bL = d9;
     }
 
-    public final void n(double d2) {
-        this.dn = d2;
+    public final void n(double d9) {
+        this.dn = d9;
     }
 
     private void c(JSONObject jSONObject) {
-        double d2 = this.ct;
-        if (d2 > 0.0d) {
-            jSONObject.put("bidprice", String.valueOf(d2));
+        double d9 = this.ct;
+        if (d9 > 0.0d) {
+            jSONObject.put("bidprice", String.valueOf(d9));
             jSONObject.put("am_bp_type", 3);
             return;
         }
-        jSONObject.put("bidprice", String.valueOf(this.f14031z));
-        int i6 = 1;
+        jSONObject.put("bidprice", String.valueOf(this.f14817z));
+        int i4 = 1;
         if (this.dk == 1) {
-            double d9 = this.cu;
-            if (d9 == -1.0d) {
-                i6 = 5;
-            } else if (d9 == 0.0d) {
-                i6 = 4;
+            double d10 = this.cu;
+            if (d10 == -1.0d) {
+                i4 = 5;
+            } else if (d10 == 0.0d) {
+                i4 = 4;
             } else if (this.cs) {
-                i6 = 2;
+                i4 = 2;
             }
         }
-        jSONObject.put("am_bp_type", i6);
+        jSONObject.put("am_bp_type", i4);
     }
 
     private void d(JSONObject jSONObject) {
@@ -2729,7 +2729,7 @@ public class n extends bu implements Cloneable {
         if (map == null || map.size() <= 0) {
             return;
         }
-        if (this.f14023r == 2 || this.dk == 1) {
+        if (this.f14809r == 2 || this.dk == 1) {
             try {
                 jSONObject.put("am_ilrd", new JSONObject(this.cr).toString());
             } catch (Throwable unused) {
@@ -2737,8 +2737,8 @@ public class n extends bu implements Cloneable {
         }
     }
 
-    private void e(JSONObject jSONObject, int i6) {
-        if (i6 == 1 || i6 == 6) {
+    private void e(JSONObject jSONObject, int i4) {
+        if (i4 == 1 || i4 == 6) {
             try {
                 Map<String, Object> map = this.cp;
                 if (map == null || map.isEmpty()) {
@@ -2769,24 +2769,24 @@ public class n extends bu implements Cloneable {
         }
     }
 
-    public final void a(int i6, int i9) {
-        this.cC = i6 + "_" + i9;
+    public final void a(int i4, int i6) {
+        this.cC = i4 + "_" + i6;
     }
 
-    public final void b(boolean z3) {
-        this.f14017M = z3;
+    public final void b(boolean z6) {
+        this.f14803M = z6;
     }
 
     public final void g(String str) {
         this.bM = str;
     }
 
-    public final void l(double d2) {
-        this.cL = d2;
+    public final void l(double d9) {
+        this.cL = d9;
     }
 
-    private void b(JSONObject jSONObject, int i6) {
-        if (jSONObject == null || i6 != 6) {
+    private void b(JSONObject jSONObject, int i4) {
+        if (jSONObject == null || i4 != 6) {
             return;
         }
         try {
@@ -2806,17 +2806,17 @@ public class n extends bu implements Cloneable {
         this.cr = map;
     }
 
-    private void d(JSONObject jSONObject, int i6) {
+    private void d(JSONObject jSONObject, int i4) {
         try {
             if (TextUtils.equals(this.aN, "0")) {
-                if (i6 == 1 || i6 == 4 || i6 == 6) {
-                    int i9 = this.cX;
-                    if (i9 > 0) {
-                        jSONObject.put(j.w.f12608E, i9);
+                if (i4 == 1 || i4 == 4 || i4 == 6) {
+                    int i6 = this.cX;
+                    if (i6 > 0) {
+                        jSONObject.put(j.w.f13394E, i6);
                     }
-                    int i10 = this.cY;
-                    if (i10 > 0) {
-                        jSONObject.put(j.w.f12609F, i10);
+                    int i9 = this.cY;
+                    if (i9 > 0) {
+                        jSONObject.put(j.w.f13395F, i9);
                     }
                 }
             }
@@ -2824,22 +2824,22 @@ public class n extends bu implements Cloneable {
         }
     }
 
-    public final void a(boolean z3) {
-        this.cs = z3;
+    public final void a(boolean z6) {
+        this.cs = z6;
     }
 
-    private void b(int i6, JSONObject jSONObject) {
-        if (i6 != 1 && i6 != 2) {
-            if (i6 != 4 && i6 != 6 && i6 != 8) {
-                if (i6 != 13) {
-                    if (i6 != 25) {
+    private void b(int i4, JSONObject jSONObject) {
+        if (i4 != 1 && i4 != 2) {
+            if (i4 != 4 && i4 != 6 && i4 != 8) {
+                if (i4 != 13) {
+                    if (i4 != 25) {
                         return;
                     }
                 }
             }
-            List<Integer> list = this.f14016L;
+            List<Integer> list = this.f14802L;
             if (list != null && !list.isEmpty()) {
-                jSONObject.put("bid_link", this.f14016L.toString());
+                jSONObject.put("bid_link", this.f14802L.toString());
             }
         }
         if (TextUtils.isEmpty(this.bB)) {
@@ -2855,22 +2855,22 @@ public class n extends bu implements Cloneable {
     public final void a(bv bvVar) {
         if (bvVar != null) {
             this.bA = bvVar.z();
-            this.f14031z = bvVar.D();
-            this.f14006A = bvVar.f13822z;
+            this.f14817z = bvVar.D();
+            this.f14792A = bvVar.f14608z;
             this.cc = bvVar.d();
         }
     }
 
-    public final void af(int i6) {
-        this.dm = i6;
+    public final void af(int i4) {
+        this.dm = i4;
     }
 
-    private void c(JSONObject jSONObject, int i6) {
-        int i9;
+    private void c(JSONObject jSONObject, int i4) {
+        int i6;
         try {
             if (TextUtils.equals(this.aN, "2")) {
-                if (i6 == 1 || i6 == 2 || i6 == 4 || i6 == 13 || i6 == 11 || i6 == 6) {
-                    if (this.ce == 0 || i6 == 11) {
+                if (i4 == 1 || i4 == 2 || i4 == 4 || i4 == 13 || i4 == 11 || i4 == 6) {
+                    if (this.ce == 0 || i4 == 11) {
                         jSONObject.put(l.a.aq, this.cx);
                     }
                     Map<String, Object> map = this.cp;
@@ -2892,18 +2892,18 @@ public class n extends bu implements Cloneable {
                             }
                         }
                     }
-                    if (i6 != 6 || (i9 = this.cw) <= 0) {
+                    if (i4 != 6 || (i6 = this.cw) <= 0) {
                         return;
                     }
-                    jSONObject.put("bn_click_area", i9);
+                    jSONObject.put("bn_click_area", i6);
                 }
             }
         } catch (Exception unused) {
         }
     }
 
-    public final void d(boolean z3) {
-        this.dx = z3;
+    public final void d(boolean z6) {
+        this.dx = z6;
     }
 
     private void f(JSONObject jSONObject) {
@@ -2919,7 +2919,7 @@ public class n extends bu implements Cloneable {
         }
     }
 
-    private void a(JSONObject jSONObject, int i6) {
+    private void a(JSONObject jSONObject, int i4) {
         ATAdRequest aTAdRequest = this.dw;
         MgPreLoadAdRequest preLoadInfo = aTAdRequest != null ? aTAdRequest.getPreLoadInfo() : null;
         if (preLoadInfo == null) {
@@ -2941,12 +2941,12 @@ public class n extends bu implements Cloneable {
             jSONObject.put("mmed_wait_price_sw", preLoadInfo.getCpEcpmSwitch());
             jSONObject.put("mmed_wait_price_t", preLoadInfo.getCpEcpmTimeout());
             MgComparedResult mgComparedResult = preLoadInfo.getMgComparedResult();
-            boolean z3 = false;
+            boolean z6 = false;
             boolean isCompared = mgComparedResult != null ? mgComparedResult.isCompared() : false;
-            if ((i6 != 4 && i6 != 6 && i6 != 13) || isCompared) {
-                z3 = true;
+            if ((i4 != 4 && i4 != 6 && i4 != 13) || isCompared) {
+                z6 = true;
             }
-            if (z3) {
+            if (z6) {
                 MgPreLoadCallbackRegister preLoadCallbackRegister = preLoadInfo.getPreLoadCallbackRegister();
                 MgAdInfo mgAdInfo = preLoadCallbackRegister != null ? preLoadCallbackRegister.getMgAdInfo() : null;
                 double uSDEcpm = mgAdInfo != null ? mgAdInfo.getUSDEcpm() : 0.0d;
@@ -2970,17 +2970,17 @@ public class n extends bu implements Cloneable {
         this.cN = map;
     }
 
-    public final void c(boolean z3) {
-        this.cF = z3;
+    public final void c(boolean z6) {
+        this.cF = z6;
     }
 
-    private static boolean a(int i6, MgPreLoadAdRequest mgPreLoadAdRequest) {
+    private static boolean a(int i4, MgPreLoadAdRequest mgPreLoadAdRequest) {
         MgComparedResult mgComparedResult = mgPreLoadAdRequest.getMgComparedResult();
-        return !(i6 == 4 || i6 == 6 || i6 == 13) || (mgComparedResult != null ? mgComparedResult.isCompared() : false);
+        return !(i4 == 4 || i4 == 6 || i4 == 13) || (mgComparedResult != null ? mgComparedResult.isCompared() : false);
     }
 
-    private void a(int i6, JSONObject jSONObject) {
-        if (i6 == 1 || i6 == 2 || i6 == 4 || i6 == 6 || i6 == 13 || i6 == 24) {
+    private void a(int i4, JSONObject jSONObject) {
+        if (i4 == 1 || i4 == 2 || i4 == 4 || i4 == 6 || i4 == 13 || i4 == 24) {
             jSONObject.put("extra", this.bS);
         }
     }
@@ -3006,6 +3006,6 @@ public class n extends bu implements Cloneable {
     }
 
     public final void a(List<Integer> list) {
-        this.f14016L = list;
+        this.f14802L = list;
     }
 }

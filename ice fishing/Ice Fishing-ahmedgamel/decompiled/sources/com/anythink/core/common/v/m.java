@@ -34,61 +34,61 @@ import java.util.UUID;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.regex.Pattern;
-import o2.C4783a;
-import o2.C4784b;
 import org.json.JSONObject;
+import q2.C4869a;
+import q2.C4870b;
 
 /* loaded from: classes.dex */
 public class m {
 
     /* renamed from: K, reason: collision with root package name */
-    private static String f16790K = null;
+    private static String f17577K = null;
 
     /* renamed from: L, reason: collision with root package name */
-    private static String f16791L = null;
+    private static String f17578L = null;
 
     /* renamed from: M, reason: collision with root package name */
-    private static String f16792M = null;
+    private static String f17579M = null;
 
     /* renamed from: N, reason: collision with root package name */
-    private static String f16793N = null;
+    private static String f17580N = null;
 
     /* renamed from: O, reason: collision with root package name */
-    private static String f16794O = null;
+    private static String f17581O = null;
 
     /* renamed from: P, reason: collision with root package name */
-    private static String f16795P = null;
+    private static String f17582P = null;
 
     /* renamed from: Q, reason: collision with root package name */
-    private static String f16796Q = null;
+    private static String f17583Q = null;
 
     /* renamed from: R, reason: collision with root package name */
-    private static String f16797R = null;
+    private static String f17584R = null;
 
     /* renamed from: S, reason: collision with root package name */
-    private static String f16798S = null;
+    private static String f17585S = null;
 
     /* renamed from: T, reason: collision with root package name */
-    private static String f16799T = null;
+    private static String f17586T = null;
 
     /* renamed from: U, reason: collision with root package name */
-    private static String f16800U = null;
+    private static String f17587U = null;
 
     /* renamed from: V, reason: collision with root package name */
-    private static String f16801V = null;
+    private static String f17588V = null;
 
     /* renamed from: W, reason: collision with root package name */
-    private static String f16802W = null;
+    private static String f17589W = null;
 
     /* renamed from: X, reason: collision with root package name */
-    private static String f16803X = null;
+    private static String f17590X = null;
     private static String Y = null;
 
     /* renamed from: Z, reason: collision with root package name */
-    private static String f16804Z = null;
+    private static String f17591Z = null;
 
     /* renamed from: a, reason: collision with root package name */
-    public static String f16805a = null;
+    public static String f17592a = null;
     private static String aa = null;
     private static String ab = null;
     private static String ac = null;
@@ -99,104 +99,104 @@ public class m {
     private static BatteryManager al = null;
 
     /* renamed from: b, reason: collision with root package name */
-    public static String f16806b = null;
+    public static String f17593b = null;
 
     /* renamed from: d, reason: collision with root package name */
-    static String f16808d = null;
+    static String f17595d = null;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f16809e = "unknown";
+    public static final String f17596e = "unknown";
 
     /* renamed from: f, reason: collision with root package name */
-    private static final String f16810f = "m";
+    private static final String f17597f = "m";
 
     /* renamed from: g, reason: collision with root package name */
-    private static String f16811g;
+    private static String f17598g;
 
     /* renamed from: h, reason: collision with root package name */
-    private static String f16812h;
+    private static String f17599h;
 
     /* renamed from: k, reason: collision with root package name */
-    private static String f16814k;
+    private static String f17601k;
 
     /* renamed from: l, reason: collision with root package name */
-    private static boolean f16815l;
+    private static boolean f17602l;
 
     /* renamed from: m, reason: collision with root package name */
-    private static int f16816m;
+    private static int f17603m;
 
     /* renamed from: n, reason: collision with root package name */
-    private static boolean f16817n;
+    private static boolean f17604n;
 
     /* renamed from: o, reason: collision with root package name */
-    private static String f16818o;
+    private static String f17605o;
 
     /* renamed from: p, reason: collision with root package name */
-    private static PackageInfo f16819p;
+    private static PackageInfo f17606p;
     private static final JSONObject i = new JSONObject();
 
     /* renamed from: j, reason: collision with root package name */
-    private static String f16813j = null;
+    private static String f17600j = null;
 
     /* renamed from: c, reason: collision with root package name */
-    public static String f16807c = "";
+    public static String f17594c = "";
 
     /* renamed from: q, reason: collision with root package name */
-    private static volatile String f16820q = null;
+    private static volatile String f17607q = null;
 
     /* renamed from: r, reason: collision with root package name */
-    private static final Object f16821r = new Object();
+    private static final Object f17608r = new Object();
 
     /* renamed from: s, reason: collision with root package name */
-    private static volatile String f16822s = null;
+    private static volatile String f17609s = null;
 
     /* renamed from: t, reason: collision with root package name */
-    private static final Object f16823t = new Object();
+    private static final Object f17610t = new Object();
 
     /* renamed from: u, reason: collision with root package name */
-    private static volatile String f16824u = null;
+    private static volatile String f17611u = null;
 
     /* renamed from: v, reason: collision with root package name */
-    private static String f16825v = "";
+    private static String f17612v = "";
 
     /* renamed from: w, reason: collision with root package name */
-    private static String f16826w = "";
+    private static String f17613w = "";
 
     /* renamed from: x, reason: collision with root package name */
-    private static String f16827x = "";
+    private static String f17614x = "";
 
     /* renamed from: y, reason: collision with root package name */
-    private static String f16828y = "";
+    private static String f17615y = "";
 
     /* renamed from: z, reason: collision with root package name */
-    private static int f16829z = 0;
+    private static int f17616z = 0;
 
     /* renamed from: A, reason: collision with root package name */
-    private static String f16781A = "";
+    private static String f17568A = "";
 
     /* renamed from: B, reason: collision with root package name */
-    private static String f16782B = "";
+    private static String f17569B = "";
 
     /* renamed from: C, reason: collision with root package name */
-    private static String f16783C = null;
+    private static String f17570C = null;
 
     /* renamed from: D, reason: collision with root package name */
-    private static Object f16784D = new Object();
+    private static Object f17571D = new Object();
 
     /* renamed from: E, reason: collision with root package name */
-    private static String f16785E = "";
+    private static String f17572E = "";
 
     /* renamed from: F, reason: collision with root package name */
-    private static String f16786F = "";
+    private static String f17573F = "";
 
     /* renamed from: G, reason: collision with root package name */
-    private static int f16787G = -1;
+    private static int f17574G = -1;
 
     /* renamed from: H, reason: collision with root package name */
-    private static int f16788H = -1;
+    private static int f17575H = -1;
 
     /* renamed from: I, reason: collision with root package name */
-    private static int f16789I = -1;
+    private static int f17576I = -1;
     private static int J = -1;
     private static String ae = "";
     private static int ai = -999;
@@ -212,10 +212,10 @@ public class m {
     public class AnonymousClass1 implements h.a {
         @Override // com.anythink.core.common.c.h.a
         public final void a(PackageInfo packageInfo) {
-            synchronized (m.f16784D) {
+            synchronized (m.f17571D) {
                 if (packageInfo != null) {
                     try {
-                        String unused = m.f16783C = packageInfo.versionName;
+                        String unused = m.f17570C = packageInfo.versionName;
                     } catch (Throwable th) {
                         throw th;
                     }
@@ -228,17 +228,17 @@ public class m {
     public class AnonymousClass3 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ Context f16832a;
+        final /* synthetic */ Context f17619a;
 
         public AnonymousClass3(Context context) {
-            this.f16832a = context;
+            this.f17619a = context;
         }
 
         @Override // java.lang.Runnable
         public final void run() {
-            WebView webView = new WebView(this.f16832a);
+            WebView webView = new WebView(this.f17619a);
             p.a(webView);
-            String unused = m.f16822s = webView.getSettings().getUserAgentString();
+            String unused = m.f17609s = webView.getSettings().getUserAgentString();
         }
     }
 
@@ -253,20 +253,20 @@ public class m {
         if (N()) {
             return "";
         }
-        if (f16803X == null) {
+        if (f17590X == null) {
             try {
-                f16803X = Build.VERSION.INCREMENTAL;
+                f17590X = Build.VERSION.INCREMENTAL;
             } catch (Throwable unused) {
-                f16803X = "";
+                f17590X = "";
             }
         }
-        String str = f16803X;
+        String str = f17590X;
         if (str == null) {
-            f16803X = "";
-        } else if (f16809e.equals(str)) {
+            f17590X = "";
+        } else if (f17596e.equals(str)) {
             return "";
         }
-        return f16803X;
+        return f17590X;
     }
 
     public static String C() {
@@ -283,7 +283,7 @@ public class m {
         String str = Y;
         if (str == null) {
             Y = "";
-        } else if (f16809e.equals(str)) {
+        } else if (f17596e.equals(str)) {
             return "";
         }
         return Y;
@@ -293,20 +293,20 @@ public class m {
         if (N()) {
             return "";
         }
-        if (f16804Z == null) {
+        if (f17591Z == null) {
             try {
-                f16804Z = Build.DISPLAY;
+                f17591Z = Build.DISPLAY;
             } catch (Throwable unused) {
-                f16804Z = "";
+                f17591Z = "";
             }
         }
-        String str = f16804Z;
+        String str = f17591Z;
         if (str == null) {
-            f16804Z = "";
-        } else if (f16809e.equals(str)) {
+            f17591Z = "";
+        } else if (f17596e.equals(str)) {
             return "";
         }
-        return f16804Z;
+        return f17591Z;
     }
 
     public static String E() {
@@ -337,28 +337,28 @@ public class m {
         String str = ab;
         if (str == null) {
             ab = "";
-        } else if (f16809e.equals(str)) {
+        } else if (f17596e.equals(str)) {
             return "";
         }
         return ab;
     }
 
     private static String G(Context context) {
-        String d2;
+        String d9;
         if (context == null) {
             return "";
         }
         try {
-            d2 = d(context);
+            d9 = d(context);
         } catch (Throwable unused) {
         }
-        if (TextUtils.isEmpty(d2)) {
+        if (TextUtils.isEmpty(d9)) {
             return "";
         }
-        if (TextUtils.isEmpty(f16808d)) {
-            f16808d = o.b(d2);
+        if (TextUtils.isEmpty(f17595d)) {
+            f17595d = o.b(d9);
         }
-        return f16808d;
+        return f17595d;
     }
 
     private static int H(Context context) {
@@ -386,17 +386,17 @@ public class m {
 
     private static void I(Context context) {
         com.anythink.core.common.d.t.b();
-        synchronized (f16784D) {
+        synchronized (f17571D) {
             try {
-                if (f16783C == null) {
+                if (f17570C == null) {
                     String str = context.getPackageManager().getPackageInfo("com.android.vending", 0).versionName;
-                    f16783C = str;
+                    f17570C = str;
                     if (str == null) {
-                        f16783C = "";
+                        f17570C = "";
                     }
                 }
             } catch (Throwable unused) {
-                f16783C = "";
+                f17570C = "";
             }
         }
     }
@@ -407,15 +407,15 @@ public class m {
 
     private static void M() {
         ArrayList arrayList = new ArrayList();
-        arrayList.add(new com.anythink.core.common.c.a(j.t.f12558a, "hw_ver"));
-        arrayList.add(new com.anythink.core.common.c.a(j.t.f12559b, "hw_hms_ver"));
-        arrayList.add(new com.anythink.core.common.c.a(j.t.f12565h, "mi_global_ver"));
+        arrayList.add(new com.anythink.core.common.c.a(j.t.f13344a, "hw_ver"));
+        arrayList.add(new com.anythink.core.common.c.a(j.t.f13345b, "hw_hms_ver"));
+        arrayList.add(new com.anythink.core.common.c.a(j.t.f13351h, "mi_global_ver"));
         com.anythink.core.common.c.b.a().a(arrayList);
     }
 
     private static boolean N() {
-        Context g4 = com.anythink.core.common.d.t.b().g();
-        return !com.anythink.core.common.d.v.a(g4).b() || J(g4) || com.anythink.core.common.d.t.b().c("device_minor_data_deny");
+        Context g9 = com.anythink.core.common.d.t.b().g();
+        return !com.anythink.core.common.d.v.a(g9).b() || J(g9) || com.anythink.core.common.d.t.b().c("device_minor_data_deny");
     }
 
     private static void O() {
@@ -424,11 +424,11 @@ public class m {
     private static void P() {
     }
 
-    private static int a(int i6) {
-        if (i6 == 20) {
+    private static int a(int i4) {
+        if (i4 == 20) {
             return 16;
         }
-        switch (i6) {
+        switch (i4) {
             case 1:
             case 2:
             case 4:
@@ -460,7 +460,7 @@ public class m {
             com.anythink.core.common.d.t.b().g();
         }
         try {
-            return !com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b() ? "" : f16785E;
+            return !com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b() ? "" : f17572E;
         } catch (Exception unused) {
             return "";
         }
@@ -474,7 +474,7 @@ public class m {
             com.anythink.core.common.d.t.b().g();
         }
         try {
-            return !com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b() ? "" : f16786F;
+            return !com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b() ? "" : f17573F;
         } catch (Exception unused) {
             return "";
         }
@@ -484,36 +484,36 @@ public class m {
         if (com.anythink.core.common.d.t.b().c("android_id") || !com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b()) {
             return "";
         }
-        if (f16820q != null) {
-            return f16820q;
+        if (f17607q != null) {
+            return f17607q;
         }
         com.anythink.core.common.d.s c9 = com.anythink.core.common.d.t.b().c();
         if (c9 != null) {
             if (context == null) {
                 context = com.anythink.core.common.d.t.b().g();
             }
-            synchronized (f16821r) {
+            synchronized (f17608r) {
                 try {
-                    if (f16820q != null) {
-                        return f16820q;
+                    if (f17607q != null) {
+                        return f17607q;
                     }
-                    String c10 = af.c(context, u.b.f12847a, u.a.f12827f, "");
-                    f16820q = c10;
+                    String c10 = af.c(context, u.b.f13633a, u.a.f13613f, "");
+                    f17607q = c10;
                     if (TextUtils.isEmpty(c10)) {
-                        f16820q = c9.getAid(context);
-                        if (!TextUtils.isEmpty(f16820q)) {
-                            af.b(context, u.b.f12847a, u.a.f12827f, f16820q);
+                        f17607q = c9.getAid(context);
+                        if (!TextUtils.isEmpty(f17607q)) {
+                            af.b(context, u.b.f13633a, u.a.f13613f, f17607q);
                         }
                     }
-                    if (f16820q == null) {
-                        f16820q = "";
+                    if (f17607q == null) {
+                        f17607q = "";
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16820q;
+        return f17607q;
     }
 
     public static String e(Context context) {
@@ -527,11 +527,11 @@ public class m {
             if (!com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b()) {
                 return "";
             }
-            if (!TextUtils.isEmpty(f16781A)) {
-                return f16781A;
+            if (!TextUtils.isEmpty(f17568A)) {
+                return f17568A;
             }
             String language = context.getResources().getConfiguration().locale.getLanguage();
-            f16781A = language;
+            f17568A = language;
             return language;
         } catch (Exception unused) {
             return "";
@@ -546,11 +546,11 @@ public class m {
             context = com.anythink.core.common.d.t.b().g();
         }
         try {
-            if (!TextUtils.isEmpty(f16828y)) {
-                return f16828y;
+            if (!TextUtils.isEmpty(f17615y)) {
+                return f17615y;
             }
             String str = B(context).versionName;
-            f16828y = str;
+            f17615y = str;
             return str;
         } catch (Throwable unused) {
             return "";
@@ -596,11 +596,11 @@ public class m {
             context = com.anythink.core.common.d.t.b().g();
         }
         try {
-            if (!TextUtils.isEmpty(f16827x)) {
-                return f16827x;
+            if (!TextUtils.isEmpty(f17614x)) {
+                return f17614x;
             }
             String str = B(context).packageName;
-            f16827x = str;
+            f17614x = str;
             return str;
         } catch (Throwable unused) {
             return "";
@@ -615,11 +615,11 @@ public class m {
             context = com.anythink.core.common.d.t.b().g();
         }
         try {
-            if (!TextUtils.isEmpty(f16805a)) {
-                return f16805a;
+            if (!TextUtils.isEmpty(f17592a)) {
+                return f17592a;
             }
             String installerPackageName = context.getPackageManager().getInstallerPackageName(m(context));
-            f16805a = installerPackageName;
+            f17592a = installerPackageName;
             return installerPackageName;
         } catch (Throwable unused) {
             return "";
@@ -647,7 +647,7 @@ public class m {
                     if (activeNetworkInfo == null) {
                         return "-1";
                     }
-                    int i6 = 1;
+                    int i4 = 1;
                     if (activeNetworkInfo.getType() == 1) {
                         return "-2";
                     }
@@ -675,19 +675,19 @@ public class m {
                                 case 12:
                                 case 14:
                                 case 15:
-                                    i6 = 3;
+                                    i4 = 3;
                                     break;
                                 case 13:
-                                    i6 = 13;
+                                    i4 = 13;
                                     break;
                                 default:
-                                    i6 = -1;
+                                    i4 = -1;
                                     break;
                             }
                         } else {
-                            i6 = 16;
+                            i4 = 16;
                         }
-                        sb.append(i6);
+                        sb.append(i4);
                         return sb.toString();
                     } catch (Throwable unused) {
                     }
@@ -702,25 +702,25 @@ public class m {
     }
 
     public static String p(Context context) {
-        synchronized (f16784D) {
+        synchronized (f17571D) {
             try {
-                String str = f16783C;
+                String str = f17570C;
                 if (str != null) {
                     if (str == null) {
-                        f16783C = "";
+                        f17570C = "";
                     }
-                    return f16783C;
+                    return f17570C;
                 }
                 com.anythink.core.common.d.t.b();
                 try {
                     String str2 = context.getPackageManager().getPackageInfo("com.android.vending", 0).versionName;
-                    f16783C = str2;
+                    f17570C = str2;
                     if (str2 == null) {
-                        f16783C = "";
+                        f17570C = "";
                     }
-                    return f16783C;
+                    return f17570C;
                 } catch (Exception unused) {
-                    f16783C = "";
+                    f17570C = "";
                     return "";
                 }
             } catch (Throwable th) {
@@ -730,20 +730,20 @@ public class m {
     }
 
     public static String q(Context context) {
-        if (TextUtils.isEmpty(f16806b)) {
+        if (TextUtils.isEmpty(f17593b)) {
             WindowManager windowManager = (WindowManager) context.getSystemService("window");
             DisplayMetrics displayMetrics = new DisplayMetrics();
             windowManager.getDefaultDisplay().getMetrics(displayMetrics);
-            f16806b = String.valueOf(displayMetrics.density);
+            f17593b = String.valueOf(displayMetrics.density);
         }
-        return f16806b;
+        return f17593b;
     }
 
     public static void r(Context context) {
         try {
-            f16822s = WebSettings.getDefaultUserAgent(context);
-            af.b(context, u.b.f12847a, u.a.f12837q, f16822s);
-            af.b(context, u.b.f12847a, u.a.f12838r, Build.VERSION.RELEASE);
+            f17609s = WebSettings.getDefaultUserAgent(context);
+            af.b(context, u.b.f13633a, u.a.f13623q, f17609s);
+            af.b(context, u.b.f13633a, u.a.f13624r, Build.VERSION.RELEASE);
         } catch (Throwable unused) {
         }
     }
@@ -780,9 +780,9 @@ public class m {
             if (com.anythink.core.common.d.t.b().c("gaid")) {
                 return "";
             }
-            String f3 = f();
-            if (!TextUtils.isEmpty(f3)) {
-                return f3;
+            String f2 = f();
+            if (!TextUtils.isEmpty(f2)) {
+                return f2;
             }
             final ExecutorService newFixedThreadPool = Executors.newFixedThreadPool(2);
             final String[] strArr = new String[1];
@@ -791,8 +791,8 @@ public class m {
                 public final void run() {
                     try {
                         try {
-                            Object invoke = C4784b.class.getMethod("getAdvertisingIdInfo", Context.class).invoke(null, context);
-                            strArr[0] = (String) C4783a.class.getMethod("getId", new Class[0]).invoke(invoke, new Object[0]);
+                            Object invoke = C4870b.class.getMethod("getAdvertisingIdInfo", Context.class).invoke(null, context);
+                            strArr[0] = (String) C4869a.class.getMethod("getId", new Class[0]).invoke(invoke, new Object[0]);
                         } catch (Throwable unused) {
                             strArr[0] = new com.anythink.core.common.d.e().a(context).a();
                         }
@@ -811,7 +811,7 @@ public class m {
             });
             try {
                 synchronized (newFixedThreadPool) {
-                    newFixedThreadPool.wait(com.anythink.basead.exoplayer.i.a.f7883f);
+                    newFixedThreadPool.wait(com.anythink.basead.exoplayer.i.a.f8669f);
                 }
                 newFixedThreadPool.shutdown();
                 String str = strArr[0];
@@ -823,10 +823,10 @@ public class m {
     }
 
     public static int u(Context context) {
-        if (f16787G == -1) {
-            f16787G = q.a(context, com.anythink.expressad.foundation.g.a.bG) ? 1 : 0;
+        if (f17574G == -1) {
+            f17574G = q.a(context, com.anythink.expressad.foundation.g.a.bG) ? 1 : 0;
         }
-        return f16787G;
+        return f17574G;
     }
 
     public static String v(Context context) {
@@ -838,33 +838,33 @@ public class m {
     }
 
     public static String x(Context context) {
-        if (f16792M == null) {
+        if (f17579M == null) {
             synchronized (v.class) {
                 try {
-                    if (f16792M == null) {
-                        f16792M = v.d(context);
+                    if (f17579M == null) {
+                        f17579M = v.d(context);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16792M;
+        return f17579M;
     }
 
     public static String y(Context context) {
-        if (f16793N == null) {
+        if (f17580N == null) {
             synchronized (v.class) {
                 try {
-                    if (f16793N == null) {
-                        f16793N = v.e(context);
+                    if (f17580N == null) {
+                        f17580N = v.e(context);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16793N;
+        return f17580N;
     }
 
     public static String z(Context context) {
@@ -906,14 +906,14 @@ public class m {
             if (q.a("android.permission.READ_PHONE_STATE", context)) {
                 String simOperator = ((TelephonyManager) context.getSystemService("phone")).getSimOperator();
                 if (q.b(simOperator) && simOperator.length() > 3) {
-                    f16785E = simOperator.substring(0, 3);
-                    f16786F = simOperator.substring(3, simOperator.length());
+                    f17572E = simOperator.substring(0, 3);
+                    f17573F = simOperator.substring(3, simOperator.length());
                 }
             }
             ArrayList arrayList = new ArrayList();
-            arrayList.add(new com.anythink.core.common.c.a(j.t.f12558a, "hw_ver"));
-            arrayList.add(new com.anythink.core.common.c.a(j.t.f12559b, "hw_hms_ver"));
-            arrayList.add(new com.anythink.core.common.c.a(j.t.f12565h, "mi_global_ver"));
+            arrayList.add(new com.anythink.core.common.c.a(j.t.f13344a, "hw_ver"));
+            arrayList.add(new com.anythink.core.common.c.a(j.t.f13345b, "hw_hms_ver"));
+            arrayList.add(new com.anythink.core.common.c.a(j.t.f13351h, "mi_global_ver"));
             com.anythink.core.common.c.b.a().a(arrayList);
             q();
             r();
@@ -958,15 +958,15 @@ public class m {
         if (context == null) {
             context = com.anythink.core.common.d.t.b().g();
         }
-        if (f16829z != 0) {
+        if (f17616z != 0) {
             StringBuilder sb = new StringBuilder();
-            sb.append(f16829z);
+            sb.append(f17616z);
             return sb.toString();
         }
         try {
-            f16829z = B(context).versionCode;
+            f17616z = B(context).versionCode;
             StringBuilder sb2 = new StringBuilder();
-            sb2.append(f16829z);
+            sb2.append(f17616z);
             return sb2.toString();
         } catch (Throwable unused) {
             return "";
@@ -977,25 +977,25 @@ public class m {
         if (N()) {
             return "";
         }
-        if (f16801V == null) {
+        if (f17588V == null) {
             try {
-                f16801V = Build.HOST;
+                f17588V = Build.HOST;
             } catch (Throwable unused) {
-                f16801V = "";
+                f17588V = "";
             }
         }
-        String str = f16801V;
+        String str = f17588V;
         if (str == null) {
-            f16801V = "";
-        } else if (f16809e.equals(str)) {
+            f17588V = "";
+        } else if (f17596e.equals(str)) {
             return "";
         }
-        return f16801V;
+        return f17588V;
     }
 
     public static JSONObject g() {
         try {
-            return new JSONObject(f16813j);
+            return new JSONObject(f17600j);
         } catch (Throwable unused) {
             return new JSONObject();
         }
@@ -1005,52 +1005,52 @@ public class m {
         if (N()) {
             return "";
         }
-        if (f16802W == null) {
+        if (f17589W == null) {
             try {
-                f16802W = Build.VERSION.CODENAME;
+                f17589W = Build.VERSION.CODENAME;
             } catch (Throwable unused) {
-                f16802W = "";
+                f17589W = "";
             }
         }
-        String str = f16802W;
+        String str = f17589W;
         if (str == null) {
-            f16802W = "";
-        } else if (f16809e.equals(str)) {
+            f17589W = "";
+        } else if (f17596e.equals(str)) {
             return "";
         }
-        return f16802W;
+        return f17589W;
     }
 
     public static String j() {
-        if (f16824u != null) {
-            return f16824u;
+        if (f17611u != null) {
+            return f17611u;
         }
         if (com.anythink.core.common.d.t.b().c(com.anythink.core.common.m.e.bw)) {
             return "";
         }
-        if (f16824u == null) {
-            synchronized (f16823t) {
-                if (f16824u == null) {
+        if (f17611u == null) {
+            synchronized (f17610t) {
+                if (f17611u == null) {
                     try {
-                        f16824u = System.getProperty("http.agent");
+                        f17611u = System.getProperty("http.agent");
                     } catch (Throwable unused) {
                     }
                 }
             }
         }
-        if (f16824u == null) {
-            f16824u = "";
+        if (f17611u == null) {
+            f17611u = "";
         }
-        return f16824u;
+        return f17611u;
     }
 
     public static String k() {
-        if (!TextUtils.isEmpty(f16807c)) {
-            return f16807c;
+        if (!TextUtils.isEmpty(f17594c)) {
+            return f17594c;
         }
         String O8 = com.anythink.core.common.d.t.b().O();
         if (!TextUtils.isEmpty(O8)) {
-            f16807c = O8;
+            f17594c = O8;
             return O8;
         }
         String O9 = com.anythink.core.common.d.t.b().O();
@@ -1078,7 +1078,7 @@ public class m {
             } catch (Throwable unused4) {
             }
         }
-        f16807c = O9;
+        f17594c = O9;
         return O9;
     }
 
@@ -1086,59 +1086,59 @@ public class m {
         if (N()) {
             return "";
         }
-        if (TextUtils.isEmpty(f16796Q)) {
+        if (TextUtils.isEmpty(f17583Q)) {
             try {
-                f16796Q = Build.TAGS;
+                f17583Q = Build.TAGS;
             } catch (Throwable unused) {
             }
         }
-        String str = f16796Q;
+        String str = f17583Q;
         if (str == null) {
-            f16796Q = "";
-        } else if (f16809e.equals(str)) {
+            f17583Q = "";
+        } else if (f17596e.equals(str)) {
             return "";
         }
-        return f16796Q;
+        return f17583Q;
     }
 
     public static String v() {
         if (N()) {
             return "";
         }
-        if (f16797R == null) {
+        if (f17584R == null) {
             try {
-                f16797R = Build.USER;
+                f17584R = Build.USER;
             } catch (Throwable unused) {
-                f16797R = "";
+                f17584R = "";
             }
         }
-        String str = f16797R;
+        String str = f17584R;
         if (str == null) {
-            f16797R = "";
-        } else if (f16809e.equals(str)) {
+            f17584R = "";
+        } else if (f17596e.equals(str)) {
             return "";
         }
-        return f16797R;
+        return f17584R;
     }
 
     public static String w() {
         if (N()) {
             return "";
         }
-        if (f16798S == null) {
+        if (f17585S == null) {
             try {
-                f16798S = Build.RADIO;
+                f17585S = Build.RADIO;
             } catch (Throwable unused) {
-                f16798S = "";
+                f17585S = "";
             }
         }
-        String str = f16798S;
+        String str = f17585S;
         if (str == null) {
-            f16798S = "";
-        } else if (f16809e.equals(str)) {
+            f17585S = "";
+        } else if (f17596e.equals(str)) {
             return "";
         }
-        return f16798S;
+        return f17585S;
     }
 
     public static String b() {
@@ -1161,57 +1161,57 @@ public class m {
                 return "";
             }
             try {
-                if (TextUtils.isEmpty(f16782B)) {
+                if (TextUtils.isEmpty(f17569B)) {
                     String displayName = TimeZone.getDefault().getDisplayName(false, 0, Locale.ENGLISH);
-                    f16782B = displayName;
+                    f17569B = displayName;
                     return displayName;
                 }
             } catch (Throwable unused) {
             }
-            return f16782B;
+            return f17569B;
         } catch (Exception unused2) {
             return "";
         }
     }
 
     public static int l() {
-        if (f16788H == -1) {
+        if (f17575H == -1) {
             try {
                 Class.forName("com.tencent.mm.opensdk.openapi.WXAPIFactory");
                 Class.forName("com.tencent.mm.opensdk.modelbiz.WXLaunchMiniProgram");
-                f16788H = 1;
+                f17575H = 1;
             } catch (Throwable unused) {
-                f16788H = 0;
+                f17575H = 0;
             }
         }
-        return f16788H;
+        return f17575H;
     }
 
     public static String r() {
         if (k("isroot")) {
             return "";
         }
-        if (f16791L == null) {
+        if (f17578L == null) {
             synchronized (v.class) {
                 try {
-                    if (f16791L == null) {
-                        f16791L = v.a();
+                    if (f17578L == null) {
+                        f17578L = v.a();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16791L;
+        return f17578L;
     }
 
     public static double E(Context context) {
         if (k("battery")) {
             return 0.0d;
         }
-        double d2 = ak;
-        if (d2 != 0.0d) {
-            return d2;
+        double d9 = ak;
+        if (d9 != 0.0d) {
+            return d9;
         }
         if (al == null) {
             al = (BatteryManager) context.getSystemService("batterymanager");
@@ -1229,17 +1229,17 @@ public class m {
             if (!com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b()) {
                 return "";
             }
-            if (f16812h == null) {
-                f16812h = af.c(com.anythink.core.common.d.t.b().g(), u.b.f12847a, u.a.f12825d, "");
+            if (f17599h == null) {
+                f17599h = af.c(com.anythink.core.common.d.t.b().g(), u.b.f13633a, u.a.f13611d, "");
             }
-            return f16812h;
+            return f17599h;
         } catch (Exception unused) {
             return "";
         }
     }
 
     public static String G() {
-        return f16818o;
+        return f17605o;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:63:0x00a7, code lost:
@@ -1317,14 +1317,14 @@ public class m {
 
     public static synchronized String i() {
         synchronized (m.class) {
-            if (!TextUtils.isEmpty(f16822s)) {
-                return f16822s;
+            if (!TextUtils.isEmpty(f17609s)) {
+                return f17609s;
             }
-            if (f16822s == null) {
-                String c9 = af.c(com.anythink.core.common.d.t.b().g(), u.b.f12847a, u.a.f12837q, "");
-                f16822s = c9;
+            if (f17609s == null) {
+                String c9 = af.c(com.anythink.core.common.d.t.b().g(), u.b.f13633a, u.a.f13623q, "");
+                f17609s = c9;
                 if (!TextUtils.isEmpty(c9)) {
-                    return f16822s;
+                    return f17609s;
                 }
             }
             return null;
@@ -1333,93 +1333,93 @@ public class m {
 
     public static String m() {
         Object obj;
-        String d2 = com.anythink.core.common.d.t.b().d();
-        if (!TextUtils.isEmpty(d2)) {
-            return d2;
+        String d9 = com.anythink.core.common.d.t.b().d();
+        if (!TextUtils.isEmpty(d9)) {
+            return d9;
         }
         try {
-            Map<String, Object> m4 = com.anythink.core.common.d.t.b().m();
-            if (m4 != null && (obj = m4.get(ATAdConst.KEY.WECHAT_APPID)) != null) {
+            Map<String, Object> m9 = com.anythink.core.common.d.t.b().m();
+            if (m9 != null && (obj = m9.get(ATAdConst.KEY.WECHAT_APPID)) != null) {
                 return obj.toString();
             }
         } catch (Throwable unused) {
         }
-        com.anythink.core.d.b g4 = D.y.g(D.y.h());
-        if (g4 != null) {
-            return g4.aX();
+        com.anythink.core.d.b k9 = com.IceFishing.LiveIceFishing.k.k(com.IceFishing.LiveIceFishing.k.l());
+        if (k9 != null) {
+            return k9.aX();
         }
         return null;
     }
 
     public static int n() {
-        int i6 = f16789I;
-        if (i6 != -1) {
-            return i6;
+        int i4 = f17576I;
+        if (i4 != -1) {
+            return i4;
         }
-        f16789I = 0;
+        f17576I = 0;
         try {
-            f16789I = ((Integer) Class.forName("com.tencent.mm.opensdk.constants.Build").getField("SDK_INT").get(null)).intValue();
+            f17576I = ((Integer) Class.forName("com.tencent.mm.opensdk.constants.Build").getField("SDK_INT").get(null)).intValue();
         } catch (Throwable unused) {
         }
-        return f16789I;
+        return f17576I;
     }
 
     public static String q() {
         if (k("cpu")) {
             return "";
         }
-        if (f16790K == null) {
+        if (f17577K == null) {
             synchronized (v.class) {
                 try {
-                    if (f16790K == null) {
-                        f16790K = v.b();
+                    if (f17577K == null) {
+                        f17577K = v.b();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16790K;
+        return f17577K;
     }
 
     public static String x() {
         if (N()) {
             return "";
         }
-        if (f16799T == null) {
+        if (f17586T == null) {
             try {
-                f16799T = Build.BOOTLOADER;
+                f17586T = Build.BOOTLOADER;
             } catch (Throwable unused) {
-                f16799T = "";
+                f17586T = "";
             }
         }
-        String str = f16799T;
+        String str = f17586T;
         if (str == null) {
-            f16799T = "";
-        } else if (f16809e.equals(str)) {
+            f17586T = "";
+        } else if (f17596e.equals(str)) {
             return "";
         }
-        return f16799T;
+        return f17586T;
     }
 
     public static String y() {
         if (N()) {
             return "";
         }
-        if (f16800U == null) {
+        if (f17587U == null) {
             try {
-                f16800U = Build.HARDWARE;
+                f17587U = Build.HARDWARE;
             } catch (Throwable unused) {
-                f16800U = "";
+                f17587U = "";
             }
         }
-        String str = f16800U;
+        String str = f17587U;
         if (str == null) {
-            f16800U = "";
-        } else if (f16809e.equals(str)) {
+            f17587U = "";
+        } else if (f17596e.equals(str)) {
             return "";
         }
-        return f16800U;
+        return f17587U;
     }
 
     public static String b(String str) {
@@ -1439,9 +1439,9 @@ public class m {
                 if (!com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b()) {
                     return "";
                 }
-                String i6 = i();
-                if (!TextUtils.isEmpty(i6)) {
-                    return i6;
+                String i4 = i();
+                if (!TextUtils.isEmpty(i4)) {
+                    return i4;
                 }
                 String str = Build.VERSION.RELEASE;
                 String a9 = a();
@@ -1457,13 +1457,13 @@ public class m {
     }
 
     public static PackageInfo B(Context context) {
-        if (f16819p == null) {
+        if (f17606p == null) {
             try {
-                f16819p = context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
+                f17606p = context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
             } catch (Throwable unused) {
             }
         }
-        return f16819p;
+        return f17606p;
     }
 
     public static int C(Context context) {
@@ -1472,9 +1472,9 @@ public class m {
             ai = -1;
         }
         if (!k("s_c") && !J(context)) {
-            int i6 = ai;
-            if (i6 != -999) {
-                return i6;
+            int i4 = ai;
+            if (i4 != -999) {
+                return i4;
             }
             if (q.a("android.permission.READ_PHONE_STATE", context)) {
                 TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService("phone");
@@ -1501,9 +1501,9 @@ public class m {
         if (com.anythink.core.common.d.t.b().c("u_a")) {
             return -1;
         }
-        int i6 = ai;
-        if (i6 != -1) {
-            return i6;
+        int i4 = ai;
+        if (i4 != -1) {
+            return i4;
         }
         if (Settings.Global.getInt(context.getContentResolver(), "adb_enabled", 0) == 1) {
             aj = 2;
@@ -1517,9 +1517,9 @@ public class m {
         if (com.anythink.core.common.d.t.b().c("d_s")) {
             return -1;
         }
-        int i6 = am;
-        if (i6 != -1) {
-            return i6;
+        int i4 = am;
+        if (i4 != -1) {
+            return i4;
         }
         if (Settings.Secure.getInt(context.getContentResolver(), "development_settings_enabled", 0) != 0) {
             am = 2;
@@ -1533,10 +1533,10 @@ public class m {
         if (com.anythink.core.common.d.t.b().c("os_vn")) {
             return "";
         }
-        if (TextUtils.isEmpty(f16825v)) {
-            f16825v = Build.VERSION.RELEASE;
+        if (TextUtils.isEmpty(f17612v)) {
+            f17612v = Build.VERSION.RELEASE;
         }
-        return f16825v;
+        return f17612v;
     }
 
     public static PackageInfo b(Context context, String str) {
@@ -1627,9 +1627,9 @@ public class m {
     }
 
     public static int c(String str) {
-        int i6 = J;
-        if (i6 != -1) {
-            return i6;
+        int i4 = J;
+        if (i4 != -1) {
+            return i4;
         }
         J = 0;
         try {
@@ -1643,27 +1643,27 @@ public class m {
         if (com.anythink.core.common.d.t.b().c("amazon_id") || !com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b()) {
             return "";
         }
-        if (f16814k == null) {
-            f16814k = af.c(com.anythink.core.common.d.t.b().g(), u.b.f12847a, u.a.f12826e, "");
+        if (f17601k == null) {
+            f17601k = af.c(com.anythink.core.common.d.t.b().g(), u.b.f13633a, u.a.f13612e, "");
         }
-        if (TextUtils.isEmpty(f16814k) && !f16815l) {
+        if (TextUtils.isEmpty(f17601k) && !f17602l) {
             try {
-                f16815l = true;
+                f17602l = true;
                 String string = Settings.Secure.getString(com.anythink.core.common.d.t.b().g().getContentResolver(), "advertising_id");
-                f16814k = string;
+                f17601k = string;
                 if (!TextUtils.isEmpty(string)) {
-                    af.b(com.anythink.core.common.d.t.b().g(), u.b.f12847a, u.a.f12826e, f16814k);
+                    af.b(com.anythink.core.common.d.t.b().g(), u.b.f13633a, u.a.f13612e, f17601k);
                 } else {
-                    f16814k = "";
+                    f17601k = "";
                 }
             } catch (Throwable unused) {
             }
         }
-        return f16814k;
+        return f17601k;
     }
 
     public static void e(String str) {
-        f16818o = str;
+        f17605o = str;
     }
 
     public static /* synthetic */ boolean i(String str) {
@@ -1674,19 +1674,19 @@ public class m {
         if (!com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b()) {
             return -1;
         }
-        if (f16816m <= 0 && !f16817n) {
-            int i6 = 1;
+        if (f17603m <= 0 && !f17604n) {
+            int i4 = 1;
             try {
-                f16817n = true;
+                f17604n = true;
                 if (Settings.Secure.getInt(com.anythink.core.common.d.t.b().g().getContentResolver(), "limit_ad_tracking") != 0) {
-                    i6 = 2;
+                    i4 = 2;
                 }
-                f16816m = i6;
+                f17603m = i4;
             } catch (Throwable unused) {
-                f16816m = -1;
+                f17603m = -1;
             }
         }
-        return f16816m;
+        return f17603m;
     }
 
     private static boolean j(String str) {
@@ -1697,29 +1697,29 @@ public class m {
         if (N()) {
             return "";
         }
-        if (f16795P == null) {
+        if (f17582P == null) {
             try {
-                f16795P = Build.TYPE;
+                f17582P = Build.TYPE;
             } catch (Throwable unused) {
             }
         }
-        String str = f16795P;
+        String str = f17582P;
         if (str == null) {
-            f16795P = "";
-        } else if (f16809e.equals(str)) {
+            f17582P = "";
+        } else if (f17596e.equals(str)) {
             return "";
         }
-        return f16795P;
+        return f17582P;
     }
 
     public static String s() {
         if (k(com.anythink.core.common.m.e.aO)) {
             return "";
         }
-        if (f16794O == null) {
-            f16794O = q.a() ? "1" : "0";
+        if (f17581O == null) {
+            f17581O = q.a() ? "1" : "0";
         }
-        return f16794O;
+        return f17581O;
     }
 
     public static String c(Context context, String str) {
@@ -1758,10 +1758,10 @@ public class m {
             if (!com.anythink.core.common.d.v.a(com.anythink.core.common.d.t.b().g()).b()) {
                 return "";
             }
-            if (TextUtils.isEmpty(f16826w)) {
-                f16826w = String.valueOf(Build.VERSION.SDK_INT);
+            if (TextUtils.isEmpty(f17613w)) {
+                f17613w = String.valueOf(Build.VERSION.SDK_INT);
             }
-            return f16826w;
+            return f17613w;
         } catch (Exception unused) {
             return "";
         }
@@ -1822,11 +1822,11 @@ public class m {
     }
 
     public static void a(String str) {
-        f16812h = str;
-        af.b(com.anythink.core.common.d.t.b().g(), u.b.f12847a, u.a.f12825d, f16812h);
+        f17599h = str;
+        af.b(com.anythink.core.common.d.t.b().g(), u.b.f13633a, u.a.f13611d, f17599h);
     }
 
-    public static void a(final int i6, final String str) {
+    public static void a(final int i4, final String str) {
         if (TextUtils.isEmpty(str)) {
             return;
         }
@@ -1834,12 +1834,12 @@ public class m {
             @Override // java.lang.Runnable
             public final void run() {
                 synchronized (m.i) {
-                    if (m.i.has(String.valueOf(i6))) {
+                    if (m.i.has(String.valueOf(i4))) {
                         return;
                     }
                     try {
-                        m.i.put(String.valueOf(i6), str);
-                        String unused = m.f16813j = m.i.toString();
+                        m.i.put(String.valueOf(i4), str);
+                        String unused = m.f17600j = m.i.toString();
                     } catch (Throwable unused2) {
                     }
                 }

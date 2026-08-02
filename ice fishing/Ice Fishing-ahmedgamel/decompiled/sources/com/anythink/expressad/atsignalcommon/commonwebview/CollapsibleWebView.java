@@ -25,20 +25,20 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class CollapsibleWebView extends CommonWebView {
 
     /* renamed from: e, reason: collision with root package name */
-    private static final String f17965e = "CollapsibleWebView";
+    private static final String f18752e = "CollapsibleWebView";
 
     /* renamed from: f, reason: collision with root package name */
-    private CopyOnWriteArrayList<CommonWebView.a> f17966f;
+    private CopyOnWriteArrayList<CommonWebView.a> f18753f;
 
     /* renamed from: g, reason: collision with root package name */
-    private CopyOnWriteArrayList<CommonWebView.a> f17967g;
+    private CopyOnWriteArrayList<CommonWebView.a> f18754g;
 
     /* renamed from: h, reason: collision with root package name */
-    private CopyOnWriteArrayList<a> f17968h;
+    private CopyOnWriteArrayList<a> f18755h;
     private String i;
 
     /* renamed from: j, reason: collision with root package name */
-    private String f17969j;
+    private String f18756j;
 
     /* renamed from: com.anythink.expressad.atsignalcommon.commonwebview.CollapsibleWebView$1, reason: invalid class name */
     public class AnonymousClass1 implements View.OnClickListener {
@@ -82,49 +82,49 @@ public class CollapsibleWebView extends CommonWebView {
 
     private ToolBar.b a() {
         ToolBar.b bVar = new ToolBar.b("doCollapse");
-        bVar.f18013d = false;
-        bVar.f18012c = "arrow_down_white_blackbg";
-        bVar.f18014e = new AnonymousClass1();
+        bVar.f18800d = false;
+        bVar.f18799c = "arrow_down_white_blackbg";
+        bVar.f18801e = new AnonymousClass1();
         return bVar;
     }
 
     private ToolBar.b b() {
         ToolBar.b bVar = new ToolBar.b("doSpand");
-        bVar.f18012c = "arrow_up_black";
-        bVar.f18014e = new AnonymousClass2();
+        bVar.f18799c = "arrow_up_black";
+        bVar.f18801e = new AnonymousClass2();
         return bVar;
     }
 
     private void c() {
-        Iterator<a> it = this.f17968h.iterator();
+        Iterator<a> it = this.f18755h.iterator();
         while (it.hasNext()) {
             it.next().a();
         }
     }
 
     private void d() {
-        Iterator<a> it = this.f17968h.iterator();
+        Iterator<a> it = this.f18755h.iterator();
         while (it.hasNext()) {
             it.next();
         }
     }
 
     private void e() {
-        Iterator<a> it = this.f17968h.iterator();
+        Iterator<a> it = this.f18755h.iterator();
         while (it.hasNext()) {
             it.next().c();
         }
     }
 
     private void f() {
-        Iterator<CommonWebView.a> it = this.f17966f.iterator();
+        Iterator<CommonWebView.a> it = this.f18753f.iterator();
         while (it.hasNext()) {
             it.next().a();
         }
     }
 
     private void g() {
-        Iterator<CommonWebView.a> it = this.f17967g.iterator();
+        Iterator<CommonWebView.a> it = this.f18754g.iterator();
         while (it.hasNext()) {
             it.next().a();
         }
@@ -135,29 +135,29 @@ public class CollapsibleWebView extends CommonWebView {
     }
 
     public String getExpandIconName() {
-        return this.f17969j;
+        return this.f18756j;
     }
 
     @Override // com.anythink.expressad.atsignalcommon.commonwebview.CommonWebView
     public void init() {
         super.init();
-        this.f17966f = new CopyOnWriteArrayList<>();
-        this.f17967g = new CopyOnWriteArrayList<>();
-        this.f17968h = new CopyOnWriteArrayList<>();
+        this.f18753f = new CopyOnWriteArrayList<>();
+        this.f18754g = new CopyOnWriteArrayList<>();
+        this.f18755h = new CopyOnWriteArrayList<>();
         this.i = "arrow_down_white_blackbg";
-        this.f17969j = "arrow_up_white";
+        this.f18756j = "arrow_up_white";
         useDeeplink();
         initWebViewListener();
         useProgressBar();
         ArrayList<ToolBar.b> arrayList = new ArrayList<>();
         ToolBar.b bVar = new ToolBar.b("doCollapse");
-        bVar.f18013d = false;
-        bVar.f18012c = "arrow_down_white_blackbg";
-        bVar.f18014e = new AnonymousClass1();
+        bVar.f18800d = false;
+        bVar.f18799c = "arrow_down_white_blackbg";
+        bVar.f18801e = new AnonymousClass1();
         arrayList.add(bVar);
         ToolBar.b bVar2 = new ToolBar.b("doSpand");
-        bVar2.f18012c = "arrow_up_black";
-        bVar2.f18014e = new AnonymousClass2();
+        bVar2.f18799c = "arrow_up_black";
+        bVar2.f18801e = new AnonymousClass2();
         arrayList.add(bVar2);
         useDefaultToolBar();
         useCustomizedToolBar(arrayList, true);
@@ -174,18 +174,18 @@ public class CollapsibleWebView extends CommonWebView {
         addWebViewClient(new WebViewClient() { // from class: com.anythink.expressad.atsignalcommon.commonwebview.CollapsibleWebView.4
 
             /* renamed from: a, reason: collision with root package name */
-            Boolean f17973a = Boolean.FALSE;
+            Boolean f18760a = Boolean.FALSE;
 
             /* renamed from: b, reason: collision with root package name */
-            String f17974b = "";
+            String f18761b = "";
 
             @Override // android.webkit.WebViewClient
             public final void onPageFinished(WebView webView, String str) {
-                if (this.f17973a.booleanValue()) {
+                if (this.f18760a.booleanValue()) {
                     return;
                 }
                 CollapsibleWebView.d(CollapsibleWebView.this);
-                this.f17973a = Boolean.FALSE;
+                this.f18760a = Boolean.FALSE;
             }
 
             @Override // android.webkit.WebViewClient
@@ -193,7 +193,7 @@ public class CollapsibleWebView extends CommonWebView {
                 if (TextUtils.isEmpty(str)) {
                     return;
                 }
-                this.f17974b = str;
+                this.f18761b = str;
             }
 
             @Override // android.webkit.WebViewClient
@@ -202,8 +202,8 @@ public class CollapsibleWebView extends CommonWebView {
                 hashMap.put("type", "error");
                 hashMap.put("url", str2);
                 hashMap.put("description", str);
-                if (!this.f17973a.booleanValue() && this.f17974b.equals(str2)) {
-                    this.f17973a = Boolean.TRUE;
+                if (!this.f18760a.booleanValue() && this.f18761b.equals(str2)) {
+                    this.f18760a = Boolean.TRUE;
                     CollapsibleWebView.a(CollapsibleWebView.this, hashMap);
                 }
                 CollapsibleWebView.e(CollapsibleWebView.this);
@@ -221,8 +221,8 @@ public class CollapsibleWebView extends CommonWebView {
                 sb3.append(webResourceResponse.getStatusCode());
                 hashMap.put("statusCode", sb3.toString());
                 hashMap.put("description", "http error");
-                if (!this.f17973a.booleanValue() && (this.f17974b.equals(sb2) || TextUtils.isEmpty(this.f17974b))) {
-                    this.f17973a = Boolean.TRUE;
+                if (!this.f18760a.booleanValue() && (this.f18761b.equals(sb2) || TextUtils.isEmpty(this.f18761b))) {
+                    this.f18760a = Boolean.TRUE;
                     CollapsibleWebView.a(CollapsibleWebView.this, hashMap);
                 }
                 CollapsibleWebView.e(CollapsibleWebView.this);
@@ -234,9 +234,9 @@ public class CollapsibleWebView extends CommonWebView {
                 hashMap.put("type", "ssl");
                 hashMap.put("url", sslError.getUrl());
                 hashMap.put("description", "ssl error");
-                if (!this.f17973a.booleanValue()) {
-                    if (this.f17974b.equals(sslError.getUrl())) {
-                        this.f17973a = Boolean.TRUE;
+                if (!this.f18760a.booleanValue()) {
+                    if (this.f18761b.equals(sslError.getUrl())) {
+                        this.f18760a = Boolean.TRUE;
                         CollapsibleWebView.a(CollapsibleWebView.this, hashMap);
                     }
                 }
@@ -255,25 +255,25 @@ public class CollapsibleWebView extends CommonWebView {
     }
 
     public void setCollapseListener(CommonWebView.a aVar) {
-        this.f17966f.add(aVar);
+        this.f18753f.add(aVar);
     }
 
-    public void setCustomizedToolBarMarginWidthPixel(int i, int i6, int i9, int i10) {
-        RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) this.f17977a.getLayoutParams();
-        layoutParams.setMargins(i, i6, i9, i10);
-        this.f17977a.setLayoutParams(layoutParams);
+    public void setCustomizedToolBarMarginWidthPixel(int i, int i4, int i6, int i9) {
+        RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) this.f18764a.getLayoutParams();
+        layoutParams.setMargins(i, i4, i6, i9);
+        this.f18764a.setLayoutParams(layoutParams);
     }
 
     public void setExpandIconName(String str) {
-        this.f17969j = str;
+        this.f18756j = str;
     }
 
     public void setExpandListener(CommonWebView.a aVar) {
-        this.f17967g.add(aVar);
+        this.f18754g.add(aVar);
     }
 
     public void setPageLoadListener(a aVar) {
-        this.f17968h.add(aVar);
+        this.f18755h.add(aVar);
     }
 
     public CollapsibleWebView(Context context, AttributeSet attributeSet, int i) {
@@ -281,7 +281,7 @@ public class CollapsibleWebView extends CommonWebView {
     }
 
     public static /* synthetic */ void d(CollapsibleWebView collapsibleWebView) {
-        Iterator<a> it = collapsibleWebView.f17968h.iterator();
+        Iterator<a> it = collapsibleWebView.f18755h.iterator();
         while (it.hasNext()) {
             it.next().a();
         }
@@ -292,42 +292,42 @@ public class CollapsibleWebView extends CommonWebView {
     }
 
     public static /* synthetic */ void c(CollapsibleWebView collapsibleWebView) {
-        Iterator<a> it = collapsibleWebView.f17968h.iterator();
+        Iterator<a> it = collapsibleWebView.f18755h.iterator();
         while (it.hasNext()) {
             it.next().c();
         }
     }
 
     public static /* synthetic */ void e(CollapsibleWebView collapsibleWebView) {
-        Iterator<a> it = collapsibleWebView.f17968h.iterator();
+        Iterator<a> it = collapsibleWebView.f18755h.iterator();
         while (it.hasNext()) {
             it.next();
         }
     }
 
     public static /* synthetic */ void b(CollapsibleWebView collapsibleWebView) {
-        Iterator<CommonWebView.a> it = collapsibleWebView.f17967g.iterator();
+        Iterator<CommonWebView.a> it = collapsibleWebView.f18754g.iterator();
         while (it.hasNext()) {
             it.next().a();
         }
     }
 
     private void a(Map<String, String> map) {
-        Iterator<a> it = this.f17968h.iterator();
+        Iterator<a> it = this.f18755h.iterator();
         while (it.hasNext()) {
             it.next().a(map);
         }
     }
 
     public static /* synthetic */ void a(CollapsibleWebView collapsibleWebView) {
-        Iterator<CommonWebView.a> it = collapsibleWebView.f17966f.iterator();
+        Iterator<CommonWebView.a> it = collapsibleWebView.f18753f.iterator();
         while (it.hasNext()) {
             it.next().a();
         }
     }
 
     public static /* synthetic */ void a(CollapsibleWebView collapsibleWebView, Map map) {
-        Iterator<a> it = collapsibleWebView.f17968h.iterator();
+        Iterator<a> it = collapsibleWebView.f18755h.iterator();
         while (it.hasNext()) {
             it.next().a(map);
         }

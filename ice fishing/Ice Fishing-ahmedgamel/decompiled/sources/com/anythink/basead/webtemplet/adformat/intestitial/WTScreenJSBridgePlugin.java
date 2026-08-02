@@ -7,10 +7,10 @@ import com.anythink.basead.webtemplet.adformat.WTCommonJSBridgePlugin;
 public class WTScreenJSBridgePlugin extends WTCommonJSBridgePlugin {
 
     /* renamed from: c, reason: collision with root package name */
-    private final String f11473c = getClass().getSimpleName();
+    private final String f12259c = getClass().getSimpleName();
 
     /* renamed from: d, reason: collision with root package name */
-    private a f11474d;
+    private a f12260d;
 
     @Override // com.anythink.basead.webtemplet.adformat.WTCommonJSBridgePlugin, com.anythink.basead.webtemplet.d
     public void initialize(WTWebView wTWebView) {
@@ -19,7 +19,7 @@ public class WTScreenJSBridgePlugin extends WTCommonJSBridgePlugin {
             if (wTWebView.getJsCommunicationObject() == null || !(wTWebView.getJsCommunicationObject() instanceof a)) {
                 return;
             }
-            this.f11474d = (a) wTWebView.getJsCommunicationObject();
+            this.f12260d = (a) wTWebView.getJsCommunicationObject();
         } catch (Throwable th) {
             th.getMessage();
         }

@@ -6,12 +6,12 @@ package O7;
 public final class n {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final /* synthetic */ n[] f2389n;
+    public static final /* synthetic */ n[] f2320n;
 
     static {
         n[] nVarArr = {new n("PUBLIC", 0), new n("PROTECTED", 1), new n("INTERNAL", 2), new n("PRIVATE", 3)};
-        f2389n = nVarArr;
-        com.bumptech.glide.e.b(nVarArr);
+        f2320n = nVarArr;
+        X2.a.h(nVarArr);
     }
 
     public static n valueOf(String str) {
@@ -19,6 +19,6 @@ public final class n {
     }
 
     public static n[] values() {
-        return (n[]) f2389n.clone();
+        return (n[]) f2320n.clone();
     }
 }

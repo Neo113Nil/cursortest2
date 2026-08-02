@@ -4,17 +4,17 @@ package r0;
 public final class i {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f40330a;
+    public final int f40141a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final byte[] f40331b;
+    public final byte[] f40142b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final boolean f40332c;
+    public final boolean f40143c;
 
-    public i(int i, boolean z3, byte[] bArr) {
-        this.f40330a = i;
-        this.f40331b = bArr;
-        this.f40332c = z3;
+    public i(int i, boolean z6, byte[] bArr) {
+        this.f40141a = i;
+        this.f40142b = bArr;
+        this.f40143c = z6;
     }
 }

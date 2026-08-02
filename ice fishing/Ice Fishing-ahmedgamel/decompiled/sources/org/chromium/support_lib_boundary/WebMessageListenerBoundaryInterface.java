@@ -6,5 +6,5 @@ import java.lang.reflect.InvocationHandler;
 
 /* loaded from: classes2.dex */
 public interface WebMessageListenerBoundaryInterface extends FeatureFlagHolderBoundaryInterface {
-    void onPostMessage(WebView webView, InvocationHandler invocationHandler, Uri uri, boolean z3, InvocationHandler invocationHandler2);
+    void onPostMessage(WebView webView, InvocationHandler invocationHandler, Uri uri, boolean z6, InvocationHandler invocationHandler2);
 }

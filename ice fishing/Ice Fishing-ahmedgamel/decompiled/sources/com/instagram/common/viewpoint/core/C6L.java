@@ -6,17 +6,17 @@ public final class C6L {
     public static String[] A05 = {"kbrCq6pMhmUkuvpwyFR35DcipjG4S8CW", "oaW9l9tdb", "0TRcVMdqb51VWoFscAzJe", "b9KyZslhVmWVmt6Bq2rIk", "ASY6aJ5KLIO5E4dZs7qVgEBqztuPzXSE", "", "9Pc37QLTRQIuoUm", "qelQYpgVCE3t9Ri2JAAORJatu68jVLQj"};
     public final int A00;
     public final int A01;
-    public final C2400qI A02;
-    public final C2400qI A03;
+    public final C2420qI A02;
+    public final C2420qI A03;
     public final String A04;
 
-    public C6L(String str, C2400qI c2400qI, C2400qI c2400qI2, int i, int i6) {
-        AbstractC06243y.A07(i == 0 || i6 == 0);
-        this.A04 = AbstractC06243y.A05(str);
-        this.A03 = (C2400qI) AbstractC06243y.A01(c2400qI);
-        this.A02 = (C2400qI) AbstractC06243y.A01(c2400qI2);
+    public C6L(String str, C2420qI c2420qI, C2420qI c2420qI2, int i, int i4) {
+        AbstractC06443y.A07(i == 0 || i4 == 0);
+        this.A04 = AbstractC06443y.A05(str);
+        this.A03 = (C2420qI) AbstractC06443y.A01(c2420qI);
+        this.A02 = (C2420qI) AbstractC06443y.A01(c2420qI2);
         this.A01 = i;
-        this.A00 = i6;
+        this.A00 = i4;
     }
 
     public final boolean equals(Object obj) {

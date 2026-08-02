@@ -18,32 +18,32 @@ public final class C2E<E> extends BP<E> {
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2E != com.google.common.collect.RegularImmutableList<E> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
     public final int A0G() {
         return this.A01;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2E != com.google.common.collect.RegularImmutableList<E> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
     public final int A0H() {
         return 0;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2E != com.google.common.collect.RegularImmutableList<E> */
-    @Override // com.instagram.common.viewpoint.core.BP, com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.BP, com.instagram.common.viewpoint.core.AbstractC2303oO
     public final int A0I(Object[] dst, int dstOff) {
         System.arraycopy(this.A00, 0, dst, dstOff, this.A01);
         return this.A01 + dstOff;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2E != com.google.common.collect.RegularImmutableList<E> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
     public final boolean A0K() {
         return false;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2E != com.google.common.collect.RegularImmutableList<E> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2283oO
+    @Override // com.instagram.common.viewpoint.core.AbstractC2303oO
     public final Object[] A0L() {
         return this.A00;
     }
@@ -51,7 +51,7 @@ public final class C2E<E> extends BP<E> {
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2E != com.google.common.collect.RegularImmutableList<E> */
     @Override // java.util.List
     public final E get(int i) {
-        AbstractC2070ki.A00(i, this.A01);
+        AbstractC2090ki.A00(i, this.A01);
         return (E) Objects.requireNonNull(this.A00[i]);
     }
 

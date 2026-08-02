@@ -3,44 +3,24 @@ package com.google.android.gms.internal.ads;
 import android.content.Context;
 import android.text.TextUtils;
 import java.util.regex.Pattern;
-import q2.C4920z0;
+import s2.C4969z0;
 
 /* loaded from: classes2.dex */
 public interface Su {
-    static Su e(Context context, int i, int i6, q2.c1 c1Var) {
-        boolean matches;
-        Su g4 = g(context, i);
-        if (g4 instanceof Tu) {
-            g4.c();
-            g4.k(i6);
-            g4.v(com.bumptech.glide.d.o(c1Var.f40102F));
-            String str = c1Var.f40105I;
-            if (TextUtils.isEmpty(str)) {
-                matches = false;
-            } else {
-                matches = Pattern.matches((String) q2.r.f40207e.f40210c.a(AbstractC3569ma.X9), str);
-            }
-            if (matches) {
-                g4.b(str);
-            }
-        }
-        return g4;
-    }
-
-    static Su g(Context context, int i) {
+    static Su e(Context context, int i) {
         boolean booleanValue;
         if (Wu.a()) {
-            int i6 = i - 2;
-            if (i6 == 20 || i6 == 21) {
-                booleanValue = ((Boolean) AbstractC2633Ka.f25930e.r()).booleanValue();
-            } else if (i6 != 110) {
-                switch (i6) {
+            int i4 = i - 2;
+            if (i4 == 20 || i4 == 21) {
+                booleanValue = ((Boolean) AbstractC2653Ka.f26708e.r()).booleanValue();
+            } else if (i4 != 110) {
+                switch (i4) {
                     case 2:
                     case 3:
                     case 6:
                     case 7:
                     case 8:
-                        booleanValue = ((Boolean) AbstractC2633Ka.f25928c.r()).booleanValue();
+                        booleanValue = ((Boolean) AbstractC2653Ka.f26706c.r()).booleanValue();
                         break;
                     case 4:
                     case 9:
@@ -48,25 +28,45 @@ public interface Su {
                     case 11:
                     case 12:
                     case 13:
-                        booleanValue = ((Boolean) AbstractC2633Ka.f25929d.r()).booleanValue();
+                        booleanValue = ((Boolean) AbstractC2653Ka.f26707d.r()).booleanValue();
                         break;
                     case 5:
-                        booleanValue = ((Boolean) AbstractC2633Ka.f25927b.r()).booleanValue();
+                        booleanValue = ((Boolean) AbstractC2653Ka.f26705b.r()).booleanValue();
                         break;
                 }
             } else {
-                booleanValue = ((Boolean) q2.r.f40207e.f40210c.a(AbstractC3569ma.fa)).booleanValue();
+                booleanValue = ((Boolean) s2.r.f40506e.f40509c.a(AbstractC3592ma.fa)).booleanValue();
             }
             if (booleanValue) {
                 return new Tu(context, i);
             }
         }
-        return new C3374iv();
+        return new C3397iv();
+    }
+
+    static Su j(Context context, int i, int i4, s2.c1 c1Var) {
+        boolean matches;
+        Su e9 = e(context, i);
+        if (e9 instanceof Tu) {
+            e9.c();
+            e9.k(i4);
+            e9.v(t8.g.w(c1Var.f40401F));
+            String str = c1Var.f40404I;
+            if (TextUtils.isEmpty(str)) {
+                matches = false;
+            } else {
+                matches = Pattern.matches((String) s2.r.f40506e.f40509c.a(AbstractC3592ma.X9), str);
+            }
+            if (matches) {
+                e9.b(str);
+            }
+        }
+        return e9;
     }
 
     Su S(String str);
 
-    Su a(boolean z3);
+    Su a(boolean z6);
 
     Su b(String str);
 
@@ -76,11 +76,11 @@ public interface Su {
 
     boolean f();
 
-    Su h(C4920z0 c4920z0);
+    Su g(C2590Gf c2590Gf);
+
+    Su h(C4969z0 c4969z0);
 
     Su i();
-
-    Su j(C2570Gf c2570Gf);
 
     Su k(int i);
 

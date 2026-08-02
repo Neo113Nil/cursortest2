@@ -12,13 +12,13 @@ import java.io.File;
 public class b extends WebViewClient {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f17582a = "BaseWebViewClient";
+    private static final String f18369a = "BaseWebViewClient";
 
     /* renamed from: b, reason: collision with root package name */
-    private a f17583b;
+    private a f18370b;
 
     /* renamed from: c, reason: collision with root package name */
-    private c f17584c;
+    private c f18371c;
 
     private static boolean a(String str, String str2) {
         try {
@@ -31,7 +31,7 @@ public class b extends WebViewClient {
     @Override // android.webkit.WebViewClient
     public void onPageFinished(WebView webView, String str) {
         super.onPageFinished(webView, str);
-        c cVar = this.f17584c;
+        c cVar = this.f18371c;
         if (cVar != null) {
             cVar.onPageFinished(webView, str);
         }
@@ -40,7 +40,7 @@ public class b extends WebViewClient {
     @Override // android.webkit.WebViewClient
     public void onReceivedError(WebView webView, int i, String str, String str2) {
         super.onReceivedError(webView, i, str, str2);
-        c cVar = this.f17584c;
+        c cVar = this.f18371c;
         if (cVar != null) {
             cVar.onReceivedError(webView, i, str, str2);
         }
@@ -49,7 +49,7 @@ public class b extends WebViewClient {
     @Override // android.webkit.WebViewClient
     public void onReceivedSslError(WebView webView, SslErrorHandler sslErrorHandler, SslError sslError) {
         super.onReceivedSslError(webView, sslErrorHandler, sslError);
-        c cVar = this.f17584c;
+        c cVar = this.f18371c;
         if (cVar != null) {
             cVar.onReceivedSslError(webView, sslErrorHandler, sslError);
         }
@@ -73,7 +73,7 @@ public class b extends WebViewClient {
                 return true;
             }
         }
-        c cVar = this.f17584c;
+        c cVar = this.f18371c;
         if (cVar != null) {
             cVar.onRenderProcessGone(webView);
         }
@@ -82,11 +82,11 @@ public class b extends WebViewClient {
 
     @Override // android.webkit.WebViewClient
     public boolean shouldOverrideUrlLoading(WebView webView, String str) {
-        a aVar = this.f17583b;
+        a aVar = this.f18370b;
         if (aVar != null && aVar.a(str)) {
             return true;
         }
-        c cVar = this.f17584c;
+        c cVar = this.f18371c;
         if (cVar != null) {
             cVar.shouldOverrideUrlLoading(webView, str);
         }
@@ -94,14 +94,14 @@ public class b extends WebViewClient {
     }
 
     public final void a(a aVar) {
-        this.f17583b = aVar;
+        this.f18370b = aVar;
     }
 
     public final a a() {
-        return this.f17583b;
+        return this.f18370b;
     }
 
     public final void a(c cVar) {
-        this.f17584c = cVar;
+        this.f18371c = cVar;
     }
 }

@@ -3,7 +3,7 @@ package com.instagram.common.viewpoint.core;
 import android.widget.ImageView;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class M9 implements InterfaceC1479ar {
+public class M9 implements InterfaceC1499ar {
     public static String[] A01 = {"YJvayVN4kVOLxlDJWGwOCabHg1Fqt8we", "dXRRKrs9Ij7YmQRV4DOVJ1oKXH0uRxvN", "n5YXMgelgzgI9ER8zULhKnxSUvKWD7FQ", "MjcTDZ9vVz9cB8bZ6OPiFlfIoErQXBVk", "8uXe0M8gsMoVnVy8oufardLoqnsq8OG9", "SOq47sVgQRT9DF7sN8qUq9bi0IFpLSH7", "zaXV1JxsQyTBZsc16bKnJvrmUTnQXACV", "RKyyTAGKUR4fF8w9wvyslT4CD7IDkjm1"};
     public final /* synthetic */ M8 A00;
 
@@ -11,15 +11,15 @@ public class M9 implements InterfaceC1479ar {
         this.A00 = m82;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1479ar
-    public final void ADB(boolean z3) {
-        boolean z6;
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1499ar
+    public final void ADB(boolean z6) {
+        boolean z9;
         ImageView imageView;
         ImageView imageView2;
         ImageView imageView3;
-        this.A00.A0D(z3);
-        z6 = this.A00.A0A;
-        if (z6) {
+        this.A00.A0D(z6);
+        z9 = this.A00.A0A;
+        if (z9) {
             imageView = this.A00.A00;
             if (imageView != null) {
                 imageView2 = this.A00.A00;
@@ -29,28 +29,28 @@ public class M9 implements InterfaceC1479ar {
                 String[] strArr = A01;
                 strArr[0] = "1z8fFmuPWvqo0Almmab7pMFz1UcwKmNW";
                 strArr[3] = "wk5V7hrE3V1AjvcaWXTFKexyEZN6L03E";
-                imageView2.setEnabled(z3);
+                imageView2.setEnabled(z6);
                 imageView3 = this.A00.A00;
-                imageView3.setAlpha(z3 ? 1.0f : 0.3f);
+                imageView3.setAlpha(z6 ? 1.0f : 0.3f);
             }
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1479ar
-    public final void ADx(boolean z3) {
-        boolean z6;
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1499ar
+    public final void ADx(boolean z6) {
+        boolean z9;
         ImageView imageView;
         ImageView imageView2;
         ImageView imageView3;
-        this.A00.A0D(z3);
-        z6 = this.A00.A0A;
-        if (z6) {
+        this.A00.A0D(z6);
+        z9 = this.A00.A0A;
+        if (z9) {
             imageView = this.A00.A02;
             if (imageView != null) {
                 imageView2 = this.A00.A02;
-                imageView2.setEnabled(z3);
+                imageView2.setEnabled(z6);
                 imageView3 = this.A00.A02;
-                imageView3.setAlpha(z3 ? 1.0f : 0.3f);
+                imageView3.setAlpha(z6 ? 1.0f : 0.3f);
             }
         }
     }

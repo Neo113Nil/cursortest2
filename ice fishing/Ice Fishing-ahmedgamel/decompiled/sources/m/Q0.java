@@ -6,29 +6,29 @@ import androidx.appcompat.widget.Toolbar;
 public final /* synthetic */ class Q0 implements Runnable {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f39057n;
+    public final /* synthetic */ int f39125n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final /* synthetic */ Toolbar f39058u;
+    public final /* synthetic */ Toolbar f39126u;
 
     public /* synthetic */ Q0(Toolbar toolbar, int i) {
-        this.f39057n = i;
-        this.f39058u = toolbar;
+        this.f39125n = i;
+        this.f39126u = toolbar;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
-        switch (this.f39057n) {
+        switch (this.f39125n) {
             case 0:
-                S0 s02 = this.f39058u.f4620v0;
-                l.o oVar = s02 == null ? null : s02.f39060u;
+                T0 t02 = this.f39126u.f4583q0;
+                l.o oVar = t02 == null ? null : t02.f39129u;
                 if (oVar != null) {
                     oVar.collapseActionView();
                     break;
                 }
                 break;
             default:
-                this.f39058u.n();
+                this.f39126u.n();
                 break;
         }
     }

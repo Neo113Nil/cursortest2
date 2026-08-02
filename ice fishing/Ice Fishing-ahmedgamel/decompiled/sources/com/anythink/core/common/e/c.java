@@ -6,17 +6,17 @@ import android.database.sqlite.SQLiteDatabase;
 public class c<T> {
 
     /* renamed from: e, reason: collision with root package name */
-    protected d f12933e;
+    protected d f13719e;
 
     public c(d dVar) {
-        this.f12933e = dVar;
+        this.f13719e = dVar;
     }
 
     public final synchronized SQLiteDatabase c() {
-        return this.f12933e.a();
+        return this.f13719e.a();
     }
 
     public final synchronized SQLiteDatabase d() {
-        return this.f12933e.b();
+        return this.f13719e.b();
     }
 }

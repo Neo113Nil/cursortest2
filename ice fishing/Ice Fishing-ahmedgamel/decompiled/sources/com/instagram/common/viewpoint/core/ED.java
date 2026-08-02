@@ -4,15 +4,15 @@ import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public abstract class ED extends RelativeLayout implements InterfaceC1728eu {
-    public C0877Ek A00;
+public abstract class ED extends RelativeLayout implements InterfaceC1748eu {
+    public C0897Ek A00;
 
-    public ED(C1840gi c1840gi) {
-        super(c1840gi);
+    public ED(C1860gi c1860gi) {
+        super(c1860gi);
     }
 
-    public ED(C1840gi c1840gi, AttributeSet attributeSet, int i) {
-        super(c1840gi, attributeSet, i);
+    public ED(C1860gi c1860gi, AttributeSet attributeSet, int i) {
+        super(c1860gi, attributeSet, i);
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(-1, -1);
         setLayoutParams(params);
     }
@@ -23,19 +23,19 @@ public abstract class ED extends RelativeLayout implements InterfaceC1728eu {
     public void A08() {
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1728eu
-    public final void AAv(C0877Ek c0877Ek) {
-        this.A00 = c0877Ek;
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1748eu
+    public final void AAv(C0897Ek c0897Ek) {
+        this.A00 = c0897Ek;
         A07();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1728eu
-    public final void AKV(C0877Ek c0877Ek) {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1748eu
+    public final void AKV(C0897Ek c0897Ek) {
         A08();
         this.A00 = null;
     }
 
-    public C0877Ek getVideoView() {
+    public C0897Ek getVideoView() {
         return this.A00;
     }
 }

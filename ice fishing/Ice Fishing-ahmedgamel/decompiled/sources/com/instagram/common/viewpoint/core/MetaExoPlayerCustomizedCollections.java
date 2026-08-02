@@ -12,7 +12,7 @@ import java.util.Set;
 import kotlin.Metadata;
 import kotlin.jvm.JvmStatic;
 
-@Metadata(d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\b\u0003\n\u0002\u0010\"\n\u0002\b\u0002\n\u0002\u0010$\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J-\u0010\u0004\u001a\b\u0012\u0004\u0012\u0002H\u00060\u0005\"\u0004\b\u0000\u0010\u00062\u0012\u0010\u0007\u001a\n\u0012\u0006\b\u0001\u0012\u0002H\u00060\b\"\u0002H\u0006H\u0007¢\u0006\u0002\u0010\tJ-\u0010\n\u001a\b\u0012\u0004\u0012\u0002H\u00060\u0005\"\u0004\b\u0000\u0010\u00062\u0012\u0010\u0007\u001a\n\u0012\u0006\b\u0001\u0012\u0002H\u00060\b\"\u0002H\u0006H\u0007¢\u0006\u0002\u0010\tJ-\u0010\u000b\u001a\b\u0012\u0004\u0012\u0002H\u00060\f\"\u0004\b\u0000\u0010\u00062\u0012\u0010\u0007\u001a\n\u0012\u0006\b\u0001\u0012\u0002H\u00060\b\"\u0002H\u0006H\u0007¢\u0006\u0002\u0010\rJ6\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u0002H\u0010\u0012\u0004\u0012\u0002H\u00110\u000f\"\u0004\b\u0000\u0010\u0010\"\u0004\b\u0001\u0010\u00112\u0014\u0010\u0012\u001a\u0010\u0012\u0004\u0012\u0002H\u0010\u0012\u0004\u0012\u0002H\u0011\u0018\u00010\u000fH\u0007J\u0014\u0010\u0013\u001a\b\u0012\u0004\u0012\u0002H\u00060\u0005\"\u0004\b\u0000\u0010\u0006H\u0007¨\u0006\u0014"}, d2 = {"Lcom/facebook/video/heroplayer/exocustom/MetaExoPlayerCustomizedCollections;", "", "<init>", "()V", "immutableListOf", "", "T", "elements", "", "([Ljava/lang/Object;)Ljava/util/List;", "immutableListCopyOf", "immutableSetOf", "", "([Ljava/lang/Object;)Ljava/util/Set;", "immutableMapCopyOf", "", "K", "V", "mapToCopy", "emptyList", "fbandroid.java.com.facebook.video.heroplayer.exocustom.exocustom"}, k = 1, mv = {2, 1, 0}, xi = j.f5816W)
+@Metadata(d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\b\u0003\n\u0002\u0010\"\n\u0002\b\u0002\n\u0002\u0010$\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J-\u0010\u0004\u001a\b\u0012\u0004\u0012\u0002H\u00060\u0005\"\u0004\b\u0000\u0010\u00062\u0012\u0010\u0007\u001a\n\u0012\u0006\b\u0001\u0012\u0002H\u00060\b\"\u0002H\u0006H\u0007¢\u0006\u0002\u0010\tJ-\u0010\n\u001a\b\u0012\u0004\u0012\u0002H\u00060\u0005\"\u0004\b\u0000\u0010\u00062\u0012\u0010\u0007\u001a\n\u0012\u0006\b\u0001\u0012\u0002H\u00060\b\"\u0002H\u0006H\u0007¢\u0006\u0002\u0010\tJ-\u0010\u000b\u001a\b\u0012\u0004\u0012\u0002H\u00060\f\"\u0004\b\u0000\u0010\u00062\u0012\u0010\u0007\u001a\n\u0012\u0006\b\u0001\u0012\u0002H\u00060\b\"\u0002H\u0006H\u0007¢\u0006\u0002\u0010\rJ6\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u0002H\u0010\u0012\u0004\u0012\u0002H\u00110\u000f\"\u0004\b\u0000\u0010\u0010\"\u0004\b\u0001\u0010\u00112\u0014\u0010\u0012\u001a\u0010\u0012\u0004\u0012\u0002H\u0010\u0012\u0004\u0012\u0002H\u0011\u0018\u00010\u000fH\u0007J\u0014\u0010\u0013\u001a\b\u0012\u0004\u0012\u0002H\u00060\u0005\"\u0004\b\u0000\u0010\u0006H\u0007¨\u0006\u0014"}, d2 = {"Lcom/facebook/video/heroplayer/exocustom/MetaExoPlayerCustomizedCollections;", "", "<init>", "()V", "immutableListOf", "", "T", "elements", "", "([Ljava/lang/Object;)Ljava/util/List;", "immutableListCopyOf", "immutableSetOf", "", "([Ljava/lang/Object;)Ljava/util/Set;", "immutableMapCopyOf", "", "K", "V", "mapToCopy", "emptyList", "fbandroid.java.com.facebook.video.heroplayer.exocustom.exocustom"}, k = 1, mv = {2, 1, 0}, xi = j.f6602W)
 @MetaExoPlayerCustomization("On VRShell, Google Guava dependencies do not behave well. This is still under investigation but for now we are replacing those calls with vanilla java calls")
 /* renamed from: com.facebook.ads.redexgen.X.jW, reason: from Kotlin metadata */
 /* loaded from: assets/audience_network/classes2.dex */
@@ -25,10 +25,10 @@ public final class MetaExoPlayerCustomizedCollections {
         A01 = new MetaExoPlayerCustomizedCollections();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 122);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 122);
         }
         return new String(copyOfRange);
     }
@@ -39,20 +39,20 @@ public final class MetaExoPlayerCustomizedCollections {
 
     @JvmStatic
     public static final <T> List<T> A01() {
-        return AbstractC0773Af.A06();
+        return AbstractC0793Af.A06();
     }
 
     @JvmStatic
     public static final <T> List<T> A02(T... tArr) {
-        C2414qY.A09(tArr, A00(0, 8, 96));
+        C2434qY.A09(tArr, A00(0, 8, 96));
         Object[] copyOf = Arrays.copyOf(tArr, tArr.length);
-        return new ArrayList(AbstractC0773Af.A07(Arrays.copyOf(copyOf, copyOf.length)));
+        return new ArrayList(AbstractC0793Af.A07(Arrays.copyOf(copyOf, copyOf.length)));
     }
 
     @JvmStatic
     public static final <T> List<T> A03(T... tArr) {
-        C2414qY.A09(tArr, A00(0, 8, 96));
-        return new ArrayList(AbstractC0773Af.A07(Arrays.copyOf(tArr, tArr.length)));
+        C2434qY.A09(tArr, A00(0, 8, 96));
+        return new ArrayList(AbstractC0793Af.A07(Arrays.copyOf(tArr, tArr.length)));
     }
 
     @JvmStatic
@@ -62,7 +62,7 @@ public final class MetaExoPlayerCustomizedCollections {
 
     @JvmStatic
     public static final <T> Set<T> A05(T... tArr) {
-        C2414qY.A09(tArr, A00(0, 8, 96));
-        return new HashSet(AbstractC0773Af.A07(Arrays.copyOf(tArr, tArr.length)));
+        C2434qY.A09(tArr, A00(0, 8, 96));
+        return new HashSet(AbstractC0793Af.A07(Arrays.copyOf(tArr, tArr.length)));
     }
 }

@@ -7,21 +7,21 @@ import android.graphics.drawable.Drawable;
 public final class e extends Drawable.ConstantState {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f663a;
+    public final /* synthetic */ int f643a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Object f664b;
+    public final Object f644b;
 
     public /* synthetic */ e(int i, Object obj) {
-        this.f663a = i;
-        this.f664b = obj;
+        this.f643a = i;
+        this.f644b = obj;
     }
 
     @Override // android.graphics.drawable.Drawable.ConstantState
     public boolean canApplyTheme() {
-        switch (this.f663a) {
+        switch (this.f643a) {
             case 0:
-                return ((Drawable.ConstantState) this.f664b).canApplyTheme();
+                return ((Drawable.ConstantState) this.f644b).canApplyTheme();
             default:
                 return super.canApplyTheme();
         }
@@ -29,9 +29,9 @@ public final class e extends Drawable.ConstantState {
 
     @Override // android.graphics.drawable.Drawable.ConstantState
     public final int getChangingConfigurations() {
-        switch (this.f663a) {
+        switch (this.f643a) {
             case 0:
-                return ((Drawable.ConstantState) this.f664b).getChangingConfigurations();
+                return ((Drawable.ConstantState) this.f644b).getChangingConfigurations();
             default:
                 return 0;
         }
@@ -39,40 +39,40 @@ public final class e extends Drawable.ConstantState {
 
     @Override // android.graphics.drawable.Drawable.ConstantState
     public final Drawable newDrawable() {
-        switch (this.f663a) {
+        switch (this.f643a) {
             case 0:
                 f fVar = new f(null);
-                Drawable newDrawable = ((Drawable.ConstantState) this.f664b).newDrawable();
-                fVar.f670n = newDrawable;
-                newDrawable.setCallback(fVar.f669y);
+                Drawable newDrawable = ((Drawable.ConstantState) this.f644b).newDrawable();
+                fVar.f650n = newDrawable;
+                newDrawable.setCallback(fVar.f649y);
                 return fVar;
             default:
-                return new F1.c(this);
+                return new H1.c(this);
         }
     }
 
     @Override // android.graphics.drawable.Drawable.ConstantState
     public final Drawable newDrawable(Resources resources) {
-        switch (this.f663a) {
+        switch (this.f643a) {
             case 0:
                 f fVar = new f(null);
-                Drawable newDrawable = ((Drawable.ConstantState) this.f664b).newDrawable(resources);
-                fVar.f670n = newDrawable;
-                newDrawable.setCallback(fVar.f669y);
+                Drawable newDrawable = ((Drawable.ConstantState) this.f644b).newDrawable(resources);
+                fVar.f650n = newDrawable;
+                newDrawable.setCallback(fVar.f649y);
                 return fVar;
             default:
-                return new F1.c(this);
+                return new H1.c(this);
         }
     }
 
     @Override // android.graphics.drawable.Drawable.ConstantState
     public Drawable newDrawable(Resources resources, Resources.Theme theme) {
-        switch (this.f663a) {
+        switch (this.f643a) {
             case 0:
                 f fVar = new f(null);
-                Drawable newDrawable = ((Drawable.ConstantState) this.f664b).newDrawable(resources, theme);
-                fVar.f670n = newDrawable;
-                newDrawable.setCallback(fVar.f669y);
+                Drawable newDrawable = ((Drawable.ConstantState) this.f644b).newDrawable(resources, theme);
+                fVar.f650n = newDrawable;
+                newDrawable.setCallback(fVar.f649y);
                 return fVar;
             default:
                 return super.newDrawable(resources, theme);

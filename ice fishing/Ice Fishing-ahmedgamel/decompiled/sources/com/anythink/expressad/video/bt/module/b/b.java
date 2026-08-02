@@ -4,7 +4,7 @@ package com.anythink.expressad.video.bt.module.b;
 public final class b implements g {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f21059a = "RewardVideoListener";
+    private static final String f21846a = "RewardVideoListener";
 
     @Override // com.anythink.expressad.video.bt.module.b.g
     public final void a() {
@@ -39,6 +39,6 @@ public final class b implements g {
     }
 
     @Override // com.anythink.expressad.video.bt.module.b.g
-    public final void a(boolean z3, String str, float f3) {
+    public final void a(boolean z6, String str, float f2) {
     }
 }

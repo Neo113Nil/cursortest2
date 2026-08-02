@@ -8,20 +8,20 @@ import java.io.UnsupportedEncodingException;
 public class g extends j<String> {
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f19302c = "g";
+    private static final String f20089c = "g";
 
     /* renamed from: d, reason: collision with root package name */
-    private String f19303d;
+    private String f20090d;
 
     public g(int i, String str, String str2, com.anythink.expressad.foundation.g.f.e<String> eVar) {
         super(i, str, eVar);
-        this.f19303d = str2;
+        this.f20090d = str2;
     }
 
     @Override // com.anythink.expressad.foundation.g.f.j
     public final l<String> a(com.anythink.expressad.foundation.g.f.f.c cVar) {
         try {
-            return l.a(new String(cVar.f19320b, com.anythink.expressad.foundation.g.f.g.d.a(cVar.f19322d)), cVar);
+            return l.a(new String(cVar.f20107b, com.anythink.expressad.foundation.g.f.g.d.a(cVar.f20109d)), cVar);
         } catch (UnsupportedEncodingException e9) {
             e9.getMessage();
             return l.a(new com.anythink.expressad.foundation.g.f.a.a(8, cVar));
@@ -31,7 +31,7 @@ public class g extends j<String> {
     @Override // com.anythink.expressad.foundation.g.f.j
     public final byte[] h() {
         try {
-            String str = this.f19303d;
+            String str = this.f20090d;
             if (str == null) {
                 return null;
             }

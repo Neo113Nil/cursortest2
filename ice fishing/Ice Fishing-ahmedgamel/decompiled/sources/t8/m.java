@@ -7,18 +7,18 @@ import javax.net.ssl.SSLSocket;
 public final class m implements n {
 
     /* renamed from: a, reason: collision with root package name */
-    public final l f40939a;
+    public final l f40901a;
 
     /* renamed from: b, reason: collision with root package name */
-    public n f40940b;
+    public n f40902b;
 
     public m(l lVar) {
-        this.f40939a = lVar;
+        this.f40901a = lVar;
     }
 
     @Override // t8.n
     public final boolean a(SSLSocket sSLSocket) {
-        return this.f40939a.a(sSLSocket);
+        return this.f40901a.a(sSLSocket);
     }
 
     @Override // t8.n
@@ -46,12 +46,12 @@ public final class m implements n {
 
     public final synchronized n e(SSLSocket sSLSocket) {
         try {
-            if (this.f40940b == null && this.f40939a.a(sSLSocket)) {
-                this.f40940b = this.f40939a.l(sSLSocket);
+            if (this.f40902b == null && this.f40901a.a(sSLSocket)) {
+                this.f40902b = this.f40901a.i(sSLSocket);
             }
         } catch (Throwable th) {
             throw th;
         }
-        return this.f40940b;
+        return this.f40902b;
     }
 }

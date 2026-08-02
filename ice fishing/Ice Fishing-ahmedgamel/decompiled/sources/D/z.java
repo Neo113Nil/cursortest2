@@ -1,49 +1,32 @@
 package D;
 
 import android.app.Notification;
-import android.app.PendingIntent;
-import android.app.RemoteInput;
-import android.os.Bundle;
+import android.media.AudioAttributes;
+import android.net.Uri;
 
 /* loaded from: classes.dex */
 public abstract class z {
-    public static Notification.Builder a(Notification.Builder builder, Notification.Action action) {
-        return builder.addAction(action);
+    public static Notification.Builder a(Notification.Builder builder, String str) {
+        return builder.addPerson(str);
     }
 
-    public static Notification.Action.Builder b(Notification.Action.Builder builder, Bundle bundle) {
-        return builder.addExtras(bundle);
+    public static Notification.Builder b(Notification.Builder builder, String str) {
+        return builder.setCategory(str);
     }
 
-    public static Notification.Action.Builder c(Notification.Action.Builder builder, RemoteInput remoteInput) {
-        return builder.addRemoteInput(remoteInput);
+    public static Notification.Builder c(Notification.Builder builder, int i) {
+        return builder.setColor(i);
     }
 
-    public static Notification.Action d(Notification.Action.Builder builder) {
-        return builder.build();
+    public static Notification.Builder d(Notification.Builder builder, Notification notification) {
+        return builder.setPublicVersion(notification);
     }
 
-    public static Notification.Action.Builder e(int i, CharSequence charSequence, PendingIntent pendingIntent) {
-        return new Notification.Action.Builder(i, charSequence, pendingIntent);
+    public static Notification.Builder e(Notification.Builder builder, Uri uri, Object obj) {
+        return builder.setSound(uri, (AudioAttributes) obj);
     }
 
-    public static String f(Notification notification) {
-        return notification.getGroup();
-    }
-
-    public static Notification.Builder g(Notification.Builder builder, String str) {
-        return builder.setGroup(str);
-    }
-
-    public static Notification.Builder h(Notification.Builder builder, boolean z3) {
-        return builder.setGroupSummary(z3);
-    }
-
-    public static Notification.Builder i(Notification.Builder builder, boolean z3) {
-        return builder.setLocalOnly(z3);
-    }
-
-    public static Notification.Builder j(Notification.Builder builder, String str) {
-        return builder.setSortKey(str);
+    public static Notification.Builder f(Notification.Builder builder, int i) {
+        return builder.setVisibility(i);
     }
 }

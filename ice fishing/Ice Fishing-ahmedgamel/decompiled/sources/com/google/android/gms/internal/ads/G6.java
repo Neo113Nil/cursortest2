@@ -5,7 +5,7 @@ public interface G6 {
     default void a0(int i) {
     }
 
-    default void b0(C3035cd c3035cd) {
+    default void b0(C3058cd c3058cd) {
     }
 
     void c();

@@ -8,14 +8,14 @@ import com.anythink.expressad.foundation.h.v;
 public class RewardJs extends BaseRewardJs implements IRewardBridge {
 
     /* renamed from: j, reason: collision with root package name */
-    private Handler f21856j = new Handler(Looper.getMainLooper());
+    private Handler f22643j = new Handler(Looper.getMainLooper());
 
     @Override // com.anythink.expressad.video.signal.communication.BaseRewardJs, com.anythink.expressad.video.signal.communication.IRewardBridge
     public void cai(final Object obj, final String str) {
         if (v.b()) {
             super.cai(obj, str);
         } else {
-            this.f21856j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.9
+            this.f22643j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.9
                 @Override // java.lang.Runnable
                 public void run() {
                     RewardJs.super.cai(obj, str);
@@ -44,7 +44,7 @@ public class RewardJs extends BaseRewardJs implements IRewardBridge {
         if (v.b()) {
             super.getEndScreenInfo(obj, str);
         } else {
-            this.f21856j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.1
+            this.f22643j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.1
                 @Override // java.lang.Runnable
                 public void run() {
                     RewardJs.super.getEndScreenInfo(obj, str);
@@ -58,7 +58,7 @@ public class RewardJs extends BaseRewardJs implements IRewardBridge {
         if (v.b()) {
             super.gial(obj, str);
         } else {
-            this.f21856j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.10
+            this.f22643j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.10
                 @Override // java.lang.Runnable
                 public void run() {
                     RewardJs.super.gial(obj, str);
@@ -72,7 +72,7 @@ public class RewardJs extends BaseRewardJs implements IRewardBridge {
         if (v.b()) {
             super.handlerPlayableException(obj, str);
         } else {
-            this.f21856j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.7
+            this.f22643j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.7
                 @Override // java.lang.Runnable
                 public void run() {
                     RewardJs.super.handlerPlayableException(obj, str);
@@ -86,7 +86,7 @@ public class RewardJs extends BaseRewardJs implements IRewardBridge {
         if (v.b()) {
             super.install(obj, str);
         } else {
-            this.f21856j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.2
+            this.f22643j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.2
                 @Override // java.lang.Runnable
                 public void run() {
                     RewardJs.super.install(obj, str);
@@ -100,7 +100,7 @@ public class RewardJs extends BaseRewardJs implements IRewardBridge {
         if (v.b()) {
             super.notifyCloseBtn(obj, str);
         } else {
-            this.f21856j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.3
+            this.f22643j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.3
                 @Override // java.lang.Runnable
                 public void run() {
                     RewardJs.super.notifyCloseBtn(obj, str);
@@ -114,7 +114,7 @@ public class RewardJs extends BaseRewardJs implements IRewardBridge {
         if (v.b()) {
             super.openURL(obj, str);
         } else {
-            this.f21856j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.8
+            this.f22643j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.8
                 @Override // java.lang.Runnable
                 public void run() {
                     RewardJs.super.openURL(obj, str);
@@ -128,7 +128,7 @@ public class RewardJs extends BaseRewardJs implements IRewardBridge {
         if (v.b()) {
             super.setOrientation(obj, str);
         } else {
-            this.f21856j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.6
+            this.f22643j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.6
                 @Override // java.lang.Runnable
                 public void run() {
                     RewardJs.super.setOrientation(obj, str);
@@ -142,7 +142,7 @@ public class RewardJs extends BaseRewardJs implements IRewardBridge {
         if (v.b()) {
             super.toggleCloseBtn(obj, str);
         } else {
-            this.f21856j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.4
+            this.f22643j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.4
                 @Override // java.lang.Runnable
                 public void run() {
                     RewardJs.super.toggleCloseBtn(obj, str);
@@ -156,7 +156,7 @@ public class RewardJs extends BaseRewardJs implements IRewardBridge {
         if (v.b()) {
             super.triggerCloseBtn(obj, str);
         } else {
-            this.f21856j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.5
+            this.f22643j.post(new Runnable() { // from class: com.anythink.expressad.video.signal.communication.RewardJs.5
                 @Override // java.lang.Runnable
                 public void run() {
                     RewardJs.super.getEndScreenInfo(obj, str);

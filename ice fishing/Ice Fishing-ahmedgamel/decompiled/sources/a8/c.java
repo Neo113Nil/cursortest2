@@ -1,55 +1,56 @@
 package a8;
 
+import E2.C0316m;
 import I7.l;
-import S7.C0389g;
-import S7.InterfaceC0388f;
+import S7.C0393g;
+import S7.InterfaceC0392f;
 import S7.y0;
 import X7.t;
 import u7.v;
-import z7.InterfaceC5272i;
+import z7.InterfaceC5245i;
 
 /* loaded from: classes2.dex */
-public final class c implements InterfaceC0388f, y0 {
+public final class c implements InterfaceC0392f, y0 {
 
     /* renamed from: n, reason: collision with root package name */
-    public final C0389g f4390n;
+    public final C0393g f4358n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final /* synthetic */ d f4391u;
+    public final /* synthetic */ d f4359u;
 
-    public c(d dVar, C0389g c0389g) {
-        this.f4391u = dVar;
-        this.f4390n = c0389g;
+    public c(d dVar, C0393g c0393g) {
+        this.f4359u = dVar;
+        this.f4358n = c0393g;
     }
 
     @Override // S7.y0
     public final void a(t tVar, int i) {
-        this.f4390n.a(tVar, i);
+        this.f4358n.a(tVar, i);
     }
 
-    @Override // S7.InterfaceC0388f
-    public final D2.b c(Object obj, l lVar) {
-        d dVar = this.f4391u;
-        C0448b c0448b = new C0448b(dVar, this, 1);
-        D2.b c9 = this.f4390n.c((v) obj, c0448b);
+    @Override // S7.InterfaceC0392f
+    public final C0316m c(Object obj, l lVar) {
+        d dVar = this.f4359u;
+        C0452b c0452b = new C0452b(dVar, this, 1);
+        C0316m c9 = this.f4358n.c((v) obj, c0452b);
         if (c9 != null) {
-            d.f4392g.set(dVar, null);
+            d.f4360g.set(dVar, null);
         }
         return c9;
     }
 
-    @Override // S7.InterfaceC0388f
+    @Override // S7.InterfaceC0392f
     public final void f(Object obj) {
-        this.f4390n.f(obj);
+        this.f4358n.f(obj);
     }
 
-    @Override // z7.InterfaceC5267d
-    public final InterfaceC5272i getContext() {
-        return this.f4390n.f2964x;
+    @Override // z7.InterfaceC5240d
+    public final InterfaceC5245i getContext() {
+        return this.f4358n.f3047x;
     }
 
-    @Override // z7.InterfaceC5267d
+    @Override // z7.InterfaceC5240d
     public final void resumeWith(Object obj) {
-        this.f4390n.resumeWith(obj);
+        this.f4358n.resumeWith(obj);
     }
 }

@@ -8,14 +8,14 @@ import com.anythink.expressad.out.q;
 public interface c extends d {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f21841a = 2;
+    public static final int f22628a = 2;
 
     public interface a extends q.c {
         void a();
 
         void a(int i, String str);
 
-        void a(com.anythink.expressad.foundation.d.d dVar, boolean z3);
+        void a(com.anythink.expressad.foundation.d.d dVar, boolean z6);
 
         void d();
     }
@@ -34,7 +34,7 @@ public interface c extends d {
 
     void a(String str);
 
-    void a(boolean z3);
+    void a(boolean z6);
 
     boolean a();
 

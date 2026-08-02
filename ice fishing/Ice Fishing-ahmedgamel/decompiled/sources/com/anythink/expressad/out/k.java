@@ -10,73 +10,73 @@ import java.io.Serializable;
 public class k implements com.anythink.expressad.foundation.g.d.c, com.anythink.expressad.g.b, Serializable {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final long f20035a = 1;
+    private static final long f20822a = 1;
     public static final int dg = 1;
     public static final int dh = 2;
     public static final int di = 3;
     public String dj;
 
     /* renamed from: j, reason: collision with root package name */
-    private double f20043j;
+    private double f20830j;
 
     /* renamed from: l, reason: collision with root package name */
-    private Object f20045l;
+    private Object f20832l;
 
     /* renamed from: n, reason: collision with root package name */
-    private String f20047n;
+    private String f20834n;
 
     /* renamed from: o, reason: collision with root package name */
-    private Drawable f20048o;
+    private Drawable f20835o;
 
     /* renamed from: p, reason: collision with root package name */
-    private Drawable f20049p;
+    private Drawable f20836p;
 
     /* renamed from: q, reason: collision with root package name */
-    private r f20050q;
+    private r f20837q;
 
     /* renamed from: b, reason: collision with root package name */
-    private String f20036b = "";
+    private String f20823b = "";
 
     /* renamed from: c, reason: collision with root package name */
-    private String f20037c = "";
+    private String f20824c = "";
 
     /* renamed from: d, reason: collision with root package name */
-    private String f20038d = "";
+    private String f20825d = "";
 
     /* renamed from: e, reason: collision with root package name */
-    private String f20039e = "";
+    private String f20826e = "";
 
     /* renamed from: f, reason: collision with root package name */
-    private String f20040f = "";
+    private String f20827f = "";
 
     /* renamed from: g, reason: collision with root package name */
-    private String f20041g = "";
+    private String f20828g = "";
 
     /* renamed from: h, reason: collision with root package name */
-    private String f20042h = "";
+    private String f20829h = "";
     private long i = 0;
 
     /* renamed from: k, reason: collision with root package name */
-    private int f20044k = 33333;
+    private int f20831k = 33333;
 
     /* renamed from: m, reason: collision with root package name */
-    private int f20046m = 1;
+    private int f20833m = 1;
 
     /* renamed from: r, reason: collision with root package name */
-    private int f20051r = 0;
+    private int f20838r = 0;
 
     /* renamed from: s, reason: collision with root package name */
-    private int f20052s = 0;
+    private int f20839s = 0;
 
     /* renamed from: t, reason: collision with root package name */
-    private int f20053t = 0;
+    private int f20840t = 0;
 
     private Drawable b() {
-        return this.f20049p;
+        return this.f20836p;
     }
 
     private void c(r rVar) {
-        this.f20050q = rVar;
+        this.f20837q = rVar;
     }
 
     private String d() {
@@ -84,27 +84,27 @@ public class k implements com.anythink.expressad.foundation.g.d.c, com.anythink.
     }
 
     private int e() {
-        return this.f20051r;
+        return this.f20838r;
     }
 
     private int f() {
-        return this.f20052s;
+        return this.f20839s;
     }
 
     private String g() {
-        return this.f20047n;
+        return this.f20834n;
     }
 
     public final void A(String str) {
-        this.f20041g = str;
+        this.f20828g = str;
     }
 
     public final void B(String str) {
-        this.f20042h = str;
+        this.f20829h = str;
     }
 
     public final void C(String str) {
-        this.f20040f = str;
+        this.f20827f = str;
     }
 
     @Override // com.anythink.expressad.foundation.g.d.c
@@ -112,39 +112,39 @@ public class k implements com.anythink.expressad.foundation.g.d.c, com.anythink.
     }
 
     public final double bf() {
-        return this.f20043j;
+        return this.f20830j;
     }
 
     public final int bg() {
-        return this.f20044k;
+        return this.f20831k;
     }
 
     public final String bh() {
-        return this.f20036b;
+        return this.f20823b;
     }
 
     public final String bi() {
-        return this.f20037c;
+        return this.f20824c;
     }
 
     public final String bj() {
-        return this.f20038d;
+        return this.f20825d;
     }
 
     public final String bk() {
-        return this.f20039e;
+        return this.f20826e;
     }
 
     public final String bl() {
-        return this.f20041g;
+        return this.f20828g;
     }
 
     public final String bm() {
-        return this.f20042h;
+        return this.f20829h;
     }
 
     public final int bn() {
-        return this.f20046m;
+        return this.f20833m;
     }
 
     public final long bo() {
@@ -152,11 +152,11 @@ public class k implements com.anythink.expressad.foundation.g.d.c, com.anythink.
     }
 
     public final String bp() {
-        return this.f20040f;
+        return this.f20827f;
     }
 
     public final int bq() {
-        return this.f20053t;
+        return this.f20840t;
     }
 
     public void o(String str) {
@@ -168,72 +168,72 @@ public class k implements com.anythink.expressad.foundation.g.d.c, com.anythink.
 
     public final void r(int i) {
         if (i > 0) {
-            this.f20044k = i;
+            this.f20831k = i;
         }
     }
 
     public final void s(int i) {
-        this.f20046m = i;
+        this.f20833m = i;
     }
 
     public final void t(int i) {
-        this.f20053t = i;
+        this.f20840t = i;
     }
 
     public final void w(String str) {
-        this.f20036b = str;
+        this.f20823b = str;
     }
 
     public final void x(String str) {
-        this.f20037c = str;
+        this.f20824c = str;
     }
 
     public final void y(String str) {
-        this.f20038d = str;
+        this.f20825d = str;
     }
 
     public final void z(String str) {
-        this.f20039e = str;
+        this.f20826e = str;
     }
 
     private Drawable a() {
-        return this.f20048o;
+        return this.f20835o;
     }
 
     private void b(r rVar) {
-        this.f20050q = rVar;
-        if (TextUtils.isEmpty(this.f20042h)) {
+        this.f20837q = rVar;
+        if (TextUtils.isEmpty(this.f20829h)) {
             return;
         }
-        com.anythink.basead.exoplayer.f.f.l().a(this.f20042h, this);
+        com.IceFishing.LiveIceFishing.k.m().a(this.f20829h, this);
     }
 
     private Object c() {
-        return this.f20045l;
+        return this.f20832l;
     }
 
     private void a(r rVar) {
-        this.f20050q = rVar;
-        if (TextUtils.isEmpty(this.f20041g)) {
+        this.f20837q = rVar;
+        if (TextUtils.isEmpty(this.f20828g)) {
             return;
         }
-        com.anythink.basead.exoplayer.f.f.l().a(this.f20041g, this);
+        com.IceFishing.LiveIceFishing.k.m().a(this.f20828g, this);
     }
 
     private void b(int i) {
-        this.f20052s = i;
+        this.f20839s = i;
     }
 
     private void b(Drawable drawable) {
-        this.f20049p = drawable;
+        this.f20836p = drawable;
     }
 
-    public final void a(double d2) {
-        this.f20043j = d2;
+    public final void a(double d9) {
+        this.f20830j = d9;
     }
 
     private void a(Object obj) {
-        this.f20045l = obj;
+        this.f20832l = obj;
     }
 
     public final void a(long j6) {
@@ -241,11 +241,11 @@ public class k implements com.anythink.expressad.foundation.g.d.c, com.anythink.
     }
 
     private void a(int i) {
-        this.f20051r = i;
+        this.f20838r = i;
     }
 
     private void a(String str) {
-        this.f20047n = str;
+        this.f20834n = str;
     }
 
     private static Drawable a(Bitmap bitmap) {
@@ -253,23 +253,23 @@ public class k implements com.anythink.expressad.foundation.g.d.c, com.anythink.
     }
 
     private void a(Drawable drawable) {
-        this.f20048o = drawable;
+        this.f20835o = drawable;
     }
 
     @Override // com.anythink.expressad.foundation.g.d.c
     public final void a(Bitmap bitmap, String str) {
         String str2;
-        if (!TextUtils.isEmpty(this.f20042h) && this.f20042h.equals(str) && bitmap != null) {
-            this.f20049p = a(bitmap);
-            if (this.f20050q != null) {
+        if (!TextUtils.isEmpty(this.f20829h) && this.f20829h.equals(str) && bitmap != null) {
+            this.f20836p = a(bitmap);
+            if (this.f20837q != null) {
                 a(bitmap);
             }
         }
-        if (TextUtils.isEmpty(this.f20041g) || (str2 = this.f20041g) == null || !str2.equals(str) || bitmap == null) {
+        if (TextUtils.isEmpty(this.f20828g) || (str2 = this.f20828g) == null || !str2.equals(str) || bitmap == null) {
             return;
         }
-        this.f20048o = a(bitmap);
-        if (this.f20050q != null) {
+        this.f20835o = a(bitmap);
+        if (this.f20837q != null) {
             a(bitmap);
         }
     }

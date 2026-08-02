@@ -25,94 +25,94 @@ import org.json.JSONObject;
 public class s extends a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f14710a = "s";
+    private static final String f15496a = "s";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f14711b = "sdk_custom";
+    public static final String f15497b = "sdk_custom";
 
     /* renamed from: f, reason: collision with root package name */
-    private static final String f14712f = "YXBpdjQ=";
+    private static final String f15498f = "YXBpdjQ=";
 
     /* renamed from: A, reason: collision with root package name */
-    private JSONObject f14713A;
+    private JSONObject f15499A;
 
     /* renamed from: B, reason: collision with root package name */
-    private final AtomicInteger f14714B = new AtomicInteger(0);
+    private final AtomicInteger f15500B = new AtomicInteger(0);
 
     /* renamed from: C, reason: collision with root package name */
-    private ATAdRequest f14715C;
+    private ATAdRequest f15501C;
 
     /* renamed from: D, reason: collision with root package name */
-    private String f14716D;
+    private String f15502D;
 
     /* renamed from: E, reason: collision with root package name */
-    private boolean f14717E;
+    private boolean f15503E;
 
     /* renamed from: F, reason: collision with root package name */
-    private final bm f14718F;
+    private final bm f15504F;
 
     /* renamed from: c, reason: collision with root package name */
-    Map<String, Object> f14719c;
+    Map<String, Object> f15505c;
 
     /* renamed from: d, reason: collision with root package name */
-    long f14720d;
+    long f15506d;
 
     /* renamed from: e, reason: collision with root package name */
-    long f14721e;
+    long f15507e;
 
     /* renamed from: g, reason: collision with root package name */
-    private String f14722g;
+    private String f15508g;
 
     /* renamed from: h, reason: collision with root package name */
-    private String f14723h;
+    private String f15509h;
     private String i;
 
     /* renamed from: j, reason: collision with root package name */
-    private Context f14724j;
+    private Context f15510j;
 
     /* renamed from: k, reason: collision with root package name */
-    private String f14725k;
+    private String f15511k;
 
     /* renamed from: l, reason: collision with root package name */
-    private String f14726l;
+    private String f15512l;
 
     /* renamed from: u, reason: collision with root package name */
-    private String f14727u;
+    private String f15513u;
 
     /* renamed from: v, reason: collision with root package name */
-    private Map<String, Object> f14728v;
+    private Map<String, Object> f15514v;
 
     /* renamed from: w, reason: collision with root package name */
-    private Map<String, String> f14729w;
+    private Map<String, String> f15515w;
 
     /* renamed from: x, reason: collision with root package name */
-    private int f14730x;
+    private int f15516x;
 
     /* renamed from: y, reason: collision with root package name */
-    private JSONObject f14731y;
+    private JSONObject f15517y;
 
     /* renamed from: z, reason: collision with root package name */
-    private String f14732z;
+    private String f15518z;
 
     public s(Context context, bm bmVar) {
-        this.f14731y = null;
-        this.f14718F = bmVar;
+        this.f15517y = null;
+        this.f15504F = bmVar;
         if (bmVar != null) {
-            this.f14725k = bmVar.b();
-            this.f14726l = bmVar.c();
-            this.f14724j = context;
+            this.f15511k = bmVar.b();
+            this.f15512l = bmVar.c();
+            this.f15510j = context;
             this.i = bmVar.d();
-            this.f14722g = com.anythink.core.common.d.t.b().r();
-            this.f14723h = com.anythink.core.common.d.t.b().g(this.i);
-            this.f14727u = bmVar.e();
-            this.f14719c = bmVar.f();
-            this.f14728v = bmVar.g();
-            this.f14730x = bmVar.h();
-            this.f14729w = bmVar.i();
-            this.f14731y = bmVar.k();
-            this.f14732z = bmVar.l();
-            this.f14713A = bmVar.m();
-            this.f14715C = bmVar.j();
+            this.f15508g = com.anythink.core.common.d.t.b().r();
+            this.f15509h = com.anythink.core.common.d.t.b().g(this.i);
+            this.f15513u = bmVar.e();
+            this.f15505c = bmVar.f();
+            this.f15514v = bmVar.g();
+            this.f15516x = bmVar.h();
+            this.f15515w = bmVar.i();
+            this.f15517y = bmVar.k();
+            this.f15518z = bmVar.l();
+            this.f15499A = bmVar.m();
+            this.f15501C = bmVar.j();
         }
     }
 
@@ -139,8 +139,8 @@ public class s extends a {
 
     @Override // com.anythink.core.common.m.a
     public String b() {
-        if (!TextUtils.isEmpty(this.f14716D)) {
-            return this.f14716D;
+        if (!TextUtils.isEmpty(this.f15502D)) {
+            return this.f15502D;
         }
         com.anythink.core.common.i.a();
         return com.anythink.core.common.i.c();
@@ -149,7 +149,7 @@ public class s extends a {
     @Override // com.anythink.core.common.m.a
     public final Map<String, String> c() {
         HashMap hashMap = new HashMap();
-        hashMap.put("Accept-Encoding", com.anythink.expressad.foundation.g.f.g.b.f19341d);
+        hashMap.put("Accept-Encoding", com.anythink.expressad.foundation.g.f.g.b.f20128d);
         hashMap.put("Content-Type", "application/json;charset=utf-8");
         return hashMap;
     }
@@ -174,11 +174,11 @@ public class s extends a {
         Object obj2;
         JSONObject e9 = super.e();
         try {
-            e9.put("app_id", this.f14725k);
+            e9.put("app_id", this.f15511k);
             e9.put(e.bk, this.i);
-            e9.put("session_id", this.f14723h);
+            e9.put("session_id", this.f15509h);
             e9.put("nw_ver", com.anythink.core.common.v.m.g());
-            e9.put("exclude_myofferid", com.anythink.core.common.r.a().a(this.f14724j));
+            e9.put("exclude_myofferid", com.anythink.core.common.r.a().a(this.f15510j));
             if (com.anythink.core.common.d.t.b().l() != null) {
                 e9.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.EXCLUDE_OFFER, com.anythink.core.common.d.t.b().l());
             }
@@ -193,7 +193,7 @@ public class s extends a {
             } else {
                 e9.put("bk_id", D8);
             }
-            JSONObject a9 = e.a(this.f14719c);
+            JSONObject a9 = e.a(this.f15505c);
             if (a9 != null) {
                 e9.put("custom", a9);
             }
@@ -201,18 +201,18 @@ public class s extends a {
             if (com.anythink.core.common.d.t.b().z()) {
                 com.anythink.core.common.d.t.b().A().fillRequestParam(e9);
             }
-            Map<String, Object> map = this.f14728v;
+            Map<String, Object> map = this.f15514v;
             if (map != null && (obj2 = map.get(ATAdConst.KEY.CP_PLACEMENT_ID)) != null) {
                 e9.put(e.ai, obj2.toString());
             }
-            Map<String, String> map2 = this.f14729w;
+            Map<String, String> map2 = this.f15515w;
             if (map2 != null && map2.size() != 0) {
                 try {
-                    e9.put("cached", new JSONObject(this.f14729w));
+                    e9.put("cached", new JSONObject(this.f15515w));
                 } catch (Throwable unused) {
                 }
             }
-            e9.put(e.aq, this.f14730x);
+            e9.put(e.aq, this.f15516x);
             JSONObject a10 = com.anythink.core.c.b.a().a(this.i);
             if (a10 != null) {
                 e9.put(e.ar, a10);
@@ -227,12 +227,12 @@ public class s extends a {
             }
             try {
                 JSONObject jSONObject = new JSONObject();
-                JSONObject jSONObject2 = this.f14731y;
+                JSONObject jSONObject2 = this.f15517y;
                 if (jSONObject2 != null && jSONObject2.length() > 0) {
-                    Iterator<String> keys = this.f14731y.keys();
+                    Iterator<String> keys = this.f15517y.keys();
                     while (keys.hasNext()) {
                         String next = keys.next();
-                        jSONObject.put(next, this.f14731y.get(next));
+                        jSONObject.put(next, this.f15517y.get(next));
                     }
                 }
                 if (jSONObject.length() > 0) {
@@ -241,14 +241,14 @@ public class s extends a {
             } catch (Throwable unused2) {
             }
             e9.put(e.bj, new JSONArray(ATAdConst.AD_SUPPORT_SDK_DSP_ID_ARRAY));
-            if (!TextUtils.isEmpty(this.f14732z)) {
-                e9.put(e.bm, this.f14732z);
-                JSONObject jSONObject3 = this.f14713A;
+            if (!TextUtils.isEmpty(this.f15518z)) {
+                e9.put(e.bm, this.f15518z);
+                JSONObject jSONObject3 = this.f15499A;
                 if (jSONObject3 != null) {
                     e9.put(e.bn, jSONObject3);
                 }
             }
-            ATAdRequest aTAdRequest = this.f14715C;
+            ATAdRequest aTAdRequest = this.f15501C;
             if (aTAdRequest != null) {
                 e9.put(e.bp, aTAdRequest.getChannelSource());
             } else {
@@ -260,9 +260,9 @@ public class s extends a {
             }
             com.anythink.core.d.b b9 = com.anythink.core.d.d.a(com.anythink.core.common.d.t.b().g()).b(com.anythink.core.common.d.t.b().p());
             if (b9 != null) {
-                String f3 = b9.f();
-                if (!TextUtils.isEmpty(f3)) {
-                    e9.put(e.br, f3);
+                String f2 = b9.f();
+                if (!TextUtils.isEmpty(f2)) {
+                    e9.put(e.br, f2);
                 }
             }
         } catch (JSONException unused3) {
@@ -277,17 +277,17 @@ public class s extends a {
 
     @Override // com.anythink.core.common.m.a
     public final String h() {
-        return this.f14725k;
+        return this.f15511k;
     }
 
     @Override // com.anythink.core.common.m.a
     public final Context i() {
-        return this.f14724j;
+        return this.f15510j;
     }
 
     @Override // com.anythink.core.common.m.a
     public final String j() {
-        return this.f14726l;
+        return this.f15512l;
     }
 
     @Override // com.anythink.core.common.m.a
@@ -302,18 +302,18 @@ public class s extends a {
 
     @Override // com.anythink.core.common.m.a
     public final com.anythink.core.common.m.b.d m() {
-        return com.anythink.core.common.m.b.d.a(com.anythink.core.common.m.b.g.f14518a, this.i);
+        return com.anythink.core.common.m.b.d.a(com.anythink.core.common.m.b.g.f15304a, this.i);
     }
 
     @Override // com.anythink.core.common.m.a
     public final List<String> q() {
         ArrayList arrayList = new ArrayList();
-        arrayList.add(j.aa.f12391a);
+        arrayList.add(j.aa.f13177a);
         return arrayList;
     }
 
     public final s s() {
-        this.f14717E = true;
+        this.f15503E = true;
         return this;
     }
 
@@ -323,14 +323,14 @@ public class s extends a {
 
     @Override // com.anythink.core.common.m.a
     public final void a(int i, q qVar) {
-        this.f14720d = System.currentTimeMillis();
-        this.f14721e = SystemClock.elapsedRealtime();
+        this.f15506d = System.currentTimeMillis();
+        this.f15507e = SystemClock.elapsedRealtime();
         super.a(i, qVar);
     }
 
     @Override // com.anythink.core.common.m.a
     public void b(AdError adError) {
-        com.anythink.core.common.u.e.a("placement", adError.getPlatformCode(), adError.getPlatformMSG(), b(), this.i, "", "", this.f14715C);
+        com.anythink.core.common.u.e.a("placement", adError.getPlatformCode(), adError.getPlatformMSG(), b(), this.i, "", "", this.f15501C);
     }
 
     private void a(JSONObject jSONObject) {
@@ -343,15 +343,15 @@ public class s extends a {
     @Override // com.anythink.core.common.m.a
     public Object a(Object obj) {
         try {
-            bm bmVar = this.f14718F;
+            bm bmVar = this.f15504F;
             if (bmVar != null) {
-                bmVar.b(this.f14717E);
+                bmVar.b(this.f15503E);
             }
-            com.anythink.core.common.u.e.a("placement", this.i, this.f14720d, System.currentTimeMillis(), SystemClock.elapsedRealtime() - this.f14721e, this.f14715C);
+            com.anythink.core.common.u.e.a("placement", this.i, this.f15506d, System.currentTimeMillis(), SystemClock.elapsedRealtime() - this.f15507e, this.f15501C);
             if (obj instanceof JSONObject) {
                 JSONObject jSONObject = (JSONObject) obj;
-                if (this.f14719c != null) {
-                    jSONObject.put(f14711b, new JSONObject(this.f14719c));
+                if (this.f15505c != null) {
+                    jSONObject.put(f15497b, new JSONObject(this.f15505c));
                 }
                 return jSONObject;
             }
@@ -361,13 +361,13 @@ public class s extends a {
     }
 
     @Override // com.anythink.core.common.m.a
-    public final void a(int i, int i6, String str, AdError adError) {
-        if (this.f14411r != null) {
+    public final void a(int i, int i4, String str, AdError adError) {
+        if (this.f15197r != null) {
             u();
-            this.f14411r.onLoadError(i, str, adError);
+            this.f15197r.onLoadError(i, str, adError);
         }
         b(adError);
-        a(i6);
+        a(i4);
     }
 
     @Override // com.anythink.core.common.m.a
@@ -380,7 +380,7 @@ public class s extends a {
     }
 
     public final s a(String str) {
-        this.f14716D = str;
+        this.f15502D = str;
         return this;
     }
 }

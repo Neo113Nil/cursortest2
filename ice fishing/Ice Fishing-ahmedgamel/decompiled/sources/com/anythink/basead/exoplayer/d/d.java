@@ -24,62 +24,62 @@ import java.util.UUID;
 public final class d<T extends i> implements b.c<T>, g<T> {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f6823a = "PRCustomData";
+    public static final String f7609a = "PRCustomData";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f6824b = 0;
+    public static final int f7610b = 0;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f6825c = 1;
+    public static final int f7611c = 1;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f6826d = 2;
+    public static final int f7612d = 2;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f6827e = 3;
+    public static final int f7613e = 3;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final int f6828f = 3;
+    public static final int f7614f = 3;
 
     /* renamed from: h, reason: collision with root package name */
-    private static final String f6829h = "DefaultDrmSessionMgr";
+    private static final String f7615h = "DefaultDrmSessionMgr";
 
     /* renamed from: g, reason: collision with root package name */
-    volatile d<T>.c f6830g;
+    volatile d<T>.c f7616g;
     private final UUID i;
 
     /* renamed from: j, reason: collision with root package name */
-    private final j<T> f6831j;
+    private final j<T> f7617j;
 
     /* renamed from: k, reason: collision with root package name */
-    private final n f6832k;
+    private final n f7618k;
 
     /* renamed from: l, reason: collision with root package name */
-    private final HashMap<String, String> f6833l;
+    private final HashMap<String, String> f7619l;
 
     /* renamed from: m, reason: collision with root package name */
-    private final c.a f6834m;
+    private final c.a f7620m;
 
     /* renamed from: n, reason: collision with root package name */
-    private final boolean f6835n;
+    private final boolean f7621n;
 
     /* renamed from: o, reason: collision with root package name */
-    private final int f6836o;
+    private final int f7622o;
 
     /* renamed from: p, reason: collision with root package name */
-    private final List<com.anythink.basead.exoplayer.d.b<T>> f6837p;
+    private final List<com.anythink.basead.exoplayer.d.b<T>> f7623p;
 
     /* renamed from: q, reason: collision with root package name */
-    private final List<com.anythink.basead.exoplayer.d.b<T>> f6838q;
+    private final List<com.anythink.basead.exoplayer.d.b<T>> f7624q;
 
     /* renamed from: r, reason: collision with root package name */
-    private Looper f6839r;
+    private Looper f7625r;
 
     /* renamed from: s, reason: collision with root package name */
-    private int f6840s;
+    private int f7626s;
 
     /* renamed from: t, reason: collision with root package name */
-    private byte[] f6841t;
+    private byte[] f7627t;
 
     @Deprecated
     public interface a extends com.anythink.basead.exoplayer.d.c {
@@ -91,8 +91,8 @@ public final class d<T extends i> implements b.c<T>, g<T> {
 
         @Override // com.anythink.basead.exoplayer.d.j.f
         public final void a(byte[] bArr, int i) {
-            if (d.this.f6840s == 0) {
-                d.this.f6830g.obtainMessage(i, bArr).sendToTarget();
+            if (d.this.f7626s == 0) {
+                d.this.f7616g.obtainMessage(i, bArr).sendToTarget();
             }
         }
 
@@ -109,7 +109,7 @@ public final class d<T extends i> implements b.c<T>, g<T> {
         @Override // android.os.Handler
         public final void handleMessage(Message message) {
             byte[] bArr = (byte[]) message.obj;
-            for (com.anythink.basead.exoplayer.d.b bVar : d.this.f6837p) {
+            for (com.anythink.basead.exoplayer.d.b bVar : d.this.f7623p) {
                 if (bVar.b(bArr)) {
                     bVar.a(message.what);
                     return;
@@ -147,7 +147,7 @@ public final class d<T extends i> implements b.c<T>, g<T> {
     }
 
     private byte[] b(String str) {
-        return this.f6831j.b(str);
+        return this.f7617j.b(str);
     }
 
     private d(UUID uuid, j<T> jVar, n nVar, HashMap<String, String> hashMap) {
@@ -160,27 +160,27 @@ public final class d<T extends i> implements b.c<T>, g<T> {
             hashMap = null;
         } else {
             hashMap = new HashMap();
-            hashMap.put(f6823a, str);
+            hashMap.put(f7609a, str);
         }
         return a(com.anythink.basead.exoplayer.b.bl, nVar, (HashMap<String, String>) hashMap);
     }
 
     @Deprecated
-    private d(UUID uuid, j<T> jVar, n nVar, HashMap<String, String> hashMap, Handler handler, com.anythink.basead.exoplayer.d.c cVar, boolean z3) {
-        this(uuid, jVar, nVar, hashMap, z3);
+    private d(UUID uuid, j<T> jVar, n nVar, HashMap<String, String> hashMap, Handler handler, com.anythink.basead.exoplayer.d.c cVar, boolean z6) {
+        this(uuid, jVar, nVar, hashMap, z6);
         if (handler == null || cVar == null) {
             return;
         }
         a(handler, cVar);
     }
 
-    private d(UUID uuid, j<T> jVar, n nVar, HashMap<String, String> hashMap, boolean z3) {
-        this(uuid, jVar, nVar, hashMap, z3, 3);
+    private d(UUID uuid, j<T> jVar, n nVar, HashMap<String, String> hashMap, boolean z6) {
+        this(uuid, jVar, nVar, hashMap, z6, 3);
     }
 
     @Deprecated
-    private d(UUID uuid, j<T> jVar, n nVar, HashMap<String, String> hashMap, Handler handler, com.anythink.basead.exoplayer.d.c cVar, boolean z3, int i) {
-        this(uuid, jVar, nVar, hashMap, z3, i);
+    private d(UUID uuid, j<T> jVar, n nVar, HashMap<String, String> hashMap, Handler handler, com.anythink.basead.exoplayer.d.c cVar, boolean z6, int i) {
+        this(uuid, jVar, nVar, hashMap, z6, i);
         if (handler == null || cVar == null) {
             return;
         }
@@ -196,22 +196,22 @@ public final class d<T extends i> implements b.c<T>, g<T> {
         return a9;
     }
 
-    private d(UUID uuid, j<T> jVar, n nVar, HashMap<String, String> hashMap, boolean z3, int i) {
+    private d(UUID uuid, j<T> jVar, n nVar, HashMap<String, String> hashMap, boolean z6, int i) {
         com.anythink.basead.exoplayer.k.a.a(uuid);
         com.anythink.basead.exoplayer.k.a.a(jVar);
         com.anythink.basead.exoplayer.k.a.a(!com.anythink.basead.exoplayer.b.bi.equals(uuid), "Use C.CLEARKEY_UUID instead");
         this.i = uuid;
-        this.f6831j = jVar;
-        this.f6832k = nVar;
-        this.f6833l = hashMap;
-        this.f6834m = new c.a();
-        this.f6835n = z3;
-        this.f6836o = i;
+        this.f7617j = jVar;
+        this.f7618k = nVar;
+        this.f7619l = hashMap;
+        this.f7620m = new c.a();
+        this.f7621n = z6;
+        this.f7622o = i;
         byte b9 = 0;
-        this.f6840s = 0;
-        this.f6837p = new ArrayList();
-        this.f6838q = new ArrayList();
-        if (z3) {
+        this.f7626s = 0;
+        this.f7623p = new ArrayList();
+        this.f7624q = new ArrayList();
+        if (z6) {
             jVar.a("sessionSharing", "enable");
         }
         jVar.a(new b(this, b9));
@@ -222,83 +222,83 @@ public final class d<T extends i> implements b.c<T>, g<T> {
     }
 
     public final void a(Handler handler, com.anythink.basead.exoplayer.d.c cVar) {
-        this.f6834m.a(handler, cVar);
+        this.f7620m.a(handler, cVar);
     }
 
     private void a(com.anythink.basead.exoplayer.d.c cVar) {
-        this.f6834m.a(cVar);
+        this.f7620m.a(cVar);
     }
 
     private String a(String str) {
-        return this.f6831j.a(str);
+        return this.f7617j.a(str);
     }
 
     private void a(String str, String str2) {
-        this.f6831j.a(str, str2);
+        this.f7617j.a(str, str2);
     }
 
     private void a(String str, byte[] bArr) {
-        this.f6831j.a(str, bArr);
+        this.f7617j.a(str, bArr);
     }
 
     private void a(int i, byte[] bArr) {
-        com.anythink.basead.exoplayer.k.a.b(this.f6837p.isEmpty());
+        com.anythink.basead.exoplayer.k.a.b(this.f7623p.isEmpty());
         if (i == 1 || i == 3) {
             com.anythink.basead.exoplayer.k.a.a(bArr);
         }
-        this.f6840s = i;
-        this.f6841t = bArr;
+        this.f7626s = i;
+        this.f7627t = bArr;
     }
 
     @Override // com.anythink.basead.exoplayer.d.g
     public final boolean a(com.anythink.basead.exoplayer.d.e eVar) {
-        if (this.f6841t != null) {
+        if (this.f7627t != null) {
             return true;
         }
         if (a(eVar, this.i, true) == null) {
-            if (eVar.f6845b != 1 || !eVar.a(0).a(com.anythink.basead.exoplayer.b.bi)) {
+            if (eVar.f7631b != 1 || !eVar.a(0).a(com.anythink.basead.exoplayer.b.bi)) {
                 return false;
             }
-            Log.w(f6829h, "DrmInitData only contains common PSSH SchemeData. Assuming support for: " + this.i);
+            Log.w(f7615h, "DrmInitData only contains common PSSH SchemeData. Assuming support for: " + this.i);
         }
-        String str = eVar.f6844a;
+        String str = eVar.f7630a;
         if (str == null || com.anythink.basead.exoplayer.b.bd.equals(str)) {
             return true;
         }
-        return !(com.anythink.basead.exoplayer.b.be.equals(str) || com.anythink.basead.exoplayer.b.bg.equals(str) || com.anythink.basead.exoplayer.b.bf.equals(str)) || af.f8346a >= 25;
+        return !(com.anythink.basead.exoplayer.b.be.equals(str) || com.anythink.basead.exoplayer.b.bg.equals(str) || com.anythink.basead.exoplayer.b.bf.equals(str)) || af.f9132a >= 25;
     }
 
     @Override // com.anythink.basead.exoplayer.d.g
     public final f<T> a(Looper looper, com.anythink.basead.exoplayer.d.e eVar) {
         e.a aVar;
-        Looper looper2 = this.f6839r;
+        Looper looper2 = this.f7625r;
         byte b9 = 0;
         com.anythink.basead.exoplayer.k.a.b(looper2 == null || looper2 == looper);
-        if (this.f6837p.isEmpty()) {
-            this.f6839r = looper;
-            if (this.f6830g == null) {
-                this.f6830g = new c(looper);
+        if (this.f7623p.isEmpty()) {
+            this.f7625r = looper;
+            if (this.f7616g == null) {
+                this.f7616g = new c(looper);
             }
         }
         com.anythink.basead.exoplayer.d.b<T> bVar = null;
-        if (this.f6841t == null) {
+        if (this.f7627t == null) {
             e.a a9 = a(eVar, this.i, false);
             if (a9 == null) {
                 C0020d c0020d = new C0020d(this.i, b9);
-                this.f6834m.a(c0020d);
+                this.f7620m.a(c0020d);
                 return new h(new f.a(c0020d));
             }
             aVar = a9;
         } else {
             aVar = null;
         }
-        if (!this.f6835n) {
-            if (!this.f6837p.isEmpty()) {
-                bVar = this.f6837p.get(0);
+        if (!this.f7621n) {
+            if (!this.f7623p.isEmpty()) {
+                bVar = this.f7623p.get(0);
             }
         } else {
-            byte[] bArr = aVar != null ? aVar.f6850c : null;
-            Iterator<com.anythink.basead.exoplayer.d.b<T>> it = this.f6837p.iterator();
+            byte[] bArr = aVar != null ? aVar.f7636c : null;
+            Iterator<com.anythink.basead.exoplayer.d.b<T>> it = this.f7623p.iterator();
             while (true) {
                 if (!it.hasNext()) {
                     break;
@@ -311,8 +311,8 @@ public final class d<T extends i> implements b.c<T>, g<T> {
             }
         }
         if (bVar == null) {
-            com.anythink.basead.exoplayer.d.b<T> bVar2 = new com.anythink.basead.exoplayer.d.b<>(this.i, this.f6831j, this, aVar, this.f6840s, this.f6841t, this.f6833l, this.f6832k, looper, this.f6834m, this.f6836o);
-            this.f6837p.add(bVar2);
+            com.anythink.basead.exoplayer.d.b<T> bVar2 = new com.anythink.basead.exoplayer.d.b<>(this.i, this.f7617j, this, aVar, this.f7626s, this.f7627t, this.f7619l, this.f7618k, looper, this.f7620m, this.f7622o);
+            this.f7623p.add(bVar2);
             bVar = bVar2;
         }
         bVar.a();
@@ -326,45 +326,45 @@ public final class d<T extends i> implements b.c<T>, g<T> {
         }
         com.anythink.basead.exoplayer.d.b<T> bVar = (com.anythink.basead.exoplayer.d.b) fVar;
         if (bVar.b()) {
-            this.f6837p.remove(bVar);
-            if (this.f6838q.size() > 1 && this.f6838q.get(0) == bVar) {
-                this.f6838q.get(1).c();
+            this.f7623p.remove(bVar);
+            if (this.f7624q.size() > 1 && this.f7624q.get(0) == bVar) {
+                this.f7624q.get(1).c();
             }
-            this.f6838q.remove(bVar);
+            this.f7624q.remove(bVar);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.d.b.c
     public final void a(com.anythink.basead.exoplayer.d.b<T> bVar) {
-        this.f6838q.add(bVar);
-        if (this.f6838q.size() == 1) {
+        this.f7624q.add(bVar);
+        if (this.f7624q.size() == 1) {
             bVar.c();
         }
     }
 
     @Override // com.anythink.basead.exoplayer.d.b.c
     public final void a() {
-        Iterator<com.anythink.basead.exoplayer.d.b<T>> it = this.f6838q.iterator();
+        Iterator<com.anythink.basead.exoplayer.d.b<T>> it = this.f7624q.iterator();
         while (it.hasNext()) {
             it.next().d();
         }
-        this.f6838q.clear();
+        this.f7624q.clear();
     }
 
     @Override // com.anythink.basead.exoplayer.d.b.c
     public final void a(Exception exc) {
-        Iterator<com.anythink.basead.exoplayer.d.b<T>> it = this.f6838q.iterator();
+        Iterator<com.anythink.basead.exoplayer.d.b<T>> it = this.f7624q.iterator();
         while (it.hasNext()) {
             it.next().a(exc);
         }
-        this.f6838q.clear();
+        this.f7624q.clear();
     }
 
-    private static e.a a(com.anythink.basead.exoplayer.d.e eVar, UUID uuid, boolean z3) {
-        ArrayList arrayList = new ArrayList(eVar.f6845b);
-        for (int i = 0; i < eVar.f6845b; i++) {
+    private static e.a a(com.anythink.basead.exoplayer.d.e eVar, UUID uuid, boolean z6) {
+        ArrayList arrayList = new ArrayList(eVar.f7631b);
+        for (int i = 0; i < eVar.f7631b; i++) {
             e.a a9 = eVar.a(i);
-            if ((a9.a(uuid) || (com.anythink.basead.exoplayer.b.bj.equals(uuid) && a9.a(com.anythink.basead.exoplayer.b.bi))) && (a9.f6850c != null || z3)) {
+            if ((a9.a(uuid) || (com.anythink.basead.exoplayer.b.bj.equals(uuid) && a9.a(com.anythink.basead.exoplayer.b.bi))) && (a9.f7636c != null || z6)) {
                 arrayList.add(a9);
             }
         }
@@ -372,11 +372,11 @@ public final class d<T extends i> implements b.c<T>, g<T> {
             return null;
         }
         if (com.anythink.basead.exoplayer.b.bk.equals(uuid)) {
-            for (int i6 = 0; i6 < arrayList.size(); i6++) {
-                e.a aVar = (e.a) arrayList.get(i6);
-                int b9 = aVar.a() ? com.anythink.basead.exoplayer.e.a.h.b(aVar.f6850c) : -1;
-                int i9 = af.f8346a;
-                if ((i9 < 23 && b9 == 0) || (i9 >= 23 && b9 == 1)) {
+            for (int i4 = 0; i4 < arrayList.size(); i4++) {
+                e.a aVar = (e.a) arrayList.get(i4);
+                int b9 = aVar.a() ? com.anythink.basead.exoplayer.e.a.h.b(aVar.f7636c) : -1;
+                int i6 = af.f9132a;
+                if ((i6 < 23 && b9 == 0) || (i6 >= 23 && b9 == 1)) {
                     return aVar;
                 }
             }
@@ -400,7 +400,7 @@ public final class d<T extends i> implements b.c<T>, g<T> {
             hashMap = null;
         } else {
             hashMap = new HashMap();
-            hashMap.put(f6823a, str);
+            hashMap.put(f7609a, str);
         }
         d<k> a9 = a(com.anythink.basead.exoplayer.b.bl, nVar, (HashMap<String, String>) hashMap);
         if (handler != null && cVar != null) {

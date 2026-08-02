@@ -12,21 +12,21 @@ import com.anythink.core.common.d.t;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private static volatile b f21224a;
+    private static volatile b f22011a;
 
     private static b a() {
-        if (f21224a == null) {
+        if (f22011a == null) {
             synchronized (b.class) {
                 try {
-                    if (f21224a == null) {
-                        f21224a = new b();
+                    if (f22011a == null) {
+                        f22011a = new b();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f21224a;
+        return f22011a;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:41:0x0068 A[EXC_TOP_SPLITTER, SYNTHETIC] */
@@ -142,7 +142,7 @@ public class b {
             createBitmap.eraseColor(Color.parseColor("#FFFFFF"));
             return createBitmap;
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.printStackTrace();
             }
             return null;

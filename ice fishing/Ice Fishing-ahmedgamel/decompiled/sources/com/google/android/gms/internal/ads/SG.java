@@ -15,8 +15,8 @@ public final class SG {
         }
         try {
             Mac.getInstance("AESCMAC", provider);
-            eg.f24576d.b();
-            new SecretKeySpec(((C3240gK) eg.f24575c.f29859u).b(), "AES");
+            eg.f25337d.b();
+            new SecretKeySpec(((C3263gK) eg.f25336c.f30647u).b(), "AES");
             return sg;
         } catch (NoSuchAlgorithmException e9) {
             throw new GeneralSecurityException("AES-CMAC not available.", e9);

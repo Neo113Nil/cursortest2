@@ -1,41 +1,28 @@
 package B;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import android.util.SparseArray;
+import android.graphics.Matrix;
+import android.view.View;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 /* loaded from: classes.dex */
-public final class h extends V.b {
-    public static final Parcelable.Creator<h> CREATOR = new g(0);
+public abstract class h {
 
-    /* renamed from: v, reason: collision with root package name */
-    public SparseArray f88v;
+    /* renamed from: a, reason: collision with root package name */
+    public static final ThreadLocal f246a = new ThreadLocal();
 
-    public h(Parcel parcel, ClassLoader classLoader) {
-        super(parcel, classLoader);
-        int readInt = parcel.readInt();
-        int[] iArr = new int[readInt];
-        parcel.readIntArray(iArr);
-        Parcelable[] readParcelableArray = parcel.readParcelableArray(classLoader);
-        this.f88v = new SparseArray(readInt);
-        for (int i = 0; i < readInt; i++) {
-            this.f88v.append(iArr[i], readParcelableArray[i]);
+    /* renamed from: b, reason: collision with root package name */
+    public static final ThreadLocal f247b = new ThreadLocal();
+
+    public static void a(CoordinatorLayout coordinatorLayout, View view, Matrix matrix) {
+        Object parent = view.getParent();
+        if ((parent instanceof View) && parent != coordinatorLayout) {
+            a(coordinatorLayout, (View) parent, matrix);
+            matrix.preTranslate(-r0.getScrollX(), -r0.getScrollY());
         }
-    }
-
-    @Override // V.b, android.os.Parcelable
-    public final void writeToParcel(Parcel parcel, int i) {
-        super.writeToParcel(parcel, i);
-        SparseArray sparseArray = this.f88v;
-        int size = sparseArray != null ? sparseArray.size() : 0;
-        parcel.writeInt(size);
-        int[] iArr = new int[size];
-        Parcelable[] parcelableArr = new Parcelable[size];
-        for (int i6 = 0; i6 < size; i6++) {
-            iArr[i6] = this.f88v.keyAt(i6);
-            parcelableArr[i6] = (Parcelable) this.f88v.valueAt(i6);
+        matrix.preTranslate(view.getLeft(), view.getTop());
+        if (view.getMatrix().isIdentity()) {
+            return;
         }
-        parcel.writeIntArray(iArr);
-        parcel.writeParcelableArray(parcelableArr, i);
+        matrix.preConcat(view.getMatrix());
     }
 }

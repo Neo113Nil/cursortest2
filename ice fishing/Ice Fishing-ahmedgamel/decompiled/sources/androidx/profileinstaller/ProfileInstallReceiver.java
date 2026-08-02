@@ -1,6 +1,5 @@
 package androidx.profileinstaller;
 
-import F1.a;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -10,8 +9,9 @@ import android.os.Bundle;
 import android.os.Process;
 import android.util.Log;
 import java.io.File;
-import n.ExecutorC4742a;
-import r0.AbstractC4946d;
+import l.C4659e;
+import n.ExecutorC4756a;
+import r0.AbstractC4895d;
 
 /* loaded from: classes.dex */
 public class ProfileInstallReceiver extends BroadcastReceiver {
@@ -23,7 +23,7 @@ public class ProfileInstallReceiver extends BroadcastReceiver {
         }
         String action = intent.getAction();
         if ("androidx.profileinstaller.action.INSTALL_PROFILE".equals(action)) {
-            AbstractC4946d.t(context, new ExecutorC4742a(1), new a(28, this), true);
+            AbstractC4895d.t(context, new ExecutorC4756a(1), new C4659e(5, this), true);
             return;
         }
         if ("androidx.profileinstaller.action.SKIP_FILE".equals(action)) {
@@ -39,13 +39,13 @@ public class ProfileInstallReceiver extends BroadcastReceiver {
                     }
                     return;
                 }
-                a aVar = new a(28, this);
+                C4659e c4659e = new C4659e(5, this);
                 try {
-                    AbstractC4946d.e(context.getPackageManager().getPackageInfo(context.getApplicationContext().getPackageName(), 0), context.getFilesDir());
-                    aVar.a(10, null);
+                    AbstractC4895d.e(context.getPackageManager().getPackageInfo(context.getApplicationContext().getPackageName(), 0), context.getFilesDir());
+                    c4659e.a(10, null);
                     return;
                 } catch (PackageManager.NameNotFoundException e9) {
-                    aVar.a(7, e9);
+                    c4659e.a(7, e9);
                     return;
                 }
             }
@@ -60,15 +60,15 @@ public class ProfileInstallReceiver extends BroadcastReceiver {
                 return;
             }
             String string2 = extras.getString("EXTRA_BENCHMARK_OPERATION");
-            a aVar2 = new a(28, this);
+            C4659e c4659e2 = new C4659e(5, this);
             if (!"DROP_SHADER_CACHE".equals(string2)) {
-                aVar2.a(16, null);
+                c4659e2.a(16, null);
                 return;
             }
-            if (AbstractC4946d.c(Build.VERSION.SDK_INT >= 34 ? context.createDeviceProtectedStorageContext().getCacheDir() : context.createDeviceProtectedStorageContext().getCodeCacheDir())) {
-                aVar2.a(14, null);
+            if (AbstractC4895d.c(Build.VERSION.SDK_INT >= 34 ? context.createDeviceProtectedStorageContext().getCacheDir() : context.createDeviceProtectedStorageContext().getCodeCacheDir())) {
+                c4659e2.a(14, null);
             } else {
-                aVar2.a(15, null);
+                c4659e2.a(15, null);
             }
         }
     }

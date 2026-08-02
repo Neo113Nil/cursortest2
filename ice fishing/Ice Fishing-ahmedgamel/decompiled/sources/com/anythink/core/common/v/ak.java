@@ -43,15 +43,15 @@ public final class ak {
         if (bvVar == null || (a9 = com.anythink.core.common.a.a().a(str, bvVar)) == null) {
             return null;
         }
-        List<bz.a> f3 = a9.a((com.anythink.core.common.h.ad) null).f();
+        List<bz.a> f2 = a9.a((com.anythink.core.common.h.ad) null).f();
         com.anythink.core.common.h.ad a10 = com.anythink.core.b.f.a().a(str, bvVar);
         if (a10 != null && !a10.a()) {
-            if (f3 == null) {
-                f3 = new ArrayList<>();
+            if (f2 == null) {
+                f2 = new ArrayList<>();
             }
-            f3.add(new bz.a(bvVar, a10));
+            f2.add(new bz.a(bvVar, a10));
         }
-        return f3;
+        return f2;
     }
 
     public static String a(bv bvVar, ATBaseAdAdapter aTBaseAdAdapter) {

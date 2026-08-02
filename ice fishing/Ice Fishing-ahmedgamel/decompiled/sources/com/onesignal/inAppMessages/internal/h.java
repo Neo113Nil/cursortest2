@@ -1,6 +1,5 @@
 package com.onesignal.inAppMessages.internal;
 
-import D.y;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -60,7 +59,7 @@ public final class h {
         long j6 = currentTimeMillis - this.lastDisplayTime;
         StringBuilder sb = new StringBuilder("OSInAppMessage lastDisplayTime: ");
         sb.append(this.lastDisplayTime);
-        y.x(sb, " currentTimeInSeconds: ", currentTimeMillis, " diffInSeconds: ");
+        com.IceFishing.LiveIceFishing.k.z(sb, " currentTimeInSeconds: ", currentTimeMillis, " diffInSeconds: ");
         sb.append(j6);
         sb.append(" displayDelay: ");
         sb.append(this.displayDelay);
@@ -95,9 +94,9 @@ public final class h {
     }
 
     public final boolean shouldDisplayAgain() {
-        boolean z3 = this.displayQuantity < this.displayLimit;
-        com.onesignal.debug.internal.logging.b.debug$default("OSInAppMessage shouldDisplayAgain: " + z3, null, 2, null);
-        return z3;
+        boolean z6 = this.displayQuantity < this.displayLimit;
+        com.onesignal.debug.internal.logging.b.debug$default("OSInAppMessage shouldDisplayAgain: " + z6, null, 2, null);
+        return z6;
     }
 
     public final JSONObject toJSONObject() {

@@ -7,7 +7,7 @@ public final class e {
     private Boolean clearGroupOnSummaryClick;
     private Boolean disableGMSMissingPrompt;
     private Boolean enterprise;
-    private C5241a fcmParams;
+    private C5208a fcmParams;
     private Boolean firebaseAnalytics;
     private String googleProjectNumber;
     private d influenceParams;
@@ -21,7 +21,7 @@ public final class e {
     private Boolean unsubscribeWhenNotificationsDisabled;
     private Boolean useIdentityVerification;
 
-    public e(String str, Boolean bool, Boolean bool2, JSONArray jSONArray, Boolean bool3, Boolean bool4, Boolean bool5, Boolean bool6, Boolean bool7, Boolean bool8, Boolean bool9, Boolean bool10, Long l9, d influenceParams, C5241a fcmParams, h remoteLoggingParams) {
+    public e(String str, Boolean bool, Boolean bool2, JSONArray jSONArray, Boolean bool3, Boolean bool4, Boolean bool5, Boolean bool6, Boolean bool7, Boolean bool8, Boolean bool9, Boolean bool10, Long l9, d influenceParams, C5208a fcmParams, h remoteLoggingParams) {
         kotlin.jvm.internal.h.e(influenceParams, "influenceParams");
         kotlin.jvm.internal.h.e(fcmParams, "fcmParams");
         kotlin.jvm.internal.h.e(remoteLoggingParams, "remoteLoggingParams");
@@ -55,7 +55,7 @@ public final class e {
         return this.enterprise;
     }
 
-    public final C5241a getFcmParams() {
+    public final C5208a getFcmParams() {
         return this.fcmParams;
     }
 
@@ -119,9 +119,9 @@ public final class e {
         this.enterprise = bool;
     }
 
-    public final void setFcmParams(C5241a c5241a) {
-        kotlin.jvm.internal.h.e(c5241a, "<set-?>");
-        this.fcmParams = c5241a;
+    public final void setFcmParams(C5208a c5208a) {
+        kotlin.jvm.internal.h.e(c5208a, "<set-?>");
+        this.fcmParams = c5208a;
     }
 
     public final void setFirebaseAnalytics(Boolean bool) {
@@ -169,7 +169,7 @@ public final class e {
         this.useIdentityVerification = bool;
     }
 
-    public /* synthetic */ e(String str, Boolean bool, Boolean bool2, JSONArray jSONArray, Boolean bool3, Boolean bool4, Boolean bool5, Boolean bool6, Boolean bool7, Boolean bool8, Boolean bool9, Boolean bool10, Long l9, d dVar, C5241a c5241a, h hVar, int i, kotlin.jvm.internal.e eVar) {
-        this((i & 1) != 0 ? null : str, (i & 2) != 0 ? null : bool, (i & 4) != 0 ? null : bool2, (i & 8) != 0 ? null : jSONArray, (i & 16) != 0 ? null : bool3, (i & 32) != 0 ? null : bool4, (i & 64) != 0 ? null : bool5, (i & 128) != 0 ? null : bool6, (i & 256) != 0 ? null : bool7, (i & 512) != 0 ? null : bool8, (i & 1024) != 0 ? null : bool9, (i & 2048) != 0 ? null : bool10, (i & 4096) != 0 ? null : l9, dVar, c5241a, hVar);
+    public /* synthetic */ e(String str, Boolean bool, Boolean bool2, JSONArray jSONArray, Boolean bool3, Boolean bool4, Boolean bool5, Boolean bool6, Boolean bool7, Boolean bool8, Boolean bool9, Boolean bool10, Long l9, d dVar, C5208a c5208a, h hVar, int i, kotlin.jvm.internal.e eVar) {
+        this((i & 1) != 0 ? null : str, (i & 2) != 0 ? null : bool, (i & 4) != 0 ? null : bool2, (i & 8) != 0 ? null : jSONArray, (i & 16) != 0 ? null : bool3, (i & 32) != 0 ? null : bool4, (i & 64) != 0 ? null : bool5, (i & 128) != 0 ? null : bool6, (i & 256) != 0 ? null : bool7, (i & 512) != 0 ? null : bool8, (i & 1024) != 0 ? null : bool9, (i & 2048) != 0 ? null : bool10, (i & 4096) != 0 ? null : l9, dVar, c5208a, hVar);
     }
 }

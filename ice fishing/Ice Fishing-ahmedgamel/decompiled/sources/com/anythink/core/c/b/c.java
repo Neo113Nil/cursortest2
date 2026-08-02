@@ -14,17 +14,17 @@ import org.json.JSONObject;
 public final class c implements b {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f12037a = "PlacementStatRecWrapper";
+    private static final String f12823a = "PlacementStatRecWrapper";
 
     /* renamed from: c, reason: collision with root package name */
-    private final b f12039c = new d();
+    private final b f12825c = new d();
 
     /* renamed from: b, reason: collision with root package name */
-    private final Handler f12038b = com.anythink.core.common.v.b.b.a().a(11);
+    private final Handler f12824b = com.anythink.core.common.v.b.b.a().a(11);
 
     @Override // com.anythink.core.c.b.b
     public final void b(String str) {
-        b bVar = this.f12039c;
+        b bVar = this.f12825c;
         if (bVar != null) {
             bVar.b(str);
         }
@@ -35,8 +35,8 @@ public final class c implements b {
         a(new Runnable() { // from class: com.anythink.core.c.b.c.1
             @Override // java.lang.Runnable
             public final void run() {
-                if (c.this.f12039c != null) {
-                    c.this.f12039c.a(str, str2, i, aTAdRequest, bvVar);
+                if (c.this.f12825c != null) {
+                    c.this.f12825c.a(str, str2, i, aTAdRequest, bvVar);
                 }
             }
         });
@@ -47,20 +47,20 @@ public final class c implements b {
         a(new Runnable() { // from class: com.anythink.core.c.b.c.2
             @Override // java.lang.Runnable
             public final void run() {
-                if (c.this.f12039c != null) {
-                    c.this.f12039c.a(buVar, bvVar);
+                if (c.this.f12825c != null) {
+                    c.this.f12825c.a(buVar, bvVar);
                 }
             }
         });
     }
 
     @Override // com.anythink.core.c.b.b
-    public final List<com.anythink.core.c.a.a> a(int i, String str, int i6) {
+    public final List<com.anythink.core.c.a.a> a(int i, String str, int i4) {
         if (Looper.myLooper() == Looper.getMainLooper()) {
-            Log.w(f12037a, "The getStatisticsBeanList method cannot be called from the main thread.");
+            Log.w(f12823a, "The getStatisticsBeanList method cannot be called from the main thread.");
         }
-        b bVar = this.f12039c;
-        return bVar != null ? bVar.a(i, str, i6) : new ArrayList();
+        b bVar = this.f12825c;
+        return bVar != null ? bVar.a(i, str, i4) : new ArrayList();
     }
 
     @Override // com.anythink.core.c.b.b
@@ -71,29 +71,29 @@ public final class c implements b {
     @Override // com.anythink.core.c.b.b
     public final JSONObject a(String str, int i) {
         if (Looper.myLooper() == Looper.getMainLooper()) {
-            Log.w(f12037a, "The getUserValueParams method cannot be called from the main thread.");
+            Log.w(f12823a, "The getUserValueParams method cannot be called from the main thread.");
         }
-        b bVar = this.f12039c;
+        b bVar = this.f12825c;
         return bVar != null ? bVar.a(str, i) : new JSONObject();
     }
 
     @Override // com.anythink.core.c.b.b
-    public final JSONObject a(String str, int i, int i6) {
+    public final JSONObject a(String str, int i, int i4) {
         if (Looper.myLooper() == Looper.getMainLooper()) {
-            Log.w(f12037a, "The getUserValueParams with count method cannot be called from the main thread.");
+            Log.w(f12823a, "The getUserValueParams with count method cannot be called from the main thread.");
         }
-        b bVar = this.f12039c;
-        return bVar != null ? bVar.a(str, i, i6) : new JSONObject();
+        b bVar = this.f12825c;
+        return bVar != null ? bVar.a(str, i, i4) : new JSONObject();
     }
 
     @Override // com.anythink.core.c.b.b
     public final com.anythink.core.c.a.d a(String str, int i, com.anythink.core.d.f fVar) {
-        b bVar = this.f12039c;
+        b bVar = this.f12825c;
         return bVar != null ? bVar.a(str, i, fVar) : new com.anythink.core.c.a.d();
     }
 
     private void a(Runnable runnable) {
-        Handler handler = this.f12038b;
+        Handler handler = this.f12824b;
         if (handler != null) {
             handler.post(runnable);
         }

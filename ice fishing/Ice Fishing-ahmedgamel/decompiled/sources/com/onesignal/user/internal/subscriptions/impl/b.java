@@ -3,8 +3,8 @@ package com.onesignal.user.internal.subscriptions.impl;
 import I7.l;
 import Z5.e;
 import android.os.Build;
-import b6.InterfaceC0519a;
-import b6.InterfaceC0520b;
+import b6.InterfaceC0527a;
+import b6.InterfaceC0528b;
 import com.onesignal.common.AndroidUtils;
 import com.onesignal.common.modeling.j;
 import com.onesignal.user.internal.g;
@@ -13,8 +13,8 @@ import java.util.Iterator;
 import kotlin.jvm.internal.h;
 import kotlin.jvm.internal.i;
 import u7.v;
-import v7.AbstractC5129j;
-import v7.C5135p;
+import v7.AbstractC5119j;
+import v7.C5125p;
 import x4.f;
 
 /* loaded from: classes2.dex */
@@ -37,7 +37,7 @@ public final class b implements Z5.b, com.onesignal.common.modeling.d, O5.a {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Z5.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(Z5.a it) {
@@ -62,7 +62,7 @@ public final class b implements Z5.b, com.onesignal.common.modeling.d, O5.a {
                 throw new ClassCastException();
             }
             invoke((b6.c) null);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(b6.c it) {
@@ -86,7 +86,7 @@ public final class b implements Z5.b, com.onesignal.common.modeling.d, O5.a {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Z5.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(Z5.a it) {
@@ -107,7 +107,7 @@ public final class b implements Z5.b, com.onesignal.common.modeling.d, O5.a {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Z5.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(Z5.a it) {
@@ -124,7 +124,7 @@ public final class b implements Z5.b, com.onesignal.common.modeling.d, O5.a {
         this._sessionService = _sessionService;
         this._subscriptionModelStore = _subscriptionModelStore;
         this.events = new com.onesignal.common.events.b();
-        this.subscriptions = new Z5.c(C5135p.f41442n, new com.onesignal.user.internal.j());
+        this.subscriptions = new Z5.c(C5125p.f41221n, new com.onesignal.user.internal.j());
         Iterator<com.onesignal.common.modeling.i> it = _subscriptionModelStore.list().iterator();
         while (it.hasNext()) {
             createSubscriptionAndAddToSubscriptionList((Z5.d) it.next());
@@ -157,17 +157,17 @@ public final class b implements Z5.b, com.onesignal.common.modeling.d, O5.a {
 
     private final void createSubscriptionAndAddToSubscriptionList(Z5.d dVar) {
         b6.e createSubscriptionFromModel = createSubscriptionFromModel(dVar);
-        ArrayList M8 = AbstractC5129j.M(getSubscriptions().getCollection());
+        ArrayList K7 = AbstractC5119j.K(getSubscriptions().getCollection());
         if (dVar.getType() == Z5.g.PUSH) {
-            InterfaceC0520b push = getSubscriptions().getPush();
+            InterfaceC0528b push = getSubscriptions().getPush();
             h.c(push, "null cannot be cast to non-null type com.onesignal.user.internal.PushSubscription");
             g gVar = (g) push;
             h.c(createSubscriptionFromModel, "null cannot be cast to non-null type com.onesignal.user.internal.PushSubscription");
             ((g) createSubscriptionFromModel).getChangeHandlersNotifier().subscribeAll(gVar.getChangeHandlersNotifier());
-            M8.remove(gVar);
+            K7.remove(gVar);
         }
-        M8.add(createSubscriptionFromModel);
-        setSubscriptions(new Z5.c(M8, new com.onesignal.user.internal.j()));
+        K7.add(createSubscriptionFromModel);
+        setSubscriptions(new Z5.c(K7, new com.onesignal.user.internal.j()));
         this.events.fire(new a(createSubscriptionFromModel));
     }
 
@@ -212,9 +212,9 @@ public final class b implements Z5.b, com.onesignal.common.modeling.d, O5.a {
     }
 
     private final void removeSubscriptionFromSubscriptionList(b6.e eVar) {
-        ArrayList M8 = AbstractC5129j.M(getSubscriptions().getCollection());
-        M8.remove(eVar);
-        setSubscriptions(new Z5.c(M8, new com.onesignal.user.internal.j()));
+        ArrayList K7 = AbstractC5119j.K(getSubscriptions().getCollection());
+        K7.remove(eVar);
+        setSubscriptions(new Z5.c(K7, new com.onesignal.user.internal.j()));
         this.events.fire(new d(eVar));
     }
 
@@ -257,7 +257,7 @@ public final class b implements Z5.b, com.onesignal.common.modeling.d, O5.a {
 
     @Override // Z5.b
     public Z5.d getPushSubscriptionModel() {
-        InterfaceC0520b push = getSubscriptions().getPush();
+        InterfaceC0528b push = getSubscriptions().getPush();
         h.c(push, "null cannot be cast to non-null type com.onesignal.user.internal.PushSubscription");
         return ((g) push).getModel();
     }
@@ -324,17 +324,17 @@ public final class b implements Z5.b, com.onesignal.common.modeling.d, O5.a {
                 break;
             }
             obj = it.next();
-            InterfaceC0519a interfaceC0519a = (InterfaceC0519a) obj;
-            if (interfaceC0519a instanceof com.onesignal.user.internal.c) {
-                com.onesignal.user.internal.c cVar = (com.onesignal.user.internal.c) interfaceC0519a;
+            InterfaceC0527a interfaceC0527a = (InterfaceC0527a) obj;
+            if (interfaceC0527a instanceof com.onesignal.user.internal.c) {
+                com.onesignal.user.internal.c cVar = (com.onesignal.user.internal.c) interfaceC0527a;
                 if (h.a(cVar.getModel().getAddress(), email) || h.a(cVar.getModel().getAddress(), hash)) {
                     break;
                 }
             }
         }
-        InterfaceC0519a interfaceC0519a2 = (InterfaceC0519a) obj;
-        if (interfaceC0519a2 != null) {
-            removeSubscriptionFromModels(interfaceC0519a2);
+        InterfaceC0527a interfaceC0527a2 = (InterfaceC0527a) obj;
+        if (interfaceC0527a2 != null) {
+            removeSubscriptionFromModels(interfaceC0527a2);
         }
     }
 

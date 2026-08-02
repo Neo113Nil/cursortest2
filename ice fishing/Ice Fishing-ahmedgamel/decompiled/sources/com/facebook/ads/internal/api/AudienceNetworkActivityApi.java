@@ -15,7 +15,7 @@ public interface AudienceNetworkActivityApi {
 
     void finish(int i);
 
-    void onActivityResult(int i, int i6, Intent intent);
+    void onActivityResult(int i, int i4, Intent intent);
 
     void onBackPressed();
 

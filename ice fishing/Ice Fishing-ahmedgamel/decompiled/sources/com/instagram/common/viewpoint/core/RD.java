@@ -16,10 +16,10 @@ public class RD {
     public Interpolator A05;
     public boolean A06;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 4);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 4);
         }
         return new String(copyOfRange);
     }
@@ -37,17 +37,17 @@ public class RD {
         A02();
     }
 
-    public RD(int i, int i6) {
-        this(i, i6, Integer.MIN_VALUE, null);
+    public RD(int i, int i4) {
+        this(i, i4, Integer.MIN_VALUE, null);
     }
 
-    public RD(int i, int i6, int i9, Interpolator interpolator) {
+    public RD(int i, int i4, int i6, Interpolator interpolator) {
         this.A04 = -1;
         this.A06 = false;
         this.A00 = 0;
         this.A02 = i;
-        this.A03 = i6;
-        this.A01 = i9;
+        this.A03 = i4;
+        this.A01 = i6;
         this.A05 = interpolator;
     }
 
@@ -66,10 +66,10 @@ public class RD {
         this.A04 = i;
     }
 
-    public final void A04(int i, int i6, int i9, Interpolator interpolator) {
+    public final void A04(int i, int i4, int i6, Interpolator interpolator) {
         this.A02 = i;
-        this.A03 = i6;
-        this.A01 = i9;
+        this.A03 = i4;
+        this.A01 = i6;
         this.A05 = interpolator;
         this.A06 = true;
     }
@@ -96,15 +96,15 @@ public class RD {
                     c7m.A08.A0A(this.A02, this.A03);
                 } else {
                     RJ rj = c7m.A08;
-                    int i6 = this.A02;
-                    int i9 = this.A03;
+                    int i4 = this.A02;
+                    int i6 = this.A03;
                     if (A08[1].length() != 25) {
-                        rj.A0B(i6, i9, this.A01);
+                        rj.A0B(i4, i6, this.A01);
                     } else {
                         String[] strArr2 = A08;
                         strArr2[7] = "WLL7Xa5cC4PfSmY4OKeTHvZ3MFGwUNY7";
                         strArr2[5] = "1QT7rx7s1eUCzctaxezGIMAtvqNEmmGR";
-                        rj.A0B(i6, i9, this.A01);
+                        rj.A0B(i4, i6, this.A01);
                     }
                 }
             } else {

@@ -6,16 +6,16 @@ package com.google.android.gms.internal.ads;
 public final class ZJ {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final ZJ f28870n;
+    public static final ZJ f29650n;
 
     /* renamed from: u, reason: collision with root package name */
-    public static final ZJ f28871u;
+    public static final ZJ f29651u;
 
     /* renamed from: v, reason: collision with root package name */
-    public static final ZJ f28872v;
+    public static final ZJ f29652v;
 
     /* renamed from: w, reason: collision with root package name */
-    public static final /* synthetic */ ZJ[] f28873w;
+    public static final /* synthetic */ ZJ[] f29653w;
 
     /* JADX INFO: Fake field, exist only in values array */
     ZJ EF0;
@@ -24,15 +24,15 @@ public final class ZJ {
         ZJ zj = new ZJ("SHA1", 0);
         ZJ zj2 = new ZJ("SHA224", 1);
         ZJ zj3 = new ZJ("SHA256", 2);
-        f28870n = zj3;
+        f29650n = zj3;
         ZJ zj4 = new ZJ("SHA384", 3);
-        f28871u = zj4;
+        f29651u = zj4;
         ZJ zj5 = new ZJ("SHA512", 4);
-        f28872v = zj5;
-        f28873w = new ZJ[]{zj, zj2, zj3, zj4, zj5};
+        f29652v = zj5;
+        f29653w = new ZJ[]{zj, zj2, zj3, zj4, zj5};
     }
 
     public static ZJ[] values() {
-        return (ZJ[]) f28873w.clone();
+        return (ZJ[]) f29653w.clone();
     }
 }

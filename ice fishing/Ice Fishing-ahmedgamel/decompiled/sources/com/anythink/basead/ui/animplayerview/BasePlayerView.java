@@ -15,59 +15,59 @@ import java.util.List;
 public abstract class BasePlayerView extends RelativeLayout {
 
     /* renamed from: a, reason: collision with root package name */
-    private int f10457a;
+    private int f11243a;
     protected long i;
 
     /* renamed from: j, reason: collision with root package name */
-    protected long f10458j;
+    protected long f11244j;
 
     /* renamed from: k, reason: collision with root package name */
-    protected int f10459k;
+    protected int f11245k;
 
     /* renamed from: l, reason: collision with root package name */
-    protected int f10460l;
+    protected int f11246l;
 
     /* renamed from: m, reason: collision with root package name */
-    protected int f10461m;
+    protected int f11247m;
 
     /* renamed from: n, reason: collision with root package name */
-    protected boolean f10462n;
+    protected boolean f11248n;
 
     /* renamed from: o, reason: collision with root package name */
-    protected boolean f10463o;
+    protected boolean f11249o;
 
     /* renamed from: p, reason: collision with root package name */
-    protected boolean f10464p;
+    protected boolean f11250p;
 
     /* renamed from: q, reason: collision with root package name */
-    protected boolean f10465q;
+    protected boolean f11251q;
 
     /* renamed from: r, reason: collision with root package name */
-    protected boolean f10466r;
+    protected boolean f11252r;
 
     /* renamed from: s, reason: collision with root package name */
-    protected boolean f10467s;
+    protected boolean f11253s;
 
     /* renamed from: t, reason: collision with root package name */
-    protected boolean f10468t;
+    protected boolean f11254t;
 
     /* renamed from: u, reason: collision with root package name */
-    protected Thread f10469u;
+    protected Thread f11255u;
 
     /* renamed from: v, reason: collision with root package name */
-    protected Handler f10470v;
+    protected Handler f11256v;
 
     /* renamed from: w, reason: collision with root package name */
-    protected a f10471w;
+    protected a f11257w;
 
     /* renamed from: x, reason: collision with root package name */
-    protected w f10472x;
+    protected w f11258x;
 
     /* renamed from: y, reason: collision with root package name */
-    protected x f10473y;
+    protected x f11259y;
 
     /* renamed from: z, reason: collision with root package name */
-    protected boolean f10474z;
+    protected boolean f11260z;
 
     public interface a {
         void a();
@@ -95,31 +95,31 @@ public abstract class BasePlayerView extends RelativeLayout {
 
     public BasePlayerView(Context context) {
         super(context);
-        this.i = com.anythink.basead.exoplayer.f.f7187a;
-        this.f10458j = -1L;
-        this.f10466r = false;
-        this.f10467s = false;
-        this.f10468t = false;
-        this.f10474z = false;
+        this.i = com.anythink.basead.exoplayer.f.f7973a;
+        this.f11244j = -1L;
+        this.f11252r = false;
+        this.f11253s = false;
+        this.f11254t = false;
+        this.f11260z = false;
     }
 
     public void a(f fVar) {
-        a aVar = this.f10471w;
+        a aVar = this.f11257w;
         if (aVar != null) {
             aVar.a(fVar);
         }
-        this.f10471w = null;
+        this.f11257w = null;
     }
 
     public final void b(f fVar) {
-        a aVar = this.f10471w;
+        a aVar = this.f11257w;
         if (aVar != null) {
             aVar.a(fVar);
         }
-        if (this.f10474z) {
+        if (this.f11260z) {
             return;
         }
-        this.f10471w = null;
+        this.f11257w = null;
     }
 
     public abstract long getCurrentPosition();
@@ -127,24 +127,24 @@ public abstract class BasePlayerView extends RelativeLayout {
     public abstract long getVideoLength();
 
     public int getViewType() {
-        return this.f10457a;
+        return this.f11243a;
     }
 
     public final void h() {
-        this.f10471w = null;
+        this.f11257w = null;
     }
 
     public abstract boolean hasVideo();
 
-    public void init(w wVar, x xVar, boolean z3, List<Bitmap> list, e eVar) {
-        this.f10472x = wVar;
-        this.f10473y = xVar;
+    public void init(w wVar, x xVar, boolean z6, List<Bitmap> list, e eVar) {
+        this.f11258x = wVar;
+        this.f11259y = xVar;
     }
 
     public abstract boolean isMute();
 
     public boolean isPlayCompletion() {
-        return this.f10468t;
+        return this.f11254t;
     }
 
     public abstract boolean isPlaying();
@@ -159,14 +159,14 @@ public abstract class BasePlayerView extends RelativeLayout {
 
     public abstract void setListener(a aVar);
 
-    public abstract void setMute(boolean z3);
+    public abstract void setMute(boolean z6);
 
-    public void setNeedInterruptRelease(boolean z3) {
-        this.f10474z = z3;
+    public void setNeedInterruptRelease(boolean z6) {
+        this.f11260z = z6;
     }
 
     public void setViewType(int i) {
-        this.f10457a = i;
+        this.f11243a = i;
     }
 
     public abstract void start();
@@ -175,21 +175,21 @@ public abstract class BasePlayerView extends RelativeLayout {
 
     public BasePlayerView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.i = com.anythink.basead.exoplayer.f.f7187a;
-        this.f10458j = -1L;
-        this.f10466r = false;
-        this.f10467s = false;
-        this.f10468t = false;
-        this.f10474z = false;
+        this.i = com.anythink.basead.exoplayer.f.f7973a;
+        this.f11244j = -1L;
+        this.f11252r = false;
+        this.f11253s = false;
+        this.f11254t = false;
+        this.f11260z = false;
     }
 
     public BasePlayerView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.i = com.anythink.basead.exoplayer.f.f7187a;
-        this.f10458j = -1L;
-        this.f10466r = false;
-        this.f10467s = false;
-        this.f10468t = false;
-        this.f10474z = false;
+        this.i = com.anythink.basead.exoplayer.f.f7973a;
+        this.f11244j = -1L;
+        this.f11252r = false;
+        this.f11253s = false;
+        this.f11254t = false;
+        this.f11260z = false;
     }
 }

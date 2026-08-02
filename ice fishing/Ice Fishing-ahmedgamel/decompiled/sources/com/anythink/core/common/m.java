@@ -11,91 +11,91 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public abstract class m<T extends av> {
 
     /* renamed from: d, reason: collision with root package name */
-    protected Context f14394d;
+    protected Context f15180d;
 
     /* renamed from: a, reason: collision with root package name */
-    final String f14391a = getClass().getSimpleName();
+    final String f15177a = getClass().getSimpleName();
 
     /* renamed from: b, reason: collision with root package name */
-    ArrayList<T> f14392b = new ArrayList<>();
+    ArrayList<T> f15178b = new ArrayList<>();
 
     /* renamed from: g, reason: collision with root package name */
-    private final AtomicBoolean f14397g = new AtomicBoolean(false);
+    private final AtomicBoolean f15183g = new AtomicBoolean(false);
 
     /* renamed from: f, reason: collision with root package name */
-    Runnable f14396f = new Runnable() { // from class: com.anythink.core.common.m.1
+    Runnable f15182f = new Runnable() { // from class: com.anythink.core.common.m.1
         @Override // java.lang.Runnable
         public final void run() {
-            m.this.f14397g.set(false);
+            m.this.f15183g.set(false);
             m.this.a(true);
         }
     };
 
     /* renamed from: c, reason: collision with root package name */
-    String f14393c = com.anythink.core.common.d.t.b().p();
+    String f15179c = com.anythink.core.common.d.t.b().p();
 
     /* renamed from: e, reason: collision with root package name */
-    protected final Handler f14395e = com.anythink.core.common.v.b.b.a().a(9);
+    protected final Handler f15181e = com.anythink.core.common.v.b.b.a().a(9);
 
     public m(Context context) {
-        this.f14394d = context.getApplicationContext();
+        this.f15180d = context.getApplicationContext();
     }
 
     public abstract void a(List<T> list);
 
-    public final synchronized void a(T t6, boolean z3) {
+    public final synchronized void a(T t6, boolean z6) {
         Handler handler;
         if (!com.anythink.core.common.d.t.b().a()) {
-            this.f14392b.add(t6);
+            this.f15178b.add(t6);
             return;
         }
-        boolean z6 = true;
-        if (z3) {
-            this.f14392b.add(t6);
+        boolean z9 = true;
+        if (z6) {
+            this.f15178b.add(t6);
             a(true);
             return;
         }
-        com.anythink.core.d.b b9 = com.anythink.core.d.d.a(this.f14394d).b(this.f14393c);
-        if (this.f14397g.compareAndSet(false, true)) {
-            if (b9.ap() > 0 && (handler = this.f14395e) != null) {
-                handler.removeCallbacks(this.f14396f);
-                this.f14395e.postDelayed(this.f14396f, b9.ap());
+        com.anythink.core.d.b b9 = com.anythink.core.d.d.a(this.f15180d).b(this.f15179c);
+        if (this.f15183g.compareAndSet(false, true)) {
+            if (b9.ap() > 0 && (handler = this.f15181e) != null) {
+                handler.removeCallbacks(this.f15182f);
+                this.f15181e.postDelayed(this.f15182f, b9.ap());
             }
-            this.f14392b.add(t6);
-            a(z6);
+            this.f15178b.add(t6);
+            a(z9);
         }
-        z6 = false;
-        this.f14392b.add(t6);
-        a(z6);
+        z9 = false;
+        this.f15178b.add(t6);
+        a(z9);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public synchronized void a(boolean z3) {
+    public synchronized void a(boolean z6) {
         Handler handler;
         try {
-            if (z3) {
+            if (z6) {
                 ArrayList arrayList = new ArrayList();
-                arrayList.addAll(this.f14392b);
+                arrayList.addAll(this.f15178b);
                 if (arrayList.size() > 0) {
                     a(arrayList);
                 }
-                this.f14392b.clear();
+                this.f15178b.clear();
             } else {
-                com.anythink.core.d.b b9 = com.anythink.core.d.d.a(this.f14394d).b(this.f14393c);
+                com.anythink.core.d.b b9 = com.anythink.core.d.d.a(this.f15180d).b(this.f15179c);
                 ArrayList arrayList2 = new ArrayList();
-                if (this.f14392b.size() >= b9.an()) {
+                if (this.f15178b.size() >= b9.an()) {
                     for (int an = b9.an() - 1; an >= 0; an--) {
-                        arrayList2.add(this.f14392b.get(an));
-                        this.f14392b.remove(an);
+                        arrayList2.add(this.f15178b.get(an));
+                        this.f15178b.remove(an);
                     }
                     if (arrayList2.size() > 0) {
                         a(arrayList2);
                     }
                 }
             }
-            if (this.f14392b.isEmpty() && (handler = this.f14395e) != null) {
-                handler.removeCallbacks(this.f14396f);
-                this.f14397g.set(false);
+            if (this.f15178b.isEmpty() && (handler = this.f15181e) != null) {
+                handler.removeCallbacks(this.f15182f);
+                this.f15183g.set(false);
             }
         } catch (Throwable th) {
             throw th;

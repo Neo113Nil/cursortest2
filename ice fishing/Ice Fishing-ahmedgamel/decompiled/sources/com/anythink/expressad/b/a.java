@@ -20,86 +20,86 @@ import java.util.Set;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f18097a = "Anythink SDK M";
+    public static final String f18884a = "Anythink SDK M";
 
     /* renamed from: b, reason: collision with root package name */
-    public static boolean f18098b = false;
+    public static boolean f18885b = false;
 
     /* renamed from: c, reason: collision with root package name */
-    public static Map<String, Long> f18099c = new HashMap();
+    public static Map<String, Long> f18886c = new HashMap();
 
     /* renamed from: d, reason: collision with root package name */
-    public static Set<String> f18100d = new HashSet();
+    public static Set<String> f18887d = new HashSet();
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f18101e = "2";
+    public static final String f18888e = "2";
 
     /* renamed from: f, reason: collision with root package name */
-    private static final int f18102f = 1;
+    private static final int f18889f = 1;
 
     /* renamed from: g, reason: collision with root package name */
-    private String f18103g;
+    private String f18890g;
 
     /* renamed from: h, reason: collision with root package name */
-    private long f18104h;
+    private long f18891h;
     private com.anythink.expressad.foundation.c.c i;
 
     /* renamed from: j, reason: collision with root package name */
-    private Context f18105j;
+    private Context f18892j;
 
     /* renamed from: k, reason: collision with root package name */
-    private c f18106k;
+    private c f18893k;
 
     /* renamed from: l, reason: collision with root package name */
-    private com.anythink.expressad.out.f f18107l;
+    private com.anythink.expressad.out.f f18894l;
 
     /* renamed from: n, reason: collision with root package name */
-    private com.anythink.expressad.f.a f18109n;
+    private com.anythink.expressad.f.a f18896n;
 
     /* renamed from: o, reason: collision with root package name */
-    private boolean f18110o;
+    private boolean f18897o;
 
     /* renamed from: r, reason: collision with root package name */
-    private boolean f18113r;
+    private boolean f18900r;
 
     /* renamed from: m, reason: collision with root package name */
-    private q.c f18108m = null;
+    private q.c f18895m = null;
 
     /* renamed from: p, reason: collision with root package name */
-    private boolean f18111p = false;
+    private boolean f18898p = false;
 
     /* renamed from: q, reason: collision with root package name */
-    private boolean f18112q = true;
+    private boolean f18899q = true;
 
     public a(Context context, String str) {
         this.i = null;
-        this.f18105j = null;
+        this.f18892j = null;
         com.anythink.expressad.f.b.a();
         com.anythink.expressad.f.a b9 = com.anythink.expressad.f.b.b();
-        this.f18109n = b9;
+        this.f18896n = b9;
         if (b9 == null) {
             com.anythink.expressad.f.b.a();
-            this.f18109n = com.anythink.expressad.f.b.c();
+            this.f18896n = com.anythink.expressad.f.b.c();
         }
-        this.f18110o = this.f18109n.s();
+        this.f18897o = this.f18896n.s();
         Context applicationContext = context.getApplicationContext();
-        this.f18105j = applicationContext;
-        this.f18103g = str;
+        this.f18892j = applicationContext;
+        this.f18890g = str;
         if (this.i == null) {
             this.i = com.anythink.expressad.foundation.c.c.a(applicationContext);
         }
     }
 
     private void a(String str) {
-        this.f18103g = str;
+        this.f18890g = str;
     }
 
     private boolean c() {
-        return this.f18112q;
+        return this.f18899q;
     }
 
     private com.anythink.expressad.out.f d() {
-        return this.f18107l;
+        return this.f18894l;
     }
 
     private com.anythink.expressad.foundation.c.c e() {
@@ -110,11 +110,11 @@ public final class a {
     }
 
     private void g() {
-        c cVar = this.f18106k;
+        c cVar = this.f18893k;
         if (cVar == null || !cVar.a()) {
             return;
         }
-        this.f18106k.b();
+        this.f18893k.b();
     }
 
     private static void h() {
@@ -128,7 +128,7 @@ public final class a {
 
     private int k() {
         try {
-            com.anythink.expressad.f.a aVar = this.f18109n;
+            com.anythink.expressad.f.a aVar = this.f18896n;
             if (aVar != null) {
                 return aVar.k();
             }
@@ -143,7 +143,7 @@ public final class a {
         try {
             Intent intent = new Intent();
             intent.setAction("ExitApp");
-            com.anythink.core.common.d.n.a(this.f18105j).a(intent);
+            com.anythink.core.common.d.n.a(this.f18892j).a(intent);
         } catch (Exception unused) {
         }
     }
@@ -153,31 +153,31 @@ public final class a {
     }
 
     public final void a(q.c cVar) {
-        this.f18108m = cVar;
+        this.f18895m = cVar;
     }
 
     public final void b() {
         try {
-            this.f18108m = null;
+            this.f18895m = null;
         } catch (Exception e9) {
             e9.printStackTrace();
         }
     }
 
     public final void a() {
-        this.f18112q = false;
+        this.f18899q = false;
     }
 
     private void a(com.anythink.expressad.out.f fVar) {
-        this.f18107l = fVar;
+        this.f18894l = fVar;
     }
 
     private void b(com.anythink.expressad.foundation.d.d dVar) {
         try {
-            Intent intent = new Intent(this.f18105j, (Class<?>) LoadingActivity.class);
+            Intent intent = new Intent(this.f18892j, (Class<?>) LoadingActivity.class);
             intent.setFlags(268435456);
             intent.putExtra("icon_url", dVar.bl());
-            this.f18105j.startActivity(intent);
+            this.f18892j.startActivity(intent);
         } catch (Exception unused) {
         }
     }
@@ -192,19 +192,19 @@ public final class a {
                 return true;
             }
             String bh = dVar.bh();
-            Map<String, Long> map = f18099c;
+            Map<String, Long> map = f18886c;
             if (map == null) {
                 return true;
             }
-            if (map.containsKey(bh) && (l9 = f18099c.get(bh)) != null) {
-                if (l9.longValue() > System.currentTimeMillis() || f18100d.contains(dVar.bh())) {
+            if (map.containsKey(bh) && (l9 = f18886c.get(bh)) != null) {
+                if (l9.longValue() > System.currentTimeMillis() || f18887d.contains(dVar.bh())) {
                     return false;
                 }
             }
-            f18099c.put(dVar.bh(), Long.valueOf(System.currentTimeMillis() + (dVar.Z() * 1000)));
+            f18886c.put(dVar.bh(), Long.valueOf(System.currentTimeMillis() + (dVar.Z() * 1000)));
             return true;
         } catch (Exception e9) {
-            if (!com.anythink.expressad.a.f17618a) {
+            if (!com.anythink.expressad.a.f18405a) {
                 return true;
             }
             e9.printStackTrace();
@@ -216,40 +216,40 @@ public final class a {
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        a(this.f18105j, dVar, this.f18103g, str, true, false, com.anythink.expressad.b.b.a.f18158k);
+        a(this.f18892j, dVar, this.f18890g, str, true, false, com.anythink.expressad.b.b.a.f18945k);
     }
 
-    public static void a(Context context, com.anythink.expressad.foundation.d.d dVar, String str, String str2, boolean z3) {
+    public static void a(Context context, com.anythink.expressad.foundation.d.d dVar, String str, String str2, boolean z6) {
         if (context == null) {
             return;
         }
-        new c(context.getApplicationContext()).a(str, dVar, null, str2, false, z3, com.anythink.expressad.b.b.a.f18156h);
+        new c(context.getApplicationContext()).a(str, dVar, null, str2, false, z6, com.anythink.expressad.b.b.a.f18943h);
     }
 
-    public static void a(Context context, com.anythink.expressad.foundation.d.d dVar, String str, String str2, boolean z3, boolean z6, int i) {
+    public static void a(Context context, com.anythink.expressad.foundation.d.d dVar, String str, String str2, boolean z6, boolean z9, int i) {
         if (context == null) {
             return;
         }
-        new c(context.getApplicationContext()).a(str, dVar, null, str2, z3, z6, i);
+        new c(context.getApplicationContext()).a(str, dVar, null, str2, z6, z9, i);
     }
 
     private static String a(int i) {
         if (i == 1) {
-            return com.anythink.expressad.foundation.g.g.a.c.f19493n;
+            return com.anythink.expressad.foundation.g.g.a.c.f20280n;
         }
         if (i == 2) {
-            return com.anythink.expressad.foundation.g.g.a.c.f19494o;
+            return com.anythink.expressad.foundation.g.g.a.c.f20281o;
         }
         if (i == 3) {
-            return com.anythink.expressad.foundation.g.g.a.c.f19496q;
+            return com.anythink.expressad.foundation.g.g.a.c.f20283q;
         }
         if (i != 4) {
             return "";
         }
-        return com.anythink.expressad.foundation.g.g.a.c.f19495p;
+        return com.anythink.expressad.foundation.g.g.a.c.f20282p;
     }
 
-    public static void a(Context context, com.anythink.expressad.foundation.d.d dVar, String str, String[] strArr, boolean z3) {
+    public static void a(Context context, com.anythink.expressad.foundation.d.d dVar, String str, String[] strArr, boolean z6) {
         if (context == null || dVar == null || TextUtils.isEmpty(str) || strArr == null) {
             return;
         }
@@ -275,31 +275,31 @@ public final class a {
                 @Override // com.anythink.expressad.b.e
                 public final void e() {
                 }
-            }, str2, false, z3, com.anythink.expressad.b.b.a.f18156h);
+            }, str2, false, z6, com.anythink.expressad.b.b.a.f18943h);
         }
     }
 
-    private void a(final boolean z3, final com.anythink.expressad.out.k kVar) {
+    private void a(final boolean z6, final com.anythink.expressad.out.k kVar) {
         new Handler(Looper.getMainLooper()).post(new Runnable() { // from class: com.anythink.expressad.b.a.2
             @Override // java.lang.Runnable
             public final void run() {
-                if (z3 && !a.f18098b && com.anythink.expressad.a.f17632p) {
+                if (z6 && !a.f18885b && com.anythink.expressad.a.f18419p) {
                     a.a(a.this);
                 }
-                if (a.this.f18108m == null || a.f18098b || !com.anythink.expressad.a.f17632p) {
+                if (a.this.f18895m == null || a.f18885b || !com.anythink.expressad.a.f18419p) {
                     return;
                 }
-                a.this.f18108m.b(kVar);
+                a.this.f18895m.b(kVar);
             }
         });
     }
 
-    private void a(com.anythink.expressad.b.a.b bVar, com.anythink.expressad.foundation.d.d dVar, int i, boolean z3) {
+    private void a(com.anythink.expressad.b.a.b bVar, com.anythink.expressad.foundation.d.d dVar, int i, boolean z6) {
         if (dVar == null || bVar == null) {
             return;
         }
         try {
-            long currentTimeMillis = System.currentTimeMillis() - this.f18104h;
+            long currentTimeMillis = System.currentTimeMillis() - this.f18891h;
             com.anythink.expressad.foundation.d.g gVar = new com.anythink.expressad.foundation.d.g();
             gVar.i(dVar.ac());
             gVar.c(i);
@@ -310,16 +310,16 @@ public final class a {
                 gVar.f(URLEncoder.encode(bVar.i(), com.anythink.expressad.foundation.g.a.bR));
             }
             StringBuilder sb = new StringBuilder();
-            sb.append(this.f18104h / 1000);
+            sb.append(this.f18891h / 1000);
             gVar.b(sb.toString());
             gVar.a(Integer.parseInt(dVar.ae()));
             gVar.b(dVar.R());
-            gVar.a(this.f18103g);
+            gVar.a(this.f18890g);
             gVar.e(bVar.c());
             if (!TextUtils.isEmpty(bVar.i())) {
                 gVar.f(URLEncoder.encode(bVar.i(), com.anythink.expressad.foundation.g.a.bR));
             }
-            if (this.f18110o) {
+            if (this.f18897o) {
                 gVar.d(bVar.a());
                 if (!TextUtils.isEmpty(bVar.d())) {
                     gVar.d(URLEncoder.encode(bVar.d(), com.anythink.expressad.foundation.g.a.bR));
@@ -331,7 +331,7 @@ public final class a {
                     gVar.c(URLEncoder.encode(bVar.e(), com.anythink.expressad.foundation.g.a.bR));
                 }
             }
-            if (z3) {
+            if (z6) {
                 return;
             }
             ArrayList arrayList = new ArrayList();
@@ -362,7 +362,7 @@ public final class a {
         try {
             Intent intent = new Intent();
             intent.setAction("ExitApp");
-            com.anythink.core.common.d.n.a(aVar.f18105j).a(intent);
+            com.anythink.core.common.d.n.a(aVar.f18892j).a(intent);
         } catch (Exception unused) {
         }
     }

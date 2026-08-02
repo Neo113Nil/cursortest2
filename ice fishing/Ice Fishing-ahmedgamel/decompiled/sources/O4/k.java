@@ -21,7 +21,7 @@ public final class k {
 
         public final k fromString(String str) {
             for (k kVar : k.values()) {
-                if (q.L(kVar.text, str)) {
+                if (q.b0(kVar.text, str)) {
                     return kVar;
                 }
             }
@@ -39,7 +39,7 @@ public final class k {
     static {
         k[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = com.bumptech.glide.e.b($values);
+        $ENTRIES = X2.a.h($values);
         Companion = new a(null);
     }
 

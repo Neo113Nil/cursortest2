@@ -1,20 +1,22 @@
 package com.anythink.core.common.m.b;
 
+import com.google.android.gms.internal.ads.Wv;
+
 /* loaded from: classes.dex */
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    private String f14508a = "";
+    private String f15294a = "";
 
     /* renamed from: b, reason: collision with root package name */
-    private String f14509b = "";
+    private String f15295b = "";
 
     private d() {
     }
 
     public static d a(String str) {
         d dVar = new d();
-        dVar.f14508a = str;
+        dVar.f15294a = str;
         return dVar;
     }
 
@@ -23,28 +25,28 @@ public final class d {
     }
 
     public final String b() {
-        return this.f14508a;
+        return this.f15294a;
     }
 
     public final String toString() {
         StringBuilder sb = new StringBuilder("HttpReqEntity{urlType='");
-        sb.append(this.f14508a);
+        sb.append(this.f15294a);
         sb.append("', interceptKey='");
-        return u1.h.g(sb, this.f14509b, "'}");
+        return Wv.i(sb, this.f15295b, "'}");
     }
 
     private void b(String str) {
-        this.f14509b = str;
+        this.f15295b = str;
     }
 
     public static d a(String str, String str2) {
         d dVar = new d();
-        dVar.f14508a = str;
-        dVar.f14509b = str2;
+        dVar.f15294a = str;
+        dVar.f15295b = str2;
         return dVar;
     }
 
     public final String a() {
-        return this.f14509b;
+        return this.f15295b;
     }
 }

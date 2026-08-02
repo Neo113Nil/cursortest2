@@ -4,22 +4,22 @@ package f6;
 public final class k implements g {
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f37530a;
+    public final long f37492a;
 
     public k(long j6) {
-        this.f37530a = j6;
+        this.f37492a = j6;
     }
 
     @Override // f6.g
     public final String a() {
-        return String.valueOf(this.f37530a);
+        return String.valueOf(this.f37492a);
     }
 
     public final boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof g) && Long.valueOf(this.f37530a).equals(((g) obj).getValue());
+        return (obj instanceof g) && Long.valueOf(this.f37492a).equals(((g) obj).getValue());
     }
 
     @Override // f6.g
@@ -29,14 +29,14 @@ public final class k implements g {
 
     @Override // f6.g
     public final Object getValue() {
-        return Long.valueOf(this.f37530a);
+        return Long.valueOf(this.f37492a);
     }
 
     public final int hashCode() {
-        return Long.hashCode(this.f37530a);
+        return Long.hashCode(this.f37492a);
     }
 
     public final String toString() {
-        return "ValueLong{" + String.valueOf(this.f37530a) + "}";
+        return "ValueLong{" + String.valueOf(this.f37492a) + "}";
     }
 }

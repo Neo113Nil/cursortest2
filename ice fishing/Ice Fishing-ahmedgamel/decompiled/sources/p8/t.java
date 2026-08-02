@@ -1,16 +1,17 @@
 package p8;
 
 import java.io.IOException;
+import w.AbstractC5128c;
 
 /* loaded from: classes2.dex */
 public abstract class t {
-    public static int a(int i, int i6, int i9) {
-        if ((i6 & 8) != 0) {
+    public static int a(int i, int i4, int i6) {
+        if ((i4 & 8) != 0) {
             i--;
         }
-        if (i9 <= i) {
-            return i - i9;
+        if (i6 <= i) {
+            return i - i6;
         }
-        throw new IOException(u1.h.c(i9, i, "PROTOCOL_ERROR padding ", " > remaining length "));
+        throw new IOException(AbstractC5128c.c(i6, i, "PROTOCOL_ERROR padding ", " > remaining length "));
     }
 }

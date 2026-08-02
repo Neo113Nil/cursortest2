@@ -20,45 +20,45 @@ import com.anythink.expressad.foundation.h.x;
 public final class a extends Dialog {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f22496a = "ATAlertDialog";
+    private static final String f23283a = "ATAlertDialog";
 
     /* renamed from: b, reason: collision with root package name */
-    private b f22497b;
+    private b f23284b;
 
     /* renamed from: c, reason: collision with root package name */
-    private TextView f22498c;
+    private TextView f23285c;
 
     /* renamed from: d, reason: collision with root package name */
-    private TextView f22499d;
+    private TextView f23286d;
 
     /* renamed from: e, reason: collision with root package name */
-    private Button f22500e;
+    private Button f23287e;
 
     /* renamed from: f, reason: collision with root package name */
-    private Button f22501f;
+    private Button f23288f;
 
     public a(Context context, final b bVar) {
         super(context);
         getWindow().setBackgroundDrawable(new ColorDrawable(0));
         requestWindowFeature(1);
         View inflate = LayoutInflater.from(context).inflate(k.a(context, "anythink_cm_alertview", "layout"), (ViewGroup) null);
-        this.f22497b = bVar;
+        this.f23284b = bVar;
         if (inflate != null) {
             setContentView(inflate);
             try {
-                this.f22498c = (TextView) inflate.findViewById(k.a(context, "anythink_video_common_alertview_titleview", "id"));
+                this.f23285c = (TextView) inflate.findViewById(k.a(context, "anythink_video_common_alertview_titleview", "id"));
             } catch (Exception e9) {
                 e9.getMessage();
             }
             try {
-                this.f22499d = (TextView) inflate.findViewById(k.a(context, "anythink_video_common_alertview_contentview", "id"));
-                this.f22500e = (Button) inflate.findViewById(k.a(context, "anythink_video_common_alertview_confirm_button", "id"));
-                this.f22501f = (Button) inflate.findViewById(k.a(context, "anythink_video_common_alertview_cancel_button", "id"));
+                this.f23286d = (TextView) inflate.findViewById(k.a(context, "anythink_video_common_alertview_contentview", "id"));
+                this.f23287e = (Button) inflate.findViewById(k.a(context, "anythink_video_common_alertview_confirm_button", "id"));
+                this.f23288f = (Button) inflate.findViewById(k.a(context, "anythink_video_common_alertview_cancel_button", "id"));
             } catch (Exception e10) {
                 e10.getMessage();
             }
         }
-        Button button = this.f22501f;
+        Button button = this.f23288f;
         if (button != null) {
             button.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.widget.a.a.1
                 @Override // android.view.View.OnClickListener
@@ -72,7 +72,7 @@ public final class a extends Dialog {
                 }
             });
         }
-        Button button2 = this.f22500e;
+        Button button2 = this.f23287e;
         if (button2 != null) {
             button2.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.widget.a.a.2
                 @Override // android.view.View.OnClickListener
@@ -91,32 +91,32 @@ public final class a extends Dialog {
     }
 
     private void b(String str) {
-        TextView textView = this.f22499d;
+        TextView textView = this.f23286d;
         if (textView != null) {
             textView.setText(str);
         }
     }
 
     private void c(String str) {
-        Button button = this.f22500e;
+        Button button = this.f23287e;
         if (button != null) {
             button.setText(str);
         }
     }
 
     private void d(String str) {
-        Button button = this.f22501f;
+        Button button = this.f23288f;
         if (button != null) {
             button.setText(str);
         }
     }
 
     private void e() {
-        Context g4 = t.b().g();
-        String string = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn", k.f19636g));
-        String string2 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_desc", k.f19636g));
-        String string3 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close", k.f19636g));
-        String string4 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_continue_to_play", k.f19636g));
+        Context g9 = t.b().g();
+        String string = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn", k.f20423g));
+        String string2 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_desc", k.f20423g));
+        String string3 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close", k.f20423g));
+        String string4 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_continue_to_play", k.f20423g));
         a(string);
         b(string2);
         c(string3);
@@ -124,8 +124,8 @@ public final class a extends Dialog {
     }
 
     public final void a() {
-        if (this.f22497b != null) {
-            this.f22497b = null;
+        if (this.f23284b != null) {
+            this.f23284b = null;
         }
     }
 
@@ -162,18 +162,18 @@ public final class a extends Dialog {
     }
 
     private void a(String str) {
-        TextView textView = this.f22498c;
+        TextView textView = this.f23285c;
         if (textView != null) {
             textView.setText(str);
         }
     }
 
     private void c() {
-        Context g4 = t.b().g();
-        String string = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn", k.f19636g));
-        String string2 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_desc", k.f19636g));
-        String string3 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close", k.f19636g));
-        String string4 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_cancel_close", k.f19636g));
+        Context g9 = t.b().g();
+        String string = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn", k.f20423g));
+        String string2 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_desc", k.f20423g));
+        String string3 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close", k.f20423g));
+        String string4 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_cancel_close", k.f20423g));
         a(string);
         b(string2);
         c(string3);
@@ -188,11 +188,11 @@ public final class a extends Dialog {
             a(b9.C(), b9.D(), b9.E(), b9.F());
             return;
         }
-        Context g4 = t.b().g();
-        String string = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn", k.f19636g));
-        String string2 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_desc", k.f19636g));
-        String string3 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close", k.f19636g));
-        String string4 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_continue_to_play", k.f19636g));
+        Context g9 = t.b().g();
+        String string = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn", k.f20423g));
+        String string2 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_desc", k.f20423g));
+        String string3 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close", k.f20423g));
+        String string4 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_continue_to_play", k.f20423g));
         a(string);
         b(string2);
         c(string3);
@@ -201,11 +201,11 @@ public final class a extends Dialog {
 
     public final void b() {
         try {
-            Context g4 = t.b().g();
-            String string = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn", k.f19636g));
-            String string2 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_desc", k.f19636g));
-            String string3 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close", k.f19636g));
-            String string4 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_cancel_close", k.f19636g));
+            Context g9 = t.b().g();
+            String string = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn", k.f20423g));
+            String string2 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_desc", k.f20423g));
+            String string3 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close", k.f20423g));
+            String string4 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_cancel_close", k.f20423g));
             a(string);
             b(string2);
             c(string3);
@@ -223,14 +223,14 @@ public final class a extends Dialog {
     }
 
     private void a(int i) {
-        Context g4 = t.b().g();
-        String string = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn", k.f19636g));
-        String string2 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn_tips", k.f19636g));
-        String string3 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn_close", k.f19636g));
-        String string4 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn_continue", k.f19636g));
-        String string5 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close", k.f19636g));
-        String string6 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_cancel", k.f19636g));
-        String string7 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_continue", k.f19636g));
+        Context g9 = t.b().g();
+        String string = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn", k.f20423g));
+        String string2 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn_tips", k.f20423g));
+        String string3 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn_close", k.f20423g));
+        String string4 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn_continue", k.f20423g));
+        String string5 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close", k.f20423g));
+        String string6 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_cancel", k.f20423g));
+        String string7 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_continue", k.f20423g));
         if (i != com.anythink.expressad.foundation.g.a.cv) {
             string = string2;
         }
@@ -253,14 +253,14 @@ public final class a extends Dialog {
             String obj3 = x.b(getContext(), "Anythink_CancelText".concat(String.valueOf(str)), "").toString();
             String obj4 = x.b(getContext(), "Anythink_ConfirmText".concat(String.valueOf(str)), "").toString();
             if (TextUtils.isEmpty(obj) && TextUtils.isEmpty(obj2) && TextUtils.isEmpty(obj3) && TextUtils.isEmpty(obj4)) {
-                Context g4 = t.b().g();
-                String string = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn", k.f19636g));
-                String string2 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn_tips", k.f19636g));
-                String string3 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn_close", k.f19636g));
-                String string4 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn_continue", k.f19636g));
-                String string5 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close", k.f19636g));
-                String string6 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_cancel", k.f19636g));
-                String string7 = g4.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_continue", k.f19636g));
+                Context g9 = t.b().g();
+                String string = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn", k.f20423g));
+                String string2 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn_tips", k.f20423g));
+                String string3 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn_close", k.f20423g));
+                String string4 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_warn_continue", k.f20423g));
+                String string5 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close", k.f20423g));
+                String string6 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_cancel", k.f20423g));
+                String string7 = g9.getString(k.a(getContext(), "anythink_cm_dialog_alert_confim_close_continue", k.f20423g));
                 if (i != com.anythink.expressad.foundation.g.a.cv) {
                     string = string2;
                 }

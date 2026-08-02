@@ -10,9 +10,9 @@ public interface VM {
 
     void AKU(View view);
 
-    void AKn(View view, String str, boolean z3);
+    void AKn(View view, String str, boolean z6);
 
-    void AKo(View view, String str, boolean z3, boolean z6);
+    void AKo(View view, String str, boolean z6, boolean z9);
 
-    void AKp(View view, String str, boolean z3, boolean z6, boolean z9);
+    void AKp(View view, String str, boolean z6, boolean z9, boolean z10);
 }

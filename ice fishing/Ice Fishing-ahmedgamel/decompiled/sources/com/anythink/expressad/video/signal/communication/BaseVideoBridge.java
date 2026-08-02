@@ -28,37 +28,37 @@ import org.json.JSONObject;
 public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
 
     /* renamed from: a, reason: collision with root package name */
-    protected static final String f21845a = "JS-Video-Brigde";
+    protected static final String f22632a = "JS-Video-Brigde";
 
     /* renamed from: j, reason: collision with root package name */
-    private static final int f21846j = 1;
+    private static final int f22633j = 1;
 
     /* renamed from: k, reason: collision with root package name */
-    private static final int f21847k = 2;
+    private static final int f22634k = 2;
 
     /* renamed from: l, reason: collision with root package name */
-    private static final String f21848l = "showTransparent";
+    private static final String f22635l = "showTransparent";
 
     /* renamed from: m, reason: collision with root package name */
-    private static final String f21849m = "mute";
+    private static final String f22636m = "mute";
 
     /* renamed from: n, reason: collision with root package name */
-    private static final String f21850n = "closeType";
+    private static final String f22637n = "closeType";
 
     /* renamed from: o, reason: collision with root package name */
-    private static final String f21851o = "orientationType";
+    private static final String f22638o = "orientationType";
 
     /* renamed from: p, reason: collision with root package name */
-    private static final String f21852p = "type";
+    private static final String f22639p = "type";
 
     /* renamed from: q, reason: collision with root package name */
-    private static final String f21853q = "h5cbp";
+    private static final String f22640q = "h5cbp";
 
     /* renamed from: r, reason: collision with root package name */
-    private static final String f21854r = "webfront";
+    private static final String f22641r = "webfront";
 
     /* renamed from: s, reason: collision with root package name */
-    private static final String f21855s = "showAlertRole";
+    private static final String f22642s = "showAlertRole";
     protected IJSFactory i;
 
     private static String a(int i) {
@@ -145,7 +145,7 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
                 int i = v.a(t.b().g(), optString) ? 1 : 2;
                 try {
                     JSONObject jSONObject = new JSONObject();
-                    jSONObject.put("code", CommonJSBridgeImpUtils.f17949b);
+                    jSONObject.put("code", CommonJSBridgeImpUtils.f18736b);
                     JSONObject jSONObject2 = new JSONObject();
                     jSONObject2.put("result", i);
                     jSONObject.put("data", jSONObject2);
@@ -165,7 +165,7 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
     @Override // com.anythink.expressad.video.signal.communication.IVideoBridge
     public void clearAllCache(Object obj, String str) {
         try {
-            t.b().g().getSharedPreferences(a.f19096t, 0).edit().clear().apply();
+            t.b().g().getSharedPreferences(a.f19883t, 0).edit().clear().apply();
             if (obj != null) {
                 JSONObject jSONObject = new JSONObject();
                 jSONObject.put("code", 0);
@@ -202,7 +202,7 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
             }
             if (obj != null) {
                 b bVar = (b) obj;
-                if (!(bVar.f18062a.getObject() instanceof j) || (jVar = (j) bVar.f18062a.getObject()) == null) {
+                if (!(bVar.f18849a.getObject() instanceof j) || (jVar = (j) bVar.f18849a.getObject()) == null) {
                     return;
                 }
                 jVar.click(i, str2);
@@ -321,7 +321,7 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
         String str2;
         SharedPreferences sharedPreferences;
         try {
-            sharedPreferences = t.b().g().getSharedPreferences(a.f19096t, 0);
+            sharedPreferences = t.b().g().getSharedPreferences(a.f19883t, 0);
             jSONObject = new JSONObject();
         } catch (Throwable th2) {
             jSONObject = null;
@@ -424,9 +424,9 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
     @Override // com.anythink.expressad.video.signal.communication.IVideoBridge
     public void getCutout(Object obj, String str) {
         try {
-            String o6 = this.i.getJSCommon().o();
-            if (obj != null && !TextUtils.isEmpty(o6)) {
-                h.a().a(obj, Base64.encodeToString(o6.getBytes(), 2));
+            String o4 = this.i.getJSCommon().o();
+            if (obj != null && !TextUtils.isEmpty(o4)) {
+                h.a().a(obj, Base64.encodeToString(o4.getBytes(), 2));
                 return;
             }
             JSONObject jSONObject = new JSONObject();
@@ -510,16 +510,16 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
             int i = 0;
             if (this.i != null) {
                 while (i < jSONArray.length()) {
-                    int i6 = jSONArray.getInt(i);
-                    jSONObject.put(a(i6), this.i.getJSCommon().h(i6));
+                    int i4 = jSONArray.getInt(i);
+                    jSONObject.put(a(i4), this.i.getJSCommon().h(i4));
                     i++;
                 }
             } else if (obj != null) {
                 while (i < jSONArray.length()) {
-                    int i9 = jSONArray.getInt(i);
+                    int i6 = jSONArray.getInt(i);
                     b bVar = (b) obj;
-                    if (bVar.f18062a.getObject() instanceof j) {
-                        jSONObject.put(a(i9), ((j) bVar.f18062a.getObject()).h(i9));
+                    if (bVar.f18849a.getObject() instanceof j) {
+                        jSONObject.put(a(i6), ((j) bVar.f18849a.getObject()).h(i6));
                     }
                     i++;
                 }
@@ -546,7 +546,7 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
     public void gial(Object obj, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", CommonJSBridgeImpUtils.f17949b);
+            jSONObject.put("code", CommonJSBridgeImpUtils.f18736b);
             JSONObject jSONObject2 = new JSONObject();
             jSONObject2.put("packageNameList", "[]");
             jSONObject.put("data", jSONObject2);
@@ -610,23 +610,23 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
             IJSFactory iJSFactory = this.i;
             int i = 1;
             if (iJSFactory != null) {
-                String i6 = iJSFactory.getJSCommon().i();
-                if (!TextUtils.isEmpty(i6)) {
-                    i6 = Base64.encodeToString(i6.getBytes(), 2);
+                String i4 = iJSFactory.getJSCommon().i();
+                if (!TextUtils.isEmpty(i4)) {
+                    i4 = Base64.encodeToString(i4.getBytes(), 2);
                 }
-                h.a().a(obj, i6);
+                h.a().a(obj, i4);
                 this.i.getJSCommon().h();
                 if (TextUtils.isEmpty(str)) {
                     return;
                 }
                 JSONObject jSONObject = new JSONObject(str);
-                int optInt = jSONObject.optInt(f21848l);
+                int optInt = jSONObject.optInt(f22635l);
                 int optInt2 = jSONObject.optInt("mute");
-                int optInt3 = jSONObject.optInt(f21850n);
-                int optInt4 = jSONObject.optInt(f21851o);
-                int optInt5 = jSONObject.optInt(f21853q);
-                int optInt6 = jSONObject.optInt(f21854r);
-                int optInt7 = jSONObject.optInt(f21855s);
+                int optInt3 = jSONObject.optInt(f22637n);
+                int optInt4 = jSONObject.optInt(f22638o);
+                int optInt5 = jSONObject.optInt(f22640q);
+                int optInt6 = jSONObject.optInt(f22641r);
+                int optInt7 = jSONObject.optInt(f22642s);
                 this.i.getJSCommon().a(optInt == 1);
                 this.i.getJSCommon().b(optInt2);
                 this.i.getJSCommon().c(optInt3);
@@ -642,18 +642,18 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
             }
             if (obj != null) {
                 b bVar = (b) obj;
-                if (bVar.f18062a.getObject() instanceof j) {
-                    j jVar = (j) bVar.f18062a.getObject();
-                    String i9 = jVar.i();
+                if (bVar.f18849a.getObject() instanceof j) {
+                    j jVar = (j) bVar.f18849a.getObject();
+                    String i6 = jVar.i();
                     if (!TextUtils.isEmpty(str)) {
                         JSONObject jSONObject2 = new JSONObject(str);
-                        int optInt8 = jSONObject2.optInt(f21848l);
+                        int optInt8 = jSONObject2.optInt(f22635l);
                         int optInt9 = jSONObject2.optInt("mute");
-                        int optInt10 = jSONObject2.optInt(f21850n);
-                        int optInt11 = jSONObject2.optInt(f21851o);
-                        int optInt12 = jSONObject2.optInt(f21853q);
-                        int optInt13 = jSONObject2.optInt(f21854r);
-                        int optInt14 = jSONObject2.optInt(f21855s);
+                        int optInt10 = jSONObject2.optInt(f22637n);
+                        int optInt11 = jSONObject2.optInt(f22638o);
+                        int optInt12 = jSONObject2.optInt(f22640q);
+                        int optInt13 = jSONObject2.optInt(f22641r);
+                        int optInt14 = jSONObject2.optInt(f22642s);
                         jVar.a(optInt8 == 1);
                         jVar.b(optInt9);
                         jVar.c(optInt10);
@@ -665,7 +665,7 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
                         }
                         jVar.i(i);
                     }
-                    h.a().a(obj, Base64.encodeToString(i9.getBytes(), 2));
+                    h.a().a(obj, Base64.encodeToString(i6.getBytes(), 2));
                 }
             }
         } catch (Throwable unused) {
@@ -726,18 +726,18 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
     public void loadads(Object obj, String str) {
         String str2;
         int i;
-        int i6;
+        int i4;
         try {
             if (TextUtils.isEmpty(str)) {
                 str2 = "";
                 i = 1;
-                i6 = 1;
+                i4 = 1;
             } else {
                 JSONObject jSONObject = new JSONObject(str);
                 str2 = jSONObject.optString("unitId");
-                i6 = jSONObject.optInt("type", 1);
-                if (i6 > 2) {
-                    i6 = 1;
+                i4 = jSONObject.optInt("type", 1);
+                if (i4 > 2) {
+                    i4 = 1;
                 }
                 i = jSONObject.optInt("adtype", 1);
             }
@@ -747,10 +747,10 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
             }
             if (obj != null) {
                 b bVar = (b) obj;
-                if (bVar.f18062a != null) {
-                    WindVaneWebView windVaneWebView = bVar.f18062a;
+                if (bVar.f18849a != null) {
+                    WindVaneWebView windVaneWebView = bVar.f18849a;
                     if (windVaneWebView.getWebViewListener() != null) {
-                        ((com.anythink.expressad.atsignalcommon.b.a) windVaneWebView.getWebViewListener()).a(str2, i6, i);
+                        ((com.anythink.expressad.atsignalcommon.b.a) windVaneWebView.getWebViewListener()).a(str2, i4, i);
                     }
                 }
             }
@@ -766,7 +766,7 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
         if (obj != null) {
             try {
                 int optInt = new JSONObject(str).optInt("isReady", 1);
-                WindVaneWebView windVaneWebView = ((b) obj).f18062a;
+                WindVaneWebView windVaneWebView = ((b) obj).f18849a;
                 if (windVaneWebView == null || windVaneWebView.getWebViewListener() == null) {
                     return;
                 }
@@ -783,7 +783,7 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
             if (this.i == null || TextUtils.isEmpty(str)) {
                 return;
             }
-            this.i.getJSVideoModule().notifyCloseBtn(new JSONObject(str).optInt(com.anythink.core.express.b.a.f17526b));
+            this.i.getJSVideoModule().notifyCloseBtn(new JSONObject(str).optInt(com.anythink.core.express.b.a.f18313b));
         } catch (Throwable unused) {
         }
     }
@@ -840,7 +840,7 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
             if (optInt == 1) {
                 y.a(optString);
             } else if (optInt == 2) {
-                y.a(this.f18077f, optString);
+                y.a(this.f18864f, optString);
             }
         } catch (JSONException e9) {
             e9.getMessage();
@@ -972,8 +972,8 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
                 return;
             }
             b bVar = (b) obj;
-            if (bVar.f18062a != null) {
-                WindVaneWebView windVaneWebView = bVar.f18062a;
+            if (bVar.f18849a != null) {
+                WindVaneWebView windVaneWebView = bVar.f18849a;
                 if (windVaneWebView.getWebViewListener() != null) {
                     ((com.anythink.expressad.atsignalcommon.b.a) windVaneWebView.getWebViewListener()).a(obj, str);
                 }
@@ -1002,7 +1002,7 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
                 return;
             }
             JSONObject jSONObject = new JSONObject(str);
-            this.i.getJSVideoModule().progressOperate(jSONObject.optInt(g.a.f12949C), jSONObject.optInt("view_visible"));
+            this.i.getJSVideoModule().progressOperate(jSONObject.optInt(g.a.f13735C), jSONObject.optInt("view_visible"));
             h.a().a(obj, b(0));
         } catch (Throwable unused) {
         }
@@ -1027,10 +1027,10 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
             try {
                 b bVar = (b) obj;
                 int optInt = new JSONObject(str).optInt("isReady", 1);
-                if (bVar.f18062a.getObject() instanceof j) {
-                    ((j) bVar.f18062a.getObject()).j(optInt);
+                if (bVar.f18849a.getObject() instanceof j) {
+                    ((j) bVar.f18849a.getObject()).j(optInt);
                 }
-                WindVaneWebView windVaneWebView = bVar.f18062a;
+                WindVaneWebView windVaneWebView = bVar.f18849a;
                 if (windVaneWebView == null || windVaneWebView.getWebViewListener() == null) {
                     return;
                 }
@@ -1045,7 +1045,7 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
         String str2;
         int i = 0;
         try {
-            SharedPreferences sharedPreferences = t.b().g().getSharedPreferences(a.f19096t, 0);
+            SharedPreferences sharedPreferences = t.b().g().getSharedPreferences(a.f19883t, 0);
             if (TextUtils.isEmpty(str)) {
                 str2 = "";
             } else {
@@ -1111,7 +1111,7 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
         String str2;
         int i = 0;
         try {
-            SharedPreferences sharedPreferences = t.b().g().getSharedPreferences(a.f19096t, 0);
+            SharedPreferences sharedPreferences = t.b().g().getSharedPreferences(a.f19883t, 0);
             if (TextUtils.isEmpty(str)) {
                 str2 = "";
             } else {
@@ -1286,7 +1286,7 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
             if (this.i == null || TextUtils.isEmpty(str)) {
                 return;
             }
-            int optInt = new JSONObject(str).optInt(com.anythink.core.express.b.a.f17526b);
+            int optInt = new JSONObject(str).optInt(com.anythink.core.express.b.a.f18313b);
             int i = 2;
             if (optInt != 1) {
                 i = optInt == 2 ? 1 : 0;
@@ -1299,7 +1299,7 @@ public class BaseVideoBridge extends AbsFeedBackForH5 implements IVideoBridge {
     @Override // com.anythink.expressad.video.signal.communication.IVideoBridge
     public void triggerCloseBtn(Object obj, String str) {
         try {
-            if (this.i == null || TextUtils.isEmpty(str) || !new JSONObject(str).optString(com.anythink.core.express.b.a.f17526b).equals("click")) {
+            if (this.i == null || TextUtils.isEmpty(str) || !new JSONObject(str).optString(com.anythink.core.express.b.a.f18313b).equals("click")) {
                 return;
             }
             this.i.getJSVideoModule().closeVideoOperate(1, -1);

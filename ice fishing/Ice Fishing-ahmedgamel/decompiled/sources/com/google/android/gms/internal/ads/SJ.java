@@ -6,28 +6,28 @@ package com.google.android.gms.internal.ads;
 public final class SJ {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final SJ f27427n;
+    public static final SJ f28141n;
 
     /* renamed from: u, reason: collision with root package name */
-    public static final SJ f27428u;
+    public static final SJ f28142u;
 
     /* renamed from: v, reason: collision with root package name */
-    public static final SJ f27429v;
+    public static final SJ f28143v;
 
     /* renamed from: w, reason: collision with root package name */
-    public static final /* synthetic */ SJ[] f27430w;
+    public static final /* synthetic */ SJ[] f28144w;
 
     static {
         SJ sj = new SJ("NIST_P256", 0);
-        f27427n = sj;
+        f28141n = sj;
         SJ sj2 = new SJ("NIST_P384", 1);
-        f27428u = sj2;
+        f28142u = sj2;
         SJ sj3 = new SJ("NIST_P521", 2);
-        f27429v = sj3;
-        f27430w = new SJ[]{sj, sj2, sj3};
+        f28143v = sj3;
+        f28144w = new SJ[]{sj, sj2, sj3};
     }
 
     public static SJ[] values() {
-        return (SJ[]) f27430w.clone();
+        return (SJ[]) f28144w.clone();
     }
 }

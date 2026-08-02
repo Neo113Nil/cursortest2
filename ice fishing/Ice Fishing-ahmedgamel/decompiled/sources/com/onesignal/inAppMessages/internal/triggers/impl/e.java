@@ -29,7 +29,7 @@ public final class e implements Z4.a, com.onesignal.common.modeling.d {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Z4.b) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(Z4.b it) {
@@ -50,7 +50,7 @@ public final class e implements Z4.a, com.onesignal.common.modeling.d {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Z4.b) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(Z4.b it) {

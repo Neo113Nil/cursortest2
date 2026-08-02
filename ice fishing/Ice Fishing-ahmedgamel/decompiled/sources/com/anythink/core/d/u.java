@@ -21,7 +21,7 @@ import org.json.JSONObject;
 public final class u {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String[] f17497a = {"unit_id", "unitid", "slot_id", "placement_id", "zone_id", "ad_place_id", "position_id", "pos_id", "placement_name", "spot_id", "ad_tag", "ad_id", "plid", "space_id", "location", "tagid", "adslot_id", ATAdConst.NETWORK_REQUEST_PARAMS_KEY.INSTANCE_ID, com.anythink.expressad.f.a.b.aB};
+    private static final String[] f18284a = {"unit_id", "unitid", "slot_id", "placement_id", "zone_id", "ad_place_id", "position_id", "pos_id", "placement_name", "spot_id", "ad_tag", "ad_id", "plid", "space_id", "location", "tagid", "adslot_id", ATAdConst.NETWORK_REQUEST_PARAMS_KEY.INSTANCE_ID, com.anythink.expressad.f.a.b.aB};
 
     private static String a(String str, bv bvVar) {
         int q8;
@@ -31,7 +31,7 @@ public final class u {
         }
         if (q8 != 3 && q8 != 7 && bvVar.g() != 35) {
             Map<String, Object> l9 = bvVar.l();
-            for (String str2 : f17497a) {
+            for (String str2 : f18284a) {
                 String a9 = com.anythink.core.common.v.q.a(l9, str2, "");
                 if (!TextUtils.isEmpty(a9)) {
                     return a9;
@@ -76,13 +76,13 @@ public final class u {
         a(lVar, map, list, lVar.bu(), 1, 13);
     }
 
-    private static void a(l lVar, Map<String, bv> map, List<bv> list, JSONArray jSONArray, int i, int i6) {
+    private static void a(l lVar, Map<String, bv> map, List<bv> list, JSONArray jSONArray, int i, int i4) {
         try {
             com.anythink.core.common.h.q bf = lVar.bf();
-            for (int i9 = 0; i9 < jSONArray.length(); i9++) {
-                JSONObject optJSONObject = jSONArray.optJSONObject(i9);
+            for (int i6 = 0; i6 < jSONArray.length(); i6++) {
+                JSONObject optJSONObject = jSONArray.optJSONObject(i6);
                 if (optJSONObject != null) {
-                    bv a9 = a(i6, i, optJSONObject, lVar);
+                    bv a9 = a(i4, i, optJSONObject, lVar);
                     map.put(a9.z(), a9);
                     if (a9.g() == 35) {
                         list.add(a9);
@@ -90,10 +90,10 @@ public final class u {
                     a(lVar, a9);
                     if (bf != null && a9.g() == 2) {
                         if (i == 0) {
-                            bf.f14037a = true;
+                            bf.f14823a = true;
                         }
                         if (i == 1) {
-                            bf.f14038b = true;
+                            bf.f14824b = true;
                         }
                     }
                     if (lVar.bn() == null && a9.o() && a9.aS() == 1) {
@@ -136,13 +136,13 @@ public final class u {
         return a(lVar, jSONArray, 3, 4);
     }
 
-    private static List<bv> a(l lVar, JSONArray jSONArray, int i, int i6) {
+    private static List<bv> a(l lVar, JSONArray jSONArray, int i, int i4) {
         ArrayList arrayList = new ArrayList();
-        for (int i9 = 0; i9 < jSONArray.length(); i9++) {
+        for (int i6 = 0; i6 < jSONArray.length(); i6++) {
             try {
-                JSONObject jSONObject = jSONArray.getJSONObject(i9);
+                JSONObject jSONObject = jSONArray.getJSONObject(i6);
                 if (jSONObject != null) {
-                    bv a9 = a(i6, i, jSONObject, lVar);
+                    bv a9 = a(i4, i, jSONObject, lVar);
                     a(lVar, a9);
                     arrayList.add(a9);
                 }
@@ -152,30 +152,30 @@ public final class u {
         return arrayList;
     }
 
-    private static bv a(int i, int i6, JSONObject jSONObject, l lVar) {
+    private static bv a(int i, int i4, JSONObject jSONObject, l lVar) {
         long j6;
         aa a9;
         ATCustomAdapterConfig b9;
         JSONObject optJSONObject;
         JSONArray optJSONArray;
-        int i9 = (i6 == 0 || i6 == 4 || i6 == 8) ? 0 : 1;
+        int i6 = (i4 == 0 || i4 == 4 || i4 == 8) ? 0 : 1;
         bv bvVar = new bv(i);
-        bvVar.e(i6);
-        bvVar.d(i9);
-        if (jSONObject.isNull(com.anythink.core.common.k.f14281D)) {
+        bvVar.e(i4);
+        bvVar.d(i6);
+        if (jSONObject.isNull(com.anythink.core.common.k.f15067D)) {
             bvVar.c("");
         } else {
-            bvVar.c(jSONObject.optString(com.anythink.core.common.k.f14281D));
+            bvVar.c(jSONObject.optString(com.anythink.core.common.k.f15067D));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14278A)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15064A)) {
             bvVar.b(-1);
         } else {
-            bvVar.b(jSONObject.optInt(com.anythink.core.common.k.f14278A));
+            bvVar.b(jSONObject.optInt(com.anythink.core.common.k.f15064A));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14279B)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15065B)) {
             bvVar.c(-1);
         } else {
-            bvVar.c(jSONObject.optInt(com.anythink.core.common.k.f14279B));
+            bvVar.c(jSONObject.optInt(com.anythink.core.common.k.f15065B));
         }
         if (jSONObject.isNull("nw_firm_id")) {
             bvVar.a(-1);
@@ -189,36 +189,36 @@ public final class u {
             String optString = jSONObject.optString("content");
             Map<String, Object> c9 = com.anythink.core.common.v.q.c(optString);
             if (bvVar.g() == 22 && com.anythink.core.common.v.q.a(c9, "unit_type", 0) == 1) {
-                c9.put(j.w.f12608E, 1);
+                c9.put(j.w.f13394E, 1);
             }
             bvVar.b(optString);
             bvVar.a(c9);
             bvVar.j(a(lVar.i(), bvVar));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14326z)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15112z)) {
             bvVar.a("");
         } else {
-            bvVar.a(jSONObject.optString(com.anythink.core.common.k.f14326z));
+            bvVar.a(jSONObject.optString(com.anythink.core.common.k.f15112z));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14282E)) {
-            bvVar.d(com.anythink.core.common.v.m.f16809e);
+        if (jSONObject.isNull(com.anythink.core.common.k.f15068E)) {
+            bvVar.d(com.anythink.core.common.v.m.f17596e);
         } else {
-            bvVar.d(jSONObject.optString(com.anythink.core.common.k.f14282E));
+            bvVar.d(jSONObject.optString(com.anythink.core.common.k.f15068E));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14324x)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15110x)) {
             bvVar.e(0L);
         } else {
-            bvVar.e(jSONObject.optInt(com.anythink.core.common.k.f14324x));
+            bvVar.e(jSONObject.optInt(com.anythink.core.common.k.f15110x));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14322v)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15108v)) {
             bvVar.f(0L);
         } else {
-            bvVar.f(jSONObject.optInt(com.anythink.core.common.k.f14322v));
+            bvVar.f(jSONObject.optInt(com.anythink.core.common.k.f15108v));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14323w)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15109w)) {
             bvVar.h(1);
         } else {
-            bvVar.h(jSONObject.optInt(com.anythink.core.common.k.f14323w));
+            bvVar.h(jSONObject.optInt(com.anythink.core.common.k.f15109w));
         }
         if (jSONObject.isNull("pacing")) {
             bvVar.g(-1L);
@@ -230,30 +230,30 @@ public final class u {
         } else {
             bvVar.e(jSONObject.optString("unit_id"));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14285H)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15071H)) {
             bvVar.b(0.0d);
         } else {
-            bvVar.b(jSONObject.optDouble(com.anythink.core.common.k.f14285H, 0.0d));
+            bvVar.b(jSONObject.optDouble(com.anythink.core.common.k.f15071H, 0.0d));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14286I)) {
-            bvVar.h(com.anythink.basead.exoplayer.i.a.f7883f);
+        if (jSONObject.isNull(com.anythink.core.common.k.f15072I)) {
+            bvVar.h(com.anythink.basead.exoplayer.i.a.f8669f);
         } else {
-            bvVar.h(jSONObject.optInt(com.anythink.core.common.k.f14286I));
+            bvVar.h(jSONObject.optInt(com.anythink.core.common.k.f15072I));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14287K)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15073K)) {
             bvVar.f("");
         } else {
-            bvVar.f(jSONObject.optString(com.anythink.core.common.k.f14287K));
+            bvVar.f(jSONObject.optString(com.anythink.core.common.k.f15073K));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14288L)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15074L)) {
             bvVar.i(0);
         } else {
-            bvVar.i(jSONObject.optInt(com.anythink.core.common.k.f14288L));
+            bvVar.i(jSONObject.optInt(com.anythink.core.common.k.f15074L));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14289M)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15075M)) {
             bvVar.j(3000);
         } else {
-            bvVar.j(jSONObject.optInt(com.anythink.core.common.k.f14289M));
+            bvVar.j(jSONObject.optInt(com.anythink.core.common.k.f15075M));
         }
         if (jSONObject.isNull("payload")) {
             bvVar.g("");
@@ -265,77 +265,77 @@ public final class u {
         } else {
             bvVar.h(jSONObject.optString("error"));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14290N)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15076N)) {
             bvVar.i(1800000L);
         } else {
-            bvVar.i(jSONObject.optLong(com.anythink.core.common.k.f14290N));
+            bvVar.i(jSONObject.optLong(com.anythink.core.common.k.f15076N));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14291O)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15077O)) {
             bvVar.j(-1L);
         } else {
-            bvVar.j(jSONObject.optLong(com.anythink.core.common.k.f14291O));
+            bvVar.j(jSONObject.optLong(com.anythink.core.common.k.f15077O));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14292P)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15078P)) {
             bvVar.d(1800000L);
         } else {
-            bvVar.d(jSONObject.optLong(com.anythink.core.common.k.f14292P));
+            bvVar.d(jSONObject.optLong(com.anythink.core.common.k.f15078P));
         }
         if (jSONObject.isNull(com.anythink.core.common.k.am)) {
-            bvVar.g(i9 ^ 1);
+            bvVar.g(i6 ^ 1);
         } else {
             bvVar.g(jSONObject.optInt(com.anythink.core.common.k.am));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14293Q)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15079Q)) {
             bvVar.k(1);
         } else {
-            bvVar.k(jSONObject.optInt(com.anythink.core.common.k.f14293Q));
+            bvVar.k(jSONObject.optInt(com.anythink.core.common.k.f15079Q));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14294R)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15080R)) {
             bvVar.l(1);
         } else {
-            bvVar.l(jSONObject.optInt(com.anythink.core.common.k.f14294R));
+            bvVar.l(jSONObject.optInt(com.anythink.core.common.k.f15080R));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14295S)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15081S)) {
             bvVar.m(-1);
         } else {
-            bvVar.m(jSONObject.optInt(com.anythink.core.common.k.f14295S));
+            bvVar.m(jSONObject.optInt(com.anythink.core.common.k.f15081S));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14296T)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15082T)) {
             bvVar.i("publisher_defined");
         } else {
-            bvVar.i(jSONObject.optString(com.anythink.core.common.k.f14296T));
+            bvVar.i(jSONObject.optString(com.anythink.core.common.k.f15082T));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14297U)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15083U)) {
             j6 = 0;
             bvVar.k(0L);
         } else {
             j6 = 0;
-            bvVar.k(jSONObject.optLong(com.anythink.core.common.k.f14297U));
+            bvVar.k(jSONObject.optLong(com.anythink.core.common.k.f15083U));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14298V)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15084V)) {
             bvVar.l(j6);
         } else {
-            bvVar.l(jSONObject.optLong(com.anythink.core.common.k.f14298V));
+            bvVar.l(jSONObject.optLong(com.anythink.core.common.k.f15084V));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14299W)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15085W)) {
             bvVar.c(0.0d);
         } else {
-            bvVar.c(jSONObject.optDouble(com.anythink.core.common.k.f14299W, 0.0d));
+            bvVar.c(jSONObject.optDouble(com.anythink.core.common.k.f15085W, 0.0d));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14300X)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15086X)) {
             bvVar.n(1);
         } else {
-            bvVar.n(jSONObject.optInt(com.anythink.core.common.k.f14300X));
+            bvVar.n(jSONObject.optInt(com.anythink.core.common.k.f15086X));
         }
         if (jSONObject.isNull(com.anythink.core.common.k.Y)) {
             bvVar.o(1);
         } else {
             bvVar.o(jSONObject.optInt(com.anythink.core.common.k.Y));
         }
-        if (jSONObject.isNull(com.anythink.core.common.k.f14301Z)) {
+        if (jSONObject.isNull(com.anythink.core.common.k.f15087Z)) {
             bvVar.p(2);
         } else {
-            bvVar.p(jSONObject.optInt(com.anythink.core.common.k.f14301Z));
+            bvVar.p(jSONObject.optInt(com.anythink.core.common.k.f15087Z));
         }
         if (jSONObject.isNull(com.anythink.core.common.k.aa)) {
             bvVar.f(1);
@@ -367,7 +367,7 @@ public final class u {
         } else {
             bvVar.k(jSONObject.optString(com.anythink.core.common.k.ah));
         }
-        if (i6 == 7) {
+        if (i4 == 7) {
             com.anythink.core.common.f.c.a(com.anythink.core.common.d.t.b().g()).a(bvVar.z(), bvVar.ac());
         }
         if (jSONObject.isNull(com.anythink.core.common.k.af)) {
@@ -415,9 +415,9 @@ public final class u {
             bvVar.e(jSONObject.optDouble(com.anythink.core.common.k.ap, bvVar.D()));
         }
         if (jSONObject.isNull(com.anythink.core.common.k.aq)) {
-            bvVar.m(j.C0076j.f12486b);
+            bvVar.m(j.C0076j.f13272b);
         } else {
-            bvVar.m(jSONObject.optString(com.anythink.core.common.k.aq, j.C0076j.f12486b));
+            bvVar.m(jSONObject.optString(com.anythink.core.common.k.aq, j.C0076j.f13272b));
         }
         if (jSONObject.isNull(com.anythink.core.common.k.ar)) {
             bvVar.F(2);
@@ -444,8 +444,8 @@ public final class u {
         if (!jSONObject.isNull(l.a.ar) && (optJSONArray = jSONObject.optJSONArray(l.a.ar)) != null && optJSONArray.length() > 0) {
             try {
                 iArr = new int[optJSONArray.length()];
-                for (int i10 = 0; i10 < optJSONArray.length(); i10++) {
-                    iArr[i10] = optJSONArray.getInt(i10);
+                for (int i9 = 0; i9 < optJSONArray.length(); i9++) {
+                    iArr[i9] = optJSONArray.getInt(i9);
                 }
             } catch (Exception unused) {
             }
@@ -549,7 +549,7 @@ public final class u {
 
     private static void a(Map<String, Object> map, int i) {
         if (map != null && i == 22 && com.anythink.core.common.v.q.a(map, "unit_type", 0) == 1) {
-            map.put(j.w.f12608E, 1);
+            map.put(j.w.f13394E, 1);
         }
     }
 }

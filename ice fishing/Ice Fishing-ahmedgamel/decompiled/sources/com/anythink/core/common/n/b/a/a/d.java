@@ -1,6 +1,6 @@
 package com.anythink.core.common.n.b.a.a;
 
-import D.y;
+import D.x;
 import com.anythink.core.common.n.b.aa;
 import com.anythink.core.common.n.c.n;
 import com.anythink.core.common.n.c.v;
@@ -26,177 +26,177 @@ import java.util.regex.Pattern;
 public final class d implements Closeable, Flushable {
 
     /* renamed from: a, reason: collision with root package name */
-    static final String f14889a = "journal";
+    static final String f15676a = "journal";
 
     /* renamed from: b, reason: collision with root package name */
-    static final String f14890b = "journal.tmp";
+    static final String f15677b = "journal.tmp";
 
     /* renamed from: c, reason: collision with root package name */
-    static final String f14891c = "journal.bkp";
+    static final String f15678c = "journal.bkp";
 
     /* renamed from: d, reason: collision with root package name */
-    static final String f14892d = "libcore.io.DiskLruCache";
+    static final String f15679d = "libcore.io.DiskLruCache";
 
     /* renamed from: e, reason: collision with root package name */
-    static final String f14893e = "1";
+    static final String f15680e = "1";
 
     /* renamed from: f, reason: collision with root package name */
-    static final long f14894f = -1;
+    static final long f15681f = -1;
 
     /* renamed from: g, reason: collision with root package name */
-    static final Pattern f14895g = Pattern.compile("[a-z0-9_-]{1,120}");
+    static final Pattern f15682g = Pattern.compile("[a-z0-9_-]{1,120}");
 
     /* renamed from: s, reason: collision with root package name */
-    static final /* synthetic */ boolean f14896s = true;
+    static final /* synthetic */ boolean f15683s = true;
 
     /* renamed from: t, reason: collision with root package name */
-    private static final String f14897t = "CLEAN";
+    private static final String f15684t = "CLEAN";
 
     /* renamed from: u, reason: collision with root package name */
-    private static final String f14898u = "DIRTY";
+    private static final String f15685u = "DIRTY";
 
     /* renamed from: v, reason: collision with root package name */
-    private static final String f14899v = "REMOVE";
+    private static final String f15686v = "REMOVE";
 
     /* renamed from: w, reason: collision with root package name */
-    private static final String f14900w = "READ";
+    private static final String f15687w = "READ";
 
     /* renamed from: B, reason: collision with root package name */
-    private long f14902B;
+    private long f15689B;
 
     /* renamed from: E, reason: collision with root package name */
-    private final Executor f14905E;
+    private final Executor f15692E;
 
     /* renamed from: h, reason: collision with root package name */
-    final com.anythink.core.common.n.b.a.f.a f14907h;
+    final com.anythink.core.common.n.b.a.f.a f15694h;
     final File i;
 
     /* renamed from: k, reason: collision with root package name */
-    com.anythink.core.common.n.c.d f14909k;
+    com.anythink.core.common.n.c.d f15696k;
 
     /* renamed from: m, reason: collision with root package name */
-    int f14911m;
+    int f15698m;
 
     /* renamed from: n, reason: collision with root package name */
-    boolean f14912n;
+    boolean f15699n;
 
     /* renamed from: o, reason: collision with root package name */
-    boolean f14913o;
+    boolean f15700o;
 
     /* renamed from: p, reason: collision with root package name */
-    boolean f14914p;
+    boolean f15701p;
 
     /* renamed from: q, reason: collision with root package name */
-    boolean f14915q;
+    boolean f15702q;
 
     /* renamed from: r, reason: collision with root package name */
-    boolean f14916r;
+    boolean f15703r;
 
     /* renamed from: x, reason: collision with root package name */
-    private final File f14917x;
+    private final File f15704x;
 
     /* renamed from: y, reason: collision with root package name */
-    private final File f14918y;
+    private final File f15705y;
 
     /* renamed from: z, reason: collision with root package name */
-    private final File f14919z;
+    private final File f15706z;
 
     /* renamed from: C, reason: collision with root package name */
-    private long f14903C = 0;
+    private long f15690C = 0;
 
     /* renamed from: l, reason: collision with root package name */
-    final LinkedHashMap<String, b> f14910l = new LinkedHashMap<>(0, 0.75f, true);
+    final LinkedHashMap<String, b> f15697l = new LinkedHashMap<>(0, 0.75f, true);
 
     /* renamed from: D, reason: collision with root package name */
-    private long f14904D = 0;
+    private long f15691D = 0;
 
     /* renamed from: F, reason: collision with root package name */
-    private final Runnable f14906F = new Runnable() { // from class: com.anythink.core.common.n.b.a.a.d.1
+    private final Runnable f15693F = new Runnable() { // from class: com.anythink.core.common.n.b.a.a.d.1
         @Override // java.lang.Runnable
         public final void run() {
             synchronized (d.this) {
                 d dVar = d.this;
-                if ((!dVar.f14913o) || dVar.f14914p) {
+                if ((!dVar.f15700o) || dVar.f15701p) {
                     return;
                 }
                 try {
                     dVar.h();
                 } catch (IOException unused) {
-                    d.this.f14915q = true;
+                    d.this.f15702q = true;
                 }
                 try {
                     if (d.this.f()) {
                         d.this.b();
-                        d.this.f14911m = 0;
+                        d.this.f15698m = 0;
                     }
                 } catch (IOException unused2) {
                     d dVar2 = d.this;
-                    dVar2.f14916r = true;
-                    dVar2.f14909k = n.a(n.a());
+                    dVar2.f15703r = true;
+                    dVar2.f15696k = n.a(n.a());
                 }
             }
         }
     };
 
     /* renamed from: A, reason: collision with root package name */
-    private final int f14901A = 201105;
+    private final int f15688A = 201105;
 
     /* renamed from: j, reason: collision with root package name */
-    final int f14908j = 2;
+    final int f15695j = 2;
 
     public final class c implements Closeable {
 
         /* renamed from: b, reason: collision with root package name */
-        private final String f14941b;
+        private final String f15728b;
 
         /* renamed from: c, reason: collision with root package name */
-        private final long f14942c;
+        private final long f15729c;
 
         /* renamed from: d, reason: collision with root package name */
-        private final w[] f14943d;
+        private final w[] f15730d;
 
         /* renamed from: e, reason: collision with root package name */
-        private final long[] f14944e;
+        private final long[] f15731e;
 
         public c(String str, long j6, w[] wVarArr, long[] jArr) {
-            this.f14941b = str;
-            this.f14942c = j6;
-            this.f14943d = wVarArr;
-            this.f14944e = jArr;
+            this.f15728b = str;
+            this.f15729c = j6;
+            this.f15730d = wVarArr;
+            this.f15731e = jArr;
         }
 
         private String b() {
-            return this.f14941b;
+            return this.f15728b;
         }
 
         @Override // java.io.Closeable, java.lang.AutoCloseable
         public final void close() {
-            for (w wVar : this.f14943d) {
+            for (w wVar : this.f15730d) {
                 com.anythink.core.common.n.b.a.c.a(wVar);
             }
         }
 
         private long b(int i) {
-            return this.f14944e[i];
+            return this.f15731e[i];
         }
 
         public final a a() {
-            return d.this.a(this.f14941b, this.f14942c);
+            return d.this.a(this.f15728b, this.f15729c);
         }
 
         public final w a(int i) {
-            return this.f14943d[i];
+            return this.f15730d[i];
         }
     }
 
     private d(com.anythink.core.common.n.b.a.f.a aVar, File file, long j6, Executor executor) {
-        this.f14907h = aVar;
+        this.f15694h = aVar;
         this.i = file;
-        this.f14917x = new File(file, f14889a);
-        this.f14918y = new File(file, f14890b);
-        this.f14919z = new File(file, f14891c);
-        this.f14902B = j6;
-        this.f14905E = executor;
+        this.f15704x = new File(file, f15676a);
+        this.f15705y = new File(file, f15677b);
+        this.f15706z = new File(file, f15678c);
+        this.f15689B = j6;
+        this.f15692E = executor;
     }
 
     private void d(String str) {
@@ -209,28 +209,28 @@ public final class d implements Closeable, Flushable {
         int indexOf2 = str.indexOf(32, i);
         if (indexOf2 == -1) {
             substring = str.substring(i);
-            if (indexOf == 6 && str.startsWith(f14899v)) {
-                this.f14910l.remove(substring);
+            if (indexOf == 6 && str.startsWith(f15686v)) {
+                this.f15697l.remove(substring);
                 return;
             }
         } else {
             substring = str.substring(i, indexOf2);
         }
-        b bVar = this.f14910l.get(substring);
+        b bVar = this.f15697l.get(substring);
         if (bVar == null) {
             bVar = new b(substring);
-            this.f14910l.put(substring, bVar);
+            this.f15697l.put(substring, bVar);
         }
-        if (indexOf2 != -1 && indexOf == 5 && str.startsWith(f14897t)) {
+        if (indexOf2 != -1 && indexOf == 5 && str.startsWith(f15684t)) {
             String[] split = str.substring(indexOf2 + 1).split(" ");
-            bVar.f14936e = true;
-            bVar.f14937f = null;
+            bVar.f15723e = true;
+            bVar.f15724f = null;
             bVar.a(split);
             return;
         }
-        if (indexOf2 == -1 && indexOf == 5 && str.startsWith(f14898u)) {
-            bVar.f14937f = new a(bVar);
-        } else if (indexOf2 != -1 || indexOf != 4 || !str.startsWith(f14900w)) {
+        if (indexOf2 == -1 && indexOf == 5 && str.startsWith(f15685u)) {
+            bVar.f15724f = new a(bVar);
+        } else if (indexOf2 != -1 || indexOf != 4 || !str.startsWith(f15687w)) {
             throw new IOException("unexpected journal line: ".concat(str));
         }
     }
@@ -244,55 +244,55 @@ public final class d implements Closeable, Flushable {
     */
     private void l() {
         String substring;
-        com.anythink.core.common.n.c.e a9 = n.a(this.f14907h.a(this.f14917x));
+        com.anythink.core.common.n.c.e a9 = n.a(this.f15694h.a(this.f15704x));
         try {
+            String w3 = a9.w();
             String w6 = a9.w();
             String w9 = a9.w();
             String w10 = a9.w();
             String w11 = a9.w();
-            String w12 = a9.w();
-            if (!f14892d.equals(w6) || !"1".equals(w9) || !Integer.toString(this.f14901A).equals(w10) || !Integer.toString(this.f14908j).equals(w11) || !"".equals(w12)) {
-                throw new IOException("unexpected journal header: [" + w6 + ", " + w9 + ", " + w11 + ", " + w12 + "]");
+            if (!f15679d.equals(w3) || !"1".equals(w6) || !Integer.toString(this.f15688A).equals(w9) || !Integer.toString(this.f15695j).equals(w10) || !"".equals(w11)) {
+                throw new IOException("unexpected journal header: [" + w3 + ", " + w6 + ", " + w10 + ", " + w11 + "]");
             }
             int i = 0;
             while (true) {
                 try {
-                    String w13 = a9.w();
-                    int indexOf = w13.indexOf(32);
+                    String w12 = a9.w();
+                    int indexOf = w12.indexOf(32);
                     if (indexOf == -1) {
-                        throw new IOException("unexpected journal line: ".concat(w13));
+                        throw new IOException("unexpected journal line: ".concat(w12));
                     }
-                    int i6 = indexOf + 1;
-                    int indexOf2 = w13.indexOf(32, i6);
+                    int i4 = indexOf + 1;
+                    int indexOf2 = w12.indexOf(32, i4);
                     if (indexOf2 == -1) {
-                        substring = w13.substring(i6);
-                        if (indexOf == 6 && w13.startsWith(f14899v)) {
-                            this.f14910l.remove(substring);
+                        substring = w12.substring(i4);
+                        if (indexOf == 6 && w12.startsWith(f15686v)) {
+                            this.f15697l.remove(substring);
                             i++;
                         }
                     } else {
-                        substring = w13.substring(i6, indexOf2);
+                        substring = w12.substring(i4, indexOf2);
                     }
-                    b bVar = this.f14910l.get(substring);
+                    b bVar = this.f15697l.get(substring);
                     if (bVar == null) {
                         bVar = new b(substring);
-                        this.f14910l.put(substring, bVar);
+                        this.f15697l.put(substring, bVar);
                     }
-                    if (indexOf2 != -1 && indexOf == 5 && w13.startsWith(f14897t)) {
-                        String[] split = w13.substring(indexOf2 + 1).split(" ");
-                        bVar.f14936e = true;
-                        bVar.f14937f = null;
+                    if (indexOf2 != -1 && indexOf == 5 && w12.startsWith(f15684t)) {
+                        String[] split = w12.substring(indexOf2 + 1).split(" ");
+                        bVar.f15723e = true;
+                        bVar.f15724f = null;
                         bVar.a(split);
-                    } else if (indexOf2 == -1 && indexOf == 5 && w13.startsWith(f14898u)) {
-                        bVar.f14937f = new a(bVar);
-                    } else if (indexOf2 != -1 || indexOf != 4 || !w13.startsWith(f14900w)) {
+                    } else if (indexOf2 == -1 && indexOf == 5 && w12.startsWith(f15685u)) {
+                        bVar.f15724f = new a(bVar);
+                    } else if (indexOf2 != -1 || indexOf != 4 || !w12.startsWith(f15687w)) {
                         break;
                     }
                     i++;
                 } catch (EOFException unused) {
-                    this.f14911m = i - this.f14910l.size();
+                    this.f15698m = i - this.f15697l.size();
                     if (a9.g()) {
-                        this.f14909k = m();
+                        this.f15696k = m();
                     } else {
                         b();
                     }
@@ -311,37 +311,37 @@ public final class d implements Closeable, Flushable {
     }
 
     private com.anythink.core.common.n.c.d m() {
-        return n.a(new e(this.f14907h.c(this.f14917x)) { // from class: com.anythink.core.common.n.b.a.a.d.2
+        return n.a(new e(this.f15694h.c(this.f15704x)) { // from class: com.anythink.core.common.n.b.a.a.d.2
 
             /* renamed from: a, reason: collision with root package name */
-            static final /* synthetic */ boolean f14921a = true;
+            static final /* synthetic */ boolean f15708a = true;
 
             @Override // com.anythink.core.common.n.b.a.a.e
             public final void b() {
-                if (!f14921a && !Thread.holdsLock(d.this)) {
+                if (!f15708a && !Thread.holdsLock(d.this)) {
                     throw new AssertionError();
                 }
-                d.this.f14912n = true;
+                d.this.f15699n = true;
             }
         });
     }
 
     private void n() {
-        this.f14907h.d(this.f14918y);
-        Iterator<b> it = this.f14910l.values().iterator();
+        this.f15694h.d(this.f15705y);
+        Iterator<b> it = this.f15697l.values().iterator();
         while (it.hasNext()) {
             b next = it.next();
             int i = 0;
-            if (next.f14937f == null) {
-                while (i < this.f14908j) {
-                    this.f14903C += next.f14933b[i];
+            if (next.f15724f == null) {
+                while (i < this.f15695j) {
+                    this.f15690C += next.f15720b[i];
                     i++;
                 }
             } else {
-                next.f14937f = null;
-                while (i < this.f14908j) {
-                    this.f14907h.d(next.f14934c[i]);
-                    this.f14907h.d(next.f14935d[i]);
+                next.f15724f = null;
+                while (i < this.f15695j) {
+                    this.f15694h.d(next.f15721c[i]);
+                    this.f15694h.d(next.f15722d[i]);
                     i++;
                 }
                 it.remove();
@@ -357,38 +357,38 @@ public final class d implements Closeable, Flushable {
 
     public final synchronized void a() {
         try {
-            if (!f14896s && !Thread.holdsLock(this)) {
+            if (!f15683s && !Thread.holdsLock(this)) {
                 throw new AssertionError();
             }
-            if (this.f14913o) {
+            if (this.f15700o) {
                 return;
             }
-            if (this.f14907h.e(this.f14919z)) {
-                if (this.f14907h.e(this.f14917x)) {
-                    this.f14907h.d(this.f14919z);
+            if (this.f15694h.e(this.f15706z)) {
+                if (this.f15694h.e(this.f15704x)) {
+                    this.f15694h.d(this.f15706z);
                 } else {
-                    this.f14907h.a(this.f14919z, this.f14917x);
+                    this.f15694h.a(this.f15706z, this.f15704x);
                 }
             }
-            if (this.f14907h.e(this.f14917x)) {
+            if (this.f15694h.e(this.f15704x)) {
                 try {
                     l();
                     n();
-                    this.f14913o = true;
+                    this.f15700o = true;
                     return;
                 } catch (IOException e9) {
                     com.anythink.core.common.n.b.a.g.c.e().a(5, "DiskLruCache " + this.i + " is corrupt: " + e9.getMessage() + ", removing", e9);
                     try {
                         i();
-                        this.f14914p = false;
+                        this.f15701p = false;
                     } catch (Throwable th) {
-                        this.f14914p = false;
+                        this.f15701p = false;
                         throw th;
                     }
                 }
             }
             b();
-            this.f14913o = true;
+            this.f15700o = true;
         } catch (Throwable th2) {
             throw th2;
         }
@@ -396,38 +396,38 @@ public final class d implements Closeable, Flushable {
 
     public final synchronized void b() {
         try {
-            com.anythink.core.common.n.c.d dVar = this.f14909k;
+            com.anythink.core.common.n.c.d dVar = this.f15696k;
             if (dVar != null) {
                 dVar.close();
             }
-            com.anythink.core.common.n.c.d a9 = n.a(this.f14907h.b(this.f14918y));
+            com.anythink.core.common.n.c.d a9 = n.a(this.f15694h.b(this.f15705y));
             try {
-                a9.b(f14892d).l(10);
+                a9.b(f15679d).l(10);
                 a9.b("1").l(10);
-                a9.o(this.f14901A).l(10);
-                a9.o(this.f14908j).l(10);
+                a9.o(this.f15688A).l(10);
+                a9.o(this.f15695j).l(10);
                 a9.l(10);
-                for (b bVar : this.f14910l.values()) {
-                    if (bVar.f14937f != null) {
-                        a9.b(f14898u).l(32);
-                        a9.b(bVar.f14932a);
+                for (b bVar : this.f15697l.values()) {
+                    if (bVar.f15724f != null) {
+                        a9.b(f15685u).l(32);
+                        a9.b(bVar.f15719a);
                         a9.l(10);
                     } else {
-                        a9.b(f14897t).l(32);
-                        a9.b(bVar.f14932a);
+                        a9.b(f15684t).l(32);
+                        a9.b(bVar.f15719a);
                         bVar.a(a9);
                         a9.l(10);
                     }
                 }
                 a9.close();
-                if (this.f14907h.e(this.f14917x)) {
-                    this.f14907h.a(this.f14917x, this.f14919z);
+                if (this.f15694h.e(this.f15704x)) {
+                    this.f15694h.a(this.f15704x, this.f15706z);
                 }
-                this.f14907h.a(this.f14918y, this.f14917x);
-                this.f14907h.d(this.f14919z);
-                this.f14909k = m();
-                this.f14912n = false;
-                this.f14916r = false;
+                this.f15694h.a(this.f15705y, this.f15704x);
+                this.f15694h.d(this.f15706z);
+                this.f15696k = m();
+                this.f15699n = false;
+                this.f15703r = false;
             } finally {
                 try {
                     a9.close();
@@ -447,20 +447,20 @@ public final class d implements Closeable, Flushable {
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public final synchronized void close() {
         try {
-            if (this.f14913o && !this.f14914p) {
-                for (b bVar : (b[]) this.f14910l.values().toArray(new b[this.f14910l.size()])) {
-                    a aVar = bVar.f14937f;
+            if (this.f15700o && !this.f15701p) {
+                for (b bVar : (b[]) this.f15697l.values().toArray(new b[this.f15697l.size()])) {
+                    a aVar = bVar.f15724f;
                     if (aVar != null) {
                         aVar.c();
                     }
                 }
                 h();
-                this.f14909k.close();
-                this.f14909k = null;
-                this.f14914p = true;
+                this.f15696k.close();
+                this.f15696k = null;
+                this.f15701p = true;
                 return;
             }
-            this.f14914p = true;
+            this.f15701p = true;
         } catch (Throwable th) {
             throw th;
         }
@@ -468,46 +468,46 @@ public final class d implements Closeable, Flushable {
 
     public final synchronized long e() {
         a();
-        return this.f14903C;
+        return this.f15690C;
     }
 
     public final boolean f() {
-        int i = this.f14911m;
-        return i >= 2000 && i >= this.f14910l.size();
+        int i = this.f15698m;
+        return i >= 2000 && i >= this.f15697l.size();
     }
 
     @Override // java.io.Flushable
     public final synchronized void flush() {
-        if (this.f14913o) {
+        if (this.f15700o) {
             o();
             h();
-            this.f14909k.flush();
+            this.f15696k.flush();
         }
     }
 
     public final synchronized boolean g() {
-        return this.f14914p;
+        return this.f15701p;
     }
 
     public final void h() {
-        while (this.f14903C > this.f14902B) {
-            a(this.f14910l.values().iterator().next());
+        while (this.f15690C > this.f15689B) {
+            a(this.f15697l.values().iterator().next());
         }
-        this.f14915q = false;
+        this.f15702q = false;
     }
 
     public final void i() {
         close();
-        this.f14907h.g(this.i);
+        this.f15694h.g(this.i);
     }
 
     public final synchronized void j() {
         try {
             a();
-            for (b bVar : (b[]) this.f14910l.values().toArray(new b[this.f14910l.size()])) {
+            for (b bVar : (b[]) this.f15697l.values().toArray(new b[this.f15697l.size()])) {
                 a(bVar);
             }
-            this.f14915q = false;
+            this.f15702q = false;
         } catch (Throwable th) {
             throw th;
         }
@@ -518,43 +518,43 @@ public final class d implements Closeable, Flushable {
         return new Iterator<c>() { // from class: com.anythink.core.common.n.b.a.a.d.3
 
             /* renamed from: a, reason: collision with root package name */
-            final Iterator<b> f14923a;
+            final Iterator<b> f15710a;
 
             /* renamed from: b, reason: collision with root package name */
-            c f14924b;
+            c f15711b;
 
             /* renamed from: c, reason: collision with root package name */
-            c f14925c;
+            c f15712c;
 
             {
-                this.f14923a = new ArrayList(d.this.f14910l.values()).iterator();
+                this.f15710a = new ArrayList(d.this.f15697l.values()).iterator();
             }
 
             private c a() {
                 if (!hasNext()) {
                     throw new NoSuchElementException();
                 }
-                c cVar = this.f14924b;
-                this.f14925c = cVar;
-                this.f14924b = null;
+                c cVar = this.f15711b;
+                this.f15712c = cVar;
+                this.f15711b = null;
                 return cVar;
             }
 
             @Override // java.util.Iterator
             public final boolean hasNext() {
                 c a9;
-                if (this.f14924b != null) {
+                if (this.f15711b != null) {
                     return true;
                 }
                 synchronized (d.this) {
                     try {
-                        if (d.this.f14914p) {
+                        if (d.this.f15701p) {
                             return false;
                         }
-                        while (this.f14923a.hasNext()) {
-                            b next = this.f14923a.next();
-                            if (next.f14936e && (a9 = next.a()) != null) {
-                                this.f14924b = a9;
+                        while (this.f15710a.hasNext()) {
+                            b next = this.f15710a.next();
+                            if (next.f15723e && (a9 = next.a()) != null) {
+                                this.f15711b = a9;
                                 return true;
                             }
                         }
@@ -570,23 +570,23 @@ public final class d implements Closeable, Flushable {
                 if (!hasNext()) {
                     throw new NoSuchElementException();
                 }
-                c cVar = this.f14924b;
-                this.f14925c = cVar;
-                this.f14924b = null;
+                c cVar = this.f15711b;
+                this.f15712c = cVar;
+                this.f15711b = null;
                 return cVar;
             }
 
             @Override // java.util.Iterator
             public final void remove() {
-                c cVar = this.f14925c;
+                c cVar = this.f15712c;
                 if (cVar == null) {
                     throw new IllegalStateException("remove() before next()");
                 }
                 try {
-                    d.this.c(cVar.f14941b);
+                    d.this.c(cVar.f15728b);
                 } catch (IOException unused) {
                 } finally {
-                    this.f14925c = null;
+                    this.f15712c = null;
                 }
             }
         };
@@ -596,50 +596,50 @@ public final class d implements Closeable, Flushable {
         a();
         o();
         e(str);
-        b bVar = this.f14910l.get(str);
+        b bVar = this.f15697l.get(str);
         if (bVar == null) {
             return false;
         }
         a(bVar);
-        if (this.f14903C <= this.f14902B) {
-            this.f14915q = false;
+        if (this.f15690C <= this.f15689B) {
+            this.f15702q = false;
         }
         return true;
     }
 
     private static void e(String str) {
-        if (!f14895g.matcher(str).matches()) {
-            throw new IllegalArgumentException(y.o("keys must match regex [a-z0-9_-]{1,120}: \"", str, "\""));
+        if (!f15682g.matcher(str).matches()) {
+            throw new IllegalArgumentException(x.l("keys must match regex [a-z0-9_-]{1,120}: \"", str, "\""));
         }
     }
 
     public final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        final b f14927a;
+        final b f15714a;
 
         /* renamed from: b, reason: collision with root package name */
-        final boolean[] f14928b;
+        final boolean[] f15715b;
 
         /* renamed from: d, reason: collision with root package name */
-        private boolean f14930d;
+        private boolean f15717d;
 
         public a(b bVar) {
-            this.f14927a = bVar;
-            this.f14928b = bVar.f14936e ? null : new boolean[d.this.f14908j];
+            this.f15714a = bVar;
+            this.f15715b = bVar.f15723e ? null : new boolean[d.this.f15695j];
         }
 
         private w b(int i) {
             synchronized (d.this) {
-                if (this.f14930d) {
+                if (this.f15717d) {
                     throw new IllegalStateException();
                 }
-                b bVar = this.f14927a;
-                if (!bVar.f14936e || bVar.f14937f != this) {
+                b bVar = this.f15714a;
+                if (!bVar.f15723e || bVar.f15724f != this) {
                     return null;
                 }
                 try {
-                    return d.this.f14907h.a(bVar.f14934c[i]);
+                    return d.this.f15694h.a(bVar.f15721c[i]);
                 } catch (FileNotFoundException unused) {
                     return null;
                 }
@@ -648,7 +648,7 @@ public final class d implements Closeable, Flushable {
 
         private void d() {
             synchronized (d.this) {
-                if (!this.f14930d && this.f14927a.f14937f == this) {
+                if (!this.f15717d && this.f15714a.f15724f == this) {
                     try {
                         d.this.a(this, false);
                     } catch (IOException unused) {
@@ -658,18 +658,18 @@ public final class d implements Closeable, Flushable {
         }
 
         public final void a() {
-            if (this.f14927a.f14937f != this) {
+            if (this.f15714a.f15724f != this) {
                 return;
             }
             int i = 0;
             while (true) {
                 d dVar = d.this;
-                if (i >= dVar.f14908j) {
-                    this.f14927a.f14937f = null;
+                if (i >= dVar.f15695j) {
+                    this.f15714a.f15724f = null;
                     return;
                 } else {
                     try {
-                        dVar.f14907h.d(this.f14927a.f14935d[i]);
+                        dVar.f15694h.d(this.f15714a.f15722d[i]);
                     } catch (IOException unused) {
                     }
                     i++;
@@ -680,13 +680,13 @@ public final class d implements Closeable, Flushable {
         public final void c() {
             synchronized (d.this) {
                 try {
-                    if (this.f14930d) {
+                    if (this.f15717d) {
                         throw new IllegalStateException();
                     }
-                    if (this.f14927a.f14937f == this) {
+                    if (this.f15714a.f15724f == this) {
                         d.this.a(this, false);
                     }
-                    this.f14930d = true;
+                    this.f15717d = true;
                 } catch (Throwable th) {
                     throw th;
                 }
@@ -696,16 +696,16 @@ public final class d implements Closeable, Flushable {
         public final v a(int i) {
             synchronized (d.this) {
                 try {
-                    if (!this.f14930d) {
-                        b bVar = this.f14927a;
-                        if (bVar.f14937f != this) {
+                    if (!this.f15717d) {
+                        b bVar = this.f15714a;
+                        if (bVar.f15724f != this) {
                             return n.a();
                         }
-                        if (!bVar.f14936e) {
-                            this.f14928b[i] = true;
+                        if (!bVar.f15723e) {
+                            this.f15715b[i] = true;
                         }
                         try {
-                            return new e(d.this.f14907h.b(bVar.f14935d[i])) { // from class: com.anythink.core.common.n.b.a.a.d.a.1
+                            return new e(d.this.f15694h.b(bVar.f15722d[i])) { // from class: com.anythink.core.common.n.b.a.a.d.a.1
                                 @Override // com.anythink.core.common.n.b.a.a.e
                                 public final void b() {
                                     synchronized (d.this) {
@@ -727,11 +727,11 @@ public final class d implements Closeable, Flushable {
         public final void b() {
             synchronized (d.this) {
                 try {
-                    if (!this.f14930d) {
-                        if (this.f14927a.f14937f == this) {
+                    if (!this.f15717d) {
+                        if (this.f15714a.f15724f == this) {
                             d.this.a(this, true);
                         }
-                        this.f14930d = true;
+                        this.f15717d = true;
                     } else {
                         throw new IllegalStateException();
                     }
@@ -745,40 +745,40 @@ public final class d implements Closeable, Flushable {
     public final class b {
 
         /* renamed from: a, reason: collision with root package name */
-        final String f14932a;
+        final String f15719a;
 
         /* renamed from: b, reason: collision with root package name */
-        final long[] f14933b;
+        final long[] f15720b;
 
         /* renamed from: c, reason: collision with root package name */
-        final File[] f14934c;
+        final File[] f15721c;
 
         /* renamed from: d, reason: collision with root package name */
-        final File[] f14935d;
+        final File[] f15722d;
 
         /* renamed from: e, reason: collision with root package name */
-        boolean f14936e;
+        boolean f15723e;
 
         /* renamed from: f, reason: collision with root package name */
-        a f14937f;
+        a f15724f;
 
         /* renamed from: g, reason: collision with root package name */
-        long f14938g;
+        long f15725g;
 
         public b(String str) {
-            this.f14932a = str;
-            int i = d.this.f14908j;
-            this.f14933b = new long[i];
-            this.f14934c = new File[i];
-            this.f14935d = new File[i];
+            this.f15719a = str;
+            int i = d.this.f15695j;
+            this.f15720b = new long[i];
+            this.f15721c = new File[i];
+            this.f15722d = new File[i];
             StringBuilder sb = new StringBuilder(str);
             sb.append('.');
             int length = sb.length();
-            for (int i6 = 0; i6 < d.this.f14908j; i6++) {
-                sb.append(i6);
-                this.f14934c[i6] = new File(d.this.i, sb.toString());
+            for (int i4 = 0; i4 < d.this.f15695j; i4++) {
+                sb.append(i4);
+                this.f15721c[i4] = new File(d.this.i, sb.toString());
                 sb.append(".tmp");
-                this.f14935d[i6] = new File(d.this.i, sb.toString());
+                this.f15722d[i4] = new File(d.this.i, sb.toString());
                 sb.setLength(length);
             }
         }
@@ -788,12 +788,12 @@ public final class d implements Closeable, Flushable {
         }
 
         public final void a(String[] strArr) {
-            if (strArr.length != d.this.f14908j) {
+            if (strArr.length != d.this.f15695j) {
                 throw b(strArr);
             }
             for (int i = 0; i < strArr.length; i++) {
                 try {
-                    this.f14933b[i] = Long.parseLong(strArr[i]);
+                    this.f15720b[i] = Long.parseLong(strArr[i]);
                 } catch (NumberFormatException unused) {
                     throw b(strArr);
                 }
@@ -801,7 +801,7 @@ public final class d implements Closeable, Flushable {
         }
 
         public final void a(com.anythink.core.common.n.c.d dVar) {
-            for (long j6 : this.f14933b) {
+            for (long j6 : this.f15720b) {
                 dVar.l(32).o(j6);
             }
         }
@@ -809,23 +809,23 @@ public final class d implements Closeable, Flushable {
         public final c a() {
             w wVar;
             if (Thread.holdsLock(d.this)) {
-                w[] wVarArr = new w[d.this.f14908j];
-                long[] jArr = (long[]) this.f14933b.clone();
+                w[] wVarArr = new w[d.this.f15695j];
+                long[] jArr = (long[]) this.f15720b.clone();
                 int i = 0;
-                int i6 = 0;
+                int i4 = 0;
                 while (true) {
                     try {
                         d dVar = d.this;
-                        if (i6 < dVar.f14908j) {
-                            wVarArr[i6] = dVar.f14907h.a(this.f14934c[i6]);
-                            i6++;
+                        if (i4 < dVar.f15695j) {
+                            wVarArr[i4] = dVar.f15694h.a(this.f15721c[i4]);
+                            i4++;
                         } else {
-                            return dVar.new c(this.f14932a, this.f14938g, wVarArr, jArr);
+                            return dVar.new c(this.f15719a, this.f15725g, wVarArr, jArr);
                         }
                     } catch (FileNotFoundException unused) {
                         while (true) {
                             d dVar2 = d.this;
-                            if (i < dVar2.f14908j && (wVar = wVarArr[i]) != null) {
+                            if (i < dVar2.f15695j && (wVar = wVarArr[i]) != null) {
                                 com.anythink.core.common.n.b.a.c.a(wVar);
                                 i++;
                             } else {
@@ -846,12 +846,12 @@ public final class d implements Closeable, Flushable {
     }
 
     public final synchronized long d() {
-        return this.f14902B;
+        return this.f15689B;
     }
 
     public static d a(com.anythink.core.common.n.b.a.f.a aVar, File file, long j6) {
         if (j6 > 0) {
-            return new d(aVar, file, j6, new ThreadPoolExecutor(0, 1, 60L, TimeUnit.SECONDS, new LinkedBlockingQueue(), com.anythink.core.common.n.b.a.c.a(aa.f15462a + " DiskLruCache", true)));
+            return new d(aVar, file, j6, new ThreadPoolExecutor(0, 1, 60L, TimeUnit.SECONDS, new LinkedBlockingQueue(), com.anythink.core.common.n.b.a.c.a(aa.f16249a + " DiskLruCache", true)));
         }
         throw new IllegalArgumentException("maxSize <= 0");
     }
@@ -860,16 +860,16 @@ public final class d implements Closeable, Flushable {
         a();
         o();
         e(str);
-        b bVar = this.f14910l.get(str);
-        if (bVar != null && bVar.f14936e) {
+        b bVar = this.f15697l.get(str);
+        if (bVar != null && bVar.f15723e) {
             c a9 = bVar.a();
             if (a9 == null) {
                 return null;
             }
-            this.f14911m++;
-            this.f14909k.b(f14900w).l(32).b(str).l(10);
+            this.f15698m++;
+            this.f15696k.b(f15687w).l(32).b(str).l(10);
             if (f()) {
-                this.f14905E.execute(this.f14906F);
+                this.f15692E.execute(this.f15693F);
             }
             return a9;
         }
@@ -877,52 +877,52 @@ public final class d implements Closeable, Flushable {
     }
 
     public final a b(String str) {
-        return a(str, f14894f);
+        return a(str, f15681f);
     }
 
     public final synchronized a a(String str, long j6) {
         a();
         o();
         e(str);
-        b bVar = this.f14910l.get(str);
-        if (j6 != f14894f && (bVar == null || bVar.f14938g != j6)) {
+        b bVar = this.f15697l.get(str);
+        if (j6 != f15681f && (bVar == null || bVar.f15725g != j6)) {
             return null;
         }
-        if (bVar != null && bVar.f14937f != null) {
+        if (bVar != null && bVar.f15724f != null) {
             return null;
         }
-        if (!this.f14915q && !this.f14916r) {
-            this.f14909k.b(f14898u).l(32).b(str).l(10);
-            this.f14909k.flush();
-            if (this.f14912n) {
+        if (!this.f15702q && !this.f15703r) {
+            this.f15696k.b(f15685u).l(32).b(str).l(10);
+            this.f15696k.flush();
+            if (this.f15699n) {
                 return null;
             }
             if (bVar == null) {
                 bVar = new b(str);
-                this.f14910l.put(str, bVar);
+                this.f15697l.put(str, bVar);
             }
             a aVar = new a(bVar);
-            bVar.f14937f = aVar;
+            bVar.f15724f = aVar;
             return aVar;
         }
-        this.f14905E.execute(this.f14906F);
+        this.f15692E.execute(this.f15693F);
         return null;
     }
 
     private synchronized void a(long j6) {
-        this.f14902B = j6;
-        if (this.f14913o) {
-            this.f14905E.execute(this.f14906F);
+        this.f15689B = j6;
+        if (this.f15700o) {
+            this.f15692E.execute(this.f15693F);
         }
     }
 
-    public final synchronized void a(a aVar, boolean z3) {
-        b bVar = aVar.f14927a;
-        if (bVar.f14937f == aVar) {
-            if (z3 && !bVar.f14936e) {
-                for (int i = 0; i < this.f14908j; i++) {
-                    if (aVar.f14928b[i]) {
-                        if (!this.f14907h.e(bVar.f14935d[i])) {
+    public final synchronized void a(a aVar, boolean z6) {
+        b bVar = aVar.f15714a;
+        if (bVar.f15724f == aVar) {
+            if (z6 && !bVar.f15723e) {
+                for (int i = 0; i < this.f15695j; i++) {
+                    if (aVar.f15715b[i]) {
+                        if (!this.f15694h.e(bVar.f15722d[i])) {
                             aVar.c();
                             return;
                         }
@@ -932,43 +932,43 @@ public final class d implements Closeable, Flushable {
                     }
                 }
             }
-            for (int i6 = 0; i6 < this.f14908j; i6++) {
-                File file = bVar.f14935d[i6];
-                if (z3) {
-                    if (this.f14907h.e(file)) {
-                        File file2 = bVar.f14934c[i6];
-                        this.f14907h.a(file, file2);
-                        long j6 = bVar.f14933b[i6];
-                        long f3 = this.f14907h.f(file2);
-                        bVar.f14933b[i6] = f3;
-                        this.f14903C = (this.f14903C - j6) + f3;
+            for (int i4 = 0; i4 < this.f15695j; i4++) {
+                File file = bVar.f15722d[i4];
+                if (z6) {
+                    if (this.f15694h.e(file)) {
+                        File file2 = bVar.f15721c[i4];
+                        this.f15694h.a(file, file2);
+                        long j6 = bVar.f15720b[i4];
+                        long f2 = this.f15694h.f(file2);
+                        bVar.f15720b[i4] = f2;
+                        this.f15690C = (this.f15690C - j6) + f2;
                     }
                 } else {
-                    this.f14907h.d(file);
+                    this.f15694h.d(file);
                 }
             }
-            this.f14911m++;
-            bVar.f14937f = null;
-            if (bVar.f14936e | z3) {
-                bVar.f14936e = true;
-                this.f14909k.b(f14897t).l(32);
-                this.f14909k.b(bVar.f14932a);
-                bVar.a(this.f14909k);
-                this.f14909k.l(10);
-                if (z3) {
-                    long j9 = this.f14904D;
-                    this.f14904D = 1 + j9;
-                    bVar.f14938g = j9;
+            this.f15698m++;
+            bVar.f15724f = null;
+            if (bVar.f15723e | z6) {
+                bVar.f15723e = true;
+                this.f15696k.b(f15684t).l(32);
+                this.f15696k.b(bVar.f15719a);
+                bVar.a(this.f15696k);
+                this.f15696k.l(10);
+                if (z6) {
+                    long j9 = this.f15691D;
+                    this.f15691D = 1 + j9;
+                    bVar.f15725g = j9;
                 }
             } else {
-                this.f14910l.remove(bVar.f14932a);
-                this.f14909k.b(f14899v).l(32);
-                this.f14909k.b(bVar.f14932a);
-                this.f14909k.l(10);
+                this.f15697l.remove(bVar.f15719a);
+                this.f15696k.b(f15686v).l(32);
+                this.f15696k.b(bVar.f15719a);
+                this.f15696k.l(10);
             }
-            this.f14909k.flush();
-            if (this.f14903C > this.f14902B || f()) {
-                this.f14905E.execute(this.f14906F);
+            this.f15696k.flush();
+            if (this.f15690C > this.f15689B || f()) {
+                this.f15692E.execute(this.f15693F);
             }
             return;
         }
@@ -976,22 +976,22 @@ public final class d implements Closeable, Flushable {
     }
 
     public final boolean a(b bVar) {
-        a aVar = bVar.f14937f;
+        a aVar = bVar.f15724f;
         if (aVar != null) {
             aVar.a();
         }
-        for (int i = 0; i < this.f14908j; i++) {
-            this.f14907h.d(bVar.f14934c[i]);
-            long j6 = this.f14903C;
-            long[] jArr = bVar.f14933b;
-            this.f14903C = j6 - jArr[i];
+        for (int i = 0; i < this.f15695j; i++) {
+            this.f15694h.d(bVar.f15721c[i]);
+            long j6 = this.f15690C;
+            long[] jArr = bVar.f15720b;
+            this.f15690C = j6 - jArr[i];
             jArr[i] = 0;
         }
-        this.f14911m++;
-        this.f14909k.b(f14899v).l(32).b(bVar.f14932a).l(10);
-        this.f14910l.remove(bVar.f14932a);
+        this.f15698m++;
+        this.f15696k.b(f15686v).l(32).b(bVar.f15719a).l(10);
+        this.f15697l.remove(bVar.f15719a);
         if (f()) {
-            this.f14905E.execute(this.f14906F);
+            this.f15692E.execute(this.f15693F);
         }
         return true;
     }

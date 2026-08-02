@@ -7,14 +7,14 @@ import java.lang.ref.WeakReference;
 public final class h extends androidx.emoji2.text.h {
 
     /* renamed from: a, reason: collision with root package name */
-    public final WeakReference f5489a;
+    public final WeakReference f5637a;
 
     public h(EditText editText) {
-        this.f5489a = new WeakReference(editText);
+        this.f5637a = new WeakReference(editText);
     }
 
     @Override // androidx.emoji2.text.h
     public final void a() {
-        i.a((EditText) this.f5489a.get(), 1);
+        i.a((EditText) this.f5637a.get(), 1);
     }
 }

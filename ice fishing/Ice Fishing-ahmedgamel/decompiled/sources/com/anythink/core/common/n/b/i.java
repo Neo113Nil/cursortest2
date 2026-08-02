@@ -12,155 +12,155 @@ public final class i {
     final String bq;
 
     /* renamed from: a, reason: collision with root package name */
-    static final Comparator<String> f15640a = new L.b(2);
+    static final Comparator<String> f16427a = new L.b(2);
     private static final Map<String, i> br = new LinkedHashMap();
 
     /* renamed from: b, reason: collision with root package name */
-    public static final i f15641b = c("SSL_RSA_WITH_NULL_MD5");
+    public static final i f16428b = c("SSL_RSA_WITH_NULL_MD5");
 
     /* renamed from: c, reason: collision with root package name */
-    public static final i f15642c = c("SSL_RSA_WITH_NULL_SHA");
+    public static final i f16429c = c("SSL_RSA_WITH_NULL_SHA");
 
     /* renamed from: d, reason: collision with root package name */
-    public static final i f15643d = c("SSL_RSA_EXPORT_WITH_RC4_40_MD5");
+    public static final i f16430d = c("SSL_RSA_EXPORT_WITH_RC4_40_MD5");
 
     /* renamed from: e, reason: collision with root package name */
-    public static final i f15644e = c("SSL_RSA_WITH_RC4_128_MD5");
+    public static final i f16431e = c("SSL_RSA_WITH_RC4_128_MD5");
 
     /* renamed from: f, reason: collision with root package name */
-    public static final i f15645f = c("SSL_RSA_WITH_RC4_128_SHA");
+    public static final i f16432f = c("SSL_RSA_WITH_RC4_128_SHA");
 
     /* renamed from: g, reason: collision with root package name */
-    public static final i f15646g = c("SSL_RSA_EXPORT_WITH_DES40_CBC_SHA");
+    public static final i f16433g = c("SSL_RSA_EXPORT_WITH_DES40_CBC_SHA");
 
     /* renamed from: h, reason: collision with root package name */
-    public static final i f15647h = c("SSL_RSA_WITH_DES_CBC_SHA");
+    public static final i f16434h = c("SSL_RSA_WITH_DES_CBC_SHA");
     public static final i i = c("SSL_RSA_WITH_3DES_EDE_CBC_SHA");
 
     /* renamed from: j, reason: collision with root package name */
-    public static final i f15648j = c("SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA");
+    public static final i f16435j = c("SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA");
 
     /* renamed from: k, reason: collision with root package name */
-    public static final i f15649k = c("SSL_DHE_DSS_WITH_DES_CBC_SHA");
+    public static final i f16436k = c("SSL_DHE_DSS_WITH_DES_CBC_SHA");
 
     /* renamed from: l, reason: collision with root package name */
-    public static final i f15650l = c("SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA");
+    public static final i f16437l = c("SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA");
 
     /* renamed from: m, reason: collision with root package name */
-    public static final i f15651m = c("SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA");
+    public static final i f16438m = c("SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA");
 
     /* renamed from: n, reason: collision with root package name */
-    public static final i f15652n = c("SSL_DHE_RSA_WITH_DES_CBC_SHA");
+    public static final i f16439n = c("SSL_DHE_RSA_WITH_DES_CBC_SHA");
 
     /* renamed from: o, reason: collision with root package name */
-    public static final i f15653o = c("SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA");
+    public static final i f16440o = c("SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA");
 
     /* renamed from: p, reason: collision with root package name */
-    public static final i f15654p = c("SSL_DH_anon_EXPORT_WITH_RC4_40_MD5");
+    public static final i f16441p = c("SSL_DH_anon_EXPORT_WITH_RC4_40_MD5");
 
     /* renamed from: q, reason: collision with root package name */
-    public static final i f15655q = c("SSL_DH_anon_WITH_RC4_128_MD5");
+    public static final i f16442q = c("SSL_DH_anon_WITH_RC4_128_MD5");
 
     /* renamed from: r, reason: collision with root package name */
-    public static final i f15656r = c("SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA");
+    public static final i f16443r = c("SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA");
 
     /* renamed from: s, reason: collision with root package name */
-    public static final i f15657s = c("SSL_DH_anon_WITH_DES_CBC_SHA");
+    public static final i f16444s = c("SSL_DH_anon_WITH_DES_CBC_SHA");
 
     /* renamed from: t, reason: collision with root package name */
-    public static final i f15658t = c("SSL_DH_anon_WITH_3DES_EDE_CBC_SHA");
+    public static final i f16445t = c("SSL_DH_anon_WITH_3DES_EDE_CBC_SHA");
 
     /* renamed from: u, reason: collision with root package name */
-    public static final i f15659u = c("TLS_KRB5_WITH_DES_CBC_SHA");
+    public static final i f16446u = c("TLS_KRB5_WITH_DES_CBC_SHA");
 
     /* renamed from: v, reason: collision with root package name */
-    public static final i f15660v = c("TLS_KRB5_WITH_3DES_EDE_CBC_SHA");
+    public static final i f16447v = c("TLS_KRB5_WITH_3DES_EDE_CBC_SHA");
 
     /* renamed from: w, reason: collision with root package name */
-    public static final i f15661w = c("TLS_KRB5_WITH_RC4_128_SHA");
+    public static final i f16448w = c("TLS_KRB5_WITH_RC4_128_SHA");
 
     /* renamed from: x, reason: collision with root package name */
-    public static final i f15662x = c("TLS_KRB5_WITH_DES_CBC_MD5");
+    public static final i f16449x = c("TLS_KRB5_WITH_DES_CBC_MD5");
 
     /* renamed from: y, reason: collision with root package name */
-    public static final i f15663y = c("TLS_KRB5_WITH_3DES_EDE_CBC_MD5");
+    public static final i f16450y = c("TLS_KRB5_WITH_3DES_EDE_CBC_MD5");
 
     /* renamed from: z, reason: collision with root package name */
-    public static final i f15664z = c("TLS_KRB5_WITH_RC4_128_MD5");
+    public static final i f16451z = c("TLS_KRB5_WITH_RC4_128_MD5");
 
     /* renamed from: A, reason: collision with root package name */
-    public static final i f15616A = c("TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA");
+    public static final i f16403A = c("TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA");
 
     /* renamed from: B, reason: collision with root package name */
-    public static final i f15617B = c("TLS_KRB5_EXPORT_WITH_RC4_40_SHA");
+    public static final i f16404B = c("TLS_KRB5_EXPORT_WITH_RC4_40_SHA");
 
     /* renamed from: C, reason: collision with root package name */
-    public static final i f15618C = c("TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5");
+    public static final i f16405C = c("TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5");
 
     /* renamed from: D, reason: collision with root package name */
-    public static final i f15619D = c("TLS_KRB5_EXPORT_WITH_RC4_40_MD5");
+    public static final i f16406D = c("TLS_KRB5_EXPORT_WITH_RC4_40_MD5");
 
     /* renamed from: E, reason: collision with root package name */
-    public static final i f15620E = c("TLS_RSA_WITH_AES_128_CBC_SHA");
+    public static final i f16407E = c("TLS_RSA_WITH_AES_128_CBC_SHA");
 
     /* renamed from: F, reason: collision with root package name */
-    public static final i f15621F = c("TLS_DHE_DSS_WITH_AES_128_CBC_SHA");
+    public static final i f16408F = c("TLS_DHE_DSS_WITH_AES_128_CBC_SHA");
 
     /* renamed from: G, reason: collision with root package name */
-    public static final i f15622G = c("TLS_DHE_RSA_WITH_AES_128_CBC_SHA");
+    public static final i f16409G = c("TLS_DHE_RSA_WITH_AES_128_CBC_SHA");
 
     /* renamed from: H, reason: collision with root package name */
-    public static final i f15623H = c("TLS_DH_anon_WITH_AES_128_CBC_SHA");
+    public static final i f16410H = c("TLS_DH_anon_WITH_AES_128_CBC_SHA");
 
     /* renamed from: I, reason: collision with root package name */
-    public static final i f15624I = c("TLS_RSA_WITH_AES_256_CBC_SHA");
+    public static final i f16411I = c("TLS_RSA_WITH_AES_256_CBC_SHA");
     public static final i J = c("TLS_DHE_DSS_WITH_AES_256_CBC_SHA");
 
     /* renamed from: K, reason: collision with root package name */
-    public static final i f15625K = c("TLS_DHE_RSA_WITH_AES_256_CBC_SHA");
+    public static final i f16412K = c("TLS_DHE_RSA_WITH_AES_256_CBC_SHA");
 
     /* renamed from: L, reason: collision with root package name */
-    public static final i f15626L = c("TLS_DH_anon_WITH_AES_256_CBC_SHA");
+    public static final i f16413L = c("TLS_DH_anon_WITH_AES_256_CBC_SHA");
 
     /* renamed from: M, reason: collision with root package name */
-    public static final i f15627M = c("TLS_RSA_WITH_NULL_SHA256");
+    public static final i f16414M = c("TLS_RSA_WITH_NULL_SHA256");
 
     /* renamed from: N, reason: collision with root package name */
-    public static final i f15628N = c("TLS_RSA_WITH_AES_128_CBC_SHA256");
+    public static final i f16415N = c("TLS_RSA_WITH_AES_128_CBC_SHA256");
 
     /* renamed from: O, reason: collision with root package name */
-    public static final i f15629O = c("TLS_RSA_WITH_AES_256_CBC_SHA256");
+    public static final i f16416O = c("TLS_RSA_WITH_AES_256_CBC_SHA256");
 
     /* renamed from: P, reason: collision with root package name */
-    public static final i f15630P = c("TLS_DHE_DSS_WITH_AES_128_CBC_SHA256");
+    public static final i f16417P = c("TLS_DHE_DSS_WITH_AES_128_CBC_SHA256");
 
     /* renamed from: Q, reason: collision with root package name */
-    public static final i f15631Q = c("TLS_RSA_WITH_CAMELLIA_128_CBC_SHA");
+    public static final i f16418Q = c("TLS_RSA_WITH_CAMELLIA_128_CBC_SHA");
 
     /* renamed from: R, reason: collision with root package name */
-    public static final i f15632R = c("TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA");
+    public static final i f16419R = c("TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA");
 
     /* renamed from: S, reason: collision with root package name */
-    public static final i f15633S = c("TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA");
+    public static final i f16420S = c("TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA");
 
     /* renamed from: T, reason: collision with root package name */
-    public static final i f15634T = c("TLS_DHE_RSA_WITH_AES_128_CBC_SHA256");
+    public static final i f16421T = c("TLS_DHE_RSA_WITH_AES_128_CBC_SHA256");
 
     /* renamed from: U, reason: collision with root package name */
-    public static final i f15635U = c("TLS_DHE_DSS_WITH_AES_256_CBC_SHA256");
+    public static final i f16422U = c("TLS_DHE_DSS_WITH_AES_256_CBC_SHA256");
 
     /* renamed from: V, reason: collision with root package name */
-    public static final i f15636V = c("TLS_DHE_RSA_WITH_AES_256_CBC_SHA256");
+    public static final i f16423V = c("TLS_DHE_RSA_WITH_AES_256_CBC_SHA256");
 
     /* renamed from: W, reason: collision with root package name */
-    public static final i f15637W = c("TLS_DH_anon_WITH_AES_128_CBC_SHA256");
+    public static final i f16424W = c("TLS_DH_anon_WITH_AES_128_CBC_SHA256");
 
     /* renamed from: X, reason: collision with root package name */
-    public static final i f15638X = c("TLS_DH_anon_WITH_AES_256_CBC_SHA256");
+    public static final i f16425X = c("TLS_DH_anon_WITH_AES_256_CBC_SHA256");
     public static final i Y = c("TLS_RSA_WITH_CAMELLIA_256_CBC_SHA");
 
     /* renamed from: Z, reason: collision with root package name */
-    public static final i f15639Z = c("TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA");
+    public static final i f16426Z = c("TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA");
     public static final i aa = c("TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA");
     public static final i ab = c("TLS_PSK_WITH_RC4_128_SHA");
     public static final i ac = c("TLS_PSK_WITH_3DES_EDE_CBC_SHA");
@@ -238,9 +238,9 @@ public final class i {
     /* JADX INFO: Access modifiers changed from: private */
     public static /* synthetic */ int a(String str, String str2) {
         int min = Math.min(str.length(), str2.length());
-        for (int i6 = 4; i6 < min; i6++) {
-            char charAt = str.charAt(i6);
-            char charAt2 = str2.charAt(i6);
+        for (int i4 = 4; i4 < min; i4++) {
+            char charAt = str.charAt(i4);
+            char charAt2 = str2.charAt(i4);
             if (charAt != charAt2) {
                 return charAt < charAt2 ? -1 : 1;
             }

@@ -1,18 +1,18 @@
 package com.onesignal.user.internal.migrations;
 
+import N3.C;
 import Z5.e;
 import Z5.g;
-import a.AbstractC0422a;
 import java.util.Iterator;
 import kotlin.jvm.internal.h;
 import kotlin.jvm.internal.i;
-import u7.InterfaceC5087e;
+import u7.InterfaceC5079e;
 
 /* loaded from: classes2.dex */
 public final class c extends b {
     private final com.onesignal.core.internal.config.c _configModelStore;
     private final e _subscriptionModelStore;
-    private final InterfaceC5087e activePushSubscription$delegate;
+    private final InterfaceC5079e activePushSubscription$delegate;
 
     public static final class a extends i implements I7.a {
         public a() {
@@ -42,7 +42,7 @@ public final class c extends b {
         h.e(_subscriptionModelStore, "_subscriptionModelStore");
         this._configModelStore = _configModelStore;
         this._subscriptionModelStore = _subscriptionModelStore;
-        this.activePushSubscription$delegate = AbstractC0422a.q(new a());
+        this.activePushSubscription$delegate = C.O(new a());
     }
 
     public final Z5.d getActivePushSubscription() {

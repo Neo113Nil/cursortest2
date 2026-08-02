@@ -12,14 +12,14 @@ import com.anythink.expressad.splash.js.SplashJSBridgeImpl;
 public final class b extends com.anythink.core.express.web.b {
 
     /* renamed from: a, reason: collision with root package name */
-    com.anythink.expressad.splash.d.a f20831a;
+    com.anythink.expressad.splash.d.a f21618a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final String f20832b = "SplashWebViewClient";
+    private final String f21619b = "SplashWebViewClient";
 
     private void a(com.anythink.expressad.splash.d.a aVar) {
         if (aVar != null) {
-            this.f20831a = aVar;
+            this.f21618a = aVar;
         }
     }
 
@@ -43,13 +43,13 @@ public final class b extends com.anythink.core.express.web.b {
     public final boolean shouldOverrideUrlLoading(WebView webView, String str) {
         try {
             WindVaneWebView windVaneWebView = (WindVaneWebView) webView;
-            if (System.currentTimeMillis() - windVaneWebView.lastTouchTime > com.anythink.expressad.b.c.a.f18198c) {
+            if (System.currentTimeMillis() - windVaneWebView.lastTouchTime > com.anythink.expressad.b.c.a.f18985c) {
                 d dVar = ((SplashJSBridgeImpl) windVaneWebView.getObject()).getmCampaignList().get(0);
                 windVaneWebView.getUrl();
                 com.anythink.expressad.b.c.a.a(dVar);
                 return false;
             }
-            com.anythink.expressad.splash.d.a aVar = this.f20831a;
+            com.anythink.expressad.splash.d.a aVar = this.f21618a;
             if (aVar == null) {
                 return true;
             }

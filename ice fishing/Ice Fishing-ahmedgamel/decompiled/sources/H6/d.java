@@ -7,20 +7,20 @@ import java.util.List;
 public final class d extends c6.f {
 
     /* renamed from: w, reason: collision with root package name */
-    public static final c f1234w;
+    public static final c f1259w;
 
     /* renamed from: v, reason: collision with root package name */
-    public final List f1235v;
+    public final List f1260v;
 
     static {
-        c6.d dVar = c6.d.f5578u;
-        n nVar = n.f5618u;
-        f1234w = new c(d.class);
+        c6.d dVar = c6.d.f5754u;
+        n nVar = n.f5794u;
+        f1259w = new c(d.class);
     }
 
     public d(d6.d dVar, y8.h hVar) {
-        super(f1234w, hVar);
-        this.f1235v = V2.a.o("values", dVar);
+        super(f1259w, hVar);
+        this.f1260v = A8.b.m("values", dVar);
     }
 
     public final boolean equals(Object obj) {
@@ -31,22 +31,22 @@ public final class d extends c6.f {
             return false;
         }
         d dVar = (d) obj;
-        return a().equals(dVar.a()) && this.f1235v.equals(dVar.f1235v);
+        return a().equals(dVar.a()) && this.f1260v.equals(dVar.f1260v);
     }
 
     public final int hashCode() {
-        int i = this.f5587u;
+        int i = this.f5763u;
         if (i != 0) {
             return i;
         }
-        int hashCode = this.f1235v.hashCode() + (a().hashCode() * 37);
-        this.f5587u = hashCode;
+        int hashCode = this.f1260v.hashCode() + (a().hashCode() * 37);
+        this.f5763u = hashCode;
         return hashCode;
     }
 
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        List list = this.f1235v;
+        List list = this.f1260v;
         if (!list.isEmpty()) {
             sb.append(", values=");
             sb.append(list);

@@ -8,8 +8,8 @@ import android.view.ViewOutlineProvider;
 public class Y9 extends ViewOutlineProvider {
     public final /* synthetic */ float A00;
 
-    public Y9(float f3) {
-        this.A00 = f3;
+    public Y9(float f2) {
+        this.A00 = f2;
     }
 
     @Override // android.view.ViewOutlineProvider

@@ -6,27 +6,27 @@ import com.facebook.ads.internal.protocol.AdPlacementType;
 public final class MG implements ZU {
     @Override // com.instagram.common.viewpoint.core.ZU
     public final String A6l() {
-        return EnumC1733ez.A06.A03();
+        return EnumC1753ez.A06.A03();
     }
 
     @Override // com.instagram.common.viewpoint.core.ZU
     public final String A7M() {
-        return EnumC1733ez.A04.A03();
+        return EnumC1753ez.A04.A03();
     }
 
     @Override // com.instagram.common.viewpoint.core.ZU
     public final String A7w() {
-        return EnumC1733ez.A08.A03();
+        return EnumC1753ez.A08.A03();
     }
 
     @Override // com.instagram.common.viewpoint.core.ZU
     public final String A81() {
-        return EnumC1733ez.A09.A03();
+        return EnumC1753ez.A09.A03();
     }
 
     @Override // com.instagram.common.viewpoint.core.ZU
     public final String A8G() {
-        return EnumC1733ez.A0A.A03();
+        return EnumC1753ez.A0A.A03();
     }
 
     @Override // com.instagram.common.viewpoint.core.ZU
@@ -36,11 +36,11 @@ public final class MG implements ZU {
 
     @Override // com.instagram.common.viewpoint.core.ZU
     public final String A94() {
-        return EnumC1733ez.A0B.A03();
+        return EnumC1753ez.A0B.A03();
     }
 
     @Override // com.instagram.common.viewpoint.core.ZU
     public final String A95() {
-        return EnumC1733ez.A0C.A03();
+        return EnumC1753ez.A0C.A03();
     }
 }

@@ -1,8 +1,9 @@
 package s8;
 
+import a.AbstractC0426a;
 import android.os.Build;
 import android.util.Log;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import i8.r;
 import java.net.InetSocketAddress;
 import java.net.Socket;
@@ -21,39 +22,39 @@ import kotlin.jvm.internal.h;
 public abstract class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public static volatile f f40500a;
+    public static volatile f f40554a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final Logger f40501b;
+    public static final Logger f40555b;
 
     static {
         try {
-            for (Map.Entry entry : t8.c.f40927b.entrySet()) {
+            for (Map.Entry entry : t8.c.f40890b.entrySet()) {
                 String str = (String) entry.getKey();
                 String str2 = (String) entry.getValue();
                 Logger logger = Logger.getLogger(str);
-                if (t8.c.f40926a.add(logger)) {
+                if (t8.c.f40889a.add(logger)) {
                     logger.setUseParentHandlers(false);
                     logger.setLevel(Log.isLoggable(str2, 3) ? Level.FINE : Log.isLoggable(str2, 4) ? Level.INFO : Level.WARNING);
-                    logger.addHandler(t8.d.f40928a);
+                    logger.addHandler(t8.d.f40891a);
                 }
             }
         } catch (RuntimeException e9) {
             System.err.println("Possibly running android unit test without robolectric");
             e9.printStackTrace();
         }
-        f bVar = b.f40492e ? new b() : null;
+        f bVar = b.f40546e ? new b() : null;
         if (bVar == null) {
-            bVar = d.f40497e ? new d() : null;
+            bVar = d.f40551e ? new d() : null;
         }
         if (bVar == null) {
-            throw new IllegalStateException(AbstractC4404f.e(Build.VERSION.SDK_INT, "Expected Android API level 21+ but was "));
+            throw new IllegalStateException(Wv.f(Build.VERSION.SDK_INT, "Expected Android API level 21+ but was "));
         }
-        f40500a = bVar;
-        f40501b = Logger.getLogger(r.class.getName());
+        f40554a = bVar;
+        f40555b = Logger.getLogger(r.class.getName());
     }
 
-    public com.bumptech.glide.e c(X509TrustManager trustManager) {
+    public AbstractC0426a c(X509TrustManager trustManager) {
         h.e(trustManager, "trustManager");
         return new w8.a(d(trustManager));
     }
@@ -74,7 +75,7 @@ public abstract class f {
     public abstract String g(SSLSocket sSLSocket);
 
     public Object h() {
-        if (f40501b.isLoggable(Level.FINE)) {
+        if (f40555b.isLoggable(Level.FINE)) {
             return new Throwable("response.body().close()");
         }
         return null;

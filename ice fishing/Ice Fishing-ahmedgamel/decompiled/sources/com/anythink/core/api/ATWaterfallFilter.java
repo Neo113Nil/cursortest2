@@ -29,13 +29,13 @@ public class ATWaterfallFilter extends ATAdFilter {
             return this.scurrency;
         }
 
-        public PriceInterval lessThanPrice(double d2) {
-            this.lessPrice = Double.valueOf(d2);
+        public PriceInterval lessThanPrice(double d9) {
+            this.lessPrice = Double.valueOf(d9);
             return this;
         }
 
-        public PriceInterval moreThanPrice(double d2) {
-            this.morePrice = Double.valueOf(d2);
+        public PriceInterval moreThanPrice(double d9) {
+            this.morePrice = Double.valueOf(d9);
             return this;
         }
     }

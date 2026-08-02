@@ -10,32 +10,32 @@ import java.util.List;
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    n f13170a;
+    n f13956a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected int f13171b;
+    protected int f13957b;
 
     public a(Context context) {
-        this.f13170a = n.a(e.a(context));
+        this.f13956a = n.a(e.a(context));
     }
 
-    public final void a(String str, int i, int i6) {
-        this.f13170a.a(this.f13171b, str, i, i6);
+    public final void a(String str, int i, int i4) {
+        this.f13956a.a(this.f13957b, str, i, i4);
     }
 
     public final void a(String str, long j6) {
-        this.f13170a.a(this.f13171b, str, j6);
+        this.f13956a.a(this.f13957b, str, j6);
     }
 
     public final void a(String str, String str2) {
-        this.f13170a.a(str, this.f13171b, str2);
+        this.f13956a.a(str, this.f13957b, str2);
     }
 
     private List<be> a() {
-        return this.f13170a.a(this.f13171b);
+        return this.f13956a.a(this.f13957b);
     }
 
     public final List<be> a(List<String> list) {
-        return this.f13170a.a(list, this.f13171b);
+        return this.f13956a.a(list, this.f13957b);
     }
 }

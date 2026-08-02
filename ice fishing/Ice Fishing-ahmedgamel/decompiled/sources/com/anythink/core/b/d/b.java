@@ -30,20 +30,20 @@ public final class b {
     }
 
     public static double a(com.anythink.core.common.h.a aVar, bv bvVar) {
-        double d2 = 0.0d;
-        if (aVar.f13344t == 8) {
-            Map<String, Double> map = aVar.f13345u;
-            Double d9 = map != null ? map.get(bvVar.z()) : null;
-            if (d9 != null) {
-                d2 = d9.doubleValue();
-                bvVar.d(d2);
+        double d9 = 0.0d;
+        if (aVar.f14130t == 8) {
+            Map<String, Double> map = aVar.f14131u;
+            Double d10 = map != null ? map.get(bvVar.z()) : null;
+            if (d10 != null) {
+                d9 = d10.doubleValue();
+                bvVar.d(d9);
             }
             bvVar.z();
-            return d2;
+            return d9;
         }
         double ar = bvVar.ar();
-        if (aVar.f13323C > 0.0d && bvVar.aS() == 1) {
-            double max = Math.max(ar, aVar.f13323C);
+        if (aVar.f14109C > 0.0d && bvVar.aS() == 1) {
+            double max = Math.max(ar, aVar.f14109C);
             bvVar.d(max);
             bvVar.toString();
             return max;

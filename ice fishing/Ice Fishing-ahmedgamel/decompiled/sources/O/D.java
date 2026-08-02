@@ -8,5 +8,5 @@ import java.util.WeakHashMap;
 public abstract class D {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Map f2033a = Collections.synchronizedMap(new WeakHashMap());
+    public static final Map f2121a = Collections.synchronizedMap(new WeakHashMap());
 }

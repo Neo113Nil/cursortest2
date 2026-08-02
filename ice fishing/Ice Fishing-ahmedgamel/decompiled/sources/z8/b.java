@@ -7,7 +7,7 @@ import y8.u;
 public abstract class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final char[] f42277a = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
+    public static final char[] f42246a = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
 
     public static final int a(char c9) {
         if ('0' <= c9 && c9 < ':') {
@@ -23,31 +23,31 @@ public abstract class b {
     }
 
     public static final int b(u uVar, int i) {
-        int i6;
+        int i4;
         h.e(uVar, "<this>");
-        int i9 = i + 1;
-        int length = uVar.f41997x.length;
-        int[] iArr = uVar.f41998y;
+        int i6 = i + 1;
+        int length = uVar.f41968x.length;
+        int[] iArr = uVar.f41969y;
         h.e(iArr, "<this>");
-        int i10 = length - 1;
-        int i11 = 0;
+        int i9 = length - 1;
+        int i10 = 0;
         while (true) {
-            if (i11 <= i10) {
-                i6 = (i11 + i10) >>> 1;
-                int i12 = iArr[i6];
-                if (i12 >= i9) {
-                    if (i12 <= i9) {
+            if (i10 <= i9) {
+                i4 = (i10 + i9) >>> 1;
+                int i11 = iArr[i4];
+                if (i11 >= i6) {
+                    if (i11 <= i6) {
                         break;
                     }
-                    i10 = i6 - 1;
+                    i9 = i4 - 1;
                 } else {
-                    i11 = i6 + 1;
+                    i10 = i4 + 1;
                 }
             } else {
-                i6 = (-i11) - 1;
+                i4 = (-i10) - 1;
                 break;
             }
         }
-        return i6 >= 0 ? i6 : ~i6;
+        return i4 >= 0 ? i4 : ~i4;
     }
 }

@@ -144,16 +144,16 @@ public final class e extends i {
         return getBooleanProperty("isUnattributedEnabled", g.INSTANCE);
     }
 
-    public final void setDirectEnabled(boolean z3) {
-        i.setBooleanProperty$default(this, "isDirectEnabled", z3, null, false, 12, null);
+    public final void setDirectEnabled(boolean z6) {
+        i.setBooleanProperty$default(this, "isDirectEnabled", z6, null, false, 12, null);
     }
 
     public final void setIamLimit(int i) {
         i.setIntProperty$default(this, "iamLimit", i, null, false, 12, null);
     }
 
-    public final void setIndirectEnabled(boolean z3) {
-        i.setBooleanProperty$default(this, "isIndirectEnabled", z3, null, false, 12, null);
+    public final void setIndirectEnabled(boolean z6) {
+        i.setBooleanProperty$default(this, "isIndirectEnabled", z6, null, false, 12, null);
     }
 
     public final void setIndirectIAMAttributionWindow(int i) {
@@ -168,7 +168,7 @@ public final class e extends i {
         i.setIntProperty$default(this, "notificationLimit", i, null, false, 12, null);
     }
 
-    public final void setUnattributedEnabled(boolean z3) {
-        i.setBooleanProperty$default(this, "isUnattributedEnabled", z3, null, false, 12, null);
+    public final void setUnattributedEnabled(boolean z6) {
+        i.setBooleanProperty$default(this, "isUnattributedEnabled", z6, null, false, 12, null);
     }
 }

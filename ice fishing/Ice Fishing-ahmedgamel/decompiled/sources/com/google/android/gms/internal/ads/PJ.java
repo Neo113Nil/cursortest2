@@ -8,28 +8,28 @@ import javax.crypto.spec.SecretKeySpec;
 public final class PJ {
 
     /* renamed from: d, reason: collision with root package name */
-    public static final L7.b f26753d = new L7.b(7);
+    public static final L7.b f27536d = new L7.b(7);
 
     /* renamed from: a, reason: collision with root package name */
-    public final SecretKeySpec f26754a;
+    public final SecretKeySpec f27537a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f26755b;
+    public final int f27538b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f26756c;
+    public final int f27539c;
 
     public PJ(byte[] bArr, int i) {
         if (!WC.c(2)) {
             throw new GeneralSecurityException("Can not use AES-CTR in FIPS-mode, as BoringCrypto module is not available.");
         }
-        AbstractC3341iD.d(bArr.length);
-        this.f26754a = new SecretKeySpec(bArr, "AES");
-        int blockSize = ((Cipher) f26753d.get()).getBlockSize();
-        this.f26756c = blockSize;
+        AbstractC3364iD.d(bArr.length);
+        this.f27537a = new SecretKeySpec(bArr, "AES");
+        int blockSize = ((Cipher) f27536d.get()).getBlockSize();
+        this.f27539c = blockSize;
         if (i > blockSize) {
             throw new GeneralSecurityException("invalid IV size");
         }
-        this.f26755b = i;
+        this.f27538b = i;
     }
 }

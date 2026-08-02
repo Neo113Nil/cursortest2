@@ -6,21 +6,21 @@ import com.anythink.core.api.AdError;
 public final class k {
 
     /* renamed from: a, reason: collision with root package name */
-    private final int f13975a;
+    private final int f14761a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final AdError f13976b;
+    private final AdError f14762b;
 
     public k(int i, AdError adError) {
-        this.f13975a = i;
-        this.f13976b = adError;
+        this.f14761a = i;
+        this.f14762b = adError;
     }
 
     public final int a() {
-        return this.f13975a;
+        return this.f14761a;
     }
 
     public final AdError b() {
-        return this.f13976b;
+        return this.f14762b;
     }
 }

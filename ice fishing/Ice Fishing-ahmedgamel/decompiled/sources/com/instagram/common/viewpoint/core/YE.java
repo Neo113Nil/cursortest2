@@ -15,10 +15,10 @@ public final class YE implements ThreadFactory {
         A02();
     }
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 92);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 92);
         }
         return new String(copyOfRange);
     }
@@ -33,7 +33,7 @@ public final class YE implements ThreadFactory {
 
     @Override // java.util.concurrent.ThreadFactory
     public final Thread newThread(Runnable runnable) {
-        AbstractC1258Tj.A00(A01(35, 27, 45));
+        AbstractC1278Tj.A00(A01(35, 27, 45));
         Thread thread = new Thread(null, runnable, A00(), 0L);
         thread.setPriority(this.A00);
         return thread;

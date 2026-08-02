@@ -6,6 +6,6 @@ import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 public final class p extends W7.c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final /* synthetic */ AtomicReferenceFieldUpdater f3360a = AtomicReferenceFieldUpdater.newUpdater(p.class, Object.class, "_state$volatile");
+    public static final /* synthetic */ AtomicReferenceFieldUpdater f3490a = AtomicReferenceFieldUpdater.newUpdater(p.class, Object.class, "_state$volatile");
     private volatile /* synthetic */ Object _state$volatile;
 }

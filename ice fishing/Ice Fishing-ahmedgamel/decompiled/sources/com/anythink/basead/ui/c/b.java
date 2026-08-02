@@ -16,10 +16,10 @@ import com.anythink.core.common.v.am;
 public final class b extends a {
 
     /* renamed from: o, reason: collision with root package name */
-    private GuideToClickView f10628o;
+    private GuideToClickView f11414o;
 
     /* renamed from: p, reason: collision with root package name */
-    private SimpleCircleView f10629p;
+    private SimpleCircleView f11415p;
 
     public b(Context context, w wVar, x xVar, c.a aVar, int i, ViewGroup viewGroup) {
         super(context, wVar, xVar, aVar, i, viewGroup);
@@ -28,18 +28,18 @@ public final class b extends a {
     @Override // com.anythink.basead.ui.c.a
     public final void a(ViewGroup viewGroup) {
         super.a(viewGroup);
-        this.f10629p = new SimpleCircleView(this.f10610a);
-        GuideToClickView guideToClickView = new GuideToClickView(this.f10610a);
-        this.f10628o = guideToClickView;
+        this.f11415p = new SimpleCircleView(this.f11396a);
+        GuideToClickView guideToClickView = new GuideToClickView(this.f11396a);
+        this.f11414o = guideToClickView;
         guideToClickView.hideBackground();
-        viewGroup.addView(this.f10629p, -1, -1);
-        viewGroup.addView(this.f10628o, -1, -1);
-        b(this.f10612c.f14168o.aR());
-        this.f10628o.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.c.b.1
+        viewGroup.addView(this.f11415p, -1, -1);
+        viewGroup.addView(this.f11414o, -1, -1);
+        b(this.f11398c.f14954o.aR());
+        this.f11414o.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.c.b.1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 b bVar = b.this;
-                c.a aVar = bVar.f10614e;
+                c.a aVar = bVar.f11400e;
                 if (aVar != null) {
                     aVar.a(14, 26);
                 } else {
@@ -47,7 +47,7 @@ public final class b extends a {
                 }
             }
         });
-        d.a aVar = this.f10617h;
+        d.a aVar = this.f11403h;
         if (aVar != null) {
             aVar.a(true);
         }
@@ -56,29 +56,29 @@ public final class b extends a {
     @Override // com.anythink.basead.ui.c.a
     public final void d() {
         super.d();
-        GuideToClickView guideToClickView = this.f10628o;
+        GuideToClickView guideToClickView = this.f11414o;
         if (guideToClickView != null) {
             am.a(guideToClickView);
         }
-        SimpleCircleView simpleCircleView = this.f10629p;
+        SimpleCircleView simpleCircleView = this.f11415p;
         if (simpleCircleView != null) {
             am.a(simpleCircleView);
         }
         c();
-        CountDownView countDownView = this.f10622n;
+        CountDownView countDownView = this.f11408n;
         if (countDownView != null) {
-            countDownView.refresh(this.f10621m);
-            this.f10622n.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.c.b.2
+            countDownView.refresh(this.f11407m);
+            this.f11408n.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.c.b.2
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    d.a aVar = b.this.f10617h;
+                    d.a aVar = b.this.f11403h;
                     if (aVar != null) {
                         aVar.b();
                     }
                 }
             });
         }
-        d.a aVar = this.f10617h;
+        d.a aVar = this.f11403h;
         if (aVar != null) {
             aVar.a(false);
         }

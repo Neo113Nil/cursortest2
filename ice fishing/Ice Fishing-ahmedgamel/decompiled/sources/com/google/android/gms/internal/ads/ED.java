@@ -9,50 +9,50 @@ import java.util.concurrent.Executor;
 public final class ED extends PD {
 
     /* renamed from: v, reason: collision with root package name */
-    public final Executor f24561v;
+    public final Executor f25322v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final /* synthetic */ FD f24562w;
+    public final /* synthetic */ FD f25323w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final Callable f24563x;
+    public final Callable f25324x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final /* synthetic */ FD f24564y;
+    public final /* synthetic */ FD f25325y;
 
     public ED(FD fd, Callable callable, Executor executor) {
-        this.f24564y = fd;
-        this.f24562w = fd;
+        this.f25325y = fd;
+        this.f25323w = fd;
         executor.getClass();
-        this.f24561v = executor;
-        this.f24563x = callable;
+        this.f25322v = executor;
+        this.f25324x = callable;
     }
 
     @Override // com.google.android.gms.internal.ads.PD
     public final Object a() {
-        return this.f24563x.call();
+        return this.f25324x.call();
     }
 
     @Override // com.google.android.gms.internal.ads.PD
     public final String c() {
-        return this.f24563x.toString();
+        return this.f25324x.toString();
     }
 
     @Override // com.google.android.gms.internal.ads.PD
     public final boolean d() {
-        return this.f24562w.isDone();
+        return this.f25323w.isDone();
     }
 
     @Override // com.google.android.gms.internal.ads.PD
     public final void e(Object obj) {
-        this.f24562w.f24757I = null;
-        this.f24564y.d(obj);
+        this.f25323w.f25513I = null;
+        this.f25325y.d(obj);
     }
 
     @Override // com.google.android.gms.internal.ads.PD
     public final void f(Throwable th) {
-        FD fd = this.f24562w;
-        fd.f24757I = null;
+        FD fd = this.f25323w;
+        fd.f25513I = null;
         if (th instanceof ExecutionException) {
             fd.e(((ExecutionException) th).getCause());
         } else if (th instanceof CancellationException) {

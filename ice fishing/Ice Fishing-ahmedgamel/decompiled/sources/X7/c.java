@@ -7,7 +7,7 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 public abstract class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Method f3827a;
+    public static final Method f3782a;
 
     static {
         Method method;
@@ -16,6 +16,6 @@ public abstract class c {
         } catch (Throwable unused) {
             method = null;
         }
-        f3827a = method;
+        f3782a = method;
     }
 }

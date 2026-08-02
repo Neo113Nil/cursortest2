@@ -11,21 +11,21 @@ import java.net.HttpURLConnection;
 public final class c extends k {
 
     /* renamed from: a, reason: collision with root package name */
-    private final HttpURLConnection f14427a;
+    private final HttpURLConnection f15213a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final InputStream f14428b;
+    private final InputStream f15214b;
 
     public c(HttpURLConnection httpURLConnection, InputStream inputStream) {
-        this.f14427a = httpURLConnection;
-        this.f14428b = inputStream;
+        this.f15213a = httpURLConnection;
+        this.f15214b = inputStream;
     }
 
     @Override // com.anythink.core.common.m.a.k
     public final long a() {
         byte[] readAllBytes;
         try {
-            InputStream inputStream = this.f14428b;
+            InputStream inputStream = this.f15214b;
             if (inputStream == null || Build.VERSION.SDK_INT < 33) {
                 return 0L;
             }
@@ -46,11 +46,11 @@ public final class c extends k {
         return a(true);
     }
 
-    private String a(boolean z3) {
+    private String a(boolean z6) {
         InputStreamReader inputStreamReader;
-        if (this.f14428b == null) {
+        if (this.f15214b == null) {
             try {
-                HttpURLConnection httpURLConnection = this.f14427a;
+                HttpURLConnection httpURLConnection = this.f15213a;
                 if (httpURLConnection != null) {
                     httpURLConnection.disconnect();
                     return "";
@@ -62,7 +62,7 @@ public final class c extends k {
         }
         BufferedReader bufferedReader = null;
         try {
-            inputStreamReader = new InputStreamReader(this.f14428b);
+            inputStreamReader = new InputStreamReader(this.f15214b);
             try {
                 BufferedReader bufferedReader2 = new BufferedReader(inputStreamReader);
                 try {
@@ -71,7 +71,7 @@ public final class c extends k {
                         String readLine = bufferedReader2.readLine();
                         if (readLine != null) {
                             sb.append(readLine);
-                            if (z3) {
+                            if (z6) {
                                 sb.append('\n');
                             }
                         } else {
@@ -87,11 +87,11 @@ public final class c extends k {
                     } catch (Throwable unused3) {
                     }
                     try {
-                        InputStream inputStream = this.f14428b;
+                        InputStream inputStream = this.f15214b;
                         if (inputStream != null) {
                             inputStream.close();
                         }
-                        HttpURLConnection httpURLConnection2 = this.f14427a;
+                        HttpURLConnection httpURLConnection2 = this.f15213a;
                         if (httpURLConnection2 != null) {
                             httpURLConnection2.disconnect();
                         }
@@ -114,11 +114,11 @@ public final class c extends k {
                         }
                     }
                     try {
-                        InputStream inputStream2 = this.f14428b;
+                        InputStream inputStream2 = this.f15214b;
                         if (inputStream2 != null) {
                             inputStream2.close();
                         }
-                        HttpURLConnection httpURLConnection3 = this.f14427a;
+                        HttpURLConnection httpURLConnection3 = this.f15213a;
                         if (httpURLConnection3 != null) {
                             httpURLConnection3.disconnect();
                             throw th;

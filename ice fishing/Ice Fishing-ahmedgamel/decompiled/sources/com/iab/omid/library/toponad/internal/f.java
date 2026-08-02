@@ -10,13 +10,13 @@ import java.util.regex.Pattern;
 public class f {
 
     /* renamed from: b, reason: collision with root package name */
-    private static final Pattern f36250b = Pattern.compile("^[a-zA-Z0-9 ]+$");
+    private static final Pattern f37017b = Pattern.compile("^[a-zA-Z0-9 ]+$");
 
     /* renamed from: a, reason: collision with root package name */
-    private final List<e> f36251a = new ArrayList();
+    private final List<e> f37018a = new ArrayList();
 
     private e b(View view) {
-        for (e eVar : this.f36251a) {
+        for (e eVar : this.f37018a) {
             if (eVar.c().get() == view) {
                 return eVar;
             }
@@ -25,14 +25,14 @@ public class f {
     }
 
     public List<e> a() {
-        return this.f36251a;
+        return this.f37018a;
     }
 
     public void c(View view) {
         a(view);
         e b9 = b(view);
         if (b9 != null) {
-            this.f36251a.remove(b9);
+            this.f37018a.remove(b9);
         }
     }
 
@@ -43,14 +43,14 @@ public class f {
     }
 
     public void b() {
-        this.f36251a.clear();
+        this.f37018a.clear();
     }
 
     public void a(View view, FriendlyObstructionPurpose friendlyObstructionPurpose, String str) {
         a(view);
         a(str);
         if (b(view) == null) {
-            this.f36251a.add(new e(view, friendlyObstructionPurpose, str));
+            this.f37018a.add(new e(view, friendlyObstructionPurpose, str));
         }
     }
 
@@ -59,7 +59,7 @@ public class f {
             if (str.length() > 50) {
                 throw new IllegalArgumentException("FriendlyObstruction has detailed reason over 50 characters in length");
             }
-            if (!f36250b.matcher(str).matches()) {
+            if (!f37017b.matcher(str).matches()) {
                 throw new IllegalArgumentException("FriendlyObstruction has detailed reason that contains characters not in [a-z][A-Z][0-9] or space");
             }
         }

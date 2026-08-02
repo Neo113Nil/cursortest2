@@ -12,8 +12,8 @@ public class R3 extends ViewGroup.MarginLayoutParams {
     public boolean A02;
     public final Rect A03;
 
-    public R3(int i, int i6) {
-        super(i, i6);
+    public R3(int i, int i4) {
+        super(i, i4);
         this.A03 = new Rect();
         this.A01 = true;
         this.A02 = false;

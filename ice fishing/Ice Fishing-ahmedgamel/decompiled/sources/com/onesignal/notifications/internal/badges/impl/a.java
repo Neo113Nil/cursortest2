@@ -10,19 +10,19 @@ import com.onesignal.debug.internal.logging.b;
 import kotlin.jvm.internal.h;
 import kotlin.jvm.internal.i;
 import kotlin.jvm.internal.q;
-import m5.InterfaceC4733a;
+import m5.InterfaceC4747a;
 import n5.c;
 import t5.e;
-import u5.InterfaceC5080a;
+import u5.InterfaceC5072a;
 import u7.v;
 import x4.f;
-import y5.C5242a;
+import y5.C5209a;
 
 /* loaded from: classes2.dex */
-public final class a implements InterfaceC4733a {
+public final class a implements InterfaceC4747a {
     private final f _applicationService;
     private final d _databaseProvider;
-    private final InterfaceC5080a _queryHelper;
+    private final InterfaceC5072a _queryHelper;
     private int badgesEnabled;
 
     /* renamed from: com.onesignal.notifications.internal.badges.impl.a$a, reason: collision with other inner class name */
@@ -38,16 +38,16 @@ public final class a implements InterfaceC4733a {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((A4.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(A4.a it) {
             h.e(it, "it");
-            this.$notificationCount.f38716n = it.getCount();
+            this.$notificationCount.f38643n = it.getCount();
         }
     }
 
-    public a(f _applicationService, InterfaceC5080a _queryHelper, d _databaseProvider) {
+    public a(f _applicationService, InterfaceC5072a _queryHelper, d _databaseProvider) {
         h.e(_applicationService, "_applicationService");
         h.e(_queryHelper, "_queryHelper");
         h.e(_databaseProvider, "_databaseProvider");
@@ -84,8 +84,8 @@ public final class a implements InterfaceC4733a {
 
     private final void updateFallback() {
         q qVar = new q();
-        A4.b.query$default(this._databaseProvider.getOs(), "notification", null, this._queryHelper.recentUninteractedWithNotificationsWhere().toString(), null, null, null, null, String.valueOf(C5242a.INSTANCE.getMaxNumberOfNotifications()), new C0228a(qVar), 122, null);
-        updateCount(qVar.f38716n);
+        A4.b.query$default(this._databaseProvider.getOs(), "notification", null, this._queryHelper.recentUninteractedWithNotificationsWhere().toString(), null, null, null, null, String.valueOf(C5209a.INSTANCE.getMaxNumberOfNotifications()), new C0228a(qVar), 122, null);
+        updateCount(qVar.f38643n);
     }
 
     private final void updateStandard() {
@@ -98,14 +98,14 @@ public final class a implements InterfaceC4733a {
         updateCount(i);
     }
 
-    @Override // m5.InterfaceC4733a
+    @Override // m5.InterfaceC4747a
     public void update() {
         if (areBadgesEnabled()) {
             updateStandard();
         }
     }
 
-    @Override // m5.InterfaceC4733a
+    @Override // m5.InterfaceC4747a
     public void updateCount(int i) {
         if (areBadgeSettingsEnabled()) {
             try {

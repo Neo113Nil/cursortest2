@@ -6,11 +6,10 @@ import I7.l;
 import I7.p;
 import I7.q;
 import I7.r;
-import a.AbstractC0422a;
+import N3.C;
 import android.content.Context;
 import com.onesignal.internal.e;
-import g1.C4522b;
-import u7.InterfaceC5087e;
+import u7.InterfaceC5079e;
 
 /* loaded from: classes2.dex */
 public final class g implements com.onesignal.common.modeling.g {
@@ -22,9 +21,9 @@ public final class g implements com.onesignal.common.modeling.g {
     private com.onesignal.internal.d currentConfig;
     private final I7.a featureManagerProvider;
     private final Object lock;
-    private final InterfaceC5087e logger$delegate;
+    private final InterfaceC5079e logger$delegate;
     private final I7.a loggerFactory;
-    private final InterfaceC5087e platformProvider$delegate;
+    private final InterfaceC5079e platformProvider$delegate;
     private final p platformProviderFactory;
     private F5.e remoteTelemetry;
     private final l remoteTelemetryFactory;
@@ -74,7 +73,7 @@ public final class g implements com.onesignal.common.modeling.g {
         @Override // I7.l
         public final F5.e invoke(F5.f pp) {
             kotlin.jvm.internal.h.e(pp, "pp");
-            return new m(pp, new C4522b(4, pp), new j(5, pp));
+            return new m(pp, new j(6, pp), new n4.c(7, pp));
         }
     }
 
@@ -176,8 +175,8 @@ public final class g implements com.onesignal.common.modeling.g {
         this.platformProviderFactory = platformProviderFactory;
         this.loggerFactory = loggerFactory;
         this.lock = new Object();
-        this.platformProvider$delegate = AbstractC0422a.q(new h());
-        this.logger$delegate = AbstractC0422a.q(new C0217g());
+        this.platformProvider$delegate = C.O(new h());
+        this.logger$delegate = C.O(new C0217g());
     }
 
     private final void applyAction(com.onesignal.internal.e eVar, com.onesignal.internal.d dVar) {
@@ -212,13 +211,13 @@ public final class g implements com.onesignal.common.modeling.g {
             F5.a aVar2 = this.crashHandler;
             if (aVar2 != null) {
                 I5.c cVar = (I5.c) aVar2;
-                if (cVar.f1301e) {
-                    cVar.f1298b.info("OtelCrashHandler: Unregistering — restoring previous exception handler");
-                    Thread.setDefaultUncaughtExceptionHandler(cVar.f1299c);
-                    cVar.f1299c = null;
-                    cVar.f1301e = false;
+                if (cVar.f1331e) {
+                    cVar.f1328b.info("OtelCrashHandler: Unregistering — restoring previous exception handler");
+                    Thread.setDefaultUncaughtExceptionHandler(cVar.f1329c);
+                    cVar.f1329c = null;
+                    cVar.f1331e = false;
                 } else {
-                    cVar.f1298b.debug("OtelCrashHandler: Not initialized, nothing to unregister");
+                    cVar.f1328b.debug("OtelCrashHandler: Not initialized, nothing to unregister");
                 }
             }
             this.crashHandler = null;
@@ -230,15 +229,15 @@ public final class g implements com.onesignal.common.modeling.g {
             Object obj = this.remoteTelemetry;
             if (obj != null) {
                 F5.j jVar = (F5.j) obj;
-                synchronized (jVar.f977c) {
+                synchronized (jVar.f1003c) {
                     try {
-                        X6.d dVar = jVar.f978d;
+                        X6.d dVar = jVar.f1004d;
                         if (dVar != null) {
                             dVar.shutdown();
                         }
                     } catch (Throwable unused) {
                     }
-                    jVar.f978d = null;
+                    jVar.f1004d = null;
                 }
             }
             this.remoteTelemetry = null;
@@ -282,7 +281,7 @@ public final class g implements com.onesignal.common.modeling.g {
         if (this.anrDetector != null) {
             return;
         }
-        I5.a aVar = (I5.a) this.anrDetectorFactory.invoke(getPlatformProvider(), getLogger(), Long.valueOf(com.anythink.basead.exoplayer.f.f7187a), Long.valueOf(com.anythink.basead.exoplayer.i.a.f7883f));
+        I5.a aVar = (I5.a) this.anrDetectorFactory.invoke(getPlatformProvider(), getLogger(), Long.valueOf(com.anythink.basead.exoplayer.f.f7973a), Long.valueOf(com.anythink.basead.exoplayer.i.a.f8669f));
         aVar.start();
         this.anrDetector = aVar;
         com.onesignal.debug.internal.logging.b.info$default("OneSignal: ANR detector started", null, 2, null);
@@ -294,14 +293,14 @@ public final class g implements com.onesignal.common.modeling.g {
         }
         F5.a aVar = (F5.a) this.crashHandlerFactory.invoke(this.context, getLogger(), this.featureManagerProvider);
         I5.c cVar = (I5.c) aVar;
-        if (cVar.f1301e) {
-            cVar.f1298b.warn("OtelCrashHandler already initialized, skipping");
+        if (cVar.f1331e) {
+            cVar.f1328b.warn("OtelCrashHandler already initialized, skipping");
         } else {
-            cVar.f1298b.info("OtelCrashHandler: Setting up uncaught exception handler...");
-            cVar.f1299c = Thread.getDefaultUncaughtExceptionHandler();
+            cVar.f1328b.info("OtelCrashHandler: Setting up uncaught exception handler...");
+            cVar.f1329c = Thread.getDefaultUncaughtExceptionHandler();
             Thread.setDefaultUncaughtExceptionHandler(cVar);
-            cVar.f1301e = true;
-            cVar.f1298b.info("OtelCrashHandler: ✅ Successfully initialized and registered as default uncaught exception handler");
+            cVar.f1331e = true;
+            cVar.f1328b.info("OtelCrashHandler: ✅ Successfully initialized and registered as default uncaught exception handler");
         }
         this.crashHandler = aVar;
         com.onesignal.debug.internal.logging.b.info$default("OneSignal: Crash handler initialized — logs at: " + getPlatformProvider().getCrashStoragePath(), null, 2, null);
@@ -311,15 +310,15 @@ public final class g implements com.onesignal.common.modeling.g {
         Object obj = this.remoteTelemetry;
         if (obj != null) {
             F5.j jVar = (F5.j) obj;
-            synchronized (jVar.f977c) {
+            synchronized (jVar.f1003c) {
                 try {
-                    X6.d dVar = jVar.f978d;
+                    X6.d dVar = jVar.f1004d;
                     if (dVar != null) {
                         dVar.shutdown();
                     }
                 } catch (Throwable unused) {
                 }
-                jVar.f978d = null;
+                jVar.f1004d = null;
             }
         }
         F5.e eVar = (F5.e) this.remoteTelemetryFactory.invoke(getPlatformProvider());
@@ -379,7 +378,7 @@ public final class g implements com.onesignal.common.modeling.g {
         }
     }
 
-    public /* synthetic */ g(Context context, I7.a aVar, q qVar, r rVar, l lVar, p pVar, I7.a aVar2, int i6, kotlin.jvm.internal.e eVar) {
-        this(context, aVar, (i6 & 4) != 0 ? a.INSTANCE : qVar, (i6 & 8) != 0 ? b.INSTANCE : rVar, (i6 & 16) != 0 ? c.INSTANCE : lVar, (i6 & 32) != 0 ? d.INSTANCE : pVar, (i6 & 64) != 0 ? e.INSTANCE : aVar2);
+    public /* synthetic */ g(Context context, I7.a aVar, q qVar, r rVar, l lVar, p pVar, I7.a aVar2, int i4, kotlin.jvm.internal.e eVar) {
+        this(context, aVar, (i4 & 4) != 0 ? a.INSTANCE : qVar, (i4 & 8) != 0 ? b.INSTANCE : rVar, (i4 & 16) != 0 ? c.INSTANCE : lVar, (i4 & 32) != 0 ? d.INSTANCE : pVar, (i4 & 64) != 0 ? e.INSTANCE : aVar2);
     }
 }

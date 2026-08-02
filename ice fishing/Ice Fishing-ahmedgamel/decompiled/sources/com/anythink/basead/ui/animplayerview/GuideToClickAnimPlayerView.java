@@ -13,7 +13,7 @@ import java.util.List;
 public class GuideToClickAnimPlayerView extends BaseAnimPlayerView {
 
     /* renamed from: h, reason: collision with root package name */
-    private GuideToClickView f10475h;
+    private GuideToClickView f11261h;
 
     public GuideToClickAnimPlayerView(Context context) {
         super(context);
@@ -36,19 +36,19 @@ public class GuideToClickAnimPlayerView extends BaseAnimPlayerView {
     }
 
     @Override // com.anythink.basead.ui.animplayerview.BaseAnimPlayerView, com.anythink.basead.ui.animplayerview.BasePlayerView
-    public void init(w wVar, x xVar, boolean z3, List<Bitmap> list, e eVar) {
+    public void init(w wVar, x xVar, boolean z6, List<Bitmap> list, e eVar) {
         Bitmap bitmap;
-        super.init(wVar, xVar, z3, list, eVar);
+        super.init(wVar, xVar, z6, list, eVar);
         Context applicationContext = getContext().getApplicationContext();
         g();
         GuideToClickView guideToClickView = new GuideToClickView(applicationContext);
-        this.f10475h = guideToClickView;
+        this.f11261h = guideToClickView;
         addView(guideToClickView, -1, -1);
-        List<Bitmap> list2 = this.f10440d;
-        if (list2 == null || list2.size() <= 0 || (bitmap = this.f10440d.get(0)) == null || bitmap.isRecycled()) {
+        List<Bitmap> list2 = this.f11226d;
+        if (list2 == null || list2.size() <= 0 || (bitmap = this.f11226d.get(0)) == null || bitmap.isRecycled()) {
             return;
         }
-        this.f10475h.setFingerImageResource(bitmap);
+        this.f11261h.setFingerImageResource(bitmap);
     }
 
     public GuideToClickAnimPlayerView(Context context, AttributeSet attributeSet) {
@@ -59,13 +59,13 @@ public class GuideToClickAnimPlayerView extends BaseAnimPlayerView {
         Bitmap bitmap;
         g();
         GuideToClickView guideToClickView = new GuideToClickView(context);
-        this.f10475h = guideToClickView;
+        this.f11261h = guideToClickView;
         addView(guideToClickView, -1, -1);
-        List<Bitmap> list = this.f10440d;
-        if (list == null || list.size() <= 0 || (bitmap = this.f10440d.get(0)) == null || bitmap.isRecycled()) {
+        List<Bitmap> list = this.f11226d;
+        if (list == null || list.size() <= 0 || (bitmap = this.f11226d.get(0)) == null || bitmap.isRecycled()) {
             return;
         }
-        this.f10475h.setFingerImageResource(bitmap);
+        this.f11261h.setFingerImageResource(bitmap);
     }
 
     public GuideToClickAnimPlayerView(Context context, AttributeSet attributeSet, int i) {

@@ -10,8 +10,8 @@ public final class HU {
     public int A02;
     public byte[] A03;
 
-    public HU(byte[] bArr, int i, int i6) {
-        A08(bArr, i, i6);
+    public HU(byte[] bArr, int i, int i4) {
+        A08(bArr, i, i4);
     }
 
     private int A00() {
@@ -19,13 +19,13 @@ public final class HU {
         while (!A0A()) {
             i++;
         }
-        int i6 = (1 << i) - 1;
+        int i4 = (1 << i) - 1;
         int leadingZeros = i > 0 ? A05(i) : 0;
-        return i6 + leadingZeros;
+        return i4 + leadingZeros;
     }
 
     private void A01() {
-        AbstractC06243y.A08(this.A02 >= 0 && (this.A02 < this.A01 || (this.A02 == this.A01 && this.A00 == 0)));
+        AbstractC06443y.A08(this.A02 >= 0 && (this.A02 < this.A01 || (this.A02 == this.A01 && this.A00 == 0)));
         String[] strArr = A04;
         if (strArr[5].charAt(17) == strArr[0].charAt(17)) {
             throw new RuntimeException();
@@ -65,7 +65,7 @@ public final class HU {
     }
 
     public final int A05(int i) {
-        int i6 = 0;
+        int i4 = 0;
         int returnValue = this.A00;
         this.A00 = returnValue + i;
         while (true) {
@@ -77,22 +77,22 @@ public final class HU {
             this.A00 = returnValue3 - 8;
             byte[] bArr = this.A03;
             int returnValue4 = this.A02;
-            int i9 = bArr[returnValue4] & p.f8473b;
+            int i6 = bArr[returnValue4] & p.f9259b;
             int returnValue5 = this.A00;
-            i6 |= i9 << returnValue5;
-            int i10 = this.A02;
+            i4 |= i6 << returnValue5;
+            int i9 = this.A02;
             int returnValue6 = this.A02;
             if (!A02(returnValue6 + 1)) {
                 r6 = 1;
             }
-            this.A02 = i10 + r6;
+            this.A02 = i9 + r6;
         }
         byte[] bArr2 = this.A03;
         int returnValue7 = this.A02;
-        int i11 = bArr2[returnValue7] & p.f8473b;
+        int i10 = bArr2[returnValue7] & p.f9259b;
         int returnValue8 = this.A00;
-        int i12 = i6 | (i11 >> (8 - returnValue8));
-        int i13 = 32 - i;
+        int i11 = i4 | (i10 >> (8 - returnValue8));
+        int i12 = 32 - i;
         String[] strArr = A04;
         String str = strArr[5];
         String str2 = strArr[0];
@@ -104,14 +104,14 @@ public final class HU {
         String[] strArr2 = A04;
         strArr2[2] = "RXY6xLJuKIcEz3kUylWDYr6tsmitvphK";
         strArr2[7] = "WXiq34WZkyW8ugzR2g0a8ipZBHhkiRcU";
-        int returnValue10 = (-1) >>> i13;
-        int i14 = i12 & returnValue10;
+        int returnValue10 = (-1) >>> i12;
+        int i13 = i11 & returnValue10;
         int returnValue11 = this.A00;
         if (returnValue11 == 8) {
             this.A00 = 0;
-            int i15 = this.A02;
+            int i14 = this.A02;
             int returnValue12 = this.A02;
-            int i16 = i15 + (A02(returnValue12 + 1) ? 2 : 1);
+            int i15 = i14 + (A02(returnValue12 + 1) ? 2 : 1);
             String[] strArr3 = A04;
             String str3 = strArr3[4];
             String str4 = strArr3[1];
@@ -121,16 +121,16 @@ public final class HU {
                 String[] strArr4 = A04;
                 strArr4[4] = "rds4vupX8r7j5bNz4Ka4tPduGPmVtsGV";
                 strArr4[1] = "rRPYe8lZfiAZtF0hvmlKmZn0YXaVPkJ6";
-                this.A02 = i16;
+                this.A02 = i15;
             } else {
                 String[] strArr5 = A04;
                 strArr5[3] = "oP8krBIP0DDB0MHyD3CqohM2a51fTyLT";
                 strArr5[6] = "8dOgzrP5xxQxSwHCAu2NrFg9fwsPMfLi";
-                this.A02 = i16;
+                this.A02 = i15;
             }
         }
         A01();
-        return i14;
+        return i13;
     }
 
     public final void A06() {
@@ -144,12 +144,12 @@ public final class HU {
     }
 
     public final void A07(int i) {
-        int i6 = this.A02;
-        int i9 = i / 8;
+        int i4 = this.A02;
+        int i6 = i / 8;
         int oldByteOffset = this.A02;
-        this.A02 = oldByteOffset + i9;
+        this.A02 = oldByteOffset + i6;
         int numBytes = this.A00;
-        int oldByteOffset2 = i9 * 8;
+        int oldByteOffset2 = i6 * 8;
         this.A00 = numBytes + (i - oldByteOffset2);
         int numBytes2 = this.A00;
         if (numBytes2 > 7) {
@@ -170,10 +170,10 @@ public final class HU {
             throw new RuntimeException();
         }
         while (true) {
-            i6++;
+            i4++;
             int oldByteOffset6 = this.A02;
-            if (i6 <= oldByteOffset6) {
-                boolean A02 = A02(i6);
+            if (i4 <= oldByteOffset6) {
+                boolean A02 = A02(i4);
                 String[] strArr3 = A04;
                 String str3 = strArr3[4];
                 String str4 = strArr3[1];
@@ -188,7 +188,7 @@ public final class HU {
                 if (A02) {
                     int oldByteOffset8 = this.A02;
                     this.A02 = oldByteOffset8 + 1;
-                    i6 += 2;
+                    i4 += 2;
                 }
             } else {
                 A01();
@@ -197,10 +197,10 @@ public final class HU {
         }
     }
 
-    public final void A08(byte[] bArr, int i, int i6) {
+    public final void A08(byte[] bArr, int i, int i4) {
         this.A03 = bArr;
         this.A02 = i;
-        this.A01 = i6;
+        this.A01 = i4;
         this.A00 = 0;
         A01();
     }
@@ -211,20 +211,20 @@ public final class HU {
     */
     public final boolean A09() {
         int i = this.A02;
-        int i6 = this.A00;
-        int i9 = 0;
+        int i4 = this.A00;
+        int i6 = 0;
         while (initialBitOffset < initialByteOffset && !A0A()) {
-            i9++;
+            i6++;
         }
-        int i10 = this.A02;
+        int i9 = this.A02;
         int initialByteOffset = this.A01;
-        int initialByteOffset2 = i10 == initialByteOffset ? 1 : 0;
+        int initialByteOffset2 = i9 == initialByteOffset ? 1 : 0;
         this.A02 = i;
-        this.A00 = i6;
+        this.A00 = i4;
         if (initialByteOffset2 != 0) {
             return false;
         }
-        int initialByteOffset3 = i9 * 2;
+        int initialByteOffset3 = i6 * 2;
         return A0B(initialByteOffset3 + 1);
     }
 
@@ -235,12 +235,12 @@ public final class HU {
     }
 
     public final boolean A0B(int i) {
-        int i6 = this.A02;
+        int i4 = this.A02;
         int oldByteOffset = i / 8;
-        int i9 = this.A02 + oldByteOffset;
+        int i6 = this.A02 + oldByteOffset;
         int newBitOffset = (this.A00 + i) - (oldByteOffset * 8);
         if (newBitOffset > 7) {
-            i9++;
+            i6++;
             String[] strArr = A04;
             String str = strArr[4];
             String str2 = strArr[1];
@@ -253,9 +253,9 @@ public final class HU {
             }
             throw new RuntimeException();
         }
-        int i10 = i6 + 1;
-        while (i10 <= i9) {
-            int i11 = this.A01;
+        int i9 = i4 + 1;
+        while (i9 <= i6) {
+            int i10 = this.A01;
             String[] strArr3 = A04;
             String str3 = strArr3[5];
             String str4 = strArr3[0];
@@ -266,17 +266,17 @@ public final class HU {
             String[] strArr4 = A04;
             strArr4[4] = "ru8g1XQo0WAy59nUdKAzfoQ85z62h8So";
             strArr4[1] = "rlk5s9hHQFi3gmvg8c7PRJF1MfkgSAIS";
-            if (i9 >= i11) {
+            if (i6 >= i10) {
                 break;
             }
-            if (A02(i10)) {
-                i9++;
-                i10 += 2;
+            if (A02(i9)) {
+                i6++;
+                i9 += 2;
             }
-            i10++;
+            i9++;
         }
-        if (i9 >= this.A01) {
-            return i9 == this.A01 && newBitOffset == 0;
+        if (i6 >= this.A01) {
+            return i6 == this.A01 && newBitOffset == 0;
         }
         return true;
     }

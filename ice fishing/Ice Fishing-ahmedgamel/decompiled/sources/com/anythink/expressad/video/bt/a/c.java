@@ -49,61 +49,61 @@ import org.json.JSONObject;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f20840a = -999;
+    public static final int f21627a = -999;
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f20841b = "OperateViews";
+    private static final String f21628b = "OperateViews";
 
     /* renamed from: c, reason: collision with root package name */
-    private static ConcurrentHashMap<String, LinkedHashMap<String, View>> f20842c = new ConcurrentHashMap<>();
+    private static ConcurrentHashMap<String, LinkedHashMap<String, View>> f21629c = new ConcurrentHashMap<>();
 
     /* renamed from: d, reason: collision with root package name */
-    private static LinkedHashMap<String, String> f20843d = new LinkedHashMap<>();
+    private static LinkedHashMap<String, String> f21630d = new LinkedHashMap<>();
 
     /* renamed from: e, reason: collision with root package name */
-    private static LinkedHashMap<String, d> f20844e = new LinkedHashMap<>();
+    private static LinkedHashMap<String, d> f21631e = new LinkedHashMap<>();
 
     /* renamed from: f, reason: collision with root package name */
-    private static LinkedHashMap<String, com.anythink.expressad.videocommon.e.d> f20845f = new LinkedHashMap<>();
+    private static LinkedHashMap<String, com.anythink.expressad.videocommon.e.d> f21632f = new LinkedHashMap<>();
 
     /* renamed from: g, reason: collision with root package name */
-    private static LinkedHashMap<String, String> f20846g = new LinkedHashMap<>();
+    private static LinkedHashMap<String, String> f21633g = new LinkedHashMap<>();
 
     /* renamed from: h, reason: collision with root package name */
-    private static LinkedHashMap<String, Integer> f20847h = new LinkedHashMap<>();
+    private static LinkedHashMap<String, Integer> f21634h = new LinkedHashMap<>();
     private static LinkedHashMap<String, Activity> i = new LinkedHashMap<>();
 
     /* renamed from: j, reason: collision with root package name */
-    private static volatile int f20848j = 10000;
+    private static volatile int f21635j = 10000;
 
     /* renamed from: k, reason: collision with root package name */
-    private static int f20849k = 0;
+    private static int f21636k = 0;
 
     /* renamed from: l, reason: collision with root package name */
-    private static int f20850l = 1;
+    private static int f21637l = 1;
 
     /* renamed from: m, reason: collision with root package name */
-    private static String f20851m = "";
+    private static String f21638m = "";
 
     /* renamed from: n, reason: collision with root package name */
-    private static int f20852n;
+    private static int f21639n;
 
     /* renamed from: o, reason: collision with root package name */
-    private static int f20853o;
+    private static int f21640o;
 
     /* renamed from: p, reason: collision with root package name */
-    private static int f20854p;
+    private static int f21641p;
 
     /* renamed from: q, reason: collision with root package name */
-    private static int f20855q;
+    private static int f21642q;
 
     /* renamed from: r, reason: collision with root package name */
-    private static int f20856r;
+    private static int f21643r;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private static c f20871a = new c(0);
+        private static c f21658a = new c(0);
 
         private a() {
         }
@@ -150,13 +150,13 @@ public final class c {
     }
 
     public static void P(Object obj, JSONObject jSONObject) {
+        int i4;
         int i6;
-        int i9;
-        boolean z3;
+        boolean z6;
         String str;
         File file;
         JSONObject jSONObject2 = new JSONObject();
-        int i10 = 1;
+        int i9 = 1;
         try {
             jSONObject2.put("code", 0);
             jSONObject2.put("message", "");
@@ -174,27 +174,27 @@ public final class c {
             }
             JSONArray jSONArray2 = new JSONArray();
             int length = jSONArray.length();
-            int i11 = 0;
-            while (i11 < length) {
-                JSONObject jSONObject3 = jSONArray.getJSONObject(i11);
+            int i10 = 0;
+            while (i10 < length) {
+                JSONObject jSONObject3 = jSONArray.getJSONObject(i10);
                 String optString = jSONObject3.optString("ref", "");
-                int i12 = jSONObject3.getInt("type");
+                int i11 = jSONObject3.getInt("type");
                 JSONObject jSONObject4 = new JSONObject();
-                if (i12 != i10 || TextUtils.isEmpty(optString)) {
-                    i6 = length;
-                    i9 = i11;
-                    z3 = false;
-                    if (i12 == 2 && !TextUtils.isEmpty(optString)) {
+                if (i11 != i9 || TextUtils.isEmpty(optString)) {
+                    i4 = length;
+                    i6 = i10;
+                    z6 = false;
+                    if (i11 == 2 && !TextUtils.isEmpty(optString)) {
                         JSONObject jSONObject5 = new JSONObject();
                         jSONObject5.put("type", 2);
-                        jSONObject5.put(com.anythink.expressad.a.f17603K, i.a().b(optString) == null ? "" : i.a().b(optString));
+                        jSONObject5.put(com.anythink.expressad.a.f18390K, i.a().b(optString) == null ? "" : i.a().b(optString));
                         jSONObject4.put(optString, jSONObject5);
                         jSONArray2.put(jSONObject4);
-                    } else if (i12 == 3 && !TextUtils.isEmpty(optString)) {
+                    } else if (i11 == 3 && !TextUtils.isEmpty(optString)) {
                         try {
                             file = new File(optString);
                         } catch (Throwable th) {
-                            if (com.anythink.expressad.a.f17618a) {
+                            if (com.anythink.expressad.a.f18405a) {
                                 th.printStackTrace();
                             }
                         }
@@ -202,20 +202,20 @@ public final class c {
                             str = "file:////".concat(String.valueOf(optString));
                             JSONObject jSONObject6 = new JSONObject();
                             jSONObject6.put("type", 3);
-                            jSONObject6.put(com.anythink.expressad.a.f17603K, str);
+                            jSONObject6.put(com.anythink.expressad.a.f18390K, str);
                             jSONObject4.put(optString, jSONObject6);
                             jSONArray2.put(jSONObject4);
                         }
                         str = "";
                         JSONObject jSONObject62 = new JSONObject();
                         jSONObject62.put("type", 3);
-                        jSONObject62.put(com.anythink.expressad.a.f17603K, str);
+                        jSONObject62.put(com.anythink.expressad.a.f18390K, str);
                         jSONObject4.put(optString, jSONObject62);
                         jSONArray2.put(jSONObject4);
-                    } else if (i12 == 4 && !TextUtils.isEmpty(optString)) {
+                    } else if (i11 == 4 && !TextUtils.isEmpty(optString)) {
                         JSONObject jSONObject7 = new JSONObject();
                         jSONObject7.put("type", 4);
-                        jSONObject7.put(com.anythink.expressad.a.f17603K, u.a(optString) == null ? "" : u.a(optString));
+                        jSONObject7.put(com.anythink.expressad.a.f18390K, u.a(optString) == null ? "" : u.a(optString));
                         jSONObject4.put(optString, jSONObject7);
                         jSONArray2.put(jSONObject4);
                     }
@@ -224,36 +224,36 @@ public final class c {
                     com.anythink.expressad.videocommon.b.a.a();
                     n b9 = com.anythink.expressad.videocommon.b.a.b(optString);
                     if (b9 != null) {
-                        jSONObject8.put("type", i10);
-                        i6 = length;
-                        i9 = i11;
+                        jSONObject8.put("type", i9);
+                        i4 = length;
+                        i6 = i10;
                         jSONObject8.put("videoDataLength", b9.d());
                         String b10 = b9.b();
                         if (TextUtils.isEmpty(b10)) {
-                            jSONObject8.put(com.anythink.expressad.a.f17603K, "");
+                            jSONObject8.put(com.anythink.expressad.a.f18390K, "");
                             jSONObject8.put("path4Web", "");
                         } else {
-                            jSONObject8.put(com.anythink.expressad.a.f17603K, b10);
+                            jSONObject8.put(com.anythink.expressad.a.f18390K, b10);
                             jSONObject8.put("path4Web", b10);
                         }
                         if (b9.c() == 100) {
                             jSONObject8.put("downloaded", 1);
-                            z3 = false;
+                            z6 = false;
                         } else {
-                            z3 = false;
+                            z6 = false;
                             jSONObject8.put("downloaded", 0);
                         }
                         jSONObject4.put(optString, jSONObject8);
                         jSONArray2.put(jSONObject4);
                     } else {
-                        i6 = length;
-                        i9 = i11;
-                        z3 = false;
+                        i4 = length;
+                        i6 = i10;
+                        z6 = false;
                     }
                 }
-                i11 = i9 + 1;
-                length = i6;
-                i10 = 1;
+                i10 = i6 + 1;
+                length = i4;
+                i9 = 1;
             }
             jSONObject2.put("resource", jSONArray2);
             h.a().a(obj, Base64.encodeToString(jSONObject2.toString().getBytes(), 2));
@@ -273,13 +273,13 @@ public final class c {
     }
 
     public static c a() {
-        return a.f20871a;
+        return a.f21658a;
     }
 
     public static String b() {
-        int i6 = f20848j + 1;
-        f20848j = i6;
-        return String.valueOf(i6);
+        int i4 = f21635j + 1;
+        f21635j = i4;
+        return String.valueOf(i4);
     }
 
     public static void d(String str) {
@@ -287,35 +287,35 @@ public final class c {
     }
 
     public static int e(String str) {
-        if (f20847h.containsKey(str)) {
-            return f20847h.get(str).intValue();
+        if (f21634h.containsKey(str)) {
+            return f21634h.get(str).intValue();
         }
         return 2;
     }
 
     public static void f(String str) {
-        if (f20846g.containsKey(str)) {
-            f20846g.remove(str);
+        if (f21633g.containsKey(str)) {
+            f21633g.remove(str);
         }
-        if (f20845f.containsKey(str)) {
-            f20845f.remove(str);
+        if (f21632f.containsKey(str)) {
+            f21632f.remove(str);
         }
-        if (f20844e.containsKey(str)) {
-            f20844e.remove(str);
+        if (f21631e.containsKey(str)) {
+            f21631e.remove(str);
         }
-        if (f20843d.containsKey(str)) {
-            f20843d.remove(str);
+        if (f21630d.containsKey(str)) {
+            f21630d.remove(str);
         }
     }
 
     public static void g(String str) {
-        if (f20847h.containsKey(str)) {
-            f20847h.remove(str);
+        if (f21634h.containsKey(str)) {
+            f21634h.remove(str);
         }
     }
 
     private static String h(String str) {
-        return f20843d.containsKey(str) ? f20843d.get(str) : "";
+        return f21630d.containsKey(str) ? f21630d.get(str) : "";
     }
 
     private static Activity i(String str) {
@@ -330,15 +330,15 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             if (jSONObject.optJSONObject("data") == null) {
                 c(obj, "data is empty");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2)) {
                 c(obj, "instanceId not exit");
                 return;
@@ -361,15 +361,15 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             if (jSONObject.optJSONObject("data") == null) {
                 c(obj, "data is empty");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2)) {
                 c(obj, "instanceId not exit");
                 return;
@@ -392,15 +392,15 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             if (jSONObject.optJSONObject("data") == null) {
                 c(obj, "data is empty");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2)) {
                 c(obj, "instanceId not exit");
                 return;
@@ -423,15 +423,15 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             if (jSONObject.optJSONObject("data") == null) {
                 c(obj, "data is empty");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2)) {
                 c(obj, "instanceId not exit");
                 return;
@@ -454,15 +454,15 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             if (jSONObject.optJSONObject("data") == null) {
                 c(obj, "data is empty");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2)) {
                 c(obj, "instanceId not exist");
                 return;
@@ -486,15 +486,15 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             if (jSONObject.optJSONObject("data") == null) {
                 c(obj, "data is empty");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2)) {
                 c(obj, "instanceId not exit");
                 return;
@@ -519,15 +519,15 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             if (jSONObject.optJSONObject("data") == null) {
                 c(obj, "data is empty");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2)) {
                 c(obj, "instanceId not exist");
                 return;
@@ -539,7 +539,7 @@ public final class c {
             }
             int mute = ((AnythinkBTVideoView) view).getMute();
             JSONObject jSONObject2 = new JSONObject();
-            jSONObject2.put("code", f20849k);
+            jSONObject2.put("code", f21636k);
             JSONObject jSONObject3 = new JSONObject();
             jSONObject3.put("id", optString2);
             jSONObject3.put("mute", mute);
@@ -556,15 +556,15 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             if (jSONObject.optJSONObject("data") == null) {
                 c(obj, "data is empty");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2)) {
                 c(obj, "instanceId not exist");
                 return;
@@ -587,15 +587,15 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             if (jSONObject.optJSONObject("data") == null) {
                 c(obj, "data is empty");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (b9.size() <= 0) {
                 c(obj, "unitId or instanceId not exist");
                 return;
@@ -608,7 +608,7 @@ public final class c {
                     ((AnythinkBTWebView) view).onDestory();
                 } else if (view instanceof AnythinkBTVideoView) {
                     ((AnythinkBTVideoView) view).getInstanceId();
-                    com.anythink.expressad.video.bt.a.a unused = a.C0133a.f20834a;
+                    com.anythink.expressad.video.bt.a.a unused = a.C0133a.f21621a;
                     ((AnythinkBTVideoView) view).onDestory();
                 } else if (view instanceof ATTempContainer) {
                     ((ATTempContainer) view).onDestroy();
@@ -619,9 +619,9 @@ public final class c {
                 return;
             }
             anythinkBTContainer.onAdClose();
-            f20842c.remove(b9);
+            f21629c.remove(b9);
             b9.clear();
-            f20842c.remove(optString + "_" + h9);
+            f21629c.remove(optString + "_" + h3);
             a(obj, optString2);
         } catch (Throwable th) {
             c(obj, th.getMessage());
@@ -631,7 +631,7 @@ public final class c {
 
     public final void M(Object obj, JSONObject jSONObject) {
         try {
-            WindVaneWebView windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a;
+            WindVaneWebView windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a;
             String rid = windVaneWebView != null ? windVaneWebView.getRid() : "";
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("eventName");
@@ -660,7 +660,7 @@ public final class c {
         com.anythink.expressad.videocommon.c.c cVar;
         String str;
         try {
-            WindVaneWebView windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a;
+            WindVaneWebView windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a;
             String rid = windVaneWebView != null ? windVaneWebView.getRid() : "";
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
@@ -677,7 +677,7 @@ public final class c {
                 str = "";
             }
             LinkedHashMap<String, View> b9 = b(optString, rid);
-            if (b9.size() <= 0 || !f20846g.containsKey(optString2)) {
+            if (b9.size() <= 0 || !f21633g.containsKey(optString2)) {
                 c(obj, "unitId not exist");
                 return;
             }
@@ -703,7 +703,7 @@ public final class c {
 
     public final void O(Object obj, JSONObject jSONObject) {
         try {
-            WindVaneWebView windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a;
+            WindVaneWebView windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a;
             String rid = windVaneWebView != null ? windVaneWebView.getRid() : "";
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
@@ -722,8 +722,8 @@ public final class c {
             if (view instanceof ViewGroup) {
                 ViewGroup viewGroup = (ViewGroup) view;
                 int childCount = viewGroup.getChildCount();
-                for (int i6 = 0; i6 < childCount; i6++) {
-                    View childAt = viewGroup.getChildAt(i6);
+                for (int i4 = 0; i4 < childCount; i4++) {
+                    View childAt = viewGroup.getChildAt(i4);
                     if (childAt instanceof WindVaneWebView) {
                         h.a();
                         com.anythink.core.express.d.a.a((WebView) childAt, optString3, Base64.encodeToString(optJSONObject2.toString().getBytes(), 2));
@@ -762,14 +762,14 @@ public final class c {
                 anythinkBTNativeEC.setJSCommon(jVar);
                 anythinkBTNativeEC.setUnitId(optString);
                 anythinkBTNativeEC.setRewardUnitSetting(a9);
-                WindVaneWebView windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a;
+                WindVaneWebView windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a;
                 if (windVaneWebView != null) {
                     str = windVaneWebView.getRid();
                     anythinkBTNativeEC.setCreateWebView(windVaneWebView);
                 }
                 LinkedHashMap<String, View> b10 = b(optString, str);
                 String b11 = b();
-                f20843d.put(b11, str);
+                f21630d.put(b11, str);
                 anythinkBTNativeEC.setInstanceId(b11);
                 b10.put(b11, anythinkBTNativeEC);
                 anythinkBTNativeEC.preLoadData();
@@ -796,14 +796,14 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             JSONObject optJSONObject = jSONObject.optJSONObject("data");
             if (optJSONObject != null && !TextUtils.isEmpty(optString)) {
                 String optString3 = optJSONObject.optString("id");
-                LinkedHashMap<String, View> b9 = b(optString, h9);
+                LinkedHashMap<String, View> b9 = b(optString, h3);
                 if (!b9.containsKey(optString2) || !b9.containsKey(optString3)) {
                     c(obj, "instanceId is not exist");
                     return;
@@ -875,9 +875,9 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             JSONObject optJSONObject = jSONObject.optJSONObject("data");
             if (optJSONObject == null) {
@@ -885,7 +885,7 @@ public final class c {
                 return;
             }
             String optString3 = optJSONObject.optString("id");
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString3) || !b9.containsKey(optString2)) {
                 c(obj, "instanceId is not exist");
                 return;
@@ -895,8 +895,8 @@ public final class c {
             if (viewGroup != null && view != null) {
                 JSONObject optJSONObject2 = optJSONObject.optJSONObject("rect");
                 if (view instanceof ATTempContainer) {
-                    String.format("%1$s-%2$s-%3$s-%4$s-%5$s", Integer.valueOf(f20852n), Integer.valueOf(f20853o), Integer.valueOf(f20854p), Integer.valueOf(f20855q), Integer.valueOf(f20856r));
-                    ((ATTempContainer) view).setNotchPadding(f20852n, f20853o, f20854p, f20855q, f20856r);
+                    String.format("%1$s-%2$s-%3$s-%4$s-%5$s", Integer.valueOf(f21639n), Integer.valueOf(f21640o), Integer.valueOf(f21641p), Integer.valueOf(f21642q), Integer.valueOf(f21643r));
+                    ((ATTempContainer) view).setNotchPadding(f21639n, f21640o, f21641p, f21642q, f21643r);
                     Iterator<View> it = b9.values().iterator();
                     while (true) {
                         if (!it.hasNext()) {
@@ -953,14 +953,14 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             JSONObject optJSONObject = jSONObject.optJSONObject("data");
             if (optJSONObject != null && !TextUtils.isEmpty(optString)) {
                 String optString3 = optJSONObject.optString("id");
-                LinkedHashMap<String, View> b9 = b(optString, h9);
+                LinkedHashMap<String, View> b9 = b(optString, h3);
                 if (!b9.containsKey(optString2) || !b9.containsKey(optString3)) {
                     c(obj, "instanceId is not exist");
                     return;
@@ -1026,15 +1026,15 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             if (jSONObject.optJSONObject("data") == null) {
                 c(obj, "data is empty");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2)) {
                 c(obj, "instanceId is not exist");
                 return;
@@ -1063,15 +1063,15 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             if (jSONObject.optJSONObject("data") == null) {
                 c(obj, "data is empty");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2)) {
                 c(obj, "instanceId not exist");
                 return;
@@ -1095,15 +1095,15 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             if (jSONObject.optJSONObject("data") == null) {
                 c(obj, "data is empty");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2)) {
                 c(obj, "instanceId not exist");
                 return;
@@ -1127,21 +1127,21 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             JSONObject optJSONObject = jSONObject.optJSONObject("data");
             if (optJSONObject == null) {
                 c(obj, "data is empty");
                 return;
             }
-            String optString3 = optJSONObject.optString(k.f19633d);
+            String optString3 = optJSONObject.optString(k.f20420d);
             if (TextUtils.isEmpty(optString3)) {
                 c(obj, "color is not exist");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2)) {
                 c(obj, "instanceId not exist");
                 return;
@@ -1165,9 +1165,9 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             JSONObject optJSONObject = jSONObject.optJSONObject("data");
             if (optJSONObject == null) {
@@ -1175,7 +1175,7 @@ public final class c {
                 return;
             }
             double optDouble = optJSONObject.optDouble("alpha", 1.0d);
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2)) {
                 c(obj, "instanceId not exist");
                 return;
@@ -1199,9 +1199,9 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             JSONObject optJSONObject = jSONObject.optJSONObject("data");
             if (optJSONObject == null) {
@@ -1210,7 +1210,7 @@ public final class c {
             }
             double optDouble = optJSONObject.optDouble("vertical", 1.0d);
             double optDouble2 = optJSONObject.optDouble("horizon", 1.0d);
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2)) {
                 c(obj, "instanceId not exist");
                 return;
@@ -1238,9 +1238,9 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             JSONObject optJSONObject = jSONObject.optJSONObject("data");
             if (optJSONObject == null) {
@@ -1249,7 +1249,7 @@ public final class c {
             }
             String optString3 = optJSONObject.optString("targetComponentId");
             JSONObject optJSONObject2 = optJSONObject.optJSONObject("rect");
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2) || !b9.containsKey(optString3)) {
                 c(obj, "instanceId not exist");
                 return;
@@ -1303,9 +1303,9 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             JSONObject optJSONObject = jSONObject.optJSONObject("data");
             if (optJSONObject == null) {
@@ -1314,7 +1314,7 @@ public final class c {
             }
             String optString3 = optJSONObject.optString("targetComponentId");
             JSONObject optJSONObject2 = optJSONObject.optJSONObject("rect");
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2) || !b9.containsKey(optString3)) {
                 c(obj, "instanceId not exist");
                 return;
@@ -1351,8 +1351,8 @@ public final class c {
             }
             ViewGroup.LayoutParams a9 = a(layoutParams, rect, optInt, optInt2);
             am.a(view);
-            int i6 = indexOfChild - 1;
-            viewGroup.addView(view, i6 >= 0 ? i6 : 0, a9);
+            int i4 = indexOfChild - 1;
+            viewGroup.addView(view, i4 >= 0 ? i4 : 0, a9);
             a(obj, optString2);
             a(obj, "onInsertViewBelow", optString2);
         } catch (Throwable th) {
@@ -1369,9 +1369,9 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             JSONObject optJSONObject = jSONObject.optJSONObject("data");
             if (optJSONObject == null) {
@@ -1380,7 +1380,7 @@ public final class c {
             }
             String optString3 = optJSONObject.optString("targetComponentId");
             JSONObject optJSONObject2 = optJSONObject.optJSONObject("rect");
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2) || !b9.containsKey(optString3)) {
                 c(obj, "instanceId not exist");
                 return;
@@ -1432,9 +1432,9 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             JSONObject optJSONObject = jSONObject.optJSONObject("data");
             if (optJSONObject == null) {
@@ -1443,7 +1443,7 @@ public final class c {
             }
             String optString3 = optJSONObject.optString("targetComponentId");
             JSONObject optJSONObject2 = optJSONObject.optJSONObject("rect");
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2) || !b9.containsKey(optString3)) {
                 c(obj, "instanceId not exist");
                 return;
@@ -1488,15 +1488,15 @@ public final class c {
     }
 
     public final void w(Object obj, JSONObject jSONObject) {
+        int i4;
         int i6;
-        int i9;
         WindVaneWebView windVaneWebView;
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             JSONObject optJSONObject = jSONObject.optJSONObject("data");
             if (optJSONObject == null) {
@@ -1519,8 +1519,8 @@ public final class c {
             ArrayList arrayList = new ArrayList();
             if (optJSONArray != null && optJSONArray.length() > 0) {
                 int length = optJSONArray.length();
-                for (int i10 = 0; i10 < length; i10++) {
-                    d b9 = d.b(optJSONArray.getJSONObject(i10));
+                for (int i9 = 0; i9 < length; i9++) {
+                    d b9 = d.b(optJSONArray.getJSONObject(i9));
                     if (b9 != null) {
                         b9.l(optString);
                         arrayList.add(b9);
@@ -1537,16 +1537,16 @@ public final class c {
             if (optJSONObject3 != null) {
                 Rect rect2 = new Rect(optJSONObject3.optInt("left", -999), optJSONObject3.optInt("top", -999), optJSONObject3.optInt("right", -999), optJSONObject3.optInt("bottom", -999));
                 int optInt = optJSONObject3.optInt("width");
-                i6 = optJSONObject3.optInt("height");
-                i9 = optInt;
+                i4 = optJSONObject3.optInt("height");
+                i6 = optInt;
                 rect = rect2;
             } else {
+                i4 = 0;
                 i6 = 0;
-                i9 = 0;
             }
             int optInt2 = optJSONObject2.optInt("refreshCache", 0);
             try {
-                LinkedHashMap<String, View> b10 = b(optString, h9);
+                LinkedHashMap<String, View> b10 = b(optString, h3);
                 if (!b10.containsKey(optString2)) {
                     c(obj, "instanceId not exist");
                     return;
@@ -1561,7 +1561,7 @@ public final class c {
                 anythinkBTWebView.setFilePath(optString4);
                 anythinkBTWebView.setFileURL(optString3);
                 anythinkBTWebView.setRect(rect);
-                anythinkBTWebView.setLayout(i9, i6);
+                anythinkBTWebView.setLayout(i6, i4);
                 anythinkBTWebView.setCampaigns(arrayList);
                 anythinkBTWebView.setRewardUnitSetting(a9);
                 anythinkBTWebView.webviewLoad(optInt2);
@@ -1581,15 +1581,15 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             if (jSONObject.optJSONObject("data") == null) {
                 c(obj, "data is empty");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2)) {
                 c(obj, "instanceId not exist");
                 return;
@@ -1613,15 +1613,15 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             if (jSONObject.optJSONObject("data") == null) {
                 c(obj, "data is empty");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2)) {
                 c(obj, "instanceId not exist");
                 return;
@@ -1645,15 +1645,15 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             if (jSONObject.optJSONObject("data") == null) {
                 c(obj, "data is empty");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (!b9.containsKey(optString2)) {
                 c(obj, "instanceId not exist");
                 return;
@@ -1676,14 +1676,14 @@ public final class c {
     }
 
     public static d a(String str) {
-        if (f20844e.containsKey(str)) {
-            return f20844e.get(str);
+        if (f21631e.containsKey(str)) {
+            return f21631e.get(str);
         }
         return null;
     }
 
     public static String c(String str) {
-        return f20846g.containsKey(str) ? f20846g.get(str) : "";
+        return f21633g.containsKey(str) ? f21633g.get(str) : "";
     }
 
     public final void d(Object obj, JSONObject jSONObject) {
@@ -1704,12 +1704,12 @@ public final class c {
                     a9.a(optString);
                 }
                 String optString2 = optJSONObject.optString("userId");
-                if (TextUtils.isEmpty(str) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
+                if (TextUtils.isEmpty(str) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
                     str = windVaneWebView.getRid();
                 }
                 LinkedHashMap<String, View> b10 = b(optString, str);
                 String b11 = b();
-                f20843d.put(b11, str);
+                f21630d.put(b11, str);
                 ATTempContainer aTTempContainer = new ATTempContainer(t.b().g());
                 aTTempContainer.setInstanceId(b11);
                 aTTempContainer.setUnitId(optString);
@@ -1736,9 +1736,9 @@ public final class c {
                 }
                 aTTempContainer.setMute(optInt);
                 b10.put(b11, aTTempContainer);
-                f20846g.put(b11, optString);
-                f20844e.put(b11, b9);
-                f20845f.put(b11, a9);
+                f21633g.put(b11, optString);
+                f21631e.put(b11, b9);
+                f21632f.put(b11, a9);
                 a(obj, b11);
                 return;
             }
@@ -1750,8 +1750,8 @@ public final class c {
     }
 
     public static com.anythink.expressad.videocommon.e.d b(String str) {
-        if (f20845f.containsKey(str)) {
-            return f20845f.get(str);
+        if (f21632f.containsKey(str)) {
+            return f21632f.get(str);
         }
         return null;
     }
@@ -1762,11 +1762,11 @@ public final class c {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
             if (jSONObject.optJSONObject("data") != null && !TextUtils.isEmpty(optString)) {
-                String h9 = h(optString2);
-                if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                    h9 = windVaneWebView.getRid();
+                String h3 = h(optString2);
+                if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                    h3 = windVaneWebView.getRid();
                 }
-                LinkedHashMap<String, View> b9 = b(optString, h9);
+                LinkedHashMap<String, View> b9 = b(optString, h3);
                 if (b9 != null && b9.containsKey(optString2)) {
                     View view = b9.get(optString2);
                     b9.remove(optString2);
@@ -1779,8 +1779,8 @@ public final class c {
                             ViewGroup viewGroup2 = (ViewGroup) view;
                             if (viewGroup2.getChildCount() > 0) {
                                 int childCount = viewGroup2.getChildCount();
-                                for (int i6 = 0; i6 < childCount; i6++) {
-                                    View childAt = viewGroup2.getChildAt(i6);
+                                for (int i4 = 0; i4 < childCount; i4++) {
+                                    View childAt = viewGroup2.getChildAt(i4);
                                     if (childAt instanceof AnythinkBTWebView) {
                                         b9.remove(((AnythinkBTWebView) childAt).getInstanceId());
                                         ((AnythinkBTWebView) childAt).onDestory();
@@ -1822,9 +1822,9 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             JSONObject optJSONObject = jSONObject.optJSONObject("data");
             if (optJSONObject == null) {
@@ -1836,7 +1836,7 @@ public final class c {
                 c(obj, "rect not exist");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             Rect rect = new Rect(optJSONObject2.optInt("left", -999), optJSONObject2.optInt("top", -999), optJSONObject2.optInt("right", -999), optJSONObject2.optInt("bottom", -999));
             int optInt = optJSONObject2.optInt("width");
             int optInt2 = optJSONObject2.optInt("height");
@@ -1878,9 +1878,9 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             JSONObject optJSONObject = jSONObject.optJSONObject("data");
             if (optJSONObject == null) {
@@ -1888,7 +1888,7 @@ public final class c {
                 return;
             }
             String optString3 = optJSONObject.optString("id");
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (b9.containsKey(optString3) && b9.containsKey(optString2)) {
                 ViewGroup viewGroup = (ViewGroup) b9.get(optString2);
                 View view = b9.get(optString3);
@@ -1896,8 +1896,8 @@ public final class c {
                 if (viewGroup != null && view != null) {
                     JSONObject optJSONObject2 = optJSONObject.optJSONObject("rect");
                     if (view instanceof ATTempContainer) {
-                        String.format("%1$s-%2$s-%3$s-%4$s-%5$s", Integer.valueOf(f20852n), Integer.valueOf(f20853o), Integer.valueOf(f20854p), Integer.valueOf(f20855q), Integer.valueOf(f20856r));
-                        ((ATTempContainer) view).setNotchPadding(f20852n, f20853o, f20854p, f20855q, f20856r);
+                        String.format("%1$s-%2$s-%3$s-%4$s-%5$s", Integer.valueOf(f21639n), Integer.valueOf(f21640o), Integer.valueOf(f21641p), Integer.valueOf(f21642q), Integer.valueOf(f21643r));
+                        ((ATTempContainer) view).setNotchPadding(f21639n, f21640o, f21641p, f21642q, f21643r);
                         Iterator<View> it = b9.values().iterator();
                         while (true) {
                             if (!it.hasNext()) {
@@ -1954,7 +1954,7 @@ public final class c {
     }
 
     public static void a(String str, String str2) {
-        f20843d.put(str, str2);
+        f21630d.put(str, str2);
     }
 
     public final void h(Object obj, JSONObject jSONObject) {
@@ -1962,15 +1962,15 @@ public final class c {
         try {
             String optString = jSONObject.optString("unitId");
             String optString2 = jSONObject.optString("id");
-            String h9 = h(optString2);
-            if (TextUtils.isEmpty(h9) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a) != null) {
-                h9 = windVaneWebView.getRid();
+            String h3 = h(optString2);
+            if (TextUtils.isEmpty(h3) && (windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a) != null) {
+                h3 = windVaneWebView.getRid();
             }
             if (jSONObject.optJSONObject("data") == null) {
                 c(obj, "data is empty");
                 return;
             }
-            LinkedHashMap<String, View> b9 = b(optString, h9);
+            LinkedHashMap<String, View> b9 = b(optString, h3);
             if (b9.containsKey(optString2)) {
                 View view = b9.get(optString2);
                 if (view != null && view.getParent() != null) {
@@ -2001,7 +2001,7 @@ public final class c {
     private static void c(Object obj, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", f20850l);
+            jSONObject.put("code", f21637l);
             jSONObject.put("message", str);
             jSONObject.put("data", new JSONObject());
             h.a().a(obj, Base64.encodeToString(jSONObject.toString().getBytes(), 2));
@@ -2011,22 +2011,22 @@ public final class c {
     }
 
     public final synchronized LinkedHashMap<String, View> b(String str, String str2) {
-        if (f20842c.containsKey(str + "_" + str2)) {
-            return f20842c.get(str + "_" + str2);
+        if (f21629c.containsKey(str + "_" + str2)) {
+            return f21629c.get(str + "_" + str2);
         }
         LinkedHashMap<String, View> linkedHashMap = new LinkedHashMap<>();
-        f20842c.put(str + "_" + str2, linkedHashMap);
+        f21629c.put(str + "_" + str2, linkedHashMap);
         return linkedHashMap;
     }
 
-    public static void a(String str, int i6) {
-        f20847h.put(str, Integer.valueOf(i6));
+    public static void a(String str, int i4) {
+        f21634h.put(str, Integer.valueOf(i4));
     }
 
     public static void a(WebView webView, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", f20850l);
+            jSONObject.put("code", f21637l);
             jSONObject.put("message", str);
             jSONObject.put("data", new JSONObject());
             h.a().a(webView, Base64.encodeToString(jSONObject.toString().getBytes(), 2));
@@ -2052,8 +2052,8 @@ public final class c {
     public final void b(Object obj, JSONObject jSONObject) {
         final Object obj2;
         Throwable th;
+        final int i4;
         final int i6;
-        final int i9;
         try {
             final String optString = jSONObject.optString("unitId");
             try {
@@ -2071,11 +2071,11 @@ public final class c {
                 if (optJSONObject2 != null) {
                     rect = new Rect(optJSONObject2.optInt("left", -999), optJSONObject2.optInt("top", -999), optJSONObject2.optInt("right", -999), optJSONObject2.optInt("bottom", -999));
                     int optInt2 = optJSONObject2.optInt("width");
-                    i9 = optJSONObject2.optInt("height");
-                    i6 = optInt2;
+                    i6 = optJSONObject2.optInt("height");
+                    i4 = optInt2;
                 } else {
+                    i4 = 0;
                     i6 = 0;
-                    i9 = 0;
                 }
                 final Rect rect2 = rect;
                 obj2 = obj;
@@ -2084,7 +2084,7 @@ public final class c {
                         @Override // java.lang.Runnable
                         public final void run() {
                             String str;
-                            WindVaneWebView windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj2).f18062a;
+                            WindVaneWebView windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj2).f18849a;
                             if (windVaneWebView != null) {
                                 str = windVaneWebView.getRid();
                             } else {
@@ -2093,7 +2093,7 @@ public final class c {
                             }
                             LinkedHashMap<String, View> b9 = c.this.b(optString, str);
                             String b10 = c.b();
-                            c.f20843d.put(b10, str);
+                            c.f21630d.put(b10, str);
                             AnythinkBTWebView anythinkBTWebView = new AnythinkBTWebView(t.b().g());
                             b9.put(b10, anythinkBTWebView);
                             anythinkBTWebView.setInstanceId(b10);
@@ -2104,9 +2104,9 @@ public final class c {
                             anythinkBTWebView.setRect(rect2);
                             anythinkBTWebView.setWebViewRid(str);
                             anythinkBTWebView.setCreateWebView(windVaneWebView);
-                            int i10 = i6;
-                            if (i10 > 0 || i9 > 0) {
-                                anythinkBTWebView.setLayout(i10, i9);
+                            int i9 = i4;
+                            if (i9 > 0 || i6 > 0) {
+                                anythinkBTWebView.setLayout(i9, i6);
                             }
                             anythinkBTWebView.preload();
                             c.a(obj2, b10);
@@ -2154,14 +2154,14 @@ public final class c {
                 anythinkBTVideoView.setShowClose(optInt3);
                 anythinkBTVideoView.setOrientation(optInt4);
                 anythinkBTVideoView.setProgressBarState(optInt5);
-                WindVaneWebView windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18062a;
+                WindVaneWebView windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj).f18849a;
                 if (windVaneWebView != null) {
                     str = windVaneWebView.getRid();
                     anythinkBTVideoView.setCreateWebView(windVaneWebView);
                 }
                 LinkedHashMap<String, View> b10 = b(optString, str);
                 String b11 = b();
-                f20843d.put(b11, str);
+                f21630d.put(b11, str);
                 anythinkBTVideoView.setInstanceId(b11);
                 b10.put(b11, anythinkBTVideoView);
                 anythinkBTVideoView.preLoadData();
@@ -2170,7 +2170,7 @@ public final class c {
                 } else {
                     a(obj, b11);
                 }
-                com.anythink.expressad.video.bt.a.a unused = a.C0133a.f20834a;
+                com.anythink.expressad.video.bt.a.a unused = a.C0133a.f21621a;
                 return;
             }
             c(obj, "unitId or data is empty");
@@ -2183,7 +2183,7 @@ public final class c {
     public static void a(Object obj, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", f20849k);
+            jSONObject.put("code", f21636k);
             JSONObject jSONObject2 = new JSONObject();
             jSONObject2.put("id", str);
             jSONObject.put("data", jSONObject2);
@@ -2197,7 +2197,7 @@ public final class c {
     private static void a(Object obj, String str, String str2) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", f20849k);
+            jSONObject.put("code", f21636k);
             JSONObject jSONObject2 = new JSONObject();
             jSONObject2.put("id", str2);
             jSONObject.put("data", jSONObject2);
@@ -2214,18 +2214,18 @@ public final class c {
         }
         try {
             JSONArray jSONArray = new JSONArray(str);
-            for (int i6 = 0; i6 < jSONArray.length(); i6++) {
-                JSONObject jSONObject = jSONArray.getJSONObject(i6);
+            for (int i4 = 0; i4 < jSONArray.length(); i4++) {
+                JSONObject jSONObject = jSONArray.getJSONObject(i4);
                 int optInt = jSONObject.optInt("type");
                 String optString = jSONObject.optString("url");
                 int optInt2 = jSONObject.optInt("report");
-                boolean z3 = true;
+                boolean z6 = true;
                 if (optInt2 == 0) {
-                    Context g4 = t.b().g();
+                    Context g9 = t.b().g();
                     if (optInt == 0) {
-                        z3 = false;
+                        z6 = false;
                     }
-                    com.anythink.expressad.b.a.a(g4, (d) null, "", optString, z3);
+                    com.anythink.expressad.b.a.a(g9, (d) null, "", optString, z6);
                 } else {
                     com.anythink.expressad.b.a.a(t.b().g(), null, "", optString, false, optInt != 0, optInt2);
                 }
@@ -2238,7 +2238,7 @@ public final class c {
     public static void a(WebView webView, String str, String str2) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", f20849k);
+            jSONObject.put("code", f21636k);
             JSONObject jSONObject2 = new JSONObject();
             jSONObject2.put("id", str2);
             jSONObject.put("data", jSONObject2);
@@ -2253,8 +2253,8 @@ public final class c {
     public final void a(Object obj, JSONObject jSONObject) {
         final Object obj2;
         Throwable th;
+        final int i4;
         final int i6;
-        final int i9;
         try {
             final String optString = jSONObject.optString("unitId");
             try {
@@ -2269,11 +2269,11 @@ public final class c {
                 if (optJSONObject2 != null) {
                     rect = new Rect(optJSONObject2.optInt("left", -999), optJSONObject2.optInt("top", -999), optJSONObject2.optInt("right", -999), optJSONObject2.optInt("bottom", -999));
                     int optInt2 = optJSONObject2.optInt("width");
-                    i9 = optJSONObject2.optInt("height");
-                    i6 = optInt2;
+                    i6 = optJSONObject2.optInt("height");
+                    i4 = optInt2;
                 } else {
+                    i4 = 0;
                     i6 = 0;
-                    i9 = 0;
                 }
                 final Rect rect2 = rect;
                 obj2 = obj;
@@ -2282,7 +2282,7 @@ public final class c {
                         @Override // java.lang.Runnable
                         public final void run() {
                             String str;
-                            WindVaneWebView windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj2).f18062a;
+                            WindVaneWebView windVaneWebView = ((com.anythink.expressad.atsignalcommon.windvane.b) obj2).f18849a;
                             if (windVaneWebView != null) {
                                 str = windVaneWebView.getRid();
                             } else {
@@ -2291,16 +2291,16 @@ public final class c {
                             }
                             LinkedHashMap<String, View> b9 = c.this.b(optString, str);
                             String b10 = c.b();
-                            c.f20843d.put(b10, str);
+                            c.f21630d.put(b10, str);
                             AnythinkBTLayout anythinkBTLayout = new AnythinkBTLayout(t.b().g());
                             b9.put(b10, anythinkBTLayout);
                             anythinkBTLayout.setInstanceId(b10);
                             anythinkBTLayout.setUnitId(optString);
                             anythinkBTLayout.setWebView(windVaneWebView);
                             anythinkBTLayout.setRect(rect2);
-                            int i10 = i6;
-                            if (i10 > 0 || i9 > 0) {
-                                anythinkBTLayout.setLayout(i10, i9);
+                            int i9 = i4;
+                            if (i9 > 0 || i6 > 0) {
+                                anythinkBTLayout.setLayout(i9, i6);
                             }
                             c.a(obj2, b10);
                         }
@@ -2338,8 +2338,8 @@ public final class c {
                         ViewGroup viewGroup2 = (ViewGroup) value;
                         if (viewGroup2.getChildCount() > 0) {
                             int childCount = viewGroup2.getChildCount();
-                            for (int i6 = 0; i6 < childCount; i6++) {
-                                View childAt = viewGroup2.getChildAt(i6);
+                            for (int i4 = 0; i4 < childCount; i4++) {
+                                View childAt = viewGroup2.getChildAt(i4);
                                 if (childAt instanceof AnythinkBTWebView) {
                                     AnythinkBTWebView anythinkBTWebView = (AnythinkBTWebView) childAt;
                                     b9.remove(anythinkBTWebView.getInstanceId());
@@ -2392,87 +2392,87 @@ public final class c {
     /* JADX WARN: Type inference failed for: r4v0, types: [android.view.ViewGroup$LayoutParams] */
     /* JADX WARN: Type inference failed for: r4v1, types: [android.view.ViewGroup$LayoutParams] */
     /* JADX WARN: Type inference failed for: r4v2, types: [android.widget.LinearLayout$LayoutParams] */
-    private static ViewGroup.LayoutParams a(ViewGroup.LayoutParams layoutParams, Rect rect, int i6, int i9) {
+    private static ViewGroup.LayoutParams a(ViewGroup.LayoutParams layoutParams, Rect rect, int i4, int i6) {
         if (rect == null) {
             rect = new Rect(-999, -999, -999, -999);
         }
-        Context g4 = t.b().g();
-        if (g4 != null) {
+        Context g9 = t.b().g();
+        if (g9 != null) {
             if (layoutParams instanceof FrameLayout.LayoutParams) {
                 FrameLayout.LayoutParams layoutParams2 = new FrameLayout.LayoutParams(-1, -1);
-                int i10 = rect.left;
+                int i9 = rect.left;
+                if (i9 != -999) {
+                    layoutParams2.leftMargin = v.b(g9, i9);
+                }
+                int i10 = rect.top;
                 if (i10 != -999) {
-                    layoutParams2.leftMargin = v.b(g4, i10);
+                    layoutParams2.topMargin = v.b(g9, i10);
                 }
-                int i11 = rect.top;
+                int i11 = rect.right;
                 if (i11 != -999) {
-                    layoutParams2.topMargin = v.b(g4, i11);
+                    layoutParams2.rightMargin = v.b(g9, i11);
                 }
-                int i12 = rect.right;
+                int i12 = rect.bottom;
                 if (i12 != -999) {
-                    layoutParams2.rightMargin = v.b(g4, i12);
+                    layoutParams2.bottomMargin = v.b(g9, i12);
                 }
-                int i13 = rect.bottom;
-                if (i13 != -999) {
-                    layoutParams2.bottomMargin = v.b(g4, i13);
+                if (i4 > 0) {
+                    layoutParams2.width = v.b(g9, i4);
                 }
                 if (i6 > 0) {
-                    layoutParams2.width = v.b(g4, i6);
-                }
-                if (i9 > 0) {
-                    layoutParams2.height = v.b(g4, i9);
+                    layoutParams2.height = v.b(g9, i6);
                 }
                 return layoutParams2;
             }
             if (layoutParams instanceof RelativeLayout.LayoutParams) {
                 RelativeLayout.LayoutParams layoutParams3 = new RelativeLayout.LayoutParams(-1, -1);
-                int i14 = rect.left;
+                int i13 = rect.left;
+                if (i13 != -999) {
+                    layoutParams3.leftMargin = v.b(g9, i13);
+                }
+                int i14 = rect.top;
                 if (i14 != -999) {
-                    layoutParams3.leftMargin = v.b(g4, i14);
+                    layoutParams3.topMargin = v.b(g9, i14);
                 }
-                int i15 = rect.top;
+                int i15 = rect.right;
                 if (i15 != -999) {
-                    layoutParams3.topMargin = v.b(g4, i15);
+                    layoutParams3.rightMargin = v.b(g9, i15);
                 }
-                int i16 = rect.right;
+                int i16 = rect.bottom;
                 if (i16 != -999) {
-                    layoutParams3.rightMargin = v.b(g4, i16);
+                    layoutParams3.bottomMargin = v.b(g9, i16);
                 }
-                int i17 = rect.bottom;
-                if (i17 != -999) {
-                    layoutParams3.bottomMargin = v.b(g4, i17);
+                if (i4 > 0) {
+                    layoutParams3.width = v.b(g9, i4);
                 }
                 if (i6 > 0) {
-                    layoutParams3.width = v.b(g4, i6);
-                }
-                if (i9 > 0) {
-                    layoutParams3.height = v.b(g4, i9);
+                    layoutParams3.height = v.b(g9, i6);
                 }
                 return layoutParams3;
             }
             if (layoutParams instanceof LinearLayout.LayoutParams) {
                 layoutParams = new LinearLayout.LayoutParams(-1, -1);
-                int i18 = rect.left;
+                int i17 = rect.left;
+                if (i17 != -999) {
+                    ((LinearLayout.LayoutParams) layoutParams).leftMargin = v.b(g9, i17);
+                }
+                int i18 = rect.top;
                 if (i18 != -999) {
-                    ((LinearLayout.LayoutParams) layoutParams).leftMargin = v.b(g4, i18);
+                    ((LinearLayout.LayoutParams) layoutParams).topMargin = v.b(g9, i18);
                 }
-                int i19 = rect.top;
+                int i19 = rect.right;
                 if (i19 != -999) {
-                    ((LinearLayout.LayoutParams) layoutParams).topMargin = v.b(g4, i19);
+                    ((LinearLayout.LayoutParams) layoutParams).rightMargin = v.b(g9, i19);
                 }
-                int i20 = rect.right;
+                int i20 = rect.bottom;
                 if (i20 != -999) {
-                    ((LinearLayout.LayoutParams) layoutParams).rightMargin = v.b(g4, i20);
+                    ((LinearLayout.LayoutParams) layoutParams).bottomMargin = v.b(g9, i20);
                 }
-                int i21 = rect.bottom;
-                if (i21 != -999) {
-                    ((LinearLayout.LayoutParams) layoutParams).bottomMargin = v.b(g4, i21);
+                if (i4 > 0) {
+                    ((LinearLayout.LayoutParams) layoutParams).width = v.b(g9, i4);
                 }
                 if (i6 > 0) {
-                    ((LinearLayout.LayoutParams) layoutParams).width = v.b(g4, i6);
-                }
-                if (i9 > 0) {
-                    ((LinearLayout.LayoutParams) layoutParams).height = v.b(g4, i9);
+                    ((LinearLayout.LayoutParams) layoutParams).height = v.b(g9, i6);
                 }
             }
         }
@@ -2488,25 +2488,25 @@ public final class c {
     }
 
     private static void a(String str, d dVar) {
-        if (f.f19128k == null || TextUtils.isEmpty(dVar.bh())) {
+        if (f.f19915k == null || TextUtils.isEmpty(dVar.bh())) {
             return;
         }
         f.a(str, dVar, "reward");
     }
 
-    public static void a(int i6, int i9, int i10, int i11, int i12) {
-        String.format("%1$s-%2$s-%3$s-%4$s-%5$s", Integer.valueOf(i6), Integer.valueOf(i9), Integer.valueOf(i10), Integer.valueOf(i11), Integer.valueOf(i12));
-        f20851m = com.anythink.expressad.foundation.h.i.a(i6, i9, i10, i11, i12);
-        f20852n = i6;
-        f20853o = i9;
-        f20854p = i10;
-        f20855q = i11;
-        f20856r = i12;
+    public static void a(int i4, int i6, int i9, int i10, int i11) {
+        String.format("%1$s-%2$s-%3$s-%4$s-%5$s", Integer.valueOf(i4), Integer.valueOf(i6), Integer.valueOf(i9), Integer.valueOf(i10), Integer.valueOf(i11));
+        f21638m = com.anythink.expressad.foundation.h.i.a(i4, i6, i9, i10, i11);
+        f21639n = i4;
+        f21640o = i6;
+        f21641p = i9;
+        f21642q = i10;
+        f21643r = i11;
     }
 
     private static void a(String str, String str2, String str3) {
         try {
-            LinkedHashMap<String, View> b9 = a.f20871a.b(str, str2);
+            LinkedHashMap<String, View> b9 = a.f21658a.b(str, str2);
             if (b9 == null || b9.size() <= 0) {
                 return;
             }

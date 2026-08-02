@@ -1,46 +1,46 @@
 package t0;
 
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+import android.os.Parcel;
+import android.os.Parcelable;
+import j3.C4614c;
 import java.util.Arrays;
 
 /* loaded from: classes.dex */
-public final class V {
+public final class V implements Parcelable {
+    public static final Parcelable.Creator<V> CREATOR = new C4614c(8);
 
-    /* renamed from: a, reason: collision with root package name */
-    public int f40614a;
+    /* renamed from: n, reason: collision with root package name */
+    public int f40672n;
 
-    /* renamed from: b, reason: collision with root package name */
-    public int f40615b;
+    /* renamed from: u, reason: collision with root package name */
+    public int f40673u;
 
-    /* renamed from: c, reason: collision with root package name */
-    public boolean f40616c;
+    /* renamed from: v, reason: collision with root package name */
+    public int[] f40674v;
 
-    /* renamed from: d, reason: collision with root package name */
-    public boolean f40617d;
+    /* renamed from: w, reason: collision with root package name */
+    public boolean f40675w;
 
-    /* renamed from: e, reason: collision with root package name */
-    public boolean f40618e;
-
-    /* renamed from: f, reason: collision with root package name */
-    public int[] f40619f;
-
-    /* renamed from: g, reason: collision with root package name */
-    public final /* synthetic */ StaggeredGridLayoutManager f40620g;
-
-    public V(StaggeredGridLayoutManager staggeredGridLayoutManager) {
-        this.f40620g = staggeredGridLayoutManager;
-        a();
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
     }
 
-    public final void a() {
-        this.f40614a = -1;
-        this.f40615b = Integer.MIN_VALUE;
-        this.f40616c = false;
-        this.f40617d = false;
-        this.f40618e = false;
-        int[] iArr = this.f40619f;
-        if (iArr != null) {
-            Arrays.fill(iArr, -1);
+    public final String toString() {
+        return "FullSpanItem{mPosition=" + this.f40672n + ", mGapDir=" + this.f40673u + ", mHasUnwantedGapAfter=" + this.f40675w + ", mGapPerSpan=" + Arrays.toString(this.f40674v) + '}';
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        parcel.writeInt(this.f40672n);
+        parcel.writeInt(this.f40673u);
+        parcel.writeInt(this.f40675w ? 1 : 0);
+        int[] iArr = this.f40674v;
+        if (iArr == null || iArr.length <= 0) {
+            parcel.writeInt(0);
+        } else {
+            parcel.writeInt(iArr.length);
+            parcel.writeIntArray(this.f40674v);
         }
     }
 }

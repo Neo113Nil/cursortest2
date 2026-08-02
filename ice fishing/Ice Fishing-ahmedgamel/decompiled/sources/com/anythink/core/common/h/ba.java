@@ -10,10 +10,10 @@ import org.json.JSONObject;
 public final class ba extends y {
 
     /* renamed from: o, reason: collision with root package name */
-    protected int f13605o;
+    protected int f14391o;
 
     private void aK(int i) {
-        this.f13605o = i;
+        this.f14391o = i;
     }
 
     public static ba u(String str) {
@@ -28,7 +28,7 @@ public final class ba extends y {
                 baVar.z(jSONObject.optInt("v_m"));
                 baVar.A(jSONObject.optInt("s_c_t"));
                 baVar.n(jSONObject.optInt("m_t"));
-                baVar.c(jSONObject.optLong("o_c_t", com.anythink.core.d.h.f17290f));
+                baVar.c(jSONObject.optLong("o_c_t", com.anythink.core.d.h.f18077f));
                 baVar.o(jSONObject.optInt("ak_cfm"));
                 baVar.b(jSONObject.optLong("ctdown_time"));
                 baVar.r(jSONObject.optInt("sk_able"));
@@ -39,7 +39,7 @@ public final class ba extends y {
                 baVar.C(jSONObject.optInt("ec_s_t"));
                 baVar.D(jSONObject.optInt("ec_l_t"));
                 baVar.f(jSONObject.optString(com.anythink.core.common.k.aF));
-                baVar.f13605o = jSONObject.optInt("spl_type");
+                baVar.f14391o = jSONObject.optInt("spl_type");
                 baVar.a(jSONObject.optLong("or_t"));
                 baVar.g(jSONObject.optInt("rv_fail_reward"));
                 baVar.h(jSONObject.optInt("cl_sz"));
@@ -119,14 +119,14 @@ public final class ba extends y {
                 baVar.c(jSONObject.optInt("at_cl_img", 2) == 1);
                 baVar.d(jSONObject.optInt("at_cl_video", 2) == 1);
                 baVar.e(jSONObject.optInt("at_cl_ec", 2) == 1);
-                baVar.e(jSONObject.optLong("at_cl_pt", com.anythink.basead.exoplayer.f.f7187a));
-                baVar.f(jSONObject.optLong("at_cl_pct", com.anythink.basead.exoplayer.f.f7187a));
-                baVar.g(jSONObject.optLong("at_cl_ec_pt", com.anythink.basead.exoplayer.f.f7187a));
-                baVar.h(jSONObject.optLong("at_cl_ec_pct", com.anythink.basead.exoplayer.f.f7187a));
+                baVar.e(jSONObject.optLong("at_cl_pt", com.anythink.basead.exoplayer.f.f7973a));
+                baVar.f(jSONObject.optLong("at_cl_pct", com.anythink.basead.exoplayer.f.f7973a));
+                baVar.g(jSONObject.optLong("at_cl_ec_pt", com.anythink.basead.exoplayer.f.f7973a));
+                baVar.h(jSONObject.optLong("at_cl_ec_pct", com.anythink.basead.exoplayer.f.f7973a));
                 baVar.k(jSONObject.optLong("sub_splash_time", 0L));
-                baVar.l(jSONObject.optLong("s_b_t_top", com.anythink.basead.exoplayer.i.a.f7883f));
-                baVar.m(jSONObject.optLong("s_b_d_top", com.anythink.basead.exoplayer.f.f7187a));
-                baVar.Z(jSONObject.optInt(g.a.f12969j, 1));
+                baVar.l(jSONObject.optLong("s_b_t_top", com.anythink.basead.exoplayer.i.a.f8669f));
+                baVar.m(jSONObject.optLong("s_b_d_top", com.anythink.basead.exoplayer.f.f7973a));
+                baVar.Z(jSONObject.optInt(g.a.f13755j, 1));
                 baVar.aa(jSONObject.optInt("apk_redown", 2));
                 baVar.ab(jSONObject.optInt("install_bg", 1));
                 baVar.ad(jSONObject.optInt("click_close", 2));
@@ -148,6 +148,6 @@ public final class ba extends y {
     }
 
     public final int a() {
-        return this.f13605o;
+        return this.f14391o;
     }
 }

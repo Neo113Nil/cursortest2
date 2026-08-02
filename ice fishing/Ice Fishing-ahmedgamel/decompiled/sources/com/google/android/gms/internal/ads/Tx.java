@@ -25,7 +25,7 @@ public final class Tx extends Rx {
     public final void g() {
         synchronized (Tx.class) {
             try {
-                if (((SharedPreferences) this.f27379f.f2782v).contains(this.f27374a)) {
+                if (((SharedPreferences) this.f28093f.f2909v).contains(this.f28088a)) {
                     c(false);
                 }
             } catch (Throwable th) {

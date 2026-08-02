@@ -2,7 +2,8 @@ package com.onesignal.user.internal;
 
 import I7.p;
 import u7.v;
-import z7.InterfaceC5267d;
+import w.AbstractC5128c;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class d {
@@ -96,9 +97,9 @@ public final class d {
         }
 
         public int hashCode() {
-            int k9 = u1.h.k(u1.h.k(this.appId.hashCode() * 31, 31, this.newIdentityOneSignalId), 31, this.externalId);
+            int a9 = AbstractC5128c.a(AbstractC5128c.a(this.appId.hashCode() * 31, 31, this.newIdentityOneSignalId), 31, this.externalId);
             String str = this.existingOneSignalId;
-            return k9 + (str == null ? 0 : str.hashCode());
+            return a9 + (str == null ? 0 : str.hashCode());
         }
 
         public String toString() {
@@ -110,8 +111,8 @@ public final class d {
         int label;
         /* synthetic */ Object result;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -134,7 +135,7 @@ public final class d {
         @Override // I7.p
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             invoke((U5.a) obj, (com.onesignal.user.internal.properties.a) obj2);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(U5.a identityModel, com.onesignal.user.internal.properties.a aVar) {
@@ -172,21 +173,21 @@ public final class d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object enqueueLogin$com_onesignal_core(a aVar, InterfaceC5267d interfaceC5267d) {
+    public final Object enqueueLogin$com_onesignal_core(a aVar, InterfaceC5240d interfaceC5240d) {
         b bVar;
         Object obj;
         int i;
-        if (interfaceC5267d instanceof b) {
-            bVar = (b) interfaceC5267d;
-            int i6 = bVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                bVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof b) {
+            bVar = (b) interfaceC5240d;
+            int i4 = bVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                bVar.label = i4 - Integer.MIN_VALUE;
                 b bVar2 = bVar;
                 obj = bVar2.result;
-                A7.a aVar2 = A7.a.f58n;
+                A7.a aVar2 = A7.a.f215n;
                 i = bVar2.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     H4.f fVar = this.operationRepo;
                     V5.f fVar2 = new V5.f(aVar.getAppId(), aVar.getNewIdentityOneSignalId(), aVar.getExternalId(), aVar.getExistingOneSignalId());
                     bVar2.label = 1;
@@ -198,24 +199,24 @@ public final class d {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 if (!((Boolean) obj).booleanValue()) {
                     com.onesignal.debug.internal.logging.b.warn$default("Could not login user", null, 2, null);
                 }
-                return v.f41353a;
+                return v.f41073a;
             }
         }
-        bVar = new b(interfaceC5267d);
+        bVar = new b(interfaceC5240d);
         b bVar22 = bVar;
         obj = bVar22.result;
-        A7.a aVar22 = A7.a.f58n;
+        A7.a aVar22 = A7.a.f215n;
         i = bVar22.label;
         if (i != 0) {
         }
         if (!((Boolean) obj).booleanValue()) {
         }
-        return v.f41353a;
+        return v.f41073a;
     }
 
     public final a switchUser$com_onesignal_core(String externalId, String str) {

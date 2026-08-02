@@ -7,15 +7,15 @@ package p6;
 public final class EnumC4850k implements InterfaceC4845f {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final EnumC4850k f39790n;
+    public static final EnumC4850k f39837n;
 
     /* renamed from: u, reason: collision with root package name */
-    public static final /* synthetic */ EnumC4850k[] f39791u;
+    public static final /* synthetic */ EnumC4850k[] f39838u;
 
     static {
         EnumC4850k enumC4850k = new EnumC4850k("INSTANCE", 0);
-        f39790n = enumC4850k;
-        f39791u = new EnumC4850k[]{enumC4850k};
+        f39837n = enumC4850k;
+        f39838u = new EnumC4850k[]{enumC4850k};
     }
 
     public static EnumC4850k valueOf(String str) {
@@ -23,7 +23,7 @@ public final class EnumC4850k implements InterfaceC4845f {
     }
 
     public static EnumC4850k[] values() {
-        return (EnumC4850k[]) f39791u.clone();
+        return (EnumC4850k[]) f39838u.clone();
     }
 
     @Override // java.lang.AutoCloseable

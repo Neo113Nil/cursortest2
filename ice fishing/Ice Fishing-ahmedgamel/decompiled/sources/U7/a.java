@@ -6,27 +6,27 @@ package U7;
 public final class a {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final a f3219n;
+    public static final a f3342n;
 
     /* renamed from: u, reason: collision with root package name */
-    public static final a f3220u;
+    public static final a f3343u;
 
     /* renamed from: v, reason: collision with root package name */
-    public static final a f3221v;
+    public static final a f3344v;
 
     /* renamed from: w, reason: collision with root package name */
-    public static final /* synthetic */ a[] f3222w;
+    public static final /* synthetic */ a[] f3345w;
 
     static {
         a aVar = new a("SUSPEND", 0);
-        f3219n = aVar;
+        f3342n = aVar;
         a aVar2 = new a("DROP_OLDEST", 1);
-        f3220u = aVar2;
+        f3343u = aVar2;
         a aVar3 = new a("DROP_LATEST", 2);
-        f3221v = aVar3;
+        f3344v = aVar3;
         a[] aVarArr = {aVar, aVar2, aVar3};
-        f3222w = aVarArr;
-        com.bumptech.glide.e.b(aVarArr);
+        f3345w = aVarArr;
+        X2.a.h(aVarArr);
     }
 
     public static a valueOf(String str) {
@@ -34,6 +34,6 @@ public final class a {
     }
 
     public static a[] values() {
-        return (a[]) f3222w.clone();
+        return (a[]) f3345w.clone();
     }
 }

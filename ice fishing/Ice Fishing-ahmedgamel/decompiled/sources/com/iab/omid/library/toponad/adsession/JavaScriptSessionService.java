@@ -35,30 +35,30 @@ public class JavaScriptSessionService {
     private final WebView webView;
 
     public interface TearDownHandler {
-        void onTearDown(boolean z3);
+        void onTearDown(boolean z6);
     }
 
-    private JavaScriptSessionService(Partner partner, WebView webView, boolean z3) {
+    private JavaScriptSessionService(Partner partner, WebView webView, boolean z6) {
         g.a();
         g.a(partner, "Partner is null");
         g.a(webView, "WebView is null");
         this.partner = partner;
         this.webView = webView;
-        this.isHtmlAdView = z3;
-        if (z3) {
+        this.isHtmlAdView = z6;
+        if (z6) {
             setAdView(webView);
         }
         addWebViewListener();
     }
 
     private void addWebViewListener() {
-        if (!com.bumptech.glide.f.o("WEB_MESSAGE_LISTENER")) {
+        if (!com.bumptech.glide.f.m("WEB_MESSAGE_LISTENER")) {
             throw new UnsupportedOperationException("The JavaScriptSessionService cannot be supported in this WebView version.");
         }
         removeWebViewListener();
         webViewUtil.a(this.webView, JS_MESSAGE_LISTENER_JS_SESSION_SERVICE, new HashSet(Arrays.asList("*")), new d() { // from class: com.iab.omid.library.toponad.adsession.JavaScriptSessionService.2
             @Override // H0.d
-            public void onPostMessage(WebView webView, c cVar, Uri uri, boolean z3, H0.a aVar) {
+            public void onPostMessage(WebView webView, c cVar, Uri uri, boolean z6, H0.a aVar) {
                 try {
                     JSONObject jSONObject = new JSONObject(cVar.a());
                     String string = jSONObject.getString(JavaScriptSessionService.JS_MESSAGE_KEY_METHOD);
@@ -77,8 +77,8 @@ public class JavaScriptSessionService {
         });
     }
 
-    public static JavaScriptSessionService create(Partner partner, WebView webView, boolean z3) {
-        return new JavaScriptSessionService(partner, webView, z3);
+    public static JavaScriptSessionService create(Partner partner, WebView webView, boolean z6) {
+        return new JavaScriptSessionService(partner, webView, z6);
     }
 
     private AdSessionConfiguration createAdSessionConfiguration() {

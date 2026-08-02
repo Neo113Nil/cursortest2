@@ -1,31 +1,25 @@
 package com.google.android.gms.internal.ads;
 
 /* loaded from: classes2.dex */
-public final class RQ {
+public final class RQ extends AbstractC3377iQ {
 
-    /* renamed from: a, reason: collision with root package name */
-    public final long f27284a;
+    /* renamed from: d, reason: collision with root package name */
+    public static final /* synthetic */ int f27968d = 0;
 
-    /* renamed from: b, reason: collision with root package name */
-    public final long f27285b;
+    /* renamed from: c, reason: collision with root package name */
+    public final C2977b2 f27969c;
 
-    public RQ(long j6, long j9) {
-        this.f27284a = j6;
-        this.f27285b = j9;
+    public RQ(AbstractC3627n8 abstractC3627n8, C2977b2 c2977b2) {
+        super(abstractC3627n8);
+        this.f27969c = c2977b2;
     }
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof RQ)) {
-            return false;
-        }
-        RQ rq = (RQ) obj;
-        return this.f27284a == rq.f27284a && this.f27285b == rq.f27285b;
-    }
-
-    public final int hashCode() {
-        return (((int) this.f27284a) * 31) + ((int) this.f27285b);
+    @Override // com.google.android.gms.internal.ads.AbstractC3377iQ, com.google.android.gms.internal.ads.AbstractC3627n8
+    public final U7 b(int i, U7 u72, long j6) {
+        this.f31816b.b(i, u72, j6);
+        C2977b2 c2977b2 = this.f27969c;
+        u72.f28691b = c2977b2;
+        L0 l02 = c2977b2.f29973b;
+        return u72;
     }
 }

@@ -1,20 +1,20 @@
 package com.google.android.gms.ads.mediation.customevent;
 
+import A2.a;
+import A2.b;
 import android.content.Context;
 import android.os.Bundle;
-import k2.h;
-import x2.InterfaceC5190d;
-import y2.InterfaceC5229a;
-import y2.InterfaceC5230b;
+import m2.h;
+import z2.InterfaceC5227d;
 
 @Deprecated
 /* loaded from: classes.dex */
-public interface CustomEventBanner extends InterfaceC5229a {
+public interface CustomEventBanner extends a {
     /* synthetic */ void onDestroy();
 
     /* synthetic */ void onPause();
 
     /* synthetic */ void onResume();
 
-    void requestBannerAd(Context context, InterfaceC5230b interfaceC5230b, String str, h hVar, InterfaceC5190d interfaceC5190d, Bundle bundle);
+    void requestBannerAd(Context context, b bVar, String str, h hVar, InterfaceC5227d interfaceC5227d, Bundle bundle);
 }

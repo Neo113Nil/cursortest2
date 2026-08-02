@@ -1,413 +1,432 @@
 package com.bumptech.glide.manager;
 
-import android.app.ActivityOptions;
-import android.content.ComponentName;
+import a.AbstractC0426a;
+import android.app.Activity;
+import android.app.Application;
 import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageManager;
-import android.os.Build;
-import android.os.Bundle;
-import android.text.TextUtils;
-import android.util.SparseArray;
-import com.google.android.gms.internal.ads.A8;
-import com.google.android.gms.internal.ads.C2951b;
-import com.google.android.gms.internal.ads.C3058d;
-import com.google.android.gms.internal.ads.C3327i;
-import com.google.android.gms.internal.ads.C3500lC;
-import com.google.android.gms.internal.ads.C3649o;
-import com.google.android.gms.internal.ads.C3976u3;
-import com.google.android.gms.internal.ads.InterfaceC3113e1;
-import com.google.android.gms.internal.ads.InterfaceC3433k;
-import com.google.android.gms.internal.ads.InterfaceC3543m1;
-import com.google.android.gms.internal.ads.InterfaceC3814r3;
-import com.google.android.gms.internal.ads.MA;
-import com.google.android.gms.internal.ads.MB;
-import com.google.android.gms.internal.ads.PB;
-import com.google.android.gms.internal.ads.RB;
-import com.google.android.gms.internal.ads.S0;
-import com.google.firebase.messaging.FirebaseMessaging;
-import h4.C4572a;
-import java.io.File;
+import android.net.ConnectivityManager;
+import android.os.Binder;
+import android.os.Trace;
+import android.util.Log;
+import com.google.android.gms.internal.ads.AbstractC3093dB;
+import com.google.android.gms.internal.ads.AbstractC3592ma;
+import com.google.android.gms.internal.ads.B8;
+import com.google.android.gms.internal.ads.C3357i6;
+import com.google.android.gms.internal.ads.C3447jr;
+import com.google.android.gms.internal.ads.C3490kg;
+import com.google.android.gms.internal.ads.C3500kq;
+import com.google.android.gms.internal.ads.C3554lq;
+import com.google.android.gms.internal.ads.C3557lt;
+import com.google.android.gms.internal.ads.C4274z8;
+import com.google.android.gms.internal.ads.InterfaceC3146eB;
+import com.google.android.gms.internal.ads.KD;
+import com.google.android.gms.internal.ads.PA;
+import com.google.android.gms.internal.ads.QA;
+import com.google.android.gms.internal.ads.RA;
+import com.google.android.gms.internal.ads.RunnableC3996u0;
+import com.google.android.gms.internal.ads.SA;
+import com.google.android.gms.internal.ads.Su;
+import com.google.android.gms.internal.ads.Vu;
+import com.google.android.gms.internal.ads.W8;
+import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
-import l.C4648e;
-import p.AbstractC4817g;
-import p.AbstractC4818h;
-import p.AbstractC4819i;
-import p.BinderC4815e;
+import java.util.Objects;
+import java.util.Set;
+import java.util.WeakHashMap;
+import java.util.concurrent.ExecutorService;
+import s2.C4969z0;
+import s2.r;
+import w2.z;
+import x2.AbstractC5190b;
 
 /* loaded from: classes.dex */
-public final class o implements InterfaceC3433k, S0 {
+public final class o implements P1.i, KD {
+
+    /* renamed from: x, reason: collision with root package name */
+    public static volatile o f24252x;
 
     /* renamed from: n, reason: collision with root package name */
-    public boolean f23463n;
+    public final /* synthetic */ int f24253n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final Object f23464u;
+    public boolean f24254u;
 
     /* renamed from: v, reason: collision with root package name */
-    public Object f23465v;
+    public Object f24255v;
 
     /* renamed from: w, reason: collision with root package name */
-    public Object f23466w;
+    public Object f24256w;
 
-    public /* synthetic */ o(C3649o c3649o, C3327i c3327i, boolean z3, int[] iArr) {
-        this.f23464u = c3649o;
-        this.f23465v = c3327i;
-        this.f23463n = z3;
-        this.f23466w = iArr;
+    public o(Vu vu, Su su, boolean z6) {
+        this.f24253n = 8;
+        this.f24255v = vu;
+        this.f24256w = su;
+        this.f24254u = z6;
     }
 
-    @Override // com.google.android.gms.internal.ads.S0
-    public void B() {
-        ((S0) this.f23464u).B();
-        if (!this.f23463n) {
-            return;
-        }
-        int i = 0;
-        while (true) {
-            SparseArray sparseArray = (SparseArray) this.f23466w;
-            if (i >= sparseArray.size()) {
-                return;
-            }
-            ((C3976u3) sparseArray.valueAt(i)).i = true;
-            i++;
-        }
-    }
-
-    @Override // com.google.android.gms.internal.ads.S0
-    public InterfaceC3543m1 C(int i, int i6) {
-        if (i6 != 3 && i6 != 5) {
-            this.f23463n = true;
-        }
-        S0 s02 = (S0) this.f23464u;
-        if (i6 != 3) {
-            return s02.C(i, i6);
-        }
-        SparseArray sparseArray = (SparseArray) this.f23466w;
-        C3976u3 c3976u3 = (C3976u3) sparseArray.get(i);
-        if (c3976u3 != null) {
-            return c3976u3;
-        }
-        C3976u3 c3976u32 = new C3976u3(s02.C(i, 3), (InterfaceC3814r3) this.f23465v);
-        sparseArray.put(i, c3976u32);
-        return c3976u32;
-    }
-
-    @Override // com.google.android.gms.internal.ads.S0
-    public void D(InterfaceC3113e1 interfaceC3113e1) {
-        ((S0) this.f23464u).D(interfaceC3113e1);
-    }
-
-    public void a() {
-        q1.c.a((q1.c) this.f23466w, this, false);
-    }
-
-    public m8.i b() {
-        Intent intent = (Intent) this.f23464u;
-        if (!intent.hasExtra("android.support.customtabs.extra.SESSION")) {
-            Bundle bundle = new Bundle();
-            bundle.putBinder("android.support.customtabs.extra.SESSION", null);
-            intent.putExtras(bundle);
-        }
-        intent.putExtra("android.support.customtabs.extra.EXTRA_ENABLE_INSTANT_APPS", this.f23463n);
-        Integer num = (Integer) ((C4648e) this.f23465v).f38761u;
-        Bundle bundle2 = new Bundle();
-        if (num != null) {
-            bundle2.putInt("android.support.customtabs.extra.TOOLBAR_COLOR", num.intValue());
-        }
-        intent.putExtras(bundle2);
-        intent.putExtra("androidx.browser.customtabs.extra.SHARE_STATE", 0);
-        int i = Build.VERSION.SDK_INT;
-        String a9 = AbstractC4818h.a();
-        if (!TextUtils.isEmpty(a9)) {
-            Bundle bundleExtra = intent.hasExtra("com.android.browser.headers") ? intent.getBundleExtra("com.android.browser.headers") : new Bundle();
-            if (!bundleExtra.containsKey("Accept-Language")) {
-                bundleExtra.putString("Accept-Language", a9);
-                intent.putExtra("com.android.browser.headers", bundleExtra);
-            }
-        }
-        if (i >= 34) {
-            if (((ActivityOptions) this.f23466w) == null) {
-                this.f23466w = AbstractC4817g.a();
-            }
-            AbstractC4819i.a((ActivityOptions) this.f23466w, false);
-        }
-        ActivityOptions activityOptions = (ActivityOptions) this.f23466w;
-        return new m8.i(intent, activityOptions != null ? activityOptions.toBundle() : null);
-    }
-
-    public File c() {
-        File file;
-        synchronized (((q1.c) this.f23466w)) {
-            try {
-                q1.b bVar = (q1.b) this.f23464u;
-                if (bVar.f39988f != this) {
-                    throw new IllegalStateException();
-                }
-                if (!bVar.f39987e) {
-                    ((boolean[]) this.f23465v)[0] = true;
-                }
-                file = bVar.f39986d[0];
-                ((q1.c) this.f23466w).f39997n.mkdirs();
-            } catch (Throwable th) {
-                throw th;
-            }
-        }
-        return file;
-    }
-
-    public int[] d() {
-        synchronized (this) {
-            try {
-                if (!this.f23463n) {
-                    return null;
-                }
-                long[] jArr = (long[]) this.f23464u;
-                int length = jArr.length;
-                int i = 0;
-                int i6 = 0;
-                while (i < length) {
-                    int i9 = i6 + 1;
-                    int i10 = 1;
-                    boolean z3 = jArr[i] > 0;
-                    boolean[] zArr = (boolean[]) this.f23465v;
-                    if (z3 != zArr[i6]) {
-                        int[] iArr = (int[]) this.f23466w;
-                        if (!z3) {
-                            i10 = 2;
-                        }
-                        iArr[i6] = i10;
-                    } else {
-                        ((int[]) this.f23466w)[i6] = 0;
-                    }
-                    zArr[i6] = z3;
-                    i++;
-                    i6 = i9;
-                }
-                this.f23463n = false;
-                return (int[]) ((int[]) this.f23466w).clone();
-            } catch (Throwable th) {
-                throw th;
-            }
-        }
-    }
-
-    public synchronized boolean e() {
-        boolean z3;
-        boolean z6;
-        try {
-            synchronized (this) {
+    public static o b(Context context) {
+        if (f24252x == null) {
+            synchronized (o.class) {
                 try {
-                    if (!this.f23463n) {
-                        Boolean f3 = f();
-                        this.f23465v = f3;
-                        if (f3 == null) {
-                            ((R3.l) ((Z3.b) this.f23464u)).a(new d4.f(10));
-                        }
-                        this.f23463n = true;
+                    if (f24252x == null) {
+                        f24252x = new o(context.getApplicationContext(), 0);
                     }
                 } finally {
                 }
             }
-            return z6;
-        } catch (Throwable th) {
-            throw th;
         }
-        Boolean bool = (Boolean) this.f23465v;
-        if (bool != null) {
-            z6 = bool.booleanValue();
-        } else {
-            O3.g gVar = ((FirebaseMessaging) this.f23466w).f36193a;
-            gVar.a();
-            C4572a c4572a = (C4572a) gVar.f2351g.get();
-            synchronized (c4572a) {
-                z3 = c4572a.f38018a;
-            }
-            z6 = z3;
+        return f24252x;
+    }
+
+    public static o d(PA pa) {
+        return new o(new C3557lt(8, pa));
+    }
+
+    public boolean a(L1.c cVar) {
+        boolean z6 = true;
+        if (cVar == null) {
+            return true;
+        }
+        boolean remove = ((Set) this.f24255v).remove(cVar);
+        if (!((HashSet) this.f24256w).remove(cVar) && !remove) {
+            z6 = false;
+        }
+        if (z6) {
+            cVar.clear();
         }
         return z6;
     }
 
-    public Boolean f() {
-        ApplicationInfo applicationInfo;
-        Bundle bundle;
-        O3.g gVar = ((FirebaseMessaging) this.f23466w).f36193a;
-        gVar.a();
-        Context context = gVar.f2345a;
-        SharedPreferences sharedPreferences = context.getSharedPreferences("com.google.firebase.messaging", 0);
-        if (sharedPreferences.contains("auto_init")) {
-            return Boolean.valueOf(sharedPreferences.getBoolean("auto_init", false));
+    public void c() {
+        if (this.f24254u || ((HashSet) this.f24256w).isEmpty()) {
+            return;
         }
+        n nVar = (n) this.f24255v;
+        P1.h hVar = (P1.h) nVar.f24250v;
+        boolean z6 = false;
+        nVar.f24248n = ((ConnectivityManager) hVar.get()).getActiveNetwork() != null;
         try {
-            PackageManager packageManager = context.getPackageManager();
-            if (packageManager == null || (applicationInfo = packageManager.getApplicationInfo(context.getPackageName(), 128)) == null || (bundle = applicationInfo.metaData) == null || !bundle.containsKey("firebase_messaging_auto_init_enabled")) {
-                return null;
+            ((ConnectivityManager) hVar.get()).registerDefaultNetworkCallback((Q0.h) nVar.f24251w);
+            z6 = true;
+        } catch (RuntimeException e9) {
+            if (Log.isLoggable("ConnectivityMonitor", 5)) {
+                Log.w("ConnectivityMonitor", "Failed to register callback", e9);
             }
-            return Boolean.valueOf(applicationInfo.metaData.getBoolean("firebase_messaging_auto_init_enabled"));
-        } catch (PackageManager.NameNotFoundException unused) {
-            return null;
         }
+        this.f24254u = z6;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3433k
-    public C3500lC t(int i, A8 a82, int[] iArr) {
-        C3649o c3649o = (C3649o) this.f23464u;
-        C3327i c3327i = (C3327i) this.f23465v;
-        C3058d c3058d = new C3058d(c3649o, c3327i);
-        int i6 = ((int[]) this.f23466w)[i];
-        PB pb = RB.f27177u;
-        MA.q(4, "initialCapacity");
-        Object[] objArr = new Object[4];
-        int i9 = 0;
-        int i10 = 0;
-        while (i9 < a82.f23635a) {
-            int i11 = i;
-            A8 a83 = a82;
-            C2951b c2951b = new C2951b(i11, a83, i9, c3327i, iArr[i9], this.f23463n, c3058d);
-            int length = objArr.length;
-            int i12 = i10 + 1;
-            int d2 = MB.d(length, i12);
-            if (d2 > length) {
-                objArr = Arrays.copyOf(objArr, d2);
-            }
-            objArr[i10] = c2951b;
-            i9++;
-            i10 = i12;
-            i = i11;
-            a82 = a83;
-        }
-        return RB.p(objArr, i10);
-    }
-
-    public /* synthetic */ o(Exception exc) {
-        this.f23463n = false;
-        this.f23464u = null;
-        this.f23465v = null;
-        this.f23466w = exc;
-    }
-
-    public /* synthetic */ o(Object obj, Object obj2) {
-        this.f23463n = false;
-        this.f23464u = obj;
-        this.f23465v = obj2;
-        this.f23466w = null;
-    }
-
-    public o(S0 s02, InterfaceC3814r3 interfaceC3814r3) {
-        this.f23464u = s02;
-        this.f23465v = interfaceC3814r3;
-        this.f23466w = new SparseArray();
-    }
-
-    public o(byte[] bArr, Map map, List list, boolean z3) {
-        this.f23464u = bArr;
-        this.f23465v = map;
-        if (list == null) {
-            this.f23466w = null;
-        } else {
-            this.f23466w = Collections.unmodifiableList(list);
-        }
-        this.f23463n = z3;
-    }
-
-    /* JADX WARN: Illegal instructions before constructor call */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v1, types: [java.util.TreeMap] */
-    /* JADX WARN: Type inference failed for: r0v2, types: [java.util.Map] */
-    /* JADX WARN: Type inference failed for: r0v3, types: [java.util.Map] */
-    /* JADX WARN: Type inference failed for: r0v4 */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-    */
-    public o(byte[] bArr, boolean z3, List list) {
-        this(bArr, (Map) r0, list, z3);
-        ?? treeMap;
-        if (list == null) {
-            treeMap = 0;
-        } else if (list.isEmpty()) {
-            treeMap = Collections.EMPTY_MAP;
-        } else {
-            treeMap = new TreeMap(String.CASE_INSENSITIVE_ORDER);
-            Iterator it = list.iterator();
-            while (it.hasNext()) {
-                l1.d dVar = (l1.d) it.next();
-                treeMap.put(dVar.f38888a, dVar.f38889b);
+    public void e(Context context) {
+        synchronized (this.f24255v) {
+            try {
+                if (!this.f24254u) {
+                    Context applicationContext = context.getApplicationContext();
+                    if (applicationContext == null) {
+                        applicationContext = context;
+                    }
+                    Application application = applicationContext instanceof Application ? (Application) applicationContext : null;
+                    if (application == null) {
+                        int i = z.f41712b;
+                        x2.i.f("Can not cast Context to Application");
+                        return;
+                    }
+                    if (((C4274z8) this.f24256w) == null) {
+                        this.f24256w = new C4274z8();
+                    }
+                    C4274z8 c4274z8 = (C4274z8) this.f24256w;
+                    if (!c4274z8.f36079B) {
+                        application.registerActivityLifecycleCallbacks(c4274z8);
+                        if (context instanceof Activity) {
+                            c4274z8.a((Activity) context);
+                        }
+                        c4274z8.f36082u = application;
+                        c4274z8.f36080C = ((Long) r.f40506e.f40509c.a(AbstractC3592ma.f32761B1)).longValue();
+                        c4274z8.f36079B = true;
+                    }
+                    this.f24254u = true;
+                }
+            } catch (Throwable th) {
+                throw th;
             }
         }
     }
 
-    public o(N1.h hVar, n nVar) {
-        this.f23466w = new Q0.h(1, this);
-        this.f23465v = hVar;
-        this.f23464u = nVar;
-    }
-
-    /* JADX WARN: Illegal instructions before constructor call */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v1, types: [java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r0v2, types: [java.util.List] */
-    /* JADX WARN: Type inference failed for: r0v3, types: [java.util.List] */
-    /* JADX WARN: Type inference failed for: r0v4 */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-    */
-    public o(byte[] bArr, Map map) {
-        this(bArr, map, (List) r0, false);
-        ?? arrayList;
-        if (map == null) {
-            arrayList = 0;
-        } else if (map.isEmpty()) {
-            arrayList = Collections.EMPTY_LIST;
-        } else {
-            arrayList = new ArrayList(map.size());
-            for (Map.Entry entry : map.entrySet()) {
-                arrayList.add(new l1.d((String) entry.getKey(), (String) entry.getValue()));
+    public void f(l3.l lVar) {
+        synchronized (this.f24255v) {
+            try {
+                if (((ArrayDeque) this.f24256w) == null) {
+                    this.f24256w = new ArrayDeque();
+                }
+                ((ArrayDeque) this.f24256w).add(lVar);
+            } catch (Throwable th) {
+                throw th;
             }
         }
     }
 
-    public o() {
-        this.f23464u = new Intent("android.intent.action.VIEW");
-        this.f23465v = new C4648e(4);
-        this.f23463n = true;
+    public /* synthetic */ void g() {
+        synchronized (this.f24256w) {
+            try {
+                W8 w82 = (W8) this.f24255v;
+                if (w82 == null) {
+                    return;
+                }
+                w82.g();
+                this.f24255v = null;
+                Binder.flushPendingCommands();
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    @Override // P1.i
+    public Object get() {
+        if (this.f24254u) {
+            throw new IllegalStateException("Recursive Registry initialization! In your AppGlideModule and LibraryGlideModules, Make sure you're using the provided Registry rather calling glide.getRegistry()!");
+        }
+        Trace.beginSection("Glide registry");
+        this.f24254u = true;
+        try {
+            return d6.c.c((com.bumptech.glide.c) this.f24255v, (ArrayList) this.f24256w);
+        } finally {
+            this.f24254u = false;
+            Trace.endSection();
+        }
+    }
+
+    public synchronized void h(int i) {
+        if (this.f24254u) {
+            return;
+        }
+        this.f24254u = true;
+        o(new C4969z0(i, C3447jr.c(i, ((C3500kq) this.f24255v).f32420a), "undefined", null, null));
+    }
+
+    public void i(B8 b82) {
+        synchronized (this.f24255v) {
+            try {
+                if (((C4274z8) this.f24256w) == null) {
+                    this.f24256w = new C4274z8();
+                }
+                C4274z8 c4274z8 = (C4274z8) this.f24256w;
+                synchronized (c4274z8.f36083v) {
+                    c4274z8.f36086y.add(b82);
+                }
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    public void j(l3.m mVar) {
+        l3.l lVar;
+        synchronized (this.f24255v) {
+            if (((ArrayDeque) this.f24256w) != null && !this.f24254u) {
+                this.f24254u = true;
+                while (true) {
+                    synchronized (this.f24255v) {
+                        try {
+                            lVar = (l3.l) ((ArrayDeque) this.f24256w).poll();
+                            if (lVar == null) {
+                                this.f24254u = false;
+                                return;
+                            }
+                        } finally {
+                        }
+                    }
+                    lVar.a(mVar);
+                }
+            }
+        }
+    }
+
+    public void k(B8 b82) {
+        synchronized (this.f24255v) {
+            try {
+                C4274z8 c4274z8 = (C4274z8) this.f24256w;
+                if (c4274z8 == null) {
+                    return;
+                }
+                synchronized (c4274z8.f36083v) {
+                    c4274z8.f36086y.remove(b82);
+                }
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    public Activity l() {
+        synchronized (this.f24255v) {
+            try {
+                C4274z8 c4274z8 = (C4274z8) this.f24256w;
+                if (c4274z8 == null) {
+                    return null;
+                }
+                return c4274z8.f36081n;
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    public o m(SA sa) {
+        sa.getClass();
+        return new o((InterfaceC3146eB) this.f24256w, this.f24254u, sa);
+    }
+
+    @Override // com.google.android.gms.internal.ads.KD
+    /* renamed from: n */
+    public void mo10n(Object obj) {
+        Su su = (Su) this.f24256w;
+        su.a(true);
+        Vu vu = (Vu) this.f24255v;
+        vu.a(su);
+        if (this.f24254u) {
+            vu.h();
+        }
+    }
+
+    public synchronized void o(C4969z0 c4969z0) {
+        int i = 1;
+        if (true == ((Boolean) r.f40506e.f40509c.a(AbstractC3592ma.w6)).booleanValue()) {
+            i = 3;
+        }
+        ((C3490kg) this.f24256w).c(new C3554lq(i, c4969z0));
+    }
+
+    public boolean p() {
+        synchronized (this.f24255v) {
+            try {
+                C4274z8 c4274z8 = (C4274z8) this.f24256w;
+                if (c4274z8 == null) {
+                    return false;
+                }
+                return c4274z8.f36084w.get();
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    public List q(CharSequence charSequence) {
+        charSequence.getClass();
+        Iterator j6 = ((InterfaceC3146eB) this.f24256w).j(this, charSequence);
+        ArrayList arrayList = new ArrayList();
+        while (true) {
+            AbstractC3093dB abstractC3093dB = (AbstractC3093dB) j6;
+            if (!abstractC3093dB.hasNext()) {
+                return Collections.unmodifiableList(arrayList);
+            }
+            arrayList.add((String) abstractC3093dB.next());
+        }
+    }
+
+    public String toString() {
+        switch (this.f24253n) {
+            case 2:
+                return super.toString() + "{numRequests=" + ((Set) this.f24255v).size() + ", isPaused=" + this.f24254u + "}";
+            default:
+                return super.toString();
+        }
+    }
+
+    @Override // com.google.android.gms.internal.ads.KD
+    public void w(Throwable th) {
+        Su su = (Su) this.f24256w;
+        if (su.f()) {
+            su.d(th);
+            su.a(false);
+            Vu vu = (Vu) this.f24255v;
+            vu.a(su);
+            if (this.f24254u) {
+                vu.h();
+            }
+        }
+    }
+
+    public o(InterfaceC3146eB interfaceC3146eB, boolean z6, QA qa) {
+        this.f24253n = 9;
+        this.f24256w = interfaceC3146eB;
+        this.f24254u = z6;
+        this.f24255v = qa;
+    }
+
+    public o(C3357i6 c3357i6) {
+        this.f24253n = 3;
+        this.f24255v = c3357i6.A();
+        this.f24254u = c3357i6.B();
+        this.f24256w = c3357i6.C();
+        c3357i6.D();
+    }
+
+    public o(C3447jr c3447jr, C3500kq c3500kq, C3490kg c3490kg) {
+        this.f24253n = 7;
+        this.f24255v = c3500kq;
+        this.f24256w = c3490kg;
+        Objects.requireNonNull(c3447jr);
+        this.f24254u = false;
+    }
+
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public o(InterfaceC3146eB interfaceC3146eB) {
+        this(interfaceC3146eB, false, (QA) RA.f27932u);
+        this.f24253n = 9;
     }
 
     public o(int i) {
-        this.f23464u = new long[i];
-        this.f23465v = new boolean[i];
-        this.f23466w = new int[i];
-    }
-
-    public o(S0.i iVar) {
-        Intent intent = new Intent("android.intent.action.VIEW");
-        this.f23464u = intent;
-        this.f23465v = new C4648e(4);
-        this.f23463n = true;
-        if (iVar != null) {
-            intent.setPackage(((ComponentName) iVar.f2791x).getPackageName());
-            BinderC4815e binderC4815e = (BinderC4815e) iVar.f2790w;
-            Bundle bundle = new Bundle();
-            bundle.putBinder("android.support.customtabs.extra.SESSION", binderC4815e);
-            intent.putExtras(bundle);
+        this.f24253n = i;
+        switch (i) {
+            case 4:
+                this.f24255v = new Object();
+                this.f24256w = null;
+                this.f24254u = false;
+                break;
+            case 6:
+                this.f24256w = AbstractC5190b.f41851b;
+                break;
+            case 10:
+                this.f24255v = new ArrayList();
+                this.f24256w = new HashMap();
+                this.f24254u = false;
+                break;
+            case 11:
+                this.f24255v = new Object();
+                break;
+            default:
+                this.f24255v = Collections.newSetFromMap(new WeakHashMap());
+                this.f24256w = new HashSet();
+                break;
         }
     }
 
-    public o(FirebaseMessaging firebaseMessaging, Z3.b bVar) {
-        this.f23466w = firebaseMessaging;
-        this.f23464u = bVar;
+    public o(Context context, int i) {
+        this.f24253n = i;
+        switch (i) {
+            case 5:
+                this.f24256w = new Object();
+                break;
+            case 6:
+                ExecutorService executorService = AbstractC5190b.f41851b;
+                this.f24256w = executorService;
+                executorService.execute(new RunnableC3996u0(6, this, context));
+                break;
+            default:
+                this.f24256w = new HashSet();
+                this.f24255v = new n(new P1.h(new A1.r(context, 2)), new m(this));
+                break;
+        }
     }
 
-    public o(q1.c cVar, q1.b bVar) {
-        this.f23466w = cVar;
-        this.f23464u = bVar;
-        this.f23465v = bVar.f39987e ? null : new boolean[cVar.f40003z];
+    public o(com.bumptech.glide.c cVar, ArrayList arrayList, AbstractC0426a abstractC0426a) {
+        this.f24253n = 1;
+        this.f24255v = cVar;
+        this.f24256w = arrayList;
     }
 }

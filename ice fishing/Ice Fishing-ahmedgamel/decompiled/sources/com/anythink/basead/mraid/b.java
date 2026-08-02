@@ -9,7 +9,7 @@ import android.webkit.WebView;
 public class b implements com.anythink.core.express.web.c {
 
     /* renamed from: a, reason: collision with root package name */
-    protected static final String f9620a = "MraidBaseWebView";
+    protected static final String f10406a = "MraidBaseWebView";
 
     @Override // com.anythink.core.express.web.c
     public void loadingResourceStatus(WebView webView, int i) {

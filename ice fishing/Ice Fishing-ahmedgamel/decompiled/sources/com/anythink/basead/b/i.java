@@ -11,15 +11,15 @@ import com.anythink.core.common.h.y;
 public final class i implements com.anythink.core.common.k.b {
 
     /* renamed from: a, reason: collision with root package name */
-    com.anythink.core.common.t.c f6032a;
+    com.anythink.core.common.t.c f6818a;
 
     /* renamed from: b, reason: collision with root package name */
-    Context f6033b = t.b().g();
+    Context f6819b = t.b().g();
 
     @Override // com.anythink.core.common.k.b
-    public final void a(final w wVar, final String str, final String str2, boolean z3, final com.anythink.core.common.k.c cVar) {
-        if (z3) {
-            boolean a9 = b.a(this.f6033b, wVar);
+    public final void a(final w wVar, final String str, final String str2, boolean z6, final com.anythink.core.common.k.c cVar) {
+        if (z6) {
+            boolean a9 = b.a(this.f6819b, wVar);
             if (cVar != null) {
                 cVar.a(a9);
                 return;
@@ -41,7 +41,7 @@ public final class i implements com.anythink.core.common.k.b {
                 @Override // com.anythink.basead.a, android.app.Application.ActivityLifecycleCallbacks
                 public final void onActivityPaused(Activity activity) {
                     super.onActivityPaused(activity);
-                    com.anythink.core.common.t.c cVar2 = i.this.f6032a;
+                    com.anythink.core.common.t.c cVar2 = i.this.f6818a;
                     if (cVar2 != null) {
                         cVar2.b();
                     }
@@ -50,17 +50,17 @@ public final class i implements com.anythink.core.common.k.b {
                 @Override // com.anythink.basead.a, android.app.Application.ActivityLifecycleCallbacks
                 public final void onActivityResumed(Activity activity) {
                     super.onActivityResumed(activity);
-                    com.anythink.core.common.t.c cVar2 = i.this.f6032a;
+                    com.anythink.core.common.t.c cVar2 = i.this.f6818a;
                     if (cVar2 != null) {
                         cVar2.a();
                     }
                 }
             };
-            this.f6032a = new com.anythink.core.common.t.c(S8, new Runnable() { // from class: com.anythink.basead.b.i.2
+            this.f6818a = new com.anythink.core.common.t.c(S8, new Runnable() { // from class: com.anythink.basead.b.i.2
                 @Override // java.lang.Runnable
                 public final void run() {
-                    ((Application) i.this.f6033b).unregisterActivityLifecycleCallbacks(aVar);
-                    boolean a10 = b.a(i.this.f6033b, wVar);
+                    ((Application) i.this.f6819b).unregisterActivityLifecycleCallbacks(aVar);
+                    boolean a10 = b.a(i.this.f6819b, wVar);
                     if (a10) {
                         com.anythink.core.common.u.e.a(str, wVar.v(), str2, 6, (String) null, 0L, 0L, wVar.ap(), wVar.aq());
                     }
@@ -71,10 +71,10 @@ public final class i implements com.anythink.core.common.k.b {
                 }
             });
             try {
-                ((Application) this.f6033b).registerActivityLifecycleCallbacks(aVar);
+                ((Application) this.f6819b).registerActivityLifecycleCallbacks(aVar);
                 return;
             } catch (Exception unused) {
-                D.y.w("Error", "Error, cannot registerActivityLifecycleCallbacks here!");
+                com.IceFishing.LiveIceFishing.k.x("Error", "Error, cannot registerActivityLifecycleCallbacks here!");
                 return;
             }
         }

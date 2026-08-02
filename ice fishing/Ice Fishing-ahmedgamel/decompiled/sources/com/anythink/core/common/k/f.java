@@ -4,5 +4,5 @@ import com.anythink.core.common.h.bv;
 
 /* loaded from: classes.dex */
 public interface f {
-    void a(bv bvVar, int i, int i6);
+    void a(bv bvVar, int i, int i4);
 }

@@ -7,15 +7,15 @@ import java.util.Objects;
 public final class GL implements Map.Entry, Comparable {
 
     /* renamed from: n, reason: collision with root package name */
-    public Object f24968n;
+    public Object f25758n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final /* synthetic */ FL f24969u;
+    public final /* synthetic */ FL f25759u;
 
     public GL(FL fl, Object obj) {
         Objects.requireNonNull(fl);
-        this.f24969u = fl;
-        this.f24968n = obj;
+        this.f25759u = fl;
+        this.f25758n = obj;
     }
 
     @Override // java.lang.Comparable
@@ -32,7 +32,7 @@ public final class GL implements Map.Entry, Comparable {
                 if (entry.getKey() != null) {
                     return false;
                 }
-                Object obj2 = this.f24968n;
+                Object obj2 = this.f25758n;
                 Object value = entry.getValue();
                 if (obj2 == null ? value == null : obj2.equals(value)) {
                 }
@@ -49,12 +49,12 @@ public final class GL implements Map.Entry, Comparable {
 
     @Override // java.util.Map.Entry
     public final Object getValue() {
-        return this.f24968n;
+        return this.f25758n;
     }
 
     @Override // java.util.Map.Entry
     public final int hashCode() {
-        Object obj = this.f24968n;
+        Object obj = this.f25758n;
         if (obj == null) {
             return 0;
         }
@@ -63,14 +63,14 @@ public final class GL implements Map.Entry, Comparable {
 
     @Override // java.util.Map.Entry
     public final Object setValue(Object obj) {
-        this.f24969u.e();
-        Object obj2 = this.f24968n;
-        this.f24968n = obj;
+        this.f25759u.e();
+        Object obj2 = this.f25758n;
+        this.f25758n = obj;
         return obj2;
     }
 
     public final String toString() {
-        String valueOf = String.valueOf(this.f24968n);
-        return u1.h.g(new StringBuilder("null".length() + 1 + valueOf.length()), "null=", valueOf);
+        String valueOf = String.valueOf(this.f25758n);
+        return Wv.i(new StringBuilder("null".length() + 1 + valueOf.length()), "null=", valueOf);
     }
 }

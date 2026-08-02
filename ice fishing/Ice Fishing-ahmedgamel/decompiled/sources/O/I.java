@@ -4,38 +4,38 @@ import android.os.Build;
 import android.view.View;
 import java.nio.ByteBuffer;
 import java.util.ConcurrentModificationException;
-import w7.C5159f;
+import w7.C5158f;
 
 /* loaded from: classes.dex */
 public abstract class I {
 
     /* renamed from: n, reason: collision with root package name */
-    public int f2042n;
+    public int f2130n;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f2043u;
+    public int f2131u;
 
     /* renamed from: v, reason: collision with root package name */
-    public int f2044v;
+    public int f2132v;
 
     /* renamed from: w, reason: collision with root package name */
-    public Object f2045w;
+    public Object f2133w;
 
     public I() {
-        if (a4.e.f4347n == null) {
-            a4.e.f4347n = new a4.e();
+        if (G3.e.f1076u == null) {
+            G3.e.f1076u = new G3.e(14);
         }
     }
 
     public int a(int i) {
-        if (i < this.f2044v) {
-            return ((ByteBuffer) this.f2045w).getShort(this.f2043u + i);
+        if (i < this.f2132v) {
+            return ((ByteBuffer) this.f2133w).getShort(this.f2131u + i);
         }
         return 0;
     }
 
     public void b() {
-        if (((C5159f) this.f2045w).f41678A != this.f2044v) {
+        if (((C5158f) this.f2133w).f41732A != this.f2132v) {
             throw new ConcurrentModificationException();
         }
     }
@@ -46,57 +46,57 @@ public abstract class I {
 
     public void e() {
         while (true) {
-            int i = this.f2042n;
-            C5159f c5159f = (C5159f) this.f2045w;
-            if (i >= c5159f.f41689y || c5159f.f41686v[i] >= 0) {
+            int i = this.f2130n;
+            C5158f c5158f = (C5158f) this.f2133w;
+            if (i >= c5158f.f41743y || c5158f.f41740v[i] >= 0) {
                 return;
             } else {
-                this.f2042n = i + 1;
+                this.f2130n = i + 1;
             }
         }
     }
 
     public void f(View view, Object obj) {
         Object tag;
-        if (Build.VERSION.SDK_INT >= this.f2043u) {
+        if (Build.VERSION.SDK_INT >= this.f2131u) {
             d(view, obj);
             return;
         }
-        if (Build.VERSION.SDK_INT >= this.f2043u) {
+        if (Build.VERSION.SDK_INT >= this.f2131u) {
             tag = c(view);
         } else {
-            tag = view.getTag(this.f2042n);
-            if (!((Class) this.f2045w).isInstance(tag)) {
+            tag = view.getTag(this.f2130n);
+            if (!((Class) this.f2133w).isInstance(tag)) {
                 tag = null;
             }
         }
         if (g(tag, obj)) {
-            View.AccessibilityDelegate d2 = X.d(view);
-            C0323b c0323b = d2 == null ? null : d2 instanceof C0321a ? ((C0321a) d2).f2060a : new C0323b(d2);
-            if (c0323b == null) {
-                c0323b = new C0323b();
+            View.AccessibilityDelegate d9 = X.d(view);
+            C0328b c0328b = d9 == null ? null : d9 instanceof C0326a ? ((C0326a) d9).f2148a : new C0328b(d9);
+            if (c0328b == null) {
+                c0328b = new C0328b();
             }
-            X.o(view, c0323b);
-            view.setTag(this.f2042n, obj);
-            X.i(this.f2044v, view);
+            X.o(view, c0328b);
+            view.setTag(this.f2130n, obj);
+            X.i(this.f2132v, view);
         }
     }
 
     public abstract boolean g(Object obj, Object obj2);
 
     public boolean hasNext() {
-        return this.f2042n < ((C5159f) this.f2045w).f41689y;
+        return this.f2130n < ((C5158f) this.f2133w).f41743y;
     }
 
     public void remove() {
         b();
-        if (this.f2043u == -1) {
+        if (this.f2131u == -1) {
             throw new IllegalStateException("Call next() before removing element from the iterator.");
         }
-        C5159f c5159f = (C5159f) this.f2045w;
-        c5159f.d();
-        c5159f.m(this.f2043u);
-        this.f2043u = -1;
-        this.f2044v = c5159f.f41678A;
+        C5158f c5158f = (C5158f) this.f2133w;
+        c5158f.d();
+        c5158f.m(this.f2131u);
+        this.f2131u = -1;
+        this.f2132v = c5158f.f41732A;
     }
 }

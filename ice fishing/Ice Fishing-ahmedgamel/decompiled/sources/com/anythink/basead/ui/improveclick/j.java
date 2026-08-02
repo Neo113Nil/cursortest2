@@ -29,135 +29,135 @@ import java.util.Map;
 public final class j extends c {
 
     /* renamed from: a, reason: collision with root package name */
-    BaseShakeView f11238a;
+    BaseShakeView f12024a;
 
     /* renamed from: b, reason: collision with root package name */
-    BaseShakeView f11239b;
+    BaseShakeView f12025b;
 
     /* renamed from: p, reason: collision with root package name */
-    long f11245p;
+    long f12031p;
 
     /* renamed from: q, reason: collision with root package name */
-    private final int f11246q = 12;
+    private final int f12032q = 12;
 
     /* renamed from: r, reason: collision with root package name */
-    private final int f11247r = 252;
+    private final int f12033r = 252;
 
     /* renamed from: s, reason: collision with root package name */
-    private final int f11248s = 132;
+    private final int f12034s = 132;
 
     /* renamed from: t, reason: collision with root package name */
-    private final int f11249t = 48;
+    private final int f12035t = 48;
 
     /* renamed from: u, reason: collision with root package name */
-    private final int f11250u = 86;
+    private final int f12036u = 86;
 
     /* renamed from: v, reason: collision with root package name */
-    private boolean f11251v = false;
+    private boolean f12037v = false;
 
     /* renamed from: c, reason: collision with root package name */
-    final long f11240c = m.ai;
+    final long f12026c = m.ai;
 
     /* renamed from: l, reason: collision with root package name */
-    final long f11241l = 500;
+    final long f12027l = 500;
 
     /* renamed from: m, reason: collision with root package name */
-    boolean f11242m = false;
+    boolean f12028m = false;
 
     /* renamed from: n, reason: collision with root package name */
-    boolean f11243n = false;
+    boolean f12029n = false;
 
     /* renamed from: o, reason: collision with root package name */
-    boolean f11244o = false;
+    boolean f12030o = false;
 
     private void b(Map<String, Object> map) {
         BaseShakeView baseShakeView;
-        View view = this.f11143j;
-        int indexOfChild = (view == null || this.f11141g.indexOfChild(view) <= 0) ? -1 : this.f11141g.indexOfChild(this.f11143j);
-        int i = this.f11142h;
+        View view = this.f11929j;
+        int indexOfChild = (view == null || this.f11927g.indexOfChild(view) <= 0) ? -1 : this.f11927g.indexOfChild(this.f11929j);
+        int i = this.f11928h;
         RelativeLayout relativeLayout = null;
         if (i == 1 || i == 2) {
             try {
-                relativeLayout = (RelativeLayout) this.f11141g.findViewById(q.a(this.f11138d, "myoffer_end_card_id", "id"));
+                relativeLayout = (RelativeLayout) this.f11927g.findViewById(q.a(this.f11924d, "myoffer_end_card_id", "id"));
             } catch (Throwable unused) {
             }
-            BaseShakeView baseShakeView2 = this.f11238a;
+            BaseShakeView baseShakeView2 = this.f12024a;
             if (baseShakeView2 != null) {
                 am.a(baseShakeView2);
-                this.f11238a.setVisibility(8);
+                this.f12024a.setVisibility(8);
                 if (relativeLayout != null) {
-                    relativeLayout.addView(this.f11238a);
+                    relativeLayout.addView(this.f12024a);
                     return;
                 } else {
-                    this.f11141g.addView(this.f11238a, indexOfChild);
+                    this.f11927g.addView(this.f12024a, indexOfChild);
                     return;
                 }
             }
             return;
         }
         if (i == 3) {
-            BaseShakeView baseShakeView3 = this.f11238a;
+            BaseShakeView baseShakeView3 = this.f12024a;
             if (baseShakeView3 != null) {
                 am.a(baseShakeView3);
-                this.f11238a.setVisibility(0);
+                this.f12024a.setVisibility(0);
                 if (indexOfChild > 0) {
                     indexOfChild++;
                 }
-                this.f11141g.addView(this.f11238a, indexOfChild);
+                this.f11927g.addView(this.f12024a, indexOfChild);
                 return;
             }
             return;
         }
         if (i != 5 && i != 6) {
-            if (i == 100 && (baseShakeView = this.f11238a) != null) {
+            if (i == 100 && (baseShakeView = this.f12024a) != null) {
                 am.a(baseShakeView);
-                this.f11238a.setVisibility(0);
-                this.f11141g.addView(this.f11238a);
+                this.f12024a.setVisibility(0);
+                this.f11927g.addView(this.f12024a);
                 return;
             }
             return;
         }
-        BaseShakeView baseShakeView4 = this.f11238a;
+        BaseShakeView baseShakeView4 = this.f12024a;
         if (baseShakeView4 != null) {
             am.a(baseShakeView4);
-            Object obj = map != null ? map.get(g.a.f11167b) : null;
+            Object obj = map != null ? map.get(g.a.f11953b) : null;
             if (obj != null && (obj instanceof ViewGroup)) {
-                BaseShakeView baseShakeView5 = this.f11238a;
+                BaseShakeView baseShakeView5 = this.f12024a;
                 if (baseShakeView5 instanceof ShakeNativeBorderThumbView) {
                     ((ShakeNativeBorderThumbView) baseShakeView5).changeBackground();
                     if (obj instanceof FrameLayout) {
                         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-2, -2);
                         layoutParams.gravity = 17;
-                        this.f11238a.setLayoutParams(layoutParams);
+                        this.f12024a.setLayoutParams(layoutParams);
                     }
                 }
-                ((ViewGroup) obj).addView(this.f11238a);
+                ((ViewGroup) obj).addView(this.f12024a);
                 return;
             }
-            if (this.f11141g.getMeasuredWidth() < i.a().a(this.f11138d) || this.f11141g.getMeasuredHeight() < i.a().b(this.f11138d)) {
-                Object obj2 = map.get(g.a.f11168c);
+            if (this.f11927g.getMeasuredWidth() < i.a().a(this.f11924d) || this.f11927g.getMeasuredHeight() < i.a().b(this.f11924d)) {
+                Object obj2 = map.get(g.a.f11954c);
                 if (obj2 == null || !(obj2 instanceof com.anythink.basead.g.f)) {
                     return;
                 }
                 ((com.anythink.basead.g.f) obj2).onATImproveClickViewRenderFail(1);
                 return;
             }
-            if (this.f11141g instanceof FrameLayout) {
+            if (this.f11927g instanceof FrameLayout) {
                 FrameLayout.LayoutParams layoutParams2 = new FrameLayout.LayoutParams(-2, -2);
                 layoutParams2.gravity = 21;
-                this.f11238a.setLayoutParams(layoutParams2);
+                this.f12024a.setLayoutParams(layoutParams2);
             }
-            this.f11141g.addView(this.f11238a);
+            this.f11927g.addView(this.f12024a);
         }
     }
 
     private void c() {
-        if (this.f11238a == null || this.f11239b == null || this.f11251v || !f()) {
+        if (this.f12024a == null || this.f12025b == null || this.f12037v || !f()) {
             return;
         }
-        this.f11251v = true;
-        this.f11238a.setVisibility(0);
-        this.f11238a.postDelayed(new Runnable() { // from class: com.anythink.basead.ui.improveclick.j.1
+        this.f12037v = true;
+        this.f12024a.setVisibility(0);
+        this.f12024a.postDelayed(new Runnable() { // from class: com.anythink.basead.ui.improveclick.j.1
             @Override // java.lang.Runnable
             public final void run() {
                 if (j.this.f()) {
@@ -169,14 +169,14 @@ public final class j extends c {
                         ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.anythink.basead.ui.improveclick.j.1.1
                             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
                             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                                if (j.this.f11239b != null) {
+                                if (j.this.f12025b != null) {
                                     float floatValue = ((Float) valueAnimator.getAnimatedValue()).floatValue();
                                     j jVar = j.this;
-                                    if (jVar.f11238a != null && jVar.f11239b.getParent() == null) {
-                                        j.this.f11238a.setAlpha(floatValue);
+                                    if (jVar.f12024a != null && jVar.f12025b.getParent() == null) {
+                                        j.this.f12024a.setAlpha(floatValue);
                                     }
-                                    if (j.this.f11239b.getParent() != null) {
-                                        j.this.f11239b.setAlpha(floatValue);
+                                    if (j.this.f12025b.getParent() != null) {
+                                        j.this.f12025b.setAlpha(floatValue);
                                     }
                                 }
                             }
@@ -188,28 +188,28 @@ public final class j extends c {
                                 super.onAnimationRepeat(animator);
                                 try {
                                     j jVar = j.this;
-                                    if (jVar.f11239b == null || !jVar.f()) {
+                                    if (jVar.f12025b == null || !jVar.f()) {
                                         return;
                                     }
-                                    am.a(j.this.f11239b);
+                                    am.a(j.this.f12025b);
                                     j jVar2 = j.this;
-                                    RelativeLayout relativeLayout = (RelativeLayout) jVar2.f11141g.findViewById(q.a(jVar2.f11138d, "myoffer_end_card_id", "id"));
+                                    RelativeLayout relativeLayout = (RelativeLayout) jVar2.f11927g.findViewById(q.a(jVar2.f11924d, "myoffer_end_card_id", "id"));
                                     if (relativeLayout != null) {
-                                        relativeLayout.addView(j.this.f11239b);
+                                        relativeLayout.addView(j.this.f12025b);
                                     } else {
                                         j jVar3 = j.this;
-                                        View view = jVar3.f11143j;
-                                        if (view == null || jVar3.f11141g.indexOfChild(view) <= 0) {
+                                        View view = jVar3.f11929j;
+                                        if (view == null || jVar3.f11927g.indexOfChild(view) <= 0) {
                                             i = -1;
                                         } else {
                                             j jVar4 = j.this;
-                                            i = jVar4.f11141g.indexOfChild(jVar4.f11143j);
+                                            i = jVar4.f11927g.indexOfChild(jVar4.f11929j);
                                         }
                                         j jVar5 = j.this;
-                                        jVar5.f11141g.addView(jVar5.f11239b, i);
+                                        jVar5.f11927g.addView(jVar5.f12025b, i);
                                     }
-                                    j.this.f11239b.setAlpha(0.2f);
-                                    j.this.f11238a.setVisibility(8);
+                                    j.this.f12025b.setAlpha(0.2f);
+                                    j.this.f12024a.setVisibility(8);
                                 } catch (Throwable unused) {
                                 }
                             }
@@ -217,12 +217,12 @@ public final class j extends c {
                         ofFloat.start();
                     } catch (Throwable unused) {
                         if (j.this.f()) {
-                            BaseShakeView baseShakeView = j.this.f11239b;
+                            BaseShakeView baseShakeView = j.this.f12025b;
                             if (baseShakeView == null || baseShakeView.getParent() == null) {
-                                j.this.f11238a.setVisibility(0);
+                                j.this.f12024a.setVisibility(0);
                             } else {
-                                j.this.f11238a.setVisibility(8);
-                                j.this.f11239b.setVisibility(0);
+                                j.this.f12024a.setVisibility(8);
+                                j.this.f12025b.setVisibility(0);
                             }
                         }
                     }
@@ -233,21 +233,21 @@ public final class j extends c {
 
     private void d() {
         e();
-        if (this.f11239b == null || this.f11142h != 1 || com.anythink.basead.b.e.b(this.f11139e) || com.anythink.basead.b.e.a(this.f11139e)) {
+        if (this.f12025b == null || this.f11928h != 1 || com.anythink.basead.b.e.b(this.f11925e) || com.anythink.basead.b.e.a(this.f11925e)) {
             return;
         }
-        if (this.f11140f.f14168o.J() == 0 || com.anythink.core.common.v.m.f(this.f11138d) == 2) {
-            this.f11239b.setAlpha(1.0f);
-            this.f11239b.setVisibility(0);
+        if (this.f11926f.f14954o.J() == 0 || com.anythink.core.common.v.m.f(this.f11924d) == 2) {
+            this.f12025b.setAlpha(1.0f);
+            this.f12025b.setVisibility(0);
         }
     }
 
     private void e() {
-        BaseShakeView baseShakeView = this.f11238a;
+        BaseShakeView baseShakeView = this.f12024a;
         if (baseShakeView != null) {
             baseShakeView.setVisibility(8);
         }
-        BaseShakeView baseShakeView2 = this.f11239b;
+        BaseShakeView baseShakeView2 = this.f12025b;
         if (baseShakeView2 != null) {
             baseShakeView2.setVisibility(8);
         }
@@ -255,7 +255,7 @@ public final class j extends c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean f() {
-        return (this.f11142h == 1 && com.anythink.basead.b.e.a(this.f11139e, this.f11140f) && this.f11242m) ? false : true;
+        return (this.f11928h == 1 && com.anythink.basead.b.e.a(this.f11925e, this.f11926f) && this.f12028m) ? false : true;
     }
 
     @Override // com.anythink.basead.ui.improveclick.c
@@ -264,18 +264,18 @@ public final class j extends c {
 
     @Override // com.anythink.basead.ui.improveclick.c
     public final void a(Context context, w wVar, x xVar, ViewGroup viewGroup, RelativeLayout relativeLayout, View view, int i, c.a aVar) {
-        boolean z3;
+        boolean z6;
         super.a(context, wVar, xVar, viewGroup, relativeLayout, view, i, aVar);
-        int i6 = this.f11142h;
-        if (i6 == 1 || i6 == 2) {
-            this.f11238a = new ShakeThumbView(context);
+        int i4 = this.f11928h;
+        if (i4 == 1 || i4 == 2) {
+            this.f12024a = new ShakeThumbView(context);
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-2, -2);
             layoutParams.addRule(13);
-            if (i == 2 && com.anythink.core.common.v.m.f(context) == 2 && xVar.f14168o.J() == 0) {
-                this.f11238a.setPadding(0, 0, 0, q.a(context, 42.0f));
+            if (i == 2 && com.anythink.core.common.v.m.f(context) == 2 && xVar.f14954o.J() == 0) {
+                this.f12024a.setPadding(0, 0, 0, q.a(context, 42.0f));
             }
-            this.f11238a.setLayoutParams(layoutParams);
-            this.f11239b = new ShakeBorderThumbView(context);
+            this.f12024a.setLayoutParams(layoutParams);
+            this.f12025b = new ShakeBorderThumbView(context);
             RelativeLayout.LayoutParams layoutParams2 = new RelativeLayout.LayoutParams(-2, -2);
             layoutParams2.addRule(9);
             layoutParams2.addRule(12);
@@ -287,105 +287,105 @@ public final class j extends c {
                     layoutParams2.setMargins(a9, 0, 0, q.a(context, 252.0f));
                 }
             }
-            if (i == 2 && !com.anythink.basead.b.e.a(this.f11139e)) {
-                if (xVar.f14168o.J() == 0) {
+            if (i == 2 && !com.anythink.basead.b.e.a(this.f11925e)) {
+                if (xVar.f14954o.J() == 0) {
                     layoutParams2.setMargins(a9, 0, 0, q.a(context, 48.0f));
                 } else {
                     layoutParams2.setMargins(a9, 0, 0, q.a(context, 86.0f));
                 }
             }
-            this.f11239b.setLayoutParams(layoutParams2);
-            a(this.f11238a, xVar.f14168o.J() != 1);
-            a(this.f11239b, xVar.f14168o.J() != 1);
-        } else if (i6 == 3) {
+            this.f12025b.setLayoutParams(layoutParams2);
+            a(this.f12024a, xVar.f14954o.J() != 1);
+            a(this.f12025b, xVar.f14954o.J() != 1);
+        } else if (i4 == 3) {
             RelativeLayout.LayoutParams layoutParams3 = new RelativeLayout.LayoutParams(-2, -2);
-            boolean z6 = (this.f11140f.f14168o.au() == 1 && !TextUtils.isEmpty(this.f11140f.f14168o.aw())) || this.f11140f.f14168o.ah() || this.f11140f.f14168o.ar();
-            if (this.f11139e.n()) {
-                if (!z6) {
-                    this.f11238a = new ShakeThumbView(context);
+            boolean z9 = (this.f11926f.f14954o.au() == 1 && !TextUtils.isEmpty(this.f11926f.f14954o.aw())) || this.f11926f.f14954o.ah() || this.f11926f.f14954o.ar();
+            if (this.f11925e.n()) {
+                if (!z9) {
+                    this.f12024a = new ShakeThumbView(context);
                     layoutParams3.addRule(13);
-                    this.f11238a.setPadding(0, 0, 0, q.a(context, 26.0f));
+                    this.f12024a.setPadding(0, 0, 0, q.a(context, 26.0f));
                 } else {
-                    this.f11238a = new ShakeBorderThumbView(context);
+                    this.f12024a = new ShakeBorderThumbView(context);
                     layoutParams3.addRule(11);
                     layoutParams3.addRule(15);
                 }
-            } else if (BaseSdkSplashATView.isSinglePicture(this.f11139e, this.f11140f.f14168o)) {
-                this.f11238a = new ShakeView(context);
+            } else if (BaseSdkSplashATView.isSinglePicture(this.f11925e, this.f11926f.f14954o)) {
+                this.f12024a = new ShakeView(context);
                 layoutParams3.addRule(14);
                 layoutParams3.addRule(12);
-                int a10 = this.f11140f.f14168o.C() == 2 ? q.a(context, 46.0f) : q.a(context, 63.0f);
-                if (this.f11140f.f14168o.ar()) {
+                int a10 = this.f11926f.f14954o.C() == 2 ? q.a(context, 46.0f) : q.a(context, 63.0f);
+                if (this.f11926f.f14954o.ar()) {
                     a10 = q.a(context, 100.0f);
                 }
                 if (wVar.b() == 4) {
                     String directlySplashAdShakeIconString = ATSDKGlobalSetting.getDirectlySplashAdShakeIconString();
                     if (!TextUtils.isEmpty(directlySplashAdShakeIconString)) {
-                        ((ShakeView) this.f11238a).setShakeHintText(directlySplashAdShakeIconString);
+                        ((ShakeView) this.f12024a).setShakeHintText(directlySplashAdShakeIconString);
                     }
                     View directlySplashShakeButton = ATSDKGlobalSetting.getDirectlySplashShakeButton();
                     if (directlySplashShakeButton != null) {
-                        ((ShakeView) this.f11238a).replaceShakeCTAButton(directlySplashShakeButton);
+                        ((ShakeView) this.f12024a).replaceShakeCTAButton(directlySplashShakeButton);
                     }
                 }
-                ((ShakeView) this.f11238a).setNeedHideShakeIcon(z6);
+                ((ShakeView) this.f12024a).setNeedHideShakeIcon(z9);
                 layoutParams3.setMargins(0, 0, 0, a10);
-                z3 = true;
-                this.f11238a.setLayoutParams(layoutParams3);
-                BaseShakeView baseShakeView = this.f11238a;
-                if (!z3 && xVar.f14168o.J() == 1) {
+                z6 = true;
+                this.f12024a.setLayoutParams(layoutParams3);
+                BaseShakeView baseShakeView = this.f12024a;
+                if (!z6 && xVar.f14954o.J() == 1) {
                     r7 = false;
                 }
                 a(baseShakeView, r7);
-            } else if (z6 && this.f11140f.f14168o.C() != 1) {
-                this.f11238a = new ShakeBorderThumbView(context);
+            } else if (z9 && this.f11926f.f14954o.C() != 1) {
+                this.f12024a = new ShakeBorderThumbView(context);
                 layoutParams3.addRule(11);
                 layoutParams3.addRule(15);
             } else {
-                this.f11238a = new ShakeThumbView(context);
+                this.f12024a = new ShakeThumbView(context);
                 layoutParams3.addRule(13);
-                if (this.f11140f.f14168o.C() == 2) {
-                    this.f11238a.setPadding(0, 0, 0, q.a(context, 26.0f));
+                if (this.f11926f.f14954o.C() == 2) {
+                    this.f12024a.setPadding(0, 0, 0, q.a(context, 26.0f));
                 }
             }
-            z3 = false;
-            this.f11238a.setLayoutParams(layoutParams3);
-            BaseShakeView baseShakeView2 = this.f11238a;
-            if (!z3) {
+            z6 = false;
+            this.f12024a.setLayoutParams(layoutParams3);
+            BaseShakeView baseShakeView2 = this.f12024a;
+            if (!z6) {
                 r7 = false;
             }
             a(baseShakeView2, r7);
-        } else if (i6 == 5 || i6 == 6) {
-            this.f11238a = new ShakeNativeBorderThumbView(context);
-            this.f11238a.setLayoutParams(new ViewGroup.LayoutParams(-2, -2));
-            a(this.f11238a, xVar.f14168o.J() != 1);
-        } else if (i6 == 100) {
+        } else if (i4 == 5 || i4 == 6) {
+            this.f12024a = new ShakeNativeBorderThumbView(context);
+            this.f12024a.setLayoutParams(new ViewGroup.LayoutParams(-2, -2));
+            a(this.f12024a, xVar.f14954o.J() != 1);
+        } else if (i4 == 100) {
             RelativeLayout.LayoutParams layoutParams4 = new RelativeLayout.LayoutParams(-2, -2);
-            this.f11238a = new ShakeBorderThumbView(context);
+            this.f12024a = new ShakeBorderThumbView(context);
             layoutParams4.addRule(13);
-            this.f11238a.setAlpha(0.0f);
-            this.f11238a.setLayoutParams(layoutParams4);
-            a(this.f11238a, false);
+            this.f12024a.setAlpha(0.0f);
+            this.f12024a.setLayoutParams(layoutParams4);
+            a(this.f12024a, false);
         }
-        BaseShakeView baseShakeView3 = this.f11238a;
+        BaseShakeView baseShakeView3 = this.f12024a;
         if (baseShakeView3 != null) {
-            baseShakeView3.setShakeSetting(this.f11140f.f14168o, this.f11139e.K());
+            baseShakeView3.setShakeSetting(this.f11926f.f14954o, this.f11925e.K());
         }
-        BaseShakeView baseShakeView4 = this.f11239b;
+        BaseShakeView baseShakeView4 = this.f12025b;
         if (baseShakeView4 != null) {
-            baseShakeView4.setShakeSetting(this.f11140f.f14168o, this.f11139e.K());
+            baseShakeView4.setShakeSetting(this.f11926f.f14954o, this.f11925e.K());
         }
     }
 
     public final boolean b() {
-        if (!com.anythink.basead.ui.f.b.a(this.f11245p, this.f11140f)) {
+        if (!com.anythink.basead.ui.f.b.a(this.f12031p, this.f11926f)) {
             return false;
         }
-        int i = this.f11142h;
+        int i = this.f11928h;
         if (i == 1 || i == 2) {
-            return this.f11243n;
+            return this.f12029n;
         }
-        return (i == 3 && this.f11244o) ? false : true;
+        return (i == 3 && this.f12030o) ? false : true;
     }
 
     @Override // com.anythink.basead.ui.improveclick.c
@@ -398,7 +398,7 @@ public final class j extends c {
                     return;
                 }
                 if (i == 106) {
-                    if (this.f11142h == 3 && com.anythink.basead.b.e.b(this.f11139e)) {
+                    if (this.f11928h == 3 && com.anythink.basead.b.e.b(this.f11925e)) {
                         b(map);
                         return;
                     }
@@ -410,7 +410,7 @@ public final class j extends c {
                         return;
                     }
                     if (i == 303) {
-                        if (this.f11142h == 100) {
+                        if (this.f11928h == 100) {
                             b(map);
                             return;
                         }
@@ -419,34 +419,34 @@ public final class j extends c {
                     if (i != 304) {
                         switch (i) {
                             case 110:
-                                this.f11243n = true;
+                                this.f12029n = true;
                                 break;
                             case 111:
-                                this.f11243n = false;
+                                this.f12029n = false;
                                 break;
                             case 112:
                                 break;
                             default:
                                 switch (i) {
                                     case 114:
-                                        this.f11245p = System.currentTimeMillis();
-                                        Object obj = map.get(g.a.f11166a);
-                                        boolean z3 = (obj instanceof Integer) && ((Integer) obj).intValue() == 1;
-                                        if (z3 && (baseShakeView = this.f11239b) != null) {
+                                        this.f12031p = System.currentTimeMillis();
+                                        Object obj = map.get(g.a.f11952a);
+                                        boolean z6 = (obj instanceof Integer) && ((Integer) obj).intValue() == 1;
+                                        if (z6 && (baseShakeView = this.f12025b) != null) {
                                             ViewGroup.LayoutParams layoutParams = baseShakeView.getLayoutParams();
-                                            int a9 = q.a(this.f11138d, 12.0f);
+                                            int a9 = q.a(this.f11924d, 12.0f);
                                             if (layoutParams instanceof RelativeLayout.LayoutParams) {
-                                                ((RelativeLayout.LayoutParams) layoutParams).setMargins(a9, 0, 0, q.a(this.f11138d, 48.0f));
+                                                ((RelativeLayout.LayoutParams) layoutParams).setMargins(a9, 0, 0, q.a(this.f11924d, 48.0f));
                                             }
                                         }
-                                        int i6 = this.f11142h;
-                                        if (i6 == 1) {
+                                        int i4 = this.f11928h;
+                                        if (i4 == 1) {
                                             b(map);
                                             c();
                                             break;
-                                        } else if (!z3 && (i6 != 2 || com.anythink.basead.b.e.a(this.f11139e))) {
-                                            int i9 = this.f11142h;
-                                            if (i9 == 5 || i9 == 6) {
+                                        } else if (!z6 && (i4 != 2 || com.anythink.basead.b.e.a(this.f11925e))) {
+                                            int i6 = this.f11928h;
+                                            if (i6 == 5 || i6 == 6) {
                                                 b(map);
                                                 break;
                                             }
@@ -457,10 +457,10 @@ public final class j extends c {
                                         }
                                         break;
                                     case 115:
-                                        this.f11244o = true;
+                                        this.f12030o = true;
                                         break;
                                     case 116:
-                                        if (this.f11142h == 3 && !com.anythink.basead.b.e.b(this.f11139e)) {
+                                        if (this.f11928h == 3 && !com.anythink.basead.b.e.b(this.f11925e)) {
                                             b(map);
                                             break;
                                         }
@@ -469,10 +469,10 @@ public final class j extends c {
                         }
                         return;
                     }
-                    if (this.f11142h != 100) {
+                    if (this.f11928h != 100) {
                         return;
                     }
-                } else if (this.f11142h != 3 || !com.anythink.basead.b.e.b(this.f11139e, this.f11140f)) {
+                } else if (this.f11928h != 3 || !com.anythink.basead.b.e.b(this.f11925e, this.f11926f)) {
                     return;
                 }
             } else if (!c.a(map)) {
@@ -481,25 +481,25 @@ public final class j extends c {
             e();
             return;
         }
-        this.f11242m = true;
-        if (this.f11142h == 1 && com.anythink.basead.b.e.a(this.f11139e, this.f11140f)) {
+        this.f12028m = true;
+        if (this.f11928h == 1 && com.anythink.basead.b.e.a(this.f11925e, this.f11926f)) {
             e();
-            if (this.f11239b == null || this.f11142h != 1 || com.anythink.basead.b.e.b(this.f11139e) || com.anythink.basead.b.e.a(this.f11139e)) {
+            if (this.f12025b == null || this.f11928h != 1 || com.anythink.basead.b.e.b(this.f11925e) || com.anythink.basead.b.e.a(this.f11925e)) {
                 return;
             }
-            if (this.f11140f.f14168o.J() == 0 || com.anythink.core.common.v.m.f(this.f11138d) == 2) {
-                this.f11239b.setAlpha(1.0f);
-                this.f11239b.setVisibility(0);
+            if (this.f11926f.f14954o.J() == 0 || com.anythink.core.common.v.m.f(this.f11924d) == 2) {
+                this.f12025b.setAlpha(1.0f);
+                this.f12025b.setVisibility(0);
             }
         }
     }
 
-    private void a(BaseShakeView baseShakeView, boolean z3) {
-        if (z3) {
+    private void a(BaseShakeView baseShakeView, boolean z6) {
+        if (z6) {
             baseShakeView.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.improveclick.j.2
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    c.a aVar = j.this.f11144k;
+                    c.a aVar = j.this.f11930k;
                     if (aVar != null) {
                         aVar.a(1, 5);
                     }
@@ -512,13 +512,13 @@ public final class j extends c {
                 if (!j.this.b()) {
                     return false;
                 }
-                c.a aVar = j.this.f11144k;
+                c.a aVar = j.this.f11930k;
                 if (aVar == null) {
                     return true;
                 }
                 aVar.a(4, 5);
                 return true;
             }
-        }, this.f11140f.f14168o);
+        }, this.f11926f.f14954o);
     }
 }

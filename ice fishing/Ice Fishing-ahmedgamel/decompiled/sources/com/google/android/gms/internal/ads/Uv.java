@@ -16,148 +16,148 @@ import org.json.JSONObject;
 public final class Uv {
 
     /* renamed from: a, reason: collision with root package name */
-    public final C3 f28036a;
+    public final C3 f28833a;
 
     /* renamed from: d, reason: collision with root package name */
-    public AbstractC3645nw f28039d;
+    public AbstractC3722ow f28836d;
 
     /* renamed from: g, reason: collision with root package name */
-    public final String f28042g;
+    public final String f28839g;
 
     /* renamed from: b, reason: collision with root package name */
-    public final C3375iw f28037b = new C3375iw();
+    public final C3452jw f28834b = new C3452jw();
 
     /* renamed from: e, reason: collision with root package name */
-    public boolean f28040e = false;
+    public boolean f28837e = false;
 
     /* renamed from: f, reason: collision with root package name */
-    public boolean f28041f = false;
+    public boolean f28838f = false;
 
     /* renamed from: c, reason: collision with root package name */
-    public Aw f28038c = new Aw(null);
+    public Aw f28835c = new Aw(null);
 
     public Uv(Xw xw, C3 c32, String str) {
-        this.f28036a = c32;
-        this.f28042g = str;
+        this.f28833a = c32;
+        this.f28839g = str;
         Tv tv = Tv.HTML;
-        Tv tv2 = (Tv) c32.f24026z;
+        Tv tv2 = (Tv) c32.f24789z;
         if (tv2 == tv || tv2 == Tv.JAVASCRIPT) {
-            C3699ow c3699ow = new C3699ow(str);
-            WebView webView = (WebView) c32.f24021u;
+            C3776pw c3776pw = new C3776pw(str);
+            WebView webView = (WebView) c32.f24784u;
             if (!webView.getSettings().getJavaScriptEnabled()) {
                 webView.getSettings().setJavaScriptEnabled(true);
             }
-            c3699ow.f32809b = new Aw(webView);
-            this.f28039d = c3699ow;
+            c3776pw.f33766b = new Aw(webView);
+            this.f28836d = c3776pw;
         } else {
-            this.f28039d = new C3860rw(str, Collections.unmodifiableMap((HashMap) c32.f24023w));
+            this.f28836d = new C3883rw(str, Collections.unmodifiableMap((HashMap) c32.f24786w));
         }
-        this.f28039d.a();
-        C3161ew.f30001c.f30002a.add(this);
-        AbstractC3645nw abstractC3645nw = this.f28039d;
-        V2 v22 = V2.f28077z;
-        WebView c9 = abstractC3645nw.c();
+        this.f28836d.a();
+        C3238fw.f31233c.f31234a.add(this);
+        AbstractC3722ow abstractC3722ow = this.f28836d;
+        V2 v22 = V2.f28874z;
+        WebView c9 = abstractC3722ow.c();
         JSONObject jSONObject = new JSONObject();
-        AbstractC3914sw.b(jSONObject, "impressionOwner", (Zv) xw.f28607u);
-        AbstractC3914sw.b(jSONObject, "mediaEventsOwner", (Zv) xw.f28608v);
-        AbstractC3914sw.b(jSONObject, "creativeType", (Vv) xw.f28609w);
-        AbstractC3914sw.b(jSONObject, "impressionType", (Xv) xw.f28610x);
-        AbstractC3914sw.b(jSONObject, "isolateVerificationScripts", Boolean.valueOf(xw.f28606n));
-        v22.z(c9, "init", jSONObject, abstractC3645nw.f32808a);
+        AbstractC3937sw.b(jSONObject, "impressionOwner", (EnumC2970aw) xw.f29384u);
+        AbstractC3937sw.b(jSONObject, "mediaEventsOwner", (EnumC2970aw) xw.f29385v);
+        AbstractC3937sw.b(jSONObject, "creativeType", (Vv) xw.f29386w);
+        AbstractC3937sw.b(jSONObject, "impressionType", (Yv) xw.f29387x);
+        AbstractC3937sw.b(jSONObject, "isolateVerificationScripts", Boolean.valueOf(xw.f29383n));
+        v22.z(c9, "init", jSONObject, abstractC3722ow.f33765a);
     }
 
     public final void a() {
-        if (this.f28040e || this.f28039d == null) {
+        if (this.f28837e || this.f28836d == null) {
             return;
         }
-        this.f28040e = true;
-        ArrayList arrayList = C3161ew.f30001c.f30003b;
-        boolean z3 = arrayList.size() > 0;
+        this.f28837e = true;
+        ArrayList arrayList = C3238fw.f31233c.f31235b;
+        boolean z6 = arrayList.size() > 0;
         arrayList.add(this);
-        if (!z3) {
-            C3483kw b9 = C3483kw.b();
+        if (!z6) {
+            C3560lw b9 = C3560lw.b();
             b9.getClass();
-            C3107dw c3107dw = C3107dw.f29860w;
-            c3107dw.f30678v = b9;
-            c3107dw.f30676n = true;
+            C3184ew c3184ew = C3184ew.f30790w;
+            c3184ew.f31746v = b9;
+            c3184ew.f31744n = true;
             ActivityManager.RunningAppProcessInfo runningAppProcessInfo = new ActivityManager.RunningAppProcessInfo();
             ActivityManager.getMyMemoryState(runningAppProcessInfo);
-            boolean z6 = runningAppProcessInfo.importance == 100 || c3107dw.a();
-            c3107dw.f30677u = z6;
-            c3107dw.b(z6);
-            C4076vw.f34760g.getClass();
-            C4076vw.b();
-            C3001bw c3001bw = b9.f31668b;
-            c3001bw.getClass();
-            c3001bw.f29371f.submit(new RunnableC3470kj(c3001bw));
-            c3001bw.f29367b.getContentResolver().registerContentObserver(Settings.System.CONTENT_URI, true, c3001bw);
+            boolean z9 = runningAppProcessInfo.importance == 100 || c3184ew.a();
+            c3184ew.f31745u = z9;
+            c3184ew.b(z9);
+            C4099vw.f35529g.getClass();
+            C4099vw.b();
+            C3077cw c3077cw = b9.f32647b;
+            c3077cw.getClass();
+            c3077cw.f30418f.submit(new RunnableC3493kj(c3077cw));
+            c3077cw.f30414b.getContentResolver().registerContentObserver(Settings.System.CONTENT_URI, true, c3077cw);
         }
-        float f3 = C3483kw.b().f31667a;
-        AbstractC3645nw abstractC3645nw = this.f28039d;
-        V2.f28077z.z(abstractC3645nw.c(), "setDeviceVolume", Float.valueOf(f3), abstractC3645nw.f32808a);
-        AbstractC3645nw abstractC3645nw2 = this.f28039d;
-        Date date = (Date) C3054cw.f29643e.f29646c;
-        abstractC3645nw2.f(date != null ? (Date) date.clone() : null);
-        this.f28039d.d(this, this.f28036a);
+        float f2 = C3560lw.b().f32646a;
+        AbstractC3722ow abstractC3722ow = this.f28836d;
+        V2.f28874z.z(abstractC3722ow.c(), "setDeviceVolume", Float.valueOf(f2), abstractC3722ow.f33765a);
+        AbstractC3722ow abstractC3722ow2 = this.f28836d;
+        Date date = (Date) C3130dw.f30648e.f30651c;
+        abstractC3722ow2.f(date != null ? (Date) date.clone() : null);
+        this.f28836d.d(this, this.f28833a);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     public final void b(View view) {
-        if (this.f28041f || ((View) this.f28038c.get()) == view) {
+        if (this.f28838f || ((View) this.f28835c.get()) == view) {
             return;
         }
-        this.f28038c = new Aw(view);
-        AbstractC3645nw abstractC3645nw = this.f28039d;
-        abstractC3645nw.getClass();
-        abstractC3645nw.f32810c = System.nanoTime();
-        abstractC3645nw.f32811d = 1;
-        Collection<Uv> unmodifiableCollection = Collections.unmodifiableCollection(C3161ew.f30001c.f30002a);
+        this.f28835c = new Aw(view);
+        AbstractC3722ow abstractC3722ow = this.f28836d;
+        abstractC3722ow.getClass();
+        abstractC3722ow.f33767c = System.nanoTime();
+        abstractC3722ow.f33768d = 1;
+        Collection<Uv> unmodifiableCollection = Collections.unmodifiableCollection(C3238fw.f31233c.f31234a);
         if (unmodifiableCollection == null || unmodifiableCollection.isEmpty()) {
             return;
         }
         for (Uv uv : unmodifiableCollection) {
-            if (uv != this && ((View) uv.f28038c.get()) == view) {
-                uv.f28038c.clear();
+            if (uv != this && ((View) uv.f28835c.get()) == view) {
+                uv.f28835c.clear();
             }
         }
     }
 
     public final void c() {
-        if (this.f28041f) {
+        if (this.f28838f) {
             return;
         }
-        this.f28038c.clear();
-        if (!this.f28041f) {
-            this.f28037b.f31136a.clear();
+        this.f28835c.clear();
+        if (!this.f28838f) {
+            this.f28834b.f32130a.clear();
         }
-        this.f28041f = true;
-        AbstractC3645nw abstractC3645nw = this.f28039d;
-        V2.f28077z.z(abstractC3645nw.c(), "finishSession", abstractC3645nw.f32808a);
-        C3161ew c3161ew = C3161ew.f30001c;
-        ArrayList arrayList = c3161ew.f30002a;
-        ArrayList arrayList2 = c3161ew.f30003b;
-        boolean z3 = arrayList2.size() > 0;
+        this.f28838f = true;
+        AbstractC3722ow abstractC3722ow = this.f28836d;
+        V2.f28874z.z(abstractC3722ow.c(), "finishSession", abstractC3722ow.f33765a);
+        C3238fw c3238fw = C3238fw.f31233c;
+        ArrayList arrayList = c3238fw.f31234a;
+        ArrayList arrayList2 = c3238fw.f31235b;
+        boolean z6 = arrayList2.size() > 0;
         arrayList.remove(this);
         arrayList2.remove(this);
-        if (z3 && arrayList2.size() <= 0) {
-            C3483kw b9 = C3483kw.b();
+        if (z6 && arrayList2.size() <= 0) {
+            C3560lw b9 = C3560lw.b();
             b9.getClass();
-            C4076vw c4076vw = C4076vw.f34760g;
-            c4076vw.getClass();
-            Handler handler = C4076vw.i;
+            C4099vw c4099vw = C4099vw.f35529g;
+            c4099vw.getClass();
+            Handler handler = C4099vw.i;
             if (handler != null) {
-                handler.removeCallbacks(C4076vw.f34763k);
-                C4076vw.i = null;
+                handler.removeCallbacks(C4099vw.f35532k);
+                C4099vw.i = null;
             }
-            c4076vw.f34764a.clear();
-            C4076vw.f34761h.post(new RunnableC3807qw(c4076vw));
-            C3107dw c3107dw = C3107dw.f29860w;
-            c3107dw.f30676n = false;
-            c3107dw.f30678v = null;
-            C3001bw c3001bw = b9.f31668b;
-            c3001bw.f29367b.getContentResolver().unregisterContentObserver(c3001bw);
+            c4099vw.f35533a.clear();
+            C4099vw.f35530h.post(new RunnableC3830qw(c4099vw));
+            C3184ew c3184ew = C3184ew.f30790w;
+            c3184ew.f31744n = false;
+            c3184ew.f31746v = null;
+            C3077cw c3077cw = b9.f32647b;
+            c3077cw.f30414b.getContentResolver().unregisterContentObserver(c3077cw);
         }
-        this.f28039d.b();
-        this.f28039d = null;
+        this.f28836d.b();
+        this.f28836d = null;
     }
 }

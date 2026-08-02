@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadFactory;
 public final /* synthetic */ class It implements ThreadFactory {
     @Override // java.util.concurrent.ThreadFactory
     public final /* synthetic */ Thread newThread(Runnable runnable) {
-        String str = AbstractC3159eu.f29993a;
+        String str = AbstractC3182eu.f30782a;
         return new Thread(runnable, "ExoPlayer:AudioTrackReleaseThread");
     }
 }

@@ -7,14 +7,14 @@ import com.anythink.basead.exoplayer.b;
 import com.facebook.ads.androidx.media3.common.Timeline;
 import com.instagram.common.viewpoint.core.AR;
 import com.instagram.common.viewpoint.core.AS;
-import com.instagram.common.viewpoint.core.AbstractC06243y;
+import com.instagram.common.viewpoint.core.AbstractC06443y;
 import com.instagram.common.viewpoint.core.AnonymousClass22;
 import com.instagram.common.viewpoint.core.AnonymousClass23;
 import com.instagram.common.viewpoint.core.AnonymousClass24;
 import com.instagram.common.viewpoint.core.AnonymousClass43;
 import com.instagram.common.viewpoint.core.BP;
-import com.instagram.common.viewpoint.core.C2365pj;
-import com.instagram.common.viewpoint.core.C2367pl;
+import com.instagram.common.viewpoint.core.C2385pj;
+import com.instagram.common.viewpoint.core.C2387pl;
 import com.instagram.common.viewpoint.core.C2K;
 import com.instagram.common.viewpoint.core.C5C;
 
@@ -40,17 +40,17 @@ public abstract class Timeline implements AnonymousClass24 {
 
     public abstract int A0A(Object obj);
 
-    public abstract C2367pl A0I(int i, C2367pl c2367pl, boolean z3);
+    public abstract C2387pl A0I(int i, C2387pl c2387pl, boolean z6);
 
-    public abstract C2365pj A0L(int i, C2365pj c2365pj, long j6);
+    public abstract C2385pj A0L(int i, C2385pj c2385pj, long j6);
 
     public abstract Object A0M(int i);
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BP != com.google.common.collect.ImmutableList<com.facebook.ads.androidx.media3.common.Timeline$Period> */
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BP != com.google.common.collect.ImmutableList<com.facebook.ads.androidx.media3.common.Timeline$Window> */
     public static AR A02(Bundle bundle) {
-        BP A042 = A04(C2365pj.A0J, AnonymousClass43.A00(bundle, A05));
-        BP A043 = A04(C2367pl.A08, AnonymousClass43.A00(bundle, A03));
+        BP A042 = A04(C2385pj.A0J, AnonymousClass43.A00(bundle, A05));
+        BP A043 = A04(C2387pl.A08, AnonymousClass43.A00(bundle, A03));
         int[] intArray = bundle.getIntArray(A04);
         if (intArray == null) {
             intArray = A05(A042.size());
@@ -74,10 +74,10 @@ public abstract class Timeline implements AnonymousClass24 {
 
     public static int[] A05(int i) {
         int[] iArr = new int[i];
-        for (int i6 = 0; i6 < i; i6++) {
-            iArr[i6] = i6;
-            int i9 = A00[1].charAt(20);
-            if (i9 == 50) {
+        for (int i4 = 0; i4 < i; i4++) {
+            iArr[i4] = i4;
+            int i6 = A00[1].charAt(20);
+            if (i6 == 50) {
                 throw new RuntimeException();
             }
             String[] strArr = A00;
@@ -87,24 +87,24 @@ public abstract class Timeline implements AnonymousClass24 {
         return iArr;
     }
 
-    public int A08(int i, int i6, boolean z3) {
-        switch (i6) {
+    public int A08(int i, int i4, boolean z6) {
+        switch (i4) {
             case 0:
-                if (i == A0C(z3)) {
+                if (i == A0C(z6)) {
                     return -1;
                 }
                 return i + 1;
             case 1:
                 return i;
             case 2:
-                int A0C = A0C(z3);
+                int A0C = A0C(z6);
                 String[] strArr = A00;
                 if (strArr[3].charAt(14) != strArr[5].charAt(14)) {
                     throw new RuntimeException();
                 }
                 A00[1] = "R0HEAX03GiDQUcMP0CiDD2yYG3qNGv8H";
                 if (i == A0C) {
-                    return A0B(z3);
+                    return A0B(z6);
                 }
                 return i + 1;
             default:
@@ -112,26 +112,26 @@ public abstract class Timeline implements AnonymousClass24 {
         }
     }
 
-    public final int A09(int i, C2367pl c2367pl, C2365pj c2365pj, int i6, boolean z3) {
-        int i9 = A0H(i, c2367pl).A00;
-        int windowIndex = A0K(i9, c2365pj).A01;
+    public final int A09(int i, C2387pl c2387pl, C2385pj c2385pj, int i4, boolean z6) {
+        int i6 = A0H(i, c2387pl).A00;
+        int windowIndex = A0K(i6, c2385pj).A01;
         if (windowIndex == i) {
-            int nextWindowIndex = A08(i9, i6, z3);
+            int nextWindowIndex = A08(i6, i4, z6);
             if (nextWindowIndex == -1) {
                 return -1;
             }
-            int windowIndex2 = A0K(nextWindowIndex, c2365pj).A00;
+            int windowIndex2 = A0K(nextWindowIndex, c2385pj).A00;
             return windowIndex2;
         }
         int windowIndex3 = i + 1;
         return windowIndex3;
     }
 
-    public int A0B(boolean z3) {
+    public int A0B(boolean z6) {
         return A0N() ? -1 : 0;
     }
 
-    public int A0C(boolean z3) {
+    public int A0C(boolean z6) {
         if (A0N()) {
             return -1;
         }
@@ -139,64 +139,64 @@ public abstract class Timeline implements AnonymousClass24 {
     }
 
     @Deprecated
-    public final Pair<Object, Long> A0D(C2365pj c2365pj, C2367pl c2367pl, int i, long j6) {
-        return A0E(c2365pj, c2367pl, i, j6);
+    public final Pair<Object, Long> A0D(C2385pj c2385pj, C2387pl c2387pl, int i, long j6) {
+        return A0E(c2385pj, c2387pl, i, j6);
     }
 
-    public final Pair<Object, Long> A0E(C2365pj c2365pj, C2367pl c2367pl, int i, long j6) {
-        return (Pair) AbstractC06243y.A01(A0G(c2365pj, c2367pl, i, j6, 0L));
+    public final Pair<Object, Long> A0E(C2385pj c2385pj, C2387pl c2387pl, int i, long j6) {
+        return (Pair) AbstractC06443y.A01(A0G(c2385pj, c2387pl, i, j6, 0L));
     }
 
     @Deprecated
-    public final Pair<Object, Long> A0F(C2365pj c2365pj, C2367pl c2367pl, int i, long j6, long j9) {
-        return A0G(c2365pj, c2367pl, i, j6, j9);
+    public final Pair<Object, Long> A0F(C2385pj c2385pj, C2387pl c2387pl, int i, long j6, long j9) {
+        return A0G(c2385pj, c2387pl, i, j6, j9);
     }
 
-    public final Pair<Object, Long> A0G(C2365pj c2365pj, C2367pl c2367pl, int i, long j6, long j9) {
-        AbstractC06243y.A00(i, 0, A07());
-        A0L(i, c2365pj, j9);
-        if (j6 == b.f6382b) {
-            j6 = c2365pj.A05();
-            if (j6 == b.f6382b) {
+    public final Pair<Object, Long> A0G(C2385pj c2385pj, C2387pl c2387pl, int i, long j6, long j9) {
+        AbstractC06443y.A00(i, 0, A07());
+        A0L(i, c2385pj, j9);
+        if (j6 == b.f7168b) {
+            j6 = c2385pj.A05();
+            if (j6 == b.f7168b) {
                 return null;
             }
         }
-        int i6 = c2365pj.A00;
-        A0H(i6, c2367pl);
-        while (i6 < c2365pj.A01 && c2367pl.A02 != j6 && A0H(i6 + 1, c2367pl).A02 <= j6) {
-            i6++;
+        int i4 = c2385pj.A00;
+        A0H(i4, c2387pl);
+        while (i4 < c2385pj.A01 && c2387pl.A02 != j6 && A0H(i4 + 1, c2387pl).A02 <= j6) {
+            i4++;
         }
-        A0I(i6, c2367pl, true);
-        long j10 = j6 - c2367pl.A02;
-        if (c2367pl.A01 != b.f6382b) {
-            long j11 = c2367pl.A01;
+        A0I(i4, c2387pl, true);
+        long j10 = j6 - c2387pl.A02;
+        if (c2387pl.A01 != b.f7168b) {
+            long j11 = c2387pl.A01;
             if (A00[1].charAt(20) == '2') {
                 throw new RuntimeException();
             }
             A00[1] = "slEcDLMOMSnRw8lzrIQwxe9jf9tcgTic";
             j10 = Math.min(j10, j11 - 1);
         }
-        return Pair.create(AbstractC06243y.A01(c2367pl.A04), Long.valueOf(Math.max(0L, j10)));
+        return Pair.create(AbstractC06443y.A01(c2387pl.A04), Long.valueOf(Math.max(0L, j10)));
     }
 
-    public final C2367pl A0H(int i, C2367pl c2367pl) {
-        return A0I(i, c2367pl, false);
+    public final C2387pl A0H(int i, C2387pl c2387pl) {
+        return A0I(i, c2387pl, false);
     }
 
-    public C2367pl A0J(Object obj, C2367pl c2367pl) {
-        return A0I(A0A(obj), c2367pl, true);
+    public C2387pl A0J(Object obj, C2387pl c2387pl) {
+        return A0I(A0A(obj), c2387pl, true);
     }
 
-    public final C2365pj A0K(int i, C2365pj c2365pj) {
-        return A0L(i, c2365pj, 0L);
+    public final C2385pj A0K(int i, C2385pj c2385pj) {
+        return A0L(i, c2385pj, 0L);
     }
 
     public final boolean A0N() {
         return A07() == 0;
     }
 
-    public final boolean A0O(int i, C2367pl c2367pl, C2365pj c2365pj, int i6, boolean z3) {
-        return A09(i, c2367pl, c2365pj, i6, z3) == -1;
+    public final boolean A0O(int i, C2387pl c2387pl, C2385pj c2385pj, int i4, boolean z6) {
+        return A09(i, c2387pl, c2385pj, i4, z6) == -1;
     }
 
     public final boolean equals(Object obj) {
@@ -211,17 +211,17 @@ public abstract class Timeline implements AnonymousClass24 {
         if (timeline.A07() != A07() || timeline.A06() != A06()) {
             return false;
         }
-        C2365pj c2365pj = new C2365pj();
-        C2367pl c2367pl = new C2367pl();
-        C2365pj window = new C2365pj();
-        C2367pl otherPeriod = new C2367pl();
+        C2385pj c2385pj = new C2385pj();
+        C2387pl c2387pl = new C2387pl();
+        C2385pj window = new C2385pj();
+        C2387pl otherPeriod = new C2387pl();
         for (int i = 0; i < A07(); i++) {
-            if (!A0K(i, c2365pj).equals(timeline.A0K(i, window))) {
+            if (!A0K(i, c2385pj).equals(timeline.A0K(i, window))) {
                 return false;
             }
         }
-        for (int i6 = 0; i6 < A06(); i6++) {
-            boolean equals = A0I(i6, c2367pl, true).equals(timeline.A0I(i6, otherPeriod, true));
+        for (int i4 = 0; i4 < A06(); i4++) {
+            boolean equals = A0I(i4, c2387pl, true).equals(timeline.A0I(i4, otherPeriod, true));
             if (A00[6].length() != 11) {
                 throw new RuntimeException();
             }
@@ -247,25 +247,25 @@ public abstract class Timeline implements AnonymousClass24 {
     }
 
     public final int hashCode() {
-        C2365pj c2365pj = new C2365pj();
-        C2367pl c2367pl = new C2367pl();
+        C2385pj c2385pj = new C2385pj();
+        C2387pl c2387pl = new C2387pl();
         int result = 7 * 31;
         int i = result + A07();
-        for (int i6 = 0; i6 < A07(); i6++) {
-            C2365pj window = A0K(i6, c2365pj);
+        for (int i4 = 0; i4 < A07(); i4++) {
+            C2385pj window = A0K(i4, c2385pj);
             i = (i * 31) + window.hashCode();
         }
         int result2 = i * 31;
-        int i9 = result2 + A06();
-        for (int i10 = 0; i10 < A06(); i10++) {
-            i9 = (i9 * 31) + A0I(i10, c2367pl, true).hashCode();
+        int i6 = result2 + A06();
+        for (int i9 = 0; i9 < A06(); i9++) {
+            i6 = (i6 * 31) + A0I(i9, c2387pl, true).hashCode();
         }
         int A0B = A0B(true);
         while (A0B != -1) {
-            int windowIndex = i9 * 31;
-            i9 = windowIndex + A0B;
+            int windowIndex = i6 * 31;
+            i6 = windowIndex + A0B;
             A0B = A08(A0B, 0, true);
         }
-        return i9;
+        return i6;
     }
 }

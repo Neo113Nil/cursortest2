@@ -1,6 +1,6 @@
 package com.google.android.gms.internal.consent_sdk;
 
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.Map;
 import java.util.Objects;
 
@@ -8,24 +8,24 @@ import java.util.Objects;
 public final class L2 implements Map.Entry, Comparable {
 
     /* renamed from: n, reason: collision with root package name */
-    public final Comparable f35565n;
+    public final Comparable f36334n;
 
     /* renamed from: u, reason: collision with root package name */
-    public Object f35566u;
+    public Object f36335u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final /* synthetic */ K2 f35567v;
+    public final /* synthetic */ K2 f36336v;
 
     public L2(K2 k22, Comparable comparable, Object obj) {
         Objects.requireNonNull(k22);
-        this.f35567v = k22;
-        this.f35565n = comparable;
-        this.f35566u = obj;
+        this.f36336v = k22;
+        this.f36334n = comparable;
+        this.f36335u = obj;
     }
 
     @Override // java.lang.Comparable
     public final /* bridge */ /* synthetic */ int compareTo(Object obj) {
-        return this.f35565n.compareTo(((L2) obj).f35565n);
+        return this.f36334n.compareTo(((L2) obj).f36334n);
     }
 
     @Override // java.util.Map.Entry
@@ -34,9 +34,9 @@ public final class L2 implements Map.Entry, Comparable {
             if (obj instanceof Map.Entry) {
                 Map.Entry entry = (Map.Entry) obj;
                 Object key = entry.getKey();
-                Comparable comparable = this.f35565n;
+                Comparable comparable = this.f36334n;
                 if (comparable == null ? key == null : comparable.equals(key)) {
-                    Object obj2 = this.f35566u;
+                    Object obj2 = this.f36335u;
                     Object value = entry.getValue();
                     if (obj2 == null ? value == null : obj2.equals(value)) {
                     }
@@ -49,31 +49,31 @@ public final class L2 implements Map.Entry, Comparable {
 
     @Override // java.util.Map.Entry
     public final /* synthetic */ Object getKey() {
-        return this.f35565n;
+        return this.f36334n;
     }
 
     @Override // java.util.Map.Entry
     public final Object getValue() {
-        return this.f35566u;
+        return this.f36335u;
     }
 
     @Override // java.util.Map.Entry
     public final int hashCode() {
-        Comparable comparable = this.f35565n;
+        Comparable comparable = this.f36334n;
         int hashCode = comparable == null ? 0 : comparable.hashCode();
-        Object obj = this.f35566u;
+        Object obj = this.f36335u;
         return (obj != null ? obj.hashCode() : 0) ^ hashCode;
     }
 
     @Override // java.util.Map.Entry
     public final Object setValue(Object obj) {
-        this.f35567v.g();
-        Object obj2 = this.f35566u;
-        this.f35566u = obj;
+        this.f36336v.g();
+        Object obj2 = this.f36335u;
+        this.f36335u = obj;
         return obj2;
     }
 
     public final String toString() {
-        return AbstractC4404f.g(String.valueOf(this.f35565n), "=", String.valueOf(this.f35566u));
+        return Wv.h(String.valueOf(this.f36334n), "=", String.valueOf(this.f36335u));
     }
 }

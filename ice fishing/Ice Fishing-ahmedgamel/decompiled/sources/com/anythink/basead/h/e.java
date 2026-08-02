@@ -23,34 +23,34 @@ import java.util.Map;
 public class e extends c {
 
     /* renamed from: a, reason: collision with root package name */
-    com.anythink.basead.g.a f9014a;
+    com.anythink.basead.g.a f9800a;
 
     /* renamed from: k, reason: collision with root package name */
-    com.anythink.core.common.v.a.c f9015k;
+    com.anythink.core.common.v.a.c f9801k;
 
     /* renamed from: l, reason: collision with root package name */
-    com.anythink.basead.b.c f9016l;
+    com.anythink.basead.b.c f9802l;
 
     /* renamed from: m, reason: collision with root package name */
-    View f9017m;
+    View f9803m;
 
     /* renamed from: n, reason: collision with root package name */
-    volatile boolean f9018n;
+    volatile boolean f9804n;
 
     /* renamed from: o, reason: collision with root package name */
-    View f9019o;
+    View f9805o;
 
     /* renamed from: p, reason: collision with root package name */
-    View.OnClickListener f9020p;
+    View.OnClickListener f9806p;
 
     /* renamed from: q, reason: collision with root package name */
-    View.OnClickListener f9021q;
+    View.OnClickListener f9807q;
 
     /* renamed from: r, reason: collision with root package name */
-    com.anythink.basead.ui.improveclick.a f9022r;
+    com.anythink.basead.ui.improveclick.a f9808r;
 
     /* renamed from: s, reason: collision with root package name */
-    private final String f9023s;
+    private final String f9809s;
 
     /* renamed from: com.anythink.basead.h.e$4, reason: invalid class name */
     public class AnonymousClass4 extends com.anythink.core.common.v.a.a {
@@ -69,8 +69,8 @@ public class e extends c {
         }
 
         @Override // com.anythink.basead.ui.improveclick.c.a
-        public final void a(int i, int i6) {
-            e.this.a(i, i6, false);
+        public final void a(int i, int i4) {
+            e.this.a(i, i4, false);
         }
     }
 
@@ -83,7 +83,7 @@ public class e extends c {
         @Override // com.anythink.basead.ui.improveclick.a
         public final ViewGroup.LayoutParams a() {
             FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-2, -2);
-            if (e.this.f9017m != null) {
+            if (e.this.f9803m != null) {
                 layoutParams.gravity = 81;
                 layoutParams.setMargins(0, 0, 0, 0);
             }
@@ -91,16 +91,16 @@ public class e extends c {
         }
     }
 
-    public e(Context context, x xVar, String str, boolean z3) {
-        super(context, xVar, str, z3);
-        this.f9023s = getClass().getSimpleName();
-        this.f9020p = new View.OnClickListener() { // from class: com.anythink.basead.h.e.1
+    public e(Context context, x xVar, String str, boolean z6) {
+        super(context, xVar, str, z6);
+        this.f9809s = getClass().getSimpleName();
+        this.f9806p = new View.OnClickListener() { // from class: com.anythink.basead.h.e.1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 e.this.a(view, false);
             }
         };
-        this.f9021q = new View.OnClickListener() { // from class: com.anythink.basead.h.e.2
+        this.f9807q = new View.OnClickListener() { // from class: com.anythink.basead.h.e.2
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 e.this.a(view, true);
@@ -114,14 +114,14 @@ public class e extends c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void s() {
-        if (this.f9018n) {
+        if (this.f9804n) {
             return;
         }
         a(114);
-        this.f9018n = true;
-        com.anythink.basead.h.a.b.a(this.f9003c).a(this.f9007g);
-        com.anythink.basead.b.b.a(8, this.f9007g, new j(this.f9004d, ""));
-        com.anythink.basead.g.a aVar = this.f9014a;
+        this.f9804n = true;
+        com.anythink.basead.h.a.b.a(this.f9789c).a(this.f9793g);
+        com.anythink.basead.b.b.a(8, this.f9793g, new j(this.f9790d, ""));
+        com.anythink.basead.g.a aVar = this.f9800a;
         if (aVar != null) {
             aVar.onAdShow(new com.anythink.basead.g.j());
         }
@@ -130,15 +130,15 @@ public class e extends c {
     private void t() {
         ay ayVar;
         x xVar;
-        View view = this.f9017m;
-        if (view == null || !(view instanceof ViewGroup) || (ayVar = this.f9007g) == null || (xVar = this.f9004d) == null) {
+        View view = this.f9803m;
+        if (view == null || !(view instanceof ViewGroup) || (ayVar = this.f9793g) == null || (xVar = this.f9790d) == null) {
             return;
         }
-        this.f9022r = new AnonymousClass6((ViewGroup) view, ayVar, xVar, new AnonymousClass5());
+        this.f9808r = new AnonymousClass6((ViewGroup) view, ayVar, xVar, new AnonymousClass5());
     }
 
     private int u() {
-        ay ayVar = this.f9007g;
+        ay ayVar = this.f9793g;
         if (ayVar != null) {
             return ayVar.ab();
         }
@@ -146,7 +146,7 @@ public class e extends c {
     }
 
     private int v() {
-        ay ayVar = this.f9007g;
+        ay ayVar = this.f9793g;
         if (ayVar != null) {
             return ayVar.ac();
         }
@@ -158,37 +158,37 @@ public class e extends c {
     }
 
     public final String b() {
-        ay ayVar = this.f9007g;
+        ay ayVar = this.f9793g;
         return ayVar != null ? ayVar.x() : "";
     }
 
     public final String g() {
-        ay ayVar = this.f9007g;
+        ay ayVar = this.f9793g;
         return ayVar != null ? ayVar.y() : "";
     }
 
     public final String h() {
-        ay ayVar = this.f9007g;
+        ay ayVar = this.f9793g;
         return ayVar != null ? ayVar.D() : "";
     }
 
     public final String i() {
-        ay ayVar = this.f9007g;
+        ay ayVar = this.f9793g;
         return ayVar != null ? ayVar.z() : "";
     }
 
     public final String j() {
-        ay ayVar = this.f9007g;
+        ay ayVar = this.f9793g;
         return ayVar != null ? ayVar.B() : "";
     }
 
     public final String k() {
-        ay ayVar = this.f9007g;
+        ay ayVar = this.f9793g;
         return ayVar != null ? ayVar.C() : "";
     }
 
     public final int m() {
-        ay ayVar = this.f9007g;
+        ay ayVar = this.f9793g;
         if (ayVar != null) {
             return ayVar.ab();
         }
@@ -196,7 +196,7 @@ public class e extends c {
     }
 
     public final int n() {
-        ay ayVar = this.f9007g;
+        ay ayVar = this.f9793g;
         if (ayVar != null) {
             return ayVar.ac();
         }
@@ -204,7 +204,7 @@ public class e extends c {
     }
 
     public final void o() {
-        com.anythink.core.common.v.a.c cVar = this.f9015k;
+        com.anythink.core.common.v.a.c cVar = this.f9801k;
         if (cVar != null) {
             cVar.a();
         }
@@ -213,21 +213,21 @@ public class e extends c {
     public final void p() {
         o();
         a(112);
-        this.f9014a = null;
-        com.anythink.basead.b.c cVar = this.f9016l;
+        this.f9800a = null;
+        com.anythink.basead.b.c cVar = this.f9802l;
         if (cVar != null) {
             cVar.d();
-            this.f9016l = null;
+            this.f9802l = null;
         }
-        com.anythink.core.common.v.a.c cVar2 = this.f9015k;
+        com.anythink.core.common.v.a.c cVar2 = this.f9801k;
         if (cVar2 != null) {
             cVar2.b();
-            this.f9015k = null;
+            this.f9801k = null;
         }
     }
 
     public final int q() {
-        ay ayVar = this.f9007g;
+        ay ayVar = this.f9793g;
         if (ayVar != null) {
             return ayVar.K();
         }
@@ -235,41 +235,41 @@ public class e extends c {
     }
 
     public final int r() {
-        ay ayVar = this.f9007g;
+        ay ayVar = this.f9793g;
         if (ayVar != null) {
             return ayVar.aa();
         }
         return 0;
     }
 
-    public final void a(View view, boolean z3) {
-        View view2 = this.f9019o;
+    public final void a(View view, boolean z6) {
+        View view2 = this.f9805o;
         if (view2 != null && view == view2) {
-            a(1, 1, z3);
+            a(1, 1, z6);
             return;
         }
-        View view3 = this.f9017m;
+        View view3 = this.f9803m;
         if (view3 != null && view == view3) {
-            a(1, 3, z3);
+            a(1, 3, z6);
         } else {
-            a(1, 2, z3);
+            a(1, 2, z6);
         }
     }
 
-    private void a(int i, int i6) {
-        a(i, i6, false);
+    private void a(int i, int i4) {
+        a(i, i4, false);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(final int i, final int i6, boolean z3) {
+    public void a(final int i, final int i4, boolean z6) {
         s();
-        if (this.f9016l == null) {
-            this.f9016l = new com.anythink.basead.b.c(this.f9003c, this.f9004d, this.f9007g, this.f9017m);
+        if (this.f9802l == null) {
+            this.f9802l = new com.anythink.basead.b.c(this.f9789c, this.f9790d, this.f9793g, this.f9803m);
         }
-        if (this.f9016l.a()) {
+        if (this.f9802l.a()) {
             return;
         }
-        this.f9016l.a(new c.a() { // from class: com.anythink.basead.h.e.3
+        this.f9802l.a(new c.a() { // from class: com.anythink.basead.h.e.3
             @Override // com.anythink.basead.b.c.a
             public final boolean a(String str, IOfferClickHandler iOfferClickHandler) {
                 return false;
@@ -286,25 +286,25 @@ public class e extends c {
 
             @Override // com.anythink.basead.b.c.a
             public final void a() {
-                com.anythink.basead.g.a aVar = e.this.f9014a;
+                com.anythink.basead.g.a aVar = e.this.f9800a;
                 if (aVar != null) {
-                    aVar.onAdClick(new com.anythink.basead.g.j().a(i, i6));
+                    aVar.onAdClick(new com.anythink.basead.g.j().a(i, i4));
                 }
             }
 
             @Override // com.anythink.basead.b.c.a
-            public final void a(boolean z6) {
-                com.anythink.basead.g.a aVar = e.this.f9014a;
+            public final void a(boolean z9) {
+                com.anythink.basead.g.a aVar = e.this.f9800a;
                 if (aVar != null) {
-                    aVar.onDeeplinkCallback(z6);
+                    aVar.onDeeplinkCallback(z9);
                 }
             }
         });
-        j jVar = new j(this.f9004d, "");
-        if (z3) {
-            jVar.f6217m = true;
+        j jVar = new j(this.f9790d, "");
+        if (z6) {
+            jVar.f7003m = true;
         }
-        this.f9016l.a(jVar);
+        this.f9802l.a(jVar);
         a(113);
     }
 
@@ -326,7 +326,7 @@ public class e extends c {
     }
 
     public final void a(com.anythink.basead.g.a aVar) {
-        this.f9014a = aVar;
+        this.f9800a = aVar;
     }
 
     private void a(View view, View.OnClickListener onClickListener) {
@@ -344,23 +344,23 @@ public class e extends c {
         e eVar;
         ay ayVar;
         x xVar;
-        this.f9017m = view;
-        if (view == null || !(view instanceof ViewGroup) || (ayVar = this.f9007g) == null || (xVar = this.f9004d) == null) {
+        this.f9803m = view;
+        if (view == null || !(view instanceof ViewGroup) || (ayVar = this.f9793g) == null || (xVar = this.f9790d) == null) {
             eVar = this;
         } else {
             eVar = this;
-            eVar.f9022r = eVar.new AnonymousClass6((ViewGroup) view, ayVar, xVar, new AnonymousClass5());
+            eVar.f9808r = eVar.new AnonymousClass6((ViewGroup) view, ayVar, xVar, new AnonymousClass5());
         }
         AnonymousClass4 anonymousClass4 = new AnonymousClass4();
-        if (eVar.f9015k == null) {
+        if (eVar.f9801k == null) {
             view.getContext();
-            eVar.f9015k = new com.anythink.core.common.v.a.c(1);
+            eVar.f9801k = new com.anythink.core.common.v.a.c(1);
         }
-        eVar.f9015k.a(view, anonymousClass4);
+        eVar.f9801k.a(view, anonymousClass4);
     }
 
     private void a(int i) {
-        com.anythink.basead.ui.improveclick.a aVar = this.f9022r;
+        com.anythink.basead.ui.improveclick.a aVar = this.f9808r;
         if (aVar != null) {
             aVar.a(i);
         }
@@ -370,40 +370,40 @@ public class e extends c {
         e eVar;
         ay ayVar;
         x xVar;
-        this.f9017m = view;
-        if (view == null || !(view instanceof ViewGroup) || (ayVar = this.f9007g) == null || (xVar = this.f9004d) == null) {
+        this.f9803m = view;
+        if (view == null || !(view instanceof ViewGroup) || (ayVar = this.f9793g) == null || (xVar = this.f9790d) == null) {
             eVar = this;
         } else {
             eVar = this;
-            eVar.f9022r = eVar.new AnonymousClass6((ViewGroup) view, ayVar, xVar, new AnonymousClass5());
+            eVar.f9808r = eVar.new AnonymousClass6((ViewGroup) view, ayVar, xVar, new AnonymousClass5());
         }
         AnonymousClass4 anonymousClass4 = new AnonymousClass4();
-        if (eVar.f9015k == null) {
+        if (eVar.f9801k == null) {
             view.getContext();
-            eVar.f9015k = new com.anythink.core.common.v.a.c(1);
+            eVar.f9801k = new com.anythink.core.common.v.a.c(1);
         }
-        eVar.f9015k.a(view, anonymousClass4);
+        eVar.f9801k.a(view, anonymousClass4);
         if (list != null && list.size() > 0) {
             View[] viewArr = new View[1];
             a(view, viewArr);
             View view2 = viewArr[0];
             if (view2 != null) {
-                eVar.f9019o = view2;
+                eVar.f9805o = view2;
             }
             for (View view3 : list) {
                 if (view3 != null) {
-                    view3.setOnClickListener(eVar.f9020p);
+                    view3.setOnClickListener(eVar.f9806p);
                 }
             }
         } else {
-            a(view, eVar.f9020p);
+            a(view, eVar.f9806p);
         }
         if (list2 == null || list2.size() <= 0) {
             return;
         }
         for (View view4 : list2) {
             if (view4 != null) {
-                view4.setOnClickListener(eVar.f9021q);
+                view4.setOnClickListener(eVar.f9807q);
             }
         }
     }

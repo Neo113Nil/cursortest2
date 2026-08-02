@@ -26,102 +26,102 @@ import java.nio.ByteBuffer;
 public class e extends com.anythink.basead.exoplayer.f.b {
 
     /* renamed from: A, reason: collision with root package name */
-    private static boolean f8571A = false;
+    private static boolean f9357A = false;
 
     /* renamed from: s, reason: collision with root package name */
-    private static final String f8572s = "MediaCodecVideoRenderer";
+    private static final String f9358s = "MediaCodecVideoRenderer";
 
     /* renamed from: t, reason: collision with root package name */
-    private static final String f8573t = "crop-left";
+    private static final String f9359t = "crop-left";
 
     /* renamed from: u, reason: collision with root package name */
-    private static final String f8574u = "crop-right";
+    private static final String f9360u = "crop-right";
 
     /* renamed from: v, reason: collision with root package name */
-    private static final String f8575v = "crop-bottom";
+    private static final String f9361v = "crop-bottom";
 
     /* renamed from: w, reason: collision with root package name */
-    private static final String f8576w = "crop-top";
+    private static final String f9362w = "crop-top";
 
     /* renamed from: x, reason: collision with root package name */
-    private static final int[] f8577x = {1920, 1600, com.onesignal.core.internal.config.e.DEFAULT_INDIRECT_ATTRIBUTION_WINDOW, 1280, 960, 854, 640, 540, 480};
+    private static final int[] f9363x = {1920, 1600, com.onesignal.core.internal.config.e.DEFAULT_INDIRECT_ATTRIBUTION_WINDOW, 1280, 960, 854, 640, 540, 480};
 
     /* renamed from: y, reason: collision with root package name */
-    private static final int f8578y = 10;
+    private static final int f9364y = 10;
 
     /* renamed from: z, reason: collision with root package name */
-    private static boolean f8579z;
+    private static boolean f9365z;
 
     /* renamed from: B, reason: collision with root package name */
-    private final Context f8580B;
+    private final Context f9366B;
 
     /* renamed from: C, reason: collision with root package name */
-    private final f f8581C;
+    private final f f9367C;
 
     /* renamed from: D, reason: collision with root package name */
-    private final h.a f8582D;
+    private final h.a f9368D;
 
     /* renamed from: E, reason: collision with root package name */
-    private final long f8583E;
+    private final long f9369E;
 
     /* renamed from: F, reason: collision with root package name */
-    private final int f8584F;
+    private final int f9370F;
 
     /* renamed from: G, reason: collision with root package name */
-    private final boolean f8585G;
+    private final boolean f9371G;
 
     /* renamed from: H, reason: collision with root package name */
-    private final long[] f8586H;
+    private final long[] f9372H;
 
     /* renamed from: I, reason: collision with root package name */
-    private final long[] f8587I;
+    private final long[] f9373I;
     private a J;
 
     /* renamed from: K, reason: collision with root package name */
-    private boolean f8588K;
+    private boolean f9374K;
 
     /* renamed from: L, reason: collision with root package name */
-    private Surface f8589L;
+    private Surface f9375L;
 
     /* renamed from: M, reason: collision with root package name */
-    private Surface f8590M;
+    private Surface f9376M;
 
     /* renamed from: N, reason: collision with root package name */
-    private int f8591N;
+    private int f9377N;
 
     /* renamed from: O, reason: collision with root package name */
-    private boolean f8592O;
+    private boolean f9378O;
 
     /* renamed from: P, reason: collision with root package name */
-    private long f8593P;
+    private long f9379P;
 
     /* renamed from: Q, reason: collision with root package name */
-    private long f8594Q;
+    private long f9380Q;
 
     /* renamed from: R, reason: collision with root package name */
-    private long f8595R;
+    private long f9381R;
 
     /* renamed from: S, reason: collision with root package name */
-    private int f8596S;
+    private int f9382S;
 
     /* renamed from: T, reason: collision with root package name */
-    private int f8597T;
+    private int f9383T;
 
     /* renamed from: U, reason: collision with root package name */
-    private int f8598U;
+    private int f9384U;
 
     /* renamed from: V, reason: collision with root package name */
-    private long f8599V;
+    private long f9385V;
 
     /* renamed from: W, reason: collision with root package name */
-    private int f8600W;
+    private int f9386W;
 
     /* renamed from: X, reason: collision with root package name */
-    private float f8601X;
+    private float f9387X;
     private int Y;
 
     /* renamed from: Z, reason: collision with root package name */
-    private int f8602Z;
+    private int f9388Z;
     private int aa;
     private float ab;
     private int ac;
@@ -135,23 +135,23 @@ public class e extends com.anythink.basead.exoplayer.f.b {
     private int ak;
 
     /* renamed from: r, reason: collision with root package name */
-    b f8603r;
+    b f9389r;
 
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public final int f8604a;
+        public final int f9390a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final int f8605b;
+        public final int f9391b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final int f8606c;
+        public final int f9392c;
 
-        public a(int i, int i6, int i9) {
-            this.f8604a = i;
-            this.f8605b = i6;
-            this.f8606c = i9;
+        public a(int i, int i4, int i6) {
+            this.f9390a = i;
+            this.f9391b = i4;
+            this.f9392c = i6;
         }
     }
 
@@ -163,7 +163,7 @@ public class e extends com.anythink.basead.exoplayer.f.b {
         @Override // android.media.MediaCodec.OnFrameRenderedListener
         public final void onFrameRendered(MediaCodec mediaCodec, long j6, long j9) {
             e eVar = e.this;
-            if (this != eVar.f8603r) {
+            if (this != eVar.f9389r) {
                 return;
             }
             eVar.C();
@@ -179,22 +179,22 @@ public class e extends com.anythink.basead.exoplayer.f.b {
     }
 
     private void D() {
-        this.f8594Q = this.f8583E > 0 ? SystemClock.elapsedRealtime() + this.f8583E : com.anythink.basead.exoplayer.b.f6382b;
+        this.f9380Q = this.f9369E > 0 ? SystemClock.elapsedRealtime() + this.f9369E : com.anythink.basead.exoplayer.b.f7168b;
     }
 
     private void E() {
         MediaCodec y7;
         byte b9 = 0;
-        this.f8592O = false;
-        if (af.f8346a < 23 || !this.ag || (y7 = y()) == null) {
+        this.f9378O = false;
+        if (af.f9132a < 23 || !this.ag || (y7 = y()) == null) {
             return;
         }
-        this.f8603r = new b(this, y7, b9);
+        this.f9389r = new b(this, y7, b9);
     }
 
     private void F() {
-        if (this.f8592O) {
-            this.f8582D.a(this.f8589L);
+        if (this.f9378O) {
+            this.f9368D.a(this.f9375L);
         }
     }
 
@@ -207,15 +207,15 @@ public class e extends com.anythink.basead.exoplayer.f.b {
 
     private void H() {
         int i = this.Y;
-        if (i == -1 && this.f8602Z == -1) {
+        if (i == -1 && this.f9388Z == -1) {
             return;
         }
-        if (this.ac == i && this.ad == this.f8602Z && this.ae == this.aa && this.af == this.ab) {
+        if (this.ac == i && this.ad == this.f9388Z && this.ae == this.aa && this.af == this.ab) {
             return;
         }
-        this.f8582D.a(i, this.f8602Z, this.aa, this.ab);
+        this.f9368D.a(i, this.f9388Z, this.aa, this.ab);
         this.ac = this.Y;
-        this.ad = this.f8602Z;
+        this.ad = this.f9388Z;
         this.ae = this.aa;
         this.af = this.ab;
     }
@@ -225,20 +225,20 @@ public class e extends com.anythink.basead.exoplayer.f.b {
         if (i == -1 && this.ad == -1) {
             return;
         }
-        this.f8582D.a(i, this.ad, this.ae, this.af);
+        this.f9368D.a(i, this.ad, this.ae, this.af);
     }
 
     private void J() {
-        if (this.f8596S > 0) {
+        if (this.f9382S > 0) {
             long elapsedRealtime = SystemClock.elapsedRealtime();
-            this.f8582D.a(this.f8596S, elapsedRealtime - this.f8595R);
-            this.f8596S = 0;
-            this.f8595R = elapsedRealtime;
+            this.f9368D.a(this.f9382S, elapsedRealtime - this.f9381R);
+            this.f9382S = 0;
+            this.f9381R = elapsedRealtime;
         }
     }
 
     private static boolean K() {
-        return af.f8346a <= 22 && "foster".equals(af.f8347b) && "NVIDIA".equals(af.f8348c);
+        return af.f9132a <= 22 && "foster".equals(af.f9133b) && "NVIDIA".equals(af.f9134c);
     }
 
     private static boolean d(long j6) {
@@ -254,8 +254,8 @@ public class e extends com.anythink.basead.exoplayer.f.b {
         if (b9 == 0) {
             return false;
         }
-        ((com.anythink.basead.exoplayer.f.b) this).f7240q.i++;
-        b(this.f8598U + b9);
+        ((com.anythink.basead.exoplayer.f.b) this).f8026q.i++;
+        b(this.f9384U + b9);
         B();
         return true;
     }
@@ -272,25 +272,25 @@ public class e extends com.anythink.basead.exoplayer.f.b {
     public final void A() {
         try {
             super.A();
-            this.f8598U = 0;
-            Surface surface = this.f8590M;
+            this.f9384U = 0;
+            Surface surface = this.f9376M;
             if (surface != null) {
-                if (this.f8589L == surface) {
-                    this.f8589L = null;
+                if (this.f9375L == surface) {
+                    this.f9375L = null;
                 }
                 surface.release();
-                this.f8590M = null;
+                this.f9376M = null;
             }
         } catch (Throwable th) {
-            this.f8598U = 0;
-            if (this.f8590M != null) {
-                Surface surface2 = this.f8589L;
-                Surface surface3 = this.f8590M;
+            this.f9384U = 0;
+            if (this.f9376M != null) {
+                Surface surface2 = this.f9375L;
+                Surface surface3 = this.f9376M;
                 if (surface2 == surface3) {
-                    this.f8589L = null;
+                    this.f9375L = null;
                 }
                 surface3.release();
-                this.f8590M = null;
+                this.f9376M = null;
             }
             throw th;
         }
@@ -299,79 +299,79 @@ public class e extends com.anythink.basead.exoplayer.f.b {
     @Override // com.anythink.basead.exoplayer.f.b
     public final void B() {
         super.B();
-        this.f8598U = 0;
+        this.f9384U = 0;
     }
 
     public final void C() {
-        if (this.f8592O) {
+        if (this.f9378O) {
             return;
         }
-        this.f8592O = true;
-        this.f8582D.a(this.f8589L);
+        this.f9378O = true;
+        this.f9368D.a(this.f9375L);
     }
 
     @Override // com.anythink.basead.exoplayer.f.b
     public final int a(com.anythink.basead.exoplayer.f.c cVar, com.anythink.basead.exoplayer.d.g<k> gVar, m mVar) {
-        boolean z3;
+        boolean z6;
         int i;
-        int i6;
-        String str = mVar.f8665h;
+        int i4;
+        String str = mVar.f9451h;
         if (!o.b(str)) {
             return 0;
         }
-        com.anythink.basead.exoplayer.d.e eVar = mVar.f8667k;
+        com.anythink.basead.exoplayer.d.e eVar = mVar.f9453k;
         if (eVar != null) {
-            z3 = false;
-            for (int i9 = 0; i9 < eVar.f6845b; i9++) {
-                z3 |= eVar.a(i9).f6851d;
+            z6 = false;
+            for (int i6 = 0; i6 < eVar.f7631b; i6++) {
+                z6 |= eVar.a(i6).f7637d;
             }
         } else {
-            z3 = false;
+            z6 = false;
         }
-        com.anythink.basead.exoplayer.f.a a9 = cVar.a(str, z3);
+        com.anythink.basead.exoplayer.f.a a9 = cVar.a(str, z6);
         if (a9 == null) {
-            return (!z3 || cVar.a(str, false) == null) ? 1 : 2;
+            return (!z6 || cVar.a(str, false) == null) ? 1 : 2;
         }
         if (!com.anythink.basead.exoplayer.a.a(gVar, eVar)) {
             return 2;
         }
-        boolean b9 = a9.b(mVar.f8662e);
-        if (b9 && (i = mVar.f8669m) > 0 && (i6 = mVar.f8670n) > 0) {
-            if (af.f8346a >= 21) {
-                b9 = a9.a(i, i6, mVar.f8671o);
+        boolean b9 = a9.b(mVar.f9448e);
+        if (b9 && (i = mVar.f9455m) > 0 && (i4 = mVar.f9456n) > 0) {
+            if (af.f9132a >= 21) {
+                b9 = a9.a(i, i4, mVar.f9457o);
             } else {
-                boolean z6 = i * i6 <= com.anythink.basead.exoplayer.f.d.b();
-                if (!z6) {
-                    Log.d(f8572s, "FalseCheck [legacyFrameSize, " + mVar.f8669m + "x" + mVar.f8670n + "] [" + af.f8350e + "]");
+                boolean z9 = i * i4 <= com.anythink.basead.exoplayer.f.d.b();
+                if (!z9) {
+                    Log.d(f9358s, "FalseCheck [legacyFrameSize, " + mVar.f9455m + "x" + mVar.f9456n + "] [" + af.f9136e + "]");
                 }
-                b9 = z6;
+                b9 = z9;
             }
         }
-        return (b9 ? 4 : 3) | (a9.f7201f ? 16 : 8) | (a9.f7202g ? 32 : 0);
+        return (b9 ? 4 : 3) | (a9.f7987f ? 16 : 8) | (a9.f7988g ? 32 : 0);
     }
 
     @Override // com.anythink.basead.exoplayer.f.b
     public final void b(m mVar) {
         super.b(mVar);
-        this.f8582D.a(mVar);
-        this.f8601X = mVar.f8673q;
-        this.f8600W = mVar.f8672p;
+        this.f9368D.a(mVar);
+        this.f9387X = mVar.f9459q;
+        this.f9386W = mVar.f9458p;
     }
 
     @Override // com.anythink.basead.exoplayer.f.b
     public final void c(long j6) {
-        this.f8598U--;
+        this.f9384U--;
         while (true) {
             int i = this.ak;
-            if (i == 0 || j6 < this.f8587I[0]) {
+            if (i == 0 || j6 < this.f9373I[0]) {
                 return;
             }
-            long[] jArr = this.f8586H;
+            long[] jArr = this.f9372H;
             this.aj = jArr[0];
-            int i6 = i - 1;
-            this.ak = i6;
-            System.arraycopy(jArr, 1, jArr, 0, i6);
-            long[] jArr2 = this.f8587I;
+            int i4 = i - 1;
+            this.ak = i4;
+            System.arraycopy(jArr, 1, jArr, 0, i4);
+            long[] jArr2 = this.f9373I;
             System.arraycopy(jArr2, 1, jArr2, 0, this.ak);
         }
     }
@@ -379,14 +379,14 @@ public class e extends com.anythink.basead.exoplayer.f.b {
     @Override // com.anythink.basead.exoplayer.f.b, com.anythink.basead.exoplayer.a
     public final void n() {
         super.n();
-        this.f8596S = 0;
-        this.f8595R = SystemClock.elapsedRealtime();
-        this.f8599V = SystemClock.elapsedRealtime() * 1000;
+        this.f9382S = 0;
+        this.f9381R = SystemClock.elapsedRealtime();
+        this.f9385V = SystemClock.elapsedRealtime() * 1000;
     }
 
     @Override // com.anythink.basead.exoplayer.f.b, com.anythink.basead.exoplayer.a
     public final void o() {
-        this.f8594Q = com.anythink.basead.exoplayer.b.f6382b;
+        this.f9380Q = com.anythink.basead.exoplayer.b.f7168b;
         J();
         super.o();
     }
@@ -394,38 +394,38 @@ public class e extends com.anythink.basead.exoplayer.f.b {
     @Override // com.anythink.basead.exoplayer.f.b, com.anythink.basead.exoplayer.a
     public final void p() {
         this.Y = -1;
-        this.f8602Z = -1;
+        this.f9388Z = -1;
         this.ab = -1.0f;
-        this.f8601X = -1.0f;
-        this.aj = com.anythink.basead.exoplayer.b.f6382b;
-        this.ai = com.anythink.basead.exoplayer.b.f6382b;
+        this.f9387X = -1.0f;
+        this.aj = com.anythink.basead.exoplayer.b.f7168b;
+        this.ai = com.anythink.basead.exoplayer.b.f7168b;
         this.ak = 0;
         G();
         E();
-        this.f8581C.b();
-        this.f8603r = null;
+        this.f9367C.b();
+        this.f9389r = null;
         this.ag = false;
         try {
             super.p();
         } finally {
-            this.f8582D.b(((com.anythink.basead.exoplayer.f.b) this).f7240q);
+            this.f9368D.b(((com.anythink.basead.exoplayer.f.b) this).f8026q);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.f.b, com.anythink.basead.exoplayer.y
     public final boolean u() {
         Surface surface;
-        if (super.u() && (this.f8592O || (((surface = this.f8590M) != null && this.f8589L == surface) || y() == null || this.ag))) {
-            this.f8594Q = com.anythink.basead.exoplayer.b.f6382b;
+        if (super.u() && (this.f9378O || (((surface = this.f9376M) != null && this.f9375L == surface) || y() == null || this.ag))) {
+            this.f9380Q = com.anythink.basead.exoplayer.b.f7168b;
             return true;
         }
-        if (this.f8594Q == com.anythink.basead.exoplayer.b.f6382b) {
+        if (this.f9380Q == com.anythink.basead.exoplayer.b.f7168b) {
             return false;
         }
-        if (SystemClock.elapsedRealtime() < this.f8594Q) {
+        if (SystemClock.elapsedRealtime() < this.f9380Q) {
             return true;
         }
-        this.f8594Q = com.anythink.basead.exoplayer.b.f6382b;
+        this.f9380Q = com.anythink.basead.exoplayer.b.f7168b;
         return false;
     }
 
@@ -440,27 +440,27 @@ public class e extends com.anythink.basead.exoplayer.f.b {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public e(Context context, com.anythink.basead.exoplayer.f.c cVar, long j6, com.anythink.basead.exoplayer.d.g<k> gVar, Handler handler, h hVar, int i) {
         super(2, cVar, gVar, false);
-        boolean z3 = false;
-        this.f8583E = j6;
-        this.f8584F = i;
+        boolean z6 = false;
+        this.f9369E = j6;
+        this.f9370F = i;
         Context applicationContext = context.getApplicationContext();
-        this.f8580B = applicationContext;
-        this.f8581C = new f(applicationContext);
-        this.f8582D = new h.a(handler, hVar);
-        if (af.f8346a <= 22 && "foster".equals(af.f8347b) && "NVIDIA".equals(af.f8348c)) {
-            z3 = true;
+        this.f9366B = applicationContext;
+        this.f9367C = new f(applicationContext);
+        this.f9368D = new h.a(handler, hVar);
+        if (af.f9132a <= 22 && "foster".equals(af.f9133b) && "NVIDIA".equals(af.f9134c)) {
+            z6 = true;
         }
-        this.f8585G = z3;
-        this.f8586H = new long[10];
-        this.f8587I = new long[10];
-        this.aj = com.anythink.basead.exoplayer.b.f6382b;
-        this.ai = com.anythink.basead.exoplayer.b.f6382b;
-        this.f8594Q = com.anythink.basead.exoplayer.b.f6382b;
+        this.f9371G = z6;
+        this.f9372H = new long[10];
+        this.f9373I = new long[10];
+        this.aj = com.anythink.basead.exoplayer.b.f7168b;
+        this.ai = com.anythink.basead.exoplayer.b.f7168b;
+        this.f9380Q = com.anythink.basead.exoplayer.b.f7168b;
         this.Y = -1;
-        this.f8602Z = -1;
+        this.f9388Z = -1;
         this.ab = -1.0f;
-        this.f8601X = -1.0f;
-        this.f8591N = 1;
+        this.f9387X = -1.0f;
+        this.f9377N = 1;
         G();
     }
 
@@ -480,88 +480,88 @@ public class e extends com.anythink.basead.exoplayer.f.b {
         ad.a("releaseOutputBuffer");
         mediaCodec.releaseOutputBuffer(i, true);
         ad.a();
-        this.f8599V = SystemClock.elapsedRealtime() * 1000;
-        ((com.anythink.basead.exoplayer.f.b) this).f7240q.f6734e++;
-        this.f8597T = 0;
+        this.f9385V = SystemClock.elapsedRealtime() * 1000;
+        ((com.anythink.basead.exoplayer.f.b) this).f8026q.f7520e++;
+        this.f9383T = 0;
         C();
     }
 
     private void b(int i) {
-        com.anythink.basead.exoplayer.c.d dVar = ((com.anythink.basead.exoplayer.f.b) this).f7240q;
-        dVar.f6736g += i;
-        this.f8596S += i;
-        int i6 = this.f8597T + i;
-        this.f8597T = i6;
-        dVar.f6737h = Math.max(i6, dVar.f6737h);
-        if (this.f8596S >= this.f8584F) {
+        com.anythink.basead.exoplayer.c.d dVar = ((com.anythink.basead.exoplayer.f.b) this).f8026q;
+        dVar.f7522g += i;
+        this.f9382S += i;
+        int i4 = this.f9383T + i;
+        this.f9383T = i4;
+        dVar.f7523h = Math.max(i4, dVar.f7523h);
+        if (this.f9382S >= this.f9370F) {
             J();
         }
     }
 
     private boolean b(com.anythink.basead.exoplayer.f.a aVar) {
-        if (af.f8346a < 23 || this.ag || a(aVar.f7198c)) {
+        if (af.f9132a < 23 || this.ag || a(aVar.f7984c)) {
             return false;
         }
-        return !aVar.f7203h || c.a(this.f8580B);
+        return !aVar.f7989h || c.a(this.f9366B);
     }
 
     @Override // com.anythink.basead.exoplayer.f.b, com.anythink.basead.exoplayer.a
-    public final void a(boolean z3) {
-        super.a(z3);
-        int i = r().f6310b;
+    public final void a(boolean z6) {
+        super.a(z6);
+        int i = r().f7096b;
         this.ah = i;
         this.ag = i != 0;
-        this.f8582D.a(((com.anythink.basead.exoplayer.f.b) this).f7240q);
-        this.f8581C.a();
+        this.f9368D.a(((com.anythink.basead.exoplayer.f.b) this).f8026q);
+        this.f9367C.a();
     }
 
     private static int b(com.anythink.basead.exoplayer.f.a aVar, m mVar) {
         if (mVar.i != -1) {
-            int size = mVar.f8666j.size();
+            int size = mVar.f9452j.size();
             int i = 0;
-            for (int i6 = 0; i6 < size; i6++) {
-                i += mVar.f8666j.get(i6).length;
+            for (int i4 = 0; i4 < size; i4++) {
+                i += mVar.f9452j.get(i4).length;
             }
             return mVar.i + i;
         }
-        return a(aVar, mVar.f8665h, mVar.f8669m, mVar.f8670n);
+        return a(aVar, mVar.f9451h, mVar.f9455m, mVar.f9456n);
     }
 
     @Override // com.anythink.basead.exoplayer.a
     public final void a(m[] mVarArr, long j6) {
-        if (this.aj == com.anythink.basead.exoplayer.b.f6382b) {
+        if (this.aj == com.anythink.basead.exoplayer.b.f7168b) {
             this.aj = j6;
         } else {
             int i = this.ak;
-            if (i == this.f8586H.length) {
-                Log.w(f8572s, "Too many stream changes, so dropping offset: " + this.f8586H[this.ak - 1]);
+            if (i == this.f9372H.length) {
+                Log.w(f9358s, "Too many stream changes, so dropping offset: " + this.f9372H[this.ak - 1]);
             } else {
                 this.ak = i + 1;
             }
-            long[] jArr = this.f8586H;
-            int i6 = this.ak;
-            jArr[i6 - 1] = j6;
-            this.f8587I[i6 - 1] = this.ai;
+            long[] jArr = this.f9372H;
+            int i4 = this.ak;
+            jArr[i4 - 1] = j6;
+            this.f9373I[i4 - 1] = this.ai;
         }
         super.a(mVarArr, j6);
     }
 
     @Override // com.anythink.basead.exoplayer.f.b, com.anythink.basead.exoplayer.a
-    public final void a(long j6, boolean z3) {
-        super.a(j6, z3);
+    public final void a(long j6, boolean z6) {
+        super.a(j6, z6);
         E();
-        this.f8593P = com.anythink.basead.exoplayer.b.f6382b;
-        this.f8597T = 0;
-        this.ai = com.anythink.basead.exoplayer.b.f6382b;
+        this.f9379P = com.anythink.basead.exoplayer.b.f7168b;
+        this.f9383T = 0;
+        this.ai = com.anythink.basead.exoplayer.b.f7168b;
         int i = this.ak;
         if (i != 0) {
-            this.aj = this.f8586H[i - 1];
+            this.aj = this.f9372H[i - 1];
             this.ak = 0;
         }
-        if (z3) {
+        if (z6) {
             D();
         } else {
-            this.f8594Q = com.anythink.basead.exoplayer.b.f6382b;
+            this.f9380Q = com.anythink.basead.exoplayer.b.f7168b;
         }
     }
 
@@ -569,10 +569,10 @@ public class e extends com.anythink.basead.exoplayer.f.b {
     public final void a(int i, Object obj) {
         if (i != 1) {
             if (i == 4) {
-                this.f8591N = ((Integer) obj).intValue();
+                this.f9377N = ((Integer) obj).intValue();
                 MediaCodec y7 = y();
                 if (y7 != null) {
-                    y7.setVideoScalingMode(this.f8591N);
+                    y7.setVideoScalingMode(this.f9377N);
                     return;
                 }
                 return;
@@ -582,30 +582,30 @@ public class e extends com.anythink.basead.exoplayer.f.b {
         }
         Surface surface = (Surface) obj;
         if (surface == null) {
-            Surface surface2 = this.f8590M;
+            Surface surface2 = this.f9376M;
             if (surface2 != null) {
                 surface = surface2;
             } else {
-                com.anythink.basead.exoplayer.f.a z3 = z();
-                if (z3 != null && b(z3)) {
-                    surface = c.a(this.f8580B, z3.f7203h);
-                    this.f8590M = surface;
+                com.anythink.basead.exoplayer.f.a z6 = z();
+                if (z6 != null && b(z6)) {
+                    surface = c.a(this.f9366B, z6.f7989h);
+                    this.f9376M = surface;
                 }
             }
         }
-        if (this.f8589L != surface) {
-            this.f8589L = surface;
+        if (this.f9375L != surface) {
+            this.f9375L = surface;
             int a_ = a_();
             if (a_ == 1 || a_ == 2) {
                 MediaCodec y9 = y();
-                if (af.f8346a >= 23 && y9 != null && surface != null && !this.f8588K) {
+                if (af.f9132a >= 23 && y9 != null && surface != null && !this.f9374K) {
                     y9.setOutputSurface(surface);
                 } else {
                     A();
                     x();
                 }
             }
-            if (surface != null && surface != this.f8590M) {
+            if (surface != null && surface != this.f9376M) {
                 I();
                 E();
                 if (a_ == 2) {
@@ -618,41 +618,41 @@ public class e extends com.anythink.basead.exoplayer.f.b {
             E();
             return;
         }
-        if (surface == null || surface == this.f8590M) {
+        if (surface == null || surface == this.f9376M) {
             return;
         }
         I();
-        if (this.f8592O) {
-            this.f8582D.a(this.f8589L);
+        if (this.f9378O) {
+            this.f9368D.a(this.f9375L);
         }
     }
 
     private void a(Surface surface) {
         if (surface == null) {
-            Surface surface2 = this.f8590M;
+            Surface surface2 = this.f9376M;
             if (surface2 != null) {
                 surface = surface2;
             } else {
-                com.anythink.basead.exoplayer.f.a z3 = z();
-                if (z3 != null && b(z3)) {
-                    surface = c.a(this.f8580B, z3.f7203h);
-                    this.f8590M = surface;
+                com.anythink.basead.exoplayer.f.a z6 = z();
+                if (z6 != null && b(z6)) {
+                    surface = c.a(this.f9366B, z6.f7989h);
+                    this.f9376M = surface;
                 }
             }
         }
-        if (this.f8589L != surface) {
-            this.f8589L = surface;
+        if (this.f9375L != surface) {
+            this.f9375L = surface;
             int a_ = a_();
             if (a_ == 1 || a_ == 2) {
                 MediaCodec y7 = y();
-                if (af.f8346a >= 23 && y7 != null && surface != null && !this.f8588K) {
+                if (af.f9132a >= 23 && y7 != null && surface != null && !this.f9374K) {
                     y7.setOutputSurface(surface);
                 } else {
                     A();
                     x();
                 }
             }
-            if (surface != null && surface != this.f8590M) {
+            if (surface != null && surface != this.f9376M) {
                 I();
                 E();
                 if (a_ == 2) {
@@ -665,112 +665,112 @@ public class e extends com.anythink.basead.exoplayer.f.b {
             E();
             return;
         }
-        if (surface == null || surface == this.f8590M) {
+        if (surface == null || surface == this.f9376M) {
             return;
         }
         I();
-        if (this.f8592O) {
-            this.f8582D.a(this.f8589L);
+        if (this.f9378O) {
+            this.f9368D.a(this.f9375L);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.f.b
     public final boolean a(com.anythink.basead.exoplayer.f.a aVar) {
-        return this.f8589L != null || b(aVar);
+        return this.f9375L != null || b(aVar);
     }
 
     @Override // com.anythink.basead.exoplayer.f.b
     public final void a(com.anythink.basead.exoplayer.f.a aVar, MediaCodec mediaCodec, m mVar, MediaCrypto mediaCrypto) {
         a aVar2;
         m[] q8 = q();
-        int i = mVar.f8669m;
-        int i6 = mVar.f8670n;
+        int i = mVar.f9455m;
+        int i4 = mVar.f9456n;
         int b9 = b(aVar, mVar);
         byte b10 = 0;
         if (q8.length == 1) {
-            aVar2 = new a(i, i6, b9);
+            aVar2 = new a(i, i4, b9);
         } else {
-            boolean z3 = false;
+            boolean z6 = false;
             for (m mVar2 : q8) {
-                if (a(aVar.f7201f, mVar, mVar2)) {
-                    int i9 = mVar2.f8669m;
-                    z3 |= i9 == -1 || mVar2.f8670n == -1;
-                    i = Math.max(i, i9);
-                    i6 = Math.max(i6, mVar2.f8670n);
+                if (a(aVar.f7987f, mVar, mVar2)) {
+                    int i6 = mVar2.f9455m;
+                    z6 |= i6 == -1 || mVar2.f9456n == -1;
+                    i = Math.max(i, i6);
+                    i4 = Math.max(i4, mVar2.f9456n);
                     b9 = Math.max(b9, b(aVar, mVar2));
                 }
             }
-            if (z3) {
-                Log.w(f8572s, "Resolutions unknown. Codec max resolution: " + i + "x" + i6);
+            if (z6) {
+                Log.w(f9358s, "Resolutions unknown. Codec max resolution: " + i + "x" + i4);
                 Point a9 = a(aVar, mVar);
                 if (a9 != null) {
                     i = Math.max(i, a9.x);
-                    i6 = Math.max(i6, a9.y);
-                    b9 = Math.max(b9, a(aVar, mVar.f8665h, i, i6));
-                    Log.w(f8572s, "Codec max resolution adjusted to: " + i + "x" + i6);
+                    i4 = Math.max(i4, a9.y);
+                    b9 = Math.max(b9, a(aVar, mVar.f9451h, i, i4));
+                    Log.w(f9358s, "Codec max resolution adjusted to: " + i + "x" + i4);
                 }
             }
-            aVar2 = new a(i, i6, b9);
+            aVar2 = new a(i, i4, b9);
         }
         this.J = aVar2;
-        boolean z6 = this.f8585G;
-        int i10 = this.ah;
+        boolean z9 = this.f9371G;
+        int i9 = this.ah;
         MediaFormat mediaFormat = new MediaFormat();
-        mediaFormat.setString("mime", mVar.f8665h);
-        mediaFormat.setInteger("width", mVar.f8669m);
-        mediaFormat.setInteger("height", mVar.f8670n);
-        com.anythink.basead.exoplayer.f.e.a(mediaFormat, mVar.f8666j);
-        float f3 = mVar.f8671o;
-        if (f3 != -1.0f) {
-            mediaFormat.setFloat("frame-rate", f3);
+        mediaFormat.setString("mime", mVar.f9451h);
+        mediaFormat.setInteger("width", mVar.f9455m);
+        mediaFormat.setInteger("height", mVar.f9456n);
+        com.anythink.basead.exoplayer.f.e.a(mediaFormat, mVar.f9452j);
+        float f2 = mVar.f9457o;
+        if (f2 != -1.0f) {
+            mediaFormat.setFloat("frame-rate", f2);
         }
-        com.anythink.basead.exoplayer.f.e.a(mediaFormat, "rotation-degrees", mVar.f8672p);
-        com.anythink.basead.exoplayer.l.b bVar = mVar.f8676t;
+        com.anythink.basead.exoplayer.f.e.a(mediaFormat, "rotation-degrees", mVar.f9458p);
+        com.anythink.basead.exoplayer.l.b bVar = mVar.f9462t;
         if (bVar != null) {
-            com.anythink.basead.exoplayer.f.e.a(mediaFormat, "color-transfer", bVar.f8551c);
-            com.anythink.basead.exoplayer.f.e.a(mediaFormat, "color-standard", bVar.f8549a);
-            com.anythink.basead.exoplayer.f.e.a(mediaFormat, "color-range", bVar.f8550b);
-            byte[] bArr = bVar.f8552d;
+            com.anythink.basead.exoplayer.f.e.a(mediaFormat, "color-transfer", bVar.f9337c);
+            com.anythink.basead.exoplayer.f.e.a(mediaFormat, "color-standard", bVar.f9335a);
+            com.anythink.basead.exoplayer.f.e.a(mediaFormat, "color-range", bVar.f9336b);
+            byte[] bArr = bVar.f9338d;
             if (bArr != null) {
                 mediaFormat.setByteBuffer("hdr-static-info", ByteBuffer.wrap(bArr));
             }
         }
-        mediaFormat.setInteger("max-width", aVar2.f8604a);
-        mediaFormat.setInteger("max-height", aVar2.f8605b);
-        com.anythink.basead.exoplayer.f.e.a(mediaFormat, "max-input-size", aVar2.f8606c);
-        int i11 = af.f8346a;
-        if (i11 >= 23) {
+        mediaFormat.setInteger("max-width", aVar2.f9390a);
+        mediaFormat.setInteger("max-height", aVar2.f9391b);
+        com.anythink.basead.exoplayer.f.e.a(mediaFormat, "max-input-size", aVar2.f9392c);
+        int i10 = af.f9132a;
+        if (i10 >= 23) {
             mediaFormat.setInteger("priority", 0);
         }
-        if (z6) {
+        if (z9) {
             mediaFormat.setInteger("auto-frc", 0);
         }
-        if (i10 != 0) {
+        if (i9 != 0) {
             mediaFormat.setFeatureEnabled("tunneled-playback", true);
-            mediaFormat.setInteger("audio-session-id", i10);
+            mediaFormat.setInteger("audio-session-id", i9);
         }
-        if (this.f8589L == null) {
+        if (this.f9375L == null) {
             com.anythink.basead.exoplayer.k.a.b(b(aVar));
-            if (this.f8590M == null) {
-                this.f8590M = c.a(this.f8580B, aVar.f7203h);
+            if (this.f9376M == null) {
+                this.f9376M = c.a(this.f9366B, aVar.f7989h);
             }
-            this.f8589L = this.f8590M;
+            this.f9375L = this.f9376M;
         }
-        mediaCodec.configure(mediaFormat, this.f8589L, mediaCrypto, 0);
-        if (i11 < 23 || !this.ag) {
+        mediaCodec.configure(mediaFormat, this.f9375L, mediaCrypto, 0);
+        if (i10 < 23 || !this.ag) {
             return;
         }
-        this.f8603r = new b(this, mediaCodec, b10);
+        this.f9389r = new b(this, mediaCodec, b10);
     }
 
     @Override // com.anythink.basead.exoplayer.f.b
     public final int a(com.anythink.basead.exoplayer.f.a aVar, m mVar, m mVar2) {
-        if (!a(aVar.f7201f, mVar, mVar2)) {
+        if (!a(aVar.f7987f, mVar, mVar2)) {
             return 0;
         }
-        int i = mVar2.f8669m;
+        int i = mVar2.f9455m;
         a aVar2 = this.J;
-        if (i > aVar2.f8604a || mVar2.f8670n > aVar2.f8605b || b(aVar, mVar2) > this.J.f8606c) {
+        if (i > aVar2.f9390a || mVar2.f9456n > aVar2.f9391b || b(aVar, mVar2) > this.J.f9392c) {
             return 0;
         }
         return mVar.b(mVar2) ? 1 : 3;
@@ -778,15 +778,15 @@ public class e extends com.anythink.basead.exoplayer.f.b {
 
     @Override // com.anythink.basead.exoplayer.f.b
     public final void a(String str, long j6, long j9) {
-        this.f8582D.a(str, j6, j9);
-        this.f8588K = a(str);
+        this.f9368D.a(str, j6, j9);
+        this.f9374K = a(str);
     }
 
     @Override // com.anythink.basead.exoplayer.f.b
     public final void a(com.anythink.basead.exoplayer.c.e eVar) {
-        this.f8598U++;
-        this.ai = Math.max(eVar.f6743f, this.ai);
-        if (af.f8346a >= 23 || !this.ag) {
+        this.f9384U++;
+        this.ai = Math.max(eVar.f7529f, this.ai);
+        if (af.f9132a >= 23 || !this.ag) {
             return;
         }
         C();
@@ -796,33 +796,33 @@ public class e extends com.anythink.basead.exoplayer.f.b {
     public final void a(MediaCodec mediaCodec, MediaFormat mediaFormat) {
         int integer;
         int integer2;
-        boolean z3 = mediaFormat.containsKey(f8574u) && mediaFormat.containsKey(f8573t) && mediaFormat.containsKey(f8575v) && mediaFormat.containsKey(f8576w);
-        if (z3) {
-            integer = (mediaFormat.getInteger(f8574u) - mediaFormat.getInteger(f8573t)) + 1;
+        boolean z6 = mediaFormat.containsKey(f9360u) && mediaFormat.containsKey(f9359t) && mediaFormat.containsKey(f9361v) && mediaFormat.containsKey(f9362w);
+        if (z6) {
+            integer = (mediaFormat.getInteger(f9360u) - mediaFormat.getInteger(f9359t)) + 1;
         } else {
             integer = mediaFormat.getInteger("width");
         }
         this.Y = integer;
-        if (z3) {
-            integer2 = (mediaFormat.getInteger(f8575v) - mediaFormat.getInteger(f8576w)) + 1;
+        if (z6) {
+            integer2 = (mediaFormat.getInteger(f9361v) - mediaFormat.getInteger(f9362w)) + 1;
         } else {
             integer2 = mediaFormat.getInteger("height");
         }
-        this.f8602Z = integer2;
-        float f3 = this.f8601X;
-        this.ab = f3;
-        if (af.f8346a >= 21) {
-            int i = this.f8600W;
+        this.f9388Z = integer2;
+        float f2 = this.f9387X;
+        this.ab = f2;
+        if (af.f9132a >= 21) {
+            int i = this.f9386W;
             if (i == 90 || i == 270) {
-                int i6 = this.Y;
+                int i4 = this.Y;
                 this.Y = integer2;
-                this.f8602Z = i6;
-                this.ab = 1.0f / f3;
+                this.f9388Z = i4;
+                this.ab = 1.0f / f2;
             }
         } else {
-            this.aa = this.f8600W;
+            this.aa = this.f9386W;
         }
-        mediaCodec.setVideoScalingMode(this.f8591N);
+        mediaCodec.setVideoScalingMode(this.f9377N);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0060, code lost:
@@ -833,17 +833,17 @@ public class e extends com.anythink.basead.exoplayer.f.b {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final boolean a(long j6, long j9, MediaCodec mediaCodec, ByteBuffer byteBuffer, int i, int i6, long j10, boolean z3) {
+    public final boolean a(long j6, long j9, MediaCodec mediaCodec, ByteBuffer byteBuffer, int i, int i4, long j10, boolean z6) {
         int b9;
-        if (this.f8593P == com.anythink.basead.exoplayer.b.f6382b) {
-            this.f8593P = j6;
+        if (this.f9379P == com.anythink.basead.exoplayer.b.f7168b) {
+            this.f9379P = j6;
         }
-        if (z3) {
+        if (z6) {
             a(mediaCodec, i);
             return true;
         }
         long j11 = j10 - j6;
-        if (this.f8589L == this.f8590M) {
+        if (this.f9375L == this.f9376M) {
             if (!g(j11)) {
                 return false;
             }
@@ -851,21 +851,21 @@ public class e extends com.anythink.basead.exoplayer.f.b {
             return true;
         }
         long elapsedRealtime = SystemClock.elapsedRealtime() * 1000;
-        boolean z6 = a_() == 2;
-        if (this.f8592O) {
-            if (z6) {
-                long j12 = elapsedRealtime - this.f8599V;
+        boolean z9 = a_() == 2;
+        if (this.f9378O) {
+            if (z9) {
+                long j12 = elapsedRealtime - this.f9385V;
                 if (g(j11)) {
                 }
             }
-            if (z6 && j6 != this.f8593P) {
+            if (z9 && j6 != this.f9379P) {
                 long j13 = j11 - (elapsedRealtime - j9);
                 long nanoTime = System.nanoTime();
-                long a9 = this.f8581C.a(j10, (j13 * 1000) + nanoTime);
+                long a9 = this.f9367C.a(j10, (j13 * 1000) + nanoTime);
                 long j14 = (a9 - nanoTime) / 1000;
                 if (j14 < -500000 && (b9 = b(j6)) != 0) {
-                    ((com.anythink.basead.exoplayer.f.b) this).f7240q.i++;
-                    b(this.f8598U + b9);
+                    ((com.anythink.basead.exoplayer.f.b) this).f8026q.i++;
+                    b(this.f9384U + b9);
                     B();
                     return false;
                 }
@@ -876,7 +876,7 @@ public class e extends com.anythink.basead.exoplayer.f.b {
                     b(1);
                     return true;
                 }
-                if (af.f8346a >= 21) {
+                if (af.f9132a >= 21) {
                     if (j14 < 50000) {
                         a(mediaCodec, i, a9);
                         return true;
@@ -896,7 +896,7 @@ public class e extends com.anythink.basead.exoplayer.f.b {
             }
             return false;
         }
-        if (af.f8346a >= 21) {
+        if (af.f9132a >= 21) {
             a(mediaCodec, i, System.nanoTime());
             return true;
         }
@@ -908,7 +908,7 @@ public class e extends com.anythink.basead.exoplayer.f.b {
         ad.a("skipVideoBuffer");
         mediaCodec.releaseOutputBuffer(i, false);
         ad.a();
-        ((com.anythink.basead.exoplayer.f.b) this).f7240q.f6735f++;
+        ((com.anythink.basead.exoplayer.f.b) this).f8026q.f7521f++;
     }
 
     private void a(MediaCodec mediaCodec, int i, long j6) {
@@ -916,9 +916,9 @@ public class e extends com.anythink.basead.exoplayer.f.b {
         ad.a("releaseOutputBuffer");
         mediaCodec.releaseOutputBuffer(i, j6);
         ad.a();
-        this.f8599V = SystemClock.elapsedRealtime() * 1000;
-        ((com.anythink.basead.exoplayer.f.b) this).f7240q.f6734e++;
-        this.f8597T = 0;
+        this.f9385V = SystemClock.elapsedRealtime() * 1000;
+        ((com.anythink.basead.exoplayer.f.b) this).f8026q.f7520e++;
+        this.f9383T = 0;
         C();
     }
 
@@ -931,34 +931,34 @@ public class e extends com.anythink.basead.exoplayer.f.b {
         mediaFormat.setInteger("audio-session-id", i);
     }
 
-    private static MediaFormat a(m mVar, a aVar, boolean z3, int i) {
+    private static MediaFormat a(m mVar, a aVar, boolean z6, int i) {
         MediaFormat mediaFormat = new MediaFormat();
-        mediaFormat.setString("mime", mVar.f8665h);
-        mediaFormat.setInteger("width", mVar.f8669m);
-        mediaFormat.setInteger("height", mVar.f8670n);
-        com.anythink.basead.exoplayer.f.e.a(mediaFormat, mVar.f8666j);
-        float f3 = mVar.f8671o;
-        if (f3 != -1.0f) {
-            mediaFormat.setFloat("frame-rate", f3);
+        mediaFormat.setString("mime", mVar.f9451h);
+        mediaFormat.setInteger("width", mVar.f9455m);
+        mediaFormat.setInteger("height", mVar.f9456n);
+        com.anythink.basead.exoplayer.f.e.a(mediaFormat, mVar.f9452j);
+        float f2 = mVar.f9457o;
+        if (f2 != -1.0f) {
+            mediaFormat.setFloat("frame-rate", f2);
         }
-        com.anythink.basead.exoplayer.f.e.a(mediaFormat, "rotation-degrees", mVar.f8672p);
-        com.anythink.basead.exoplayer.l.b bVar = mVar.f8676t;
+        com.anythink.basead.exoplayer.f.e.a(mediaFormat, "rotation-degrees", mVar.f9458p);
+        com.anythink.basead.exoplayer.l.b bVar = mVar.f9462t;
         if (bVar != null) {
-            com.anythink.basead.exoplayer.f.e.a(mediaFormat, "color-transfer", bVar.f8551c);
-            com.anythink.basead.exoplayer.f.e.a(mediaFormat, "color-standard", bVar.f8549a);
-            com.anythink.basead.exoplayer.f.e.a(mediaFormat, "color-range", bVar.f8550b);
-            byte[] bArr = bVar.f8552d;
+            com.anythink.basead.exoplayer.f.e.a(mediaFormat, "color-transfer", bVar.f9337c);
+            com.anythink.basead.exoplayer.f.e.a(mediaFormat, "color-standard", bVar.f9335a);
+            com.anythink.basead.exoplayer.f.e.a(mediaFormat, "color-range", bVar.f9336b);
+            byte[] bArr = bVar.f9338d;
             if (bArr != null) {
                 mediaFormat.setByteBuffer("hdr-static-info", ByteBuffer.wrap(bArr));
             }
         }
-        mediaFormat.setInteger("max-width", aVar.f8604a);
-        mediaFormat.setInteger("max-height", aVar.f8605b);
-        com.anythink.basead.exoplayer.f.e.a(mediaFormat, "max-input-size", aVar.f8606c);
-        if (af.f8346a >= 23) {
+        mediaFormat.setInteger("max-width", aVar.f9390a);
+        mediaFormat.setInteger("max-height", aVar.f9391b);
+        com.anythink.basead.exoplayer.f.e.a(mediaFormat, "max-input-size", aVar.f9392c);
+        if (af.f9132a >= 23) {
             mediaFormat.setInteger("priority", 0);
         }
-        if (z3) {
+        if (z6) {
             mediaFormat.setInteger("auto-frc", 0);
         }
         if (i != 0) {
@@ -969,67 +969,67 @@ public class e extends com.anythink.basead.exoplayer.f.b {
     }
 
     private static a a(com.anythink.basead.exoplayer.f.a aVar, m mVar, m[] mVarArr) {
-        int i = mVar.f8669m;
-        int i6 = mVar.f8670n;
+        int i = mVar.f9455m;
+        int i4 = mVar.f9456n;
         int b9 = b(aVar, mVar);
         if (mVarArr.length == 1) {
-            return new a(i, i6, b9);
+            return new a(i, i4, b9);
         }
-        boolean z3 = false;
+        boolean z6 = false;
         for (m mVar2 : mVarArr) {
-            if (a(aVar.f7201f, mVar, mVar2)) {
-                int i9 = mVar2.f8669m;
-                z3 |= i9 == -1 || mVar2.f8670n == -1;
-                i = Math.max(i, i9);
-                i6 = Math.max(i6, mVar2.f8670n);
+            if (a(aVar.f7987f, mVar, mVar2)) {
+                int i6 = mVar2.f9455m;
+                z6 |= i6 == -1 || mVar2.f9456n == -1;
+                i = Math.max(i, i6);
+                i4 = Math.max(i4, mVar2.f9456n);
                 b9 = Math.max(b9, b(aVar, mVar2));
             }
         }
-        if (z3) {
-            Log.w(f8572s, "Resolutions unknown. Codec max resolution: " + i + "x" + i6);
+        if (z6) {
+            Log.w(f9358s, "Resolutions unknown. Codec max resolution: " + i + "x" + i4);
             Point a9 = a(aVar, mVar);
             if (a9 != null) {
                 i = Math.max(i, a9.x);
-                i6 = Math.max(i6, a9.y);
-                b9 = Math.max(b9, a(aVar, mVar.f8665h, i, i6));
-                Log.w(f8572s, "Codec max resolution adjusted to: " + i + "x" + i6);
+                i4 = Math.max(i4, a9.y);
+                b9 = Math.max(b9, a(aVar, mVar.f9451h, i, i4));
+                Log.w(f9358s, "Codec max resolution adjusted to: " + i + "x" + i4);
             }
         }
-        return new a(i, i6, b9);
+        return new a(i, i4, b9);
     }
 
     private static Point a(com.anythink.basead.exoplayer.f.a aVar, m mVar) {
-        int i = mVar.f8670n;
-        int i6 = mVar.f8669m;
-        boolean z3 = i > i6;
-        int i9 = z3 ? i : i6;
-        if (z3) {
-            i = i6;
+        int i = mVar.f9456n;
+        int i4 = mVar.f9455m;
+        boolean z6 = i > i4;
+        int i6 = z6 ? i : i4;
+        if (z6) {
+            i = i4;
         }
-        float f3 = i / i9;
-        for (int i10 : f8577x) {
-            int i11 = (int) (i10 * f3);
-            if (i10 <= i9 || i11 <= i) {
+        float f2 = i / i6;
+        for (int i9 : f9363x) {
+            int i10 = (int) (i9 * f2);
+            if (i9 <= i6 || i10 <= i) {
                 break;
             }
-            if (af.f8346a >= 21) {
-                int i12 = z3 ? i11 : i10;
-                if (!z3) {
-                    i10 = i11;
+            if (af.f9132a >= 21) {
+                int i11 = z6 ? i10 : i9;
+                if (!z6) {
+                    i9 = i10;
                 }
-                Point a9 = aVar.a(i12, i10);
-                if (aVar.a(a9.x, a9.y, mVar.f8671o)) {
+                Point a9 = aVar.a(i11, i9);
+                if (aVar.a(a9.x, a9.y, mVar.f9457o)) {
                     return a9;
                 }
             } else {
-                int a10 = af.a(i10, 16) * 16;
-                int a11 = af.a(i11, 16) * 16;
+                int a10 = af.a(i9, 16) * 16;
+                int a11 = af.a(i10, 16) * 16;
                 if (a10 * a11 <= com.anythink.basead.exoplayer.f.d.b()) {
-                    int i13 = z3 ? a11 : a10;
-                    if (!z3) {
+                    int i12 = z6 ? a11 : a10;
+                    if (!z6) {
                         a10 = a11;
                     }
-                    return new Point(i13, a10);
+                    return new Point(i12, a10);
                 }
             }
         }
@@ -1037,17 +1037,17 @@ public class e extends com.anythink.basead.exoplayer.f.b {
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    private static int a(com.anythink.basead.exoplayer.f.a aVar, String str, int i, int i6) {
+    private static int a(com.anythink.basead.exoplayer.f.a aVar, String str, int i, int i4) {
         char c9;
-        int i9;
-        int i10 = 4;
-        if (i == -1 || i6 == -1) {
+        int i6;
+        int i9 = 4;
+        if (i == -1 || i4 == -1) {
             return -1;
         }
         str.getClass();
         switch (str.hashCode()) {
             case -1664118616:
-                if (str.equals(o.f8450g)) {
+                if (str.equals(o.f9236g)) {
                     c9 = 0;
                     break;
                 }
@@ -1061,28 +1061,28 @@ public class e extends com.anythink.basead.exoplayer.f.b {
                 c9 = 65535;
                 break;
             case 1187890754:
-                if (str.equals(o.f8454l)) {
+                if (str.equals(o.f9240l)) {
                     c9 = 2;
                     break;
                 }
                 c9 = 65535;
                 break;
             case 1331836730:
-                if (str.equals(o.f8451h)) {
+                if (str.equals(o.f9237h)) {
                     c9 = 3;
                     break;
                 }
                 c9 = 65535;
                 break;
             case 1599127256:
-                if (str.equals(o.f8452j)) {
+                if (str.equals(o.f9238j)) {
                     c9 = 4;
                     break;
                 }
                 c9 = 65535;
                 break;
             case 1599127257:
-                if (str.equals(o.f8453k)) {
+                if (str.equals(o.f9239k)) {
                     c9 = 5;
                     break;
                 }
@@ -1096,18 +1096,18 @@ public class e extends com.anythink.basead.exoplayer.f.b {
             case 0:
             case 2:
             case 4:
-                i9 = i * i6;
-                i10 = 2;
+                i6 = i * i4;
+                i9 = 2;
                 break;
             case 1:
             case 5:
-                i9 = i * i6;
+                i6 = i * i4;
                 break;
             case 3:
-                String str2 = af.f8349d;
-                if (!"BRAVIA 4K 2015".equals(str2) && (!"Amazon".equals(af.f8348c) || (!"KFSOWI".equals(str2) && (!"AFTS".equals(str2) || !aVar.f7203h)))) {
-                    i9 = af.a(i6, 16) * af.a(i, 16) * 256;
-                    i10 = 2;
+                String str2 = af.f9135d;
+                if (!"BRAVIA 4K 2015".equals(str2) && (!"Amazon".equals(af.f9134c) || (!"KFSOWI".equals(str2) && (!"AFTS".equals(str2) || !aVar.f7989h)))) {
+                    i6 = af.a(i4, 16) * af.a(i, 16) * 256;
+                    i9 = 2;
                     break;
                 }
                 break;
@@ -1115,9 +1115,9 @@ public class e extends com.anythink.basead.exoplayer.f.b {
         return -1;
     }
 
-    private static boolean a(boolean z3, m mVar, m mVar2) {
-        if (mVar.f8665h.equals(mVar2.f8665h) && mVar.f8672p == mVar2.f8672p) {
-            return (z3 || (mVar.f8669m == mVar2.f8669m && mVar.f8670n == mVar2.f8670n)) && af.a(mVar.f8676t, mVar2.f8676t);
+    private static boolean a(boolean z6, m mVar, m mVar2) {
+        if (mVar.f9451h.equals(mVar2.f9451h) && mVar.f9458p == mVar2.f9458p) {
+            return (z6 || (mVar.f9455m == mVar2.f9455m && mVar.f9456n == mVar2.f9456n)) && af.a(mVar.f9462t, mVar2.f9462t);
         }
         return false;
     }
@@ -1127,15 +1127,15 @@ public class e extends com.anythink.basead.exoplayer.f.b {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private static boolean a(String str) {
-        boolean z3 = false;
+        boolean z6 = false;
         char c9 = 27;
-        if (af.f8346a >= 27 || str.startsWith("OMX.google")) {
+        if (af.f9132a >= 27 || str.startsWith("OMX.google")) {
             return false;
         }
         synchronized (e.class) {
             try {
-                if (!f8579z) {
-                    String str2 = af.f8347b;
+                if (!f9365z) {
+                    String str2 = af.f9133b;
                     switch (str2.hashCode()) {
                         case -2144781245:
                             if (str2.equals("GIONEE_SWW1609")) {
@@ -2005,50 +2005,50 @@ public class e extends com.anythink.basead.exoplayer.f.b {
                         case '#':
                         case '$':
                         case '%':
-                        case j.f5806M /* 38 */:
+                        case j.f6592M /* 38 */:
                         case '\'':
-                        case j.f5808O /* 40 */:
+                        case j.f6594O /* 40 */:
                         case ')':
                         case '*':
-                        case j.f5811R /* 43 */:
-                        case j.f5812S /* 44 */:
-                        case j.f5813T /* 45 */:
+                        case j.f6597R /* 43 */:
+                        case j.f6598S /* 44 */:
+                        case j.f6599T /* 45 */:
                         case '.':
                         case '/':
-                        case j.f5816W /* 48 */:
-                        case j.f5817X /* 49 */:
+                        case j.f6602W /* 48 */:
+                        case j.f6603X /* 49 */:
                         case '2':
                         case '3':
                         case '4':
-                        case i.f14823d /* 53 */:
+                        case i.f15609d /* 53 */:
                         case '6':
                         case '7':
-                        case p.a.f19679e /* 56 */:
+                        case p.a.f20466e /* 56 */:
                         case '9':
                         case ':':
-                        case j.v.f12591n /* 59 */:
+                        case j.v.f13377n /* 59 */:
                         case '<':
                         case '=':
                         case '>':
                         case '?':
                         case '@':
-                        case j.v.f12576G /* 65 */:
+                        case j.v.f13362G /* 65 */:
                         case 'B':
-                        case j.v.f12582d /* 67 */:
+                        case j.v.f13368d /* 67 */:
                         case 'D':
-                        case j.v.f12573D /* 69 */:
+                        case j.v.f13359D /* 69 */:
                         case com.anythink.expressad.videocommon.e.b.aB /* 70 */:
                         case 'G':
                         case 'H':
                         case 'I':
-                        case j.v.f12598u /* 74 */:
-                        case j.v.f12599v /* 75 */:
-                        case j.v.f12603z /* 76 */:
-                        case j.v.f12571B /* 77 */:
+                        case j.v.f13384u /* 74 */:
+                        case j.v.f13385v /* 75 */:
+                        case j.v.f13389z /* 76 */:
+                        case j.v.f13357B /* 77 */:
                         case 'N':
-                        case j.v.f12570A /* 79 */:
-                        case j.v.f12572C /* 80 */:
-                        case j.v.f12574E /* 81 */:
+                        case j.v.f13356A /* 79 */:
+                        case j.v.f13358C /* 80 */:
+                        case j.v.f13360E /* 81 */:
                         case 'R':
                         case 'S':
                         case 'T':
@@ -2059,8 +2059,8 @@ public class e extends com.anythink.basead.exoplayer.f.b {
                         case 'Y':
                         case AlbumScaleMainView.MAIN_VIEW_INIT_WIDTH /* 90 */:
                         case '[':
-                        case j.v.f12577H /* 92 */:
-                        case j.v.f12578I /* 93 */:
+                        case j.v.f13363H /* 92 */:
+                        case j.v.f13364I /* 93 */:
                         case '^':
                         case '_':
                         case '`':
@@ -2076,7 +2076,7 @@ public class e extends com.anythink.basead.exoplayer.f.b {
                         case 'j':
                         case 'k':
                         case 'l':
-                        case com.anythink.expressad.video.module.a.a.f21756z /* 109 */:
+                        case com.anythink.expressad.video.module.a.a.f22543z /* 109 */:
                         case 'n':
                         case 'o':
                         case 'p':
@@ -2085,42 +2085,42 @@ public class e extends com.anythink.basead.exoplayer.f.b {
                         case 's':
                         case 't':
                         case 'u':
-                            f8571A = true;
+                            f9357A = true;
                             break;
                     }
-                    String str3 = af.f8349d;
+                    String str3 = af.f9135d;
                     int hashCode = str3.hashCode();
                     if (hashCode != 2006354) {
                         if (hashCode == 2006367 && str3.equals("AFTN")) {
-                            z3 = true;
-                            if (z3 || z3) {
-                                f8571A = true;
+                            z6 = true;
+                            if (z6 || z6) {
+                                f9357A = true;
                             }
-                            f8579z = true;
+                            f9365z = true;
                         }
-                        z3 = -1;
-                        if (z3) {
+                        z6 = -1;
+                        if (z6) {
                         }
-                        f8571A = true;
-                        f8579z = true;
+                        f9357A = true;
+                        f9365z = true;
                     } else {
                         if (str3.equals("AFTA")) {
-                            if (z3) {
+                            if (z6) {
                             }
-                            f8571A = true;
-                            f8579z = true;
+                            f9357A = true;
+                            f9365z = true;
                         }
-                        z3 = -1;
-                        if (z3) {
+                        z6 = -1;
+                        if (z6) {
                         }
-                        f8571A = true;
-                        f8579z = true;
+                        f9357A = true;
+                        f9365z = true;
                     }
                 }
             } catch (Throwable th) {
                 throw th;
             }
         }
-        return f8571A;
+        return f9357A;
     }
 }

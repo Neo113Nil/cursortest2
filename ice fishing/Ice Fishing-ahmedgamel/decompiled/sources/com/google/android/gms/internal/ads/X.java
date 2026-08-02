@@ -7,27 +7,27 @@ import java.util.Objects;
 public final class X {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ LP f28462a;
+    public final /* synthetic */ MP f29242a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final /* synthetic */ int f28463b;
+    public final /* synthetic */ int f29243b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final /* synthetic */ Z f28464c;
+    public final /* synthetic */ Z f29244c;
 
-    public X(Z z3, LP lp, int i, long j6) {
-        this.f28462a = lp;
-        this.f28463b = i;
-        Objects.requireNonNull(z3);
-        this.f28464c = z3;
+    public X(Z z6, MP mp, int i, long j6) {
+        this.f29242a = mp;
+        this.f29243b = i;
+        Objects.requireNonNull(z6);
+        this.f29244c = z6;
     }
 
     public final void a() {
-        Z z3 = this.f28464c;
-        z3.getClass();
+        Z z6 = this.f29244c;
+        z6.getClass();
         Trace.beginSection("dropVideoBuffer");
-        this.f28462a.q(this.f28463b);
+        this.f29242a.t(this.f29243b);
         Trace.endSection();
-        z3.w0(0, 1);
+        z6.w0(0, 1);
     }
 }

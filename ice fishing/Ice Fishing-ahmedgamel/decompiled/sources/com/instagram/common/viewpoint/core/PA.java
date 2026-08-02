@@ -16,16 +16,16 @@ public final class PA<K, V> implements Iterator<Map.Entry<K, V>>, Map.Entry<K, V
     public boolean A02 = false;
     public int A01 = -1;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 41);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 41);
         }
         return new String(copyOfRange);
     }
 
     public static void A02() {
-        A04 = new byte[]{123, 30, 34, 35, 57, 106, 41, 37, 36, 62, 43, 35, 36, 47, 56, 106, 46, 37, 47, 57, 106, 36, 37, 62, 106, 57, c.f16318c, 58, 58, 37, 56, 62, 106, 56, 47, 62, 43, 35, 36, 35, 36, 45, 106, 7, 43, 58, 100, 15, 36, 62, 56, 51, 106, 37, 40, 32, 47, 41, 62, 57};
+        A04 = new byte[]{123, 30, 34, 35, 57, 106, 41, 37, 36, 62, 43, 35, 36, 47, 56, 106, 46, 37, 47, 57, 106, 36, 37, 62, 106, 57, c.f17105c, 58, 58, 37, 56, 62, 106, 56, 47, 62, 43, 35, 36, 35, 36, 45, 106, 7, 43, 58, 100, 15, 36, 62, 56, 51, 106, 37, 40, 32, 47, 41, 62, 57};
     }
 
     static {

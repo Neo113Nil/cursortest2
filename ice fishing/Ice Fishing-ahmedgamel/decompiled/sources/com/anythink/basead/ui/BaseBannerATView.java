@@ -16,20 +16,20 @@ import com.anythink.core.common.v.q;
 public abstract class BaseBannerATView extends BaseATView {
 
     /* renamed from: A, reason: collision with root package name */
-    private e f9813A;
+    private e f10599A;
     public final String TAG;
 
     /* renamed from: a, reason: collision with root package name */
-    protected com.anythink.basead.g.a f9814a;
+    protected com.anythink.basead.g.a f10600a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected CloseImageView f9815b;
+    protected CloseImageView f10601b;
 
     /* renamed from: c, reason: collision with root package name */
-    View f9816c;
+    View f10602c;
 
     /* renamed from: d, reason: collision with root package name */
-    protected com.anythink.basead.ui.f.a f9817d;
+    protected com.anythink.basead.ui.f.a f10603d;
 
     /* renamed from: com.anythink.basead.ui.BaseBannerATView$1, reason: invalid class name */
     public class AnonymousClass1 implements com.anythink.basead.ui.d.a {
@@ -37,8 +37,8 @@ public abstract class BaseBannerATView extends BaseATView {
         }
 
         @Override // com.anythink.basead.ui.d.a
-        public final void a(int i, int i6) {
-            BaseBannerATView.this.a(i, i6);
+        public final void a(int i, int i4) {
+            BaseBannerATView.this.a(i, i4);
         }
     }
 
@@ -48,15 +48,15 @@ public abstract class BaseBannerATView extends BaseATView {
     }
 
     private boolean d() {
-        if (this.f9816c == null) {
-            this.f9816c = findViewById(q.a(getContext(), "myoffer_guide2click_container", "id"));
+        if (this.f10602c == null) {
+            this.f10602c = findViewById(q.a(getContext(), "myoffer_guide2click_container", "id"));
         }
-        View view = this.f9816c;
+        View view = this.f10602c;
         return view != null && view.getVisibility() == 0;
     }
 
     public void b() {
-        a(this.f9735f.f14168o.ab() < 0 ? 100 : this.f9735f.f14168o.ab(), new Runnable() { // from class: com.anythink.basead.ui.BaseBannerATView.2
+        a(this.f10521f.f14954o.ab() < 0 ? 100 : this.f10521f.f14954o.ab(), new Runnable() { // from class: com.anythink.basead.ui.BaseBannerATView.2
             @Override // java.lang.Runnable
             public final void run() {
                 BaseBannerATView.this.j();
@@ -65,11 +65,11 @@ public abstract class BaseBannerATView extends BaseATView {
     }
 
     public void c() {
-        this.f9815b.setOnTouchListener(new View.OnTouchListener() { // from class: com.anythink.basead.ui.BaseBannerATView.3
+        this.f10601b.setOnTouchListener(new View.OnTouchListener() { // from class: com.anythink.basead.ui.BaseBannerATView.3
             @Override // android.view.View.OnTouchListener
             public final boolean onTouch(View view, MotionEvent motionEvent) {
                 com.anythink.basead.g.a aVar;
-                if (motionEvent.getAction() != 0 || (aVar = BaseBannerATView.this.f9814a) == null) {
+                if (motionEvent.getAction() != 0 || (aVar = BaseBannerATView.this.f10600a) == null) {
                     return true;
                 }
                 aVar.onAdClosed();
@@ -80,7 +80,7 @@ public abstract class BaseBannerATView extends BaseATView {
 
     @Override // com.anythink.basead.ui.BaseATView
     public final void f() {
-        com.anythink.basead.g.a aVar = this.f9814a;
+        com.anythink.basead.g.a aVar = this.f10600a;
         if (aVar != null) {
             aVar.onAdShow(new j());
         }
@@ -94,19 +94,19 @@ public abstract class BaseBannerATView extends BaseATView {
     @Override // com.anythink.basead.ui.BaseATView, android.view.ViewGroup
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
         e eVar;
-        return (d() || (eVar = this.f9813A) == null) ? super.onInterceptTouchEvent(motionEvent) : eVar.a(motionEvent);
+        return (d() || (eVar = this.f10599A) == null) ? super.onInterceptTouchEvent(motionEvent) : eVar.a(motionEvent);
     }
 
     @Override // com.anythink.basead.ui.BaseATView, android.view.View
     public boolean onTouchEvent(MotionEvent motionEvent) {
         e eVar;
-        return (d() || (eVar = this.f9813A) == null) ? super.onTouchEvent(motionEvent) : eVar.a(this, motionEvent);
+        return (d() || (eVar = this.f10599A) == null) ? super.onTouchEvent(motionEvent) : eVar.a(this, motionEvent);
     }
 
     @Override // android.view.View
-    public void onVisibilityAggregated(boolean z3) {
-        super.onVisibilityAggregated(z3);
-        if (z3) {
+    public void onVisibilityAggregated(boolean z6) {
+        super.onVisibilityAggregated(z6);
+        if (z6) {
             a(110);
         } else {
             a(111);
@@ -119,10 +119,10 @@ public abstract class BaseBannerATView extends BaseATView {
     }
 
     @Override // android.view.View
-    public void onWindowFocusChanged(boolean z3) {
-        super.onWindowFocusChanged(z3);
+    public void onWindowFocusChanged(boolean z6) {
+        super.onWindowFocusChanged(z6);
         if (Build.VERSION.SDK_INT < 28) {
-            if (z3) {
+            if (z6) {
                 a(110);
             } else {
                 a(111);
@@ -147,13 +147,13 @@ public abstract class BaseBannerATView extends BaseATView {
     private void a(x xVar, w wVar) {
         if (xVar != null) {
             if (wVar == null || !wVar.c()) {
-                y yVar = xVar.f14168o;
+                y yVar = xVar.f14954o;
                 if (yVar != null && yVar.as()) {
                     e eVar = new e();
-                    this.f9813A = eVar;
+                    this.f10599A = eVar;
                     eVar.a(true).a(new AnonymousClass1());
                 } else {
-                    e eVar2 = this.f9813A;
+                    e eVar2 = this.f10599A;
                     if (eVar2 != null) {
                         eVar2.a(false);
                     }
@@ -165,16 +165,16 @@ public abstract class BaseBannerATView extends BaseATView {
     public BaseBannerATView(Context context, x xVar, w wVar, com.anythink.basead.g.a aVar) {
         super(context, xVar, wVar);
         this.TAG = getClass().getSimpleName();
-        this.f9814a = aVar;
+        this.f10600a = aVar;
         if (xVar != null) {
             if (wVar == null || !wVar.c()) {
-                y yVar = xVar.f14168o;
+                y yVar = xVar.f14954o;
                 if (yVar != null && yVar.as()) {
                     e eVar = new e();
-                    this.f9813A = eVar;
+                    this.f10599A = eVar;
                     eVar.a(true).a(new AnonymousClass1());
                 } else {
-                    e eVar2 = this.f9813A;
+                    e eVar2 = this.f10599A;
                     if (eVar2 != null) {
                         eVar2.a(false);
                     }
@@ -185,23 +185,23 @@ public abstract class BaseBannerATView extends BaseATView {
 
     @Override // com.anythink.basead.ui.BaseATView
     public final void a(j jVar) {
-        com.anythink.basead.g.a aVar = this.f9814a;
+        com.anythink.basead.g.a aVar = this.f10600a;
         if (aVar != null) {
             aVar.onAdClick(jVar);
         }
     }
 
     @Override // com.anythink.basead.ui.BaseATView
-    public final void a(int i, int i6) {
-        super.a(i, i6);
-        a((b) this.f9815b, true);
+    public final void a(int i, int i4) {
+        super.a(i, i4);
+        a((b) this.f10601b, true);
     }
 
     @Override // com.anythink.basead.ui.BaseATView
-    public final void a(boolean z3) {
-        com.anythink.basead.g.a aVar = this.f9814a;
+    public final void a(boolean z6) {
+        com.anythink.basead.g.a aVar = this.f10600a;
         if (aVar != null) {
-            aVar.onDeeplinkCallback(z3);
+            aVar.onDeeplinkCallback(z6);
         }
     }
 }

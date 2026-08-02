@@ -14,13 +14,13 @@ public final class G6 implements Choreographer.FrameCallback, Handler.Callback {
     public int A00;
     public Choreographer A01;
     public final Handler A02;
-    public volatile long A04 = b.f6382b;
+    public volatile long A04 = b.f7168b;
     public final HandlerThread A03 = new HandlerThread(A01(0, 35, 125));
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 15);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 15);
         }
         return new String(copyOfRange);
     }
@@ -57,7 +57,7 @@ public final class G6 implements Choreographer.FrameCallback, Handler.Callback {
         try {
             this.A01 = Choreographer.getInstance();
         } catch (RuntimeException e9) {
-            AbstractC06324g.A0A(A01(35, 23, 119), A01(58, 45, 87), e9);
+            AbstractC06524g.A0A(A01(35, 23, 119), A01(58, 45, 87), e9);
         }
     }
 
@@ -66,7 +66,7 @@ public final class G6 implements Choreographer.FrameCallback, Handler.Callback {
             this.A00--;
             if (this.A00 == 0) {
                 this.A01.removeFrameCallback(this);
-                this.A04 = b.f6382b;
+                this.A04 = b.f7168b;
             }
         }
     }
@@ -82,7 +82,7 @@ public final class G6 implements Choreographer.FrameCallback, Handler.Callback {
     @Override // android.view.Choreographer.FrameCallback
     public final void doFrame(long j6) {
         this.A04 = j6;
-        ((Choreographer) AbstractC06243y.A01(this.A01)).postFrameCallbackDelayed(this, 500L);
+        ((Choreographer) AbstractC06443y.A01(this.A01)).postFrameCallbackDelayed(this, 500L);
     }
 
     @Override // android.os.Handler.Callback

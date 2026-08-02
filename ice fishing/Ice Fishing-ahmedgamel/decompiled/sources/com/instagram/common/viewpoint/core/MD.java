@@ -8,7 +8,7 @@ import android.widget.TextView;
 import java.util.Arrays;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class MD extends AbstractC1403Zd {
+public final class MD extends AbstractC1423Zd {
     public static byte[] A06;
     public static final int A07;
     public static final int A08;
@@ -17,13 +17,13 @@ public final class MD extends AbstractC1403Zd {
     public final ImageView A01;
     public final LinearLayout A02;
     public final LinearLayout A03;
-    public final C1130Og A04;
-    public final C1840gi A05;
+    public final C1150Og A04;
+    public final C1860gi A05;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A06, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 20);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A06, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 20);
         }
         return new String(copyOfRange);
     }
@@ -39,10 +39,10 @@ public final class MD extends AbstractC1403Zd {
         A07 = (int) (XX.A02 * 44.0f);
     }
 
-    public MD(C1840gi c1840gi, VA va, String str) {
-        super(c1840gi, va, str);
-        this.A05 = c1840gi;
-        this.A04 = AbstractC1131Oh.A00(c1840gi.A02());
+    public MD(C1860gi c1860gi, VA va, String str) {
+        super(c1860gi, va, str);
+        this.A05 = c1860gi;
+        this.A04 = AbstractC1151Oh.A00(c1860gi.A02());
         this.A01 = new ImageView(getContext());
         this.A01.setPadding(A08, A08, A08, A08);
         this.A01.setScaleType(ImageView.ScaleType.FIT_CENTER);
@@ -67,37 +67,37 @@ public final class MD extends AbstractC1403Zd {
         this.A03.setClickable(true);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1403Zd
+    @Override // com.instagram.common.viewpoint.core.AbstractC1423Zd
     public final void A0O() {
         this.A01.setImageBitmap(YN.A01(YM.CROSS));
-        this.A01.setOnClickListener(new ViewOnClickListenerC1412Zm(this));
+        this.A01.setOnClickListener(new ViewOnClickListenerC1432Zm(this));
         this.A01.setContentDescription(A00(4, 18, 84));
-        C1407Zh c1407Zh = new C1407Zh(this.A05);
-        c1407Zh.setData(this.A04.A0H(), YM.HIDE_AD);
-        c1407Zh.setOnClickListener(new ViewOnClickListenerC1413Zn(this, c1407Zh));
-        C1407Zh c1407Zh2 = new C1407Zh(this.A05);
-        c1407Zh2.setData(this.A04.A0L(), YM.REPORT_AD);
-        c1407Zh2.setOnClickListener(new ViewOnClickListenerC1414Zo(this, c1407Zh2));
-        C1407Zh c1407Zh3 = new C1407Zh(this.A05);
-        c1407Zh3.setData(this.A04.A0M(), YM.AD_CHOICES_ICON);
-        c1407Zh3.setOnClickListener(new ViewOnClickListenerC1415Zp(this, c1407Zh3));
+        C1427Zh c1427Zh = new C1427Zh(this.A05);
+        c1427Zh.setData(this.A04.A0H(), YM.HIDE_AD);
+        c1427Zh.setOnClickListener(new ViewOnClickListenerC1433Zn(this, c1427Zh));
+        C1427Zh c1427Zh2 = new C1427Zh(this.A05);
+        c1427Zh2.setData(this.A04.A0L(), YM.REPORT_AD);
+        c1427Zh2.setOnClickListener(new ViewOnClickListenerC1434Zo(this, c1427Zh2));
+        C1427Zh c1427Zh3 = new C1427Zh(this.A05);
+        c1427Zh3.setData(this.A04.A0M(), YM.AD_CHOICES_ICON);
+        c1427Zh3.setOnClickListener(new ViewOnClickListenerC1435Zp(this, c1427Zh3));
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-2, -2);
         layoutParams.setMargins(0, A09, A09, A09);
         YB.A0W(this.A03);
         this.A02.removeAllViews();
-        this.A02.addView(c1407Zh, layoutParams);
-        this.A02.addView(c1407Zh2, layoutParams);
-        this.A02.addView(c1407Zh3, layoutParams);
+        this.A02.addView(c1427Zh, layoutParams);
+        this.A02.addView(c1427Zh2, layoutParams);
+        this.A02.addView(c1427Zh3, layoutParams);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1403Zd
+    @Override // com.instagram.common.viewpoint.core.AbstractC1423Zd
     public final void A0P() {
         YB.A0I(this);
         YB.A0J(this);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1403Zd
-    public final void A0Q(C1134Ok c1134Ok, EnumC1132Oi enumC1132Oi) {
+    @Override // com.instagram.common.viewpoint.core.AbstractC1423Zd
+    public final void A0Q(C1154Ok c1154Ok, EnumC1152Oi enumC1152Oi) {
         this.A01.setOnClickListener(null);
         TextView textView = new TextView(getContext());
         YB.A0a(textView, true, 14);
@@ -106,28 +106,28 @@ public final class MD extends AbstractC1403Zd {
         YB.A0W(this.A03);
         this.A03.removeAllViews();
         this.A03.addView(textView, new LinearLayout.LayoutParams(-1, -1));
-        super.A0Q(c1134Ok, enumC1132Oi);
+        super.A0Q(c1154Ok, enumC1152Oi);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1403Zd
-    public final void A0R(C1134Ok c1134Ok, EnumC1132Oi enumC1132Oi) {
+    @Override // com.instagram.common.viewpoint.core.AbstractC1423Zd
+    public final void A0R(C1154Ok c1154Ok, EnumC1152Oi enumC1152Oi) {
         YB.A0W(this.A03);
         this.A01.setImageBitmap(YN.A01(YM.BACK_ARROW));
-        this.A01.setOnClickListener(new ViewOnClickListenerC1416Zq(this));
+        this.A01.setOnClickListener(new ViewOnClickListenerC1436Zq(this));
         this.A01.setContentDescription(A00(0, 4, 85));
         this.A02.removeAllViews();
         this.A00.fullScroll(17);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-2, -2);
         layoutParams.setMargins(0, A09, A09, A09);
-        for (C1134Ok c1134Ok2 : c1134Ok.A05()) {
-            C1407Zh c1407Zh = new C1407Zh(this.A05);
-            c1407Zh.setData(c1134Ok2.A04(), null);
-            c1407Zh.setOnClickListener(new ViewOnClickListenerC1417Zr(this, c1407Zh, c1134Ok2));
-            this.A02.addView(c1407Zh, layoutParams);
+        for (C1154Ok c1154Ok2 : c1154Ok.A05()) {
+            C1427Zh c1427Zh = new C1427Zh(this.A05);
+            c1427Zh.setData(c1154Ok2.A04(), null);
+            c1427Zh.setOnClickListener(new ViewOnClickListenerC1437Zr(this, c1427Zh, c1154Ok2));
+            this.A02.addView(c1427Zh, layoutParams);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1403Zd
+    @Override // com.instagram.common.viewpoint.core.AbstractC1423Zd
     public final boolean A0S() {
         return true;
     }

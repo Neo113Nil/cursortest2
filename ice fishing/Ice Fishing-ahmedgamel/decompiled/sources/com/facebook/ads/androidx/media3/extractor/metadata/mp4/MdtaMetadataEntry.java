@@ -3,7 +3,7 @@ package com.facebook.ads.androidx.media3.extractor.metadata.mp4;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.facebook.ads.androidx.media3.common.Metadata;
-import com.instagram.common.viewpoint.core.C2400qI;
+import com.instagram.common.viewpoint.core.C2420qI;
 import com.instagram.common.viewpoint.core.C3E;
 import com.instagram.common.viewpoint.core.C5C;
 import com.instagram.common.viewpoint.core.IM;
@@ -19,10 +19,10 @@ public final class MdtaMetadataEntry implements Metadata.Entry {
     public final String A02;
     public final byte[] A03;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 55);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 55);
         }
         return new String(copyOfRange);
     }
@@ -37,7 +37,7 @@ public final class MdtaMetadataEntry implements Metadata.Entry {
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Metadata.Entry
-    public final /* synthetic */ C2400qI A9b() {
+    public final /* synthetic */ C2420qI A9b() {
         return C3E.A00(this);
     }
 
@@ -57,11 +57,11 @@ public final class MdtaMetadataEntry implements Metadata.Entry {
         this(parcel);
     }
 
-    public MdtaMetadataEntry(String str, byte[] bArr, int i, int i6) {
+    public MdtaMetadataEntry(String str, byte[] bArr, int i, int i4) {
         this.A02 = str;
         this.A03 = bArr;
         this.A00 = i;
-        this.A01 = i6;
+        this.A01 = i4;
     }
 
     @Override // android.os.Parcelable
@@ -85,13 +85,13 @@ public final class MdtaMetadataEntry implements Metadata.Entry {
         A05[4] = "ER0xmSd6UN1zW0bdX1OFC0qdco0m4mUZ";
         if (equals && Arrays.equals(this.A03, mdtaMetadataEntry.A03)) {
             int i = this.A00;
-            int i6 = mdtaMetadataEntry.A00;
+            int i4 = mdtaMetadataEntry.A00;
             String[] strArr2 = A05;
             if (strArr2[5].charAt(6) == strArr2[2].charAt(6)) {
                 throw new RuntimeException();
             }
             A05[1] = "F56Xno7FqUwIc5sxnGwPweIkgWLWP8mz";
-            if (i == i6 && this.A01 == mdtaMetadataEntry.A01) {
+            if (i == i4 && this.A01 == mdtaMetadataEntry.A01) {
                 return true;
             }
         }

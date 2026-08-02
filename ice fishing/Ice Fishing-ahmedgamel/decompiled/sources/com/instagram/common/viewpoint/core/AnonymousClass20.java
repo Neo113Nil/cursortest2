@@ -34,7 +34,7 @@ public final class AnonymousClass20 {
         return this;
     }
 
-    public final C2406qQ A05() {
-        return new C2406qQ(this.A01, this.A02, this.A04, this.A00, this.A03);
+    public final C2426qQ A05() {
+        return new C2426qQ(this.A01, this.A02, this.A04, this.A00, this.A03);
     }
 }

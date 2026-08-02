@@ -10,14 +10,14 @@ import org.json.JSONObject;
 public class m extends s {
 
     /* renamed from: f, reason: collision with root package name */
-    private static final String f14678f = "m";
+    private static final String f15464f = "m";
 
     /* renamed from: a, reason: collision with root package name */
-    JSONObject f14679a;
+    JSONObject f15465a;
 
     public m(Context context, ax axVar) {
         super(context, axVar);
-        this.f14679a = axVar.a();
+        this.f15465a = axVar.a();
     }
 
     @Override // com.anythink.core.common.m.s, com.anythink.core.common.m.a
@@ -27,8 +27,8 @@ public class m extends s {
                 return null;
             }
             JSONObject jSONObject = (JSONObject) obj;
-            if (((s) this).f14719c != null) {
-                jSONObject.put(s.f14711b, new JSONObject(((s) this).f14719c));
+            if (((s) this).f15505c != null) {
+                jSONObject.put(s.f15497b, new JSONObject(((s) this).f15505c));
             }
             return jSONObject;
         } catch (Exception unused) {
@@ -44,7 +44,7 @@ public class m extends s {
     public final JSONObject e() {
         JSONObject e9 = super.e();
         try {
-            e9.put("m_data", this.f14679a);
+            e9.put("m_data", this.f15465a);
         } catch (JSONException unused) {
         }
         return e9;

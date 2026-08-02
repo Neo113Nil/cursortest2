@@ -6,7 +6,7 @@ import android.content.Context;
 import android.text.TextUtils;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
-import com.anythink.basead.exoplayer.f.f;
+import com.IceFishing.LiveIceFishing.k;
 import com.anythink.core.common.d.t;
 import com.anythink.expressad.foundation.d.d;
 import com.anythink.expressad.foundation.f.a.a;
@@ -19,27 +19,27 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static int f19047a = -2;
+    public static int f19834a = -2;
 
     /* renamed from: b, reason: collision with root package name */
-    public static int f19048b = -2;
+    public static int f19835b = -2;
 
     /* renamed from: c, reason: collision with root package name */
-    public static volatile boolean f19049c = false;
+    public static volatile boolean f19836c = false;
 
     /* renamed from: d, reason: collision with root package name */
-    private final ConcurrentHashMap<String, com.anythink.expressad.foundation.f.a.a> f19050d;
+    private final ConcurrentHashMap<String, com.anythink.expressad.foundation.f.a.a> f19837d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final RelativeLayout.LayoutParams f19051e;
+    private final RelativeLayout.LayoutParams f19838e;
 
     /* renamed from: f, reason: collision with root package name */
-    private com.anythink.expressad.f.a f19052f;
+    private com.anythink.expressad.f.a f19839f;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private static final b f19053a = new b(0);
+        private static final b f19840a = new b(0);
     }
 
     public /* synthetic */ b(byte b9) {
@@ -47,7 +47,7 @@ public final class b {
     }
 
     public static b a() {
-        return a.f19053a;
+        return a.f19840a;
     }
 
     private static boolean b(Context context, c cVar) {
@@ -70,8 +70,8 @@ public final class b {
         if (TextUtils.isEmpty(str)) {
             str = com.anythink.expressad.foundation.b.a.c().f();
         }
-        if (this.f19050d.containsKey(str)) {
-            return this.f19050d.get(str);
+        if (this.f19837d.containsKey(str)) {
+            return this.f19837d.get(str);
         }
         return null;
     }
@@ -82,28 +82,28 @@ public final class b {
 
     public final void c(String str) {
         try {
-            String f3 = TextUtils.isEmpty(str) ? com.anythink.expressad.foundation.b.a.c().f() : str;
-            com.anythink.expressad.foundation.f.a.a aVar = this.f19050d.containsKey(f3) ? this.f19050d.get(f3) : null;
+            String f2 = TextUtils.isEmpty(str) ? com.anythink.expressad.foundation.b.a.c().f() : str;
+            com.anythink.expressad.foundation.f.a.a aVar = this.f19837d.containsKey(f2) ? this.f19837d.get(f2) : null;
             if (aVar != null) {
                 aVar.d();
             }
-            this.f19050d.remove(str);
+            this.f19837d.remove(str);
         } catch (Exception e9) {
             e9.printStackTrace();
         }
     }
 
     private b() {
-        this.f19050d = new ConcurrentHashMap<>();
-        this.f19051e = new RelativeLayout.LayoutParams(f19047a, f19048b);
+        this.f19837d = new ConcurrentHashMap<>();
+        this.f19838e = new RelativeLayout.LayoutParams(f19834a, f19835b);
     }
 
     public static Activity a(Context context) {
         Activity activity;
-        Context h9 = com.anythink.expressad.foundation.b.a.c().h();
+        Context h3 = com.anythink.expressad.foundation.b.a.c().h();
         Activity activity2 = null;
         try {
-            activity = h9 instanceof Activity ? (Activity) h9 : null;
+            activity = h3 instanceof Activity ? (Activity) h3 : null;
         } catch (Exception e9) {
             e = e9;
         }
@@ -128,7 +128,7 @@ public final class b {
     public final boolean b() {
         com.anythink.expressad.f.b.a();
         com.anythink.expressad.f.a c9 = com.anythink.expressad.f.b.c();
-        this.f19052f = c9;
+        this.f19839f = c9;
         return c9.K() != 0;
     }
 
@@ -157,10 +157,10 @@ public final class b {
         }
     }
 
-    private void a(String str, int i, int i6, int i9, float f3, float f9, float f10, String str2, String str3) {
+    private void a(String str, int i, int i4, int i6, float f2, float f9, float f10, String str2, String str3) {
         com.anythink.expressad.foundation.f.a.a a9 = a(str);
-        Context g4 = t.b().g();
-        a9.a(v.b(g4, f3), v.b(g4, f9), v.b(g4, i), v.b(g4, i6), v.b(g4, i9), f10, str2, str3);
+        Context g9 = t.b().g();
+        a9.a(v.b(g9, f2), v.b(g9, f9), v.b(g9, i), v.b(g9, i4), v.b(g9, i6), f10, str2, str3);
     }
 
     private void a(String str, Context context, ViewGroup viewGroup, ViewGroup.LayoutParams layoutParams) {
@@ -180,9 +180,9 @@ public final class b {
             FeedBackButton c9 = a9.c();
             if (c9 != null) {
                 if (layoutParams == null) {
-                    int e9 = f.e(10.0f);
-                    this.f19051e.setMargins(e9, e9, e9, e9);
-                    layoutParams = this.f19051e;
+                    int e9 = k.e(10.0f);
+                    this.f19838e.setMargins(e9, e9, e9, e9);
+                    layoutParams = this.f19838e;
                 }
                 ViewGroup viewGroup2 = (ViewGroup) c9.getParent();
                 if (viewGroup2 != null) {
@@ -223,17 +223,17 @@ public final class b {
         if (TextUtils.isEmpty(str)) {
             str = com.anythink.expressad.foundation.b.a.c().f();
         }
-        if (!this.f19050d.containsKey(str)) {
+        if (!this.f19837d.containsKey(str)) {
             aVar = new com.anythink.expressad.foundation.f.a.a(str);
-            this.f19050d.put(str, aVar);
+            this.f19837d.put(str, aVar);
         } else {
-            aVar = this.f19050d.get(str);
+            aVar = this.f19837d.get(str);
         }
         if (aVar != null) {
             return aVar;
         }
         com.anythink.expressad.foundation.f.a.a aVar2 = new com.anythink.expressad.foundation.f.a.a(str);
-        this.f19050d.put(str, aVar2);
+        this.f19837d.put(str, aVar2);
         return aVar2;
     }
 

@@ -12,10 +12,10 @@ public final class V3 implements AudienceNetworkExportedActivityApi {
     public static String[] A02 = {"mk4JADweKGMdEipgs7lqzWCmp9MhwBVd", "7Ny", "iKbrrxCAW5LmmXQLv4pN0A2xOojW5LEh", "hTGooAwgeIivj8mmjwzyxJz5o5QVTAJv", "t2q", "TYEvFDV2ICGQhAA5rVoFfbgoEst1cigG", "6Z5Mtc9AK5a0redP3ZVrPDgigSlCVve8", "dEPXAz2Hd7rZMNq86xusU7gw49uZCQrL"};
     public final Activity A00;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 65);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 65);
         }
         return new String(copyOfRange);
     }
@@ -55,11 +55,11 @@ public final class V3 implements AudienceNetworkExportedActivityApi {
             }
         }
         A02(12);
-        if (v22.A00 instanceof C1954id) {
-            ((C1954id) v22.A00).A0F().A0F().AHu();
+        if (v22.A00 instanceof C1974id) {
+            ((C1974id) v22.A00).A0F().A0F().AHu();
         }
-        if (v22.A00 instanceof C1951iZ) {
-            InterfaceC1066Lt A0F = ((C1951iZ) v22.A00).A0H().A0F();
+        if (v22.A00 instanceof C1971iZ) {
+            InterfaceC1086Lt A0F = ((C1971iZ) v22.A00).A0H().A0F();
             if (A02[6].charAt(24) == 'N') {
                 throw new RuntimeException();
             }
@@ -74,7 +74,7 @@ public final class V3 implements AudienceNetworkExportedActivityApi {
 
     @Override // com.facebook.ads.internal.api.AudienceNetworkExportedActivityApi
     public final void onCreate(Bundle bundle) {
-        C1840gi A05 = C1213Rp.A05(this.A00, UUID.randomUUID().toString());
+        C1860gi A05 = C1233Rp.A05(this.A00, UUID.randomUUID().toString());
         if (this.A00.isTaskRoot()) {
             A05.A0F().AHm();
             A02(10);
@@ -95,7 +95,7 @@ public final class V3 implements AudienceNetworkExportedActivityApi {
         A02[6] = "lksFSMsleDiju0zPRojKCtBItYjbAveN";
         V2 A04 = A00.A04(stringExtra);
         OG og = A04 != null ? A04.A00 : null;
-        if (A04 != null && (og instanceof C1951iZ)) {
+        if (A04 != null && (og instanceof C1971iZ)) {
             boolean A03 = A03(A04);
             String[] strArr2 = A02;
             String adId2 = strArr2[3];
@@ -106,16 +106,16 @@ public final class V3 implements AudienceNetworkExportedActivityApi {
             if (!A03) {
                 return;
             }
-            C1951iZ c1951iZ = (C1951iZ) og;
-            c1951iZ.A0G().A01().A0J(this.A00);
-            c1951iZ.A0M(this.A00.getIntent().getIntExtra(A00(0, 26, 101), -1), 0L);
-        } else if (A04 != null && (og instanceof C1954id)) {
+            C1971iZ c1971iZ = (C1971iZ) og;
+            c1971iZ.A0G().A01().A0J(this.A00);
+            c1971iZ.A0M(this.A00.getIntent().getIntExtra(A00(0, 26, 101), -1), 0L);
+        } else if (A04 != null && (og instanceof C1974id)) {
             if (!A03(A04)) {
                 return;
             }
-            C1954id c1954id = (C1954id) og;
-            c1954id.A0E().A05().A0J(this.A00);
-            c1954id.A0J();
+            C1974id c1974id = (C1974id) og;
+            c1974id.A0E().A05().A0J(this.A00);
+            c1974id.A0J();
         } else {
             A05.A0F().AII();
             A02(13);

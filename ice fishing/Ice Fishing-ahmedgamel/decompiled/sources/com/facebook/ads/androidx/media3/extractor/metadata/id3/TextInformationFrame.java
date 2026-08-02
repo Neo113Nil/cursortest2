@@ -3,7 +3,7 @@ package com.facebook.ads.androidx.media3.extractor.metadata.id3;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.facebook.video.heroplayer.exocustom.MetaExoPlayerCustomization;
-import com.instagram.common.viewpoint.core.AbstractC06243y;
+import com.instagram.common.viewpoint.core.AbstractC06443y;
 import com.instagram.common.viewpoint.core.C5C;
 import com.instagram.common.viewpoint.core.IJ;
 import com.instagram.common.viewpoint.core.MetaExoPlayerCustomizedCollections;
@@ -23,10 +23,10 @@ public final class TextInformationFrame extends Id3Frame {
     @MetaExoPlayerCustomization("Replaces ImmutableList with MetaExoPlayerCustomizedCollections")
     public final List<String> A02;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 60);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 60);
         }
         return new String(copyOfRange);
     }
@@ -50,7 +50,7 @@ public final class TextInformationFrame extends Id3Frame {
 
     @MetaExoPlayerCustomization("Replaces ImmutableList.copyOf with MetaExoPlayerCustomizedCollections")
     public TextInformationFrame(Parcel parcel) {
-        this((String) AbstractC06243y.A01(parcel.readString()), parcel.readString(), MetaExoPlayerCustomizedCollections.A02((String[]) AbstractC06243y.A01(parcel.createStringArray())));
+        this((String) AbstractC06443y.A01(parcel.readString()), parcel.readString(), MetaExoPlayerCustomizedCollections.A02((String[]) AbstractC06443y.A01(parcel.createStringArray())));
     }
 
     public /* synthetic */ TextInformationFrame(Parcel parcel, IJ ij) {
@@ -60,7 +60,7 @@ public final class TextInformationFrame extends Id3Frame {
     @MetaExoPlayerCustomization("Replaces ImmutableList.copyOf with MetaExoPlayerCustomizedCollections")
     public TextInformationFrame(String str, String str2, List<String> values) {
         super(str);
-        AbstractC06243y.A07(!values.isEmpty());
+        AbstractC06443y.A07(!values.isEmpty());
         this.A00 = str2;
         this.A02 = MetaExoPlayerCustomizedCollections.A02((String[]) values.toArray(new String[0]));
         this.A01 = this.A02.get(0);

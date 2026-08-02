@@ -29,7 +29,7 @@ public class QC extends AccessibilityNodeProvider {
     }
 
     @Override // android.view.accessibility.AccessibilityNodeProvider
-    public final boolean performAction(int i, int i6, Bundle bundle) {
-        return this.A00.AGv(i, i6, bundle);
+    public final boolean performAction(int i, int i4, Bundle bundle) {
+        return this.A00.AGv(i, i4, bundle);
     }
 }

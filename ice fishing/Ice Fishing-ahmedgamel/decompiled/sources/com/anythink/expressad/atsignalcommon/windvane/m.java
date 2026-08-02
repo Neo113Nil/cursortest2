@@ -16,33 +16,33 @@ import java.io.InputStreamReader;
 public final class m extends com.anythink.core.express.web.b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f18089a = "WindVaneWebViewClient";
+    public static final String f18876a = "WindVaneWebViewClient";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f18090c = 0;
+    public static final int f18877c = 0;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f18091d = 1;
+    public static final int f18878d = 1;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f18092e = "mmusdk_cache";
+    public static final String f18879e = "mmusdk_cache";
 
     /* renamed from: f, reason: collision with root package name */
-    public static final String f18093f = "1";
+    public static final String f18880f = "1";
 
     /* renamed from: g, reason: collision with root package name */
-    public static boolean f18094g = true;
+    public static boolean f18881g = true;
 
     /* renamed from: b, reason: collision with root package name */
-    protected String f18095b;
+    protected String f18882b;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f18096h;
+    private int f18883h;
     private com.anythink.core.express.web.c i;
 
     public m() {
-        this.f18095b = null;
-        this.f18096h = 0;
+        this.f18882b = null;
+        this.f18883h = 0;
     }
 
     private static String a(InputStream inputStream) {
@@ -69,7 +69,7 @@ public final class m extends com.anythink.core.express.web.b {
     @Override // android.webkit.WebViewClient
     public final void onPageStarted(WebView webView, String str, Bitmap bitmap) {
         super.onPageStarted(webView, str, bitmap);
-        this.f18095b = str;
+        this.f18882b = str;
         com.anythink.core.express.web.c cVar = this.i;
         if (cVar != null) {
             cVar.onPageStarted(webView, str, bitmap);
@@ -83,8 +83,8 @@ public final class m extends com.anythink.core.express.web.b {
     }
 
     private m(int i) {
-        this.f18095b = null;
-        this.f18096h = i;
+        this.f18882b = null;
+        this.f18883h = i;
     }
 
     private static WebResourceResponse a(String str) {

@@ -8,16 +8,16 @@ import y8.s;
 public abstract class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final byte[] f42275a;
+    public static final byte[] f42244a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final long[] f42276b;
+    public static final long[] f42245b;
 
     static {
-        byte[] bytes = "0123456789abcdef".getBytes(Q7.a.f2664a);
+        byte[] bytes = "0123456789abcdef".getBytes(Q7.a.f2701a);
         h.d(bytes, "getBytes(...)");
-        f42275a = bytes;
-        f42276b = new long[]{-1, 9, 99, 999, 9999, 99999, 999999, 9999999, 99999999, 999999999, 9999999999L, 99999999999L, 999999999999L, 9999999999999L, 99999999999999L, 999999999999999L, 9999999999999999L, 99999999999999999L, 999999999999999999L, Long.MAX_VALUE};
+        f42244a = bytes;
+        f42245b = new long[]{-1, 9, 99, 999, 9999, 99999, 999999, 9999999, 99999999, 999999999, 9999999999L, 99999999999L, 999999999999L, 9999999999999L, 99999999999999L, 999999999999999L, 9999999999999999L, 99999999999999999L, 999999999999999999L, Long.MAX_VALUE};
     }
 
     public static final String a(long j6, y8.e eVar) {
@@ -25,12 +25,12 @@ public abstract class a {
         if (j6 > 0) {
             long j9 = j6 - 1;
             if (eVar.k(j9) == 13) {
-                String F8 = eVar.F(j9, Q7.a.f2664a);
+                String F8 = eVar.F(j9, Q7.a.f2701a);
                 eVar.H(2L);
                 return F8;
             }
         }
-        String F9 = eVar.F(j6, Q7.a.f2664a);
+        String F9 = eVar.F(j6, Q7.a.f2701a);
         eVar.H(1L);
         return F9;
     }
@@ -46,118 +46,118 @@ public abstract class a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final int b(y8.e eVar, m mVar, boolean z3) {
+    public static final int b(y8.e eVar, m mVar, boolean z6) {
         int i;
         byte[] bArr;
+        int i4;
         int i6;
-        int i9;
         s sVar;
         byte[] bArr2;
-        int i10;
+        int i9;
         h.e(eVar, "<this>");
-        s sVar2 = eVar.f41952n;
+        s sVar2 = eVar.f41923n;
         if (sVar2 == null) {
-            return z3 ? -2 : -1;
+            return z6 ? -2 : -1;
         }
-        int i11 = sVar2.f41988b;
-        int i12 = sVar2.f41989c;
-        byte[] bArr3 = sVar2.f41987a;
+        int i10 = sVar2.f41959b;
+        int i11 = sVar2.f41960c;
+        byte[] bArr3 = sVar2.f41958a;
         s sVar3 = sVar2;
-        int i13 = -1;
-        int i14 = 0;
+        int i12 = -1;
+        int i13 = 0;
         loop0: while (true) {
-            int i15 = i14 + 1;
-            int[] iArr = mVar.f41971u;
-            int i16 = iArr[i14];
-            int i17 = i14 + 2;
-            int i18 = iArr[i15];
-            if (i18 != -1) {
-                i13 = i18;
+            int i14 = i13 + 1;
+            int[] iArr = mVar.f41942u;
+            int i15 = iArr[i13];
+            int i16 = i13 + 2;
+            int i17 = iArr[i14];
+            if (i17 != -1) {
+                i12 = i17;
             }
             if (sVar3 == null) {
                 break;
             }
-            if (i16 >= 0) {
-                int i19 = i11 + 1;
-                int i20 = bArr3[i11] & 255;
-                int i21 = i17 + i16;
-                while (i17 != i21) {
-                    if (i20 == iArr[i17]) {
-                        i = iArr[i17 + i16];
-                        if (i19 == i12) {
-                            sVar3 = sVar3.f41992f;
+            if (i15 >= 0) {
+                int i18 = i10 + 1;
+                int i19 = bArr3[i10] & 255;
+                int i20 = i16 + i15;
+                while (i16 != i20) {
+                    if (i19 == iArr[i16]) {
+                        i = iArr[i16 + i15];
+                        if (i18 == i11) {
+                            sVar3 = sVar3.f41963f;
                             h.b(sVar3);
-                            i9 = sVar3.f41988b;
-                            i6 = sVar3.f41989c;
-                            bArr = sVar3.f41987a;
+                            i6 = sVar3.f41959b;
+                            i4 = sVar3.f41960c;
+                            bArr = sVar3.f41958a;
                             if (sVar3 == sVar2) {
                                 sVar3 = null;
                             }
                         } else {
                             bArr = bArr3;
-                            i6 = i12;
-                            i9 = i19;
+                            i4 = i11;
+                            i6 = i18;
                         }
                         if (i >= 0) {
                             return i;
                         }
                         byte[] bArr4 = bArr;
-                        i14 = -i;
-                        i11 = i9;
-                        i12 = i6;
+                        i13 = -i;
+                        i10 = i6;
+                        i11 = i4;
                         bArr3 = bArr4;
                     } else {
-                        i17++;
+                        i16++;
                     }
                 }
                 break loop0;
             }
-            int i22 = (i16 * (-1)) + i17;
+            int i21 = (i15 * (-1)) + i16;
             while (true) {
-                int i23 = i11 + 1;
-                int i24 = i17 + 1;
-                if ((bArr3[i11] & 255) != iArr[i17]) {
+                int i22 = i10 + 1;
+                int i23 = i16 + 1;
+                if ((bArr3[i10] & 255) != iArr[i16]) {
                     break loop0;
                 }
-                boolean z6 = i24 == i22;
-                if (i23 == i12) {
+                boolean z9 = i23 == i21;
+                if (i22 == i11) {
                     h.b(sVar3);
-                    s sVar4 = sVar3.f41992f;
+                    s sVar4 = sVar3.f41963f;
                     h.b(sVar4);
-                    i10 = sVar4.f41988b;
-                    int i25 = sVar4.f41989c;
-                    bArr2 = sVar4.f41987a;
+                    i9 = sVar4.f41959b;
+                    int i24 = sVar4.f41960c;
+                    bArr2 = sVar4.f41958a;
                     if (sVar4 != sVar2) {
                         sVar = sVar4;
-                        i12 = i25;
+                        i11 = i24;
                     } else {
-                        if (!z6) {
+                        if (!z9) {
                             break loop0;
                         }
-                        i12 = i25;
+                        i11 = i24;
                         sVar = null;
                     }
                 } else {
                     sVar = sVar3;
                     bArr2 = bArr3;
-                    i10 = i23;
+                    i9 = i22;
                 }
-                if (z6) {
-                    i = iArr[i24];
-                    int i26 = i10;
-                    i6 = i12;
-                    i9 = i26;
+                if (z9) {
+                    i = iArr[i23];
+                    int i25 = i9;
+                    i4 = i11;
+                    i6 = i25;
                     byte[] bArr5 = bArr2;
                     sVar3 = sVar;
                     bArr = bArr5;
                     break;
                 }
-                i11 = i10;
+                i10 = i9;
                 bArr3 = bArr2;
                 sVar3 = sVar;
-                i17 = i24;
+                i16 = i23;
             }
         }
-        return i13;
+        return i12;
     }
 }

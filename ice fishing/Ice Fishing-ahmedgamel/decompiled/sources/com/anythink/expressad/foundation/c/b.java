@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public abstract class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private a f18527a;
+    private a f19314a;
 
     public class a extends SQLiteOpenHelper {
         public a(Context context, String str) {
@@ -20,22 +20,22 @@ public abstract class b {
         }
 
         @Override // android.database.sqlite.SQLiteOpenHelper
-        public final void onDowngrade(SQLiteDatabase sQLiteDatabase, int i, int i6) {
+        public final void onDowngrade(SQLiteDatabase sQLiteDatabase, int i, int i4) {
             b.this.b(sQLiteDatabase);
         }
 
         @Override // android.database.sqlite.SQLiteOpenHelper
-        public final void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i6) {
+        public final void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i4) {
             b.this.a(sQLiteDatabase);
         }
     }
 
     public b(Context context) {
-        this.f18527a = new a(context, c());
+        this.f19314a = new a(context, c());
     }
 
     public final SQLiteDatabase a() {
-        return this.f18527a.getReadableDatabase();
+        return this.f19314a.getReadableDatabase();
     }
 
     public abstract void a(SQLiteDatabase sQLiteDatabase);
@@ -43,7 +43,7 @@ public abstract class b {
     public final synchronized SQLiteDatabase b() {
         SQLiteDatabase sQLiteDatabase;
         try {
-            sQLiteDatabase = this.f18527a.getWritableDatabase();
+            sQLiteDatabase = this.f19314a.getWritableDatabase();
         } catch (Exception unused) {
             sQLiteDatabase = null;
         }

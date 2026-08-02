@@ -7,69 +7,70 @@ import android.view.View;
 import com.google.android.gms.ads.mediation.MediationBannerAdapter;
 import com.google.android.gms.ads.mediation.MediationInterstitialAdapter;
 import com.google.android.gms.ads.mediation.MediationNativeAdapter;
-import com.google.android.gms.internal.ads.AbstractC2684Na;
-import com.google.android.gms.internal.ads.AbstractC3569ma;
-import com.google.android.gms.internal.ads.BinderC2770Sb;
-import com.google.android.gms.internal.ads.BinderC2786Tb;
-import com.google.android.gms.internal.ads.BinderC2802Ub;
-import com.google.android.gms.internal.ads.C2500Cd;
-import com.google.android.gms.internal.ads.C2635Kc;
-import com.google.android.gms.internal.ads.C3462kb;
-import com.google.android.gms.internal.ads.C3481ku;
+import com.google.android.gms.internal.ads.AbstractC2704Na;
+import com.google.android.gms.internal.ads.AbstractC3592ma;
+import com.google.android.gms.internal.ads.BinderC2790Sb;
+import com.google.android.gms.internal.ads.BinderC2807Tb;
+import com.google.android.gms.internal.ads.BinderC2824Ub;
+import com.google.android.gms.internal.ads.C2520Cd;
+import com.google.android.gms.internal.ads.C2655Kc;
+import com.google.android.gms.internal.ads.C3485kb;
+import com.google.android.gms.internal.ads.C3504ku;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
-import k2.f;
-import k2.g;
-import k2.h;
-import k2.j;
-import k2.v;
-import k2.w;
-import k2.y;
-import n2.C4752c;
-import q2.A0;
-import q2.C4900p;
-import q2.E0;
-import q2.G;
-import q2.G0;
-import q2.K;
-import q2.Z0;
-import q2.r;
-import v2.AbstractC5111b;
-import v2.i;
-import w2.AbstractC5148a;
-import x2.InterfaceC5190d;
-import x2.InterfaceC5194h;
-import x2.k;
-import x2.m;
-import x2.o;
+import m2.e;
+import m2.f;
+import m2.g;
+import m2.h;
+import m2.j;
+import m2.v;
+import m2.w;
+import m2.y;
+import p2.C4832c;
+import s2.A0;
+import s2.C4949p;
+import s2.E0;
+import s2.G;
+import s2.G0;
+import s2.K;
+import s2.Z0;
+import s2.r;
+import x2.AbstractC5190b;
+import x2.d;
+import x2.i;
+import y2.AbstractC5205a;
+import z2.InterfaceC5227d;
+import z2.InterfaceC5231h;
+import z2.l;
+import z2.n;
 
 /* loaded from: classes.dex */
 public abstract class AbstractAdViewAdapter implements MediationBannerAdapter, MediationInterstitialAdapter, MediationNativeAdapter {
     public static final String AD_UNIT_ID_PARAMETER = "pubid";
-    private k2.e adLoader;
+    private e adLoader;
     protected j mAdView;
-    protected AbstractC5148a mInterstitialAd;
+    protected AbstractC5205a mInterstitialAd;
 
-    public g buildAdRequest(Context context, InterfaceC5190d interfaceC5190d, Bundle bundle, Bundle bundle2) {
-        f fVar = new f(2);
-        Set d2 = interfaceC5190d.d();
-        E0 e02 = (E0) fVar.f1720u;
-        if (d2 != null) {
-            Iterator it = d2.iterator();
+    public g buildAdRequest(Context context, InterfaceC5227d interfaceC5227d, Bundle bundle, Bundle bundle2) {
+        f fVar = new f(3);
+        Set d9 = interfaceC5227d.d();
+        E0 e02 = (E0) fVar.f67u;
+        if (d9 != null) {
+            Iterator it = d9.iterator();
             while (it.hasNext()) {
-                e02.f40011a.add((String) it.next());
+                e02.f40310a.add((String) it.next());
             }
         }
-        if (interfaceC5190d.c()) {
-            v2.d dVar = C4900p.f40199g.f40200a;
-            e02.f40014d.add(v2.d.c(context));
+        if (interfaceC5227d.c()) {
+            d dVar = C4949p.f40498g.f40499a;
+            e02.f40313d.add(d.c(context));
         }
-        if (interfaceC5190d.a() != -1) {
-            e02.f40020k = interfaceC5190d.a() != 1 ? 0 : 1;
+        if (interfaceC5227d.a() != -1) {
+            e02.f40319k = interfaceC5227d.a() != 1 ? 0 : 1;
         }
-        e02.f40021l = interfaceC5190d.b();
+        e02.f40320l = interfaceC5227d.b();
         fVar.e(buildExtrasBundle(bundle, bundle2));
         return new g(fVar);
     }
@@ -85,7 +86,7 @@ public abstract class AbstractAdViewAdapter implements MediationBannerAdapter, M
         return this.mAdView;
     }
 
-    public AbstractC5148a getInterstitialAd() {
+    public AbstractC5205a getInterstitialAd() {
         return this.mInterstitialAd;
     }
 
@@ -95,18 +96,18 @@ public abstract class AbstractAdViewAdapter implements MediationBannerAdapter, M
         if (jVar == null) {
             return null;
         }
-        v vVar = jVar.f38604n.f40039c;
-        synchronized (vVar.f38616a) {
-            a02 = vVar.f38617b;
+        v vVar = jVar.f39393n.f40338c;
+        synchronized (vVar.f39405a) {
+            a02 = vVar.f39406b;
         }
         return a02;
     }
 
-    public k2.d newAdLoader(Context context, String str) {
-        return new k2.d(context, str);
+    public m2.d newAdLoader(Context context, String str) {
+        return new m2.d(context, str);
     }
 
-    @Override // com.google.android.gms.ads.mediation.MediationBannerAdapter, x2.InterfaceC5191e, com.google.android.gms.ads.mediation.MediationInterstitialAdapter, com.google.android.gms.ads.mediation.MediationNativeAdapter
+    @Override // com.google.android.gms.ads.mediation.MediationBannerAdapter, z2.InterfaceC5228e, com.google.android.gms.ads.mediation.MediationInterstitialAdapter, com.google.android.gms.ads.mediation.MediationNativeAdapter
     public void onDestroy() {
         j jVar = this.mAdView;
         if (jVar != null) {
@@ -121,13 +122,13 @@ public abstract class AbstractAdViewAdapter implements MediationBannerAdapter, M
         }
     }
 
-    public void onImmersiveModeUpdated(boolean z3) {
-        AbstractC5148a abstractC5148a = this.mInterstitialAd;
-        if (abstractC5148a != null) {
+    public void onImmersiveModeUpdated(boolean z6) {
+        AbstractC5205a abstractC5205a = this.mInterstitialAd;
+        if (abstractC5205a != null) {
             try {
-                K k9 = ((C2635Kc) abstractC5148a).f25933c;
+                K k9 = ((C2655Kc) abstractC5205a).f26711c;
                 if (k9 != null) {
-                    k9.o0(z3);
+                    k9.n0(z6);
                 }
             } catch (RemoteException e9) {
                 i.i("#007 Could not call remote method.", e9);
@@ -135,18 +136,18 @@ public abstract class AbstractAdViewAdapter implements MediationBannerAdapter, M
         }
     }
 
-    @Override // com.google.android.gms.ads.mediation.MediationBannerAdapter, x2.InterfaceC5191e, com.google.android.gms.ads.mediation.MediationInterstitialAdapter, com.google.android.gms.ads.mediation.MediationNativeAdapter
+    @Override // com.google.android.gms.ads.mediation.MediationBannerAdapter, z2.InterfaceC5228e, com.google.android.gms.ads.mediation.MediationInterstitialAdapter, com.google.android.gms.ads.mediation.MediationNativeAdapter
     public void onPause() {
         j jVar = this.mAdView;
         if (jVar != null) {
-            AbstractC3569ma.a(jVar.getContext());
-            if (((Boolean) AbstractC2684Na.f26499g.r()).booleanValue()) {
-                if (((Boolean) r.f40207e.f40210c.a(AbstractC3569ma.Ac)).booleanValue()) {
-                    AbstractC5111b.f41397b.execute(new y(jVar, 0));
+            AbstractC3592ma.a(jVar.getContext());
+            if (((Boolean) AbstractC2704Na.f27282g.r()).booleanValue()) {
+                if (((Boolean) r.f40506e.f40509c.a(AbstractC3592ma.Ac)).booleanValue()) {
+                    AbstractC5190b.f41851b.execute(new y(jVar, 0));
                     return;
                 }
             }
-            G0 g02 = jVar.f38604n;
+            G0 g02 = jVar.f39393n;
             g02.getClass();
             try {
                 K k9 = g02.i;
@@ -159,18 +160,18 @@ public abstract class AbstractAdViewAdapter implements MediationBannerAdapter, M
         }
     }
 
-    @Override // com.google.android.gms.ads.mediation.MediationBannerAdapter, x2.InterfaceC5191e, com.google.android.gms.ads.mediation.MediationInterstitialAdapter, com.google.android.gms.ads.mediation.MediationNativeAdapter
+    @Override // com.google.android.gms.ads.mediation.MediationBannerAdapter, z2.InterfaceC5228e, com.google.android.gms.ads.mediation.MediationInterstitialAdapter, com.google.android.gms.ads.mediation.MediationNativeAdapter
     public void onResume() {
         j jVar = this.mAdView;
         if (jVar != null) {
-            AbstractC3569ma.a(jVar.getContext());
-            if (((Boolean) AbstractC2684Na.f26500h.r()).booleanValue()) {
-                if (((Boolean) r.f40207e.f40210c.a(AbstractC3569ma.yc)).booleanValue()) {
-                    AbstractC5111b.f41397b.execute(new y(jVar, 1));
+            AbstractC3592ma.a(jVar.getContext());
+            if (((Boolean) AbstractC2704Na.f27283h.r()).booleanValue()) {
+                if (((Boolean) r.f40506e.f40509c.a(AbstractC3592ma.yc)).booleanValue()) {
+                    AbstractC5190b.f41851b.execute(new y(jVar, 1));
                     return;
                 }
             }
-            G0 g02 = jVar.f38604n;
+            G0 g02 = jVar.f39393n;
             g02.getClass();
             try {
                 K k9 = g02.i;
@@ -184,81 +185,81 @@ public abstract class AbstractAdViewAdapter implements MediationBannerAdapter, M
     }
 
     @Override // com.google.android.gms.ads.mediation.MediationBannerAdapter
-    public void requestBannerAd(Context context, InterfaceC5194h interfaceC5194h, Bundle bundle, h hVar, InterfaceC5190d interfaceC5190d, Bundle bundle2) {
+    public void requestBannerAd(Context context, InterfaceC5231h interfaceC5231h, Bundle bundle, h hVar, InterfaceC5227d interfaceC5227d, Bundle bundle2) {
         j jVar = new j(context);
         this.mAdView = jVar;
-        jVar.setAdSize(new h(hVar.f38591a, hVar.f38592b));
+        jVar.setAdSize(new h(hVar.f39380a, hVar.f39381b));
         this.mAdView.setAdUnitId(getAdUnitId(bundle));
-        this.mAdView.setAdListener(new b(this, interfaceC5194h));
-        this.mAdView.b(buildAdRequest(context, interfaceC5190d, bundle2, bundle));
+        this.mAdView.setAdListener(new b(this, interfaceC5231h));
+        this.mAdView.b(buildAdRequest(context, interfaceC5227d, bundle2, bundle));
     }
 
     @Override // com.google.android.gms.ads.mediation.MediationInterstitialAdapter
-    public void requestInterstitialAd(Context context, k kVar, Bundle bundle, InterfaceC5190d interfaceC5190d, Bundle bundle2) {
-        AbstractC5148a.b(context, getAdUnitId(bundle), buildAdRequest(context, interfaceC5190d, bundle2, bundle), new c(this, kVar));
+    public void requestInterstitialAd(Context context, z2.j jVar, Bundle bundle, InterfaceC5227d interfaceC5227d, Bundle bundle2) {
+        AbstractC5205a.b(context, getAdUnitId(bundle), buildAdRequest(context, interfaceC5227d, bundle2, bundle), new c(this, jVar));
     }
 
     @Override // com.google.android.gms.ads.mediation.MediationNativeAdapter
-    public void requestNativeAd(Context context, m mVar, Bundle bundle, o oVar, Bundle bundle2) {
-        C4752c c4752c;
-        A2.c cVar;
-        e eVar = new e(0, this, mVar);
-        k2.d newAdLoader = newAdLoader(context, bundle.getString(AD_UNIT_ID_PARAMETER));
-        newAdLoader.c(eVar);
-        G g4 = newAdLoader.f38581b;
-        C2500Cd c2500Cd = (C2500Cd) oVar;
-        c2500Cd.getClass();
-        C4752c c4752c2 = new C4752c();
+    public void requestNativeAd(Context context, l lVar, Bundle bundle, n nVar, Bundle bundle2) {
+        C4832c c4832c;
+        C2.c cVar;
+        Y0.b bVar = new Y0.b(1, this, lVar);
+        m2.d newAdLoader = newAdLoader(context, bundle.getString(AD_UNIT_ID_PARAMETER));
+        newAdLoader.c(bVar);
+        G g9 = newAdLoader.f39370b;
+        C2520Cd c2520Cd = (C2520Cd) nVar;
+        c2520Cd.getClass();
+        C4832c c4832c2 = new C4832c();
         int i = 3;
-        C3462kb c3462kb = c2500Cd.f24160d;
-        if (c3462kb == null) {
-            c4752c = new C4752c(c4752c2);
+        C3485kb c3485kb = c2520Cd.f24895d;
+        if (c3485kb == null) {
+            c4832c = new C4832c(c4832c2);
         } else {
-            int i6 = c3462kb.f31471n;
-            if (i6 != 2) {
-                if (i6 != 3) {
-                    if (i6 == 4) {
-                        c4752c2.f39467g = c3462kb.f31477z;
-                        c4752c2.f39463c = c3462kb.f31467A;
+            int i4 = c3485kb.f32248n;
+            if (i4 != 2) {
+                if (i4 != 3) {
+                    if (i4 == 4) {
+                        c4832c2.f39807g = c3485kb.f32254z;
+                        c4832c2.f39803c = c3485kb.f32244A;
                     }
-                    c4752c2.f39461a = c3462kb.f31472u;
-                    c4752c2.f39462b = c3462kb.f31473v;
-                    c4752c2.f39464d = c3462kb.f31474w;
-                    c4752c = new C4752c(c4752c2);
+                    c4832c2.f39801a = c3485kb.f32249u;
+                    c4832c2.f39802b = c3485kb.f32250v;
+                    c4832c2.f39804d = c3485kb.f32251w;
+                    c4832c = new C4832c(c4832c2);
                 }
-                Z0 z02 = c3462kb.f31476y;
+                Z0 z02 = c3485kb.f32253y;
                 if (z02 != null) {
-                    c4752c2.f39466f = new w(z02);
+                    c4832c2.f39806f = new w(z02);
                 }
             }
-            c4752c2.f39465e = c3462kb.f31475x;
-            c4752c2.f39461a = c3462kb.f31472u;
-            c4752c2.f39462b = c3462kb.f31473v;
-            c4752c2.f39464d = c3462kb.f31474w;
-            c4752c = new C4752c(c4752c2);
+            c4832c2.f39805e = c3485kb.f32252x;
+            c4832c2.f39801a = c3485kb.f32249u;
+            c4832c2.f39802b = c3485kb.f32250v;
+            c4832c2.f39804d = c3485kb.f32251w;
+            c4832c = new C4832c(c4832c2);
         }
         try {
-            g4.J3(new C3462kb(c4752c));
+            g9.H3(new C3485kb(c4832c));
         } catch (RemoteException e9) {
             i.g("Failed to specify native ad options", e9);
         }
-        A2.c cVar2 = new A2.c();
-        C3462kb c3462kb2 = c2500Cd.f24160d;
-        if (c3462kb2 == null) {
-            cVar = new A2.c(cVar2);
+        C2.c cVar2 = new C2.c();
+        C3485kb c3485kb2 = c2520Cd.f24895d;
+        if (c3485kb2 == null) {
+            cVar = new C2.c(cVar2);
         } else {
-            int i9 = c3462kb2.f31471n;
-            if (i9 != 2) {
-                if (i9 != 3) {
-                    if (i9 == 4) {
-                        cVar2.f24f = c3462kb2.f31477z;
-                        cVar2.f20b = c3462kb2.f31467A;
-                        cVar2.f25g = c3462kb2.f31469C;
-                        cVar2.f26h = c3462kb2.f31468B;
-                        int i10 = c3462kb2.f31470D;
-                        if (i10 != 0) {
-                            if (i10 != 2) {
-                                if (i10 == 1) {
+            int i6 = c3485kb2.f32248n;
+            if (i6 != 2) {
+                if (i6 != 3) {
+                    if (i6 == 4) {
+                        cVar2.f323f = c3485kb2.f32254z;
+                        cVar2.f319b = c3485kb2.f32244A;
+                        cVar2.f324g = c3485kb2.f32246C;
+                        cVar2.f325h = c3485kb2.f32245B;
+                        int i9 = c3485kb2.f32247D;
+                        if (i9 != 0) {
+                            if (i9 != 2) {
+                                if (i9 == 1) {
                                     i = 2;
                                 }
                             }
@@ -267,56 +268,56 @@ public abstract class AbstractAdViewAdapter implements MediationBannerAdapter, M
                         i = 1;
                         cVar2.i = i;
                     }
-                    cVar2.f19a = c3462kb2.f31472u;
-                    cVar2.f21c = c3462kb2.f31474w;
-                    cVar = new A2.c(cVar2);
+                    cVar2.f318a = c3485kb2.f32249u;
+                    cVar2.f320c = c3485kb2.f32251w;
+                    cVar = new C2.c(cVar2);
                 }
-                Z0 z03 = c3462kb2.f31476y;
+                Z0 z03 = c3485kb2.f32253y;
                 if (z03 != null) {
-                    cVar2.f23e = new w(z03);
+                    cVar2.f322e = new w(z03);
                 }
             }
-            cVar2.f22d = c3462kb2.f31475x;
-            cVar2.f19a = c3462kb2.f31472u;
-            cVar2.f21c = c3462kb2.f31474w;
-            cVar = new A2.c(cVar2);
+            cVar2.f321d = c3485kb2.f32252x;
+            cVar2.f318a = c3485kb2.f32249u;
+            cVar2.f320c = c3485kb2.f32251w;
+            cVar = new C2.c(cVar2);
         }
         newAdLoader.d(cVar);
-        ArrayList arrayList = c2500Cd.f24161e;
+        ArrayList arrayList = c2520Cd.f24896e;
         if (arrayList.contains("6")) {
             try {
-                g4.J2(new BinderC2802Ub(0, eVar));
+                g9.H2(new BinderC2824Ub(0, bVar));
             } catch (RemoteException e10) {
                 i.g("Failed to add google native ad listener", e10);
             }
         }
         if (arrayList.contains("3")) {
-            HashMap hashMap = c2500Cd.f24163g;
+            HashMap hashMap = c2520Cd.f24898g;
             for (String str : hashMap.keySet()) {
-                BinderC2770Sb binderC2770Sb = null;
-                e eVar2 = true != ((Boolean) hashMap.get(str)).booleanValue() ? null : eVar;
-                C3481ku c3481ku = new C3481ku(5, eVar, eVar2);
+                BinderC2790Sb binderC2790Sb = null;
+                Y0.b bVar2 = true != ((Boolean) hashMap.get(str)).booleanValue() ? null : bVar;
+                C3504ku c3504ku = new C3504ku(5, bVar, bVar2);
                 try {
-                    BinderC2786Tb binderC2786Tb = new BinderC2786Tb(c3481ku);
-                    if (eVar2 != null) {
-                        binderC2770Sb = new BinderC2770Sb(c3481ku);
+                    BinderC2807Tb binderC2807Tb = new BinderC2807Tb(c3504ku);
+                    if (bVar2 != null) {
+                        binderC2790Sb = new BinderC2790Sb(c3504ku);
                     }
-                    g4.N1(str, binderC2786Tb, binderC2770Sb);
+                    g9.J1(str, binderC2807Tb, binderC2790Sb);
                 } catch (RemoteException e11) {
                     i.g("Failed to add custom template ad listener", e11);
                 }
             }
         }
-        k2.e a9 = newAdLoader.a();
+        e a9 = newAdLoader.a();
         this.adLoader = a9;
-        a9.a(buildAdRequest(context, oVar, bundle2, bundle).f38584a);
+        a9.a(buildAdRequest(context, nVar, bundle2, bundle).f39373a);
     }
 
     @Override // com.google.android.gms.ads.mediation.MediationInterstitialAdapter
     public void showInterstitial() {
-        AbstractC5148a abstractC5148a = this.mInterstitialAd;
-        if (abstractC5148a != null) {
-            abstractC5148a.d(null);
+        AbstractC5205a abstractC5205a = this.mInterstitialAd;
+        if (abstractC5205a != null) {
+            abstractC5205a.d(null);
         }
     }
 }

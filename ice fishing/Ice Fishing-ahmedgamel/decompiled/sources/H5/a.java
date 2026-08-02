@@ -3,56 +3,56 @@ package H5;
 import N6.n;
 import N6.r;
 import N6.s;
-import b7.C0522b;
-import e6.C4466a;
-import e6.C4467b;
+import b7.C0530b;
+import e6.C4483a;
+import e6.C4484b;
 import e6.c;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.IdentityHashMap;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.Supplier;
-import q7.C4932a;
+import q7.C4881a;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class a implements Supplier {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f1224n;
+    public final /* synthetic */ int f1249n;
 
     public /* synthetic */ a(int i) {
-        this.f1224n = i;
+        this.f1249n = i;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     @Override // java.util.function.Supplier
     public final Object get() {
-        switch (this.f1224n) {
+        switch (this.f1249n) {
             case 0:
-                return new C0522b(32000);
+                return new C0530b(32000);
             case 1:
                 return Collections.EMPTY_MAP;
             case 2:
-                C4467b c4467b = c.f37209c;
-                if (c4467b == null) {
-                    synchronized (c.f37208b) {
+                C4484b c4484b = c.f37285c;
+                if (c4484b == null) {
+                    synchronized (c.f37284b) {
                         try {
-                            C4467b c4467b2 = c.f37209c;
-                            if (c4467b2 == null) {
-                                C4467b a9 = c.a();
+                            C4484b c4484b2 = c.f37285c;
+                            if (c4484b2 == null) {
+                                C4484b a9 = c.a();
                                 if (a9 == null) {
-                                    C4466a c4466a = C4466a.f37205n;
-                                    c.b(c4466a);
-                                    c4467b = c4466a;
+                                    C4483a c4483a = C4483a.f37281n;
+                                    c.b(c4483a);
+                                    c4484b = c4483a;
                                 }
                             } else {
-                                c4467b = c4467b2;
+                                c4484b = c4484b2;
                             }
                         } finally {
                         }
                     }
                 }
-                return c4467b.b();
+                return c4484b.b();
             case 3:
                 return new IdentityHashMap();
             case 4:
@@ -72,9 +72,9 @@ public final /* synthetic */ class a implements Supplier {
             case 11:
                 return ThreadLocalRandom.current();
             case 12:
-                return C0522b.f5423b;
+                return C0530b.f5573b;
             default:
-                return C4932a.f40255a;
+                return C4881a.f40066a;
         }
     }
 }

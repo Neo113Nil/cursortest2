@@ -24,39 +24,39 @@ import javax.net.ssl.SSLSocketFactory;
 public final class b implements com.anythink.expressad.foundation.g.f.e.a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final int f19304a = 100;
+    private static final int f20091a = 100;
 
     /* renamed from: b, reason: collision with root package name */
-    private com.anythink.expressad.foundation.g.f.c.a f19305b;
+    private com.anythink.expressad.foundation.g.f.c.a f20092b;
 
     /* renamed from: c, reason: collision with root package name */
-    private SSLSocketFactory f19306c;
+    private SSLSocketFactory f20093c;
 
     public static class a extends FilterInputStream {
 
         /* renamed from: a, reason: collision with root package name */
-        private final HttpURLConnection f19307a;
+        private final HttpURLConnection f20094a;
 
         public a(HttpURLConnection httpURLConnection) {
             super(b.b(httpURLConnection));
-            this.f19307a = httpURLConnection;
+            this.f20094a = httpURLConnection;
         }
 
         @Override // java.io.FilterInputStream, java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
         public final void close() {
             super.close();
-            this.f19307a.disconnect();
+            this.f20094a.disconnect();
         }
     }
 
     public b(SSLSocketFactory sSLSocketFactory, com.anythink.expressad.foundation.g.f.c.a aVar) {
-        this.f19306c = sSLSocketFactory;
-        this.f19305b = aVar;
+        this.f20093c = sSLSocketFactory;
+        this.f20092b = aVar;
     }
 
-    private static boolean a(int i, int i6) {
+    private static boolean a(int i, int i4) {
         if (i != 4) {
-            return ((100 <= i6 && i6 < 200) || i6 == 204 || i6 == 304) ? false : true;
+            return ((100 <= i4 && i4 < 200) || i4 == 204 || i4 == 304) ? false : true;
         }
         return false;
     }
@@ -71,16 +71,16 @@ public final class b implements com.anythink.expressad.foundation.g.f.e.a {
     }
 
     private static void b(HttpURLConnection httpURLConnection, j<?> jVar) {
-        byte[] h9 = jVar.h();
-        if (h9 != null) {
-            boolean z3 = jVar instanceof f;
-            if (z3) {
+        byte[] h3 = jVar.h();
+        if (h3 != null) {
+            boolean z6 = jVar instanceof f;
+            if (z6) {
                 httpURLConnection.setChunkedStreamingMode(2048);
             }
             httpURLConnection.setDoOutput(true);
             DataOutputStream dataOutputStream = new DataOutputStream(httpURLConnection.getOutputStream());
-            dataOutputStream.write(h9);
-            if (z3) {
+            dataOutputStream.write(h3);
+            if (z6) {
                 jVar.a((OutputStream) dataOutputStream);
             }
             dataOutputStream.close();
@@ -92,22 +92,22 @@ public final class b implements com.anythink.expressad.foundation.g.f.e.a {
         HttpURLConnection httpURLConnection;
         SSLSocketFactory sSLSocketFactory;
         URL url = new URL(jVar.d());
-        com.anythink.expressad.foundation.g.f.c.a aVar = this.f19305b;
-        if (aVar != null && !TextUtils.isEmpty(aVar.f19242b) && !TextUtils.isEmpty(this.f19305b.f19243c)) {
+        com.anythink.expressad.foundation.g.f.c.a aVar = this.f20092b;
+        if (aVar != null && !TextUtils.isEmpty(aVar.f20029b) && !TextUtils.isEmpty(this.f20092b.f20030c)) {
             Proxy.Type type = Proxy.Type.HTTP;
-            com.anythink.expressad.foundation.g.f.c.a aVar2 = this.f19305b;
-            httpURLConnection = (HttpURLConnection) url.openConnection(new Proxy(type, new InetSocketAddress(aVar2.f19242b, Integer.valueOf(aVar2.f19243c).intValue())));
+            com.anythink.expressad.foundation.g.f.c.a aVar2 = this.f20092b;
+            httpURLConnection = (HttpURLConnection) url.openConnection(new Proxy(type, new InetSocketAddress(aVar2.f20029b, Integer.valueOf(aVar2.f20030c).intValue())));
         } else {
             httpURLConnection = (HttpURLConnection) url.openConnection();
         }
-        boolean z3 = false;
+        boolean z6 = false;
         httpURLConnection.setInstanceFollowRedirects(false);
         int k9 = jVar.k();
         httpURLConnection.setConnectTimeout(k9);
         httpURLConnection.setReadTimeout(k9);
         httpURLConnection.setUseCaches(false);
         httpURLConnection.setDoInput(true);
-        if ("https".equals(url.getProtocol()) && (sSLSocketFactory = this.f19306c) != null) {
+        if ("https".equals(url.getProtocol()) && (sSLSocketFactory = this.f20093c) != null) {
             ((HttpsURLConnection) httpURLConnection).setSSLSocketFactory(sSLSocketFactory);
         }
         try {
@@ -152,8 +152,8 @@ public final class b implements com.anythink.expressad.foundation.g.f.e.a {
                         return new com.anythink.expressad.foundation.g.f.f.b(responseCode, a(httpURLConnection.getHeaderFields()), new a(httpURLConnection));
                     } catch (Throwable th) {
                         th = th;
-                        z3 = true;
-                        if (!z3) {
+                        z6 = true;
+                        if (!z6) {
                             httpURLConnection.disconnect();
                         }
                         throw th;
@@ -184,11 +184,11 @@ public final class b implements com.anythink.expressad.foundation.g.f.e.a {
 
     private HttpURLConnection a(URL url) {
         HttpURLConnection httpURLConnection;
-        com.anythink.expressad.foundation.g.f.c.a aVar = this.f19305b;
-        if (aVar != null && !TextUtils.isEmpty(aVar.f19242b) && !TextUtils.isEmpty(this.f19305b.f19243c)) {
+        com.anythink.expressad.foundation.g.f.c.a aVar = this.f20092b;
+        if (aVar != null && !TextUtils.isEmpty(aVar.f20029b) && !TextUtils.isEmpty(this.f20092b.f20030c)) {
             Proxy.Type type = Proxy.Type.HTTP;
-            com.anythink.expressad.foundation.g.f.c.a aVar2 = this.f19305b;
-            httpURLConnection = (HttpURLConnection) url.openConnection(new Proxy(type, new InetSocketAddress(aVar2.f19242b, Integer.valueOf(aVar2.f19243c).intValue())));
+            com.anythink.expressad.foundation.g.f.c.a aVar2 = this.f20092b;
+            httpURLConnection = (HttpURLConnection) url.openConnection(new Proxy(type, new InetSocketAddress(aVar2.f20029b, Integer.valueOf(aVar2.f20030c).intValue())));
         } else {
             httpURLConnection = (HttpURLConnection) url.openConnection();
         }
@@ -233,11 +233,11 @@ public final class b implements com.anythink.expressad.foundation.g.f.e.a {
     private HttpURLConnection a(URL url, j<?> jVar) {
         HttpURLConnection httpURLConnection;
         SSLSocketFactory sSLSocketFactory;
-        com.anythink.expressad.foundation.g.f.c.a aVar = this.f19305b;
-        if (aVar != null && !TextUtils.isEmpty(aVar.f19242b) && !TextUtils.isEmpty(this.f19305b.f19243c)) {
+        com.anythink.expressad.foundation.g.f.c.a aVar = this.f20092b;
+        if (aVar != null && !TextUtils.isEmpty(aVar.f20029b) && !TextUtils.isEmpty(this.f20092b.f20030c)) {
             Proxy.Type type = Proxy.Type.HTTP;
-            com.anythink.expressad.foundation.g.f.c.a aVar2 = this.f19305b;
-            httpURLConnection = (HttpURLConnection) url.openConnection(new Proxy(type, new InetSocketAddress(aVar2.f19242b, Integer.valueOf(aVar2.f19243c).intValue())));
+            com.anythink.expressad.foundation.g.f.c.a aVar2 = this.f20092b;
+            httpURLConnection = (HttpURLConnection) url.openConnection(new Proxy(type, new InetSocketAddress(aVar2.f20029b, Integer.valueOf(aVar2.f20030c).intValue())));
         } else {
             httpURLConnection = (HttpURLConnection) url.openConnection();
         }
@@ -247,7 +247,7 @@ public final class b implements com.anythink.expressad.foundation.g.f.e.a {
         httpURLConnection.setReadTimeout(k9);
         httpURLConnection.setUseCaches(false);
         httpURLConnection.setDoInput(true);
-        if ("https".equals(url.getProtocol()) && (sSLSocketFactory = this.f19306c) != null) {
+        if ("https".equals(url.getProtocol()) && (sSLSocketFactory = this.f20093c) != null) {
             ((HttpsURLConnection) httpURLConnection).setSSLSocketFactory(sSLSocketFactory);
         }
         return httpURLConnection;

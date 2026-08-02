@@ -44,9 +44,9 @@ public class PlayerView extends LinearLayout {
         }
 
         @Override // android.view.SurfaceHolder.Callback
-        public void surfaceChanged(SurfaceHolder surfaceHolder, int i, int i6, int i9) {
+        public void surfaceChanged(SurfaceHolder surfaceHolder, int i, int i4, int i6) {
             try {
-                if (PlayerView.this.mIsSurfaceHolderDestoryed && !PlayerView.this.mIsCovered && !PlayerView.this.isComplete() && !b.f19049c) {
+                if (PlayerView.this.mIsSurfaceHolderDestoryed && !PlayerView.this.mIsCovered && !PlayerView.this.isComplete() && !b.f19836c) {
                     if (PlayerView.this.isBTVideo) {
                         if (PlayerView.this.mVideoFeedsPlayer.getIsFrontDesk()) {
                             if (!PlayerView.this.mVideoFeedsPlayer.hasPrepare()) {
@@ -417,30 +417,30 @@ public class PlayerView extends LinearLayout {
         }
     }
 
-    public void setDesk(boolean z3) {
-        this.mVideoFeedsPlayer.setIsFrontDesk(z3);
+    public void setDesk(boolean z6) {
+        this.mVideoFeedsPlayer.setIsFrontDesk(z6);
     }
 
-    public void setIsBTVideo(boolean z3) {
-        this.isBTVideo = z3;
+    public void setIsBTVideo(boolean z6) {
+        this.isBTVideo = z6;
     }
 
-    public void setIsBTVideoPlaying(boolean z3) {
-        this.isBTVideoPlaying = z3;
+    public void setIsBTVideoPlaying(boolean z6) {
+        this.isBTVideoPlaying = z6;
     }
 
-    public void setIsCovered(boolean z3) {
+    public void setIsCovered(boolean z6) {
         try {
-            this.mIsCovered = z3;
+            this.mIsCovered = z6;
         } catch (Exception e9) {
             e9.getMessage();
         }
     }
 
-    public void setPlaybackParams(float f3) {
+    public void setPlaybackParams(float f2) {
         VideoFeedsPlayer videoFeedsPlayer = this.mVideoFeedsPlayer;
         if (videoFeedsPlayer != null) {
-            videoFeedsPlayer.setPlaybackParams(f3);
+            videoFeedsPlayer.setPlaybackParams(f2);
         }
     }
 
@@ -448,20 +448,20 @@ public class PlayerView extends LinearLayout {
         this.tempEventListener = cVar;
     }
 
-    public void setVolume(float f3, float f9) {
+    public void setVolume(float f2, float f9) {
         VideoFeedsPlayer videoFeedsPlayer = this.mVideoFeedsPlayer;
         if (videoFeedsPlayer != null) {
-            videoFeedsPlayer.setVolume(f3, f9);
+            videoFeedsPlayer.setVolume(f2, f9);
         }
     }
 
-    public void start(boolean z3) {
+    public void start(boolean z6) {
         try {
             VideoFeedsPlayer videoFeedsPlayer = this.mVideoFeedsPlayer;
             if (videoFeedsPlayer == null || this.mIsCovered) {
                 return;
             }
-            videoFeedsPlayer.start(z3);
+            videoFeedsPlayer.start(z6);
         } catch (Exception e9) {
             e9.getMessage();
         }

@@ -22,10 +22,10 @@ public enum aw {
 
 
     /* renamed from: r, reason: collision with root package name */
-    private final String f9361r;
+    private final String f10147r;
 
     aw(String str) {
-        this.f9361r = str;
+        this.f10147r = str;
     }
 
     private static /* synthetic */ aw[] a() {
@@ -34,6 +34,6 @@ public enum aw {
 
     @Override // java.lang.Enum
     public final String toString() {
-        return this.f9361r;
+        return this.f10147r;
     }
 }

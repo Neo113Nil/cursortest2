@@ -1,12 +1,12 @@
 package com.onesignal.core.internal.http.impl;
 
 import B7.h;
-import D.y;
+import D.x;
 import I7.l;
 import I7.p;
 import Q7.q;
-import S7.AbstractC0406y;
-import S7.InterfaceC0404w;
+import S7.AbstractC0410y;
+import S7.InterfaceC0408w;
 import S7.Y;
 import S7.h0;
 import S7.s0;
@@ -28,8 +28,8 @@ import java.util.UUID;
 import kotlin.jvm.internal.r;
 import org.json.JSONObject;
 import u7.v;
-import v7.AbstractC5129j;
-import z7.InterfaceC5267d;
+import v7.AbstractC5119j;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class a implements E4.c {
@@ -64,8 +64,8 @@ public final class a implements E4.c {
         int label;
         /* synthetic */ Object result;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -85,8 +85,8 @@ public final class a implements E4.c {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public c(String str, String str2, JSONObject jSONObject, int i, com.onesignal.core.internal.http.impl.e eVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public c(String str, String str2, JSONObject jSONObject, int i, com.onesignal.core.internal.http.impl.e eVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$url = str;
             this.$method = str2;
             this.$jsonBody = jSONObject;
@@ -95,35 +95,35 @@ public final class a implements E4.c {
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return a.this.new c(this.$url, this.$method, this.$jsonBody, this.$timeout, this.$headers, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return a.this.new c(this.$url, this.$method, this.$jsonBody, this.$timeout, this.$headers, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((c) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((c) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i != 0) {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 return obj;
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             a aVar2 = a.this;
             String str = this.$url;
             String str2 = this.$method;
             JSONObject jSONObject = this.$jsonBody;
-            int i6 = this.$timeout;
+            int i4 = this.$timeout;
             com.onesignal.core.internal.http.impl.e eVar = this.$headers;
             this.label = 1;
-            Object makeRequestIODispatcher = aVar2.makeRequestIODispatcher(str, str2, jSONObject, i6, eVar, this);
+            Object makeRequestIODispatcher = aVar2.makeRequestIODispatcher(str, str2, jSONObject, i4, eVar, this);
             return makeRequestIODispatcher == aVar ? aVar : makeRequestIODispatcher;
         }
     }
@@ -133,8 +133,8 @@ public final class a implements E4.c {
         int label;
         /* synthetic */ Object result;
 
-        public d(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public d(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -159,8 +159,8 @@ public final class a implements E4.c {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public e(String str, int i, JSONObject jSONObject, String str2, com.onesignal.core.internal.http.impl.e eVar, r rVar, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public e(String str, int i, JSONObject jSONObject, String str2, com.onesignal.core.internal.http.impl.e eVar, r rVar, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$url = str;
             this.$timeout = i;
             this.$jsonBody = jSONObject;
@@ -170,8 +170,8 @@ public final class a implements E4.c {
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return a.this.new e(this.$url, this.$timeout, this.$jsonBody, this.$method, this.$headers, this.$retVal, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return a.this.new e(this.$url, this.$timeout, this.$jsonBody, this.$method, this.$headers, this.$retVal, interfaceC5240d);
         }
 
         /* JADX WARN: Removed duplicated region for block: B:110:0x0435 A[Catch: all -> 0x0451, TryCatch #0 {all -> 0x0451, blocks: (B:108:0x0431, B:110:0x0435, B:113:0x043a, B:114:0x0464, B:118:0x0453), top: B:107:0x0431 }] */
@@ -188,16 +188,16 @@ public final class a implements E4.c {
             Object id;
             String str;
             HttpURLConnection httpURLConnection2;
-            int i6;
+            int i4;
             Throwable th2;
+            int i6;
             int i9;
-            int i10;
             String headerField;
             String str2;
-            A7.a aVar = A7.a.f58n;
-            int i11 = this.label;
-            if (i11 == 0) {
-                com.bumptech.glide.d.k(obj);
+            A7.a aVar = A7.a.f215n;
+            int i10 = this.label;
+            if (i10 == 0) {
+                Q3.b.s(obj);
                 if (Build.VERSION.SDK_INT >= 26) {
                     TrafficStats.setThreadStatsTag(10000);
                 }
@@ -210,10 +210,10 @@ public final class a implements E4.c {
                     if (!(th instanceof ConnectException)) {
                     }
                     com.onesignal.debug.internal.logging.b.info$default("HttpClient: Could not send last request, device is offline. Throwable: ".concat(th.getClass().getName()), null, 2, null);
-                    this.$retVal.f38717n = new E4.a(i, null, th, null, null, 24, null);
+                    this.$retVal.f38644n = new E4.a(i, null, th, null, null, 24, null);
                     if (httpURLConnection != null) {
                     }
-                    return v.f41353a;
+                    return v.f41073a;
                 }
                 try {
                     newHttpURLConnection.setUseCaches(false);
@@ -247,41 +247,41 @@ public final class a implements E4.c {
                     if (!(th instanceof ConnectException)) {
                     }
                     com.onesignal.debug.internal.logging.b.info$default("HttpClient: Could not send last request, device is offline. Throwable: ".concat(th.getClass().getName()), null, 2, null);
-                    this.$retVal.f38717n = new E4.a(i, null, th, null, null, 24, null);
+                    this.$retVal.f38644n = new E4.a(i, null, th, null, null, 24, null);
                     if (httpURLConnection != null) {
                     }
-                    return v.f41353a;
+                    return v.f41073a;
                 }
             } else {
-                if (i11 != 1) {
+                if (i10 != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                i6 = this.I$0;
+                i4 = this.I$0;
                 str = (String) this.L$2;
                 httpURLConnection2 = (HttpURLConnection) this.L$1;
                 newHttpURLConnection = (HttpURLConnection) this.L$0;
                 try {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     id = obj;
                 } catch (Throwable th5) {
                     th2 = th5;
                     th = th2;
-                    i = i6;
+                    i = i4;
                     httpURLConnection = newHttpURLConnection;
                     try {
                         if (!(th instanceof ConnectException) && !(th instanceof UnknownHostException)) {
                             com.onesignal.debug.internal.logging.b.warn("HttpClient: " + this.$method + " Error thrown from network stack. ", th);
-                            this.$retVal.f38717n = new E4.a(i, null, th, null, null, 24, null);
+                            this.$retVal.f38644n = new E4.a(i, null, th, null, null, 24, null);
                             if (httpURLConnection != null) {
                                 httpURLConnection.disconnect();
                             }
-                            return v.f41353a;
+                            return v.f41073a;
                         }
                         com.onesignal.debug.internal.logging.b.info$default("HttpClient: Could not send last request, device is offline. Throwable: ".concat(th.getClass().getName()), null, 2, null);
-                        this.$retVal.f38717n = new E4.a(i, null, th, null, null, 24, null);
+                        this.$retVal.f38644n = new E4.a(i, null, th, null, null, 24, null);
                         if (httpURLConnection != null) {
                         }
-                        return v.f41353a;
+                        return v.f41073a;
                     } catch (Throwable th6) {
                         if (httpURLConnection != null) {
                             httpURLConnection.disconnect();
@@ -354,7 +354,7 @@ public final class a implements E4.c {
                     try {
                         switch (responseCode) {
                             case 200:
-                            case BaseATView.a.f9804z /* 201 */:
+                            case BaseATView.a.f10590z /* 201 */:
                             case 202:
                                 Scanner scanner = new Scanner(newHttpURLConnection.getInputStream(), "UTF-8");
                                 String next = scanner.useDelimiter("\\A").hasNext() ? scanner.next() : "";
@@ -378,8 +378,8 @@ public final class a implements E4.c {
                                     a.this._prefs.saveString(com.onesignal.common.threading.b.BASE_THREAD_NAME, "PREFS_OS_ETAG_PREFIX_" + this.$headers.getCacheKey(), headerField);
                                     a.this._prefs.saveString(com.onesignal.common.threading.b.BASE_THREAD_NAME, "PREFS_OS_HTTP_CACHE_PREFIX_" + this.$headers.getCacheKey(), next);
                                 }
-                                i10 = responseCode;
-                                this.$retVal.f38717n = new E4.a(i10, next, null, retryAfterFromResponse, retryLimitFromResponse, 4, null);
+                                i9 = responseCode;
+                                this.$retVal.f38644n = new E4.a(i9, next, null, retryAfterFromResponse, retryLimitFromResponse, 4, null);
                                 break;
                             default:
                                 StringBuilder sb2 = new StringBuilder("HttpClient: Got Response = ");
@@ -407,23 +407,23 @@ public final class a implements E4.c {
                                     com.onesignal.debug.internal.logging.b.warn$default("HttpClient: Got Response = " + this.$method + " - STATUS: " + responseCode + " - No response body!", null, 2, null);
                                     str2 = null;
                                 }
-                                i10 = responseCode;
-                                this.$retVal.f38717n = new E4.a(i10, str2, null, retryAfterFromResponse, retryLimitFromResponse, 4, null);
+                                i9 = responseCode;
+                                this.$retVal.f38644n = new E4.a(i9, str2, null, retryAfterFromResponse, retryLimitFromResponse, 4, null);
                                 break;
                         }
                     } catch (Throwable th7) {
                         th2 = th7;
-                        i6 = i10;
+                        i4 = i9;
                         th = th2;
-                        i = i6;
+                        i = i4;
                         httpURLConnection = newHttpURLConnection;
                         if (!(th instanceof ConnectException)) {
                         }
                         com.onesignal.debug.internal.logging.b.info$default("HttpClient: Could not send last request, device is offline. Throwable: ".concat(th.getClass().getName()), null, 2, null);
-                        this.$retVal.f38717n = new E4.a(i, null, th, null, null, 24, null);
+                        this.$retVal.f38644n = new E4.a(i, null, th, null, null, 24, null);
                         if (httpURLConnection != null) {
                         }
-                        return v.f41353a;
+                        return v.f41073a;
                     }
                 } else {
                     J4.b bVar = a.this._prefs;
@@ -439,39 +439,39 @@ public final class a implements E4.c {
                     sb4.append(" - Using Cached response due to 304: ");
                     sb4.append(string$default2);
                     com.onesignal.debug.internal.logging.b.debug$default(sb4.toString(), null, 2, null);
-                    i9 = responseCode;
+                    i6 = responseCode;
                     try {
-                        this.$retVal.f38717n = new E4.a(i9, string$default2, null, retryAfterFromResponse, retryLimitFromResponse, 4, null);
+                        this.$retVal.f38644n = new E4.a(i6, string$default2, null, retryAfterFromResponse, retryLimitFromResponse, 4, null);
                     } catch (Throwable th8) {
                         th = th8;
                         th = th;
                         httpURLConnection = newHttpURLConnection;
-                        i = i9;
+                        i = i6;
                         if (!(th instanceof ConnectException)) {
                             com.onesignal.debug.internal.logging.b.warn("HttpClient: " + this.$method + " Error thrown from network stack. ", th);
-                            this.$retVal.f38717n = new E4.a(i, null, th, null, null, 24, null);
+                            this.$retVal.f38644n = new E4.a(i, null, th, null, null, 24, null);
                             if (httpURLConnection != null) {
                             }
-                            return v.f41353a;
+                            return v.f41073a;
                         }
                         com.onesignal.debug.internal.logging.b.info$default("HttpClient: Could not send last request, device is offline. Throwable: ".concat(th.getClass().getName()), null, 2, null);
-                        this.$retVal.f38717n = new E4.a(i, null, th, null, null, 24, null);
+                        this.$retVal.f38644n = new E4.a(i, null, th, null, null, 24, null);
                         if (httpURLConnection != null) {
                         }
-                        return v.f41353a;
+                        return v.f41073a;
                     }
                 }
                 newHttpURLConnection.disconnect();
             } catch (Throwable th9) {
                 th = th9;
-                i9 = responseCode;
+                i6 = responseCode;
             }
-            return v.f41353a;
+            return v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((e) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((e) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -494,7 +494,7 @@ public final class a implements E4.c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void logHTTPSent(String str, URL url, JSONObject jSONObject, Map<String, ? extends List<String>> map) {
-        String E8 = AbstractC5129j.E(map.entrySet(), null, null, null, null, 63);
+        String C8 = AbstractC5119j.C(map.entrySet(), null, null, null, null, 63);
         if (str == null) {
             str = "GET";
         }
@@ -504,7 +504,7 @@ public final class a implements E4.c {
         sb.append(' ');
         sb.append(url);
         sb.append(" - Body: ");
-        com.onesignal.debug.internal.logging.b.debug$default(y.s(sb, unescapedEUIDString, " - Headers: ", E8), null, 2, null);
+        com.onesignal.debug.internal.logging.b.debug$default(x.p(sb, unescapedEUIDString, " - Headers: ", C8), null, 2, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -515,12 +515,12 @@ public final class a implements E4.c {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object makeRequest(String str, String str2, JSONObject jSONObject, int i, com.onesignal.core.internal.http.impl.e eVar, InterfaceC5267d interfaceC5267d) {
+    public final Object makeRequest(String str, String str2, JSONObject jSONObject, int i, com.onesignal.core.internal.http.impl.e eVar, InterfaceC5240d interfaceC5240d) {
         b bVar;
         A7.a aVar;
-        int i6;
+        int i4;
         JSONObject jSONObject2;
-        int i9;
+        int i6;
         com.onesignal.core.internal.http.impl.e eVar2;
         String str3;
         a aVar2;
@@ -531,16 +531,16 @@ public final class a implements E4.c {
         String str6 = str2;
         try {
             try {
-                if (interfaceC5267d instanceof b) {
-                    bVar = (b) interfaceC5267d;
-                    int i10 = bVar.label;
-                    if ((i10 & Integer.MIN_VALUE) != 0) {
-                        bVar.label = i10 - Integer.MIN_VALUE;
+                if (interfaceC5240d instanceof b) {
+                    bVar = (b) interfaceC5240d;
+                    int i9 = bVar.label;
+                    if ((i9 & Integer.MIN_VALUE) != 0) {
+                        bVar.label = i9 - Integer.MIN_VALUE;
                         Object obj = bVar.result;
-                        aVar = A7.a.f58n;
-                        i6 = bVar.label;
-                        if (i6 != 0) {
-                            com.bumptech.glide.d.k(obj);
+                        aVar = A7.a.f215n;
+                        i4 = bVar.label;
+                        if (i4 != 0) {
+                            Q3.b.s(obj);
                             if (str6 != null) {
                                 Boolean consentRequired = ((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getConsentRequired();
                                 Boolean bool = Boolean.TRUE;
@@ -558,40 +558,40 @@ public final class a implements E4.c {
                                 bVar.L$3 = jSONObject2;
                                 eVar2 = eVar;
                                 bVar.L$4 = eVar2;
-                                i9 = i;
-                                bVar.I$0 = i9;
+                                i6 = i;
+                                bVar.I$0 = i6;
                                 bVar.label = 1;
-                                if (AbstractC0406y.f(currentTimeMillis, bVar) != aVar) {
+                                if (AbstractC0410y.f(currentTimeMillis, bVar) != aVar) {
                                     str4 = str;
                                     aVar3 = this;
                                 }
                             }
                             jSONObject2 = jSONObject;
-                            i9 = i;
+                            i6 = i;
                             eVar2 = eVar;
                             str3 = str;
                             aVar2 = this;
                             String str7 = str6;
                             JSONObject jSONObject3 = jSONObject2;
                             com.onesignal.core.internal.http.impl.e eVar3 = eVar2;
-                            long threadTimeout = aVar2.getThreadTimeout(i9);
-                            c cVar = aVar2.new c(str3, str7, jSONObject3, i9, eVar3, null);
+                            long threadTimeout = aVar2.getThreadTimeout(i6);
+                            c cVar = aVar2.new c(str3, str7, jSONObject3, i6, eVar3, null);
                             bVar.L$0 = str3;
                             bVar.L$1 = null;
                             bVar.L$2 = null;
                             bVar.L$3 = null;
                             bVar.L$4 = null;
                             bVar.label = 2;
-                            Object z3 = AbstractC0406y.z(threadTimeout, cVar, bVar);
-                            return z3 == aVar ? aVar : z3;
+                            Object z6 = AbstractC0410y.z(threadTimeout, cVar, bVar);
+                            return z6 == aVar ? aVar : z6;
                         }
-                        if (i6 != 1) {
-                            if (i6 != 2) {
+                        if (i4 != 1) {
+                            if (i4 != 2) {
                                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                             }
                             str5 = (String) bVar.L$0;
                             try {
-                                com.bumptech.glide.d.k(obj);
+                                Q3.b.s(obj);
                                 return obj;
                             } catch (s0 e9) {
                                 s0Var = e9;
@@ -599,14 +599,14 @@ public final class a implements E4.c {
                                 return new E4.a(0, null, s0Var, null, null, 24, null);
                             }
                         }
-                        int i11 = bVar.I$0;
+                        int i10 = bVar.I$0;
                         com.onesignal.core.internal.http.impl.e eVar4 = (com.onesignal.core.internal.http.impl.e) bVar.L$4;
                         JSONObject jSONObject4 = (JSONObject) bVar.L$3;
                         String str8 = (String) bVar.L$2;
                         str4 = (String) bVar.L$1;
                         aVar3 = (a) bVar.L$0;
-                        com.bumptech.glide.d.k(obj);
-                        i9 = i11;
+                        Q3.b.s(obj);
+                        i6 = i10;
                         jSONObject2 = jSONObject4;
                         eVar2 = eVar4;
                         str6 = str8;
@@ -615,29 +615,29 @@ public final class a implements E4.c {
                         String str72 = str6;
                         JSONObject jSONObject32 = jSONObject2;
                         com.onesignal.core.internal.http.impl.e eVar32 = eVar2;
-                        long threadTimeout2 = aVar2.getThreadTimeout(i9);
-                        c cVar2 = aVar2.new c(str3, str72, jSONObject32, i9, eVar32, null);
+                        long threadTimeout2 = aVar2.getThreadTimeout(i6);
+                        c cVar2 = aVar2.new c(str3, str72, jSONObject32, i6, eVar32, null);
                         bVar.L$0 = str3;
                         bVar.L$1 = null;
                         bVar.L$2 = null;
                         bVar.L$3 = null;
                         bVar.L$4 = null;
                         bVar.label = 2;
-                        Object z32 = AbstractC0406y.z(threadTimeout2, cVar2, bVar);
-                        if (z32 == aVar) {
+                        Object z62 = AbstractC0410y.z(threadTimeout2, cVar2, bVar);
+                        if (z62 == aVar) {
                         }
                     }
                 }
-                long threadTimeout22 = aVar2.getThreadTimeout(i9);
-                c cVar22 = aVar2.new c(str3, str72, jSONObject32, i9, eVar32, null);
+                long threadTimeout22 = aVar2.getThreadTimeout(i6);
+                c cVar22 = aVar2.new c(str3, str72, jSONObject32, i6, eVar32, null);
                 bVar.L$0 = str3;
                 bVar.L$1 = null;
                 bVar.L$2 = null;
                 bVar.L$3 = null;
                 bVar.L$4 = null;
                 bVar.label = 2;
-                Object z322 = AbstractC0406y.z(threadTimeout22, cVar22, bVar);
-                if (z322 == aVar) {
+                Object z622 = AbstractC0410y.z(threadTimeout22, cVar22, bVar);
+                if (z622 == aVar) {
                 }
             } catch (s0 e10) {
                 s0Var = e10;
@@ -645,7 +645,7 @@ public final class a implements E4.c {
                 com.onesignal.debug.internal.logging.b.info("HttpClient: Request timed out: " + str5, s0Var);
                 return new E4.a(0, null, s0Var, null, null, 24, null);
             }
-            if (i6 != 0) {
+            if (i4 != 0) {
             }
             str3 = str4;
             aVar2 = aVar3;
@@ -655,10 +655,10 @@ public final class a implements E4.c {
         } catch (Throwable th) {
             return new E4.a(0, null, th, null, null, 24, null);
         }
-        bVar = new b(interfaceC5267d);
+        bVar = new b(interfaceC5240d);
         Object obj2 = bVar.result;
-        aVar = A7.a.f58n;
-        i6 = bVar.label;
+        aVar = A7.a.f215n;
+        i4 = bVar.label;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -667,20 +667,20 @@ public final class a implements E4.c {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object makeRequestIODispatcher(String str, String str2, JSONObject jSONObject, int i, com.onesignal.core.internal.http.impl.e eVar, InterfaceC5267d interfaceC5267d) {
+    public final Object makeRequestIODispatcher(String str, String str2, JSONObject jSONObject, int i, com.onesignal.core.internal.http.impl.e eVar, InterfaceC5240d interfaceC5240d) {
         d dVar;
-        int i6;
+        int i4;
         r rVar;
-        if (interfaceC5267d instanceof d) {
-            dVar = (d) interfaceC5267d;
-            int i9 = dVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                dVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof d) {
+            dVar = (d) interfaceC5240d;
+            int i6 = dVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                dVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = dVar.result;
-                A7.a aVar = A7.a.f58n;
-                i6 = dVar.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar = A7.a.f215n;
+                i4 = dVar.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     r rVar2 = new r();
                     Y launchOnIO = com.onesignal.common.threading.c.launchOnIO(new e(str, i, jSONObject, str2, eVar, rVar2, null));
                     dVar.L$0 = rVar2;
@@ -690,24 +690,24 @@ public final class a implements E4.c {
                     }
                     rVar = rVar2;
                 } else {
-                    if (i6 != 1) {
+                    if (i4 != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     rVar = (r) dVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
-                Object obj2 = rVar.f38717n;
+                Object obj2 = rVar.f38644n;
                 kotlin.jvm.internal.h.b(obj2);
                 return obj2;
             }
         }
-        dVar = new d(interfaceC5267d);
+        dVar = new d(interfaceC5240d);
         Object obj3 = dVar.result;
-        A7.a aVar2 = A7.a.f58n;
-        i6 = dVar.label;
-        if (i6 != 0) {
+        A7.a aVar2 = A7.a.f215n;
+        i4 = dVar.label;
+        if (i4 != 0) {
         }
-        Object obj22 = rVar.f38717n;
+        Object obj22 = rVar.f38644n;
         kotlin.jvm.internal.h.b(obj22);
         return obj22;
     }
@@ -717,8 +717,8 @@ public final class a implements E4.c {
         String headerField = httpURLConnection.getHeaderField("Retry-After");
         if (headerField != null) {
             com.onesignal.debug.internal.logging.b.debug$default("HttpClient: Response Retry-After: ".concat(headerField), null, 2, null);
-            Integer S8 = q.S(headerField);
-            return Integer.valueOf(S8 != null ? S8.intValue() : ((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getHttpRetryAfterParseFailFallback());
+            Integer i02 = q.i0(headerField);
+            return Integer.valueOf(i02 != null ? i02.intValue() : ((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getHttpRetryAfterParseFailFallback());
         }
         if (httpURLConnection.getResponseCode() == 429) {
             return Integer.valueOf(((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getHttpRetryAfterParseFailFallback());
@@ -733,31 +733,31 @@ public final class a implements E4.c {
             return null;
         }
         com.onesignal.debug.internal.logging.b.debug$default("HttpClient: Response OneSignal-Retry-Limit: ".concat(headerField), null, 2, null);
-        return q.S(headerField);
+        return q.i0(headerField);
     }
 
     @Override // E4.c
-    public Object delete(String str, com.onesignal.core.internal.http.impl.e eVar, InterfaceC5267d interfaceC5267d) {
-        return makeRequest(str, "DELETE", null, ((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getHttpTimeout(), eVar, interfaceC5267d);
+    public Object delete(String str, com.onesignal.core.internal.http.impl.e eVar, InterfaceC5240d interfaceC5240d) {
+        return makeRequest(str, "DELETE", null, ((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getHttpTimeout(), eVar, interfaceC5240d);
     }
 
     @Override // E4.c
-    public Object get(String str, com.onesignal.core.internal.http.impl.e eVar, InterfaceC5267d interfaceC5267d) {
-        return makeRequest(str, null, null, ((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getHttpGetTimeout(), eVar, interfaceC5267d);
+    public Object get(String str, com.onesignal.core.internal.http.impl.e eVar, InterfaceC5240d interfaceC5240d) {
+        return makeRequest(str, null, null, ((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getHttpGetTimeout(), eVar, interfaceC5240d);
     }
 
     @Override // E4.c
-    public Object patch(String str, JSONObject jSONObject, com.onesignal.core.internal.http.impl.e eVar, InterfaceC5267d interfaceC5267d) {
-        return makeRequest(str, "PATCH", jSONObject, ((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getHttpTimeout(), eVar, interfaceC5267d);
+    public Object patch(String str, JSONObject jSONObject, com.onesignal.core.internal.http.impl.e eVar, InterfaceC5240d interfaceC5240d) {
+        return makeRequest(str, "PATCH", jSONObject, ((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getHttpTimeout(), eVar, interfaceC5240d);
     }
 
     @Override // E4.c
-    public Object post(String str, JSONObject jSONObject, com.onesignal.core.internal.http.impl.e eVar, InterfaceC5267d interfaceC5267d) {
-        return makeRequest(str, "POST", jSONObject, ((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getHttpTimeout(), eVar, interfaceC5267d);
+    public Object post(String str, JSONObject jSONObject, com.onesignal.core.internal.http.impl.e eVar, InterfaceC5240d interfaceC5240d) {
+        return makeRequest(str, "POST", jSONObject, ((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getHttpTimeout(), eVar, interfaceC5240d);
     }
 
     @Override // E4.c
-    public Object put(String str, JSONObject jSONObject, com.onesignal.core.internal.http.impl.e eVar, InterfaceC5267d interfaceC5267d) {
-        return makeRequest(str, "PUT", jSONObject, ((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getHttpTimeout(), eVar, interfaceC5267d);
+    public Object put(String str, JSONObject jSONObject, com.onesignal.core.internal.http.impl.e eVar, InterfaceC5240d interfaceC5240d) {
+        return makeRequest(str, "PUT", jSONObject, ((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getHttpTimeout(), eVar, interfaceC5240d);
     }
 }

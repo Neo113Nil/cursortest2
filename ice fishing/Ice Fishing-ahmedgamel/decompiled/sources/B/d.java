@@ -8,15 +8,15 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 public final class d implements ViewGroup.OnHierarchyChangeListener {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ CoordinatorLayout f70n;
+    public final /* synthetic */ CoordinatorLayout f228n;
 
     public d(CoordinatorLayout coordinatorLayout) {
-        this.f70n = coordinatorLayout;
+        this.f228n = coordinatorLayout;
     }
 
     @Override // android.view.ViewGroup.OnHierarchyChangeListener
     public final void onChildViewAdded(View view, View view2) {
-        ViewGroup.OnHierarchyChangeListener onHierarchyChangeListener = this.f70n.J;
+        ViewGroup.OnHierarchyChangeListener onHierarchyChangeListener = this.f228n.J;
         if (onHierarchyChangeListener != null) {
             onHierarchyChangeListener.onChildViewAdded(view, view2);
         }
@@ -24,7 +24,7 @@ public final class d implements ViewGroup.OnHierarchyChangeListener {
 
     @Override // android.view.ViewGroup.OnHierarchyChangeListener
     public final void onChildViewRemoved(View view, View view2) {
-        CoordinatorLayout coordinatorLayout = this.f70n;
+        CoordinatorLayout coordinatorLayout = this.f228n;
         coordinatorLayout.p(2);
         ViewGroup.OnHierarchyChangeListener onHierarchyChangeListener = coordinatorLayout.J;
         if (onHierarchyChangeListener != null) {

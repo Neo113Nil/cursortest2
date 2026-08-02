@@ -1,6 +1,6 @@
 package com.anythink.core.api;
 
-import D.y;
+import D.x;
 
 /* loaded from: classes.dex */
 public interface ATGDPRConsentDismissListener {
@@ -26,7 +26,7 @@ public interface ATGDPRConsentDismissListener {
             StringBuilder sb = new StringBuilder("ConsentDismissInfo{infoMsg='");
             sb.append(this.infoMsg);
             sb.append("', dismissType=");
-            return y.q(sb, this.dismissType, '}');
+            return x.n(sb, this.dismissType, '}');
         }
     }
 

@@ -9,34 +9,34 @@ import android.widget.RelativeLayout;
 import java.util.Arrays;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public abstract class PJ extends RelativeLayout implements InterfaceC1382Yi {
+public abstract class PJ extends RelativeLayout implements InterfaceC1402Yi {
     public static byte[] A0I;
     public static String[] A0J = {"Y2tLUsDODtMhR26nUTjgcf2Vsahx4NqH", "jeJcN29vgPpMzSifPXWuZ7pAdZm9Wqf2", "wmqo1ZnOkD5hT7Q2PTM2Rmfb8E0dvO0q", "HRpfHPl8fLQTElVXg4xSXmMBPaXasYNs", "iTsM9Wr3SkT3Gti7sj459w9nLERpcX3u", "RuGpU2jfWShvYQ0LG0oJmnDCVLSRyRSk", "2xHjamT", "xqcRJe7Fu2poXHQJNQ1kBRmSVDyUhFcS"};
     public static final int A0K;
     public static final int A0L;
     public View A00;
     public XO A01;
-    public C1445aJ A02;
-    public C1449aN A03;
-    public C1663dq A04;
+    public C1465aJ A02;
+    public C1469aN A03;
+    public C1683dq A04;
     public boolean A05;
     public boolean A06;
     public NN A07;
-    public C1708ea A08;
+    public C1728ea A08;
     public boolean A09;
     public final Handler A0A;
-    public final ViewOnSystemUiVisibilityChangeListenerC1371Xx A0B;
-    public final InterfaceC1381Yh A0C;
-    public final AbstractC2005jd A0D;
-    public final C1840gi A0E;
+    public final ViewOnSystemUiVisibilityChangeListenerC1391Xx A0B;
+    public final InterfaceC1401Yh A0C;
+    public final AbstractC2025jd A0D;
+    public final C1860gi A0E;
     public final VA A0F;
     public final VI A0G;
-    public final AbstractC1375Yb A0H;
+    public final AbstractC1395Yb A0H;
 
-    public static String A0Q(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0I, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 37);
+    public static String A0Q(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0I, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 37);
         }
         return new String(copyOfRange);
     }
@@ -45,7 +45,7 @@ public abstract class PJ extends RelativeLayout implements InterfaceC1382Yi {
         A0I = new byte[]{-93, -81, -83, 110, -90, -95, -93, -91, -94, -81, -81, -85, 110, -95, -92, -77, 110, -87, -82, -76, -91, -78, -77, -76, -87, -76, -87, -95, -84, 110, -87, -83, -80, -78, -91, -77, -77, -87, -81, -82, 110, -84, -81, -89, -89, -91, -92};
     }
 
-    public abstract AbstractC1375Yb A0b();
+    public abstract AbstractC1395Yb A0b();
 
     public abstract void A0d();
 
@@ -59,17 +59,17 @@ public abstract class PJ extends RelativeLayout implements InterfaceC1382Yi {
         A0L = (int) (XX.A02 * 12.0f);
     }
 
-    public PJ(C1840gi c1840gi, VA va, InterfaceC1381Yh interfaceC1381Yh, AbstractC2005jd abstractC2005jd) {
-        super(c1840gi);
+    public PJ(C1860gi c1860gi, VA va, InterfaceC1401Yh interfaceC1401Yh, AbstractC2025jd abstractC2025jd) {
+        super(c1860gi);
         this.A09 = false;
         this.A06 = false;
         this.A05 = false;
         this.A0A = new Handler(Looper.getMainLooper());
-        this.A0E = c1840gi;
+        this.A0E = c1860gi;
         this.A0F = va;
-        this.A0C = interfaceC1381Yh;
-        this.A0B = new ViewOnSystemUiVisibilityChangeListenerC1371Xx(this);
-        this.A0D = abstractC2005jd;
+        this.A0C = interfaceC1401Yh;
+        this.A0B = new ViewOnSystemUiVisibilityChangeListenerC1391Xx(this);
+        this.A0D = abstractC2025jd;
         this.A0G = new VI(this.A0D.A2E(), this.A0F);
         this.A0H = A0b();
         if (this.A0D.A2M()) {
@@ -80,7 +80,7 @@ public abstract class PJ extends RelativeLayout implements InterfaceC1382Yi {
         }
     }
 
-    private C1098Na A0O(int i) {
+    private C1118Na A0O(int i) {
         if (i == 1) {
             return this.A07.A01();
         }
@@ -88,12 +88,12 @@ public abstract class PJ extends RelativeLayout implements InterfaceC1382Yi {
     }
 
     private void A0R() {
-        this.A02 = AbstractC1450aO.A01(this.A0E, true, this.A0D, this.A0G, this.A0C, EnumC1448aM.A03, AbstractC1447aL.A00(this.A0D));
+        this.A02 = AbstractC1470aO.A01(this.A0E, true, this.A0D, this.A0G, this.A0C, EnumC1468aM.A03, AbstractC1467aL.A00(this.A0D));
         YB.A0K(this.A02);
     }
 
     private void A0S() {
-        this.A03 = AbstractC1450aO.A02(this.A0E, EnumC1448aM.A03, this.A0D);
+        this.A03 = AbstractC1470aO.A02(this.A0E, EnumC1468aM.A03, this.A0D);
         this.A03.setBackgroundColor(-2145637581);
         YB.A0K(this.A03);
     }
@@ -137,7 +137,7 @@ public abstract class PJ extends RelativeLayout implements InterfaceC1382Yi {
         this.A0C.A44(this, 0, layoutParams);
     }
 
-    private void A0Y(C1098Na c1098Na, boolean z3) {
+    private void A0Y(C1118Na c1118Na, boolean z6) {
         RelativeLayout.LayoutParams layoutParams;
         YB.A0K(this.A0H);
         if (this.A0D.A1a()) {
@@ -145,20 +145,20 @@ public abstract class PJ extends RelativeLayout implements InterfaceC1382Yi {
             layoutParams.setMargins(0, XV.A0N, 0, 0);
         } else {
             layoutParams = new RelativeLayout.LayoutParams(-1, this.A0H.getToolbarHeight());
-            this.A0H.A0D(c1098Na, ViewOnClickListenerC1038Kr.A05(this.A0D));
+            this.A0H.A0D(c1118Na, ViewOnClickListenerC1058Kr.A05(this.A0D));
         }
         layoutParams.addRule(10);
         addView(this.A0H, layoutParams);
     }
 
     public final void A0c() {
-        if (this.A00 == null || !(this.A00 instanceof AbstractC1553c3)) {
+        if (this.A00 == null || !(this.A00 instanceof AbstractC1573c3)) {
             return;
         }
         if (A0j()) {
-            ((AbstractC1553c3) this.A00).A1G();
+            ((AbstractC1573c3) this.A00).A1G();
         } else {
-            ((AbstractC1553c3) this.A00).A1F();
+            ((AbstractC1573c3) this.A00).A1F();
         }
     }
 
@@ -169,13 +169,13 @@ public abstract class PJ extends RelativeLayout implements InterfaceC1382Yi {
         this.A01.A07();
     }
 
-    public final void A0f(View view, boolean z3, int i) {
-        this.A0H.setFullscreen(z3);
+    public final void A0f(View view, boolean z6, int i) {
+        this.A0H.setFullscreen(z6);
         this.A00 = view;
-        this.A0B.A05(EnumC1370Xw.A02);
+        this.A0B.A05(EnumC1390Xw.A02);
         A0T();
-        C1098Na colorInfo = A0O(i);
-        A0Y(colorInfo, z3);
+        C1118Na colorInfo = A0O(i);
+        A0Y(colorInfo, z6);
         YB.A0N(this, colorInfo.A08(false));
         if (this.A0D.A2M() || this.A0D.A2W()) {
             YB.A0J(this.A02);
@@ -197,7 +197,7 @@ public abstract class PJ extends RelativeLayout implements InterfaceC1382Yi {
             }
             A0J[6] = "TscrWlY";
             layoutParams.addRule(12);
-            layoutParams.setMargins(0, z3 ? 0 : this.A0H.getToolbarHeight(), 0, 0);
+            layoutParams.setMargins(0, z6 ? 0 : this.A0H.getToolbarHeight(), 0, 0);
         }
         if (this.A0D.A1a()) {
             layoutParams.addRule(3, this.A0H.getId());
@@ -209,14 +209,14 @@ public abstract class PJ extends RelativeLayout implements InterfaceC1382Yi {
                 throw new RuntimeException();
             }
             A0J[4] = "m39AQqqO1eeHQzy3cGs8gEkGcDq1cYC0";
-            if (z3) {
-                this.A0B.A05(EnumC1370Xw.A03);
+            if (z6) {
+                this.A0B.A05(EnumC1390Xw.A03);
             }
         }
     }
 
-    public final void A0g(C1202Re c1202Re) {
-        this.A0B.A04(c1202Re.A05().getWindow());
+    public final void A0g(C1222Re c1222Re) {
+        this.A0B.A04(c1222Re.A05().getWindow());
         this.A07 = this.A0D.A28();
         NR nr = null;
         NR adInfo = this.A0D.A29();
@@ -227,13 +227,13 @@ public abstract class PJ extends RelativeLayout implements InterfaceC1382Yi {
             }
         }
         this.A0H.setPageDetails(this.A0D.A2C(), this.A0D.A2E(), nr != null ? nr.A0H().A04() : 0, this.A0D.A2D());
-        this.A0H.setToolbarListener(new PT(this, c1202Re));
+        this.A0H.setToolbarListener(new PT(this, c1222Re));
     }
 
-    public final void A0h(C1202Re c1202Re) {
+    public final void A0h(C1222Re c1222Re) {
         AlphaAnimation alphaAnimation = new AlphaAnimation(1.0f, 0.0f);
         alphaAnimation.setDuration(200L);
-        alphaAnimation.setAnimationListener(new AnimationAnimationListenerC1394Yu(this, this, c1202Re));
+        alphaAnimation.setAnimationListener(new AnimationAnimationListenerC1414Yu(this, this, c1222Re));
         startAnimation(alphaAnimation);
     }
 
@@ -249,25 +249,25 @@ public abstract class PJ extends RelativeLayout implements InterfaceC1382Yi {
         return this.A06;
     }
 
-    public void AFA(boolean z3) {
+    public void AFA(boolean z6) {
         if (this.A01 != null && this.A01.A05()) {
             this.A01.A06();
         }
-        if (z3) {
+        if (z6) {
             return;
         }
-        C1445aJ c1445aJ = this.A02;
+        C1465aJ c1465aJ = this.A02;
         String[] strArr = A0J;
         if (strArr[2].charAt(15) == strArr[5].charAt(15)) {
             throw new RuntimeException();
         }
         A0J[3] = "yojvKCm4Uw77fUAiEEOH9Gl1ktXD1GAA";
-        if (c1445aJ != null) {
+        if (c1465aJ != null) {
             this.A02.A0P();
         }
     }
 
-    public void AFi(boolean z3) {
+    public void AFi(boolean z6) {
         if (this.A01 != null && !this.A01.A04()) {
             this.A01.A07();
         }
@@ -277,17 +277,17 @@ public abstract class PJ extends RelativeLayout implements InterfaceC1382Yi {
         return this.A0F;
     }
 
-    public InterfaceC1381Yh getAudienceNetworkListener() {
+    public InterfaceC1401Yh getAudienceNetworkListener() {
         return this.A0C;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1382Yi
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1402Yi
     public String getCurrentClientToken() {
         return this.A0D.A2E();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1382Yi
-    public final boolean onActivityResult(int i, int i6, Intent intent) {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1402Yi
+    public final boolean onActivityResult(int i, int i4, Intent intent) {
         return false;
     }
 
@@ -312,10 +312,10 @@ public abstract class PJ extends RelativeLayout implements InterfaceC1382Yi {
         }
     }
 
-    public void setListener(InterfaceC1381Yh interfaceC1381Yh) {
+    public void setListener(InterfaceC1401Yh interfaceC1401Yh) {
     }
 
-    public void setServerSideRewardHandler(C1708ea c1708ea) {
-        this.A08 = c1708ea;
+    public void setServerSideRewardHandler(C1728ea c1728ea) {
+        this.A08 = c1728ea;
     }
 }

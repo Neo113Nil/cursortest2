@@ -7,22 +7,22 @@ import com.anythink.basead.exoplayer.e.m;
 public final class k {
 
     /* renamed from: f, reason: collision with root package name */
-    private static final String f7122f = "TrackEncryptionBox";
+    private static final String f7908f = "TrackEncryptionBox";
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f7123a;
+    public final boolean f7909a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f7124b;
+    public final String f7910b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final m.a f7125c;
+    public final m.a f7911c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f7126d;
+    public final int f7912d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final byte[] f7127e;
+    public final byte[] f7913e;
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     /* JADX WARN: Code restructure failed: missing block: B:27:0x0053, code lost:
@@ -32,14 +32,14 @@ public final class k {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public k(boolean z3, String str, int i, byte[] bArr, int i6, int i9, byte[] bArr2) {
-        int i10 = 2;
+    public k(boolean z6, String str, int i, byte[] bArr, int i4, int i6, byte[] bArr2) {
+        int i9 = 2;
         char c9 = 0;
         com.anythink.basead.exoplayer.k.a.a((i == 0) ^ (bArr2 == null));
-        this.f7123a = z3;
-        this.f7124b = str;
-        this.f7126d = i;
-        this.f7127e = bArr2;
+        this.f7909a = z6;
+        this.f7910b = str;
+        this.f7912d = i;
+        this.f7913e = bArr2;
         if (str != null) {
             switch (str.hashCode()) {
                 case 3046605:
@@ -74,16 +74,16 @@ public final class k {
                 case 1:
                     break;
                 default:
-                    Log.w(f7122f, "Unsupported protection scheme type '" + str + "'. Assuming AES-CTR crypto mode.");
+                    Log.w(f7908f, "Unsupported protection scheme type '" + str + "'. Assuming AES-CTR crypto mode.");
                 case 2:
                 case 3:
-                    i10 = 1;
+                    i9 = 1;
                     break;
             }
-            this.f7125c = new m.a(i10, bArr, i6, i9);
+            this.f7911c = new m.a(i9, bArr, i4, i6);
         }
-        i10 = 1;
-        this.f7125c = new m.a(i10, bArr, i6, i9);
+        i9 = 1;
+        this.f7911c = new m.a(i9, bArr, i4, i6);
     }
 
     /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
@@ -123,7 +123,7 @@ public final class k {
             case 1:
                 return 2;
             default:
-                Log.w(f7122f, "Unsupported protection scheme type '" + str + "'. Assuming AES-CTR crypto mode.");
+                Log.w(f7908f, "Unsupported protection scheme type '" + str + "'. Assuming AES-CTR crypto mode.");
             case 2:
             case 3:
                 return 1;

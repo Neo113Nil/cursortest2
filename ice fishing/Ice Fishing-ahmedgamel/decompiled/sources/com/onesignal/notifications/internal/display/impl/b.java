@@ -1,9 +1,9 @@
 package com.onesignal.notifications.internal.display.impl;
 
-import D.C0297p;
-import D.C0299s;
-import D.t;
-import D.v;
+import D.C0285o;
+import D.r;
+import D.s;
+import D.u;
 import Q7.q;
 import android.R;
 import android.app.Notification;
@@ -28,23 +28,23 @@ import java.util.List;
 import kotlin.jvm.internal.h;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import q5.C4927a;
-import r5.InterfaceC4959a;
+import q5.C4876a;
+import r5.InterfaceC4909a;
 import t5.e;
-import v5.InterfaceC5115a;
+import v5.InterfaceC5105a;
 import x4.f;
 
 /* loaded from: classes2.dex */
-public final class b implements InterfaceC5115a {
+public final class b implements InterfaceC5105a {
     private final f _applicationService;
-    private final InterfaceC4959a _notificationChannelManager;
+    private final InterfaceC4909a _notificationChannelManager;
     private final Class<?> notificationDismissedClass;
 
     public static final class a {
-        private v compatBuilder;
+        private u compatBuilder;
         private boolean hasLargeIcon;
 
-        public final v getCompatBuilder() {
+        public final u getCompatBuilder() {
             return this.compatBuilder;
         }
 
@@ -52,16 +52,16 @@ public final class b implements InterfaceC5115a {
             return this.hasLargeIcon;
         }
 
-        public final void setCompatBuilder(v vVar) {
-            this.compatBuilder = vVar;
+        public final void setCompatBuilder(u uVar) {
+            this.compatBuilder = uVar;
         }
 
-        public final void setHasLargeIcon(boolean z3) {
-            this.hasLargeIcon = z3;
+        public final void setHasLargeIcon(boolean z6) {
+            this.hasLargeIcon = z6;
         }
     }
 
-    public b(f _applicationService, InterfaceC4959a _notificationChannelManager) {
+    public b(f _applicationService, InterfaceC4909a _notificationChannelManager) {
         h.e(_applicationService, "_applicationService");
         h.e(_notificationChannelManager, "_notificationChannelManager");
         this._applicationService = _applicationService;
@@ -79,7 +79,7 @@ public final class b implements InterfaceC5115a {
             String resourceString = AndroidUtils.INSTANCE.getResourceString(context, "onesignal_in_app_alert_ok_button_text", "Ok");
             h.b(resourceString);
             list.add(resourceString);
-            list2.add(C4927a.DEFAULT_ACTION);
+            list2.add(C4876a.DEFAULT_ACTION);
         }
     }
 
@@ -92,7 +92,7 @@ public final class b implements InterfaceC5115a {
                 int length = optJSONArray.length();
                 for (int i = 0; i < length; i++) {
                     JSONObject jSONObject4 = optJSONArray.getJSONObject(i);
-                    String optString = jSONObject4.optString(o.f8446c);
+                    String optString = jSONObject4.optString(o.f9232c);
                     h.d(optString, "optString(...)");
                     list.add(optString);
                     String optString2 = jSONObject4.optString("id");
@@ -137,22 +137,22 @@ public final class b implements InterfaceC5115a {
         }
         int length = str.length() - 1;
         int i = 0;
-        boolean z3 = false;
+        boolean z6 = false;
         while (i <= length) {
-            boolean z6 = h.f(str.charAt(!z3 ? i : length), 32) <= 0;
-            if (z3) {
-                if (!z6) {
+            boolean z9 = h.f(str.charAt(!z6 ? i : length), 32) <= 0;
+            if (z6) {
+                if (!z9) {
                     break;
                 }
                 length--;
-            } else if (z6) {
+            } else if (z9) {
                 i++;
             } else {
-                z3 = true;
+                z6 = true;
             }
         }
         String obj = str.subSequence(i, length + 1).toString();
-        return (q.R(obj, "http://") || q.R(obj, "https://")) ? getBitmapFromURL(obj) : getBitmapFromAssetsOrResourceName(str);
+        return (q.h0(obj, "http://") || q.h0(obj, "https://")) ? getBitmapFromURL(obj) : getBitmapFromAssetsOrResourceName(str);
     }
 
     private final Bitmap getBitmapFromAssetsOrResourceName(String str) {
@@ -208,7 +208,7 @@ public final class b implements InterfaceC5115a {
     private final int getDrawableId(String str) {
         Resources contextResources = getContextResources();
         h.b(contextResources);
-        return contextResources.getIdentifier(str, k.f19632c, getPackageName());
+        return contextResources.getIdentifier(str, k.f20419c, getPackageName());
     }
 
     private final Bitmap getLargeIcon(JSONObject jSONObject) {
@@ -232,18 +232,18 @@ public final class b implements InterfaceC5115a {
         }
         int length = str.length() - 1;
         int i = 0;
-        boolean z3 = false;
+        boolean z6 = false;
         while (i <= length) {
-            boolean z6 = h.f(str.charAt(!z3 ? i : length), 32) <= 0;
-            if (z3) {
-                if (!z6) {
+            boolean z9 = h.f(str.charAt(!z6 ? i : length), 32) <= 0;
+            if (z6) {
+                if (!z9) {
                     break;
                 }
                 length--;
-            } else if (z6) {
+            } else if (z9) {
                 i++;
             } else {
-                z3 = true;
+                z6 = true;
             }
         }
         String obj = str.subSequence(i, length + 1).toString();
@@ -298,9 +298,9 @@ public final class b implements InterfaceC5115a {
         }
     }
 
-    private final void setAlertnessOptions(JSONObject jSONObject, v vVar) {
+    private final void setAlertnessOptions(JSONObject jSONObject, u uVar) {
         int convertOSToAndroidPriority = convertOSToAndroidPriority(jSONObject.optInt("pri", 6));
-        vVar.f502j = convertOSToAndroidPriority;
+        uVar.f397j = convertOSToAndroidPriority;
         if (convertOSToAndroidPriority < 0) {
             return;
         }
@@ -308,7 +308,7 @@ public final class b implements InterfaceC5115a {
         if (jSONObject.has("ledc") && jSONObject.optInt("led", 1) == 1) {
             try {
                 int intValue = new BigInteger(jSONObject.optString("ledc"), 16).intValue();
-                Notification notification = vVar.f514v;
+                Notification notification = uVar.f409v;
                 notification.ledARGB = intValue;
                 notification.ledOnMS = 2000;
                 notification.ledOffMS = 5000;
@@ -321,7 +321,7 @@ public final class b implements InterfaceC5115a {
             if (jSONObject.has("vib_pt")) {
                 long[] parseVibrationPattern = e.INSTANCE.parseVibrationPattern(jSONObject);
                 if (parseVibrationPattern != null) {
-                    vVar.f514v.vibrate = parseVibrationPattern;
+                    uVar.f409v.vibrate = parseVibrationPattern;
                 }
             } else {
                 i |= 2;
@@ -333,17 +333,17 @@ public final class b implements InterfaceC5115a {
             h.b(currentContext);
             Uri soundUri = eVar.getSoundUri(currentContext, jSONObject.optString("sound", null));
             if (soundUri != null) {
-                vVar.f(soundUri);
+                uVar.f(soundUri);
             } else {
                 i |= 1;
             }
         }
-        vVar.c(i);
+        uVar.c(i);
     }
 
-    @Override // v5.InterfaceC5115a
-    public void addNotificationActionButtons(JSONObject fcmJson, com.onesignal.notifications.internal.display.impl.a intentGenerator, v vVar, int i, String str) {
-        int i6;
+    @Override // v5.InterfaceC5105a
+    public void addNotificationActionButtons(JSONObject fcmJson, com.onesignal.notifications.internal.display.impl.a intentGenerator, u uVar, int i, String str) {
+        int i4;
         h.e(fcmJson, "fcmJson");
         h.e(intentGenerator, "intentGenerator");
         try {
@@ -353,11 +353,11 @@ public final class b implements InterfaceC5115a {
                 if (jSONObject2.has("actionButtons")) {
                     JSONArray jSONArray = jSONObject2.getJSONArray("actionButtons");
                     int length = jSONArray.length();
-                    for (int i9 = 0; i9 < length; i9++) {
-                        JSONObject optJSONObject = jSONArray.optJSONObject(i9);
+                    for (int i6 = 0; i6 < length; i6++) {
+                        JSONObject optJSONObject = jSONArray.optJSONObject(i6);
                         JSONObject jSONObject3 = new JSONObject(fcmJson.toString());
                         Intent newBaseIntent = intentGenerator.getNewBaseIntent(i);
-                        newBaseIntent.setAction("" + i9);
+                        newBaseIntent.setAction("" + i6);
                         newBaseIntent.putExtra("action_button", true);
                         jSONObject3.put("actionId", optJSONObject.optString("id"));
                         newBaseIntent.putExtra("onesignalData", jSONObject3.toString());
@@ -369,17 +369,17 @@ public final class b implements InterfaceC5115a {
                         PendingIntent newActionPendingIntent = intentGenerator.getNewActionPendingIntent(i, newBaseIntent);
                         if (optJSONObject.has("icon")) {
                             try {
-                                i6 = getResourceIcon(optJSONObject.optString("icon"));
+                                i4 = getResourceIcon(optJSONObject.optString("icon"));
                             } catch (Throwable th) {
                                 th = th;
                                 th.printStackTrace();
                                 return;
                             }
                         } else {
-                            i6 = 0;
+                            i4 = 0;
                         }
-                        h.b(vVar);
-                        vVar.f495b.add(new C0297p(i6, newActionPendingIntent, optJSONObject.optString(o.f8446c)));
+                        h.b(uVar);
+                        uVar.f390b.add(new C0285o(i4, newActionPendingIntent, optJSONObject.optString(o.f9232c)));
                     }
                 }
             }
@@ -388,7 +388,7 @@ public final class b implements InterfaceC5115a {
         }
     }
 
-    @Override // v5.InterfaceC5115a
+    @Override // v5.InterfaceC5105a
     public void addXiaomiSettings(a aVar, Notification notification) {
         h.e(notification, "notification");
         h.b(aVar);
@@ -406,29 +406,29 @@ public final class b implements InterfaceC5115a {
         }
     }
 
-    @Override // v5.InterfaceC5115a
+    @Override // v5.InterfaceC5105a
     public a getBaseOneSignalNotificationBuilder(t5.d notificationJob) {
         int i;
         h.e(notificationJob, "notificationJob");
         JSONObject jsonPayload = notificationJob.getJsonPayload();
         h.b(jsonPayload);
         a aVar = new a();
-        v vVar = new v(getCurrentContext(), this._notificationChannelManager.createNotificationChannel(notificationJob));
+        u uVar = new u(getCurrentContext(), this._notificationChannelManager.createNotificationChannel(notificationJob));
         String optString = jsonPayload.optString("alert", null);
-        vVar.d(16, true);
-        vVar.f514v.icon = getSmallIconId(jsonPayload);
-        t tVar = new t(0);
-        tVar.f493f = v.b(optString);
-        vVar.g(tVar);
-        vVar.f499f = v.b(optString);
-        vVar.f514v.tickerText = v.b(optString);
+        uVar.d(16, true);
+        uVar.f409v.icon = getSmallIconId(jsonPayload);
+        s sVar = new s(0);
+        sVar.f388f = u.b(optString);
+        uVar.g(sVar);
+        uVar.f394f = u.b(optString);
+        uVar.f409v.tickerText = u.b(optString);
         if (!h.a(jsonPayload.optString("title"), "")) {
-            vVar.f498e = v.b(getTitle(jsonPayload));
+            uVar.f393e = u.b(getTitle(jsonPayload));
         }
         try {
             BigInteger accentColor = getAccentColor(jsonPayload);
             if (accentColor != null) {
-                vVar.f509q = accentColor.intValue();
+                uVar.f404q = accentColor.intValue();
             }
         } catch (Throwable unused) {
         }
@@ -440,43 +440,43 @@ public final class b implements InterfaceC5115a {
             } else {
                 i = 1;
             }
-            vVar.f510r = i;
+            uVar.f405r = i;
         } catch (Throwable unused2) {
         }
         Bitmap largeIcon = getLargeIcon(jsonPayload);
         if (largeIcon != null) {
             aVar.setHasLargeIcon(true);
-            vVar.e(largeIcon);
+            uVar.e(largeIcon);
         }
         Bitmap bitmap = getBitmap(jsonPayload.optString("bicon", null));
         if (bitmap != null) {
-            C0299s c0299s = new C0299s();
+            r rVar = new r();
             IconCompat iconCompat = new IconCompat(1);
-            iconCompat.f4690b = bitmap;
-            c0299s.f489e = iconCompat;
-            c0299s.f518c = v.b(optString);
-            c0299s.f519d = true;
-            vVar.g(c0299s);
+            iconCompat.f4658b = bitmap;
+            rVar.f384e = iconCompat;
+            rVar.f413c = u.b(optString);
+            rVar.f414d = true;
+            uVar.g(rVar);
         }
         if (notificationJob.getShownTimeStamp() != null) {
             try {
                 Long shownTimeStamp = notificationJob.getShownTimeStamp();
                 h.b(shownTimeStamp);
-                vVar.f514v.when = shownTimeStamp.longValue() * 1000;
+                uVar.f409v.when = shownTimeStamp.longValue() * 1000;
             } catch (Throwable unused3) {
             }
         }
-        setAlertnessOptions(jsonPayload, vVar);
-        aVar.setCompatBuilder(vVar);
+        setAlertnessOptions(jsonPayload, uVar);
+        aVar.setCompatBuilder(uVar);
         return aVar;
     }
 
-    @Override // v5.InterfaceC5115a
+    @Override // v5.InterfaceC5105a
     public Bitmap getDefaultLargeIcon() {
         return resizeBitmapForLargeIconArea(getBitmapFromAssetsOrResourceName("ic_onesignal_large_icon_default"));
     }
 
-    @Override // v5.InterfaceC5115a
+    @Override // v5.InterfaceC5105a
     public int getDefaultSmallIconId() {
         int drawableId = getDrawableId("ic_stat_onesignal_default");
         if (drawableId != 0) {
@@ -490,19 +490,19 @@ public final class b implements InterfaceC5115a {
         return drawableId3 != 0 ? drawableId3 : R.drawable.ic_popup_reminder;
     }
 
-    @Override // v5.InterfaceC5115a
+    @Override // v5.InterfaceC5105a
     public int getGroupAlertBehavior() {
         return 2;
     }
 
-    @Override // v5.InterfaceC5115a
+    @Override // v5.InterfaceC5105a
     public Intent getNewBaseDismissIntent(int i) {
         Intent putExtra = new Intent(getCurrentContext(), this.notificationDismissedClass).putExtra("androidNotificationId", i).putExtra("dismissed", true);
         h.d(putExtra, "putExtra(...)");
         return putExtra;
     }
 
-    @Override // v5.InterfaceC5115a
+    @Override // v5.InterfaceC5105a
     public PendingIntent getNewDismissActionPendingIntent(int i, Intent intent) {
         h.e(intent, "intent");
         PendingIntent broadcast = PendingIntent.getBroadcast(getCurrentContext(), i, intent, 201326592);
@@ -510,7 +510,7 @@ public final class b implements InterfaceC5115a {
         return broadcast;
     }
 
-    @Override // v5.InterfaceC5115a
+    @Override // v5.InterfaceC5105a
     public CharSequence getTitle(JSONObject fcmJson) {
         h.e(fcmJson, "fcmJson");
         String optString = fcmJson.optString("title", null);
@@ -527,14 +527,14 @@ public final class b implements InterfaceC5115a {
         return applicationLabel;
     }
 
-    @Override // v5.InterfaceC5115a
-    public void removeNotifyOptions(v vVar) {
-        h.b(vVar);
-        vVar.d(8, true);
-        vVar.c(0);
-        vVar.f(null);
-        Notification notification = vVar.f514v;
+    @Override // v5.InterfaceC5105a
+    public void removeNotifyOptions(u uVar) {
+        h.b(uVar);
+        uVar.d(8, true);
+        uVar.c(0);
+        uVar.f(null);
+        Notification notification = uVar.f409v;
         notification.vibrate = null;
-        notification.tickerText = v.b(null);
+        notification.tickerText = u.b(null);
     }
 }

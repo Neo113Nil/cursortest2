@@ -1,50 +1,39 @@
 package e1;
 
-import X0.v;
-import android.graphics.Path;
-import d1.C4443a;
-import f1.AbstractC4498a;
+import java.util.ArrayList;
+import w.AbstractC5128c;
 
 /* loaded from: classes.dex */
-public final class d implements b {
+public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f37111a;
+    public final ArrayList f37231a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Path.FillType f37112b;
+    public final char f37232b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final C4443a f37113c;
+    public final double f37233c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final C4443a f37114d;
+    public final String f37234d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final C4443a f37115e;
+    public final String f37235e;
 
-    /* renamed from: f, reason: collision with root package name */
-    public final C4443a f37116f;
-
-    /* renamed from: g, reason: collision with root package name */
-    public final String f37117g;
-
-    /* renamed from: h, reason: collision with root package name */
-    public final boolean f37118h;
-
-    public d(String str, int i, Path.FillType fillType, C4443a c4443a, C4443a c4443a2, C4443a c4443a3, C4443a c4443a4, boolean z3) {
-        this.f37111a = i;
-        this.f37112b = fillType;
-        this.f37113c = c4443a;
-        this.f37114d = c4443a2;
-        this.f37115e = c4443a3;
-        this.f37116f = c4443a4;
-        this.f37117g = str;
-        this.f37118h = z3;
+    public d(ArrayList arrayList, char c9, double d9, String str, String str2) {
+        this.f37231a = arrayList;
+        this.f37232b = c9;
+        this.f37233c = d9;
+        this.f37234d = str;
+        this.f37235e = str2;
     }
 
-    @Override // e1.b
-    public final Z0.c a(v vVar, X0.i iVar, AbstractC4498a abstractC4498a) {
-        return new Z0.h(vVar, iVar, abstractC4498a, this);
+    public static int a(char c9, String str, String str2) {
+        return str2.hashCode() + AbstractC5128c.a(c9 * 31, 31, str);
+    }
+
+    public final int hashCode() {
+        return a(this.f37232b, this.f37235e, this.f37234d);
     }
 }

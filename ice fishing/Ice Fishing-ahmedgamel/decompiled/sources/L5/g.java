@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import org.json.JSONArray;
-import v7.AbstractC5131l;
+import v7.AbstractC5121l;
 
 /* loaded from: classes2.dex */
 public final class g implements K5.a, O5.a {
@@ -43,7 +43,7 @@ public final class g implements K5.a, O5.a {
     }
 
     private final void attemptSessionUpgrade(x4.b bVar, String str) {
-        boolean z3;
+        boolean z6;
         K5.b bVar2;
         com.onesignal.debug.internal.logging.b.debug$default("InfluenceManager.attemptSessionUpgrade(entryAction: " + bVar + ", directId: " + str + ')', null, 2, null);
         b channelByEntryAction = getChannelByEntryAction(bVar);
@@ -55,12 +55,12 @@ public final class g implements K5.a, O5.a {
             if (str == null) {
                 str = channelByEntryAction.getDirectId();
             }
-            z3 = setSessionTracker(channelByEntryAction, dVar, str, null);
+            z6 = setSessionTracker(channelByEntryAction, dVar, str, null);
         } else {
-            z3 = false;
+            z6 = false;
             bVar2 = null;
         }
-        if (z3) {
+        if (z6) {
             com.onesignal.debug.internal.logging.b.debug$default("InfluenceManager.attemptSessionUpgrade: channel updated, search for ending direct influences on channels: " + channelsToResetByEntryAction, null, 2, null);
             kotlin.jvm.internal.h.b(bVar2);
             arrayList.add(bVar2);
@@ -152,7 +152,7 @@ public final class g implements K5.a, O5.a {
         if (!willChangeSessionTracker(bVar, dVar, str, jSONArray)) {
             return false;
         }
-        com.onesignal.debug.internal.logging.b.debug$default(k.H("\n            ChannelTracker changed: " + bVar.getIdTag() + "\n            from:\n            influenceType: " + bVar.getInfluenceType() + ", directNotificationId: " + bVar.getDirectId() + ", indirectNotificationIds: " + bVar.getIndirectIds() + "\n            to:\n            influenceType: " + dVar + ", directNotificationId: " + str + ", indirectNotificationIds: " + jSONArray + "\n            "), null, 2, null);
+        com.onesignal.debug.internal.logging.b.debug$default(k.X("\n            ChannelTracker changed: " + bVar.getIdTag() + "\n            from:\n            influenceType: " + bVar.getInfluenceType() + ", directNotificationId: " + bVar.getDirectId() + ", indirectNotificationIds: " + bVar.getIndirectIds() + "\n            to:\n            influenceType: " + dVar + ", directNotificationId: " + str + ", indirectNotificationIds: " + jSONArray + "\n            "), null, 2, null);
         bVar.setInfluenceType(dVar);
         bVar.setDirectId(str);
         bVar.setIndirectIds(jSONArray);
@@ -183,7 +183,7 @@ public final class g implements K5.a, O5.a {
     public List<K5.b> getInfluences() {
         Collection<a> values = this.trackers.values();
         kotlin.jvm.internal.h.d(values, "<get-values>(...)");
-        ArrayList arrayList = new ArrayList(AbstractC5131l.y(values, 10));
+        ArrayList arrayList = new ArrayList(AbstractC5121l.w(values, 10));
         Iterator<T> it = values.iterator();
         while (it.hasNext()) {
             arrayList.add(((a) it.next()).getCurrentSessionInfluence());

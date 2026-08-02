@@ -11,9 +11,9 @@ import java.util.Spliterators;
 public abstract class NB extends AbstractCollection implements Serializable {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final Object[] f26471n = new Object[0];
+    public static final Object[] f27255n = new Object[0];
 
-    public abstract AbstractC4255zC a();
+    public abstract AbstractC4278zC a();
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final boolean add(Object obj) {
@@ -47,18 +47,18 @@ public abstract class NB extends AbstractCollection implements Serializable {
 
     public RB f() {
         if (isEmpty()) {
-            PB pb = RB.f27177u;
-            return C3500lC.f31745x;
+            PB pb = RB.f27933u;
+            return C3523lC.f32525x;
         }
-        Object[] array = toArray(f26471n);
-        PB pb2 = RB.f27177u;
+        Object[] array = toArray(f27255n);
+        PB pb2 = RB.f27933u;
         return RB.p(array, array.length);
     }
 
     public abstract boolean g();
 
     public int h(Object[] objArr, int i) {
-        AbstractC4255zC a9 = a();
+        AbstractC4278zC a9 = a();
         while (a9.hasNext()) {
             objArr[i] = a9.next();
             i++;
@@ -88,7 +88,7 @@ public abstract class NB extends AbstractCollection implements Serializable {
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final Object[] toArray() {
-        return toArray(f26471n);
+        return toArray(f27255n);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection

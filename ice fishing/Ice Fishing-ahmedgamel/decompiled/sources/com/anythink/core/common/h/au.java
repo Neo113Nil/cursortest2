@@ -12,42 +12,42 @@ import org.json.JSONObject;
 public final class au {
 
     /* renamed from: a, reason: collision with root package name */
-    private final List<a> f13570a = new ArrayList();
+    private final List<a> f14356a = new ArrayList();
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private final String f13571a;
+        private final String f14357a;
 
         /* renamed from: b, reason: collision with root package name */
-        private final long f13572b;
+        private final long f14358b;
 
         /* renamed from: c, reason: collision with root package name */
-        private Map<String, Long> f13573c;
+        private Map<String, Long> f14359c;
 
         public a(String str, long j6) {
-            this.f13571a = str;
-            this.f13572b = j6;
+            this.f14357a = str;
+            this.f14358b = j6;
         }
 
         public final String a() {
-            return this.f13571a;
+            return this.f14357a;
         }
 
         public final long b() {
-            return this.f13572b;
+            return this.f14358b;
         }
 
         public final Map<String, Long> c() {
-            return this.f13573c;
+            return this.f14359c;
         }
 
         public final String toString() {
-            return "{errorCode='" + this.f13571a + "', errorCodeInterval=" + this.f13572b + ", msgMap=" + this.f13573c + '}';
+            return "{errorCode='" + this.f14357a + "', errorCodeInterval=" + this.f14358b + ", msgMap=" + this.f14359c + '}';
         }
 
         public final void a(Map<String, Long> map) {
-            this.f13573c = map;
+            this.f14359c = map;
         }
     }
 
@@ -62,7 +62,7 @@ public final class au {
                         if (!TextUtils.isEmpty(next) && (optJSONObject = jSONObject.optJSONObject(next)) != null) {
                             a aVar = new a(next, optJSONObject.optLong("c_t", 0L));
                             try {
-                                JSONObject optJSONObject2 = optJSONObject.optJSONObject(com.anythink.expressad.foundation.g.a.f19093q);
+                                JSONObject optJSONObject2 = optJSONObject.optJSONObject(com.anythink.expressad.foundation.g.a.f19880q);
                                 if (optJSONObject2 != null) {
                                     HashMap hashMap = new HashMap();
                                     Iterator<String> keys2 = optJSONObject2.keys();
@@ -85,7 +85,7 @@ public final class au {
                             } catch (Exception e9) {
                                 e9.printStackTrace();
                             }
-                            this.f13570a.add(aVar);
+                            this.f14356a.add(aVar);
                         }
                     } catch (Throwable unused2) {
                     }
@@ -96,6 +96,6 @@ public final class au {
     }
 
     public final List<a> a() {
-        return this.f13570a;
+        return this.f14356a;
     }
 }

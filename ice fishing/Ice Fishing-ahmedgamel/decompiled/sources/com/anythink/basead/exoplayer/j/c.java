@@ -11,22 +11,22 @@ import java.io.InputStream;
 public final class c implements h {
 
     /* renamed from: a, reason: collision with root package name */
-    private final AssetManager f8110a;
+    private final AssetManager f8896a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final aa<? super c> f8111b;
+    private final aa<? super c> f8897b;
 
     /* renamed from: c, reason: collision with root package name */
-    private Uri f8112c;
+    private Uri f8898c;
 
     /* renamed from: d, reason: collision with root package name */
-    private InputStream f8113d;
+    private InputStream f8899d;
 
     /* renamed from: e, reason: collision with root package name */
-    private long f8114e;
+    private long f8900e;
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f8115f;
+    private boolean f8901f;
 
     public static final class a extends IOException {
         public a(IOException iOException) {
@@ -41,35 +41,35 @@ public final class c implements h {
     @Override // com.anythink.basead.exoplayer.j.h
     public final long a(k kVar) {
         try {
-            Uri uri = kVar.f8137c;
-            this.f8112c = uri;
+            Uri uri = kVar.f8923c;
+            this.f8898c = uri;
             String path = uri.getPath();
             if (path.startsWith("/android_asset/")) {
                 path = path.substring(15);
             } else if (path.startsWith("/")) {
                 path = path.substring(1);
             }
-            InputStream open = this.f8110a.open(path, 1);
-            this.f8113d = open;
-            if (open.skip(kVar.f8140f) < kVar.f8140f) {
+            InputStream open = this.f8896a.open(path, 1);
+            this.f8899d = open;
+            if (open.skip(kVar.f8926f) < kVar.f8926f) {
                 throw new EOFException();
             }
-            long j6 = kVar.f8141g;
+            long j6 = kVar.f8927g;
             if (j6 != -1) {
-                this.f8114e = j6;
+                this.f8900e = j6;
             } else {
-                long available = this.f8113d.available();
-                this.f8114e = available;
+                long available = this.f8899d.available();
+                this.f8900e = available;
                 if (available == 2147483647L) {
-                    this.f8114e = -1L;
+                    this.f8900e = -1L;
                 }
             }
-            this.f8115f = true;
-            aa<? super c> aaVar = this.f8111b;
+            this.f8901f = true;
+            aa<? super c> aaVar = this.f8897b;
             if (aaVar != null) {
                 aaVar.b();
             }
-            return this.f8114e;
+            return this.f8900e;
         } catch (IOException e9) {
             throw new a(e9);
         }
@@ -77,10 +77,10 @@ public final class c implements h {
 
     @Override // com.anythink.basead.exoplayer.j.h
     public final void b() {
-        this.f8112c = null;
+        this.f8898c = null;
         try {
             try {
-                InputStream inputStream = this.f8113d;
+                InputStream inputStream = this.f8899d;
                 if (inputStream != null) {
                     inputStream.close();
                 }
@@ -88,10 +88,10 @@ public final class c implements h {
                 throw new a(e9);
             }
         } finally {
-            this.f8113d = null;
-            if (this.f8115f) {
-                this.f8115f = false;
-                aa<? super c> aaVar = this.f8111b;
+            this.f8899d = null;
+            if (this.f8901f) {
+                this.f8901f = false;
+                aa<? super c> aaVar = this.f8897b;
                 if (aaVar != null) {
                     aaVar.c();
                 }
@@ -100,38 +100,38 @@ public final class c implements h {
     }
 
     public c(Context context, aa<? super c> aaVar) {
-        this.f8110a = context.getAssets();
-        this.f8111b = aaVar;
+        this.f8896a = context.getAssets();
+        this.f8897b = aaVar;
     }
 
     @Override // com.anythink.basead.exoplayer.j.h
-    public final int a(byte[] bArr, int i, int i6) {
-        if (i6 == 0) {
+    public final int a(byte[] bArr, int i, int i4) {
+        if (i4 == 0) {
             return 0;
         }
-        long j6 = this.f8114e;
+        long j6 = this.f8900e;
         if (j6 == 0) {
             return -1;
         }
         if (j6 != -1) {
             try {
-                i6 = (int) Math.min(j6, i6);
+                i4 = (int) Math.min(j6, i4);
             } catch (IOException e9) {
                 throw new a(e9);
             }
         }
-        int read = this.f8113d.read(bArr, i, i6);
+        int read = this.f8899d.read(bArr, i, i4);
         if (read == -1) {
-            if (this.f8114e == -1) {
+            if (this.f8900e == -1) {
                 return -1;
             }
             throw new a(new EOFException());
         }
-        long j9 = this.f8114e;
+        long j9 = this.f8900e;
         if (j9 != -1) {
-            this.f8114e = j9 - read;
+            this.f8900e = j9 - read;
         }
-        aa<? super c> aaVar = this.f8111b;
+        aa<? super c> aaVar = this.f8897b;
         if (aaVar != null) {
             aaVar.a(read);
         }
@@ -140,6 +140,6 @@ public final class c implements h {
 
     @Override // com.anythink.basead.exoplayer.j.h
     public final Uri a() {
-        return this.f8112c;
+        return this.f8898c;
     }
 }

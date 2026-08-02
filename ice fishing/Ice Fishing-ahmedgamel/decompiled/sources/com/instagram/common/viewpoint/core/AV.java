@@ -4,16 +4,16 @@ import android.os.Bundle;
 import java.util.Arrays;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class AV extends AbstractC2375pt {
+public final class AV extends AbstractC2395pt {
     public static byte[] A01;
     public static final AnonymousClass23<AV> A02;
     public static final String A03;
     public final float A00;
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 75);
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 75);
         }
         return new String(copyOfRange);
     }
@@ -39,15 +39,15 @@ public final class AV extends AbstractC2375pt {
         this.A00 = -1.0f;
     }
 
-    public AV(float f3) {
-        AbstractC06243y.A09(f3 >= 0.0f && f3 <= 100.0f, A02(0, 40, 45));
-        this.A00 = f3;
+    public AV(float f2) {
+        AbstractC06443y.A09(f2 >= 0.0f && f2 <= 100.0f, A02(0, 40, 45));
+        this.A00 = f2;
     }
 
     public static AV A00(Bundle bundle) {
-        AbstractC06243y.A07(bundle.getInt(AbstractC2375pt.A02, -1) == 1);
-        float f3 = bundle.getFloat(A03, -1.0f);
-        return f3 == -1.0f ? new AV() : new AV(f3);
+        AbstractC06443y.A07(bundle.getInt(AbstractC2395pt.A02, -1) == 1);
+        float f2 = bundle.getFloat(A03, -1.0f);
+        return f2 == -1.0f ? new AV() : new AV(f2);
     }
 
     public final boolean equals(Object obj) {

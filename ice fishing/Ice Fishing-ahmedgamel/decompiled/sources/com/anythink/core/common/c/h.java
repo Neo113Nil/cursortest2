@@ -20,7 +20,7 @@ public final class h extends e {
 
     @Override // com.anythink.core.common.c.f
     public final c a() {
-        PackageInfo b9 = !TextUtils.isEmpty(this.f12291e) ? m.b(this.f12292f, this.f12291e) : null;
+        PackageInfo b9 = !TextUtils.isEmpty(this.f13077e) ? m.b(this.f13078f, this.f13077e) : null;
         a aVar = this.i;
         if (aVar != null) {
             aVar.a(b9);

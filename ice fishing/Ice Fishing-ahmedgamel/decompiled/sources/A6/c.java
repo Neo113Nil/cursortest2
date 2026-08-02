@@ -11,36 +11,36 @@ import java.util.concurrent.atomic.AtomicReference;
 public final class c implements Closeable {
 
     /* renamed from: n, reason: collision with root package name */
-    public final ArrayList f41n;
+    public final ArrayList f198n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final AtomicBoolean f42u = new AtomicBoolean(false);
+    public final AtomicBoolean f199u = new AtomicBoolean(false);
 
     /* renamed from: v, reason: collision with root package name */
-    public final AtomicBoolean f43v = new AtomicBoolean(false);
+    public final AtomicBoolean f200v = new AtomicBoolean(false);
 
     /* renamed from: w, reason: collision with root package name */
-    public final AtomicReference f44w;
+    public final AtomicReference f201w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final /* synthetic */ d f45x;
+    public final /* synthetic */ d f202x;
 
     public c(d dVar, ArrayList arrayList, B6.a aVar) {
-        this.f45x = dVar;
+        this.f202x = dVar;
         AtomicReference atomicReference = new AtomicReference();
-        this.f44w = atomicReference;
-        this.f41n = arrayList;
+        this.f201w = atomicReference;
+        this.f198n = arrayList;
         atomicReference.set(aVar);
     }
 
     public final void b() {
-        if (this.f43v.get()) {
+        if (this.f200v.get()) {
             return;
         }
-        AtomicBoolean atomicBoolean = this.f42u;
+        AtomicBoolean atomicBoolean = this.f199u;
         if (atomicBoolean.compareAndSet(false, true)) {
             try {
-                B6.a aVar = (B6.a) this.f44w.get();
+                B6.a aVar = (B6.a) this.f201w.get();
                 Objects.requireNonNull(aVar);
                 aVar.j();
             } catch (IOException e9) {
@@ -52,9 +52,9 @@ public final class c implements Closeable {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
-        if (this.f43v.compareAndSet(false, true)) {
-            ((AtomicBoolean) this.f45x.f50x).set(false);
-            this.f44w.set(null);
+        if (this.f200v.compareAndSet(false, true)) {
+            ((AtomicBoolean) this.f202x.f207x).set(false);
+            this.f201w.set(null);
         }
     }
 }

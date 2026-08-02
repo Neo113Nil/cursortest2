@@ -1,9 +1,9 @@
 package com.onesignal.notifications.internal.registration.impl;
 
 import I7.p;
-import S7.AbstractC0406y;
+import S7.AbstractC0410y;
 import S7.F;
-import S7.InterfaceC0404w;
+import S7.InterfaceC0408w;
 import X7.o;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -13,7 +13,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import com.onesignal.common.AndroidUtils;
 import u7.v;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class a {
@@ -36,8 +36,8 @@ public final class a {
     public static final class b extends B7.h implements p {
         int label;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -46,24 +46,24 @@ public final class a {
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return a.this.new b(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return a.this.new b(interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((b) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((b) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             final Activity current = a.this._applicationService.getCurrent();
-            v vVar = v.f41353a;
+            v vVar = v.f41073a;
             if (current == null) {
                 return vVar;
             }
@@ -110,9 +110,9 @@ public final class a {
     /* JADX INFO: Access modifiers changed from: private */
     public final void openPlayStoreToApp(Activity activity) {
         try {
-            M2.e eVar = M2.e.f1842d;
+            O2.e eVar = O2.e.f2268d;
             PendingIntent pendingIntent = null;
-            Intent b9 = eVar.b(activity, null, eVar.c(this._applicationService.getAppContext(), M2.f.f1843a));
+            Intent b9 = eVar.b(activity, null, eVar.c(this._applicationService.getAppContext(), O2.f.f2269a));
             if (b9 != null) {
                 pendingIntent = PendingIntent.getActivity(activity, PLAY_SERVICES_RESOLUTION_REQUEST, b9, 201326592);
             }
@@ -124,13 +124,13 @@ public final class a {
         }
     }
 
-    public final Object showUpdateGPSDialog(InterfaceC5267d interfaceC5267d) {
+    public final Object showUpdateGPSDialog(InterfaceC5240d interfaceC5240d) {
         boolean isAndroidDeviceType = this._deviceService.isAndroidDeviceType();
-        v vVar = v.f41353a;
+        v vVar = v.f41073a;
         if (isAndroidDeviceType && isGooglePlayStoreInstalled() && !((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getDisableGMSMissingPrompt() && !((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getUserRejectedGMSUpdate()) {
-            Z7.e eVar = F.f2915a;
-            Object y7 = AbstractC0406y.y(o.f3856a, new b(null), interfaceC5267d);
-            if (y7 == A7.a.f58n) {
+            Z7.e eVar = F.f2998a;
+            Object y7 = AbstractC0410y.y(o.f3811a, new b(null), interfaceC5240d);
+            if (y7 == A7.a.f215n) {
                 return y7;
             }
         }

@@ -21,7 +21,7 @@ import org.json.JSONObject;
 public class BaseRewardJs extends AbsFeedBackForH5 implements IRewardBridge {
 
     /* renamed from: a, reason: collision with root package name */
-    protected static final String f21842a = "JS-Reward-Brigde";
+    protected static final String f22629a = "JS-Reward-Brigde";
     protected IRewardBridge i;
 
     private static String a() {
@@ -53,7 +53,7 @@ public class BaseRewardJs extends AbsFeedBackForH5 implements IRewardBridge {
                 int i = v.a(t.b().g(), optString) ? 1 : 2;
                 try {
                     JSONObject jSONObject = new JSONObject();
-                    jSONObject.put("code", CommonJSBridgeImpUtils.f17949b);
+                    jSONObject.put("code", CommonJSBridgeImpUtils.f18736b);
                     JSONObject jSONObject2 = new JSONObject();
                     jSONObject2.put("result", i);
                     jSONObject.put("data", jSONObject2);
@@ -80,8 +80,8 @@ public class BaseRewardJs extends AbsFeedBackForH5 implements IRewardBridge {
             }
             if (obj != null) {
                 b bVar = (b) obj;
-                if (bVar.f18062a != null) {
-                    WindVaneWebView windVaneWebView = bVar.f18062a;
+                if (bVar.f18849a != null) {
+                    WindVaneWebView windVaneWebView = bVar.f18849a;
                     if (windVaneWebView.getWebViewListener() != null) {
                         ((a) windVaneWebView.getWebViewListener()).a(obj);
                     }
@@ -95,7 +95,7 @@ public class BaseRewardJs extends AbsFeedBackForH5 implements IRewardBridge {
     public void gial(Object obj, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", CommonJSBridgeImpUtils.f17949b);
+            jSONObject.put("code", CommonJSBridgeImpUtils.f18736b);
             JSONObject jSONObject2 = new JSONObject();
             jSONObject2.put("packageNameList", "[]");
             jSONObject.put("data", jSONObject2);
@@ -122,23 +122,23 @@ public class BaseRewardJs extends AbsFeedBackForH5 implements IRewardBridge {
 
     @Override // com.anythink.expressad.atsignalcommon.windvane.j
     public void initialize(Context context, WindVaneWebView windVaneWebView) {
-        boolean z3;
+        boolean z6;
         super.initialize(context, windVaneWebView);
         try {
-            z3 = IJSFactory.class.isInstance(context);
+            z6 = IJSFactory.class.isInstance(context);
         } catch (ClassNotFoundException e9) {
             e9.printStackTrace();
-            z3 = false;
+            z6 = false;
         }
         try {
-            if (z3) {
+            if (z6) {
                 this.i = (IRewardBridge) BaseRewardJsH5.class.newInstance();
                 BaseRewardJsH5.class.getMethod("initialize", Context.class, WindVaneWebView.class).invoke(this.i, context, windVaneWebView);
             } else if (windVaneWebView.getObject() != null && (windVaneWebView.getObject() instanceof IRewardBridge)) {
                 this.i = (IRewardBridge) windVaneWebView.getObject();
             }
         } catch (Exception e10) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e10.printStackTrace();
             }
         }
@@ -156,9 +156,9 @@ public class BaseRewardJs extends AbsFeedBackForH5 implements IRewardBridge {
                 return;
             }
             b bVar = (b) obj;
-            if (bVar.f18062a.getObject() instanceof j) {
-                j jVar = (j) bVar.f18062a.getObject();
-                Context context = bVar.f18062a.getContext();
+            if (bVar.f18849a.getObject() instanceof j) {
+                j jVar = (j) bVar.f18849a.getObject();
+                Context context = bVar.f18849a.getContext();
                 if (context != null && context != context.getApplicationContext()) {
                     jVar.a(context);
                 }
@@ -195,7 +195,7 @@ public class BaseRewardJs extends AbsFeedBackForH5 implements IRewardBridge {
             if (optInt == 1) {
                 y.a(optString);
             } else if (optInt == 2) {
-                y.a(this.f18077f, optString);
+                y.a(this.f18864f, optString);
             }
         } catch (JSONException e9) {
             e9.getMessage();
@@ -240,23 +240,23 @@ public class BaseRewardJs extends AbsFeedBackForH5 implements IRewardBridge {
 
     @Override // com.anythink.expressad.atsignalcommon.windvane.j
     public void initialize(Object obj, WindVaneWebView windVaneWebView) {
-        boolean z3;
+        boolean z6;
         super.initialize(obj, windVaneWebView);
         try {
-            z3 = IJSFactory.class.isInstance(obj);
+            z6 = IJSFactory.class.isInstance(obj);
         } catch (ClassNotFoundException e9) {
             e9.printStackTrace();
-            z3 = false;
+            z6 = false;
         }
         try {
-            if (z3) {
+            if (z6) {
                 this.i = (IRewardBridge) BaseRewardJsH5.class.newInstance();
                 BaseRewardJsH5.class.getMethod("initialize", Object.class, WindVaneWebView.class).invoke(this.i, obj, windVaneWebView);
             } else if (windVaneWebView.getObject() != null && (windVaneWebView.getObject() instanceof IRewardBridge)) {
                 this.i = (IRewardBridge) windVaneWebView.getObject();
             }
         } catch (Exception e10) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e10.printStackTrace();
             }
         }

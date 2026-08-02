@@ -23,64 +23,64 @@ import java.util.zip.ZipFile;
 public final class p extends e {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f19667a = 1;
+    public static final int f20454a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f19668b = 2;
+    public static final int f20455b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f19669c = 3;
+    public static final int f20456c = 3;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f19670d = 4;
+    public static final int f20457d = 4;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f19671e = "/download/.at";
+    public static final String f20458e = "/download/.at";
 
     /* renamed from: f, reason: collision with root package name */
-    public static final String f19672f = "/atdownload";
+    public static final String f20459f = "/atdownload";
 
     /* renamed from: g, reason: collision with root package name */
-    public static final String f19673g = "template_config.json";
+    public static final String f20460g = "template_config.json";
 
     /* renamed from: h, reason: collision with root package name */
-    private static final String f19674h = "SameFileTool";
+    private static final String f20461h = "SameFileTool";
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final int f19675a = 448;
+        public static final int f20462a = 448;
 
         /* renamed from: b, reason: collision with root package name */
-        public static final int f19676b = 256;
+        public static final int f20463b = 256;
 
         /* renamed from: c, reason: collision with root package name */
-        public static final int f19677c = 128;
+        public static final int f20464c = 128;
 
         /* renamed from: d, reason: collision with root package name */
-        public static final int f19678d = 64;
+        public static final int f20465d = 64;
 
         /* renamed from: e, reason: collision with root package name */
-        public static final int f19679e = 56;
+        public static final int f20466e = 56;
 
         /* renamed from: f, reason: collision with root package name */
-        public static final int f19680f = 32;
+        public static final int f20467f = 32;
 
         /* renamed from: g, reason: collision with root package name */
-        public static final int f19681g = 16;
+        public static final int f20468g = 16;
 
         /* renamed from: h, reason: collision with root package name */
-        public static final int f19682h = 8;
+        public static final int f20469h = 8;
         public static final int i = 7;
 
         /* renamed from: j, reason: collision with root package name */
-        public static final int f19683j = 4;
+        public static final int f20470j = 4;
 
         /* renamed from: k, reason: collision with root package name */
-        public static final int f19684k = 2;
+        public static final int f20471k = 2;
 
         /* renamed from: l, reason: collision with root package name */
-        public static final int f19685l = 1;
+        public static final int f20472l = 1;
     }
 
     private static double a(long j6, int i) {
@@ -444,7 +444,7 @@ public final class p extends e {
                         }
                     }
                 } catch (Exception e10) {
-                    if (com.anythink.expressad.a.f17618a) {
+                    if (com.anythink.expressad.a.f18405a) {
                         e10.printStackTrace();
                     }
                 }
@@ -481,7 +481,7 @@ public final class p extends e {
                     p.a(com.anythink.expressad.foundation.g.c.d.b(com.anythink.expressad.foundation.g.c.a.ANYTHINK_RES_MANAGER_DIR), b9.b());
                     p.a(System.currentTimeMillis() - (b9.n() * 1000));
                 } catch (Exception e9) {
-                    if (com.anythink.expressad.a.f17618a) {
+                    if (com.anythink.expressad.a.f18405a) {
                         e9.printStackTrace();
                     }
                 }
@@ -514,7 +514,7 @@ public final class p extends e {
 
     private static void c(String str, int i) {
         try {
-            if (d(new File(str)) > i * com.anythink.basead.exoplayer.h.o.f7742d) {
+            if (d(new File(str)) > i * com.anythink.basead.exoplayer.h.o.f8528d) {
                 f(str);
             }
         } catch (Exception e9) {
@@ -580,7 +580,7 @@ public final class p extends e {
         FileOutputStream fileOutputStream;
         FileInputStream fileInputStream = null;
         try {
-            if (!t.f19695a) {
+            if (!t.f20482a) {
                 return -1;
             }
             FileInputStream fileInputStream2 = new FileInputStream(str);
@@ -819,7 +819,7 @@ public final class p extends e {
                                         th = th;
                                         fileOutputStream = fileOutputStream2;
                                         try {
-                                            if (com.anythink.expressad.a.f17618a) {
+                                            if (com.anythink.expressad.a.f18405a) {
                                                 th.printStackTrace();
                                             }
                                             String message = th.getMessage();
@@ -887,7 +887,7 @@ public final class p extends e {
 
     public static /* synthetic */ void a(String str, int i) {
         try {
-            if (d(new File(str)) > i * com.anythink.basead.exoplayer.h.o.f7742d) {
+            if (d(new File(str)) > i * com.anythink.basead.exoplayer.h.o.f8528d) {
                 f(str);
             }
         } catch (Exception e9) {

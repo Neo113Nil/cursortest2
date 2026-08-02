@@ -6,45 +6,45 @@ import android.content.Context;
 public abstract class e implements f {
 
     /* renamed from: a, reason: collision with root package name */
-    static final int f12287a = 1;
+    static final int f13073a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    static final int f12288b = 2;
+    static final int f13074b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    static final int f12289c = 3;
+    static final int f13075c = 3;
 
     /* renamed from: d, reason: collision with root package name */
-    protected final long f12290d = 86400000;
+    protected final long f13076d = 86400000;
 
     /* renamed from: e, reason: collision with root package name */
-    protected String f12291e;
+    protected String f13077e;
 
     /* renamed from: f, reason: collision with root package name */
-    protected Context f12292f;
+    protected Context f13078f;
 
     /* renamed from: g, reason: collision with root package name */
-    protected String f12293g;
+    protected String f13079g;
 
     /* renamed from: h, reason: collision with root package name */
-    protected long f12294h;
+    protected long f13080h;
 
     public e(Context context, String str, String str2, long j6) {
-        this.f12291e = str;
-        this.f12292f = context;
-        this.f12293g = str2;
-        this.f12294h = j6;
+        this.f13077e = str;
+        this.f13078f = context;
+        this.f13079g = str2;
+        this.f13080h = j6;
     }
 
     private String c() {
-        return this.f12291e;
+        return this.f13077e;
     }
 
     private String d() {
-        return this.f12293g;
+        return this.f13079g;
     }
 
     private long e() {
-        return this.f12294h;
+        return this.f13080h;
     }
 }

@@ -16,7 +16,7 @@ public interface e {
 
     default e f(f6.c cVar) {
         if (cVar != null && !cVar.isEmpty()) {
-            cVar.forEach(new S6.a(4, this));
+            cVar.forEach(new S6.b(4, this));
         }
         return this;
     }

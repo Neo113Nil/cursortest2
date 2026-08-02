@@ -19,9 +19,9 @@ public class NativeAdScrollView extends LinearLayout {
         void destroyView(NativeAd nativeAd, View view);
     }
 
-    private NativeAdScrollView(Context context, NativeAdsManager nativeAdsManager, AdViewProvider adViewProvider, int i, NativeAdView.Type type, NativeAdViewAttributes nativeAdViewAttributes, int i6) {
+    private NativeAdScrollView(Context context, NativeAdsManager nativeAdsManager, AdViewProvider adViewProvider, int i, NativeAdView.Type type, NativeAdViewAttributes nativeAdViewAttributes, int i4) {
         super(context);
-        this.mNativeAdScrollViewApi = DynamicLoaderFactory.makeLoader(context).createNativeAdScrollViewApi(this, context, nativeAdsManager, adViewProvider, i, type, nativeAdViewAttributes, i6);
+        this.mNativeAdScrollViewApi = DynamicLoaderFactory.makeLoader(context).createNativeAdScrollViewApi(this, context, nativeAdsManager, adViewProvider, i, type, nativeAdViewAttributes, i4);
     }
 
     public void setInset(int i) {
@@ -44,8 +44,8 @@ public class NativeAdScrollView extends LinearLayout {
         this(context, nativeAdsManager, null, i, null, nativeAdViewAttributes, 10);
     }
 
-    public NativeAdScrollView(Context context, NativeAdsManager nativeAdsManager, int i, NativeAdViewAttributes nativeAdViewAttributes, int i6) {
-        this(context, nativeAdsManager, null, i, null, nativeAdViewAttributes, i6);
+    public NativeAdScrollView(Context context, NativeAdsManager nativeAdsManager, int i, NativeAdViewAttributes nativeAdViewAttributes, int i4) {
+        this(context, nativeAdsManager, null, i, null, nativeAdViewAttributes, i4);
     }
 
     @Deprecated

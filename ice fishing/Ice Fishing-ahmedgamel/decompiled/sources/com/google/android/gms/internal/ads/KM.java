@@ -6,8 +6,8 @@ import java.util.regex.Pattern;
 public abstract class KM {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Pattern f25911a = Pattern.compile("bytes (\\d+)-(\\d+)/(?:\\d+|\\*)");
+    public static final Pattern f26663a = Pattern.compile("bytes (\\d+)-(\\d+)/(?:\\d+|\\*)");
 
     /* renamed from: b, reason: collision with root package name */
-    public static final Pattern f25912b = Pattern.compile("bytes (?:(?:\\d+-\\d+)|\\*)/(\\d+)");
+    public static final Pattern f26664b = Pattern.compile("bytes (?:(?:\\d+-\\d+)|\\*)/(\\d+)");
 }

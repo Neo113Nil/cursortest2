@@ -4,45 +4,45 @@ package com.google.android.gms.internal.consent_sdk;
 public final class H2 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final AbstractC4307c2 f35525a;
+    public final AbstractC4330c2 f36294a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f35526b;
+    public final String f36295b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Object[] f35527c;
+    public final Object[] f36296c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f35528d;
+    public final int f36297d;
 
-    public H2(AbstractC4307c2 abstractC4307c2, String str, Object[] objArr) {
-        this.f35525a = abstractC4307c2;
-        this.f35526b = str;
-        this.f35527c = objArr;
+    public H2(AbstractC4330c2 abstractC4330c2, String str, Object[] objArr) {
+        this.f36294a = abstractC4330c2;
+        this.f36295b = str;
+        this.f36296c = objArr;
         char charAt = str.charAt(0);
         if (charAt < 55296) {
-            this.f35528d = charAt;
+            this.f36297d = charAt;
             return;
         }
         int i = charAt & 8191;
-        int i6 = 13;
-        int i9 = 1;
+        int i4 = 13;
+        int i6 = 1;
         while (true) {
-            int i10 = i9 + 1;
-            char charAt2 = str.charAt(i9);
+            int i9 = i6 + 1;
+            char charAt2 = str.charAt(i6);
             if (charAt2 < 55296) {
-                this.f35528d = i | (charAt2 << i6);
+                this.f36297d = i | (charAt2 << i4);
                 return;
             } else {
-                i |= (charAt2 & 8191) << i6;
-                i6 += 13;
-                i9 = i10;
+                i |= (charAt2 & 8191) << i4;
+                i4 += 13;
+                i6 = i9;
             }
         }
     }
 
     public final int a() {
-        int i = this.f35528d;
+        int i = this.f36297d;
         if ((i & 1) != 0) {
             return 1;
         }

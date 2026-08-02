@@ -4,17 +4,17 @@ package androidx.activity;
 public final /* synthetic */ class F extends kotlin.jvm.internal.g implements I7.a {
 
     /* renamed from: v, reason: collision with root package name */
-    public final /* synthetic */ int f4422v;
+    public final /* synthetic */ int f4390v;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public /* synthetic */ F(int i, Object obj, Class cls, String str, String str2, int i6, int i9) {
-        super(i, obj, cls, str, str2, i6);
-        this.f4422v = i9;
+    public /* synthetic */ F(int i, Object obj, Class cls, String str, String str2, int i4, int i6) {
+        super(i, obj, cls, str, str2, i4);
+        this.f4390v = i6;
     }
 
     @Override // I7.a
     public final Object invoke() {
-        switch (this.f4422v) {
+        switch (this.f4390v) {
             case 0:
                 ((G) this.receiver).e();
                 break;
@@ -22,6 +22,6 @@ public final /* synthetic */ class F extends kotlin.jvm.internal.g implements I7
                 ((G) this.receiver).e();
                 break;
         }
-        return u7.v.f41353a;
+        return u7.v.f41073a;
     }
 }

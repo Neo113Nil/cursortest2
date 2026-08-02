@@ -6,88 +6,88 @@ import java.util.Objects;
 public final class M2 {
 
     /* renamed from: A, reason: collision with root package name */
-    public RB f26210A;
+    public RB f27001A;
 
     /* renamed from: a, reason: collision with root package name */
-    public CharSequence f26211a;
+    public CharSequence f27002a;
 
     /* renamed from: b, reason: collision with root package name */
-    public CharSequence f26212b;
+    public CharSequence f27003b;
 
     /* renamed from: c, reason: collision with root package name */
-    public CharSequence f26213c;
+    public CharSequence f27004c;
 
     /* renamed from: d, reason: collision with root package name */
-    public CharSequence f26214d;
+    public CharSequence f27005d;
 
     /* renamed from: e, reason: collision with root package name */
-    public CharSequence f26215e;
+    public CharSequence f27006e;
 
     /* renamed from: f, reason: collision with root package name */
-    public byte[] f26216f;
+    public byte[] f27007f;
 
     /* renamed from: g, reason: collision with root package name */
-    public Integer f26217g;
+    public Integer f27008g;
 
     /* renamed from: h, reason: collision with root package name */
-    public Integer f26218h;
+    public Integer f27009h;
     public Integer i;
 
     /* renamed from: j, reason: collision with root package name */
-    public Integer f26219j;
+    public Integer f27010j;
 
     /* renamed from: k, reason: collision with root package name */
-    public Boolean f26220k;
+    public Boolean f27011k;
 
     /* renamed from: l, reason: collision with root package name */
-    public Integer f26221l;
+    public Integer f27012l;
 
     /* renamed from: m, reason: collision with root package name */
-    public Integer f26222m;
+    public Integer f27013m;
 
     /* renamed from: n, reason: collision with root package name */
-    public Integer f26223n;
+    public Integer f27014n;
 
     /* renamed from: o, reason: collision with root package name */
-    public Integer f26224o;
+    public Integer f27015o;
 
     /* renamed from: p, reason: collision with root package name */
-    public Integer f26225p;
+    public Integer f27016p;
 
     /* renamed from: q, reason: collision with root package name */
-    public Integer f26226q;
+    public Integer f27017q;
 
     /* renamed from: r, reason: collision with root package name */
-    public CharSequence f26227r;
+    public CharSequence f27018r;
 
     /* renamed from: s, reason: collision with root package name */
-    public CharSequence f26228s;
+    public CharSequence f27019s;
 
     /* renamed from: t, reason: collision with root package name */
-    public CharSequence f26229t;
+    public CharSequence f27020t;
 
     /* renamed from: u, reason: collision with root package name */
-    public CharSequence f26230u;
+    public CharSequence f27021u;
 
     /* renamed from: v, reason: collision with root package name */
-    public Integer f26231v;
+    public Integer f27022v;
 
     /* renamed from: w, reason: collision with root package name */
-    public Integer f26232w;
+    public Integer f27023w;
 
     /* renamed from: x, reason: collision with root package name */
-    public CharSequence f26233x;
+    public CharSequence f27024x;
 
     /* renamed from: y, reason: collision with root package name */
-    public CharSequence f26234y;
+    public CharSequence f27025y;
 
     /* renamed from: z, reason: collision with root package name */
-    public Integer f26235z;
+    public Integer f27026z;
 
     public final void a(int i, byte[] bArr) {
-        if (this.f26216f == null || i == 3 || !Objects.equals(this.f26217g, 3)) {
-            this.f26216f = (byte[]) bArr.clone();
-            this.f26217g = Integer.valueOf(i);
+        if (this.f27007f == null || i == 3 || !Objects.equals(this.f27008g, 3)) {
+            this.f27007f = (byte[]) bArr.clone();
+            this.f27008g = Integer.valueOf(i);
         }
     }
 }

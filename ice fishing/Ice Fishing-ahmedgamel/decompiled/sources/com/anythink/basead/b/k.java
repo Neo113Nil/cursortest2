@@ -8,40 +8,40 @@ import com.anythink.core.common.v.a.f;
 public final class k {
 
     /* renamed from: a, reason: collision with root package name */
-    private static volatile k f6041a;
+    private static volatile k f6827a;
 
     /* renamed from: b, reason: collision with root package name */
-    private Context f6042b = t.b().g();
+    private Context f6828b = t.b().g();
 
     /* renamed from: c, reason: collision with root package name */
-    private com.anythink.core.common.v.a.c f6043c = new com.anythink.core.common.v.a.c(1, 50);
+    private com.anythink.core.common.v.a.c f6829c = new com.anythink.core.common.v.a.c(1, 50);
 
     /* renamed from: d, reason: collision with root package name */
-    private f.b f6044d = new f.b(1);
+    private f.b f6830d = new f.b(1);
 
     private k() {
     }
 
     public static k a() {
-        if (f6041a == null) {
+        if (f6827a == null) {
             synchronized (h.class) {
                 try {
-                    if (f6041a == null) {
-                        f6041a = new k();
+                    if (f6827a == null) {
+                        f6827a = new k();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f6041a;
+        return f6827a;
     }
 
     public final com.anythink.core.common.v.a.c b() {
-        return this.f6043c;
+        return this.f6829c;
     }
 
     public final f.b c() {
-        return this.f6044d;
+        return this.f6830d;
     }
 }

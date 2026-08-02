@@ -6,9 +6,9 @@ import java.io.Serializable;
 public final class r implements Serializable {
 
     /* renamed from: n, reason: collision with root package name */
-    public Object f38717n;
+    public Object f38644n;
 
     public final String toString() {
-        return String.valueOf(this.f38717n);
+        return String.valueOf(this.f38644n);
     }
 }

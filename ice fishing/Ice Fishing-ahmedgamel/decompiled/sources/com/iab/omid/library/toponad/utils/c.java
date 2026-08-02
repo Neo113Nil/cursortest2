@@ -15,22 +15,22 @@ import org.json.JSONObject;
 public class c {
 
     /* renamed from: a, reason: collision with root package name */
-    private static WindowManager f36290a;
+    private static WindowManager f37057a;
 
     /* renamed from: b, reason: collision with root package name */
-    private static String[] f36291b = {"x", "y", "width", "height"};
+    private static String[] f37058b = {"x", "y", "width", "height"};
 
     /* renamed from: c, reason: collision with root package name */
-    static float f36292c = Resources.getSystem().getDisplayMetrics().density;
+    static float f37059c = Resources.getSystem().getDisplayMetrics().density;
 
     public static /* synthetic */ class a {
 
         /* renamed from: a, reason: collision with root package name */
-        static final /* synthetic */ int[] f36293a;
+        static final /* synthetic */ int[] f37060a;
 
         static {
             int[] iArr = new int[OutputDeviceStatus.values().length];
-            f36293a = iArr;
+            f37060a = iArr;
             try {
                 iArr[OutputDeviceStatus.NOT_DETECTED.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
@@ -41,26 +41,26 @@ public class c {
     public static class b {
 
         /* renamed from: a, reason: collision with root package name */
-        final float f36294a;
+        final float f37061a;
 
         /* renamed from: b, reason: collision with root package name */
-        final float f36295b;
+        final float f37062b;
 
-        public b(float f3, float f9) {
-            this.f36294a = f3;
-            this.f36295b = f9;
+        public b(float f2, float f9) {
+            this.f37061a = f2;
+            this.f37062b = f9;
         }
     }
 
     public static float a(int i) {
-        return i / f36292c;
+        return i / f37059c;
     }
 
     public static void b(JSONObject jSONObject) {
         b a9 = a(jSONObject);
         try {
-            jSONObject.put("width", a9.f36294a);
-            jSONObject.put("height", a9.f36295b);
+            jSONObject.put("width", a9.f37061a);
+            jSONObject.put("height", a9.f37062b);
         } catch (JSONException e9) {
             e9.printStackTrace();
         }
@@ -92,7 +92,7 @@ public class c {
     }
 
     private static boolean f(JSONObject jSONObject, JSONObject jSONObject2) {
-        for (String str : f36291b) {
+        for (String str : f37058b) {
             if (jSONObject.optDouble(str) != jSONObject2.optDouble(str)) {
                 return false;
             }
@@ -112,18 +112,18 @@ public class c {
     }
 
     private static b a(JSONObject jSONObject) {
-        float f3;
+        float f2;
         float f9;
-        if (f36290a != null) {
+        if (f37057a != null) {
             Point point = new Point(0, 0);
-            f36290a.getDefaultDisplay().getRealSize(point);
-            f3 = a(point.x);
+            f37057a.getDefaultDisplay().getRealSize(point);
+            f2 = a(point.x);
             f9 = a(point.y);
         } else {
-            f3 = 0.0f;
+            f2 = 0.0f;
             f9 = 0.0f;
         }
-        return new b(f3, f9);
+        return new b(f2, f9);
     }
 
     public static void b(JSONObject jSONObject, Boolean bool) {
@@ -136,13 +136,13 @@ public class c {
         }
     }
 
-    public static JSONObject a(int i, int i6, int i9, int i10) {
+    public static JSONObject a(int i, int i4, int i6, int i9) {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("x", a(i));
-            jSONObject.put("y", a(i6));
-            jSONObject.put("width", a(i9));
-            jSONObject.put("height", a(i10));
+            jSONObject.put("y", a(i4));
+            jSONObject.put("width", a(i6));
+            jSONObject.put("height", a(i9));
             return jSONObject;
         } catch (JSONException e9) {
             d.a("Error with creating viewStateObject", e9);
@@ -160,8 +160,8 @@ public class c {
 
     public static void a(Context context) {
         if (context != null) {
-            f36292c = context.getResources().getDisplayMetrics().density;
-            f36290a = (WindowManager) context.getSystemService("window");
+            f37059c = context.getResources().getDisplayMetrics().density;
+            f37057a = (WindowManager) context.getSystemService("window");
         }
     }
 
@@ -245,7 +245,7 @@ public class c {
     }
 
     private static boolean a(OutputDeviceStatus outputDeviceStatus) {
-        return a.f36293a[outputDeviceStatus.ordinal()] == 1;
+        return a.f37060a[outputDeviceStatus.ordinal()] == 1;
     }
 
     private static boolean a(JSONArray jSONArray, JSONArray jSONArray2) {

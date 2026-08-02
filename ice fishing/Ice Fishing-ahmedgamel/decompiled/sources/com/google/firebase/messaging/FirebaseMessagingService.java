@@ -1,38 +1,38 @@
 package com.google.firebase.messaging;
 
-import L2.b;
-import L2.l;
-import L2.m;
-import L2.n;
-import S0.f;
-import U2.a;
-import X2.e;
+import N2.b;
+import N2.m;
+import N2.n;
+import N2.o;
+import W2.a;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
-import g1.C4522b;
-import j4.g;
-import j4.h;
+import com.bumptech.glide.d;
+import com.bumptech.glide.f;
 import java.io.IOException;
 import java.util.ArrayDeque;
 import java.util.Locale;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import l.C4659e;
+import l4.g;
+import l4.h;
 
 /* loaded from: classes2.dex */
 public class FirebaseMessagingService extends h {
 
     /* renamed from: z, reason: collision with root package name */
-    public static final ArrayDeque f36201z = new ArrayDeque(10);
+    public static final ArrayDeque f36968z = new ArrayDeque(10);
 
     /* renamed from: y, reason: collision with root package name */
-    public b f36202y;
+    public b f36969y;
 
     /* JADX WARN: Removed duplicated region for block: B:21:0x0142  */
     /* JADX WARN: Removed duplicated region for block: B:24:0x015a  */
     /* JADX WARN: Removed duplicated region for block: B:44:0x01a0  */
-    @Override // j4.h
+    @Override // l4.h
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
@@ -51,17 +51,17 @@ public class FirebaseMessagingService extends h {
         }
         String stringExtra2 = intent.getStringExtra("google.message_id");
         if (!TextUtils.isEmpty(stringExtra2)) {
-            ArrayDeque arrayDeque = f36201z;
+            ArrayDeque arrayDeque = f36968z;
             if (arrayDeque.contains(stringExtra2)) {
                 if (Log.isLoggable("FirebaseMessaging", 3)) {
                     Log.d("FirebaseMessaging", "Received duplicate message: " + stringExtra2);
                 }
-                if (this.f36202y == null) {
-                    this.f36202y = new b(getApplicationContext());
+                if (this.f36969y == null) {
+                    this.f36969y = new b(getApplicationContext());
                 }
-                bVar = this.f36202y;
-                if (bVar.f1625c.a() >= 233700000) {
-                    f.h(new IOException("SERVICE_NOT_AVAILABLE"));
+                bVar = this.f36969y;
+                if (bVar.f1914c.a() >= 233700000) {
+                    d.q(new IOException("SERVICE_NOT_AVAILABLE"));
                     return;
                 }
                 Bundle bundle = new Bundle();
@@ -74,12 +74,12 @@ public class FirebaseMessagingService extends h {
                 if (valueOf != null) {
                     bundle.putInt("google.product_id", valueOf.intValue());
                 }
-                n c9 = n.c(bVar.f1624b);
+                o c9 = o.c(bVar.f1913b);
                 synchronized (c9) {
-                    i = c9.f1659a;
-                    c9.f1659a = 1 + i;
+                    i = c9.f1949a;
+                    c9.f1949a = 1 + i;
                 }
-                c9.d(new l(i, 3, bundle, 0));
+                c9.d(new m(i, 3, bundle, 0));
                 return;
             }
             if (arrayDeque.size() >= 10) {
@@ -95,20 +95,20 @@ public class FirebaseMessagingService extends h {
             case "deleted_messages":
                 break;
             case "gcm":
-                e.K(intent);
+                f.o(intent);
                 Bundle extras = intent.getExtras();
                 if (extras == null) {
                     extras = new Bundle();
                 }
                 extras.remove("androidx.content.wakelockid");
-                if (C4522b.K(extras)) {
-                    C4522b c4522b = new C4522b(extras);
+                if (C4659e.y(extras)) {
+                    C4659e c4659e = new C4659e(extras);
                     ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor(new a("Firebase-Messaging-Network-Io"));
                     try {
-                        if (!new g(this, c4522b, newSingleThreadExecutor).o()) {
+                        if (!new g(this, c4659e, newSingleThreadExecutor).o()) {
                             newSingleThreadExecutor.shutdown();
-                            if (e.O(intent)) {
-                                e.L("_nf", intent.getExtras());
+                            if (f.u(intent)) {
+                                f.p("_nf", intent.getExtras());
                                 break;
                             }
                         } else {
@@ -124,7 +124,7 @@ public class FirebaseMessagingService extends h {
                     intent.getStringExtra("message_id");
                 }
                 String stringExtra4 = intent.getStringExtra("error");
-                new m(stringExtra4);
+                new n(stringExtra4);
                 if (stringExtra4 != null) {
                     stringExtra4.toLowerCase(Locale.US).getClass();
                     break;
@@ -137,10 +137,10 @@ public class FirebaseMessagingService extends h {
                 Log.w("FirebaseMessaging", "Received message with unknown type: ".concat(stringExtra));
                 break;
         }
-        if (this.f36202y == null) {
+        if (this.f36969y == null) {
         }
-        bVar = this.f36202y;
-        if (bVar.f1625c.a() >= 233700000) {
+        bVar = this.f36969y;
+        if (bVar.f1914c.a() >= 233700000) {
         }
     }
 }

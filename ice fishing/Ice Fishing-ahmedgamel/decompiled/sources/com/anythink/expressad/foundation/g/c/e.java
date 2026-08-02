@@ -8,57 +8,57 @@ import java.util.List;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    private a f19180a;
+    private a f19967a;
 
     /* renamed from: b, reason: collision with root package name */
-    private String f19181b;
+    private String f19968b;
 
     /* renamed from: c, reason: collision with root package name */
-    private e f19182c;
+    private e f19969c;
 
     /* renamed from: d, reason: collision with root package name */
-    private List<e> f19183d;
+    private List<e> f19970d;
 
     public final a a() {
-        return this.f19180a;
+        return this.f19967a;
     }
 
     public final String b() {
-        return this.f19181b;
+        return this.f19968b;
     }
 
     public final e c() {
-        return this.f19182c;
+        return this.f19969c;
     }
 
     public final List<e> d() {
-        return this.f19183d;
+        return this.f19970d;
     }
 
     private void b(e eVar) {
-        if (this.f19183d == null) {
-            this.f19183d = new ArrayList();
+        if (this.f19970d == null) {
+            this.f19970d = new ArrayList();
         }
-        eVar.f19182c = this;
-        this.f19183d.add(eVar);
+        eVar.f19969c = this;
+        this.f19970d.add(eVar);
     }
 
     public final void a(a aVar) {
-        this.f19180a = aVar;
+        this.f19967a = aVar;
     }
 
     public final void a(String str) {
-        this.f19181b = str;
+        this.f19968b = str;
     }
 
     private void a(e eVar) {
-        this.f19182c = eVar;
+        this.f19969c = eVar;
     }
 
     public final void a(a aVar, String str) {
         e eVar = new e();
-        eVar.f19180a = aVar;
-        eVar.f19181b = str;
+        eVar.f19967a = aVar;
+        eVar.f19968b = str;
         b(eVar);
     }
 

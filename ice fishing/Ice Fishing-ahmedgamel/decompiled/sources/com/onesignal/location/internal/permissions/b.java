@@ -1,7 +1,7 @@
 package com.onesignal.location.internal.permissions;
 
 import I7.l;
-import a5.C0438b;
+import a5.C0442b;
 import android.app.Activity;
 import com.onesignal.common.AndroidUtils;
 import com.onesignal.core.activities.PermissionsActivity;
@@ -10,7 +10,7 @@ import com.onesignal.core.internal.permissions.g;
 import kotlin.jvm.internal.h;
 import kotlin.jvm.internal.i;
 import u7.v;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class b implements f, com.onesignal.core.internal.startup.b, com.onesignal.common.events.d {
@@ -42,7 +42,7 @@ public final class b implements f, com.onesignal.core.internal.startup.b, com.on
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((com.onesignal.location.internal.permissions.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(com.onesignal.location.internal.permissions.a it) {
@@ -61,7 +61,7 @@ public final class b implements f, com.onesignal.core.internal.startup.b, com.on
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((com.onesignal.location.internal.permissions.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(com.onesignal.location.internal.permissions.a it) {
@@ -101,15 +101,15 @@ public final class b implements f, com.onesignal.core.internal.startup.b, com.on
                 final /* synthetic */ boolean $hasPermission;
 
                 /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-                public C0223a(boolean z3) {
+                public C0223a(boolean z6) {
                     super(1);
-                    this.$hasPermission = z3;
+                    this.$hasPermission = z6;
                 }
 
                 @Override // I7.l
                 public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                     invoke((com.onesignal.location.internal.permissions.a) obj);
-                    return v.f41353a;
+                    return v.f41073a;
                 }
 
                 public final void invoke(com.onesignal.location.internal.permissions.a it) {
@@ -123,8 +123,8 @@ public final class b implements f, com.onesignal.core.internal.startup.b, com.on
             }
 
             @Override // x4.c, x4.e
-            public void onFocus(boolean z3) {
-                if (z3) {
+            public void onFocus(boolean z6) {
+                if (z6) {
                     return;
                 }
                 super.onFocus(false);
@@ -146,7 +146,7 @@ public final class b implements f, com.onesignal.core.internal.startup.b, com.on
             @Override // I7.l
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 invoke((com.onesignal.location.internal.permissions.a) obj);
-                return v.f41353a;
+                return v.f41073a;
             }
 
             public final void invoke(com.onesignal.location.internal.permissions.a it) {
@@ -195,9 +195,9 @@ public final class b implements f, com.onesignal.core.internal.startup.b, com.on
     /* JADX INFO: Access modifiers changed from: private */
     public static final void showFallbackAlertDialog$present(b bVar, Activity activity) {
         com.onesignal.core.internal.permissions.e eVar = com.onesignal.core.internal.permissions.e.INSTANCE;
-        String string = activity.getString(C0438b.location_permission_name_for_title);
+        String string = activity.getString(C0442b.location_permission_name_for_title);
         h.d(string, "getString(...)");
-        String string2 = activity.getString(C0438b.location_permission_settings_message);
+        String string2 = activity.getString(C0442b.location_permission_settings_message);
         h.d(string2, "getString(...)");
         eVar.show(activity, string, string2, bVar.new e(activity));
     }
@@ -214,18 +214,18 @@ public final class b implements f, com.onesignal.core.internal.startup.b, com.on
     }
 
     @Override // com.onesignal.core.internal.permissions.f
-    public void onReject(boolean z3) {
-        if (z3 ? showFallbackAlertDialog() : false) {
+    public void onReject(boolean z6) {
+        if (z6 ? showFallbackAlertDialog() : false) {
             return;
         }
         this.waiter.wake(Boolean.FALSE);
         this.events.fire(c.INSTANCE);
     }
 
-    public final Object prompt(boolean z3, String str, InterfaceC5267d interfaceC5267d) {
+    public final Object prompt(boolean z6, String str, InterfaceC5240d interfaceC5240d) {
         this.currPermission = str;
-        this._requestPermission.startPrompt(z3, PERMISSION_TYPE, str, b.class);
-        return this.waiter.waitForWake(interfaceC5267d);
+        this._requestPermission.startPrompt(z6, PERMISSION_TYPE, str, b.class);
+        return this.waiter.waitForWake(interfaceC5240d);
     }
 
     @Override // com.onesignal.core.internal.startup.b

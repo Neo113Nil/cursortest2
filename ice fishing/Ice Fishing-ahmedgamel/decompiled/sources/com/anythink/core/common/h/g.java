@@ -6,16 +6,16 @@ import org.json.JSONObject;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f13959a;
+    public int f14745a;
 
     /* renamed from: b, reason: collision with root package name */
-    public long f13960b;
+    public long f14746b;
 
     public final void a(String str) {
         try {
             JSONObject jSONObject = new JSONObject(str);
-            this.f13959a = jSONObject.optInt("number");
-            this.f13960b = jSONObject.optLong("loadTime");
+            this.f14745a = jSONObject.optInt("number");
+            this.f14746b = jSONObject.optLong("loadTime");
         } catch (Exception unused) {
         }
     }
@@ -23,8 +23,8 @@ public final class g {
     public final String toString() {
         JSONObject jSONObject = new JSONObject();
         try {
-            jSONObject.put("number", this.f13959a);
-            jSONObject.put("loadTime", this.f13960b);
+            jSONObject.put("number", this.f14745a);
+            jSONObject.put("loadTime", this.f14746b);
         } catch (Exception unused) {
         }
         return jSONObject.toString();

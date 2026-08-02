@@ -28,7 +28,7 @@ public class MBNoRecycledCrashImageView extends ImageView {
         super(context, attributeSet, i);
     }
 
-    public MBNoRecycledCrashImageView(Context context, AttributeSet attributeSet, int i, int i6) {
-        super(context, attributeSet, i, i6);
+    public MBNoRecycledCrashImageView(Context context, AttributeSet attributeSet, int i, int i4) {
+        super(context, attributeSet, i, i4);
     }
 }

@@ -5,9 +5,9 @@ import java.io.IOException;
 /* renamed from: com.facebook.ads.redexgen.X.5W, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
 public interface C5W {
-    void AGk(C06605i c06605i) throws IOException;
+    void AGk(C06805i c06805i) throws IOException;
 
     void close() throws IOException;
 
-    void write(byte[] bArr, int i, int i6) throws IOException;
+    void write(byte[] bArr, int i, int i4) throws IOException;
 }

@@ -6,20 +6,20 @@ import android.view.ViewGroup;
 public final class f extends ViewGroup.LayoutParams {
 
     /* renamed from: a, reason: collision with root package name */
-    public boolean f1037a;
+    public boolean f1063a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f1038b;
+    public int f1064b;
 
     /* renamed from: c, reason: collision with root package name */
-    public float f1039c;
+    public float f1065c;
 
     /* renamed from: d, reason: collision with root package name */
-    public boolean f1040d;
+    public boolean f1066d;
 
     /* renamed from: e, reason: collision with root package name */
-    public int f1041e;
+    public int f1067e;
 
     /* renamed from: f, reason: collision with root package name */
-    public int f1042f;
+    public int f1068f;
 }

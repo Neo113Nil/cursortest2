@@ -14,10 +14,10 @@ public enum ai {
 
 
     /* renamed from: f, reason: collision with root package name */
-    final String f15541f;
+    final String f16328f;
 
     ai(String str) {
-        this.f15541f = str;
+        this.f16328f = str;
     }
 
     public static ai a(String str) {
@@ -51,6 +51,6 @@ public enum ai {
     }
 
     private String a() {
-        return this.f15541f;
+        return this.f16328f;
     }
 }

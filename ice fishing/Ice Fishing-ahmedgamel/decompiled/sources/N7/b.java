@@ -7,43 +7,43 @@ import java.util.NoSuchElementException;
 public final class b implements Iterator, J7.a {
 
     /* renamed from: n, reason: collision with root package name */
-    public final int f2020n;
+    public final int f2108n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final int f2021u;
+    public final int f2109u;
 
     /* renamed from: v, reason: collision with root package name */
-    public boolean f2022v;
+    public boolean f2110v;
 
     /* renamed from: w, reason: collision with root package name */
-    public int f2023w;
+    public int f2111w;
 
-    public b(int i, int i6, int i9) {
-        this.f2020n = i9;
-        this.f2021u = i6;
-        boolean z3 = false;
-        if (i9 <= 0 ? i >= i6 : i <= i6) {
-            z3 = true;
+    public b(int i, int i4, int i6) {
+        this.f2108n = i6;
+        this.f2109u = i4;
+        boolean z6 = false;
+        if (i6 <= 0 ? i >= i4 : i <= i4) {
+            z6 = true;
         }
-        this.f2022v = z3;
-        this.f2023w = z3 ? i : i6;
+        this.f2110v = z6;
+        this.f2111w = z6 ? i : i4;
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        return this.f2022v;
+        return this.f2110v;
     }
 
     @Override // java.util.Iterator
     public final Object next() {
-        int i = this.f2023w;
-        if (i != this.f2021u) {
-            this.f2023w = this.f2020n + i;
+        int i = this.f2111w;
+        if (i != this.f2109u) {
+            this.f2111w = this.f2108n + i;
         } else {
-            if (!this.f2022v) {
+            if (!this.f2110v) {
                 throw new NoSuchElementException();
             }
-            this.f2022v = false;
+            this.f2110v = false;
         }
         return Integer.valueOf(i);
     }

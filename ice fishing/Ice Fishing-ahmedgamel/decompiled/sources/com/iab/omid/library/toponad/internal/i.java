@@ -10,75 +10,75 @@ import java.util.Iterator;
 public class i implements d.a, com.iab.omid.library.toponad.devicevolume.c {
 
     /* renamed from: f, reason: collision with root package name */
-    private static i f36258f;
+    private static i f37025f;
 
     /* renamed from: a, reason: collision with root package name */
-    private float f36259a = 0.0f;
+    private float f37026a = 0.0f;
 
     /* renamed from: b, reason: collision with root package name */
-    private final com.iab.omid.library.toponad.devicevolume.e f36260b;
+    private final com.iab.omid.library.toponad.devicevolume.e f37027b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final com.iab.omid.library.toponad.devicevolume.b f36261c;
+    private final com.iab.omid.library.toponad.devicevolume.b f37028c;
 
     /* renamed from: d, reason: collision with root package name */
-    private com.iab.omid.library.toponad.devicevolume.d f36262d;
+    private com.iab.omid.library.toponad.devicevolume.d f37029d;
 
     /* renamed from: e, reason: collision with root package name */
-    private c f36263e;
+    private c f37030e;
 
     public i(com.iab.omid.library.toponad.devicevolume.e eVar, com.iab.omid.library.toponad.devicevolume.b bVar) {
-        this.f36260b = eVar;
-        this.f36261c = bVar;
+        this.f37027b = eVar;
+        this.f37028c = bVar;
     }
 
     private c a() {
-        if (this.f36263e == null) {
-            this.f36263e = c.c();
+        if (this.f37030e == null) {
+            this.f37030e = c.c();
         }
-        return this.f36263e;
+        return this.f37030e;
     }
 
     public static i c() {
-        if (f36258f == null) {
-            f36258f = new i(new com.iab.omid.library.toponad.devicevolume.e(), new com.iab.omid.library.toponad.devicevolume.b());
+        if (f37025f == null) {
+            f37025f = new i(new com.iab.omid.library.toponad.devicevolume.e(), new com.iab.omid.library.toponad.devicevolume.b());
         }
-        return f36258f;
+        return f37025f;
     }
 
     public float b() {
-        return this.f36259a;
+        return this.f37026a;
     }
 
     public void d() {
         b.g().a(this);
         b.g().e();
         TreeWalker.getInstance().h();
-        this.f36262d.c();
+        this.f37029d.c();
     }
 
     public void e() {
         TreeWalker.getInstance().j();
         b.g().f();
-        this.f36262d.d();
+        this.f37029d.d();
     }
 
     @Override // com.iab.omid.library.toponad.devicevolume.c
-    public void a(float f3) {
-        this.f36259a = f3;
+    public void a(float f2) {
+        this.f37026a = f2;
         Iterator<com.iab.omid.library.toponad.adsession.a> it = a().a().iterator();
         while (it.hasNext()) {
-            it.next().getAdSessionStatePublisher().a(f3);
+            it.next().getAdSessionStatePublisher().a(f2);
         }
     }
 
     public void a(Context context) {
-        this.f36262d = this.f36260b.a(new Handler(), context, this.f36261c.a(), this);
+        this.f37029d = this.f37027b.a(new Handler(), context, this.f37028c.a(), this);
     }
 
     @Override // com.iab.omid.library.toponad.internal.d.a
-    public void a(boolean z3) {
-        if (z3) {
+    public void a(boolean z6) {
+        if (z6) {
             TreeWalker.getInstance().h();
         } else {
             TreeWalker.getInstance().g();

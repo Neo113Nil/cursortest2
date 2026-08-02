@@ -11,66 +11,66 @@ import java.util.Arrays;
 public final class g extends com.anythink.basead.exoplayer.a implements Handler.Callback {
 
     /* renamed from: n, reason: collision with root package name */
-    private static final int f7381n = 0;
+    private static final int f8167n = 0;
 
     /* renamed from: o, reason: collision with root package name */
-    private static final int f7382o = 5;
+    private static final int f8168o = 5;
 
     /* renamed from: p, reason: collision with root package name */
-    private final d f7383p;
+    private final d f8169p;
 
     /* renamed from: q, reason: collision with root package name */
-    private final f f7384q;
+    private final f f8170q;
 
     /* renamed from: r, reason: collision with root package name */
-    private final Handler f7385r;
+    private final Handler f8171r;
 
     /* renamed from: s, reason: collision with root package name */
-    private final n f7386s;
+    private final n f8172s;
 
     /* renamed from: t, reason: collision with root package name */
-    private final e f7387t;
+    private final e f8173t;
 
     /* renamed from: u, reason: collision with root package name */
-    private final com.anythink.basead.exoplayer.g.a[] f7388u;
+    private final com.anythink.basead.exoplayer.g.a[] f8174u;
 
     /* renamed from: v, reason: collision with root package name */
-    private final long[] f7389v;
+    private final long[] f8175v;
 
     /* renamed from: w, reason: collision with root package name */
-    private int f7390w;
+    private int f8176w;
 
     /* renamed from: x, reason: collision with root package name */
-    private int f7391x;
+    private int f8177x;
 
     /* renamed from: y, reason: collision with root package name */
-    private b f7392y;
+    private b f8178y;
 
     /* renamed from: z, reason: collision with root package name */
-    private boolean f7393z;
+    private boolean f8179z;
 
     @Deprecated
     public interface a extends f {
     }
 
     public g(f fVar, Looper looper) {
-        this(fVar, looper, d.f7379a);
+        this(fVar, looper, d.f8165a);
     }
 
     private void b(com.anythink.basead.exoplayer.g.a aVar) {
-        this.f7384q.a(aVar);
+        this.f8170q.a(aVar);
     }
 
     private void w() {
-        Arrays.fill(this.f7388u, (Object) null);
-        this.f7390w = 0;
-        this.f7391x = 0;
+        Arrays.fill(this.f8174u, (Object) null);
+        this.f8176w = 0;
+        this.f8177x = 0;
     }
 
     @Override // com.anythink.basead.exoplayer.z
     public final int a(m mVar) {
-        if (this.f7383p.a(mVar)) {
-            return com.anythink.basead.exoplayer.a.a((com.anythink.basead.exoplayer.d.g<?>) null, mVar.f8667k) ? 4 : 2;
+        if (this.f8169p.a(mVar)) {
+            return com.anythink.basead.exoplayer.a.a((com.anythink.basead.exoplayer.d.g<?>) null, mVar.f9453k) ? 4 : 2;
         }
         return 0;
     }
@@ -87,7 +87,7 @@ public final class g extends com.anythink.basead.exoplayer.a implements Handler.
     @Override // com.anythink.basead.exoplayer.a
     public final void p() {
         w();
-        this.f7392y = null;
+        this.f8178y = null;
     }
 
     @Override // com.anythink.basead.exoplayer.y
@@ -97,75 +97,75 @@ public final class g extends com.anythink.basead.exoplayer.a implements Handler.
 
     @Override // com.anythink.basead.exoplayer.y
     public final boolean v() {
-        return this.f7393z;
+        return this.f8179z;
     }
 
     private g(f fVar, Looper looper, d dVar) {
         super(4);
-        this.f7384q = (f) com.anythink.basead.exoplayer.k.a.a(fVar);
-        this.f7385r = looper == null ? null : new Handler(looper, this);
-        this.f7383p = (d) com.anythink.basead.exoplayer.k.a.a(dVar);
-        this.f7386s = new n();
-        this.f7387t = new e();
-        this.f7388u = new com.anythink.basead.exoplayer.g.a[5];
-        this.f7389v = new long[5];
+        this.f8170q = (f) com.anythink.basead.exoplayer.k.a.a(fVar);
+        this.f8171r = looper == null ? null : new Handler(looper, this);
+        this.f8169p = (d) com.anythink.basead.exoplayer.k.a.a(dVar);
+        this.f8172s = new n();
+        this.f8173t = new e();
+        this.f8174u = new com.anythink.basead.exoplayer.g.a[5];
+        this.f8175v = new long[5];
     }
 
     @Override // com.anythink.basead.exoplayer.a
     public final void a(m[] mVarArr, long j6) {
-        this.f7392y = this.f7383p.b(mVarArr[0]);
+        this.f8178y = this.f8169p.b(mVarArr[0]);
     }
 
     @Override // com.anythink.basead.exoplayer.a
-    public final void a(long j6, boolean z3) {
+    public final void a(long j6, boolean z6) {
         w();
-        this.f7393z = false;
+        this.f8179z = false;
     }
 
     @Override // com.anythink.basead.exoplayer.y
     public final void a(long j6, long j9) {
-        if (!this.f7393z && this.f7391x < 5) {
-            this.f7387t.a();
-            if (a(this.f7386s, (com.anythink.basead.exoplayer.c.e) this.f7387t, false) == -4) {
-                if (this.f7387t.c()) {
-                    this.f7393z = true;
-                } else if (!this.f7387t.b()) {
-                    e eVar = this.f7387t;
-                    eVar.f7380g = this.f7386s.f8683a.f8668l;
+        if (!this.f8179z && this.f8177x < 5) {
+            this.f8173t.a();
+            if (a(this.f8172s, (com.anythink.basead.exoplayer.c.e) this.f8173t, false) == -4) {
+                if (this.f8173t.c()) {
+                    this.f8179z = true;
+                } else if (!this.f8173t.b()) {
+                    e eVar = this.f8173t;
+                    eVar.f8166g = this.f8172s.f9469a.f9454l;
                     eVar.h();
                     try {
-                        int i = (this.f7390w + this.f7391x) % 5;
-                        this.f7388u[i] = this.f7392y.a(this.f7387t);
-                        this.f7389v[i] = this.f7387t.f6743f;
-                        this.f7391x++;
+                        int i = (this.f8176w + this.f8177x) % 5;
+                        this.f8174u[i] = this.f8178y.a(this.f8173t);
+                        this.f8175v[i] = this.f8173t.f7529f;
+                        this.f8177x++;
                     } catch (c e9) {
                         throw com.anythink.basead.exoplayer.g.a(e9, s());
                     }
                 }
             }
         }
-        if (this.f7391x > 0) {
-            long[] jArr = this.f7389v;
-            int i6 = this.f7390w;
-            if (jArr[i6] <= j6) {
-                com.anythink.basead.exoplayer.g.a aVar = this.f7388u[i6];
-                Handler handler = this.f7385r;
+        if (this.f8177x > 0) {
+            long[] jArr = this.f8175v;
+            int i4 = this.f8176w;
+            if (jArr[i4] <= j6) {
+                com.anythink.basead.exoplayer.g.a aVar = this.f8174u[i4];
+                Handler handler = this.f8171r;
                 if (handler != null) {
                     handler.obtainMessage(0, aVar).sendToTarget();
                 } else {
                     b(aVar);
                 }
-                com.anythink.basead.exoplayer.g.a[] aVarArr = this.f7388u;
-                int i9 = this.f7390w;
-                aVarArr[i9] = null;
-                this.f7390w = (i9 + 1) % 5;
-                this.f7391x--;
+                com.anythink.basead.exoplayer.g.a[] aVarArr = this.f8174u;
+                int i6 = this.f8176w;
+                aVarArr[i6] = null;
+                this.f8176w = (i6 + 1) % 5;
+                this.f8177x--;
             }
         }
     }
 
     private void a(com.anythink.basead.exoplayer.g.a aVar) {
-        Handler handler = this.f7385r;
+        Handler handler = this.f8171r;
         if (handler != null) {
             handler.obtainMessage(0, aVar).sendToTarget();
         } else {

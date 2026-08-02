@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.Locale;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class KB extends AbstractC1553c3 {
+public final class KB extends AbstractC1573c3 {
     public static byte[] A0W;
     public static String[] A0X = {"UQ7TFs74lcUdZuEisIQQex1S2hJkyBQJ", "myvpLMPCiy1Db21mRiA", "GFipZK8NVLufipAPgP", "AfraUSEhnPTRS4j1c1sVruXnc5XHPJ9d", "a5o2PCnXzYQrRDOC9DPzRLQmHH", "zC9Q5dVrf3DuizGN", "cBKGhAcqgckkizLMVTE8MrLSp3snJrYL", "vsEAc6f0BLlcSapFKHSSbJlGpIzpiVSU"};
     public static final int A0Y;
@@ -24,11 +24,11 @@ public final class KB extends AbstractC1553c3 {
     public ImageView A02;
     public ImageView A03;
     public LinearLayout A04;
-    public C1130Og A05;
-    public C1445aJ A06;
-    public C1449aN A07;
-    public InterfaceC1670dx A08;
-    public C0887Eu A09;
+    public C1150Og A05;
+    public C1465aJ A06;
+    public C1469aN A07;
+    public InterfaceC1690dx A08;
+    public C0907Eu A09;
     public C4L A0A;
     public final Handler A0B;
     public final ImageView A0C;
@@ -42,20 +42,20 @@ public final class KB extends AbstractC1553c3 {
     public final TextView A0K;
     public final TextView A0L;
     public final TextView A0M;
-    public final C1840gi A0N;
+    public final C1860gi A0N;
     public final VI A0O;
-    public final C1534bk A0P;
-    public final C1536bm A0Q;
-    public final C1557c7 A0R;
-    public final C0877Ek A0S;
+    public final C1554bk A0P;
+    public final C1556bm A0Q;
+    public final C1577c7 A0R;
+    public final C0897Ek A0S;
     public final EA A0T;
     public final E2 A0U;
     public final Runnable A0V;
 
-    public static String A0J(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0W, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 105);
+    public static String A0J(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0W, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 105);
         }
         return new String(copyOfRange);
     }
@@ -69,8 +69,8 @@ public final class KB extends AbstractC1553c3 {
         A0Y = (int) (XX.A02 * 16.0f);
     }
 
-    public KB(C1557c7 c1557c7) {
-        super(c1557c7, false);
+    public KB(C1577c7 c1577c7) {
+        super(c1577c7, false);
         this.A0B = new Handler(Looper.getMainLooper());
         this.A0U = new E2() { // from class: com.facebook.ads.redexgen.X.6E
             public static String[] A01 = {"1XAudPm5bNoLpQjIPSZWPFOeb", "KPQovwGp6PfJEyzo2xgnSN1gmGV3wBfO", "MSOuoVglH1pxZtUt86IkEaCPI", "Ahn71CuWf", "XCR0a8v2bJ8TOqmTegoErV6kR", "kQ55lQ8tRAtObxY9GvDk6DQ4l", "65Z7gaQiVm7Q6XjyGmw2uvR6b", "4ArQv5JqOif9H4kcX07xj56lI8DuBc1Y"};
@@ -79,17 +79,17 @@ public final class KB extends AbstractC1553c3 {
             @Override // com.instagram.common.viewpoint.core.UN
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final void A03(E3 e32) {
-                InterfaceC1670dx interfaceC1670dx;
-                InterfaceC1670dx interfaceC1670dx2;
-                interfaceC1670dx = KB.this.A08;
-                if (interfaceC1670dx != null) {
+                InterfaceC1690dx interfaceC1690dx;
+                InterfaceC1690dx interfaceC1690dx2;
+                interfaceC1690dx = KB.this.A08;
+                if (interfaceC1690dx != null) {
                     KB kb = KB.this;
                     if (A01[3].length() != 9) {
                         throw new RuntimeException();
                     }
                     A01[3] = "L2P2qOlVB";
-                    interfaceC1670dx2 = kb.A08;
-                    interfaceC1670dx2.AKE();
+                    interfaceC1690dx2 = kb.A08;
+                    interfaceC1690dx2.AKE();
                 }
             }
         };
@@ -98,14 +98,14 @@ public final class KB extends AbstractC1553c3 {
             @Override // com.instagram.common.viewpoint.core.UN
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final void A03(C4K c4k) {
-                C0877Ek c0877Ek;
-                c0877Ek = KB.this.A0S;
-                c0877Ek.A0e(EnumC1727et.A02, 20);
+                C0897Ek c0897Ek;
+                c0897Ek = KB.this.A0S;
+                c0897Ek.A0e(EnumC1747et.A02, 20);
             }
         };
-        this.A0V = new RunnableC1583cX(this);
-        this.A0N = c1557c7.A06();
-        this.A0R = c1557c7;
+        this.A0V = new RunnableC1603cX(this);
+        this.A0N = c1577c7.A06();
+        this.A0R = c1577c7;
         this.A0O = new VI(this.A0R.A05().A2E(), getAdEventManager());
         this.A0O.A04(VH.A0f, null);
         DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
@@ -114,7 +114,7 @@ public final class KB extends AbstractC1553c3 {
         this.A0S = A0G();
         YB.A0K(this.A0S);
         this.A0S.setVideoURI(this.A0R.A05().A29().A0H().A09());
-        this.A0S.A0e(EnumC1727et.A02, 20);
+        this.A0S.A0e(EnumC1747et.A02, 20);
         this.A0S.getEventBus().A03(this.A0U, this.A0T);
         this.A0G = A06();
         YB.A0K(this.A0G);
@@ -144,7 +144,7 @@ public final class KB extends AbstractC1553c3 {
         YB.A0K(this.A0H);
         this.A0F = A07(this.A0R.A05().A1A(), -16226561);
         YB.A0K(this.A0F);
-        AbstractC1541br.A00(this.A0R.A06(), this, this.A0R.A05().A29().A0H().A08());
+        AbstractC1561br.A00(this.A0R.A06(), this, this.A0R.A05().A29().A0H().A08());
         int i = getResources().getConfiguration().orientation;
         A0h(i);
         addView(this.A0S);
@@ -284,25 +284,25 @@ public final class KB extends AbstractC1553c3 {
         return textView;
     }
 
-    private C1534bk A0D() {
-        C1534bk c1534bk = new C1534bk(this.A0N);
-        YB.A0N(c1534bk, 0);
+    private C1554bk A0D() {
+        C1554bk c1554bk = new C1554bk(this.A0N);
+        YB.A0N(c1554bk, 0);
         int i = (int) (this.A00 * 0.13f);
-        new LM(c1534bk, this.A0N).A05(i, i).A07(this.A0R.A05().A2C().A01());
-        return c1534bk;
+        new LM(c1554bk, this.A0N).A05(i, i).A07(this.A0R.A05().A2C().A01());
+        return c1554bk;
     }
 
-    private C1536bm A0E() {
-        C1536bm c1536bm = new C1536bm(this.A0N, A0Y, 5, 0, -1);
-        c1536bm.setRating(getRating());
-        return c1536bm;
+    private C1556bm A0E() {
+        C1556bm c1556bm = new C1556bm(this.A0N, A0Y, 5, 0, -1);
+        c1556bm.setRating(getRating());
+        return c1556bm;
     }
 
-    private C0877Ek A0G() {
-        C0877Ek c0877Ek = new C0877Ek(this.A0R.A06());
-        this.A0A = new C4L(this.A0N, getAdEventManager(), c0877Ek, this.A0R.A05().A2E(), 0, 0, true, null, null);
-        if (C1290Up.A20(this.A0N)) {
-            this.A09 = new C0887Eu(this.A0N, getAdEventManager(), c0877Ek, this.A0R.A05().A2E(), false, this.A0A, null);
+    private C0897Ek A0G() {
+        C0897Ek c0897Ek = new C0897Ek(this.A0R.A06());
+        this.A0A = new C4L(this.A0N, getAdEventManager(), c0897Ek, this.A0R.A05().A2E(), 0, 0, true, null, null);
+        if (C1310Up.A20(this.A0N)) {
+            this.A09 = new C0907Eu(this.A0N, getAdEventManager(), c0897Ek, this.A0R.A05().A2E(), false, this.A0A, null);
         } else {
             String[] strArr = A0X;
             if (strArr[2].length() == strArr[4].length()) {
@@ -313,28 +313,28 @@ public final class KB extends AbstractC1553c3 {
             strArr2[4] = "wYZsMrXjcXuhFUuKsEl8E0dQOo";
             this.A09 = null;
         }
-        c0877Ek.setRoundedCornerVideoView(44.0f);
-        return c0877Ek;
+        c0897Ek.setRoundedCornerVideoView(44.0f);
+        return c0897Ek;
     }
 
     private void A0K() {
-        this.A0F.setOnClickListener(new ViewOnClickListenerC1585cZ(this));
+        this.A0F.setOnClickListener(new ViewOnClickListenerC1605cZ(this));
         if (this.A0R.A05().A1p()) {
-            this.A0M.setOnClickListener(new ViewOnClickListenerC1586ca(this));
+            this.A0M.setOnClickListener(new ViewOnClickListenerC1606ca(this));
         } else {
-            this.A0H.setOnClickListener(new ViewOnClickListenerC1587cb(this));
+            this.A0H.setOnClickListener(new ViewOnClickListenerC1607cb(this));
         }
     }
 
     private void A0L() {
         if (this.A0R.A05().A2M()) {
-            this.A06 = A00(this.A0N, this.A0R.A05(), this.A0O, EnumC1448aM.A06, this.A0R.A0C());
+            this.A06 = A00(this.A0N, this.A0R.A05(), this.A0O, EnumC1468aM.A06, this.A0R.A0C());
             YB.A0K(this.A06);
         } else {
             if (!this.A0R.A05().A1p()) {
                 return;
             }
-            this.A05 = AbstractC1131Oh.A00(this.A0N.A02());
+            this.A05 = AbstractC1151Oh.A00(this.A0N.A02());
             this.A04 = A03();
             YB.A0K(this.A04);
             A0O();
@@ -343,7 +343,7 @@ public final class KB extends AbstractC1553c3 {
 
     private void A0M() {
         if (this.A0R.A05().A2W()) {
-            this.A07 = A01(this.A0N, EnumC1448aM.A06);
+            this.A07 = A01(this.A0N, EnumC1468aM.A06);
             YB.A0K(this.A07);
         }
     }
@@ -363,7 +363,7 @@ public final class KB extends AbstractC1553c3 {
 
     private void A0O() {
         if (this.A04 != null) {
-            this.A04.setOnClickListener(new ViewOnClickListenerC1584cY(this));
+            this.A04.setOnClickListener(new ViewOnClickListenerC1604cY(this));
         }
         A0T(8);
     }
@@ -371,7 +371,7 @@ public final class KB extends AbstractC1553c3 {
     /* JADX INFO: Access modifiers changed from: private */
     public void A0P() {
         this.A0O.A04(VH.A0A, null);
-        C1110Nm A2C = this.A0R.A05().A2C();
+        C1130Nm A2C = this.A0R.A05().A2C();
         if (this.A05 != null && this.A05.A0O(this.A0N.A02(), true)) {
             this.A0R.A0C().AAo(this.A0R.A05().A2E(), A2C);
         } else {
@@ -499,12 +499,12 @@ public final class KB extends AbstractC1553c3 {
             return;
         }
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-2, -2);
-        int i6 = XV.A0b;
+        int i4 = XV.A0b;
         if (i == 1) {
-            i6 = XV.A0n;
+            i4 = XV.A0n;
         }
         int leftMargin = XV.A0b;
-        layoutParams.setMargins(i6, 0, 0, leftMargin);
+        layoutParams.setMargins(i4, 0, 0, leftMargin);
         layoutParams.addRule(12);
         layoutParams.addRule(9);
         this.A07.setLayoutParams(layoutParams);
@@ -515,28 +515,28 @@ public final class KB extends AbstractC1553c3 {
             return;
         }
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-2, -2);
-        int i6 = XV.A0b;
+        int i4 = XV.A0b;
         if (i == 1) {
-            i6 = XV.A0n;
+            i4 = XV.A0n;
         }
         if (this.A0R.A05().A2U()) {
             layoutParams.addRule(10);
             layoutParams.addRule(9);
-            layoutParams.setMargins(i6, XV.A0r, 0, 0);
+            layoutParams.setMargins(i4, XV.A0r, 0, 0);
         } else {
             layoutParams.addRule(12);
             layoutParams.addRule(9);
-            layoutParams.setMargins(i6, 0, 0, XV.A0b);
+            layoutParams.setMargins(i4, 0, 0, XV.A0b);
         }
         this.A06.setLayoutParams(layoutParams);
     }
 
     private void A0Z(int i) {
-        int i6;
+        int i4;
         if (i == 1) {
-            i6 = (int) (this.A00 * 0.13f);
+            i4 = (int) (this.A00 * 0.13f);
             if (this.A0R.A05().A1q()) {
-                C1534bk c1534bk = this.A0P;
+                C1554bk c1554bk = this.A0P;
                 String[] strArr = A0X;
                 if (strArr[5].length() == strArr[1].length()) {
                     throw new RuntimeException();
@@ -544,23 +544,23 @@ public final class KB extends AbstractC1553c3 {
                 String[] strArr2 = A0X;
                 strArr2[6] = "T7WF8ct6Ecp3fFl6k8FlzT3xp8EZwOPe";
                 strArr2[0] = "49nlYj8CnceEqKl67yYD9azFmPqqLBPu";
-                c1534bk.setVisibility(8);
+                c1554bk.setVisibility(8);
             } else {
                 this.A0P.setRadius(30);
             }
         } else {
-            i6 = (int) (this.A01 * 0.08f);
+            i4 = (int) (this.A01 * 0.08f);
             this.A0P.setRadius(18);
             this.A0P.setVisibility(0);
         }
-        int i9 = 0;
-        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(i6, i6);
+        int i6 = 0;
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(i4, i4);
         if (i == 1) {
-            i9 = (-i6) / 2;
+            i6 = (-i4) / 2;
             layoutParams.addRule(14);
             layoutParams.addRule(3, this.A0S.getId());
         }
-        layoutParams.setMargins(0, i9, 0, 0);
+        layoutParams.setMargins(0, i6, 0, 0);
         this.A0P.setLayoutParams(layoutParams);
     }
 
@@ -580,15 +580,15 @@ public final class KB extends AbstractC1553c3 {
     }
 
     private void A0b(int i) {
-        int i6;
+        int i4;
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-2, -2);
         layoutParams.addRule(3, this.A0Q.getId());
         if (i == 1) {
-            i6 = XV.A0v;
+            i4 = XV.A0v;
         } else {
-            i6 = XV.A0o;
+            i4 = XV.A0o;
         }
-        layoutParams.setMargins(0, i6, 0, 0);
+        layoutParams.setMargins(0, i4, 0, 0);
         if (i == 1) {
             layoutParams.addRule(14);
         }
@@ -626,17 +626,17 @@ public final class KB extends AbstractC1553c3 {
 
     private void A0e(int i) {
         View view;
-        int i6;
+        int i4;
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -2);
         if (i == 1) {
             if (this.A0R.A05().A1p()) {
                 view = this.A0M;
-                i6 = XV.A0e;
+                i4 = XV.A0e;
             } else {
                 view = this.A0H;
-                i6 = XV.A0v;
+                i4 = XV.A0v;
             }
-            layoutParams.setMargins(XV.A0n, 0, XV.A0n, i6);
+            layoutParams.setMargins(XV.A0n, 0, XV.A0n, i4);
             layoutParams.addRule(2, view.getId());
         } else {
             int topMargin = XV.A0k;
@@ -667,13 +667,13 @@ public final class KB extends AbstractC1553c3 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private void A0g(int i) {
-        int i6;
+        int i4;
         RelativeLayout.LayoutParams layoutParams;
         int rightMargin;
         double A0k = this.A0R.A05().A0k();
-        int i9 = 0;
+        int i6 = 0;
         int topMargin = 0;
-        int i10 = 0;
+        int i9 = 0;
         if (i == 1) {
             if (XL.A05((float) A0k)) {
                 rightMargin = (int) (this.A00 * 0.2f);
@@ -682,31 +682,31 @@ public final class KB extends AbstractC1553c3 {
                     String[] strArr2 = A0X;
                     strArr2[2] = "r4F6E4irn5aDyLCCoL";
                     strArr2[4] = "HLlNT1vJDSE83AAt2A8wGZErAg";
-                    i10 = rightMargin;
+                    i9 = rightMargin;
                 }
                 throw new RuntimeException();
             }
             if (XL.A04((float) A0k)) {
-                i10 = (int) (this.A00 * 0.1f);
+                i9 = (int) (this.A00 * 0.1f);
                 rightMargin = (int) (this.A00 * 0.3f);
             } else {
-                i10 = (int) (this.A00 * 0.1f);
-                float f3 = this.A00;
+                i9 = (int) (this.A00 * 0.1f);
+                float f2 = this.A00;
                 String[] strArr3 = A0X;
                 if (strArr3[6].charAt(9) != strArr3[0].charAt(9)) {
                     String[] strArr4 = A0X;
                     strArr4[7] = "VrmCvLPumx9qmsQ5AqX8D26sv2xEwmDs";
                     strArr4[3] = "M5pl3CqSLX5dAxkk9LSq9NmEjnkhG5Xr";
-                    rightMargin = (int) (f3 * 0.4f);
+                    rightMargin = (int) (f2 * 0.4f);
                 } else {
                     String[] strArr5 = A0X;
                     strArr5[5] = "itXi3sFkhsJNNNlf";
                     strArr5[1] = "UwAjH2H8fcKmgRPVcHr";
-                    rightMargin = (int) (f3 * 0.4f);
+                    rightMargin = (int) (f2 * 0.4f);
                 }
             }
             layoutParams = new RelativeLayout.LayoutParams(-2, rightMargin);
-            layoutParams.setMargins(i9, i10, topMargin, 0);
+            layoutParams.setMargins(i6, i9, topMargin, 0);
             if (i != 2) {
                 layoutParams.addRule(15);
             } else {
@@ -715,9 +715,9 @@ public final class KB extends AbstractC1553c3 {
             this.A0S.setLayoutParams(layoutParams);
         }
         if (XL.A03((float) A0k)) {
-            i9 = (int) (this.A01 * 0.2f);
+            i6 = (int) (this.A01 * 0.2f);
             topMargin = (int) (this.A01 * 0.1f);
-            i6 = (int) (this.A01 * 0.15f);
+            i4 = (int) (this.A01 * 0.15f);
         } else {
             boolean A05 = XL.A05((float) A0k);
             String[] strArr6 = A0X;
@@ -727,22 +727,22 @@ public final class KB extends AbstractC1553c3 {
                 strArr7[3] = "uFxfhHDbtwTjfaa8IDnniTCsCIFPOnZP";
                 if (A05) {
                     topMargin = (int) (this.A01 * 0.1f);
-                    i9 = topMargin;
-                    i6 = (int) (this.A01 * 0.32f);
+                    i6 = topMargin;
+                    i4 = (int) (this.A01 * 0.32f);
                 } else if (XL.A04((float) A0k)) {
-                    i9 = (int) (this.A01 * 0.15f);
+                    i6 = (int) (this.A01 * 0.15f);
                     topMargin = (int) (this.A01 * 0.1f);
-                    i6 = (int) (this.A01 * 0.27f);
+                    i4 = (int) (this.A01 * 0.27f);
                 } else {
-                    i9 = (int) (this.A01 * 0.15f);
+                    i6 = (int) (this.A01 * 0.15f);
                     topMargin = (int) (this.A01 * 0.1f);
-                    i6 = (int) (this.A01 * 0.215f);
+                    i4 = (int) (this.A01 * 0.215f);
                 }
             }
             throw new RuntimeException();
         }
-        layoutParams = new RelativeLayout.LayoutParams(i6, -2);
-        layoutParams.setMargins(i9, i10, topMargin, 0);
+        layoutParams = new RelativeLayout.LayoutParams(i4, -2);
+        layoutParams.setMargins(i6, i9, topMargin, 0);
         if (i != 2) {
         }
         this.A0S.setLayoutParams(layoutParams);
@@ -793,26 +793,26 @@ public final class KB extends AbstractC1553c3 {
     }
 
     private void A0i(int i) {
-        int i6;
+        int i4;
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -2);
         if (i == 1) {
             if (this.A0R.A05().A2M() && this.A06 != null) {
                 if (this.A0R.A05().A2W() && this.A07 != null) {
                     layoutParams.addRule(2, this.A07.getId());
-                    i6 = XV.A0b;
+                    i4 = XV.A0b;
                 } else if (this.A0R.A05().A2U()) {
                     layoutParams.addRule(12);
-                    i6 = XV.A0k;
+                    i4 = XV.A0k;
                 } else {
                     layoutParams.addRule(2, this.A06.getId());
-                    i6 = XV.A0b;
+                    i4 = XV.A0b;
                 }
             } else {
                 layoutParams.addRule(12);
-                i6 = XV.A0q;
+                i4 = XV.A0q;
             }
             int bottomMargin = XV.A0n;
-            layoutParams.setMargins(bottomMargin, 0, XV.A0n, i6);
+            layoutParams.setMargins(bottomMargin, 0, XV.A0n, i4);
         } else {
             layoutParams.addRule(3, this.A0F.getId());
             layoutParams.setMargins(0, XV.A0v, 0, 0);
@@ -829,25 +829,25 @@ public final class KB extends AbstractC1553c3 {
     }
 
     private void A0j(int i) {
-        int i6;
+        int i4;
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-2, -2);
         if (i == 1) {
             if (this.A0R.A05().A2M() && this.A06 != null) {
                 if (this.A0R.A05().A2W() && this.A07 != null) {
                     layoutParams.addRule(2, this.A07.getId());
-                    i6 = XV.A0b;
+                    i4 = XV.A0b;
                 } else if (this.A0R.A05().A2U()) {
                     layoutParams.addRule(12);
-                    i6 = XV.A0m;
+                    i4 = XV.A0m;
                 } else {
                     layoutParams.addRule(2, this.A06.getId());
-                    i6 = XV.A0b;
+                    i4 = XV.A0b;
                 }
             } else {
                 layoutParams.addRule(12);
-                i6 = XV.A0q;
+                i4 = XV.A0q;
             }
-            layoutParams.setMargins(0, 0, 0, i6);
+            layoutParams.setMargins(0, 0, 0, i4);
             layoutParams.addRule(14);
         } else {
             layoutParams.setMargins(0, XV.A0b, 0, 0);
@@ -857,12 +857,12 @@ public final class KB extends AbstractC1553c3 {
         this.A0M.setLayoutParams(layoutParams);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
-    public final EnumC1089Mq A1B(String str) {
-        return EnumC1089Mq.A09;
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
+    public final EnumC1109Mq A1B(String str) {
+        return EnumC1109Mq.A09;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final void A1C() {
         super.A1C();
         if (this.A09 != null) {
@@ -884,7 +884,7 @@ public final class KB extends AbstractC1553c3 {
         this.A08 = null;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final boolean A1O() {
         return true;
     }
@@ -914,7 +914,7 @@ public final class KB extends AbstractC1553c3 {
         return String.format(Locale.US, this.A0R.A05().A1C(), Integer.valueOf(this.A0R.A05().A29().A0H().A03()));
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3, android.view.View
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3, android.view.View
     public final void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
         YB.A0d(this.A0P, this.A0D, this.A0K, this.A0F, this.A0H, this.A0M, this.A04, this.A06, this.A07, this.A0G);
@@ -922,7 +922,7 @@ public final class KB extends AbstractC1553c3 {
         A0S(configuration.orientation);
     }
 
-    public void setVideoAdViewListener(InterfaceC1670dx interfaceC1670dx) {
-        this.A08 = interfaceC1670dx;
+    public void setVideoAdViewListener(InterfaceC1690dx interfaceC1690dx) {
+        this.A08 = interfaceC1690dx;
     }
 }

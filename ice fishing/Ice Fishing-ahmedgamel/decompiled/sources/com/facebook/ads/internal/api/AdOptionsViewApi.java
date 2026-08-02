@@ -10,5 +10,5 @@ public interface AdOptionsViewApi extends AdComponentViewApiProvider {
 
     void setOnAdClosedListener(AdClosedListener adClosedListener);
 
-    void setSingleIcon(boolean z3);
+    void setSingleIcon(boolean z6);
 }

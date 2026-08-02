@@ -39,9 +39,9 @@ public abstract class KO {
         return null;
     }
 
-    public static String A03(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        int i10 = 0;
+    public static String A03(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             String[] strArr = A01;
@@ -49,11 +49,11 @@ public abstract class KO {
                 throw new RuntimeException();
             }
             A01[6] = "lLmUOaES";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 115);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 115);
+            i9++;
         }
     }
 
@@ -64,7 +64,7 @@ public abstract class KO {
         String[] strArr = A01;
         strArr[1] = "BbbzftLMD2m3WHwPv0bAANWrbX2mWIyE";
         strArr[7] = "7lYjBODxVBmaGubq4OQdXtxLEf46a0ab";
-        A00 = new byte[]{-117, -75, -78, -103, -40, -30, -62, -40, -30, c.f16317b, 88, 86, 93, 93, 86, 91, 84, 13, 95, 98, 79, 102, 65, 82, 101, 97, 13, 91, 92, 81, 82, 13, 100, 86, 97, 85, 92, 98, 97, 13, 82, 101, 78, 80, 97, 89, 102, 13, 92, 91, 82, 13, 97, 82, 101, 97, 13, 80, 85, 86, 89, 81, 27, -10, 22, 15, 14, -12, 7, 16, 6, 7, 20, -9, 22, 11, 14, 73, 14, -9, 74, 102, 30, 48, -6, -5, 75, 25};
+        A00 = new byte[]{-117, -75, -78, -103, -40, -30, -62, -40, -30, c.f17104b, 88, 86, 93, 93, 86, 91, 84, 13, 95, 98, 79, 102, 65, 82, 101, 97, 13, 91, 92, 81, 82, 13, 100, 86, 97, 85, 92, 98, 97, 13, 82, 101, 78, 80, 97, 89, 102, 13, 92, 91, 82, 13, 97, 82, 101, 97, 13, 80, 85, 86, 89, 81, 27, -10, 22, 15, 14, -12, 7, 16, 6, 7, 20, -9, 22, 11, 14, 73, 14, -9, 74, 102, 30, 48, -6, -5, 75, 25};
     }
 
     static {
@@ -157,56 +157,56 @@ public abstract class KO {
         return replaceAll3.replaceAll(out2, A033);
     }
 
-    public static void A06(Spannable spannable, int i, int i6, KT kt, KM km, Map<String, KT> map, int i9) {
+    public static void A06(Spannable spannable, int i, int i4, KT kt, KM km, Map<String, KT> map, int i6) {
         KM A012;
         KT A02;
+        int i9;
         int i10;
         int i11;
-        int i12;
         if (kt.A0A() != -1) {
-            spannable.setSpan(new StyleSpan(kt.A0A()), i, i6, 33);
+            spannable.setSpan(new StyleSpan(kt.A0A()), i, i4, 33);
         }
         if (kt.A0b()) {
-            spannable.setSpan(new StrikethroughSpan(), i, i6, 33);
+            spannable.setSpan(new StrikethroughSpan(), i, i4, 33);
         }
         if (kt.A0c()) {
-            spannable.setSpan(new UnderlineSpan(), i, i6, 33);
+            spannable.setSpan(new UnderlineSpan(), i, i4, 33);
         }
         if (kt.A0a()) {
-            AbstractC06193t.A00(spannable, new ForegroundColorSpan(kt.A06()), i, i6, 33);
+            AbstractC06393t.A00(spannable, new ForegroundColorSpan(kt.A06()), i, i4, 33);
         }
         boolean A0Z = kt.A0Z();
         if (A01[5].length() == 27) {
             A01[2] = "DOLHbyxdL1TIGmJ49PhqpcsDL7xIVQFO";
             if (A0Z) {
-                AbstractC06193t.A00(spannable, new BackgroundColorSpan(kt.A05()), i, i6, 33);
+                AbstractC06393t.A00(spannable, new BackgroundColorSpan(kt.A05()), i, i4, 33);
             }
             if (kt.A0W() != null) {
-                AbstractC06193t.A00(spannable, new TypefaceSpan(kt.A0W()), i, i6, 33);
+                AbstractC06393t.A00(spannable, new TypefaceSpan(kt.A0W()), i, i4, 33);
             }
             if (kt.A0D() != null) {
-                KI ki = (KI) AbstractC06243y.A01(kt.A0D());
+                KI ki = (KI) AbstractC06443y.A01(kt.A0D());
                 if (ki.A01 == -1) {
                     String[] strArr = A01;
                     if (strArr[1].charAt(10) == strArr[7].charAt(10)) {
                         A01[5] = "2MSbzH5cEcM3iPzp1Bk7CXgbIPr";
-                        if (i9 == 2 || i9 == 1) {
-                            i10 = 3;
+                        if (i6 == 2 || i6 == 1) {
+                            i9 = 3;
                         } else {
-                            i10 = 1;
+                            i9 = 1;
                         }
-                        i11 = 1;
+                        i10 = 1;
                     }
                 } else {
-                    i10 = ki.A01;
-                    i11 = ki.A00;
+                    i9 = ki.A01;
+                    i10 = ki.A00;
                 }
                 if (ki.A02 == -2) {
-                    i12 = 1;
+                    i11 = 1;
                 } else {
-                    i12 = ki.A02;
+                    i11 = ki.A02;
                 }
-                AbstractC06193t.A00(spannable, new C2345pO(i10, i11, i12), i, i6, 33);
+                AbstractC06393t.A00(spannable, new C2365pO(i9, i10, i11), i, i4, 33);
             }
             switch (kt.A09()) {
                 case 2:
@@ -222,31 +222,31 @@ public abstract class KO {
                                 if (A08 == -1 && (A02 = A02(A002.A04, A002.A0H(), map)) != null) {
                                     A08 = A02.A08();
                                 }
-                                spannable.setSpan(new C2346pP(str, A08), i, i6, 33);
+                                spannable.setSpan(new C2366pP(str, A08), i, i4, 33);
                                 break;
                             }
                         }
-                        AbstractC06324g.A06(A03(63, 14, 47), A03(9, 54, 122));
+                        AbstractC06524g.A06(A03(63, 14, 47), A03(9, 54, 122));
                         break;
                     }
                     break;
                 case 3:
                 case 4:
-                    spannable.setSpan(new KF(), i, i6, 33);
+                    spannable.setSpan(new KF(), i, i4, 33);
                     break;
             }
             if (kt.A0Y()) {
-                AbstractC06193t.A00(spannable, new C2347pQ(), i, i6, 33);
+                AbstractC06393t.A00(spannable, new C2367pQ(), i, i4, 33);
             }
             switch (kt.A07()) {
                 case 1:
-                    AbstractC06193t.A00(spannable, new AbsoluteSizeSpan((int) kt.A03(), true), i, i6, 33);
+                    AbstractC06393t.A00(spannable, new AbsoluteSizeSpan((int) kt.A03(), true), i, i4, 33);
                     return;
                 case 2:
-                    AbstractC06193t.A00(spannable, new RelativeSizeSpan(kt.A03()), i, i6, 33);
+                    AbstractC06393t.A00(spannable, new RelativeSizeSpan(kt.A03()), i, i4, 33);
                     return;
                 case 3:
-                    AbstractC06193t.A00(spannable, new RelativeSizeSpan(kt.A03() / 100.0f), i, i6, 33);
+                    AbstractC06393t.A00(spannable, new RelativeSizeSpan(kt.A03() / 100.0f), i, i4, 33);
                     return;
                 default:
                     return;

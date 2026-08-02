@@ -1,24 +1,25 @@
 package com.google.android.gms.internal.ads;
 
 import java.util.Objects;
+import w.AbstractC5128c;
 
 /* loaded from: classes2.dex */
-public final class Y1 extends AbstractC2900a2 {
+public final class Y1 extends AbstractC2923a2 {
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f28633b;
+    public final String f29410b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final String f28634c;
+    public final String f29411c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f28635d;
+    public final String f29412d;
 
     public Y1(String str, String str2, String str3) {
-        super(com.anythink.basead.exoplayer.g.b.e.f7298a);
-        this.f28633b = str;
-        this.f28634c = str2;
-        this.f28635d = str3;
+        super(com.anythink.basead.exoplayer.g.b.e.f8084a);
+        this.f29410b = str;
+        this.f29411c = str2;
+        this.f29412d = str3;
     }
 
     public final boolean equals(Object obj) {
@@ -27,7 +28,7 @@ public final class Y1 extends AbstractC2900a2 {
         }
         if (obj != null && Y1.class == obj.getClass()) {
             Y1 y12 = (Y1) obj;
-            if (Objects.equals(this.f28634c, y12.f28634c) && Objects.equals(this.f28633b, y12.f28633b) && Objects.equals(this.f28635d, y12.f28635d)) {
+            if (Objects.equals(this.f29411c, y12.f29411c) && Objects.equals(this.f29410b, y12.f29410b) && Objects.equals(this.f29412d, y12.f29412d)) {
                 return true;
             }
         }
@@ -35,22 +36,22 @@ public final class Y1 extends AbstractC2900a2 {
     }
 
     public final int hashCode() {
-        int hashCode = this.f28634c.hashCode() + ((this.f28633b.hashCode() + 527) * 31);
-        String str = this.f28635d;
+        int hashCode = this.f29411c.hashCode() + ((this.f29410b.hashCode() + 527) * 31);
+        String str = this.f29412d;
         return (hashCode * 31) + (str != null ? str.hashCode() : 0);
     }
 
-    @Override // com.google.android.gms.internal.ads.AbstractC2900a2
+    @Override // com.google.android.gms.internal.ads.AbstractC2923a2
     public final String toString() {
-        String str = this.f29009a;
+        String str = this.f29779a;
         int length = String.valueOf(str).length();
-        String str2 = this.f28635d;
+        String str2 = this.f29412d;
         int length2 = String.valueOf(str2).length();
-        String str3 = this.f28633b;
-        int a9 = u1.h.a(length + 11, 14, str3);
-        String str4 = this.f28634c;
-        StringBuilder sb = new StringBuilder(str4.length() + a9 + 7 + length2);
-        u1.h.i(sb, str, ": language=", str3, ", description=");
-        return D.y.s(sb, str4, ", text=", str2);
+        String str3 = this.f29410b;
+        int j6 = AbstractC5128c.j(length + 11, 14, str3);
+        String str4 = this.f29411c;
+        StringBuilder sb = new StringBuilder(str4.length() + j6 + 7 + length2);
+        AbstractC5128c.h(sb, str, ": language=", str3, ", description=");
+        return D.x.p(sb, str4, ", text=", str2);
     }
 }

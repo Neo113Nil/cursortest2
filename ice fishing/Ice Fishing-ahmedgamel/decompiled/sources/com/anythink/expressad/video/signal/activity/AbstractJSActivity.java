@@ -15,52 +15,52 @@ import com.anythink.expressad.video.signal.j;
 public abstract class AbstractJSActivity extends ATBaseActivity implements IJSFactory {
 
     /* renamed from: x, reason: collision with root package name */
-    protected static final String f21839x = "AbstractJSActivity";
+    protected static final String f22626x = "AbstractJSActivity";
 
     /* renamed from: y, reason: collision with root package name */
-    protected IJSFactory f21840y = new a();
+    protected IJSFactory f22627y = new a();
 
     private static boolean b() {
         return false;
     }
 
     public final void a(IJSFactory iJSFactory) {
-        this.f21840y = iJSFactory;
+        this.f22627y = iJSFactory;
     }
 
     @Override // com.anythink.expressad.video.signal.factory.IJSFactory
     public com.anythink.expressad.video.signal.a getActivityProxy() {
-        return this.f21840y.getActivityProxy();
+        return this.f22627y.getActivityProxy();
     }
 
     @Override // com.anythink.expressad.video.signal.factory.IJSFactory
     public i getIJSRewardVideoV1() {
-        return this.f21840y.getIJSRewardVideoV1();
+        return this.f22627y.getIJSRewardVideoV1();
     }
 
     @Override // com.anythink.expressad.video.signal.factory.IJSFactory
     public b getJSBTModule() {
-        return this.f21840y.getJSBTModule();
+        return this.f22627y.getJSBTModule();
     }
 
     @Override // com.anythink.expressad.video.signal.factory.IJSFactory
     public c getJSCommon() {
-        return this.f21840y.getJSCommon();
+        return this.f22627y.getJSCommon();
     }
 
     @Override // com.anythink.expressad.video.signal.factory.IJSFactory
     public e getJSContainerModule() {
-        return this.f21840y.getJSContainerModule();
+        return this.f22627y.getJSContainerModule();
     }
 
     @Override // com.anythink.expressad.video.signal.factory.IJSFactory
     public g getJSNotifyProxy() {
-        return this.f21840y.getJSNotifyProxy();
+        return this.f22627y.getJSNotifyProxy();
     }
 
     @Override // com.anythink.expressad.video.signal.factory.IJSFactory
     public j getJSVideoModule() {
-        return this.f21840y.getJSVideoModule();
+        return this.f22627y.getJSVideoModule();
     }
 
     @Override // android.app.Activity
@@ -97,7 +97,7 @@ public abstract class AbstractJSActivity extends ATBaseActivity implements IJSFa
     @Override // com.anythink.expressad.activity.ATBaseActivity, android.app.Activity
     public void onResume() {
         super.onResume();
-        if (com.anythink.expressad.foundation.f.b.f19049c) {
+        if (com.anythink.expressad.foundation.f.b.f19836c) {
             return;
         }
         if (getJSCommon().g()) {

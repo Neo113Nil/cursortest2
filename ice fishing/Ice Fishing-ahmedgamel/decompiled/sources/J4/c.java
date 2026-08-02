@@ -23,9 +23,9 @@ public final class c {
                     h.b(file3);
                     String name = file3.getName();
                     h.d(name, "getName(...)");
-                    int d02 = j.d0(6, name, com.anythink.core.common.d.j.f12378z);
-                    if (d02 != -1) {
-                        name = name.substring(0, d02);
+                    int t02 = j.t0(6, name, com.anythink.core.common.d.j.f13164z);
+                    if (t02 != -1) {
+                        name = name.substring(0, t02);
                         h.d(name, "substring(...)");
                     }
                     if (context.getSharedPreferences(name, 0).contains("GT_PLAYER_ID")) {

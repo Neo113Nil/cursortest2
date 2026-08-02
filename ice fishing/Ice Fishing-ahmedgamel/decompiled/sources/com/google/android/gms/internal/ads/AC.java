@@ -7,28 +7,28 @@ import java.util.Arrays;
 public final class AC {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f23650a;
+    public final String f24430a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final char[] f23651b;
+    public final char[] f24431b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f23652c;
+    public final int f24432c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f23653d;
+    public final int f24433d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final int f23654e;
+    public final int f24434e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final int f23655f;
+    public final int f24435f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final byte[] f23656g;
+    public final byte[] f24436g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final boolean[] f23657h;
+    public final boolean[] f24437h;
     public final boolean i;
 
     /* JADX WARN: Illegal instructions before constructor call */
@@ -42,10 +42,10 @@ public final class AC {
         for (int i = 0; i < cArr.length; i++) {
             char c9 = cArr[i];
             if (!(c9 < 128)) {
-                throw new IllegalArgumentException(AbstractC2639Kg.x("Non-ASCII character: %s", Character.valueOf(c9)));
+                throw new IllegalArgumentException(AbstractC2659Kg.x("Non-ASCII character: %s", Character.valueOf(c9)));
             }
             if (!(bArr[c9] == -1)) {
-                throw new IllegalArgumentException(AbstractC2639Kg.x("Duplicate character: %s", Character.valueOf(c9)));
+                throw new IllegalArgumentException(AbstractC2659Kg.x("Duplicate character: %s", Character.valueOf(c9)));
             }
             bArr[c9] = (byte) i;
         }
@@ -55,7 +55,7 @@ public final class AC {
         if (c9 > 127) {
             throw new DC("Unrecognized character: 0x".concat(String.valueOf(Integer.toHexString(c9))));
         }
-        byte b9 = this.f23656g[c9];
+        byte b9 = this.f24436g[c9];
         if (b9 != -1) {
             return b9;
         }
@@ -73,85 +73,85 @@ public final class AC {
             return false;
         }
         AC ac = (AC) obj;
-        return this.i == ac.i && Arrays.equals(this.f23651b, ac.f23651b);
+        return this.i == ac.i && Arrays.equals(this.f24431b, ac.f24431b);
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(this.f23651b) + (true != this.i ? 1237 : 1231);
+        return Arrays.hashCode(this.f24431b) + (true != this.i ? 1237 : 1231);
     }
 
     public final String toString() {
-        return this.f23650a;
+        return this.f24430a;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:15:0x0067 A[LOOP:0: B:13:0x0063->B:15:0x0067, LOOP_END] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public AC(String str, char[] cArr, byte[] bArr, boolean z3) {
+    public AC(String str, char[] cArr, byte[] bArr, boolean z6) {
         int numberOfLeadingZeros;
-        this.f23650a = str;
+        this.f24430a = str;
         cArr.getClass();
-        this.f23651b = cArr;
+        this.f24431b = cArr;
         try {
             int length = cArr.length;
             RoundingMode roundingMode = RoundingMode.UNNECESSARY;
             if (length > 0) {
-                switch (NC.f26472a[roundingMode.ordinal()]) {
+                switch (NC.f27256a[roundingMode.ordinal()]) {
                     case 1:
                         QC.j(((length + (-1)) & length) == 0);
                     case 2:
                     case 3:
                         numberOfLeadingZeros = 31 - Integer.numberOfLeadingZeros(length);
-                        this.f23653d = numberOfLeadingZeros;
+                        this.f24433d = numberOfLeadingZeros;
                         int numberOfTrailingZeros = Integer.numberOfTrailingZeros(numberOfLeadingZeros);
                         int i = 1 << (3 - numberOfTrailingZeros);
-                        this.f23654e = i;
-                        this.f23655f = numberOfLeadingZeros >> numberOfTrailingZeros;
-                        this.f23652c = length - 1;
-                        this.f23656g = bArr;
+                        this.f24434e = i;
+                        this.f24435f = numberOfLeadingZeros >> numberOfTrailingZeros;
+                        this.f24432c = length - 1;
+                        this.f24436g = bArr;
                         boolean[] zArr = new boolean[i];
-                        for (int i6 = 0; i6 < this.f23655f; i6++) {
-                            int i9 = this.f23653d;
+                        for (int i4 = 0; i4 < this.f24435f; i4++) {
+                            int i6 = this.f24433d;
                             RoundingMode roundingMode2 = RoundingMode.CEILING;
-                            zArr[AbstractC2968bG.p(i6 * 8, i9)] = true;
+                            zArr[AbstractC2991bG.p(i4 * 8, i6)] = true;
                         }
-                        this.f23657h = zArr;
-                        this.i = z3;
+                        this.f24437h = zArr;
+                        this.i = z6;
                         return;
                     case 4:
                     case 5:
                         numberOfLeadingZeros = 32 - Integer.numberOfLeadingZeros(length - 1);
-                        this.f23653d = numberOfLeadingZeros;
+                        this.f24433d = numberOfLeadingZeros;
                         int numberOfTrailingZeros2 = Integer.numberOfTrailingZeros(numberOfLeadingZeros);
-                        int i10 = 1 << (3 - numberOfTrailingZeros2);
-                        this.f23654e = i10;
-                        this.f23655f = numberOfLeadingZeros >> numberOfTrailingZeros2;
-                        this.f23652c = length - 1;
-                        this.f23656g = bArr;
-                        boolean[] zArr2 = new boolean[i10];
-                        while (i6 < this.f23655f) {
+                        int i9 = 1 << (3 - numberOfTrailingZeros2);
+                        this.f24434e = i9;
+                        this.f24435f = numberOfLeadingZeros >> numberOfTrailingZeros2;
+                        this.f24432c = length - 1;
+                        this.f24436g = bArr;
+                        boolean[] zArr2 = new boolean[i9];
+                        while (i4 < this.f24435f) {
                         }
-                        this.f23657h = zArr2;
-                        this.i = z3;
+                        this.f24437h = zArr2;
+                        this.i = z6;
                         return;
                     case 6:
                     case 7:
                     case 8:
                         int numberOfLeadingZeros2 = Integer.numberOfLeadingZeros(length);
                         numberOfLeadingZeros = (31 - numberOfLeadingZeros2) + ((((-1257966797) >>> numberOfLeadingZeros2) - length) >>> 31);
-                        this.f23653d = numberOfLeadingZeros;
+                        this.f24433d = numberOfLeadingZeros;
                         int numberOfTrailingZeros22 = Integer.numberOfTrailingZeros(numberOfLeadingZeros);
-                        int i102 = 1 << (3 - numberOfTrailingZeros22);
-                        this.f23654e = i102;
-                        this.f23655f = numberOfLeadingZeros >> numberOfTrailingZeros22;
-                        this.f23652c = length - 1;
-                        this.f23656g = bArr;
-                        boolean[] zArr22 = new boolean[i102];
-                        while (i6 < this.f23655f) {
+                        int i92 = 1 << (3 - numberOfTrailingZeros22);
+                        this.f24434e = i92;
+                        this.f24435f = numberOfLeadingZeros >> numberOfTrailingZeros22;
+                        this.f24432c = length - 1;
+                        this.f24436g = bArr;
+                        boolean[] zArr22 = new boolean[i92];
+                        while (i4 < this.f24435f) {
                         }
-                        this.f23657h = zArr22;
-                        this.i = z3;
+                        this.f24437h = zArr22;
+                        this.i = z6;
                         return;
                     default:
                         throw new AssertionError();
@@ -161,7 +161,7 @@ public final class AC {
             }
         } catch (ArithmeticException e9) {
             int length2 = cArr.length;
-            throw new IllegalArgumentException(D.y.m(length2, "Illegal alphabet length ", new StringBuilder(String.valueOf(length2).length() + 24)), e9);
+            throw new IllegalArgumentException(D.x.k(length2, "Illegal alphabet length ", new StringBuilder(String.valueOf(length2).length() + 24)), e9);
         }
     }
 }

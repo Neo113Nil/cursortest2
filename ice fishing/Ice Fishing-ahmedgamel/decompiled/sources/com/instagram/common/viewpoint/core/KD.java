@@ -10,20 +10,20 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class KD extends AbstractC1553c3 {
+public final class KD extends AbstractC1573c3 {
     public RelativeLayout A00;
     public RelativeLayout A01;
-    public InterfaceC1670dx A02;
-    public C0887Eu A03;
-    public C0877Ek A04;
+    public InterfaceC1690dx A02;
+    public C0907Eu A03;
+    public C0897Ek A04;
     public C4L A05;
     public final LinearLayout A06;
     public final LinearLayout A07;
     public final LinearLayout A08;
     public final LinearLayout A09;
     public final RelativeLayout A0A;
-    public final C1840gi A0B;
-    public final C1557c7 A0C;
+    public final C1860gi A0B;
+    public final C1577c7 A0C;
     public final EA A0D;
     public final E2 A0E;
     public static String[] A0F = {"dHduAtxHUODsuZJhGBZCL", "yuyhTKr6448pVSOhbbO3QanDkg1Btrke", "", "Gtku4tEVnL9u23uc2EIXKUUStEslbjmu", "uz", "Ug", "s4BqeuLW7FPjKDKoSZG73iWJUNxNcWet", "kGKRi0uYqdf74JFz2mP0bKfaoGbNkKkY"};
@@ -45,21 +45,21 @@ public final class KD extends AbstractC1553c3 {
     public static final int A0Q = (int) (XX.A02 * 16.0f);
     public static final int A0G = (int) (XX.A02 * 6.0f);
 
-    public KD(C1557c7 c1557c7) {
-        super(c1557c7, false);
+    public KD(C1577c7 c1577c7) {
+        super(c1577c7, false);
         this.A0E = new E2() { // from class: com.facebook.ads.redexgen.X.6G
             /* JADX INFO: Access modifiers changed from: private */
             @Override // com.instagram.common.viewpoint.core.UN
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final void A03(E3 e32) {
-                InterfaceC1670dx interfaceC1670dx;
-                InterfaceC1670dx interfaceC1670dx2;
-                interfaceC1670dx = KD.this.A02;
-                if (interfaceC1670dx == null) {
+                InterfaceC1690dx interfaceC1690dx;
+                InterfaceC1690dx interfaceC1690dx2;
+                interfaceC1690dx = KD.this.A02;
+                if (interfaceC1690dx == null) {
                     return;
                 }
-                interfaceC1670dx2 = KD.this.A02;
-                interfaceC1670dx2.AKE();
+                interfaceC1690dx2 = KD.this.A02;
+                interfaceC1690dx2.AKE();
             }
         };
         this.A0D = new EA() { // from class: com.facebook.ads.redexgen.X.6F
@@ -67,13 +67,13 @@ public final class KD extends AbstractC1553c3 {
             @Override // com.instagram.common.viewpoint.core.UN
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final void A03(C4K c4k) {
-                C0877Ek c0877Ek;
-                c0877Ek = KD.this.A04;
-                c0877Ek.A0e(EnumC1727et.A02, 20);
+                C0897Ek c0897Ek;
+                c0897Ek = KD.this.A04;
+                c0897Ek.A0e(EnumC1747et.A02, 20);
             }
         };
-        this.A0B = c1557c7.A06();
-        this.A0C = c1557c7;
+        this.A0B = c1577c7.A06();
+        this.A0C = c1577c7;
         this.A06 = new LinearLayout(this.A0B);
         this.A09 = new LinearLayout(this.A0B);
         this.A0A = new RelativeLayout(this.A0B);
@@ -93,7 +93,7 @@ public final class KD extends AbstractC1553c3 {
         String A05 = this.A0C.A05().A29().A0I().A05();
         if (!TextUtils.isEmpty(A0C)) {
             YM ym = YM.RATINGS;
-            AbstractC2005jd A052 = this.A0C.A05();
+            AbstractC2025jd A052 = this.A0C.A05();
             String[] strArr = A0F;
             if (strArr[4].length() != strArr[5].length()) {
                 throw new RuntimeException();
@@ -125,11 +125,11 @@ public final class KD extends AbstractC1553c3 {
         layoutParams.setMargins(A0T, A0T, A0T, A0T);
         linearLayout.setLayoutParams(layoutParams);
         YB.A0V(linearLayout, YB.A06(Integer.MIN_VALUE, A0Q));
-        C1528be c1528be = new C1528be(this.A0C.A06(), 0, -1, ym);
+        C1548be c1548be = new C1548be(this.A0C.A06(), 0, -1, ym);
         LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(A0P, A0P);
         layoutParams2.gravity = 16;
-        c1528be.setLayoutParams(layoutParams2);
-        linearLayout.addView(c1528be);
+        c1548be.setLayoutParams(layoutParams2);
+        linearLayout.addView(c1548be);
         TextView textView = new TextView(this.A0B);
         textView.setText(str);
         textView.setTextColor(-1);
@@ -157,7 +157,7 @@ public final class KD extends AbstractC1553c3 {
         YB.A0a(textView, true, 15);
         textView.setLayoutParams(layoutParams2);
         relativeLayout.addView(textView);
-        C1528be iconView = new C1528be(this.A0C.A06(), 0, -1, ym);
+        C1548be iconView = new C1548be(this.A0C.A06(), 0, -1, ym);
         RelativeLayout.LayoutParams layoutParams3 = new RelativeLayout.LayoutParams(A0P, A0P);
         layoutParams3.addRule(11);
         layoutParams3.setMargins(0, A0I, 0, 0);
@@ -166,29 +166,29 @@ public final class KD extends AbstractC1553c3 {
         return relativeLayout;
     }
 
-    private TextView A03(String str, boolean z3, int i, int i6, int i9) {
+    private TextView A03(String str, boolean z6, int i, int i4, int i6) {
         TextView textView = new TextView(this.A0B);
         textView.setText(str);
-        textView.setTextColor(i6);
-        YB.A0a(textView, z3, i);
+        textView.setTextColor(i4);
+        YB.A0a(textView, z6, i);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, -2);
-        layoutParams.setMargins(A0K, 0, A0K, i9);
+        layoutParams.setMargins(A0K, 0, A0K, i6);
         textView.setGravity(1);
         textView.setLayoutParams(layoutParams);
         return textView;
     }
 
-    private C0877Ek A05() {
-        C0877Ek c0877Ek = new C0877Ek(this.A0C.A06());
-        YB.A0V(c0877Ek, YB.A06(436207616, A0Q));
-        c0877Ek.setLayoutParams(new RelativeLayout.LayoutParams(-1, -1));
-        this.A05 = new C4L(this.A0B, getAdEventManager(), c0877Ek, this.A0C.A05().A2E(), 0, 0, true, null, null);
-        if (C1290Up.A20(this.A0B)) {
-            this.A03 = new C0887Eu(this.A0B, getAdEventManager(), c0877Ek, this.A0C.A05().A2E(), false, this.A05, null);
+    private C0897Ek A05() {
+        C0897Ek c0897Ek = new C0897Ek(this.A0C.A06());
+        YB.A0V(c0897Ek, YB.A06(436207616, A0Q));
+        c0897Ek.setLayoutParams(new RelativeLayout.LayoutParams(-1, -1));
+        this.A05 = new C4L(this.A0B, getAdEventManager(), c0897Ek, this.A0C.A05().A2E(), 0, 0, true, null, null);
+        if (C1310Up.A20(this.A0B)) {
+            this.A03 = new C0907Eu(this.A0B, getAdEventManager(), c0897Ek, this.A0C.A05().A2E(), false, this.A05, null);
         } else {
             this.A03 = null;
         }
-        return c0877Ek;
+        return c0897Ek;
     }
 
     private void A07() {
@@ -202,13 +202,13 @@ public final class KD extends AbstractC1553c3 {
         LinearLayout linearLayout2 = this.A09;
         View divider3 = this.A01;
         linearLayout2.addView(divider3);
-        this.A00.setOnClickListener(new ViewOnClickListenerC1581cV(this));
-        this.A01.setOnClickListener(new ViewOnClickListenerC1582cW(this));
+        this.A00.setOnClickListener(new ViewOnClickListenerC1601cV(this));
+        this.A01.setOnClickListener(new ViewOnClickListenerC1602cW(this));
     }
 
     private void A08() {
         new VI(this.A0C.A05().A2E(), getAdEventManager()).A04(VH.A0f, null);
-        AbstractC1541br.A00(this.A0C.A06(), this, this.A0C.A05().A29().A0H().A08());
+        AbstractC1561br.A00(this.A0C.A06(), this, this.A0C.A05().A29().A0H().A08());
         int A00 = this.A0C.A00();
         this.A09.setOrientation(1);
         A09();
@@ -226,7 +226,7 @@ public final class KD extends AbstractC1553c3 {
         A07();
         this.A06.addView(this.A09);
         this.A04.setVideoURI(this.A0C.A05().A29().A0H().A09());
-        this.A04.A0e(EnumC1727et.A02, 20);
+        this.A04.A0e(EnumC1747et.A02, 20);
         this.A04.getEventBus().A03(this.A0E, this.A0D);
     }
 
@@ -252,14 +252,14 @@ public final class KD extends AbstractC1553c3 {
         DisplayMetrics displayMetrics = new DisplayMetrics();
         this.A0B.A0E().getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         int marginHorizontal = displayMetrics.widthPixels;
-        int i6 = displayMetrics.heightPixels;
+        int i4 = displayMetrics.heightPixels;
         if (i == 1) {
             height = marginHorizontal / 6;
-            width = i6 / 8;
+            width = i4 / 8;
             this.A06.setWeightSum(6.0f);
         } else {
             height = marginHorizontal / 8;
-            width = i6 / 6;
+            width = i4 / 6;
             this.A06.setWeightSum(2.0f);
         }
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -1);
@@ -303,12 +303,12 @@ public final class KD extends AbstractC1553c3 {
         linearLayout.addView(titleView);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
-    public final EnumC1089Mq A1B(String str) {
-        return EnumC1089Mq.A09;
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
+    public final EnumC1109Mq A1B(String str) {
+        return EnumC1109Mq.A09;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final void A1C() {
         super.A1C();
         if (this.A03 != null) {
@@ -323,7 +323,7 @@ public final class KD extends AbstractC1553c3 {
         this.A02 = null;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final boolean A1O() {
         return true;
     }
@@ -343,7 +343,7 @@ public final class KD extends AbstractC1553c3 {
         return view;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3, android.view.View
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3, android.view.View
     public final void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
         A0A(configuration.orientation);
@@ -362,7 +362,7 @@ public final class KD extends AbstractC1553c3 {
         }
     }
 
-    public void setVideoAdViewListener(InterfaceC1670dx interfaceC1670dx) {
-        this.A02 = interfaceC1670dx;
+    public void setVideoAdViewListener(InterfaceC1690dx interfaceC1690dx) {
+        this.A02 = interfaceC1690dx;
     }
 }

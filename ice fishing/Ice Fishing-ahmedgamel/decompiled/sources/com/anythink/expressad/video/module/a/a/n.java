@@ -11,14 +11,14 @@ public final class n extends o {
     private int am;
     private boolean an;
 
-    public n(IJSFactory iJSFactory, com.anythink.expressad.foundation.d.d dVar, com.anythink.expressad.videocommon.c.c cVar, com.anythink.expressad.videocommon.b.c cVar2, String str, String str2, int i, int i6, com.anythink.expressad.video.module.a.a aVar, int i9, boolean z3, int i10) {
-        super(dVar, cVar, cVar2, str, str2, aVar, i9, z3);
+    public n(IJSFactory iJSFactory, com.anythink.expressad.foundation.d.d dVar, com.anythink.expressad.videocommon.c.c cVar, com.anythink.expressad.videocommon.b.c cVar2, String str, String str2, int i, int i4, com.anythink.expressad.video.module.a.a aVar, int i6, boolean z6, int i9) {
+        super(dVar, cVar, cVar2, str, str2, aVar, i6, z6);
         this.al = false;
         this.an = false;
         this.ai = iJSFactory;
         this.ak = i;
-        this.al = i6 == 0;
-        this.am = i10;
+        this.al = i4 == 0;
+        this.am = i9;
         if (iJSFactory == null) {
             this.Y = false;
         }
@@ -26,7 +26,7 @@ public final class n extends o {
 
     @Override // com.anythink.expressad.video.module.a.a.o, com.anythink.expressad.video.module.a.a.k, com.anythink.expressad.video.module.a.a.f, com.anythink.expressad.video.module.a.a
     public final void a(int i, Object obj) {
-        int i6;
+        int i4;
         if (this.Y) {
             if (i != 1) {
                 if (i != 2) {
@@ -43,32 +43,32 @@ public final class n extends o {
                                             case 11:
                                             case 12:
                                                 this.ai.getJSVideoModule().videoOperate(3);
-                                                if (this.f21769Z.G() == 3) {
+                                                if (this.f22556Z.G() == 3) {
                                                     this.ai.getJSVideoModule().setVisible(0);
-                                                } else if (this.f21769Z.e() != 2) {
+                                                } else if (this.f22556Z.e() != 2) {
                                                     this.ai.getJSVideoModule().setVisible(8);
                                                 }
                                                 if (i == 12) {
                                                     f();
-                                                    i6 = 2;
+                                                    i4 = 2;
                                                 } else {
-                                                    i6 = 1;
+                                                    i4 = 1;
                                                 }
-                                                this.ai.getJSNotifyProxy().a(i6);
+                                                this.ai.getJSNotifyProxy().a(i4);
                                                 if (this.ai.getJSCommon().m() == 2) {
                                                     this.ai.getJSVideoModule().setVisible(0);
                                                     com.anythink.expressad.video.signal.j jSVideoModule = this.ai.getJSVideoModule();
                                                     this.ai.getJSContainerModule().showMiniCard(jSVideoModule.getBorderViewTop(), jSVideoModule.getBorderViewLeft(), jSVideoModule.getBorderViewWidth(), jSVideoModule.getBorderViewHeight(), jSVideoModule.getBorderViewRadius());
                                                 } else if (i == 12) {
                                                     if (this.am == 1) {
-                                                        if (this.f21769Z.e() != 2) {
-                                                            this.ai.getJSContainerModule().showEndcard(this.f21769Z.G());
+                                                        if (this.f22556Z.e() != 2) {
+                                                            this.ai.getJSContainerModule().showEndcard(this.f22556Z.G());
                                                         } else {
                                                             this.ai.getJSContainerModule().showVideoEndCover();
                                                         }
                                                     }
-                                                } else if (this.f21769Z.e() != 2) {
-                                                    this.ai.getJSContainerModule().showEndcard(this.f21769Z.G());
+                                                } else if (this.f22556Z.e() != 2) {
+                                                    this.ai.getJSContainerModule().showEndcard(this.f22556Z.G());
                                                 } else {
                                                     this.ai.getJSContainerModule().showVideoEndCover();
                                                 }
@@ -137,13 +137,13 @@ public final class n extends o {
                 }
                 this.ai.getJSVideoModule().videoOperate(3);
                 if (this.ai.getJSCommon().m() != 2) {
-                    if (this.f21769Z.G() != 3) {
+                    if (this.f22556Z.G() != 3) {
                         this.ai.getJSVideoModule().setVisible(8);
                     } else {
                         this.ai.getJSVideoModule().setVisible(0);
                     }
-                    if (this.ak == 2 && !this.ai.getJSContainerModule().endCardShowing() && this.f21769Z.e() != 2) {
-                        this.ai.getJSContainerModule().showEndcard(this.f21769Z.G());
+                    if (this.ak == 2 && !this.ai.getJSContainerModule().endCardShowing() && this.f22556Z.e() != 2) {
+                        this.ai.getJSContainerModule().showEndcard(this.f22556Z.G());
                         this.ai.getJSNotifyProxy().a(1);
                     }
                 }

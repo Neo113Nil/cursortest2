@@ -11,24 +11,24 @@ import org.json.JSONObject;
 public class e {
 
     /* renamed from: a, reason: collision with root package name */
-    private JSONObject f17267a;
+    private JSONObject f18054a;
 
     /* renamed from: b, reason: collision with root package name */
-    private Map<String, String> f17268b;
+    private Map<String, String> f18055b;
 
     /* renamed from: c, reason: collision with root package name */
-    private Map<String, String> f17269c;
+    private Map<String, String> f18056c;
 
     /* renamed from: d, reason: collision with root package name */
-    final String f17270d = "e";
+    final String f18057d = "e";
 
     /* renamed from: e, reason: collision with root package name */
-    private Map<String, String> f17271e;
+    private Map<String, String> f18058e;
 
     public final void a(JSONObject jSONObject, String str) {
         String optString = jSONObject.optString("cached");
         Map<String, String> bb = bb();
-        if (!TextUtils.isEmpty(optString) && this.f17267a != null) {
+        if (!TextUtils.isEmpty(optString) && this.f18054a != null) {
             try {
                 JSONObject jSONObject2 = new JSONObject(optString);
                 Iterator<String> keys = jSONObject2.keys();
@@ -36,7 +36,7 @@ public class e {
                     String next = keys.next();
                     String optString2 = jSONObject2.optString(next);
                     String str2 = bb.get(next);
-                    jSONObject.put(next, this.f17267a.opt(next));
+                    jSONObject.put(next, this.f18054a.opt(next));
                     if (!TextUtils.equals(optString2, str2)) {
                         com.anythink.core.common.u.e.a(str, TextUtils.isEmpty(str) ? "1" : "2", next, optString2, str2);
                         jSONObject2.put(next, str2);
@@ -48,7 +48,7 @@ public class e {
         }
         if (this instanceof b) {
             try {
-                if (!TextUtils.isEmpty(((b) this).l()) && ((b) this).o() != null && ((b) this).o().size() > 0 && !TextUtils.equals(((b) this).l(), jSONObject.optString(b.a.f17223h, ""))) {
+                if (!TextUtils.isEmpty(((b) this).l()) && ((b) this).o() != null && ((b) this).o().size() > 0 && !TextUtils.equals(((b) this).l(), jSONObject.optString(b.a.f18010h, ""))) {
                     Iterator<String> it = ((b) this).o().iterator();
                     while (it.hasNext()) {
                         com.anythink.core.common.res.d.a(com.anythink.core.common.d.t.b().g()).b(com.anythink.core.common.v.o.a(it.next()));
@@ -60,7 +60,7 @@ public class e {
                         com.anythink.core.common.res.d.a(com.anythink.core.common.d.t.b().g()).b(com.anythink.core.common.v.o.a(it2.next()));
                     }
                 }
-                if (TextUtils.isEmpty(((b) this).n()) || ((b) this).p() == null || ((b) this).p().size() <= 0 || TextUtils.equals(((b) this).n(), jSONObject.optString(b.a.f17224j, ""))) {
+                if (TextUtils.isEmpty(((b) this).n()) || ((b) this).p() == null || ((b) this).p().size() <= 0 || TextUtils.equals(((b) this).n(), jSONObject.optString(b.a.f18011j, ""))) {
                     return;
                 }
                 Iterator<String> it3 = ((b) this).p().iterator();
@@ -73,32 +73,32 @@ public class e {
     }
 
     public final void b(JSONObject jSONObject) {
-        this.f17267a = jSONObject;
+        this.f18054a = jSONObject;
     }
 
     public final boolean ba() {
-        Map<String, String> map = this.f17269c;
+        Map<String, String> map = this.f18056c;
         return map == null || map.size() == 0;
     }
 
     public final synchronized Map<String, String> bb() {
         try {
-            if (this.f17271e == null) {
+            if (this.f18058e == null) {
                 HashMap hashMap = new HashMap();
-                this.f17271e = hashMap;
-                Map<String, String> map = this.f17268b;
+                this.f18058e = hashMap;
+                Map<String, String> map = this.f18055b;
                 if (map != null) {
                     hashMap.putAll(map);
                 }
-                Map<String, String> map2 = this.f17269c;
+                Map<String, String> map2 = this.f18056c;
                 if (map2 != null) {
-                    this.f17271e.putAll(map2);
+                    this.f18058e.putAll(map2);
                 }
             }
         } catch (Throwable th) {
             throw th;
         }
-        return this.f17271e;
+        return this.f18058e;
     }
 
     public final void c(JSONObject jSONObject) {
@@ -115,7 +115,7 @@ public class e {
             } catch (Throwable unused) {
             }
         }
-        this.f17268b = hashMap;
+        this.f18055b = hashMap;
     }
 
     public final void d(JSONObject jSONObject) {
@@ -132,18 +132,18 @@ public class e {
             } catch (Throwable unused) {
             }
         }
-        this.f17269c = hashMap;
+        this.f18056c = hashMap;
     }
 
     private Map<String, String> b() {
-        return this.f17268b;
+        return this.f18055b;
     }
 
     private Map<String, String> c() {
-        return this.f17269c;
+        return this.f18056c;
     }
 
     private JSONObject a() {
-        return this.f17267a;
+        return this.f18054a;
     }
 }

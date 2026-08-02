@@ -17,19 +17,19 @@ import java.util.concurrent.ConcurrentHashMap;
 public class a {
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f16114b = "H5TemplateLoader";
+    private static final String f16901b = "H5TemplateLoader";
 
     /* renamed from: c, reason: collision with root package name */
-    private static volatile a f16115c;
+    private static volatile a f16902c;
 
     /* renamed from: a, reason: collision with root package name */
-    Context f16116a;
+    Context f16903a;
 
     /* renamed from: d, reason: collision with root package name */
-    private final ConcurrentHashMap<String, List<InterfaceC0093a>> f16117d = new ConcurrentHashMap<>();
+    private final ConcurrentHashMap<String, List<InterfaceC0093a>> f16904d = new ConcurrentHashMap<>();
 
     /* renamed from: e, reason: collision with root package name */
-    private final ConcurrentHashMap<String, Long> f16118e = new ConcurrentHashMap<>();
+    private final ConcurrentHashMap<String, Long> f16905e = new ConcurrentHashMap<>();
 
     /* renamed from: com.anythink.core.common.res.a.a$a, reason: collision with other inner class name */
     public interface InterfaceC0093a {
@@ -41,37 +41,37 @@ public class a {
     public static class b {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final int f16135a = 1;
+        public static final int f16922a = 1;
 
         /* renamed from: b, reason: collision with root package name */
-        public static final int f16136b = 2;
+        public static final int f16923b = 2;
 
         /* renamed from: c, reason: collision with root package name */
-        public static final int f16137c = 3;
+        public static final int f16924c = 3;
 
         /* renamed from: d, reason: collision with root package name */
-        public static final int f16138d = 4;
+        public static final int f16925d = 4;
 
         /* renamed from: e, reason: collision with root package name */
-        public static final int f16139e = 5;
+        public static final int f16926e = 5;
 
         /* renamed from: f, reason: collision with root package name */
-        public static final int f16140f = 6;
+        public static final int f16927f = 6;
 
         /* renamed from: g, reason: collision with root package name */
-        public static final int f16141g = 7;
+        public static final int f16928g = 7;
     }
 
     private a(Context context) {
         if (context != null) {
-            this.f16116a = context.getApplicationContext();
+            this.f16903a = context.getApplicationContext();
         } else {
-            this.f16116a = t.b().g();
+            this.f16903a = t.b().g();
         }
     }
 
     private void b(String str) {
-        String a9 = d.a(this.f16116a).a(str);
+        String a9 = d.a(this.f16903a).a(str);
         if (TextUtils.isEmpty(a9)) {
             a(str, 3, "h5temp html file not exist");
         } else {
@@ -83,51 +83,51 @@ public class a {
     public class AnonymousClass3 implements b.a {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ e f16132a;
+        final /* synthetic */ e f16919a;
 
         public AnonymousClass3(e eVar) {
-            this.f16132a = eVar;
+            this.f16919a = eVar;
         }
 
         @Override // com.anythink.core.common.res.a.b.a
         public final void a(e eVar) {
-            String str = eVar.f16235h;
-            a.this.a(this.f16132a.f16235h);
+            String str = eVar.f17022h;
+            a.this.a(this.f16919a.f17022h);
         }
 
         @Override // com.anythink.core.common.res.a.b.a
         public final void a(e eVar, String str) {
-            a.this.a(eVar.f16235h, 1, str);
+            a.this.a(eVar.f17022h, 1, str);
         }
     }
 
     public static a a(Context context) {
-        if (f16115c == null) {
+        if (f16902c == null) {
             synchronized (a.class) {
                 try {
-                    if (f16115c == null) {
-                        f16115c = new a(context);
+                    if (f16902c == null) {
+                        f16902c = new a(context);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16115c;
+        return f16902c;
     }
 
     private void a(String str, String str2) {
         final String str3;
         final String str4;
-        synchronized (this.f16117d) {
-            File file = new File(d.a(this.f16116a).c(5, o.a(str)));
+        synchronized (this.f16904d) {
+            File file = new File(d.a(this.f16903a).c(5, o.a(str)));
             if (file.exists()) {
                 file.delete();
             }
             try {
-                LinkedList linkedList = (LinkedList) this.f16117d.remove(str);
+                LinkedList linkedList = (LinkedList) this.f16904d.remove(str);
                 if (linkedList != null) {
-                    Long l9 = this.f16118e.get(str);
+                    Long l9 = this.f16905e.get(str);
                     final long currentTimeMillis = l9 != null ? System.currentTimeMillis() - l9.longValue() : 0L;
                     Iterator it = linkedList.iterator();
                     while (it.hasNext()) {
@@ -162,41 +162,41 @@ public class a {
     /* JADX INFO: Access modifiers changed from: private */
     public void a(String str, int i, String str2) {
         final String str3;
-        final int i6;
+        final int i4;
         final String str4;
-        synchronized (this.f16117d) {
+        synchronized (this.f16904d) {
             try {
                 String a9 = o.a(str);
-                File file = new File(d.a(this.f16116a).c(5, a9));
+                File file = new File(d.a(this.f16903a).c(5, a9));
                 if (file.exists()) {
                     file.delete();
                 }
-                File file2 = new File(d.a(this.f16116a).c(6, a9));
+                File file2 = new File(d.a(this.f16903a).c(6, a9));
                 if (file2.exists()) {
                     file2.delete();
                 }
-                LinkedList linkedList = (LinkedList) this.f16117d.remove(str);
+                LinkedList linkedList = (LinkedList) this.f16904d.remove(str);
                 if (linkedList != null) {
                     Iterator it = linkedList.iterator();
                     while (it.hasNext()) {
                         final InterfaceC0093a interfaceC0093a = (InterfaceC0093a) it.next();
                         if (interfaceC0093a != null) {
                             str3 = str;
-                            i6 = i;
+                            i4 = i;
                             str4 = str2;
                             t.b().b(new Runnable() { // from class: com.anythink.core.common.res.a.a.2
                                 @Override // java.lang.Runnable
                                 public final void run() {
-                                    interfaceC0093a.a(str3, i6, str4);
+                                    interfaceC0093a.a(str3, i4, str4);
                                 }
                             });
                         } else {
                             str3 = str;
-                            i6 = i;
+                            i4 = i;
                             str4 = str2;
                         }
                         str = str3;
-                        i = i6;
+                        i = i4;
                         str2 = str4;
                     }
                 }
@@ -220,26 +220,26 @@ public class a {
             interfaceC0093a.a(str, a9, 0L);
             return;
         }
-        synchronized (this.f16117d) {
+        synchronized (this.f16904d) {
             try {
-                if (!this.f16118e.contains(str)) {
-                    this.f16118e.put(str, Long.valueOf(System.currentTimeMillis()));
+                if (!this.f16905e.contains(str)) {
+                    this.f16905e.put(str, Long.valueOf(System.currentTimeMillis()));
                 }
-                if (!this.f16117d.containsKey(str)) {
+                if (!this.f16904d.containsKey(str)) {
                     LinkedList linkedList = new LinkedList();
                     linkedList.add(interfaceC0093a);
-                    this.f16117d.put(str, linkedList);
+                    this.f16904d.put(str, linkedList);
                     if (d.a(t.b().g()).b(5, o.a(str))) {
                         a(str);
                     } else {
                         e eVar = new e(5, str);
                         com.anythink.core.common.res.a.b bVar = new com.anythink.core.common.res.a.b(eVar);
-                        bVar.f16143b = new AnonymousClass3(eVar);
+                        bVar.f16930b = new AnonymousClass3(eVar);
                         bVar.d();
                     }
                     return;
                 }
-                LinkedList linkedList2 = (LinkedList) this.f16117d.get(str);
+                LinkedList linkedList2 = (LinkedList) this.f16904d.get(str);
                 if (linkedList2 != null && !linkedList2.contains(interfaceC0093a)) {
                     linkedList2.add(interfaceC0093a);
                 }
@@ -251,13 +251,13 @@ public class a {
 
     private void a(e eVar) {
         com.anythink.core.common.res.a.b bVar = new com.anythink.core.common.res.a.b(eVar);
-        bVar.f16143b = new AnonymousClass3(eVar);
+        bVar.f16930b = new AnonymousClass3(eVar);
         bVar.d();
     }
 
     private void a() {
         try {
-            ConcurrentHashMap<String, List<InterfaceC0093a>> concurrentHashMap = this.f16117d;
+            ConcurrentHashMap<String, List<InterfaceC0093a>> concurrentHashMap = this.f16904d;
             if (concurrentHashMap != null) {
                 concurrentHashMap.clear();
             }
@@ -268,8 +268,8 @@ public class a {
     /* JADX INFO: Access modifiers changed from: private */
     public void a(String str) {
         String a9 = o.a(str);
-        String c9 = d.a(this.f16116a).c(5, a9);
-        String c10 = d.a(this.f16116a).c(6, a9);
+        String c9 = d.a(this.f16903a).c(5, a9);
+        String c10 = d.a(this.f16903a).c(6, a9);
         File file = new File(c10);
         if (file.exists()) {
             file.delete();

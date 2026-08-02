@@ -16,9 +16,9 @@ public final class JR {
     public final long[] A07;
 
     public JR(JO jo, long[] jArr, int[] iArr, int i, long[] jArr2, int[] iArr2, long j6) {
-        AbstractC06243y.A07(iArr.length == jArr2.length);
-        AbstractC06243y.A07(jArr.length == jArr2.length);
-        AbstractC06243y.A07(iArr2.length == jArr2.length);
+        AbstractC06443y.A07(iArr.length == jArr2.length);
+        AbstractC06443y.A07(jArr.length == jArr2.length);
+        AbstractC06443y.A07(iArr2.length == jArr2.length);
         this.A03 = jo;
         this.A06 = jArr;
         this.A05 = iArr;
@@ -36,8 +36,8 @@ public final class JR {
     public final int A00(long j6) {
         for (int A0L = C5C.A0L(this.A07, j6, true, false); A0L >= 0; A0L--) {
             int i = this.A04[A0L] & 1;
-            int i6 = A08[1].length();
-            if (i6 == 25) {
+            int i4 = A08[1].length();
+            if (i4 == 25) {
                 throw new RuntimeException();
             }
             A08[1] = "GcE";

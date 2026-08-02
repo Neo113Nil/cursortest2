@@ -17,101 +17,101 @@ import org.json.JSONObject;
 public final class a {
 
     /* renamed from: d, reason: collision with root package name */
-    public String f20466d;
+    public String f21253d;
 
     /* renamed from: e, reason: collision with root package name */
-    public String f20467e;
+    public String f21254e;
 
     /* renamed from: g, reason: collision with root package name */
-    public String f20469g;
+    public String f21256g;
 
     /* renamed from: h, reason: collision with root package name */
-    public String f20470h;
+    public String f21257h;
     public String i;
 
     /* renamed from: j, reason: collision with root package name */
-    public String f20471j;
+    public String f21258j;
 
     /* renamed from: k, reason: collision with root package name */
-    public String f20472k;
+    public String f21259k;
 
     /* renamed from: l, reason: collision with root package name */
-    public String f20473l;
+    public String f21260l;
 
     /* renamed from: m, reason: collision with root package name */
-    public String f20474m;
+    public String f21261m;
 
     /* renamed from: n, reason: collision with root package name */
-    public String f20475n;
+    public String f21262n;
 
     /* renamed from: o, reason: collision with root package name */
-    public String f20476o;
+    public String f21263o;
 
     /* renamed from: p, reason: collision with root package name */
-    public String f20477p;
+    public String f21264p;
 
     /* renamed from: q, reason: collision with root package name */
-    public String f20478q;
+    public String f21265q;
 
     /* renamed from: r, reason: collision with root package name */
-    public String f20479r;
+    public String f21266r;
 
     /* renamed from: c, reason: collision with root package name */
-    public String f20465c = com.onesignal.core.internal.backend.impl.a.TURBINE_FEATURES_PLATFORM_ANDROID;
+    public String f21252c = com.onesignal.core.internal.backend.impl.a.TURBINE_FEATURES_PLATFORM_ANDROID;
 
     /* renamed from: a, reason: collision with root package name */
-    public String f20463a = n.c();
+    public String f21250a = n.c();
 
     /* renamed from: b, reason: collision with root package name */
-    public String f20464b = n.d();
+    public String f21251b = n.d();
 
     /* renamed from: f, reason: collision with root package name */
-    public String f20468f = m.f();
+    public String f21255f = m.f();
 
     public a(Context context) {
-        this.f20467e = m.d(context);
+        this.f21254e = m.d(context);
         int b9 = n.b();
-        this.f20470h = String.valueOf(b9);
+        this.f21257h = String.valueOf(b9);
         this.i = n.a(context, b9);
-        this.f20471j = m.h();
-        this.f20472k = com.anythink.expressad.foundation.b.a.c().g();
-        this.f20473l = com.anythink.expressad.foundation.b.a.c().f();
-        this.f20474m = String.valueOf(v.f(context));
-        this.f20475n = String.valueOf(v.e(context));
-        this.f20477p = String.valueOf(v.c(context));
+        this.f21258j = m.h();
+        this.f21259k = com.anythink.expressad.foundation.b.a.c().g();
+        this.f21260l = com.anythink.expressad.foundation.b.a.c().f();
+        this.f21261m = String.valueOf(v.f(context));
+        this.f21262n = String.valueOf(v.e(context));
+        this.f21264p = String.valueOf(v.c(context));
         if (context.getResources().getConfiguration().orientation == 2) {
-            this.f20476o = "landscape";
+            this.f21263o = "landscape";
         } else {
-            this.f20476o = "portrait";
+            this.f21263o = "portrait";
         }
         s c9 = t.b().c();
         String fillCDataParam = c9 != null ? c9.fillCDataParam("at_device1|||at_device2|||at_device3") : "";
         if (TextUtils.isEmpty(fillCDataParam)) {
-            this.f20466d = "";
-            this.f20469g = "";
+            this.f21253d = "";
+            this.f21256g = "";
         } else {
             String[] split = fillCDataParam.split("\\|\\|\\|");
             try {
-                this.f20466d = split[0];
+                this.f21253d = split[0];
             } catch (Throwable unused) {
             }
             try {
-                this.f20469g = split[2];
+                this.f21256g = split[2];
             } catch (Throwable unused2) {
             }
         }
-        this.f20478q = n.f();
-        this.f20479r = d.a();
+        this.f21265q = n.f();
+        this.f21266r = d.a();
     }
 
     public final JSONObject a() {
         JSONObject jSONObject = new JSONObject();
         try {
-            jSONObject.put("device", this.f20463a);
-            jSONObject.put("system_version", this.f20464b);
-            jSONObject.put("network_type", this.f20470h);
+            jSONObject.put("device", this.f21250a);
+            jSONObject.put("system_version", this.f21251b);
+            jSONObject.put("network_type", this.f21257h);
             jSONObject.put("network_type_str", this.i);
-            jSONObject.put("device_ua", this.f20471j);
+            jSONObject.put("device_ua", this.f21258j);
             by R8 = t.b().R();
             if (R8 != null) {
                 jSONObject.put("has_wx", R8.a());
@@ -125,22 +125,22 @@ public final class a {
             }
             jSONObject.put("mnc", m.c(t.b().g()));
             jSONObject.put("mcc", m.b(t.b().g()));
-            jSONObject.put("plantform", this.f20465c);
-            jSONObject.put(k.b("ZGV2aWNlX2ltZWk="), this.f20466d);
-            jSONObject.put("android_id", this.f20467e);
-            jSONObject.put("google_ad_id", this.f20468f);
-            jSONObject.put("oaid", this.f20469g);
-            jSONObject.put("az_aid_info", this.f20479r);
-            jSONObject.put("appkey", this.f20472k);
-            jSONObject.put(com.anythink.expressad.videocommon.e.b.f22407u, this.f20473l);
-            jSONObject.put("screen_width", this.f20474m);
-            jSONObject.put("screen_height", this.f20475n);
-            jSONObject.put("orientation", this.f20476o);
-            jSONObject.put("scale", this.f20477p);
+            jSONObject.put("plantform", this.f21252c);
+            jSONObject.put(k.b("ZGV2aWNlX2ltZWk="), this.f21253d);
+            jSONObject.put("android_id", this.f21254e);
+            jSONObject.put("google_ad_id", this.f21255f);
+            jSONObject.put("oaid", this.f21256g);
+            jSONObject.put("az_aid_info", this.f21266r);
+            jSONObject.put("appkey", this.f21259k);
+            jSONObject.put(com.anythink.expressad.videocommon.e.b.f23194u, this.f21260l);
+            jSONObject.put("screen_width", this.f21261m);
+            jSONObject.put("screen_height", this.f21262n);
+            jSONObject.put("orientation", this.f21263o);
+            jSONObject.put("scale", this.f21264p);
             if (n.k() != 0) {
                 jSONObject.put("tun", n.k());
             }
-            jSONObject.put("f", this.f20478q);
+            jSONObject.put("f", this.f21265q);
             return jSONObject;
         } catch (JSONException e9) {
             e9.printStackTrace();

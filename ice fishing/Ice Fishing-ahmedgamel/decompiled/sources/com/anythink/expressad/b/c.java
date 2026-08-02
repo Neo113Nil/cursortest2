@@ -14,31 +14,31 @@ public final class c extends d {
     private static final boolean i = true;
 
     /* renamed from: a, reason: collision with root package name */
-    com.anythink.expressad.b.a.b f18184a;
+    com.anythink.expressad.b.a.b f18971a;
 
     /* renamed from: j, reason: collision with root package name */
-    private int f18185j;
+    private int f18972j;
 
     /* renamed from: k, reason: collision with root package name */
-    private String f18186k;
+    private String f18973k;
 
     /* renamed from: l, reason: collision with root package name */
-    private int f18187l;
+    private int f18974l;
 
     /* renamed from: m, reason: collision with root package name */
-    private e f18188m;
+    private e f18975m;
 
     /* renamed from: n, reason: collision with root package name */
-    private boolean f18189n;
+    private boolean f18976n;
 
     /* renamed from: o, reason: collision with root package name */
-    private com.anythink.expressad.foundation.g.h.c f18190o;
+    private com.anythink.expressad.foundation.g.h.c f18977o;
 
     /* renamed from: p, reason: collision with root package name */
-    private m f18191p;
+    private m f18978p;
 
     /* renamed from: q, reason: collision with root package name */
-    private Handler f18192q;
+    private Handler f18979q;
 
     /* renamed from: com.anythink.expressad.b.c$1, reason: invalid class name */
     public class AnonymousClass1 implements a.InterfaceC0124a {
@@ -47,16 +47,16 @@ public final class c extends d {
 
         @Override // com.anythink.expressad.foundation.g.h.a.InterfaceC0124a
         public final void a(a.b bVar) {
-            if (bVar == a.b.FINISH && c.this.f18189n) {
-                c.this.f18192q.post(new Runnable() { // from class: com.anythink.expressad.b.c.1.1
+            if (bVar == a.b.FINISH && c.this.f18976n) {
+                c.this.f18979q.post(new Runnable() { // from class: com.anythink.expressad.b.c.1.1
                     @Override // java.lang.Runnable
                     public final void run() {
-                        if (c.this.f18188m != null) {
-                            if (c.this.f18184a.g()) {
-                                e unused = c.this.f18188m;
+                        if (c.this.f18975m != null) {
+                            if (c.this.f18971a.g()) {
+                                e unused = c.this.f18975m;
                             } else {
-                                e unused2 = c.this.f18188m;
-                                c.this.f18184a.h();
+                                e unused2 = c.this.f18975m;
+                                c.this.f18971a.h();
                             }
                         }
                     }
@@ -89,26 +89,26 @@ public final class c extends d {
             int i;
             String str2;
             try {
-                c.this.f18184a = new com.anythink.expressad.b.a.b();
-                int i6 = 0;
+                c.this.f18971a = new com.anythink.expressad.b.a.b();
+                int i4 = 0;
                 while (true) {
                     HttpURLConnection httpURLConnection2 = null;
-                    if (i6 < 10) {
-                        if (!c.this.f18189n) {
+                    if (i4 < 10) {
+                        if (!c.this.f18976n) {
                             return;
                         }
                         c.d(c.this);
                         try {
                             c cVar = c.this;
-                            cVar.f18186k = cVar.f18186k.replace(" ", "%20");
-                            String unused = c.this.f18186k;
-                            httpURLConnection = (HttpURLConnection) new URL(c.this.f18186k).openConnection();
+                            cVar.f18973k = cVar.f18973k.replace(" ", "%20");
+                            String unused = c.this.f18973k;
+                            httpURLConnection = (HttpURLConnection) new URL(c.this.f18973k).openConnection();
                             try {
                                 try {
                                     httpURLConnection.setRequestMethod("GET");
                                     httpURLConnection.setRequestProperty("User-Agent", com.anythink.core.common.v.m.h());
-                                    httpURLConnection.setConnectTimeout(com.anythink.basead.exoplayer.d.f6762a);
-                                    httpURLConnection.setReadTimeout(com.anythink.basead.exoplayer.d.f6762a);
+                                    httpURLConnection.setConnectTimeout(com.anythink.basead.exoplayer.d.f7548a);
+                                    httpURLConnection.setReadTimeout(com.anythink.basead.exoplayer.d.f7548a);
                                     httpURLConnection.setInstanceFollowRedirects(false);
                                     httpURLConnection.connect();
                                     i = httpURLConnection.getResponseCode();
@@ -131,9 +131,9 @@ public final class c extends d {
                                 str = null;
                                 i = 200;
                                 e.printStackTrace();
-                                if (i6 != 0) {
-                                    c.this.f18184a.a(false);
-                                    c.this.f18184a.d(e.getLocalizedMessage());
+                                if (i4 != 0) {
+                                    c.this.f18971a.a(false);
+                                    c.this.f18971a.d(e.getLocalizedMessage());
                                     if (httpURLConnection != null) {
                                         httpURLConnection.disconnect();
                                         return;
@@ -147,29 +147,29 @@ public final class c extends d {
                                 if (i != 301) {
                                     if (i != 200) {
                                     }
-                                    if (!c.this.f18186k.toLowerCase().startsWith("market:/")) {
-                                        if (c.this.f18186k.toLowerCase().endsWith(".apk")) {
+                                    if (!c.this.f18973k.toLowerCase().startsWith("market:/")) {
+                                        if (c.this.f18973k.toLowerCase().endsWith(".apk")) {
                                         }
-                                        c.this.f18184a.d(null);
-                                        c.this.f18184a.a(true);
+                                        c.this.f18971a.d(null);
+                                        c.this.f18971a.a(true);
                                     }
-                                    c.this.f18184a.c(1);
+                                    c.this.f18971a.c(1);
                                     c cVar2 = c.this;
-                                    cVar2.f18184a.e(cVar2.f18186k);
-                                    c.this.f18184a.b(true);
-                                    c.this.f18184a.d(null);
-                                    c.this.f18184a.a(true);
+                                    cVar2.f18971a.e(cVar2.f18973k);
+                                    c.this.f18971a.b(true);
+                                    c.this.f18971a.d(null);
+                                    c.this.f18971a.a(true);
                                 }
                                 if (!TextUtils.isEmpty(str)) {
                                 }
-                                if (!c.this.f18186k.toLowerCase().startsWith("market:/")) {
+                                if (!c.this.f18973k.toLowerCase().startsWith("market:/")) {
                                 }
-                                c.this.f18184a.c(1);
+                                c.this.f18971a.c(1);
                                 c cVar22 = c.this;
-                                cVar22.f18184a.e(cVar22.f18186k);
-                                c.this.f18184a.b(true);
-                                c.this.f18184a.d(null);
-                                c.this.f18184a.a(true);
+                                cVar22.f18971a.e(cVar22.f18973k);
+                                c.this.f18971a.b(true);
+                                c.this.f18971a.d(null);
+                                c.this.f18971a.a(true);
                             }
                             try {
                                 str2 = httpURLConnection.getHeaderField("Content-type");
@@ -177,7 +177,7 @@ public final class c extends d {
                             } catch (Exception e11) {
                                 e = e11;
                                 e.printStackTrace();
-                                if (i6 != 0) {
+                                if (i4 != 0) {
                                 }
                             }
                         } catch (Exception e12) {
@@ -192,63 +192,63 @@ public final class c extends d {
                         }
                         if (i != 301 && i != 302 && i != 307) {
                             if (i != 200) {
-                                if (!TextUtils.isEmpty(str2) && str2.indexOf(com.onesignal.inAppMessages.internal.d.HTML) < 0 && str2.indexOf(o.f8446c) < 0) {
-                                    c.this.f18184a.c(3);
-                                    c.this.f18184a.b(true);
+                                if (!TextUtils.isEmpty(str2) && str2.indexOf(com.onesignal.inAppMessages.internal.d.HTML) < 0 && str2.indexOf(o.f9232c) < 0) {
+                                    c.this.f18971a.c(3);
+                                    c.this.f18971a.b(true);
                                 }
-                                c.this.f18184a.c(2);
-                                c.this.f18184a.b(true);
+                                c.this.f18971a.c(2);
+                                c.this.f18971a.b(true);
                             } else {
-                                c.this.f18184a.b(false);
+                                c.this.f18971a.b(false);
                             }
                         }
                         if (!TextUtils.isEmpty(str)) {
-                            c.this.f18184a.b(true);
+                            c.this.f18971a.b(true);
                             break;
                         }
                         if (!str.toLowerCase().startsWith("http")) {
-                            c.this.f18186k = str;
-                            c.this.f18184a.b(true);
+                            c.this.f18973k = str;
+                            c.this.f18971a.b(true);
                             break;
                         } else {
-                            c.this.f18186k = str;
-                            if (!TextUtils.isEmpty(c.this.f18186k) && c.this.f18186k.toLowerCase().endsWith(".apk")) {
+                            c.this.f18973k = str;
+                            if (!TextUtils.isEmpty(c.this.f18973k) && c.this.f18973k.toLowerCase().endsWith(".apk")) {
                                 break;
                             } else {
-                                i6++;
+                                i4++;
                             }
                         }
                     } else {
                         break;
                     }
                 }
-                if (!c.this.f18186k.toLowerCase().startsWith("market:/") && c.this.f18186k.toLowerCase().indexOf("play.google.com") <= 0) {
-                    if (c.this.f18186k.toLowerCase().endsWith(".apk")) {
-                        if (c.this.f18185j >= 10 || !c.this.f18184a.j()) {
-                            c.this.f18184a.c(2);
+                if (!c.this.f18973k.toLowerCase().startsWith("market:/") && c.this.f18973k.toLowerCase().indexOf("play.google.com") <= 0) {
+                    if (c.this.f18973k.toLowerCase().endsWith(".apk")) {
+                        if (c.this.f18972j >= 10 || !c.this.f18971a.j()) {
+                            c.this.f18971a.c(2);
                         }
                         c cVar3 = c.this;
-                        cVar3.f18184a.e(cVar3.f18186k);
+                        cVar3.f18971a.e(cVar3.f18973k);
                     } else {
-                        c.this.f18184a.c(3);
+                        c.this.f18971a.c(3);
                         c cVar4 = c.this;
-                        cVar4.f18184a.e(cVar4.f18186k);
-                        c.this.f18184a.b(true);
+                        cVar4.f18971a.e(cVar4.f18973k);
+                        c.this.f18971a.b(true);
                     }
-                    c.this.f18184a.d(null);
-                    c.this.f18184a.a(true);
+                    c.this.f18971a.d(null);
+                    c.this.f18971a.a(true);
                 }
-                c.this.f18184a.c(1);
+                c.this.f18971a.c(1);
                 c cVar222 = c.this;
-                cVar222.f18184a.e(cVar222.f18186k);
-                c.this.f18184a.b(true);
-                c.this.f18184a.d(null);
-                c.this.f18184a.a(true);
+                cVar222.f18971a.e(cVar222.f18973k);
+                c.this.f18971a.b(true);
+                c.this.f18971a.d(null);
+                c.this.f18971a.a(true);
             } catch (Exception e13) {
                 c cVar5 = c.this;
-                cVar5.f18184a.e(cVar5.f18186k);
-                c.this.f18184a.a(false);
-                c.this.f18184a.d(e13.getLocalizedMessage());
+                cVar5.f18971a.e(cVar5.f18973k);
+                c.this.f18971a.a(false);
+                c.this.f18971a.d(e13.getLocalizedMessage());
                 e13.printStackTrace();
             }
         }
@@ -271,50 +271,50 @@ public final class c extends d {
     }
 
     public static /* synthetic */ int d(c cVar) {
-        int i6 = cVar.f18185j;
-        cVar.f18185j = i6 + 1;
-        return i6;
+        int i4 = cVar.f18972j;
+        cVar.f18972j = i4 + 1;
+        return i4;
     }
 
     private c(Context context, byte b9) {
-        this.f18185j = 0;
-        this.f18186k = null;
-        this.f18184a = null;
-        this.f18188m = null;
-        this.f18189n = true;
-        this.f18192q = new Handler(Looper.getMainLooper());
-        this.f18190o = new com.anythink.expressad.foundation.g.h.c(context);
-        this.f18191p = new m(context);
+        this.f18972j = 0;
+        this.f18973k = null;
+        this.f18971a = null;
+        this.f18975m = null;
+        this.f18976n = true;
+        this.f18979q = new Handler(Looper.getMainLooper());
+        this.f18977o = new com.anythink.expressad.foundation.g.h.c(context);
+        this.f18978p = new m(context);
     }
 
     @Override // com.anythink.expressad.b.d
     public final void b() {
-        this.f18189n = false;
+        this.f18976n = false;
     }
 
     public final boolean a() {
-        return this.f18189n;
+        return this.f18976n;
     }
 
-    public final void a(String str, com.anythink.expressad.foundation.d.d dVar, e eVar, String str2, boolean z3, boolean z6, int i6) {
+    public final void a(String str, com.anythink.expressad.foundation.d.d dVar, e eVar, String str2, boolean z6, boolean z9, int i4) {
         String str3;
-        this.f18186k = str2;
-        this.f18188m = eVar;
-        this.f18184a = null;
-        this.f18187l = i6;
+        this.f18973k = str2;
+        this.f18975m = eVar;
+        this.f18971a = null;
+        this.f18974l = i4;
         if (dVar != null) {
             r0 = "5".equals(dVar.ad()) || "6".equals(dVar.ad());
             str3 = dVar.bh();
         } else {
             str3 = "";
         }
-        this.f18191p.a(str2, eVar, r0, str3, str, dVar, z3, z6, i6);
+        this.f18978p.a(str2, eVar, r0, str3, str, dVar, z6, z9, i4);
     }
 
     private void a(String str, com.anythink.expressad.foundation.d.d dVar, e eVar) {
-        this.f18186k = new String(dVar.af());
-        this.f18188m = eVar;
-        this.f18184a = null;
-        this.f18191p.a(dVar.af(), eVar, "5".equals(dVar.ad()) || "6".equals(dVar.ad()), dVar.bh(), str, dVar, true, false, com.anythink.expressad.b.b.a.f18159l);
+        this.f18973k = new String(dVar.af());
+        this.f18975m = eVar;
+        this.f18971a = null;
+        this.f18978p.a(dVar.af(), eVar, "5".equals(dVar.ad()) || "6".equals(dVar.ad()), dVar.bh(), str, dVar, true, false, com.anythink.expressad.b.b.a.f18946l);
     }
 }

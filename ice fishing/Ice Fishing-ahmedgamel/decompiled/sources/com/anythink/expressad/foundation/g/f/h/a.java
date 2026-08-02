@@ -12,22 +12,22 @@ import com.anythink.expressad.foundation.g.f.n;
 import com.anythink.expressad.foundation.h.s;
 import com.anythink.expressad.out.l;
 import java.io.File;
-import u.AbstractC5049e;
+import u.AbstractC5050e;
 
 /* loaded from: classes.dex */
 public class a {
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f19351b = "a";
+    private static final String f20138b = "a";
 
     /* renamed from: a, reason: collision with root package name */
-    protected Context f19352a;
+    protected Context f20139a;
 
     public a(Context context) {
         if (context == null) {
-            this.f19352a = com.anythink.expressad.foundation.b.a.c().e();
+            this.f20139a = com.anythink.expressad.foundation.b.a.c().e();
         } else {
-            this.f19352a = context.getApplicationContext();
+            this.f20139a = context.getApplicationContext();
         }
     }
 
@@ -76,15 +76,15 @@ public class a {
         a(str, bVar);
         if (i == 0) {
             gVar = new g(1, str, bVar.toString(), eVar);
-            gVar.a("Content-Type", com.anythink.expressad.foundation.g.f.g.b.f19342e);
+            gVar.a("Content-Type", com.anythink.expressad.foundation.g.f.g.b.f20129e);
         } else if (i == 1) {
             gVar = new d(1, str, bVar.toString(), eVar);
-            gVar.a("Content-Type", com.anythink.expressad.foundation.g.f.g.b.f19342e);
+            gVar.a("Content-Type", com.anythink.expressad.foundation.g.f.g.b.f20129e);
         } else if (i != 2) {
             gVar = null;
         } else {
             gVar = new c(1, str, bVar.toString(), eVar);
-            gVar.a("Content-Type", com.anythink.expressad.foundation.g.f.g.b.f19342e);
+            gVar.a("Content-Type", com.anythink.expressad.foundation.g.f.g.b.f20129e);
         }
         if (gVar != null) {
             gVar.a(mVar);
@@ -118,7 +118,7 @@ public class a {
         long currentTimeMillis = System.currentTimeMillis();
         bVar.a("ts", String.valueOf(currentTimeMillis));
         bVar.a(com.anythink.expressad.foundation.g.g.a.b.bb, s.a(str2 + currentTimeMillis));
-        StringBuilder c9 = AbstractC5049e.c(str, "?");
+        StringBuilder c9 = AbstractC5050e.c(str, "?");
         c9.append(bVar.toString());
         String sb = c9.toString();
         j jVar = null;

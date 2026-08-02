@@ -1,12 +1,12 @@
 package com.google.android.gms.ads.nativead;
 
-import W2.a;
+import Y2.a;
 import android.os.Bundle;
-import com.google.android.gms.internal.ads.C3090de;
+import com.google.android.gms.internal.ads.C3113de;
 import java.util.ArrayList;
-import k2.p;
-import k2.s;
-import q2.N0;
+import m2.p;
+import m2.s;
+import s2.N0;
 
 /* loaded from: classes.dex */
 public abstract class NativeAd {
@@ -20,7 +20,7 @@ public abstract class NativeAd {
 
     public abstract String e();
 
-    public abstract C3090de f();
+    public abstract C3113de f();
 
     public abstract ArrayList g();
 

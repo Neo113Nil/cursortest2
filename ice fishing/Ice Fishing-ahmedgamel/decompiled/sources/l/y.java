@@ -4,7 +4,7 @@ import android.content.Context;
 
 /* loaded from: classes.dex */
 public interface y {
-    void b(m mVar, boolean z3);
+    void b(m mVar, boolean z6);
 
     boolean c(o oVar);
 
@@ -16,7 +16,7 @@ public interface y {
 
     void h(Context context, m mVar);
 
-    boolean i(SubMenuC4643E subMenuC4643E);
+    boolean i(SubMenuC4654E subMenuC4654E);
 
     boolean j(o oVar);
 }

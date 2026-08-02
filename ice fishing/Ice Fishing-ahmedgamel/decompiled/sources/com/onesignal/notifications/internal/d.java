@@ -1,7 +1,7 @@
 package com.onesignal.notifications.internal;
 
 import com.anythink.expressad.advanced.js.NativeAdvancedJsUtils;
-import i5.InterfaceC4589f;
+import i5.InterfaceC4598f;
 import i5.i;
 import org.json.JSONObject;
 
@@ -18,7 +18,7 @@ public final class d implements i5.g {
     }
 
     @Override // i5.g
-    public InterfaceC4589f getNotification() {
+    public InterfaceC4598f getNotification() {
         return this._notification;
     }
 
@@ -28,7 +28,7 @@ public final class d implements i5.g {
     }
 
     public final JSONObject toJSONObject() {
-        JSONObject put = new JSONObject().put("notification", this._notification.toJSONObject()).put(NativeAdvancedJsUtils.f17906p, this._result.toJSONObject());
+        JSONObject put = new JSONObject().put("notification", this._notification.toJSONObject()).put(NativeAdvancedJsUtils.f18693p, this._result.toJSONObject());
         kotlin.jvm.internal.h.d(put, "put(...)");
         return put;
     }

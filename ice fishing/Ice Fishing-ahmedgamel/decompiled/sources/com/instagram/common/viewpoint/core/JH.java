@@ -8,10 +8,10 @@ public abstract class JH {
     public static byte[] A00;
     public static String[] A01 = {"f", "wBzTr9isyWuzk0Was82fzP", "sjHXZ8xDB", "rmj8ZpQPq6N", "k0JnkexrU5JvppKLiAvWnmQe", "wOTrIZh22Rcriy8Kptm38zvp", "MO9vm10BV89BFpJ5cx5aSl", "G2cEiJ7mV"};
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 26);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 26);
         }
         return new String(copyOfRange);
     }
@@ -33,34 +33,34 @@ public abstract class JH {
     }
 
     public static JG A00(byte[] bArr) {
-        C06474v c06474v = new C06474v(bArr);
-        if (c06474v.A0A() < 32) {
+        C06674v c06674v = new C06674v(bArr);
+        if (c06674v.A0A() < 32) {
             return null;
         }
-        c06474v.A0f(0);
-        if (c06474v.A0C() != c06474v.A07() + 4 || c06474v.A0C() != 1886614376) {
+        c06674v.A0f(0);
+        if (c06674v.A0C() != c06674v.A07() + 4 || c06674v.A0C() != 1886614376) {
             return null;
         }
-        int dataSize = AbstractC0989Iu.A01(c06474v.A0C());
+        int dataSize = AbstractC1009Iu.A01(c06674v.A0C());
         if (dataSize > 1) {
-            AbstractC06324g.A07(A01(0, 12, 82), A01(12, 26, 125) + dataSize);
+            AbstractC06524g.A07(A01(0, 12, 82), A01(12, 26, 125) + dataSize);
             return null;
         }
-        UUID uuid = new UUID(c06474v.A0P(), c06474v.A0P());
+        UUID uuid = new UUID(c06674v.A0P(), c06674v.A0P());
         if (dataSize == 1) {
-            c06474v.A0g(c06474v.A0L() * 16);
+            c06674v.A0g(c06674v.A0L() * 16);
         }
-        int atomType = c06474v.A0L();
+        int atomType = c06674v.A0L();
         String[] strArr = A01;
         if (strArr[2].length() != strArr[7].length()) {
             throw new RuntimeException();
         }
         A01[6] = "Op4nBnIC0DPoqkcvuw04qL";
-        if (atomType != c06474v.A07()) {
+        if (atomType != c06674v.A07()) {
             return null;
         }
         byte[] bArr2 = new byte[atomType];
-        c06474v.A0k(bArr2, 0, atomType);
+        c06674v.A0k(bArr2, 0, atomType);
         return new JG(uuid, dataSize, bArr2);
     }
 

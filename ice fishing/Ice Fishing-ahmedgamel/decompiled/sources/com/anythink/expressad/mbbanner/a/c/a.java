@@ -8,9 +8,9 @@ public interface a {
 
     void a(com.anythink.expressad.foundation.d.d dVar);
 
-    void a(boolean z3);
+    void a(boolean z6);
 
-    void a(boolean z3, String str);
+    void a(boolean z6, String str);
 
     void b();
 

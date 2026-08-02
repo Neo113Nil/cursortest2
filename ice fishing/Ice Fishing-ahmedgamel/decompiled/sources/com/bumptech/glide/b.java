@@ -1,6 +1,5 @@
 package com.bumptech.glide;
 
-import D.RunnableC0282a;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Intent;
@@ -17,14 +16,14 @@ import java.util.WeakHashMap;
 public final class b implements Application.ActivityLifecycleCallbacks {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f23368n;
+    public final /* synthetic */ int f24155n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final Object f23369u;
+    public final Object f24156u;
 
     public b() {
-        this.f23368n = 1;
-        this.f23369u = Collections.newSetFromMap(new WeakHashMap());
+        this.f24155n = 1;
+        this.f24156u = Collections.newSetFromMap(new WeakHashMap());
     }
 
     public static void a(Intent intent) {
@@ -40,7 +39,7 @@ public final class b implements Application.ActivityLifecycleCallbacks {
         if (bundle == null ? false : "1".equals(bundle.getString("google.c.a.e"))) {
             if (bundle != null) {
                 if ("1".equals(bundle.getString("google.c.a.tc"))) {
-                    if (O3.g.c().b(P3.a.class) != null) {
+                    if (Q3.g.c().b(R3.a.class) != null) {
                         throw new ClassCastException();
                     }
                     if (Log.isLoggable("FirebaseMessaging", 3)) {
@@ -51,23 +50,23 @@ public final class b implements Application.ActivityLifecycleCallbacks {
                     Log.d("FirebaseMessaging", "Received event with track-conversion=false. Do not set user property");
                 }
             }
-            X2.e.L("_no", bundle);
+            f.p("_no", bundle);
         }
     }
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public final void onActivityCreated(Activity activity, Bundle bundle) {
-        switch (this.f23368n) {
+        switch (this.f24155n) {
             case 0:
                 break;
             default:
                 Intent intent = activity.getIntent();
-                if (intent != null && ((Set) this.f23369u).add(intent)) {
+                if (intent != null && ((Set) this.f24156u).add(intent)) {
                     if (Build.VERSION.SDK_INT > 25) {
                         a(intent);
                         break;
                     } else {
-                        new Handler(Looper.getMainLooper()).post(new RunnableC0282a(this, intent));
+                        new Handler(Looper.getMainLooper()).post(new A3.p(this, intent));
                         break;
                     }
                 }
@@ -77,17 +76,17 @@ public final class b implements Application.ActivityLifecycleCallbacks {
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public final void onActivityDestroyed(Activity activity) {
-        int i = this.f23368n;
+        int i = this.f24155n;
     }
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public final void onActivityPaused(Activity activity) {
-        switch (this.f23368n) {
+        switch (this.f24155n) {
             case 0:
                 break;
             default:
                 if (activity.isFinishing()) {
-                    ((Set) this.f23369u).remove(activity.getIntent());
+                    ((Set) this.f24156u).remove(activity.getIntent());
                     break;
                 }
                 break;
@@ -96,31 +95,31 @@ public final class b implements Application.ActivityLifecycleCallbacks {
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public final void onActivityResumed(Activity activity) {
-        switch (this.f23368n) {
+        switch (this.f24155n) {
             case 0:
-                ((c) this.f23369u).getClass();
+                ((c) this.f24156u).getClass();
                 break;
         }
     }
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public final void onActivitySaveInstanceState(Activity activity, Bundle bundle) {
-        int i = this.f23368n;
+        int i = this.f24155n;
     }
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public final void onActivityStarted(Activity activity) {
-        int i = this.f23368n;
+        int i = this.f24155n;
     }
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public final void onActivityStopped(Activity activity) {
-        int i = this.f23368n;
+        int i = this.f24155n;
     }
 
     public b(c cVar) {
-        this.f23368n = 0;
-        this.f23369u = cVar;
+        this.f24155n = 0;
+        this.f24156u = cVar;
     }
 
     private final void c(Activity activity) {

@@ -1,11 +1,11 @@
 package com.google.android.gms.internal.ads;
 
-import u.AbstractC5049e;
+import u.AbstractC5050e;
 
 /* loaded from: classes2.dex */
 public final class EI extends VK {
     private static final EI zzj;
-    private static volatile InterfaceC4048vL zzk;
+    private static volatile InterfaceC4071vL zzk;
     private int zza;
     private int zzb;
     private GI zzc;
@@ -23,7 +23,7 @@ public final class EI extends VK {
     }
 
     public EI() {
-        HK hk = JK.f25675u;
+        HK hk = JK.f26428u;
         this.zzd = hk;
         this.zze = hk;
         this.zzf = hk;
@@ -40,7 +40,7 @@ public final class EI extends VK {
         return (DI) zzj.r();
     }
 
-    public static InterfaceC4048vL K() {
+    public static InterfaceC4071vL K() {
         return zzj.o();
     }
 
@@ -118,41 +118,41 @@ public final class EI extends VK {
 
     @Override // com.google.android.gms.internal.ads.VK
     public final Object w(int i, VK vk) {
-        InterfaceC4048vL interfaceC4048vL;
-        int d2 = AbstractC5049e.d(i);
-        if (d2 == 0) {
+        InterfaceC4071vL interfaceC4071vL;
+        int d9 = AbstractC5050e.d(i);
+        if (d9 == 0) {
             return (byte) 1;
         }
-        if (d2 == 2) {
-            return new C4264zL(zzj, "\u0000\b\u0000\u0001\u0001\b\b\u0000\u0000\u0000\u0001\u000b\u0002ဉ\u0000\u0003\n\u0004\n\u0005\n\u0006\n\u0007\n\b\n", new Object[]{"zza", "zzb", "zzc", "zzd", "zze", "zzf", "zzg", "zzh", "zzi"});
+        if (d9 == 2) {
+            return new C4287zL(zzj, "\u0000\b\u0000\u0001\u0001\b\b\u0000\u0000\u0000\u0001\u000b\u0002ဉ\u0000\u0003\n\u0004\n\u0005\n\u0006\n\u0007\n\b\n", new Object[]{"zza", "zzb", "zzc", "zzd", "zze", "zzf", "zzg", "zzh", "zzi"});
         }
-        if (d2 == 3) {
+        if (d9 == 3) {
             return new EI();
         }
-        if (d2 == 4) {
+        if (d9 == 4) {
             return new DI(zzj);
         }
-        if (d2 == 5) {
+        if (d9 == 5) {
             return zzj;
         }
-        if (d2 != 6) {
+        if (d9 != 6) {
             throw null;
         }
-        InterfaceC4048vL interfaceC4048vL2 = zzk;
-        if (interfaceC4048vL2 != null) {
-            return interfaceC4048vL2;
+        InterfaceC4071vL interfaceC4071vL2 = zzk;
+        if (interfaceC4071vL2 != null) {
+            return interfaceC4071vL2;
         }
         synchronized (EI.class) {
             try {
-                interfaceC4048vL = zzk;
-                if (interfaceC4048vL == null) {
-                    interfaceC4048vL = new UK(zzj);
-                    zzk = interfaceC4048vL;
+                interfaceC4071vL = zzk;
+                if (interfaceC4071vL == null) {
+                    interfaceC4071vL = new UK(zzj);
+                    zzk = interfaceC4071vL;
                 }
             } catch (Throwable th) {
                 throw th;
             }
         }
-        return interfaceC4048vL;
+        return interfaceC4071vL;
     }
 }

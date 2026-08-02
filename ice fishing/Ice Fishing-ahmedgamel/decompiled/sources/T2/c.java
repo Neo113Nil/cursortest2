@@ -1,14 +1,11 @@
 package T2;
 
-import java.util.regex.Pattern;
+import P2.e;
+import P2.h;
 
 /* loaded from: classes.dex */
-public abstract class c {
+public final class c extends h {
 
-    /* renamed from: a, reason: collision with root package name */
-    public static final /* synthetic */ int f3088a = 0;
-
-    static {
-        Pattern.compile("\\$\\{(.*?)\\}");
-    }
+    /* renamed from: B, reason: collision with root package name */
+    public static final e f3160B = new e("ClientTelemetry.API", new b(0), new P2.d());
 }

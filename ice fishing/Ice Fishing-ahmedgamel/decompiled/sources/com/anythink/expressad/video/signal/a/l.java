@@ -11,38 +11,38 @@ import org.json.JSONObject;
 public final class l extends e {
 
     /* renamed from: n, reason: collision with root package name */
-    private static final String f21826n = "onVideoStatusNotify";
+    private static final String f22613n = "onVideoStatusNotify";
 
     /* renamed from: o, reason: collision with root package name */
-    private static final String f21827o = "onJSClick";
+    private static final String f22614o = "onJSClick";
 
     /* renamed from: p, reason: collision with root package name */
-    private static final String f21828p = "onVideoProgressNotify";
+    private static final String f22615p = "onVideoProgressNotify";
 
     /* renamed from: q, reason: collision with root package name */
-    private static final String f21829q = "webviewshow";
+    private static final String f22616q = "webviewshow";
 
     /* renamed from: r, reason: collision with root package name */
-    private static final String f21830r = "showDataInfo";
+    private static final String f22617r = "showDataInfo";
 
     /* renamed from: s, reason: collision with root package name */
-    private static final String f21831s = "portrait";
+    private static final String f22618s = "portrait";
 
     /* renamed from: t, reason: collision with root package name */
-    private static final String f21832t = "landscape";
+    private static final String f22619t = "landscape";
 
     /* renamed from: u, reason: collision with root package name */
-    private WebView f21833u;
+    private WebView f22620u;
 
     public l(WebView webView) {
-        this.f21833u = webView;
+        this.f22620u = webView;
     }
 
     @Override // com.anythink.expressad.video.signal.a.e, com.anythink.expressad.video.signal.g
     public final void a() {
         super.a();
         com.anythink.expressad.atsignalcommon.windvane.h.a();
-        com.anythink.core.express.d.a.a(this.f21833u);
+        com.anythink.core.express.d.a.a(this.f22620u);
     }
 
     @Override // com.anythink.expressad.video.signal.a.e, com.anythink.expressad.video.signal.g
@@ -53,7 +53,7 @@ public final class l extends e {
             jSONObject.put("status", i);
             String encodeToString = Base64.encodeToString(jSONObject.toString().getBytes(), 2);
             com.anythink.expressad.atsignalcommon.windvane.h.a();
-            com.anythink.core.express.d.a.a(this.f21833u, f21826n, encodeToString);
+            com.anythink.core.express.d.a.a(this.f22620u, f22613n, encodeToString);
         } catch (Exception e9) {
             e9.printStackTrace();
         }
@@ -68,7 +68,7 @@ public final class l extends e {
             jSONObject.put("pt", str);
             String encodeToString = Base64.encodeToString(jSONObject.toString().getBytes(), 2);
             com.anythink.expressad.atsignalcommon.windvane.h.a();
-            com.anythink.core.express.d.a.a(this.f21833u, f21827o, encodeToString);
+            com.anythink.core.express.d.a.a(this.f22620u, f22614o, encodeToString);
         } catch (Exception e9) {
             e9.printStackTrace();
         }
@@ -79,29 +79,29 @@ public final class l extends e {
         super.a(aVar);
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put(g.a.f12949C, a(aVar.f21695a, aVar.f21696b));
-            jSONObject.put("time", String.valueOf(aVar.f21695a));
-            jSONObject.put("duration", String.valueOf(aVar.f21696b));
+            jSONObject.put(g.a.f13735C, a(aVar.f22482a, aVar.f22483b));
+            jSONObject.put("time", String.valueOf(aVar.f22482a));
+            jSONObject.put("duration", String.valueOf(aVar.f22483b));
             String encodeToString = Base64.encodeToString(jSONObject.toString().getBytes(), 2);
             com.anythink.expressad.atsignalcommon.windvane.h.a();
-            com.anythink.core.express.d.a.a(this.f21833u, f21828p, encodeToString);
+            com.anythink.core.express.d.a.a(this.f22620u, f22615p, encodeToString);
         } catch (Exception e9) {
             e9.printStackTrace();
         }
     }
 
-    private static String a(int i, int i6) {
-        if (i6 != 0) {
-            double d2 = i / i6;
+    private static String a(int i, int i4) {
+        if (i4 != 0) {
+            double d9 = i / i4;
             try {
                 StringBuilder sb = new StringBuilder();
-                sb.append(v.a(Double.valueOf(d2)));
+                sb.append(v.a(Double.valueOf(d9)));
                 return sb.toString();
             } catch (Throwable th) {
                 th.printStackTrace();
             }
         }
-        return String.valueOf(i6);
+        return String.valueOf(i4);
     }
 
     @Override // com.anythink.expressad.video.signal.a.e, com.anythink.expressad.video.signal.g
@@ -114,28 +114,28 @@ public final class l extends e {
             str = "";
         }
         com.anythink.expressad.atsignalcommon.windvane.h.a();
-        com.anythink.core.express.d.a.a(this.f21833u, f21829q, str);
+        com.anythink.core.express.d.a.a(this.f22620u, f22616q, str);
     }
 
     @Override // com.anythink.expressad.video.signal.a.e, com.anythink.expressad.video.signal.g
-    public final void a(int i, int i6, int i9, int i10) {
-        super.a(i, i6, i9, i10);
+    public final void a(int i, int i4, int i6, int i9) {
+        super.a(i, i4, i6, i9);
         try {
             JSONObject jSONObject = new JSONObject();
             JSONObject jSONObject2 = new JSONObject();
-            String str = f21832t;
-            if (i != 2 ? i6 != 2 : i6 == 1) {
-                str = f21831s;
+            String str = f22619t;
+            if (i != 2 ? i4 != 2 : i4 == 1) {
+                str = f22618s;
             }
             jSONObject2.put("orientation", str);
-            jSONObject2.put("screen_width", i9);
-            jSONObject2.put("screen_height", i10);
+            jSONObject2.put("screen_width", i6);
+            jSONObject2.put("screen_height", i9);
             jSONObject.put("data", jSONObject2);
             String encodeToString = Base64.encodeToString(jSONObject.toString().getBytes(), 2);
             com.anythink.expressad.atsignalcommon.windvane.h.a();
-            com.anythink.core.express.d.a.a(this.f21833u, f21830r, encodeToString);
+            com.anythink.core.express.d.a.a(this.f22620u, f22617r, encodeToString);
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.printStackTrace();
             }
         }

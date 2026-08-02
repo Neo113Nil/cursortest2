@@ -1,28 +1,28 @@
 package com.anythink.core.c.a;
 
-import u1.h;
+import com.google.android.gms.internal.ads.Wv;
 
 /* loaded from: classes.dex */
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public double f12030a;
+    public double f12816a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f12031b;
+    public String f12817b;
 
     public d() {
     }
 
     public final String toString() {
         StringBuilder sb = new StringBuilder("RecentLoadedHighPriceInfo{price=");
-        sb.append(this.f12030a);
+        sb.append(this.f12816a);
         sb.append(", adSourceId='");
-        return h.g(sb, this.f12031b, "'}");
+        return Wv.i(sb, this.f12817b, "'}");
     }
 
-    public d(double d2, String str) {
-        this.f12030a = d2;
-        this.f12031b = str;
+    public d(double d9, String str) {
+        this.f12816a = d9;
+        this.f12817b = str;
     }
 }

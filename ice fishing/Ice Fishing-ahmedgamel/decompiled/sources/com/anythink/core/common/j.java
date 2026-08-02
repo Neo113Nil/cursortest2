@@ -9,12 +9,12 @@ public final class j {
     public interface a {
         void a(String str);
 
-        void a(String str, List<bv> list, List<bv> list2, boolean z3);
+        void a(String str, List<bv> list, List<bv> list2, boolean z6);
     }
 
     public interface b {
         void a(a aVar);
 
-        void a(boolean z3);
+        void a(boolean z6);
     }
 }

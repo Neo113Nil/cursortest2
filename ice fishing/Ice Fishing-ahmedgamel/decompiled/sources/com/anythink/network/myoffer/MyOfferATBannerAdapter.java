@@ -22,49 +22,49 @@ import java.util.Map;
 public class MyOfferATBannerAdapter extends CustomBannerAdapter {
 
     /* renamed from: a, reason: collision with root package name */
-    String f23156a;
+    String f23943a;
 
     /* renamed from: b, reason: collision with root package name */
-    x f23157b;
+    x f23944b;
 
     /* renamed from: c, reason: collision with root package name */
-    Map<String, Object> f23158c;
+    Map<String, Object> f23945c;
 
     /* renamed from: d, reason: collision with root package name */
-    private b f23159d;
+    private b f23946d;
 
     /* renamed from: e, reason: collision with root package name */
-    private View f23160e;
+    private View f23947e;
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f23161f = false;
+    private boolean f23948f = false;
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
-        this.f23160e = null;
-        b bVar = this.f23159d;
+        this.f23947e = null;
+        b bVar = this.f23946d;
         if (bVar != null) {
             bVar.a((a) null);
-            this.f23159d.c();
-            this.f23159d = null;
+            this.f23946d.c();
+            this.f23946d = null;
         }
     }
 
     @Override // com.anythink.banner.unitgroup.api.CustomBannerAdapter
     public View getBannerView() {
         b bVar;
-        if (this.f23160e == null && (bVar = this.f23159d) != null && bVar.a()) {
-            this.f23160e = this.f23159d.b();
-            if (this.f23158c == null) {
-                this.f23158c = d.a(this.f23159d);
+        if (this.f23947e == null && (bVar = this.f23946d) != null && bVar.a()) {
+            this.f23947e = this.f23946d.b();
+            if (this.f23945c == null) {
+                this.f23945c = d.a(this.f23946d);
             }
         }
-        return this.f23160e;
+        return this.f23947e;
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public Map<String, Object> getNetworkInfoMap() {
-        return this.f23158c;
+        return this.f23945c;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -74,7 +74,7 @@ public class MyOfferATBannerAdapter extends CustomBannerAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        return this.f23156a;
+        return this.f23943a;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -85,13 +85,13 @@ public class MyOfferATBannerAdapter extends CustomBannerAdapter {
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public boolean initNetworkObjectByPlacementId(Context context, Map<String, Object> map, Map<String, Object> map2) {
         if (map.containsKey("my_oid")) {
-            this.f23156a = map.get("my_oid").toString();
+            this.f23943a = map.get("my_oid").toString();
         }
-        if (map.containsKey(j.w.f12614a)) {
-            this.f23157b = (x) map.get(j.w.f12614a);
+        if (map.containsKey(j.w.f13400a)) {
+            this.f23944b = (x) map.get(j.w.f13400a);
         }
-        if (map.containsKey(r.f16038b)) {
-            this.f23161f = ((Boolean) map.get(r.f16038b)).booleanValue();
+        if (map.containsKey(r.f16825b)) {
+            this.f23948f = ((Boolean) map.get(r.f16825b)).booleanValue();
         }
         a(context);
         return true;
@@ -100,24 +100,24 @@ public class MyOfferATBannerAdapter extends CustomBannerAdapter {
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void loadCustomNetworkAd(Context context, Map<String, Object> map, Map<String, Object> map2) {
         if (map.containsKey("my_oid")) {
-            this.f23156a = map.get("my_oid").toString();
+            this.f23943a = map.get("my_oid").toString();
         }
-        if (map.containsKey(j.w.f12614a)) {
-            this.f23157b = (x) map.get(j.w.f12614a);
+        if (map.containsKey(j.w.f13400a)) {
+            this.f23944b = (x) map.get(j.w.f13400a);
         }
         a(context);
-        this.f23159d.a(new c() { // from class: com.anythink.network.myoffer.MyOfferATBannerAdapter.1
+        this.f23946d.a(new c() { // from class: com.anythink.network.myoffer.MyOfferATBannerAdapter.1
             @Override // com.anythink.basead.g.c
             public final void onAdCacheLoaded() {
                 MyOfferATBannerAdapter myOfferATBannerAdapter = MyOfferATBannerAdapter.this;
-                myOfferATBannerAdapter.f23160e = myOfferATBannerAdapter.f23159d.b();
+                myOfferATBannerAdapter.f23947e = myOfferATBannerAdapter.f23946d.b();
                 MyOfferATBannerAdapter myOfferATBannerAdapter2 = MyOfferATBannerAdapter.this;
-                myOfferATBannerAdapter2.f23158c = d.a(myOfferATBannerAdapter2.f23159d);
+                myOfferATBannerAdapter2.f23945c = d.a(myOfferATBannerAdapter2.f23946d);
                 if (MyOfferATBannerAdapter.this.getTrackingInfo() != null) {
-                    MyOfferATBannerAdapter.this.getTrackingInfo().M(MyOfferATBannerAdapter.this.f23159d.f());
+                    MyOfferATBannerAdapter.this.getTrackingInfo().M(MyOfferATBannerAdapter.this.f23946d.f());
                 }
                 if (((ATBaseAdInternalAdapter) MyOfferATBannerAdapter.this).mLoadListener != null) {
-                    if (MyOfferATBannerAdapter.this.f23160e != null) {
+                    if (MyOfferATBannerAdapter.this.f23947e != null) {
                         ((ATBaseAdInternalAdapter) MyOfferATBannerAdapter.this).mLoadListener.onAdCacheLoaded(new BaseAd[0]);
                     } else {
                         ((ATBaseAdInternalAdapter) MyOfferATBannerAdapter.this).mLoadListener.onAdLoadError("", "MyOffer bannerView = null");
@@ -139,15 +139,15 @@ public class MyOfferATBannerAdapter extends CustomBannerAdapter {
     }
 
     private void a(Context context) {
-        b bVar = new b(context, this.f23157b, this.f23156a, this.f23161f);
-        this.f23159d = bVar;
+        b bVar = new b(context, this.f23944b, this.f23943a, this.f23948f);
+        this.f23946d = bVar;
         bVar.a(new a() { // from class: com.anythink.network.myoffer.MyOfferATBannerAdapter.2
             @Override // com.anythink.basead.g.a
             public final void onAdClick(com.anythink.basead.g.j jVar) {
                 n trackingInfo = MyOfferATBannerAdapter.this.getTrackingInfo();
                 if (trackingInfo != null) {
-                    trackingInfo.I(jVar.f8982a);
-                    trackingInfo.J(jVar.f8983b);
+                    trackingInfo.I(jVar.f9768a);
+                    trackingInfo.J(jVar.f9769b);
                 }
                 CustomBannerEventListener customBannerEventListener = MyOfferATBannerAdapter.this.mImpressionEventListener;
                 if (customBannerEventListener != null) {
@@ -172,7 +172,7 @@ public class MyOfferATBannerAdapter extends CustomBannerAdapter {
             }
 
             @Override // com.anythink.basead.g.a
-            public final void onDeeplinkCallback(boolean z3) {
+            public final void onDeeplinkCallback(boolean z6) {
             }
 
             @Override // com.anythink.basead.g.a

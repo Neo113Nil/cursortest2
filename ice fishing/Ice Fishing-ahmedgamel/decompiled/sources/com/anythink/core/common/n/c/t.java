@@ -4,46 +4,46 @@ package com.anythink.core.common.n.c;
 final class t {
 
     /* renamed from: a, reason: collision with root package name */
-    static final long f15920a = 65536;
+    static final long f16707a = 65536;
 
     /* renamed from: b, reason: collision with root package name */
-    static s f15921b;
+    static s f16708b;
 
     /* renamed from: c, reason: collision with root package name */
-    static long f15922c;
+    static long f16709c;
 
     private t() {
     }
 
     public static s a() {
         synchronized (t.class) {
-            s sVar = f15921b;
+            s sVar = f16708b;
             if (sVar == null) {
                 return new s();
             }
-            f15921b = sVar.f15919h;
-            sVar.f15919h = null;
-            f15922c -= 8192;
+            f16708b = sVar.f16706h;
+            sVar.f16706h = null;
+            f16709c -= 8192;
             return sVar;
         }
     }
 
     public static void a(s sVar) {
-        if (sVar.f15919h == null && sVar.i == null) {
-            if (sVar.f15917f) {
+        if (sVar.f16706h == null && sVar.i == null) {
+            if (sVar.f16704f) {
                 return;
             }
             synchronized (t.class) {
                 try {
-                    long j6 = f15922c;
-                    if (j6 + 8192 > f15920a) {
+                    long j6 = f16709c;
+                    if (j6 + 8192 > f16707a) {
                         return;
                     }
-                    f15922c = j6 + 8192;
-                    sVar.f15919h = f15921b;
-                    sVar.f15916e = 0;
-                    sVar.f15915d = 0;
-                    f15921b = sVar;
+                    f16709c = j6 + 8192;
+                    sVar.f16706h = f16708b;
+                    sVar.f16703e = 0;
+                    sVar.f16702d = 0;
+                    f16708b = sVar;
                     return;
                 } catch (Throwable th) {
                     throw th;

@@ -10,11 +10,11 @@ public final class f {
     private long timestamp;
     private float weight;
 
-    public f(String outcomeId, m mVar, float f3, long j6, long j9) {
+    public f(String outcomeId, m mVar, float f2, long j6, long j9) {
         kotlin.jvm.internal.h.e(outcomeId, "outcomeId");
         this.outcomeId = outcomeId;
         this.outcomeSource = mVar;
-        this.weight = f3;
+        this.weight = f2;
         this.sessionTime = j6;
         this.timestamp = j9;
     }
@@ -55,8 +55,8 @@ public final class f {
         this.timestamp = j6;
     }
 
-    public final void setWeight(float f3) {
-        this.weight = f3;
+    public final void setWeight(float f2) {
+        this.weight = f2;
     }
 
     public final JSONObject toJSONObject() {
@@ -65,13 +65,13 @@ public final class f {
         if (mVar != null) {
             put.put("sources", mVar.toJSONObject());
         }
-        float f3 = this.weight;
-        if (f3 > 0.0f) {
-            put.put("weight", Float.valueOf(f3));
+        float f2 = this.weight;
+        if (f2 > 0.0f) {
+            put.put("weight", Float.valueOf(f2));
         }
         long j6 = this.timestamp;
         if (j6 > 0) {
-            put.put(com.anythink.expressad.foundation.d.d.f18596u, j6);
+            put.put(com.anythink.expressad.foundation.d.d.f19383u, j6);
         }
         long j9 = this.sessionTime;
         if (j9 > 0) {

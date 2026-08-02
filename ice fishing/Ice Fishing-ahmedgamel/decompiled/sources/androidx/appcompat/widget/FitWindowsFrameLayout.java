@@ -4,7 +4,7 @@ import android.content.Context;
 import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
-import m.InterfaceC4708q0;
+import m.InterfaceC4721q0;
 
 /* loaded from: classes.dex */
 public class FitWindowsFrameLayout extends FrameLayout {
@@ -17,6 +17,6 @@ public class FitWindowsFrameLayout extends FrameLayout {
         return super.fitSystemWindows(rect);
     }
 
-    public void setOnFitSystemWindowsListener(InterfaceC4708q0 interfaceC4708q0) {
+    public void setOnFitSystemWindowsListener(InterfaceC4721q0 interfaceC4721q0) {
     }
 }

@@ -4,7 +4,7 @@ package com.anythink.core.common.t;
 public interface a {
     void a(b bVar);
 
-    void a(b bVar, long j6, boolean z3);
+    void a(b bVar, long j6, boolean z6);
 
     void b(b bVar);
 }

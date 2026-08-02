@@ -10,13 +10,13 @@ import android.view.View;
 public class WebProgressBarView extends View {
 
     /* renamed from: a, reason: collision with root package name */
-    int f11992a;
+    int f12778a;
 
     /* renamed from: b, reason: collision with root package name */
-    int f11993b;
+    int f12779b;
 
     /* renamed from: c, reason: collision with root package name */
-    Paint f11994c;
+    Paint f12780c;
 
     public WebProgressBarView(Context context) {
         super(context);
@@ -24,13 +24,13 @@ public class WebProgressBarView extends View {
     }
 
     private void a() {
-        this.f11993b = -14522893;
+        this.f12779b = -14522893;
         Paint paint = new Paint();
-        this.f11994c = paint;
-        paint.setColor(this.f11993b);
-        this.f11994c.setAntiAlias(true);
-        this.f11994c.setDither(true);
-        this.f11992a = 0;
+        this.f12780c = paint;
+        paint.setColor(this.f12779b);
+        this.f12780c.setAntiAlias(true);
+        this.f12780c.setDither(true);
+        this.f12778a = 0;
         setBackgroundColor(16777215);
     }
 
@@ -38,12 +38,12 @@ public class WebProgressBarView extends View {
     public void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         canvas.save();
-        canvas.drawRect(0.0f, 0.0f, (getWidth() * this.f11992a) / 100, getHeight(), this.f11994c);
+        canvas.drawRect(0.0f, 0.0f, (getWidth() * this.f12778a) / 100, getHeight(), this.f12780c);
         canvas.restore();
     }
 
     public void setProgress(int i) {
-        this.f11992a = i;
+        this.f12778a = i;
         postInvalidate();
     }
 

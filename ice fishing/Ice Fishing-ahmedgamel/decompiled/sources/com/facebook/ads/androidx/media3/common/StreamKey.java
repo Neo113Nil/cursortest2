@@ -17,10 +17,10 @@ public final class StreamKey implements Comparable<StreamKey>, Parcelable {
     @Deprecated
     public final int A03;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 78);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 78);
         }
         return new String(copyOfRange);
     }
@@ -48,11 +48,11 @@ public final class StreamKey implements Comparable<StreamKey>, Parcelable {
         };
     }
 
-    public StreamKey(int i, int i6, int i9) {
+    public StreamKey(int i, int i4, int i6) {
         this.A01 = i;
-        this.A00 = i6;
-        this.A02 = i9;
-        this.A03 = i9;
+        this.A00 = i4;
+        this.A02 = i6;
+        this.A03 = i6;
     }
 
     public StreamKey(Parcel parcel) {
@@ -68,19 +68,19 @@ public final class StreamKey implements Comparable<StreamKey>, Parcelable {
     public final int compareTo(StreamKey streamKey) {
         int i = this.A01 - streamKey.A01;
         if (i == 0) {
-            int i6 = this.A00;
+            int i4 = this.A00;
             int result = streamKey.A00;
-            int i9 = i6 - result;
+            int i6 = i4 - result;
             if (A05[3].length() == 16) {
                 throw new RuntimeException();
             }
             A05[4] = "BMcfT7wTTEuICUupPfiGugxRU9d1aBTy";
-            if (i9 == 0) {
-                int i10 = this.A02;
+            if (i6 == 0) {
+                int i9 = this.A02;
                 int result2 = streamKey.A02;
-                return i10 - result2;
+                return i9 - result2;
             }
-            return i9;
+            return i6;
         }
         return i;
     }

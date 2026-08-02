@@ -1,109 +1,110 @@
 package i8;
 
-import com.google.android.gms.internal.ads.C3428jv;
+import com.google.android.gms.internal.ads.C3451jv;
+import com.google.android.gms.internal.ads.WP;
 import java.io.Closeable;
-import q2.C4896n;
+import s2.C4945n;
 
 /* loaded from: classes2.dex */
 public final class v implements Closeable {
 
     /* renamed from: A, reason: collision with root package name */
-    public final m8.i f38244A;
+    public final WP f38363A;
 
     /* renamed from: B, reason: collision with root package name */
-    public final v f38245B;
+    public final v f38364B;
 
     /* renamed from: C, reason: collision with root package name */
-    public final v f38246C;
+    public final v f38365C;
 
     /* renamed from: D, reason: collision with root package name */
-    public final v f38247D;
+    public final v f38366D;
 
     /* renamed from: E, reason: collision with root package name */
-    public final long f38248E;
+    public final long f38367E;
 
     /* renamed from: F, reason: collision with root package name */
-    public final long f38249F;
+    public final long f38368F;
 
     /* renamed from: G, reason: collision with root package name */
-    public final C3428jv f38250G;
+    public final C3451jv f38369G;
 
     /* renamed from: H, reason: collision with root package name */
-    public final A f38251H;
+    public final A f38370H;
 
     /* renamed from: n, reason: collision with root package name */
-    public final C4896n f38252n;
+    public final C4945n f38371n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final s f38253u;
+    public final s f38372u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final String f38254v;
+    public final String f38373v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final int f38255w;
+    public final int f38374w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final k f38256x;
+    public final k f38375x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final l f38257y;
+    public final l f38376y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final x f38258z;
+    public final x f38377z;
 
-    public v(C4896n request, s protocol, String message, int i, k kVar, l lVar, x body, m8.i iVar, v vVar, v vVar2, v vVar3, long j6, long j9, C3428jv c3428jv, A trailersSource) {
+    public v(C4945n request, s protocol, String message, int i, k kVar, l lVar, x body, WP wp, v vVar, v vVar2, v vVar3, long j6, long j9, C3451jv c3451jv, A trailersSource) {
         kotlin.jvm.internal.h.e(request, "request");
         kotlin.jvm.internal.h.e(protocol, "protocol");
         kotlin.jvm.internal.h.e(message, "message");
         kotlin.jvm.internal.h.e(body, "body");
         kotlin.jvm.internal.h.e(trailersSource, "trailersSource");
-        this.f38252n = request;
-        this.f38253u = protocol;
-        this.f38254v = message;
-        this.f38255w = i;
-        this.f38256x = kVar;
-        this.f38257y = lVar;
-        this.f38258z = body;
-        this.f38244A = iVar;
-        this.f38245B = vVar;
-        this.f38246C = vVar2;
-        this.f38247D = vVar3;
-        this.f38248E = j6;
-        this.f38249F = j9;
-        this.f38250G = c3428jv;
-        this.f38251H = trailersSource;
+        this.f38371n = request;
+        this.f38372u = protocol;
+        this.f38373v = message;
+        this.f38374w = i;
+        this.f38375x = kVar;
+        this.f38376y = lVar;
+        this.f38377z = body;
+        this.f38363A = wp;
+        this.f38364B = vVar;
+        this.f38365C = vVar2;
+        this.f38366D = vVar3;
+        this.f38367E = j6;
+        this.f38368F = j9;
+        this.f38369G = c3451jv;
+        this.f38370H = trailersSource;
     }
 
     public final u b() {
         u uVar = new u();
-        uVar.f38232c = -1;
-        uVar.f38236g = x.f38261n;
-        uVar.f38243o = A.f38066a;
-        uVar.f38230a = this.f38252n;
-        uVar.f38231b = this.f38253u;
-        uVar.f38232c = this.f38255w;
-        uVar.f38233d = this.f38254v;
-        uVar.f38234e = this.f38256x;
-        uVar.f38235f = this.f38257y.d();
-        uVar.f38236g = this.f38258z;
-        uVar.f38237h = this.f38244A;
-        uVar.i = this.f38245B;
-        uVar.f38238j = this.f38246C;
-        uVar.f38239k = this.f38247D;
-        uVar.f38240l = this.f38248E;
-        uVar.f38241m = this.f38249F;
-        uVar.f38242n = this.f38250G;
-        uVar.f38243o = this.f38251H;
+        uVar.f38351c = -1;
+        uVar.f38355g = x.f38380n;
+        uVar.f38362o = A.f38185a;
+        uVar.f38349a = this.f38371n;
+        uVar.f38350b = this.f38372u;
+        uVar.f38351c = this.f38374w;
+        uVar.f38352d = this.f38373v;
+        uVar.f38353e = this.f38375x;
+        uVar.f38354f = this.f38376y.d();
+        uVar.f38355g = this.f38377z;
+        uVar.f38356h = this.f38363A;
+        uVar.i = this.f38364B;
+        uVar.f38357j = this.f38365C;
+        uVar.f38358k = this.f38366D;
+        uVar.f38359l = this.f38367E;
+        uVar.f38360m = this.f38368F;
+        uVar.f38361n = this.f38369G;
+        uVar.f38362o = this.f38370H;
         return uVar;
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
-        this.f38258z.close();
+        this.f38377z.close();
     }
 
     public final String toString() {
-        return "Response{protocol=" + this.f38253u + ", code=" + this.f38255w + ", message=" + this.f38254v + ", url=" + ((n) this.f38252n.f40192u) + '}';
+        return "Response{protocol=" + this.f38372u + ", code=" + this.f38374w + ", message=" + this.f38373v + ", url=" + ((n) this.f38371n.f40491u) + '}';
     }
 }

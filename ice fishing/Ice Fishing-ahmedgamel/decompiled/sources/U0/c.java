@@ -4,14 +4,14 @@ package U0;
 public final class c {
 
     /* renamed from: b, reason: collision with root package name */
-    public static final c f3139b = new c(new b("Failure occurred while trying to finish a future.", 0));
+    public static final c f3256b = new c(new b("Failure occurred while trying to finish a future.", 0));
 
     /* renamed from: a, reason: collision with root package name */
-    public final Throwable f3140a;
+    public final Throwable f3257a;
 
     public c(Throwable th) {
-        boolean z3 = i.f3155w;
+        boolean z6 = i.f3272w;
         th.getClass();
-        this.f3140a = th;
+        this.f3257a = th;
     }
 }

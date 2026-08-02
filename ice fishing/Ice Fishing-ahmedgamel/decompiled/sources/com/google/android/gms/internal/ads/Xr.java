@@ -10,25 +10,25 @@ import org.json.JSONObject;
 public final class Xr implements Os {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f28589a;
+    public final /* synthetic */ int f29370a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final ArrayList f28590b;
+    public final ArrayList f29371b;
 
     public /* synthetic */ Xr(int i, ArrayList arrayList) {
-        this.f28589a = i;
-        this.f28590b = arrayList;
+        this.f29370a = i;
+        this.f29371b = arrayList;
     }
 
     @Override // com.google.android.gms.internal.ads.Os
     public final void a(Object obj) {
-        switch (this.f28589a) {
+        switch (this.f29370a) {
             case 0:
-                ((Bundle) obj).putStringArrayList("ad_types", this.f28590b);
+                ((Bundle) obj).putStringArrayList("ad_types", this.f29371b);
                 break;
             case 1:
                 Bundle bundle = (Bundle) obj;
-                ArrayList arrayList = this.f28590b;
+                ArrayList arrayList = this.f29371b;
                 if (arrayList != null) {
                     bundle.putStringArrayList("android_permissions", new ArrayList<>(arrayList));
                     break;
@@ -36,10 +36,10 @@ public final class Xr implements Os {
                 break;
             default:
                 try {
-                    ((JSONObject) obj).put("eid", TextUtils.join(",", this.f28590b));
+                    ((JSONObject) obj).put("eid", TextUtils.join(",", this.f29371b));
                     break;
                 } catch (JSONException unused) {
-                    u2.z.k("Failed putting experiment ids.");
+                    w2.z.k("Failed putting experiment ids.");
                 }
         }
     }

@@ -1,33 +1,33 @@
 package com.google.android.gms.ads;
 
-import P2.w;
+import R2.w;
 import android.content.Context;
 import android.os.RemoteException;
 import android.text.TextUtils;
-import k2.r;
-import k2.t;
-import q2.C4892l;
-import q2.C4900p;
-import q2.H0;
-import q2.InterfaceC4883g0;
-import q2.J0;
-import q2.W0;
-import v2.i;
+import m2.r;
+import m2.t;
+import s2.C4941l;
+import s2.C4949p;
+import s2.H0;
+import s2.InterfaceC4932g0;
+import s2.J0;
+import s2.W0;
+import x2.i;
 
 /* loaded from: classes.dex */
 public class MobileAds {
     public static void a(Context context) {
         J0 c9 = J0.c();
-        synchronized (c9.f40061h) {
+        synchronized (c9.f40360h) {
             if (c9.i == null) {
-                c9.i = (InterfaceC4883g0) new C4892l(C4900p.f40199g.f40201b, context).d(context, false);
+                c9.i = (InterfaceC4932g0) new C4941l(C4949p.f40498g.f40500b, context).d(context, false);
             }
-            InterfaceC4883g0 interfaceC4883g0 = c9.i;
-            if (interfaceC4883g0 == null) {
+            InterfaceC4932g0 interfaceC4932g0 = c9.i;
+            if (interfaceC4932g0 == null) {
                 return;
             }
             try {
-                interfaceC4883g0.C();
+                interfaceC4932g0.C();
             } catch (RemoteException unused) {
                 i.c("Unable to disable mediation adapter initialization.");
             }
@@ -47,16 +47,16 @@ public class MobileAds {
         }
     }
 
-    public static void c(boolean z3) {
+    public static void c(boolean z6) {
         J0 c9 = J0.c();
-        synchronized (c9.f40061h) {
+        synchronized (c9.f40360h) {
             w.j("MobileAds.initialize() must be called prior to setting app muted state.", c9.i != null);
-            InterfaceC4883g0 interfaceC4883g0 = c9.i;
-            if (interfaceC4883g0 == null) {
+            InterfaceC4932g0 interfaceC4932g0 = c9.i;
+            if (interfaceC4932g0 == null) {
                 return;
             }
             try {
-                interfaceC4883g0.Z(z3);
+                interfaceC4932g0.Z(z6);
             } catch (RemoteException e9) {
                 i.d("Unable to set app mute state.", e9);
             }
@@ -66,17 +66,17 @@ public class MobileAds {
     public static void d(r rVar) {
         J0 c9 = J0.c();
         c9.getClass();
-        synchronized (c9.f40061h) {
+        synchronized (c9.f40360h) {
             try {
-                r rVar2 = c9.f40062j;
-                c9.f40062j = rVar;
-                InterfaceC4883g0 interfaceC4883g0 = c9.i;
-                if (interfaceC4883g0 == null) {
+                r rVar2 = c9.f40361j;
+                c9.f40361j = rVar;
+                InterfaceC4932g0 interfaceC4932g0 = c9.i;
+                if (interfaceC4932g0 == null) {
                     return;
                 }
-                if (rVar2.f38607a != rVar.f38607a && interfaceC4883g0 != null) {
+                if (rVar2.f39396a != rVar.f39396a && interfaceC4932g0 != null) {
                     try {
-                        interfaceC4883g0.i2(new W0(rVar));
+                        interfaceC4932g0.W1(new W0(rVar));
                     } catch (RemoteException e9) {
                         i.d("Unable to set request configuration parcel.", e9);
                     }
@@ -89,14 +89,14 @@ public class MobileAds {
 
     private static void setPlugin(String str) {
         J0 c9 = J0.c();
-        synchronized (c9.f40061h) {
+        synchronized (c9.f40360h) {
             w.j("MobileAds.initialize() must be called prior to setting the plugin.", c9.i != null);
-            InterfaceC4883g0 interfaceC4883g0 = c9.i;
-            if (interfaceC4883g0 == null) {
+            InterfaceC4932g0 interfaceC4932g0 = c9.i;
+            if (interfaceC4932g0 == null) {
                 return;
             }
             try {
-                interfaceC4883g0.U(str);
+                interfaceC4932g0.U(str);
             } catch (RemoteException e9) {
                 i.d("Unable to set plugin.", e9);
             }
@@ -105,35 +105,35 @@ public class MobileAds {
 
     private static void stop() {
         J0 c9 = J0.c();
-        synchronized (c9.f40057d) {
-            c9.f40060g = false;
-            c9.f40059f = false;
-            c9.f40058e.clear();
+        synchronized (c9.f40356d) {
+            c9.f40359g = false;
+            c9.f40358f = false;
+            c9.f40357e.clear();
         }
-        synchronized (c9.f40061h) {
+        synchronized (c9.f40360h) {
             try {
-                InterfaceC4883g0 interfaceC4883g0 = c9.i;
-                if (interfaceC4883g0 != null) {
-                    interfaceC4883g0.r1();
+                InterfaceC4932g0 interfaceC4932g0 = c9.i;
+                if (interfaceC4932g0 != null) {
+                    interfaceC4932g0.q1();
                 }
             } catch (RemoteException e9) {
                 i.d("Unable to stop the SDK.", e9);
             }
             c9.i = null;
-            H0 h02 = c9.f40054a;
+            H0 h02 = c9.f40353a;
             if (h02 != null) {
                 h02.q();
-                c9.f40054a = null;
+                c9.f40353a = null;
             }
-            H0 h03 = c9.f40055b;
+            H0 h03 = c9.f40354b;
             if (h03 != null) {
                 h03.q();
-                c9.f40055b = null;
+                c9.f40354b = null;
             }
-            H0 h04 = c9.f40056c;
+            H0 h04 = c9.f40355c;
             if (h04 != null) {
                 h04.q();
-                c9.f40056c = null;
+                c9.f40355c = null;
             }
         }
     }

@@ -9,7 +9,7 @@ import java.util.Map;
 
 @MetaExoPlayerCustomization("non-final in Fb vs final in Exo since TigonDataSource uses FailoverStreamDryException that extends this exception")
 /* loaded from: assets/audience_network/classes2.dex */
-public class AK extends C2326p5 {
+public class AK extends C2346p5 {
     public static byte[] A04;
     public final int A00;
     public final String A01;
@@ -20,10 +20,10 @@ public class AK extends C2326p5 {
         A02();
     }
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 101);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 101);
         }
         return new String(copyOfRange);
     }
@@ -32,8 +32,8 @@ public class AK extends C2326p5 {
         A04 = new byte[]{16, 39, 49, 50, 45, 44, 49, 39, 98, 33, 45, 38, 39, 120, 98};
     }
 
-    public AK(int i, String str, IOException iOException, Map<String, List<String>> map, C06605i c06605i, byte[] bArr) {
-        super(A01(0, 15, 39) + i, iOException, c06605i, AdError.INTERNAL_ERROR_2004, 1);
+    public AK(int i, String str, IOException iOException, Map<String, List<String>> map, C06805i c06805i, byte[] bArr) {
+        super(A01(0, 15, 39) + i, iOException, c06805i, AdError.INTERNAL_ERROR_2004, 1);
         this.A00 = i;
         this.A01 = str;
         this.A02 = map;

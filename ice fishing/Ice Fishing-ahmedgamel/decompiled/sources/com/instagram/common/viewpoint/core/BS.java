@@ -9,24 +9,24 @@ import javax.annotation.CheckForNull;
 
 @ElementTypesAreNonnullByDefault
 /* loaded from: assets/audience_network/classes2.dex */
-public abstract class BS<K, V> extends AbstractC2272oD implements Map<K, V> {
+public abstract class BS<K, V> extends AbstractC2292oD implements Map<K, V> {
     public abstract Map<K, V> A05();
 
     public abstract boolean containsValue(@CheckForNull Object value);
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BS != com.google.common.collect.ForwardingMap<K, V> */
     public final int A04() {
-        return AbstractC2423qj.A00(entrySet());
+        return AbstractC2443qj.A00(entrySet());
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BS != com.google.common.collect.ForwardingMap<K, V> */
     public final boolean A06(@CheckForNull Object value) {
-        return AbstractC2370po.A0A(this, value);
+        return AbstractC2390po.A0A(this, value);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BS != com.google.common.collect.ForwardingMap<K, V> */
     public final boolean A07(@CheckForNull Object object) {
-        return AbstractC2370po.A0B(this, object);
+        return AbstractC2390po.A0B(this, object);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BS != com.google.common.collect.ForwardingMap<K, V> */

@@ -4,5 +4,5 @@ import android.view.View;
 
 /* loaded from: classes.dex */
 public interface u {
-    boolean a(View view);
+    boolean f(View view);
 }

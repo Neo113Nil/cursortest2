@@ -7,11 +7,11 @@ import com.anythink.core.common.l.f.a.a;
 public final class f extends a implements com.anythink.core.common.l.c.a.e {
 
     /* renamed from: b, reason: collision with root package name */
-    private com.anythink.core.common.l.f.a.a f9505b;
+    private com.anythink.core.common.l.f.a.a f10291b;
 
     @Override // com.anythink.core.common.l.c.a.e
     public final void a(Activity activity, com.anythink.core.basead.b.c cVar, a.InterfaceC0084a interfaceC0084a) {
-        com.anythink.core.common.l.f.a.a aVar = this.f9505b;
+        com.anythink.core.common.l.f.a.a aVar = this.f10291b;
         if (aVar != null) {
             aVar.a(activity, cVar, interfaceC0084a);
         }
@@ -19,6 +19,6 @@ public final class f extends a implements com.anythink.core.common.l.c.a.e {
 
     @Override // com.anythink.core.common.l.c.a.e
     public final void a(com.anythink.core.common.l.f.a.a aVar) {
-        this.f9505b = aVar;
+        this.f10291b = aVar;
     }
 }

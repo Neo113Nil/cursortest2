@@ -8,7 +8,7 @@ public interface DT {
 
     void ACR() throws IOException;
 
-    int AHP(C07036z c07036z, C2321p0 c2321p0, int i);
+    int AHP(C07236z c07236z, C2341p0 c2341p0, int i);
 
     int AK2(long j6);
 }

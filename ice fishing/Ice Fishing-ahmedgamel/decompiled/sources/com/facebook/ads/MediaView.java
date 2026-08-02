@@ -56,7 +56,7 @@ public class MediaView extends AdNativeComponentView {
     }
 
     public void repair(Throwable th) {
-        post(new G0.c(21, this));
+        post(new G0.c(23, this));
     }
 
     public void setListener(MediaViewListener mediaViewListener) {
@@ -77,8 +77,8 @@ public class MediaView extends AdNativeComponentView {
         initializeSelf(new AdViewConstructorParams(context, attributeSet, i));
     }
 
-    public MediaView(Context context, AttributeSet attributeSet, int i, int i6) {
-        super(context, attributeSet, i, i6);
-        initializeSelf(new AdViewConstructorParams(context, attributeSet, i, i6));
+    public MediaView(Context context, AttributeSet attributeSet, int i, int i4) {
+        super(context, attributeSet, i, i4);
+        initializeSelf(new AdViewConstructorParams(context, attributeSet, i, i4));
     }
 }

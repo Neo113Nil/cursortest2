@@ -1,16 +1,16 @@
 package com.onesignal.user.internal.backend.impl;
 
-import D.y;
+import D.x;
 import com.onesignal.core.internal.http.impl.e;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import kotlin.jvm.internal.h;
 import org.json.JSONObject;
-import t4.C5040a;
+import t4.C5041a;
 import u7.v;
 import v7.t;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class a implements Q5.b {
@@ -21,8 +21,8 @@ public final class a implements Q5.b {
         int label;
         /* synthetic */ Object result;
 
-        public C0246a(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public C0246a(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -37,8 +37,8 @@ public final class a implements Q5.b {
         int label;
         /* synthetic */ Object result;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -62,30 +62,30 @@ public final class a implements Q5.b {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object deleteAlias(String str, String str2, String str3, String str4, String str5, InterfaceC5267d interfaceC5267d) {
+    public Object deleteAlias(String str, String str2, String str3, String str4, String str5, InterfaceC5240d interfaceC5240d) {
         C0246a c0246a;
         int i;
         E4.a aVar;
-        if (interfaceC5267d instanceof C0246a) {
-            c0246a = (C0246a) interfaceC5267d;
-            int i6 = c0246a.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                c0246a.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof C0246a) {
+            c0246a = (C0246a) interfaceC5240d;
+            int i4 = c0246a.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                c0246a.label = i4 - Integer.MIN_VALUE;
                 Object obj = c0246a.result;
-                A7.a aVar2 = A7.a.f58n;
+                A7.a aVar2 = A7.a.f215n;
                 i = c0246a.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     E4.c cVar = this._httpClient;
                     StringBuilder sb = new StringBuilder("apps/");
                     sb.append(str);
                     sb.append("/users/by/");
                     sb.append(str2);
                     sb.append('/');
-                    String s9 = y.s(sb, str3, "/identity/", str4);
+                    String p9 = x.p(sb, str3, "/identity/", str4);
                     e eVar = new e(null, null, null, null, str5, 15, null);
                     c0246a.label = 1;
-                    obj = cVar.delete(s9, eVar, c0246a);
+                    obj = cVar.delete(p9, eVar, c0246a);
                     if (obj == aVar2) {
                         return aVar2;
                     }
@@ -93,18 +93,18 @@ public final class a implements Q5.b {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 aVar = (E4.a) obj;
                 if (aVar.isSuccess()) {
-                    throw new C5040a(aVar.getStatusCode(), aVar.getPayload(), aVar.getRetryAfterSeconds());
+                    throw new C5041a(aVar.getStatusCode(), aVar.getPayload(), aVar.getRetryAfterSeconds());
                 }
-                return v.f41353a;
+                return v.f41073a;
             }
         }
-        c0246a = new C0246a(interfaceC5267d);
+        c0246a = new C0246a(interfaceC5240d);
         Object obj2 = c0246a.result;
-        A7.a aVar22 = A7.a.f58n;
+        A7.a aVar22 = A7.a.f215n;
         i = c0246a.label;
         if (i != 0) {
         }
@@ -121,20 +121,20 @@ public final class a implements Q5.b {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object setAlias(String str, String str2, String str3, Map<String, String> map, String str4, InterfaceC5267d interfaceC5267d) {
+    public Object setAlias(String str, String str2, String str3, Map<String, String> map, String str4, InterfaceC5240d interfaceC5240d) {
         b bVar;
         int i;
         E4.a aVar;
-        if (interfaceC5267d instanceof b) {
-            bVar = (b) interfaceC5267d;
-            int i6 = bVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                bVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof b) {
+            bVar = (b) interfaceC5240d;
+            int i4 = bVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                bVar.label = i4 - Integer.MIN_VALUE;
                 Object obj = bVar.result;
-                A7.a aVar2 = A7.a.f58n;
+                A7.a aVar2 = A7.a.f215n;
                 i = bVar.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     JSONObject put = new JSONObject().put(U5.c.IDENTITY_NAME_SPACE, com.onesignal.common.e.putMap(new JSONObject(), map));
                     h.b(put);
                     e eVar = new e(null, null, null, null, str4, 15, null);
@@ -147,18 +147,18 @@ public final class a implements Q5.b {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 aVar = (E4.a) obj;
                 if (aVar.isSuccess()) {
-                    throw new C5040a(aVar.getStatusCode(), aVar.getPayload(), aVar.getRetryAfterSeconds());
+                    throw new C5041a(aVar.getStatusCode(), aVar.getPayload(), aVar.getRetryAfterSeconds());
                 }
                 String payload = aVar.getPayload();
                 h.b(payload);
                 JSONObject jSONObject = new JSONObject(payload).getJSONObject(U5.c.IDENTITY_NAME_SPACE);
                 h.d(jSONObject, "getJSONObject(...)");
                 Map<String, Object> map2 = com.onesignal.common.e.toMap(jSONObject);
-                LinkedHashMap linkedHashMap = new LinkedHashMap(t.P(map2.size()));
+                LinkedHashMap linkedHashMap = new LinkedHashMap(t.t(map2.size()));
                 Iterator<T> it = map2.entrySet().iterator();
                 while (it.hasNext()) {
                     Map.Entry entry = (Map.Entry) it.next();
@@ -167,9 +167,9 @@ public final class a implements Q5.b {
                 return linkedHashMap;
             }
         }
-        bVar = new b(interfaceC5267d);
+        bVar = new b(interfaceC5240d);
         Object obj2 = bVar.result;
-        A7.a aVar22 = A7.a.f58n;
+        A7.a aVar22 = A7.a.f215n;
         i = bVar.label;
         if (i != 0) {
         }

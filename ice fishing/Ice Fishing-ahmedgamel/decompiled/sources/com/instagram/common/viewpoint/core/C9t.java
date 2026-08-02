@@ -22,8 +22,8 @@ public abstract class C9t extends Timeline {
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Timeline
-    public int A08(int i, int i6, boolean z3) {
-        return this.A00.A08(i, i6, z3);
+    public int A08(int i, int i4, boolean z6) {
+        return this.A00.A08(i, i4, z6);
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Timeline
@@ -32,23 +32,23 @@ public abstract class C9t extends Timeline {
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Timeline
-    public final int A0B(boolean z3) {
-        return this.A00.A0B(z3);
+    public final int A0B(boolean z6) {
+        return this.A00.A0B(z6);
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Timeline
-    public final int A0C(boolean z3) {
-        return this.A00.A0C(z3);
+    public final int A0C(boolean z6) {
+        return this.A00.A0C(z6);
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Timeline
-    public C2367pl A0I(int i, C2367pl c2367pl, boolean z3) {
-        return this.A00.A0I(i, c2367pl, z3);
+    public C2387pl A0I(int i, C2387pl c2387pl, boolean z6) {
+        return this.A00.A0I(i, c2387pl, z6);
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Timeline
-    public C2365pj A0L(int i, C2365pj c2365pj, long j6) {
-        return this.A00.A0L(i, c2365pj, j6);
+    public C2385pj A0L(int i, C2385pj c2385pj, long j6) {
+        return this.A00.A0L(i, c2385pj, j6);
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Timeline

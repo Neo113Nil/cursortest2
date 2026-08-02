@@ -19,10 +19,10 @@ import java.util.ArrayList;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    private static String f17817a = "ResManager";
+    private static String f18604a = "ResManager";
 
     /* renamed from: b, reason: collision with root package name */
-    private static int f17818b = 1;
+    private static int f18605b = 1;
 
     public interface a {
         void a();
@@ -49,35 +49,35 @@ public final class d {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static boolean a(ATNativeAdvancedView aTNativeAdvancedView, com.anythink.expressad.foundation.d.d dVar, String str, String str2, int i, a aVar) {
-        boolean z3;
         boolean z6;
-        boolean z9 = false;
+        boolean z9;
+        boolean z10 = false;
         if (dVar != null) {
             aTNativeAdvancedView.clearResState();
             if (TextUtils.isEmpty(dVar.T())) {
-                z6 = true;
+                z9 = true;
             } else {
-                z6 = e.a().a(com.anythink.expressad.foundation.g.a.bb, str2, dVar.B());
+                z9 = e.a().a(com.anythink.expressad.foundation.g.a.bb, str2, dVar.B());
             }
             aTNativeAdvancedView.setVideoReady(true);
-            boolean z10 = z6;
+            boolean z11 = z9;
             if (!TextUtils.isEmpty(dVar.J()) && !aTNativeAdvancedView.isEndCardReady() && !TextUtils.isEmpty(i.a().b(dVar.J()))) {
                 aTNativeAdvancedView.setEndCardReady(true);
             }
             if (TextUtils.isEmpty(dVar.b()) || aTNativeAdvancedView.isH5Ready()) {
-                z3 = false;
+                z6 = false;
             } else {
                 String b9 = i.a().b(dVar.b());
                 if (TextUtils.isEmpty(b9)) {
-                    z3 = false;
-                    z10 = false;
+                    z6 = false;
+                    z11 = false;
                 } else if (com.anythink.expressad.advanced.a.a.b(dVar.aa())) {
                     aTNativeAdvancedView.setH5Ready(true);
-                    z3 = false;
-                    z10 = true;
+                    z6 = false;
+                    z11 = true;
                 } else {
                     a(aTNativeAdvancedView, b9, dVar, str, str2, i, aVar);
-                    z3 = true;
+                    z6 = true;
                 }
             }
             if (TextUtils.isEmpty(dVar.b()) && !TextUtils.isEmpty(dVar.c()) && !aTNativeAdvancedView.isH5Ready()) {
@@ -88,21 +88,21 @@ public final class d {
                         if (dVar.I()) {
                             aTNativeAdvancedView.setVideoReady(true);
                         }
-                        z9 = true;
+                        z10 = true;
                     } else {
                         a(aTNativeAdvancedView, a9, dVar, str, str2, i, aVar);
-                        z3 = true;
+                        z6 = true;
                     }
                 }
             }
-            z9 = z10;
+            z10 = z11;
         } else {
-            z3 = false;
+            z6 = false;
         }
-        if (z9 && !z3) {
+        if (z10 && !z6) {
             aVar.a();
         }
-        return z9;
+        return z10;
     }
 
     private static void a(ATNativeAdvancedView aTNativeAdvancedView, String str, com.anythink.expressad.foundation.d.d dVar, String str2, String str3, int i) {
@@ -133,8 +133,8 @@ public final class d {
             }
 
             @Override // com.anythink.expressad.atsignalcommon.b.b, com.anythink.core.express.web.c
-            public final void onReceivedError(WebView webView, int i6, String str4, String str5) {
-                super.onReceivedError(webView, i6, str4, str5);
+            public final void onReceivedError(WebView webView, int i4, String str4, String str5) {
+                super.onReceivedError(webView, i4, str4, str5);
                 aTNativeAdvancedView.setH5Ready(false);
                 a aVar2 = aVar;
                 if (aVar2 != null) {
@@ -153,9 +153,9 @@ public final class d {
             }
 
             @Override // com.anythink.expressad.atsignalcommon.b.b, com.anythink.core.express.web.c
-            public final void readyState(WebView webView, int i6) {
-                super.readyState(webView, i6);
-                if (i6 == 1) {
+            public final void readyState(WebView webView, int i4) {
+                super.readyState(webView, i4);
+                if (i4 == 1) {
                     com.anythink.expressad.advanced.a.a.a(com.anythink.expressad.foundation.d.d.this.aa());
                     aTNativeAdvancedView.setH5Ready(true);
                 } else {
@@ -208,7 +208,7 @@ public final class d {
         if (isVideoReady && TextUtils.isEmpty(dVar.b()) && !TextUtils.isEmpty(dVar.c())) {
             isVideoReady = com.anythink.expressad.advanced.a.a.b(dVar.aa());
         }
-        boolean z3 = (TextUtils.isEmpty(dVar.b()) && TextUtils.isEmpty(dVar.c())) ? false : isVideoReady;
-        return (!z3 || TextUtils.isEmpty(dVar.J())) ? z3 : aTNativeAdvancedView.isEndCardReady();
+        boolean z6 = (TextUtils.isEmpty(dVar.b()) && TextUtils.isEmpty(dVar.c())) ? false : isVideoReady;
+        return (!z6 || TextUtils.isEmpty(dVar.J())) ? z6 : aTNativeAdvancedView.isEndCardReady();
     }
 }

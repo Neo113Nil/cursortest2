@@ -4,81 +4,81 @@ package com.anythink.expressad.videocommon.e;
 public final class b {
 
     /* renamed from: A, reason: collision with root package name */
-    public static final String f22364A = "vcct";
+    public static final String f23151A = "vcct";
 
     /* renamed from: B, reason: collision with root package name */
-    public static final String f22365B = "aqn";
+    public static final String f23152B = "aqn";
 
     /* renamed from: C, reason: collision with root package name */
-    public static final String f22366C = "acn";
+    public static final String f23153C = "acn";
 
     /* renamed from: D, reason: collision with root package name */
-    public static final String f22367D = "vcn";
+    public static final String f23154D = "vcn";
 
     /* renamed from: E, reason: collision with root package name */
-    public static final String f22368E = "cbp";
+    public static final String f23155E = "cbp";
 
     /* renamed from: F, reason: collision with root package name */
-    public static final String f22369F = "ttc_type";
+    public static final String f23156F = "ttc_type";
 
     /* renamed from: G, reason: collision with root package name */
-    public static final String f22370G = "offset";
+    public static final String f23157G = "offset";
 
     /* renamed from: H, reason: collision with root package name */
-    public static final String f22371H = "dlnet";
+    public static final String f23158H = "dlnet";
 
     /* renamed from: I, reason: collision with root package name */
-    public static final String f22372I = "rdrct";
+    public static final String f23159I = "rdrct";
     public static final String J = "tv_start";
 
     /* renamed from: K, reason: collision with root package name */
-    public static final String f22373K = "tv_end";
+    public static final String f23160K = "tv_end";
 
     /* renamed from: L, reason: collision with root package name */
-    public static final String f22374L = "ready_rate";
+    public static final String f23161L = "ready_rate";
 
     /* renamed from: M, reason: collision with root package name */
-    public static final String f22375M = "cd_rate";
+    public static final String f23162M = "cd_rate";
 
     /* renamed from: N, reason: collision with root package name */
-    public static final String f22376N = "orientation";
+    public static final String f23163N = "orientation";
 
     /* renamed from: O, reason: collision with root package name */
-    public static final String f22377O = "daily_play_cap";
+    public static final String f23164O = "daily_play_cap";
 
     /* renamed from: P, reason: collision with root package name */
-    public static final String f22378P = "video_skip_time";
+    public static final String f23165P = "video_skip_time";
 
     /* renamed from: Q, reason: collision with root package name */
-    public static final String f22379Q = "video_skip_result";
+    public static final String f23166Q = "video_skip_result";
 
     /* renamed from: R, reason: collision with root package name */
-    public static final String f22380R = "video_interactive_type";
+    public static final String f23167R = "video_interactive_type";
 
     /* renamed from: S, reason: collision with root package name */
-    public static final String f22381S = "close_button_delay";
+    public static final String f23168S = "close_button_delay";
 
     /* renamed from: T, reason: collision with root package name */
-    public static final String f22382T = "playclosebtn_tm";
+    public static final String f23169T = "playclosebtn_tm";
 
     /* renamed from: U, reason: collision with root package name */
-    public static final int f22383U = -1;
+    public static final int f23170U = -1;
 
     /* renamed from: V, reason: collision with root package name */
-    public static final String f22384V = "play_ctdown";
+    public static final String f23171V = "play_ctdown";
 
     /* renamed from: W, reason: collision with root package name */
-    public static final int f22385W = 0;
+    public static final int f23172W = 0;
 
     /* renamed from: X, reason: collision with root package name */
-    public static final String f22386X = "close_alert";
+    public static final String f23173X = "close_alert";
     public static final int Y = 0;
 
     /* renamed from: Z, reason: collision with root package name */
-    public static final int f22387Z = 20;
+    public static final int f23174Z = 20;
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f22388a = "caplist";
+    public static final String f23175a = "caplist";
     public static final String aA = "placementid";
     public static final int aB = 70;
     public static final String aC = "load_global_timeout";
@@ -124,75 +124,75 @@ public final class b {
     public static final String az = "atzu";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f22389b = "reward";
+    public static final String f23176b = "reward";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f22390c = "unitId";
+    public static final String f23177c = "unitId";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final String f22391d = "unitSetting";
+    public static final String f23178d = "unitSetting";
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f22392e = "adSourceList";
+    public static final String f23179e = "adSourceList";
 
     /* renamed from: f, reason: collision with root package name */
-    public static final String f22393f = "current_time";
+    public static final String f23180f = "current_time";
 
     /* renamed from: g, reason: collision with root package name */
-    public static final String f22394g = "callbackType";
+    public static final String f23181g = "callbackType";
 
     /* renamed from: h, reason: collision with root package name */
-    public static final String f22395h = "endscreen_type";
+    public static final String f23182h = "endscreen_type";
     public static final String i = "8";
 
     /* renamed from: j, reason: collision with root package name */
-    public static final String f22396j = "9";
+    public static final String f23183j = "9";
 
     /* renamed from: k, reason: collision with root package name */
-    public static final String f22397k = "1";
+    public static final String f23184k = "1";
 
     /* renamed from: l, reason: collision with root package name */
-    public static final int f22398l = 1000;
+    public static final int f23185l = 1000;
 
     /* renamed from: m, reason: collision with root package name */
-    public static final int f22399m = 5;
+    public static final int f23186m = 5;
 
     /* renamed from: n, reason: collision with root package name */
-    public static final int f22400n = 100;
+    public static final int f23187n = 100;
 
     /* renamed from: o, reason: collision with root package name */
-    public static final String f22401o = "name";
+    public static final String f23188o = "name";
 
     /* renamed from: p, reason: collision with root package name */
-    public static final String f22402p = "amount";
+    public static final String f23189p = "amount";
 
     /* renamed from: q, reason: collision with root package name */
-    public static final String f22403q = "id";
+    public static final String f23190q = "id";
 
     /* renamed from: r, reason: collision with root package name */
-    public static final String f22404r = "id";
+    public static final String f23191r = "id";
 
     /* renamed from: s, reason: collision with root package name */
-    public static final String f22405s = "timeout";
+    public static final String f23192s = "timeout";
 
     /* renamed from: t, reason: collision with root package name */
-    public static final String f22406t = "params";
+    public static final String f23193t = "params";
 
     /* renamed from: u, reason: collision with root package name */
-    public static final String f22407u = "appId";
+    public static final String f23194u = "appId";
 
     /* renamed from: v, reason: collision with root package name */
-    public static final String f22408v = "placementId";
+    public static final String f23195v = "placementId";
 
     /* renamed from: w, reason: collision with root package name */
-    public static final String f22409w = "getpf";
+    public static final String f23196w = "getpf";
 
     /* renamed from: x, reason: collision with root package name */
-    public static final String f22410x = "ruct";
+    public static final String f23197x = "ruct";
 
     /* renamed from: y, reason: collision with root package name */
-    public static final String f22411y = "plct";
+    public static final String f23198y = "plct";
 
     /* renamed from: z, reason: collision with root package name */
-    public static final String f22412z = "dlct";
+    public static final String f23199z = "dlct";
 }

@@ -4,34 +4,34 @@ package com.google.android.gms.internal.ads;
 public final class M4 {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f26239a;
+    public int f27030a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f26240b;
+    public int f27031b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f26241c;
+    public int f27032c;
 
     /* renamed from: d, reason: collision with root package name */
-    public int f26242d;
+    public int f27033d;
 
     /* renamed from: e, reason: collision with root package name */
-    public int f26243e;
+    public int f27034e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final Cloneable f26244f;
+    public final Cloneable f27035f;
 
     public M4() {
-        this.f26244f = new C3858ru();
+        this.f27035f = new C3881ru();
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    public M4(int i, int i6, int i9, int i10, int i11, byte[] bArr, int i12) {
-        this.f26239a = i6;
-        this.f26240b = i9;
-        this.f26241c = i10;
-        this.f26242d = i11;
-        this.f26244f = bArr;
-        this.f26243e = i12;
+    public M4(int i, int i4, int i6, int i9, int i10, byte[] bArr, int i11) {
+        this.f27030a = i4;
+        this.f27031b = i6;
+        this.f27032c = i9;
+        this.f27033d = i10;
+        this.f27035f = bArr;
+        this.f27034e = i11;
     }
 }

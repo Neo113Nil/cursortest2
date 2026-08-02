@@ -14,9 +14,9 @@ public abstract class OX {
     public static byte[] A00;
     public static String[] A01 = {"alBbxktHBjENZciLxR6rw2zD", "0bEVAsoxw6W3iWGX6BxBwig2lvfARzA8", "5kBw8VexBy79GKA0j07dIkKJ", "062DxPuwmCK6gWRcItF5YTW3Hm4KDyy6", "ouexH0ba", "qAJVUQLE", "GBKgEyO20ouPxSasMb", "BGZyEH20hLZ9tDha5NwFDNnmUBWPcH0M"};
 
-    public static String A06(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        int i10 = 0;
+    public static String A06(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             String[] strArr = A01;
@@ -26,11 +26,11 @@ public abstract class OX {
             String[] strArr2 = A01;
             strArr2[5] = "tBRy7z9w";
             strArr2[4] = "5uJXeywj";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 69);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 69);
+            i9++;
         }
     }
 
@@ -72,7 +72,7 @@ public abstract class OX {
             bundle.putInt(adTypeString3, integer.intValue());
         }
         MultithreadedBundleWrapper multithreadedBundleWrapper3 = AdInternalSettings.sSettingsBundle;
-        String adTypeString4 = A06(BaseATView.a.f9767C, 33, 112);
+        String adTypeString4 = A06(BaseATView.a.f10553C, 33, 112);
         Integer integer2 = multithreadedBundleWrapper3.getInteger(adTypeString4);
         if (integer2 != null) {
             bundle.putInt(adTypeString4, integer2.intValue());
@@ -87,20 +87,20 @@ public abstract class OX {
         return bundle;
     }
 
-    public static Bundle A02(String str, C1950iY c1950iY) {
+    public static Bundle A02(String str, C1970iY c1970iY) {
         Bundle bundle = new Bundle();
-        A08(bundle, c1950iY.A05());
-        bundle.putString(A06(451, 17, 16), c1950iY.A0A());
+        A08(bundle, c1970iY.A05());
+        bundle.putString(A06(451, 17, 16), c1970iY.A0A());
         bundle.putString(A06(259, 13, 76), str);
-        bundle.putString(A06(292, 19, 18), c1950iY.A07());
-        bundle.putString(A06(366, 19, 0), c1950iY.A08());
-        bundle.putString(A06(404, 22, 98), c1950iY.A09());
-        bundle.putString(A06(385, 19, 96), OT.A01(c1950iY.A0B()));
-        RewardData A03 = c1950iY.A03();
+        bundle.putString(A06(292, 19, 18), c1970iY.A07());
+        bundle.putString(A06(366, 19, 0), c1970iY.A08());
+        bundle.putString(A06(404, 22, 98), c1970iY.A09());
+        bundle.putString(A06(385, 19, 96), OT.A01(c1970iY.A0B()));
+        RewardData A03 = c1970iY.A03();
         if (A03 != null) {
             OY.A00(bundle, A03);
         }
-        C1840gi A05 = c1950iY.A05();
+        C1860gi A05 = c1970iY.A05();
         if (A01[7].charAt(1) != 'G') {
             throw new RuntimeException();
         }
@@ -111,28 +111,28 @@ public abstract class OX {
         return bundle;
     }
 
-    public static Bundle A03(String str, C1935iI c1935iI) {
+    public static Bundle A03(String str, C1955iI c1955iI) {
         Bundle bundle = new Bundle();
-        A08(bundle, c1935iI.A0B);
-        bundle.putString(A06(451, 17, 16), c1935iI.A0D);
+        A08(bundle, c1955iI.A0B);
+        bundle.putString(A06(451, 17, 16), c1955iI.A0D);
         bundle.putString(A06(259, 13, 76), str);
-        bundle.putString(A06(292, 19, 18), c1935iI.A05);
-        bundle.putString(A06(366, 19, 0), c1935iI.A06);
-        bundle.putString(A06(404, 22, 98), c1935iI.A07);
-        AdExperienceType adExperienceType = c1935iI.A02;
+        bundle.putString(A06(292, 19, 18), c1955iI.A05);
+        bundle.putString(A06(366, 19, 0), c1955iI.A06);
+        bundle.putString(A06(404, 22, 98), c1955iI.A07);
+        AdExperienceType adExperienceType = c1955iI.A02;
         if (adExperienceType != null) {
             bundle.putString(A06(237, 22, 24), OS.A02(adExperienceType));
         }
-        bundle.putBoolean(A06(90, 33, 27), c1935iI.A08);
-        RewardData rewardData = c1935iI.A03;
+        bundle.putBoolean(A06(90, 33, 27), c1955iI.A08);
+        RewardData rewardData = c1955iI.A03;
         if (rewardData != null) {
             OY.A00(bundle, rewardData);
         }
-        bundle.putBundle(A06(123, 19, 81), A01(c1935iI.A0B));
+        bundle.putBundle(A06(123, 19, 81), A01(c1955iI.A0B));
         return bundle;
     }
 
-    public static C1950iY A04(C1840gi c1840gi, Bundle bundle, String str) {
+    public static C1970iY A04(C1860gi c1860gi, Bundle bundle, String str) {
         String string = bundle.getString(A06(451, 17, 16));
         String placement = A06(292, 19, 18);
         String string2 = bundle.getString(placement);
@@ -150,25 +150,25 @@ public abstract class OX {
         if (string == null) {
             string = A06(0, 0, 60);
         }
-        C1950iY c1950iY = new C1950iY(c1840gi, null, string, new C1941iP(str, string4, bundle2));
-        c1950iY.A0I(string3);
-        c1950iY.A0H(string2);
-        c1950iY.A0J(sdkVersion);
+        C1970iY c1970iY = new C1970iY(c1860gi, null, string, new C1961iP(str, string4, bundle2));
+        c1970iY.A0I(string3);
+        c1970iY.A0H(string2);
+        c1970iY.A0J(sdkVersion);
         String placement6 = A06(385, 19, 96);
-        c1950iY.A0K(OT.A02(bundle.getString(placement6)));
+        c1970iY.A0K(OT.A02(bundle.getString(placement6)));
         RewardData A012 = OY.A01(bundle);
         if (A012 != null) {
-            c1950iY.A0F(A012);
+            c1970iY.A0F(A012);
         }
-        return c1950iY;
+        return c1970iY;
     }
 
-    public static C1935iI A05(C1840gi c1840gi, Bundle bundle, String str) {
+    public static C1955iI A05(C1860gi c1860gi, Bundle bundle, String str) {
         String string = bundle.getString(A06(451, 17, 16));
         String rvPlacement = A06(292, 19, 18);
         String string2 = bundle.getString(rvPlacement);
         String rvPlacement2 = A06(90, 33, 27);
-        boolean z3 = bundle.getBoolean(rvPlacement2);
+        boolean z6 = bundle.getBoolean(rvPlacement2);
         String rvPlacement3 = A06(366, 19, 0);
         String adExperienceType = bundle.getString(rvPlacement3);
         String rvPlacement4 = A06(404, 22, 98);
@@ -185,32 +185,32 @@ public abstract class OX {
         if (string == null) {
             string = A06(0, 0, 60);
         }
-        C1935iI c1935iI = new C1935iI(c1840gi, string, null, new C1941iP(str, string4, bundle2));
-        c1935iI.A06 = adExperienceType;
-        c1935iI.A05 = string2;
-        c1935iI.A08 = z3;
-        c1935iI.A02 = OS.A00(string3);
-        c1935iI.A07 = mediationData;
+        C1955iI c1955iI = new C1955iI(c1860gi, string, null, new C1961iP(str, string4, bundle2));
+        c1955iI.A06 = adExperienceType;
+        c1955iI.A05 = string2;
+        c1955iI.A08 = z6;
+        c1955iI.A02 = OS.A00(string3);
+        c1955iI.A07 = mediationData;
         RewardData A012 = OY.A01(bundle);
         if (A012 != null) {
-            c1935iI.A03 = A012;
+            c1955iI.A03 = A012;
         }
-        return c1935iI;
+        return c1955iI;
     }
 
     public static void A08(Bundle bundle, T8 t82) {
         bundle.putString(A06(344, 22, 96), A06(0, 6, 101));
-        boolean z3 = false;
-        boolean isForcedFunnelLogging = t82 instanceof C1840gi;
+        boolean z6 = false;
+        boolean isForcedFunnelLogging = t82 instanceof C1860gi;
         if (isForcedFunnelLogging) {
-            z3 = ((C1840gi) t82).A0F().AAT();
+            z6 = ((C1860gi) t82).A0F().AAT();
         }
         boolean isForcedFunnelLogging2 = TX.A0I(t82);
-        bundle.putBoolean(A06(33, 21, 55), isForcedFunnelLogging2 || z3);
+        bundle.putBoolean(A06(33, 21, 55), isForcedFunnelLogging2 || z6);
         bundle.putString(A06(330, 14, 30), t82.getPackageName());
-        boolean isForcedFunnelLogging3 = AbstractC1293Us.A0G(t82);
+        boolean isForcedFunnelLogging3 = AbstractC1313Us.A0G(t82);
         if (isForcedFunnelLogging3) {
-            bundle.putString(A06(311, 19, 51), new C1236Sn().A03(t82));
+            bundle.putString(A06(311, 19, 51), new C1256Sn().A03(t82));
         }
     }
 }

@@ -42,105 +42,105 @@ import com.anythink.expressad.foundation.h.k;
 public class BaseATActivity extends Activity {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f9704a = "BaseATActivity";
+    public static final String f10490a = "BaseATActivity";
 
     /* renamed from: A, reason: collision with root package name */
-    private boolean f9705A;
+    private boolean f10491A;
 
     /* renamed from: b, reason: collision with root package name */
-    boolean f9706b;
+    boolean f10492b;
 
     /* renamed from: c, reason: collision with root package name */
-    bf f9707c;
+    bf f10493c;
 
     /* renamed from: j, reason: collision with root package name */
-    i f9713j;
+    i f10499j;
 
     /* renamed from: l, reason: collision with root package name */
-    long f9715l;
+    long f10501l;
 
     /* renamed from: m, reason: collision with root package name */
-    long f9716m;
+    long f10502m;
 
     /* renamed from: n, reason: collision with root package name */
-    long f9717n;
+    long f10503n;
 
     /* renamed from: o, reason: collision with root package name */
-    private BaseScreenATView f9718o;
+    private BaseScreenATView f10504o;
 
     /* renamed from: p, reason: collision with root package name */
-    private x f9719p;
+    private x f10505p;
 
     /* renamed from: q, reason: collision with root package name */
-    private w f9720q;
+    private w f10506q;
 
     /* renamed from: r, reason: collision with root package name */
-    private String f9721r;
+    private String f10507r;
 
     /* renamed from: s, reason: collision with root package name */
-    private b.AbstractC0042b f9722s;
+    private b.AbstractC0042b f10508s;
 
     /* renamed from: t, reason: collision with root package name */
-    private String f9723t;
+    private String f10509t;
 
     /* renamed from: u, reason: collision with root package name */
-    private int f9724u;
+    private int f10510u;
 
     /* renamed from: v, reason: collision with root package name */
-    private int f9725v;
+    private int f10511v;
 
     /* renamed from: w, reason: collision with root package name */
-    private boolean f9726w;
+    private boolean f10512w;
 
     /* renamed from: x, reason: collision with root package name */
-    private boolean f9727x;
+    private boolean f10513x;
 
     /* renamed from: y, reason: collision with root package name */
-    private boolean f9728y;
+    private boolean f10514y;
 
     /* renamed from: z, reason: collision with root package name */
-    private boolean f9729z;
+    private boolean f10515z;
 
     /* renamed from: d, reason: collision with root package name */
-    long f9708d = 0;
+    long f10494d = 0;
 
     /* renamed from: e, reason: collision with root package name */
-    long f9709e = 0;
+    long f10495e = 0;
 
     /* renamed from: f, reason: collision with root package name */
-    float f9710f = 0.0f;
+    float f10496f = 0.0f;
 
     /* renamed from: g, reason: collision with root package name */
-    boolean f9711g = false;
+    boolean f10497g = false;
 
     /* renamed from: h, reason: collision with root package name */
-    boolean f9712h = false;
+    boolean f10498h = false;
     b.a i = new b.a() { // from class: com.anythink.basead.ui.BaseATActivity.1
         @Override // com.anythink.core.common.b.a
         public final void a(Object obj) {
-            if (!(obj instanceof bf) || BaseATActivity.this.f9720q == null) {
+            if (!(obj instanceof bf) || BaseATActivity.this.f10506q == null) {
                 return;
             }
             bf bfVar = (bf) obj;
-            if (bfVar.a().I().equals(BaseATActivity.this.f9720q.I())) {
+            if (bfVar.a().I().equals(BaseATActivity.this.f10506q.I())) {
                 BaseATActivity baseATActivity = BaseATActivity.this;
-                if (baseATActivity.f9706b) {
+                if (baseATActivity.f10492b) {
                     bfVar.a(baseATActivity);
                 } else {
-                    baseATActivity.f9707c = bfVar;
+                    baseATActivity.f10493c = bfVar;
                 }
             }
         }
     };
 
     /* renamed from: k, reason: collision with root package name */
-    boolean f9714k = false;
+    boolean f10500k = false;
 
     private void d() {
         try {
-            if (!this.f9714k) {
-                w wVar = this.f9720q;
-                if (wVar == null || wVar.r() == null || this.f9720q.r().bP() != 1) {
+            if (!this.f10500k) {
+                w wVar = this.f10506q;
+                if (wVar == null || wVar.r() == null || this.f10506q.r().bP() != 1) {
                     return;
                 }
             } else if (!ATSDKGlobalSetting.isHideNavAndStatusBar) {
@@ -156,12 +156,12 @@ public class BaseATActivity extends Activity {
     }
 
     @Override // android.app.Activity
-    public void onActivityResult(int i, int i6, Intent intent) {
-        BaseScreenATView baseScreenATView = this.f9718o;
+    public void onActivityResult(int i, int i4, Intent intent) {
+        BaseScreenATView baseScreenATView = this.f10504o;
         if (baseScreenATView != null) {
-            baseScreenATView.onActivityResult(i, i6, intent);
+            baseScreenATView.onActivityResult(i, i4, intent);
         }
-        super.onActivityResult(i, i6, intent);
+        super.onActivityResult(i, i4, intent);
     }
 
     @Override // android.app.Activity
@@ -173,7 +173,7 @@ public class BaseATActivity extends Activity {
         a(bundle);
         d();
         try {
-            a.InterfaceC0083a b9 = com.anythink.basead.mixad.a.a().b(this.f9721r);
+            a.InterfaceC0083a b9 = com.anythink.basead.mixad.a.a().b(this.f10507r);
             if (b9 != null) {
                 b9.a(this);
             }
@@ -183,24 +183,24 @@ public class BaseATActivity extends Activity {
 
     @Override // android.app.Activity
     public void onDestroy() {
-        this.f9707c = null;
-        this.f9713j = null;
+        this.f10493c = null;
+        this.f10499j = null;
         com.anythink.core.common.b.a().b("1", this.i);
-        BaseScreenATView baseScreenATView = this.f9718o;
+        BaseScreenATView baseScreenATView = this.f10504o;
         if (baseScreenATView != null) {
             baseScreenATView.removeAllViews();
-            this.f9718o.F();
-            this.f9718o = null;
+            this.f10504o.F();
+            this.f10504o = null;
         }
-        w wVar = this.f9720q;
-        if (wVar != null && wVar.L() && !this.f9720q.c()) {
+        w wVar = this.f10506q;
+        if (wVar != null && wVar.L() && !this.f10506q.c()) {
             o.a().b();
         }
-        if (this.f9719p != null) {
-            com.anythink.core.common.u.a.a().a(this.f9719p.f14158d + this.f9719p.f14157c);
+        if (this.f10505p != null) {
+            com.anythink.core.common.u.a.a().a(this.f10505p.f14944d + this.f10505p.f14943c);
         }
-        if (!TextUtils.isEmpty(this.f9721r)) {
-            com.anythink.basead.g.b.a().b(this.f9721r);
+        if (!TextUtils.isEmpty(this.f10507r)) {
+            com.anythink.basead.g.b.a().b(this.f10507r);
         }
         super.onDestroy();
     }
@@ -216,16 +216,16 @@ public class BaseATActivity extends Activity {
     @Override // android.app.Activity
     public void onPause() {
         super.onPause();
-        long j6 = this.f9717n + 1;
-        this.f9717n = j6;
+        long j6 = this.f10503n + 1;
+        this.f10503n = j6;
         if (j6 <= 5) {
             StringBuilder sb = new StringBuilder("3-");
-            i iVar = this.f9713j;
+            i iVar = this.f10499j;
             sb.append(iVar != null ? iVar.i() : "0");
-            a(sb.toString(), SystemClock.elapsedRealtime() - this.f9715l);
+            a(sb.toString(), SystemClock.elapsedRealtime() - this.f10501l);
         }
-        this.f9706b = false;
-        BaseScreenATView baseScreenATView = this.f9718o;
+        this.f10492b = false;
+        BaseScreenATView baseScreenATView = this.f10504o;
         if (baseScreenATView != null) {
             baseScreenATView.D();
         }
@@ -243,49 +243,49 @@ public class BaseATActivity extends Activity {
             super.onResume();
         }
         d();
-        this.f9715l = SystemClock.elapsedRealtime();
-        long j6 = this.f9716m + 1;
-        this.f9716m = j6;
+        this.f10501l = SystemClock.elapsedRealtime();
+        long j6 = this.f10502m + 1;
+        this.f10502m = j6;
         if (j6 <= 5) {
             StringBuilder sb = new StringBuilder("2-");
-            i iVar = this.f9713j;
+            i iVar = this.f10499j;
             sb.append(iVar != null ? iVar.i() : "0");
             a(sb.toString(), 0L);
         }
-        this.f9706b = true;
-        BaseScreenATView baseScreenATView = this.f9718o;
+        this.f10492b = true;
+        BaseScreenATView baseScreenATView = this.f10504o;
         if (baseScreenATView != null) {
             baseScreenATView.A();
         }
-        bf bfVar = this.f9707c;
+        bf bfVar = this.f10493c;
         if (bfVar != null) {
             bfVar.a(this);
-            this.f9707c = null;
+            this.f10493c = null;
         }
     }
 
     @Override // android.app.Activity
     public void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        BaseScreenATView baseScreenATView = this.f9718o;
+        BaseScreenATView baseScreenATView = this.f10504o;
         if (baseScreenATView != null) {
             if (baseScreenATView.isShowEndCard()) {
-                bundle.putBoolean(a.C0072a.f11871f, true);
+                bundle.putBoolean(a.C0072a.f12657f, true);
             }
-            bundle.putBoolean(a.C0072a.f11872g, this.f9718o.isVideoMute());
-            bundle.putBoolean(a.C0072a.f11874j, this.f9718o.hasReward());
-            bundle.putLong(a.C0072a.f11876l, this.f9718o.getShowBannerTime());
-            bundle.putLong(a.C0072a.f11877m, this.f9718o.getHideBannerTime());
-            bundle.putFloat(a.C0072a.f11878n, this.f9718o.getCloseButtonScaleFactor());
-            bundle.putBoolean(a.C0072a.f11873h, this.f9718o.getHasPerformClick());
-            bundle.putBoolean(a.C0072a.f11879o, this.f9718o.isShowingEndCardAfterVideoPlay());
+            bundle.putBoolean(a.C0072a.f12658g, this.f10504o.isVideoMute());
+            bundle.putBoolean(a.C0072a.f12660j, this.f10504o.hasReward());
+            bundle.putLong(a.C0072a.f12662l, this.f10504o.getShowBannerTime());
+            bundle.putLong(a.C0072a.f12663m, this.f10504o.getHideBannerTime());
+            bundle.putFloat(a.C0072a.f12664n, this.f10504o.getCloseButtonScaleFactor());
+            bundle.putBoolean(a.C0072a.f12659h, this.f10504o.getHasPerformClick());
+            bundle.putBoolean(a.C0072a.f12665o, this.f10504o.isShowingEndCardAfterVideoPlay());
         }
     }
 
     @Override // android.app.Activity, android.view.Window.Callback
-    public void onWindowFocusChanged(boolean z3) {
-        super.onWindowFocusChanged(z3);
-        if (z3) {
+    public void onWindowFocusChanged(boolean z6) {
+        super.onWindowFocusChanged(z6);
+        if (z6) {
             d();
         }
     }
@@ -293,7 +293,7 @@ public class BaseATActivity extends Activity {
     @Override // android.app.Activity, android.view.ContextThemeWrapper, android.content.ContextWrapper, android.content.Context
     public void setTheme(int i) {
         if (Build.VERSION.SDK_INT == 26) {
-            super.setTheme(q.a(this, "myoffer_half_screen_fit_by_o", k.f19634e));
+            super.setTheme(q.a(this, "myoffer_half_screen_fit_by_o", k.f20421e));
         } else {
             super.setTheme(i);
         }
@@ -303,101 +303,101 @@ public class BaseATActivity extends Activity {
     public class AnonymousClass2 extends i {
 
         /* renamed from: a, reason: collision with root package name */
-        String f9731a = "1";
+        String f10517a = "1";
 
         public AnonymousClass2() {
         }
 
         @Override // com.anythink.basead.g.b.AbstractC0042b
         public final void a(j jVar) {
-            if (BaseATActivity.this.f9722s != null) {
-                BaseATActivity.this.f9722s.a(jVar);
+            if (BaseATActivity.this.f10508s != null) {
+                BaseATActivity.this.f10508s.a(jVar);
             }
         }
 
         @Override // com.anythink.basead.g.b.AbstractC0042b
         public final void b() {
-            if (BaseATActivity.this.f9722s != null) {
-                BaseATActivity.this.f9722s.b();
+            if (BaseATActivity.this.f10508s != null) {
+                BaseATActivity.this.f10508s.b();
             }
         }
 
         @Override // com.anythink.basead.g.b.AbstractC0042b
         public final void c() {
-            if (BaseATActivity.this.f9722s != null) {
-                BaseATActivity.this.f9722s.c();
+            if (BaseATActivity.this.f10508s != null) {
+                BaseATActivity.this.f10508s.c();
             }
         }
 
         @Override // com.anythink.basead.g.b.AbstractC0042b
         public final void d() {
-            if (BaseATActivity.this.f9722s != null) {
-                BaseATActivity.this.f9722s.a(e());
-                BaseATActivity.this.f9722s.d();
+            if (BaseATActivity.this.f10508s != null) {
+                BaseATActivity.this.f10508s.a(e());
+                BaseATActivity.this.f10508s.d();
             }
             BaseATActivity.this.c();
         }
 
         @Override // com.anythink.basead.g.i
         public final void f() {
-            this.f9731a = "1";
+            this.f10517a = "1";
             BaseATActivity.this.a("4", 0L);
         }
 
         @Override // com.anythink.basead.g.i
         public final void g() {
-            if (TextUtils.equals(this.f9731a, "1")) {
-                this.f9731a = "2";
+            if (TextUtils.equals(this.f10517a, "1")) {
+                this.f10517a = "2";
             }
             BaseATActivity baseATActivity = BaseATActivity.this;
-            baseATActivity.a("5-".concat(baseATActivity.f9716m - baseATActivity.f9717n <= 0 ? "2" : "1"), 0L);
+            baseATActivity.a("5-".concat(baseATActivity.f10502m - baseATActivity.f10503n <= 0 ? "2" : "1"), 0L);
         }
 
         @Override // com.anythink.basead.g.i
         public final void h() {
-            if (TextUtils.equals(this.f9731a, "1")) {
-                this.f9731a = "3";
+            if (TextUtils.equals(this.f10517a, "1")) {
+                this.f10517a = "3";
                 BaseATActivity baseATActivity = BaseATActivity.this;
-                baseATActivity.a("6-".concat(baseATActivity.f9716m - baseATActivity.f9717n <= 0 ? "2" : "1"), 0L);
+                baseATActivity.a("6-".concat(baseATActivity.f10502m - baseATActivity.f10503n <= 0 ? "2" : "1"), 0L);
             }
         }
 
         @Override // com.anythink.basead.g.i
         public final String i() {
-            return this.f9731a;
+            return this.f10517a;
         }
 
         @Override // com.anythink.basead.g.b.AbstractC0042b
         public final void a(f fVar) {
-            if (BaseATActivity.this.f9722s != null) {
-                BaseATActivity.this.f9722s.a(fVar);
+            if (BaseATActivity.this.f10508s != null) {
+                BaseATActivity.this.f10508s.a(fVar);
             }
         }
 
         @Override // com.anythink.basead.g.b.AbstractC0042b
         public final void b(j jVar) {
-            if (BaseATActivity.this.f9722s != null) {
-                BaseATActivity.this.f9722s.b(jVar);
+            if (BaseATActivity.this.f10508s != null) {
+                BaseATActivity.this.f10508s.b(jVar);
             }
         }
 
         @Override // com.anythink.basead.g.b.AbstractC0042b
         public final void a() {
-            if (BaseATActivity.this.f9722s != null) {
-                BaseATActivity.this.f9722s.a();
+            if (BaseATActivity.this.f10508s != null) {
+                BaseATActivity.this.f10508s.a();
             }
         }
 
         @Override // com.anythink.basead.g.b.AbstractC0042b
-        public final void a(boolean z3) {
-            if (BaseATActivity.this.f9722s != null) {
-                BaseATActivity.this.f9722s.a(z3);
+        public final void a(boolean z6) {
+            if (BaseATActivity.this.f10508s != null) {
+                BaseATActivity.this.f10508s.a(z6);
             }
         }
     }
 
     private void b() {
-        a.InterfaceC0083a b9 = com.anythink.basead.mixad.a.a().b(this.f9721r);
+        a.InterfaceC0083a b9 = com.anythink.basead.mixad.a.a().b(this.f10507r);
         if (b9 != null) {
             b9.a(this);
         }
@@ -405,36 +405,36 @@ public class BaseATActivity extends Activity {
 
     private void c(Bundle bundle) {
         AnonymousClass2 anonymousClass2 = new AnonymousClass2();
-        this.f9713j = anonymousClass2;
-        this.f9718o.setListener(anonymousClass2);
+        this.f10499j = anonymousClass2;
+        this.f10504o.setListener(anonymousClass2);
         if (bundle != null) {
-            this.f9726w = bundle.getBoolean(a.C0072a.f11871f);
-            this.f9727x = bundle.getBoolean(a.C0072a.f11872g);
-            this.f9728y = bundle.getBoolean(a.C0072a.f11874j);
-            this.f9708d = bundle.getLong(a.C0072a.f11876l);
-            this.f9709e = bundle.getLong(a.C0072a.f11877m);
-            this.f9710f = bundle.getFloat(a.C0072a.f11878n);
-            this.f9711g = bundle.getBoolean(a.C0072a.f11873h, false);
-            this.f9712h = bundle.getBoolean(a.C0072a.f11879o, false);
+            this.f10512w = bundle.getBoolean(a.C0072a.f12657f);
+            this.f10513x = bundle.getBoolean(a.C0072a.f12658g);
+            this.f10514y = bundle.getBoolean(a.C0072a.f12660j);
+            this.f10494d = bundle.getLong(a.C0072a.f12662l);
+            this.f10495e = bundle.getLong(a.C0072a.f12663m);
+            this.f10496f = bundle.getFloat(a.C0072a.f12664n);
+            this.f10497g = bundle.getBoolean(a.C0072a.f12659h, false);
+            this.f10498h = bundle.getBoolean(a.C0072a.f12665o, false);
         }
-        this.f9718o.setIsShowEndCard(this.f9726w);
-        this.f9718o.setHasReward(this.f9728y);
+        this.f10504o.setIsShowEndCard(this.f10512w);
+        this.f10504o.setHasReward(this.f10514y);
         if (bundle != null) {
-            this.f9718o.setVideoMute(this.f9727x);
-            this.f9718o.setShowBannerTime(this.f9708d);
-            this.f9718o.setHideBannerTime(this.f9709e);
-            this.f9718o.setCloseButtonScaleFactor(this.f9710f);
-            this.f9718o.setHasPerformClick(this.f9711g);
-            this.f9718o.setShowingEndCardAfterVideoPlay(this.f9712h);
+            this.f10504o.setVideoMute(this.f10513x);
+            this.f10504o.setShowBannerTime(this.f10494d);
+            this.f10504o.setHideBannerTime(this.f10495e);
+            this.f10504o.setCloseButtonScaleFactor(this.f10496f);
+            this.f10504o.setHasPerformClick(this.f10497g);
+            this.f10504o.setShowingEndCardAfterVideoPlay(this.f10498h);
         }
         try {
-            this.f9718o.init();
+            this.f10504o.init();
         } catch (Throwable th) {
             th.printStackTrace();
             try {
-                b.AbstractC0042b abstractC0042b = this.f9722s;
+                b.AbstractC0042b abstractC0042b = this.f10508s;
                 if (abstractC0042b != null) {
-                    abstractC0042b.a(g.a(g.f6179k, q.a(th.getStackTrace())));
+                    abstractC0042b.a(g.a(g.f6965k, q.a(th.getStackTrace())));
                 }
             } catch (Throwable th2) {
                 th2.printStackTrace();
@@ -445,53 +445,53 @@ public class BaseATActivity extends Activity {
 
     public static void a(Activity activity, com.anythink.core.basead.b.c cVar) {
         Intent intent = new Intent();
-        Context g4 = t.b().g();
+        Context g9 = t.b().g();
         if (activity == null || activity.isFinishing()) {
             Log.i("anythink_BaseATActivity", "Activity is null");
         } else {
-            g4 = activity;
+            g9 = activity;
         }
-        boolean a9 = a(cVar.f11917a, cVar.f11924h);
-        if (cVar.f11921e == 2) {
-            if (!a9 && !cVar.f11925j) {
-                intent.setClass(g4, ATLandscapeActivity.class);
+        boolean a9 = a(cVar.f12703a, cVar.f12710h);
+        if (cVar.f12707e == 2) {
+            if (!a9 && !cVar.f12711j) {
+                intent.setClass(g9, ATLandscapeActivity.class);
             } else {
-                intent.setClass(g4, ATLandscapeTranslucentActivity.class);
+                intent.setClass(g9, ATLandscapeTranslucentActivity.class);
             }
-        } else if (!a9 && !cVar.f11925j) {
-            intent.setClass(g4, ATPortraitActivity.class);
+        } else if (!a9 && !cVar.f12711j) {
+            intent.setClass(g9, ATPortraitActivity.class);
         } else {
-            intent.setClass(g4, ATPortraitTranslucentActivity.class);
+            intent.setClass(g9, ATPortraitTranslucentActivity.class);
         }
-        intent.putExtra(a.C0072a.f11869d, cVar.f11920d);
-        com.anythink.basead.ui.e.a.a().a(cVar.f11920d, cVar);
-        if (!(g4 instanceof Activity)) {
+        intent.putExtra(a.C0072a.f12655d, cVar.f12706d);
+        com.anythink.basead.ui.e.a.a().a(cVar.f12706d, cVar);
+        if (!(g9 instanceof Activity)) {
             intent.addFlags(268435456);
         }
         try {
-            g4.startActivity(intent);
+            g9.startActivity(intent);
             if (activity == null || activity.isFinishing()) {
                 return;
             }
             activity.overridePendingTransition(0, 0);
         } catch (Throwable th) {
-            b.AbstractC0042b a10 = com.anythink.basead.g.b.a().a(cVar.f11920d);
+            b.AbstractC0042b a10 = com.anythink.basead.g.b.a().a(cVar.f12706d);
             if (a10 != null) {
-                a10.a(g.a(g.f6171b, th.getMessage()));
+                a10.a(g.a(g.f6957b, th.getMessage()));
             }
         }
     }
 
     private void b(Bundle bundle) {
         if (bundle != null) {
-            this.f9726w = bundle.getBoolean(a.C0072a.f11871f);
-            this.f9727x = bundle.getBoolean(a.C0072a.f11872g);
-            this.f9728y = bundle.getBoolean(a.C0072a.f11874j);
-            this.f9708d = bundle.getLong(a.C0072a.f11876l);
-            this.f9709e = bundle.getLong(a.C0072a.f11877m);
-            this.f9710f = bundle.getFloat(a.C0072a.f11878n);
-            this.f9711g = bundle.getBoolean(a.C0072a.f11873h, false);
-            this.f9712h = bundle.getBoolean(a.C0072a.f11879o, false);
+            this.f10512w = bundle.getBoolean(a.C0072a.f12657f);
+            this.f10513x = bundle.getBoolean(a.C0072a.f12658g);
+            this.f10514y = bundle.getBoolean(a.C0072a.f12660j);
+            this.f10494d = bundle.getLong(a.C0072a.f12662l);
+            this.f10495e = bundle.getLong(a.C0072a.f12663m);
+            this.f10496f = bundle.getFloat(a.C0072a.f12664n);
+            this.f10497g = bundle.getBoolean(a.C0072a.f12659h, false);
+            this.f10498h = bundle.getBoolean(a.C0072a.f12665o, false);
         }
     }
 
@@ -499,18 +499,18 @@ public class BaseATActivity extends Activity {
         Intent intent = getIntent();
         try {
             if (intent != null) {
-                this.f9721r = intent.getStringExtra(a.C0072a.f11869d);
-                com.anythink.core.basead.b.c a9 = com.anythink.basead.ui.e.a.a().a(this.f9721r);
+                this.f10507r = intent.getStringExtra(a.C0072a.f12655d);
+                com.anythink.core.basead.b.c a9 = com.anythink.basead.ui.e.a.a().a(this.f10507r);
                 if (a9 != null) {
-                    this.f9723t = a9.f11918b;
-                    this.f9724u = a9.f11917a;
-                    this.f9720q = a9.f11919c;
-                    this.f9719p = a9.f11924h;
+                    this.f10509t = a9.f12704b;
+                    this.f10510u = a9.f12703a;
+                    this.f10506q = a9.f12705c;
+                    this.f10505p = a9.f12710h;
                 }
-                this.f9729z = a(this.f9724u, this.f9719p);
+                this.f10515z = a(this.f10510u, this.f10505p);
                 return;
             }
-            Log.e("anythink", f9704a + " Intent is null.");
+            Log.e("anythink", f10490a + " Intent is null.");
         } catch (Exception e9) {
             e9.printStackTrace();
         }
@@ -527,65 +527,65 @@ public class BaseATActivity extends Activity {
 
     private static boolean a(int i, x xVar) {
         y yVar;
-        if (xVar == null || (yVar = xVar.f14168o) == null || i != 3) {
+        if (xVar == null || (yVar = xVar.f14954o) == null || i != 3) {
             return false;
         }
         return TextUtils.equals("2", yVar.Q());
     }
 
     private BaseScreenATView a(com.anythink.basead.mixad.c.a.a aVar, BaseAd baseAd) {
-        int i = this.f9724u;
+        int i = this.f10510u;
         if (i != 1) {
             if (i == 3) {
                 if (baseAd != null) {
-                    boolean z3 = this.f9729z;
+                    boolean z6 = this.f10515z;
                     if (aVar != null) {
-                        Object a9 = new com.anythink.basead.mixad.c.b(new a.C0043a().a(aVar).a(this).a(z3).a(this.f9723t).a(this.f9725v).a()).a();
+                        Object a9 = new com.anythink.basead.mixad.c.b(new a.C0043a().a(aVar).a(this).a(z6).a(this.f10509t).a(this.f10511v).a()).a();
                         if (a9 instanceof BaseScreenATView) {
-                            this.f9705A = a9 instanceof e;
+                            this.f10491A = a9 instanceof e;
                             return (BaseScreenATView) a9;
                         }
                     }
                     return null;
                 }
-                if (this.f9720q.ao() == 3) {
-                    if (d.b(this.f9720q)) {
-                        return new WTWebViewBaseScreenATView(this, this.f9719p, this.f9720q, this.f9723t, this.f9724u, this.f9725v);
+                if (this.f10506q.ao() == 3) {
+                    if (d.b(this.f10506q)) {
+                        return new WTWebViewBaseScreenATView(this, this.f10505p, this.f10506q, this.f10509t, this.f10510u, this.f10511v);
                     }
-                    if (this.f9720q.r().bF() != 1) {
-                        b.AbstractC0042b abstractC0042b = this.f9722s;
+                    if (this.f10506q.r().bF() != 1) {
+                        b.AbstractC0042b abstractC0042b = this.f10508s;
                         if (abstractC0042b != null) {
-                            abstractC0042b.a(g.a(g.f6188t, g.ad));
+                            abstractC0042b.a(g.a(g.f6974t, g.ad));
                         }
                         c();
                         return null;
                     }
                 }
-                if (this.f9729z) {
-                    if (this.f9719p.f14168o.at() == 1 && this.f9725v == 1) {
-                        return new LetterHalfScreenATView(this, this.f9719p, this.f9720q, this.f9723t, this.f9724u, this.f9725v);
+                if (this.f10515z) {
+                    if (this.f10505p.f14954o.at() == 1 && this.f10511v == 1) {
+                        return new LetterHalfScreenATView(this, this.f10505p, this.f10506q, this.f10509t, this.f10510u, this.f10511v);
                     }
-                    return new HalfScreenATView(this, this.f9719p, this.f9720q, this.f9723t, this.f9724u, this.f9725v);
+                    return new HalfScreenATView(this, this.f10505p, this.f10506q, this.f10509t, this.f10510u, this.f10511v);
                 }
-                if (this.f9719p.f14168o.at() == 1 && this.f9725v == 1) {
-                    return new LetterFullScreenATView(this, this.f9719p, this.f9720q, this.f9723t, this.f9724u, this.f9725v);
+                if (this.f10505p.f14954o.at() == 1 && this.f10511v == 1) {
+                    return new LetterFullScreenATView(this, this.f10505p, this.f10506q, this.f10509t, this.f10510u, this.f10511v);
                 }
-                return new FullScreenATView(this, this.f9719p, this.f9720q, this.f9723t, this.f9724u, this.f9725v);
+                return new FullScreenATView(this, this.f10505p, this.f10506q, this.f10509t, this.f10510u, this.f10511v);
             }
-        } else if (this.f9720q.ao() == 3) {
-            if (d.b(this.f9720q)) {
-                return new WTWebViewBaseScreenATView(this, this.f9719p, this.f9720q, this.f9723t, this.f9724u, this.f9725v);
+        } else if (this.f10506q.ao() == 3) {
+            if (d.b(this.f10506q)) {
+                return new WTWebViewBaseScreenATView(this, this.f10505p, this.f10506q, this.f10509t, this.f10510u, this.f10511v);
             }
-            if (this.f9720q.r().bF() != 1) {
-                b.AbstractC0042b abstractC0042b2 = this.f9722s;
+            if (this.f10506q.r().bF() != 1) {
+                b.AbstractC0042b abstractC0042b2 = this.f10508s;
                 if (abstractC0042b2 != null) {
-                    abstractC0042b2.a(g.a(g.f6188t, g.ad));
+                    abstractC0042b2.a(g.a(g.f6974t, g.ad));
                 }
                 c();
                 return null;
             }
         }
-        return new FullScreenATView(this, this.f9719p, this.f9720q, this.f9723t, this.f9724u, this.f9725v);
+        return new FullScreenATView(this, this.f10505p, this.f10506q, this.f10509t, this.f10510u, this.f10511v);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:37:0x00f3  */
@@ -597,90 +597,90 @@ public class BaseATActivity extends Activity {
         BaseAd baseAd;
         BaseScreenATView a9;
         if (this instanceof ATLandscapeActivity) {
-            this.f9725v = 2;
+            this.f10511v = 2;
         } else {
-            this.f9725v = 1;
+            this.f10511v = 1;
         }
         Intent intent = getIntent();
         try {
             if (intent != null) {
-                this.f9721r = intent.getStringExtra(a.C0072a.f11869d);
-                com.anythink.core.basead.b.c a10 = com.anythink.basead.ui.e.a.a().a(this.f9721r);
+                this.f10507r = intent.getStringExtra(a.C0072a.f12655d);
+                com.anythink.core.basead.b.c a10 = com.anythink.basead.ui.e.a.a().a(this.f10507r);
                 if (a10 != null) {
-                    this.f9723t = a10.f11918b;
-                    this.f9724u = a10.f11917a;
-                    this.f9720q = a10.f11919c;
-                    this.f9719p = a10.f11924h;
+                    this.f10509t = a10.f12704b;
+                    this.f10510u = a10.f12703a;
+                    this.f10506q = a10.f12705c;
+                    this.f10505p = a10.f12710h;
                 }
-                this.f9729z = a(this.f9724u, this.f9719p);
+                this.f10515z = a(this.f10510u, this.f10505p);
             } else {
-                Log.e("anythink", f9704a + " Intent is null.");
+                Log.e("anythink", f10490a + " Intent is null.");
             }
         } catch (Exception e9) {
             e9.printStackTrace();
         }
-        this.f9722s = com.anythink.basead.g.b.a().a(this.f9721r);
+        this.f10508s = com.anythink.basead.g.b.a().a(this.f10507r);
         a("1", 0L);
-        x xVar = this.f9719p;
-        if (xVar != null && xVar.f14168o != null) {
-            if (this.f9720q != null) {
+        x xVar = this.f10505p;
+        if (xVar != null && xVar.f14954o != null) {
+            if (this.f10506q != null) {
                 com.anythink.core.common.b.a().a("1", this.i);
-                com.anythink.basead.mixad.c.a.a a11 = com.anythink.basead.mixad.a.a().a(this.f9721r);
+                com.anythink.basead.mixad.c.a.a a11 = com.anythink.basead.mixad.a.a().a(this.f10507r);
                 if (a11 != null && a11.a() != null) {
                     ATNativeAdInfo a12 = a11.a();
                     if (a12 instanceof com.anythink.core.common.l.e.a.g) {
                         baseAd = ((com.anythink.core.common.l.e.a.g) a12).a();
-                        this.f9714k = true;
+                        this.f10500k = true;
                         a9 = a(a11, baseAd);
-                        this.f9718o = a9;
+                        this.f10504o = a9;
                         if (a9 != null) {
                             return;
                         }
-                        if (!this.f9705A && !this.f9729z) {
+                        if (!this.f10491A && !this.f10515z) {
                             ViewGroup customAdContainer = baseAd != null ? baseAd.getCustomAdContainer() : null;
                             if (customAdContainer != null) {
-                                customAdContainer.addView(this.f9718o);
+                                customAdContainer.addView(this.f10504o);
                                 am.a(customAdContainer);
                                 setContentView(customAdContainer);
-                                this.f9718o.handleFullScreenClick();
+                                this.f10504o.handleFullScreenClick();
                             } else {
-                                setContentView(this.f9718o);
+                                setContentView(this.f10504o);
                             }
                         } else {
                             setContentView(a9);
                         }
                         AnonymousClass2 anonymousClass2 = new AnonymousClass2();
-                        this.f9713j = anonymousClass2;
-                        this.f9718o.setListener(anonymousClass2);
+                        this.f10499j = anonymousClass2;
+                        this.f10504o.setListener(anonymousClass2);
                         if (bundle != null) {
-                            this.f9726w = bundle.getBoolean(a.C0072a.f11871f);
-                            this.f9727x = bundle.getBoolean(a.C0072a.f11872g);
-                            this.f9728y = bundle.getBoolean(a.C0072a.f11874j);
-                            this.f9708d = bundle.getLong(a.C0072a.f11876l);
-                            this.f9709e = bundle.getLong(a.C0072a.f11877m);
-                            this.f9710f = bundle.getFloat(a.C0072a.f11878n);
-                            this.f9711g = bundle.getBoolean(a.C0072a.f11873h, false);
-                            this.f9712h = bundle.getBoolean(a.C0072a.f11879o, false);
+                            this.f10512w = bundle.getBoolean(a.C0072a.f12657f);
+                            this.f10513x = bundle.getBoolean(a.C0072a.f12658g);
+                            this.f10514y = bundle.getBoolean(a.C0072a.f12660j);
+                            this.f10494d = bundle.getLong(a.C0072a.f12662l);
+                            this.f10495e = bundle.getLong(a.C0072a.f12663m);
+                            this.f10496f = bundle.getFloat(a.C0072a.f12664n);
+                            this.f10497g = bundle.getBoolean(a.C0072a.f12659h, false);
+                            this.f10498h = bundle.getBoolean(a.C0072a.f12665o, false);
                         }
-                        this.f9718o.setIsShowEndCard(this.f9726w);
-                        this.f9718o.setHasReward(this.f9728y);
+                        this.f10504o.setIsShowEndCard(this.f10512w);
+                        this.f10504o.setHasReward(this.f10514y);
                         if (bundle != null) {
-                            this.f9718o.setVideoMute(this.f9727x);
-                            this.f9718o.setShowBannerTime(this.f9708d);
-                            this.f9718o.setHideBannerTime(this.f9709e);
-                            this.f9718o.setCloseButtonScaleFactor(this.f9710f);
-                            this.f9718o.setHasPerformClick(this.f9711g);
-                            this.f9718o.setShowingEndCardAfterVideoPlay(this.f9712h);
+                            this.f10504o.setVideoMute(this.f10513x);
+                            this.f10504o.setShowBannerTime(this.f10494d);
+                            this.f10504o.setHideBannerTime(this.f10495e);
+                            this.f10504o.setCloseButtonScaleFactor(this.f10496f);
+                            this.f10504o.setHasPerformClick(this.f10497g);
+                            this.f10504o.setShowingEndCardAfterVideoPlay(this.f10498h);
                         }
                         try {
-                            this.f9718o.init();
+                            this.f10504o.init();
                             return;
                         } catch (Throwable th) {
                             th.printStackTrace();
                             try {
-                                b.AbstractC0042b abstractC0042b = this.f9722s;
+                                b.AbstractC0042b abstractC0042b = this.f10508s;
                                 if (abstractC0042b != null) {
-                                    abstractC0042b.a(g.a(g.f6179k, q.a(th.getStackTrace())));
+                                    abstractC0042b.a(g.a(g.f6965k, q.a(th.getStackTrace())));
                                 }
                             } catch (Throwable th2) {
                                 th2.printStackTrace();
@@ -692,19 +692,19 @@ public class BaseATActivity extends Activity {
                 }
                 baseAd = null;
                 a9 = a(a11, baseAd);
-                this.f9718o = a9;
+                this.f10504o = a9;
                 if (a9 != null) {
                 }
             } else {
                 StringBuilder sb = new StringBuilder();
-                String str = f9704a;
+                String str = f10490a;
                 sb.append(str);
                 sb.append(" onCreate: OfferAd = null");
                 Log.e("anythink", sb.toString());
                 try {
-                    b.AbstractC0042b abstractC0042b2 = this.f9722s;
+                    b.AbstractC0042b abstractC0042b2 = this.f10508s;
                     if (abstractC0042b2 != null) {
-                        abstractC0042b2.a(g.a(g.f6179k, str + " onCreate: OfferAd = null"));
+                        abstractC0042b2.a(g.a(g.f6965k, str + " onCreate: OfferAd = null"));
                     }
                 } catch (Throwable th3) {
                     th3.printStackTrace();
@@ -713,14 +713,14 @@ public class BaseATActivity extends Activity {
             }
         } else {
             StringBuilder sb2 = new StringBuilder();
-            String str2 = f9704a;
+            String str2 = f10490a;
             sb2.append(str2);
             sb2.append("Start Screen Ad Error.");
             Log.e("anythink", sb2.toString());
             try {
-                b.AbstractC0042b abstractC0042b3 = this.f9722s;
+                b.AbstractC0042b abstractC0042b3 = this.f10508s;
                 if (abstractC0042b3 != null) {
-                    abstractC0042b3.a(g.a(g.f6179k, str2 + "Start FullScreen Ad Error."));
+                    abstractC0042b3.a(g.a(g.f6965k, str2 + "Start FullScreen Ad Error."));
                 }
             } catch (Throwable th4) {
                 th4.printStackTrace();
@@ -733,46 +733,46 @@ public class BaseATActivity extends Activity {
     public void a(String str, long j6) {
         String str2;
         String str3;
-        w wVar = this.f9720q;
+        w wVar = this.f10506q;
         if (wVar == null || wVar.b() == 10) {
             return;
         }
         try {
-            x xVar = this.f9719p;
-            String str4 = xVar != null ? xVar.f14157c : "";
+            x xVar = this.f10505p;
+            String str4 = xVar != null ? xVar.f14943c : "";
             if (xVar == null) {
                 str2 = "";
             } else {
                 StringBuilder sb = new StringBuilder();
-                sb.append(this.f9719p.f14163j);
+                sb.append(this.f10505p.f14949j);
                 str2 = sb.toString();
             }
-            if (this.f9719p != null) {
+            if (this.f10505p != null) {
                 StringBuilder sb2 = new StringBuilder();
-                sb2.append(this.f9719p.f14160f);
+                sb2.append(this.f10505p.f14946f);
                 str3 = sb2.toString();
             } else {
                 str3 = "";
             }
-            w wVar2 = this.f9720q;
+            w wVar2 = this.f10506q;
             int b9 = wVar2 != null ? wVar2.b() : -1;
-            w wVar3 = this.f9720q;
+            w wVar3 = this.f10506q;
             String v9 = wVar3 != null ? wVar3.v() : "";
-            w wVar4 = this.f9720q;
-            com.anythink.core.common.u.e.a(str, xVar, str4, str2, str3, b9, 0, v9, wVar4 instanceof r ? ((r) wVar4).aD() : "", com.anythink.basead.b.e.a(this.f9720q, this.f9719p), j6);
+            w wVar4 = this.f10506q;
+            com.anythink.core.common.u.e.a(str, xVar, str4, str2, str3, b9, 0, v9, wVar4 instanceof r ? ((r) wVar4).aD() : "", com.anythink.basead.b.e.a(this.f10506q, this.f10505p), j6);
         } catch (Throwable unused) {
         }
     }
 
-    private BaseScreenATView a(com.anythink.basead.mixad.c.a.a aVar, boolean z3) {
+    private BaseScreenATView a(com.anythink.basead.mixad.c.a.a aVar, boolean z6) {
         if (aVar == null) {
             return null;
         }
-        Object a9 = new com.anythink.basead.mixad.c.b(new a.C0043a().a(aVar).a(this).a(z3).a(this.f9723t).a(this.f9725v).a()).a();
+        Object a9 = new com.anythink.basead.mixad.c.b(new a.C0043a().a(aVar).a(this).a(z6).a(this.f10509t).a(this.f10511v).a()).a();
         if (!(a9 instanceof BaseScreenATView)) {
             return null;
         }
-        this.f9705A = a9 instanceof e;
+        this.f10491A = a9 instanceof e;
         return (BaseScreenATView) a9;
     }
 }

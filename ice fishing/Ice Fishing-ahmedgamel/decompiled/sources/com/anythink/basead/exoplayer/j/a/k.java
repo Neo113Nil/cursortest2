@@ -11,17 +11,17 @@ import java.util.Map;
 public final class k {
 
     /* renamed from: a, reason: collision with root package name */
-    private final Map<String, Object> f8091a = new HashMap();
+    private final Map<String, Object> f8877a = new HashMap();
 
     /* renamed from: b, reason: collision with root package name */
-    private final List<String> f8092b = new ArrayList();
+    private final List<String> f8878b = new ArrayList();
 
     public final k a(String str, String str2) {
         return a(str, (Object) str2);
     }
 
     public final Map<String, Object> b() {
-        HashMap hashMap = new HashMap(this.f8091a);
+        HashMap hashMap = new HashMap(this.f8877a);
         for (Map.Entry entry : hashMap.entrySet()) {
             Object value = entry.getValue();
             if (value instanceof byte[]) {
@@ -41,18 +41,18 @@ public final class k {
     }
 
     public final k a(String str) {
-        this.f8092b.add(str);
-        this.f8091a.remove(str);
+        this.f8878b.add(str);
+        this.f8877a.remove(str);
         return this;
     }
 
     public final List<String> a() {
-        return Collections.unmodifiableList(new ArrayList(this.f8092b));
+        return Collections.unmodifiableList(new ArrayList(this.f8878b));
     }
 
     private k a(String str, Object obj) {
-        this.f8091a.put((String) com.anythink.basead.exoplayer.k.a.a(str), com.anythink.basead.exoplayer.k.a.a(obj));
-        this.f8092b.remove(str);
+        this.f8877a.put((String) com.anythink.basead.exoplayer.k.a.a(str), com.anythink.basead.exoplayer.k.a.a(obj));
+        this.f8878b.remove(str);
         return this;
     }
 }

@@ -17,16 +17,16 @@ public abstract class XI {
     public static final Handler A02;
     public static final Set<String> A03;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 4);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 4);
         }
         return new String(copyOfRange);
     }
 
     public static void A03() {
-        A00 = new byte[]{39, 47, 107, 112, 122, 119, 115, 104, c.f16316a, 108, 107, 39, 109, 118, 121, 39, 123, 108, 122, 123, 39, 104, 107, 122, 39, 118, 117, 115, c.f16316a, 48, -78, -66, -68, 125, -75, -80, -78, -76, -79, -66, -66, -70, 125, -70, -80, -61, -80, -67, -80, -87, -75, -77, 116, -84, -89, -87, -85, -88, -75, -75, -79, 116, -67, -89, -79, -81, -64, -89, -71, -82, -81};
+        A00 = new byte[]{39, 47, 107, 112, 122, 119, 115, 104, c.f17103a, 108, 107, 39, 109, 118, 121, 39, 123, 108, 122, 123, 39, 104, 107, 122, 39, 118, 117, 115, c.f17103a, 48, -78, -66, -68, 125, -75, -80, -78, -76, -79, -66, -66, -70, 125, -70, -80, -61, -80, -67, -80, -87, -75, -77, 116, -84, -89, -87, -85, -88, -75, -75, -79, 116, -67, -89, -79, -81, -64, -89, -71, -82, -81};
     }
 
     static {
@@ -41,18 +41,18 @@ public abstract class XI {
         }
     }
 
-    public static void A05(C1836ge c1836ge, InterfaceC1355Xh interfaceC1355Xh, String str) {
+    public static void A05(C1856ge c1856ge, InterfaceC1375Xh interfaceC1375Xh, String str) {
         if (str == null || A03.contains(str)) {
             return;
         }
-        boolean isPackageInstalled = A08(c1836ge.getPackageManager(), str);
+        boolean isPackageInstalled = A08(c1856ge.getPackageManager(), str);
         if (isPackageInstalled) {
-            interfaceC1355Xh.AF5(str);
+            interfaceC1375Xh.AF5(str);
             return;
         }
         A03.add(str);
         A02.removeCallbacksAndMessages(null);
-        A02.postDelayed(new XH(new int[]{0}, str, c1836ge, interfaceC1355Xh), 1000L);
+        A02.postDelayed(new XH(new int[]{0}, str, c1856ge, interfaceC1375Xh), 1000L);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:13:0x0051  */
@@ -60,10 +60,10 @@ public abstract class XI {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static void A06(C1836ge c1836ge, String str) {
+    public static void A06(C1856ge c1856ge, String str) {
         boolean isWithinFB;
-        if (!c1836ge.getPackageName().equals(A01(30, 19, 75))) {
-            String packageName = c1836ge.getPackageName();
+        if (!c1856ge.getPackageName().equals(A01(30, 19, 75))) {
+            String packageName = c1856ge.getPackageName();
             String[] strArr = A01;
             if (strArr[1].charAt(0) != strArr[0].charAt(0)) {
                 throw new RuntimeException();
@@ -78,7 +78,7 @@ public abstract class XI {
                     A03.remove(str);
                     return;
                 } else {
-                    OP.A00(c1836ge).A0A(str, null, 5);
+                    OP.A00(c1856ge).A0A(str, null, 5);
                     return;
                 }
             }
@@ -88,12 +88,12 @@ public abstract class XI {
         }
     }
 
-    public static void A07(C1836ge c1836ge, String str, InterfaceC1355Xh interfaceC1355Xh) {
-        boolean isWithinFB = c1836ge.getPackageName().equals(A01(30, 19, 75)) || c1836ge.getPackageName().equals(A01(49, 22, 66));
+    public static void A07(C1856ge c1856ge, String str, InterfaceC1375Xh interfaceC1375Xh) {
+        boolean isWithinFB = c1856ge.getPackageName().equals(A01(30, 19, 75)) || c1856ge.getPackageName().equals(A01(49, 22, 66));
         if (isWithinFB) {
-            A05(c1836ge, interfaceC1355Xh, str);
+            A05(c1856ge, interfaceC1375Xh, str);
         } else {
-            OP.A00(c1836ge).A0A(str, interfaceC1355Xh, 4);
+            OP.A00(c1856ge).A0A(str, interfaceC1375Xh, 4);
         }
     }
 

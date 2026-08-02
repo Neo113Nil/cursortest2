@@ -8,34 +8,34 @@ import java.util.concurrent.TimeUnit;
 public class a extends x {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final int f15831a = 65536;
+    private static final int f16618a = 65536;
 
     /* renamed from: b, reason: collision with root package name */
-    static a f15832b;
+    static a f16619b;
 
     /* renamed from: d, reason: collision with root package name */
-    private static final long f15833d;
+    private static final long f16620d;
 
     /* renamed from: e, reason: collision with root package name */
-    private static final long f15834e;
+    private static final long f16621e;
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f15835f;
+    private boolean f16622f;
 
     /* renamed from: g, reason: collision with root package name */
-    private a f15836g;
+    private a f16623g;
 
     /* renamed from: h, reason: collision with root package name */
-    private long f15837h;
+    private long f16624h;
 
     /* renamed from: com.anythink.core.common.n.c.a$2, reason: invalid class name */
     public class AnonymousClass2 implements w {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ w f15840a;
+        final /* synthetic */ w f16627a;
 
         public AnonymousClass2(w wVar) {
-            this.f15840a = wVar;
+            this.f16627a = wVar;
         }
 
         @Override // com.anythink.core.common.n.c.w
@@ -48,7 +48,7 @@ public class a extends x {
             a.this.c();
             try {
                 try {
-                    long a_ = this.f15840a.a_(cVar, j6);
+                    long a_ = this.f16627a.a_(cVar, j6);
                     a.this.a(true);
                     return a_;
                 } catch (IOException e9) {
@@ -65,7 +65,7 @@ public class a extends x {
             a.this.c();
             try {
                 try {
-                    this.f15840a.close();
+                    this.f16627a.close();
                     a.this.a(true);
                 } catch (IOException e9) {
                     throw a.this.b(e9);
@@ -77,7 +77,7 @@ public class a extends x {
         }
 
         public final String toString() {
-            return "AsyncTimeout.source(" + this.f15840a + ")";
+            return "AsyncTimeout.source(" + this.f16627a + ")";
         }
     }
 
@@ -102,8 +102,8 @@ public class a extends x {
                     try {
                         a e9 = a.e();
                         if (e9 != null) {
-                            if (e9 == a.f15832b) {
-                                a.f15832b = null;
+                            if (e9 == a.f16619b) {
+                                a.f16619b = null;
                                 return;
                             }
                         }
@@ -117,32 +117,32 @@ public class a extends x {
 
     static {
         long millis = TimeUnit.SECONDS.toMillis(60L);
-        f15833d = millis;
-        f15834e = TimeUnit.MILLISECONDS.toNanos(millis);
+        f16620d = millis;
+        f16621e = TimeUnit.MILLISECONDS.toNanos(millis);
     }
 
     private long b(long j6) {
-        return this.f15837h - j6;
+        return this.f16624h - j6;
     }
 
     public static a e() {
-        a aVar = f15832b.f15836g;
+        a aVar = f16619b.f16623g;
         if (aVar == null) {
             long nanoTime = System.nanoTime();
-            a.class.wait(f15833d);
-            if (f15832b.f15836g != null || System.nanoTime() - nanoTime < f15834e) {
+            a.class.wait(f16620d);
+            if (f16619b.f16623g != null || System.nanoTime() - nanoTime < f16621e) {
                 return null;
             }
-            return f15832b;
+            return f16619b;
         }
-        long nanoTime2 = aVar.f15837h - System.nanoTime();
+        long nanoTime2 = aVar.f16624h - System.nanoTime();
         if (nanoTime2 > 0) {
             long j6 = nanoTime2 / 1000000;
             a.class.wait(j6, (int) (nanoTime2 - (1000000 * j6)));
             return null;
         }
-        f15832b.f15836g = aVar.f15836g;
-        aVar.f15836g = null;
+        f16619b.f16623g = aVar.f16623g;
+        aVar.f16623g = null;
         return aVar;
     }
 
@@ -150,57 +150,57 @@ public class a extends x {
     }
 
     public final void c() {
-        if (this.f15835f) {
+        if (this.f16622f) {
             throw new IllegalStateException("Unbalanced enter/exit");
         }
         long i_ = i_();
         boolean f_ = f_();
         if (i_ != 0 || f_) {
-            this.f15835f = true;
+            this.f16622f = true;
             a(this, i_, f_);
         }
     }
 
     public final boolean d() {
-        if (!this.f15835f) {
+        if (!this.f16622f) {
             return false;
         }
-        this.f15835f = false;
+        this.f16622f = false;
         return a(this);
     }
 
-    private static synchronized void a(a aVar, long j6, boolean z3) {
+    private static synchronized void a(a aVar, long j6, boolean z6) {
         a aVar2;
         synchronized (a.class) {
             try {
-                if (f15832b == null) {
-                    f15832b = new a();
+                if (f16619b == null) {
+                    f16619b = new a();
                     new C0090a().start();
                 }
                 long nanoTime = System.nanoTime();
-                if (j6 != 0 && z3) {
-                    aVar.f15837h = Math.min(j6, aVar.g_() - nanoTime) + nanoTime;
+                if (j6 != 0 && z6) {
+                    aVar.f16624h = Math.min(j6, aVar.g_() - nanoTime) + nanoTime;
                 } else if (j6 != 0) {
-                    aVar.f15837h = j6 + nanoTime;
+                    aVar.f16624h = j6 + nanoTime;
                 } else {
-                    if (!z3) {
+                    if (!z6) {
                         throw new AssertionError();
                     }
-                    aVar.f15837h = aVar.g_();
+                    aVar.f16624h = aVar.g_();
                 }
-                long j9 = aVar.f15837h - nanoTime;
-                a aVar3 = f15832b;
+                long j9 = aVar.f16624h - nanoTime;
+                a aVar3 = f16619b;
                 while (true) {
-                    aVar2 = aVar3.f15836g;
-                    if (aVar2 == null || j9 < aVar2.f15837h - nanoTime) {
+                    aVar2 = aVar3.f16623g;
+                    if (aVar2 == null || j9 < aVar2.f16624h - nanoTime) {
                         break;
                     } else {
                         aVar3 = aVar2;
                     }
                 }
-                aVar.f15836g = aVar2;
-                aVar3.f15836g = aVar;
-                if (aVar3 == f15832b) {
+                aVar.f16623g = aVar2;
+                aVar3.f16623g = aVar;
+                if (aVar3 == f16619b) {
                     a.class.notify();
                 }
             } catch (Throwable th) {
@@ -217,36 +217,36 @@ public class a extends x {
     public class AnonymousClass1 implements v {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ v f15838a;
+        final /* synthetic */ v f16625a;
 
         public AnonymousClass1(v vVar) {
-            this.f15838a = vVar;
+            this.f16625a = vVar;
         }
 
         @Override // com.anythink.core.common.n.c.v
         public final void a(c cVar, long j6) {
-            y.a(cVar.f15847c, 0L, j6);
+            y.a(cVar.f16634c, 0L, j6);
             while (true) {
                 long j9 = 0;
                 if (j6 <= 0) {
                     return;
                 }
-                s sVar = cVar.f15846b;
+                s sVar = cVar.f16633b;
                 while (true) {
                     if (j9 >= 65536) {
                         break;
                     }
-                    j9 += sVar.f15916e - sVar.f15915d;
+                    j9 += sVar.f16703e - sVar.f16702d;
                     if (j9 >= j6) {
                         j9 = j6;
                         break;
                     }
-                    sVar = sVar.f15919h;
+                    sVar = sVar.f16706h;
                 }
                 a.this.c();
                 try {
                     try {
-                        this.f15838a.a(cVar, j9);
+                        this.f16625a.a(cVar, j9);
                         j6 -= j9;
                         a.this.a(true);
                     } catch (IOException e9) {
@@ -264,7 +264,7 @@ public class a extends x {
             a.this.c();
             try {
                 try {
-                    this.f15838a.close();
+                    this.f16625a.close();
                     a.this.a(true);
                 } catch (IOException e9) {
                     throw a.this.b(e9);
@@ -280,7 +280,7 @@ public class a extends x {
             a.this.c();
             try {
                 try {
-                    this.f15838a.flush();
+                    this.f16625a.flush();
                     a.this.a(true);
                 } catch (IOException e9) {
                     throw a.this.b(e9);
@@ -292,7 +292,7 @@ public class a extends x {
         }
 
         public final String toString() {
-            return "AsyncTimeout.sink(" + this.f15838a + ")";
+            return "AsyncTimeout.sink(" + this.f16625a + ")";
         }
 
         @Override // com.anythink.core.common.n.c.v
@@ -303,12 +303,12 @@ public class a extends x {
 
     private static synchronized boolean a(a aVar) {
         synchronized (a.class) {
-            a aVar2 = f15832b;
+            a aVar2 = f16619b;
             while (aVar2 != null) {
-                a aVar3 = aVar2.f15836g;
+                a aVar3 = aVar2.f16623g;
                 if (aVar3 == aVar) {
-                    aVar2.f15836g = aVar.f15836g;
-                    aVar.f15836g = null;
+                    aVar2.f16623g = aVar.f16623g;
+                    aVar.f16623g = null;
                     return false;
                 }
                 aVar2 = aVar3;
@@ -325,8 +325,8 @@ public class a extends x {
         return new AnonymousClass2(wVar);
     }
 
-    public final void a(boolean z3) {
-        if (d() && z3) {
+    public final void a(boolean z6) {
+        if (d() && z6) {
             throw a((IOException) null);
         }
     }

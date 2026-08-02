@@ -14,10 +14,10 @@ public abstract class UP {
     public static byte[] A00;
     public static String[] A01 = {"DnTt6XIWuAOQU1Yv6ovRwSY", "69qI84ufJ2UhBtkQx2IBHzZ", "lNRa3H", "2y2Uq0vrRuc5d5uHsu4hqSSezWuXbHLJ", "zUBzfUPcj8uIEo8tGSc", "tyrfQSxRYtG07uuggB4oX54vdLL3Tqsi", "aO8Ix6JCuD3GiDZZv02FTTQkozyjIQFp", "pMzofq8cn4xP4Da44trMpLQAQtlXLUTp"};
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 25);
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 25);
         }
         return new String(copyOfRange);
     }
@@ -35,28 +35,28 @@ public abstract class UP {
         A03();
     }
 
-    public static UR A00(C1836ge c1836ge) {
+    public static UR A00(C1856ge c1856ge) {
         try {
-            return new ZD(c1836ge);
+            return new ZD(c1856ge);
         } catch (IOException e9) {
-            c1836ge.A08().ABC(A02(0, 15, 104), AbstractC1252Td.A2K, new C1253Te(e9));
+            c1856ge.A08().ABC(A02(0, 15, 104), AbstractC1272Td.A2K, new C1273Te(e9));
             return new ZG();
         }
     }
 
     /* JADX WARN: Type inference failed for: r0v0, types: [com.facebook.ads.redexgen.X.71] */
-    public static AnonymousClass71 A01(C1836ge c1836ge) {
-        return new ZH(c1836ge) { // from class: com.facebook.ads.redexgen.X.71
+    public static AnonymousClass71 A01(C1856ge c1856ge) {
+        return new ZH(c1856ge) { // from class: com.facebook.ads.redexgen.X.71
             public static byte[] A03;
             public static String[] A04 = {"u3ex4KQMIW041lf", "3AptpGjhH", "gmUldlaQs1iDW8SjyulR1SveXx4W0WHx", "1qDQcvNZxrP96rda7KCur1LyuVNWU8kp", "CAWPS90lsy", "t8qLCZBFlDEhGKoHyGYF6SljofbMSV", "olmaGtOYwcY5nta5it0d5AQEWYClhN", "QuuHkAQHaV7iF"};
             public boolean A00 = true;
-            public final C1836ge A01;
+            public final C1856ge A01;
             public final TH A02;
 
-            public static String A00(int i, int i6, int i9) {
-                byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i6);
-                for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-                    copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 64);
+            public static String A00(int i, int i4, int i6) {
+                byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i4);
+                for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+                    copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 64);
                 }
                 return new String(copyOfRange);
             }
@@ -70,8 +70,8 @@ public abstract class UP {
             }
 
             {
-                this.A01 = c1836ge;
-                this.A02 = new TH(c1836ge);
+                this.A01 = c1856ge;
+                this.A02 = new TH(c1856ge);
             }
 
             private JSONArray A01(Cursor cursor) throws JSONException {
@@ -79,15 +79,15 @@ public abstract class UP {
                 cursor.moveToPosition(-1);
                 while (cursor.moveToNext()) {
                     JSONObject jSONObject = new JSONObject();
-                    jSONObject.put(A00(54, 2, 12), cursor.getString(C1788fs.A04.A00));
-                    jSONObject.put(A00(82, 8, 79), cursor.getString(C1788fs.A09.A00));
-                    jSONObject.put(A00(90, 4, 58), cursor.getString(C1788fs.A0A.A00));
-                    jSONObject.put(A00(78, 4, 94), Y1.A03(cursor.getDouble(C1788fs.A08.A00)));
-                    jSONObject.put(A00(66, 12, 26), Y1.A03(cursor.getDouble(C1788fs.A07.A00)));
-                    jSONObject.put(A00(56, 10, 44), cursor.getString(C1788fs.A06.A00));
-                    String string = cursor.getString(C1788fs.A03.A00);
+                    jSONObject.put(A00(54, 2, 12), cursor.getString(C1808fs.A04.A00));
+                    jSONObject.put(A00(82, 8, 79), cursor.getString(C1808fs.A09.A00));
+                    jSONObject.put(A00(90, 4, 58), cursor.getString(C1808fs.A0A.A00));
+                    jSONObject.put(A00(78, 4, 94), Y1.A03(cursor.getDouble(C1808fs.A08.A00)));
+                    jSONObject.put(A00(66, 12, 26), Y1.A03(cursor.getDouble(C1808fs.A07.A00)));
+                    jSONObject.put(A00(56, 10, 44), cursor.getString(C1808fs.A06.A00));
+                    String string = cursor.getString(C1808fs.A03.A00);
                     jSONObject.put(A00(50, 4, 100), string != null ? new JSONObject(string) : new JSONObject());
-                    jSONObject.put(A00(43, 7, 94), cursor.getString(C1788fs.A02.A00));
+                    jSONObject.put(A00(43, 7, 94), cursor.getString(C1808fs.A02.A00));
                     jSONObject.put(A00(38, 5, 8), this.A01.A04().A8N());
                     jSONArray.put(jSONObject);
                 }
@@ -117,17 +117,17 @@ public abstract class UP {
             public static JSONObject A03(Cursor cursor) throws JSONException {
                 JSONObject jSONObject = new JSONObject();
                 while (cursor.moveToNext()) {
-                    jSONObject.put(cursor.getString(C1781fl.A03.A00), cursor.getString(C1781fl.A02.A00));
+                    jSONObject.put(cursor.getString(C1801fl.A03.A00), cursor.getString(C1801fl.A02.A00));
                 }
                 return jSONObject;
             }
 
             @Override // com.instagram.common.viewpoint.core.UQ
             public final int A50(int i) {
-                int i6 = 0;
+                int i4 = 0;
                 if (i > -1) {
                     try {
-                        i6 = this.A02.A08(i);
+                        i4 = this.A02.A08(i);
                     } catch (Exception e9) {
                         if (this.A01.A05().AAO()) {
                             Log.e(ZH.A00, A00(0, 38, 88), e9);
@@ -138,7 +138,7 @@ public abstract class UP {
                 if (this.A00) {
                     this.A02.A0J();
                 }
-                return i6;
+                return i4;
             }
 
             @Override // com.instagram.common.viewpoint.core.UR
@@ -234,7 +234,7 @@ public abstract class UP {
                     strArr2[4] = "rCLG4kGmKo";
                     strArr2[0] = "2rihfjjJxsL3teC";
                     if (moveToNext && A0D.getCount() > 0) {
-                        String eventType2 = C1788fs.A0A.A01;
+                        String eventType2 = C1808fs.A0A.A01;
                         str2 = A0D.getString(A0D.getColumnIndex(eventType2));
                     }
                     A0D.close();

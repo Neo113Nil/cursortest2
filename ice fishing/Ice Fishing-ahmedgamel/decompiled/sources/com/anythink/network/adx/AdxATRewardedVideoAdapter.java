@@ -22,26 +22,26 @@ import java.util.Map;
 public class AdxATRewardedVideoAdapter extends CustomRewardVideoAdapter {
 
     /* renamed from: a, reason: collision with root package name */
-    x f23036a;
+    x f23823a;
 
     /* renamed from: b, reason: collision with root package name */
-    g f23037b;
+    g f23824b;
 
     /* renamed from: c, reason: collision with root package name */
-    Map<String, Object> f23038c;
+    Map<String, Object> f23825c;
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
-        g gVar = this.f23037b;
+        g gVar = this.f23824b;
         if (gVar != null) {
             gVar.b();
-            this.f23037b = null;
+            this.f23824b = null;
         }
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter
     public Map<String, Object> getAdExtraInfoMap() {
-        g gVar = this.f23037b;
+        g gVar = this.f23824b;
         if (gVar != null) {
             return gVar.e();
         }
@@ -55,7 +55,7 @@ public class AdxATRewardedVideoAdapter extends CustomRewardVideoAdapter {
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public Map<String, Object> getNetworkInfoMap() {
-        return this.f23038c;
+        return this.f23825c;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -65,8 +65,8 @@ public class AdxATRewardedVideoAdapter extends CustomRewardVideoAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        x xVar = this.f23036a;
-        return xVar != null ? xVar.f14156b : "";
+        x xVar = this.f23823a;
+        return xVar != null ? xVar.f14942b : "";
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -77,7 +77,7 @@ public class AdxATRewardedVideoAdapter extends CustomRewardVideoAdapter {
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public boolean initNetworkObjectByPlacementId(Context context, Map<String, Object> map, Map<String, Object> map2) {
         a(context, map);
-        g gVar = this.f23037b;
+        g gVar = this.f23824b;
         if (gVar == null) {
             return true;
         }
@@ -85,7 +85,7 @@ public class AdxATRewardedVideoAdapter extends CustomRewardVideoAdapter {
             @Override // com.anythink.basead.f.c.a
             public final void onAdCacheLoaded() {
                 if (AdxATRewardedVideoAdapter.this.getTrackingInfo() != null) {
-                    AdxATRewardedVideoAdapter.this.getTrackingInfo().M(AdxATRewardedVideoAdapter.this.f23037b.f());
+                    AdxATRewardedVideoAdapter.this.getTrackingInfo().M(AdxATRewardedVideoAdapter.this.f23824b.f());
                 }
             }
         });
@@ -94,24 +94,24 @@ public class AdxATRewardedVideoAdapter extends CustomRewardVideoAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public boolean isAdReady() {
-        g gVar = this.f23037b;
-        boolean z3 = gVar != null && gVar.c();
-        if (z3 && this.f23038c == null) {
-            this.f23038c = d.a(this.f23037b);
+        g gVar = this.f23824b;
+        boolean z6 = gVar != null && gVar.c();
+        if (z6 && this.f23825c == null) {
+            this.f23825c = d.a(this.f23824b);
         }
-        return z3;
+        return z6;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void loadCustomNetworkAd(Context context, Map<String, Object> map, Map<String, Object> map2) {
         a(context, map);
-        this.f23037b.a(new com.anythink.basead.g.c() { // from class: com.anythink.network.adx.AdxATRewardedVideoAdapter.2
+        this.f23824b.a(new com.anythink.basead.g.c() { // from class: com.anythink.network.adx.AdxATRewardedVideoAdapter.2
             @Override // com.anythink.basead.g.c
             public final void onAdCacheLoaded() {
                 AdxATRewardedVideoAdapter adxATRewardedVideoAdapter = AdxATRewardedVideoAdapter.this;
-                adxATRewardedVideoAdapter.f23038c = d.a(adxATRewardedVideoAdapter.f23037b);
+                adxATRewardedVideoAdapter.f23825c = d.a(adxATRewardedVideoAdapter.f23824b);
                 if (AdxATRewardedVideoAdapter.this.getTrackingInfo() != null) {
-                    AdxATRewardedVideoAdapter.this.getTrackingInfo().M(AdxATRewardedVideoAdapter.this.f23037b.f());
+                    AdxATRewardedVideoAdapter.this.getTrackingInfo().M(AdxATRewardedVideoAdapter.this.f23824b.f());
                 }
                 if (((ATBaseAdInternalAdapter) AdxATRewardedVideoAdapter.this).mLoadListener != null) {
                     ((ATBaseAdInternalAdapter) AdxATRewardedVideoAdapter.this).mLoadListener.onAdCacheLoaded(new BaseAd[0]);
@@ -136,13 +136,13 @@ public class AdxATRewardedVideoAdapter extends CustomRewardVideoAdapter {
 
     @Override // com.anythink.rewardvideo.unitgroup.api.CustomRewardVideoAdapter
     public void show(Activity activity) {
-        int f3 = m.f(activity);
+        int f2 = m.f(activity);
         HashMap hashMap = new HashMap(1);
         hashMap.put("extra_scenario", this.mScenario);
-        hashMap.put(com.anythink.basead.h.c.f9001j, Integer.valueOf(f3));
+        hashMap.put(com.anythink.basead.h.c.f9787j, Integer.valueOf(f2));
         AdxATInitManager.getInstance();
-        AdxATInitManager.a(getTrackingInfo(), this.f23036a);
-        g gVar = this.f23037b;
+        AdxATInitManager.a(getTrackingInfo(), this.f23823a);
+        g gVar = this.f23824b;
         gVar.a(new com.anythink.basead.g.g(gVar.d(), getTrackingInfo()) { // from class: com.anythink.network.adx.AdxATRewardedVideoAdapter.1
             @Override // com.anythink.basead.g.e, com.anythink.basead.g.a
             public final void onAdClick(j jVar) {
@@ -168,10 +168,10 @@ public class AdxATRewardedVideoAdapter extends CustomRewardVideoAdapter {
             }
 
             @Override // com.anythink.basead.g.a
-            public final void onDeeplinkCallback(boolean z3) {
-                g gVar2 = AdxATRewardedVideoAdapter.this.f23037b;
+            public final void onDeeplinkCallback(boolean z6) {
+                g gVar2 = AdxATRewardedVideoAdapter.this.f23824b;
                 if ((gVar2 == null || gVar2.g()) && ((CustomRewardVideoAdapter) AdxATRewardedVideoAdapter.this).mImpressionListener != null) {
-                    ((CustomRewardVideoAdapter) AdxATRewardedVideoAdapter.this).mImpressionListener.onDeeplinkCallback(z3);
+                    ((CustomRewardVideoAdapter) AdxATRewardedVideoAdapter.this).mImpressionListener.onDeeplinkCallback(z6);
                 }
             }
 
@@ -200,7 +200,7 @@ public class AdxATRewardedVideoAdapter extends CustomRewardVideoAdapter {
             public final void onVideoAdPlayStart() {
             }
         });
-        g gVar2 = this.f23037b;
+        g gVar2 = this.f23824b;
         if (gVar2 != null) {
             gVar2.a(activity, hashMap);
         }
@@ -212,12 +212,12 @@ public class AdxATRewardedVideoAdapter extends CustomRewardVideoAdapter {
         AdxATInitManager.getInstance().initSDK(context, map, null);
         int parseInt = (!map.containsKey("v_m") || (obj2 = map.get("v_m")) == null) ? 0 : Integer.parseInt(obj2.toString());
         int parseInt2 = (!map.containsKey("s_c_t") || (obj = map.get("s_c_t")) == null) ? -1 : Integer.parseInt(obj.toString());
-        x xVar = (x) map.get(j.w.f12614a);
-        this.f23036a = xVar;
+        x xVar = (x) map.get(j.w.f13400a);
+        this.f23823a = xVar;
         g gVar = new g(context, c.b.ADX_OFFER_REQUEST_TYPE, xVar);
-        this.f23037b = gVar;
+        this.f23824b = gVar;
         gVar.a(new d.a().a(parseInt).b(parseInt2).a());
         AdxATInitManager.getInstance();
-        AdxATInitManager.a(getTrackingInfo(), this.f23036a);
+        AdxATInitManager.a(getTrackingInfo(), this.f23823a);
     }
 }

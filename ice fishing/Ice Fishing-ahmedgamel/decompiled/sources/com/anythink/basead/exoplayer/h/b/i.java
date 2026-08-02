@@ -7,16 +7,16 @@ import com.anythink.basead.exoplayer.m;
 public abstract class i extends c {
 
     /* renamed from: j, reason: collision with root package name */
-    public final long f7580j;
+    public final long f8366j;
 
     public i(com.anythink.basead.exoplayer.j.h hVar, k kVar, m mVar, int i, Object obj, long j6, long j9, long j10) {
         super(hVar, kVar, mVar, i, obj, j6, j9);
         com.anythink.basead.exoplayer.k.a.a(mVar);
-        this.f7580j = j10;
+        this.f8366j = j10;
     }
 
     public long e() {
-        long j6 = this.f7580j;
+        long j6 = this.f8366j;
         if (j6 != -1) {
             return j6 + 1;
         }

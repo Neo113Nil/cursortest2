@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 public class ActionBar extends LinearLayout implements View.OnClickListener {
 
     /* renamed from: a, reason: collision with root package name */
-    private WebView f17575a;
+    private WebView f18362a;
 
     public interface a {
         void a();
@@ -45,7 +45,7 @@ public class ActionBar extends LinearLayout implements View.OnClickListener {
     }
 
     public WebView getWebView() {
-        return this.f17575a;
+        return this.f18362a;
     }
 
     public View newActionItem() {
@@ -94,7 +94,7 @@ public class ActionBar extends LinearLayout implements View.OnClickListener {
     }
 
     public void setWebView(WebView webView) {
-        this.f17575a = webView;
+        this.f18362a = webView;
     }
 
     public ActionBar(Context context, AttributeSet attributeSet) {

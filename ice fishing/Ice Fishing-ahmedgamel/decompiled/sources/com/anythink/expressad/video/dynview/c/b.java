@@ -11,14 +11,14 @@ public enum b implements a {
 
 
     /* renamed from: g, reason: collision with root package name */
-    private int f21176g;
+    private int f21963g;
 
     /* renamed from: h, reason: collision with root package name */
-    private String f21177h;
+    private String f21964h;
 
-    b(int i6, String str) {
-        this.f21176g = i6;
-        this.f21177h = str;
+    b(int i4, String str) {
+        this.f21963g = i4;
+        this.f21964h = str;
     }
 
     private static /* synthetic */ b[] c() {
@@ -26,10 +26,10 @@ public enum b implements a {
     }
 
     public final int a() {
-        return this.f21176g;
+        return this.f21963g;
     }
 
     public final String b() {
-        return this.f21177h;
+        return this.f21964h;
     }
 }

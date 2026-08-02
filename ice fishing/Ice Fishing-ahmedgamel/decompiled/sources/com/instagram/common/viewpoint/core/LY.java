@@ -18,18 +18,18 @@ public class LY {
         return this;
     }
 
-    public final LY A02(boolean z3) {
-        this.A02 = z3;
+    public final LY A02(boolean z6) {
+        this.A02 = z6;
         return this;
     }
 
-    public final LY A03(boolean z3) {
-        this.A03 = z3;
+    public final LY A03(boolean z6) {
+        this.A03 = z6;
         return this;
     }
 
-    public final LY A04(boolean z3) {
-        this.A04 = z3;
+    public final LY A04(boolean z6) {
+        this.A04 = z6;
         return this;
     }
 

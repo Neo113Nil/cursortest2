@@ -9,192 +9,192 @@ import java.util.List;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    private Context f21138a;
+    private Context f21925a;
 
     /* renamed from: b, reason: collision with root package name */
-    private String f21139b;
+    private String f21926b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f21140c;
+    private int f21927c;
 
     /* renamed from: d, reason: collision with root package name */
-    private float f21141d;
+    private float f21928d;
 
     /* renamed from: e, reason: collision with root package name */
-    private float f21142e;
+    private float f21929e;
 
     /* renamed from: f, reason: collision with root package name */
-    private int f21143f;
+    private int f21930f;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f21144g;
+    private int f21931g;
 
     /* renamed from: h, reason: collision with root package name */
-    private View f21145h;
+    private View f21932h;
     private List<d> i;
 
     /* renamed from: j, reason: collision with root package name */
-    private int f21146j;
+    private int f21933j;
 
     /* renamed from: k, reason: collision with root package name */
-    private boolean f21147k;
+    private boolean f21934k;
 
     /* renamed from: l, reason: collision with root package name */
-    private List<String> f21148l;
+    private List<String> f21935l;
 
     /* renamed from: m, reason: collision with root package name */
-    private int f21149m;
+    private int f21936m;
 
     /* renamed from: n, reason: collision with root package name */
-    private String f21150n;
+    private String f21937n;
 
     /* renamed from: o, reason: collision with root package name */
-    private int f21151o;
+    private int f21938o;
 
     /* renamed from: p, reason: collision with root package name */
-    private int f21152p;
+    private int f21939p;
 
     /* renamed from: q, reason: collision with root package name */
-    private String f21153q;
+    private String f21940q;
 
     public static class a implements b {
 
         /* renamed from: a, reason: collision with root package name */
-        private Context f21154a;
+        private Context f21941a;
 
         /* renamed from: b, reason: collision with root package name */
-        private String f21155b;
+        private String f21942b;
 
         /* renamed from: c, reason: collision with root package name */
-        private int f21156c;
+        private int f21943c;
 
         /* renamed from: d, reason: collision with root package name */
-        private float f21157d;
+        private float f21944d;
 
         /* renamed from: e, reason: collision with root package name */
-        private float f21158e;
+        private float f21945e;
 
         /* renamed from: f, reason: collision with root package name */
-        private int f21159f;
+        private int f21946f;
 
         /* renamed from: g, reason: collision with root package name */
-        private int f21160g;
+        private int f21947g;
 
         /* renamed from: h, reason: collision with root package name */
-        private View f21161h;
+        private View f21948h;
         private List<d> i;
 
         /* renamed from: j, reason: collision with root package name */
-        private int f21162j;
+        private int f21949j;
 
         /* renamed from: k, reason: collision with root package name */
-        private boolean f21163k;
+        private boolean f21950k;
 
         /* renamed from: l, reason: collision with root package name */
-        private List<String> f21164l;
+        private List<String> f21951l;
 
         /* renamed from: m, reason: collision with root package name */
-        private int f21165m;
+        private int f21952m;
 
         /* renamed from: n, reason: collision with root package name */
-        private String f21166n;
+        private String f21953n;
 
         /* renamed from: o, reason: collision with root package name */
-        private int f21167o;
+        private int f21954o;
 
         /* renamed from: p, reason: collision with root package name */
-        private int f21168p = 1;
+        private int f21955p = 1;
 
         /* renamed from: q, reason: collision with root package name */
-        private String f21169q;
+        private String f21956q;
 
         @Override // com.anythink.expressad.video.dynview.c.b
         public final b a(Context context) {
-            this.f21154a = context.getApplicationContext();
+            this.f21941a = context.getApplicationContext();
             return this;
         }
 
         @Override // com.anythink.expressad.video.dynview.c.b
-        public final b b(float f3) {
-            this.f21158e = f3;
+        public final b b(float f2) {
+            this.f21945e = f2;
             return this;
         }
 
         @Override // com.anythink.expressad.video.dynview.c.b
         public final b c(int i) {
-            this.f21160g = i;
+            this.f21947g = i;
             return this;
         }
 
         @Override // com.anythink.expressad.video.dynview.c.b
         public final b d(int i) {
-            this.f21162j = i;
+            this.f21949j = i;
             return this;
         }
 
         @Override // com.anythink.expressad.video.dynview.c.b
         public final b e(int i) {
-            this.f21165m = i;
+            this.f21952m = i;
             return this;
         }
 
         @Override // com.anythink.expressad.video.dynview.c.b
         public final b f(int i) {
-            this.f21167o = i;
+            this.f21954o = i;
             return this;
         }
 
         @Override // com.anythink.expressad.video.dynview.c.b
         public final b g(int i) {
-            this.f21168p = i;
+            this.f21955p = i;
             return this;
         }
 
         @Override // com.anythink.expressad.video.dynview.c.b
         public final b a(String str) {
-            this.f21155b = str;
+            this.f21942b = str;
             return this;
         }
 
         @Override // com.anythink.expressad.video.dynview.c.b
         public final b b(int i) {
-            this.f21159f = i;
+            this.f21946f = i;
             return this;
         }
 
         @Override // com.anythink.expressad.video.dynview.c.b
         public final b c(String str) {
-            this.f21169q = str;
+            this.f21956q = str;
             return this;
         }
 
         @Override // com.anythink.expressad.video.dynview.c.b
         public final b a(int i) {
-            this.f21156c = i;
+            this.f21943c = i;
             return this;
         }
 
         @Override // com.anythink.expressad.video.dynview.c.b
         public final b b(List<String> list) {
-            this.f21164l = list;
+            this.f21951l = list;
             return this;
         }
 
         @Override // com.anythink.expressad.video.dynview.c.b
-        public final b a(float f3) {
-            this.f21157d = f3;
+        public final b a(float f2) {
+            this.f21944d = f2;
             return this;
         }
 
         @Override // com.anythink.expressad.video.dynview.c.b
         public final b b(String str) {
-            this.f21166n = str;
+            this.f21953n = str;
             return this;
         }
 
         @Override // com.anythink.expressad.video.dynview.c.b
         public final b a(View view) {
-            this.f21161h = view;
+            this.f21948h = view;
             return this;
         }
 
@@ -205,8 +205,8 @@ public final class c {
         }
 
         @Override // com.anythink.expressad.video.dynview.c.b
-        public final b a(boolean z3) {
-            this.f21163k = z3;
+        public final b a(boolean z6) {
+            this.f21950k = z6;
             return this;
         }
 
@@ -217,7 +217,7 @@ public final class c {
     }
 
     public interface b {
-        b a(float f3);
+        b a(float f2);
 
         b a(int i);
 
@@ -229,11 +229,11 @@ public final class c {
 
         b a(List<d> list);
 
-        b a(boolean z3);
+        b a(boolean z6);
 
         c a();
 
-        b b(float f3);
+        b b(float f2);
 
         b b(int i);
 
@@ -259,15 +259,15 @@ public final class c {
     }
 
     private List<String> o() {
-        return this.f21148l;
+        return this.f21935l;
     }
 
     private int p() {
-        return this.f21149m;
+        return this.f21936m;
     }
 
     private String q() {
-        return this.f21150n;
+        return this.f21937n;
     }
 
     private static a r() {
@@ -275,27 +275,27 @@ public final class c {
     }
 
     public final Context a() {
-        return this.f21138a;
+        return this.f21925a;
     }
 
     public final String b() {
-        return this.f21139b;
+        return this.f21926b;
     }
 
     public final float c() {
-        return this.f21141d;
+        return this.f21928d;
     }
 
     public final float d() {
-        return this.f21142e;
+        return this.f21929e;
     }
 
     public final int e() {
-        return this.f21143f;
+        return this.f21930f;
     }
 
     public final View f() {
-        return this.f21145h;
+        return this.f21932h;
     }
 
     public final List<d> g() {
@@ -303,47 +303,47 @@ public final class c {
     }
 
     public final int h() {
-        return this.f21140c;
+        return this.f21927c;
     }
 
     public final int i() {
-        return this.f21146j;
+        return this.f21933j;
     }
 
     public final int j() {
-        return this.f21144g;
+        return this.f21931g;
     }
 
     public final boolean k() {
-        return this.f21147k;
+        return this.f21934k;
     }
 
     public final int l() {
-        return this.f21151o;
+        return this.f21938o;
     }
 
     public final int m() {
-        return this.f21152p;
+        return this.f21939p;
     }
 
     public final String n() {
-        return this.f21153q;
+        return this.f21940q;
     }
 
     private c(a aVar) {
-        this.f21142e = aVar.f21158e;
-        this.f21141d = aVar.f21157d;
-        this.f21143f = aVar.f21159f;
-        this.f21144g = aVar.f21160g;
-        this.f21138a = aVar.f21154a;
-        this.f21139b = aVar.f21155b;
-        this.f21140c = aVar.f21156c;
-        this.f21145h = aVar.f21161h;
+        this.f21929e = aVar.f21945e;
+        this.f21928d = aVar.f21944d;
+        this.f21930f = aVar.f21946f;
+        this.f21931g = aVar.f21947g;
+        this.f21925a = aVar.f21941a;
+        this.f21926b = aVar.f21942b;
+        this.f21927c = aVar.f21943c;
+        this.f21932h = aVar.f21948h;
         this.i = aVar.i;
-        this.f21146j = aVar.f21162j;
-        this.f21147k = aVar.f21163k;
-        this.f21148l = aVar.f21164l;
-        this.f21149m = aVar.f21165m;
-        this.f21150n = aVar.f21166n;
+        this.f21933j = aVar.f21949j;
+        this.f21934k = aVar.f21950k;
+        this.f21935l = aVar.f21951l;
+        this.f21936m = aVar.f21952m;
+        this.f21937n = aVar.f21953n;
     }
 }

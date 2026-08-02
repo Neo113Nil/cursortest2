@@ -1,23 +1,37 @@
 package Y1;
 
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: classes.dex */
-public final class d implements V3.d {
+public final class d {
 
-    /* renamed from: a, reason: collision with root package name */
-    public static final d f3886a = new d();
+    /* renamed from: n, reason: collision with root package name */
+    public static final d f3904n;
 
-    /* renamed from: b, reason: collision with root package name */
-    public static final V3.c f3887b = V3.c.a("clientType");
+    /* renamed from: u, reason: collision with root package name */
+    public static final d f3905u;
 
-    /* renamed from: c, reason: collision with root package name */
-    public static final V3.c f3888c = V3.c.a("androidClientInfo");
+    /* renamed from: v, reason: collision with root package name */
+    public static final d f3906v;
 
-    @Override // V3.a
-    public final void a(Object obj, Object obj2) {
-        V3.e eVar = (V3.e) obj2;
-        j jVar = (j) ((q) obj);
-        jVar.getClass();
-        eVar.c(f3887b, p.f3937n);
-        eVar.c(f3888c, jVar.f3920a);
+    /* renamed from: w, reason: collision with root package name */
+    public static final /* synthetic */ d[] f3907w;
+
+    static {
+        d dVar = new d("DEFAULT", 0);
+        f3904n = dVar;
+        d dVar2 = new d("VERY_LOW", 1);
+        f3905u = dVar2;
+        d dVar3 = new d("HIGHEST", 2);
+        f3906v = dVar3;
+        f3907w = new d[]{dVar, dVar2, dVar3};
+    }
+
+    public static d valueOf(String str) {
+        return (d) Enum.valueOf(d.class, str);
+    }
+
+    public static d[] values() {
+        return (d[]) f3907w.clone();
     }
 }

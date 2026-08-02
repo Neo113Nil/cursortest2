@@ -6,26 +6,26 @@ import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 public abstract class c0 extends X7.k implements H, V, I7.l {
 
     /* renamed from: w, reason: collision with root package name */
-    public h0 f2947w;
+    public h0 f3030w;
 
     @Override // S7.H
     public final void b() {
         AtomicReferenceFieldUpdater atomicReferenceFieldUpdater;
         AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2;
-        h0 h9 = h();
+        h0 h3 = h();
         while (true) {
-            Object C8 = h9.C();
+            Object C8 = h3.C();
             if (C8 instanceof c0) {
                 if (C8 != this) {
                     return;
                 }
-                J j6 = AbstractC0406y.f3015j;
+                J j6 = AbstractC0410y.f3098j;
                 do {
-                    atomicReferenceFieldUpdater2 = h0.f2970n;
-                    if (atomicReferenceFieldUpdater2.compareAndSet(h9, C8, j6)) {
+                    atomicReferenceFieldUpdater2 = h0.f3053n;
+                    if (atomicReferenceFieldUpdater2.compareAndSet(h3, C8, j6)) {
                         return;
                     }
-                } while (atomicReferenceFieldUpdater2.get(h9) == C8);
+                } while (atomicReferenceFieldUpdater2.get(h3) == C8);
             } else {
                 if (!(C8 instanceof V) || ((V) C8).k() == null) {
                     return;
@@ -33,7 +33,7 @@ public abstract class c0 extends X7.k implements H, V, I7.l {
                 while (true) {
                     Object e9 = e();
                     if (e9 instanceof X7.q) {
-                        X7.k kVar = ((X7.q) e9).f3857a;
+                        X7.k kVar = ((X7.q) e9).f3812a;
                         return;
                     }
                     if (e9 == this) {
@@ -41,14 +41,14 @@ public abstract class c0 extends X7.k implements H, V, I7.l {
                     }
                     kotlin.jvm.internal.h.c(e9, "null cannot be cast to non-null type kotlinx.coroutines.internal.LockFreeLinkedListNode{ kotlinx.coroutines.internal.LockFreeLinkedListKt.Node }");
                     X7.k kVar2 = (X7.k) e9;
-                    AtomicReferenceFieldUpdater atomicReferenceFieldUpdater3 = X7.k.f3846v;
+                    AtomicReferenceFieldUpdater atomicReferenceFieldUpdater3 = X7.k.f3801v;
                     X7.q qVar = (X7.q) atomicReferenceFieldUpdater3.get(kVar2);
                     if (qVar == null) {
                         qVar = new X7.q(kVar2);
                         atomicReferenceFieldUpdater3.set(kVar2, qVar);
                     }
                     do {
-                        atomicReferenceFieldUpdater = X7.k.f3844n;
+                        atomicReferenceFieldUpdater = X7.k.f3799n;
                         if (atomicReferenceFieldUpdater.compareAndSet(this, e9, qVar)) {
                             kVar2.c();
                             return;
@@ -64,7 +64,7 @@ public abstract class c0 extends X7.k implements H, V, I7.l {
     }
 
     public final h0 h() {
-        h0 h0Var = this.f2947w;
+        h0 h0Var = this.f3030w;
         if (h0Var != null) {
             return h0Var;
         }
@@ -86,6 +86,6 @@ public abstract class c0 extends X7.k implements H, V, I7.l {
 
     @Override // X7.k
     public final String toString() {
-        return getClass().getSimpleName() + '@' + AbstractC0406y.j(this) + "[job@" + AbstractC0406y.j(h()) + ']';
+        return getClass().getSimpleName() + '@' + AbstractC0410y.j(this) + "[job@" + AbstractC0410y.j(h()) + ']';
     }
 }

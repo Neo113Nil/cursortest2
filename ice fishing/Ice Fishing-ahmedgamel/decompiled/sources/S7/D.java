@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 public final class D extends X7.s {
 
     /* renamed from: x, reason: collision with root package name */
-    public static final /* synthetic */ AtomicIntegerFieldUpdater f2913x = AtomicIntegerFieldUpdater.newUpdater(D.class, "_decision$volatile");
+    public static final /* synthetic */ AtomicIntegerFieldUpdater f2996x = AtomicIntegerFieldUpdater.newUpdater(D.class, "_decision$volatile");
     private volatile /* synthetic */ int _decision$volatile;
 
     @Override // X7.s, S7.h0
@@ -18,13 +18,13 @@ public final class D extends X7.s {
     public final void k(Object obj) {
         AtomicIntegerFieldUpdater atomicIntegerFieldUpdater;
         do {
-            atomicIntegerFieldUpdater = f2913x;
+            atomicIntegerFieldUpdater = f2996x;
             int i = atomicIntegerFieldUpdater.get(this);
             if (i != 0) {
                 if (i != 1) {
                     throw new IllegalStateException("Already resumed");
                 }
-                X7.a.h(AbstractC0406y.q(obj), A8.b.l(this.f3858w));
+                X7.a.h(AbstractC0410y.q(obj), A8.b.n(this.f3813w));
                 return;
             }
         } while (!atomicIntegerFieldUpdater.compareAndSet(this, 0, 2));

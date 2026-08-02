@@ -3,25 +3,25 @@ package com.onesignal.location.internal;
 import B7.h;
 import I7.l;
 import I7.p;
-import S7.AbstractC0406y;
-import S7.InterfaceC0404w;
+import S7.AbstractC0410y;
+import S7.InterfaceC0408w;
 import X7.o;
-import a5.InterfaceC0437a;
-import c5.InterfaceC0543a;
+import a5.InterfaceC0441a;
+import c5.InterfaceC0554a;
 import com.onesignal.common.AndroidUtils;
-import f5.InterfaceC4510a;
+import f5.InterfaceC4520a;
 import java.util.List;
 import u7.v;
-import v7.AbstractC5130k;
+import v7.AbstractC5120k;
 import x4.f;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
-public final class a implements InterfaceC0437a, com.onesignal.core.internal.startup.b, com.onesignal.location.internal.permissions.a {
+public final class a implements InterfaceC0441a, com.onesignal.core.internal.startup.b, com.onesignal.location.internal.permissions.a {
     private final f _applicationService;
-    private final InterfaceC0543a _capturer;
+    private final InterfaceC0554a _capturer;
     private boolean _isShared;
-    private final InterfaceC4510a _locationController;
+    private final InterfaceC4520a _locationController;
     private final com.onesignal.location.internal.permissions.b _locationPermissionController;
     private final J4.b _prefs;
 
@@ -29,21 +29,21 @@ public final class a implements InterfaceC0437a, com.onesignal.core.internal.sta
     public static final class C0218a extends h implements l {
         int label;
 
-        public C0218a(InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public C0218a(InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return a.this.new C0218a(interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return a.this.new C0218a(interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 a aVar2 = a.this;
                 this.label = 1;
                 if (aVar2.startGetLocation(this) == aVar) {
@@ -53,14 +53,14 @@ public final class a implements InterfaceC0437a, com.onesignal.core.internal.sta
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return v.f41353a;
+            return v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((C0218a) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((C0218a) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -69,8 +69,8 @@ public final class a implements InterfaceC0437a, com.onesignal.core.internal.sta
         int label;
         /* synthetic */ Object result;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -87,19 +87,19 @@ public final class a implements InterfaceC0437a, com.onesignal.core.internal.sta
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public c(kotlin.jvm.internal.p pVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public c(kotlin.jvm.internal.p pVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$result = pVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return a.this.new c(this.$result, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return a.this.new c(this.$result, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((c) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((c) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:36:0x00a0, code lost:
@@ -115,16 +115,16 @@ public final class a implements InterfaceC0437a, com.onesignal.core.internal.sta
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public final Object invokeSuspend(Object obj) {
-            boolean z3;
+            boolean z6;
             Object backgroundLocationPermissionLogic;
             kotlin.jvm.internal.p pVar;
             kotlin.jvm.internal.p pVar2;
             Object prompt;
             kotlin.jvm.internal.p pVar3;
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 String str = null;
                 if (!a.this.isShared()) {
                     com.onesignal.debug.internal.logging.b.warn$default("Requesting location permission, but location sharing must also be enabled by setting isShared to true", null, 2, null);
@@ -132,27 +132,27 @@ public final class a implements InterfaceC0437a, com.onesignal.core.internal.sta
                 AndroidUtils androidUtils = AndroidUtils.INSTANCE;
                 boolean hasPermission = androidUtils.hasPermission("android.permission.ACCESS_FINE_LOCATION", true, a.this._applicationService);
                 if (hasPermission) {
-                    z3 = false;
+                    z6 = false;
                 } else {
-                    z3 = androidUtils.hasPermission("android.permission.ACCESS_COARSE_LOCATION", true, a.this._applicationService);
+                    z6 = androidUtils.hasPermission("android.permission.ACCESS_COARSE_LOCATION", true, a.this._applicationService);
                     a.this._capturer.setLocationCoarse(true);
                 }
                 int androidSDKInt = androidUtils.getAndroidSDKInt();
                 boolean hasPermission2 = androidSDKInt >= 29 ? androidUtils.hasPermission("android.permission.ACCESS_BACKGROUND_LOCATION", true, a.this._applicationService) : false;
                 if (androidSDKInt < 23) {
-                    if (!hasPermission && !z3) {
+                    if (!hasPermission && !z6) {
                         com.onesignal.debug.internal.logging.b.info$default("Location permissions not added on AndroidManifest file < M", null, 2, null);
                         return Boolean.FALSE;
                     }
                     a aVar2 = a.this;
                     this.label = 1;
                 } else if (!hasPermission) {
-                    List<String> filterManifestPermissions = androidUtils.filterManifestPermissions(AbstractC5130k.v("android.permission.ACCESS_FINE_LOCATION", "android.permission.ACCESS_COARSE_LOCATION", "android.permission.ACCESS_BACKGROUND_LOCATION"), a.this._applicationService);
+                    List<String> filterManifestPermissions = androidUtils.filterManifestPermissions(AbstractC5120k.t("android.permission.ACCESS_FINE_LOCATION", "android.permission.ACCESS_COARSE_LOCATION", "android.permission.ACCESS_BACKGROUND_LOCATION"), a.this._applicationService);
                     if (filterManifestPermissions.contains("android.permission.ACCESS_FINE_LOCATION")) {
                         str = "android.permission.ACCESS_FINE_LOCATION";
                     } else if (!filterManifestPermissions.contains("android.permission.ACCESS_COARSE_LOCATION")) {
                         com.onesignal.debug.internal.logging.b.info$default("Location permissions not added on AndroidManifest file >= M", null, 2, null);
-                    } else if (!z3) {
+                    } else if (!z6) {
                         str = "android.permission.ACCESS_COARSE_LOCATION";
                     } else if (androidSDKInt >= 29 && filterManifestPermissions.contains("android.permission.ACCESS_BACKGROUND_LOCATION")) {
                         str = "android.permission.ACCESS_BACKGROUND_LOCATION";
@@ -165,13 +165,13 @@ public final class a implements InterfaceC0437a, com.onesignal.core.internal.sta
                         prompt = bVar.prompt(true, str, this);
                         if (prompt != aVar) {
                             pVar3 = pVar2;
-                            z3 = ((Boolean) prompt).booleanValue();
+                            z6 = ((Boolean) prompt).booleanValue();
                             pVar2 = pVar3;
                         }
                     }
-                    pVar2.f38715n = z3;
+                    pVar2.f38642n = z6;
                 } else if (androidSDKInt < 29 || hasPermission2) {
-                    this.$result.f38715n = true;
+                    this.$result.f38642n = true;
                     a aVar3 = a.this;
                     this.label = 4;
                 } else {
@@ -182,54 +182,54 @@ public final class a implements InterfaceC0437a, com.onesignal.core.internal.sta
                     backgroundLocationPermissionLogic = aVar4.backgroundLocationPermissionLogic(true, this);
                     if (backgroundLocationPermissionLogic != aVar) {
                         pVar = pVar4;
-                        pVar.f38715n = ((Boolean) backgroundLocationPermissionLogic).booleanValue();
+                        pVar.f38642n = ((Boolean) backgroundLocationPermissionLogic).booleanValue();
                     }
                 }
                 return aVar;
             }
             if (i == 1) {
-                com.bumptech.glide.d.k(obj);
-                this.$result.f38715n = true;
+                Q3.b.s(obj);
+                this.$result.f38642n = true;
             } else if (i == 2) {
                 pVar3 = (kotlin.jvm.internal.p) this.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 prompt = obj;
-                z3 = ((Boolean) prompt).booleanValue();
+                z6 = ((Boolean) prompt).booleanValue();
                 pVar2 = pVar3;
-                pVar2.f38715n = z3;
+                pVar2.f38642n = z6;
             } else if (i == 3) {
                 pVar = (kotlin.jvm.internal.p) this.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 backgroundLocationPermissionLogic = obj;
-                pVar.f38715n = ((Boolean) backgroundLocationPermissionLogic).booleanValue();
+                pVar.f38642n = ((Boolean) backgroundLocationPermissionLogic).booleanValue();
             } else {
                 if (i != 4) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
     public static final class d extends h implements l {
         int label;
 
-        public d(InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public d(InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return a.this.new d(interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return a.this.new d(interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 a aVar2 = a.this;
                 this.label = 1;
                 if (aVar2.startGetLocation(this) == aVar) {
@@ -239,14 +239,14 @@ public final class a implements InterfaceC0437a, com.onesignal.core.internal.sta
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return v.f41353a;
+            return v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((d) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((d) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -254,8 +254,8 @@ public final class a implements InterfaceC0437a, com.onesignal.core.internal.sta
         int label;
         /* synthetic */ Object result;
 
-        public e(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public e(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -266,7 +266,7 @@ public final class a implements InterfaceC0437a, com.onesignal.core.internal.sta
         }
     }
 
-    public a(f _applicationService, InterfaceC0543a _capturer, InterfaceC4510a _locationController, com.onesignal.location.internal.permissions.b _locationPermissionController, J4.b _prefs) {
+    public a(f _applicationService, InterfaceC0554a _capturer, InterfaceC4520a _locationController, com.onesignal.location.internal.permissions.b _locationPermissionController, J4.b _prefs) {
         kotlin.jvm.internal.h.e(_applicationService, "_applicationService");
         kotlin.jvm.internal.h.e(_capturer, "_capturer");
         kotlin.jvm.internal.h.e(_locationController, "_locationController");
@@ -283,8 +283,8 @@ public final class a implements InterfaceC0437a, com.onesignal.core.internal.sta
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final Object backgroundLocationPermissionLogic(boolean z3, InterfaceC5267d interfaceC5267d) {
-        return AndroidUtils.INSTANCE.hasPermission("android.permission.ACCESS_BACKGROUND_LOCATION", false, this._applicationService) ? this._locationPermissionController.prompt(z3, "android.permission.ACCESS_BACKGROUND_LOCATION", interfaceC5267d) : Boolean.TRUE;
+    public final Object backgroundLocationPermissionLogic(boolean z6, InterfaceC5240d interfaceC5240d) {
+        return AndroidUtils.INSTANCE.hasPermission("android.permission.ACCESS_BACKGROUND_LOCATION", false, this._applicationService) ? this._locationPermissionController.prompt(z6, "android.permission.ACCESS_BACKGROUND_LOCATION", interfaceC5240d) : Boolean.TRUE;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -303,28 +303,28 @@ public final class a implements InterfaceC0437a, com.onesignal.core.internal.sta
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object startGetLocation(InterfaceC5267d interfaceC5267d) {
+    public final Object startGetLocation(InterfaceC5240d interfaceC5240d) {
         e eVar;
         Object obj;
         int i;
-        if (interfaceC5267d instanceof e) {
-            eVar = (e) interfaceC5267d;
-            int i6 = eVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                eVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof e) {
+            eVar = (e) interfaceC5240d;
+            int i4 = eVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                eVar.label = i4 - Integer.MIN_VALUE;
                 obj = eVar.result;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 i = eVar.label;
-                v vVar = v.f41353a;
+                v vVar = v.f41073a;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     if (!isShared()) {
                         return vVar;
                     }
                     com.onesignal.debug.internal.logging.b.debug$default("LocationManager.startGetLocation()", null, 2, null);
-                    InterfaceC4510a interfaceC4510a = this._locationController;
+                    InterfaceC4520a interfaceC4520a = this._locationController;
                     eVar.label = 1;
-                    obj = interfaceC4510a.start(eVar);
+                    obj = interfaceC4520a.start(eVar);
                     if (obj == aVar) {
                         return aVar;
                     }
@@ -332,7 +332,7 @@ public final class a implements InterfaceC0437a, com.onesignal.core.internal.sta
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 if (!((Boolean) obj).booleanValue()) {
                     com.onesignal.debug.internal.logging.b.warn$default("LocationManager.startGetLocation: not possible, no location dependency found", null, 2, null);
@@ -340,11 +340,11 @@ public final class a implements InterfaceC0437a, com.onesignal.core.internal.sta
                 return vVar;
             }
         }
-        eVar = new e(interfaceC5267d);
+        eVar = new e(interfaceC5240d);
         obj = eVar.result;
-        A7.a aVar2 = A7.a.f58n;
+        A7.a aVar2 = A7.a.f215n;
         i = eVar.label;
-        v vVar2 = v.f41353a;
+        v vVar2 = v.f41073a;
         if (i != 0) {
         }
         if (!((Boolean) obj).booleanValue()) {
@@ -352,45 +352,45 @@ public final class a implements InterfaceC0437a, com.onesignal.core.internal.sta
         return vVar2;
     }
 
-    @Override // a5.InterfaceC0437a
+    @Override // a5.InterfaceC0441a
     public boolean isShared() {
         return this._isShared;
     }
 
     @Override // com.onesignal.location.internal.permissions.a
-    public void onLocationPermissionChanged(boolean z3) {
-        if (z3) {
+    public void onLocationPermissionChanged(boolean z6) {
+        if (z6) {
             com.onesignal.common.threading.c.suspendifyOnIO(new C0218a(null));
         }
     }
 
     /* JADX WARN: Removed duplicated region for block: B:15:0x0033  */
     /* JADX WARN: Removed duplicated region for block: B:8:0x0021  */
-    @Override // a5.InterfaceC0437a
+    @Override // a5.InterfaceC0441a
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object requestPermission(InterfaceC5267d interfaceC5267d) {
+    public Object requestPermission(InterfaceC5240d interfaceC5240d) {
         b bVar;
         int i;
         kotlin.jvm.internal.p pVar;
-        if (interfaceC5267d instanceof b) {
-            bVar = (b) interfaceC5267d;
-            int i6 = bVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                bVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof b) {
+            bVar = (b) interfaceC5240d;
+            int i4 = bVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                bVar.label = i4 - Integer.MIN_VALUE;
                 Object obj = bVar.result;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 i = bVar.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "LocationManager.requestPermission()");
                     kotlin.jvm.internal.p pVar2 = new kotlin.jvm.internal.p();
-                    T7.e eVar = o.f3856a;
+                    T7.e eVar = o.f3811a;
                     c cVar = new c(pVar2, null);
                     bVar.L$0 = pVar2;
                     bVar.label = 1;
-                    if (AbstractC0406y.y(eVar, cVar, bVar) == aVar) {
+                    if (AbstractC0410y.y(eVar, cVar, bVar) == aVar) {
                         return aVar;
                     }
                     pVar = pVar2;
@@ -399,26 +399,26 @@ public final class a implements InterfaceC0437a, com.onesignal.core.internal.sta
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     pVar = (kotlin.jvm.internal.p) bVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
-                return Boolean.valueOf(pVar.f38715n);
+                return Boolean.valueOf(pVar.f38642n);
             }
         }
-        bVar = new b(interfaceC5267d);
+        bVar = new b(interfaceC5240d);
         Object obj2 = bVar.result;
-        A7.a aVar2 = A7.a.f58n;
+        A7.a aVar2 = A7.a.f215n;
         i = bVar.label;
         if (i != 0) {
         }
-        return Boolean.valueOf(pVar.f38715n);
+        return Boolean.valueOf(pVar.f38642n);
     }
 
-    @Override // a5.InterfaceC0437a
-    public void setShared(boolean z3) {
-        com.onesignal.debug.internal.logging.b.debug$default("LocationManager.setIsShared(value: " + z3 + ')', null, 2, null);
-        this._prefs.saveBool(com.onesignal.common.threading.b.BASE_THREAD_NAME, "OS_LOCATION_SHARED", Boolean.valueOf(z3));
-        this._isShared = z3;
-        onLocationPermissionChanged(z3);
+    @Override // a5.InterfaceC0441a
+    public void setShared(boolean z6) {
+        com.onesignal.debug.internal.logging.b.debug$default("LocationManager.setIsShared(value: " + z6 + ')', null, 2, null);
+        this._prefs.saveBool(com.onesignal.common.threading.b.BASE_THREAD_NAME, "OS_LOCATION_SHARED", Boolean.valueOf(z6));
+        this._isShared = z6;
+        onLocationPermissionChanged(z6);
     }
 
     @Override // com.onesignal.core.internal.startup.b

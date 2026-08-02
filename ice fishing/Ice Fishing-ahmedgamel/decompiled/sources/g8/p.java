@@ -1,128 +1,132 @@
 package g8;
 
-import D.H;
-import b8.C0530b;
-import b8.InterfaceC0529a;
-import f8.AbstractC4516c;
-import g1.C4523c;
+import D.G;
+import N3.C;
+import b8.C0538b;
+import b8.InterfaceC0537a;
+import f8.AbstractC4526c;
+import i1.C4585b;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.concurrent.ConcurrentHashMap;
-import v7.AbstractC5129j;
-import v7.AbstractC5130k;
+import v7.AbstractC5119j;
+import v7.AbstractC5120k;
+import w.AbstractC5128c;
 
 /* loaded from: classes2.dex */
-public final class p extends X2.e implements d8.b, d8.a {
+public final class p extends C implements d8.b, d8.a {
 
-    /* renamed from: h, reason: collision with root package name */
-    public final AbstractC4516c f37732h;
-    public final t i;
+    /* renamed from: b, reason: collision with root package name */
+    public final AbstractC4526c f37757b;
 
-    /* renamed from: j, reason: collision with root package name */
-    public final H f37733j;
+    /* renamed from: c, reason: collision with root package name */
+    public final t f37758c;
 
-    /* renamed from: k, reason: collision with root package name */
-    public int f37734k;
+    /* renamed from: d, reason: collision with root package name */
+    public final G f37759d;
 
-    /* renamed from: l, reason: collision with root package name */
-    public final f8.j f37735l;
+    /* renamed from: e, reason: collision with root package name */
+    public int f37760e;
 
-    /* renamed from: m, reason: collision with root package name */
-    public final i f37736m;
+    /* renamed from: f, reason: collision with root package name */
+    public final f8.j f37761f;
 
-    public p(AbstractC4516c json, t tVar, H h9, c8.e descriptor) {
+    /* renamed from: g, reason: collision with root package name */
+    public final i f37762g;
+
+    public p(AbstractC4526c json, t tVar, G g9, c8.e descriptor) {
         kotlin.jvm.internal.h.e(json, "json");
         kotlin.jvm.internal.h.e(descriptor, "descriptor");
-        this.f37732h = json;
-        this.i = tVar;
-        this.f37733j = h9;
-        this.f37734k = -1;
-        f8.j jVar = json.f37539a;
-        this.f37735l = jVar;
-        this.f37736m = jVar.f37557c ? null : new i(descriptor);
+        this.f37757b = json;
+        this.f37758c = tVar;
+        this.f37759d = g9;
+        this.f37760e = -1;
+        f8.j jVar = json.f37501a;
+        this.f37761f = jVar;
+        this.f37762g = jVar.f37519c ? null : new i(descriptor);
     }
 
-    @Override // X2.e
-    public final Object D(InterfaceC0529a deserializer) {
+    @Override // N3.C
+    public final Object E(InterfaceC0537a deserializer) {
         kotlin.jvm.internal.h.e(deserializer, "deserializer");
         try {
             return deserializer.b(this);
-        } catch (C0530b e9) {
+        } catch (C0538b e9) {
             String message = e9.getMessage();
             kotlin.jvm.internal.h.b(message);
-            if (Q7.j.U(message, "at path", false)) {
+            if (Q7.j.k0(message, "at path", false)) {
                 throw e9;
             }
-            String str = e9.getMessage() + " at path: " + ((F.d) this.f37733j.f437v).f();
+            String str = e9.getMessage() + " at path: " + ((F.d) this.f37759d.f334v).f();
             kotlin.jvm.internal.h.e(null, "missingFields");
-            throw new C0530b(str, e9);
+            throw new C0538b(str, e9);
         }
     }
 
-    public final f8.l T() {
-        return new G1.a(this.f37732h.f37539a, this.f37733j).j();
+    public final f8.l X() {
+        return new I1.a(this.f37757b.f37501a, this.f37759d).i();
     }
 
-    @Override // X2.e, d8.b
+    @Override // N3.C, d8.b
     public final boolean a() {
-        boolean z3;
         boolean z6;
-        H h9 = this.f37733j;
-        int t6 = h9.t();
-        String str = (String) h9.f440y;
+        boolean z9;
+        G g9 = this.f37759d;
+        int t6 = g9.t();
+        String str = (String) g9.f337y;
         if (t6 == str.length()) {
-            H.m(h9, "EOF", 0, 6);
+            G.n(g9, "EOF", 0, 6);
             throw null;
         }
         if (str.charAt(t6) == '\"') {
             t6++;
-            z3 = true;
+            z6 = true;
         } else {
-            z3 = false;
+            z6 = false;
         }
-        int s9 = h9.s(t6);
+        int s9 = g9.s(t6);
         if (s9 >= str.length() || s9 == -1) {
-            H.m(h9, "EOF", 0, 6);
+            G.n(g9, "EOF", 0, 6);
             throw null;
         }
         int i = s9 + 1;
         int charAt = str.charAt(s9) | ' ';
         if (charAt == 102) {
-            h9.c(i, "alse");
-            z6 = false;
+            g9.c(i, "alse");
+            z9 = false;
         } else {
             if (charAt != 116) {
-                H.m(h9, "Expected valid boolean literal prefix, but had '" + h9.j() + '\'', 0, 6);
+                G.n(g9, "Expected valid boolean literal prefix, but had '" + g9.j() + '\'', 0, 6);
                 throw null;
             }
-            h9.c(i, "rue");
-            z6 = true;
+            g9.c(i, "rue");
+            z9 = true;
         }
-        if (!z3) {
-            return z6;
+        if (!z6) {
+            return z9;
         }
-        if (h9.f436u == str.length()) {
-            H.m(h9, "EOF", 0, 6);
+        if (g9.f333u == str.length()) {
+            G.n(g9, "EOF", 0, 6);
             throw null;
         }
-        if (str.charAt(h9.f436u) == '\"') {
-            h9.f436u++;
-            return z6;
+        if (str.charAt(g9.f333u) == '\"') {
+            g9.f333u++;
+            return z9;
         }
-        H.m(h9, "Expected closing quotation mark", 0, 6);
+        G.n(g9, "Expected closing quotation mark", 0, 6);
         throw null;
     }
 
-    @Override // X2.e, d8.b
+    @Override // N3.C, d8.b
     public final char b() {
-        H h9 = this.f37733j;
-        String j6 = h9.j();
+        G g9 = this.f37759d;
+        String j6 = g9.j();
         if (j6.length() == 1) {
             return j6.charAt(0);
         }
-        H.m(h9, u1.h.b('\'', "Expected single char, but got '", j6), 0, 6);
+        G.n(g9, AbstractC5128c.b('\'', "Expected single char, but got '", j6), 0, 6);
         throw null;
     }
 
@@ -132,49 +136,49 @@ public final class p extends X2.e implements d8.b, d8.a {
         byte b10;
         Object invoke;
         kotlin.jvm.internal.h.e(descriptor, "descriptor");
-        t tVar = this.i;
+        t tVar = this.f37758c;
         int ordinal = tVar.ordinal();
-        H h9 = this.f37733j;
+        G g9 = this.f37759d;
         byte b11 = 1;
         int i = 0;
         r7 = false;
-        boolean z3 = false;
+        boolean z6 = false;
         Throwable th = null;
         char c9 = ':';
-        AbstractC4516c json = this.f37732h;
-        int i6 = -1;
-        F.d dVar = (F.d) h9.f437v;
+        AbstractC4526c json = this.f37757b;
+        int i4 = -1;
+        F.d dVar = (F.d) g9.f334v;
         if (ordinal == 0) {
-            boolean v9 = h9.v();
+            boolean v9 = g9.v();
             while (true) {
-                boolean b12 = h9.b();
+                boolean b12 = g9.b();
                 Throwable th2 = th;
-                i iVar = this.f37736m;
+                i iVar = this.f37762g;
                 if (b12) {
-                    f8.j jVar = this.f37735l;
-                    String name = h9.d();
-                    h9.g(c9);
+                    f8.j jVar = this.f37761f;
+                    String name = g9.d();
+                    g9.g(c9);
                     kotlin.jvm.internal.h.e(descriptor, "<this>");
                     kotlin.jvm.internal.h.e(json, "json");
                     kotlin.jvm.internal.h.e(name, "name");
                     l.g(descriptor, json);
                     int c10 = descriptor.c(name);
-                    if (c10 == -3 && json.f37539a.f37558d) {
-                        m mVar = l.f37719a;
+                    if (c10 == -3 && json.f37501a.f37520d) {
+                        m mVar = l.f37744a;
                         k kVar = new k(descriptor, json);
-                        C4523c c4523c = json.f37541c;
-                        c4523c.getClass();
-                        c4523c.getClass();
+                        C4585b c4585b = json.f37503c;
+                        c4585b.getClass();
+                        c4585b.getClass();
                         b9 = b11;
                         kotlin.jvm.internal.h.e(descriptor, "descriptor");
-                        Map map = (Map) ((ConcurrentHashMap) c4523c.f37627u).get(descriptor);
+                        Map map = (Map) ((ConcurrentHashMap) c4585b.f38152u).get(descriptor);
                         Object obj = map != null ? map.get(mVar) : null;
                         Object obj2 = obj != null ? obj : null;
                         if (obj2 != null) {
                             invoke = obj2;
                         } else {
                             invoke = kVar.invoke();
-                            ConcurrentHashMap concurrentHashMap = (ConcurrentHashMap) c4523c.f37627u;
+                            ConcurrentHashMap concurrentHashMap = (ConcurrentHashMap) c4585b.f38152u;
                             Object obj3 = concurrentHashMap.get(descriptor);
                             Object obj4 = obj3;
                             if (obj3 == null) {
@@ -191,55 +195,55 @@ public final class p extends X2.e implements d8.b, d8.a {
                     }
                     if (c10 != -3) {
                         if (iVar != null) {
-                            e8.r rVar = iVar.f37715a;
+                            e8.r rVar = iVar.f37740a;
                             if (c10 < 64) {
-                                rVar.f37317c |= 1 << c10;
+                                rVar.f37393c |= 1 << c10;
                             } else {
-                                int i9 = (c10 >>> 6) - 1;
-                                long[] jArr = rVar.f37318d;
-                                jArr[i9] = jArr[i9] | (1 << (c10 & 63));
+                                int i6 = (c10 >>> 6) - 1;
+                                long[] jArr = rVar.f37394d;
+                                jArr[i6] = jArr[i6] | (1 << (c10 & 63));
                             }
                         }
-                        i6 = c10;
+                        i4 = c10;
                     } else {
-                        boolean z6 = jVar.f37556b;
-                        String str = (String) h9.f440y;
-                        if (!z6) {
-                            h9.l(Q7.j.d0(6, str.subSequence(0, h9.f436u).toString(), name), u1.h.b('\'', "Encountered an unknown key '", name), "Use 'ignoreUnknownKeys = true' in 'Json {}' builder to ignore unknown keys.");
+                        boolean z9 = jVar.f37518b;
+                        String str = (String) g9.f337y;
+                        if (!z9) {
+                            g9.m(Q7.j.t0(6, str.subSequence(0, g9.f333u).toString(), name), AbstractC5128c.b('\'', "Encountered an unknown key '", name), "Use 'ignoreUnknownKeys = true' in 'Json {}' builder to ignore unknown keys.");
                             throw th2;
                         }
                         ArrayList arrayList = new ArrayList();
-                        byte r9 = h9.r();
+                        byte r9 = g9.r();
                         if (r9 == 8 || r9 == 6) {
                             while (true) {
-                                byte r10 = h9.r();
+                                byte r10 = g9.r();
                                 b10 = b9;
                                 if (r10 == b10) {
-                                    h9.d();
+                                    g9.d();
                                 } else {
                                     if (r10 == 8 || r10 == 6) {
                                         arrayList.add(Byte.valueOf(r10));
                                     } else if (r10 == 9) {
-                                        if (((Number) AbstractC5129j.F(arrayList)).byteValue() != 8) {
-                                            throw l.b(h9.f436u, str, "found ] instead of } at path: " + dVar);
+                                        if (((Number) AbstractC5119j.D(arrayList)).byteValue() != 8) {
+                                            throw l.b(g9.f333u, str, "found ] instead of } at path: " + dVar);
                                         }
                                         if (arrayList.isEmpty()) {
                                             throw new NoSuchElementException("List is empty.");
                                         }
-                                        arrayList.remove(AbstractC5130k.u(arrayList));
+                                        arrayList.remove(AbstractC5120k.s(arrayList));
                                     } else if (r10 == 7) {
-                                        if (((Number) AbstractC5129j.F(arrayList)).byteValue() != 6) {
-                                            throw l.b(h9.f436u, str, "found } instead of ] at path: " + dVar);
+                                        if (((Number) AbstractC5119j.D(arrayList)).byteValue() != 6) {
+                                            throw l.b(g9.f333u, str, "found } instead of ] at path: " + dVar);
                                         }
                                         if (arrayList.isEmpty()) {
                                             throw new NoSuchElementException("List is empty.");
                                         }
-                                        arrayList.remove(AbstractC5130k.u(arrayList));
+                                        arrayList.remove(AbstractC5120k.s(arrayList));
                                     } else if (r10 == 10) {
-                                        H.m(h9, "Unexpected end of input due to malformed JSON during ignoring unknown keys", 0, 6);
+                                        G.n(g9, "Unexpected end of input due to malformed JSON during ignoring unknown keys", 0, 6);
                                         throw th2;
                                     }
-                                    h9.e();
+                                    g9.e();
                                     if (arrayList.size() == 0) {
                                         break;
                                     }
@@ -247,10 +251,10 @@ public final class p extends X2.e implements d8.b, d8.a {
                                 b9 = b10;
                             }
                         } else {
-                            h9.j();
+                            g9.j();
                             b10 = b9;
                         }
-                        v9 = h9.v();
+                        v9 = g9.v();
                         b11 = b10;
                         th = th2;
                         i = 0;
@@ -258,239 +262,239 @@ public final class p extends X2.e implements d8.b, d8.a {
                     }
                 } else {
                     if (v9) {
-                        f8.j jVar2 = json.f37539a;
-                        l.e(h9, "object");
+                        f8.j jVar2 = json.f37501a;
+                        l.e(g9, "object");
                         throw th2;
                     }
                     if (iVar != null) {
-                        e8.r rVar2 = iVar.f37715a;
-                        c8.e eVar = rVar2.f37315a;
+                        e8.r rVar2 = iVar.f37740a;
+                        c8.e eVar = rVar2.f37391a;
                         int e9 = eVar.e();
                         while (true) {
-                            long j6 = rVar2.f37317c;
+                            long j6 = rVar2.f37393c;
                             long j9 = -1;
-                            h hVar = rVar2.f37316b;
+                            h hVar = rVar2.f37392b;
                             if (j6 != -1) {
                                 int numberOfTrailingZeros = Long.numberOfTrailingZeros(~j6);
-                                rVar2.f37317c |= 1 << numberOfTrailingZeros;
+                                rVar2.f37393c |= 1 << numberOfTrailingZeros;
                                 hVar.invoke(eVar, Integer.valueOf(numberOfTrailingZeros));
                                 if (Boolean.FALSE.booleanValue()) {
-                                    i6 = numberOfTrailingZeros;
+                                    i4 = numberOfTrailingZeros;
                                     break;
                                 }
                             } else if (e9 > 64) {
-                                long[] jArr2 = rVar2.f37318d;
+                                long[] jArr2 = rVar2.f37394d;
                                 int length = jArr2.length;
                                 loop3: while (i < length) {
-                                    int i10 = i + 1;
-                                    int i11 = i10 * 64;
+                                    int i9 = i + 1;
+                                    int i10 = i9 * 64;
                                     long j10 = jArr2[i];
                                     while (j10 != j9) {
                                         int numberOfTrailingZeros2 = Long.numberOfTrailingZeros(~j10);
                                         j10 |= 1 << numberOfTrailingZeros2;
-                                        int i12 = numberOfTrailingZeros2 + i11;
-                                        hVar.invoke(eVar, Integer.valueOf(i12));
+                                        int i11 = numberOfTrailingZeros2 + i10;
+                                        hVar.invoke(eVar, Integer.valueOf(i11));
                                         if (Boolean.FALSE.booleanValue()) {
                                             jArr2[i] = j10;
-                                            i6 = i12;
+                                            i4 = i11;
                                             break loop3;
                                         }
                                         j9 = -1;
                                     }
                                     jArr2[i] = j10;
-                                    i = i10;
+                                    i = i9;
                                     j9 = -1;
                                 }
                             }
                         }
                     }
-                    i6 = -1;
+                    i4 = -1;
                 }
             }
         } else if (ordinal != 2) {
-            boolean v10 = h9.v();
-            if (h9.b()) {
-                int i13 = this.f37734k;
-                if (i13 != -1 && !v10) {
-                    H.m(h9, "Expected end of the array or comma", 0, 6);
+            boolean v10 = g9.v();
+            if (g9.b()) {
+                int i12 = this.f37760e;
+                if (i12 != -1 && !v10) {
+                    G.n(g9, "Expected end of the array or comma", 0, 6);
                     throw null;
                 }
-                i6 = i13 + 1;
-                this.f37734k = i6;
+                i4 = i12 + 1;
+                this.f37760e = i4;
             } else if (v10) {
-                f8.j jVar3 = json.f37539a;
-                l.e(h9, "array");
+                f8.j jVar3 = json.f37501a;
+                l.e(g9, "array");
                 throw null;
             }
         } else {
-            int i14 = this.f37734k;
-            boolean z9 = i14 % 2 != 0;
-            if (!z9) {
-                h9.g(':');
-            } else if (i14 != -1) {
-                z3 = h9.v();
+            int i13 = this.f37760e;
+            boolean z10 = i13 % 2 != 0;
+            if (!z10) {
+                g9.g(':');
+            } else if (i13 != -1) {
+                z6 = g9.v();
             }
-            if (h9.b()) {
-                if (z9) {
-                    if (this.f37734k == -1) {
-                        int i15 = h9.f436u;
-                        if (z3) {
-                            H.m(h9, "Unexpected leading comma", i15, 4);
+            if (g9.b()) {
+                if (z10) {
+                    if (this.f37760e == -1) {
+                        int i14 = g9.f333u;
+                        if (z6) {
+                            G.n(g9, "Unexpected leading comma", i14, 4);
                             throw null;
                         }
                     } else {
-                        int i16 = h9.f436u;
-                        if (!z3) {
-                            H.m(h9, "Expected comma after the key-value pair", i16, 4);
+                        int i15 = g9.f333u;
+                        if (!z6) {
+                            G.n(g9, "Expected comma after the key-value pair", i15, 4);
                             throw null;
                         }
                     }
                 }
-                i6 = this.f37734k + 1;
-                this.f37734k = i6;
-            } else if (z3) {
-                f8.j jVar4 = json.f37539a;
-                l.e(h9, "object");
+                i4 = this.f37760e + 1;
+                this.f37760e = i4;
+            } else if (z6) {
+                f8.j jVar4 = json.f37501a;
+                l.e(g9, "object");
                 throw null;
             }
         }
-        if (tVar != t.f37749x) {
-            ((int[]) dVar.f856d)[dVar.f854b] = i6;
+        if (tVar != t.f37775x) {
+            ((int[]) dVar.f919d)[dVar.f917b] = i4;
+        }
+        return i4;
+    }
+
+    @Override // N3.C, d8.b
+    public final d8.b d(c8.e descriptor) {
+        kotlin.jvm.internal.h.e(descriptor, "descriptor");
+        return r.a(descriptor) ? new f(this.f37759d, this.f37757b) : this;
+    }
+
+    @Override // N3.C, d8.b
+    public final int e() {
+        G g9 = this.f37759d;
+        long h3 = g9.h();
+        int i = (int) h3;
+        if (h3 == i) {
+            return i;
+        }
+        G.n(g9, "Failed to parse int for input '" + h3 + '\'', 0, 6);
+        throw null;
+    }
+
+    @Override // N3.C, d8.b
+    public final String g() {
+        return this.f37759d.i();
+    }
+
+    @Override // N3.C, d8.b
+    public final d8.a h(c8.e descriptor) {
+        kotlin.jvm.internal.h.e(descriptor, "descriptor");
+        AbstractC4526c abstractC4526c = this.f37757b;
+        t h3 = l.h(descriptor, abstractC4526c);
+        G g9 = this.f37759d;
+        F.d dVar = (F.d) g9.f334v;
+        int i = dVar.f917b + 1;
+        dVar.f917b = i;
+        Object[] objArr = (Object[]) dVar.f918c;
+        if (i == objArr.length) {
+            int i4 = i * 2;
+            Object[] copyOf = Arrays.copyOf(objArr, i4);
+            kotlin.jvm.internal.h.d(copyOf, "copyOf(...)");
+            dVar.f918c = copyOf;
+            int[] copyOf2 = Arrays.copyOf((int[]) dVar.f919d, i4);
+            kotlin.jvm.internal.h.d(copyOf2, "copyOf(...)");
+            dVar.f919d = copyOf2;
+        }
+        ((Object[]) dVar.f918c)[i] = descriptor;
+        g9.g(h3.f37778n);
+        if (g9.r() != 4) {
+            int ordinal = h3.ordinal();
+            return (ordinal == 1 || ordinal == 2 || ordinal == 3) ? new p(abstractC4526c, h3, g9, descriptor) : (this.f37758c == h3 && abstractC4526c.f37501a.f37519c) ? this : new p(abstractC4526c, h3, g9, descriptor);
+        }
+        G.n(g9, "Unexpected leading comma", 0, 6);
+        throw null;
+    }
+
+    @Override // N3.C, d8.a
+    public final Object i(c8.e descriptor, int i, InterfaceC0537a deserializer, Object obj) {
+        kotlin.jvm.internal.h.e(descriptor, "descriptor");
+        kotlin.jvm.internal.h.e(deserializer, "deserializer");
+        boolean z6 = this.f37758c == t.f37775x && (i & 1) == 0;
+        F.d dVar = (F.d) this.f37759d.f334v;
+        if (z6) {
+            int[] iArr = (int[]) dVar.f919d;
+            int i4 = dVar.f917b;
+            if (iArr[i4] == -2) {
+                ((Object[]) dVar.f918c)[i4] = m.f37745a;
+            }
+        }
+        Object i6 = super.i(descriptor, i, deserializer, obj);
+        if (z6) {
+            int[] iArr2 = (int[]) dVar.f919d;
+            int i9 = dVar.f917b;
+            if (iArr2[i9] != -2) {
+                int i10 = i9 + 1;
+                dVar.f917b = i10;
+                Object[] objArr = (Object[]) dVar.f918c;
+                if (i10 == objArr.length) {
+                    int i11 = i10 * 2;
+                    Object[] copyOf = Arrays.copyOf(objArr, i11);
+                    kotlin.jvm.internal.h.d(copyOf, "copyOf(...)");
+                    dVar.f918c = copyOf;
+                    int[] copyOf2 = Arrays.copyOf((int[]) dVar.f919d, i11);
+                    kotlin.jvm.internal.h.d(copyOf2, "copyOf(...)");
+                    dVar.f919d = copyOf2;
+                }
+            }
+            Object[] objArr2 = (Object[]) dVar.f918c;
+            int i12 = dVar.f917b;
+            objArr2[i12] = i6;
+            ((int[]) dVar.f919d)[i12] = -2;
         }
         return i6;
     }
 
-    @Override // X2.e, d8.b
-    public final d8.b d(c8.e descriptor) {
-        kotlin.jvm.internal.h.e(descriptor, "descriptor");
-        return r.a(descriptor) ? new f(this.f37733j, this.f37732h) : this;
-    }
-
-    @Override // X2.e, d8.b
-    public final int e() {
-        H h9 = this.f37733j;
-        long h10 = h9.h();
-        int i = (int) h10;
-        if (h10 == i) {
-            return i;
-        }
-        H.m(h9, "Failed to parse int for input '" + h10 + '\'', 0, 6);
-        throw null;
-    }
-
-    @Override // X2.e, d8.b
-    public final String g() {
-        return this.f37733j.i();
-    }
-
-    @Override // X2.e, d8.b
-    public final d8.a h(c8.e descriptor) {
-        kotlin.jvm.internal.h.e(descriptor, "descriptor");
-        AbstractC4516c abstractC4516c = this.f37732h;
-        t h9 = l.h(descriptor, abstractC4516c);
-        H h10 = this.f37733j;
-        F.d dVar = (F.d) h10.f437v;
-        int i = dVar.f854b + 1;
-        dVar.f854b = i;
-        Object[] objArr = (Object[]) dVar.f855c;
-        if (i == objArr.length) {
-            int i6 = i * 2;
-            Object[] copyOf = Arrays.copyOf(objArr, i6);
-            kotlin.jvm.internal.h.d(copyOf, "copyOf(...)");
-            dVar.f855c = copyOf;
-            int[] copyOf2 = Arrays.copyOf((int[]) dVar.f856d, i6);
-            kotlin.jvm.internal.h.d(copyOf2, "copyOf(...)");
-            dVar.f856d = copyOf2;
-        }
-        ((Object[]) dVar.f855c)[i] = descriptor;
-        h10.g(h9.f37752n);
-        if (h10.r() != 4) {
-            int ordinal = h9.ordinal();
-            return (ordinal == 1 || ordinal == 2 || ordinal == 3) ? new p(abstractC4516c, h9, h10, descriptor) : (this.i == h9 && abstractC4516c.f37539a.f37557c) ? this : new p(abstractC4516c, h9, h10, descriptor);
-        }
-        H.m(h10, "Unexpected leading comma", 0, 6);
-        throw null;
-    }
-
-    @Override // X2.e, d8.a
-    public final Object i(c8.e descriptor, int i, InterfaceC0529a deserializer, Object obj) {
-        kotlin.jvm.internal.h.e(descriptor, "descriptor");
-        kotlin.jvm.internal.h.e(deserializer, "deserializer");
-        boolean z3 = this.i == t.f37749x && (i & 1) == 0;
-        F.d dVar = (F.d) this.f37733j.f437v;
-        if (z3) {
-            int[] iArr = (int[]) dVar.f856d;
-            int i6 = dVar.f854b;
-            if (iArr[i6] == -2) {
-                ((Object[]) dVar.f855c)[i6] = m.f37720a;
-            }
-        }
-        Object i9 = super.i(descriptor, i, deserializer, obj);
-        if (z3) {
-            int[] iArr2 = (int[]) dVar.f856d;
-            int i10 = dVar.f854b;
-            if (iArr2[i10] != -2) {
-                int i11 = i10 + 1;
-                dVar.f854b = i11;
-                Object[] objArr = (Object[]) dVar.f855c;
-                if (i11 == objArr.length) {
-                    int i12 = i11 * 2;
-                    Object[] copyOf = Arrays.copyOf(objArr, i12);
-                    kotlin.jvm.internal.h.d(copyOf, "copyOf(...)");
-                    dVar.f855c = copyOf;
-                    int[] copyOf2 = Arrays.copyOf((int[]) dVar.f856d, i12);
-                    kotlin.jvm.internal.h.d(copyOf2, "copyOf(...)");
-                    dVar.f856d = copyOf2;
-                }
-            }
-            Object[] objArr2 = (Object[]) dVar.f855c;
-            int i13 = dVar.f854b;
-            objArr2[i13] = i9;
-            ((int[]) dVar.f856d)[i13] = -2;
-        }
-        return i9;
-    }
-
-    @Override // X2.e, d8.b
+    @Override // N3.C, d8.b
     public final long j() {
-        return this.f37733j.h();
+        return this.f37759d.h();
     }
 
-    @Override // X2.e, d8.a
+    @Override // N3.C, d8.a
     public final void k(c8.e descriptor) {
         kotlin.jvm.internal.h.e(descriptor, "descriptor");
-        if (this.f37732h.f37539a.f37556b && descriptor.e() == 0) {
+        if (this.f37757b.f37501a.f37518b && descriptor.e() == 0) {
             while (c(descriptor) != -1) {
             }
         }
-        H h9 = this.f37733j;
-        if (h9.v()) {
-            l.e(h9, "");
+        G g9 = this.f37759d;
+        if (g9.v()) {
+            l.e(g9, "");
             throw null;
         }
-        h9.g(this.i.f37753u);
-        F.d dVar = (F.d) h9.f437v;
-        int i = dVar.f854b;
-        int[] iArr = (int[]) dVar.f856d;
+        g9.g(this.f37758c.f37779u);
+        F.d dVar = (F.d) g9.f334v;
+        int i = dVar.f917b;
+        int[] iArr = (int[]) dVar.f919d;
         if (iArr[i] == -2) {
             iArr[i] = -1;
-            dVar.f854b = i - 1;
+            dVar.f917b = i - 1;
         }
-        int i6 = dVar.f854b;
-        if (i6 != -1) {
-            dVar.f854b = i6 - 1;
+        int i4 = dVar.f917b;
+        if (i4 != -1) {
+            dVar.f917b = i4 - 1;
         }
     }
 
-    @Override // X2.e, d8.b
+    @Override // N3.C, d8.b
     public final boolean m() {
-        i iVar = this.f37736m;
-        if (!(iVar != null ? iVar.f37716b : false)) {
-            H h9 = this.f37733j;
-            int s9 = h9.s(h9.t());
-            String str = (String) h9.f440y;
+        i iVar = this.f37762g;
+        if (!(iVar != null ? iVar.f37741b : false)) {
+            G g9 = this.f37759d;
+            int s9 = g9.s(g9.t());
+            String str = (String) g9.f337y;
             int length = str.length() - s9;
-            boolean z3 = false;
+            boolean z6 = false;
             if (length >= 4 && s9 != -1) {
                 int i = 0;
                 while (true) {
@@ -500,74 +504,74 @@ public final class p extends X2.e implements d8.b, d8.a {
                         }
                         i++;
                     } else if (length <= 4 || l.d(str.charAt(s9 + 4)) != 0) {
-                        h9.f436u = s9 + 4;
-                        z3 = true;
+                        g9.f333u = s9 + 4;
+                        z6 = true;
                     }
                 }
             }
-            if (!z3) {
+            if (!z6) {
                 return true;
             }
         }
         return false;
     }
 
-    @Override // X2.e, d8.b
+    @Override // N3.C, d8.b
     public final byte r() {
-        H h9 = this.f37733j;
-        long h10 = h9.h();
-        byte b9 = (byte) h10;
-        if (h10 == b9) {
+        G g9 = this.f37759d;
+        long h3 = g9.h();
+        byte b9 = (byte) h3;
+        if (h3 == b9) {
             return b9;
         }
-        H.m(h9, "Failed to parse byte for input '" + h10 + '\'', 0, 6);
+        G.n(g9, "Failed to parse byte for input '" + h3 + '\'', 0, 6);
         throw null;
     }
 
-    @Override // X2.e, d8.b
+    @Override // N3.C, d8.b
     public final short t() {
-        H h9 = this.f37733j;
-        long h10 = h9.h();
-        short s9 = (short) h10;
-        if (h10 == s9) {
+        G g9 = this.f37759d;
+        long h3 = g9.h();
+        short s9 = (short) h3;
+        if (h3 == s9) {
             return s9;
         }
-        H.m(h9, "Failed to parse short for input '" + h10 + '\'', 0, 6);
+        G.n(g9, "Failed to parse short for input '" + h3 + '\'', 0, 6);
         throw null;
     }
 
-    @Override // X2.e, d8.b
+    @Override // N3.C, d8.b
     public final float u() {
-        H h9 = this.f37733j;
-        String j6 = h9.j();
+        G g9 = this.f37759d;
+        String j6 = g9.j();
         try {
             float parseFloat = Float.parseFloat(j6);
-            f8.j jVar = this.f37732h.f37539a;
+            f8.j jVar = this.f37757b.f37501a;
             if (!Float.isInfinite(parseFloat) && !Float.isNaN(parseFloat)) {
                 return parseFloat;
             }
-            l.i(h9, Float.valueOf(parseFloat));
+            l.i(g9, Float.valueOf(parseFloat));
             throw null;
         } catch (IllegalArgumentException unused) {
-            H.m(h9, u1.h.b('\'', "Failed to parse type 'float' for input '", j6), 0, 6);
+            G.n(g9, AbstractC5128c.b('\'', "Failed to parse type 'float' for input '", j6), 0, 6);
             throw null;
         }
     }
 
-    @Override // X2.e, d8.b
+    @Override // N3.C, d8.b
     public final double v() {
-        H h9 = this.f37733j;
-        String j6 = h9.j();
+        G g9 = this.f37759d;
+        String j6 = g9.j();
         try {
             double parseDouble = Double.parseDouble(j6);
-            f8.j jVar = this.f37732h.f37539a;
+            f8.j jVar = this.f37757b.f37501a;
             if (!Double.isInfinite(parseDouble) && !Double.isNaN(parseDouble)) {
                 return parseDouble;
             }
-            l.i(h9, Double.valueOf(parseDouble));
+            l.i(g9, Double.valueOf(parseDouble));
             throw null;
         } catch (IllegalArgumentException unused) {
-            H.m(h9, u1.h.b('\'', "Failed to parse type 'double' for input '", j6), 0, 6);
+            G.n(g9, AbstractC5128c.b('\'', "Failed to parse type 'double' for input '", j6), 0, 6);
             throw null;
         }
     }

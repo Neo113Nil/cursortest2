@@ -1,6 +1,5 @@
 package V3;
 
 /* loaded from: classes2.dex */
-public interface a {
-    void a(Object obj, Object obj2);
+public @interface a {
 }

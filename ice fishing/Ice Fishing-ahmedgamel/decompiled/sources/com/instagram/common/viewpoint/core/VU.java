@@ -6,18 +6,18 @@ import android.view.View;
 /* loaded from: assets/audience_network/classes2.dex */
 public class VU implements View.OnTouchListener {
     public static String[] A01 = {"BENQAquhgvj7TT9", "G4ABWHEO8pFoECzre8aPRkd5RqzaS810", "PI8RZp2k0CYdM", "EmvTCi8E1ni5QktN6f", "uKZwthLDSYADW2ME8E7na2CL49A5zEt8", "f3ahGFeoLQ7BDTppBYhbDWzCsZGogVaH", "wyETLpONaJd07JaZyOo", "wX7oH8VfboeBvBElZn"};
-    public final /* synthetic */ C1324Vz A00;
+    public final /* synthetic */ C1344Vz A00;
 
-    public VU(C1324Vz c1324Vz) {
-        this.A00 = c1324Vz;
+    public VU(C1344Vz c1344Vz) {
+        this.A00 = c1344Vz;
     }
 
     @Override // android.view.View.OnTouchListener
     public final boolean onTouch(View view, MotionEvent motionEvent) {
-        C06956r c06956r;
-        C06956r c06956r2;
-        c06956r = this.A00.A07;
-        if (c06956r != null) {
+        C07156r c07156r;
+        C07156r c07156r2;
+        c07156r = this.A00.A07;
+        if (c07156r != null) {
             int action = motionEvent.getAction();
             String[] strArr = A01;
             if (strArr[0].length() == strArr[2].length()) {
@@ -25,8 +25,8 @@ public class VU implements View.OnTouchListener {
             }
             A01[6] = "VIP8zqVOsYs7o10MZlA";
             if (action == 1) {
-                c06956r2 = this.A00.A07;
-                c06956r2.A0s();
+                c07156r2 = this.A00.A07;
+                c07156r2.A0s();
             }
         }
         return true;

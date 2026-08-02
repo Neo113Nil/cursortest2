@@ -3,6 +3,7 @@ package com.anythink.basead.exoplayer.g.b;
 import android.os.Parcel;
 import android.os.Parcelable;
 import java.util.Arrays;
+import w.AbstractC5128c;
 
 /* loaded from: classes.dex */
 public final class b extends h {
@@ -27,11 +28,11 @@ public final class b extends h {
     };
 
     /* renamed from: a, reason: collision with root package name */
-    public final byte[] f7284a;
+    public final byte[] f8070a;
 
     public b(String str, byte[] bArr) {
         super(str);
-        this.f7284a = bArr;
+        this.f8070a = bArr;
     }
 
     public final boolean equals(Object obj) {
@@ -40,7 +41,7 @@ public final class b extends h {
         }
         if (obj != null && b.class == obj.getClass()) {
             b bVar = (b) obj;
-            if (this.f7326g.equals(bVar.f7326g) && Arrays.equals(this.f7284a, bVar.f7284a)) {
+            if (this.f8112g.equals(bVar.f8112g) && Arrays.equals(this.f8070a, bVar.f8070a)) {
                 return true;
             }
         }
@@ -48,17 +49,17 @@ public final class b extends h {
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(this.f7284a) + u1.h.k(527, 31, this.f7326g);
+        return Arrays.hashCode(this.f8070a) + AbstractC5128c.a(527, 31, this.f8112g);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(this.f7326g);
-        parcel.writeByteArray(this.f7284a);
+        parcel.writeString(this.f8112g);
+        parcel.writeByteArray(this.f8070a);
     }
 
     public b(Parcel parcel) {
         super(parcel.readString());
-        this.f7284a = parcel.createByteArray();
+        this.f8070a = parcel.createByteArray();
     }
 }

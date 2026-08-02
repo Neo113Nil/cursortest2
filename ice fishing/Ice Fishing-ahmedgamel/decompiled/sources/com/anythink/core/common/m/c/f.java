@@ -8,13 +8,13 @@ import com.anythink.core.common.v.q;
 public final class f extends d {
 
     /* renamed from: e, reason: collision with root package name */
-    private static final int f14547e = 5;
+    private static final int f15333e = 5;
 
     /* renamed from: f, reason: collision with root package name */
-    private static final long f14548f = 3600000;
+    private static final long f15334f = 3600000;
 
     /* renamed from: g, reason: collision with root package name */
-    private volatile h f14549g;
+    private volatile h f15335g;
 
     public f(Context context) {
         super(context);
@@ -25,35 +25,35 @@ public final class f extends d {
         if (!b(dVar)) {
             return null;
         }
-        if (this.f14549g == null) {
-            synchronized (this.f14544d) {
+        if (this.f15335g == null) {
+            synchronized (this.f15330d) {
                 try {
-                    if (this.f14549g == null) {
-                        this.f14549g = new h(this.f14542b, this.f14543c, new h.a(3600000L));
+                    if (this.f15335g == null) {
+                        this.f15335g = new h(this.f15328b, this.f15329c, new h.a(3600000L));
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return this.f14549g.a(dVar, super.a(dVar));
+        return this.f15335g.a(dVar, super.a(dVar));
     }
 
     @Override // com.anythink.core.common.m.c.d
     public final boolean b(com.anythink.core.common.m.b.d dVar) {
-        Context context = this.f14542b;
-        return context != null && dVar != null && q.a(context) && com.anythink.core.common.m.b.g.f14520c.equals(dVar.b());
+        Context context = this.f15328b;
+        return context != null && dVar != null && q.a(context) && com.anythink.core.common.m.b.g.f15306c.equals(dVar.b());
     }
 
     @Override // com.anythink.core.common.m.c.d
     public final String c(com.anythink.core.common.m.b.d dVar) {
-        return this.f14549g != null ? h.a(dVar) : dVar.b();
+        return this.f15335g != null ? h.a(dVar) : dVar.b();
     }
 
     @Override // com.anythink.core.common.m.c.i
     public final void a(com.anythink.core.common.m.b.f fVar, com.anythink.core.common.m.b.d dVar) {
-        if (b(dVar) && this.f14549g != null) {
-            this.f14549g.a(fVar, dVar);
+        if (b(dVar) && this.f15335g != null) {
+            this.f15335g.a(fVar, dVar);
         }
     }
 }

@@ -15,52 +15,52 @@ import android.view.Window;
 import android.view.WindowInsets;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityManager;
-import com.icefishingapp.icefishing.C5275R;
+import com.IceFishing.LiveIceFishing.C5248R;
 import java.lang.ref.WeakReference;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.WeakHashMap;
-import m.C4714u;
+import m.C4727u;
 
 /* loaded from: classes.dex */
 public abstract class X {
 
     /* renamed from: a, reason: collision with root package name */
-    public static WeakHashMap f2054a = null;
+    public static WeakHashMap f2142a = null;
 
     /* renamed from: b, reason: collision with root package name */
-    public static Field f2055b = null;
+    public static Field f2143b = null;
 
     /* renamed from: c, reason: collision with root package name */
-    public static boolean f2056c = false;
+    public static boolean f2144c = false;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int[] f2057d = {C5275R.id.accessibility_custom_action_0, C5275R.id.accessibility_custom_action_1, C5275R.id.accessibility_custom_action_2, C5275R.id.accessibility_custom_action_3, C5275R.id.accessibility_custom_action_4, C5275R.id.accessibility_custom_action_5, C5275R.id.accessibility_custom_action_6, C5275R.id.accessibility_custom_action_7, C5275R.id.accessibility_custom_action_8, C5275R.id.accessibility_custom_action_9, C5275R.id.accessibility_custom_action_10, C5275R.id.accessibility_custom_action_11, C5275R.id.accessibility_custom_action_12, C5275R.id.accessibility_custom_action_13, C5275R.id.accessibility_custom_action_14, C5275R.id.accessibility_custom_action_15, C5275R.id.accessibility_custom_action_16, C5275R.id.accessibility_custom_action_17, C5275R.id.accessibility_custom_action_18, C5275R.id.accessibility_custom_action_19, C5275R.id.accessibility_custom_action_20, C5275R.id.accessibility_custom_action_21, C5275R.id.accessibility_custom_action_22, C5275R.id.accessibility_custom_action_23, C5275R.id.accessibility_custom_action_24, C5275R.id.accessibility_custom_action_25, C5275R.id.accessibility_custom_action_26, C5275R.id.accessibility_custom_action_27, C5275R.id.accessibility_custom_action_28, C5275R.id.accessibility_custom_action_29, C5275R.id.accessibility_custom_action_30, C5275R.id.accessibility_custom_action_31};
+    public static final int[] f2145d = {C5248R.id.accessibility_custom_action_0, C5248R.id.accessibility_custom_action_1, C5248R.id.accessibility_custom_action_2, C5248R.id.accessibility_custom_action_3, C5248R.id.accessibility_custom_action_4, C5248R.id.accessibility_custom_action_5, C5248R.id.accessibility_custom_action_6, C5248R.id.accessibility_custom_action_7, C5248R.id.accessibility_custom_action_8, C5248R.id.accessibility_custom_action_9, C5248R.id.accessibility_custom_action_10, C5248R.id.accessibility_custom_action_11, C5248R.id.accessibility_custom_action_12, C5248R.id.accessibility_custom_action_13, C5248R.id.accessibility_custom_action_14, C5248R.id.accessibility_custom_action_15, C5248R.id.accessibility_custom_action_16, C5248R.id.accessibility_custom_action_17, C5248R.id.accessibility_custom_action_18, C5248R.id.accessibility_custom_action_19, C5248R.id.accessibility_custom_action_20, C5248R.id.accessibility_custom_action_21, C5248R.id.accessibility_custom_action_22, C5248R.id.accessibility_custom_action_23, C5248R.id.accessibility_custom_action_24, C5248R.id.accessibility_custom_action_25, C5248R.id.accessibility_custom_action_26, C5248R.id.accessibility_custom_action_27, C5248R.id.accessibility_custom_action_28, C5248R.id.accessibility_custom_action_29, C5248R.id.accessibility_custom_action_30, C5248R.id.accessibility_custom_action_31};
 
     /* renamed from: e, reason: collision with root package name */
-    public static final F f2058e = new F();
+    public static final F f2146e = new F();
 
     /* renamed from: f, reason: collision with root package name */
-    public static final H f2059f = new H();
+    public static final H f2147f = new H();
 
-    public static C0330e0 a(View view) {
-        if (f2054a == null) {
-            f2054a = new WeakHashMap();
+    public static C0335e0 a(View view) {
+        if (f2142a == null) {
+            f2142a = new WeakHashMap();
         }
-        C0330e0 c0330e0 = (C0330e0) f2054a.get(view);
-        if (c0330e0 != null) {
-            return c0330e0;
+        C0335e0 c0335e0 = (C0335e0) f2142a.get(view);
+        if (c0335e0 != null) {
+            return c0335e0;
         }
-        C0330e0 c0330e02 = new C0330e0(view);
-        f2054a.put(view, c0330e02);
-        return c0330e02;
+        C0335e0 c0335e02 = new C0335e0(view);
+        f2142a.put(view, c0335e02);
+        return c0335e02;
     }
 
     public static A0 b(View view, A0 a02) {
-        WindowInsets g4 = a02.g();
-        if (g4 != null) {
-            WindowInsets a9 = J.a(view, g4);
-            if (!a9.equals(g4)) {
+        WindowInsets g9 = a02.g();
+        if (g9 != null) {
+            WindowInsets a9 = J.a(view, g9);
+            if (!a9.equals(g9)) {
                 return A0.h(view, a9);
             }
         }
@@ -71,36 +71,36 @@ public abstract class X {
         if (Build.VERSION.SDK_INT >= 28) {
             return false;
         }
-        ArrayList arrayList = W.f2050d;
-        W w6 = (W) view.getTag(C5275R.id.tag_unhandled_key_event_manager);
-        if (w6 == null) {
-            w6 = new W();
-            w6.f2051a = null;
-            w6.f2052b = null;
-            w6.f2053c = null;
-            view.setTag(C5275R.id.tag_unhandled_key_event_manager, w6);
+        ArrayList arrayList = W.f2138d;
+        W w3 = (W) view.getTag(C5248R.id.tag_unhandled_key_event_manager);
+        if (w3 == null) {
+            w3 = new W();
+            w3.f2139a = null;
+            w3.f2140b = null;
+            w3.f2141c = null;
+            view.setTag(C5248R.id.tag_unhandled_key_event_manager, w3);
         }
         if (keyEvent.getAction() == 0) {
-            WeakHashMap weakHashMap = w6.f2051a;
+            WeakHashMap weakHashMap = w3.f2139a;
             if (weakHashMap != null) {
                 weakHashMap.clear();
             }
-            ArrayList arrayList2 = W.f2050d;
+            ArrayList arrayList2 = W.f2138d;
             if (!arrayList2.isEmpty()) {
                 synchronized (arrayList2) {
                     try {
-                        if (w6.f2051a == null) {
-                            w6.f2051a = new WeakHashMap();
+                        if (w3.f2139a == null) {
+                            w3.f2139a = new WeakHashMap();
                         }
                         for (int size = arrayList2.size() - 1; size >= 0; size--) {
-                            ArrayList arrayList3 = W.f2050d;
+                            ArrayList arrayList3 = W.f2138d;
                             View view2 = (View) ((WeakReference) arrayList3.get(size)).get();
                             if (view2 == null) {
                                 arrayList3.remove(size);
                             } else {
-                                w6.f2051a.put(view2, Boolean.TRUE);
+                                w3.f2139a.put(view2, Boolean.TRUE);
                                 for (ViewParent parent = view2.getParent(); parent instanceof View; parent = parent.getParent()) {
-                                    w6.f2051a.put((View) parent, Boolean.TRUE);
+                                    w3.f2139a.put((View) parent, Boolean.TRUE);
                                 }
                             }
                         }
@@ -109,14 +109,14 @@ public abstract class X {
                 }
             }
         }
-        View a9 = w6.a(view);
+        View a9 = w3.a(view);
         if (keyEvent.getAction() == 0) {
             int keyCode = keyEvent.getKeyCode();
             if (a9 != null && !KeyEvent.isModifierKey(keyCode)) {
-                if (w6.f2052b == null) {
-                    w6.f2052b = new SparseArray();
+                if (w3.f2140b == null) {
+                    w3.f2140b = new SparseArray();
                 }
-                w6.f2052b.put(keyCode, new WeakReference(a9));
+                w3.f2140b.put(keyCode, new WeakReference(a9));
             }
         }
         return a9 != null;
@@ -126,27 +126,27 @@ public abstract class X {
         if (Build.VERSION.SDK_INT >= 29) {
             return Q.a(view);
         }
-        if (f2056c) {
+        if (f2144c) {
             return null;
         }
-        if (f2055b == null) {
+        if (f2143b == null) {
             try {
                 Field declaredField = View.class.getDeclaredField("mAccessibilityDelegate");
-                f2055b = declaredField;
+                f2143b = declaredField;
                 declaredField.setAccessible(true);
             } catch (Throwable unused) {
-                f2056c = true;
+                f2144c = true;
                 return null;
             }
         }
         try {
-            Object obj = f2055b.get(view);
+            Object obj = f2143b.get(view);
             if (obj instanceof View.AccessibilityDelegate) {
                 return (View.AccessibilityDelegate) obj;
             }
             return null;
         } catch (Throwable unused2) {
-            f2056c = true;
+            f2144c = true;
             return null;
         }
     }
@@ -156,7 +156,7 @@ public abstract class X {
         if (Build.VERSION.SDK_INT >= 28) {
             tag = P.b(view);
         } else {
-            tag = view.getTag(C5275R.id.tag_accessibility_pane_title);
+            tag = view.getTag(C5248R.id.tag_accessibility_pane_title);
             if (!CharSequence.class.isInstance(tag)) {
                 tag = null;
             }
@@ -165,17 +165,17 @@ public abstract class X {
     }
 
     public static ArrayList f(View view) {
-        ArrayList arrayList = (ArrayList) view.getTag(C5275R.id.tag_accessibility_actions);
+        ArrayList arrayList = (ArrayList) view.getTag(C5248R.id.tag_accessibility_actions);
         if (arrayList != null) {
             return arrayList;
         }
         ArrayList arrayList2 = new ArrayList();
-        view.setTag(C5275R.id.tag_accessibility_actions, arrayList2);
+        view.setTag(C5248R.id.tag_accessibility_actions, arrayList2);
         return arrayList2;
     }
 
-    public static String[] g(C4714u c4714u) {
-        return Build.VERSION.SDK_INT >= 31 ? T.a(c4714u) : (String[]) c4714u.getTag(C5275R.id.tag_on_receive_content_mime_types);
+    public static String[] g(C4727u c4727u) {
+        return Build.VERSION.SDK_INT >= 31 ? T.a(c4727u) : (String[]) c4727u.getTag(C5248R.id.tag_on_receive_content_mime_types);
     }
 
     public static E0 h(View view) {
@@ -197,12 +197,12 @@ public abstract class X {
     public static void i(int i, View view) {
         AccessibilityManager accessibilityManager = (AccessibilityManager) view.getContext().getSystemService("accessibility");
         if (accessibilityManager.isEnabled()) {
-            boolean z3 = e(view) != null && view.isShown() && view.getWindowVisibility() == 0;
-            if (view.getAccessibilityLiveRegion() != 0 || z3) {
+            boolean z6 = e(view) != null && view.isShown() && view.getWindowVisibility() == 0;
+            if (view.getAccessibilityLiveRegion() != 0 || z6) {
                 AccessibilityEvent obtain = AccessibilityEvent.obtain();
-                obtain.setEventType(z3 ? 32 : 2048);
+                obtain.setEventType(z6 ? 32 : 2048);
                 obtain.setContentChangeTypes(i);
-                if (z3) {
+                if (z6) {
                     obtain.getText().add(e(view));
                     if (view.getImportantForAccessibility() == 0) {
                         view.setImportantForAccessibility(1);
@@ -235,10 +235,10 @@ public abstract class X {
     }
 
     public static A0 j(View view, A0 a02) {
-        WindowInsets g4 = a02.g();
-        if (g4 != null) {
-            WindowInsets b9 = J.b(view, g4);
-            if (!b9.equals(g4)) {
+        WindowInsets g9 = a02.g();
+        if (g9 != null) {
+            WindowInsets b9 = J.b(view, g9);
+            if (!b9.equals(g9)) {
                 return A0.h(view, b9);
             }
         }
@@ -246,36 +246,36 @@ public abstract class X {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    public static C0331f k(View view, C0331f c0331f) {
+    public static C0336f k(View view, C0336f c0336f) {
         if (Log.isLoggable("ViewCompat", 3)) {
-            Log.d("ViewCompat", "performReceiveContent: " + c0331f + ", view=" + view.getClass().getSimpleName() + "[" + view.getId() + "]");
+            Log.d("ViewCompat", "performReceiveContent: " + c0336f + ", view=" + view.getClass().getSimpleName() + "[" + view.getId() + "]");
         }
         if (Build.VERSION.SDK_INT >= 31) {
-            return T.b(view, c0331f);
+            return T.b(view, c0336f);
         }
-        InterfaceC0346v interfaceC0346v = (InterfaceC0346v) view.getTag(C5275R.id.tag_on_receive_content_listener);
-        InterfaceC0347w interfaceC0347w = f2058e;
-        if (interfaceC0346v == null) {
-            if (view instanceof InterfaceC0347w) {
-                interfaceC0347w = (InterfaceC0347w) view;
+        InterfaceC0351v interfaceC0351v = (InterfaceC0351v) view.getTag(C5248R.id.tag_on_receive_content_listener);
+        InterfaceC0352w interfaceC0352w = f2146e;
+        if (interfaceC0351v == null) {
+            if (view instanceof InterfaceC0352w) {
+                interfaceC0352w = (InterfaceC0352w) view;
             }
-            return interfaceC0347w.a(c0331f);
+            return interfaceC0352w.a(c0336f);
         }
-        C0331f a9 = ((U.r) interfaceC0346v).a(view, c0331f);
+        C0336f a9 = ((U.r) interfaceC0351v).a(view, c0336f);
         if (a9 == null) {
             return null;
         }
-        if (view instanceof InterfaceC0347w) {
-            interfaceC0347w = (InterfaceC0347w) view;
+        if (view instanceof InterfaceC0352w) {
+            interfaceC0352w = (InterfaceC0352w) view;
         }
-        return interfaceC0347w.a(a9);
+        return interfaceC0352w.a(a9);
     }
 
     public static void l(int i, View view) {
-        ArrayList f3 = f(view);
-        for (int i6 = 0; i6 < f3.size(); i6++) {
-            if (((P.f) f3.get(i6)).a() == i) {
-                f3.remove(i6);
+        ArrayList f2 = f(view);
+        for (int i4 = 0; i4 < f2.size(); i4++) {
+            if (((P.f) f2.get(i4)).a() == i) {
+                f2.remove(i4);
                 return;
             }
         }
@@ -287,13 +287,13 @@ public abstract class X {
             i(0, view);
             return;
         }
-        P.f fVar2 = new P.f(null, fVar.f2404b, null, uVar, fVar.f2405c);
-        View.AccessibilityDelegate d2 = d(view);
-        C0323b c0323b = d2 == null ? null : d2 instanceof C0321a ? ((C0321a) d2).f2060a : new C0323b(d2);
-        if (c0323b == null) {
-            c0323b = new C0323b();
+        P.f fVar2 = new P.f(null, fVar.f2335b, null, uVar, fVar.f2336c);
+        View.AccessibilityDelegate d9 = d(view);
+        C0328b c0328b = d9 == null ? null : d9 instanceof C0326a ? ((C0326a) d9).f2148a : new C0328b(d9);
+        if (c0328b == null) {
+            c0328b = new C0328b();
         }
-        o(view, c0323b);
+        o(view, c0328b);
         l(fVar2.a(), view);
         f(view).add(fVar2);
         i(0, view);
@@ -305,28 +305,28 @@ public abstract class X {
         }
     }
 
-    public static void o(View view, C0323b c0323b) {
-        if (c0323b == null && (d(view) instanceof C0321a)) {
-            c0323b = new C0323b();
+    public static void o(View view, C0328b c0328b) {
+        if (c0328b == null && (d(view) instanceof C0326a)) {
+            c0328b = new C0328b();
         }
         if (view.getImportantForAccessibility() == 0) {
             view.setImportantForAccessibility(1);
         }
-        view.setAccessibilityDelegate(c0323b == null ? null : c0323b.f2063b);
+        view.setAccessibilityDelegate(c0328b == null ? null : c0328b.f2151b);
     }
 
     public static void p(View view, CharSequence charSequence) {
-        new G(C5275R.id.tag_accessibility_pane_title, CharSequence.class, 8, 28, 1).f(view, charSequence);
-        H h9 = f2059f;
+        new G(C5248R.id.tag_accessibility_pane_title, CharSequence.class, 8, 28, 1).f(view, charSequence);
+        H h3 = f2147f;
         if (charSequence == null) {
-            h9.f2041n.remove(view);
-            view.removeOnAttachStateChangeListener(h9);
-            view.getViewTreeObserver().removeOnGlobalLayoutListener(h9);
+            h3.f2129n.remove(view);
+            view.removeOnAttachStateChangeListener(h3);
+            view.getViewTreeObserver().removeOnGlobalLayoutListener(h3);
         } else {
-            h9.f2041n.put(view, Boolean.valueOf(view.isShown() && view.getWindowVisibility() == 0));
-            view.addOnAttachStateChangeListener(h9);
+            h3.f2129n.put(view, Boolean.valueOf(view.isShown() && view.getWindowVisibility() == 0));
+            view.addOnAttachStateChangeListener(h3);
             if (view.isAttachedToWindow()) {
-                view.getViewTreeObserver().addOnGlobalLayoutListener(h9);
+                view.getViewTreeObserver().addOnGlobalLayoutListener(h3);
             }
         }
     }

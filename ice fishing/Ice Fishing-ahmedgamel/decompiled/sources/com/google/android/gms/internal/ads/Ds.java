@@ -10,67 +10,67 @@ import java.util.Map;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import q2.C4900p;
+import s2.C4949p;
 
 /* loaded from: classes2.dex */
 public final class Ds implements Os {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f24483a;
+    public final /* synthetic */ int f25244a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final HashMap f24484b;
+    public final HashMap f25245b;
 
     public /* synthetic */ Ds(HashMap hashMap, int i) {
-        this.f24483a = i;
-        this.f24484b = hashMap;
+        this.f25244a = i;
+        this.f25245b = hashMap;
     }
 
     @Override // com.google.android.gms.internal.ads.Os
     public final void a(Object obj) {
-        switch (this.f24483a) {
+        switch (this.f25244a) {
             case 0:
                 Bundle bundle = (Bundle) obj;
-                HashMap hashMap = this.f24484b;
+                HashMap hashMap = this.f25245b;
                 if (!hashMap.isEmpty()) {
-                    if (((Boolean) q2.r.f40207e.f40210c.a(AbstractC3569ma.K8)).booleanValue()) {
-                        C3180fE B9 = C3342iE.B();
+                    if (((Boolean) s2.r.f40506e.f40509c.a(AbstractC3592ma.K8)).booleanValue()) {
+                        C3203fE B3 = C3365iE.B();
                         for (Map.Entry entry : hashMap.entrySet()) {
                             ArrayDeque arrayDeque = (ArrayDeque) entry.getValue();
                             if (!arrayDeque.isEmpty()) {
-                                C3637no c3637no = (C3637no) entry.getKey();
-                                int i = c3637no.f32769b;
-                                int i6 = 1;
+                                C3714oo c3714oo = (C3714oo) entry.getKey();
+                                int i = c3714oo.f33731b;
+                                int i4 = 1;
                                 if (i != 0) {
                                     if (i != 1) {
-                                        i6 = 3;
+                                        i4 = 3;
                                         if (i != 2) {
-                                            i6 = i != 3 ? 0 : 4;
+                                            i4 = i != 3 ? 0 : 4;
                                         }
                                     } else {
-                                        i6 = 2;
+                                        i4 = 2;
                                     }
                                 }
-                                if (i6 != 0) {
-                                    C3073dE A9 = C3126eE.A();
+                                if (i4 != 0) {
+                                    C3096dE A9 = C3149eE.A();
                                     A9.h();
-                                    ((C3126eE) A9.f27721u).B(c3637no.f32768a);
+                                    ((C3149eE) A9.f28504u).B(c3714oo.f33730a);
                                     A9.h();
-                                    ((C3126eE) A9.f27721u).C(i6);
-                                    C3126eE c3126eE = (C3126eE) A9.j();
-                                    C3234gE A10 = C3288hE.A();
+                                    ((C3149eE) A9.f28504u).C(i4);
+                                    C3149eE c3149eE = (C3149eE) A9.j();
+                                    C3257gE A10 = C3311hE.A();
                                     A10.h();
-                                    ((C3288hE) A10.f27721u).B(c3126eE);
+                                    ((C3311hE) A10.f28504u).B(c3149eE);
                                     A10.h();
-                                    ((C3288hE) A10.f27721u).C(arrayDeque);
-                                    B9.h();
-                                    ((C3342iE) B9.f27721u).C((C3288hE) A10.j());
+                                    ((C3311hE) A10.f28504u).C(arrayDeque);
+                                    B3.h();
+                                    ((C3365iE) B3.f28504u).C((C3311hE) A10.j());
                                 }
                             }
                         }
-                        C3342iE c3342iE = (C3342iE) B9.j();
-                        if (c3342iE.A() > 0) {
-                            bundle.putString("ods", Base64.encodeToString(c3342iE.b(), 11));
+                        C3365iE c3365iE = (C3365iE) B3.j();
+                        if (c3365iE.A() > 0) {
+                            bundle.putString("ods", Base64.encodeToString(c3365iE.b(), 11));
                             break;
                         }
                     } else {
@@ -78,11 +78,11 @@ public final class Ds implements Os {
                         for (Map.Entry entry2 : hashMap.entrySet()) {
                             ArrayDeque arrayDeque2 = (ArrayDeque) entry2.getValue();
                             if (!arrayDeque2.isEmpty()) {
-                                C3637no c3637no2 = (C3637no) entry2.getKey();
+                                C3714oo c3714oo2 = (C3714oo) entry2.getKey();
                                 JSONObject jSONObject = new JSONObject();
                                 try {
-                                    jSONObject.put("id", c3637no2.f32768a);
-                                    jSONObject.put(a.C0077a.f12904b, c3637no2.f32769b);
+                                    jSONObject.put("id", c3714oo2.f33730a);
+                                    jSONObject.put(a.C0077a.f13690b, c3714oo2.f33731b);
                                     JSONArray jSONArray2 = new JSONArray();
                                     Iterator it = arrayDeque2.iterator();
                                     while (it.hasNext()) {
@@ -91,7 +91,7 @@ public final class Ds implements Os {
                                     jSONObject.put("timestamps", jSONArray2);
                                     jSONArray.put(jSONObject);
                                 } catch (JSONException e9) {
-                                    u2.z.l("Failed putting the on-device storage record.", e9);
+                                    w2.z.l("Failed putting the on-device storage record.", e9);
                                 }
                             }
                         }
@@ -104,10 +104,10 @@ public final class Ds implements Os {
                 break;
             default:
                 try {
-                    ((JSONObject) obj).put("video_decoders", C4900p.f40199g.f40200a.l(this.f24484b));
+                    ((JSONObject) obj).put("video_decoders", C4949p.f40498g.f40499a.l(this.f25245b));
                     break;
                 } catch (JSONException e10) {
-                    u2.z.k("Could not encode video decoder properties: ".concat(String.valueOf(e10.getMessage())));
+                    w2.z.k("Could not encode video decoder properties: ".concat(String.valueOf(e10.getMessage())));
                 }
         }
     }

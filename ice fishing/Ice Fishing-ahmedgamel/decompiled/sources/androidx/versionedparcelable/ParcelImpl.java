@@ -11,10 +11,10 @@ public class ParcelImpl implements Parcelable {
     public static final Parcelable.Creator<ParcelImpl> CREATOR = new d(1);
 
     /* renamed from: n, reason: collision with root package name */
-    public final c f5302n;
+    public final c f5268n;
 
     public ParcelImpl(Parcel parcel) {
-        this.f5302n = new b(parcel).g();
+        this.f5268n = new b(parcel).g();
     }
 
     @Override // android.os.Parcelable
@@ -24,6 +24,6 @@ public class ParcelImpl implements Parcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        new b(parcel).i(this.f5302n);
+        new b(parcel).i(this.f5268n);
     }
 }

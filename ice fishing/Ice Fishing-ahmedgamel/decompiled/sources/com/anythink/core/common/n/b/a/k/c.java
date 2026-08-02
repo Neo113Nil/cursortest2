@@ -11,38 +11,38 @@ import java.util.concurrent.TimeUnit;
 final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    final boolean f15437a;
+    final boolean f16224a;
 
     /* renamed from: b, reason: collision with root package name */
-    final e f15438b;
+    final e f16225b;
 
     /* renamed from: c, reason: collision with root package name */
-    final a f15439c;
+    final a f16226c;
 
     /* renamed from: d, reason: collision with root package name */
-    boolean f15440d;
+    boolean f16227d;
 
     /* renamed from: e, reason: collision with root package name */
-    int f15441e;
+    int f16228e;
 
     /* renamed from: f, reason: collision with root package name */
-    long f15442f;
+    long f16229f;
 
     /* renamed from: g, reason: collision with root package name */
-    boolean f15443g;
+    boolean f16230g;
 
     /* renamed from: h, reason: collision with root package name */
-    boolean f15444h;
+    boolean f16231h;
     private final com.anythink.core.common.n.c.c i = new com.anythink.core.common.n.c.c();
 
     /* renamed from: j, reason: collision with root package name */
-    private final com.anythink.core.common.n.c.c f15445j = new com.anythink.core.common.n.c.c();
+    private final com.anythink.core.common.n.c.c f16232j = new com.anythink.core.common.n.c.c();
 
     /* renamed from: k, reason: collision with root package name */
-    private final byte[] f15446k;
+    private final byte[] f16233k;
 
     /* renamed from: l, reason: collision with root package name */
-    private final c.a f15447l;
+    private final c.a f16234l;
 
     public interface a {
         void a(int i, String str);
@@ -56,64 +56,64 @@ final class c {
         void g();
     }
 
-    public c(boolean z3, e eVar, a aVar) {
+    public c(boolean z6, e eVar, a aVar) {
         if (eVar == null) {
             throw new NullPointerException("source == null");
         }
-        this.f15437a = z3;
-        this.f15438b = eVar;
-        this.f15439c = aVar;
-        this.f15446k = z3 ? null : new byte[4];
-        this.f15447l = z3 ? null : new c.a();
+        this.f16224a = z6;
+        this.f16225b = eVar;
+        this.f16226c = aVar;
+        this.f16233k = z6 ? null : new byte[4];
+        this.f16234l = z6 ? null : new c.a();
     }
 
     private void b() {
-        if (this.f15440d) {
+        if (this.f16227d) {
             throw new IOException("closed");
         }
-        long i_ = this.f15438b.a().i_();
-        this.f15438b.a().h_();
+        long i_ = this.f16225b.a().i_();
+        this.f16225b.a().h_();
         try {
-            byte k9 = this.f15438b.k();
-            this.f15438b.a().a(i_, TimeUnit.NANOSECONDS);
-            this.f15441e = k9 & 15;
-            boolean z3 = (k9 & com.anythink.core.common.s.a.c.f16316a) != 0;
-            this.f15443g = z3;
-            boolean z6 = (k9 & 8) != 0;
-            this.f15444h = z6;
-            if (z6 && !z3) {
+            byte k9 = this.f16225b.k();
+            this.f16225b.a().a(i_, TimeUnit.NANOSECONDS);
+            this.f16228e = k9 & 15;
+            boolean z6 = (k9 & com.anythink.core.common.s.a.c.f17103a) != 0;
+            this.f16230g = z6;
+            boolean z9 = (k9 & 8) != 0;
+            this.f16231h = z9;
+            if (z9 && !z6) {
                 throw new ProtocolException("Control frames must be final.");
             }
-            boolean z9 = (k9 & com.anythink.core.common.s.a.c.f16317b) != 0;
-            boolean z10 = (k9 & 32) != 0;
-            boolean z11 = (k9 & 16) != 0;
-            if (z9 || z10 || z11) {
+            boolean z10 = (k9 & com.anythink.core.common.s.a.c.f17104b) != 0;
+            boolean z11 = (k9 & 32) != 0;
+            boolean z12 = (k9 & 16) != 0;
+            if (z10 || z11 || z12) {
                 throw new ProtocolException("Reserved flags are unsupported.");
             }
-            byte k10 = this.f15438b.k();
-            boolean z12 = (k10 & com.anythink.core.common.s.a.c.f16316a) != 0;
-            if (z12 == this.f15437a) {
-                throw new ProtocolException(this.f15437a ? "Server-sent frames must not be masked." : "Client-sent frames must be masked.");
+            byte k10 = this.f16225b.k();
+            boolean z13 = (k10 & com.anythink.core.common.s.a.c.f17103a) != 0;
+            if (z13 == this.f16224a) {
+                throw new ProtocolException(this.f16224a ? "Server-sent frames must not be masked." : "Client-sent frames must be masked.");
             }
             long j6 = k10 & Byte.MAX_VALUE;
-            this.f15442f = j6;
+            this.f16229f = j6;
             if (j6 == 126) {
-                this.f15442f = this.f15438b.l() & 65535;
+                this.f16229f = this.f16225b.l() & 65535;
             } else if (j6 == 127) {
-                long n9 = this.f15438b.n();
-                this.f15442f = n9;
+                long n9 = this.f16225b.n();
+                this.f16229f = n9;
                 if (n9 < 0) {
-                    throw new ProtocolException("Frame length 0x" + Long.toHexString(this.f15442f) + " > 0x7FFFFFFFFFFFFFFF");
+                    throw new ProtocolException("Frame length 0x" + Long.toHexString(this.f16229f) + " > 0x7FFFFFFFFFFFFFFF");
                 }
             }
-            if (this.f15444h && this.f15442f > 125) {
+            if (this.f16231h && this.f16229f > 125) {
                 throw new ProtocolException("Control frame must be less than 125B.");
             }
-            if (z12) {
-                this.f15438b.b(this.f15446k);
+            if (z13) {
+                this.f16225b.b(this.f16233k);
             }
         } catch (Throwable th) {
-            this.f15438b.a().a(i_, TimeUnit.NANOSECONDS);
+            this.f16225b.a().a(i_, TimeUnit.NANOSECONDS);
             throw th;
         }
     }
@@ -121,17 +121,17 @@ final class c {
     private void c() {
         short s9;
         String str;
-        long j6 = this.f15442f;
+        long j6 = this.f16229f;
         if (j6 > 0) {
-            this.f15438b.b(this.i, j6);
-            if (!this.f15437a) {
-                this.i.a(this.f15447l);
-                this.f15447l.a(0L);
-                b.a(this.f15447l, this.f15446k);
-                this.f15447l.close();
+            this.f16225b.b(this.i, j6);
+            if (!this.f16224a) {
+                this.i.a(this.f16234l);
+                this.f16234l.a(0L);
+                b.a(this.f16234l, this.f16233k);
+                this.f16234l.close();
             }
         }
-        switch (this.f15441e) {
+        switch (this.f16228e) {
             case 8:
                 long b9 = this.i.b();
                 if (b9 == 1) {
@@ -148,39 +148,39 @@ final class c {
                     s9 = 1005;
                     str = "";
                 }
-                this.f15439c.a(s9, str);
-                this.f15440d = true;
+                this.f16226c.a(s9, str);
+                this.f16227d = true;
                 return;
             case 9:
-                this.f15439c.b(this.i.t());
+                this.f16226c.b(this.i.t());
                 return;
             case 10:
-                a aVar = this.f15439c;
+                a aVar = this.f16226c;
                 this.i.t();
                 aVar.g();
                 return;
             default:
-                throw new ProtocolException("Unknown control opcode: " + Integer.toHexString(this.f15441e));
+                throw new ProtocolException("Unknown control opcode: " + Integer.toHexString(this.f16228e));
         }
     }
 
     private void d() {
-        int i = this.f15441e;
+        int i = this.f16228e;
         if (i != 1 && i != 2) {
             throw new ProtocolException("Unknown opcode: " + Integer.toHexString(i));
         }
         f();
         if (i == 1) {
-            this.f15445j.u();
+            this.f16232j.u();
         } else {
-            this.f15445j.t();
+            this.f16232j.t();
         }
     }
 
     private void e() {
-        while (!this.f15440d) {
+        while (!this.f16227d) {
             b();
-            if (!this.f15444h) {
+            if (!this.f16231h) {
                 return;
             } else {
                 c();
@@ -189,23 +189,23 @@ final class c {
     }
 
     private void f() {
-        while (!this.f15440d) {
-            long j6 = this.f15442f;
+        while (!this.f16227d) {
+            long j6 = this.f16229f;
             if (j6 > 0) {
-                this.f15438b.b(this.f15445j, j6);
-                if (!this.f15437a) {
-                    this.f15445j.a(this.f15447l);
-                    this.f15447l.a(this.f15445j.b() - this.f15442f);
-                    b.a(this.f15447l, this.f15446k);
-                    this.f15447l.close();
+                this.f16225b.b(this.f16232j, j6);
+                if (!this.f16224a) {
+                    this.f16232j.a(this.f16234l);
+                    this.f16234l.a(this.f16232j.b() - this.f16229f);
+                    b.a(this.f16234l, this.f16233k);
+                    this.f16234l.close();
                 }
             }
-            if (this.f15443g) {
+            if (this.f16230g) {
                 return;
             }
             e();
-            if (this.f15441e != 0) {
-                throw new ProtocolException("Expected continuation opcode. Got: " + Integer.toHexString(this.f15441e));
+            if (this.f16228e != 0) {
+                throw new ProtocolException("Expected continuation opcode. Got: " + Integer.toHexString(this.f16228e));
             }
         }
         throw new IOException("closed");
@@ -213,19 +213,19 @@ final class c {
 
     public final void a() {
         b();
-        if (this.f15444h) {
+        if (this.f16231h) {
             c();
             return;
         }
-        int i = this.f15441e;
+        int i = this.f16228e;
         if (i != 1 && i != 2) {
             throw new ProtocolException("Unknown opcode: " + Integer.toHexString(i));
         }
         f();
         if (i == 1) {
-            this.f15445j.u();
+            this.f16232j.u();
         } else {
-            this.f15445j.t();
+            this.f16232j.t();
         }
     }
 }

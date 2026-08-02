@@ -25,9 +25,9 @@ public final class e {
         }
     }
 
-    private static void a(MediaFormat mediaFormat, String str, float f3) {
-        if (f3 != -1.0f) {
-            mediaFormat.setFloat(str, f3);
+    private static void a(MediaFormat mediaFormat, String str, float f2) {
+        if (f2 != -1.0f) {
+            mediaFormat.setFloat(str, f2);
         }
     }
 
@@ -39,10 +39,10 @@ public final class e {
 
     private static void a(MediaFormat mediaFormat, com.anythink.basead.exoplayer.l.b bVar) {
         if (bVar != null) {
-            a(mediaFormat, "color-transfer", bVar.f8551c);
-            a(mediaFormat, "color-standard", bVar.f8549a);
-            a(mediaFormat, "color-range", bVar.f8550b);
-            byte[] bArr = bVar.f8552d;
+            a(mediaFormat, "color-transfer", bVar.f9337c);
+            a(mediaFormat, "color-standard", bVar.f9335a);
+            a(mediaFormat, "color-range", bVar.f9336b);
+            byte[] bArr = bVar.f9338d;
             if (bArr != null) {
                 mediaFormat.setByteBuffer("hdr-static-info", ByteBuffer.wrap(bArr));
             }

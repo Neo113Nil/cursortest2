@@ -13,19 +13,19 @@ public class e {
     public static abstract class b<T> implements InvocationHandler {
 
         /* renamed from: a, reason: collision with root package name */
-        private T f18070a;
+        private T f18857a;
 
         private T a() {
-            return this.f18070a;
+            return this.f18857a;
         }
 
         @Override // java.lang.reflect.InvocationHandler
         public Object invoke(Object obj, Method method, Object[] objArr) {
-            return method.invoke(this.f18070a, objArr);
+            return method.invoke(this.f18857a, objArr);
         }
 
         public final void a(T t6) {
-            this.f18070a = t6;
+            this.f18857a = t6;
         }
     }
 

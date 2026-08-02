@@ -13,14 +13,14 @@ public class WrapRoundImageView extends RoundImageView {
         super(context);
     }
 
-    public int[] setBitmapAndResize(Bitmap bitmap, int i, int i6) {
+    public int[] setBitmapAndResize(Bitmap bitmap, int i, int i4) {
         if (bitmap == null) {
             return null;
         }
         setImageBitmap(bitmap);
-        if (i > 0 && i6 > 0) {
+        if (i > 0 && i4 > 0) {
             try {
-                int[] a9 = am.a(i, i6, bitmap.getWidth() / bitmap.getHeight());
+                int[] a9 = am.a(i, i4, bitmap.getWidth() / bitmap.getHeight());
                 ViewGroup.LayoutParams layoutParams = getLayoutParams();
                 if (layoutParams != null) {
                     layoutParams.width = a9[0];

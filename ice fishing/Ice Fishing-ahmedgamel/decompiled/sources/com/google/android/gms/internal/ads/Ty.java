@@ -7,11 +7,11 @@ import java.util.ArrayDeque;
 public final class Ty {
 
     /* renamed from: b, reason: collision with root package name */
-    public MotionEvent f27832b;
+    public MotionEvent f28629b;
 
     /* renamed from: a, reason: collision with root package name */
-    public final ArrayDeque f27831a = new ArrayDeque();
+    public final ArrayDeque f28628a = new ArrayDeque();
 
     /* renamed from: c, reason: collision with root package name */
-    public Ry f27833c = new Ry();
+    public Ry f28630c = new Ry();
 }

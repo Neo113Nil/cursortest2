@@ -16,10 +16,10 @@ public final class MlltFrame extends Id3Frame {
     public final int[] A03;
     public final int[] A04;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 97);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 97);
         }
         return new String(copyOfRange);
     }
@@ -33,11 +33,11 @@ public final class MlltFrame extends Id3Frame {
         CREATOR = new IH();
     }
 
-    public MlltFrame(int i, int i6, int i9, int[] iArr, int[] iArr2) {
+    public MlltFrame(int i, int i4, int i6, int[] iArr, int[] iArr2) {
         super(A00(0, 4, 120));
         this.A02 = i;
-        this.A00 = i6;
-        this.A01 = i9;
+        this.A00 = i4;
+        this.A01 = i6;
         this.A03 = iArr;
         this.A04 = iArr2;
     }

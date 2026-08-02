@@ -18,8 +18,8 @@ public abstract class AnonymousClass22 extends Binder {
     public static BP<Bundle> A00(IBinder iBinder) {
         C2K A01 = BP.A01();
         int i = 0;
-        int i6 = 1;
-        while (i6 != 0) {
+        int i4 = 1;
+        while (i4 != 0) {
             Parcel obtain = Parcel.obtain();
             Parcel obtain2 = Parcel.obtain();
             try {
@@ -27,9 +27,9 @@ public abstract class AnonymousClass22 extends Binder {
                 try {
                     iBinder.transact(1, obtain, obtain2, 0);
                     while (true) {
-                        i6 = obtain2.readInt();
-                        if (i6 == 1) {
-                            A01.A04((Bundle) AbstractC06243y.A01(obtain2.readBundle()));
+                        i4 = obtain2.readInt();
+                        if (i4 == 1) {
+                            A01.A04((Bundle) AbstractC06443y.A01(obtain2.readBundle()));
                             i++;
                         }
                     }

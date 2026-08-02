@@ -45,12 +45,12 @@ public final class KI {
         char c9;
         int i;
         char c10;
+        int i4;
         int i6;
         int i9;
-        int i10;
-        C0788Aw A02 = AbstractC2423qj.A02(A07, bo);
+        C0808Aw A02 = AbstractC2443qj.A02(A07, bo);
         String A022 = A02(41, 7, 120);
-        String str = (String) AbstractC2323p2.A00(A02, A022);
+        String str = (String) AbstractC2343p2.A00(A02, A022);
         char c11 = 2;
         char c12 = 1;
         switch (str.hashCode()) {
@@ -90,7 +90,7 @@ public final class KI {
                 i = 1;
                 break;
         }
-        C0788Aw A023 = AbstractC2423qj.A02(A08, bo);
+        C0808Aw A023 = AbstractC2443qj.A02(A08, bo);
         if (!A023.isEmpty()) {
             String str2 = (String) A023.iterator().next();
             switch (str2.hashCode()) {
@@ -109,21 +109,21 @@ public final class KI {
             }
             switch (c12) {
                 case 0:
-                    i10 = 0;
+                    i9 = 0;
                     break;
                 default:
-                    i10 = -1;
+                    i9 = -1;
                     break;
             }
-            return new KI(i10, 0, i);
+            return new KI(i9, 0, i);
         }
-        C0788Aw A024 = AbstractC2423qj.A02(A05, bo);
-        C0788Aw A025 = AbstractC2423qj.A02(A06, bo);
+        C0808Aw A024 = AbstractC2443qj.A02(A05, bo);
+        C0808Aw A025 = AbstractC2443qj.A02(A06, bo);
         if (A024.isEmpty() && A025.isEmpty()) {
             return new KI(-1, 0, i);
         }
         String A026 = A02(27, 6, 34);
-        String str3 = (String) AbstractC2323p2.A00(A024, A026);
+        String str3 = (String) AbstractC2343p2.A00(A024, A026);
         switch (str3.hashCode()) {
             case -1274499742:
                 if (str3.equals(A026)) {
@@ -145,14 +145,14 @@ public final class KI {
         }
         switch (c10) {
             case 0:
-                i6 = 2;
+                i4 = 2;
                 break;
             default:
-                i6 = 1;
+                i4 = 1;
                 break;
         }
-        String A027 = A02(18, 6, a.f21727Q);
-        String str4 = (String) AbstractC2323p2.A00(A025, A027);
+        String A027 = A02(18, 6, a.f22514Q);
+        String str4 = (String) AbstractC2343p2.A00(A025, A027);
         switch (str4.hashCode()) {
             case -1360216880:
                 break;
@@ -166,44 +166,44 @@ public final class KI {
                     c11 = 1;
                     switch (c11) {
                         case 0:
-                            i9 = 2;
+                            i6 = 2;
                             break;
                         case 1:
-                            i9 = 3;
+                            i6 = 3;
                             break;
                         default:
-                            i9 = 1;
+                            i6 = 1;
                             break;
                     }
-                    return new KI(i9, i6, i);
+                    return new KI(i6, i4, i);
                 }
                 c11 = 65535;
                 switch (c11) {
                 }
-                return new KI(i9, i6, i);
+                return new KI(i6, i4, i);
             case 99657:
                 if (str4.equals(A02(24, 3, 110))) {
                     c11 = 0;
                     switch (c11) {
                     }
-                    return new KI(i9, i6, i);
+                    return new KI(i6, i4, i);
                 }
                 c11 = 65535;
                 switch (c11) {
                 }
-                return new KI(i9, i6, i);
+                return new KI(i6, i4, i);
             default:
                 c11 = 65535;
                 switch (c11) {
                 }
-                return new KI(i9, i6, i);
+                return new KI(i6, i4, i);
         }
     }
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 95);
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 95);
         }
         return new String(copyOfRange);
     }
@@ -216,22 +216,22 @@ public final class KI {
         A03();
         A09 = Pattern.compile(A02(0, 3, 59));
         A08 = BO.A05(A02(8, 4, 55), A02(33, 4, 110));
-        A06 = BO.A06(A02(24, 3, 110), A02(48, 6, 85), A02(18, 6, a.f21727Q));
+        A06 = BO.A06(A02(24, 3, 110), A02(48, 6, 85), A02(18, 6, a.f22514Q));
         A05 = BO.A05(A02(27, 6, 34), A02(37, 4, 110));
         A07 = BO.A06(A02(3, 5, 92), A02(12, 6, 124), A02(41, 7, 120));
     }
 
-    public KI(int i, int i6, int i9) {
+    public KI(int i, int i4, int i6) {
         this.A01 = i;
-        this.A00 = i6;
-        this.A02 = i9;
+        this.A00 = i4;
+        this.A02 = i6;
     }
 
     public static KI A01(String str) {
         if (str == null) {
             return null;
         }
-        String parsingValue = AbstractC2035k7.A01(str.trim());
+        String parsingValue = AbstractC2055k7.A01(str.trim());
         if (parsingValue.isEmpty()) {
             return null;
         }

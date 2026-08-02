@@ -6,13 +6,13 @@ import java.nio.charset.Charset;
 final class y {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Charset f15929a = Charset.forName("UTF-8");
+    public static final Charset f16716a = Charset.forName("UTF-8");
 
     private y() {
     }
 
     public static int a(int i) {
-        return ((i & com.anythink.basead.exoplayer.k.p.f8473b) << 24) | (((-16777216) & i) >>> 24) | ((16711680 & i) >>> 8) | ((65280 & i) << 8);
+        return ((i & com.anythink.basead.exoplayer.k.p.f9259b) << 24) | (((-16777216) & i) >>> 24) | ((16711680 & i) >>> 8) | ((65280 & i) << 8);
     }
 
     public static long a(long j6) {
@@ -29,9 +29,9 @@ final class y {
         }
     }
 
-    public static boolean a(byte[] bArr, int i, byte[] bArr2, int i6, int i9) {
-        for (int i10 = 0; i10 < i9; i10++) {
-            if (bArr[i10 + i] != bArr2[i10 + i6]) {
+    public static boolean a(byte[] bArr, int i, byte[] bArr2, int i4, int i6) {
+        for (int i9 = 0; i9 < i6; i9++) {
+            if (bArr[i9 + i] != bArr2[i9 + i4]) {
                 return false;
             }
         }

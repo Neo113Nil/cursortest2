@@ -11,7 +11,7 @@ import java.io.IOException;
 public interface a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final a f15337a = new a() { // from class: com.anythink.core.common.n.b.a.f.a.1
+    public static final a f16124a = new a() { // from class: com.anythink.core.common.n.b.a.f.a.1
         @Override // com.anythink.core.common.n.b.a.f.a
         public final w a(File file) {
             return n.a(file);

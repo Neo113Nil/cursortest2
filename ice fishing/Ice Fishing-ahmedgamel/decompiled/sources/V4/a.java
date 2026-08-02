@@ -3,7 +3,7 @@ package V4;
 import J4.b;
 import java.util.Set;
 import kotlin.jvm.internal.h;
-import v7.AbstractC5129j;
+import v7.AbstractC5119j;
 
 /* loaded from: classes2.dex */
 public final class a implements U4.a {
@@ -20,9 +20,9 @@ public final class a implements U4.a {
         if (set == null || set.isEmpty() || (stringSet = this._prefs.getStringSet(com.onesignal.common.threading.b.BASE_THREAD_NAME, "PREFS_OS_CLICKED_CLICK_IDS_IAMS", null)) == null || stringSet.isEmpty()) {
             return;
         }
-        Set<String> O8 = AbstractC5129j.O(stringSet);
-        O8.removeAll(set);
-        this._prefs.saveStringSet(com.onesignal.common.threading.b.BASE_THREAD_NAME, "PREFS_OS_CLICKED_CLICK_IDS_IAMS", O8);
+        Set<String> M8 = AbstractC5119j.M(stringSet);
+        M8.removeAll(set);
+        this._prefs.saveStringSet(com.onesignal.common.threading.b.BASE_THREAD_NAME, "PREFS_OS_CLICKED_CLICK_IDS_IAMS", M8);
     }
 
     @Override // U4.a
@@ -33,16 +33,16 @@ public final class a implements U4.a {
         Set<String> stringSet = this._prefs.getStringSet(com.onesignal.common.threading.b.BASE_THREAD_NAME, "PREFS_OS_DISPLAYED_IAMS", null);
         Set<String> stringSet2 = this._prefs.getStringSet(com.onesignal.common.threading.b.BASE_THREAD_NAME, "PREFS_OS_IMPRESSIONED_IAMS", null);
         if (stringSet != null && !stringSet.isEmpty()) {
-            Set<String> O8 = AbstractC5129j.O(stringSet);
-            O8.removeAll(set);
-            this._prefs.saveStringSet(com.onesignal.common.threading.b.BASE_THREAD_NAME, "PREFS_OS_DISPLAYED_IAMS", O8);
+            Set<String> M8 = AbstractC5119j.M(stringSet);
+            M8.removeAll(set);
+            this._prefs.saveStringSet(com.onesignal.common.threading.b.BASE_THREAD_NAME, "PREFS_OS_DISPLAYED_IAMS", M8);
         }
         if (stringSet2 == null || stringSet2.isEmpty()) {
             return;
         }
-        Set<String> O9 = AbstractC5129j.O(stringSet2);
-        O9.removeAll(set);
-        this._prefs.saveStringSet(com.onesignal.common.threading.b.BASE_THREAD_NAME, "PREFS_OS_IMPRESSIONED_IAMS", O9);
+        Set<String> M9 = AbstractC5119j.M(stringSet2);
+        M9.removeAll(set);
+        this._prefs.saveStringSet(com.onesignal.common.threading.b.BASE_THREAD_NAME, "PREFS_OS_IMPRESSIONED_IAMS", M9);
     }
 
     @Override // U4.a

@@ -7,7 +7,7 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.View;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import k3.AbstractC4632a;
+import m3.AbstractC4742a;
 
 /* loaded from: classes2.dex */
 public class ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior<T> extends b {
@@ -21,8 +21,8 @@ public class ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior<T
 
     @Override // B.b
     public final void c(e eVar) {
-        if (eVar.f78h == 0) {
-            eVar.f78h = 80;
+        if (eVar.f236h == 0) {
+            eVar.f236h = 80;
         }
     }
 
@@ -37,7 +37,7 @@ public class ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior<T
     }
 
     public ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior(Context context, AttributeSet attributeSet) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, AbstractC4632a.f38634f);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, AbstractC4742a.f39423f);
         obtainStyledAttributes.getBoolean(0, false);
         obtainStyledAttributes.getBoolean(1, true);
         obtainStyledAttributes.recycle();

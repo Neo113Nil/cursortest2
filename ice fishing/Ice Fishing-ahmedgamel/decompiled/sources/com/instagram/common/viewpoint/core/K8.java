@@ -19,10 +19,10 @@ public final class K8 {
     public final int A09;
     public final int A0A;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0B, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 69);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0B, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 69);
         }
         return new String(copyOfRange);
     }
@@ -35,22 +35,23 @@ public final class K8 {
         A02();
     }
 
-    public K8(int i, int i6, int i9, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
+    public K8(int i, int i4, int i6, int i9, int i10, int i11, int i12, int i13, int i14, int i15, int i16) {
         this.A06 = i;
-        this.A00 = i6;
-        this.A08 = i9;
-        this.A07 = i10;
-        this.A03 = i11;
-        this.A01 = i12;
-        this.A04 = i13;
-        this.A0A = i14;
-        this.A09 = i15;
-        this.A02 = i16;
-        this.A05 = i17;
+        this.A00 = i4;
+        this.A08 = i6;
+        this.A07 = i9;
+        this.A03 = i10;
+        this.A01 = i11;
+        this.A04 = i12;
+        this.A0A = i13;
+        this.A09 = i14;
+        this.A02 = i15;
+        this.A05 = i16;
     }
 
     public static K8 A00(String str) {
         int i = -1;
+        int i4 = -1;
         int i6 = -1;
         int i9 = -1;
         int i10 = -1;
@@ -59,7 +60,6 @@ public final class K8 {
         int i13 = -1;
         int i14 = -1;
         int i15 = -1;
-        int i16 = -1;
         int nameIndex = A01(1, 7, 3).length();
         String[] split = TextUtils.split(str.substring(nameIndex), A01(0, 1, 71));
         int boldIndex = 0;
@@ -67,7 +67,7 @@ public final class K8 {
             int nameIndex2 = split.length;
             int fontSizeIndex = -1;
             if (boldIndex < nameIndex2) {
-                String A01 = AbstractC2035k7.A01(split[boldIndex].trim());
+                String A01 = AbstractC2055k7.A01(split[boldIndex].trim());
                 int nameIndex3 = A01.hashCode();
                 switch (nameIndex3) {
                     case -1178781136:
@@ -146,38 +146,38 @@ public final class K8 {
                         i = boldIndex;
                         break;
                     case 1:
-                        i6 = boldIndex;
+                        i4 = boldIndex;
                         break;
                     case 2:
-                        i9 = boldIndex;
+                        i6 = boldIndex;
                         break;
                     case 3:
-                        i10 = boldIndex;
+                        i9 = boldIndex;
                         break;
                     case 4:
-                        i11 = boldIndex;
+                        i10 = boldIndex;
                         break;
                     case 5:
-                        i12 = boldIndex;
+                        i11 = boldIndex;
                         break;
                     case 6:
-                        i13 = boldIndex;
+                        i12 = boldIndex;
                         break;
                     case 7:
-                        i14 = boldIndex;
+                        i13 = boldIndex;
                         break;
                     case 8:
-                        i15 = boldIndex;
+                        i14 = boldIndex;
                         break;
                     case 9:
-                        i16 = boldIndex;
+                        i15 = boldIndex;
                         break;
                 }
                 boldIndex++;
             } else {
                 if (i != -1) {
                     int nameIndex5 = split.length;
-                    return new K8(i, i6, i9, i10, i11, i12, i13, i14, i15, i16, nameIndex5);
+                    return new K8(i, i4, i6, i9, i10, i11, i12, i13, i14, i15, nameIndex5);
                 }
                 return null;
             }

@@ -5,17 +5,17 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 import java.util.List;
-import v7.AbstractC5128i;
-import v7.AbstractC5130k;
+import v7.AbstractC5118i;
+import v7.AbstractC5120k;
 
 /* loaded from: classes.dex */
 public abstract class P {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final List f5137a = AbstractC5130k.v(Application.class, K.class);
+    public static final List f5104a = AbstractC5120k.t(Application.class, K.class);
 
     /* renamed from: b, reason: collision with root package name */
-    public static final List f5138b = d6.c.k(K.class);
+    public static final List f5105b = Z2.d.n(K.class);
 
     public static final Constructor a(Class cls, List signature) {
         kotlin.jvm.internal.h.e(signature, "signature");
@@ -24,11 +24,11 @@ public abstract class P {
         for (Constructor<?> constructor : constructors) {
             Class<?>[] parameterTypes = constructor.getParameterTypes();
             kotlin.jvm.internal.h.d(parameterTypes, "constructor.parameterTypes");
-            List y7 = AbstractC5128i.y(parameterTypes);
-            if (signature.equals(y7)) {
+            List B3 = AbstractC5118i.B(parameterTypes);
+            if (signature.equals(B3)) {
                 return constructor;
             }
-            if (signature.size() == y7.size() && y7.containsAll(signature)) {
+            if (signature.size() == B3.size() && B3.containsAll(signature)) {
                 throw new UnsupportedOperationException("Class " + cls.getSimpleName() + " must have parameters in the proper order: " + signature);
             }
         }

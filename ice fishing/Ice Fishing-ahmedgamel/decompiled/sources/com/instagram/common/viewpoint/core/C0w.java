@@ -7,16 +7,16 @@ import java.util.List;
 /* loaded from: assets/audience_network/classes2.dex */
 public final class C0w extends C1J {
     public C6X A00;
-    public List<C1678e5> A01;
+    public List<C1698e5> A01;
 
-    public C0w(C1840gi c1840gi) {
-        super(c1840gi);
+    public C0w(C1860gi c1860gi) {
+        super(c1860gi);
         this.A00 = new C6X(this, 1, null, null, null);
     }
 
-    public final void A20(C1785fp c1785fp) {
+    public final void A20(C1805fp c1805fp) {
         if (this.A00 != null) {
-            this.A00.A0c(c1785fp);
+            this.A00.A0c(c1805fp);
         }
     }
 

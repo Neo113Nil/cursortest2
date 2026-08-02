@@ -12,16 +12,16 @@ import com.anythink.core.common.v.q;
 /* loaded from: classes.dex */
 public final class e extends c {
     @Override // com.anythink.basead.ui.component.a.c, com.anythink.basead.ui.component.a.d
-    public final void a(ViewGroup viewGroup, w wVar, x xVar, boolean z3, b.a aVar) {
-        super.a(viewGroup, wVar, xVar, z3, aVar);
-        if (this.f10689a != null) {
+    public final void a(ViewGroup viewGroup, w wVar, x xVar, boolean z6, b.a aVar) {
+        super.a(viewGroup, wVar, xVar, z6, aVar);
+        if (this.f11475a != null) {
             if (TextUtils.isEmpty(wVar.D())) {
-                this.f10689a.setText(com.anythink.basead.b.e.a(viewGroup.getContext(), wVar));
+                this.f11475a.setText(com.anythink.basead.b.e.a(viewGroup.getContext(), wVar));
             } else {
-                this.f10689a.setText(wVar.D());
+                this.f11475a.setText(wVar.D());
             }
             if (wVar.r() != null) {
-                this.f10689a.startAnimation(wVar.r().aH());
+                this.f11475a.startAnimation(wVar.r().aH());
             }
         }
     }
@@ -29,6 +29,6 @@ public final class e extends c {
     @Override // com.anythink.basead.ui.component.a.c, com.anythink.basead.ui.component.a.d
     public final void b(ViewGroup viewGroup) {
         LayoutInflater.from(viewGroup.getContext()).inflate(q.a(viewGroup.getContext(), "myoffer_large_cta_button_layout", "layout"), viewGroup);
-        this.f10689a = (ScanningAnimButton) viewGroup.findViewById(q.a(viewGroup.getContext(), "myoffer_cta_button_major", "id"));
+        this.f11475a = (ScanningAnimButton) viewGroup.findViewById(q.a(viewGroup.getContext(), "myoffer_cta_button_major", "id"));
     }
 }

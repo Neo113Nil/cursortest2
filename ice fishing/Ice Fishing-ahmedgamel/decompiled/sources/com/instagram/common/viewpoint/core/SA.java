@@ -19,17 +19,17 @@ public final class SA implements NativeBannerAdApi {
     public static String[] A02 = {"068yMtBHtCdtzUYBTQD9IwnMWW1doBJF", "2l8Hok5ewW", "SqMVYGMc7AyphtDxx4DkXGESiOtqp3Wk", "n7xht10RjuH04nLwyOxbbpbZUJ6bFNP5", "hemUdCIRyaFDmP64bLQtQG29khNbMpFH", "0krrnlsRXu", "j9YMm5Kfv7iMZif7VGfsQGY8YQ9Z0I42", "SiUubuHC3Y"};
     public final UK A00;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            byte b9 = copyOfRange[i10];
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            byte b9 = copyOfRange[i9];
             if (A02[0].charAt(2) != '8') {
                 throw new RuntimeException();
             }
             String[] strArr = A02;
             strArr[2] = "SDJ7CqIuYGJEmotuvG7btG7Q2tCK4c6p";
             strArr[6] = "3TZdd6KNeaSFSkmrHNZK7GULPPfkGOEa";
-            copyOfRange[i10] = (byte) ((b9 - i9) - 50);
+            copyOfRange[i9] = (byte) ((b9 - i6) - 50);
         }
         return new String(copyOfRange);
     }
@@ -44,40 +44,40 @@ public final class SA implements NativeBannerAdApi {
 
     public SA(NativeAdBaseApi nativeAdBaseApi) {
         this.A00 = UK.A0L(nativeAdBaseApi);
-        this.A00.A1i(EnumC1315Vq.A05);
+        this.A00.A1i(EnumC1335Vq.A05);
     }
 
     private void A02(ImageView imageView, NativeAdBaseApi nativeAdBaseApi) {
         UK A0L = UK.A0L(nativeAdBaseApi);
-        C1862h4 c1862h4 = new C1862h4(this, imageView, A0L);
-        C1302Vb adIcon = A0L.getAdIcon();
+        C1882h4 c1882h4 = new C1882h4(this, imageView, A0L);
+        C1322Vb adIcon = A0L.getAdIcon();
         if (adIcon != null) {
             Bitmap A0N = A0L.A14().A0N(adIcon.getUrl());
             Context context = imageView.getContext();
             String[] strArr = A02;
             if (strArr[2].charAt(21) == strArr[6].charAt(21)) {
                 A02[4] = "oesEo3u5gOmbsNZfXjsimFyw8pPXYbZZ";
-                C1840gi A03 = C1213Rp.A03(context);
+                C1860gi A03 = C1233Rp.A03(context);
                 if (A0N != null) {
                     Drawable A05 = UK.A05(A03, A0N, A0L.A1t(), A0L.A1I());
                     UK.A0f(A05, imageView);
-                    imageView.post(new C1861h3(this, A0L, A05));
+                    imageView.post(new C1881h3(this, A0L, A05));
                     return;
                 } else {
-                    C1862h4 c1862h42 = null;
-                    S7 loadImageTask = new S7(A03, c1862h4, A0L.A1t(), c1862h42);
-                    loadImageTask.execute(new S9(adIcon.getUrl(), A0L.A1I(), c1862h42));
+                    C1882h4 c1882h42 = null;
+                    S7 loadImageTask = new S7(A03, c1882h4, A0L.A1t(), c1882h42);
+                    loadImageTask.execute(new S9(adIcon.getUrl(), A0L.A1I(), c1882h42));
                     return;
                 }
             }
         } else {
-            InterfaceC1270Tv A1A = A0L.A1A();
+            InterfaceC1290Tv A1A = A0L.A1A();
             AdErrorType adErrorType = AdErrorType.NATIVE_AD_IS_NOT_LOADED;
             if (A02[4].charAt(17) != 't') {
                 A02[4] = "aFZFEDb6phUkMJAuumeHd9ws0nVx9tBY";
                 A0L.A16().A0F().A3N(-1L, adErrorType.getErrorCode(), adErrorType.getDefaultErrorMessage());
                 if (A1A != null) {
-                    A1A.ADp(C1312Vm.A00(adErrorType));
+                    A1A.ADp(C1332Vm.A00(adErrorType));
                 }
                 Log.e(A00(0, 17, 86), adErrorType.getDefaultErrorMessage());
                 return;
@@ -118,7 +118,7 @@ public final class SA implements NativeBannerAdApi {
     @Override // com.facebook.ads.internal.api.NativeBannerAdApi
     public final void registerViewForInteraction(View view, MediaView mediaView, List<View> clickableViews) {
         if (mediaView != null) {
-            ((C1870hC) mediaView.getMediaViewApi()).A0X(this.A00, true);
+            ((C1890hC) mediaView.getMediaViewApi()).A0X(this.A00, true);
         }
         if (clickableViews != null) {
             this.A00.A1W(view, mediaView, clickableViews, true);

@@ -7,14 +7,14 @@ public final class a {
     public static final class C0133a {
 
         /* renamed from: a, reason: collision with root package name */
-        private static a f20834a = new a();
+        private static a f21621a = new a();
 
         private C0133a() {
         }
     }
 
     private static a a() {
-        return C0133a.f20834a;
+        return C0133a.f21621a;
     }
 
     private static void b() {

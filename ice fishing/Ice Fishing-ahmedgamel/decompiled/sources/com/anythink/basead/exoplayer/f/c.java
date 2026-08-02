@@ -4,10 +4,10 @@ package com.anythink.basead.exoplayer.f;
 public interface c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final c f7248a = new c() { // from class: com.anythink.basead.exoplayer.f.c.1
+    public static final c f8034a = new c() { // from class: com.anythink.basead.exoplayer.f.c.1
         @Override // com.anythink.basead.exoplayer.f.c
-        public final a a(String str, boolean z3) {
-            return d.a(str, z3);
+        public final a a(String str, boolean z6) {
+            return d.a(str, z6);
         }
 
         @Override // com.anythink.basead.exoplayer.f.c
@@ -18,5 +18,5 @@ public interface c {
 
     a a();
 
-    a a(String str, boolean z3);
+    a a(String str, boolean z6);
 }

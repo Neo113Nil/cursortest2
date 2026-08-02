@@ -33,8 +33,8 @@ public abstract class CustomInterstitialAdapter extends ATBaseAdAdapter {
     public final void internalFormatShow(Activity activity, ViewGroup viewGroup, final ATCommonImpressionListener aTCommonImpressionListener) {
         this.mImpressListener = new CustomInterstitialEventListener() { // from class: com.anythink.interstitial.unitgroup.api.CustomInterstitialAdapter.1
             @Override // com.anythink.interstitial.unitgroup.api.CustomInterstitialEventListener
-            public final void onDeeplinkCallback(boolean z3) {
-                aTCommonImpressionListener.onDeeplinkCallback(z3);
+            public final void onDeeplinkCallback(boolean z6) {
+                aTCommonImpressionListener.onDeeplinkCallback(z6);
             }
 
             @Override // com.anythink.interstitial.unitgroup.api.CustomInterstitialEventListener

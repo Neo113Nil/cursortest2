@@ -35,16 +35,16 @@ public final class Y2 {
     public float A02 = -1.0f;
     public float A01 = -1.0f;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0I, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 102);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0I, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 102);
         }
         return new String(copyOfRange);
     }
 
     public static void A02() {
-        A0I = new byte[]{0, 12, 115, Byte.MAX_VALUE, 60, 51, 54, 60, 52, 56, 42, 62, 45, 59, 11, 54, 50, 58, 101, Byte.MAX_VALUE, 75, 78, 122, 69, 89, 67, 94, 67, 69, 68, 114, 94, 91, 111, 80, 76, 86, 75, 86, 80, 81, 102, 105, 102, 99, 105, 97, 78, 111, 102, 107, 115, 94, 99, 103, 111, 119, 120, 125, 119, Byte.MAX_VALUE, 76, 47, 32, 37, 47, 39, 21, 95, 80, 85, 95, 87, 89, 88, 106, 85, 89, 75, 104, 93, 91, 1, 10, 0, 48, 13, 9, 1, 115, 120, 114, 78, 46, 37, 47, 18, 20, 29, 0, 17, 23, 108, 97, 109, 99, 108, 112, 56, 34, 18, 61, 56, 50, 58, 22, 36, 48, 35, 53, 20, c.f16318c, 48, 51, 61, 52, 53, 107, 113, 84, 71, 66, 79, 83, 85, 126, 118, 101, 96, 109, 113, 119, 93, 14, 25, 31, 19, 14, 24, 21, 18, 27, 92, 21, 17, 12, 14, 25, 15, 15, 21, 19, 18, 70, 92, 99, 100, 113, 98, 100, 68, 121, 125, 117, 115, 116, 97, 114, 116, 88, 36, 35, 54, 37, 35, 14, 15, 17, 28, 12, 16};
+        A0I = new byte[]{0, 12, 115, Byte.MAX_VALUE, 60, 51, 54, 60, 52, 56, 42, 62, 45, 59, 11, 54, 50, 58, 101, Byte.MAX_VALUE, 75, 78, 122, 69, 89, 67, 94, 67, 69, 68, 114, 94, 91, 111, 80, 76, 86, 75, 86, 80, 81, 102, 105, 102, 99, 105, 97, 78, 111, 102, 107, 115, 94, 99, 103, 111, 119, 120, 125, 119, Byte.MAX_VALUE, 76, 47, 32, 37, 47, 39, 21, 95, 80, 85, 95, 87, 89, 88, 106, 85, 89, 75, 104, 93, 91, 1, 10, 0, 48, 13, 9, 1, 115, 120, 114, 78, 46, 37, 47, 18, 20, 29, 0, 17, 23, 108, 97, 109, 99, 108, 112, 56, 34, 18, 61, 56, 50, 58, 22, 36, 48, 35, 53, 20, c.f17105c, 48, 51, 61, 52, 53, 107, 113, 84, 71, 66, 79, 83, 85, 126, 118, 101, 96, 109, 113, 119, 93, 14, 25, 31, 19, 14, 24, 21, 18, 27, 92, 21, 17, 12, 14, 25, 15, 15, 21, 19, 18, 70, 92, 99, 100, 113, 98, 100, 68, 121, 125, 117, 115, 116, 97, 114, 116, 88, 36, 35, 54, 37, 35, 14, 15, 17, 28, 12, 16};
     }
 
     static {
@@ -52,9 +52,9 @@ public final class Y2 {
         A0K = Y2.class.getSimpleName();
     }
 
-    private EnumC1350Xc A00() {
+    private EnumC1370Xc A00() {
         if (this.A0G == null || this.A0F == null) {
-            return EnumC1350Xc.A0J;
+            return EnumC1370Xc.A0J;
         }
         View view = this.A0G;
         String[] strArr = A0J;
@@ -63,26 +63,26 @@ public final class Y2 {
             strArr2[6] = "";
             strArr2[4] = "";
             if (view != this.A0F) {
-                EnumC1350Xc enumC1350Xc = EnumC1350Xc.A0H;
+                EnumC1370Xc enumC1370Xc = EnumC1370Xc.A0H;
                 String[] strArr3 = A0J;
                 if (strArr3[7].charAt(18) != strArr3[1].charAt(18)) {
                     throw new RuntimeException();
                 }
                 A0J[0] = "tmBamhoJLli8fG7mmMEXMJcTnxwesBVw";
-                return enumC1350Xc;
+                return enumC1370Xc;
             }
-            Object tag = this.A0G.getTag(EnumC1350Xc.A02);
+            Object tag = this.A0G.getTag(EnumC1370Xc.A02);
             if (tag == null) {
-                return EnumC1350Xc.A0I;
+                return EnumC1370Xc.A0I;
             }
-            if (!(tag instanceof EnumC1350Xc)) {
-                EnumC1350Xc enumC1350Xc2 = EnumC1350Xc.A0K;
+            if (!(tag instanceof EnumC1370Xc)) {
+                EnumC1370Xc enumC1370Xc2 = EnumC1370Xc.A0K;
                 if (A0J[2].charAt(2) == 'm') {
                     A0J[0] = "fnwPYOgaVMSkQLAdq2SZMccx8Jl2b0fK";
-                    return enumC1350Xc2;
+                    return enumC1370Xc2;
                 }
             } else {
-                return (EnumC1350Xc) tag;
+                return (EnumC1370Xc) tag;
             }
         }
         throw new RuntimeException();
@@ -149,7 +149,7 @@ public final class Y2 {
         String valueOf14 = String.valueOf(this.A00);
         String radius14 = A01(97, 5, 20);
         hashMap.put(radius14, valueOf14);
-        String radius15 = A01(a.f21730T, 7, 64);
+        String radius15 = A01(a.f22517T, 7, 64);
         hashMap.put(radius15, valueOf);
         String radius16 = A01(136, 7, 98);
         hashMap.put(radius16, valueOf);
@@ -166,9 +166,9 @@ public final class Y2 {
         }
     }
 
-    public final void A06(C1840gi c1840gi, MotionEvent motionEvent, View view, View view2) {
+    public final void A06(C1860gi c1860gi, MotionEvent motionEvent, View view, View view2) {
         if (view == null) {
-            c1840gi.A0F().AKl();
+            c1860gi.A0F().AKl();
             return;
         }
         if (!this.A0H) {
@@ -241,17 +241,17 @@ public final class Y2 {
     }
 
     public final boolean A09(Context context) {
-        boolean z3;
-        int A07 = C1290Up.A07(context);
+        boolean z6;
+        int A07 = C1310Up.A07(context);
         long A03 = A03();
         if (A07 >= 0 && A03 < A07) {
-            z3 = true;
+            z6 = true;
         } else {
-            z3 = false;
+            z6 = false;
         }
         if (BuildConfigApi.isDebug()) {
-            String str = A01(108, 21, 55) + z3 + A01(2, 18, 57) + A07 + A01(0, 2, 74) + A03;
+            String str = A01(108, 21, 55) + z6 + A01(2, 18, 57) + A07 + A01(0, 2, 74) + A03;
         }
-        return z3;
+        return z6;
     }
 }

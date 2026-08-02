@@ -5,71 +5,71 @@ import android.webkit.ValueCallback;
 import android.webkit.WebView;
 import org.json.JSONException;
 import org.json.JSONObject;
-import p2.C4835j;
+import r2.C4906k;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class C8 implements ValueCallback {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ RunnableC3865s0 f24055a;
+    public final /* synthetic */ RunnableC3888s0 f24818a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final /* synthetic */ C4197y8 f24056b;
+    public final /* synthetic */ C4220y8 f24819b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final /* synthetic */ WebView f24057c;
+    public final /* synthetic */ WebView f24820c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final /* synthetic */ boolean f24058d;
+    public final /* synthetic */ boolean f24821d;
 
-    public /* synthetic */ C8(RunnableC3865s0 runnableC3865s0, C4197y8 c4197y8, WebView webView, boolean z3) {
-        this.f24055a = runnableC3865s0;
-        this.f24056b = c4197y8;
-        this.f24057c = webView;
-        this.f24058d = z3;
+    public /* synthetic */ C8(RunnableC3888s0 runnableC3888s0, C4220y8 c4220y8, WebView webView, boolean z6) {
+        this.f24818a = runnableC3888s0;
+        this.f24819b = c4220y8;
+        this.f24820c = webView;
+        this.f24821d = z6;
     }
 
     @Override // android.webkit.ValueCallback
     public final void onReceiveValue(Object obj) {
-        D8 d82 = (D8) this.f24055a.f33794w;
-        C4197y8 c4197y8 = this.f24056b;
-        WebView webView = this.f24057c;
+        D8 d82 = (D8) this.f24818a.f34562w;
+        C4220y8 c4220y8 = this.f24819b;
+        WebView webView = this.f24820c;
         String str = (String) obj;
-        boolean z3 = this.f24058d;
+        boolean z6 = this.f24821d;
         d82.getClass();
-        synchronized (c4197y8.f35115g) {
-            c4197y8.f35120m--;
+        synchronized (c4220y8.f35901g) {
+            c4220y8.f35906m--;
         }
         try {
-            boolean z6 = true;
+            boolean z9 = true;
             if (!TextUtils.isEmpty(str)) {
-                String optString = new JSONObject(str).optString(com.anythink.basead.exoplayer.k.o.f8446c);
-                if (d82.f24350G || TextUtils.isEmpty(webView.getTitle())) {
-                    c4197y8.a(optString, z3, webView.getX(), webView.getY(), webView.getWidth(), webView.getHeight());
+                String optString = new JSONObject(str).optString(com.anythink.basead.exoplayer.k.o.f9232c);
+                if (d82.f25095G || TextUtils.isEmpty(webView.getTitle())) {
+                    c4220y8.a(optString, z6, webView.getX(), webView.getY(), webView.getWidth(), webView.getHeight());
                 } else {
                     String title = webView.getTitle();
                     StringBuilder sb = new StringBuilder(String.valueOf(title).length() + 1 + String.valueOf(optString).length());
                     sb.append(title);
                     sb.append("\n");
                     sb.append(optString);
-                    c4197y8.a(sb.toString(), z3, webView.getX(), webView.getY(), webView.getWidth(), webView.getHeight());
+                    c4220y8.a(sb.toString(), z6, webView.getX(), webView.getY(), webView.getWidth(), webView.getHeight());
                 }
             }
-            synchronized (c4197y8.f35115g) {
-                if (c4197y8.f35120m != 0) {
-                    z6 = false;
+            synchronized (c4220y8.f35901g) {
+                if (c4220y8.f35906m != 0) {
+                    z9 = false;
                 }
             }
-            if (z6) {
-                d82.f24355w.k(c4197y8);
+            if (z9) {
+                d82.f25100w.k(c4220y8);
             }
         } catch (JSONException unused) {
-            int i = u2.z.f41322b;
-            v2.i.a("Json string may be malformed.");
+            int i = w2.z.f41712b;
+            x2.i.a("Json string may be malformed.");
         } catch (Throwable th) {
-            int i6 = u2.z.f41322b;
-            v2.i.b("Failed to get webview content.", th);
-            C4835j.f39733C.f39743h.d("ContentFetchTask.processWebViewContent", th);
+            int i4 = w2.z.f41712b;
+            x2.i.b("Failed to get webview content.", th);
+            C4906k.f40186C.f40196h.d("ContentFetchTask.processWebViewContent", th);
         }
     }
 }

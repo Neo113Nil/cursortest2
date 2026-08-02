@@ -26,7 +26,7 @@ public final class b implements O4.b {
     }
 
     public final JSONObject toJSONObject() {
-        JSONObject put = new JSONObject().put("message", this._message.toJSONObject()).put(NativeAdvancedJsUtils.f17906p, this._result.toJSONObject());
+        JSONObject put = new JSONObject().put("message", this._message.toJSONObject()).put(NativeAdvancedJsUtils.f18693p, this._result.toJSONObject());
         kotlin.jvm.internal.h.d(put, "put(...)");
         return put;
     }

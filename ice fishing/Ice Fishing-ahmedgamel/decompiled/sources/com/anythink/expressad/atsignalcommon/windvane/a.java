@@ -1,6 +1,6 @@
 package com.anythink.expressad.atsignalcommon.windvane;
 
-import D.y;
+import D.x;
 import android.text.TextUtils;
 import android.webkit.WebView;
 
@@ -10,11 +10,11 @@ public abstract class a implements com.anythink.core.express.d.b {
     public final void a(Object obj, String str, String str2) {
         if (obj instanceof b) {
             b bVar = (b) obj;
-            String o6 = TextUtils.isEmpty(str2) ? y.o("javascript:window.MvBridge.fireEvent('", str, "', '');") : y.p("javascript:window.MvBridge.fireEvent('", str, "','", com.anythink.core.express.d.d.c(str2), "');");
-            WindVaneWebView windVaneWebView = bVar.f18062a;
+            String l9 = TextUtils.isEmpty(str2) ? x.l("javascript:window.MvBridge.fireEvent('", str, "', '');") : x.m("javascript:window.MvBridge.fireEvent('", str, "','", com.anythink.core.express.d.d.c(str2), "');");
+            WindVaneWebView windVaneWebView = bVar.f18849a;
             if (windVaneWebView != null) {
                 try {
-                    windVaneWebView.loadUrl(o6);
+                    windVaneWebView.loadUrl(l9);
                 } catch (Exception e9) {
                     e9.printStackTrace();
                 } catch (Throwable th) {
@@ -29,15 +29,15 @@ public abstract class a implements com.anythink.core.express.d.b {
         if (obj instanceof b) {
             b bVar = (b) obj;
             if (TextUtils.isEmpty(str)) {
-                String str2 = bVar.f18068g;
+                String str2 = bVar.f18855g;
             } else {
                 str = com.anythink.core.express.d.d.c(str);
             }
-            String p9 = y.p("javascript:window.MvBridge.onFailure(", bVar.f18068g, ",'", str, "');");
-            WindVaneWebView windVaneWebView = bVar.f18062a;
+            String m9 = x.m("javascript:window.MvBridge.onFailure(", bVar.f18855g, ",'", str, "');");
+            WindVaneWebView windVaneWebView = bVar.f18849a;
             if (windVaneWebView != null) {
                 try {
-                    windVaneWebView.loadUrl(p9);
+                    windVaneWebView.loadUrl(m9);
                 } catch (Exception e9) {
                     e9.printStackTrace();
                 } catch (Throwable th) {
@@ -48,15 +48,15 @@ public abstract class a implements com.anythink.core.express.d.b {
     }
 
     private static void a(WebView webView, String str, String str2) {
-        String p9;
+        String m9;
         if (TextUtils.isEmpty(str2)) {
-            p9 = y.o("javascript:window.MvBridge.fireEvent('", str, "', '');");
+            m9 = x.l("javascript:window.MvBridge.fireEvent('", str, "', '');");
         } else {
-            p9 = y.p("javascript:window.MvBridge.fireEvent('", str, "','", com.anythink.core.express.d.d.c(str2), "');");
+            m9 = x.m("javascript:window.MvBridge.fireEvent('", str, "','", com.anythink.core.express.d.d.c(str2), "');");
         }
         if (webView != null) {
             try {
-                webView.loadUrl(p9);
+                webView.loadUrl(m9);
             } catch (Exception e9) {
                 e9.printStackTrace();
             } catch (Throwable th) {

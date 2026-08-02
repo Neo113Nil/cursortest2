@@ -9,7 +9,7 @@ public abstract class j {
         return resources.getDrawable(i, theme);
     }
 
-    public static Drawable b(Resources resources, int i, int i6, Resources.Theme theme) {
-        return resources.getDrawableForDensity(i, i6, theme);
+    public static Drawable b(Resources resources, int i, int i4, Resources.Theme theme) {
+        return resources.getDrawableForDensity(i, i4, theme);
     }
 }

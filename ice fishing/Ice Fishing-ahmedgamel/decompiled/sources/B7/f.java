@@ -4,13 +4,13 @@ package B7;
 public abstract class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Z2.e f221a;
+    public static final b3.e f287a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static Z2.e f222b;
+    public static b3.e f288b;
 
     static {
         Object obj = null;
-        f221a = new Z2.e(4, obj, obj, obj);
+        f287a = new b3.e(1, obj, obj, obj);
     }
 }

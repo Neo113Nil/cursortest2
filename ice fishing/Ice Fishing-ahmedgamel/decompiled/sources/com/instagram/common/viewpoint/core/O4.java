@@ -12,14 +12,14 @@ import com.facebook.ads.AdError;
 /* loaded from: assets/audience_network/classes2.dex */
 public class O4 extends WebViewClient {
     public boolean A00 = false;
-    public final C1112No A01;
+    public final C1132No A01;
     public final O3 A02;
     public final boolean A03;
 
-    public O4(C1112No c1112No, O3 o32, boolean z3) {
-        this.A01 = c1112No;
+    public O4(C1132No c1132No, O3 o32, boolean z6) {
+        this.A01 = c1132No;
         this.A02 = o32;
-        this.A03 = z3;
+        this.A03 = z6;
     }
 
     private void A00() {
@@ -43,7 +43,7 @@ public class O4 extends WebViewClient {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void A03() {
-        new Handler().postDelayed(new C1980j5(this), this.A01.A0F());
+        new Handler().postDelayed(new C2000j5(this), this.A01.A0F());
     }
 
     @Override // android.webkit.WebViewClient
@@ -66,7 +66,7 @@ public class O4 extends WebViewClient {
 
     @Override // android.webkit.WebViewClient
     public final boolean onRenderProcessGone(WebView webView, RenderProcessGoneDetail renderProcessGoneDetail) {
-        AbstractC1486ay.A0D(AbstractC1252Td.A2g);
+        AbstractC1506ay.A0D(AbstractC1272Td.A2g);
         A00();
         return true;
     }

@@ -33,10 +33,10 @@ public abstract class RK {
     public int A0E = 0;
     public int A02 = -1;
 
-    public static String A08(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0I, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            byte b9 = (byte) ((copyOfRange[i10] ^ i9) ^ 54);
+    public static String A08(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0I, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            byte b9 = (byte) ((copyOfRange[i9] ^ i6) ^ 54);
             String[] strArr = A0J;
             if (strArr[6].charAt(16) != strArr[5].charAt(16)) {
                 throw new RuntimeException();
@@ -44,7 +44,7 @@ public abstract class RK {
             String[] strArr2 = A0J;
             strArr2[0] = "UeRrU6VIZhMUvjXaMrLT2TysGAtdmGOb";
             strArr2[1] = "zACgjBXCZF9ewGg4NUIKbeNCvKdUEEL0";
-            copyOfRange[i10] = b9;
+            copyOfRange[i9] = b9;
         }
         return new String(copyOfRange);
     }
@@ -225,13 +225,13 @@ public abstract class RK {
         this.A0C |= i;
     }
 
-    public final void A0a(int i, int i6) {
-        this.A0C = (this.A0C & (~i6)) | (i & i6);
+    public final void A0a(int i, int i4) {
+        this.A0C = (this.A0C & (~i4)) | (i & i4);
     }
 
-    public final void A0b(RA ra, boolean z3) {
+    public final void A0b(RA ra, boolean z6) {
         this.A0F = ra;
-        this.A0G = z3;
+        this.A0G = z6;
     }
 
     public final void A0c(Object obj) {
@@ -246,27 +246,27 @@ public abstract class RK {
         A0Z(1024);
     }
 
-    public final void A0d(boolean z3) {
+    public final void A0d(boolean z6) {
         int i;
-        int i6 = this.A0D;
-        if (z3) {
-            i = i6 - 1;
+        int i4 = this.A0D;
+        if (z6) {
+            i = i4 - 1;
         } else {
-            i = i6 + 1;
+            i = i4 + 1;
         }
         this.A0D = i;
-        int i9 = this.A0D;
+        int i6 = this.A0D;
         if (A0J[2].length() != 23) {
             throw new RuntimeException();
         }
         A0J[2] = "rX8ZXsodik0buiwUD3KFOeS";
-        if (i9 < 0) {
+        if (i6 < 0) {
             this.A0D = 0;
             Log.e(A08(143, 4, 66), A08(186, 78, 113) + this);
-        } else if (!z3 && this.A0D == 1) {
+        } else if (!z6 && this.A0D == 1) {
             this.A0C |= 16;
         } else {
-            if (!z3 || this.A0D != 0) {
+            if (!z6 || this.A0D != 0) {
                 return;
             }
             this.A0C &= -17;
@@ -332,15 +332,15 @@ public abstract class RK {
 
     public final String toString() {
         String A08;
-        StringBuilder sb = new StringBuilder(A08(147, 11, 70) + Integer.toHexString(hashCode()) + A08(46, 10, 14) + this.A03 + A08(0, 4, 21) + this.A05 + A08(a.f21727Q, 9, 58) + this.A01 + A08(135, 8, 1) + this.A04);
+        StringBuilder sb = new StringBuilder(A08(147, 11, 70) + Integer.toHexString(hashCode()) + A08(46, 10, 14) + this.A03 + A08(0, 4, 21) + this.A05 + A08(a.f22514Q, 9, 58) + this.A01 + A08(135, 8, 1) + this.A04);
         if (A0h()) {
             StringBuilder append = sb.append(A08(64, 7, 67));
-            boolean z3 = this.A0G;
+            boolean z6 = this.A0G;
             if (A0J[2].length() != 23) {
                 throw new RuntimeException();
             }
             A0J[2] = "PPawOVKlLlIRUbnpb4vzMoP";
-            if (z3) {
+            if (z6) {
                 String[] strArr = A0J;
                 if (strArr[6].charAt(16) != strArr[5].charAt(16)) {
                     throw new RuntimeException();

@@ -30,50 +30,50 @@ import org.json.JSONObject;
 public final class c extends CommonBannerJSBridgeImp {
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f19839b = "BannerJSBridgeImpl";
+    private static final String f20626b = "BannerJSBridgeImpl";
 
     /* renamed from: c, reason: collision with root package name */
-    private WeakReference<Context> f19840c;
+    private WeakReference<Context> f20627c;
 
     /* renamed from: d, reason: collision with root package name */
-    private List<d> f19841d;
+    private List<d> f20628d;
 
     /* renamed from: e, reason: collision with root package name */
-    private String f19842e;
+    private String f20629e;
 
     /* renamed from: f, reason: collision with root package name */
-    private String f19843f;
+    private String f20630f;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f19844g;
+    private int f20631g;
 
     /* renamed from: h, reason: collision with root package name */
-    private com.anythink.expressad.mbbanner.a.c.a f19845h;
+    private com.anythink.expressad.mbbanner.a.c.a f20632h;
     private b i;
 
     /* renamed from: j, reason: collision with root package name */
-    private boolean f19846j = false;
+    private boolean f20633j = false;
 
     public c(Context context, String str, String str2) {
-        this.f19842e = str;
-        this.f19843f = str2;
-        this.f19840c = new WeakReference<>(context);
+        this.f20629e = str;
+        this.f20630f = str2;
+        this.f20627c = new WeakReference<>(context);
     }
 
     public final void a(com.anythink.expressad.mbbanner.a.c.a aVar) {
         if (aVar != null) {
-            this.f19845h = aVar;
+            this.f20632h = aVar;
         }
     }
 
     @Override // com.anythink.expressad.atsignalcommon.bridge.CommonBannerJSBridgeImp, com.anythink.expressad.atsignalcommon.bridge.IBannerJSBridge
     public final void click(Object obj, String str) {
         try {
-            List<d> list = this.f19841d;
+            List<d> list = this.f20628d;
             if (list == null) {
                 return;
             }
-            d dVar = (list == null || list.size() <= 0) ? null : this.f19841d.get(0);
+            d dVar = (list == null || list.size() <= 0) ? null : this.f20628d.get(0);
             if (TextUtils.isEmpty(str)) {
                 return;
             }
@@ -94,7 +94,7 @@ public final class c extends CommonBannerJSBridgeImp {
             } catch (JSONException e9) {
                 e9.printStackTrace();
             }
-            com.anythink.expressad.mbbanner.a.c.a aVar = this.f19845h;
+            com.anythink.expressad.mbbanner.a.c.a aVar = this.f20632h;
             if (aVar != null) {
                 aVar.a(dVar);
             }
@@ -105,7 +105,7 @@ public final class c extends CommonBannerJSBridgeImp {
     @Override // com.anythink.core.express.b.b
     public final void close() {
         try {
-            com.anythink.expressad.mbbanner.a.c.a aVar = this.f19845h;
+            com.anythink.expressad.mbbanner.a.c.a aVar = this.f20632h;
             if (aVar != null) {
                 aVar.b();
             }
@@ -114,7 +114,7 @@ public final class c extends CommonBannerJSBridgeImp {
     }
 
     @Override // com.anythink.core.express.b.b
-    public final void expand(String str, boolean z3) {
+    public final void expand(String str, boolean z6) {
         Context context;
         try {
             String str2 = "";
@@ -130,19 +130,19 @@ public final class c extends CommonBannerJSBridgeImp {
                 str = str2;
             }
             bundle.putString("url", str);
-            bundle.putBoolean("shouldUseCustomClose", z3);
-            WeakReference<Context> weakReference = this.f19840c;
+            bundle.putBoolean("shouldUseCustomClose", z6);
+            WeakReference<Context> weakReference = this.f20627c;
             if (weakReference != null && (context = weakReference.get()) != null) {
                 b bVar = this.i;
                 if (bVar != null && bVar.isShowing()) {
                     return;
                 }
-                b bVar2 = new b(context, bundle, this.f19845h);
+                b bVar2 = new b(context, bundle, this.f20632h);
                 this.i = bVar2;
-                bVar2.a(this.f19843f, this.f19841d);
+                bVar2.a(this.f20630f, this.f20628d);
                 this.i.show();
             }
-            com.anythink.expressad.mbbanner.a.c.a aVar = this.f19845h;
+            com.anythink.expressad.mbbanner.a.c.a aVar = this.f20632h;
             if (aVar != null) {
                 aVar.a(true);
             }
@@ -165,11 +165,11 @@ public final class c extends CommonBannerJSBridgeImp {
 
     @Override // com.anythink.expressad.atsignalcommon.mraid.IMraidJSBridge
     public final d getMraidCampaign() {
-        List<d> list = this.f19841d;
+        List<d> list = this.f20628d;
         if (list == null || list.size() <= 0) {
             return null;
         }
-        return this.f19841d.get(0);
+        return this.f20628d.get(0);
     }
 
     @Override // com.anythink.expressad.atsignalcommon.bridge.CommonBannerJSBridgeImp, com.anythink.expressad.atsignalcommon.bridge.IBannerJSBridge
@@ -178,21 +178,21 @@ public final class c extends CommonBannerJSBridgeImp {
             JSONObject jSONObject = new JSONObject();
             com.anythink.expressad.foundation.h.c cVar = new com.anythink.expressad.foundation.h.c(t.b().g());
             JSONObject jSONObject2 = new JSONObject();
-            jSONObject2.put("dev_close_state", this.f19844g);
+            jSONObject2.put("dev_close_state", this.f20631g);
             jSONObject.put("sdkSetting", jSONObject2);
             jSONObject.put("device", cVar.a());
-            jSONObject.put("campaignList", d.b(this.f19841d));
+            jSONObject.put("campaignList", d.b(this.f20628d));
             com.anythink.expressad.f.b.a();
-            com.anythink.expressad.f.c c9 = com.anythink.expressad.f.b.c(com.anythink.expressad.foundation.b.a.c().f(), this.f19843f);
+            com.anythink.expressad.f.c c9 = com.anythink.expressad.f.b.c(com.anythink.expressad.foundation.b.a.c().f(), this.f20630f);
             if (c9 == null) {
-                c9 = com.anythink.expressad.f.c.c(this.f19843f);
+                c9 = com.anythink.expressad.f.c.c(this.f20630f);
             }
-            if (!TextUtils.isEmpty(this.f19842e)) {
-                c9.e(this.f19842e);
+            if (!TextUtils.isEmpty(this.f20629e)) {
+                c9.e(this.f20629e);
             }
             jSONObject.put("unitSetting", c9.s());
             jSONObject.put("appSetting", new JSONObject());
-            jSONObject.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.SDK_INFO, com.anythink.expressad.atsignalcommon.a.a.f17933a);
+            jSONObject.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.SDK_INFO, com.anythink.expressad.atsignalcommon.a.a.f18720a);
             jSONObject.toString();
             h.a().a(obj, Base64.encodeToString(jSONObject.toString().getBytes(), 2));
         } catch (Throwable unused) {
@@ -202,11 +202,11 @@ public final class c extends CommonBannerJSBridgeImp {
     @Override // com.anythink.core.express.b.b
     public final void open(String str) {
         try {
-            if (this.f19841d.size() > 1) {
+            if (this.f20628d.size() > 1) {
                 t.b().g().startActivity(new Intent("android.intent.action.VIEW", Uri.parse(str)));
                 str = null;
             }
-            com.anythink.expressad.mbbanner.a.c.a aVar = this.f19845h;
+            com.anythink.expressad.mbbanner.a.c.a aVar = this.f20632h;
             if (aVar != null) {
                 aVar.a(true, str);
             }
@@ -220,7 +220,7 @@ public final class c extends CommonBannerJSBridgeImp {
             try {
                 int optInt = new JSONObject(str).optInt("isReady", 1);
                 h.a().a(obj, CommonJSBridgeImpUtils.codeToJsonString(0));
-                com.anythink.expressad.mbbanner.a.c.a aVar = this.f19845h;
+                com.anythink.expressad.mbbanner.a.c.a aVar = this.f20632h;
                 if (aVar != null) {
                     aVar.b(optInt);
                 }
@@ -249,13 +249,13 @@ public final class c extends CommonBannerJSBridgeImp {
                 sb.append(n.k());
                 String a9 = v.a(optString, "&tun=", sb.toString());
                 int optInt2 = jSONObject.optInt("report");
-                boolean z3 = true;
+                boolean z6 = true;
                 if (optInt2 == 0) {
-                    Context g4 = t.b().g();
+                    Context g9 = t.b().g();
                     if (optInt == 0) {
-                        z3 = false;
+                        z6 = false;
                     }
-                    com.anythink.expressad.b.a.a(g4, (d) null, "", a9, z3);
+                    com.anythink.expressad.b.a.a(g9, (d) null, "", a9, z6);
                 } else {
                     com.anythink.expressad.b.a.a(t.b().g(), null, "", a9, false, optInt != 0, optInt2);
                 }
@@ -275,9 +275,9 @@ public final class c extends CommonBannerJSBridgeImp {
             ArrayList arrayList = new ArrayList();
             for (int i = 0; i < jSONArray.length(); i++) {
                 String string = jSONArray.getString(i);
-                for (d dVar : this.f19841d) {
+                for (d dVar : this.f20628d) {
                     if (dVar.bh().equals(string)) {
-                        f.a(this.f19843f, dVar, f.f19123e);
+                        f.a(this.f20630f, dVar, f.f19910e);
                         arrayList.add(string);
                     }
                 }
@@ -292,8 +292,8 @@ public final class c extends CommonBannerJSBridgeImp {
             if (TextUtils.isEmpty(str)) {
                 return;
             }
-            int optInt = new JSONObject(str).optInt(com.anythink.core.express.b.a.f17526b);
-            com.anythink.expressad.mbbanner.a.c.a aVar = this.f19845h;
+            int optInt = new JSONObject(str).optInt(com.anythink.core.express.b.a.f18313b);
+            com.anythink.expressad.mbbanner.a.c.a aVar = this.f20632h;
             if (aVar != null) {
                 aVar.a(optInt);
             }
@@ -307,8 +307,8 @@ public final class c extends CommonBannerJSBridgeImp {
             if (TextUtils.isEmpty(str)) {
                 return;
             }
-            new JSONObject(str).optString(com.anythink.core.express.b.a.f17526b);
-            com.anythink.expressad.mbbanner.a.c.a aVar = this.f19845h;
+            new JSONObject(str).optString(com.anythink.core.express.b.a.f18313b);
+            com.anythink.expressad.mbbanner.a.c.a aVar = this.f20632h;
             if (aVar != null) {
                 aVar.a();
             }
@@ -324,10 +324,10 @@ public final class c extends CommonBannerJSBridgeImp {
     }
 
     @Override // com.anythink.core.express.b.b
-    public final void useCustomClose(boolean z3) {
-        int i = z3 ? 2 : 1;
+    public final void useCustomClose(boolean z6) {
+        int i = z6 ? 2 : 1;
         try {
-            com.anythink.expressad.mbbanner.a.c.a aVar = this.f19845h;
+            com.anythink.expressad.mbbanner.a.c.a aVar = this.f20632h;
             if (aVar != null) {
                 aVar.a(i);
             }
@@ -336,16 +336,16 @@ public final class c extends CommonBannerJSBridgeImp {
     }
 
     public final void a(List<d> list) {
-        this.f19841d = list;
+        this.f20628d = list;
     }
 
     public final void a(int i) {
-        this.f19844g = i;
+        this.f20631g = i;
     }
 
     public final void a() {
-        if (this.f19845h != null) {
-            this.f19845h = null;
+        if (this.f20632h != null) {
+            this.f20632h = null;
         }
         if (this.i != null) {
             this.i = null;
@@ -354,12 +354,12 @@ public final class c extends CommonBannerJSBridgeImp {
 
     private static void a(Object obj, JSONObject jSONObject) {
         int i;
-        int i6;
-        boolean z3;
+        int i4;
+        boolean z6;
         String str;
         File file;
         JSONObject jSONObject2 = new JSONObject();
-        int i9 = 1;
+        int i6 = 1;
         try {
             jSONObject2.put("code", 0);
             jSONObject2.put("message", "");
@@ -367,58 +367,58 @@ public final class c extends CommonBannerJSBridgeImp {
             if (jSONArray != null && jSONArray.length() > 0) {
                 JSONArray jSONArray2 = new JSONArray();
                 int length = jSONArray.length();
-                int i10 = 0;
-                while (i10 < length) {
-                    JSONObject jSONObject3 = jSONArray.getJSONObject(i10);
+                int i9 = 0;
+                while (i9 < length) {
+                    JSONObject jSONObject3 = jSONArray.getJSONObject(i9);
                     String optString = jSONObject3.optString("ref", "");
-                    int i11 = jSONObject3.getInt("type");
+                    int i10 = jSONObject3.getInt("type");
                     JSONObject jSONObject4 = new JSONObject();
-                    if (i11 == i9 && !TextUtils.isEmpty(optString)) {
+                    if (i10 == i6 && !TextUtils.isEmpty(optString)) {
                         JSONObject jSONObject5 = new JSONObject();
                         com.anythink.expressad.videocommon.b.a.a();
                         com.anythink.core.common.a.n b9 = com.anythink.expressad.videocommon.b.a.b(optString);
                         if (b9 != null) {
-                            jSONObject5.put("type", i9);
+                            jSONObject5.put("type", i6);
                             i = length;
-                            i6 = i10;
+                            i4 = i9;
                             jSONObject5.put("videoDataLength", b9.d());
                             String b10 = b9.b();
                             if (TextUtils.isEmpty(b10)) {
-                                jSONObject5.put(com.anythink.expressad.a.f17603K, "");
+                                jSONObject5.put(com.anythink.expressad.a.f18390K, "");
                                 jSONObject5.put("path4Web", "");
                             } else {
-                                jSONObject5.put(com.anythink.expressad.a.f17603K, b10);
+                                jSONObject5.put(com.anythink.expressad.a.f18390K, b10);
                                 jSONObject5.put("path4Web", b10);
                             }
                             if (b9.c() == 100) {
                                 jSONObject5.put("downloaded", 1);
-                                z3 = false;
+                                z6 = false;
                             } else {
-                                z3 = false;
+                                z6 = false;
                                 jSONObject5.put("downloaded", 0);
                             }
                             jSONObject4.put(optString, jSONObject5);
                             jSONArray2.put(jSONObject4);
                         } else {
                             i = length;
-                            i6 = i10;
-                            z3 = false;
+                            i4 = i9;
+                            z6 = false;
                         }
                     } else {
                         i = length;
-                        i6 = i10;
-                        z3 = false;
-                        if (i11 == 2 && !TextUtils.isEmpty(optString)) {
+                        i4 = i9;
+                        z6 = false;
+                        if (i10 == 2 && !TextUtils.isEmpty(optString)) {
                             JSONObject jSONObject6 = new JSONObject();
                             jSONObject6.put("type", 2);
-                            jSONObject6.put(com.anythink.expressad.a.f17603K, i.a().a(optString) == null ? "" : i.a().b(optString));
+                            jSONObject6.put(com.anythink.expressad.a.f18390K, i.a().a(optString) == null ? "" : i.a().b(optString));
                             jSONObject4.put(optString, jSONObject6);
                             jSONArray2.put(jSONObject4);
-                        } else if (i11 == 3 && !TextUtils.isEmpty(optString)) {
+                        } else if (i10 == 3 && !TextUtils.isEmpty(optString)) {
                             try {
                                 file = new File(optString);
                             } catch (Throwable th) {
-                                if (com.anythink.expressad.a.f17618a) {
+                                if (com.anythink.expressad.a.f18405a) {
                                     th.printStackTrace();
                                 }
                             }
@@ -426,27 +426,27 @@ public final class c extends CommonBannerJSBridgeImp {
                                 str = "file:////".concat(String.valueOf(optString));
                                 JSONObject jSONObject7 = new JSONObject();
                                 jSONObject7.put("type", 3);
-                                jSONObject7.put(com.anythink.expressad.a.f17603K, str);
+                                jSONObject7.put(com.anythink.expressad.a.f18390K, str);
                                 jSONObject4.put(optString, jSONObject7);
                                 jSONArray2.put(jSONObject4);
                             }
                             str = "";
                             JSONObject jSONObject72 = new JSONObject();
                             jSONObject72.put("type", 3);
-                            jSONObject72.put(com.anythink.expressad.a.f17603K, str);
+                            jSONObject72.put(com.anythink.expressad.a.f18390K, str);
                             jSONObject4.put(optString, jSONObject72);
                             jSONArray2.put(jSONObject4);
-                        } else if (i11 == 4 && !TextUtils.isEmpty(optString)) {
+                        } else if (i10 == 4 && !TextUtils.isEmpty(optString)) {
                             JSONObject jSONObject8 = new JSONObject();
                             jSONObject8.put("type", 4);
-                            jSONObject8.put(com.anythink.expressad.a.f17603K, u.a(optString) == null ? "" : u.a(optString));
+                            jSONObject8.put(com.anythink.expressad.a.f18390K, u.a(optString) == null ? "" : u.a(optString));
                             jSONObject4.put(optString, jSONObject8);
                             jSONArray2.put(jSONObject4);
                         }
                     }
-                    i10 = i6 + 1;
+                    i9 = i4 + 1;
                     length = i;
-                    i9 = 1;
+                    i6 = 1;
                 }
                 jSONObject2.put("resource", jSONArray2);
                 h.a().a(obj, Base64.encodeToString(jSONObject2.toString().getBytes(), 2));

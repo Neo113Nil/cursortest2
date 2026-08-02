@@ -1,77 +1,77 @@
 package com.google.android.gms.auth.api.signin;
 
-import A8.b;
 import B8.d;
-import P2.w;
-import Q2.a;
+import R2.w;
+import S2.a;
 import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
+import com.bumptech.glide.e;
 import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import java.util.ArrayList;
 import java.util.HashSet;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import u1.h;
+import w.AbstractC5128c;
 
 /* loaded from: classes.dex */
 public class GoogleSignInAccount extends a implements ReflectedParcelable {
     public static final Parcelable.Creator<GoogleSignInAccount> CREATOR = new d(3);
 
     /* renamed from: A, reason: collision with root package name */
-    public final long f23597A;
+    public final long f24377A;
 
     /* renamed from: B, reason: collision with root package name */
-    public final String f23598B;
+    public final String f24378B;
 
     /* renamed from: C, reason: collision with root package name */
-    public final ArrayList f23599C;
+    public final ArrayList f24379C;
 
     /* renamed from: D, reason: collision with root package name */
-    public final String f23600D;
+    public final String f24380D;
 
     /* renamed from: E, reason: collision with root package name */
-    public final String f23601E;
+    public final String f24381E;
 
     /* renamed from: F, reason: collision with root package name */
-    public final HashSet f23602F = new HashSet();
+    public final HashSet f24382F = new HashSet();
 
     /* renamed from: n, reason: collision with root package name */
-    public final int f23603n;
+    public final int f24383n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final String f23604u;
+    public final String f24384u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final String f23605v;
+    public final String f24385v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final String f23606w;
+    public final String f24386w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final String f23607x;
+    public final String f24387x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final Uri f23608y;
+    public final Uri f24388y;
 
     /* renamed from: z, reason: collision with root package name */
-    public String f23609z;
+    public String f24389z;
 
     public GoogleSignInAccount(int i, String str, String str2, String str3, String str4, Uri uri, String str5, long j6, String str6, ArrayList arrayList, String str7, String str8) {
-        this.f23603n = i;
-        this.f23604u = str;
-        this.f23605v = str2;
-        this.f23606w = str3;
-        this.f23607x = str4;
-        this.f23608y = uri;
-        this.f23609z = str5;
-        this.f23597A = j6;
-        this.f23598B = str6;
-        this.f23599C = arrayList;
-        this.f23600D = str7;
-        this.f23601E = str8;
+        this.f24383n = i;
+        this.f24384u = str;
+        this.f24385v = str2;
+        this.f24386w = str3;
+        this.f24387x = str4;
+        this.f24388y = uri;
+        this.f24389z = str5;
+        this.f24377A = j6;
+        this.f24378B = str6;
+        this.f24379C = arrayList;
+        this.f24380D = str7;
+        this.f24381E = str8;
     }
 
     public static GoogleSignInAccount a(String str) {
@@ -97,7 +97,7 @@ public class GoogleSignInAccount extends a implements ReflectedParcelable {
         String string = jSONObject.getString("obfuscatedIdentifier");
         w.e(string);
         GoogleSignInAccount googleSignInAccount = new GoogleSignInAccount(3, optString2, optString3, optString4, optString5, parse, null, parseLong, string, new ArrayList(hashSet), optString6, optString7);
-        googleSignInAccount.f23609z = jSONObject.has("serverAuthCode") ? jSONObject.optString("serverAuthCode") : null;
+        googleSignInAccount.f24389z = jSONObject.has("serverAuthCode") ? jSONObject.optString("serverAuthCode") : null;
         return googleSignInAccount;
     }
 
@@ -112,40 +112,40 @@ public class GoogleSignInAccount extends a implements ReflectedParcelable {
             return false;
         }
         GoogleSignInAccount googleSignInAccount = (GoogleSignInAccount) obj;
-        if (!googleSignInAccount.f23598B.equals(this.f23598B)) {
+        if (!googleSignInAccount.f24378B.equals(this.f24378B)) {
             return false;
         }
-        HashSet hashSet = new HashSet(googleSignInAccount.f23599C);
-        hashSet.addAll(googleSignInAccount.f23602F);
-        HashSet hashSet2 = new HashSet(this.f23599C);
-        hashSet2.addAll(this.f23602F);
+        HashSet hashSet = new HashSet(googleSignInAccount.f24379C);
+        hashSet.addAll(googleSignInAccount.f24382F);
+        HashSet hashSet2 = new HashSet(this.f24379C);
+        hashSet2.addAll(this.f24382F);
         return hashSet.equals(hashSet2);
     }
 
     public final int hashCode() {
-        int k9 = h.k(527, 31, this.f23598B);
-        HashSet hashSet = new HashSet(this.f23599C);
-        hashSet.addAll(this.f23602F);
-        return hashSet.hashCode() + k9;
+        int a9 = AbstractC5128c.a(527, 31, this.f24378B);
+        HashSet hashSet = new HashSet(this.f24379C);
+        hashSet.addAll(this.f24382F);
+        return hashSet.hashCode() + a9;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int G7 = b.G(parcel, 20293);
-        b.F(parcel, 1, 4);
-        parcel.writeInt(this.f23603n);
-        b.z(parcel, 2, this.f23604u);
-        b.z(parcel, 3, this.f23605v);
-        b.z(parcel, 4, this.f23606w);
-        b.z(parcel, 5, this.f23607x);
-        b.y(parcel, 6, this.f23608y, i);
-        b.z(parcel, 7, this.f23609z);
-        b.F(parcel, 8, 8);
-        parcel.writeLong(this.f23597A);
-        b.z(parcel, 9, this.f23598B);
-        b.D(parcel, 10, this.f23599C);
-        b.z(parcel, 11, this.f23600D);
-        b.z(parcel, 12, this.f23601E);
-        b.I(parcel, G7);
+        int x9 = e.x(parcel, 20293);
+        e.w(parcel, 1, 4);
+        parcel.writeInt(this.f24383n);
+        e.r(parcel, 2, this.f24384u);
+        e.r(parcel, 3, this.f24385v);
+        e.r(parcel, 4, this.f24386w);
+        e.r(parcel, 5, this.f24387x);
+        e.q(parcel, 6, this.f24388y, i);
+        e.r(parcel, 7, this.f24389z);
+        e.w(parcel, 8, 8);
+        parcel.writeLong(this.f24377A);
+        e.r(parcel, 9, this.f24378B);
+        e.v(parcel, 10, this.f24379C);
+        e.r(parcel, 11, this.f24380D);
+        e.r(parcel, 12, this.f24381E);
+        e.z(parcel, x9);
     }
 }

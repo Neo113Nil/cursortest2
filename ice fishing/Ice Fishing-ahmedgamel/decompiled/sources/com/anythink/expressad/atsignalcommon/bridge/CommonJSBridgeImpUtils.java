@@ -14,33 +14,33 @@ import org.json.JSONObject;
 public class CommonJSBridgeImpUtils {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f17948a = "CommonJSBridgeImpUtils";
+    public static final String f18735a = "CommonJSBridgeImpUtils";
 
     /* renamed from: b, reason: collision with root package name */
-    public static int f17949b = 0;
+    public static int f18736b = 0;
 
     /* renamed from: c, reason: collision with root package name */
-    public static int f17950c = 1;
+    public static int f18737c = 1;
 
     public static /* synthetic */ void a(String str, d dVar) {
-        if (f.f19131n == null || TextUtils.isEmpty(dVar.bh())) {
+        if (f.f19918n == null || TextUtils.isEmpty(dVar.bh())) {
             return;
         }
-        f.a(str, dVar, f.f19123e);
+        f.a(str, dVar, f.f19910e);
     }
 
     private static void b(String str, d dVar) {
-        if (f.f19131n == null || TextUtils.isEmpty(dVar.bh())) {
+        if (f.f19918n == null || TextUtils.isEmpty(dVar.bh())) {
             return;
         }
-        f.a(str, dVar, f.f19123e);
+        f.a(str, dVar, f.f19910e);
     }
 
-    public static String buildClickJsonObject(float f3, float f9) {
+    public static String buildClickJsonObject(float f2, float f9) {
         JSONObject jSONObject = new JSONObject();
         try {
             JSONObject jSONObject2 = new JSONObject();
-            jSONObject2.put(a.cg, v.a(t.b().g(), f3));
+            jSONObject2.put(a.cg, v.a(t.b().g(), f2));
             jSONObject2.put(a.ch, v.a(t.b().g(), f9));
             jSONObject2.put(a.cj, 0);
             jSONObject2.put(a.ck, t.b().g().getResources().getConfiguration().orientation);
@@ -55,7 +55,7 @@ public class CommonJSBridgeImpUtils {
     public static void callbackExcep(Object obj, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", f17950c);
+            jSONObject.put("code", f18737c);
             jSONObject.put("message", str);
             jSONObject.put("data", new JSONObject());
             h.a().a(obj, Base64.encodeToString(jSONObject.toString().getBytes(), 2));
@@ -67,7 +67,7 @@ public class CommonJSBridgeImpUtils {
     public static void callbackSuccess(Object obj, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", f17949b);
+            jSONObject.put("code", f18736b);
             JSONObject jSONObject2 = new JSONObject();
             jSONObject2.put("id", str);
             jSONObject.put("data", jSONObject2);

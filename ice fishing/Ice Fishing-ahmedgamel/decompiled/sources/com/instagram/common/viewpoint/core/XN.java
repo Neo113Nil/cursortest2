@@ -4,5 +4,5 @@ package com.instagram.common.viewpoint.core;
 public interface XN {
     void ADS();
 
-    void AFV(float f3);
+    void AFV(float f2);
 }

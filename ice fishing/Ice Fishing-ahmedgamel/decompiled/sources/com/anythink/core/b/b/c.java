@@ -7,13 +7,13 @@ import com.anythink.core.api.ATBiddingListener;
 public abstract class c implements ATBiddingListener {
 
     /* renamed from: c, reason: collision with root package name */
-    protected ATBaseAdAdapter f11726c;
+    protected ATBaseAdAdapter f12512c;
 
     public c(ATBaseAdAdapter aTBaseAdAdapter) {
-        this.f11726c = aTBaseAdAdapter;
+        this.f12512c = aTBaseAdAdapter;
     }
 
     private void a() {
-        this.f11726c = null;
+        this.f12512c = null;
     }
 }

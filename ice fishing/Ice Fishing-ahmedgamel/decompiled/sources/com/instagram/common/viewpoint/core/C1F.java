@@ -14,17 +14,17 @@ public abstract class C1F extends C7M implements View.OnTouchListener {
     public int A00;
 
     @Nullable
-    public C1910hr A01;
-    public InterfaceC1675e2 A02;
+    public C1930hr A01;
+    public InterfaceC1695e2 A02;
     public boolean A03;
     public boolean A04;
     public int A05;
     public final int A06;
 
-    public static String A09(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 110);
+    public static String A09(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 110);
         }
         return new String(copyOfRange);
     }
@@ -37,8 +37,8 @@ public abstract class C1F extends C7M implements View.OnTouchListener {
         A0A();
     }
 
-    public C1F(C1840gi c1840gi) {
-        super(c1840gi);
+    public C1F(C1860gi c1860gi) {
+        super(c1860gi);
         this.A05 = 0;
         this.A00 = 0;
         this.A03 = true;
@@ -47,8 +47,8 @@ public abstract class C1F extends C7M implements View.OnTouchListener {
         setOnTouchListener(this);
     }
 
-    public C1F(C1840gi c1840gi, AttributeSet attributeSet) {
-        super(c1840gi, attributeSet);
+    public C1F(C1860gi c1860gi, AttributeSet attributeSet) {
+        super(c1860gi, attributeSet);
         this.A05 = 0;
         this.A00 = 0;
         this.A03 = true;
@@ -57,8 +57,8 @@ public abstract class C1F extends C7M implements View.OnTouchListener {
         setOnTouchListener(this);
     }
 
-    public C1F(C1840gi c1840gi, AttributeSet attributeSet, int i) {
-        super(c1840gi, attributeSet, i);
+    public C1F(C1860gi c1860gi, AttributeSet attributeSet, int i) {
+        super(c1860gi, attributeSet, i);
         this.A05 = 0;
         this.A00 = 0;
         this.A03 = true;
@@ -81,32 +81,32 @@ public abstract class C1F extends C7M implements View.OnTouchListener {
         }
         int scrollX3 = this.A06;
         if (delta < (-scrollX3)) {
-            int i6 = this.A05;
+            int i4 = this.A05;
             if (A08[6].charAt(24) != 67) {
                 throw new RuntimeException();
             }
             A08[7] = "Vh4";
-            int scrollX4 = A07(i6, A8o);
+            int scrollX4 = A07(i4, A8o);
             return scrollX4;
         }
         int scrollX5 = this.A05;
         return scrollX5;
     }
 
-    private int A07(int i, int i6) {
-        return Math.max(i - i6, 0);
+    private int A07(int i, int i4) {
+        return Math.max(i - i4, 0);
     }
 
-    private int A08(int i, int i6) {
-        return Math.min(i + i6, getItemCount() - 1);
+    private int A08(int i, int i4) {
+        return Math.min(i + i4, getItemCount() - 1);
     }
 
-    public void A20(int i, boolean z3) {
+    public void A20(int i, boolean z6) {
         if (getAdapter() == null) {
             return;
         }
         this.A05 = i;
-        if (z3) {
+        if (z6) {
             A1Y(i);
         } else {
             A1X(i);
@@ -156,15 +156,15 @@ public abstract class C1F extends C7M implements View.OnTouchListener {
 
     @Override // com.instagram.common.viewpoint.core.C7M
     public void setLayoutManager(R2 r22) {
-        if (r22 instanceof C1910hr) {
+        if (r22 instanceof C1930hr) {
             super.setLayoutManager(r22);
-            this.A01 = (C1910hr) r22;
+            this.A01 = (C1930hr) r22;
             return;
         }
         throw new IllegalArgumentException(A09(0, 50, 59));
     }
 
-    public void setSnapDelegate(InterfaceC1675e2 interfaceC1675e2) {
-        this.A02 = interfaceC1675e2;
+    public void setSnapDelegate(InterfaceC1695e2 interfaceC1695e2) {
+        this.A02 = interfaceC1695e2;
     }
 }

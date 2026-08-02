@@ -12,82 +12,82 @@ import java.util.Map;
 public class b {
 
     /* renamed from: g, reason: collision with root package name */
-    private static final String f18509g = "SDKController";
+    private static final String f19296g = "SDKController";
 
     /* renamed from: h, reason: collision with root package name */
-    private static volatile b f18510h;
+    private static volatile b f19297h;
     private Context i;
 
     /* renamed from: m, reason: collision with root package name */
-    private String f18520m;
+    private String f19307m;
 
     /* renamed from: n, reason: collision with root package name */
-    private int f18521n;
+    private int f19308n;
 
     /* renamed from: j, reason: collision with root package name */
-    private String f18517j = "";
+    private String f19304j = "";
 
     /* renamed from: k, reason: collision with root package name */
-    private String f18518k = "";
+    private String f19305k = "";
 
     /* renamed from: l, reason: collision with root package name */
-    private boolean f18519l = false;
+    private boolean f19306l = false;
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f18511a = 1;
+    public final int f19298a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f18512b = 2;
+    public final int f19299b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f18513c = 3;
+    public final int f19300c = 3;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f18514d = 4;
+    public final int f19301d = 4;
 
     /* renamed from: e, reason: collision with root package name */
-    public final int f18515e = 5;
+    public final int f19302e = 5;
 
     /* renamed from: f, reason: collision with root package name */
-    public final int f18516f = 6;
+    public final int f19303f = 6;
 
     private b() {
     }
 
     public static b a() {
-        if (f18510h == null) {
+        if (f19297h == null) {
             synchronized (b.class) {
                 try {
-                    if (f18510h == null) {
-                        f18510h = new b();
+                    if (f19297h == null) {
+                        f19297h = new b();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f18510h;
+        return f19297h;
     }
 
     private static String b() {
-        return com.anythink.expressad.out.b.f20022a;
+        return com.anythink.expressad.out.b.f20809a;
     }
 
     private void c() {
-        a.c().b(this.f18517j);
-        a.c().c(this.f18518k);
+        a.c().b(this.f19304j);
+        a.c().c(this.f19305k);
         a.c().d();
         a(this.i.getApplicationContext());
         t.a(this.i);
-        this.f18519l = true;
+        this.f19306l = true;
     }
 
     private static void d() {
     }
 
     private void e() {
-        a.c().b(this.f18517j);
-        a.c().c(this.f18518k);
+        a.c().b(this.f19304j);
+        a.c().c(this.f19305k);
         a.c().d();
     }
 
@@ -106,18 +106,18 @@ public class b {
                 }
             }, 300L);
             if (map != null) {
-                if (map.containsKey(com.anythink.expressad.a.f17621d)) {
-                    this.f18517j = (String) map.get(com.anythink.expressad.a.f17621d);
+                if (map.containsKey(com.anythink.expressad.a.f18408d)) {
+                    this.f19304j = (String) map.get(com.anythink.expressad.a.f18408d);
                 }
-                if (map.containsKey(com.anythink.expressad.a.f17622e)) {
-                    this.f18518k = (String) map.get(com.anythink.expressad.a.f17622e);
+                if (map.containsKey(com.anythink.expressad.a.f18409e)) {
+                    this.f19305k = (String) map.get(com.anythink.expressad.a.f18409e);
                 }
-                a.c().b(this.f18517j);
-                a.c().c(this.f18518k);
+                a.c().b(this.f19304j);
+                a.c().c(this.f19305k);
                 a.c().d();
                 a(this.i.getApplicationContext());
                 t.a(this.i);
-                this.f18519l = true;
+                this.f19306l = true;
             }
         }
     }
@@ -125,11 +125,11 @@ public class b {
     private static void a(Context context) {
         String str;
         try {
-            SharedPreferences sharedPreferences = context.getSharedPreferences(u.b.f12852f, 0);
+            SharedPreferences sharedPreferences = context.getSharedPreferences(u.b.f13638f, 0);
             String str2 = "";
             if (sharedPreferences != null) {
-                String string = sharedPreferences.getString(u.a.f12845y, "");
-                str = sharedPreferences.getString(u.a.f12846z, "");
+                String string = sharedPreferences.getString(u.a.f13631y, "");
+                str = sharedPreferences.getString(u.a.f13632z, "");
                 str2 = string;
             } else {
                 str = "";

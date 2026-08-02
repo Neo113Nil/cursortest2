@@ -11,17 +11,17 @@ public abstract class N3 {
 
     @Nullable
     public final N4 A01;
-    public final C1840gi A02;
-    public final C1785fp A03;
+    public final C1860gi A02;
+    public final C1805fp A03;
 
     static {
         A01();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 121);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 121);
         }
         return new String(copyOfRange);
     }
@@ -32,10 +32,10 @@ public abstract class N3 {
 
     public abstract void A08(Map<String, String> map);
 
-    public N3(C1840gi c1840gi, N4 n42, C1785fp c1785fp) {
-        this.A02 = c1840gi;
+    public N3(C1860gi c1860gi, N4 n42, C1805fp c1805fp) {
+        this.A02 = c1860gi;
         this.A01 = n42;
-        this.A03 = c1785fp;
+        this.A03 = c1805fp;
     }
 
     public final void A03() {
@@ -45,7 +45,7 @@ public abstract class N3 {
         if (this.A01 != null) {
             this.A01.A00();
         }
-        Map<String, String> extraData = new C1497b9().A03(this.A03).A05();
+        Map<String, String> extraData = new C1517b9().A03(this.A03).A05();
         A08(extraData);
         this.A00 = true;
         XI.A04(this.A02, A00(0, 17, 60));

@@ -13,9 +13,9 @@ public interface b {
 
     void a(String str, String str2);
 
-    void a(String str, boolean z3, c cVar);
+    void a(String str, boolean z6, c cVar);
 
-    void a(boolean z3, int i);
+    void a(boolean z6, int i);
 
     void b(String str);
 

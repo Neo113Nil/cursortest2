@@ -9,101 +9,101 @@ import java.util.regex.Pattern;
 public final class n {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f38159a;
+    public final String f38278a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f38160b;
+    public final String f38279b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final String f38161c;
+    public final String f38280c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f38162d;
+    public final String f38281d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final int f38163e;
+    public final int f38282e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final ArrayList f38164f;
+    public final ArrayList f38283f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final String f38165g;
+    public final String f38284g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final String f38166h;
+    public final String f38285h;
 
     public n(String str, String str2, String str3, String str4, int i, ArrayList arrayList, String str5, String str6) {
-        this.f38159a = str;
-        this.f38160b = str2;
-        this.f38161c = str3;
-        this.f38162d = str4;
-        this.f38163e = i;
-        this.f38164f = arrayList;
-        this.f38165g = str5;
-        this.f38166h = str6;
+        this.f38278a = str;
+        this.f38279b = str2;
+        this.f38280c = str3;
+        this.f38281d = str4;
+        this.f38282e = i;
+        this.f38283f = arrayList;
+        this.f38284g = str5;
+        this.f38285h = str6;
     }
 
     public final String a() {
-        if (this.f38161c.length() == 0) {
+        if (this.f38280c.length() == 0) {
             return "";
         }
-        int length = this.f38159a.length() + 3;
-        String str = this.f38166h;
-        String substring = str.substring(Q7.j.Z(str, ':', length, 4) + 1, Q7.j.Z(str, '@', 0, 6));
+        int length = this.f38278a.length() + 3;
+        String str = this.f38285h;
+        String substring = str.substring(Q7.j.p0(str, ':', length, 4) + 1, Q7.j.p0(str, '@', 0, 6));
         kotlin.jvm.internal.h.d(substring, "substring(...)");
         return substring;
     }
 
     public final String b() {
-        int length = this.f38159a.length() + 3;
-        String str = this.f38166h;
-        int Z8 = Q7.j.Z(str, '/', length, 4);
-        String substring = str.substring(Z8, j8.c.b(Z8, str.length(), str, "?#"));
+        int length = this.f38278a.length() + 3;
+        String str = this.f38285h;
+        int p02 = Q7.j.p0(str, '/', length, 4);
+        String substring = str.substring(p02, j8.c.b(p02, str.length(), str, "?#"));
         kotlin.jvm.internal.h.d(substring, "substring(...)");
         return substring;
     }
 
     public final ArrayList c() {
-        int length = this.f38159a.length() + 3;
-        String str = this.f38166h;
-        int Z8 = Q7.j.Z(str, '/', length, 4);
-        int b9 = j8.c.b(Z8, str.length(), str, "?#");
+        int length = this.f38278a.length() + 3;
+        String str = this.f38285h;
+        int p02 = Q7.j.p0(str, '/', length, 4);
+        int b9 = j8.c.b(p02, str.length(), str, "?#");
         ArrayList arrayList = new ArrayList();
-        while (Z8 < b9) {
-            int i = Z8 + 1;
+        while (p02 < b9) {
+            int i = p02 + 1;
             int c9 = j8.c.c(str, i, b9, '/');
             String substring = str.substring(i, c9);
             kotlin.jvm.internal.h.d(substring, "substring(...)");
             arrayList.add(substring);
-            Z8 = c9;
+            p02 = c9;
         }
         return arrayList;
     }
 
     public final String d() {
-        if (this.f38164f == null) {
+        if (this.f38283f == null) {
             return null;
         }
-        String str = this.f38166h;
-        int Z8 = Q7.j.Z(str, '?', 0, 6) + 1;
-        String substring = str.substring(Z8, j8.c.c(str, Z8, str.length(), '#'));
+        String str = this.f38285h;
+        int p02 = Q7.j.p0(str, '?', 0, 6) + 1;
+        String substring = str.substring(p02, j8.c.c(str, p02, str.length(), '#'));
         kotlin.jvm.internal.h.d(substring, "substring(...)");
         return substring;
     }
 
     public final String e() {
-        if (this.f38160b.length() == 0) {
+        if (this.f38279b.length() == 0) {
             return "";
         }
-        int length = this.f38159a.length() + 3;
-        String str = this.f38166h;
+        int length = this.f38278a.length() + 3;
+        String str = this.f38285h;
         String substring = str.substring(length, j8.c.b(length, str.length(), str, ":@"));
         kotlin.jvm.internal.h.d(substring, "substring(...)");
         return substring;
     }
 
     public final boolean equals(Object obj) {
-        return (obj instanceof n) && kotlin.jvm.internal.h.a(((n) obj).f38166h, this.f38166h);
+        return (obj instanceof n) && kotlin.jvm.internal.h.a(((n) obj).f38285h, this.f38285h);
     }
 
     public final String f() {
@@ -115,38 +115,38 @@ public final class n {
             mVar = null;
         }
         kotlin.jvm.internal.h.b(mVar);
-        mVar.f38152b = x8.a.a(0, 0, 123, "", " \"':;<=>@[]^`{}|/\\?#");
-        mVar.f38153c = x8.a.a(0, 0, 123, "", " \"':;<=>@[]^`{}|/\\?#");
-        return mVar.a().f38166h;
+        mVar.f38271b = x8.a.a(0, 0, 123, "", " \"':;<=>@[]^`{}|/\\?#");
+        mVar.f38272c = x8.a.a(0, 0, 123, "", " \"':;<=>@[]^`{}|/\\?#");
+        return mVar.a().f38285h;
     }
 
     public final URI g() {
         String substring;
         String str;
         m mVar = new m();
-        String scheme = this.f38159a;
-        mVar.f38151a = scheme;
-        mVar.f38152b = e();
-        mVar.f38153c = a();
-        mVar.f38154d = this.f38162d;
+        String scheme = this.f38278a;
+        mVar.f38270a = scheme;
+        mVar.f38271b = e();
+        mVar.f38272c = a();
+        mVar.f38273d = this.f38281d;
         kotlin.jvm.internal.h.e(scheme, "scheme");
         int i = scheme.equals("http") ? 80 : scheme.equals("https") ? 443 : -1;
-        int i6 = this.f38163e;
-        mVar.f38155e = i6 != i ? i6 : -1;
-        ArrayList arrayList = mVar.f38156f;
+        int i4 = this.f38282e;
+        mVar.f38274e = i4 != i ? i4 : -1;
+        ArrayList arrayList = mVar.f38275f;
         arrayList.clear();
         arrayList.addAll(c());
-        String d2 = d();
-        mVar.f38157g = d2 != null ? m.d(x8.a.a(0, 0, 83, d2, " \"'<>#")) : null;
-        if (this.f38165g == null) {
+        String d9 = d();
+        mVar.f38276g = d9 != null ? m.d(x8.a.a(0, 0, 83, d9, " \"'<>#")) : null;
+        if (this.f38284g == null) {
             substring = null;
         } else {
-            String str2 = this.f38166h;
-            substring = str2.substring(Q7.j.Z(str2, '#', 0, 6) + 1);
+            String str2 = this.f38285h;
+            substring = str2.substring(Q7.j.p0(str2, '#', 0, 6) + 1);
             kotlin.jvm.internal.h.d(substring, "substring(...)");
         }
-        mVar.f38158h = substring;
-        String str3 = mVar.f38154d;
+        mVar.f38277h = substring;
+        String str3 = mVar.f38273d;
         if (str3 != null) {
             Pattern compile = Pattern.compile("[\"<>^`{|}]");
             kotlin.jvm.internal.h.d(compile, "compile(...)");
@@ -155,21 +155,21 @@ public final class n {
         } else {
             str = null;
         }
-        mVar.f38154d = str;
+        mVar.f38273d = str;
         int size = arrayList.size();
-        for (int i9 = 0; i9 < size; i9++) {
-            arrayList.set(i9, x8.a.a(0, 0, 99, (String) arrayList.get(i9), "[]"));
+        for (int i6 = 0; i6 < size; i6++) {
+            arrayList.set(i6, x8.a.a(0, 0, 99, (String) arrayList.get(i6), "[]"));
         }
-        ArrayList arrayList2 = mVar.f38157g;
+        ArrayList arrayList2 = mVar.f38276g;
         if (arrayList2 != null) {
             int size2 = arrayList2.size();
-            for (int i10 = 0; i10 < size2; i10++) {
-                String str4 = (String) arrayList2.get(i10);
-                arrayList2.set(i10, str4 != null ? x8.a.a(0, 0, 67, str4, "\\^`{|}") : null);
+            for (int i9 = 0; i9 < size2; i9++) {
+                String str4 = (String) arrayList2.get(i9);
+                arrayList2.set(i9, str4 != null ? x8.a.a(0, 0, 67, str4, "\\^`{|}") : null);
             }
         }
-        String str5 = mVar.f38158h;
-        mVar.f38158h = str5 != null ? x8.a.a(0, 0, 35, str5, " \"#<>\\^`{|}") : null;
+        String str5 = mVar.f38277h;
+        mVar.f38277h = str5 != null ? x8.a.a(0, 0, 35, str5, " \"#<>\\^`{|}") : null;
         String input = mVar.toString();
         try {
             return new URI(input);
@@ -190,10 +190,10 @@ public final class n {
     }
 
     public final int hashCode() {
-        return this.f38166h.hashCode();
+        return this.f38285h.hashCode();
     }
 
     public final String toString() {
-        return this.f38166h;
+        return this.f38285h;
     }
 }

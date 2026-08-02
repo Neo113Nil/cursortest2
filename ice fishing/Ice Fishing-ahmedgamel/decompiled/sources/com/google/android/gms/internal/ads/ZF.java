@@ -6,37 +6,37 @@ import java.security.GeneralSecurityException;
 public final class ZF extends WC {
 
     /* renamed from: b, reason: collision with root package name */
-    public final C4097wG f28861b;
+    public final C4120wG f29641b;
 
-    public ZF(C4097wG c4097wG) {
-        this.f28861b = c4097wG;
+    public ZF(C4120wG c4120wG) {
+        this.f29641b = c4120wG;
     }
 
     @Override // com.google.android.gms.internal.ads.WC
-    public final AbstractC3825rE b() {
-        C4097wG c4097wG = this.f28861b;
-        return new YF(c4097wG.f34818a, c4097wG.f34822e);
+    public final AbstractC3848rE b() {
+        C4120wG c4120wG = this.f29641b;
+        return new YF(c4120wG.f35587a, c4120wG.f35591e);
     }
 
     @Override // com.google.android.gms.internal.ads.WC
     public final Integer e() {
-        return this.f28861b.f34823f;
+        return this.f29641b.f35592f;
     }
 
-    public final C3240gK i() {
-        C4097wG c4097wG = this.f28861b;
-        if (c4097wG.f34822e.equals(C3933tE.f34232f)) {
-            return C3240gK.a(new byte[0]);
+    public final C3263gK i() {
+        C4120wG c4120wG = this.f29641b;
+        if (c4120wG.f35591e.equals(C3956tE.f35018f)) {
+            return C3263gK.a(new byte[0]);
         }
-        C3933tE c3933tE = C3933tE.f34230d;
-        C3933tE c3933tE2 = c4097wG.f34822e;
-        boolean equals = c3933tE2.equals(c3933tE);
-        Integer num = c4097wG.f34823f;
+        C3956tE c3956tE = C3956tE.f35016d;
+        C3956tE c3956tE2 = c4120wG.f35591e;
+        boolean equals = c3956tE2.equals(c3956tE);
+        Integer num = c4120wG.f35592f;
         if (equals) {
-            return AbstractC3344iG.b(num.intValue());
+            return AbstractC3367iG.b(num.intValue());
         }
-        if (c3933tE2.equals(C3933tE.f34231e) || c3933tE2.equals(C3933tE.f34233g)) {
-            return AbstractC3344iG.a(num.intValue());
+        if (c3956tE2.equals(C3956tE.f35017e) || c3956tE2.equals(C3956tE.f35019g)) {
+            return AbstractC3367iG.a(num.intValue());
         }
         throw new GeneralSecurityException("Unknown output prefix type");
     }

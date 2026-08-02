@@ -12,7 +12,7 @@ import kotlin.jvm.internal.h;
 public final class b implements d {
 
     /* renamed from: a, reason: collision with root package name */
-    public final LinkedHashMap f41696a;
+    public final LinkedHashMap f41751a;
 
     public b(X509Certificate... caCerts) {
         h.e(caCerts, "caCerts");
@@ -26,12 +26,12 @@ public final class b implements d {
             }
             ((Set) obj).add(x509Certificate);
         }
-        this.f41696a = linkedHashMap;
+        this.f41751a = linkedHashMap;
     }
 
     @Override // w8.d
     public final X509Certificate a(X509Certificate x509Certificate) {
-        Set set = (Set) this.f41696a.get(x509Certificate.getIssuerX500Principal());
+        Set set = (Set) this.f41751a.get(x509Certificate.getIssuerX500Principal());
         Object obj = null;
         if (set == null) {
             return null;
@@ -54,12 +54,12 @@ public final class b implements d {
 
     public final boolean equals(Object obj) {
         if (obj != this) {
-            return (obj instanceof b) && h.a(((b) obj).f41696a, this.f41696a);
+            return (obj instanceof b) && h.a(((b) obj).f41751a, this.f41751a);
         }
         return true;
     }
 
     public final int hashCode() {
-        return this.f41696a.hashCode();
+        return this.f41751a.hashCode();
     }
 }

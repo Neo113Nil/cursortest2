@@ -4,5 +4,5 @@ package com.anythink.basead.exoplayer.l;
 public interface g {
     void a();
 
-    void a(int i, int i6);
+    void a(int i, int i4);
 }

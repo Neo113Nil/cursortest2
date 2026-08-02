@@ -8,19 +8,19 @@ import java.util.concurrent.Executor;
 public final class GD implements Executor {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final GD f24952n;
+    public static final GD f25742n;
 
     /* renamed from: u, reason: collision with root package name */
-    public static final /* synthetic */ GD[] f24953u;
+    public static final /* synthetic */ GD[] f25743u;
 
     static {
         GD gd = new GD("INSTANCE", 0);
-        f24952n = gd;
-        f24953u = new GD[]{gd};
+        f25742n = gd;
+        f25743u = new GD[]{gd};
     }
 
     public static GD[] values() {
-        return (GD[]) f24953u.clone();
+        return (GD[]) f25743u.clone();
     }
 
     @Override // java.util.concurrent.Executor

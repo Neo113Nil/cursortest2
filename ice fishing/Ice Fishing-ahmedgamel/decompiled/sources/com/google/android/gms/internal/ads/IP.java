@@ -10,106 +10,106 @@ import java.util.ArrayDeque;
 public final class IP extends MediaCodec.Callback {
 
     /* renamed from: b, reason: collision with root package name */
-    public final HandlerThread f25502b;
+    public final HandlerThread f26245b;
 
     /* renamed from: c, reason: collision with root package name */
-    public Handler f25503c;
+    public Handler f26246c;
 
     /* renamed from: h, reason: collision with root package name */
-    public MediaFormat f25508h;
+    public MediaFormat f26251h;
     public MediaFormat i;
 
     /* renamed from: j, reason: collision with root package name */
-    public MediaCodec.CodecException f25509j;
+    public MediaCodec.CodecException f26252j;
 
     /* renamed from: k, reason: collision with root package name */
-    public MediaCodec.CryptoException f25510k;
+    public MediaCodec.CryptoException f26253k;
 
     /* renamed from: l, reason: collision with root package name */
-    public long f25511l;
+    public long f26254l;
 
     /* renamed from: m, reason: collision with root package name */
-    public boolean f25512m;
+    public boolean f26255m;
 
     /* renamed from: n, reason: collision with root package name */
-    public IllegalStateException f25513n;
+    public IllegalStateException f26256n;
 
     /* renamed from: o, reason: collision with root package name */
-    public C4019ut f25514o;
+    public C4042ut f26257o;
 
     /* renamed from: a, reason: collision with root package name */
-    public final Object f25501a = new Object();
+    public final Object f26244a = new Object();
 
     /* renamed from: d, reason: collision with root package name */
-    public final C2780Sl f25504d = new C2780Sl();
+    public final C2817Tl f26247d = new C2817Tl();
 
     /* renamed from: e, reason: collision with root package name */
-    public final C2780Sl f25505e = new C2780Sl();
+    public final C2817Tl f26248e = new C2817Tl();
 
     /* renamed from: f, reason: collision with root package name */
-    public final ArrayDeque f25506f = new ArrayDeque();
+    public final ArrayDeque f26249f = new ArrayDeque();
 
     /* renamed from: g, reason: collision with root package name */
-    public final ArrayDeque f25507g = new ArrayDeque();
+    public final ArrayDeque f26250g = new ArrayDeque();
 
     public IP(HandlerThread handlerThread) {
-        this.f25502b = handlerThread;
+        this.f26245b = handlerThread;
     }
 
     public final void a() {
-        ArrayDeque arrayDeque = this.f25507g;
+        ArrayDeque arrayDeque = this.f26250g;
         if (!arrayDeque.isEmpty()) {
             this.i = (MediaFormat) arrayDeque.getLast();
         }
-        C2780Sl c2780Sl = this.f25504d;
-        c2780Sl.f27545b = c2780Sl.f27544a;
-        C2780Sl c2780Sl2 = this.f25505e;
-        c2780Sl2.f27545b = c2780Sl2.f27544a;
-        this.f25506f.clear();
+        C2817Tl c2817Tl = this.f26247d;
+        c2817Tl.f28574b = c2817Tl.f28573a;
+        C2817Tl c2817Tl2 = this.f26248e;
+        c2817Tl2.f28574b = c2817Tl2.f28573a;
+        this.f26249f.clear();
         arrayDeque.clear();
     }
 
     public final void b() {
-        IllegalStateException illegalStateException = this.f25513n;
+        IllegalStateException illegalStateException = this.f26256n;
         if (illegalStateException != null) {
-            this.f25513n = null;
+            this.f26256n = null;
             throw illegalStateException;
         }
-        MediaCodec.CodecException codecException = this.f25509j;
+        MediaCodec.CodecException codecException = this.f26252j;
         if (codecException != null) {
-            this.f25509j = null;
+            this.f26252j = null;
             throw codecException;
         }
-        MediaCodec.CryptoException cryptoException = this.f25510k;
+        MediaCodec.CryptoException cryptoException = this.f26253k;
         if (cryptoException == null) {
             return;
         }
-        this.f25510k = null;
+        this.f26253k = null;
         throw cryptoException;
     }
 
     @Override // android.media.MediaCodec.Callback
     public final void onCryptoError(MediaCodec mediaCodec, MediaCodec.CryptoException cryptoException) {
-        synchronized (this.f25501a) {
-            this.f25510k = cryptoException;
+        synchronized (this.f26244a) {
+            this.f26253k = cryptoException;
         }
     }
 
     @Override // android.media.MediaCodec.Callback
     public final void onError(MediaCodec mediaCodec, MediaCodec.CodecException codecException) {
-        synchronized (this.f25501a) {
-            this.f25509j = codecException;
+        synchronized (this.f26244a) {
+            this.f26252j = codecException;
         }
     }
 
     @Override // android.media.MediaCodec.Callback
     public final void onInputBufferAvailable(MediaCodec mediaCodec, int i) {
         QN qn;
-        synchronized (this.f25501a) {
+        synchronized (this.f26244a) {
             try {
-                this.f25504d.c(i);
-                C4019ut c4019ut = this.f25514o;
-                if (c4019ut != null && (qn = ((RP) c4019ut.f34603u).f27266o0) != null) {
+                this.f26247d.c(i);
+                C4042ut c4042ut = this.f26257o;
+                if (c4042ut != null && (qn = ((SP) c4042ut.f35366u).f28250j0) != null) {
                     qn.a();
                 }
             } catch (Throwable th) {
@@ -121,18 +121,18 @@ public final class IP extends MediaCodec.Callback {
     @Override // android.media.MediaCodec.Callback
     public final void onOutputBufferAvailable(MediaCodec mediaCodec, int i, MediaCodec.BufferInfo bufferInfo) {
         QN qn;
-        synchronized (this.f25501a) {
+        synchronized (this.f26244a) {
             try {
                 MediaFormat mediaFormat = this.i;
                 if (mediaFormat != null) {
-                    this.f25505e.c(-2);
-                    this.f25507g.add(mediaFormat);
+                    this.f26248e.c(-2);
+                    this.f26250g.add(mediaFormat);
                     this.i = null;
                 }
-                this.f25505e.c(i);
-                this.f25506f.add(bufferInfo);
-                C4019ut c4019ut = this.f25514o;
-                if (c4019ut != null && (qn = ((RP) c4019ut.f34603u).f27266o0) != null) {
+                this.f26248e.c(i);
+                this.f26249f.add(bufferInfo);
+                C4042ut c4042ut = this.f26257o;
+                if (c4042ut != null && (qn = ((SP) c4042ut.f35366u).f28250j0) != null) {
                     qn.a();
                 }
             } catch (Throwable th) {
@@ -143,9 +143,9 @@ public final class IP extends MediaCodec.Callback {
 
     @Override // android.media.MediaCodec.Callback
     public final void onOutputFormatChanged(MediaCodec mediaCodec, MediaFormat mediaFormat) {
-        synchronized (this.f25501a) {
-            this.f25505e.c(-2);
-            this.f25507g.add(mediaFormat);
+        synchronized (this.f26244a) {
+            this.f26248e.c(-2);
+            this.f26250g.add(mediaFormat);
             this.i = null;
         }
     }

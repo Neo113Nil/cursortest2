@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.anythink.core.common.s.a.c;
 import com.anythink.expressad.video.module.a.a;
-import com.instagram.common.viewpoint.core.C1167Pt;
+import com.instagram.common.viewpoint.core.C1187Pt;
 import java.util.Arrays;
 
 /* loaded from: assets/audience_network/classes2.dex */
@@ -15,21 +15,21 @@ public class ViewPager$SavedState extends AbsSavedState {
     public Parcelable A01;
     public ClassLoader A02;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ a.f21727Q);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ a.f22514Q);
         }
         return new String(copyOfRange);
     }
 
     public static void A02() {
-        A03 = new byte[]{34, 114, 109, 113, 107, 118, 107, 109, 108, c.f16318c, 69, 113, 98, 100, 110, 102, 109, 119, 83, 98, 100, 102, 113, 45, 80, 98, 117, 102, 103, 80, 119, 98, 119, 102, 120, 6};
+        A03 = new byte[]{34, 114, 109, 113, 107, 118, 107, 109, 108, c.f17105c, 69, 113, 98, 100, 110, 102, 109, 119, 83, 98, 100, 102, 113, 45, 80, 98, 117, 102, 103, 80, 119, 98, 119, 102, 120, 6};
     }
 
     static {
         A02();
-        CREATOR = new C1167Pt();
+        CREATOR = new C1187Pt();
     }
 
     public ViewPager$SavedState(Parcel parcel, ClassLoader classLoader) {

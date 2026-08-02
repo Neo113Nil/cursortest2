@@ -10,43 +10,43 @@ import java.util.Objects;
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19958a = "a";
+    private static final String f20745a = "a";
 
     /* renamed from: b, reason: collision with root package name */
-    private final Handler f19959b = new Handler(Looper.getMainLooper());
+    private final Handler f20746b = new Handler(Looper.getMainLooper());
 
     /* renamed from: c, reason: collision with root package name */
-    private boolean f19960c;
+    private boolean f20747c;
 
     public final void b(final com.anythink.expressad.mbbanner.a.c.b bVar, final c cVar) {
         Objects.toString(cVar);
-        this.f19959b.post(new Runnable() { // from class: com.anythink.expressad.mbbanner.a.e.a.4
+        this.f20746b.post(new Runnable() { // from class: com.anythink.expressad.mbbanner.a.e.a.4
             @Override // java.lang.Runnable
             public final void run() {
                 if (bVar != null) {
-                    cVar.a(a.this.f19960c);
+                    cVar.a(a.this.f20747c);
                     bVar.b();
                 }
             }
         });
     }
 
-    private void a(boolean z3) {
-        this.f19960c = z3;
+    private void a(boolean z6) {
+        this.f20747c = z6;
     }
 
     private boolean a() {
-        return this.f19960c;
+        return this.f20747c;
     }
 
     private void a(final com.anythink.expressad.mbbanner.a.c.b bVar, final e eVar, final String str) {
-        this.f19959b.post(new Runnable() { // from class: com.anythink.expressad.mbbanner.a.e.a.1
+        this.f20746b.post(new Runnable() { // from class: com.anythink.expressad.mbbanner.a.e.a.1
             @Override // java.lang.Runnable
             public final void run() {
                 com.anythink.expressad.mbbanner.a.c.b bVar2 = bVar;
                 if (bVar2 != null) {
                     e eVar2 = eVar;
-                    boolean unused = a.this.f19960c;
+                    boolean unused = a.this.f20747c;
                     bVar2.a(eVar2);
                 }
             }
@@ -54,11 +54,11 @@ public class a {
     }
 
     public final void a(final com.anythink.expressad.mbbanner.a.c.b bVar, final c cVar) {
-        this.f19959b.post(new Runnable() { // from class: com.anythink.expressad.mbbanner.a.e.a.2
+        this.f20746b.post(new Runnable() { // from class: com.anythink.expressad.mbbanner.a.e.a.2
             @Override // java.lang.Runnable
             public final void run() {
                 if (bVar != null) {
-                    cVar.a(a.this.f19960c);
+                    cVar.a(a.this.f20747c);
                     bVar.a(cVar);
                 }
             }
@@ -66,12 +66,12 @@ public class a {
     }
 
     public final void a(final com.anythink.expressad.mbbanner.a.c.b bVar, final String str) {
-        this.f19959b.post(new Runnable() { // from class: com.anythink.expressad.mbbanner.a.e.a.3
+        this.f20746b.post(new Runnable() { // from class: com.anythink.expressad.mbbanner.a.e.a.3
             @Override // java.lang.Runnable
             public final void run() {
                 com.anythink.expressad.mbbanner.a.c.b bVar2 = bVar;
                 if (bVar2 != null) {
-                    boolean unused = a.this.f19960c;
+                    boolean unused = a.this.f20747c;
                     bVar2.a();
                 }
             }

@@ -13,22 +13,22 @@ import java.util.Map;
 public class f extends j<String> {
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f19298c = "f";
+    private static final String f20085c = "f";
 
     /* renamed from: d, reason: collision with root package name */
-    private Map<String, String> f19299d;
+    private Map<String, String> f20086d;
 
     /* renamed from: e, reason: collision with root package name */
-    private com.anythink.expressad.foundation.g.f.c.b[] f19300e;
+    private com.anythink.expressad.foundation.g.f.c.b[] f20087e;
 
     /* renamed from: f, reason: collision with root package name */
-    private String f19301f;
+    private String f20088f;
 
     private f(int i, String str, Map<String, String> map, com.anythink.expressad.foundation.g.f.c.b[] bVarArr, com.anythink.expressad.foundation.g.f.e<String> eVar) {
         super(i, str, eVar);
-        this.f19301f = "---------Ij5ei4KM7KM7ae0KM7cH2ae0Ij5Ef1";
-        this.f19299d = map;
-        this.f19300e = bVarArr;
+        this.f20088f = "---------Ij5ei4KM7KM7ae0KM7cH2ae0Ij5Ef1";
+        this.f20086d = map;
+        this.f20087e = bVarArr;
     }
 
     @Override // com.anythink.expressad.foundation.g.f.j
@@ -36,12 +36,12 @@ public class f extends j<String> {
         DataOutputStream dataOutputStream = (DataOutputStream) outputStream;
         try {
             try {
-                com.anythink.expressad.foundation.g.f.c.b[] bVarArr = this.f19300e;
+                com.anythink.expressad.foundation.g.f.c.b[] bVarArr = this.f20087e;
                 if (bVarArr != null) {
                     for (com.anythink.expressad.foundation.g.f.c.b bVar : bVarArr) {
                         StringBuilder sb = new StringBuilder();
                         sb.append("--");
-                        sb.append(this.f19301f);
+                        sb.append(this.f20088f);
                         sb.append("\r\n");
                         sb.append("Content-Disposition: form-data;name=\"" + bVar.f() + "\";filename=\"" + bVar.e() + "\"\r\n");
                         StringBuilder sb2 = new StringBuilder("Content-Type: ");
@@ -59,7 +59,7 @@ public class f extends j<String> {
                                 }
                                 dataOutputStream.write(bArr, 0, read);
                                 i += read;
-                                com.anythink.expressad.foundation.g.f.e<T> eVar = this.f19366b;
+                                com.anythink.expressad.foundation.g.f.e<T> eVar = this.f20153b;
                                 if (eVar != 0) {
                                     eVar.a(bVar.a(), i);
                                 }
@@ -71,7 +71,7 @@ public class f extends j<String> {
                         dataOutputStream.write("\r\n".getBytes());
                     }
                 }
-                dataOutputStream.writeBytes("--" + this.f19301f + "--\r\n");
+                dataOutputStream.writeBytes("--" + this.f20088f + "--\r\n");
                 dataOutputStream.flush();
                 try {
                     dataOutputStream.close();
@@ -80,7 +80,7 @@ public class f extends j<String> {
                 }
             } catch (IOException e10) {
                 e10.getMessage();
-                this.f19366b.a(new com.anythink.expressad.foundation.g.f.a.a(2, null));
+                this.f20153b.a(new com.anythink.expressad.foundation.g.f.a.a(2, null));
                 try {
                     dataOutputStream.close();
                 } catch (IOException e11) {
@@ -100,9 +100,9 @@ public class f extends j<String> {
     @Override // com.anythink.expressad.foundation.g.f.j
     public final byte[] h() {
         StringBuilder sb = new StringBuilder();
-        for (Map.Entry<String, String> entry : this.f19299d.entrySet()) {
+        for (Map.Entry<String, String> entry : this.f20086d.entrySet()) {
             sb.append("--");
-            sb.append(this.f19301f);
+            sb.append(this.f20088f);
             sb.append("\r\n");
             sb.append("Content-Disposition: form-data; name=\"" + entry.getKey() + "\"\r\n\r\n");
             sb.append(entry.getValue());
@@ -115,14 +115,14 @@ public class f extends j<String> {
     public final void i() {
         super.i();
         HashMap hashMap = new HashMap();
-        hashMap.put("Content-Type", "multipart/form-data; boundary=" + this.f19301f);
+        hashMap.put("Content-Type", "multipart/form-data; boundary=" + this.f20088f);
         a((Map<String, String>) hashMap);
     }
 
     @Override // com.anythink.expressad.foundation.g.f.j
     public final l<String> a(com.anythink.expressad.foundation.g.f.f.c cVar) {
         try {
-            return l.a(new String(cVar.f19320b, com.anythink.expressad.foundation.g.f.g.d.a(cVar.f19322d)), cVar);
+            return l.a(new String(cVar.f20107b, com.anythink.expressad.foundation.g.f.g.d.a(cVar.f20109d)), cVar);
         } catch (UnsupportedEncodingException e9) {
             e9.getMessage();
             return l.a(new com.anythink.expressad.foundation.g.f.a.a(8, cVar));

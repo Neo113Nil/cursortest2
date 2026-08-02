@@ -9,27 +9,27 @@ import android.util.Log;
 import java.util.Calendar;
 
 /* loaded from: classes.dex */
-public final class x extends E2.a {
+public final class x extends B1.b {
 
     /* renamed from: w, reason: collision with root package name */
-    public final /* synthetic */ int f37923w = 1;
+    public final /* synthetic */ int f37949w = 0;
 
     /* renamed from: x, reason: collision with root package name */
-    public final /* synthetic */ LayoutInflaterFactory2C4533A f37924x;
+    public final /* synthetic */ LayoutInflaterFactory2C4537A f37950x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final Object f37925y;
+    public final Object f37951y;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public x(LayoutInflaterFactory2C4533A layoutInflaterFactory2C4533A, Z2.e eVar) {
-        super(layoutInflaterFactory2C4533A);
-        this.f37924x = layoutInflaterFactory2C4533A;
-        this.f37925y = eVar;
+    public x(LayoutInflaterFactory2C4537A layoutInflaterFactory2C4537A, b3.e eVar) {
+        super(layoutInflaterFactory2C4537A);
+        this.f37950x = layoutInflaterFactory2C4537A;
+        this.f37951y = eVar;
     }
 
-    @Override // E2.a
+    @Override // B1.b
     public final IntentFilter e() {
-        switch (this.f37923w) {
+        switch (this.f37949w) {
             case 0:
                 IntentFilter intentFilter = new IntentFilter();
                 intentFilter.addAction("android.os.action.POWER_SAVE_MODE_CHANGED");
@@ -43,25 +43,25 @@ public final class x extends E2.a {
         }
     }
 
-    @Override // E2.a
+    @Override // B1.b
     public final int f() {
         Location location;
-        boolean z3;
+        boolean z6;
         long j6;
         Location location2;
-        switch (this.f37923w) {
+        switch (this.f37949w) {
             case 0:
-                return t.a((PowerManager) this.f37925y) ? 2 : 1;
+                return t.a((PowerManager) this.f37951y) ? 2 : 1;
             default:
-                Z2.e eVar = (Z2.e) this.f37925y;
-                I i = (I) eVar.f4172w;
-                if (i.f37832b > System.currentTimeMillis()) {
-                    z3 = i.f37831a;
+                b3.e eVar = (b3.e) this.f37951y;
+                J j9 = (J) eVar.f5559w;
+                if (j9.f37858b > System.currentTimeMillis()) {
+                    z6 = j9.f37857a;
                 } else {
-                    Context context = (Context) eVar.f4170u;
+                    Context context = (Context) eVar.f5557u;
                     int b9 = E.e.b(context, "android.permission.ACCESS_COARSE_LOCATION");
                     Location location3 = null;
-                    LocationManager locationManager = (LocationManager) eVar.f4171v;
+                    LocationManager locationManager = (LocationManager) eVar.f5558v;
                     if (b9 == 0) {
                         try {
                         } catch (Exception e9) {
@@ -90,55 +90,55 @@ public final class x extends E2.a {
                     }
                     if (location != null) {
                         long currentTimeMillis = System.currentTimeMillis();
-                        if (C4540H.f37826e == null) {
-                            C4540H.f37826e = new C4540H();
+                        if (I.f37852e == null) {
+                            I.f37852e = new I();
                         }
-                        C4540H c4540h = C4540H.f37826e;
-                        c4540h.a(currentTimeMillis - 86400000, location.getLatitude(), location.getLongitude());
-                        c4540h.a(currentTimeMillis, location.getLatitude(), location.getLongitude());
-                        z3 = c4540h.f37828b == 1;
-                        long j9 = c4540h.f37830d;
-                        long j10 = c4540h.f37829c;
-                        c4540h.a(86400000 + currentTimeMillis, location.getLatitude(), location.getLongitude());
-                        long j11 = c4540h.f37830d;
-                        if (j9 == -1 || j10 == -1) {
+                        I i = I.f37852e;
+                        i.a(currentTimeMillis - 86400000, location.getLatitude(), location.getLongitude());
+                        i.a(currentTimeMillis, location.getLatitude(), location.getLongitude());
+                        z6 = i.f37854b == 1;
+                        long j10 = i.f37856d;
+                        long j11 = i.f37855c;
+                        i.a(86400000 + currentTimeMillis, location.getLatitude(), location.getLongitude());
+                        long j12 = i.f37856d;
+                        if (j10 == -1 || j11 == -1) {
                             j6 = currentTimeMillis + 43200000;
                         } else {
-                            if (currentTimeMillis <= j10) {
-                                j11 = currentTimeMillis > j9 ? j10 : j9;
+                            if (currentTimeMillis <= j11) {
+                                j12 = currentTimeMillis > j10 ? j11 : j10;
                             }
-                            j6 = j11 + 60000;
+                            j6 = j12 + 60000;
                         }
-                        i.f37831a = z3;
-                        i.f37832b = j6;
+                        j9.f37857a = z6;
+                        j9.f37858b = j6;
                     } else {
                         Log.i("TwilightManager", "Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.");
-                        int i6 = Calendar.getInstance().get(11);
-                        if (i6 < 6 || i6 >= 22) {
-                            z3 = true;
+                        int i4 = Calendar.getInstance().get(11);
+                        if (i4 < 6 || i4 >= 22) {
+                            z6 = true;
                         }
                     }
                 }
-                return z3 ? 2 : 1;
+                return z6 ? 2 : 1;
         }
     }
 
-    @Override // E2.a
+    @Override // B1.b
     public final void l() {
-        switch (this.f37923w) {
+        switch (this.f37949w) {
             case 0:
-                this.f37924x.n(true, true);
+                this.f37950x.o(true, true);
                 break;
             default:
-                this.f37924x.n(true, true);
+                this.f37950x.o(true, true);
                 break;
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public x(LayoutInflaterFactory2C4533A layoutInflaterFactory2C4533A, Context context) {
-        super(layoutInflaterFactory2C4533A);
-        this.f37924x = layoutInflaterFactory2C4533A;
-        this.f37925y = (PowerManager) context.getApplicationContext().getSystemService("power");
+    public x(LayoutInflaterFactory2C4537A layoutInflaterFactory2C4537A, Context context) {
+        super(layoutInflaterFactory2C4537A);
+        this.f37950x = layoutInflaterFactory2C4537A;
+        this.f37951y = (PowerManager) context.getApplicationContext().getSystemService("power");
     }
 }

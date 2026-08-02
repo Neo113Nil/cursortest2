@@ -7,11 +7,11 @@ public final class UW {
     public final int A02;
     public final UV A03;
 
-    public UW(UV uv, int i, int i6, int i9) {
+    public UW(UV uv, int i, int i4, int i6) {
         this.A03 = uv;
         this.A01 = i;
-        this.A00 = i6;
-        this.A02 = i9;
+        this.A00 = i4;
+        this.A02 = i6;
     }
 
     public final int A00() {

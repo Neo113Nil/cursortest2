@@ -15,12 +15,12 @@ public final class f extends b {
     private void g() {
         ATSplashWebview splashWebview;
         Handler handler;
-        this.f20514g = false;
-        if (this.f20513f > 0 && (handler = this.f20516j) != null) {
+        this.f21301g = false;
+        if (this.f21300f > 0 && (handler = this.f21303j) != null) {
             handler.removeMessages(1);
-            this.f20516j.sendEmptyMessageDelayed(1, 1000L);
+            this.f21303j.sendEmptyMessageDelayed(1, 1000L);
         }
-        ATSplashView aTSplashView = this.f20509b;
+        ATSplashView aTSplashView = this.f21296b;
         if (aTSplashView == null || (splashWebview = aTSplashView.getSplashWebview()) == null || splashWebview.isDestroyed()) {
             return;
         }
@@ -30,11 +30,11 @@ public final class f extends b {
     private void h() {
         ATSplashWebview splashWebview;
         Handler handler;
-        this.f20514g = true;
-        if (this.f20513f > 0 && (handler = this.f20516j) != null) {
+        this.f21301g = true;
+        if (this.f21300f > 0 && (handler = this.f21303j) != null) {
             handler.removeMessages(1);
         }
-        ATSplashView aTSplashView = this.f20509b;
+        ATSplashView aTSplashView = this.f21296b;
         if (aTSplashView == null || (splashWebview = aTSplashView.getSplashWebview()) == null || splashWebview.isDestroyed()) {
             return;
         }

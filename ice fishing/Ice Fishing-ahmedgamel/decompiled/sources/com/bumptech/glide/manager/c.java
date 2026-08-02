@@ -8,14 +8,14 @@ import java.util.HashSet;
 public final class c implements b {
 
     /* renamed from: n, reason: collision with root package name */
-    public final Context f23448n;
+    public final Context f24235n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final com.bumptech.glide.o f23449u;
+    public final com.bumptech.glide.o f24236u;
 
     public c(Context context, com.bumptech.glide.o oVar) {
-        this.f23448n = context.getApplicationContext();
-        this.f23449u = oVar;
+        this.f24235n = context.getApplicationContext();
+        this.f24236u = oVar;
     }
 
     @Override // com.bumptech.glide.manager.h
@@ -24,24 +24,24 @@ public final class c implements b {
 
     @Override // com.bumptech.glide.manager.h
     public final void onStart() {
-        p b9 = p.b(this.f23448n);
-        com.bumptech.glide.o oVar = this.f23449u;
+        o b9 = o.b(this.f24235n);
+        com.bumptech.glide.o oVar = this.f24236u;
         synchronized (b9) {
-            ((HashSet) b9.f23471w).add(oVar);
+            ((HashSet) b9.f24256w).add(oVar);
             b9.c();
         }
     }
 
     @Override // com.bumptech.glide.manager.h
     public final void onStop() {
-        p b9 = p.b(this.f23448n);
-        com.bumptech.glide.o oVar = this.f23449u;
+        o b9 = o.b(this.f24235n);
+        com.bumptech.glide.o oVar = this.f24236u;
         synchronized (b9) {
-            ((HashSet) b9.f23471w).remove(oVar);
-            if (b9.f23469u && ((HashSet) b9.f23471w).isEmpty()) {
-                o oVar2 = (o) b9.f23470v;
-                ((ConnectivityManager) ((N1.h) oVar2.f23465v).get()).unregisterNetworkCallback((Q0.h) oVar2.f23466w);
-                b9.f23469u = false;
+            ((HashSet) b9.f24256w).remove(oVar);
+            if (b9.f24254u && ((HashSet) b9.f24256w).isEmpty()) {
+                n nVar = (n) b9.f24255v;
+                ((ConnectivityManager) ((P1.h) nVar.f24250v).get()).unregisterNetworkCallback((Q0.h) nVar.f24251w);
+                b9.f24254u = false;
             }
         }
     }

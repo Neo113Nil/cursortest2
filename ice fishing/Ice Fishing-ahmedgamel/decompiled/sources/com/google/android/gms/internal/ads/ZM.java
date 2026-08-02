@@ -11,49 +11,49 @@ import java.util.NoSuchElementException;
 public abstract class ZM implements Iterator, Closeable {
 
     /* renamed from: z, reason: collision with root package name */
-    public static final C4194y5 f28874z = new C4194y5("eof ", 1);
+    public static final C4217y5 f29654z = new C4217y5("eof ", 1);
 
     /* renamed from: n, reason: collision with root package name */
-    public AbstractC3870s5 f28875n;
+    public AbstractC3893s5 f29655n;
 
     /* renamed from: u, reason: collision with root package name */
-    public C2656Lg f28876u;
+    public C2676Lg f29656u;
 
     /* renamed from: v, reason: collision with root package name */
-    public InterfaceC4032v5 f28877v = null;
+    public InterfaceC4055v5 f29657v = null;
 
     /* renamed from: w, reason: collision with root package name */
-    public long f28878w = 0;
+    public long f29658w = 0;
 
     /* renamed from: x, reason: collision with root package name */
-    public long f28879x = 0;
+    public long f29659x = 0;
 
     /* renamed from: y, reason: collision with root package name */
-    public final ArrayList f28880y = new ArrayList();
+    public final ArrayList f29660y = new ArrayList();
 
     static {
-        C2921aN.l(ZM.class);
+        C2944aN.l(ZM.class);
     }
 
     @Override // java.util.Iterator
     /* renamed from: b, reason: merged with bridge method [inline-methods] */
-    public final InterfaceC4032v5 next() {
-        InterfaceC4032v5 a9;
-        InterfaceC4032v5 interfaceC4032v5 = this.f28877v;
-        if (interfaceC4032v5 != null && interfaceC4032v5 != f28874z) {
-            this.f28877v = null;
-            return interfaceC4032v5;
+    public final InterfaceC4055v5 next() {
+        InterfaceC4055v5 a9;
+        InterfaceC4055v5 interfaceC4055v5 = this.f29657v;
+        if (interfaceC4055v5 != null && interfaceC4055v5 != f29654z) {
+            this.f29657v = null;
+            return interfaceC4055v5;
         }
-        C2656Lg c2656Lg = this.f28876u;
-        if (c2656Lg == null || this.f28878w >= this.f28879x) {
-            this.f28877v = f28874z;
+        C2676Lg c2676Lg = this.f29656u;
+        if (c2676Lg == null || this.f29658w >= this.f29659x) {
+            this.f29657v = f29654z;
             throw new NoSuchElementException();
         }
         try {
-            synchronized (c2656Lg) {
-                this.f28876u.f26126n.position((int) this.f28878w);
-                a9 = this.f28875n.a(this.f28876u, this);
-                this.f28878w = this.f28876u.b();
+            synchronized (c2676Lg) {
+                this.f29656u.f26923n.position((int) this.f29658w);
+                a9 = this.f29655n.a(this.f29656u, this);
+                this.f29658w = this.f29656u.b();
             }
             return a9;
         } catch (EOFException unused) {
@@ -69,19 +69,19 @@ public abstract class ZM implements Iterator, Closeable {
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        InterfaceC4032v5 interfaceC4032v5 = this.f28877v;
-        C4194y5 c4194y5 = f28874z;
-        if (interfaceC4032v5 == c4194y5) {
+        InterfaceC4055v5 interfaceC4055v5 = this.f29657v;
+        C4217y5 c4217y5 = f29654z;
+        if (interfaceC4055v5 == c4217y5) {
             return false;
         }
-        if (interfaceC4032v5 != null) {
+        if (interfaceC4055v5 != null) {
             return true;
         }
         try {
-            this.f28877v = next();
+            this.f29657v = next();
             return true;
         } catch (NoSuchElementException unused) {
-            this.f28877v = c4194y5;
+            this.f29657v = c4217y5;
             return false;
         }
     }
@@ -97,7 +97,7 @@ public abstract class ZM implements Iterator, Closeable {
         sb.append("[");
         int i = 0;
         while (true) {
-            ArrayList arrayList = this.f28880y;
+            ArrayList arrayList = this.f29660y;
             if (i >= arrayList.size()) {
                 sb.append("]");
                 return sb.toString();
@@ -105,7 +105,7 @@ public abstract class ZM implements Iterator, Closeable {
             if (i > 0) {
                 sb.append(";");
             }
-            sb.append(((InterfaceC4032v5) arrayList.get(i)).toString());
+            sb.append(((InterfaceC4055v5) arrayList.get(i)).toString());
             i++;
         }
     }

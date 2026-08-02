@@ -4,9 +4,9 @@ package X7;
 public final class m {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f3848a;
+    public final int f3803a;
 
     public m(int i) {
-        this.f3848a = i;
+        this.f3803a = i;
     }
 }

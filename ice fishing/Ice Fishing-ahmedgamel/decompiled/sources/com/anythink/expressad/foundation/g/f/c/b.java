@@ -10,98 +10,98 @@ import java.io.Serializable;
 public final class b implements Serializable {
 
     /* renamed from: a, reason: collision with root package name */
-    private byte[] f19246a;
+    private byte[] f20033a;
 
     /* renamed from: b, reason: collision with root package name */
-    private InputStream f19247b;
+    private InputStream f20034b;
 
     /* renamed from: c, reason: collision with root package name */
-    private File f19248c;
+    private File f20035c;
 
     /* renamed from: d, reason: collision with root package name */
-    private long f19249d;
+    private long f20036d;
 
     /* renamed from: e, reason: collision with root package name */
-    private String f19250e;
+    private String f20037e;
 
     /* renamed from: f, reason: collision with root package name */
-    private String f19251f;
+    private String f20038f;
 
     /* renamed from: g, reason: collision with root package name */
-    private String f19252g;
+    private String f20039g;
 
     private b(String str, byte[] bArr, long j6, String str2, String str3) {
-        this.f19252g = "application/octet-stream";
-        this.f19250e = str;
-        this.f19251f = str2;
-        this.f19246a = bArr;
-        this.f19249d = j6;
+        this.f20039g = "application/octet-stream";
+        this.f20037e = str;
+        this.f20038f = str2;
+        this.f20033a = bArr;
+        this.f20036d = j6;
         if (str3 != null) {
-            this.f19252g = str3;
+            this.f20039g = str3;
         }
     }
 
     public final long a() {
-        return this.f19249d;
+        return this.f20036d;
     }
 
     public final File b() {
-        return this.f19248c;
+        return this.f20035c;
     }
 
     public final InputStream c() {
-        return this.f19247b;
+        return this.f20034b;
     }
 
     public final byte[] d() {
-        return this.f19246a;
+        return this.f20033a;
     }
 
     public final String e() {
-        return this.f19250e;
+        return this.f20037e;
     }
 
     public final String f() {
-        return this.f19251f;
+        return this.f20038f;
     }
 
     public final String g() {
-        return this.f19252g;
+        return this.f20039g;
     }
 
     private void a(String str) {
-        this.f19250e = str;
+        this.f20037e = str;
     }
 
     private void b(String str) {
-        this.f19251f = str;
+        this.f20038f = str;
     }
 
     private void c(String str) {
-        this.f19252g = str;
+        this.f20039g = str;
     }
 
     public b(String str, File file, String str2, String str3) {
-        this.f19252g = "application/octet-stream";
-        this.f19250e = str;
-        this.f19251f = str2;
+        this.f20039g = "application/octet-stream";
+        this.f20037e = str;
+        this.f20038f = str2;
         try {
-            this.f19247b = new FileInputStream(file);
+            this.f20034b = new FileInputStream(file);
         } catch (FileNotFoundException e9) {
             e9.printStackTrace();
         }
-        this.f19249d = file.length();
+        this.f20036d = file.length();
         if (str3 != null) {
-            this.f19252g = str3;
+            this.f20039g = str3;
         }
-        this.f19248c = file;
+        this.f20035c = file;
     }
 
     private b(InputStream inputStream, int i, String str, String str2, String str3) {
-        this.f19250e = str;
-        this.f19251f = str2;
-        this.f19247b = inputStream;
-        this.f19249d = i;
-        this.f19252g = str3;
+        this.f20037e = str;
+        this.f20038f = str2;
+        this.f20034b = inputStream;
+        this.f20036d = i;
+        this.f20039g = str3;
     }
 }

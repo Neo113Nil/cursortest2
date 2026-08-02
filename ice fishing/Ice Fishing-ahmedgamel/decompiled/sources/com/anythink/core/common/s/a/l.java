@@ -12,18 +12,18 @@ import java.util.concurrent.atomic.AtomicBoolean;
 final class l {
 
     /* renamed from: a, reason: collision with root package name */
-    static final int f16371a = 32;
+    static final int f17158a = 32;
 
     /* renamed from: b, reason: collision with root package name */
-    private static final int f16372b = 16384;
+    private static final int f17159b = 16384;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        static final SecureRandom f16373a = new SecureRandom();
+        static final SecureRandom f17160a = new SecureRandom();
 
         /* renamed from: b, reason: collision with root package name */
-        static final char[] f16374b = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
+        static final char[] f17161b = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
 
         private a() {
         }
@@ -31,14 +31,14 @@ final class l {
 
     public static String a() {
         byte[] bArr = new byte[16];
-        a.f16373a.nextBytes(bArr);
+        a.f17160a.nextBytes(bArr);
         char[] cArr = new char[32];
         for (int i = 0; i < 16; i++) {
             byte b9 = bArr[i];
-            int i6 = i << 1;
-            char[] cArr2 = a.f16374b;
-            cArr[i6] = cArr2[(b9 >> 4) & 15];
-            cArr[i6 + 1] = cArr2[b9 & 15];
+            int i4 = i << 1;
+            char[] cArr2 = a.f17161b;
+            cArr[i4] = cArr2[(b9 >> 4) & 15];
+            cArr[i4 + 1] = cArr2[b9 & 15];
         }
         return new String(cArr);
     }
@@ -52,7 +52,7 @@ final class l {
             declaredMethod.setAccessible(true);
             return ((Integer) declaredMethod.invoke(declaredField.get(null), new Object[0])).intValue();
         } catch (Throwable unused) {
-            return f16372b;
+            return f17159b;
         }
     }
 
@@ -102,14 +102,14 @@ final class l {
 
     public static void a(File file, byte[] bArr, int i) {
         RandomAccessFile randomAccessFile = new RandomAccessFile(file, "rw");
-        int i6 = 0;
-        while (i6 < i) {
+        int i4 = 0;
+        while (i4 < i) {
             try {
-                int read = randomAccessFile.read(bArr, i6, i - i6);
+                int read = randomAccessFile.read(bArr, i4, i - i4);
                 if (read < 0) {
                     break;
                 } else {
-                    i6 += read;
+                    i4 += read;
                 }
             } finally {
                 a(randomAccessFile);
@@ -233,24 +233,24 @@ final class l {
 
     private static int a(int[] iArr, int i) {
         int length = iArr.length - 1;
-        int i6 = 0;
-        while (i6 <= length) {
-            int i9 = (i6 + length) >>> 1;
-            int i10 = iArr[i9];
-            if (i10 < i) {
-                i6 = i9 + 1;
+        int i4 = 0;
+        while (i4 <= length) {
+            int i6 = (i4 + length) >>> 1;
+            int i9 = iArr[i6];
+            if (i9 < i) {
+                i4 = i6 + 1;
             } else {
-                if (i10 <= i) {
-                    return i9;
+                if (i9 <= i) {
+                    return i6;
                 }
-                length = i9 - 1;
+                length = i6 - 1;
             }
         }
         return length;
     }
 
     private static void a(Exception exc) {
-        com.anythink.core.common.s.a.a.c cVar = h.f16350a;
+        com.anythink.core.common.s.a.a.c cVar = h.f17137a;
         if (cVar != null) {
             cVar.b("FastKV", exc);
         }

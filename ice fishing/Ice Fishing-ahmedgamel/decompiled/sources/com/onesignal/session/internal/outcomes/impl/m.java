@@ -21,12 +21,12 @@ public final class m {
     }
 
     /* renamed from: setDirectBody, reason: collision with other method in class */
-    public final void m44setDirectBody(n nVar) {
+    public final void m43setDirectBody(n nVar) {
         this.directBody = nVar;
     }
 
     /* renamed from: setIndirectBody, reason: collision with other method in class */
-    public final void m45setIndirectBody(n nVar) {
+    public final void m44setIndirectBody(n nVar) {
         this.indirectBody = nVar;
     }
 

@@ -9,11 +9,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 public abstract class o implements AutoCloseable {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final i f2000n;
+    public static final i f2088n;
 
     static {
-        AtomicInteger atomicInteger = j.f1975n;
-        f2000n = new i();
+        AtomicInteger atomicInteger = j.f2063n;
+        f2088n = new i();
     }
 
     public abstract void B();
@@ -59,7 +59,7 @@ public abstract class o implements AutoCloseable {
     }
 
     public final void b(b bVar, f6.g gVar, j jVar) {
-        P6.a aVar = P6.a.f2560b;
+        P6.a aVar = P6.a.f2395b;
         K(bVar, jVar.e());
         aVar.c(this, gVar, jVar);
         z();
@@ -83,10 +83,10 @@ public abstract class o implements AutoCloseable {
         V(bVar);
         if (!map.isEmpty()) {
             n nVar = (n) jVar.d(iVar, new H5.a(5));
-            nVar.f1996a = bVar;
-            nVar.f1997b = this;
-            nVar.f1998c = pVar;
-            nVar.f1999d = jVar;
+            nVar.f2084a = bVar;
+            nVar.f2085b = this;
+            nVar.f2086c = pVar;
+            nVar.f2087d = jVar;
             try {
                 map.forEach(nVar);
             } catch (UncheckedIOException e9) {
@@ -107,18 +107,18 @@ public abstract class o implements AutoCloseable {
         if (str == null || str.isEmpty()) {
             return;
         }
-        if (jVar.f1976a) {
+        if (jVar.f2064a) {
             X(bVar, str, jVar.e(), jVar);
         } else {
             Y(bVar, (byte[]) jVar.c(byte[].class));
         }
     }
 
-    public abstract void q(b bVar, boolean z3);
+    public abstract void q(b bVar, boolean z6);
 
     public abstract void w(b bVar, byte[] bArr);
 
-    public abstract void x(b bVar, double d2);
+    public abstract void x(b bVar, double d9);
 
     public abstract void z();
 }

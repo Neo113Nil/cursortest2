@@ -34,7 +34,7 @@ public class i implements com.onesignal.common.events.d {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((com.onesignal.common.modeling.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(com.onesignal.common.modeling.a it) {
@@ -258,7 +258,7 @@ public class i implements com.onesignal.common.events.d {
         }
     }
 
-    public static /* synthetic */ void setAnyProperty$default(i iVar, String str, Object obj, String str2, boolean z3, int i, Object obj2) {
+    public static /* synthetic */ void setAnyProperty$default(i iVar, String str, Object obj, String str2, boolean z6, int i, Object obj2) {
         if (obj2 != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setAnyProperty");
         }
@@ -266,12 +266,12 @@ public class i implements com.onesignal.common.events.d {
             str2 = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setAnyProperty(str, obj, str2, z3);
+        iVar.setAnyProperty(str, obj, str2, z6);
     }
 
-    public static /* synthetic */ void setBigDecimalProperty$default(i iVar, String str, BigDecimal bigDecimal, String str2, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setBigDecimalProperty$default(i iVar, String str, BigDecimal bigDecimal, String str2, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setBigDecimalProperty");
         }
@@ -279,12 +279,12 @@ public class i implements com.onesignal.common.events.d {
             str2 = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setBigDecimalProperty(str, bigDecimal, str2, z3);
+        iVar.setBigDecimalProperty(str, bigDecimal, str2, z6);
     }
 
-    public static /* synthetic */ void setBooleanProperty$default(i iVar, String str, boolean z3, String str2, boolean z6, int i, Object obj) {
+    public static /* synthetic */ void setBooleanProperty$default(i iVar, String str, boolean z6, String str2, boolean z9, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setBooleanProperty");
         }
@@ -292,12 +292,12 @@ public class i implements com.onesignal.common.events.d {
             str2 = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z6 = false;
+            z9 = false;
         }
-        iVar.setBooleanProperty(str, z3, str2, z6);
+        iVar.setBooleanProperty(str, z6, str2, z9);
     }
 
-    public static /* synthetic */ void setDoubleProperty$default(i iVar, String str, double d2, String str2, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setDoubleProperty$default(i iVar, String str, double d9, String str2, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setDoubleProperty");
         }
@@ -306,12 +306,12 @@ public class i implements com.onesignal.common.events.d {
         }
         String str3 = str2;
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setDoubleProperty(str, d2, str3, z3);
+        iVar.setDoubleProperty(str, d9, str3, z6);
     }
 
-    public static /* synthetic */ void setEnumProperty$default(i iVar, String name, Enum value, String tag, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setEnumProperty$default(i iVar, String name, Enum value, String tag, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setEnumProperty");
         }
@@ -319,15 +319,15 @@ public class i implements com.onesignal.common.events.d {
             tag = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(value, "value");
         kotlin.jvm.internal.h.e(tag, "tag");
-        iVar.setOptAnyProperty(name, value.toString(), tag, z3);
+        iVar.setOptAnyProperty(name, value.toString(), tag, z6);
     }
 
-    public static /* synthetic */ void setFloatProperty$default(i iVar, String str, float f3, String str2, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setFloatProperty$default(i iVar, String str, float f2, String str2, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setFloatProperty");
         }
@@ -335,25 +335,25 @@ public class i implements com.onesignal.common.events.d {
             str2 = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setFloatProperty(str, f3, str2, z3);
+        iVar.setFloatProperty(str, f2, str2, z6);
     }
 
-    public static /* synthetic */ void setIntProperty$default(i iVar, String str, int i, String str2, boolean z3, int i6, Object obj) {
+    public static /* synthetic */ void setIntProperty$default(i iVar, String str, int i, String str2, boolean z6, int i4, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setIntProperty");
         }
-        if ((i6 & 4) != 0) {
+        if ((i4 & 4) != 0) {
             str2 = "NORMAL";
         }
-        if ((i6 & 8) != 0) {
-            z3 = false;
+        if ((i4 & 8) != 0) {
+            z6 = false;
         }
-        iVar.setIntProperty(str, i, str2, z3);
+        iVar.setIntProperty(str, i, str2, z6);
     }
 
-    public static /* synthetic */ void setListProperty$default(i iVar, String str, List list, String str2, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setListProperty$default(i iVar, String str, List list, String str2, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setListProperty");
         }
@@ -361,12 +361,12 @@ public class i implements com.onesignal.common.events.d {
             str2 = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setListProperty(str, list, str2, z3);
+        iVar.setListProperty(str, list, str2, z6);
     }
 
-    public static /* synthetic */ void setLongProperty$default(i iVar, String str, long j6, String str2, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setLongProperty$default(i iVar, String str, long j6, String str2, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setLongProperty");
         }
@@ -375,12 +375,12 @@ public class i implements com.onesignal.common.events.d {
         }
         String str3 = str2;
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setLongProperty(str, j6, str3, z3);
+        iVar.setLongProperty(str, j6, str3, z6);
     }
 
-    public static /* synthetic */ void setMapModelProperty$default(i iVar, String str, h hVar, String str2, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setMapModelProperty$default(i iVar, String str, h hVar, String str2, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setMapModelProperty");
         }
@@ -388,12 +388,12 @@ public class i implements com.onesignal.common.events.d {
             str2 = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setMapModelProperty(str, hVar, str2, z3);
+        iVar.setMapModelProperty(str, hVar, str2, z6);
     }
 
-    public static /* synthetic */ void setOptAnyProperty$default(i iVar, String str, Object obj, String str2, boolean z3, int i, Object obj2) {
+    public static /* synthetic */ void setOptAnyProperty$default(i iVar, String str, Object obj, String str2, boolean z6, int i, Object obj2) {
         if (obj2 != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setOptAnyProperty");
         }
@@ -401,12 +401,12 @@ public class i implements com.onesignal.common.events.d {
             str2 = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setOptAnyProperty(str, obj, str2, z3);
+        iVar.setOptAnyProperty(str, obj, str2, z6);
     }
 
-    public static /* synthetic */ void setOptBigDecimalProperty$default(i iVar, String str, BigDecimal bigDecimal, String str2, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setOptBigDecimalProperty$default(i iVar, String str, BigDecimal bigDecimal, String str2, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setOptBigDecimalProperty");
         }
@@ -414,12 +414,12 @@ public class i implements com.onesignal.common.events.d {
             str2 = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setOptBigDecimalProperty(str, bigDecimal, str2, z3);
+        iVar.setOptBigDecimalProperty(str, bigDecimal, str2, z6);
     }
 
-    public static /* synthetic */ void setOptBooleanProperty$default(i iVar, String str, Boolean bool, String str2, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setOptBooleanProperty$default(i iVar, String str, Boolean bool, String str2, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setOptBooleanProperty");
         }
@@ -427,12 +427,12 @@ public class i implements com.onesignal.common.events.d {
             str2 = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setOptBooleanProperty(str, bool, str2, z3);
+        iVar.setOptBooleanProperty(str, bool, str2, z6);
     }
 
-    public static /* synthetic */ void setOptDoubleProperty$default(i iVar, String str, Double d2, String str2, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setOptDoubleProperty$default(i iVar, String str, Double d9, String str2, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setOptDoubleProperty");
         }
@@ -440,12 +440,12 @@ public class i implements com.onesignal.common.events.d {
             str2 = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setOptDoubleProperty(str, d2, str2, z3);
+        iVar.setOptDoubleProperty(str, d9, str2, z6);
     }
 
-    public static /* synthetic */ void setOptEnumProperty$default(i iVar, String name, Enum r22, String tag, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setOptEnumProperty$default(i iVar, String name, Enum r22, String tag, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setOptEnumProperty");
         }
@@ -453,14 +453,14 @@ public class i implements com.onesignal.common.events.d {
             tag = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(tag, "tag");
-        iVar.setOptAnyProperty(name, r22 != null ? r22.toString() : null, tag, z3);
+        iVar.setOptAnyProperty(name, r22 != null ? r22.toString() : null, tag, z6);
     }
 
-    public static /* synthetic */ void setOptFloatProperty$default(i iVar, String str, Float f3, String str2, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setOptFloatProperty$default(i iVar, String str, Float f2, String str2, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setOptFloatProperty");
         }
@@ -468,12 +468,12 @@ public class i implements com.onesignal.common.events.d {
             str2 = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setOptFloatProperty(str, f3, str2, z3);
+        iVar.setOptFloatProperty(str, f2, str2, z6);
     }
 
-    public static /* synthetic */ void setOptIntProperty$default(i iVar, String str, Integer num, String str2, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setOptIntProperty$default(i iVar, String str, Integer num, String str2, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setOptIntProperty");
         }
@@ -481,12 +481,12 @@ public class i implements com.onesignal.common.events.d {
             str2 = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setOptIntProperty(str, num, str2, z3);
+        iVar.setOptIntProperty(str, num, str2, z6);
     }
 
-    public static /* synthetic */ void setOptListProperty$default(i iVar, String str, List list, String str2, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setOptListProperty$default(i iVar, String str, List list, String str2, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setOptListProperty");
         }
@@ -494,12 +494,12 @@ public class i implements com.onesignal.common.events.d {
             str2 = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setOptListProperty(str, list, str2, z3);
+        iVar.setOptListProperty(str, list, str2, z6);
     }
 
-    public static /* synthetic */ void setOptLongProperty$default(i iVar, String str, Long l9, String str2, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setOptLongProperty$default(i iVar, String str, Long l9, String str2, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setOptLongProperty");
         }
@@ -507,12 +507,12 @@ public class i implements com.onesignal.common.events.d {
             str2 = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setOptLongProperty(str, l9, str2, z3);
+        iVar.setOptLongProperty(str, l9, str2, z6);
     }
 
-    public static /* synthetic */ void setOptMapModelProperty$default(i iVar, String str, h hVar, String str2, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setOptMapModelProperty$default(i iVar, String str, h hVar, String str2, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setOptMapModelProperty");
         }
@@ -520,12 +520,12 @@ public class i implements com.onesignal.common.events.d {
             str2 = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setOptMapModelProperty(str, hVar, str2, z3);
+        iVar.setOptMapModelProperty(str, hVar, str2, z6);
     }
 
-    public static /* synthetic */ void setOptStringProperty$default(i iVar, String str, String str2, String str3, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setOptStringProperty$default(i iVar, String str, String str2, String str3, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setOptStringProperty");
         }
@@ -533,12 +533,12 @@ public class i implements com.onesignal.common.events.d {
             str3 = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setOptStringProperty(str, str2, str3, z3);
+        iVar.setOptStringProperty(str, str2, str3, z6);
     }
 
-    public static /* synthetic */ void setStringProperty$default(i iVar, String str, String str2, String str3, boolean z3, int i, Object obj) {
+    public static /* synthetic */ void setStringProperty$default(i iVar, String str, String str2, String str3, boolean z6, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setStringProperty");
         }
@@ -546,9 +546,9 @@ public class i implements com.onesignal.common.events.d {
             str3 = "NORMAL";
         }
         if ((i & 8) != 0) {
-            z3 = false;
+            z6 = false;
         }
-        iVar.setStringProperty(str, str2, str3, z3);
+        iVar.setStringProperty(str, str2, str3, z6);
     }
 
     public List<?> createListForProperty(String property, JSONArray jsonArray) {
@@ -787,14 +787,14 @@ public class i implements com.onesignal.common.events.d {
                             }
                             method = methods[i];
                             if (!kotlin.jvm.internal.h.a(method.getReturnType(), Void.class)) {
-                                if (q.L(method.getName(), "get" + next)) {
+                                if (q.b0(method.getName(), "get" + next)) {
                                     break;
                                 }
                             }
                             i++;
                         }
                         Class<?> returnType = method != null ? method.getReturnType() : null;
-                        boolean z3 = true;
+                        boolean z6 = true;
                         if (kotlin.jvm.internal.h.a(returnType, Double.TYPE) ? true : kotlin.jvm.internal.h.a(returnType, Double.class)) {
                             Map<String, Object> map = this.data;
                             kotlin.jvm.internal.h.b(next);
@@ -821,9 +821,9 @@ public class i implements com.onesignal.common.events.d {
                                             map5.put(next, Boolean.valueOf(jsonObject.getBoolean(next)));
                                         } else {
                                             if (!kotlin.jvm.internal.h.a(returnType, String.class)) {
-                                                z3 = kotlin.jvm.internal.h.a(returnType, String.class);
+                                                z6 = kotlin.jvm.internal.h.a(returnType, String.class);
                                             }
-                                            if (z3) {
+                                            if (z6) {
                                                 Map<String, Object> map6 = this.data;
                                                 kotlin.jvm.internal.h.b(next);
                                                 map6.put(next, jsonObject.getString(next));
@@ -846,13 +846,13 @@ public class i implements com.onesignal.common.events.d {
     }
 
     public final void initializeFromModel(String str, i model) {
-        Map U3;
+        Map y7;
         kotlin.jvm.internal.h.e(model, "model");
         synchronized (model.data) {
-            U3 = t.U(model.data);
+            y7 = t.y(model.data);
         }
         LinkedHashMap linkedHashMap = new LinkedHashMap();
-        for (Map.Entry entry : U3.entrySet()) {
+        for (Map.Entry entry : y7.entrySet()) {
             String str2 = (String) entry.getKey();
             Object value = entry.getValue();
             if (value instanceof i) {
@@ -871,43 +871,43 @@ public class i implements com.onesignal.common.events.d {
         }
     }
 
-    public final void setAnyProperty(String name, Object value, String tag, boolean z3) {
+    public final void setAnyProperty(String name, Object value, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(value, "value");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptAnyProperty(name, value, tag, z3);
+        setOptAnyProperty(name, value, tag, z6);
     }
 
-    public final void setBigDecimalProperty(String name, BigDecimal value, String tag, boolean z3) {
+    public final void setBigDecimalProperty(String name, BigDecimal value, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(value, "value");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptBigDecimalProperty(name, value, tag, z3);
+        setOptBigDecimalProperty(name, value, tag, z6);
     }
 
-    public final void setBooleanProperty(String name, boolean z3, String tag, boolean z6) {
+    public final void setBooleanProperty(String name, boolean z6, String tag, boolean z9) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptBooleanProperty(name, Boolean.valueOf(z3), tag, z6);
+        setOptBooleanProperty(name, Boolean.valueOf(z6), tag, z9);
     }
 
-    public final void setDoubleProperty(String name, double d2, String tag, boolean z3) {
+    public final void setDoubleProperty(String name, double d9, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptDoubleProperty(name, Double.valueOf(d2), tag, z3);
+        setOptDoubleProperty(name, Double.valueOf(d9), tag, z6);
     }
 
-    public final /* synthetic */ <T extends Enum<T>> void setEnumProperty(String name, T value, String tag, boolean z3) {
+    public final /* synthetic */ <T extends Enum<T>> void setEnumProperty(String name, T value, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(value, "value");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptAnyProperty(name, value.toString(), tag, z3);
+        setOptAnyProperty(name, value.toString(), tag, z6);
     }
 
-    public final void setFloatProperty(String name, float f3, String tag, boolean z3) {
+    public final void setFloatProperty(String name, float f2, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptFloatProperty(name, Float.valueOf(f3), tag, z3);
+        setOptFloatProperty(name, Float.valueOf(f2), tag, z6);
     }
 
     public final void setId(String value) {
@@ -915,39 +915,39 @@ public class i implements com.onesignal.common.events.d {
         setStringProperty$default(this, "id", value, null, false, 12, null);
     }
 
-    public final void setIntProperty(String name, int i, String tag, boolean z3) {
+    public final void setIntProperty(String name, int i, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptIntProperty(name, Integer.valueOf(i), tag, z3);
+        setOptIntProperty(name, Integer.valueOf(i), tag, z6);
     }
 
-    public final <T> void setListProperty(String name, List<? extends T> value, String tag, boolean z3) {
-        kotlin.jvm.internal.h.e(name, "name");
-        kotlin.jvm.internal.h.e(value, "value");
-        kotlin.jvm.internal.h.e(tag, "tag");
-        setOptListProperty(name, value, tag, z3);
-    }
-
-    public final void setLongProperty(String name, long j6, String tag, boolean z3) {
-        kotlin.jvm.internal.h.e(name, "name");
-        kotlin.jvm.internal.h.e(tag, "tag");
-        setOptLongProperty(name, Long.valueOf(j6), tag, z3);
-    }
-
-    public final <T> void setMapModelProperty(String name, h value, String tag, boolean z3) {
+    public final <T> void setListProperty(String name, List<? extends T> value, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(value, "value");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptMapModelProperty(name, value, tag, z3);
+        setOptListProperty(name, value, tag, z6);
     }
 
-    public final void setOptAnyProperty(String name, Object obj, String tag, boolean z3) {
+    public final void setLongProperty(String name, long j6, String tag, boolean z6) {
+        kotlin.jvm.internal.h.e(name, "name");
+        kotlin.jvm.internal.h.e(tag, "tag");
+        setOptLongProperty(name, Long.valueOf(j6), tag, z6);
+    }
+
+    public final <T> void setMapModelProperty(String name, h value, String tag, boolean z6) {
+        kotlin.jvm.internal.h.e(name, "name");
+        kotlin.jvm.internal.h.e(value, "value");
+        kotlin.jvm.internal.h.e(tag, "tag");
+        setOptMapModelProperty(name, value, tag, z6);
+    }
+
+    public final void setOptAnyProperty(String name, Object obj, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(tag, "tag");
         Object obj2 = this.data.get(name);
         synchronized (this.data) {
             try {
-                if (!kotlin.jvm.internal.h.a(obj2, obj) || z3) {
+                if (!kotlin.jvm.internal.h.a(obj2, obj) || z6) {
                     if (obj != null) {
                         this.data.put(name, obj);
                     } else if (this.data.containsKey(name)) {
@@ -961,71 +961,71 @@ public class i implements com.onesignal.common.events.d {
         }
     }
 
-    public final void setOptBigDecimalProperty(String name, BigDecimal bigDecimal, String tag, boolean z3) {
+    public final void setOptBigDecimalProperty(String name, BigDecimal bigDecimal, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptAnyProperty(name, bigDecimal != null ? bigDecimal.toString() : null, tag, z3);
+        setOptAnyProperty(name, bigDecimal != null ? bigDecimal.toString() : null, tag, z6);
     }
 
-    public final void setOptBooleanProperty(String name, Boolean bool, String tag, boolean z3) {
+    public final void setOptBooleanProperty(String name, Boolean bool, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptAnyProperty(name, bool, tag, z3);
+        setOptAnyProperty(name, bool, tag, z6);
     }
 
-    public final void setOptDoubleProperty(String name, Double d2, String tag, boolean z3) {
+    public final void setOptDoubleProperty(String name, Double d9, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptAnyProperty(name, d2, tag, z3);
+        setOptAnyProperty(name, d9, tag, z6);
     }
 
-    public final /* synthetic */ <T extends Enum<T>> void setOptEnumProperty(String name, T t6, String tag, boolean z3) {
+    public final /* synthetic */ <T extends Enum<T>> void setOptEnumProperty(String name, T t6, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptAnyProperty(name, t6 != null ? t6.toString() : null, tag, z3);
+        setOptAnyProperty(name, t6 != null ? t6.toString() : null, tag, z6);
     }
 
-    public final void setOptFloatProperty(String name, Float f3, String tag, boolean z3) {
+    public final void setOptFloatProperty(String name, Float f2, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptAnyProperty(name, f3, tag, z3);
+        setOptAnyProperty(name, f2, tag, z6);
     }
 
-    public final void setOptIntProperty(String name, Integer num, String tag, boolean z3) {
+    public final void setOptIntProperty(String name, Integer num, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptAnyProperty(name, num, tag, z3);
+        setOptAnyProperty(name, num, tag, z6);
     }
 
-    public final <T> void setOptListProperty(String name, List<? extends T> list, String tag, boolean z3) {
+    public final <T> void setOptListProperty(String name, List<? extends T> list, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptAnyProperty(name, list, tag, z3);
+        setOptAnyProperty(name, list, tag, z6);
     }
 
-    public final void setOptLongProperty(String name, Long l9, String tag, boolean z3) {
+    public final void setOptLongProperty(String name, Long l9, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptAnyProperty(name, l9, tag, z3);
+        setOptAnyProperty(name, l9, tag, z6);
     }
 
-    public final <T> void setOptMapModelProperty(String name, h hVar, String tag, boolean z3) {
+    public final <T> void setOptMapModelProperty(String name, h hVar, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptAnyProperty(name, hVar, tag, z3);
+        setOptAnyProperty(name, hVar, tag, z6);
     }
 
-    public final void setOptStringProperty(String name, String str, String tag, boolean z3) {
+    public final void setOptStringProperty(String name, String str, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptAnyProperty(name, str, tag, z3);
+        setOptAnyProperty(name, str, tag, z6);
     }
 
-    public final void setStringProperty(String name, String value, String tag, boolean z3) {
+    public final void setStringProperty(String name, String value, String tag, boolean z6) {
         kotlin.jvm.internal.h.e(name, "name");
         kotlin.jvm.internal.h.e(value, "value");
         kotlin.jvm.internal.h.e(tag, "tag");
-        setOptStringProperty(name, value, tag, z3);
+        setOptStringProperty(name, value, tag, z6);
     }
 
     public final JSONObject toJSON() {

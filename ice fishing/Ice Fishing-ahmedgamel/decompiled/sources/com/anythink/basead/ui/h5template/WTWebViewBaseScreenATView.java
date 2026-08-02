@@ -34,12 +34,12 @@ public class WTWebViewBaseScreenATView extends BaseScreenATView {
 
     @Override // com.anythink.basead.ui.BaseScreenATView
     public final void L() {
-        CloseImageView closeImageView = this.f9855Q;
+        CloseImageView closeImageView = this.f10641Q;
         if (closeImageView != null) {
             closeImageView.setVisibility(0);
-            this.f9855Q.setAlpha(0.2f);
-            this.f9855Q.animate().alpha(1.0f).setDuration(1000L).start();
-            this.f9855Q.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.h5template.WTWebViewBaseScreenATView.3
+            this.f10641Q.setAlpha(0.2f);
+            this.f10641Q.animate().alpha(1.0f).setDuration(1000L).start();
+            this.f10641Q.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.h5template.WTWebViewBaseScreenATView.3
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     WTWebViewBaseScreenATView.this.M();
@@ -105,8 +105,8 @@ public class WTWebViewBaseScreenATView extends BaseScreenATView {
         super.c(i);
     }
 
-    public WTWebViewBaseScreenATView(Context context, x xVar, w wVar, String str, int i, int i6) {
-        super(context, xVar, wVar, str, i, i6);
+    public WTWebViewBaseScreenATView(Context context, x xVar, w wVar, String str, int i, int i4) {
+        super(context, xVar, wVar, str, i, i4);
         this.aj = "WTWebViewBaseScreenATView";
         this.ai = 1;
     }
@@ -119,18 +119,18 @@ public class WTWebViewBaseScreenATView extends BaseScreenATView {
     @Override // com.anythink.basead.ui.BaseScreenATView
     public final void b() {
         super.b();
-        WTWebContainerView wTWebContainerView = new WTWebContainerView(getContext(), this.f9736g, this.f9735f, new WTWebContainerView.a() { // from class: com.anythink.basead.ui.h5template.WTWebViewBaseScreenATView.1
+        WTWebContainerView wTWebContainerView = new WTWebContainerView(getContext(), this.f10522g, this.f10521f, new WTWebContainerView.a() { // from class: com.anythink.basead.ui.h5template.WTWebViewBaseScreenATView.1
             @Override // com.anythink.basead.webtemplet.WTWebContainerView.a
             public final void a() {
             }
 
             @Override // com.anythink.basead.webtemplet.WTWebContainerView.a
             public final void b() {
-                if (((BaseScreenATView) WTWebViewBaseScreenATView.this).f9855Q != null) {
-                    ((BaseScreenATView) WTWebViewBaseScreenATView.this).f9855Q.setVisibility(8);
+                if (((BaseScreenATView) WTWebViewBaseScreenATView.this).f10641Q != null) {
+                    ((BaseScreenATView) WTWebViewBaseScreenATView.this).f10641Q.setVisibility(8);
                 }
                 WTWebViewBaseScreenATView.this.a(302);
-                if (3 != ((BaseScreenATView) WTWebViewBaseScreenATView.this).f9862a || e.a(((BaseATView) WTWebViewBaseScreenATView.this).f9736g, ((BaseATView) WTWebViewBaseScreenATView.this).f9735f)) {
+                if (3 != ((BaseScreenATView) WTWebViewBaseScreenATView.this).f10648a || e.a(((BaseATView) WTWebViewBaseScreenATView.this).f10522g, ((BaseATView) WTWebViewBaseScreenATView.this).f10521f)) {
                     return;
                 }
                 WTWebViewBaseScreenATView.this.ae();
@@ -138,40 +138,40 @@ public class WTWebViewBaseScreenATView extends BaseScreenATView {
 
             @Override // com.anythink.basead.webtemplet.WTWebContainerView.a
             public final void a(f fVar) {
-                WTWebViewBaseScreenATView.this.a(g.a(g.f6179k, g.af + fVar.c()));
+                WTWebViewBaseScreenATView.this.a(g.a(g.f6965k, g.af + fVar.c()));
                 WTWebViewBaseScreenATView.this.c(10);
             }
         });
         this.ah = wTWebContainerView;
-        a aVar = this.f9746r;
+        a aVar = this.f10532r;
         if (aVar != null) {
             aVar.a(wTWebContainerView);
-            this.f9746r.b(true);
+            this.f10532r.b(true);
         }
         Object obj = null;
         try {
-            if (d.a(this.f9736g)) {
-                WTWebView d2 = d.d(d.a((x) null, this.f9736g, 3));
-                if (d2 != null) {
-                    obj = d2.getJsCommunicationObject();
+            if (d.a(this.f10522g)) {
+                WTWebView d9 = d.d(d.a((x) null, this.f10522g, 3));
+                if (d9 != null) {
+                    obj = d9.getJsCommunicationObject();
                 }
             } else {
                 obj = new com.anythink.basead.webtemplet.adformat.intestitial.a();
             }
             if (obj != null && (obj instanceof com.anythink.basead.webtemplet.adformat.intestitial.a)) {
-                ((com.anythink.basead.webtemplet.adformat.intestitial.a) obj).a(this.f9746r);
+                ((com.anythink.basead.webtemplet.adformat.intestitial.a) obj).a(this.f10532r);
                 ((com.anythink.basead.webtemplet.adformat.intestitial.a) obj).a(new com.anythink.basead.webtemplet.adformat.d() { // from class: com.anythink.basead.ui.h5template.WTWebViewBaseScreenATView.2
                     @Override // com.anythink.basead.webtemplet.adformat.a
-                    public final void a(int i, int i6) {
-                        WTWebViewBaseScreenATView.this.a(i, i6);
+                    public final void a(int i, int i4) {
+                        WTWebViewBaseScreenATView.this.a(i, i4);
                     }
 
                     @Override // com.anythink.basead.webtemplet.adformat.a
                     public final void b(int i) {
                         if (i == 1) {
-                            WTWebViewBaseScreenATView.this.a(BaseATView.a.f9777N);
+                            WTWebViewBaseScreenATView.this.a(BaseATView.a.f10563N);
                         } else {
-                            WTWebViewBaseScreenATView.this.a(BaseATView.a.f9778O);
+                            WTWebViewBaseScreenATView.this.a(BaseATView.a.f10564O);
                         }
                     }
 
@@ -187,13 +187,13 @@ public class WTWebViewBaseScreenATView extends BaseScreenATView {
 
                     @Override // com.anythink.basead.webtemplet.adformat.a
                     public final void a(String str, String str2) {
-                        WTWebViewBaseScreenATView.this.a(g.a(g.f6179k, g.af + str + "," + str2));
+                        WTWebViewBaseScreenATView.this.a(g.a(g.f6965k, g.af + str + "," + str2));
                         WTWebViewBaseScreenATView.this.c(10);
                     }
 
                     @Override // com.anythink.basead.webtemplet.adformat.a
                     public final void b() {
-                        ((BaseATView) WTWebViewBaseScreenATView.this).f9746r.c(0);
+                        ((BaseATView) WTWebViewBaseScreenATView.this).f10532r.c(0);
                         WTWebViewBaseScreenATView.this.C();
                     }
 
@@ -207,28 +207,28 @@ public class WTWebViewBaseScreenATView extends BaseScreenATView {
         }
         if (obj != null && (obj instanceof com.anythink.basead.webtemplet.adformat.intestitial.a)) {
             this.ah.init(obj);
-            if (this.f9851M != null) {
+            if (this.f10637M != null) {
                 this.ah.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
-                this.f9851M.addView(this.ah, 1);
+                this.f10637M.addView(this.ah, 1);
                 return;
             }
             return;
         }
-        a(g.a(g.f6179k, "Adx template show fail without exception:empty jsCommunication"));
+        a(g.a(g.f6965k, "Adx template show fail without exception:empty jsCommunication"));
         c(10);
     }
 
     @Override // com.anythink.basead.ui.BaseScreenATView
     public final void a(List<Bitmap> list) {
         super.a(list);
-        this.f9746r.c(4);
+        this.f10532r.c(4);
     }
 
     @Override // com.anythink.basead.ui.BaseATView
     public final void a(int i) {
         super.a(i);
         if (this.ah != null) {
-            com.anythink.basead.ui.improveclick.a aVar = this.f9747s;
+            com.anythink.basead.ui.improveclick.a aVar = this.f10533s;
             this.ah.notifyInnerAdEvent(i, aVar != null ? aVar.b() : null);
         }
     }

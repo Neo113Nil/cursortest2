@@ -126,9 +126,9 @@ public class NativeAd {
             }
 
             @Override // com.anythink.core.common.d.o
-            public final void onDeeplinkCallback(boolean z3) {
+            public final void onDeeplinkCallback(boolean z6) {
                 NativeAd nativeAd = NativeAd.this;
-                nativeAd.handleDeeplinkCallback(nativeAd.mNativeView, z3);
+                nativeAd.handleDeeplinkCallback(nativeAd.mNativeView, z6);
             }
 
             @Override // com.anythink.core.common.d.o
@@ -183,7 +183,7 @@ public class NativeAd {
         }
     }
 
-    private void checkToReportRenderErrorAgent(boolean z3) {
+    private void checkToReportRenderErrorAgent(boolean z6) {
         n detail;
         String str;
         try {
@@ -206,7 +206,7 @@ public class NativeAd {
             } else if (this.mRecordedImpression) {
                 str2 = "";
             }
-            if (z3) {
+            if (z6) {
                 str2 = "3";
                 str = "0";
                 str4 = str;
@@ -364,7 +364,7 @@ public class NativeAd {
     }
 
     private void renderViewToWindow(View view) {
-        ab.b(this.mPlacementId, j.r.f12546s, j.r.f12523A, j.r.f12542o, "");
+        ab.b(this.mPlacementId, j.r.f13332s, j.r.f13309A, j.r.f13328o, "");
         ViewGroup customAdContainer = this.mBaseNativeAd.getCustomAdContainer();
         int hashCode = hashCode();
         if (view.getParent() != null) {
@@ -552,7 +552,7 @@ public class NativeAd {
             if (detail != null ? detail.aw() : false) {
                 return;
             } else {
-                ab.a(detail, j.r.f12532d, j.r.f12540m, "");
+                ab.a(detail, j.r.f13318d, j.r.f13326m, "");
             }
         }
         if (this.mAdCacheInfo != null && this.mBaseNativeAd != null && isNativeExpressByNativeAd()) {
@@ -571,7 +571,7 @@ public class NativeAd {
         });
     }
 
-    public synchronized void handleDeeplinkCallback(final ATNativeAdView aTNativeAdView, final boolean z3) {
+    public synchronized void handleDeeplinkCallback(final ATNativeAdView aTNativeAdView, final boolean z6) {
         if (this.mIsDestroyed) {
             return;
         }
@@ -584,7 +584,7 @@ public class NativeAd {
                 ATNativeEventExListener aTNativeEventExListener = (ATNativeEventExListener) NativeAd.this.mNativeEventListener;
                 ATNativeAdView aTNativeAdView2 = aTNativeAdView;
                 NativeAd nativeAd = NativeAd.this;
-                aTNativeEventExListener.onDeeplinkCallback(aTNativeAdView2, l.a(nativeAd.mBaseNativeAd, nativeAd.mAdCacheInfo.e()), z3);
+                aTNativeEventExListener.onDeeplinkCallback(aTNativeAdView2, l.a(nativeAd.mBaseNativeAd, nativeAd.mAdCacheInfo.e()), z6);
             }
         });
     }
@@ -621,14 +621,14 @@ public class NativeAd {
                             if (aVar != null) {
                                 n detail = aVar.getDetail();
                                 detail.a(NativeAd.this.mBaseNativeAd.getNetworkInfoMap());
-                                ab.a(detail, j.r.f12531c, j.r.f12540m, "");
+                                ab.a(detail, j.r.f13317c, j.r.f13326m, "");
                                 NativeAd.this.fillShowTrackingInfo(detail);
                                 NativeAd.this.fillRenderAreaToTrackingInfo(detail, aTNativeAdView);
                                 com.anythink.core.common.u.c.a(NativeAd.this.mContext.getApplicationContext()).a(4, detail, NativeAd.this.mAdCacheInfo.e().getUnitGroupInfo());
                                 NativeAd nativeAd = NativeAd.this;
                                 final l a9 = l.a(nativeAd.mBaseNativeAd, nativeAd.mAdCacheInfo.e());
                                 if (a9.getNetworkFirmId() == -1) {
-                                    h.a(j.n.f12505a, NativeAd.this.mAdCacheInfo.e(), NativeAd.this.mBaseNativeAd);
+                                    h.a(j.n.f13291a, NativeAd.this.mAdCacheInfo.e(), NativeAd.this.mBaseNativeAd);
                                 }
                                 t.b().b(new Runnable() { // from class: com.anythink.nativead.api.NativeAd.13.1
                                     @Override // java.lang.Runnable
@@ -660,7 +660,7 @@ public class NativeAd {
             com.anythink.nativead.unitgroup.a aVar = this.mBaseNativeAd;
             if (aVar != null) {
                 n detail = aVar.getDetail();
-                detail.f14028w = 100;
+                detail.f14814w = 100;
                 com.anythink.core.common.u.c.a(this.mContext.getApplicationContext()).a(9, detail);
             }
             t.b().b(new Runnable() { // from class: com.anythink.nativead.api.NativeAd.5
@@ -698,7 +698,7 @@ public class NativeAd {
             com.anythink.nativead.unitgroup.a aVar = this.mBaseNativeAd;
             if (aVar != null) {
                 n detail = aVar.getDetail();
-                detail.f14028w = 0;
+                detail.f14814w = 0;
                 com.anythink.core.common.u.c.a(this.mContext.getApplicationContext()).a(8, detail);
             }
             t.b().b(new Runnable() { // from class: com.anythink.nativead.api.NativeAd.3
@@ -911,8 +911,8 @@ public class NativeAd {
         this.mConfirmListener = downloadConfirmListener;
     }
 
-    public void setManualImpressionTrack(boolean z3) {
-        this.isManualImpressionTrack = z3;
+    public void setManualImpressionTrack(boolean z6) {
+        this.isManualImpressionTrack = z6;
     }
 
     public void setNativeEventListener(ATNativeEventListener aTNativeEventListener) {
@@ -922,19 +922,19 @@ public class NativeAd {
         this.mNativeEventListener = aTNativeEventListener;
     }
 
-    public void setVideoMute(boolean z3) {
+    public void setVideoMute(boolean z6) {
         com.anythink.nativead.unitgroup.a aVar;
         if (this.mIsDestroyed || (aVar = this.mBaseNativeAd) == null) {
             return;
         }
-        aVar.setVideoMute(z3);
+        aVar.setVideoMute(z6);
     }
 
-    private boolean isSupportRenderToInnerTemplate(boolean z3) {
+    private boolean isSupportRenderToInnerTemplate(boolean z6) {
         com.anythink.core.common.l.d.b serverExtraInfo = this.mAdCacheInfo.e() != null ? this.mAdCacheInfo.e().getServerExtraInfo() : null;
         if (serverExtraInfo == null || serverExtraInfo.p() <= 0) {
             return false;
         }
-        return !z3 || serverExtraInfo.p() > 1;
+        return !z6 || serverExtraInfo.p() > 1;
     }
 }

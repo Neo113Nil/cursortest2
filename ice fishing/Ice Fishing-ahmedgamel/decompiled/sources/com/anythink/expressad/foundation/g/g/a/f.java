@@ -8,17 +8,17 @@ import java.util.Map;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    private Map<String, String> f19556a = new HashMap();
+    private Map<String, String> f20343a = new HashMap();
 
     private Object b(String str) {
-        return this.f19556a.get(str);
+        return this.f20343a.get(str);
     }
 
     private void c(String str) {
-        if (this.f19556a == null || TextUtils.isEmpty(str)) {
+        if (this.f20343a == null || TextUtils.isEmpty(str)) {
             return;
         }
-        this.f19556a.remove(str);
+        this.f20343a.remove(str);
     }
 
     public final void a(String str, Object obj) {
@@ -27,29 +27,29 @@ public final class f {
         }
         try {
             if (!(obj instanceof String)) {
-                this.f19556a.put(str, String.valueOf(obj));
+                this.f20343a.put(str, String.valueOf(obj));
             } else {
                 if (TextUtils.isEmpty((String) obj)) {
                     return;
                 }
-                this.f19556a.put(str, (String) obj);
+                this.f20343a.put(str, (String) obj);
             }
         } catch (Exception unused) {
         }
     }
 
     private boolean a(String str) {
-        return this.f19556a.containsKey(str);
+        return this.f20343a.containsKey(str);
     }
 
     public final Map<String, String> a() {
-        return this.f19556a;
+        return this.f20343a;
     }
 
     private void a(f fVar) {
         Map<String, String> map;
         Map<String, String> map2;
-        if (fVar == null || (map = fVar.f19556a) == null || (map2 = this.f19556a) == null) {
+        if (fVar == null || (map = fVar.f20343a) == null || (map2 = this.f20343a) == null) {
             return;
         }
         map2.putAll(map);
@@ -59,6 +59,6 @@ public final class f {
         if (map == null || map.size() <= 0) {
             return;
         }
-        this.f19556a.putAll(map);
+        this.f20343a.putAll(map);
     }
 }

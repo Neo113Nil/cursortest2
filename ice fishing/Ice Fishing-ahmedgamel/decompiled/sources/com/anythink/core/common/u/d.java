@@ -24,41 +24,41 @@ import org.json.JSONObject;
 public class d {
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile d f16461b;
+    private static volatile d f17248b;
 
     /* renamed from: h, reason: collision with root package name */
-    private Context f16468h;
+    private Context f17255h;
     private File i;
 
     /* renamed from: j, reason: collision with root package name */
-    private AtomicInteger f16469j;
+    private AtomicInteger f17256j;
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f16462a = "Agent";
+    private final String f17249a = "Agent";
 
     /* renamed from: c, reason: collision with root package name */
-    private int f16463c = 5;
+    private int f17250c = 5;
 
     /* renamed from: d, reason: collision with root package name */
-    private int f16464d = 10;
+    private int f17251d = 10;
 
     /* renamed from: e, reason: collision with root package name */
-    private long f16465e = 1800000;
+    private long f17252e = 1800000;
 
     /* renamed from: f, reason: collision with root package name */
-    private String f16466f = "";
+    private String f17253f = "";
 
     /* renamed from: g, reason: collision with root package name */
-    private String f16467g = "";
+    private String f17254g = "";
 
     /* renamed from: k, reason: collision with root package name */
-    private boolean f16470k = false;
+    private boolean f17257k = false;
 
     /* renamed from: l, reason: collision with root package name */
-    private String f16471l = "";
+    private String f17258l = "";
 
     /* renamed from: m, reason: collision with root package name */
-    private q f16472m = new q() { // from class: com.anythink.core.common.u.d.1
+    private q f17259m = new q() { // from class: com.anythink.core.common.u.d.1
         @Override // com.anythink.core.common.m.q
         public final void onLoadCanceled(int i) {
             d.a(d.this);
@@ -74,7 +74,7 @@ public class d {
             try {
                 d.this.a(((Integer) obj).intValue());
                 d.a(d.this);
-                af.a(d.this.f16468h, u.b.f12847a, "LOG_SEND_TIME", System.currentTimeMillis());
+                af.a(d.this.f17255h, u.b.f13633a, "LOG_SEND_TIME", System.currentTimeMillis());
             } catch (Throwable unused) {
                 d.a(d.this);
             }
@@ -86,13 +86,13 @@ public class d {
     };
 
     /* renamed from: n, reason: collision with root package name */
-    private d.a f16473n = new d.a() { // from class: com.anythink.core.common.u.d.2
+    private d.a f17260n = new d.a() { // from class: com.anythink.core.common.u.d.2
         @Override // com.anythink.core.common.m.d.d.a
         public final void a(Object obj) {
             if (obj instanceof com.anythink.core.common.m.d.a) {
                 d.this.a(((com.anythink.core.common.m.d.a) obj).b());
                 d.a(d.this);
-                af.a(d.this.f16468h, u.b.f12847a, "LOG_SEND_TIME", System.currentTimeMillis());
+                af.a(d.this.f17255h, u.b.f13633a, "LOG_SEND_TIME", System.currentTimeMillis());
             }
         }
 
@@ -103,13 +103,13 @@ public class d {
     };
 
     /* renamed from: o, reason: collision with root package name */
-    private Object f16474o = new Object();
+    private Object f17261o = new Object();
 
     private d() {
     }
 
     public static /* synthetic */ boolean a(d dVar) {
-        dVar.f16470k = false;
+        dVar.f17257k = false;
         return false;
     }
 
@@ -119,9 +119,9 @@ public class d {
         String readLine;
         JSONObject jSONObject;
         int i;
-        boolean z3;
+        boolean z6;
         long parseLong;
-        this.f16470k = true;
+        this.f17257k = true;
         BufferedReader bufferedReader2 = null;
         try {
             try {
@@ -137,14 +137,14 @@ public class d {
             try {
                 ArrayList arrayList = new ArrayList();
                 ArrayList arrayList2 = new ArrayList();
-                int i6 = 0;
-                while (i6 < this.f16464d && (readLine = bufferedReader.readLine()) != null) {
+                int i4 = 0;
+                while (i4 < this.f17251d && (readLine = bufferedReader.readLine()) != null) {
                     try {
                         jSONObject = new JSONObject(readLine);
                         try {
-                            i = jSONObject.optInt(com.anythink.core.common.h.u.f14049a, 0);
+                            i = jSONObject.optInt(com.anythink.core.common.h.u.f14835a, 0);
                             try {
-                                parseLong = Long.parseLong(jSONObject.optString(com.anythink.expressad.foundation.d.d.f18596u));
+                                parseLong = Long.parseLong(jSONObject.optString(com.anythink.expressad.foundation.d.d.f19383u));
                             } catch (Throwable unused4) {
                             }
                         } catch (Throwable unused5) {
@@ -152,25 +152,25 @@ public class d {
                         }
                     } catch (Throwable unused6) {
                     }
-                    if (parseLong > 0 && System.currentTimeMillis() - parseLong > com.anythink.core.d.h.f17290f) {
-                        z3 = true;
-                        if (i <= 5 || z3) {
+                    if (parseLong > 0 && System.currentTimeMillis() - parseLong > com.anythink.core.d.h.f18077f) {
+                        z6 = true;
+                        if (i <= 5 || z6) {
                             arrayList2.add(jSONObject.toString());
                         } else {
-                            jSONObject.put(com.anythink.core.common.h.u.f14049a, i + 1);
+                            jSONObject.put(com.anythink.core.common.h.u.f14835a, i + 1);
                             arrayList.add(jSONObject.toString());
                         }
-                        i6++;
+                        i4++;
                     }
-                    z3 = false;
+                    z6 = false;
                     if (i <= 5) {
                     }
                     arrayList2.add(jSONObject.toString());
-                    i6++;
+                    i4++;
                 }
                 bufferedReader.close();
-                if (i6 == 0) {
-                    this.f16470k = false;
+                if (i4 == 0) {
+                    this.f17257k = false;
                     try {
                         bufferedReader.close();
                         return;
@@ -191,13 +191,13 @@ public class d {
                 a(arrayList);
                 com.anythink.core.d.b b9 = com.anythink.core.d.d.a(t.b().g()).b(t.b().p());
                 if (b9 == null) {
-                    new com.anythink.core.common.m.d(this.f16468h, 0, arrayList).a(0, this.f16472m);
+                    new com.anythink.core.common.m.d(this.f17255h, 0, arrayList).a(0, this.f17259m);
                 } else if (b9.G() != 1) {
-                    new com.anythink.core.common.m.d(this.f16468h, b9.G(), arrayList).a(0, this.f16472m);
+                    new com.anythink.core.common.m.d(this.f17255h, b9.G(), arrayList).a(0, this.f17259m);
                 } else {
                     com.anythink.core.common.m.d.a aVar = new com.anythink.core.common.m.d.a(arrayList);
                     aVar.a(1, b9.F());
-                    aVar.a(this.f16473n);
+                    aVar.a(this.f17260n);
                 }
                 try {
                     bufferedReader.close();
@@ -205,7 +205,7 @@ public class d {
                 }
             } catch (OutOfMemoryError | StackOverflowError unused10) {
                 bufferedReader2 = bufferedReader;
-                this.f16470k = false;
+                this.f17257k = false;
                 System.gc();
                 if (bufferedReader2 != null) {
                     try {
@@ -216,7 +216,7 @@ public class d {
             }
         } catch (Error unused12) {
             bufferedReader2 = bufferedReader;
-            this.f16470k = false;
+            this.f17257k = false;
             if (bufferedReader2 != null) {
                 try {
                     bufferedReader2.close();
@@ -225,7 +225,7 @@ public class d {
             }
         } catch (Exception unused14) {
             bufferedReader2 = bufferedReader;
-            this.f16470k = false;
+            this.f17257k = false;
             if (bufferedReader2 != null) {
                 try {
                     bufferedReader2.close();
@@ -246,15 +246,15 @@ public class d {
     }
 
     public final void b() {
-        if (this.f16468h != null && t.b().a() && com.anythink.core.common.v.q.a(this.f16468h)) {
+        if (this.f17255h != null && t.b().a() && com.anythink.core.common.v.q.a(this.f17255h)) {
             com.anythink.core.common.v.b.b.a().b(new Runnable() { // from class: com.anythink.core.common.u.d.3
                 @Override // java.lang.Runnable
                 public final void run() {
                     try {
-                        if (d.this.f16468h == null) {
+                        if (d.this.f17255h == null) {
                             return;
                         }
-                        if ((System.currentTimeMillis() - af.b(d.this.f16468h, u.b.f12847a, "LOG_SEND_TIME", 0L) > d.this.f16465e || (d.this.f16469j != null && d.this.f16469j.get() >= d.this.f16463c)) && !d.this.f16470k && d.this.f16469j != null && d.this.f16469j.get() > 0) {
+                        if ((System.currentTimeMillis() - af.b(d.this.f17255h, u.b.f13633a, "LOG_SEND_TIME", 0L) > d.this.f17252e || (d.this.f17256j != null && d.this.f17256j.get() >= d.this.f17250c)) && !d.this.f17257k && d.this.f17256j != null && d.this.f17256j.get() > 0) {
                             d.this.c();
                         }
                     } catch (Throwable unused) {
@@ -265,18 +265,18 @@ public class d {
     }
 
     public static d a() {
-        if (f16461b == null) {
+        if (f17248b == null) {
             synchronized (d.class) {
                 try {
-                    if (f16461b == null) {
-                        f16461b = new d();
+                    if (f17248b == null) {
+                        f17248b = new d();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16461b;
+        return f17248b;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:33:0x00ef A[Catch: all -> 0x0097, Error -> 0x0139, OutOfMemoryError | StackOverflowError -> 0x0143, OutOfMemoryError | StackOverflowError -> 0x0143, Exception -> 0x015c, TryCatch #0 {OutOfMemoryError | StackOverflowError -> 0x0143, blocks: (B:12:0x001c, B:14:0x007a, B:16:0x008d, B:17:0x009a, B:19:0x00a2, B:29:0x00d6, B:29:0x00d6, B:31:0x00eb, B:31:0x00eb, B:33:0x00ef, B:33:0x00ef, B:34:0x00f6, B:34:0x00f6, B:36:0x0108, B:36:0x0108, B:37:0x010f, B:37:0x010f, B:39:0x011f, B:39:0x011f, B:40:0x0126, B:40:0x0126, B:48:0x0124, B:48:0x0124, B:49:0x010d, B:49:0x010d, B:59:0x00e2, B:59:0x00e2, B:60:0x00e5, B:60:0x00e5, B:54:0x00e8, B:54:0x00e8), top: B:11:0x001c, outer: #4 }] */
@@ -292,25 +292,25 @@ public class d {
         AtomicInteger atomicInteger;
         LineNumberReader lineNumberReader;
         Throwable th;
-        synchronized (this.f16474o) {
+        synchronized (this.f17261o) {
             try {
-                if (this.f16468h == null && context != null) {
-                    this.f16471l = t.b().p();
-                    this.f16468h = context.getApplicationContext();
+                if (this.f17255h == null && context != null) {
+                    this.f17258l = t.b().p();
+                    this.f17255h = context.getApplicationContext();
                     try {
                         try {
                             try {
                                 StringBuilder sb = new StringBuilder();
-                                sb.append(this.f16468h.getApplicationContext().getFilesDir().getAbsolutePath());
+                                sb.append(this.f17255h.getApplicationContext().getFilesDir().getAbsolutePath());
                                 String str = File.separator;
                                 sb.append(str);
                                 sb.append("log");
                                 sb.append(str);
                                 sb.append("anythink_agent_log");
-                                this.f16466f = sb.toString();
-                                this.f16467g = this.f16468h.getApplicationContext().getFilesDir().getAbsolutePath() + str + "log" + str + "anythink_temp_log";
+                                this.f17253f = sb.toString();
+                                this.f17254g = this.f17255h.getApplicationContext().getFilesDir().getAbsolutePath() + str + "log" + str + "anythink_temp_log";
                                 if (this.i == null) {
-                                    File file = new File(this.f16466f);
+                                    File file = new File(this.f17253f);
                                     this.i = file;
                                     if (!file.getParentFile().exists()) {
                                         this.i.getParentFile().mkdirs();
@@ -328,27 +328,27 @@ public class d {
                                     try {
                                         lineNumberReader.skip(Long.MAX_VALUE);
                                         int lineNumber = lineNumberReader.getLineNumber();
-                                        if (this.f16469j == null) {
-                                            this.f16469j = new AtomicInteger(lineNumber);
+                                        if (this.f17256j == null) {
+                                            this.f17256j = new AtomicInteger(lineNumber);
                                         }
                                         lineNumberReader.close();
-                                        this.f16469j.get();
+                                        this.f17256j.get();
                                         lineNumberReader.close();
                                     } catch (Exception unused2) {
                                         lineNumberReader2 = lineNumberReader;
                                         if (lineNumberReader2 != null) {
                                             lineNumberReader2.close();
                                         }
-                                        if (this.f16469j == null) {
+                                        if (this.f17256j == null) {
                                         }
-                                        com.anythink.core.d.b b9 = com.anythink.core.d.d.a(this.f16468h).b(this.f16471l);
+                                        com.anythink.core.d.b b9 = com.anythink.core.d.d.a(this.f17255h).b(this.f17258l);
                                         if (b9.as() == 0) {
                                         }
-                                        this.f16463c = r2;
-                                        this.f16464d = r2 * 2;
-                                        this.f16465e = b9.au() == 0 ? b9.au() : this.f16465e;
+                                        this.f17250c = r2;
+                                        this.f17251d = r2 * 2;
+                                        this.f17252e = b9.au() == 0 ? b9.au() : this.f17252e;
                                         b();
-                                        if (this.f16469j == null) {
+                                        if (this.f17256j == null) {
                                         }
                                     } catch (Throwable th2) {
                                         th = th2;
@@ -367,37 +367,37 @@ public class d {
                                     lineNumberReader = null;
                                     th = th3;
                                 }
-                                if (this.f16469j == null) {
-                                    this.f16469j = new AtomicInteger(0);
+                                if (this.f17256j == null) {
+                                    this.f17256j = new AtomicInteger(0);
                                 }
-                                com.anythink.core.d.b b92 = com.anythink.core.d.d.a(this.f16468h).b(this.f16471l);
-                                int as = b92.as() == 0 ? b92.as() : this.f16463c;
-                                this.f16463c = as;
-                                this.f16464d = as * 2;
-                                this.f16465e = b92.au() == 0 ? b92.au() : this.f16465e;
+                                com.anythink.core.d.b b92 = com.anythink.core.d.d.a(this.f17255h).b(this.f17258l);
+                                int as = b92.as() == 0 ? b92.as() : this.f17250c;
+                                this.f17250c = as;
+                                this.f17251d = as * 2;
+                                this.f17252e = b92.au() == 0 ? b92.au() : this.f17252e;
                                 b();
                             } catch (OutOfMemoryError | StackOverflowError unused5) {
                                 System.gc();
-                                if (this.f16469j == null) {
+                                if (this.f17256j == null) {
                                     atomicInteger = new AtomicInteger(0);
                                 }
                             }
                         } catch (Error unused6) {
-                            if (this.f16469j == null) {
+                            if (this.f17256j == null) {
                                 atomicInteger = new AtomicInteger(0);
                             }
                         } catch (Exception unused7) {
-                            if (this.f16469j == null) {
+                            if (this.f17256j == null) {
                                 atomicInteger = new AtomicInteger(0);
                             }
                         }
-                        if (this.f16469j == null) {
+                        if (this.f17256j == null) {
                             atomicInteger = new AtomicInteger(0);
-                            this.f16469j = atomicInteger;
+                            this.f17256j = atomicInteger;
                         }
                     } catch (Throwable th4) {
-                        if (this.f16469j == null) {
-                            this.f16469j = new AtomicInteger(0);
+                        if (this.f17256j == null) {
+                            this.f17256j = new AtomicInteger(0);
                         }
                         throw th4;
                     }
@@ -420,20 +420,20 @@ public class d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final synchronized void a(com.anythink.core.common.h.u uVar, boolean z3) {
+    public final synchronized void a(com.anythink.core.common.h.u uVar, boolean z6) {
         com.anythink.core.d.b b9;
         FileWriter fileWriter;
         try {
             if (this.i != null) {
-                if (this.f16469j == null) {
+                if (this.f17256j == null) {
                 }
-                if (this.i != null && this.f16469j != null) {
-                    b9 = com.anythink.core.d.d.a(this.f16468h).b(this.f16471l);
+                if (this.i != null && this.f17256j != null) {
+                    b9 = com.anythink.core.d.d.a(this.f17255h).b(this.f17258l);
                     if (b9 != null) {
-                        int as = b9.as() != 0 ? b9.as() : this.f16463c;
-                        this.f16463c = as;
-                        this.f16464d = as * 2;
-                        this.f16465e = b9.au();
+                        int as = b9.as() != 0 ? b9.as() : this.f17250c;
+                        this.f17250c = as;
+                        this.f17251d = as * 2;
+                        this.f17252e = b9.au();
                     }
                     FileWriter fileWriter2 = null;
                     try {
@@ -455,7 +455,7 @@ public class d {
                         fileWriter.append((CharSequence) "\n");
                         fileWriter.flush();
                         fileWriter.close();
-                        this.f16469j.incrementAndGet();
+                        this.f17256j.incrementAndGet();
                         fileWriter.close();
                     } catch (OutOfMemoryError | StackOverflowError unused5) {
                         fileWriter2 = fileWriter;
@@ -467,7 +467,7 @@ public class d {
                         if (fileWriter2 != null) {
                             fileWriter2.close();
                         }
-                        a(z3);
+                        a(z6);
                     } catch (Throwable th2) {
                         th = th2;
                         fileWriter2 = fileWriter;
@@ -479,12 +479,12 @@ public class d {
                         }
                         throw th;
                     }
-                    a(z3);
+                    a(z6);
                 }
             }
             a(t.b().g());
             if (this.i != null) {
-                b9 = com.anythink.core.d.d.a(this.f16468h).b(this.f16471l);
+                b9 = com.anythink.core.d.d.a(this.f17255h).b(this.f17258l);
                 if (b9 != null) {
                 }
                 FileWriter fileWriter22 = null;
@@ -494,48 +494,48 @@ public class d {
                 fileWriter.append((CharSequence) "\n");
                 fileWriter.flush();
                 fileWriter.close();
-                this.f16469j.incrementAndGet();
+                this.f17256j.incrementAndGet();
                 fileWriter.close();
-                a(z3);
+                a(z6);
             }
         } finally {
         }
     }
 
-    private synchronized void a(boolean z3) {
+    private synchronized void a(boolean z6) {
         String readLine;
         AtomicInteger atomicInteger;
         try {
-            if (this.f16468h == null) {
+            if (this.f17255h == null) {
                 return;
             }
             if (!t.b().a()) {
                 return;
             }
-            if (this.f16470k || (!z3 && ((atomicInteger = this.f16469j) == null || atomicInteger.get() < this.f16463c))) {
+            if (this.f17257k || (!z6 && ((atomicInteger = this.f17256j) == null || atomicInteger.get() < this.f17250c))) {
                 return;
             }
-            this.f16470k = true;
+            this.f17257k = true;
             BufferedReader bufferedReader = null;
             try {
                 try {
                     BufferedReader bufferedReader2 = new BufferedReader(new FileReader(this.i));
                     try {
                         ArrayList arrayList = new ArrayList();
-                        for (int i = 0; i < this.f16464d && (readLine = bufferedReader2.readLine()) != null; i++) {
+                        for (int i = 0; i < this.f17251d && (readLine = bufferedReader2.readLine()) != null; i++) {
                             arrayList.add(readLine);
                         }
                         com.anythink.core.d.b b9 = com.anythink.core.d.d.a(t.b().g()).b(t.b().p());
                         if (b9 != null) {
                             if (b9.G() != 1) {
-                                new com.anythink.core.common.m.d(this.f16468h, b9.G(), arrayList).a(0, this.f16472m);
+                                new com.anythink.core.common.m.d(this.f17255h, b9.G(), arrayList).a(0, this.f17259m);
                             } else {
                                 com.anythink.core.common.m.d.a aVar = new com.anythink.core.common.m.d.a(arrayList);
                                 aVar.a(1, b9.F());
-                                aVar.a(this.f16473n);
+                                aVar.a(this.f17260n);
                             }
                         } else {
-                            new com.anythink.core.common.m.d(this.f16468h, 0, arrayList).a(0, this.f16472m);
+                            new com.anythink.core.common.m.d(this.f17255h, 0, arrayList).a(0, this.f17259m);
                         }
                         try {
                             bufferedReader2.close();
@@ -543,7 +543,7 @@ public class d {
                         }
                     } catch (Exception unused2) {
                         bufferedReader = bufferedReader2;
-                        this.f16470k = false;
+                        this.f17257k = false;
                         if (bufferedReader != null) {
                             try {
                                 bufferedReader.close();
@@ -552,7 +552,7 @@ public class d {
                         }
                     } catch (OutOfMemoryError | StackOverflowError unused4) {
                         bufferedReader = bufferedReader2;
-                        this.f16470k = false;
+                        this.f17257k = false;
                         System.gc();
                         if (bufferedReader != null) {
                             try {
@@ -562,7 +562,7 @@ public class d {
                         }
                     } catch (Throwable unused6) {
                         bufferedReader = bufferedReader2;
-                        this.f16470k = false;
+                        this.f17257k = false;
                         if (bufferedReader != null) {
                             try {
                                 bufferedReader.close();
@@ -591,22 +591,22 @@ public class d {
     public synchronized void a(int i) {
         BufferedReader bufferedReader = null;
         try {
-            File file = new File(this.f16467g);
+            File file = new File(this.f17254g);
             if (!file.exists()) {
                 file.createNewFile();
             }
             BufferedReader bufferedReader2 = new BufferedReader(new FileReader(this.i));
             try {
                 FileWriter fileWriter = new FileWriter(file);
+                int i4 = 0;
                 int i6 = 0;
-                int i9 = 0;
                 while (true) {
                     String readLine = bufferedReader2.readLine();
                     if (readLine == null) {
                         break;
                     }
-                    i9++;
-                    if (i9 > i) {
+                    i6++;
+                    if (i6 > i) {
                         fileWriter.append((CharSequence) readLine);
                         fileWriter.append((CharSequence) "\n");
                     }
@@ -614,11 +614,11 @@ public class d {
                 fileWriter.flush();
                 fileWriter.close();
                 bufferedReader2.close();
-                AtomicInteger atomicInteger = this.f16469j;
+                AtomicInteger atomicInteger = this.f17256j;
                 if (atomicInteger.get() - i >= 0) {
-                    i6 = this.f16469j.get() - i;
+                    i4 = this.f17256j.get() - i;
                 }
-                atomicInteger.set(i6);
+                atomicInteger.set(i4);
                 this.i.delete();
                 file.renameTo(this.i);
                 try {
@@ -683,7 +683,7 @@ public class d {
             list.size();
             BufferedReader bufferedReader = null;
             try {
-                File file = new File(this.f16467g);
+                File file = new File(this.f17254g);
                 if (file.exists()) {
                     file.delete();
                 }

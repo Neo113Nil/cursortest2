@@ -1,23 +1,23 @@
 package com.facebook.ads.internal.bridge.gms;
 
 import android.content.Context;
-import o2.C4783a;
-import o2.C4784b;
+import q2.C4869a;
+import q2.C4870b;
 
 /* loaded from: classes.dex */
 public class AdvertisingId {
     private final String mId;
     private final boolean mLimitAdTracking;
 
-    public AdvertisingId(String str, boolean z3) {
+    public AdvertisingId(String str, boolean z6) {
         this.mId = str;
-        this.mLimitAdTracking = z3;
+        this.mLimitAdTracking = z6;
     }
 
     public static AdvertisingId getAdvertisingIdInfoDirectly(Context context) {
         try {
-            C4783a a9 = C4784b.a(context);
-            return new AdvertisingId(a9.f39556a, a9.f39557b);
+            C4869a a9 = C4870b.a(context);
+            return new AdvertisingId(a9.f40039a, a9.f40040b);
         } catch (Throwable unused) {
             return null;
         }

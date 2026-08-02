@@ -6,112 +6,112 @@ import org.xmlpull.v1.XmlPullParser;
 public final class ak extends ay {
 
     /* renamed from: a, reason: collision with root package name */
-    private String f9286a;
+    private String f10072a;
 
     /* renamed from: b, reason: collision with root package name */
-    private String f9287b;
+    private String f10073b;
 
     /* renamed from: c, reason: collision with root package name */
-    private String f9288c;
+    private String f10074c;
 
     /* renamed from: d, reason: collision with root package name */
-    private String f9289d;
+    private String f10075d;
 
     /* renamed from: e, reason: collision with root package name */
-    private String f9290e;
+    private String f10076e;
 
     /* renamed from: f, reason: collision with root package name */
-    private String f9291f;
+    private String f10077f;
 
     /* renamed from: g, reason: collision with root package name */
-    private String f9292g;
+    private String f10078g;
 
     /* renamed from: h, reason: collision with root package name */
-    private String f9293h;
+    private String f10079h;
     private String i;
 
     /* renamed from: j, reason: collision with root package name */
-    private String f9294j;
+    private String f10080j;
 
     /* renamed from: k, reason: collision with root package name */
-    private String f9295k;
+    private String f10081k;
 
     /* renamed from: l, reason: collision with root package name */
-    private String f9296l;
+    private String f10082l;
 
     /* renamed from: m, reason: collision with root package name */
-    private String f9297m;
+    private String f10083m;
 
     /* renamed from: n, reason: collision with root package name */
-    private String f9298n;
+    private String f10084n;
 
     public ak(XmlPullParser xmlPullParser) {
-        this.f9286a = xmlPullParser.getAttributeValue(null, "id");
-        this.f9288c = xmlPullParser.getAttributeValue(null, "delivery");
-        this.f9289d = xmlPullParser.getAttributeValue(null, "type");
-        this.f9290e = xmlPullParser.getAttributeValue(null, "bitrate");
-        this.f9291f = xmlPullParser.getAttributeValue(null, "minBitrate");
-        this.f9292g = xmlPullParser.getAttributeValue(null, "maxBitrate");
-        this.f9293h = xmlPullParser.getAttributeValue(null, "width");
+        this.f10072a = xmlPullParser.getAttributeValue(null, "id");
+        this.f10074c = xmlPullParser.getAttributeValue(null, "delivery");
+        this.f10075d = xmlPullParser.getAttributeValue(null, "type");
+        this.f10076e = xmlPullParser.getAttributeValue(null, "bitrate");
+        this.f10077f = xmlPullParser.getAttributeValue(null, "minBitrate");
+        this.f10078g = xmlPullParser.getAttributeValue(null, "maxBitrate");
+        this.f10079h = xmlPullParser.getAttributeValue(null, "width");
         this.i = xmlPullParser.getAttributeValue(null, "height");
-        this.f9294j = xmlPullParser.getAttributeValue(null, "xPosition");
-        this.f9295k = xmlPullParser.getAttributeValue(null, "yPosition");
-        this.f9296l = xmlPullParser.getAttributeValue(null, "duration");
-        this.f9297m = xmlPullParser.getAttributeValue(null, "offset");
-        this.f9298n = xmlPullParser.getAttributeValue(null, "apiFramework");
-        this.f9287b = ay.a(xmlPullParser);
+        this.f10080j = xmlPullParser.getAttributeValue(null, "xPosition");
+        this.f10081k = xmlPullParser.getAttributeValue(null, "yPosition");
+        this.f10082l = xmlPullParser.getAttributeValue(null, "duration");
+        this.f10083m = xmlPullParser.getAttributeValue(null, "offset");
+        this.f10084n = xmlPullParser.getAttributeValue(null, "apiFramework");
+        this.f10073b = ay.a(xmlPullParser);
     }
 
     private String e() {
-        return this.f9286a;
+        return this.f10072a;
     }
 
     private String f() {
-        return this.f9288c;
+        return this.f10074c;
     }
 
     private String g() {
-        return this.f9290e;
+        return this.f10076e;
     }
 
     private String h() {
-        return this.f9291f;
+        return this.f10077f;
     }
 
     private String i() {
-        return this.f9292g;
+        return this.f10078g;
     }
 
     private String j() {
-        return this.f9294j;
+        return this.f10080j;
     }
 
     private String k() {
-        return this.f9295k;
+        return this.f10081k;
     }
 
     private String l() {
-        return this.f9296l;
+        return this.f10082l;
     }
 
     private String m() {
-        return this.f9297m;
+        return this.f10083m;
     }
 
     private String n() {
-        return this.f9298n;
+        return this.f10084n;
     }
 
     public final String a() {
-        return this.f9287b;
+        return this.f10073b;
     }
 
     public final String b() {
-        return this.f9289d;
+        return this.f10075d;
     }
 
     public final String c() {
-        return this.f9293h;
+        return this.f10079h;
     }
 
     public final String d() {

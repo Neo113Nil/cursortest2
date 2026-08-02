@@ -72,12 +72,12 @@ public abstract class a extends BaseAd {
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
-    public View getShakeView(int i, int i6, ATShakeViewListener aTShakeViewListener) {
+    public View getShakeView(int i, int i4, ATShakeViewListener aTShakeViewListener) {
         return null;
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
-    public View getSlideView(int i, int i6, int i9, ATShakeViewListener aTShakeViewListener) {
+    public View getSlideView(int i, int i4, int i6, ATShakeViewListener aTShakeViewListener) {
         return null;
     }
 
@@ -134,10 +134,10 @@ public abstract class a extends BaseAd {
     public final void notifyCountDown(int i) {
     }
 
-    public final void notifyDeeplinkCallback(boolean z3) {
+    public final void notifyDeeplinkCallback(boolean z6) {
         o oVar = this.mNativeEventListener;
         if (oVar != null) {
-            oVar.onDeeplinkCallback(z3);
+            oVar.onDeeplinkCallback(z6);
         }
     }
 

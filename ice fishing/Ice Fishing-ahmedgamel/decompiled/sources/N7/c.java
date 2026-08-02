@@ -4,7 +4,7 @@ package N7;
 public final class c extends a {
 
     /* renamed from: w, reason: collision with root package name */
-    public static final c f2024w = new c(1, 0, 1);
+    public static final c f2112w = new c(1, 0, 1);
 
     @Override // N7.a
     public final boolean equals(Object obj) {
@@ -15,8 +15,8 @@ public final class c extends a {
             return true;
         }
         c cVar = (c) obj;
-        if (this.f2017n == cVar.f2017n) {
-            return this.f2018u == cVar.f2018u;
+        if (this.f2105n == cVar.f2105n) {
+            return this.f2106u == cVar.f2106u;
         }
         return false;
     }
@@ -26,16 +26,16 @@ public final class c extends a {
         if (isEmpty()) {
             return -1;
         }
-        return (this.f2017n * 31) + this.f2018u;
+        return (this.f2105n * 31) + this.f2106u;
     }
 
     @Override // N7.a
     public final boolean isEmpty() {
-        return this.f2017n > this.f2018u;
+        return this.f2105n > this.f2106u;
     }
 
     @Override // N7.a
     public final String toString() {
-        return this.f2017n + ".." + this.f2018u;
+        return this.f2105n + ".." + this.f2106u;
     }
 }

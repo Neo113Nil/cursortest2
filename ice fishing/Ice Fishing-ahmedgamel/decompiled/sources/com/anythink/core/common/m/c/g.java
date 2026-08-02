@@ -10,32 +10,32 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class g implements i {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f14550a = "HttpLoaderInterceptor";
+    private static final String f15336a = "HttpLoaderInterceptor";
 
     /* renamed from: b, reason: collision with root package name */
-    private final Context f14551b;
+    private final Context f15337b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final Map<String, i> f14552c;
+    private final Map<String, i> f15338c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final a f14553d;
+    private final a f15339d;
 
     public g(Context context) {
         context = context instanceof Activity ? context.getApplicationContext() : context;
-        this.f14551b = context;
-        this.f14552c = new ConcurrentHashMap();
-        this.f14553d = new a(context);
+        this.f15337b = context;
+        this.f15338c = new ConcurrentHashMap();
+        this.f15339d = new a(context);
     }
 
     @Override // com.anythink.core.common.m.c.i
     public final com.anythink.core.common.m.b.f a(com.anythink.core.common.m.b.d dVar) {
         i a9;
-        if (this.f14551b != null && dVar != null) {
+        if (this.f15337b != null && dVar != null) {
             try {
-                a aVar = this.f14553d;
+                a aVar = this.f15339d;
                 r1 = aVar != null ? aVar.a(dVar) : null;
-                return ((r1 == null || !r1.e()) && (a9 = a(this.f14551b, dVar)) != null) ? a9.a(dVar) : r1;
+                return ((r1 == null || !r1.e()) && (a9 = a(this.f15337b, dVar)) != null) ? a9.a(dVar) : r1;
             } catch (Throwable th) {
                 th.getMessage();
             }
@@ -45,15 +45,15 @@ public final class g implements i {
 
     @Override // com.anythink.core.common.m.c.i
     public final void a(com.anythink.core.common.m.b.f fVar, com.anythink.core.common.m.b.d dVar) {
-        if (this.f14551b == null || fVar == null || dVar == null) {
+        if (this.f15337b == null || fVar == null || dVar == null) {
             return;
         }
         try {
-            a aVar = this.f14553d;
+            a aVar = this.f15339d;
             if (aVar != null) {
                 aVar.a(fVar, dVar);
             }
-            i a9 = a(this.f14551b, dVar);
+            i a9 = a(this.f15337b, dVar);
             if (a9 != null) {
                 a9.a(fVar, dVar);
             }
@@ -65,11 +65,11 @@ public final class g implements i {
     private i a(Context context, com.anythink.core.common.m.b.d dVar) {
         char c9;
         i iVar = null;
-        if (dVar == null || this.f14552c == null) {
+        if (dVar == null || this.f15338c == null) {
             return null;
         }
         String b9 = dVar.b();
-        i iVar2 = this.f14552c.get(b9);
+        i iVar2 = this.f15338c.get(b9);
         if (iVar2 != null) {
             return iVar2;
         }
@@ -78,28 +78,28 @@ public final class g implements i {
                 if (!TextUtils.isEmpty(b9)) {
                     switch (b9.hashCode()) {
                         case 261237151:
-                            if (b9.equals(com.anythink.core.common.m.b.g.f14523f)) {
+                            if (b9.equals(com.anythink.core.common.m.b.g.f15309f)) {
                                 c9 = 3;
                                 break;
                             }
                             c9 = 65535;
                             break;
                         case 1584672721:
-                            if (b9.equals(com.anythink.core.common.m.b.g.f14519b)) {
+                            if (b9.equals(com.anythink.core.common.m.b.g.f15305b)) {
                                 c9 = 0;
                                 break;
                             }
                             c9 = 65535;
                             break;
                         case 1899111790:
-                            if (b9.equals(com.anythink.core.common.m.b.g.f14520c)) {
+                            if (b9.equals(com.anythink.core.common.m.b.g.f15306c)) {
                                 c9 = 1;
                                 break;
                             }
                             c9 = 65535;
                             break;
                         case 1976115158:
-                            if (b9.equals(com.anythink.core.common.m.b.g.f14521d)) {
+                            if (b9.equals(com.anythink.core.common.m.b.g.f15307d)) {
                                 c9 = 2;
                                 break;
                             }
@@ -119,7 +119,7 @@ public final class g implements i {
                         iVar = new e(context);
                     }
                     if (iVar != null) {
-                        this.f14552c.put(b9, iVar);
+                        this.f15338c.put(b9, iVar);
                     }
                 }
             } finally {
@@ -149,7 +149,7 @@ public final class g implements i {
                 break;
         }
         if (iVar != null) {
-            this.f14552c.put(str, iVar);
+            this.f15338c.put(str, iVar);
         }
         return iVar;
     }

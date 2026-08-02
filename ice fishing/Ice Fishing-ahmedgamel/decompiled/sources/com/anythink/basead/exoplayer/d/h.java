@@ -8,10 +8,10 @@ import java.util.Map;
 public final class h<T extends i> implements f<T> {
 
     /* renamed from: a, reason: collision with root package name */
-    private final f.a f6859a;
+    private final f.a f7645a;
 
     public h(f.a aVar) {
-        this.f6859a = (f.a) com.anythink.basead.exoplayer.k.a.a(aVar);
+        this.f7645a = (f.a) com.anythink.basead.exoplayer.k.a.a(aVar);
     }
 
     @Override // com.anythink.basead.exoplayer.d.f
@@ -21,7 +21,7 @@ public final class h<T extends i> implements f<T> {
 
     @Override // com.anythink.basead.exoplayer.d.f
     public final f.a f() {
-        return this.f6859a;
+        return this.f7645a;
     }
 
     @Override // com.anythink.basead.exoplayer.d.f

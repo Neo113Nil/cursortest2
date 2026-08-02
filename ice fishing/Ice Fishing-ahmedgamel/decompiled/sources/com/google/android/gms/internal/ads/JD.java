@@ -7,45 +7,45 @@ import java.util.concurrent.TimeUnit;
 public final class JD extends ID {
 
     /* renamed from: A, reason: collision with root package name */
-    public final N3.a f25657A;
+    public final P3.a f26410A;
 
-    public JD(N3.a aVar) {
+    public JD(P3.a aVar) {
         aVar.getClass();
-        this.f25657A = aVar;
+        this.f26410A = aVar;
     }
 
-    @Override // com.google.android.gms.internal.ads.AbstractC3287hD, N3.a
+    @Override // com.google.android.gms.internal.ads.AbstractC3310hD, P3.a
     public final void a(Runnable runnable, Executor executor) {
-        this.f25657A.a(runnable, executor);
+        this.f26410A.a(runnable, executor);
     }
 
-    @Override // com.google.android.gms.internal.ads.AbstractC3287hD, java.util.concurrent.Future
-    public final boolean cancel(boolean z3) {
-        return this.f25657A.cancel(z3);
+    @Override // com.google.android.gms.internal.ads.AbstractC3310hD, java.util.concurrent.Future
+    public final boolean cancel(boolean z6) {
+        return this.f26410A.cancel(z6);
     }
 
-    @Override // com.google.android.gms.internal.ads.AbstractC3287hD, java.util.concurrent.Future
+    @Override // com.google.android.gms.internal.ads.AbstractC3310hD, java.util.concurrent.Future
     public final Object get() {
-        return this.f25657A.get();
+        return this.f26410A.get();
     }
 
-    @Override // com.google.android.gms.internal.ads.AbstractC3287hD, java.util.concurrent.Future
+    @Override // com.google.android.gms.internal.ads.AbstractC3310hD, java.util.concurrent.Future
     public final boolean isCancelled() {
-        return this.f25657A.isCancelled();
+        return this.f26410A.isCancelled();
     }
 
-    @Override // com.google.android.gms.internal.ads.AbstractC3287hD, java.util.concurrent.Future
+    @Override // com.google.android.gms.internal.ads.AbstractC3310hD, java.util.concurrent.Future
     public final boolean isDone() {
-        return this.f25657A.isDone();
+        return this.f26410A.isDone();
     }
 
-    @Override // com.google.android.gms.internal.ads.AbstractC3287hD
+    @Override // com.google.android.gms.internal.ads.AbstractC3310hD
     public final String toString() {
-        return this.f25657A.toString();
+        return this.f26410A.toString();
     }
 
-    @Override // com.google.android.gms.internal.ads.AbstractC3287hD, java.util.concurrent.Future
+    @Override // com.google.android.gms.internal.ads.AbstractC3310hD, java.util.concurrent.Future
     public final Object get(long j6, TimeUnit timeUnit) {
-        return this.f25657A.get(j6, timeUnit);
+        return this.f26410A.get(j6, timeUnit);
     }
 }

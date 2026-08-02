@@ -1,7 +1,7 @@
 package D0;
 
 import android.widget.FrameLayout;
-import com.icefishingapp.icefishing.C5275R;
+import com.IceFishing.LiveIceFishing.C5248R;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -10,36 +10,36 @@ import java.util.Iterator;
 public abstract class s {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final C0300a f610a;
+    public static final C0288a f506a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final ThreadLocal f611b;
+    public static final ThreadLocal f507b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final ArrayList f612c;
+    public static final ArrayList f508c;
 
     static {
-        C0300a c0300a = new C0300a();
-        c0300a.f541T = new ArrayList();
-        c0300a.f544W = false;
-        c0300a.f545X = 0;
-        c0300a.f542U = false;
-        c0300a.N(new C0307h(2));
-        c0300a.N(new C0305f());
-        c0300a.N(new C0307h(1));
-        f610a = c0300a;
-        f611b = new ThreadLocal();
-        f612c = new ArrayList();
+        C0288a c0288a = new C0288a();
+        c0288a.f436T = new ArrayList();
+        c0288a.f439W = false;
+        c0288a.f440X = 0;
+        c0288a.f437U = false;
+        c0288a.N(new C0295h(2));
+        c0288a.N(new C0293f());
+        c0288a.N(new C0295h(1));
+        f506a = c0288a;
+        f507b = new ThreadLocal();
+        f508c = new ArrayList();
     }
 
     public static void a(FrameLayout frameLayout, o oVar) {
-        ArrayList arrayList = f612c;
+        ArrayList arrayList = f508c;
         if (arrayList.contains(frameLayout) || !frameLayout.isLaidOut()) {
             return;
         }
         arrayList.add(frameLayout);
         if (oVar == null) {
-            oVar = f610a;
+            oVar = f506a;
         }
         o clone = oVar.clone();
         ArrayList arrayList2 = (ArrayList) b().getOrDefault(frameLayout, null);
@@ -50,20 +50,20 @@ public abstract class s {
             }
         }
         clone.m(frameLayout, true);
-        if (frameLayout.getTag(C5275R.id.transition_current_scene) != null) {
+        if (frameLayout.getTag(C5248R.id.transition_current_scene) != null) {
             throw new ClassCastException();
         }
-        frameLayout.setTag(C5275R.id.transition_current_scene, null);
+        frameLayout.setTag(C5248R.id.transition_current_scene, null);
         r rVar = new r();
-        rVar.f608n = clone;
-        rVar.f609u = frameLayout;
+        rVar.f504n = clone;
+        rVar.f505u = frameLayout;
         frameLayout.addOnAttachStateChangeListener(rVar);
         frameLayout.getViewTreeObserver().addOnPreDrawListener(rVar);
     }
 
     public static s.b b() {
         s.b bVar;
-        ThreadLocal threadLocal = f611b;
+        ThreadLocal threadLocal = f507b;
         WeakReference weakReference = (WeakReference) threadLocal.get();
         if (weakReference != null && (bVar = (s.b) weakReference.get()) != null) {
             return bVar;

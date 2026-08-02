@@ -2,5 +2,5 @@ package com.google.android.gms.internal.ads;
 
 /* loaded from: classes2.dex */
 public interface Ay {
-    N3.a c();
+    P3.a c();
 }

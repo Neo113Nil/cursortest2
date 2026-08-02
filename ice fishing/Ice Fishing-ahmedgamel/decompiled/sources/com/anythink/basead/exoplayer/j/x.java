@@ -6,26 +6,26 @@ import com.anythink.basead.exoplayer.j.h;
 public final class x implements h.a {
 
     /* renamed from: a, reason: collision with root package name */
-    private final h.a f8266a;
+    private final h.a f9052a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final com.anythink.basead.exoplayer.k.v f8267b;
+    private final com.anythink.basead.exoplayer.k.v f9053b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final int f8268c;
+    private final int f9054c;
 
     private x(h.a aVar, com.anythink.basead.exoplayer.k.v vVar, int i) {
-        this.f8266a = aVar;
-        this.f8267b = vVar;
-        this.f8268c = i;
+        this.f9052a = aVar;
+        this.f9053b = vVar;
+        this.f9054c = i;
     }
 
     private w b() {
-        return new w(this.f8266a.a(), this.f8267b, this.f8268c);
+        return new w(this.f9052a.a(), this.f9053b, this.f9054c);
     }
 
     @Override // com.anythink.basead.exoplayer.j.h.a
     public final /* synthetic */ h a() {
-        return new w(this.f8266a.a(), this.f8267b, this.f8268c);
+        return new w(this.f9052a.a(), this.f9053b, this.f9054c);
     }
 }

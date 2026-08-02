@@ -7,7 +7,7 @@ import java.util.Objects;
 public class e implements com.anythink.expressad.video.signal.g {
 
     /* renamed from: m, reason: collision with root package name */
-    protected static final String f21798m = "DefaultJSNotifyProxy";
+    protected static final String f22585m = "DefaultJSNotifyProxy";
 
     @Override // com.anythink.expressad.video.signal.g
     public void a() {
@@ -18,7 +18,7 @@ public class e implements com.anythink.expressad.video.signal.g {
     }
 
     @Override // com.anythink.expressad.video.signal.g
-    public void a(int i, int i6, int i9, int i10) {
+    public void a(int i, int i4, int i6, int i9) {
     }
 
     @Override // com.anythink.expressad.video.signal.g

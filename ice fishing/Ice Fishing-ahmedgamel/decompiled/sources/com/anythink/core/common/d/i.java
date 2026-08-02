@@ -31,7 +31,7 @@ public abstract class i implements o {
     }
 
     @Override // com.anythink.core.common.d.o
-    public void onDeeplinkCallback(boolean z3) {
+    public void onDeeplinkCallback(boolean z6) {
     }
 
     @Override // com.anythink.core.common.d.o

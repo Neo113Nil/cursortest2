@@ -4,17 +4,17 @@ package com.anythink.basead.exoplayer;
 public final class o extends IllegalStateException {
 
     /* renamed from: a, reason: collision with root package name */
-    public final ae f8684a;
+    public final ae f9470a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f8685b;
+    public final int f9471b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final long f8686c;
+    public final long f9472c;
 
     public o(ae aeVar, int i, long j6) {
-        this.f8684a = aeVar;
-        this.f8685b = i;
-        this.f8686c = j6;
+        this.f9470a = aeVar;
+        this.f9471b = i;
+        this.f9472c = j6;
     }
 }

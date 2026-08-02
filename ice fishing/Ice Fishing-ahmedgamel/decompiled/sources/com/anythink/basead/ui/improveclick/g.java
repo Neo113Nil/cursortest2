@@ -15,61 +15,61 @@ import java.util.List;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f11158a = 0;
+    public static final int f11944a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f11159b = 1;
+    public static final int f11945b = 1;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f11160c = 2;
+    public static final int f11946c = 2;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f11161d = 4;
+    public static final int f11947d = 4;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f11162e = 8;
+    public static final int f11948e = 8;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final int f11163f = 16;
+    public static final int f11949f = 16;
 
     /* renamed from: g, reason: collision with root package name */
-    public static final int f11164g = 32;
+    public static final int f11950g = 32;
 
     /* renamed from: h, reason: collision with root package name */
-    public static final int f11165h = 64;
+    public static final int f11951h = 64;
 
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f11166a = "screen_style";
+        public static final String f11952a = "screen_style";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f11167b = "shake_view_extra_container";
+        public static final String f11953b = "shake_view_extra_container";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f11168c = "native_ad_event_listener";
+        public static final String f11954c = "native_ad_event_listener";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f11169d = "video_length";
+        public static final String f11955d = "video_length";
 
         /* renamed from: e, reason: collision with root package name */
-        public static final String f11170e = "material_direction";
+        public static final String f11956e = "material_direction";
 
         /* renamed from: f, reason: collision with root package name */
-        public static final String f11171f = "click_type";
+        public static final String f11957f = "click_type";
 
         /* renamed from: g, reason: collision with root package name */
-        public static final String f11172g = "click_area";
+        public static final String f11958g = "click_area";
 
         /* renamed from: h, reason: collision with root package name */
-        public static final String f11173h = "cta_text";
+        public static final String f11959h = "cta_text";
         public static final String i = "video_play_fail_message";
 
         /* renamed from: j, reason: collision with root package name */
-        public static final String f11174j = "video_reset_player_view_type";
+        public static final String f11960j = "video_reset_player_view_type";
 
         /* renamed from: k, reason: collision with root package name */
-        public static final String f11175k = "video_progress";
+        public static final String f11961k = "video_progress";
     }
 
     /* JADX WARN: Removed duplicated region for block: B:12:0x0071  */
@@ -80,7 +80,7 @@ public final class g {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private static List<c> a(int i, Context context, w wVar, x xVar, ViewGroup viewGroup, int i6, c.a aVar) {
+    private static List<c> a(int i, Context context, w wVar, x xVar, ViewGroup viewGroup, int i4, c.a aVar) {
         ViewGroup viewGroup2;
         ViewGroup viewGroup3;
         ArrayList arrayList = new ArrayList();
@@ -93,37 +93,37 @@ public final class g {
                 viewGroup2 = viewGroup;
                 if ((i & 16) == 16) {
                     d dVar = new d();
-                    dVar.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i6, aVar);
+                    dVar.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i4, aVar);
                     arrayList.add(dVar);
                 }
                 if ((i & 1) == 1) {
                     j jVar = new j();
-                    jVar.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i6, aVar);
+                    jVar.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i4, aVar);
                     arrayList.add(jVar);
                 }
                 if ((i & 2) == 2) {
                     e eVar = new e();
-                    eVar.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i6, aVar);
+                    eVar.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i4, aVar);
                     arrayList.add(eVar);
                 }
                 if ((i & 4) == 4) {
                     k kVar = new k();
-                    kVar.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i6, aVar);
+                    kVar.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i4, aVar);
                     arrayList.add(kVar);
                 }
                 if (relativeLayout != null && (i & 8) == 8) {
                     f fVar = new f();
-                    fVar.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i6, aVar);
+                    fVar.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i4, aVar);
                     arrayList.add(fVar);
                 }
                 if (relativeLayout != null && (i & 32) == 32) {
                     h hVar = new h();
-                    hVar.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i6, aVar);
+                    hVar.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i4, aVar);
                     arrayList.add(hVar);
                 }
                 if ((i & 64) == 64) {
                     b bVar = new b();
-                    bVar.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i6, aVar);
+                    bVar.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i4, aVar);
                     arrayList.add(bVar);
                 }
                 return arrayList;
@@ -143,12 +143,12 @@ public final class g {
         }
         if (relativeLayout != null) {
             f fVar2 = new f();
-            fVar2.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i6, aVar);
+            fVar2.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i4, aVar);
             arrayList.add(fVar2);
         }
         if (relativeLayout != null) {
             h hVar2 = new h();
-            hVar2.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i6, aVar);
+            hVar2.a(viewGroup2.getContext(), wVar, xVar, viewGroup2, relativeLayout, findViewById, i4, aVar);
             arrayList.add(hVar2);
         }
         if ((i & 64) == 64) {

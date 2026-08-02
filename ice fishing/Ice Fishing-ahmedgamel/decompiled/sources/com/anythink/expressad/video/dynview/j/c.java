@@ -15,33 +15,33 @@ import java.util.List;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f21302a = "ViewOptionWrapper";
+    private static final String f22089a = "ViewOptionWrapper";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f21303b = "template_";
+    private static final String f22090b = "template_";
 
     public static com.anythink.expressad.video.dynview.c a(Context context, List<d> list) {
         int i;
-        int i6;
+        int i4;
         if (list == null) {
             return null;
         }
         try {
-            float f3 = v.f(t.b().g());
+            float f2 = v.f(t.b().g());
             float e9 = v.e(t.b().g());
             ArrayList arrayList = new ArrayList();
-            int i9 = 0;
+            int i6 = 0;
             if (list.size() <= 0 || list.get(0) == null) {
                 i = 1;
-                i6 = 0;
+                i4 = 0;
             } else {
                 d dVar = list.get(0);
                 i = (dVar == null || dVar.N() == null) ? 1 : dVar.N().c();
-                i6 = list.get(0).au();
+                i4 = list.get(0).au();
                 list.get(0).as();
-                i9 = list.get(0).k();
+                i6 = list.get(0).k();
             }
-            String str = com.anythink.expressad.video.dynview.a.a.f21111j;
+            String str = com.anythink.expressad.video.dynview.a.a.f21898j;
             if (i != 1) {
                 if (i == 2) {
                     str = com.anythink.expressad.video.dynview.a.a.i;
@@ -52,7 +52,7 @@ public final class c {
                     i = 1;
                 }
             }
-            return new c.a().a(context).a(str).a(1).a(e9).b(f3).a(list).b(i).b(arrayList).e(i9).d(i6).a();
+            return new c.a().a(context).a(str).a(1).a(e9).b(f2).a(list).b(i).b(arrayList).e(i6).d(i4).a();
         } catch (Exception e10) {
             e10.getMessage();
             return null;
@@ -65,10 +65,10 @@ public final class c {
         }
         try {
             com.anythink.expressad.videocommon.e.d a9 = com.anythink.expressad.videocommon.e.c.a().a(com.anythink.expressad.foundation.b.a.c().f(), dVar.L(), false);
-            int h9 = a9 != null ? a9.h() : 0;
+            int h3 = a9 != null ? a9.h() : 0;
             ArrayList arrayList = new ArrayList();
             arrayList.add(dVar);
-            return new c.a().a(com.anythink.expressad.video.dynview.a.a.f21110h).a(3).a(arrayList).a(view.getContext()).a(view).c(h9).b(n.c(view.getContext())).a();
+            return new c.a().a(com.anythink.expressad.video.dynview.a.a.f21897h).a(3).a(arrayList).a(view.getContext()).a(view).c(h3).b(n.c(view.getContext())).a();
         } catch (Exception e9) {
             e9.getMessage();
             return null;
@@ -79,14 +79,14 @@ public final class c {
         if (list != null) {
             try {
                 if (list.size() != 0) {
-                    float f3 = v.f(t.b().g());
+                    float f2 = v.f(t.b().g());
                     float e9 = v.e(t.b().g());
                     ArrayList arrayList = new ArrayList();
                     int k9 = list.get(0).k();
                     int au = list.get(0).au();
                     list.get(0).as();
                     int c9 = n.c(context);
-                    return new c.a().a(c9 == 1 ? com.anythink.expressad.video.dynview.a.a.f21112k : com.anythink.expressad.video.dynview.a.a.f21113l).a(5).a(context).a(e9).b(f3).a(list).b(c9).b(arrayList).e(k9).d(au).a();
+                    return new c.a().a(c9 == 1 ? com.anythink.expressad.video.dynview.a.a.f21899k : com.anythink.expressad.video.dynview.a.a.f21900l).a(5).a(context).a(e9).b(f2).a(list).b(c9).b(arrayList).e(k9).d(au).a();
                 }
             } catch (Exception e10) {
                 e10.getMessage();
@@ -104,7 +104,7 @@ public final class c {
         try {
             String str2 = "";
             ArrayList arrayList = new ArrayList();
-            String L6 = dVar.L();
+            String L2 = dVar.L();
             if (dVar.N() != null) {
                 i = dVar.N().b();
                 str2 = dVar.N().e();
@@ -123,11 +123,11 @@ public final class c {
             }
             boolean a10 = com.anythink.expressad.video.dynview.i.c.a(str2);
             String a11 = com.anythink.expressad.video.dynview.i.c.a(str2, com.anythink.expressad.video.dynview.a.a.ao);
-            com.anythink.expressad.videocommon.e.d a12 = com.anythink.expressad.videocommon.e.c.a().a(com.anythink.expressad.foundation.b.a.c().f(), L6, false);
-            int h9 = a12 != null ? a12.h() : 0;
+            com.anythink.expressad.videocommon.e.d a12 = com.anythink.expressad.videocommon.e.c.a().a(com.anythink.expressad.foundation.b.a.c().f(), L2, false);
+            int h3 = a12 != null ? a12.h() : 0;
             ArrayList arrayList2 = new ArrayList();
             arrayList2.add(dVar);
-            return new c.a().a(str3).a(2).a(arrayList2).a(view.getContext()).a(view).c(h9).f(a9).b(n.c(view.getContext())).d(i).a(a10).c(a11).b(arrayList).e(dVar.k()).a();
+            return new c.a().a(str3).a(2).a(arrayList2).a(view.getContext()).a(view).c(h3).f(a9).b(n.c(view.getContext())).d(i).a(a10).c(a11).b(arrayList).e(dVar.k()).a();
         } catch (Exception e9) {
             e9.getMessage();
             return null;
@@ -155,7 +155,7 @@ public final class c {
                 }
                 str2 = str3.concat(valueOf);
             } else {
-                str2 = c9 == 1 ? com.anythink.expressad.video.dynview.a.a.f21104b : com.anythink.expressad.video.dynview.a.a.f21103a;
+                str2 = c9 == 1 ? com.anythink.expressad.video.dynview.a.a.f21891b : com.anythink.expressad.video.dynview.a.a.f21890a;
             }
             return new c.a().a(str2).a(4).a(context).b(n.c(context)).b(new ArrayList()).e(dVar.k()).d(i).b(str).g(a9).a();
         } catch (Exception e9) {

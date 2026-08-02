@@ -25,10 +25,10 @@ public final class HJ {
     public final HI A0A;
     public final Metadata A0B;
 
-    public static String A03(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0C, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 61);
+    public static String A03(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0C, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 61);
         }
         return new String(copyOfRange);
     }
@@ -58,41 +58,41 @@ public final class HJ {
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
     public final HJ A0B(List<String> list) {
-        return new HJ(this.A05, this.A03, this.A06, this.A04, this.A07, this.A02, this.A00, this.A09, this.A0A, A02(AbstractC0954Hk.A02(list)));
+        return new HJ(this.A05, this.A03, this.A06, this.A04, this.A07, this.A02, this.A00, this.A09, this.A0A, A02(AbstractC0974Hk.A02(list)));
     }
 
     static {
         A04();
     }
 
-    public HJ(int i, int i6, int i9, int i10, int i11, int i12, int i13, long j6, HI hi, Metadata metadata) {
+    public HJ(int i, int i4, int i6, int i9, int i10, int i11, int i12, long j6, HI hi, Metadata metadata) {
         this.A05 = i;
-        this.A03 = i6;
-        this.A06 = i9;
-        this.A04 = i10;
-        this.A07 = i11;
-        this.A08 = A01(i11);
-        this.A02 = i12;
-        this.A00 = i13;
-        this.A01 = A00(i13);
+        this.A03 = i4;
+        this.A06 = i6;
+        this.A04 = i9;
+        this.A07 = i10;
+        this.A08 = A01(i10);
+        this.A02 = i11;
+        this.A00 = i12;
+        this.A01 = A00(i12);
         this.A09 = j6;
         this.A0A = hi;
         this.A0B = metadata;
     }
 
     public HJ(byte[] bArr, int i) {
-        C06464u c06464u = new C06464u(bArr);
-        c06464u.A08(i * 8);
-        this.A05 = c06464u.A04(16);
-        this.A03 = c06464u.A04(16);
-        this.A06 = c06464u.A04(24);
-        this.A04 = c06464u.A04(24);
-        this.A07 = c06464u.A04(20);
+        C06664u c06664u = new C06664u(bArr);
+        c06664u.A08(i * 8);
+        this.A05 = c06664u.A04(16);
+        this.A03 = c06664u.A04(16);
+        this.A06 = c06664u.A04(24);
+        this.A04 = c06664u.A04(24);
+        this.A07 = c06664u.A04(20);
         this.A08 = A01(this.A07);
-        this.A02 = c06464u.A04(3) + 1;
-        this.A00 = c06464u.A04(5) + 1;
+        this.A02 = c06664u.A04(3) + 1;
+        this.A00 = c06664u.A04(5) + 1;
         this.A01 = A00(this.A00);
-        this.A09 = c06464u.A05(36);
+        this.A09 = c06664u.A05(36);
         this.A0A = null;
         this.A0B = null;
     }
@@ -178,7 +178,7 @@ public final class HJ {
     }
 
     public final long A06() {
-        return this.A09 == 0 ? b.f6382b : (this.A09 * 1000000) / this.A07;
+        return this.A09 == 0 ? b.f7168b : (this.A09 * 1000000) / this.A07;
     }
 
     public final long A07(long j6) {
@@ -186,13 +186,13 @@ public final class HJ {
         return sampleNumber;
     }
 
-    public final C2400qI A08(byte[] bArr, Metadata metadata) {
-        bArr[4] = c.f16316a;
+    public final C2420qI A08(byte[] bArr, Metadata metadata) {
+        bArr[4] = c.f17103a;
         int i = this.A04 > 0 ? this.A04 : -1;
         Metadata A02 = A02(metadata);
-        C05912p A0h = new C05912p().A11(A03(0, 10, 87)).A0h(i);
+        C06112p A0h = new C06112p().A11(A03(0, 10, 87)).A0h(i);
         int maxInputSize = this.A02;
-        C05912p A0b = A0h.A0b(maxInputSize);
+        C06112p A0b = A0h.A0b(maxInputSize);
         int maxInputSize2 = this.A07;
         return A0b.A0m(maxInputSize2).A12(Collections.singletonList(bArr)).A0v(A02).A14();
     }

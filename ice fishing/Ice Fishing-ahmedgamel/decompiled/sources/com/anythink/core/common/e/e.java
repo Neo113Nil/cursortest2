@@ -23,25 +23,25 @@ import com.anythink.core.common.e.q;
 public class e extends d {
 
     /* renamed from: a, reason: collision with root package name */
-    private static e f12936a;
+    private static e f13722a;
 
     private e(Context context) {
         super(context);
     }
 
     public static e a(Context context) {
-        if (f12936a == null) {
+        if (f13722a == null) {
             synchronized (e.class) {
                 try {
-                    if (f12936a == null) {
-                        f12936a = new e(context.getApplicationContext());
+                    if (f13722a == null) {
+                        f13722a = new e(context.getApplicationContext());
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f12936a;
+        return f13722a;
     }
 
     private void e(SQLiteDatabase sQLiteDatabase) {
@@ -67,7 +67,7 @@ public class e extends d {
 
     private void c(SQLiteDatabase sQLiteDatabase) {
         try {
-            sQLiteDatabase.execSQL(f.a.f12944f);
+            sQLiteDatabase.execSQL(f.a.f13730f);
             sQLiteDatabase.execSQL(k.a.i);
             a(sQLiteDatabase, 3, 20);
         } catch (Exception e9) {
@@ -99,30 +99,30 @@ public class e extends d {
     }
 
     @Override // com.anythink.core.common.e.d
-    public final void a(SQLiteDatabase sQLiteDatabase, int i, int i6) {
-        for (int i9 = i; i9 < i6; i9++) {
-            switch (i9) {
+    public final void a(SQLiteDatabase sQLiteDatabase, int i, int i4) {
+        for (int i6 = i; i6 < i4; i6++) {
+            switch (i6) {
                 case 1:
                 case 2:
                     d(sQLiteDatabase);
                     c(sQLiteDatabase);
                     break;
                 case 3:
-                    sQLiteDatabase.execSQL(p.a.f13084j);
+                    sQLiteDatabase.execSQL(p.a.f13870j);
                     break;
                 case 4:
-                    sQLiteDatabase.execSQL(n.a.f13062h);
-                    sQLiteDatabase.execSQL(o.a.f13073j);
+                    sQLiteDatabase.execSQL(n.a.f13848h);
+                    sQLiteDatabase.execSQL(o.a.f13859j);
                     break;
                 case 5:
-                    sQLiteDatabase.execSQL(i.a.f13004h);
-                    sQLiteDatabase.execSQL(h.a.f12993f);
+                    sQLiteDatabase.execSQL(i.a.f13790h);
+                    sQLiteDatabase.execSQL(h.a.f13779f);
                     break;
                 case 6:
-                    sQLiteDatabase.execSQL(l.a.f13039g);
+                    sQLiteDatabase.execSQL(l.a.f13825g);
                     break;
                 case 7:
-                    sQLiteDatabase.execSQL(q.a.f13094h);
+                    sQLiteDatabase.execSQL(q.a.f13880h);
                     break;
                 case 8:
                     sQLiteDatabase.execSQL(m.b.i);
@@ -130,23 +130,23 @@ public class e extends d {
                     sQLiteDatabase.execSQL(k.a.i);
                     break;
                 case 9:
-                    sQLiteDatabase.execSQL(e.a.f12071l);
+                    sQLiteDatabase.execSQL(e.a.f12857l);
                     break;
                 case 10:
                     try {
-                        sQLiteDatabase.execSQL(e.a.f12071l);
+                        sQLiteDatabase.execSQL(e.a.f12857l);
                     } catch (Throwable unused) {
                     }
                     sQLiteDatabase.execSQL("DROP TABLE IF EXISTS 'offer_data_cache'");
-                    sQLiteDatabase.execSQL(o.a.f13073j);
+                    sQLiteDatabase.execSQL(o.a.f13859j);
                     break;
                 case 11:
-                    sQLiteDatabase.execSQL(e.a.f12072m);
-                    sQLiteDatabase.execSQL(e.a.f12073n);
+                    sQLiteDatabase.execSQL(e.a.f12858m);
+                    sQLiteDatabase.execSQL(e.a.f12859n);
                     break;
                 case 12:
                     try {
-                        sQLiteDatabase.execSQL(g.a.f12960O);
+                        sQLiteDatabase.execSQL(g.a.f13746O);
                         break;
                     } catch (Throwable th) {
                         th.getMessage();
@@ -155,7 +155,7 @@ public class e extends d {
                 case 13:
                     try {
                         sQLiteDatabase.execSQL("DROP TABLE IF EXISTS 'offer_data_cache'");
-                        sQLiteDatabase.execSQL(o.a.f13073j);
+                        sQLiteDatabase.execSQL(o.a.f13859j);
                         break;
                     } catch (SQLException e9) {
                         e9.getMessage();
@@ -163,7 +163,7 @@ public class e extends d {
                     }
                 case 14:
                     try {
-                        sQLiteDatabase.execSQL(l.a.f13040h);
+                        sQLiteDatabase.execSQL(l.a.f13826h);
                         break;
                     } catch (Throwable th2) {
                         th2.getMessage();
@@ -183,12 +183,12 @@ public class e extends d {
                     }
                 case 16:
                     try {
-                        sQLiteDatabase.execSQL(j.a.f13013g);
-                        sQLiteDatabase.execSQL(j.a.f13014h);
+                        sQLiteDatabase.execSQL(j.a.f13799g);
+                        sQLiteDatabase.execSQL(j.a.f13800h);
                         sQLiteDatabase.execSQL(j.a.i);
-                        sQLiteDatabase.execSQL(j.a.f13015j);
-                        sQLiteDatabase.execSQL(j.a.f13016k);
-                        sQLiteDatabase.execSQL(j.a.f13017l);
+                        sQLiteDatabase.execSQL(j.a.f13801j);
+                        sQLiteDatabase.execSQL(j.a.f13802k);
+                        sQLiteDatabase.execSQL(j.a.f13803l);
                         break;
                     } catch (Throwable th4) {
                         th4.getMessage();
@@ -196,14 +196,14 @@ public class e extends d {
                     }
                 case 17:
                     try {
-                        sQLiteDatabase.execSQL(b.a.f12932h);
+                        sQLiteDatabase.execSQL(b.a.f13718h);
                         break;
                     } catch (Throwable unused2) {
                         break;
                     }
                 case 18:
                     try {
-                        sQLiteDatabase.execSQL(a.C0077a.f12919r);
+                        sQLiteDatabase.execSQL(a.C0077a.f13705r);
                         break;
                     } catch (Throwable th5) {
                         th5.getMessage();
@@ -211,9 +211,9 @@ public class e extends d {
                     }
                 case 19:
                     try {
-                        sQLiteDatabase.execSQL(a.C0077a.f12920s);
-                        sQLiteDatabase.execSQL(a.C0077a.f12921t);
-                        sQLiteDatabase.execSQL(a.C0077a.f12922u);
+                        sQLiteDatabase.execSQL(a.C0077a.f13706s);
+                        sQLiteDatabase.execSQL(a.C0077a.f13707t);
+                        sQLiteDatabase.execSQL(a.C0077a.f13708u);
                         break;
                     } catch (Throwable th6) {
                         th6.getMessage();

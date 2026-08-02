@@ -8,27 +8,27 @@ public final class XS {
     public static String[] A05 = {"hdh4k6eZclrlxxYg19ck", "OIQuDIQFpzBifrZrtJIvg4BasUaQd63c", "6y0NffGMqcG8EugdtirNjkqg6svCH2Zl", "13Ua2r6CYJwc6p6BI5coDxRAaPqMz7yS", "7WkbYpbXunBRly3lB1oHckvOip2eqLp6", "2PYz6J8qU0vRqLO17bgOak7iCaiihwk", "gvpJ77qQnx", "SLFhDDNvl2CxgKHJ1vqMDyCxDe74woQD"};
     public boolean A00 = false;
     public final Handler A01 = new Handler(Looper.getMainLooper());
-    public final AbstractC2005jd A02;
-    public final C1840gi A03;
+    public final AbstractC2025jd A02;
+    public final C1860gi A03;
     public final XQ A04;
 
-    public XS(C1840gi c1840gi, AbstractC2005jd abstractC2005jd, XQ xq) {
-        this.A03 = c1840gi;
+    public XS(C1860gi c1860gi, AbstractC2025jd abstractC2025jd, XQ xq) {
+        this.A03 = c1860gi;
         this.A04 = xq;
-        this.A02 = abstractC2005jd;
+        this.A02 = abstractC2025jd;
     }
 
-    public static XS A00(C1840gi c1840gi, AbstractC2005jd abstractC2005jd, XQ xq) {
-        Object creativeAsCtaLoggingHelper = c1840gi.A0I();
+    public static XS A00(C1860gi c1860gi, AbstractC2025jd abstractC2025jd, XQ xq) {
+        Object creativeAsCtaLoggingHelper = c1860gi.A0I();
         if (creativeAsCtaLoggingHelper == null) {
-            creativeAsCtaLoggingHelper = new XS(c1840gi, abstractC2005jd, xq);
-            c1840gi.A0P(creativeAsCtaLoggingHelper);
+            creativeAsCtaLoggingHelper = new XS(c1860gi, abstractC2025jd, xq);
+            c1860gi.A0P(creativeAsCtaLoggingHelper);
         }
         return (XS) creativeAsCtaLoggingHelper;
     }
 
-    public static boolean A01(C1840gi c1840gi) {
-        return C1290Up.A1g(c1840gi) && X6.A0I(c1840gi);
+    public static boolean A01(C1860gi c1860gi) {
+        return C1310Up.A1g(c1860gi) && X6.A0I(c1860gi);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0049, code lost:
@@ -38,12 +38,12 @@ public final class XS {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final XR A02(AbstractC2005jd abstractC2005jd) {
-        if (C1290Up.A1m(this.A03)) {
-            r4 = abstractC2005jd.A1e() && A01(this.A03);
+    public final XR A02(AbstractC2025jd abstractC2025jd) {
+        if (C1310Up.A1m(this.A03)) {
+            r4 = abstractC2025jd.A1e() && A01(this.A03);
             return new XR(r4, r4);
         }
-        boolean A1e = abstractC2005jd.A1e();
+        boolean A1e = abstractC2025jd.A1e();
         if (A1e) {
             boolean A01 = A01(this.A03);
             String[] strArr = A05;

@@ -9,22 +9,22 @@ import java.util.NoSuchElementException;
 public class C0 implements H2 {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f24002n;
+    public final /* synthetic */ int f24765n;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f24003u;
+    public int f24766u;
 
     /* renamed from: v, reason: collision with root package name */
-    public int f24004v;
+    public int f24767v;
 
     /* renamed from: w, reason: collision with root package name */
-    public int f24005w;
+    public int f24768w;
 
     /* renamed from: x, reason: collision with root package name */
-    public int f24006x;
+    public int f24769x;
 
     /* renamed from: y, reason: collision with root package name */
-    public Object f24007y;
+    public Object f24770y;
 
     /* JADX WARN: Code restructure failed: missing block: B:100:0x01dc, code lost:
     
@@ -39,142 +39,142 @@ public class C0 implements H2 {
     */
     public static C0 d(byte[] bArr) {
         int i;
-        int i6;
-        int h9;
+        int i4;
+        int h3;
         try {
-            C4233yr c4233yr = new C4233yr(bArr, bArr.length);
-            c4233yr.e();
-            int h10 = c4233yr.h(7);
-            if (h10 != 1) {
-                StringBuilder sb = new StringBuilder(String.valueOf(h10).length() + 26);
+            C4256yr c4256yr = new C4256yr(bArr, bArr.length);
+            c4256yr.e();
+            int h9 = c4256yr.h(7);
+            if (h9 != 1) {
+                StringBuilder sb = new StringBuilder(String.valueOf(h9).length() + 26);
                 sb.append("Unsupported av1C version: ");
-                sb.append(h10);
-                AbstractC2968bG.y("Av1Config", sb.toString());
+                sb.append(h9);
+                AbstractC2991bG.y("Av1Config", sb.toString());
                 return null;
             }
-            int h11 = c4233yr.h(3);
-            int h12 = c4233yr.h(5);
-            boolean g4 = c4233yr.g();
-            int i9 = c4233yr.g() ? true != c4233yr.g() ? 10 : 12 : 8;
-            c4233yr.f(13);
-            Object[] objArr = {Integer.valueOf(h12)};
-            String str = AbstractC3159eu.f29993a;
+            int h10 = c4256yr.h(3);
+            int h11 = c4256yr.h(5);
+            boolean g9 = c4256yr.g();
+            int i6 = c4256yr.g() ? true != c4256yr.g() ? 10 : 12 : 8;
+            c4256yr.f(13);
+            Object[] objArr = {Integer.valueOf(h11)};
+            String str = AbstractC3182eu.f30782a;
             Locale locale = Locale.US;
             String format = String.format(locale, "%02d", objArr);
-            String str2 = true != g4 ? "M" : "H";
-            String format2 = String.format(locale, "%02d", Integer.valueOf(i9));
-            StringBuilder sb2 = new StringBuilder(String.valueOf(h11).length() + 6 + format.length() + 2 + format2.length());
+            String str2 = true != g9 ? "M" : "H";
+            String format2 = String.format(locale, "%02d", Integer.valueOf(i6));
+            StringBuilder sb2 = new StringBuilder(String.valueOf(h10).length() + 6 + format.length() + 2 + format2.length());
             sb2.append("av01.");
-            sb2.append(h11);
-            sb2.append(com.anythink.core.common.d.j.f12378z);
+            sb2.append(h10);
+            sb2.append(com.anythink.core.common.d.j.f13164z);
             sb2.append(format);
             sb2.append(str2);
-            sb2.append(com.anythink.core.common.d.j.f12378z);
+            sb2.append(com.anythink.core.common.d.j.f13164z);
             sb2.append(format2);
             String sb3 = sb2.toString();
-            if (c4233yr.b() <= 0) {
-                return new C0(sb3, i9, -1, -1, -1);
+            if (c4256yr.b() <= 0) {
+                return new C0(sb3, i6, -1, -1, -1);
             }
-            c4233yr.e();
-            int h13 = c4233yr.h(4);
-            if (h13 != 1) {
-                StringBuilder sb4 = new StringBuilder(String.valueOf(h13).length() + 22);
+            c4256yr.e();
+            int h12 = c4256yr.h(4);
+            if (h12 != 1) {
+                StringBuilder sb4 = new StringBuilder(String.valueOf(h12).length() + 22);
                 sb4.append("Unsupported obu_type: ");
-                sb4.append(h13);
-                AbstractC2968bG.t("Av1Config", sb4.toString());
-                return new C0(sb3, i9, -1, -1, -1);
+                sb4.append(h12);
+                AbstractC2991bG.t("Av1Config", sb4.toString());
+                return new C0(sb3, i6, -1, -1, -1);
             }
-            if (c4233yr.g()) {
-                AbstractC2968bG.t("Av1Config", "Unsupported obu_extension_flag");
-                return new C0(sb3, i9, -1, -1, -1);
+            if (c4256yr.g()) {
+                AbstractC2991bG.t("Av1Config", "Unsupported obu_extension_flag");
+                return new C0(sb3, i6, -1, -1, -1);
             }
-            boolean g9 = c4233yr.g();
-            c4233yr.e();
-            if (g9 && c4233yr.h(8) > 127) {
-                AbstractC2968bG.t("Av1Config", "Excessive obu_size");
-                return new C0(sb3, i9, -1, -1, -1);
+            boolean g10 = c4256yr.g();
+            c4256yr.e();
+            if (g10 && c4256yr.h(8) > 127) {
+                AbstractC2991bG.t("Av1Config", "Excessive obu_size");
+                return new C0(sb3, i6, -1, -1, -1);
             }
-            int h14 = c4233yr.h(3);
-            c4233yr.e();
-            if (c4233yr.g()) {
-                AbstractC2968bG.t("Av1Config", "Unsupported reduced_still_picture_header");
-                return new C0(sb3, i9, -1, -1, -1);
+            int h13 = c4256yr.h(3);
+            c4256yr.e();
+            if (c4256yr.g()) {
+                AbstractC2991bG.t("Av1Config", "Unsupported reduced_still_picture_header");
+                return new C0(sb3, i6, -1, -1, -1);
             }
-            if (c4233yr.g()) {
-                AbstractC2968bG.t("Av1Config", "Unsupported timing_info_present_flag");
-                return new C0(sb3, i9, -1, -1, -1);
+            if (c4256yr.g()) {
+                AbstractC2991bG.t("Av1Config", "Unsupported timing_info_present_flag");
+                return new C0(sb3, i6, -1, -1, -1);
             }
-            if (c4233yr.g()) {
-                AbstractC2968bG.t("Av1Config", "Unsupported initial_display_delay_present_flag");
-                return new C0(sb3, i9, -1, -1, -1);
+            if (c4256yr.g()) {
+                AbstractC2991bG.t("Av1Config", "Unsupported initial_display_delay_present_flag");
+                return new C0(sb3, i6, -1, -1, -1);
             }
-            int h15 = c4233yr.h(5);
-            boolean z3 = false;
-            for (int i10 = 0; i10 <= h15; i10++) {
-                c4233yr.f(12);
-                if (c4233yr.h(5) > 7) {
-                    c4233yr.e();
+            int h14 = c4256yr.h(5);
+            boolean z6 = false;
+            for (int i9 = 0; i9 <= h14; i9++) {
+                c4256yr.f(12);
+                if (c4256yr.h(5) > 7) {
+                    c4256yr.e();
                 }
             }
-            int h16 = c4233yr.h(4);
-            int h17 = c4233yr.h(4);
-            c4233yr.f(h16 + 1);
-            c4233yr.f(h17 + 1);
-            if (c4233yr.g()) {
+            int h15 = c4256yr.h(4);
+            int h16 = c4256yr.h(4);
+            c4256yr.f(h15 + 1);
+            c4256yr.f(h16 + 1);
+            if (c4256yr.g()) {
                 i = 7;
-                c4233yr.f(7);
+                c4256yr.f(7);
             } else {
                 i = 7;
             }
-            c4233yr.f(i);
-            boolean g10 = c4233yr.g();
-            if (g10) {
-                c4233yr.f(2);
+            c4256yr.f(i);
+            boolean g11 = c4256yr.g();
+            if (g11) {
+                c4256yr.f(2);
             }
-            if (!c4233yr.g()) {
+            if (!c4256yr.g()) {
             }
-            if (!c4233yr.g()) {
-                c4233yr.f(1);
+            if (!c4256yr.g()) {
+                c4256yr.f(1);
             }
-            if (g10) {
-                c4233yr.f(3);
+            if (g11) {
+                c4256yr.f(3);
             }
-            c4233yr.f(3);
-            boolean g11 = c4233yr.g();
-            if (h14 == 2) {
-                if (g11) {
-                    c4233yr.e();
+            c4256yr.f(3);
+            boolean g12 = c4256yr.g();
+            if (h13 == 2) {
+                if (g12) {
+                    c4256yr.e();
                 }
-            } else if (h14 == 1) {
-                if (c4233yr.g()) {
-                    return new C0(sb3, i9, -1, -1, -1);
+            } else if (h13 == 1) {
+                if (c4256yr.g()) {
+                    return new C0(sb3, i6, -1, -1, -1);
                 }
-                int h18 = c4233yr.h(8);
-                int h19 = c4233yr.h(8);
-                int h20 = c4233yr.h(8);
-                if (!z3 && h18 == 1) {
-                    if (h19 == 13) {
-                        if (h20 == 0) {
-                            h18 = 1;
-                            h9 = 1;
-                            i6 = 13;
-                            return new C0(sb3, i9, KJ.b(h18), h9 == 1 ? 1 : 2, KJ.c(i6));
+                int h17 = c4256yr.h(8);
+                int h18 = c4256yr.h(8);
+                int h19 = c4256yr.h(8);
+                if (!z6 && h17 == 1) {
+                    if (h18 == 13) {
+                        if (h19 == 0) {
+                            h17 = 1;
+                            h3 = 1;
+                            i4 = 13;
+                            return new C0(sb3, i6, KJ.b(h17), h3 == 1 ? 1 : 2, KJ.c(i4));
                         }
-                        h18 = 1;
-                        i6 = 13;
-                        h9 = c4233yr.h(1);
-                        return new C0(sb3, i9, KJ.b(h18), h9 == 1 ? 1 : 2, KJ.c(i6));
+                        h17 = 1;
+                        i4 = 13;
+                        h3 = c4256yr.h(1);
+                        return new C0(sb3, i6, KJ.b(h17), h3 == 1 ? 1 : 2, KJ.c(i4));
                     }
-                    h18 = 1;
+                    h17 = 1;
                 }
-                i6 = h19;
-                h9 = c4233yr.h(1);
-                return new C0(sb3, i9, KJ.b(h18), h9 == 1 ? 1 : 2, KJ.c(i6));
+                i4 = h18;
+                h3 = c4256yr.h(1);
+                return new C0(sb3, i6, KJ.b(h17), h3 == 1 ? 1 : 2, KJ.c(i4));
             }
-            if (c4233yr.g()) {
-                z3 = true;
+            if (c4256yr.g()) {
+                z6 = true;
             }
-            if (c4233yr.g()) {
+            if (c4256yr.g()) {
             }
         } catch (RuntimeException e9) {
             throw U4.a(e9, "Error parsing AV1 config");
@@ -187,12 +187,12 @@ public class C0 implements H2 {
         }
         synchronized (this) {
             try {
-                Object obj2 = ((LinkedHashMap) this.f24007y).get(obj);
+                Object obj2 = ((LinkedHashMap) this.f24770y).get(obj);
                 if (obj2 != null) {
-                    this.f24005w++;
+                    this.f24768w++;
                     return obj2;
                 }
-                this.f24006x++;
+                this.f24769x++;
                 return null;
             } catch (Throwable th) {
                 throw th;
@@ -214,29 +214,29 @@ public class C0 implements H2 {
         }
         synchronized (this) {
             try {
-                this.f24003u++;
-                put = ((LinkedHashMap) this.f24007y).put(obj, obj2);
+                this.f24766u++;
+                put = ((LinkedHashMap) this.f24770y).put(obj, obj2);
                 if (put != null) {
-                    this.f24003u--;
+                    this.f24766u--;
                 }
             } finally {
             }
         }
-        int i = this.f24004v;
+        int i = this.f24767v;
         while (true) {
             synchronized (this) {
                 try {
-                    if (this.f24003u < 0 || (((LinkedHashMap) this.f24007y).isEmpty() && this.f24003u != 0)) {
+                    if (this.f24766u < 0 || (((LinkedHashMap) this.f24770y).isEmpty() && this.f24766u != 0)) {
                         break;
                     }
-                    if (this.f24003u <= i || ((LinkedHashMap) this.f24007y).isEmpty()) {
+                    if (this.f24766u <= i || ((LinkedHashMap) this.f24770y).isEmpty()) {
                         break;
                     }
-                    Map.Entry entry = (Map.Entry) ((LinkedHashMap) this.f24007y).entrySet().iterator().next();
+                    Map.Entry entry = (Map.Entry) ((LinkedHashMap) this.f24770y).entrySet().iterator().next();
                     Object key = entry.getKey();
                     entry.getValue();
-                    ((LinkedHashMap) this.f24007y).remove(key);
-                    this.f24003u--;
+                    ((LinkedHashMap) this.f24770y).remove(key);
+                    this.f24766u--;
                 } finally {
                 }
             }
@@ -246,16 +246,16 @@ public class C0 implements H2 {
 
     @Override // com.google.android.gms.internal.ads.H2
     public int c() {
-        return this.f24003u;
+        return this.f24766u;
     }
 
     public void e() {
-        int i = this.f24006x + 1;
-        this.f24006x = i;
+        int i = this.f24769x + 1;
+        this.f24769x = i;
         if (i == 8) {
-            this.f24006x = 0;
-            int i6 = this.f24005w;
-            this.f24005w = i6 + (true == o(i6 + 1) ? 2 : 1);
+            this.f24769x = 0;
+            int i4 = this.f24768w;
+            this.f24768w = i4 + (true == o(i4 + 1) ? 2 : 1);
         }
         p();
     }
@@ -266,124 +266,124 @@ public class C0 implements H2 {
     }
 
     public long g() {
-        int i = this.f24005w;
+        int i = this.f24768w;
         if (i == 0) {
             throw new NoSuchElementException();
         }
-        long[] jArr = (long[]) this.f24007y;
-        int i6 = this.f24003u;
-        long j6 = jArr[i6];
-        this.f24003u = this.f24006x & (i6 + 1);
-        this.f24005w = i - 1;
+        long[] jArr = (long[]) this.f24770y;
+        int i4 = this.f24766u;
+        long j6 = jArr[i4];
+        this.f24766u = this.f24769x & (i4 + 1);
+        this.f24768w = i - 1;
         return j6;
     }
 
     public void h(int i) {
-        int i6 = this.f24005w;
-        int i9 = i / 8;
-        int i10 = i6 + i9;
-        this.f24005w = i10;
-        int i11 = (i - (i9 * 8)) + this.f24006x;
-        this.f24006x = i11;
-        if (i11 > 7) {
-            this.f24005w = i10 + 1;
-            this.f24006x = i11 - 8;
+        int i4 = this.f24768w;
+        int i6 = i / 8;
+        int i9 = i4 + i6;
+        this.f24768w = i9;
+        int i10 = (i - (i6 * 8)) + this.f24769x;
+        this.f24769x = i10;
+        if (i10 > 7) {
+            this.f24768w = i9 + 1;
+            this.f24769x = i10 - 8;
         }
         while (true) {
-            i6++;
-            if (i6 > this.f24005w) {
+            i4++;
+            if (i4 > this.f24768w) {
                 p();
                 return;
-            } else if (o(i6)) {
-                this.f24005w++;
-                i6 += 2;
+            } else if (o(i4)) {
+                this.f24768w++;
+                i4 += 2;
             }
         }
     }
 
     @Override // com.google.android.gms.internal.ads.H2
     public int i() {
-        Cr cr = (Cr) this.f24007y;
-        int i = this.f24004v;
+        Cr cr = (Cr) this.f24770y;
+        int i = this.f24767v;
         if (i == 8) {
             return cr.K();
         }
         if (i == 16) {
             return cr.L();
         }
-        int i6 = this.f24005w;
-        this.f24005w = i6 + 1;
-        if (i6 % 2 != 0) {
-            return this.f24006x & 15;
+        int i4 = this.f24768w;
+        this.f24768w = i4 + 1;
+        if (i4 % 2 != 0) {
+            return this.f24769x & 15;
         }
         int K7 = cr.K();
-        this.f24006x = K7;
+        this.f24769x = K7;
         return (K7 & 240) >> 4;
     }
 
     public boolean j(int i) {
-        int i6;
-        int i9 = this.f24005w;
-        int i10 = i / 8;
-        int i11 = i9 + i10;
-        int i12 = (this.f24006x + i) - (i10 * 8);
-        if (i12 > 7) {
-            i11++;
-            i12 -= 8;
+        int i4;
+        int i6 = this.f24768w;
+        int i9 = i / 8;
+        int i10 = i6 + i9;
+        int i11 = (this.f24769x + i) - (i9 * 8);
+        if (i11 > 7) {
+            i10++;
+            i11 -= 8;
         }
         while (true) {
-            i9++;
-            i6 = this.f24003u;
-            if (i9 > i11 || i11 > i6) {
+            i6++;
+            i4 = this.f24766u;
+            if (i6 > i10 || i10 > i4) {
                 break;
             }
-            if (o(i9)) {
-                i11++;
-                i9 += 2;
+            if (o(i6)) {
+                i10++;
+                i6 += 2;
             }
         }
-        if (i11 >= i6) {
-            return i11 == i6 && i12 == 0;
+        if (i10 >= i4) {
+            return i10 == i4 && i11 == 0;
         }
         return true;
     }
 
     public boolean k() {
-        int i = ((byte[]) this.f24007y)[this.f24005w] & (128 >> this.f24006x);
+        int i = ((byte[]) this.f24770y)[this.f24768w] & (128 >> this.f24769x);
         e();
         return i != 0;
     }
 
     public int l(int i) {
-        int i6;
+        int i4;
         byte[] bArr;
-        this.f24006x += i;
-        int i9 = 0;
+        this.f24769x += i;
+        int i6 = 0;
         while (true) {
-            i6 = this.f24006x;
-            bArr = (byte[]) this.f24007y;
-            if (i6 <= 8) {
+            i4 = this.f24769x;
+            bArr = (byte[]) this.f24770y;
+            if (i4 <= 8) {
                 break;
             }
-            int i10 = i6 - 8;
-            this.f24006x = i10;
-            int i11 = this.f24005w;
-            i9 |= (bArr[i11] & 255) << i10;
-            if (true != o(i11 + 1)) {
+            int i9 = i4 - 8;
+            this.f24769x = i9;
+            int i10 = this.f24768w;
+            i6 |= (bArr[i10] & 255) << i9;
+            if (true != o(i10 + 1)) {
                 r3 = 1;
             }
-            this.f24005w = i11 + r3;
+            this.f24768w = i10 + r3;
         }
-        int i12 = this.f24005w;
-        int i13 = i9 | ((bArr[i12] & 255) >> (8 - i6));
-        int i14 = 32 - i;
-        if (i6 == 8) {
-            this.f24006x = 0;
-            this.f24005w = i12 + (true != o(i12 + 1) ? 1 : 2);
+        int i11 = this.f24768w;
+        int i12 = i6 | ((bArr[i11] & 255) >> (8 - i4));
+        int i13 = 32 - i;
+        if (i4 == 8) {
+            this.f24769x = 0;
+            this.f24768w = i11 + (true != o(i11 + 1) ? 1 : 2);
         }
-        int i15 = ((-1) >>> i14) & i13;
+        int i14 = ((-1) >>> i13) & i12;
         p();
-        return i15;
+        return i14;
     }
 
     public int m() {
@@ -401,36 +401,36 @@ public class C0 implements H2 {
     }
 
     public boolean o(int i) {
-        int i6 = i - 2;
-        if (this.f24004v > i6 || i >= this.f24003u) {
+        int i4 = i - 2;
+        if (this.f24767v > i4 || i >= this.f24766u) {
             return false;
         }
-        byte[] bArr = (byte[]) this.f24007y;
-        return bArr[i] == 3 && bArr[i6] == 0 && bArr[i + (-1)] == 0;
+        byte[] bArr = (byte[]) this.f24770y;
+        return bArr[i] == 3 && bArr[i4] == 0 && bArr[i + (-1)] == 0;
     }
 
     public void p() {
         int i;
-        int i6 = this.f24005w;
-        boolean z3 = false;
-        if (i6 >= 0 && (i6 < (i = this.f24003u) || (i6 == i && this.f24006x == 0))) {
-            z3 = true;
+        int i4 = this.f24768w;
+        boolean z6 = false;
+        if (i4 >= 0 && (i4 < (i = this.f24766u) || (i4 == i && this.f24769x == 0))) {
+            z6 = true;
         }
-        AbstractC2772Sd.H(z3);
+        AbstractC2792Sd.H(z6);
     }
 
     public synchronized String toString() {
         String str;
-        switch (this.f24002n) {
+        switch (this.f24765n) {
             case 4:
                 synchronized (this) {
                     try {
-                        int i = this.f24005w;
-                        int i6 = this.f24006x;
-                        int i9 = i + i6;
-                        int i10 = i9 != 0 ? (i * 100) / i9 : 0;
+                        int i = this.f24768w;
+                        int i4 = this.f24769x;
+                        int i6 = i + i4;
+                        int i9 = i6 != 0 ? (i * 100) / i6 : 0;
                         Locale locale = Locale.US;
-                        str = "LruCache[maxSize=" + this.f24004v + ",hits=" + i + ",misses=" + i6 + ",hitRate=" + i10 + "%]";
+                        str = "LruCache[maxSize=" + this.f24767v + ",hits=" + i + ",misses=" + i4 + ",hitRate=" + i9 + "%]";
                     } catch (Throwable th) {
                         throw th;
                     }
@@ -441,39 +441,39 @@ public class C0 implements H2 {
         }
     }
 
-    public C0(String str, int i, int i6, int i9, int i10) {
-        this.f24002n = 0;
-        this.f24003u = i;
-        this.f24007y = str;
-        this.f24004v = i6;
-        this.f24005w = i9;
-        this.f24006x = i10;
+    public C0(String str, int i, int i4, int i6, int i9) {
+        this.f24765n = 0;
+        this.f24766u = i;
+        this.f24770y = str;
+        this.f24767v = i4;
+        this.f24768w = i6;
+        this.f24769x = i9;
     }
 
     public C0(Zw zw) {
-        this.f24002n = 1;
-        Cr cr = zw.f28980c;
-        this.f24007y = cr;
+        this.f24765n = 1;
+        Cr cr = zw.f29750c;
+        this.f24770y = cr;
         cr.E(12);
-        this.f24004v = cr.h() & com.anythink.basead.exoplayer.k.p.f8473b;
-        this.f24003u = cr.h();
+        this.f24767v = cr.h() & com.anythink.basead.exoplayer.k.p.f9259b;
+        this.f24766u = cr.h();
     }
 
-    public C0(byte[] bArr, int i, int i6) {
-        this.f24002n = 3;
-        this.f24007y = bArr;
-        this.f24004v = i;
-        this.f24005w = i;
-        this.f24003u = i6;
-        this.f24006x = 0;
+    public C0(byte[] bArr, int i, int i4) {
+        this.f24765n = 3;
+        this.f24770y = bArr;
+        this.f24767v = i;
+        this.f24768w = i;
+        this.f24766u = i4;
+        this.f24769x = 0;
         p();
     }
 
     public C0(int i) {
-        this.f24002n = 4;
+        this.f24765n = 4;
         if (i > 0) {
-            this.f24004v = i;
-            this.f24007y = new LinkedHashMap(0, 0.75f, true);
+            this.f24767v = i;
+            this.f24770y = new LinkedHashMap(0, 0.75f, true);
             return;
         }
         throw new IllegalArgumentException("maxSize <= 0");

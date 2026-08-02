@@ -34,17 +34,17 @@ public enum h implements o {
 
 
     /* renamed from: T, reason: collision with root package name */
-    public static final g f1352T;
+    public static final g f1382T;
 
     /* renamed from: n, reason: collision with root package name */
-    public final int f1360n;
+    public final int f1390n;
 
     static {
         h hVar = SEVERITY_NUMBER_UNSPECIFIED;
-        f1352T = new g(c6.d.f5578u, s.a(h.class), n.f5619v, hVar);
+        f1382T = new g(c6.d.f5754u, s.a(h.class), n.f5795v, hVar);
     }
 
     h(int i) {
-        this.f1360n = i;
+        this.f1390n = i;
     }
 }

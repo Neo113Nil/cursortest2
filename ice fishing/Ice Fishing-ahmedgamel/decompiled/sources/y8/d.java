@@ -6,24 +6,24 @@ import java.io.Closeable;
 public final class d implements Closeable {
 
     /* renamed from: n, reason: collision with root package name */
-    public e f41948n;
+    public e f41919n;
 
     /* renamed from: u, reason: collision with root package name */
-    public boolean f41949u;
+    public boolean f41920u;
 
     /* renamed from: v, reason: collision with root package name */
-    public byte[] f41950v;
+    public byte[] f41921v;
 
     /* renamed from: w, reason: collision with root package name */
-    public int f41951w = -1;
+    public int f41922w = -1;
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
-        if (this.f41948n == null) {
+        if (this.f41919n == null) {
             throw new IllegalStateException("not attached to a buffer");
         }
-        this.f41948n = null;
-        this.f41950v = null;
-        this.f41951w = -1;
+        this.f41919n = null;
+        this.f41921v = null;
+        this.f41922w = -1;
     }
 }

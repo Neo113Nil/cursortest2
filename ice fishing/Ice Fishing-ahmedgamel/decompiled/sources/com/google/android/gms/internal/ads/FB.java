@@ -7,31 +7,31 @@ import java.util.Objects;
 public final class FB implements Map.Entry {
 
     /* renamed from: n, reason: collision with root package name */
-    public final Object f24754n;
+    public final Object f25510n;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f24755u;
+    public int f25511u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final /* synthetic */ GB f24756v;
+    public final /* synthetic */ GB f25512v;
 
     public FB(GB gb, int i) {
         Objects.requireNonNull(gb);
-        this.f24756v = gb;
-        this.f24754n = gb.c()[i];
-        this.f24755u = i;
+        this.f25512v = gb;
+        this.f25510n = gb.c()[i];
+        this.f25511u = i;
     }
 
     public final void a() {
-        int i = this.f24755u;
-        Object obj = this.f24754n;
-        GB gb = this.f24756v;
+        int i = this.f25511u;
+        Object obj = this.f25510n;
+        GB gb = this.f25512v;
         if (i != -1 && i < gb.size()) {
-            if (Objects.equals(obj, gb.c()[this.f24755u])) {
+            if (Objects.equals(obj, gb.c()[this.f25511u])) {
                 return;
             }
         }
-        this.f24755u = gb.j(obj);
+        this.f25511u = gb.j(obj);
     }
 
     @Override // java.util.Map.Entry
@@ -47,18 +47,18 @@ public final class FB implements Map.Entry {
 
     @Override // java.util.Map.Entry
     public final Object getKey() {
-        return this.f24754n;
+        return this.f25510n;
     }
 
     @Override // java.util.Map.Entry
     public final Object getValue() {
-        GB gb = this.f24756v;
-        Map f3 = gb.f();
-        if (f3 != null) {
-            return f3.get(this.f24754n);
+        GB gb = this.f25512v;
+        Map f2 = gb.f();
+        if (f2 != null) {
+            return f2.get(this.f25510n);
         }
         a();
-        int i = this.f24755u;
+        int i = this.f25511u;
         if (i == -1) {
             return null;
         }
@@ -74,26 +74,26 @@ public final class FB implements Map.Entry {
 
     @Override // java.util.Map.Entry
     public final Object setValue(Object obj) {
-        GB gb = this.f24756v;
-        Map f3 = gb.f();
-        Object obj2 = this.f24754n;
-        if (f3 != null) {
-            return f3.put(obj2, obj);
+        GB gb = this.f25512v;
+        Map f2 = gb.f();
+        Object obj2 = this.f25510n;
+        if (f2 != null) {
+            return f2.put(obj2, obj);
         }
         a();
-        int i = this.f24755u;
+        int i = this.f25511u;
         if (i == -1) {
             gb.put(obj2, obj);
             return null;
         }
         Object obj3 = gb.d()[i];
-        gb.d()[this.f24755u] = obj;
+        gb.d()[this.f25511u] = obj;
         return obj3;
     }
 
     public final String toString() {
         String valueOf = String.valueOf(getKey());
         String valueOf2 = String.valueOf(getValue());
-        return D.y.s(new StringBuilder(valueOf.length() + 1 + valueOf2.length()), valueOf, "=", valueOf2);
+        return D.x.p(new StringBuilder(valueOf.length() + 1 + valueOf2.length()), valueOf, "=", valueOf2);
     }
 }

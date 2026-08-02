@@ -12,16 +12,16 @@ public abstract class WI {
     public static final AtomicReference<String> A01;
     public static final AtomicReference<String> A02;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 54);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 54);
         }
         return new String(copyOfRange);
     }
 
     public static void A09() {
-        A00 = new byte[]{31, 34, 59, 52, 62, 52, 56, 62, 52, 57, 61, 52, 52, 58, 52, 61, 60, 34, 111, 120, 106, 126, 11, 69, c.f16317b, 74, 83, 123, 72, 75, 67, 67, 77, 74, 67, 11, 114, 60, 57, 51, 42, 2, 46, 36, 51, 62, 111, 44, 109, 102, 119, 116, 108, 113, 104, 92, 98, 103, 112, 92, 96, 108, 110, 110, 108, 109, 37, 57, 57, 61, 62, 119, 98, 98, 42, c.f16318c, 44, 61, 37, 104, 62, 99, 43, 44, 46, 40, 47, 34, 34, 38, 99, 46, 34, 32, 81, 77, 77, 73, 74, 3, 22, 22, 78, 78, 78, 28, 74, 23, 95, 88, 90, 92, 91, 86, 86, 82, 23, 90, 86, 84, 14, 14, 14};
+        A00 = new byte[]{31, 34, 59, 52, 62, 52, 56, 62, 52, 57, 61, 52, 52, 58, 52, 61, 60, 34, 111, 120, 106, 126, 11, 69, c.f17104b, 74, 83, 123, 72, 75, 67, 67, 77, 74, 67, 11, 114, 60, 57, 51, 42, 2, 46, 36, 51, 62, 111, 44, 109, 102, 119, 116, 108, 113, 104, 92, 98, 103, 112, 92, 96, 108, 110, 110, 108, 109, 37, 57, 57, 61, 62, 119, 98, 98, 42, c.f17105c, 44, 61, 37, 104, 62, 99, 43, 44, 46, 40, 47, 34, 34, 38, 99, 46, 34, 32, 81, 77, 77, 73, 74, 3, 22, 22, 78, 78, 78, 28, 74, 23, 95, 88, 90, 92, 91, 86, 86, 82, 23, 90, 86, 84, 14, 14, 14};
     }
 
     static {
@@ -35,7 +35,7 @@ public abstract class WI {
     }
 
     public static String A02(T8 t82) {
-        String loggingEndpointPrefix = C1290Up.A0X(t82);
+        String loggingEndpointPrefix = C1310Up.A0X(t82);
         StringBuilder append = new StringBuilder().append(A07(t82, loggingEndpointPrefix));
         String loggingEndpointPrefix2 = A00(22, 14, 18);
         return append.append(loggingEndpointPrefix2).toString();
@@ -46,7 +46,7 @@ public abstract class WI {
     }
 
     public static String A04(T8 t82) {
-        String syncEndpointPrefix = C1290Up.A0Y(t82);
+        String syncEndpointPrefix = C1310Up.A0Y(t82);
         StringBuilder append = new StringBuilder().append(A07(t82, syncEndpointPrefix));
         String syncEndpointPrefix2 = A00(36, 11, 107);
         return append.append(syncEndpointPrefix2).toString();

@@ -1,10 +1,10 @@
 package com.anythink.core.common.s.a;
 
-import D.y;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.text.TextUtils;
 import com.anythink.core.common.s.a.b;
+import com.google.android.gms.internal.ads.Wv;
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -19,26 +19,26 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class g extends com.anythink.core.common.s.a.a {
 
     /* renamed from: S, reason: collision with root package name */
-    public static final int f16337S = 0;
+    public static final int f17124S = 0;
 
     /* renamed from: T, reason: collision with root package name */
-    public static final int f16338T = 1;
+    public static final int f17125T = 1;
 
     /* renamed from: U, reason: collision with root package name */
-    public static final int f16339U = 2;
+    public static final int f17126U = 2;
 
     /* renamed from: W, reason: collision with root package name */
-    private static final String f16340W = "g";
+    private static final String f17127W = "g";
 
     /* renamed from: V, reason: collision with root package name */
-    boolean f16341V;
+    boolean f17128V;
 
     /* renamed from: X, reason: collision with root package name */
-    private FileChannel f16342X;
+    private FileChannel f17129X;
     private FileChannel Y;
 
     /* renamed from: Z, reason: collision with root package name */
-    private MappedByteBuffer f16343Z;
+    private MappedByteBuffer f17130Z;
     private MappedByteBuffer aa;
     private int ab;
     private int ac;
@@ -46,45 +46,45 @@ public final class g extends com.anythink.core.common.s.a.a {
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        static final Map<String, g> f16344a = new ConcurrentHashMap();
+        static final Map<String, g> f17131a = new ConcurrentHashMap();
 
         /* renamed from: b, reason: collision with root package name */
-        private String f16345b;
+        private String f17132b;
 
         /* renamed from: c, reason: collision with root package name */
-        private String f16346c;
+        private String f17133c;
 
         /* renamed from: d, reason: collision with root package name */
-        private com.anythink.core.common.s.a.a.b[] f16347d;
+        private com.anythink.core.common.s.a.a.b[] f17134d;
 
         /* renamed from: e, reason: collision with root package name */
-        private com.anythink.core.common.s.a.a.a f16348e;
+        private com.anythink.core.common.s.a.a.a f17135e;
 
         /* renamed from: f, reason: collision with root package name */
-        private int f16349f = 0;
+        private int f17136f = 0;
 
         private a(Context context, String str) {
             if (context == null || TextUtils.isEmpty(str)) {
                 return;
             }
-            this.f16345b = context.getFilesDir().getAbsolutePath() + "/tktp/";
-            this.f16346c = str;
+            this.f17132b = context.getFilesDir().getAbsolutePath() + "/tktp/";
+            this.f17133c = str;
         }
 
         private a a(com.anythink.core.common.s.a.a.b[] bVarArr) {
-            this.f16347d = bVarArr;
+            this.f17134d = bVarArr;
             return this;
         }
 
         private a b() {
-            this.f16349f = 1;
+            this.f17136f = 1;
             return this;
         }
 
         private g c() {
             g gVar;
-            String str = this.f16345b + this.f16346c;
-            Map<String, g> map = f16344a;
+            String str = this.f17132b + this.f17133c;
+            Map<String, g> map = f17131a;
             g gVar2 = map.get(str);
             if (gVar2 != null) {
                 return gVar2;
@@ -93,7 +93,7 @@ public final class g extends com.anythink.core.common.s.a.a {
                 try {
                     gVar = map.get(str);
                     if (gVar == null) {
-                        g gVar3 = new g(this.f16345b, this.f16346c, this.f16347d, this.f16348e, this.f16349f);
+                        g gVar3 = new g(this.f17132b, this.f17133c, this.f17134d, this.f17135e, this.f17136f);
                         map.put(str, gVar3);
                         gVar = gVar3;
                     }
@@ -105,12 +105,12 @@ public final class g extends com.anythink.core.common.s.a.a {
         }
 
         private a a(com.anythink.core.common.s.a.a.a aVar) {
-            this.f16348e = aVar;
+            this.f17135e = aVar;
             return this;
         }
 
         private a a() {
-            this.f16349f = 2;
+            this.f17136f = 2;
             return this;
         }
 
@@ -118,14 +118,14 @@ public final class g extends com.anythink.core.common.s.a.a {
             if (TextUtils.isEmpty(str) || TextUtils.isEmpty(str2)) {
                 return;
             }
-            this.f16345b = str.endsWith("/") ? str : str.concat("/");
-            this.f16346c = str2;
+            this.f17132b = str.endsWith("/") ? str : str.concat("/");
+            this.f17133c = str2;
         }
     }
 
     public g(String str, String str2, com.anythink.core.common.s.a.a.b[] bVarArr, com.anythink.core.common.s.a.a.a aVar, int i) {
         super(str, str2, bVarArr, aVar);
-        this.f16341V = true;
+        this.f17128V = true;
         this.ac = i;
         k();
     }
@@ -135,59 +135,59 @@ public final class g extends com.anythink.core.common.s.a.a {
             if (mappedByteBuffer.capacity() < 12) {
                 throw new IllegalArgumentException("Buffer capacity too small for checksum");
             }
-            mappedByteBuffer.putLong(4, this.f16280B);
+            mappedByteBuffer.putLong(4, this.f17067B);
             int i = this.ab;
             if (i != 0) {
                 if (i < 0 || i >= mappedByteBuffer.capacity()) {
                     throw new IllegalArgumentException("removeStart out of bounds: " + this.ab);
                 }
-                int i6 = this.ab;
-                byte[] bArr = this.f16283E.f16334a;
-                if (i6 >= bArr.length) {
+                int i4 = this.ab;
+                byte[] bArr = this.f17070E.f17121a;
+                if (i4 >= bArr.length) {
                     throw new IllegalArgumentException("fastBuffer.hb index out of bounds: " + this.ab);
                 }
-                mappedByteBuffer.put(i6, bArr[i6]);
+                mappedByteBuffer.put(i4, bArr[i4]);
             }
-            int i9 = this.f16285G;
-            if (i9 != 0) {
-                int i10 = this.f16284F;
-                if (i10 < 0 || i9 < 0 || i9 + i10 > this.f16283E.f16334a.length) {
+            int i6 = this.f17072G;
+            if (i6 != 0) {
+                int i9 = this.f17071F;
+                if (i9 < 0 || i6 < 0 || i6 + i9 > this.f17070E.f17121a.length) {
                     throw new IllegalArgumentException("Invalid update range");
                 }
-                if (i10 <= mappedByteBuffer.capacity()) {
+                if (i9 <= mappedByteBuffer.capacity()) {
                     int capacity = mappedByteBuffer.capacity();
-                    int i11 = this.f16284F;
-                    if (capacity - i11 >= this.f16285G) {
-                        mappedByteBuffer.position(i11);
-                        mappedByteBuffer.put(this.f16283E.f16334a, this.f16284F, this.f16285G);
+                    int i10 = this.f17071F;
+                    if (capacity - i10 >= this.f17072G) {
+                        mappedByteBuffer.position(i10);
+                        mappedByteBuffer.put(this.f17070E.f17121a, this.f17071F, this.f17072G);
                         return;
                     }
                 }
                 throw new IllegalArgumentException("buffer capacity overflow");
             }
         } catch (Throwable th) {
-            y.w("sp_mmap_error", "spName: " + this.f16299w + " errorMsg: " + th.getMessage());
+            com.IceFishing.LiveIceFishing.k.x("sp_mmap_error", "spName: " + this.f17086w + " errorMsg: " + th.getMessage());
         }
     }
 
     private void e(int i) {
-        int i6 = com.anythink.core.common.s.a.a.f16275r;
-        int a9 = com.anythink.core.common.s.a.a.a(i6, i + i6);
-        byte[] bArr = this.f16283E.f16334a;
+        int i4 = com.anythink.core.common.s.a.a.f17062r;
+        int a9 = com.anythink.core.common.s.a.a.a(i4, i + i4);
+        byte[] bArr = this.f17070E.f17121a;
         if (a9 >= bArr.length) {
             return;
         }
         byte[] bArr2 = new byte[a9];
-        System.arraycopy(bArr, 0, bArr2, 0, this.f16279A);
-        this.f16283E.f16334a = bArr2;
+        System.arraycopy(bArr, 0, bArr2, 0, this.f17066A);
+        this.f17070E.f17121a = bArr2;
         if (this.ac == 0) {
             try {
                 long j6 = a9;
-                this.f16342X.truncate(j6);
-                FileChannel fileChannel = this.f16342X;
+                this.f17129X.truncate(j6);
+                FileChannel fileChannel = this.f17129X;
                 FileChannel.MapMode mapMode = FileChannel.MapMode.READ_WRITE;
                 MappedByteBuffer map = fileChannel.map(mapMode, 0L, j6);
-                this.f16343Z = map;
+                this.f17130Z = map;
                 ByteOrder byteOrder = ByteOrder.LITTLE_ENDIAN;
                 map.order(byteOrder);
                 this.Y.truncate(j6);
@@ -219,8 +219,8 @@ public final class g extends com.anythink.core.common.s.a.a {
         try {
             long nanoTime = System.nanoTime();
             if (!n() && this.ac == 0) {
-                File file2 = new File(this.f16298v, this.f16299w + ".kva");
-                File file3 = new File(this.f16298v, this.f16299w + ".kvb");
+                File file2 = new File(this.f17085v, this.f17086w + ".kva");
+                File file3 = new File(this.f17085v, this.f17086w + ".kvb");
                 try {
                 } catch (Exception e9) {
                     e = e9;
@@ -232,13 +232,13 @@ public final class g extends com.anythink.core.common.s.a.a {
                         RandomAccessFile randomAccessFile2 = new RandomAccessFile(file3, "rw");
                         long length = randomAccessFile.length();
                         long length2 = randomAccessFile2.length();
-                        this.f16342X = randomAccessFile.getChannel();
+                        this.f17129X = randomAccessFile.getChannel();
                         this.Y = randomAccessFile2.getChannel();
                         try {
-                            FileChannel fileChannel2 = this.f16342X;
+                            FileChannel fileChannel2 = this.f17129X;
                             mapMode = FileChannel.MapMode.READ_WRITE;
-                            MappedByteBuffer map = fileChannel2.map(mapMode, 0L, length > 0 ? length : com.anythink.core.common.s.a.a.f16275r);
-                            this.f16343Z = map;
+                            MappedByteBuffer map = fileChannel2.map(mapMode, 0L, length > 0 ? length : com.anythink.core.common.s.a.a.f17062r);
+                            this.f17130Z = map;
                             byteOrder = ByteOrder.LITTLE_ENDIAN;
                             map.order(byteOrder);
                             fileChannel = this.Y;
@@ -247,7 +247,7 @@ public final class g extends com.anythink.core.common.s.a.a {
                                 j9 = length2;
                             } else {
                                 file = file2;
-                                j9 = com.anythink.core.common.s.a.a.f16275r;
+                                j9 = com.anythink.core.common.s.a.a.f17062r;
                             }
                         } catch (IOException e10) {
                             e = e10;
@@ -258,46 +258,46 @@ public final class g extends com.anythink.core.common.s.a.a {
                             MappedByteBuffer map2 = fileChannel.map(mapMode, 0L, j9);
                             this.aa = map2;
                             map2.order(byteOrder);
-                            this.f16283E = new f(this.f16343Z.capacity());
+                            this.f17070E = new f(this.f17130Z.capacity());
                             if (length == 0 && length2 == 0) {
-                                this.f16279A = 12;
+                                this.f17066A = 12;
                             } else {
-                                int i = this.f16343Z.getInt();
-                                int i6 = i & (-1073741825);
+                                int i = this.f17130Z.getInt();
+                                int i4 = i & (-1073741825);
                                 boolean b9 = com.anythink.core.common.s.a.a.b(i);
-                                long j10 = this.f16343Z.getLong();
-                                int i9 = this.aa.getInt();
-                                int i10 = (-1073741825) & i9;
-                                boolean b10 = com.anythink.core.common.s.a.a.b(i9);
+                                long j10 = this.f17130Z.getLong();
+                                int i6 = this.aa.getInt();
+                                int i9 = (-1073741825) & i6;
+                                boolean b10 = com.anythink.core.common.s.a.a.b(i6);
                                 long j11 = this.aa.getLong();
                                 j6 = nanoTime;
-                                if (i6 >= 0 && i6 <= length - 12) {
-                                    this.f16279A = i6 + 12;
-                                    this.f16343Z.rewind();
-                                    this.f16343Z.get(this.f16283E.f16334a, 0, this.f16279A);
-                                    if (j10 == this.f16283E.b(12, i6) && a(b9)) {
-                                        this.f16280B = j10;
+                                if (i4 >= 0 && i4 <= length - 12) {
+                                    this.f17066A = i4 + 12;
+                                    this.f17130Z.rewind();
+                                    this.f17130Z.get(this.f17070E.f17121a, 0, this.f17066A);
+                                    if (j10 == this.f17070E.b(12, i4) && a(b9)) {
+                                        this.f17067B = j10;
                                         if (length == length2) {
                                             if (!m()) {
                                             }
                                         }
                                         b(new Exception("B file error"));
-                                        a(this.f16343Z, this.aa, this.f16279A);
+                                        a(this.f17130Z, this.aa, this.f17066A);
                                     }
                                 }
-                                if (i10 >= 0 && i10 <= length2 - 12) {
-                                    this.f16281C.clear();
+                                if (i9 >= 0 && i9 <= length2 - 12) {
+                                    this.f17068C.clear();
                                     e();
-                                    this.f16279A = i10 + 12;
-                                    if (this.f16283E.f16334a.length != this.aa.capacity()) {
-                                        this.f16283E = new f(this.aa.capacity());
+                                    this.f17066A = i9 + 12;
+                                    if (this.f17070E.f17121a.length != this.aa.capacity()) {
+                                        this.f17070E = new f(this.aa.capacity());
                                     }
                                     this.aa.rewind();
-                                    this.aa.get(this.f16283E.f16334a, 0, this.f16279A);
-                                    if (j11 == this.f16283E.b(12, i10) && a(b10)) {
+                                    this.aa.get(this.f17070E.f17121a, 0, this.f17066A);
+                                    if (j11 == this.f17070E.b(12, i9) && a(b10)) {
                                         b(new Exception("A file error"));
-                                        a(this.aa, this.f16343Z, this.f16279A);
-                                        this.f16280B = j11;
+                                        a(this.aa, this.f17130Z, this.f17066A);
+                                        this.f17067B = j11;
                                     }
                                 }
                                 b("both files error");
@@ -309,13 +309,13 @@ public final class g extends com.anythink.core.common.s.a.a {
                             a(e);
                             u();
                             a(file, file3);
-                            if (this.f16283E == null) {
+                            if (this.f17070E == null) {
                             }
-                            if (this.f16279A == 0) {
+                            if (this.f17066A == 0) {
                             }
-                            if (this.f16287I) {
+                            if (this.f17074I) {
                             }
-                            if (this.f16301y != null) {
+                            if (this.f17088y != null) {
                             }
                         }
                     } else {
@@ -328,37 +328,37 @@ public final class g extends com.anythink.core.common.s.a.a {
                     a(e);
                     c();
                     u();
-                    if (this.f16283E == null) {
+                    if (this.f17070E == null) {
                     }
-                    if (this.f16279A == 0) {
+                    if (this.f17066A == 0) {
                     }
-                    if (this.f16287I) {
+                    if (this.f17074I) {
                     }
-                    if (this.f16301y != null) {
+                    if (this.f17088y != null) {
                     }
                 }
-                if (this.f16283E == null) {
-                    this.f16283E = new f(com.anythink.core.common.s.a.a.f16275r);
+                if (this.f17070E == null) {
+                    this.f17070E = new f(com.anythink.core.common.s.a.a.f17062r);
                 }
-                if (this.f16279A == 0) {
-                    this.f16279A = 12;
+                if (this.f17066A == 0) {
+                    this.f17066A = 12;
                 }
-                if (this.f16287I) {
+                if (this.f17074I) {
                     a();
                     c("rewrite data");
                 }
-                if (this.f16301y != null) {
-                    c("loading finish, data len:" + this.f16279A + ", get keys:" + this.f16281C.size() + ", use time:" + ((System.nanoTime() - j6) / 1000000) + " ms");
+                if (this.f17088y != null) {
+                    c("loading finish, data len:" + this.f17066A + ", get keys:" + this.f17068C.size() + ", use time:" + ((System.nanoTime() - j6) / 1000000) + " ms");
                 }
             }
             j6 = nanoTime;
-            if (this.f16283E == null) {
+            if (this.f17070E == null) {
             }
-            if (this.f16279A == 0) {
+            if (this.f17066A == 0) {
             }
-            if (this.f16287I) {
+            if (this.f17074I) {
             }
-            if (this.f16301y != null) {
+            if (this.f17088y != null) {
             }
         } catch (Throwable th) {
             throw th;
@@ -367,69 +367,69 @@ public final class g extends com.anythink.core.common.s.a.a {
 
     private void l() {
         long j6;
-        File file = new File(this.f16298v, u1.h.g(new StringBuilder(), this.f16299w, ".kva"));
-        File file2 = new File(this.f16298v, u1.h.g(new StringBuilder(), this.f16299w, ".kvb"));
+        File file = new File(this.f17085v, Wv.i(new StringBuilder(), this.f17086w, ".kva"));
+        File file2 = new File(this.f17085v, Wv.i(new StringBuilder(), this.f17086w, ".kvb"));
         try {
             if (l.a(file) && l.a(file2)) {
                 RandomAccessFile randomAccessFile = new RandomAccessFile(file, "rw");
                 RandomAccessFile randomAccessFile2 = new RandomAccessFile(file2, "rw");
                 long length = randomAccessFile.length();
                 long length2 = randomAccessFile2.length();
-                this.f16342X = randomAccessFile.getChannel();
+                this.f17129X = randomAccessFile.getChannel();
                 this.Y = randomAccessFile2.getChannel();
                 try {
-                    FileChannel fileChannel = this.f16342X;
+                    FileChannel fileChannel = this.f17129X;
                     FileChannel.MapMode mapMode = FileChannel.MapMode.READ_WRITE;
-                    MappedByteBuffer map = fileChannel.map(mapMode, 0L, length > 0 ? length : com.anythink.core.common.s.a.a.f16275r);
-                    this.f16343Z = map;
+                    MappedByteBuffer map = fileChannel.map(mapMode, 0L, length > 0 ? length : com.anythink.core.common.s.a.a.f17062r);
+                    this.f17130Z = map;
                     ByteOrder byteOrder = ByteOrder.LITTLE_ENDIAN;
                     map.order(byteOrder);
-                    MappedByteBuffer map2 = this.Y.map(mapMode, 0L, length2 > 0 ? length2 : com.anythink.core.common.s.a.a.f16275r);
+                    MappedByteBuffer map2 = this.Y.map(mapMode, 0L, length2 > 0 ? length2 : com.anythink.core.common.s.a.a.f17062r);
                     this.aa = map2;
                     map2.order(byteOrder);
-                    this.f16283E = new f(this.f16343Z.capacity());
+                    this.f17070E = new f(this.f17130Z.capacity());
                     if (length == 0 && length2 == 0) {
-                        this.f16279A = 12;
+                        this.f17066A = 12;
                         return;
                     }
-                    int i = this.f16343Z.getInt();
-                    int i6 = i & (-1073741825);
+                    int i = this.f17130Z.getInt();
+                    int i4 = i & (-1073741825);
                     boolean b9 = com.anythink.core.common.s.a.a.b(i);
-                    long j9 = this.f16343Z.getLong();
-                    int i9 = this.aa.getInt();
-                    int i10 = (-1073741825) & i9;
-                    boolean b10 = com.anythink.core.common.s.a.a.b(i9);
+                    long j9 = this.f17130Z.getLong();
+                    int i6 = this.aa.getInt();
+                    int i9 = (-1073741825) & i6;
+                    boolean b10 = com.anythink.core.common.s.a.a.b(i6);
                     long j10 = this.aa.getLong();
-                    if (i6 < 0 || i6 > length - 12) {
+                    if (i4 < 0 || i4 > length - 12) {
                         j6 = 12;
                     } else {
-                        this.f16279A = i6 + 12;
-                        this.f16343Z.rewind();
+                        this.f17066A = i4 + 12;
+                        this.f17130Z.rewind();
                         j6 = 12;
-                        this.f16343Z.get(this.f16283E.f16334a, 0, this.f16279A);
-                        if (j9 == this.f16283E.b(12, i6) && a(b9)) {
-                            this.f16280B = j9;
+                        this.f17130Z.get(this.f17070E.f17121a, 0, this.f17066A);
+                        if (j9 == this.f17070E.b(12, i4) && a(b9)) {
+                            this.f17067B = j9;
                             if (length == length2 && m()) {
                                 return;
                             }
                             b(new Exception("B file error"));
-                            a(this.f16343Z, this.aa, this.f16279A);
+                            a(this.f17130Z, this.aa, this.f17066A);
                             return;
                         }
                     }
-                    if (i10 >= 0 && i10 <= length2 - j6) {
-                        this.f16281C.clear();
+                    if (i9 >= 0 && i9 <= length2 - j6) {
+                        this.f17068C.clear();
                         e();
-                        this.f16279A = i10 + 12;
-                        if (this.f16283E.f16334a.length != this.aa.capacity()) {
-                            this.f16283E = new f(this.aa.capacity());
+                        this.f17066A = i9 + 12;
+                        if (this.f17070E.f17121a.length != this.aa.capacity()) {
+                            this.f17070E = new f(this.aa.capacity());
                         }
                         this.aa.rewind();
-                        this.aa.get(this.f16283E.f16334a, 0, this.f16279A);
-                        if (j10 == this.f16283E.b(12, i10) && a(b10)) {
+                        this.aa.get(this.f17070E.f17121a, 0, this.f17066A);
+                        if (j10 == this.f17070E.b(12, i9) && a(b10)) {
                             b(new Exception("A file error"));
-                            a(this.aa, this.f16343Z, this.f16279A);
-                            this.f16280B = j10;
+                            a(this.aa, this.f17130Z, this.f17066A);
+                            this.f17067B = j10;
                             return;
                         }
                     }
@@ -453,12 +453,12 @@ public final class g extends com.anythink.core.common.s.a.a {
     }
 
     private boolean m() {
-        f fVar = new f(this.f16279A);
+        f fVar = new f(this.f17066A);
         this.aa.rewind();
-        this.aa.get(fVar.f16334a, 0, this.f16279A);
-        byte[] bArr = this.f16283E.f16334a;
-        byte[] bArr2 = fVar.f16334a;
-        for (int i = 0; i < this.f16279A; i++) {
+        this.aa.get(fVar.f17121a, 0, this.f17066A);
+        byte[] bArr = this.f17070E.f17121a;
+        byte[] bArr2 = fVar.f17121a;
+        for (int i = 0; i < this.f17066A; i++) {
             if (bArr[i] != bArr2[i]) {
                 return false;
             }
@@ -467,9 +467,9 @@ public final class g extends com.anythink.core.common.s.a.a {
     }
 
     private boolean n() {
-        File file = new File(this.f16298v, u1.h.g(new StringBuilder(), this.f16299w, ".kvc"));
-        File file2 = new File(this.f16298v, u1.h.g(new StringBuilder(), this.f16299w, ".tmp"));
-        boolean z3 = false;
+        File file = new File(this.f17085v, Wv.i(new StringBuilder(), this.f17086w, ".kvc"));
+        File file2 = new File(this.f17085v, Wv.i(new StringBuilder(), this.f17086w, ".tmp"));
+        boolean z6 = false;
         try {
             if (!file.exists()) {
                 file = file2.exists() ? file2 : null;
@@ -481,7 +481,7 @@ public final class g extends com.anythink.core.common.s.a.a {
                     return false;
                 }
                 if (this.ac == 0) {
-                    if (!a(this.f16283E)) {
+                    if (!a(this.f17070E)) {
                         this.ac = 1;
                         return false;
                     }
@@ -491,14 +491,14 @@ public final class g extends com.anythink.core.common.s.a.a {
                         return true;
                     } catch (Exception e9) {
                         e = e9;
-                        z3 = true;
+                        z6 = true;
                         a(e);
-                        return z3;
+                        return z6;
                     }
                 }
             } else if (this.ac != 0) {
-                File file3 = new File(this.f16298v, this.f16299w + ".kva");
-                File file4 = new File(this.f16298v, this.f16299w + ".kvb");
+                File file3 = new File(this.f17085v, this.f17086w + ".kva");
+                File file4 = new File(this.f17085v, this.f17086w + ".kvb");
                 if (file3.exists() && file4.exists()) {
                     a(file3, file4);
                 }
@@ -514,17 +514,17 @@ public final class g extends com.anythink.core.common.s.a.a {
             return;
         }
         if (this.ac == 0) {
-            this.f16343Z.force();
+            this.f17130Z.force();
             this.aa.force();
         }
     }
 
     private synchronized void p() {
-        this.f16341V = false;
+        this.f17128V = false;
     }
 
     private void q() {
-        if (this.ac == 0 || !this.f16341V) {
+        if (this.ac == 0 || !this.f17128V) {
             return;
         }
         r();
@@ -533,15 +533,15 @@ public final class g extends com.anythink.core.common.s.a.a {
     /* JADX INFO: Access modifiers changed from: private */
     public synchronized boolean s() {
         try {
-            File file = new File(this.f16298v, this.f16299w + ".tmp");
+            File file = new File(this.f17085v, this.f17086w + ".tmp");
             if (l.a(file)) {
                 RandomAccessFile randomAccessFile = new RandomAccessFile(file, "rw");
                 try {
-                    randomAccessFile.setLength(this.f16279A);
-                    randomAccessFile.write(this.f16283E.f16334a, 0, this.f16279A);
+                    randomAccessFile.setLength(this.f17066A);
+                    randomAccessFile.write(this.f17070E.f17121a, 0, this.f17066A);
                     randomAccessFile.getFD().sync();
                     randomAccessFile.close();
-                    if (l.a(file, new File(this.f16298v, this.f16299w + ".kvc"))) {
+                    if (l.a(file, new File(this.f17085v, this.f17086w + ".kvc"))) {
                         t();
                         return true;
                     }
@@ -562,37 +562,37 @@ public final class g extends com.anythink.core.common.s.a.a {
     }
 
     private void t() {
-        if (this.f16286H.isEmpty()) {
+        if (this.f17073H.isEmpty()) {
             return;
         }
-        Iterator<String> it = this.f16286H.iterator();
+        Iterator<String> it = this.f17073H.iterator();
         while (it.hasNext()) {
             a(it.next());
         }
-        this.f16286H.clear();
+        this.f17073H.clear();
     }
 
     private void u() {
         this.ac = 1;
-        l.a(this.f16342X);
+        l.a(this.f17129X);
         l.a(this.Y);
-        this.f16342X = null;
+        this.f17129X = null;
         this.Y = null;
-        this.f16343Z = null;
+        this.f17130Z = null;
         this.aa = null;
     }
 
     private void v() {
         if (this.ac == 0) {
             try {
-                a(this.f16343Z);
+                a(this.f17130Z);
                 a(this.aa);
             } catch (Exception unused) {
                 u();
             }
         }
         c();
-        l.c(new File(this.f16298v + this.f16299w));
+        l.c(new File(this.f17085v + this.f17086w));
     }
 
     private synchronized void w() {
@@ -602,8 +602,8 @@ public final class g extends com.anythink.core.common.s.a.a {
         this.J = true;
         if (this.ac == 0) {
             try {
-                this.f16342X.force(true);
-                this.f16342X.close();
+                this.f17129X.force(true);
+                this.f17129X.close();
                 this.Y.force(true);
                 this.Y.close();
             } catch (Exception e9) {
@@ -611,22 +611,22 @@ public final class g extends com.anythink.core.common.s.a.a {
             }
         }
         synchronized (a.class) {
-            a.f16344a.remove(this.f16298v + this.f16299w);
+            a.f17131a.remove(this.f17085v + this.f17086w);
         }
     }
 
     @Override // com.anythink.core.common.s.a.a
     public final void a(g gVar) {
         MappedByteBuffer mappedByteBuffer;
-        f fVar = gVar.f16283E;
+        f fVar = gVar.f17070E;
         if (this.ac == 0) {
-            int length = fVar.f16334a.length;
-            MappedByteBuffer mappedByteBuffer2 = this.f16343Z;
+            int length = fVar.f17121a.length;
+            MappedByteBuffer mappedByteBuffer2 = this.f17130Z;
             if (mappedByteBuffer2 != null && mappedByteBuffer2.capacity() == length && (mappedByteBuffer = this.aa) != null && mappedByteBuffer.capacity() == length) {
-                this.f16343Z.position(0);
-                this.f16343Z.put(fVar.f16334a, 0, this.f16279A);
+                this.f17130Z.position(0);
+                this.f17130Z.put(fVar.f17121a, 0, this.f17066A);
                 this.aa.position(0);
-                this.aa.put(fVar.f16334a, 0, this.f16279A);
+                this.aa.put(fVar.f17121a, 0, this.f17066A);
             } else if (!a(fVar)) {
                 this.ac = 1;
             }
@@ -641,7 +641,7 @@ public final class g extends com.anythink.core.common.s.a.a {
         if (this.J) {
             return;
         }
-        this.f16341V = true;
+        this.f17128V = true;
         r();
     }
 
@@ -667,31 +667,31 @@ public final class g extends com.anythink.core.common.s.a.a {
         if (this.J) {
             return false;
         }
-        this.f16341V = true;
+        this.f17128V = true;
         return r();
     }
 
     @Override // com.anythink.core.common.s.a.a
     public final void d(int i) {
-        int length = this.f16283E.f16334a.length;
-        int i6 = this.f16279A + i;
-        if (i6 >= length) {
-            int i9 = this.f16293P;
-            if (i9 > i && i9 > f()) {
+        int length = this.f17070E.f17121a.length;
+        int i4 = this.f17066A + i;
+        if (i4 >= length) {
+            int i6 = this.f17080P;
+            if (i6 > i && i6 > f()) {
                 c(i);
                 return;
             }
-            int a9 = com.anythink.core.common.s.a.a.a(length, i6);
+            int a9 = com.anythink.core.common.s.a.a.a(length, i4);
             byte[] bArr = new byte[a9];
-            System.arraycopy(this.f16283E.f16334a, 0, bArr, 0, this.f16279A);
-            this.f16283E.f16334a = bArr;
+            System.arraycopy(this.f17070E.f17121a, 0, bArr, 0, this.f17066A);
+            this.f17070E.f17121a = bArr;
             if (this.ac == 0) {
                 try {
-                    FileChannel fileChannel = this.f16342X;
+                    FileChannel fileChannel = this.f17129X;
                     FileChannel.MapMode mapMode = FileChannel.MapMode.READ_WRITE;
                     long j6 = a9;
                     MappedByteBuffer map = fileChannel.map(mapMode, 0L, j6);
-                    this.f16343Z = map;
+                    this.f17130Z = map;
                     ByteOrder byteOrder = ByteOrder.LITTLE_ENDIAN;
                     map.order(byteOrder);
                     MappedByteBuffer map2 = this.Y.map(mapMode, 0L, j6);
@@ -699,8 +699,8 @@ public final class g extends com.anythink.core.common.s.a.a {
                     map2.order(byteOrder);
                 } catch (IOException e9) {
                     a(new Exception("map failed", e9));
-                    this.f16283E.a(0, a(this.f16279A - 12));
-                    this.f16283E.a(4, this.f16280B);
+                    this.f17070E.a(0, a(this.f17066A - 12));
+                    this.f17070E.a(4, this.f17067B);
                     u();
                 }
             }
@@ -718,14 +718,14 @@ public final class g extends com.anythink.core.common.s.a.a {
         if (this.ac == 0) {
             a(str);
         } else {
-            this.f16286H.add(str);
+            this.f17073H.add(str);
         }
     }
 
     @Override // com.anythink.core.common.s.a.a
     public final void h() {
-        if (this.f16293P < (f() << 1)) {
-            if (this.f16294Q.size() < (this.f16279A < 16384 ? 80 : 160)) {
+        if (this.f17080P < (f() << 1)) {
+            if (this.f17081Q.size() < (this.f17066A < 16384 ? 80 : 160)) {
                 return;
             }
         }
@@ -734,20 +734,20 @@ public final class g extends com.anythink.core.common.s.a.a {
 
     @Override // com.anythink.core.common.s.a.a
     public final void i() {
-        this.f16280B ^= this.f16283E.b(this.f16284F, this.f16285G);
-        int a9 = a(this.f16279A - 12);
+        this.f17067B ^= this.f17070E.b(this.f17071F, this.f17072G);
+        int a9 = a(this.f17066A - 12);
         if (this.ac == 0) {
-            this.f16343Z.putInt(0, -1);
-            b(this.f16343Z);
-            this.f16343Z.putInt(0, a9);
+            this.f17130Z.putInt(0, -1);
+            b(this.f17130Z);
+            this.f17130Z.putInt(0, a9);
             this.aa.putInt(0, a9);
             b(this.aa);
         } else {
-            this.f16283E.a(0, a9);
-            this.f16283E.a(4, this.f16280B);
+            this.f17070E.a(0, a9);
+            this.f17070E.a(4, this.f17067B);
         }
         this.ab = 0;
-        this.f16285G = 0;
+        this.f17072G = 0;
     }
 
     public final int j() {
@@ -767,36 +767,36 @@ public final class g extends com.anythink.core.common.s.a.a {
             if (this.J) {
                 return this;
             }
-            b.AbstractC0098b abstractC0098b = this.f16281C.get(str);
+            b.AbstractC0098b abstractC0098b = this.f17068C.get(str);
             if (abstractC0098b != null) {
-                this.f16281C.remove(str);
-                this.f16290M.b(str);
-                this.f16289L.b(str);
+                this.f17068C.remove(str);
+                this.f17077M.b(str);
+                this.f17076L.b(str);
                 byte a9 = abstractC0098b.a();
                 if (a9 <= 5) {
                     int b9 = f.b(str);
-                    int i = abstractC0098b.f16305a;
-                    a(a9, i - (b9 + 2), i + com.anythink.core.common.s.a.a.f16273o[a9]);
+                    int i = abstractC0098b.f17092a;
+                    a(a9, i - (b9 + 2), i + com.anythink.core.common.s.a.a.f17060o[a9]);
                 } else {
                     b.j jVar = (b.j) abstractC0098b;
-                    a(a9, jVar.f16313d, jVar.f16305a + jVar.f16314e);
-                    if (jVar.f16315f) {
-                        str2 = (String) jVar.f16312c;
-                        byte b10 = (byte) (a9 | c.f16316a);
+                    a(a9, jVar.f17100d, jVar.f17092a + jVar.f17101e);
+                    if (jVar.f17102f) {
+                        str2 = (String) jVar.f17099c;
+                        byte b10 = (byte) (a9 | c.f17103a);
                         if (this.ac != 0) {
-                            this.f16343Z.putLong(4, this.f16280B);
-                            this.f16343Z.put(this.ab, b10);
-                            this.aa.putLong(4, this.f16280B);
+                            this.f17130Z.putLong(4, this.f17067B);
+                            this.f17130Z.put(this.ab, b10);
+                            this.aa.putLong(4, this.f17067B);
                             this.aa.put(this.ab, b10);
                         } else {
-                            this.f16283E.a(4, this.f16280B);
+                            this.f17070E.a(4, this.f17067B);
                         }
                         this.ab = 0;
                         if (str2 != null) {
                             if (this.ac == 0) {
                                 a(str2);
                             } else {
-                                this.f16286H.add(str2);
+                                this.f17073H.add(str2);
                             }
                         }
                         h();
@@ -804,7 +804,7 @@ public final class g extends com.anythink.core.common.s.a.a {
                     }
                 }
                 str2 = null;
-                byte b102 = (byte) (a9 | c.f16316a);
+                byte b102 = (byte) (a9 | c.f17103a);
                 if (this.ac != 0) {
                 }
                 this.ab = 0;
@@ -820,13 +820,13 @@ public final class g extends com.anythink.core.common.s.a.a {
     }
 
     public final String toString() {
-        return "FastKV: path:" + this.f16298v + " name:" + this.f16299w;
+        return "FastKV: path:" + this.f17085v + " name:" + this.f17086w;
     }
 
     private boolean r() {
         int i = this.ac;
         if (i == 1) {
-            this.f16292O.execute(new p(this, 2));
+            this.f17079O.execute(new p(this, 2));
             return true;
         }
         if (i == 2) {
@@ -842,22 +842,22 @@ public final class g extends com.anythink.core.common.s.a.a {
         FileChannel.MapMode mapMode;
         ByteOrder byteOrder;
         try {
-            int length = fVar.f16334a.length;
-            File file = new File(this.f16298v, this.f16299w + ".kva");
-            File file2 = new File(this.f16298v, this.f16299w + ".kvb");
+            int length = fVar.f17121a.length;
+            File file = new File(this.f17085v, this.f17086w + ".kva");
+            File file2 = new File(this.f17085v, this.f17086w + ".kvb");
             if (l.a(file) && l.a(file2)) {
                 randomAccessFile2 = new RandomAccessFile(file, "rw");
                 long j6 = length;
                 try {
                     randomAccessFile2.setLength(j6);
                     FileChannel channel = randomAccessFile2.getChannel();
-                    this.f16342X = channel;
+                    this.f17129X = channel;
                     mapMode = FileChannel.MapMode.READ_WRITE;
                     MappedByteBuffer map = channel.map(mapMode, 0L, j6);
-                    this.f16343Z = map;
+                    this.f17130Z = map;
                     byteOrder = ByteOrder.LITTLE_ENDIAN;
                     map.order(byteOrder);
-                    this.f16343Z.put(fVar.f16334a, 0, this.f16279A);
+                    this.f17130Z.put(fVar.f17121a, 0, this.f17066A);
                     randomAccessFile = new RandomAccessFile(file2, "rw");
                 } catch (Exception e9) {
                     exc = e9;
@@ -870,15 +870,15 @@ public final class g extends com.anythink.core.common.s.a.a {
                     MappedByteBuffer map2 = channel2.map(mapMode, 0L, j6);
                     this.aa = map2;
                     map2.order(byteOrder);
-                    this.aa.put(fVar.f16334a, 0, this.f16279A);
+                    this.aa.put(fVar.f17121a, 0, this.f17066A);
                     return true;
                 } catch (Exception e10) {
                     exc = e10;
                     l.a(randomAccessFile2);
                     l.a(randomAccessFile);
-                    this.f16342X = null;
+                    this.f17129X = null;
                     this.Y = null;
-                    this.f16343Z = null;
+                    this.f17130Z = null;
                     this.aa = null;
                     a(exc);
                     return false;
@@ -895,12 +895,12 @@ public final class g extends com.anythink.core.common.s.a.a {
     private void a(MappedByteBuffer mappedByteBuffer, MappedByteBuffer mappedByteBuffer2, int i) {
         if (mappedByteBuffer.capacity() != mappedByteBuffer2.capacity()) {
             try {
-                MappedByteBuffer map = (mappedByteBuffer2 == this.aa ? this.Y : this.f16342X).map(FileChannel.MapMode.READ_WRITE, 0L, mappedByteBuffer.capacity());
+                MappedByteBuffer map = (mappedByteBuffer2 == this.aa ? this.Y : this.f17129X).map(FileChannel.MapMode.READ_WRITE, 0L, mappedByteBuffer.capacity());
                 map.order(ByteOrder.LITTLE_ENDIAN);
                 if (mappedByteBuffer2 == this.aa) {
                     this.aa = map;
                 } else {
-                    this.f16343Z = map;
+                    this.f17130Z = map;
                 }
                 mappedByteBuffer2 = map;
             } catch (IOException e9) {
@@ -923,7 +923,7 @@ public final class g extends com.anythink.core.common.s.a.a {
                 return;
             }
             if (this.ac != 0) {
-                this.f16341V = false;
+                this.f17128V = false;
             }
             super.a(map, map2);
             if (this.ac != 0) {
@@ -936,14 +936,14 @@ public final class g extends com.anythink.core.common.s.a.a {
 
     private void a(MappedByteBuffer mappedByteBuffer) {
         int capacity = mappedByteBuffer.capacity();
-        int i = com.anythink.core.common.s.a.a.f16275r;
+        int i = com.anythink.core.common.s.a.a.f17062r;
         if (capacity != i) {
-            FileChannel fileChannel = mappedByteBuffer == this.f16343Z ? this.f16342X : this.Y;
+            FileChannel fileChannel = mappedByteBuffer == this.f17130Z ? this.f17129X : this.Y;
             fileChannel.truncate(i);
             MappedByteBuffer map = fileChannel.map(FileChannel.MapMode.READ_WRITE, 0L, i);
             map.order(ByteOrder.LITTLE_ENDIAN);
-            if (mappedByteBuffer == this.f16343Z) {
-                this.f16343Z = map;
+            if (mappedByteBuffer == this.f17130Z) {
+                this.f17130Z = map;
             } else {
                 this.aa = map;
             }
@@ -955,106 +955,106 @@ public final class g extends com.anythink.core.common.s.a.a {
 
     @Override // com.anythink.core.common.s.a.a
     public final void a(byte b9, int i) {
-        long a9 = this.f16280B ^ com.anythink.core.common.s.a.a.a(1L, i);
-        this.f16280B = a9;
+        long a9 = this.f17067B ^ com.anythink.core.common.s.a.a.a(1L, i);
+        this.f17067B = a9;
         if (this.ac == 0) {
-            this.f16343Z.putLong(4, a9);
-            this.f16343Z.put(i, b9);
-            this.aa.putLong(4, this.f16280B);
+            this.f17130Z.putLong(4, a9);
+            this.f17130Z.put(i, b9);
+            this.aa.putLong(4, this.f17067B);
             this.aa.put(i, b9);
         } else {
-            this.f16283E.a(4, a9);
+            this.f17070E.a(4, a9);
         }
-        this.f16283E.f16334a[i] = b9;
+        this.f17070E.f17121a[i] = b9;
     }
 
     @Override // com.anythink.core.common.s.a.a
-    public final void a(int i, long j6, int i6) {
-        long a9 = com.anythink.core.common.s.a.a.a(j6, i6) ^ this.f16280B;
-        this.f16280B = a9;
+    public final void a(int i, long j6, int i4) {
+        long a9 = com.anythink.core.common.s.a.a.a(j6, i4) ^ this.f17067B;
+        this.f17067B = a9;
         if (this.ac == 0) {
-            this.f16343Z.putLong(4, a9);
-            this.f16343Z.putInt(i6, i);
-            this.aa.putLong(4, this.f16280B);
-            this.aa.putInt(i6, i);
+            this.f17130Z.putLong(4, a9);
+            this.f17130Z.putInt(i4, i);
+            this.aa.putLong(4, this.f17067B);
+            this.aa.putInt(i4, i);
         } else {
-            this.f16283E.a(4, a9);
+            this.f17070E.a(4, a9);
         }
-        this.f16283E.a(i6, i);
+        this.f17070E.a(i4, i);
     }
 
     @Override // com.anythink.core.common.s.a.a
     public final void a(long j6, long j9, int i) {
-        long a9 = com.anythink.core.common.s.a.a.a(j9, i) ^ this.f16280B;
-        this.f16280B = a9;
+        long a9 = com.anythink.core.common.s.a.a.a(j9, i) ^ this.f17067B;
+        this.f17067B = a9;
         if (this.ac == 0) {
-            this.f16343Z.putLong(4, a9);
-            this.f16343Z.putLong(i, j6);
-            this.aa.putLong(4, this.f16280B);
+            this.f17130Z.putLong(4, a9);
+            this.f17130Z.putLong(i, j6);
+            this.aa.putLong(4, this.f17067B);
             this.aa.putLong(i, j6);
         } else {
-            this.f16283E.a(4, a9);
+            this.f17070E.a(4, a9);
         }
-        this.f16283E.a(i, j6);
+        this.f17070E.a(i, j6);
     }
 
     @Override // com.anythink.core.common.s.a.a
     public final void a(int i, byte[] bArr) {
         super.a(i, bArr);
         if (this.ac == 0) {
-            this.f16343Z.putInt(0, -1);
-            this.f16343Z.putLong(4, this.f16280B);
-            this.f16343Z.position(i);
-            this.f16343Z.put(bArr);
-            this.f16343Z.putInt(0, a(this.f16279A - 12));
-            this.aa.putLong(4, this.f16280B);
+            this.f17130Z.putInt(0, -1);
+            this.f17130Z.putLong(4, this.f17067B);
+            this.f17130Z.position(i);
+            this.f17130Z.put(bArr);
+            this.f17130Z.putInt(0, a(this.f17066A - 12));
+            this.aa.putLong(4, this.f17067B);
             this.aa.position(i);
             this.aa.put(bArr);
             return;
         }
-        this.f16283E.a(4, this.f16280B);
+        this.f17070E.a(4, this.f17067B);
     }
 
     @Override // com.anythink.core.common.s.a.a
-    public final void a(byte b9, int i, int i6) {
-        super.a(b9, i, i6);
+    public final void a(byte b9, int i, int i4) {
+        super.a(b9, i, i4);
         this.ab = i;
     }
 
     @Override // com.anythink.core.common.s.a.a
-    public final void a(int i, int i6, int i9) {
-        int a9 = a(this.f16279A - 12);
+    public final void a(int i, int i4, int i6) {
+        int a9 = a(this.f17066A - 12);
         if (this.ac == 0) {
-            this.f16343Z.putInt(0, -1);
-            this.f16343Z.putLong(4, this.f16280B);
-            this.f16343Z.position(i);
-            this.f16343Z.put(this.f16283E.f16334a, i, i9);
-            this.f16343Z.putInt(0, a9);
+            this.f17130Z.putInt(0, -1);
+            this.f17130Z.putLong(4, this.f17067B);
+            this.f17130Z.position(i);
+            this.f17130Z.put(this.f17070E.f17121a, i, i6);
+            this.f17130Z.putInt(0, a9);
             this.aa.putInt(0, a9);
-            this.aa.putLong(4, this.f16280B);
+            this.aa.putLong(4, this.f17067B);
             this.aa.position(i);
-            this.aa.put(this.f16283E.f16334a, i, i9);
+            this.aa.put(this.f17070E.f17121a, i, i6);
         } else {
-            this.f16283E.a(0, a9);
-            this.f16283E.a(4, this.f16280B);
+            this.f17070E.a(0, a9);
+            this.f17070E.a(4, this.f17067B);
         }
-        int i10 = this.f16279A + i6;
-        if (this.f16283E.f16334a.length - i10 > com.anythink.core.common.s.a.a.f16276s) {
-            int i11 = com.anythink.core.common.s.a.a.f16275r;
-            int a10 = com.anythink.core.common.s.a.a.a(i11, i10 + i11);
-            byte[] bArr = this.f16283E.f16334a;
+        int i9 = this.f17066A + i4;
+        if (this.f17070E.f17121a.length - i9 > com.anythink.core.common.s.a.a.f17063s) {
+            int i10 = com.anythink.core.common.s.a.a.f17062r;
+            int a10 = com.anythink.core.common.s.a.a.a(i10, i9 + i10);
+            byte[] bArr = this.f17070E.f17121a;
             if (a10 < bArr.length) {
                 byte[] bArr2 = new byte[a10];
-                System.arraycopy(bArr, 0, bArr2, 0, this.f16279A);
-                this.f16283E.f16334a = bArr2;
+                System.arraycopy(bArr, 0, bArr2, 0, this.f17066A);
+                this.f17070E.f17121a = bArr2;
                 if (this.ac == 0) {
                     try {
                         long j6 = a10;
-                        this.f16342X.truncate(j6);
-                        FileChannel fileChannel = this.f16342X;
+                        this.f17129X.truncate(j6);
+                        FileChannel fileChannel = this.f17129X;
                         FileChannel.MapMode mapMode = FileChannel.MapMode.READ_WRITE;
                         MappedByteBuffer map = fileChannel.map(mapMode, 0L, j6);
-                        this.f16343Z = map;
+                        this.f17130Z = map;
                         ByteOrder byteOrder = ByteOrder.LITTLE_ENDIAN;
                         map.order(byteOrder);
                         this.Y.truncate(j6);

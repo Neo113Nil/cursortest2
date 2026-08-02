@@ -12,18 +12,18 @@ public final class C3L extends ED implements View.OnClickListener {
     public final E4 A01;
     public final E2 A02;
     public final E0 A03;
-    public final C1752fI A04;
+    public final C1772fI A04;
 
-    public C3L(C1840gi c1840gi) {
-        this(c1840gi, null);
+    public C3L(C1860gi c1860gi) {
+        this(c1860gi, null);
     }
 
-    public C3L(C1840gi c1840gi, AttributeSet attributeSet) {
-        this(c1840gi, attributeSet, 0);
+    public C3L(C1860gi c1860gi, AttributeSet attributeSet) {
+        this(c1860gi, attributeSet, 0);
     }
 
-    public C3L(C1840gi c1840gi, AttributeSet attributeSet, int i) {
-        super(c1840gi, attributeSet, i);
+    public C3L(C1860gi c1860gi, AttributeSet attributeSet, int i) {
+        super(c1860gi, attributeSet, i);
         this.A03 = new E0() { // from class: com.facebook.ads.redexgen.X.3R
             /* JADX INFO: Access modifiers changed from: private */
             @Override // com.instagram.common.viewpoint.core.UN
@@ -37,9 +37,9 @@ public final class C3L extends ED implements View.OnClickListener {
             @Override // com.instagram.common.viewpoint.core.UN
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final void A03(C4B c4b) {
-                C1752fI c1752fI;
-                c1752fI = C3L.this.A04;
-                c1752fI.setChecked(true);
+                C1772fI c1772fI;
+                c1772fI = C3L.this.A04;
+                c1772fI.setChecked(true);
             }
         };
         this.A02 = new E2() { // from class: com.facebook.ads.redexgen.X.3O
@@ -47,9 +47,9 @@ public final class C3L extends ED implements View.OnClickListener {
             @Override // com.instagram.common.viewpoint.core.UN
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final void A03(E3 e32) {
-                C1752fI c1752fI;
-                c1752fI = C3L.this.A04;
-                c1752fI.setChecked(false);
+                C1772fI c1772fI;
+                c1772fI = C3L.this.A04;
+                c1772fI.setChecked(false);
             }
         };
         this.A00 = new EA() { // from class: com.facebook.ads.redexgen.X.3M
@@ -57,13 +57,13 @@ public final class C3L extends ED implements View.OnClickListener {
             @Override // com.instagram.common.viewpoint.core.UN
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final void A03(C4K c4k) {
-                C1752fI c1752fI;
-                c1752fI = C3L.this.A04;
-                c1752fI.setChecked(true);
+                C1772fI c1772fI;
+                c1772fI = C3L.this.A04;
+                c1772fI.setChecked(true);
             }
         };
         DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
-        this.A04 = new C1752fI(c1840gi);
+        this.A04 = new C1772fI(c1860gi);
         this.A04.setChecked(true);
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams((int) (displayMetrics.density * 25.0f), (int) (displayMetrics.density * 25.0f));
         setVisibility(8);
@@ -98,13 +98,13 @@ public final class C3L extends ED implements View.OnClickListener {
             return;
         }
         try {
-            C0877Ek videoView = getVideoView();
+            C0897Ek videoView = getVideoView();
             if (videoView == null) {
                 return;
             }
-            if (videoView.getState() == EnumC1782fm.A07 || videoView.getState() == EnumC1782fm.A05 || videoView.getState() == EnumC1782fm.A06) {
-                videoView.A0e(EnumC1727et.A04, 11);
-            } else if (videoView.getState() == EnumC1782fm.A0A) {
+            if (videoView.getState() == EnumC1802fm.A07 || videoView.getState() == EnumC1802fm.A05 || videoView.getState() == EnumC1802fm.A06) {
+                videoView.A0e(EnumC1747et.A04, 11);
+            } else if (videoView.getState() == EnumC1802fm.A0A) {
                 videoView.A0i(true, 7);
             }
         } catch (Throwable th) {

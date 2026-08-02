@@ -25,44 +25,44 @@ public abstract class AnythinkBaseView extends RelativeLayout {
     public static final String TAG = "AnythinkBaseView";
 
     /* renamed from: n, reason: collision with root package name */
-    private static final int f21440n = -999;
+    private static final int f22227n = -999;
 
     /* renamed from: a, reason: collision with root package name */
-    protected Context f21441a;
+    protected Context f22228a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected d f21442b;
+    protected d f22229b;
 
     /* renamed from: c, reason: collision with root package name */
-    protected LayoutInflater f21443c;
+    protected LayoutInflater f22230c;
 
     /* renamed from: d, reason: collision with root package name */
-    protected int f21444d;
+    protected int f22231d;
 
     /* renamed from: e, reason: collision with root package name */
-    protected a f21445e;
+    protected a f22232e;
 
     /* renamed from: f, reason: collision with root package name */
-    protected boolean f21446f;
+    protected boolean f22233f;
 
     /* renamed from: g, reason: collision with root package name */
-    protected float f21447g;
+    protected float f22234g;
 
     /* renamed from: h, reason: collision with root package name */
-    protected float f21448h;
+    protected float f22235h;
     protected boolean i;
 
     /* renamed from: j, reason: collision with root package name */
-    protected int f21449j;
+    protected int f22236j;
 
     /* renamed from: k, reason: collision with root package name */
-    protected boolean f21450k;
+    protected boolean f22237k;
 
     /* renamed from: l, reason: collision with root package name */
-    protected int f21451l;
+    protected int f22238l;
 
     /* renamed from: m, reason: collision with root package name */
-    protected int f21452m;
+    protected int f22239m;
 
     public AnythinkBaseView(Context context) {
         this(context, null);
@@ -77,15 +77,15 @@ public abstract class AnythinkBaseView extends RelativeLayout {
             e = e9;
         }
         try {
-            jSONObject.put(com.anythink.expressad.foundation.g.a.cg, v.a(t.b().g(), this.f21447g));
-            jSONObject.put(com.anythink.expressad.foundation.g.a.ch, v.a(t.b().g(), this.f21448h));
+            jSONObject.put(com.anythink.expressad.foundation.g.a.cg, v.a(t.b().g(), this.f22234g));
+            jSONObject.put(com.anythink.expressad.foundation.g.a.ch, v.a(t.b().g(), this.f22235h));
             jSONObject.put(com.anythink.expressad.foundation.g.a.cj, i);
             try {
-                this.f21444d = getContext().getResources().getConfiguration().orientation;
+                this.f22231d = getContext().getResources().getConfiguration().orientation;
             } catch (Exception e10) {
                 e10.printStackTrace();
             }
-            jSONObject.put(com.anythink.expressad.foundation.g.a.ck, this.f21444d);
+            jSONObject.put(com.anythink.expressad.foundation.g.a.ck, this.f22231d);
             jSONObject.put(com.anythink.expressad.foundation.g.a.cl, v.c(getContext()));
             return jSONObject;
         } catch (JSONException e11) {
@@ -106,16 +106,16 @@ public abstract class AnythinkBaseView extends RelativeLayout {
     public void defaultShow() {
     }
 
-    public int filterFindViewId(boolean z3, String str) {
-        return z3 ? findDyID(str) : findID(str);
+    public int filterFindViewId(boolean z6, String str) {
+        return z6 ? findDyID(str) : findID(str);
     }
 
     public int findColor(String str) {
-        return k.a(this.f21441a.getApplicationContext(), str, k.f19633d);
+        return k.a(this.f22228a.getApplicationContext(), str, k.f20420d);
     }
 
     public int findDrawable(String str) {
-        return k.a(this.f21441a.getApplicationContext(), str, k.f19632c);
+        return k.a(this.f22228a.getApplicationContext(), str, k.f20419c);
     }
 
     public int findDyID(String str) {
@@ -126,15 +126,15 @@ public abstract class AnythinkBaseView extends RelativeLayout {
     }
 
     public int findID(String str) {
-        return k.a(this.f21441a.getApplicationContext(), str, "id");
+        return k.a(this.f22228a.getApplicationContext(), str, "id");
     }
 
     public int findLayout(String str) {
-        return k.a(this.f21441a.getApplicationContext(), str, "layout");
+        return k.a(this.f22228a.getApplicationContext(), str, "layout");
     }
 
     public d getCampaign() {
-        return this.f21442b;
+        return this.f22229b;
     }
 
     public LinearLayout.LayoutParams getParentLinearLayoutParams() {
@@ -156,7 +156,7 @@ public abstract class AnythinkBaseView extends RelativeLayout {
     public abstract void init(Context context);
 
     public boolean isLandscape() {
-        return this.f21441a.getResources().getConfiguration().orientation == 2;
+        return this.f22228a.getResources().getConfiguration().orientation == 2;
     }
 
     public boolean isNotNULL(View... viewArr) {
@@ -165,41 +165,41 @@ public abstract class AnythinkBaseView extends RelativeLayout {
         }
         int length = viewArr.length;
         int i = 0;
-        boolean z3 = false;
+        boolean z6 = false;
         while (i < length) {
             if (viewArr[i] == null) {
                 return false;
             }
             i++;
-            z3 = true;
+            z6 = true;
         }
-        return z3;
+        return z6;
     }
 
     @Override // android.view.View
     public void onConfigurationChanged(Configuration configuration) {
-        this.f21444d = configuration.orientation;
+        this.f22231d = configuration.orientation;
         super.onConfigurationChanged(configuration);
         Log.d(TAG, "onConfigurationChanged:" + configuration.orientation);
     }
 
     @Override // android.view.ViewGroup
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
-        this.f21447g = motionEvent.getRawX();
-        this.f21448h = motionEvent.getRawY();
+        this.f22234g = motionEvent.getRawX();
+        this.f22235h = motionEvent.getRawY();
         return super.onInterceptTouchEvent(motionEvent);
     }
 
     public void onSelfConfigurationChanged(Configuration configuration) {
-        this.f21444d = configuration.orientation;
+        this.f22231d = configuration.orientation;
         Log.d(TAG, "onSelfConfigurationChanged:" + configuration.orientation);
     }
 
     public void setCampaign(d dVar) {
-        this.f21442b = dVar;
+        this.f22229b = dVar;
     }
 
-    public void setLayoutCenter(int i, int i6) {
+    public void setLayoutCenter(int i, int i4) {
         RelativeLayout.LayoutParams parentRelativeLayoutParams = getParentRelativeLayoutParams();
         LinearLayout.LayoutParams parentLinearLayoutParams = getParentLinearLayoutParams();
         if (parentRelativeLayoutParams != null) {
@@ -207,8 +207,8 @@ public abstract class AnythinkBaseView extends RelativeLayout {
             if (i != -999) {
                 parentRelativeLayoutParams.width = i;
             }
-            if (i6 != -999) {
-                parentRelativeLayoutParams.height = i6;
+            if (i4 != -999) {
+                parentRelativeLayoutParams.height = i4;
             }
             setLayoutParams(parentRelativeLayoutParams);
             return;
@@ -218,36 +218,36 @@ public abstract class AnythinkBaseView extends RelativeLayout {
             if (i != -999) {
                 parentLinearLayoutParams.width = i;
             }
-            if (i6 != -999) {
-                parentLinearLayoutParams.height = i6;
+            if (i4 != -999) {
+                parentLinearLayoutParams.height = i4;
             }
             setLayoutParams(parentLinearLayoutParams);
         }
     }
 
-    public void setLayoutParam(int i, int i6, int i9, int i10) {
+    public void setLayoutParam(int i, int i4, int i6, int i9) {
         RelativeLayout.LayoutParams parentRelativeLayoutParams = getParentRelativeLayoutParams();
         LinearLayout.LayoutParams parentLinearLayoutParams = getParentLinearLayoutParams();
         if (parentRelativeLayoutParams != null) {
-            parentRelativeLayoutParams.topMargin = i6;
+            parentRelativeLayoutParams.topMargin = i4;
             parentRelativeLayoutParams.leftMargin = i;
-            if (i9 != -999) {
-                parentRelativeLayoutParams.width = i9;
+            if (i6 != -999) {
+                parentRelativeLayoutParams.width = i6;
             }
-            if (i10 != -999) {
-                parentRelativeLayoutParams.height = i10;
+            if (i9 != -999) {
+                parentRelativeLayoutParams.height = i9;
             }
             setLayoutParams(parentRelativeLayoutParams);
             return;
         }
         if (parentLinearLayoutParams != null) {
-            parentLinearLayoutParams.topMargin = i6;
+            parentLinearLayoutParams.topMargin = i4;
             parentLinearLayoutParams.leftMargin = i;
-            if (i9 != -999) {
-                parentLinearLayoutParams.width = i9;
+            if (i6 != -999) {
+                parentLinearLayoutParams.width = i6;
             }
-            if (i10 != -999) {
-                parentLinearLayoutParams.height = i10;
+            if (i9 != -999) {
+                parentLinearLayoutParams.height = i9;
             }
             setLayoutParams(parentLinearLayoutParams);
         }
@@ -264,7 +264,7 @@ public abstract class AnythinkBaseView extends RelativeLayout {
     }
 
     public void setNotifyListener(a aVar) {
-        this.f21445e = aVar;
+        this.f22232e = aVar;
     }
 
     public void setWrapContent() {
@@ -277,32 +277,32 @@ public abstract class AnythinkBaseView extends RelativeLayout {
         }
     }
 
-    public AnythinkBaseView(Context context, AttributeSet attributeSet, boolean z3, int i, boolean z6, int i6, int i9) {
+    public AnythinkBaseView(Context context, AttributeSet attributeSet, boolean z6, int i, boolean z9, int i4, int i6) {
         super(context, attributeSet);
-        this.f21444d = 1;
-        this.f21445e = new f();
-        this.f21446f = false;
-        this.f21451l = 1;
-        this.f21452m = 0;
-        this.f21441a = context;
-        this.f21443c = LayoutInflater.from(context);
-        this.i = z3;
-        this.f21449j = i;
-        this.f21450k = z6;
-        this.f21451l = i6;
-        this.f21452m = i9;
+        this.f22231d = 1;
+        this.f22232e = new f();
+        this.f22233f = false;
+        this.f22238l = 1;
+        this.f22239m = 0;
+        this.f22228a = context;
+        this.f22230c = LayoutInflater.from(context);
+        this.i = z6;
+        this.f22236j = i;
+        this.f22237k = z9;
+        this.f22238l = i4;
+        this.f22239m = i6;
         init(context);
     }
 
     public AnythinkBaseView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f21444d = 1;
-        this.f21445e = new f();
-        this.f21446f = false;
-        this.f21451l = 1;
-        this.f21452m = 0;
-        this.f21441a = context;
-        this.f21443c = LayoutInflater.from(context);
+        this.f22231d = 1;
+        this.f22232e = new f();
+        this.f22233f = false;
+        this.f22238l = 1;
+        this.f22239m = 0;
+        this.f22228a = context;
+        this.f22230c = LayoutInflater.from(context);
         init(context);
     }
 }

@@ -10,9 +10,9 @@ public interface d {
 
     void onBannerClose(CustomBannerAdapter customBannerAdapter);
 
-    void onBannerShow(CustomBannerAdapter customBannerAdapter, boolean z3);
+    void onBannerShow(CustomBannerAdapter customBannerAdapter, boolean z6);
 
-    void onDeeplinkCallback(CustomBannerAdapter customBannerAdapter, boolean z3);
+    void onDeeplinkCallback(CustomBannerAdapter customBannerAdapter, boolean z6);
 
     void onDownloadConfirm(Context context, CustomBannerAdapter customBannerAdapter, ATNetworkConfirmInfo aTNetworkConfirmInfo);
 }

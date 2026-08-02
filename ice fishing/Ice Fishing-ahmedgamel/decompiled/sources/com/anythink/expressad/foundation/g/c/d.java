@@ -11,39 +11,39 @@ import java.util.List;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19174a = "AnythinkDirManager";
+    private static final String f19961a = "AnythinkDirManager";
 
     /* renamed from: d, reason: collision with root package name */
-    private static d f19175d;
+    private static d f19962d;
 
     /* renamed from: b, reason: collision with root package name */
-    private f f19176b;
+    private f f19963b;
 
     /* renamed from: c, reason: collision with root package name */
-    private ArrayList<a> f19177c = new ArrayList<>();
+    private ArrayList<a> f19964c = new ArrayList<>();
 
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public com.anythink.expressad.foundation.g.c.a f19178a;
+        public com.anythink.expressad.foundation.g.c.a f19965a;
 
         /* renamed from: b, reason: collision with root package name */
-        public File f19179b;
+        public File f19966b;
 
         public a(com.anythink.expressad.foundation.g.c.a aVar, File file) {
-            this.f19178a = aVar;
-            this.f19179b = file;
+            this.f19965a = aVar;
+            this.f19966b = file;
         }
     }
 
     private d(f fVar) {
-        this.f19176b = fVar;
+        this.f19963b = fVar;
     }
 
     public static synchronized void a(f fVar) {
         synchronized (d.class) {
-            if (f19175d == null) {
-                f19175d = new d(fVar);
+            if (f19962d == null) {
+                f19962d = new d(fVar);
             }
         }
     }
@@ -57,20 +57,20 @@ public final class d {
     }
 
     public final boolean b() {
-        return a(this.f19176b.b());
+        return a(this.f19963b.b());
     }
 
     public static synchronized d a() {
         d dVar;
         synchronized (d.class) {
             try {
-                if (f19175d == null && com.anythink.expressad.foundation.b.a.c().e() != null) {
+                if (f19962d == null && com.anythink.expressad.foundation.b.a.c().e() != null) {
                     t.a(com.anythink.expressad.foundation.b.a.c().e());
                 }
-                if (f19175d == null) {
-                    Log.e(f19174a, "mDirectoryManager == null");
+                if (f19962d == null) {
+                    Log.e(f19961a, "mDirectoryManager == null");
                 }
-                dVar = f19175d;
+                dVar = f19962d;
             } catch (Throwable th) {
                 throw th;
             }
@@ -80,14 +80,14 @@ public final class d {
 
     public static File a(com.anythink.expressad.foundation.g.c.a aVar) {
         try {
-            if (a() == null || a().f19177c == null || a().f19177c.size() <= 0) {
+            if (a() == null || a().f19964c == null || a().f19964c.size() <= 0) {
                 return null;
             }
-            Iterator<a> it = a().f19177c.iterator();
+            Iterator<a> it = a().f19964c.iterator();
             while (it.hasNext()) {
                 a next = it.next();
-                if (next.f19178a.equals(aVar)) {
-                    return next.f19179b;
+                if (next.f19965a.equals(aVar)) {
+                    return next.f19966b;
                 }
             }
             return null;
@@ -113,10 +113,10 @@ public final class d {
         if (!(!file.exists() ? file.mkdirs() : true)) {
             return false;
         }
-        this.f19177c.add(new a(eVar.a(), file));
-        List<e> d2 = eVar.d();
-        if (d2 != null) {
-            Iterator<e> it = d2.iterator();
+        this.f19964c.add(new a(eVar.a(), file));
+        List<e> d9 = eVar.d();
+        if (d9 != null) {
+            Iterator<e> it = d9.iterator();
             while (it.hasNext()) {
                 if (!a(it.next())) {
                     return false;

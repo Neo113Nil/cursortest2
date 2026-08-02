@@ -33,80 +33,80 @@ import org.json.JSONObject;
 public class WTWebView extends BaseWebView {
 
     /* renamed from: A, reason: collision with root package name */
-    private c f11383A;
+    private c f12169A;
 
     /* renamed from: a, reason: collision with root package name */
-    k f11384a;
+    k f12170a;
 
     /* renamed from: b, reason: collision with root package name */
-    j f11385b;
+    j f12171b;
 
     /* renamed from: c, reason: collision with root package name */
-    c f11386c;
+    c f12172c;
 
     /* renamed from: d, reason: collision with root package name */
-    volatile boolean f11387d;
+    volatile boolean f12173d;
 
     /* renamed from: e, reason: collision with root package name */
-    volatile boolean f11388e;
+    volatile boolean f12174e;
 
     /* renamed from: f, reason: collision with root package name */
-    boolean f11389f;
+    boolean f12175f;
 
     /* renamed from: h, reason: collision with root package name */
-    private final String f11390h;
+    private final String f12176h;
     private long i;
 
     /* renamed from: j, reason: collision with root package name */
-    private com.anythink.core.common.t.b f11391j;
+    private com.anythink.core.common.t.b f12177j;
 
     /* renamed from: k, reason: collision with root package name */
-    private w f11392k;
+    private w f12178k;
 
     /* renamed from: l, reason: collision with root package name */
-    private x f11393l;
+    private x f12179l;
 
     /* renamed from: m, reason: collision with root package name */
-    private boolean f11394m;
+    private boolean f12180m;
 
     /* renamed from: n, reason: collision with root package name */
-    private Object f11395n;
+    private Object f12181n;
 
     /* renamed from: o, reason: collision with root package name */
-    private f f11396o;
+    private f f12182o;
 
     /* renamed from: p, reason: collision with root package name */
-    private a f11397p;
+    private a f12183p;
 
     /* renamed from: q, reason: collision with root package name */
-    private Object f11398q;
+    private Object f12184q;
 
     /* renamed from: r, reason: collision with root package name */
-    private final List<i> f11399r;
+    private final List<i> f12185r;
 
     /* renamed from: s, reason: collision with root package name */
-    private volatile boolean f11400s;
+    private volatile boolean f12186s;
 
     /* renamed from: t, reason: collision with root package name */
-    private String f11401t;
+    private String f12187t;
 
     /* renamed from: u, reason: collision with root package name */
-    private long f11402u;
+    private long f12188u;
 
     /* renamed from: v, reason: collision with root package name */
-    private boolean f11403v;
+    private boolean f12189v;
 
     /* renamed from: w, reason: collision with root package name */
-    private long f11404w;
+    private long f12190w;
 
     /* renamed from: x, reason: collision with root package name */
-    private long f11405x;
+    private long f12191x;
 
     /* renamed from: y, reason: collision with root package name */
-    private long f11406y;
+    private long f12192y;
 
     /* renamed from: z, reason: collision with root package name */
-    private long f11407z;
+    private long f12193z;
 
     public interface a {
         void a();
@@ -114,21 +114,21 @@ public class WTWebView extends BaseWebView {
 
     public WTWebView(Context context) {
         super(context);
-        this.f11390h = "WTWebView";
+        this.f12176h = "WTWebView";
         this.i = m.ai;
-        this.f11387d = false;
-        this.f11388e = false;
-        this.f11398q = new Object();
-        this.f11389f = false;
-        this.f11399r = Collections.synchronizedList(new ArrayList());
-        this.f11400s = false;
-        this.f11401t = "";
-        this.f11403v = false;
-        this.f11404w = 0L;
-        this.f11405x = 0L;
-        this.f11406y = 0L;
-        this.f11407z = 0L;
-        this.f11383A = new c() { // from class: com.anythink.basead.webtemplet.WTWebView.1
+        this.f12173d = false;
+        this.f12174e = false;
+        this.f12184q = new Object();
+        this.f12175f = false;
+        this.f12185r = Collections.synchronizedList(new ArrayList());
+        this.f12186s = false;
+        this.f12187t = "";
+        this.f12189v = false;
+        this.f12190w = 0L;
+        this.f12191x = 0L;
+        this.f12192y = 0L;
+        this.f12193z = 0L;
+        this.f12169A = new c() { // from class: com.anythink.basead.webtemplet.WTWebView.1
             @Override // com.anythink.basead.webtemplet.c
             public final void a() {
             }
@@ -147,10 +147,10 @@ public class WTWebView extends BaseWebView {
 
             @Override // com.anythink.basead.webtemplet.c
             public final void a(WebView webView, String str, Bitmap bitmap) {
-                if (WTWebView.this.f11404w == 0) {
-                    WTWebView.this.f11404w = System.currentTimeMillis();
+                if (WTWebView.this.f12190w == 0) {
+                    WTWebView.this.f12190w = System.currentTimeMillis();
                 }
-                c cVar = WTWebView.this.f11386c;
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
                     cVar.a(webView, str, bitmap);
                 }
@@ -158,7 +158,7 @@ public class WTWebView extends BaseWebView {
 
             @Override // com.anythink.basead.webtemplet.c
             public final void b(WebView webView) {
-                c cVar = WTWebView.this.f11386c;
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
                     cVar.b(webView);
                 }
@@ -166,7 +166,7 @@ public class WTWebView extends BaseWebView {
 
             @Override // com.anythink.basead.webtemplet.c
             public final boolean a(WebView webView, String str) {
-                c cVar = WTWebView.this.f11386c;
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
                     return cVar.a(webView, str);
                 }
@@ -175,7 +175,7 @@ public class WTWebView extends BaseWebView {
 
             @Override // com.anythink.basead.webtemplet.c
             public final void a(WebView webView, int i, String str, String str2) {
-                c cVar = WTWebView.this.f11386c;
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
                     cVar.a(webView, i, str, str2);
                 }
@@ -184,7 +184,7 @@ public class WTWebView extends BaseWebView {
 
             @Override // com.anythink.basead.webtemplet.c
             public final void a(WebView webView, SslErrorHandler sslErrorHandler, SslError sslError) {
-                c cVar = WTWebView.this.f11386c;
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
                     cVar.a(webView, sslErrorHandler, sslError);
                 }
@@ -193,7 +193,7 @@ public class WTWebView extends BaseWebView {
 
             @Override // com.anythink.basead.webtemplet.c
             public final void a(WebView webView) {
-                c cVar = WTWebView.this.f11386c;
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
                     cVar.a(webView);
                 }
@@ -203,11 +203,11 @@ public class WTWebView extends BaseWebView {
     }
 
     public Object getJsCommunicationObject() {
-        return this.f11395n;
+        return this.f12181n;
     }
 
     public Object getJsObject(String str) {
-        f fVar = this.f11396o;
+        f fVar = this.f12182o;
         if (fVar == null) {
             return null;
         }
@@ -216,9 +216,9 @@ public class WTWebView extends BaseWebView {
 
     public void h5ShowException(String str) {
         String str2;
-        if (this.f11391j != null) {
-            com.anythink.core.common.t.d.a().b(this.f11391j);
-            this.f11391j = null;
+        if (this.f12177j != null) {
+            com.anythink.core.common.t.d.a().b(this.f12177j);
+            this.f12177j = null;
         }
         int i = 0;
         try {
@@ -226,55 +226,55 @@ public class WTWebView extends BaseWebView {
             i = jSONObject.optInt("error_code", 0);
             str2 = jSONObject.optString("error_message", "");
         } catch (Throwable unused) {
-            str2 = com.anythink.core.common.v.m.f16809e;
+            str2 = com.anythink.core.common.v.m.f17596e;
         }
         a(i == -999 ? 3 : 2, i + "," + str2);
-        c cVar = this.f11386c;
+        c cVar = this.f12172c;
         if (cVar != null) {
             cVar.a(this, i, str2, getUrl());
         }
         a(String.valueOf(i), str2);
     }
 
-    public void initData(w wVar, x xVar, boolean z3) {
+    public void initData(w wVar, x xVar, boolean z6) {
         y yVar;
-        this.f11392k = wVar;
-        this.f11393l = xVar;
-        this.f11394m = z3;
-        if (xVar == null || (yVar = xVar.f14168o) == null) {
+        this.f12178k = wVar;
+        this.f12179l = xVar;
+        this.f12180m = z6;
+        if (xVar == null || (yVar = xVar.f14954o) == null) {
             return;
         }
         this.i = yVar.bM();
     }
 
     public boolean isPreload() {
-        return this.f11394m;
+        return this.f12180m;
     }
 
     public void jsCallInitSuccess() {
-        this.f11405x = System.currentTimeMillis();
+        this.f12191x = System.currentTimeMillis();
     }
 
     @Override // android.webkit.WebView
     public void loadUrl(String str) {
-        if (TextUtils.isEmpty(this.f11401t)) {
-            this.f11401t = str;
-            this.f11402u = System.currentTimeMillis();
-            if (this.f11391j == null) {
-                this.f11391j = new com.anythink.core.common.t.b() { // from class: com.anythink.basead.webtemplet.WTWebView.2
+        if (TextUtils.isEmpty(this.f12187t)) {
+            this.f12187t = str;
+            this.f12188u = System.currentTimeMillis();
+            if (this.f12177j == null) {
+                this.f12177j = new com.anythink.core.common.t.b() { // from class: com.anythink.basead.webtemplet.WTWebView.2
                     @Override // java.lang.Runnable
                     public final void run() {
                         WTWebView.this.h5ShowException("{\"error_code\":-999,\"error_message\":\"render timeout\"}");
                     }
                 };
-                com.anythink.core.common.t.d.a().a(this.f11391j, this.i, true);
+                com.anythink.core.common.t.d.a().a(this.f12177j, this.i, true);
             }
         }
         super.loadUrl(str);
     }
 
     public void notifyInnerAdEvent(final int i, final Map<String, Object> map) {
-        if (this.f11400s) {
+        if (this.f12186s) {
             com.anythink.core.common.v.b.b.a().b(new Runnable() { // from class: com.anythink.basead.webtemplet.WTWebView.5
                 /* JADX WARN: Multi-variable type inference failed */
                 /* JADX WARN: Removed duplicated region for block: B:17:0x01e5 A[RETURN] */
@@ -293,14 +293,14 @@ public class WTWebView extends BaseWebView {
                 public final void run() {
                     String str;
                     String str2;
-                    ?? r12 = i;
+                    ?? r1 = i;
                     String str3 = "";
-                    if (r12 == 101) {
-                        str = b.a.f11427k;
-                    } else if (r12 != 301) {
-                        if (r12 == 305) {
+                    if (r1 == 101) {
+                        str = b.a.f12213k;
+                    } else if (r1 != 301) {
+                        if (r1 == 305) {
                             Map map2 = map;
-                            r12 = b.a.f11431o;
+                            r1 = b.a.f12217o;
                             if (map2 != null) {
                                 JSONObject jSONObject = new JSONObject();
                                 Object obj = map.get("wt_view_width");
@@ -313,30 +313,30 @@ public class WTWebView extends BaseWebView {
                                 }
                                 str3 = jSONObject.toString();
                             }
-                        } else if (r12 == 107) {
-                            str = b.a.f11430n;
+                        } else if (r1 == 107) {
+                            str = b.a.f12216n;
                         } else {
-                            if (r12 != 108) {
-                                switch (r12) {
+                            if (r1 != 108) {
+                                switch (r1) {
                                     case 110:
-                                        str = b.a.f11423f;
+                                        str = b.a.f12209f;
                                         break;
                                     case 111:
-                                        str = b.a.f11422e;
+                                        str = b.a.f12208e;
                                         break;
                                     case 112:
-                                        str = b.a.f11424g;
+                                        str = b.a.f12210g;
                                         break;
                                     case 113:
                                         Map map3 = map;
-                                        r12 = b.a.f11419b;
+                                        r1 = b.a.f12205b;
                                         if (map3 != null) {
                                             JSONObject jSONObject2 = new JSONObject();
                                             Object obj3 = map.get("click_type");
                                             if (obj3 != null) {
                                                 jSONObject2.put("cl_s_type", obj3);
                                             }
-                                            Object obj4 = map.get(g.a.f11172g);
+                                            Object obj4 = map.get(g.a.f11958g);
                                             if (obj3 != null) {
                                                 jSONObject2.put("cl_area", obj4);
                                             }
@@ -345,34 +345,34 @@ public class WTWebView extends BaseWebView {
                                         }
                                         break;
                                     case 114:
-                                        str = b.a.f11418a;
+                                        str = b.a.f12204a;
                                         break;
                                     case 115:
-                                        str = b.a.f11420c;
+                                        str = b.a.f12206c;
                                         break;
                                     default:
-                                        switch (r12) {
+                                        switch (r1) {
                                             case 121:
                                                 if (map != null) {
                                                     try {
                                                         JSONObject jSONObject3 = new JSONObject();
-                                                        Object obj5 = map.get(g.a.f11173h);
+                                                        Object obj5 = map.get(g.a.f11959h);
                                                         if (obj5 != null) {
-                                                            jSONObject3.put(g.a.f11173h, obj5);
+                                                            jSONObject3.put(g.a.f11959h, obj5);
                                                         }
                                                         str3 = jSONObject3.toString();
                                                     } catch (Throwable unused) {
                                                     }
                                                 }
                                                 str2 = str3;
-                                                str3 = b.a.f11425h;
+                                                str3 = b.a.f12211h;
                                                 break;
                                             case 122:
                                                 str = b.a.i;
                                                 break;
                                             case 123:
                                                 Map map4 = map;
-                                                r12 = b.a.f11426j;
+                                                r1 = b.a.f12212j;
                                                 if (map4 != null) {
                                                     JSONObject jSONObject4 = new JSONObject();
                                                     Object obj6 = map.get("video_length");
@@ -384,16 +384,16 @@ public class WTWebView extends BaseWebView {
                                                 }
                                                 break;
                                             case 124:
-                                                str = b.a.f11429m;
+                                                str = b.a.f12215m;
                                                 break;
                                             case 125:
                                                 Map map5 = map;
-                                                r12 = b.a.f11432p;
+                                                r1 = b.a.f12218p;
                                                 if (map5 != null) {
                                                     JSONObject jSONObject5 = new JSONObject();
-                                                    Object obj7 = map.get(g.a.f11175k);
+                                                    Object obj7 = map.get(g.a.f11961k);
                                                     if (obj7 != null) {
-                                                        jSONObject5.put(g.a.f12949C, obj7);
+                                                        jSONObject5.put(g.a.f13735C, obj7);
                                                     }
                                                     str3 = jSONObject5.toString();
                                                     break;
@@ -411,7 +411,7 @@ public class WTWebView extends BaseWebView {
                                 return;
                             }
                             Map map6 = map;
-                            r12 = b.a.f11428l;
+                            r1 = b.a.f12214l;
                             if (map6 != null) {
                                 JSONObject jSONObject6 = new JSONObject();
                                 Object obj8 = map.get(g.a.i);
@@ -422,32 +422,32 @@ public class WTWebView extends BaseWebView {
                             }
                         }
                         str2 = str3;
-                        str3 = r12;
+                        str3 = r1;
                         if (TextUtils.isEmpty(str3)) {
                         }
                     } else {
-                        str = b.a.f11421d;
+                        str = b.a.f12207d;
                         try {
                             JSONObject jSONObject7 = new JSONObject();
                             JSONObject jSONObject8 = new JSONObject();
-                            String B9 = WTWebView.this.f11392k.B();
-                            if (!TextUtils.isEmpty(B9)) {
-                                if (WTWebView.this.f11392k.ab() <= 0 && WTWebView.this.f11392k.ac() <= 0) {
+                            String B3 = WTWebView.this.f12178k.B();
+                            if (!TextUtils.isEmpty(B3)) {
+                                if (WTWebView.this.f12178k.ab() <= 0 && WTWebView.this.f12178k.ac() <= 0) {
                                     com.anythink.basead.b.f.a();
-                                    int[] a9 = com.anythink.core.common.v.h.a(com.anythink.basead.b.f.a(1, B9));
+                                    int[] a9 = com.anythink.core.common.v.h.a(com.anythink.basead.b.f.a(1, B3));
                                     if (a9 != null) {
                                         jSONObject8.put("image_width", a9[0]);
                                         jSONObject8.put("image_height", a9[1]);
                                     }
                                 }
-                                jSONObject8.put("image_width", WTWebView.this.f11392k.ab());
-                                jSONObject8.put("image_height", WTWebView.this.f11392k.ac());
+                                jSONObject8.put("image_width", WTWebView.this.f12178k.ab());
+                                jSONObject8.put("image_height", WTWebView.this.f12178k.ac());
                             }
-                            if (!TextUtils.isEmpty(WTWebView.this.f11392k.E()) && WTWebView.this.f11392k.V() > 0 && WTWebView.this.f11392k.W() > 0) {
-                                jSONObject8.put("video_width", WTWebView.this.f11392k.V());
-                                jSONObject8.put("video_height", WTWebView.this.f11392k.W());
+                            if (!TextUtils.isEmpty(WTWebView.this.f12178k.E()) && WTWebView.this.f12178k.V() > 0 && WTWebView.this.f12178k.W() > 0) {
+                                jSONObject8.put("video_width", WTWebView.this.f12178k.V());
+                                jSONObject8.put("video_height", WTWebView.this.f12178k.W());
                             }
-                            jSONObject7.put(b.c.f11440g, jSONObject8);
+                            jSONObject7.put(b.c.f12226g, jSONObject8);
                             str3 = jSONObject7.toString();
                         } catch (Throwable unused2) {
                         }
@@ -461,52 +461,52 @@ public class WTWebView extends BaseWebView {
             }, 2);
             return;
         }
-        synchronized (this.f11399r) {
-            this.f11399r.add(new i(i, map));
+        synchronized (this.f12185r) {
+            this.f12185r.add(new i(i, map));
         }
     }
 
     public void offerDataInject() {
-        this.f11406y = System.currentTimeMillis();
+        this.f12192y = System.currentTimeMillis();
         String str = "";
         try {
             if (getContext() == null) {
                 t.b().g();
             }
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("offer_data", new JSONObject(this.f11392k.aw()));
+            jSONObject.put("offer_data", new JSONObject(this.f12178k.aw()));
             JSONObject jSONObject2 = new JSONObject();
-            String B9 = this.f11392k.B();
-            if (!TextUtils.isEmpty(B9)) {
-                if (this.f11392k.ab() <= 0 && this.f11392k.ac() <= 0) {
+            String B3 = this.f12178k.B();
+            if (!TextUtils.isEmpty(B3)) {
+                if (this.f12178k.ab() <= 0 && this.f12178k.ac() <= 0) {
                     com.anythink.basead.b.f.a();
-                    int[] a9 = com.anythink.core.common.v.h.a(com.anythink.basead.b.f.a(1, B9));
+                    int[] a9 = com.anythink.core.common.v.h.a(com.anythink.basead.b.f.a(1, B3));
                     if (a9 != null) {
                         jSONObject2.put("image_width", a9[0]);
                         jSONObject2.put("image_height", a9[1]);
                     }
                 }
-                jSONObject2.put("image_width", this.f11392k.ab());
-                jSONObject2.put("image_height", this.f11392k.ac());
+                jSONObject2.put("image_width", this.f12178k.ab());
+                jSONObject2.put("image_height", this.f12178k.ac());
             }
-            if (!TextUtils.isEmpty(this.f11392k.E()) && this.f11392k.V() > 0 && this.f11392k.W() > 0) {
-                jSONObject2.put("video_width", this.f11392k.V());
-                jSONObject2.put("video_height", this.f11392k.W());
+            if (!TextUtils.isEmpty(this.f12178k.E()) && this.f12178k.V() > 0 && this.f12178k.W() > 0) {
+                jSONObject2.put("video_width", this.f12178k.V());
+                jSONObject2.put("video_height", this.f12178k.W());
             }
-            jSONObject.put(b.c.f11440g, jSONObject2);
+            jSONObject.put(b.c.f12226g, jSONObject2);
             str = jSONObject.toString();
         } catch (Throwable unused) {
         }
-        com.anythink.basead.webtemplet.a.c.a().a((WebView) this, b.C0066b.f11433a, str);
-        this.f11407z = System.currentTimeMillis();
-        this.f11400s = true;
-        synchronized (this.f11399r) {
+        com.anythink.basead.webtemplet.a.c.a().a((WebView) this, b.C0066b.f12219a, str);
+        this.f12193z = System.currentTimeMillis();
+        this.f12186s = true;
+        synchronized (this.f12185r) {
             try {
-                if (!this.f11399r.isEmpty()) {
-                    for (i iVar : this.f11399r) {
-                        notifyInnerAdEvent(iVar.f11514a, iVar.f11515b);
+                if (!this.f12185r.isEmpty()) {
+                    for (i iVar : this.f12185r) {
+                        notifyInnerAdEvent(iVar.f12300a, iVar.f12301b);
                     }
-                    this.f11399r.clear();
+                    this.f12185r.clear();
                 }
             } catch (Throwable th) {
                 throw th;
@@ -517,39 +517,39 @@ public class WTWebView extends BaseWebView {
     @Override // com.anythink.core.basead.ui.web.BaseWebView, android.webkit.WebView, android.view.ViewGroup, android.view.View
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        if (this.f11389f) {
+        if (this.f12175f) {
             return;
         }
-        this.f11389f = true;
-        notifyInnerAdEvent(BaseATView.a.f9775L, null);
+        this.f12175f = true;
+        notifyInnerAdEvent(BaseATView.a.f10561L, null);
     }
 
     @Override // android.webkit.WebView, android.view.View
-    public void onSizeChanged(int i, int i6, int i9, int i10) {
-        super.onSizeChanged(i, i6, i9, i10);
-        if (i == i9 && i6 == i10) {
+    public void onSizeChanged(int i, int i4, int i6, int i9) {
+        super.onSizeChanged(i, i4, i6, i9);
+        if (i == i6 && i4 == i9) {
             return;
         }
         try {
             HashMap hashMap = new HashMap();
             hashMap.put("wt_view_width", Integer.valueOf(i));
-            hashMap.put("wt_view_height", Integer.valueOf(i6));
-            notifyInnerAdEvent(BaseATView.a.f9779P, hashMap);
+            hashMap.put("wt_view_height", Integer.valueOf(i4));
+            notifyInnerAdEvent(BaseATView.a.f10565P, hashMap);
         } catch (Throwable unused) {
         }
     }
 
     public void prepare(a aVar) {
-        this.f11397p = aVar;
+        this.f12183p = aVar;
         getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() { // from class: com.anythink.basead.webtemplet.WTWebView.3
             @Override // android.view.ViewTreeObserver.OnPreDrawListener
             public final boolean onPreDraw() {
                 try {
-                    if (WTWebView.this.f11387d) {
+                    if (WTWebView.this.f12173d) {
                         return false;
                     }
                     WTWebView.this.getViewTreeObserver().removeOnPreDrawListener(this);
-                    WTWebView.this.f11387d = true;
+                    WTWebView.this.f12173d = true;
                     WTWebView.this.c();
                     return false;
                 } catch (Throwable th) {
@@ -562,18 +562,18 @@ public class WTWebView extends BaseWebView {
 
     public void release() {
         try {
-            if (this.f11391j != null) {
-                com.anythink.core.common.t.d.a().b(this.f11391j);
-                this.f11391j = null;
+            if (this.f12177j != null) {
+                com.anythink.core.common.t.d.a().b(this.f12177j);
+                this.f12177j = null;
             }
             setVisibility(8);
             setDownloadListener(null);
-            this.f11395n = null;
-            if (this.f11383A != null) {
-                this.f11383A = null;
+            this.f12181n = null;
+            if (this.f12169A != null) {
+                this.f12169A = null;
             }
-            if (this.f11386c != null) {
-                this.f11386c = null;
+            if (this.f12172c != null) {
+                this.f12172c = null;
             }
             destroy();
         } catch (Throwable th) {
@@ -582,22 +582,22 @@ public class WTWebView extends BaseWebView {
     }
 
     public void renderSuccess() {
-        if (this.f11391j != null) {
-            com.anythink.core.common.t.d.a().b(this.f11391j);
-            this.f11391j = null;
+        if (this.f12177j != null) {
+            com.anythink.core.common.t.d.a().b(this.f12177j);
+            this.f12177j = null;
         }
-        this.f11388e = true;
-        c cVar = this.f11386c;
+        this.f12174e = true;
+        c cVar = this.f12172c;
         if (cVar != null) {
             cVar.b(this);
         }
         c();
         a(1, "");
-        if (!this.f11392k.ae() || TextUtils.isEmpty(this.f11392k.D())) {
+        if (!this.f12178k.ae() || TextUtils.isEmpty(this.f12178k.D())) {
             return;
         }
         HashMap hashMap = new HashMap();
-        hashMap.put(g.a.f11173h, this.f11392k.D());
+        hashMap.put(g.a.f11959h, this.f12178k.D());
         notifyInnerAdEvent(121, hashMap);
     }
 
@@ -605,25 +605,25 @@ public class WTWebView extends BaseWebView {
         com.anythink.core.common.v.b.b.a().b(new Runnable() { // from class: com.anythink.basead.webtemplet.WTWebView.4
             @Override // java.lang.Runnable
             public final void run() {
-                w unused = WTWebView.this.f11392k;
-                com.anythink.core.common.u.e.a(WTWebView.this.f11393l, str);
+                w unused = WTWebView.this.f12178k;
+                com.anythink.core.common.u.e.a(WTWebView.this.f12179l, str);
             }
         }, 2);
     }
 
     public void setJsCommunicationObject(Object obj) {
-        this.f11395n = obj;
+        this.f12181n = obj;
     }
 
     public void setWebViewListener(c cVar) {
-        this.f11386c = cVar;
-        j jVar = this.f11385b;
+        this.f12172c = cVar;
+        j jVar = this.f12171b;
         if (jVar != null) {
-            jVar.a(this.f11383A);
+            jVar.a(this.f12169A);
         }
-        k kVar = this.f11384a;
+        k kVar = this.f12170a;
         if (kVar != null) {
-            kVar.a(this.f11383A);
+            kVar.a(this.f12169A);
         }
     }
 
@@ -699,11 +699,11 @@ public class WTWebView extends BaseWebView {
     /* JADX INFO: Access modifiers changed from: private */
     public void c() {
         a aVar;
-        synchronized (this.f11398q) {
+        synchronized (this.f12184q) {
             try {
-                if (this.f11387d && this.f11388e && (aVar = this.f11397p) != null) {
+                if (this.f12173d && this.f12174e && (aVar = this.f12183p) != null) {
                     aVar.a();
-                    this.f11397p = null;
+                    this.f12183p = null;
                 }
             } catch (Throwable th) {
                 throw th;
@@ -713,11 +713,11 @@ public class WTWebView extends BaseWebView {
 
     private void d() {
         a(1, "");
-        if (!this.f11392k.ae() || TextUtils.isEmpty(this.f11392k.D())) {
+        if (!this.f12178k.ae() || TextUtils.isEmpty(this.f12178k.D())) {
             return;
         }
         HashMap hashMap = new HashMap();
-        hashMap.put(g.a.f11173h, this.f11392k.D());
+        hashMap.put(g.a.f11959h, this.f12178k.D());
         notifyInnerAdEvent(121, hashMap);
     }
 
@@ -785,35 +785,35 @@ public class WTWebView extends BaseWebView {
         } catch (Throwable unused4) {
         }
         j jVar = new j();
-        this.f11385b = jVar;
-        jVar.f11516a = this;
-        jVar.f11517b = new g(this);
-        setWebChromeClient(this.f11385b);
+        this.f12171b = jVar;
+        jVar.f12302a = this;
+        jVar.f12303b = new g(this);
+        setWebChromeClient(this.f12171b);
         k kVar = new k();
-        this.f11384a = kVar;
-        kVar.f11521a = new g(this);
-        setWebViewClient(this.f11384a);
-        this.f11396o = new f(this);
+        this.f12170a = kVar;
+        kVar.f12307a = new g(this);
+        setWebViewClient(this.f12170a);
+        this.f12182o = new f(this);
         setWebViewTransparent();
     }
 
     public WTWebView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f11390h = "WTWebView";
+        this.f12176h = "WTWebView";
         this.i = m.ai;
-        this.f11387d = false;
-        this.f11388e = false;
-        this.f11398q = new Object();
-        this.f11389f = false;
-        this.f11399r = Collections.synchronizedList(new ArrayList());
-        this.f11400s = false;
-        this.f11401t = "";
-        this.f11403v = false;
-        this.f11404w = 0L;
-        this.f11405x = 0L;
-        this.f11406y = 0L;
-        this.f11407z = 0L;
-        this.f11383A = new c() { // from class: com.anythink.basead.webtemplet.WTWebView.1
+        this.f12173d = false;
+        this.f12174e = false;
+        this.f12184q = new Object();
+        this.f12175f = false;
+        this.f12185r = Collections.synchronizedList(new ArrayList());
+        this.f12186s = false;
+        this.f12187t = "";
+        this.f12189v = false;
+        this.f12190w = 0L;
+        this.f12191x = 0L;
+        this.f12192y = 0L;
+        this.f12193z = 0L;
+        this.f12169A = new c() { // from class: com.anythink.basead.webtemplet.WTWebView.1
             @Override // com.anythink.basead.webtemplet.c
             public final void a() {
             }
@@ -832,10 +832,10 @@ public class WTWebView extends BaseWebView {
 
             @Override // com.anythink.basead.webtemplet.c
             public final void a(WebView webView, String str, Bitmap bitmap) {
-                if (WTWebView.this.f11404w == 0) {
-                    WTWebView.this.f11404w = System.currentTimeMillis();
+                if (WTWebView.this.f12190w == 0) {
+                    WTWebView.this.f12190w = System.currentTimeMillis();
                 }
-                c cVar = WTWebView.this.f11386c;
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
                     cVar.a(webView, str, bitmap);
                 }
@@ -843,7 +843,7 @@ public class WTWebView extends BaseWebView {
 
             @Override // com.anythink.basead.webtemplet.c
             public final void b(WebView webView) {
-                c cVar = WTWebView.this.f11386c;
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
                     cVar.b(webView);
                 }
@@ -851,7 +851,7 @@ public class WTWebView extends BaseWebView {
 
             @Override // com.anythink.basead.webtemplet.c
             public final boolean a(WebView webView, String str) {
-                c cVar = WTWebView.this.f11386c;
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
                     return cVar.a(webView, str);
                 }
@@ -860,7 +860,7 @@ public class WTWebView extends BaseWebView {
 
             @Override // com.anythink.basead.webtemplet.c
             public final void a(WebView webView, int i, String str, String str2) {
-                c cVar = WTWebView.this.f11386c;
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
                     cVar.a(webView, i, str, str2);
                 }
@@ -869,7 +869,7 @@ public class WTWebView extends BaseWebView {
 
             @Override // com.anythink.basead.webtemplet.c
             public final void a(WebView webView, SslErrorHandler sslErrorHandler, SslError sslError) {
-                c cVar = WTWebView.this.f11386c;
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
                     cVar.a(webView, sslErrorHandler, sslError);
                 }
@@ -878,7 +878,7 @@ public class WTWebView extends BaseWebView {
 
             @Override // com.anythink.basead.webtemplet.c
             public final void a(WebView webView) {
-                c cVar = WTWebView.this.f11386c;
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
                     cVar.a(webView);
                 }
@@ -889,21 +889,21 @@ public class WTWebView extends BaseWebView {
 
     public WTWebView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f11390h = "WTWebView";
+        this.f12176h = "WTWebView";
         this.i = m.ai;
-        this.f11387d = false;
-        this.f11388e = false;
-        this.f11398q = new Object();
-        this.f11389f = false;
-        this.f11399r = Collections.synchronizedList(new ArrayList());
-        this.f11400s = false;
-        this.f11401t = "";
-        this.f11403v = false;
-        this.f11404w = 0L;
-        this.f11405x = 0L;
-        this.f11406y = 0L;
-        this.f11407z = 0L;
-        this.f11383A = new c() { // from class: com.anythink.basead.webtemplet.WTWebView.1
+        this.f12173d = false;
+        this.f12174e = false;
+        this.f12184q = new Object();
+        this.f12175f = false;
+        this.f12185r = Collections.synchronizedList(new ArrayList());
+        this.f12186s = false;
+        this.f12187t = "";
+        this.f12189v = false;
+        this.f12190w = 0L;
+        this.f12191x = 0L;
+        this.f12192y = 0L;
+        this.f12193z = 0L;
+        this.f12169A = new c() { // from class: com.anythink.basead.webtemplet.WTWebView.1
             @Override // com.anythink.basead.webtemplet.c
             public final void a() {
             }
@@ -922,10 +922,10 @@ public class WTWebView extends BaseWebView {
 
             @Override // com.anythink.basead.webtemplet.c
             public final void a(WebView webView, String str, Bitmap bitmap) {
-                if (WTWebView.this.f11404w == 0) {
-                    WTWebView.this.f11404w = System.currentTimeMillis();
+                if (WTWebView.this.f12190w == 0) {
+                    WTWebView.this.f12190w = System.currentTimeMillis();
                 }
-                c cVar = WTWebView.this.f11386c;
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
                     cVar.a(webView, str, bitmap);
                 }
@@ -933,7 +933,7 @@ public class WTWebView extends BaseWebView {
 
             @Override // com.anythink.basead.webtemplet.c
             public final void b(WebView webView) {
-                c cVar = WTWebView.this.f11386c;
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
                     cVar.b(webView);
                 }
@@ -941,7 +941,7 @@ public class WTWebView extends BaseWebView {
 
             @Override // com.anythink.basead.webtemplet.c
             public final boolean a(WebView webView, String str) {
-                c cVar = WTWebView.this.f11386c;
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
                     return cVar.a(webView, str);
                 }
@@ -949,17 +949,17 @@ public class WTWebView extends BaseWebView {
             }
 
             @Override // com.anythink.basead.webtemplet.c
-            public final void a(WebView webView, int i6, String str, String str2) {
-                c cVar = WTWebView.this.f11386c;
+            public final void a(WebView webView, int i4, String str, String str2) {
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
-                    cVar.a(webView, i6, str, str2);
+                    cVar.a(webView, i4, str, str2);
                 }
-                WTWebView.this.a("", "onReceivedError:" + i6 + "," + str);
+                WTWebView.this.a("", "onReceivedError:" + i4 + "," + str);
             }
 
             @Override // com.anythink.basead.webtemplet.c
             public final void a(WebView webView, SslErrorHandler sslErrorHandler, SslError sslError) {
-                c cVar = WTWebView.this.f11386c;
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
                     cVar.a(webView, sslErrorHandler, sslError);
                 }
@@ -968,7 +968,7 @@ public class WTWebView extends BaseWebView {
 
             @Override // com.anythink.basead.webtemplet.c
             public final void a(WebView webView) {
-                c cVar = WTWebView.this.f11386c;
+                c cVar = WTWebView.this.f12172c;
                 if (cVar != null) {
                     cVar.a(webView);
                 }
@@ -1000,7 +1000,7 @@ public class WTWebView extends BaseWebView {
     /* JADX INFO: Access modifiers changed from: private */
     public void a(String str, String str2) {
         com.anythink.basead.webtemplet.adformat.a a9;
-        Object obj = this.f11395n;
+        Object obj = this.f12181n;
         if (obj == null || !(obj instanceof com.anythink.basead.webtemplet.adformat.e) || (a9 = ((com.anythink.basead.webtemplet.adformat.e) obj).a()) == null) {
             return;
         }
@@ -1008,13 +1008,13 @@ public class WTWebView extends BaseWebView {
     }
 
     private synchronized void a(int i, String str) {
-        if (!this.f11403v && !this.f11941g) {
-            this.f11403v = true;
-            w wVar = this.f11392k;
-            x xVar = this.f11393l;
+        if (!this.f12189v && !this.f12727g) {
+            this.f12189v = true;
+            w wVar = this.f12178k;
+            x xVar = this.f12179l;
             long currentTimeMillis = System.currentTimeMillis();
-            long j6 = this.f11402u;
-            com.anythink.core.common.u.e.a(wVar, xVar, i, currentTimeMillis - j6, str, this.f11404w, this.f11405x, this.f11406y, this.f11407z, j6);
+            long j6 = this.f12188u;
+            com.anythink.core.common.u.e.a(wVar, xVar, i, currentTimeMillis - j6, str, this.f12190w, this.f12191x, this.f12192y, this.f12193z, j6);
         }
     }
 }

@@ -1,72 +1,72 @@
 package I6;
 
-import c6.C0544a;
+import c6.C0555a;
 import c6.i;
-import g1.C4523c;
+import i1.C4586c;
 import java.util.Objects;
 
 /* loaded from: classes2.dex */
 public final class c extends i {
     @Override // c6.i
-    public final Object c(C4523c c4523c) {
-        y8.h value = y8.h.f41954w;
+    public final Object c(C4586c c4586c) {
+        y8.h value = y8.h.f41925w;
         d6.d dVar = new d6.d();
-        long A9 = c4523c.A();
+        long n9 = c4586c.n();
         y8.e eVar = null;
         String str = "";
         J6.b bVar = null;
         while (true) {
-            int f3 = ((C0544a) c4523c.f37627u).f();
-            if (f3 == -1) {
+            int f2 = ((C0555a) c4586c.f38154u).f();
+            if (f2 == -1) {
                 break;
             }
-            if (f3 == 1) {
-                bVar = (J6.b) J6.b.f1471y.c(c4523c);
-            } else if (f3 == 2) {
-                dVar.add((f) f.f1330y.c(c4523c));
-            } else if (f3 != 3) {
-                c4523c.F(f3);
+            if (f2 == 1) {
+                bVar = (J6.b) J6.b.f1580y.c(c4586c);
+            } else if (f2 == 2) {
+                dVar.add((f) f.f1360y.c(c4586c));
+            } else if (f2 != 3) {
+                c4586c.t(f2);
             } else {
-                str = (String) i.f5598o.c(c4523c);
+                str = (String) i.f5774o.c(c4586c);
             }
         }
-        y8.h unknownFields = c4523c.C(A9);
+        y8.h unknownFields = c4586c.p(n9);
         kotlin.jvm.internal.h.e(unknownFields, "unknownFields");
         if (unknownFields.a() > 0) {
             eVar = new y8.e();
             kotlin.jvm.internal.h.e(value, "value");
             eVar.K(value);
-            value = y8.h.f41954w;
+            value = y8.h.f41925w;
             eVar.K(unknownFields);
         }
         if (eVar != null) {
-            value = eVar.B(eVar.f41953u);
+            value = eVar.B(eVar.f41924u);
         }
         return new d(bVar, dVar, str, value);
     }
 
     @Override // c6.i
-    public final void d(F1.a aVar, Object obj) {
+    public final void d(n4.c cVar, Object obj) {
         d dVar = (d) obj;
-        if (!Objects.equals(dVar.f1327v, null)) {
-            J6.b.f1471y.e(aVar, 1, dVar.f1327v);
+        if (!Objects.equals(dVar.f1357v, null)) {
+            J6.b.f1580y.e(cVar, 1, dVar.f1357v);
         }
-        f.f1330y.a().e(aVar, 2, dVar.f1328w);
-        String str = dVar.f1329x;
+        f.f1360y.a().e(cVar, 2, dVar.f1358w);
+        String str = dVar.f1359x;
         if (!Objects.equals(str, "")) {
-            i.f5598o.e(aVar, 3, str);
+            i.f5774o.e(cVar, 3, str);
         }
-        aVar.v(dVar.a());
+        cVar.C(dVar.a());
     }
 
     @Override // c6.i
     public final int f(Object obj) {
         d dVar = (d) obj;
-        int g4 = f.f1330y.a().g(2, dVar.f1328w) + (!Objects.equals(dVar.f1327v, null) ? J6.b.f1471y.g(1, dVar.f1327v) : 0);
-        String str = dVar.f1329x;
+        int g9 = f.f1360y.a().g(2, dVar.f1358w) + (!Objects.equals(dVar.f1357v, null) ? J6.b.f1580y.g(1, dVar.f1357v) : 0);
+        String str = dVar.f1359x;
         if (!Objects.equals(str, "")) {
-            g4 += i.f5598o.g(3, str);
+            g9 += i.f5774o.g(3, str);
         }
-        return dVar.a().a() + g4;
+        return dVar.a().a() + g9;
     }
 }

@@ -1,7 +1,8 @@
 package com.anythink.core.api;
 
 import android.text.TextUtils;
-import u1.h;
+import com.google.android.gms.internal.ads.Wv;
+import w.AbstractC5128c;
 
 /* loaded from: classes.dex */
 public class AdError {
@@ -33,7 +34,7 @@ public class AdError {
             sb.append(" ]\ndesc[ ");
             sb.append(this.desc);
             sb.append(" ]\ndetail[ ");
-            return h.g(sb, this.itemsErrorInfo, " \n]");
+            return Wv.i(sb, this.itemsErrorInfo, " \n]");
         }
         StringBuilder sb2 = new StringBuilder("code:[ ");
         sb2.append(this.code);
@@ -42,7 +43,7 @@ public class AdError {
         sb2.append(" ]platformCode:[ ");
         sb2.append(this.platformCode);
         sb2.append(" ]platformMSG:[ ");
-        return h.g(sb2, this.platformMSG, " ]");
+        return Wv.i(sb2, this.platformMSG, " ]");
     }
 
     public String getPlatformCode() {
@@ -61,14 +62,14 @@ public class AdError {
         sb.append(" ]platformCode:[ ");
         sb.append(this.platformCode);
         sb.append(" ]platformMSG:[ ");
-        return h.g(sb, this.platformMSG, " ]");
+        return Wv.i(sb, this.platformMSG, " ]");
     }
 
     public void putNetworkErrorMsg(String str, int i, String str2, AdError adError) {
         this.platformCode = adError.platformCode;
         this.platformMSG = adError.platformMSG;
         StringBuilder sb = new StringBuilder();
-        h.i(sb, this.itemsErrorInfo, "\n  { ad_source_id[ ", str, " ];network_firm_id[ ");
+        AbstractC5128c.h(sb, this.itemsErrorInfo, "\n  { ad_source_id[ ", str, " ];network_firm_id[ ");
         sb.append(i);
         sb.append(" ];network_name=[ ");
         sb.append(str2);

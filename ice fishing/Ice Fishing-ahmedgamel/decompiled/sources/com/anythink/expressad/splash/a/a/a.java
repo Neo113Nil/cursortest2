@@ -21,7 +21,7 @@ import org.json.JSONObject;
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f20480a = "a";
+    private static final String f21267a = "a";
 
     private static String a() {
         return "";
@@ -43,7 +43,7 @@ public class a {
                 JSONObject jSONObject = new JSONObject();
                 com.anythink.expressad.foundation.g.e.a aVar = list.get(i);
                 jSONObject.put("cid", aVar.a());
-                jSONObject.put(b.f19443m, aVar.c());
+                jSONObject.put(b.f20230m, aVar.c());
                 jSONArray.put(jSONObject);
             }
             return jSONArray.toString();
@@ -158,8 +158,8 @@ public class a {
             JSONObject a10 = d.a(dVar);
             JSONObject jSONObject = new JSONObject(str);
             try {
-                if (!jSONObject.has(d.f18572U)) {
-                    a10.put(d.f18572U, "");
+                if (!jSONObject.has(d.f19359U)) {
+                    a10.put(d.f19359U, "");
                 }
             } catch (Exception unused2) {
             }
@@ -180,7 +180,7 @@ public class a {
         }
     }
 
-    public static String a(int i, float f3, float f9) {
+    public static String a(int i, float f2, float f9) {
         JSONObject jSONObject = new JSONObject();
         try {
             JSONObject jSONObject2 = new JSONObject();
@@ -188,7 +188,7 @@ public class a {
                 jSONObject2.put(com.anythink.expressad.foundation.g.a.cg, -999);
                 jSONObject2.put(com.anythink.expressad.foundation.g.a.ch, -999);
             } else {
-                jSONObject2.put(com.anythink.expressad.foundation.g.a.cg, v.a(t.b().g(), f3));
+                jSONObject2.put(com.anythink.expressad.foundation.g.a.cg, v.a(t.b().g(), f2));
                 jSONObject2.put(com.anythink.expressad.foundation.g.a.ch, v.a(t.b().g(), f9));
             }
             jSONObject2.put(com.anythink.expressad.foundation.g.a.cj, i);

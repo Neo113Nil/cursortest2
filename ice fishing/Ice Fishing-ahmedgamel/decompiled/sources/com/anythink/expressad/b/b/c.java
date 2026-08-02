@@ -10,20 +10,20 @@ import java.util.Map;
 public final class c implements e<String, b> {
 
     /* renamed from: a, reason: collision with root package name */
-    private final LinkedHashMap<String, b> f18181a;
+    private final LinkedHashMap<String, b> f18968a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final int f18182b;
+    private final int f18969b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f18183c;
+    private int f18970c;
 
     public c(int i) {
         if (i <= 0) {
             throw new IllegalArgumentException("maxSize <= 0");
         }
-        this.f18182b = i;
-        this.f18181a = new LinkedHashMap<>(0, 0.75f, true);
+        this.f18969b = i;
+        this.f18968a = new LinkedHashMap<>(0, 0.75f, true);
     }
 
     private static int c() {
@@ -31,7 +31,7 @@ public final class c implements e<String, b> {
     }
 
     public final synchronized String toString() {
-        return String.format("LruCache[maxSize=%d]", Integer.valueOf(this.f18182b));
+        return String.format("LruCache[maxSize=%d]", Integer.valueOf(this.f18969b));
     }
 
     @Override // com.anythink.expressad.foundation.g.a.e
@@ -42,8 +42,8 @@ public final class c implements e<String, b> {
         }
         synchronized (this) {
             try {
-                if (this.f18181a.remove(str) != null) {
-                    this.f18183c--;
+                if (this.f18968a.remove(str) != null) {
+                    this.f18970c--;
                 }
             } catch (Throwable th) {
                 throw th;
@@ -56,7 +56,7 @@ public final class c implements e<String, b> {
     public final b b(String str) {
         if (str != null) {
             synchronized (this) {
-                b bVar = this.f18181a.get(str);
+                b bVar = this.f18968a.get(str);
                 if (bVar != null) {
                     return bVar;
                 }
@@ -76,15 +76,15 @@ public final class c implements e<String, b> {
         if (str != null && bVar != null) {
             synchronized (this) {
                 try {
-                    this.f18183c++;
-                    if (this.f18181a.put(str, bVar) != null) {
-                        this.f18183c--;
+                    this.f18970c++;
+                    if (this.f18968a.put(str, bVar) != null) {
+                        this.f18970c--;
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
-            a(this.f18182b);
+            a(this.f18969b);
             return true;
         }
         throw new NullPointerException("key == null || value == null");
@@ -101,21 +101,21 @@ public final class c implements e<String, b> {
         while (true) {
             synchronized (this) {
                 try {
-                    if (this.f18183c < 0 || (this.f18181a.isEmpty() && this.f18183c != 0)) {
+                    if (this.f18970c < 0 || (this.f18968a.isEmpty() && this.f18970c != 0)) {
                         break;
                     }
-                    if (this.f18183c <= i || this.f18181a.isEmpty()) {
+                    if (this.f18970c <= i || this.f18968a.isEmpty()) {
                         break;
                     }
-                    Map.Entry<String, b> next = this.f18181a.entrySet().iterator().next();
+                    Map.Entry<String, b> next = this.f18968a.entrySet().iterator().next();
                     if (next == null) {
                         return;
                     }
                     String key = next.getKey();
                     next.getValue();
                     try {
-                        this.f18181a.remove(key);
-                        this.f18183c--;
+                        this.f18968a.remove(key);
+                        this.f18970c--;
                     } catch (Throwable unused) {
                     }
                 } catch (Throwable th) {
@@ -129,7 +129,7 @@ public final class c implements e<String, b> {
     public final Collection<String> a() {
         HashSet hashSet;
         synchronized (this) {
-            hashSet = new HashSet(this.f18181a.keySet());
+            hashSet = new HashSet(this.f18968a.keySet());
         }
         return hashSet;
     }

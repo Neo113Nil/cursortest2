@@ -6,7 +6,7 @@ import java.util.Locale;
 public abstract class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Locale[] f1481a = {new Locale(com.anythink.expressad.video.dynview.a.a.f21102Z, "XA"), new Locale(com.anythink.expressad.video.dynview.a.a.f21101X, "XB")};
+    public static final Locale[] f1590a = {new Locale(com.anythink.expressad.video.dynview.a.a.f21889Z, "XA"), new Locale(com.anythink.expressad.video.dynview.a.a.f21888X, "XB")};
 
     public static Locale a(String str) {
         return Locale.forLanguageTag(str);
@@ -17,7 +17,7 @@ public abstract class j {
             return true;
         }
         if (locale.getLanguage().equals(locale2.getLanguage())) {
-            Locale[] localeArr = f1481a;
+            Locale[] localeArr = f1590a;
             for (Locale locale3 : localeArr) {
                 if (locale3.equals(locale)) {
                     return false;

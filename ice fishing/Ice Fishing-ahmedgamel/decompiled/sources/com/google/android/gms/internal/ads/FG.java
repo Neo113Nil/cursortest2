@@ -4,16 +4,16 @@ package com.google.android.gms.internal.ads;
 public abstract class FG {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final C3774qG f24778a = new C3774qG(EG.class, SG.class, C3880sF.f33934F);
+    public static final C3797qG f25534a = new C3797qG(EG.class, SG.class, C3903sF.f34702F);
 
     /* renamed from: b, reason: collision with root package name */
-    public static final C3774qG f24779b = new C3774qG(EG.class, InterfaceC3772qE.class, C3880sF.f33935G);
+    public static final C3797qG f25535b = new C3797qG(EG.class, InterfaceC3795qE.class, C3903sF.f34703G);
 
     /* renamed from: c, reason: collision with root package name */
-    public static final XF f24780c;
+    public static final XF f25536c;
 
     static {
-        C2969bH.F();
-        f24780c = new XF(InterfaceC3772qE.class, "type.googleapis.com/google.crypto.tink.AesCmacKey", 3);
+        C2992bH.F();
+        f25536c = new XF(InterfaceC3795qE.class, "type.googleapis.com/google.crypto.tink.AesCmacKey", 3);
     }
 }

@@ -8,26 +8,26 @@ import com.anythink.core.api.ATNativeAdInfo;
 public final class e extends a implements com.anythink.core.common.l.c.a.d {
 
     /* renamed from: b, reason: collision with root package name */
-    View f9503b;
+    View f10289b;
 
     /* renamed from: c, reason: collision with root package name */
-    ATNativeAdInfo.AdPrepareInfo f9504c;
+    ATNativeAdInfo.AdPrepareInfo f10290c;
 
     @Override // com.anythink.core.common.l.c.a.d
     public final View a() {
-        com.anythink.core.common.l.e.a.a aVar = this.f9501a;
-        if (aVar != null && this.f9503b == null) {
+        com.anythink.core.common.l.e.a.a aVar = this.f10287a;
+        if (aVar != null && this.f10289b == null) {
             View view = (View) aVar.a();
-            this.f9503b = view;
+            this.f10289b = view;
             if (view instanceof ThirdPartyNativeTemplateView) {
-                this.f9504c = ((ThirdPartyNativeTemplateView) view).getAdPrepareInfo();
+                this.f10290c = ((ThirdPartyNativeTemplateView) view).getAdPrepareInfo();
             }
         }
-        return this.f9503b;
+        return this.f10289b;
     }
 
     @Override // com.anythink.core.common.l.c.a.d
     public final ATNativeAdInfo.AdPrepareInfo b() {
-        return this.f9504c;
+        return this.f10290c;
     }
 }

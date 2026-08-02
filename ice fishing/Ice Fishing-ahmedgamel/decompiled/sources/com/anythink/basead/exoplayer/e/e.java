@@ -4,13 +4,13 @@ package com.anythink.basead.exoplayer.e;
 public interface e {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f7166a = 0;
+    public static final int f7952a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f7167b = 1;
+    public static final int f7953b = 1;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f7168c = -1;
+    public static final int f7954c = -1;
 
     int a(f fVar, j jVar);
 

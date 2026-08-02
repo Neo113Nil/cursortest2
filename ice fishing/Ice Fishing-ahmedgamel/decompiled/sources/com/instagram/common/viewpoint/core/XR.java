@@ -5,8 +5,8 @@ public class XR {
     public final boolean A00;
     public final boolean A01;
 
-    public XR(boolean z3, boolean z6) {
-        this.A00 = z3;
-        this.A01 = z6;
+    public XR(boolean z6, boolean z9) {
+        this.A00 = z6;
+        this.A01 = z9;
     }
 }

@@ -4,7 +4,7 @@ package com.anythink.core.common.n.b;
 public abstract class r {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final r f15709a = new r() { // from class: com.anythink.core.common.n.b.r.1
+    public static final r f16496a = new r() { // from class: com.anythink.core.common.n.b.r.1
     };
 
     public interface a {
@@ -83,6 +83,6 @@ public abstract class r {
     }
 
     public static a a(r rVar) {
-        return new H3.l(4, rVar);
+        return new J3.l(4, rVar);
     }
 }

@@ -16,18 +16,18 @@ import java.util.Map;
 public class OnlineApiATAdapter extends CustomNativeAdapter {
 
     /* renamed from: a, reason: collision with root package name */
-    f f23188a;
+    f f23975a;
 
     /* renamed from: b, reason: collision with root package name */
-    x f23189b;
+    x f23976b;
 
     /* renamed from: c, reason: collision with root package name */
-    String f23190c;
+    String f23977c;
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
-        if (this.f23188a != null) {
-            this.f23188a = null;
+        if (this.f23975a != null) {
+            this.f23975a = null;
         }
     }
 
@@ -38,7 +38,7 @@ public class OnlineApiATAdapter extends CustomNativeAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        return this.f23190c;
+        return this.f23977c;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -49,12 +49,12 @@ public class OnlineApiATAdapter extends CustomNativeAdapter {
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void loadCustomNetworkAd(Context context, Map<String, Object> map, Map<String, Object> map2) {
         int i;
-        int i6;
-        this.f23190c = map.get("unit_id") != null ? map.get("unit_id").toString() : "";
-        x xVar = (x) map.get(j.w.f12614a);
-        this.f23189b = xVar;
-        this.f23188a = new f(context, c.b.ONLINE_API_OFFER_REQUEST_TYPE, xVar, false);
-        int i9 = -1;
+        int i4;
+        this.f23977c = map.get("unit_id") != null ? map.get("unit_id").toString() : "";
+        x xVar = (x) map.get(j.w.f13400a);
+        this.f23976b = xVar;
+        this.f23975a = new f(context, c.b.ONLINE_API_OFFER_REQUEST_TYPE, xVar, false);
+        int i6 = -1;
         if (map2 != null) {
             try {
                 i = Integer.parseInt(map2.get(ATAdConst.KEY.AD_WIDTH).toString());
@@ -62,30 +62,30 @@ public class OnlineApiATAdapter extends CustomNativeAdapter {
                 i = -1;
             }
             try {
-                i9 = Integer.parseInt(map2.get(ATAdConst.KEY.AD_HEIGHT).toString());
+                i6 = Integer.parseInt(map2.get(ATAdConst.KEY.AD_HEIGHT).toString());
             } catch (Throwable unused2) {
             }
-            i6 = i9;
-            i9 = i;
+            i4 = i6;
+            i6 = i;
         } else {
-            i6 = -1;
+            i4 = -1;
         }
-        final int i10 = context.getResources().getDisplayMetrics().widthPixels;
-        final int i11 = context.getResources().getDisplayMetrics().heightPixels;
-        if (i9 <= 0) {
-            i9 = Math.min(i10, i11);
-        }
+        final int i9 = context.getResources().getDisplayMetrics().widthPixels;
+        final int i10 = context.getResources().getDisplayMetrics().heightPixels;
         if (i6 <= 0) {
-            i6 = (i9 * 3) / 4;
+            i6 = Math.min(i9, i10);
         }
-        if (i9 <= i10) {
-            i10 = i9;
+        if (i4 <= 0) {
+            i4 = (i6 * 3) / 4;
         }
-        if (i6 <= i11) {
-            i11 = i6;
+        if (i6 <= i9) {
+            i9 = i6;
+        }
+        if (i4 <= i10) {
+            i10 = i4;
         }
         final Context applicationContext = context.getApplicationContext();
-        this.f23188a.a(new d() { // from class: com.anythink.network.onlineapi.OnlineApiATAdapter.1
+        this.f23975a.a(new d() { // from class: com.anythink.network.onlineapi.OnlineApiATAdapter.1
             @Override // com.anythink.basead.g.d
             public final void onNativeAdLoadError(com.anythink.basead.d.f fVar) {
                 if (((ATBaseAdInternalAdapter) OnlineApiATAdapter.this).mLoadListener != null) {
@@ -96,9 +96,9 @@ public class OnlineApiATAdapter extends CustomNativeAdapter {
             @Override // com.anythink.basead.g.d
             public final void onNativeAdLoaded(a... aVarArr) {
                 OnlineApiATNativeAd[] onlineApiATNativeAdArr = new OnlineApiATNativeAd[aVarArr.length];
-                for (int i12 = 0; i12 < aVarArr.length; i12++) {
-                    aVarArr[i12].a(i10, i11);
-                    onlineApiATNativeAdArr[i12] = new OnlineApiATNativeAd(applicationContext, aVarArr[i12]);
+                for (int i11 = 0; i11 < aVarArr.length; i11++) {
+                    aVarArr[i11].a(i9, i10);
+                    onlineApiATNativeAdArr[i11] = new OnlineApiATNativeAd(applicationContext, aVarArr[i11]);
                 }
                 if (((ATBaseAdInternalAdapter) OnlineApiATAdapter.this).mLoadListener != null) {
                     ((ATBaseAdInternalAdapter) OnlineApiATAdapter.this).mLoadListener.onAdCacheLoaded(onlineApiATNativeAdArr);
@@ -108,9 +108,9 @@ public class OnlineApiATAdapter extends CustomNativeAdapter {
     }
 
     private void a(Context context, Map<String, Object> map) {
-        this.f23190c = map.get("unit_id") != null ? map.get("unit_id").toString() : "";
-        x xVar = (x) map.get(j.w.f12614a);
-        this.f23189b = xVar;
-        this.f23188a = new f(context, c.b.ONLINE_API_OFFER_REQUEST_TYPE, xVar, false);
+        this.f23977c = map.get("unit_id") != null ? map.get("unit_id").toString() : "";
+        x xVar = (x) map.get(j.w.f13400a);
+        this.f23976b = xVar;
+        this.f23975a = new f(context, c.b.ONLINE_API_OFFER_REQUEST_TYPE, xVar, false);
     }
 }

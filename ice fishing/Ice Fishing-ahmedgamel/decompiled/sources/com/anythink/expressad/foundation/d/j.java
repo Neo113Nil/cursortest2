@@ -44,131 +44,131 @@ public class j extends com.anythink.expressad.out.k implements com.anythink.expr
     public static final String df = "value";
 
     /* renamed from: l, reason: collision with root package name */
-    private static final long f18783l = 1;
+    private static final long f19570l = 1;
 
     /* renamed from: d, reason: collision with root package name */
-    private b f18787d;
+    private b f19574d;
     private String i;
 
     /* renamed from: j, reason: collision with root package name */
-    private String f18792j;
+    private String f19579j;
 
     /* renamed from: k, reason: collision with root package name */
-    private String f18793k;
+    private String f19580k;
 
     /* renamed from: n, reason: collision with root package name */
-    private int f18795n;
+    private int f19582n;
 
     /* renamed from: o, reason: collision with root package name */
-    private String f18796o;
+    private String f19583o;
 
     /* renamed from: p, reason: collision with root package name */
-    private int f18797p;
+    private int f19584p;
 
     /* renamed from: q, reason: collision with root package name */
-    private Map<String, String> f18798q;
+    private Map<String, String> f19585q;
 
     /* renamed from: r, reason: collision with root package name */
-    private String f18799r;
+    private String f19586r;
 
     /* renamed from: s, reason: collision with root package name */
-    private String f18800s;
+    private String f19587s;
 
     /* renamed from: t, reason: collision with root package name */
-    private int f18801t;
+    private int f19588t;
 
     /* renamed from: u, reason: collision with root package name */
-    private int f18802u;
+    private int f19589u;
 
     /* renamed from: v, reason: collision with root package name */
-    private com.anythink.expressad.b.a.b f18803v;
+    private com.anythink.expressad.b.a.b f19590v;
 
     /* renamed from: a, reason: collision with root package name */
-    private int f18784a = 0;
+    private int f19571a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    private int f18785b = 0;
+    private int f19572b = 0;
 
     /* renamed from: c, reason: collision with root package name */
-    private String f18786c = "";
+    private String f19573c = "";
 
     /* renamed from: e, reason: collision with root package name */
-    private int f18788e = 0;
+    private int f19575e = 0;
 
     /* renamed from: f, reason: collision with root package name */
-    private int f18789f = 0;
+    private int f19576f = 0;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f18790g = 0;
+    private int f19577g = 0;
 
     /* renamed from: h, reason: collision with root package name */
-    private String f18791h = "";
+    private String f19578h = "";
 
     /* renamed from: m, reason: collision with root package name */
-    private boolean f18794m = false;
+    private boolean f19581m = false;
 
     private void a(b bVar) {
-        this.f18787d = bVar;
+        this.f19574d = bVar;
     }
 
     private void b(int i) {
-        this.f18784a = i;
+        this.f19571a = i;
     }
 
     private void c(int i) {
-        this.f18788e = i;
+        this.f19575e = i;
     }
 
     private void d(int i) {
-        this.f18789f = i;
+        this.f19576f = i;
     }
 
     private void e(int i) {
-        this.f18790g = i;
+        this.f19577g = i;
     }
 
     private void f(String str) {
-        this.f18796o = str;
+        this.f19583o = str;
     }
 
     private void g(int i) {
-        this.f18802u = i;
+        this.f19589u = i;
     }
 
     private void h(int i) {
-        this.f18801t = i;
+        this.f19588t = i;
     }
 
     private void i(int i) {
-        this.f18795n = i;
+        this.f19582n = i;
     }
 
     public final b aO() {
-        return this.f18787d;
+        return this.f19574d;
     }
 
     public final int aP() {
-        return this.f18785b;
+        return this.f19572b;
     }
 
     public final int aQ() {
-        return this.f18784a;
+        return this.f19571a;
     }
 
     public final int aR() {
-        return this.f18788e;
+        return this.f19575e;
     }
 
     public final int aS() {
-        return this.f18789f;
+        return this.f19576f;
     }
 
     public final int aT() {
-        return this.f18790g;
+        return this.f19577g;
     }
 
     public final String aU() {
-        return this.f18791h;
+        return this.f19578h;
     }
 
     public final String aV() {
@@ -176,50 +176,50 @@ public class j extends com.anythink.expressad.out.k implements com.anythink.expr
     }
 
     public final String aW() {
-        return this.f18792j;
+        return this.f19579j;
     }
 
     @Deprecated
     public final String aX() {
-        return this.f18793k;
+        return this.f19580k;
     }
 
     public final String aY() {
-        return this.f18796o;
+        return this.f19583o;
     }
 
     public final int aZ() {
-        return this.f18797p;
+        return this.f19584p;
     }
 
     public com.anythink.expressad.b.a.b al() {
-        return this.f18803v;
+        return this.f19590v;
     }
 
     public final int ba() {
-        return this.f18802u;
+        return this.f19589u;
     }
 
     public final int bb() {
-        return this.f18801t;
+        return this.f19588t;
     }
 
     public final String bc() {
-        return this.f18800s;
+        return this.f19587s;
     }
 
     public final int bd() {
-        return this.f18795n;
+        return this.f19582n;
     }
 
     public final boolean be() {
-        return this.f18794m;
+        return this.f19581m;
     }
 
     public final String v(String str) {
         Map<String, String> map;
         try {
-            if (TextUtils.isEmpty(str) || (map = this.f18798q) == null || map.size() <= 0) {
+            if (TextUtils.isEmpty(str) || (map = this.f19585q) == null || map.size() <= 0) {
                 return str;
             }
             Uri parse = Uri.parse(str);
@@ -243,7 +243,7 @@ public class j extends com.anythink.expressad.out.k implements com.anythink.expr
     }
 
     private void a(int i) {
-        this.f18785b = i;
+        this.f19572b = i;
     }
 
     private void b(String str) {
@@ -251,23 +251,23 @@ public class j extends com.anythink.expressad.out.k implements com.anythink.expr
     }
 
     private void c(String str) {
-        this.f18792j = str;
+        this.f19579j = str;
     }
 
     private void d(String str) {
-        this.f18793k = str;
+        this.f19580k = str;
     }
 
     private void e(String str) {
-        this.f18799r = str;
+        this.f19586r = str;
     }
 
     private void f(int i) {
-        this.f18797p = i;
+        this.f19584p = i;
     }
 
     private void g(String str) {
-        this.f18800s = str;
+        this.f19587s = str;
     }
 
     private static Map<String, String> h(String str) {
@@ -291,43 +291,43 @@ public class j extends com.anythink.expressad.out.k implements com.anythink.expr
     }
 
     private void a(String str) {
-        this.f18791h = str;
+        this.f19578h = str;
     }
 
     private String b() {
-        return this.f18799r;
+        return this.f19586r;
     }
 
     private static JSONObject c(JSONObject jSONObject, d dVar) {
         if (dVar == null) {
             return jSONObject;
         }
-        jSONObject.put(cL, ((j) dVar).f18794m);
-        jSONObject.put(cM, ((j) dVar).f18795n);
-        jSONObject.put(cP, ((j) dVar).f18800s);
-        jSONObject.put("ttc_type", ((j) dVar).f18801t);
-        jSONObject.put(cR, ((j) dVar).f18802u);
+        jSONObject.put(cL, ((j) dVar).f19581m);
+        jSONObject.put(cM, ((j) dVar).f19582n);
+        jSONObject.put(cP, ((j) dVar).f19587s);
+        jSONObject.put("ttc_type", ((j) dVar).f19588t);
+        jSONObject.put(cR, ((j) dVar).f19589u);
         jSONObject.put(cS, ((j) dVar).i);
-        jSONObject.put(cT, com.anythink.core.express.a.a.a(((j) dVar).f18792j));
-        jSONObject.put(cU, ((j) dVar).f18793k);
-        jSONObject.put(cE, ((j) dVar).f18784a);
-        jSONObject.put(cF, ((j) dVar).f18785b);
-        b bVar = ((j) dVar).f18787d;
+        jSONObject.put(cT, com.anythink.core.express.a.a.a(((j) dVar).f19579j));
+        jSONObject.put(cU, ((j) dVar).f19580k);
+        jSONObject.put(cE, ((j) dVar).f19571a);
+        jSONObject.put(cF, ((j) dVar).f19572b);
+        b bVar = ((j) dVar).f19574d;
         if (bVar != null) {
             jSONObject.put(cG, bVar.g());
         }
-        jSONObject.put(cV, ((j) dVar).f18796o);
-        jSONObject.put(cW, ((j) dVar).f18797p);
+        jSONObject.put(cV, ((j) dVar).f19583o);
+        jSONObject.put(cW, ((j) dVar).f19584p);
         jSONObject.put(d.bn, dVar.y());
-        jSONObject.put(cI, ((j) dVar).f18789f);
-        jSONObject.put(cH, ((j) dVar).f18788e);
-        jSONObject.put(cJ, ((j) dVar).f18790g);
-        jSONObject.put(cK, ((j) dVar).f18791h);
+        jSONObject.put(cI, ((j) dVar).f19576f);
+        jSONObject.put(cH, ((j) dVar).f19575e);
+        jSONObject.put(cJ, ((j) dVar).f19577g);
+        jSONObject.put(cK, ((j) dVar).f19578h);
         return jSONObject;
     }
 
     private Map<String, String> a() {
-        return this.f18798q;
+        return this.f19585q;
     }
 
     public static d b(JSONObject jSONObject, d dVar) {
@@ -335,19 +335,19 @@ public class j extends com.anythink.expressad.out.k implements com.anythink.expr
             return null;
         }
         try {
-            ((j) dVar).f18794m = jSONObject.optBoolean(cL);
-            ((j) dVar).f18795n = jSONObject.optInt(cM, 604800);
-            ((j) dVar).f18800s = jSONObject.optString(cP);
-            ((j) dVar).f18801t = jSONObject.optInt("ttc_type", 3);
-            ((j) dVar).f18802u = jSONObject.optInt(cR, 1800);
-            ((j) dVar).f18796o = jSONObject.optString(cV);
-            ((j) dVar).f18797p = jSONObject.optInt(cW);
+            ((j) dVar).f19581m = jSONObject.optBoolean(cL);
+            ((j) dVar).f19582n = jSONObject.optInt(cM, 604800);
+            ((j) dVar).f19587s = jSONObject.optString(cP);
+            ((j) dVar).f19588t = jSONObject.optInt("ttc_type", 3);
+            ((j) dVar).f19589u = jSONObject.optInt(cR, 1800);
+            ((j) dVar).f19583o = jSONObject.optString(cV);
+            ((j) dVar).f19584p = jSONObject.optInt(cW);
             try {
                 if (jSONObject.has(dc)) {
                     String optString = jSONObject.optString(dc);
                     if (!TextUtils.isEmpty(optString)) {
-                        ((j) dVar).f18799r = optString;
-                        ((j) dVar).f18798q = h(optString);
+                        ((j) dVar).f19586r = optString;
+                        ((j) dVar).f19585q = h(optString);
                     }
                 }
             } catch (Exception unused) {
@@ -357,19 +357,19 @@ public class j extends com.anythink.expressad.out.k implements com.anythink.expr
                 ((j) dVar).i = optString2;
                 String optString3 = jSONObject.optString(cT);
                 if (!TextUtils.isEmpty(optString3)) {
-                    ((j) dVar).f18792j = com.anythink.core.express.a.a.b(optString3);
+                    ((j) dVar).f19579j = com.anythink.core.express.a.a.b(optString3);
                 }
-                ((j) dVar).f18793k = jSONObject.optString(cU);
+                ((j) dVar).f19580k = jSONObject.optString(cU);
             }
             dVar.e(jSONObject.optString("cam_html"));
             dVar.b(jSONObject.optString("cam_html"));
-            ((j) dVar).f18784a = jSONObject.optInt(cE, 0);
-            ((j) dVar).f18785b = jSONObject.optInt(cF, 0);
-            ((j) dVar).f18787d = b.a(jSONObject.optString(cG));
-            ((j) dVar).f18789f = jSONObject.optInt(cI, 0);
-            ((j) dVar).f18788e = jSONObject.optInt(cH, 0);
-            ((j) dVar).f18790g = jSONObject.optInt(cJ, 0);
-            ((j) dVar).f18791h = jSONObject.optString(cK, "");
+            ((j) dVar).f19571a = jSONObject.optInt(cE, 0);
+            ((j) dVar).f19572b = jSONObject.optInt(cF, 0);
+            ((j) dVar).f19574d = b.a(jSONObject.optString(cG));
+            ((j) dVar).f19576f = jSONObject.optInt(cI, 0);
+            ((j) dVar).f19575e = jSONObject.optInt(cH, 0);
+            ((j) dVar).f19577g = jSONObject.optInt(cJ, 0);
+            ((j) dVar).f19578h = jSONObject.optString(cK, "");
             return dVar;
         } catch (Exception e9) {
             e9.printStackTrace();
@@ -379,15 +379,15 @@ public class j extends com.anythink.expressad.out.k implements com.anythink.expr
     }
 
     private void a(Map<String, String> map) {
-        this.f18798q = map;
+        this.f19585q = map;
     }
 
-    private void a(boolean z3) {
-        this.f18794m = z3;
+    private void a(boolean z6) {
+        this.f19581m = z6;
     }
 
     public void a(com.anythink.expressad.b.a.b bVar) {
-        this.f18803v = bVar;
+        this.f19590v = bVar;
     }
 
     public static d a(JSONObject jSONObject, d dVar) {
@@ -395,22 +395,22 @@ public class j extends com.anythink.expressad.out.k implements com.anythink.expr
             return null;
         }
         try {
-            ((j) dVar).f18794m = jSONObject.optBoolean(cL);
-            ((j) dVar).f18795n = jSONObject.optInt(cM, 604800);
-            ((j) dVar).f18800s = jSONObject.optString(cP);
-            ((j) dVar).f18801t = jSONObject.optInt("ttc_type", 3);
-            ((j) dVar).f18802u = jSONObject.optInt(cR, 1800);
+            ((j) dVar).f19581m = jSONObject.optBoolean(cL);
+            ((j) dVar).f19582n = jSONObject.optInt(cM, 604800);
+            ((j) dVar).f19587s = jSONObject.optString(cP);
+            ((j) dVar).f19588t = jSONObject.optInt("ttc_type", 3);
+            ((j) dVar).f19589u = jSONObject.optInt(cR, 1800);
             dVar.a(System.currentTimeMillis());
-            dVar.m(jSONObject.optString(e.f18660f));
-            dVar.n(jSONObject.optString(e.f18664k));
-            ((j) dVar).f18796o = jSONObject.optString(cV);
-            ((j) dVar).f18797p = jSONObject.optInt(cW);
+            dVar.m(jSONObject.optString(e.f19447f));
+            dVar.n(jSONObject.optString(e.f19451k));
+            ((j) dVar).f19583o = jSONObject.optString(cV);
+            ((j) dVar).f19584p = jSONObject.optInt(cW);
             try {
                 if (jSONObject.has(dc)) {
                     String optString = jSONObject.optString(dc);
                     if (!TextUtils.isEmpty(optString)) {
-                        ((j) dVar).f18799r = optString;
-                        ((j) dVar).f18798q = h(optString);
+                        ((j) dVar).f19586r = optString;
+                        ((j) dVar).f19585q = h(optString);
                     }
                 }
             } catch (Exception unused) {
@@ -420,17 +420,17 @@ public class j extends com.anythink.expressad.out.k implements com.anythink.expr
                 ((j) dVar).i = optString2;
                 String optString3 = jSONObject.optString(cT);
                 if (!TextUtils.isEmpty(optString3)) {
-                    ((j) dVar).f18792j = com.anythink.core.express.a.a.b(optString3);
+                    ((j) dVar).f19579j = com.anythink.core.express.a.a.b(optString3);
                 }
-                ((j) dVar).f18793k = jSONObject.optString(cU);
+                ((j) dVar).f19580k = jSONObject.optString(cU);
             }
-            ((j) dVar).f18784a = jSONObject.optInt(cE, 0);
-            ((j) dVar).f18785b = jSONObject.optInt(cF, 0);
-            ((j) dVar).f18787d = b.a(jSONObject.optString(cG));
-            ((j) dVar).f18789f = jSONObject.optInt(cI, 0);
-            ((j) dVar).f18788e = jSONObject.optInt(cH, 0);
-            ((j) dVar).f18790g = jSONObject.optInt(cJ, 0);
-            ((j) dVar).f18791h = jSONObject.optString(cK, "");
+            ((j) dVar).f19571a = jSONObject.optInt(cE, 0);
+            ((j) dVar).f19572b = jSONObject.optInt(cF, 0);
+            ((j) dVar).f19574d = b.a(jSONObject.optString(cG));
+            ((j) dVar).f19576f = jSONObject.optInt(cI, 0);
+            ((j) dVar).f19575e = jSONObject.optInt(cH, 0);
+            ((j) dVar).f19577g = jSONObject.optInt(cJ, 0);
+            ((j) dVar).f19578h = jSONObject.optString(cK, "");
             return dVar;
         } catch (Exception e9) {
             e9.printStackTrace();
@@ -440,8 +440,8 @@ public class j extends com.anythink.expressad.out.k implements com.anythink.expr
     }
 
     public final boolean b(d dVar) {
-        boolean z3 = this.f18784a == 1 && dVar.R() == 3 && ((j) dVar).f18785b != 1;
-        if (z3) {
+        boolean z6 = this.f19571a == 1 && dVar.R() == 3 && ((j) dVar).f19572b != 1;
+        if (z6) {
             try {
                 if (v.a(com.anythink.core.common.d.t.b().g(), bi())) {
                     return false;
@@ -450,7 +450,7 @@ public class j extends com.anythink.expressad.out.k implements com.anythink.expr
                 th.getMessage();
             }
         }
-        return z3;
+        return z6;
     }
 
     public static String a(e eVar, d dVar, String str) {

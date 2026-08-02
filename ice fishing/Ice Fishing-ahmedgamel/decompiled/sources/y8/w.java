@@ -4,5 +4,5 @@ package y8;
 public interface w {
     x d();
 
-    v e();
+    v g();
 }

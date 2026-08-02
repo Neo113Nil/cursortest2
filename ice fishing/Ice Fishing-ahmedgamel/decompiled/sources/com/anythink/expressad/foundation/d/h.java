@@ -6,276 +6,276 @@ import java.util.Map;
 public final class h {
 
     /* renamed from: A, reason: collision with root package name */
-    private static final String f18735A = "template download error";
+    private static final String f19522A = "template download error";
 
     /* renamed from: B, reason: collision with root package name */
-    private static final String f18736B = "endcard template download error";
+    private static final String f19523B = "endcard template download error";
 
     /* renamed from: C, reason: collision with root package name */
-    private static final String f18737C = "big template render error";
+    private static final String f19524C = "big template render error";
 
     /* renamed from: D, reason: collision with root package name */
-    private static final String f18738D = "template render error";
+    private static final String f19525D = "template render error";
 
     /* renamed from: E, reason: collision with root package name */
-    private static final String f18739E = " isready false error";
+    private static final String f19526E = " isready false error";
 
     /* renamed from: F, reason: collision with root package name */
-    private static final String f18740F = " load time out error";
+    private static final String f19527F = " load time out error";
 
     /* renamed from: G, reason: collision with root package name */
-    private static final String f18741G = " no fill";
+    private static final String f19528G = " no fill";
 
     /* renamed from: H, reason: collision with root package name */
-    private static final String f18742H = "current unit is loading";
+    private static final String f19529H = "current unit is loading";
 
     /* renamed from: I, reason: collision with root package name */
-    private static final String f18743I = "app already install";
+    private static final String f19530I = "app already install";
     private static final String J = "adn no offer fill";
 
     /* renamed from: K, reason: collision with root package name */
-    private static final String f18744K = "ad over cap ";
+    private static final String f19531K = "ad over cap ";
 
     /* renamed from: L, reason: collision with root package name */
-    private static final String f18745L = " unknown error";
+    private static final String f19532L = " unknown error";
 
     /* renamed from: M, reason: collision with root package name */
-    private static final String f18746M = "load exception";
+    private static final String f19533M = "load exception";
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f18747a = 0;
+    public static final int f19534a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f18748b = 1;
+    public static final int f19535b = 1;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f18749c = 2;
+    public static final int f19536c = 2;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f18750d = 3;
+    public static final int f19537d = 3;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f18751e = 4;
+    public static final int f19538e = 4;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final int f18752f = 5;
+    public static final int f19539f = 5;
 
     /* renamed from: g, reason: collision with root package name */
-    public static final int f18753g = 6;
+    public static final int f19540g = 6;
 
     /* renamed from: h, reason: collision with root package name */
-    public static final int f18754h = 7;
+    public static final int f19541h = 7;
     public static final int i = 8;
 
     /* renamed from: j, reason: collision with root package name */
-    public static final int f18755j = 9;
+    public static final int f19542j = 9;
 
     /* renamed from: k, reason: collision with root package name */
-    public static final int f18756k = 10;
+    public static final int f19543k = 10;
 
     /* renamed from: l, reason: collision with root package name */
-    public static final int f18757l = 11;
+    public static final int f19544l = 11;
 
     /* renamed from: m, reason: collision with root package name */
-    public static final int f18758m = 15;
+    public static final int f19545m = 15;
 
     /* renamed from: n, reason: collision with root package name */
-    public static final int f18759n = 16;
+    public static final int f19546n = 16;
 
     /* renamed from: o, reason: collision with root package name */
-    public static final int f18760o = 18;
+    public static final int f19547o = 18;
 
     /* renamed from: p, reason: collision with root package name */
-    public static final int f18761p = 17;
+    public static final int f19548p = 17;
 
     /* renamed from: q, reason: collision with root package name */
-    public static final int f18762q = 19;
+    public static final int f19549q = 19;
 
     /* renamed from: r, reason: collision with root package name */
-    public static final int f18763r = 20;
+    public static final int f19550r = 20;
 
     /* renamed from: s, reason: collision with root package name */
-    public static final int f18764s = 21;
+    public static final int f19551s = 21;
 
     /* renamed from: t, reason: collision with root package name */
-    private static final String f18765t = "candidate failed";
+    private static final String f19552t = "candidate failed";
 
     /* renamed from: u, reason: collision with root package name */
-    private static final String f18766u = "v3 params invalid";
+    private static final String f19553u = "v3 params invalid";
 
     /* renamed from: v, reason: collision with root package name */
-    private static final String f18767v = "v3 request error";
+    private static final String f19554v = "v3 request error";
 
     /* renamed from: w, reason: collision with root package name */
-    private static final String f18768w = "v3 time out";
+    private static final String f19555w = "v3 time out";
 
     /* renamed from: x, reason: collision with root package name */
-    private static final String f18769x = "v3 response error";
+    private static final String f19556x = "v3 response error";
 
     /* renamed from: y, reason: collision with root package name */
-    private static final String f18770y = "video download error";
+    private static final String f19557y = "video download error";
 
     /* renamed from: z, reason: collision with root package name */
-    private static final String f18771z = "big template download error";
+    private static final String f19558z = "big template download error";
 
     /* renamed from: N, reason: collision with root package name */
-    private String f18772N;
+    private String f19559N;
 
     /* renamed from: O, reason: collision with root package name */
-    private int f18773O;
+    private int f19560O;
 
     /* renamed from: P, reason: collision with root package name */
-    private String f18774P;
+    private String f19561P;
 
     /* renamed from: Q, reason: collision with root package name */
-    private int f18775Q;
+    private int f19562Q;
 
     /* renamed from: R, reason: collision with root package name */
-    private Map<String, String> f18776R;
+    private Map<String, String> f19563R;
 
     /* renamed from: S, reason: collision with root package name */
-    private String f18777S;
+    private String f19564S;
 
     /* renamed from: T, reason: collision with root package name */
-    private int f18778T = -1;
+    private int f19565T = -1;
 
-    private h(int i6, String str, Map<String, String> map) {
-        this.f18773O = i6;
-        this.f18774P = str;
-        this.f18776R = map;
+    private h(int i4, String str, Map<String, String> map) {
+        this.f19560O = i4;
+        this.f19561P = str;
+        this.f19563R = map;
         b();
     }
 
     private void a(String str) {
-        this.f18777S = str;
+        this.f19564S = str;
     }
 
     private void b() {
         try {
-            switch (this.f18773O) {
+            switch (this.f19560O) {
                 case 0:
-                    this.f18772N = f18766u;
+                    this.f19559N = f19553u;
                     break;
                 case 1:
-                    this.f18772N = f18767v;
+                    this.f19559N = f19554v;
                     break;
                 case 2:
-                    this.f18772N = f18768w;
+                    this.f19559N = f19555w;
                     break;
                 case 3:
-                    this.f18772N = f18769x;
+                    this.f19559N = f19556x;
                     break;
                 case 4:
-                    this.f18772N = f18770y;
+                    this.f19559N = f19557y;
                     break;
                 case 5:
-                    this.f18772N = f18771z;
+                    this.f19559N = f19558z;
                     break;
                 case 6:
-                    this.f18772N = f18735A;
+                    this.f19559N = f19522A;
                     break;
                 case 7:
-                    this.f18772N = f18736B;
+                    this.f19559N = f19523B;
                     break;
                 case 8:
-                    this.f18772N = f18737C;
+                    this.f19559N = f19524C;
                     break;
                 case 9:
-                    this.f18772N = f18738D;
+                    this.f19559N = f19525D;
                     break;
                 case 10:
-                    this.f18772N = f18740F;
+                    this.f19559N = f19527F;
                     break;
                 case 11:
-                    this.f18772N = f18741G;
+                    this.f19559N = f19528G;
                     break;
                 case 15:
-                    this.f18772N = f18739E;
+                    this.f19559N = f19526E;
                     break;
                 case 16:
-                    this.f18772N = f18742H;
+                    this.f19559N = f19529H;
                     break;
                 case 17:
-                    this.f18772N = J;
+                    this.f19559N = J;
                     break;
                 case 18:
-                    this.f18772N = f18743I;
+                    this.f19559N = f19530I;
                     break;
                 case 19:
-                    this.f18772N = f18744K;
+                    this.f19559N = f19531K;
                     break;
                 case 20:
-                    this.f18772N = f18746M;
+                    this.f19559N = f19533M;
                     break;
                 case 21:
-                    this.f18772N = f18765t;
+                    this.f19559N = f19552t;
                     break;
             }
         } catch (Exception unused) {
-            this.f18772N = f18745L;
+            this.f19559N = f19532L;
         }
     }
 
     private String c() {
-        return this.f18777S;
+        return this.f19564S;
     }
 
     private int d() {
-        return this.f18778T;
+        return this.f19565T;
     }
 
     private int e() {
-        return this.f18773O;
+        return this.f19560O;
     }
 
     private int f() {
-        return this.f18775Q;
+        return this.f19562Q;
     }
 
     private Map<String, String> g() {
-        return this.f18776R;
+        return this.f19563R;
     }
 
-    private void a(int i6) {
-        this.f18778T = i6;
+    private void a(int i4) {
+        this.f19565T = i4;
     }
 
-    private void c(int i6) {
-        this.f18775Q = i6;
+    private void c(int i4) {
+        this.f19562Q = i4;
     }
 
     public final String a() {
-        return this.f18774P;
+        return this.f19561P;
     }
 
-    private h(int i6, String str, boolean z3) {
-        this.f18773O = 0;
-        if (z3) {
-            if (i6 == 200) {
-                this.f18773O = 4;
-            } else if (i6 == 201) {
-                this.f18773O = 7;
-            } else if (i6 == 203) {
-                this.f18773O = 6;
-            } else if (i6 == 205) {
-                this.f18773O = 5;
+    private h(int i4, String str, boolean z6) {
+        this.f19560O = 0;
+        if (z6) {
+            if (i4 == 200) {
+                this.f19560O = 4;
+            } else if (i4 == 201) {
+                this.f19560O = 7;
+            } else if (i4 == 203) {
+                this.f19560O = 6;
+            } else if (i4 == 205) {
+                this.f19560O = 5;
             }
         }
-        this.f18774P = str;
+        this.f19561P = str;
         b();
     }
 
-    private h(int i6, String str) {
-        this.f18773O = i6;
-        this.f18774P = str;
+    private h(int i4, String str) {
+        this.f19560O = i4;
+        this.f19561P = str;
         b();
     }
 
-    private void b(int i6) {
-        this.f18773O = i6;
+    private void b(int i4) {
+        this.f19560O = i4;
     }
 
     private void b(String str) {
-        this.f18774P = str;
+        this.f19561P = str;
     }
 }

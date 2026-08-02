@@ -11,10 +11,10 @@ public final class Strings {
     public static byte[] A00;
     public static String[] A01 = {"", "rJg0GTHRX", "K9dQxfkFvyPrqanCyvVi9t8TsdGmyNgC", "tUuj0V7XDkeAi6SkgPTUgMEzqoPOG2wI", "s5Ev4BEaYYaheBbHJPARkFomt6p83FKm", "U0fqfbzQ6IMhOxnuinQg0kR", "WEAQUpFs2V4MiUsuqBnPNaxCCDrbqZTD", "9mERPiqnqMQrbOPuWUaYAoq2giX9Yyaq"};
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 2);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 2);
         }
         return new String(copyOfRange);
     }
@@ -27,14 +27,14 @@ public final class Strings {
         A03();
     }
 
-    public static String A01(@CheckForNull Object o6) {
-        if (o6 == null) {
+    public static String A01(@CheckForNull Object o4) {
+        if (o4 == null) {
             return A00(94, 4, 87);
         }
         try {
-            return o6.toString();
+            return o4.toString();
         } catch (Exception e9) {
-            String str = o6.getClass().getName() + '@' + Integer.toHexString(System.identityHashCode(o6));
+            String str = o4.getClass().getName() + '@' + Integer.toHexString(System.identityHashCode(o4));
             Logger.getLogger(A00(64, 30, 71)).log(Level.WARNING, A00(29, 35, 119) + str, (Throwable) e9);
             return A00(27, 1, 44) + str + A00(2, 7, 119) + e9.getClass().getName() + A00(28, 1, 70);
         }
@@ -55,25 +55,25 @@ public final class Strings {
             }
         }
         StringBuilder sb = new StringBuilder(valueOf.length() + (args.length * 16));
+        int i4 = 0;
         int i6 = 0;
-        int i9 = 0;
-        while (i9 < args.length && (i = valueOf.indexOf(A00(9, 2, 51), i6)) != -1) {
-            sb.append((CharSequence) valueOf, i6, i);
-            int templateStart2 = i9 + 1;
-            sb.append(args[i9]);
-            i6 = i + 2;
-            i9 = templateStart2;
+        while (i6 < args.length && (i = valueOf.indexOf(A00(9, 2, 51), i4)) != -1) {
+            sb.append((CharSequence) valueOf, i4, i);
+            int templateStart2 = i6 + 1;
+            sb.append(args[i6]);
+            i4 = i + 2;
+            i6 = templateStart2;
         }
-        sb.append((CharSequence) valueOf, i6, valueOf.length());
-        if (i9 < args.length) {
+        sb.append((CharSequence) valueOf, i4, valueOf.length());
+        if (i6 < args.length) {
             sb.append(A00(0, 2, 94));
-            int i10 = i9 + 1;
-            sb.append(args[i9]);
-            while (i10 < args.length) {
+            int i9 = i6 + 1;
+            sb.append(args[i6]);
+            while (i9 < args.length) {
                 sb.append(A00(25, 2, 100));
-                int templateStart3 = i10 + 1;
-                sb.append(args[i10]);
-                i10 = templateStart3;
+                int templateStart3 = i9 + 1;
+                sb.append(args[i9]);
+                i9 = templateStart3;
             }
             sb.append(']');
         }
@@ -82,8 +82,8 @@ public final class Strings {
         String str = strArr[6];
         String str2 = strArr[2];
         int templateStart4 = str.charAt(10);
-        int i11 = str2.charAt(10);
-        if (templateStart4 == i11) {
+        int i10 = str2.charAt(10);
+        if (templateStart4 == i10) {
             throw new RuntimeException();
         }
         String[] strArr2 = A01;

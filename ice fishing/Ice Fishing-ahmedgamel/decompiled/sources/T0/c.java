@@ -1,32 +1,31 @@
 package T0;
 
-import O2.AbstractRunnableC0368s;
 import androidx.work.impl.WorkDatabase;
 import java.util.Iterator;
 
 /* loaded from: classes.dex */
-public final class c extends AbstractRunnableC0368s {
+public final class c extends Q2.r {
 
     /* renamed from: v, reason: collision with root package name */
-    public final /* synthetic */ K0.p f3028v;
+    public final /* synthetic */ K0.p f3111v;
 
     public c(K0.p pVar) {
-        this.f3028v = pVar;
+        this.f3111v = pVar;
     }
 
-    @Override // O2.AbstractRunnableC0368s
+    @Override // Q2.r
     public final void b() {
-        K0.p pVar = this.f3028v;
-        WorkDatabase workDatabase = pVar.f1534c;
+        K0.p pVar = this.f3111v;
+        WorkDatabase workDatabase = pVar.f1643c;
         workDatabase.c();
         try {
             Iterator it = workDatabase.t().g().iterator();
             while (it.hasNext()) {
-                AbstractRunnableC0368s.a(pVar, (String) it.next());
+                Q2.r.a(pVar, (String) it.next());
             }
             workDatabase.o();
             workDatabase.k();
-            K0.i.a(pVar.f1533b, pVar.f1534c, pVar.f1536e);
+            K0.i.a(pVar.f1642b, pVar.f1643c, pVar.f1645e);
         } catch (Throwable th) {
             workDatabase.k();
             throw th;

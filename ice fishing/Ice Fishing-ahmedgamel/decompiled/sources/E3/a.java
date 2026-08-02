@@ -1,31 +1,40 @@
 package E3;
 
-import android.graphics.RectF;
-import java.util.Arrays;
+import android.R;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
+import android.os.Build;
+import android.util.Log;
 
 /* loaded from: classes2.dex */
-public final class a implements c {
+public abstract class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final float f733a;
+    public static final int[] f895a = {R.attr.state_enabled, R.attr.state_pressed};
 
-    public a(float f3) {
-        this.f733a = f3;
-    }
+    /* renamed from: b, reason: collision with root package name */
+    public static final String f896b = a.class.getSimpleName();
 
-    @Override // E3.c
-    public final float a(RectF rectF) {
-        return this.f733a;
-    }
-
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    public static ColorStateList a(ColorStateList colorStateList) {
+        if (colorStateList == null) {
+            return ColorStateList.valueOf(0);
         }
-        return (obj instanceof a) && this.f733a == ((a) obj).f733a;
+        if (Build.VERSION.SDK_INT <= 27 && Color.alpha(colorStateList.getDefaultColor()) == 0 && Color.alpha(colorStateList.getColorForState(f895a, 0)) != 0) {
+            Log.w(f896b, "Use a non-transparent color for the default color as it will be used to finish ripple animations.");
+        }
+        return colorStateList;
     }
 
-    public final int hashCode() {
-        return Arrays.hashCode(new Object[]{Float.valueOf(this.f733a)});
+    public static boolean b(int[] iArr) {
+        boolean z6 = false;
+        boolean z9 = false;
+        for (int i : iArr) {
+            if (i == 16842910) {
+                z6 = true;
+            } else if (i == 16842908 || i == 16842919 || i == 16843623) {
+                z9 = true;
+            }
+        }
+        return z6 && z9;
     }
 }

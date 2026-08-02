@@ -3,8 +3,8 @@ package androidx.appcompat.widget;
 import D0.k;
 import G.e;
 import O.A0;
-import O.C0344t;
-import O.InterfaceC0343s;
+import O.C0349t;
+import O.InterfaceC0348s;
 import O.J;
 import O.L;
 import O.X;
@@ -31,183 +31,184 @@ import android.view.ViewPropertyAnimator;
 import android.view.Window;
 import android.view.WindowInsets;
 import android.widget.OverScroller;
+import com.IceFishing.LiveIceFishing.C5248R;
 import com.bumptech.glide.g;
-import com.icefishingapp.icefishing.C5275R;
+import h.M;
 import java.util.WeakHashMap;
-import k.C4624k;
+import k.C4634k;
 import l.m;
 import l.x;
-import m.C4683e;
-import m.C4685f;
-import m.C4695k;
-import m.InterfaceC4681d;
-import m.InterfaceC4690h0;
-import m.InterfaceC4692i0;
-import m.RunnableC4679c;
-import m.S0;
-import m.X0;
+import m.C4696e;
+import m.C4698f;
+import m.C4708k;
+import m.InterfaceC4694d;
+import m.InterfaceC4703h0;
+import m.InterfaceC4705i0;
+import m.RunnableC4692c;
+import m.T0;
+import m.Y0;
 
 /* loaded from: classes.dex */
-public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC4690h0, r, InterfaceC0343s {
+public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC4703h0, r, InterfaceC0348s {
 
     /* renamed from: V, reason: collision with root package name */
-    public static final int[] f4529V = {C5275R.attr.actionBarSize, R.attr.windowContentOverlay};
+    public static final int[] f4497V = {C5248R.attr.actionBarSize, R.attr.windowContentOverlay};
 
     /* renamed from: W, reason: collision with root package name */
-    public static final A0 f4530W;
+    public static final A0 f4498W;
 
-    /* renamed from: n0, reason: collision with root package name */
-    public static final Rect f4531n0;
+    /* renamed from: i0, reason: collision with root package name */
+    public static final Rect f4499i0;
 
     /* renamed from: A, reason: collision with root package name */
-    public boolean f4532A;
+    public boolean f4500A;
 
     /* renamed from: B, reason: collision with root package name */
-    public boolean f4533B;
+    public boolean f4501B;
 
     /* renamed from: C, reason: collision with root package name */
-    public boolean f4534C;
+    public boolean f4502C;
 
     /* renamed from: D, reason: collision with root package name */
-    public int f4535D;
+    public int f4503D;
 
     /* renamed from: E, reason: collision with root package name */
-    public int f4536E;
+    public int f4504E;
 
     /* renamed from: F, reason: collision with root package name */
-    public final Rect f4537F;
+    public final Rect f4505F;
 
     /* renamed from: G, reason: collision with root package name */
-    public final Rect f4538G;
+    public final Rect f4506G;
 
     /* renamed from: H, reason: collision with root package name */
-    public final Rect f4539H;
+    public final Rect f4507H;
 
     /* renamed from: I, reason: collision with root package name */
-    public final Rect f4540I;
+    public final Rect f4508I;
     public A0 J;
 
     /* renamed from: K, reason: collision with root package name */
-    public A0 f4541K;
+    public A0 f4509K;
 
     /* renamed from: L, reason: collision with root package name */
-    public A0 f4542L;
+    public A0 f4510L;
 
     /* renamed from: M, reason: collision with root package name */
-    public A0 f4543M;
+    public A0 f4511M;
 
     /* renamed from: N, reason: collision with root package name */
-    public InterfaceC4681d f4544N;
+    public InterfaceC4694d f4512N;
 
     /* renamed from: O, reason: collision with root package name */
-    public OverScroller f4545O;
+    public OverScroller f4513O;
 
     /* renamed from: P, reason: collision with root package name */
-    public ViewPropertyAnimator f4546P;
+    public ViewPropertyAnimator f4514P;
 
     /* renamed from: Q, reason: collision with root package name */
-    public final k f4547Q;
+    public final k f4515Q;
 
     /* renamed from: R, reason: collision with root package name */
-    public final RunnableC4679c f4548R;
+    public final RunnableC4692c f4516R;
 
     /* renamed from: S, reason: collision with root package name */
-    public final RunnableC4679c f4549S;
+    public final RunnableC4692c f4517S;
 
     /* renamed from: T, reason: collision with root package name */
-    public final C0344t f4550T;
+    public final C0349t f4518T;
 
     /* renamed from: U, reason: collision with root package name */
-    public final C4685f f4551U;
+    public final C4698f f4519U;
 
     /* renamed from: n, reason: collision with root package name */
-    public int f4552n;
+    public int f4520n;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f4553u;
+    public int f4521u;
 
     /* renamed from: v, reason: collision with root package name */
-    public ContentFrameLayout f4554v;
+    public ContentFrameLayout f4522v;
 
     /* renamed from: w, reason: collision with root package name */
-    public ActionBarContainer f4555w;
+    public ActionBarContainer f4523w;
 
     /* renamed from: x, reason: collision with root package name */
-    public InterfaceC4692i0 f4556x;
+    public InterfaceC4705i0 f4524x;
 
     /* renamed from: y, reason: collision with root package name */
-    public Drawable f4557y;
+    public Drawable f4525y;
 
     /* renamed from: z, reason: collision with root package name */
-    public boolean f4558z;
+    public boolean f4526z;
 
     static {
         int i = Build.VERSION.SDK_INT;
         s0 r0Var = i >= 30 ? new r0() : i >= 29 ? new q0() : new p0();
         r0Var.g(e.b(0, 1, 0, 1));
-        f4530W = r0Var.b();
-        f4531n0 = new Rect();
+        f4498W = r0Var.b();
+        f4499i0 = new Rect();
     }
 
     public ActionBarOverlayLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f4553u = 0;
-        this.f4537F = new Rect();
-        this.f4538G = new Rect();
-        this.f4539H = new Rect();
-        this.f4540I = new Rect();
+        this.f4521u = 0;
+        this.f4505F = new Rect();
+        this.f4506G = new Rect();
+        this.f4507H = new Rect();
+        this.f4508I = new Rect();
         new Rect();
         new Rect();
         new Rect();
         new Rect();
-        A0 a02 = A0.f2026b;
+        A0 a02 = A0.f2114b;
         this.J = a02;
-        this.f4541K = a02;
-        this.f4542L = a02;
-        this.f4543M = a02;
-        this.f4547Q = new k(3, this);
-        this.f4548R = new RunnableC4679c(this, 0);
-        this.f4549S = new RunnableC4679c(this, 1);
+        this.f4509K = a02;
+        this.f4510L = a02;
+        this.f4511M = a02;
+        this.f4515Q = new k(3, this);
+        this.f4516R = new RunnableC4692c(this, 0);
+        this.f4517S = new RunnableC4692c(this, 1);
         i(context);
-        this.f4550T = new C0344t();
-        C4685f c4685f = new C4685f(context);
-        c4685f.setWillNotDraw(true);
-        this.f4551U = c4685f;
-        addView(c4685f);
+        this.f4518T = new C0349t();
+        C4698f c4698f = new C4698f(context);
+        c4698f.setWillNotDraw(true);
+        this.f4519U = c4698f;
+        addView(c4698f);
     }
 
-    public static boolean g(View view, Rect rect, boolean z3) {
-        boolean z6;
-        C4683e c4683e = (C4683e) view.getLayoutParams();
-        int i = ((ViewGroup.MarginLayoutParams) c4683e).leftMargin;
-        int i6 = rect.left;
-        if (i != i6) {
-            ((ViewGroup.MarginLayoutParams) c4683e).leftMargin = i6;
-            z6 = true;
+    public static boolean g(View view, Rect rect, boolean z6) {
+        boolean z9;
+        C4696e c4696e = (C4696e) view.getLayoutParams();
+        int i = ((ViewGroup.MarginLayoutParams) c4696e).leftMargin;
+        int i4 = rect.left;
+        if (i != i4) {
+            ((ViewGroup.MarginLayoutParams) c4696e).leftMargin = i4;
+            z9 = true;
         } else {
-            z6 = false;
+            z9 = false;
         }
-        int i9 = ((ViewGroup.MarginLayoutParams) c4683e).topMargin;
-        int i10 = rect.top;
-        if (i9 != i10) {
-            ((ViewGroup.MarginLayoutParams) c4683e).topMargin = i10;
-            z6 = true;
+        int i6 = ((ViewGroup.MarginLayoutParams) c4696e).topMargin;
+        int i9 = rect.top;
+        if (i6 != i9) {
+            ((ViewGroup.MarginLayoutParams) c4696e).topMargin = i9;
+            z9 = true;
         }
-        int i11 = ((ViewGroup.MarginLayoutParams) c4683e).rightMargin;
-        int i12 = rect.right;
-        if (i11 != i12) {
-            ((ViewGroup.MarginLayoutParams) c4683e).rightMargin = i12;
-            z6 = true;
+        int i10 = ((ViewGroup.MarginLayoutParams) c4696e).rightMargin;
+        int i11 = rect.right;
+        if (i10 != i11) {
+            ((ViewGroup.MarginLayoutParams) c4696e).rightMargin = i11;
+            z9 = true;
         }
-        if (z3) {
-            int i13 = ((ViewGroup.MarginLayoutParams) c4683e).bottomMargin;
-            int i14 = rect.bottom;
-            if (i13 != i14) {
-                ((ViewGroup.MarginLayoutParams) c4683e).bottomMargin = i14;
+        if (z6) {
+            int i12 = ((ViewGroup.MarginLayoutParams) c4696e).bottomMargin;
+            int i13 = rect.bottom;
+            if (i12 != i13) {
+                ((ViewGroup.MarginLayoutParams) c4696e).bottomMargin = i13;
                 return true;
             }
         }
-        return z6;
+        return z9;
     }
 
     @Override // O.r
@@ -217,52 +218,52 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC4690h
         }
     }
 
-    @Override // O.InterfaceC0343s
-    public final void b(View view, int i, int i6, int i9, int i10, int i11, int[] iArr) {
-        c(view, i, i6, i9, i10, i11);
+    @Override // O.InterfaceC0348s
+    public final void b(View view, int i, int i4, int i6, int i9, int i10, int[] iArr) {
+        c(view, i, i4, i6, i9, i10);
     }
 
     @Override // O.r
-    public final void c(View view, int i, int i6, int i9, int i10, int i11) {
-        if (i11 == 0) {
-            onNestedScroll(view, i, i6, i9, i10);
+    public final void c(View view, int i, int i4, int i6, int i9, int i10) {
+        if (i10 == 0) {
+            onNestedScroll(view, i, i4, i6, i9);
         }
     }
 
     @Override // android.view.ViewGroup
     public final boolean checkLayoutParams(ViewGroup.LayoutParams layoutParams) {
-        return layoutParams instanceof C4683e;
+        return layoutParams instanceof C4696e;
     }
 
     @Override // O.r
-    public final boolean d(View view, View view2, int i, int i6) {
-        return i6 == 0 && onStartNestedScroll(view, view2, i);
+    public final boolean d(View view, View view2, int i, int i4) {
+        return i4 == 0 && onStartNestedScroll(view, view2, i);
     }
 
     @Override // android.view.View
     public final void draw(Canvas canvas) {
         int i;
         super.draw(canvas);
-        if (this.f4557y != null) {
-            if (this.f4555w.getVisibility() == 0) {
-                i = (int) (this.f4555w.getTranslationY() + this.f4555w.getBottom() + 0.5f);
+        if (this.f4525y != null) {
+            if (this.f4523w.getVisibility() == 0) {
+                i = (int) (this.f4523w.getTranslationY() + this.f4523w.getBottom() + 0.5f);
             } else {
                 i = 0;
             }
-            this.f4557y.setBounds(0, i, getWidth(), this.f4557y.getIntrinsicHeight() + i);
-            this.f4557y.draw(canvas);
+            this.f4525y.setBounds(0, i, getWidth(), this.f4525y.getIntrinsicHeight() + i);
+            this.f4525y.draw(canvas);
         }
     }
 
     @Override // O.r
-    public final void e(View view, View view2, int i, int i6) {
-        if (i6 == 0) {
+    public final void e(View view, View view2, int i, int i4) {
+        if (i4 == 0) {
             onNestedScrollAccepted(view, view2, i);
         }
     }
 
     @Override // O.r
-    public final void f(View view, int i, int i6, int[] iArr, int i9) {
+    public final void f(View view, int i, int i4, int[] iArr, int i6) {
     }
 
     @Override // android.view.View
@@ -272,16 +273,16 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC4690h
 
     @Override // android.view.ViewGroup
     public final ViewGroup.LayoutParams generateDefaultLayoutParams() {
-        return new C4683e(-1, -1);
+        return new C4696e(-1, -1);
     }
 
     @Override // android.view.ViewGroup
     public final ViewGroup.LayoutParams generateLayoutParams(AttributeSet attributeSet) {
-        return new C4683e(getContext(), attributeSet);
+        return new C4696e(getContext(), attributeSet);
     }
 
     public int getActionBarHideOffset() {
-        ActionBarContainer actionBarContainer = this.f4555w;
+        ActionBarContainer actionBarContainer = this.f4523w;
         if (actionBarContainer != null) {
             return -((int) actionBarContainer.getTranslationY());
         }
@@ -290,41 +291,41 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC4690h
 
     @Override // android.view.ViewGroup
     public int getNestedScrollAxes() {
-        C0344t c0344t = this.f4550T;
-        return c0344t.f2134b | c0344t.f2133a;
+        C0349t c0349t = this.f4518T;
+        return c0349t.f2222b | c0349t.f2221a;
     }
 
     public CharSequence getTitle() {
         k();
-        return ((X0) this.f4556x).f39081a.getTitle();
+        return ((Y0) this.f4524x).f39151a.getTitle();
     }
 
     public final void h() {
-        removeCallbacks(this.f4548R);
-        removeCallbacks(this.f4549S);
-        ViewPropertyAnimator viewPropertyAnimator = this.f4546P;
+        removeCallbacks(this.f4516R);
+        removeCallbacks(this.f4517S);
+        ViewPropertyAnimator viewPropertyAnimator = this.f4514P;
         if (viewPropertyAnimator != null) {
             viewPropertyAnimator.cancel();
         }
     }
 
     public final void i(Context context) {
-        TypedArray obtainStyledAttributes = getContext().getTheme().obtainStyledAttributes(f4529V);
-        this.f4552n = obtainStyledAttributes.getDimensionPixelSize(0, 0);
+        TypedArray obtainStyledAttributes = getContext().getTheme().obtainStyledAttributes(f4497V);
+        this.f4520n = obtainStyledAttributes.getDimensionPixelSize(0, 0);
         Drawable drawable = obtainStyledAttributes.getDrawable(1);
-        this.f4557y = drawable;
+        this.f4525y = drawable;
         setWillNotDraw(drawable == null);
         obtainStyledAttributes.recycle();
-        this.f4545O = new OverScroller(context);
+        this.f4513O = new OverScroller(context);
     }
 
     public final void j(int i) {
         k();
         if (i == 2) {
-            ((X0) this.f4556x).getClass();
+            ((Y0) this.f4524x).getClass();
             Log.i("ToolbarWidgetWrapper", "Progress display unsupported");
         } else if (i == 5) {
-            ((X0) this.f4556x).getClass();
+            ((Y0) this.f4524x).getClass();
             Log.i("ToolbarWidgetWrapper", "Progress display unsupported");
         } else {
             if (i != 109) {
@@ -335,101 +336,101 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC4690h
     }
 
     public final void k() {
-        InterfaceC4692i0 wrapper;
-        if (this.f4554v == null) {
-            this.f4554v = (ContentFrameLayout) findViewById(C5275R.id.action_bar_activity_content);
-            this.f4555w = (ActionBarContainer) findViewById(C5275R.id.action_bar_container);
-            KeyEvent.Callback findViewById = findViewById(C5275R.id.action_bar);
-            if (findViewById instanceof InterfaceC4692i0) {
-                wrapper = (InterfaceC4692i0) findViewById;
+        InterfaceC4705i0 wrapper;
+        if (this.f4522v == null) {
+            this.f4522v = (ContentFrameLayout) findViewById(C5248R.id.action_bar_activity_content);
+            this.f4523w = (ActionBarContainer) findViewById(C5248R.id.action_bar_container);
+            KeyEvent.Callback findViewById = findViewById(C5248R.id.action_bar);
+            if (findViewById instanceof InterfaceC4705i0) {
+                wrapper = (InterfaceC4705i0) findViewById;
             } else {
                 if (!(findViewById instanceof Toolbar)) {
                     throw new IllegalStateException("Can't make a decor toolbar out of ".concat(findViewById.getClass().getSimpleName()));
                 }
                 wrapper = ((Toolbar) findViewById).getWrapper();
             }
-            this.f4556x = wrapper;
+            this.f4524x = wrapper;
         }
     }
 
     public final void l(m mVar, x xVar) {
         k();
-        X0 x02 = (X0) this.f4556x;
-        C4695k c4695k = x02.f39092m;
-        Toolbar toolbar = x02.f39081a;
-        if (c4695k == null) {
-            x02.f39092m = new C4695k(toolbar.getContext());
+        Y0 y02 = (Y0) this.f4524x;
+        C4708k c4708k = y02.f39162m;
+        Toolbar toolbar = y02.f39151a;
+        if (c4708k == null) {
+            y02.f39162m = new C4708k(toolbar.getContext());
         }
-        C4695k c4695k2 = x02.f39092m;
-        c4695k2.f39176x = xVar;
-        if (mVar == null && toolbar.f4609n == null) {
+        C4708k c4708k2 = y02.f39162m;
+        c4708k2.f39245x = xVar;
+        if (mVar == null && toolbar.f4579n == null) {
             return;
         }
         toolbar.f();
-        m mVar2 = toolbar.f4609n.f4559I;
+        m mVar2 = toolbar.f4579n.f4527I;
         if (mVar2 == mVar) {
             return;
         }
         if (mVar2 != null) {
-            mVar2.r(toolbar.f4618u0);
-            mVar2.r(toolbar.f4620v0);
+            mVar2.r(toolbar.f4582p0);
+            mVar2.r(toolbar.f4583q0);
         }
-        if (toolbar.f4620v0 == null) {
-            toolbar.f4620v0 = new S0(toolbar);
+        if (toolbar.f4583q0 == null) {
+            toolbar.f4583q0 = new T0(toolbar);
         }
-        c4695k2.J = true;
+        c4708k2.J = true;
         if (mVar != null) {
-            mVar.b(c4695k2, toolbar.f4589C);
-            mVar.b(toolbar.f4620v0, toolbar.f4589C);
+            mVar.b(c4708k2, toolbar.f4555C);
+            mVar.b(toolbar.f4583q0, toolbar.f4555C);
         } else {
-            c4695k2.h(toolbar.f4589C, null);
-            toolbar.f4620v0.h(toolbar.f4589C, null);
-            c4695k2.e();
-            toolbar.f4620v0.e();
+            c4708k2.h(toolbar.f4555C, null);
+            toolbar.f4583q0.h(toolbar.f4555C, null);
+            c4708k2.e();
+            toolbar.f4583q0.e();
         }
-        toolbar.f4609n.setPopupTheme(toolbar.f4590D);
-        toolbar.f4609n.setPresenter(c4695k2);
-        toolbar.f4618u0 = c4695k2;
+        toolbar.f4579n.setPopupTheme(toolbar.f4556D);
+        toolbar.f4579n.setPresenter(c4708k2);
+        toolbar.f4582p0 = c4708k2;
         toolbar.w();
     }
 
     @Override // android.view.View
     public final WindowInsets onApplyWindowInsets(WindowInsets windowInsets) {
         k();
-        A0 h9 = A0.h(this, windowInsets);
-        boolean g4 = g(this.f4555w, new Rect(h9.b(), h9.d(), h9.c(), h9.a()), false);
-        WeakHashMap weakHashMap = X.f2054a;
-        Rect rect = this.f4537F;
-        L.b(this, h9, rect);
+        A0 h3 = A0.h(this, windowInsets);
+        boolean g9 = g(this.f4523w, new Rect(h3.b(), h3.d(), h3.c(), h3.a()), false);
+        WeakHashMap weakHashMap = X.f2142a;
+        Rect rect = this.f4505F;
+        L.b(this, h3, rect);
         int i = rect.left;
-        int i6 = rect.top;
-        int i9 = rect.right;
-        int i10 = rect.bottom;
-        y0 y0Var = h9.f2027a;
-        A0 l9 = y0Var.l(i, i6, i9, i10);
+        int i4 = rect.top;
+        int i6 = rect.right;
+        int i9 = rect.bottom;
+        y0 y0Var = h3.f2115a;
+        A0 l9 = y0Var.l(i, i4, i6, i9);
         this.J = l9;
-        boolean z3 = true;
-        if (!this.f4541K.equals(l9)) {
-            this.f4541K = this.J;
-            g4 = true;
+        boolean z6 = true;
+        if (!this.f4509K.equals(l9)) {
+            this.f4509K = this.J;
+            g9 = true;
         }
-        Rect rect2 = this.f4538G;
+        Rect rect2 = this.f4506G;
         if (rect2.equals(rect)) {
-            z3 = g4;
+            z6 = g9;
         } else {
             rect2.set(rect);
         }
-        if (z3) {
+        if (z6) {
             requestLayout();
         }
-        return y0Var.a().f2027a.c().f2027a.b().g();
+        return y0Var.a().f2115a.c().f2115a.b().g();
     }
 
     @Override // android.view.View
     public final void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
         i(getContext());
-        WeakHashMap weakHashMap = X.f2054a;
+        WeakHashMap weakHashMap = X.f2142a;
         J.c(this);
     }
 
@@ -440,19 +441,19 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC4690h
     }
 
     @Override // android.view.ViewGroup, android.view.View
-    public final void onLayout(boolean z3, int i, int i6, int i9, int i10) {
+    public final void onLayout(boolean z6, int i, int i4, int i6, int i9) {
         int childCount = getChildCount();
         int paddingLeft = getPaddingLeft();
         int paddingTop = getPaddingTop();
-        for (int i11 = 0; i11 < childCount; i11++) {
-            View childAt = getChildAt(i11);
+        for (int i10 = 0; i10 < childCount; i10++) {
+            View childAt = getChildAt(i10);
             if (childAt.getVisibility() != 8) {
-                C4683e c4683e = (C4683e) childAt.getLayoutParams();
+                C4696e c4696e = (C4696e) childAt.getLayoutParams();
                 int measuredWidth = childAt.getMeasuredWidth();
                 int measuredHeight = childAt.getMeasuredHeight();
-                int i12 = ((ViewGroup.MarginLayoutParams) c4683e).leftMargin + paddingLeft;
-                int i13 = ((ViewGroup.MarginLayoutParams) c4683e).topMargin + paddingTop;
-                childAt.layout(i12, i13, measuredWidth + i12, measuredHeight + i13);
+                int i11 = ((ViewGroup.MarginLayoutParams) c4696e).leftMargin + paddingLeft;
+                int i12 = ((ViewGroup.MarginLayoutParams) c4696e).topMargin + paddingTop;
+                childAt.layout(i11, i12, measuredWidth + i11, measuredHeight + i12);
             }
         }
     }
@@ -462,135 +463,135 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC4690h
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void onMeasure(int i, int i6) {
+    public final void onMeasure(int i, int i4) {
         int measuredHeight;
         k();
-        measureChildWithMargins(this.f4555w, i, 0, i6, 0);
-        C4683e c4683e = (C4683e) this.f4555w.getLayoutParams();
-        int max = Math.max(0, this.f4555w.getMeasuredWidth() + ((ViewGroup.MarginLayoutParams) c4683e).leftMargin + ((ViewGroup.MarginLayoutParams) c4683e).rightMargin);
-        int max2 = Math.max(0, this.f4555w.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) c4683e).topMargin + ((ViewGroup.MarginLayoutParams) c4683e).bottomMargin);
-        int combineMeasuredStates = View.combineMeasuredStates(0, this.f4555w.getMeasuredState());
-        WeakHashMap weakHashMap = X.f2054a;
-        boolean z3 = (getWindowSystemUiVisibility() & 256) != 0;
-        if (z3) {
-            measuredHeight = this.f4552n;
-            if (this.f4532A && this.f4555w.getTabContainer() != null) {
-                measuredHeight += this.f4552n;
+        measureChildWithMargins(this.f4523w, i, 0, i4, 0);
+        C4696e c4696e = (C4696e) this.f4523w.getLayoutParams();
+        int max = Math.max(0, this.f4523w.getMeasuredWidth() + ((ViewGroup.MarginLayoutParams) c4696e).leftMargin + ((ViewGroup.MarginLayoutParams) c4696e).rightMargin);
+        int max2 = Math.max(0, this.f4523w.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) c4696e).topMargin + ((ViewGroup.MarginLayoutParams) c4696e).bottomMargin);
+        int combineMeasuredStates = View.combineMeasuredStates(0, this.f4523w.getMeasuredState());
+        WeakHashMap weakHashMap = X.f2142a;
+        boolean z6 = (getWindowSystemUiVisibility() & 256) != 0;
+        if (z6) {
+            measuredHeight = this.f4520n;
+            if (this.f4500A && this.f4523w.getTabContainer() != null) {
+                measuredHeight += this.f4520n;
             }
         } else {
-            measuredHeight = this.f4555w.getVisibility() != 8 ? this.f4555w.getMeasuredHeight() : 0;
+            measuredHeight = this.f4523w.getVisibility() != 8 ? this.f4523w.getMeasuredHeight() : 0;
         }
-        Rect rect = this.f4537F;
-        Rect rect2 = this.f4539H;
+        Rect rect = this.f4505F;
+        Rect rect2 = this.f4507H;
         rect2.set(rect);
-        this.f4542L = this.J;
-        if (!this.f4558z && !z3) {
-            C4685f c4685f = this.f4551U;
-            A0 a02 = f4530W;
-            Rect rect3 = this.f4540I;
-            L.b(c4685f, a02, rect3);
-            if (!rect3.equals(f4531n0)) {
+        this.f4510L = this.J;
+        if (!this.f4526z && !z6) {
+            C4698f c4698f = this.f4519U;
+            A0 a02 = f4498W;
+            Rect rect3 = this.f4508I;
+            L.b(c4698f, a02, rect3);
+            if (!rect3.equals(f4499i0)) {
                 rect2.top += measuredHeight;
                 rect2.bottom = rect2.bottom;
-                this.f4542L = this.f4542L.f2027a.l(0, measuredHeight, 0, 0);
-                g(this.f4554v, rect2, true);
-                if (!this.f4543M.equals(this.f4542L)) {
-                    A0 a03 = this.f4542L;
-                    this.f4543M = a03;
-                    X.b(this.f4554v, a03);
+                this.f4510L = this.f4510L.f2115a.l(0, measuredHeight, 0, 0);
+                g(this.f4522v, rect2, true);
+                if (!this.f4511M.equals(this.f4510L)) {
+                    A0 a03 = this.f4510L;
+                    this.f4511M = a03;
+                    X.b(this.f4522v, a03);
                 }
-                measureChildWithMargins(this.f4554v, i, 0, i6, 0);
-                C4683e c4683e2 = (C4683e) this.f4554v.getLayoutParams();
-                int max3 = Math.max(max, this.f4554v.getMeasuredWidth() + ((ViewGroup.MarginLayoutParams) c4683e2).leftMargin + ((ViewGroup.MarginLayoutParams) c4683e2).rightMargin);
-                int max4 = Math.max(max2, this.f4554v.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) c4683e2).topMargin + ((ViewGroup.MarginLayoutParams) c4683e2).bottomMargin);
-                int combineMeasuredStates2 = View.combineMeasuredStates(combineMeasuredStates, this.f4554v.getMeasuredState());
-                setMeasuredDimension(View.resolveSizeAndState(Math.max(getPaddingRight() + getPaddingLeft() + max3, getSuggestedMinimumWidth()), i, combineMeasuredStates2), View.resolveSizeAndState(Math.max(getPaddingBottom() + getPaddingTop() + max4, getSuggestedMinimumHeight()), i6, combineMeasuredStates2 << 16));
+                measureChildWithMargins(this.f4522v, i, 0, i4, 0);
+                C4696e c4696e2 = (C4696e) this.f4522v.getLayoutParams();
+                int max3 = Math.max(max, this.f4522v.getMeasuredWidth() + ((ViewGroup.MarginLayoutParams) c4696e2).leftMargin + ((ViewGroup.MarginLayoutParams) c4696e2).rightMargin);
+                int max4 = Math.max(max2, this.f4522v.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) c4696e2).topMargin + ((ViewGroup.MarginLayoutParams) c4696e2).bottomMargin);
+                int combineMeasuredStates2 = View.combineMeasuredStates(combineMeasuredStates, this.f4522v.getMeasuredState());
+                setMeasuredDimension(View.resolveSizeAndState(Math.max(getPaddingRight() + getPaddingLeft() + max3, getSuggestedMinimumWidth()), i, combineMeasuredStates2), View.resolveSizeAndState(Math.max(getPaddingBottom() + getPaddingTop() + max4, getSuggestedMinimumHeight()), i4, combineMeasuredStates2 << 16));
             }
         }
-        e b9 = e.b(this.f4542L.b(), this.f4542L.d() + measuredHeight, this.f4542L.c(), this.f4542L.a());
-        A0 a04 = this.f4542L;
-        int i9 = Build.VERSION.SDK_INT;
-        s0 r0Var = i9 >= 30 ? new r0(a04) : i9 >= 29 ? new q0(a04) : new p0(a04);
+        e b9 = e.b(this.f4510L.b(), this.f4510L.d() + measuredHeight, this.f4510L.c(), this.f4510L.a());
+        A0 a04 = this.f4510L;
+        int i6 = Build.VERSION.SDK_INT;
+        s0 r0Var = i6 >= 30 ? new r0(a04) : i6 >= 29 ? new q0(a04) : new p0(a04);
         r0Var.g(b9);
-        this.f4542L = r0Var.b();
-        g(this.f4554v, rect2, true);
-        if (!this.f4543M.equals(this.f4542L)) {
+        this.f4510L = r0Var.b();
+        g(this.f4522v, rect2, true);
+        if (!this.f4511M.equals(this.f4510L)) {
         }
-        measureChildWithMargins(this.f4554v, i, 0, i6, 0);
-        C4683e c4683e22 = (C4683e) this.f4554v.getLayoutParams();
-        int max32 = Math.max(max, this.f4554v.getMeasuredWidth() + ((ViewGroup.MarginLayoutParams) c4683e22).leftMargin + ((ViewGroup.MarginLayoutParams) c4683e22).rightMargin);
-        int max42 = Math.max(max2, this.f4554v.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) c4683e22).topMargin + ((ViewGroup.MarginLayoutParams) c4683e22).bottomMargin);
-        int combineMeasuredStates22 = View.combineMeasuredStates(combineMeasuredStates, this.f4554v.getMeasuredState());
-        setMeasuredDimension(View.resolveSizeAndState(Math.max(getPaddingRight() + getPaddingLeft() + max32, getSuggestedMinimumWidth()), i, combineMeasuredStates22), View.resolveSizeAndState(Math.max(getPaddingBottom() + getPaddingTop() + max42, getSuggestedMinimumHeight()), i6, combineMeasuredStates22 << 16));
+        measureChildWithMargins(this.f4522v, i, 0, i4, 0);
+        C4696e c4696e22 = (C4696e) this.f4522v.getLayoutParams();
+        int max32 = Math.max(max, this.f4522v.getMeasuredWidth() + ((ViewGroup.MarginLayoutParams) c4696e22).leftMargin + ((ViewGroup.MarginLayoutParams) c4696e22).rightMargin);
+        int max42 = Math.max(max2, this.f4522v.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) c4696e22).topMargin + ((ViewGroup.MarginLayoutParams) c4696e22).bottomMargin);
+        int combineMeasuredStates22 = View.combineMeasuredStates(combineMeasuredStates, this.f4522v.getMeasuredState());
+        setMeasuredDimension(View.resolveSizeAndState(Math.max(getPaddingRight() + getPaddingLeft() + max32, getSuggestedMinimumWidth()), i, combineMeasuredStates22), View.resolveSizeAndState(Math.max(getPaddingBottom() + getPaddingTop() + max42, getSuggestedMinimumHeight()), i4, combineMeasuredStates22 << 16));
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
-    public final boolean onNestedFling(View view, float f3, float f9, boolean z3) {
-        if (!this.f4533B || !z3) {
+    public final boolean onNestedFling(View view, float f2, float f9, boolean z6) {
+        if (!this.f4501B || !z6) {
             return false;
         }
-        this.f4545O.fling(0, 0, 0, (int) f9, 0, 0, Integer.MIN_VALUE, Integer.MAX_VALUE);
-        if (this.f4545O.getFinalY() > this.f4555w.getHeight()) {
+        this.f4513O.fling(0, 0, 0, (int) f9, 0, 0, Integer.MIN_VALUE, Integer.MAX_VALUE);
+        if (this.f4513O.getFinalY() > this.f4523w.getHeight()) {
             h();
-            this.f4549S.run();
+            this.f4517S.run();
         } else {
             h();
-            this.f4548R.run();
+            this.f4516R.run();
         }
-        this.f4534C = true;
+        this.f4502C = true;
         return true;
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
-    public final boolean onNestedPreFling(View view, float f3, float f9) {
+    public final boolean onNestedPreFling(View view, float f2, float f9) {
         return false;
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
-    public final void onNestedPreScroll(View view, int i, int i6, int[] iArr) {
+    public final void onNestedPreScroll(View view, int i, int i4, int[] iArr) {
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
-    public final void onNestedScroll(View view, int i, int i6, int i9, int i10) {
-        int i11 = this.f4535D + i6;
-        this.f4535D = i11;
-        setActionBarHideOffset(i11);
+    public final void onNestedScroll(View view, int i, int i4, int i6, int i9) {
+        int i10 = this.f4503D + i4;
+        this.f4503D = i10;
+        setActionBarHideOffset(i10);
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
     public final void onNestedScrollAccepted(View view, View view2, int i) {
-        h.L l9;
-        C4624k c4624k;
-        this.f4550T.f2133a = i;
-        this.f4535D = getActionBarHideOffset();
+        M m9;
+        C4634k c4634k;
+        this.f4518T.f2221a = i;
+        this.f4503D = getActionBarHideOffset();
         h();
-        InterfaceC4681d interfaceC4681d = this.f4544N;
-        if (interfaceC4681d == null || (c4624k = (l9 = (h.L) interfaceC4681d).f37859s) == null) {
+        InterfaceC4694d interfaceC4694d = this.f4512N;
+        if (interfaceC4694d == null || (c4634k = (m9 = (M) interfaceC4694d).f37885s) == null) {
             return;
         }
-        c4624k.a();
-        l9.f37859s = null;
+        c4634k.a();
+        m9.f37885s = null;
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
     public final boolean onStartNestedScroll(View view, View view2, int i) {
-        if ((i & 2) == 0 || this.f4555w.getVisibility() != 0) {
+        if ((i & 2) == 0 || this.f4523w.getVisibility() != 0) {
             return false;
         }
-        return this.f4533B;
+        return this.f4501B;
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
     public final void onStopNestedScroll(View view) {
-        if (!this.f4533B || this.f4534C) {
+        if (!this.f4501B || this.f4502C) {
             return;
         }
-        if (this.f4535D <= this.f4555w.getHeight()) {
+        if (this.f4503D <= this.f4523w.getHeight()) {
             h();
-            postDelayed(this.f4548R, 600L);
+            postDelayed(this.f4516R, 600L);
         } else {
             h();
-            postDelayed(this.f4549S, 600L);
+            postDelayed(this.f4517S, 600L);
         }
     }
 
@@ -598,67 +599,67 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC4690h
     public final void onWindowSystemUiVisibilityChanged(int i) {
         super.onWindowSystemUiVisibilityChanged(i);
         k();
-        int i6 = this.f4536E ^ i;
-        this.f4536E = i;
-        boolean z3 = (i & 4) == 0;
-        boolean z6 = (i & 256) != 0;
-        InterfaceC4681d interfaceC4681d = this.f4544N;
-        if (interfaceC4681d != null) {
-            h.L l9 = (h.L) interfaceC4681d;
-            l9.f37855o = !z6;
-            if (z3 || !z6) {
-                if (l9.f37856p) {
-                    l9.f37856p = false;
-                    l9.w(true);
+        int i4 = this.f4504E ^ i;
+        this.f4504E = i;
+        boolean z6 = (i & 4) == 0;
+        boolean z9 = (i & 256) != 0;
+        InterfaceC4694d interfaceC4694d = this.f4512N;
+        if (interfaceC4694d != null) {
+            M m9 = (M) interfaceC4694d;
+            m9.f37881o = !z9;
+            if (z6 || !z9) {
+                if (m9.f37882p) {
+                    m9.f37882p = false;
+                    m9.w(true);
                 }
-            } else if (!l9.f37856p) {
-                l9.f37856p = true;
-                l9.w(true);
+            } else if (!m9.f37882p) {
+                m9.f37882p = true;
+                m9.w(true);
             }
         }
-        if ((i6 & 256) == 0 || this.f4544N == null) {
+        if ((i4 & 256) == 0 || this.f4512N == null) {
             return;
         }
-        WeakHashMap weakHashMap = X.f2054a;
+        WeakHashMap weakHashMap = X.f2142a;
         J.c(this);
     }
 
     @Override // android.view.View
     public final void onWindowVisibilityChanged(int i) {
         super.onWindowVisibilityChanged(i);
-        this.f4553u = i;
-        InterfaceC4681d interfaceC4681d = this.f4544N;
-        if (interfaceC4681d != null) {
-            ((h.L) interfaceC4681d).f37854n = i;
+        this.f4521u = i;
+        InterfaceC4694d interfaceC4694d = this.f4512N;
+        if (interfaceC4694d != null) {
+            ((M) interfaceC4694d).f37880n = i;
         }
     }
 
     public void setActionBarHideOffset(int i) {
         h();
-        this.f4555w.setTranslationY(-Math.max(0, Math.min(i, this.f4555w.getHeight())));
+        this.f4523w.setTranslationY(-Math.max(0, Math.min(i, this.f4523w.getHeight())));
     }
 
-    public void setActionBarVisibilityCallback(InterfaceC4681d interfaceC4681d) {
-        this.f4544N = interfaceC4681d;
+    public void setActionBarVisibilityCallback(InterfaceC4694d interfaceC4694d) {
+        this.f4512N = interfaceC4694d;
         if (getWindowToken() != null) {
-            ((h.L) this.f4544N).f37854n = this.f4553u;
-            int i = this.f4536E;
+            ((M) this.f4512N).f37880n = this.f4521u;
+            int i = this.f4504E;
             if (i != 0) {
                 onWindowSystemUiVisibilityChanged(i);
-                WeakHashMap weakHashMap = X.f2054a;
+                WeakHashMap weakHashMap = X.f2142a;
                 J.c(this);
             }
         }
     }
 
-    public void setHasNonEmbeddedTabs(boolean z3) {
-        this.f4532A = z3;
+    public void setHasNonEmbeddedTabs(boolean z6) {
+        this.f4500A = z6;
     }
 
-    public void setHideOnContentScrollEnabled(boolean z3) {
-        if (z3 != this.f4533B) {
-            this.f4533B = z3;
-            if (z3) {
+    public void setHideOnContentScrollEnabled(boolean z6) {
+        if (z6 != this.f4501B) {
+            this.f4501B = z6;
+            if (z6) {
                 return;
             }
             h();
@@ -668,46 +669,46 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC4690h
 
     public void setIcon(int i) {
         k();
-        X0 x02 = (X0) this.f4556x;
-        x02.f39084d = i != 0 ? g.e(x02.f39081a.getContext(), i) : null;
-        x02.d();
+        Y0 y02 = (Y0) this.f4524x;
+        y02.f39154d = i != 0 ? g.h(y02.f39151a.getContext(), i) : null;
+        y02.d();
     }
 
     public void setLogo(int i) {
         k();
-        X0 x02 = (X0) this.f4556x;
-        x02.f39085e = i != 0 ? g.e(x02.f39081a.getContext(), i) : null;
-        x02.d();
+        Y0 y02 = (Y0) this.f4524x;
+        y02.f39155e = i != 0 ? g.h(y02.f39151a.getContext(), i) : null;
+        y02.d();
     }
 
-    public void setOverlayMode(boolean z3) {
-        this.f4558z = z3;
+    public void setOverlayMode(boolean z6) {
+        this.f4526z = z6;
     }
 
-    public void setShowingForActionMode(boolean z3) {
+    public void setShowingForActionMode(boolean z6) {
     }
 
     public void setUiOptions(int i) {
     }
 
-    @Override // m.InterfaceC4690h0
+    @Override // m.InterfaceC4703h0
     public void setWindowCallback(Window.Callback callback) {
         k();
-        ((X0) this.f4556x).f39090k = callback;
+        ((Y0) this.f4524x).f39160k = callback;
     }
 
-    @Override // m.InterfaceC4690h0
+    @Override // m.InterfaceC4703h0
     public void setWindowTitle(CharSequence charSequence) {
         k();
-        X0 x02 = (X0) this.f4556x;
-        if (x02.f39087g) {
+        Y0 y02 = (Y0) this.f4524x;
+        if (y02.f39157g) {
             return;
         }
-        x02.f39088h = charSequence;
-        if ((x02.f39082b & 8) != 0) {
-            Toolbar toolbar = x02.f39081a;
+        y02.f39158h = charSequence;
+        if ((y02.f39152b & 8) != 0) {
+            Toolbar toolbar = y02.f39151a;
             toolbar.setTitle(charSequence);
-            if (x02.f39087g) {
+            if (y02.f39157g) {
                 X.p(toolbar.getRootView(), charSequence);
             }
         }
@@ -720,13 +721,13 @@ public class ActionBarOverlayLayout extends ViewGroup implements InterfaceC4690h
 
     @Override // android.view.ViewGroup
     public final ViewGroup.LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
-        return new C4683e(layoutParams);
+        return new C4696e(layoutParams);
     }
 
     public void setIcon(Drawable drawable) {
         k();
-        X0 x02 = (X0) this.f4556x;
-        x02.f39084d = drawable;
-        x02.d();
+        Y0 y02 = (Y0) this.f4524x;
+        y02.f39154d = drawable;
+        y02.d();
     }
 }

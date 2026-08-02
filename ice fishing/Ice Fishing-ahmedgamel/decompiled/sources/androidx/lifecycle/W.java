@@ -4,7 +4,7 @@ package androidx.lifecycle;
 public class W implements V {
 
     /* renamed from: a, reason: collision with root package name */
-    public static W f5152a;
+    public static W f5119a;
 
     @Override // androidx.lifecycle.V
     public S a(Class cls) {

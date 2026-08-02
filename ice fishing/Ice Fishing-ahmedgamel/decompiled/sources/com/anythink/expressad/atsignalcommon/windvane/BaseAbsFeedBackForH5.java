@@ -13,28 +13,28 @@ import org.json.JSONObject;
 public abstract class BaseAbsFeedBackForH5 extends j {
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f18040b = "onFeedbackAlertStatusNotify";
+    public static final String f18827b = "onFeedbackAlertStatusNotify";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f18041c = "status";
+    public static final String f18828c = "status";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f18042d = 1;
+    public static final int f18829d = 1;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f18043e = 2;
+    public static final int f18830e = 2;
     private static int i = 0;
 
     /* renamed from: j, reason: collision with root package name */
-    private static int f18044j = 1;
+    private static int f18831j = 1;
 
     /* renamed from: a, reason: collision with root package name */
-    private String f18045a = "AbsFeedBackForH5";
+    private String f18832a = "AbsFeedBackForH5";
 
     public void callbackExcep(Object obj, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", f18044j);
+            jSONObject.put("code", f18831j);
             jSONObject.put("message", str);
             jSONObject.put("data", new JSONObject());
             h.a().a(obj, Base64.encodeToString(jSONObject.toString().getBytes(), 2));
@@ -82,8 +82,8 @@ public abstract class BaseAbsFeedBackForH5 extends j {
                 String optString = jSONObject.optString("fontColor", "");
                 String optString2 = jSONObject.optString("bgColor", "");
                 com.anythink.expressad.foundation.f.a.a a9 = com.anythink.expressad.foundation.f.b.a().a(jSONObject.optString("key", ""));
-                Context g4 = t.b().g();
-                a9.a(v.b(g4, optInt4), v.b(g4, optInt5), v.b(g4, optInt), v.b(g4, optInt2), v.b(g4, optInt3), (float) optDouble, optString, optString2);
+                Context g9 = t.b().g();
+                a9.a(v.b(g9, optInt4), v.b(g9, optInt5), v.b(g9, optInt), v.b(g9, optInt2), v.b(g9, optInt3), (float) optDouble, optString, optString2);
             }
             callbackSuccess(obj);
         } catch (Throwable th) {
@@ -100,12 +100,12 @@ public abstract class BaseAbsFeedBackForH5 extends j {
                 int optInt = jSONObject.optInt("view_visible", 1);
                 String optString = jSONObject.optString("key", "");
                 com.anythink.expressad.foundation.f.b a9 = com.anythink.expressad.foundation.f.b.a();
-                int i6 = optInt == 1 ? 8 : 0;
-                WindVaneWebView windVaneWebView = bVar.f18062a;
+                int i4 = optInt == 1 ? 8 : 0;
+                WindVaneWebView windVaneWebView = bVar.f18849a;
                 com.anythink.expressad.foundation.f.a.a a10 = a9.a(optString);
                 if (a10.c() != null) {
-                    a10.a(i6);
-                    if (i6 == 0) {
+                    a10.a(i4);
+                    if (i4 == 0) {
                         a9.a(optString, t.b().g(), windVaneWebView, null, null);
                     }
                 }
@@ -123,7 +123,7 @@ public abstract class BaseAbsFeedBackForH5 extends j {
                 JSONObject jSONObject = new JSONObject(str);
                 int optInt = jSONObject.optInt("view_visible", 1);
                 String optString = jSONObject.optString("key", "");
-                final WindVaneWebView windVaneWebView = ((b) obj).f18062a;
+                final WindVaneWebView windVaneWebView = ((b) obj).f18849a;
                 com.anythink.expressad.foundation.f.a aVar = new com.anythink.expressad.foundation.f.a() { // from class: com.anythink.expressad.atsignalcommon.windvane.BaseAbsFeedBackForH5.1
                     @Override // com.anythink.expressad.foundation.f.a
                     public final void a() {
@@ -135,11 +135,11 @@ public abstract class BaseAbsFeedBackForH5 extends j {
                             }
                             str2 = jSONObject2.toString();
                         } catch (Throwable th) {
-                            String unused = BaseAbsFeedBackForH5.this.f18045a;
+                            String unused = BaseAbsFeedBackForH5.this.f18832a;
                             th.getMessage();
                             str2 = "";
                         }
-                        com.anythink.core.express.d.a.a((WebView) windVaneWebView, BaseAbsFeedBackForH5.f18040b, com.anythink.basead.exoplayer.f.f.n(2, str2));
+                        com.anythink.core.express.d.a.a((WebView) windVaneWebView, BaseAbsFeedBackForH5.f18827b, com.IceFishing.LiveIceFishing.k.o(2, str2));
                     }
 
                     @Override // com.anythink.expressad.foundation.f.a
@@ -152,11 +152,11 @@ public abstract class BaseAbsFeedBackForH5 extends j {
                             }
                             str2 = jSONObject2.toString();
                         } catch (Throwable th) {
-                            String unused = BaseAbsFeedBackForH5.this.f18045a;
+                            String unused = BaseAbsFeedBackForH5.this.f18832a;
                             th.getMessage();
                             str2 = "";
                         }
-                        com.anythink.core.express.d.a.a((WebView) windVaneWebView, BaseAbsFeedBackForH5.f18040b, com.anythink.basead.exoplayer.f.f.n(2, str2));
+                        com.anythink.core.express.d.a.a((WebView) windVaneWebView, BaseAbsFeedBackForH5.f18827b, com.IceFishing.LiveIceFishing.k.o(2, str2));
                     }
 
                     @Override // com.anythink.expressad.foundation.f.a
@@ -169,11 +169,11 @@ public abstract class BaseAbsFeedBackForH5 extends j {
                             }
                             str2 = jSONObject2.toString();
                         } catch (Throwable th) {
-                            String unused = BaseAbsFeedBackForH5.this.f18045a;
+                            String unused = BaseAbsFeedBackForH5.this.f18832a;
                             th.getMessage();
                             str2 = "";
                         }
-                        com.anythink.core.express.d.a.a((WebView) windVaneWebView, BaseAbsFeedBackForH5.f18040b, com.anythink.basead.exoplayer.f.f.n(2, str2));
+                        com.anythink.core.express.d.a.a((WebView) windVaneWebView, BaseAbsFeedBackForH5.f18827b, com.IceFishing.LiveIceFishing.k.o(2, str2));
                     }
                 };
                 com.anythink.expressad.foundation.f.a.a a9 = com.anythink.expressad.foundation.f.b.a().a(optString);
@@ -205,7 +205,7 @@ public abstract class BaseAbsFeedBackForH5 extends j {
             if (!TextUtils.isEmpty(str)) {
                 JSONObject jSONObject = new JSONObject(str);
                 jSONObject.optInt("deviceMotionUpdateInterval", 1);
-                com.anythink.expressad.atsignalcommon.d.a.a().a(obj, ((b) obj).f18062a, jSONObject.optString("oldCache", ""), jSONObject.optString(com.anythink.expressad.foundation.g.g.a.b.f19421O, ""));
+                com.anythink.expressad.atsignalcommon.d.a.a().a(obj, ((b) obj).f18849a, jSONObject.optString("oldCache", ""), jSONObject.optString(com.anythink.expressad.foundation.g.g.a.b.f20208O, ""));
             }
             callbackSuccess(obj);
         } catch (Throwable th) {
@@ -217,7 +217,7 @@ public abstract class BaseAbsFeedBackForH5 extends j {
     public void stopShake(Object obj, String str) {
         try {
             if (!TextUtils.isEmpty(str)) {
-                com.anythink.expressad.atsignalcommon.d.a.a().a(obj, ((b) obj).f18062a, new JSONObject(str).optString(com.anythink.expressad.foundation.g.g.a.b.f19421O, ""));
+                com.anythink.expressad.atsignalcommon.d.a.a().a(obj, ((b) obj).f18849a, new JSONObject(str).optString(com.anythink.expressad.foundation.g.g.a.b.f20208O, ""));
             }
             callbackSuccess(obj);
         } catch (Throwable th) {

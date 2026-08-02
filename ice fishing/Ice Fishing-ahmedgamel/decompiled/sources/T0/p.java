@@ -1,6 +1,6 @@
 package T0;
 
-import O2.B;
+import Q2.A;
 import android.content.Context;
 import android.os.Build;
 import com.google.android.gms.internal.ads.LD;
@@ -9,43 +9,43 @@ import com.google.android.gms.internal.ads.LD;
 public final class p implements Runnable {
 
     /* renamed from: z, reason: collision with root package name */
-    public static final String f3055z = J0.s.f("WorkForegroundRunnable");
+    public static final String f3138z = J0.r.f("WorkForegroundRunnable");
 
     /* renamed from: n, reason: collision with root package name */
-    public final U0.k f3056n = new U0.k();
+    public final U0.k f3139n = new U0.k();
 
     /* renamed from: u, reason: collision with root package name */
-    public final Context f3057u;
+    public final Context f3140u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final S0.p f3058v;
+    public final S0.p f3141v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final J0.r f3059w;
+    public final J0.q f3142w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final q f3060x;
+    public final q f3143x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final Z2.e f3061y;
+    public final b3.e f3144y;
 
-    public p(Context context, S0.p pVar, J0.r rVar, q qVar, Z2.e eVar) {
-        this.f3057u = context;
-        this.f3058v = pVar;
-        this.f3059w = rVar;
-        this.f3060x = qVar;
-        this.f3061y = eVar;
+    public p(Context context, S0.p pVar, J0.q qVar, q qVar2, b3.e eVar) {
+        this.f3140u = context;
+        this.f3141v = pVar;
+        this.f3142w = qVar;
+        this.f3143x = qVar2;
+        this.f3144y = eVar;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
-        if (!this.f3058v.f2823q || Build.VERSION.SDK_INT >= 31) {
-            this.f3056n.j(null);
+        if (!this.f3141v.f2952q || Build.VERSION.SDK_INT >= 31) {
+            this.f3139n.j(null);
             return;
         }
         U0.k kVar = new U0.k();
-        Z2.e eVar = this.f3061y;
-        ((B) eVar.f4172w).execute(new F.n(10, this, kVar));
-        kVar.a(new LD(this, kVar, 25, false), (B) eVar.f4172w);
+        b3.e eVar = this.f3144y;
+        ((A) eVar.f5559w).execute(new F.n(6, this, kVar));
+        kVar.a(new LD(this, kVar, 24, false), (A) eVar.f5559w);
     }
 }

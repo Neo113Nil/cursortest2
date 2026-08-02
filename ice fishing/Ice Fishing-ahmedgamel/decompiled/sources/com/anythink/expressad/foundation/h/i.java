@@ -9,7 +9,7 @@ import org.json.JSONObject;
 public final class i {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19627a = "JSONUtils";
+    private static final String f20414a = "JSONUtils";
 
     public static ArrayList<String> a(JSONArray jSONArray) {
         if (jSONArray == null) {
@@ -23,7 +23,7 @@ public final class i {
         return arrayList;
     }
 
-    public static String a(int i, int i6, int i9, int i10, int i11) {
+    public static String a(int i, int i4, int i6, int i9, int i10) {
         JSONObject jSONObject = new JSONObject();
         try {
             try {
@@ -32,10 +32,10 @@ public final class i {
                 JSONObject jSONObject2 = new JSONObject();
                 jSONObject2.put("rotateAngle", i);
                 JSONObject jSONObject3 = new JSONObject();
-                jSONObject3.put("left", i6);
-                jSONObject3.put("right", i9);
-                jSONObject3.put("top", i10);
-                jSONObject3.put("bottom", i11);
+                jSONObject3.put("left", i4);
+                jSONObject3.put("right", i6);
+                jSONObject3.put("top", i9);
+                jSONObject3.put("bottom", i10);
                 jSONObject2.put("cutoutInfo", jSONObject3);
                 jSONObject.put("data", jSONObject2);
             } catch (Throwable th) {

@@ -28,8 +28,8 @@ public class AudienceNetworkActivity extends Activity {
     }
 
     @Override // android.app.Activity
-    public void onActivityResult(int i, int i6, Intent intent) {
-        this.mAudienceNetworkActivityApi.onActivityResult(i, i6, intent);
+    public void onActivityResult(int i, int i4, Intent intent) {
+        this.mAudienceNetworkActivityApi.onActivityResult(i, i4, intent);
     }
 
     @Override // android.app.Activity

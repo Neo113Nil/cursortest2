@@ -5,23 +5,23 @@ import java.util.Arrays;
 import java.util.RandomAccess;
 import kotlin.Metadata;
 
-@Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u000b\b\u0002\u0018\u0000*\u0006\b\u0001\u0010\u0001 \u00012\b\u0012\u0004\u0012\u0002H\u00010\u00022\u00060\u0003j\u0002`\u0004B%\u0012\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00028\u00010\u0002\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\u0007¢\u0006\u0004\b\t\u0010\nJ\u0016\u0010\f\u001a\u00028\u00012\u0006\u0010\r\u001a\u00020\u0007H\u0096\u0002¢\u0006\u0002\u0010\u000eR\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00028\u00010\u0002X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0007X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u000f\u001a\u00020\u00078VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0012"}, d2 = {"Lkotlin/collections/AbstractList$SubList;", "E", "Lkotlin/collections/AbstractList;", "Ljava/util/RandomAccess;", "Lkotlin/collections/RandomAccess;", "list", "fromIndex", "", "toIndex", "<init>", "(Lkotlin/collections/AbstractList;II)V", "_size", "get", "index", "(I)Ljava/lang/Object;", "size", "getSize", "()I", "kotlin-stdlib"}, k = 1, mv = {2, 1, 0}, xi = j.f5816W)
+@Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u000b\b\u0002\u0018\u0000*\u0006\b\u0001\u0010\u0001 \u00012\b\u0012\u0004\u0012\u0002H\u00010\u00022\u00060\u0003j\u0002`\u0004B%\u0012\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00028\u00010\u0002\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\u0007¢\u0006\u0004\b\t\u0010\nJ\u0016\u0010\f\u001a\u00028\u00012\u0006\u0010\r\u001a\u00020\u0007H\u0096\u0002¢\u0006\u0002\u0010\u000eR\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00028\u00010\u0002X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0007X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u000f\u001a\u00020\u00078VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0012"}, d2 = {"Lkotlin/collections/AbstractList$SubList;", "E", "Lkotlin/collections/AbstractList;", "Ljava/util/RandomAccess;", "Lkotlin/collections/RandomAccess;", "list", "fromIndex", "", "toIndex", "<init>", "(Lkotlin/collections/AbstractList;II)V", "_size", "get", "index", "(I)Ljava/lang/Object;", "size", "getSize", "()I", "kotlin-stdlib"}, k = 1, mv = {2, 1, 0}, xi = j.f6602W)
 /* renamed from: com.facebook.ads.redexgen.X.16, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public final class AnonymousClass16<E> extends AbstractC05691r<E> implements RandomAccess {
+public final class AnonymousClass16<E> extends AbstractC05891r<E> implements RandomAccess {
     public static byte[] A03;
     public int A00;
     public final int A01;
-    public final AbstractC05691r<E> A02;
+    public final AbstractC05891r<E> A02;
 
     static {
         A01();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 12);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 12);
         }
         return new String(copyOfRange);
     }
@@ -31,23 +31,23 @@ public final class AnonymousClass16<E> extends AbstractC05691r<E> implements Ran
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    public AnonymousClass16(AbstractC05691r<? extends E> abstractC05691r, int i, int i6) {
-        C2414qY.A09(abstractC05691r, A00(0, 4, 40));
-        this.A02 = abstractC05691r;
+    public AnonymousClass16(AbstractC05891r<? extends E> abstractC05891r, int i, int i4) {
+        C2434qY.A09(abstractC05891r, A00(0, 4, 40));
+        this.A02 = abstractC05891r;
         this.A01 = i;
-        AbstractC05691r.A02.A05(this.A01, i6, this.A02.size());
-        this.A00 = i6 - this.A01;
+        AbstractC05891r.A02.A05(this.A01, i4, this.A02.size());
+        this.A00 = i4 - this.A01;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC0776Ai
+    @Override // com.instagram.common.viewpoint.core.AbstractC0796Ai
     /* renamed from: A0C, reason: from getter */
     public final int getA00() {
         return this.A00;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC05691r, java.util.List
+    @Override // com.instagram.common.viewpoint.core.AbstractC05891r, java.util.List
     public final E get(int index) {
-        AbstractC05691r.A02.A03(index, this.A00);
+        AbstractC05891r.A02.A03(index, this.A00);
         return this.A02.get(this.A01 + index);
     }
 }

@@ -50,14 +50,14 @@ public final class l {
         this.appContextProvider = appContextProvider;
     }
 
-    public static /* synthetic */ void createAndSwitchToNewUser$default(l lVar, boolean z3, p pVar, int i, Object obj) {
+    public static /* synthetic */ void createAndSwitchToNewUser$default(l lVar, boolean z6, p pVar, int i, Object obj) {
         if ((i & 1) != 0) {
-            z3 = false;
+            z6 = false;
         }
         if ((i & 2) != 0) {
             pVar = null;
         }
-        lVar.createAndSwitchToNewUser(z3, pVar);
+        lVar.createAndSwitchToNewUser(z6, pVar);
     }
 
     private final void createNewUser() {
@@ -69,25 +69,25 @@ public final class l {
     private final void migrateFromLegacyUser(String str) {
         l lVar;
         String str2;
-        boolean z3;
+        boolean z6;
         com.onesignal.debug.internal.logging.b.debug$default("initWithContext: creating user linked to subscription " + str, null, 2, null);
         String legacyUserSyncValues = J4.d.getLegacyUserSyncValues(this.preferencesService);
         if (legacyUserSyncValues != null) {
             lVar = this;
             str2 = str;
             lVar.createPushSubscriptionFromLegacySync(str2, new JSONObject(legacyUserSyncValues), this.configModel, this.subscriptionModelStore, ((x4.f) this.services.getService(x4.f.class)).getAppContext());
-            z3 = true;
+            z6 = true;
         } else {
             lVar = this;
             str2 = str;
-            z3 = false;
+            z6 = false;
         }
-        createAndSwitchToNewUser$default(this, z3, null, 2, null);
+        createAndSwitchToNewUser$default(this, z6, null, 2, null);
         H4.e.enqueue$default(lVar.operationRepo, new V5.e(lVar.configModel.getAppId(), ((U5.a) lVar.identityModelStore.getModel()).getOnesignalId(), ((U5.a) lVar.identityModelStore.getModel()).getExternalId(), str2), false, 2, null);
         J4.d.clearLegacyPlayerId(lVar.preferencesService);
     }
 
-    public final void createAndSwitchToNewUser(boolean z3, p pVar) {
+    public final void createAndSwitchToNewUser(boolean z6, p pVar) {
         Object obj;
         String createLocalId;
         String str;
@@ -148,7 +148,7 @@ public final class l {
         this.subscriptionModelStore.clear("NO_PROPOGATE");
         com.onesignal.common.modeling.e.replace$default(this.identityModelStore, aVar, null, 2, null);
         com.onesignal.common.modeling.e.replace$default(this.propertiesModelStore, aVar2, null, 2, null);
-        if (z3) {
+        if (z6) {
             this.subscriptionModelStore.replaceAll(arrayList, "NO_PROPOGATE");
         } else {
             com.onesignal.common.modeling.b.replaceAll$default(this.subscriptionModelStore, arrayList, null, 2, null);
@@ -168,7 +168,7 @@ public final class l {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final boolean createPushSubscriptionFromLegacySync(String legacyPlayerId, JSONObject legacyUserSyncJSON, com.onesignal.core.internal.config.b configModel, Z5.e subscriptionModelStore, Context appContext) {
-        boolean z3;
+        boolean z6;
         String safeString;
         Z5.f fVar;
         String str;
@@ -186,8 +186,8 @@ public final class l {
         if (safeInt == null || safeInt.intValue() != value) {
             int value2 = Z5.f.UNSUBSCRIBE.getValue();
             if (safeInt == null || safeInt.intValue() != value2) {
-                z3 = true;
-                dVar.setOptedIn(z3);
+                z6 = true;
+                dVar.setOptedIn(z6);
                 safeString = com.onesignal.common.e.safeString(legacyUserSyncJSON, "identifier");
                 if (safeString == null) {
                     safeString = "";
@@ -216,8 +216,8 @@ public final class l {
                 return true;
             }
         }
-        z3 = false;
-        dVar.setOptedIn(z3);
+        z6 = false;
+        dVar.setOptedIn(z6);
         safeString = com.onesignal.common.e.safeString(legacyUserSyncJSON, "identifier");
         if (safeString == null) {
         }
@@ -242,8 +242,8 @@ public final class l {
         return true;
     }
 
-    public final void initUser(boolean z3) {
-        if (!z3 && U5.c.hasOneSignalId(this.identityModelStore)) {
+    public final void initUser(boolean z6) {
+        if (!z6 && U5.c.hasOneSignalId(this.identityModelStore)) {
             com.onesignal.debug.internal.logging.b.debug$default("initWithContext: using cached user " + ((U5.a) this.identityModelStore.getModel()).getOnesignalId(), null, 2, null);
         } else {
             String legacyPlayerId = J4.d.getLegacyPlayerId(this.preferencesService);

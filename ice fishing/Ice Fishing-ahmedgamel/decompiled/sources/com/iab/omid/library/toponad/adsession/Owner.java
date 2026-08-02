@@ -4,7 +4,7 @@ import com.anythink.expressad.foundation.g.a.f;
 
 /* loaded from: classes2.dex */
 public enum Owner {
-    NATIVE(f.f19119a),
+    NATIVE(f.f19906a),
     JAVASCRIPT("javascript"),
     NONE("none");
 

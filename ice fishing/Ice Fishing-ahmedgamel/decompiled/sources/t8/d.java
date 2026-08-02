@@ -9,12 +9,12 @@ import java.util.logging.LogRecord;
 public final class d extends Handler {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final d f40928a = new d();
+    public static final d f40891a = new d();
 
     @Override // java.util.logging.Handler
     public final void publish(LogRecord record) {
         kotlin.jvm.internal.h.e(record, "record");
-        CopyOnWriteArraySet copyOnWriteArraySet = c.f40926a;
+        CopyOnWriteArraySet copyOnWriteArraySet = c.f40889a;
         String loggerName = record.getLoggerName();
         kotlin.jvm.internal.h.d(loggerName, "getLoggerName(...)");
         int intValue = record.getLevel().intValue();

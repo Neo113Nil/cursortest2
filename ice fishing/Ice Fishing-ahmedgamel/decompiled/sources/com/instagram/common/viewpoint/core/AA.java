@@ -14,7 +14,7 @@ import java.util.Iterator;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class AA extends AbstractC2405qP implements InterfaceC2313os {
+public final class AA extends AbstractC2425qP implements InterfaceC2333os {
     public static byte[] A0N;
     public static String[] A0O = {"ryR4HSm2zR8tip5OkgYwdb0JWy9e3v2W", "Fm5MoQAoRuRRmRXPK4I4CJ8bYaju2JW1", "syIAGKVT8Ewa7Rni6nktnCNdH4Ja85Gc", "ScHbfbbxkU", "HZJXjhizoNO31MnMnm7FxQnRU8I8lePN", "YCsl9os6nHqs6yB8LR1hlQvfR5oCt3rk", "Ml6mHBX1GsWDWNWH2EtCrt2HpilhtHKz", "59SI8zfcXXU2xe69nRlPKARsr0343GFe"};
     public float A00;
@@ -23,50 +23,55 @@ public final class AA extends AbstractC2405qP implements InterfaceC2313os {
     public Surface A03;
     public SurfaceHolder A04;
     public TextureView A05;
-    public C2406qQ A06;
-    public C2400qI A07;
-    public C2400qI A08;
+    public C2426qQ A06;
+    public C2420qI A07;
+    public C2420qI A08;
     public C6I A09;
     public C6I A0A;
-    public InterfaceC0838Cx A0B;
+    public InterfaceC0858Cx A0B;
     public boolean A0C;
     public final Handler A0D;
     public final AC A0E;
-    public final SurfaceHolderCallbackC2307om A0F;
-    public final InterfaceC2304oj A0G;
-    public final CopyOnWriteArraySet<InterfaceC07448p> A0H;
+    public final SurfaceHolderCallbackC2327om A0F;
+    public final InterfaceC2324oj A0G;
+    public final CopyOnWriteArraySet<InterfaceC07648p> A0H;
     public final CopyOnWriteArraySet<C3U> A0I;
-    public final CopyOnWriteArraySet<InterfaceC0797Bf> A0J;
+    public final CopyOnWriteArraySet<InterfaceC0817Bf> A0J;
     public final CopyOnWriteArraySet<GQ> A0K;
-    public final CopyOnWriteArraySet<InterfaceC2306ol> A0L;
-    public final InterfaceC2309oo[] A0M;
+    public final CopyOnWriteArraySet<InterfaceC2326ol> A0L;
+    public final InterfaceC2329oo[] A0M;
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException
+    java.lang.ArrayIndexOutOfBoundsException: Index 22 out of bounds for length 20
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:135)
+    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
+    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    public AA(Context context, InterfaceC07237t interfaceC07237t, AbstractC0889Ew abstractC0889Ew, AnonymousClass74 anonymousClass74, F6 f62, A6 a62, InterfaceC2051kO<AnonymousClass45, InterfaceC2304oj> interfaceC2051kO, AnonymousClass45 anonymousClass45) {
-        this.A0F = new SurfaceHolderCallbackC2307om(this);
+    public AA(Context context, InterfaceC07437t interfaceC07437t, AbstractC0909Ew abstractC0909Ew, AnonymousClass74 anonymousClass74, F6 f62, A6 a62, InterfaceC2071kO<AnonymousClass45, InterfaceC2324oj> interfaceC2071kO, AnonymousClass45 anonymousClass45) {
+        this.A0F = new SurfaceHolderCallbackC2327om(this);
         this.A0L = new CopyOnWriteArraySet<>();
         this.A0J = new CopyOnWriteArraySet<>();
         this.A0K = new CopyOnWriteArraySet<>();
         this.A0H = new CopyOnWriteArraySet<>();
         Looper myLooper = Looper.myLooper() != null ? Looper.myLooper() : Looper.getMainLooper();
         this.A0D = new Handler(myLooper);
-        this.A0M = interfaceC07237t.A5Y(this.A0D, this.A0F, this.A0F, this.A0F, this.A0F, a62);
+        this.A0M = interfaceC07437t.A5Y(this.A0D, this.A0F, this.A0F, this.A0F, this.A0F, a62);
         this.A00 = 1.0f;
         this.A01 = 0;
-        this.A06 = C2406qQ.A07;
+        this.A06 = C2426qQ.A07;
         this.A02 = 1;
-        this.A0E = A06(this.A0M, abstractC0889Ew, anonymousClass74, f62, anonymousClass45);
-        this.A0G = interfaceC2051kO.A4B(anonymousClass45);
+        this.A0E = A06(this.A0M, abstractC0909Ew, anonymousClass74, f62, anonymousClass45);
+        this.A0G = interfaceC2071kO.A4B(anonymousClass45);
         this.A0G.AJf(this.A0E, myLooper);
         this.A0I = new CopyOnWriteArraySet<>();
     }
 
-    public static String A07(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0N, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 61);
+    public static String A07(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0N, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 61);
         }
         return new String(copyOfRange);
     }
@@ -80,22 +85,22 @@ public final class AA extends AbstractC2405qP implements InterfaceC2313os {
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.kO != com.google.common.base.Function<com.facebook.ads.androidx.media3.common.util.Clock, com.facebook.ads.androidx.media3.exoplayer.analytics.AnalyticsCollector> */
-    public AA(Context context, InterfaceC07237t interfaceC07237t, AbstractC0889Ew abstractC0889Ew, AnonymousClass74 anonymousClass74, F6 f62, A6 a62, InterfaceC2051kO<AnonymousClass45, InterfaceC2304oj> interfaceC2051kO) {
-        this(context, interfaceC07237t, abstractC0889Ew, anonymousClass74, f62, a62, interfaceC2051kO, AnonymousClass45.A00);
+    public AA(Context context, InterfaceC07437t interfaceC07437t, AbstractC0909Ew abstractC0909Ew, AnonymousClass74 anonymousClass74, F6 f62, A6 a62, InterfaceC2071kO<AnonymousClass45, InterfaceC2324oj> interfaceC2071kO) {
+        this(context, interfaceC07437t, abstractC0909Ew, anonymousClass74, f62, a62, interfaceC2071kO, AnonymousClass45.A00);
     }
 
     @Deprecated
-    public AA(InterfaceC07237t interfaceC07237t, AbstractC0889Ew abstractC0889Ew, AnonymousClass74 anonymousClass74, F6 f62, A6 a62) {
-        this(null, interfaceC07237t, abstractC0889Ew, anonymousClass74, f62, a62, new InterfaceC2051kO() { // from class: com.facebook.ads.redexgen.X.or
-            @Override // com.instagram.common.viewpoint.core.InterfaceC2051kO
+    public AA(InterfaceC07437t interfaceC07437t, AbstractC0909Ew abstractC0909Ew, AnonymousClass74 anonymousClass74, F6 f62, A6 a62) {
+        this(null, interfaceC07437t, abstractC0909Ew, anonymousClass74, f62, a62, new InterfaceC2071kO() { // from class: com.facebook.ads.redexgen.X.or
+            @Override // com.instagram.common.viewpoint.core.InterfaceC2071kO
             public final Object A4B(Object obj) {
                 return new A8((AnonymousClass45) obj);
             }
         });
     }
 
-    private final AC A06(InterfaceC2309oo[] interfaceC2309ooArr, AbstractC0889Ew abstractC0889Ew, AnonymousClass74 anonymousClass74, F6 f62, AnonymousClass45 anonymousClass45) {
-        return new AC(interfaceC2309ooArr, abstractC0889Ew, anonymousClass74, f62, anonymousClass45);
+    private final AC A06(InterfaceC2329oo[] interfaceC2329ooArr, AbstractC0909Ew abstractC0909Ew, AnonymousClass74 anonymousClass74, F6 f62, AnonymousClass45 anonymousClass45) {
+        return new AC(interfaceC2329ooArr, abstractC0909Ew, anonymousClass74, f62, anonymousClass45);
     }
 
     private void A0D() {
@@ -121,18 +126,18 @@ public final class AA extends AbstractC2405qP implements InterfaceC2313os {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void A0F(Surface surface, boolean z3) {
+    public void A0F(Surface surface, boolean z6) {
         ArrayList arrayList = new ArrayList();
-        for (InterfaceC2309oo interfaceC2309oo : this.A0M) {
-            if (interfaceC2309oo.A9N() == 2) {
-                arrayList.add(this.A0E.A0L(interfaceC2309oo).A07(1).A08(surface).A06());
+        for (InterfaceC2329oo interfaceC2329oo : this.A0M) {
+            if (interfaceC2329oo.A9N() == 2) {
+                arrayList.add(this.A0E.A0L(interfaceC2329oo).A07(1).A08(surface).A06());
             }
         }
         if (this.A03 != null && this.A03 != surface) {
             try {
                 Iterator it = arrayList.iterator();
                 while (it.hasNext()) {
-                    ((C07077d) it.next()).A0C();
+                    ((C07277d) it.next()).A0C();
                 }
             } catch (InterruptedException unused) {
                 Thread.currentThread().interrupt();
@@ -142,10 +147,10 @@ public final class AA extends AbstractC2405qP implements InterfaceC2313os {
             }
         }
         this.A03 = surface;
-        this.A0C = z3;
+        this.A0C = z6;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC2405qP
+    @Override // com.instagram.common.viewpoint.core.AbstractC2425qP
     public final void A0H(int i, long j6) {
         this.A0G.ACe();
         this.A0E.A0H(i, j6);
@@ -155,11 +160,11 @@ public final class AA extends AbstractC2405qP implements InterfaceC2313os {
         return this.A01;
     }
 
-    public final C2400qI A0J() {
+    public final C2420qI A0J() {
         return this.A07;
     }
 
-    public final C2400qI A0K() {
+    public final C2420qI A0K() {
         return this.A08;
     }
 
@@ -178,15 +183,15 @@ public final class AA extends AbstractC2405qP implements InterfaceC2313os {
         }
     }
 
-    public final void A0M(float f3) {
-        float A00 = C5C.A00(f3, 0.0f, 1.0f);
+    public final void A0M(float f2) {
+        float A00 = C5C.A00(f2, 0.0f, 1.0f);
         if (this.A00 == A00) {
             return;
         }
         this.A00 = A00;
-        for (InterfaceC2309oo interfaceC2309oo : this.A0M) {
-            if (interfaceC2309oo.A9N() == 1) {
-                this.A0E.A0L(interfaceC2309oo).A07(2).A08(Float.valueOf(A00)).A06();
+        for (InterfaceC2329oo interfaceC2329oo : this.A0M) {
+            if (interfaceC2329oo.A9N() == 1) {
+                this.A0E.A0L(interfaceC2329oo).A07(2).A08(Float.valueOf(A00)).A06();
             }
         }
     }
@@ -201,98 +206,98 @@ public final class AA extends AbstractC2405qP implements InterfaceC2313os {
         this.A0I.add(c3u);
     }
 
-    public final void A0P(InterfaceC2306ol interfaceC2306ol) {
-        this.A0L.add(interfaceC2306ol);
+    public final void A0P(InterfaceC2326ol interfaceC2326ol) {
+        this.A0L.add(interfaceC2326ol);
     }
 
-    public final void A0Q(InterfaceC0838Cx interfaceC0838Cx) {
-        A0R(interfaceC0838Cx, true, true);
+    public final void A0Q(InterfaceC0858Cx interfaceC0858Cx) {
+        A0R(interfaceC0858Cx, true, true);
     }
 
-    public final void A0R(InterfaceC0838Cx interfaceC0838Cx, boolean z3, boolean z6) {
+    public final void A0R(InterfaceC0858Cx interfaceC0858Cx, boolean z6, boolean z9) {
         if (this.A0B != null) {
             this.A0B.AIS(this.A0G);
         }
-        this.A0B = interfaceC0838Cx;
-        interfaceC0838Cx.A3z(this.A0D, this.A0G);
-        this.A0E.A0P(interfaceC0838Cx, z3, z6);
+        this.A0B = interfaceC0858Cx;
+        interfaceC0858Cx.A3z(this.A0D, this.A0G);
+        this.A0E.A0P(interfaceC0858Cx, z6, z9);
     }
 
-    public final void A0S(boolean z3) {
-        this.A0E.A0Q(z3);
+    public final void A0S(boolean z6) {
+        this.A0E.A0Q(z6);
     }
 
     public final boolean A0T() {
         return this.A0E.A0R();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC06033b
+    @Override // com.instagram.common.viewpoint.core.InterfaceC06233b
     public final long A77() {
         return this.A0E.A77();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC06033b
+    @Override // com.instagram.common.viewpoint.core.InterfaceC06233b
     public final long A7T() {
         return this.A0E.A7T();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC06033b
+    @Override // com.instagram.common.viewpoint.core.InterfaceC06233b
     public final int A7Y() {
         return this.A0E.A7Y();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC06033b
+    @Override // com.instagram.common.viewpoint.core.InterfaceC06233b
     public final int A7Z() {
         return this.A0E.A7Z();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC06033b
+    @Override // com.instagram.common.viewpoint.core.InterfaceC06233b
     public final int A7b() {
         return this.A0E.A7b();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC06033b
+    @Override // com.instagram.common.viewpoint.core.InterfaceC06233b
     public final int A7c() {
         return this.A0E.A7c();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC06033b
+    @Override // com.instagram.common.viewpoint.core.InterfaceC06233b
     public final long A7e() {
         return this.A0E.A7e();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC06033b
+    @Override // com.instagram.common.viewpoint.core.InterfaceC06233b
     public final Timeline A7g() {
         return this.A0E.A7g();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC06033b
+    @Override // com.instagram.common.viewpoint.core.InterfaceC06233b
     public final int A7h() {
         return this.A0E.A7h();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC06033b
+    @Override // com.instagram.common.viewpoint.core.InterfaceC06233b
     public final long A7s() {
         return this.A0E.A7s();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC06033b
+    @Override // com.instagram.common.viewpoint.core.InterfaceC06233b
     public final long A9J() {
         return this.A0E.A9J();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC06033b
+    @Override // com.instagram.common.viewpoint.core.InterfaceC06233b
     public final boolean AAd() {
         return this.A0E.AAd();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC06033b
-    public final void AKG(boolean z3) {
-        this.A0E.AKG(z3);
+    @Override // com.instagram.common.viewpoint.core.InterfaceC06233b
+    public final void AKG(boolean z6) {
+        this.A0E.AKG(z6);
         if (this.A0B != null) {
             this.A0B.AIS(this.A0G);
             this.A0B = null;
-            if (z3) {
+            if (z6) {
                 this.A0B = null;
             }
         }

@@ -17,10 +17,10 @@ public final class VL {
     public static final Map<String, Integer> A02;
     public static final AtomicInteger A03;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 57);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 57);
         }
         return new String(copyOfRange);
     }
@@ -37,7 +37,7 @@ public final class VL {
     	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    public static void A06(T8 t82, InterfaceC1791fv interfaceC1791fv, Map<String, ?> map) throws JSONException {
+    public static void A06(T8 t82, InterfaceC1811fv interfaceC1811fv, Map<String, ?> map) throws JSONException {
         HashMap hashMap = new HashMap();
         hashMap.put(A01(93, 7, 67), A01(13, 1, 40));
         A0A(t82, hashMap);
@@ -56,15 +56,15 @@ public final class VL {
         hashMap2.put(A01(78, 15, 3), jSONObject.toString());
         A0A(t82, hashMap2);
         U7 A09 = t82.A09();
-        JSONObject A05 = C1254Tf.A05(new C1256Th(A09.A01(), A09.A02(), hashMap2));
+        JSONObject A05 = C1274Tf.A05(new C1276Th(A09.A01(), A09.A02(), hashMap2));
         JSONArray jSONArray = new JSONArray();
         jSONArray.put(A05);
         JSONObject jSONObject2 = new JSONObject();
         jSONObject2.put(A01(147, 4, 12), new JSONObject(hashMap));
         jSONObject2.put(A01(151, 6, 3), jSONArray);
-        C1805g9 c1805g9 = new C1805g9();
-        c1805g9.put(A01(171, 7, 40), jSONObject2.toString());
-        interfaceC1791fv.AGy(t82.A05().A86(), c1805g9.A08(), new WJ(t82));
+        C1825g9 c1825g9 = new C1825g9();
+        c1825g9.put(A01(171, 7, 40), jSONObject2.toString());
+        interfaceC1811fv.AGy(t82.A05().A86(), c1825g9.A08(), new WJ(t82));
     }
 
     /* JADX WARN: Failed to parse debug info
@@ -132,17 +132,17 @@ public final class VL {
         YG.A06.execute(new WO(t82, str));
     }
 
-    public static boolean A0B(double d2, int i) {
-        return i <= 0 || d2 >= 1.0d / ((double) i);
+    public static boolean A0B(double d9, int i) {
+        return i <= 0 || d9 >= 1.0d / ((double) i);
     }
 
     public static boolean A0C(T8 t82) {
         if (t82.A05().AAO()) {
             return false;
         }
-        if (!AbstractC1292Ur.A0U(t82)) {
+        if (!AbstractC1312Ur.A0U(t82)) {
             return true;
         }
-        return A0B(t82.A09().A00(), AbstractC1292Ur.A0C(t82));
+        return A0B(t82.A09().A00(), AbstractC1312Ur.A0C(t82));
     }
 }

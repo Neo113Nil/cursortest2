@@ -1,8 +1,7 @@
 package com.anythink.core.b.d;
 
-import D.y;
 import android.text.TextUtils;
-import com.anythink.basead.exoplayer.f.f;
+import com.IceFishing.LiveIceFishing.k;
 import com.anythink.core.api.ATAdConst;
 import com.anythink.core.api.ATBiddingNotice;
 import com.anythink.core.api.ErrorCode;
@@ -13,42 +12,41 @@ import com.anythink.core.common.h.aw;
 import com.anythink.core.common.h.bv;
 import com.anythink.core.common.h.cd;
 import com.anythink.core.common.v.ah;
-import com.anythink.core.common.v.k;
 import com.anythink.core.common.v.p;
 import com.anythink.core.common.v.q;
+import com.google.android.gms.internal.ads.Wv;
 import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import u1.h;
 
 /* loaded from: classes.dex */
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    static final String f11739a = "a";
+    static final String f12525a = "a";
 
-    private static int a(boolean z3, int i, int i6) {
-        return i == i6 ? !z3 ? 1 : 4 : (i == 67 || i == 35) ? 3 : 2;
+    private static int a(boolean z6, int i, int i4) {
+        return i == i4 ? !z6 ? 1 : 4 : (i == 67 || i == 35) ? 3 : 2;
     }
 
-    private static int b(boolean z3, int i, int i6) {
-        return i == i6 ? !z3 ? 1 : 2 : (i == 67 || i == 35) ? 3 : 4;
+    private static int b(boolean z6, int i, int i4) {
+        return i == i4 ? !z6 ? 1 : 2 : (i == 67 || i == 35) ? 3 : 4;
     }
 
-    private static void a(Map<String, Object> map, int i, int i6, bv bvVar) {
-        com.anythink.core.d.b g4 = y.g(y.h());
-        if (g4 == null || g4.c() == null || !g4.c().contains(Integer.valueOf(i)) || i6 == 8) {
+    private static void a(Map<String, Object> map, int i, int i4, bv bvVar) {
+        com.anythink.core.d.b k9 = k.k(k.l());
+        if (k9 == null || k9.c() == null || !k9.c().contains(Integer.valueOf(i)) || i4 == 8) {
             return;
         }
-        map.put(ATBiddingNotice.ADN_EXTRA_NW_FIRM_ID, Integer.valueOf(i6));
+        map.put(ATBiddingNotice.ADN_EXTRA_NW_FIRM_ID, Integer.valueOf(i4));
         if (bvVar != null) {
             map.put(ATBiddingNotice.ADN_EXTRA_NATIVE_MATERIAL_INFO, bvVar.aX());
         }
     }
 
-    private static String b(ad adVar, double d2) {
-        String a9 = a(adVar, d2);
+    private static String b(ad adVar, double d9) {
+        String a9 = a(adVar, d9);
         try {
             return String.valueOf((int) Math.round(Double.parseDouble(a9)));
         } catch (Throwable unused) {
@@ -58,44 +56,44 @@ public class a {
 
     private static String b(int i) {
         if (i == 8) {
-            return k.b("LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUZ3d0RRWUpLb1pJaHZjTkFRRUJCUUFEU3dBd1NBSkJBTGpNVCt3QTZEdVViaGZvYTZ5MDQ4czVNWFcrOEY2bgpxNkxzb2FaMWNDdVJ0MDhLU0ZoZ3kwYmp3dWpLVkxLeW1nUVJRUWFGUkhFamF2aTNXd28vUG9jQ0F3RUFBUT09Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==");
+            return com.anythink.core.common.v.k.b("LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUZ3d0RRWUpLb1pJaHZjTkFRRUJCUUFEU3dBd1NBSkJBTGpNVCt3QTZEdVViaGZvYTZ5MDQ4czVNWFcrOEY2bgpxNkxzb2FaMWNDdVJ0MDhLU0ZoZ3kwYmp3dWpLVkxLeW1nUVJRUWFGUkhFamF2aTNXd28vUG9jQ0F3RUFBUT09Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==");
         }
         return "";
     }
 
-    public static String a(ad adVar, cd cdVar, double d2, double d9) {
+    public static String a(ad adVar, cd cdVar, double d9, double d10) {
         String str = adVar.winNoticeUrl;
         if (TextUtils.isEmpty(str)) {
             return null;
         }
-        int i = adVar.f13422d;
-        String replace = str.replace(c.f11755f, a(adVar, d9));
+        int i = adVar.f14208d;
+        String replace = str.replace(c.f12541f, a(adVar, d10));
         if (i == 28 || i == 8 || i == 81 || i == 11) {
-            return replace.replace(c.f11751b, a(adVar, d2));
+            return replace.replace(c.f12537b, a(adVar, d9));
         }
         if (i == 66) {
-            return a(replace, a(adVar, cdVar, d9));
+            return a(replace, a(adVar, cdVar, d10));
         }
-        return i == 39 ? replace.replace(c.f11757h, String.valueOf(d9)).replace(c.f11756g, a(adVar.f13420b)) : replace;
+        return i == 39 ? replace.replace(c.f12543h, String.valueOf(d10)).replace(c.f12542g, a(adVar.f14206b)) : replace;
     }
 
-    public static String a(ad adVar, aw awVar, int i, boolean z3, double d2, double d9, String str, Map<String, Object> map) {
+    public static String a(ad adVar, aw awVar, int i, boolean z6, double d9, double d10, String str, Map<String, Object> map) {
         String replace;
         double max;
         bv A9;
-        int i6 = adVar.f13422d;
+        int i4 = adVar.f14208d;
         String str2 = adVar.loseNoticeUrl;
         if (TextUtils.isEmpty(str2)) {
             if (awVar != null) {
                 String C8 = awVar.C();
-                String i9 = awVar.i();
-                if (i6 == 8) {
+                String i6 = awVar.i();
+                if (i4 == 8) {
                     StringBuilder sb = new StringBuilder();
                     sb.append(ah.a("kwwsv=22zlq1jgw1tt1frp2zlqbqrwlfh1ifj"));
                     sb.append("?viewid=&position_id=");
                     sb.append(C8);
                     sb.append("&loss=${AUCTION_LOSS}&win_price=${AUCTION_PRICE}&server_bidding_type=1&win_seat=${AUCTION_SEAT_ID}&mrqid=");
-                    str2 = h.g(sb, i9, "&meSrc=299");
+                    str2 = Wv.i(sb, i6, "&meSrc=299");
                 } else {
                     str2 = "";
                 }
@@ -104,48 +102,48 @@ public class a {
                 return null;
             }
         }
-        String replace2 = str2.replace(c.f11751b, a(adVar, d2)).replace(c.f11752c, b(adVar, d2)).replace(c.f11753d, str);
-        if (i6 == 8) {
-            replace = replace2.replace(c.f11754e, String.valueOf(i == i6 ? !z3 ? 1 : 4 : (i == 67 || i == 35) ? 3 : 2));
-        } else if (i6 == 29) {
-            replace = replace2.replace(c.f11754e, i6 == i ? "1" : "10001");
+        String replace2 = str2.replace(c.f12537b, a(adVar, d9)).replace(c.f12538c, b(adVar, d9)).replace(c.f12539d, str);
+        if (i4 == 8) {
+            replace = replace2.replace(c.f12540e, String.valueOf(i == i4 ? !z6 ? 1 : 4 : (i == 67 || i == 35) ? 3 : 2));
+        } else if (i4 == 29) {
+            replace = replace2.replace(c.f12540e, i4 == i ? "1" : "10001");
         } else {
-            replace = replace2.replace(c.f11754e, "");
+            replace = replace2.replace(c.f12540e, "");
         }
-        if (i6 == 6) {
-            replace = replace.replace(c.f11756g, ATAdConst.CURRENCY.USD.toString());
-        } else if (i6 == 39) {
-            replace = replace.replace(c.f11753d, str).replace(c.f11756g, a(adVar.f13420b));
+        if (i4 == 6) {
+            replace = replace.replace(c.f12542g, ATAdConst.CURRENCY.USD.toString());
+        } else if (i4 == 39) {
+            replace = replace.replace(c.f12539d, str).replace(c.f12542g, a(adVar.f14206b));
         }
-        if (i6 == 66) {
-            replace = a(replace, a(adVar, awVar, d2, str));
+        if (i4 == 66) {
+            replace = a(replace, a(adVar, awVar, d9, str));
         }
-        if (i6 == 28 && map != null) {
-            replace = a(replace, map, adVar, d2);
+        if (i4 == 28 && map != null) {
+            replace = a(replace, map, adVar, d9);
         }
-        if (i6 != 65) {
+        if (i4 != 65) {
             return replace;
         }
         bv a9 = c.a(adVar);
         if (a9 != null) {
-            max = Math.max(d9, p.a(a9));
+            max = Math.max(d10, p.a(a9));
         } else {
-            max = (awVar == null || (A9 = awVar.A()) == null || A9.ar() <= 0.0d) ? d9 : Math.max(d9, A9.ar());
+            max = (awVar == null || (A9 = awVar.A()) == null || A9.ar() <= 0.0d) ? d10 : Math.max(d10, A9.ar());
         }
         if (max == 0.0d) {
             return replace;
         }
-        double d10 = 0.01d + max;
-        if (d10 < d2) {
-            max = d10;
+        double d11 = 0.01d + max;
+        if (d11 < d9) {
+            max = d11;
         }
-        return replace.replace(c.f11755f, String.valueOf(max));
+        return replace.replace(c.f12541f, String.valueOf(max));
     }
 
-    private static String a(String str, Map<String, Object> map, ad adVar, double d2) {
+    private static String a(String str, Map<String, Object> map, ad adVar, double d9) {
         try {
-            String a9 = a(adVar, d2);
-            String replace = str.replace(c.f11767s, a9).replace(c.f11768t, a9);
+            String a9 = a(adVar, d9);
+            String replace = str.replace(c.f12553s, a9).replace(c.f12554t, a9);
             int a10 = q.a(map, ATBiddingNotice.ADN_ID, -1);
             int i = 1;
             if (a10 != 1 && a10 != 2) {
@@ -154,7 +152,7 @@ public class a {
                     i = 2;
                 }
             }
-            String replace2 = replace.replace(c.f11760l, String.valueOf(i));
+            String replace2 = replace.replace(c.f12546l, String.valueOf(i));
             String str2 = "other";
             int a11 = q.a(map, ATBiddingNotice.ADN_EXTRA_NW_FIRM_ID, 0);
             if (a11 > 0) {
@@ -164,74 +162,74 @@ public class a {
                     str2 = "baidu";
                 }
             }
-            String replace3 = replace2.replace(c.f11761m, str2);
+            String replace3 = replace2.replace(c.f12547m, str2);
             Object obj = map.get(ATBiddingNotice.ADN_EXTRA_NATIVE_MATERIAL_INFO);
             if (obj != null) {
                 try {
-                    String a12 = q.a((Map<String, Object>) obj, j.w.f12604A, "");
+                    String a12 = q.a((Map<String, Object>) obj, j.w.f13390A, "");
                     if (!TextUtils.isEmpty(a12)) {
-                        replace3 = replace3.replace(c.f11763o, a12);
+                        replace3 = replace3.replace(c.f12549o, a12);
                     }
-                    String a13 = q.a((Map<String, Object>) obj, j.w.f12605B, "");
+                    String a13 = q.a((Map<String, Object>) obj, j.w.f13391B, "");
                     if (!TextUtils.isEmpty(a13)) {
-                        replace3 = replace3.replace(c.f11762n, a13);
+                        replace3 = replace3.replace(c.f12548n, a13);
                     }
                 } catch (Throwable unused) {
                 }
             }
             String a14 = q.a(map, ATBiddingNotice.ADN_REQUEST_ID, "");
             if (!TextUtils.isEmpty(a14)) {
-                replace3 = replace3.replace(c.f11764p, a14);
+                replace3 = replace3.replace(c.f12550p, a14);
             }
-            return replace3.replace(c.f11765q, String.valueOf(q.a(map, ATBiddingNotice.ADN_REQUEST_IS_SHOW, 2))).replace(c.f11766r, String.valueOf(q.a(map, ATBiddingNotice.ADN_REQUEST_IS_CLICK, 2)));
+            return replace3.replace(c.f12551q, String.valueOf(q.a(map, ATBiddingNotice.ADN_REQUEST_IS_SHOW, 2))).replace(c.f12552r, String.valueOf(q.a(map, ATBiddingNotice.ADN_REQUEST_IS_CLICK, 2)));
         } catch (Exception unused2) {
             return str;
         }
     }
 
-    public static String a(ad adVar, double d2) {
-        int i = adVar.f13422d;
+    public static String a(ad adVar, double d9) {
+        int i = adVar.f14208d;
         if (i == 8 || i == 28) {
-            return a(i, String.valueOf((int) Math.round(d2)));
+            return a(i, String.valueOf((int) Math.round(d9)));
         }
         if (i == 66 && adVar.j() > 0.0d) {
-            return String.valueOf(d2 / adVar.j());
+            return String.valueOf(d9 / adVar.j());
         }
-        return String.valueOf(d2);
+        return String.valueOf(d9);
     }
 
-    public static String a(boolean z3, int i, int i6, boolean z6) {
+    public static String a(boolean z6, int i, int i4, boolean z9) {
         if (i == 3) {
             return "-1";
         }
-        if (i6 == 8) {
+        if (i4 == 8) {
             if (i != 1) {
                 return "1";
             }
             return "5";
         }
-        if (i6 == 29) {
+        if (i4 == 29) {
             if (i != 1) {
                 return "2";
             }
             return ErrorCode.adapterNotExistError;
         }
-        if (i6 == 34) {
+        if (i4 == 34) {
             if (i == 2) {
                 return "102";
             }
             return ErrorCode.networkError;
         }
-        if (i6 == 59) {
+        if (i4 == 59) {
             return "102";
         }
-        if (i6 == 39) {
+        if (i4 == 39) {
             if (i != 6) {
                 return "102";
             }
             return "103";
         }
-        if (z6) {
+        if (z9) {
             return "103";
         }
         if (i == 1) {
@@ -240,7 +238,7 @@ public class a {
         if (i == 5) {
             return "1";
         }
-        if (z3) {
+        if (z6) {
             return "102";
         }
         return "103";
@@ -253,7 +251,7 @@ public class a {
         return ErrorCode.networkError;
     }
 
-    public static String a(boolean z3, int i) {
+    public static String a(boolean z6, int i) {
         if (i == 3) {
             return "-1";
         }
@@ -266,20 +264,20 @@ public class a {
         if (i == 6) {
             return ATAdConst.BIDDING_TYPE.BIDDING_LOSS_WITH_LOW_FLOOR;
         }
-        return z3 ? "102" : "103";
+        return z6 ? "102" : "103";
     }
 
-    public static Map<String, Object> a(boolean z3, int i, int i6, bv bvVar, ad adVar) {
-        int i9 = 2;
+    public static Map<String, Object> a(boolean z6, int i, int i4, bv bvVar, ad adVar) {
+        int i6 = 2;
         HashMap hashMap = new HashMap(2);
-        if (i != i6) {
-            i9 = (i == 67 || i == 35) ? 3 : 4;
-        } else if (!z3) {
-            i9 = 1;
+        if (i != i4) {
+            i6 = (i == 67 || i == 35) ? 3 : 4;
+        } else if (!z6) {
+            i6 = 1;
         }
-        hashMap.put(ATBiddingNotice.ADN_ID, Integer.valueOf(i9));
+        hashMap.put(ATBiddingNotice.ADN_ID, Integer.valueOf(i6));
         a(hashMap, adVar);
-        a(hashMap, i6, i, bvVar);
+        a(hashMap, i4, i, bvVar);
         return hashMap;
     }
 
@@ -291,7 +289,7 @@ public class a {
                     return;
                 }
                 map.put(ATBiddingNotice.ADN_REQUEST_ID, originRequestId);
-                List<ac> list = adVar.f13438u;
+                List<ac> list = adVar.f14224u;
                 if (list == null || list.isEmpty()) {
                     return;
                 }
@@ -311,16 +309,16 @@ public class a {
     public static Map<String, Object> a(int i, bv bvVar) {
         HashMap hashMap = new HashMap(2);
         if (bvVar != null) {
-            int g4 = bvVar.g();
-            f.y(g4 == i ? 5 : 6, hashMap, ATBiddingNotice.ADN_ID, bvVar.o() ? 101 : 100, ATBiddingNotice.ADN_TYPE);
-            a(hashMap, i, g4, bvVar);
+            int g9 = bvVar.g();
+            k.A(g9 == i ? 5 : 6, hashMap, ATBiddingNotice.ADN_ID, bvVar.o() ? 101 : 100, ATBiddingNotice.ADN_TYPE);
+            a(hashMap, i, g9, bvVar);
         }
         return hashMap;
     }
 
-    public static Map<String, Object> a(ad adVar, cd cdVar, double d2) {
+    public static Map<String, Object> a(ad adVar, cd cdVar, double d9) {
         HashMap hashMap = new HashMap();
-        hashMap.put(c.f11755f, a(adVar, d2));
+        hashMap.put(c.f12541f, a(adVar, d9));
         String b9 = cdVar.b();
         if (!TextUtils.isEmpty(b9)) {
             hashMap.put(c.i, b9);
@@ -330,19 +328,19 @@ public class a {
         return hashMap;
     }
 
-    public static Map<String, Object> a(ad adVar, aw awVar, double d2, String str) {
+    public static Map<String, Object> a(ad adVar, aw awVar, double d9, String str) {
         HashMap hashMap = new HashMap();
-        hashMap.put(c.f11751b, a(adVar, d2));
-        hashMap.put(c.f11752c, b(adVar, d2));
-        hashMap.put(c.f11753d, str);
-        String d9 = awVar.d();
-        if (!TextUtils.isEmpty(d9)) {
-            hashMap.put(c.i, d9);
+        hashMap.put(c.f12537b, a(adVar, d9));
+        hashMap.put(c.f12538c, b(adVar, d9));
+        hashMap.put(c.f12539d, str);
+        String d10 = awVar.d();
+        if (!TextUtils.isEmpty(d10)) {
+            hashMap.put(c.i, d10);
         } else {
             hashMap.put(c.i, "");
         }
-        hashMap.put(c.f11758j, TextUtils.equals(str, "1") ? "900" : TextUtils.equals(str, "2") ? "203" : (TextUtils.equals(str, "102") || TextUtils.equals(str, "103")) ? "203" : "900");
-        hashMap.put(c.f11759k, Long.valueOf(System.currentTimeMillis() / 1000));
+        hashMap.put(c.f12544j, TextUtils.equals(str, "1") ? "900" : TextUtils.equals(str, "2") ? "203" : (TextUtils.equals(str, "102") || TextUtils.equals(str, "103")) ? "203" : "900");
+        hashMap.put(c.f12545k, Long.valueOf(System.currentTimeMillis() / 1000));
         return hashMap;
     }
 
@@ -359,9 +357,9 @@ public class a {
 
     private static String a(String str) {
         if (ATAdConst.CURRENCY.RMB.toString().equalsIgnoreCase(str)) {
-            return j.C0076j.f12486b;
+            return j.C0076j.f13272b;
         }
-        return j.C0076j.f12485a;
+        return j.C0076j.f13271a;
     }
 
     public static String a(int i, String str) {
@@ -371,7 +369,7 @@ public class a {
             return str;
         }
         if (i == 8) {
-            str2 = k.b("LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUZ3d0RRWUpLb1pJaHZjTkFRRUJCUUFEU3dBd1NBSkJBTGpNVCt3QTZEdVViaGZvYTZ5MDQ4czVNWFcrOEY2bgpxNkxzb2FaMWNDdVJ0MDhLU0ZoZ3kwYmp3dWpLVkxLeW1nUVJRUWFGUkhFamF2aTNXd28vUG9jQ0F3RUFBUT09Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==");
+            str2 = com.anythink.core.common.v.k.b("LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUZ3d0RRWUpLb1pJaHZjTkFRRUJCUUFEU3dBd1NBSkJBTGpNVCt3QTZEdVViaGZvYTZ5MDQ4czVNWFcrOEY2bgpxNkxzb2FaMWNDdVJ0MDhLU0ZoZ3kwYmp3dWpLVkxLeW1nUVJRUWFGUkhFamF2aTNXd28vUG9jQ0F3RUFBUT09Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==");
         } else {
             str2 = "";
         }
@@ -393,7 +391,7 @@ public class a {
             sb.append("?viewid=&position_id=");
             sb.append(str);
             sb.append("&loss=${AUCTION_LOSS}&win_price=${AUCTION_PRICE}&server_bidding_type=1&win_seat=${AUCTION_SEAT_ID}&mrqid=");
-            return h.g(sb, str2, "&meSrc=299");
+            return Wv.i(sb, str2, "&meSrc=299");
         }
         return "";
     }

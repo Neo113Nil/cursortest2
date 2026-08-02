@@ -5,6 +5,6 @@ import android.content.Context;
 /* loaded from: assets/audience_network/classes2.dex */
 public abstract class RX {
     public static void A00(Context context) {
-        new RU(C1213Rp.A03(context), new RW()).start();
+        new RU(C1233Rp.A03(context), new RW()).start();
     }
 }

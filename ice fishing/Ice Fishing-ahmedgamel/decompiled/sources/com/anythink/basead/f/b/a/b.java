@@ -25,62 +25,62 @@ import java.util.List;
 public final class b extends a {
 
     /* renamed from: p, reason: collision with root package name */
-    FrameLayout f8867p;
+    FrameLayout f9653p;
 
-    public b(Context context, bj bjVar, x xVar, boolean z3) {
-        super(context, bjVar, xVar, z3);
+    public b(Context context, bj bjVar, x xVar, boolean z6) {
+        super(context, bjVar, xVar, z6);
     }
 
     @Override // com.anythink.basead.f.b.a.d, com.anythink.basead.f.a
     public final View B() {
-        if (!com.anythink.basead.b.e.a(this.f8882t)) {
+        if (!com.anythink.basead.b.e.a(this.f9668t)) {
             return null;
         }
-        if (this.f8867p == null) {
-            FrameLayout frameLayout = new FrameLayout(this.f8880r);
-            this.f8867p = frameLayout;
+        if (this.f9653p == null) {
+            FrameLayout frameLayout = new FrameLayout(this.f9666r);
+            this.f9653p = frameLayout;
             frameLayout.setLayoutParams(new ViewGroup.LayoutParams(-2, -2));
-            this.f8848l.put(g.a.f11167b, this.f8867p);
+            this.f9634l.put(g.a.f11953b, this.f9653p);
         }
-        return this.f8867p;
+        return this.f9653p;
     }
 
     @Override // com.anythink.basead.f.b.a.a
     public final View L() {
         View[] viewArr = new View[1];
-        a(this.f8840c, viewArr);
+        a(this.f9626c, viewArr);
         if (viewArr[0] == null) {
-            return this.f8840c;
+            return this.f9626c;
         }
-        this.f8841d = new WeakReference<>(viewArr[0]);
+        this.f9627d = new WeakReference<>(viewArr[0]);
         return viewArr[0];
     }
 
     @Override // com.anythink.basead.f.a
-    public final View a(Context context, boolean z3, BaseMediaATView.a aVar) {
+    public final View a(Context context, boolean z6, BaseMediaATView.a aVar) {
         y yVar;
-        if (this.f8888z == 1 && !TextUtils.isEmpty(this.f8881s.E())) {
+        if (this.f9674z == 1 && !TextUtils.isEmpty(this.f9667s.E())) {
             SimplePlayerMediaView simplePlayerMediaView = new SimplePlayerMediaView(context);
             a((com.anythink.basead.ui.a) simplePlayerMediaView);
             return simplePlayerMediaView;
         }
-        if (TextUtils.isEmpty(this.f8881s.B())) {
+        if (TextUtils.isEmpty(this.f9667s.B())) {
             return null;
         }
         SimpleMediaATView simpleMediaATView = new SimpleMediaATView(context);
-        simpleMediaATView.initView(this.f8881s);
-        x xVar = this.f8882t;
-        if (xVar != null && (yVar = xVar.f14168o) != null && yVar.J() != 1) {
-            simpleMediaATView.setOnClickListener(this.f8850n);
+        simpleMediaATView.initView(this.f9667s);
+        x xVar = this.f9668t;
+        if (xVar != null && (yVar = xVar.f14954o) != null && yVar.J() != 1) {
+            simpleMediaATView.setOnClickListener(this.f9636n);
         }
         return simpleMediaATView;
     }
 
     @Override // com.anythink.basead.f.a
     public final ViewGroup b() {
-        OwnNativeATView G7 = G();
-        this.f8840c = G7;
-        return G7;
+        OwnNativeATView G2 = G();
+        this.f9626c = G2;
+        return G2;
     }
 
     @Override // com.anythink.basead.f.b.a.a, com.anythink.basead.f.a
@@ -88,7 +88,7 @@ public final class b extends a {
         bj bjVar;
         final Context context;
         super.a(view, list, list2, layoutParams, view2);
-        if (this.f8840c == null || (bjVar = this.f8881s) == null || this.f8882t == null || TextUtils.isEmpty(bjVar.ak()) || (context = this.f8840c.getContext()) == null) {
+        if (this.f9626c == null || (bjVar = this.f9667s) == null || this.f9668t == null || TextUtils.isEmpty(bjVar.ak()) || (context = this.f9626c.getContext()) == null) {
             return;
         }
         ImageView imageView = new ImageView(context);
@@ -96,8 +96,8 @@ public final class b extends a {
         int a10 = q.a(context, 24.0f);
         int a11 = q.a(context, 4.0f);
         imageView.setPadding(a9, a9, a9, a9);
-        imageView.setBackgroundResource(q.a(context, "myoffer_bg_feedback_button", k.f19632c));
-        imageView.setImageResource(q.a(context, "myoffer_feedback_icon", k.f19632c));
+        imageView.setBackgroundResource(q.a(context, "myoffer_bg_feedback_button", k.f20419c));
+        imageView.setImageResource(q.a(context, "myoffer_feedback_icon", k.f20419c));
         if (layoutParams != null) {
             layoutParams.width = a10;
             layoutParams.height = a10;
@@ -113,7 +113,7 @@ public final class b extends a {
                 com.anythink.basead.e eVar = new com.anythink.basead.e();
                 Context context2 = context;
                 b bVar = b.this;
-                eVar.a(context2, bVar.f8881s, bVar.f8882t, new e.a() { // from class: com.anythink.basead.f.b.a.b.1.1
+                eVar.a(context2, bVar.f9667s, bVar.f9668t, new e.a() { // from class: com.anythink.basead.f.b.a.b.1.1
                     @Override // com.anythink.basead.e.a
                     public final void a() {
                     }
@@ -124,7 +124,7 @@ public final class b extends a {
                 });
             }
         });
-        this.f8840c.addView(imageView, layoutParams);
+        this.f9626c.addView(imageView, layoutParams);
     }
 
     private void a(View view, View[] viewArr) {
@@ -135,7 +135,7 @@ public final class b extends a {
             }
             return;
         }
-        if ((view instanceof TextView) && TextUtils.equals(((TextView) view).getText().toString(), this.f8881s.D())) {
+        if ((view instanceof TextView) && TextUtils.equals(((TextView) view).getText().toString(), this.f9667s.D())) {
             viewArr[0] = view;
         }
     }

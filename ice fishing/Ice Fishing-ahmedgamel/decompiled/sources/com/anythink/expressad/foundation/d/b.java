@@ -1,6 +1,7 @@
 package com.anythink.expressad.foundation.d;
 
 import android.text.TextUtils;
+import com.google.android.gms.internal.ads.Wv;
 import java.io.Serializable;
 import java.util.ArrayList;
 import org.json.JSONArray;
@@ -11,154 +12,154 @@ import org.json.JSONObject;
 public final class b implements com.anythink.expressad.g.b, Serializable {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f18533a = "https://img.toponad.com/sdk/app-permissions.html?key=";
+    private static final String f19320a = "https://img.toponad.com/sdk/app-permissions.html?key=";
 
     /* renamed from: b, reason: collision with root package name */
-    private static String f18534b = "app_name";
+    private static String f19321b = "app_name";
 
     /* renamed from: c, reason: collision with root package name */
-    private static String f18535c = "perm_desc";
+    private static String f19322c = "perm_desc";
 
     /* renamed from: d, reason: collision with root package name */
-    private static String f18536d = "ori_perm_desc";
+    private static String f19323d = "ori_perm_desc";
 
     /* renamed from: e, reason: collision with root package name */
-    private static String f18537e = "ori_perm_all";
+    private static String f19324e = "ori_perm_all";
 
     /* renamed from: f, reason: collision with root package name */
-    private static String f18538f = "pri_url";
+    private static String f19325f = "pri_url";
 
     /* renamed from: g, reason: collision with root package name */
-    private static String f18539g = "upd_time";
+    private static String f19326g = "upd_time";
 
     /* renamed from: h, reason: collision with root package name */
-    private static String f18540h = "app_ver";
+    private static String f19327h = "app_ver";
     private static String i = "dev_name";
 
     /* renamed from: j, reason: collision with root package name */
-    private String f18541j;
+    private String f19328j;
 
     /* renamed from: k, reason: collision with root package name */
-    private String f18542k;
+    private String f19329k;
 
     /* renamed from: l, reason: collision with root package name */
-    private ArrayList<String> f18543l = new ArrayList<>(3);
+    private ArrayList<String> f19330l = new ArrayList<>(3);
 
     /* renamed from: m, reason: collision with root package name */
-    private ArrayList<String> f18544m = new ArrayList<>(3);
+    private ArrayList<String> f19331m = new ArrayList<>(3);
 
     /* renamed from: n, reason: collision with root package name */
-    private ArrayList<String> f18545n = new ArrayList<>(3);
+    private ArrayList<String> f19332n = new ArrayList<>(3);
 
     /* renamed from: o, reason: collision with root package name */
-    private String f18546o;
+    private String f19333o;
 
     /* renamed from: p, reason: collision with root package name */
-    private String f18547p;
+    private String f19334p;
 
     /* renamed from: q, reason: collision with root package name */
-    private String f18548q;
+    private String f19335q;
 
     /* renamed from: r, reason: collision with root package name */
-    private String f18549r;
+    private String f19336r;
 
     /* renamed from: s, reason: collision with root package name */
-    private String f18550s;
+    private String f19337s;
 
     private void b(String str) {
-        this.f18541j = str;
+        this.f19328j = str;
     }
 
     private void c(String str) {
-        this.f18546o = str;
+        this.f19333o = str;
     }
 
     private void d(String str) {
-        this.f18542k = str;
+        this.f19329k = str;
     }
 
     private void e(String str) {
-        this.f18547p = str;
+        this.f19334p = str;
     }
 
     private void f(String str) {
-        this.f18548q = str;
+        this.f19335q = str;
     }
 
     private void g(String str) {
-        this.f18549r = str;
+        this.f19336r = str;
     }
 
     private String h() {
-        return this.f18541j;
+        return this.f19328j;
     }
 
     private ArrayList<String> i() {
-        return this.f18543l;
+        return this.f19330l;
     }
 
     private ArrayList<String> j() {
-        return this.f18544m;
+        return this.f19331m;
     }
 
     private ArrayList<String> k() {
-        return this.f18545n;
+        return this.f19332n;
     }
 
     public final String a() {
-        return this.f18546o;
+        return this.f19333o;
     }
 
     public final String toString() {
         StringBuilder sb = new StringBuilder("ApkDisplayInfo{appName='");
-        sb.append(this.f18542k);
+        sb.append(this.f19329k);
         sb.append("', permDescJArray=");
-        sb.append(this.f18543l);
+        sb.append(this.f19330l);
         sb.append(", permDescOriJArray=");
-        sb.append(this.f18544m);
+        sb.append(this.f19331m);
         sb.append(", permDescAll=");
-        sb.append(this.f18545n);
+        sb.append(this.f19332n);
         sb.append(", priUrl='");
-        sb.append(this.f18547p);
+        sb.append(this.f19334p);
         sb.append("', updateTime='");
-        sb.append(this.f18548q);
+        sb.append(this.f19335q);
         sb.append("', appVersion='");
-        sb.append(this.f18549r);
+        sb.append(this.f19336r);
         sb.append("', devName='");
-        return u1.h.g(sb, this.f18550s, "'}");
+        return Wv.i(sb, this.f19337s, "'}");
     }
 
     private void a(ArrayList<String> arrayList) {
-        this.f18543l = arrayList;
+        this.f19330l = arrayList;
     }
 
     private void c(ArrayList<String> arrayList) {
-        this.f18545n = arrayList;
+        this.f19332n = arrayList;
     }
 
     private void h(String str) {
-        this.f18550s = str;
+        this.f19337s = str;
     }
 
     public final String b() {
-        return this.f18542k;
+        return this.f19329k;
     }
 
     public final String d() {
-        return this.f18548q;
+        return this.f19335q;
     }
 
     public final String e() {
-        return this.f18549r;
+        return this.f19336r;
     }
 
     public final String f() {
-        return this.f18550s;
+        return this.f19337s;
     }
 
     public final JSONObject g() {
         try {
-            JSONObject jSONObject = new JSONObject(this.f18541j);
+            JSONObject jSONObject = new JSONObject(this.f19328j);
             if (jSONObject.length() > 0) {
                 return jSONObject;
             }
@@ -174,7 +175,7 @@ public final class b implements com.anythink.expressad.g.b, Serializable {
     }
 
     private void b(ArrayList<String> arrayList) {
-        this.f18544m = arrayList;
+        this.f19331m = arrayList;
     }
 
     private static JSONArray d(ArrayList<String> arrayList) {
@@ -182,14 +183,14 @@ public final class b implements com.anythink.expressad.g.b, Serializable {
             return null;
         }
         JSONArray jSONArray = new JSONArray();
-        for (int i6 = 0; i6 < arrayList.size(); i6++) {
-            jSONArray.put(arrayList.get(i6));
+        for (int i4 = 0; i4 < arrayList.size(); i4++) {
+            jSONArray.put(arrayList.get(i4));
         }
         return jSONArray;
     }
 
     public final String c() {
-        return this.f18547p;
+        return this.f19334p;
     }
 
     public static b a(String str) {
@@ -209,47 +210,47 @@ public final class b implements com.anythink.expressad.g.b, Serializable {
             return null;
         }
         ArrayList<String> arrayList = new ArrayList<>();
-        for (int i6 = 0; i6 < jSONArray.length(); i6++) {
-            arrayList.add(jSONArray.optString(i6));
+        for (int i4 = 0; i4 < jSONArray.length(); i4++) {
+            arrayList.add(jSONArray.optString(i4));
         }
         return arrayList;
     }
 
     private static b a(JSONObject jSONObject) {
         b bVar = null;
-        if (jSONObject.has(f18534b)) {
+        if (jSONObject.has(f19321b)) {
             bVar = a((b) null);
-            bVar.f18542k = jSONObject.optString(f18534b);
+            bVar.f19329k = jSONObject.optString(f19321b);
         }
-        if (jSONObject.has(f18535c)) {
+        if (jSONObject.has(f19322c)) {
             bVar = a(bVar);
-            JSONArray optJSONArray = jSONObject.optJSONArray(f18535c);
+            JSONArray optJSONArray = jSONObject.optJSONArray(f19322c);
             if (optJSONArray != null) {
-                bVar.f18543l = a(optJSONArray);
-                ArrayList<String> arrayList = bVar.f18545n;
-                String str = f18533a;
-                for (int i6 = 0; i6 < optJSONArray.length(); i6++) {
+                bVar.f19330l = a(optJSONArray);
+                ArrayList<String> arrayList = bVar.f19332n;
+                String str = f19320a;
+                for (int i4 = 0; i4 < optJSONArray.length(); i4++) {
                     try {
-                        if (optJSONArray.get(i6) instanceof String) {
-                            str = i6 == 0 ? str + optJSONArray.optString(i6) : str + "," + optJSONArray.optString(i6);
+                        if (optJSONArray.get(i4) instanceof String) {
+                            str = i4 == 0 ? str + optJSONArray.optString(i4) : str + "," + optJSONArray.optString(i4);
                         }
                     } catch (JSONException e9) {
                         e9.printStackTrace();
                     }
                 }
-                bVar.f18546o = str;
-                bVar.f18545n = arrayList;
+                bVar.f19333o = str;
+                bVar.f19332n = arrayList;
             }
         }
-        if (jSONObject.has(f18536d)) {
+        if (jSONObject.has(f19323d)) {
             bVar = a(bVar);
-            JSONArray optJSONArray2 = jSONObject.optJSONArray(f18536d);
+            JSONArray optJSONArray2 = jSONObject.optJSONArray(f19323d);
             if (optJSONArray2 != null) {
-                bVar.f18544m = a(optJSONArray2);
-                ArrayList<String> arrayList2 = bVar.f18545n;
-                for (int i9 = 0; i9 < optJSONArray2.length(); i9++) {
+                bVar.f19331m = a(optJSONArray2);
+                ArrayList<String> arrayList2 = bVar.f19332n;
+                for (int i6 = 0; i6 < optJSONArray2.length(); i6++) {
                     try {
-                        Object obj = optJSONArray2.get(i9);
+                        Object obj = optJSONArray2.get(i6);
                         if (obj instanceof String) {
                             arrayList2.add((String) obj);
                         }
@@ -257,27 +258,27 @@ public final class b implements com.anythink.expressad.g.b, Serializable {
                         e10.printStackTrace();
                     }
                 }
-                bVar.f18545n = arrayList2;
+                bVar.f19332n = arrayList2;
             }
         }
-        if (jSONObject.has(f18538f)) {
+        if (jSONObject.has(f19325f)) {
             bVar = a(bVar);
-            bVar.f18547p = jSONObject.optString(f18538f);
+            bVar.f19334p = jSONObject.optString(f19325f);
         }
-        if (jSONObject.has(f18539g)) {
+        if (jSONObject.has(f19326g)) {
             bVar = a(bVar);
-            bVar.f18548q = jSONObject.optString(f18539g);
+            bVar.f19335q = jSONObject.optString(f19326g);
         }
-        if (jSONObject.has(f18540h)) {
+        if (jSONObject.has(f19327h)) {
             bVar = a(bVar);
-            bVar.f18549r = jSONObject.optString(f18540h);
+            bVar.f19336r = jSONObject.optString(f19327h);
         }
         if (jSONObject.has(i)) {
             bVar = a(bVar);
-            bVar.f18550s = jSONObject.optString(i);
+            bVar.f19337s = jSONObject.optString(i);
         }
         if (bVar != null) {
-            bVar.f18541j = jSONObject.toString();
+            bVar.f19328j = jSONObject.toString();
         }
         return bVar;
     }

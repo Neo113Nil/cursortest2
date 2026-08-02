@@ -1,7 +1,7 @@
 package Z5;
 
-import b6.InterfaceC0519a;
-import b6.InterfaceC0520b;
+import b6.InterfaceC0527a;
+import b6.InterfaceC0528b;
 import com.onesignal.common.j;
 import com.onesignal.user.internal.i;
 import java.util.ArrayList;
@@ -11,18 +11,18 @@ import kotlin.jvm.internal.h;
 
 /* loaded from: classes2.dex */
 public final class c {
-    private final InterfaceC0520b _fallbackPushSub;
+    private final InterfaceC0528b _fallbackPushSub;
     private final List<b6.e> collection;
 
     /* JADX WARN: Multi-variable type inference failed */
-    public c(List<? extends b6.e> collection, InterfaceC0520b _fallbackPushSub) {
+    public c(List<? extends b6.e> collection, InterfaceC0528b _fallbackPushSub) {
         h.e(collection, "collection");
         h.e(_fallbackPushSub, "_fallbackPushSub");
         this.collection = collection;
         this._fallbackPushSub = _fallbackPushSub;
     }
 
-    public final InterfaceC0519a getByEmail(String email) {
+    public final InterfaceC0527a getByEmail(String email) {
         Object obj;
         h.e(email, "email");
         String hash = j.INSTANCE.hash(email);
@@ -33,14 +33,14 @@ public final class c {
                 break;
             }
             obj = it.next();
-            b6.e eVar = (InterfaceC0519a) obj;
+            b6.e eVar = (InterfaceC0527a) obj;
             h.c(eVar, "null cannot be cast to non-null type com.onesignal.user.internal.Subscription");
             String address = ((i) eVar).getModel().getAddress();
             if (h.a(address, email) || h.a(address, hash)) {
                 break;
             }
         }
-        return (InterfaceC0519a) obj;
+        return (InterfaceC0527a) obj;
     }
 
     public final b6.d getBySMS(String sms) {
@@ -68,27 +68,27 @@ public final class c {
         return this.collection;
     }
 
-    public final List<InterfaceC0519a> getEmails() {
+    public final List<InterfaceC0527a> getEmails() {
         List<b6.e> list = this.collection;
         ArrayList arrayList = new ArrayList();
         for (Object obj : list) {
-            if (obj instanceof InterfaceC0519a) {
+            if (obj instanceof InterfaceC0527a) {
                 arrayList.add(obj);
             }
         }
         return arrayList;
     }
 
-    public final InterfaceC0520b getPush() {
+    public final InterfaceC0528b getPush() {
         List<b6.e> list = this.collection;
         ArrayList arrayList = new ArrayList();
         for (Object obj : list) {
-            if (obj instanceof InterfaceC0520b) {
+            if (obj instanceof InterfaceC0528b) {
                 arrayList.add(obj);
             }
         }
-        InterfaceC0520b interfaceC0520b = (InterfaceC0520b) (arrayList.isEmpty() ? null : arrayList.get(0));
-        return interfaceC0520b == null ? this._fallbackPushSub : interfaceC0520b;
+        InterfaceC0528b interfaceC0528b = (InterfaceC0528b) (arrayList.isEmpty() ? null : arrayList.get(0));
+        return interfaceC0528b == null ? this._fallbackPushSub : interfaceC0528b;
     }
 
     public final List<b6.d> getSmss() {

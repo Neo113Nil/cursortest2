@@ -1,14 +1,14 @@
 package com.onesignal.user.internal.customEvents.impl;
 
-import com.bumptech.glide.d;
+import com.anythink.expressad.foundation.d.d;
 import com.onesignal.core.internal.http.impl.e;
 import java.text.SimpleDateFormat;
 import java.util.TimeZone;
 import kotlin.jvm.internal.h;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import t4.C5040a;
-import z7.InterfaceC5267d;
+import t4.C5041a;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class a implements T5.a {
@@ -19,8 +19,8 @@ public final class a implements T5.a {
         int label;
         /* synthetic */ Object result;
 
-        public C0249a(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public C0249a(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -44,20 +44,20 @@ public final class a implements T5.a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object sendCustomEvent(String str, String str2, String str3, long j6, String str4, String str5, c cVar, String str6, InterfaceC5267d interfaceC5267d) {
+    public Object sendCustomEvent(String str, String str2, String str3, long j6, String str4, String str5, c cVar, String str6, InterfaceC5240d interfaceC5240d) {
         C0249a c0249a;
         int i;
         E4.a aVar;
-        if (interfaceC5267d instanceof C0249a) {
-            c0249a = (C0249a) interfaceC5267d;
-            int i6 = c0249a.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                c0249a.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof C0249a) {
+            c0249a = (C0249a) interfaceC5240d;
+            int i4 = c0249a.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                c0249a.label = i4 - Integer.MIN_VALUE;
                 Object obj = c0249a.result;
-                A7.a aVar2 = A7.a.f58n;
+                A7.a aVar2 = A7.a.f215n;
                 i = c0249a.label;
                 if (i != 0) {
-                    d.k(obj);
+                    Q3.b.s(obj);
                     JSONObject jSONObject = new JSONObject();
                     jSONObject.put("name", str4);
                     jSONObject.put("onesignal_id", str2);
@@ -66,7 +66,7 @@ public final class a implements T5.a {
                     }
                     SimpleDateFormat iso8601Format = com.onesignal.common.b.INSTANCE.iso8601Format();
                     iso8601Format.setTimeZone(TimeZone.getTimeZone("UTC"));
-                    jSONObject.put(com.anythink.expressad.foundation.d.d.f18596u, iso8601Format.format(new Long(j6)));
+                    jSONObject.put(d.f19383u, iso8601Format.format(new Long(j6)));
                     JSONObject jSONObject2 = str5 != null ? new JSONObject(str5) : new JSONObject();
                     jSONObject2.put("os_sdk", cVar.toJSONObject());
                     jSONObject.put("payload", jSONObject2);
@@ -82,18 +82,18 @@ public final class a implements T5.a {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    d.k(obj);
+                    Q3.b.s(obj);
                 }
                 aVar = (E4.a) obj;
                 if (aVar.isSuccess()) {
-                    throw new C5040a(aVar.getStatusCode(), aVar.getPayload(), aVar.getRetryAfterSeconds());
+                    throw new C5041a(aVar.getStatusCode(), aVar.getPayload(), aVar.getRetryAfterSeconds());
                 }
                 return new H4.a(H4.b.SUCCESS, null, null, null, 14, null);
             }
         }
-        c0249a = new C0249a(interfaceC5267d);
+        c0249a = new C0249a(interfaceC5240d);
         Object obj2 = c0249a.result;
-        A7.a aVar22 = A7.a.f58n;
+        A7.a aVar22 = A7.a.f215n;
         i = c0249a.label;
         if (i != 0) {
         }

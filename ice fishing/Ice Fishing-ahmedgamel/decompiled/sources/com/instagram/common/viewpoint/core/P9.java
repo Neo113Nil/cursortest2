@@ -57,13 +57,13 @@ public final class P9<K> implements Set<K> {
     public final int hashCode() {
         int i = 0;
         int result = this.A00.A04();
-        for (int i6 = result - 1; i6 >= 0; i6--) {
-            int i9 = 0;
-            Object A0B = this.A00.A0B(i6, 0);
+        for (int i4 = result - 1; i4 >= 0; i4--) {
+            int i6 = 0;
+            Object A0B = this.A00.A0B(i4, 0);
             if (A0B != null) {
-                i9 = A0B.hashCode();
+                i6 = A0B.hashCode();
             }
-            i += i9;
+            i += i6;
         }
         return i;
     }

@@ -4,5 +4,5 @@ package X7;
 public abstract /* synthetic */ class v {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f3862a = Runtime.getRuntime().availableProcessors();
+    public static final int f3817a = Runtime.getRuntime().availableProcessors();
 }

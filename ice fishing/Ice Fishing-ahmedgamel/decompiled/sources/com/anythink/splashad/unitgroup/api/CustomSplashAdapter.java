@@ -30,8 +30,8 @@ public abstract class CustomSplashAdapter extends ATBaseAdAdapter {
     public final void internalFormatShow(Activity activity, ViewGroup viewGroup, final ATCommonImpressionListener aTCommonImpressionListener) {
         this.mImpressionListener = new CustomSplashEventListener() { // from class: com.anythink.splashad.unitgroup.api.CustomSplashAdapter.1
             @Override // com.anythink.splashad.unitgroup.api.CustomSplashEventListener
-            public final void onDeeplinkCallback(boolean z3) {
-                aTCommonImpressionListener.onDeeplinkCallback(z3);
+            public final void onDeeplinkCallback(boolean z6) {
+                aTCommonImpressionListener.onDeeplinkCallback(z6);
             }
 
             @Override // com.anythink.splashad.unitgroup.api.CustomSplashEventListener

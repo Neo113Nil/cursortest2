@@ -4,58 +4,58 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /* loaded from: classes2.dex */
-public final class r implements InterfaceC3757q {
+public final class r implements InterfaceC3780q {
 
     /* renamed from: a, reason: collision with root package name */
-    public final A8 f33448a;
+    public final A8 f34215a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f33449b;
+    public final int f34216b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int[] f33450c;
+    public final int[] f34217c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final DP[] f33451d;
+    public final DP[] f34218d;
 
     /* renamed from: e, reason: collision with root package name */
-    public int f33452e;
+    public int f34219e;
 
     public r(A8 a82, int[] iArr) {
         DP[] dpArr;
         int length = iArr.length;
-        AbstractC2772Sd.H(length > 0);
+        AbstractC2792Sd.H(length > 0);
         a82.getClass();
-        this.f33448a = a82;
-        this.f33449b = length;
-        this.f33451d = new DP[length];
+        this.f34215a = a82;
+        this.f34216b = length;
+        this.f34218d = new DP[length];
         int i = 0;
         while (true) {
             int length2 = iArr.length;
-            dpArr = a82.f23638d;
+            dpArr = a82.f24418d;
             if (i >= length2) {
                 break;
             }
-            this.f33451d[i] = dpArr[iArr[i]];
+            this.f34218d[i] = dpArr[iArr[i]];
             i++;
         }
-        Arrays.sort(this.f33451d, C3004c.f29392K);
-        this.f33450c = new int[this.f33449b];
-        for (int i6 = 0; i6 < this.f33449b; i6++) {
-            int[] iArr2 = this.f33450c;
-            DP dp = this.f33451d[i6];
-            int i9 = 0;
+        Arrays.sort(this.f34218d, C3027c.f30175K);
+        this.f34217c = new int[this.f34216b];
+        for (int i4 = 0; i4 < this.f34216b; i4++) {
+            int[] iArr2 = this.f34217c;
+            DP dp = this.f34218d[i4];
+            int i6 = 0;
             while (true) {
-                if (i9 >= dpArr.length) {
-                    i9 = -1;
+                if (i6 >= dpArr.length) {
+                    i6 = -1;
                     break;
-                } else if (dp == dpArr[i9]) {
+                } else if (dp == dpArr[i6]) {
                     break;
                 } else {
-                    i9++;
+                    i6++;
                 }
             }
-            iArr2[i6] = i9;
+            iArr2[i4] = i6;
         }
     }
 
@@ -64,22 +64,22 @@ public final class r implements InterfaceC3757q {
         for (int i = 0; i < 2; i++) {
             j6 += jArr[i];
         }
-        for (int i6 = 0; i6 < arrayList.size(); i6++) {
-            OB ob = (OB) arrayList.get(i6);
+        for (int i4 = 0; i4 < arrayList.size(); i4++) {
+            OB ob = (OB) arrayList.get(i4);
             if (ob != null) {
-                ob.a(new RQ(j6, jArr[i6]));
+                ob.a(new UQ(j6, jArr[i4]));
             }
         }
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3757q
+    @Override // com.google.android.gms.internal.ads.InterfaceC3780q
     public final A8 c() {
-        return this.f33448a;
+        return this.f34215a;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3757q
+    @Override // com.google.android.gms.internal.ads.InterfaceC3780q
     public final int d() {
-        return this.f33450c.length;
+        return this.f34217c.length;
     }
 
     public final boolean equals(Object obj) {
@@ -88,50 +88,50 @@ public final class r implements InterfaceC3757q {
         }
         if (obj != null && getClass() == obj.getClass()) {
             r rVar = (r) obj;
-            if (this.f33448a.equals(rVar.f33448a) && Arrays.equals(this.f33450c, rVar.f33450c)) {
+            if (this.f34215a.equals(rVar.f34215a) && Arrays.equals(this.f34217c, rVar.f34217c)) {
                 return true;
             }
         }
         return false;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3757q
+    @Override // com.google.android.gms.internal.ads.InterfaceC3780q
     public final int g() {
-        return this.f33450c[0];
+        return this.f34217c[0];
     }
 
     public final int hashCode() {
-        int i = this.f33452e;
+        int i = this.f34219e;
         if (i != 0) {
             return i;
         }
-        int hashCode = Arrays.hashCode(this.f33450c) + (System.identityHashCode(this.f33448a) * 31);
-        this.f33452e = hashCode;
+        int hashCode = Arrays.hashCode(this.f34217c) + (System.identityHashCode(this.f34215a) * 31);
+        this.f34219e = hashCode;
         return hashCode;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3757q
+    @Override // com.google.android.gms.internal.ads.InterfaceC3780q
     public final DP i() {
-        return this.f33451d[0];
+        return this.f34218d[0];
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3757q
+    @Override // com.google.android.gms.internal.ads.InterfaceC3780q
     public final int j0(int i) {
-        for (int i6 = 0; i6 < this.f33449b; i6++) {
-            if (this.f33450c[i6] == i) {
-                return i6;
+        for (int i4 = 0; i4 < this.f34216b; i4++) {
+            if (this.f34217c[i4] == i) {
+                return i4;
             }
         }
         return -1;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3757q
+    @Override // com.google.android.gms.internal.ads.InterfaceC3780q
     public final int v(int i) {
-        return this.f33450c[i];
+        return this.f34217c[i];
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3757q
+    @Override // com.google.android.gms.internal.ads.InterfaceC3780q
     public final DP x(int i) {
-        return this.f33451d[i];
+        return this.f34218d[i];
     }
 }

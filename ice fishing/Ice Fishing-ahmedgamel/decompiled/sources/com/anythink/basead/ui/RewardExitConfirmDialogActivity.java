@@ -17,22 +17,22 @@ import com.anythink.expressad.foundation.h.k;
 public class RewardExitConfirmDialogActivity extends Activity {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f10229a = 1;
+    public static final int f11015a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f10230b = 2;
+    public static final int f11016b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    private static Runnable f10231c = null;
+    private static Runnable f11017c = null;
 
     /* renamed from: d, reason: collision with root package name */
-    private static String f10232d = null;
+    private static String f11018d = null;
 
     /* renamed from: e, reason: collision with root package name */
-    private static int f10233e = 1;
+    private static int f11019e = 1;
 
     /* renamed from: f, reason: collision with root package name */
-    private Dialog f10234f;
+    private Dialog f11020f;
 
     /* renamed from: com.anythink.basead.ui.RewardExitConfirmDialogActivity$1, reason: invalid class name */
     public class AnonymousClass1 implements View.OnClickListener {
@@ -42,8 +42,8 @@ public class RewardExitConfirmDialogActivity extends Activity {
         @Override // android.view.View.OnClickListener
         public final void onClick(View view) {
             RewardExitConfirmDialogActivity.this.finish();
-            if (RewardExitConfirmDialogActivity.f10231c != null) {
-                RewardExitConfirmDialogActivity.f10231c.run();
+            if (RewardExitConfirmDialogActivity.f11017c != null) {
+                RewardExitConfirmDialogActivity.f11017c.run();
             }
         }
     }
@@ -65,21 +65,21 @@ public class RewardExitConfirmDialogActivity extends Activity {
             TextView textView = (TextView) inflate.findViewById(q.a(this, "myoffer_confirm_msg", "id"));
             TextView textView2 = (TextView) inflate.findViewById(q.a(this, "myoffer_confirm_give_up", "id"));
             TextView textView3 = (TextView) inflate.findViewById(q.a(this, "myoffer_confirm_continue", "id"));
-            textView2.setText(getResources().getString(q.a(this, "myoffer_reward_exit_confirm_give_up", k.f19636g)));
-            if (f10233e != 2) {
-                textView.setText(getResources().getString(q.a(this, "myoffer_reward_exit_confirm_msg", k.f19636g), f10232d));
-                textView3.setText(getResources().getString(q.a(this, "myoffer_reward_exit_confirm_continue", k.f19636g)));
+            textView2.setText(getResources().getString(q.a(this, "myoffer_reward_exit_confirm_give_up", k.f20423g)));
+            if (f11019e != 2) {
+                textView.setText(getResources().getString(q.a(this, "myoffer_reward_exit_confirm_msg", k.f20423g), f11018d));
+                textView3.setText(getResources().getString(q.a(this, "myoffer_reward_exit_confirm_continue", k.f20423g)));
             } else {
-                textView.setText(getResources().getString(q.a(this, "myoffer_anim_reward_exit_confirm_msg", k.f19636g), f10232d));
-                textView3.setText(getResources().getString(q.a(this, "myoffer_anim_reward_exit_confirm_continue", k.f19636g)));
+                textView.setText(getResources().getString(q.a(this, "myoffer_anim_reward_exit_confirm_msg", k.f20423g), f11018d));
+                textView3.setText(getResources().getString(q.a(this, "myoffer_anim_reward_exit_confirm_continue", k.f20423g)));
             }
             textView2.setOnClickListener(new AnonymousClass1());
             textView3.setOnClickListener(new AnonymousClass2());
-            Dialog dialog = new Dialog(this, q.a(this, "style_full_screen_translucent_dialog", k.f19634e));
-            this.f10234f = dialog;
+            Dialog dialog = new Dialog(this, q.a(this, "style_full_screen_translucent_dialog", k.f20421e));
+            this.f11020f = dialog;
             dialog.setContentView(inflate);
-            this.f10234f.setCancelable(false);
-            this.f10234f.show();
+            this.f11020f.setCancelable(false);
+            this.f11020f.show();
         } catch (Throwable unused) {
             finish();
         }
@@ -93,21 +93,21 @@ public class RewardExitConfirmDialogActivity extends Activity {
             TextView textView = (TextView) inflate.findViewById(q.a(this, "myoffer_confirm_msg", "id"));
             TextView textView2 = (TextView) inflate.findViewById(q.a(this, "myoffer_confirm_give_up", "id"));
             TextView textView3 = (TextView) inflate.findViewById(q.a(this, "myoffer_confirm_continue", "id"));
-            textView2.setText(getResources().getString(q.a(this, "myoffer_reward_exit_confirm_give_up", k.f19636g)));
-            if (f10233e != 2) {
-                textView.setText(getResources().getString(q.a(this, "myoffer_reward_exit_confirm_msg", k.f19636g), f10232d));
-                textView3.setText(getResources().getString(q.a(this, "myoffer_reward_exit_confirm_continue", k.f19636g)));
+            textView2.setText(getResources().getString(q.a(this, "myoffer_reward_exit_confirm_give_up", k.f20423g)));
+            if (f11019e != 2) {
+                textView.setText(getResources().getString(q.a(this, "myoffer_reward_exit_confirm_msg", k.f20423g), f11018d));
+                textView3.setText(getResources().getString(q.a(this, "myoffer_reward_exit_confirm_continue", k.f20423g)));
             } else {
-                textView.setText(getResources().getString(q.a(this, "myoffer_anim_reward_exit_confirm_msg", k.f19636g), f10232d));
-                textView3.setText(getResources().getString(q.a(this, "myoffer_anim_reward_exit_confirm_continue", k.f19636g)));
+                textView.setText(getResources().getString(q.a(this, "myoffer_anim_reward_exit_confirm_msg", k.f20423g), f11018d));
+                textView3.setText(getResources().getString(q.a(this, "myoffer_anim_reward_exit_confirm_continue", k.f20423g)));
             }
             textView2.setOnClickListener(new AnonymousClass1());
             textView3.setOnClickListener(new AnonymousClass2());
-            Dialog dialog = new Dialog(this, q.a(this, "style_full_screen_translucent_dialog", k.f19634e));
-            this.f10234f = dialog;
+            Dialog dialog = new Dialog(this, q.a(this, "style_full_screen_translucent_dialog", k.f20421e));
+            this.f11020f = dialog;
             dialog.setContentView(inflate);
-            this.f10234f.setCancelable(false);
-            this.f10234f.show();
+            this.f11020f.setCancelable(false);
+            this.f11020f.show();
         } catch (Throwable unused) {
             finish();
         }
@@ -115,12 +115,12 @@ public class RewardExitConfirmDialogActivity extends Activity {
 
     @Override // android.app.Activity
     public void onDestroy() {
-        Dialog dialog = this.f10234f;
+        Dialog dialog = this.f11020f;
         if (dialog != null) {
             dialog.dismiss();
-            this.f10234f = null;
+            this.f11020f = null;
         }
-        f10231c = null;
+        f11017c = null;
         super.onDestroy();
     }
 
@@ -133,9 +133,9 @@ public class RewardExitConfirmDialogActivity extends Activity {
     }
 
     public static void a(Context context, String str, Runnable runnable, int i) {
-        f10232d = str;
-        f10231c = runnable;
-        f10233e = i;
+        f11018d = str;
+        f11017c = runnable;
+        f11019e = i;
         Intent intent = new Intent(context, (Class<?>) RewardExitConfirmDialogActivity.class);
         intent.addFlags(268435456);
         context.startActivity(intent);

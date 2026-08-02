@@ -20,7 +20,7 @@ public class EF {
     public static String[] A0M = {"pLRRT7xfKKmC", "sDjB9WgW1E6gHf8gwZURHsTrfoUrQz1T", "uiJP8xmaVv", "5XKoBHy1xynVgVvyT837PyBbXD1HwArb", "BpJCepaU8WbBulVTB", "9USxYKvyty1bKFarGQoBTCJfC9", "y9X2NkRV2raN2WQBQaXrllWfrJ", "7FHQr1tSmfn5NF7ZWaBxZ9Q6x0"};
     public int A01;
     public int A02;
-    public InterfaceC1717ej A03;
+    public InterfaceC1737ej A03;
     public boolean A05;
     public boolean A06;
     public boolean A07;
@@ -28,12 +28,12 @@ public class EF {
     public boolean A09;
     public boolean A0A;
     public boolean A0B;
-    public final C1931iE A0C;
-    public final C1840gi A0D;
+    public final C1951iE A0C;
+    public final C1860gi A0D;
     public final VA A0E;
-    public final InterfaceC1716ei A0F;
-    public final InterfaceC1725er A0G;
-    public final C1726es A0H;
+    public final InterfaceC1736ei A0F;
+    public final InterfaceC1745er A0G;
+    public final C1746es A0H;
     public final String A0J;
     public final Map<String, String> A0K;
     public final Object A0I = new Object();
@@ -48,7 +48,7 @@ public class EF {
     	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    public EF(C1840gi c1840gi, VA va, InterfaceC1716ei interfaceC1716ei, String str, boolean z3, int i, int i6, boolean z6, Bundle bundle, Map<String, String> map, InterfaceC1725er interfaceC1725er) {
+    public EF(C1860gi c1860gi, VA va, InterfaceC1736ei interfaceC1736ei, String str, boolean z6, int i, int i4, boolean z9, Bundle bundle, Map<String, String> map, InterfaceC1745er interfaceC1745er) {
         this.A02 = 0;
         this.A01 = 0;
         this.A05 = false;
@@ -57,19 +57,19 @@ public class EF {
         this.A06 = false;
         this.A09 = false;
         this.A0A = false;
-        this.A0D = c1840gi;
+        this.A0D = c1860gi;
         this.A0E = va;
-        this.A0F = interfaceC1716ei;
+        this.A0F = interfaceC1736ei;
         this.A0J = str;
         this.A0K = map;
-        this.A08 = z3;
-        this.A07 = z6;
-        this.A0G = interfaceC1725er;
+        this.A08 = z6;
+        this.A07 = z9;
+        this.A0G = interfaceC1745er;
         ArrayList arrayList = new ArrayList();
         arrayList.add(new EH(this, 0.5d, -1.0d, 2.0d, true));
         arrayList.add(new EG(this, 1.0E-7d, -1.0d, 0.001d, false));
         if (bundle != null) {
-            this.A0C = new C1931iE(arrayList, bundle.getBundle(A0H(6, 16, 57)), this.A0G);
+            this.A0C = new C1951iE(arrayList, bundle.getBundle(A0H(6, 16, 57)), this.A0G);
             this.A02 = bundle.getInt(A0H(97, 18, 74));
             this.A01 = bundle.getInt(A0H(79, 18, 108));
             this.A06 = bundle.getBoolean(A0H(146, 10, 97), false);
@@ -77,18 +77,18 @@ public class EF {
             this.A09 = bundle.getBoolean(A0H(156, 15, 59), false);
         } else {
             this.A02 = i;
-            this.A01 = i6;
-            this.A0C = new C1931iE(arrayList, this.A0G);
+            this.A01 = i4;
+            this.A0C = new C1951iE(arrayList, this.A0G);
         }
-        this.A05 = C1290Up.A2W(this.A0D);
-        this.A0B = C1290Up.A2a(this.A0D);
-        this.A0H = new C1726es(new Handler(), this);
+        this.A05 = C1310Up.A2W(this.A0D);
+        this.A0B = C1310Up.A2a(this.A0D);
+        this.A0H = new C1746es(new Handler(), this);
     }
 
-    public static String A0H(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0L, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 49);
+    public static String A0H(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0L, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 49);
         }
         return new String(copyOfRange);
     }
@@ -106,24 +106,24 @@ public class EF {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public Map<String, String> A0J(EnumC1718ek enumC1718ek) {
+    public Map<String, String> A0J(EnumC1738ek enumC1738ek) {
         int currentPositionInMillis = this.A0F.getCurrentPositionInMillis();
         int i = this.A00 + 1;
         this.A00 = i;
-        return A0K(enumC1718ek, currentPositionInMillis, i);
+        return A0K(enumC1738ek, currentPositionInMillis, i);
     }
 
-    private Map<String, String> A0K(EnumC1718ek enumC1718ek, int i, int i6) {
+    private Map<String, String> A0K(EnumC1738ek enumC1738ek, int i, int i4) {
         HashMap hashMap = new HashMap();
-        Y7.A03(hashMap, this.A0F.getVideoStartReason() == EnumC1727et.A02, !this.A0F.AAV());
+        Y7.A03(hashMap, this.A0F.getVideoStartReason() == EnumC1747et.A02, !this.A0F.AAV());
         A0U(hashMap);
         A0S(hashMap);
         A0W(hashMap, i);
         A0V(hashMap);
         A0T(hashMap);
-        A0n(enumC1718ek, hashMap);
-        hashMap.put(A0H(0, 6, 24), String.valueOf(enumC1718ek.A00));
-        hashMap.put(A0H(59, 11, 57), String.valueOf(i6));
+        A0n(enumC1738ek, hashMap);
+        hashMap.put(A0H(0, 6, 24), String.valueOf(enumC1738ek.A00));
+        hashMap.put(A0H(59, 11, 57), String.valueOf(i4));
         return hashMap;
     }
 
@@ -131,7 +131,7 @@ public class EF {
         if (this.A07 && this.A06) {
             return;
         }
-        A0R(this.A0J, A0J(EnumC1718ek.A04));
+        A0R(this.A0J, A0J(EnumC1738ek.A04));
     }
 
     private void A0N() {
@@ -144,41 +144,41 @@ public class EF {
             throw new RuntimeException();
         }
         A0M[6] = "FJm4aBnN5GbAhpBnCwQDj";
-        A0R(str, A0J(EnumC1718ek.A0A));
+        A0R(str, A0J(EnumC1738ek.A0A));
     }
 
-    private final void A0P(int i, boolean z3, boolean z6) {
+    private final void A0P(int i, boolean z6, boolean z9) {
         if (i <= 0.0d || i < this.A02) {
             return;
         }
         if (i > this.A02) {
             this.A0C.A06((i - this.A02) / 1000.0f, A0F());
             double A9V = this.A0G.A9V();
-            if (A9V < 0.5d && C1290Up.A1i(this.A0D)) {
+            if (A9V < 0.5d && C1310Up.A1i(this.A0D)) {
                 this.A0D.A0F().AKk(String.valueOf(A9V));
             }
             this.A02 = i;
-            if (z6 || i - this.A01 >= 5000) {
+            if (z9 || i - this.A01 >= 5000) {
                 String str = this.A0J;
-                EnumC1718ek enumC1718ek = EnumC1718ek.A09;
-                int i6 = this.A00 + 1;
-                this.A00 = i6;
-                A0R(str, A0K(enumC1718ek, i, i6));
+                EnumC1738ek enumC1738ek = EnumC1738ek.A09;
+                int i4 = this.A00 + 1;
+                this.A00 = i4;
+                A0R(str, A0K(enumC1738ek, i, i4));
                 this.A01 = this.A02;
                 this.A0C.A05();
                 return;
             }
         }
-        if (z3) {
+        if (z6) {
             if (this.A07 && this.A06) {
                 return;
             }
             this.A06 = true;
             String str2 = this.A0J;
-            EnumC1718ek enumC1718ek2 = EnumC1718ek.A09;
-            int i9 = this.A00 + 1;
-            this.A00 = i9;
-            A0R(str2, A0K(enumC1718ek2, i, i9));
+            EnumC1738ek enumC1738ek2 = EnumC1738ek.A09;
+            int i6 = this.A00 + 1;
+            this.A00 = i6;
+            A0R(str2, A0K(enumC1738ek2, i, i6));
         }
     }
 
@@ -191,21 +191,21 @@ public class EF {
     }
 
     private void A0S(Map<String, String> params) {
-        C1129Of A03 = this.A0C.A03();
-        C1128Oe A00 = A03.A00();
+        C1149Of A03 = this.A0C.A03();
+        C1148Oe A00 = A03.A00();
         params.put(A0H(226, 3, 25), String.valueOf(A00.A00()));
         params.put(A0H(229, 3, 8), String.valueOf(A00.A06()));
         params.put(A0H(232, 5, 59), String.valueOf(A00.A03()));
-        params.put(A0H(BaseATView.a.f9774K, 8, 108), String.valueOf(A00.A02() * 1000.0d));
+        params.put(A0H(BaseATView.a.f10560K, 8, 108), String.valueOf(A00.A02() * 1000.0d));
         params.put(A0H(47, 12, 65), String.valueOf(A00.A01() * 1000.0d));
         params.put(A0H(122, 7, 81), String.valueOf(A00.A04() * 1000.0d));
         if (this.A04 != null) {
             params.put(A0H(220, 6, 19), this.A04);
         }
-        C1128Oe A01 = A03.A01();
+        C1148Oe A01 = A03.A01();
         params.put(A0H(195, 3, 83), String.valueOf(A01.A00()));
         params.put(A0H(198, 3, 76), String.valueOf(A01.A06()));
-        params.put(A0H(BaseATView.a.f9804z, 5, 61), String.valueOf(A01.A03()));
+        params.put(A0H(BaseATView.a.f10590z, 5, 61), String.valueOf(A01.A03()));
         params.put(A0H(22, 8, 35), String.valueOf(A01.A02() * 1000.0d));
         params.put(A0H(35, 12, 36), String.valueOf(A01.A01() * 1000.0d));
         params.put(A0H(115, 7, 52), String.valueOf(A01.A04() * 1000.0d));
@@ -226,14 +226,14 @@ public class EF {
         Rect rect = new Rect();
         this.A0F.getGlobalVisibleRect(rect);
         params.put(A0H(137, 2, 90), String.valueOf(rect.top));
-        params.put(A0H(a.f21732V, 2, 60), String.valueOf(rect.left));
-        params.put(A0H(a.f21730T, 2, 57), String.valueOf(this.A0F.getMeasuredHeight()));
+        params.put(A0H(a.f22519V, 2, 60), String.valueOf(rect.left));
+        params.put(A0H(a.f22517T, 2, 57), String.valueOf(this.A0F.getMeasuredHeight()));
         params.put(A0H(144, 2, 51), String.valueOf(this.A0F.getMeasuredWidth()));
         WindowManager windowManager = (WindowManager) this.A0D.getSystemService(A0H(237, 6, 112));
         DisplayMetrics displayMetrics = new DisplayMetrics();
         windowManager.getDefaultDisplay().getMetrics(displayMetrics);
-        params.put(A0H(BaseATView.a.f9769E, 3, 4), String.valueOf(displayMetrics.heightPixels));
-        params.put(A0H(BaseATView.a.f9772H, 3, 120), String.valueOf(displayMetrics.widthPixels));
+        params.put(A0H(BaseATView.a.f10555E, 3, 4), String.valueOf(displayMetrics.heightPixels));
+        params.put(A0H(BaseATView.a.f10558H, 3, 120), String.valueOf(displayMetrics.widthPixels));
     }
 
     private void A0W(Map<String, String> map, int i) {
@@ -262,14 +262,14 @@ public class EF {
         if (this.A07 && this.A06) {
             return;
         }
-        A0R(this.A0J, A0J(EnumC1718ek.A07));
+        A0R(this.A0J, A0J(EnumC1738ek.A07));
     }
 
     public final void A0e() {
         if (this.A07 && this.A06) {
             return;
         }
-        A0R(this.A0J, A0J(EnumC1718ek.A08));
+        A0R(this.A0J, A0J(EnumC1738ek.A08));
     }
 
     public final void A0f() {
@@ -303,7 +303,7 @@ public class EF {
             return;
         }
         this.A0C.A04();
-        A0R(this.A0J, A0J(EnumC1718ek.A05));
+        A0R(this.A0J, A0J(EnumC1738ek.A05));
         if (this.A05) {
             A0P(i, false, true);
         } else {
@@ -328,19 +328,19 @@ public class EF {
         A0P(i, false, false);
     }
 
-    public final void A0l(int i, int i6) {
+    public final void A0l(int i, int i4) {
         A0P(i, true, false);
-        this.A01 = i6;
-        this.A02 = i6;
+        this.A01 = i4;
+        this.A02 = i4;
         this.A0C.A05();
         this.A0C.A04();
     }
 
-    public final void A0m(InterfaceC1717ej interfaceC1717ej) {
-        this.A03 = interfaceC1717ej;
+    public final void A0m(InterfaceC1737ej interfaceC1737ej) {
+        this.A03 = interfaceC1737ej;
     }
 
-    public void A0n(EnumC1718ek enumC1718ek, Map<String, String> params) {
+    public void A0n(EnumC1738ek enumC1738ek, Map<String, String> params) {
     }
 
     public final void A0o(EF ef) {

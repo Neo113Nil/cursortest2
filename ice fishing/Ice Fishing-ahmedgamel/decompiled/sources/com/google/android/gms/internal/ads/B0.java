@@ -4,23 +4,23 @@ package com.google.android.gms.internal.ads;
 public final class B0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public boolean f23796a;
+    public boolean f24568a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f23797b;
+    public int f24569b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f23798c;
+    public int f24570c;
 
     /* renamed from: d, reason: collision with root package name */
-    public boolean f23799d;
+    public boolean f24571d;
 
     /* renamed from: e, reason: collision with root package name */
-    public int f23800e;
+    public int f24572e;
 
     /* renamed from: f, reason: collision with root package name */
-    public int f23801f;
+    public int f24573f;
 
     /* renamed from: g, reason: collision with root package name */
-    public int f23802g;
+    public int f24574g;
 }

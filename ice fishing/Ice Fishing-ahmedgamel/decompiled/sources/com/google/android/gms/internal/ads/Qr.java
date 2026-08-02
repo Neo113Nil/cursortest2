@@ -7,56 +7,56 @@ import java.util.concurrent.TimeUnit;
 public final class Qr implements Ps {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f27117a = 0;
+    public final /* synthetic */ int f27873a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    public final long f27118b;
+    public final long f27874b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Object f27119c;
+    public final Object f27875c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final Object f27120d;
+    public final Object f27876d;
 
-    public Qr(T2.a aVar, C3052cu c3052cu, long j6) {
-        this.f27119c = aVar;
-        this.f27120d = c3052cu;
-        this.f27118b = j6;
+    public Qr(V2.a aVar, C3075cu c3075cu, long j6) {
+        this.f27875c = aVar;
+        this.f27876d = c3075cu;
+        this.f27874b = j6;
     }
 
     @Override // com.google.android.gms.internal.ads.Ps
-    public final N3.a c() {
-        switch (this.f27117a) {
+    public final P3.a c() {
+        switch (this.f27873a) {
             case 0:
-                ((T2.a) this.f27119c).getClass();
-                return QC.c(new Rr((C3052cu) this.f27120d, System.currentTimeMillis(), this.f27118b));
+                ((V2.a) this.f27875c).getClass();
+                return QC.c(new Rr((C3075cu) this.f27876d, System.currentTimeMillis(), this.f27874b));
             default:
-                N3.a c9 = ((Ps) this.f27119c).c();
+                P3.a c9 = ((Ps) this.f27875c).c();
                 TimeUnit timeUnit = TimeUnit.MILLISECONDS;
-                if (((Boolean) q2.r.f40207e.f40210c.a(AbstractC3569ma.f32196a3)).booleanValue()) {
+                if (((Boolean) s2.r.f40506e.f40509c.a(AbstractC3592ma.f32975a3)).booleanValue()) {
                     timeUnit = TimeUnit.MICROSECONDS;
                 }
-                long j6 = this.f27118b;
+                long j6 = this.f27874b;
                 if (j6 > 0) {
-                    c9 = QC.s(c9, j6, timeUnit, (ScheduledExecutorService) this.f27120d);
+                    c9 = QC.s(c9, j6, timeUnit, (ScheduledExecutorService) this.f27876d);
                 }
-                return QC.r(c9, Throwable.class, new C4164xc(8, this), AbstractC3413jg.f31275h);
+                return QC.r(c9, Throwable.class, new C4187xc(8, this), AbstractC3436jg.f32062h);
         }
     }
 
     @Override // com.google.android.gms.internal.ads.Ps
     public final int f() {
-        switch (this.f27117a) {
+        switch (this.f27873a) {
             case 0:
                 return 4;
             default:
-                return ((Ps) this.f27119c).f();
+                return ((Ps) this.f27875c).f();
         }
     }
 
     public Qr(Ps ps, long j6, ScheduledExecutorService scheduledExecutorService) {
-        this.f27119c = ps;
-        this.f27118b = j6;
-        this.f27120d = scheduledExecutorService;
+        this.f27875c = ps;
+        this.f27874b = j6;
+        this.f27876d = scheduledExecutorService;
     }
 }

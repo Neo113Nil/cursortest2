@@ -1,6 +1,6 @@
 package m6;
 
-import e7.C4468a;
+import e7.C4485a;
 
 /* loaded from: classes2.dex */
 public interface n {
@@ -8,5 +8,5 @@ public interface n {
 
     n c();
 
-    t i(C4468a c4468a);
+    t m(C4485a c4485a);
 }

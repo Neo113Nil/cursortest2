@@ -16,9 +16,9 @@ public abstract class C5I {
                 String[] strArr = A00;
                 String str2 = strArr[4];
                 String str3 = strArr[6];
-                int i6 = str2.length();
+                int i4 = str2.length();
                 int attributeCount2 = str3.length();
-                if (i6 != attributeCount2) {
+                if (i4 != attributeCount2) {
                     throw new RuntimeException();
                 }
                 A00[3] = "CnKCr3L2gFKHIgDNDJx3U1eLsZv8S9Vf";

@@ -7,12 +7,12 @@ import java.util.logging.Logger;
 public abstract class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Logger f42285a = Logger.getLogger("okio.Okio");
+    public static final Logger f42254a = Logger.getLogger("okio.Okio");
 
     public static final boolean a(AssertionError assertionError) {
         if (assertionError.getCause() != null) {
             String message = assertionError.getMessage();
-            if (message != null ? j.U(message, "getsockname failed", false) : false) {
+            if (message != null ? j.k0(message, "getsockname failed", false) : false) {
                 return true;
             }
         }

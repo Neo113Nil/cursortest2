@@ -46,7 +46,7 @@ public class ThirdPartySelfRenderScreenATView extends BaseScreenATView implement
         try {
             Context context = getContext();
             CloseImageView closeImageView = new CloseImageView(context, null);
-            closeImageView.setBackgroundResource(q.a(context, "myoffer_base_close_icon", k.f19632c));
+            closeImageView.setBackgroundResource(q.a(context, "myoffer_base_close_icon", k.f20419c));
             int a9 = q.a(getContext(), 24.0f);
             FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(a9, a9);
             layoutParams.gravity = 5;
@@ -99,13 +99,13 @@ public class ThirdPartySelfRenderScreenATView extends BaseScreenATView implement
     }
 
     private boolean ai() {
-        x xVar = this.f9735f;
-        return xVar != null && xVar.f14163j == Integer.parseInt("2");
+        x xVar = this.f10521f;
+        return xVar != null && xVar.f14949j == Integer.parseInt("2");
     }
 
     @Override // com.anythink.basead.ui.BaseScreenATView
     public final void M() {
-        i iVar = this.f9861W;
+        i iVar = this.f10647W;
         if (iVar != null) {
             iVar.d();
         }
@@ -150,7 +150,7 @@ public class ThirdPartySelfRenderScreenATView extends BaseScreenATView implement
             this.al.clear(this);
             this.al.destroy();
         }
-        RelativeLayout relativeLayout = this.f9851M;
+        RelativeLayout relativeLayout = this.f10637M;
         if (relativeLayout != null) {
             relativeLayout.removeAllViews();
         }
@@ -174,8 +174,8 @@ public class ThirdPartySelfRenderScreenATView extends BaseScreenATView implement
 
             @Override // com.anythink.core.common.d.o
             public final void onAdClicked(View view) {
-                if (((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f9861W != null) {
-                    ((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f9861W.b(new j().a(1, com.anythink.basead.mixad.f.b.f9563a));
+                if (((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f10647W != null) {
+                    ((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f10647W.b(new j().a(1, com.anythink.basead.mixad.f.b.f10349a));
                 }
                 if (ThirdPartySelfRenderScreenATView.this.an != null) {
                     ThirdPartySelfRenderScreenATView.this.an.onAdClicked(view);
@@ -185,8 +185,8 @@ public class ThirdPartySelfRenderScreenATView extends BaseScreenATView implement
             @Override // com.anythink.core.common.d.o
             public final void onAdDislikeButtonClick() {
                 String unused = ThirdPartySelfRenderScreenATView.ah;
-                if (((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f9861W != null) {
-                    ((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f9861W.d();
+                if (((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f10647W != null) {
+                    ((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f10647W.d();
                 }
                 if (ThirdPartySelfRenderScreenATView.this.an != null) {
                     ThirdPartySelfRenderScreenATView.this.an.onClose();
@@ -199,8 +199,8 @@ public class ThirdPartySelfRenderScreenATView extends BaseScreenATView implement
                     return;
                 }
                 ThirdPartySelfRenderScreenATView.b(ThirdPartySelfRenderScreenATView.this);
-                if (((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f9861W != null) {
-                    ((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f9861W.a(new j());
+                if (((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f10647W != null) {
+                    ((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f10647W.a(new j());
                 }
                 if (ThirdPartySelfRenderScreenATView.this.an != null) {
                     ThirdPartySelfRenderScreenATView.this.an.onAdImpressed();
@@ -209,8 +209,8 @@ public class ThirdPartySelfRenderScreenATView extends BaseScreenATView implement
 
             @Override // com.anythink.core.common.d.o
             public final void onAdVideoEnd() {
-                if (((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f9861W != null) {
-                    ((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f9861W.b();
+                if (((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f10647W != null) {
+                    ((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f10647W.b();
                 }
                 if (ThirdPartySelfRenderScreenATView.this.an != null) {
                     ThirdPartySelfRenderScreenATView.this.an.onAdVideoEnd();
@@ -223,8 +223,8 @@ public class ThirdPartySelfRenderScreenATView extends BaseScreenATView implement
 
             @Override // com.anythink.core.common.d.o
             public final void onAdVideoStart() {
-                if (((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f9861W != null) {
-                    ((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f9861W.a();
+                if (((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f10647W != null) {
+                    ((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f10647W.a();
                 }
                 if (ThirdPartySelfRenderScreenATView.this.an != null) {
                     ThirdPartySelfRenderScreenATView.this.an.onAdVideoStart();
@@ -232,12 +232,12 @@ public class ThirdPartySelfRenderScreenATView extends BaseScreenATView implement
             }
 
             @Override // com.anythink.core.common.d.o
-            public final void onDeeplinkCallback(boolean z3) {
-                if (((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f9861W != null) {
-                    ((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f9861W.a(z3);
+            public final void onDeeplinkCallback(boolean z6) {
+                if (((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f10647W != null) {
+                    ((BaseScreenATView) ThirdPartySelfRenderScreenATView.this).f10647W.a(z6);
                 }
                 if (ThirdPartySelfRenderScreenATView.this.an != null) {
-                    ThirdPartySelfRenderScreenATView.this.an.onDeeplinkCallback(z3);
+                    ThirdPartySelfRenderScreenATView.this.an.onDeeplinkCallback(z6);
                 }
             }
 
@@ -271,8 +271,8 @@ public class ThirdPartySelfRenderScreenATView extends BaseScreenATView implement
         return true;
     }
 
-    public ThirdPartySelfRenderScreenATView(Context context, x xVar, w wVar, String str, int i, int i6, BaseAd baseAd, View view, ATNativeAdInfo.AdPrepareInfo adPrepareInfo) {
-        super(context, xVar, wVar, str, i, i6);
+    public ThirdPartySelfRenderScreenATView(Context context, x xVar, w wVar, String str, int i, int i4, BaseAd baseAd, View view, ATNativeAdInfo.AdPrepareInfo adPrepareInfo) {
+        super(context, xVar, wVar, str, i, i4);
         this.ao = true;
         this.ap = false;
         this.aq = new FrameLayout(getContext());
@@ -286,7 +286,7 @@ public class ThirdPartySelfRenderScreenATView extends BaseScreenATView implement
             this.am.setChoiceViewLayoutParams(layoutParams);
         }
         if (xVar != null) {
-            y yVar = xVar.f14168o;
+            y yVar = xVar.f14954o;
             if (yVar instanceof com.anythink.basead.mixad.e.c) {
                 this.ao = ((com.anythink.basead.mixad.e.c) yVar).d();
             }
@@ -338,7 +338,7 @@ public class ThirdPartySelfRenderScreenATView extends BaseScreenATView implement
             this.am.setChoiceViewLayoutParams(layoutParams);
         }
         if (xVar != null) {
-            y yVar = xVar.f14168o;
+            y yVar = xVar.f14954o;
             if (yVar instanceof com.anythink.basead.mixad.e.c) {
                 this.ao = ((com.anythink.basead.mixad.e.c) yVar).d();
             }

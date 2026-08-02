@@ -7,23 +7,23 @@ import com.anythink.core.api.ATBaseAdAdapter;
 public final class p {
 
     /* renamed from: a, reason: collision with root package name */
-    public ATBaseAdAdapter f14035a;
+    public ATBaseAdAdapter f14821a;
 
     /* renamed from: b, reason: collision with root package name */
-    private Throwable f14036b;
+    private Throwable f14822b;
 
     public p(ATBaseAdAdapter aTBaseAdAdapter) {
-        this.f14035a = aTBaseAdAdapter;
+        this.f14821a = aTBaseAdAdapter;
     }
 
     public final String a(String str) {
-        Throwable th = this.f14036b;
+        Throwable th = this.f14822b;
         if (th != null && !(th instanceof ClassNotFoundException)) {
             String message = th.getMessage();
             if (!TextUtils.isEmpty(message)) {
                 return message;
             }
-            String message2 = this.f14036b.getCause() != null ? this.f14036b.getCause().getMessage() : "";
+            String message2 = this.f14822b.getCause() != null ? this.f14822b.getCause().getMessage() : "";
             if (!TextUtils.isEmpty(message2)) {
                 return message2;
             }
@@ -32,6 +32,6 @@ public final class p {
     }
 
     public p(Throwable th) {
-        this.f14036b = th;
+        this.f14822b = th;
     }
 }

@@ -10,18 +10,18 @@ import java.util.WeakHashMap;
 public final class H implements ViewTreeObserver.OnGlobalLayoutListener, View.OnAttachStateChangeListener {
 
     /* renamed from: n, reason: collision with root package name */
-    public final WeakHashMap f2041n = new WeakHashMap();
+    public final WeakHashMap f2129n = new WeakHashMap();
 
     @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
     public final void onGlobalLayout() {
         if (Build.VERSION.SDK_INT < 28) {
-            for (Map.Entry entry : this.f2041n.entrySet()) {
+            for (Map.Entry entry : this.f2129n.entrySet()) {
                 View view = (View) entry.getKey();
                 boolean booleanValue = ((Boolean) entry.getValue()).booleanValue();
-                boolean z3 = view.isShown() && view.getWindowVisibility() == 0;
-                if (booleanValue != z3) {
-                    X.i(z3 ? 16 : 32, view);
-                    entry.setValue(Boolean.valueOf(z3));
+                boolean z6 = view.isShown() && view.getWindowVisibility() == 0;
+                if (booleanValue != z6) {
+                    X.i(z6 ? 16 : 32, view);
+                    entry.setValue(Boolean.valueOf(z6));
                 }
             }
         }

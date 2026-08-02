@@ -1,8 +1,7 @@
 package T2;
 
-/* loaded from: classes.dex */
-public final class a {
+import c3.AbstractC0549a;
 
-    /* renamed from: a, reason: collision with root package name */
-    public static final a f3077a = new a();
+/* loaded from: classes.dex */
+public final class a extends AbstractC0549a {
 }

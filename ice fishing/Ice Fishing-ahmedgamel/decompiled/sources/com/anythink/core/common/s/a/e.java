@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    private final Map<String, b> f16327a = Collections.synchronizedMap(new HashMap());
+    private final Map<String, b> f17114a = Collections.synchronizedMap(new HashMap());
 
     /* renamed from: com.anythink.core.common.s.a.e$1, reason: invalid class name */
     public class AnonymousClass1 extends b {
@@ -20,9 +20,9 @@ final class e {
         @Override // java.lang.Runnable
         public final void run() {
             try {
-                this.f16330c.execute(this.f16331d);
+                this.f17117c.execute(this.f17118d);
             } finally {
-                e.this.f16327a.remove(this.f16329b);
+                e.this.f17114a.remove(this.f17116b);
             }
         }
     }
@@ -34,17 +34,17 @@ final class e {
     public static abstract class b implements Runnable {
 
         /* renamed from: b, reason: collision with root package name */
-        final String f16329b;
+        final String f17116b;
 
         /* renamed from: c, reason: collision with root package name */
-        final a f16330c;
+        final a f17117c;
 
         /* renamed from: d, reason: collision with root package name */
-        AtomicBoolean f16331d = new AtomicBoolean();
+        AtomicBoolean f17118d = new AtomicBoolean();
 
         public b(String str, a aVar) {
-            this.f16329b = str;
-            this.f16330c = aVar;
+            this.f17116b = str;
+            this.f17117c = aVar;
         }
     }
 
@@ -53,21 +53,21 @@ final class e {
     }
 
     public final boolean a() {
-        return !this.f16327a.isEmpty();
+        return !this.f17114a.isEmpty();
     }
 
     public final boolean a(String str) {
-        b bVar = this.f16327a.get(str);
+        b bVar = this.f17114a.get(str);
         if (bVar == null) {
             return false;
         }
-        bVar.f16331d.set(true);
+        bVar.f17118d.set(true);
         return true;
     }
 
     public final void a(String str, a aVar) {
         AnonymousClass1 anonymousClass1 = new AnonymousClass1(str, aVar);
-        this.f16327a.put(str, anonymousClass1);
+        this.f17114a.put(str, anonymousClass1);
         h.a().execute(anonymousClass1);
     }
 }

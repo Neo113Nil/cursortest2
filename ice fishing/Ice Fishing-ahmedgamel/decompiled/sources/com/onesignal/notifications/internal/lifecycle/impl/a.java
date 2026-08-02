@@ -1,38 +1,38 @@
 package com.onesignal.notifications.internal.lifecycle.impl;
 
-import D.y;
+import D.x;
 import I7.p;
-import S7.AbstractC0406y;
-import S7.InterfaceC0404w;
+import S7.AbstractC0410y;
+import S7.InterfaceC0408w;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import com.onesignal.common.AndroidUtils;
 import com.onesignal.common.g;
-import j5.InterfaceC4611a;
+import j5.InterfaceC4621a;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
-import l5.InterfaceC4665a;
+import l5.InterfaceC4677a;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import t4.C5040a;
-import t5.C5043b;
+import t4.C5041a;
+import t5.C5044b;
 import u7.v;
-import v7.C5127h;
-import x5.InterfaceC5198a;
-import z7.InterfaceC5267d;
+import v7.C5117h;
+import x5.InterfaceC5193a;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class a implements x5.b, com.onesignal.notifications.internal.a {
     public static final C0233a Companion = new C0233a(null);
     private static final long MILLIS_PER_SECOND = 1000;
     private static final int RETRY_BACKOFF_MS = 15000;
-    private final InterfaceC4611a _analyticsTracker;
+    private final InterfaceC4621a _analyticsTracker;
     private final x4.f _applicationService;
-    private final InterfaceC4665a _backend;
+    private final InterfaceC4677a _backend;
     private final com.onesignal.core.internal.config.c _configModelStore;
     private final C4.c _deviceService;
     private final K5.a _influenceManager;
@@ -44,7 +44,7 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
     private final com.onesignal.common.events.b extWillShowInForegroundCallback;
     private final com.onesignal.common.events.a intLifecycleCallback;
     private final Set<String> postedOpenedNotifIds;
-    private final C5127h unprocessedOpenedNotifs;
+    private final C5117h unprocessedOpenedNotifs;
 
     /* renamed from: com.onesignal.notifications.internal.lifecycle.impl.a$a, reason: collision with other inner class name */
     public static final class C0233a {
@@ -71,7 +71,7 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
                 throw new ClassCastException();
             }
             invoke((i5.h) null);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(i5.h it) {
@@ -85,8 +85,8 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
         int label;
         /* synthetic */ Object result;
 
-        public c(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public c(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -105,16 +105,16 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public d(kotlin.jvm.internal.p pVar, Activity activity, JSONObject jSONObject, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public d(kotlin.jvm.internal.p pVar, Activity activity, JSONObject jSONObject, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$canOpen = pVar;
             this.$activity = activity;
             this.$data = jSONObject;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            d dVar = new d(this.$canOpen, this.$activity, this.$data, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            d dVar = new d(this.$canOpen, this.$activity, this.$data, interfaceC5240d);
             dVar.L$0 = obj;
             return dVar;
         }
@@ -122,17 +122,17 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
             kotlin.jvm.internal.p pVar;
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
-                InterfaceC5198a interfaceC5198a = (InterfaceC5198a) this.L$0;
+                Q3.b.s(obj);
+                InterfaceC5193a interfaceC5193a = (InterfaceC5193a) this.L$0;
                 kotlin.jvm.internal.p pVar2 = this.$canOpen;
                 Activity activity = this.$activity;
                 JSONObject jSONObject = this.$data;
                 this.L$0 = pVar2;
                 this.label = 1;
-                obj = interfaceC5198a.canOpenNotification(activity, jSONObject, this);
+                obj = interfaceC5193a.canOpenNotification(activity, jSONObject, this);
                 if (obj == aVar) {
                     return aVar;
                 }
@@ -142,15 +142,15 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 pVar = (kotlin.jvm.internal.p) this.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            pVar.f38715n = ((Boolean) obj).booleanValue();
-            return v.f41353a;
+            pVar.f38642n = ((Boolean) obj).booleanValue();
+            return v.f41073a;
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC5198a interfaceC5198a, InterfaceC5267d interfaceC5267d) {
-            return ((d) create(interfaceC5198a, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5193a interfaceC5193a, InterfaceC5240d interfaceC5240d) {
+            return ((d) create(interfaceC5193a, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -159,8 +159,8 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
         int label;
         /* synthetic */ Object result;
 
-        public e(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public e(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -178,15 +178,15 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public f(kotlin.jvm.internal.p pVar, JSONObject jSONObject, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public f(kotlin.jvm.internal.p pVar, JSONObject jSONObject, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$canReceive = pVar;
             this.$jsonPayload = jSONObject;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            f fVar = new f(this.$canReceive, this.$jsonPayload, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            f fVar = new f(this.$canReceive, this.$jsonPayload, interfaceC5240d);
             fVar.L$0 = obj;
             return fVar;
         }
@@ -194,16 +194,16 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
             kotlin.jvm.internal.p pVar;
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
-                InterfaceC5198a interfaceC5198a = (InterfaceC5198a) this.L$0;
+                Q3.b.s(obj);
+                InterfaceC5193a interfaceC5193a = (InterfaceC5193a) this.L$0;
                 kotlin.jvm.internal.p pVar2 = this.$canReceive;
                 JSONObject jSONObject = this.$jsonPayload;
                 this.L$0 = pVar2;
                 this.label = 1;
-                obj = interfaceC5198a.canReceiveNotification(jSONObject, this);
+                obj = interfaceC5193a.canReceiveNotification(jSONObject, this);
                 if (obj == aVar) {
                     return aVar;
                 }
@@ -213,15 +213,15 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 pVar = (kotlin.jvm.internal.p) this.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            pVar.f38715n = ((Boolean) obj).booleanValue();
-            return v.f41353a;
+            pVar.f38642n = ((Boolean) obj).booleanValue();
+            return v.f41073a;
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC5198a interfaceC5198a, InterfaceC5267d interfaceC5267d) {
-            return ((f) create(interfaceC5198a, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5193a interfaceC5193a, InterfaceC5240d interfaceC5240d) {
+            return ((f) create(interfaceC5193a, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -236,8 +236,8 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
         int label;
         /* synthetic */ Object result;
 
-        public g(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public g(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -263,7 +263,7 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
                 throw new ClassCastException();
             }
             invoke((i5.j) null);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(i5.j it) {
@@ -287,7 +287,7 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
                 throw new ClassCastException();
             }
             invoke((i5.l) null);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(i5.l it) {
@@ -302,8 +302,8 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
         int label;
         /* synthetic */ Object result;
 
-        public j(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public j(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -322,8 +322,8 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public k(String str, String str2, String str3, C4.a aVar, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public k(String str, String str2, String str3, C4.a aVar, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$appId = str;
             this.$notificationId = str2;
             this.$subscriptionId = str3;
@@ -331,16 +331,16 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return a.this.new k(this.$appId, this.$notificationId, this.$subscriptionId, this.$deviceType, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return a.this.new k(this.$appId, this.$notificationId, this.$subscriptionId, this.$deviceType, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 a aVar2 = a.this;
                 String str = this.$appId;
                 String str2 = this.$notificationId;
@@ -354,14 +354,14 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return v.f41353a;
+            return v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((k) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((k) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -375,20 +375,20 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Exception) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(Exception ex) {
             kotlin.jvm.internal.h.e(ex, "ex");
-            if (!(ex instanceof C5040a)) {
+            if (!(ex instanceof C5041a)) {
                 com.onesignal.debug.internal.logging.b.info("Unexpected error in notification opened confirmation", ex);
                 return;
             }
             StringBuilder sb = new StringBuilder("Notification opened confirmation failed with statusCode: ");
-            C5040a c5040a = (C5040a) ex;
-            sb.append(c5040a.getStatusCode());
+            C5041a c5041a = (C5041a) ex;
+            sb.append(c5041a.getStatusCode());
             sb.append(" response: ");
-            sb.append(c5040a.getResponse());
+            sb.append(c5041a.getResponse());
             com.onesignal.debug.internal.logging.b.info$default(sb.toString(), null, 2, null);
         }
     }
@@ -408,7 +408,7 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
                 throw new ClassCastException();
             }
             invoke((i5.h) null);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(i5.h it) {
@@ -421,8 +421,8 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
         int label;
         /* synthetic */ Object result;
 
-        public n(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public n(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -439,35 +439,35 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public o(Activity activity, Intent intent, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public o(Activity activity, Intent intent, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$activity = activity;
             this.$intent = intent;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return new o(this.$activity, this.$intent, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return new o(this.$activity, this.$intent, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((o) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((o) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             this.$activity.startActivity(this.$intent);
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
-    public a(x4.f _applicationService, K4.a _time, com.onesignal.core.internal.config.c _configModelStore, K5.a _influenceManager, Z5.b _subscriptionManager, C4.c _deviceService, InterfaceC4665a _backend, B5.b _receiveReceiptWorkManager, InterfaceC4611a _analyticsTracker) {
+    public a(x4.f _applicationService, K4.a _time, com.onesignal.core.internal.config.c _configModelStore, K5.a _influenceManager, Z5.b _subscriptionManager, C4.c _deviceService, InterfaceC4677a _backend, B5.b _receiveReceiptWorkManager, InterfaceC4621a _analyticsTracker) {
         kotlin.jvm.internal.h.e(_applicationService, "_applicationService");
         kotlin.jvm.internal.h.e(_time, "_time");
         kotlin.jvm.internal.h.e(_configModelStore, "_configModelStore");
@@ -490,7 +490,7 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
         this.extRemoteReceivedCallback = new com.onesignal.common.events.a();
         this.extWillShowInForegroundCallback = new com.onesignal.common.events.b();
         this.extOpenedCallback = new com.onesignal.common.events.b();
-        this.unprocessedOpenedNotifs = new C5127h();
+        this.unprocessedOpenedNotifs = new C5117h();
         this.postedOpenedNotifIds = new LinkedHashSet();
         setupNotificationServiceExtension(_applicationService.getAppContext());
     }
@@ -505,41 +505,41 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object confirmNotificationOpened(String str, String str2, String str3, C4.a aVar, InterfaceC5267d interfaceC5267d) {
+    public final Object confirmNotificationOpened(String str, String str2, String str3, C4.a aVar, InterfaceC5240d interfaceC5240d) {
         g gVar;
         a aVar2;
-        int i6;
+        int i4;
         String str4;
         String str5;
         String str6;
         C4.a aVar3;
         g gVar2;
         a aVar4;
+        int i6;
         int i9;
-        int i10;
         a aVar5;
         String str7;
         String str8;
         String str9;
         C4.a aVar6;
+        int i10;
         int i11;
-        int i12;
-        C5040a e9;
+        C5041a e9;
         com.onesignal.common.g gVar3;
         char c9;
-        if (interfaceC5267d instanceof g) {
-            gVar = (g) interfaceC5267d;
-            int i13 = gVar.label;
-            if ((i13 & Integer.MIN_VALUE) != 0) {
-                gVar.label = i13 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof g) {
+            gVar = (g) interfaceC5240d;
+            int i12 = gVar.label;
+            if ((i12 & Integer.MIN_VALUE) != 0) {
+                gVar.label = i12 - Integer.MIN_VALUE;
                 aVar2 = this;
                 Object obj = gVar.result;
-                A7.a aVar7 = A7.a.f58n;
-                i6 = gVar.label;
-                v vVar = v.f41353a;
-                int i14 = 1;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar7 = A7.a.f215n;
+                i4 = gVar.label;
+                v vVar = v.f41073a;
+                int i13 = 1;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     int maxNetworkRequestAttemptCount = com.onesignal.common.g.INSTANCE.getMaxNetworkRequestAttemptCount();
                     if (1 <= maxNetworkRequestAttemptCount) {
                         str4 = str;
@@ -548,58 +548,58 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
                         aVar3 = aVar;
                         gVar2 = gVar;
                         aVar4 = aVar2;
-                        i9 = 1;
-                        i10 = maxNetworkRequestAttemptCount;
-                        InterfaceC4665a interfaceC4665a = aVar4._backend;
+                        i6 = 1;
+                        i9 = maxNetworkRequestAttemptCount;
+                        InterfaceC4677a interfaceC4677a = aVar4._backend;
                         gVar2.L$0 = aVar4;
                         gVar2.L$1 = str4;
                         gVar2.L$2 = str5;
                         gVar2.L$3 = str6;
                         gVar2.L$4 = aVar3;
-                        gVar2.I$0 = i9;
-                        gVar2.I$1 = i10;
-                        gVar2.label = i14;
-                        if (interfaceC4665a.updateNotificationAsOpened(str4, str5, str6, aVar3, gVar2) != aVar7) {
+                        gVar2.I$0 = i6;
+                        gVar2.I$1 = i9;
+                        gVar2.label = i13;
+                        if (interfaceC4677a.updateNotificationAsOpened(str4, str5, str6, aVar3, gVar2) != aVar7) {
                         }
                     }
                     return vVar;
                 }
-                if (i6 == 1) {
-                    i12 = gVar.I$1;
-                    i11 = gVar.I$0;
+                if (i4 == 1) {
+                    i11 = gVar.I$1;
+                    i10 = gVar.I$0;
                     aVar6 = (C4.a) gVar.L$4;
                     str9 = (String) gVar.L$3;
                     str8 = (String) gVar.L$2;
                     str7 = (String) gVar.L$1;
                     aVar5 = (a) gVar.L$0;
                     try {
-                        com.bumptech.glide.d.k(obj);
-                    } catch (C5040a e10) {
+                        Q3.b.s(obj);
+                    } catch (C5041a e10) {
                         e9 = e10;
                         gVar3 = com.onesignal.common.g.INSTANCE;
-                        if (gVar3.getResponseStatusType(e9.getStatusCode()) == g.a.RETRYABLE || i11 >= gVar3.getMaxNetworkRequestAttemptCount()) {
+                        if (gVar3.getResponseStatusType(e9.getStatusCode()) == g.a.RETRYABLE || i10 >= gVar3.getMaxNetworkRequestAttemptCount()) {
                             throw e9;
                         }
-                        long max = Math.max(e9.getRetryAfterSeconds() != null ? r7.intValue() * MILLIS_PER_SECOND : 0L, i11 * 15000);
-                        StringBuilder i15 = AbstractC4404f.i(i11, "Notification opened confirmation attempt ", " failed (statusCode: ");
-                        i15.append(e9.getStatusCode());
-                        i15.append("), retrying in ");
-                        i15.append(max);
-                        i15.append("ms");
+                        long max = Math.max(e9.getRetryAfterSeconds() != null ? r7.intValue() * MILLIS_PER_SECOND : 0L, i10 * 15000);
+                        StringBuilder k9 = Wv.k(i10, "Notification opened confirmation attempt ", " failed (statusCode: ");
+                        k9.append(e9.getStatusCode());
+                        k9.append("), retrying in ");
+                        k9.append(max);
+                        k9.append("ms");
                         c9 = 2;
-                        com.onesignal.debug.internal.logging.b.info$default(i15.toString(), null, 2, null);
+                        com.onesignal.debug.internal.logging.b.info$default(k9.toString(), null, 2, null);
                         gVar.L$0 = aVar5;
                         gVar.L$1 = str7;
                         gVar.L$2 = str8;
                         gVar.L$3 = str9;
                         gVar.L$4 = aVar6;
-                        gVar.I$0 = i11;
-                        gVar.I$1 = i12;
+                        gVar.I$0 = i10;
+                        gVar.I$1 = i11;
                         gVar.label = 2;
-                        if (AbstractC0406y.f(max, gVar) != aVar7) {
+                        if (AbstractC0410y.f(max, gVar) != aVar7) {
                             a aVar8 = aVar5;
                             gVar2 = gVar;
-                            i10 = i12;
+                            i9 = i11;
                             aVar4 = aVar8;
                             String str10 = str7;
                             aVar3 = aVar6;
@@ -607,39 +607,39 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
                             String str11 = str8;
                             str6 = str9;
                             str5 = str11;
-                            if (i11 != i10) {
+                            if (i10 != i9) {
                             }
                             return vVar;
                         }
                     }
                 }
-                if (i6 != 2) {
+                if (i4 != 2) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                int i16 = gVar.I$1;
-                i11 = gVar.I$0;
+                int i14 = gVar.I$1;
+                i10 = gVar.I$0;
                 C4.a aVar9 = (C4.a) gVar.L$4;
                 String str12 = (String) gVar.L$3;
                 String str13 = (String) gVar.L$2;
                 String str14 = (String) gVar.L$1;
                 a aVar10 = (a) gVar.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 gVar2 = gVar;
-                i10 = i16;
+                i9 = i14;
                 aVar4 = aVar10;
                 aVar3 = aVar9;
                 str4 = str14;
                 str6 = str12;
                 str5 = str13;
                 c9 = 2;
-                if (i11 != i10) {
-                    i9 = i11 + 1;
-                    i14 = 1;
+                if (i10 != i9) {
+                    i6 = i10 + 1;
+                    i13 = 1;
                     try {
-                    } catch (C5040a e11) {
+                    } catch (C5041a e11) {
                         e9 = e11;
                         a aVar11 = aVar4;
-                        i12 = i10;
+                        i11 = i9;
                         gVar = gVar2;
                         aVar5 = aVar11;
                         C4.a aVar12 = aVar3;
@@ -648,34 +648,34 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
                         String str15 = str6;
                         str8 = str5;
                         str9 = str15;
-                        i11 = i9;
+                        i10 = i6;
                         gVar3 = com.onesignal.common.g.INSTANCE;
                         if (gVar3.getResponseStatusType(e9.getStatusCode()) == g.a.RETRYABLE) {
                         }
                         throw e9;
                     }
-                    InterfaceC4665a interfaceC4665a2 = aVar4._backend;
+                    InterfaceC4677a interfaceC4677a2 = aVar4._backend;
                     gVar2.L$0 = aVar4;
                     gVar2.L$1 = str4;
                     gVar2.L$2 = str5;
                     gVar2.L$3 = str6;
                     gVar2.L$4 = aVar3;
-                    gVar2.I$0 = i9;
-                    gVar2.I$1 = i10;
-                    gVar2.label = i14;
-                    return interfaceC4665a2.updateNotificationAsOpened(str4, str5, str6, aVar3, gVar2) != aVar7 ? aVar7 : vVar;
+                    gVar2.I$0 = i6;
+                    gVar2.I$1 = i9;
+                    gVar2.label = i13;
+                    return interfaceC4677a2.updateNotificationAsOpened(str4, str5, str6, aVar3, gVar2) != aVar7 ? aVar7 : vVar;
                 }
                 return vVar;
             }
         }
         aVar2 = this;
-        gVar = aVar2.new g(interfaceC5267d);
+        gVar = aVar2.new g(interfaceC5240d);
         Object obj2 = gVar.result;
-        A7.a aVar72 = A7.a.f58n;
-        i6 = gVar.label;
-        v vVar2 = v.f41353a;
-        int i142 = 1;
-        if (i6 != 0) {
+        A7.a aVar72 = A7.a.f215n;
+        i4 = gVar.label;
+        v vVar2 = v.f41073a;
+        int i132 = 1;
+        if (i4 != 0) {
         }
     }
 
@@ -708,9 +708,9 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
         kotlin.jvm.internal.h.e(callback, "callback");
         this.extOpenedCallback.subscribe(callback);
         if (this.extOpenedCallback.getHasSubscribers()) {
-            C5127h c5127h = this.unprocessedOpenedNotifs;
-            kotlin.jvm.internal.h.e(c5127h, "<this>");
-            if (c5127h.isEmpty()) {
+            C5117h c5117h = this.unprocessedOpenedNotifs;
+            kotlin.jvm.internal.h.e(c5117h, "<this>");
+            if (c5117h.isEmpty()) {
                 return;
             }
             Iterator<E> it = this.unprocessedOpenedNotifs.iterator();
@@ -733,22 +733,22 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object canOpenNotification(Activity activity, JSONObject jSONObject, InterfaceC5267d interfaceC5267d) {
+    public Object canOpenNotification(Activity activity, JSONObject jSONObject, InterfaceC5240d interfaceC5240d) {
         c cVar;
-        int i6;
+        int i4;
         kotlin.jvm.internal.p pVar;
-        if (interfaceC5267d instanceof c) {
-            cVar = (c) interfaceC5267d;
-            int i9 = cVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                cVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof c) {
+            cVar = (c) interfaceC5240d;
+            int i6 = cVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                cVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = cVar.result;
-                A7.a aVar = A7.a.f58n;
-                i6 = cVar.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar = A7.a.f215n;
+                i4 = cVar.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     kotlin.jvm.internal.p pVar2 = new kotlin.jvm.internal.p();
-                    pVar2.f38715n = true;
+                    pVar2.f38642n = true;
                     com.onesignal.common.events.a aVar2 = this.intLifecycleCallback;
                     d dVar = new d(pVar2, activity, jSONObject, null);
                     cVar.L$0 = pVar2;
@@ -758,22 +758,22 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
                     }
                     pVar = pVar2;
                 } else {
-                    if (i6 != 1) {
+                    if (i4 != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     pVar = (kotlin.jvm.internal.p) cVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
-                return Boolean.valueOf(pVar.f38715n);
+                return Boolean.valueOf(pVar.f38642n);
             }
         }
-        cVar = new c(interfaceC5267d);
+        cVar = new c(interfaceC5240d);
         Object obj2 = cVar.result;
-        A7.a aVar3 = A7.a.f58n;
-        i6 = cVar.label;
-        if (i6 != 0) {
+        A7.a aVar3 = A7.a.f215n;
+        i4 = cVar.label;
+        if (i4 != 0) {
         }
-        return Boolean.valueOf(pVar.f38715n);
+        return Boolean.valueOf(pVar.f38642n);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:15:0x0033  */
@@ -782,22 +782,22 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object canReceiveNotification(JSONObject jSONObject, InterfaceC5267d interfaceC5267d) {
+    public Object canReceiveNotification(JSONObject jSONObject, InterfaceC5240d interfaceC5240d) {
         e eVar;
-        int i6;
+        int i4;
         kotlin.jvm.internal.p pVar;
-        if (interfaceC5267d instanceof e) {
-            eVar = (e) interfaceC5267d;
-            int i9 = eVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                eVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof e) {
+            eVar = (e) interfaceC5240d;
+            int i6 = eVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                eVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = eVar.result;
-                A7.a aVar = A7.a.f58n;
-                i6 = eVar.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar = A7.a.f215n;
+                i4 = eVar.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     kotlin.jvm.internal.p pVar2 = new kotlin.jvm.internal.p();
-                    pVar2.f38715n = true;
+                    pVar2.f38642n = true;
                     com.onesignal.common.events.a aVar2 = this.intLifecycleCallback;
                     f fVar = new f(pVar2, jSONObject, null);
                     eVar.L$0 = pVar2;
@@ -807,22 +807,22 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
                     }
                     pVar = pVar2;
                 } else {
-                    if (i6 != 1) {
+                    if (i4 != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     pVar = (kotlin.jvm.internal.p) eVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
-                return Boolean.valueOf(pVar.f38715n);
+                return Boolean.valueOf(pVar.f38642n);
             }
         }
-        eVar = new e(interfaceC5267d);
+        eVar = new e(interfaceC5240d);
         Object obj2 = eVar.result;
-        A7.a aVar3 = A7.a.f58n;
-        i6 = eVar.label;
-        if (i6 != 0) {
+        A7.a aVar3 = A7.a.f215n;
+        i4 = eVar.label;
+        if (i4 != 0) {
         }
-        return Boolean.valueOf(pVar.f38715n);
+        return Boolean.valueOf(pVar.f38642n);
     }
 
     @Override // x5.b
@@ -845,22 +845,22 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object notificationOpened(Activity activity, JSONArray jSONArray, InterfaceC5267d interfaceC5267d) {
+    public Object notificationOpened(Activity activity, JSONArray jSONArray, InterfaceC5240d interfaceC5240d) {
         j jVar;
-        int i6;
+        int i4;
         a aVar;
         JSONArray jSONArray2;
-        if (interfaceC5267d instanceof j) {
-            jVar = (j) interfaceC5267d;
-            int i9 = jVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                jVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof j) {
+            jVar = (j) interfaceC5240d;
+            int i6 = jVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                jVar.label = i6 - Integer.MIN_VALUE;
                 j jVar2 = jVar;
                 Object obj = jVar2.result;
-                A7.a aVar2 = A7.a.f58n;
-                i6 = jVar2.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar2 = A7.a.f215n;
+                i4 = jVar2.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     String appId = ((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getAppId();
                     if (appId == null) {
                         appId = "";
@@ -869,8 +869,8 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
                     String id = this._subscriptionManager.getSubscriptions().getPush().getId();
                     C4.a deviceType = this._deviceService.getDeviceType();
                     int length = jSONArray.length();
-                    for (int i10 = 0; i10 < length; i10++) {
-                        String oSNotificationIdFromJson = t5.c.INSTANCE.getOSNotificationIdFromJson((JSONObject) jSONArray.get(i10));
+                    for (int i9 = 0; i9 < length; i9++) {
+                        String oSNotificationIdFromJson = t5.c.INSTANCE.getOSNotificationIdFromJson((JSONObject) jSONArray.get(i9));
                         if (oSNotificationIdFromJson != null && !this.postedOpenedNotifIds.contains(oSNotificationIdFromJson)) {
                             this.postedOpenedNotifIds.add(oSNotificationIdFromJson);
                             com.onesignal.common.threading.c.suspendifyWithErrorHandling$default(true, new k(str, oSNotificationIdFromJson, id, deviceType, null), l.INSTANCE, null, 8, null);
@@ -878,10 +878,10 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
                     }
                     t5.e eVar = t5.e.INSTANCE;
                     com.onesignal.notifications.internal.d generateNotificationOpenedResult$com_onesignal_notifications = eVar.generateNotificationOpenedResult$com_onesignal_notifications(jSONArray, this._time);
-                    InterfaceC4611a interfaceC4611a = this._analyticsTracker;
+                    InterfaceC4621a interfaceC4621a = this._analyticsTracker;
                     String notificationId = generateNotificationOpenedResult$com_onesignal_notifications.getNotification().getNotificationId();
                     kotlin.jvm.internal.h.b(notificationId);
-                    interfaceC4611a.trackOpenedEvent(notificationId, eVar.getCampaignNameFromNotification(generateNotificationOpenedResult$com_onesignal_notifications.getNotification()));
+                    interfaceC4621a.trackOpenedEvent(notificationId, eVar.getCampaignNameFromNotification(generateNotificationOpenedResult$com_onesignal_notifications.getNotification()));
                     String latestNotificationId = getLatestNotificationId(jSONArray);
                     if (shouldInitDirectSessionFromNotificationOpen(activity)) {
                         this._applicationService.setEntryState(x4.b.NOTIFICATION_CLICK);
@@ -898,35 +898,35 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
                     aVar = this;
                     jSONArray2 = jSONArray;
                 } else {
-                    if (i6 != 1) {
+                    if (i4 != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     jSONArray2 = (JSONArray) jVar2.L$1;
                     aVar = (a) jVar2.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 if (aVar.extOpenedCallback.getHasSubscribers()) {
                     aVar.unprocessedOpenedNotifs.addLast(jSONArray2);
                 } else {
                     aVar.extOpenedCallback.fireOnMain(new m(t5.e.INSTANCE.generateNotificationOpenedResult$com_onesignal_notifications(jSONArray2, aVar._time)));
                 }
-                return v.f41353a;
+                return v.f41073a;
             }
         }
-        jVar = new j(interfaceC5267d);
+        jVar = new j(interfaceC5240d);
         j jVar22 = jVar;
         Object obj2 = jVar22.result;
-        A7.a aVar22 = A7.a.f58n;
-        i6 = jVar22.label;
-        if (i6 != 0) {
+        A7.a aVar22 = A7.a.f215n;
+        i4 = jVar22.label;
+        if (i4 != 0) {
         }
         if (aVar.extOpenedCallback.getHasSubscribers()) {
         }
-        return v.f41353a;
+        return v.f41073a;
     }
 
     @Override // x5.b
-    public Object notificationReceived(t5.d dVar, InterfaceC5267d interfaceC5267d) {
+    public Object notificationReceived(t5.d dVar, InterfaceC5240d interfaceC5240d) {
         this._receiveReceiptWorkManager.enqueueReceiveReceipt(dVar.getApiNotificationId());
         this._influenceManager.onNotificationReceived(dVar.getApiNotificationId());
         try {
@@ -934,14 +934,14 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
             jSONObject.put("androidNotificationId", dVar.getAndroidId());
             t5.e eVar = t5.e.INSTANCE;
             com.onesignal.notifications.internal.d generateNotificationOpenedResult$com_onesignal_notifications = eVar.generateNotificationOpenedResult$com_onesignal_notifications(com.onesignal.common.f.INSTANCE.wrapInJsonArray(jSONObject), this._time);
-            InterfaceC4611a interfaceC4611a = this._analyticsTracker;
+            InterfaceC4621a interfaceC4621a = this._analyticsTracker;
             String notificationId = generateNotificationOpenedResult$com_onesignal_notifications.getNotification().getNotificationId();
             kotlin.jvm.internal.h.b(notificationId);
-            interfaceC4611a.trackReceivedEvent(notificationId, eVar.getCampaignNameFromNotification(generateNotificationOpenedResult$com_onesignal_notifications.getNotification()));
+            interfaceC4621a.trackReceivedEvent(notificationId, eVar.getCampaignNameFromNotification(generateNotificationOpenedResult$com_onesignal_notifications.getNotification()));
         } catch (JSONException e9) {
             e9.printStackTrace();
         }
-        return v.f41353a;
+        return v.f41073a;
     }
 
     /* JADX WARN: Can't wrap try/catch for region: R(10:0|1|(2:3|(7:5|6|7|(1:(1:10)(2:16|17))(3:18|19|(2:21|(1:23))(1:24))|11|12|13))|31|6|7|(0)(0)|11|12|13) */
@@ -975,50 +975,50 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object openDestinationActivity(Activity activity, JSONArray jSONArray, InterfaceC5267d interfaceC5267d) {
+    public Object openDestinationActivity(Activity activity, JSONArray jSONArray, InterfaceC5240d interfaceC5240d) {
         n nVar;
-        int i6;
-        if (interfaceC5267d instanceof n) {
-            nVar = (n) interfaceC5267d;
-            int i9 = nVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                nVar.label = i9 - Integer.MIN_VALUE;
+        int i4;
+        if (interfaceC5240d instanceof n) {
+            nVar = (n) interfaceC5240d;
+            int i6 = nVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                nVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = nVar.result;
-                A7.a aVar = A7.a.f58n;
-                i6 = nVar.label;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
+                A7.a aVar = A7.a.f215n;
+                i4 = nVar.label;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
                     JSONObject jSONObject = jSONArray.getJSONObject(0);
-                    C5043b c5043b = C5043b.INSTANCE;
+                    C5044b c5044b = C5044b.INSTANCE;
                     kotlin.jvm.internal.h.b(jSONObject);
-                    Intent intentVisible = c5043b.create(activity, jSONObject).getIntentVisible();
+                    Intent intentVisible = c5044b.create(activity, jSONObject).getIntentVisible();
                     if (intentVisible != null) {
                         com.onesignal.debug.internal.logging.b.debug$default("SDK running startActivity with Intent: " + intentVisible, null, 2, null);
-                        T7.e eVar = X7.o.f3856a;
+                        T7.e eVar = X7.o.f3811a;
                         o oVar = new o(activity, intentVisible, null);
                         nVar.label = 1;
-                        if (AbstractC0406y.y(eVar, oVar, nVar) == aVar) {
+                        if (AbstractC0410y.y(eVar, oVar, nVar) == aVar) {
                             return aVar;
                         }
                     } else {
                         com.onesignal.debug.internal.logging.b.debug$default("SDK not showing an Activity automatically due to it's settings.", null, 2, null);
                     }
                 } else {
-                    if (i6 != 1) {
+                    if (i4 != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
-                return v.f41353a;
+                return v.f41073a;
             }
         }
-        nVar = new n(interfaceC5267d);
+        nVar = new n(interfaceC5240d);
         Object obj2 = nVar.result;
-        A7.a aVar2 = A7.a.f58n;
-        i6 = nVar.label;
-        if (i6 != 0) {
+        A7.a aVar2 = A7.a.f215n;
+        i4 = nVar.label;
+        if (i4 != 0) {
         }
-        return v.f41353a;
+        return v.f41073a;
     }
 
     @Override // x5.b
@@ -1034,8 +1034,8 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
     }
 
     @Override // x5.b
-    public void setInternalNotificationLifecycleCallback(InterfaceC5198a interfaceC5198a) {
-        this.intLifecycleCallback.set(interfaceC5198a);
+    public void setInternalNotificationLifecycleCallback(InterfaceC5193a interfaceC5193a) {
+        this.intLifecycleCallback.set(interfaceC5193a);
     }
 
     public final void setupNotificationServiceExtension(Context context) {
@@ -1045,7 +1045,7 @@ public final class a implements x5.b, com.onesignal.notifications.internal.a {
             com.onesignal.debug.internal.logging.b.verbose$default("No class found, not setting up OSRemoteNotificationReceivedHandler", null, 2, null);
             return;
         }
-        com.onesignal.debug.internal.logging.b.verbose$default(y.o("Found class: ", manifestMeta, ", attempting to call constructor"), null, 2, null);
+        com.onesignal.debug.internal.logging.b.verbose$default(x.l("Found class: ", manifestMeta, ", attempting to call constructor"), null, 2, null);
         try {
             Class.forName(manifestMeta).newInstance();
         } catch (ClassNotFoundException e9) {

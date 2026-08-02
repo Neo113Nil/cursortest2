@@ -138,8 +138,8 @@ public final class c implements O4.d {
         return this.isFirstClick;
     }
 
-    public final void setFirstClick(boolean z3) {
-        this.isFirstClick = z3;
+    public final void setFirstClick(boolean z6) {
+        this.isFirstClick = z6;
     }
 
     public final void setTags(i iVar) {

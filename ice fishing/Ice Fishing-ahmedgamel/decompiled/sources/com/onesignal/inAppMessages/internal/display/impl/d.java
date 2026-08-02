@@ -1,9 +1,9 @@
 package com.onesignal.inAppMessages.internal.display.impl;
 
 import I7.p;
-import S7.AbstractC0406y;
+import S7.AbstractC0410y;
 import S7.F;
-import S7.InterfaceC0404w;
+import S7.InterfaceC0408w;
 import X7.o;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -23,7 +23,7 @@ import com.onesignal.common.AndroidUtils;
 import com.onesignal.inAppMessages.internal.display.impl.a;
 import com.onesignal.inAppMessages.internal.display.impl.m;
 import u7.v;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class d {
@@ -122,8 +122,8 @@ public final class d {
         int label;
         /* synthetic */ Object result;
 
-        public C0205d(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public C0205d(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -137,18 +137,18 @@ public final class d {
     public static final class e extends B7.h implements p {
         int label;
 
-        public e(InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public e(InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return d.this.new e(interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return d.this.new e(interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((e) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((e) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:17:0x0049, code lost:
@@ -161,27 +161,27 @@ public final class d {
          */
         /* JADX WARN: Code restructure failed: missing block: B:21:0x0027, code lost:
         
-            if (S7.AbstractC0406y.f(600, r5) == r0) goto L19;
+            if (S7.AbstractC0410y.f(600, r5) == r0) goto L19;
          */
         @Override // B7.a
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 this.label = 1;
             } else {
                 if (i != 1) {
                     if (i != 2) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
-                    return v.f41353a;
+                    Q3.b.s(obj);
+                    return v.f41073a;
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
             if (!d.this.hasBackground || d.this.parentRelativeLayout == null) {
                 d.this.cleanupViewsAfterDismiss();
@@ -191,7 +191,7 @@ public final class d {
                 kotlin.jvm.internal.h.b(relativeLayout);
                 this.label = 2;
             }
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
@@ -219,22 +219,22 @@ public final class d {
             final /* synthetic */ d this$0;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public a(d dVar, InterfaceC5267d interfaceC5267d) {
-                super(1, interfaceC5267d);
+            public a(d dVar, InterfaceC5240d interfaceC5240d) {
+                super(1, interfaceC5240d);
                 this.this$0 = dVar;
             }
 
             @Override // B7.a
-            public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-                return new a(this.this$0, interfaceC5267d);
+            public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+                return new a(this.this$0, interfaceC5240d);
             }
 
             @Override // B7.a
             public final Object invokeSuspend(Object obj) {
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 int i = this.label;
                 if (i == 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     d dVar = this.this$0;
                     this.label = 1;
                     if (dVar.finishAfterDelay(this) == aVar) {
@@ -244,14 +244,14 @@ public final class d {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
-                return v.f41353a;
+                return v.f41073a;
             }
 
             @Override // I7.l
-            public final Object invoke(InterfaceC5267d interfaceC5267d) {
-                return ((a) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+            public final Object invoke(InterfaceC5240d interfaceC5240d) {
+                return ((a) create(interfaceC5240d)).invokeSuspend(v.f41073a);
             }
         }
 
@@ -287,8 +287,8 @@ public final class d {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public h(RelativeLayout.LayoutParams layoutParams, RelativeLayout.LayoutParams layoutParams2, a.b bVar, m.c cVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public h(RelativeLayout.LayoutParams layoutParams, RelativeLayout.LayoutParams layoutParams2, a.b bVar, m.c cVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$relativeLayoutParams = layoutParams;
             this.$draggableRelativeLayoutParams = layoutParams2;
             this.$webViewLayoutParams = bVar;
@@ -296,22 +296,22 @@ public final class d {
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return d.this.new h(this.$relativeLayoutParams, this.$draggableRelativeLayoutParams, this.$webViewLayoutParams, this.$displayLocation, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return d.this.new h(this.$relativeLayoutParams, this.$draggableRelativeLayoutParams, this.$webViewLayoutParams, this.$displayLocation, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((h) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((h) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
-            v vVar = v.f41353a;
+            v vVar = v.f41073a;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 if (d.this.webView == null) {
                     return vVar;
                 }
@@ -348,7 +348,7 @@ public final class d {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
             return vVar;
         }
@@ -359,8 +359,8 @@ public final class d {
         int label;
         /* synthetic */ Object result;
 
-        public i(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public i(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -376,30 +376,30 @@ public final class d {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public j(int i, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public j(int i, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$pageHeight = i;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return d.this.new j(this.$pageHeight, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return d.this.new j(this.$pageHeight, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((j) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((j) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             WebView webView = d.this.webView;
-            v vVar = v.f41353a;
+            v vVar = v.f41073a;
             if (webView == null) {
                 com.onesignal.debug.internal.logging.b.warn$default("WebView height update skipped, new height will be used once it is displayed.", null, 2, null);
                 return vVar;
@@ -425,13 +425,13 @@ public final class d {
         }
     }
 
-    public d(WebView webView, com.onesignal.inAppMessages.internal.d messageContent, boolean z3, boolean z6) {
+    public d(WebView webView, com.onesignal.inAppMessages.internal.d messageContent, boolean z6, boolean z9) {
         double doubleValue;
         kotlin.jvm.internal.h.e(messageContent, "messageContent");
         this.webView = webView;
         this.messageContent = messageContent;
-        this.disableDragDismiss = z3;
-        this.hideGrayOverlay = z6;
+        this.disableDragDismiss = z6;
+        this.hideGrayOverlay = z9;
         this.pageWidth = -1;
         this.pageHeight = messageContent.getPageHeight();
         com.onesignal.common.m mVar = com.onesignal.common.m.INSTANCE;
@@ -456,19 +456,19 @@ public final class d {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final Object animateAndDismissLayout(View view, InterfaceC5267d interfaceC5267d) {
+    public final Object animateAndDismissLayout(View view, InterfaceC5240d interfaceC5240d) {
         com.onesignal.common.threading.e eVar = new com.onesignal.common.threading.e();
         animateBackgroundColor(view, IN_APP_BACKGROUND_ANIMATION_DURATION_MS, getOverlayColor(), 0, new b(eVar)).start();
-        Object waitForWake = eVar.waitForWake(interfaceC5267d);
-        return waitForWake == A7.a.f58n ? waitForWake : v.f41353a;
+        Object waitForWake = eVar.waitForWake(interfaceC5240d);
+        return waitForWake == A7.a.f215n ? waitForWake : v.f41073a;
     }
 
-    private final ValueAnimator animateBackgroundColor(View view, int i6, int i9, int i10, Animator.AnimatorListener animatorListener) {
-        return com.onesignal.inAppMessages.internal.display.impl.j.INSTANCE.animateViewColor(view, i6, i9, i10, animatorListener);
+    private final ValueAnimator animateBackgroundColor(View view, int i4, int i6, int i9, Animator.AnimatorListener animatorListener) {
+        return com.onesignal.inAppMessages.internal.display.impl.j.INSTANCE.animateViewColor(view, i4, i6, i9, animatorListener);
     }
 
-    private final void animateBottom(View view, int i6, Animation.AnimationListener animationListener) {
-        com.onesignal.inAppMessages.internal.display.impl.j.INSTANCE.animateViewByTranslation(view, i6 + this.marginPxSizeBottom, 0.0f, 1000, new k(0.1d, 8.0d), animationListener).start();
+    private final void animateBottom(View view, int i4, Animation.AnimationListener animationListener) {
+        com.onesignal.inAppMessages.internal.display.impl.j.INSTANCE.animateViewByTranslation(view, i4 + this.marginPxSizeBottom, 0.0f, 1000, new k(0.1d, 8.0d), animationListener).start();
     }
 
     private final void animateCenter(View view, View view2, Animation.AnimationListener animationListener, Animator.AnimatorListener animatorListener) {
@@ -484,22 +484,22 @@ public final class d {
         CardView cardView = (CardView) view.findViewWithTag(IN_APP_MESSAGE_CARD_VIEW_TAG);
         kotlin.jvm.internal.h.b(cardView);
         Animation.AnimationListener createAnimationListener = createAnimationListener(cardView);
-        int i6 = com.onesignal.inAppMessages.internal.display.impl.f.$EnumSwitchMapping$0[cVar.ordinal()];
-        if (i6 == 1) {
+        int i4 = com.onesignal.inAppMessages.internal.display.impl.f.$EnumSwitchMapping$0[cVar.ordinal()];
+        if (i4 == 1) {
             WebView webView = this.webView;
             kotlin.jvm.internal.h.b(webView);
             animateTop(cardView, webView.getHeight(), createAnimationListener);
-        } else if (i6 == 2) {
+        } else if (i4 == 2) {
             WebView webView2 = this.webView;
             kotlin.jvm.internal.h.b(webView2);
             animateBottom(cardView, webView2.getHeight(), createAnimationListener);
-        } else if (i6 == 3 || i6 == 4) {
+        } else if (i4 == 3 || i4 == 4) {
             animateCenter(view, view2, createAnimationListener, null);
         }
     }
 
-    private final void animateTop(View view, int i6, Animation.AnimationListener animationListener) {
-        com.onesignal.inAppMessages.internal.display.impl.j.INSTANCE.animateViewByTranslation(view, (-i6) - this.marginPxSizeTop, 0.0f, 1000, new k(0.1d, 8.0d), animationListener).start();
+    private final void animateTop(View view, int i4, Animation.AnimationListener animationListener) {
+        com.onesignal.inAppMessages.internal.display.impl.j.INSTANCE.animateViewByTranslation(view, (-i4) - this.marginPxSizeTop, 0.0f, 1000, new k(0.1d, 8.0d), animationListener).start();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -534,25 +534,25 @@ public final class d {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final a.b createDraggableLayoutParams(int i6, m.c cVar, boolean z3) {
+    public final a.b createDraggableLayoutParams(int i4, m.c cVar, boolean z6) {
         a.b bVar = new a.b();
         bVar.setMaxXPos(this.marginPxSizeRight);
         bVar.setMaxYPos(this.marginPxSizeTop);
-        bVar.setDraggingDisabled(z3);
-        bVar.setMessageHeight(i6);
+        bVar.setDraggingDisabled(z6);
+        bVar.setMessageHeight(i4);
         bVar.setHeight(getDisplayYSize());
-        int i9 = com.onesignal.inAppMessages.internal.display.impl.f.$EnumSwitchMapping$0[cVar.ordinal()];
-        if (i9 == 1) {
+        int i6 = com.onesignal.inAppMessages.internal.display.impl.f.$EnumSwitchMapping$0[cVar.ordinal()];
+        if (i6 == 1) {
             bVar.setDragThresholdY(this.marginPxSizeTop - DRAG_THRESHOLD_PX_SIZE);
-        } else if (i9 == 2) {
-            bVar.setPosY(getDisplayYSize() - i6);
+        } else if (i6 == 2) {
+            bVar.setPosY(getDisplayYSize() - i4);
             bVar.setDragThresholdY(this.marginPxSizeBottom + DRAG_THRESHOLD_PX_SIZE);
-        } else if (i9 == 3) {
-            int displayYSize = (getDisplayYSize() / 2) - (i6 / 2);
+        } else if (i6 == 3) {
+            int displayYSize = (getDisplayYSize() / 2) - (i4 / 2);
             bVar.setDragThresholdY(DRAG_THRESHOLD_PX_SIZE + displayYSize);
             bVar.setMaxYPos(displayYSize);
             bVar.setPosY(displayYSize);
-        } else if (i9 == 4) {
+        } else if (i6 == 4) {
             int displayYSize2 = getDisplayYSize() - (this.marginPxSizeBottom + this.marginPxSizeTop);
             bVar.setMessageHeight(displayYSize2);
             int displayYSize3 = (getDisplayYSize() / 2) - (displayYSize2 / 2);
@@ -566,18 +566,18 @@ public final class d {
 
     private final RelativeLayout.LayoutParams createParentRelativeLayoutParams() {
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(this.pageWidth, -1);
-        int i6 = com.onesignal.inAppMessages.internal.display.impl.f.$EnumSwitchMapping$0[this.displayPosition.ordinal()];
-        if (i6 == 1) {
+        int i4 = com.onesignal.inAppMessages.internal.display.impl.f.$EnumSwitchMapping$0[this.displayPosition.ordinal()];
+        if (i4 == 1) {
             layoutParams.addRule(10);
             layoutParams.addRule(14);
             return layoutParams;
         }
-        if (i6 == 2) {
+        if (i4 == 2) {
             layoutParams.addRule(12);
             layoutParams.addRule(14);
             return layoutParams;
         }
-        if (i6 != 3 && i6 != 4) {
+        if (i4 != 3 && i4 != 4) {
             return layoutParams;
         }
         layoutParams.addRule(13);
@@ -586,12 +586,12 @@ public final class d {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void createPopupWindow(RelativeLayout relativeLayout) {
-        boolean z3 = this.hasBackground;
-        com.onesignal.inAppMessages.internal.display.impl.h hVar = new com.onesignal.inAppMessages.internal.display.impl.h(relativeLayout, z3 ? -1 : this.pageWidth, z3 ? -1 : -2, false, this.popupWindowListener);
+        boolean z6 = this.hasBackground;
+        com.onesignal.inAppMessages.internal.display.impl.h hVar = new com.onesignal.inAppMessages.internal.display.impl.h(relativeLayout, z6 ? -1 : this.pageWidth, z6 ? -1 : -2, false, this.popupWindowListener);
         this.popupWindow = hVar;
         hVar.setBackgroundDrawable(new ColorDrawable(0));
         com.onesignal.inAppMessages.internal.display.impl.h hVar2 = this.popupWindow;
-        int i6 = 1;
+        int i4 = 1;
         if (hVar2 != null) {
             hVar2.setTouchable(true);
         }
@@ -604,26 +604,26 @@ public final class d {
             hVar4.setClippingEnabled(false);
         }
         if (this.hasBackground) {
-            i6 = 0;
+            i4 = 0;
         } else {
-            int i9 = com.onesignal.inAppMessages.internal.display.impl.f.$EnumSwitchMapping$0[this.displayPosition.ordinal()];
-            if (i9 == 1) {
-                i6 = 49;
-            } else if (i9 == 2) {
-                i6 = 81;
-            } else if (i9 != 3 && i9 != 4) {
+            int i6 = com.onesignal.inAppMessages.internal.display.impl.f.$EnumSwitchMapping$0[this.displayPosition.ordinal()];
+            if (i6 == 1) {
+                i4 = 49;
+            } else if (i6 == 2) {
+                i4 = 81;
+            } else if (i6 != 3 && i6 != 4) {
                 throw new B0.c();
             }
         }
-        int i10 = this.messageContent.isFullBleed() ? 1000 : 1003;
+        int i9 = this.messageContent.isFullBleed() ? 1000 : 1003;
         com.onesignal.inAppMessages.internal.display.impl.h hVar5 = this.popupWindow;
         kotlin.jvm.internal.h.b(hVar5);
-        U.l.d(hVar5, i10);
+        U.l.d(hVar5, i9);
         com.onesignal.inAppMessages.internal.display.impl.h hVar6 = this.popupWindow;
         if (hVar6 != null) {
             Activity activity = this.currentActivity;
             kotlin.jvm.internal.h.b(activity);
-            hVar6.showAtLocation(activity.getWindow().getDecorView().getRootView(), i6, 0, 0);
+            hVar6.showAtLocation(activity.getWindow().getDecorView().getRootView(), i4, 0, 0);
         }
     }
 
@@ -634,39 +634,39 @@ public final class d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object delayShowUntilAvailable(Activity activity, InterfaceC5267d interfaceC5267d) {
+    public final Object delayShowUntilAvailable(Activity activity, InterfaceC5240d interfaceC5240d) {
         C0205d c0205d;
-        int i6;
+        int i4;
         d dVar;
-        if (interfaceC5267d instanceof C0205d) {
-            c0205d = (C0205d) interfaceC5267d;
-            int i9 = c0205d.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                c0205d.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof C0205d) {
+            c0205d = (C0205d) interfaceC5240d;
+            int i6 = c0205d.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                c0205d.label = i6 - Integer.MIN_VALUE;
                 Object obj = c0205d.result;
-                A7.a aVar = A7.a.f58n;
-                i6 = c0205d.label;
-                v vVar = v.f41353a;
-                if (i6 == 0) {
-                    if (i6 == 1) {
-                        com.bumptech.glide.d.k(obj);
+                A7.a aVar = A7.a.f215n;
+                i4 = c0205d.label;
+                v vVar = v.f41073a;
+                if (i4 == 0) {
+                    if (i4 == 1) {
+                        Q3.b.s(obj);
                         return vVar;
                     }
-                    if (i6 != 2) {
-                        if (i6 == 3) {
-                            com.bumptech.glide.d.k(obj);
+                    if (i4 != 2) {
+                        if (i4 == 3) {
+                            Q3.b.s(obj);
                         }
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     activity = (Activity) c0205d.L$1;
                     dVar = (d) c0205d.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     c0205d.L$0 = null;
                     c0205d.L$1 = null;
                     c0205d.label = 3;
                     return dVar.delayShowUntilAvailable(activity, c0205d) != aVar ? aVar : vVar;
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 if (AndroidUtils.INSTANCE.isActivityFullyReady(activity) && this.parentRelativeLayout == null) {
                     c0205d.label = 1;
                     if (showInAppMessageView(activity, c0205d) != aVar) {
@@ -676,7 +676,7 @@ public final class d {
                     c0205d.L$0 = this;
                     c0205d.L$1 = activity;
                     c0205d.label = 2;
-                    if (AbstractC0406y.f(200L, c0205d) != aVar) {
+                    if (AbstractC0410y.f(200L, c0205d) != aVar) {
                         dVar = this;
                         c0205d.L$0 = null;
                         c0205d.L$1 = null;
@@ -687,12 +687,12 @@ public final class d {
                 }
             }
         }
-        c0205d = new C0205d(interfaceC5267d);
+        c0205d = new C0205d(interfaceC5240d);
         Object obj2 = c0205d.result;
-        A7.a aVar2 = A7.a.f58n;
-        i6 = c0205d.label;
-        v vVar2 = v.f41353a;
-        if (i6 == 0) {
+        A7.a aVar2 = A7.a.f215n;
+        i4 = c0205d.label;
+        v vVar2 = v.f41073a;
+        if (i4 == 0) {
         }
     }
 
@@ -703,10 +703,10 @@ public final class d {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final Object finishAfterDelay(InterfaceC5267d interfaceC5267d) {
-        Z7.e eVar = F.f2915a;
-        Object y7 = AbstractC0406y.y(o.f3856a, new e(null), interfaceC5267d);
-        return y7 == A7.a.f58n ? y7 : v.f41353a;
+    public final Object finishAfterDelay(InterfaceC5240d interfaceC5240d) {
+        Z7.e eVar = F.f2998a;
+        Object y7 = AbstractC0410y.y(o.f3811a, new e(null), interfaceC5240d);
+        return y7 == A7.a.f215n ? y7 : v.f41073a;
     }
 
     private final int getDisplayYSize() {
@@ -790,10 +790,10 @@ public final class d {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final Object showDraggableView(m.c cVar, RelativeLayout.LayoutParams layoutParams, RelativeLayout.LayoutParams layoutParams2, a.b bVar, InterfaceC5267d interfaceC5267d) {
-        Z7.e eVar = F.f2915a;
-        Object y7 = AbstractC0406y.y(o.f3856a, new h(layoutParams, layoutParams2, bVar, cVar, null), interfaceC5267d);
-        return y7 == A7.a.f58n ? y7 : v.f41353a;
+    public final Object showDraggableView(m.c cVar, RelativeLayout.LayoutParams layoutParams, RelativeLayout.LayoutParams layoutParams2, a.b bVar, InterfaceC5240d interfaceC5240d) {
+        Z7.e eVar = F.f2998a;
+        Object y7 = AbstractC0410y.y(o.f3811a, new h(layoutParams, layoutParams2, bVar, cVar, null), interfaceC5240d);
+        return y7 == A7.a.f215n ? y7 : v.f41073a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -804,45 +804,45 @@ public final class d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object startDismissTimerIfNeeded(InterfaceC5267d interfaceC5267d) {
+    public final Object startDismissTimerIfNeeded(InterfaceC5240d interfaceC5240d) {
         i iVar;
-        int i6;
+        int i4;
         d dVar;
         d dVar2;
-        if (interfaceC5267d instanceof i) {
-            iVar = (i) interfaceC5267d;
-            int i9 = iVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                iVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof i) {
+            iVar = (i) interfaceC5240d;
+            int i6 = iVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                iVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = iVar.result;
-                A7.a aVar = A7.a.f58n;
-                i6 = iVar.label;
-                v vVar = v.f41353a;
-                if (i6 != 0) {
-                    com.bumptech.glide.d.k(obj);
-                    double d2 = this.displayDuration;
-                    if (d2 > 0.0d && !this.isDismissTimerSet) {
+                A7.a aVar = A7.a.f215n;
+                i4 = iVar.label;
+                v vVar = v.f41073a;
+                if (i4 != 0) {
+                    Q3.b.s(obj);
+                    double d9 = this.displayDuration;
+                    if (d9 > 0.0d && !this.isDismissTimerSet) {
                         this.isDismissTimerSet = true;
                         iVar.L$0 = this;
                         iVar.label = 1;
-                        if (AbstractC0406y.f(((long) d2) * 1000, iVar) != aVar) {
+                        if (AbstractC0410y.f(((long) d9) * 1000, iVar) != aVar) {
                             dVar = this;
                         }
                         return aVar;
                     }
                     return vVar;
                 }
-                if (i6 != 1) {
-                    if (i6 != 2) {
+                if (i4 != 1) {
+                    if (i4 != 2) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     dVar2 = (d) iVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     dVar2.isDismissTimerSet = false;
                     return vVar;
                 }
                 dVar = (d) iVar.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 if (!dVar.cancelDismissTimer) {
                     dVar.cancelDismissTimer = false;
                     return vVar;
@@ -866,33 +866,33 @@ public final class d {
                 return aVar;
             }
         }
-        iVar = new i(interfaceC5267d);
+        iVar = new i(interfaceC5240d);
         Object obj2 = iVar.result;
-        A7.a aVar2 = A7.a.f58n;
-        i6 = iVar.label;
-        v vVar2 = v.f41353a;
-        if (i6 != 0) {
+        A7.a aVar2 = A7.a.f215n;
+        i4 = iVar.label;
+        v vVar2 = v.f41073a;
+        if (i4 != 0) {
         }
         if (!dVar.cancelDismissTimer) {
         }
     }
 
-    public final Object checkIfShouldDismiss(InterfaceC5267d interfaceC5267d) {
-        boolean z3 = this.shouldDismissWhenActive;
-        v vVar = v.f41353a;
-        if (z3) {
+    public final Object checkIfShouldDismiss(InterfaceC5240d interfaceC5240d) {
+        boolean z6 = this.shouldDismissWhenActive;
+        v vVar = v.f41073a;
+        if (z6) {
             this.shouldDismissWhenActive = false;
-            Object finishAfterDelay = finishAfterDelay(interfaceC5267d);
-            if (finishAfterDelay == A7.a.f58n) {
+            Object finishAfterDelay = finishAfterDelay(interfaceC5240d);
+            if (finishAfterDelay == A7.a.f215n) {
                 return finishAfterDelay;
             }
         }
         return vVar;
     }
 
-    public final Object dismissAndAwaitNextMessage(InterfaceC5267d interfaceC5267d) {
+    public final Object dismissAndAwaitNextMessage(InterfaceC5240d interfaceC5240d) {
         com.onesignal.inAppMessages.internal.display.impl.a aVar = this.draggableRelativeLayout;
-        v vVar = v.f41353a;
+        v vVar = v.f41073a;
         if (aVar == null) {
             com.onesignal.debug.internal.logging.b.info$default("No host presenter to trigger dismiss animation, counting as dismissed already", null, 2, null);
             dereferenceViews();
@@ -900,8 +900,8 @@ public final class d {
         }
         kotlin.jvm.internal.h.b(aVar);
         aVar.dismiss();
-        Object finishAfterDelay = finishAfterDelay(interfaceC5267d);
-        return finishAfterDelay == A7.a.f58n ? finishAfterDelay : vVar;
+        Object finishAfterDelay = finishAfterDelay(interfaceC5240d);
+        return finishAfterDelay == A7.a.f215n ? finishAfterDelay : vVar;
     }
 
     public final m.c getDisplayPosition() {
@@ -942,29 +942,29 @@ public final class d {
         webView.setBackgroundColor(0);
     }
 
-    public final Object showInAppMessageView(Activity activity, InterfaceC5267d interfaceC5267d) {
+    public final Object showInAppMessageView(Activity activity, InterfaceC5240d interfaceC5240d) {
         this.currentActivity = activity;
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, this.pageHeight);
         layoutParams.addRule(13);
         RelativeLayout.LayoutParams createParentRelativeLayoutParams = this.hasBackground ? createParentRelativeLayoutParams() : null;
         m.c cVar = this.displayPosition;
-        Object showDraggableView = showDraggableView(cVar, layoutParams, createParentRelativeLayoutParams, createDraggableLayoutParams(this.pageHeight, cVar, this.disableDragDismiss), interfaceC5267d);
-        return showDraggableView == A7.a.f58n ? showDraggableView : v.f41353a;
+        Object showDraggableView = showDraggableView(cVar, layoutParams, createParentRelativeLayoutParams, createDraggableLayoutParams(this.pageHeight, cVar, this.disableDragDismiss), interfaceC5240d);
+        return showDraggableView == A7.a.f215n ? showDraggableView : v.f41073a;
     }
 
-    public final Object showView(Activity activity, InterfaceC5267d interfaceC5267d) {
-        Object delayShowUntilAvailable = delayShowUntilAvailable(activity, interfaceC5267d);
-        return delayShowUntilAvailable == A7.a.f58n ? delayShowUntilAvailable : v.f41353a;
+    public final Object showView(Activity activity, InterfaceC5240d interfaceC5240d) {
+        Object delayShowUntilAvailable = delayShowUntilAvailable(activity, interfaceC5240d);
+        return delayShowUntilAvailable == A7.a.f215n ? delayShowUntilAvailable : v.f41073a;
     }
 
     public String toString() {
         return "InAppMessageView{currentActivity=" + this.currentActivity + ", pageWidth=" + this.pageWidth + ", pageHeight=" + this.pageHeight + ", displayDuration=" + this.displayDuration + ", hasBackground=" + this.hasBackground + ", shouldDismissWhenActive=" + this.shouldDismissWhenActive + ", isDragging=" + this.isDragging + ", disableDragDismiss=" + this.disableDragDismiss + ", displayLocation=" + this.displayPosition + ", webView=" + this.webView + '}';
     }
 
-    public final Object updateHeight(int i6, InterfaceC5267d interfaceC5267d) {
-        this.pageHeight = i6;
-        Z7.e eVar = F.f2915a;
-        Object y7 = AbstractC0406y.y(o.f3856a, new j(i6, null), interfaceC5267d);
-        return y7 == A7.a.f58n ? y7 : v.f41353a;
+    public final Object updateHeight(int i4, InterfaceC5240d interfaceC5240d) {
+        this.pageHeight = i4;
+        Z7.e eVar = F.f2998a;
+        Object y7 = AbstractC0410y.y(o.f3811a, new j(i4, null), interfaceC5240d);
+        return y7 == A7.a.f215n ? y7 : v.f41073a;
     }
 }

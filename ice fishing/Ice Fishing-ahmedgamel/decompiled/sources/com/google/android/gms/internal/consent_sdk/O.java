@@ -4,9 +4,9 @@ package com.google.android.gms.internal.consent_sdk;
 public final class O {
 
     /* renamed from: a, reason: collision with root package name */
-    public final B f35583a;
+    public final B f36352a;
 
     public O(B b9) {
-        this.f35583a = b9;
+        this.f36352a = b9;
     }
 }

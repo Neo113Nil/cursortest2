@@ -4,30 +4,30 @@ package kotlin.jvm.internal;
 public final class l implements c {
 
     /* renamed from: n, reason: collision with root package name */
-    public final Class f38714n;
+    public final Class f38641n;
 
     public l(Class jClass) {
         h.e(jClass, "jClass");
-        this.f38714n = jClass;
+        this.f38641n = jClass;
     }
 
     @Override // kotlin.jvm.internal.c
     public final Class a() {
-        return this.f38714n;
+        return this.f38641n;
     }
 
     public final boolean equals(Object obj) {
         if (obj instanceof l) {
-            return h.a(this.f38714n, ((l) obj).f38714n);
+            return h.a(this.f38641n, ((l) obj).f38641n);
         }
         return false;
     }
 
     public final int hashCode() {
-        return this.f38714n.hashCode();
+        return this.f38641n.hashCode();
     }
 
     public final String toString() {
-        return this.f38714n.toString() + " (Kotlin reflection is not available)";
+        return this.f38641n.toString() + " (Kotlin reflection is not available)";
     }
 }

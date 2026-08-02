@@ -6,48 +6,48 @@ package i8;
 public final class z {
 
     /* renamed from: A, reason: collision with root package name */
-    public static final /* synthetic */ z[] f38265A;
+    public static final /* synthetic */ z[] f38384A;
 
     /* renamed from: u, reason: collision with root package name */
-    public static final b f38266u;
+    public static final b f38385u;
 
     /* renamed from: v, reason: collision with root package name */
-    public static final z f38267v;
+    public static final z f38386v;
 
     /* renamed from: w, reason: collision with root package name */
-    public static final z f38268w;
+    public static final z f38387w;
 
     /* renamed from: x, reason: collision with root package name */
-    public static final z f38269x;
+    public static final z f38388x;
 
     /* renamed from: y, reason: collision with root package name */
-    public static final z f38270y;
+    public static final z f38389y;
 
     /* renamed from: z, reason: collision with root package name */
-    public static final z f38271z;
+    public static final z f38390z;
 
     /* renamed from: n, reason: collision with root package name */
-    public final String f38272n;
+    public final String f38391n;
 
     static {
         z zVar = new z("TLS_1_3", 0, "TLSv1.3");
-        f38267v = zVar;
+        f38386v = zVar;
         z zVar2 = new z("TLS_1_2", 1, "TLSv1.2");
-        f38268w = zVar2;
+        f38387w = zVar2;
         z zVar3 = new z("TLS_1_1", 2, "TLSv1.1");
-        f38269x = zVar3;
+        f38388x = zVar3;
         z zVar4 = new z("TLS_1_0", 3, "TLSv1");
-        f38270y = zVar4;
+        f38389y = zVar4;
         z zVar5 = new z("SSL_3_0", 4, "SSLv3");
-        f38271z = zVar5;
+        f38390z = zVar5;
         z[] zVarArr = {zVar, zVar2, zVar3, zVar4, zVar5};
-        f38265A = zVarArr;
-        com.bumptech.glide.e.b(zVarArr);
-        f38266u = new b();
+        f38384A = zVarArr;
+        X2.a.h(zVarArr);
+        f38385u = new b();
     }
 
     public z(String str, int i, String str2) {
-        this.f38272n = str2;
+        this.f38391n = str2;
     }
 
     public static z valueOf(String str) {
@@ -55,6 +55,6 @@ public final class z {
     }
 
     public static z[] values() {
-        return (z[]) f38265A.clone();
+        return (z[]) f38384A.clone();
     }
 }

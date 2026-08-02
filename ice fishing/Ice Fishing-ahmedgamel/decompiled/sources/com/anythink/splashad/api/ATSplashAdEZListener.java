@@ -13,12 +13,12 @@ public abstract class ATSplashAdEZListener implements ATSplashExListener {
     public abstract void onAdLoaded();
 
     @Override // com.anythink.splashad.api.ATSplashAdListener
-    public final void onAdLoaded(boolean z3) {
+    public final void onAdLoaded(boolean z6) {
         onAdLoaded();
     }
 
     @Override // com.anythink.splashad.api.ATSplashExListener
-    public void onDeeplinkCallback(ATAdInfo aTAdInfo, boolean z3) {
+    public void onDeeplinkCallback(ATAdInfo aTAdInfo, boolean z6) {
     }
 
     @Override // com.anythink.splashad.api.ATSplashExListener

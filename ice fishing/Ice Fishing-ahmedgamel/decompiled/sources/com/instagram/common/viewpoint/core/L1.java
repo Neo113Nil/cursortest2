@@ -31,16 +31,16 @@ public final class L1 {
         if (!l12.A0F) {
             return true;
         }
-        HR hr = (HR) AbstractC06243y.A02(this.A09);
+        HR hr = (HR) AbstractC06443y.A02(this.A09);
         HR spsData = l12.A09;
-        HR otherSpsData = (HR) AbstractC06243y.A02(spsData);
+        HR otherSpsData = (HR) AbstractC06443y.A02(spsData);
         if (this.A03 == l12.A03 && this.A07 == l12.A07 && this.A0C == l12.A0C && ((!this.A0B || !l12.A0B || this.A0A == l12.A0A) && ((this.A05 == l12.A05 || (this.A05 != 0 && l12.A05 != 0)) && ((hr.A07 != 0 || otherSpsData.A07 != 0 || (this.A06 == l12.A06 && this.A02 == l12.A02)) && ((hr.A07 != 1 || otherSpsData.A07 != 1 || (this.A00 == l12.A00 && this.A01 == l12.A01)) && this.A0E == l12.A0E))))) {
-            boolean z3 = this.A0E;
+            boolean z6 = this.A0E;
             if (A0G[6].charAt(8) == '9') {
                 throw new RuntimeException();
             }
             A0G[6] = "vYoSPXEMP2H1rloX7Zmdh99svIQCcR37";
-            if (!z3 || this.A04 == l12.A04) {
+            if (!z6 || this.A04 == l12.A04) {
                 return false;
             }
         }
@@ -57,21 +57,21 @@ public final class L1 {
         this.A0D = true;
     }
 
-    public final void A04(HR hr, int i, int i6, int i9, int i10, boolean z3, boolean z6, boolean z9, boolean z10, int i11, int i12, int i13, int i14, int i15) {
+    public final void A04(HR hr, int i, int i4, int i6, int i9, boolean z6, boolean z9, boolean z10, boolean z11, int i10, int i11, int i12, int i13, int i14) {
         this.A09 = hr;
         this.A05 = i;
-        this.A08 = i6;
-        this.A03 = i9;
-        this.A07 = i10;
-        this.A0C = z3;
-        this.A0B = z6;
-        this.A0A = z9;
-        this.A0E = z10;
-        this.A04 = i11;
-        this.A06 = i12;
-        this.A02 = i13;
-        this.A00 = i14;
-        this.A01 = i15;
+        this.A08 = i4;
+        this.A03 = i6;
+        this.A07 = i9;
+        this.A0C = z6;
+        this.A0B = z9;
+        this.A0A = z10;
+        this.A0E = z11;
+        this.A04 = i10;
+        this.A06 = i11;
+        this.A02 = i12;
+        this.A00 = i13;
+        this.A01 = i14;
         this.A0F = true;
         this.A0D = true;
     }

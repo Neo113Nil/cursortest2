@@ -11,7 +11,7 @@ public final class d {
     private final Integer notificationLimit;
 
     public d() {
-        this(null, null, null, null, null, null, null, com.anythink.expressad.video.module.a.a.f21728R, null);
+        this(null, null, null, null, null, null, null, com.anythink.expressad.video.module.a.a.f22515R, null);
     }
 
     public final Integer getIamLimit() {

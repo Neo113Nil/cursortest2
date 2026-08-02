@@ -3,20 +3,20 @@ package com.instagram.common.viewpoint.core;
 /* loaded from: assets/audience_network/classes2.dex */
 public final class TY {
     public final int A00;
-    public final C1253Te A01;
+    public final C1273Te A01;
     public final String A02;
 
-    public TY(String str, int i, C1253Te c1253Te) {
+    public TY(String str, int i, C1273Te c1273Te) {
         this.A02 = str;
         this.A00 = i;
-        this.A01 = c1253Te;
+        this.A01 = c1273Te;
     }
 
     public final int A00() {
         return this.A00;
     }
 
-    public final C1253Te A01() {
+    public final C1273Te A01() {
         return this.A01;
     }
 

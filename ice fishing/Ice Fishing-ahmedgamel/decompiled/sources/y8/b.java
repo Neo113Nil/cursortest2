@@ -1,23 +1,24 @@
 package y8;
 
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import v7.C5126g;
+import v7.C5116g;
+import w.AbstractC5128c;
 
 /* loaded from: classes2.dex */
 public abstract class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final d f41939a = new d();
+    public static final d f41910a = new d();
 
-    public static final boolean a(byte[] a9, int i, byte[] b9, int i6, int i9) {
+    public static final boolean a(byte[] a9, int i, byte[] b9, int i4, int i6) {
         kotlin.jvm.internal.h.e(a9, "a");
         kotlin.jvm.internal.h.e(b9, "b");
-        for (int i10 = 0; i10 < i9; i10++) {
-            if (a9[i10 + i] != b9[i10 + i6]) {
+        for (int i9 = 0; i9 < i6; i9++) {
+            if (a9[i9 + i] != b9[i9 + i4]) {
                 return false;
             }
         }
@@ -29,112 +30,112 @@ public abstract class b {
         return new r(xVar);
     }
 
-    public static void c(long j6, e eVar, int i, ArrayList arrayList, int i6, int i9, ArrayList arrayList2) {
+    public static void c(long j6, e eVar, int i, ArrayList arrayList, int i4, int i6, ArrayList arrayList2) {
+        int i9;
         int i10;
-        int i11;
         ArrayList arrayList3;
         long j9;
-        int i12;
-        int i13 = i;
+        int i11;
+        int i12 = i;
         ArrayList arrayList4 = arrayList;
         ArrayList arrayList5 = arrayList2;
-        if (i6 >= i9) {
+        if (i4 >= i6) {
             throw new IllegalArgumentException("Failed requirement.");
         }
-        for (int i14 = i6; i14 < i9; i14++) {
-            if (((h) arrayList4.get(i14)).a() < i13) {
+        for (int i13 = i4; i13 < i6; i13++) {
+            if (((h) arrayList4.get(i13)).a() < i12) {
                 throw new IllegalArgumentException("Failed requirement.");
             }
         }
-        h hVar = (h) arrayList.get(i6);
-        h hVar2 = (h) arrayList4.get(i9 - 1);
-        if (i13 == hVar.a()) {
-            int intValue = ((Number) arrayList5.get(i6)).intValue();
-            int i15 = i6 + 1;
-            h hVar3 = (h) arrayList4.get(i15);
-            i10 = i15;
-            i11 = intValue;
+        h hVar = (h) arrayList.get(i4);
+        h hVar2 = (h) arrayList4.get(i6 - 1);
+        if (i12 == hVar.a()) {
+            int intValue = ((Number) arrayList5.get(i4)).intValue();
+            int i14 = i4 + 1;
+            h hVar3 = (h) arrayList4.get(i14);
+            i9 = i14;
+            i10 = intValue;
             hVar = hVar3;
         } else {
-            i10 = i6;
-            i11 = -1;
+            i9 = i4;
+            i10 = -1;
         }
-        if (hVar.e(i13) == hVar2.e(i13)) {
+        if (hVar.e(i12) == hVar2.e(i12)) {
             int min = Math.min(hVar.a(), hVar2.a());
-            int i16 = 0;
-            for (int i17 = i13; i17 < min && hVar.e(i17) == hVar2.e(i17); i17++) {
-                i16++;
+            int i15 = 0;
+            for (int i16 = i12; i16 < min && hVar.e(i16) == hVar2.e(i16); i16++) {
+                i15++;
             }
             long j10 = 4;
-            long j11 = (eVar.f41953u / j10) + j6 + 2 + i16 + 1;
-            eVar.a0(-i16);
-            eVar.a0(i11);
-            int i18 = i13 + i16;
-            while (i13 < i18) {
-                eVar.a0(hVar.e(i13) & com.anythink.basead.exoplayer.k.p.f8473b);
-                i13++;
+            long j11 = (eVar.f41924u / j10) + j6 + 2 + i15 + 1;
+            eVar.a0(-i15);
+            eVar.a0(i10);
+            int i17 = i12 + i15;
+            while (i12 < i17) {
+                eVar.a0(hVar.e(i12) & com.anythink.basead.exoplayer.k.p.f9259b);
+                i12++;
             }
-            if (i10 + 1 == i9) {
-                if (i18 != ((h) arrayList4.get(i10)).a()) {
+            if (i9 + 1 == i6) {
+                if (i17 != ((h) arrayList4.get(i9)).a()) {
                     throw new IllegalStateException("Check failed.");
                 }
-                eVar.a0(((Number) arrayList5.get(i10)).intValue());
+                eVar.a0(((Number) arrayList5.get(i9)).intValue());
                 return;
             } else {
                 e eVar2 = new e();
-                eVar.a0(((int) ((eVar2.f41953u / j10) + j11)) * (-1));
-                c(j11, eVar2, i18, arrayList4, i10, i9, arrayList5);
+                eVar.a0(((int) ((eVar2.f41924u / j10) + j11)) * (-1));
+                c(j11, eVar2, i17, arrayList4, i9, i6, arrayList5);
                 eVar.W(eVar2);
                 return;
             }
         }
-        int i19 = 1;
-        for (int i20 = i10 + 1; i20 < i9; i20++) {
-            if (((h) arrayList4.get(i20 - 1)).e(i13) != ((h) arrayList4.get(i20)).e(i13)) {
-                i19++;
+        int i18 = 1;
+        for (int i19 = i9 + 1; i19 < i6; i19++) {
+            if (((h) arrayList4.get(i19 - 1)).e(i12) != ((h) arrayList4.get(i19)).e(i12)) {
+                i18++;
             }
         }
         long j12 = 4;
-        long j13 = (eVar.f41953u / j12) + j6 + 2 + (i19 * 2);
-        eVar.a0(i19);
-        eVar.a0(i11);
-        for (int i21 = i10; i21 < i9; i21++) {
-            int e9 = ((h) arrayList4.get(i21)).e(i13);
-            if (i21 == i10 || e9 != ((h) arrayList4.get(i21 - 1)).e(i13)) {
-                eVar.a0(e9 & com.anythink.basead.exoplayer.k.p.f8473b);
+        long j13 = (eVar.f41924u / j12) + j6 + 2 + (i18 * 2);
+        eVar.a0(i18);
+        eVar.a0(i10);
+        for (int i20 = i9; i20 < i6; i20++) {
+            int e9 = ((h) arrayList4.get(i20)).e(i12);
+            if (i20 == i9 || e9 != ((h) arrayList4.get(i20 - 1)).e(i12)) {
+                eVar.a0(e9 & com.anythink.basead.exoplayer.k.p.f9259b);
             }
         }
         e eVar3 = new e();
-        int i22 = i10;
-        while (i22 < i9) {
-            byte e10 = ((h) arrayList4.get(i22)).e(i13);
-            int i23 = i22 + 1;
-            int i24 = i23;
+        int i21 = i9;
+        while (i21 < i6) {
+            byte e10 = ((h) arrayList4.get(i21)).e(i12);
+            int i22 = i21 + 1;
+            int i23 = i22;
             while (true) {
-                if (i24 >= i9) {
-                    i24 = i9;
+                if (i23 >= i6) {
+                    i23 = i6;
                     break;
-                } else if (e10 != ((h) arrayList4.get(i24)).e(i13)) {
+                } else if (e10 != ((h) arrayList4.get(i23)).e(i12)) {
                     break;
                 } else {
-                    i24++;
+                    i23++;
                 }
             }
-            if (i23 == i24 && i13 + 1 == ((h) arrayList4.get(i22)).a()) {
-                eVar.a0(((Number) arrayList5.get(i22)).intValue());
+            if (i22 == i23 && i12 + 1 == ((h) arrayList4.get(i21)).a()) {
+                eVar.a0(((Number) arrayList5.get(i21)).intValue());
                 arrayList3 = arrayList5;
                 j9 = j13;
-                i12 = i24;
+                i11 = i23;
             } else {
-                eVar.a0(((int) ((eVar3.f41953u / j12) + j13)) * (-1));
+                eVar.a0(((int) ((eVar3.f41924u / j12) + j13)) * (-1));
                 arrayList3 = arrayList5;
                 j9 = j13;
-                i12 = i24;
-                c(j9, eVar3, i13 + 1, arrayList, i22, i12, arrayList3);
+                i11 = i23;
+                c(j9, eVar3, i12 + 1, arrayList, i21, i11, arrayList3);
                 arrayList4 = arrayList;
             }
             j13 = j9;
-            i22 = i12;
+            i21 = i11;
             arrayList5 = arrayList3;
         }
         eVar.W(eVar3);
@@ -158,81 +159,81 @@ public abstract class b {
         if (hVarArr.length == 0) {
             return new m(new h[0], new int[]{0, -1});
         }
-        ArrayList arrayList = new ArrayList(new C5126g(hVarArr, false));
+        ArrayList arrayList = new ArrayList(new C5116g(hVarArr, false));
         if (arrayList.size() > 1) {
             Collections.sort(arrayList);
         }
         int size = arrayList.size();
         ArrayList arrayList2 = new ArrayList(size);
-        for (int i6 = 0; i6 < size; i6++) {
+        for (int i4 = 0; i4 < size; i4++) {
             arrayList2.add(-1);
         }
         int length = hVarArr.length;
+        int i6 = 0;
         int i9 = 0;
-        int i10 = 0;
-        while (i9 < length) {
-            h hVar = hVarArr[i9];
-            int i11 = i10 + 1;
+        while (i6 < length) {
+            h hVar = hVarArr[i6];
+            int i10 = i9 + 1;
             int size2 = arrayList.size();
             int size3 = arrayList.size();
             if (size2 < 0) {
-                throw new IllegalArgumentException(D.y.k(size2, "fromIndex (0) is greater than toIndex (", ")."));
+                throw new IllegalArgumentException(D.x.j(size2, "fromIndex (0) is greater than toIndex (", ")."));
             }
             if (size2 > size3) {
                 throw new IndexOutOfBoundsException("toIndex (" + size2 + ") is greater than size (" + size3 + ").");
             }
-            int i12 = size2 - 1;
-            int i13 = 0;
+            int i11 = size2 - 1;
+            int i12 = 0;
             while (true) {
-                if (i13 > i12) {
-                    i = -(i13 + 1);
+                if (i12 > i11) {
+                    i = -(i12 + 1);
                     break;
                 }
-                i = (i13 + i12) >>> 1;
+                i = (i12 + i11) >>> 1;
                 Comparable comparable = (Comparable) arrayList.get(i);
                 int compareTo = comparable == hVar ? 0 : comparable == null ? -1 : hVar == null ? 1 : comparable.compareTo(hVar);
                 if (compareTo < 0) {
-                    i13 = i + 1;
+                    i12 = i + 1;
                 } else if (compareTo > 0) {
-                    i12 = i - 1;
+                    i11 = i - 1;
                 }
             }
-            arrayList2.set(i, Integer.valueOf(i10));
-            i9++;
-            i10 = i11;
+            arrayList2.set(i, Integer.valueOf(i9));
+            i6++;
+            i9 = i10;
         }
         if (((h) arrayList.get(0)).a() <= 0) {
             throw new IllegalArgumentException("the empty byte string is not a supported option");
         }
-        int i14 = 0;
-        while (i14 < arrayList.size()) {
-            h prefix = (h) arrayList.get(i14);
-            int i15 = i14 + 1;
-            int i16 = i15;
-            while (i16 < arrayList.size()) {
-                h hVar2 = (h) arrayList.get(i16);
+        int i13 = 0;
+        while (i13 < arrayList.size()) {
+            h prefix = (h) arrayList.get(i13);
+            int i14 = i13 + 1;
+            int i15 = i14;
+            while (i15 < arrayList.size()) {
+                h hVar2 = (h) arrayList.get(i15);
                 hVar2.getClass();
                 kotlin.jvm.internal.h.e(prefix, "prefix");
                 if (hVar2.g(prefix, prefix.a())) {
                     if (hVar2.a() == prefix.a()) {
                         throw new IllegalArgumentException(("duplicate option: " + hVar2).toString());
                     }
-                    if (((Number) arrayList2.get(i16)).intValue() > ((Number) arrayList2.get(i14)).intValue()) {
-                        arrayList.remove(i16);
-                        ((Number) arrayList2.remove(i16)).intValue();
+                    if (((Number) arrayList2.get(i15)).intValue() > ((Number) arrayList2.get(i13)).intValue()) {
+                        arrayList.remove(i15);
+                        ((Number) arrayList2.remove(i15)).intValue();
                     } else {
-                        i16++;
+                        i15++;
                     }
                 }
             }
-            i14 = i15;
+            i13 = i14;
         }
         e eVar = new e();
         c(0L, eVar, 0, arrayList, 0, arrayList.size(), arrayList2);
-        int i17 = (int) (eVar.f41953u / 4);
-        int[] iArr = new int[i17];
-        for (int i18 = 0; i18 < i17; i18++) {
-            iArr[i18] = eVar.D();
+        int i16 = (int) (eVar.f41924u / 4);
+        int[] iArr = new int[i16];
+        for (int i17 = 0; i17 < i16; i17++) {
+            iArr[i17] = eVar.D();
         }
         Object[] copyOf = Arrays.copyOf(hVarArr, hVarArr.length);
         kotlin.jvm.internal.h.d(copyOf, "copyOf(...)");
@@ -240,7 +241,7 @@ public abstract class b {
     }
 
     public static final int f(int i) {
-        return ((i & com.anythink.basead.exoplayer.k.p.f8473b) << 24) | (((-16777216) & i) >>> 24) | ((16711680 & i) >>> 8) | ((65280 & i) << 8);
+        return ((i & com.anythink.basead.exoplayer.k.p.f9259b) << 24) | (((-16777216) & i) >>> 24) | ((16711680 & i) >>> 8) | ((65280 & i) << 8);
     }
 
     public static long g(String str) {
@@ -248,17 +249,17 @@ public abstract class b {
         int length = str.length();
         kotlin.jvm.internal.h.e(str, "<this>");
         if (length < 0) {
-            throw new IllegalArgumentException(u1.h.c(length, 0, "endIndex < beginIndex: ", " < ").toString());
+            throw new IllegalArgumentException(AbstractC5128c.c(length, 0, "endIndex < beginIndex: ", " < ").toString());
         }
         if (length > str.length()) {
-            StringBuilder i6 = AbstractC4404f.i(length, "endIndex > string.length: ", " > ");
-            i6.append(str.length());
-            throw new IllegalArgumentException(i6.toString().toString());
+            StringBuilder k9 = Wv.k(length, "endIndex > string.length: ", " > ");
+            k9.append(str.length());
+            throw new IllegalArgumentException(k9.toString().toString());
         }
         long j6 = 0;
-        int i9 = 0;
-        while (i9 < length) {
-            char charAt = str.charAt(i9);
+        int i4 = 0;
+        while (i4 < length) {
+            char charAt = str.charAt(i4);
             if (charAt < 128) {
                 j6++;
             } else {
@@ -267,19 +268,19 @@ public abstract class b {
                 } else if (charAt < 55296 || charAt > 57343) {
                     i = 3;
                 } else {
-                    int i10 = i9 + 1;
-                    char charAt2 = i10 < length ? str.charAt(i10) : (char) 0;
+                    int i6 = i4 + 1;
+                    char charAt2 = i6 < length ? str.charAt(i6) : (char) 0;
                     if (charAt > 56319 || charAt2 < 56320 || charAt2 > 57343) {
                         j6++;
-                        i9 = i10;
+                        i4 = i6;
                     } else {
                         j6 += 4;
-                        i9 += 2;
+                        i4 += 2;
                     }
                 }
                 j6 += i;
             }
-            i9++;
+            i4++;
         }
         return j6;
     }
@@ -290,16 +291,16 @@ public abstract class b {
     }
 
     public static final String i(int i) {
-        int i6 = 0;
+        int i4 = 0;
         if (i == 0) {
             return "0";
         }
-        char[] cArr = z8.b.f42277a;
+        char[] cArr = z8.b.f42246a;
         char[] cArr2 = {cArr[(i >> 28) & 15], cArr[(i >> 24) & 15], cArr[(i >> 20) & 15], cArr[(i >> 16) & 15], cArr[(i >> 12) & 15], cArr[(i >> 8) & 15], cArr[(i >> 4) & 15], cArr[i & 15]};
-        while (i6 < 8 && cArr2[i6] == '0') {
-            i6++;
+        while (i4 < 8 && cArr2[i4] == '0') {
+            i4++;
         }
-        com.bumptech.glide.g.b(i6, 8, 8);
-        return new String(cArr2, i6, 8 - i6);
+        S0.f.b(i4, 8, 8);
+        return new String(cArr2, i4, 8 - i4);
     }
 }

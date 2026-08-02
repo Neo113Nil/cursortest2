@@ -8,15 +8,15 @@ import java.util.regex.Pattern;
 public final class KC implements FilenameFilter {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Pattern f25877a;
+    public final Pattern f26629a;
 
     public KC(Pattern pattern) {
         pattern.getClass();
-        this.f25877a = pattern;
+        this.f26629a = pattern;
     }
 
     @Override // java.io.FilenameFilter
     public final boolean accept(File file, String str) {
-        return this.f25877a.matcher(str).matches();
+        return this.f26629a.matcher(str).matches();
     }
 }

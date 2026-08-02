@@ -4,59 +4,59 @@ import android.content.Context;
 import java.util.concurrent.ExecutorService;
 
 /* loaded from: classes2.dex */
-public final class Qz implements InterfaceC3297hN {
+public final class Qz implements InterfaceC3320hN {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f27147a = 0;
+    public final /* synthetic */ int f27903a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    public final C3351iN f27148b;
+    public final C3374iN f27904b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final C3243gN f27149c;
+    public final C3266gN f27905c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final C3243gN f27150d;
+    public final C3266gN f27906d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final C3243gN f27151e;
+    public final C3266gN f27907e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final C3351iN f27152f;
+    public final C3374iN f27908f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final C3243gN f27153g;
+    public final C3266gN f27909g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final C3243gN f27154h;
+    public final C3266gN f27910h;
 
-    public Qz(C3243gN c3243gN, C3243gN c3243gN2, C3243gN c3243gN3, C3243gN c3243gN4, C3243gN c3243gN5, C3351iN c3351iN, C3351iN c3351iN2) {
-        this.f27149c = c3243gN;
-        this.f27150d = c3243gN2;
-        this.f27151e = c3243gN3;
-        this.f27153g = c3243gN4;
-        this.f27154h = c3243gN5;
-        this.f27148b = c3351iN;
-        this.f27152f = c3351iN2;
+    public Qz(C3266gN c3266gN, C3266gN c3266gN2, C3266gN c3266gN3, C3266gN c3266gN4, C3266gN c3266gN5, C3374iN c3374iN, C3374iN c3374iN2) {
+        this.f27905c = c3266gN;
+        this.f27906d = c3266gN2;
+        this.f27907e = c3266gN3;
+        this.f27909g = c3266gN4;
+        this.f27910h = c3266gN5;
+        this.f27904b = c3374iN;
+        this.f27908f = c3374iN2;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3511lN
+    @Override // com.google.android.gms.internal.ads.InterfaceC3534lN
     public final Object f() {
-        switch (this.f27147a) {
+        switch (this.f27903a) {
             case 0:
-                return new Pz((My) this.f27149c.f(), (InterfaceC3284hA) this.f27150d.f(), (C3230gA) this.f27151e.f(), (C3498lA) this.f27153g.f(), (C3983uA) this.f27154h.f(), (C2949ay) this.f27148b.f31039a, (ExecutorService) this.f27152f.f31039a);
+                return new Pz((My) this.f27905c.f(), (InterfaceC3307hA) this.f27906d.f(), (C3253gA) this.f27907e.f(), (C3521lA) this.f27909g.f(), (C4006uA) this.f27910h.f(), (C2972ay) this.f27904b.f31812a, (ExecutorService) this.f27908f.f31812a);
             default:
-                return new Uz((Context) this.f27148b.f31039a, C3243gN.b(this.f27149c), (Yz) this.f27150d.f(), (C3983uA) this.f27151e.f(), (ExecutorService) this.f27152f.f31039a, (Iz) this.f27153g.f(), (Cw) this.f27154h.f());
+                return new Uz((Context) this.f27904b.f31812a, C3266gN.b(this.f27905c), (Yz) this.f27906d.f(), (C4006uA) this.f27907e.f(), (ExecutorService) this.f27908f.f31812a, (Iz) this.f27909g.f(), (Cw) this.f27910h.f());
         }
     }
 
-    public Qz(C3351iN c3351iN, C3243gN c3243gN, C3243gN c3243gN2, C3243gN c3243gN3, C3351iN c3351iN2, C3243gN c3243gN4, C3243gN c3243gN5) {
-        this.f27148b = c3351iN;
-        this.f27149c = c3243gN;
-        this.f27150d = c3243gN2;
-        this.f27151e = c3243gN3;
-        this.f27152f = c3351iN2;
-        this.f27153g = c3243gN4;
-        this.f27154h = c3243gN5;
+    public Qz(C3374iN c3374iN, C3266gN c3266gN, C3266gN c3266gN2, C3266gN c3266gN3, C3374iN c3374iN2, C3266gN c3266gN4, C3266gN c3266gN5) {
+        this.f27904b = c3374iN;
+        this.f27905c = c3266gN;
+        this.f27906d = c3266gN2;
+        this.f27907e = c3266gN3;
+        this.f27908f = c3374iN2;
+        this.f27909g = c3266gN4;
+        this.f27910h = c3266gN5;
     }
 }

@@ -10,13 +10,13 @@ import com.anythink.core.express.web.b;
 public final class MBWebViewChecker {
 
     /* renamed from: a, reason: collision with root package name */
-    private static volatile Boolean f18036a;
+    private static volatile Boolean f18823a;
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile Handler f18037b;
+    private static volatile Handler f18824b;
 
     /* renamed from: c, reason: collision with root package name */
-    private static Boolean f18038c;
+    private static Boolean f18825c;
 
     /* JADX INFO: Access modifiers changed from: private */
     public static boolean b(Context context) {
@@ -40,43 +40,43 @@ public final class MBWebViewChecker {
 
     public static boolean isWebViewAvailable(final Context context) {
         Boolean bool = Boolean.FALSE;
-        f18038c = bool;
+        f18825c = bool;
         if (!bool.booleanValue()) {
             return true;
         }
         if (Looper.getMainLooper() == Looper.myLooper()) {
-            if (f18036a == null) {
+            if (f18823a == null) {
                 try {
-                    f18036a = Boolean.valueOf(b(context));
+                    f18823a = Boolean.valueOf(b(context));
                 } catch (Exception unused) {
-                    f18036a = Boolean.FALSE;
+                    f18823a = Boolean.FALSE;
                 }
             }
-            if (f18036a == null) {
-                f18036a = Boolean.FALSE;
+            if (f18823a == null) {
+                f18823a = Boolean.FALSE;
             }
-            return f18036a.booleanValue();
+            return f18823a.booleanValue();
         }
-        if (f18036a == null && f18037b == null) {
+        if (f18823a == null && f18824b == null) {
             Handler handler = new Handler(Looper.getMainLooper());
-            f18037b = handler;
+            f18824b = handler;
             handler.post(new Runnable() { // from class: com.anythink.expressad.atsignalcommon.webEnvCheck.MBWebViewChecker.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    if (MBWebViewChecker.f18036a == null) {
+                    if (MBWebViewChecker.f18823a == null) {
                         try {
-                            Boolean unused2 = MBWebViewChecker.f18036a = Boolean.valueOf(MBWebViewChecker.b(context));
+                            Boolean unused2 = MBWebViewChecker.f18823a = Boolean.valueOf(MBWebViewChecker.b(context));
                         } catch (Exception unused3) {
-                            Boolean unused4 = MBWebViewChecker.f18036a = Boolean.FALSE;
+                            Boolean unused4 = MBWebViewChecker.f18823a = Boolean.FALSE;
                         }
                     }
                 }
             });
         }
-        if (f18036a == null) {
+        if (f18823a == null) {
             return true;
         }
-        return f18036a.booleanValue();
+        return f18823a.booleanValue();
     }
 
     private static void a(WebView webView) {

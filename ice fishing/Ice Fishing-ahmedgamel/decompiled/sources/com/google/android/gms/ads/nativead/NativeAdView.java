@@ -1,8 +1,8 @@
 package com.google.android.gms.ads.nativead;
 
 import I0.j;
-import W2.a;
-import W2.b;
+import Y2.a;
+import Y2.b;
 import android.content.Context;
 import android.os.RemoteException;
 import android.util.AttributeSet;
@@ -11,42 +11,42 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import com.anythink.core.api.ErrorCode;
-import com.google.android.gms.internal.ads.AbstractC3569ma;
-import com.google.android.gms.internal.ads.InterfaceC4055vb;
-import g1.C4522b;
-import q2.C4894m;
-import q2.C4896n;
-import q2.C4900p;
-import q2.r;
-import v2.i;
+import com.google.android.gms.internal.ads.AbstractC3592ma;
+import com.google.android.gms.internal.ads.InterfaceC4078vb;
+import i1.C4585b;
+import s2.C4943m;
+import s2.C4945n;
+import s2.C4949p;
+import s2.r;
+import x2.i;
 
 /* loaded from: classes.dex */
 public final class NativeAdView extends FrameLayout {
 
     /* renamed from: n, reason: collision with root package name */
-    public final FrameLayout f23595n;
+    public final FrameLayout f24375n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final InterfaceC4055vb f23596u;
+    public final InterfaceC4078vb f24376u;
 
     public NativeAdView(Context context) {
         super(context);
         FrameLayout frameLayout = new FrameLayout(context);
         frameLayout.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
         addView(frameLayout);
-        this.f23595n = frameLayout;
-        this.f23596u = c();
+        this.f24375n = frameLayout;
+        this.f24376u = c();
     }
 
     public final View a(String str) {
-        InterfaceC4055vb interfaceC4055vb = this.f23596u;
-        if (interfaceC4055vb == null) {
+        InterfaceC4078vb interfaceC4078vb = this.f24376u;
+        if (interfaceC4078vb == null) {
             return null;
         }
         try {
-            a z3 = interfaceC4055vb.z(str);
-            if (z3 != null) {
-                return (View) b.F0(z3);
+            a z6 = interfaceC4078vb.z(str);
+            if (z6 != null) {
+                return (View) b.D0(z6);
             }
             return null;
         } catch (RemoteException e9) {
@@ -58,16 +58,16 @@ public final class NativeAdView extends FrameLayout {
     @Override // android.view.ViewGroup
     public final void addView(View view, int i, ViewGroup.LayoutParams layoutParams) {
         super.addView(view, i, layoutParams);
-        super.bringChildToFront(this.f23595n);
+        super.bringChildToFront(this.f24375n);
     }
 
     public final void b(View view, String str) {
-        InterfaceC4055vb interfaceC4055vb = this.f23596u;
-        if (interfaceC4055vb == null) {
+        InterfaceC4078vb interfaceC4078vb = this.f24376u;
+        if (interfaceC4078vb == null) {
             return;
         }
         try {
-            interfaceC4055vb.S2(new b(view), str);
+            interfaceC4078vb.t3(new b(view), str);
         } catch (RemoteException e9) {
             i.d("Unable to call setAssetView on delegate", e9);
         }
@@ -76,30 +76,30 @@ public final class NativeAdView extends FrameLayout {
     @Override // android.view.ViewGroup, android.view.ViewParent
     public final void bringChildToFront(View view) {
         super.bringChildToFront(view);
-        FrameLayout frameLayout = this.f23595n;
+        FrameLayout frameLayout = this.f24375n;
         if (frameLayout != view) {
             super.bringChildToFront(frameLayout);
         }
     }
 
-    public final InterfaceC4055vb c() {
+    public final InterfaceC4078vb c() {
         if (isInEditMode()) {
             return null;
         }
-        C4896n c4896n = C4900p.f40199g.f40201b;
-        FrameLayout frameLayout = this.f23595n;
+        C4945n c4945n = C4949p.f40498g.f40500b;
+        FrameLayout frameLayout = this.f24375n;
         Context context = frameLayout.getContext();
-        c4896n.getClass();
-        return (InterfaceC4055vb) new C4894m(c4896n, this, frameLayout, context).d(context, false);
+        c4945n.getClass();
+        return (InterfaceC4078vb) new C4943m(c4945n, this, frameLayout, context).d(context, false);
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public final boolean dispatchTouchEvent(MotionEvent motionEvent) {
-        InterfaceC4055vb interfaceC4055vb = this.f23596u;
-        if (interfaceC4055vb != null) {
-            if (((Boolean) r.f40207e.f40210c.a(AbstractC3569ma.Xc)).booleanValue()) {
+        InterfaceC4078vb interfaceC4078vb = this.f24376u;
+        if (interfaceC4078vb != null) {
+            if (((Boolean) r.f40506e.f40509c.a(AbstractC3592ma.Xc)).booleanValue()) {
                 try {
-                    interfaceC4055vb.S0(new b(motionEvent));
+                    interfaceC4078vb.q3(new b(motionEvent));
                 } catch (RemoteException e9) {
                     i.d("Unable to call handleTouchEvent on delegate", e9);
                 }
@@ -108,7 +108,7 @@ public final class NativeAdView extends FrameLayout {
         return super.dispatchTouchEvent(motionEvent);
     }
 
-    public A2.a getAdChoicesView() {
+    public C2.a getAdChoicesView() {
         a("3011");
         return null;
     }
@@ -164,12 +164,12 @@ public final class NativeAdView extends FrameLayout {
     @Override // android.view.View
     public final void onVisibilityChanged(View view, int i) {
         super.onVisibilityChanged(view, i);
-        InterfaceC4055vb interfaceC4055vb = this.f23596u;
-        if (interfaceC4055vb == null) {
+        InterfaceC4078vb interfaceC4078vb = this.f24376u;
+        if (interfaceC4078vb == null) {
             return;
         }
         try {
-            interfaceC4055vb.y3(new b(view), i);
+            interfaceC4078vb.y3(new b(view), i);
         } catch (RemoteException e9) {
             i.d("Unable to call onVisibilityChanged on delegate", e9);
         }
@@ -178,18 +178,18 @@ public final class NativeAdView extends FrameLayout {
     @Override // android.view.ViewGroup
     public final void removeAllViews() {
         super.removeAllViews();
-        addView(this.f23595n);
+        addView(this.f24375n);
     }
 
     @Override // android.view.ViewGroup, android.view.ViewManager
     public final void removeView(View view) {
-        if (this.f23595n == view) {
+        if (this.f24375n == view) {
             return;
         }
         super.removeView(view);
     }
 
-    public void setAdChoicesView(A2.a aVar) {
+    public void setAdChoicesView(C2.a aVar) {
         b(aVar, "3011");
     }
 
@@ -206,12 +206,12 @@ public final class NativeAdView extends FrameLayout {
     }
 
     public final void setClickConfirmingView(View view) {
-        InterfaceC4055vb interfaceC4055vb = this.f23596u;
-        if (interfaceC4055vb == null) {
+        InterfaceC4078vb interfaceC4078vb = this.f24376u;
+        if (interfaceC4078vb == null) {
             return;
         }
         try {
-            interfaceC4055vb.A3(new b(view));
+            interfaceC4078vb.v3(new b(view));
         } catch (RemoteException e9) {
             i.d("Unable to call setClickConfirmingView on delegate", e9);
         }
@@ -234,29 +234,29 @@ public final class NativeAdView extends FrameLayout {
         if (mediaView == null) {
             return;
         }
-        C4522b c4522b = new C4522b(1, this);
+        C4585b c4585b = new C4585b(4, this);
         synchronized (mediaView) {
-            mediaView.f23591v = c4522b;
-            if (mediaView.f23590u) {
-                c4522b.X(mediaView.f23589n);
+            mediaView.f24371v = c4585b;
+            if (mediaView.f24370u) {
+                c4585b.u(mediaView.f24369n);
             }
         }
-        j jVar = new j(1, this);
+        j jVar = new j(3, this);
         synchronized (mediaView) {
-            mediaView.f23594y = jVar;
-            if (mediaView.f23593x) {
-                jVar.b(mediaView.f23592w);
+            mediaView.f24374y = jVar;
+            if (mediaView.f24373x) {
+                jVar.v(mediaView.f24372w);
             }
         }
     }
 
     public void setNativeAd(NativeAd nativeAd) {
-        InterfaceC4055vb interfaceC4055vb = this.f23596u;
-        if (interfaceC4055vb == null) {
+        InterfaceC4078vb interfaceC4078vb = this.f24376u;
+        if (interfaceC4078vb == null) {
             return;
         }
         try {
-            interfaceC4055vb.R0(nativeAd.n());
+            interfaceC4078vb.V0(nativeAd.n());
         } catch (RemoteException e9) {
             i.d("Unable to call setNativeAd on delegate", e9);
         }
@@ -279,7 +279,7 @@ public final class NativeAdView extends FrameLayout {
         FrameLayout frameLayout = new FrameLayout(context);
         frameLayout.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
         addView(frameLayout);
-        this.f23595n = frameLayout;
-        this.f23596u = c();
+        this.f24375n = frameLayout;
+        this.f24376u = c();
     }
 }

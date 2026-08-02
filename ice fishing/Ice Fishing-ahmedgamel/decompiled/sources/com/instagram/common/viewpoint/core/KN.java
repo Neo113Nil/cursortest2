@@ -17,16 +17,16 @@ public final class KN {
         this(str, -3.4028235E38f, -3.4028235E38f, Integer.MIN_VALUE, Integer.MIN_VALUE, -3.4028235E38f, -3.4028235E38f, Integer.MIN_VALUE, -3.4028235E38f, Integer.MIN_VALUE);
     }
 
-    public KN(String str, float f3, float f9, int i, int i6, float f10, float f11, int i9, float f12, int i10) {
+    public KN(String str, float f2, float f9, int i, int i4, float f10, float f11, int i6, float f12, int i9) {
         this.A09 = str;
-        this.A02 = f3;
+        this.A02 = f2;
         this.A01 = f9;
         this.A06 = i;
-        this.A05 = i6;
+        this.A05 = i4;
         this.A04 = f10;
         this.A00 = f11;
-        this.A07 = i9;
+        this.A07 = i6;
         this.A03 = f12;
-        this.A08 = i10;
+        this.A08 = i9;
     }
 }

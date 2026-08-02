@@ -8,26 +8,26 @@ import java.util.concurrent.atomic.AtomicInteger;
 public abstract class a<R, E> implements e<R, E> {
 
     /* renamed from: a, reason: collision with root package name */
-    private final AtomicBoolean f5699a = new AtomicBoolean(false);
+    private final AtomicBoolean f6485a = new AtomicBoolean(false);
 
     /* renamed from: b, reason: collision with root package name */
-    private final AtomicInteger f5700b = new AtomicInteger(1);
+    private final AtomicInteger f6486b = new AtomicInteger(1);
 
     /* renamed from: c, reason: collision with root package name */
-    private final CopyOnWriteArrayList<Integer> f5701c = new CopyOnWriteArrayList<>();
+    private final CopyOnWriteArrayList<Integer> f6487c = new CopyOnWriteArrayList<>();
 
     /* renamed from: d, reason: collision with root package name */
-    private d<R, E> f5702d;
+    private d<R, E> f6488d;
 
     @Override // com.anythink.basead.b.a.e
     public final void a(int i) {
-        if (this.f5699a.get() || this.f5701c.contains(Integer.valueOf(i))) {
+        if (this.f6485a.get() || this.f6487c.contains(Integer.valueOf(i))) {
             return;
         }
-        this.f5701c.add(Integer.valueOf(i));
-        if (this.f5700b.decrementAndGet() == 0) {
-            this.f5699a.set(true);
-            d<R, E> dVar = this.f5702d;
+        this.f6487c.add(Integer.valueOf(i));
+        if (this.f6486b.decrementAndGet() == 0) {
+            this.f6485a.set(true);
+            d<R, E> dVar = this.f6488d;
             if (dVar != null) {
                 dVar.a();
             }
@@ -36,16 +36,16 @@ public abstract class a<R, E> implements e<R, E> {
 
     @Override // com.anythink.basead.b.a.e
     public final void b(int i) {
-        this.f5700b.set(i);
+        this.f6486b.set(i);
     }
 
     @Override // com.anythink.basead.b.a.e
     public final void a(E e9) {
-        if (this.f5699a.get()) {
+        if (this.f6485a.get()) {
             return;
         }
-        this.f5699a.set(true);
-        d<R, E> dVar = this.f5702d;
+        this.f6485a.set(true);
+        d<R, E> dVar = this.f6488d;
         if (dVar != null) {
             dVar.a(e9);
         }
@@ -53,6 +53,6 @@ public abstract class a<R, E> implements e<R, E> {
 
     @Override // com.anythink.basead.b.a.e
     public final void a(d<R, E> dVar) {
-        this.f5702d = dVar;
+        this.f6488d = dVar;
     }
 }

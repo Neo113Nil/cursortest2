@@ -13,25 +13,25 @@ import java.util.Map;
 public class b {
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile b f21133b;
+    private static volatile b f21920b;
 
     /* renamed from: a, reason: collision with root package name */
-    public Map<String, SoftReference<View>> f21134a = new HashMap();
+    public Map<String, SoftReference<View>> f21921a = new HashMap();
 
     private b() {
     }
 
     public static b a() {
         b bVar;
-        if (f21133b != null) {
-            return f21133b;
+        if (f21920b != null) {
+            return f21920b;
         }
         synchronized (b.class) {
             try {
-                if (f21133b == null) {
-                    f21133b = new b();
+                if (f21920b == null) {
+                    f21920b = new b();
                 }
-                bVar = f21133b;
+                bVar = f21920b;
             } catch (Throwable th) {
                 throw th;
             }

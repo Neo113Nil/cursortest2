@@ -1,20 +1,73 @@
 package Z2;
 
-import android.os.IBinder;
-import android.os.IInterface;
+import android.os.Process;
+import java.util.concurrent.locks.ReentrantLock;
 
-/* loaded from: classes2.dex */
-public final class c implements IInterface {
+/* loaded from: classes.dex */
+public final class c extends Thread {
 
     /* renamed from: n, reason: collision with root package name */
-    public final IBinder f4166n;
+    public final /* synthetic */ int f4133n = 2;
 
-    public c(IBinder iBinder) {
-        this.f4166n = iBinder;
+    public /* synthetic */ c(Runnable runnable) {
+        super(runnable);
     }
 
-    @Override // android.os.IInterface
-    public final IBinder asBinder() {
-        return this.f4166n;
+    @Override // java.lang.Thread, java.lang.Runnable
+    public final void run() {
+        ReentrantLock reentrantLock;
+        y8.c b9;
+        switch (this.f4133n) {
+            case 0:
+                Process.setThreadPriority(19);
+                synchronized (this) {
+                    while (true) {
+                        try {
+                            wait();
+                        } catch (InterruptedException unused) {
+                            return;
+                        }
+                    }
+                }
+            case 1:
+                break;
+            default:
+                Process.setThreadPriority(9);
+                super.run();
+                return;
+        }
+        while (true) {
+            try {
+                I1.a aVar = y8.c.f41911h;
+                reentrantLock = y8.c.f41912j;
+                reentrantLock.lock();
+                try {
+                    b9 = x1.g.b();
+                } catch (Throwable th) {
+                    reentrantLock.unlock();
+                    throw th;
+                }
+            } catch (InterruptedException unused2) {
+                continue;
+            }
+            if (b9 == y8.c.i) {
+                y8.c.i = null;
+                reentrantLock.unlock();
+                return;
+            } else {
+                reentrantLock.unlock();
+                if (b9 != null) {
+                    b9.k();
+                }
+            }
+        }
+    }
+
+    public /* synthetic */ c(String str) {
+        super(str);
+    }
+
+    public /* synthetic */ c(ThreadGroup threadGroup, String str) {
+        super(threadGroup, str);
     }
 }

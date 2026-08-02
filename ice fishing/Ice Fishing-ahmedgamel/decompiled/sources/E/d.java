@@ -1,6 +1,6 @@
 package E;
 
-import D.y;
+import D.x;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
@@ -18,7 +18,7 @@ public abstract class d {
         if (e.b(context, str2) == 0) {
             return context.registerReceiver(broadcastReceiver, intentFilter, str2, handler);
         }
-        throw new RuntimeException(y.o("Permission ", str2, " is required by your application to receive broadcasts, please add it to your manifest"));
+        throw new RuntimeException(x.l("Permission ", str2, " is required by your application to receive broadcasts, please add it to your manifest"));
     }
 
     public static ComponentName b(Context context, Intent intent) {

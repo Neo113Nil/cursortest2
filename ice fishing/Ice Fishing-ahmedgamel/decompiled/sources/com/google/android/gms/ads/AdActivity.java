@@ -1,6 +1,6 @@
 package com.google.android.gms.ads;
 
-import W2.b;
+import Y2.b;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -8,37 +8,37 @@ import android.os.Bundle;
 import android.os.RemoteException;
 import android.view.View;
 import android.view.ViewGroup;
-import com.google.android.gms.internal.ads.InterfaceC3573me;
-import q2.C4874c;
-import q2.C4896n;
-import q2.C4900p;
-import v2.i;
+import com.google.android.gms.internal.ads.InterfaceC3596me;
+import s2.C4923c;
+import s2.C4945n;
+import s2.C4949p;
+import x2.i;
 
 /* loaded from: classes.dex */
 public final class AdActivity extends Activity {
 
     /* renamed from: n, reason: collision with root package name */
-    public InterfaceC3573me f23553n;
+    public InterfaceC3596me f24333n;
 
     @Override // android.app.Activity
-    public final void onActivityResult(int i, int i6, Intent intent) {
+    public final void onActivityResult(int i, int i4, Intent intent) {
         try {
-            InterfaceC3573me interfaceC3573me = this.f23553n;
-            if (interfaceC3573me != null) {
-                interfaceC3573me.x3(i, i6, intent);
+            InterfaceC3596me interfaceC3596me = this.f24333n;
+            if (interfaceC3596me != null) {
+                interfaceC3596me.r3(i, i4, intent);
             }
         } catch (Exception e9) {
             i.i("#007 Could not call remote method.", e9);
         }
-        super.onActivityResult(i, i6, intent);
+        super.onActivityResult(i, i4, intent);
     }
 
     @Override // android.app.Activity
     public final void onBackPressed() {
         try {
-            InterfaceC3573me interfaceC3573me = this.f23553n;
-            if (interfaceC3573me != null) {
-                if (!interfaceC3573me.e()) {
+            InterfaceC3596me interfaceC3596me = this.f24333n;
+            if (interfaceC3596me != null) {
+                if (!interfaceC3596me.e()) {
                     return;
                 }
             }
@@ -47,9 +47,9 @@ public final class AdActivity extends Activity {
         }
         super.onBackPressed();
         try {
-            InterfaceC3573me interfaceC3573me2 = this.f23553n;
-            if (interfaceC3573me2 != null) {
-                interfaceC3573me2.o();
+            InterfaceC3596me interfaceC3596me2 = this.f24333n;
+            if (interfaceC3596me2 != null) {
+                interfaceC3596me2.o();
             }
         } catch (RemoteException e10) {
             i.i("#007 Could not call remote method.", e10);
@@ -60,9 +60,9 @@ public final class AdActivity extends Activity {
     public final void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
         try {
-            InterfaceC3573me interfaceC3573me = this.f23553n;
-            if (interfaceC3573me != null) {
-                interfaceC3573me.I0(new b(configuration));
+            InterfaceC3596me interfaceC3596me = this.f24333n;
+            if (interfaceC3596me != null) {
+                interfaceC3596me.d3(new b(configuration));
             }
         } catch (RemoteException e9) {
             i.i("#007 Could not call remote method.", e9);
@@ -73,25 +73,25 @@ public final class AdActivity extends Activity {
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         i.a("AdActivity onCreate");
-        C4896n c4896n = C4900p.f40199g.f40201b;
-        c4896n.getClass();
-        C4874c c4874c = new C4874c(c4896n, this);
+        C4945n c4945n = C4949p.f40498g.f40500b;
+        c4945n.getClass();
+        C4923c c4923c = new C4923c(c4945n, this);
         Intent intent = getIntent();
-        boolean z3 = false;
+        boolean z6 = false;
         if (intent.hasExtra("com.google.android.gms.ads.internal.overlay.useClientJar")) {
-            z3 = intent.getBooleanExtra("com.google.android.gms.ads.internal.overlay.useClientJar", false);
+            z6 = intent.getBooleanExtra("com.google.android.gms.ads.internal.overlay.useClientJar", false);
         } else {
             i.c("useClientJar flag not found in activity intent extras.");
         }
-        InterfaceC3573me interfaceC3573me = (InterfaceC3573me) c4874c.d(this, z3);
-        this.f23553n = interfaceC3573me;
-        if (interfaceC3573me == null) {
+        InterfaceC3596me interfaceC3596me = (InterfaceC3596me) c4923c.d(this, z6);
+        this.f24333n = interfaceC3596me;
+        if (interfaceC3596me == null) {
             i.i("#007 Could not call remote method.", null);
             finish();
             return;
         }
         try {
-            interfaceC3573me.D0(bundle);
+            interfaceC3596me.A0(bundle);
         } catch (RemoteException e9) {
             i.i("#007 Could not call remote method.", e9);
             finish();
@@ -102,9 +102,9 @@ public final class AdActivity extends Activity {
     public final void onDestroy() {
         i.a("AdActivity onDestroy");
         try {
-            InterfaceC3573me interfaceC3573me = this.f23553n;
-            if (interfaceC3573me != null) {
-                interfaceC3573me.J();
+            InterfaceC3596me interfaceC3596me = this.f24333n;
+            if (interfaceC3596me != null) {
+                interfaceC3596me.I();
             }
         } catch (RemoteException e9) {
             i.i("#007 Could not call remote method.", e9);
@@ -116,9 +116,9 @@ public final class AdActivity extends Activity {
     public final void onPause() {
         i.a("AdActivity onPause");
         try {
-            InterfaceC3573me interfaceC3573me = this.f23553n;
-            if (interfaceC3573me != null) {
-                interfaceC3573me.k();
+            InterfaceC3596me interfaceC3596me = this.f24333n;
+            if (interfaceC3596me != null) {
+                interfaceC3596me.k();
             }
         } catch (RemoteException e9) {
             i.i("#007 Could not call remote method.", e9);
@@ -130,9 +130,9 @@ public final class AdActivity extends Activity {
     @Override // android.app.Activity
     public final void onRequestPermissionsResult(int i, String[] strArr, int[] iArr) {
         try {
-            InterfaceC3573me interfaceC3573me = this.f23553n;
-            if (interfaceC3573me != null) {
-                interfaceC3573me.q1(i, strArr, iArr);
+            InterfaceC3596me interfaceC3596me = this.f24333n;
+            if (interfaceC3596me != null) {
+                interfaceC3596me.p1(i, strArr, iArr);
             }
         } catch (RemoteException e9) {
             i.i("#007 Could not call remote method.", e9);
@@ -144,9 +144,9 @@ public final class AdActivity extends Activity {
         super.onRestart();
         i.a("AdActivity onRestart");
         try {
-            InterfaceC3573me interfaceC3573me = this.f23553n;
-            if (interfaceC3573me != null) {
-                interfaceC3573me.g();
+            InterfaceC3596me interfaceC3596me = this.f24333n;
+            if (interfaceC3596me != null) {
+                interfaceC3596me.g();
             }
         } catch (RemoteException e9) {
             i.i("#007 Could not call remote method.", e9);
@@ -159,9 +159,9 @@ public final class AdActivity extends Activity {
         i.a("AdActivity onResume");
         super.onResume();
         try {
-            InterfaceC3573me interfaceC3573me = this.f23553n;
-            if (interfaceC3573me != null) {
-                interfaceC3573me.j();
+            InterfaceC3596me interfaceC3596me = this.f24333n;
+            if (interfaceC3596me != null) {
+                interfaceC3596me.j();
             }
         } catch (RemoteException e9) {
             i.i("#007 Could not call remote method.", e9);
@@ -172,9 +172,9 @@ public final class AdActivity extends Activity {
     @Override // android.app.Activity
     public final void onSaveInstanceState(Bundle bundle) {
         try {
-            InterfaceC3573me interfaceC3573me = this.f23553n;
-            if (interfaceC3573me != null) {
-                interfaceC3573me.F1(bundle);
+            InterfaceC3596me interfaceC3596me = this.f24333n;
+            if (interfaceC3596me != null) {
+                interfaceC3596me.x1(bundle);
             }
         } catch (RemoteException e9) {
             i.i("#007 Could not call remote method.", e9);
@@ -188,9 +188,9 @@ public final class AdActivity extends Activity {
         super.onStart();
         i.a("AdActivity onStart");
         try {
-            InterfaceC3573me interfaceC3573me = this.f23553n;
-            if (interfaceC3573me != null) {
-                interfaceC3573me.n();
+            InterfaceC3596me interfaceC3596me = this.f24333n;
+            if (interfaceC3596me != null) {
+                interfaceC3596me.n();
             }
         } catch (RemoteException e9) {
             i.i("#007 Could not call remote method.", e9);
@@ -202,9 +202,9 @@ public final class AdActivity extends Activity {
     public final void onStop() {
         i.a("AdActivity onStop");
         try {
-            InterfaceC3573me interfaceC3573me = this.f23553n;
-            if (interfaceC3573me != null) {
-                interfaceC3573me.E();
+            InterfaceC3596me interfaceC3596me = this.f24333n;
+            if (interfaceC3596me != null) {
+                interfaceC3596me.E();
             }
         } catch (RemoteException e9) {
             i.i("#007 Could not call remote method.", e9);
@@ -217,9 +217,9 @@ public final class AdActivity extends Activity {
     public final void onUserLeaveHint() {
         super.onUserLeaveHint();
         try {
-            InterfaceC3573me interfaceC3573me = this.f23553n;
-            if (interfaceC3573me != null) {
-                interfaceC3573me.d();
+            InterfaceC3596me interfaceC3596me = this.f24333n;
+            if (interfaceC3596me != null) {
+                interfaceC3596me.d();
             }
         } catch (RemoteException e9) {
             i.i("#007 Could not call remote method.", e9);
@@ -229,10 +229,10 @@ public final class AdActivity extends Activity {
     @Override // android.app.Activity
     public final void setContentView(int i) {
         super.setContentView(i);
-        InterfaceC3573me interfaceC3573me = this.f23553n;
-        if (interfaceC3573me != null) {
+        InterfaceC3596me interfaceC3596me = this.f24333n;
+        if (interfaceC3596me != null) {
             try {
-                interfaceC3573me.L0();
+                interfaceC3596me.I0();
             } catch (RemoteException e9) {
                 i.i("#007 Could not call remote method.", e9);
             }
@@ -242,10 +242,10 @@ public final class AdActivity extends Activity {
     @Override // android.app.Activity
     public final void setContentView(View view) {
         super.setContentView(view);
-        InterfaceC3573me interfaceC3573me = this.f23553n;
-        if (interfaceC3573me != null) {
+        InterfaceC3596me interfaceC3596me = this.f24333n;
+        if (interfaceC3596me != null) {
             try {
-                interfaceC3573me.L0();
+                interfaceC3596me.I0();
             } catch (RemoteException e9) {
                 i.i("#007 Could not call remote method.", e9);
             }
@@ -255,10 +255,10 @@ public final class AdActivity extends Activity {
     @Override // android.app.Activity
     public final void setContentView(View view, ViewGroup.LayoutParams layoutParams) {
         super.setContentView(view, layoutParams);
-        InterfaceC3573me interfaceC3573me = this.f23553n;
-        if (interfaceC3573me != null) {
+        InterfaceC3596me interfaceC3596me = this.f24333n;
+        if (interfaceC3596me != null) {
             try {
-                interfaceC3573me.L0();
+                interfaceC3596me.I0();
             } catch (RemoteException e9) {
                 i.i("#007 Could not call remote method.", e9);
             }

@@ -2,6 +2,7 @@ package com.onesignal.debug.internal.logging.otel.android;
 
 import android.content.Context;
 import kotlin.jvm.internal.h;
+import w.AbstractC5128c;
 
 /* loaded from: classes2.dex */
 public final class d {
@@ -102,9 +103,9 @@ public final class d {
     }
 
     public int hashCode() {
-        int k9 = u1.h.k(u1.h.k(this.crashStoragePath.hashCode() * 31, 31, this.appPackageId), 31, this.appVersion);
+        int a9 = AbstractC5128c.a(AbstractC5128c.a(this.crashStoragePath.hashCode() * 31, 31, this.appPackageId), 31, this.appVersion);
         Context context = this.context;
-        int hashCode = (k9 + (context == null ? 0 : context.hashCode())) * 31;
+        int hashCode = (a9 + (context == null ? 0 : context.hashCode())) * 31;
         I7.a aVar = this.getIsInForeground;
         return hashCode + (aVar != null ? aVar.hashCode() : 0);
     }

@@ -4,12 +4,12 @@ package com.anythink.expressad.foundation.g.f.g;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f19349a;
+    public String f20136a;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private static final e f19350a = new e(0);
+        private static final e f20137a = new e(0);
 
         private a() {
         }
@@ -20,7 +20,7 @@ public final class e {
     }
 
     public static e a() {
-        return a.f19350a;
+        return a.f20137a;
     }
 
     private static String b() {
@@ -28,6 +28,6 @@ public final class e {
     }
 
     private e() {
-        this.f19349a = "";
+        this.f20136a = "";
     }
 }

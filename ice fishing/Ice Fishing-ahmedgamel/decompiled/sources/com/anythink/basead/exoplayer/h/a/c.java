@@ -26,67 +26,67 @@ import java.util.Map;
 public final class c extends f<s.a> {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f7418a = "AdsMediaSource";
+    private static final String f8204a = "AdsMediaSource";
 
     /* renamed from: b, reason: collision with root package name */
-    private final s f7419b;
+    private final s f8205b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final e f7420c;
+    private final e f8206c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final com.anythink.basead.exoplayer.h.a.b f7421d;
+    private final com.anythink.basead.exoplayer.h.a.b f8207d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final ViewGroup f7422e;
+    private final ViewGroup f8208e;
 
     /* renamed from: f, reason: collision with root package name */
-    private final Handler f7423f;
+    private final Handler f8209f;
 
     /* renamed from: g, reason: collision with root package name */
-    private final d f7424g;
+    private final d f8210g;
 
     /* renamed from: h, reason: collision with root package name */
-    private final Handler f7425h;
+    private final Handler f8211h;
     private final Map<s, List<l>> i;
 
     /* renamed from: j, reason: collision with root package name */
-    private final ae.a f7426j;
+    private final ae.a f8212j;
 
     /* renamed from: k, reason: collision with root package name */
-    private C0028c f7427k;
+    private C0028c f8213k;
 
     /* renamed from: l, reason: collision with root package name */
-    private ae f7428l;
+    private ae f8214l;
 
     /* renamed from: m, reason: collision with root package name */
-    private Object f7429m;
+    private Object f8215m;
 
     /* renamed from: n, reason: collision with root package name */
-    private com.anythink.basead.exoplayer.h.a.a f7430n;
+    private com.anythink.basead.exoplayer.h.a.a f8216n;
 
     /* renamed from: o, reason: collision with root package name */
-    private s[][] f7431o;
+    private s[][] f8217o;
 
     /* renamed from: p, reason: collision with root package name */
-    private long[][] f7432p;
+    private long[][] f8218p;
 
     public static final class a extends IOException {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final int f7437a = 0;
+        public static final int f8223a = 0;
 
         /* renamed from: b, reason: collision with root package name */
-        public static final int f7438b = 1;
+        public static final int f8224b = 1;
 
         /* renamed from: c, reason: collision with root package name */
-        public static final int f7439c = 2;
+        public static final int f8225c = 2;
 
         /* renamed from: d, reason: collision with root package name */
-        public static final int f7440d = 3;
+        public static final int f8226d = 3;
 
         /* renamed from: e, reason: collision with root package name */
-        public final int f7441e;
+        public final int f8227e;
 
         @Retention(RetentionPolicy.SOURCE)
         /* renamed from: com.anythink.basead.exoplayer.h.a.c$a$a, reason: collision with other inner class name */
@@ -95,7 +95,7 @@ public final class c extends f<s.a> {
 
         private a(int i, Exception exc) {
             super(exc);
-            this.f7441e = i;
+            this.f8227e = i;
         }
 
         public static a a(Exception exc) {
@@ -115,7 +115,7 @@ public final class c extends f<s.a> {
         }
 
         private RuntimeException a() {
-            com.anythink.basead.exoplayer.k.a.b(this.f7441e == 3);
+            com.anythink.basead.exoplayer.k.a.b(this.f8227e == 3);
             return (RuntimeException) getCause();
         }
     }
@@ -123,29 +123,29 @@ public final class c extends f<s.a> {
     public final class b implements l.a {
 
         /* renamed from: b, reason: collision with root package name */
-        private final Uri f7443b;
+        private final Uri f8229b;
 
         /* renamed from: c, reason: collision with root package name */
-        private final int f7444c;
+        private final int f8230c;
 
         /* renamed from: d, reason: collision with root package name */
-        private final int f7445d;
+        private final int f8231d;
 
-        public b(Uri uri, int i, int i6) {
-            this.f7443b = uri;
-            this.f7444c = i;
-            this.f7445d = i6;
+        public b(Uri uri, int i, int i4) {
+            this.f8229b = uri;
+            this.f8230c = i;
+            this.f8231d = i4;
         }
 
         @Override // com.anythink.basead.exoplayer.h.l.a
         public final void a(s.a aVar, final IOException iOException) {
-            c.this.a(aVar).a(new k(this.f7443b), a.a(iOException));
-            c.this.f7425h.post(new Runnable() { // from class: com.anythink.basead.exoplayer.h.a.c.b.1
+            c.this.a(aVar).a(new k(this.f8229b), a.a(iOException));
+            c.this.f8211h.post(new Runnable() { // from class: com.anythink.basead.exoplayer.h.a.c.b.1
                 @Override // java.lang.Runnable
                 public final void run() {
-                    com.anythink.basead.exoplayer.h.a.b unused = c.this.f7421d;
-                    int unused2 = b.this.f7444c;
-                    int unused3 = b.this.f7445d;
+                    com.anythink.basead.exoplayer.h.a.b unused = c.this.f8207d;
+                    int unused2 = b.this.f8230c;
+                    int unused3 = b.this.f8231d;
                 }
             });
         }
@@ -155,44 +155,44 @@ public final class c extends f<s.a> {
     public final class C0028c implements b.a {
 
         /* renamed from: b, reason: collision with root package name */
-        private final Handler f7449b = new Handler();
+        private final Handler f8235b = new Handler();
 
         /* renamed from: c, reason: collision with root package name */
-        private volatile boolean f7450c;
+        private volatile boolean f8236c;
 
         public C0028c() {
         }
 
         @Override // com.anythink.basead.exoplayer.h.a.b.a
         public final void b() {
-            if (this.f7450c || c.this.f7423f == null || c.this.f7424g == null) {
+            if (this.f8236c || c.this.f8209f == null || c.this.f8210g == null) {
                 return;
             }
-            c.this.f7423f.post(new Runnable() { // from class: com.anythink.basead.exoplayer.h.a.c.c.3
+            c.this.f8209f.post(new Runnable() { // from class: com.anythink.basead.exoplayer.h.a.c.c.3
                 @Override // java.lang.Runnable
                 public final void run() {
-                    if (C0028c.this.f7450c) {
+                    if (C0028c.this.f8236c) {
                         return;
                     }
-                    d unused = c.this.f7424g;
+                    d unused = c.this.f8210g;
                 }
             });
         }
 
         public final void c() {
-            this.f7450c = true;
-            this.f7449b.removeCallbacksAndMessages(null);
+            this.f8236c = true;
+            this.f8235b.removeCallbacksAndMessages(null);
         }
 
         @Override // com.anythink.basead.exoplayer.h.a.b.a
         public final void a(final com.anythink.basead.exoplayer.h.a.a aVar) {
-            if (this.f7450c) {
+            if (this.f8236c) {
                 return;
             }
-            this.f7449b.post(new Runnable() { // from class: com.anythink.basead.exoplayer.h.a.c.c.1
+            this.f8235b.post(new Runnable() { // from class: com.anythink.basead.exoplayer.h.a.c.c.1
                 @Override // java.lang.Runnable
                 public final void run() {
-                    if (C0028c.this.f7450c) {
+                    if (C0028c.this.f8236c) {
                         return;
                     }
                     c.a(c.this, aVar);
@@ -202,42 +202,42 @@ public final class c extends f<s.a> {
 
         @Override // com.anythink.basead.exoplayer.h.a.b.a
         public final void a() {
-            if (this.f7450c || c.this.f7423f == null || c.this.f7424g == null) {
+            if (this.f8236c || c.this.f8209f == null || c.this.f8210g == null) {
                 return;
             }
-            c.this.f7423f.post(new Runnable() { // from class: com.anythink.basead.exoplayer.h.a.c.c.2
+            c.this.f8209f.post(new Runnable() { // from class: com.anythink.basead.exoplayer.h.a.c.c.2
                 @Override // java.lang.Runnable
                 public final void run() {
-                    if (C0028c.this.f7450c) {
+                    if (C0028c.this.f8236c) {
                         return;
                     }
-                    d unused = c.this.f7424g;
+                    d unused = c.this.f8210g;
                 }
             });
         }
 
         @Override // com.anythink.basead.exoplayer.h.a.b.a
         public final void a(final a aVar, k kVar) {
-            if (this.f7450c) {
+            if (this.f8236c) {
                 return;
             }
             c.this.a((s.a) null).a(kVar, aVar);
-            if (c.this.f7423f == null || c.this.f7424g == null) {
+            if (c.this.f8209f == null || c.this.f8210g == null) {
                 return;
             }
-            c.this.f7423f.post(new Runnable() { // from class: com.anythink.basead.exoplayer.h.a.c.c.4
+            c.this.f8209f.post(new Runnable() { // from class: com.anythink.basead.exoplayer.h.a.c.c.4
                 @Override // java.lang.Runnable
                 public final void run() {
-                    if (C0028c.this.f7450c) {
+                    if (C0028c.this.f8236c) {
                         return;
                     }
-                    if (aVar.f7441e != 3) {
-                        d unused = c.this.f7424g;
+                    if (aVar.f8227e != 3) {
+                        d unused = c.this.f8210g;
                         return;
                     }
-                    d unused2 = c.this.f7424g;
+                    d unused2 = c.this.f8210g;
                     a aVar2 = aVar;
-                    com.anythink.basead.exoplayer.k.a.b(aVar2.f7441e == 3);
+                    com.anythink.basead.exoplayer.k.a.b(aVar2.f8227e == 3);
                     aVar2.getCause();
                 }
             });
@@ -270,13 +270,13 @@ public final class c extends f<s.a> {
     }
 
     private void c() {
-        com.anythink.basead.exoplayer.h.a.a aVar = this.f7430n;
-        if (aVar == null || this.f7428l == null) {
+        com.anythink.basead.exoplayer.h.a.a aVar = this.f8216n;
+        if (aVar == null || this.f8214l == null) {
             return;
         }
-        com.anythink.basead.exoplayer.h.a.a a9 = aVar.a(this.f7432p);
-        this.f7430n = a9;
-        a(a9.f7410g == 0 ? this.f7428l : new com.anythink.basead.exoplayer.h.a.d(this.f7428l, this.f7430n), this.f7429m);
+        com.anythink.basead.exoplayer.h.a.a a9 = aVar.a(this.f8218p);
+        this.f8216n = a9;
+        a(a9.f8196g == 0 ? this.f8214l : new com.anythink.basead.exoplayer.h.a.d(this.f8214l, this.f8216n), this.f8215m);
     }
 
     @Override // com.anythink.basead.exoplayer.h.f
@@ -291,90 +291,90 @@ public final class c extends f<s.a> {
     }
 
     private void b(ae aeVar, Object obj) {
-        this.f7428l = aeVar;
-        this.f7429m = obj;
+        this.f8214l = aeVar;
+        this.f8215m = obj;
         c();
     }
 
     @Deprecated
     private c(s sVar, e eVar, com.anythink.basead.exoplayer.h.a.b bVar, ViewGroup viewGroup, Handler handler, d dVar) {
-        this.f7419b = sVar;
-        this.f7420c = eVar;
-        this.f7421d = bVar;
-        this.f7422e = viewGroup;
-        this.f7423f = handler;
-        this.f7424g = dVar;
-        this.f7425h = new Handler(Looper.getMainLooper());
+        this.f8205b = sVar;
+        this.f8206c = eVar;
+        this.f8207d = bVar;
+        this.f8208e = viewGroup;
+        this.f8209f = handler;
+        this.f8210g = dVar;
+        this.f8211h = new Handler(Looper.getMainLooper());
         this.i = new HashMap();
-        this.f7426j = new ae.a();
-        this.f7431o = new s[0][];
-        this.f7432p = new long[0][];
+        this.f8212j = new ae.a();
+        this.f8217o = new s[0][];
+        this.f8218p = new long[0][];
     }
 
     @Override // com.anythink.basead.exoplayer.h.f
     public final /* synthetic */ void a(s.a aVar, s sVar, ae aeVar, Object obj) {
         s.a aVar2 = aVar;
         if (aVar2.a()) {
-            int i = aVar2.f7768b;
-            int i6 = aVar2.f7769c;
+            int i = aVar2.f8554b;
+            int i4 = aVar2.f8555c;
             com.anythink.basead.exoplayer.k.a.a(aeVar.c() == 1);
-            this.f7432p[i][i6] = aeVar.a(0, this.f7426j, false).f6345d;
+            this.f8218p[i][i4] = aeVar.a(0, this.f8212j, false).f7131d;
             if (this.i.containsKey(sVar)) {
                 List<l> list = this.i.get(sVar);
-                for (int i9 = 0; i9 < list.size(); i9++) {
-                    list.get(i9).f();
+                for (int i6 = 0; i6 < list.size(); i6++) {
+                    list.get(i6).f();
                 }
                 this.i.remove(sVar);
             }
             c();
             return;
         }
-        this.f7428l = aeVar;
-        this.f7429m = obj;
+        this.f8214l = aeVar;
+        this.f8215m = obj;
         c();
     }
 
     @Override // com.anythink.basead.exoplayer.h.f, com.anythink.basead.exoplayer.h.c
-    public final void a(final com.anythink.basead.exoplayer.h hVar, boolean z3) {
-        super.a(hVar, z3);
-        com.anythink.basead.exoplayer.k.a.a(z3);
+    public final void a(final com.anythink.basead.exoplayer.h hVar, boolean z6) {
+        super.a(hVar, z6);
+        com.anythink.basead.exoplayer.k.a.a(z6);
         final C0028c c0028c = new C0028c();
-        this.f7427k = c0028c;
-        a((c) new s.a(0), this.f7419b);
-        this.f7425h.post(new Runnable() { // from class: com.anythink.basead.exoplayer.h.a.c.1
+        this.f8213k = c0028c;
+        a((c) new s.a(0), this.f8205b);
+        this.f8211h.post(new Runnable() { // from class: com.anythink.basead.exoplayer.h.a.c.1
             @Override // java.lang.Runnable
             public final void run() {
-                com.anythink.basead.exoplayer.h.a.b unused = c.this.f7421d;
-                ViewGroup unused2 = c.this.f7422e;
+                com.anythink.basead.exoplayer.h.a.b unused = c.this.f8207d;
+                ViewGroup unused2 = c.this.f8208e;
             }
         });
     }
 
     @Override // com.anythink.basead.exoplayer.h.s
     public final r a(s.a aVar, com.anythink.basead.exoplayer.j.b bVar) {
-        if (this.f7430n.f7410g > 0 && aVar.a()) {
-            int i = aVar.f7768b;
-            int i6 = aVar.f7769c;
-            Uri uri = this.f7430n.i[i].f7415b[i6];
-            if (this.f7431o[i].length <= i6) {
-                s b9 = this.f7420c.b(uri);
-                s[][] sVarArr = this.f7431o;
+        if (this.f8216n.f8196g > 0 && aVar.a()) {
+            int i = aVar.f8554b;
+            int i4 = aVar.f8555c;
+            Uri uri = this.f8216n.i[i].f8201b[i4];
+            if (this.f8217o[i].length <= i4) {
+                s b9 = this.f8206c.b(uri);
+                s[][] sVarArr = this.f8217o;
                 s[] sVarArr2 = sVarArr[i];
                 int length = sVarArr2.length;
-                if (i6 >= length) {
-                    int i9 = i6 + 1;
-                    sVarArr[i] = (s[]) Arrays.copyOf(sVarArr2, i9);
-                    long[][] jArr = this.f7432p;
-                    jArr[i] = Arrays.copyOf(jArr[i], i9);
-                    Arrays.fill(this.f7432p[i], length, i9, com.anythink.basead.exoplayer.b.f6382b);
+                if (i4 >= length) {
+                    int i6 = i4 + 1;
+                    sVarArr[i] = (s[]) Arrays.copyOf(sVarArr2, i6);
+                    long[][] jArr = this.f8218p;
+                    jArr[i] = Arrays.copyOf(jArr[i], i6);
+                    Arrays.fill(this.f8218p[i], length, i6, com.anythink.basead.exoplayer.b.f7168b);
                 }
-                this.f7431o[i][i6] = b9;
+                this.f8217o[i][i4] = b9;
                 this.i.put(b9, new ArrayList());
                 a((c) aVar, b9);
             }
-            s sVar = this.f7431o[i][i6];
-            l lVar = new l(sVar, new s.a(0, aVar.f7770d), bVar);
-            lVar.a(new b(uri, i, i6));
+            s sVar = this.f8217o[i][i4];
+            l lVar = new l(sVar, new s.a(0, aVar.f8556d), bVar);
+            lVar.a(new b(uri, i, i4));
             List<l> list = this.i.get(sVar);
             if (list == null) {
                 lVar.f();
@@ -383,7 +383,7 @@ public final class c extends f<s.a> {
             list.add(lVar);
             return lVar;
         }
-        l lVar2 = new l(this.f7419b, aVar, bVar);
+        l lVar2 = new l(this.f8205b, aVar, bVar);
         lVar2.f();
         return lVar2;
     }
@@ -391,7 +391,7 @@ public final class c extends f<s.a> {
     @Override // com.anythink.basead.exoplayer.h.s
     public final void a(r rVar) {
         l lVar = (l) rVar;
-        List<l> list = this.i.get(lVar.f7676a);
+        List<l> list = this.i.get(lVar.f8462a);
         if (list != null) {
             list.remove(lVar);
         }
@@ -401,18 +401,18 @@ public final class c extends f<s.a> {
     @Override // com.anythink.basead.exoplayer.h.f, com.anythink.basead.exoplayer.h.c
     public final void a() {
         super.a();
-        this.f7427k.c();
-        this.f7427k = null;
+        this.f8213k.c();
+        this.f8213k = null;
         this.i.clear();
-        this.f7428l = null;
-        this.f7429m = null;
-        this.f7430n = null;
-        this.f7431o = new s[0][];
-        this.f7432p = new long[0][];
-        this.f7425h.post(new Runnable() { // from class: com.anythink.basead.exoplayer.h.a.c.2
+        this.f8214l = null;
+        this.f8215m = null;
+        this.f8216n = null;
+        this.f8217o = new s[0][];
+        this.f8218p = new long[0][];
+        this.f8211h.post(new Runnable() { // from class: com.anythink.basead.exoplayer.h.a.c.2
             @Override // java.lang.Runnable
             public final void run() {
-                com.anythink.basead.exoplayer.h.a.b unused = c.this.f7421d;
+                com.anythink.basead.exoplayer.h.a.b unused = c.this.f8207d;
             }
         });
     }
@@ -420,22 +420,22 @@ public final class c extends f<s.a> {
     /* renamed from: a, reason: avoid collision after fix types in other method */
     private void a2(s.a aVar, s sVar, ae aeVar, Object obj) {
         if (aVar.a()) {
-            int i = aVar.f7768b;
-            int i6 = aVar.f7769c;
+            int i = aVar.f8554b;
+            int i4 = aVar.f8555c;
             com.anythink.basead.exoplayer.k.a.a(aeVar.c() == 1);
-            this.f7432p[i][i6] = aeVar.a(0, this.f7426j, false).f6345d;
+            this.f8218p[i][i4] = aeVar.a(0, this.f8212j, false).f7131d;
             if (this.i.containsKey(sVar)) {
                 List<l> list = this.i.get(sVar);
-                for (int i9 = 0; i9 < list.size(); i9++) {
-                    list.get(i9).f();
+                for (int i6 = 0; i6 < list.size(); i6++) {
+                    list.get(i6).f();
                 }
                 this.i.remove(sVar);
             }
             c();
             return;
         }
-        this.f7428l = aeVar;
-        this.f7429m = obj;
+        this.f8214l = aeVar;
+        this.f8215m = obj;
         c();
     }
 
@@ -445,25 +445,25 @@ public final class c extends f<s.a> {
     }
 
     private void a(com.anythink.basead.exoplayer.h.a.a aVar) {
-        if (this.f7430n == null) {
-            s[][] sVarArr = new s[aVar.f7410g][];
-            this.f7431o = sVarArr;
+        if (this.f8216n == null) {
+            s[][] sVarArr = new s[aVar.f8196g][];
+            this.f8217o = sVarArr;
             Arrays.fill(sVarArr, new s[0]);
-            long[][] jArr = new long[aVar.f7410g][];
-            this.f7432p = jArr;
+            long[][] jArr = new long[aVar.f8196g][];
+            this.f8218p = jArr;
             Arrays.fill(jArr, new long[0]);
         }
-        this.f7430n = aVar;
+        this.f8216n = aVar;
         c();
     }
 
-    private void a(s sVar, int i, int i6, ae aeVar) {
+    private void a(s sVar, int i, int i4, ae aeVar) {
         com.anythink.basead.exoplayer.k.a.a(aeVar.c() == 1);
-        this.f7432p[i][i6] = aeVar.a(0, this.f7426j, false).f6345d;
+        this.f8218p[i][i4] = aeVar.a(0, this.f8212j, false).f7131d;
         if (this.i.containsKey(sVar)) {
             List<l> list = this.i.get(sVar);
-            for (int i9 = 0; i9 < list.size(); i9++) {
-                list.get(i9).f();
+            for (int i6 = 0; i6 < list.size(); i6++) {
+                list.get(i6).f();
             }
             this.i.remove(sVar);
         }
@@ -471,15 +471,15 @@ public final class c extends f<s.a> {
     }
 
     public static /* synthetic */ void a(c cVar, com.anythink.basead.exoplayer.h.a.a aVar) {
-        if (cVar.f7430n == null) {
-            s[][] sVarArr = new s[aVar.f7410g][];
-            cVar.f7431o = sVarArr;
+        if (cVar.f8216n == null) {
+            s[][] sVarArr = new s[aVar.f8196g][];
+            cVar.f8217o = sVarArr;
             Arrays.fill(sVarArr, new s[0]);
-            long[][] jArr = new long[aVar.f7410g][];
-            cVar.f7432p = jArr;
+            long[][] jArr = new long[aVar.f8196g][];
+            cVar.f8218p = jArr;
             Arrays.fill(jArr, new long[0]);
         }
-        cVar.f7430n = aVar;
+        cVar.f8216n = aVar;
         cVar.c();
     }
 }

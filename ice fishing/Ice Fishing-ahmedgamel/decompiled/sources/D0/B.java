@@ -4,7 +4,7 @@ import android.view.View;
 
 /* loaded from: classes.dex */
 public abstract class B {
-    public static void a(View view, int i, int i6, int i9, int i10) {
-        view.setLeftTopRightBottom(i, i6, i9, i10);
+    public static void a(View view, int i, int i4, int i6, int i9) {
+        view.setLeftTopRightBottom(i, i4, i6, i9);
     }
 }

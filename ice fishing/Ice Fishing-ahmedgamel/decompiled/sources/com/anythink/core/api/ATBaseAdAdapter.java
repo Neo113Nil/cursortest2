@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import com.anythink.core.api.ATAdConst;
 import com.anythink.core.common.l.d.b;
 import com.anythink.expressad.foundation.g.a;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.Map;
 
 /* loaded from: classes.dex */
@@ -80,7 +80,7 @@ public abstract class ATBaseAdAdapter extends ATBaseAdInternalAdapter {
 
     public final void notifyATLoadFail(String str, String str2) {
         if (this.mBiddingListener != null) {
-            this.mBiddingListener.onC2SBiddingResultWithCache(ATBiddingResult.fail(!TextUtils.isEmpty(str) ? AbstractC4404f.g(str, a.bU, str2) : str2), null);
+            this.mBiddingListener.onC2SBiddingResultWithCache(ATBiddingResult.fail(!TextUtils.isEmpty(str) ? Wv.h(str, a.bU, str2) : str2), null);
         }
         ATCustomLoadListener aTCustomLoadListener = this.mLoadListener;
         if (aTCustomLoadListener != null) {
@@ -127,7 +127,7 @@ public abstract class ATBaseAdAdapter extends ATBaseAdInternalAdapter {
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
-    public boolean setUserDataConsent(Context context, boolean z3, boolean z6) {
+    public boolean setUserDataConsent(Context context, boolean z6, boolean z9) {
         return false;
     }
 
@@ -143,7 +143,7 @@ public abstract class ATBaseAdAdapter extends ATBaseAdInternalAdapter {
 
     public final void notifyATLoadFail(String str, String str2, ATBiddingNotice aTBiddingNotice, ATAdConst.CURRENCY currency) {
         if (this.mBiddingListener != null) {
-            this.mBiddingListener.onC2SBiddingResultWithCache(ATBiddingResult.fail(!TextUtils.isEmpty(str) ? AbstractC4404f.g(str, a.bU, str2) : str2, aTBiddingNotice, currency), null);
+            this.mBiddingListener.onC2SBiddingResultWithCache(ATBiddingResult.fail(!TextUtils.isEmpty(str) ? Wv.h(str, a.bU, str2) : str2, aTBiddingNotice, currency), null);
         }
         ATCustomLoadListener aTCustomLoadListener = this.mLoadListener;
         if (aTCustomLoadListener != null) {

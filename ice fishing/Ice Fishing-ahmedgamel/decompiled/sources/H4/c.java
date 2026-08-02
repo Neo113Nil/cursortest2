@@ -17,7 +17,7 @@ public final class c {
     static {
         c[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = com.bumptech.glide.e.b($values);
+        $ENTRIES = X2.a.h($values);
     }
 
     private c(String str, int i) {

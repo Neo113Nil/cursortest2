@@ -6,8 +6,8 @@ import com.anythink.core.api.ATAdRequest;
 public class az {
 
     /* renamed from: a, reason: collision with root package name */
-    public ATAdRequest f13601a;
+    public ATAdRequest f14387a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f13602b;
+    public String f14388b;
 }

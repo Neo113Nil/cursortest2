@@ -1,71 +1,41 @@
 package com.google.android.gms.internal.ads;
 
 /* loaded from: classes2.dex */
-public final class PQ {
-
-    /* renamed from: d, reason: collision with root package name */
-    public static final PQ f26818d = new PQ(new A8[0]);
+public final class PQ implements LQ {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f26819a;
+    public final LQ f27608a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final C3500lC f26820b;
+    public final long f27609b;
 
-    /* renamed from: c, reason: collision with root package name */
-    public int f26821c;
-
-    static {
-        String str = AbstractC3159eu.f29993a;
-        Integer.toString(0, 36);
+    public PQ(LQ lq, long j6) {
+        this.f27608a = lq;
+        this.f27609b = j6;
     }
 
-    public PQ(A8... a8Arr) {
-        this.f26820b = RB.o(a8Arr);
-        this.f26819a = a8Arr.length;
-        int i = 0;
-        while (i < this.f26820b.f31747w) {
-            int i6 = i + 1;
-            int i9 = i6;
-            while (true) {
-                C3500lC c3500lC = this.f26820b;
-                if (i9 < c3500lC.f31747w) {
-                    if (((A8) c3500lC.get(i)).equals(this.f26820b.get(i9))) {
-                        AbstractC2968bG.J("TrackGroupArray", "", new IllegalArgumentException("Multiple identical TrackGroups added to one TrackGroupArray."));
-                    }
-                    i9++;
-                }
-            }
-            i = i6;
+    @Override // com.google.android.gms.internal.ads.LQ
+    public final int a(long j6) {
+        return this.f27608a.a(j6 - this.f27609b);
+    }
+
+    @Override // com.google.android.gms.internal.ads.LQ
+    public final int b(S0.l lVar, C4019uN c4019uN, int i) {
+        int b9 = this.f27608a.b(lVar, c4019uN, i);
+        if (b9 != -4) {
+            return b9;
         }
+        c4019uN.f35303f += this.f27609b;
+        return -4;
     }
 
-    public final A8 a(int i) {
-        return (A8) this.f26820b.get(i);
+    @Override // com.google.android.gms.internal.ads.LQ
+    public final boolean c() {
+        return this.f27608a.c();
     }
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || PQ.class != obj.getClass()) {
-            return false;
-        }
-        PQ pq = (PQ) obj;
-        return this.f26819a == pq.f26819a && this.f26820b.equals(pq.f26820b);
-    }
-
-    public final int hashCode() {
-        int i = this.f26821c;
-        if (i != 0) {
-            return i;
-        }
-        int hashCode = this.f26820b.hashCode();
-        this.f26821c = hashCode;
-        return hashCode;
-    }
-
-    public final String toString() {
-        return this.f26820b.toString();
+    @Override // com.google.android.gms.internal.ads.LQ
+    public final void f() {
+        this.f27608a.f();
     }
 }

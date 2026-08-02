@@ -6,8 +6,8 @@ import androidx.lifecycle.X;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public Object f4448a;
+    public Object f4416a;
 
     /* renamed from: b, reason: collision with root package name */
-    public X f4449b;
+    public X f4417b;
 }

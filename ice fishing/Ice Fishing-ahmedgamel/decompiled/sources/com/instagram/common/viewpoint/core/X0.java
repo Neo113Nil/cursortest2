@@ -4,15 +4,15 @@ import android.app.Activity;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public final class X0 {
-    public static final X0 A04 = new X0(new C1197Qz(), new C1193Qv());
-    public final InterfaceC1347Wz A02;
+    public static final X0 A04 = new X0(new C1217Qz(), new C1213Qv());
+    public final InterfaceC1367Wz A02;
     public final Y0 A03;
     public boolean A01 = true;
     public long A00 = -1;
 
-    public X0(Y0 y02, InterfaceC1347Wz interfaceC1347Wz) {
+    public X0(Y0 y02, InterfaceC1367Wz interfaceC1367Wz) {
         this.A03 = y02;
-        this.A02 = interfaceC1347Wz;
+        this.A02 = interfaceC1367Wz;
     }
 
     public static X0 A00() {
@@ -30,7 +30,7 @@ public final class X0 {
 
     public final boolean A03() {
         Activity lastResumedActivity = this.A02.A8M();
-        boolean z3 = true;
+        boolean z6 = true;
         if (lastResumedActivity != null) {
             return true;
         }
@@ -39,9 +39,9 @@ public final class X0 {
                 return true;
             }
             if (this.A00 >= 0 && this.A03.A5n() - this.A00 >= 1000) {
-                z3 = false;
+                z6 = false;
             }
-            return z3;
+            return z6;
         }
     }
 }

@@ -4,7 +4,7 @@ import android.content.Context;
 import android.os.Process;
 import android.util.Log;
 import com.facebook.ads.AudienceNetworkAds;
-import com.google.android.gms.internal.ads.ThreadFactoryC2776Sh;
+import com.google.android.gms.internal.ads.ThreadFactoryC2796Sh;
 import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;
 import java.io.InputStream;
@@ -15,25 +15,25 @@ import java.util.Objects;
 import java.util.UUID;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import v2.l;
+import x2.l;
 
 /* loaded from: classes.dex */
 public final class a extends Thread {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f23505n = 0;
+    public final /* synthetic */ int f24290n = 0;
 
     /* renamed from: u, reason: collision with root package name */
-    public final /* synthetic */ Object f23506u;
+    public final /* synthetic */ Object f24291u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final /* synthetic */ Object f23507v;
+    public final /* synthetic */ Object f24292v;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public a(ThreadFactoryC2776Sh threadFactoryC2776Sh, Runnable runnable, String str, Runnable runnable2) {
+    public a(ThreadFactoryC2796Sh threadFactoryC2796Sh, Runnable runnable, String str, Runnable runnable2) {
         super(runnable, str);
-        this.f23506u = runnable2;
-        this.f23507v = threadFactoryC2776Sh;
+        this.f24291u = runnable2;
+        this.f24292v = threadFactoryC2796Sh;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:38:? A[RETURN, SYNTHETIC] */
@@ -57,16 +57,16 @@ public final class a extends Thread {
         int read;
         String str3;
         String str4;
-        switch (this.f23505n) {
+        switch (this.f24290n) {
             case 0:
-                Context context = (Context) this.f23506u;
+                Context context = (Context) this.f24291u;
                 super.run();
                 try {
                     httpURLConnection = (HttpURLConnection) new URL("https://www.facebook.com/adnw_logging/").openConnection();
                     try {
                         httpURLConnection.setRequestMethod("POST");
                         httpURLConnection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
-                        httpURLConnection.setRequestProperty("Accept", com.anythink.core.common.m.a.f14404q);
+                        httpURLConnection.setRequestProperty("Accept", com.anythink.core.common.m.a.f15190q);
                         httpURLConnection.setRequestProperty("Accept-Charset", "UTF-8");
                         httpURLConnection.setRequestProperty("user-agent", "[FBAN/AudienceNetworkForAndroid;FBSN/Android]");
                         httpURLConnection.setDoOutput(true);
@@ -80,7 +80,7 @@ public final class a extends Thread {
                         jSONObject3.put("subtype", "generic");
                         jSONObject3.put("subtype_code", "1320");
                         jSONObject3.put("caught_exception", "1");
-                        jSONObject3.put("stacktrace", (String) this.f23507v);
+                        jSONObject3.put("stacktrace", (String) this.f24292v);
                         JSONObject jSONObject4 = new JSONObject();
                         jSONObject4.put("id", UUID.randomUUID().toString());
                         jSONObject4.put("type", "debug");
@@ -212,23 +212,23 @@ public final class a extends Thread {
                     }
                 }
             case 1:
-                new l((Context) this.f23506u, null).a(null, (String) this.f23507v);
+                new l((Context) this.f24291u, null).a(null, (String) this.f24292v);
                 return;
             default:
-                Process.setThreadPriority(((ThreadFactoryC2776Sh) this.f23507v).f27534b);
-                ((Runnable) this.f23506u).run();
+                Process.setThreadPriority(((ThreadFactoryC2796Sh) this.f24292v).f28326b);
+                ((Runnable) this.f24291u).run();
                 return;
         }
     }
 
-    public a(v2.d dVar, Context context, String str) {
-        this.f23506u = context;
-        this.f23507v = str;
+    public a(x2.d dVar, Context context, String str) {
+        this.f24291u = context;
+        this.f24292v = str;
         Objects.requireNonNull(dVar);
     }
 
     public a(Context context, String str) {
-        this.f23506u = context;
-        this.f23507v = str;
+        this.f24291u = context;
+        this.f24292v = str;
     }
 }

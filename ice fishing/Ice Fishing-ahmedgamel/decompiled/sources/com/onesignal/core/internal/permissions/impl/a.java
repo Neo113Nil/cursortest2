@@ -6,7 +6,7 @@ import com.onesignal.core.activities.PermissionsActivity;
 import com.onesignal.core.internal.permissions.g;
 import java.util.HashMap;
 import kotlin.jvm.internal.h;
-import w4.C5151a;
+import w4.C5150a;
 import x4.d;
 import x4.f;
 
@@ -41,7 +41,7 @@ public final class a implements g {
             intent.setFlags(131072);
             intent.putExtra(com.onesignal.core.internal.permissions.h.INTENT_EXTRA_PERMISSION_TYPE, this.$permissionRequestType).putExtra(com.onesignal.core.internal.permissions.h.INTENT_EXTRA_ANDROID_PERMISSION_STRING, this.$androidPermissionString).putExtra(com.onesignal.core.internal.permissions.h.INTENT_EXTRA_CALLBACK_CLASS, this.$callbackClass.getName());
             activity.startActivity(intent);
-            activity.overridePendingTransition(C5151a.onesignal_fade_in, C5151a.onesignal_fade_out);
+            activity.overridePendingTransition(C5150a.onesignal_fade_in, C5150a.onesignal_fade_out);
         }
 
         @Override // x4.d
@@ -80,25 +80,25 @@ public final class a implements g {
         this.callbackMap.put(permissionType, callback);
     }
 
-    public final void setFallbackToSettings(boolean z3) {
-        this.fallbackToSettings = z3;
+    public final void setFallbackToSettings(boolean z6) {
+        this.fallbackToSettings = z6;
     }
 
-    public final void setShouldShowRequestPermissionRationaleBeforeRequest(boolean z3) {
-        this.shouldShowRequestPermissionRationaleBeforeRequest = z3;
+    public final void setShouldShowRequestPermissionRationaleBeforeRequest(boolean z6) {
+        this.shouldShowRequestPermissionRationaleBeforeRequest = z6;
     }
 
-    public final void setWaiting(boolean z3) {
-        this.waiting = z3;
+    public final void setWaiting(boolean z6) {
+        this.waiting = z6;
     }
 
     @Override // com.onesignal.core.internal.permissions.g
-    public void startPrompt(boolean z3, String str, String str2, Class<?> callbackClass) {
+    public void startPrompt(boolean z6, String str, String str2, Class<?> callbackClass) {
         h.e(callbackClass, "callbackClass");
         if (this.waiting) {
             return;
         }
-        this.fallbackToSettings = z3;
+        this.fallbackToSettings = z6;
         this._application.addActivityLifecycleHandler(new C0193a(str, str2, callbackClass));
     }
 }

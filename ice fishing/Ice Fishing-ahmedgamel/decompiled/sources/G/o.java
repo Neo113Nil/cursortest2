@@ -12,33 +12,33 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /* loaded from: classes.dex */
-public final class o extends V2.a {
-    public static Font y(FontFamily fontFamily, int i) {
-        FontStyle fontStyle = new FontStyle((i & 1) != 0 ? com.anythink.core.common.m.a.f14401n : 400, (i & 2) != 0 ? 1 : 0);
+public final class o extends Q3.b {
+    public static int A(FontStyle fontStyle, FontStyle fontStyle2) {
+        return (Math.abs(fontStyle.getWeight() - fontStyle2.getWeight()) / 100) + (fontStyle.getSlant() == fontStyle2.getSlant() ? 0 : 2);
+    }
+
+    public static Font z(FontFamily fontFamily, int i) {
+        FontStyle fontStyle = new FontStyle((i & 1) != 0 ? com.anythink.core.common.m.a.f15187n : 400, (i & 2) != 0 ? 1 : 0);
         Font font = fontFamily.getFont(0);
-        int z3 = z(fontStyle, font.getStyle());
-        for (int i6 = 1; i6 < fontFamily.getSize(); i6++) {
-            Font font2 = fontFamily.getFont(i6);
-            int z6 = z(fontStyle, font2.getStyle());
-            if (z6 < z3) {
+        int A9 = A(fontStyle, font.getStyle());
+        for (int i4 = 1; i4 < fontFamily.getSize(); i4++) {
+            Font font2 = fontFamily.getFont(i4);
+            int A10 = A(fontStyle, font2.getStyle());
+            if (A10 < A9) {
                 font = font2;
-                z3 = z6;
+                A9 = A10;
             }
         }
         return font;
     }
 
-    public static int z(FontStyle fontStyle, FontStyle fontStyle2) {
-        return (Math.abs(fontStyle.getWeight() - fontStyle2.getWeight()) / 100) + (fontStyle.getSlant() == fontStyle2.getSlant() ? 0 : 2);
-    }
-
-    @Override // V2.a
-    public final Typeface d(Context context, F.g gVar, Resources resources, int i) {
+    @Override // Q3.b
+    public final Typeface c(Context context, F.g gVar, Resources resources, int i) {
         try {
             FontFamily.Builder builder = null;
-            for (F.h hVar : gVar.f857a) {
+            for (F.h hVar : gVar.f920a) {
                 try {
-                    Font build = new Font.Builder(resources, hVar.f863f).setWeight(hVar.f859b).setSlant(hVar.f860c ? 1 : 0).setTtcIndex(hVar.f862e).setFontVariationSettings(hVar.f861d).build();
+                    Font build = new Font.Builder(resources, hVar.f926f).setWeight(hVar.f922b).setSlant(hVar.f923c ? 1 : 0).setTtcIndex(hVar.f925e).setFontVariationSettings(hVar.f924d).build();
                     if (builder == null) {
                         builder = new FontFamily.Builder(build);
                     } else {
@@ -51,31 +51,31 @@ public final class o extends V2.a {
                 return null;
             }
             FontFamily build2 = builder.build();
-            return new Typeface.CustomFallbackBuilder(build2).setStyle(y(build2, i).getStyle()).build();
+            return new Typeface.CustomFallbackBuilder(build2).setStyle(z(build2, i).getStyle()).build();
         } catch (Exception unused2) {
             return null;
         }
     }
 
-    @Override // V2.a
-    public final Typeface e(Context context, L.h[] hVarArr, int i) {
-        int i6;
+    @Override // Q3.b
+    public final Typeface d(Context context, L.h[] hVarArr, int i) {
+        int i4;
         ParcelFileDescriptor openFileDescriptor;
         ContentResolver contentResolver = context.getContentResolver();
         try {
             int length = hVarArr.length;
             FontFamily.Builder builder = null;
-            while (i6 < length) {
-                L.h hVar = hVarArr[i6];
+            while (i4 < length) {
+                L.h hVar = hVarArr[i4];
                 try {
-                    openFileDescriptor = contentResolver.openFileDescriptor(hVar.f1598a, com.anythink.expressad.foundation.d.d.bv, null);
+                    openFileDescriptor = contentResolver.openFileDescriptor(hVar.f1707a, com.anythink.expressad.foundation.d.d.bv, null);
                 } catch (IOException unused) {
                 }
                 if (openFileDescriptor == null) {
-                    i6 = openFileDescriptor == null ? i6 + 1 : 0;
+                    i4 = openFileDescriptor == null ? i4 + 1 : 0;
                 } else {
                     try {
-                        Font build = new Font.Builder(openFileDescriptor).setWeight(hVar.f1600c).setSlant(hVar.f1601d ? 1 : 0).setTtcIndex(hVar.f1599b).build();
+                        Font build = new Font.Builder(openFileDescriptor).setWeight(hVar.f1709c).setSlant(hVar.f1710d ? 1 : 0).setTtcIndex(hVar.f1708b).build();
                         if (builder == null) {
                             builder = new FontFamily.Builder(build);
                         } else {
@@ -94,20 +94,20 @@ public final class o extends V2.a {
             }
             if (builder != null) {
                 FontFamily build2 = builder.build();
-                return new Typeface.CustomFallbackBuilder(build2).setStyle(y(build2, i).getStyle()).build();
+                return new Typeface.CustomFallbackBuilder(build2).setStyle(z(build2, i).getStyle()).build();
             }
         } catch (Exception unused2) {
         }
         return null;
     }
 
-    @Override // V2.a
-    public final Typeface f(Context context, InputStream inputStream) {
+    @Override // Q3.b
+    public final Typeface e(Context context, InputStream inputStream) {
         throw new RuntimeException("Do not use this function in API 29 or later.");
     }
 
-    @Override // V2.a
-    public final Typeface g(Context context, Resources resources, int i, String str, int i6) {
+    @Override // Q3.b
+    public final Typeface f(Context context, Resources resources, int i, String str, int i4) {
         try {
             Font build = new Font.Builder(resources, i).build();
             return new Typeface.CustomFallbackBuilder(new FontFamily.Builder(build).build()).setStyle(build.getStyle()).build();
@@ -116,8 +116,8 @@ public final class o extends V2.a {
         }
     }
 
-    @Override // V2.a
-    public final L.h k(L.h[] hVarArr, int i) {
+    @Override // Q3.b
+    public final L.h g(L.h[] hVarArr, int i) {
         throw new RuntimeException("Do not use this function in API 29 or later.");
     }
 }

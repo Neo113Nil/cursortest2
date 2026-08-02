@@ -22,19 +22,19 @@ import java.util.Map;
 public class FacebookATInterstitialAdapter extends CustomInterstitialAdapter {
 
     /* renamed from: a, reason: collision with root package name */
-    InterstitialAd f23084a;
+    InterstitialAd f23871a;
 
     /* renamed from: b, reason: collision with root package name */
-    String f23085b;
+    String f23872b;
 
     /* renamed from: c, reason: collision with root package name */
-    String f23086c;
+    String f23873c;
 
     /* renamed from: d, reason: collision with root package name */
-    Map<String, Object> f23087d;
+    Map<String, Object> f23874d;
 
     /* renamed from: e, reason: collision with root package name */
-    boolean f23088e;
+    boolean f23875e;
 
     /* renamed from: com.anythink.network.facebook.FacebookATInterstitialAdapter$1, reason: invalid class name */
     public class AnonymousClass1 implements InterstitialAdListener {
@@ -79,10 +79,10 @@ public class FacebookATInterstitialAdapter extends CustomInterstitialAdapter {
         @Override // com.facebook.ads.AdListener
         public final void onLoggingImpression(Ad ad) {
             FacebookATInterstitialAdapter facebookATInterstitialAdapter = FacebookATInterstitialAdapter.this;
-            if (facebookATInterstitialAdapter.f23088e) {
+            if (facebookATInterstitialAdapter.f23875e) {
                 return;
             }
-            facebookATInterstitialAdapter.f23088e = true;
+            facebookATInterstitialAdapter.f23875e = true;
             if (((CustomInterstitialAdapter) facebookATInterstitialAdapter).mImpressListener != null) {
                 ((CustomInterstitialAdapter) FacebookATInterstitialAdapter.this).mImpressListener.onInterstitialAdShow();
             }
@@ -92,10 +92,10 @@ public class FacebookATInterstitialAdapter extends CustomInterstitialAdapter {
     @Override // com.anythink.interstitial.unitgroup.api.CustomInterstitialAdapter, com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
         try {
-            InterstitialAd interstitialAd = this.f23084a;
+            InterstitialAd interstitialAd = this.f23871a;
             if (interstitialAd != null) {
                 interstitialAd.destroy();
-                this.f23084a = null;
+                this.f23871a = null;
             }
         } catch (Exception unused) {
         }
@@ -109,7 +109,7 @@ public class FacebookATInterstitialAdapter extends CustomInterstitialAdapter {
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public void getBidRequestInfo(Context context, Map<String, Object> map, Map<String, Object> map2, ATBidRequestInfoListener aTBidRequestInfoListener) {
         try {
-            this.f23085b = (String) map.get("unit_id");
+            this.f23872b = (String) map.get("unit_id");
         } catch (Throwable th) {
             th.printStackTrace();
         }
@@ -123,7 +123,7 @@ public class FacebookATInterstitialAdapter extends CustomInterstitialAdapter {
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public Map<String, Object> getNetworkInfoMap() {
-        return this.f23087d;
+        return this.f23874d;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -133,7 +133,7 @@ public class FacebookATInterstitialAdapter extends CustomInterstitialAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        return this.f23085b;
+        return this.f23872b;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -143,8 +143,8 @@ public class FacebookATInterstitialAdapter extends CustomInterstitialAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public boolean isAdReady() {
-        InterstitialAd interstitialAd = this.f23084a;
-        return (interstitialAd == null || !interstitialAd.isAdLoaded() || this.f23084a.isAdInvalidated()) ? false : true;
+        InterstitialAd interstitialAd = this.f23871a;
+        return (interstitialAd == null || !interstitialAd.isAdLoaded() || this.f23871a.isAdInvalidated()) ? false : true;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -157,33 +157,33 @@ public class FacebookATInterstitialAdapter extends CustomInterstitialAdapter {
             }
             return;
         }
-        this.f23085b = (String) map.get("unit_id");
+        this.f23872b = (String) map.get("unit_id");
         FacebookATInitManager.getInstance().initSDK(context.getApplicationContext(), map);
         if (map.containsKey("payload")) {
-            this.f23086c = map.get("payload").toString();
+            this.f23873c = map.get("payload").toString();
             HashMap hashMap = new HashMap();
-            this.f23087d = hashMap;
+            this.f23874d = hashMap;
             FacebookATInitManager.getInstance();
-            hashMap.put(AdSDKNotificationListener.ENCRYPTED_CPM_KEY, FacebookATInitManager.a(this.f23086c));
+            hashMap.put(AdSDKNotificationListener.ENCRYPTED_CPM_KEY, FacebookATInitManager.a(this.f23873c));
         }
         AnonymousClass1 anonymousClass1 = new AnonymousClass1();
-        InterstitialAd interstitialAd = new InterstitialAd(context.getApplicationContext(), this.f23085b);
-        this.f23084a = interstitialAd;
+        InterstitialAd interstitialAd = new InterstitialAd(context.getApplicationContext(), this.f23872b);
+        this.f23871a = interstitialAd;
         InterstitialAd.InterstitialAdLoadConfigBuilder withAdListener = interstitialAd.buildLoadAdConfig().withAdListener(anonymousClass1);
-        if (!TextUtils.isEmpty(this.f23086c)) {
-            withAdListener.withBid(this.f23086c);
+        if (!TextUtils.isEmpty(this.f23873c)) {
+            withAdListener.withBid(this.f23873c);
         }
-        this.f23084a.loadAd(withAdListener.build());
+        this.f23871a.loadAd(withAdListener.build());
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
-    public boolean setUserDataConsent(Context context, boolean z3, boolean z6) {
+    public boolean setUserDataConsent(Context context, boolean z6, boolean z9) {
         return false;
     }
 
     @Override // com.anythink.interstitial.unitgroup.api.CustomInterstitialAdapter
     public void show(Activity activity) {
-        InterstitialAd interstitialAd = this.f23084a;
+        InterstitialAd interstitialAd = this.f23871a;
         if (interstitialAd != null) {
             interstitialAd.show();
         }
@@ -191,19 +191,19 @@ public class FacebookATInterstitialAdapter extends CustomInterstitialAdapter {
 
     private void a(Context context, Map<String, Object> map) {
         if (map.containsKey("payload")) {
-            this.f23086c = map.get("payload").toString();
+            this.f23873c = map.get("payload").toString();
             HashMap hashMap = new HashMap();
-            this.f23087d = hashMap;
+            this.f23874d = hashMap;
             FacebookATInitManager.getInstance();
-            hashMap.put(AdSDKNotificationListener.ENCRYPTED_CPM_KEY, FacebookATInitManager.a(this.f23086c));
+            hashMap.put(AdSDKNotificationListener.ENCRYPTED_CPM_KEY, FacebookATInitManager.a(this.f23873c));
         }
         AnonymousClass1 anonymousClass1 = new AnonymousClass1();
-        InterstitialAd interstitialAd = new InterstitialAd(context.getApplicationContext(), this.f23085b);
-        this.f23084a = interstitialAd;
+        InterstitialAd interstitialAd = new InterstitialAd(context.getApplicationContext(), this.f23872b);
+        this.f23871a = interstitialAd;
         InterstitialAd.InterstitialAdLoadConfigBuilder withAdListener = interstitialAd.buildLoadAdConfig().withAdListener(anonymousClass1);
-        if (!TextUtils.isEmpty(this.f23086c)) {
-            withAdListener.withBid(this.f23086c);
+        if (!TextUtils.isEmpty(this.f23873c)) {
+            withAdListener.withBid(this.f23873c);
         }
-        this.f23084a.loadAd(withAdListener.build());
+        this.f23871a.loadAd(withAdListener.build());
     }
 }

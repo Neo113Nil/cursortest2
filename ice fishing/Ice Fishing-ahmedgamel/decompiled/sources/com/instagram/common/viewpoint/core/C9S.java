@@ -5,7 +5,7 @@ import android.media.AudioDeviceInfo;
 /* renamed from: com.facebook.ads.redexgen.X.9S, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
 public final class C9S {
-    public static void A00(InterfaceC07518z interfaceC07518z, Object obj) {
-        interfaceC07518z.AJi((AudioDeviceInfo) obj);
+    public static void A00(InterfaceC07718z interfaceC07718z, Object obj) {
+        interfaceC07718z.AJi((AudioDeviceInfo) obj);
     }
 }

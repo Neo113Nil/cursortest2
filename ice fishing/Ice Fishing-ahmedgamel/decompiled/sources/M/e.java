@@ -11,31 +11,31 @@ import java.util.Objects;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public final TextPaint f1770a;
+    public final TextPaint f1801a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final TextDirectionHeuristic f1771b;
+    public final TextDirectionHeuristic f1802b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f1772c;
+    public final int f1803c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f1773d;
+    public final int f1804d;
 
-    public e(TextPaint textPaint, TextDirectionHeuristic textDirectionHeuristic, int i, int i6) {
+    public e(TextPaint textPaint, TextDirectionHeuristic textDirectionHeuristic, int i, int i4) {
         PrecomputedText.Params.Builder breakStrategy;
         PrecomputedText.Params.Builder hyphenationFrequency;
         PrecomputedText.Params.Builder textDirection;
         if (Build.VERSION.SDK_INT >= 29) {
             breakStrategy = d.f(textPaint).setBreakStrategy(i);
-            hyphenationFrequency = breakStrategy.setHyphenationFrequency(i6);
+            hyphenationFrequency = breakStrategy.setHyphenationFrequency(i4);
             textDirection = hyphenationFrequency.setTextDirection(textDirectionHeuristic);
             textDirection.build();
         }
-        this.f1770a = textPaint;
-        this.f1771b = textDirectionHeuristic;
-        this.f1772c = i;
-        this.f1773d = i6;
+        this.f1801a = textPaint;
+        this.f1802b = textDirectionHeuristic;
+        this.f1803c = i;
+        this.f1804d = i4;
     }
 
     public final boolean equals(Object obj) {
@@ -46,12 +46,12 @@ public final class e {
             return false;
         }
         e eVar = (e) obj;
-        if (this.f1772c != eVar.f1772c || this.f1773d != eVar.f1773d) {
+        if (this.f1803c != eVar.f1803c || this.f1804d != eVar.f1804d) {
             return false;
         }
-        TextPaint textPaint = this.f1770a;
+        TextPaint textPaint = this.f1801a;
         float textSize = textPaint.getTextSize();
-        TextPaint textPaint2 = eVar.f1770a;
+        TextPaint textPaint2 = eVar.f1801a;
         if (textSize != textPaint2.getTextSize() || textPaint.getTextScaleX() != textPaint2.getTextScaleX() || textPaint.getTextSkewX() != textPaint2.getTextSkewX() || textPaint.getLetterSpacing() != textPaint2.getLetterSpacing() || !TextUtils.equals(textPaint.getFontFeatureSettings(), textPaint2.getFontFeatureSettings()) || textPaint.getFlags() != textPaint2.getFlags() || !textPaint.getTextLocales().equals(textPaint2.getTextLocales())) {
             return false;
         }
@@ -62,19 +62,19 @@ public final class e {
         } else if (!textPaint.getTypeface().equals(textPaint2.getTypeface())) {
             return false;
         }
-        return this.f1771b == eVar.f1771b;
+        return this.f1802b == eVar.f1802b;
     }
 
     public final int hashCode() {
-        TextPaint textPaint = this.f1770a;
-        return Objects.hash(Float.valueOf(textPaint.getTextSize()), Float.valueOf(textPaint.getTextScaleX()), Float.valueOf(textPaint.getTextSkewX()), Float.valueOf(textPaint.getLetterSpacing()), Integer.valueOf(textPaint.getFlags()), textPaint.getTextLocales(), textPaint.getTypeface(), Boolean.valueOf(textPaint.isElegantTextHeight()), this.f1771b, Integer.valueOf(this.f1772c), Integer.valueOf(this.f1773d));
+        TextPaint textPaint = this.f1801a;
+        return Objects.hash(Float.valueOf(textPaint.getTextSize()), Float.valueOf(textPaint.getTextScaleX()), Float.valueOf(textPaint.getTextSkewX()), Float.valueOf(textPaint.getLetterSpacing()), Integer.valueOf(textPaint.getFlags()), textPaint.getTextLocales(), textPaint.getTypeface(), Boolean.valueOf(textPaint.isElegantTextHeight()), this.f1802b, Integer.valueOf(this.f1803c), Integer.valueOf(this.f1804d));
     }
 
     public final String toString() {
         String fontVariationSettings;
         StringBuilder sb = new StringBuilder("{");
         StringBuilder sb2 = new StringBuilder("textSize=");
-        TextPaint textPaint = this.f1770a;
+        TextPaint textPaint = this.f1801a;
         sb2.append(textPaint.getTextSize());
         sb.append(sb2.toString());
         sb.append(", textScaleX=" + textPaint.getTextScaleX());
@@ -90,9 +90,9 @@ public final class e {
             sb3.append(fontVariationSettings);
             sb.append(sb3.toString());
         }
-        sb.append(", textDir=" + this.f1771b);
-        sb.append(", breakStrategy=" + this.f1772c);
-        sb.append(", hyphenationFrequency=" + this.f1773d);
+        sb.append(", textDir=" + this.f1802b);
+        sb.append(", breakStrategy=" + this.f1803c);
+        sb.append(", hyphenationFrequency=" + this.f1804d);
         sb.append("}");
         return sb.toString();
     }
@@ -103,12 +103,12 @@ public final class e {
         int breakStrategy;
         int hyphenationFrequency;
         textPaint = params.getTextPaint();
-        this.f1770a = textPaint;
+        this.f1801a = textPaint;
         textDirection = params.getTextDirection();
-        this.f1771b = textDirection;
+        this.f1802b = textDirection;
         breakStrategy = params.getBreakStrategy();
-        this.f1772c = breakStrategy;
+        this.f1803c = breakStrategy;
         hyphenationFrequency = params.getHyphenationFrequency();
-        this.f1773d = hyphenationFrequency;
+        this.f1804d = hyphenationFrequency;
     }
 }

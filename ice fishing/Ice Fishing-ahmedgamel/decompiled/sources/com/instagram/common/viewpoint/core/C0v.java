@@ -8,10 +8,10 @@ public final class C0v extends C1B {
     public static byte[] A00;
     public static final CC A01;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 70);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 70);
         }
         return new String(copyOfRange);
     }
@@ -34,7 +34,7 @@ public final class C0v extends C1B {
             public final String A00;
 
             {
-                this.A00 = (String) AbstractC2070ki.A04(r2);
+                this.A00 = (String) AbstractC2090ki.A04(r2);
             }
 
             public final String toString() {
@@ -47,7 +47,7 @@ public final class C0v extends C1B {
     @Override // com.instagram.common.viewpoint.core.CC
     public final int A08(CharSequence sequence, int start) {
         int length = sequence.length();
-        AbstractC2070ki.A01(start, length);
+        AbstractC2090ki.A01(start, length);
         return -1;
     }
 

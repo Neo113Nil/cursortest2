@@ -47,7 +47,7 @@ public class ATInterstitial {
     private ATNativeAdCustomRender mixNativeAdListener;
     private ATInterstitialExListener mInterListener = new ATInterstitialExListener() { // from class: com.anythink.interstitial.api.ATInterstitial.1
         @Override // com.anythink.interstitial.api.ATInterstitialExListener
-        public void onDeeplinkCallback(final ATAdInfo aTAdInfo, final boolean z3) {
+        public void onDeeplinkCallback(final ATAdInfo aTAdInfo, final boolean z6) {
             t.b().b(new Runnable() { // from class: com.anythink.interstitial.api.ATInterstitial.1.1
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -55,7 +55,7 @@ public class ATInterstitial {
                     if (aTInterstitialListener == null || !(aTInterstitialListener instanceof ATInterstitialExListener)) {
                         return;
                     }
-                    ((ATInterstitialExListener) aTInterstitialListener).onDeeplinkCallback(aTAdInfo, z3);
+                    ((ATInterstitialExListener) aTInterstitialListener).onDeeplinkCallback(aTAdInfo, z6);
                 }
             });
         }
@@ -221,7 +221,7 @@ public class ATInterstitial {
     }
 
     private void controlShow(Activity activity, ATShowConfig aTShowConfig) {
-        ab.b(this.mPlacementId, j.r.f12544q, j.r.f12523A, j.r.f12542o, "");
+        ab.b(this.mPlacementId, j.r.f13330q, j.r.f13309A, j.r.f13328o, "");
         if (t.b().g() == null || TextUtils.isEmpty(t.b().p()) || TextUtils.isEmpty(t.b().q())) {
             Log.e(TAG, "Show error: SDK init error!");
             return;
@@ -262,7 +262,7 @@ public class ATInterstitial {
         if (adStatus == null) {
             return new ATAdStatusInfo(false, false, null);
         }
-        ab.b(this.mPlacementId, j.r.f12544q, j.r.f12525C, adStatus.toString(), "");
+        ab.b(this.mPlacementId, j.r.f13330q, j.r.f13311C, adStatus.toString(), "");
         return adStatus;
     }
 
@@ -280,7 +280,7 @@ public class ATInterstitial {
             return false;
         }
         boolean isReady = adStatus.isReady();
-        ab.b(this.mPlacementId, j.r.f12544q, j.r.f12524B, String.valueOf(isReady), "");
+        ab.b(this.mPlacementId, j.r.f13330q, j.r.f13310B, String.valueOf(isReady), "");
         return isReady;
     }
 
@@ -366,7 +366,7 @@ public class ATInterstitial {
     }
 
     private void load(Context context, ATAdRequest aTAdRequest, int i) {
-        ab.a(this.mPlacementId, j.r.f12544q, j.r.f12552y, j.r.f12542o, "", true);
+        ab.a(this.mPlacementId, j.r.f13330q, j.r.f13338y, j.r.f13328o, "", true);
         this.mAdLoadManager.a(context, i, this.adLoadListener, this.mAdSourceEventListener, this.adMultipleLoadedListener, this.mTKExtraMap, aTAdRequest);
     }
 }

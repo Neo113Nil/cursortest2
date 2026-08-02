@@ -11,23 +11,23 @@ import com.anythink.basead.ui.BaseATView;
 /* loaded from: assets/audience_network/classes2.dex */
 public final class AnonymousClass34 extends ED {
     public final Paint A00;
-    public final C1840gi A01;
+    public final C1860gi A01;
     public final VI A02;
     public final EA A03;
     public final E4 A04;
     public final E2 A05;
-    public final C1752fI A06;
+    public final C1772fI A06;
 
-    public AnonymousClass34(C1840gi c1840gi, boolean z3, VI vi) {
-        super(c1840gi);
+    public AnonymousClass34(C1860gi c1860gi, boolean z6, VI vi) {
+        super(c1860gi);
         this.A04 = new E4() { // from class: com.facebook.ads.redexgen.X.3A
             /* JADX INFO: Access modifiers changed from: private */
             @Override // com.instagram.common.viewpoint.core.UN
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final void A03(C4B c4b) {
-                C1752fI c1752fI;
-                c1752fI = AnonymousClass34.this.A06;
-                c1752fI.setChecked(true);
+                C1772fI c1772fI;
+                c1772fI = AnonymousClass34.this.A06;
+                c1772fI.setChecked(true);
             }
         };
         this.A05 = new E2() { // from class: com.facebook.ads.redexgen.X.39
@@ -35,9 +35,9 @@ public final class AnonymousClass34 extends ED {
             @Override // com.instagram.common.viewpoint.core.UN
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final void A03(E3 e32) {
-                C1752fI c1752fI;
-                c1752fI = AnonymousClass34.this.A06;
-                c1752fI.setChecked(false);
+                C1772fI c1772fI;
+                c1772fI = AnonymousClass34.this.A06;
+                c1772fI.setChecked(false);
             }
         };
         this.A03 = new EA() { // from class: com.facebook.ads.redexgen.X.38
@@ -45,14 +45,14 @@ public final class AnonymousClass34 extends ED {
             @Override // com.instagram.common.viewpoint.core.UN
             /* renamed from: A00, reason: merged with bridge method [inline-methods] */
             public final void A03(C4K c4k) {
-                C1752fI c1752fI;
-                c1752fI = AnonymousClass34.this.A06;
-                c1752fI.setChecked(true);
+                C1772fI c1772fI;
+                c1772fI = AnonymousClass34.this.A06;
+                c1772fI.setChecked(true);
             }
         };
         this.A02 = vi;
-        this.A01 = c1840gi;
-        this.A06 = new C1752fI(c1840gi, z3);
+        this.A01 = c1860gi;
+        this.A06 = new C1772fI(c1860gi, z6);
         DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
         RelativeLayout.LayoutParams btnLayout = new RelativeLayout.LayoutParams((int) (displayMetrics.density * 23.76d), (int) (displayMetrics.density * 23.76d));
         btnLayout.addRule(13);
@@ -61,11 +61,11 @@ public final class AnonymousClass34 extends ED {
         this.A06.setClickable(false);
         this.A00 = new Paint();
         this.A00.setStyle(Paint.Style.FILL);
-        if (z3) {
+        if (z6) {
             this.A00.setColor(-1728053248);
         } else {
             this.A00.setColor(-1);
-            this.A00.setAlpha(BaseATView.a.f9767C);
+            this.A00.setAlpha(BaseATView.a.f10553C);
         }
         YB.A0N(this, 0);
         addView(this.A06);
@@ -82,7 +82,7 @@ public final class AnonymousClass34 extends ED {
         if (getVideoView() != null) {
             getVideoView().getEventBus().A03(this.A04, this.A05, this.A03);
         }
-        View.OnClickListener clickListener = new ViewOnClickListenerC1749fF(this);
+        View.OnClickListener clickListener = new ViewOnClickListenerC1769fF(this);
         setOnClickListener(clickListener);
     }
 
@@ -107,9 +107,9 @@ public final class AnonymousClass34 extends ED {
         int centerY = width4 / 2;
         int height3 = width4 / 2;
         int width5 = getPaddingLeft();
-        float f3 = width5 + centerY;
+        float f2 = width5 + centerY;
         int width6 = getPaddingTop();
-        canvas.drawCircle(f3, width6 + height3, centerY, this.A00);
+        canvas.drawCircle(f2, width6 + height3, centerY, this.A00);
         super.onDraw(canvas);
     }
 }

@@ -15,56 +15,56 @@ import java.util.concurrent.TimeUnit;
 public class e {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f22277a = "DownLoadManager";
+    private static final String f23064a = "DownLoadManager";
 
     /* renamed from: b, reason: collision with root package name */
-    private static e f22278b;
+    private static e f23065b;
 
     /* renamed from: c, reason: collision with root package name */
-    private ThreadPoolExecutor f22279c;
+    private ThreadPoolExecutor f23066c;
 
     /* renamed from: d, reason: collision with root package name */
-    private boolean f22280d = false;
+    private boolean f23067d = false;
 
     /* renamed from: e, reason: collision with root package name */
-    private ConcurrentHashMap<String, o> f22281e = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<String, o> f23068e = new ConcurrentHashMap<>();
 
     /* renamed from: f, reason: collision with root package name */
-    private Map<String, List<Map<String, c>>> f22282f;
+    private Map<String, List<Map<String, c>>> f23069f;
 
     /* renamed from: g, reason: collision with root package name */
-    private ConcurrentHashMap<String, CopyOnWriteArrayList<com.anythink.expressad.foundation.d.d>> f22283g;
+    private ConcurrentHashMap<String, CopyOnWriteArrayList<com.anythink.expressad.foundation.d.d>> f23070g;
 
     /* renamed from: h, reason: collision with root package name */
-    private ConcurrentHashMap<String, CopyOnWriteArrayList<c>> f22284h;
+    private ConcurrentHashMap<String, CopyOnWriteArrayList<c>> f23071h;
 
     private e() {
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(5, 15, 15L, TimeUnit.SECONDS, new LinkedBlockingDeque(), new ThreadPoolExecutor.DiscardPolicy());
-        this.f22279c = threadPoolExecutor;
+        this.f23066c = threadPoolExecutor;
         threadPoolExecutor.allowCoreThreadTimeOut(true);
     }
 
     public static e a() {
-        if (f22278b == null) {
+        if (f23065b == null) {
             synchronized (e.class) {
                 try {
-                    if (f22278b == null) {
-                        f22278b = new e();
+                    if (f23065b == null) {
+                        f23065b = new e();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f22278b;
+        return f23065b;
     }
 
     private List<Map<String, c>> e(String str) {
-        Map<String, List<Map<String, c>>> map = this.f22282f;
+        Map<String, List<Map<String, c>>> map = this.f23069f;
         if (map == null || !map.containsKey(str)) {
             return null;
         }
-        return this.f22282f.get(str);
+        return this.f23069f.get(str);
     }
 
     private void f(String str) {
@@ -75,19 +75,19 @@ public class e {
     }
 
     public final CopyOnWriteArrayList<c> b(String str) {
-        ConcurrentHashMap<String, CopyOnWriteArrayList<c>> concurrentHashMap = this.f22284h;
+        ConcurrentHashMap<String, CopyOnWriteArrayList<c>> concurrentHashMap = this.f23071h;
         if (concurrentHashMap == null || !concurrentHashMap.containsKey(str)) {
             return null;
         }
-        return this.f22284h.get(str);
+        return this.f23071h.get(str);
     }
 
     public final o c(String str) {
-        ConcurrentHashMap<String, o> concurrentHashMap = this.f22281e;
+        ConcurrentHashMap<String, o> concurrentHashMap = this.f23068e;
         if (concurrentHashMap == null || !concurrentHashMap.containsKey(str)) {
             return null;
         }
-        return this.f22281e.get(str);
+        return this.f23068e.get(str);
     }
 
     public final void d(String str) {
@@ -97,16 +97,16 @@ public class e {
         }
     }
 
-    private c b(int i, String str, boolean z3) {
+    private c b(int i, String str, boolean z6) {
         o c9 = c(str);
         if (c9 != null) {
-            return c9.b(i, z3);
+            return c9.b(i, z6);
         }
         return null;
     }
 
     private void d() {
-        ConcurrentHashMap<String, o> concurrentHashMap = this.f22281e;
+        ConcurrentHashMap<String, o> concurrentHashMap = this.f23068e;
         if (concurrentHashMap != null) {
             Iterator<Map.Entry<String, o>> it = concurrentHashMap.entrySet().iterator();
             while (it.hasNext()) {
@@ -119,7 +119,7 @@ public class e {
     }
 
     public final void c() {
-        ConcurrentHashMap<String, o> concurrentHashMap = this.f22281e;
+        ConcurrentHashMap<String, o> concurrentHashMap = this.f23068e;
         if (concurrentHashMap != null) {
             for (Map.Entry<String, o> entry : concurrentHashMap.entrySet()) {
                 o value = entry.getValue();
@@ -162,7 +162,7 @@ public class e {
      */
     /* JADX WARN: Code restructure failed: missing block: B:137:0x017a, code lost:
     
-        r11 = r8.f22282f;
+        r11 = r8.f23069f;
      */
     /* JADX WARN: Code restructure failed: missing block: B:138:0x017c, code lost:
     
@@ -170,11 +170,11 @@ public class e {
      */
     /* JADX WARN: Code restructure failed: missing block: B:139:0x017e, code lost:
     
-        r8.f22282f = new java.util.HashMap();
+        r8.f23069f = new java.util.HashMap();
      */
     /* JADX WARN: Code restructure failed: missing block: B:140:0x0191, code lost:
     
-        r11 = r8.f22284h;
+        r11 = r8.f23071h;
      */
     /* JADX WARN: Code restructure failed: missing block: B:141:0x0193, code lost:
     
@@ -182,11 +182,11 @@ public class e {
      */
     /* JADX WARN: Code restructure failed: missing block: B:142:0x0195, code lost:
     
-        r8.f22284h = new java.util.concurrent.ConcurrentHashMap<>();
+        r8.f23071h = new java.util.concurrent.ConcurrentHashMap<>();
      */
     /* JADX WARN: Code restructure failed: missing block: B:143:0x01a8, code lost:
     
-        r11 = r8.f22283g;
+        r11 = r8.f23070g;
      */
     /* JADX WARN: Code restructure failed: missing block: B:144:0x01aa, code lost:
     
@@ -194,7 +194,7 @@ public class e {
      */
     /* JADX WARN: Code restructure failed: missing block: B:145:0x01ac, code lost:
     
-        r8.f22283g = new java.util.concurrent.ConcurrentHashMap<>();
+        r8.f23070g = new java.util.concurrent.ConcurrentHashMap<>();
      */
     /* JADX WARN: Code restructure failed: missing block: B:146:0x01bf, code lost:
     
@@ -227,9 +227,9 @@ public class e {
      */
     /* JADX WARN: Code restructure failed: missing block: B:154:0x021a, code lost:
     
-        r8.f22282f.put(r9, r11);
-        r8.f22283g.put(r9, r12);
-        r8.f22284h.put(r9, r13);
+        r8.f23069f.put(r9, r11);
+        r8.f23070g.put(r9, r12);
+        r8.f23071h.put(r9, r13);
      */
     /* JADX WARN: Code restructure failed: missing block: B:157:0x01b8, code lost:
     
@@ -237,7 +237,7 @@ public class e {
      */
     /* JADX WARN: Code restructure failed: missing block: B:158:0x01ba, code lost:
     
-        r8.f22283g.remove(r9);
+        r8.f23070g.remove(r9);
      */
     /* JADX WARN: Code restructure failed: missing block: B:160:0x01a1, code lost:
     
@@ -245,7 +245,7 @@ public class e {
      */
     /* JADX WARN: Code restructure failed: missing block: B:161:0x01a3, code lost:
     
-        r8.f22284h.remove(r9);
+        r8.f23071h.remove(r9);
      */
     /* JADX WARN: Code restructure failed: missing block: B:163:0x018a, code lost:
     
@@ -253,7 +253,7 @@ public class e {
      */
     /* JADX WARN: Code restructure failed: missing block: B:164:0x018c, code lost:
     
-        r8.f22282f.remove(r9);
+        r8.f23069f.remove(r9);
      */
     /* JADX WARN: Code restructure failed: missing block: B:97:0x0117, code lost:
     
@@ -262,20 +262,20 @@ public class e {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final boolean b(String str, boolean z3, int i, boolean z6, int i6, List<com.anythink.expressad.foundation.d.d> list) {
+    public final boolean b(String str, boolean z6, int i, boolean z9, int i4, List<com.anythink.expressad.foundation.d.d> list) {
         com.anythink.expressad.foundation.d.d dVar;
-        boolean z9 = false;
+        boolean z10 = false;
         if (list != null) {
             try {
                 if (list.size() != 0) {
                     o c9 = c(str);
                     if (c9 != null) {
-                        List<c> a9 = c9.a(z3, list);
+                        List<c> a9 = c9.a(z6, list);
                         if (a9 != null && a9.size() != 0) {
-                            if (z6) {
-                                boolean z10 = list.size() > 0 && (dVar = list.get(0)) != null && dVar.aE() != null && dVar.aE().size() > 0 && dVar.aE().contains(0);
+                            if (z9) {
+                                boolean z11 = list.size() > 0 && (dVar = list.get(0)) != null && dVar.aE() != null && dVar.aE().size() > 0 && dVar.aE().contains(0);
                                 try {
-                                    if (i6 == 0) {
+                                    if (i4 == 0) {
                                         ArrayList arrayList = new ArrayList();
                                         for (c cVar : a9) {
                                             for (com.anythink.expressad.foundation.d.d dVar2 : list) {
@@ -284,7 +284,7 @@ public class e {
                                                 }
                                             }
                                         }
-                                        z9 = arrayList.size() > 0 ? true : z10;
+                                        z10 = arrayList.size() > 0 ? true : z11;
                                     } else {
                                         ArrayList arrayList2 = new ArrayList();
                                         for (c cVar2 : a9) {
@@ -297,11 +297,11 @@ public class e {
                                     }
                                 } catch (Exception e9) {
                                     e = e9;
-                                    z9 = z10;
-                                    if (com.anythink.expressad.a.f17618a) {
+                                    z10 = z11;
+                                    if (com.anythink.expressad.a.f18405a) {
                                         e.printStackTrace();
                                     }
-                                    return z9;
+                                    return z10;
                                 }
                             } else {
                                 ArrayList arrayList3 = new ArrayList();
@@ -315,13 +315,13 @@ public class e {
                             }
                         }
                     }
-                    return z9;
+                    return z10;
                 }
             } catch (Exception e10) {
                 e = e10;
             }
         }
-        return z9;
+        return z10;
     }
 
     public final c a(String str, String str2) {
@@ -333,37 +333,37 @@ public class e {
     }
 
     public final CopyOnWriteArrayList<com.anythink.expressad.foundation.d.d> a(String str) {
-        ConcurrentHashMap<String, CopyOnWriteArrayList<com.anythink.expressad.foundation.d.d>> concurrentHashMap = this.f22283g;
+        ConcurrentHashMap<String, CopyOnWriteArrayList<com.anythink.expressad.foundation.d.d>> concurrentHashMap = this.f23070g;
         if (concurrentHashMap == null || !concurrentHashMap.containsKey(str)) {
             return null;
         }
-        return this.f22283g.get(str);
+        return this.f23070g.get(str);
     }
 
-    public final boolean a(int i, String str, boolean z3) {
+    public final boolean a(int i, String str, boolean z6) {
         try {
             o c9 = c(str);
             if (c9 != null) {
-                return c9.a(i, z3) != null;
+                return c9.a(i, z6) != null;
             }
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.printStackTrace();
             }
         }
         return false;
     }
 
-    public final boolean a(String str, boolean z3, int i, boolean z6, int i6, List<com.anythink.expressad.foundation.d.d> list) {
-        return b(str, z3, i, z6, i6, list);
+    public final boolean a(String str, boolean z6, int i, boolean z9, int i4, List<com.anythink.expressad.foundation.d.d> list) {
+        return b(str, z6, i, z9, i4, list);
     }
 
     public final o a(String str, CopyOnWriteArrayList<com.anythink.expressad.foundation.d.d> copyOnWriteArrayList, int i, com.anythink.expressad.videocommon.d.c cVar) {
         if (TextUtils.isEmpty(str) || copyOnWriteArrayList == null || copyOnWriteArrayList.size() == 0) {
             return null;
         }
-        if (this.f22281e.containsKey(str)) {
-            o oVar = this.f22281e.get(str);
+        if (this.f23068e.containsKey(str)) {
+            o oVar = this.f23068e.get(str);
             if (i != 94 && i != 287) {
                 oVar.a(cVar);
             } else {
@@ -372,11 +372,11 @@ public class e {
             oVar.a(copyOnWriteArrayList);
             return oVar;
         }
-        o oVar2 = new o(copyOnWriteArrayList, this.f22279c, str, i);
+        o oVar2 = new o(copyOnWriteArrayList, this.f23066c, str, i);
         if (cVar != null) {
             oVar2.a(cVar);
         }
-        this.f22281e.put(str, oVar2);
+        this.f23068e.put(str, oVar2);
         return oVar2;
     }
 
@@ -384,8 +384,8 @@ public class e {
         if (TextUtils.isEmpty(str) || dVar == null) {
             return null;
         }
-        if (this.f22281e.containsKey(str)) {
-            o oVar = this.f22281e.get(str);
+        if (this.f23068e.containsKey(str)) {
+            o oVar = this.f23068e.get(str);
             if (i != 94 && i != 287) {
                 oVar.a(cVar);
             } else {
@@ -394,23 +394,23 @@ public class e {
             oVar.a(dVar);
             return oVar;
         }
-        o oVar2 = new o(dVar, this.f22279c, str, i);
+        o oVar2 = new o(dVar, this.f23066c, str, i);
         if (cVar != null) {
             oVar2.a(cVar);
         }
-        this.f22281e.put(str, oVar2);
+        this.f23068e.put(str, oVar2);
         return oVar2;
     }
 
-    public final void a(boolean z3) {
-        if (z3) {
-            if (this.f22280d) {
+    public final void a(boolean z6) {
+        if (z6) {
+            if (this.f23067d) {
                 return;
             }
         } else {
-            this.f22280d = false;
+            this.f23067d = false;
         }
-        ConcurrentHashMap<String, o> concurrentHashMap = this.f22281e;
+        ConcurrentHashMap<String, o> concurrentHashMap = this.f23068e;
         if (concurrentHashMap != null) {
             Iterator<Map.Entry<String, o>> it = concurrentHashMap.entrySet().iterator();
             while (it.hasNext()) {
@@ -463,8 +463,8 @@ public class e {
     }
 
     public final void b() {
-        this.f22280d = false;
-        ConcurrentHashMap<String, o> concurrentHashMap = this.f22281e;
+        this.f23067d = false;
+        ConcurrentHashMap<String, o> concurrentHashMap = this.f23068e;
         if (concurrentHashMap != null) {
             Iterator<Map.Entry<String, o>> it = concurrentHashMap.entrySet().iterator();
             while (it.hasNext()) {

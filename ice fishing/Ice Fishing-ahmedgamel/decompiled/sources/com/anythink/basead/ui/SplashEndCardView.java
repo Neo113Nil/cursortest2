@@ -28,45 +28,45 @@ import com.anythink.expressad.foundation.h.k;
 public class SplashEndCardView extends BaseEndCardView {
 
     /* renamed from: e, reason: collision with root package name */
-    protected String f10363e;
+    protected String f11149e;
 
     /* renamed from: f, reason: collision with root package name */
-    RoundImageView f10364f;
+    RoundImageView f11150f;
 
     /* renamed from: g, reason: collision with root package name */
-    TextView f10365g;
+    TextView f11151g;
 
     /* renamed from: h, reason: collision with root package name */
-    TextView f10366h;
+    TextView f11152h;
     CTAButtonLayout i;
 
     /* renamed from: j, reason: collision with root package name */
-    TextView f10367j;
+    TextView f11153j;
 
     /* renamed from: k, reason: collision with root package name */
-    BaseShakeView f10368k;
+    BaseShakeView f11154k;
 
     /* renamed from: l, reason: collision with root package name */
-    ImageView f10369l;
+    ImageView f11155l;
 
     /* renamed from: m, reason: collision with root package name */
-    private View f10370m;
+    private View f11156m;
 
     /* renamed from: n, reason: collision with root package name */
-    private long f10371n;
+    private long f11157n;
 
     /* renamed from: o, reason: collision with root package name */
-    private final View.OnClickListener f10372o;
+    private final View.OnClickListener f11158o;
 
     public SplashEndCardView(Context context, w wVar, x xVar) {
         super(context, wVar, xVar);
         View findViewById;
-        this.f10363e = "Skip";
+        this.f11149e = "Skip";
         View.OnClickListener onClickListener = new View.OnClickListener() { // from class: com.anythink.basead.ui.SplashEndCardView.1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 BaseEndCardView.a aVar;
-                y yVar = SplashEndCardView.this.f9824d;
+                y yVar = SplashEndCardView.this.f10610d;
                 if (yVar != null) {
                     if (yVar.J() == 0) {
                         BaseEndCardView.a aVar2 = SplashEndCardView.this.mListener;
@@ -85,38 +85,38 @@ public class SplashEndCardView extends BaseEndCardView {
                 }
             }
         };
-        this.f10372o = onClickListener;
-        this.f10363e = getResources().getString(q.a(getContext(), "myoffer_splash_skip_text", k.f19636g));
+        this.f11158o = onClickListener;
+        this.f11149e = getResources().getString(q.a(getContext(), "myoffer_splash_skip_text", k.f20423g));
         View inflate = LayoutInflater.from(getContext()).inflate(q.a(getContext(), "myoffer_splash_endcard", "layout"), (ViewGroup) this, true);
-        this.f10370m = inflate;
-        this.f10364f = (RoundImageView) inflate.findViewById(q.a(getContext(), "myoffer_splash_endcard_icon", "id"));
-        this.i = (CTAButtonLayout) this.f10370m.findViewById(q.a(getContext(), "myoffer_splash_endcard_cta", "id"));
-        this.f10365g = (TextView) this.f10370m.findViewById(q.a(getContext(), "myoffer_splash_endcard_title", "id"));
-        this.f10366h = (TextView) this.f10370m.findViewById(q.a(getContext(), "myoffer_splash_endcard_desc", "id"));
-        this.f10367j = (TextView) this.f10370m.findViewById(q.a(getContext(), "myoffer_splash_endcard_count_down_text", "id"));
-        this.f10368k = (BaseShakeView) this.f10370m.findViewById(q.a(getContext(), "myoffer_splash_endcard_shake_hint_text", "id"));
-        this.f10369l = (ImageView) this.f10370m.findViewById(q.a(getContext(), "myoffer_splash_endcard_top_bg", "id"));
-        if (!this.f9822b.c()) {
+        this.f11156m = inflate;
+        this.f11150f = (RoundImageView) inflate.findViewById(q.a(getContext(), "myoffer_splash_endcard_icon", "id"));
+        this.i = (CTAButtonLayout) this.f11156m.findViewById(q.a(getContext(), "myoffer_splash_endcard_cta", "id"));
+        this.f11151g = (TextView) this.f11156m.findViewById(q.a(getContext(), "myoffer_splash_endcard_title", "id"));
+        this.f11152h = (TextView) this.f11156m.findViewById(q.a(getContext(), "myoffer_splash_endcard_desc", "id"));
+        this.f11153j = (TextView) this.f11156m.findViewById(q.a(getContext(), "myoffer_splash_endcard_count_down_text", "id"));
+        this.f11154k = (BaseShakeView) this.f11156m.findViewById(q.a(getContext(), "myoffer_splash_endcard_shake_hint_text", "id"));
+        this.f11155l = (ImageView) this.f11156m.findViewById(q.a(getContext(), "myoffer_splash_endcard_top_bg", "id"));
+        if (!this.f10608b.c()) {
             setOnClickListener(onClickListener);
         }
-        RoundImageView roundImageView = this.f10364f;
+        RoundImageView roundImageView = this.f11150f;
         if (roundImageView != null) {
             roundImageView.setNeedRadiu(true);
-            this.f10364f.setRadiusInDip(12);
+            this.f11150f.setRadiusInDip(12);
         }
-        if (this.i != null && !this.f9822b.c()) {
+        if (this.i != null && !this.f10608b.c()) {
             this.i.setOnClickListener(onClickListener);
         }
         GradientDrawable gradientDrawable = new GradientDrawable();
         gradientDrawable.setColor(-1);
         gradientDrawable.setCornerRadius(q.a(getContext(), 12.0f));
         setBackground(gradientDrawable);
-        if (this.f10367j != null) {
+        if (this.f11153j != null) {
             GradientDrawable gradientDrawable2 = new GradientDrawable();
             gradientDrawable2.setColor(Integer.MIN_VALUE);
             gradientDrawable2.setCornerRadius(q.a(getContext(), 12.0f));
-            this.f10367j.setBackground(gradientDrawable2);
-            this.f10367j.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.SplashEndCardView.2
+            this.f11153j.setBackground(gradientDrawable2);
+            this.f11153j.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.SplashEndCardView.2
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     BaseEndCardView.a aVar = SplashEndCardView.this.mListener;
@@ -126,14 +126,14 @@ public class SplashEndCardView extends BaseEndCardView {
                 }
             });
         }
-        if (TextUtils.isEmpty(this.f9822b.x()) && TextUtils.isEmpty(this.f9822b.y()) && (findViewById = this.f10370m.findViewById(q.a(getContext(), "myoffer_splash_endcard_header_container", "id"))) != null) {
+        if (TextUtils.isEmpty(this.f10608b.x()) && TextUtils.isEmpty(this.f10608b.y()) && (findViewById = this.f11156m.findViewById(q.a(getContext(), "myoffer_splash_endcard_header_container", "id"))) != null) {
             findViewById.getLayoutParams().height = q.a(getContext(), 240.0f);
         }
-        String a9 = g.a().a(b.d.f12120e);
+        String a9 = g.a().a(b.d.f12906e);
         if (TextUtils.isEmpty(a9)) {
             return;
         }
-        D.y.f().a(new e(3, a9), new b.a() { // from class: com.anythink.basead.ui.SplashEndCardView.3
+        com.IceFishing.LiveIceFishing.k.j().a(new e(3, a9), new b.a() { // from class: com.anythink.basead.ui.SplashEndCardView.3
             @Override // com.anythink.core.common.res.b.a
             public final void onFail(String str, String str2) {
             }
@@ -141,7 +141,7 @@ public class SplashEndCardView extends BaseEndCardView {
             @Override // com.anythink.core.common.res.b.a
             public final void onSuccess(String str, Bitmap bitmap) {
                 if (bitmap != null) {
-                    SplashEndCardView.this.f10369l.setImageBitmap(bitmap);
+                    SplashEndCardView.this.f11155l.setImageBitmap(bitmap);
                 }
             }
         });
@@ -153,74 +153,74 @@ public class SplashEndCardView extends BaseEndCardView {
 
     public void init(BaseEndCardView.a aVar, long j6) {
         this.mListener = aVar;
-        final String z3 = this.f9822b.z();
-        if (TextUtils.isEmpty(z3)) {
-            z3 = this.f9822b.B();
+        final String z6 = this.f10608b.z();
+        if (TextUtils.isEmpty(z6)) {
+            z6 = this.f10608b.B();
         }
         int a9 = q.a(getContext(), 60.0f);
-        com.anythink.core.common.res.b.a(getContext()).a(new e(1, z3), a9, a9, new b.a() { // from class: com.anythink.basead.ui.SplashEndCardView.4
+        com.anythink.core.common.res.b.a(getContext()).a(new e(1, z6), a9, a9, new b.a() { // from class: com.anythink.basead.ui.SplashEndCardView.4
             @Override // com.anythink.core.common.res.b.a
             public final void onFail(String str, String str2) {
             }
 
             @Override // com.anythink.core.common.res.b.a
             public final void onSuccess(String str, Bitmap bitmap) {
-                if (TextUtils.equals(str, z3)) {
-                    SplashEndCardView.this.f10364f.setImageBitmap(bitmap);
+                if (TextUtils.equals(str, z6)) {
+                    SplashEndCardView.this.f11150f.setImageBitmap(bitmap);
                 }
             }
         });
         CTAButtonLayout cTAButtonLayout = this.i;
         if (cTAButtonLayout != null) {
-            cTAButtonLayout.initSetting(this.f9822b, this.f9823c, true, new b.a() { // from class: com.anythink.basead.ui.SplashEndCardView.5
+            cTAButtonLayout.initSetting(this.f10608b, this.f10609c, true, new b.a() { // from class: com.anythink.basead.ui.SplashEndCardView.5
                 @Override // com.anythink.basead.ui.f.b.a
-                public final void a(int i, int i6) {
+                public final void a(int i, int i4) {
                     BaseEndCardView.a aVar2 = SplashEndCardView.this.mListener;
                     if (aVar2 != null) {
-                        aVar2.a(i6);
+                        aVar2.a(i4);
                     }
                 }
             });
         }
-        if (TextUtils.isEmpty(this.f9822b.x())) {
-            this.f10365g.setVisibility(8);
+        if (TextUtils.isEmpty(this.f10608b.x())) {
+            this.f11151g.setVisibility(8);
         } else {
-            this.f10365g.setVisibility(0);
-            this.f10365g.setText(this.f9822b.x());
+            this.f11151g.setVisibility(0);
+            this.f11151g.setText(this.f10608b.x());
         }
-        if (TextUtils.isEmpty(this.f9822b.y())) {
-            this.f10366h.setVisibility(8);
+        if (TextUtils.isEmpty(this.f10608b.y())) {
+            this.f11152h.setVisibility(8);
         } else {
-            this.f10366h.setVisibility(0);
-            this.f10366h.setText(this.f9822b.y());
+            this.f11152h.setVisibility(0);
+            this.f11152h.setText(this.f10608b.y());
         }
-        if (com.anythink.basead.b.e.a(this.f9823c)) {
-            this.f10368k.setVisibility(0);
-            this.f10368k.setShakeSetting(this.f9823c.f14168o, this.f9822b.K());
-            if (this.f9824d.J() != 1 && !this.f9822b.c()) {
-                this.f10368k.setOnClickListener(this.f10372o);
+        if (com.anythink.basead.b.e.a(this.f10609c)) {
+            this.f11154k.setVisibility(0);
+            this.f11154k.setShakeSetting(this.f10609c.f14954o, this.f10608b.K());
+            if (this.f10610d.J() != 1 && !this.f10608b.c()) {
+                this.f11154k.setOnClickListener(this.f11158o);
             }
-            this.f10368k.setOnShakeListener(new BaseShakeView.a() { // from class: com.anythink.basead.ui.SplashEndCardView.6
+            this.f11154k.setOnShakeListener(new BaseShakeView.a() { // from class: com.anythink.basead.ui.SplashEndCardView.6
                 @Override // com.anythink.basead.ui.BaseShakeView.a
                 public final boolean a() {
                     BaseEndCardView.a aVar2;
-                    if (!com.anythink.basead.ui.f.b.a(SplashEndCardView.this.f10371n, SplashEndCardView.this.f9823c) || (aVar2 = SplashEndCardView.this.mListener) == null) {
+                    if (!com.anythink.basead.ui.f.b.a(SplashEndCardView.this.f11157n, SplashEndCardView.this.f10609c) || (aVar2 = SplashEndCardView.this.mListener) == null) {
                         return false;
                     }
                     aVar2.a(9);
                     return true;
                 }
-            }, this.f9824d);
+            }, this.f10610d);
         } else {
-            this.f10368k.setVisibility(8);
+            this.f11154k.setVisibility(8);
         }
-        this.f10371n = j6;
+        this.f11157n = j6;
     }
 
     public void onCountDownTick(long j6) {
-        TextView textView = this.f10367j;
+        TextView textView = this.f11153j;
         if (textView != null) {
-            textView.setText((j6 / 1000) + "s | " + this.f10363e);
+            textView.setText((j6 / 1000) + "s | " + this.f11149e);
         }
     }
 }

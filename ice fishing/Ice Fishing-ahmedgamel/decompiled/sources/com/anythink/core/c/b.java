@@ -13,50 +13,50 @@ import org.json.JSONObject;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private static volatile b f12032a;
+    private static volatile b f12818a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final c f12033b = new c();
+    private final c f12819b = new c();
 
     private b() {
     }
 
     public static b a() {
-        if (f12032a == null) {
+        if (f12818a == null) {
             synchronized (b.class) {
                 try {
-                    if (f12032a == null) {
-                        f12032a = new b();
+                    if (f12818a == null) {
+                        f12818a = new b();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f12032a;
+        return f12818a;
     }
 
     public final void b(String str) {
-        this.f12033b.b(str);
+        this.f12819b.b(str);
     }
 
     public final void a(String str, String str2, int i, ar arVar, bv bvVar) {
-        this.f12033b.a(str, str2, i, arVar != null ? arVar.b() : null, bvVar);
+        this.f12819b.a(str, str2, i, arVar != null ? arVar.b() : null, bvVar);
     }
 
     public final void a(bu buVar, bv bvVar) {
-        this.f12033b.a(buVar, bvVar);
+        this.f12819b.a(buVar, bvVar);
     }
 
     public final JSONObject a(String str) {
-        return this.f12033b.a(str, 0);
+        return this.f12819b.a(str, 0);
     }
 
     public final JSONObject a(String str, int i) {
-        return this.f12033b.a(str, 4, i);
+        return this.f12819b.a(str, 4, i);
     }
 
     public final d a(String str, l lVar, f fVar) {
-        return this.f12033b.a(str, lVar.ay(), fVar);
+        return this.f12819b.a(str, lVar.ay(), fVar);
     }
 }

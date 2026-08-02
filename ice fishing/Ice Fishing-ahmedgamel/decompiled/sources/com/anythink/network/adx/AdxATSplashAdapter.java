@@ -28,13 +28,13 @@ import java.util.Map;
 public class AdxATSplashAdapter extends CustomSplashAdapter {
 
     /* renamed from: a, reason: collision with root package name */
-    h f23042a;
+    h f23829a;
 
     /* renamed from: b, reason: collision with root package name */
-    x f23043b;
+    x f23830b;
 
     /* renamed from: c, reason: collision with root package name */
-    Map<String, Object> f23044c;
+    Map<String, Object> f23831c;
 
     public static /* synthetic */ int i(AdxATSplashAdapter adxATSplashAdapter) {
         adxATSplashAdapter.mDismissType = 3;
@@ -63,17 +63,17 @@ public class AdxATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
-        h hVar = this.f23042a;
+        h hVar = this.f23829a;
         if (hVar != null) {
             hVar.b();
-            this.f23042a = null;
+            this.f23829a = null;
         }
-        this.f23043b = null;
+        this.f23830b = null;
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter
     public Map<String, Object> getAdExtraInfoMap() {
-        h hVar = this.f23042a;
+        h hVar = this.f23829a;
         if (hVar != null) {
             return hVar.e();
         }
@@ -94,7 +94,7 @@ public class AdxATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public Map<String, Object> getNetworkInfoMap() {
-        return this.f23044c;
+        return this.f23831c;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -104,8 +104,8 @@ public class AdxATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        x xVar = this.f23043b;
-        return xVar != null ? xVar.f14156b : "";
+        x xVar = this.f23830b;
+        return xVar != null ? xVar.f14942b : "";
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -116,7 +116,7 @@ public class AdxATSplashAdapter extends CustomSplashAdapter {
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public boolean initNetworkObjectByPlacementId(Context context, Map<String, Object> map, Map<String, Object> map2) {
         a(context, map, map2);
-        h hVar = this.f23042a;
+        h hVar = this.f23829a;
         if (hVar == null) {
             return true;
         }
@@ -124,7 +124,7 @@ public class AdxATSplashAdapter extends CustomSplashAdapter {
             @Override // com.anythink.basead.f.c.a
             public final void onAdCacheLoaded() {
                 if (AdxATSplashAdapter.this.getTrackingInfo() != null) {
-                    AdxATSplashAdapter.this.getTrackingInfo().M(AdxATSplashAdapter.this.f23042a.f());
+                    AdxATSplashAdapter.this.getTrackingInfo().M(AdxATSplashAdapter.this.f23829a.f());
                 }
             }
         });
@@ -133,30 +133,30 @@ public class AdxATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public boolean isAdReady() {
-        h hVar = this.f23042a;
-        boolean z3 = hVar != null && hVar.c();
-        if (z3 && this.f23044c == null) {
-            this.f23044c = d.a(this.f23042a);
+        h hVar = this.f23829a;
+        boolean z6 = hVar != null && hVar.c();
+        if (z6 && this.f23831c == null) {
+            this.f23831c = d.a(this.f23829a);
         }
-        return z3;
+        return z6;
     }
 
     @Override // com.anythink.splashad.unitgroup.api.CustomSplashAdapter
     public boolean isSupportCustomSkipView() {
-        h hVar = this.f23042a;
+        h hVar = this.f23829a;
         return hVar != null && hVar.h();
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void loadCustomNetworkAd(Context context, Map<String, Object> map, Map<String, Object> map2) {
         a(context, map, map2);
-        this.f23042a.a(new com.anythink.basead.g.c() { // from class: com.anythink.network.adx.AdxATSplashAdapter.1
+        this.f23829a.a(new com.anythink.basead.g.c() { // from class: com.anythink.network.adx.AdxATSplashAdapter.1
             @Override // com.anythink.basead.g.c
             public final void onAdCacheLoaded() {
                 AdxATSplashAdapter adxATSplashAdapter = AdxATSplashAdapter.this;
-                adxATSplashAdapter.f23044c = d.a(adxATSplashAdapter.f23042a);
+                adxATSplashAdapter.f23831c = d.a(adxATSplashAdapter.f23829a);
                 if (AdxATSplashAdapter.this.getTrackingInfo() != null) {
-                    AdxATSplashAdapter.this.getTrackingInfo().M(AdxATSplashAdapter.this.f23042a.f());
+                    AdxATSplashAdapter.this.getTrackingInfo().M(AdxATSplashAdapter.this.f23829a.f());
                 }
                 if (((ATBaseAdInternalAdapter) AdxATSplashAdapter.this).mLoadListener != null) {
                     ((ATBaseAdInternalAdapter) AdxATSplashAdapter.this).mLoadListener.onAdCacheLoaded(new BaseAd[0]);
@@ -181,10 +181,10 @@ public class AdxATSplashAdapter extends CustomSplashAdapter {
 
     @Override // com.anythink.splashad.unitgroup.api.CustomSplashAdapter
     public void show(Activity activity, ViewGroup viewGroup) {
-        if (this.f23042a != null) {
+        if (this.f23829a != null) {
             AdxATInitManager.getInstance();
-            AdxATInitManager.a(getTrackingInfo(), this.f23043b);
-            h hVar = this.f23042a;
+            AdxATInitManager.a(getTrackingInfo(), this.f23830b);
+            h hVar = this.f23829a;
             hVar.a(new e(hVar.d(), getTrackingInfo()) { // from class: com.anythink.network.adx.AdxATSplashAdapter.2
                 @Override // com.anythink.basead.g.e, com.anythink.basead.g.a
                 public final void onAdClick(j jVar) {
@@ -199,7 +199,7 @@ public class AdxATSplashAdapter extends CustomSplashAdapter {
                     Map<String, Object> adExtraInfoMap = AdxATSplashAdapter.this.getAdExtraInfoMap();
                     if (adExtraInfoMap != null) {
                         try {
-                            int intFromMap = ATInitMediation.getIntFromMap(adExtraInfoMap, b.C0074b.f12108a, 1);
+                            int intFromMap = ATInitMediation.getIntFromMap(adExtraInfoMap, b.C0074b.f12894a, 1);
                             if (intFromMap != 2) {
                                 if (intFromMap != 3 && intFromMap != 5) {
                                     if (intFromMap == 6) {
@@ -229,10 +229,10 @@ public class AdxATSplashAdapter extends CustomSplashAdapter {
                 }
 
                 @Override // com.anythink.basead.g.a
-                public final void onDeeplinkCallback(boolean z3) {
-                    h hVar2 = AdxATSplashAdapter.this.f23042a;
+                public final void onDeeplinkCallback(boolean z6) {
+                    h hVar2 = AdxATSplashAdapter.this.f23829a;
                     if ((hVar2 == null || hVar2.g()) && ((CustomSplashAdapter) AdxATSplashAdapter.this).mImpressionListener != null) {
-                        ((CustomSplashAdapter) AdxATSplashAdapter.this).mImpressionListener.onDeeplinkCallback(z3);
+                        ((CustomSplashAdapter) AdxATSplashAdapter.this).mImpressionListener.onDeeplinkCallback(z6);
                     }
                 }
 
@@ -246,9 +246,9 @@ public class AdxATSplashAdapter extends CustomSplashAdapter {
                 }
             });
             if (isCustomSkipView()) {
-                this.f23042a.a();
+                this.f23829a.a();
             }
-            this.f23042a.a(viewGroup);
+            this.f23829a.a(viewGroup);
         }
     }
 
@@ -266,18 +266,18 @@ public class AdxATSplashAdapter extends CustomSplashAdapter {
             i = 0;
         }
         int intFromMap = ATInitMediation.getIntFromMap(map, "end_cls", 1);
-        x xVar = (x) map.get(j.w.f12614a);
-        this.f23043b = xVar;
+        x xVar = (x) map.get(j.w.f13400a);
+        this.f23830b = xVar;
         if (xVar != null) {
-            xVar.f14176w = new HashMap<>();
-            this.f23043b.f14176w.put("orientation", Integer.valueOf(parseInt));
-            this.f23043b.f14176w.put(ATAdConst.KEY.AD_WIDTH, map2.get(ATAdConst.KEY.AD_WIDTH));
-            this.f23043b.f14176w.put(ATAdConst.KEY.AD_HEIGHT, map2.get(ATAdConst.KEY.AD_HEIGHT));
+            xVar.f14962w = new HashMap<>();
+            this.f23830b.f14962w.put("orientation", Integer.valueOf(parseInt));
+            this.f23830b.f14962w.put(ATAdConst.KEY.AD_WIDTH, map2.get(ATAdConst.KEY.AD_WIDTH));
+            this.f23830b.f14962w.put(ATAdConst.KEY.AD_HEIGHT, map2.get(ATAdConst.KEY.AD_HEIGHT));
         }
-        h hVar = new h(context, c.b.ADX_OFFER_REQUEST_TYPE, this.f23043b);
-        this.f23042a = hVar;
+        h hVar = new h(context, c.b.ADX_OFFER_REQUEST_TYPE, this.f23830b);
+        this.f23829a = hVar;
         hVar.a(new d.a().d(parseInt).e(parseInt2).f(i).i(intFromMap).a());
         AdxATInitManager.getInstance();
-        AdxATInitManager.a(getTrackingInfo(), this.f23043b);
+        AdxATInitManager.a(getTrackingInfo(), this.f23830b);
     }
 }

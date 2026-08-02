@@ -4,7 +4,7 @@ package J5;
 public interface a {
     void addOutcome(String str);
 
-    void addOutcomeWithValue(String str, float f3);
+    void addOutcomeWithValue(String str, float f2);
 
     void addUniqueOutcome(String str);
 }

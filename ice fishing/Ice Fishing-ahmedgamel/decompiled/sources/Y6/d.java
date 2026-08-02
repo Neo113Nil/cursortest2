@@ -8,14 +8,14 @@ import java.util.concurrent.TimeUnit;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final d f3981a = new d();
+    public static final d f3925a = new d();
 
-    public final long a(boolean z3) {
+    public final long a(boolean z6) {
         Clock systemUTC;
         Instant instant;
         long epochSecond;
         int nano;
-        if (!z3) {
+        if (!z6) {
             return TimeUnit.MILLISECONDS.toNanos(System.currentTimeMillis());
         }
         systemUTC = Clock.systemUTC();

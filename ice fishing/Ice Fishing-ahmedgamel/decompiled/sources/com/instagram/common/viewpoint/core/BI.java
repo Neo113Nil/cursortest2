@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public abstract class BI<K, V> extends AbstractC2419qf<Map.Entry<K, V>> {
+public abstract class BI<K, V> extends AbstractC2439qf<Map.Entry<K, V>> {
     public abstract Map<K, V> A00();
 
     /* JADX WARN: Failed to parse debug info
@@ -16,12 +16,12 @@ public abstract class BI<K, V> extends AbstractC2419qf<Map.Entry<K, V>> {
     	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2419qf, java.util.AbstractSet, java.util.AbstractCollection, java.util.Collection, java.util.Set
+    @Override // com.instagram.common.viewpoint.core.AbstractC2439qf, java.util.AbstractSet, java.util.AbstractCollection, java.util.Collection, java.util.Set
     public boolean removeAll(Collection<?> c9) {
         try {
-            return super.removeAll((Collection) AbstractC2070ki.A04(c9));
+            return super.removeAll((Collection) AbstractC2090ki.A04(c9));
         } catch (UnsupportedOperationException unused) {
-            return AbstractC2423qj.A0B(this, c9.iterator());
+            return AbstractC2443qj.A0B(this, c9.iterator());
         }
     }
 
@@ -33,12 +33,12 @@ public abstract class BI<K, V> extends AbstractC2419qf<Map.Entry<K, V>> {
     	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2419qf, java.util.AbstractCollection, java.util.Collection, java.util.Set
+    @Override // com.instagram.common.viewpoint.core.AbstractC2439qf, java.util.AbstractCollection, java.util.Collection, java.util.Set
     public boolean retainAll(Collection<?> c9) {
         try {
-            return super.retainAll((Collection) AbstractC2070ki.A04(c9));
+            return super.retainAll((Collection) AbstractC2090ki.A04(c9));
         } catch (UnsupportedOperationException unused) {
-            HashSet A06 = AbstractC2423qj.A06(c9.size());
+            HashSet A06 = AbstractC2443qj.A06(c9.size());
             for (Object obj : c9) {
                 if (contains(obj) && (obj instanceof Map.Entry)) {
                     A06.add(((Map.Entry) obj).getKey());

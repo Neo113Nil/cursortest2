@@ -5,8 +5,8 @@ public final class KJ {
     public final int A00;
     public final int A01;
 
-    public KJ(int i, int i6) {
+    public KJ(int i, int i4) {
         this.A00 = i;
-        this.A01 = i6;
+        this.A01 = i4;
     }
 }

@@ -1,26 +1,26 @@
 package e8;
 
 import java.util.List;
-import v7.C5135p;
+import v7.C5125p;
 
 /* loaded from: classes2.dex */
 public final class N implements c8.e {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f37258a;
+    public final String f37334a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final c8.d f37259b;
+    public final c8.d f37335b;
 
     public N(String str, c8.d kind) {
         kotlin.jvm.internal.h.e(kind, "kind");
-        this.f37258a = str;
-        this.f37259b = kind;
+        this.f37334a = str;
+        this.f37335b = kind;
     }
 
     @Override // c8.e
     public final String a() {
-        return this.f37258a;
+        return this.f37334a;
     }
 
     @Override // c8.e
@@ -30,8 +30,8 @@ public final class N implements c8.e {
     }
 
     @Override // c8.e
-    public final t8.g d() {
-        return this.f37259b;
+    public final com.bumptech.glide.h d() {
+        return this.f37335b;
     }
 
     @Override // c8.e
@@ -47,8 +47,8 @@ public final class N implements c8.e {
             return false;
         }
         N n9 = (N) obj;
-        if (kotlin.jvm.internal.h.a(this.f37258a, n9.f37258a)) {
-            if (kotlin.jvm.internal.h.a(this.f37259b, n9.f37259b)) {
+        if (kotlin.jvm.internal.h.a(this.f37334a, n9.f37334a)) {
+            if (kotlin.jvm.internal.h.a(this.f37335b, n9.f37335b)) {
                 return true;
             }
         }
@@ -67,7 +67,7 @@ public final class N implements c8.e {
 
     @Override // c8.e
     public final List getAnnotations() {
-        return C5135p.f41442n;
+        return C5125p.f41221n;
     }
 
     @Override // c8.e
@@ -76,7 +76,7 @@ public final class N implements c8.e {
     }
 
     public final int hashCode() {
-        return (this.f37259b.hashCode() * 31) + this.f37258a.hashCode();
+        return (this.f37335b.hashCode() * 31) + this.f37334a.hashCode();
     }
 
     @Override // c8.e
@@ -90,7 +90,7 @@ public final class N implements c8.e {
     }
 
     public final String toString() {
-        return "PrimitiveDescriptor(" + this.f37258a + ')';
+        return "PrimitiveDescriptor(" + this.f37334a + ')';
     }
 
     @Override // c8.e

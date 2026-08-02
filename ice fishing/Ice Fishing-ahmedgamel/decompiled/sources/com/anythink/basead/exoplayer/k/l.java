@@ -4,35 +4,35 @@ package com.anythink.basead.exoplayer.k;
 public final class l {
 
     /* renamed from: a, reason: collision with root package name */
-    private String[] f8414a;
+    private String[] f9200a;
 
     /* renamed from: b, reason: collision with root package name */
-    private boolean f8415b;
+    private boolean f9201b;
 
     /* renamed from: c, reason: collision with root package name */
-    private boolean f8416c;
+    private boolean f9202c;
 
     private l(String... strArr) {
-        this.f8414a = strArr;
+        this.f9200a = strArr;
     }
 
     private void a(String... strArr) {
-        a.b(!this.f8415b, "Cannot set libraries after loading");
-        this.f8414a = strArr;
+        a.b(!this.f9201b, "Cannot set libraries after loading");
+        this.f9200a = strArr;
     }
 
     private boolean a() {
-        if (this.f8415b) {
-            return this.f8416c;
+        if (this.f9201b) {
+            return this.f9202c;
         }
-        this.f8415b = true;
+        this.f9201b = true;
         try {
-            for (String str : this.f8414a) {
+            for (String str : this.f9200a) {
                 System.loadLibrary(str);
             }
-            this.f8416c = true;
+            this.f9202c = true;
         } catch (UnsatisfiedLinkError unused) {
         }
-        return this.f8416c;
+        return this.f9202c;
     }
 }

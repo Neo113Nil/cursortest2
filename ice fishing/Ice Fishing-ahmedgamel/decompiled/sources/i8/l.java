@@ -3,33 +3,33 @@ package i8;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
-import u7.C5089g;
-import v7.AbstractC5128i;
+import u7.C5081g;
+import v7.AbstractC5118i;
 
 /* loaded from: classes2.dex */
 public final class l implements Iterable, J7.a {
 
     /* renamed from: u, reason: collision with root package name */
-    public static final l f38149u = new l(new String[0]);
+    public static final l f38268u = new l(new String[0]);
 
     /* renamed from: n, reason: collision with root package name */
-    public final String[] f38150n;
+    public final String[] f38269n;
 
     public l(String[] namesAndValues) {
         kotlin.jvm.internal.h.e(namesAndValues, "namesAndValues");
-        this.f38150n = namesAndValues;
+        this.f38269n = namesAndValues;
     }
 
     public final String a(String str) {
-        String[] namesAndValues = this.f38150n;
+        String[] namesAndValues = this.f38269n;
         kotlin.jvm.internal.h.e(namesAndValues, "namesAndValues");
         int length = namesAndValues.length - 2;
-        int p9 = t8.g.p(length, 0, -2);
-        if (p9 > length) {
+        int e9 = d6.c.e(length, 0, -2);
+        if (e9 > length) {
             return null;
         }
         while (!str.equalsIgnoreCase(namesAndValues[length])) {
-            if (length == p9) {
+            if (length == e9) {
                 return null;
             }
             length -= 2;
@@ -38,25 +38,25 @@ public final class l implements Iterable, J7.a {
     }
 
     public final String c(int i) {
-        String str = (String) AbstractC5128i.x(this.f38150n, i * 2);
+        String str = (String) AbstractC5118i.A(this.f38269n, i * 2);
         if (str != null) {
             return str;
         }
         throw new IndexOutOfBoundsException("name[" + i + ']');
     }
 
-    public final G1.e d() {
-        G1.e eVar = new G1.e(3);
-        ArrayList arrayList = eVar.f1056a;
+    public final I1.d d() {
+        I1.d dVar = new I1.d(3);
+        ArrayList arrayList = dVar.f1308n;
         kotlin.jvm.internal.h.e(arrayList, "<this>");
-        String[] elements = this.f38150n;
+        String[] elements = this.f38269n;
         kotlin.jvm.internal.h.e(elements, "elements");
-        arrayList.addAll(AbstractC5128i.q(elements));
-        return eVar;
+        arrayList.addAll(AbstractC5118i.t(elements));
+        return dVar;
     }
 
     public final String e(int i) {
-        String str = (String) AbstractC5128i.x(this.f38150n, (i * 2) + 1);
+        String str = (String) AbstractC5118i.A(this.f38269n, (i * 2) + 1);
         if (str != null) {
             return str;
         }
@@ -65,27 +65,27 @@ public final class l implements Iterable, J7.a {
 
     public final boolean equals(Object obj) {
         if (obj instanceof l) {
-            return Arrays.equals(this.f38150n, ((l) obj).f38150n);
+            return Arrays.equals(this.f38269n, ((l) obj).f38269n);
         }
         return false;
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(this.f38150n);
+        return Arrays.hashCode(this.f38269n);
     }
 
     @Override // java.lang.Iterable
     public final Iterator iterator() {
         int size = size();
-        C5089g[] c5089gArr = new C5089g[size];
+        C5081g[] c5081gArr = new C5081g[size];
         for (int i = 0; i < size; i++) {
-            c5089gArr[i] = new C5089g(c(i), e(i));
+            c5081gArr[i] = new C5081g(c(i), e(i));
         }
-        return new c8.g(c5089gArr);
+        return new c8.g(c5081gArr);
     }
 
     public final int size() {
-        return this.f38150n.length / 2;
+        return this.f38269n.length / 2;
     }
 
     public final String toString() {

@@ -11,10 +11,10 @@ public abstract class H3 {
         A02();
     }
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 121);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 121);
         }
         return new String(copyOfRange);
     }
@@ -27,10 +27,10 @@ public abstract class H3 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static int A00(C06474v c06474v) {
+    public static int A00(C06674v c06674v) {
         int i = 0;
         while (value != 0) {
-            int b9 = c06474v.A0I();
+            int b9 = c06674v.A0I();
             i += b9;
             if (b9 != 255) {
                 return i;
@@ -39,25 +39,25 @@ public abstract class H3 {
         return -1;
     }
 
-    public static void A03(long j6, C06474v c06474v, InterfaceC0947Hd[] interfaceC0947HdArr) {
+    public static void A03(long j6, C06674v c06674v, InterfaceC0967Hd[] interfaceC0967HdArr) {
         while (true) {
-            if (c06474v.A07() > 1) {
-                int A002 = A00(c06474v);
-                int A003 = A00(c06474v);
-                int A09 = c06474v.A09() + A003;
+            if (c06674v.A07() > 1) {
+                int A002 = A00(c06674v);
+                int A003 = A00(c06674v);
+                int A09 = c06674v.A09() + A003;
                 if (A003 != -1) {
-                    int payloadType = c06474v.A07();
+                    int payloadType = c06674v.A07();
                     if (A003 <= payloadType) {
                         if (A002 == 4 && A003 >= 8) {
-                            int userIdentifier = c06474v.A0I();
-                            int providerCode = c06474v.A0M();
+                            int userIdentifier = c06674v.A0I();
+                            int providerCode = c06674v.A0M();
                             int countryCode = 0;
                             if (providerCode == 49) {
-                                countryCode = c06474v.A0C();
+                                countryCode = c06674v.A0C();
                             }
-                            int A0I = c06474v.A0I();
+                            int A0I = c06674v.A0I();
                             if (providerCode == 47) {
-                                c06474v.A0g(1);
+                                c06674v.A0g(1);
                             }
                             int i = (userIdentifier == 181 && (providerCode == 49 || providerCode == 47) && A0I == 3) ? 1 : 0;
                             if (providerCode == 49) {
@@ -65,34 +65,34 @@ public abstract class H3 {
                                 i &= userDataTypeCode;
                             }
                             if (i != 0) {
-                                A04(j6, c06474v, interfaceC0947HdArr);
+                                A04(j6, c06674v, interfaceC0967HdArr);
                             }
                         }
-                        c06474v.A0f(A09);
+                        c06674v.A0f(A09);
                     }
                 }
-                AbstractC06324g.A07(A01(0, 7, 3), A01(7, 45, 16));
-                A09 = c06474v.A0A();
-                c06474v.A0f(A09);
+                AbstractC06524g.A07(A01(0, 7, 3), A01(7, 45, 16));
+                A09 = c06674v.A0A();
+                c06674v.A0f(A09);
             } else {
                 return;
             }
         }
     }
 
-    public static void A04(long j6, C06474v c06474v, InterfaceC0947Hd[] interfaceC0947HdArr) {
-        int firstByte = c06474v.A0I();
+    public static void A04(long j6, C06674v c06674v, InterfaceC0967Hd[] interfaceC0967HdArr) {
+        int firstByte = c06674v.A0I();
         if (!((firstByte & 64) != 0)) {
             return;
         }
-        c06474v.A0g(1);
+        c06674v.A0g(1);
         int i = (firstByte & 31) * 3;
-        int A09 = c06474v.A09();
-        for (InterfaceC0947Hd interfaceC0947Hd : interfaceC0947HdArr) {
-            c06474v.A0f(A09);
-            interfaceC0947Hd.AIr(c06474v, i);
-            if (j6 != b.f6382b) {
-                interfaceC0947Hd.AIu(j6, 1, i, 0, null);
+        int A09 = c06674v.A09();
+        for (InterfaceC0967Hd interfaceC0967Hd : interfaceC0967HdArr) {
+            c06674v.A0f(A09);
+            interfaceC0967Hd.AIr(c06674v, i);
+            if (j6 != b.f7168b) {
+                interfaceC0967Hd.AIu(j6, 1, i, 0, null);
             }
         }
     }

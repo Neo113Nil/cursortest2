@@ -16,6 +16,6 @@ public class C5G extends E8 {
     @Override // com.instagram.common.viewpoint.core.UN
     /* renamed from: A00, reason: merged with bridge method [inline-methods] */
     public final void A03(E9 e9) {
-        new Handler(Looper.getMainLooper()).post(new RunnableC1646dY(this));
+        new Handler(Looper.getMainLooper()).post(new RunnableC1666dY(this));
     }
 }

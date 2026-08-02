@@ -10,7 +10,7 @@ public class S9 {
         this.A00 = str2;
     }
 
-    public /* synthetic */ S9(String str, String str2, C1862h4 c1862h4) {
+    public /* synthetic */ S9(String str, String str2, C1882h4 c1882h4) {
         this(str, str2);
     }
 }

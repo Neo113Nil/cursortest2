@@ -1,93 +1,93 @@
 package c6;
 
-import g1.C4523c;
+import i1.C4586c;
 import kotlin.jvm.internal.s;
 
 /* loaded from: classes2.dex */
 public final class e extends i {
 
     /* renamed from: t, reason: collision with root package name */
-    public final /* synthetic */ int f5584t;
+    public final /* synthetic */ int f5760t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final i f5585u;
+    public final i f5761u;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public e(i iVar, int i) {
-        super(d.f5580w, s.a(int[].class), iVar.f5605c, new int[0], 32);
-        this.f5584t = i;
+        super(d.f5756w, s.a(int[].class), iVar.f5781c, new int[0], 32);
+        this.f5760t = i;
         switch (i) {
             case 1:
-                super(d.f5580w, s.a(long[].class), iVar.f5605c, new long[0], 32);
-                this.f5585u = iVar;
+                super(d.f5756w, s.a(long[].class), iVar.f5781c, new long[0], 32);
+                this.f5761u = iVar;
                 break;
             default:
-                this.f5585u = iVar;
+                this.f5761u = iVar;
                 break;
         }
     }
 
     @Override // c6.i
-    public final Object b(C0544a c0544a) {
-        i iVar = this.f5585u;
-        switch (this.f5584t) {
+    public final Object b(C0555a c0555a) {
+        i iVar = this.f5761u;
+        switch (this.f5760t) {
             case 0:
-                return new int[]{((Number) iVar.b(c0544a)).intValue()};
+                return new int[]{((Number) iVar.b(c0555a)).intValue()};
             case 1:
-                return new long[]{((Number) iVar.b(c0544a)).longValue()};
+                return new long[]{((Number) iVar.b(c0555a)).longValue()};
             default:
-                int c9 = c0544a.c();
-                Object obj = iVar.f5606d;
+                int c9 = c0555a.c();
+                Object obj = iVar.f5782d;
                 while (true) {
-                    int f3 = c0544a.f();
-                    if (f3 == -1) {
-                        c0544a.d(c9);
+                    int f2 = c0555a.f();
+                    if (f2 == -1) {
+                        c0555a.d(c9);
                         return obj;
                     }
-                    if (f3 == 1) {
-                        obj = iVar.b(c0544a);
+                    if (f2 == 1) {
+                        obj = iVar.b(c0555a);
                     } else {
-                        c0544a.k(f3);
+                        c0555a.k(f2);
                     }
                 }
         }
     }
 
     @Override // c6.i
-    public final Object c(C4523c c4523c) {
-        i iVar = this.f5585u;
-        switch (this.f5584t) {
+    public final Object c(C4586c c4586c) {
+        i iVar = this.f5761u;
+        switch (this.f5760t) {
             case 0:
-                return new int[]{((Number) iVar.c(c4523c)).intValue()};
+                return new int[]{((Number) iVar.c(c4586c)).intValue()};
             case 1:
-                return new long[]{((Number) iVar.c(c4523c)).longValue()};
+                return new long[]{((Number) iVar.c(c4586c)).longValue()};
             default:
-                long A9 = c4523c.A();
-                Object obj = iVar.f5606d;
+                long n9 = c4586c.n();
+                Object obj = iVar.f5782d;
                 while (true) {
-                    int f3 = ((C0544a) c4523c.f37627u).f();
-                    if (f3 == -1) {
-                        c4523c.C(A9);
+                    int f2 = ((C0555a) c4586c.f38154u).f();
+                    if (f2 == -1) {
+                        c4586c.p(n9);
                         return obj;
                     }
-                    if (f3 == 1) {
-                        obj = iVar.c(c4523c);
+                    if (f2 == 1) {
+                        obj = iVar.c(c4586c);
                     } else {
-                        c4523c.F(f3);
+                        c4586c.t(f2);
                     }
                 }
         }
     }
 
     @Override // c6.i
-    public final void d(F1.a writer, Object obj) {
-        switch (this.f5584t) {
+    public final void d(n4.c writer, Object obj) {
+        switch (this.f5760t) {
             case 0:
                 int[] value = (int[]) obj;
                 kotlin.jvm.internal.h.e(writer, "writer");
                 kotlin.jvm.internal.h.e(value, "value");
                 for (int i : value) {
-                    this.f5585u.d(writer, Integer.valueOf(i));
+                    this.f5761u.d(writer, Integer.valueOf(i));
                 }
                 break;
             case 1:
@@ -95,14 +95,14 @@ public final class e extends i {
                 kotlin.jvm.internal.h.e(writer, "writer");
                 kotlin.jvm.internal.h.e(value2, "value");
                 for (long j6 : value2) {
-                    this.f5585u.d(writer, Long.valueOf(j6));
+                    this.f5761u.d(writer, Long.valueOf(j6));
                 }
                 break;
             default:
                 kotlin.jvm.internal.h.e(writer, "writer");
                 if (obj != null) {
-                    i iVar = this.f5585u;
-                    if (!obj.equals(iVar.f5606d)) {
+                    i iVar = this.f5761u;
+                    if (!obj.equals(iVar.f5782d)) {
                         iVar.e(writer, 1, obj);
                         break;
                     }
@@ -112,8 +112,8 @@ public final class e extends i {
     }
 
     @Override // c6.i
-    public void e(F1.a writer, int i, Object obj) {
-        switch (this.f5584t) {
+    public void e(n4.c writer, int i, Object obj) {
+        switch (this.f5760t) {
             case 0:
                 int[] iArr = (int[]) obj;
                 kotlin.jvm.internal.h.e(writer, "writer");
@@ -138,27 +138,27 @@ public final class e extends i {
 
     @Override // c6.i
     public final int f(Object obj) {
-        switch (this.f5584t) {
+        switch (this.f5760t) {
             case 0:
                 int[] value = (int[]) obj;
                 kotlin.jvm.internal.h.e(value, "value");
                 int i = 0;
-                for (int i6 : value) {
-                    i += this.f5585u.f(Integer.valueOf(i6));
+                for (int i4 : value) {
+                    i += this.f5761u.f(Integer.valueOf(i4));
                 }
                 return i;
             case 1:
                 long[] value2 = (long[]) obj;
                 kotlin.jvm.internal.h.e(value2, "value");
-                int i9 = 0;
+                int i6 = 0;
                 for (long j6 : value2) {
-                    i9 += this.f5585u.f(Long.valueOf(j6));
+                    i6 += this.f5761u.f(Long.valueOf(j6));
                 }
-                return i9;
+                return i6;
             default:
                 if (obj != null) {
-                    i iVar = this.f5585u;
-                    if (!obj.equals(iVar.f5606d)) {
+                    i iVar = this.f5761u;
+                    if (!obj.equals(iVar.f5782d)) {
                         return iVar.g(1, obj);
                     }
                 }
@@ -168,7 +168,7 @@ public final class e extends i {
 
     @Override // c6.i
     public int g(int i, Object obj) {
-        switch (this.f5584t) {
+        switch (this.f5760t) {
             case 0:
                 int[] iArr = (int[]) obj;
                 if (iArr == null || iArr.length == 0) {
@@ -192,9 +192,9 @@ public final class e extends i {
     */
     public e(i iVar, O7.c cVar, Object obj) {
         super(r2, cVar, r4, obj, 32);
-        this.f5584t = 2;
-        d dVar = d.f5580w;
-        n nVar = n.f5619v;
-        this.f5585u = iVar;
+        this.f5760t = 2;
+        d dVar = d.f5756w;
+        n nVar = n.f5795v;
+        this.f5761u = iVar;
     }
 }

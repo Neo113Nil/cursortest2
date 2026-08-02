@@ -33,10 +33,10 @@ public final class C0F {
     public static final C0F A0M;
     public static final C0F A0N;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 81);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 81);
         }
         return new String(copyOfRange);
     }
@@ -47,7 +47,7 @@ public final class C0F {
 
     static {
         A01();
-        A04 = new C0F(A00(5, 7, a.f21727Q), 0);
+        A04 = new C0F(A00(5, 7, a.f22514Q), 0);
         A05 = new C0F(A00(12, 4, 25), 1);
         A0J = new C0F(A00(93, 5, 22), 2);
         A0C = new C0F(A00(54, 3, 85), 3);

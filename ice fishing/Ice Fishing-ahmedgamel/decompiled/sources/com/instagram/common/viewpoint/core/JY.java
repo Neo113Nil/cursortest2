@@ -6,7 +6,7 @@ import java.io.IOException;
 public interface JY {
     HY A5Z();
 
-    long AHN(InterfaceC2191ms interfaceC2191ms) throws IOException;
+    long AHN(InterfaceC2211ms interfaceC2211ms) throws IOException;
 
     void AKC(long j6);
 }

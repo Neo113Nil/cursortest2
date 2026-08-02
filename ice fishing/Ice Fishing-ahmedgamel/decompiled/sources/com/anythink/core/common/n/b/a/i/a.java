@@ -16,39 +16,39 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f15356a = "publicsuffixes.gz";
+    public static final String f16143a = "publicsuffixes.gz";
 
     /* renamed from: e, reason: collision with root package name */
-    private static final byte f15360e = 33;
+    private static final byte f16147e = 33;
 
     /* renamed from: g, reason: collision with root package name */
-    private final AtomicBoolean f15362g = new AtomicBoolean(false);
+    private final AtomicBoolean f16149g = new AtomicBoolean(false);
 
     /* renamed from: h, reason: collision with root package name */
-    private final CountDownLatch f15363h = new CountDownLatch(1);
+    private final CountDownLatch f16150h = new CountDownLatch(1);
     private byte[] i;
 
     /* renamed from: j, reason: collision with root package name */
-    private byte[] f15364j;
+    private byte[] f16151j;
 
     /* renamed from: b, reason: collision with root package name */
-    private static final byte[] f15357b = {42};
+    private static final byte[] f16144b = {42};
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String[] f15358c = new String[0];
+    private static final String[] f16145c = new String[0];
 
     /* renamed from: d, reason: collision with root package name */
-    private static final String[] f15359d = {"*"};
+    private static final String[] f16146d = {"*"};
 
     /* renamed from: f, reason: collision with root package name */
-    private static final a f15361f = new a();
+    private static final a f16148f = new a();
 
     public static a a() {
-        return f15361f;
+        return f16148f;
     }
 
     private void b() {
-        boolean z3 = false;
+        boolean z6 = false;
         while (true) {
             try {
                 try {
@@ -56,15 +56,15 @@ public final class a {
                     break;
                 } catch (InterruptedIOException unused) {
                     Thread.interrupted();
-                    z3 = true;
+                    z6 = true;
                 } catch (IOException e9) {
                     c.e().a(5, "Failed to read public suffix list", e9);
-                    if (!z3) {
+                    if (!z6) {
                         return;
                     }
                 }
             } finally {
-                if (z3) {
+                if (z6) {
                     Thread.currentThread().interrupt();
                 }
             }
@@ -72,7 +72,7 @@ public final class a {
     }
 
     private void c() {
-        InputStream resourceAsStream = a.class.getResourceAsStream(f15356a);
+        InputStream resourceAsStream = a.class.getResourceAsStream(f16143a);
         if (resourceAsStream == null) {
             return;
         }
@@ -85,9 +85,9 @@ public final class a {
             a9.close();
             synchronized (this) {
                 this.i = bArr;
-                this.f15364j = bArr2;
+                this.f16151j = bArr2;
             }
-            this.f15363h.countDown();
+            this.f16150h.countDown();
         } catch (Throwable th) {
             try {
                 a9.close();
@@ -133,14 +133,14 @@ public final class a {
         String[] strArr2;
         String[] strArr3;
         int i = 0;
-        if (this.f15362g.get() || !this.f15362g.compareAndSet(false, true)) {
+        if (this.f16149g.get() || !this.f16149g.compareAndSet(false, true)) {
             try {
-                this.f15363h.await();
+                this.f16150h.await();
             } catch (InterruptedException unused) {
                 Thread.currentThread().interrupt();
             }
         } else {
-            boolean z3 = false;
+            boolean z6 = false;
             while (true) {
                 try {
                     try {
@@ -148,18 +148,18 @@ public final class a {
                             c();
                             break;
                         } finally {
-                            if (z3) {
+                            if (z6) {
                                 Thread.currentThread().interrupt();
                             }
                         }
                     } catch (IOException e9) {
                         c.e().a(5, "Failed to read public suffix list", e9);
-                        if (z3) {
+                        if (z6) {
                         }
                     }
                 } catch (InterruptedIOException unused2) {
                     Thread.interrupted();
-                    z3 = true;
+                    z6 = true;
                 }
             }
         }
@@ -170,27 +170,27 @@ public final class a {
         }
         int length = strArr.length;
         byte[][] bArr = new byte[length][];
-        for (int i6 = 0; i6 < strArr.length; i6++) {
-            bArr[i6] = strArr[i6].getBytes(StandardCharsets.UTF_8);
+        for (int i4 = 0; i4 < strArr.length; i4++) {
+            bArr[i4] = strArr[i4].getBytes(StandardCharsets.UTF_8);
         }
-        int i9 = 0;
+        int i6 = 0;
         while (true) {
             str = null;
-            if (i9 >= length) {
+            if (i6 >= length) {
                 str2 = null;
                 break;
             }
-            str2 = a(this.i, bArr, i9);
+            str2 = a(this.i, bArr, i6);
             if (str2 != null) {
                 break;
             }
-            i9++;
+            i6++;
         }
         if (length > 1) {
             byte[][] bArr2 = (byte[][]) bArr.clone();
-            for (int i10 = 0; i10 < bArr2.length - 1; i10++) {
-                bArr2[i10] = f15357b;
-                str3 = a(this.i, bArr2, i10);
+            for (int i9 = 0; i9 < bArr2.length - 1; i9++) {
+                bArr2[i9] = f16144b;
+                str3 = a(this.i, bArr2, i9);
                 if (str3 != null) {
                     break;
                 }
@@ -202,7 +202,7 @@ public final class a {
                 if (i >= length - 1) {
                     break;
                 }
-                String a9 = a(this.f15364j, bArr, i);
+                String a9 = a(this.f16151j, bArr, i);
                 if (a9 != null) {
                     str = a9;
                     break;
@@ -214,103 +214,103 @@ public final class a {
             return "!".concat(str).split("\\.");
         }
         if (str2 == null && str3 == null) {
-            return f15359d;
+            return f16146d;
         }
         if (str2 != null) {
             strArr2 = str2.split("\\.");
         } else {
-            strArr2 = f15358c;
+            strArr2 = f16145c;
         }
         if (str3 != null) {
             strArr3 = str3.split("\\.");
         } else {
-            strArr3 = f15358c;
+            strArr3 = f16145c;
         }
         return strArr2.length > strArr3.length ? strArr2 : strArr3;
     }
 
     private static String a(byte[] bArr, byte[][] bArr2, int i) {
+        int i4;
+        boolean z6;
         int i6;
-        boolean z3;
         int i9;
-        int i10;
         int length = bArr.length;
-        int i11 = 0;
-        while (i11 < length) {
-            int i12 = (i11 + length) / 2;
-            while (i12 >= 0 && bArr[i12] != 10) {
-                i12--;
+        int i10 = 0;
+        while (i10 < length) {
+            int i11 = (i10 + length) / 2;
+            while (i11 >= 0 && bArr[i11] != 10) {
+                i11--;
             }
-            int i13 = i12 + 1;
-            int i14 = 1;
+            int i12 = i11 + 1;
+            int i13 = 1;
             while (true) {
-                i6 = i13 + i14;
-                if (bArr[i6] == 10) {
+                i4 = i12 + i13;
+                if (bArr[i4] == 10) {
                     break;
                 }
-                i14++;
+                i13++;
             }
-            int i15 = i6 - i13;
-            int i16 = i;
-            boolean z6 = false;
+            int i14 = i4 - i12;
+            int i15 = i;
+            boolean z9 = false;
+            int i16 = 0;
             int i17 = 0;
-            int i18 = 0;
             while (true) {
-                if (z6) {
-                    i9 = 46;
-                    z3 = false;
+                if (z9) {
+                    i6 = 46;
+                    z6 = false;
                 } else {
-                    z3 = z6;
-                    i9 = bArr2[i16][i17] & 255;
+                    z6 = z9;
+                    i6 = bArr2[i15][i16] & 255;
                 }
-                i10 = i9 - (bArr[i13 + i18] & 255);
-                if (i10 != 0) {
+                i9 = i6 - (bArr[i12 + i17] & 255);
+                if (i9 != 0) {
                     break;
                 }
-                i18++;
                 i17++;
-                if (i18 == i15) {
+                i16++;
+                if (i17 == i14) {
                     break;
                 }
-                if (bArr2[i16].length != i17) {
-                    z6 = z3;
+                if (bArr2[i15].length != i16) {
+                    z9 = z6;
                 } else {
-                    if (i16 == bArr2.length - 1) {
+                    if (i15 == bArr2.length - 1) {
                         break;
                     }
-                    i16++;
-                    i17 = -1;
-                    z6 = true;
+                    i15++;
+                    i16 = -1;
+                    z9 = true;
                 }
             }
-            if (i10 >= 0) {
-                if (i10 <= 0) {
-                    int i19 = i15 - i18;
-                    int length2 = bArr2[i16].length - i17;
+            if (i9 >= 0) {
+                if (i9 <= 0) {
+                    int i18 = i14 - i17;
+                    int length2 = bArr2[i15].length - i16;
                     while (true) {
-                        i16++;
-                        if (i16 >= bArr2.length) {
+                        i15++;
+                        if (i15 >= bArr2.length) {
                             break;
                         }
-                        length2 += bArr2[i16].length;
+                        length2 += bArr2[i15].length;
                     }
-                    if (length2 >= i19) {
-                        if (length2 <= i19) {
-                            return new String(bArr, i13, i15, StandardCharsets.UTF_8);
+                    if (length2 >= i18) {
+                        if (length2 <= i18) {
+                            return new String(bArr, i12, i14, StandardCharsets.UTF_8);
                         }
                     }
                 }
-                i11 = i6 + 1;
+                i10 = i4 + 1;
             }
-            length = i12;
+            length = i11;
         }
         return null;
     }
 
     private void a(byte[] bArr, byte[] bArr2) {
         this.i = bArr;
-        this.f15364j = bArr2;
-        this.f15362g.set(true);
-        this.f15363h.countDown();
+        this.f16151j = bArr2;
+        this.f16149g.set(true);
+        this.f16150h.countDown();
     }
 }

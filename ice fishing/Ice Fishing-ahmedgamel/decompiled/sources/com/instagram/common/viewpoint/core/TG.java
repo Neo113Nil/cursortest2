@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class TG<T> extends AsyncTask<Void, Void, T> {
     public static byte[] A04;
     public TJ A00;
-    public final C1836ge A01;
+    public final C1856ge A01;
     public final TK<T> A02;
     public final UO<T> A03;
 
@@ -15,10 +15,10 @@ public class TG<T> extends AsyncTask<Void, Void, T> {
         A02();
     }
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 72);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 72);
         }
         return new String(copyOfRange);
     }
@@ -30,10 +30,10 @@ public class TG<T> extends AsyncTask<Void, Void, T> {
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.TG != com.facebook.ads.internal.database.AdDatabaseHelper$DatabaseQueryAsyncTask<T> */
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.TK != com.facebook.ads.internal.database.AdDatabaseQuery<T> */
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.UO != com.facebook.ads.internal.eventstorage.AdEventStorageCallback<T> */
-    public TG(C1836ge c1836ge, TK<T> tk, UO<T> uo) {
+    public TG(C1856ge c1856ge, TK<T> tk, UO<T> uo) {
         this.A02 = tk;
         this.A03 = uo;
-        this.A01 = c1836ge;
+        this.A01 = c1856ge;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.TG != com.facebook.ads.internal.database.AdDatabaseHelper$DatabaseQueryAsyncTask<T> */
@@ -48,7 +48,7 @@ public class TG<T> extends AsyncTask<Void, Void, T> {
                 this.A00 = this.A02.A00();
                 return t6;
             } catch (Exception e9) {
-                this.A01.A08().ABC(A01(0, 8, 89), AbstractC1252Td.A0w, new C1253Te(e9));
+                this.A01.A08().ABC(A01(0, 8, 89), AbstractC1272Td.A0w, new C1273Te(e9));
                 this.A00 = TJ.A08;
                 return t6;
             }

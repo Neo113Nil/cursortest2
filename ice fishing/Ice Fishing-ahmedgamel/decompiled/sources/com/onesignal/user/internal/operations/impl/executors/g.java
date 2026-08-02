@@ -3,9 +3,9 @@ package com.onesignal.user.internal.operations.impl.executors;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import t4.C5040a;
-import v7.AbstractC5129j;
-import z7.InterfaceC5267d;
+import t4.C5041a;
+import v7.AbstractC5119j;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class g implements H4.d {
@@ -31,8 +31,8 @@ public final class g implements H4.d {
         int label;
         /* synthetic */ Object result;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -64,23 +64,23 @@ public final class g implements H4.d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object loginUser(V5.e eVar, InterfaceC5267d interfaceC5267d) {
+    public final Object loginUser(V5.e eVar, InterfaceC5240d interfaceC5240d) {
         b bVar;
         int i;
         g gVar;
         V5.e eVar2;
         String str;
         try {
-            if (interfaceC5267d instanceof b) {
-                bVar = (b) interfaceC5267d;
-                int i6 = bVar.label;
-                if ((i6 & Integer.MIN_VALUE) != 0) {
-                    bVar.label = i6 - Integer.MIN_VALUE;
+            if (interfaceC5240d instanceof b) {
+                bVar = (b) interfaceC5240d;
+                int i4 = bVar.label;
+                if ((i4 & Integer.MIN_VALUE) != 0) {
+                    bVar.label = i4 - Integer.MIN_VALUE;
                     Object obj = bVar.result;
-                    A7.a aVar = A7.a.f58n;
+                    A7.a aVar = A7.a.f215n;
                     i = bVar.label;
                     if (i != 0) {
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                         Q5.c cVar = this._subscriptionBackend;
                         String appId = eVar.getAppId();
                         String subscriptionId = eVar.getSubscriptionId();
@@ -99,7 +99,7 @@ public final class g implements H4.d {
                         }
                         eVar2 = (V5.e) bVar.L$1;
                         gVar = (g) bVar.L$0;
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                     }
                     String str2 = (String) ((Map) obj).get("onesignal_id");
                     str = str2 != null ? null : str2;
@@ -117,7 +117,7 @@ public final class g implements H4.d {
                     if (kotlin.jvm.internal.h.a(aVar3.getOnesignalId(), eVar2.getOnesignalId())) {
                         com.onesignal.common.modeling.i.setStringProperty$default(aVar3, "onesignalId", str, "HYDRATE", false, 8, null);
                     }
-                    return new H4.a(H4.b.SUCCESS, linkedHashMap, d6.c.k(new V5.h(eVar2.getAppId(), str, eVar2.getExternalId())), null, 8, null);
+                    return new H4.a(H4.b.SUCCESS, linkedHashMap, Z2.d.n(new V5.h(eVar2.getAppId(), str, eVar2.getExternalId())), null, 8, null);
                 }
             }
             if (i != 0) {
@@ -127,18 +127,18 @@ public final class g implements H4.d {
             }
             if (str != null) {
             }
-        } catch (C5040a e9) {
-            int i9 = h.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e9.getStatusCode()).ordinal()];
-            return i9 != 1 ? i9 != 2 ? new H4.a(H4.b.FAIL_NORETRY, null, null, null, 14, null) : new H4.a(H4.b.FAIL_UNAUTHORIZED, null, null, null, 14, null) : new H4.a(H4.b.FAIL_RETRY, null, null, null, 14, null);
+        } catch (C5041a e9) {
+            int i6 = h.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e9.getStatusCode()).ordinal()];
+            return i6 != 1 ? i6 != 2 ? new H4.a(H4.b.FAIL_NORETRY, null, null, null, 14, null) : new H4.a(H4.b.FAIL_UNAUTHORIZED, null, null, null, 14, null) : new H4.a(H4.b.FAIL_RETRY, null, null, null, 14, null);
         }
-        bVar = new b(interfaceC5267d);
+        bVar = new b(interfaceC5240d);
         Object obj2 = bVar.result;
-        A7.a aVar4 = A7.a.f58n;
+        A7.a aVar4 = A7.a.f215n;
         i = bVar.label;
     }
 
     @Override // H4.d
-    public Object execute(List<? extends H4.g> list, InterfaceC5267d interfaceC5267d) {
+    public Object execute(List<? extends H4.g> list, InterfaceC5240d interfaceC5240d) {
         com.onesignal.debug.internal.logging.b.debug$default("LoginUserFromSubscriptionOperationExecutor(operation: " + list + ')', null, 2, null);
         if (this._identityVerificationService.getNewCodePathsRun() && c.shouldFailLoginUserFromSubscription(this._identityVerificationService.getIvBehaviorActive())) {
             com.onesignal.debug.internal.logging.b.warn$default("LoginUserFromSubscriptionOperation is not supported when identity verification is enabled. Dropping.", null, 2, null);
@@ -147,15 +147,15 @@ public final class g implements H4.d {
         if (list.size() > 1) {
             throw new Exception("Only supports one operation! Attempted operations:\n" + list);
         }
-        H4.g gVar = (H4.g) AbstractC5129j.A(list);
+        H4.g gVar = (H4.g) AbstractC5119j.y(list);
         if (gVar instanceof V5.e) {
-            return loginUser((V5.e) gVar, interfaceC5267d);
+            return loginUser((V5.e) gVar, interfaceC5240d);
         }
         throw new Exception("Unrecognized operation: " + gVar);
     }
 
     @Override // H4.d
     public List<String> getOperations() {
-        return d6.c.k(LOGIN_USER_FROM_SUBSCRIPTION_USER);
+        return Z2.d.n(LOGIN_USER_FROM_SUBSCRIPTION_USER);
     }
 }

@@ -6,7 +6,7 @@ import android.util.DisplayMetrics;
 public abstract class A7 {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final char[] f23634a = "0123456789abcdef".toCharArray();
+    public static final char[] f24414a = "0123456789abcdef".toCharArray();
 
     public static byte[] a(String str) {
         int length = str.length();
@@ -20,7 +20,7 @@ public abstract class A7 {
         return bArr;
     }
 
-    public static long b(double d2, DisplayMetrics displayMetrics) {
-        return Math.round(d2 / displayMetrics.density);
+    public static long b(double d9, DisplayMetrics displayMetrics) {
+        return Math.round(d9 / displayMetrics.density);
     }
 }

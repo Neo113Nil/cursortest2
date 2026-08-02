@@ -31,71 +31,71 @@ public class CommonWebView extends LinearLayout {
     public static int DEFAULT_JUMP_TIMEOUT = 10000;
 
     /* renamed from: e, reason: collision with root package name */
-    private static final String f17976e = "CommonWebView";
+    private static final String f18763e = "CommonWebView";
 
     /* renamed from: a, reason: collision with root package name */
-    protected ToolBar f17977a;
+    protected ToolBar f18764a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected ToolBar f17978b;
+    protected ToolBar f18765b;
 
     /* renamed from: c, reason: collision with root package name */
-    protected ProgressBar f17979c;
+    protected ProgressBar f18766c;
 
     /* renamed from: d, reason: collision with root package name */
-    protected BaseWebView f17980d;
+    protected BaseWebView f18767d;
 
     /* renamed from: f, reason: collision with root package name */
-    private ProgressBar f17981f;
+    private ProgressBar f18768f;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f17982g;
+    private int f18769g;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f17983h;
+    private int f18770h;
     private RelativeLayout i;
 
     /* renamed from: j, reason: collision with root package name */
-    private View.OnClickListener f17984j;
+    private View.OnClickListener f18771j;
 
     /* renamed from: k, reason: collision with root package name */
-    private com.anythink.expressad.atsignalcommon.commonwebview.b f17985k;
+    private com.anythink.expressad.atsignalcommon.commonwebview.b f18772k;
 
     /* renamed from: l, reason: collision with root package name */
-    private com.anythink.expressad.atsignalcommon.commonwebview.a f17986l;
+    private com.anythink.expressad.atsignalcommon.commonwebview.a f18773l;
 
     /* renamed from: m, reason: collision with root package name */
-    private View.OnClickListener f17987m;
+    private View.OnClickListener f18774m;
 
     /* renamed from: n, reason: collision with root package name */
-    private View.OnClickListener f17988n;
+    private View.OnClickListener f18775n;
 
     /* renamed from: o, reason: collision with root package name */
-    private View.OnClickListener f17989o;
+    private View.OnClickListener f18776o;
 
     /* renamed from: p, reason: collision with root package name */
-    private View.OnClickListener f17990p;
+    private View.OnClickListener f18777p;
 
     /* renamed from: q, reason: collision with root package name */
-    private Handler f17991q;
+    private Handler f18778q;
 
     /* renamed from: r, reason: collision with root package name */
-    private int f17992r;
+    private int f18779r;
 
     /* renamed from: s, reason: collision with root package name */
-    private WebViewClient f17993s;
+    private WebViewClient f18780s;
 
     /* renamed from: t, reason: collision with root package name */
-    private String f17994t;
+    private String f18781t;
 
     /* renamed from: u, reason: collision with root package name */
-    private b f17995u;
+    private b f18782u;
 
     /* renamed from: v, reason: collision with root package name */
-    private boolean f17996v;
+    private boolean f18783v;
 
     /* renamed from: w, reason: collision with root package name */
-    private final Runnable f17997w;
+    private final Runnable f18784w;
 
     /* renamed from: com.anythink.expressad.atsignalcommon.commonwebview.CommonWebView$4, reason: invalid class name */
     public class AnonymousClass4 implements View.OnClickListener {
@@ -104,53 +104,53 @@ public class CommonWebView extends LinearLayout {
 
         @Override // android.view.View.OnClickListener
         public final void onClick(View view) {
-            BaseWebView baseWebView = CommonWebView.this.f17980d;
+            BaseWebView baseWebView = CommonWebView.this.f18767d;
             if (baseWebView != null) {
                 baseWebView.stopLoading();
                 String str = (String) view.getTag();
                 if (TextUtils.equals(str, ToolBar.BACKWARD)) {
-                    CommonWebView.this.f17978b.getItem(ToolBar.FORWARD).setEnabled(true);
-                    if (CommonWebView.this.f17980d.canGoBack()) {
-                        CommonWebView.this.f17980d.goBack();
+                    CommonWebView.this.f18765b.getItem(ToolBar.FORWARD).setEnabled(true);
+                    if (CommonWebView.this.f18767d.canGoBack()) {
+                        CommonWebView.this.f18767d.goBack();
                     }
-                    CommonWebView.this.f17978b.getItem(ToolBar.BACKWARD).setEnabled(CommonWebView.this.f17980d.canGoBack());
-                    if (CommonWebView.this.f17987m != null) {
-                        CommonWebView.this.f17987m.onClick(view);
+                    CommonWebView.this.f18765b.getItem(ToolBar.BACKWARD).setEnabled(CommonWebView.this.f18767d.canGoBack());
+                    if (CommonWebView.this.f18774m != null) {
+                        CommonWebView.this.f18774m.onClick(view);
                         return;
                     }
                     return;
                 }
                 if (TextUtils.equals(str, ToolBar.FORWARD)) {
-                    CommonWebView.this.f17978b.getItem(ToolBar.BACKWARD).setEnabled(true);
-                    if (CommonWebView.this.f17980d.canGoForward()) {
-                        CommonWebView.this.f17980d.goForward();
+                    CommonWebView.this.f18765b.getItem(ToolBar.BACKWARD).setEnabled(true);
+                    if (CommonWebView.this.f18767d.canGoForward()) {
+                        CommonWebView.this.f18767d.goForward();
                     }
-                    CommonWebView.this.f17978b.getItem(ToolBar.FORWARD).setEnabled(CommonWebView.this.f17980d.canGoForward());
-                    if (CommonWebView.this.f17988n != null) {
-                        CommonWebView.this.f17988n.onClick(view);
+                    CommonWebView.this.f18765b.getItem(ToolBar.FORWARD).setEnabled(CommonWebView.this.f18767d.canGoForward());
+                    if (CommonWebView.this.f18775n != null) {
+                        CommonWebView.this.f18775n.onClick(view);
                         return;
                     }
                     return;
                 }
                 if (TextUtils.equals(str, ToolBar.REFRESH)) {
-                    CommonWebView.this.f17978b.getItem(ToolBar.BACKWARD).setEnabled(CommonWebView.this.f17980d.canGoBack());
-                    CommonWebView.this.f17978b.getItem(ToolBar.FORWARD).setEnabled(CommonWebView.this.f17980d.canGoForward());
-                    CommonWebView.this.f17980d.reload();
-                    if (CommonWebView.this.f17989o != null) {
-                        CommonWebView.this.f17989o.onClick(view);
+                    CommonWebView.this.f18765b.getItem(ToolBar.BACKWARD).setEnabled(CommonWebView.this.f18767d.canGoBack());
+                    CommonWebView.this.f18765b.getItem(ToolBar.FORWARD).setEnabled(CommonWebView.this.f18767d.canGoForward());
+                    CommonWebView.this.f18767d.reload();
+                    if (CommonWebView.this.f18776o != null) {
+                        CommonWebView.this.f18776o.onClick(view);
                         return;
                     }
                     return;
                 }
                 if (TextUtils.equals(str, ToolBar.EXITS)) {
-                    if (CommonWebView.this.f17984j != null) {
-                        CommonWebView.this.f17984j.onClick(view);
+                    if (CommonWebView.this.f18771j != null) {
+                        CommonWebView.this.f18771j.onClick(view);
                     }
                 } else if (TextUtils.equals(str, ToolBar.OPEN_BY_BROWSER)) {
-                    if (CommonWebView.this.f17990p != null) {
-                        CommonWebView.this.f17990p.onClick(view);
+                    if (CommonWebView.this.f18777p != null) {
+                        CommonWebView.this.f18777p.onClick(view);
                     }
-                    e.a(CommonWebView.this.getContext(), CommonWebView.this.f17980d.getUrl());
+                    e.a(CommonWebView.this.getContext(), CommonWebView.this.f18767d.getUrl());
                 }
             }
         }
@@ -163,8 +163,8 @@ public class CommonWebView extends LinearLayout {
 
         @Override // android.webkit.WebViewClient
         public final boolean shouldOverrideUrlLoading(WebView webView, String str) {
-            CommonWebView.this.f17978b.getItem(ToolBar.BACKWARD).setEnabled(true);
-            CommonWebView.this.f17978b.getItem(ToolBar.FORWARD).setEnabled(false);
+            CommonWebView.this.f18765b.getItem(ToolBar.BACKWARD).setEnabled(true);
+            CommonWebView.this.f18765b.getItem(ToolBar.FORWARD).setEnabled(false);
             return false;
         }
     }
@@ -179,14 +179,14 @@ public class CommonWebView extends LinearLayout {
 
     public CommonWebView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f17997w = new Runnable() { // from class: com.anythink.expressad.atsignalcommon.commonwebview.CommonWebView.1
+        this.f18784w = new Runnable() { // from class: com.anythink.expressad.atsignalcommon.commonwebview.CommonWebView.1
             @Override // java.lang.Runnable
             public final void run() {
-                int unused = CommonWebView.this.f17992r;
-                if (CommonWebView.this.f17995u != null) {
-                    CommonWebView.this.f17996v = false;
-                    b bVar = CommonWebView.this.f17995u;
-                    String unused2 = CommonWebView.this.f17994t;
+                int unused = CommonWebView.this.f18779r;
+                if (CommonWebView.this.f18782u != null) {
+                    CommonWebView.this.f18783v = false;
+                    b bVar = CommonWebView.this.f18782u;
+                    String unused2 = CommonWebView.this.f18781t;
                     bVar.a();
                 }
             }
@@ -195,42 +195,42 @@ public class CommonWebView extends LinearLayout {
     }
 
     public static /* synthetic */ void k(CommonWebView commonWebView) {
-        commonWebView.f17991q.removeCallbacks(commonWebView.f17997w);
+        commonWebView.f18778q.removeCallbacks(commonWebView.f18784w);
     }
 
     public void addWebChromeClient(WebChromeClient webChromeClient) {
-        this.f17986l.a(webChromeClient);
+        this.f18773l.a(webChromeClient);
     }
 
     public void addWebViewClient(WebViewClient webViewClient) {
-        this.f17985k.a(webViewClient);
+        this.f18772k.a(webViewClient);
     }
 
     public View findToolBarButton(String str) {
         ToolBar toolBar;
-        ToolBar toolBar2 = this.f17977a;
+        ToolBar toolBar2 = this.f18764a;
         View item = toolBar2 != null ? toolBar2.getItem(str) : null;
-        return (item != null || (toolBar = this.f17978b) == null) ? item : toolBar.getItem(str);
+        return (item != null || (toolBar = this.f18765b) == null) ? item : toolBar.getItem(str);
     }
 
     public String getUrl() {
-        BaseWebView baseWebView = this.f17980d;
+        BaseWebView baseWebView = this.f18767d;
         return baseWebView == null ? "" : baseWebView.getUrl();
     }
 
     public WebView getWebView() {
-        return this.f17980d;
+        return this.f18767d;
     }
 
     public void hideCustomizedToolBar() {
-        ToolBar toolBar = this.f17977a;
+        ToolBar toolBar = this.f18764a;
         if (toolBar != null) {
             toolBar.setVisibility(8);
         }
     }
 
     public void hideDefaultToolBar() {
-        ToolBar toolBar = this.f17978b;
+        ToolBar toolBar = this.f18765b;
         if (toolBar != null) {
             toolBar.setVisibility(8);
         }
@@ -244,7 +244,7 @@ public class CommonWebView extends LinearLayout {
     }
 
     public void hideToolBarTitle() {
-        this.f17977a.hideTitle();
+        this.f18764a.hideTitle();
     }
 
     public void init() {
@@ -254,127 +254,127 @@ public class CommonWebView extends LinearLayout {
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, -1);
         layoutParams.weight = 1.0f;
         addView(this.i, layoutParams);
-        this.f17982g = v.b(getContext(), 40.0f);
-        this.f17983h = v.b(getContext(), 40.0f);
-        this.f17985k = new com.anythink.expressad.atsignalcommon.commonwebview.b();
-        this.f17986l = new com.anythink.expressad.atsignalcommon.commonwebview.a();
+        this.f18769g = v.b(getContext(), 40.0f);
+        this.f18770h = v.b(getContext(), 40.0f);
+        this.f18772k = new com.anythink.expressad.atsignalcommon.commonwebview.b();
+        this.f18773l = new com.anythink.expressad.atsignalcommon.commonwebview.a();
         initWebview();
     }
 
     public void initWebview() {
         try {
-            if (this.f17980d == null) {
-                this.f17980d = new BaseWebView(getContext());
+            if (this.f18767d == null) {
+                this.f18767d = new BaseWebView(getContext());
             }
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -1);
             layoutParams.addRule(10);
-            this.f17980d.setLayoutParams(layoutParams);
-            BaseWebView baseWebView = this.f17980d;
+            this.f18767d.setLayoutParams(layoutParams);
+            BaseWebView baseWebView = this.f18767d;
             com.anythink.core.express.web.b bVar = baseWebView.mWebViewClient;
-            baseWebView.setWebViewClient(this.f17985k);
-            this.f17980d.setWebChromeClient(this.f17986l);
+            baseWebView.setWebViewClient(this.f18772k);
+            this.f18767d.setWebChromeClient(this.f18773l);
             addWebViewClient(bVar);
         } catch (Throwable unused) {
         }
-        this.i.addView(this.f17980d);
+        this.i.addView(this.f18767d);
     }
 
     public void loadUrl(String str) {
-        this.f17980d.loadUrl(str);
-        if (this.f17993s != null) {
+        this.f18767d.loadUrl(str);
+        if (this.f18780s != null) {
             c();
         }
     }
 
     public void onBackwardClicked(View.OnClickListener onClickListener) {
-        this.f17987m = onClickListener;
+        this.f18774m = onClickListener;
     }
 
     public void onForwardClicked(View.OnClickListener onClickListener) {
-        this.f17988n = onClickListener;
+        this.f18775n = onClickListener;
     }
 
     public void onOpenByBrowserClicked(View.OnClickListener onClickListener) {
-        this.f17990p = onClickListener;
+        this.f18777p = onClickListener;
     }
 
     public void onRefreshClicked(View.OnClickListener onClickListener) {
-        this.f17989o = onClickListener;
+        this.f18776o = onClickListener;
     }
 
     public void removeWebChromeClient(WebChromeClient webChromeClient) {
-        this.f17986l.b(webChromeClient);
+        this.f18773l.b(webChromeClient);
     }
 
     public void removeWebViewClient(WebViewClient webViewClient) {
-        this.f17985k.b(webViewClient);
+        this.f18772k.b(webViewClient);
     }
 
     public void setCustomizedToolBarFloating() {
-        ((ViewGroup) this.f17977a.getParent()).removeView(this.f17977a);
-        this.i.addView(this.f17977a);
+        ((ViewGroup) this.f18764a.getParent()).removeView(this.f18764a);
+        this.i.addView(this.f18764a);
     }
 
     public void setCustomizedToolBarUnfloating() {
-        ((ViewGroup) this.f17977a.getParent()).removeView(this.f17977a);
-        addView(this.f17977a, 0);
+        ((ViewGroup) this.f18764a.getParent()).removeView(this.f18764a);
+        addView(this.f18764a, 0);
     }
 
     public void setExitsClickListener(View.OnClickListener onClickListener) {
-        this.f17984j = onClickListener;
+        this.f18771j = onClickListener;
     }
 
     public void setPageLoadTimtout(int i) {
-        this.f17992r = i;
-        if (this.f17991q == null) {
-            this.f17991q = new Handler(Looper.getMainLooper());
+        this.f18779r = i;
+        if (this.f18778q == null) {
+            this.f18778q = new Handler(Looper.getMainLooper());
         }
-        if (this.f17993s == null) {
+        if (this.f18780s == null) {
             WebViewClient webViewClient = new WebViewClient() { // from class: com.anythink.expressad.atsignalcommon.commonwebview.CommonWebView.7
                 @Override // android.webkit.WebViewClient
                 public final void onPageFinished(WebView webView, String str) {
-                    CommonWebView.this.f17996v = false;
+                    CommonWebView.this.f18783v = false;
                     CommonWebView.k(CommonWebView.this);
                 }
 
                 @Override // android.webkit.WebViewClient
                 public final void onPageStarted(WebView webView, String str, Bitmap bitmap) {
-                    CommonWebView.this.f17994t = str;
-                    if (CommonWebView.this.f17996v) {
+                    CommonWebView.this.f18781t = str;
+                    if (CommonWebView.this.f18783v) {
                         return;
                     }
-                    CommonWebView.this.f17996v = true;
+                    CommonWebView.this.f18783v = true;
                     CommonWebView.this.c();
                 }
 
                 @Override // android.webkit.WebViewClient
-                public final void onReceivedError(WebView webView, int i6, String str, String str2) {
-                    CommonWebView.this.f17996v = false;
+                public final void onReceivedError(WebView webView, int i4, String str, String str2) {
+                    CommonWebView.this.f18783v = false;
                     CommonWebView.k(CommonWebView.this);
                 }
 
                 @Override // android.webkit.WebViewClient
                 public final boolean shouldOverrideUrlLoading(WebView webView, String str) {
-                    CommonWebView.this.f17994t = str;
-                    if (CommonWebView.this.f17996v) {
+                    CommonWebView.this.f18781t = str;
+                    if (CommonWebView.this.f18783v) {
                         CommonWebView.k(CommonWebView.this);
                     }
-                    CommonWebView.this.f17996v = true;
+                    CommonWebView.this.f18783v = true;
                     CommonWebView.this.c();
                     return false;
                 }
             };
-            this.f17993s = webViewClient;
+            this.f18780s = webViewClient;
             addWebViewClient(webViewClient);
         }
     }
 
     public void setPageLoadTimtoutListener(b bVar) {
-        this.f17995u = bVar;
+        this.f18782u = bVar;
     }
 
     public void setToolBarTitle(String str, int i) {
-        this.f17977a.setTitle(str, i);
+        this.f18764a.setTitle(str, i);
     }
 
     public void setWebChromeClient(WebChromeClient webChromeClient) {
@@ -386,14 +386,14 @@ public class CommonWebView extends LinearLayout {
     }
 
     public void showCustomizedToolBar() {
-        ToolBar toolBar = this.f17977a;
+        ToolBar toolBar = this.f18764a;
         if (toolBar != null) {
             toolBar.setVisibility(0);
         }
     }
 
     public void showDefaultToolBar() {
-        ToolBar toolBar = this.f17978b;
+        ToolBar toolBar = this.f18765b;
         if (toolBar != null) {
             toolBar.setVisibility(0);
         }
@@ -407,18 +407,18 @@ public class CommonWebView extends LinearLayout {
     }
 
     public void showToolBarTitle() {
-        this.f17977a.showTitle();
+        this.f18764a.showTitle();
     }
 
-    public void useCustomizedToolBar(ArrayList<ToolBar.b> arrayList, boolean z3) {
-        a(arrayList, z3);
+    public void useCustomizedToolBar(ArrayList<ToolBar.b> arrayList, boolean z6) {
+        a(arrayList, z6);
     }
 
     public void useDeeplink() {
         addWebViewClient(new WebViewClient() { // from class: com.anythink.expressad.atsignalcommon.commonwebview.CommonWebView.6
             @Override // android.webkit.WebViewClient
             public final boolean shouldOverrideUrlLoading(WebView webView, String str) {
-                if (u.a.a(str) && e.a(webView.getContext(), str, (w) null).f13906m) {
+                if (u.a.a(str) && e.a(webView.getContext(), str, (w) null).f14692m) {
                     return true;
                 }
                 return CommonWebView.this.a(webView, str);
@@ -427,58 +427,58 @@ public class CommonWebView extends LinearLayout {
     }
 
     public void useDefaultToolBar() {
-        if (this.f17978b == null) {
-            this.f17978b = new ToolBar(getContext());
-            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, this.f17983h);
+        if (this.f18765b == null) {
+            this.f18765b = new ToolBar(getContext());
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, this.f18770h);
             layoutParams.bottomMargin = 0;
-            this.f17978b.setLayoutParams(layoutParams);
-            this.f17978b.setBackgroundColor(-1);
-            this.f17978b.setOnItemClickListener(new AnonymousClass4());
+            this.f18765b.setLayoutParams(layoutParams);
+            this.f18765b.setBackgroundColor(-1);
+            this.f18765b.setOnItemClickListener(new AnonymousClass4());
             addWebViewClient(new AnonymousClass5());
-            addView(this.f17978b);
+            addView(this.f18765b);
         }
     }
 
     public void useProgressBar() {
         ProgressBar progressBar = new ProgressBar(getContext());
-        this.f17979c = progressBar;
+        this.f18766c = progressBar;
         progressBar.setLayoutParams(new LinearLayout.LayoutParams(-1, 4));
         addWebViewClient(new WebViewClient() { // from class: com.anythink.expressad.atsignalcommon.commonwebview.CommonWebView.2
             @Override // android.webkit.WebViewClient
             public final void onPageStarted(WebView webView, String str, Bitmap bitmap) {
-                CommonWebView.this.f17979c.setVisible(true);
-                CommonWebView.this.f17979c.setProgressState(5);
+                CommonWebView.this.f18766c.setVisible(true);
+                CommonWebView.this.f18766c.setProgressState(5);
             }
         });
         addWebChromeClient(new WebChromeClient() { // from class: com.anythink.expressad.atsignalcommon.commonwebview.CommonWebView.3
             @Override // android.webkit.WebChromeClient
             public final void onProgressChanged(WebView webView, int i) {
                 if (i == 100) {
-                    CommonWebView.this.f17979c.setProgressState(7);
+                    CommonWebView.this.f18766c.setProgressState(7);
                     new Handler().postDelayed(new Runnable() { // from class: com.anythink.expressad.atsignalcommon.commonwebview.CommonWebView.3.1
                         @Override // java.lang.Runnable
                         public final void run() {
-                            CommonWebView.this.f17979c.setVisible(false);
+                            CommonWebView.this.f18766c.setVisible(false);
                         }
                     }, 200L);
                 }
             }
         });
-        addView(this.f17979c);
-        this.f17979c.initResource(true);
+        addView(this.f18766c);
+        this.f18766c.initResource(true);
     }
 
     private void b() {
-        this.f17991q.removeCallbacks(this.f17997w);
+        this.f18778q.removeCallbacks(this.f18784w);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void c() {
-        this.f17991q.postDelayed(this.f17997w, this.f17992r);
+        this.f18778q.postDelayed(this.f18784w, this.f18779r);
     }
 
     public void setToolBarTitle(String str) {
-        this.f17977a.setTitle(str);
+        this.f18764a.setTitle(str);
     }
 
     public void useCustomizedToolBar(ArrayList<ToolBar.b> arrayList) {
@@ -487,14 +487,14 @@ public class CommonWebView extends LinearLayout {
 
     public CommonWebView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f17997w = new Runnable() { // from class: com.anythink.expressad.atsignalcommon.commonwebview.CommonWebView.1
+        this.f18784w = new Runnable() { // from class: com.anythink.expressad.atsignalcommon.commonwebview.CommonWebView.1
             @Override // java.lang.Runnable
             public final void run() {
-                int unused = CommonWebView.this.f17992r;
-                if (CommonWebView.this.f17995u != null) {
-                    CommonWebView.this.f17996v = false;
-                    b bVar = CommonWebView.this.f17995u;
-                    String unused2 = CommonWebView.this.f17994t;
+                int unused = CommonWebView.this.f18779r;
+                if (CommonWebView.this.f18782u != null) {
+                    CommonWebView.this.f18783v = false;
+                    b bVar = CommonWebView.this.f18782u;
+                    String unused2 = CommonWebView.this.f18781t;
                     bVar.a();
                 }
             }
@@ -503,29 +503,29 @@ public class CommonWebView extends LinearLayout {
     }
 
     private void a() {
-        if (this.f17978b != null) {
+        if (this.f18765b != null) {
             return;
         }
-        this.f17978b = new ToolBar(getContext());
-        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, this.f17983h);
+        this.f18765b = new ToolBar(getContext());
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, this.f18770h);
         layoutParams.bottomMargin = 0;
-        this.f17978b.setLayoutParams(layoutParams);
-        this.f17978b.setBackgroundColor(-1);
-        this.f17978b.setOnItemClickListener(new AnonymousClass4());
+        this.f18765b.setLayoutParams(layoutParams);
+        this.f18765b.setBackgroundColor(-1);
+        this.f18765b.setOnItemClickListener(new AnonymousClass4());
         addWebViewClient(new AnonymousClass5());
-        addView(this.f17978b);
+        addView(this.f18765b);
     }
 
     public CommonWebView(Context context) {
         super(context);
-        this.f17997w = new Runnable() { // from class: com.anythink.expressad.atsignalcommon.commonwebview.CommonWebView.1
+        this.f18784w = new Runnable() { // from class: com.anythink.expressad.atsignalcommon.commonwebview.CommonWebView.1
             @Override // java.lang.Runnable
             public final void run() {
-                int unused = CommonWebView.this.f17992r;
-                if (CommonWebView.this.f17995u != null) {
-                    CommonWebView.this.f17996v = false;
-                    b bVar = CommonWebView.this.f17995u;
-                    String unused2 = CommonWebView.this.f17994t;
+                int unused = CommonWebView.this.f18779r;
+                if (CommonWebView.this.f18782u != null) {
+                    CommonWebView.this.f18783v = false;
+                    b bVar = CommonWebView.this.f18782u;
+                    String unused2 = CommonWebView.this.f18781t;
                     bVar.a();
                 }
             }
@@ -533,25 +533,25 @@ public class CommonWebView extends LinearLayout {
         init();
     }
 
-    private void a(ArrayList<ToolBar.b> arrayList, boolean z3) {
-        if (this.f17977a != null) {
+    private void a(ArrayList<ToolBar.b> arrayList, boolean z6) {
+        if (this.f18764a != null) {
             return;
         }
         ToolBar.a aVar = new ToolBar.a();
-        aVar.f18009b = 40;
-        ToolBar.a.f18006c = 80;
+        aVar.f18796b = 40;
+        ToolBar.a.f18793c = 80;
         ToolBar toolBar = new ToolBar(getContext(), aVar, arrayList);
-        this.f17977a = toolBar;
-        toolBar.setBackgroundColor(Color.argb(153, p.f8473b, p.f8473b, p.f8473b));
-        if (z3) {
-            RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, this.f17982g);
+        this.f18764a = toolBar;
+        toolBar.setBackgroundColor(Color.argb(153, p.f9259b, p.f9259b, p.f9259b));
+        if (z6) {
+            RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, this.f18769g);
             layoutParams.addRule(10);
-            this.f17977a.setLayoutParams(layoutParams);
-            this.i.addView(this.f17977a);
+            this.f18764a.setLayoutParams(layoutParams);
+            this.i.addView(this.f18764a);
             return;
         }
-        this.f17977a.setLayoutParams(new LinearLayout.LayoutParams(-1, this.f17982g));
-        addView(this.f17977a, 0);
+        this.f18764a.setLayoutParams(new LinearLayout.LayoutParams(-1, this.f18769g));
+        addView(this.f18764a, 0);
     }
 
     /* JADX INFO: Access modifiers changed from: private */

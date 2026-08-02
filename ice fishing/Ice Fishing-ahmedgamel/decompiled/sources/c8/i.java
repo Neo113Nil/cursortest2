@@ -4,14 +4,14 @@ package c8;
 public final class i extends j {
 
     /* renamed from: b, reason: collision with root package name */
-    public static final i f5651b = new i(7);
+    public static final i f5827b = new i(7);
 
     /* renamed from: c, reason: collision with root package name */
-    public static final i f5652c = new i(7);
+    public static final i f5828c = new i(7);
 
     /* renamed from: d, reason: collision with root package name */
-    public static final i f5653d = new i(7);
+    public static final i f5829d = new i(7);
 
     /* renamed from: e, reason: collision with root package name */
-    public static final i f5654e = new i(7);
+    public static final i f5830e = new i(7);
 }

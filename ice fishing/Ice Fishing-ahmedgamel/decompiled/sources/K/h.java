@@ -1,6 +1,6 @@
 package K;
 
-import S7.C0389g;
+import S7.C0393g;
 import android.os.OutcomeReceiver;
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -8,22 +8,22 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public final class h extends AtomicBoolean implements OutcomeReceiver {
 
     /* renamed from: n, reason: collision with root package name */
-    public final C0389g f1480n;
+    public final C0393g f1589n;
 
-    public h(C0389g c0389g) {
+    public h(C0393g c0393g) {
         super(false);
-        this.f1480n = c0389g;
+        this.f1589n = c0393g;
     }
 
     public final void onError(Throwable th) {
         if (compareAndSet(false, true)) {
-            this.f1480n.resumeWith(com.bumptech.glide.d.f(th));
+            this.f1589n.resumeWith(Q3.b.b(th));
         }
     }
 
     public final void onResult(Object obj) {
         if (compareAndSet(false, true)) {
-            this.f1480n.resumeWith(obj);
+            this.f1589n.resumeWith(obj);
         }
     }
 

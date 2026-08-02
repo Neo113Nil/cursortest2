@@ -1,35 +1,34 @@
 package androidx.work;
 
+import A3.p;
 import A8.b;
-import D.RunnableC0282a;
 import J0.f;
+import J0.g;
 import J0.i;
-import J0.j;
-import J0.m;
-import J0.r;
-import S7.AbstractC0402u;
-import S7.AbstractC0406y;
-import S7.C0389g;
+import J0.q;
+import S7.AbstractC0406u;
+import S7.AbstractC0410y;
+import S7.C0393g;
 import S7.F;
-import S7.InterfaceC0396n;
+import S7.InterfaceC0400n;
 import S7.b0;
 import S7.h0;
 import T0.l;
 import U0.a;
 import U0.k;
-import Z2.e;
 import android.content.Context;
+import b3.e;
 import com.google.android.gms.internal.ads.LD;
 import java.util.concurrent.ExecutionException;
 import kotlin.jvm.internal.h;
 import u7.v;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes.dex */
-public abstract class CoroutineWorker extends r {
-    private final AbstractC0402u coroutineContext;
+public abstract class CoroutineWorker extends q {
+    private final AbstractC0406u coroutineContext;
     private final k future;
-    private final InterfaceC0396n job;
+    private final InterfaceC0400n job;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public CoroutineWorker(Context appContext, WorkerParameters params) {
@@ -39,12 +38,12 @@ public abstract class CoroutineWorker extends r {
         this.job = new b0();
         k kVar = new k();
         this.future = kVar;
-        kVar.a(new RunnableC0282a(5, this), (l) ((e) getTaskExecutor()).f4170u);
-        this.coroutineContext = F.f2915a;
+        kVar.a(new p(3, this), (l) ((e) getTaskExecutor()).f5557u);
+        this.coroutineContext = F.f2998a;
     }
 
     public static void a(CoroutineWorker coroutineWorker) {
-        if (coroutineWorker.future.f3159n instanceof a) {
+        if (coroutineWorker.future.f3276n instanceof a) {
             ((h0) coroutineWorker.job).a(null);
         }
     }
@@ -52,47 +51,47 @@ public abstract class CoroutineWorker extends r {
     public static /* synthetic */ void getCoroutineContext$annotations() {
     }
 
-    public static /* synthetic */ Object getForegroundInfo$suspendImpl(CoroutineWorker coroutineWorker, InterfaceC5267d interfaceC5267d) {
+    public static /* synthetic */ Object getForegroundInfo$suspendImpl(CoroutineWorker coroutineWorker, InterfaceC5240d interfaceC5240d) {
         throw new IllegalStateException("Not implemented");
     }
 
-    public abstract Object doWork(InterfaceC5267d interfaceC5267d);
+    public abstract Object doWork(InterfaceC5240d interfaceC5240d);
 
-    public AbstractC0402u getCoroutineContext() {
+    public AbstractC0406u getCoroutineContext() {
         return this.coroutineContext;
     }
 
-    public Object getForegroundInfo(InterfaceC5267d interfaceC5267d) {
-        return getForegroundInfo$suspendImpl(this, interfaceC5267d);
+    public Object getForegroundInfo(InterfaceC5240d interfaceC5240d) {
+        return getForegroundInfo$suspendImpl(this, interfaceC5240d);
     }
 
-    @Override // J0.r
-    public final N3.a getForegroundInfoAsync() {
+    @Override // J0.q
+    public final P3.a getForegroundInfoAsync() {
         b0 b0Var = new b0();
-        AbstractC0402u coroutineContext = getCoroutineContext();
+        AbstractC0406u coroutineContext = getCoroutineContext();
         coroutineContext.getClass();
-        X7.e b9 = AbstractC0406y.b(b.r(coroutineContext, b0Var));
-        m mVar = new m(b0Var);
-        AbstractC0406y.o(b9, null, new J0.e(mVar, this, null), 3);
-        return mVar;
+        X7.e b9 = AbstractC0410y.b(b.t(coroutineContext, b0Var));
+        J0.l lVar = new J0.l(b0Var);
+        AbstractC0410y.o(b9, null, new J0.e(lVar, this, null), 3);
+        return lVar;
     }
 
     public final k getFuture$work_runtime_ktx_release() {
         return this.future;
     }
 
-    public final InterfaceC0396n getJob$work_runtime_ktx_release() {
+    public final InterfaceC0400n getJob$work_runtime_ktx_release() {
         return this.job;
     }
 
-    @Override // J0.r
+    @Override // J0.q
     public final void onStopped() {
         super.onStopped();
         this.future.cancel(false);
     }
 
-    public final Object setForeground(j jVar, InterfaceC5267d interfaceC5267d) {
-        N3.a foregroundAsync = setForegroundAsync(jVar);
+    public final Object setForeground(i iVar, InterfaceC5240d interfaceC5240d) {
+        P3.a foregroundAsync = setForegroundAsync(iVar);
         h.d(foregroundAsync, "setForegroundAsync(foregroundInfo)");
         if (foregroundAsync.isDone()) {
             try {
@@ -105,20 +104,20 @@ public abstract class CoroutineWorker extends r {
                 throw cause;
             }
         } else {
-            C0389g c0389g = new C0389g(1, b.l(interfaceC5267d));
-            c0389g.r();
-            foregroundAsync.a(new LD(c0389g, foregroundAsync, 6, false), i.f1392n);
-            c0389g.t(new J0.l(1, foregroundAsync));
-            Object q8 = c0389g.q();
-            if (q8 == A7.a.f58n) {
+            C0393g c0393g = new C0393g(1, b.n(interfaceC5240d));
+            c0393g.r();
+            foregroundAsync.a(new LD(c0393g, foregroundAsync, 6, false), J0.h.f1420n);
+            c0393g.t(new J0.k(1, foregroundAsync));
+            Object q8 = c0393g.q();
+            if (q8 == A7.a.f215n) {
                 return q8;
             }
         }
-        return v.f41353a;
+        return v.f41073a;
     }
 
-    public final Object setProgress(J0.h hVar, InterfaceC5267d interfaceC5267d) {
-        N3.a progressAsync = setProgressAsync(hVar);
+    public final Object setProgress(g gVar, InterfaceC5240d interfaceC5240d) {
+        P3.a progressAsync = setProgressAsync(gVar);
         h.d(progressAsync, "setProgressAsync(data)");
         if (progressAsync.isDone()) {
             try {
@@ -131,24 +130,24 @@ public abstract class CoroutineWorker extends r {
                 throw cause;
             }
         } else {
-            C0389g c0389g = new C0389g(1, b.l(interfaceC5267d));
-            c0389g.r();
-            progressAsync.a(new LD(c0389g, progressAsync, 6, false), i.f1392n);
-            c0389g.t(new J0.l(1, progressAsync));
-            Object q8 = c0389g.q();
-            if (q8 == A7.a.f58n) {
+            C0393g c0393g = new C0393g(1, b.n(interfaceC5240d));
+            c0393g.r();
+            progressAsync.a(new LD(c0393g, progressAsync, 6, false), J0.h.f1420n);
+            c0393g.t(new J0.k(1, progressAsync));
+            Object q8 = c0393g.q();
+            if (q8 == A7.a.f215n) {
                 return q8;
             }
         }
-        return v.f41353a;
+        return v.f41073a;
     }
 
-    @Override // J0.r
-    public final N3.a startWork() {
-        AbstractC0402u coroutineContext = getCoroutineContext();
-        InterfaceC0396n interfaceC0396n = this.job;
+    @Override // J0.q
+    public final P3.a startWork() {
+        AbstractC0406u coroutineContext = getCoroutineContext();
+        InterfaceC0400n interfaceC0400n = this.job;
         coroutineContext.getClass();
-        AbstractC0406y.o(AbstractC0406y.b(b.r(coroutineContext, interfaceC0396n)), null, new f(this, null), 3);
+        AbstractC0410y.o(AbstractC0410y.b(b.t(coroutineContext, interfaceC0400n)), null, new f(this, null), 3);
         return this.future;
     }
 }

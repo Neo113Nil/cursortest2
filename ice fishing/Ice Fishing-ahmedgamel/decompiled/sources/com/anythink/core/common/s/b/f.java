@@ -9,21 +9,21 @@ import java.util.Map;
 public class f implements com.anythink.core.common.s.a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f16407a = "f";
+    private static final String f17194a = "f";
 
     /* renamed from: b, reason: collision with root package name */
-    private final Context f16408b;
+    private final Context f17195b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final String f16409c;
+    private final String f17196c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final int f16410d;
+    private final int f17197d;
 
     public f(com.anythink.core.common.s.c cVar) {
-        this.f16408b = cVar.a();
-        this.f16409c = cVar.b();
-        this.f16410d = cVar.d();
+        this.f17195b = cVar.a();
+        this.f17196c = cVar.b();
+        this.f17197d = cVar.d();
     }
 
     private static boolean a(int i) {
@@ -33,9 +33,9 @@ public class f implements com.anythink.core.common.s.a {
     /* JADX WARN: Multi-variable type inference failed */
     @Override // com.anythink.core.common.s.a
     public final <V> V b(String str, V v9) {
-        if (this.f16408b != null && !TextUtils.isEmpty(this.f16409c) && !TextUtils.isEmpty(str) && v9 != 0) {
+        if (this.f17195b != null && !TextUtils.isEmpty(this.f17196c) && !TextUtils.isEmpty(str) && v9 != 0) {
             try {
-                SharedPreferences sharedPreferences = this.f16408b.getSharedPreferences(this.f16409c, 0);
+                SharedPreferences sharedPreferences = this.f17195b.getSharedPreferences(this.f17196c, 0);
                 return v9 instanceof String ? (V) sharedPreferences.getString(str, (String) v9) : v9 instanceof Integer ? (V) Integer.valueOf(sharedPreferences.getInt(str, ((Integer) v9).intValue())) : v9 instanceof Long ? (V) Long.valueOf(sharedPreferences.getLong(str, ((Long) v9).longValue())) : v9 instanceof Double ? (V) Double.valueOf(sharedPreferences.getFloat(str, Float.parseFloat(v9.toString()))) : v9 instanceof Float ? (V) Float.valueOf(sharedPreferences.getFloat(str, ((Float) v9).floatValue())) : v9 instanceof Boolean ? (V) Boolean.valueOf(sharedPreferences.getBoolean(str, ((Boolean) v9).booleanValue())) : v9;
             } catch (Throwable th) {
                 th.getMessage();
@@ -45,22 +45,22 @@ public class f implements com.anythink.core.common.s.a {
     }
 
     public final String c() {
-        return this.f16409c;
+        return this.f17196c;
     }
 
     @Override // com.anythink.core.common.s.a
     public final <V> void a(String str, V v9) {
-        a(str, v9, this.f16410d);
+        a(str, v9, this.f17197d);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     @Override // com.anythink.core.common.s.a
     public final <V> void a(String str, V v9, int i) {
-        if (this.f16408b == null || TextUtils.isEmpty(this.f16409c) || TextUtils.isEmpty(str) || v9 == 0) {
+        if (this.f17195b == null || TextUtils.isEmpty(this.f17196c) || TextUtils.isEmpty(str) || v9 == 0) {
             return;
         }
         try {
-            SharedPreferences.Editor edit = this.f16408b.getSharedPreferences(this.f16409c, 0).edit();
+            SharedPreferences.Editor edit = this.f17195b.getSharedPreferences(this.f17196c, 0).edit();
             String obj = v9.toString();
             if (v9 instanceof String) {
                 edit.putString(str, (String) v9);
@@ -87,11 +87,11 @@ public class f implements com.anythink.core.common.s.a {
 
     @Override // com.anythink.core.common.s.a
     public final void b(String str) {
-        if (this.f16408b == null || TextUtils.isEmpty(this.f16409c)) {
+        if (this.f17195b == null || TextUtils.isEmpty(this.f17196c)) {
             return;
         }
         try {
-            SharedPreferences.Editor edit = this.f16408b.getSharedPreferences(this.f16409c, 0).edit();
+            SharedPreferences.Editor edit = this.f17195b.getSharedPreferences(this.f17196c, 0).edit();
             edit.remove(str);
             edit.apply();
         } catch (Throwable th) {
@@ -101,9 +101,9 @@ public class f implements com.anythink.core.common.s.a {
 
     @Override // com.anythink.core.common.s.a
     public final Map<String, Object> a() {
-        if (this.f16408b != null && !TextUtils.isEmpty(this.f16409c)) {
+        if (this.f17195b != null && !TextUtils.isEmpty(this.f17196c)) {
             try {
-                return this.f16408b.getSharedPreferences(this.f16409c, 0).getAll();
+                return this.f17195b.getSharedPreferences(this.f17196c, 0).getAll();
             } catch (Throwable th) {
                 th.getMessage();
             }
@@ -113,11 +113,11 @@ public class f implements com.anythink.core.common.s.a {
 
     @Override // com.anythink.core.common.s.a
     public final void b() {
-        if (this.f16408b == null || TextUtils.isEmpty(this.f16409c)) {
+        if (this.f17195b == null || TextUtils.isEmpty(this.f17196c)) {
             return;
         }
         try {
-            SharedPreferences.Editor edit = this.f16408b.getSharedPreferences(this.f16409c, 0).edit();
+            SharedPreferences.Editor edit = this.f17195b.getSharedPreferences(this.f17196c, 0).edit();
             edit.clear();
             edit.apply();
         } catch (Throwable th) {
@@ -127,9 +127,9 @@ public class f implements com.anythink.core.common.s.a {
 
     @Override // com.anythink.core.common.s.a
     public final boolean a(String str) {
-        if (this.f16408b != null && !TextUtils.isEmpty(this.f16409c)) {
+        if (this.f17195b != null && !TextUtils.isEmpty(this.f17196c)) {
             try {
-                return this.f16408b.getSharedPreferences(this.f16409c, 0).contains(str);
+                return this.f17195b.getSharedPreferences(this.f17196c, 0).contains(str);
             } catch (Throwable th) {
                 th.getMessage();
             }

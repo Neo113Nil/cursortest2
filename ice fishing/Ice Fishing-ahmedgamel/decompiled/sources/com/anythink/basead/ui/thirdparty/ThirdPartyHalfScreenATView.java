@@ -63,17 +63,17 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
     public class AnonymousClass6 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ int f11344a;
+        final /* synthetic */ int f12130a;
 
         public AnonymousClass6(int i) {
-            this.f11344a = i;
+            this.f12130a = i;
         }
 
         @Override // java.lang.Runnable
         public final void run() {
-            int i = this.f11344a * 1000;
+            int i = this.f12130a * 1000;
             ThirdPartyHalfScreenATView.this.b(i);
-            if (((BaseScreenATView) ThirdPartyHalfScreenATView.this).f9842C < 0 || i < ((BaseScreenATView) ThirdPartyHalfScreenATView.this).f9842C) {
+            if (((BaseScreenATView) ThirdPartyHalfScreenATView.this).f10628C < 0 || i < ((BaseScreenATView) ThirdPartyHalfScreenATView.this).f10628C) {
                 return;
             }
             ThirdPartyHalfScreenATView.this.T();
@@ -95,31 +95,31 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
 
     private void ah() {
         ArrayList arrayList = new ArrayList();
-        int J = this.f9735f.f14168o.J();
+        int J = this.f10521f.f14954o.J();
         if (J == 0) {
-            arrayList.addAll(this.f9852N.getClickViews());
-            arrayList.add(this.f9852N);
-            BaseEndCardView baseEndCardView = this.f9853O;
+            arrayList.addAll(this.f10638N.getClickViews());
+            arrayList.add(this.f10638N);
+            BaseEndCardView baseEndCardView = this.f10639O;
             if (baseEndCardView != null) {
                 arrayList.add(baseEndCardView);
             }
         } else if (J == 1) {
-            if (this.f9852N.getCTAButton() != null) {
-                arrayList.add(this.f9852N.getCTAButton());
+            if (this.f10638N.getCTAButton() != null) {
+                arrayList.add(this.f10638N.getCTAButton());
             }
             if (ar()) {
                 c.c(this.ap.getAdIconView());
             }
         } else if (J == 2) {
-            arrayList.addAll(this.f9852N.getClickViews());
-            arrayList.add(this.f9852N);
+            arrayList.addAll(this.f10638N.getClickViews());
+            arrayList.add(this.f10638N);
         }
         final com.anythink.core.basead.b.b bVar = new com.anythink.core.basead.b.b();
-        bVar.a(this.f9852N.getTitleView());
-        bVar.d(this.f9852N.getDescView());
-        bVar.e(this.f9852N.getCTAButton());
-        bVar.b(this.f9852N.getIconView());
-        b.a(this.f9851M, this.ap, new b.a() { // from class: com.anythink.basead.ui.thirdparty.ThirdPartyHalfScreenATView.4
+        bVar.a(this.f10638N.getTitleView());
+        bVar.d(this.f10638N.getDescView());
+        bVar.e(this.f10638N.getCTAButton());
+        bVar.b(this.f10638N.getIconView());
+        b.a(this.f10637M, this.ap, new b.a() { // from class: com.anythink.basead.ui.thirdparty.ThirdPartyHalfScreenATView.4
             @Override // com.anythink.basead.ui.thirdparty.b.a
             public final void a(View view, View view2, View view3) {
                 bVar.g(view);
@@ -127,11 +127,11 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
                 bVar.f(view3);
             }
         });
-        this.ap.registerListener(this.av, arrayList, com.anythink.basead.mixad.f.a.a(this.f9735f.f14160f, 0, 0), bVar);
+        this.ap.registerListener(this.av, arrayList, com.anythink.basead.mixad.f.a.a(this.f10521f.f14946f, 0, 0), bVar);
     }
 
     private void ai() {
-        int i = this.f9842C;
+        int i = this.f10628C;
         if (i < 0) {
             return;
         }
@@ -179,7 +179,7 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
 
     private void an() {
         ViewGroup customAdContainer;
-        if (this.f9851M == null || (customAdContainer = this.ap.getCustomAdContainer()) == null) {
+        if (this.f10637M == null || (customAdContainer = this.ap.getCustomAdContainer()) == null) {
             return;
         }
         if (!this.ap.isNativeExpress() && as()) {
@@ -191,16 +191,16 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
                 c.c(view);
             }
         }
-        ViewParent parent = this.f9851M.getParent();
+        ViewParent parent = this.f10637M.getParent();
         if (parent instanceof ViewGroup) {
             ViewGroup viewGroup = (ViewGroup) parent;
-            int indexOfChild = viewGroup.indexOfChild(this.f9851M);
+            int indexOfChild = viewGroup.indexOfChild(this.f10637M);
             if (indexOfChild >= 0) {
                 viewGroup.removeViewAt(indexOfChild);
             }
-            FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-2, this.f9851M.getLayoutParams().height);
+            FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-2, this.f10637M.getLayoutParams().height);
             layoutParams.gravity = 17;
-            customAdContainer.addView(this.f9851M, layoutParams);
+            customAdContainer.addView(this.f10637M, layoutParams);
             RelativeLayout.LayoutParams layoutParams2 = new RelativeLayout.LayoutParams(-2, -2);
             layoutParams2.addRule(15);
             layoutParams2.leftMargin = q.a(getContext(), 26.0f);
@@ -215,38 +215,38 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
         if (view != null) {
             arrayList.add(view);
         }
-        BaseEndCardView baseEndCardView = this.f9853O;
+        BaseEndCardView baseEndCardView = this.f10639O;
         if (baseEndCardView != null) {
             arrayList.add(baseEndCardView);
         }
-        PanelView panelView = this.f9852N;
+        PanelView panelView = this.f10638N;
         if (panelView != null) {
             arrayList.add(panelView.getIconView());
         }
-        this.as = new b.a().a(arrayList).a(this.f9852N.getTitleView()).b(this.f9852N.getDescView()).c(this.f9852N.getCTAButton()).a();
+        this.as = new b.a().a(arrayList).a(this.f10638N.getTitleView()).b(this.f10638N.getDescView()).c(this.f10638N.getCTAButton()).a();
     }
 
     private boolean ap() {
-        w wVar = this.f9736g;
+        w wVar = this.f10522g;
         return (wVar == null || !TextUtils.isEmpty(wVar.B()) || this.aq == null) ? false : true;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean aq() {
-        x xVar = this.f9735f;
-        return xVar != null && xVar.f14160f == 39;
+        x xVar = this.f10521f;
+        return xVar != null && xVar.f14946f == 39;
     }
 
     private boolean ar() {
-        x xVar = this.f9735f;
-        return xVar != null && xVar.f14160f == 59;
+        x xVar = this.f10521f;
+        return xVar != null && xVar.f14946f == 59;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean as() {
         y yVar;
-        x xVar = this.f9735f;
-        return (xVar == null || (yVar = xVar.f14168o) == null || yVar.J() == 0) ? false : true;
+        x xVar = this.f10521f;
+        return (xVar == null || (yVar = xVar.f14954o) == null || yVar.J() == 0) ? false : true;
     }
 
     private boolean at() {
@@ -280,56 +280,56 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
 
     @Override // com.anythink.basead.ui.HalfScreenATView, com.anythink.basead.ui.BaseScreenATView
     public final void G() {
-        String B9 = this.f9736g.B();
-        if (TextUtils.isEmpty(B9)) {
+        String B3 = this.f10522g.B();
+        if (TextUtils.isEmpty(B3)) {
             return;
         }
         f.a();
-        int[] a9 = h.a(f.a(2, B9));
+        int[] a9 = h.a(f.a(2, B3));
         if (a9 != null) {
             int i = a9[0];
             this.af = i;
-            int i6 = a9[1];
-            this.ag = i6;
+            int i4 = a9[1];
+            this.ag = i4;
             this.ad = i;
-            this.ae = i6;
+            this.ae = i4;
         }
     }
 
     @Override // com.anythink.basead.ui.BaseScreenATView
     public final void H() {
-        PanelView panelView = this.f9852N;
+        PanelView panelView = this.f10638N;
         if (panelView != null) {
             panelView.setVisibility(4);
-            this.f9852N.init(this.f9736g, this.f9735f, this.f9863b, false, null);
+            this.f10638N.init(this.f10522g, this.f10521f, this.f10649b, false, null);
             BaseAd baseAd = this.ap;
             if (baseAd != null) {
-                this.f9852N.setBaseAdIconView(baseAd.getAdIconView());
+                this.f10638N.setBaseAdIconView(baseAd.getAdIconView());
             }
         }
     }
 
     @Override // com.anythink.basead.ui.BaseScreenATView
     public final void K() {
-        MuteImageView muteImageView = this.f9857S;
+        MuteImageView muteImageView = this.f10643S;
         if (muteImageView == null) {
             return;
         }
-        if (this.f9849K) {
+        if (this.f10635K) {
             muteImageView.setMute(true);
         } else {
             muteImageView.setMute(false);
         }
-        this.f9857S.setVisibility(4);
-        this.f9857S.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.thirdparty.ThirdPartyHalfScreenATView.3
+        this.f10643S.setVisibility(4);
+        this.f10643S.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.thirdparty.ThirdPartyHalfScreenATView.3
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                if (ThirdPartyHalfScreenATView.this.aq == null || ((BaseScreenATView) ThirdPartyHalfScreenATView.this).f9857S == null || ThirdPartyHalfScreenATView.this.ap == null) {
+                if (ThirdPartyHalfScreenATView.this.aq == null || ((BaseScreenATView) ThirdPartyHalfScreenATView.this).f10643S == null || ThirdPartyHalfScreenATView.this.ap == null) {
                     return;
                 }
-                ((BaseScreenATView) ThirdPartyHalfScreenATView.this).f9849K = !((BaseScreenATView) r2).f9849K;
-                ((BaseScreenATView) ThirdPartyHalfScreenATView.this).f9857S.setMute(((BaseScreenATView) ThirdPartyHalfScreenATView.this).f9849K);
-                ThirdPartyHalfScreenATView.this.ap.setVideoMute(((BaseScreenATView) ThirdPartyHalfScreenATView.this).f9849K);
+                ((BaseScreenATView) ThirdPartyHalfScreenATView.this).f10635K = !((BaseScreenATView) r2).f10635K;
+                ((BaseScreenATView) ThirdPartyHalfScreenATView.this).f10643S.setMute(((BaseScreenATView) ThirdPartyHalfScreenATView.this).f10635K);
+                ThirdPartyHalfScreenATView.this.ap.setVideoMute(((BaseScreenATView) ThirdPartyHalfScreenATView.this).f10635K);
             }
         });
     }
@@ -342,15 +342,15 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
     @Override // com.anythink.basead.ui.BaseScreenATView
     public final void P() {
         super.P();
-        x xVar = this.f9735f;
+        x xVar = this.f10521f;
         if (xVar == null) {
             return;
         }
-        int i = xVar.f14160f;
+        int i = xVar.f14946f;
         if (i == 22) {
-            this.ap.setVideoMute(this.f9849K);
+            this.ap.setVideoMute(this.f10635K);
         }
-        MuteImageView muteImageView = this.f9857S;
+        MuteImageView muteImageView = this.f10643S;
         if (muteImageView != null && i != 8) {
             muteImageView.setVisibility(8);
         }
@@ -364,7 +364,7 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
     public final void T() {
         if (X() != null && X().getVisibility() != 0) {
             X().setVisibility(0);
-            X().setClickAreaScaleFactor(this.f9850L);
+            X().setClickAreaScaleFactor(this.f10636L);
         }
         this.ao.b(this.aw);
     }
@@ -373,9 +373,9 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
     public final void U() {
         if (ap()) {
             am.a(this.aq);
-            BasePlayerView l9 = this.f9746r.l();
+            BasePlayerView l9 = this.f10532r.l();
             if (l9 != null) {
-                this.f9851M.addView(this.aq, 1, l9.getLayoutParams());
+                this.f10637M.addView(this.aq, 1, l9.getLayoutParams());
             }
             T();
         } else {
@@ -391,7 +391,7 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
             ((ViewGroup) this.aq.getParent()).removeView(this.aq);
         }
         e(8);
-        MuteImageView muteImageView = this.f9857S;
+        MuteImageView muteImageView = this.f10643S;
         if (muteImageView != null) {
             muteImageView.setVisibility(8);
         }
@@ -412,22 +412,22 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
             this.ap.clear(this);
             this.ap.destroy();
         }
-        RelativeLayout relativeLayout = this.f9851M;
+        RelativeLayout relativeLayout = this.f10637M;
         if (relativeLayout != null) {
             relativeLayout.removeAllViews();
         }
-        PanelView panelView = this.f9852N;
+        PanelView panelView = this.f10638N;
         if (panelView != null) {
             panelView.removeAllViews();
         }
-        BaseEndCardView baseEndCardView = this.f9853O;
+        BaseEndCardView baseEndCardView = this.f10639O;
         if (baseEndCardView != null) {
             baseEndCardView.mListener = null;
         }
-        ViewGroup viewGroup = this.f9856R;
+        ViewGroup viewGroup = this.f10642R;
         if (viewGroup != null) {
             viewGroup.setOnClickListener(null);
-            this.f9856R.removeAllViews();
+            this.f10642R.removeAllViews();
         }
         removeAllViews();
     }
@@ -451,9 +451,9 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void init() {
-        boolean z3;
+        boolean z6;
         b();
-        this.f9843D = b(this.f9844E);
+        this.f10629D = b(this.f10630E);
         this.ap.setNativeEventListener(new p() { // from class: com.anythink.basead.ui.thirdparty.ThirdPartyHalfScreenATView.2
             @Override // com.anythink.core.common.d.p
             public final void a(String str, String str2) {
@@ -463,12 +463,12 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
 
             @Override // com.anythink.core.common.d.o
             public final void onAdClicked(View view) {
-                int i = com.anythink.basead.mixad.f.b.f9563a;
+                int i = com.anythink.basead.mixad.f.b.f10349a;
                 if (ThirdPartyHalfScreenATView.this.as != null) {
                     i = ThirdPartyHalfScreenATView.this.as.a();
                 }
-                if (((BaseScreenATView) ThirdPartyHalfScreenATView.this).f9861W != null) {
-                    ((BaseScreenATView) ThirdPartyHalfScreenATView.this).f9861W.b(new j().a(1, i));
+                if (((BaseScreenATView) ThirdPartyHalfScreenATView.this).f10647W != null) {
+                    ((BaseScreenATView) ThirdPartyHalfScreenATView.this).f10647W.b(new j().a(1, i));
                 }
             }
 
@@ -482,8 +482,8 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
                     return;
                 }
                 ThirdPartyHalfScreenATView.b(ThirdPartyHalfScreenATView.this);
-                if (((BaseScreenATView) ThirdPartyHalfScreenATView.this).f9861W != null) {
-                    ((BaseScreenATView) ThirdPartyHalfScreenATView.this).f9861W.a(new j());
+                if (((BaseScreenATView) ThirdPartyHalfScreenATView.this).f10647W != null) {
+                    ((BaseScreenATView) ThirdPartyHalfScreenATView.this).f10647W.a(new j());
                 }
             }
 
@@ -495,8 +495,8 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
                 ThirdPartyHalfScreenATView.o(ThirdPartyHalfScreenATView.this);
                 ThirdPartyHalfScreenATView.p(ThirdPartyHalfScreenATView.this);
                 ThirdPartyHalfScreenATView.this.T();
-                if (((BaseScreenATView) ThirdPartyHalfScreenATView.this).f9861W != null) {
-                    ((BaseScreenATView) ThirdPartyHalfScreenATView.this).f9861W.b();
+                if (((BaseScreenATView) ThirdPartyHalfScreenATView.this).f10647W != null) {
+                    ((BaseScreenATView) ThirdPartyHalfScreenATView.this).f10647W.b();
                 }
                 ThirdPartyHalfScreenATView.this.x();
             }
@@ -510,8 +510,8 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
             @Override // com.anythink.core.common.d.o
             public final void onAdVideoStart() {
                 ThirdPartyHalfScreenATView.h(ThirdPartyHalfScreenATView.this);
-                if (((BaseScreenATView) ThirdPartyHalfScreenATView.this).f9861W != null) {
-                    ((BaseScreenATView) ThirdPartyHalfScreenATView.this).f9861W.a();
+                if (((BaseScreenATView) ThirdPartyHalfScreenATView.this).f10647W != null) {
+                    ((BaseScreenATView) ThirdPartyHalfScreenATView.this).f10647W.a();
                 }
                 if (ThirdPartyHalfScreenATView.this.aq() && ThirdPartyHalfScreenATView.this.as()) {
                     c.a(ThirdPartyHalfScreenATView.this.aq);
@@ -519,25 +519,25 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
             }
 
             @Override // com.anythink.core.common.d.o
-            public final void onDeeplinkCallback(boolean z6) {
+            public final void onDeeplinkCallback(boolean z9) {
             }
 
             @Override // com.anythink.core.common.d.o
             public final void onDownloadConfirmCallback(Context context, View view, ATNetworkConfirmInfo aTNetworkConfirmInfo) {
             }
         });
-        if (!this.f9848I) {
-            if (3 == ((BaseScreenATView) this).f9862a) {
+        if (!this.f10634I) {
+            if (3 == ((BaseScreenATView) this).f10648a) {
                 if (!this.ap.isNativeExpress()) {
                     BaseAd baseAd = this.ap;
-                    z3 = false;
+                    z6 = false;
                     if (baseAd != null) {
                         if (TextUtils.equals(baseAd.getAdType(), "1")) {
                         }
                     }
-                    if (z3) {
+                    if (z6) {
                         w();
-                        int i = this.f9842C;
+                        int i = this.f10628C;
                         if (i >= 0) {
                             if (i > 0) {
                                 this.ao.a(this.aw, i, true);
@@ -547,8 +547,8 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
                         }
                     }
                 }
-                z3 = true;
-                if (z3) {
+                z6 = true;
+                if (z6) {
                 }
             }
             ao();
@@ -570,7 +570,7 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
     public final void b() {
         ViewGroup customAdContainer;
         super.b();
-        ViewGroup viewGroup = this.f9856R;
+        ViewGroup viewGroup = this.f10642R;
         if (viewGroup != null) {
             viewGroup.setVisibility(8);
         }
@@ -578,7 +578,7 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
         if (dVar != null) {
             dVar.a();
         }
-        if (this.f9851M != null && (customAdContainer = this.ap.getCustomAdContainer()) != null) {
+        if (this.f10637M != null && (customAdContainer = this.ap.getCustomAdContainer()) != null) {
             if (!this.ap.isNativeExpress() && as()) {
                 View view = this.aq;
                 if (aq()) {
@@ -588,16 +588,16 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
                     c.c(view);
                 }
             }
-            ViewParent parent = this.f9851M.getParent();
+            ViewParent parent = this.f10637M.getParent();
             if (parent instanceof ViewGroup) {
                 ViewGroup viewGroup2 = (ViewGroup) parent;
-                int indexOfChild = viewGroup2.indexOfChild(this.f9851M);
+                int indexOfChild = viewGroup2.indexOfChild(this.f10637M);
                 if (indexOfChild >= 0) {
                     viewGroup2.removeViewAt(indexOfChild);
                 }
-                FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-2, this.f9851M.getLayoutParams().height);
+                FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-2, this.f10637M.getLayoutParams().height);
                 layoutParams.gravity = 17;
-                customAdContainer.addView(this.f9851M, layoutParams);
+                customAdContainer.addView(this.f10637M, layoutParams);
                 RelativeLayout.LayoutParams layoutParams2 = new RelativeLayout.LayoutParams(-2, -2);
                 layoutParams2.addRule(15);
                 layoutParams2.leftMargin = q.a(getContext(), 26.0f);
@@ -615,13 +615,13 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
     public final void w() {
         BaseAd baseAd;
         try {
-            if (this.aq == null || (baseAd = this.ap) == null || this.f9746r == null) {
+            if (this.aq == null || (baseAd = this.ap) == null || this.f10532r == null) {
                 return;
             }
             double videoDuration = baseAd.getVideoDuration();
-            BasePlayerView l9 = this.f9746r.l();
+            BasePlayerView l9 = this.f10532r.l();
             if (l9 != null) {
-                this.f9851M.addView(this.aq, 1, l9.getLayoutParams());
+                this.f10637M.addView(this.aq, 1, l9.getLayoutParams());
             }
             if (aq()) {
                 T();
@@ -643,7 +643,7 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
         if (this.ap.isNativeExpress()) {
             return;
         }
-        w wVar = this.f9736g;
+        w wVar = this.f10522g;
         if (wVar != null && TextUtils.isEmpty(wVar.B()) && this.aq == null) {
             return;
         }
@@ -660,8 +660,8 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    public ThirdPartyHalfScreenATView(Context context, x xVar, w wVar, String str, int i, int i6, BaseAd baseAd, com.anythink.core.common.l.a aVar) {
-        super(context, xVar, wVar, str, i, i6);
+    public ThirdPartyHalfScreenATView(Context context, x xVar, w wVar, String str, int i, int i4, BaseAd baseAd, com.anythink.core.common.l.a aVar) {
+        super(context, xVar, wVar, str, i, i4);
         FrameLayout.LayoutParams layoutParams;
         this.ao = d.a();
         this.at = false;
@@ -722,7 +722,7 @@ public class ThirdPartyHalfScreenATView extends HalfScreenATView implements com.
     @Override // com.anythink.basead.ui.HalfScreenATView, com.anythink.basead.ui.BaseScreenATView
     public final boolean b(int i) {
         if (i == 3 || i == 4) {
-            return e.a(this.f9736g);
+            return e.a(this.f10522g);
         }
         return i == 7;
     }

@@ -2,140 +2,140 @@ package com.instagram.common.viewpoint.core;
 
 /* renamed from: com.facebook.ads.redexgen.X.8J, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public final class C8J extends C2066kd implements InterfaceC2067kf {
+public final class C8J extends C2086kd implements InterfaceC2087kf {
     public static String[] A00 = {"QslY7RDAS3xrt63VKSUIc4PAgQyzbCnP", "I2RDYHA9koMfGJloxQzgqYOPDwh1y3fX", "Nlbh9Fbn908ZEbYO3vWmpnN79w6pE4cF", "ocgy42XS8PNhkGqoGyCorblSW71P1K64", "EBMi2VRP4GruetnlCm3LvHZWx9UMkOU4", "bX5mc5DyccZcmgkXC6CUzZ7fAwthfCsf", "oKacTnkpC4MIkOiT5AMZGvTtMO9r0NKJ", "G06J4oHnVA1sH65lodeOvtro8grsZ9iR"};
 
-    public C8J(C2062kZ c2062kZ) {
-        super(c2062kZ);
+    public C8J(C2082kZ c2082kZ) {
+        super(c2082kZ);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4L(boolean hasWebView) {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A07, M0.A06.A04(Boolean.valueOf(hasWebView)));
+            A04(EnumC1089Lw.A07, M0.A06.A04(Boolean.valueOf(hasWebView)));
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4M() {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A08, new C1072Lz[0]);
+            A04(EnumC1089Lw.A08, new C1092Lz[0]);
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4N() {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A09, new C1072Lz[0]);
+            A04(EnumC1089Lw.A09, new C1092Lz[0]);
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4O(boolean hasListener) {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0A, M0.A05.A04(Boolean.valueOf(hasListener)));
+            A04(EnumC1089Lw.A0A, M0.A05.A04(Boolean.valueOf(hasListener)));
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4P() {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0B, new C1072Lz[0]);
+            A04(EnumC1089Lw.A0B, new C1092Lz[0]);
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4Q(boolean hasListener) {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0C, M0.A05.A04(Boolean.valueOf(hasListener)));
+            A04(EnumC1089Lw.A0C, M0.A05.A04(Boolean.valueOf(hasListener)));
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4R(boolean hasListener) {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0D, M0.A05.A04(Boolean.valueOf(hasListener)));
+            A04(EnumC1089Lw.A0D, M0.A05.A04(Boolean.valueOf(hasListener)));
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4S() {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0E, new C1072Lz[0]);
+            A04(EnumC1089Lw.A0E, new C1092Lz[0]);
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4T() {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0G, new C1072Lz[0]);
+            A04(EnumC1089Lw.A0G, new C1092Lz[0]);
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4U() {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0H, new C1072Lz[0]);
+            A04(EnumC1089Lw.A0H, new C1092Lz[0]);
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4V(boolean hasController) {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0I, M0.A04.A04(Boolean.valueOf(hasController)));
+            A04(EnumC1089Lw.A0I, M0.A04.A04(Boolean.valueOf(hasController)));
         } catch (Throwable th) {
             String[] strArr = A00;
             if (strArr[0].charAt(13) != strArr[7].charAt(13)) {
@@ -148,133 +148,133 @@ public final class C8J extends C2066kd implements InterfaceC2067kf {
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4W() {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0J, new C1072Lz[0]);
+            A04(EnumC1089Lw.A0J, new C1092Lz[0]);
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4X() {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0K, new C1072Lz[0]);
+            A04(EnumC1089Lw.A0K, new C1092Lz[0]);
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4Y() {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0L, new C1072Lz[0]);
+            A04(EnumC1089Lw.A0L, new C1092Lz[0]);
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4Z(boolean loadingAdapter) {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0M, M0.A0G.A04(Boolean.valueOf(loadingAdapter)));
+            A04(EnumC1089Lw.A0M, M0.A0G.A04(Boolean.valueOf(loadingAdapter)));
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4a() {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0N, new C1072Lz[0]);
+            A04(EnumC1089Lw.A0N, new C1092Lz[0]);
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4b(boolean loadingAdapter, int errorCode) {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0O, M0.A0G.A04(Boolean.valueOf(loadingAdapter)), M0.A0O.A04(Integer.valueOf(errorCode)));
+            A04(EnumC1089Lw.A0O, M0.A0G.A04(Boolean.valueOf(loadingAdapter)), M0.A0O.A04(Integer.valueOf(errorCode)));
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4c() {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0P, new C1072Lz[0]);
+            A04(EnumC1089Lw.A0P, new C1092Lz[0]);
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4d(boolean hasBid) {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0Q, M0.A03.A04(Boolean.valueOf(hasBid)));
+            A04(EnumC1089Lw.A0Q, M0.A03.A04(Boolean.valueOf(hasBid)));
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4e() {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0R, new C1072Lz[0]);
+            A04(EnumC1089Lw.A0R, new C1092Lz[0]);
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4f() {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0S, new C1072Lz[0]);
+            A04(EnumC1089Lw.A0S, new C1092Lz[0]);
         } catch (Throwable th) {
             WU.A00(th, this);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2067kf
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2087kf
     public final void A4g(boolean mediationOverlay) {
         if (WU.A02(this)) {
             return;
         }
         try {
-            A04(EnumC1069Lw.A0U, M0.A0I.A04(Boolean.valueOf(mediationOverlay)));
+            A04(EnumC1089Lw.A0U, M0.A0I.A04(Boolean.valueOf(mediationOverlay)));
         } catch (Throwable th) {
             WU.A00(th, this);
         }

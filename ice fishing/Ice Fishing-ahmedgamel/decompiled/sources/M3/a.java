@@ -1,45 +1,67 @@
 package M3;
 
-import com.google.android.gms.internal.ads.C2925aa;
-import com.google.android.gms.internal.ads.InterfaceC3014c9;
-import com.google.android.gms.internal.ads.O9;
-import com.google.android.gms.internal.ads.P9;
-import com.google.android.gms.internal.ads.ViewTreeObserverOnGlobalLayoutListenerC2572Gh;
-import com.google.android.gms.internal.ads.Z9;
+import android.os.Bundle;
+import android.os.IBinder;
+import android.os.Parcel;
+import android.os.Parcelable;
+import java.util.Objects;
 
 /* loaded from: classes2.dex */
-public final class a implements InterfaceC3014c9 {
+public final class a implements Parcelable {
+    public static final Parcelable.Creator<a> CREATOR = new B8.d(4);
 
     /* renamed from: n, reason: collision with root package name */
-    public final boolean f1866n;
+    public final String f1866n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final int f1867u;
+    public final String f1867u;
 
-    public /* synthetic */ a(int i, boolean z3) {
-        this.f1866n = z3;
-        this.f1867u = i;
-    }
+    /* renamed from: v, reason: collision with root package name */
+    public final IBinder f1868v;
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3014c9
-    public void b(Z9 z9) {
-        int i = ViewTreeObserverOnGlobalLayoutListenerC2572Gh.f25049I0;
-        O9 B9 = P9.B();
-        boolean A9 = ((P9) B9.f27721u).A();
-        boolean z3 = this.f1866n;
-        if (A9 != z3) {
-            B9.h();
-            ((P9) B9.f27721u).C(z3);
+    /* renamed from: w, reason: collision with root package name */
+    public final Bundle f1869w;
+
+    public /* synthetic */ a(Parcel parcel) {
+        String readString = parcel.readString();
+        Objects.requireNonNull(readString);
+        this.f1866n = readString;
+        String readString2 = parcel.readString();
+        Objects.requireNonNull(readString2);
+        this.f1867u = readString2;
+        if (parcel.readByte() != 0) {
+            this.f1868v = parcel.readStrongBinder();
+        } else {
+            this.f1868v = null;
         }
-        B9.h();
-        ((P9) B9.f27721u).D(this.f1867u);
-        P9 p9 = (P9) B9.j();
-        z9.h();
-        ((C2925aa) z9.f27721u).J(p9);
+        Bundle readBundle = parcel.readBundle(a.class.getClassLoader());
+        this.f1869w = readBundle == null ? Bundle.EMPTY : readBundle;
     }
 
-    public /* synthetic */ a(boolean z3, F.d dVar) {
-        this.f1866n = z3;
-        this.f1867u = dVar.f854b;
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(this.f1866n);
+        parcel.writeString(this.f1867u);
+        IBinder iBinder = this.f1868v;
+        if (iBinder != null) {
+            parcel.writeByte((byte) 1);
+            parcel.writeStrongBinder(iBinder);
+        } else {
+            parcel.writeByte((byte) 0);
+        }
+        parcel.writeBundle(this.f1869w);
+    }
+
+    public a(String str, String str2, IBinder iBinder) {
+        this.f1866n = str;
+        Objects.requireNonNull(str2, "url cannot be null");
+        this.f1867u = str2;
+        this.f1868v = iBinder;
+        this.f1869w = Bundle.EMPTY;
     }
 }

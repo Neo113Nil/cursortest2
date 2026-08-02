@@ -1,39 +1,39 @@
 package g8;
 
 /* loaded from: classes2.dex */
-public final class e extends L3.h {
+public final class e extends M.h {
 
     /* renamed from: v, reason: collision with root package name */
-    public final boolean f37713v;
+    public final boolean f37738v;
 
-    public e(G1.a aVar, boolean z3) {
+    public e(I1.a aVar, boolean z6) {
         super(aVar);
-        this.f37713v = z3;
+        this.f37738v = z6;
     }
 
-    @Override // L3.h
-    public final void g(byte b9) {
-        if (this.f37713v) {
+    @Override // M.h
+    public final void h(byte b9) {
+        if (this.f37738v) {
             o(String.valueOf(b9 & 255));
         } else {
             l(String.valueOf(b9 & 255));
         }
     }
 
-    @Override // L3.h
-    public final void i(int i) {
-        if (this.f37713v) {
+    @Override // M.h
+    public final void j(int i) {
+        if (this.f37738v) {
             o(Long.toString(4294967295L & i, 10));
         } else {
             l(Long.toString(4294967295L & i, 10));
         }
     }
 
-    @Override // L3.h
+    @Override // M.h
     public final void k(long j6) {
         int i = 63;
         String str = "0";
-        if (this.f37713v) {
+        if (this.f37738v) {
             if (j6 != 0) {
                 if (j6 > 0) {
                     str = Long.toString(j6, 10);
@@ -72,9 +72,9 @@ public final class e extends L3.h {
         l(str);
     }
 
-    @Override // L3.h
+    @Override // M.h
     public final void m(short s9) {
-        if (this.f37713v) {
+        if (this.f37738v) {
             o(String.valueOf(s9 & 65535));
         } else {
             l(String.valueOf(s9 & 65535));

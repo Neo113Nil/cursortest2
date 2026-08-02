@@ -4,9 +4,9 @@ package X;
 public final class j extends l {
 
     /* renamed from: a, reason: collision with root package name */
-    public final E f3510a;
+    public final E f3672a;
 
     public j(E e9) {
-        this.f3510a = e9;
+        this.f3672a = e9;
     }
 }

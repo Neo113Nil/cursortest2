@@ -4,35 +4,35 @@ package com.anythink.core.common.n.c;
 public abstract class i implements w {
 
     /* renamed from: a, reason: collision with root package name */
-    private final w f15867a;
+    private final w f16654a;
 
     public i(w wVar) {
         if (wVar == null) {
             throw new IllegalArgumentException("delegate == null");
         }
-        this.f15867a = wVar;
+        this.f16654a = wVar;
     }
 
     @Override // com.anythink.core.common.n.c.w
     public final x a() {
-        return this.f15867a.a();
+        return this.f16654a.a();
     }
 
     @Override // com.anythink.core.common.n.c.w
     public long a_(c cVar, long j6) {
-        return this.f15867a.a_(cVar, j6);
+        return this.f16654a.a_(cVar, j6);
     }
 
     public final w b() {
-        return this.f15867a;
+        return this.f16654a;
     }
 
     @Override // com.anythink.core.common.n.c.w, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f15867a.close();
+        this.f16654a.close();
     }
 
     public String toString() {
-        return getClass().getSimpleName() + "(" + this.f15867a.toString() + ")";
+        return getClass().getSimpleName() + "(" + this.f16654a.toString() + ")";
     }
 }

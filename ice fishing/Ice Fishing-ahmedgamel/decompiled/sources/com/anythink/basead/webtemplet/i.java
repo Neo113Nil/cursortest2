@@ -7,13 +7,13 @@ import java.util.Map;
 public final class i {
 
     /* renamed from: a, reason: collision with root package name */
-    int f11514a;
+    int f12300a;
 
     /* renamed from: b, reason: collision with root package name */
-    Map<String, Object> f11515b;
+    Map<String, Object> f12301b;
 
     public i(int i, Map<String, Object> map) {
-        this.f11514a = i;
-        this.f11515b = map != null ? new HashMap(map) : null;
+        this.f12300a = i;
+        this.f12301b = map != null ? new HashMap(map) : null;
     }
 }

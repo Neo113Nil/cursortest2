@@ -1,37 +1,38 @@
 package com.google.android.gms.internal.ads;
 
 import java.util.Objects;
+import w.AbstractC5128c;
 
 /* loaded from: classes2.dex */
 public final class X6 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Object f28485a;
+    public final Object f29265a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f28486b;
+    public final int f29266b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final C2954b2 f28487c;
+    public final C2977b2 f29267c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final Object f28488d;
+    public final Object f29268d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final int f28489e;
+    public final int f29269e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final long f28490f;
+    public final long f29270f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final long f28491g;
+    public final long f29271g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final int f28492h;
+    public final int f29272h;
     public final int i;
 
     static {
-        String str = AbstractC3159eu.f29993a;
+        String str = AbstractC3182eu.f30782a;
         Integer.toString(0, 36);
         Integer.toString(1, 36);
         Integer.toString(2, 36);
@@ -41,18 +42,18 @@ public final class X6 {
         Integer.toString(6, 36);
     }
 
-    public X6(Object obj, int i, C2954b2 c2954b2, Object obj2, int i6, long j6, long j9, int i9, int i10) {
-        AbstractC2772Sd.i(i >= 0);
-        AbstractC2772Sd.i(i6 >= 0);
-        this.f28485a = obj;
-        this.f28486b = i;
-        this.f28487c = c2954b2;
-        this.f28488d = obj2;
-        this.f28489e = i6;
-        this.f28490f = j6;
-        this.f28491g = j9;
-        this.f28492h = i9;
-        this.i = i10;
+    public X6(Object obj, int i, C2977b2 c2977b2, Object obj2, int i4, long j6, long j9, int i6, int i9) {
+        AbstractC2792Sd.i(i >= 0);
+        AbstractC2792Sd.i(i4 >= 0);
+        this.f29265a = obj;
+        this.f29266b = i;
+        this.f29267c = c2977b2;
+        this.f29268d = obj2;
+        this.f29269e = i4;
+        this.f29270f = j6;
+        this.f29271g = j9;
+        this.f29272h = i6;
+        this.i = i9;
     }
 
     public final boolean equals(Object obj) {
@@ -61,7 +62,7 @@ public final class X6 {
         }
         if (obj != null && X6.class == obj.getClass()) {
             X6 x62 = (X6) obj;
-            if (this.f28486b == x62.f28486b && this.f28489e == x62.f28489e && this.f28490f == x62.f28490f && this.f28491g == x62.f28491g && this.f28492h == x62.f28492h && this.i == x62.i && Objects.equals(this.f28487c, x62.f28487c) && Objects.equals(this.f28485a, x62.f28485a) && Objects.equals(this.f28488d, x62.f28488d)) {
+            if (this.f29266b == x62.f29266b && this.f29269e == x62.f29269e && this.f29270f == x62.f29270f && this.f29271g == x62.f29271g && this.f29272h == x62.f29272h && this.i == x62.i && Objects.equals(this.f29267c, x62.f29267c) && Objects.equals(this.f29265a, x62.f29265a) && Objects.equals(this.f29268d, x62.f29268d)) {
                 return true;
             }
         }
@@ -69,32 +70,32 @@ public final class X6 {
     }
 
     public final int hashCode() {
-        return Objects.hash(this.f28485a, Integer.valueOf(this.f28486b), this.f28487c, this.f28488d, Integer.valueOf(this.f28489e), Long.valueOf(this.f28490f), Long.valueOf(this.f28491g), Integer.valueOf(this.f28492h), Integer.valueOf(this.i));
+        return Objects.hash(this.f29265a, Integer.valueOf(this.f29266b), this.f29267c, this.f29268d, Integer.valueOf(this.f29269e), Long.valueOf(this.f29270f), Long.valueOf(this.f29271g), Integer.valueOf(this.f29272h), Integer.valueOf(this.i));
     }
 
     public final String toString() {
-        int i = this.f28486b;
+        int i = this.f29266b;
         int length = String.valueOf(i).length();
-        int i6 = this.f28489e;
-        int length2 = String.valueOf(i6).length();
-        long j6 = this.f28490f;
+        int i4 = this.f29269e;
+        int length2 = String.valueOf(i4).length();
+        long j6 = this.f29270f;
         StringBuilder sb = new StringBuilder(length + 19 + length2 + 6 + String.valueOf(j6).length());
-        u1.h.h(sb, "mediaItem=", i, ", period=", i6);
+        AbstractC5128c.g(sb, "mediaItem=", i, ", period=", i4);
         sb.append(", pos=");
         sb.append(j6);
         String sb2 = sb.toString();
-        int i9 = this.f28492h;
-        if (i9 == -1) {
+        int i6 = this.f29272h;
+        if (i6 == -1) {
             return sb2;
         }
         int length3 = sb2.length();
-        long j9 = this.f28491g;
-        int length4 = String.valueOf(i9).length() + length3 + 13 + String.valueOf(j9).length() + 10;
-        int i10 = this.i;
-        StringBuilder sb3 = new StringBuilder(length4 + 5 + String.valueOf(i10).length());
+        long j9 = this.f29271g;
+        int length4 = String.valueOf(i6).length() + length3 + 13 + String.valueOf(j9).length() + 10;
+        int i9 = this.i;
+        StringBuilder sb3 = new StringBuilder(length4 + 5 + String.valueOf(i9).length());
         sb3.append(sb2);
         sb3.append(", contentPos=");
         sb3.append(j9);
-        return D.y.r(sb3, ", adGroup=", i9, ", ad=", i10);
+        return D.x.o(sb3, ", adGroup=", i6, ", ad=", i9);
     }
 }

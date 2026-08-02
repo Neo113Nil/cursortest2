@@ -1,14 +1,14 @@
 package g8;
 
-import D.H;
-import f8.AbstractC4516c;
-import u.AbstractC5049e;
+import D.G;
+import f8.AbstractC4526c;
+import u.AbstractC5050e;
 
 /* loaded from: classes2.dex */
 public abstract class l {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final m f37719a = new m();
+    public static final m f37744a = new m();
 
     public static final g a(Number number, String str) {
         return new g("Unexpected special floating-point value " + number + ". By default, non-finite floating point values are prohibited because they do not conform JSON specification. It is possible to deserialize them using 'JsonBuilder.allowSpecialFloatingPointValues = true'\nCurrent output: " + ((Object) f(str, -1)));
@@ -26,21 +26,21 @@ public abstract class l {
         return new g(message2);
     }
 
-    public static final c8.e c(c8.e eVar, M2.i module) {
+    public static final c8.e c(c8.e eVar, G3.e module) {
         kotlin.jvm.internal.h.e(eVar, "<this>");
         kotlin.jvm.internal.h.e(module, "module");
-        return (!kotlin.jvm.internal.h.a(eVar.d(), c8.h.f5649b) && eVar.g()) ? c(eVar.i(0), module) : eVar;
+        return (!kotlin.jvm.internal.h.a(eVar.d(), c8.h.f5825b) && eVar.g()) ? c(eVar.i(0), module) : eVar;
     }
 
     public static final byte d(char c9) {
         if (c9 < '~') {
-            return c.f37711b[c9];
+            return c.f37736b[c9];
         }
         return (byte) 0;
     }
 
-    public static final void e(H h9, String str) {
-        h9.l(h9.f436u - 1, "Trailing comma before the end of JSON ".concat(str), "Trailing commas are non-complaint JSON and not allowed by default. Use 'allowTrailingCommas = true' in 'Json {}' builder to support them.");
+    public static final void e(G g9, String str) {
+        g9.m(g9.f333u - 1, "Trailing comma before the end of JSON ".concat(str), "Trailing commas are non-complaint JSON and not allowed by default. Use 'allowTrailingCommas = true' in 'Json {}' builder to support them.");
         throw null;
     }
 
@@ -48,19 +48,19 @@ public abstract class l {
         kotlin.jvm.internal.h.e(charSequence, "<this>");
         if (charSequence.length() >= 200) {
             if (i != -1) {
-                int i6 = i - 30;
-                int i9 = i + 30;
-                String str = i6 <= 0 ? "" : ".....";
-                String str2 = i9 >= charSequence.length() ? "" : ".....";
-                StringBuilder b9 = AbstractC5049e.b(str);
-                if (i6 < 0) {
-                    i6 = 0;
+                int i4 = i - 30;
+                int i6 = i + 30;
+                String str = i4 <= 0 ? "" : ".....";
+                String str2 = i6 >= charSequence.length() ? "" : ".....";
+                StringBuilder b9 = AbstractC5050e.b(str);
+                if (i4 < 0) {
+                    i4 = 0;
                 }
                 int length = charSequence.length();
-                if (i9 > length) {
-                    i9 = length;
+                if (i6 > length) {
+                    i6 = length;
                 }
-                b9.append(charSequence.subSequence(i6, i9).toString());
+                b9.append(charSequence.subSequence(i4, i6).toString());
                 b9.append(str2);
                 return b9.toString();
             }
@@ -72,35 +72,35 @@ public abstract class l {
         return charSequence;
     }
 
-    public static final void g(c8.e eVar, AbstractC4516c json) {
+    public static final void g(c8.e eVar, AbstractC4526c json) {
         kotlin.jvm.internal.h.e(eVar, "<this>");
         kotlin.jvm.internal.h.e(json, "json");
-        kotlin.jvm.internal.h.a(eVar.d(), c8.i.f5651b);
+        kotlin.jvm.internal.h.a(eVar.d(), c8.i.f5827b);
     }
 
-    public static final t h(c8.e desc, AbstractC4516c abstractC4516c) {
-        kotlin.jvm.internal.h.e(abstractC4516c, "<this>");
+    public static final t h(c8.e desc, AbstractC4526c abstractC4526c) {
+        kotlin.jvm.internal.h.e(abstractC4526c, "<this>");
         kotlin.jvm.internal.h.e(desc, "desc");
-        t8.g d2 = desc.d();
-        if (d2 instanceof c8.b) {
-            return t.f37750y;
+        com.bumptech.glide.h d9 = desc.d();
+        if (d9 instanceof c8.b) {
+            return t.f37776y;
         }
-        if (kotlin.jvm.internal.h.a(d2, c8.i.f5652c)) {
-            return t.f37748w;
+        if (kotlin.jvm.internal.h.a(d9, c8.i.f5828c)) {
+            return t.f37774w;
         }
-        if (!kotlin.jvm.internal.h.a(d2, c8.i.f5653d)) {
-            return t.f37747v;
+        if (!kotlin.jvm.internal.h.a(d9, c8.i.f5829d)) {
+            return t.f37773v;
         }
-        c8.e c9 = c(desc.i(0), abstractC4516c.f37540b);
-        t8.g d9 = c9.d();
-        if ((d9 instanceof c8.d) || kotlin.jvm.internal.h.a(d9, c8.h.f5650c)) {
-            return t.f37749x;
+        c8.e c9 = c(desc.i(0), abstractC4526c.f37502b);
+        com.bumptech.glide.h d10 = c9.d();
+        if ((d10 instanceof c8.d) || kotlin.jvm.internal.h.a(d10, c8.h.f5826c)) {
+            return t.f37775x;
         }
         throw new g("Value of type '" + c9.a() + "' can't be used in JSON as a key in the map. It should have either primitive or enum kind, but its kind is '" + c9.d() + "'.\nUse 'allowStructuredMapKeys = true' in 'Json {}' builder to convert such maps to [key1, value1, key2, value2,...] arrays.");
     }
 
-    public static final void i(H h9, Number number) {
-        H.m(h9, "Unexpected special floating-point value " + number + ". By default, non-finite floating point values are prohibited because they do not conform JSON specification", 0, 2);
+    public static final void i(G g9, Number number) {
+        G.n(g9, "Unexpected special floating-point value " + number + ". By default, non-finite floating point values are prohibited because they do not conform JSON specification", 0, 2);
         throw null;
     }
 

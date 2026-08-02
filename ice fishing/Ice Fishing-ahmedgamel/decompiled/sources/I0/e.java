@@ -9,7 +9,7 @@ import org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface;
 public final class e implements o {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final String[] f1256n = new String[0];
+    public static final String[] f1281n = new String[0];
 
     @Override // I0.o
     public final WebViewProviderBoundaryInterface createWebView(WebView webView) {
@@ -27,7 +27,7 @@ public final class e implements o {
     }
 
     @Override // I0.o
-    public final String[] r() {
-        return f1256n;
+    public final String[] h() {
+        return f1281n;
     }
 }

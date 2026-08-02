@@ -5,16 +5,16 @@ import I7.l;
 import M4.c;
 import S7.Y;
 import android.content.SharedPreferences;
-import com.bumptech.glide.d;
 import com.onesignal.common.threading.e;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
-import u7.C5089g;
+import u7.C5081g;
 import u7.v;
 import v7.t;
+import w.AbstractC5128c;
 import x4.f;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class a implements J4.b, com.onesignal.core.internal.startup.b {
@@ -40,18 +40,18 @@ public final class a implements J4.b, com.onesignal.core.internal.startup.b {
         long J$0;
         int label;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return a.this.new b(interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return a.this.new b(interfaceC5240d);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:87:0x0122, code lost:
         
-            if (S7.AbstractC0406y.f(r5, r12) == r0) goto L69;
+            if (S7.AbstractC0410y.f(r5, r12) == r0) goto L69;
          */
         /* JADX WARN: Code restructure failed: missing block: B:88:0x0128, code lost:
         
@@ -68,19 +68,19 @@ public final class a implements J4.b, com.onesignal.core.internal.startup.b {
         */
         public final Object invokeSuspend(Object obj) {
             long j6;
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             try {
             } catch (Throwable th) {
                 com.onesignal.debug.internal.logging.b.log(c.ERROR, "Error with Preference work loop", th);
             }
             if (i == 0) {
-                d.k(obj);
+                Q3.b.s(obj);
                 com.onesignal.debug.internal.logging.b.debug$default("OneSignal: PreferencesService write loop running", null, 2, null);
                 j6 = a.this._time.getCurrentTimeMillis();
             } else if (i == 1) {
                 j6 = this.J$0;
-                d.k(obj);
+                Q3.b.s(obj);
                 e eVar = a.this.waiter;
                 this.J$0 = j6;
                 this.label = 2;
@@ -89,7 +89,7 @@ public final class a implements J4.b, com.onesignal.core.internal.startup.b {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 j6 = this.J$0;
-                d.k(obj);
+                Q3.b.s(obj);
             }
             while (true) {
                 for (String str : a.this.prefsToApply.keySet()) {
@@ -152,8 +152,8 @@ public final class a implements J4.b, com.onesignal.core.internal.startup.b {
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((b) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((b) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -162,9 +162,9 @@ public final class a implements J4.b, com.onesignal.core.internal.startup.b {
         kotlin.jvm.internal.h.e(_time, "_time");
         this._applicationService = _applicationService;
         this._time = _time;
-        C5089g[] c5089gArr = {new C5089g(com.onesignal.common.threading.b.BASE_THREAD_NAME, new LinkedHashMap()), new C5089g("GTPlayerPurchases", new LinkedHashMap())};
-        LinkedHashMap linkedHashMap = new LinkedHashMap(t.P(2));
-        t.R(linkedHashMap, c5089gArr);
+        C5081g[] c5081gArr = {new C5081g(com.onesignal.common.threading.b.BASE_THREAD_NAME, new LinkedHashMap()), new C5081g("GTPlayerPurchases", new LinkedHashMap())};
+        LinkedHashMap linkedHashMap = new LinkedHashMap(t.t(2));
+        t.v(linkedHashMap, c5081gArr);
         this.prefsToApply = linkedHashMap;
         this.waiter = new e();
     }
@@ -175,7 +175,7 @@ public final class a implements J4.b, com.onesignal.core.internal.startup.b {
 
     private final Object get(String str, String str2, Class<?> cls, Object obj) {
         if (!this.prefsToApply.containsKey(str)) {
-            throw new Exception(u1.h.f("Store not found: ", str));
+            throw new Exception(AbstractC5128c.f("Store not found: ", str));
         }
         Map<String, Object> map = this.prefsToApply.get(str);
         kotlin.jvm.internal.h.b(map);
@@ -247,7 +247,7 @@ public final class a implements J4.b, com.onesignal.core.internal.startup.b {
 
     private final void save(String str, String str2, Object obj) {
         if (!this.prefsToApply.containsKey(str)) {
-            throw new Exception(u1.h.f("Store not found: ", str));
+            throw new Exception(AbstractC5128c.f("Store not found: ", str));
         }
         Map<String, Object> map = this.prefsToApply.get(str);
         kotlin.jvm.internal.h.b(map);

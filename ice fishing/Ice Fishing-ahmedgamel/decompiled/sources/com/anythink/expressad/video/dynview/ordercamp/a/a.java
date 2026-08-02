@@ -28,77 +28,77 @@ import java.util.Locale;
 public final class a extends BaseAdapter {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f21304a = "template_config.json";
+    public static final String f22091a = "template_config.json";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f21305b = "OrderCampAdapter";
+    private static final String f22092b = "OrderCampAdapter";
 
     /* renamed from: f, reason: collision with root package name */
-    private static final String f21306f = "anythink_lv_item_rl";
+    private static final String f22093f = "anythink_lv_item_rl";
 
     /* renamed from: g, reason: collision with root package name */
-    private static final String f21307g = "anythink_lv_iv";
+    private static final String f22094g = "anythink_lv_iv";
 
     /* renamed from: h, reason: collision with root package name */
-    private static final String f21308h = "anythink_lv_icon_iv";
+    private static final String f22095h = "anythink_lv_icon_iv";
     private static final String i = "anythink_lv_title_tv";
 
     /* renamed from: j, reason: collision with root package name */
-    private static final String f21309j = "anythink_lv_tv_install";
+    private static final String f22096j = "anythink_lv_tv_install";
 
     /* renamed from: k, reason: collision with root package name */
-    private static final String f21310k = "anythink_lv_sv_starlevel";
+    private static final String f22097k = "anythink_lv_sv_starlevel";
 
     /* renamed from: l, reason: collision with root package name */
-    private static final String f21311l = "anythink_lv_sv_heat_level";
+    private static final String f22098l = "anythink_lv_sv_heat_level";
 
     /* renamed from: m, reason: collision with root package name */
-    private static final String f21312m = "anythink_lv_ration";
+    private static final String f22099m = "anythink_lv_ration";
 
     /* renamed from: n, reason: collision with root package name */
-    private static final String f21313n = "anythink_lv_desc_tv";
+    private static final String f22100n = "anythink_lv_desc_tv";
 
     /* renamed from: o, reason: collision with root package name */
-    private static final String f21314o = "anythink_iv_flag";
+    private static final String f22101o = "anythink_iv_flag";
 
     /* renamed from: p, reason: collision with root package name */
-    private static final String f21315p = "anythink_order_viewed_tv";
+    private static final String f22102p = "anythink_order_viewed_tv";
 
     /* renamed from: q, reason: collision with root package name */
-    private static final String f21316q = "anythink_order_layout_item";
+    private static final String f22103q = "anythink_order_layout_item";
 
     /* renamed from: r, reason: collision with root package name */
-    private static final String f21317r = "anythink_lv_iv_burl";
+    private static final String f22104r = "anythink_lv_iv_burl";
 
     /* renamed from: s, reason: collision with root package name */
-    private static final String f21318s = "501";
+    private static final String f22105s = "501";
 
     /* renamed from: t, reason: collision with root package name */
-    private static final String f21319t = "\\.xml";
+    private static final String f22106t = "\\.xml";
 
     /* renamed from: u, reason: collision with root package name */
-    private static final String f21320u = "\\/xml";
+    private static final String f22107u = "\\/xml";
 
     /* renamed from: v, reason: collision with root package name */
-    private static final String f21321v = "_item.xml";
+    private static final String f22108v = "_item.xml";
 
     /* renamed from: c, reason: collision with root package name */
-    private boolean f21322c = false;
+    private boolean f22109c = false;
 
     /* renamed from: d, reason: collision with root package name */
-    private C0139a f21323d;
+    private C0139a f22110d;
 
     /* renamed from: e, reason: collision with root package name */
-    private List<d> f21324e;
+    private List<d> f22111e;
 
     /* renamed from: com.anythink.expressad.video.dynview.ordercamp.a.a$2, reason: invalid class name */
     public class AnonymousClass2 implements c {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ Context f21328a;
+        final /* synthetic */ Context f22115a;
 
         public AnonymousClass2(Context context) {
-            this.f21328a = context;
+            this.f22115a = context;
         }
 
         @Override // com.anythink.expressad.foundation.g.d.c
@@ -111,11 +111,11 @@ public final class a extends BaseAdapter {
                 return;
             }
             try {
-                int b9 = v.b(this.f21328a, 12.0f);
-                a.this.f21323d.f21338j.getLayoutParams().height = b9;
-                a.this.f21323d.f21338j.getLayoutParams().width = (int) (b9 * ((bitmap.getWidth() * 1.0f) / bitmap.getHeight()));
-                a.this.f21323d.f21338j.setImageBitmap(bitmap);
-                a.this.f21323d.f21338j.setBackgroundColor(1426063360);
+                int b9 = v.b(this.f22115a, 12.0f);
+                a.this.f22110d.f22125j.getLayoutParams().height = b9;
+                a.this.f22110d.f22125j.getLayoutParams().width = (int) (b9 * ((bitmap.getWidth() * 1.0f) / bitmap.getHeight()));
+                a.this.f22110d.f22125j.setImageBitmap(bitmap);
+                a.this.f22110d.f22125j.setBackgroundColor(1426063360);
             } catch (Throwable unused) {
             }
         }
@@ -125,47 +125,47 @@ public final class a extends BaseAdapter {
     public static class C0139a {
 
         /* renamed from: a, reason: collision with root package name */
-        RelativeLayout f21330a;
+        RelativeLayout f22117a;
 
         /* renamed from: b, reason: collision with root package name */
-        ATRotationView f21331b;
+        ATRotationView f22118b;
 
         /* renamed from: c, reason: collision with root package name */
-        AnyThinkImageView f21332c;
+        AnyThinkImageView f22119c;
 
         /* renamed from: d, reason: collision with root package name */
-        RoundImageView f21333d;
+        RoundImageView f22120d;
 
         /* renamed from: e, reason: collision with root package name */
-        TextView f21334e;
+        TextView f22121e;
 
         /* renamed from: f, reason: collision with root package name */
-        TextView f21335f;
+        TextView f22122f;
 
         /* renamed from: g, reason: collision with root package name */
-        TextView f21336g;
+        TextView f22123g;
 
         /* renamed from: h, reason: collision with root package name */
-        TextView f21337h;
+        TextView f22124h;
         AnyThinkLevelLayoutView i;
 
         /* renamed from: j, reason: collision with root package name */
-        ImageView f21338j;
+        ImageView f22125j;
     }
 
     public a(List<d> list) {
-        this.f21324e = list;
+        this.f22111e = list;
     }
 
     private View b() {
-        View inflate = LayoutInflater.from(t.b().g()).inflate(k.a(t.b().g().getApplicationContext(), f21316q, "layout"), (ViewGroup) null);
+        View inflate = LayoutInflater.from(t.b().g()).inflate(k.a(t.b().g().getApplicationContext(), f22103q, "layout"), (ViewGroup) null);
         C0139a c0139a = new C0139a();
-        this.f21323d = c0139a;
-        c0139a.f21332c = (AnyThinkImageView) inflate.findViewById(b(f21307g));
-        this.f21323d.f21333d = (RoundImageView) inflate.findViewById(b(f21308h));
-        this.f21323d.i = (AnyThinkLevelLayoutView) inflate.findViewById(b(f21310k));
-        this.f21323d.f21331b = (ATRotationView) inflate.findViewById(b(f21312m));
-        inflate.setTag(this.f21323d);
+        this.f22110d = c0139a;
+        c0139a.f22119c = (AnyThinkImageView) inflate.findViewById(b(f22094g));
+        this.f22110d.f22120d = (RoundImageView) inflate.findViewById(b(f22095h));
+        this.f22110d.i = (AnyThinkLevelLayoutView) inflate.findViewById(b(f22097k));
+        this.f22110d.f22118b = (ATRotationView) inflate.findViewById(b(f22099m));
+        inflate.setTag(this.f22110d);
         return inflate;
     }
 
@@ -177,116 +177,116 @@ public final class a extends BaseAdapter {
     }
 
     private int d(String str) {
-        return this.f21322c ? c(str) : b(str);
+        return this.f22109c ? c(str) : b(str);
     }
 
     @Override // android.widget.Adapter
     public final int getCount() {
-        List<d> list = this.f21324e;
+        List<d> list = this.f22111e;
         if (list == null || list.size() <= 0) {
             return 0;
         }
-        return this.f21324e.size();
+        return this.f22111e.size();
     }
 
     @Override // android.widget.Adapter
-    public final Object getItem(int i6) {
-        List<d> list = this.f21324e;
+    public final Object getItem(int i4) {
+        List<d> list = this.f22111e;
         if (list != null) {
-            return list.get(i6);
+            return list.get(i4);
         }
         return null;
     }
 
     @Override // android.widget.Adapter
-    public final long getItemId(int i6) {
-        return i6;
+    public final long getItemId(int i4) {
+        return i4;
     }
 
     @Override // android.widget.Adapter
-    public final View getView(int i6, View view, ViewGroup viewGroup) {
+    public final View getView(int i4, View view, ViewGroup viewGroup) {
         try {
             if (view == null) {
-                View inflate = LayoutInflater.from(t.b().g()).inflate(k.a(t.b().g().getApplicationContext(), f21316q, "layout"), (ViewGroup) null);
+                View inflate = LayoutInflater.from(t.b().g()).inflate(k.a(t.b().g().getApplicationContext(), f22103q, "layout"), (ViewGroup) null);
                 C0139a c0139a = new C0139a();
-                this.f21323d = c0139a;
-                c0139a.f21332c = (AnyThinkImageView) inflate.findViewById(b(f21307g));
-                this.f21323d.f21333d = (RoundImageView) inflate.findViewById(b(f21308h));
-                this.f21323d.i = (AnyThinkLevelLayoutView) inflate.findViewById(b(f21310k));
-                this.f21323d.f21331b = (ATRotationView) inflate.findViewById(b(f21312m));
-                inflate.setTag(this.f21323d);
+                this.f22110d = c0139a;
+                c0139a.f22119c = (AnyThinkImageView) inflate.findViewById(b(f22094g));
+                this.f22110d.f22120d = (RoundImageView) inflate.findViewById(b(f22095h));
+                this.f22110d.i = (AnyThinkLevelLayoutView) inflate.findViewById(b(f22097k));
+                this.f22110d.f22118b = (ATRotationView) inflate.findViewById(b(f22099m));
+                inflate.setTag(this.f22110d);
                 view = inflate;
             } else {
-                this.f21323d = (C0139a) view.getTag();
+                this.f22110d = (C0139a) view.getTag();
             }
-            this.f21323d.f21330a = (RelativeLayout) view.findViewById(d(f21306f));
-            this.f21323d.f21334e = (TextView) view.findViewById(d(i));
-            this.f21323d.f21336g = (TextView) view.findViewById(d(f21309j));
-            this.f21323d.f21335f = (TextView) view.findViewById(d(f21313n));
-            this.f21323d.f21338j = (ImageView) view.findViewById(d(f21314o));
-            this.f21323d.f21337h = (TextView) view.findViewById(d(f21315p));
-            List<d> list = this.f21324e;
-            if (list != null && this.f21323d != null && list.size() != 0) {
-                AnyThinkImageView anyThinkImageView = this.f21323d.f21332c;
+            this.f22110d.f22117a = (RelativeLayout) view.findViewById(d(f22093f));
+            this.f22110d.f22121e = (TextView) view.findViewById(d(i));
+            this.f22110d.f22123g = (TextView) view.findViewById(d(f22096j));
+            this.f22110d.f22122f = (TextView) view.findViewById(d(f22100n));
+            this.f22110d.f22125j = (ImageView) view.findViewById(d(f22101o));
+            this.f22110d.f22124h = (TextView) view.findViewById(d(f22102p));
+            List<d> list = this.f22111e;
+            if (list != null && this.f22110d != null && list.size() != 0) {
+                AnyThinkImageView anyThinkImageView = this.f22110d.f22119c;
                 if (anyThinkImageView != null) {
-                    a(anyThinkImageView, this.f21324e.get(i6).bm(), false);
+                    a(anyThinkImageView, this.f22111e.get(i4).bm(), false);
                 }
-                RoundImageView roundImageView = this.f21323d.f21333d;
+                RoundImageView roundImageView = this.f22110d.f22120d;
                 if (roundImageView != null) {
                     roundImageView.setBorderRadius(25);
-                    a(this.f21323d.f21333d, this.f21324e.get(i6).bl(), true);
+                    a(this.f22110d.f22120d, this.f22111e.get(i4).bl(), true);
                 }
-                double bf = this.f21324e.get(i6).bf();
+                double bf = this.f22111e.get(i4).bf();
                 if (bf <= 0.0d) {
                     bf = 5.0d;
                 }
-                AnyThinkLevelLayoutView anyThinkLevelLayoutView = this.f21323d.i;
+                AnyThinkLevelLayoutView anyThinkLevelLayoutView = this.f22110d.i;
                 if (anyThinkLevelLayoutView != null) {
-                    anyThinkLevelLayoutView.setRatingAndUser(bf, this.f21324e.get(i6).bg());
-                    this.f21323d.i.setOrientation(0);
+                    anyThinkLevelLayoutView.setRatingAndUser(bf, this.f22111e.get(i4).bg());
+                    this.f22110d.i.setOrientation(0);
                 }
-                ATRotationView aTRotationView = this.f21323d.f21331b;
+                ATRotationView aTRotationView = this.f22110d.f22118b;
                 if (aTRotationView != null) {
                     aTRotationView.setWidthRatio(1.0f);
-                    this.f21323d.f21331b.setHeightRatio(1.0f);
-                    this.f21323d.f21331b.setAutoscroll(false);
+                    this.f22110d.f22118b.setHeightRatio(1.0f);
+                    this.f22110d.f22118b.setAutoscroll(false);
                 }
-                AnyThinkImageView anyThinkImageView2 = this.f21323d.f21332c;
+                AnyThinkImageView anyThinkImageView2 = this.f22110d.f22119c;
                 if (anyThinkImageView2 != null) {
                     anyThinkImageView2.setCustomBorder(30, 30, 30, 30, 10, -1728053248);
                 }
             }
-            if (this.f21323d != null) {
-                d dVar = this.f21324e.get(i6);
-                if (this.f21323d.f21334e != null) {
-                    this.f21323d.f21334e.setText(dVar.bj());
+            if (this.f22110d != null) {
+                d dVar = this.f22111e.get(i4);
+                if (this.f22110d.f22121e != null) {
+                    this.f22110d.f22121e.setText(dVar.bj());
                 }
-                if (this.f21323d.f21335f != null) {
-                    this.f21323d.f21335f.setText(dVar.bk());
+                if (this.f22110d.f22122f != null) {
+                    this.f22110d.f22122f.setText(dVar.bk());
                 }
-                TextView textView = this.f21323d.f21336g;
+                TextView textView = this.f22110d.f22123g;
                 if (textView != null) {
                     String str = dVar.dj;
                     if (textView instanceof AnyThinkTextView) {
                         new b();
-                        ((AnyThinkTextView) this.f21323d.f21336g).setObjectAnimator(b.c(this.f21323d.f21336g));
+                        ((AnyThinkTextView) this.f22110d.f22123g).setObjectAnimator(b.c(this.f22110d.f22123g));
                     }
-                    this.f21323d.f21336g.setText(str);
+                    this.f22110d.f22123g.setText(str);
                 }
-                if (this.f21323d.f21338j != null) {
+                if (this.f22110d.f22125j != null) {
                     try {
                         Locale.getDefault().getLanguage();
-                        Context g4 = t.b().g();
-                        v.a(this.f21323d.f21338j, dVar, t.b().g(), false);
-                        com.anythink.expressad.foundation.g.d.b.a(g4).a(dVar.aH(), new AnonymousClass2(g4));
+                        Context g9 = t.b().g();
+                        v.a(this.f22110d.f22125j, dVar, t.b().g(), false);
+                        com.anythink.expressad.foundation.g.d.b.a(g9).a(dVar.aH(), new AnonymousClass2(g9));
                     } catch (Exception e9) {
                         e9.getMessage();
                     }
                 }
-                if (this.f21323d.f21337h != null) {
+                if (this.f22110d.f22124h != null) {
                     try {
-                        this.f21323d.f21337h.setText(t.b().g().getResources().getString(k.a(t.b().g(), "anythink_reward_viewed_text_str", k.f19636g)));
-                        this.f21323d.f21337h.setVisibility(0);
+                        this.f22110d.f22124h.setText(t.b().g().getResources().getString(k.a(t.b().g(), "anythink_reward_viewed_text_str", k.f20423g)));
+                        this.f22110d.f22124h.setVisibility(0);
                     } catch (Exception e10) {
                         e10.getMessage();
                     }
@@ -298,36 +298,36 @@ public final class a extends BaseAdapter {
         return view;
     }
 
-    private void a(int i6) {
-        List<d> list = this.f21324e;
-        if (list == null || this.f21323d == null || list.size() == 0) {
+    private void a(int i4) {
+        List<d> list = this.f22111e;
+        if (list == null || this.f22110d == null || list.size() == 0) {
             return;
         }
-        AnyThinkImageView anyThinkImageView = this.f21323d.f21332c;
+        AnyThinkImageView anyThinkImageView = this.f22110d.f22119c;
         if (anyThinkImageView != null) {
-            a(anyThinkImageView, this.f21324e.get(i6).bm(), false);
+            a(anyThinkImageView, this.f22111e.get(i4).bm(), false);
         }
-        RoundImageView roundImageView = this.f21323d.f21333d;
+        RoundImageView roundImageView = this.f22110d.f22120d;
         if (roundImageView != null) {
             roundImageView.setBorderRadius(25);
-            a(this.f21323d.f21333d, this.f21324e.get(i6).bl(), true);
+            a(this.f22110d.f22120d, this.f22111e.get(i4).bl(), true);
         }
-        double bf = this.f21324e.get(i6).bf();
+        double bf = this.f22111e.get(i4).bf();
         if (bf <= 0.0d) {
             bf = 5.0d;
         }
-        AnyThinkLevelLayoutView anyThinkLevelLayoutView = this.f21323d.i;
+        AnyThinkLevelLayoutView anyThinkLevelLayoutView = this.f22110d.i;
         if (anyThinkLevelLayoutView != null) {
-            anyThinkLevelLayoutView.setRatingAndUser(bf, this.f21324e.get(i6).bg());
-            this.f21323d.i.setOrientation(0);
+            anyThinkLevelLayoutView.setRatingAndUser(bf, this.f22111e.get(i4).bg());
+            this.f22110d.i.setOrientation(0);
         }
-        ATRotationView aTRotationView = this.f21323d.f21331b;
+        ATRotationView aTRotationView = this.f22110d.f22118b;
         if (aTRotationView != null) {
             aTRotationView.setWidthRatio(1.0f);
-            this.f21323d.f21331b.setHeightRatio(1.0f);
-            this.f21323d.f21331b.setAutoscroll(false);
+            this.f22110d.f22118b.setHeightRatio(1.0f);
+            this.f22110d.f22118b.setAutoscroll(false);
         }
-        AnyThinkImageView anyThinkImageView2 = this.f21323d.f21332c;
+        AnyThinkImageView anyThinkImageView2 = this.f22110d.f22119c;
         if (anyThinkImageView2 != null) {
             anyThinkImageView2.setCustomBorder(30, 30, 30, 30, 10, -1728053248);
         }
@@ -337,38 +337,38 @@ public final class a extends BaseAdapter {
         return k.a(t.b().g().getApplicationContext(), str, "id");
     }
 
-    private void b(int i6) {
-        if (this.f21323d != null) {
-            d dVar = this.f21324e.get(i6);
-            if (this.f21323d.f21334e != null) {
-                this.f21323d.f21334e.setText(dVar.bj());
+    private void b(int i4) {
+        if (this.f22110d != null) {
+            d dVar = this.f22111e.get(i4);
+            if (this.f22110d.f22121e != null) {
+                this.f22110d.f22121e.setText(dVar.bj());
             }
-            if (this.f21323d.f21335f != null) {
-                this.f21323d.f21335f.setText(dVar.bk());
+            if (this.f22110d.f22122f != null) {
+                this.f22110d.f22122f.setText(dVar.bk());
             }
-            TextView textView = this.f21323d.f21336g;
+            TextView textView = this.f22110d.f22123g;
             if (textView != null) {
                 String str = dVar.dj;
                 if (textView instanceof AnyThinkTextView) {
                     new b();
-                    ((AnyThinkTextView) this.f21323d.f21336g).setObjectAnimator(b.c(this.f21323d.f21336g));
+                    ((AnyThinkTextView) this.f22110d.f22123g).setObjectAnimator(b.c(this.f22110d.f22123g));
                 }
-                this.f21323d.f21336g.setText(str);
+                this.f22110d.f22123g.setText(str);
             }
-            if (this.f21323d.f21338j != null) {
+            if (this.f22110d.f22125j != null) {
                 try {
                     Locale.getDefault().getLanguage();
-                    Context g4 = t.b().g();
-                    v.a(this.f21323d.f21338j, dVar, t.b().g(), false);
-                    com.anythink.expressad.foundation.g.d.b.a(g4).a(dVar.aH(), new AnonymousClass2(g4));
+                    Context g9 = t.b().g();
+                    v.a(this.f22110d.f22125j, dVar, t.b().g(), false);
+                    com.anythink.expressad.foundation.g.d.b.a(g9).a(dVar.aH(), new AnonymousClass2(g9));
                 } catch (Exception e9) {
                     e9.getMessage();
                 }
             }
-            if (this.f21323d.f21337h != null) {
+            if (this.f22110d.f22124h != null) {
                 try {
-                    this.f21323d.f21337h.setText(t.b().g().getResources().getString(k.a(t.b().g(), "anythink_reward_viewed_text_str", k.f19636g)));
-                    this.f21323d.f21337h.setVisibility(0);
+                    this.f22110d.f22124h.setText(t.b().g().getResources().getString(k.a(t.b().g(), "anythink_reward_viewed_text_str", k.f20423g)));
+                    this.f22110d.f22124h.setVisibility(0);
                 } catch (Exception e10) {
                     e10.getMessage();
                 }
@@ -377,15 +377,15 @@ public final class a extends BaseAdapter {
     }
 
     private void a(View view) {
-        this.f21323d.f21330a = (RelativeLayout) view.findViewById(d(f21306f));
-        this.f21323d.f21334e = (TextView) view.findViewById(d(i));
-        this.f21323d.f21336g = (TextView) view.findViewById(d(f21309j));
-        this.f21323d.f21335f = (TextView) view.findViewById(d(f21313n));
-        this.f21323d.f21338j = (ImageView) view.findViewById(d(f21314o));
-        this.f21323d.f21337h = (TextView) view.findViewById(d(f21315p));
+        this.f22110d.f22117a = (RelativeLayout) view.findViewById(d(f22093f));
+        this.f22110d.f22121e = (TextView) view.findViewById(d(i));
+        this.f22110d.f22123g = (TextView) view.findViewById(d(f22096j));
+        this.f22110d.f22122f = (TextView) view.findViewById(d(f22100n));
+        this.f22110d.f22125j = (ImageView) view.findViewById(d(f22101o));
+        this.f22110d.f22124h = (TextView) view.findViewById(d(f22102p));
     }
 
-    private void a(final ImageView imageView, String str, final boolean z3) {
+    private void a(final ImageView imageView, String str, final boolean z6) {
         if (imageView == null) {
             return;
         }
@@ -405,12 +405,12 @@ public final class a extends BaseAdapter {
 
                 @Override // com.anythink.expressad.foundation.g.d.c
                 public final void a(String str2, String str3) {
-                    if (z3) {
+                    if (z6) {
                         imageView.setVisibility(8);
                     }
                 }
             });
-        } else if (z3) {
+        } else if (z6) {
             imageView.setVisibility(8);
         }
     }
@@ -420,14 +420,14 @@ public final class a extends BaseAdapter {
     }
 
     private View a() {
-        View inflate = LayoutInflater.from(t.b().g()).inflate(k.a(t.b().g().getApplicationContext(), f21316q, "layout"), (ViewGroup) null);
+        View inflate = LayoutInflater.from(t.b().g()).inflate(k.a(t.b().g().getApplicationContext(), f22103q, "layout"), (ViewGroup) null);
         C0139a c0139a = new C0139a();
-        this.f21323d = c0139a;
-        c0139a.f21332c = (AnyThinkImageView) inflate.findViewById(b(f21307g));
-        this.f21323d.f21333d = (RoundImageView) inflate.findViewById(b(f21308h));
-        this.f21323d.i = (AnyThinkLevelLayoutView) inflate.findViewById(b(f21310k));
-        this.f21323d.f21331b = (ATRotationView) inflate.findViewById(b(f21312m));
-        inflate.setTag(this.f21323d);
+        this.f22110d = c0139a;
+        c0139a.f22119c = (AnyThinkImageView) inflate.findViewById(b(f22094g));
+        this.f22110d.f22120d = (RoundImageView) inflate.findViewById(b(f22095h));
+        this.f22110d.i = (AnyThinkLevelLayoutView) inflate.findViewById(b(f22097k));
+        this.f22110d.f22118b = (ATRotationView) inflate.findViewById(b(f22099m));
+        inflate.setTag(this.f22110d);
         return inflate;
     }
 }

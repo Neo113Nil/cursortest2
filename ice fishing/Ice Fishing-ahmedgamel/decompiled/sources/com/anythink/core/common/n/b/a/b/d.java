@@ -1,6 +1,6 @@
 package com.anythink.core.common.n.b.a.b;
 
-import com.anythink.core.common.n.b.C0546a;
+import com.anythink.core.common.n.b.C0565a;
 import com.anythink.core.common.n.b.a.b.i;
 import com.anythink.core.common.n.b.ah;
 import com.anythink.core.common.n.b.r;
@@ -14,53 +14,53 @@ import java.util.List;
 final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    static final /* synthetic */ boolean f14968a = true;
+    static final /* synthetic */ boolean f15755a = true;
 
     /* renamed from: b, reason: collision with root package name */
-    private final j f14969b;
+    private final j f15756b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final C0546a f14970c;
+    private final C0565a f15757c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final f f14971d;
+    private final f f15758d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final com.anythink.core.common.n.b.e f14972e;
+    private final com.anythink.core.common.n.b.e f15759e;
 
     /* renamed from: f, reason: collision with root package name */
-    private final r f14973f;
+    private final r f15760f;
 
     /* renamed from: g, reason: collision with root package name */
-    private i.a f14974g;
+    private i.a f15761g;
 
     /* renamed from: h, reason: collision with root package name */
-    private final i f14975h;
+    private final i f15762h;
     private e i;
 
     /* renamed from: j, reason: collision with root package name */
-    private boolean f14976j;
+    private boolean f15763j;
 
     /* renamed from: k, reason: collision with root package name */
-    private ah f14977k;
+    private ah f15764k;
 
-    public d(j jVar, f fVar, C0546a c0546a, com.anythink.core.common.n.b.e eVar, r rVar) {
-        this.f14969b = jVar;
-        this.f14971d = fVar;
-        this.f14970c = c0546a;
-        this.f14972e = eVar;
-        this.f14973f = rVar;
-        this.f14975h = new i(c0546a, fVar.f15000a, eVar, rVar);
+    public d(j jVar, f fVar, C0565a c0565a, com.anythink.core.common.n.b.e eVar, r rVar) {
+        this.f15756b = jVar;
+        this.f15758d = fVar;
+        this.f15757c = c0565a;
+        this.f15759e = eVar;
+        this.f15760f = rVar;
+        this.f15762h = new i(c0565a, fVar.f15787a, eVar, rVar);
     }
 
     private boolean e() {
-        e eVar = this.f14969b.f15020a;
-        return eVar != null && eVar.f14982c == 0 && com.anythink.core.common.n.b.a.c.a(eVar.a().a().a(), this.f14970c.a());
+        e eVar = this.f15756b.f15807a;
+        return eVar != null && eVar.f15769c == 0 && com.anythink.core.common.n.b.a.c.a(eVar.a().a().a(), this.f15757c.a());
     }
 
-    public final com.anythink.core.common.n.b.a.c.c a(z zVar, w.a aVar, boolean z3) {
+    public final com.anythink.core.common.n.b.a.c.c a(z zVar, w.a aVar, boolean z6) {
         try {
-            return a(aVar.d(), aVar.e(), aVar.f(), zVar.b(), zVar.p(), z3).a(zVar, aVar);
+            return a(aVar.d(), aVar.e(), aVar.f(), zVar.b(), zVar.p(), z6).a(zVar, aVar);
         } catch (h e9) {
             b();
             throw e9;
@@ -71,107 +71,107 @@ final class d {
     }
 
     public final void b() {
-        if (!f14968a && Thread.holdsLock(this.f14971d)) {
+        if (!f15755a && Thread.holdsLock(this.f15758d)) {
             throw new AssertionError();
         }
-        synchronized (this.f14971d) {
-            this.f14976j = true;
+        synchronized (this.f15758d) {
+            this.f15763j = true;
         }
     }
 
     public final boolean c() {
-        boolean z3;
-        synchronized (this.f14971d) {
-            z3 = this.f14976j;
+        boolean z6;
+        synchronized (this.f15758d) {
+            z6 = this.f15763j;
         }
-        return z3;
+        return z6;
     }
 
     public final boolean d() {
-        synchronized (this.f14971d) {
+        synchronized (this.f15758d) {
             try {
-                boolean z3 = true;
-                if (this.f14977k != null) {
+                boolean z6 = true;
+                if (this.f15764k != null) {
                     return true;
                 }
                 if (e()) {
-                    this.f14977k = this.f14969b.f15020a.a();
+                    this.f15764k = this.f15756b.f15807a.a();
                     return true;
                 }
-                i.a aVar = this.f14974g;
-                if ((aVar == null || !aVar.a()) && !this.f14975h.a()) {
-                    z3 = false;
+                i.a aVar = this.f15761g;
+                if ((aVar == null || !aVar.a()) && !this.f15762h.a()) {
+                    z6 = false;
                 }
-                return z3;
+                return z6;
             } finally {
             }
         }
     }
 
-    private e a(int i, int i6, int i9, int i10, boolean z3, boolean z6) {
+    private e a(int i, int i4, int i6, int i9, boolean z6, boolean z9) {
         while (true) {
-            e a9 = a(i, i6, i9, i10, z3);
-            boolean z9 = z3;
-            int i11 = i10;
-            int i12 = i9;
-            int i13 = i6;
-            int i14 = i;
-            synchronized (this.f14971d) {
-                if (a9.f14983d == 0 && !a9.g()) {
+            e a9 = a(i, i4, i6, i9, z6);
+            boolean z10 = z6;
+            int i10 = i9;
+            int i11 = i6;
+            int i12 = i4;
+            int i13 = i;
+            synchronized (this.f15758d) {
+                if (a9.f15770d == 0 && !a9.g()) {
                     return a9;
                 }
-                if (a9.a(z6)) {
+                if (a9.a(z9)) {
                     return a9;
                 }
                 a9.e();
-                i = i14;
-                i6 = i13;
-                i9 = i12;
-                i10 = i11;
-                z3 = z9;
+                i = i13;
+                i4 = i12;
+                i6 = i11;
+                i9 = i10;
+                z6 = z10;
             }
         }
     }
 
-    private e a(int i, int i6, int i9, int i10, boolean z3) {
+    private e a(int i, int i4, int i6, int i9, boolean z6) {
         Socket socket;
         Socket e9;
         e eVar;
-        boolean z6;
-        ah ahVar;
         boolean z9;
+        ah ahVar;
+        boolean z10;
         List<ah> list;
         e eVar2;
         i.a aVar;
-        synchronized (this.f14971d) {
+        synchronized (this.f15758d) {
             try {
-                if (!this.f14969b.j()) {
-                    this.f14976j = false;
-                    j jVar = this.f14969b;
-                    e eVar3 = jVar.f15020a;
+                if (!this.f15756b.j()) {
+                    this.f15763j = false;
+                    j jVar = this.f15756b;
+                    e eVar3 = jVar.f15807a;
                     socket = null;
-                    e9 = (eVar3 == null || !eVar3.f14981b) ? null : jVar.e();
-                    j jVar2 = this.f14969b;
-                    eVar = jVar2.f15020a;
+                    e9 = (eVar3 == null || !eVar3.f15768b) ? null : jVar.e();
+                    j jVar2 = this.f15756b;
+                    eVar = jVar2.f15807a;
                     if (eVar == null) {
                         eVar = null;
                     }
                     if (eVar == null) {
-                        if (this.f14971d.a(this.f14970c, jVar2, null, false)) {
-                            eVar = this.f14969b.f15020a;
+                        if (this.f15758d.a(this.f15757c, jVar2, null, false)) {
+                            eVar = this.f15756b.f15807a;
                             ahVar = null;
-                            z6 = true;
+                            z9 = true;
                         } else {
-                            ahVar = this.f14977k;
+                            ahVar = this.f15764k;
                             if (ahVar != null) {
-                                this.f14977k = null;
+                                this.f15764k = null;
                             } else if (e()) {
-                                ahVar = this.f14969b.f15020a.a();
+                                ahVar = this.f15756b.f15807a.a();
                             }
-                            z6 = false;
+                            z9 = false;
                         }
                     }
-                    z6 = false;
+                    z9 = false;
                     ahVar = null;
                 } else {
                     throw new IOException("Canceled");
@@ -183,31 +183,31 @@ final class d {
         if (eVar != null) {
             return eVar;
         }
-        if (ahVar != null || ((aVar = this.f14974g) != null && aVar.a())) {
-            z9 = false;
+        if (ahVar != null || ((aVar = this.f15761g) != null && aVar.a())) {
+            z10 = false;
         } else {
-            this.f14974g = this.f14975h.b();
-            z9 = true;
+            this.f15761g = this.f15762h.b();
+            z10 = true;
         }
-        synchronized (this.f14971d) {
+        synchronized (this.f15758d) {
             try {
-                if (this.f14969b.j()) {
+                if (this.f15756b.j()) {
                     throw new IOException("Canceled");
                 }
-                if (z9) {
-                    list = this.f14974g.c();
-                    if (this.f14971d.a(this.f14970c, this.f14969b, list, false)) {
-                        eVar = this.f14969b.f15020a;
-                        z6 = true;
+                if (z10) {
+                    list = this.f15761g.c();
+                    if (this.f15758d.a(this.f15757c, this.f15756b, list, false)) {
+                        eVar = this.f15756b.f15807a;
+                        z9 = true;
                     }
                 } else {
                     list = null;
                 }
-                if (!z6) {
+                if (!z9) {
                     if (ahVar == null) {
-                        ahVar = this.f14974g.b();
+                        ahVar = this.f15761g.b();
                     }
-                    eVar = new e(this.f14971d, ahVar);
+                    eVar = new e(this.f15758d, ahVar);
                     this.i = eVar;
                 }
                 eVar2 = eVar;
@@ -215,22 +215,22 @@ final class d {
                 throw th;
             }
         }
-        if (z6) {
+        if (z9) {
             return eVar2;
         }
-        eVar2.a(i, i6, i9, i10, z3);
-        this.f14971d.f15000a.b(eVar2.a());
-        synchronized (this.f14971d) {
+        eVar2.a(i, i4, i6, i9, z6);
+        this.f15758d.f15787a.b(eVar2.a());
+        synchronized (this.f15758d) {
             try {
                 this.i = null;
-                if (this.f14971d.a(this.f14970c, this.f14969b, list, true)) {
-                    eVar2.f14981b = true;
+                if (this.f15758d.a(this.f15757c, this.f15756b, list, true)) {
+                    eVar2.f15768b = true;
                     socket = eVar2.b();
-                    eVar2 = this.f14969b.f15020a;
-                    this.f14977k = ahVar;
+                    eVar2 = this.f15756b.f15807a;
+                    this.f15764k = ahVar;
                 } else {
-                    this.f14971d.a(eVar2);
-                    this.f14969b.a(eVar2);
+                    this.f15758d.a(eVar2);
+                    this.f15756b.a(eVar2);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -241,7 +241,7 @@ final class d {
     }
 
     public final e a() {
-        if (f14968a || Thread.holdsLock(this.f14971d)) {
+        if (f15755a || Thread.holdsLock(this.f15758d)) {
             return this.i;
         }
         throw new AssertionError();

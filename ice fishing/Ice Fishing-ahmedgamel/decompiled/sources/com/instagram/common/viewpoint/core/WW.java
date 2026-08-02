@@ -13,14 +13,14 @@ public final class WW implements VA {
     public static byte[] A04;
     public static final String A05;
     public static volatile boolean A06;
-    public final C1836ge A00;
+    public final C1856ge A00;
     public final UR A01;
     public final V9 A02;
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 64);
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 64);
         }
         return new String(copyOfRange);
     }
@@ -35,39 +35,39 @@ public final class WW implements VA {
         A06 = false;
     }
 
-    public WW(C1836ge c1836ge) {
+    public WW(C1856ge c1856ge) {
         V8 dispatchCallback;
-        this.A00 = c1836ge;
-        if (AbstractC1292Ur.A0T(c1836ge)) {
-            this.A01 = UP.A00(c1836ge);
-            dispatchCallback = VF.A00(c1836ge, this.A01);
+        this.A00 = c1856ge;
+        if (AbstractC1312Ur.A0T(c1856ge)) {
+            this.A01 = UP.A00(c1856ge);
+            dispatchCallback = VF.A00(c1856ge, this.A01);
         } else {
-            AnonymousClass71 A01 = UP.A01(c1836ge);
-            dispatchCallback = VF.A01(c1836ge, A01);
+            AnonymousClass71 A01 = UP.A01(c1856ge);
+            dispatchCallback = VF.A01(c1856ge, A01);
             this.A01 = A01;
         }
-        this.A02 = new Wm(c1836ge, dispatchCallback);
+        this.A02 = new Wm(c1856ge, dispatchCallback);
         YG.A08.execute(new WY(this));
-        A04(c1836ge);
+        A04(c1856ge);
     }
 
-    public static synchronized VA A01(C1836ge c1836ge) {
+    public static synchronized VA A01(C1856ge c1856ge) {
         VA va;
         synchronized (WW.class) {
             if (A03 == null) {
-                A03 = new WW(c1836ge);
+                A03 = new WW(c1856ge);
             }
             va = A03;
         }
         return va;
     }
 
-    public static synchronized void A04(C1836ge c1836ge) {
+    public static synchronized void A04(C1856ge c1856ge) {
         synchronized (WW.class) {
             if (A06) {
                 return;
             }
-            c1836ge.A04().ACn();
+            c1856ge.A04().ACn();
             A06 = true;
         }
     }
@@ -82,21 +82,21 @@ public final class WW implements VA {
     }
 
     private void A06(V7 v72) {
-        switch (v72.A06()) {
-            case A0Q:
-            case A0K:
-            case A07:
-            case A0J:
-            case A0R:
-            case A0T:
-            case A0U:
-                C1253Te c1253Te = new C1253Te(new Exception(A02(36, 5, 86)));
-                c1253Te.A05(1);
+        switch (VB.A00[v72.A06().ordinal()]) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+                C1273Te c1273Te = new C1273Te(new Exception(A02(36, 5, 86)));
+                c1273Te.A05(1);
                 try {
-                    c1253Te.A07(new JSONObject().put(A02(48, 4, 41), v72.A06().toString()));
+                    c1273Te.A07(new JSONObject().put(A02(48, 4, 41), v72.A06().toString()));
                 } catch (JSONException unused) {
                 }
-                this.A00.A08().ABD(A02(41, 7, 112), AbstractC1252Td.A1H, c1253Te);
+                this.A00.A08().ABD(A02(41, 7, 112), AbstractC1272Td.A1H, c1273Te);
                 break;
         }
     }
@@ -260,6 +260,6 @@ public final class WW implements VA {
 
     @Override // com.instagram.common.viewpoint.core.VA
     public final void AGz(String str) {
-        new AsyncTaskC1811gF(this.A00).execute(str);
+        new AsyncTaskC1831gF(this.A00).execute(str);
     }
 }

@@ -14,10 +14,10 @@ public final class WE {
     public static String[] A01 = {"1xbaBrS", "A5o8L0K", "NCBBTtQ91bL4qNkC9", "VOiFjhrLKrSiOl", "IzdWV2mN1IZOPy8q", "dzpcam", "yMP3JjbsUfzn40YA", "FhpQzKItQmfQ6pj5K9dUgRwf2x"};
     public static final WE A02;
 
-    public static String A04(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 36);
+    public static String A04(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 36);
         }
         return new String(copyOfRange);
     }
@@ -39,10 +39,10 @@ public final class WE {
         return we;
     }
 
-    private RG A01(C1840gi c1840gi, JSONObject data, long j6) throws JSONException {
+    private RG A01(C1860gi c1860gi, JSONObject data, long j6) throws JSONException {
         JSONArray placements = data.getJSONArray(A04(190, 10, 45));
         JSONObject jSONObject = placements.getJSONObject(0);
-        C1272Tx A002 = C1272Tx.A00(jSONObject.getJSONObject(A04(124, 10, 90)));
+        C1292Tx A002 = C1292Tx.A00(jSONObject.getJSONObject(A04(124, 10, 90)));
         String optString = jSONObject.optString(A04(139, 14, 9));
         String A04 = A04(47, 5, 107);
         String str = null;
@@ -52,22 +52,22 @@ public final class WE {
         String adReportingConfig = jSONObject.optString(A04(0, 19, 51));
         String A043 = A04(153, 12, 16);
         String cache = jSONObject.has(A043) ? jSONObject.optString(A043) : null;
-        C1271Tw c1271Tw = new C1271Tw(A002, optString, adReportingConfig, cache, flashConfig, optString2, A06(jSONObject));
+        C1291Tw c1291Tw = new C1291Tw(A002, optString, adReportingConfig, cache, flashConfig, optString2, A06(jSONObject));
         String A044 = A04(26, 3, 93);
         if (jSONObject.has(A044)) {
             JSONArray jSONArray = jSONObject.getJSONArray(A044);
             int i = 0;
             while (i < jSONArray.length()) {
                 JSONObject jSONObject2 = jSONArray.getJSONObject(i);
-                VK.A06(c1840gi, jSONObject2, j6, str);
+                VK.A06(c1860gi, jSONObject2, j6, str);
                 String optString3 = jSONObject2.optString(A04(19, 7, 8));
                 String optString4 = jSONObject2.optString(A04(90, 15, 44));
                 JSONObject ad = jSONObject2.optJSONObject(A04(68, 4, 58));
-                JSONArray optJSONArray = jSONObject2.optJSONArray(A04(BaseATView.a.f9772H, 8, 121));
+                JSONArray optJSONArray = jSONObject2.optJSONArray(A04(BaseATView.a.f10558H, 8, 121));
                 if (ad != null) {
-                    c1271Tw.A0F(new C1269Tu(optString3, optString4, ad, optJSONArray));
+                    c1291Tw.A0F(new C1289Tu(optString3, optString4, ad, optJSONArray));
                 } else {
-                    InterfaceC1066Lt A0F = c1840gi.A0F();
+                    InterfaceC1086Lt A0F = c1860gi.A0F();
                     int errorCode = AdErrorType.UNKNOWN_ERROR.getErrorCode();
                     String[] strArr = A01;
                     if (strArr[0].length() != strArr[1].length()) {
@@ -82,10 +82,10 @@ public final class WE {
         }
         String A045 = A04(52, 12, 46);
         if (jSONObject.has(A045)) {
-            c1271Tw.A0G(jSONObject.getJSONObject(A045));
+            c1291Tw.A0G(jSONObject.getJSONObject(A045));
         }
         String anValidationUuid = data.optString(A04(29, 18, 33));
-        return new RG(c1271Tw, anValidationUuid);
+        return new RG(c1291Tw, anValidationUuid);
     }
 
     private R4 A02(JSONObject jSONObject) {
@@ -97,12 +97,12 @@ public final class WE {
         String A042 = A04(47, 5, 107);
         try {
             JSONObject jSONObject2 = jSONObject.getJSONArray(A04(190, 10, 45)).getJSONObject(0);
-            C1272Tx A002 = C1272Tx.A00(jSONObject2.getJSONObject(A04(124, 10, 90)));
+            C1292Tx A002 = C1292Tx.A00(jSONObject2.getJSONObject(A04(124, 10, 90)));
             String optString = jSONObject2.optString(A04(139, 14, 9));
             String optString2 = jSONObject2.has(A042) ? jSONObject2.optString(A042) : null;
             String cache = jSONObject2.has(A04) ? jSONObject2.optString(A04) : null;
             String featureConfig = jSONObject2.optString(A04(0, 19, 51));
-            return new R4(jSONObject.optString(A04(183, 7, 16), A04(0, 0, 92)), jSONObject.optInt(A04(64, 4, 96), 0), new C1271Tw(A002, optString, featureConfig, null, optString2, cache, A06(jSONObject2)));
+            return new R4(jSONObject.optString(A04(183, 7, 16), A04(0, 0, 92)), jSONObject.optInt(A04(64, 4, 96), 0), new C1291Tw(A002, optString, featureConfig, null, optString2, cache, A06(jSONObject2)));
         } catch (JSONException unused) {
             return A02(jSONObject);
         }
@@ -117,7 +117,7 @@ public final class WE {
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    public final WG A07(C1840gi c1840gi, String str, long j6) throws JSONException {
+    public final WG A07(C1860gi c1860gi, String str, long j6) throws JSONException {
         char c9;
         if (!TextUtils.isEmpty(str)) {
             JSONObject jSONObject = new JSONObject(str);
@@ -145,7 +145,7 @@ public final class WE {
             }
             switch (c9) {
                 case 0:
-                    return A01(c1840gi, jSONObject, j6);
+                    return A01(c1860gi, jSONObject, j6);
                 case 1:
                     return A03(jSONObject);
                 default:

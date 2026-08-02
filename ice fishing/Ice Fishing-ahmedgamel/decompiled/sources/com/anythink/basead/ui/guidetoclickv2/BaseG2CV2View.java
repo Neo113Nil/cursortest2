@@ -12,64 +12,64 @@ import com.anythink.core.common.d.t;
 public abstract class BaseG2CV2View extends RelativeLayout {
 
     /* renamed from: a, reason: collision with root package name */
-    protected b f10832a;
+    protected b f11618a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected Runnable f10833b;
+    protected Runnable f11619b;
 
     /* renamed from: c, reason: collision with root package name */
-    protected c.a f10834c;
+    protected c.a f11620c;
 
     /* renamed from: d, reason: collision with root package name */
-    private long f10835d;
+    private long f11621d;
 
     /* renamed from: e, reason: collision with root package name */
-    private long f10836e;
+    private long f11622e;
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f10837f;
+    private boolean f11623f;
 
     /* renamed from: g, reason: collision with root package name */
-    private boolean f10838g;
+    private boolean f11624g;
 
     public class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final int f10840a = 1;
+        public static final int f11626a = 1;
 
         /* renamed from: b, reason: collision with root package name */
-        public static final int f10841b = 2;
+        public static final int f11627b = 2;
 
         /* renamed from: c, reason: collision with root package name */
-        public static final int f10842c = 3;
+        public static final int f11628c = 3;
 
         /* renamed from: d, reason: collision with root package name */
-        public static final int f10843d = 4;
+        public static final int f11629d = 4;
 
         /* renamed from: e, reason: collision with root package name */
-        public static final int f10844e = 5;
+        public static final int f11630e = 5;
 
         /* renamed from: f, reason: collision with root package name */
-        public static final int f10845f = 6;
+        public static final int f11631f = 6;
 
         /* renamed from: g, reason: collision with root package name */
-        public static final int f10846g = 7;
+        public static final int f11632g = 7;
 
         /* renamed from: h, reason: collision with root package name */
-        public static final int f10847h = 8;
+        public static final int f11633h = 8;
         public static final int i = 9;
 
         /* renamed from: j, reason: collision with root package name */
-        public static final int f10848j = 10;
+        public static final int f11634j = 10;
 
         /* renamed from: k, reason: collision with root package name */
-        public static final int f10849k = 11;
+        public static final int f11635k = 11;
 
         /* renamed from: l, reason: collision with root package name */
-        public static final int f10850l = 12;
+        public static final int f11636l = 12;
 
         /* renamed from: m, reason: collision with root package name */
-        public static final int f10851m = 13;
+        public static final int f11637m = 13;
 
         private a() {
         }
@@ -88,17 +88,17 @@ public abstract class BaseG2CV2View extends RelativeLayout {
     public void a() {
     }
 
-    public abstract void a(int i, int i6);
+    public abstract void a(int i, int i4);
 
     public void b() {
     }
 
     public final void c() {
-        if (this.f10832a == null || this.f10837f || !canStartNextAnim()) {
+        if (this.f11618a == null || this.f11623f || !canStartNextAnim()) {
             return;
         }
-        this.f10837f = true;
-        this.f10832a.a();
+        this.f11623f = true;
+        this.f11618a.a();
         b();
     }
 
@@ -106,28 +106,28 @@ public abstract class BaseG2CV2View extends RelativeLayout {
         return true;
     }
 
-    public void init(long j6, int i, int i6, c.a aVar, b bVar) {
-        this.f10835d = j6;
-        this.f10834c = aVar;
-        this.f10832a = bVar;
-        this.f10837f = false;
-        this.f10833b = new Runnable() { // from class: com.anythink.basead.ui.guidetoclickv2.BaseG2CV2View.1
+    public void init(long j6, int i, int i4, c.a aVar, b bVar) {
+        this.f11621d = j6;
+        this.f11620c = aVar;
+        this.f11618a = bVar;
+        this.f11623f = false;
+        this.f11619b = new Runnable() { // from class: com.anythink.basead.ui.guidetoclickv2.BaseG2CV2View.1
             @Override // java.lang.Runnable
             public final void run() {
                 BaseG2CV2View.this.c();
             }
         };
-        a(i, i6);
+        a(i, i4);
     }
 
     public void pauseAnimPlay() {
-        if (this.f10838g) {
-            this.f10838g = false;
-            long j6 = this.f10835d;
+        if (this.f11624g) {
+            this.f11624g = false;
+            long j6 = this.f11621d;
             if (j6 > 0) {
-                this.f10835d = Math.max(j6 - (SystemClock.elapsedRealtime() - this.f10836e), 0L);
+                this.f11621d = Math.max(j6 - (SystemClock.elapsedRealtime() - this.f11622e), 0L);
             }
-            t.b().d(this.f10833b);
+            t.b().d(this.f11619b);
             b();
         }
     }
@@ -136,16 +136,16 @@ public abstract class BaseG2CV2View extends RelativeLayout {
     }
 
     public void resumeAnimPlay() {
-        if (this.f10838g) {
+        if (this.f11624g) {
             return;
         }
-        this.f10838g = true;
-        this.f10836e = SystemClock.elapsedRealtime();
-        if (this.f10835d <= 0) {
-            this.f10832a.a();
+        this.f11624g = true;
+        this.f11622e = SystemClock.elapsedRealtime();
+        if (this.f11621d <= 0) {
+            this.f11618a.a();
         } else {
             a();
-            t.b().a(this.f10833b, this.f10835d);
+            t.b().a(this.f11619b, this.f11621d);
         }
     }
 
@@ -155,7 +155,7 @@ public abstract class BaseG2CV2View extends RelativeLayout {
 
     public BaseG2CV2View(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f10835d = f.f7187a;
-        this.f10838g = false;
+        this.f11621d = f.f7973a;
+        this.f11624g = false;
     }
 }

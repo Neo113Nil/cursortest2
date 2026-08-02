@@ -9,7 +9,7 @@ import android.widget.ImageView;
 public class AnyThinkDyImageView extends ImageView {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f21355a = "AnyThinkDyImageView";
+    private static final String f22142a = "AnyThinkDyImageView";
 
     public AnyThinkDyImageView(Context context) {
         super(context);

@@ -19,20 +19,20 @@ public final class C8R {
     public static final C8R A05;
 
     @MetaExoPlayerCustomization(type = {"FEATURE_LOGIC"}, value = "Prevent throwing when building the map")
-    public static final AbstractC2292oX<Integer, Integer> A06;
+    public static final AbstractC2312oX<Integer, Integer> A06;
     public final int A00;
     public final int[] A01;
 
-    public static String A05(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 36);
+    public static String A05(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 36);
         }
         return new String(copyOfRange);
     }
 
     public static void A06() {
-        byte[] bArr = {5, 9, 90, 92, 89, 89, 70, 91, 93, 76, 77, 108, 71, 74, 70, 77, c.f16317b, 71, 78, 90, 20, 81, 125, 113, 106, Byte.MAX_VALUE, 126, 6, 50, 35, 46, 40, 4, 38, 55, 38, 37, 46, 43, 46, 51, 46, 34, 52, 28, 42, 38, c.f16318c, 4, 47, 38, 41, 41, 34, 43, 4, 40, 50, 41, 51, 122, 123, 74, 66, 76, 78, 74, 68, 52, 59, 49, 39, 58, 60, 49, 123, 56, 48, 49, 60, 52, 123, 52, 54, 33, 60, 58, 59, 123, 29, 17, 24, 28, 10, 20, 0, 17, 28, 26, 10, 5, 25, 0, 18, 30, 17, 27, 13, 16, 22, 27, 81, 18, 26, 27, 22, 30, 81, 26, 7, 11, 13, 30, 81, 62, 42, 59, 54, 48, 32, 47, 51, 42, 56, 32, 44, 43, 62, 43, 58, 114, 125, 119, 97, 124, 122, 119, 61, 126, 118, 119, 122, 114, 61, 118, 107, 103, 97, 114, 61, 86, 93, 80, 92, 87, 90, 93, 84, c.f16317b, 17, 30, 20, 2, 31, 25, 20, 94, 29, 21, 20, 25, 17, 94, 21, 8, 4, 2, 17, 94, 61, 49, 40, 47, 51, 56, 49, 62, 62, 53, 60, 47, 51, c.f16318c, 37, 62, 36, 123, 102, 106, 123, 108, 112, Byte.MAX_VALUE, 114, 65, 109, 107, 108, 108, 113, 107, 112, 122, 65, 109, 113, 107, 112, 122, 65, 123, 112, Byte.MAX_VALUE, 124, 114, 123, 122, 117, 102, 116, 102};
+        byte[] bArr = {5, 9, 90, 92, 89, 89, 70, 91, 93, 76, 77, 108, 71, 74, 70, 77, c.f17104b, 71, 78, 90, 20, 81, 125, 113, 106, Byte.MAX_VALUE, 126, 6, 50, 35, 46, 40, 4, 38, 55, 38, 37, 46, 43, 46, 51, 46, 34, 52, 28, 42, 38, c.f17105c, 4, 47, 38, 41, 41, 34, 43, 4, 40, 50, 41, 51, 122, 123, 74, 66, 76, 78, 74, 68, 52, 59, 49, 39, 58, 60, 49, 123, 56, 48, 49, 60, 52, 123, 52, 54, 33, 60, 58, 59, 123, 29, 17, 24, 28, 10, 20, 0, 17, 28, 26, 10, 5, 25, 0, 18, 30, 17, 27, 13, 16, 22, 27, 81, 18, 26, 27, 22, 30, 81, 26, 7, 11, 13, 30, 81, 62, 42, 59, 54, 48, 32, 47, 51, 42, 56, 32, 44, 43, 62, 43, 58, 114, 125, 119, 97, 124, 122, 119, 61, 126, 118, 119, 122, 114, 61, 118, 107, 103, 97, 114, 61, 86, 93, 80, 92, 87, 90, 93, 84, c.f17104b, 17, 30, 20, 2, 31, 25, 20, 94, 29, 21, 20, 25, 17, 94, 21, 8, 4, 2, 17, 94, 61, 49, 40, 47, 51, 56, 49, 62, 62, 53, 60, 47, 51, c.f17105c, 37, 62, 36, 123, 102, 106, 123, 108, 112, Byte.MAX_VALUE, 114, 65, 109, 107, 108, 108, 113, 107, 112, 122, 65, 109, 113, 107, 112, 122, 65, 123, 112, Byte.MAX_VALUE, 124, 114, 123, 122, 117, 102, 116, 102};
         String[] strArr = A03;
         if (strArr[7].length() != strArr[2].length()) {
             throw new RuntimeException();
@@ -47,7 +47,7 @@ public final class C8R {
         A06();
         A04 = new C8R(new int[]{2}, 8);
         A05 = new C8R(new int[]{2, 5, 6}, 8);
-        A06 = new C2290oV().A05(5, 6).A05(17, 6).A05(7, 6).A05(18, 6).A05(6, 8).A05(8, 8).A05(14, 8).A07();
+        A06 = new C2310oV().A05(5, 6).A05(17, 6).A05(7, 6).A05(18, 6).A05(6, 8).A05(8, 8).A05(14, 8).A07();
     }
 
     public C8R(int[] iArr, int i) {
@@ -95,9 +95,9 @@ public final class C8R {
         return C5C.A01(i);
     }
 
-    public static int A01(int i, int i6) {
+    public static int A01(int i, int i4) {
         if (C5C.A02 >= 29) {
-            return C8Q.A00(i, i6);
+            return C8Q.A00(i, i4);
         }
         Integer orDefault = A06.getOrDefault(Integer.valueOf(i), 0);
         if (A03[1].charAt(21) == '1') {
@@ -106,7 +106,7 @@ public final class C8R {
         String[] strArr = A03;
         strArr[5] = "4LwyKZxV9xzADs3TG4HwkSSUmTpMdFHu";
         strArr[4] = "TU5gCkHzG3bOz42CgVjxZ9enmRnhlx9h";
-        return ((Integer) AbstractC06243y.A01(orDefault)).intValue();
+        return ((Integer) AbstractC06443y.A01(orDefault)).intValue();
     }
 
     public static C8R A02(Context context) {
@@ -115,7 +115,7 @@ public final class C8R {
     }
 
     public static C8R A03(Context context, Intent intent) {
-        if (A07() && Settings.Global.getInt(context.getContentResolver(), A05(BaseATView.a.f9769E, 31, 58), 0) == 1) {
+        if (A07() && Settings.Global.getInt(context.getContentResolver(), A05(BaseATView.a.f10555E, 31, 58), 0) == 1) {
             return A05;
         }
         if (C5C.A02 >= 29 && (C5C.A18(context) || C5C.A17(context))) {
@@ -159,10 +159,10 @@ public final class C8R {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Pair<Integer, Integer> A09(C2400qI c2400qI) {
+    public final Pair<Integer, Integer> A09(C2420qI c2420qI) {
         int encoding;
         int channelCount;
-        int A032 = C3J.A03((String) AbstractC06243y.A01(c2400qI.A0W), c2400qI.A0R);
+        int A032 = C3J.A03((String) AbstractC06443y.A01(c2420qI.A0W), c2420qI.A0R);
         if (!A06.containsKey(Integer.valueOf(A032))) {
             return null;
         }
@@ -174,7 +174,7 @@ public final class C8R {
         if (!A0A(A032)) {
             return null;
         }
-        int i = c2400qI.A06;
+        int i = c2420qI.A06;
         String[] strArr = A03;
         String str = strArr[7];
         String str2 = strArr[2];
@@ -187,7 +187,7 @@ public final class C8R {
         strArr2[6] = "4KpokJkqLEvhjIg40C82zBlUQNBiJ4Nh";
         strArr2[3] = "qYsciqDft0GPV223mm2sV4x00h8r6ql4";
         if (i == -1 || A032 == 18) {
-            int i6 = c2400qI.A0G;
+            int i4 = c2420qI.A0G;
             if (A03[1].charAt(21) != '1') {
                 A03[0] = "PeibxLIDNQepcsKrVJzxdcnxdYsUjYYR";
             } else {
@@ -197,7 +197,7 @@ public final class C8R {
             }
             channelCount = A01(A032, encoding);
         } else {
-            channelCount = c2400qI.A06;
+            channelCount = c2420qI.A06;
             int encoding3 = this.A00;
             if (channelCount > encoding3) {
                 return null;
@@ -214,8 +214,8 @@ public final class C8R {
         return Arrays.binarySearch(this.A01, i) >= 0;
     }
 
-    public final boolean A0B(C2400qI c2400qI) {
-        return A09(c2400qI) != null;
+    public final boolean A0B(C2420qI c2420qI) {
+        return A09(c2420qI) != null;
     }
 
     public final boolean equals(Object obj) {

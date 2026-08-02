@@ -6,33 +6,33 @@ import com.anythink.expressad.advanced.js.NativeAdvancedJsUtils;
 public final class Rt {
 
     /* renamed from: a, reason: collision with root package name */
-    public final T2.a f27364a;
+    public final V2.a f28078a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final C3153eo f27365b;
+    public final C3230fo f28079b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Object f27366c = new Object();
+    public final Object f28080c = new Object();
 
     /* renamed from: e, reason: collision with root package name */
-    public volatile int f27368e = 1;
+    public volatile int f28082e = 1;
 
     /* renamed from: d, reason: collision with root package name */
-    public volatile long f27367d = 0;
+    public volatile long f28081d = 0;
 
-    public Rt(T2.a aVar, C3153eo c3153eo) {
-        this.f27364a = aVar;
-        this.f27365b = c3153eo;
+    public Rt(V2.a aVar, C3230fo c3230fo) {
+        this.f28078a = aVar;
+        this.f28079b = c3230fo;
     }
 
-    public final void a(boolean z3) {
-        if (((Boolean) q2.r.f40207e.f40210c.a(AbstractC3569ma.Ge)).booleanValue()) {
-            S0.e a9 = this.f27365b.a();
-            a9.v(NativeAdvancedJsUtils.f17906p, "mbs_state");
-            a9.v("mbs_state", true != z3 ? "0" : "1");
-            a9.y();
+    public final void a(boolean z6) {
+        if (((Boolean) s2.r.f40506e.f40509c.a(AbstractC3592ma.Ge)).booleanValue()) {
+            S0.e a9 = this.f28079b.a();
+            a9.M(NativeAdvancedJsUtils.f18693p, "mbs_state");
+            a9.M("mbs_state", true != z6 ? "0" : "1");
+            a9.N();
         }
-        if (z3) {
+        if (z6) {
             c(1, 2);
         } else {
             c(2, 1);
@@ -40,13 +40,13 @@ public final class Rt {
     }
 
     public final void b() {
-        this.f27364a.getClass();
+        this.f28078a.getClass();
         long currentTimeMillis = System.currentTimeMillis();
-        synchronized (this.f27366c) {
+        synchronized (this.f28080c) {
             try {
-                if (this.f27368e == 3) {
-                    if (this.f27367d + ((Long) q2.r.f40207e.f40210c.a(AbstractC3569ma.f32121R6)).longValue() <= currentTimeMillis) {
-                        this.f27368e = 1;
+                if (this.f28082e == 3) {
+                    if (this.f28081d + ((Long) s2.r.f40506e.f40509c.a(AbstractC3592ma.f32900R6)).longValue() <= currentTimeMillis) {
+                        this.f28082e = 1;
                     }
                 }
             } catch (Throwable th) {
@@ -55,19 +55,19 @@ public final class Rt {
         }
     }
 
-    public final void c(int i, int i6) {
+    public final void c(int i, int i4) {
         b();
-        Object obj = this.f27366c;
-        this.f27364a.getClass();
+        Object obj = this.f28080c;
+        this.f28078a.getClass();
         long currentTimeMillis = System.currentTimeMillis();
         synchronized (obj) {
             try {
-                if (this.f27368e != i) {
+                if (this.f28082e != i) {
                     return;
                 }
-                this.f27368e = i6;
-                if (this.f27368e == 3) {
-                    this.f27367d = currentTimeMillis;
+                this.f28082e = i4;
+                if (this.f28082e == 3) {
+                    this.f28081d = currentTimeMillis;
                 }
             } catch (Throwable th) {
                 throw th;

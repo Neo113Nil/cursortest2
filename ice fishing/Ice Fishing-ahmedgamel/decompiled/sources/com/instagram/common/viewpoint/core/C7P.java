@@ -10,15 +10,15 @@ import java.util.List;
 
 /* renamed from: com.facebook.ads.redexgen.X.7P, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public final class C7P extends AbstractC1894ha {
+public final class C7P extends AbstractC1914ha {
     public static TimeInterpolator A0B;
     public static String[] A0C = {"5", "w4FteHoxEZNBcBknXysU1QdwgOlgu", "XTfmSewcFvVIPqcU8HiF2JwhBroc2", "gTOT0dcLAsFp3JXaujmr6eSvv", "MioH3rC6822UBFONR3LUPujrkCbYq", "9Rk7JcSITmrZ17kamSQ7i6v9RKdnt", "plmSW6Ql", "PR6dCqey"};
     public ArrayList<RK> A0A = new ArrayList<>();
     public ArrayList<RK> A07 = new ArrayList<>();
-    public ArrayList<C1173Qa> A09 = new ArrayList<>();
+    public ArrayList<C1193Qa> A09 = new ArrayList<>();
     public ArrayList<QZ> A08 = new ArrayList<>();
     public ArrayList<ArrayList<RK>> A01 = new ArrayList<>();
-    public ArrayList<ArrayList<C1173Qa>> A05 = new ArrayList<>();
+    public ArrayList<ArrayList<C1193Qa>> A05 = new ArrayList<>();
     public ArrayList<ArrayList<QZ>> A03 = new ArrayList<>();
     public ArrayList<RK> A00 = new ArrayList<>();
     public ArrayList<RK> A04 = new ArrayList<>();
@@ -33,15 +33,15 @@ public final class C7P extends AbstractC1894ha {
     	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    @Override // com.instagram.common.viewpoint.core.AbstractC1196Qy
+    @Override // com.instagram.common.viewpoint.core.AbstractC1216Qy
     public final void A0H() {
         int size;
         for (int size2 = this.A09.size() - 1; size2 >= 0; size2--) {
-            C1173Qa c1173Qa = this.A09.get(size2);
-            View view = c1173Qa.A04.A0H;
+            C1193Qa c1193Qa = this.A09.get(size2);
+            View view = c1193Qa.A04.A0H;
             view.setTranslationY(0.0f);
             view.setTranslationX(0.0f);
-            A0U(c1173Qa.A04);
+            A0U(c1193Qa.A04);
             this.A09.remove(size2);
         }
         for (int size3 = this.A0A.size() - 1; size3 >= 0; size3--) {
@@ -68,13 +68,13 @@ public final class C7P extends AbstractC1894ha {
         this.A08.clear();
         if (A0M()) {
             for (int size6 = this.A05.size() - 1; size6 >= 0; size6--) {
-                ArrayList<C1173Qa> arrayList2 = this.A05.get(size6);
+                ArrayList<C1193Qa> arrayList2 = this.A05.get(size6);
                 for (int size7 = arrayList2.size() - 1; size7 >= 0; size7--) {
-                    C1173Qa c1173Qa2 = arrayList2.get(size7);
-                    View view2 = c1173Qa2.A04.A0H;
+                    C1193Qa c1193Qa2 = arrayList2.get(size7);
+                    View view2 = c1193Qa2.A04.A0H;
                     view2.setTranslationY(0.0f);
                     view2.setTranslationX(0.0f);
-                    A0U(c1173Qa2.A04);
+                    A0U(c1193Qa2.A04);
                     arrayList2.remove(size7);
                     if (arrayList2.isEmpty()) {
                         this.A05.remove(arrayList2);
@@ -133,25 +133,25 @@ public final class C7P extends AbstractC1894ha {
     /* JADX WARN: Failed to parse debug info
     java.lang.ArrayIndexOutOfBoundsException
      */
-    @Override // com.instagram.common.viewpoint.core.AbstractC1894ha
-    public final boolean A0Z(RK rk, int i, int i6, int i9, int i10) {
+    @Override // com.instagram.common.viewpoint.core.AbstractC1914ha
+    public final boolean A0Z(RK rk, int i, int i4, int i6, int i9) {
         View view = rk.A0H;
         int translationX = i + ((int) rk.A0H.getTranslationX());
-        int translationY = i6 + ((int) rk.A0H.getTranslationY());
+        int translationY = i4 + ((int) rk.A0H.getTranslationY());
         A02(rk);
-        int i11 = i9 - translationX;
-        int i12 = i10 - translationY;
-        if (i11 == 0 && i12 == 0) {
+        int i10 = i6 - translationX;
+        int i11 = i9 - translationY;
+        if (i10 == 0 && i11 == 0) {
             A0U(rk);
             return false;
         }
+        if (i10 != 0) {
+            view.setTranslationX(-i10);
+        }
         if (i11 != 0) {
-            view.setTranslationX(-i11);
+            view.setTranslationY(-i11);
         }
-        if (i12 != 0) {
-            view.setTranslationY(-i12);
-        }
-        this.A09.add(new C1173Qa(rk, translationX, translationY, i9, i10));
+        this.A09.add(new C1193Qa(rk, translationX, translationY, i6, i9));
         return true;
     }
 
@@ -196,7 +196,7 @@ public final class C7P extends AbstractC1894ha {
     }
 
     private boolean A05(QZ qz, RK rk) {
-        boolean z3 = false;
+        boolean z6 = false;
         if (qz.A04 == rk) {
             qz.A04 = null;
         } else {
@@ -210,7 +210,7 @@ public final class C7P extends AbstractC1894ha {
             strArr2[3] = "q2hYYatvKRTsdUwOPBYP5pb4s";
             if (rk2 == rk) {
                 qz.A05 = null;
-                z3 = true;
+                z6 = true;
             } else {
                 return false;
             }
@@ -218,24 +218,24 @@ public final class C7P extends AbstractC1894ha {
         rk.A0H.setAlpha(1.0f);
         rk.A0H.setTranslationX(0.0f);
         rk.A0H.setTranslationY(0.0f);
-        A0W(rk, z3);
+        A0W(rk, z6);
         return true;
     }
 
     /* JADX WARN: Incorrect condition in loop: B:10:0x0033 */
-    @Override // com.instagram.common.viewpoint.core.AbstractC1196Qy
+    @Override // com.instagram.common.viewpoint.core.AbstractC1216Qy
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void A0I() {
-        boolean z3 = !this.A0A.isEmpty();
+        boolean z6 = !this.A0A.isEmpty();
         boolean removalsPending = this.A09.isEmpty();
-        boolean z6 = !removalsPending;
+        boolean z9 = !removalsPending;
         boolean removalsPending2 = this.A08.isEmpty();
-        boolean z9 = !removalsPending2;
+        boolean z10 = !removalsPending2;
         boolean removalsPending3 = this.A07.isEmpty();
-        boolean z10 = !removalsPending3;
-        if (!z3 && !z6 && !z10 && !z9) {
+        boolean z11 = !removalsPending3;
+        if (!z6 && !z9 && !z11 && !z10) {
             return;
         }
         Iterator<RK> it = this.A0A.iterator();
@@ -243,45 +243,45 @@ public final class C7P extends AbstractC1894ha {
             A01(it.next());
         }
         this.A0A.clear();
-        if (z6) {
-            ArrayList<C1173Qa> arrayList = new ArrayList<>();
+        if (z9) {
+            ArrayList<C1193Qa> arrayList = new ArrayList<>();
             arrayList.addAll(this.A09);
             this.A05.add(arrayList);
             this.A09.clear();
             QR qr = new QR(this, arrayList);
-            if (z3) {
+            if (z6) {
                 Ph.A0E(arrayList.get(0).A04.A0H, qr, A0D());
             } else {
                 qr.run();
             }
         }
-        if (z9) {
+        if (z10) {
             ArrayList<QZ> arrayList2 = new ArrayList<>();
             arrayList2.addAll(this.A08);
             this.A03.add(arrayList2);
             this.A08.clear();
             QS qs = new QS(this, arrayList2);
-            if (z3) {
+            if (z6) {
                 Ph.A0E(arrayList2.get(0).A05.A0H, qs, A0D());
             } else {
                 qs.run();
             }
         }
-        if (z10) {
+        if (z11) {
             ArrayList<RK> arrayList3 = new ArrayList<>();
             arrayList3.addAll(this.A07);
             this.A01.add(arrayList3);
             this.A07.clear();
             QT qt = new QT(this, arrayList3);
-            if (z3 || z6 || z9) {
-                Ph.A0E(arrayList3.get(0).A0H, qt, Math.max(z6 ? A0C() : 0L, z9 ? A0B() : 0L) + (z3 ? A0D() : 0L));
+            if (z6 || z9 || z10) {
+                Ph.A0E(arrayList3.get(0).A0H, qt, Math.max(z9 ? A0C() : 0L, z10 ? A0B() : 0L) + (z6 ? A0D() : 0L));
             } else {
                 qt.run();
             }
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1196Qy
+    @Override // com.instagram.common.viewpoint.core.AbstractC1216Qy
     public final void A0L(RK rk) {
         View view = rk.A0H;
         view.animate().cancel();
@@ -309,30 +309,30 @@ public final class C7P extends AbstractC1894ha {
             strArr2[5] = "IuT2zeZcrCaCkdpAEhiSgQgKuQzMH";
             A0T(rk);
         }
-        for (int i6 = this.A03.size() - 1; i6 >= 0; i6--) {
-            ArrayList<QZ> arrayList = this.A03.get(i6);
+        for (int i4 = this.A03.size() - 1; i4 >= 0; i4--) {
+            ArrayList<QZ> arrayList = this.A03.get(i4);
             A04(arrayList, rk);
             if (arrayList.isEmpty()) {
-                this.A03.remove(i6);
+                this.A03.remove(i4);
             }
         }
         for (int size = this.A05.size() - 1; size >= 0; size--) {
-            ArrayList<C1173Qa> arrayList2 = this.A05.get(size);
-            int i9 = arrayList2.size() - 1;
+            ArrayList<C1193Qa> arrayList2 = this.A05.get(size);
+            int i6 = arrayList2.size() - 1;
             while (true) {
-                if (i9 < 0) {
+                if (i6 < 0) {
                     break;
                 }
-                if (arrayList2.get(i9).A04 == rk) {
+                if (arrayList2.get(i6).A04 == rk) {
                     view.setTranslationY(0.0f);
                     view.setTranslationX(0.0f);
                     A0U(rk);
-                    arrayList2.remove(i9);
+                    arrayList2.remove(i6);
                     if (arrayList2.isEmpty()) {
                         this.A05.remove(size);
                     }
                 } else {
-                    i9--;
+                    i6--;
                 }
             }
         }
@@ -353,17 +353,17 @@ public final class C7P extends AbstractC1894ha {
         A0b();
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1196Qy
+    @Override // com.instagram.common.viewpoint.core.AbstractC1216Qy
     public final boolean A0M() {
         return (this.A07.isEmpty() && this.A08.isEmpty() && this.A09.isEmpty() && this.A0A.isEmpty() && this.A04.isEmpty() && this.A06.isEmpty() && this.A00.isEmpty() && this.A02.isEmpty() && this.A05.isEmpty() && this.A01.isEmpty() && this.A03.isEmpty()) ? false : true;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1196Qy
+    @Override // com.instagram.common.viewpoint.core.AbstractC1216Qy
     public final boolean A0S(RK rk, List<Object> payloads) {
         return !payloads.isEmpty() || super.A0S(rk, payloads);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1894ha
+    @Override // com.instagram.common.viewpoint.core.AbstractC1914ha
     public final boolean A0X(RK rk) {
         A02(rk);
         rk.A0H.setAlpha(0.0f);
@@ -371,25 +371,25 @@ public final class C7P extends AbstractC1894ha {
         return true;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1894ha
+    @Override // com.instagram.common.viewpoint.core.AbstractC1914ha
     public final boolean A0Y(RK rk) {
         A02(rk);
         this.A0A.add(rk);
         return true;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1894ha
-    public final boolean A0a(RK rk, RK rk2, int i, int i6, int i9, int i10) {
+    @Override // com.instagram.common.viewpoint.core.AbstractC1914ha
+    public final boolean A0a(RK rk, RK rk2, int i, int i4, int i6, int i9) {
         if (rk == rk2) {
-            return A0Z(rk, i, i6, i9, i10);
+            return A0Z(rk, i, i4, i6, i9);
         }
         float translationX = rk.A0H.getTranslationX();
         float translationY = rk.A0H.getTranslationY();
         float prevTranslationY = rk.A0H.getAlpha();
         A02(rk);
-        float prevTranslationX = i9 - i;
+        float prevTranslationX = i6 - i;
         int deltaY = (int) (prevTranslationX - translationX);
-        float prevTranslationX2 = i10 - i6;
+        float prevTranslationX2 = i9 - i4;
         int deltaX = (int) (prevTranslationX2 - translationY);
         rk.A0H.setTranslationX(translationX);
         rk.A0H.setTranslationY(translationY);
@@ -402,7 +402,7 @@ public final class C7P extends AbstractC1894ha {
             rk2.A0H.setTranslationY(prevTranslationX4);
             rk2.A0H.setAlpha(0.0f);
         }
-        this.A08.add(new QZ(rk, rk2, i, i6, i9, i10));
+        this.A08.add(new QZ(rk, rk2, i, i4, i6, i9));
         return true;
     }
 
@@ -444,18 +444,18 @@ public final class C7P extends AbstractC1894ha {
         animation.setListener(new QV(this, rk, view, animate)).start();
     }
 
-    public final void A0e(RK rk, int i, int i6, int i9, int i10) {
+    public final void A0e(RK rk, int i, int i4, int i6, int i9) {
         View view = rk.A0H;
-        int i11 = i9 - i;
-        int i12 = i10 - i6;
-        if (i11 != 0) {
+        int i10 = i6 - i;
+        int i11 = i9 - i4;
+        if (i10 != 0) {
             view.animate().translationX(0.0f);
         }
-        if (i12 != 0) {
+        if (i11 != 0) {
             view.animate().translationY(0.0f);
         }
         ViewPropertyAnimator animate = view.animate();
         this.A04.add(rk);
-        animate.setDuration(A0C()).setListener(new QW(this, rk, i11, view, i12, animate)).start();
+        animate.setDuration(A0C()).setListener(new QW(this, rk, i10, view, i11, animate)).start();
     }
 }

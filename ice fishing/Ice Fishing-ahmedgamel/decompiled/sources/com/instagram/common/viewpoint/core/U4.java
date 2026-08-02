@@ -20,16 +20,16 @@ public final class U4 {
     public static final String A02;
     public static final AtomicBoolean A03;
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 54);
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 54);
         }
         return new String(copyOfRange);
     }
 
     public static void A06() {
-        A00 = new byte[]{108, 0, 55, 43, 46, 38, 1, 45, 44, 36, 43, 37, 105, 70, 76, 90, 71, 65, 76, 8, 123, 108, 99, 8, 74, 93, 65, 68, 92, 8, 78, 71, 90, 8, 80, 16, 30, 17, 6, 26, 31, 23, 12, 7, 10, 3, 22, 25, 53, 47, 54, 62, 122, 52, 53, 46, 122, 59, 62, 62, 122, 42, 59, 40, 59, 55, c.f16318c, 46, c.f16318c, 40, 96, 21, 20, 19, 4, 22, 99, 75, 83, 74, 71, 82, 73, 84, 20, 54, 61, 42, 62, 60, 39, 58, 60, 61, 69, 36, 74, 51, 34, 57, 13, 33, 59, 40, 55, 100, 117, 117, 90, 118, 113, 100, 119, 113, 96, 97, 90, 119, 96, 100, 118, 106, 107, 79, 88, 68, 65, 73, 114, 89, 84, 93, 72, 61, 60, 59, 44, 62, 6, 47, 56, 53, 44, 60, 15, 13, 6, 13, 26, 1, 11, 115, 123, 123, 115, 120, 113, 75, 103, 112, Byte.MAX_VALUE, 99, 121, 85, 110, 111, 104, Byte.MAX_VALUE, 109, 109, 107, 104, 102, 111, 12, 22, 58, 0, 8, 16, 87, 74, 78, 70, 89, 76, 77, 70, 124, 76, 69, 69, 80, 70, 87, 95, 68, 65, 68, 69, 93, 68};
+        A00 = new byte[]{108, 0, 55, 43, 46, 38, 1, 45, 44, 36, 43, 37, 105, 70, 76, 90, 71, 65, 76, 8, 123, 108, 99, 8, 74, 93, 65, 68, 92, 8, 78, 71, 90, 8, 80, 16, 30, 17, 6, 26, 31, 23, 12, 7, 10, 3, 22, 25, 53, 47, 54, 62, 122, 52, 53, 46, 122, 59, 62, 62, 122, 42, 59, 40, 59, 55, c.f17105c, 46, c.f17105c, 40, 96, 21, 20, 19, 4, 22, 99, 75, 83, 74, 71, 82, 73, 84, 20, 54, 61, 42, 62, 60, 39, 58, 60, 61, 69, 36, 74, 51, 34, 57, 13, 33, 59, 40, 55, 100, 117, 117, 90, 118, 113, 100, 119, 113, 96, 97, 90, 119, 96, 100, 118, 106, 107, 79, 88, 68, 65, 73, 114, 89, 84, 93, 72, 61, 60, 59, 44, 62, 6, 47, 56, 53, 44, 60, 15, 13, 6, 13, 26, 1, 11, 115, 123, 123, 115, 120, 113, 75, 103, 112, Byte.MAX_VALUE, 99, 121, 85, 110, 111, 104, Byte.MAX_VALUE, 109, 109, 107, 104, 102, 111, 12, 22, 58, 0, 8, 16, 87, 74, 78, 70, 89, 76, 77, 70, 124, 76, 69, 69, 80, 70, 87, 95, 68, 65, 68, 69, 93, 68};
     }
 
     static {
@@ -58,7 +58,7 @@ public final class U4 {
             strArr2[1] = "r1yKAsFrz8T6kTbDeRMAIryo3adSH8UC";
             strArr2[3] = "KmyFzAC6ois190XCewwcScJ1n5axjY80";
             if (A03.compareAndSet(false, true)) {
-                t82.A08().ABC(A02(144, 7, 94), AbstractC1252Td.A1E, new C1253Te(e9));
+                t82.A08().ABC(A02(144, 7, 94), AbstractC1272Td.A1E, new C1273Te(e9));
             }
             return -1L;
         }
@@ -87,7 +87,7 @@ public final class U4 {
         A07(t82, jSONObject, A02(174, 6, 83), String.valueOf(A08()));
         A07(t82, jSONObject, A02(97, 8, 100), String.valueOf(A01(t82, str)));
         A07(t82, jSONObject, A02(180, 15, 21), String.valueOf(A00()));
-        A07(t82, jSONObject, A02(105, 18, 51), String.valueOf(AbstractC1339Wp.A00(t82)));
+        A07(t82, jSONObject, A02(105, 18, 51), String.valueOf(AbstractC1359Wp.A00(t82)));
         A07(t82, jSONObject, A02(161, 13, 60), String.valueOf(A09(t82)));
         A07(t82, jSONObject, A02(133, 11, 111), A04(t82));
         A07(t82, jSONObject, A02(123, 10, 27), A03(t82));

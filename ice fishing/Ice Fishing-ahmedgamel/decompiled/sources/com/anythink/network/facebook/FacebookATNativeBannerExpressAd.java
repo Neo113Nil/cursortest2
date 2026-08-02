@@ -10,10 +10,10 @@ public class FacebookATNativeBannerExpressAd extends FacebookATBaseNativeAd<Nati
     NativeBannerAdView.Type i;
 
     /* renamed from: j, reason: collision with root package name */
-    View f23090j;
+    View f23877j;
 
     /* renamed from: k, reason: collision with root package name */
-    private final String f23091k;
+    private final String f23878k;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -27,7 +27,7 @@ public class FacebookATNativeBannerExpressAd extends FacebookATBaseNativeAd<Nati
     public FacebookATNativeBannerExpressAd(Context context, NativeBannerAd nativeBannerAd, String str) {
         super(context, nativeBannerAd, true);
         char c9 = 1;
-        this.f23091k = "FacebookATNativeBannerExpressAd";
+        this.f23878k = "FacebookATNativeBannerExpressAd";
         NativeBannerAdView.Type type = NativeBannerAdView.Type.HEIGHT_50;
         this.i = type;
         str.getClass();
@@ -69,13 +69,13 @@ public class FacebookATNativeBannerExpressAd extends FacebookATBaseNativeAd<Nati
     public View getAdMediaView(Object... objArr) {
         T t6;
         try {
-            if (!this.f23064c || (t6 = this.f23062a) == 0 || !(t6 instanceof NativeBannerAd)) {
+            if (!this.f23851c || (t6 = this.f23849a) == 0 || !(t6 instanceof NativeBannerAd)) {
                 return null;
             }
-            if (this.f23090j == null) {
-                this.f23090j = NativeBannerAdView.render(this.f23063b, (NativeBannerAd) t6, this.i);
+            if (this.f23877j == null) {
+                this.f23877j = NativeBannerAdView.render(this.f23850b, (NativeBannerAd) t6, this.i);
             }
-            return this.f23090j;
+            return this.f23877j;
         } catch (Exception e9) {
             e9.printStackTrace();
             return null;

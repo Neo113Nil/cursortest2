@@ -1,7 +1,7 @@
 package androidx.work.impl.workers;
 
+import J0.o;
 import J0.p;
-import J0.q;
 import android.content.Context;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
@@ -17,7 +17,7 @@ public final class CombineContinuationsWorker extends Worker {
     }
 
     @Override // androidx.work.Worker
-    public final q doWork() {
-        return new p(getInputData());
+    public final p doWork() {
+        return new o(getInputData());
     }
 }

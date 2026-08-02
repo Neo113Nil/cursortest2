@@ -1,17 +1,17 @@
 package com.onesignal.core.internal.device.impl;
 
 import C4.d;
-import a.AbstractC0422a;
+import N3.C;
 import java.util.UUID;
 import kotlin.jvm.internal.h;
 import kotlin.jvm.internal.i;
-import u7.InterfaceC5087e;
-import z7.InterfaceC5267d;
+import u7.InterfaceC5079e;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class b implements d {
     private final J4.b _prefs;
-    private final InterfaceC5087e currentId$delegate;
+    private final InterfaceC5079e currentId$delegate;
 
     public static final class a extends i implements I7.a {
         public a() {
@@ -33,7 +33,7 @@ public final class b implements d {
     public b(J4.b _prefs) {
         h.e(_prefs, "_prefs");
         this._prefs = _prefs;
-        this.currentId$delegate = AbstractC0422a.q(new a());
+        this.currentId$delegate = C.O(new a());
     }
 
     private final UUID getCurrentId() {
@@ -43,7 +43,7 @@ public final class b implements d {
     }
 
     @Override // C4.d
-    public Object getId(InterfaceC5267d interfaceC5267d) {
+    public Object getId(InterfaceC5240d interfaceC5240d) {
         return getCurrentId();
     }
 }

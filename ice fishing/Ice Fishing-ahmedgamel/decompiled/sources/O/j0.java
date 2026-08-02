@@ -5,28 +5,27 @@ import android.view.ViewGroup;
 import android.view.WindowInsets;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.PathInterpolator;
-import com.google.android.gms.internal.ads.C2545Eo;
-import com.google.android.gms.internal.ads.C2991bm;
-import com.icefishingapp.icefishing.C5275R;
-import g0.C4519a;
+import com.IceFishing.LiveIceFishing.C5248R;
+import com.google.android.gms.internal.ads.C2582Fo;
+import g0.C4529a;
 import java.util.List;
 
 /* loaded from: classes.dex */
 public final class j0 extends m0 {
 
     /* renamed from: e, reason: collision with root package name */
-    public static final PathInterpolator f2091e = new PathInterpolator(0.0f, 1.1f, 0.0f, 1.0f);
+    public static final PathInterpolator f2179e = new PathInterpolator(0.0f, 1.1f, 0.0f, 1.0f);
 
     /* renamed from: f, reason: collision with root package name */
-    public static final C4519a f2092f = new C4519a();
+    public static final C4529a f2180f = new C4529a();
 
     /* renamed from: g, reason: collision with root package name */
-    public static final DecelerateInterpolator f2093g = new DecelerateInterpolator();
+    public static final DecelerateInterpolator f2181g = new DecelerateInterpolator();
 
     public static void e(View view) {
-        C2545Eo j6 = j(view);
+        C2582Fo j6 = j(view);
         if (j6 != null) {
-            ((View) j6.f24652w).setTranslationY(0.0f);
+            ((View) j6.f25637w).setTranslationY(0.0f);
             return;
         }
         if (view instanceof ViewGroup) {
@@ -37,30 +36,30 @@ public final class j0 extends m0 {
         }
     }
 
-    public static void f(View view, WindowInsets windowInsets, boolean z3) {
-        C2545Eo j6 = j(view);
+    public static void f(View view, WindowInsets windowInsets, boolean z6) {
+        C2582Fo j6 = j(view);
         if (j6 != null) {
-            j6.f24651v = windowInsets;
-            if (!z3) {
-                View view2 = (View) j6.f24652w;
-                int[] iArr = (int[]) j6.f24653x;
+            j6.f25636v = windowInsets;
+            if (!z6) {
+                View view2 = (View) j6.f25637w;
+                int[] iArr = (int[]) j6.f25638x;
                 view2.getLocationOnScreen(iArr);
-                z3 = true;
-                j6.f24649n = iArr[1];
+                z6 = true;
+                j6.f25634n = iArr[1];
             }
         }
         if (view instanceof ViewGroup) {
             ViewGroup viewGroup = (ViewGroup) view;
             for (int i = 0; i < viewGroup.getChildCount(); i++) {
-                f(viewGroup.getChildAt(i), windowInsets, z3);
+                f(viewGroup.getChildAt(i), windowInsets, z6);
             }
         }
     }
 
     public static void g(View view, A0 a02, List list) {
-        C2545Eo j6 = j(view);
+        C2582Fo j6 = j(view);
         if (j6 != null) {
-            j6.e(a02, list);
+            j6.f(a02, list);
             return;
         }
         if (view instanceof ViewGroup) {
@@ -71,33 +70,33 @@ public final class j0 extends m0 {
         }
     }
 
-    public static void h(View view, C2991bm c2991bm) {
-        C2545Eo j6 = j(view);
+    public static void h(View view, S0.c cVar) {
+        C2582Fo j6 = j(view);
         if (j6 != null) {
-            View view2 = (View) j6.f24652w;
-            int[] iArr = (int[]) j6.f24653x;
+            View view2 = (View) j6.f25637w;
+            int[] iArr = (int[]) j6.f25638x;
             view2.getLocationOnScreen(iArr);
-            int i = j6.f24649n - iArr[1];
-            j6.f24650u = i;
+            int i = j6.f25634n - iArr[1];
+            j6.f25635u = i;
             view2.setTranslationY(i);
             return;
         }
         if (view instanceof ViewGroup) {
             ViewGroup viewGroup = (ViewGroup) view;
-            for (int i6 = 0; i6 < viewGroup.getChildCount(); i6++) {
-                h(viewGroup.getChildAt(i6), c2991bm);
+            for (int i4 = 0; i4 < viewGroup.getChildCount(); i4++) {
+                h(viewGroup.getChildAt(i4), cVar);
             }
         }
     }
 
     public static WindowInsets i(View view, WindowInsets windowInsets) {
-        return view.getTag(C5275R.id.tag_on_apply_window_listener) != null ? windowInsets : view.onApplyWindowInsets(windowInsets);
+        return view.getTag(C5248R.id.tag_on_apply_window_listener) != null ? windowInsets : view.onApplyWindowInsets(windowInsets);
     }
 
-    public static C2545Eo j(View view) {
-        Object tag = view.getTag(C5275R.id.tag_window_insets_animation_callback);
+    public static C2582Fo j(View view) {
+        Object tag = view.getTag(C5248R.id.tag_window_insets_animation_callback);
         if (tag instanceof i0) {
-            return ((i0) tag).f2089a;
+            return ((i0) tag).f2177a;
         }
         return null;
     }

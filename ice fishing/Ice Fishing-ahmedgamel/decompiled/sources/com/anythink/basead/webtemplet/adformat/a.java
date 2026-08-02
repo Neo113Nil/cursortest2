@@ -6,7 +6,7 @@ public interface a {
 
     void a(int i);
 
-    void a(int i, int i6);
+    void a(int i, int i4);
 
     void a(String str, String str2);
 

@@ -12,7 +12,7 @@ public final class n extends H4.g {
     }
 
     private final void setAppId(String str) {
-        com.onesignal.common.modeling.i.setStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f22407u, str, null, false, 12, null);
+        com.onesignal.common.modeling.i.setStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f23194u, str, null, false, 12, null);
     }
 
     private final void setOnesignalId(String str) {
@@ -24,7 +24,7 @@ public final class n extends H4.g {
     }
 
     public final String getAppId() {
-        return com.onesignal.common.modeling.i.getStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f22407u, null, 2, null);
+        return com.onesignal.common.modeling.i.getStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f23194u, null, 2, null);
     }
 
     @Override // H4.g

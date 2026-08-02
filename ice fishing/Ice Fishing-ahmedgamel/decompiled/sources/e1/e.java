@@ -1,69 +1,124 @@
 package e1;
 
-import X0.v;
-import d1.C4443a;
-import d1.C4444b;
-import f1.AbstractC4498a;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /* loaded from: classes.dex */
-public final class e implements b {
-
-    /* renamed from: a, reason: collision with root package name */
-    public final String f37119a;
-
-    /* renamed from: b, reason: collision with root package name */
-    public final int f37120b;
+public final class e {
 
     /* renamed from: c, reason: collision with root package name */
-    public final C4443a f37121c;
+    public static final e f37236c = new e("COMPOSITION");
 
-    /* renamed from: d, reason: collision with root package name */
-    public final C4443a f37122d;
+    /* renamed from: a, reason: collision with root package name */
+    public final List f37237a;
 
-    /* renamed from: e, reason: collision with root package name */
-    public final C4443a f37123e;
+    /* renamed from: b, reason: collision with root package name */
+    public f f37238b;
 
-    /* renamed from: f, reason: collision with root package name */
-    public final C4443a f37124f;
-
-    /* renamed from: g, reason: collision with root package name */
-    public final C4444b f37125g;
-
-    /* renamed from: h, reason: collision with root package name */
-    public final int f37126h;
-    public final int i;
-
-    /* renamed from: j, reason: collision with root package name */
-    public final float f37127j;
-
-    /* renamed from: k, reason: collision with root package name */
-    public final ArrayList f37128k;
-
-    /* renamed from: l, reason: collision with root package name */
-    public final C4444b f37129l;
-
-    /* renamed from: m, reason: collision with root package name */
-    public final boolean f37130m;
-
-    public e(String str, int i, C4443a c4443a, C4443a c4443a2, C4443a c4443a3, C4443a c4443a4, C4444b c4444b, int i6, int i9, float f3, ArrayList arrayList, C4444b c4444b2, boolean z3) {
-        this.f37119a = str;
-        this.f37120b = i;
-        this.f37121c = c4443a;
-        this.f37122d = c4443a2;
-        this.f37123e = c4443a3;
-        this.f37124f = c4443a4;
-        this.f37125g = c4444b;
-        this.f37126h = i6;
-        this.i = i9;
-        this.f37127j = f3;
-        this.f37128k = arrayList;
-        this.f37129l = c4444b2;
-        this.f37130m = z3;
+    public e(String... strArr) {
+        this.f37237a = Arrays.asList(strArr);
     }
 
-    @Override // e1.b
-    public final Z0.c a(v vVar, X0.i iVar, AbstractC4498a abstractC4498a) {
-        return new Z0.i(vVar, abstractC4498a, this);
+    /* JADX WARN: Removed duplicated region for block: B:19:0x0088 A[RETURN] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final boolean a(int i, String str) {
+        List list = this.f37237a;
+        if (i < list.size()) {
+            boolean z6 = i == list.size() - 1;
+            String str2 = (String) list.get(i);
+            if (!str2.equals("**")) {
+                boolean z9 = str2.equals(str) || str2.equals("*");
+                if ((z6 || (i == list.size() - 2 && ((String) list.get(list.size() - 1)).equals("**"))) && z9) {
+                    return true;
+                }
+            } else {
+                if (z6 || !((String) list.get(i + 1)).equals(str)) {
+                    if (!z6) {
+                        int i4 = i + 1;
+                        if (i4 >= list.size() - 1) {
+                            return ((String) list.get(i4)).equals(str);
+                        }
+                    }
+                    return true;
+                }
+                if (i == list.size() - 2 || (i == list.size() - 3 && ((String) list.get(list.size() - 1)).equals("**"))) {
+                }
+            }
+        }
+        return false;
+    }
+
+    public final int b(int i, String str) {
+        if ("__container".equals(str)) {
+            return 0;
+        }
+        List list = this.f37237a;
+        if (((String) list.get(i)).equals("**")) {
+            return (i != list.size() - 1 && ((String) list.get(i + 1)).equals(str)) ? 2 : 0;
+        }
+        return 1;
+    }
+
+    public final boolean c(int i, String str) {
+        if ("__container".equals(str)) {
+            return true;
+        }
+        List list = this.f37237a;
+        if (i >= list.size()) {
+            return false;
+        }
+        return ((String) list.get(i)).equals(str) || ((String) list.get(i)).equals("**") || ((String) list.get(i)).equals("*");
+    }
+
+    public final boolean d(int i, String str) {
+        if ("__container".equals(str)) {
+            return true;
+        }
+        List list = this.f37237a;
+        return i < list.size() - 1 || ((String) list.get(i)).equals("**");
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj != null && e.class == obj.getClass()) {
+            e eVar = (e) obj;
+            if (!this.f37237a.equals(eVar.f37237a)) {
+                return false;
+            }
+            f fVar = this.f37238b;
+            f fVar2 = eVar.f37238b;
+            if (fVar != null) {
+                return fVar.equals(fVar2);
+            }
+            if (fVar2 == null) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        int hashCode = this.f37237a.hashCode() * 31;
+        f fVar = this.f37238b;
+        return hashCode + (fVar != null ? fVar.hashCode() : 0);
+    }
+
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("KeyPath{keys=");
+        sb.append(this.f37237a);
+        sb.append(",resolved=");
+        sb.append(this.f37238b != null);
+        sb.append('}');
+        return sb.toString();
+    }
+
+    public e(e eVar) {
+        this.f37237a = new ArrayList(eVar.f37237a);
+        this.f37238b = eVar.f37238b;
     }
 }

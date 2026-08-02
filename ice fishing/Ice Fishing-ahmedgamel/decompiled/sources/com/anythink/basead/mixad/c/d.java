@@ -17,19 +17,19 @@ import java.util.Map;
 public final class d implements IATThirdPartyMaterial {
 
     /* renamed from: a, reason: collision with root package name */
-    private final BaseAd f9556a;
+    private final BaseAd f10342a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final g f9557b;
+    private final g f10343b;
 
     public d(BaseAd baseAd, g gVar) {
-        this.f9556a = baseAd;
-        this.f9557b = gVar;
+        this.f10342a = baseAd;
+        this.f10343b = gVar;
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final ATAdAppInfo getAdAppInfo() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getAdAppInfo();
         }
@@ -38,19 +38,19 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getAdChoiceIconUrl() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         return baseAd != null ? baseAd.getAdChoiceIconUrl() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getAdFrom() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         return baseAd != null ? baseAd.getAdFrom() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final View getAdIconView() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getAdIconView();
         }
@@ -59,7 +59,7 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final Bitmap getAdLogo() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getAdLogo();
         }
@@ -68,7 +68,7 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final View getAdLogoView() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getAdLogoView();
         }
@@ -77,7 +77,7 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final View getAdMediaView(Object... objArr) {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getAdMediaView(objArr);
         }
@@ -86,13 +86,13 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getAdType() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         return baseAd != null ? baseAd.getAdType() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final IATAdvertiserInfoOperate getAdvertiserInfoOperate() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getAdvertiserInfoOperate();
         }
@@ -101,13 +101,13 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getAdvertiserName() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         return baseAd != null ? baseAd.getAdvertiserName() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getAppCommentNum() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getAppCommentNum();
         }
@@ -116,7 +116,7 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final double getAppPrice() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getAppPrice();
         }
@@ -125,7 +125,7 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final View getCallToActionButton() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getCallToActionButton();
         }
@@ -134,25 +134,25 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getCallToActionText() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         return baseAd != null ? baseAd.getCallToActionText() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getDescriptionText() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         return baseAd != null ? baseAd.getDescriptionText() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getDomain() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         return baseAd != null ? baseAd.getDomain() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getDownloadProgress() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getDownloadProgress();
         }
@@ -161,7 +161,7 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getDownloadStatus() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getDownloadStatus();
         }
@@ -170,13 +170,13 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getIconImageUrl() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         return baseAd != null ? baseAd.getIconImageUrl() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final List<String> getImageUrlList() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getImageUrlList();
         }
@@ -185,7 +185,7 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getMainImageHeight() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getMainImageHeight();
         }
@@ -194,13 +194,13 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getMainImageUrl() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         return baseAd != null ? baseAd.getMainImageUrl() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getMainImageWidth() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getMainImageWidth();
         }
@@ -209,7 +209,7 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getNativeAdInteractionType() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getNativeAdInteractionType();
         }
@@ -218,7 +218,7 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final ATCustomVideo getNativeCustomVideo() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getNativeCustomVideo();
         }
@@ -227,7 +227,7 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getNativeExpressHeight() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getNativeExpressHeight();
         }
@@ -236,7 +236,7 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getNativeExpressWidth() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getNativeExpressWidth();
         }
@@ -245,7 +245,7 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getNativeType() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getNativeType();
         }
@@ -254,7 +254,7 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final Map<String, Object> getNetworkInfoMap() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getNetworkInfoMap();
         }
@@ -263,7 +263,7 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final View getRoateView(Map<String, Object> map, ATCompViewListener aTCompViewListener) {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getRoateView(map, aTCompViewListener);
         }
@@ -271,38 +271,38 @@ public final class d implements IATThirdPartyMaterial {
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
-    public final View getShakeView(int i, int i6, ATShakeViewListener aTShakeViewListener) {
-        g gVar = this.f9557b;
+    public final View getShakeView(int i, int i4, ATShakeViewListener aTShakeViewListener) {
+        g gVar = this.f10343b;
         if (gVar != null) {
-            return gVar.a(i, i6, aTShakeViewListener);
+            return gVar.a(i, i4, aTShakeViewListener);
         }
         return null;
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
-    public final View getSlideView(int i, int i6, int i9, ATShakeViewListener aTShakeViewListener) {
-        BaseAd baseAd = this.f9556a;
+    public final View getSlideView(int i, int i4, int i6, ATShakeViewListener aTShakeViewListener) {
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
-            return baseAd.getSlideView(i, i6, i9, aTShakeViewListener);
+            return baseAd.getSlideView(i, i4, i6, aTShakeViewListener);
         }
         return null;
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final Double getStarRating() {
-        BaseAd baseAd = this.f9556a;
-        return (baseAd == null || baseAd.getStarRating() == null) ? Double.valueOf(0.0d) : this.f9556a.getStarRating();
+        BaseAd baseAd = this.f10342a;
+        return (baseAd == null || baseAd.getStarRating() == null) ? Double.valueOf(0.0d) : this.f10342a.getStarRating();
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getTitle() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         return baseAd != null ? baseAd.getTitle() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final double getVideoDuration() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getVideoDuration();
         }
@@ -311,7 +311,7 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getVideoHeight() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getVideoHeight();
         }
@@ -320,7 +320,7 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final double getVideoProgress() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getVideoProgress();
         }
@@ -329,13 +329,13 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getVideoUrl() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         return baseAd != null ? baseAd.getVideoUrl() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final int getVideoWidth() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         if (baseAd != null) {
             return baseAd.getVideoWidth();
         }
@@ -344,19 +344,19 @@ public final class d implements IATThirdPartyMaterial {
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final String getWarning() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         return baseAd != null ? baseAd.getWarning() : "";
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final boolean supportSetPermissionClickViewList() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         return baseAd != null && baseAd.supportSetPermissionClickViewList();
     }
 
     @Override // com.anythink.core.api.IATThirdPartyMaterial
     public final boolean supportSetPrivacyClickViewList() {
-        BaseAd baseAd = this.f9556a;
+        BaseAd baseAd = this.f10342a;
         return baseAd != null && baseAd.supportSetPrivacyClickViewList();
     }
 }

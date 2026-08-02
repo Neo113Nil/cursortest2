@@ -28,14 +28,14 @@ public final class C8O {
     }
 
     public C8O(String str) {
-        AbstractC06243y.A08(C5C.A02 < 31);
+        AbstractC06443y.A08(C5C.A02 < 31);
         this.A00 = str;
         this.A01 = null;
         this.A02 = new Object();
     }
 
     public final LogSessionId A00() {
-        return ((C8N) AbstractC06243y.A01(this.A01)).A00;
+        return ((C8N) AbstractC06443y.A01(this.A01)).A00;
     }
 
     public final boolean equals(Object obj) {

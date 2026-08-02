@@ -1,42 +1,35 @@
 package M2;
 
-import P2.w;
-import android.content.ComponentName;
-import android.content.ServiceConnection;
-import android.os.IBinder;
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
+import android.content.Context;
+import android.content.SharedPreferences;
+import java.util.concurrent.locks.ReentrantLock;
 
 /* loaded from: classes.dex */
-public final class a implements ServiceConnection {
+public final class a {
 
-    /* renamed from: n, reason: collision with root package name */
-    public boolean f1826n = false;
+    /* renamed from: c, reason: collision with root package name */
+    public static final ReentrantLock f1862c = new ReentrantLock();
 
-    /* renamed from: u, reason: collision with root package name */
-    public final LinkedBlockingQueue f1827u = new LinkedBlockingQueue();
+    /* renamed from: d, reason: collision with root package name */
+    public static a f1863d;
 
-    public final IBinder a() {
-        TimeUnit timeUnit = TimeUnit.MILLISECONDS;
-        w.g("BlockingServiceConnection.getServiceWithTimeout() called on main thread");
-        if (this.f1826n) {
-            throw new IllegalStateException("Cannot call get on this connection more than once");
-        }
-        this.f1826n = true;
-        IBinder iBinder = (IBinder) this.f1827u.poll(10000L, timeUnit);
-        if (iBinder != null) {
-            return iBinder;
-        }
-        throw new TimeoutException("Timed out waiting for the service connection");
+    /* renamed from: a, reason: collision with root package name */
+    public final ReentrantLock f1864a = new ReentrantLock();
+
+    /* renamed from: b, reason: collision with root package name */
+    public final SharedPreferences f1865b;
+
+    public a(Context context) {
+        this.f1865b = context.getSharedPreferences("com.google.android.gms.signin", 0);
     }
 
-    @Override // android.content.ServiceConnection
-    public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-        this.f1827u.add(iBinder);
-    }
-
-    @Override // android.content.ServiceConnection
-    public final void onServiceDisconnected(ComponentName componentName) {
+    public final String a(String str) {
+        ReentrantLock reentrantLock = this.f1864a;
+        reentrantLock.lock();
+        try {
+            return this.f1865b.getString(str, null);
+        } finally {
+            reentrantLock.unlock();
+        }
     }
 }

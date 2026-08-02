@@ -14,22 +14,22 @@ import org.json.JSONObject;
 public class f {
 
     /* renamed from: d, reason: collision with root package name */
-    private static volatile f f12155d;
+    private static volatile f f12941d;
 
     /* renamed from: b, reason: collision with root package name */
-    long f12157b;
+    long f12943b;
 
     /* renamed from: e, reason: collision with root package name */
-    private com.anythink.core.common.e.b f12159e;
+    private com.anythink.core.common.e.b f12945e;
 
     /* renamed from: f, reason: collision with root package name */
-    private Map<String, h> f12160f;
+    private Map<String, h> f12946f;
 
     /* renamed from: a, reason: collision with root package name */
-    final String f12156a = f.class.getName();
+    final String f12942a = f.class.getName();
 
     /* renamed from: c, reason: collision with root package name */
-    Object f12158c = new Object();
+    Object f12944c = new Object();
 
     /* renamed from: com.anythink.core.common.a.f$1, reason: invalid class name */
     public class AnonymousClass1 implements Runnable {
@@ -38,19 +38,19 @@ public class f {
 
         @Override // java.lang.Runnable
         public final void run() {
-            synchronized (f.this.f12158c) {
+            synchronized (f.this.f12944c) {
                 try {
                     f.this.b();
-                    List<g> a9 = f.this.f12159e.a();
+                    List<g> a9 = f.this.f12945e.a();
                     if (a9 != null) {
                         for (int i = 0; i < a9.size(); i++) {
                             g gVar = a9.get(i);
                             String a10 = gVar.a();
                             if (!TextUtils.isEmpty(a10)) {
-                                h hVar = (h) f.this.f12160f.get(a10);
+                                h hVar = (h) f.this.f12946f.get(a10);
                                 if (hVar == null) {
                                     hVar = new h();
-                                    f.this.f12160f.put(a10, hVar);
+                                    f.this.f12946f.put(a10, hVar);
                                 }
                                 hVar.a(gVar);
                             }
@@ -64,11 +64,11 @@ public class f {
     }
 
     private f() {
-        this.f12157b = 0L;
+        this.f12943b = 0L;
         if (t.b().g() != null) {
-            this.f12159e = com.anythink.core.common.e.b.a(com.anythink.core.common.e.e.a(t.b().g()));
-            this.f12160f = new ConcurrentHashMap();
-            this.f12157b = f();
+            this.f12945e = com.anythink.core.common.e.b.a(com.anythink.core.common.e.e.a(t.b().g()));
+            this.f12946f = new ConcurrentHashMap();
+            this.f12943b = f();
             t.b();
             t.c(new AnonymousClass1());
         }
@@ -78,17 +78,17 @@ public class f {
     }
 
     private void d() {
-        this.f12157b = f();
+        this.f12943b = f();
         t.b();
         t.c(new AnonymousClass1());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void e() {
-        long f3 = f();
-        if (this.f12157b != f3) {
-            this.f12160f.clear();
-            this.f12157b = f3;
+        long f2 = f();
+        if (this.f12943b != f2) {
+            this.f12946f.clear();
+            this.f12943b = f2;
         }
     }
 
@@ -106,18 +106,18 @@ public class f {
     }
 
     public static f a() {
-        if (f12155d == null) {
+        if (f12941d == null) {
             synchronized (f.class) {
                 try {
-                    if (f12155d == null) {
-                        f12155d = new f();
+                    if (f12941d == null) {
+                        f12941d = new f();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f12155d;
+        return f12941d;
     }
 
     public final void b(final String str, final w wVar) {
@@ -125,13 +125,13 @@ public class f {
         t.c(new Runnable() { // from class: com.anythink.core.common.a.f.3
             @Override // java.lang.Runnable
             public final void run() {
-                synchronized (f.this.f12158c) {
+                synchronized (f.this.f12944c) {
                     try {
                         f.this.e();
-                        h hVar = (h) f.this.f12160f.get(str);
+                        h hVar = (h) f.this.f12946f.get(str);
                         if (hVar == null) {
                             hVar = new h();
-                            f.this.f12160f.put(str, hVar);
+                            f.this.f12946f.put(str, hVar);
                         }
                         w wVar2 = wVar;
                         if (wVar2 instanceof r) {
@@ -147,7 +147,7 @@ public class f {
     }
 
     public final void b() {
-        this.f12159e.b();
+        this.f12945e.b();
     }
 
     public final void a(final String str, final w wVar) {
@@ -155,13 +155,13 @@ public class f {
         t.c(new Runnable() { // from class: com.anythink.core.common.a.f.2
             @Override // java.lang.Runnable
             public final void run() {
-                synchronized (f.this.f12158c) {
+                synchronized (f.this.f12944c) {
                     try {
                         f.this.e();
-                        h hVar = (h) f.this.f12160f.get(str);
+                        h hVar = (h) f.this.f12946f.get(str);
                         if (hVar == null) {
                             hVar = new h();
-                            f.this.f12160f.put(str, hVar);
+                            f.this.f12946f.put(str, hVar);
                         }
                         hVar.a(((r) wVar).aD());
                     } catch (Throwable th) {
@@ -177,10 +177,10 @@ public class f {
         if (TextUtils.isEmpty(str) || jSONObject == null) {
             return;
         }
-        synchronized (this.f12158c) {
+        synchronized (this.f12944c) {
             try {
                 e();
-                h hVar = this.f12160f.get(str);
+                h hVar = this.f12946f.get(str);
                 if (hVar != null) {
                     hVar.a(jSONObject);
                 }
@@ -200,7 +200,7 @@ public class f {
         gVar.c(wVar.v());
         gVar.a(i);
         gVar.d("");
-        this.f12159e.a(gVar);
+        this.f12945e.a(gVar);
     }
 
     public static /* synthetic */ void a(f fVar, int i, String str, w wVar) {
@@ -213,6 +213,6 @@ public class f {
         gVar.c(wVar.v());
         gVar.a(i);
         gVar.d("");
-        fVar.f12159e.a(gVar);
+        fVar.f12945e.a(gVar);
     }
 }

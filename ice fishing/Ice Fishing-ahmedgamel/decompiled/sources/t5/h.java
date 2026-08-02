@@ -32,18 +32,18 @@ public final class h {
                 kotlin.jvm.internal.h.b(optString);
                 int length = optString.length() - 1;
                 int i = 0;
-                boolean z3 = false;
+                boolean z6 = false;
                 while (i <= length) {
-                    boolean z6 = kotlin.jvm.internal.h.f(optString.charAt(!z3 ? i : length), 32) <= 0;
-                    if (z3) {
-                        if (!z6) {
+                    boolean z9 = kotlin.jvm.internal.h.f(optString.charAt(!z6 ? i : length), 32) <= 0;
+                    if (z6) {
+                        if (!z9) {
                             break;
                         }
                         length--;
-                    } else if (z6) {
+                    } else if (z9) {
                         i++;
                     } else {
-                        z3 = true;
+                        z6 = true;
                     }
                 }
                 return Uri.parse(optString.subSequence(i, length + 1).toString());

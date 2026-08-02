@@ -28,88 +28,88 @@ import com.anythink.expressad.video.widget.SoundImageView;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private String f21276a = "anythink_top_play_bg";
+    private String f22063a = "anythink_top_play_bg";
 
     /* renamed from: b, reason: collision with root package name */
-    private String f21277b = "anythink_top_finger_bg";
+    private String f22064b = "anythink_top_finger_bg";
 
     /* renamed from: c, reason: collision with root package name */
-    private String f21278c = "anythink_bottom_play_bg";
+    private String f22065c = "anythink_bottom_play_bg";
 
     /* renamed from: d, reason: collision with root package name */
-    private String f21279d = "anythink_bottom_finger_bg";
+    private String f22066d = "anythink_bottom_finger_bg";
 
     /* renamed from: e, reason: collision with root package name */
-    private String f21280e = "anythink_tv_count";
+    private String f22067e = "anythink_tv_count";
 
     /* renamed from: f, reason: collision with root package name */
-    private String f21281f = "anythink_sound_switch";
+    private String f22068f = "anythink_sound_switch";
 
     /* renamed from: g, reason: collision with root package name */
-    private String f21282g = "anythink_top_control";
+    private String f22069g = "anythink_top_control";
 
     /* renamed from: h, reason: collision with root package name */
-    private String f21283h = "anythink_tv_title";
+    private String f22070h = "anythink_tv_title";
     private String i = "anythink_tv_desc";
 
     /* renamed from: j, reason: collision with root package name */
-    private String f21284j = "anythink_tv_install";
+    private String f22071j = "anythink_tv_install";
 
     /* renamed from: k, reason: collision with root package name */
-    private String f21285k = "anythink_sv_starlevel";
+    private String f22072k = "anythink_sv_starlevel";
 
     /* renamed from: l, reason: collision with root package name */
-    private String f21286l = "anythink_sv_heat_count_level";
+    private String f22073l = "anythink_sv_heat_count_level";
 
     /* renamed from: m, reason: collision with root package name */
-    private String f21287m = "anythink_tv_cta";
+    private String f22074m = "anythink_tv_cta";
 
     /* renamed from: n, reason: collision with root package name */
-    private String f21288n = "anythink_native_ec_controller";
+    private String f22075n = "anythink_native_ec_controller";
 
     /* renamed from: o, reason: collision with root package name */
-    private String f21289o = "anythink_reward_shape_choice_rl";
+    private String f22076o = "anythink_reward_shape_choice_rl";
 
     /* renamed from: p, reason: collision with root package name */
-    private String f21290p = "#FFFFFF";
+    private String f22077p = "#FFFFFF";
 
     /* renamed from: q, reason: collision with root package name */
-    private String f21291q = "#FF000000";
+    private String f22078q = "#FF000000";
 
     /* renamed from: r, reason: collision with root package name */
-    private String f21292r = "#40000000";
+    private String f22079r = "#40000000";
 
     /* renamed from: s, reason: collision with root package name */
-    private String f21293s = "#CAEF79";
+    private String f22080s = "#CAEF79";
 
     /* renamed from: t, reason: collision with root package name */
-    private String f21294t = "#2196F3";
+    private String f22081t = "#2196F3";
 
     /* renamed from: u, reason: collision with root package name */
-    private String f21295u = "#402196F3";
+    private String f22082u = "#402196F3";
 
     /* renamed from: v, reason: collision with root package name */
-    private String f21296v = "#8FC31F";
+    private String f22083v = "#8FC31F";
 
     /* renamed from: w, reason: collision with root package name */
-    private String f21297w = "#03A9F4";
+    private String f22084w = "#03A9F4";
 
     /* renamed from: x, reason: collision with root package name */
-    private String f21298x = "#FF89C120";
+    private String f22085x = "#FF89C120";
 
     /* renamed from: y, reason: collision with root package name */
-    private String f21299y = "#FF2BAE5D";
+    private String f22086y = "#FF2BAE5D";
 
     /* renamed from: z, reason: collision with root package name */
-    private boolean f21300z = false;
+    private boolean f22087z = false;
 
     private static void a() {
     }
 
     private void b(View view) {
-        RelativeLayout relativeLayout = (RelativeLayout) view.findViewById(a(this.f21282g));
+        RelativeLayout relativeLayout = (RelativeLayout) view.findViewById(a(this.f22069g));
         if (relativeLayout != null) {
-            if (com.anythink.expressad.video.dynview.a.b.f21128a == 0 && com.anythink.expressad.video.dynview.a.b.f21129b == 0 && com.anythink.expressad.video.dynview.a.b.f21130c == 0 && com.anythink.expressad.video.dynview.a.b.f21131d == 0) {
+            if (com.anythink.expressad.video.dynview.a.b.f21915a == 0 && com.anythink.expressad.video.dynview.a.b.f21916b == 0 && com.anythink.expressad.video.dynview.a.b.f21917c == 0 && com.anythink.expressad.video.dynview.a.b.f21918d == 0) {
                 return;
             }
             relativeLayout.setVisibility(4);
@@ -121,16 +121,16 @@ public final class b {
     }
 
     private void d(View view, com.anythink.expressad.video.dynview.c cVar) {
-        RelativeLayout relativeLayout = (RelativeLayout) view.findViewById(a(this.f21288n));
+        RelativeLayout relativeLayout = (RelativeLayout) view.findViewById(a(this.f22075n));
         if (relativeLayout != null) {
             if (cVar.e() == 1) {
                 FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -1);
-                layoutParams.setMargins(layoutParams.leftMargin + com.anythink.expressad.video.dynview.a.b.f21128a, layoutParams.topMargin + com.anythink.expressad.video.dynview.a.b.f21130c, layoutParams.rightMargin + com.anythink.expressad.video.dynview.a.b.f21129b, layoutParams.bottomMargin + com.anythink.expressad.video.dynview.a.b.f21131d);
+                layoutParams.setMargins(layoutParams.leftMargin + com.anythink.expressad.video.dynview.a.b.f21915a, layoutParams.topMargin + com.anythink.expressad.video.dynview.a.b.f21917c, layoutParams.rightMargin + com.anythink.expressad.video.dynview.a.b.f21916b, layoutParams.bottomMargin + com.anythink.expressad.video.dynview.a.b.f21918d);
                 relativeLayout.setLayoutParams(layoutParams);
                 return;
             }
             RelativeLayout.LayoutParams layoutParams2 = new RelativeLayout.LayoutParams(-1, -1);
-            layoutParams2.setMargins(layoutParams2.leftMargin + com.anythink.expressad.video.dynview.a.b.f21128a, layoutParams2.topMargin + com.anythink.expressad.video.dynview.a.b.f21130c, layoutParams2.rightMargin + com.anythink.expressad.video.dynview.a.b.f21129b, layoutParams2.bottomMargin + com.anythink.expressad.video.dynview.a.b.f21131d);
+            layoutParams2.setMargins(layoutParams2.leftMargin + com.anythink.expressad.video.dynview.a.b.f21915a, layoutParams2.topMargin + com.anythink.expressad.video.dynview.a.b.f21917c, layoutParams2.rightMargin + com.anythink.expressad.video.dynview.a.b.f21916b, layoutParams2.bottomMargin + com.anythink.expressad.video.dynview.a.b.f21918d);
             relativeLayout.setLayoutParams(layoutParams2);
         }
     }
@@ -140,9 +140,9 @@ public final class b {
             return;
         }
         if (view.getContext() != null) {
-            this.f21300z = false;
-            LinearLayout linearLayout = (LinearLayout) view.findViewById(a(this.f21285k));
-            View findViewById = view.findViewById(a(this.f21287m));
+            this.f22087z = false;
+            LinearLayout linearLayout = (LinearLayout) view.findViewById(a(this.f22072k));
+            View findViewById = view.findViewById(a(this.f22074m));
             if (linearLayout != null && (linearLayout instanceof AnyThinkLevelLayoutView)) {
                 if (cVar.e() == 1) {
                     linearLayout.setOrientation(1);
@@ -150,24 +150,24 @@ public final class b {
                     linearLayout.setOrientation(0);
                 }
             }
-            RelativeLayout relativeLayout = (RelativeLayout) view.findViewById(a(this.f21288n));
+            RelativeLayout relativeLayout = (RelativeLayout) view.findViewById(a(this.f22075n));
             if (relativeLayout != null) {
                 if (cVar.e() == 1) {
                     FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -1);
-                    layoutParams.setMargins(layoutParams.leftMargin + com.anythink.expressad.video.dynview.a.b.f21128a, layoutParams.topMargin + com.anythink.expressad.video.dynview.a.b.f21130c, layoutParams.rightMargin + com.anythink.expressad.video.dynview.a.b.f21129b, layoutParams.bottomMargin + com.anythink.expressad.video.dynview.a.b.f21131d);
+                    layoutParams.setMargins(layoutParams.leftMargin + com.anythink.expressad.video.dynview.a.b.f21915a, layoutParams.topMargin + com.anythink.expressad.video.dynview.a.b.f21917c, layoutParams.rightMargin + com.anythink.expressad.video.dynview.a.b.f21916b, layoutParams.bottomMargin + com.anythink.expressad.video.dynview.a.b.f21918d);
                     relativeLayout.setLayoutParams(layoutParams);
                 } else {
                     RelativeLayout.LayoutParams layoutParams2 = new RelativeLayout.LayoutParams(-1, -1);
-                    layoutParams2.setMargins(layoutParams2.leftMargin + com.anythink.expressad.video.dynview.a.b.f21128a, layoutParams2.topMargin + com.anythink.expressad.video.dynview.a.b.f21130c, layoutParams2.rightMargin + com.anythink.expressad.video.dynview.a.b.f21129b, layoutParams2.bottomMargin + com.anythink.expressad.video.dynview.a.b.f21131d);
+                    layoutParams2.setMargins(layoutParams2.leftMargin + com.anythink.expressad.video.dynview.a.b.f21915a, layoutParams2.topMargin + com.anythink.expressad.video.dynview.a.b.f21917c, layoutParams2.rightMargin + com.anythink.expressad.video.dynview.a.b.f21916b, layoutParams2.bottomMargin + com.anythink.expressad.video.dynview.a.b.f21918d);
                     relativeLayout.setLayoutParams(layoutParams2);
                 }
             }
             if (findViewById != null) {
                 if (findViewById instanceof TextView) {
                     TextView textView = (TextView) findViewById;
-                    textView.setTextColor(Color.parseColor(this.f21290p));
+                    textView.setTextColor(Color.parseColor(this.f22077p));
                     textView.setTextSize(22.0f);
-                    com.anythink.expressad.video.dynview.i.b.a.a(findViewById, 1.0f, cVar.i() == 1302 ? 25 : 5, this.f21293s, new String[]{this.f21298x, this.f21299y}, GradientDrawable.Orientation.LEFT_RIGHT);
+                    com.anythink.expressad.video.dynview.i.b.a.a(findViewById, 1.0f, cVar.i() == 1302 ? 25 : 5, this.f22080s, new String[]{this.f22085x, this.f22086y}, GradientDrawable.Orientation.LEFT_RIGHT);
                 }
                 int i = cVar.i();
                 if (i == 404 || i == 704 || i == 1402) {
@@ -214,11 +214,11 @@ public final class b {
         AnyThinkFramLayout anyThinkFramLayout = (AnyThinkFramLayout) view;
         AnimatorSet animatorSet = new AnimatorSet();
         if (view.getContext() != null) {
-            this.f21300z = false;
-            ImageView imageView = (ImageView) view.findViewById(a(this.f21276a));
-            ImageView imageView2 = (ImageView) view.findViewById(a(this.f21277b));
-            ImageView imageView3 = (ImageView) view.findViewById(a(this.f21278c));
-            ImageView imageView4 = (ImageView) view.findViewById(a(this.f21279d));
+            this.f22087z = false;
+            ImageView imageView = (ImageView) view.findViewById(a(this.f22063a));
+            ImageView imageView2 = (ImageView) view.findViewById(a(this.f22064b));
+            ImageView imageView3 = (ImageView) view.findViewById(a(this.f22065c));
+            ImageView imageView4 = (ImageView) view.findViewById(a(this.f22066d));
             ObjectAnimator objectAnimator4 = null;
             if (imageView != null) {
                 new com.anythink.expressad.video.dynview.h.b();
@@ -257,14 +257,14 @@ public final class b {
             return;
         }
         if (cVar.e() == 1) {
-            view.setBackgroundDrawable(context.getResources().getDrawable(k.a(context, this.f21289o, k.f19632c)));
-            TextView textView = (TextView) view.findViewById(a(this.f21283h));
+            view.setBackgroundDrawable(context.getResources().getDrawable(k.a(context, this.f22076o, k.f20419c)));
+            TextView textView = (TextView) view.findViewById(a(this.f22070h));
             if (textView != null) {
-                textView.setTextColor(Color.parseColor(this.f21291q));
+                textView.setTextColor(Color.parseColor(this.f22078q));
             }
             TextView textView2 = (TextView) view.findViewById(a(this.i));
             if (textView2 != null) {
-                textView2.setTextColor(Color.parseColor(this.f21291q));
+                textView2.setTextColor(Color.parseColor(this.f22078q));
             }
             b9 = v.b(context, 2.0f);
         } else {
@@ -272,7 +272,7 @@ public final class b {
             view.getBackground().setAlpha(100);
         }
         int b10 = v.b(context, 8.0f);
-        View findViewById = view.findViewById(a(this.f21284j));
+        View findViewById = view.findViewById(a(this.f22071j));
         if (findViewById != null) {
             if (cVar.f() != null && (cVar.f() instanceof AnythinkClickCTAView)) {
                 new com.anythink.expressad.video.dynview.h.b();
@@ -280,10 +280,10 @@ public final class b {
             }
             if (findViewById instanceof TextView) {
                 TextView textView3 = (TextView) findViewById;
-                textView3.setTextColor(Color.parseColor(this.f21290p));
+                textView3.setTextColor(Color.parseColor(this.f22077p));
                 textView3.setTextSize(15.0f);
-                String str = this.f21296v;
-                String str2 = this.f21293s;
+                String str = this.f22083v;
+                String str2 = this.f22080s;
                 com.anythink.expressad.video.dynview.i.b.a.a(textView3, 1.0f, 5.0f, str2, new String[]{str, str2}, GradientDrawable.Orientation.LEFT_RIGHT);
             }
         }
@@ -306,18 +306,18 @@ public final class b {
         String str;
         String str2;
         String str3;
-        float f3;
+        float f2;
         RelativeLayout relativeLayout;
         Context context = view != null ? view.getContext() : null;
         if (context == null || cVar == null) {
             return;
         }
-        this.f21300z = false;
-        TextView textView = (TextView) view.findViewById(a(this.f21280e));
+        this.f22087z = false;
+        TextView textView = (TextView) view.findViewById(a(this.f22067e));
         TextView textView2 = (TextView) view.findViewById(a("anythink_reward_click_tv"));
         if (textView != null) {
-            textView.setBackgroundResource(k.a(context, "anythink_reward_shape_progress", k.f19632c));
-            textView.setTextColor(Color.parseColor(this.f21290p));
+            textView.setBackgroundResource(k.a(context, "anythink_reward_shape_progress", k.f20419c));
+            textView.setTextColor(Color.parseColor(this.f22077p));
             textView.setTextSize(11.0f);
         }
         if (textView2 != null) {
@@ -327,47 +327,47 @@ public final class b {
                 ((AnyThinkTextView) textView2).setObjectAnimator(com.anythink.expressad.video.dynview.h.b.c(textView2));
             }
         }
-        String str4 = this.f21291q;
-        String str5 = this.f21293s;
+        String str4 = this.f22078q;
+        String str5 = this.f22080s;
         int i = cVar.i();
         float f9 = 10.0f;
         if (i == 302) {
-            str = this.f21294t;
-            str2 = this.f21297w;
-            str4 = this.f21290p;
-            str5 = this.f21295u;
+            str = this.f22081t;
+            str2 = this.f22084w;
+            str4 = this.f22077p;
+            str5 = this.f22082u;
         } else {
             if (i == 802) {
-                str = this.f21290p;
-                str4 = this.f21291q;
+                str = this.f22077p;
+                str4 = this.f22078q;
                 f9 = 25.0f;
-                str3 = this.f21292r;
-                f3 = 0.5f;
+                str3 = this.f22079r;
+                f2 = 0.5f;
                 str2 = str;
             } else if (i != 5002010) {
-                str = this.f21296v;
-                str2 = this.f21293s;
+                str = this.f22083v;
+                str2 = this.f22080s;
                 f9 = 5.0f;
             } else {
-                String str6 = this.f21296v;
-                str4 = this.f21290p;
+                String str6 = this.f22083v;
+                str4 = this.f22077p;
                 str = str6;
                 str2 = str;
-                f3 = 1.0f;
+                f2 = 1.0f;
                 str3 = str2;
             }
             if (textView2 != null) {
                 textView2.setTextColor(Color.parseColor(str4));
-                com.anythink.expressad.video.dynview.i.b.a.a(textView2, f3, f9, str3, new String[]{str, str2}, GradientDrawable.Orientation.LEFT_RIGHT);
+                com.anythink.expressad.video.dynview.i.b.a.a(textView2, f2, f9, str3, new String[]{str, str2}, GradientDrawable.Orientation.LEFT_RIGHT);
             }
             if (cVar.f() != null) {
                 RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) cVar.f().getLayoutParams();
                 layoutParams.setMargins(0, 0, 0, 0);
                 cVar.f().setLayoutParams(layoutParams);
             }
-            relativeLayout = (RelativeLayout) view.findViewById(a(this.f21282g));
+            relativeLayout = (RelativeLayout) view.findViewById(a(this.f22069g));
             if (relativeLayout == null) {
-                if (com.anythink.expressad.video.dynview.a.b.f21128a == 0 && com.anythink.expressad.video.dynview.a.b.f21129b == 0 && com.anythink.expressad.video.dynview.a.b.f21130c == 0 && com.anythink.expressad.video.dynview.a.b.f21131d == 0) {
+                if (com.anythink.expressad.video.dynview.a.b.f21915a == 0 && com.anythink.expressad.video.dynview.a.b.f21916b == 0 && com.anythink.expressad.video.dynview.a.b.f21917c == 0 && com.anythink.expressad.video.dynview.a.b.f21918d == 0) {
                     return;
                 }
                 relativeLayout.setVisibility(4);
@@ -380,12 +380,12 @@ public final class b {
             return;
         }
         str3 = str5;
-        f3 = 1.0f;
+        f2 = 1.0f;
         if (textView2 != null) {
         }
         if (cVar.f() != null) {
         }
-        relativeLayout = (RelativeLayout) view.findViewById(a(this.f21282g));
+        relativeLayout = (RelativeLayout) view.findViewById(a(this.f22069g));
         if (relativeLayout == null) {
         }
     }
@@ -398,7 +398,7 @@ public final class b {
     }
 
     private void a(Context context, View view, com.anythink.expressad.video.dynview.c cVar) {
-        SoundImageView soundImageView = (SoundImageView) view.findViewById(a(this.f21281f));
+        SoundImageView soundImageView = (SoundImageView) view.findViewById(a(this.f22068f));
         int b9 = v.b(context, 60.0f);
         int b10 = v.b(context, 10.0f);
         if (soundImageView != null) {

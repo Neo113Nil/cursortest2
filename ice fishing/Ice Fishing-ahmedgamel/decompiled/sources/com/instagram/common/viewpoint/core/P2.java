@@ -23,16 +23,16 @@ public final class P2 {
     public final HashMap<String, ArrayList<P1>> A03 = new HashMap<>();
     public final ArrayList<P0> A02 = new ArrayList<>();
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A06, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 63);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A06, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 63);
         }
         return new String(copyOfRange);
     }
 
     public static void A03() {
-        A06 = new byte[]{11, 11, 109, 66, 71, 95, 78, 89, 11, 79, 66, 79, 11, 69, 68, 95, 11, 70, 74, 95, 72, 67, 17, 11, 95, 95, 57, 22, 19, 11, 26, 13, 95, 18, 30, 11, 28, 23, 26, 27, 94, 95, 95, 18, 30, 11, 28, 23, 66, 79, 7, 42, 101, 108, 42, 99, 100, 126, 111, 100, 126, 42, 37, 118, 102, 109, 96, 104, 96, 37, 86, 116, 99, 126, 120, 121, 55, 123, 126, 100, 99, 45, 55, 84, 119, 123, 121, 116, 90, 106, 119, 121, 124, 123, 121, 107, 108, 85, 121, 118, 121, Byte.MAX_VALUE, 125, 106, 24, 52, 33, 54, 61, 60, 59, 50, 117, 52, 50, 52, 60, 59, 38, 33, 117, 51, 60, 57, 33, 48, 39, 117, 24, 47, 57, 37, 38, 60, 35, 36, 45, 106, 62, 51, 58, 47, 106, 56, 58, 45, 48, 54, 55, 78, 76, 89, 72, 74, 66, 95, 84, 12, 9, 28, 9, 72, 69, 76, 89, 91, c.f16317b, 69, c.f16317b, 65, 89, c.f16317b, 14, 92, 75, 79, 93, 65, c.f16317b};
+        A06 = new byte[]{11, 11, 109, 66, 71, 95, 78, 89, 11, 79, 66, 79, 11, 69, 68, 95, 11, 70, 74, 95, 72, 67, 17, 11, 95, 95, 57, 22, 19, 11, 26, 13, 95, 18, 30, 11, 28, 23, 26, 27, 94, 95, 95, 18, 30, 11, 28, 23, 66, 79, 7, 42, 101, 108, 42, 99, 100, 126, 111, 100, 126, 42, 37, 118, 102, 109, 96, 104, 96, 37, 86, 116, 99, 126, 120, 121, 55, 123, 126, 100, 99, 45, 55, 84, 119, 123, 121, 116, 90, 106, 119, 121, 124, 123, 121, 107, 108, 85, 121, 118, 121, Byte.MAX_VALUE, 125, 106, 24, 52, 33, 54, 61, 60, 59, 50, 117, 52, 50, 52, 60, 59, 38, 33, 117, 51, 60, 57, 33, 48, 39, 117, 24, 47, 57, 37, 38, 60, 35, 36, 45, 106, 62, 51, 58, 47, 106, 56, 58, 45, 48, 54, 55, 78, 76, 89, 72, 74, 66, 95, 84, 12, 9, 28, 9, 72, 69, 76, 89, 91, c.f17104b, 69, c.f17104b, 65, 89, c.f17104b, 14, 92, 75, 79, 93, 65, c.f17104b};
     }
 
     static {
@@ -42,7 +42,7 @@ public final class P2 {
 
     public P2(Context context) {
         this.A00 = context;
-        this.A01 = new HandlerC1149Oz(this, context.getMainLooper());
+        this.A01 = new HandlerC1169Oz(this, context.getMainLooper());
     }
 
     public static P2 A00(Context context) {
@@ -100,11 +100,11 @@ public final class P2 {
                     ArrayList<P1> arrayList = this.A03.get(action);
                     if (arrayList != null) {
                         int i = arrayList.size();
-                        for (int i6 = i - 1; i6 >= 0; i6--) {
-                            P1 p12 = arrayList.get(i6);
+                        for (int i4 = i - 1; i4 >= 0; i4--) {
+                            P1 p12 = arrayList.get(i4);
                             if (p12.A02 == broadcastReceiver) {
                                 p12.A01 = true;
-                                arrayList.remove(i6);
+                                arrayList.remove(i4);
                             }
                         }
                         if (arrayList.size() <= 0) {
@@ -206,8 +206,8 @@ public final class P2 {
                     }
                 }
                 if (arrayList2 != null) {
-                    for (int i6 = 0; i6 < arrayList2.size(); i6++) {
-                        ((P1) arrayList2.get(i6)).A00 = false;
+                    for (int i4 = 0; i4 < arrayList2.size(); i4++) {
+                        ((P1) arrayList2.get(i4)).A00 = false;
                     }
                     this.A02.add(new P0(intent, arrayList2));
                     if (!this.A01.hasMessages(1)) {

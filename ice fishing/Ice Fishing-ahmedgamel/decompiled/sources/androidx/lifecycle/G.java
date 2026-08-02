@@ -1,56 +1,54 @@
 package androidx.lifecycle;
 
-import D.RunnableC0282a;
 import android.os.Handler;
-import g1.C4523c;
 
 /* loaded from: classes.dex */
-public final class G implements InterfaceC0503v {
+public final class G implements InterfaceC0507v {
 
     /* renamed from: B, reason: collision with root package name */
-    public static final G f5103B = new G();
+    public static final G f5070B = new G();
 
     /* renamed from: n, reason: collision with root package name */
-    public int f5105n;
+    public int f5072n;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f5106u;
+    public int f5073u;
 
     /* renamed from: x, reason: collision with root package name */
-    public Handler f5109x;
+    public Handler f5076x;
 
     /* renamed from: v, reason: collision with root package name */
-    public boolean f5107v = true;
+    public boolean f5074v = true;
 
     /* renamed from: w, reason: collision with root package name */
-    public boolean f5108w = true;
+    public boolean f5075w = true;
 
     /* renamed from: y, reason: collision with root package name */
-    public final C0505x f5110y = new C0505x(this);
+    public final C0509x f5077y = new C0509x(this);
 
     /* renamed from: z, reason: collision with root package name */
-    public final RunnableC0282a f5111z = new RunnableC0282a(13, this);
+    public final A3.p f5078z = new A3.p(14, this);
 
     /* renamed from: A, reason: collision with root package name */
-    public final C4523c f5104A = new C4523c(14, this);
+    public final n4.c f5071A = new n4.c(19, this);
 
     public final void a() {
-        int i = this.f5106u + 1;
-        this.f5106u = i;
+        int i = this.f5073u + 1;
+        this.f5073u = i;
         if (i == 1) {
-            if (this.f5107v) {
-                this.f5110y.e(EnumC0496n.ON_RESUME);
-                this.f5107v = false;
+            if (this.f5074v) {
+                this.f5077y.e(EnumC0500n.ON_RESUME);
+                this.f5074v = false;
             } else {
-                Handler handler = this.f5109x;
+                Handler handler = this.f5076x;
                 kotlin.jvm.internal.h.b(handler);
-                handler.removeCallbacks(this.f5111z);
+                handler.removeCallbacks(this.f5078z);
             }
         }
     }
 
-    @Override // androidx.lifecycle.InterfaceC0503v
-    public final AbstractC0498p getLifecycle() {
-        return this.f5110y;
+    @Override // androidx.lifecycle.InterfaceC0507v
+    public final AbstractC0502p getLifecycle() {
+        return this.f5077y;
     }
 }

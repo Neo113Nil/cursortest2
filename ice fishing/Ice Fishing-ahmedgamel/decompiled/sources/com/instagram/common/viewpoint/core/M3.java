@@ -13,7 +13,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class M3 extends AbstractC1486ay {
+public final class M3 extends AbstractC1506ay {
     public static ValueCallback A08;
     public static boolean A09;
     public static boolean A0A;
@@ -24,15 +24,15 @@ public final class M3 extends AbstractC1486ay {
     public long A01;
     public long A02;
     public long A03;
-    public C1840gi A04;
-    public C1473al A05;
-    public InterfaceC1478aq A06;
-    public C1481at A07;
+    public C1860gi A04;
+    public C1493al A05;
+    public InterfaceC1498aq A06;
+    public C1501at A07;
 
-    public static String A03(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0B, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 50);
+    public static String A03(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0B, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 50);
         }
         return new String(copyOfRange);
     }
@@ -50,29 +50,29 @@ public final class M3 extends AbstractC1486ay {
         A0D.add(A03(4, 5, 62));
     }
 
-    public M3(C1840gi c1840gi, Activity activity, InterfaceC1478aq interfaceC1478aq) {
-        super(activity, c1840gi);
+    public M3(C1860gi c1860gi, Activity activity, InterfaceC1498aq interfaceC1498aq) {
+        super(activity, c1860gi);
         this.A02 = -1L;
         this.A00 = -1L;
         this.A03 = -1L;
         this.A01 = -1L;
-        A08(c1840gi, interfaceC1478aq);
+        A08(c1860gi, interfaceC1498aq);
     }
 
-    public M3(C1840gi c1840gi, InterfaceC1478aq interfaceC1478aq) {
-        super(c1840gi);
+    public M3(C1860gi c1860gi, InterfaceC1498aq interfaceC1498aq) {
+        super(c1860gi);
         this.A02 = -1L;
         this.A00 = -1L;
         this.A03 = -1L;
         this.A01 = -1L;
-        A08(c1840gi, interfaceC1478aq);
+        A08(c1860gi, interfaceC1498aq);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    @Override // com.instagram.common.viewpoint.core.AbstractC1486ay
+    @Override // com.instagram.common.viewpoint.core.AbstractC1506ay
     /* renamed from: A02, reason: merged with bridge method [inline-methods] */
-    public final C1481at A0H() {
-        return new C1481at(new WeakReference(this.A04), new WeakReference(this.A06), new WeakReference(this.A05));
+    public final C1501at A0H() {
+        return new C1501at(new WeakReference(this.A04), new WeakReference(this.A06), new WeakReference(this.A05));
     }
 
     private void A05() {
@@ -81,19 +81,19 @@ public final class M3 extends AbstractC1486ay {
         }
     }
 
-    public static void A07(int i, int i6, Intent intent) {
+    public static void A07(int i, int i4, Intent intent) {
         if (A08 != null && i == 1001) {
-            A08.onReceiveValue(WebChromeClient.FileChooserParams.parseResult(i6, intent));
+            A08.onReceiveValue(WebChromeClient.FileChooserParams.parseResult(i4, intent));
             A08 = null;
         }
     }
 
-    private void A08(C1840gi c1840gi, InterfaceC1478aq interfaceC1478aq) {
-        this.A04 = c1840gi;
-        this.A06 = interfaceC1478aq;
-        this.A05 = new C1473al(this);
-        A09 = AbstractC1291Uq.A03(this.A04);
-        A0A = AbstractC1291Uq.A04(this.A04);
+    private void A08(C1860gi c1860gi, InterfaceC1498aq interfaceC1498aq) {
+        this.A04 = c1860gi;
+        this.A06 = interfaceC1498aq;
+        this.A05 = new C1493al(this);
+        A09 = AbstractC1311Uq.A03(this.A04);
+        A0A = AbstractC1311Uq.A04(this.A04);
         WebSettings settings = getSettings();
         settings.setSupportZoom(true);
         settings.setBuiltInZoomControls(true);
@@ -109,9 +109,9 @@ public final class M3 extends AbstractC1486ay {
         setWebViewClient(this.A07);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1486ay
+    @Override // com.instagram.common.viewpoint.core.AbstractC1506ay
     public final WebChromeClient A0G() {
-        return new C1480as(new WeakReference(this.A04), new WeakReference(this.A06), new WeakReference(this.A05));
+        return new C1500as(new WeakReference(this.A04), new WeakReference(this.A06), new WeakReference(this.A05));
     }
 
     public final void A0K(long j6) {
@@ -149,10 +149,10 @@ public final class M3 extends AbstractC1486ay {
         strArr2[0] = "1LscF1ZcfF08U7LpSibJFf3LFm8iDmJu";
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1486ay, android.webkit.WebView
+    @Override // com.instagram.common.viewpoint.core.AbstractC1506ay, android.webkit.WebView
     public final void destroy() {
         this.A06 = null;
-        AbstractC1492b4.A03(this);
+        AbstractC1512b4.A03(this);
         super.destroy();
     }
 
@@ -188,7 +188,7 @@ public final class M3 extends AbstractC1486ay {
         }
     }
 
-    public void setBrowserNavigationListener(InterfaceC1479ar interfaceC1479ar) {
-        this.A07.A05(new WeakReference<>(interfaceC1479ar));
+    public void setBrowserNavigationListener(InterfaceC1499ar interfaceC1499ar) {
+        this.A07.A05(new WeakReference<>(interfaceC1499ar));
     }
 }

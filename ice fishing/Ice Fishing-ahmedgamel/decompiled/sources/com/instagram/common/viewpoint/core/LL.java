@@ -8,5 +8,5 @@ public interface LL {
 
     void AIk(long j6);
 
-    boolean AIt(InterfaceC2191ms interfaceC2191ms, long j6) throws IOException;
+    boolean AIt(InterfaceC2211ms interfaceC2211ms, long j6) throws IOException;
 }

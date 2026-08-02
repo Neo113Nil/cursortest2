@@ -4,8 +4,8 @@ package com.google.android.gms.internal.ads;
 public final class Zt {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f28973a;
+    public String f29743a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f28974b;
+    public String f29744b;
 }

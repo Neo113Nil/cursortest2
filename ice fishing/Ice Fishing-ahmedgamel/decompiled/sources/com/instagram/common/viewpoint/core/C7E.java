@@ -17,16 +17,16 @@ public final class C7E {
     public C7A A06;
     public Object A07;
     public boolean A08;
-    public final C2367pl A09 = new C2367pl();
-    public final C2365pj A0A = new C2365pj();
+    public final C2387pl A09 = new C2387pl();
+    public final C2385pj A0A = new C2385pj();
 
     /* JADX WARN: Failed to parse debug info
     java.lang.ArrayIndexOutOfBoundsException
      */
-    public static C2248no A06(Timeline timeline, Object obj, long j6, long j9, C2367pl c2367pl) {
-        timeline.A0J(obj, c2367pl);
-        int A08 = c2367pl.A08(j6);
-        return A08 == -1 ? new C2248no(obj, j9) : new C2248no(obj, A08, c2367pl.A05(A08), j9);
+    public static C2268no A06(Timeline timeline, Object obj, long j6, long j9, C2387pl c2387pl) {
+        timeline.A0J(obj, c2387pl);
+        int A08 = c2387pl.A08(j6);
+        return A08 == -1 ? new C2268no(obj, j9) : new C2268no(obj, A08, c2387pl.A05(A08), j9);
     }
 
     /* JADX WARN: Failed to parse debug info
@@ -74,10 +74,10 @@ public final class C7E {
         C7B c7b = c7a.A00;
         if (c7b.A07) {
             int A0A = timeline.A0A(c7b.A04.A04);
-            C2367pl c2367pl = c7e.A09;
-            C2365pj c2365pj = c7e.A0A;
+            C2387pl c2387pl = c7e.A09;
+            C2385pj c2385pj = c7e.A0A;
             int currentPeriodIndex = c7e.A01;
-            int A09 = timeline.A09(A0A, c2367pl, c2365pj, currentPeriodIndex, c7e.A08);
+            int A09 = timeline.A09(A0A, c2387pl, c2385pj, currentPeriodIndex, c7e.A08);
             if (A09 == -1) {
                 return null;
             }
@@ -85,7 +85,7 @@ public final class C7E {
             Object obj = c7e.A09.A04;
             long j10 = c7b.A04.A03;
             if (timeline.A0K(i, c7e.A0A).A00 == A09) {
-                Pair<Object, Long> defaultPosition = timeline.A0F(c7e.A0A, c7e.A09, i, b.f6382b, Math.max(0L, (c7a.A0B() + c7b.A00) - j6));
+                Pair<Object, Long> defaultPosition = timeline.A0F(c7e.A0A, c7e.A09, i, b.f7168b, Math.max(0L, (c7a.A0B() + c7b.A00) - j6));
                 if (defaultPosition == null) {
                     return null;
                 }
@@ -111,20 +111,20 @@ public final class C7E {
             }
             return A02(timeline, A06(timeline, obj, j9, j10, c7e.A09), j9, j9);
         }
-        C2248no c2248no = c7b.A04;
-        timeline.A0J(c2248no.A04, c7e.A09);
-        if (c2248no.A00()) {
-            int i6 = c2248no.A00;
-            int A04 = c7e.A09.A04(i6);
+        C2268no c2268no = c7b.A04;
+        timeline.A0J(c2268no.A04, c7e.A09);
+        if (c2268no.A00()) {
+            int i4 = c2268no.A00;
+            int A04 = c7e.A09.A04(i4);
             if (A04 != -1) {
-                int A06 = c7e.A09.A06(i6, c2248no.A01);
+                int A06 = c7e.A09.A06(i4, c2268no.A01);
                 if (A06 < A04) {
-                    if (!c7e.A09.A0I(i6, A06)) {
+                    if (!c7e.A09.A0I(i4, A06)) {
                         return null;
                     }
-                    return A03(timeline, c2248no.A04, i6, A06, c7b.A02, c2248no.A03);
+                    return A03(timeline, c2268no.A04, i4, A06, c7b.A02, c2268no.A03);
                 }
-                return A04(timeline, c2248no.A04, c7b.A02, c2248no.A03);
+                return A04(timeline, c2268no.A04, c7b.A02, c2268no.A03);
             }
             String[] strArr2 = A0B;
             if (strArr2[5].length() != strArr2[1].length()) {
@@ -138,79 +138,79 @@ public final class C7E {
         if (c7b.A01 != Long.MIN_VALUE) {
             int A08 = c7e.A09.A08(c7b.A01);
             if (A08 == -1) {
-                return A04(timeline, c2248no.A04, c7b.A01, c2248no.A03);
+                return A04(timeline, c2268no.A04, c7b.A01, c2268no.A03);
             }
             int A05 = c7e.A09.A05(A08);
             if (!c7e.A09.A0I(A08, A05)) {
                 return null;
             }
-            return A03(timeline, c2248no.A04, A08, A05, c7b.A01, c2248no.A03);
+            return A03(timeline, c2268no.A04, A08, A05, c7b.A01, c2268no.A03);
         }
         int A03 = c7e.A09.A03();
         if (A03 == 0) {
             return null;
         }
-        int i9 = A03 - 1;
+        int i6 = A03 - 1;
         if (A0B[7].charAt(7) == 'k') {
             A0B[0] = "u0JZC9rSowd61rcMlDOlOE";
-            if (c7e.A09.A0D(i9) != Long.MIN_VALUE) {
+            if (c7e.A09.A0D(i6) != Long.MIN_VALUE) {
                 return null;
             }
-        } else if (c7e.A09.A0D(i9) != Long.MIN_VALUE) {
+        } else if (c7e.A09.A0D(i6) != Long.MIN_VALUE) {
             return null;
         }
-        if (c7e.A09.A0H(i9)) {
+        if (c7e.A09.A0H(i6)) {
             return null;
         }
-        int A052 = c7e.A09.A05(i9);
-        if (!c7e.A09.A0I(i9, A052)) {
+        int A052 = c7e.A09.A05(i6);
+        if (!c7e.A09.A0I(i6, A052)) {
             return null;
         }
-        return A03(timeline, c2248no.A04, i9, A052, c7e.A09.A0A(), c2248no.A03);
+        return A03(timeline, c2268no.A04, i6, A052, c7e.A09.A0A(), c2268no.A03);
     }
 
-    private C7B A02(Timeline timeline, C2248no c2248no, long j6, long j9) {
-        timeline.A0J(c2248no.A04, this.A09);
-        if (c2248no.A00()) {
-            if (!this.A09.A0I(c2248no.A00, c2248no.A01)) {
+    private C7B A02(Timeline timeline, C2268no c2268no, long j6, long j9) {
+        timeline.A0J(c2268no.A04, this.A09);
+        if (c2268no.A00()) {
+            if (!this.A09.A0I(c2268no.A00, c2268no.A01)) {
                 return null;
             }
-            return A03(timeline, c2248no.A04, c2248no.A00, c2248no.A01, j6, c2248no.A03);
+            return A03(timeline, c2268no.A04, c2268no.A00, c2268no.A01, j6, c2268no.A03);
         }
-        return A04(timeline, c2248no.A04, j9, c2248no.A03);
+        return A04(timeline, c2268no.A04, j9, c2268no.A03);
     }
 
-    private C7B A03(Timeline timeline, Object obj, int i, int i6, long startPositionUs, long j6) {
+    private C7B A03(Timeline timeline, Object obj, int i, int i4, long startPositionUs, long j6) {
         long j9;
-        C2248no c2248no = new C2248no(obj, i, i6, j6);
-        boolean A08 = A08(timeline, c2248no, Long.MIN_VALUE);
-        boolean A09 = A09(timeline, c2248no, A08);
-        long A0E = timeline.A0J(c2248no.A04, this.A09).A0E(c2248no.A00, c2248no.A01);
-        if (i6 == this.A09.A05(i)) {
-            C2367pl c2367pl = this.A09;
+        C2268no c2268no = new C2268no(obj, i, i4, j6);
+        boolean A08 = A08(timeline, c2268no, Long.MIN_VALUE);
+        boolean A09 = A09(timeline, c2268no, A08);
+        long A0E = timeline.A0J(c2268no.A04, this.A09).A0E(c2268no.A00, c2268no.A01);
+        if (i4 == this.A09.A05(i)) {
+            C2387pl c2387pl = this.A09;
             if (A0B[0].length() == 8) {
                 throw new RuntimeException();
             }
             String[] strArr = A0B;
             strArr[6] = "btiW32P1CxlKUaykVb";
             strArr[4] = "aD0NnH";
-            j9 = c2367pl.A09();
+            j9 = c2387pl.A09();
         } else {
             j9 = 0;
         }
-        return new C7B(c2248no, j9, Long.MIN_VALUE, startPositionUs, A0E, A08, A09);
+        return new C7B(c2268no, j9, Long.MIN_VALUE, startPositionUs, A0E, A08, A09);
     }
 
     private C7B A04(Timeline timeline, Object obj, long j6, long j9) {
         long A0D;
         long j10;
-        C2248no c2248no = new C2248no(obj, j9);
-        timeline.A0J(c2248no.A04, this.A09);
+        C2268no c2268no = new C2268no(obj, j9);
+        timeline.A0J(c2268no.A04, this.A09);
         int A07 = this.A09.A07(j6);
         if (A07 == -1) {
             A0D = Long.MIN_VALUE;
         } else {
-            C2367pl c2367pl = this.A09;
+            C2387pl c2387pl = this.A09;
             String[] strArr = A0B;
             if (strArr[6].length() == strArr[4].length()) {
                 throw new RuntimeException();
@@ -218,16 +218,16 @@ public final class C7E {
             String[] strArr2 = A0B;
             strArr2[6] = "hcjC8Oe5bspAHclLrN";
             strArr2[4] = "7U4c4Z";
-            A0D = c2367pl.A0D(A07);
+            A0D = c2387pl.A0D(A07);
         }
-        boolean isLastInTimeline = A08(timeline, c2248no, A0D);
-        boolean A09 = A09(timeline, c2248no, isLastInTimeline);
+        boolean isLastInTimeline = A08(timeline, c2268no, A0D);
+        boolean A09 = A09(timeline, c2268no, isLastInTimeline);
         if (A0D == Long.MIN_VALUE) {
             j10 = this.A09.A0A();
         } else {
             j10 = A0D;
         }
-        return new C7B(c2248no, j6, A0D, b.f6382b, j10, isLastInTimeline, A09);
+        return new C7B(c2268no, j6, A0D, b.f7168b, j10, isLastInTimeline, A09);
     }
 
     private C7B A05(C7Z c7z) {
@@ -308,13 +308,13 @@ public final class C7E {
         throw new RuntimeException();
     }
 
-    private boolean A08(Timeline timeline, C2248no c2248no, long j6) {
-        int adGroupCount = timeline.A0J(c2248no.A04, this.A09).A03();
+    private boolean A08(Timeline timeline, C2268no c2268no, long j6) {
+        int adGroupCount = timeline.A0J(c2268no.A04, this.A09).A03();
         if (adGroupCount == 0) {
             return true;
         }
         int i = adGroupCount - 1;
-        boolean A00 = c2248no.A00();
+        boolean A00 = c2268no.A00();
         if (this.A09.A0D(i) != Long.MIN_VALUE) {
             return !A00 && j6 == Long.MIN_VALUE;
         }
@@ -322,15 +322,15 @@ public final class C7E {
         if (lastAdGroupIndex == -1) {
             return false;
         }
-        if (((A00 && c2248no.A00 == i && c2248no.A01 == lastAdGroupIndex + (-1)) ? 1 : 0) == 0) {
+        if (((A00 && c2268no.A00 == i && c2268no.A01 == lastAdGroupIndex + (-1)) ? 1 : 0) == 0) {
             return !A00 && this.A09.A05(i) == lastAdGroupIndex;
         }
         return true;
     }
 
-    private boolean A09(Timeline timeline, C2248no c2248no, boolean z3) {
-        int A0A = timeline.A0A(c2248no.A04);
-        return !timeline.A0K(timeline.A0H(A0A, this.A09).A00, this.A0A).A0D && timeline.A0O(A0A, this.A09, this.A0A, this.A01, this.A08) && z3;
+    private boolean A09(Timeline timeline, C2268no c2268no, boolean z6) {
+        int A0A = timeline.A0A(c2268no.A04);
+        return !timeline.A0K(timeline.A0H(A0A, this.A09).A00, this.A0A).A0D && timeline.A0O(A0A, this.A09, this.A0A, this.A01, this.A08) && z6;
     }
 
     private boolean A0A(C7A c7a, C7B c7b) {
@@ -368,7 +368,7 @@ public final class C7E {
     }
 
     public final C7A A0C() {
-        AbstractC06243y.A08((this.A06 == null || this.A06.A0I() == null) ? false : true);
+        AbstractC06443y.A08((this.A06 == null || this.A06.A0I() == null) ? false : true);
         this.A06 = this.A06.A0I();
         return this.A06;
     }
@@ -396,16 +396,16 @@ public final class C7E {
         return A01(c7z.A03, this.A04, j6);
     }
 
-    public final InterfaceC2249np A0J(InterfaceC07197p[] interfaceC07197pArr, long j6, AbstractC0889Ew abstractC0889Ew, F0 f02, InterfaceC0838Cx interfaceC0838Cx, C7B c7b, C0890Ex c0890Ex) {
+    public final InterfaceC2269np A0J(InterfaceC07397p[] interfaceC07397pArr, long j6, AbstractC0909Ew abstractC0909Ew, F0 f02, InterfaceC0858Cx interfaceC0858Cx, C7B c7b, C0910Ex c0910Ex) {
         long A0B2;
         if (this.A04 != null) {
             A0B2 = this.A04.A0B() + this.A04.A00.A00;
         } else {
             A0B2 = c7b.A03 + j6;
         }
-        C7A c7a = new C7A(interfaceC07197pArr, A0B2, abstractC0889Ew, f02, interfaceC0838Cx, c7b, c0890Ex);
+        C7A c7a = new C7A(interfaceC07397pArr, A0B2, abstractC0909Ew, f02, interfaceC0858Cx, c7b, c0910Ex);
         if (this.A04 != null) {
-            AbstractC06243y.A08(A0N());
+            AbstractC06443y.A08(A0N());
             this.A04.A0Q(c7a);
         }
         this.A07 = null;
@@ -414,7 +414,7 @@ public final class C7E {
         return c7a.A07;
     }
 
-    public final C2248no A0K(Timeline timeline, Object obj, long j6) {
+    public final C2268no A0K(Timeline timeline, Object obj, long j6) {
         return A06(timeline, obj, j6, A00(timeline, obj), this.A09);
     }
 
@@ -424,14 +424,14 @@ public final class C7E {
         }
     }
 
-    public final void A0M(boolean z3) {
+    public final void A0M(boolean z6) {
         C7A A0D = A0D();
         if (A0D != null) {
-            this.A07 = z3 ? A0D.A08 : null;
+            this.A07 = z6 ? A0D.A08 : null;
             this.A03 = A0D.A00.A04.A03;
             A0D.A0M();
             A0S(A0D);
-        } else if (!z3) {
+        } else if (!z6) {
             this.A07 = null;
         }
         this.A05 = null;
@@ -452,7 +452,7 @@ public final class C7E {
                     throw new RuntimeException();
                 }
                 A0B[3] = "WQJhcBpqvfFlde6mvMcdcISTeYvrM";
-                if (j6 == b.f6382b || this.A00 >= 100) {
+                if (j6 == b.f7168b || this.A00 >= 100) {
                 }
             }
             return false;
@@ -465,8 +465,8 @@ public final class C7E {
         return A07(timeline);
     }
 
-    public final boolean A0Q(Timeline timeline, C2248no c2248no, long j6) {
-        int A0A = timeline.A0A(c2248no.A04);
+    public final boolean A0Q(Timeline timeline, C2268no c2268no, long j6) {
+        int A0A = timeline.A0A(c2268no.A04);
         C7A c7a = null;
         for (C7A A0D = A0D(); A0D != null; A0D = A0D.A0I()) {
             if (c7a == null) {
@@ -501,29 +501,29 @@ public final class C7E {
         return true;
     }
 
-    public final boolean A0R(Timeline timeline, boolean z3) {
-        this.A08 = z3;
+    public final boolean A0R(Timeline timeline, boolean z6) {
+        this.A08 = z6;
         return A07(timeline);
     }
 
     public final boolean A0S(C7A c7a) {
-        AbstractC06243y.A08(c7a != null);
-        boolean z3 = false;
+        AbstractC06443y.A08(c7a != null);
+        boolean z6 = false;
         this.A04 = c7a;
         while (c7a.A0I() != null) {
             c7a = c7a.A0I();
             if (c7a == this.A06) {
                 this.A06 = this.A05;
-                z3 = true;
+                z6 = true;
             }
             c7a.A0M();
             this.A00--;
         }
         this.A04.A0Q(null);
-        return z3;
+        return z6;
     }
 
-    public final boolean A0T(InterfaceC2249np interfaceC2249np) {
-        return this.A04 != null && this.A04.A07 == interfaceC2249np;
+    public final boolean A0T(InterfaceC2269np interfaceC2269np) {
+        return this.A04 != null && this.A04.A07 == interfaceC2269np;
     }
 }

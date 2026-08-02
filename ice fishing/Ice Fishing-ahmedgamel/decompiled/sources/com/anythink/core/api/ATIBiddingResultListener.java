@@ -14,7 +14,7 @@ public abstract class ATIBiddingResultListener {
 
     public abstract void reportSuccess(Map<String, Object> map);
 
-    public final void setNeedWait(boolean z3) {
-        this.isNeedWait = z3;
+    public final void setNeedWait(boolean z6) {
+        this.isNeedWait = z6;
     }
 }

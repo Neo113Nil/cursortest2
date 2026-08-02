@@ -1,7 +1,9 @@
 package i8;
 
-import com.google.android.gms.internal.ads.C2941aq;
-import g1.C4523c;
+import a.AbstractC0426a;
+import com.google.android.gms.internal.ads.C2964aq;
+import i1.C4585b;
+import i1.C4586c;
 import java.net.ProxySelector;
 import java.security.GeneralSecurityException;
 import java.security.KeyStore;
@@ -19,92 +21,92 @@ import javax.net.ssl.X509TrustManager;
 public final class r {
 
     /* renamed from: C, reason: collision with root package name */
-    public static final List f38191C = j8.d.k(new s[]{s.f38227y, s.f38225w});
+    public static final List f38310C = j8.d.k(new s[]{s.f38346y, s.f38344w});
 
     /* renamed from: D, reason: collision with root package name */
-    public static final List f38192D = j8.d.k(new i[]{i.f38126e, i.f38127f});
+    public static final List f38311D = j8.d.k(new i[]{i.f38245e, i.f38246f});
 
     /* renamed from: A, reason: collision with root package name */
-    public final l8.d f38193A;
+    public final l8.d f38312A;
 
     /* renamed from: B, reason: collision with root package name */
-    public final I0.j f38194B;
+    public final C4585b f38313B;
 
     /* renamed from: a, reason: collision with root package name */
-    public final C2941aq f38195a;
+    public final C2964aq f38314a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final List f38196b;
+    public final List f38315b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final List f38197c;
+    public final List f38316c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final d4.f f38198d;
+    public final com.anythink.core.common.n.b.A f38317d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final boolean f38199e;
+    public final boolean f38318e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final boolean f38200f;
+    public final boolean f38319f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final b f38201g;
+    public final b f38320g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final boolean f38202h;
+    public final boolean f38321h;
     public final boolean i;
 
     /* renamed from: j, reason: collision with root package name */
-    public final b f38203j;
+    public final b f38322j;
 
     /* renamed from: k, reason: collision with root package name */
-    public final b f38204k;
+    public final b f38323k;
 
     /* renamed from: l, reason: collision with root package name */
-    public final ProxySelector f38205l;
+    public final ProxySelector f38324l;
 
     /* renamed from: m, reason: collision with root package name */
-    public final b f38206m;
+    public final b f38325m;
 
     /* renamed from: n, reason: collision with root package name */
-    public final SocketFactory f38207n;
+    public final SocketFactory f38326n;
 
     /* renamed from: o, reason: collision with root package name */
-    public final SSLSocketFactory f38208o;
+    public final SSLSocketFactory f38327o;
 
     /* renamed from: p, reason: collision with root package name */
-    public final X509TrustManager f38209p;
+    public final X509TrustManager f38328p;
 
     /* renamed from: q, reason: collision with root package name */
-    public final List f38210q;
+    public final List f38329q;
 
     /* renamed from: r, reason: collision with root package name */
-    public final List f38211r;
+    public final List f38330r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final w8.c f38212s;
+    public final w8.c f38331s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final d f38213t;
+    public final d f38332t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final com.bumptech.glide.e f38214u;
+    public final AbstractC0426a f38333u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final int f38215v;
+    public final int f38334v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final int f38216w;
+    public final int f38335w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final int f38217x;
+    public final int f38336x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final int f38218y;
+    public final int f38337y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final C4523c f38219z;
+    public final C4586c f38338z;
 
     /* JADX WARN: Removed duplicated region for block: B:14:0x014e  */
     /* JADX WARN: Removed duplicated region for block: B:56:0x01e0  */
@@ -113,49 +115,49 @@ public final class r {
     */
     public r(q qVar) {
         List list;
-        this.f38195a = qVar.f38170a;
-        this.f38196b = j8.d.j(qVar.f38172c);
-        this.f38197c = j8.d.j(qVar.f38173d);
-        this.f38198d = qVar.f38174e;
-        boolean z3 = qVar.f38175f;
-        this.f38199e = z3;
-        boolean z6 = qVar.f38176g;
-        this.f38200f = z6;
-        this.f38201g = qVar.f38177h;
-        this.f38202h = qVar.i;
-        this.i = qVar.f38178j;
-        this.f38203j = qVar.f38179k;
-        this.f38204k = qVar.f38180l;
+        this.f38314a = qVar.f38289a;
+        this.f38315b = j8.d.j(qVar.f38291c);
+        this.f38316c = j8.d.j(qVar.f38292d);
+        this.f38317d = qVar.f38293e;
+        boolean z6 = qVar.f38294f;
+        this.f38318e = z6;
+        boolean z9 = qVar.f38295g;
+        this.f38319f = z9;
+        this.f38320g = qVar.f38296h;
+        this.f38321h = qVar.i;
+        this.i = qVar.f38297j;
+        this.f38322j = qVar.f38298k;
+        this.f38323k = qVar.f38299l;
         ProxySelector proxySelector = ProxySelector.getDefault();
-        this.f38205l = proxySelector == null ? u8.a.f41356a : proxySelector;
-        this.f38206m = qVar.f38181m;
-        this.f38207n = qVar.f38182n;
-        List list2 = qVar.f38183o;
-        this.f38210q = list2;
-        this.f38211r = qVar.f38184p;
-        this.f38212s = qVar.f38185q;
-        this.f38215v = qVar.f38187s;
-        int i = qVar.f38188t;
-        this.f38216w = i;
-        int i6 = qVar.f38189u;
-        this.f38217x = i6;
-        int i9 = qVar.f38190v;
-        this.f38218y = i9;
-        C4523c c4523c = new C4523c(27);
-        this.f38219z = c4523c;
-        this.f38193A = l8.d.f38947l;
-        I0.j jVar = qVar.f38171b;
-        if (jVar == null) {
-            jVar = new I0.j(i6, i9, i, i6, z3, z6, c4523c);
-            qVar.f38171b = jVar;
+        this.f38324l = proxySelector == null ? u8.a.f41076a : proxySelector;
+        this.f38325m = qVar.f38300m;
+        this.f38326n = qVar.f38301n;
+        List list2 = qVar.f38302o;
+        this.f38329q = list2;
+        this.f38330r = qVar.f38303p;
+        this.f38331s = qVar.f38304q;
+        this.f38334v = qVar.f38306s;
+        int i = qVar.f38307t;
+        this.f38335w = i;
+        int i4 = qVar.f38308u;
+        this.f38336x = i4;
+        int i6 = qVar.f38309v;
+        this.f38337y = i6;
+        C4586c c4586c = new C4586c(28);
+        this.f38338z = c4586c;
+        this.f38312A = l8.d.f39015l;
+        C4585b c4585b = qVar.f38290b;
+        if (c4585b == null) {
+            c4585b = new C4585b(i4, i6, i, i4, z6, z9, c4586c);
+            qVar.f38290b = c4585b;
         }
-        this.f38194B = jVar;
+        this.f38313B = c4585b;
         if (list2 == null || !list2.isEmpty()) {
             Iterator it = list2.iterator();
             while (it.hasNext()) {
-                if (((i) it.next()).f38128a) {
-                    s8.f fVar = s8.f.f40500a;
-                    s8.f.f40500a.getClass();
+                if (((i) it.next()).f38247a) {
+                    s8.f fVar = s8.f.f40554a;
+                    s8.f.f40554a.getClass();
                     TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
                     trustManagerFactory.init((KeyStore) null);
                     TrustManager[] trustManagers = trustManagerFactory.getTrustManagers();
@@ -165,42 +167,42 @@ public final class r {
                         if (trustManager instanceof X509TrustManager) {
                             kotlin.jvm.internal.h.c(trustManager, "null cannot be cast to non-null type javax.net.ssl.X509TrustManager");
                             X509TrustManager x509TrustManager = (X509TrustManager) trustManager;
-                            this.f38209p = x509TrustManager;
-                            s8.f fVar2 = s8.f.f40500a;
+                            this.f38328p = x509TrustManager;
+                            s8.f fVar2 = s8.f.f40554a;
                             fVar2.getClass();
                             try {
                                 SSLContext l9 = fVar2.l();
                                 l9.init(null, new TrustManager[]{x509TrustManager}, null);
                                 SSLSocketFactory socketFactory = l9.getSocketFactory();
                                 kotlin.jvm.internal.h.d(socketFactory, "getSocketFactory(...)");
-                                this.f38208o = socketFactory;
-                                com.bumptech.glide.e c9 = s8.f.f40500a.c(x509TrustManager);
-                                this.f38214u = c9;
-                                d dVar = qVar.f38186r;
+                                this.f38327o = socketFactory;
+                                AbstractC0426a c9 = s8.f.f40554a.c(x509TrustManager);
+                                this.f38333u = c9;
+                                d dVar = qVar.f38305r;
                                 dVar.getClass();
-                                this.f38213t = kotlin.jvm.internal.h.a(dVar.f38094b, c9) ? dVar : new d(dVar.f38093a, c9);
-                                list = this.f38196b;
+                                this.f38332t = kotlin.jvm.internal.h.a(dVar.f38213b, c9) ? dVar : new d(dVar.f38212a, c9);
+                                list = this.f38315b;
                                 kotlin.jvm.internal.h.c(list, "null cannot be cast to non-null type kotlin.collections.List<okhttp3.Interceptor?>");
                                 if (!list.contains(null)) {
                                     throw new IllegalStateException(("Null interceptor: " + list).toString());
                                 }
-                                List list3 = this.f38197c;
+                                List list3 = this.f38316c;
                                 kotlin.jvm.internal.h.c(list3, "null cannot be cast to non-null type kotlin.collections.List<okhttp3.Interceptor?>");
                                 if (list3.contains(null)) {
                                     throw new IllegalStateException(("Null network interceptor: " + list3).toString());
                                 }
-                                X509TrustManager x509TrustManager2 = this.f38209p;
-                                com.bumptech.glide.e eVar = this.f38214u;
-                                SSLSocketFactory sSLSocketFactory = this.f38208o;
-                                List list4 = this.f38210q;
+                                X509TrustManager x509TrustManager2 = this.f38328p;
+                                AbstractC0426a abstractC0426a = this.f38333u;
+                                SSLSocketFactory sSLSocketFactory = this.f38327o;
+                                List list4 = this.f38329q;
                                 if (list4 == null || !list4.isEmpty()) {
                                     Iterator it2 = list4.iterator();
                                     while (it2.hasNext()) {
-                                        if (((i) it2.next()).f38128a) {
+                                        if (((i) it2.next()).f38247a) {
                                             if (sSLSocketFactory == null) {
                                                 throw new IllegalStateException("sslSocketFactory == null");
                                             }
-                                            if (eVar == null) {
+                                            if (abstractC0426a == null) {
                                                 throw new IllegalStateException("certificateChainCleaner == null");
                                             }
                                             if (x509TrustManager2 == null) {
@@ -213,13 +215,13 @@ public final class r {
                                 if (sSLSocketFactory != null) {
                                     throw new IllegalStateException("Check failed.");
                                 }
-                                if (eVar != null) {
+                                if (abstractC0426a != null) {
                                     throw new IllegalStateException("Check failed.");
                                 }
                                 if (x509TrustManager2 != null) {
                                     throw new IllegalStateException("Check failed.");
                                 }
-                                if (!kotlin.jvm.internal.h.a(this.f38213t, d.f38092c)) {
+                                if (!kotlin.jvm.internal.h.a(this.f38332t, d.f38211c)) {
                                     throw new IllegalStateException("Check failed.");
                                 }
                                 return;
@@ -234,11 +236,11 @@ public final class r {
                 }
             }
         }
-        this.f38208o = null;
-        this.f38214u = null;
-        this.f38209p = null;
-        this.f38213t = d.f38092c;
-        list = this.f38196b;
+        this.f38327o = null;
+        this.f38333u = null;
+        this.f38328p = null;
+        this.f38332t = d.f38211c;
+        list = this.f38315b;
         kotlin.jvm.internal.h.c(list, "null cannot be cast to non-null type kotlin.collections.List<okhttp3.Interceptor?>");
         if (!list.contains(null)) {
         }

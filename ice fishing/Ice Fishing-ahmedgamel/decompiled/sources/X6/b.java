@@ -8,14 +8,14 @@ import m6.s;
 public final class b implements s {
 
     /* renamed from: n, reason: collision with root package name */
-    public final u f3812n;
+    public final u f3767n;
 
     public b(u uVar) {
-        this.f3812n = uVar;
+        this.f3767n = uVar;
     }
 
     @Override // m6.s
     public final r a(String str) {
-        return this.f3812n.a(str);
+        return this.f3767n.a(str);
     }
 }

@@ -14,13 +14,13 @@ import org.json.JSONObject;
 public class l extends a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f14676a = "l";
+    private static final String f15462a = "l";
 
     /* renamed from: b, reason: collision with root package name */
-    private final an f14677b;
+    private final an f15463b;
 
     public l(an anVar) {
-        this.f14677b = anVar;
+        this.f15463b = anVar;
     }
 
     @Override // com.anythink.core.common.m.a
@@ -35,7 +35,7 @@ public class l extends a {
     @Override // com.anythink.core.common.m.a
     public final Map<String, String> c() {
         HashMap hashMap = new HashMap();
-        hashMap.put("Accept-Encoding", com.anythink.expressad.foundation.g.f.g.b.f19341d);
+        hashMap.put("Accept-Encoding", com.anythink.expressad.foundation.g.f.g.b.f20128d);
         hashMap.put("Content-Type", "application/json;charset=utf-8");
         return hashMap;
     }
@@ -58,12 +58,12 @@ public class l extends a {
     public final JSONObject e() {
         JSONObject e9 = super.e();
         try {
-            an anVar = this.f14677b;
+            an anVar = this.f15463b;
             if (anVar != null) {
                 e9.put("app_id", anVar.b());
-                e9.put(e.bk, this.f14677b.c());
-                e9.put("t_g_id", this.f14677b.f());
-                e9.put("gro_id", this.f14677b.g());
+                e9.put(e.bk, this.f15463b.c());
+                e9.put("t_g_id", this.f15463b.f());
+                e9.put("gro_id", this.f15463b.g());
             }
         } catch (Throwable unused) {
         }
@@ -78,14 +78,14 @@ public class l extends a {
         String a9 = com.anythink.core.common.v.k.a(jSONObject);
         String a10 = com.anythink.core.common.v.k.a(jSONObject2);
         hashMap.put("p", a9);
-        hashMap.put(e.f14631W, a10);
-        an anVar = this.f14677b;
+        hashMap.put(e.f15417W, a10);
+        an anVar = this.f15463b;
         if (anVar != null) {
-            JSONArray d2 = anVar.d();
-            if (d2 != null) {
-                hashMap.put(e.bn, com.anythink.core.common.v.k.a(d2.toString()));
+            JSONArray d9 = anVar.d();
+            if (d9 != null) {
+                hashMap.put(e.bn, com.anythink.core.common.v.k.a(d9.toString()));
             }
-            hashMap.put(a.C0077a.f12916o, this.f14677b.e());
+            hashMap.put(a.C0077a.f13702o, this.f15463b.e());
         }
         Set<String> keySet = hashMap.keySet();
         JSONObject jSONObject3 = new JSONObject();
@@ -104,13 +104,13 @@ public class l extends a {
 
     @Override // com.anythink.core.common.m.a
     public final String h() {
-        an anVar = this.f14677b;
+        an anVar = this.f15463b;
         return anVar != null ? anVar.b() : "";
     }
 
     @Override // com.anythink.core.common.m.a
     public final Context i() {
-        an anVar = this.f14677b;
+        an anVar = this.f15463b;
         if (anVar != null) {
             return anVar.a();
         }
@@ -119,7 +119,7 @@ public class l extends a {
 
     @Override // com.anythink.core.common.m.a
     public final String j() {
-        an anVar = this.f14677b;
+        an anVar = this.f15463b;
         return anVar != null ? anVar.c() : "";
     }
 

@@ -6,13 +6,13 @@ import org.xmlpull.v1.XmlPullParser;
 public class i extends ay {
 
     /* renamed from: a, reason: collision with root package name */
-    private String f9398a;
+    private String f10184a;
 
     public i(XmlPullParser xmlPullParser) {
-        this.f9398a = ay.a(xmlPullParser);
+        this.f10184a = ay.a(xmlPullParser);
     }
 
     public final String a() {
-        return this.f9398a;
+        return this.f10184a;
     }
 }

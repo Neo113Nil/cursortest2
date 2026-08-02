@@ -11,25 +11,25 @@ import java.util.regex.Pattern;
 public final class h {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f11510a = "atwt:";
+    public static final String f12296a = "atwt:";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String[] f11511b = {f11510a};
+    private static final String[] f12297b = {f12296a};
 
     /* renamed from: c, reason: collision with root package name */
-    private static final Pattern f11512c = Pattern.compile("atwt://(.+?)#(.+?)/(.+?)(\\?(.*?))?");
+    private static final Pattern f12298c = Pattern.compile("atwt://(.+?)#(.+?)/(.+?)(\\?(.*?))?");
 
     /* renamed from: d, reason: collision with root package name */
-    private static Map<String, String> f11513d = new HashMap();
+    private static Map<String, String> f12299d = new HashMap();
 
     static {
         for (com.anythink.core.express.d.c cVar : com.anythink.core.express.d.c.values()) {
-            f11513d.put(cVar.a(), cVar.b());
+            f12299d.put(cVar.a(), cVar.b());
         }
     }
 
     public static boolean a(String str) {
-        for (String str2 : f11511b) {
+        for (String str2 : f12297b) {
             if (str2.equals(str)) {
                 return true;
             }
@@ -38,18 +38,18 @@ public final class h {
     }
 
     public static Pattern b(String str) {
-        if (f11510a.equals(str)) {
-            return f11512c;
+        if (f12296a.equals(str)) {
+            return f12298c;
         }
         return null;
     }
 
     public static boolean c(String str) {
-        return d(str).startsWith(d.c.f18635e);
+        return d(str).startsWith(d.c.f19422e);
     }
 
     public static String d(String str) {
-        String str2 = f11513d.get(h(str));
+        String str2 = f12299d.get(h(str));
         return str2 == null ? "" : str2;
     }
 
@@ -68,17 +68,17 @@ public final class h {
         for (int i = 0; i < str.length(); i++) {
             char charAt = str.charAt(i);
             if (charAt <= 255) {
-                int i6 = 0;
+                int i4 = 0;
                 while (true) {
-                    if (i6 >= 2) {
+                    if (i4 >= 2) {
                         stringBuffer.append(charAt);
                         break;
                     }
-                    if (cArr[i6] == charAt) {
+                    if (cArr[i4] == charAt) {
                         stringBuffer.append("\\".concat(String.valueOf(charAt)));
                         break;
                     }
-                    i6++;
+                    i4++;
                 }
             } else {
                 stringBuffer.append("\\u");
@@ -100,6 +100,6 @@ public final class h {
     private static String h(String str) {
         String path;
         int lastIndexOf;
-        return (TextUtils.isEmpty(str) || (path = Uri.parse(str).getPath()) == null || (lastIndexOf = path.lastIndexOf(com.anythink.core.common.d.j.f12378z)) == -1) ? "" : path.substring(lastIndexOf + 1);
+        return (TextUtils.isEmpty(str) || (path = Uri.parse(str).getPath()) == null || (lastIndexOf = path.lastIndexOf(com.anythink.core.common.d.j.f13164z)) == -1) ? "" : path.substring(lastIndexOf + 1);
     }
 }

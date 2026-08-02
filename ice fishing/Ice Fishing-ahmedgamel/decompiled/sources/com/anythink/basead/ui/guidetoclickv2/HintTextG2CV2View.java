@@ -15,7 +15,7 @@ public class HintTextG2CV2View extends BaseG2CV2View {
     }
 
     @Override // com.anythink.basead.ui.guidetoclickv2.BaseG2CV2View
-    public final void a(int i, int i6) {
+    public final void a(int i, int i4) {
         LayoutInflater.from(getContext()).inflate(q.a(getContext(), "myoffer_g2c_v2_hint_text", "layout"), this);
         View findViewById = findViewById(q.a(getContext(), "myoffer_g2c_click_text", "id"));
         View findViewById2 = findViewById(q.a(getContext(), "myoffer_g2c_hint_text", "id"));
@@ -23,7 +23,7 @@ public class HintTextG2CV2View extends BaseG2CV2View {
             findViewById.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.guidetoclickv2.HintTextG2CV2View.1
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    c.a aVar = HintTextG2CV2View.this.f10834c;
+                    c.a aVar = HintTextG2CV2View.this.f11620c;
                     if (aVar != null) {
                         aVar.a(11, 18);
                     }
@@ -31,7 +31,7 @@ public class HintTextG2CV2View extends BaseG2CV2View {
             });
         }
         if (i != 2) {
-            if (i6 == 2) {
+            if (i4 == 2) {
                 if (findViewById != null) {
                     RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) findViewById.getLayoutParams();
                     layoutParams.addRule(11, 0);

@@ -5,20 +5,20 @@ public enum Vv {
     DEFINED_BY_JAVASCRIPT("definedByJavaScript"),
     HTML_DISPLAY("htmlDisplay"),
     NATIVE_DISPLAY("nativeDisplay"),
-    VIDEO(com.anythink.basead.exoplayer.k.o.f8444a),
+    VIDEO(com.anythink.basead.exoplayer.k.o.f9230a),
     /* JADX INFO: Fake field, exist only in values array */
-    AUDIO(com.anythink.basead.exoplayer.k.o.f8445b);
+    AUDIO(com.anythink.basead.exoplayer.k.o.f9231b);
 
 
     /* renamed from: n, reason: collision with root package name */
-    public final String f28275n;
+    public final String f29073n;
 
     Vv(String str) {
-        this.f28275n = str;
+        this.f29073n = str;
     }
 
     @Override // java.lang.Enum
     public final String toString() {
-        return this.f28275n;
+        return this.f29073n;
     }
 }

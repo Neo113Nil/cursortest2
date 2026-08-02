@@ -2,7 +2,7 @@ package com.facebook.ads.androidx.media3.extractor.metadata.scte35;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import com.instagram.common.viewpoint.core.C06474v;
+import com.instagram.common.viewpoint.core.C06674v;
 import com.instagram.common.viewpoint.core.C5C;
 import com.instagram.common.viewpoint.core.IV;
 
@@ -29,10 +29,10 @@ public final class PrivateCommand extends SpliceCommand {
         this(parcel);
     }
 
-    public static PrivateCommand A00(C06474v c06474v, int i, long j6) {
-        long A0Q = c06474v.A0Q();
+    public static PrivateCommand A00(C06674v c06674v, int i, long j6) {
+        long A0Q = c06674v.A0Q();
         byte[] bArr = new byte[i - 4];
-        c06474v.A0k(bArr, 0, bArr.length);
+        c06674v.A0k(bArr, 0, bArr.length);
         return new PrivateCommand(A0Q, bArr, j6);
     }
 

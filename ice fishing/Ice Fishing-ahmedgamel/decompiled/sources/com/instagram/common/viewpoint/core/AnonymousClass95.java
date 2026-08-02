@@ -45,15 +45,15 @@ public final class AnonymousClass95 {
     public final AnonymousClass93 A0V;
     public final long[] A0W;
 
-    public static String A03(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0X, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            int i11 = copyOfRange[i10] - i9;
+    public static String A03(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0X, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            int i10 = copyOfRange[i9] - i6;
             if (A0Y[7].charAt(13) != 'y') {
                 throw new RuntimeException();
             }
             A0Y[0] = "zj97MoHR9Py27VEns6K5abiX60E98d7F";
-            copyOfRange[i10] = (byte) (i11 - 44);
+            copyOfRange[i9] = (byte) (i10 - 44);
         }
         return new String(copyOfRange);
     }
@@ -67,7 +67,7 @@ public final class AnonymousClass95 {
     }
 
     public AnonymousClass95(AnonymousClass93 anonymousClass93) {
-        this.A0V = (AnonymousClass93) AbstractC06243y.A01(anonymousClass93);
+        this.A0V = (AnonymousClass93) AbstractC06443y.A01(anonymousClass93);
         if (C5C.A02 >= 18) {
             try {
                 this.A0P = AudioTrack.class.getMethod(A03(0, 10, 91), null);
@@ -79,7 +79,7 @@ public final class AnonymousClass95 {
 
     private long A00() {
         long elapsedRealtime = SystemClock.elapsedRealtime();
-        if (this.A0M != b.f6382b) {
+        if (this.A0M != b.f7168b) {
             long currentTimeMs = this.A0M;
             long elapsedTimeSinceStopUs = (1000 * elapsedRealtime) - currentTimeMs;
             long A0Q = C5C.A0Q(elapsedTimeSinceStopUs, this.A00);
@@ -120,10 +120,10 @@ public final class AnonymousClass95 {
                 return;
             }
             long[] jArr = this.A0W;
-            int i6 = this.A02;
+            int i4 = this.A02;
             long systemTimeUs2 = C5C.A0R(A01, this.A00);
-            jArr[i6] = systemTimeUs2 - playbackPositionUs;
-            int i9 = this.A02 + 1;
+            jArr[i4] = systemTimeUs2 - playbackPositionUs;
+            int i6 = this.A02 + 1;
             String[] strArr2 = A0Y;
             if (strArr2[5].charAt(4) == strArr2[2].charAt(4)) {
                 throw new RuntimeException();
@@ -131,7 +131,7 @@ public final class AnonymousClass95 {
             String[] strArr3 = A0Y;
             strArr3[4] = "AFkMvnjOvj65Z9PkG4nAGP";
             strArr3[3] = "gdO3Z2pM7uD2KyszdkE03V";
-            this.A02 = i9 % 10;
+            this.A02 = i6 % 10;
             if (this.A05 < 10) {
                 this.A05++;
             }
@@ -169,7 +169,7 @@ public final class AnonymousClass95 {
     }
 
     private void A07(long j6) {
-        AnonymousClass92 anonymousClass92 = (AnonymousClass92) AbstractC06243y.A01(this.A0O);
+        AnonymousClass92 anonymousClass92 = (AnonymousClass92) AbstractC06443y.A01(this.A0O);
         if (!anonymousClass92.A07(j6)) {
             return;
         }
@@ -196,7 +196,7 @@ public final class AnonymousClass95 {
     private void A08(long j6) {
         if (this.A0R && this.A0P != null && j6 - this.A09 >= 500000) {
             try {
-                this.A0E = (((Integer) C5C.A0f((Integer) this.A0P.invoke(AbstractC06243y.A01(this.A0N), new Object[0]))).intValue() * 1000) - this.A06;
+                this.A0E = (((Integer) C5C.A0f((Integer) this.A0P.invoke(AbstractC06443y.A01(this.A0N), new Object[0]))).intValue() * 1000) - this.A06;
                 this.A0E = Math.max(this.A0E, 0L);
                 if (this.A0E > 5000000) {
                     this.A0V.AEM(this.A0E);
@@ -210,7 +210,7 @@ public final class AnonymousClass95 {
     }
 
     private void A09(long j6) {
-        int playState = ((AudioTrack) AbstractC06243y.A01(this.A0N)).getPlayState();
+        int playState = ((AudioTrack) AbstractC06443y.A01(this.A0N)).getPlayState();
         if (playState == 1) {
             return;
         }
@@ -243,13 +243,13 @@ public final class AnonymousClass95 {
         int state3 = C5C.A02;
         if (state3 <= 29) {
             if (playbackHeadPosition == 0 && this.A0I > 0 && playState == 3) {
-                if (this.A08 == b.f6382b) {
+                if (this.A08 == b.f7168b) {
                     this.A08 = j6;
                     return;
                 }
                 return;
             }
-            this.A08 = b.f6382b;
+            this.A08 = b.f7168b;
         }
         if (this.A0I > playbackHeadPosition) {
             this.A0J++;
@@ -258,7 +258,7 @@ public final class AnonymousClass95 {
     }
 
     private boolean A0A() {
-        return this.A0T && ((AudioTrack) AbstractC06243y.A01(this.A0N)).getPlayState() == 2 && A00() == 0;
+        return this.A0T && ((AudioTrack) AbstractC06443y.A01(this.A0N)).getPlayState() == 2 && A00() == 0;
     }
 
     public static boolean A0B(int i) {
@@ -270,13 +270,13 @@ public final class AnonymousClass95 {
         return this.A01 - bytesPending;
     }
 
-    public final long A0D(boolean z3) {
+    public final long A0D(boolean z6) {
         long A0Q;
-        if (((AudioTrack) AbstractC06243y.A01(this.A0N)).getPlayState() == 3) {
+        if (((AudioTrack) AbstractC06443y.A01(this.A0N)).getPlayState() == 3) {
             A04();
         }
         long nanoTime = System.nanoTime() / 1000;
-        AnonymousClass92 anonymousClass92 = (AnonymousClass92) AbstractC06243y.A01(this.A0O);
+        AnonymousClass92 anonymousClass92 = (AnonymousClass92) AbstractC06443y.A01(this.A0O);
         boolean useGetTimestampMode = anonymousClass92.A06();
         if (useGetTimestampMode) {
             A0Q = A02(anonymousClass92.A01()) + C5C.A0Q(nanoTime - anonymousClass92.A02(), this.A00);
@@ -293,7 +293,7 @@ public final class AnonymousClass95 {
             } else {
                 A0Q = C5C.A0Q(this.A0K + nanoTime, this.A00);
             }
-            if (!z3) {
+            if (!z6) {
                 A0Q = Math.max(0L, A0Q - this.A0E);
             }
         }
@@ -324,11 +324,11 @@ public final class AnonymousClass95 {
     }
 
     public final void A0F() {
-        ((AnonymousClass92) AbstractC06243y.A01(this.A0O)).A05();
+        ((AnonymousClass92) AbstractC06443y.A01(this.A0O)).A05();
     }
 
-    public final void A0G(float f3) {
-        this.A00 = f3;
+    public final void A0G(float f2) {
+        this.A00 = f2;
         if (this.A0O != null) {
             AnonymousClass92 anonymousClass92 = this.A0O;
             String[] strArr = A0Y;
@@ -349,34 +349,34 @@ public final class AnonymousClass95 {
         this.A07 = j6;
     }
 
-    public final void A0I(AudioTrack audioTrack, boolean z3, int i, int i6, int i9) {
+    public final void A0I(AudioTrack audioTrack, boolean z6, int i, int i4, int i6) {
         this.A0N = audioTrack;
-        this.A03 = i6;
-        this.A01 = i9;
+        this.A03 = i4;
+        this.A01 = i6;
         this.A0O = new AnonymousClass92(audioTrack);
         this.A04 = audioTrack.getSampleRate();
-        this.A0T = z3 && A0B(i);
+        this.A0T = z6 && A0B(i);
         this.A0R = C5C.A15(i);
-        this.A06 = this.A0R ? A02(i9 / i6) : -9223372036854775807L;
+        this.A06 = this.A0R ? A02(i6 / i4) : -9223372036854775807L;
         this.A0I = 0L;
         this.A0J = 0L;
         this.A0F = 0L;
         this.A0Q = false;
-        this.A0M = b.f6382b;
-        this.A08 = b.f6382b;
+        this.A0M = b.f7168b;
+        this.A08 = b.f7168b;
         this.A09 = 0L;
         this.A0E = 0L;
         this.A00 = 1.0f;
     }
 
     public final boolean A0J() {
-        return ((AudioTrack) AbstractC06243y.A01(this.A0N)).getPlayState() == 3;
+        return ((AudioTrack) AbstractC06443y.A01(this.A0N)).getPlayState() == 3;
     }
 
     public final boolean A0K() {
         A05();
-        if (this.A0M == b.f6382b) {
-            ((AnonymousClass92) AbstractC06243y.A01(this.A0O)).A05();
+        if (this.A0M == b.f7168b) {
+            ((AnonymousClass92) AbstractC06443y.A01(this.A0O)).A05();
             return true;
         }
         return false;
@@ -387,11 +387,11 @@ public final class AnonymousClass95 {
     }
 
     public final boolean A0M(long j6) {
-        return this.A08 != b.f6382b && j6 > 0 && SystemClock.elapsedRealtime() - this.A08 >= 200;
+        return this.A08 != b.f7168b && j6 > 0 && SystemClock.elapsedRealtime() - this.A08 >= 200;
     }
 
     public final boolean A0N(long j6) {
-        int playState = ((AudioTrack) AbstractC06243y.A01(this.A0N)).getPlayState();
+        int playState = ((AudioTrack) AbstractC06443y.A01(this.A0N)).getPlayState();
         if (this.A0T) {
             if (playState == 2) {
                 this.A0Q = false;

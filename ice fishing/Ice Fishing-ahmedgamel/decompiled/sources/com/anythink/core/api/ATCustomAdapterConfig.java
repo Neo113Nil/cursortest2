@@ -29,8 +29,8 @@ public class ATCustomAdapterConfig {
             return this;
         }
 
-        public Builder realTimeBidSwitch(boolean z3) {
-            this.realTimeBidSwitch = z3;
+        public Builder realTimeBidSwitch(boolean z6) {
+            this.realTimeBidSwitch = z6;
             return this;
         }
     }

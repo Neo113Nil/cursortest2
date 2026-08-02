@@ -16,8 +16,8 @@ import android.util.TypedValue;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.widget.TextView;
-import com.icefishingapp.icefishing.AbstractC4404f;
-import g.AbstractC4518a;
+import com.google.android.gms.internal.ads.Wv;
+import g.AbstractC4528a;
 import java.lang.ref.WeakReference;
 import java.util.Arrays;
 
@@ -25,58 +25,58 @@ import java.util.Arrays;
 public final class V {
 
     /* renamed from: a, reason: collision with root package name */
-    public final TextView f39064a;
+    public final TextView f39133a;
 
     /* renamed from: b, reason: collision with root package name */
-    public i8.h f39065b;
+    public i8.h f39134b;
 
     /* renamed from: c, reason: collision with root package name */
-    public i8.h f39066c;
+    public i8.h f39135c;
 
     /* renamed from: d, reason: collision with root package name */
-    public i8.h f39067d;
+    public i8.h f39136d;
 
     /* renamed from: e, reason: collision with root package name */
-    public i8.h f39068e;
+    public i8.h f39137e;
 
     /* renamed from: f, reason: collision with root package name */
-    public i8.h f39069f;
+    public i8.h f39138f;
 
     /* renamed from: g, reason: collision with root package name */
-    public i8.h f39070g;
+    public i8.h f39139g;
 
     /* renamed from: h, reason: collision with root package name */
-    public i8.h f39071h;
-    public final C4684e0 i;
+    public i8.h f39140h;
+    public final C4697e0 i;
 
     /* renamed from: j, reason: collision with root package name */
-    public int f39072j = 0;
+    public int f39141j = 0;
 
     /* renamed from: k, reason: collision with root package name */
-    public int f39073k = -1;
+    public int f39142k = -1;
 
     /* renamed from: l, reason: collision with root package name */
-    public Typeface f39074l;
+    public Typeface f39143l;
 
     /* renamed from: m, reason: collision with root package name */
-    public boolean f39075m;
+    public boolean f39144m;
 
     public V(TextView textView) {
-        this.f39064a = textView;
-        this.i = new C4684e0(textView);
+        this.f39133a = textView;
+        this.i = new C4697e0(textView);
     }
 
-    public static i8.h c(Context context, C4710s c4710s, int i) {
-        ColorStateList f3;
-        synchronized (c4710s) {
-            f3 = c4710s.f39223a.f(context, i);
+    public static i8.h c(Context context, C4723s c4723s, int i) {
+        ColorStateList f2;
+        synchronized (c4723s) {
+            f2 = c4723s.f39292a.f(context, i);
         }
-        if (f3 == null) {
+        if (f2 == null) {
             return null;
         }
         i8.h hVar = new i8.h();
-        hVar.f38123b = true;
-        hVar.f38124c = f3;
+        hVar.f38242b = true;
+        hVar.f38243c = f2;
         return hVar;
     }
 
@@ -95,80 +95,80 @@ public final class V {
             T.b.a(editorInfo, text);
             return;
         }
-        int i6 = editorInfo.initialSelStart;
-        int i9 = editorInfo.initialSelEnd;
-        int i10 = i6 > i9 ? i9 : i6;
-        if (i6 <= i9) {
-            i6 = i9;
+        int i4 = editorInfo.initialSelStart;
+        int i6 = editorInfo.initialSelEnd;
+        int i9 = i4 > i6 ? i6 : i4;
+        if (i4 <= i6) {
+            i4 = i6;
         }
         int length = text.length();
-        if (i10 < 0 || i6 > length) {
+        if (i9 < 0 || i4 > length) {
             T.c.a(editorInfo, null, 0, 0);
             return;
         }
-        int i11 = editorInfo.inputType & 4095;
-        if (i11 == 129 || i11 == 225 || i11 == 18) {
+        int i10 = editorInfo.inputType & 4095;
+        if (i10 == 129 || i10 == 225 || i10 == 18) {
             T.c.a(editorInfo, null, 0, 0);
             return;
         }
         if (length <= 2048) {
-            T.c.a(editorInfo, text, i10, i6);
+            T.c.a(editorInfo, text, i9, i4);
             return;
         }
-        int i12 = i6 - i10;
-        int i13 = i12 > 1024 ? 0 : i12;
-        int i14 = 2048 - i13;
-        int min = Math.min(text.length() - i6, i14 - Math.min(i10, (int) (i14 * 0.8d)));
-        int min2 = Math.min(i10, i14 - min);
-        int i15 = i10 - min2;
-        if (Character.isLowSurrogate(text.charAt(i15))) {
-            i15++;
+        int i11 = i4 - i9;
+        int i12 = i11 > 1024 ? 0 : i11;
+        int i13 = 2048 - i12;
+        int min = Math.min(text.length() - i4, i13 - Math.min(i9, (int) (i13 * 0.8d)));
+        int min2 = Math.min(i9, i13 - min);
+        int i14 = i9 - min2;
+        if (Character.isLowSurrogate(text.charAt(i14))) {
+            i14++;
             min2--;
         }
-        if (Character.isHighSurrogate(text.charAt((i6 + min) - 1))) {
+        if (Character.isHighSurrogate(text.charAt((i4 + min) - 1))) {
             min--;
         }
-        int i16 = min2 + i13;
-        T.c.a(editorInfo, i13 != i12 ? TextUtils.concat(text.subSequence(i15, i15 + min2), text.subSequence(i6, min + i6)) : text.subSequence(i15, i16 + min + i15), min2, i16);
+        int i15 = min2 + i12;
+        T.c.a(editorInfo, i12 != i11 ? TextUtils.concat(text.subSequence(i14, i14 + min2), text.subSequence(i4, min + i4)) : text.subSequence(i14, i15 + min + i14), min2, i15);
     }
 
     public final void a(Drawable drawable, i8.h hVar) {
         if (drawable == null || hVar == null) {
             return;
         }
-        C4710s.e(drawable, hVar, this.f39064a.getDrawableState());
+        C4723s.e(drawable, hVar, this.f39133a.getDrawableState());
     }
 
     public final void b() {
-        i8.h hVar = this.f39065b;
-        TextView textView = this.f39064a;
-        if (hVar != null || this.f39066c != null || this.f39067d != null || this.f39068e != null) {
+        i8.h hVar = this.f39134b;
+        TextView textView = this.f39133a;
+        if (hVar != null || this.f39135c != null || this.f39136d != null || this.f39137e != null) {
             Drawable[] compoundDrawables = textView.getCompoundDrawables();
-            a(compoundDrawables[0], this.f39065b);
-            a(compoundDrawables[1], this.f39066c);
-            a(compoundDrawables[2], this.f39067d);
-            a(compoundDrawables[3], this.f39068e);
+            a(compoundDrawables[0], this.f39134b);
+            a(compoundDrawables[1], this.f39135c);
+            a(compoundDrawables[2], this.f39136d);
+            a(compoundDrawables[3], this.f39137e);
         }
-        if (this.f39069f == null && this.f39070g == null) {
+        if (this.f39138f == null && this.f39139g == null) {
             return;
         }
         Drawable[] compoundDrawablesRelative = textView.getCompoundDrawablesRelative();
-        a(compoundDrawablesRelative[0], this.f39069f);
-        a(compoundDrawablesRelative[2], this.f39070g);
+        a(compoundDrawablesRelative[0], this.f39138f);
+        a(compoundDrawablesRelative[2], this.f39139g);
     }
 
     public final ColorStateList d() {
-        i8.h hVar = this.f39071h;
+        i8.h hVar = this.f39140h;
         if (hVar != null) {
-            return (ColorStateList) hVar.f38124c;
+            return (ColorStateList) hVar.f38243c;
         }
         return null;
     }
 
     public final PorterDuff.Mode e() {
-        i8.h hVar = this.f39071h;
+        i8.h hVar = this.f39140h;
         if (hVar != null) {
-            return (PorterDuff.Mode) hVar.f38125d;
+            return (PorterDuff.Mode) hVar.f38244d;
         }
         return null;
     }
@@ -181,93 +181,93 @@ public final class V {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void f(AttributeSet attributeSet, int i) {
-        boolean z3;
         boolean z6;
+        boolean z9;
         String str;
         String str2;
+        int i4;
+        float f2;
         int i6;
-        float f3;
-        int i9;
         ColorStateList colorStateList;
         int resourceId;
-        int i10;
+        int i9;
         int resourceId2;
-        TextView textView = this.f39064a;
+        TextView textView = this.f39133a;
         Context context = textView.getContext();
-        C4710s a9 = C4710s.a();
-        int[] iArr = AbstractC4518a.f37595h;
-        j4.g s9 = j4.g.s(context, attributeSet, iArr, i);
-        O.X.n(textView, textView.getContext(), iArr, attributeSet, (TypedArray) s9.f38405v, i);
-        TypedArray typedArray = (TypedArray) s9.f38405v;
+        C4723s a9 = C4723s.a();
+        int[] iArr = AbstractC4528a.f37557h;
+        l4.g s9 = l4.g.s(context, attributeSet, iArr, i);
+        O.X.n(textView, textView.getContext(), iArr, attributeSet, (TypedArray) s9.f38917v, i);
+        TypedArray typedArray = (TypedArray) s9.f38917v;
         int resourceId3 = typedArray.getResourceId(0, -1);
         if (typedArray.hasValue(3)) {
-            this.f39065b = c(context, a9, typedArray.getResourceId(3, 0));
+            this.f39134b = c(context, a9, typedArray.getResourceId(3, 0));
         }
         if (typedArray.hasValue(1)) {
-            this.f39066c = c(context, a9, typedArray.getResourceId(1, 0));
+            this.f39135c = c(context, a9, typedArray.getResourceId(1, 0));
         }
         if (typedArray.hasValue(4)) {
-            this.f39067d = c(context, a9, typedArray.getResourceId(4, 0));
+            this.f39136d = c(context, a9, typedArray.getResourceId(4, 0));
         }
         if (typedArray.hasValue(2)) {
-            this.f39068e = c(context, a9, typedArray.getResourceId(2, 0));
+            this.f39137e = c(context, a9, typedArray.getResourceId(2, 0));
         }
         if (typedArray.hasValue(5)) {
-            this.f39069f = c(context, a9, typedArray.getResourceId(5, 0));
+            this.f39138f = c(context, a9, typedArray.getResourceId(5, 0));
         }
         if (typedArray.hasValue(6)) {
-            this.f39070g = c(context, a9, typedArray.getResourceId(6, 0));
+            this.f39139g = c(context, a9, typedArray.getResourceId(6, 0));
         }
         s9.t();
-        boolean z9 = textView.getTransformationMethod() instanceof PasswordTransformationMethod;
-        int[] iArr2 = AbstractC4518a.f37609w;
+        boolean z10 = textView.getTransformationMethod() instanceof PasswordTransformationMethod;
+        int[] iArr2 = AbstractC4528a.f37571w;
         if (resourceId3 != -1) {
             TypedArray obtainStyledAttributes = context.obtainStyledAttributes(resourceId3, iArr2);
-            j4.g gVar = new j4.g(context, obtainStyledAttributes);
-            if (z9 || !obtainStyledAttributes.hasValue(14)) {
-                z3 = false;
+            l4.g gVar = new l4.g(context, obtainStyledAttributes);
+            if (z10 || !obtainStyledAttributes.hasValue(14)) {
                 z6 = false;
+                z9 = false;
             } else {
-                z6 = obtainStyledAttributes.getBoolean(14, false);
-                z3 = true;
+                z9 = obtainStyledAttributes.getBoolean(14, false);
+                z6 = true;
             }
             n(context, gVar);
-            int i11 = Build.VERSION.SDK_INT;
+            int i10 = Build.VERSION.SDK_INT;
             str2 = obtainStyledAttributes.hasValue(15) ? obtainStyledAttributes.getString(15) : null;
-            str = (i11 < 26 || !obtainStyledAttributes.hasValue(13)) ? null : obtainStyledAttributes.getString(13);
+            str = (i10 < 26 || !obtainStyledAttributes.hasValue(13)) ? null : obtainStyledAttributes.getString(13);
             gVar.t();
         } else {
-            z3 = false;
             z6 = false;
+            z9 = false;
             str = null;
             str2 = null;
         }
         TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, iArr2, i, 0);
-        j4.g gVar2 = new j4.g(context, obtainStyledAttributes2);
-        if (!z9 && obtainStyledAttributes2.hasValue(14)) {
-            z6 = obtainStyledAttributes2.getBoolean(14, false);
-            z3 = true;
+        l4.g gVar2 = new l4.g(context, obtainStyledAttributes2);
+        if (!z10 && obtainStyledAttributes2.hasValue(14)) {
+            z9 = obtainStyledAttributes2.getBoolean(14, false);
+            z6 = true;
         }
-        boolean z10 = z6;
-        int i12 = Build.VERSION.SDK_INT;
+        boolean z11 = z9;
+        int i11 = Build.VERSION.SDK_INT;
         if (obtainStyledAttributes2.hasValue(15)) {
             str2 = obtainStyledAttributes2.getString(15);
         }
-        if (i12 >= 26 && obtainStyledAttributes2.hasValue(13)) {
+        if (i11 >= 26 && obtainStyledAttributes2.hasValue(13)) {
             str = obtainStyledAttributes2.getString(13);
         }
-        if (i12 >= 28 && obtainStyledAttributes2.hasValue(0) && obtainStyledAttributes2.getDimensionPixelSize(0, -1) == 0) {
+        if (i11 >= 28 && obtainStyledAttributes2.hasValue(0) && obtainStyledAttributes2.getDimensionPixelSize(0, -1) == 0) {
             textView.setTextSize(0, 0.0f);
         }
         n(context, gVar2);
         gVar2.t();
-        if (!z9 && z3) {
-            textView.setAllCaps(z10);
+        if (!z10 && z6) {
+            textView.setAllCaps(z11);
         }
-        Typeface typeface = this.f39074l;
+        Typeface typeface = this.f39143l;
         if (typeface != null) {
-            if (this.f39073k == -1) {
-                textView.setTypeface(typeface, this.f39072j);
+            if (this.f39142k == -1) {
+                textView.setTypeface(typeface, this.f39141j);
             } else {
                 textView.setTypeface(typeface);
             }
@@ -278,14 +278,14 @@ public final class V {
         if (str2 != null) {
             S.b(textView, S.a(str2));
         }
-        int[] iArr3 = AbstractC4518a.i;
-        C4684e0 c4684e0 = this.i;
-        Context context2 = c4684e0.f39141j;
+        int[] iArr3 = AbstractC4528a.i;
+        C4697e0 c4697e0 = this.i;
+        Context context2 = c4697e0.f39210j;
         TypedArray obtainStyledAttributes3 = context2.obtainStyledAttributes(attributeSet, iArr3, i, 0);
-        TextView textView2 = c4684e0.i;
+        TextView textView2 = c4697e0.i;
         O.X.n(textView2, textView2.getContext(), iArr3, attributeSet, obtainStyledAttributes3, i);
         if (obtainStyledAttributes3.hasValue(5)) {
-            c4684e0.f39133a = obtainStyledAttributes3.getInt(5, 0);
+            c4697e0.f39202a = obtainStyledAttributes3.getInt(5, 0);
         }
         float dimension = obtainStyledAttributes3.hasValue(4) ? obtainStyledAttributes3.getDimension(4, -1.0f) : -1.0f;
         float dimension2 = obtainStyledAttributes3.hasValue(2) ? obtainStyledAttributes3.getDimension(2, -1.0f) : -1.0f;
@@ -295,42 +295,42 @@ public final class V {
             int length = obtainTypedArray.length();
             int[] iArr4 = new int[length];
             if (length > 0) {
-                for (int i13 = 0; i13 < length; i13++) {
-                    iArr4[i13] = obtainTypedArray.getDimensionPixelSize(i13, -1);
+                for (int i12 = 0; i12 < length; i12++) {
+                    iArr4[i12] = obtainTypedArray.getDimensionPixelSize(i12, -1);
                 }
-                c4684e0.f39138f = C4684e0.b(iArr4);
-                c4684e0.i();
+                c4697e0.f39207f = C4697e0.b(iArr4);
+                c4697e0.i();
             }
             obtainTypedArray.recycle();
         }
         obtainStyledAttributes3.recycle();
-        if (!c4684e0.j()) {
-            c4684e0.f39133a = 0;
-        } else if (c4684e0.f39133a == 1) {
-            if (!c4684e0.f39139g) {
+        if (!c4697e0.j()) {
+            c4697e0.f39202a = 0;
+        } else if (c4697e0.f39202a == 1) {
+            if (!c4697e0.f39208g) {
                 DisplayMetrics displayMetrics = context2.getResources().getDisplayMetrics();
                 if (dimension2 == -1.0f) {
-                    i10 = 2;
+                    i9 = 2;
                     dimension2 = TypedValue.applyDimension(2, 12.0f, displayMetrics);
                 } else {
-                    i10 = 2;
+                    i9 = 2;
                 }
                 if (dimension3 == -1.0f) {
-                    dimension3 = TypedValue.applyDimension(i10, 112.0f, displayMetrics);
+                    dimension3 = TypedValue.applyDimension(i9, 112.0f, displayMetrics);
                 }
                 float f9 = dimension3;
                 if (dimension == -1.0f) {
                     dimension = 1.0f;
                 }
-                c4684e0.k(dimension2, f9, dimension);
+                c4697e0.k(dimension2, f9, dimension);
             }
-            c4684e0.h();
+            c4697e0.h();
         }
-        if (f1.f39148c && c4684e0.f39133a != 0) {
-            int[] iArr5 = c4684e0.f39138f;
+        if (g1.f39219c && c4697e0.f39202a != 0) {
+            int[] iArr5 = c4697e0.f39207f;
             if (iArr5.length > 0) {
                 if (T.a(textView) != -1.0f) {
-                    T.b(textView, Math.round(c4684e0.f39136d), Math.round(c4684e0.f39137e), Math.round(c4684e0.f39135c), 0);
+                    T.b(textView, Math.round(c4697e0.f39205d), Math.round(c4697e0.f39206e), Math.round(c4697e0.f39204c), 0);
                 } else {
                     T.c(textView, iArr5, 0);
                 }
@@ -399,227 +399,227 @@ public final class V {
             U.m.f(textView, colorStateList);
         }
         if (obtainStyledAttributes4.hasValue(12)) {
-            U.m.g(textView, AbstractC4694j0.b(obtainStyledAttributes4.getInt(12, -1), null));
+            U.m.g(textView, AbstractC4707j0.b(obtainStyledAttributes4.getInt(12, -1), null));
         }
         int dimensionPixelSize = obtainStyledAttributes4.getDimensionPixelSize(15, -1);
         int dimensionPixelSize2 = obtainStyledAttributes4.getDimensionPixelSize(18, -1);
         if (obtainStyledAttributes4.hasValue(19)) {
             TypedValue peekValue = obtainStyledAttributes4.peekValue(19);
             if (peekValue != null && peekValue.type == 5) {
-                int i14 = peekValue.data;
-                i9 = i14 & 15;
-                f3 = TypedValue.complexToFloat(i14);
-                i6 = -1;
+                int i13 = peekValue.data;
+                i6 = i13 & 15;
+                f2 = TypedValue.complexToFloat(i13);
+                i4 = -1;
                 obtainStyledAttributes4.recycle();
-                if (dimensionPixelSize != i6) {
-                    d6.c.n(textView, dimensionPixelSize);
+                if (dimensionPixelSize != i4) {
+                    d6.c.k(textView, dimensionPixelSize);
                 }
-                if (dimensionPixelSize2 != i6) {
-                    d6.c.o(textView, dimensionPixelSize2);
+                if (dimensionPixelSize2 != i4) {
+                    d6.c.l(textView, dimensionPixelSize2);
                 }
-                if (f3 == -1.0f) {
-                    if (i9 == i6) {
-                        d6.c.p(textView, (int) f3);
+                if (f2 == -1.0f) {
+                    if (i6 == i4) {
+                        d6.c.m(textView, (int) f2);
                         return;
                     } else if (Build.VERSION.SDK_INT >= 34) {
-                        U.p.a(textView, i9, f3);
+                        U.p.a(textView, i6, f2);
                         return;
                     } else {
-                        d6.c.p(textView, Math.round(TypedValue.applyDimension(i9, f3, textView.getResources().getDisplayMetrics())));
+                        d6.c.m(textView, Math.round(TypedValue.applyDimension(i6, f2, textView.getResources().getDisplayMetrics())));
                         return;
                     }
                 }
                 return;
             }
-            i6 = -1;
-            f3 = obtainStyledAttributes4.getDimensionPixelSize(19, -1);
+            i4 = -1;
+            f2 = obtainStyledAttributes4.getDimensionPixelSize(19, -1);
         } else {
-            i6 = -1;
-            f3 = -1.0f;
+            i4 = -1;
+            f2 = -1.0f;
         }
-        i9 = i6;
+        i6 = i4;
         obtainStyledAttributes4.recycle();
-        if (dimensionPixelSize != i6) {
+        if (dimensionPixelSize != i4) {
         }
-        if (dimensionPixelSize2 != i6) {
+        if (dimensionPixelSize2 != i4) {
         }
-        if (f3 == -1.0f) {
+        if (f2 == -1.0f) {
         }
     }
 
     public final void g(Context context, int i) {
         String string;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(i, AbstractC4518a.f37609w);
-        j4.g gVar = new j4.g(context, obtainStyledAttributes);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(i, AbstractC4528a.f37571w);
+        l4.g gVar = new l4.g(context, obtainStyledAttributes);
         boolean hasValue = obtainStyledAttributes.hasValue(14);
-        TextView textView = this.f39064a;
+        TextView textView = this.f39133a;
         if (hasValue) {
             textView.setAllCaps(obtainStyledAttributes.getBoolean(14, false));
         }
-        int i6 = Build.VERSION.SDK_INT;
+        int i4 = Build.VERSION.SDK_INT;
         if (obtainStyledAttributes.hasValue(0) && obtainStyledAttributes.getDimensionPixelSize(0, -1) == 0) {
             textView.setTextSize(0, 0.0f);
         }
         n(context, gVar);
-        if (i6 >= 26 && obtainStyledAttributes.hasValue(13) && (string = obtainStyledAttributes.getString(13)) != null) {
+        if (i4 >= 26 && obtainStyledAttributes.hasValue(13) && (string = obtainStyledAttributes.getString(13)) != null) {
             T.d(textView, string);
         }
         gVar.t();
-        Typeface typeface = this.f39074l;
+        Typeface typeface = this.f39143l;
         if (typeface != null) {
-            textView.setTypeface(typeface, this.f39072j);
+            textView.setTypeface(typeface, this.f39141j);
         }
     }
 
-    public final void i(int i, int i6, int i9, int i10) {
-        C4684e0 c4684e0 = this.i;
-        if (c4684e0.j()) {
-            DisplayMetrics displayMetrics = c4684e0.f39141j.getResources().getDisplayMetrics();
-            c4684e0.k(TypedValue.applyDimension(i10, i, displayMetrics), TypedValue.applyDimension(i10, i6, displayMetrics), TypedValue.applyDimension(i10, i9, displayMetrics));
-            if (c4684e0.h()) {
-                c4684e0.a();
+    public final void i(int i, int i4, int i6, int i9) {
+        C4697e0 c4697e0 = this.i;
+        if (c4697e0.j()) {
+            DisplayMetrics displayMetrics = c4697e0.f39210j.getResources().getDisplayMetrics();
+            c4697e0.k(TypedValue.applyDimension(i9, i, displayMetrics), TypedValue.applyDimension(i9, i4, displayMetrics), TypedValue.applyDimension(i9, i6, displayMetrics));
+            if (c4697e0.h()) {
+                c4697e0.a();
             }
         }
     }
 
     public final void j(int[] iArr, int i) {
-        C4684e0 c4684e0 = this.i;
-        if (c4684e0.j()) {
+        C4697e0 c4697e0 = this.i;
+        if (c4697e0.j()) {
             int length = iArr.length;
             if (length > 0) {
                 int[] iArr2 = new int[length];
                 if (i == 0) {
                     iArr2 = Arrays.copyOf(iArr, length);
                 } else {
-                    DisplayMetrics displayMetrics = c4684e0.f39141j.getResources().getDisplayMetrics();
-                    for (int i6 = 0; i6 < length; i6++) {
-                        iArr2[i6] = Math.round(TypedValue.applyDimension(i, iArr[i6], displayMetrics));
+                    DisplayMetrics displayMetrics = c4697e0.f39210j.getResources().getDisplayMetrics();
+                    for (int i4 = 0; i4 < length; i4++) {
+                        iArr2[i4] = Math.round(TypedValue.applyDimension(i, iArr[i4], displayMetrics));
                     }
                 }
-                c4684e0.f39138f = C4684e0.b(iArr2);
-                if (!c4684e0.i()) {
+                c4697e0.f39207f = C4697e0.b(iArr2);
+                if (!c4697e0.i()) {
                     throw new IllegalArgumentException("None of the preset sizes is valid: " + Arrays.toString(iArr));
                 }
             } else {
-                c4684e0.f39139g = false;
+                c4697e0.f39208g = false;
             }
-            if (c4684e0.h()) {
-                c4684e0.a();
+            if (c4697e0.h()) {
+                c4697e0.a();
             }
         }
     }
 
     public final void k(int i) {
-        C4684e0 c4684e0 = this.i;
-        if (c4684e0.j()) {
+        C4697e0 c4697e0 = this.i;
+        if (c4697e0.j()) {
             if (i == 0) {
-                c4684e0.f39133a = 0;
-                c4684e0.f39136d = -1.0f;
-                c4684e0.f39137e = -1.0f;
-                c4684e0.f39135c = -1.0f;
-                c4684e0.f39138f = new int[0];
-                c4684e0.f39134b = false;
+                c4697e0.f39202a = 0;
+                c4697e0.f39205d = -1.0f;
+                c4697e0.f39206e = -1.0f;
+                c4697e0.f39204c = -1.0f;
+                c4697e0.f39207f = new int[0];
+                c4697e0.f39203b = false;
                 return;
             }
             if (i != 1) {
-                throw new IllegalArgumentException(AbstractC4404f.e(i, "Unknown auto-size text type: "));
+                throw new IllegalArgumentException(Wv.f(i, "Unknown auto-size text type: "));
             }
-            DisplayMetrics displayMetrics = c4684e0.f39141j.getResources().getDisplayMetrics();
-            c4684e0.k(TypedValue.applyDimension(2, 12.0f, displayMetrics), TypedValue.applyDimension(2, 112.0f, displayMetrics), 1.0f);
-            if (c4684e0.h()) {
-                c4684e0.a();
+            DisplayMetrics displayMetrics = c4697e0.f39210j.getResources().getDisplayMetrics();
+            c4697e0.k(TypedValue.applyDimension(2, 12.0f, displayMetrics), TypedValue.applyDimension(2, 112.0f, displayMetrics), 1.0f);
+            if (c4697e0.h()) {
+                c4697e0.a();
             }
         }
     }
 
     public final void l(ColorStateList colorStateList) {
-        if (this.f39071h == null) {
-            this.f39071h = new i8.h();
+        if (this.f39140h == null) {
+            this.f39140h = new i8.h();
         }
-        i8.h hVar = this.f39071h;
-        hVar.f38124c = colorStateList;
-        hVar.f38123b = colorStateList != null;
-        this.f39065b = hVar;
-        this.f39066c = hVar;
-        this.f39067d = hVar;
-        this.f39068e = hVar;
-        this.f39069f = hVar;
-        this.f39070g = hVar;
+        i8.h hVar = this.f39140h;
+        hVar.f38243c = colorStateList;
+        hVar.f38242b = colorStateList != null;
+        this.f39134b = hVar;
+        this.f39135c = hVar;
+        this.f39136d = hVar;
+        this.f39137e = hVar;
+        this.f39138f = hVar;
+        this.f39139g = hVar;
     }
 
     public final void m(PorterDuff.Mode mode) {
-        if (this.f39071h == null) {
-            this.f39071h = new i8.h();
+        if (this.f39140h == null) {
+            this.f39140h = new i8.h();
         }
-        i8.h hVar = this.f39071h;
-        hVar.f38125d = mode;
-        hVar.f38122a = mode != null;
-        this.f39065b = hVar;
-        this.f39066c = hVar;
-        this.f39067d = hVar;
-        this.f39068e = hVar;
-        this.f39069f = hVar;
-        this.f39070g = hVar;
+        i8.h hVar = this.f39140h;
+        hVar.f38244d = mode;
+        hVar.f38241a = mode != null;
+        this.f39134b = hVar;
+        this.f39135c = hVar;
+        this.f39136d = hVar;
+        this.f39137e = hVar;
+        this.f39138f = hVar;
+        this.f39139g = hVar;
     }
 
-    public final void n(Context context, j4.g gVar) {
+    public final void n(Context context, l4.g gVar) {
         String string;
-        int i = this.f39072j;
-        TypedArray typedArray = (TypedArray) gVar.f38405v;
-        this.f39072j = typedArray.getInt(2, i);
-        int i6 = Build.VERSION.SDK_INT;
-        if (i6 >= 28) {
-            int i9 = typedArray.getInt(11, -1);
-            this.f39073k = i9;
-            if (i9 != -1) {
-                this.f39072j &= 2;
+        int i = this.f39141j;
+        TypedArray typedArray = (TypedArray) gVar.f38917v;
+        this.f39141j = typedArray.getInt(2, i);
+        int i4 = Build.VERSION.SDK_INT;
+        if (i4 >= 28) {
+            int i6 = typedArray.getInt(11, -1);
+            this.f39142k = i6;
+            if (i6 != -1) {
+                this.f39141j &= 2;
             }
         }
         if (!typedArray.hasValue(10) && !typedArray.hasValue(12)) {
             if (typedArray.hasValue(1)) {
-                this.f39075m = false;
-                int i10 = typedArray.getInt(1, 1);
-                if (i10 == 1) {
-                    this.f39074l = Typeface.SANS_SERIF;
+                this.f39144m = false;
+                int i9 = typedArray.getInt(1, 1);
+                if (i9 == 1) {
+                    this.f39143l = Typeface.SANS_SERIF;
                     return;
-                } else if (i10 == 2) {
-                    this.f39074l = Typeface.SERIF;
+                } else if (i9 == 2) {
+                    this.f39143l = Typeface.SERIF;
                     return;
                 } else {
-                    if (i10 != 3) {
+                    if (i9 != 3) {
                         return;
                     }
-                    this.f39074l = Typeface.MONOSPACE;
+                    this.f39143l = Typeface.MONOSPACE;
                     return;
                 }
             }
             return;
         }
-        this.f39074l = null;
-        int i11 = typedArray.hasValue(12) ? 12 : 10;
-        int i12 = this.f39073k;
-        int i13 = this.f39072j;
+        this.f39143l = null;
+        int i10 = typedArray.hasValue(12) ? 12 : 10;
+        int i11 = this.f39142k;
+        int i12 = this.f39141j;
         if (!context.isRestricted()) {
             try {
-                Typeface k9 = gVar.k(i11, this.f39072j, new Q(this, i12, i13, new WeakReference(this.f39064a)));
+                Typeface k9 = gVar.k(i10, this.f39141j, new Q(this, i11, i12, new WeakReference(this.f39133a)));
                 if (k9 != null) {
-                    if (i6 < 28 || this.f39073k == -1) {
-                        this.f39074l = k9;
+                    if (i4 < 28 || this.f39142k == -1) {
+                        this.f39143l = k9;
                     } else {
-                        this.f39074l = U.a(Typeface.create(k9, 0), this.f39073k, (this.f39072j & 2) != 0);
+                        this.f39143l = U.a(Typeface.create(k9, 0), this.f39142k, (this.f39141j & 2) != 0);
                     }
                 }
-                this.f39075m = this.f39074l == null;
+                this.f39144m = this.f39143l == null;
             } catch (Resources.NotFoundException | UnsupportedOperationException unused) {
             }
         }
-        if (this.f39074l != null || (string = typedArray.getString(i11)) == null) {
+        if (this.f39143l != null || (string = typedArray.getString(i10)) == null) {
             return;
         }
-        if (Build.VERSION.SDK_INT < 28 || this.f39073k == -1) {
-            this.f39074l = Typeface.create(string, this.f39072j);
+        if (Build.VERSION.SDK_INT < 28 || this.f39142k == -1) {
+            this.f39143l = Typeface.create(string, this.f39141j);
         } else {
-            this.f39074l = U.a(Typeface.create(string, 0), this.f39073k, (this.f39072j & 2) != 0);
+            this.f39143l = U.a(Typeface.create(string, 0), this.f39142k, (this.f39141j & 2) != 0);
         }
     }
 }

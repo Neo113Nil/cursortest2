@@ -16,7 +16,7 @@ public interface IATAdxHandler {
 
     void destroy();
 
-    void notifyLose(LOSS_REASON loss_reason, double d2, Map<String, Object> map);
+    void notifyLose(LOSS_REASON loss_reason, double d9, Map<String, Object> map);
 
     void notifyWin(Map<String, Object> map);
 }

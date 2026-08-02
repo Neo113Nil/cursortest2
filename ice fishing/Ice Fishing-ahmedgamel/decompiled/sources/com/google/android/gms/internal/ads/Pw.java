@@ -4,26 +4,26 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /* loaded from: classes2.dex */
-public final class Pw extends Q2.a {
+public final class Pw extends S2.a {
     public static final Parcelable.Creator<Pw> CREATOR = new V8(20);
 
     /* renamed from: n, reason: collision with root package name */
-    public final int f26879n;
+    public final int f27666n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final byte[] f26880u;
+    public final byte[] f27667u;
 
     public Pw(int i, byte[] bArr) {
-        this.f26879n = i;
-        this.f26880u = bArr;
+        this.f27666n = i;
+        this.f27667u = bArr;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int G7 = A8.b.G(parcel, 20293);
-        A8.b.F(parcel, 1, 4);
-        parcel.writeInt(this.f26879n);
-        A8.b.w(parcel, 2, this.f26880u);
-        A8.b.I(parcel, G7);
+        int x9 = com.bumptech.glide.e.x(parcel, 20293);
+        com.bumptech.glide.e.w(parcel, 1, 4);
+        parcel.writeInt(this.f27666n);
+        com.bumptech.glide.e.o(parcel, 2, this.f27667u);
+        com.bumptech.glide.e.z(parcel, x9);
     }
 }

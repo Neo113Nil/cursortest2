@@ -6,9 +6,9 @@ public class ATAdStatusInfo {
     private boolean mIsLoading;
     private boolean mIsReady;
 
-    public ATAdStatusInfo(boolean z3, boolean z6, ATAdInfo aTAdInfo) {
-        this.mIsLoading = z3;
-        this.mIsReady = z6;
+    public ATAdStatusInfo(boolean z6, boolean z9, ATAdInfo aTAdInfo) {
+        this.mIsLoading = z6;
+        this.mIsReady = z9;
         this.mATTopAdInfo = aTAdInfo;
     }
 

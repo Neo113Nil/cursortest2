@@ -7,25 +7,25 @@ import com.anythink.basead.exoplayer.j.h;
 public final class o implements h.a {
 
     /* renamed from: a, reason: collision with root package name */
-    private final Context f8187a;
+    private final Context f8973a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final aa<? super h> f8188b;
+    private final aa<? super h> f8974b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final h.a f8189c;
+    private final h.a f8975c;
 
     public o(Context context, String str) {
         this(context, str, (aa<? super h>) null);
     }
 
     private n b() {
-        return new n(this.f8187a, this.f8188b, this.f8189c.a());
+        return new n(this.f8973a, this.f8974b, this.f8975c.a());
     }
 
     @Override // com.anythink.basead.exoplayer.j.h.a
     public final /* synthetic */ h a() {
-        return new n(this.f8187a, this.f8188b, this.f8189c.a());
+        return new n(this.f8973a, this.f8974b, this.f8975c.a());
     }
 
     private o(Context context, String str, aa<? super h> aaVar) {
@@ -33,8 +33,8 @@ public final class o implements h.a {
     }
 
     private o(Context context, aa<? super h> aaVar, h.a aVar) {
-        this.f8187a = context.getApplicationContext();
-        this.f8188b = aaVar;
-        this.f8189c = aVar;
+        this.f8973a = context.getApplicationContext();
+        this.f8974b = aaVar;
+        this.f8975c = aVar;
     }
 }

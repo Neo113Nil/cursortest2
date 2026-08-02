@@ -8,61 +8,61 @@ import java.util.Comparator;
 public final class c implements Comparator {
 
     /* renamed from: n, reason: collision with root package name */
-    public final Rect f3374n = new Rect();
+    public final Rect f3504n = new Rect();
 
     /* renamed from: u, reason: collision with root package name */
-    public final Rect f3375u = new Rect();
+    public final Rect f3505u = new Rect();
 
     /* renamed from: v, reason: collision with root package name */
-    public final boolean f3376v;
+    public final boolean f3506v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final a4.e f3377w;
+    public final G3.e f3507w;
 
-    public c(boolean z3, a4.e eVar) {
-        this.f3376v = z3;
-        this.f3377w = eVar;
+    public c(boolean z6, G3.e eVar) {
+        this.f3506v = z6;
+        this.f3507w = eVar;
     }
 
     @Override // java.util.Comparator
     public final int compare(Object obj, Object obj2) {
-        this.f3377w.getClass();
-        Rect rect = this.f3374n;
+        this.f3507w.getClass();
+        Rect rect = this.f3504n;
         ((k) obj).f(rect);
-        Rect rect2 = this.f3375u;
+        Rect rect2 = this.f3505u;
         ((k) obj2).f(rect2);
         int i = rect.top;
-        int i6 = rect2.top;
-        if (i < i6) {
+        int i4 = rect2.top;
+        if (i < i4) {
             return -1;
         }
-        if (i > i6) {
+        if (i > i4) {
             return 1;
         }
-        int i9 = rect.left;
-        int i10 = rect2.left;
-        boolean z3 = this.f3376v;
-        if (i9 < i10) {
-            return z3 ? 1 : -1;
+        int i6 = rect.left;
+        int i9 = rect2.left;
+        boolean z6 = this.f3506v;
+        if (i6 < i9) {
+            return z6 ? 1 : -1;
         }
-        if (i9 > i10) {
-            return z3 ? -1 : 1;
+        if (i6 > i9) {
+            return z6 ? -1 : 1;
         }
-        int i11 = rect.bottom;
-        int i12 = rect2.bottom;
-        if (i11 < i12) {
+        int i10 = rect.bottom;
+        int i11 = rect2.bottom;
+        if (i10 < i11) {
             return -1;
         }
-        if (i11 > i12) {
+        if (i10 > i11) {
             return 1;
         }
-        int i13 = rect.right;
-        int i14 = rect2.right;
-        if (i13 < i14) {
-            return z3 ? 1 : -1;
+        int i12 = rect.right;
+        int i13 = rect2.right;
+        if (i12 < i13) {
+            return z6 ? 1 : -1;
         }
-        if (i13 > i14) {
-            return z3 ? -1 : 1;
+        if (i12 > i13) {
+            return z6 ? -1 : 1;
         }
         return 0;
     }

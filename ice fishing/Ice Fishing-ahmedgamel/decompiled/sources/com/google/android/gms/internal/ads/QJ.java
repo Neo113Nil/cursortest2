@@ -7,22 +7,22 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 /* loaded from: classes2.dex */
-public final class QJ implements InterfaceC3394jE {
+public final class QJ implements InterfaceC3417jE {
 
     /* renamed from: e, reason: collision with root package name */
-    public static final L7.b f27015e = new L7.b(8);
+    public static final L7.b f27802e = new L7.b(8);
 
     /* renamed from: a, reason: collision with root package name */
-    public final byte[] f27016a;
+    public final byte[] f27803a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final YG f27017b;
+    public final YG f27804b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final SecretKeySpec f27018c;
+    public final SecretKeySpec f27805c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f27019d;
+    public final int f27806d;
 
     public QJ(int i, byte[] bArr, byte[] bArr2) {
         if (!WC.c(1)) {
@@ -31,12 +31,12 @@ public final class QJ implements InterfaceC3394jE {
         if (i != 12 && i != 16) {
             throw new IllegalArgumentException("IV size should be either 12 or 16 bytes");
         }
-        this.f27019d = i;
+        this.f27806d = i;
         int length = bArr.length;
-        AbstractC3341iD.d(length);
-        this.f27018c = new SecretKeySpec(bArr, "AES");
-        this.f27017b = C2921aN.k(WG.i(XG.b(length), new C3105du(8, C3240gK.a(bArr))));
-        this.f27016a = bArr2;
+        AbstractC3364iD.d(length);
+        this.f27805c = new SecretKeySpec(bArr, "AES");
+        this.f27804b = C2944aN.k(WG.i(XG.b(length), new C3128du(8, C3263gK.a(bArr))));
+        this.f27803a = bArr2;
     }
 
     public static QJ b(HE he) {
@@ -44,17 +44,17 @@ public final class QJ implements InterfaceC3394jE {
             throw new GeneralSecurityException("Can not use AES-EAX in FIPS-mode.");
         }
         he.getClass();
-        return new QJ(he.f25244b.f25659b, ((C3240gK) he.f25245c.f29859u).b(), he.f25246d.b());
+        return new QJ(he.f26016b.f26412b, ((C3263gK) he.f26017c.f30647u).b(), he.f26018d.b());
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3394jE
+    @Override // com.google.android.gms.internal.ads.InterfaceC3417jE
     public final byte[] a(byte[] bArr, byte[] bArr2) {
         int length = bArr.length;
-        byte[] bArr3 = this.f27016a;
+        byte[] bArr3 = this.f27803a;
         int length2 = bArr3.length;
-        int i = this.f27019d;
-        int i6 = ((length - length2) - i) - 16;
-        if (i6 < 0) {
+        int i = this.f27806d;
+        int i4 = ((length - length2) - i) - 16;
+        if (i4 < 0) {
             throw new GeneralSecurityException("ciphertext too short");
         }
         if (!DG.c(bArr3, bArr)) {
@@ -65,24 +65,24 @@ public final class QJ implements InterfaceC3394jE {
             bArr2 = new byte[0];
         }
         byte[] c10 = c(1, 0, bArr2.length, bArr2);
-        byte[] c11 = c(2, length2 + i, i6, bArr);
-        int i9 = length - 16;
+        byte[] c11 = c(2, length2 + i, i4, bArr);
+        int i6 = length - 16;
         byte b9 = 0;
-        for (int i10 = 0; i10 < 16; i10++) {
-            b9 = (byte) (b9 | (((bArr[i9 + i10] ^ c10[i10]) ^ c9[i10]) ^ c11[i10]));
+        for (int i9 = 0; i9 < 16; i9++) {
+            b9 = (byte) (b9 | (((bArr[i6 + i9] ^ c10[i9]) ^ c9[i9]) ^ c11[i9]));
         }
         if (b9 != 0) {
             throw new AEADBadTagException("tag mismatch");
         }
-        Cipher cipher = (Cipher) f27015e.get();
-        cipher.init(1, this.f27018c, new IvParameterSpec(c9));
-        return cipher.doFinal(bArr, bArr3.length + i, i6);
+        Cipher cipher = (Cipher) f27802e.get();
+        cipher.init(1, this.f27805c, new IvParameterSpec(c9));
+        return cipher.doFinal(bArr, bArr3.length + i, i4);
     }
 
-    public final byte[] c(int i, int i6, int i9, byte[] bArr) {
-        byte[] bArr2 = new byte[i9 + 16];
+    public final byte[] c(int i, int i4, int i6, byte[] bArr) {
+        byte[] bArr2 = new byte[i6 + 16];
         bArr2[15] = (byte) i;
-        System.arraycopy(bArr, i6, bArr2, 16, i9);
-        return this.f27017b.d(16, bArr2);
+        System.arraycopy(bArr, i4, bArr2, 16, i6);
+        return this.f27804b.d(16, bArr2);
     }
 }

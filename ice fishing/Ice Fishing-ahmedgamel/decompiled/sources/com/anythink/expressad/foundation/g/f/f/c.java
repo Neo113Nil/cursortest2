@@ -9,16 +9,16 @@ import java.util.TreeMap;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f19319a;
+    public final int f20106a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final byte[] f19320b;
+    public final byte[] f20107b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Map<String, String> f19321c;
+    public final Map<String, String> f20108c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final List<com.anythink.expressad.foundation.g.f.c.c> f19322d;
+    public final List<com.anythink.expressad.foundation.g.f.c.c> f20109d;
 
     public c(int i, byte[] bArr, List<com.anythink.expressad.foundation.g.f.c.c> list) {
         this(i, bArr, a(list), list);
@@ -39,13 +39,13 @@ public final class c {
     }
 
     private c(int i, byte[] bArr, Map<String, String> map, List<com.anythink.expressad.foundation.g.f.c.c> list) {
-        this.f19319a = i;
-        this.f19320b = bArr;
-        this.f19321c = map;
+        this.f20106a = i;
+        this.f20107b = bArr;
+        this.f20108c = map;
         if (list == null) {
-            this.f19322d = null;
+            this.f20109d = null;
         } else {
-            this.f19322d = Collections.unmodifiableList(list);
+            this.f20109d = Collections.unmodifiableList(list);
         }
     }
 }

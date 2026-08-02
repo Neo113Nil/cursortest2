@@ -25,13 +25,13 @@ import org.json.JSONObject;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    Queue<b> f11005a;
+    Queue<b> f11791a;
 
     /* renamed from: b, reason: collision with root package name */
-    Map<String, Object> f11006b;
+    Map<String, Object> f11792b;
 
     /* renamed from: c, reason: collision with root package name */
-    BaseG2CV2View.b f11007c = new BaseG2CV2View.b() { // from class: com.anythink.basead.ui.guidetoclickv2.a.1
+    BaseG2CV2View.b f11793c = new BaseG2CV2View.b() { // from class: com.anythink.basead.ui.guidetoclickv2.a.1
         @Override // com.anythink.basead.ui.guidetoclickv2.BaseG2CV2View.b
         public final void a() {
             a.this.f();
@@ -40,8 +40,8 @@ public final class a {
         @Override // com.anythink.basead.ui.guidetoclickv2.BaseG2CV2View.b
         public final void b() {
             Object obj;
-            Map<String, Object> map = a.this.f11006b;
-            if (map != null && (obj = map.get(g.a.f11168c)) != null && (obj instanceof f)) {
+            Map<String, Object> map = a.this.f11792b;
+            if (map != null && (obj = map.get(g.a.f11954c)) != null && (obj instanceof f)) {
                 ((f) obj).onATImproveClickViewRenderFail(2);
             }
             a.this.c();
@@ -49,45 +49,45 @@ public final class a {
     };
 
     /* renamed from: d, reason: collision with root package name */
-    private Context f11008d;
+    private Context f11794d;
 
     /* renamed from: e, reason: collision with root package name */
-    private w f11009e;
+    private w f11795e;
 
     /* renamed from: f, reason: collision with root package name */
-    private x f11010f;
+    private x f11796f;
 
     /* renamed from: g, reason: collision with root package name */
-    private RelativeLayout f11011g;
+    private RelativeLayout f11797g;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f11012h;
+    private int f11798h;
     private View i;
 
     /* renamed from: j, reason: collision with root package name */
-    private b f11013j;
+    private b f11799j;
 
     /* renamed from: k, reason: collision with root package name */
-    private c.a f11014k;
+    private c.a f11800k;
 
     /* renamed from: com.anythink.basead.ui.guidetoclickv2.a$a, reason: collision with other inner class name */
     public static class C0060a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static int f11016a = 180;
+        public static int f11802a = 180;
 
         /* renamed from: b, reason: collision with root package name */
-        public static int f11017b = 50;
+        public static int f11803b = 50;
     }
 
     public a(Context context, w wVar, x xVar, int i, RelativeLayout relativeLayout, View view, c.a aVar) {
-        this.f11008d = context;
-        this.f11009e = wVar;
-        this.f11010f = xVar;
-        this.f11012h = i;
-        this.f11011g = relativeLayout;
+        this.f11794d = context;
+        this.f11795e = wVar;
+        this.f11796f = xVar;
+        this.f11798h = i;
+        this.f11797g = relativeLayout;
         this.i = view;
-        this.f11014k = aVar;
+        this.f11800k = aVar;
         d();
     }
 
@@ -111,9 +111,9 @@ public final class a {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private void d() {
-        this.f11005a = new ConcurrentLinkedQueue();
-        y yVar = this.f11010f.f14168o;
-        int C8 = this.f11012h == 3 ? yVar.C() : m.f(this.f11008d);
+        this.f11791a = new ConcurrentLinkedQueue();
+        y yVar = this.f11796f.f14954o;
+        int C8 = this.f11798h == 3 ? yVar.C() : m.f(this.f11794d);
         long av = yVar.av();
         String aw = yVar.aw();
         if (TextUtils.isEmpty(aw)) {
@@ -125,7 +125,7 @@ public final class a {
                 for (int i = 0; i < jSONArray.length(); i++) {
                     JSONObject optJSONObject = jSONArray.optJSONObject(i);
                     int optInt = optJSONObject.optInt("cgf_type", -1);
-                    boolean z3 = true;
+                    boolean z6 = true;
                     switch (optInt) {
                         case 1:
                         case 6:
@@ -135,69 +135,69 @@ public final class a {
                             if (optInt == 6) {
                                 break;
                             }
-                            z3 = false;
+                            z6 = false;
                             break;
                         case 2:
-                            if (!e.a(this.f11009e, this.f11010f)) {
-                                int i6 = this.f11012h;
-                                if (i6 != 1) {
-                                    if (i6 == 3) {
+                            if (!e.a(this.f11795e, this.f11796f)) {
+                                int i4 = this.f11798h;
+                                if (i4 != 1) {
+                                    if (i4 == 3) {
                                     }
                                 }
-                                z3 = false;
+                                z6 = false;
                                 break;
                             }
                             break;
                         case 3:
-                            int i9 = this.f11012h;
-                            if (i9 != 1) {
-                                if (i9 == 3) {
+                            int i6 = this.f11798h;
+                            if (i6 != 1) {
+                                if (i6 == 3) {
                                 }
                             }
-                            z3 = false;
+                            z6 = false;
                             break;
                         case 4:
                         case 5:
-                            int i10 = this.f11012h;
-                            if (i10 != 1) {
-                                if (i10 != 2) {
+                            int i9 = this.f11798h;
+                            if (i9 != 1) {
+                                if (i9 != 2) {
                                 }
                             }
                             if (this.i == null) {
                                 break;
                             }
-                            z3 = false;
+                            z6 = false;
                             break;
                         case 8:
                         case 9:
                         case 10:
-                            boolean z6 = (this.f11010f.f14163j == 1 && C8 == 1) ? false : true;
-                            if (!z6) {
-                                if (optInt == 9 && !com.anythink.core.common.v.g.a().b(b.d.f12121f)) {
-                                    z6 = true;
+                            boolean z9 = (this.f11796f.f14949j == 1 && C8 == 1) ? false : true;
+                            if (!z9) {
+                                if (optInt == 9 && !com.anythink.core.common.v.g.a().b(b.d.f12907f)) {
+                                    z9 = true;
                                 }
-                                if ((optInt == 8 || optInt == 10) && !com.anythink.core.common.v.g.a().b(b.d.f12125k)) {
-                                    z6 = true;
+                                if ((optInt == 8 || optInt == 10) && !com.anythink.core.common.v.g.a().b(b.d.f12911k)) {
+                                    z9 = true;
                                 }
-                                if (optInt == 10 && !com.anythink.core.common.v.g.a().b(b.d.f12126l)) {
-                                    z6 = true;
+                                if (optInt == 10 && !com.anythink.core.common.v.g.a().b(b.d.f12912l)) {
+                                    z9 = true;
                                 }
-                                if (optInt == 8 && !com.anythink.core.common.v.g.a().b(b.d.f12127m)) {
+                                if (optInt == 8 && !com.anythink.core.common.v.g.a().b(b.d.f12913m)) {
                                     break;
                                 }
                             }
-                            z3 = z6;
+                            z6 = z9;
                             break;
                         case 13:
-                            int i11 = this.f11010f.f14163j;
-                            if (i11 != 4) {
+                            int i10 = this.f11796f.f14949j;
+                            if (i10 != 4) {
                             }
                             break;
                     }
-                    if (!z3) {
+                    if (!z6) {
                         long optLong = optJSONObject.optLong("cgf_st", -1L);
                         if (optInt > 0 && optLong >= 0) {
-                            this.f11005a.add(new b(this.f11008d, this.f11009e, this.f11010f, this.f11012h, new b.a(i + 1, optInt, av, optLong, yVar.ax(), C8), this.f11011g, this.i, this.f11014k, this.f11007c));
+                            this.f11791a.add(new b(this.f11794d, this.f11795e, this.f11796f, this.f11798h, new b.a(i + 1, optInt, av, optLong, yVar.ax(), C8), this.f11797g, this.i, this.f11800k, this.f11793c));
                         }
                     }
                 }
@@ -207,7 +207,7 @@ public final class a {
     }
 
     private void e() {
-        b bVar = this.f11013j;
+        b bVar = this.f11799j;
         if (bVar != null) {
             bVar.a();
         } else {
@@ -218,34 +218,34 @@ public final class a {
     /* JADX INFO: Access modifiers changed from: private */
     public void f() {
         g();
-        if (this.f11005a.size() > 0) {
-            this.f11013j = this.f11005a.poll();
+        if (this.f11791a.size() > 0) {
+            this.f11799j = this.f11791a.poll();
             e();
         }
     }
 
     private void g() {
-        b bVar = this.f11013j;
+        b bVar = this.f11799j;
         if (bVar != null) {
             bVar.c();
-            this.f11013j = null;
+            this.f11799j = null;
         }
     }
 
     public final void b() {
-        b bVar = this.f11013j;
+        b bVar = this.f11799j;
         if (bVar != null) {
             bVar.b();
         }
     }
 
     public final void c() {
-        b bVar = this.f11013j;
+        b bVar = this.f11799j;
         if (bVar != null) {
             bVar.b();
         }
         g();
-        Queue<b> queue = this.f11005a;
+        Queue<b> queue = this.f11791a;
         if (queue != null) {
             queue.clear();
         }
@@ -261,8 +261,8 @@ public final class a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private boolean a(int i, int i6) {
-        int i9;
+    private boolean a(int i, int i4) {
+        int i6;
         switch (i) {
             case 1:
             case 6:
@@ -271,44 +271,44 @@ public final class a {
             case 12:
                 return i == 6 && !com.anythink.core.common.v.g.a().b(b.d.i);
             case 2:
-                return e.a(this.f11009e, this.f11010f) || !((i9 = this.f11012h) == 1 || i9 == 3);
+                return e.a(this.f11795e, this.f11796f) || !((i6 = this.f11798h) == 1 || i6 == 3);
             case 3:
-                int i10 = this.f11012h;
-                if (i10 == 1 || i10 == 3) {
+                int i9 = this.f11798h;
+                if (i9 == 1 || i9 == 3) {
                     return false;
                 }
             case 4:
             case 5:
-                int i11 = this.f11012h;
-                return !(i11 == 1 || i11 == 2 || i11 == 3) || this.i == null;
+                int i10 = this.f11798h;
+                return !(i10 == 1 || i10 == 2 || i10 == 3) || this.i == null;
             case 8:
             case 9:
             case 10:
-                boolean z3 = (this.f11010f.f14163j == 1 && i6 == 1) ? false : true;
-                if (!z3) {
-                    if (i == 9 && !com.anythink.core.common.v.g.a().b(b.d.f12121f)) {
-                        z3 = true;
+                boolean z6 = (this.f11796f.f14949j == 1 && i4 == 1) ? false : true;
+                if (!z6) {
+                    if (i == 9 && !com.anythink.core.common.v.g.a().b(b.d.f12907f)) {
+                        z6 = true;
                     }
-                    if ((i == 8 || i == 10) && !com.anythink.core.common.v.g.a().b(b.d.f12125k)) {
-                        z3 = true;
+                    if ((i == 8 || i == 10) && !com.anythink.core.common.v.g.a().b(b.d.f12911k)) {
+                        z6 = true;
                     }
-                    if (i == 10 && !com.anythink.core.common.v.g.a().b(b.d.f12126l)) {
-                        z3 = true;
+                    if (i == 10 && !com.anythink.core.common.v.g.a().b(b.d.f12912l)) {
+                        z6 = true;
                     }
-                    if (i == 8 && !com.anythink.core.common.v.g.a().b(b.d.f12127m)) {
+                    if (i == 8 && !com.anythink.core.common.v.g.a().b(b.d.f12913m)) {
                         return true;
                     }
                 }
-                return z3;
+                return z6;
             case 13:
-                int i12 = this.f11010f.f14163j;
-                if ((i12 == 4 || i12 == 3) && i6 == 1) {
+                int i11 = this.f11796f.f14949j;
+                if ((i11 == 4 || i11 == 3) && i4 == 1) {
                     return false;
                 }
         }
     }
 
     public final void a(Map<String, Object> map) {
-        this.f11006b = map;
+        this.f11792b = map;
     }
 }

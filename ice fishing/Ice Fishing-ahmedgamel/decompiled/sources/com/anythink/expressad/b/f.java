@@ -13,100 +13,100 @@ import java.util.zip.GZIPInputStream;
 public class f {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f18209a = "f";
+    private static final String f18996a = "f";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final int f18210b = 60000;
+    private static final int f18997b = 60000;
 
     /* renamed from: c, reason: collision with root package name */
-    private com.anythink.expressad.f.a f18211c;
+    private com.anythink.expressad.f.a f18998c;
 
     /* renamed from: d, reason: collision with root package name */
-    private String f18212d;
+    private String f18999d;
 
     /* renamed from: e, reason: collision with root package name */
-    private boolean f18213e = true;
+    private boolean f19000e = true;
 
     /* renamed from: f, reason: collision with root package name */
-    private final int f18214f = 3145728;
+    private final int f19001f = 3145728;
 
     /* renamed from: g, reason: collision with root package name */
-    private com.anythink.expressad.b.a.a f18215g;
+    private com.anythink.expressad.b.a.a f19002g;
 
     public f() {
         com.anythink.expressad.f.b.a();
         com.anythink.expressad.foundation.b.a.c().f();
         com.anythink.expressad.f.a b9 = com.anythink.expressad.f.b.b();
-        this.f18211c = b9;
+        this.f18998c = b9;
         if (b9 == null) {
             com.anythink.expressad.f.b.a();
-            this.f18211c = com.anythink.expressad.f.b.c();
+            this.f18998c = com.anythink.expressad.f.b.c();
         }
     }
 
-    private void a(boolean z3) {
-        this.f18213e = z3;
+    private void a(boolean z6) {
+        this.f19000e = z6;
     }
 
-    public final com.anythink.expressad.b.a.a a(String str, boolean z3, boolean z6, com.anythink.expressad.foundation.d.d dVar) {
+    public final com.anythink.expressad.b.a.a a(String str, boolean z6, boolean z9, com.anythink.expressad.foundation.d.d dVar) {
         int i;
         HttpURLConnection httpURLConnection = null;
         if (!URLUtil.isNetworkUrl(str)) {
             return null;
         }
         String replace = str.replace(" ", "%20");
-        this.f18215g = new com.anythink.expressad.b.a.a();
+        this.f19002g = new com.anythink.expressad.b.a.a();
         try {
             HttpURLConnection httpURLConnection2 = (HttpURLConnection) new URL(replace).openConnection();
             try {
                 httpURLConnection2.setRequestMethod("GET");
-                if ((!z3 && !z6) || dVar == null) {
+                if ((!z6 && !z9) || dVar == null) {
                     httpURLConnection2.setRequestProperty("User-Agent", com.anythink.core.common.v.m.h());
                 }
-                if (z3 && dVar != null && dVar.F() == 1) {
+                if (z6 && dVar != null && dVar.F() == 1) {
                     httpURLConnection2.setRequestProperty("User-Agent", com.anythink.core.common.v.m.h());
                 }
-                if (z6 && dVar != null && dVar.E() == 1) {
+                if (z9 && dVar != null && dVar.E() == 1) {
                     httpURLConnection2.setRequestProperty("User-Agent", com.anythink.core.common.v.m.h());
                 }
-                httpURLConnection2.setRequestProperty("Accept-Encoding", com.anythink.expressad.foundation.g.f.g.b.f19341d);
-                if (this.f18211c.u() && !TextUtils.isEmpty(this.f18212d)) {
-                    httpURLConnection2.setRequestProperty("referer", this.f18212d);
+                httpURLConnection2.setRequestProperty("Accept-Encoding", com.anythink.expressad.foundation.g.f.g.b.f20128d);
+                if (this.f18998c.u() && !TextUtils.isEmpty(this.f18999d)) {
+                    httpURLConnection2.setRequestProperty("referer", this.f18999d);
                 }
                 httpURLConnection2.setConnectTimeout(60000);
                 httpURLConnection2.setReadTimeout(60000);
                 httpURLConnection2.setInstanceFollowRedirects(false);
                 httpURLConnection2.connect();
-                this.f18215g.f18117a = httpURLConnection2.getHeaderField("Location");
-                this.f18215g.f18120d = httpURLConnection2.getHeaderField("Referer");
-                this.f18215g.f18122f = httpURLConnection2.getResponseCode();
-                this.f18215g.f18118b = httpURLConnection2.getContentType();
-                this.f18215g.f18121e = httpURLConnection2.getContentLength();
-                this.f18215g.f18119c = httpURLConnection2.getContentEncoding();
-                boolean equalsIgnoreCase = com.anythink.expressad.foundation.g.f.g.b.f19341d.equalsIgnoreCase(this.f18215g.f18119c);
-                com.anythink.expressad.b.a.a aVar = this.f18215g;
-                if (aVar.f18122f == 200 && this.f18213e && (i = aVar.f18121e) > 0 && i < 3145728 && !TextUtils.isEmpty(replace)) {
+                this.f19002g.f18904a = httpURLConnection2.getHeaderField("Location");
+                this.f19002g.f18907d = httpURLConnection2.getHeaderField("Referer");
+                this.f19002g.f18909f = httpURLConnection2.getResponseCode();
+                this.f19002g.f18905b = httpURLConnection2.getContentType();
+                this.f19002g.f18908e = httpURLConnection2.getContentLength();
+                this.f19002g.f18906c = httpURLConnection2.getContentEncoding();
+                boolean equalsIgnoreCase = com.anythink.expressad.foundation.g.f.g.b.f20128d.equalsIgnoreCase(this.f19002g.f18906c);
+                com.anythink.expressad.b.a.a aVar = this.f19002g;
+                if (aVar.f18909f == 200 && this.f19000e && (i = aVar.f18908e) > 0 && i < 3145728 && !TextUtils.isEmpty(replace)) {
                     try {
                         String a9 = a(httpURLConnection2.getInputStream(), equalsIgnoreCase);
                         if (!TextUtils.isEmpty(a9)) {
                             byte[] bytes = a9.getBytes();
                             if (bytes.length > 0 && bytes.length < 3145728) {
-                                this.f18215g.f18123g = a9.trim();
+                                this.f19002g.f18910g = a9.trim();
                             }
                         }
                     } catch (Throwable th) {
                         th.getMessage();
                     }
                 }
-                this.f18212d = replace;
+                this.f18999d = replace;
                 httpURLConnection2.disconnect();
-                return this.f18215g;
+                return this.f19002g;
             } catch (Throwable th2) {
                 th = th2;
                 httpURLConnection = httpURLConnection2;
                 try {
-                    this.f18215g.f18124h = th.getMessage();
-                    return this.f18215g;
+                    this.f19002g.f18911h = th.getMessage();
+                    return this.f19002g;
                 } finally {
                     if (httpURLConnection != null) {
                         httpURLConnection.disconnect();
@@ -124,22 +124,22 @@ public class f {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private String a(InputStream inputStream, boolean z3) {
+    private String a(InputStream inputStream, boolean z6) {
         Throwable th;
         Exception e9;
         StringBuilder sb = new StringBuilder();
         BufferedReader bufferedReader = null;
         try {
-            if (z3) {
+            if (z6) {
                 try {
                     try {
                         inputStream = new GZIPInputStream(inputStream);
                     } catch (Exception e10) {
                         e9 = e10;
-                        if (this.f18215g == null) {
+                        if (this.f19002g == null) {
                             com.anythink.expressad.b.a.a aVar = new com.anythink.expressad.b.a.a();
-                            this.f18215g = aVar;
-                            aVar.f18124h = e9.getMessage();
+                            this.f19002g = aVar;
+                            aVar.f18911h = e9.getMessage();
                         }
                         e9.getMessage();
                         if (bufferedReader != null) {
@@ -170,7 +170,7 @@ public class f {
                 } catch (Exception e12) {
                     e9 = e12;
                     bufferedReader = bufferedReader2;
-                    if (this.f18215g == null) {
+                    if (this.f19002g == null) {
                     }
                     e9.getMessage();
                     if (bufferedReader != null) {

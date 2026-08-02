@@ -4,29 +4,29 @@ package F;
 public final class h {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f858a;
+    public final String f921a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f859b;
+    public final int f922b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final boolean f860c;
+    public final boolean f923c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f861d;
+    public final String f924d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final int f862e;
+    public final int f925e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final int f863f;
+    public final int f926f;
 
-    public h(int i, int i6, int i9, String str, String str2, boolean z3) {
-        this.f858a = str;
-        this.f859b = i;
-        this.f860c = z3;
-        this.f861d = str2;
-        this.f862e = i6;
-        this.f863f = i9;
+    public h(int i, int i4, int i6, String str, String str2, boolean z6) {
+        this.f921a = str;
+        this.f922b = i;
+        this.f923c = z6;
+        this.f924d = str2;
+        this.f925e = i4;
+        this.f926f = i6;
     }
 }

@@ -20,10 +20,10 @@ import com.anythink.expressad.foundation.h.k;
 public class ShakeThumbView extends BaseShakeView {
 
     /* renamed from: l, reason: collision with root package name */
-    private FrameLayout f10273l;
+    private FrameLayout f11059l;
 
     /* renamed from: m, reason: collision with root package name */
-    private TextView f10274m;
+    private TextView f11060m;
 
     public ShakeThumbView(Context context) {
         super(context);
@@ -43,39 +43,39 @@ public class ShakeThumbView extends BaseShakeView {
         gradientDrawable.setColor(parseColor);
         gradientDrawable.setCornerRadius(a9);
         imageView.setBackgroundDrawable(gradientDrawable);
-        this.f9905a = new ImageView(getContext());
+        this.f10691a = new ImageView(getContext());
         FrameLayout.LayoutParams layoutParams2 = new FrameLayout.LayoutParams(q.a(getContext(), 48.0f), q.a(getContext(), 48.0f));
         layoutParams2.gravity = 49;
         layoutParams2.topMargin = q.a(getContext(), 16.0f);
-        this.f9905a.setLayoutParams(layoutParams2);
-        this.f10274m = new TextView(getContext());
+        this.f10691a.setLayoutParams(layoutParams2);
+        this.f11060m = new TextView(getContext());
         FrameLayout.LayoutParams layoutParams3 = new FrameLayout.LayoutParams(-2, -2);
-        this.f10274m.setGravity(1);
-        this.f10274m.setMaxWidth(q.a(getContext(), 124.0f));
-        this.f10274m.setMaxLines(2);
-        this.f10274m.setEllipsize(TextUtils.TruncateAt.END);
+        this.f11060m.setGravity(1);
+        this.f11060m.setMaxWidth(q.a(getContext(), 124.0f));
+        this.f11060m.setMaxLines(2);
+        this.f11060m.setEllipsize(TextUtils.TruncateAt.END);
         layoutParams3.gravity = 49;
         layoutParams3.topMargin = q.a(getContext(), 86.0f);
-        this.f10274m.setLayoutParams(layoutParams3);
-        this.f10274m.setText(q.a(t.b().g(), "myoffer_shake_full_title", k.f19636g));
-        this.f10274m.setTextSize(1, 12.0f);
-        this.f10274m.setTextColor(-1);
-        this.f10274m.setBackgroundResource(q.a(t.b().g(), "myoffer_bg_shake_thumb_hint", k.f19632c));
+        this.f11060m.setLayoutParams(layoutParams3);
+        this.f11060m.setText(q.a(t.b().g(), "myoffer_shake_full_title", k.f20423g));
+        this.f11060m.setTextSize(1, 12.0f);
+        this.f11060m.setTextColor(-1);
+        this.f11060m.setBackgroundResource(q.a(t.b().g(), "myoffer_bg_shake_thumb_hint", k.f20419c));
         int a10 = q.a(getContext(), 6.0f);
         int a11 = q.a(getContext(), 12.0f);
-        this.f10274m.setPadding(a11, a10, a11, a10);
-        this.f10273l = new FrameLayout(getContext());
-        this.f10273l.setLayoutParams(new LinearLayout.LayoutParams(-2, -2));
-        this.f10273l.addView(imageView);
-        this.f10273l.addView(this.f9905a);
-        this.f10273l.addView(this.f10274m);
-        addView(this.f10273l);
+        this.f11060m.setPadding(a11, a10, a11, a10);
+        this.f11059l = new FrameLayout(getContext());
+        this.f11059l.setLayoutParams(new LinearLayout.LayoutParams(-2, -2));
+        this.f11059l.addView(imageView);
+        this.f11059l.addView(this.f10691a);
+        this.f11059l.addView(this.f11060m);
+        addView(this.f11059l);
     }
 
     @Override // android.view.View
     public void setOnClickListener(View.OnClickListener onClickListener) {
         try {
-            FrameLayout frameLayout = this.f10273l;
+            FrameLayout frameLayout = this.f11059l;
             if (frameLayout != null) {
                 frameLayout.setOnClickListener(onClickListener);
             }
@@ -86,11 +86,11 @@ public class ShakeThumbView extends BaseShakeView {
     @Override // com.anythink.basead.ui.BaseShakeView
     public void setShakeSetting(y yVar, int i) {
         super.setShakeSetting(yVar, i);
-        if (this.f10274m != null) {
-            if (TextUtils.isEmpty(this.f9911g)) {
-                this.f10274m.setText(e.a(getContext(), i));
+        if (this.f11060m != null) {
+            if (TextUtils.isEmpty(this.f10697g)) {
+                this.f11060m.setText(e.a(getContext(), i));
             } else {
-                this.f10274m.setText(this.f9911g);
+                this.f11060m.setText(this.f10697g);
             }
         }
     }
@@ -103,8 +103,8 @@ public class ShakeThumbView extends BaseShakeView {
         super(context, attributeSet, i);
     }
 
-    public ShakeThumbView(Context context, AttributeSet attributeSet, int i, int i6) {
-        super(context, attributeSet, i, i6);
+    public ShakeThumbView(Context context, AttributeSet attributeSet, int i, int i4) {
+        super(context, attributeSet, i, i4);
     }
 
     private void a(View view) {

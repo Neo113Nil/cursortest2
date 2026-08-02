@@ -8,8 +8,8 @@ public final class ZI extends ImageView {
     public static String[] A01 = {"zJ2", "QjUwZCbDUlfOcmdTeXyvd13", "pmgXUgQY3G9embGve5GBnFw0VEVT9oeH", "awdDomzwyqRyeOiEyYHeXSv00pR55TnX", "BJj1MoNnpM6JKdO5Mh8uM61yAFI5TCy", "1E", "dRD1sNctYpeCeu2V1pPS6WM", "8C9irfg3VZNd6lZFm"};
     public ImageView.ScaleType A00;
 
-    public ZI(C1840gi c1840gi) {
-        super(c1840gi);
+    public ZI(C1860gi c1860gi) {
+        super(c1860gi);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:11:? A[RETURN, SYNTHETIC] */
@@ -18,12 +18,12 @@ public final class ZI extends ImageView {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void onMeasure(int i, int i6) {
-        int size = View.MeasureSpec.getSize(i6);
+    public final void onMeasure(int i, int i4) {
+        int size = View.MeasureSpec.getSize(i4);
         int size2 = View.MeasureSpec.getSize(i);
         int heightSpecSize = View.MeasureSpec.getMode(i);
         if (heightSpecSize == 1073741824) {
-            int heightSpecSize2 = View.MeasureSpec.getMode(i6);
+            int heightSpecSize2 = View.MeasureSpec.getMode(i4);
             if (heightSpecSize2 == 1073741824) {
                 int heightSpecSize3 = Math.min(size2, size);
                 setMeasuredDimension(heightSpecSize3, heightSpecSize3);
@@ -41,7 +41,7 @@ public final class ZI extends ImageView {
             }
             setMeasuredDimension(size2, size2);
         } else {
-            int mode = View.MeasureSpec.getMode(i6);
+            int mode = View.MeasureSpec.getMode(i4);
             int widthSpecSize = A01[6].length();
             if (widthSpecSize == 25) {
                 throw new RuntimeException();
@@ -53,7 +53,7 @@ public final class ZI extends ImageView {
                 }
                 setMeasuredDimension(size, size);
             } else {
-                super.onMeasure(i, i6);
+                super.onMeasure(i, i4);
             }
         }
         if (this.A00 == null) {

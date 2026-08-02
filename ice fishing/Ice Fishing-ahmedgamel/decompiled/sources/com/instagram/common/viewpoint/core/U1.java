@@ -7,8 +7,8 @@ public class U1 implements AudienceNetworkAds.InitResult {
     public final String A00;
     public final boolean A01;
 
-    public U1(boolean z3, String str) {
-        this.A01 = z3;
+    public U1(boolean z6, String str) {
+        this.A01 = z6;
         this.A00 = str;
     }
 

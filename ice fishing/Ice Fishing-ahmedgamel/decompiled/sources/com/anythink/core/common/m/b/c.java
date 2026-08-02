@@ -11,68 +11,68 @@ import org.json.JSONObject;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    private int f14500a;
+    private int f15286a;
 
     /* renamed from: b, reason: collision with root package name */
-    private a f14501b;
+    private a f15287b;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private final int[] f14502a;
+        private final int[] f15288a;
 
         /* renamed from: b, reason: collision with root package name */
-        private final long f14503b;
+        private final long f15289b;
 
         /* renamed from: c, reason: collision with root package name */
-        private final b[] f14504c;
+        private final b[] f15290c;
 
         public a(int[] iArr, long j6, b[] bVarArr) {
-            this.f14502a = iArr;
-            this.f14503b = j6;
-            this.f14504c = bVarArr;
+            this.f15288a = iArr;
+            this.f15289b = j6;
+            this.f15290c = bVarArr;
         }
 
         private long c() {
-            return this.f14503b;
+            return this.f15289b;
         }
 
         public final int[] a() {
-            return this.f14502a;
+            return this.f15288a;
         }
 
         public final b[] b() {
-            return this.f14504c;
+            return this.f15290c;
         }
     }
 
     public static class b {
 
         /* renamed from: a, reason: collision with root package name */
-        private final String f14505a;
+        private final String f15291a;
 
         /* renamed from: b, reason: collision with root package name */
-        private final int f14506b;
+        private final int f15292b;
 
         /* renamed from: c, reason: collision with root package name */
-        private final long f14507c;
+        private final long f15293c;
 
         public b(String str, int i, long j6) {
-            this.f14505a = str;
-            this.f14506b = i;
-            this.f14507c = j6;
+            this.f15291a = str;
+            this.f15292b = i;
+            this.f15293c = j6;
         }
 
         public final String a() {
-            return this.f14505a;
+            return this.f15291a;
         }
 
         public final int b() {
-            return this.f14506b;
+            return this.f15292b;
         }
 
         public final long c() {
-            return this.f14507c;
+            return this.f15293c;
         }
     }
 
@@ -85,7 +85,7 @@ public final class c {
             return null;
         }
         c cVar = new c();
-        cVar.f14500a = jSONObject.optInt("net_type", 1);
+        cVar.f15286a = jSONObject.optInt("net_type", 1);
         JSONObject optJSONObject = jSONObject.optJSONObject("net_d");
         if (optJSONObject != null) {
             long optLong = optJSONObject.optLong("s_timeout", 500L);
@@ -99,8 +99,8 @@ public final class c {
             }
             ArrayList arrayList = new ArrayList();
             if (optJSONArray2 != null && optJSONArray2.length() > 0) {
-                for (int i6 = 0; i6 < optJSONArray2.length(); i6++) {
-                    JSONObject optJSONObject2 = optJSONArray2.optJSONObject(i6);
+                for (int i4 = 0; i4 < optJSONArray2.length(); i4++) {
+                    JSONObject optJSONObject2 = optJSONArray2.optJSONObject(i4);
                     if (optJSONObject2 != null) {
                         String optString = optJSONObject2.optString("ip");
                         if (!TextUtils.isEmpty(optString)) {
@@ -110,26 +110,26 @@ public final class c {
                 }
             }
             if (!arrayList.isEmpty()) {
-                cVar.f14501b = new a(iArr, optLong, (b[]) arrayList.toArray(new b[0]));
+                cVar.f15287b = new a(iArr, optLong, (b[]) arrayList.toArray(new b[0]));
             }
         }
         return cVar;
     }
 
     public final int b() {
-        return this.f14500a;
+        return this.f15286a;
     }
 
     public final boolean a(String str) {
         if (TextUtils.isEmpty(str)) {
             return false;
         }
-        a aVar = this.f14501b;
-        boolean z3 = (aVar == null || aVar.b() == null || this.f14501b.b().length <= 0 || this.f14501b.a() == null || this.f14501b.a().length <= 0 || ATSDK.isCnSDK()) ? false : true;
-        if (!z3) {
-            return z3;
+        a aVar = this.f15287b;
+        boolean z6 = (aVar == null || aVar.b() == null || this.f15287b.b().length <= 0 || this.f15287b.a() == null || this.f15287b.a().length <= 0 || ATSDK.isCnSDK()) ? false : true;
+        if (!z6) {
+            return z6;
         }
-        int[] a9 = this.f14501b.a();
+        int[] a9 = this.f15287b.a();
         try {
             int a10 = g.a(str);
             for (int i : a9) {
@@ -143,7 +143,7 @@ public final class c {
     }
 
     public final i[] a() {
-        a aVar = this.f14501b;
+        a aVar = this.f15287b;
         i[] iVarArr = null;
         b[] b9 = aVar != null ? aVar.b() : null;
         if (b9 != null && b9.length != 0) {
@@ -159,10 +159,10 @@ public final class c {
     }
 
     private void a(int i) {
-        this.f14500a = i;
+        this.f15286a = i;
     }
 
     private void a(a aVar) {
-        this.f14501b = aVar;
+        this.f15287b = aVar;
     }
 }

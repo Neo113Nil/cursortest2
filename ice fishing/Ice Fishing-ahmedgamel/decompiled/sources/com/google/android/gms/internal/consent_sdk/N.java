@@ -6,51 +6,51 @@ import java.util.Iterator;
 public final class N extends K {
 
     /* renamed from: A, reason: collision with root package name */
-    public static final Object[] f35571A;
+    public static final Object[] f36340A;
 
     /* renamed from: B, reason: collision with root package name */
-    public static final N f35572B;
+    public static final N f36341B;
 
     /* renamed from: v, reason: collision with root package name */
-    public final transient Object[] f35573v;
+    public final transient Object[] f36342v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final transient int f35574w;
+    public final transient int f36343w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final transient Object[] f35575x;
+    public final transient Object[] f36344x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final transient int f35576y;
+    public final transient int f36345y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final transient int f35577z;
+    public final transient int f36346z;
 
     static {
         Object[] objArr = new Object[0];
-        f35571A = objArr;
-        f35572B = new N(0, 0, 0, objArr, objArr);
+        f36340A = objArr;
+        f36341B = new N(0, 0, 0, objArr, objArr);
     }
 
-    public N(int i, int i6, int i9, Object[] objArr, Object[] objArr2) {
-        this.f35573v = objArr;
-        this.f35574w = i;
-        this.f35575x = objArr2;
-        this.f35576y = i6;
-        this.f35577z = i9;
+    public N(int i, int i4, int i6, Object[] objArr, Object[] objArr2) {
+        this.f36342v = objArr;
+        this.f36343w = i;
+        this.f36344x = objArr2;
+        this.f36345y = i4;
+        this.f36346z = i6;
     }
 
     @Override // com.google.android.gms.internal.consent_sdk.G
     public final int a(Object[] objArr) {
-        Object[] objArr2 = this.f35573v;
-        int i = this.f35577z;
+        Object[] objArr2 = this.f36342v;
+        int i = this.f36346z;
         System.arraycopy(objArr2, 0, objArr, 0, i);
         return i;
     }
 
     @Override // com.google.android.gms.internal.consent_sdk.G
     public final int c() {
-        return this.f35577z;
+        return this.f36346z;
     }
 
     @Override // com.google.android.gms.internal.consent_sdk.G, java.util.AbstractCollection, java.util.Collection
@@ -58,13 +58,13 @@ public final class N extends K {
         if (obj == null) {
             return false;
         }
-        Object[] objArr = this.f35575x;
+        Object[] objArr = this.f36344x;
         if (objArr.length == 0) {
             return false;
         }
         int rotateLeft = (int) (Integer.rotateLeft((int) (obj.hashCode() * (-862048943)), 15) * 461845907);
         while (true) {
-            int i = rotateLeft & this.f35576y;
+            int i = rotateLeft & this.f36345y;
             Object obj2 = objArr[i];
             if (obj2 == null) {
                 return false;
@@ -83,28 +83,28 @@ public final class N extends K {
 
     @Override // com.google.android.gms.internal.consent_sdk.G
     public final Object[] e() {
-        return this.f35573v;
+        return this.f36342v;
     }
 
     @Override // com.google.android.gms.internal.consent_sdk.K, java.util.Collection, java.util.Set
     public final int hashCode() {
-        return this.f35574w;
+        return this.f36343w;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final Iterator iterator() {
-        J j6 = this.f35555u;
+        J j6 = this.f36324u;
         if (j6 == null) {
-            H h9 = J.f35532u;
-            int i = this.f35577z;
-            j6 = i == 0 ? M.f35568x : new M(this.f35573v, i);
-            this.f35555u = j6;
+            H h3 = J.f36301u;
+            int i = this.f36346z;
+            j6 = i == 0 ? M.f36337x : new M(this.f36342v, i);
+            this.f36324u = j6;
         }
         return j6.listIterator(0);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final int size() {
-        return this.f35577z;
+        return this.f36346z;
     }
 }

@@ -18,19 +18,19 @@ import org.json.JSONObject;
 public class FacebookATInitManager extends ATInitMediation {
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f23073b = "FacebookATInitManager";
+    private static final String f23860b = "FacebookATInitManager";
 
     /* renamed from: c, reason: collision with root package name */
-    private static volatile FacebookATInitManager f23074c;
+    private static volatile FacebookATInitManager f23861c;
 
     /* renamed from: a, reason: collision with root package name */
-    List<MediationInitCallback> f23075a;
+    List<MediationInitCallback> f23862a;
 
     /* renamed from: d, reason: collision with root package name */
-    private boolean f23076d = false;
+    private boolean f23863d = false;
 
     /* renamed from: e, reason: collision with root package name */
-    private Object f23077e = new Object();
+    private Object f23864e = new Object();
 
     public interface InitListener {
         void onError(String str);
@@ -42,9 +42,9 @@ public class FacebookATInitManager extends ATInitMediation {
     }
 
     private void a(AudienceNetworkAds.InitResult initResult) {
-        synchronized (this.f23077e) {
+        synchronized (this.f23864e) {
             try {
-                List<MediationInitCallback> list = this.f23075a;
+                List<MediationInitCallback> list = this.f23862a;
                 if (list != null) {
                     for (MediationInitCallback mediationInitCallback : list) {
                         if (initResult.isSuccess()) {
@@ -56,7 +56,7 @@ public class FacebookATInitManager extends ATInitMediation {
                         }
                     }
                 }
-                this.f23076d = false;
+                this.f23863d = false;
             } catch (Throwable th) {
                 throw th;
             }
@@ -64,18 +64,18 @@ public class FacebookATInitManager extends ATInitMediation {
     }
 
     public static FacebookATInitManager getInstance() {
-        if (f23074c == null) {
+        if (f23861c == null) {
             synchronized (FacebookATInitManager.class) {
                 try {
-                    if (f23074c == null) {
-                        f23074c = new FacebookATInitManager();
+                    if (f23861c == null) {
+                        f23861c = new FacebookATInitManager();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f23074c;
+        return f23861c;
     }
 
     @Override // com.anythink.core.api.ATInitMediation
@@ -105,19 +105,19 @@ public class FacebookATInitManager extends ATInitMediation {
     @Override // com.anythink.core.api.ATInitMediation
     public synchronized void initSDK(Context context, Map<String, Object> map, MediationInitCallback mediationInitCallback) {
         try {
-            if (((Boolean) map.get(j.w.f12617d)).booleanValue()) {
+            if (((Boolean) map.get(j.w.f13403d)).booleanValue()) {
                 AdSettings.setDataProcessingOptions(new String[]{"LDU"}, 1, 1000);
             }
         } catch (Throwable unused) {
         }
         try {
-            if (((Boolean) map.get(j.w.f12618e)).booleanValue()) {
+            if (((Boolean) map.get(j.w.f13404e)).booleanValue()) {
                 AdSettings.setMixedAudience(true);
             }
         } catch (Throwable unused2) {
         }
         try {
-            synchronized (this.f23077e) {
+            synchronized (this.f23864e) {
                 try {
                     if (AudienceNetworkAds.isInitialized(context)) {
                         if (mediationInitCallback != null) {
@@ -125,16 +125,16 @@ public class FacebookATInitManager extends ATInitMediation {
                         }
                         return;
                     }
-                    if (this.f23075a == null) {
-                        this.f23075a = new ArrayList();
+                    if (this.f23862a == null) {
+                        this.f23862a = new ArrayList();
                     }
                     if (mediationInitCallback != null) {
-                        this.f23075a.add(mediationInitCallback);
+                        this.f23862a.add(mediationInitCallback);
                     }
-                    if (this.f23076d) {
+                    if (this.f23863d) {
                         return;
                     }
-                    this.f23076d = true;
+                    this.f23863d = true;
                     AudienceNetworkAds.buildInitSettings(context.getApplicationContext()).withInitListener(new AudienceNetworkAds.InitListener() { // from class: com.anythink.network.facebook.FacebookATInitManager.1
                         @Override // com.facebook.ads.AudienceNetworkAds.InitListener
                         public final void onInitialized(AudienceNetworkAds.InitResult initResult) {
@@ -157,12 +157,12 @@ public class FacebookATInitManager extends ATInitMediation {
         }
     }
 
-    public final void a(final Context context, final Map<String, Object> map, final boolean z3, final ATBidRequestInfoListener aTBidRequestInfoListener) {
+    public final void a(final Context context, final Map<String, Object> map, final boolean z6, final ATBidRequestInfoListener aTBidRequestInfoListener) {
         runOnThreadPool(new Runnable() { // from class: com.anythink.network.facebook.FacebookATInitManager.2
             @Override // java.lang.Runnable
             public final void run() {
                 FacebookBidRequestInfo facebookBidRequestInfo = new FacebookBidRequestInfo(context, map);
-                if (z3) {
+                if (z6) {
                     facebookBidRequestInfo.fillBannerData(map);
                 }
                 if (facebookBidRequestInfo.isValid()) {
@@ -182,9 +182,9 @@ public class FacebookATInitManager extends ATInitMediation {
     }
 
     public static /* synthetic */ void a(FacebookATInitManager facebookATInitManager, AudienceNetworkAds.InitResult initResult) {
-        synchronized (facebookATInitManager.f23077e) {
+        synchronized (facebookATInitManager.f23864e) {
             try {
-                List<MediationInitCallback> list = facebookATInitManager.f23075a;
+                List<MediationInitCallback> list = facebookATInitManager.f23862a;
                 if (list != null) {
                     for (MediationInitCallback mediationInitCallback : list) {
                         if (initResult.isSuccess()) {
@@ -196,7 +196,7 @@ public class FacebookATInitManager extends ATInitMediation {
                         }
                     }
                 }
-                facebookATInitManager.f23076d = false;
+                facebookATInitManager.f23863d = false;
             } catch (Throwable th) {
                 throw th;
             }

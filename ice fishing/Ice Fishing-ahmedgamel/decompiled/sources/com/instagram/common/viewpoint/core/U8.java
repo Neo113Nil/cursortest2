@@ -11,20 +11,20 @@ public final class U8 {
     public static byte[] A01;
     public static String[] A02 = {"iAmMZEnTjRyKTNBZ", "vq5cthhr", "805H8tMQ6F09oxi1Jl38UficVRLMtQ", "JBRmxZg7", "Cn5UKxgX5LOr", "xwoZ6hhdKgqxJaNY", "yguqyABz11m3k", "UOBi89mTAaMo"};
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        int i10 = 0;
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             if (A02[5].length() != 16) {
                 throw new RuntimeException();
             }
             A02[0] = "gDribvuqSsGNU0u3";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 70);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 70);
+            i9++;
         }
     }
 
@@ -53,12 +53,12 @@ public final class U8 {
             map.put(A00(41, 3, 111), A00(65, 7, 35));
             map.put(A00(44, 11, 52), t82.A05().A9T());
             map.put(A00(33, 2, 73), t82.A05().A9S());
-            map.put(A00(35, 6, 107), C1263To.A04);
-            C1263To c1263To = new C1263To(t82, str);
-            map.put(A00(15, 7, a.f21728R), c1263To.A06());
-            map.put(A00(8, 7, 61), c1263To.A05());
-            map.put(A00(0, 8, 52), String.valueOf(c1263To.A04()));
-            map.put(A00(28, 5, 71), c1263To.A0A());
+            map.put(A00(35, 6, 107), C1283To.A04);
+            C1283To c1283To = new C1283To(t82, str);
+            map.put(A00(15, 7, a.f22515R), c1283To.A06());
+            map.put(A00(8, 7, 61), c1283To.A05());
+            map.put(A00(0, 8, 52), String.valueOf(c1283To.A04()));
+            map.put(A00(28, 5, 71), c1283To.A0A());
             map.put(A00(55, 10, 72), t82.A09().A02());
         }
     }

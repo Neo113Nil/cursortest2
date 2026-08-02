@@ -26,19 +26,19 @@ import org.json.JSONObject;
 public class AnythinkClickMiniCardView extends AnythinkH5EndCardView {
 
     /* renamed from: A, reason: collision with root package name */
-    private static final float f21470A = 0.7f;
+    private static final float f22257A = 0.7f;
 
     /* renamed from: B, reason: collision with root package name */
-    private boolean f21471B;
+    private boolean f22258B;
 
     public AnythinkClickMiniCardView(Context context) {
         super(context);
-        this.f21471B = false;
+        this.f22258B = false;
     }
 
     @Override // com.anythink.expressad.video.module.AnythinkH5EndCardView
     public final String a() {
-        d dVar = this.f21442b;
+        d dVar = this.f22229b;
         if (dVar != null) {
             d.c N8 = dVar.N();
             r1 = N8 != null ? N8.d() : null;
@@ -62,17 +62,17 @@ public class AnythinkClickMiniCardView extends AnythinkH5EndCardView {
     @Override // com.anythink.expressad.video.module.AnythinkH5EndCardView
     public final void e() {
         super.e();
-        if (this.f21446f) {
+        if (this.f22233f) {
             setBackgroundResource(findColor("anythink_reward_minicard_bg"));
-            a(this.f21536p);
+            a(this.f22323p);
             setClickable(true);
         }
     }
 
     @Override // com.anythink.expressad.video.module.AnythinkH5EndCardView, com.anythink.expressad.video.module.AnythinkBaseView
     public void onSelfConfigurationChanged(Configuration configuration) {
-        if (this.f21446f) {
-            a(this.f21536p);
+        if (this.f22233f) {
+            a(this.f22323p);
         }
         super.onSelfConfigurationChanged(configuration);
     }
@@ -83,30 +83,30 @@ public class AnythinkClickMiniCardView extends AnythinkH5EndCardView {
         setCloseVisible(0);
     }
 
-    public void resizeMiniCard(int i, int i6) {
-        View findViewById = ((Activity) this.f21441a).getWindow().findViewById(R.id.content);
+    public void resizeMiniCard(int i, int i4) {
+        View findViewById = ((Activity) this.f22228a).getWindow().findViewById(R.id.content);
         int width = findViewById.getWidth();
         int height = findViewById.getHeight();
-        if (i <= 0 || i6 <= 0 || i > width || i6 > height) {
+        if (i <= 0 || i4 <= 0 || i > width || i4 > height) {
             return;
         }
-        ViewGroup.LayoutParams layoutParams = this.f21536p.getLayoutParams();
+        ViewGroup.LayoutParams layoutParams = this.f22323p.getLayoutParams();
         layoutParams.width = i;
-        layoutParams.height = i6;
-        this.f21536p.setLayoutParams(layoutParams);
+        layoutParams.height = i4;
+        this.f22323p.setLayoutParams(layoutParams);
     }
 
-    public void setAnythinkClickMiniCardViewClickable(boolean z3) {
-        setClickable(z3);
+    public void setAnythinkClickMiniCardViewClickable(boolean z6) {
+        setClickable(z6);
     }
 
     public void setAnythinkClickMiniCardViewTransparent() {
         setBackgroundColor(0);
     }
 
-    public void setMiniCardLocation(int i, int i6, int i9, int i10) {
-        this.f21471B = true;
-        resizeMiniCard(i9, i10);
+    public void setMiniCardLocation(int i, int i4, int i6, int i9) {
+        this.f22258B = true;
+        resizeMiniCard(i6, i9);
     }
 
     public void setRadius(int i) {
@@ -114,14 +114,14 @@ public class AnythinkClickMiniCardView extends AnythinkH5EndCardView {
             GradientDrawable gradientDrawable = new GradientDrawable();
             gradientDrawable.setCornerRadius(v.b(getContext(), i));
             gradientDrawable.setColor(-1);
-            this.f21539s.setBackground(gradientDrawable);
-            this.f21539s.setClipToOutline(true);
+            this.f22326s.setBackground(gradientDrawable);
+            this.f22326s.setClipToOutline(true);
         }
     }
 
     @Override // com.anythink.expressad.video.module.AnythinkH5EndCardView, com.anythink.expressad.video.signal.h
     public void webviewshow() {
-        WindVaneWebView windVaneWebView = this.f21539s;
+        WindVaneWebView windVaneWebView = this.f22326s;
         if (windVaneWebView != null) {
             windVaneWebView.post(new Runnable() { // from class: com.anythink.expressad.video.module.AnythinkClickMiniCardView.1
                 @Override // java.lang.Runnable
@@ -129,7 +129,7 @@ public class AnythinkClickMiniCardView extends AnythinkH5EndCardView {
                     String str = "";
                     try {
                         try {
-                            AnythinkClickMiniCardView.this.f21539s.getLocationOnScreen(new int[2]);
+                            AnythinkClickMiniCardView.this.f22326s.getLocationOnScreen(new int[2]);
                             JSONObject jSONObject = new JSONObject();
                             jSONObject.put("startX", v.a(t.b().g(), r2[0]));
                             jSONObject.put("startY", v.a(t.b().g(), r2[1]));
@@ -139,7 +139,7 @@ public class AnythinkClickMiniCardView extends AnythinkH5EndCardView {
                         }
                         String encodeToString = Base64.encodeToString(str.toString().getBytes(), 2);
                         h.a();
-                        a.a((WebView) AnythinkClickMiniCardView.this.f21539s, "webviewshow", encodeToString);
+                        a.a((WebView) AnythinkClickMiniCardView.this.f22326s, "webviewshow", encodeToString);
                     } catch (Exception e9) {
                         e9.printStackTrace();
                     }
@@ -150,17 +150,17 @@ public class AnythinkClickMiniCardView extends AnythinkH5EndCardView {
 
     public AnythinkClickMiniCardView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f21471B = false;
+        this.f22258B = false;
     }
 
     private void a(View view) {
-        int f3 = v.f(this.f21441a);
-        int e9 = v.e(this.f21441a);
-        int i = (int) ((f3 * f21470A) + 0.5f);
-        int i6 = (int) ((e9 * f21470A) + 0.5f);
+        int f2 = v.f(this.f22228a);
+        int e9 = v.e(this.f22228a);
+        int i = (int) ((f2 * f22257A) + 0.5f);
+        int i4 = (int) ((e9 * f22257A) + 0.5f);
         ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
         layoutParams.width = i;
-        layoutParams.height = i6;
+        layoutParams.height = i4;
         view.setLayoutParams(layoutParams);
     }
 }

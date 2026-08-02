@@ -4,7 +4,7 @@ import android.widget.EdgeEffect;
 
 /* loaded from: classes.dex */
 public abstract class d {
-    public static void a(EdgeEffect edgeEffect, float f3, float f9) {
-        edgeEffect.onPull(f3, f9);
+    public static void a(EdgeEffect edgeEffect, float f2, float f9) {
+        edgeEffect.onPull(f2, f9);
     }
 }

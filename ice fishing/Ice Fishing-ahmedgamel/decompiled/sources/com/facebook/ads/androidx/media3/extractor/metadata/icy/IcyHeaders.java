@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.anythink.core.common.s.a.c;
 import com.facebook.ads.androidx.media3.common.Metadata;
-import com.instagram.common.viewpoint.core.C2400qI;
+import com.instagram.common.viewpoint.core.C2420qI;
 import com.instagram.common.viewpoint.core.C3E;
 import com.instagram.common.viewpoint.core.C5C;
 import com.instagram.common.viewpoint.core.I5;
@@ -22,16 +22,16 @@ public final class IcyHeaders implements Metadata.Entry {
     public final String A04;
     public final boolean A05;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A06, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 115);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A06, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 115);
         }
         return new String(copyOfRange);
     }
 
     public static void A01() {
-        A06 = new byte[]{93, 83, 95, 29, 22, 11, 13, 30, 11, 26, 66, 110, 96, 108, 43, 41, 34, 62, 41, 113, 110, 103, 107, 38, 46, c.f16318c, 42, 47, 42, c.f16318c, 42, 2, 37, c.f16318c, 46, 57, 61, 42, 39, 118, 4, 46, 52, 5, 40, 44, 41, 40, c.f16318c, 62, 119, 109, 35, 44, 32, 40, 112, 111};
+        A06 = new byte[]{93, 83, 95, 29, 22, 11, 13, 30, 11, 26, 66, 110, 96, 108, 43, 41, 34, 62, 41, 113, 110, 103, 107, 38, 46, c.f17105c, 42, 47, 42, c.f17105c, 42, 2, 37, c.f17105c, 46, 57, 61, 42, 39, 118, 4, 46, 52, 5, 40, 44, 41, 40, c.f17105c, 62, 119, 109, 35, 44, 32, 40, 112, 111};
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Metadata.Entry
@@ -40,7 +40,7 @@ public final class IcyHeaders implements Metadata.Entry {
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Metadata.Entry
-    public final /* synthetic */ C2400qI A9b() {
+    public final /* synthetic */ C2420qI A9b() {
         return C3E.A00(this);
     }
 

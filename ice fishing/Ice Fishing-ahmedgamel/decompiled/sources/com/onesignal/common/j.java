@@ -32,7 +32,7 @@ public final class j {
     public final String hash(String value) {
         kotlin.jvm.internal.h.e(value, "value");
         MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
-        byte[] bytes = value.getBytes(Q7.a.f2664a);
+        byte[] bytes = value.getBytes(Q7.a.f2701a);
         kotlin.jvm.internal.h.d(bytes, "getBytes(...)");
         byte[] digest = messageDigest.digest(bytes);
         kotlin.jvm.internal.h.b(digest);
@@ -59,6 +59,6 @@ public final class j {
         kotlin.jvm.internal.h.e(value, "value");
         Q7.i iVar = SHA256_HEX_REGEX;
         iVar.getClass();
-        return iVar.f2685n.matcher(value).matches();
+        return iVar.f2722n.matcher(value).matches();
     }
 }

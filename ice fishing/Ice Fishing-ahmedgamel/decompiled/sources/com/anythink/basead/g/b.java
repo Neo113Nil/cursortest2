@@ -10,15 +10,15 @@ import java.util.Map;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f8969a = "b";
+    public static final String f9755a = "b";
 
     /* renamed from: b, reason: collision with root package name */
-    private Map<String, AbstractC0042b> f8970b;
+    private Map<String, AbstractC0042b> f9756b;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private static final b f8971a = new b(0);
+        private static final b f9757a = new b(0);
 
         private a() {
         }
@@ -28,13 +28,13 @@ public class b {
     public static abstract class AbstractC0042b implements Serializable {
 
         /* renamed from: a, reason: collision with root package name */
-        private Map<String, Object> f8972a;
+        private Map<String, Object> f9758a;
 
         /* renamed from: b, reason: collision with root package name */
-        private int f8973b;
+        private int f9759b;
 
         /* renamed from: c, reason: collision with root package name */
-        private volatile boolean f8974c = false;
+        private volatile boolean f9760c = false;
 
         public AbstractC0042b() {
         }
@@ -45,7 +45,7 @@ public class b {
 
         public abstract void a(j jVar);
 
-        public abstract void a(boolean z3);
+        public abstract void a(boolean z6);
 
         public abstract void b();
 
@@ -54,30 +54,30 @@ public class b {
         public abstract void c();
 
         public void d() {
-            if (this.f8974c) {
+            if (this.f9760c) {
                 return;
             }
-            this.f8974c = true;
-            Map<String, Object> map = this.f8972a;
+            this.f9760c = true;
+            Map<String, Object> map = this.f9758a;
             if (map != null) {
-                map.put(b.C0074b.f12108a, Integer.valueOf(this.f8973b));
+                map.put(b.C0074b.f12894a, Integer.valueOf(this.f9759b));
             }
         }
 
         public final int e() {
-            return this.f8973b;
+            return this.f9759b;
         }
 
         public final void a(int i) {
-            this.f8973b = i;
+            this.f9759b = i;
         }
 
         public AbstractC0042b(Map<String, Object> map, final String str) {
-            this.f8972a = map;
+            this.f9758a = map;
             com.anythink.core.common.u.a.a().a(str, new a.InterfaceC0099a() { // from class: com.anythink.basead.g.b.b.1
                 @Override // com.anythink.core.common.u.a.InterfaceC0099a
                 public final void a(String str2) {
-                    if (!str.equals(str2) || AbstractC0042b.this.f8974c) {
+                    if (!str.equals(str2) || AbstractC0042b.this.f9760c) {
                         return;
                     }
                     AbstractC0042b.this.a(3);
@@ -92,22 +92,22 @@ public class b {
     }
 
     public static b a() {
-        return a.f8971a;
+        return a.f9757a;
     }
 
     public final void b(String str) {
-        this.f8970b.remove(str);
+        this.f9756b.remove(str);
     }
 
     private b() {
-        this.f8970b = new HashMap(2);
+        this.f9756b = new HashMap(2);
     }
 
     public final void a(String str, AbstractC0042b abstractC0042b) {
-        this.f8970b.put(str, abstractC0042b);
+        this.f9756b.put(str, abstractC0042b);
     }
 
     public final AbstractC0042b a(String str) {
-        return this.f8970b.get(str);
+        return this.f9756b.get(str);
     }
 }

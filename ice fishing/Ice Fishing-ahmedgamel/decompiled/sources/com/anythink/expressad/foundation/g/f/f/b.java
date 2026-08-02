@@ -8,33 +8,33 @@ import java.util.List;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private final int f19316a;
+    private final int f20103a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final List<com.anythink.expressad.foundation.g.f.c.c> f19317b;
+    private final List<com.anythink.expressad.foundation.g.f.c.c> f20104b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final InputStream f19318c;
+    private final InputStream f20105c;
 
     public b(int i, List<com.anythink.expressad.foundation.g.f.c.c> list) {
         this(i, list, null);
     }
 
     public final int a() {
-        return this.f19316a;
+        return this.f20103a;
     }
 
     public final List<com.anythink.expressad.foundation.g.f.c.c> b() {
-        return Collections.unmodifiableList(this.f19317b);
+        return Collections.unmodifiableList(this.f20104b);
     }
 
     public final InputStream c() {
-        return this.f19318c;
+        return this.f20105c;
     }
 
     public b(int i, List<com.anythink.expressad.foundation.g.f.c.c> list, InputStream inputStream) {
-        this.f19316a = i;
-        this.f19317b = list;
-        this.f19318c = inputStream;
+        this.f20103a = i;
+        this.f20104b = list;
+        this.f20105c = inputStream;
     }
 }

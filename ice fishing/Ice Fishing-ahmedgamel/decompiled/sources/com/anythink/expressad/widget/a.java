@@ -7,18 +7,18 @@ import java.util.Calendar;
 public abstract class a implements View.OnClickListener {
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f22494d = 2000;
+    public static final int f23281d = 2000;
 
     /* renamed from: a, reason: collision with root package name */
-    private long f22495a = 0;
+    private long f23282a = 0;
 
     public abstract void a(View view);
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         long timeInMillis = Calendar.getInstance().getTimeInMillis();
-        if (timeInMillis - this.f22495a > com.anythink.basead.exoplayer.i.a.f7883f) {
-            this.f22495a = timeInMillis;
+        if (timeInMillis - this.f23282a > com.anythink.basead.exoplayer.i.a.f8669f) {
+            this.f23282a = timeInMillis;
             a(view);
         }
     }

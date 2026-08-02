@@ -7,16 +7,16 @@ import com.anythink.basead.webtemplet.h;
 public class WTCommonJSBridgePlugin extends com.anythink.basead.webtemplet.d implements b {
 
     /* renamed from: c, reason: collision with root package name */
-    private final String f11445c = getClass().getSimpleName();
+    private final String f12231c = getClass().getSimpleName();
 
     /* renamed from: d, reason: collision with root package name */
-    private b f11446d;
+    private b f12232d;
 
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void controlShakeView(Object obj, String str) {
         h.f(str);
         System.currentTimeMillis();
-        b bVar = this.f11446d;
+        b bVar = this.f12232d;
         if (bVar != null) {
             bVar.controlShakeView(obj, h.f(str));
         }
@@ -25,7 +25,7 @@ public class WTCommonJSBridgePlugin extends com.anythink.basead.webtemplet.d imp
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void h5ShowException(Object obj, String str) {
         h.f(str);
-        b bVar = this.f11446d;
+        b bVar = this.f12232d;
         if (bVar != null) {
             bVar.h5ShowException(obj, h.f(str));
         }
@@ -34,7 +34,7 @@ public class WTCommonJSBridgePlugin extends com.anythink.basead.webtemplet.d imp
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void initSuccess(Object obj, String str) {
         h.f(str);
-        b bVar = this.f11446d;
+        b bVar = this.f12232d;
         if (bVar != null) {
             bVar.initSuccess(obj, h.f(str));
         }
@@ -47,7 +47,7 @@ public class WTCommonJSBridgePlugin extends com.anythink.basead.webtemplet.d imp
             if (wTWebView.getJsCommunicationObject() == null || !(wTWebView.getJsCommunicationObject() instanceof b)) {
                 return;
             }
-            this.f11446d = (b) wTWebView.getJsCommunicationObject();
+            this.f12232d = (b) wTWebView.getJsCommunicationObject();
         } catch (Throwable th) {
             th.getMessage();
         }
@@ -56,7 +56,7 @@ public class WTCommonJSBridgePlugin extends com.anythink.basead.webtemplet.d imp
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void notifyClick(Object obj, String str) {
         h.f(str);
-        b bVar = this.f11446d;
+        b bVar = this.f12232d;
         if (bVar != null) {
             bVar.notifyClick(obj, h.f(str));
         }
@@ -65,7 +65,7 @@ public class WTCommonJSBridgePlugin extends com.anythink.basead.webtemplet.d imp
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void notifyClose(Object obj, String str) {
         h.f(str);
-        b bVar = this.f11446d;
+        b bVar = this.f12232d;
         if (bVar != null) {
             bVar.notifyClose(obj, h.f(str));
         }
@@ -75,7 +75,7 @@ public class WTCommonJSBridgePlugin extends com.anythink.basead.webtemplet.d imp
     public void notifyReward(Object obj, String str) {
         h.f(str);
         System.currentTimeMillis();
-        b bVar = this.f11446d;
+        b bVar = this.f12232d;
         if (bVar != null) {
             bVar.notifyReward(obj, h.f(str));
         }
@@ -84,7 +84,7 @@ public class WTCommonJSBridgePlugin extends com.anythink.basead.webtemplet.d imp
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void openInWebView(Object obj, String str) {
         h.f(str);
-        b bVar = this.f11446d;
+        b bVar = this.f12232d;
         if (bVar != null) {
             bVar.openInWebView(obj, h.f(str));
         }
@@ -93,7 +93,7 @@ public class WTCommonJSBridgePlugin extends com.anythink.basead.webtemplet.d imp
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void playerViewGetProgress(Object obj, String str) {
         h.f(str);
-        b bVar = this.f11446d;
+        b bVar = this.f12232d;
         if (bVar != null) {
             bVar.playerViewGetProgress(obj, h.f(str));
         }
@@ -102,7 +102,7 @@ public class WTCommonJSBridgePlugin extends com.anythink.basead.webtemplet.d imp
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void playerViewInit(Object obj, String str) {
         h.f(str);
-        b bVar = this.f11446d;
+        b bVar = this.f12232d;
         if (bVar != null) {
             bVar.playerViewInit(obj, h.f(str));
         }
@@ -111,7 +111,7 @@ public class WTCommonJSBridgePlugin extends com.anythink.basead.webtemplet.d imp
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void playerViewMute(Object obj, String str) {
         h.f(str);
-        b bVar = this.f11446d;
+        b bVar = this.f12232d;
         if (bVar != null) {
             bVar.playerViewMute(obj, h.f(str));
         }
@@ -120,7 +120,7 @@ public class WTCommonJSBridgePlugin extends com.anythink.basead.webtemplet.d imp
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void playerViewPauseOrResumePlay(Object obj, String str) {
         h.f(str);
-        b bVar = this.f11446d;
+        b bVar = this.f12232d;
         if (bVar != null) {
             bVar.playerViewPauseOrResumePlay(obj, h.f(str));
         }
@@ -129,7 +129,7 @@ public class WTCommonJSBridgePlugin extends com.anythink.basead.webtemplet.d imp
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void playerViewRelayout(Object obj, String str) {
         h.f(str);
-        b bVar = this.f11446d;
+        b bVar = this.f12232d;
         if (bVar != null) {
             bVar.playerViewRelayout(obj, h.f(str));
         }
@@ -138,7 +138,7 @@ public class WTCommonJSBridgePlugin extends com.anythink.basead.webtemplet.d imp
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void playerViewRemove(Object obj, String str) {
         h.f(str);
-        b bVar = this.f11446d;
+        b bVar = this.f12232d;
         if (bVar != null) {
             bVar.playerViewRemove(obj, h.f(str));
         }
@@ -147,7 +147,7 @@ public class WTCommonJSBridgePlugin extends com.anythink.basead.webtemplet.d imp
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void renderSuccess(Object obj, String str) {
         h.f(str);
-        b bVar = this.f11446d;
+        b bVar = this.f12232d;
         if (bVar != null) {
             bVar.renderSuccess(obj, h.f(str));
         }
@@ -156,7 +156,7 @@ public class WTCommonJSBridgePlugin extends com.anythink.basead.webtemplet.d imp
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void sendEventDA(Object obj, String str) {
         h.f(str);
-        b bVar = this.f11446d;
+        b bVar = this.f12232d;
         if (bVar != null) {
             bVar.sendEventDA(obj, h.f(str));
         }
@@ -165,7 +165,7 @@ public class WTCommonJSBridgePlugin extends com.anythink.basead.webtemplet.d imp
     @Override // com.anythink.basead.webtemplet.adformat.b
     public void showFeedbackDialog(Object obj, String str) {
         h.f(str);
-        b bVar = this.f11446d;
+        b bVar = this.f12232d;
         if (bVar != null) {
             bVar.showFeedbackDialog(obj, h.f(str));
         }

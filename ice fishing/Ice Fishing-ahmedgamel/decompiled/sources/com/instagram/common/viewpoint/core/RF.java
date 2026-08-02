@@ -21,21 +21,21 @@ public abstract class RF {
         A03();
     }
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 20);
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 20);
         }
         return new String(copyOfRange);
     }
 
     public static void A03() {
-        A07 = new byte[]{106, 77, 85, 66, 79, 74, 71, 3, 87, 66, 81, 68, 70, 87, 3, 83, 76, 80, 74, 87, 74, 76, 77, 5, 52, 38, 38, 48, 49, 117, 58, 35, 48, 39, 117, 33, 52, 39, 50, 48, 33, 117, 37, 58, 38, 60, 33, 60, 58, 59, 117, 34, 61, 60, 57, 48, 117, 38, 56, 58, 58, 33, 61, 117, 38, 54, 39, 58, 57, 57, 60, 59, 50, 123, 123, 76, 74, 80, 74, 69, 76, 91, Byte.MAX_VALUE, c.f16317b, 76, 94};
+        A07 = new byte[]{106, 77, 85, 66, 79, 74, 71, 3, 87, 66, 81, 68, 70, 87, 3, 83, 76, 80, 74, 87, 74, 76, 77, 5, 52, 38, 38, 48, 49, 117, 58, 35, 48, 39, 117, 33, 52, 39, 50, 48, 33, 117, 37, 58, 38, 60, 33, 60, 58, 59, 117, 34, 61, 60, 57, 48, 117, 38, 56, 58, 58, 33, 61, 117, 38, 54, 39, 58, 57, 57, 60, 59, 50, 123, 123, 76, 74, 80, 74, 69, 76, 91, Byte.MAX_VALUE, c.f17104b, 76, 94};
     }
 
     public abstract void A0G();
 
-    public abstract void A0H(int i, int i6, RH rh, RD rd);
+    public abstract void A0H(int i, int i4, RH rh, RD rd);
 
     public abstract void A0I(View view, RH rh, RD rd);
 
@@ -48,7 +48,7 @@ public abstract class RF {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void A04(int i, int i6) {
+    public void A04(int i, int i4) {
         C7M c7m = this.A03;
         if (!this.A05 || this.A00 == -1 || c7m == null) {
             A09();
@@ -65,7 +65,7 @@ public abstract class RF {
             }
         }
         if (this.A05) {
-            A0H(i, i6, c7m.A0s, this.A06);
+            A0H(i, i4, c7m.A0s, this.A06);
             boolean hadJumpTarget = this.A06.A06();
             this.A06.A05(c7m);
             if (hadJumpTarget) {

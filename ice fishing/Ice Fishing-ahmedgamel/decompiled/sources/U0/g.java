@@ -6,10 +6,10 @@ public final class g extends t8.g {
     public final boolean b(i iVar, d dVar, d dVar2) {
         synchronized (iVar) {
             try {
-                if (iVar.f3160u != dVar) {
+                if (iVar.f3277u != dVar) {
                     return false;
                 }
-                iVar.f3160u = dVar2;
+                iVar.f3277u = dVar2;
                 return true;
             } catch (Throwable th) {
                 throw th;
@@ -21,10 +21,10 @@ public final class g extends t8.g {
     public final boolean c(i iVar, Object obj, Object obj2) {
         synchronized (iVar) {
             try {
-                if (iVar.f3159n != obj) {
+                if (iVar.f3276n != obj) {
                     return false;
                 }
-                iVar.f3159n = obj2;
+                iVar.f3276n = obj2;
                 return true;
             } catch (Throwable th) {
                 throw th;
@@ -36,10 +36,10 @@ public final class g extends t8.g {
     public final boolean d(i iVar, h hVar, h hVar2) {
         synchronized (iVar) {
             try {
-                if (iVar.f3161v != hVar) {
+                if (iVar.f3278v != hVar) {
                     return false;
                 }
-                iVar.f3161v = hVar2;
+                iVar.f3278v = hVar2;
                 return true;
             } catch (Throwable th) {
                 throw th;
@@ -48,12 +48,12 @@ public final class g extends t8.g {
     }
 
     @Override // t8.g
-    public final void v(h hVar, h hVar2) {
-        hVar.f3154b = hVar2;
+    public final void o(h hVar, h hVar2) {
+        hVar.f3271b = hVar2;
     }
 
     @Override // t8.g
-    public final void w(h hVar, Thread thread) {
-        hVar.f3153a = thread;
+    public final void p(h hVar, Thread thread) {
+        hVar.f3270a = thread;
     }
 }

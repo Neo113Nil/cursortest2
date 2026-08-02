@@ -15,19 +15,19 @@ import java.util.Map;
 public final class l implements i {
 
     /* renamed from: b, reason: collision with root package name */
-    public static final l f8093b = new l(Collections.EMPTY_MAP);
+    public static final l f8879b = new l(Collections.EMPTY_MAP);
 
     /* renamed from: c, reason: collision with root package name */
-    private static final int f8094c = 10485760;
+    private static final int f8880c = 10485760;
 
     /* renamed from: d, reason: collision with root package name */
-    private int f8095d;
+    private int f8881d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final Map<String, byte[]> f8096e;
+    private final Map<String, byte[]> f8882e;
 
     private l(Map<String, byte[]> map) {
-        this.f8096e = Collections.unmodifiableMap(map);
+        this.f8882e = Collections.unmodifiableMap(map);
     }
 
     public static l a(DataInputStream dataInputStream) {
@@ -36,7 +36,7 @@ public final class l implements i {
         for (int i = 0; i < readInt; i++) {
             String readUTF = dataInputStream.readUTF();
             int readInt2 = dataInputStream.readInt();
-            if (readInt2 < 0 || readInt2 > f8094c) {
+            if (readInt2 < 0 || readInt2 > f8880c) {
                 throw new IOException("Invalid value size: ".concat(String.valueOf(readInt2)));
             }
             byte[] bArr = new byte[readInt2];
@@ -48,7 +48,7 @@ public final class l implements i {
 
     @Override // com.anythink.basead.exoplayer.j.a.i
     public final boolean b(String str) {
-        return this.f8096e.containsKey(str);
+        return this.f8882e.containsKey(str);
     }
 
     public final boolean equals(Object obj) {
@@ -58,30 +58,30 @@ public final class l implements i {
         if (obj == null || l.class != obj.getClass()) {
             return false;
         }
-        return a(((l) obj).f8096e);
+        return a(((l) obj).f8882e);
     }
 
     public final int hashCode() {
-        if (this.f8095d == 0) {
+        if (this.f8881d == 0) {
             int i = 0;
-            for (Map.Entry<String, byte[]> entry : this.f8096e.entrySet()) {
+            for (Map.Entry<String, byte[]> entry : this.f8882e.entrySet()) {
                 i += Arrays.hashCode(entry.getValue()) ^ entry.getKey().hashCode();
             }
-            this.f8095d = i;
+            this.f8881d = i;
         }
-        return this.f8095d;
+        return this.f8881d;
     }
 
     public final l a(k kVar) {
-        HashMap hashMap = new HashMap(this.f8096e);
+        HashMap hashMap = new HashMap(this.f8882e);
         a((HashMap<String, byte[]>) hashMap, kVar.a());
         a((HashMap<String, byte[]>) hashMap, kVar.b());
         return a((Map<String, byte[]>) hashMap) ? this : new l(hashMap);
     }
 
     public final void a(DataOutputStream dataOutputStream) {
-        dataOutputStream.writeInt(this.f8096e.size());
-        for (Map.Entry<String, byte[]> entry : this.f8096e.entrySet()) {
+        dataOutputStream.writeInt(this.f8882e.size());
+        for (Map.Entry<String, byte[]> entry : this.f8882e.entrySet()) {
             dataOutputStream.writeUTF(entry.getKey());
             byte[] value = entry.getValue();
             dataOutputStream.writeInt(value.length);
@@ -91,31 +91,31 @@ public final class l implements i {
 
     @Override // com.anythink.basead.exoplayer.j.a.i
     public final byte[] a(String str, byte[] bArr) {
-        if (!this.f8096e.containsKey(str)) {
+        if (!this.f8882e.containsKey(str)) {
             return bArr;
         }
-        byte[] bArr2 = this.f8096e.get(str);
+        byte[] bArr2 = this.f8882e.get(str);
         return Arrays.copyOf(bArr2, bArr2.length);
     }
 
     @Override // com.anythink.basead.exoplayer.j.a.i
     public final String a(String str, String str2) {
-        return this.f8096e.containsKey(str) ? new String(this.f8096e.get(str), Charset.forName("UTF-8")) : str2;
+        return this.f8882e.containsKey(str) ? new String(this.f8882e.get(str), Charset.forName("UTF-8")) : str2;
     }
 
     @Override // com.anythink.basead.exoplayer.j.a.i
     public final long a(String str) {
-        if (this.f8096e.containsKey(str)) {
-            return ByteBuffer.wrap(this.f8096e.get(str)).getLong();
+        if (this.f8882e.containsKey(str)) {
+            return ByteBuffer.wrap(this.f8882e.get(str)).getLong();
         }
         return -1L;
     }
 
     private boolean a(Map<String, byte[]> map) {
-        if (this.f8096e.size() != map.size()) {
+        if (this.f8882e.size() != map.size()) {
             return false;
         }
-        for (Map.Entry<String, byte[]> entry : this.f8096e.entrySet()) {
+        for (Map.Entry<String, byte[]> entry : this.f8882e.entrySet()) {
             if (!Arrays.equals(entry.getValue(), map.get(entry.getKey()))) {
                 return false;
             }
@@ -149,10 +149,10 @@ public final class l implements i {
             } else {
                 throw new IllegalArgumentException();
             }
-            if (bArr.length <= f8094c) {
+            if (bArr.length <= f8880c) {
                 hashMap.put(str, bArr);
             } else {
-                throw new IllegalArgumentException(String.format("The size of %s (%d) is greater than maximum allowed: %d", str, Integer.valueOf(bArr.length), Integer.valueOf(f8094c)));
+                throw new IllegalArgumentException(String.format("The size of %s (%d) is greater than maximum allowed: %d", str, Integer.valueOf(bArr.length), Integer.valueOf(f8880c)));
             }
         }
     }

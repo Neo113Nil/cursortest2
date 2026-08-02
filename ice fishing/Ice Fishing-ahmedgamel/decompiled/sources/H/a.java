@@ -26,12 +26,12 @@ public abstract class a {
         drawable.inflate(resources, xmlPullParser, attributeSet, theme);
     }
 
-    public static void e(Drawable drawable, float f3, float f9) {
-        drawable.setHotspot(f3, f9);
+    public static void e(Drawable drawable, float f2, float f9) {
+        drawable.setHotspot(f2, f9);
     }
 
-    public static void f(Drawable drawable, int i, int i6, int i9, int i10) {
-        drawable.setHotspotBounds(i, i6, i9, i10);
+    public static void f(Drawable drawable, int i, int i4, int i6, int i9) {
+        drawable.setHotspotBounds(i, i4, i6, i9);
     }
 
     public static void g(Drawable drawable, int i) {

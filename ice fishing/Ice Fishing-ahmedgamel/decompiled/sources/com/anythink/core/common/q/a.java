@@ -16,28 +16,28 @@ import javax.crypto.Cipher;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f15990a = "UTF-8";
+    private static final String f16777a = "UTF-8";
 
     /* renamed from: b, reason: collision with root package name */
-    private static Map<Character, Character> f15991b;
+    private static Map<Character, Character> f16778b;
 
     /* renamed from: c, reason: collision with root package name */
-    private static char[] f15992c = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '+', '/'};
+    private static char[] f16779c = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '+', '/'};
 
     /* renamed from: d, reason: collision with root package name */
-    private static char[] f15993d = {'5', 'P', 'V', 'u', '3', 'J', 'j', 'l', 'e', 'Q', 'b', 'H', '9', 'A', 'v', 'h', 't', 's', 'g', 'W', 'I', 'C', 'U', 'i', 'F', '2', 'a', 'd', 'M', '8', 'D', 'y', 'Z', 'O', 'N', 'k', '/', '4', 'R', '7', '0', 'f', 'n', '+', 'z', 'G', 'Y', 'L', 'X', 'p', 'm', '1', 'E', 'K', 'S', 'T', 'o', 'x', '6', 'q', 'w', 'r', 'c', 'B'};
+    private static char[] f16780d = {'5', 'P', 'V', 'u', '3', 'J', 'j', 'l', 'e', 'Q', 'b', 'H', '9', 'A', 'v', 'h', 't', 's', 'g', 'W', 'I', 'C', 'U', 'i', 'F', '2', 'a', 'd', 'M', '8', 'D', 'y', 'Z', 'O', 'N', 'k', '/', '4', 'R', '7', '0', 'f', 'n', '+', 'z', 'G', 'Y', 'L', 'X', 'p', 'm', '1', 'E', 'K', 'S', 'T', 'o', 'x', '6', 'q', 'w', 'r', 'c', 'B'};
 
     /* renamed from: e, reason: collision with root package name */
-    private static byte[] f15994e = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 62, -1, -1, -1, com.anythink.core.common.s.a.c.f16318c, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, -1, -1, -1, -1, -1, -1, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, -1, -1, -1, -1, -1, -1, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, -1, -1, -1, -1, -1};
+    private static byte[] f16781e = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 62, -1, -1, -1, com.anythink.core.common.s.a.c.f17105c, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, -1, -1, -1, -1, -1, -1, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, -1, -1, -1, -1, -1, -1, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, -1, -1, -1, -1, -1};
 
     /* renamed from: f, reason: collision with root package name */
-    private static String f15995f;
+    private static String f16782f;
 
     /* renamed from: g, reason: collision with root package name */
-    private static String f15996g;
+    private static String f16783g;
 
     /* renamed from: h, reason: collision with root package name */
-    private static String f15997h;
+    private static String f16784h;
 
     public static b a(String str, String str2) {
         return c(str, str2);
@@ -46,73 +46,73 @@ public final class a {
     private static byte[] b(String str) {
         int i;
         byte b9;
-        int i6;
+        int i4;
         byte b10;
-        int i9;
+        int i6;
         byte b11;
-        int i10;
+        int i9;
         byte b12;
         byte[] bytes = str.getBytes();
         int length = bytes.length;
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(length);
-        int i11 = 0;
-        while (i11 < length) {
+        int i10 = 0;
+        while (i10 < length) {
             while (true) {
-                i = i11 + 1;
-                b9 = f15994e[bytes[i11]];
+                i = i10 + 1;
+                b9 = f16781e[bytes[i10]];
                 if (i >= length || b9 != -1) {
                     break;
                 }
-                i11 = i;
+                i10 = i;
             }
             if (b9 == -1) {
                 break;
             }
             while (true) {
-                i6 = i + 1;
-                b10 = f15994e[bytes[i]];
-                if (i6 >= length || b10 != -1) {
+                i4 = i + 1;
+                b10 = f16781e[bytes[i]];
+                if (i4 >= length || b10 != -1) {
                     break;
                 }
-                i = i6;
+                i = i4;
             }
             if (b10 == -1) {
                 break;
             }
             byteArrayOutputStream.write((b9 << 2) | ((b10 & 48) >>> 4));
             while (true) {
-                i9 = i6 + 1;
-                byte b13 = bytes[i6];
+                i6 = i4 + 1;
+                byte b13 = bytes[i4];
                 if (b13 == 61) {
                     return byteArrayOutputStream.toByteArray();
                 }
-                b11 = f15994e[b13];
-                if (i9 >= length || b11 != -1) {
+                b11 = f16781e[b13];
+                if (i6 >= length || b11 != -1) {
                     break;
                 }
-                i6 = i9;
+                i4 = i6;
             }
             if (b11 == -1) {
                 break;
             }
             byteArrayOutputStream.write(((b10 & 15) << 4) | ((b11 & 60) >>> 2));
             while (true) {
-                i10 = i9 + 1;
-                byte b14 = bytes[i9];
+                i9 = i6 + 1;
+                byte b14 = bytes[i6];
                 if (b14 == 61) {
                     return byteArrayOutputStream.toByteArray();
                 }
-                b12 = f15994e[b14];
-                if (i10 >= length || b12 != -1) {
+                b12 = f16781e[b14];
+                if (i9 >= length || b12 != -1) {
                     break;
                 }
-                i9 = i10;
+                i6 = i9;
             }
             if (b12 == -1) {
                 break;
             }
             byteArrayOutputStream.write(b12 | ((b11 & 3) << 6));
-            i11 = i10;
+            i10 = i9;
         }
         return byteArrayOutputStream.toByteArray();
     }
@@ -120,17 +120,17 @@ public final class a {
     private static b c(String str, String str2) {
         b bVar = new b();
         try {
-            if (TextUtils.isEmpty(f15996g)) {
-                f15996g = k.b("UlNB");
+            if (TextUtils.isEmpty(f16783g)) {
+                f16783g = k.b("UlNB");
             }
-            KeyFactory keyFactory = KeyFactory.getInstance(f15996g);
+            KeyFactory keyFactory = KeyFactory.getInstance(f16783g);
             str.getBytes();
             PublicKey generatePublic = keyFactory.generatePublic(new X509EncodedKeySpec(Base64.decode(str.getBytes(), 2)));
             int bitLength = generatePublic instanceof RSAPublicKey ? ((RSAPublicKey) generatePublic).getModulus().bitLength() : 0;
-            if (TextUtils.isEmpty(f15997h)) {
-                f15997h = k.b("UlNBL0VDQi9QS0NTMVBhZGRpbmc=");
+            if (TextUtils.isEmpty(f16784h)) {
+                f16784h = k.b("UlNBL0VDQi9QS0NTMVBhZGRpbmc=");
             }
-            Cipher cipher = Cipher.getInstance(f15997h);
+            Cipher cipher = Cipher.getInstance(f16784h);
             cipher.init(1, generatePublic);
             int i = (bitLength / 8) - 11;
             bVar.a(new String(Base64.encode(i > 0 ? a(cipher, str2.getBytes(), i) : cipher.doFinal(str2.getBytes()), 2)));
@@ -144,19 +144,19 @@ public final class a {
     private static byte[] a(Cipher cipher, byte[] bArr, int i) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         int length = bArr.length;
+        int i4 = 0;
         int i6 = 0;
-        int i9 = 0;
         while (true) {
-            int i10 = length - i6;
-            if (i10 <= 0) {
+            int i9 = length - i4;
+            if (i9 <= 0) {
                 byte[] byteArray = byteArrayOutputStream.toByteArray();
                 byteArrayOutputStream.close();
                 return byteArray;
             }
-            byte[] doFinal = i10 > i ? cipher.doFinal(bArr, i6, i) : cipher.doFinal(bArr, i6, i10);
+            byte[] doFinal = i9 > i ? cipher.doFinal(bArr, i4, i) : cipher.doFinal(bArr, i4, i9);
             byteArrayOutputStream.write(doFinal, 0, doFinal.length);
-            i9++;
-            i6 = i9 * i;
+            i6++;
+            i4 = i6 * i;
         }
     }
 
@@ -172,14 +172,14 @@ public final class a {
                 char[] cArr = new char[charArray.length];
                 for (int i = 0; i < charArray.length; i++) {
                     char c9 = charArray[i];
-                    if (f15991b == null) {
-                        f15991b = new HashMap();
-                        for (int i6 = 0; i6 < f15992c.length; i6++) {
-                            f15991b.put(Character.valueOf(f15993d[i6]), Character.valueOf(f15992c[i6]));
+                    if (f16778b == null) {
+                        f16778b = new HashMap();
+                        for (int i4 = 0; i4 < f16779c.length; i4++) {
+                            f16778b.put(Character.valueOf(f16780d[i4]), Character.valueOf(f16779c[i4]));
                         }
                     }
-                    if (f15991b.containsKey(Character.valueOf(c9))) {
-                        valueOf = f15991b.get(Character.valueOf(c9));
+                    if (f16778b.containsKey(Character.valueOf(c9))) {
+                        valueOf = f16778b.get(Character.valueOf(c9));
                     } else {
                         valueOf = Character.valueOf(c9);
                     }
@@ -199,24 +199,24 @@ public final class a {
     }
 
     private static Character a(char c9) {
-        if (f15991b == null) {
-            f15991b = new HashMap();
-            for (int i = 0; i < f15992c.length; i++) {
-                f15991b.put(Character.valueOf(f15993d[i]), Character.valueOf(f15992c[i]));
+        if (f16778b == null) {
+            f16778b = new HashMap();
+            for (int i = 0; i < f16779c.length; i++) {
+                f16778b.put(Character.valueOf(f16780d[i]), Character.valueOf(f16779c[i]));
             }
         }
-        if (f15991b.containsKey(Character.valueOf(c9))) {
-            return f15991b.get(Character.valueOf(c9));
+        if (f16778b.containsKey(Character.valueOf(c9))) {
+            return f16778b.get(Character.valueOf(c9));
         }
         return Character.valueOf(c9);
     }
 
-    public static b a(String str, String str2, boolean z3) {
-        if (z3) {
-            if (TextUtils.isEmpty(f15995f)) {
-                f15995f = k.b(k.f16772a);
+    public static b a(String str, String str2, boolean z6) {
+        if (z6) {
+            if (TextUtils.isEmpty(f16782f)) {
+                f16782f = k.b(k.f17559a);
             }
-            str = k.a(str, f15995f);
+            str = k.a(str, f16782f);
         }
         return c(str.replace("-----BEGIN PUBLIC KEY-----", "").replace("-----END PUBLIC KEY-----", "").replaceAll("\\s", ""), str2);
     }

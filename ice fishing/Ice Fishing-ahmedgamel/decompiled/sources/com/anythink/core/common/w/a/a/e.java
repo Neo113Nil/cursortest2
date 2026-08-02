@@ -11,27 +11,27 @@ import java.util.List;
 public class e implements com.anythink.core.common.w.a.b.e {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f17003a = "e";
+    private static final String f17790a = "e";
 
     /* renamed from: b, reason: collision with root package name */
-    private final String f17004b;
+    private final String f17791b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final com.anythink.core.common.w.a.b.c f17005c;
+    private final com.anythink.core.common.w.a.b.c f17792c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final com.anythink.core.common.w.a.b.d f17006d;
+    private final com.anythink.core.common.w.a.b.d f17793d;
 
     /* renamed from: e, reason: collision with root package name */
-    private long f17007e;
+    private long f17794e;
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f17008f;
+    private boolean f17795f;
 
     public e(String str, com.anythink.core.common.w.a.b.c cVar, com.anythink.core.common.w.a.b.d dVar) {
-        this.f17004b = str;
-        this.f17005c = cVar;
-        this.f17006d = dVar;
+        this.f17791b = str;
+        this.f17792c = cVar;
+        this.f17793d = dVar;
     }
 
     @Override // com.anythink.core.common.w.a.b.e
@@ -41,19 +41,19 @@ public class e implements com.anythink.core.common.w.a.b.e {
             return;
         }
         final ai by = lVar.by();
-        boolean z3 = by == null || by.a();
-        boolean z6 = by != null && by.a(this.f17007e);
-        if (z3 || z6) {
-            if (z3 && this.f17008f) {
-                this.f17008f = false;
-                d.a(this.f17004b);
+        boolean z6 = by == null || by.a();
+        boolean z9 = by != null && by.a(this.f17794e);
+        if (z6 || z9) {
+            if (z6 && this.f17795f) {
+                this.f17795f = false;
+                d.a(this.f17791b);
             }
             aVar.a();
             return;
         }
-        this.f17008f = true;
-        this.f17007e = System.currentTimeMillis();
-        com.anythink.core.common.w.a.b.c cVar = this.f17005c;
+        this.f17795f = true;
+        this.f17794e = System.currentTimeMillis();
+        com.anythink.core.common.w.a.b.c cVar = this.f17792c;
         if (cVar != null) {
             cVar.a(by);
         }
@@ -71,38 +71,38 @@ public class e implements com.anythink.core.common.w.a.b.e {
 
     @Override // com.anythink.core.common.w.a.b.b
     public final void b() {
-        this.f17008f = false;
-        this.f17007e = 0L;
+        this.f17795f = false;
+        this.f17794e = 0L;
     }
 
     /* renamed from: com.anythink.core.common.w.a.a.e$2, reason: invalid class name */
     public class AnonymousClass2 implements a.InterfaceC0104a {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ ai f17015a;
+        final /* synthetic */ ai f17802a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ com.anythink.core.common.w.a.b.a f17016b;
+        final /* synthetic */ com.anythink.core.common.w.a.b.a f17803b;
 
         public AnonymousClass2(ai aiVar, com.anythink.core.common.w.a.b.a aVar) {
-            this.f17015a = aiVar;
-            this.f17016b = aVar;
+            this.f17802a = aiVar;
+            this.f17803b = aVar;
         }
 
         @Override // com.anythink.core.common.w.a.c.a.InterfaceC0104a
-        public final void a(List<aj> list, boolean z3) {
-            this.f17015a.a(list);
-            com.anythink.core.common.w.a.b.a aVar = this.f17016b;
-            if (aVar == null || !z3) {
+        public final void a(List<aj> list, boolean z6) {
+            this.f17802a.a(list);
+            com.anythink.core.common.w.a.b.a aVar = this.f17803b;
+            if (aVar == null || !z6) {
                 return;
             }
             aVar.a();
         }
 
         @Override // com.anythink.core.common.w.a.c.a.InterfaceC0104a
-        public final void a(boolean z3) {
-            com.anythink.core.common.w.a.b.a aVar = this.f17016b;
-            if (aVar == null || !z3) {
+        public final void a(boolean z6) {
+            com.anythink.core.common.w.a.b.a aVar = this.f17803b;
+            if (aVar == null || !z6) {
                 return;
             }
             aVar.a();
@@ -110,13 +110,13 @@ public class e implements com.anythink.core.common.w.a.b.e {
     }
 
     private com.anythink.core.common.w.a.c.a a(Context context, l lVar, com.anythink.core.common.w.a.b.a aVar, ai aiVar) {
-        com.anythink.core.common.w.a.c.a aVar2 = new com.anythink.core.common.w.a.c.a(context, lVar, aiVar, this.f17006d);
+        com.anythink.core.common.w.a.c.a aVar2 = new com.anythink.core.common.w.a.c.a(context, lVar, aiVar, this.f17793d);
         aVar2.a(new AnonymousClass2(aiVar, aVar));
         return aVar2;
     }
 
     public static /* synthetic */ com.anythink.core.common.w.a.c.a a(e eVar, Context context, l lVar, com.anythink.core.common.w.a.b.a aVar, ai aiVar) {
-        com.anythink.core.common.w.a.c.a aVar2 = new com.anythink.core.common.w.a.c.a(context, lVar, aiVar, eVar.f17006d);
+        com.anythink.core.common.w.a.c.a aVar2 = new com.anythink.core.common.w.a.c.a(context, lVar, aiVar, eVar.f17793d);
         aVar2.a(eVar.new AnonymousClass2(aiVar, aVar));
         return aVar2;
     }

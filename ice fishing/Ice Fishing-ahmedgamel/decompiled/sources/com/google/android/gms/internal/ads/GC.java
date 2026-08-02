@@ -8,7 +8,7 @@ import java.util.Arrays;
 public abstract class GC {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final /* synthetic */ int f24951a = 0;
+    public static final /* synthetic */ int f25741a = 0;
 
     static {
         new FC();
@@ -24,13 +24,13 @@ public abstract class GC {
             int min2 = Math.min(min, 2147483639 - i);
             byte[] bArr = new byte[min2];
             arrayDeque.add(bArr);
-            int i6 = 0;
-            while (i6 < min2) {
-                int read = inputStream.read(bArr, i6, min2 - i6);
+            int i4 = 0;
+            while (i4 < min2) {
+                int read = inputStream.read(bArr, i4, min2 - i4);
                 if (read == -1) {
                     return b(arrayDeque, i);
                 }
-                i6 += read;
+                i4 += read;
                 i += read;
             }
             min = UC.h(min * (min < 4096 ? 4 : 2));
@@ -51,12 +51,12 @@ public abstract class GC {
             return bArr;
         }
         byte[] copyOf = Arrays.copyOf(bArr, i);
-        int i6 = i - length;
-        while (i6 > 0) {
+        int i4 = i - length;
+        while (i4 > 0) {
             byte[] bArr2 = (byte[]) arrayDeque.remove();
-            int min = Math.min(i6, bArr2.length);
-            System.arraycopy(bArr2, 0, copyOf, i - i6, min);
-            i6 -= min;
+            int min = Math.min(i4, bArr2.length);
+            System.arraycopy(bArr2, 0, copyOf, i - i4, min);
+            i4 -= min;
         }
         return copyOf;
     }

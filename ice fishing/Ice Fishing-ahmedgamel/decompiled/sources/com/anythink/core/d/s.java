@@ -13,19 +13,19 @@ import org.json.JSONObject;
 public final class s {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f17493a = "PrePlacementStrategy";
+    private static final String f18280a = "PrePlacementStrategy";
 
     /* renamed from: b, reason: collision with root package name */
-    private String f17494b;
+    private String f18281b;
 
     private String c(String str) {
         int parseInt;
         int parseInt2;
-        Context g4 = com.anythink.core.common.d.t.b().g();
-        if (g4 != null && !TextUtils.isEmpty(str) && !TextUtils.isEmpty(this.f17494b)) {
+        Context g9 = com.anythink.core.common.d.t.b().g();
+        if (g9 != null && !TextUtils.isEmpty(str) && !TextUtils.isEmpty(this.f18281b)) {
             try {
                 try {
-                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(g4.getResources().getAssets().open(this.f17494b + File.separator + str + ".json")));
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(g9.getResources().getAssets().open(this.f18281b + File.separator + str + ".json")));
                     StringBuilder sb = new StringBuilder();
                     while (true) {
                         String readLine = bufferedReader.readLine();
@@ -35,15 +35,15 @@ public final class s {
                         sb.append(readLine);
                     }
                     JSONObject jSONObject = new JSONObject(com.anythink.core.common.v.k.b(sb.toString()));
-                    int optInt = jSONObject.optInt(com.anythink.core.common.m.e.f14621M, 0);
+                    int optInt = jSONObject.optInt(com.anythink.core.common.m.e.f15407M, 0);
                     if (optInt != 0) {
                         com.anythink.core.common.u.e.b("pre_s_cus_code_error", "sdk_cus_code = 0 strategy_cus_code = ".concat(String.valueOf(optInt)), com.anythink.core.common.d.t.b().r());
                         return "";
                     }
                     if (!jSONObject.isNull("sdk_ver")) {
                         String string = jSONObject.getString("sdk_ver");
-                        if (!TextUtils.isEmpty(string) && (parseInt2 = Integer.parseInt(com.anythink.core.common.v.p.a().replace("UA_", "").replace(com.anythink.core.common.d.j.f12378z, ""))) < (parseInt = Integer.parseInt(string.replace(com.anythink.core.common.d.j.f12378z, "")))) {
-                            Log.e(f17493a, "The sdk version(" + parseInt2 + ") must be greater than or equal to the version(" + parseInt + ") in the placement strategy.");
+                        if (!TextUtils.isEmpty(string) && (parseInt2 = Integer.parseInt(com.anythink.core.common.v.p.a().replace("UA_", "").replace(com.anythink.core.common.d.j.f13164z, ""))) < (parseInt = Integer.parseInt(string.replace(com.anythink.core.common.d.j.f13164z, "")))) {
+                            Log.e(f18280a, "The sdk version(" + parseInt2 + ") must be greater than or equal to the version(" + parseInt + ") in the placement strategy.");
                             return "";
                         }
                     }
@@ -60,14 +60,14 @@ public final class s {
                     return "";
                 }
             } catch (Throwable th) {
-                Log.e(f17493a, "Get pre placement strategy failed: " + th.getMessage());
+                Log.e(f18280a, "Get pre placement strategy failed: " + th.getMessage());
             }
         }
         return "";
     }
 
     public final void a(String str) {
-        this.f17494b = str;
+        this.f18281b = str;
     }
 
     public final l b(String str) {

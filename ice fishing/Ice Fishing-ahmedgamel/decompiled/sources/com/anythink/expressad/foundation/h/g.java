@@ -7,7 +7,7 @@ import android.content.res.Resources;
 public class g {
 
     /* renamed from: a, reason: collision with root package name */
-    private static String f19625a = "DomainSameTool";
+    private static String f20412a = "DomainSameTool";
 
     public static boolean a(Context context) {
         if (context == null) {

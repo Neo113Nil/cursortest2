@@ -1,5 +1,6 @@
 package s8;
 
+import a.AbstractC0426a;
 import android.content.Context;
 import android.net.http.X509TrustManagerExtensions;
 import android.os.Build;
@@ -24,22 +25,22 @@ import t8.k;
 import t8.m;
 import t8.n;
 import t8.o;
-import v7.AbstractC5128i;
+import v7.AbstractC5118i;
 
 /* loaded from: classes2.dex */
 public final class d extends f implements e {
 
     /* renamed from: e, reason: collision with root package name */
-    public static final boolean f40497e;
+    public static final boolean f40551e;
 
     /* renamed from: c, reason: collision with root package name */
-    public Context f40498c;
+    public Context f40552c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final ArrayList f40499d;
+    public final ArrayList f40553d;
 
     static {
-        f40497e = Build.VERSION.SDK_INT < 29;
+        f40551e = Build.VERSION.SDK_INT < 29;
     }
 
     public d() {
@@ -50,34 +51,34 @@ public final class d extends f implements e {
             Class.forName("com.android.org.conscrypt".concat(".SSLParametersImpl"));
             oVar = new o(cls);
         } catch (Exception e9) {
-            CopyOnWriteArraySet copyOnWriteArraySet = t8.c.f40926a;
+            CopyOnWriteArraySet copyOnWriteArraySet = t8.c.f40889a;
             t8.c.a(r.class.getName(), 5, "unable to load android socket classes", e9);
             oVar = null;
         }
-        ArrayList w6 = AbstractC5128i.w(new n[]{oVar, new m(t8.e.f40929e), new m(k.f40937a), new m(h.f40935a)});
+        ArrayList z6 = AbstractC5118i.z(new n[]{oVar, new m(t8.e.f40892e), new m(k.f40899a), new m(h.f40897a)});
         ArrayList arrayList = new ArrayList();
-        Iterator it = w6.iterator();
+        Iterator it = z6.iterator();
         while (it.hasNext()) {
             Object next = it.next();
             if (((n) next).b()) {
                 arrayList.add(next);
             }
         }
-        this.f40499d = arrayList;
+        this.f40553d = arrayList;
     }
 
     @Override // s8.e
     public final void a(Context context) {
-        this.f40498c = context;
+        this.f40552c = context;
     }
 
     @Override // s8.e
     public final Context b() {
-        return this.f40498c;
+        return this.f40552c;
     }
 
     @Override // s8.f
-    public final com.bumptech.glide.e c(X509TrustManager trustManager) {
+    public final AbstractC0426a c(X509TrustManager trustManager) {
         X509TrustManagerExtensions x509TrustManagerExtensions;
         kotlin.jvm.internal.h.e(trustManager, "trustManager");
         try {
@@ -106,7 +107,7 @@ public final class d extends f implements e {
     public final void e(SSLSocket sSLSocket, String str, List protocols) {
         Object obj;
         kotlin.jvm.internal.h.e(protocols, "protocols");
-        Iterator it = this.f40499d.iterator();
+        Iterator it = this.f40553d.iterator();
         while (true) {
             if (!it.hasNext()) {
                 obj = null;
@@ -140,7 +141,7 @@ public final class d extends f implements e {
     @Override // s8.f
     public final String g(SSLSocket sSLSocket) {
         Object obj;
-        Iterator it = this.f40499d.iterator();
+        Iterator it = this.f40553d.iterator();
         while (true) {
             if (!it.hasNext()) {
                 obj = null;

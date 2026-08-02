@@ -1,7 +1,7 @@
 package com.instagram.common.viewpoint.core;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class WO extends AbstractRunnableC1327Wc {
+public class WO extends AbstractRunnableC1347Wc {
     public final /* synthetic */ T8 A00;
     public final /* synthetic */ String A01;
 
@@ -10,7 +10,7 @@ public class WO extends AbstractRunnableC1327Wc {
         this.A01 = str;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractRunnableC1327Wc
+    @Override // com.instagram.common.viewpoint.core.AbstractRunnableC1347Wc
     public final void A07() {
         VL.A08(this.A00, this.A01);
     }

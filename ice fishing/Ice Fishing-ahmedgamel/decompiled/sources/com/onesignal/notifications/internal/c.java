@@ -1,10 +1,10 @@
 package com.onesignal.notifications.internal;
 
-import D.w;
+import D.v;
 import com.anythink.basead.exoplayer.k.o;
-import i5.C4584a;
-import i5.InterfaceC4585b;
-import i5.InterfaceC4586c;
+import i5.C4593a;
+import i5.InterfaceC4594b;
+import i5.InterfaceC4595c;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -13,11 +13,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /* loaded from: classes2.dex */
-public final class c implements InterfaceC4586c {
-    private List<? extends InterfaceC4585b> actionButtons;
+public final class c implements InterfaceC4595c {
+    private List<? extends InterfaceC4594b> actionButtons;
     private JSONObject additionalData;
     private int androidNotificationId;
-    private C4584a backgroundImageLayout;
+    private C4593a backgroundImageLayout;
     private String bigPicture;
     private String body;
     private String collapseId;
@@ -30,7 +30,7 @@ public final class c implements InterfaceC4586c {
     private String launchURL;
     private String ledColor;
     private int lockScreenVisibility;
-    private w notificationExtender;
+    private v notificationExtender;
     private String notificationId;
     private int priority;
     private String rawPayload;
@@ -43,7 +43,7 @@ public final class c implements InterfaceC4586c {
     private String title;
     private int ttl;
 
-    public static final class a implements InterfaceC4585b {
+    public static final class a implements InterfaceC4594b {
         private final String icon;
         private final String id;
         private final String text;
@@ -52,17 +52,17 @@ public final class c implements InterfaceC4586c {
             this(null, null, null, 7, null);
         }
 
-        @Override // i5.InterfaceC4585b
+        @Override // i5.InterfaceC4594b
         public String getIcon() {
             return this.icon;
         }
 
-        @Override // i5.InterfaceC4585b
+        @Override // i5.InterfaceC4594b
         public String getId() {
             return this.id;
         }
 
-        @Override // i5.InterfaceC4585b
+        @Override // i5.InterfaceC4594b
         public String getText() {
             return this.text;
         }
@@ -71,7 +71,7 @@ public final class c implements InterfaceC4586c {
             JSONObject jSONObject = new JSONObject();
             try {
                 jSONObject.put("id", getId());
-                jSONObject.put(o.f8446c, getText());
+                jSONObject.put(o.f9232c, getText());
                 jSONObject.put("icon", getIcon());
                 return jSONObject;
             } catch (Throwable th) {
@@ -168,7 +168,7 @@ public final class c implements InterfaceC4586c {
                 for (int i = 0; i < length; i++) {
                     JSONObject jSONObject = jSONArray.getJSONObject(i);
                     kotlin.jvm.internal.h.b(jSONObject);
-                    arrayList.add(new a(com.onesignal.common.e.safeString(jSONObject, "id"), com.onesignal.common.e.safeString(jSONObject, o.f8446c), com.onesignal.common.e.safeString(jSONObject, "icon")));
+                    arrayList.add(new a(com.onesignal.common.e.safeString(jSONObject, "id"), com.onesignal.common.e.safeString(jSONObject, o.f9232c), com.onesignal.common.e.safeString(jSONObject, "icon")));
                 }
                 setActionButtons(arrayList);
                 JSONObject additionalData3 = getAdditionalData();
@@ -185,46 +185,46 @@ public final class c implements InterfaceC4586c {
         String safeString = com.onesignal.common.e.safeString(jSONObject, "bg_img");
         if (safeString != null) {
             JSONObject jSONObject2 = new JSONObject(safeString);
-            setBackgroundImageLayout(new C4584a(com.onesignal.common.e.safeString(jSONObject2, "img"), com.onesignal.common.e.safeString(jSONObject2, "tc"), com.onesignal.common.e.safeString(jSONObject2, "bc")));
+            setBackgroundImageLayout(new C4593a(com.onesignal.common.e.safeString(jSONObject2, "img"), com.onesignal.common.e.safeString(jSONObject2, "tc"), com.onesignal.common.e.safeString(jSONObject2, "bc")));
         }
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4596d
     public void display() {
         this.displayWaiter.wake(Boolean.TRUE);
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
-    public List<InterfaceC4585b> getActionButtons() {
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
+    public List<InterfaceC4594b> getActionButtons() {
         return this.actionButtons;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public JSONObject getAdditionalData() {
         return this.additionalData;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public int getAndroidNotificationId() {
         return this.androidNotificationId;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
-    public C4584a getBackgroundImageLayout() {
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
+    public C4593a getBackgroundImageLayout() {
         return this.backgroundImageLayout;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public String getBigPicture() {
         return this.bigPicture;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public String getBody() {
         return this.body;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public String getCollapseId() {
         return this.collapseId;
     }
@@ -233,101 +233,101 @@ public final class c implements InterfaceC4586c {
         return this.displayWaiter;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public String getFromProjectNumber() {
         return this.fromProjectNumber;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public String getGroupKey() {
         return this.groupKey;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public String getGroupMessage() {
         return this.groupMessage;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public List<c> getGroupedNotifications() {
         return this.groupedNotifications;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public String getLargeIcon() {
         return this.largeIcon;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public String getLaunchURL() {
         return this.launchURL;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public String getLedColor() {
         return this.ledColor;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public int getLockScreenVisibility() {
         return this.lockScreenVisibility;
     }
 
-    public final w getNotificationExtender() {
+    public final v getNotificationExtender() {
         return null;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public String getNotificationId() {
         return this.notificationId;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public int getPriority() {
         return this.priority;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public String getRawPayload() {
         return this.rawPayload;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public long getSentTime() {
         return this.sentTime;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public String getSmallIcon() {
         return this.smallIcon;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public String getSmallIconAccentColor() {
         return this.smallIconAccentColor;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public String getSound() {
         return this.sound;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public String getTemplateId() {
         return this.templateId;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public String getTemplateName() {
         return this.templateName;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public String getTitle() {
         return this.title;
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e, i5.InterfaceC4589f, i5.InterfaceC4587d
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e, i5.InterfaceC4598f, i5.InterfaceC4596d
     public int getTtl() {
         return this.ttl;
     }
@@ -336,7 +336,7 @@ public final class c implements InterfaceC4586c {
         return getAndroidNotificationId() != 0;
     }
 
-    public void setActionButtons(List<? extends InterfaceC4585b> list) {
+    public void setActionButtons(List<? extends InterfaceC4594b> list) {
         this.actionButtons = list;
     }
 
@@ -348,8 +348,8 @@ public final class c implements InterfaceC4586c {
         this.androidNotificationId = i;
     }
 
-    public void setBackgroundImageLayout(C4584a c4584a) {
-        this.backgroundImageLayout = c4584a;
+    public void setBackgroundImageLayout(C4593a c4593a) {
+        this.backgroundImageLayout = c4593a;
     }
 
     public void setBigPicture(String str) {
@@ -478,11 +478,11 @@ public final class c implements InterfaceC4586c {
             }
             if (getActionButtons() != null) {
                 JSONArray jSONArray2 = new JSONArray();
-                List<InterfaceC4585b> actionButtons = getActionButtons();
+                List<InterfaceC4594b> actionButtons = getActionButtons();
                 kotlin.jvm.internal.h.b(actionButtons);
-                for (InterfaceC4585b interfaceC4585b : actionButtons) {
-                    kotlin.jvm.internal.h.c(interfaceC4585b, "null cannot be cast to non-null type com.onesignal.notifications.internal.Notification.ActionButton");
-                    jSONArray2.put(((a) interfaceC4585b).toJSONObject());
+                for (InterfaceC4594b interfaceC4594b : actionButtons) {
+                    kotlin.jvm.internal.h.c(interfaceC4594b, "null cannot be cast to non-null type com.onesignal.notifications.internal.Notification.ActionButton");
+                    jSONArray2.put(((a) interfaceC4594b).toJSONObject());
                 }
                 jSONObject.put("actionButtons", jSONArray2);
             }
@@ -509,10 +509,10 @@ public final class c implements InterfaceC4586c {
         setAndroidNotificationId(i);
     }
 
-    @Override // i5.InterfaceC4586c, i5.InterfaceC4588e
-    public void setExtender(w wVar) {
+    @Override // i5.InterfaceC4595c, i5.InterfaceC4597e
+    public void setExtender(v vVar) {
     }
 
-    public final void setNotificationExtender(w wVar) {
+    public final void setNotificationExtender(v vVar) {
     }
 }

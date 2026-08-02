@@ -1,55 +1,54 @@
 package O6;
 
 import a7.j;
-import d1.C4445c;
-import f6.C4512a;
+import f6.C4522a;
 import m6.l;
 import m6.q;
 import m6.s;
-import u.AbstractC5049e;
+import u.AbstractC5050e;
 
 /* loaded from: classes2.dex */
 public final class d implements b {
-    public static final k6.e i = k6.e.a(f6.b.f37516n, "type");
+    public static final k6.e i = k6.e.a(f6.b.f37478n, "type");
 
     /* renamed from: j, reason: collision with root package name */
-    public static final k6.e f2368j = k6.e.a(f6.b.f37517u, "success");
+    public static final k6.e f2299j = k6.e.a(f6.b.f37479u, "success");
 
     /* renamed from: a, reason: collision with root package name */
-    public final H5.a f2369a;
+    public final H5.a f2300a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f2370b;
+    public final String f2301b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final String f2371c;
+    public final String f2302c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final C4512a f2372d;
+    public final C4522a f2303d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final C4512a f2373e;
+    public final C4522a f2304e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final C4512a f2374f;
+    public final C4522a f2305f;
 
     /* renamed from: g, reason: collision with root package name */
-    public volatile l f2375g;
+    public volatile l f2306g;
 
     /* renamed from: h, reason: collision with root package name */
-    public volatile l f2376h;
+    public volatile l f2307h;
 
     public d(H5.a aVar, j jVar) {
         String str;
         String str2;
         String str3;
-        this.f2369a = aVar;
+        this.f2300a = aVar;
         switch (jVar) {
             case EF0:
             case EF1:
             case EF2:
             case EF3:
-            case f4372v:
+            case f4340v:
             case EF61:
             case EF72:
             case EF83:
@@ -65,7 +64,7 @@ public final class d implements b {
             default:
                 throw new IllegalArgumentException("Not a supported exporter type: " + jVar);
         }
-        this.f2370b = str;
+        this.f2301b = str;
         switch (jVar) {
             case EF0:
             case EF3:
@@ -73,7 +72,7 @@ public final class d implements b {
                 str2 = "grpc";
                 break;
             case EF1:
-            case f4372v:
+            case f4340v:
             case EF83:
             case EF107:
                 str2 = "http";
@@ -89,56 +88,56 @@ public final class d implements b {
             default:
                 throw new IllegalArgumentException("Not a supported exporter type: " + jVar);
         }
-        this.f2371c = str2;
-        C4445c c4445c = new C4445c();
-        int i6 = jVar.f4375u;
-        int d2 = AbstractC5049e.d(i6);
-        if (d2 == 0) {
+        this.f2302c = str2;
+        K1.c cVar = new K1.c(1);
+        int i4 = jVar.f4343u;
+        int d9 = AbstractC5050e.d(i4);
+        if (d9 == 0) {
             str3 = "span";
-        } else if (d2 == 1) {
+        } else if (d9 == 1) {
             str3 = "metric";
         } else {
-            if (d2 != 2) {
-                if (d2 == 3) {
+            if (d9 != 2) {
+                if (d9 == 3) {
                     throw new IllegalArgumentException("Profiles are not supported");
                 }
-                throw new IllegalArgumentException("Unhandled signal type: ".concat(i6 != 1 ? i6 != 2 ? i6 != 3 ? i6 != 4 ? "null" : "PROFILE" : "LOG" : "METRIC" : "SPAN"));
+                throw new IllegalArgumentException("Unhandled signal type: ".concat(i4 != 1 ? i4 != 2 ? i4 != 3 ? i4 != 4 ? "null" : "PROFILE" : "LOG" : "METRIC" : "SPAN"));
             }
             str3 = "log";
         }
-        c4445c.f(i, str3);
-        C4512a d9 = c4445c.d();
-        this.f2372d = d9;
-        C4445c d10 = d9.d();
+        cVar.c(i, str3);
+        C4522a a9 = cVar.a();
+        this.f2303d = a9;
+        K1.c d10 = a9.d();
         Boolean bool = Boolean.TRUE;
-        k6.e eVar = f2368j;
-        d10.f(eVar, bool);
-        this.f2373e = d10.d();
-        C4445c d11 = d9.d();
-        d11.f(eVar, Boolean.FALSE);
-        this.f2374f = d11.d();
+        k6.e eVar = f2299j;
+        d10.c(eVar, bool);
+        this.f2304e = d10.a();
+        K1.c d11 = a9.d();
+        d11.c(eVar, Boolean.FALSE);
+        this.f2305f = d11.a();
     }
 
     @Override // O6.b
-    public final a a(int i6) {
-        return new c(this, i6);
+    public final a a(int i4) {
+        return new c(this, i4);
     }
 
     public final l b() {
-        l lVar = this.f2376h;
+        l lVar = this.f2307h;
         if (lVar != null && !h.e(lVar)) {
             return lVar;
         }
-        l build = c().d(this.f2370b + ".exporter.exported").build();
-        this.f2376h = build;
-        return build;
+        l mo53build = c().d(this.f2301b + ".exporter.exported").mo53build();
+        this.f2307h = mo53build;
+        return mo53build;
     }
 
     public final q c() {
-        s sVar = (s) this.f2369a.get();
+        s sVar = (s) this.f2300a.get();
         if (sVar == null) {
-            sVar = m6.h.f39314n;
+            sVar = m6.h.f39473n;
         }
-        return sVar.a("io.opentelemetry.exporters." + this.f2370b + "-" + this.f2371c).mo5build();
+        return sVar.a("io.opentelemetry.exporters." + this.f2301b + "-" + this.f2302c).mo56build();
     }
 }

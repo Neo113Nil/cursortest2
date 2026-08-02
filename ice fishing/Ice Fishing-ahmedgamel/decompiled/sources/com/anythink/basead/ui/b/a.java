@@ -11,7 +11,7 @@ import android.graphics.drawable.Drawable;
 public final class a extends Drawable {
 
     /* renamed from: a, reason: collision with root package name */
-    Paint f10603a = new Paint();
+    Paint f11389a = new Paint();
 
     @Override // android.graphics.drawable.Drawable
     public final void draw(Canvas canvas) {
@@ -20,8 +20,8 @@ public final class a extends Drawable {
             return;
         }
         float max = Math.max(canvas.getHeight(), canvas.getWidth()) / 2;
-        this.f10603a.setShader(new RadialGradient(canvas.getWidth() / 2, canvas.getHeight() / 2, max, -1, 0, Shader.TileMode.CLAMP));
-        canvas.drawCircle(canvas.getWidth() / 2, canvas.getHeight() / 2, max, this.f10603a);
+        this.f11389a.setShader(new RadialGradient(canvas.getWidth() / 2, canvas.getHeight() / 2, max, -1, 0, Shader.TileMode.CLAMP));
+        canvas.drawCircle(canvas.getWidth() / 2, canvas.getHeight() / 2, max, this.f11389a);
     }
 
     @Override // android.graphics.drawable.Drawable

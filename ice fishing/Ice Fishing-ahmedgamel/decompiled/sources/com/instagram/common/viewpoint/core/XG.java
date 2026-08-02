@@ -9,12 +9,12 @@ import java.util.Map;
 public abstract class XG {
     public static byte[] A00;
     public static String[] A01 = {"NoYeCqw0NuwsBVSvR8aiyPnoj7", "APA6ODPEmALJh8xHCjcwQdd6vsoZzjc", "og2YXunKDp8EqsbnYhzdu6qR", "YLuKSEsrRIdzXIjkloLmDmBrtZDR6KFi", "8qSAHAaIpnwwIsCvL7AfoFTJYv1h46H2", "PXVMr", "05SrQOor", "5yYP5"};
-    public static final Map<EnumC1314Vp, EnumC1315Vq> A02;
+    public static final Map<EnumC1334Vp, EnumC1335Vq> A02;
 
-    public static String A06(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 18);
+    public static String A06(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 18);
         }
         return new String(copyOfRange);
     }
@@ -26,19 +26,19 @@ public abstract class XG {
     static {
         A07();
         A02 = new HashMap();
-        A02.put(EnumC1314Vp.A09, EnumC1315Vq.A0D);
-        A02.put(EnumC1314Vp.A07, EnumC1315Vq.A0F);
-        A02.put(EnumC1314Vp.A06, EnumC1315Vq.A0E);
+        A02.put(EnumC1334Vp.A09, EnumC1335Vq.A0D);
+        A02.put(EnumC1334Vp.A07, EnumC1335Vq.A0F);
+        A02.put(EnumC1334Vp.A06, EnumC1335Vq.A0E);
     }
 
-    public static AdSize A00(EnumC1314Vp enumC1314Vp) {
-        return AdSize.fromWidthAndHeight(enumC1314Vp.A04(), enumC1314Vp.A03());
+    public static AdSize A00(EnumC1334Vp enumC1334Vp) {
+        return AdSize.fromWidthAndHeight(enumC1334Vp.A04(), enumC1334Vp.A03());
     }
 
-    public static AdSize A01(EnumC1315Vq enumC1315Vq) {
-        for (Map.Entry<EnumC1314Vp, EnumC1315Vq> entry : A02.entrySet()) {
-            if (entry.getValue() == enumC1315Vq) {
-                EnumC1314Vp key = entry.getKey();
+    public static AdSize A01(EnumC1335Vq enumC1335Vq) {
+        for (Map.Entry<EnumC1334Vp, EnumC1335Vq> entry : A02.entrySet()) {
+            if (entry.getValue() == enumC1335Vq) {
+                EnumC1334Vp key = entry.getKey();
                 if (A01[3].charAt(31) == 'z') {
                     throw new RuntimeException();
                 }
@@ -51,66 +51,66 @@ public abstract class XG {
         return AdSize.BANNER_320_50;
     }
 
-    public static EnumC1314Vp A02(int i) {
+    public static EnumC1334Vp A02(int i) {
         switch (i) {
             case 4:
-                return EnumC1314Vp.A05;
+                return EnumC1334Vp.A05;
             case 5:
-                return EnumC1314Vp.A06;
+                return EnumC1334Vp.A06;
             case 6:
-                return EnumC1314Vp.A07;
+                return EnumC1334Vp.A07;
             case 7:
-                return EnumC1314Vp.A09;
+                return EnumC1334Vp.A09;
             case 100:
-                return EnumC1314Vp.A08;
+                return EnumC1334Vp.A08;
             default:
                 throw new IllegalArgumentException(A06(48, 20, 117));
         }
     }
 
-    public static EnumC1314Vp A03(int i, int i6) {
-        if (EnumC1314Vp.A08.A03() == i6 && EnumC1314Vp.A08.A04() == i) {
-            return EnumC1314Vp.A08;
+    public static EnumC1334Vp A03(int i, int i4) {
+        if (EnumC1334Vp.A08.A03() == i4 && EnumC1334Vp.A08.A04() == i) {
+            return EnumC1334Vp.A08;
         }
-        if (EnumC1314Vp.A05.A03() == i6) {
-            int A04 = EnumC1314Vp.A05.A04();
+        if (EnumC1334Vp.A05.A03() == i4) {
+            int A04 = EnumC1334Vp.A05.A04();
             String[] strArr = A01;
             if (strArr[5].length() != strArr[7].length()) {
                 throw new RuntimeException();
             }
             A01[3] = "mZi1y4qoTe3Eq90wST2K5ufjmqQARasa";
             if (A04 == i) {
-                return EnumC1314Vp.A05;
+                return EnumC1334Vp.A05;
             }
         }
-        if (EnumC1314Vp.A06.A03() == i6 && EnumC1314Vp.A06.A04() == i) {
-            return EnumC1314Vp.A06;
+        if (EnumC1334Vp.A06.A03() == i4 && EnumC1334Vp.A06.A04() == i) {
+            return EnumC1334Vp.A06;
         }
-        if (EnumC1314Vp.A07.A03() == i6 && EnumC1314Vp.A07.A04() == i) {
-            return EnumC1314Vp.A07;
+        if (EnumC1334Vp.A07.A03() == i4 && EnumC1334Vp.A07.A04() == i) {
+            return EnumC1334Vp.A07;
         }
-        if (EnumC1314Vp.A09.A03() == i6) {
-            EnumC1314Vp enumC1314Vp = EnumC1314Vp.A09;
+        if (EnumC1334Vp.A09.A03() == i4) {
+            EnumC1334Vp enumC1334Vp = EnumC1334Vp.A09;
             String[] strArr2 = A01;
             if (strArr2[6].length() == strArr2[0].length()) {
                 throw new RuntimeException();
             }
             A01[3] = "Hv8n5Vk5MDnKIrkb6r8Yx0AFcMxyPOg2";
-            if (enumC1314Vp.A04() == i) {
-                return EnumC1314Vp.A09;
+            if (enumC1334Vp.A04() == i) {
+                return EnumC1334Vp.A09;
             }
         }
         throw new IllegalArgumentException(A06(0, 48, 57));
     }
 
-    public static EnumC1314Vp A04(AdSize adSize) {
+    public static EnumC1334Vp A04(AdSize adSize) {
         return A03(adSize.getWidth(), adSize.getHeight());
     }
 
-    public static EnumC1315Vq A05(EnumC1314Vp enumC1314Vp) {
-        EnumC1315Vq adTemplate = A02.get(enumC1314Vp);
+    public static EnumC1335Vq A05(EnumC1334Vp enumC1334Vp) {
+        EnumC1335Vq adTemplate = A02.get(enumC1334Vp);
         if (adTemplate == null) {
-            return EnumC1315Vq.A0G;
+            return EnumC1335Vq.A0G;
         }
         return adTemplate;
     }

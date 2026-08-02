@@ -1,16 +1,15 @@
 package com.onesignal.notifications.internal.receivereceipt.impl;
 
 import B5.b;
-import J0.n;
-import J0.q;
-import J0.t;
-import J0.y;
+import J0.d;
+import J0.m;
+import J0.p;
+import J0.s;
+import J0.x;
 import K0.k;
-import S0.p;
 import android.content.Context;
 import androidx.work.CoroutineWorker;
 import androidx.work.WorkerParameters;
-import com.bumptech.glide.d;
 import com.onesignal.common.AndroidUtils;
 import com.onesignal.core.internal.config.c;
 import java.util.Collections;
@@ -21,9 +20,9 @@ import kotlin.jvm.internal.e;
 import kotlin.jvm.internal.h;
 import p4.g;
 import t5.i;
-import v7.AbstractC5129j;
+import v7.AbstractC5119j;
 import x4.f;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class ReceiveReceiptWorkManager implements b {
@@ -44,8 +43,8 @@ public final class ReceiveReceiptWorkManager implements b {
             int label;
             /* synthetic */ Object result;
 
-            public a(InterfaceC5267d interfaceC5267d) {
-                super(interfaceC5267d);
+            public a(InterfaceC5240d interfaceC5240d) {
+                super(interfaceC5240d);
             }
 
             @Override // B7.a
@@ -75,21 +74,21 @@ public final class ReceiveReceiptWorkManager implements b {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public Object doWork(InterfaceC5267d interfaceC5267d) {
+        public Object doWork(InterfaceC5240d interfaceC5240d) {
             a aVar;
             Object obj;
             int i;
             ReceiveReceiptWorker receiveReceiptWorker;
-            if (interfaceC5267d instanceof a) {
-                aVar = (a) interfaceC5267d;
-                int i6 = aVar.label;
-                if ((i6 & Integer.MIN_VALUE) != 0) {
-                    aVar.label = i6 - Integer.MIN_VALUE;
+            if (interfaceC5240d instanceof a) {
+                aVar = (a) interfaceC5240d;
+                int i4 = aVar.label;
+                if ((i4 & Integer.MIN_VALUE) != 0) {
+                    aVar.label = i4 - Integer.MIN_VALUE;
                     obj = aVar.result;
-                    A7.a aVar2 = A7.a.f58n;
+                    A7.a aVar2 = A7.a.f215n;
                     i = aVar.label;
                     if (i != 0) {
-                        d.k(obj);
+                        Q3.b.s(obj);
                         Context applicationContext = getApplicationContext();
                         h.d(applicationContext, "getApplicationContext(...)");
                         aVar.L$0 = this;
@@ -104,35 +103,35 @@ public final class ReceiveReceiptWorkManager implements b {
                         if (i != 2) {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
-                        d.k(obj);
-                        return q.a();
+                        Q3.b.s(obj);
+                        return p.a();
                     }
                     receiveReceiptWorker = (ReceiveReceiptWorker) aVar.L$0;
-                    d.k(obj);
+                    Q3.b.s(obj);
                     if (((Boolean) obj).booleanValue()) {
                         com.onesignal.debug.internal.logging.b.warn$default("ReceiveReceiptWorker skipped due to failed OneSignal initialization", null, 2, null);
-                        return q.a();
+                        return p.a();
                     }
                     String b9 = receiveReceiptWorker.getInputData().b(ReceiveReceiptWorkManager.OS_NOTIFICATION_ID);
                     if (b9 == null) {
-                        return new n();
+                        return new m();
                     }
                     String b10 = receiveReceiptWorker.getInputData().b(ReceiveReceiptWorkManager.OS_APP_ID);
                     if (b10 == null) {
-                        return new n();
+                        return new m();
                     }
                     String b11 = receiveReceiptWorker.getInputData().b(ReceiveReceiptWorkManager.OS_SUBSCRIPTION_ID);
                     if (b11 == null) {
-                        return new n();
+                        return new m();
                     }
                     B5.a aVar3 = (B5.a) g.a().getService(B5.a.class);
                     aVar.L$0 = null;
                     aVar.label = 2;
                 }
             }
-            aVar = new a(interfaceC5267d);
+            aVar = new a(interfaceC5240d);
             obj = aVar.result;
-            A7.a aVar22 = A7.a.f58n;
+            A7.a aVar22 = A7.a.f215n;
             i = aVar.label;
             if (i != 0) {
             }
@@ -160,8 +159,8 @@ public final class ReceiveReceiptWorkManager implements b {
         this.maxDelay = 25;
     }
 
-    private final J0.d buildConstraints() {
-        return new J0.d(2, false, false, false, false, -1L, -1L, AbstractC5129j.P(new LinkedHashSet()));
+    private final d buildConstraints() {
+        return new d(2, false, false, false, false, -1L, -1L, AbstractC5119j.N(new LinkedHashSet()));
     }
 
     @Override // B5.b
@@ -181,20 +180,20 @@ public final class ReceiveReceiptWorkManager implements b {
         hashMap.put(OS_NOTIFICATION_ID, notificationId);
         hashMap.put(OS_APP_ID, appId);
         hashMap.put(OS_SUBSCRIPTION_ID, id);
-        J0.h hVar = new J0.h(hashMap);
-        J0.h.c(hVar);
-        J0.d constraints = buildConstraints();
-        Z2.e eVar = new Z2.e(ReceiveReceiptWorker.class);
+        J0.g gVar = new J0.g(hashMap);
+        J0.g.c(gVar);
+        d constraints = buildConstraints();
+        b3.e eVar = new b3.e(ReceiveReceiptWorker.class);
         h.e(constraints, "constraints");
-        ((p) eVar.f4171v).f2816j = constraints;
+        ((S0.p) eVar.f5558v).f2945j = constraints;
         TimeUnit timeUnit = TimeUnit.SECONDS;
         eVar.I(randomDelay);
-        ((p) eVar.f4171v).f2812e = hVar;
-        t m4 = eVar.m();
+        ((S0.p) eVar.f5558v).f2941e = gVar;
+        s m9 = eVar.m();
         com.onesignal.debug.internal.logging.b.debug$default("OSReceiveReceiptController enqueueing send receive receipt work with notificationId: " + notificationId + " and delay: " + randomDelay + " seconds", null, 2, null);
-        y iVar = i.INSTANCE.getInstance(this._applicationService.getAppContext());
+        x iVar = i.INSTANCE.getInstance(this._applicationService.getAppContext());
         String concat = notificationId.concat("_receive_receipt");
         iVar.getClass();
-        new k((K0.p) iVar, concat, Collections.singletonList(m4)).o();
+        new k((K0.p) iVar, concat, Collections.singletonList(m9)).s();
     }
 }

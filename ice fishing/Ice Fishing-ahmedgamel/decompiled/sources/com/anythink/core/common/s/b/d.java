@@ -6,7 +6,7 @@ import com.anythink.core.common.s.a.h;
 public class d {
 
     /* renamed from: a, reason: collision with root package name */
-    private static volatile boolean f16399a = false;
+    private static volatile boolean f17186a = false;
 
     public static class a implements com.anythink.core.common.s.a.a.c {
         @Override // com.anythink.core.common.s.a.a.c
@@ -25,10 +25,10 @@ public class d {
     }
 
     private static void a() {
-        if (f16399a) {
+        if (f17186a) {
             return;
         }
-        f16399a = true;
+        f17186a = true;
         h.a(com.anythink.core.common.v.b.b.a().c());
         h.a(new a());
     }
@@ -51,8 +51,8 @@ public class d {
         if (cVar == null) {
             return null;
         }
-        if (!f16399a) {
-            f16399a = true;
+        if (!f17186a) {
+            f17186a = true;
             h.a(com.anythink.core.common.v.b.b.a().c());
             h.a(new a());
         }

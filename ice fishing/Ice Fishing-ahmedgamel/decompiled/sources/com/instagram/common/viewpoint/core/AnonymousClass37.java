@@ -9,8 +9,8 @@ public final class AnonymousClass37 {
     public Uri A00;
     public Uri A01;
     public Bundle A02;
-    public AbstractC2375pt A03;
-    public AbstractC2375pt A04;
+    public AbstractC2395pt A03;
+    public AbstractC2395pt A04;
     public Boolean A05;
     public CharSequence A06;
     public CharSequence A07;
@@ -54,13 +54,13 @@ public final class AnonymousClass37 {
         return this;
     }
 
-    public final AnonymousClass37 A0Z(AbstractC2375pt abstractC2375pt) {
-        this.A03 = abstractC2375pt;
+    public final AnonymousClass37 A0Z(AbstractC2395pt abstractC2395pt) {
+        this.A03 = abstractC2395pt;
         return this;
     }
 
-    public final AnonymousClass37 A0a(AbstractC2375pt abstractC2375pt) {
-        this.A04 = abstractC2375pt;
+    public final AnonymousClass37 A0a(AbstractC2395pt abstractC2395pt) {
+        this.A04 = abstractC2395pt;
         return this;
     }
 
@@ -195,7 +195,7 @@ public final class AnonymousClass37 {
         return this;
     }
 
-    public final C2384q2 A11() {
-        return new C2384q2(this);
+    public final C2404q2 A11() {
+        return new C2404q2(this);
     }
 }

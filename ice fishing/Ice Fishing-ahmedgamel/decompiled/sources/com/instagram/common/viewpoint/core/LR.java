@@ -5,7 +5,7 @@ import java.io.File;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public interface LR {
-    LT<Bitmap> AIe(LX lx, boolean z3);
+    LT<Bitmap> AIe(LX lx, boolean z6);
 
     File AIf(LX lx);
 

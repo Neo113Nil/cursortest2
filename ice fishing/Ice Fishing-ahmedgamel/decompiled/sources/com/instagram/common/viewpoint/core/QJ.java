@@ -3,20 +3,20 @@ package com.instagram.common.viewpoint.core;
 import java.util.Arrays;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class QJ implements InterfaceC1365Xr {
+public class QJ implements InterfaceC1385Xr {
     public static byte[] A03;
     public int A00;
     public String A01;
-    public final InterfaceC1365Xr A02;
+    public final InterfaceC1385Xr A02;
 
     static {
         A02();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 50);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 50);
         }
         return new String(copyOfRange);
     }
@@ -25,8 +25,8 @@ public class QJ implements InterfaceC1365Xr {
         A03 = new byte[]{-93, -93, -107, -104};
     }
 
-    public QJ(InterfaceC1365Xr interfaceC1365Xr) {
-        this.A02 = interfaceC1365Xr;
+    public QJ(InterfaceC1385Xr interfaceC1385Xr) {
+        this.A02 = interfaceC1385Xr;
     }
 
     private void A01() {
@@ -37,17 +37,17 @@ public class QJ implements InterfaceC1365Xr {
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1365Xr
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1385Xr
     public final void AH8(String str) {
         boolean A0A;
         String A04;
-        A0A = AbstractC1367Xt.A0A(str);
+        A0A = AbstractC1387Xt.A0A(str);
         if (A0A) {
             A01();
             this.A02.AH8(str);
             return;
         }
-        A04 = AbstractC1367Xt.A04(str);
+        A04 = AbstractC1387Xt.A04(str);
         String filtered = this.A01;
         if (A04.equals(filtered)) {
             this.A00++;
@@ -58,7 +58,7 @@ public class QJ implements InterfaceC1365Xr {
         this.A00 = 1;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1365Xr
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1385Xr
     public final void flush() {
         A01();
         this.A02.flush();

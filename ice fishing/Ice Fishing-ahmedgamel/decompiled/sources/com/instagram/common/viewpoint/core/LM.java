@@ -15,19 +15,19 @@ public final class LM extends AsyncTask<String, Void, Bitmap[]> implements T4 {
     public static String[] A0B = {"", "", "tk2ciTRcvMIsX7PNNAsbqXfz4cjsZNd3", "5z01THRYCfHu8Ay0wH5meUoLhFHMZyns", "VYXg8wObxMc7BeMRrzz5UEer", "1KBjMNFbEleLBxdQS2J3kw1LUfJ9GnIf", "PvEnCL5gthOso5MBRjJGXOGrZMhqPY73", "dw8jODS3DySi5ymezTFU6bMU1A3tjNXQ"};
     public int A00;
     public int A01;
-    public InterfaceC1496b8 A02;
+    public InterfaceC1516b8 A02;
     public boolean A03;
     public final int A04;
     public final int A05;
-    public final WeakReference<C1493b5> A06;
-    public final WeakReference<C1840gi> A07;
+    public final WeakReference<C1513b5> A06;
+    public final WeakReference<C1860gi> A07;
     public final WeakReference<ImageView> A08;
     public final WeakReference<ViewGroup> A09;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0A, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 84);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0A, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 84);
         }
         return new String(copyOfRange);
     }
@@ -56,22 +56,22 @@ public final class LM extends AsyncTask<String, Void, Bitmap[]> implements T4 {
             String str = strArr[0];
             Bitmap bitmap = null;
             Bitmap bitmap2 = null;
-            C1840gi c1840gi = this.A07.get();
+            C1860gi c1860gi = this.A07.get();
             String[] strArr2 = A0B;
             if (strArr2[6].charAt(7) == strArr2[5].charAt(7)) {
                 throw new RuntimeException();
             }
             A0B[2] = "bv0UYUwFwYp94NQ105UqaFrunwxSHAuK";
-            if (c1840gi == null) {
+            if (c1860gi == null) {
                 return new Bitmap[]{null, null};
             }
             try {
-                bitmap = new C1246Sx(c1840gi).A0O(str, this.A00, this.A01);
+                bitmap = new C1266Sx(c1860gi).A0O(str, this.A00, this.A01);
                 if (bitmap != null && !this.A03) {
-                    bitmap2 = YL.A01(c1840gi, bitmap, this.A04, this.A05);
+                    bitmap2 = YL.A01(c1860gi, bitmap, this.A04, this.A05);
                 }
             } catch (Throwable th) {
-                c1840gi.A08().ABC(A00(0, 7, 30), AbstractC1252Td.A1V, new C1253Te(th));
+                c1860gi.A08().ABC(A00(0, 7, 30), AbstractC1272Td.A1V, new C1273Te(th));
             }
             return new Bitmap[]{bitmap, bitmap2};
         } catch (Throwable th2) {
@@ -89,27 +89,27 @@ public final class LM extends AsyncTask<String, Void, Bitmap[]> implements T4 {
         A01();
     }
 
-    public LM(ViewGroup viewGroup, int i, int i6, C1840gi c1840gi) {
+    public LM(ViewGroup viewGroup, int i, int i4, C1860gi c1860gi) {
         this.A03 = false;
         this.A00 = -1;
         this.A01 = -1;
-        this.A07 = new WeakReference<>(c1840gi);
+        this.A07 = new WeakReference<>(c1860gi);
         this.A06 = null;
         this.A08 = null;
         this.A09 = new WeakReference<>(viewGroup);
         this.A04 = i;
-        this.A05 = i6;
+        this.A05 = i4;
     }
 
-    public LM(ViewGroup viewGroup, C1840gi c1840gi) {
-        this(viewGroup, 12, 16, c1840gi);
+    public LM(ViewGroup viewGroup, C1860gi c1860gi) {
+        this(viewGroup, 12, 16, c1860gi);
     }
 
-    public LM(ImageView imageView, C1840gi c1840gi) {
+    public LM(ImageView imageView, C1860gi c1860gi) {
         this.A03 = false;
         this.A00 = -1;
         this.A01 = -1;
-        this.A07 = new WeakReference<>(c1840gi);
+        this.A07 = new WeakReference<>(c1860gi);
         this.A06 = null;
         this.A08 = new WeakReference<>(imageView);
         this.A09 = null;
@@ -117,12 +117,12 @@ public final class LM extends AsyncTask<String, Void, Bitmap[]> implements T4 {
         this.A05 = 1;
     }
 
-    public LM(C1493b5 c1493b5, C1840gi c1840gi) {
+    public LM(C1513b5 c1513b5, C1860gi c1860gi) {
         this.A03 = false;
         this.A00 = -1;
         this.A01 = -1;
-        this.A07 = new WeakReference<>(c1840gi);
-        this.A06 = new WeakReference<>(c1493b5);
+        this.A07 = new WeakReference<>(c1860gi);
+        this.A06 = new WeakReference<>(c1513b5);
         this.A08 = null;
         this.A09 = null;
         this.A04 = 12;
@@ -130,7 +130,7 @@ public final class LM extends AsyncTask<String, Void, Bitmap[]> implements T4 {
     }
 
     private final void A02(Bitmap[] bitmapArr) {
-        C1493b5 c1493b5;
+        C1513b5 c1513b5;
         if (WU.A02(this)) {
             return;
         }
@@ -144,14 +144,14 @@ public final class LM extends AsyncTask<String, Void, Bitmap[]> implements T4 {
                     imageView.setImageBitmap(bitmapArr[0]);
                 }
             }
-            if (this.A06 != null && (c1493b5 = this.A06.get()) != null) {
-                c1493b5.setImage(bitmapArr[0], bitmapArr[1]);
+            if (this.A06 != null && (c1513b5 = this.A06.get()) != null) {
+                c1513b5.setImage(bitmapArr[0], bitmapArr[1]);
             }
             if (this.A09 != null && this.A09.get() != null && bitmapArr[1] != null) {
                 YB.A0V(this.A09.get(), new BitmapDrawable(this.A07.get().getResources(), bitmapArr[1]));
             }
             if (this.A02 != null) {
-                this.A02.AE7(new C1495b7(bitmapArr[0]));
+                this.A02.AE7(new C1515b7(bitmapArr[0]));
             }
         } catch (Throwable th) {
             WU.A00(th, this);
@@ -164,21 +164,21 @@ public final class LM extends AsyncTask<String, Void, Bitmap[]> implements T4 {
         return this;
     }
 
-    public final LM A05(int i, int i6) {
+    public final LM A05(int i, int i4) {
         this.A00 = i;
-        this.A01 = i6;
+        this.A01 = i4;
         return this;
     }
 
-    public final LM A06(InterfaceC1496b8 interfaceC1496b8) {
-        this.A02 = interfaceC1496b8;
+    public final LM A06(InterfaceC1516b8 interfaceC1516b8) {
+        this.A02 = interfaceC1516b8;
         return this;
     }
 
     public final void A07(String str) {
         if (TextUtils.isEmpty(str)) {
             if (this.A02 != null) {
-                this.A02.AE7(new C1495b7(null));
+                this.A02.AE7(new C1515b7(null));
                 return;
             }
             return;
@@ -187,7 +187,7 @@ public final class LM extends AsyncTask<String, Void, Bitmap[]> implements T4 {
     }
 
     @Override // com.instagram.common.viewpoint.core.T4
-    public final C1840gi A6m() {
+    public final C1860gi A6m() {
         return this.A07.get();
     }
 

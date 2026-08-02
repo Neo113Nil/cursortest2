@@ -18,16 +18,16 @@ public final class a extends com.anythink.expressad.foundation.g.f.h.a {
         super.a(str, bVar);
         bVar.a("platform", "1");
         bVar.a(com.anythink.expressad.foundation.g.a.bh, Build.VERSION.RELEASE);
-        bVar.a("package_name", n.i(this.f19352a));
-        bVar.a(com.anythink.expressad.foundation.g.a.bj, n.e(this.f19352a));
+        bVar.a("package_name", n.i(this.f20139a));
+        bVar.a(com.anythink.expressad.foundation.g.a.bj, n.e(this.f20139a));
         StringBuilder sb = new StringBuilder();
-        sb.append(n.d(this.f19352a));
+        sb.append(n.d(this.f20139a));
         bVar.a("app_version_code", sb.toString());
         StringBuilder sb2 = new StringBuilder();
-        sb2.append(n.c(this.f19352a));
+        sb2.append(n.c(this.f20139a));
         bVar.a("orientation", sb2.toString());
         bVar.a("gaid", "");
-        bVar.a(com.anythink.expressad.foundation.g.a.bs, com.anythink.expressad.out.b.f20022a);
+        bVar.a(com.anythink.expressad.foundation.g.a.bs, com.anythink.expressad.out.b.f20809a);
         com.anythink.expressad.f.b.a();
         com.anythink.expressad.foundation.b.a.c().f();
         if (com.anythink.expressad.f.b.b() != null) {

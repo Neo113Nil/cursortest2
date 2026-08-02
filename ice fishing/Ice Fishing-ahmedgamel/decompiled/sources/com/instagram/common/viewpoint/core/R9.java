@@ -57,19 +57,19 @@ public class R9 {
         A01.A02 = A00(A01.A02, j6);
     }
 
-    public final void A07(AbstractC1188Qq abstractC1188Qq) {
+    public final void A07(AbstractC1208Qq abstractC1208Qq) {
         this.A01++;
     }
 
-    public final void A08(AbstractC1188Qq abstractC1188Qq, AbstractC1188Qq abstractC1188Qq2, boolean z3) {
-        if (abstractC1188Qq != null) {
+    public final void A08(AbstractC1208Qq abstractC1208Qq, AbstractC1208Qq abstractC1208Qq2, boolean z6) {
+        if (abstractC1208Qq != null) {
             A04();
         }
-        if (!z3 && this.A01 == 0) {
+        if (!z6 && this.A01 == 0) {
             A02();
         }
-        if (abstractC1188Qq2 != null) {
-            A07(abstractC1188Qq2);
+        if (abstractC1208Qq2 != null) {
+            A07(abstractC1208Qq2);
         }
     }
 

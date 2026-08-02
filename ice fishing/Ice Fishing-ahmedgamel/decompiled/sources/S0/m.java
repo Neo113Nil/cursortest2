@@ -4,15 +4,15 @@ package S0;
 public final class m {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f2799a;
+    public final String f2928a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final J0.h f2800b;
+    public final J0.g f2929b;
 
-    public m(String workSpecId, J0.h progress) {
+    public m(String workSpecId, J0.g progress) {
         kotlin.jvm.internal.h.e(workSpecId, "workSpecId");
         kotlin.jvm.internal.h.e(progress, "progress");
-        this.f2799a = workSpecId;
-        this.f2800b = progress;
+        this.f2928a = workSpecId;
+        this.f2929b = progress;
     }
 }

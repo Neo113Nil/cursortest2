@@ -39,19 +39,19 @@ public abstract class C1A<K, V> extends C2L<K, V> implements BM<K, V> {
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.1A != com.google.common.collect.AbstractListMultimap<K, V> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC0808Bq, com.instagram.common.viewpoint.core.InterfaceC2385q3
+    @Override // com.instagram.common.viewpoint.core.AbstractC0828Bq, com.instagram.common.viewpoint.core.InterfaceC2405q3
     public Map<K, Collection<V>> A4H() {
         return super.A4H();
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.1A != com.google.common.collect.AbstractListMultimap<K, V> */
-    @Override // com.instagram.common.viewpoint.core.C2L, com.instagram.common.viewpoint.core.InterfaceC2385q3
+    @Override // com.instagram.common.viewpoint.core.C2L, com.instagram.common.viewpoint.core.InterfaceC2405q3
     public boolean AHE(@ParametricNullness K key, @ParametricNullness V value) {
         return super.AHE(key, value);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.1A != com.google.common.collect.AbstractListMultimap<K, V> */
-    @Override // com.instagram.common.viewpoint.core.AbstractC0808Bq
+    @Override // com.instagram.common.viewpoint.core.AbstractC0828Bq
     public boolean equals(@CheckForNull Object object) {
         return super.equals(object);
     }

@@ -11,34 +11,34 @@ import org.json.JSONObject;
 public class b implements b.InterfaceC0173b {
 
     /* renamed from: a, reason: collision with root package name */
-    private JSONObject f36330a;
+    private JSONObject f37097a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final com.iab.omid.library.toponad.walking.async.c f36331b;
+    private final com.iab.omid.library.toponad.walking.async.c f37098b;
 
     public b(com.iab.omid.library.toponad.walking.async.c cVar) {
-        this.f36331b = cVar;
+        this.f37098b = cVar;
     }
 
     @Override // com.iab.omid.library.toponad.walking.async.b.InterfaceC0173b
     public JSONObject a() {
-        return this.f36330a;
+        return this.f37097a;
     }
 
     public void b() {
-        this.f36331b.b(new d(this));
+        this.f37098b.b(new d(this));
     }
 
     @Override // com.iab.omid.library.toponad.walking.async.b.InterfaceC0173b
     public void a(JSONObject jSONObject) {
-        this.f36330a = jSONObject;
+        this.f37097a = jSONObject;
     }
 
     public void b(JSONObject jSONObject, HashSet<String> hashSet, long j6) {
-        this.f36331b.b(new f(this, hashSet, jSONObject, j6));
+        this.f37098b.b(new f(this, hashSet, jSONObject, j6));
     }
 
     public void a(JSONObject jSONObject, HashSet<String> hashSet, long j6) {
-        this.f36331b.b(new e(this, hashSet, jSONObject, j6));
+        this.f37098b.b(new e(this, hashSet, jSONObject, j6));
     }
 }

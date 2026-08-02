@@ -4,32 +4,32 @@ package com.anythink.core.common.h;
 public final class bq {
 
     /* renamed from: a, reason: collision with root package name */
-    private String f13742a;
+    private String f14528a;
 
     /* renamed from: b, reason: collision with root package name */
-    private boolean f13743b;
+    private boolean f14529b;
 
     /* renamed from: c, reason: collision with root package name */
-    private Boolean f13744c;
+    private Boolean f14530c;
 
-    public bq(String str, boolean z3) {
-        this.f13742a = str;
-        this.f13743b = z3;
+    public bq(String str, boolean z6) {
+        this.f14528a = str;
+        this.f14529b = z6;
     }
 
-    public final synchronized void a(boolean z3) {
-        this.f13744c = Boolean.valueOf(z3);
+    public final synchronized void a(boolean z6) {
+        this.f14530c = Boolean.valueOf(z6);
     }
 
     public final synchronized boolean b() {
-        return this.f13743b;
+        return this.f14529b;
     }
 
     public final synchronized Boolean c() {
-        return this.f13744c;
+        return this.f14530c;
     }
 
     public final synchronized String a() {
-        return this.f13742a;
+        return this.f14528a;
     }
 }

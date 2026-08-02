@@ -4,25 +4,25 @@ package com.google.android.gms.internal.ads;
 public final class Ey {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f24689a;
+    public final int f25445a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final long f24690b;
+    public final long f25446b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Throwable f24691c;
+    public final Throwable f25447c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f24692d;
+    public final String f25448d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final long f24693e;
+    public final long f25449e;
 
     public Ey(int i, long j6, Throwable th, String str, long j9) {
-        this.f24689a = i;
-        this.f24690b = j6;
-        this.f24691c = th;
-        this.f24692d = str;
-        this.f24693e = j9;
+        this.f25445a = i;
+        this.f25446b = j6;
+        this.f25447c = th;
+        this.f25448d = str;
+        this.f25449e = j9;
     }
 }

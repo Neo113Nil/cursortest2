@@ -1,44 +1,45 @@
 package S0;
 
-import C2.y;
-import S7.AbstractC0406y;
-import S7.C0403v;
-import S7.InterfaceC0404w;
+import S7.AbstractC0410y;
+import S7.C0407v;
+import S7.InterfaceC0408w;
 import S7.Y;
 import S7.h0;
 import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.SparseArray;
-import androidx.fragment.app.AbstractComponentCallbacksC0475s;
-import androidx.fragment.app.N;
-import androidx.fragment.app.S;
-import androidx.fragment.app.V;
+import android.view.ActionMode;
+import android.view.Menu;
+import android.view.MenuItem;
+import androidx.emoji2.text.u;
 import androidx.work.impl.WorkDatabase_Impl;
-import com.google.android.gms.internal.ads.C3675oP;
+import b0.C0515a;
+import b0.C0516b;
+import com.google.android.gms.internal.ads.C3698oP;
 import com.google.android.gms.internal.consent_sdk.B;
-import com.google.android.gms.internal.consent_sdk.C4308d;
-import com.google.android.gms.internal.consent_sdk.C4320g;
-import com.google.android.gms.internal.consent_sdk.C4341l0;
-import com.google.android.gms.internal.consent_sdk.C4344m;
-import com.google.android.gms.internal.consent_sdk.C4352o;
-import com.google.android.gms.internal.consent_sdk.C4362q1;
-import com.google.android.gms.internal.consent_sdk.C4379v;
-import com.google.android.gms.internal.consent_sdk.C4387x;
-import com.google.android.gms.internal.consent_sdk.C4395z;
+import com.google.android.gms.internal.consent_sdk.C4331d;
+import com.google.android.gms.internal.consent_sdk.C4343g;
+import com.google.android.gms.internal.consent_sdk.C4364l0;
+import com.google.android.gms.internal.consent_sdk.C4367m;
+import com.google.android.gms.internal.consent_sdk.C4375o;
+import com.google.android.gms.internal.consent_sdk.C4385q1;
+import com.google.android.gms.internal.consent_sdk.C4402v;
+import com.google.android.gms.internal.consent_sdk.C4410x;
+import com.google.android.gms.internal.consent_sdk.C4418z;
 import com.google.android.gms.internal.consent_sdk.D;
 import com.google.android.gms.internal.consent_sdk.E;
 import com.google.android.gms.internal.consent_sdk.O;
-import g1.C4523c;
 import java.lang.ref.ReferenceQueue;
 import java.lang.reflect.Method;
 import java.net.Socket;
+import java.nio.ByteBuffer;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -47,42 +48,44 @@ import java.util.Map;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.PriorityBlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
-import l1.C4656b;
-import m1.C4729d;
+import k.AbstractC4625b;
+import k.C4629f;
+import k.InterfaceC4624a;
+import l.MenuC4651B;
+import l.t;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import u1.C5062a;
+import w1.C5133a;
 import y8.v;
 import y8.w;
 import y8.x;
 
 /* loaded from: classes.dex */
-public final class n implements D, w {
+public final class n implements D, InterfaceC4624a, w {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f2801n;
+    public final /* synthetic */ int f2930n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final Object f2802u;
+    public final Object f2931u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final Object f2803v;
+    public final Object f2932v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final Object f2804w;
+    public final Object f2933w;
 
     /* renamed from: x, reason: collision with root package name */
-    public Object f2805x;
+    public Object f2934x;
 
     public /* synthetic */ n(Object obj, Object obj2, Object obj3, Object obj4, int i) {
-        this.f2801n = i;
-        this.f2802u = obj;
-        this.f2803v = obj2;
-        this.f2805x = obj4;
-        this.f2804w = obj3;
+        this.f2930n = i;
+        this.f2931u = obj;
+        this.f2932v = obj2;
+        this.f2934x = obj4;
+        this.f2933w = obj3;
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -96,8 +99,8 @@ public final class n implements D, w {
         char c9;
         HashMap hashMap;
         HashMap hashMap2;
-        C4320g c4320g;
-        boolean z3;
+        C4343g c4343g;
+        boolean z6;
         char c10;
         String str2;
         String str3;
@@ -117,7 +120,7 @@ public final class n implements D, w {
             }
             c9 = 65535;
         }
-        Application application = (Application) this.f2802u;
+        Application application = (Application) this.f2931u;
         if (c9 != 0) {
             if (c9 != 1) {
                 return false;
@@ -140,33 +143,33 @@ public final class n implements D, w {
             E.e(application, hashSet);
             return true;
         }
-        C4395z c4395z = new C4395z(application);
+        C4418z c4418z = new C4418z(application);
         Iterator<String> keys = jSONObject.keys();
         while (true) {
             boolean hasNext = keys.hasNext();
-            hashMap = c4395z.f35799a;
-            hashMap2 = c4395z.f35801c;
-            c4320g = (C4320g) this.f2803v;
+            hashMap = c4418z.f36568a;
+            hashMap2 = c4418z.f36570c;
+            c4343g = (C4343g) this.f2932v;
             if (!hasNext) {
                 break;
             }
             String next = keys.next();
             Object opt = jSONObject.opt(next);
             Log.d("UserMessagingPlatform", "Writing to storage: [" + next + "] " + String.valueOf(opt));
-            Context context = c4395z.f35800b;
-            C4344m a9 = E.a(context, next);
+            Context context = c4418z.f36569b;
+            C4367m a9 = E.a(context, next);
             if (a9 != null) {
-                String str5 = (String) a9.f35716n;
+                String str5 = (String) a9.f36485n;
                 if (!hashMap2.containsKey(str5)) {
                     hashMap2.put(str5, context.getSharedPreferences(str5, 0).edit());
                 }
                 SharedPreferences.Editor editor = (SharedPreferences.Editor) hashMap2.get(str5);
-                boolean z6 = opt instanceof Integer;
-                String str6 = (String) a9.f35717u;
-                if (z6) {
+                boolean z9 = opt instanceof Integer;
+                String str6 = (String) a9.f36486u;
+                if (z9) {
                     Integer num2 = (Integer) opt;
                     editor.putInt(str6, num2.intValue());
-                    if (C4395z.f35798d.contains(str6)) {
+                    if (C4418z.f36567d.contains(str6)) {
                         hashMap.put(str6, num2);
                     }
                 } else if (opt instanceof Long) {
@@ -180,11 +183,11 @@ public final class n implements D, w {
                 } else if (opt instanceof String) {
                     editor.putString(str6, (String) opt);
                 }
-                c4320g.f35678c.add(next);
+                c4343g.f36447c.add(next);
             }
             Log.d("UserMessagingPlatform", "Failed writing key: ".concat(String.valueOf(next)));
         }
-        c4320g.f35677b.edit().putStringSet("written_values", c4320g.f35678c).commit();
+        c4343g.f36446b.edit().putStringSet("written_values", c4343g.f36447c).commit();
         Iterator it = hashMap2.values().iterator();
         while (it.hasNext()) {
             ((SharedPreferences.Editor) it.next()).commit();
@@ -192,18 +195,18 @@ public final class n implements D, w {
         if (hashMap.size() <= 1) {
             return true;
         }
-        C4362q1 c4362q1 = (C4362q1) this.f2804w;
-        C4308d c4308d = c4362q1.f35740a;
-        AtomicReference atomicReference = c4308d.f35663g;
+        C4385q1 c4385q1 = (C4385q1) this.f2933w;
+        C4331d c4331d = c4385q1.f36509a;
+        AtomicReference atomicReference = c4331d.f36432g;
         Object obj3 = atomicReference.get();
-        AtomicReference atomicReference2 = c4308d.f35661e;
-        AtomicReference atomicReference3 = c4308d.f35660d;
-        AtomicReference atomicReference4 = c4308d.f35659c;
-        AtomicReference atomicReference5 = c4308d.f35658b;
+        AtomicReference atomicReference2 = c4331d.f36430e;
+        AtomicReference atomicReference3 = c4331d.f36429d;
+        AtomicReference atomicReference4 = c4331d.f36428c;
+        AtomicReference atomicReference5 = c4331d.f36427b;
         if (obj3 != null) {
-            z3 = ((Boolean) atomicReference.get()).booleanValue();
+            z6 = ((Boolean) atomicReference.get()).booleanValue();
         } else {
-            Context context2 = c4308d.f35657a;
+            Context context2 = c4331d.f36426a;
             if (context2 == null) {
                 atomicReference.set(Boolean.FALSE);
             } else {
@@ -218,20 +221,20 @@ public final class n implements D, w {
                     atomicReference3.set(declaredMethod);
                     atomicReference2.set(declaredMethod2);
                     atomicReference.set(Boolean.TRUE);
-                    z3 = true;
+                    z6 = true;
                 } catch (Exception e9) {
                     Log.w("UserMessagingPlatform", "No Firebase class found. ", e9);
                     atomicReference.set(Boolean.FALSE);
                 }
             }
-            z3 = false;
+            z6 = false;
         }
-        if (z3) {
-            Context context3 = c4362q1.f35741b;
-            AtomicReference atomicReference6 = c4308d.f35662f;
+        if (z6) {
+            Context context3 = c4385q1.f36510b;
+            AtomicReference atomicReference6 = c4331d.f36431f;
             if (atomicReference6.get() == null) {
                 try {
-                    atomicReference6.set(V2.c.a(context3).b(128, context3.getPackageName()).metaData);
+                    atomicReference6.set(X2.b.a(context3).f(128, context3.getPackageName()).metaData);
                 } catch (PackageManager.NameNotFoundException | NullPointerException e10) {
                     Log.w("UserMessagingPlatform", "Failed to get metadata. ", e10);
                 }
@@ -360,161 +363,90 @@ public final class n implements D, w {
         return true;
     }
 
-    public synchronized void b(u1.q qVar, u1.r rVar) {
-        C5062a c5062a = (C5062a) ((HashMap) this.f2803v).put(qVar, new C5062a(qVar, rVar, (ReferenceQueue) this.f2804w));
-        if (c5062a != null) {
-            c5062a.f41047c = null;
-            c5062a.clear();
-        }
+    @Override // k.InterfaceC4624a
+    public boolean b(AbstractC4625b abstractC4625b, MenuItem menuItem) {
+        return ((ActionMode.Callback) this.f2931u).onActionItemClicked(k(abstractC4625b), new t((Context) this.f2932v, (I.a) menuItem));
     }
 
     @Override // com.google.android.gms.internal.consent_sdk.D
     /* renamed from: c */
-    public Executor mo6c() {
-        return (B) this.f2805x;
+    public Executor mo4c() {
+        return (B) this.f2934x;
     }
 
     @Override // y8.w
     public x d() {
-        return (z8.d) this.f2804w;
+        return (z8.d) this.f2933w;
+    }
+
+    @Override // k.InterfaceC4624a
+    public boolean e(AbstractC4625b abstractC4625b, l.m mVar) {
+        C4629f k9 = k(abstractC4625b);
+        s.k kVar = (s.k) this.f2934x;
+        Menu menu = (Menu) kVar.getOrDefault(mVar, null);
+        if (menu == null) {
+            menu = new MenuC4651B((Context) this.f2932v, mVar);
+            kVar.put(mVar, menu);
+        }
+        return ((ActionMode.Callback) this.f2931u).onPrepareActionMode(k9, menu);
+    }
+
+    @Override // k.InterfaceC4624a
+    public boolean f(AbstractC4625b abstractC4625b, l.m mVar) {
+        C4629f k9 = k(abstractC4625b);
+        s.k kVar = (s.k) this.f2934x;
+        Menu menu = (Menu) kVar.getOrDefault(mVar, null);
+        if (menu == null) {
+            menu = new MenuC4651B((Context) this.f2932v, mVar);
+            kVar.put(mVar, menu);
+        }
+        return ((ActionMode.Callback) this.f2931u).onCreateActionMode(k9, menu);
     }
 
     @Override // y8.w
-    public v e() {
-        return (z8.c) this.f2805x;
+    public v g() {
+        return (z8.c) this.f2934x;
     }
 
-    public void f(AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s) {
-        if (((ArrayList) this.f2802u).contains(abstractComponentCallbacksC0475s)) {
-            throw new IllegalStateException("Fragment already added: " + abstractComponentCallbacksC0475s);
-        }
-        synchronized (((ArrayList) this.f2802u)) {
-            ((ArrayList) this.f2802u).add(abstractComponentCallbacksC0475s);
-        }
-        abstractComponentCallbacksC0475s.f5031D = true;
+    @Override // k.InterfaceC4624a
+    public void h(AbstractC4625b abstractC4625b) {
+        ((ActionMode.Callback) this.f2931u).onDestroyActionMode(k(abstractC4625b));
     }
 
-    public void g(C5062a c5062a) {
-        u1.x xVar;
+    public synchronized void i(w1.p pVar, w1.q qVar) {
+        C5133a c5133a = (C5133a) ((HashMap) this.f2932v).put(pVar, new C5133a(pVar, qVar, (ReferenceQueue) this.f2933w));
+        if (c5133a != null) {
+            c5133a.f41430c = null;
+            c5133a.clear();
+        }
+    }
+
+    public void j(C5133a c5133a) {
+        w1.w wVar;
         synchronized (this) {
-            ((HashMap) this.f2803v).remove(c5062a.f41045a);
-            if (c5062a.f41046b && (xVar = c5062a.f41047c) != null) {
-                ((u1.l) this.f2805x).e(c5062a.f41045a, new u1.r(xVar, true, false, c5062a.f41045a, (u1.l) this.f2805x));
+            ((HashMap) this.f2932v).remove(c5133a.f41428a);
+            if (c5133a.f41429b && (wVar = c5133a.f41430c) != null) {
+                ((w1.k) this.f2934x).e(c5133a.f41428a, new w1.q(wVar, true, false, c5133a.f41428a, (w1.k) this.f2934x));
             }
         }
     }
 
-    public AbstractComponentCallbacksC0475s h(String str) {
-        V v9 = (V) ((HashMap) this.f2803v).get(str);
-        if (v9 != null) {
-            return v9.f4907c;
-        }
-        return null;
-    }
-
-    public AbstractComponentCallbacksC0475s i(String str) {
-        for (V v9 : ((HashMap) this.f2803v).values()) {
-            if (v9 != null) {
-                AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = v9.f4907c;
-                if (!str.equals(abstractComponentCallbacksC0475s.f5066x)) {
-                    abstractComponentCallbacksC0475s = abstractComponentCallbacksC0475s.f5039M.f4852c.i(str);
-                }
-                if (abstractComponentCallbacksC0475s != null) {
-                    return abstractComponentCallbacksC0475s;
-                }
+    public C4629f k(AbstractC4625b abstractC4625b) {
+        ArrayList arrayList = (ArrayList) this.f2933w;
+        int size = arrayList.size();
+        for (int i = 0; i < size; i++) {
+            C4629f c4629f = (C4629f) arrayList.get(i);
+            if (c4629f != null && c4629f.f38512b == abstractC4625b) {
+                return c4629f;
             }
         }
-        return null;
+        C4629f c4629f2 = new C4629f((Context) this.f2932v, abstractC4625b);
+        arrayList.add(c4629f2);
+        return c4629f2;
     }
 
-    public ArrayList j() {
-        ArrayList arrayList = new ArrayList();
-        for (V v9 : ((HashMap) this.f2803v).values()) {
-            if (v9 != null) {
-                arrayList.add(v9);
-            }
-        }
-        return arrayList;
-    }
-
-    public ArrayList k() {
-        ArrayList arrayList = new ArrayList();
-        for (V v9 : ((HashMap) this.f2803v).values()) {
-            if (v9 != null) {
-                arrayList.add(v9.f4907c);
-            } else {
-                arrayList.add(null);
-            }
-        }
-        return arrayList;
-    }
-
-    public List l() {
-        ArrayList arrayList;
-        if (((ArrayList) this.f2802u).isEmpty()) {
-            return Collections.EMPTY_LIST;
-        }
-        synchronized (((ArrayList) this.f2802u)) {
-            arrayList = new ArrayList((ArrayList) this.f2802u);
-        }
-        return arrayList;
-    }
-
-    public void m(V v9) {
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = v9.f4907c;
-        String str = abstractComponentCallbacksC0475s.f5066x;
-        HashMap hashMap = (HashMap) this.f2803v;
-        if (hashMap.get(str) != null) {
-            return;
-        }
-        hashMap.put(abstractComponentCallbacksC0475s.f5066x, v9);
-        if (N.E(2)) {
-            Log.v("FragmentManager", "Added fragment to active set " + abstractComponentCallbacksC0475s);
-        }
-    }
-
-    public void n(V v9) {
-        AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s = v9.f4907c;
-        if (abstractComponentCallbacksC0475s.f5046T) {
-            ((S) this.f2805x).d(abstractComponentCallbacksC0475s);
-        }
-        HashMap hashMap = (HashMap) this.f2803v;
-        if (hashMap.get(abstractComponentCallbacksC0475s.f5066x) == v9 && ((V) hashMap.put(abstractComponentCallbacksC0475s.f5066x, null)) != null && N.E(2)) {
-            Log.v("FragmentManager", "Removed fragment from active set " + abstractComponentCallbacksC0475s);
-        }
-    }
-
-    public synchronized boolean o(C4729d c4729d) {
-        try {
-            String str = c4729d.f39295u;
-            if (!((HashMap) this.f2802u).containsKey(str)) {
-                ((HashMap) this.f2802u).put(str, null);
-                synchronized (c4729d.f39297w) {
-                    c4729d.f39291E = this;
-                }
-                if (l1.j.f38901a) {
-                    l1.j.b("new request, sending to network %s", str);
-                }
-                return false;
-            }
-            List list = (List) ((HashMap) this.f2802u).get(str);
-            if (list == null) {
-                list = new ArrayList();
-            }
-            c4729d.a("waiting-for-response");
-            list.add(c4729d);
-            ((HashMap) this.f2802u).put(str, list);
-            if (l1.j.f38901a) {
-                l1.j.b("Request for cacheKey=%s is in flight, putting on hold.", str);
-            }
-            return true;
-        } catch (Throwable th) {
-            throw th;
-        }
-    }
-
-    public void p(X.l lVar) {
-        Object e9 = ((U7.c) this.f2804w).e(lVar);
+    public void l(X.l lVar) {
+        Object e9 = ((U7.c) this.f2933w).e(lVar);
         if (e9 instanceof U7.h) {
             Throwable b9 = U7.j.b(e9);
             if (b9 != null) {
@@ -525,60 +457,24 @@ public final class n implements D, w {
         if (e9 instanceof U7.i) {
             throw new IllegalStateException("Check failed.");
         }
-        if (((AtomicInteger) this.f2805x).getAndIncrement() == 0) {
-            AbstractC0406y.o((InterfaceC0404w) this.f2802u, null, new X.i(this, null), 3);
+        if (((AtomicInteger) this.f2934x).getAndIncrement() == 0) {
+            AbstractC0410y.o((InterfaceC0408w) this.f2931u, null, new X.i(this, null), 3);
         }
     }
 
-    public synchronized void q(C4729d c4729d) {
-        PriorityBlockingQueue priorityBlockingQueue;
-        try {
-            String str = c4729d.f39295u;
-            List list = (List) ((HashMap) this.f2802u).remove(str);
-            if (list != null && !list.isEmpty()) {
-                if (l1.j.f38901a) {
-                    l1.j.d("%d waiting requests for cacheKey=%s; resend to network", Integer.valueOf(list.size()), str);
-                }
-                C4729d c4729d2 = (C4729d) list.remove(0);
-                ((HashMap) this.f2802u).put(str, list);
-                synchronized (c4729d2.f39297w) {
-                    c4729d2.f39291E = this;
-                }
-                if (((C4656b) this.f2804w) != null && (priorityBlockingQueue = (PriorityBlockingQueue) this.f2805x) != null) {
-                    try {
-                        priorityBlockingQueue.put(c4729d2);
-                    } catch (InterruptedException e9) {
-                        l1.j.c("Couldn't add request to queue. %s", e9.toString());
-                        Thread.currentThread().interrupt();
-                        C4656b c4656b = (C4656b) this.f2804w;
-                        c4656b.f38886x = true;
-                        c4656b.interrupt();
-                    }
-                }
-            }
-        } catch (Throwable th) {
-            throw th;
-        }
-    }
-
-    public Bundle r(String str, Bundle bundle) {
-        HashMap hashMap = (HashMap) this.f2804w;
-        return bundle != null ? (Bundle) hashMap.put(str, bundle) : (Bundle) hashMap.remove(str);
-    }
-
-    public L2.o s(C3675oP c3675oP) {
+    public N2.p m(C3698oP c3698oP) {
         int i;
         String str;
-        int i6 = c3675oP.f32897a;
-        boolean z3 = i6 == 8;
-        C4320g c4320g = (C4320g) this.f2804w;
-        c4320g.f35677b.edit().putBoolean("is_pub_misconfigured", z3).commit();
-        int i9 = i6 - 1;
-        if (i6 == 0) {
+        int i4 = c3698oP.f33684a;
+        boolean z6 = i4 == 8;
+        C4343g c4343g = (C4343g) this.f2933w;
+        c4343g.f36446b.edit().putBoolean("is_pub_misconfigured", z6).commit();
+        int i6 = i4 - 1;
+        if (i4 == 0) {
             throw null;
         }
-        int i10 = 3;
-        switch (i9) {
+        int i9 = 3;
+        switch (i6) {
             case 1:
             case 2:
             case 3:
@@ -591,58 +487,58 @@ public final class n implements D, w {
                 i = 1;
                 break;
             case 6:
-                throw new C4341l0(1, "Invalid response from server: ".concat(String.valueOf((String) c3675oP.f32901e)));
+                throw new C4364l0(1, "Invalid response from server: ".concat(String.valueOf((String) c3698oP.f33688e)));
             case 7:
-                throw new C4341l0(3, "Publisher misconfiguration: ".concat(String.valueOf((String) c3675oP.f32901e)));
+                throw new C4364l0(3, "Publisher misconfiguration: ".concat(String.valueOf((String) c3698oP.f33688e)));
             default:
-                throw new C4341l0(1, "Invalid response from server.");
+                throw new C4364l0(1, "Invalid response from server.");
         }
-        int i11 = c3675oP.f32898b;
-        int i12 = i11 - 1;
-        if (i11 == 0) {
+        int i10 = c3698oP.f33685b;
+        int i11 = i10 - 1;
+        if (i10 == 0) {
             throw null;
         }
-        if (i12 != 1) {
-            if (i12 != 2) {
-                throw new C4341l0(1, "Invalid response from server.");
+        if (i11 != 1) {
+            if (i11 != 2) {
+                throw new C4364l0(1, "Invalid response from server.");
             }
-            i10 = 2;
+            i9 = 2;
         }
-        String str2 = (String) c3675oP.f32899c;
-        C4352o c4352o = str2 == null ? null : new C4352o((String) c3675oP.f32900d, str2);
-        ((C4387x) this.f2805x).f35782a.set((String) c3675oP.f32904h);
-        c4320g.f35677b.edit().putStringSet("stored_info", new HashSet((List) c3675oP.f32902f)).commit();
-        for (C4379v c4379v : (List) c3675oP.f32903g) {
-            int i13 = c4379v.f35772b;
-            int i14 = i13 - 1;
-            if (i13 == 0) {
+        String str2 = (String) c3698oP.f33686c;
+        C4375o c4375o = str2 == null ? null : new C4375o((String) c3698oP.f33687d, str2);
+        ((C4410x) this.f2934x).f36551a.set((String) c3698oP.f33691h);
+        c4343g.f36446b.edit().putStringSet("stored_info", new HashSet((List) c3698oP.f33689f)).commit();
+        for (C4402v c4402v : (List) c3698oP.f33690g) {
+            int i12 = c4402v.f36541b;
+            int i13 = i12 - 1;
+            if (i12 == 0) {
                 throw null;
             }
-            if (i14 == 0) {
+            if (i13 == 0) {
                 str = null;
-            } else if (i14 == 1) {
+            } else if (i13 == 1) {
                 str = "write";
             } else {
-                if (i14 != 2) {
+                if (i13 != 2) {
                     throw new RuntimeException(null, null);
                 }
                 str = "clear";
             }
             if (str != null) {
-                String str3 = c4379v.f35771a;
-                D[] dArr = {(n) this.f2803v};
-                O o6 = (O) this.f2802u;
-                o6.getClass();
-                o6.f35583a.execute(new y(11, str, str3, dArr));
+                String str3 = c4402v.f36540a;
+                D[] dArr = {(n) this.f2932v};
+                O o4 = (O) this.f2931u;
+                o4.getClass();
+                o4.f36352a.execute(new E2.x(11, str, str3, dArr));
             }
         }
-        return new L2.o(i, i10, c4352o);
+        return new N2.p(i, i9, c4375o);
     }
 
     public String toString() {
-        switch (this.f2801n) {
+        switch (this.f2930n) {
             case 8:
-                String socket = ((Socket) this.f2802u).toString();
+                String socket = ((Socket) this.f2931u).toString();
                 kotlin.jvm.internal.h.d(socket, "toString(...)");
                 return socket;
             default:
@@ -651,63 +547,108 @@ public final class n implements D, w {
     }
 
     public n(int i) {
-        this.f2801n = i;
+        this.f2930n = i;
         switch (i) {
-            case 3:
-                this.f2802u = new ArrayList();
-                this.f2803v = new HashMap();
-                this.f2804w = new HashMap();
-                break;
             case 7:
                 ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor(new L.j(1));
-                this.f2803v = new HashMap();
-                this.f2804w = new ReferenceQueue();
-                this.f2802u = newSingleThreadExecutor;
-                newSingleThreadExecutor.execute(new p3.b(11, this));
+                this.f2932v = new HashMap();
+                this.f2933w = new ReferenceQueue();
+                this.f2931u = newSingleThreadExecutor;
+                newSingleThreadExecutor.execute(new r3.b(11, this));
                 break;
             default:
-                this.f2802u = new s.b();
-                this.f2803v = new SparseArray();
-                this.f2804w = new s.e();
-                this.f2805x = new s.b();
+                this.f2931u = new s.b();
+                this.f2932v = new SparseArray();
+                this.f2933w = new s.e();
+                this.f2934x = new s.b();
                 break;
         }
     }
 
     public n(WorkDatabase_Impl workDatabase_Impl) {
-        this.f2801n = 0;
-        this.f2802u = workDatabase_Impl;
-        this.f2803v = new b(workDatabase_Impl, 4);
-        this.f2804w = new h(workDatabase_Impl, 2);
-        this.f2805x = new h(workDatabase_Impl, 3);
+        this.f2930n = 0;
+        this.f2931u = workDatabase_Impl;
+        this.f2932v = new b(workDatabase_Impl, 4);
+        this.f2933w = new h(workDatabase_Impl, 2);
+        this.f2934x = new h(workDatabase_Impl, 3);
     }
 
-    public n(InterfaceC0404w interfaceC0404w, J0.l lVar, X.n nVar) {
-        this.f2801n = 2;
-        this.f2802u = interfaceC0404w;
-        this.f2803v = nVar;
-        this.f2804w = U7.j.a(Integer.MAX_VALUE, null, 6);
-        this.f2805x = new AtomicInteger(0);
-        Y y7 = (Y) interfaceC0404w.z().m(C0403v.f2998u);
+    public n(InterfaceC0408w interfaceC0408w, J0.k kVar, X.n nVar) {
+        this.f2930n = 2;
+        this.f2931u = interfaceC0408w;
+        this.f2932v = nVar;
+        this.f2933w = U7.j.a(Integer.MAX_VALUE, null, 6);
+        this.f2934x = new AtomicInteger(0);
+        Y y7 = (Y) interfaceC0408w.z().m(C0407v.f3081u);
         if (y7 == null) {
             return;
         }
-        ((h0) y7).G(false, true, new T7.d(1, lVar, this));
+        ((h0) y7).G(false, true, new T7.d(1, kVar, this));
     }
 
     public n(Socket socket) {
-        this.f2801n = 8;
-        this.f2802u = socket;
-        this.f2803v = new AtomicInteger();
-        this.f2804w = new z8.d(this);
-        this.f2805x = new z8.c(this);
+        this.f2930n = 8;
+        this.f2931u = socket;
+        this.f2932v = new AtomicInteger();
+        this.f2933w = new z8.d(this);
+        this.f2934x = new z8.c(this);
     }
 
-    public n(C4656b c4656b, PriorityBlockingQueue priorityBlockingQueue, C4523c c4523c) {
-        this.f2801n = 6;
-        this.f2802u = new HashMap();
-        this.f2803v = c4523c;
-        this.f2804w = c4656b;
-        this.f2805x = priorityBlockingQueue;
+    public n(Typeface typeface, C0516b c0516b) {
+        int i;
+        int i4;
+        int i6;
+        int i9;
+        this.f2930n = 3;
+        this.f2934x = typeface;
+        this.f2931u = c0516b;
+        this.f2933w = new androidx.emoji2.text.r(1024);
+        int a9 = c0516b.a(6);
+        if (a9 != 0) {
+            int i10 = a9 + c0516b.f2130n;
+            i = ((ByteBuffer) c0516b.f2133w).getInt(((ByteBuffer) c0516b.f2133w).getInt(i10) + i10);
+        } else {
+            i = 0;
+        }
+        this.f2932v = new char[i * 2];
+        int a10 = c0516b.a(6);
+        if (a10 != 0) {
+            int i11 = a10 + c0516b.f2130n;
+            i4 = ((ByteBuffer) c0516b.f2133w).getInt(((ByteBuffer) c0516b.f2133w).getInt(i11) + i11);
+        } else {
+            i4 = 0;
+        }
+        for (int i12 = 0; i12 < i4; i12++) {
+            u uVar = new u(this, i12);
+            C0515a b9 = uVar.b();
+            int a11 = b9.a(4);
+            Character.toChars(a11 != 0 ? ((ByteBuffer) b9.f2133w).getInt(a11 + b9.f2130n) : 0, (char[]) this.f2932v, i12 * 2);
+            C0515a b10 = uVar.b();
+            int a12 = b10.a(16);
+            if (a12 != 0) {
+                int i13 = a12 + b10.f2130n;
+                i6 = ((ByteBuffer) b10.f2133w).getInt(((ByteBuffer) b10.f2133w).getInt(i13) + i13);
+            } else {
+                i6 = 0;
+            }
+            A8.b.c("invalid metadata codepoint length", i6 > 0);
+            C0515a b11 = uVar.b();
+            int a13 = b11.a(16);
+            if (a13 != 0) {
+                int i14 = a13 + b11.f2130n;
+                i9 = ((ByteBuffer) b11.f2133w).getInt(((ByteBuffer) b11.f2133w).getInt(i14) + i14);
+            } else {
+                i9 = 0;
+            }
+            ((androidx.emoji2.text.r) this.f2933w).a(uVar, 0, i9 - 1);
+        }
+    }
+
+    public n(Context context, ActionMode.Callback callback) {
+        this.f2930n = 6;
+        this.f2932v = context;
+        this.f2931u = callback;
+        this.f2933w = new ArrayList();
+        this.f2934x = new s.k();
     }
 }

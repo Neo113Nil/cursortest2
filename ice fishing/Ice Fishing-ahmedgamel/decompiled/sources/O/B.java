@@ -7,25 +7,25 @@ import android.view.inputmethod.InputMethodManager;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* loaded from: classes.dex */
-public final class B extends F1.a {
+public final class B extends I0.j {
 
-    /* renamed from: v, reason: collision with root package name */
-    public View f2028v;
+    /* renamed from: x, reason: collision with root package name */
+    public View f2116x;
 
-    /* renamed from: w, reason: collision with root package name */
-    public WindowInsetsController f2029w;
+    /* renamed from: y, reason: collision with root package name */
+    public WindowInsetsController f2117y;
 
     /* JADX WARN: Type inference failed for: r4v0, types: [O.A] */
-    @Override // F1.a
-    public final void p() {
+    @Override // I0.j
+    public final void u() {
         int ime;
-        WindowInsetsController windowInsetsController = this.f2029w;
-        View view = this.f2028v;
+        WindowInsetsController windowInsetsController = this.f2117y;
+        View view = this.f2116x;
         if (windowInsetsController == null) {
             windowInsetsController = view != null ? view.getWindowInsetsController() : null;
         }
         if (windowInsetsController == null) {
-            super.p();
+            super.u();
             return;
         }
         final AtomicBoolean atomicBoolean = new AtomicBoolean(false);

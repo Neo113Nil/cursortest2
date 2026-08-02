@@ -15,16 +15,16 @@ public final class HK {
     public int A00 = -1;
     public int A01 = -1;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 7);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 7);
         }
         return new String(copyOfRange);
     }
 
     public static void A01() {
-        A02 = new byte[]{c.f16317b, 62, 69, 46, 51, 39, Byte.MAX_VALUE, 51, 120, 95, 51, 88, 67, 101, 38, 99, 62, 54, 69, 46, 51, 39, Byte.MAX_VALUE, 51, 120, 95, 51, 88, 67, 101, 38, 99, 55, 62, 54, 69, 46, 51, 39, Byte.MAX_VALUE, 51, 120, 95, 51, 88, 67, 101, 38, 99, 55, 40, 36, 38, 101, 42, 59, 59, 39, 46, 101, 34, 31, 62, 37, 46, 56, 86, 107, 74, 81, 108, 114, 111, 125};
+        A02 = new byte[]{c.f17104b, 62, 69, 46, 51, 39, Byte.MAX_VALUE, 51, 120, 95, 51, 88, 67, 101, 38, 99, 62, 54, 69, 46, 51, 39, Byte.MAX_VALUE, 51, 120, 95, 51, 88, 67, 101, 38, 99, 55, 62, 54, 69, 46, 51, 39, Byte.MAX_VALUE, 51, 120, 95, 51, 88, 67, 101, 38, 99, 55, 40, 36, 38, 101, 42, 59, 59, 39, 46, 101, 34, 31, 62, 37, 46, 56, 86, 107, 74, 81, 108, 114, 111, 125};
     }
 
     static {
@@ -73,9 +73,9 @@ public final class HK {
     public final boolean A05(Metadata metadata) {
         for (int i = 0; i < i; i++) {
             Metadata.Entry A032 = metadata.A03(i);
-            boolean z3 = A032 instanceof CommentFrame;
+            boolean z6 = A032 instanceof CommentFrame;
             String A00 = A00(66, 8, 56);
-            if (z3) {
+            if (z6) {
                 CommentFrame commentFrame = (CommentFrame) A032;
                 if (A00.equals(commentFrame.A00) && A02(commentFrame.A02)) {
                     return true;

@@ -6,36 +6,36 @@ import org.json.JSONObject;
 public final class bc {
 
     /* renamed from: a, reason: collision with root package name */
-    int f13611a;
+    int f14397a;
 
     /* renamed from: b, reason: collision with root package name */
-    boolean f13612b;
+    boolean f14398b;
 
     /* renamed from: c, reason: collision with root package name */
-    String f13613c;
+    String f14399c;
 
     /* renamed from: d, reason: collision with root package name */
-    boolean f13614d;
+    boolean f14400d;
 
     private bc() {
     }
 
-    public static bc a(boolean z3, String str, boolean z6) {
+    public static bc a(boolean z6, String str, boolean z9) {
         bc bcVar = new bc();
-        bcVar.f13611a = 1;
-        bcVar.f13612b = z3;
-        bcVar.f13613c = str;
-        bcVar.f13614d = z6;
+        bcVar.f14397a = 1;
+        bcVar.f14398b = z6;
+        bcVar.f14399c = str;
+        bcVar.f14400d = z9;
         return bcVar;
     }
 
     public final JSONObject a() {
         JSONObject jSONObject = new JSONObject();
         try {
-            jSONObject.put("from", this.f13611a);
-            jSONObject.put("is_playend", this.f13612b ? 1 : 2);
-            jSONObject.put("url", this.f13613c);
-            jSONObject.put("status", this.f13614d ? 1 : 2);
+            jSONObject.put("from", this.f14397a);
+            jSONObject.put("is_playend", this.f14398b ? 1 : 2);
+            jSONObject.put("url", this.f14399c);
+            jSONObject.put("status", this.f14400d ? 1 : 2);
         } catch (Throwable unused) {
         }
         return jSONObject;

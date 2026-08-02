@@ -4,54 +4,54 @@ package com.anythink.basead.g;
 public class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f8982a;
+    public int f9768a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f8983b;
+    public int f9769b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f8984c = 0;
+    public int f9770c = 0;
 
     /* renamed from: d, reason: collision with root package name */
-    public int f8985d;
+    public int f9771d;
 
     /* renamed from: e, reason: collision with root package name */
-    public int f8986e;
+    public int f9772e;
 
     /* renamed from: f, reason: collision with root package name */
-    public boolean f8987f;
+    public boolean f9773f;
 
     /* renamed from: g, reason: collision with root package name */
-    public int f8988g;
+    public int f9774g;
 
     private j a(int i) {
-        this.f8984c = i;
+        this.f9770c = i;
         return this;
     }
 
     private j b(int i) {
-        this.f8985d = i;
+        this.f9771d = i;
         return this;
     }
 
     private j c(int i) {
-        this.f8986e = i;
+        this.f9772e = i;
         return this;
     }
 
     private j d(int i) {
-        this.f8988g = i;
+        this.f9774g = i;
         return this;
     }
 
-    public final j a(int i, int i6) {
-        this.f8982a = i;
-        this.f8983b = i6;
+    public final j a(int i, int i4) {
+        this.f9768a = i;
+        this.f9769b = i4;
         return this;
     }
 
-    private j a(boolean z3) {
-        this.f8987f = z3;
+    private j a(boolean z6) {
+        this.f9773f = z6;
         return this;
     }
 }

@@ -11,33 +11,33 @@ import org.json.JSONObject;
 public class e {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f16740a = "anythink_platform_check";
+    private static final String f17527a = "anythink_platform_check";
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile e f16741b = null;
+    private static volatile e f17528b = null;
 
     /* renamed from: d, reason: collision with root package name */
-    private static volatile int f16742d = -1;
+    private static volatile int f17529d = -1;
 
     /* renamed from: c, reason: collision with root package name */
-    private final JSONObject f16743c = new JSONObject();
+    private final JSONObject f17530c = new JSONObject();
 
     private e() {
     }
 
     public static e a() {
-        if (f16741b == null) {
+        if (f17528b == null) {
             synchronized (e.class) {
                 try {
-                    if (f16741b == null) {
-                        f16741b = new e();
+                    if (f17528b == null) {
+                        f17528b = new e();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16741b;
+        return f17528b;
     }
 
     public final void a(final JSONArray jSONArray) {
@@ -49,7 +49,7 @@ public class e {
                     if (jSONArray2 == null || jSONArray2.length() <= 0) {
                         return;
                     }
-                    if (e.f16742d == -1 || e.f16742d != jSONArray.length()) {
+                    if (e.f17529d == -1 || e.f17529d != jSONArray.length()) {
                         for (int i = 0; i < jSONArray.length(); i++) {
                             JSONObject jSONObject = (JSONObject) jSONArray.get(i);
                             if (jSONObject != null) {
@@ -60,10 +60,10 @@ public class e {
                                 }
                             }
                         }
-                        if (e.this.f16743c.length() > 0) {
-                            Objects.toString(e.this.f16743c);
-                            com.anythink.core.common.u.e.a(e.this.f16743c.toString());
-                            int unused = e.f16742d = jSONArray.length();
+                        if (e.this.f17530c.length() > 0) {
+                            Objects.toString(e.this.f17530c);
+                            com.anythink.core.common.u.e.a(e.this.f17530c.toString());
+                            int unused = e.f17529d = jSONArray.length();
                         }
                     }
                 } catch (Exception e9) {
@@ -83,7 +83,7 @@ public class e {
         try {
             try {
                 Class.forName(str2);
-                this.f16743c.put(str, "");
+                this.f17530c.put(str, "");
             } catch (Throwable unused) {
                 return;
             }
@@ -110,7 +110,7 @@ public class e {
                     if (TextUtils.isEmpty(str3)) {
                         return;
                     }
-                    this.f16743c.put(str, str3);
+                    this.f17530c.put(str, str3);
                     return;
                 }
                 if (c9 != 1) {
@@ -124,7 +124,7 @@ public class e {
                     if (TextUtils.isEmpty(str4)) {
                         return;
                     }
-                    this.f16743c.put(str, str4);
+                    this.f17530c.put(str, str4);
                     return;
                 }
                 Class<?> cls3 = Class.forName(str2);
@@ -138,7 +138,7 @@ public class e {
                     if (TextUtils.isEmpty(str5)) {
                         return;
                     }
-                    this.f16743c.put(str, str5);
+                    this.f17530c.put(str, str5);
                     return;
                 }
                 return;
@@ -168,7 +168,7 @@ public class e {
         try {
             try {
                 Class.forName(str2);
-                eVar.f16743c.put(str, "");
+                eVar.f17530c.put(str, "");
             } catch (Throwable unused) {
                 return;
             }
@@ -195,7 +195,7 @@ public class e {
                     if (TextUtils.isEmpty(str3)) {
                         return;
                     }
-                    eVar.f16743c.put(str, str3);
+                    eVar.f17530c.put(str, str3);
                     return;
                 }
                 if (c9 != 1) {
@@ -209,7 +209,7 @@ public class e {
                     if (TextUtils.isEmpty(str4)) {
                         return;
                     }
-                    eVar.f16743c.put(str, str4);
+                    eVar.f17530c.put(str, str4);
                     return;
                 }
                 Class<?> cls3 = Class.forName(str2);
@@ -223,7 +223,7 @@ public class e {
                     if (TextUtils.isEmpty(str5)) {
                         return;
                     }
-                    eVar.f16743c.put(str, str5);
+                    eVar.f17530c.put(str, str5);
                     return;
                 }
                 return;

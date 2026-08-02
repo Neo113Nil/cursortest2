@@ -6,9 +6,9 @@ import android.content.Context;
 public interface k {
     Context getContext();
 
-    InterfaceC4586c getNotification();
+    InterfaceC4595c getNotification();
 
     void preventDefault();
 
-    void preventDefault(boolean z3);
+    void preventDefault(boolean z6);
 }

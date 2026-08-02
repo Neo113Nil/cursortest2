@@ -21,19 +21,19 @@ public class ToolBar extends LinearLayout {
         setPadding(0, b9, 0, b9);
         ImageView imageView = (ImageView) b();
         imageView.setTag(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.BACKWARD);
-        imageView.setImageDrawable(getResources().getDrawable(k.a(getContext(), "anythink_expressad_backward", k.f19632c)));
+        imageView.setImageDrawable(getResources().getDrawable(k.a(getContext(), "anythink_expressad_backward", k.f20419c)));
         addView(imageView);
         ImageView imageView2 = (ImageView) b();
         imageView2.setTag(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.FORWARD);
-        imageView2.setImageDrawable(getResources().getDrawable(k.a(getContext(), "anythink_expressad_forward", k.f19632c)));
+        imageView2.setImageDrawable(getResources().getDrawable(k.a(getContext(), "anythink_expressad_forward", k.f20419c)));
         addView(imageView2);
         ImageView imageView3 = (ImageView) b();
         imageView3.setTag(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.REFRESH);
-        imageView3.setImageDrawable(getResources().getDrawable(k.a(getContext(), "anythink_expressad_refresh", k.f19632c)));
+        imageView3.setImageDrawable(getResources().getDrawable(k.a(getContext(), "anythink_expressad_refresh", k.f20419c)));
         addView(imageView3);
         ImageView imageView4 = (ImageView) b();
         imageView4.setTag(com.anythink.expressad.atsignalcommon.commonwebview.ToolBar.EXITS);
-        imageView4.setImageDrawable(getResources().getDrawable(k.a(getContext(), "anythink_expressad_exits", k.f19632c)));
+        imageView4.setImageDrawable(getResources().getDrawable(k.a(getContext(), "anythink_expressad_exits", k.f20419c)));
         addView(imageView4);
     }
 

@@ -6,10 +6,10 @@ public final class T3 {
     public int A01;
     public boolean A02;
 
-    public T3(boolean z3, int i, int i6) {
-        this.A02 = z3;
+    public T3(boolean z6, int i, int i4) {
+        this.A02 = z6;
         this.A01 = i;
-        this.A00 = i6;
+        this.A00 = i4;
     }
 
     public final int A00() {

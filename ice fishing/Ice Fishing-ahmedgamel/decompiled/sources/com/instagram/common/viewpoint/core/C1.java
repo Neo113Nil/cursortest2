@@ -7,7 +7,7 @@ public final /* synthetic */ class C1 implements Comparator {
     @Override // java.util.Comparator
     public final int compare(Object obj, Object obj2) {
         int A00;
-        A00 = C2.A00((C0802Bk) obj, (C0802Bk) obj2);
+        A00 = C2.A00((C0822Bk) obj, (C0822Bk) obj2);
         return A00;
     }
 }

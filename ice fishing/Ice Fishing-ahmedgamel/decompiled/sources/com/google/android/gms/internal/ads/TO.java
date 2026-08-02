@@ -4,25 +4,25 @@ package com.google.android.gms.internal.ads;
 public final class TO {
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f27736a;
+    public final boolean f28519a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f27737b;
+    public final boolean f28520b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final boolean f27738c;
+    public final boolean f28521c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f27739d;
+    public final int f28522d;
 
     static {
         new SO().a();
     }
 
     public /* synthetic */ TO(SO so) {
-        this.f27736a = so.f27479b;
-        this.f27737b = so.f27480c;
-        this.f27738c = so.f27481d;
-        this.f27739d = so.f27478a;
+        this.f28519a = so.f28192b;
+        this.f28520b = so.f28193c;
+        this.f28521c = so.f28194d;
+        this.f28522d = so.f28191a;
     }
 }

@@ -44,8 +44,8 @@ public abstract class f {
         }
     }
 
-    public final void setRefresh(boolean z3) {
-        this.isRefresh = z3;
+    public final void setRefresh(boolean z6) {
+        this.isRefresh = z6;
     }
 
     public void setTrackingInfo(com.anythink.core.common.h.n nVar) {

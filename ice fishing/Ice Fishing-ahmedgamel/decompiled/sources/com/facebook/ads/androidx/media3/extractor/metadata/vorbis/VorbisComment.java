@@ -2,11 +2,11 @@ package com.facebook.ads.androidx.media3.extractor.metadata.vorbis;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import com.instagram.common.viewpoint.core.C0974Ie;
+import com.instagram.common.viewpoint.core.C0994Ie;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public final class VorbisComment extends com.facebook.ads.androidx.media3.extractor.metadata.flac.VorbisComment {
-    public static final Parcelable.Creator<VorbisComment> CREATOR = new C0974Ie();
+    public static final Parcelable.Creator<VorbisComment> CREATOR = new C0994Ie();
 
     public VorbisComment(Parcel parcel) {
         super(parcel);

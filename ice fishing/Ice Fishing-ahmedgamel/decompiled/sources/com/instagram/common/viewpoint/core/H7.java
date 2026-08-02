@@ -13,10 +13,10 @@ public abstract class H7 {
     public static final int[] A03;
     public static final int[] A04;
 
-    public static String A05(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 125);
+    public static String A05(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 125);
         }
         return new String(copyOfRange);
     }
@@ -29,7 +29,7 @@ public abstract class H7 {
         A06();
         A02 = new int[]{1, 2, 2, 2, 2, 3, 3, 4, 4, 5, 6, 6, 6, 7, 8, 8};
         A03 = new int[]{-1, 8000, 16000, 32000, -1, -1, 11025, 22050, 44100, -1, -1, 12000, 24000, 48000, -1, -1};
-        A04 = new int[]{64, 112, 128, 192, 224, 256, 384, p.a.f19675a, 512, 640, 768, 896, 1024, 1152, 1280, 1536, 1920, 2048, 2304, 2560, 2688, 2816, 2823, 2944, 3072, 3840, 4096, 6144, 7680};
+        A04 = new int[]{64, 112, 128, 192, 224, 256, 384, p.a.f20462a, 512, 640, 768, 896, 1024, 1152, 1280, 1536, 1920, 2048, 2304, 2560, 2688, 2816, 2823, 2944, 3072, 3840, 4096, 6144, 7680};
     }
 
     public static int A00(ByteBuffer byteBuffer) {
@@ -45,21 +45,21 @@ public abstract class H7 {
                 break;
             case -1:
                 int position5 = position + 4;
-                int i6 = (byteBuffer.get(position5) & 7) << 4;
+                int i4 = (byteBuffer.get(position5) & 7) << 4;
                 int position6 = position + 7;
-                nblks = i6 | ((byteBuffer.get(position6) & 60) >> 2);
+                nblks = i4 | ((byteBuffer.get(position6) & 60) >> 2);
                 break;
             case 31:
                 int position7 = position + 5;
-                int i9 = (byteBuffer.get(position7) & 7) << 4;
+                int i6 = (byteBuffer.get(position7) & 7) << 4;
                 int position8 = position + 6;
-                nblks = i9 | ((byteBuffer.get(position8) & 60) >> 2);
+                nblks = i6 | ((byteBuffer.get(position8) & 60) >> 2);
                 break;
             default:
                 int position9 = position + 4;
-                int i10 = (byteBuffer.get(position9) & 1) << 6;
+                int i9 = (byteBuffer.get(position9) & 1) << 6;
                 int position10 = position + 5;
-                nblks = i10 | ((byteBuffer.get(position10) & 252) >> 2);
+                nblks = i9 | ((byteBuffer.get(position10) & 252) >> 2);
                 break;
         }
         int position11 = nblks + 1;
@@ -68,7 +68,7 @@ public abstract class H7 {
 
     public static int A01(byte[] bArr) {
         int i;
-        boolean z3 = false;
+        boolean z6 = false;
         switch (bArr[0]) {
             case -2:
                 byte b9 = bArr[4];
@@ -83,17 +83,17 @@ public abstract class H7 {
                 break;
             case -1:
                 i = (((bArr[7] & 3) << 12) | ((bArr[6] & 255) << 4) | ((bArr[9] & 60) >> 2)) + 1;
-                z3 = true;
+                z6 = true;
                 break;
             case 31:
                 i = (((bArr[6] & 3) << 12) | ((bArr[7] & 255) << 4) | ((bArr[8] & 60) >> 2)) + 1;
-                z3 = true;
+                z6 = true;
                 break;
             default:
                 i = (((bArr[5] & 3) << 12) | ((bArr[6] & 255) << 4) | ((bArr[7] & 240) >> 4)) + 1;
                 break;
         }
-        return z3 ? (i * 16) / 14 : i;
+        return z6 ? (i * 16) / 14 : i;
     }
 
     public static int A02(byte[] bArr) {
@@ -117,9 +117,9 @@ public abstract class H7 {
         return nblks2 * 32;
     }
 
-    public static C2400qI A03(byte[] bArr, String str, String str2, DrmInitData drmInitData) {
+    public static C2420qI A03(byte[] bArr, String str, String str2, DrmInitData drmInitData) {
         int i;
-        C06464u A042 = A04(bArr);
+        C06664u A042 = A04(bArr);
         A042.A09(60);
         int amode = A042.A04(6);
         int bitrate = A02[amode];
@@ -134,12 +134,12 @@ public abstract class H7 {
         A042.A09(10);
         int amode4 = A042.A04(2);
         int amode5 = amode4 > 0 ? 1 : 0;
-        return new C05912p().A0y(str).A11(A05(0, 13, 27)).A0a(i).A0b(bitrate + amode5).A0m(rate).A0u(drmInitData).A10(str2).A14();
+        return new C06112p().A0y(str).A11(A05(0, 13, 27)).A0a(i).A0b(bitrate + amode5).A0m(rate).A0u(drmInitData).A10(str2).A14();
     }
 
-    public static C06464u A04(byte[] bArr) {
+    public static C06664u A04(byte[] bArr) {
         if (bArr[0] == Byte.MAX_VALUE) {
-            return new C06464u(bArr);
+            return new C06664u(bArr);
         }
         byte[] copyOf = Arrays.copyOf(bArr, bArr.length);
         if (A08(copyOf)) {
@@ -149,23 +149,23 @@ public abstract class H7 {
                 copyOf[i + 1] = b9;
             }
         }
-        C06464u c06464u = new C06464u(copyOf);
+        C06664u c06664u = new C06664u(copyOf);
         if (copyOf[0] == 31) {
-            C06464u c06464u2 = new C06464u(copyOf);
-            while (c06464u2.A01() >= 16) {
-                c06464u2.A09(2);
-                int A042 = c06464u2.A04(14);
+            C06664u c06664u2 = new C06664u(copyOf);
+            while (c06664u2.A01() >= 16) {
+                c06664u2.A09(2);
+                int A042 = c06664u2.A04(14);
                 if (A01[4].length() == 13) {
                     throw new RuntimeException();
                 }
                 String[] strArr = A01;
                 strArr[1] = "nbIesC19CiuPXGAO1XmsVCjTSWLNlLKJ";
                 strArr[7] = "ltOJbsz7vYOuZPV8QSj4f10zt4SJvXCJ";
-                c06464u.A0B(A042, 14);
+                c06664u.A0B(A042, 14);
             }
         }
-        c06464u.A0D(copyOf);
-        return c06464u;
+        c06664u.A0D(copyOf);
+        return c06664u;
     }
 
     public static boolean A07(int i) {

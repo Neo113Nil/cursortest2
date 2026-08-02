@@ -3,24 +3,24 @@ package a7;
 import java.util.concurrent.ConcurrentHashMap;
 
 /* loaded from: classes2.dex */
-public final class k extends com.bumptech.glide.d {
+public final class k extends com.bumptech.glide.e {
 
     /* renamed from: d, reason: collision with root package name */
-    public static final ConcurrentHashMap f4376d = new ConcurrentHashMap();
+    public static final ConcurrentHashMap f4344d = new ConcurrentHashMap();
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f4377a;
+    public final String f4345a;
 
     /* renamed from: b, reason: collision with root package name */
-    public volatile String f4378b;
+    public volatile String f4346b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final j f4379c;
+    public final j f4347c;
 
     public k(j jVar) {
-        String str = jVar.f4374n;
-        this.f4378b = null;
-        this.f4377a = str;
-        this.f4379c = jVar;
+        String str = jVar.f4342n;
+        this.f4346b = null;
+        this.f4345a = str;
+        this.f4347c = jVar;
     }
 }

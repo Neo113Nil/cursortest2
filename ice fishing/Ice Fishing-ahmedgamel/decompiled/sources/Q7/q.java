@@ -1,41 +1,41 @@
 package Q7;
 
-import L3.F;
+import w.AbstractC5128c;
 
 /* loaded from: classes2.dex */
 public abstract class q extends p {
-    public static boolean K(String str, String suffix) {
+    public static boolean a0(String str, String suffix) {
         kotlin.jvm.internal.h.e(str, "<this>");
         kotlin.jvm.internal.h.e(suffix, "suffix");
         return str.endsWith(suffix);
     }
 
-    public static boolean L(String str, String str2) {
+    public static boolean b0(String str, String str2) {
         return str == null ? str2 == null : str.equalsIgnoreCase(str2);
     }
 
-    public static final void M(String str) {
-        throw new NumberFormatException(u1.h.b('\'', "Invalid number format: '", str));
+    public static final void c0(String str) {
+        throw new NumberFormatException(AbstractC5128c.b('\'', "Invalid number format: '", str));
     }
 
-    public static boolean N(int i, int i6, int i9, String str, String other, boolean z3) {
+    public static boolean d0(int i, int i4, int i6, String str, String other, boolean z6) {
         kotlin.jvm.internal.h.e(str, "<this>");
         kotlin.jvm.internal.h.e(other, "other");
-        return !z3 ? str.regionMatches(i, other, i6, i9) : str.regionMatches(z3, i, other, i6, i9);
+        return !z6 ? str.regionMatches(i, other, i4, i6) : str.regionMatches(z6, i, other, i4, i6);
     }
 
-    public static String O(String str, char c9, char c10) {
+    public static String e0(String str, char c9, char c10) {
         kotlin.jvm.internal.h.e(str, "<this>");
         String replace = str.replace(c9, c10);
         kotlin.jvm.internal.h.d(replace, "replace(...)");
         return replace;
     }
 
-    public static String P(String str, String str2, String newValue) {
+    public static String f0(String str, String str2, String newValue) {
         kotlin.jvm.internal.h.e(str, "<this>");
         kotlin.jvm.internal.h.e(newValue, "newValue");
-        int Y = j.Y(str, str2, 0, false);
-        if (Y < 0) {
+        int o02 = j.o0(str, str2, 0, false);
+        if (o02 < 0) {
             return str;
         }
         int length = str2.length();
@@ -45,98 +45,98 @@ public abstract class q extends p {
             throw new OutOfMemoryError();
         }
         StringBuilder sb = new StringBuilder(length2);
-        int i6 = 0;
+        int i4 = 0;
         do {
-            sb.append((CharSequence) str, i6, Y);
+            sb.append((CharSequence) str, i4, o02);
             sb.append(newValue);
-            i6 = Y + length;
-            if (Y >= str.length()) {
+            i4 = o02 + length;
+            if (o02 >= str.length()) {
                 break;
             }
-            Y = j.Y(str, str2, Y + i, false);
-        } while (Y > 0);
-        sb.append((CharSequence) str, i6, str.length());
+            o02 = j.o0(str, str2, o02 + i, false);
+        } while (o02 > 0);
+        sb.append((CharSequence) str, i4, str.length());
         String sb2 = sb.toString();
         kotlin.jvm.internal.h.d(sb2, "toString(...)");
         return sb2;
     }
 
-    public static boolean Q(String str, int i, String str2, boolean z3) {
+    public static boolean g0(String str, int i, String str2, boolean z6) {
         kotlin.jvm.internal.h.e(str, "<this>");
-        return !z3 ? str.startsWith(str2, i) : N(i, 0, str2.length(), str, str2, z3);
+        return !z6 ? str.startsWith(str2, i) : d0(i, 0, str2.length(), str, str2, z6);
     }
 
-    public static boolean R(String str, String prefix) {
+    public static boolean h0(String str, String prefix) {
         kotlin.jvm.internal.h.e(str, "<this>");
         kotlin.jvm.internal.h.e(prefix, "prefix");
         return str.startsWith(prefix);
     }
 
-    public static Integer S(String str) {
-        boolean z3;
+    public static Integer i0(String str) {
+        boolean z6;
         int i;
-        int i6;
+        int i4;
         kotlin.jvm.internal.h.e(str, "<this>");
-        F.g(10);
+        A8.b.f(10);
         int length = str.length();
         if (length == 0) {
             return null;
         }
-        int i9 = 0;
+        int i6 = 0;
         char charAt = str.charAt(0);
-        int i10 = -2147483647;
+        int i9 = -2147483647;
         if (kotlin.jvm.internal.h.f(charAt, 48) < 0) {
             i = 1;
             if (length == 1) {
                 return null;
             }
             if (charAt == '+') {
-                z3 = false;
+                z6 = false;
             } else {
                 if (charAt != '-') {
                     return null;
                 }
-                i10 = Integer.MIN_VALUE;
-                z3 = true;
+                i9 = Integer.MIN_VALUE;
+                z6 = true;
             }
         } else {
-            z3 = false;
+            z6 = false;
             i = 0;
         }
-        int i11 = -59652323;
+        int i10 = -59652323;
         while (i < length) {
             int digit = Character.digit((int) str.charAt(i), 10);
             if (digit < 0) {
                 return null;
             }
-            if ((i9 < i11 && (i11 != -59652323 || i9 < (i11 = i10 / 10))) || (i6 = i9 * 10) < i10 + digit) {
+            if ((i6 < i10 && (i10 != -59652323 || i6 < (i10 = i9 / 10))) || (i4 = i6 * 10) < i9 + digit) {
                 return null;
             }
-            i9 = i6 - digit;
+            i6 = i4 - digit;
             i++;
         }
-        return z3 ? Integer.valueOf(i9) : Integer.valueOf(-i9);
+        return z6 ? Integer.valueOf(i6) : Integer.valueOf(-i6);
     }
 
-    public static Long T(String str) {
-        boolean z3;
+    public static Long j0(String str) {
+        boolean z6;
         kotlin.jvm.internal.h.e(str, "<this>");
-        F.g(10);
+        A8.b.f(10);
         int length = str.length();
         if (length == 0) {
             return null;
         }
         int i = 0;
         char charAt = str.charAt(0);
-        int f3 = kotlin.jvm.internal.h.f(charAt, 48);
-        long j6 = com.anythink.basead.exoplayer.b.f6382b;
-        if (f3 < 0) {
-            z3 = true;
+        int f2 = kotlin.jvm.internal.h.f(charAt, 48);
+        long j6 = com.anythink.basead.exoplayer.b.f7168b;
+        if (f2 < 0) {
+            z6 = true;
             if (length == 1) {
                 return null;
             }
             if (charAt == '+') {
-                z3 = false;
+                z6 = false;
                 i = 1;
             } else {
                 if (charAt != '-') {
@@ -146,7 +146,7 @@ public abstract class q extends p {
                 i = 1;
             }
         } else {
-            z3 = false;
+            z6 = false;
         }
         long j9 = 0;
         long j10 = -256204778801521550L;
@@ -172,6 +172,6 @@ public abstract class q extends p {
             j9 = j11 - j12;
             i++;
         }
-        return z3 ? Long.valueOf(j9) : Long.valueOf(-j9);
+        return z6 ? Long.valueOf(j9) : Long.valueOf(-j9);
     }
 }

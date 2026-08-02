@@ -1,6 +1,6 @@
 package F;
 
-import C2.N;
+import E2.M;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
@@ -25,33 +25,33 @@ import org.xmlpull.v1.XmlPullParserException;
 public abstract class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final float[][] f845a = {new float[]{0.401288f, 0.650173f, -0.051461f}, new float[]{-0.250268f, 1.204414f, 0.045854f}, new float[]{-0.002079f, 0.048952f, 0.953127f}};
+    public static final float[][] f908a = {new float[]{0.401288f, 0.650173f, -0.051461f}, new float[]{-0.250268f, 1.204414f, 0.045854f}, new float[]{-0.002079f, 0.048952f, 0.953127f}};
 
     /* renamed from: b, reason: collision with root package name */
-    public static final float[][] f846b = {new float[]{1.8620678f, -1.0112547f, 0.14918678f}, new float[]{0.38752654f, 0.62144744f, -0.00897398f}, new float[]{-0.0158415f, -0.03412294f, 1.0499644f}};
+    public static final float[][] f909b = {new float[]{1.8620678f, -1.0112547f, 0.14918678f}, new float[]{0.38752654f, 0.62144744f, -0.00897398f}, new float[]{-0.0158415f, -0.03412294f, 1.0499644f}};
 
     /* renamed from: c, reason: collision with root package name */
-    public static final float[] f847c = {95.047f, 100.0f, 108.883f};
+    public static final float[] f910c = {95.047f, 100.0f, 108.883f};
 
     /* renamed from: d, reason: collision with root package name */
-    public static final float[][] f848d = {new float[]{0.41233894f, 0.35762063f, 0.18051042f}, new float[]{0.2126f, 0.7152f, 0.0722f}, new float[]{0.01932141f, 0.11916382f, 0.9503448f}};
+    public static final float[][] f911d = {new float[]{0.41233894f, 0.35762063f, 0.18051042f}, new float[]{0.2126f, 0.7152f, 0.0722f}, new float[]{0.01932141f, 0.11916382f, 0.9503448f}};
 
     /* renamed from: e, reason: collision with root package name */
-    public static final Object f849e = new Object();
+    public static final Object f912e = new Object();
 
     /* renamed from: f, reason: collision with root package name */
-    public static Method f850f;
+    public static Method f913f;
 
     /* renamed from: g, reason: collision with root package name */
-    public static boolean f851g;
+    public static boolean f914g;
 
     public static d b(TypedArray typedArray, XmlPullParser xmlPullParser, Resources.Theme theme, String str, int i) {
         d dVar;
         if (xmlPullParser.getAttributeValue("http://schemas.android.com/apk/res/android", str) != null) {
             TypedValue typedValue = new TypedValue();
             typedArray.getValue(i, typedValue);
-            int i6 = typedValue.type;
-            if (i6 >= 28 && i6 <= 31) {
+            int i4 = typedValue.type;
+            if (i4 >= 28 && i4 <= 31) {
                 return new d((Shader) null, (ColorStateList) null, typedValue.data);
             }
             try {
@@ -71,28 +71,28 @@ public abstract class b {
         return xmlPullParser.getAttributeValue("http://schemas.android.com/apk/res/android", str) != null;
     }
 
-    public static int d(float f3) {
-        if (f3 < 1.0f) {
+    public static int d(float f2) {
+        if (f2 < 1.0f) {
             return -16777216;
         }
-        if (f3 > 99.0f) {
+        if (f2 > 99.0f) {
             return -1;
         }
-        float f9 = (f3 + 16.0f) / 116.0f;
-        float f10 = f3 > 8.0f ? f9 * f9 * f9 : f3 / 903.2963f;
+        float f9 = (f2 + 16.0f) / 116.0f;
+        float f10 = f2 > 8.0f ? f9 * f9 * f9 : f2 / 903.2963f;
         float f11 = f9 * f9 * f9;
-        boolean z3 = f11 > 0.008856452f;
-        float f12 = z3 ? f11 : ((f9 * 116.0f) - 16.0f) / 903.2963f;
-        if (!z3) {
+        boolean z6 = f11 > 0.008856452f;
+        float f12 = z6 ? f11 : ((f9 * 116.0f) - 16.0f) / 903.2963f;
+        if (!z6) {
             f11 = ((f9 * 116.0f) - 16.0f) / 903.2963f;
         }
-        float[] fArr = f847c;
+        float[] fArr = f910c;
         return G.c.a(f12 * fArr[0], f10 * fArr[1], f11 * fArr[2]);
     }
 
     public static float e(int i) {
-        float f3 = i / 255.0f;
-        return (f3 <= 0.04045f ? f3 / 12.92f : (float) Math.pow((f3 + 0.055f) / 1.055f, 2.4000000953674316d)) * 100.0f;
+        float f2 = i / 255.0f;
+        return (f2 <= 0.04045f ? f2 / 12.92f : (float) Math.pow((f2 + 0.055f) / 1.055f, 2.4000000953674316d)) * 100.0f;
     }
 
     public static TypedArray f(Resources resources, Resources.Theme theme, AttributeSet attributeSet, int[] iArr) {
@@ -115,7 +115,7 @@ public abstract class b {
             k(xmlResourceParser);
             return null;
         }
-        TypedArray obtainAttributes = resources.obtainAttributes(Xml.asAttributeSet(xmlResourceParser), C.a.f240b);
+        TypedArray obtainAttributes = resources.obtainAttributes(Xml.asAttributeSet(xmlResourceParser), C.a.f306b);
         String string = obtainAttributes.getString(0);
         String string2 = obtainAttributes.getString(4);
         String string3 = obtainAttributes.getString(5);
@@ -128,26 +128,26 @@ public abstract class b {
             while (xmlResourceParser.next() != 3) {
                 k(xmlResourceParser);
             }
-            return new i(new N(string, string2, string3, j(resources, resourceId)), integer, integer2, string4);
+            return new i(new M(string, string2, string3, j(resources, resourceId)), integer, integer2, string4);
         }
         ArrayList arrayList = new ArrayList();
         while (xmlResourceParser.next() != 3) {
             if (xmlResourceParser.getEventType() == 2) {
                 if (xmlResourceParser.getName().equals("font")) {
-                    TypedArray obtainAttributes2 = resources.obtainAttributes(Xml.asAttributeSet(xmlResourceParser), C.a.f241c);
+                    TypedArray obtainAttributes2 = resources.obtainAttributes(Xml.asAttributeSet(xmlResourceParser), C.a.f307c);
                     int i = obtainAttributes2.getInt(obtainAttributes2.hasValue(8) ? 8 : 1, 400);
-                    boolean z3 = 1 == obtainAttributes2.getInt(obtainAttributes2.hasValue(6) ? 6 : 2, 0);
-                    int i6 = obtainAttributes2.hasValue(9) ? 9 : 3;
+                    boolean z6 = 1 == obtainAttributes2.getInt(obtainAttributes2.hasValue(6) ? 6 : 2, 0);
+                    int i4 = obtainAttributes2.hasValue(9) ? 9 : 3;
                     String string5 = obtainAttributes2.getString(obtainAttributes2.hasValue(7) ? 7 : 4);
-                    int i9 = obtainAttributes2.getInt(i6, 0);
-                    int i10 = obtainAttributes2.hasValue(5) ? 5 : 0;
-                    int resourceId2 = obtainAttributes2.getResourceId(i10, 0);
-                    String string6 = obtainAttributes2.getString(i10);
+                    int i6 = obtainAttributes2.getInt(i4, 0);
+                    int i9 = obtainAttributes2.hasValue(5) ? 5 : 0;
+                    int resourceId2 = obtainAttributes2.getResourceId(i9, 0);
+                    String string6 = obtainAttributes2.getString(i9);
                     obtainAttributes2.recycle();
                     while (xmlResourceParser.next() != 3) {
                         k(xmlResourceParser);
                     }
-                    arrayList.add(new h(i, i9, resourceId2, string6, string5, z3));
+                    arrayList.add(new h(i, i6, resourceId2, string6, string5, z6));
                 } else {
                     k(xmlResourceParser);
                 }
@@ -170,8 +170,8 @@ public abstract class b {
             }
             ArrayList arrayList = new ArrayList();
             if (e.a(obtainTypedArray, 0) == 1) {
-                for (int i6 = 0; i6 < obtainTypedArray.length(); i6++) {
-                    int resourceId = obtainTypedArray.getResourceId(i6, 0);
+                for (int i4 = 0; i4 < obtainTypedArray.length(); i4++) {
+                    int resourceId = obtainTypedArray.getResourceId(i4, 0);
                     if (resourceId != 0) {
                         String[] stringArray = resources.getStringArray(resourceId);
                         ArrayList arrayList2 = new ArrayList();

@@ -22,10 +22,10 @@ import java.util.TreeSet;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final com.anythink.core.common.n.c.f f15054a = com.anythink.core.common.n.c.f.a("\"\\");
+    private static final com.anythink.core.common.n.c.f f15841a = com.anythink.core.common.n.c.f.a("\"\\");
 
     /* renamed from: b, reason: collision with root package name */
-    private static final com.anythink.core.common.n.c.f f15055b = com.anythink.core.common.n.c.f.a("\t ,=");
+    private static final com.anythink.core.common.n.c.f f15842b = com.anythink.core.common.n.c.f.a("\t ,=");
 
     private e() {
     }
@@ -57,7 +57,7 @@ public final class e {
 
     private static String d(com.anythink.core.common.n.c.c cVar) {
         try {
-            long c9 = cVar.c(f15055b);
+            long c9 = cVar.c(f15842b);
             if (c9 == -1) {
                 c9 = cVar.b();
             }
@@ -105,7 +105,7 @@ public final class e {
     private static u a(u uVar, u uVar2) {
         Set<String> c9 = c(uVar2);
         if (c9.isEmpty()) {
-            return com.anythink.core.common.n.b.a.c.f15038c;
+            return com.anythink.core.common.n.b.a.c.f15825c;
         }
         u.a aVar = new u.a();
         int a9 = uVar.a();
@@ -145,7 +145,7 @@ public final class e {
         u c9 = afVar.i().a().c();
         Set<String> c10 = c(afVar.f());
         if (c10.isEmpty()) {
-            return com.anythink.core.common.n.b.a.c.f15038c;
+            return com.anythink.core.common.n.b.a.c.f15825c;
         }
         u.a aVar = new u.a();
         int a9 = c9.a();
@@ -180,10 +180,10 @@ public final class e {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private static void a(List<com.anythink.core.common.n.b.h> list, com.anythink.core.common.n.c.c cVar) {
-        String d2;
+        String d9;
         int b9;
         LinkedHashMap linkedHashMap;
-        String d9;
+        String d10;
         while (true) {
             String str = null;
             while (true) {
@@ -195,8 +195,8 @@ public final class e {
                     }
                 }
                 boolean a9 = a(cVar);
-                d2 = d(cVar);
-                if (d2 == null) {
+                d9 = d(cVar);
+                if (d9 == null) {
                     if (cVar.g()) {
                         list.add(new com.anythink.core.common.n.b.h(str, (Map<String, String>) Collections.EMPTY_MAP));
                         return;
@@ -209,8 +209,8 @@ public final class e {
                     linkedHashMap = new LinkedHashMap();
                     int b10 = b9 + b(cVar);
                     while (true) {
-                        if (d2 == null) {
-                            d2 = d(cVar);
+                        if (d9 == null) {
+                            d9 = d(cVar);
                             if (!a(cVar)) {
                                 b10 = b(cVar);
                             }
@@ -220,27 +220,27 @@ public final class e {
                                 return;
                             }
                             if (!cVar.g() && cVar.c(0L) == 34) {
-                                d9 = c(cVar);
+                                d10 = c(cVar);
                             } else {
-                                d9 = d(cVar);
+                                d10 = d(cVar);
                             }
-                            if (d9 == null || ((String) linkedHashMap.put(d2, d9)) != null) {
+                            if (d10 == null || ((String) linkedHashMap.put(d9, d10)) != null) {
                                 return;
                             }
                             if (!a(cVar) && !cVar.g()) {
                                 return;
                             } else {
-                                d2 = null;
+                                d9 = null;
                             }
                         }
                     }
                 }
                 list.add(new com.anythink.core.common.n.b.h(str, linkedHashMap));
-                str = d2;
+                str = d9;
             }
             char[] cArr = new char[b9];
             Arrays.fill(cArr, '=');
-            list.add(new com.anythink.core.common.n.b.h(str, (Map<String, String>) Collections.singletonMap(null, d2.concat(new String(cArr)))));
+            list.add(new com.anythink.core.common.n.b.h(str, (Map<String, String>) Collections.singletonMap(null, d9.concat(new String(cArr)))));
         }
     }
 
@@ -248,7 +248,7 @@ public final class e {
         if (cVar.k() == 34) {
             com.anythink.core.common.n.c.c cVar2 = new com.anythink.core.common.n.c.c();
             while (true) {
-                long c9 = cVar.c(f15054a);
+                long c9 = cVar.c(f15841a);
                 if (c9 == -1) {
                     return null;
                 }
@@ -270,7 +270,7 @@ public final class e {
     }
 
     private static boolean a(com.anythink.core.common.n.c.c cVar) {
-        boolean z3 = false;
+        boolean z6 = false;
         while (!cVar.g()) {
             byte c9 = cVar.c(0L);
             if (c9 != 44) {
@@ -280,10 +280,10 @@ public final class e {
                 cVar.k();
             } else {
                 cVar.k();
-                z3 = true;
+                z6 = true;
             }
         }
-        return z3;
+        return z6;
     }
 
     private static String a(int i) {
@@ -293,7 +293,7 @@ public final class e {
     }
 
     public static void a(n nVar, v vVar, u uVar) {
-        if (nVar == n.f15699a) {
+        if (nVar == n.f16486a) {
             return;
         }
         m.a(vVar, uVar).isEmpty();

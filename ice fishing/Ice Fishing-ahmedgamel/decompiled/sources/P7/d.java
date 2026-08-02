@@ -8,55 +8,55 @@ import java.util.NoSuchElementException;
 public final class d implements Iterator, J7.a {
 
     /* renamed from: n, reason: collision with root package name */
-    public final Iterator f2608n;
+    public final Iterator f2443n;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f2609u = -1;
+    public int f2444u = -1;
 
     /* renamed from: v, reason: collision with root package name */
-    public Object f2610v;
+    public Object f2445v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final /* synthetic */ e f2611w;
+    public final /* synthetic */ e f2446w;
 
     public d(e eVar) {
-        this.f2611w = eVar;
-        this.f2608n = ((Iterable) ((g) eVar.f2613b).f2619b).iterator();
+        this.f2446w = eVar;
+        this.f2443n = ((Iterable) ((g) eVar.f2448b).f2454b).iterator();
     }
 
     public final void a() {
         Object next;
         do {
-            Iterator it = this.f2608n;
+            Iterator it = this.f2443n;
             if (!it.hasNext()) {
-                this.f2609u = 0;
+                this.f2444u = 0;
                 return;
             }
             next = it.next();
-        } while (!((Boolean) ((c.b) this.f2611w.f2614c).invoke(next)).booleanValue());
-        this.f2610v = next;
-        this.f2609u = 1;
+        } while (!((Boolean) ((c.b) this.f2446w.f2449c).invoke(next)).booleanValue());
+        this.f2445v = next;
+        this.f2444u = 1;
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        if (this.f2609u == -1) {
+        if (this.f2444u == -1) {
             a();
         }
-        return this.f2609u == 1;
+        return this.f2444u == 1;
     }
 
     @Override // java.util.Iterator
     public final Object next() {
-        if (this.f2609u == -1) {
+        if (this.f2444u == -1) {
             a();
         }
-        if (this.f2609u == 0) {
+        if (this.f2444u == 0) {
             throw new NoSuchElementException();
         }
-        Object obj = this.f2610v;
-        this.f2610v = null;
-        this.f2609u = -1;
+        Object obj = this.f2445v;
+        this.f2445v = null;
+        this.f2444u = -1;
         return obj;
     }
 

@@ -6,11 +6,11 @@ import android.net.Uri;
 public abstract /* synthetic */ class MX {
     public static String[] A00 = {"kAVLkaOPTenDjNStg3AqGnsJ6mUxlh", "fdMZ5FC2", "RcZfMO7G0A", "D26EIYlb", "rGLz93weyR", "", "QBfYKUrTqNlMcNacns9hu", ""};
 
-    public static /* synthetic */ String A00(C06605i c06605i) {
-        if (c06605i.A08 != null) {
-            return c06605i.A08;
+    public static /* synthetic */ String A00(C06805i c06805i) {
+        if (c06805i.A08 != null) {
+            return c06805i.A08;
         }
-        Uri uri = c06605i.A06;
+        Uri uri = c06805i.A06;
         String[] strArr = A00;
         if (strArr[5].length() != strArr[7].length()) {
             throw new RuntimeException();

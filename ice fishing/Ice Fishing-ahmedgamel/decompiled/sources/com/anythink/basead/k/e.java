@@ -1,9 +1,9 @@
 package com.anythink.basead.k;
 
-import D.y;
 import android.content.Context;
 import android.text.TextUtils;
 import android.webkit.WebView;
+import com.IceFishing.LiveIceFishing.k;
 import com.anythink.core.common.d.t;
 import com.anythink.core.common.h.w;
 import com.anythink.core.common.h.x;
@@ -30,28 +30,28 @@ import org.json.JSONObject;
 public class e {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f9139a = "e";
+    private static final String f9925a = "e";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f9140b = "topon-omid";
+    private static final String f9926b = "topon-omid";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f9141c = "Toponad";
+    private static final String f9927c = "Toponad";
 
     /* renamed from: d, reason: collision with root package name */
-    private static final String f9142d = "[AT H5 JS CONTENT]";
+    private static final String f9928d = "[AT H5 JS CONTENT]";
 
     /* renamed from: e, reason: collision with root package name */
-    private static final String f9143e = "[AT VERIFICATION URL]";
+    private static final String f9929e = "[AT VERIFICATION URL]";
 
     /* renamed from: f, reason: collision with root package name */
-    private static final String f9144f = "[AT VERIFICATION PARAMS]";
+    private static final String f9930f = "[AT VERIFICATION PARAMS]";
 
     /* renamed from: g, reason: collision with root package name */
-    private static final String f9145g = "vk";
+    private static final String f9931g = "vk";
 
     /* renamed from: h, reason: collision with root package name */
-    private static final String f9146h = "jr";
+    private static final String f9932h = "jr";
     private static final String i = "vp";
 
     public static String a(String str, w wVar, x xVar) {
@@ -63,42 +63,42 @@ public class e {
                     String injectScriptContentIntoHtml = ScriptInjector.injectScriptContentIntoHtml(b9, str);
                     if (wVar != null && (au = wVar.au()) != null && au.length() != 0) {
                         String str2 = "";
-                        for (int i6 = 0; i6 < au.length(); i6++) {
+                        for (int i4 = 0; i4 < au.length(); i4++) {
                             try {
-                                JSONObject jSONObject = au.getJSONObject(i6);
-                                if (TextUtils.equals(f9140b, jSONObject.getString(f9145g))) {
-                                    str2 = jSONObject.getString(f9146h);
+                                JSONObject jSONObject = au.getJSONObject(i4);
+                                if (TextUtils.equals(f9926b, jSONObject.getString(f9931g))) {
+                                    str2 = jSONObject.getString(f9932h);
                                 }
                             } catch (Throwable th) {
                                 th.getMessage();
                             }
                         }
                         if (TextUtils.isEmpty(str2)) {
-                            n.a(f9139a, "verificationUrl is empty,no need to inject");
+                            n.a(f9925a, "verificationUrl is empty,no need to inject");
                         } else {
                             String c9 = ac.a().c();
                             if (!TextUtils.isEmpty(c9)) {
                                 if (t.b().F()) {
-                                    n.a(f9139a, "Offer Html Contain MACRO_INSERT_WEBVIEW_CONTENT [AT H5 JS CONTENT]:" + injectScriptContentIntoHtml.contains(f9142d));
+                                    n.a(f9925a, "Offer Html Contain MACRO_INSERT_WEBVIEW_CONTENT [AT H5 JS CONTENT]:" + injectScriptContentIntoHtml.contains(f9928d));
                                 }
-                                String replace = injectScriptContentIntoHtml.replace(f9142d, c9);
+                                String replace = injectScriptContentIntoHtml.replace(f9928d, c9);
                                 if (t.b().F()) {
-                                    n.a(f9139a, "Offer Html Contain MACRO_INSERT_VERIFICATION_URL [AT VERIFICATION URL]:" + replace.contains(f9143e));
+                                    n.a(f9925a, "Offer Html Contain MACRO_INSERT_VERIFICATION_URL [AT VERIFICATION URL]:" + replace.contains(f9929e));
                                 }
                                 if (!TextUtils.isEmpty(str2)) {
-                                    replace = replace.replace(f9143e, str2);
+                                    replace = replace.replace(f9929e, str2);
                                 }
                                 if (t.b().F()) {
-                                    n.a(f9139a, "Offer Html Contain MACRO_INSERT_VERIFICATION_PARAMS [AT VERIFICATION PARAMS]:" + replace.contains(f9144f));
+                                    n.a(f9925a, "Offer Html Contain MACRO_INSERT_VERIFICATION_PARAMS [AT VERIFICATION PARAMS]:" + replace.contains(f9930f));
                                 }
-                                return (xVar == null || TextUtils.isEmpty(xVar.f14165l)) ? replace : replace.replace(f9144f, xVar.f14165l);
+                                return (xVar == null || TextUtils.isEmpty(xVar.f14951l)) ? replace : replace.replace(f9930f, xVar.f14951l);
                             }
                         }
                     }
                     return injectScriptContentIntoHtml;
                 } catch (Throwable th2) {
                     th2.getMessage();
-                    y.w("Omsdk Exception", "injectScriptContentIntoHtml fail with throwable:" + th2.getMessage());
+                    k.x("Omsdk Exception", "injectScriptContentIntoHtml fail with throwable:" + th2.getMessage());
                     return str;
                 }
             }
@@ -106,7 +106,7 @@ public class e {
         return str;
     }
 
-    public static com.anythink.basead.j.b a(Context context, boolean z3, w wVar, x xVar) {
+    public static com.anythink.basead.j.b a(Context context, boolean z6, w wVar, x xVar) {
         String str;
         JSONArray jSONArray;
         String str2;
@@ -114,7 +114,7 @@ public class e {
         String b9 = ac.a().b();
         b bVar2 = null;
         if (TextUtils.isEmpty(b9)) {
-            com.anythink.core.common.u.e.a(xVar, wVar, a(), z3 ? "3" : "2", false, "3", "");
+            com.anythink.core.common.u.e.a(xVar, wVar, a(), z6 ? "3" : "2", false, "3", "");
             return null;
         }
         String str3 = "";
@@ -128,35 +128,35 @@ public class e {
         if (jSONArray != null && jSONArray.length() != 0) {
             try {
                 a(context);
-                Partner createPartner = Partner.createPartner(f9141c, p.a());
-                CreativeType creativeType = z3 ? CreativeType.VIDEO : CreativeType.NATIVE_DISPLAY;
+                Partner createPartner = Partner.createPartner(f9927c, p.a());
+                CreativeType creativeType = z6 ? CreativeType.VIDEO : CreativeType.NATIVE_DISPLAY;
                 ImpressionType impressionType = ImpressionType.BEGIN_TO_RENDER;
                 Owner owner = Owner.NATIVE;
-                AdSessionConfiguration createAdSessionConfiguration = AdSessionConfiguration.createAdSessionConfiguration(creativeType, impressionType, owner, z3 ? owner : Owner.NONE, false);
+                AdSessionConfiguration createAdSessionConfiguration = AdSessionConfiguration.createAdSessionConfiguration(creativeType, impressionType, owner, z6 ? owner : Owner.NONE, false);
                 if (xVar == null) {
                     str2 = "";
                 } else {
-                    str2 = xVar.f14158d;
+                    str2 = xVar.f14944d;
                 }
                 if (xVar != null) {
-                    str3 = xVar.f14165l;
+                    str3 = xVar.f14951l;
                 }
                 List<VerificationScriptResource> a9 = a(jSONArray, str3);
                 if (TextUtils.isEmpty(str)) {
                     str = null;
                 }
-                bVar = new b(AdSession.createAdSession(createAdSessionConfiguration, AdSessionContext.createNativeAdSessionContext(createPartner, b9, a9, str, str2)), z3);
+                bVar = new b(AdSession.createAdSession(createAdSessionConfiguration, AdSessionContext.createNativeAdSessionContext(createPartner, b9, a9, str, str2)), z6);
             } catch (Throwable th) {
                 th = th;
             }
             try {
-                com.anythink.core.common.u.e.a(xVar, wVar, a(), z3 ? "3" : "2");
+                com.anythink.core.common.u.e.a(xVar, wVar, a(), z6 ? "3" : "2");
                 return bVar;
             } catch (Throwable th2) {
                 th = th2;
                 bVar2 = bVar;
                 th.getMessage();
-                com.anythink.core.common.u.e.a(xVar, wVar, a(), z3 ? "3" : "2", false, "4", th.getMessage());
+                com.anythink.core.common.u.e.a(xVar, wVar, a(), z6 ? "3" : "2", false, "4", th.getMessage());
                 return bVar2;
             }
         }
@@ -173,7 +173,7 @@ public class e {
         }
         try {
             a(context);
-            b bVar2 = new b(AdSession.createAdSession(AdSessionConfiguration.createAdSessionConfiguration(CreativeType.HTML_DISPLAY, ImpressionType.BEGIN_TO_RENDER, Owner.NATIVE, Owner.NONE, false), AdSessionContext.createHtmlAdSessionContext(Partner.createPartner(f9141c, p.a()), webView, null, null)), false);
+            b bVar2 = new b(AdSession.createAdSession(AdSessionConfiguration.createAdSessionConfiguration(CreativeType.HTML_DISPLAY, ImpressionType.BEGIN_TO_RENDER, Owner.NATIVE, Owner.NONE, false), AdSessionContext.createHtmlAdSessionContext(Partner.createPartner(f9927c, p.a()), webView, null, null)), false);
             try {
                 wVar2 = wVar;
                 xVar2 = xVar;
@@ -210,14 +210,14 @@ public class e {
         VerificationScriptResource createVerificationScriptResourceWithParameters;
         ArrayList arrayList = new ArrayList();
         if (jSONArray != null) {
-            for (int i6 = 0; i6 < jSONArray.length(); i6++) {
+            for (int i4 = 0; i4 < jSONArray.length(); i4++) {
                 try {
                     try {
-                        JSONObject optJSONObject = jSONArray.optJSONObject(i6);
-                        String optString = optJSONObject.optString(f9145g, "");
-                        String optString2 = optJSONObject.optString(f9146h, "");
+                        JSONObject optJSONObject = jSONArray.optJSONObject(i4);
+                        String optString = optJSONObject.optString(f9931g, "");
+                        String optString2 = optJSONObject.optString(f9932h, "");
                         String optString3 = optJSONObject.optString(i, "");
-                        if (TextUtils.equals(optString, f9140b)) {
+                        if (TextUtils.equals(optString, f9926b)) {
                             optString3 = str;
                         }
                         if (!TextUtils.isEmpty(optString2)) {
@@ -233,7 +233,7 @@ public class e {
                     }
                 } catch (Throwable th) {
                     th.getMessage();
-                    y.w("Omsdk Exception", "getMeasureResource fail:" + th.getMessage());
+                    k.x("Omsdk Exception", "getMeasureResource fail:" + th.getMessage());
                 }
             }
         }

@@ -14,17 +14,17 @@ public final class d extends e {
 
     @Override // com.anythink.core.common.c.f
     public final c a() {
-        boolean z3;
-        boolean z6 = this.i;
-        if (System.currentTimeMillis() - this.f12294h > 86400000) {
-            z6 = q.a(this.f12292f, this.f12291e);
-            l.a(com.anythink.core.common.e.e.a(this.f12292f)).a(this.f12293g, z6);
-            z3 = true;
+        boolean z6;
+        boolean z9 = this.i;
+        if (System.currentTimeMillis() - this.f13080h > 86400000) {
+            z9 = q.a(this.f13078f, this.f13077e);
+            l.a(com.anythink.core.common.e.e.a(this.f13078f)).a(this.f13079g, z9);
+            z6 = true;
         } else {
-            z3 = false;
+            z6 = false;
         }
-        boolean z9 = z3;
-        return new c(this.f12291e, this.f12293g, z9, z9 ? System.currentTimeMillis() : this.f12294h, z6);
+        boolean z10 = z6;
+        return new c(this.f13077e, this.f13079g, z10, z10 ? System.currentTimeMillis() : this.f13080h, z9);
     }
 
     @Override // com.anythink.core.common.c.f
@@ -32,8 +32,8 @@ public final class d extends e {
         return 2;
     }
 
-    public d(Context context, String str, String str2, long j6, boolean z3) {
+    public d(Context context, String str, String str2, long j6, boolean z6) {
         this(context, str, str2, j6);
-        this.i = z3;
+        this.i = z6;
     }
 }

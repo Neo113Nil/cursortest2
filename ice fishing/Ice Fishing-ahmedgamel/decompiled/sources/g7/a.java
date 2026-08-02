@@ -4,10 +4,10 @@ package g7;
 public abstract class a {
 
     /* renamed from: n, reason: collision with root package name */
-    public final k7.b f37659n;
+    public final k7.b f37684n;
 
     public a(k7.b bVar) {
-        this.f37659n = bVar;
+        this.f37684n = bVar;
     }
 
     public final boolean equals(Object obj) {
@@ -15,16 +15,16 @@ public abstract class a {
             return true;
         }
         if (obj instanceof a) {
-            return this.f37659n.equals(((a) obj).f37659n);
+            return this.f37684n.equals(((a) obj).f37684n);
         }
         return false;
     }
 
     public final int hashCode() {
-        return this.f37659n.hashCode();
+        return this.f37684n.hashCode();
     }
 
     public final String toString() {
-        return getClass().getSimpleName() + "{descriptor=" + this.f37659n + '}';
+        return getClass().getSimpleName() + "{descriptor=" + this.f37684n + '}';
     }
 }

@@ -10,15 +10,15 @@ import java.util.Arrays;
 public final class NH extends BroadcastReceiver {
     public static byte[] A04;
     public static String[] A05 = {"Y8Z1", "Gib9", "71bezSKIJxKufdL13ppDGQvN3l", "amgHka60jBO0VGEiDWjvaQpooGEX1vUM", "ttT0jofZ4zWB5Dwx3mPNIXc", "eyh0I6c0vYFaGMFwnoeMEbyGHh2pIYmK", "GRZnv0m", "VfIH6aQ48NmkLcOtEQWPZe5uGeHooIii"};
-    public C2022ju A00;
+    public C2042ju A00;
     public NG A01;
-    public C1840gi A02;
+    public C1860gi A02;
     public String A03;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 64);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 64);
         }
         return new String(copyOfRange);
     }
@@ -31,11 +31,11 @@ public final class NH extends BroadcastReceiver {
         A01();
     }
 
-    public NH(C1840gi c1840gi, String str, C2022ju c2022ju, NG ng) {
-        this.A02 = c1840gi;
+    public NH(C1860gi c1860gi, String str, C2042ju c2042ju, NG ng) {
+        this.A02 = c1860gi;
         this.A03 = str;
         this.A01 = ng;
-        this.A00 = c2022ju;
+        this.A00 = c2042ju;
     }
 
     public final void A02() {
@@ -68,7 +68,7 @@ public final class NH extends BroadcastReceiver {
             String intentAction3 = A00(1, 32, 35);
             if (intentAction3.equals(str)) {
                 NG ng = this.A01;
-                C2022ju c2022ju = this.A00;
+                C2042ju c2042ju = this.A00;
                 String[] strArr2 = A05;
                 String str3 = strArr2[0];
                 String intentAction4 = strArr2[1];
@@ -76,7 +76,7 @@ public final class NH extends BroadcastReceiver {
                     throw new RuntimeException();
                 }
                 A05[6] = "";
-                ng.AEv(c2022ju);
+                ng.AEv(c2042ju);
             }
         }
     }

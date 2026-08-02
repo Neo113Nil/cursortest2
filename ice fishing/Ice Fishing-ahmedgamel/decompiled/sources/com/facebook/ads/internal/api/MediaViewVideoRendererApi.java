@@ -22,13 +22,13 @@ public interface MediaViewVideoRendererApi extends AdComponentViewApiProvider {
 
     void initialize(AdViewConstructorParams adViewConstructorParams, MediaViewVideoRenderer mediaViewVideoRenderer);
 
-    void pause(boolean z3);
+    void pause(boolean z6);
 
     void play(VideoStartReason videoStartReason);
 
     void seekTo(int i);
 
-    void setVolume(float f3);
+    void setVolume(float f2);
 
     boolean shouldAutoplay();
 }

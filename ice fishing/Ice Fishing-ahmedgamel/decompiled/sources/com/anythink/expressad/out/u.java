@@ -9,10 +9,10 @@ public enum u {
 
 
     /* renamed from: e, reason: collision with root package name */
-    private int f20072e;
+    private int f20859e;
 
     u(int i) {
-        this.f20072e = i;
+        this.f20859e = i;
     }
 
     private static /* synthetic */ u[] b() {
@@ -20,6 +20,6 @@ public enum u {
     }
 
     public final int a() {
-        return this.f20072e;
+        return this.f20859e;
     }
 }

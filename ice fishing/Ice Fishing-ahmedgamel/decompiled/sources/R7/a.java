@@ -1,7 +1,7 @@
 package R7;
 
 import Q7.j;
-import a.AbstractC0422a;
+import S0.f;
 import com.anythink.core.common.s;
 import kotlin.jvm.internal.h;
 
@@ -9,21 +9,21 @@ import kotlin.jvm.internal.h;
 public final class a implements Comparable {
 
     /* renamed from: u, reason: collision with root package name */
-    public static final long f2758u;
+    public static final long f2885u;
 
     /* renamed from: v, reason: collision with root package name */
-    public static final long f2759v;
+    public static final long f2886v;
 
     /* renamed from: w, reason: collision with root package name */
-    public static final /* synthetic */ int f2760w = 0;
+    public static final /* synthetic */ int f2887w = 0;
 
     /* renamed from: n, reason: collision with root package name */
-    public final long f2761n;
+    public final long f2888n;
 
     static {
-        int i = b.f2762a;
-        f2758u = AbstractC0422a.i(4611686018427387903L);
-        f2759v = AbstractC0422a.i(-4611686018427387903L);
+        int i = b.f2889a;
+        f2885u = f.j(4611686018427387903L);
+        f2886v = f.j(-4611686018427387903L);
     }
 
     public static final long a(long j6, long j9) {
@@ -31,36 +31,36 @@ public final class a implements Comparable {
         long j11 = j9 / j10;
         long j12 = j6 + j11;
         if (-4611686018426L > j12 || j12 >= 4611686018427L) {
-            return AbstractC0422a.i(V2.a.b(j12));
+            return f.j(f.f(j12));
         }
-        return AbstractC0422a.k((j12 * j10) + (j9 - (j11 * j10)));
+        return f.l((j12 * j10) + (j9 - (j11 * j10)));
     }
 
-    public static final void b(StringBuilder sb, int i, int i6, int i9, String str, boolean z3) {
+    public static final void b(StringBuilder sb, int i, int i4, int i6, String str, boolean z6) {
         sb.append(i);
-        if (i6 != 0) {
+        if (i4 != 0) {
             sb.append('.');
-            String f02 = j.f0(i9, String.valueOf(i6));
-            int i10 = -1;
-            int length = f02.length() - 1;
+            String v02 = j.v0(i6, String.valueOf(i4));
+            int i9 = -1;
+            int length = v02.length() - 1;
             if (length >= 0) {
                 while (true) {
-                    int i11 = length - 1;
-                    if (f02.charAt(length) != '0') {
-                        i10 = length;
+                    int i10 = length - 1;
+                    if (v02.charAt(length) != '0') {
+                        i9 = length;
                         break;
-                    } else if (i11 < 0) {
+                    } else if (i10 < 0) {
                         break;
                     } else {
-                        length = i11;
+                        length = i10;
                     }
                 }
             }
-            int i12 = i10 + 1;
-            if (z3 || i12 >= 3) {
-                sb.append((CharSequence) f02, 0, ((i10 + 3) / 3) * 3);
+            int i11 = i9 + 1;
+            if (z6 || i11 >= 3) {
+                sb.append((CharSequence) v02, 0, ((i9 + 3) / 3) * 3);
             } else {
-                sb.append((CharSequence) f02, 0, i12);
+                sb.append((CharSequence) v02, 0, i11);
             }
         }
         sb.append(str);
@@ -74,7 +74,7 @@ public final class a implements Comparable {
     }
 
     public static final boolean d(long j6) {
-        return j6 == f2758u || j6 == f2759v;
+        return j6 == f2885u || j6 == f2886v;
     }
 
     public static final long e(long j6, long j9) {
@@ -92,27 +92,27 @@ public final class a implements Comparable {
             return i == 1 ? a(j6 >> 1, j9 >> 1) : a(j9 >> 1, j6 >> 1);
         }
         long j10 = (j6 >> 1) + (j9 >> 1);
-        return i == 0 ? (-4611686018426999999L > j10 || j10 >= 4611686018427000000L) ? AbstractC0422a.i(j10 / 1000000) : AbstractC0422a.k(j10) : AbstractC0422a.j(j10);
+        return i == 0 ? (-4611686018426999999L > j10 || j10 >= 4611686018427000000L) ? f.j(j10 / 1000000) : f.l(j10) : f.k(j10);
     }
 
     public static final long f(long j6, c unit) {
         h.e(unit, "unit");
-        if (j6 == f2758u) {
+        if (j6 == f2885u) {
             return Long.MAX_VALUE;
         }
-        if (j6 == f2759v) {
+        if (j6 == f2886v) {
             return Long.MIN_VALUE;
         }
         long j9 = j6 >> 1;
-        c sourceUnit = (((int) j6) & 1) == 0 ? c.f2764u : c.f2765v;
+        c sourceUnit = (((int) j6) & 1) == 0 ? c.f2891u : c.f2892v;
         h.e(sourceUnit, "sourceUnit");
-        return unit.f2770n.convert(j9, sourceUnit.f2770n);
+        return unit.f2897n.convert(j9, sourceUnit.f2897n);
     }
 
     @Override // java.lang.Comparable
     public final int compareTo(Object obj) {
-        long j6 = ((a) obj).f2761n;
-        long j9 = this.f2761n;
+        long j6 = ((a) obj).f2888n;
+        long j9 = this.f2888n;
         long j10 = j9 ^ j6;
         if (j10 < 0 || (((int) j10) & 1) == 0) {
             return h.g(j9, j6);
@@ -123,93 +123,93 @@ public final class a implements Comparable {
 
     public final boolean equals(Object obj) {
         if (obj instanceof a) {
-            return this.f2761n == ((a) obj).f2761n;
+            return this.f2888n == ((a) obj).f2888n;
         }
         return false;
     }
 
     public final int hashCode() {
-        return Long.hashCode(this.f2761n);
+        return Long.hashCode(this.f2888n);
     }
 
     public final String toString() {
         long j6;
-        int f3;
-        boolean z3;
+        int f2;
+        boolean z6;
         int f9;
         int i;
-        long j9 = this.f2761n;
+        long j9 = this.f2888n;
         if (j9 == 0) {
             return "0s";
         }
-        if (j9 == f2758u) {
+        if (j9 == f2885u) {
             return "Infinity";
         }
-        if (j9 == f2759v) {
+        if (j9 == f2886v) {
             return "-Infinity";
         }
-        boolean z6 = j9 < 0;
+        boolean z9 = j9 < 0;
         StringBuilder sb = new StringBuilder();
-        if (z6) {
+        if (z9) {
             sb.append('-');
         }
         if (j9 < 0) {
             j9 = (((int) j9) & 1) + ((-(j9 >> 1)) << 1);
-            int i6 = b.f2762a;
+            int i4 = b.f2889a;
         }
-        long f10 = f(j9, c.f2769z);
+        long f10 = f(j9, c.f2896z);
         if (d(j9)) {
             j6 = 0;
-            f3 = 0;
+            f2 = 0;
         } else {
             j6 = 0;
-            f3 = (int) (f(j9, c.f2768y) % 24);
+            f2 = (int) (f(j9, c.f2895y) % 24);
         }
         if (d(j9)) {
-            z3 = z6;
+            z6 = z9;
             f9 = 0;
         } else {
-            z3 = z6;
-            f9 = (int) (f(j9, c.f2767x) % 60);
+            z6 = z9;
+            f9 = (int) (f(j9, c.f2894x) % 60);
         }
-        int f11 = d(j9) ? 0 : (int) (f(j9, c.f2766w) % 60);
+        int f11 = d(j9) ? 0 : (int) (f(j9, c.f2893w) % 60);
         int c9 = c(j9);
-        boolean z9 = f10 != j6;
-        boolean z10 = f3 != 0;
-        boolean z11 = f9 != 0;
-        boolean z12 = (f11 == 0 && c9 == 0) ? false : true;
-        if (z9) {
+        boolean z10 = f10 != j6;
+        boolean z11 = f2 != 0;
+        boolean z12 = f9 != 0;
+        boolean z13 = (f11 == 0 && c9 == 0) ? false : true;
+        if (z10) {
             sb.append(f10);
             sb.append('d');
             i = 1;
         } else {
             i = 0;
         }
-        if (z10 || (z9 && (z11 || z12))) {
-            int i9 = i + 1;
+        if (z11 || (z10 && (z12 || z13))) {
+            int i6 = i + 1;
             if (i > 0) {
                 sb.append(' ');
             }
-            sb.append(f3);
+            sb.append(f2);
             sb.append('h');
-            i = i9;
+            i = i6;
         }
-        if (z11 || (z12 && (z10 || z9))) {
-            int i10 = i + 1;
+        if (z12 || (z13 && (z11 || z10))) {
+            int i9 = i + 1;
             if (i > 0) {
                 sb.append(' ');
             }
             sb.append(f9);
             sb.append('m');
-            i = i10;
+            i = i9;
         }
-        if (z12) {
-            int i11 = i + 1;
+        if (z13) {
+            int i10 = i + 1;
             if (i > 0) {
                 sb.append(' ');
             }
-            if (f11 != 0 || z9 || z10 || z11) {
-                b(sb, f11, c9, 9, s.f16249a, false);
+            if (f11 != 0 || z10 || z11 || z12) {
+                b(sb, f11, c9, 9, s.f17036a, false);
             } else if (c9 >= 1000000) {
                 b(sb, c9 / 1000000, c9 % 1000000, 6, "ms", false);
             } else if (c9 >= 1000) {
@@ -218,9 +218,9 @@ public final class a implements Comparable {
                 sb.append(c9);
                 sb.append("ns");
             }
-            i = i11;
+            i = i10;
         }
-        if (z3 && i > 1) {
+        if (z6 && i > 1) {
             sb.insert(1, '(').append(')');
         }
         return sb.toString();

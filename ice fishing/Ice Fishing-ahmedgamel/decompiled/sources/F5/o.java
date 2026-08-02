@@ -1,7 +1,6 @@
 package F5;
 
-import d1.C4445c;
-import f6.C4512a;
+import f6.C4522a;
 import java.time.Instant;
 import java.util.Locale;
 import u7.v;
@@ -10,7 +9,7 @@ import u7.v;
 public final class o {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final o f991a = new o();
+    public static final o f1017a = new o();
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     /* JADX WARN: Multi-variable type inference failed */
@@ -23,19 +22,19 @@ public final class o {
         n nVar;
         int i;
         l6.i iVar;
-        C4512a c4512a;
+        C4522a c4522a;
         l6.i iVar2;
         Instant now;
         if (cVar instanceof n) {
             nVar = (n) cVar;
-            int i6 = nVar.f990y;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                nVar.f990y = i6 - Integer.MIN_VALUE;
-                Object obj = nVar.f988w;
-                A7.a aVar = A7.a.f58n;
-                i = nVar.f990y;
+            int i4 = nVar.f1016y;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                nVar.f1016y = i4 - Integer.MIN_VALUE;
+                Object obj = nVar.f1014w;
+                A7.a aVar = A7.a.f215n;
+                i = nVar.f1016y;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     String upperCase = str.toUpperCase(Locale.ROOT);
                     kotlin.jvm.internal.h.d(upperCase, "toUpperCase(...)");
                     int hashCode = upperCase.hashCode();
@@ -84,23 +83,23 @@ public final class o {
                             iVar = iVar3;
                             break;
                     }
-                    C4445c c4445c = new C4445c();
-                    c4445c.e("log.message", str2);
-                    c4445c.e("log.level", str);
+                    K1.c cVar2 = new K1.c(1);
+                    cVar2.b("log.message", str2);
+                    cVar2.b("log.level", str);
                     if (str3 != null) {
-                        c4445c.e("exception.type", str3);
+                        cVar2.b("exception.type", str3);
                     }
                     if (str4 != null) {
-                        c4445c.e("exception.message", str4);
+                        cVar2.b("exception.message", str4);
                     }
                     if (str5 != null) {
-                        c4445c.e("exception.stacktrace", str5);
+                        cVar2.b("exception.stacktrace", str5);
                     }
-                    C4512a d2 = c4445c.d();
-                    nVar.f985n = str2;
-                    nVar.f986u = iVar;
-                    nVar.f987v = d2;
-                    nVar.f990y = 1;
+                    C4522a a9 = cVar2.a();
+                    nVar.f1011n = str2;
+                    nVar.f1012u = iVar;
+                    nVar.f1013v = a9;
+                    nVar.f1016y = 1;
                     j jVar = (j) eVar;
                     jVar.getClass();
                     Object b9 = j.b(jVar, nVar);
@@ -109,40 +108,40 @@ public final class o {
                     }
                     l6.i iVar4 = iVar;
                     obj = b9;
-                    c4512a = d2;
+                    c4522a = a9;
                     iVar2 = iVar4;
                 } else {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    c4512a = nVar.f987v;
-                    iVar2 = nVar.f986u;
-                    str2 = nVar.f985n;
-                    com.bumptech.glide.d.k(obj);
+                    c4522a = nVar.f1013v;
+                    iVar2 = nVar.f1012u;
+                    str2 = nVar.f1011n;
+                    Q3.b.s(obj);
                 }
                 l6.e eVar2 = (l6.e) obj;
-                eVar2.f(c4512a);
+                eVar2.f(c4522a);
                 eVar2.e(iVar2);
                 eVar2.a(str2);
                 now = Instant.now();
                 eVar2.d(now);
                 eVar2.b();
-                return v.f41353a;
+                return v.f41073a;
             }
         }
         nVar = new n(this, cVar);
-        Object obj2 = nVar.f988w;
-        A7.a aVar2 = A7.a.f58n;
-        i = nVar.f990y;
+        Object obj2 = nVar.f1014w;
+        A7.a aVar2 = A7.a.f215n;
+        i = nVar.f1016y;
         if (i != 0) {
         }
         l6.e eVar22 = (l6.e) obj2;
-        eVar22.f(c4512a);
+        eVar22.f(c4522a);
         eVar22.e(iVar2);
         eVar22.a(str2);
         now = Instant.now();
         eVar22.d(now);
         eVar22.b();
-        return v.f41353a;
+        return v.f41073a;
     }
 }

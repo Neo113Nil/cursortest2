@@ -17,37 +17,37 @@ import java.util.Map;
 public final class h extends c {
 
     /* renamed from: a, reason: collision with root package name */
-    com.anythink.core.common.t.c f11176a;
+    com.anythink.core.common.t.c f11962a;
 
     /* renamed from: b, reason: collision with root package name */
-    BaseIncentiveTaskView f11177b;
+    BaseIncentiveTaskView f11963b;
 
     /* renamed from: n, reason: collision with root package name */
-    private long f11181n;
+    private long f11967n;
 
     /* renamed from: o, reason: collision with root package name */
-    private long f11182o;
+    private long f11968o;
 
     /* renamed from: p, reason: collision with root package name */
-    private boolean f11183p;
+    private boolean f11969p;
 
     /* renamed from: q, reason: collision with root package name */
-    private int f11184q;
+    private int f11970q;
 
     /* renamed from: c, reason: collision with root package name */
-    private final int f11178c = 1;
+    private final int f11964c = 1;
 
     /* renamed from: l, reason: collision with root package name */
-    private final int f11179l = 2;
+    private final int f11965l = 2;
 
     /* renamed from: m, reason: collision with root package name */
-    private final int f11180m = 3;
+    private final int f11966m = 3;
 
     /* renamed from: r, reason: collision with root package name */
-    private int f11185r = 3;
+    private int f11971r = 3;
 
     public static /* synthetic */ boolean g(h hVar) {
-        hVar.f11183p = true;
+        hVar.f11969p = true;
         return true;
     }
 
@@ -59,7 +59,7 @@ public final class h extends c {
         @Override // com.anythink.basead.ui.improveclick.incentivetask.BaseIncentiveTaskView.a
         public final void a() {
             h hVar = h.this;
-            com.anythink.core.common.u.e.a(hVar.f11140f, hVar.f11139e, hVar.f11182o, h.this.f11183p, h.this.f11181n, h.this.f11185r);
+            com.anythink.core.common.u.e.a(hVar.f11926f, hVar.f11925e, hVar.f11968o, h.this.f11969p, h.this.f11967n, h.this.f11971r);
             h.this.c();
         }
 
@@ -67,15 +67,15 @@ public final class h extends c {
         public final void b() {
             h.g(h.this);
             h hVar = h.this;
-            c.a aVar = hVar.f11144k;
+            c.a aVar = hVar.f11930k;
             if (aVar != null) {
-                aVar.a(16, hVar.f11184q == 3 ? 42 : 13);
+                aVar.a(16, hVar.f11970q == 3 ? 42 : 13);
             }
         }
 
         @Override // com.anythink.basead.ui.improveclick.incentivetask.BaseIncentiveTaskView.a
         public final void a(long j6) {
-            c.a aVar = h.this.f11144k;
+            c.a aVar = h.this.f11930k;
             if (aVar instanceof c.b) {
                 ((c.b) aVar).a(j6);
             }
@@ -83,24 +83,24 @@ public final class h extends c {
 
         @Override // com.anythink.basead.ui.improveclick.incentivetask.BaseIncentiveTaskView.a
         public final void a(int i) {
-            h.this.f11185r = i;
+            h.this.f11971r = i;
         }
     }
 
     private void b() {
-        int br = this.f11140f.f14168o.br();
-        this.f11184q = br;
+        int br = this.f11926f.f14954o.br();
+        this.f11970q = br;
         if (br == 2) {
-            this.f11177b = new QAIncentiveTaskView(this.f11138d);
+            this.f11963b = new QAIncentiveTaskView(this.f11924d);
         } else if (br == 3) {
-            this.f11177b = new CountDownSkipIncentiveTaskView(this.f11138d);
+            this.f11963b = new CountDownSkipIncentiveTaskView(this.f11924d);
         }
-        if (this.f11177b != null) {
-            this.f11182o = System.currentTimeMillis();
-            this.f11177b.initSetting(this.f11139e, this.f11140f.f14168o, this.f11181n, new AnonymousClass2());
+        if (this.f11963b != null) {
+            this.f11968o = System.currentTimeMillis();
+            this.f11963b.initSetting(this.f11925e, this.f11926f.f14954o, this.f11967n, new AnonymousClass2());
             if (this.i != null) {
-                this.i.addView(this.f11177b, new RelativeLayout.LayoutParams(-1, -1));
-                c.a aVar = this.f11144k;
+                this.i.addView(this.f11963b, new RelativeLayout.LayoutParams(-1, -1));
+                c.a aVar = this.f11930k;
                 if (aVar instanceof c.b) {
                     ((c.b) aVar).b();
                 }
@@ -110,15 +110,15 @@ public final class h extends c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void c() {
-        BaseIncentiveTaskView baseIncentiveTaskView = this.f11177b;
+        BaseIncentiveTaskView baseIncentiveTaskView = this.f11963b;
         if (baseIncentiveTaskView != null) {
             am.a(baseIncentiveTaskView);
-            c.a aVar = this.f11144k;
+            c.a aVar = this.f11930k;
             if (aVar instanceof c.b) {
                 ((c.b) aVar).a();
             }
-            this.f11177b.release();
-            this.f11177b = null;
+            this.f11963b.release();
+            this.f11963b = null;
         }
     }
 
@@ -131,8 +131,8 @@ public final class h extends c {
     public final void a(int i, Map<String, Object> map) {
         if (i != 107 && i != 108) {
             if (i == 114) {
-                if (this.f11176a == null) {
-                    this.f11176a = new com.anythink.core.common.t.c(this.f11140f.f14168o.bs(), new Runnable() { // from class: com.anythink.basead.ui.improveclick.h.1
+                if (this.f11962a == null) {
+                    this.f11962a = new com.anythink.core.common.t.c(this.f11926f.f14954o.bs(), new Runnable() { // from class: com.anythink.basead.ui.improveclick.h.1
                         @Override // java.lang.Runnable
                         public final void run() {
                             h.a(h.this);
@@ -141,9 +141,9 @@ public final class h extends c {
                 }
                 Object obj = map.get("video_length");
                 if (obj != null && (obj instanceof Long)) {
-                    this.f11181n = ((Long) obj).longValue();
+                    this.f11967n = ((Long) obj).longValue();
                 }
-                com.anythink.core.common.t.c cVar = this.f11176a;
+                com.anythink.core.common.t.c cVar = this.f11962a;
                 if (cVar != null) {
                     cVar.a();
                     return;
@@ -153,22 +153,22 @@ public final class h extends c {
             if (i != 120) {
                 switch (i) {
                     case 110:
-                        com.anythink.core.common.t.c cVar2 = this.f11176a;
+                        com.anythink.core.common.t.c cVar2 = this.f11962a;
                         if (cVar2 != null) {
                             cVar2.a();
                         }
-                        BaseIncentiveTaskView baseIncentiveTaskView = this.f11177b;
+                        BaseIncentiveTaskView baseIncentiveTaskView = this.f11963b;
                         if (baseIncentiveTaskView != null) {
                             baseIncentiveTaskView.onResume();
                             break;
                         }
                         break;
                     case 111:
-                        com.anythink.core.common.t.c cVar3 = this.f11176a;
+                        com.anythink.core.common.t.c cVar3 = this.f11962a;
                         if (cVar3 != null) {
                             cVar3.b();
                         }
-                        BaseIncentiveTaskView baseIncentiveTaskView2 = this.f11177b;
+                        BaseIncentiveTaskView baseIncentiveTaskView2 = this.f11963b;
                         if (baseIncentiveTaskView2 != null) {
                             baseIncentiveTaskView2.onPause();
                             break;
@@ -183,28 +183,28 @@ public final class h extends c {
 
     @Override // com.anythink.basead.ui.improveclick.c
     public final void a() {
-        com.anythink.core.common.t.c cVar = this.f11176a;
+        com.anythink.core.common.t.c cVar = this.f11962a;
         if (cVar != null) {
             cVar.c();
-            this.f11176a = null;
+            this.f11962a = null;
         }
         c();
     }
 
     public static /* synthetic */ void a(h hVar) {
-        int br = hVar.f11140f.f14168o.br();
-        hVar.f11184q = br;
+        int br = hVar.f11926f.f14954o.br();
+        hVar.f11970q = br;
         if (br == 2) {
-            hVar.f11177b = new QAIncentiveTaskView(hVar.f11138d);
+            hVar.f11963b = new QAIncentiveTaskView(hVar.f11924d);
         } else if (br == 3) {
-            hVar.f11177b = new CountDownSkipIncentiveTaskView(hVar.f11138d);
+            hVar.f11963b = new CountDownSkipIncentiveTaskView(hVar.f11924d);
         }
-        if (hVar.f11177b != null) {
-            hVar.f11182o = System.currentTimeMillis();
-            hVar.f11177b.initSetting(hVar.f11139e, hVar.f11140f.f14168o, hVar.f11181n, hVar.new AnonymousClass2());
+        if (hVar.f11963b != null) {
+            hVar.f11968o = System.currentTimeMillis();
+            hVar.f11963b.initSetting(hVar.f11925e, hVar.f11926f.f14954o, hVar.f11967n, hVar.new AnonymousClass2());
             if (hVar.i != null) {
-                hVar.i.addView(hVar.f11177b, new RelativeLayout.LayoutParams(-1, -1));
-                c.a aVar = hVar.f11144k;
+                hVar.i.addView(hVar.f11963b, new RelativeLayout.LayoutParams(-1, -1));
+                c.a aVar = hVar.f11930k;
                 if (aVar instanceof c.b) {
                     ((c.b) aVar).b();
                 }

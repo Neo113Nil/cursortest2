@@ -25,34 +25,34 @@ import org.xmlpull.v1.XmlPullParser;
 public class b extends com.anythink.basead.l.b.a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f9172a = 1;
+    public static final int f9958a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f9173b = 3;
+    public static final int f9959b = 3;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f9174c = 2;
+    public static final int f9960c = 2;
 
     /* renamed from: d, reason: collision with root package name */
-    private static final String[] f9175d = {o.f8448e, o.f8450g, o.f8449f, "video/mkv"};
+    private static final String[] f9961d = {o.f9234e, o.f9236g, o.f9235f, "video/mkv"};
 
     /* renamed from: e, reason: collision with root package name */
-    private static final String f9176e = "b";
+    private static final String f9962e = "b";
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f9177f;
+    private boolean f9963f;
 
     /* renamed from: g, reason: collision with root package name */
-    private volatile b f9178g;
+    private volatile b f9964g;
 
     /* renamed from: k, reason: collision with root package name */
-    private av f9181k;
+    private av f9967k;
 
     /* renamed from: h, reason: collision with root package name */
-    private ArrayList<at> f9179h = new ArrayList<>();
+    private ArrayList<at> f9965h = new ArrayList<>();
 
     /* renamed from: j, reason: collision with root package name */
-    private ArrayList<ah> f9180j = new ArrayList<>();
+    private ArrayList<ah> f9966j = new ArrayList<>();
     private ArrayList<k> i = new ArrayList<>();
 
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0036, code lost:
@@ -64,7 +64,7 @@ public class b extends com.anythink.basead.l.b.a {
     */
     public b(String str) {
         int indexOf;
-        this.f9177f = false;
+        this.f9963f = false;
         String str2 = null;
         if (str != null) {
             try {
@@ -79,12 +79,12 @@ public class b extends com.anythink.basead.l.b.a {
         newPullParser.setFeature("http://xmlpull.org/v1/doc/features.html#process-namespaces", false);
         newPullParser.setInput(new StringReader(str));
         newPullParser.nextTag();
-        this.f9181k = new av(newPullParser);
-        this.f9177f = true;
+        this.f9967k = new av(newPullParser);
+        this.f9963f = true;
     }
 
     public static String e(b bVar) {
-        com.anythink.basead.l.c.a aVar = bVar.f9181k.a().get(0);
+        com.anythink.basead.l.c.a aVar = bVar.f9967k.a().get(0);
         if (aVar == null || aVar.a() == null || aVar.a().b() == null) {
             return null;
         }
@@ -92,37 +92,37 @@ public class b extends com.anythink.basead.l.b.a {
     }
 
     private ArrayList<at> g() {
-        return this.f9179h;
+        return this.f9965h;
     }
 
     private List<String> h() {
         ArrayList arrayList = new ArrayList();
-        if (this.f9178g != null) {
-            this.f9178g.h();
-            arrayList.addAll(this.f9178g.h());
+        if (this.f9964g != null) {
+            this.f9964g.h();
+            arrayList.addAll(this.f9964g.h());
         }
         return arrayList;
     }
 
     private List<String> i() {
         ArrayList arrayList = new ArrayList();
-        if (this.f9178g != null) {
-            this.f9178g.i();
-            arrayList.addAll(this.f9178g.i());
+        if (this.f9964g != null) {
+            this.f9964g.i();
+            arrayList.addAll(this.f9964g.i());
         }
         return arrayList;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:8:0x000f, code lost:
     
-        if (r1.f9178g.j() != false) goto L12;
+        if (r1.f9964g.j() != false) goto L12;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private synchronized boolean j() {
-        if (this.f9177f) {
-            if (this.f9178g != null) {
+        if (this.f9963f) {
+            if (this.f9964g != null) {
             }
             return true;
         }
@@ -130,11 +130,11 @@ public class b extends com.anythink.basead.l.b.a {
     }
 
     private b k() {
-        return this.f9178g;
+        return this.f9964g;
     }
 
     public final ArrayList<ah> a() {
-        return this.f9180j;
+        return this.f9966j;
     }
 
     public final ArrayList<k> b() {
@@ -142,14 +142,14 @@ public class b extends com.anythink.basead.l.b.a {
     }
 
     public final av c() {
-        return this.f9181k;
+        return this.f9967k;
     }
 
     public final String d() {
-        if (this.f9181k.a() == null) {
+        if (this.f9967k.a() == null) {
             return null;
         }
-        Iterator<com.anythink.basead.l.c.a> it = this.f9181k.a().iterator();
+        Iterator<com.anythink.basead.l.c.a> it = this.f9967k.a().iterator();
         while (it.hasNext()) {
             com.anythink.basead.l.c.a next = it.next();
             if (next.b() != null && next.b().a() != null) {
@@ -161,13 +161,13 @@ public class b extends com.anythink.basead.l.b.a {
 
     public final String f(b bVar) {
         b bVar2 = this;
-        while (bVar2.f9178g != null) {
-            b bVar3 = bVar2.f9178g;
-            b bVar4 = bVar2.f9178g;
+        while (bVar2.f9964g != null) {
+            b bVar3 = bVar2.f9964g;
+            b bVar4 = bVar2.f9964g;
             bVar2 = bVar3;
             bVar = bVar4;
         }
-        com.anythink.basead.l.c.a aVar = bVar.f9181k.a().get(0);
+        com.anythink.basead.l.c.a aVar = bVar.f9967k.a().get(0);
         if (aVar.a().e() == null) {
             return null;
         }
@@ -184,103 +184,103 @@ public class b extends com.anythink.basead.l.b.a {
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final int f9182a = 0;
+        public static final int f9968a = 0;
 
         /* renamed from: b, reason: collision with root package name */
-        public static final int f9183b = 1;
+        public static final int f9969b = 1;
 
         /* renamed from: c, reason: collision with root package name */
-        public static final int f9184c = 2;
+        public static final int f9970c = 2;
 
         /* renamed from: d, reason: collision with root package name */
-        public static final int f9185d = 3;
+        public static final int f9971d = 3;
 
         /* renamed from: e, reason: collision with root package name */
-        public static final int f9186e = 4;
+        public static final int f9972e = 4;
 
         /* renamed from: f, reason: collision with root package name */
-        public static final int f9187f = 5;
+        public static final int f9973f = 5;
 
         /* renamed from: g, reason: collision with root package name */
-        public static final int f9188g = 6;
+        public static final int f9974g = 6;
 
         /* renamed from: h, reason: collision with root package name */
-        public static final int f9189h = 7;
+        public static final int f9975h = 7;
         public static final int i = 8;
 
         /* renamed from: j, reason: collision with root package name */
-        public static final int f9190j = 9;
+        public static final int f9976j = 9;
 
         /* renamed from: k, reason: collision with root package name */
-        public static final int f9191k = 10;
+        public static final int f9977k = 10;
 
         /* renamed from: l, reason: collision with root package name */
-        public static final int f9192l = 11;
+        public static final int f9978l = 11;
 
         /* renamed from: m, reason: collision with root package name */
-        public static final int f9193m = 12;
+        public static final int f9979m = 12;
 
         /* renamed from: n, reason: collision with root package name */
-        public static final int f9194n = 13;
+        public static final int f9980n = 13;
 
         /* renamed from: o, reason: collision with root package name */
-        public static final int f9195o = 14;
+        public static final int f9981o = 14;
 
         /* renamed from: p, reason: collision with root package name */
-        public static final int f9196p = 15;
+        public static final int f9982p = 15;
 
         /* renamed from: q, reason: collision with root package name */
-        public static final int f9197q = 16;
+        public static final int f9983q = 16;
 
         /* renamed from: r, reason: collision with root package name */
-        public static final int f9198r = 17;
+        public static final int f9984r = 17;
 
         /* renamed from: s, reason: collision with root package name */
-        public static final int f9199s = 18;
+        public static final int f9985s = 18;
 
         /* renamed from: t, reason: collision with root package name */
-        public static final int f9200t = 19;
+        public static final int f9986t = 19;
 
         /* renamed from: u, reason: collision with root package name */
-        public static final int f9201u = 20;
+        public static final int f9987u = 20;
 
         /* renamed from: v, reason: collision with root package name */
-        public static final int f9202v = 21;
+        public static final int f9988v = 21;
 
         /* renamed from: w, reason: collision with root package name */
-        public static final String[] f9203w = {"creativeView", d.cg, "firstQuartile", d.ci, "thirdQuartile", d.ck, "mute", d.cm, d.co, "rewind", d.cp, "fullscreen", "exitFullscreen", "expand", "collapse", "acceptInvitation", "acceptInvitationLinear", "closeLinear", d.cs, "skip", "error", "impression", "click"};
+        public static final String[] f9989w = {"creativeView", d.cg, "firstQuartile", d.ci, "thirdQuartile", d.ck, "mute", d.cm, d.co, "rewind", d.cp, "fullscreen", "exitFullscreen", "expand", "collapse", "acceptInvitation", "acceptInvitationLinear", "closeLinear", d.cs, "skip", "error", "impression", "click"};
 
         /* renamed from: x, reason: collision with root package name */
-        private int f9204x;
+        private int f9990x;
 
         /* renamed from: y, reason: collision with root package name */
-        private String f9205y;
+        private String f9991y;
 
         private a(String str, String str2) {
-            this.f9204x = a(str);
-            this.f9205y = str2;
+            this.f9990x = a(str);
+            this.f9991y = str2;
         }
 
         private static int a(String str) {
-            int i6 = 0;
+            int i4 = 0;
             while (true) {
-                String[] strArr = f9203w;
-                if (i6 >= strArr.length) {
+                String[] strArr = f9989w;
+                if (i4 >= strArr.length) {
                     return -1;
                 }
-                if (strArr[i6].equals(str)) {
-                    return i6;
+                if (strArr[i4].equals(str)) {
+                    return i4;
                 }
-                i6++;
+                i4++;
             }
         }
 
         private String b() {
-            return this.f9205y;
+            return this.f9991y;
         }
 
         private int a() {
-            return this.f9204x;
+            return this.f9990x;
         }
     }
 
@@ -296,7 +296,7 @@ public class b extends com.anythink.basead.l.b.a {
         if (!TextUtils.isEmpty(str)) {
             int i = 0;
             while (true) {
-                String[] strArr = f9175d;
+                String[] strArr = f9961d;
                 if (i >= strArr.length) {
                     break;
                 }
@@ -309,13 +309,13 @@ public class b extends com.anythink.basead.l.b.a {
         return false;
     }
 
-    public final String a(b bVar, int i, int i6) {
+    public final String a(b bVar, int i, int i4) {
         ArrayList arrayList = new ArrayList();
-        if (this.f9178g != null) {
-            this.f9178g.a(this.f9178g, i, i6);
+        if (this.f9964g != null) {
+            this.f9964g.a(this.f9964g, i, i4);
             return null;
         }
-        Iterator<p> it = bVar.f9181k.a().get(i).a().e().iterator();
+        Iterator<p> it = bVar.f9967k.a().get(i).a().e().iterator();
         while (true) {
             if (!it.hasNext()) {
                 break;
@@ -330,27 +330,27 @@ public class b extends com.anythink.basead.l.b.a {
                     }
                 }
                 if (arrayList.size() != 0) {
+                    int i6 = 0;
                     int i9 = 0;
                     int i10 = 0;
-                    int i11 = 0;
                     while (true) {
-                        if (i9 >= arrayList.size()) {
-                            i9 = i11;
+                        if (i6 >= arrayList.size()) {
+                            i6 = i10;
                             break;
                         }
-                        ak akVar = (ak) arrayList.get(i9);
+                        ak akVar = (ak) arrayList.get(i6);
                         int parseInt = e.b((CharSequence) akVar.c()) ? 0 : Integer.parseInt(akVar.c());
-                        if (parseInt == i6) {
+                        if (parseInt == i4) {
                             break;
                         }
-                        int abs = Math.abs(i6 - parseInt);
-                        if (i10 == 0 || abs < i10) {
-                            i11 = i9;
-                            i10 = abs;
+                        int abs = Math.abs(i4 - parseInt);
+                        if (i9 == 0 || abs < i9) {
+                            i10 = i6;
+                            i9 = abs;
                         }
-                        i9++;
+                        i6++;
                     }
-                    return ((ak) arrayList.get(i9)).a();
+                    return ((ak) arrayList.get(i6)).a();
                 }
             }
         }
@@ -358,12 +358,12 @@ public class b extends com.anythink.basead.l.b.a {
     }
 
     public final void g(b bVar) {
-        this.f9178g = bVar;
+        this.f9964g = bVar;
     }
 
     public final int e() {
         try {
-            return Integer.parseInt(this.f9181k.a().get(0).a().e().get(0).a().c().get(0).c());
+            return Integer.parseInt(this.f9967k.a().get(0).a().e().get(0).a().c().get(0).c());
         } catch (Exception unused) {
             return 0;
         }
@@ -381,7 +381,7 @@ public class b extends com.anythink.basead.l.b.a {
     }
 
     public static String c(b bVar) {
-        com.anythink.basead.l.c.a aVar = bVar.f9181k.a().get(0);
+        com.anythink.basead.l.c.a aVar = bVar.f9967k.a().get(0);
         if (aVar == null || aVar.a() == null || aVar.a().c() == null) {
             return null;
         }
@@ -390,7 +390,7 @@ public class b extends com.anythink.basead.l.b.a {
 
     private static com.anythink.basead.l.c.e d(b bVar, int i) {
         ArrayList<x> a9;
-        com.anythink.basead.l.c.a aVar = bVar.f9181k.a().get(i);
+        com.anythink.basead.l.c.a aVar = bVar.f9967k.a().get(i);
         if (aVar != null && aVar.a() != null) {
             if (aVar.a().g() != null) {
                 return aVar.a().g();
@@ -438,24 +438,24 @@ public class b extends com.anythink.basead.l.b.a {
 
     public final int f() {
         try {
-            return Integer.parseInt(this.f9181k.a().get(0).a().e().get(0).a().c().get(0).d());
+            return Integer.parseInt(this.f9967k.a().get(0).a().e().get(0).a().c().get(0).d());
         } catch (Exception unused) {
             return 0;
         }
     }
 
     public final ArrayList<at> b(b bVar, int i) {
-        if (a(bVar.f9181k, i) != null) {
-            this.f9179h.addAll(a(bVar.f9181k, i));
+        if (a(bVar.f9967k, i) != null) {
+            this.f9965h.addAll(a(bVar.f9967k, i));
         }
-        if (bVar.f9178g != null) {
-            b(bVar.f9178g, i);
+        if (bVar.f9964g != null) {
+            b(bVar.f9964g, i);
         }
-        return this.f9179h;
+        return this.f9965h;
     }
 
     public static String d(b bVar) {
-        com.anythink.basead.l.c.a aVar = bVar.f9181k.a().get(0);
+        com.anythink.basead.l.c.a aVar = bVar.f9967k.a().get(0);
         if (aVar == null || aVar.a() == null || aVar.a().a() == null) {
             return null;
         }
@@ -463,9 +463,9 @@ public class b extends com.anythink.basead.l.b.a {
     }
 
     public final String b(b bVar) {
-        for (b bVar2 = this; bVar2.f9178g != null; bVar2 = bVar2.f9178g) {
+        for (b bVar2 = this; bVar2.f9964g != null; bVar2 = bVar2.f9964g) {
         }
-        com.anythink.basead.l.c.a aVar = bVar.f9181k.a().get(0);
+        com.anythink.basead.l.c.a aVar = bVar.f9967k.a().get(0);
         if (aVar == null || aVar.a() == null || aVar.a().e() == null) {
             return null;
         }
@@ -480,18 +480,18 @@ public class b extends com.anythink.basead.l.b.a {
     }
 
     public final ArrayList<ah> a(b bVar, int i) {
-        if (b(bVar.f9181k, i) != null) {
-            this.f9180j.addAll(b(bVar.f9181k, i));
+        if (b(bVar.f9967k, i) != null) {
+            this.f9966j.addAll(b(bVar.f9967k, i));
         }
-        if (bVar.f9178g != null) {
-            a(bVar.f9178g, i);
+        if (bVar.f9964g != null) {
+            a(bVar.f9964g, i);
         }
-        return this.f9180j;
+        return this.f9966j;
     }
 
     public final ArrayList<k> c(b bVar, int i) {
         ArrayList<k> b9;
-        com.anythink.basead.l.c.a aVar = bVar.f9181k.a().get(i);
+        com.anythink.basead.l.c.a aVar = bVar.f9967k.a().get(i);
         if (aVar.a() != null) {
             if (aVar.a().e() != null) {
                 Iterator<p> it = aVar.a().e().iterator();
@@ -520,8 +520,8 @@ public class b extends com.anythink.basead.l.b.a {
         if (b9 != null) {
             this.i.addAll(b9);
         }
-        if (bVar.f9178g != null) {
-            c(bVar.f9178g, i);
+        if (bVar.f9964g != null) {
+            c(bVar.f9964g, i);
         }
         return this.i;
     }
@@ -558,11 +558,11 @@ public class b extends com.anythink.basead.l.b.a {
     }
 
     public final ArrayList<String> a(f.a aVar) {
-        Iterator<at> it = this.f9179h.iterator();
+        Iterator<at> it = this.f9965h.iterator();
         ArrayList<String> arrayList = new ArrayList<>();
         while (it.hasNext()) {
             at next = it.next();
-            if (next.a().equals(a.f9203w[aVar.ordinal()])) {
+            if (next.a().equals(a.f9989w[aVar.ordinal()])) {
                 arrayList.add(next.b());
             }
         }
@@ -570,9 +570,9 @@ public class b extends com.anythink.basead.l.b.a {
     }
 
     public final String a(b bVar) {
-        for (b bVar2 = this; bVar2.f9178g != null; bVar2 = bVar2.f9178g) {
+        for (b bVar2 = this; bVar2.f9964g != null; bVar2 = bVar2.f9964g) {
         }
-        com.anythink.basead.l.c.a aVar = bVar.f9181k.a().get(0);
+        com.anythink.basead.l.c.a aVar = bVar.f9967k.a().get(0);
         if (aVar == null || aVar.a() == null || aVar.a().e() == null) {
             return null;
         }
@@ -704,6 +704,6 @@ public class b extends com.anythink.basead.l.b.a {
         newPullParser.setFeature("http://xmlpull.org/v1/doc/features.html#process-namespaces", false);
         newPullParser.setInput(new StringReader(str));
         newPullParser.nextTag();
-        this.f9181k = new av(newPullParser);
+        this.f9967k = new av(newPullParser);
     }
 }

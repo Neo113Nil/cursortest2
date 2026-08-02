@@ -6,30 +6,30 @@ package com.bumptech.glide;
 public final class j {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final j f23401n;
+    public static final j f24188n;
 
     /* renamed from: u, reason: collision with root package name */
-    public static final j f23402u;
+    public static final j f24189u;
 
     /* renamed from: v, reason: collision with root package name */
-    public static final j f23403v;
+    public static final j f24190v;
 
     /* renamed from: w, reason: collision with root package name */
-    public static final j f23404w;
+    public static final j f24191w;
 
     /* renamed from: x, reason: collision with root package name */
-    public static final /* synthetic */ j[] f23405x;
+    public static final /* synthetic */ j[] f24192x;
 
     static {
         j jVar = new j("IMMEDIATE", 0);
-        f23401n = jVar;
+        f24188n = jVar;
         j jVar2 = new j("HIGH", 1);
-        f23402u = jVar2;
+        f24189u = jVar2;
         j jVar3 = new j("NORMAL", 2);
-        f23403v = jVar3;
+        f24190v = jVar3;
         j jVar4 = new j("LOW", 3);
-        f23404w = jVar4;
-        f23405x = new j[]{jVar, jVar2, jVar3, jVar4};
+        f24191w = jVar4;
+        f24192x = new j[]{jVar, jVar2, jVar3, jVar4};
     }
 
     public static j valueOf(String str) {
@@ -37,6 +37,6 @@ public final class j {
     }
 
     public static j[] values() {
-        return (j[]) f23405x.clone();
+        return (j[]) f24192x.clone();
     }
 }

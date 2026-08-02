@@ -12,23 +12,23 @@ import java.util.zip.GZIPInputStream;
 public class a extends j<Void> {
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f19273c = "a";
+    private static final String f20060c = "a";
 
     /* renamed from: d, reason: collision with root package name */
-    private File f19274d;
+    private File f20061d;
 
     /* renamed from: e, reason: collision with root package name */
-    private File f19275e;
+    private File f20062e;
 
     public a(File file, String str) {
         super(str);
-        this.f19274d = file;
-        this.f19275e = new File(file + ".tmp");
+        this.f20061d = file;
+        this.f20062e = new File(file + ".tmp");
     }
 
     @Override // com.anythink.expressad.foundation.g.f.j
     public final l<Void> a(com.anythink.expressad.foundation.g.f.f.c cVar) {
-        return !f() ? (!this.f19275e.canRead() || this.f19275e.length() <= 0) ? l.a(new com.anythink.expressad.foundation.g.f.a.a(4, cVar)) : this.f19275e.renameTo(this.f19274d) ? l.a(null, cVar) : l.a(new com.anythink.expressad.foundation.g.f.a.a(4, cVar)) : l.a(new com.anythink.expressad.foundation.g.f.a.a(-2, cVar));
+        return !f() ? (!this.f20062e.canRead() || this.f20062e.length() <= 0) ? l.a(new com.anythink.expressad.foundation.g.f.a.a(4, cVar)) : this.f20062e.renameTo(this.f20061d) ? l.a(null, cVar) : l.a(new com.anythink.expressad.foundation.g.f.a.a(4, cVar)) : l.a(new com.anythink.expressad.foundation.g.f.a.a(-2, cVar));
     }
 
     @Override // com.anythink.expressad.foundation.g.f.j
@@ -65,12 +65,12 @@ public class a extends j<Void> {
         long j6 = 0;
         long longValue = !TextUtils.isEmpty(a9) ? Long.valueOf(a9).longValue() : 0L;
         InputStream inputStream = null;
-        if (longValue > 0 && this.f19274d.length() == longValue) {
-            this.f19274d.renameTo(this.f19275e);
+        if (longValue > 0 && this.f20061d.length() == longValue) {
+            this.f20061d.renameTo(this.f20062e);
             cVar.a(this, longValue, longValue);
             return null;
         }
-        randomAccessFile = new RandomAccessFile(this.f19275e.getAbsolutePath(), "rw");
+        randomAccessFile = new RandomAccessFile(this.f20062e.getAbsolutePath(), "rw");
         randomAccessFile.setLength(0L);
         try {
             InputStream c9 = bVar.c();

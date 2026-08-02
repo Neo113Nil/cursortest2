@@ -141,8 +141,8 @@ public class ATSDK {
         t.b().a(aTUserDeviceInfo);
     }
 
-    public static void setAdLogoVisible(boolean z3) {
-        t.b().c(z3);
+    public static void setAdLogoVisible(boolean z6) {
+        t.b().c(z6);
     }
 
     public static void setAllowedShowNetworkFirmIdList(String str, List<String> list) {
@@ -210,8 +210,8 @@ public class ATSDK {
         t.b().a(location);
     }
 
-    public static void setNetworkLogDebug(boolean z3) {
-        t.b().b(z3);
+    public static void setNetworkLogDebug(boolean z6) {
+        t.b().b(z6);
     }
 
     public static void setPersonalizedAdStatus(int i) {
@@ -234,23 +234,23 @@ public class ATSDK {
     }
 
     public static void setSupportDomainCountry(String... strArr) {
-        b.f13263a = strArr;
+        b.f14049a = strArr;
     }
 
     public static void setSystemDevFragmentType(String str) {
         t.b().r(str);
     }
 
-    public static void setUseHTTP(boolean z3) {
-        t.b().d(z3);
+    public static void setUseHTTP(boolean z6) {
+        t.b().d(z6);
     }
 
     public static void setWXAppId(String str) {
         t.b().a(str);
     }
 
-    public static void setWXStatus(boolean z3) {
-        t.b().a(z3);
+    public static void setWXStatus(boolean z6) {
+        t.b().a(z6);
     }
 
     public static void showGDPRConsentDialog(Activity activity, ATGDPRConsentDismissListener aTGDPRConsentDismissListener) {

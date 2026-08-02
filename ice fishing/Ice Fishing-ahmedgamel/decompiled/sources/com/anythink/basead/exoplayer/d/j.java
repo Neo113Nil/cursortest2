@@ -8,92 +8,92 @@ import java.util.Map;
 public interface j<T extends i> {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f6860a = 2;
+    public static final int f7646a = 2;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f6861b = 3;
+    public static final int f7647b = 3;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f6862c = 1;
+    public static final int f7648c = 1;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f6863d = 1;
+    public static final int f7649d = 1;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f6864e = 2;
+    public static final int f7650e = 2;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final int f6865f = 3;
+    public static final int f7651f = 3;
 
     public static final class a implements d {
 
         /* renamed from: a, reason: collision with root package name */
-        private final byte[] f6866a;
+        private final byte[] f7652a;
 
         /* renamed from: b, reason: collision with root package name */
-        private final String f6867b;
+        private final String f7653b;
 
         public a(byte[] bArr, String str) {
-            this.f6866a = bArr;
-            this.f6867b = str;
+            this.f7652a = bArr;
+            this.f7653b = str;
         }
 
         @Override // com.anythink.basead.exoplayer.d.j.d
         public final byte[] a() {
-            return this.f6866a;
+            return this.f7652a;
         }
 
         @Override // com.anythink.basead.exoplayer.d.j.d
         public final String b() {
-            return this.f6867b;
+            return this.f7653b;
         }
     }
 
     public static final class b implements e {
 
         /* renamed from: a, reason: collision with root package name */
-        private final int f6868a;
+        private final int f7654a;
 
         /* renamed from: b, reason: collision with root package name */
-        private final byte[] f6869b;
+        private final byte[] f7655b;
 
         public b(int i, byte[] bArr) {
-            this.f6868a = i;
-            this.f6869b = bArr;
+            this.f7654a = i;
+            this.f7655b = bArr;
         }
 
         @Override // com.anythink.basead.exoplayer.d.j.e
         public final int a() {
-            return this.f6868a;
+            return this.f7654a;
         }
 
         @Override // com.anythink.basead.exoplayer.d.j.e
         public final byte[] b() {
-            return this.f6869b;
+            return this.f7655b;
         }
     }
 
     public static final class c implements h {
 
         /* renamed from: a, reason: collision with root package name */
-        private final byte[] f6870a;
+        private final byte[] f7656a;
 
         /* renamed from: b, reason: collision with root package name */
-        private final String f6871b;
+        private final String f7657b;
 
         public c(byte[] bArr, String str) {
-            this.f6870a = bArr;
-            this.f6871b = str;
+            this.f7656a = bArr;
+            this.f7657b = str;
         }
 
         @Override // com.anythink.basead.exoplayer.d.j.h
         public final byte[] a() {
-            return this.f6870a;
+            return this.f7656a;
         }
 
         @Override // com.anythink.basead.exoplayer.d.j.h
         public final String b() {
-            return this.f6871b;
+            return this.f7657b;
         }
     }
 

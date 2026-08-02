@@ -20,11 +20,11 @@ public class e extends c {
         String str2 = "";
         try {
             if (!c()) {
-                com.anythink.basead.g.a aVar = this.f8895e;
+                com.anythink.basead.g.a aVar = this.f9681e;
                 if (aVar != null) {
-                    aVar.onShowFailed(com.anythink.basead.d.g.a(com.anythink.basead.d.g.i, com.anythink.basead.d.g.f6149D));
+                    aVar.onShowFailed(com.anythink.basead.d.g.a(com.anythink.basead.d.g.i, com.anythink.basead.d.g.f6935D));
                 }
-                this.f8894d = null;
+                this.f9680d = null;
                 return;
             }
             try {
@@ -33,27 +33,27 @@ public class e extends c {
             } catch (Throwable unused) {
                 str = "";
             }
-            int intValue = ((Integer) map.get(com.anythink.basead.h.c.f9001j)).intValue();
-            String a9 = a(this.f8894d);
+            int intValue = ((Integer) map.get(com.anythink.basead.h.c.f9787j)).intValue();
+            String a9 = a(this.f9680d);
             HashMap hashMap = new HashMap(2);
             a(hashMap);
-            if (this.f8892b != null) {
-                str2 = this.f8892b.f14158d + this.f8892b.f14157c;
+            if (this.f9678b != null) {
+                str2 = this.f9678b.f14944d + this.f9678b.f14943c;
             }
-            this.f8898h.b(activity, hashMap, intValue, a9, str, str2);
+            this.f9684h.b(activity, hashMap, intValue, a9, str, str2);
         } catch (Exception e9) {
             e9.printStackTrace();
-            com.anythink.basead.g.a aVar2 = this.f8895e;
+            com.anythink.basead.g.a aVar2 = this.f9681e;
             if (aVar2 != null) {
                 aVar2.onShowFailed(com.anythink.basead.d.g.a("-9999", e9.getMessage()));
             }
-            this.f8894d = null;
+            this.f9680d = null;
         }
     }
 
     @Override // com.anythink.basead.f.c
     public final void b() {
         super.b();
-        this.f8895e = null;
+        this.f9681e = null;
     }
 }

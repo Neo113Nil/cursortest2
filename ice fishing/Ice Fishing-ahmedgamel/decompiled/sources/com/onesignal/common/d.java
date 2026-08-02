@@ -17,6 +17,6 @@ public final class d {
 
     public final boolean isLocalId(String id) {
         kotlin.jvm.internal.h.e(id, "id");
-        return q.R(id, LOCAL_PREFIX);
+        return q.h0(id, LOCAL_PREFIX);
     }
 }

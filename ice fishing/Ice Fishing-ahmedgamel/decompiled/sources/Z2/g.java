@@ -1,38 +1,43 @@
 package Z2;
 
-import N2.h;
-import android.content.Context;
-import com.google.android.gms.common.api.Status;
-import j3.m;
+import android.os.Parcel;
+import c3.AbstractC0549a;
+import com.google.android.gms.dynamite.descriptors.com.google.android.gms.ads.dynamite.ModuleDescriptor;
+import com.google.android.gms.internal.ads.Wv;
 
-/* loaded from: classes2.dex */
-public final class g extends h implements I2.a {
-
-    /* renamed from: D, reason: collision with root package name */
-    public static final N2.e f4175D = new N2.e("AppSet.API", new R2.b(1), new N2.d());
-
-    /* renamed from: B, reason: collision with root package name */
-    public final Context f4176B;
-
-    /* renamed from: C, reason: collision with root package name */
-    public final M2.f f4177C;
-
-    public g(Context context, M2.f fVar) {
-        super(context, f4175D, N2.b.f1935a, N2.g.f1940b);
-        this.f4176B = context;
-        this.f4177C = fVar;
+/* loaded from: classes.dex */
+public final class g extends AbstractC0549a {
+    public final Y2.a G1(Y2.b bVar, boolean z6, long j6) {
+        Parcel t02 = t0();
+        e3.h.b(t02, bVar);
+        t02.writeString(ModuleDescriptor.MODULE_ID);
+        t02.writeInt(z6 ? 1 : 0);
+        t02.writeLong(j6);
+        return Wv.e(e0(t02, 7));
     }
 
-    @Override // I2.a
-    public final m b() {
-        if (this.f4177C.c(this.f4176B, 212800000) != 0) {
-            return S0.f.h(new N2.f(new Status(17, null, null, null)));
-        }
-        F3.e eVar = new F3.e();
-        eVar.f963e = new M2.d[]{I2.d.f1291a};
-        eVar.f962d = new a4.e();
-        eVar.f960b = false;
-        eVar.f961c = 27601;
-        return c(0, new F3.e(eVar, (M2.d[]) eVar.f963e, eVar.f960b, eVar.f961c));
+    public final Y2.a Q1(Y2.b bVar, int i, Y2.b bVar2) {
+        Parcel t02 = t0();
+        e3.h.b(t02, bVar);
+        t02.writeString(ModuleDescriptor.MODULE_ID);
+        t02.writeInt(i);
+        e3.h.b(t02, bVar2);
+        return Wv.e(e0(t02, 8));
+    }
+
+    public final Y2.a r1(Y2.b bVar, int i) {
+        Parcel t02 = t0();
+        e3.h.b(t02, bVar);
+        t02.writeString(ModuleDescriptor.MODULE_ID);
+        t02.writeInt(i);
+        return Wv.e(e0(t02, 2));
+    }
+
+    public final Y2.a u1(Y2.b bVar, int i) {
+        Parcel t02 = t0();
+        e3.h.b(t02, bVar);
+        t02.writeString(ModuleDescriptor.MODULE_ID);
+        t02.writeInt(i);
+        return Wv.e(e0(t02, 4));
     }
 }

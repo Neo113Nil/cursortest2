@@ -9,115 +9,115 @@ import java.nio.ByteBuffer;
 public final class x implements com.anythink.basead.exoplayer.e.m {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f7857a = -1;
+    public static final int f8643a = -1;
 
     /* renamed from: b, reason: collision with root package name */
-    private static final int f7858b = 32;
+    private static final int f8644b = 32;
 
     /* renamed from: c, reason: collision with root package name */
-    private final com.anythink.basead.exoplayer.j.b f7859c;
+    private final com.anythink.basead.exoplayer.j.b f8645c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final int f7860d;
+    private final int f8646d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final w f7861e;
+    private final w f8647e;
 
     /* renamed from: f, reason: collision with root package name */
-    private final w.a f7862f;
+    private final w.a f8648f;
 
     /* renamed from: g, reason: collision with root package name */
-    private final com.anythink.basead.exoplayer.k.s f7863g;
+    private final com.anythink.basead.exoplayer.k.s f8649g;
 
     /* renamed from: h, reason: collision with root package name */
-    private a f7864h;
+    private a f8650h;
     private a i;
 
     /* renamed from: j, reason: collision with root package name */
-    private a f7865j;
+    private a f8651j;
 
     /* renamed from: k, reason: collision with root package name */
-    private com.anythink.basead.exoplayer.m f7866k;
+    private com.anythink.basead.exoplayer.m f8652k;
 
     /* renamed from: l, reason: collision with root package name */
-    private boolean f7867l;
+    private boolean f8653l;
 
     /* renamed from: m, reason: collision with root package name */
-    private com.anythink.basead.exoplayer.m f7868m;
+    private com.anythink.basead.exoplayer.m f8654m;
 
     /* renamed from: n, reason: collision with root package name */
-    private long f7869n;
+    private long f8655n;
 
     /* renamed from: o, reason: collision with root package name */
-    private long f7870o;
+    private long f8656o;
 
     /* renamed from: p, reason: collision with root package name */
-    private boolean f7871p;
+    private boolean f8657p;
 
     /* renamed from: q, reason: collision with root package name */
-    private b f7872q;
+    private b f8658q;
 
     public interface b {
         void i();
     }
 
     public x(com.anythink.basead.exoplayer.j.b bVar) {
-        this.f7859c = bVar;
-        int d2 = bVar.d();
-        this.f7860d = d2;
-        this.f7861e = new w();
-        this.f7862f = new w.a();
-        this.f7863g = new com.anythink.basead.exoplayer.k.s(32);
-        a aVar = new a(0L, d2);
-        this.f7864h = aVar;
+        this.f8645c = bVar;
+        int d9 = bVar.d();
+        this.f8646d = d9;
+        this.f8647e = new w();
+        this.f8648f = new w.a();
+        this.f8649g = new com.anythink.basead.exoplayer.k.s(32);
+        a aVar = new a(0L, d9);
+        this.f8650h = aVar;
         this.i = aVar;
-        this.f7865j = aVar;
+        this.f8651j = aVar;
     }
 
     private void c(int i) {
-        this.f7861e.b(i);
+        this.f8647e.b(i);
     }
 
     private void l() {
-        this.f7861e.a();
-        a(this.f7864h);
-        a aVar = new a(0L, this.f7860d);
-        this.f7864h = aVar;
+        this.f8647e.a();
+        a(this.f8650h);
+        a aVar = new a(0L, this.f8646d);
+        this.f8650h = aVar;
         this.i = aVar;
-        this.f7865j = aVar;
-        this.f7870o = 0L;
-        this.f7859c.b();
+        this.f8651j = aVar;
+        this.f8656o = 0L;
+        this.f8645c.b();
     }
 
     private void m() {
-        this.f7871p = true;
+        this.f8657p = true;
     }
 
     private int n() {
-        return this.f7861e.e();
+        return this.f8647e.e();
     }
 
     private void o() {
-        c(this.f7861e.l());
+        c(this.f8647e.l());
     }
 
     public final void a(int i) {
-        long a9 = this.f7861e.a(i);
-        this.f7870o = a9;
+        long a9 = this.f8647e.a(i);
+        this.f8656o = a9;
         if (a9 != 0) {
-            a aVar = this.f7864h;
-            if (a9 != aVar.f7873a) {
-                while (this.f7870o > aVar.f7874b) {
-                    aVar = aVar.f7877e;
+            a aVar = this.f8650h;
+            if (a9 != aVar.f8659a) {
+                while (this.f8656o > aVar.f8660b) {
+                    aVar = aVar.f8663e;
                 }
-                a aVar2 = aVar.f7877e;
+                a aVar2 = aVar.f8663e;
                 a(aVar2);
-                a aVar3 = new a(aVar.f7874b, this.f7860d);
-                aVar.f7877e = aVar3;
-                if (this.f7870o == aVar.f7874b) {
+                a aVar3 = new a(aVar.f8660b, this.f8646d);
+                aVar.f8663e = aVar3;
+                if (this.f8656o == aVar.f8660b) {
                     aVar = aVar3;
                 }
-                this.f7865j = aVar;
+                this.f8651j = aVar;
                 if (this.i == aVar2) {
                     this.i = aVar3;
                     return;
@@ -125,111 +125,111 @@ public final class x implements com.anythink.basead.exoplayer.e.m {
                 return;
             }
         }
-        a(this.f7864h);
-        a aVar4 = new a(this.f7870o, this.f7860d);
-        this.f7864h = aVar4;
+        a(this.f8650h);
+        a aVar4 = new a(this.f8656o, this.f8646d);
+        this.f8650h = aVar4;
         this.i = aVar4;
-        this.f7865j = aVar4;
+        this.f8651j = aVar4;
     }
 
     public final int b() {
-        return this.f7861e.b();
+        return this.f8647e.b();
     }
 
     public final int d() {
-        return this.f7861e.c();
+        return this.f8647e.c();
     }
 
     public final int e() {
-        return this.f7861e.d();
+        return this.f8647e.d();
     }
 
     public final com.anythink.basead.exoplayer.m f() {
-        return this.f7861e.g();
+        return this.f8647e.g();
     }
 
     public final long g() {
-        return this.f7861e.h();
+        return this.f8647e.h();
     }
 
     public final long h() {
-        return this.f7861e.i();
+        return this.f8647e.i();
     }
 
     public final void i() {
-        this.f7861e.j();
-        this.i = this.f7864h;
+        this.f8647e.j();
+        this.i = this.f8650h;
     }
 
     public final void j() {
-        c(this.f7861e.m());
+        c(this.f8647e.m());
     }
 
     public final int k() {
-        return this.f7861e.k();
+        return this.f8647e.k();
     }
 
     private int d(int i) {
-        a aVar = this.f7865j;
-        if (!aVar.f7875c) {
-            aVar.a(this.f7859c.a(), new a(this.f7865j.f7874b, this.f7860d));
+        a aVar = this.f8651j;
+        if (!aVar.f8661c) {
+            aVar.a(this.f8645c.a(), new a(this.f8651j.f8660b, this.f8646d));
         }
-        return Math.min(i, (int) (this.f7865j.f7874b - this.f7870o));
+        return Math.min(i, (int) (this.f8651j.f8660b - this.f8656o));
     }
 
     private void e(int i) {
-        long j6 = this.f7870o + i;
-        this.f7870o = j6;
-        a aVar = this.f7865j;
-        if (j6 == aVar.f7874b) {
-            this.f7865j = aVar.f7877e;
+        long j6 = this.f8656o + i;
+        this.f8656o = j6;
+        a aVar = this.f8651j;
+        if (j6 == aVar.f8660b) {
+            this.f8651j = aVar.f8663e;
         }
     }
 
     public final boolean b(int i) {
-        return this.f7861e.c(i);
+        return this.f8647e.c(i);
     }
 
     public final boolean c() {
-        return this.f7861e.f();
+        return this.f8647e.f();
     }
 
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public final long f7873a;
+        public final long f8659a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final long f7874b;
+        public final long f8660b;
 
         /* renamed from: c, reason: collision with root package name */
-        public boolean f7875c;
+        public boolean f8661c;
 
         /* renamed from: d, reason: collision with root package name */
-        public com.anythink.basead.exoplayer.j.a f7876d;
+        public com.anythink.basead.exoplayer.j.a f8662d;
 
         /* renamed from: e, reason: collision with root package name */
-        public a f7877e;
+        public a f8663e;
 
         public a(long j6, int i) {
-            this.f7873a = j6;
-            this.f7874b = j6 + i;
+            this.f8659a = j6;
+            this.f8660b = j6 + i;
         }
 
         public final void a(com.anythink.basead.exoplayer.j.a aVar, a aVar2) {
-            this.f7876d = aVar;
-            this.f7877e = aVar2;
-            this.f7875c = true;
+            this.f8662d = aVar;
+            this.f8663e = aVar2;
+            this.f8661c = true;
         }
 
         public final int a(long j6) {
-            return ((int) (j6 - this.f7873a)) + this.f7876d.f8020b;
+            return ((int) (j6 - this.f8659a)) + this.f8662d.f8806b;
         }
 
         public final a a() {
-            this.f7876d = null;
-            a aVar = this.f7877e;
-            this.f7877e = null;
+            this.f8662d = null;
+            a aVar = this.f8663e;
+            this.f8663e = null;
             return aVar;
         }
     }
@@ -237,10 +237,10 @@ public final class x implements com.anythink.basead.exoplayer.e.m {
     private void b(long j6) {
         while (true) {
             a aVar = this.i;
-            if (j6 < aVar.f7874b) {
+            if (j6 < aVar.f8660b) {
                 return;
             } else {
-                this.i = aVar.f7877e;
+                this.i = aVar.f8663e;
             }
         }
     }
@@ -251,30 +251,30 @@ public final class x implements com.anythink.basead.exoplayer.e.m {
             return;
         }
         while (true) {
-            aVar = this.f7864h;
-            if (j6 < aVar.f7874b) {
+            aVar = this.f8650h;
+            if (j6 < aVar.f8660b) {
                 break;
             }
-            this.f7859c.a(aVar.f7876d);
-            this.f7864h = this.f7864h.a();
+            this.f8645c.a(aVar.f8662d);
+            this.f8650h = this.f8650h.a();
         }
-        if (this.i.f7873a < aVar.f7873a) {
+        if (this.i.f8659a < aVar.f8659a) {
             this.i = aVar;
         }
     }
 
-    public final void a(long j6, boolean z3, boolean z6) {
-        c(this.f7861e.a(j6, z3, z6));
+    public final void a(long j6, boolean z6, boolean z9) {
+        c(this.f8647e.a(j6, z6, z9));
     }
 
-    public final int a(long j6, boolean z3) {
-        return this.f7861e.a(j6, z3);
+    public final int a(long j6, boolean z6) {
+        return this.f8647e.a(j6, z6);
     }
 
-    public final int a(com.anythink.basead.exoplayer.n nVar, com.anythink.basead.exoplayer.c.e eVar, boolean z3, boolean z6, long j6) {
-        int a9 = this.f7861e.a(nVar, eVar, z3, z6, this.f7866k, this.f7862f);
+    public final int a(com.anythink.basead.exoplayer.n nVar, com.anythink.basead.exoplayer.c.e eVar, boolean z6, boolean z9, long j6) {
+        int a9 = this.f8647e.a(nVar, eVar, z6, z9, this.f8652k, this.f8648f);
         if (a9 == -5) {
-            this.f7866k = nVar.f8683a;
+            this.f8652k = nVar.f9469a;
             return -5;
         }
         if (a9 != -4) {
@@ -284,80 +284,80 @@ public final class x implements com.anythink.basead.exoplayer.e.m {
             throw new IllegalStateException();
         }
         if (!eVar.c()) {
-            if (eVar.f6743f < j6) {
+            if (eVar.f7529f < j6) {
                 eVar.b(Integer.MIN_VALUE);
             }
             if (eVar.g()) {
-                w.a aVar = this.f7862f;
-                long j9 = aVar.f7855b;
+                w.a aVar = this.f8648f;
+                long j9 = aVar.f8641b;
                 int i = 1;
-                this.f7863g.a(1);
-                a(j9, this.f7863g.f8502a, 1);
+                this.f8649g.a(1);
+                a(j9, this.f8649g.f9288a, 1);
                 long j10 = j9 + 1;
-                byte b9 = this.f7863g.f8502a[0];
-                boolean z9 = (b9 & com.anythink.core.common.s.a.c.f16316a) != 0;
-                int i6 = b9 & Byte.MAX_VALUE;
-                com.anythink.basead.exoplayer.c.b bVar = eVar.f6741d;
-                if (bVar.f6719a == null) {
-                    bVar.f6719a = new byte[16];
+                byte b9 = this.f8649g.f9288a[0];
+                boolean z10 = (b9 & com.anythink.core.common.s.a.c.f17103a) != 0;
+                int i4 = b9 & Byte.MAX_VALUE;
+                com.anythink.basead.exoplayer.c.b bVar = eVar.f7527d;
+                if (bVar.f7505a == null) {
+                    bVar.f7505a = new byte[16];
                 }
-                a(j10, bVar.f6719a, i6);
-                long j11 = j10 + i6;
-                if (z9) {
-                    this.f7863g.a(2);
-                    a(j11, this.f7863g.f8502a, 2);
+                a(j10, bVar.f7505a, i4);
+                long j11 = j10 + i4;
+                if (z10) {
+                    this.f8649g.a(2);
+                    a(j11, this.f8649g.f9288a, 2);
                     j11 += 2;
-                    i = this.f7863g.e();
+                    i = this.f8649g.e();
                 }
-                int i9 = i;
-                com.anythink.basead.exoplayer.c.b bVar2 = eVar.f6741d;
-                int[] iArr = bVar2.f6722d;
-                if (iArr == null || iArr.length < i9) {
-                    iArr = new int[i9];
+                int i6 = i;
+                com.anythink.basead.exoplayer.c.b bVar2 = eVar.f7527d;
+                int[] iArr = bVar2.f7508d;
+                if (iArr == null || iArr.length < i6) {
+                    iArr = new int[i6];
                 }
                 int[] iArr2 = iArr;
-                int[] iArr3 = bVar2.f6723e;
-                if (iArr3 == null || iArr3.length < i9) {
-                    iArr3 = new int[i9];
+                int[] iArr3 = bVar2.f7509e;
+                if (iArr3 == null || iArr3.length < i6) {
+                    iArr3 = new int[i6];
                 }
                 int[] iArr4 = iArr3;
-                if (z9) {
-                    int i10 = i9 * 6;
-                    this.f7863g.a(i10);
-                    a(j11, this.f7863g.f8502a, i10);
-                    j11 += i10;
-                    this.f7863g.c(0);
-                    for (int i11 = 0; i11 < i9; i11++) {
-                        iArr2[i11] = this.f7863g.e();
-                        iArr4[i11] = this.f7863g.m();
+                if (z10) {
+                    int i9 = i6 * 6;
+                    this.f8649g.a(i9);
+                    a(j11, this.f8649g.f9288a, i9);
+                    j11 += i9;
+                    this.f8649g.c(0);
+                    for (int i10 = 0; i10 < i6; i10++) {
+                        iArr2[i10] = this.f8649g.e();
+                        iArr4[i10] = this.f8649g.m();
                     }
                 } else {
                     iArr2[0] = 0;
-                    iArr4[0] = aVar.f7854a - ((int) (j11 - aVar.f7855b));
+                    iArr4[0] = aVar.f8640a - ((int) (j11 - aVar.f8641b));
                 }
-                m.a aVar2 = aVar.f7856c;
-                com.anythink.basead.exoplayer.c.b bVar3 = eVar.f6741d;
-                bVar3.a(i9, iArr2, iArr4, aVar2.f7184b, bVar3.f6719a, aVar2.f7183a, aVar2.f7185c, aVar2.f7186d);
-                long j12 = aVar.f7855b;
-                int i12 = (int) (j11 - j12);
-                aVar.f7855b = j12 + i12;
-                aVar.f7854a -= i12;
+                m.a aVar2 = aVar.f8642c;
+                com.anythink.basead.exoplayer.c.b bVar3 = eVar.f7527d;
+                bVar3.a(i6, iArr2, iArr4, aVar2.f7970b, bVar3.f7505a, aVar2.f7969a, aVar2.f7971c, aVar2.f7972d);
+                long j12 = aVar.f8641b;
+                int i11 = (int) (j11 - j12);
+                aVar.f8641b = j12 + i11;
+                aVar.f8640a -= i11;
             }
-            eVar.d(this.f7862f.f7854a);
-            w.a aVar3 = this.f7862f;
-            long j13 = aVar3.f7855b;
-            ByteBuffer byteBuffer = eVar.f6742e;
-            int i13 = aVar3.f7854a;
+            eVar.d(this.f8648f.f8640a);
+            w.a aVar3 = this.f8648f;
+            long j13 = aVar3.f8641b;
+            ByteBuffer byteBuffer = eVar.f7528e;
+            int i12 = aVar3.f8640a;
             b(j13);
-            while (i13 > 0) {
-                int min = Math.min(i13, (int) (this.i.f7874b - j13));
+            while (i12 > 0) {
+                int min = Math.min(i12, (int) (this.i.f8660b - j13));
                 a aVar4 = this.i;
-                byteBuffer.put(aVar4.f7876d.f8019a, aVar4.a(j13), min);
-                i13 -= min;
+                byteBuffer.put(aVar4.f8662d.f8805a, aVar4.a(j13), min);
+                i12 -= min;
                 j13 += min;
                 a aVar5 = this.i;
-                if (j13 == aVar5.f7874b) {
-                    this.i = aVar5.f7877e;
+                if (j13 == aVar5.f8660b) {
+                    this.i = aVar5.f8663e;
                 }
             }
         }
@@ -365,122 +365,122 @@ public final class x implements com.anythink.basead.exoplayer.e.m {
     }
 
     private void a(com.anythink.basead.exoplayer.c.e eVar, w.a aVar) {
-        long j6 = aVar.f7855b;
+        long j6 = aVar.f8641b;
         int i = 1;
-        this.f7863g.a(1);
-        a(j6, this.f7863g.f8502a, 1);
+        this.f8649g.a(1);
+        a(j6, this.f8649g.f9288a, 1);
         long j9 = j6 + 1;
-        byte b9 = this.f7863g.f8502a[0];
-        boolean z3 = (b9 & com.anythink.core.common.s.a.c.f16316a) != 0;
-        int i6 = b9 & Byte.MAX_VALUE;
-        com.anythink.basead.exoplayer.c.b bVar = eVar.f6741d;
-        if (bVar.f6719a == null) {
-            bVar.f6719a = new byte[16];
+        byte b9 = this.f8649g.f9288a[0];
+        boolean z6 = (b9 & com.anythink.core.common.s.a.c.f17103a) != 0;
+        int i4 = b9 & Byte.MAX_VALUE;
+        com.anythink.basead.exoplayer.c.b bVar = eVar.f7527d;
+        if (bVar.f7505a == null) {
+            bVar.f7505a = new byte[16];
         }
-        a(j9, bVar.f6719a, i6);
-        long j10 = j9 + i6;
-        if (z3) {
-            this.f7863g.a(2);
-            a(j10, this.f7863g.f8502a, 2);
+        a(j9, bVar.f7505a, i4);
+        long j10 = j9 + i4;
+        if (z6) {
+            this.f8649g.a(2);
+            a(j10, this.f8649g.f9288a, 2);
             j10 += 2;
-            i = this.f7863g.e();
+            i = this.f8649g.e();
         }
-        int i9 = i;
-        com.anythink.basead.exoplayer.c.b bVar2 = eVar.f6741d;
-        int[] iArr = bVar2.f6722d;
-        if (iArr == null || iArr.length < i9) {
-            iArr = new int[i9];
+        int i6 = i;
+        com.anythink.basead.exoplayer.c.b bVar2 = eVar.f7527d;
+        int[] iArr = bVar2.f7508d;
+        if (iArr == null || iArr.length < i6) {
+            iArr = new int[i6];
         }
         int[] iArr2 = iArr;
-        int[] iArr3 = bVar2.f6723e;
-        if (iArr3 == null || iArr3.length < i9) {
-            iArr3 = new int[i9];
+        int[] iArr3 = bVar2.f7509e;
+        if (iArr3 == null || iArr3.length < i6) {
+            iArr3 = new int[i6];
         }
         int[] iArr4 = iArr3;
-        if (z3) {
-            int i10 = i9 * 6;
-            this.f7863g.a(i10);
-            a(j10, this.f7863g.f8502a, i10);
-            j10 += i10;
-            this.f7863g.c(0);
-            for (int i11 = 0; i11 < i9; i11++) {
-                iArr2[i11] = this.f7863g.e();
-                iArr4[i11] = this.f7863g.m();
+        if (z6) {
+            int i9 = i6 * 6;
+            this.f8649g.a(i9);
+            a(j10, this.f8649g.f9288a, i9);
+            j10 += i9;
+            this.f8649g.c(0);
+            for (int i10 = 0; i10 < i6; i10++) {
+                iArr2[i10] = this.f8649g.e();
+                iArr4[i10] = this.f8649g.m();
             }
         } else {
             iArr2[0] = 0;
-            iArr4[0] = aVar.f7854a - ((int) (j10 - aVar.f7855b));
+            iArr4[0] = aVar.f8640a - ((int) (j10 - aVar.f8641b));
         }
-        m.a aVar2 = aVar.f7856c;
-        com.anythink.basead.exoplayer.c.b bVar3 = eVar.f6741d;
-        bVar3.a(i9, iArr2, iArr4, aVar2.f7184b, bVar3.f6719a, aVar2.f7183a, aVar2.f7185c, aVar2.f7186d);
-        long j11 = aVar.f7855b;
-        int i12 = (int) (j10 - j11);
-        aVar.f7855b = j11 + i12;
-        aVar.f7854a -= i12;
+        m.a aVar2 = aVar.f8642c;
+        com.anythink.basead.exoplayer.c.b bVar3 = eVar.f7527d;
+        bVar3.a(i6, iArr2, iArr4, aVar2.f7970b, bVar3.f7505a, aVar2.f7969a, aVar2.f7971c, aVar2.f7972d);
+        long j11 = aVar.f8641b;
+        int i11 = (int) (j10 - j11);
+        aVar.f8641b = j11 + i11;
+        aVar.f8640a -= i11;
     }
 
     private void a(long j6, ByteBuffer byteBuffer, int i) {
         b(j6);
         while (i > 0) {
-            int min = Math.min(i, (int) (this.i.f7874b - j6));
+            int min = Math.min(i, (int) (this.i.f8660b - j6));
             a aVar = this.i;
-            byteBuffer.put(aVar.f7876d.f8019a, aVar.a(j6), min);
+            byteBuffer.put(aVar.f8662d.f8805a, aVar.a(j6), min);
             i -= min;
             j6 += min;
             a aVar2 = this.i;
-            if (j6 == aVar2.f7874b) {
-                this.i = aVar2.f7877e;
+            if (j6 == aVar2.f8660b) {
+                this.i = aVar2.f8663e;
             }
         }
     }
 
     private void a(long j6, byte[] bArr, int i) {
         b(j6);
-        int i6 = i;
-        while (i6 > 0) {
-            int min = Math.min(i6, (int) (this.i.f7874b - j6));
+        int i4 = i;
+        while (i4 > 0) {
+            int min = Math.min(i4, (int) (this.i.f8660b - j6));
             a aVar = this.i;
-            System.arraycopy(aVar.f7876d.f8019a, aVar.a(j6), bArr, i - i6, min);
-            i6 -= min;
+            System.arraycopy(aVar.f8662d.f8805a, aVar.a(j6), bArr, i - i4, min);
+            i4 -= min;
             j6 += min;
             a aVar2 = this.i;
-            if (j6 == aVar2.f7874b) {
-                this.i = aVar2.f7877e;
+            if (j6 == aVar2.f8660b) {
+                this.i = aVar2.f8663e;
             }
         }
     }
 
     public final void a(b bVar) {
-        this.f7872q = bVar;
+        this.f8658q = bVar;
     }
 
     public final void a(long j6) {
-        if (this.f7869n != j6) {
-            this.f7869n = j6;
-            this.f7867l = true;
+        if (this.f8655n != j6) {
+            this.f8655n = j6;
+            this.f8653l = true;
         }
     }
 
     @Override // com.anythink.basead.exoplayer.e.m
     public final void a(com.anythink.basead.exoplayer.m mVar) {
         com.anythink.basead.exoplayer.m mVar2;
-        long j6 = this.f7869n;
+        long j6 = this.f8655n;
         if (mVar == null) {
             mVar2 = null;
         } else {
             if (j6 != 0) {
-                long j9 = mVar.f8668l;
+                long j9 = mVar.f9454l;
                 if (j9 != Long.MAX_VALUE) {
                     mVar2 = mVar.a(j9 + j6);
                 }
             }
             mVar2 = mVar;
         }
-        boolean a9 = this.f7861e.a(mVar2);
-        this.f7868m = mVar;
-        this.f7867l = false;
-        b bVar = this.f7872q;
+        boolean a9 = this.f8647e.a(mVar2);
+        this.f8654m = mVar;
+        this.f8653l = false;
+        b bVar = this.f8658q;
         if (bVar == null || !a9) {
             return;
         }
@@ -488,15 +488,15 @@ public final class x implements com.anythink.basead.exoplayer.e.m {
     }
 
     @Override // com.anythink.basead.exoplayer.e.m
-    public final int a(com.anythink.basead.exoplayer.e.f fVar, int i, boolean z3) {
-        int d2 = d(i);
-        a aVar = this.f7865j;
-        int a9 = fVar.a(aVar.f7876d.f8019a, aVar.a(this.f7870o), d2);
+    public final int a(com.anythink.basead.exoplayer.e.f fVar, int i, boolean z6) {
+        int d9 = d(i);
+        a aVar = this.f8651j;
+        int a9 = fVar.a(aVar.f8662d.f8805a, aVar.a(this.f8656o), d9);
         if (a9 != -1) {
             e(a9);
             return a9;
         }
-        if (z3) {
+        if (z6) {
             return -1;
         }
         throw new EOFException();
@@ -505,39 +505,39 @@ public final class x implements com.anythink.basead.exoplayer.e.m {
     @Override // com.anythink.basead.exoplayer.e.m
     public final void a(com.anythink.basead.exoplayer.k.s sVar, int i) {
         while (i > 0) {
-            int d2 = d(i);
-            a aVar = this.f7865j;
-            sVar.a(aVar.f7876d.f8019a, aVar.a(this.f7870o), d2);
-            i -= d2;
-            e(d2);
+            int d9 = d(i);
+            a aVar = this.f8651j;
+            sVar.a(aVar.f8662d.f8805a, aVar.a(this.f8656o), d9);
+            i -= d9;
+            e(d9);
         }
     }
 
     @Override // com.anythink.basead.exoplayer.e.m
-    public final void a(long j6, int i, int i6, int i9, m.a aVar) {
-        if (this.f7867l) {
-            a(this.f7868m);
+    public final void a(long j6, int i, int i4, int i6, m.a aVar) {
+        if (this.f8653l) {
+            a(this.f8654m);
         }
-        if (this.f7871p) {
-            if ((i & 1) == 0 || !this.f7861e.a(j6)) {
+        if (this.f8657p) {
+            if ((i & 1) == 0 || !this.f8647e.a(j6)) {
                 return;
             } else {
-                this.f7871p = false;
+                this.f8657p = false;
             }
         }
-        this.f7861e.a(j6 + this.f7869n, i, (this.f7870o - i6) - i9, i6, aVar);
+        this.f8647e.a(j6 + this.f8655n, i, (this.f8656o - i4) - i6, i4, aVar);
     }
 
     private void a(a aVar) {
-        if (aVar.f7875c) {
-            a aVar2 = this.f7865j;
-            int i = (((int) (aVar2.f7873a - aVar.f7873a)) / this.f7860d) + (aVar2.f7875c ? 1 : 0);
+        if (aVar.f8661c) {
+            a aVar2 = this.f8651j;
+            int i = (((int) (aVar2.f8659a - aVar.f8659a)) / this.f8646d) + (aVar2.f8661c ? 1 : 0);
             com.anythink.basead.exoplayer.j.a[] aVarArr = new com.anythink.basead.exoplayer.j.a[i];
-            for (int i6 = 0; i6 < i; i6++) {
-                aVarArr[i6] = aVar.f7876d;
+            for (int i4 = 0; i4 < i; i4++) {
+                aVarArr[i4] = aVar.f8662d;
                 aVar = aVar.a();
             }
-            this.f7859c.a(aVarArr);
+            this.f8645c.a(aVarArr);
         }
     }
 
@@ -548,18 +548,18 @@ public final class x implements com.anythink.basead.exoplayer.e.m {
         if (j6 == 0) {
             return mVar;
         }
-        long j9 = mVar.f8668l;
+        long j9 = mVar.f9454l;
         return j9 != Long.MAX_VALUE ? mVar.a(j9 + j6) : mVar;
     }
 
     public final void a() {
-        this.f7861e.a();
-        a(this.f7864h);
-        a aVar = new a(0L, this.f7860d);
-        this.f7864h = aVar;
+        this.f8647e.a();
+        a(this.f8650h);
+        a aVar = new a(0L, this.f8646d);
+        this.f8650h = aVar;
         this.i = aVar;
-        this.f7865j = aVar;
-        this.f7870o = 0L;
-        this.f7859c.b();
+        this.f8651j = aVar;
+        this.f8656o = 0L;
+        this.f8645c.b();
     }
 }

@@ -1,61 +1,61 @@
 package androidx.activity;
 
 import java.util.ListIterator;
-import v7.C5127h;
+import v7.C5117h;
 
 /* loaded from: classes.dex */
 public final class A extends kotlin.jvm.internal.i implements I7.l {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f4409n;
+    public final /* synthetic */ int f4377n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final /* synthetic */ G f4410u;
+    public final /* synthetic */ G f4378u;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public /* synthetic */ A(G g4, int i) {
+    public /* synthetic */ A(G g9, int i) {
         super(1);
-        this.f4409n = i;
-        this.f4410u = g4;
+        this.f4377n = i;
+        this.f4378u = g9;
     }
 
     @Override // I7.l
     public final Object invoke(Object obj) {
         Object obj2;
         Object obj3;
-        switch (this.f4409n) {
+        switch (this.f4377n) {
             case 0:
-                C0450b backEvent = (C0450b) obj;
+                C0454b backEvent = (C0454b) obj;
                 kotlin.jvm.internal.h.e(backEvent, "backEvent");
-                G g4 = this.f4410u;
-                C5127h c5127h = g4.f4424b;
-                ListIterator listIterator = c5127h.listIterator(c5127h.a());
+                G g9 = this.f4378u;
+                C5117h c5117h = g9.f4392b;
+                ListIterator listIterator = c5117h.listIterator(c5117h.a());
                 while (true) {
                     if (listIterator.hasPrevious()) {
                         obj2 = listIterator.previous();
-                        if (((androidx.fragment.app.E) obj2).f4820a) {
+                        if (((androidx.fragment.app.E) obj2).f4788a) {
                         }
                     } else {
                         obj2 = null;
                     }
                 }
                 androidx.fragment.app.E e9 = (androidx.fragment.app.E) obj2;
-                if (g4.f4425c != null) {
-                    g4.b();
+                if (g9.f4393c != null) {
+                    g9.b();
                 }
-                g4.f4425c = e9;
+                g9.f4393c = e9;
                 break;
             default:
-                C0450b backEvent2 = (C0450b) obj;
+                C0454b backEvent2 = (C0454b) obj;
                 kotlin.jvm.internal.h.e(backEvent2, "backEvent");
-                G g9 = this.f4410u;
-                if (g9.f4425c == null) {
-                    C5127h c5127h2 = g9.f4424b;
-                    ListIterator listIterator2 = c5127h2.listIterator(c5127h2.a());
+                G g10 = this.f4378u;
+                if (g10.f4393c == null) {
+                    C5117h c5117h2 = g10.f4392b;
+                    ListIterator listIterator2 = c5117h2.listIterator(c5117h2.a());
                     while (true) {
                         if (listIterator2.hasPrevious()) {
                             obj3 = listIterator2.previous();
-                            if (((androidx.fragment.app.E) obj3).f4820a) {
+                            if (((androidx.fragment.app.E) obj3).f4788a) {
                             }
                         } else {
                             obj3 = null;
@@ -64,6 +64,6 @@ public final class A extends kotlin.jvm.internal.i implements I7.l {
                 }
                 break;
         }
-        return u7.v.f41353a;
+        return u7.v.f41073a;
     }
 }

@@ -9,7 +9,7 @@ public interface h {
         h a();
     }
 
-    int a(byte[] bArr, int i, int i6);
+    int a(byte[] bArr, int i, int i4);
 
     long a(k kVar);
 

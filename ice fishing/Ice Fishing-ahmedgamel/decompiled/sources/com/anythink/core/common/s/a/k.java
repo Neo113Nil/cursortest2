@@ -7,52 +7,52 @@ import java.util.Set;
 final class k implements com.anythink.core.common.s.a.a.b<Set<String>> {
 
     /* renamed from: a, reason: collision with root package name */
-    static final k f16370a = new k();
+    static final k f17157a = new k();
 
     private k() {
     }
 
-    private static Set<String> b(byte[] bArr, int i, int i6) {
-        int i9;
+    private static Set<String> b(byte[] bArr, int i, int i4) {
+        int i6;
         LinkedHashSet linkedHashSet = new LinkedHashSet();
-        if (i6 > 0) {
+        if (i4 > 0) {
             f fVar = new f(bArr, i);
-            int i10 = i + i6;
+            int i9 = i + i4;
             while (true) {
-                i9 = fVar.f16335b;
-                if (i9 >= i10) {
+                i6 = fVar.f17122b;
+                if (i6 >= i9) {
                     break;
                 }
-                byte[] bArr2 = fVar.f16334a;
-                int i11 = i9 + 1;
-                fVar.f16335b = i11;
-                int i12 = bArr2[i9];
-                if ((i12 >> 7) != 0) {
-                    int i13 = i12 & com.anythink.expressad.video.module.a.a.f21728R;
-                    int i14 = i9 + 2;
-                    fVar.f16335b = i14;
-                    i12 = i13 | (bArr2[i11] << 7);
-                    if ((i12 >> 14) != 0) {
-                        int i15 = i12 & 16383;
-                        int i16 = i9 + 3;
-                        fVar.f16335b = i16;
-                        int i17 = i15 | (bArr2[i14] << 14);
-                        if ((i17 >> 21) == 0) {
-                            i12 = i17;
+                byte[] bArr2 = fVar.f17121a;
+                int i10 = i6 + 1;
+                fVar.f17122b = i10;
+                int i11 = bArr2[i6];
+                if ((i11 >> 7) != 0) {
+                    int i12 = i11 & com.anythink.expressad.video.module.a.a.f22515R;
+                    int i13 = i6 + 2;
+                    fVar.f17122b = i13;
+                    i11 = i12 | (bArr2[i10] << 7);
+                    if ((i11 >> 14) != 0) {
+                        int i14 = i11 & 16383;
+                        int i15 = i6 + 3;
+                        fVar.f17122b = i15;
+                        int i16 = i14 | (bArr2[i13] << 14);
+                        if ((i16 >> 21) == 0) {
+                            i11 = i16;
                         } else {
-                            int i18 = i9 + 4;
-                            fVar.f16335b = i18;
-                            i12 = (bArr2[i16] << 21) | (i17 & 2097151);
-                            if ((i12 >> 28) != 0) {
-                                fVar.f16335b = i9 + 5;
-                                i12 = (268435455 & i12) | (bArr2[i18] << 28);
+                            int i17 = i6 + 4;
+                            fVar.f17122b = i17;
+                            i11 = (bArr2[i15] << 21) | (i16 & 2097151);
+                            if ((i11 >> 28) != 0) {
+                                fVar.f17122b = i6 + 5;
+                                i11 = (268435455 & i11) | (bArr2[i17] << 28);
                             }
                         }
                     }
                 }
-                linkedHashSet.add(fVar.d(i12));
+                linkedHashSet.add(fVar.d(i11));
             }
-            if (i9 != i10) {
+            if (i6 != i9) {
                 throw new IllegalArgumentException("Invalid String set");
             }
         }
@@ -69,36 +69,36 @@ final class k implements com.anythink.core.common.s.a.a.b<Set<String>> {
         int[] iArr = new int[size];
         String[] strArr = new String[size];
         int i = 0;
-        int i6 = 0;
+        int i4 = 0;
         for (String str : set2) {
             if (str == null) {
                 i += 5;
-                iArr[i6] = -1;
+                iArr[i4] = -1;
             } else {
                 int b9 = f.b(str);
-                strArr[i6] = str;
-                iArr[i6] = b9;
+                strArr[i4] = str;
+                iArr[i4] = b9;
                 i = ((b9 >> 7) == 0 ? 1 : (b9 >> 14) == 0 ? 2 : (b9 >> 21) == 0 ? 3 : (b9 >> 28) == 0 ? 4 : 5) + b9 + i;
             }
-            i6++;
+            i4++;
         }
         f fVar = new f(i);
-        for (int i9 = 0; i9 < size; i9++) {
-            int i10 = iArr[i9];
-            int i11 = fVar.f16335b;
-            int i12 = i10;
-            while ((i12 & (-128)) != 0) {
-                fVar.f16334a[i11] = (byte) ((i12 & com.anythink.expressad.video.module.a.a.f21728R) | 128);
-                i12 >>>= 7;
-                i11++;
+        for (int i6 = 0; i6 < size; i6++) {
+            int i9 = iArr[i6];
+            int i10 = fVar.f17122b;
+            int i11 = i9;
+            while ((i11 & (-128)) != 0) {
+                fVar.f17121a[i10] = (byte) ((i11 & com.anythink.expressad.video.module.a.a.f22515R) | 128);
+                i11 >>>= 7;
+                i10++;
             }
-            fVar.f16334a[i11] = (byte) i12;
-            fVar.f16335b = i11 + 1;
-            if (i10 >= 0) {
-                fVar.a(strArr[i9]);
+            fVar.f17121a[i10] = (byte) i11;
+            fVar.f17122b = i10 + 1;
+            if (i9 >= 0) {
+                fVar.a(strArr[i6]);
             }
         }
-        return fVar.f16334a;
+        return fVar.f17121a;
     }
 
     @Override // com.anythink.core.common.s.a.a.b
@@ -115,80 +115,80 @@ final class k implements com.anythink.core.common.s.a.a.b<Set<String>> {
         int[] iArr = new int[size];
         String[] strArr = new String[size];
         int i = 0;
-        int i6 = 0;
+        int i4 = 0;
         for (String str : set) {
             if (str == null) {
                 i += 5;
-                iArr[i6] = -1;
+                iArr[i4] = -1;
             } else {
                 int b9 = f.b(str);
-                strArr[i6] = str;
-                iArr[i6] = b9;
+                strArr[i4] = str;
+                iArr[i4] = b9;
                 i = ((b9 >> 7) == 0 ? 1 : (b9 >> 14) == 0 ? 2 : (b9 >> 21) == 0 ? 3 : (b9 >> 28) == 0 ? 4 : 5) + b9 + i;
             }
-            i6++;
+            i4++;
         }
         f fVar = new f(i);
-        for (int i9 = 0; i9 < size; i9++) {
-            int i10 = iArr[i9];
-            int i11 = fVar.f16335b;
-            int i12 = i10;
-            while ((i12 & (-128)) != 0) {
-                fVar.f16334a[i11] = (byte) ((i12 & com.anythink.expressad.video.module.a.a.f21728R) | 128);
-                i12 >>>= 7;
-                i11++;
+        for (int i6 = 0; i6 < size; i6++) {
+            int i9 = iArr[i6];
+            int i10 = fVar.f17122b;
+            int i11 = i9;
+            while ((i11 & (-128)) != 0) {
+                fVar.f17121a[i10] = (byte) ((i11 & com.anythink.expressad.video.module.a.a.f22515R) | 128);
+                i11 >>>= 7;
+                i10++;
             }
-            fVar.f16334a[i11] = (byte) i12;
-            fVar.f16335b = i11 + 1;
-            if (i10 >= 0) {
-                fVar.a(strArr[i9]);
+            fVar.f17121a[i10] = (byte) i11;
+            fVar.f17122b = i10 + 1;
+            if (i9 >= 0) {
+                fVar.a(strArr[i6]);
             }
         }
-        return fVar.f16334a;
+        return fVar.f17121a;
     }
 
     @Override // com.anythink.core.common.s.a.a.b
-    public final /* synthetic */ Set<String> a(byte[] bArr, int i, int i6) {
-        int i9;
+    public final /* synthetic */ Set<String> a(byte[] bArr, int i, int i4) {
+        int i6;
         LinkedHashSet linkedHashSet = new LinkedHashSet();
-        if (i6 > 0) {
+        if (i4 > 0) {
             f fVar = new f(bArr, i);
-            int i10 = i + i6;
+            int i9 = i + i4;
             while (true) {
-                i9 = fVar.f16335b;
-                if (i9 >= i10) {
+                i6 = fVar.f17122b;
+                if (i6 >= i9) {
                     break;
                 }
-                byte[] bArr2 = fVar.f16334a;
-                int i11 = i9 + 1;
-                fVar.f16335b = i11;
-                int i12 = bArr2[i9];
-                if ((i12 >> 7) != 0) {
-                    int i13 = i12 & com.anythink.expressad.video.module.a.a.f21728R;
-                    int i14 = i9 + 2;
-                    fVar.f16335b = i14;
-                    i12 = i13 | (bArr2[i11] << 7);
-                    if ((i12 >> 14) != 0) {
-                        int i15 = i12 & 16383;
-                        int i16 = i9 + 3;
-                        fVar.f16335b = i16;
-                        int i17 = i15 | (bArr2[i14] << 14);
-                        if ((i17 >> 21) == 0) {
-                            i12 = i17;
+                byte[] bArr2 = fVar.f17121a;
+                int i10 = i6 + 1;
+                fVar.f17122b = i10;
+                int i11 = bArr2[i6];
+                if ((i11 >> 7) != 0) {
+                    int i12 = i11 & com.anythink.expressad.video.module.a.a.f22515R;
+                    int i13 = i6 + 2;
+                    fVar.f17122b = i13;
+                    i11 = i12 | (bArr2[i10] << 7);
+                    if ((i11 >> 14) != 0) {
+                        int i14 = i11 & 16383;
+                        int i15 = i6 + 3;
+                        fVar.f17122b = i15;
+                        int i16 = i14 | (bArr2[i13] << 14);
+                        if ((i16 >> 21) == 0) {
+                            i11 = i16;
                         } else {
-                            int i18 = i9 + 4;
-                            fVar.f16335b = i18;
-                            i12 = (bArr2[i16] << 21) | (i17 & 2097151);
-                            if ((i12 >> 28) != 0) {
-                                fVar.f16335b = i9 + 5;
-                                i12 = (268435455 & i12) | (bArr2[i18] << 28);
+                            int i17 = i6 + 4;
+                            fVar.f17122b = i17;
+                            i11 = (bArr2[i15] << 21) | (i16 & 2097151);
+                            if ((i11 >> 28) != 0) {
+                                fVar.f17122b = i6 + 5;
+                                i11 = (268435455 & i11) | (bArr2[i17] << 28);
                             }
                         }
                     }
                 }
-                linkedHashSet.add(fVar.d(i12));
+                linkedHashSet.add(fVar.d(i11));
             }
-            if (i9 != i10) {
+            if (i6 != i9) {
                 throw new IllegalArgumentException("Invalid String set");
             }
         }

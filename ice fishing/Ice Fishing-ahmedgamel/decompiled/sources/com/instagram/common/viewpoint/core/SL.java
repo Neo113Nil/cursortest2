@@ -15,9 +15,9 @@ public class SL {
     public final String A03;
     public final boolean A04;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i6);
-        int i10 = 0;
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             String[] strArr = A06;
@@ -27,11 +27,11 @@ public class SL {
             String[] strArr2 = A06;
             strArr2[6] = "Lo0unCvqAQEGTbh5Ufe2FG7hEyoPqpU0";
             strArr2[0] = "fa5GimV0q5n2gfKUlxWuqDakVSXec8h9";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 41);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 41);
+            i9++;
         }
     }
 
@@ -51,15 +51,15 @@ public class SL {
         A02();
     }
 
-    public SL(String str, String str2, String str3, boolean z3, String str4) {
+    public SL(String str, String str2, String str3, boolean z6, String str4) {
         this.A03 = str;
         this.A02 = str2;
         this.A01 = str3;
-        this.A04 = z3;
+        this.A04 = z6;
         this.A00 = str4;
     }
 
     public static SL A00(JSONObject jSONObject) throws JSONException {
-        return new SL(jSONObject.getString(A01(30, 3, 49)), jSONObject.getString(A01(26, 4, 87)), jSONObject.optString(A01(5, 9, 106)), jSONObject.getString(A01(14, 8, 37)).equals(A01(22, 4, a.f21756z)), jSONObject.optString(A01(0, 5, 69)));
+        return new SL(jSONObject.getString(A01(30, 3, 49)), jSONObject.getString(A01(26, 4, 87)), jSONObject.optString(A01(5, 9, 106)), jSONObject.getString(A01(14, 8, 37)).equals(A01(22, 4, a.f22543z)), jSONObject.optString(A01(0, 5, 69)));
     }
 }

@@ -1,6 +1,6 @@
 package com.onesignal.core.internal.purchases.impl;
 
-import D.RunnableC0282a;
+import A3.p;
 import V5.g;
 import V5.m;
 import android.content.ComponentName;
@@ -156,7 +156,7 @@ public final class a implements com.onesignal.core.internal.startup.b, e {
         if (this.isWaitingForPurchasesRequest) {
             return;
         }
-        new Thread(new RunnableC0282a(18, this)).start();
+        new Thread(new p(19, this)).start();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -275,7 +275,7 @@ public final class a implements com.onesignal.core.internal.startup.b, e {
     }
 
     @Override // x4.e
-    public void onFocus(boolean z3) {
+    public void onFocus(boolean z6) {
         trackIAP();
     }
 
@@ -292,9 +292,9 @@ public final class a implements com.onesignal.core.internal.startup.b, e {
                 for (int i = 0; i < length; i++) {
                     this.purchaseTokens.add(jSONArray.get(i).toString());
                 }
-                boolean z3 = jSONArray.length() == 0;
-                this.newAsExisting = z3;
-                if (z3) {
+                boolean z6 = jSONArray.length() == 0;
+                this.newAsExisting = z6;
+                if (z6) {
                     Boolean bool = this._prefs.getBool("GTPlayerPurchases", "ExistingPurchases", Boolean.TRUE);
                     h.b(bool);
                     this.newAsExisting = bool.booleanValue();

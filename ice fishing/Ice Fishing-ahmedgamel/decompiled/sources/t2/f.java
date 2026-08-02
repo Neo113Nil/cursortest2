@@ -1,15 +1,30 @@
 package t2;
 
-import android.webkit.DownloadListener;
+import android.os.Bundle;
+import android.os.Parcel;
+import c3.AbstractC0549a;
+import com.google.android.gms.internal.ads.AbstractC3411j8;
 
 /* loaded from: classes.dex */
-public final /* synthetic */ class f implements DownloadListener {
+public final class f extends AbstractC0549a implements g {
+    @Override // t2.g
+    public final void K(Bundle bundle) {
+        Parcel F02 = F0();
+        AbstractC3411j8.c(F02, bundle);
+        d1(F02, 3);
+    }
 
-    /* renamed from: n, reason: collision with root package name */
-    public static final /* synthetic */ f f40843n = new f();
+    @Override // t2.g
+    public final void O(Bundle bundle) {
+        Parcel F02 = F0();
+        AbstractC3411j8.c(F02, bundle);
+        d1(F02, 1);
+    }
 
-    @Override // android.webkit.DownloadListener
-    public final /* synthetic */ void onDownloadStart(String str, String str2, String str3, String str4, long j6) {
-        int i = BinderC5036d.f40808S;
+    @Override // t2.g
+    public final void W(Bundle bundle) {
+        Parcel F02 = F0();
+        AbstractC3411j8.c(F02, bundle);
+        d1(F02, 2);
     }
 }

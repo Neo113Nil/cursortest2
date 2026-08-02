@@ -6,5 +6,5 @@ import java.io.IOException;
 public interface H1 {
     void AFs();
 
-    C0943Gz AIw(InterfaceC2191ms interfaceC2191ms, long j6) throws IOException;
+    C0963Gz AIw(InterfaceC2211ms interfaceC2211ms, long j6) throws IOException;
 }

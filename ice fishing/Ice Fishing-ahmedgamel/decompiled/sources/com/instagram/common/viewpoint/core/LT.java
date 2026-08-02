@@ -7,15 +7,15 @@ public final class LT<T> {
     public final boolean A02;
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.LT != com.facebook.ads.cache.api.CacheResponse<T> */
-    public LT(boolean z3, T result) {
-        this.A02 = z3;
+    public LT(boolean z6, T result) {
+        this.A02 = z6;
         this.A00 = result;
         this.A01 = null;
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.LT != com.facebook.ads.cache.api.CacheResponse<T> */
-    public LT(boolean z3, T result, Throwable th) {
-        this.A02 = z3;
+    public LT(boolean z6, T result, Throwable th) {
+        this.A02 = z6;
         this.A00 = result;
         this.A01 = th;
     }

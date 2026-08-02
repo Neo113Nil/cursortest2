@@ -4,11 +4,11 @@ import com.anythink.basead.b.b.j;
 import com.facebook.kotlin.compilerplugins.dataclassgenerate.annotation.DataClassGenerate;
 import kotlin.Metadata;
 
-@Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\t\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0087\b\u0018\u00002\u00020\u0001B\u001b\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J\t\u0010\u0007\u001a\u00020\u0003HÆ\u0003J\t\u0010\b\u001a\u00020\u0003HÆ\u0003J\u001d\u0010\t\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\n\u001a\u00020\u00032\b\u0010\u000b\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\f\u001a\u00020\rHÖ\u0001J\t\u0010\u000e\u001a\u00020\u000fHÖ\u0001R\u0010\u0010\u0002\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0004\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\u0002\n\u0000¨\u0006\u0010"}, d2 = {"Lcom/instagram/common/viewpoint/core/ViewpointQeConfig;", "", "enableMultipleUsersPerManager", "", "enableParentViewpointVisibilityPct", "<init>", "(ZZ)V", "component1", "component2", "copy", "equals", "other", "hashCode", "", "toString", "", "fbandroid.java.com.instagram.common.viewpoint.core.core_an"}, k = 1, mv = {2, 1, 0}, xi = j.f5816W)
+@Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\t\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0087\b\u0018\u00002\u00020\u0001B\u001b\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J\t\u0010\u0007\u001a\u00020\u0003HÆ\u0003J\t\u0010\b\u001a\u00020\u0003HÆ\u0003J\u001d\u0010\t\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\n\u001a\u00020\u00032\b\u0010\u000b\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\f\u001a\u00020\rHÖ\u0001J\t\u0010\u000e\u001a\u00020\u000fHÖ\u0001R\u0010\u0010\u0002\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0004\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\u0002\n\u0000¨\u0006\u0010"}, d2 = {"Lcom/instagram/common/viewpoint/core/ViewpointQeConfig;", "", "enableMultipleUsersPerManager", "", "enableParentViewpointVisibilityPct", "<init>", "(ZZ)V", "component1", "component2", "copy", "equals", "other", "hashCode", "", "toString", "", "fbandroid.java.com.instagram.common.viewpoint.core.core_an"}, k = 1, mv = {2, 1, 0}, xi = j.f6602W)
 @DataClassGenerate
 /* renamed from: com.facebook.ads.redexgen.X.Am, reason: from Kotlin metadata */
 /* loaded from: assets/audience_network/classes2.dex */
-public final /* data */ class ViewpointQeConfig extends AbstractC1937iL {
+public final /* data */ class ViewpointQeConfig extends AbstractC1957iL {
     public static String[] A02 = {"EEiZ5gwMJpudC46gmytKirA8", "NSKRdvtre4PRehKVMd3Q45JlYfRDrG", "CoRjB0oCb37S", "DbfERFTzLjajwVv8sNh5sUlUy2oFrKFb", "LqelwWv8kaDt3gFeGdVSs3BI163sHhDb", "u6CiNkzcWrumUo8SG6zNnx5HeV2X6NdJ", "1uy0riBBBCBFhXZsG4W77pBgNTmxUCRF", "5rdIAllOhqLEYXGfwPJ9dysQ"};
     public final boolean A00;
     public final boolean A01;
@@ -19,7 +19,7 @@ public final /* data */ class ViewpointQeConfig extends AbstractC1937iL {
     */
     public ViewpointQeConfig() {
         this(r0, r0, 3, null);
-        boolean z3 = false;
+        boolean z6 = false;
     }
 
     public final boolean equals(Object other) {
@@ -33,29 +33,29 @@ public final /* data */ class ViewpointQeConfig extends AbstractC1937iL {
         if (this.A00 != viewpointQeConfig.A00) {
             return false;
         }
-        boolean z3 = this.A01;
+        boolean z6 = this.A01;
         String[] strArr = A02;
         if (strArr[1].length() == strArr[2].length()) {
             throw new RuntimeException();
         }
         A02[3] = "cwZ0ks8a4InKRgWpKf4KlC3uRBKypiM0";
-        return z3 == viewpointQeConfig.A01;
+        return z6 == viewpointQeConfig.A01;
     }
 
     public final int hashCode() {
-        return (AbstractC1948iW.A00(this.A00) * 31) + AbstractC1948iW.A00(this.A01);
+        return (AbstractC1968iW.A00(this.A00) * 31) + AbstractC1968iW.A00(this.A01);
     }
 
     public final String toString() {
         return super.toString();
     }
 
-    public ViewpointQeConfig(boolean z3, boolean z6) {
-        this.A00 = z3;
-        this.A01 = z6;
+    public ViewpointQeConfig(boolean z6, boolean z9) {
+        this.A00 = z6;
+        this.A01 = z9;
     }
 
-    public /* synthetic */ ViewpointQeConfig(boolean z3, boolean z6, int i, AbstractC2415qZ abstractC2415qZ) {
-        this((i & 1) != 0 ? false : z3, (i & 2) != 0 ? false : z6);
+    public /* synthetic */ ViewpointQeConfig(boolean z6, boolean z9, int i, AbstractC2435qZ abstractC2435qZ) {
+        this((i & 1) != 0 ? false : z6, (i & 2) != 0 ? false : z9);
     }
 }

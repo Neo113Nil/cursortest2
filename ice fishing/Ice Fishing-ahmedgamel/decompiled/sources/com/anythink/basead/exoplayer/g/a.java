@@ -28,18 +28,18 @@ public final class a implements Parcelable {
     };
 
     /* renamed from: a, reason: collision with root package name */
-    private final InterfaceC0025a[] f7271a;
+    private final InterfaceC0025a[] f8057a;
 
     /* renamed from: com.anythink.basead.exoplayer.g.a$a, reason: collision with other inner class name */
     public interface InterfaceC0025a extends Parcelable {
     }
 
     public a(InterfaceC0025a... interfaceC0025aArr) {
-        this.f7271a = interfaceC0025aArr;
+        this.f8057a = interfaceC0025aArr;
     }
 
     public final int a() {
-        return this.f7271a.length;
+        return this.f8057a.length;
     }
 
     @Override // android.os.Parcelable
@@ -54,36 +54,36 @@ public final class a implements Parcelable {
         if (obj == null || a.class != obj.getClass()) {
             return false;
         }
-        return Arrays.equals(this.f7271a, ((a) obj).f7271a);
+        return Arrays.equals(this.f8057a, ((a) obj).f8057a);
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(this.f7271a);
+        return Arrays.hashCode(this.f8057a);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeInt(this.f7271a.length);
-        for (InterfaceC0025a interfaceC0025a : this.f7271a) {
+        parcel.writeInt(this.f8057a.length);
+        for (InterfaceC0025a interfaceC0025a : this.f8057a) {
             parcel.writeParcelable(interfaceC0025a, 0);
         }
     }
 
     public final InterfaceC0025a a(int i) {
-        return this.f7271a[i];
+        return this.f8057a[i];
     }
 
     public a(List<? extends InterfaceC0025a> list) {
         InterfaceC0025a[] interfaceC0025aArr = new InterfaceC0025a[list.size()];
-        this.f7271a = interfaceC0025aArr;
+        this.f8057a = interfaceC0025aArr;
         list.toArray(interfaceC0025aArr);
     }
 
     public a(Parcel parcel) {
-        this.f7271a = new InterfaceC0025a[parcel.readInt()];
+        this.f8057a = new InterfaceC0025a[parcel.readInt()];
         int i = 0;
         while (true) {
-            InterfaceC0025a[] interfaceC0025aArr = this.f7271a;
+            InterfaceC0025a[] interfaceC0025aArr = this.f8057a;
             if (i >= interfaceC0025aArr.length) {
                 return;
             }

@@ -10,50 +10,50 @@ import android.view.KeyEvent;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputMethodManager;
-import m.C4703o;
+import m.C4716o;
 import m.M0;
 
 /* loaded from: classes.dex */
-public class SearchView$SearchAutoComplete extends C4703o {
+public class SearchView$SearchAutoComplete extends C4716o {
 
     /* renamed from: x, reason: collision with root package name */
-    public int f4582x;
+    public int f4550x;
 
     /* renamed from: y, reason: collision with root package name */
-    public boolean f4583y;
+    public boolean f4551y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final c f4584z;
+    public final c f4552z;
 
     public SearchView$SearchAutoComplete(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f4584z = new c(28, this);
-        this.f4582x = getThreshold();
+        this.f4552z = new c(28, this);
+        this.f4550x = getThreshold();
     }
 
     private int getSearchViewTextMinWidthDp() {
         Configuration configuration = getResources().getConfiguration();
         int i = configuration.screenWidthDp;
-        int i6 = configuration.screenHeightDp;
-        if (i >= 960 && i6 >= 720 && configuration.orientation == 2) {
+        int i4 = configuration.screenHeightDp;
+        if (i >= 960 && i4 >= 720 && configuration.orientation == 2) {
             return 256;
         }
         if (i < 600) {
-            return (i < 640 || i6 < 480) ? 160 : 192;
+            return (i < 640 || i4 < 480) ? 160 : 192;
         }
         return 192;
     }
 
     @Override // android.widget.AutoCompleteTextView
     public final boolean enoughToFilter() {
-        return this.f4582x <= 0 || super.enoughToFilter();
+        return this.f4550x <= 0 || super.enoughToFilter();
     }
 
-    @Override // m.C4703o, android.widget.TextView, android.view.View
+    @Override // m.C4716o, android.widget.TextView, android.view.View
     public final InputConnection onCreateInputConnection(EditorInfo editorInfo) {
         InputConnection onCreateInputConnection = super.onCreateInputConnection(editorInfo);
-        if (this.f4583y) {
-            c cVar = this.f4584z;
+        if (this.f4551y) {
+            c cVar = this.f4552z;
             removeCallbacks(cVar);
             post(cVar);
         }
@@ -67,8 +67,8 @@ public class SearchView$SearchAutoComplete extends C4703o {
     }
 
     @Override // android.widget.AutoCompleteTextView, android.widget.TextView, android.view.View
-    public final void onFocusChanged(boolean z3, int i, Rect rect) {
-        super.onFocusChanged(z3, i, rect);
+    public final void onFocusChanged(boolean z6, int i, Rect rect) {
+        super.onFocusChanged(z6, i, rect);
         throw null;
     }
 
@@ -96,9 +96,9 @@ public class SearchView$SearchAutoComplete extends C4703o {
     }
 
     @Override // android.widget.AutoCompleteTextView, android.widget.TextView, android.view.View
-    public final void onWindowFocusChanged(boolean z3) {
-        super.onWindowFocusChanged(z3);
-        if (z3) {
+    public final void onWindowFocusChanged(boolean z6) {
+        super.onWindowFocusChanged(z6);
+        if (z6) {
             throw null;
         }
     }
@@ -111,19 +111,19 @@ public class SearchView$SearchAutoComplete extends C4703o {
     public final void replaceText(CharSequence charSequence) {
     }
 
-    public void setImeVisibility(boolean z3) {
+    public void setImeVisibility(boolean z6) {
         InputMethodManager inputMethodManager = (InputMethodManager) getContext().getSystemService("input_method");
-        c cVar = this.f4584z;
-        if (!z3) {
-            this.f4583y = false;
+        c cVar = this.f4552z;
+        if (!z6) {
+            this.f4551y = false;
             removeCallbacks(cVar);
             inputMethodManager.hideSoftInputFromWindow(getWindowToken(), 0);
         } else {
             if (!inputMethodManager.isActive(this)) {
-                this.f4583y = true;
+                this.f4551y = true;
                 return;
             }
-            this.f4583y = false;
+            this.f4551y = false;
             removeCallbacks(cVar);
             inputMethodManager.showSoftInput(this, 0);
         }
@@ -132,7 +132,7 @@ public class SearchView$SearchAutoComplete extends C4703o {
     @Override // android.widget.AutoCompleteTextView
     public void setThreshold(int i) {
         super.setThreshold(i);
-        this.f4582x = i;
+        this.f4550x = i;
     }
 
     public void setSearchView(M0 m0) {

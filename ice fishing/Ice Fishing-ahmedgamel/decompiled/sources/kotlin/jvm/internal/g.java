@@ -4,18 +4,18 @@ package kotlin.jvm.internal;
 public abstract class g extends b implements f, O7.e {
 
     /* renamed from: n, reason: collision with root package name */
-    public final int f38711n;
+    public final int f38638n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final int f38712u;
+    public final int f38639u;
 
-    public g(int i, Class cls, String str, String str2, int i6) {
-        this(i, b.NO_RECEIVER, cls, str, str2, i6);
+    public g(int i, Class cls, String str, String str2, int i4) {
+        this(i, b.NO_RECEIVER, cls, str, str2, i4);
     }
 
     @Override // kotlin.jvm.internal.b
     public final O7.b computeReflected() {
-        s.f38718a.getClass();
+        s.f38645a.getClass();
         return this;
     }
 
@@ -25,7 +25,7 @@ public abstract class g extends b implements f, O7.e {
         }
         if (obj instanceof g) {
             g gVar = (g) obj;
-            return getName().equals(gVar.getName()) && getSignature().equals(gVar.getSignature()) && this.f38712u == gVar.f38712u && this.f38711n == gVar.f38711n && h.a(getBoundReceiver(), gVar.getBoundReceiver()) && h.a(getOwner(), gVar.getOwner());
+            return getName().equals(gVar.getName()) && getSignature().equals(gVar.getSignature()) && this.f38639u == gVar.f38639u && this.f38638n == gVar.f38638n && h.a(getBoundReceiver(), gVar.getBoundReceiver()) && h.a(getOwner(), gVar.getOwner());
         }
         if (obj instanceof O7.e) {
             return obj.equals(compute());
@@ -35,7 +35,7 @@ public abstract class g extends b implements f, O7.e {
 
     @Override // kotlin.jvm.internal.f
     public final int getArity() {
-        return this.f38711n;
+        return this.f38638n;
     }
 
     @Override // kotlin.jvm.internal.b
@@ -63,9 +63,9 @@ public abstract class g extends b implements f, O7.e {
         return "function " + getName() + " (Kotlin reflection is not available)";
     }
 
-    public g(int i, Object obj, Class cls, String str, String str2, int i6) {
-        super(obj, cls, str, str2, (i6 & 1) == 1);
-        this.f38711n = i;
-        this.f38712u = 0;
+    public g(int i, Object obj, Class cls, String str, String str2, int i4) {
+        super(obj, cls, str, str2, (i4 & 1) == 1);
+        this.f38638n = i;
+        this.f38639u = 0;
     }
 }

@@ -1,17 +1,17 @@
 package m8;
 
-import java.lang.ref.WeakReference;
-
 /* loaded from: classes2.dex */
-public final class o extends WeakReference {
+public final class o extends y8.c {
 
-    /* renamed from: a, reason: collision with root package name */
-    public final Object f39376a;
+    /* renamed from: n, reason: collision with root package name */
+    public final /* synthetic */ p f39534n;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public o(q referent, Object obj) {
-        super(referent);
-        kotlin.jvm.internal.h.e(referent, "referent");
-        this.f39376a = obj;
+    public o(p pVar) {
+        this.f39534n = pVar;
+    }
+
+    @Override // y8.c
+    public final void k() {
+        this.f39534n.h();
     }
 }

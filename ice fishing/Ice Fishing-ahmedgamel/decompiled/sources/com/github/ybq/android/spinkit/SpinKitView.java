@@ -1,35 +1,35 @@
 package com.github.ybq.android.spinkit;
 
-import R1.a;
-import U1.e;
-import V1.b;
-import V1.c;
-import V1.d;
+import T1.a;
+import W1.e;
+import X1.b;
+import X1.c;
+import X1.d;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.ProgressBar;
-import com.icefishingapp.icefishing.C5275R;
-import u.AbstractC5049e;
+import com.IceFishing.LiveIceFishing.C5248R;
+import u.AbstractC5050e;
 
 /* loaded from: classes.dex */
 public class SpinKitView extends ProgressBar {
 
     /* renamed from: n, reason: collision with root package name */
-    public int f23528n;
+    public int f24313n;
 
     /* renamed from: u, reason: collision with root package name */
-    public e f23529u;
+    public e f24314u;
 
     public SpinKitView(Context context, AttributeSet attributeSet) {
-        super(context, attributeSet, C5275R.attr.SpinKitViewStyle, C5275R.style.SpinKitView);
+        super(context, attributeSet, C5248R.attr.SpinKitViewStyle, C5248R.style.SpinKitView);
         e dVar;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, a.f2703a, C5275R.attr.SpinKitViewStyle, C5275R.style.SpinKitView);
-        int i = AbstractC5049e.e(15)[obtainStyledAttributes.getInt(1, 0)];
-        this.f23528n = obtainStyledAttributes.getColor(0, -1);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, a.f3158a, C5248R.attr.SpinKitViewStyle, C5248R.style.SpinKitView);
+        int i = AbstractC5050e.e(15)[obtainStyledAttributes.getInt(1, 0)];
+        this.f24313n = obtainStyledAttributes.getColor(0, -1);
         obtainStyledAttributes.recycle();
-        switch (AbstractC5049e.d(i)) {
+        switch (AbstractC5050e.d(i)) {
             case 0:
                 dVar = new d(2);
                 break;
@@ -43,7 +43,7 @@ public class SpinKitView extends ProgressBar {
                 dVar = new b(7);
                 break;
             case 4:
-                dVar = new V1.a(4);
+                dVar = new X1.a(4);
                 break;
             case 5:
                 dVar = new b(0);
@@ -64,13 +64,13 @@ public class SpinKitView extends ProgressBar {
                 dVar = new b(3);
                 break;
             case 11:
-                dVar = new V1.a(5, false);
+                dVar = new X1.a(5, false);
                 break;
             case 12:
                 dVar = new b(4);
                 break;
             case 13:
-                dVar = new V1.e();
+                dVar = new X1.e();
                 break;
             case 14:
                 dVar = new b(5);
@@ -79,7 +79,7 @@ public class SpinKitView extends ProgressBar {
                 dVar = null;
                 break;
         }
-        dVar.e(this.f23528n);
+        dVar.e(this.f24313n);
         setIndeterminateDrawable(dVar);
         setIndeterminate(true);
     }
@@ -88,23 +88,23 @@ public class SpinKitView extends ProgressBar {
     public final void onScreenStateChanged(int i) {
         e eVar;
         super.onScreenStateChanged(i);
-        if (i != 0 || (eVar = this.f23529u) == null) {
+        if (i != 0 || (eVar = this.f24314u) == null) {
             return;
         }
         eVar.stop();
     }
 
     @Override // android.view.View
-    public final void onWindowFocusChanged(boolean z3) {
-        super.onWindowFocusChanged(z3);
-        if (z3 && this.f23529u != null && getVisibility() == 0) {
-            this.f23529u.start();
+    public final void onWindowFocusChanged(boolean z6) {
+        super.onWindowFocusChanged(z6);
+        if (z6 && this.f24314u != null && getVisibility() == 0) {
+            this.f24314u.start();
         }
     }
 
     public void setColor(int i) {
-        this.f23528n = i;
-        e eVar = this.f23529u;
+        this.f24313n = i;
+        e eVar = this.f24314u;
         if (eVar != null) {
             eVar.e(i);
         }
@@ -129,18 +129,18 @@ public class SpinKitView extends ProgressBar {
 
     @Override // android.widget.ProgressBar
     public e getIndeterminateDrawable() {
-        return this.f23529u;
+        return this.f24314u;
     }
 
     public void setIndeterminateDrawable(e eVar) {
         super.setIndeterminateDrawable((Drawable) eVar);
-        this.f23529u = eVar;
+        this.f24314u = eVar;
         if (eVar.c() == 0) {
-            this.f23529u.e(this.f23528n);
+            this.f24314u.e(this.f24313n);
         }
         onSizeChanged(getWidth(), getHeight(), getWidth(), getHeight());
         if (getVisibility() == 0) {
-            this.f23529u.start();
+            this.f24314u.start();
         }
     }
 }

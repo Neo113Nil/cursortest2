@@ -4,58 +4,58 @@ package com.google.android.gms.internal.ads;
 public final class F2 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f24724a;
+    public final int f25480a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f24725b;
+    public int f25481b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f24726c;
+    public int f25482c;
 
     /* renamed from: d, reason: collision with root package name */
-    public long f24727d;
+    public long f25483d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final boolean f24728e;
+    public final boolean f25484e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final Cr f24729f;
+    public final Cr f25485f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final Cr f24730g;
+    public final Cr f25486g;
 
     /* renamed from: h, reason: collision with root package name */
-    public int f24731h;
+    public int f25487h;
     public int i;
 
-    public F2(Cr cr, Cr cr2, boolean z3) {
-        this.f24730g = cr;
-        this.f24729f = cr2;
-        this.f24728e = z3;
+    public F2(Cr cr, Cr cr2, boolean z6) {
+        this.f25486g = cr;
+        this.f25485f = cr2;
+        this.f25484e = z6;
         cr2.E(12);
-        this.f24724a = cr2.h();
+        this.f25480a = cr2.h();
         cr.E(12);
         this.i = cr.h();
         MA.k("first_chunk must be 1", cr.b() == 1);
-        this.f24725b = -1;
+        this.f25481b = -1;
     }
 
     public final boolean a() {
-        int i = this.f24725b + 1;
-        this.f24725b = i;
-        if (i == this.f24724a) {
+        int i = this.f25481b + 1;
+        this.f25481b = i;
+        if (i == this.f25480a) {
             return false;
         }
-        boolean z3 = this.f24728e;
-        Cr cr = this.f24729f;
-        this.f24727d = z3 ? cr.j() : cr.P();
-        if (this.f24725b == this.f24731h) {
-            Cr cr2 = this.f24730g;
-            this.f24726c = cr2.h();
+        boolean z6 = this.f25484e;
+        Cr cr = this.f25485f;
+        this.f25483d = z6 ? cr.j() : cr.P();
+        if (this.f25481b == this.f25487h) {
+            Cr cr2 = this.f25486g;
+            this.f25482c = cr2.h();
             cr2.G(4);
-            int i6 = this.i - 1;
-            this.i = i6;
-            this.f24731h = i6 > 0 ? (-1) + cr2.h() : -1;
+            int i4 = this.i - 1;
+            this.i = i4;
+            this.f25487h = i4 > 0 ? (-1) + cr2.h() : -1;
         }
         return true;
     }

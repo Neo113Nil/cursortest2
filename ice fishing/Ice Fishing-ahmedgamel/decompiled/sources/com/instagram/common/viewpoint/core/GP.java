@@ -10,7 +10,7 @@ public final class GP {
     public final GQ A01;
 
     public GP(Handler handler, GQ gq) {
-        this.A00 = gq != null ? (Handler) AbstractC06243y.A01(handler) : null;
+        this.A00 = gq != null ? (Handler) AbstractC06443y.A01(handler) : null;
         this.A01 = gq;
     }
 
@@ -45,41 +45,41 @@ public final class GP {
     }
 
     @MetaExoPlayerCustomization("New event handler")
-    public final void A04(int i, C2400qI c2400qI) {
+    public final void A04(int i, C2420qI c2420qI) {
         if (this.A01 != null) {
-            this.A00.post(new GO(this, i, c2400qI));
+            this.A00.post(new GO(this, i, c2420qI));
         }
     }
 
-    public final void A05(final C2400qI c2400qI, final C6L c6l) {
+    public final void A05(final C2420qI c2420qI, final C6L c6l) {
         if (this.A00 != null) {
             this.A00.post(new Runnable() { // from class: com.facebook.ads.redexgen.X.GI
                 @Override // java.lang.Runnable
                 public final void run() {
-                    GP.this.A06(c2400qI, c6l);
+                    GP.this.A06(c2420qI, c6l);
                 }
             });
         }
     }
 
-    public final /* synthetic */ void A06(C2400qI c2400qI, C6L c6l) {
-        ((GQ) C5C.A0f(this.A01)).AGU(c2400qI);
-        ((GQ) C5C.A0f(this.A01)).AGV(c2400qI, c6l);
+    public final /* synthetic */ void A06(C2420qI c2420qI, C6L c6l) {
+        ((GQ) C5C.A0f(this.A01)).AGU(c2420qI);
+        ((GQ) C5C.A0f(this.A01)).AGV(c2420qI, c6l);
     }
 
-    public final void A07(final C2353pW c2353pW) {
+    public final void A07(final C2373pW c2373pW) {
         if (this.A00 != null) {
             this.A00.post(new Runnable() { // from class: com.facebook.ads.redexgen.X.GK
                 @Override // java.lang.Runnable
                 public final void run() {
-                    GP.this.A08(c2353pW);
+                    GP.this.A08(c2373pW);
                 }
             });
         }
     }
 
-    public final /* synthetic */ void A08(C2353pW c2353pW) {
-        ((GQ) C5C.A0f(this.A01)).AGb(c2353pW);
+    public final /* synthetic */ void A08(C2373pW c2373pW) {
+        ((GQ) C5C.A0f(this.A01)).AGb(c2373pW);
     }
 
     public final void A09(final C6I c6i) {

@@ -6,19 +6,19 @@ import android.content.res.Configuration;
 public interface a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f21773a = 0;
+    public static final int f22560a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f21774b = 1;
+    public static final int f22561b = 1;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f21775c = 2;
+    public static final int f22562c = 2;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f21776d = 3;
+    public static final int f22563d = 3;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f21777e = 4;
+    public static final int f22564e = 4;
 
     void a();
 

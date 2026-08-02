@@ -9,9 +9,9 @@ public interface k {
 
     Message a(int i);
 
-    Message a(int i, int i6);
+    Message a(int i, int i4);
 
-    Message a(int i, int i6, Object obj);
+    Message a(int i, int i4, Object obj);
 
     Message a(int i, Object obj);
 

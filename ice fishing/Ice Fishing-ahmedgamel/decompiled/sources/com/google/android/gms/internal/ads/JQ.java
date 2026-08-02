@@ -1,14 +1,8 @@
 package com.google.android.gms.internal.ads;
 
 /* loaded from: classes2.dex */
-public interface JQ {
-    boolean d();
+public final class JQ {
 
-    boolean e(C2922aO c2922aO);
-
-    long f();
-
-    long i();
-
-    void k(long j6);
+    /* renamed from: a, reason: collision with root package name */
+    public final DP f26438a;
 }

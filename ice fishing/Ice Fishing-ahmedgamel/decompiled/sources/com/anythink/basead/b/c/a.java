@@ -7,11 +7,11 @@ import java.util.Map;
 public final class a extends com.anythink.core.common.res.image.b {
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f5899a;
+    private final String f6685a;
 
     public a(String str) {
         super(str);
-        this.f5899a = "a";
+        this.f6685a = "a";
     }
 
     @Override // com.anythink.core.common.res.image.b
@@ -30,7 +30,7 @@ public final class a extends com.anythink.core.common.res.image.b {
     @Override // com.anythink.core.common.res.image.b
     public final boolean a(InputStream inputStream) {
         com.anythink.basead.b.f.a();
-        return com.anythink.basead.b.f.a(this.f16239d, inputStream, 3);
+        return com.anythink.basead.b.f.a(this.f17026d, inputStream, 3);
     }
 
     @Override // com.anythink.core.common.res.image.b
@@ -40,6 +40,6 @@ public final class a extends com.anythink.core.common.res.image.b {
 
     @Override // com.anythink.core.common.res.image.b
     public final void a(String str, String str2) {
-        e.a().a(this.f16239d, com.anythink.basead.d.g.a(str, str2));
+        e.a().a(this.f17026d, com.anythink.basead.d.g.a(str, str2));
     }
 }

@@ -1,34 +1,34 @@
 package com.google.android.gms.internal.ads;
 
 /* loaded from: classes2.dex */
-public final class Z8 extends C3467kg {
+public final class Z8 extends C3490kg {
 
     /* renamed from: u, reason: collision with root package name */
-    public final /* synthetic */ int f28844u = 0;
+    public final /* synthetic */ int f29624u = 0;
 
     /* renamed from: v, reason: collision with root package name */
-    public final Object f28845v;
+    public final Object f29625v;
 
-    public Z8(com.bumptech.glide.manager.p pVar) {
-        this.f28845v = pVar;
+    public Z8(com.bumptech.glide.manager.o oVar) {
+        this.f29625v = oVar;
     }
 
-    @Override // com.google.android.gms.internal.ads.C3467kg, java.util.concurrent.Future
-    public boolean cancel(boolean z3) {
-        switch (this.f28844u) {
+    @Override // com.google.android.gms.internal.ads.C3490kg, java.util.concurrent.Future
+    public boolean cancel(boolean z6) {
+        switch (this.f29624u) {
             case 0:
-                ((com.bumptech.glide.manager.p) this.f28845v).g();
-                return this.f31479n.cancel(z3);
+                ((com.bumptech.glide.manager.o) this.f29625v).g();
+                return this.f32256n.cancel(z6);
             default:
-                return super.cancel(z3);
+                return super.cancel(z6);
         }
     }
 
     public void d() {
-        b(this.f28845v);
+        b(this.f29625v);
     }
 
     public Z8(Object obj) {
-        this.f28845v = obj;
+        this.f29625v = obj;
     }
 }

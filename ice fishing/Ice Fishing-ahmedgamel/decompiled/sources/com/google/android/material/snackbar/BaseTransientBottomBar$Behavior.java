@@ -1,7 +1,8 @@
 package com.google.android.material.snackbar;
 
-import E3.e;
-import G3.c;
+import I0.j;
+import I3.c;
+import O2.i;
 import android.view.MotionEvent;
 import android.view.View;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
@@ -11,33 +12,33 @@ import com.google.android.material.behavior.SwipeDismissBehavior;
 public class BaseTransientBottomBar$Behavior extends SwipeDismissBehavior<View> {
 
     /* renamed from: h, reason: collision with root package name */
-    public final e f36059h;
+    public final i f36827h;
 
     public BaseTransientBottomBar$Behavior() {
-        e eVar = new e();
-        this.f35827e = Math.min(Math.max(0.0f, 0.1f), 1.0f);
-        this.f35828f = Math.min(Math.max(0.0f, 0.6f), 1.0f);
-        this.f35826d = 0;
-        this.f36059h = eVar;
+        i iVar = new i(5);
+        this.f36595e = Math.min(Math.max(0.0f, 0.1f), 1.0f);
+        this.f36596f = Math.min(Math.max(0.0f, 0.6f), 1.0f);
+        this.f36594d = 0;
+        this.f36827h = iVar;
     }
 
     @Override // com.google.android.material.behavior.SwipeDismissBehavior, B.b
     public final boolean f(CoordinatorLayout coordinatorLayout, View view, MotionEvent motionEvent) {
-        this.f36059h.getClass();
+        this.f36827h.getClass();
         int actionMasked = motionEvent.getActionMasked();
         if (actionMasked != 0) {
             if (actionMasked == 1 || actionMasked == 3) {
-                if (G3.e.f1071u == null) {
-                    G3.e.f1071u = new G3.e();
+                if (j.f1288v == null) {
+                    j.f1288v = new j(8);
                 }
-                synchronized (G3.e.f1071u.f1072n) {
+                synchronized (j.f1288v.f1291u) {
                 }
             }
         } else if (coordinatorLayout.o((int) motionEvent.getX(), (int) motionEvent.getY(), view)) {
-            if (G3.e.f1071u == null) {
-                G3.e.f1071u = new G3.e();
+            if (j.f1288v == null) {
+                j.f1288v = new j(8);
             }
-            synchronized (G3.e.f1071u.f1072n) {
+            synchronized (j.f1288v.f1291u) {
             }
         }
         return super.f(coordinatorLayout, view, motionEvent);
@@ -45,7 +46,7 @@ public class BaseTransientBottomBar$Behavior extends SwipeDismissBehavior<View> 
 
     @Override // com.google.android.material.behavior.SwipeDismissBehavior
     public final boolean r(View view) {
-        this.f36059h.getClass();
+        this.f36827h.getClass();
         return view instanceof c;
     }
 }

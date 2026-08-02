@@ -8,11 +8,11 @@ import android.widget.HorizontalScrollView;
 public class ObservableScrollView extends HorizontalScrollView {
 
     /* renamed from: a, reason: collision with root package name */
-    private a f21437a;
+    private a f22224a;
 
     public ObservableScrollView(Context context) {
         super(context);
-        this.f21437a = null;
+        this.f22224a = null;
     }
 
     @Override // android.widget.HorizontalScrollView
@@ -21,17 +21,17 @@ public class ObservableScrollView extends HorizontalScrollView {
     }
 
     @Override // android.view.View
-    public void onScrollChanged(int i, int i6, int i9, int i10) {
-        super.onScrollChanged(i, i6, i9, i10);
+    public void onScrollChanged(int i, int i4, int i6, int i9) {
+        super.onScrollChanged(i, i4, i6, i9);
     }
 
     public ObservableScrollView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f21437a = null;
+        this.f22224a = null;
     }
 
     public ObservableScrollView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f21437a = null;
+        this.f22224a = null;
     }
 }

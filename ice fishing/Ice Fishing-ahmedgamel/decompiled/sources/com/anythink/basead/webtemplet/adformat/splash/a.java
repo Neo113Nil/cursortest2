@@ -6,5 +6,5 @@ import com.anythink.basead.webtemplet.adformat.e;
 public class a extends e {
 
     /* renamed from: d, reason: collision with root package name */
-    private final String f11478d = "a";
+    private final String f12264d = "a";
 }

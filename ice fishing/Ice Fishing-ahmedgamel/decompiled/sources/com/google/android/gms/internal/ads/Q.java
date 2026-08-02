@@ -9,72 +9,72 @@ import java.util.concurrent.Executor;
 public final class Q implements A0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final C3434k0 f26908a;
+    public final C3457k0 f27695a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final C3488l0 f26909b;
+    public final C3511l0 f27696b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final C3758q0 f26910c;
+    public final C3781q0 f27697c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final ArrayDeque f26911d;
+    public final ArrayDeque f27698d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final U f26912e;
+    public final U f27699e;
 
     /* renamed from: f, reason: collision with root package name */
-    public Surface f26913f;
+    public Surface f27700f;
 
     /* renamed from: g, reason: collision with root package name */
-    public DP f26914g;
+    public DP f27701g;
 
     /* renamed from: h, reason: collision with root package name */
-    public long f26915h;
-    public InterfaceC4189y0 i;
+    public long f27702h;
+    public InterfaceC4212y0 i;
 
     /* renamed from: j, reason: collision with root package name */
-    public Executor f26916j;
+    public Executor f27703j;
 
     /* renamed from: k, reason: collision with root package name */
-    public InterfaceC3328i0 f26917k;
+    public InterfaceC3351i0 f27704k;
 
-    public Q(C3434k0 c3434k0, C3488l0 c3488l0, V2 v22) {
-        this.f26908a = c3434k0;
-        this.f26909b = c3488l0;
-        c3434k0.f31366h = v22;
-        U u3 = new U(new Ux(1, c3434k0));
-        this.f26912e = u3;
-        this.f26910c = new C3758q0(new S0.c(this), c3434k0, c3488l0, u3);
-        this.f26911d = new ArrayDeque();
-        this.f26914g = new DP(new C3299hP());
-        this.f26915h = com.anythink.basead.exoplayer.b.f6382b;
-        this.i = InterfaceC4189y0.f35079a;
-        this.f26916j = N.f26383n;
-        this.f26917k = O.f26574u;
+    public Q(C3457k0 c3457k0, C3511l0 c3511l0, V2 v22) {
+        this.f27695a = c3457k0;
+        this.f27696b = c3511l0;
+        c3457k0.f32145h = v22;
+        U u6 = new U(new Ux(1, c3457k0));
+        this.f27699e = u6;
+        this.f27697c = new C3781q0(new S0.c(this), c3457k0, c3511l0, u6);
+        this.f27698d = new ArrayDeque();
+        this.f27701g = new DP(new C3322hP());
+        this.f27702h = com.anythink.basead.exoplayer.b.f7168b;
+        this.i = InterfaceC4212y0.f35865a;
+        this.f27703j = N.f27168n;
+        this.f27704k = O.f27356u;
     }
 
     @Override // com.google.android.gms.internal.ads.A0
-    public final void I() {
+    public final void H() {
     }
 
     @Override // com.google.android.gms.internal.ads.A0
     public final void N() {
-        C3434k0 c3434k0 = this.f26908a;
-        if (c3434k0.f31362d == 0) {
-            c3434k0.f31362d = 1;
+        C3457k0 c3457k0 = this.f27695a;
+        if (c3457k0.f32141d == 0) {
+            c3457k0.f32141d = 1;
         }
     }
 
     @Override // com.google.android.gms.internal.ads.A0
-    public final boolean Z(boolean z3) {
-        return this.f26908a.d(z3);
+    public final boolean Z(boolean z6) {
+        return this.f27695a.d(z6);
     }
 
     @Override // com.google.android.gms.internal.ads.A0
     public final void c() {
-        this.f26909b.c();
-        this.f26908a.b();
+        this.f27696b.c();
+        this.f27695a.b();
     }
 
     @Override // com.google.android.gms.internal.ads.A0
@@ -89,131 +89,131 @@ public final class Q implements A0 {
 
     @Override // com.google.android.gms.internal.ads.A0
     public final void f() {
-        this.f26909b.c();
-        C3434k0 c3434k0 = this.f26908a;
-        c3434k0.f31361c = false;
-        C3704p0 c3704p0 = c3434k0.f31360b;
-        c3704p0.f32989c = false;
-        AbstractC3542m0 abstractC3542m0 = c3704p0.f32988b;
-        if (abstractC3542m0 != null) {
-            abstractC3542m0.b();
+        this.f27696b.c();
+        C3457k0 c3457k0 = this.f27695a;
+        c3457k0.f32140c = false;
+        C3727p0 c3727p0 = c3457k0.f32139b;
+        c3727p0.f33779c = false;
+        AbstractC3565m0 abstractC3565m0 = c3727p0.f33778b;
+        if (abstractC3565m0 != null) {
+            abstractC3565m0.b();
         }
-        c3704p0.c();
+        c3727p0.c();
     }
 
     @Override // com.google.android.gms.internal.ads.A0
     public final boolean j() {
-        C3758q0 c3758q0 = this.f26910c;
-        long j6 = c3758q0.f33176j;
-        return j6 != com.anythink.basead.exoplayer.b.f6382b && c3758q0.i == j6;
+        C3781q0 c3781q0 = this.f27697c;
+        long j6 = c3781q0.f33960j;
+        return j6 != com.anythink.basead.exoplayer.b.f7168b && c3781q0.i == j6;
     }
 
     @Override // com.google.android.gms.internal.ads.A0
     public final Surface k() {
-        Surface surface = this.f26913f;
+        Surface surface = this.f27700f;
         surface.getClass();
         return surface;
     }
 
     @Override // com.google.android.gms.internal.ads.A0
-    public final void l0(boolean z3) {
-        if (z3) {
-            C3434k0 c3434k0 = this.f26908a;
-            c3434k0.f31360b.a();
-            c3434k0.f31363e = com.anythink.basead.exoplayer.b.f6382b;
-            c3434k0.f31362d = Math.min(c3434k0.f31362d, 1);
-            c3434k0.f31367j = false;
+    public final void l0(boolean z6) {
+        if (z6) {
+            C3457k0 c3457k0 = this.f27695a;
+            c3457k0.f32139b.a();
+            c3457k0.f32142e = com.anythink.basead.exoplayer.b.f7168b;
+            c3457k0.f32141d = Math.min(c3457k0.f32141d, 1);
+            c3457k0.f32146j = false;
         }
-        this.f26909b.c();
-        C3758q0 c3758q0 = this.f26910c;
-        C0 c02 = c3758q0.f33172e;
-        c02.f24003u = 0;
-        c02.f24004v = -1;
-        c02.f24005w = 0;
-        c3758q0.f33175h = com.anythink.basead.exoplayer.b.f6382b;
-        c3758q0.i = com.anythink.basead.exoplayer.b.f6382b;
-        c3758q0.f33176j = com.anythink.basead.exoplayer.b.f6382b;
-        H3.q qVar = c3758q0.f33171d;
+        this.f27696b.c();
+        C3781q0 c3781q0 = this.f27697c;
+        C0 c02 = c3781q0.f33956e;
+        c02.f24766u = 0;
+        c02.f24767v = -1;
+        c02.f24768w = 0;
+        c3781q0.f33959h = com.anythink.basead.exoplayer.b.f7168b;
+        c3781q0.i = com.anythink.basead.exoplayer.b.f7168b;
+        c3781q0.f33960j = com.anythink.basead.exoplayer.b.f7168b;
+        J3.q qVar = c3781q0.f33955d;
         if (qVar.d() > 0) {
-            AbstractC2772Sd.i(qVar.d() > 0);
+            AbstractC2792Sd.i(qVar.d() > 0);
             while (qVar.d() > 1) {
                 qVar.e();
             }
             Object e9 = qVar.e();
             e9.getClass();
-            c3758q0.f33178l = ((Long) e9).longValue();
+            c3781q0.f33962l = ((Long) e9).longValue();
         }
-        H3.q qVar2 = c3758q0.f33170c;
+        J3.q qVar2 = c3781q0.f33954c;
         if (qVar2.d() > 0) {
-            AbstractC2772Sd.i(qVar2.d() > 0);
+            AbstractC2792Sd.i(qVar2.d() > 0);
             while (qVar2.d() > 1) {
                 qVar2.e();
             }
             Object e10 = qVar2.e();
             e10.getClass();
-            qVar2.c(0L, (C3035cd) e10);
+            qVar2.c(0L, (C3058cd) e10);
         }
-        this.f26911d.clear();
+        this.f27698d.clear();
     }
 
     @Override // com.google.android.gms.internal.ads.A0
     public final void m() {
-        this.f26913f = null;
-        this.f26908a.c(null);
+        this.f27700f = null;
+        this.f27695a.c(null);
     }
 
     @Override // com.google.android.gms.internal.ads.A0
-    public final void m0(float f3) {
-        this.f26908a.f(f3);
+    public final void m0(float f2) {
+        this.f27695a.f(f2);
     }
 
     @Override // com.google.android.gms.internal.ads.A0
     public final void n() {
-        C3758q0 c3758q0 = this.f26910c;
-        long j6 = c3758q0.f33175h;
-        if (j6 == com.anythink.basead.exoplayer.b.f6382b) {
+        C3781q0 c3781q0 = this.f27697c;
+        long j6 = c3781q0.f33959h;
+        if (j6 == com.anythink.basead.exoplayer.b.f7168b) {
             j6 = Long.MIN_VALUE;
-            c3758q0.f33175h = Long.MIN_VALUE;
-            c3758q0.i = Long.MIN_VALUE;
+            c3781q0.f33959h = Long.MIN_VALUE;
+            c3781q0.i = Long.MIN_VALUE;
         }
-        c3758q0.f33176j = j6;
+        c3781q0.f33960j = j6;
     }
 
     @Override // com.google.android.gms.internal.ads.A0
     public final void n0(Surface surface, Nr nr) {
-        this.f26913f = surface;
-        this.f26908a.c(surface);
+        this.f27700f = surface;
+        this.f27695a.c(surface);
     }
 
     @Override // com.google.android.gms.internal.ads.A0
-    public final void o0(W w6) {
-        GD gd = GD.f24952n;
-        this.i = w6;
-        this.f26916j = gd;
+    public final void o0(W w3) {
+        GD gd = GD.f25742n;
+        this.i = w3;
+        this.f27703j = gd;
     }
 
     @Override // com.google.android.gms.internal.ads.A0
     public final void p0(long j6, long j9) {
         try {
-            this.f26910c.a(j6, j9);
+            this.f27697c.a(j6, j9);
         } catch (DN e9) {
-            throw new C4243z0(e9, this.f26914g);
+            throw new C4266z0(e9, this.f27701g);
         }
     }
 
     @Override // com.google.android.gms.internal.ads.A0
     public final void q0(int i) {
-        C3704p0 c3704p0 = this.f26908a.f31360b;
-        if (c3704p0.f32994h == i) {
+        C3727p0 c3727p0 = this.f27695a.f32139b;
+        if (c3727p0.f33784h == i) {
             return;
         }
-        c3704p0.f32994h = i;
-        c3704p0.b(true);
+        c3727p0.f33784h = i;
+        c3727p0.b(true);
     }
 
     @Override // com.google.android.gms.internal.ads.A0
-    public final void r0(InterfaceC3328i0 interfaceC3328i0) {
-        this.f26917k = interfaceC3328i0;
+    public final void r0(InterfaceC3351i0 interfaceC3351i0) {
+        this.f27704k = interfaceC3351i0;
     }
 
     @Override // com.google.android.gms.internal.ads.A0
@@ -223,41 +223,41 @@ public final class Q implements A0 {
 
     @Override // com.google.android.gms.internal.ads.A0
     public final boolean t0(long j6, X x9) {
-        this.f26911d.add(x9);
-        C3758q0 c3758q0 = this.f26910c;
-        C0 c02 = c3758q0.f33172e;
-        int i = c02.f24005w;
-        long[] jArr = (long[]) c02.f24007y;
+        this.f27698d.add(x9);
+        C3781q0 c3781q0 = this.f27697c;
+        C0 c02 = c3781q0.f33956e;
+        int i = c02.f24768w;
+        long[] jArr = (long[]) c02.f24770y;
         int length = jArr.length;
         if (i == length) {
-            int i6 = length + length;
-            if (i6 < 0) {
+            int i4 = length + length;
+            if (i4 < 0) {
                 throw new IllegalStateException();
             }
-            long[] jArr2 = new long[i6];
-            int i9 = c02.f24003u;
-            int i10 = length - i9;
-            System.arraycopy(jArr, i9, jArr2, 0, i10);
-            System.arraycopy((long[]) c02.f24007y, 0, jArr2, i10, i9);
-            c02.f24003u = 0;
-            c02.f24004v = c02.f24005w - 1;
-            c02.f24007y = jArr2;
-            c02.f24006x = i6 - 1;
+            long[] jArr2 = new long[i4];
+            int i6 = c02.f24766u;
+            int i9 = length - i6;
+            System.arraycopy(jArr, i6, jArr2, 0, i9);
+            System.arraycopy((long[]) c02.f24770y, 0, jArr2, i9, i6);
+            c02.f24766u = 0;
+            c02.f24767v = c02.f24768w - 1;
+            c02.f24770y = jArr2;
+            c02.f24769x = i4 - 1;
             jArr = jArr2;
         }
-        int i11 = (c02.f24004v + 1) & c02.f24006x;
-        c02.f24004v = i11;
-        jArr[i11] = j6;
-        c02.f24005w++;
-        c3758q0.f33175h = j6;
-        c3758q0.f33176j = com.anythink.basead.exoplayer.b.f6382b;
-        this.f26916j.execute(new RunnableC3111e(1, this));
+        int i10 = (c02.f24767v + 1) & c02.f24769x;
+        c02.f24767v = i10;
+        jArr[i10] = j6;
+        c02.f24768w++;
+        c3781q0.f33959h = j6;
+        c3781q0.f33960j = com.anythink.basead.exoplayer.b.f7168b;
+        this.f27703j.execute(new RunnableC3134e(1, this));
         return true;
     }
 
     @Override // com.google.android.gms.internal.ads.A0
-    public final void u0(boolean z3) {
-        this.f26908a.getClass();
+    public final void u0(boolean z6) {
+        this.f27695a.getClass();
     }
 
     @Override // com.google.android.gms.internal.ads.A0
@@ -267,38 +267,38 @@ public final class Q implements A0 {
 
     @Override // com.google.android.gms.internal.ads.A0
     public final void w0(DP dp, long j6, int i, List list) {
-        AbstractC2772Sd.H(list.isEmpty());
-        int i6 = dp.f24438v;
-        DP dp2 = this.f26914g;
-        int i9 = dp2.f24438v;
-        C3758q0 c3758q0 = this.f26910c;
-        int i10 = dp.f24439w;
-        if (i6 != i9 || i10 != dp2.f24439w) {
-            long j9 = c3758q0.f33175h;
-            c3758q0.f33170c.c(j9 == com.anythink.basead.exoplayer.b.f6382b ? 0L : j9 + 1, new C3035cd(i6, i10, 1.0f));
+        AbstractC2792Sd.H(list.isEmpty());
+        int i4 = dp.f25183v;
+        DP dp2 = this.f27701g;
+        int i6 = dp2.f25183v;
+        C3781q0 c3781q0 = this.f27697c;
+        int i9 = dp.f25184w;
+        if (i4 != i6 || i9 != dp2.f25184w) {
+            long j9 = c3781q0.f33959h;
+            c3781q0.f33954c.c(j9 == com.anythink.basead.exoplayer.b.f7168b ? 0L : j9 + 1, new C3058cd(i4, i9, 1.0f));
         }
-        float f3 = this.f26914g.f24442z;
-        float f9 = dp.f24442z;
-        if (f9 != f3) {
-            U u3 = this.f26912e;
-            u3.f27841f = f9;
-            u3.f27836a.a();
-            u3.f27837b.a();
-            u3.f27838c = false;
-            u3.f27839d = com.anythink.basead.exoplayer.b.f6382b;
-            u3.f27840e = 0;
-            u3.c();
+        float f2 = this.f27701g.f25187z;
+        float f9 = dp.f25187z;
+        if (f9 != f2) {
+            U u6 = this.f27699e;
+            u6.f28638f = f9;
+            u6.f28633a.a();
+            u6.f28634b.a();
+            u6.f28635c = false;
+            u6.f28636d = com.anythink.basead.exoplayer.b.f7168b;
+            u6.f28637e = 0;
+            u6.c();
         }
-        this.f26914g = dp;
-        if (j6 != this.f26915h) {
-            if (c3758q0.f33172e.f24005w == 0) {
-                c3758q0.f33168a.a(i);
-                c3758q0.f33178l = j6;
+        this.f27701g = dp;
+        if (j6 != this.f27702h) {
+            if (c3781q0.f33956e.f24768w == 0) {
+                c3781q0.f33952a.a(i);
+                c3781q0.f33962l = j6;
             } else {
-                long j10 = c3758q0.f33175h;
-                c3758q0.f33171d.c(j10 == com.anythink.basead.exoplayer.b.f6382b ? -4611686018427387904L : j10 + 1, Long.valueOf(j6));
+                long j10 = c3781q0.f33959h;
+                c3781q0.f33955d.c(j10 == com.anythink.basead.exoplayer.b.f7168b ? -4611686018427387904L : j10 + 1, Long.valueOf(j6));
             }
-            this.f26915h = j6;
+            this.f27702h = j6;
         }
     }
 

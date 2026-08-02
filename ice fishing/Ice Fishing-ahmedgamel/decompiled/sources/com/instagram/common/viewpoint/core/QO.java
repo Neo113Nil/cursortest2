@@ -9,10 +9,10 @@ public class QO {
     public long A00 = 0;
     public QO A01;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 37);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 37);
         }
         return new String(copyOfRange);
     }
@@ -71,12 +71,12 @@ public class QO {
         if (i >= 64) {
             if (this.A01 != null) {
                 QO qo = this.A01;
-                int i6 = i - 64;
+                int i4 = i - 64;
                 if (A03[6].length() != 2) {
                     throw new RuntimeException();
                 }
                 A03[6] = "gh";
-                qo.A05(i6);
+                qo.A05(i4);
                 return;
             }
             return;
@@ -93,28 +93,28 @@ public class QO {
         }
     }
 
-    public final void A07(int i, boolean z3) {
+    public final void A07(int i, boolean z6) {
         if (i >= 64) {
             A01();
-            this.A01.A07(i - 64, z3);
+            this.A01.A07(i - 64, z6);
             return;
         }
-        boolean z6 = (this.A00 & Long.MIN_VALUE) != 0;
+        boolean z9 = (this.A00 & Long.MIN_VALUE) != 0;
         long j6 = (1 << i) - 1;
         long j9 = this.A00 & j6;
         long j10 = this.A00;
         long mask = ~j6;
         this.A00 = j9 | ((j10 & mask) << 1);
-        if (z3) {
+        if (z6) {
             A06(i);
         } else {
             A05(i);
         }
-        if (!z6 && this.A01 == null) {
+        if (!z9 && this.A01 == null) {
             return;
         }
         A01();
-        this.A01.A07(0, z6);
+        this.A01.A07(0, z9);
     }
 
     public final boolean A08(int i) {
@@ -131,7 +131,7 @@ public class QO {
             return this.A01.A09(i - 64);
         }
         long j6 = 1 << i;
-        boolean z3 = (this.A00 & j6) != 0;
+        boolean z6 = (this.A00 & j6) != 0;
         long mask = this.A00;
         this.A00 = mask & (~j6);
         long j9 = j6 - 1;
@@ -145,7 +145,7 @@ public class QO {
             }
             this.A01.A09(0);
         }
-        return z3;
+        return z6;
     }
 
     public final String toString() {

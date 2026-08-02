@@ -3,12 +3,12 @@ package com.onesignal.user.internal.operations.impl.executors;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import t4.C5040a;
-import u7.C5089g;
-import v7.AbstractC5129j;
-import v7.AbstractC5130k;
+import t4.C5041a;
+import u7.C5081g;
+import v7.AbstractC5119j;
+import v7.AbstractC5120k;
 import v7.t;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class d implements H4.d {
@@ -37,8 +37,8 @@ public final class d implements H4.d {
         int label;
         /* synthetic */ Object result;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -76,28 +76,28 @@ public final class d implements H4.d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object execute(List<? extends H4.g> list, InterfaceC5267d interfaceC5267d) {
+    public Object execute(List<? extends H4.g> list, InterfaceC5240d interfaceC5240d) {
         b bVar;
         int i;
-        int i6;
+        int i4;
         d dVar;
         H4.g gVar;
-        int i9;
+        int i6;
         d dVar2;
         H4.g gVar2;
+        int i9;
         int i10;
-        int i11;
-        if (interfaceC5267d instanceof b) {
-            bVar = (b) interfaceC5267d;
-            int i12 = bVar.label;
-            if ((i12 & Integer.MIN_VALUE) != 0) {
-                bVar.label = i12 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof b) {
+            bVar = (b) interfaceC5240d;
+            int i11 = bVar.label;
+            if ((i11 & Integer.MIN_VALUE) != 0) {
+                bVar.label = i11 - Integer.MIN_VALUE;
                 b bVar2 = bVar;
                 Object obj = bVar2.result;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 i = bVar2.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     com.onesignal.debug.internal.logging.b.debug$default("IdentityOperationExecutor(operations: " + list + ')', null, 2, null);
                     if (list == null || !list.isEmpty()) {
                         for (H4.g gVar3 : list) {
@@ -124,7 +124,7 @@ public final class d implements H4.d {
                             }
                         }
                     }
-                    H4.g gVar4 = (H4.g) AbstractC5129j.F(list);
+                    H4.g gVar4 = (H4.g) AbstractC5119j.D(list);
                     if (gVar4 instanceof V5.i) {
                         f resolveBackendParams = c.resolveBackendParams(gVar4, ((V5.i) gVar4).getOnesignalId(), this._jwtTokenStore, this._identityVerificationService);
                         try {
@@ -135,37 +135,37 @@ public final class d implements H4.d {
                                 try {
                                     String aliasValue = resolveBackendParams.getAliasValue();
                                     try {
-                                        Map<String, String> Q8 = t.Q(new C5089g(((V5.i) gVar4).getLabel(), ((V5.i) gVar4).getValue()));
+                                        Map<String, String> u6 = t.u(new C5081g(((V5.i) gVar4).getLabel(), ((V5.i) gVar4).getValue()));
                                         String jwt = resolveBackendParams.getJwt();
                                         bVar2.L$0 = this;
                                         bVar2.L$1 = gVar4;
                                         bVar2.label = 1;
-                                        i9 = 2;
+                                        i6 = 2;
                                         try {
-                                            if (bVar3.setAlias(appId, aliasLabel, aliasValue, Q8, jwt, bVar2) != aVar) {
+                                            if (bVar3.setAlias(appId, aliasLabel, aliasValue, u6, jwt, bVar2) != aVar) {
                                                 dVar2 = this;
                                                 gVar2 = gVar4;
                                                 if (kotlin.jvm.internal.h.a(((U5.a) dVar2._identityModelStore.getModel()).getOnesignalId(), ((V5.i) gVar2).getOnesignalId())) {
                                                 }
                                             }
-                                        } catch (C5040a e9) {
+                                        } catch (C5041a e9) {
                                             e = e9;
                                             dVar2 = this;
                                             gVar2 = gVar4;
-                                            i10 = e.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
-                                            if (i10 == 1) {
+                                            i9 = e.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
+                                            if (i9 == 1) {
                                                 return new H4.a(H4.b.FAIL_RETRY, null, null, e.getRetryAfterSeconds(), 6, null);
                                             }
-                                            if (i10 == i9) {
+                                            if (i9 == i6) {
                                                 return new H4.a(H4.b.FAIL_NORETRY, null, null, null, 14, null);
                                             }
-                                            if (i10 == 3) {
+                                            if (i9 == 3) {
                                                 return new H4.a(H4.b.FAIL_CONFLICT, null, null, e.getRetryAfterSeconds(), 6, null);
                                             }
-                                            if (i10 == 4) {
+                                            if (i9 == 4) {
                                                 return new H4.a(H4.b.FAIL_UNAUTHORIZED, null, null, e.getRetryAfterSeconds(), 6, null);
                                             }
-                                            if (i10 != 5) {
+                                            if (i9 != 5) {
                                                 throw new B0.c();
                                             }
                                             if (e.getStatusCode() == 404 && dVar2._newRecordState.isInMissingRetryWindow(((V5.i) gVar2).getOnesignalId())) {
@@ -175,24 +175,24 @@ public final class d implements H4.d {
                                             List<H4.g> rebuildOperationsIfCurrentUser = dVar2._buildUserService.getRebuildOperationsIfCurrentUser(iVar.getAppId(), iVar.getOnesignalId());
                                             return rebuildOperationsIfCurrentUser == null ? new H4.a(H4.b.FAIL_NORETRY, null, null, null, 14, null) : new H4.a(H4.b.FAIL_RETRY, null, rebuildOperationsIfCurrentUser, e.getRetryAfterSeconds(), 2, null);
                                         }
-                                    } catch (C5040a e10) {
+                                    } catch (C5041a e10) {
                                         e = e10;
-                                        i9 = 2;
+                                        i6 = 2;
                                     }
-                                } catch (C5040a e11) {
+                                } catch (C5041a e11) {
                                     e = e11;
-                                    i9 = 2;
+                                    i6 = 2;
                                 }
-                            } catch (C5040a e12) {
+                            } catch (C5041a e12) {
                                 e = e12;
-                                i9 = 2;
+                                i6 = 2;
                             }
-                        } catch (C5040a e13) {
+                        } catch (C5041a e13) {
                             e = e13;
-                            i9 = 2;
+                            i6 = 2;
                         }
                     } else {
-                        i6 = 2;
+                        i4 = 2;
                         if (gVar4 instanceof V5.b) {
                             f resolveBackendParams2 = c.resolveBackendParams(gVar4, ((V5.b) gVar4).getOnesignalId(), this._jwtTokenStore, this._identityVerificationService);
                             try {
@@ -211,24 +211,24 @@ public final class d implements H4.d {
                                     if (kotlin.jvm.internal.h.a(((U5.a) dVar._identityModelStore.getModel()).getOnesignalId(), ((V5.b) gVar).getOnesignalId())) {
                                     }
                                 }
-                            } catch (C5040a e14) {
+                            } catch (C5041a e14) {
                                 e = e14;
                                 dVar = this;
                                 gVar = gVar4;
-                                i11 = e.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
-                                if (i11 == 1) {
+                                i10 = e.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
+                                if (i10 == 1) {
                                     return new H4.a(H4.b.FAIL_RETRY, null, null, e.getRetryAfterSeconds(), 6, null);
                                 }
-                                if (i11 == i6) {
+                                if (i10 == i4) {
                                     return new H4.a(H4.b.FAIL_NORETRY, null, null, null, 14, null);
                                 }
-                                if (i11 == 3) {
+                                if (i10 == 3) {
                                     return new H4.a(H4.b.SUCCESS, null, null, null, 14, null);
                                 }
-                                if (i11 == 4) {
+                                if (i10 == 4) {
                                     return new H4.a(H4.b.FAIL_UNAUTHORIZED, null, null, e.getRetryAfterSeconds(), 6, null);
                                 }
-                                if (i11 == 5) {
+                                if (i10 == 5) {
                                     return (e.getStatusCode() == 404 && dVar._newRecordState.isInMissingRetryWindow(((V5.b) gVar).getOnesignalId())) ? new H4.a(H4.b.FAIL_RETRY, null, null, e.getRetryAfterSeconds(), 6, null) : new H4.a(H4.b.SUCCESS, null, null, null, 14, null);
                                 }
                                 throw new B0.c();
@@ -241,23 +241,23 @@ public final class d implements H4.d {
                     gVar2 = (H4.g) bVar2.L$1;
                     dVar2 = (d) bVar2.L$0;
                     try {
-                        com.bumptech.glide.d.k(obj);
-                        i9 = 2;
+                        Q3.b.s(obj);
+                        i6 = 2;
                         try {
                             if (kotlin.jvm.internal.h.a(((U5.a) dVar2._identityModelStore.getModel()).getOnesignalId(), ((V5.i) gVar2).getOnesignalId())) {
                                 com.onesignal.common.modeling.i.setStringProperty$default(dVar2._identityModelStore.getModel(), ((V5.i) gVar2).getLabel(), ((V5.i) gVar2).getValue(), "HYDRATE", false, 8, null);
                             }
-                        } catch (C5040a e15) {
+                        } catch (C5041a e15) {
                             e = e15;
-                            i10 = e.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
-                            if (i10 == 1) {
+                            i9 = e.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
+                            if (i9 == 1) {
                             }
                         }
-                    } catch (C5040a e16) {
+                    } catch (C5041a e16) {
                         e = e16;
-                        i9 = 2;
-                        i10 = e.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
-                        if (i10 == 1) {
+                        i6 = 2;
+                        i9 = e.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
+                        if (i9 == 1) {
                         }
                     }
                 } else {
@@ -267,33 +267,33 @@ public final class d implements H4.d {
                     gVar = (H4.g) bVar2.L$1;
                     dVar = (d) bVar2.L$0;
                     try {
-                        com.bumptech.glide.d.k(obj);
-                        i6 = 2;
-                    } catch (C5040a e17) {
+                        Q3.b.s(obj);
+                        i4 = 2;
+                    } catch (C5041a e17) {
                         e = e17;
-                        i6 = 2;
-                        i11 = e.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
-                        if (i11 == 1) {
+                        i4 = 2;
+                        i10 = e.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
+                        if (i10 == 1) {
                         }
                     }
                     try {
                         if (kotlin.jvm.internal.h.a(((U5.a) dVar._identityModelStore.getModel()).getOnesignalId(), ((V5.b) gVar).getOnesignalId())) {
                             com.onesignal.common.modeling.i.setOptStringProperty$default(dVar._identityModelStore.getModel(), ((V5.b) gVar).getLabel(), null, "HYDRATE", false, 8, null);
                         }
-                    } catch (C5040a e18) {
+                    } catch (C5041a e18) {
                         e = e18;
-                        i11 = e.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
-                        if (i11 == 1) {
+                        i10 = e.$EnumSwitchMapping$0[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
+                        if (i10 == 1) {
                         }
                     }
                 }
                 return new H4.a(H4.b.SUCCESS, null, null, null, 14, null);
             }
         }
-        bVar = new b(interfaceC5267d);
+        bVar = new b(interfaceC5240d);
         b bVar22 = bVar;
         Object obj2 = bVar22.result;
-        A7.a aVar2 = A7.a.f58n;
+        A7.a aVar2 = A7.a.f215n;
         i = bVar22.label;
         if (i != 0) {
         }
@@ -302,6 +302,6 @@ public final class d implements H4.d {
 
     @Override // H4.d
     public List<String> getOperations() {
-        return AbstractC5130k.v(SET_ALIAS, DELETE_ALIAS);
+        return AbstractC5120k.t(SET_ALIAS, DELETE_ALIAS);
     }
 }

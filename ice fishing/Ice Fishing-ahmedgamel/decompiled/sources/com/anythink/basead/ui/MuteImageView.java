@@ -8,15 +8,15 @@ import android.widget.ImageView;
 public class MuteImageView extends ImageView {
 
     /* renamed from: a, reason: collision with root package name */
-    private boolean f10158a;
+    private boolean f10944a;
 
     public MuteImageView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f10158a = false;
+        this.f10944a = false;
     }
 
-    public void setMute(boolean z3) {
-        if (z3) {
+    public void setMute(boolean z6) {
+        if (z6) {
             setSelected(true);
         } else {
             setSelected(false);

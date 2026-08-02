@@ -4,10 +4,10 @@ package com.anythink.basead.exoplayer.c;
 public abstract class f extends a {
 
     /* renamed from: a, reason: collision with root package name */
-    public long f6745a;
+    public long f7531a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f6746b;
+    public int f7532b;
 
     public abstract void e();
 }

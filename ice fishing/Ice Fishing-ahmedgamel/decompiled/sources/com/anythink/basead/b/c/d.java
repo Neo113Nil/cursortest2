@@ -17,38 +17,38 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f5943a = 0;
+    public static final int f6729a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f5944b = -1;
+    public static final int f6730b = -1;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f5945c = 100;
+    public static final int f6731c = 100;
 
     /* renamed from: d, reason: collision with root package name */
-    private static Map<String, Integer> f5946d = new HashMap();
+    private static Map<String, Integer> f6732d = new HashMap();
 
     /* renamed from: e, reason: collision with root package name */
-    private static ConcurrentHashMap<String, MraidWebView> f5947e = new ConcurrentHashMap<>(3);
+    private static ConcurrentHashMap<String, MraidWebView> f6733e = new ConcurrentHashMap<>(3);
 
     /* renamed from: f, reason: collision with root package name */
-    private static ConcurrentHashMap<String, WTWebView> f5948f = new ConcurrentHashMap<>(3);
+    private static ConcurrentHashMap<String, WTWebView> f6734f = new ConcurrentHashMap<>(3);
 
     public static boolean a(String str) {
-        Integer num = f5946d.get(str);
+        Integer num = f6732d.get(str);
         return num != null && num.intValue() == 0;
     }
 
     public static MraidWebView b(String str) {
-        return f5947e.remove(str);
+        return f6733e.remove(str);
     }
 
     public static WTWebView c(String str) {
-        return f5948f.remove(str);
+        return f6734f.remove(str);
     }
 
     public static WTWebView d(String str) {
-        return f5948f.get(str);
+        return f6734f.get(str);
     }
 
     public static void e(String str) {
@@ -80,9 +80,9 @@ public final class d {
     }
 
     public static void a(String str, int i) {
-        Integer num = f5946d.get(str);
+        Integer num = f6732d.get(str);
         if (num == null || num.intValue() < i) {
-            f5946d.put(str, Integer.valueOf(i));
+            f6732d.put(str, Integer.valueOf(i));
         }
     }
 
@@ -99,16 +99,16 @@ public final class d {
     }
 
     public static void a(String str, MraidWebView mraidWebView) {
-        f5947e.put(str, mraidWebView);
+        f6733e.put(str, mraidWebView);
     }
 
     public static void a(String str, WTWebView wTWebView) {
-        f5948f.put(str, wTWebView);
+        f6734f.put(str, wTWebView);
     }
 
     public static boolean a(w wVar) {
         if (wVar != null) {
-            return f5948f.containsKey(a((x) null, wVar, 3));
+            return f6734f.containsKey(a((x) null, wVar, 3));
         }
         return false;
     }
@@ -117,7 +117,7 @@ public final class d {
         if (xVar == null || wVar == null) {
             return false;
         }
-        return f5947e.containsKey(a(xVar, wVar, 2));
+        return f6733e.containsKey(a(xVar, wVar, 2));
     }
 
     public static boolean b(String str, int i) {
@@ -126,7 +126,7 @@ public final class d {
 
     public static String a(x xVar, w wVar, int i) {
         if (xVar != null) {
-            return xVar.f14158d + "_" + wVar.v() + "_" + i;
+            return xVar.f14944d + "_" + wVar.v() + "_" + i;
         }
         return wVar.q() + "_" + wVar.v() + "_" + i;
     }
@@ -159,11 +159,11 @@ public final class d {
                 wVar.m(0);
             }
         }
-        y yVar = xVar.f14168o;
+        y yVar = xVar.f14954o;
         if (wVar.r() != null) {
             yVar = wVar.r();
         }
-        return a(wVar, xVar.f14163j, yVar);
+        return a(wVar, xVar.f14949j, yVar);
     }
 
     public static boolean a(w wVar, int i, y yVar) {
@@ -195,7 +195,7 @@ public final class d {
         if (!TextUtils.equals(String.valueOf(i), "4") || wVar.ao() == 2) {
             return true;
         }
-        boolean z3 = a(wVar, yVar) || c(wVar);
-        return wVar.ao() == 3 ? z3 && (yVar.bF() == 1 || b(wVar)) : z3;
+        boolean z6 = a(wVar, yVar) || c(wVar);
+        return wVar.ao() == 3 ? z6 && (yVar.bF() == 1 || b(wVar)) : z6;
     }
 }

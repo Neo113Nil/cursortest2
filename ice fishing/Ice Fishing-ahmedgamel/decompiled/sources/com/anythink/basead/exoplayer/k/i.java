@@ -8,65 +8,66 @@ import com.anythink.basead.exoplayer.a.b;
 import com.anythink.basead.exoplayer.ae;
 import com.anythink.basead.exoplayer.h.t;
 import com.anythink.basead.exoplayer.i.e;
+import com.google.android.gms.internal.ads.Wv;
 import java.io.IOException;
 import java.text.NumberFormat;
 import java.util.Locale;
-import u.AbstractC5049e;
+import u.AbstractC5050e;
 
 /* loaded from: classes.dex */
 public final class i implements com.anythink.basead.exoplayer.a.b {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f8399a = "EventLogger";
+    private static final String f9185a = "EventLogger";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final int f8400b = 3;
+    private static final int f9186b = 3;
 
     /* renamed from: c, reason: collision with root package name */
-    private static final NumberFormat f8401c;
+    private static final NumberFormat f9187c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final com.anythink.basead.exoplayer.i.e f8402d;
+    private final com.anythink.basead.exoplayer.i.e f9188d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final ae.b f8403e = new ae.b();
+    private final ae.b f9189e = new ae.b();
 
     /* renamed from: f, reason: collision with root package name */
-    private final ae.a f8404f = new ae.a();
+    private final ae.a f9190f = new ae.a();
 
     /* renamed from: g, reason: collision with root package name */
-    private final long f8405g = SystemClock.elapsedRealtime();
+    private final long f9191g = SystemClock.elapsedRealtime();
 
     static {
         NumberFormat numberFormat = NumberFormat.getInstance(Locale.US);
-        f8401c = numberFormat;
+        f9187c = numberFormat;
         numberFormat.setMinimumFractionDigits(2);
         numberFormat.setMaximumFractionDigits(2);
         numberFormat.setGroupingUsed(false);
     }
 
     private i(com.anythink.basead.exoplayer.i.e eVar) {
-        this.f8402d = eVar;
+        this.f9188d = eVar;
     }
 
     private String i(b.a aVar) {
-        String str = "window=" + aVar.f6304c;
-        if (aVar.f6305d != null) {
-            StringBuilder c9 = AbstractC5049e.c(str, ", period=");
-            c9.append(aVar.f6305d.f7767a);
+        String str = "window=" + aVar.f7090c;
+        if (aVar.f7091d != null) {
+            StringBuilder c9 = AbstractC5050e.c(str, ", period=");
+            c9.append(aVar.f7091d.f8553a);
             str = c9.toString();
-            if (aVar.f6305d.a()) {
-                StringBuilder c10 = AbstractC5049e.c(str, ", adGroup=");
-                c10.append(aVar.f6305d.f7768b);
-                StringBuilder c11 = AbstractC5049e.c(c10.toString(), ", ad=");
-                c11.append(aVar.f6305d.f7769c);
+            if (aVar.f7091d.a()) {
+                StringBuilder c10 = AbstractC5050e.c(str, ", adGroup=");
+                c10.append(aVar.f7091d.f8554b);
+                StringBuilder c11 = AbstractC5050e.c(c10.toString(), ", ad=");
+                c11.append(aVar.f7091d.f8555c);
                 str = c11.toString();
             }
         }
         StringBuilder sb = new StringBuilder();
-        sb.append(a(aVar.f6302a - this.f8405g));
+        sb.append(a(aVar.f7088a - this.f9191g));
         sb.append(", ");
-        return D.y.s(sb, a(aVar.f6307f), ", ", str);
+        return D.x.p(sb, a(aVar.f7093f), ", ", str);
     }
 
     @Override // com.anythink.basead.exoplayer.a.b
@@ -106,17 +107,17 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
     }
 
     @Override // com.anythink.basead.exoplayer.a.b
-    public final void a(b.a aVar, boolean z3, int i) {
+    public final void a(b.a aVar, boolean z6, int i) {
         StringBuilder sb = new StringBuilder();
-        sb.append(z3);
+        sb.append(z6);
         sb.append(", ");
         sb.append(i != 1 ? i != 2 ? i != 3 ? i != 4 ? "?" : "ENDED" : "READY" : "BUFFERING" : "IDLE");
-        a(aVar, com.anythink.core.express.b.a.f17526b, sb.toString());
+        a(aVar, com.anythink.core.express.b.a.f18313b, sb.toString());
     }
 
     @Override // com.anythink.basead.exoplayer.a.b
-    public final void b(b.a aVar, boolean z3) {
-        a(aVar, com.anythink.core.express.b.a.f17529e, Boolean.toString(z3));
+    public final void b(b.a aVar, boolean z6) {
+        a(aVar, com.anythink.core.express.b.a.f18316e, Boolean.toString(z6));
     }
 
     @Override // com.anythink.basead.exoplayer.a.b
@@ -172,16 +173,16 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
 
     private static String f(int i) {
         if (i == 0) {
-            return com.anythink.core.express.b.a.f17530f;
+            return com.anythink.core.express.b.a.f18317f;
         }
         if (i == 1) {
-            return o.f8445b;
+            return o.f9231b;
         }
         if (i == 2) {
-            return o.f8444a;
+            return o.f9230a;
         }
         if (i == 3) {
-            return o.f8446c;
+            return o.f9232c;
         }
         if (i == 4) {
             return "metadata";
@@ -190,7 +191,7 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
             return "none";
         }
         if (i >= 10000) {
-            return D.y.k(i, "custom (", ")");
+            return D.x.j(i, "custom (", ")");
         }
         return "?";
     }
@@ -225,17 +226,17 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
     }
 
     @Override // com.anythink.basead.exoplayer.a.b
-    public final void b(b.a aVar, int i, int i6) {
-        a(aVar, "videoSizeChanged", i + ", " + i6);
+    public final void b(b.a aVar, int i, int i4) {
+        a(aVar, "videoSizeChanged", i + ", " + i4);
     }
 
     @Override // com.anythink.basead.exoplayer.a.b
     public final void b(b.a aVar, t.c cVar) {
-        a(aVar, "upstreamDiscarded", com.anythink.basead.exoplayer.m.c(cVar.f7813c));
+        a(aVar, "upstreamDiscarded", com.anythink.basead.exoplayer.m.c(cVar.f8599c));
     }
 
     private String b(b.a aVar, String str) {
-        return u1.h.g(AbstractC5049e.c(str, " ["), i(aVar), "]");
+        return Wv.i(AbstractC5050e.c(str, " ["), i(aVar), "]");
     }
 
     @Override // com.anythink.basead.exoplayer.a.b
@@ -254,8 +255,8 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
     }
 
     @Override // com.anythink.basead.exoplayer.a.b
-    public final void a(b.a aVar, boolean z3) {
-        a(aVar, "shuffleModeEnabled", Boolean.toString(z3));
+    public final void a(b.a aVar, boolean z6) {
+        a(aVar, "shuffleModeEnabled", Boolean.toString(z6));
     }
 
     @Override // com.anythink.basead.exoplayer.a.b
@@ -265,14 +266,14 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
 
     @Override // com.anythink.basead.exoplayer.a.b
     public final void a(b.a aVar, com.anythink.basead.exoplayer.v vVar) {
-        a(aVar, "playbackParameters", af.a("speed=%.2f, pitch=%.2f, skipSilence=%s", Float.valueOf(vVar.f8759b), Float.valueOf(vVar.f8760c), Boolean.valueOf(vVar.f8761d)));
+        a(aVar, "playbackParameters", af.a("speed=%.2f, pitch=%.2f, skipSilence=%s", Float.valueOf(vVar.f9545b), Float.valueOf(vVar.f9546c), Boolean.valueOf(vVar.f9547d)));
     }
 
     @Override // com.anythink.basead.exoplayer.a.b
     public final void a(b.a aVar, int i) {
         String str;
-        int c9 = aVar.f6303b.c();
-        int b9 = aVar.f6303b.b();
+        int c9 = aVar.f7089b.c();
+        int b9 = aVar.f7089b.b();
         StringBuilder sb = new StringBuilder("timelineChanged [");
         sb.append(i(aVar));
         sb.append(", periodCount=");
@@ -291,16 +292,16 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
         }
         sb.append(str);
         a(sb.toString());
-        for (int i6 = 0; i6 < Math.min(c9, 3); i6++) {
-            aVar.f6303b.a(i6, this.f8404f, false);
-            a(u1.h.g(new StringBuilder("  period ["), a(com.anythink.basead.exoplayer.b.a(this.f8404f.f6345d)), "]"));
+        for (int i4 = 0; i4 < Math.min(c9, 3); i4++) {
+            aVar.f7089b.a(i4, this.f9190f, false);
+            a(Wv.i(new StringBuilder("  period ["), a(com.anythink.basead.exoplayer.b.a(this.f9190f.f7131d)), "]"));
         }
         if (c9 > 3) {
             a("  ...");
         }
-        for (int i9 = 0; i9 < Math.min(b9, 3); i9++) {
-            aVar.f6303b.a(i9, this.f8403e, false);
-            a("  window [" + a(com.anythink.basead.exoplayer.b.a(this.f8403e.i)) + ", " + this.f8403e.f6351d + ", " + this.f8403e.f6352e + "]");
+        for (int i6 = 0; i6 < Math.min(b9, 3); i6++) {
+            aVar.f7089b.a(i6, this.f9189e, false);
+            a("  window [" + a(com.anythink.basead.exoplayer.b.a(this.f9189e.i)) + ", " + this.f9189e.f7137d + ", " + this.f9189e.f7138e + "]");
         }
         if (b9 > 3) {
             a("  ...");
@@ -309,7 +310,7 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
     }
 
     private String b(b.a aVar, String str, String str2) {
-        return com.anythink.basead.exoplayer.f.f.o(AbstractC5049e.c(str, " ["), i(aVar), ", ", str2, "]");
+        return com.IceFishing.LiveIceFishing.k.r(AbstractC5050e.c(str, " ["), i(aVar), ", ", str2, "]");
     }
 
     private static String b(int i) {
@@ -360,34 +361,34 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
         e.a aVar2;
         int i;
         String str;
-        com.anythink.basead.exoplayer.i.e eVar = this.f8402d;
+        com.anythink.basead.exoplayer.i.e eVar = this.f9188d;
         e.a a9 = eVar != null ? eVar.a() : null;
         if (a9 == null) {
             a(aVar, "tracksChanged", "[]");
             return;
         }
-        a(u1.h.g(new StringBuilder("tracksChanged ["), i(aVar), ", "));
+        a(Wv.i(new StringBuilder("tracksChanged ["), i(aVar), ", "));
         int a10 = a9.a();
-        int i6 = 0;
+        int i4 = 0;
         while (true) {
             String str2 = "  ]";
             String str3 = "    ]";
-            if (i6 >= a10) {
+            if (i4 >= a10) {
                 break;
             }
-            com.anythink.basead.exoplayer.h.af b9 = a9.b(i6);
-            com.anythink.basead.exoplayer.i.f a11 = gVar.a(i6);
-            if (b9.f7516b > 0) {
-                a(D.y.k(i6, "  Renderer:", " ["));
-                int i9 = 0;
-                while (i9 < b9.f7516b) {
-                    com.anythink.basead.exoplayer.h.ae a12 = b9.a(i9);
-                    int i10 = a10;
-                    int i11 = a12.f7512a;
+            com.anythink.basead.exoplayer.h.af b9 = a9.b(i4);
+            com.anythink.basead.exoplayer.i.f a11 = gVar.a(i4);
+            if (b9.f8302b > 0) {
+                a(D.x.j(i4, "  Renderer:", " ["));
+                int i6 = 0;
+                while (i6 < b9.f8302b) {
+                    com.anythink.basead.exoplayer.h.ae a12 = b9.a(i6);
+                    int i9 = a10;
+                    int i10 = a12.f8298a;
                     String str4 = str2;
-                    int a13 = a9.a(i6, i9);
+                    int a13 = a9.a(i4, i6);
                     String str5 = str3;
-                    if (i11 < 2) {
+                    if (i10 < 2) {
                         str = "N/A";
                     } else if (a13 == 0) {
                         str = "NO";
@@ -398,16 +399,16 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
                     } else {
                         str = "YES";
                     }
-                    a("    Group:" + i9 + ", adaptive_supported=" + str + " [");
-                    int i12 = 0;
-                    while (i12 < a12.f7512a) {
-                        a("      " + a((a11 == null || a11.f() != a12 || a11.c(i12) == -1) ? false : true) + " Track:" + i12 + ", " + com.anythink.basead.exoplayer.m.c(a12.a(i12)) + ", supported=" + b(a9.a(i6, i9, i12)));
-                        i12++;
+                    a("    Group:" + i6 + ", adaptive_supported=" + str + " [");
+                    int i11 = 0;
+                    while (i11 < a12.f8298a) {
+                        a("      " + a((a11 == null || a11.f() != a12 || a11.c(i11) == -1) ? false : true) + " Track:" + i11 + ", " + com.anythink.basead.exoplayer.m.c(a12.a(i11)) + ", supported=" + b(a9.a(i4, i6, i11)));
+                        i11++;
                         a9 = a9;
                     }
                     a(str5);
-                    i9++;
-                    a10 = i10;
+                    i6++;
+                    a10 = i9;
                     str2 = str4;
                     str3 = str5;
                 }
@@ -416,19 +417,19 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
                 String str6 = str2;
                 String str7 = str3;
                 if (a11 != null) {
-                    int i13 = 0;
+                    int i12 = 0;
                     while (true) {
-                        if (i13 >= a11.g()) {
+                        if (i12 >= a11.g()) {
                             break;
                         }
-                        com.anythink.basead.exoplayer.g.a aVar3 = a11.a(i13).f8663f;
+                        com.anythink.basead.exoplayer.g.a aVar3 = a11.a(i12).f9449f;
                         if (aVar3 != null) {
                             a("    Metadata [");
                             a(aVar3, "      ");
                             a(str7);
                             break;
                         }
-                        i13++;
+                        i12++;
                     }
                 }
                 a(str6);
@@ -436,18 +437,18 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
                 aVar2 = a9;
                 i = a10;
             }
-            i6++;
+            i4++;
             a10 = i;
             a9 = aVar2;
         }
         com.anythink.basead.exoplayer.h.af b10 = a9.b();
-        if (b10.f7516b > 0) {
+        if (b10.f8302b > 0) {
             a("  Renderer:None [");
-            for (int i14 = 0; i14 < b10.f7516b; i14++) {
-                a(D.y.k(i14, "    Group:", " ["));
-                com.anythink.basead.exoplayer.h.ae a14 = b10.a(i14);
-                for (int i15 = 0; i15 < a14.f7512a; i15++) {
-                    a("      " + a(false) + " Track:" + i15 + ", " + com.anythink.basead.exoplayer.m.c(a14.a(i15)) + ", supported=" + b(0));
+            for (int i13 = 0; i13 < b10.f8302b; i13++) {
+                a(D.x.j(i13, "    Group:", " ["));
+                com.anythink.basead.exoplayer.h.ae a14 = b10.a(i13);
+                for (int i14 = 0; i14 < a14.f8298a; i14++) {
+                    a("      " + a(false) + " Track:" + i14 + ", " + com.anythink.basead.exoplayer.m.c(a14.a(i14)) + ", supported=" + b(0));
                 }
                 a("    ]");
             }
@@ -458,14 +459,14 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
 
     @Override // com.anythink.basead.exoplayer.a.b
     public final void a(b.a aVar, com.anythink.basead.exoplayer.g.a aVar2) {
-        a(u1.h.g(new StringBuilder("metadata ["), i(aVar), ", "));
+        a(Wv.i(new StringBuilder("metadata ["), i(aVar), ", "));
         a(aVar2, "  ");
         a("]");
     }
 
     @Override // com.anythink.basead.exoplayer.a.b
     public final void a(b.a aVar, int i, String str) {
-        a(aVar, "decoderInitialized", D.y.s(new StringBuilder(), f(i), ", ", str));
+        a(aVar, "decoderInitialized", D.x.p(new StringBuilder(), f(i), ", ", str));
     }
 
     @Override // com.anythink.basead.exoplayer.a.b
@@ -489,8 +490,8 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
     }
 
     @Override // com.anythink.basead.exoplayer.a.b
-    public final void a(b.a aVar, int i, int i6) {
-        a(aVar, "viewportSizeChanged", i + ", " + i6);
+    public final void a(b.a aVar, int i, int i4) {
+        a(aVar, "viewportSizeChanged", i + ", " + i4);
     }
 
     @Override // com.anythink.basead.exoplayer.a.b
@@ -500,7 +501,7 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
 
     @Override // com.anythink.basead.exoplayer.a.b
     public final void a(b.a aVar, t.c cVar) {
-        a(aVar, "downstreamFormatChanged", com.anythink.basead.exoplayer.m.c(cVar.f7813c));
+        a(aVar, "downstreamFormatChanged", com.anythink.basead.exoplayer.m.c(cVar.f8599c));
     }
 
     @Override // com.anythink.basead.exoplayer.a.b
@@ -509,11 +510,11 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
     }
 
     private static void a(String str) {
-        Log.d(f8399a, str);
+        Log.d(f9185a, str);
     }
 
     private static void a(String str, Throwable th) {
-        Log.e(f8399a, str, th);
+        Log.e(f9185a, str, th);
     }
 
     private void a(b.a aVar, String str) {
@@ -538,14 +539,14 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
 
     private static void a(com.anythink.basead.exoplayer.g.a aVar, String str) {
         for (int i = 0; i < aVar.a(); i++) {
-            StringBuilder b9 = AbstractC5049e.b(str);
+            StringBuilder b9 = AbstractC5050e.b(str);
             b9.append(aVar.a(i));
             a(b9.toString());
         }
     }
 
     private static String a(long j6) {
-        return j6 == com.anythink.basead.exoplayer.b.f6382b ? "?" : f8401c.format(j6 / 1000.0f);
+        return j6 == com.anythink.basead.exoplayer.b.f7168b ? "?" : f9187c.format(j6 / 1000.0f);
     }
 
     private static String a(int i) {
@@ -564,17 +565,17 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
         return "ENDED";
     }
 
-    private static String a(int i, int i6) {
+    private static String a(int i, int i4) {
         if (i < 2) {
             return "N/A";
         }
-        if (i6 == 0) {
+        if (i4 == 0) {
             return "NO";
         }
-        if (i6 == 8) {
+        if (i4 == 8) {
             return "YES_NOT_SEAMLESS";
         }
-        if (i6 != 16) {
+        if (i4 != 16) {
             return "?";
         }
         return "YES";
@@ -584,7 +585,7 @@ public final class i implements com.anythink.basead.exoplayer.a.b {
         return a((fVar == null || fVar.f() != aeVar || fVar.c(i) == -1) ? false : true);
     }
 
-    private static String a(boolean z3) {
-        return z3 ? "[X]" : "[ ]";
+    private static String a(boolean z6) {
+        return z6 ? "[X]" : "[ ]";
     }
 }

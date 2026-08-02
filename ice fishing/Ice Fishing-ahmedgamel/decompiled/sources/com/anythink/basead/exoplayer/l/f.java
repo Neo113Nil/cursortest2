@@ -13,66 +13,66 @@ import com.anythink.basead.exoplayer.k.af;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final long f8608a = 500;
+    private static final long f9394a = 500;
 
     /* renamed from: b, reason: collision with root package name */
-    private static final long f8609b = 20000000;
+    private static final long f9395b = 20000000;
 
     /* renamed from: c, reason: collision with root package name */
-    private static final long f8610c = 80;
+    private static final long f9396c = 80;
 
     /* renamed from: d, reason: collision with root package name */
-    private static final int f8611d = 6;
+    private static final int f9397d = 6;
 
     /* renamed from: e, reason: collision with root package name */
-    private final WindowManager f8612e;
+    private final WindowManager f9398e;
 
     /* renamed from: f, reason: collision with root package name */
-    private final b f8613f;
+    private final b f9399f;
 
     /* renamed from: g, reason: collision with root package name */
-    private final a f8614g;
+    private final a f9400g;
 
     /* renamed from: h, reason: collision with root package name */
-    private long f8615h;
+    private long f9401h;
     private long i;
 
     /* renamed from: j, reason: collision with root package name */
-    private long f8616j;
+    private long f9402j;
 
     /* renamed from: k, reason: collision with root package name */
-    private long f8617k;
+    private long f9403k;
 
     /* renamed from: l, reason: collision with root package name */
-    private long f8618l;
+    private long f9404l;
 
     /* renamed from: m, reason: collision with root package name */
-    private boolean f8619m;
+    private boolean f9405m;
 
     /* renamed from: n, reason: collision with root package name */
-    private long f8620n;
+    private long f9406n;
 
     /* renamed from: o, reason: collision with root package name */
-    private long f8621o;
+    private long f9407o;
 
     /* renamed from: p, reason: collision with root package name */
-    private long f8622p;
+    private long f9408p;
 
     public final class a implements DisplayManager.DisplayListener {
 
         /* renamed from: b, reason: collision with root package name */
-        private final DisplayManager f8624b;
+        private final DisplayManager f9410b;
 
         public a(DisplayManager displayManager) {
-            this.f8624b = displayManager;
+            this.f9410b = displayManager;
         }
 
         public final void a() {
-            this.f8624b.registerDisplayListener(this, null);
+            this.f9410b.registerDisplayListener(this, null);
         }
 
         public final void b() {
-            this.f8624b.unregisterDisplayListener(this);
+            this.f9410b.unregisterDisplayListener(this);
         }
 
         @Override // android.hardware.display.DisplayManager.DisplayListener
@@ -94,49 +94,49 @@ public final class f {
     public static final class b implements Handler.Callback, Choreographer.FrameCallback {
 
         /* renamed from: b, reason: collision with root package name */
-        private static final int f8625b = 0;
+        private static final int f9411b = 0;
 
         /* renamed from: c, reason: collision with root package name */
-        private static final int f8626c = 1;
+        private static final int f9412c = 1;
 
         /* renamed from: d, reason: collision with root package name */
-        private static final int f8627d = 2;
+        private static final int f9413d = 2;
 
         /* renamed from: e, reason: collision with root package name */
-        private static final b f8628e = new b();
+        private static final b f9414e = new b();
 
         /* renamed from: a, reason: collision with root package name */
-        public volatile long f8629a = com.anythink.basead.exoplayer.b.f6382b;
+        public volatile long f9415a = com.anythink.basead.exoplayer.b.f7168b;
 
         /* renamed from: f, reason: collision with root package name */
-        private final Handler f8630f;
+        private final Handler f9416f;
 
         /* renamed from: g, reason: collision with root package name */
-        private final HandlerThread f8631g;
+        private final HandlerThread f9417g;
 
         /* renamed from: h, reason: collision with root package name */
-        private Choreographer f8632h;
+        private Choreographer f9418h;
         private int i;
 
         private b() {
             HandlerThread handlerThread = new HandlerThread("ChoreographerOwner:Handler");
-            this.f8631g = handlerThread;
+            this.f9417g = handlerThread;
             handlerThread.start();
             Handler handler = new Handler(handlerThread.getLooper(), this);
-            this.f8630f = handler;
+            this.f9416f = handler;
             handler.sendEmptyMessage(0);
         }
 
         public static b a() {
-            return f8628e;
+            return f9414e;
         }
 
         private void d() {
-            this.f8632h = Choreographer.getInstance();
+            this.f9418h = Choreographer.getInstance();
         }
 
         private void e() {
-            Choreographer choreographer = this.f8632h;
+            Choreographer choreographer = this.f9418h;
             if (choreographer != null) {
                 int i = this.i + 1;
                 this.i = i;
@@ -147,30 +147,30 @@ public final class f {
         }
 
         private void f() {
-            Choreographer choreographer = this.f8632h;
+            Choreographer choreographer = this.f9418h;
             if (choreographer != null) {
                 int i = this.i - 1;
                 this.i = i;
                 if (i == 0) {
                     choreographer.removeFrameCallback(this);
-                    this.f8629a = com.anythink.basead.exoplayer.b.f6382b;
+                    this.f9415a = com.anythink.basead.exoplayer.b.f7168b;
                 }
             }
         }
 
         public final void b() {
-            this.f8630f.sendEmptyMessage(1);
+            this.f9416f.sendEmptyMessage(1);
         }
 
         public final void c() {
-            this.f8630f.sendEmptyMessage(2);
+            this.f9416f.sendEmptyMessage(2);
         }
 
         @Override // android.view.Choreographer.FrameCallback
         public final void doFrame(long j6) {
-            if (this.f8632h != null) {
-                this.f8629a = j6;
-                this.f8632h.postFrameCallbackDelayed(this, 500L);
+            if (this.f9418h != null) {
+                this.f9415a = j6;
+                this.f9418h.postFrameCallbackDelayed(this, 500L);
             }
         }
 
@@ -179,17 +179,17 @@ public final class f {
             int i = message.what;
             if (i == 0) {
                 try {
-                    this.f8632h = Choreographer.getInstance();
+                    this.f9418h = Choreographer.getInstance();
                 } catch (Throwable unused) {
                 }
                 return true;
             }
             if (i == 1) {
-                Choreographer choreographer = this.f8632h;
+                Choreographer choreographer = this.f9418h;
                 if (choreographer != null) {
-                    int i6 = this.i + 1;
-                    this.i = i6;
-                    if (i6 == 1) {
+                    int i4 = this.i + 1;
+                    this.i = i4;
+                    if (i4 == 1) {
                         choreographer.postFrameCallback(this);
                     }
                 }
@@ -198,13 +198,13 @@ public final class f {
             if (i != 2) {
                 return false;
             }
-            Choreographer choreographer2 = this.f8632h;
+            Choreographer choreographer2 = this.f9418h;
             if (choreographer2 != null) {
-                int i9 = this.i - 1;
-                this.i = i9;
-                if (i9 == 0) {
+                int i6 = this.i - 1;
+                this.i = i6;
+                if (i6 == 0) {
                     choreographer2.removeFrameCallback(this);
-                    this.f8629a = com.anythink.basead.exoplayer.b.f6382b;
+                    this.f9415a = com.anythink.basead.exoplayer.b.f7168b;
                 }
             }
             return true;
@@ -218,22 +218,22 @@ public final class f {
     /* JADX INFO: Access modifiers changed from: private */
     public void c() {
         try {
-            if (this.f8612e.getDefaultDisplay() != null) {
+            if (this.f9398e.getDefaultDisplay() != null) {
                 long refreshRate = (long) (1.0E9d / r0.getRefreshRate());
-                this.f8615h = refreshRate;
-                this.i = (refreshRate * f8610c) / 100;
+                this.f9401h = refreshRate;
+                this.i = (refreshRate * f9396c) / 100;
             }
         } catch (Throwable unused) {
         }
     }
 
     public final void b() {
-        if (this.f8612e != null) {
-            a aVar = this.f8614g;
+        if (this.f9398e != null) {
+            a aVar = this.f9400g;
             if (aVar != null) {
                 aVar.b();
             }
-            this.f8613f.c();
+            this.f9399f.c();
         }
     }
 
@@ -242,29 +242,29 @@ public final class f {
         a aVar = null;
         if (context != null) {
             context = context.getApplicationContext();
-            this.f8612e = (WindowManager) context.getSystemService("window");
+            this.f9398e = (WindowManager) context.getSystemService("window");
         } else {
-            this.f8612e = null;
+            this.f9398e = null;
         }
-        if (this.f8612e != null) {
-            if (af.f8346a >= 17 && (displayManager = (DisplayManager) context.getSystemService("display")) != null) {
+        if (this.f9398e != null) {
+            if (af.f9132a >= 17 && (displayManager = (DisplayManager) context.getSystemService("display")) != null) {
                 aVar = new a(displayManager);
             }
-            this.f8614g = aVar;
-            this.f8613f = b.a();
+            this.f9400g = aVar;
+            this.f9399f = b.a();
         } else {
-            this.f8614g = null;
-            this.f8613f = null;
+            this.f9400g = null;
+            this.f9399f = null;
         }
-        this.f8615h = com.anythink.basead.exoplayer.b.f6382b;
-        this.i = com.anythink.basead.exoplayer.b.f6382b;
+        this.f9401h = com.anythink.basead.exoplayer.b.f7168b;
+        this.i = com.anythink.basead.exoplayer.b.f7168b;
     }
 
     public final void a() {
-        this.f8619m = false;
-        if (this.f8612e != null) {
-            this.f8613f.b();
-            a aVar = this.f8614g;
+        this.f9405m = false;
+        if (this.f9398e != null) {
+            this.f9399f.b();
+            a aVar = this.f9400g;
             if (aVar != null) {
                 aVar.a();
             }
@@ -273,7 +273,7 @@ public final class f {
     }
 
     private boolean b(long j6, long j9) {
-        return Math.abs((j9 - this.f8620n) - (j6 - this.f8621o)) > f8609b;
+        return Math.abs((j9 - this.f9406n) - (j6 - this.f9407o)) > f9395b;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:14:0x0047  */
@@ -288,31 +288,31 @@ public final class f {
         long j12;
         long j13;
         long j14 = 1000 * j6;
-        if (this.f8619m) {
-            if (j6 != this.f8616j) {
-                this.f8622p++;
-                this.f8617k = this.f8618l;
+        if (this.f9405m) {
+            if (j6 != this.f9402j) {
+                this.f9408p++;
+                this.f9403k = this.f9404l;
             }
-            long j15 = this.f8622p;
+            long j15 = this.f9408p;
             if (j15 >= 6) {
-                j11 = this.f8617k + ((j14 - this.f8621o) / j15);
+                j11 = this.f9403k + ((j14 - this.f9407o) / j15);
                 if (b(j11, j9)) {
-                    this.f8619m = false;
+                    this.f9405m = false;
                 } else {
-                    j10 = (this.f8620n + j11) - this.f8621o;
-                    if (!this.f8619m) {
-                        this.f8621o = j14;
-                        this.f8620n = j9;
-                        this.f8622p = 0L;
-                        this.f8619m = true;
+                    j10 = (this.f9406n + j11) - this.f9407o;
+                    if (!this.f9405m) {
+                        this.f9407o = j14;
+                        this.f9406n = j9;
+                        this.f9408p = 0L;
+                        this.f9405m = true;
                     }
-                    this.f8616j = j6;
-                    this.f8618l = j11;
-                    bVar = this.f8613f;
-                    if (bVar != null && this.f8615h != com.anythink.basead.exoplayer.b.f6382b) {
-                        j12 = bVar.f8629a;
-                        if (j12 != com.anythink.basead.exoplayer.b.f6382b) {
-                            long j16 = this.f8615h;
+                    this.f9402j = j6;
+                    this.f9404l = j11;
+                    bVar = this.f9399f;
+                    if (bVar != null && this.f9401h != com.anythink.basead.exoplayer.b.f7168b) {
+                        j12 = bVar.f9415a;
+                        if (j12 != com.anythink.basead.exoplayer.b.f7168b) {
+                            long j16 = this.f9401h;
                             long j17 = (((j10 - j12) / j16) * j16) + j12;
                             if (j10 <= j17) {
                                 j13 = j17 - j16;
@@ -329,19 +329,19 @@ public final class f {
                     return j10;
                 }
             } else if (b(j14, j9)) {
-                this.f8619m = false;
+                this.f9405m = false;
             }
         }
         j10 = j9;
         j11 = j14;
-        if (!this.f8619m) {
+        if (!this.f9405m) {
         }
-        this.f8616j = j6;
-        this.f8618l = j11;
-        bVar = this.f8613f;
+        this.f9402j = j6;
+        this.f9404l = j11;
+        bVar = this.f9399f;
         if (bVar != null) {
-            j12 = bVar.f8629a;
-            if (j12 != com.anythink.basead.exoplayer.b.f6382b) {
+            j12 = bVar.f9415a;
+            if (j12 != com.anythink.basead.exoplayer.b.f7168b) {
             }
         }
         return j10;

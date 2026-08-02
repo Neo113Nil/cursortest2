@@ -12,12 +12,12 @@ import kotlin.jvm.internal.h;
 public final class C4862b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final AbstractCollection f39973a;
+    public final AbstractCollection f40020a;
 
     /* JADX WARN: Multi-variable type inference failed */
     public C4862b(List topics) {
         h.e(topics, "topics");
-        this.f39973a = (AbstractCollection) topics;
+        this.f40020a = (AbstractCollection) topics;
     }
 
     /* JADX WARN: Type inference failed for: r0v1, types: [java.util.AbstractCollection, java.util.Collection, java.util.List] */
@@ -29,19 +29,19 @@ public final class C4862b {
         if (!(obj instanceof C4862b)) {
             return false;
         }
-        ?? r02 = this.f39973a;
+        ?? r02 = this.f40020a;
         C4862b c4862b = (C4862b) obj;
-        if (r02.size() != c4862b.f39973a.size()) {
+        if (r02.size() != c4862b.f40020a.size()) {
             return false;
         }
-        return new HashSet((Collection) r02).equals(new HashSet(c4862b.f39973a));
+        return new HashSet((Collection) r02).equals(new HashSet(c4862b.f40020a));
     }
 
     public final int hashCode() {
-        return Objects.hash(this.f39973a);
+        return Objects.hash(this.f40020a);
     }
 
     public final String toString() {
-        return "Topics=" + this.f39973a;
+        return "Topics=" + this.f40020a;
     }
 }

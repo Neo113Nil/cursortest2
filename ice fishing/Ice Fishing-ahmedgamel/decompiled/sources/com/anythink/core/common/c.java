@@ -15,51 +15,51 @@ import org.json.JSONObject;
 public class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static String f12245a = "c";
+    public static String f13031a = "c";
 
     /* renamed from: f, reason: collision with root package name */
-    private static volatile c f12246f;
+    private static volatile c f13032f;
 
     /* renamed from: b, reason: collision with root package name */
-    ConcurrentHashMap<String, Long> f12247b = new ConcurrentHashMap<>();
+    ConcurrentHashMap<String, Long> f13033b = new ConcurrentHashMap<>();
 
     /* renamed from: c, reason: collision with root package name */
-    ConcurrentHashMap<String, Long> f12248c = new ConcurrentHashMap<>();
+    ConcurrentHashMap<String, Long> f13034c = new ConcurrentHashMap<>();
 
     /* renamed from: d, reason: collision with root package name */
-    Map<String, a> f12249d = new ConcurrentHashMap(5);
+    Map<String, a> f13035d = new ConcurrentHashMap(5);
 
     /* renamed from: e, reason: collision with root package name */
-    Map<String, au> f12250e;
+    Map<String, au> f13036e;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        String f12253a;
+        String f13039a;
 
         /* renamed from: b, reason: collision with root package name */
-        String f12254b;
+        String f13040b;
 
         /* renamed from: c, reason: collision with root package name */
-        long f12255c;
+        long f13041c;
     }
 
     private c() {
     }
 
     public static c a() {
-        if (f12246f == null) {
+        if (f13032f == null) {
             synchronized (c.class) {
                 try {
-                    if (f12246f == null) {
-                        f12246f = new c();
+                    if (f13032f == null) {
+                        f13032f = new c();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f12246f;
+        return f13032f;
     }
 
     public final boolean b(bv bvVar) {
@@ -69,23 +69,23 @@ public class c {
         if (bvVar.N() == 0) {
             return false;
         }
-        return bvVar.N() + (this.f12248c.get(bvVar.z()) != null ? this.f12248c.get(bvVar.z()).longValue() : 0L) >= System.currentTimeMillis();
+        return bvVar.N() + (this.f13034c.get(bvVar.z()) != null ? this.f13034c.get(bvVar.z()).longValue() : 0L) >= System.currentTimeMillis();
     }
 
     private void b(String str, long j6) {
-        this.f12248c.put(str, Long.valueOf(j6));
+        this.f13034c.put(str, Long.valueOf(j6));
     }
 
     public final boolean a(bv bvVar) {
         if (bvVar.M() == 0) {
             return false;
         }
-        return bvVar.M() + (this.f12247b.get(bvVar.z()) != null ? this.f12247b.get(bvVar.z()).longValue() : 0L) >= System.currentTimeMillis();
+        return bvVar.M() + (this.f13033b.get(bvVar.z()) != null ? this.f13033b.get(bvVar.z()).longValue() : 0L) >= System.currentTimeMillis();
     }
 
     public final void b(String str) {
         JSONObject optJSONObject;
-        this.f12250e = new ConcurrentHashMap(3);
+        this.f13036e = new ConcurrentHashMap(3);
         try {
             if (TextUtils.isEmpty(str)) {
                 return;
@@ -96,7 +96,7 @@ public class c {
                 try {
                     String next = keys.next();
                     if (!TextUtils.isEmpty(next) && (optJSONObject = jSONObject.optJSONObject(next)) != null) {
-                        this.f12250e.put(next, new au(optJSONObject));
+                        this.f13036e.put(next, new au(optJSONObject));
                     }
                 } catch (Throwable unused) {
                 }
@@ -106,11 +106,11 @@ public class c {
     }
 
     public final void a(String str, long j6) {
-        this.f12247b.put(str, Long.valueOf(j6));
+        this.f13033b.put(str, Long.valueOf(j6));
     }
 
     public final long a(String str) {
-        Long l9 = this.f12248c.get(str);
+        Long l9 = this.f13034c.get(str);
         if (l9 != null) {
             return l9.longValue();
         }
@@ -119,27 +119,27 @@ public class c {
 
     public final void a(String str, long j6, AdError adError) {
         if (TextUtils.equals(adError.getCode(), ErrorCode.noADError)) {
-            a aVar = this.f12249d.get(str);
+            a aVar = this.f13035d.get(str);
             if (aVar == null) {
                 aVar = new a();
             }
-            aVar.f12253a = adError.getPlatformCode();
-            aVar.f12254b = adError.getPlatformMSG();
-            aVar.f12255c = j6;
-            this.f12249d.put(str, aVar);
+            aVar.f13039a = adError.getPlatformCode();
+            aVar.f13040b = adError.getPlatformMSG();
+            aVar.f13041c = j6;
+            this.f13035d.put(str, aVar);
         }
     }
 
     public final boolean a(int i, com.anythink.core.d.l lVar, bv bvVar) {
-        int i6;
-        if (this.f12250e == null) {
+        int i4;
+        if (this.f13036e == null) {
             return false;
         }
-        List<Integer> z3 = lVar.z();
-        if (z3.isEmpty()) {
+        List<Integer> z6 = lVar.z();
+        if (z6.isEmpty()) {
             return false;
         }
-        a aVar = this.f12249d.get(bvVar.z());
+        a aVar = this.f13035d.get(bvVar.z());
         if (aVar == null) {
             return false;
         }
@@ -150,20 +150,20 @@ public class c {
             case 5:
             case 6:
             case 7:
-                i6 = 3;
+                i4 = 3;
                 break;
             case 2:
             default:
-                i6 = 1;
+                i4 = 1;
                 break;
             case 8:
-                i6 = 2;
+                i4 = 2;
                 break;
         }
-        if (!z3.contains(Integer.valueOf(i6))) {
+        if (!z6.contains(Integer.valueOf(i4))) {
             return false;
         }
-        au auVar = this.f12250e.get(String.valueOf(bvVar.g()));
+        au auVar = this.f13036e.get(String.valueOf(bvVar.g()));
         if (auVar == null) {
             return false;
         }
@@ -188,30 +188,30 @@ public class c {
                             long b9 = aVar2.b();
                             Map<String, Long> c9 = aVar2.c();
                             if (a9.equals("-88888")) {
-                                if (!TextUtils.isEmpty(aVar.f12254b) && c9 != null && !c9.isEmpty()) {
+                                if (!TextUtils.isEmpty(aVar.f13040b) && c9 != null && !c9.isEmpty()) {
                                     for (Map.Entry<String, Long> entry : c9.entrySet()) {
                                         String key = entry.getKey();
                                         Long value = entry.getValue();
-                                        if (value.longValue() > 0 && !TextUtils.isEmpty(key) && aVar.f12254b.contains(key) && aVar.f12255c + value.longValue() > System.currentTimeMillis()) {
+                                        if (value.longValue() > 0 && !TextUtils.isEmpty(key) && aVar.f13040b.contains(key) && aVar.f13041c + value.longValue() > System.currentTimeMillis()) {
                                             return true;
                                         }
                                     }
                                 }
-                            } else if (TextUtils.isEmpty(aVar.f12253a)) {
+                            } else if (TextUtils.isEmpty(aVar.f13039a)) {
                                 continue;
-                            } else if (TextUtils.isEmpty(aVar.f12254b)) {
-                                if (a9.equals(aVar.f12253a) && ((c9 == null || c9.isEmpty()) && b9 > 0 && aVar.f12255c + b9 > System.currentTimeMillis())) {
+                            } else if (TextUtils.isEmpty(aVar.f13040b)) {
+                                if (a9.equals(aVar.f13039a) && ((c9 == null || c9.isEmpty()) && b9 > 0 && aVar.f13041c + b9 > System.currentTimeMillis())) {
                                     return true;
                                 }
                             } else if (c9 != null && !c9.isEmpty()) {
                                 for (Map.Entry<String, Long> entry2 : c9.entrySet()) {
                                     String key2 = entry2.getKey();
                                     Long value2 = entry2.getValue();
-                                    if (value2.longValue() > 0 && !TextUtils.isEmpty(key2) && aVar.f12254b.contains(key2) && aVar.f12255c + value2.longValue() > System.currentTimeMillis()) {
+                                    if (value2.longValue() > 0 && !TextUtils.isEmpty(key2) && aVar.f13040b.contains(key2) && aVar.f13041c + value2.longValue() > System.currentTimeMillis()) {
                                         return true;
                                     }
                                 }
-                            } else if (b9 > 0 && aVar.f12255c + b9 > System.currentTimeMillis()) {
+                            } else if (b9 > 0 && aVar.f13041c + b9 > System.currentTimeMillis()) {
                                 return true;
                             }
                         }

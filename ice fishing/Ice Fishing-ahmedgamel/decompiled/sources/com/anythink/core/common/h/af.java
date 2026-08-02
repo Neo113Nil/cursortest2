@@ -8,14 +8,14 @@ import java.util.List;
 public final class af {
 
     /* renamed from: a, reason: collision with root package name */
-    HashMap<String, List<ad>> f13445a = new HashMap<>(2);
+    HashMap<String, List<ad>> f14231a = new HashMap<>(2);
 
     public final synchronized void a(String str, ad adVar) {
         try {
-            List<ad> list = this.f13445a.get(str);
+            List<ad> list = this.f14231a.get(str);
             if (list == null) {
                 list = new ArrayList<>();
-                this.f13445a.put(str, list);
+                this.f14231a.put(str, list);
             }
             list.add(adVar);
         } catch (Throwable th) {
@@ -25,7 +25,7 @@ public final class af {
 
     public final synchronized ad a(String str) {
         try {
-            HashMap<String, List<ad>> hashMap = this.f13445a;
+            HashMap<String, List<ad>> hashMap = this.f14231a;
             ad adVar = null;
             if (hashMap == null) {
                 return null;
@@ -33,8 +33,8 @@ public final class af {
             List<ad> list = hashMap.get(str);
             if (list != null && list.size() != 0) {
                 for (ad adVar2 : list) {
-                    double d2 = adVar2.price;
-                    if (adVar != null && d2 <= adVar.price) {
+                    double d9 = adVar2.price;
+                    if (adVar != null && d9 <= adVar.price) {
                     }
                     adVar = adVar2;
                 }

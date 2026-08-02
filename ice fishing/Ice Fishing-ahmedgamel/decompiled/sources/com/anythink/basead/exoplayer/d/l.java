@@ -15,23 +15,23 @@ import java.util.UUID;
 public final class l implements j<k> {
 
     /* renamed from: g, reason: collision with root package name */
-    private static final String f6874g = "cenc";
+    private static final String f7660g = "cenc";
 
     /* renamed from: h, reason: collision with root package name */
-    private final UUID f6875h;
+    private final UUID f7661h;
     private final MediaDrm i;
 
     private l(UUID uuid) {
         com.anythink.basead.exoplayer.k.a.a(uuid);
         UUID uuid2 = com.anythink.basead.exoplayer.b.bi;
         com.anythink.basead.exoplayer.k.a.a(!uuid2.equals(uuid), "Use C.CLEARKEY_UUID instead");
-        if (af.f8346a < 27 && com.anythink.basead.exoplayer.b.bj.equals(uuid)) {
+        if (af.f9132a < 27 && com.anythink.basead.exoplayer.b.bj.equals(uuid)) {
             uuid = uuid2;
         }
-        this.f6875h = uuid;
+        this.f7661h = uuid;
         MediaDrm mediaDrm = new MediaDrm(uuid);
         this.i = mediaDrm;
-        if (com.anythink.basead.exoplayer.b.bk.equals(uuid) && "ASUS_Z00AD".equals(af.f8349d)) {
+        if (com.anythink.basead.exoplayer.b.bk.equals(uuid) && "ASUS_Z00AD".equals(af.f9135d)) {
             mediaDrm.setPropertyString("securityLevel", "L3");
         }
     }
@@ -45,11 +45,11 @@ public final class l implements j<k> {
     }
 
     private static boolean d() {
-        return "ASUS_Z00AD".equals(af.f8349d);
+        return "ASUS_Z00AD".equals(af.f9135d);
     }
 
     private k e(byte[] bArr) {
-        return new k(new MediaCrypto(this.f6875h, bArr), af.f8346a < 21 && com.anythink.basead.exoplayer.b.bk.equals(this.f6875h) && "L3".equals(a("securityLevel")));
+        return new k(new MediaCrypto(this.f7661h, bArr), af.f9132a < 21 && com.anythink.basead.exoplayer.b.bk.equals(this.f7661h) && "L3".equals(a("securityLevel")));
     }
 
     @Override // com.anythink.basead.exoplayer.d.j
@@ -70,14 +70,14 @@ public final class l implements j<k> {
 
     @Override // com.anythink.basead.exoplayer.d.j
     public final /* synthetic */ k d(byte[] bArr) {
-        return new k(new MediaCrypto(this.f6875h, bArr), af.f8346a < 21 && com.anythink.basead.exoplayer.b.bk.equals(this.f6875h) && "L3".equals(a("securityLevel")));
+        return new k(new MediaCrypto(this.f7661h, bArr), af.f9132a < 21 && com.anythink.basead.exoplayer.b.bk.equals(this.f7661h) && "L3".equals(a("securityLevel")));
     }
 
     @Override // com.anythink.basead.exoplayer.d.j
     public final void a(final j.f<? super k> fVar) {
         this.i.setOnEventListener(new MediaDrm.OnEventListener() { // from class: com.anythink.basead.exoplayer.d.l.1
             @Override // android.media.MediaDrm.OnEventListener
-            public final void onEvent(MediaDrm mediaDrm, byte[] bArr, int i, int i6, byte[] bArr2) {
+            public final void onEvent(MediaDrm mediaDrm, byte[] bArr, int i, int i4, byte[] bArr2) {
                 fVar.a(bArr, i);
             }
         });
@@ -90,10 +90,10 @@ public final class l implements j<k> {
 
     @Override // com.anythink.basead.exoplayer.d.j
     public final void a(final j.g<? super k> gVar) {
-        if (af.f8346a >= 23) {
+        if (af.f9132a >= 23) {
             this.i.setOnKeyStatusChangeListener(gVar == null ? null : new MediaDrm.OnKeyStatusChangeListener() { // from class: com.anythink.basead.exoplayer.d.l.2
                 @Override // android.media.MediaDrm.OnKeyStatusChangeListener
-                public final void onKeyStatusChange(MediaDrm mediaDrm, byte[] bArr, List<MediaDrm.KeyStatus> list, boolean z3) {
+                public final void onKeyStatusChange(MediaDrm mediaDrm, byte[] bArr, List<MediaDrm.KeyStatus> list, boolean z6) {
                     ArrayList arrayList = new ArrayList();
                     for (MediaDrm.KeyStatus keyStatus : list) {
                         arrayList.add(new j.b(keyStatus.getStatusCode(), keyStatus.getKeyId()));
@@ -138,52 +138,52 @@ public final class l implements j<k> {
     public final j.d a(byte[] bArr, byte[] bArr2, String str, int i, HashMap<String, String> hashMap) {
         byte[] bArr3;
         byte[] data;
-        int i6 = af.f8346a;
-        if (i6 >= 21 || !com.anythink.basead.exoplayer.b.bk.equals(this.f6875h)) {
-            if (com.anythink.basead.exoplayer.b.bl.equals(this.f6875h) && "Amazon".equals(af.f8348c)) {
-                String str2 = af.f8349d;
+        int i4 = af.f9132a;
+        if (i4 >= 21 || !com.anythink.basead.exoplayer.b.bk.equals(this.f7661h)) {
+            if (com.anythink.basead.exoplayer.b.bl.equals(this.f7661h) && "Amazon".equals(af.f9134c)) {
+                String str2 = af.f9135d;
                 if (!"AFTB".equals(str2)) {
                     if (!"AFTS".equals(str2)) {
                     }
                 }
             }
             bArr3 = bArr2;
-            if (i6 < 26 && com.anythink.basead.exoplayer.b.bj.equals(this.f6875h) && (com.anythink.basead.exoplayer.k.o.f8448e.equals(str) || com.anythink.basead.exoplayer.k.o.f8459q.equals(str))) {
+            if (i4 < 26 && com.anythink.basead.exoplayer.b.bj.equals(this.f7661h) && (com.anythink.basead.exoplayer.k.o.f9234e.equals(str) || com.anythink.basead.exoplayer.k.o.f9245q.equals(str))) {
                 str = "cenc";
             }
             MediaDrm.KeyRequest keyRequest = this.i.getKeyRequest(bArr, bArr3, str, i, hashMap);
             data = keyRequest.getData();
-            if (com.anythink.basead.exoplayer.b.bj.equals(this.f6875h) && i6 < 27) {
+            if (com.anythink.basead.exoplayer.b.bj.equals(this.f7661h) && i4 < 27) {
                 data = af.c(af.a(data).replace('+', '-').replace('/', '_'));
             }
             return new j.a(data, keyRequest.getDefaultUrl());
         }
-        byte[] a9 = com.anythink.basead.exoplayer.e.a.h.a(bArr2, this.f6875h);
+        byte[] a9 = com.anythink.basead.exoplayer.e.a.h.a(bArr2, this.f7661h);
         if (a9 != null) {
             bArr3 = a9;
-            if (i6 < 26) {
+            if (i4 < 26) {
                 str = "cenc";
             }
             MediaDrm.KeyRequest keyRequest2 = this.i.getKeyRequest(bArr, bArr3, str, i, hashMap);
             data = keyRequest2.getData();
-            if (com.anythink.basead.exoplayer.b.bj.equals(this.f6875h)) {
+            if (com.anythink.basead.exoplayer.b.bj.equals(this.f7661h)) {
                 data = af.c(af.a(data).replace('+', '-').replace('/', '_'));
             }
             return new j.a(data, keyRequest2.getDefaultUrl());
         }
         bArr3 = bArr2;
-        if (i6 < 26) {
+        if (i4 < 26) {
         }
         MediaDrm.KeyRequest keyRequest22 = this.i.getKeyRequest(bArr, bArr3, str, i, hashMap);
         data = keyRequest22.getData();
-        if (com.anythink.basead.exoplayer.b.bj.equals(this.f6875h)) {
+        if (com.anythink.basead.exoplayer.b.bj.equals(this.f7661h)) {
         }
         return new j.a(data, keyRequest22.getDefaultUrl());
     }
 
     @Override // com.anythink.basead.exoplayer.d.j
     public final byte[] a(byte[] bArr, byte[] bArr2) {
-        if (com.anythink.basead.exoplayer.b.bj.equals(this.f6875h)) {
+        if (com.anythink.basead.exoplayer.b.bj.equals(this.f7661h)) {
             bArr2 = a.a(bArr2);
         }
         return this.i.provideKeyResponse(bArr, bArr2);

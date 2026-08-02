@@ -8,37 +8,37 @@ import java.nio.channels.FileChannel;
 public final class a extends InputStream {
 
     /* renamed from: v, reason: collision with root package name */
-    public static final /* synthetic */ int f646v = 0;
+    public static final /* synthetic */ int f626v = 0;
 
     /* renamed from: n, reason: collision with root package name */
-    public final RandomAccessFile f647n;
+    public final RandomAccessFile f627n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final FileChannel f648u;
+    public final FileChannel f628u;
 
     public a(RandomAccessFile randomAccessFile, FileChannel fileChannel) {
-        this.f647n = randomAccessFile;
-        this.f648u = fileChannel;
+        this.f627n = randomAccessFile;
+        this.f628u = fileChannel;
     }
 
     @Override // java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
-        this.f648u.close();
-        this.f647n.close();
+        this.f628u.close();
+        this.f627n.close();
     }
 
     @Override // java.io.InputStream
     public final int read() {
-        return this.f647n.read();
+        return this.f627n.read();
     }
 
     @Override // java.io.InputStream
     public final int read(byte[] bArr) {
-        return this.f647n.read(bArr);
+        return this.f627n.read(bArr);
     }
 
     @Override // java.io.InputStream
-    public final int read(byte[] bArr, int i, int i6) {
-        return this.f647n.read(bArr, i, i6);
+    public final int read(byte[] bArr, int i, int i4) {
+        return this.f627n.read(bArr, i, i4);
     }
 }

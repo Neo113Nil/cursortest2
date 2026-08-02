@@ -3,8 +3,8 @@ package com.onesignal.core.internal.config;
 import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import v7.C5135p;
-import w7.C5156c;
+import v7.C5125p;
+import w7.C5155c;
 
 /* loaded from: classes2.dex */
 public final class b extends com.onesignal.common.modeling.i {
@@ -36,10 +36,10 @@ public final class b extends com.onesignal.common.modeling.i {
     }
 
     /* renamed from: com.onesignal.core.internal.config.b$a, reason: case insensitive filesystem */
-    public static final class C4407a extends kotlin.jvm.internal.i implements I7.a {
-        public static final C4407a INSTANCE = new C4407a();
+    public static final class C4422a extends kotlin.jvm.internal.i implements I7.a {
+        public static final C4422a INSTANCE = new C4422a();
 
-        public C4407a() {
+        public C4422a() {
             super(0);
         }
 
@@ -263,7 +263,7 @@ public final class b extends com.onesignal.common.modeling.i {
 
         @Override // I7.a
         public final Long invoke() {
-            return Long.valueOf(com.anythink.basead.exoplayer.f.f7187a);
+            return Long.valueOf(com.anythink.basead.exoplayer.f.f7973a);
         }
     }
 
@@ -276,7 +276,7 @@ public final class b extends com.onesignal.common.modeling.i {
 
         @Override // I7.a
         public final Long invoke() {
-            return Long.valueOf(com.anythink.basead.exoplayer.f.f7187a);
+            return Long.valueOf(com.anythink.basead.exoplayer.f.f7973a);
         }
     }
 
@@ -352,7 +352,7 @@ public final class b extends com.onesignal.common.modeling.i {
 
         @Override // I7.a
         public final List<String> invoke() {
-            return C5135p.f41442n;
+            return C5125p.f41221n;
         }
     }
 
@@ -380,16 +380,16 @@ public final class b extends com.onesignal.common.modeling.i {
         if (!property.equals("sdkRemoteFeatureFlags")) {
             return null;
         }
-        C5156c c5156c = new C5156c(10);
+        C5155c c5155c = new C5155c(10);
         int length = jsonArray.length();
-        for (int i6 = 0; i6 < length; i6++) {
-            String optString = jsonArray.optString(i6, "");
+        for (int i4 = 0; i4 < length; i4++) {
+            String optString = jsonArray.optString(i4, "");
             kotlin.jvm.internal.h.b(optString);
-            if (!Q7.j.c0(optString)) {
-                c5156c.add(optString);
+            if (!Q7.j.s0(optString)) {
+                c5155c.add(optString);
             }
         }
-        return d6.c.b(c5156c);
+        return Z2.d.g(c5155c);
     }
 
     @Override // com.onesignal.common.modeling.i
@@ -415,11 +415,11 @@ public final class b extends com.onesignal.common.modeling.i {
     }
 
     public final String getApiUrl() {
-        return getStringProperty("apiUrl", C4407a.INSTANCE);
+        return getStringProperty("apiUrl", C4422a.INSTANCE);
     }
 
     public final String getAppId() {
-        return com.onesignal.common.modeling.i.getStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f22407u, null, 2, null);
+        return com.onesignal.common.modeling.i.getStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f23194u, null, 2, null);
     }
 
     public final long getBackgroundFetchNotificationPermissionInterval() {
@@ -571,15 +571,15 @@ public final class b extends com.onesignal.common.modeling.i {
 
     public final void setAppId(String value) {
         kotlin.jvm.internal.h.e(value, "value");
-        com.onesignal.common.modeling.i.setStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f22407u, value, null, false, 12, null);
+        com.onesignal.common.modeling.i.setStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f23194u, value, null, false, 12, null);
     }
 
     public final void setBackgroundFetchNotificationPermissionInterval(long j6) {
         com.onesignal.common.modeling.i.setLongProperty$default(this, "backgroundFetchNotificationPermissionInterval", j6, null, false, 12, null);
     }
 
-    public final void setClearGroupOnSummaryClick(boolean z3) {
-        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "clearGroupOnSummaryClick", z3, null, false, 12, null);
+    public final void setClearGroupOnSummaryClick(boolean z6) {
+        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "clearGroupOnSummaryClick", z6, null, false, 12, null);
     }
 
     public final void setConsentGiven(Boolean bool) {
@@ -590,20 +590,20 @@ public final class b extends com.onesignal.common.modeling.i {
         com.onesignal.common.modeling.i.setOptBooleanProperty$default(this, "consentRequired", bool, null, false, 12, null);
     }
 
-    public final void setDisableGMSMissingPrompt(boolean z3) {
-        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "disableGMSMissingPrompt", z3, null, false, 12, null);
+    public final void setDisableGMSMissingPrompt(boolean z6) {
+        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "disableGMSMissingPrompt", z6, null, false, 12, null);
     }
 
-    public final void setEnterprise(boolean z3) {
-        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "enterprise", z3, null, false, 12, null);
+    public final void setEnterprise(boolean z6) {
+        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "enterprise", z6, null, false, 12, null);
     }
 
     public final void setFetchIAMMinInterval(long j6) {
         com.onesignal.common.modeling.i.setLongProperty$default(this, "fetchIAMMinInterval", j6, null, false, 12, null);
     }
 
-    public final void setFirebaseAnalytics(boolean z3) {
-        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "firebaseAnalytics", z3, null, false, 12, null);
+    public final void setFirebaseAnalytics(boolean z6) {
+        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "firebaseAnalytics", z6, null, false, 12, null);
     }
 
     public final void setForegroundFetchNotificationPermissionInterval(long j6) {
@@ -614,24 +614,24 @@ public final class b extends com.onesignal.common.modeling.i {
         com.onesignal.common.modeling.i.setOptStringProperty$default(this, "googleProjectNumber", str, null, false, 12, null);
     }
 
-    public final void setHttpGetTimeout(int i6) {
-        com.onesignal.common.modeling.i.setIntProperty$default(this, "httpGetTimeout", i6, null, false, 12, null);
+    public final void setHttpGetTimeout(int i4) {
+        com.onesignal.common.modeling.i.setIntProperty$default(this, "httpGetTimeout", i4, null, false, 12, null);
     }
 
-    public final void setHttpRetryAfterParseFailFallback(int i6) {
-        com.onesignal.common.modeling.i.setIntProperty$default(this, "httpRetryAfterParseFailFallback", i6, null, false, 12, null);
+    public final void setHttpRetryAfterParseFailFallback(int i4) {
+        com.onesignal.common.modeling.i.setIntProperty$default(this, "httpRetryAfterParseFailFallback", i4, null, false, 12, null);
     }
 
-    public final void setHttpTimeout(int i6) {
-        com.onesignal.common.modeling.i.setIntProperty$default(this, "httpTimeout", i6, null, false, 12, null);
+    public final void setHttpTimeout(int i4) {
+        com.onesignal.common.modeling.i.setIntProperty$default(this, "httpTimeout", i4, null, false, 12, null);
     }
 
-    public final void setInitializedWithRemote(boolean z3) {
-        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "isInitializedWithRemote", z3, null, false, 12, null);
+    public final void setInitializedWithRemote(boolean z6) {
+        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "isInitializedWithRemote", z6, null, false, 12, null);
     }
 
-    public final void setLocationShared(boolean z3) {
-        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "locationShared", z3, null, false, 12, null);
+    public final void setLocationShared(boolean z6) {
+        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "locationShared", z6, null, false, 12, null);
     }
 
     public final void setNotificationChannels(JSONArray jSONArray) {
@@ -662,12 +662,12 @@ public final class b extends com.onesignal.common.modeling.i {
         com.onesignal.common.modeling.i.setOptStringProperty$default(this, "pushSubscriptionId", str, null, false, 12, null);
     }
 
-    public final void setReceiveReceiptEnabled(boolean z3) {
-        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "receiveReceiptEnabled", z3, null, false, 12, null);
+    public final void setReceiveReceiptEnabled(boolean z6) {
+        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "receiveReceiptEnabled", z6, null, false, 12, null);
     }
 
-    public final void setRestoreTTLFilter(boolean z3) {
-        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "restoreTTLFilter", z3, null, false, 12, null);
+    public final void setRestoreTTLFilter(boolean z6) {
+        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "restoreTTLFilter", z6, null, false, 12, null);
     }
 
     public final void setSdkRemoteFeatureFlagMetadata(String str) {
@@ -683,20 +683,20 @@ public final class b extends com.onesignal.common.modeling.i {
         com.onesignal.common.modeling.i.setLongProperty$default(this, "sessionFocusTimeout", j6, null, false, 12, null);
     }
 
-    public final void setUnsubscribeWhenNotificationsDisabled(boolean z3) {
-        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "unsubscribeWhenNotificationsDisabled", z3, null, false, 12, null);
+    public final void setUnsubscribeWhenNotificationsDisabled(boolean z6) {
+        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "unsubscribeWhenNotificationsDisabled", z6, null, false, 12, null);
     }
 
     public final void setUseIdentityVerification$com_onesignal_core(com.onesignal.user.internal.jwt.b value) {
         Boolean bool;
         kotlin.jvm.internal.h.e(value, "value");
-        int i6 = a.$EnumSwitchMapping$0[value.ordinal()];
-        if (i6 == 1) {
+        int i4 = a.$EnumSwitchMapping$0[value.ordinal()];
+        if (i4 == 1) {
             bool = null;
-        } else if (i6 == 2) {
+        } else if (i4 == 2) {
             bool = Boolean.FALSE;
         } else {
-            if (i6 != 3) {
+            if (i4 != 3) {
                 throw new B0.c();
             }
             bool = Boolean.TRUE;
@@ -704,7 +704,7 @@ public final class b extends com.onesignal.common.modeling.i {
         com.onesignal.common.modeling.i.setOptBooleanProperty$default(this, "useIdentityVerification", bool, null, false, 12, null);
     }
 
-    public final void setUserRejectedGMSUpdate(boolean z3) {
-        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "userRejectedGMSUpdate", z3, null, false, 12, null);
+    public final void setUserRejectedGMSUpdate(boolean z6) {
+        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "userRejectedGMSUpdate", z6, null, false, 12, null);
     }
 }

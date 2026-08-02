@@ -9,10 +9,10 @@ import android.webkit.WebView;
 public final class aa {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19590a = "ViewUtils";
+    private static final String f20377a = "ViewUtils";
 
     /* renamed from: b, reason: collision with root package name */
-    private static boolean f19591b = false;
+    private static boolean f20378b = false;
 
     public static boolean a(View view, int i) {
         if (view.getVisibility() != 0) {
@@ -38,7 +38,7 @@ public final class aa {
                         ViewGroup viewGroup2 = (ViewGroup) childAt;
                         if (viewGroup2.getChildCount() > 0) {
                             boolean b9 = b(view, viewGroup2);
-                            f19591b = false;
+                            f20378b = false;
                             if (b9) {
                                 return true;
                             }
@@ -59,12 +59,12 @@ public final class aa {
             View childAt = viewGroup.getChildAt(i);
             if (childAt.getVisibility() == 0 && a(view, childAt)) {
                 if ((childAt instanceof WebView) && childAt.getVisibility() == 0) {
-                    f19591b = true;
+                    f20378b = true;
                 }
                 if (a(childAt)) {
-                    f19591b = true;
+                    f20378b = true;
                 }
-                if (f19591b) {
+                if (f20378b) {
                     break;
                 }
                 if (childAt instanceof ViewGroup) {
@@ -72,7 +72,7 @@ public final class aa {
                 }
             }
         }
-        return f19591b;
+        return f20378b;
     }
 
     private static boolean a(View view) {

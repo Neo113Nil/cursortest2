@@ -10,32 +10,32 @@ import java.util.Arrays;
 /* loaded from: assets/audience_network/classes2.dex */
 public final class NA extends BroadcastReceiver {
     public static byte[] A04;
-    public InterfaceC2036k8 A00;
+    public InterfaceC2056k8 A00;
     public N9 A01;
-    public C1840gi A02;
+    public C1860gi A02;
     public String A03;
 
     static {
         A01();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 17);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 17);
         }
         return new String(copyOfRange);
     }
 
     public static void A01() {
-        A04 = new byte[]{120, 66, 78, 76, 15, 71, c.f16317b, 66, 68, 67, 78, 78, 74, 15, c.f16317b, 69, 82, 15, 67, c.f16317b, 79, 79, 68, 83, 15, 66, 77, 72, 66, 74, 68, 69};
+        A04 = new byte[]{120, 66, 78, 76, 15, 71, c.f17104b, 66, 68, 67, 78, 78, 74, 15, c.f17104b, 69, 82, 15, 67, c.f17104b, 79, 79, 68, 83, 15, 66, 77, 72, 66, 74, 68, 69};
     }
 
-    public NA(C1840gi c1840gi, String str, InterfaceC2036k8 interfaceC2036k8, N9 n9) {
-        this.A02 = c1840gi;
+    public NA(C1860gi c1860gi, String str, InterfaceC2056k8 interfaceC2056k8, N9 n9) {
+        this.A02 = c1860gi;
         this.A03 = str;
         this.A01 = n9;
-        this.A00 = interfaceC2036k8;
+        this.A00 = interfaceC2056k8;
     }
 
     public final void A02() {

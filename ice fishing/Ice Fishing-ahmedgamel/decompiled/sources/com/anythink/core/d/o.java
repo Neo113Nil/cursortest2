@@ -1,6 +1,6 @@
 package com.anythink.core.d;
 
-import D.y;
+import D.x;
 import android.content.Context;
 import android.text.TextUtils;
 import android.util.Log;
@@ -14,13 +14,13 @@ import org.json.JSONObject;
 public class o {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f17466a = "o";
+    private static final String f18253a = "o";
 
     /* renamed from: b, reason: collision with root package name */
-    private n f17467b;
+    private n f18254b;
 
     public o(n nVar) {
-        this.f17467b = nVar;
+        this.f18254b = nVar;
     }
 
     public o() {
@@ -47,26 +47,26 @@ public class o {
                     try {
                         jSONObject.put(l.a.ac, System.currentTimeMillis());
                         int optInt = jSONObject.optInt(l.a.av, 0);
-                        if (o.this.f17467b != null && (a9 = o.this.f17467b.a(bmVar.d(), optInt)) != null) {
+                        if (o.this.f18254b != null && (a9 = o.this.f18254b.a(bmVar.d(), optInt)) != null) {
                             a9.a(jSONObject, bmVar.d());
                         }
                     } catch (Throwable th) {
-                        Log.e(o.f17466a, "parse place strategy error:" + th.getMessage());
+                        Log.e(o.f18253a, "parse place strategy error:" + th.getMessage());
                     }
                     l a10 = l.a(bmVar.d(), jSONObject);
-                    if (o.this.f17467b == null || a10 == null) {
+                    if (o.this.f18254b == null || a10 == null) {
                         return;
                     }
-                    String unused = o.f17466a;
+                    String unused = o.f18253a;
                     bmVar.d();
                     bmVar.h();
                     a10.aZ();
-                    n nVar = o.this.f17467b;
-                    String d2 = bmVar.d();
+                    n nVar = o.this.f18254b;
+                    String d9 = bmVar.d();
                     if (a10.at() != 1) {
                         jSONObject = null;
                     }
-                    nVar.a(d2, a10, jSONObject, a10.aZ());
+                    nVar.a(d9, a10, jSONObject, a10.aZ());
                 }
             }
 
@@ -87,19 +87,19 @@ public class o {
                 final com.anythink.core.common.m.n nVar = new com.anythink.core.common.m.n(qVar);
                 com.anythink.core.common.i.a();
                 String c9 = com.anythink.core.common.i.c();
-                final String f3 = com.anythink.core.common.v.q.f(c9);
+                final String f2 = com.anythink.core.common.v.q.f(c9);
                 new com.anythink.core.common.m.s(context, bmVar).a(c9).a(0, (com.anythink.core.common.m.q) nVar);
                 com.anythink.core.common.g.c.a().a(new com.anythink.core.common.g.d() { // from class: com.anythink.core.d.o.2
                     @Override // com.anythink.core.common.g.d
                     public final void a(String str) {
-                        String unused = o.f17466a;
-                        if (TextUtils.isEmpty(str) || str.equals(f3)) {
-                            String p9 = y.p("The cdnDomain(", str, ") is not equal to curPlDomain(", f3, ").");
-                            nVar.onLoadError(0, p9, ErrorCode.getErrorCode(ErrorCode.exception, "", p9));
+                        String unused = o.f18253a;
+                        if (TextUtils.isEmpty(str) || str.equals(f2)) {
+                            String m9 = x.m("The cdnDomain(", str, ") is not equal to curPlDomain(", f2, ").");
+                            nVar.onLoadError(0, m9, ErrorCode.getErrorCode(ErrorCode.exception, "", m9));
                             return;
                         }
                         boolean a9 = nVar.a();
-                        String unused2 = o.f17466a;
+                        String unused2 = o.f18253a;
                         bmVar.d();
                         if (a9) {
                             return;
@@ -107,7 +107,7 @@ public class o {
                         com.anythink.core.common.g.c.a();
                         com.anythink.core.common.i.a();
                         String b9 = com.anythink.core.common.g.c.b(com.anythink.core.common.i.c(), str);
-                        String unused3 = o.f17466a;
+                        String unused3 = o.f18253a;
                         new com.anythink.core.common.m.s(context, bmVar).a(b9).s().a(0, (com.anythink.core.common.m.q) nVar);
                     }
                 });

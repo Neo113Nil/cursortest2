@@ -12,7 +12,7 @@ public final class a implements com.anythink.core.common.l.f.a.a {
         if (activity == null || cVar == null || interfaceC0084a == null) {
             return;
         }
-        com.anythink.basead.mixad.a.a().a(cVar.f11920d, interfaceC0084a);
+        com.anythink.basead.mixad.a.a().a(cVar.f12706d, interfaceC0084a);
         ATMixSplashActivity.b(activity, cVar);
     }
 }

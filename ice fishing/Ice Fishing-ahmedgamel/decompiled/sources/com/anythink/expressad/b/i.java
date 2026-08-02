@@ -6,7 +6,7 @@ import android.webkit.URLUtil;
 import com.anythink.expressad.b.l;
 import com.anythink.expressad.foundation.g.h.a;
 import com.anythink.expressad.foundation.h.u;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.net.URI;
 import java.util.concurrent.Semaphore;
 
@@ -14,62 +14,62 @@ import java.util.concurrent.Semaphore;
 public final class i extends com.anythink.expressad.foundation.g.h.a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f18216a = 1;
+    public static final int f19003a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f18217b = 2;
+    public static final int f19004b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f18218c = 3;
+    public static final int f19005c = 3;
 
     /* renamed from: g, reason: collision with root package name */
-    private static final String f18219g = "SocketRequestTask";
+    private static final String f19006g = "SocketRequestTask";
 
     /* renamed from: h, reason: collision with root package name */
-    private static final int f18220h = 10;
+    private static final int f19007h = 10;
 
     /* renamed from: j, reason: collision with root package name */
-    private Context f18221j;
+    private Context f19008j;
 
     /* renamed from: k, reason: collision with root package name */
-    private String f18222k;
+    private String f19009k;
 
     /* renamed from: l, reason: collision with root package name */
-    private String f18223l;
+    private String f19010l;
 
     /* renamed from: m, reason: collision with root package name */
-    private String f18224m;
+    private String f19011m;
 
     /* renamed from: n, reason: collision with root package name */
-    private com.anythink.expressad.foundation.d.d f18225n;
+    private com.anythink.expressad.foundation.d.d f19012n;
 
     /* renamed from: o, reason: collision with root package name */
-    private boolean f18226o;
+    private boolean f19013o;
 
     /* renamed from: p, reason: collision with root package name */
-    private boolean f18227p;
+    private boolean f19014p;
 
     /* renamed from: q, reason: collision with root package name */
-    private int f18228q;
+    private int f19015q;
 
     /* renamed from: r, reason: collision with root package name */
-    private boolean f18229r;
+    private boolean f19016r;
 
     /* renamed from: s, reason: collision with root package name */
-    private com.anythink.expressad.b.a.a f18230s;
+    private com.anythink.expressad.b.a.a f19017s;
 
     /* renamed from: t, reason: collision with root package name */
-    private com.anythink.expressad.b.a.b f18231t;
+    private com.anythink.expressad.b.a.b f19018t;
 
     /* renamed from: u, reason: collision with root package name */
-    private e f18232u;
+    private e f19019u;
 
     /* renamed from: v, reason: collision with root package name */
-    private h f18233v;
+    private h f19020v;
     private final Semaphore i = new Semaphore(0);
 
     /* renamed from: w, reason: collision with root package name */
-    private final l.a f18234w = new l.a() { // from class: com.anythink.expressad.b.i.1
+    private final l.a f19021w = new l.a() { // from class: com.anythink.expressad.b.i.1
         @Override // com.anythink.expressad.b.l.a
         public final boolean a() {
             return false;
@@ -96,9 +96,9 @@ public final class i extends com.anythink.expressad.foundation.g.h.a {
         private void b() {
             synchronized (this) {
                 try {
-                    i.this.f18231t.a(true);
-                    if (i.this.f18233v != null) {
-                        i.this.f18233v.a(i.this.f18231t);
+                    i.this.f19018t.a(true);
+                    if (i.this.f19020v != null) {
+                        i.this.f19020v.a(i.this.f19018t);
                     }
                     i.c(i.this);
                 } catch (Throwable th) {
@@ -110,17 +110,17 @@ public final class i extends com.anythink.expressad.foundation.g.h.a {
         @Override // com.anythink.expressad.b.l.a
         public final void a(String str, String str2) {
             i.a(i.this, str);
-            i.this.f18231t.c(str2);
+            i.this.f19018t.c(str2);
             b();
         }
 
         @Override // com.anythink.expressad.b.l.a
         public final void a(String str, String str2, String str3) {
             if (!TextUtils.isEmpty(str2)) {
-                i.this.f18231t.b(str2);
+                i.this.f19018t.b(str2);
             }
             if (!TextUtils.isEmpty(str3)) {
-                i.this.f18231t.c(str3);
+                i.this.f19018t.c(str3);
             }
             i.a(i.this, str);
             b();
@@ -128,15 +128,15 @@ public final class i extends com.anythink.expressad.foundation.g.h.a {
     };
 
     public i(com.anythink.expressad.b.a.c cVar) {
-        this.f18221j = cVar.a();
-        this.f18222k = cVar.b();
-        this.f18223l = cVar.c();
-        this.f18224m = cVar.d();
-        this.f18225n = cVar.e();
-        this.f18226o = cVar.f();
-        this.f18227p = cVar.g();
-        this.f18228q = cVar.i();
-        this.f18229r = cVar.h();
+        this.f19008j = cVar.a();
+        this.f19009k = cVar.b();
+        this.f19010l = cVar.c();
+        this.f19011m = cVar.d();
+        this.f19012n = cVar.e();
+        this.f19013o = cVar.f();
+        this.f19014p = cVar.g();
+        this.f19015q = cVar.i();
+        this.f19016r = cVar.h();
     }
 
     private void d() {
@@ -156,56 +156,56 @@ public final class i extends com.anythink.expressad.foundation.g.h.a {
     }
 
     private String c(String str) {
-        if (!this.f18229r) {
+        if (!this.f19016r) {
             return str;
         }
         String c9 = com.anythink.expressad.f.a.c(str);
-        return !TextUtils.isEmpty(c9) ? AbstractC4404f.f(str, c9) : str;
+        return !TextUtils.isEmpty(c9) ? Wv.g(str, c9) : str;
     }
 
     public final void a(e eVar) {
-        this.f18232u = eVar;
+        this.f19019u = eVar;
     }
 
     private boolean b(String str) {
-        return j.a(str, this.f18231t);
+        return j.a(str, this.f19018t);
     }
 
     public final void a(h hVar) {
-        this.f18233v = hVar;
+        this.f19020v = hVar;
     }
 
     @Override // com.anythink.expressad.foundation.g.h.a
     public final void a() {
         com.anythink.expressad.b.a.b bVar = new com.anythink.expressad.b.a.b();
-        this.f18231t = bVar;
-        bVar.e(this.f18222k);
-        com.anythink.expressad.b.a.b a9 = a(this.f18222k);
-        this.f18231t = a9;
+        this.f19018t = bVar;
+        bVar.e(this.f19009k);
+        com.anythink.expressad.b.a.b a9 = a(this.f19009k);
+        this.f19018t = a9;
         if (a9 != null && !TextUtils.isEmpty(a9.e())) {
-            this.f18231t.a(true);
+            this.f19018t.a(true);
         }
-        if (this.f19559e != a.b.RUNNING) {
-            h hVar = this.f18233v;
+        if (this.f20346e != a.b.RUNNING) {
+            h hVar = this.f19020v;
             if (hVar != null) {
-                hVar.a(this.f18231t);
+                hVar.a(this.f19018t);
                 return;
             }
             return;
         }
-        if (!this.f18231t.g()) {
-            h hVar2 = this.f18233v;
+        if (!this.f19018t.g()) {
+            h hVar2 = this.f19020v;
             if (hVar2 != null) {
-                hVar2.a(this.f18231t);
+                hVar2.a(this.f19018t);
                 return;
             }
             return;
         }
-        com.anythink.expressad.b.a.a aVar = this.f18230s;
+        com.anythink.expressad.b.a.a aVar = this.f19017s;
         if (aVar != null) {
-            this.f18231t.a(aVar.f18122f);
+            this.f19018t.a(aVar.f18909f);
         }
-        j.a(this.f18231t, this.f18230s, this.f18223l, this.f18224m, this.f18221j, this.f18234w, this.f18233v, this.i);
+        j.a(this.f19018t, this.f19017s, this.f19010l, this.f19011m, this.f19008j, this.f19021w, this.f19020v, this.i);
     }
 
     public static /* synthetic */ void c(i iVar) {
@@ -222,7 +222,7 @@ public final class i extends com.anythink.expressad.foundation.g.h.a {
         String str3;
         String str4;
         int i;
-        int i6;
+        int i4;
         String str5;
         String c9 = c(str);
         com.anythink.expressad.b.a.b bVar = new com.anythink.expressad.b.a.b();
@@ -273,54 +273,54 @@ public final class i extends com.anythink.expressad.foundation.g.h.a {
             if (i >= 10) {
                 break;
             }
-            if (this.f19559e != a.b.RUNNING) {
+            if (this.f20346e != a.b.RUNNING) {
                 return null;
             }
             if (str4.startsWith("tcp")) {
-                this.f18230s = kVar.a(str4, this.f18225n, this.f18226o, this.f18227p);
-                i6 = 3;
+                this.f19017s = kVar.a(str4, this.f19012n, this.f19013o, this.f19014p);
+                i4 = 3;
             } else {
-                this.f18230s = fVar.a(str4, this.f18226o, this.f18227p, this.f18225n);
-                i6 = 1;
+                this.f19017s = fVar.a(str4, this.f19013o, this.f19014p, this.f19012n);
+                i4 = 1;
             }
-            com.anythink.expressad.b.a.a aVar = this.f18230s;
+            com.anythink.expressad.b.a.a aVar = this.f19017s;
             if (aVar == null) {
                 bVar.e(str4);
                 bVar.a(false);
                 break;
             }
-            if (!TextUtils.isEmpty(aVar.f18124h)) {
+            if (!TextUtils.isEmpty(aVar.f18911h)) {
                 bVar.e(str4);
-                bVar.b(this.f18230s.f18124h);
-                bVar.b(i6);
-                bVar.a(this.f18230s.a());
+                bVar.b(this.f19017s.f18911h);
+                bVar.b(i4);
+                bVar.a(this.f19017s.a());
                 bVar.a(false);
                 if (i == 0) {
-                    com.anythink.expressad.b.b.a.a().a(str4, this.f18230s.f18124h, this.f18225n, this.f18224m, this.f18226o, this.f18227p, this.f18228q);
+                    com.anythink.expressad.b.b.a.a().a(str4, this.f19017s.f18911h, this.f19012n, this.f19011m, this.f19013o, this.f19014p, this.f19015q);
                 }
             } else {
-                int i9 = this.f18230s.f18122f;
-                if (i9 == 200) {
+                int i6 = this.f19017s.f18909f;
+                if (i6 == 200) {
                     bVar.b(true);
                     bVar.e(str4);
                     bVar.a(true);
-                    String str7 = this.f18230s.f18123g;
+                    String str7 = this.f19017s.f18910g;
                     bVar.c(str7 != null ? str7 : null);
-                } else if (i9 != 301 && i9 != 302 && i9 != 307) {
+                } else if (i6 != 301 && i6 != 302 && i6 != 307) {
                     bVar.b(false);
                     bVar.e(str4);
                     if (i == 0) {
-                        com.anythink.expressad.b.b.a.a().a(str4, this.f18230s.f18124h, this.f18225n, this.f18224m, this.f18226o, this.f18227p, this.f18228q);
+                        com.anythink.expressad.b.b.a.a().a(str4, this.f19017s.f18911h, this.f19012n, this.f19011m, this.f19013o, this.f19014p, this.f19015q);
                     }
                 } else {
                     bVar.a(true);
                     bVar.b();
-                    if (TextUtils.isEmpty(this.f18230s.f18117a)) {
+                    if (TextUtils.isEmpty(this.f19017s.f18904a)) {
                         bVar.b(true);
                         bVar.e(str4);
                         break;
                     }
-                    str5 = this.f18230s.f18117a;
+                    str5 = this.f19017s.f18904a;
                     if (!str5.startsWith("http")) {
                         if (!str5.startsWith("/") || TextUtils.isEmpty(str6) || TextUtils.isEmpty(str3)) {
                             break;
@@ -343,6 +343,6 @@ public final class i extends com.anythink.expressad.foundation.g.h.a {
     }
 
     public static /* synthetic */ boolean a(i iVar, String str) {
-        return j.a(str, iVar.f18231t);
+        return j.a(str, iVar.f19018t);
     }
 }

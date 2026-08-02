@@ -20,22 +20,22 @@ import java.util.concurrent.TimeUnit;
 /* loaded from: classes2.dex */
 public abstract class QC {
     public static int a(int i) {
-        int i6 = 0;
+        int i4 = 0;
         while (i > 0) {
             i >>>= 1;
-            i6++;
+            i4++;
         }
-        return i6;
+        return i4;
     }
 
     public static RB b(List list) {
         int standard;
         byte[] descriptor;
         if (Build.VERSION.SDK_INT < 31 || list == null) {
-            PB pb = RB.f27177u;
-            return C3500lC.f31745x;
+            PB pb = RB.f27933u;
+            return C3523lC.f32525x;
         }
-        TreeSet treeSet = new TreeSet(Comparator.comparing(NO.f26486b).reversed());
+        TreeSet treeSet = new TreeSet(Comparator.comparing(NO.f27270b).reversed());
         Iterator it = list.iterator();
         while (it.hasNext()) {
             AudioDescriptor e9 = GO.e(it.next());
@@ -44,12 +44,12 @@ public abstract class QC {
                 descriptor = e9.getDescriptor();
                 int length = descriptor.length;
                 if (length != 3) {
-                    com.anythink.basead.exoplayer.f.f.q(length, "Invalid SAD length: ", "AudioDescriptorUtil", new StringBuilder(String.valueOf(length).length() + 20));
+                    com.IceFishing.LiveIceFishing.k.t(length, "Invalid SAD length: ", "AudioDescriptorUtil", new StringBuilder(String.valueOf(length).length() + 20));
                 } else {
                     byte b9 = descriptor[0];
                     int i = (b9 & 7) + 1;
                     if (((b9 >> 3) & 15) == 1) {
-                        treeSet.add(Integer.valueOf(AbstractC3159eu.e(i)));
+                        treeSet.add(Integer.valueOf(AbstractC3182eu.e(i)));
                     }
                 }
             }
@@ -58,7 +58,7 @@ public abstract class QC {
     }
 
     public static ND c(Object obj) {
-        return obj == null ? ND.f26473u : new ND(obj);
+        return obj == null ? ND.f27257u : new ND(obj);
     }
 
     public static BigDecimal d(String str) {
@@ -83,70 +83,70 @@ public abstract class QC {
     }
 
     public static void f(long[] jArr, long[] jArr2, int i) {
-        for (int i6 = 0; i6 < 10; i6++) {
-            int i9 = (int) jArr[i6];
-            jArr[i6] = ((-i) & (((int) jArr2[i6]) ^ i9)) ^ i9;
+        for (int i4 = 0; i4 < 10; i4++) {
+            int i6 = (int) jArr[i4];
+            jArr[i4] = ((-i) & (((int) jArr2[i4]) ^ i6)) ^ i6;
         }
     }
 
     public static int g(String str) {
         int length = str.length();
         int i = 0;
-        int i6 = 0;
-        while (i6 < length && str.charAt(i6) < 128) {
-            i6++;
+        int i4 = 0;
+        while (i4 < length && str.charAt(i4) < 128) {
+            i4++;
         }
-        int i9 = length;
+        int i6 = length;
         while (true) {
-            if (i6 >= length) {
+            if (i4 >= length) {
                 break;
             }
-            char charAt = str.charAt(i6);
+            char charAt = str.charAt(i4);
             if (charAt < 2048) {
-                i9 += (127 - charAt) >>> 31;
-                i6++;
+                i6 += (127 - charAt) >>> 31;
+                i4++;
             } else {
                 try {
-                    int i10 = RL.f27197a;
+                    int i9 = RL.f27953a;
                     int length2 = str.length();
-                    while (i6 < length2) {
-                        char charAt2 = str.charAt(i6);
+                    while (i4 < length2) {
+                        char charAt2 = str.charAt(i4);
                         if (charAt2 < 2048) {
                             i += (127 - charAt2) >>> 31;
                         } else {
                             i += 2;
                             if (charAt2 >= 55296 && charAt2 <= 57343) {
-                                if (Character.codePointAt(str, i6) < 65536) {
-                                    StringBuilder sb = new StringBuilder(String.valueOf(i6).length() + 32 + String.valueOf(length2).length());
+                                if (Character.codePointAt(str, i4) < 65536) {
+                                    StringBuilder sb = new StringBuilder(String.valueOf(i4).length() + 32 + String.valueOf(length2).length());
                                     sb.append("Unpaired surrogate at index ");
-                                    sb.append(i6);
+                                    sb.append(i4);
                                     sb.append(" of ");
                                     sb.append(length2);
                                     throw new QL(sb.toString());
                                 }
-                                i6++;
+                                i4++;
                             }
                         }
-                        i6++;
+                        i4++;
                     }
-                    i9 += i;
+                    i6 += i;
                 } catch (QL unused) {
                     return str.getBytes(StandardCharsets.UTF_8).length;
                 }
             }
         }
-        if (i9 >= length) {
-            return i9;
+        if (i6 >= length) {
+            return i6;
         }
-        long j6 = i9 + 4294967296L;
+        long j6 = i6 + 4294967296L;
         StringBuilder sb2 = new StringBuilder(String.valueOf(j6).length() + 34);
         sb2.append("UTF-8 length does not fit in int: ");
         sb2.append(j6);
         throw new IllegalArgumentException(sb2.toString());
     }
 
-    public static C4178xq h(Cr cr, boolean z3, boolean z6) {
-        if (z3) {
+    public static C4201xq h(Cr cr, boolean z6, boolean z9) {
+        if (z6) {
             m(3, cr, false);
         }
         cr.k((int) cr.a(), StandardCharsets.UTF_8);
@@ -155,28 +155,28 @@ public abstract class QC {
         for (int i = 0; i < a9; i++) {
             strArr[i] = cr.k((int) cr.a(), StandardCharsets.UTF_8);
         }
-        if (z6 && (cr.K() & 1) == 0) {
+        if (z9 && (cr.K() & 1) == 0) {
             throw U4.a(null, "framing bit expected to be set");
         }
-        return new C4178xq(13, strArr);
+        return new C4201xq(13, strArr);
     }
 
     public static ECParameterSpec i(SJ sj) {
         int ordinal = sj.ordinal();
         if (ordinal == 0) {
-            return MF.f26274a;
+            return MF.f27065a;
         }
         if (ordinal == 1) {
-            return MF.f26275b;
+            return MF.f27066b;
         }
         if (ordinal == 2) {
-            return MF.f26276c;
+            return MF.f27067c;
         }
         throw new NoSuchAlgorithmException("curve not implemented:".concat(sj.toString()));
     }
 
-    public static void j(boolean z3) {
-        if (!z3) {
+    public static void j(boolean z6) {
+        if (!z6) {
             throw new ArithmeticException("mode was UNNECESSARY, but rounding was necessary");
         }
     }
@@ -193,22 +193,22 @@ public abstract class QC {
             return;
         }
         String substring = str.substring(0, 30);
-        throw new NumberFormatException(D.y.s(new StringBuilder(String.valueOf(substring).length() + 28), "Number string too large: ", substring, "..."));
+        throw new NumberFormatException(D.x.p(new StringBuilder(String.valueOf(substring).length() + 28), "Number string too large: ", substring, "..."));
     }
 
-    public static boolean m(int i, Cr cr, boolean z3) {
+    public static boolean m(int i, Cr cr, boolean z6) {
         if (cr.B() < 7) {
-            if (z3) {
+            if (z6) {
                 return false;
             }
-            int B9 = cr.B();
-            StringBuilder sb = new StringBuilder(String.valueOf(B9).length() + 18);
+            int B3 = cr.B();
+            StringBuilder sb = new StringBuilder(String.valueOf(B3).length() + 18);
             sb.append("too short header: ");
-            sb.append(B9);
+            sb.append(B3);
             throw U4.a(null, sb.toString());
         }
         if (cr.K() != i) {
-            if (z3) {
+            if (z6) {
                 return false;
             }
             throw U4.a(null, "expected header type ".concat(String.valueOf(Integer.toHexString(i))));
@@ -216,7 +216,7 @@ public abstract class QC {
         if (cr.K() == 118 && cr.K() == 111 && cr.K() == 114 && cr.K() == 98 && cr.K() == 105 && cr.K() == 115) {
             return true;
         }
-        if (z3) {
+        if (z6) {
             return false;
         }
         throw U4.a(null, "expected characters 'vorbis'");
@@ -235,77 +235,77 @@ public abstract class QC {
         if (i == length) {
             i = length - 1;
         }
-        int i6 = (bArr[i] & com.anythink.core.common.s.a.c.f16316a) == 128 ? 1 : 0;
-        int i9 = length - i;
-        byte[] bArr2 = new byte[i9 + i6];
-        System.arraycopy(bArr, i, bArr2, i6, i9);
+        int i4 = (bArr[i] & com.anythink.core.common.s.a.c.f17103a) == 128 ? 1 : 0;
+        int i6 = length - i;
+        byte[] bArr2 = new byte[i6 + i4];
+        System.arraycopy(bArr, i, bArr2, i4, i6);
         return bArr2;
     }
 
-    public static RunnableFutureC2966bE o(Callable callable, Executor executor) {
-        RunnableFutureC2966bE runnableFutureC2966bE = new RunnableFutureC2966bE(callable);
-        executor.execute(runnableFutureC2966bE);
-        return runnableFutureC2966bE;
+    public static RunnableFutureC2989bE o(Callable callable, Executor executor) {
+        RunnableFutureC2989bE runnableFutureC2989bE = new RunnableFutureC2989bE(callable);
+        executor.execute(runnableFutureC2989bE);
+        return runnableFutureC2989bE;
     }
 
-    public static RunnableFutureC2966bE p(AD ad, RD rd) {
-        RunnableFutureC2966bE runnableFutureC2966bE = new RunnableFutureC2966bE();
-        runnableFutureC2966bE.f29247A = new C2912aE(runnableFutureC2966bE, ad);
-        rd.execute(runnableFutureC2966bE);
-        return runnableFutureC2966bE;
+    public static RunnableFutureC2989bE p(AD ad, RD rd) {
+        RunnableFutureC2989bE runnableFutureC2989bE = new RunnableFutureC2989bE();
+        runnableFutureC2989bE.f30035A = new C2935aE(runnableFutureC2989bE, ad);
+        rd.execute(runnableFutureC2989bE);
+        return runnableFutureC2989bE;
     }
 
-    public static YC q(N3.a aVar, Class cls, UA ua, Executor executor) {
-        int i = ZC.f28851D;
+    public static YC q(P3.a aVar, Class cls, UA ua, Executor executor) {
+        int i = ZC.f29631D;
         YC yc = new YC(aVar, cls, ua);
         aVar.a(yc, UC.k(executor, yc));
         return yc;
     }
 
-    public static XC r(N3.a aVar, Class cls, BD bd, Executor executor) {
-        int i = ZC.f28851D;
+    public static XC r(P3.a aVar, Class cls, BD bd, Executor executor) {
+        int i = ZC.f29631D;
         XC xc = new XC(aVar, cls, bd);
         aVar.a(xc, UC.k(executor, xc));
         return xc;
     }
 
-    public static N3.a s(N3.a aVar, long j6, TimeUnit timeUnit, ScheduledExecutorService scheduledExecutorService) {
+    public static P3.a s(P3.a aVar, long j6, TimeUnit timeUnit, ScheduledExecutorService scheduledExecutorService) {
         if (aVar.isDone()) {
             return aVar;
         }
         ZD zd = new ZD();
-        zd.f28855A = aVar;
-        RunnableC3807qw runnableC3807qw = new RunnableC3807qw();
-        runnableC3807qw.f33442u = zd;
-        zd.f28856B = scheduledExecutorService.schedule(runnableC3807qw, j6, timeUnit);
-        aVar.a(runnableC3807qw, GD.f24952n);
+        zd.f29635A = aVar;
+        RunnableC3830qw runnableC3830qw = new RunnableC3830qw();
+        runnableC3830qw.f34209u = zd;
+        zd.f29636B = scheduledExecutorService.schedule(runnableC3830qw, j6, timeUnit);
+        aVar.a(runnableC3830qw, GD.f25742n);
         return zd;
     }
 
-    public static C3878sD t(N3.a aVar, BD bd, Executor executor) {
-        int i = AbstractRunnableC3986uD.f34506C;
-        C3878sD c3878sD = new C3878sD(aVar, bd);
-        aVar.a(c3878sD, UC.k(executor, c3878sD));
-        return c3878sD;
+    public static C3901sD t(P3.a aVar, BD bd, Executor executor) {
+        int i = AbstractRunnableC4009uD.f35280C;
+        C3901sD c3901sD = new C3901sD(aVar, bd);
+        aVar.a(c3901sD, UC.k(executor, c3901sD));
+        return c3901sD;
     }
 
-    public static C3932tD u(N3.a aVar, UA ua, Executor executor) {
-        int i = AbstractRunnableC3986uD.f34506C;
-        C3932tD c3932tD = new C3932tD(aVar, ua);
-        aVar.a(c3932tD, UC.k(executor, c3932tD));
-        return c3932tD;
+    public static C3955tD u(P3.a aVar, UA ua, Executor executor) {
+        int i = AbstractRunnableC4009uD.f35280C;
+        C3955tD c3955tD = new C3955tD(aVar, ua);
+        aVar.a(c3955tD, UC.k(executor, c3955tD));
+        return c3955tD;
     }
 
     public static Object v(Future future) {
         if (future.isDone()) {
-            return C2921aN.e(future);
+            return C2944aN.e(future);
         }
-        throw new IllegalStateException(AbstractC2639Kg.x("Future was expected to be done: %s", future));
+        throw new IllegalStateException(AbstractC2659Kg.x("Future was expected to be done: %s", future));
     }
 
-    public static Object w(C3467kg c3467kg) {
+    public static Object w(C3490kg c3490kg) {
         try {
-            return C2921aN.e(c3467kg);
+            return C2944aN.e(c3490kg);
         } catch (ExecutionException e9) {
             if (e9.getCause() instanceof Error) {
                 throw new H7.a((Error) e9.getCause());

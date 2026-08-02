@@ -1,72 +1,64 @@
 package T2;
 
-import android.os.Build;
-import android.os.Process;
-import android.os.WorkSource;
-import android.util.Log;
-import java.lang.reflect.Method;
+import P2.i;
+import P2.j;
+import R2.AbstractC0383i;
+import R2.o;
+import android.content.Context;
+import android.os.Bundle;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Looper;
+import m.c1;
 
 /* loaded from: classes.dex */
-public abstract class d {
+public final class d extends AbstractC0383i {
 
-    /* renamed from: a, reason: collision with root package name */
-    public static final Method f3089a;
+    /* renamed from: X, reason: collision with root package name */
+    public final o f3161X;
 
-    /* renamed from: b, reason: collision with root package name */
-    public static final Method f3090b;
+    public d(Context context, Looper looper, c1 c1Var, o oVar, i iVar, j jVar) {
+        super(context, looper, 270, c1Var, iVar, jVar);
+        this.f3161X = oVar;
+    }
 
-    /* renamed from: c, reason: collision with root package name */
-    public static Boolean f3091c;
+    @Override // R2.AbstractC0380f, P2.c
+    public final int i() {
+        return 203400000;
+    }
 
-    static {
-        Method method;
-        Method method2;
-        Class cls = Integer.TYPE;
-        Process.myUid();
-        try {
-            method = WorkSource.class.getMethod(com.anythink.expressad.f.a.b.ay, cls);
-        } catch (Exception unused) {
-            method = null;
+    @Override // R2.AbstractC0380f
+    public final IInterface p(IBinder iBinder) {
+        if (iBinder == null) {
+            return null;
         }
-        f3089a = method;
-        try {
-            method2 = WorkSource.class.getMethod(com.anythink.expressad.f.a.b.ay, cls, String.class);
-        } catch (Exception unused2) {
-            method2 = null;
-        }
-        f3090b = method2;
-        try {
-            WorkSource.class.getMethod("size", new Class[0]);
-        } catch (Exception unused3) {
-        }
-        try {
-            WorkSource.class.getMethod("get", cls);
-        } catch (Exception unused4) {
-        }
-        try {
-            WorkSource.class.getMethod("getName", cls);
-        } catch (Exception unused5) {
-        }
-        if (Build.VERSION.SDK_INT >= 28) {
-            try {
-                WorkSource.class.getMethod("createWorkChain", new Class[0]);
-            } catch (Exception e9) {
-                Log.w("WorkSourceUtil", "Missing WorkChain API createWorkChain", e9);
-            }
-        }
-        if (Build.VERSION.SDK_INT >= 28) {
-            try {
-                Class.forName("android.os.WorkSource$WorkChain").getMethod("addNode", cls, String.class);
-            } catch (Exception e10) {
-                Log.w("WorkSourceUtil", "Missing WorkChain class", e10);
-            }
-        }
-        if (Build.VERSION.SDK_INT >= 28) {
-            try {
-                WorkSource.class.getMethod("isEmpty", new Class[0]).setAccessible(true);
-            } catch (Exception unused6) {
-            }
-        }
-        f3091c = null;
+        IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.common.internal.service.IClientTelemetryService");
+        return queryLocalInterface instanceof a ? (a) queryLocalInterface : new a(iBinder, "com.google.android.gms.common.internal.service.IClientTelemetryService", 0);
+    }
+
+    @Override // R2.AbstractC0380f
+    public final O2.d[] r() {
+        return c3.c.f5726b;
+    }
+
+    @Override // R2.AbstractC0380f
+    public final Bundle s() {
+        this.f3161X.getClass();
+        return new Bundle();
+    }
+
+    @Override // R2.AbstractC0380f
+    public final String v() {
+        return "com.google.android.gms.common.internal.service.IClientTelemetryService";
+    }
+
+    @Override // R2.AbstractC0380f
+    public final String w() {
+        return "com.google.android.gms.common.telemetry.service.START";
+    }
+
+    @Override // R2.AbstractC0380f
+    public final boolean x() {
+        return true;
     }
 }

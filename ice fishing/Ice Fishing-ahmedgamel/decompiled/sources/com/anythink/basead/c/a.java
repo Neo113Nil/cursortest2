@@ -10,52 +10,52 @@ import java.util.List;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static a f6061a;
+    private static a f6847a;
 
     /* renamed from: b, reason: collision with root package name */
-    private Context f6062b;
+    private Context f6848b;
 
     /* renamed from: com.anythink.basead.c.a$a, reason: collision with other inner class name */
     public static class C0012a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f6063a = "my_offer_cap_pacing";
+        public static final String f6849a = "my_offer_cap_pacing";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f6064b = "offer_id";
+        public static final String f6850b = "offer_id";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f6065c = "offer_cap";
+        public static final String f6851c = "offer_cap";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f6066d = "offer_pacing";
+        public static final String f6852d = "offer_pacing";
 
         /* renamed from: e, reason: collision with root package name */
-        public static final String f6067e = "show_num";
+        public static final String f6853e = "show_num";
 
         /* renamed from: f, reason: collision with root package name */
-        public static final String f6068f = "show_time";
+        public static final String f6854f = "show_time";
 
         /* renamed from: g, reason: collision with root package name */
-        public static final String f6069g = "record_date";
+        public static final String f6855g = "record_date";
 
         /* renamed from: h, reason: collision with root package name */
-        public static final String f6070h = "CREATE TABLE IF NOT EXISTS my_offer_cap_pacing (offer_id TEXT,offer_cap INTEGER,offer_pacing INTEGER,show_num INTEGER,show_time INTEGER,record_date INTEGER )";
+        public static final String f6856h = "CREATE TABLE IF NOT EXISTS my_offer_cap_pacing (offer_id TEXT,offer_cap INTEGER,offer_pacing INTEGER,show_num INTEGER,show_time INTEGER,record_date INTEGER )";
     }
 
     private a(Context context) {
-        this.f6062b = context;
+        this.f6848b = context;
     }
 
     public static a a(Context context) {
-        if (f6061a == null) {
-            f6061a = new a(context);
+        if (f6847a == null) {
+            f6847a = new a(context);
         }
-        return f6061a;
+        return f6847a;
     }
 
     private synchronized boolean d(String str) {
-        Cursor query = c.a(this.f6062b).getReadableDatabase().query(C0012a.f6063a, new String[]{"offer_id"}, "offer_id = ?", new String[]{str}, null, null, null);
+        Cursor query = c.a(this.f6848b).getReadableDatabase().query(C0012a.f6849a, new String[]{"offer_id"}, "offer_id = ?", new String[]{str}, null, null, null);
         if (query != null && query.getCount() > 0) {
             query.close();
             return true;
@@ -80,7 +80,7 @@ public final class a {
     public final synchronized List<com.anythink.basead.d.c> b(String str) {
         Cursor cursor;
         try {
-            cursor = c.a(this.f6062b).getReadableDatabase().query(C0012a.f6063a, null, "offer_cap <= show_num AND record_date = ? AND offer_cap  >= ?", new String[]{str, "0"}, null, null, null);
+            cursor = c.a(this.f6848b).getReadableDatabase().query(C0012a.f6849a, null, "offer_cap <= show_num AND record_date = ? AND offer_cap  >= ?", new String[]{str, "0"}, null, null, null);
             if (cursor != null) {
                 try {
                     if (cursor.getCount() > 0) {
@@ -123,10 +123,10 @@ public final class a {
                 str2 = "record_date != '" + str + "'";
             } catch (Exception unused) {
             }
-            if (c.a(this.f6062b).getWritableDatabase() == null) {
+            if (c.a(this.f6848b).getWritableDatabase() == null) {
                 return;
             }
-            c.a(this.f6062b).getWritableDatabase().delete(C0012a.f6063a, str2, null);
+            c.a(this.f6848b).getWritableDatabase().delete(C0012a.f6849a, str2, null);
         }
     }
 
@@ -144,7 +144,7 @@ public final class a {
     public final synchronized com.anythink.basead.d.c a(String str) {
         Cursor cursor;
         try {
-            cursor = c.a(this.f6062b).getReadableDatabase().query(C0012a.f6063a, null, "offer_id = ?", new String[]{str}, null, null, null);
+            cursor = c.a(this.f6848b).getReadableDatabase().query(C0012a.f6849a, null, "offer_id = ?", new String[]{str}, null, null, null);
             if (cursor != null) {
                 try {
                     if (cursor.getCount() > 0) {
@@ -184,20 +184,20 @@ public final class a {
                 return 0L;
             }
             try {
-                if (c.a(this.f6062b).getWritableDatabase() == null) {
+                if (c.a(this.f6848b).getWritableDatabase() == null) {
                     return -1L;
                 }
                 ContentValues contentValues = new ContentValues();
-                contentValues.put("offer_id", cVar.f6133a);
-                contentValues.put(C0012a.f6067e, Integer.valueOf(cVar.f6136d));
-                contentValues.put("show_time", Long.valueOf(cVar.f6137e));
-                contentValues.put(C0012a.f6069g, cVar.f6138f);
-                contentValues.put(C0012a.f6065c, Integer.valueOf(cVar.f6134b));
-                contentValues.put(C0012a.f6066d, Long.valueOf(cVar.f6135c));
-                if (d(cVar.f6133a)) {
-                    return c.a(this.f6062b).getWritableDatabase().update(C0012a.f6063a, contentValues, "offer_id = '" + cVar.f6133a + "'", null);
+                contentValues.put("offer_id", cVar.f6919a);
+                contentValues.put(C0012a.f6853e, Integer.valueOf(cVar.f6922d));
+                contentValues.put("show_time", Long.valueOf(cVar.f6923e));
+                contentValues.put(C0012a.f6855g, cVar.f6924f);
+                contentValues.put(C0012a.f6851c, Integer.valueOf(cVar.f6920b));
+                contentValues.put(C0012a.f6852d, Long.valueOf(cVar.f6921c));
+                if (d(cVar.f6919a)) {
+                    return c.a(this.f6848b).getWritableDatabase().update(C0012a.f6849a, contentValues, "offer_id = '" + cVar.f6919a + "'", null);
                 }
-                return c.a(this.f6062b).getWritableDatabase().insert(C0012a.f6063a, null, contentValues);
+                return c.a(this.f6848b).getWritableDatabase().insert(C0012a.f6849a, null, contentValues);
             } catch (Exception e9) {
                 e9.printStackTrace();
                 return -1L;
@@ -207,12 +207,12 @@ public final class a {
 
     private static com.anythink.basead.d.c a(Cursor cursor) {
         com.anythink.basead.d.c cVar = new com.anythink.basead.d.c();
-        cVar.f6133a = cursor.getString(cursor.getColumnIndex("offer_id"));
-        cVar.f6136d = cursor.getInt(cursor.getColumnIndex(C0012a.f6067e));
-        cVar.f6137e = cursor.getLong(cursor.getColumnIndex("show_time"));
-        cVar.f6138f = cursor.getString(cursor.getColumnIndex(C0012a.f6069g));
-        cVar.f6134b = cursor.getInt(cursor.getColumnIndex(C0012a.f6065c));
-        cVar.f6135c = cursor.getLong(cursor.getColumnIndex(C0012a.f6066d));
+        cVar.f6919a = cursor.getString(cursor.getColumnIndex("offer_id"));
+        cVar.f6922d = cursor.getInt(cursor.getColumnIndex(C0012a.f6853e));
+        cVar.f6923e = cursor.getLong(cursor.getColumnIndex("show_time"));
+        cVar.f6924f = cursor.getString(cursor.getColumnIndex(C0012a.f6855g));
+        cVar.f6920b = cursor.getInt(cursor.getColumnIndex(C0012a.f6851c));
+        cVar.f6921c = cursor.getLong(cursor.getColumnIndex(C0012a.f6852d));
         return cVar;
     }
 }

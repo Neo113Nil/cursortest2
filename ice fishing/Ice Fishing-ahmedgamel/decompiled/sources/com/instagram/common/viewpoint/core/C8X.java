@@ -6,7 +6,7 @@ import com.facebook.ads.androidx.media3.extractor.metadata.id3.MlltFrame;
 
 /* renamed from: com.facebook.ads.redexgen.X.8X, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public final class C8X implements InterfaceC2164mF {
+public final class C8X implements InterfaceC2184mF {
     public final long A00;
     public final long[] A01;
     public final long[] A02;
@@ -33,7 +33,7 @@ public final class C8X implements InterfaceC2164mF {
     public C8X(long[] jArr, long[] jArr2, long j6) {
         this.A01 = jArr;
         this.A02 = jArr2;
-        this.A00 = j6 == b.f6382b ? C5C.A0O(jArr2[jArr2.length - 1]) : j6;
+        this.A00 = j6 == b.f7168b ? C5C.A0O(jArr2[jArr2.length - 1]) : j6;
     }
 
     public static C8X A01(long j6, MlltFrame mlltFrame, long j9) {
@@ -56,7 +56,7 @@ public final class C8X implements InterfaceC2164mF {
         return new C8X(jArr, jArr2, j9);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2164mF
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2184mF
     public final long A7j() {
         return -1L;
     }
@@ -72,7 +72,7 @@ public final class C8X implements InterfaceC2164mF {
         return new HX(new HZ(C5C.A0O(((Long) A00.first).longValue()), ((Long) A00.second).longValue()));
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2164mF
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2184mF
     public final long A9H(long j6) {
         Pair<Long, Long> positionAndTimeMs = A00(j6, this.A01, this.A02);
         return C5C.A0O(((Long) positionAndTimeMs.second).longValue());

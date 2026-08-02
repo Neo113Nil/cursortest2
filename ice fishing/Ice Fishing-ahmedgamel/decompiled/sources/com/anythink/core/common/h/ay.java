@@ -10,10 +10,10 @@ import org.json.JSONObject;
 public final class ay extends w<ba> {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f13596a = 1;
+    public static final int f14382a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f13597b = 2;
+    public static final int f14383b = 2;
     private String aA;
     private String ak;
     private String al;
@@ -33,13 +33,13 @@ public final class ay extends w<ba> {
     private String az;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f13598c;
+    public int f14384c;
 
     /* renamed from: d, reason: collision with root package name */
-    public long f13599d;
+    public long f14385d;
 
     /* renamed from: e, reason: collision with root package name */
-    String f13600e = "";
+    String f14386e = "";
 
     private String aF() {
         return this.aA;
@@ -62,11 +62,11 @@ public final class ay extends w<ba> {
     }
 
     private int aK() {
-        return this.f13598c;
+        return this.f14384c;
     }
 
     private long aL() {
-        return this.f13599d;
+        return this.f14385d;
     }
 
     private long aM() {
@@ -74,7 +74,7 @@ public final class ay extends w<ba> {
     }
 
     private void c(long j6) {
-        this.f13599d = j6;
+        this.f14385d = j6;
     }
 
     public final void X(String str) {
@@ -91,21 +91,21 @@ public final class ay extends w<ba> {
 
     @Override // com.anythink.core.common.h.w
     public final /* synthetic */ List a(ba baVar) {
-        boolean z3;
+        boolean z6;
         ba baVar2 = baVar;
         ArrayList arrayList = new ArrayList();
         StringBuffer stringBuffer = new StringBuffer();
-        if (TextUtils.equals(String.valueOf(baVar2.F()), "0") && !TextUtils.isEmpty(this.f14147v)) {
-            arrayList.add(this.f14147v);
+        if (TextUtils.equals(String.valueOf(baVar2.F()), "0") && !TextUtils.isEmpty(this.f14933v)) {
+            arrayList.add(this.f14933v);
         }
         if (TextUtils.equals(String.valueOf(baVar2.F()), "2")) {
             String D8 = baVar2.D();
-            if (!TextUtils.isEmpty(this.f14147v)) {
-                arrayList.add(this.f14147v);
+            if (!TextUtils.isEmpty(this.f14933v)) {
+                arrayList.add(this.f14933v);
             }
-            String d2 = d(baVar2);
-            if (!TextUtils.isEmpty(d2)) {
-                arrayList.add(d2);
+            String d9 = d(baVar2);
+            if (!TextUtils.isEmpty(d9)) {
+                arrayList.add(d9);
             }
             if (arrayList.size() == 0) {
                 stringBuffer.append(D8);
@@ -113,69 +113,69 @@ public final class ay extends w<ba> {
             }
         }
         if (TextUtils.equals(String.valueOf(baVar2.F()), "1")) {
-            if (TextUtils.isEmpty(this.f14142q)) {
+            if (TextUtils.isEmpty(this.f14928q)) {
                 stringBuffer.append("icon_u,");
-                z3 = false;
+                z6 = false;
             } else {
-                arrayList.add(this.f14142q);
-                z3 = true;
+                arrayList.add(this.f14928q);
+                z6 = true;
             }
-            if (TextUtils.isEmpty(this.f14144s)) {
+            if (TextUtils.isEmpty(this.f14930s)) {
                 stringBuffer.append("full_u,");
-                z3 = false;
+                z6 = false;
             } else {
-                arrayList.add(this.f14144s);
+                arrayList.add(this.f14930s);
             }
-            if (TextUtils.isEmpty(this.f14147v)) {
+            if (TextUtils.isEmpty(this.f14933v)) {
                 stringBuffer.append("video_u,");
-                z3 = false;
+                z6 = false;
             } else {
-                arrayList.add(this.f14147v);
+                arrayList.add(this.f14933v);
             }
         } else {
-            z3 = true;
+            z6 = true;
         }
         StringBuilder sb = new StringBuilder();
         sb.append(baVar2.F());
         if (TextUtils.equals(sb.toString(), "3")) {
-            if (TextUtils.isEmpty(this.f14142q)) {
+            if (TextUtils.isEmpty(this.f14928q)) {
                 stringBuffer.append("icon_u,");
-                z3 = false;
+                z6 = false;
             } else {
-                arrayList.add(this.f14142q);
+                arrayList.add(this.f14928q);
             }
-            if (TextUtils.isEmpty(this.f14144s)) {
+            if (TextUtils.isEmpty(this.f14930s)) {
                 stringBuffer.append("full_u,");
-                z3 = false;
+                z6 = false;
             } else {
-                arrayList.add(this.f14144s);
+                arrayList.add(this.f14930s);
             }
-            if (this.f14111A == 1) {
-                if (TextUtils.isEmpty(this.f14147v)) {
+            if (this.f14897A == 1) {
+                if (TextUtils.isEmpty(this.f14933v)) {
                     stringBuffer.append("video_u,");
-                    z3 = false;
+                    z6 = false;
                 } else {
-                    arrayList.add(this.f14147v);
+                    arrayList.add(this.f14933v);
                 }
             }
         }
         if (TextUtils.equals(String.valueOf(baVar2.F()), "4")) {
-            if (!TextUtils.isEmpty(this.f14147v)) {
-                arrayList.add(this.f14147v);
-                if (!TextUtils.isEmpty(this.f14144s)) {
-                    arrayList.add(this.f14144s);
+            if (!TextUtils.isEmpty(this.f14933v)) {
+                arrayList.add(this.f14933v);
+                if (!TextUtils.isEmpty(this.f14930s)) {
+                    arrayList.add(this.f14930s);
                 }
-            } else if (TextUtils.isEmpty(this.f14144s)) {
+            } else if (TextUtils.isEmpty(this.f14930s)) {
                 stringBuffer.append("full_u,");
-                z3 = false;
+                z6 = false;
             } else {
-                arrayList.add(this.f14144s);
+                arrayList.add(this.f14930s);
             }
         }
-        if (z3) {
+        if (z6) {
             return arrayList;
         }
-        this.f13600e = stringBuffer.substring(0, stringBuffer.length() - 1);
+        this.f14386e = stringBuffer.substring(0, stringBuffer.length() - 1);
         return null;
     }
 
@@ -280,9 +280,9 @@ public final class ay extends w<ba> {
     private List<String> c(ba baVar) {
         ArrayList arrayList = new ArrayList();
         if (TextUtils.equals(String.valueOf(baVar.F()), "2")) {
-            String d2 = d(baVar);
-            if (!TextUtils.isEmpty(d2) && TextUtils.equals(d2, this.f14144s) && !TextUtils.isEmpty(this.f14142q)) {
-                arrayList.add(this.f14142q);
+            String d9 = d(baVar);
+            if (!TextUtils.isEmpty(d9) && TextUtils.equals(d9, this.f14930s) && !TextUtils.isEmpty(this.f14928q)) {
+                arrayList.add(this.f14928q);
             }
         }
         return arrayList;
@@ -293,9 +293,9 @@ public final class ay extends w<ba> {
         ba baVar2 = baVar;
         ArrayList arrayList = new ArrayList();
         if (TextUtils.equals(String.valueOf(baVar2.F()), "2")) {
-            String d2 = d(baVar2);
-            if (!TextUtils.isEmpty(d2) && TextUtils.equals(d2, this.f14144s) && !TextUtils.isEmpty(this.f14142q)) {
-                arrayList.add(this.f14142q);
+            String d9 = d(baVar2);
+            if (!TextUtils.isEmpty(d9) && TextUtils.equals(d9, this.f14930s) && !TextUtils.isEmpty(this.f14928q)) {
+                arrayList.add(this.f14928q);
             }
         }
         return arrayList;
@@ -314,28 +314,28 @@ public final class ay extends w<ba> {
             String D8 = baVar.D();
             switch (D8.hashCode()) {
                 case -559799608:
-                    if (D8.equals(y.f14179c)) {
+                    if (D8.equals(y.f14965c)) {
                         c9 = 1;
                         break;
                     }
                     c9 = 65535;
                     break;
                 case 1507809730:
-                    if (D8.equals(y.f14177a)) {
+                    if (D8.equals(y.f14963a)) {
                         c9 = 3;
                         break;
                     }
                     c9 = 65535;
                     break;
                 case 1507809854:
-                    if (D8.equals(y.f14178b)) {
+                    if (D8.equals(y.f14964b)) {
                         c9 = 0;
                         break;
                     }
                     c9 = 65535;
                     break;
                 case 1622564786:
-                    if (D8.equals(y.f14180d)) {
+                    if (D8.equals(y.f14966d)) {
                         c9 = 2;
                         break;
                     }
@@ -360,7 +360,7 @@ public final class ay extends w<ba> {
             } else if (!TextUtils.isEmpty(this.ax)) {
                 return this.ax;
             }
-            return this.f14144s;
+            return this.f14930s;
         }
         return "";
     }
@@ -370,7 +370,7 @@ public final class ay extends w<ba> {
     }
 
     private void b(int i) {
-        this.f13598c = i;
+        this.f14384c = i;
     }
 
     public final void b(long j6) {
@@ -379,20 +379,20 @@ public final class ay extends w<ba> {
 
     /* renamed from: b, reason: avoid collision after fix types in other method */
     private List<String> b2(ba baVar) {
-        boolean z3;
+        boolean z6;
         ArrayList arrayList = new ArrayList();
         StringBuffer stringBuffer = new StringBuffer();
-        if (TextUtils.equals(String.valueOf(baVar.F()), "0") && !TextUtils.isEmpty(this.f14147v)) {
-            arrayList.add(this.f14147v);
+        if (TextUtils.equals(String.valueOf(baVar.F()), "0") && !TextUtils.isEmpty(this.f14933v)) {
+            arrayList.add(this.f14933v);
         }
         if (TextUtils.equals(String.valueOf(baVar.F()), "2")) {
             String D8 = baVar.D();
-            if (!TextUtils.isEmpty(this.f14147v)) {
-                arrayList.add(this.f14147v);
+            if (!TextUtils.isEmpty(this.f14933v)) {
+                arrayList.add(this.f14933v);
             }
-            String d2 = d(baVar);
-            if (!TextUtils.isEmpty(d2)) {
-                arrayList.add(d2);
+            String d9 = d(baVar);
+            if (!TextUtils.isEmpty(d9)) {
+                arrayList.add(d9);
             }
             if (arrayList.size() == 0) {
                 stringBuffer.append(D8);
@@ -400,71 +400,71 @@ public final class ay extends w<ba> {
             }
         }
         if (TextUtils.equals(String.valueOf(baVar.F()), "1")) {
-            if (!TextUtils.isEmpty(this.f14142q)) {
-                arrayList.add(this.f14142q);
-                z3 = true;
+            if (!TextUtils.isEmpty(this.f14928q)) {
+                arrayList.add(this.f14928q);
+                z6 = true;
             } else {
                 stringBuffer.append("icon_u,");
-                z3 = false;
+                z6 = false;
             }
-            if (!TextUtils.isEmpty(this.f14144s)) {
-                arrayList.add(this.f14144s);
+            if (!TextUtils.isEmpty(this.f14930s)) {
+                arrayList.add(this.f14930s);
             } else {
                 stringBuffer.append("full_u,");
-                z3 = false;
+                z6 = false;
             }
-            if (!TextUtils.isEmpty(this.f14147v)) {
-                arrayList.add(this.f14147v);
+            if (!TextUtils.isEmpty(this.f14933v)) {
+                arrayList.add(this.f14933v);
             } else {
                 stringBuffer.append("video_u,");
-                z3 = false;
+                z6 = false;
             }
         } else {
-            z3 = true;
+            z6 = true;
         }
         StringBuilder sb = new StringBuilder();
         sb.append(baVar.F());
         if (TextUtils.equals(sb.toString(), "3")) {
-            if (!TextUtils.isEmpty(this.f14142q)) {
-                arrayList.add(this.f14142q);
+            if (!TextUtils.isEmpty(this.f14928q)) {
+                arrayList.add(this.f14928q);
             } else {
                 stringBuffer.append("icon_u,");
-                z3 = false;
+                z6 = false;
             }
-            if (!TextUtils.isEmpty(this.f14144s)) {
-                arrayList.add(this.f14144s);
+            if (!TextUtils.isEmpty(this.f14930s)) {
+                arrayList.add(this.f14930s);
             } else {
                 stringBuffer.append("full_u,");
-                z3 = false;
+                z6 = false;
             }
-            if (this.f14111A == 1) {
-                if (!TextUtils.isEmpty(this.f14147v)) {
-                    arrayList.add(this.f14147v);
+            if (this.f14897A == 1) {
+                if (!TextUtils.isEmpty(this.f14933v)) {
+                    arrayList.add(this.f14933v);
                 } else {
                     stringBuffer.append("video_u,");
-                    z3 = false;
+                    z6 = false;
                 }
             }
         }
         if (TextUtils.equals(String.valueOf(baVar.F()), "4")) {
-            if (TextUtils.isEmpty(this.f14147v)) {
-                if (!TextUtils.isEmpty(this.f14144s)) {
-                    arrayList.add(this.f14144s);
+            if (TextUtils.isEmpty(this.f14933v)) {
+                if (!TextUtils.isEmpty(this.f14930s)) {
+                    arrayList.add(this.f14930s);
                 } else {
                     stringBuffer.append("full_u,");
-                    z3 = false;
+                    z6 = false;
                 }
             } else {
-                arrayList.add(this.f14147v);
-                if (!TextUtils.isEmpty(this.f14144s)) {
-                    arrayList.add(this.f14144s);
+                arrayList.add(this.f14933v);
+                if (!TextUtils.isEmpty(this.f14930s)) {
+                    arrayList.add(this.f14930s);
                 }
             }
         }
-        if (z3) {
+        if (z6) {
             return arrayList;
         }
-        this.f13600e = stringBuffer.substring(0, stringBuffer.length() - 1);
+        this.f14386e = stringBuffer.substring(0, stringBuffer.length() - 1);
         return null;
     }
 
@@ -483,6 +483,6 @@ public final class ay extends w<ba> {
 
     @Override // com.anythink.core.common.h.w
     public final String a() {
-        return this.f13600e;
+        return this.f14386e;
     }
 }

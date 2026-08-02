@@ -15,16 +15,16 @@ public abstract class W9 {
     public static final Map<String, Long> A03;
     public static final Map<String, String> A04;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 88);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 88);
         }
         return new String(copyOfRange);
     }
 
     public static void A04() {
-        A01 = new byte[]{96, 54, Byte.MAX_VALUE, 96, 54, Byte.MAX_VALUE, 96, 33, Byte.MAX_VALUE, 96, 33, Byte.MAX_VALUE, 96, 33, 82, 92, 4, 92, 0, 87, 85, 85, 11, 45, 55, 48, 57, 126, 50, c.f16318c, 45, 42, 126, c.f16318c, 58, 126, 44, 59, 45, 46, 49, 48, 45, 59, 65, 67, 82, 106, 71, 85, 82, 116, 67, 85, 86, 73, 72, 85, 67};
+        A01 = new byte[]{96, 54, Byte.MAX_VALUE, 96, 54, Byte.MAX_VALUE, 96, 33, Byte.MAX_VALUE, 96, 33, Byte.MAX_VALUE, 96, 33, 82, 92, 4, 92, 0, 87, 85, 85, 11, 45, 55, 48, 57, 126, 50, c.f17105c, 45, 42, 126, c.f17105c, 58, 126, 44, 59, 45, 46, 49, 48, 45, 59, 65, 67, 82, 106, 71, 85, 82, 116, 67, 85, 86, 73, 72, 85, 67};
     }
 
     static {
@@ -35,11 +35,11 @@ public abstract class W9 {
         A00 = false;
     }
 
-    public static long A00(String str, EnumC1315Vq enumC1315Vq) {
+    public static long A00(String str, EnumC1335Vq enumC1335Vq) {
         if (A03.containsKey(str)) {
             return A03.get(str).longValue();
         }
-        switch (enumC1315Vq) {
+        switch (enumC1335Vq) {
             case A0E:
             case A0F:
             case A0G:
@@ -51,7 +51,7 @@ public abstract class W9 {
     }
 
     public static String A02(WA wa) {
-        AbstractC1323Vy.A05(A01(44, 15, a.f21727Q), A01(22, 22, 6), A01(14, 8, 61));
+        AbstractC1343Vy.A05(A01(44, 15, a.f22514Q), A01(22, 22, 6), A01(14, 8, 61));
         return A04.get(A03(wa));
     }
 

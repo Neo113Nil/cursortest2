@@ -5,18 +5,18 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.BiFunction;
 import java.util.function.Function;
-import v7.AbstractC5129j;
+import v7.AbstractC5119j;
 
 /* loaded from: classes2.dex */
 public final class y extends l implements Map<String, l>, J7.a {
     public static final x Companion = new x();
 
     /* renamed from: n, reason: collision with root package name */
-    public final Map f37583n;
+    public final Map f37545n;
 
     public y(Map content) {
         kotlin.jvm.internal.h.e(content, "content");
-        this.f37583n = content;
+        this.f37545n = content;
     }
 
     @Override // java.util.Map
@@ -46,7 +46,7 @@ public final class y extends l implements Map<String, l>, J7.a {
         }
         String key = (String) obj;
         kotlin.jvm.internal.h.e(key, "key");
-        return this.f37583n.containsKey(key);
+        return this.f37545n.containsKey(key);
     }
 
     @Override // java.util.Map
@@ -56,17 +56,17 @@ public final class y extends l implements Map<String, l>, J7.a {
         }
         l value = (l) obj;
         kotlin.jvm.internal.h.e(value, "value");
-        return this.f37583n.containsValue(value);
+        return this.f37545n.containsValue(value);
     }
 
     @Override // java.util.Map
     public final Set<Map.Entry<String, l>> entrySet() {
-        return this.f37583n.entrySet();
+        return this.f37545n.entrySet();
     }
 
     @Override // java.util.Map
     public final boolean equals(Object obj) {
-        return kotlin.jvm.internal.h.a(this.f37583n, obj);
+        return kotlin.jvm.internal.h.a(this.f37545n, obj);
     }
 
     @Override // java.util.Map
@@ -76,22 +76,22 @@ public final class y extends l implements Map<String, l>, J7.a {
         }
         String key = (String) obj;
         kotlin.jvm.internal.h.e(key, "key");
-        return (l) this.f37583n.get(key);
+        return (l) this.f37545n.get(key);
     }
 
     @Override // java.util.Map
     public final int hashCode() {
-        return this.f37583n.hashCode();
+        return this.f37545n.hashCode();
     }
 
     @Override // java.util.Map
     public final boolean isEmpty() {
-        return this.f37583n.isEmpty();
+        return this.f37545n.isEmpty();
     }
 
     @Override // java.util.Map
     public final Set<String> keySet() {
-        return this.f37583n.keySet();
+        return this.f37545n.keySet();
     }
 
     @Override // java.util.Map
@@ -131,16 +131,16 @@ public final class y extends l implements Map<String, l>, J7.a {
 
     @Override // java.util.Map
     public final int size() {
-        return this.f37583n.size();
+        return this.f37545n.size();
     }
 
     public final String toString() {
-        return AbstractC5129j.E(this.f37583n.entrySet(), ",", "{", "}", o.f37571v, 24);
+        return AbstractC5119j.C(this.f37545n.entrySet(), ",", "{", "}", o.f37533v, 24);
     }
 
     @Override // java.util.Map
     public final Collection<l> values() {
-        return this.f37583n.values();
+        return this.f37545n.values();
     }
 
     @Override // java.util.Map

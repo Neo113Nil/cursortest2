@@ -30,44 +30,44 @@ import com.anythink.core.common.v.q;
 public class PrivacyPolicyView extends RelativeLayout implements View.OnClickListener {
 
     /* renamed from: n, reason: collision with root package name */
-    private static String f11592n = "PrivacyPolicyView";
+    private static String f12378n = "PrivacyPolicyView";
 
     /* renamed from: a, reason: collision with root package name */
-    ViewGroup f11593a;
+    ViewGroup f12379a;
 
     /* renamed from: b, reason: collision with root package name */
-    LinearLayout f11594b;
+    LinearLayout f12380b;
 
     /* renamed from: c, reason: collision with root package name */
-    LoadingView f11595c;
+    LoadingView f12381c;
 
     /* renamed from: d, reason: collision with root package name */
-    TextView f11596d;
+    TextView f12382d;
 
     /* renamed from: e, reason: collision with root package name */
-    FrameLayout f11597e;
+    FrameLayout f12383e;
 
     /* renamed from: f, reason: collision with root package name */
-    WebView f11598f;
+    WebView f12384f;
 
     /* renamed from: g, reason: collision with root package name */
-    CheckBox f11599g;
+    CheckBox f12385g;
 
     /* renamed from: h, reason: collision with root package name */
-    View f11600h;
+    View f12386h;
     TextView i;
 
     /* renamed from: j, reason: collision with root package name */
-    boolean f11601j;
+    boolean f12387j;
 
     /* renamed from: k, reason: collision with root package name */
-    boolean f11602k;
+    boolean f12388k;
 
     /* renamed from: l, reason: collision with root package name */
-    String f11603l;
+    String f12389l;
 
     /* renamed from: m, reason: collision with root package name */
-    a f11604m;
+    a f12390m;
 
     /* renamed from: com.anythink.core.activity.component.PrivacyPolicyView$1, reason: invalid class name */
     public class AnonymousClass1 implements View.OnClickListener {
@@ -78,13 +78,13 @@ public class PrivacyPolicyView extends RelativeLayout implements View.OnClickLis
         public final void onClick(View view) {
             try {
                 PrivacyPolicyView privacyPolicyView = PrivacyPolicyView.this;
-                if (privacyPolicyView.f11598f == null || privacyPolicyView.f11602k) {
+                if (privacyPolicyView.f12384f == null || privacyPolicyView.f12388k) {
                     return;
                 }
-                privacyPolicyView.f11601j = true;
-                Log.d(PrivacyPolicyView.f11592n, "reload.......");
+                privacyPolicyView.f12387j = true;
+                Log.d(PrivacyPolicyView.f12378n, "reload.......");
                 PrivacyPolicyView privacyPolicyView2 = PrivacyPolicyView.this;
-                privacyPolicyView2.loadPolicyUrl(privacyPolicyView2.f11603l);
+                privacyPolicyView2.loadPolicyUrl(privacyPolicyView2.f12389l);
             } catch (Throwable unused) {
             }
         }
@@ -98,29 +98,29 @@ public class PrivacyPolicyView extends RelativeLayout implements View.OnClickLis
         @Override // android.webkit.WebViewClient
         public final void onPageFinished(WebView webView, String str) {
             try {
-                Log.d(PrivacyPolicyView.f11592n, "onPageFinished:" + str + "   mIsWebViewloadSuccess:" + PrivacyPolicyView.this.f11601j);
-                if (PrivacyPolicyView.this.f11603l.equals(str)) {
+                Log.d(PrivacyPolicyView.f12378n, "onPageFinished:" + str + "   mIsWebViewloadSuccess:" + PrivacyPolicyView.this.f12387j);
+                if (PrivacyPolicyView.this.f12389l.equals(str)) {
                     PrivacyPolicyView privacyPolicyView = PrivacyPolicyView.this;
-                    if (privacyPolicyView.f11601j) {
-                        privacyPolicyView.f11594b.setVisibility(4);
-                        PrivacyPolicyView.this.f11593a.setVisibility(0);
-                        PrivacyPolicyView.this.f11594b.setVisibility(8);
-                        PrivacyPolicyView.this.f11595c.clearAnimation();
-                        a aVar = PrivacyPolicyView.this.f11604m;
+                    if (privacyPolicyView.f12387j) {
+                        privacyPolicyView.f12380b.setVisibility(4);
+                        PrivacyPolicyView.this.f12379a.setVisibility(0);
+                        PrivacyPolicyView.this.f12380b.setVisibility(8);
+                        PrivacyPolicyView.this.f12381c.clearAnimation();
+                        a aVar = PrivacyPolicyView.this.f12390m;
                         if (aVar != null) {
                             aVar.onPageLoadSuccess();
                         }
                     } else {
-                        privacyPolicyView.f11594b.setVisibility(0);
-                        PrivacyPolicyView.this.f11595c.clearAnimation();
-                        PrivacyPolicyView.this.f11596d.setVisibility(0);
-                        PrivacyPolicyView.this.f11593a.setVisibility(8);
-                        a aVar2 = PrivacyPolicyView.this.f11604m;
+                        privacyPolicyView.f12380b.setVisibility(0);
+                        PrivacyPolicyView.this.f12381c.clearAnimation();
+                        PrivacyPolicyView.this.f12382d.setVisibility(0);
+                        PrivacyPolicyView.this.f12379a.setVisibility(8);
+                        a aVar2 = PrivacyPolicyView.this.f12390m;
                         if (aVar2 != null) {
                             aVar2.onPageLoadFail();
                         }
                     }
-                    PrivacyPolicyView.this.f11602k = false;
+                    PrivacyPolicyView.this.f12388k = false;
                     super.onPageFinished(webView, str);
                 }
             } catch (Throwable unused) {
@@ -129,20 +129,20 @@ public class PrivacyPolicyView extends RelativeLayout implements View.OnClickLis
 
         @Override // android.webkit.WebViewClient
         public final void onPageStarted(WebView webView, String str, Bitmap bitmap) {
-            Log.d(PrivacyPolicyView.f11592n, "onPageStarted:".concat(String.valueOf(str)));
+            Log.d(PrivacyPolicyView.f12378n, "onPageStarted:".concat(String.valueOf(str)));
             super.onPageStarted(webView, str, bitmap);
         }
 
         @Override // android.webkit.WebViewClient
         public final void onReceivedError(WebView webView, WebResourceRequest webResourceRequest, WebResourceError webResourceError) {
-            PrivacyPolicyView.this.f11601j = false;
-            Log.d(PrivacyPolicyView.f11592n, "onPageFinished:" + webResourceError.getErrorCode());
+            PrivacyPolicyView.this.f12387j = false;
+            Log.d(PrivacyPolicyView.f12378n, "onPageFinished:" + webResourceError.getErrorCode());
             super.onReceivedError(webView, webResourceRequest, webResourceError);
         }
 
         @Override // android.webkit.WebViewClient
         public final boolean shouldOverrideUrlLoading(WebView webView, String str) {
-            Log.d(PrivacyPolicyView.f11592n, "shouldOverrideUrlLoading:".concat(String.valueOf(str)));
+            Log.d(PrivacyPolicyView.f12378n, "shouldOverrideUrlLoading:".concat(String.valueOf(str)));
             if (TextUtils.isEmpty(str)) {
                 return false;
             }
@@ -159,7 +159,7 @@ public class PrivacyPolicyView extends RelativeLayout implements View.OnClickLis
         @Override // android.webkit.WebChromeClient
         public final void onReceivedTitle(WebView webView, String str) {
             if (!TextUtils.isEmpty(str) && str.toLowerCase().contains("error")) {
-                PrivacyPolicyView.this.f11601j = false;
+                PrivacyPolicyView.this.f12387j = false;
             }
             super.onReceivedTitle(webView, str);
         }
@@ -175,32 +175,32 @@ public class PrivacyPolicyView extends RelativeLayout implements View.OnClickLis
 
     public PrivacyPolicyView(Context context) {
         super(context);
-        this.f11601j = true;
-        this.f11602k = false;
+        this.f12387j = true;
+        this.f12388k = false;
         LayoutInflater.from(getContext()).inflate(q.a(getContext(), "privace_policy_layout", "layout"), this);
-        this.f11593a = (ViewGroup) findViewById(q.a(getContext(), "policy_content_view", "id"));
-        this.f11594b = (LinearLayout) findViewById(q.a(getContext(), "policy_loading_view", "id"));
-        this.f11595c = new LoadingView(getContext());
+        this.f12379a = (ViewGroup) findViewById(q.a(getContext(), "policy_content_view", "id"));
+        this.f12380b = (LinearLayout) findViewById(q.a(getContext(), "policy_loading_view", "id"));
+        this.f12381c = new LoadingView(getContext());
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(q.a(getContext(), 30.0f), q.a(getContext(), 30.0f));
         layoutParams.gravity = 1;
-        this.f11595c.setLayoutParams(layoutParams);
-        this.f11596d = new TextView(getContext());
+        this.f12381c.setLayoutParams(layoutParams);
+        this.f12382d = new TextView(getContext());
         LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(-2, -2);
         layoutParams2.gravity = 1;
         layoutParams2.topMargin = q.a(getContext(), 5.0f);
-        this.f11596d.setLayoutParams(layoutParams2);
-        this.f11596d.setText("Page failed to load, please try again later.");
-        this.f11596d.setTextColor(-8947849);
-        this.f11596d.setTextSize(1, 12.0f);
-        this.f11594b.addView(this.f11595c);
-        this.f11594b.addView(this.f11596d);
-        this.f11594b.setOnClickListener(new AnonymousClass1());
-        this.f11597e = (FrameLayout) findViewById(q.a(getContext(), "policy_webview_area", "id"));
+        this.f12382d.setLayoutParams(layoutParams2);
+        this.f12382d.setText("Page failed to load, please try again later.");
+        this.f12382d.setTextColor(-8947849);
+        this.f12382d.setTextSize(1, 12.0f);
+        this.f12380b.addView(this.f12381c);
+        this.f12380b.addView(this.f12382d);
+        this.f12380b.setOnClickListener(new AnonymousClass1());
+        this.f12383e = (FrameLayout) findViewById(q.a(getContext(), "policy_webview_area", "id"));
         WebView webView = new WebView(getContext());
-        this.f11598f = webView;
+        this.f12384f = webView;
         p.a(webView);
-        this.f11597e.addView(this.f11598f, new FrameLayout.LayoutParams(-1, -1));
-        WebSettings settings = this.f11598f.getSettings();
+        this.f12383e.addView(this.f12384f, new FrameLayout.LayoutParams(-1, -1));
+        WebSettings settings = this.f12384f.getSettings();
         if (settings != null) {
             settings.setJavaScriptEnabled(false);
             settings.setCacheMode(-1);
@@ -216,46 +216,46 @@ public class PrivacyPolicyView extends RelativeLayout implements View.OnClickLis
             settings.setLoadWithOverviewMode(true);
             settings.setUseWideViewPort(true);
         }
-        this.f11598f.setWebViewClient(new AnonymousClass2());
-        this.f11598f.setWebChromeClient(new AnonymousClass3());
-        this.f11599g = (CheckBox) findViewById(q.a(getContext(), "policy_check_box", "id"));
-        this.f11600h = findViewById(q.a(getContext(), "policy_agree_view", "id"));
+        this.f12384f.setWebViewClient(new AnonymousClass2());
+        this.f12384f.setWebChromeClient(new AnonymousClass3());
+        this.f12385g = (CheckBox) findViewById(q.a(getContext(), "policy_check_box", "id"));
+        this.f12386h = findViewById(q.a(getContext(), "policy_agree_view", "id"));
         this.i = (TextView) findViewById(q.a(getContext(), "policy_reject_view", "id"));
-        this.f11600h.setOnClickListener(this);
+        this.f12386h.setOnClickListener(this);
         this.i.setOnClickListener(this);
         int a9 = q.a(getContext(), 20.0f);
         GradientDrawable gradientDrawable = new GradientDrawable();
         gradientDrawable.setColor(-13472268);
         gradientDrawable.setCornerRadius(a9);
-        this.f11600h.setBackgroundDrawable(gradientDrawable);
+        this.f12386h.setBackgroundDrawable(gradientDrawable);
         this.i.setText(Html.fromHtml("<u>No,Thanks</u>"));
     }
 
     private void b() {
         LayoutInflater.from(getContext()).inflate(q.a(getContext(), "privace_policy_layout", "layout"), this);
-        this.f11593a = (ViewGroup) findViewById(q.a(getContext(), "policy_content_view", "id"));
-        this.f11594b = (LinearLayout) findViewById(q.a(getContext(), "policy_loading_view", "id"));
-        this.f11595c = new LoadingView(getContext());
+        this.f12379a = (ViewGroup) findViewById(q.a(getContext(), "policy_content_view", "id"));
+        this.f12380b = (LinearLayout) findViewById(q.a(getContext(), "policy_loading_view", "id"));
+        this.f12381c = new LoadingView(getContext());
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(q.a(getContext(), 30.0f), q.a(getContext(), 30.0f));
         layoutParams.gravity = 1;
-        this.f11595c.setLayoutParams(layoutParams);
-        this.f11596d = new TextView(getContext());
+        this.f12381c.setLayoutParams(layoutParams);
+        this.f12382d = new TextView(getContext());
         LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(-2, -2);
         layoutParams2.gravity = 1;
         layoutParams2.topMargin = q.a(getContext(), 5.0f);
-        this.f11596d.setLayoutParams(layoutParams2);
-        this.f11596d.setText("Page failed to load, please try again later.");
-        this.f11596d.setTextColor(-8947849);
-        this.f11596d.setTextSize(1, 12.0f);
-        this.f11594b.addView(this.f11595c);
-        this.f11594b.addView(this.f11596d);
-        this.f11594b.setOnClickListener(new AnonymousClass1());
-        this.f11597e = (FrameLayout) findViewById(q.a(getContext(), "policy_webview_area", "id"));
+        this.f12382d.setLayoutParams(layoutParams2);
+        this.f12382d.setText("Page failed to load, please try again later.");
+        this.f12382d.setTextColor(-8947849);
+        this.f12382d.setTextSize(1, 12.0f);
+        this.f12380b.addView(this.f12381c);
+        this.f12380b.addView(this.f12382d);
+        this.f12380b.setOnClickListener(new AnonymousClass1());
+        this.f12383e = (FrameLayout) findViewById(q.a(getContext(), "policy_webview_area", "id"));
         WebView webView = new WebView(getContext());
-        this.f11598f = webView;
+        this.f12384f = webView;
         p.a(webView);
-        this.f11597e.addView(this.f11598f, new FrameLayout.LayoutParams(-1, -1));
-        WebSettings settings = this.f11598f.getSettings();
+        this.f12383e.addView(this.f12384f, new FrameLayout.LayoutParams(-1, -1));
+        WebSettings settings = this.f12384f.getSettings();
         if (settings != null) {
             settings.setJavaScriptEnabled(false);
             settings.setCacheMode(-1);
@@ -271,23 +271,23 @@ public class PrivacyPolicyView extends RelativeLayout implements View.OnClickLis
             settings.setLoadWithOverviewMode(true);
             settings.setUseWideViewPort(true);
         }
-        this.f11598f.setWebViewClient(new AnonymousClass2());
-        this.f11598f.setWebChromeClient(new AnonymousClass3());
-        this.f11599g = (CheckBox) findViewById(q.a(getContext(), "policy_check_box", "id"));
-        this.f11600h = findViewById(q.a(getContext(), "policy_agree_view", "id"));
+        this.f12384f.setWebViewClient(new AnonymousClass2());
+        this.f12384f.setWebChromeClient(new AnonymousClass3());
+        this.f12385g = (CheckBox) findViewById(q.a(getContext(), "policy_check_box", "id"));
+        this.f12386h = findViewById(q.a(getContext(), "policy_agree_view", "id"));
         this.i = (TextView) findViewById(q.a(getContext(), "policy_reject_view", "id"));
-        this.f11600h.setOnClickListener(this);
+        this.f12386h.setOnClickListener(this);
         this.i.setOnClickListener(this);
         int a9 = q.a(getContext(), 20.0f);
         GradientDrawable gradientDrawable = new GradientDrawable();
         gradientDrawable.setColor(-13472268);
         gradientDrawable.setCornerRadius(a9);
-        this.f11600h.setBackgroundDrawable(gradientDrawable);
+        this.f12386h.setBackgroundDrawable(gradientDrawable);
         this.i.setText(Html.fromHtml("<u>No,Thanks</u>"));
     }
 
     private void c() {
-        WebSettings settings = this.f11598f.getSettings();
+        WebSettings settings = this.f12384f.getSettings();
         if (settings != null) {
             settings.setJavaScriptEnabled(false);
             settings.setCacheMode(-1);
@@ -303,70 +303,70 @@ public class PrivacyPolicyView extends RelativeLayout implements View.OnClickLis
             settings.setLoadWithOverviewMode(true);
             settings.setUseWideViewPort(true);
         }
-        this.f11598f.setWebViewClient(new AnonymousClass2());
-        this.f11598f.setWebChromeClient(new AnonymousClass3());
+        this.f12384f.setWebViewClient(new AnonymousClass2());
+        this.f12384f.setWebChromeClient(new AnonymousClass3());
     }
 
     public void destory() {
         try {
             removeAllViews();
-            ViewGroup viewGroup = this.f11593a;
+            ViewGroup viewGroup = this.f12379a;
             if (viewGroup != null) {
                 viewGroup.removeAllViews();
             }
-            FrameLayout frameLayout = this.f11597e;
+            FrameLayout frameLayout = this.f12383e;
             if (frameLayout != null) {
-                frameLayout.removeView(this.f11598f);
-                this.f11598f.removeAllViews();
+                frameLayout.removeView(this.f12384f);
+                this.f12384f.removeAllViews();
             }
-            WebView webView = this.f11598f;
+            WebView webView = this.f12384f;
             if (webView != null) {
                 webView.clearHistory();
-                this.f11598f.clearCache(true);
-                this.f11598f.destroy();
-                this.f11598f = null;
+                this.f12384f.clearCache(true);
+                this.f12384f.destroy();
+                this.f12384f = null;
             }
         } catch (Throwable unused) {
         }
     }
 
     public void loadPolicyUrl(String str) {
-        if (this.f11602k) {
+        if (this.f12388k) {
             return;
         }
-        this.f11603l = str;
+        this.f12389l = str;
         if (!q.a(getContext())) {
-            this.f11601j = false;
-            this.f11594b.setVisibility(0);
-            this.f11595c.clearAnimation();
-            this.f11596d.setVisibility(0);
-            this.f11593a.setVisibility(8);
-            a aVar = this.f11604m;
+            this.f12387j = false;
+            this.f12380b.setVisibility(0);
+            this.f12381c.clearAnimation();
+            this.f12382d.setVisibility(0);
+            this.f12379a.setVisibility(8);
+            a aVar = this.f12390m;
             if (aVar != null) {
                 aVar.onPageLoadFail();
                 return;
             }
             return;
         }
-        this.f11601j = true;
-        this.f11594b.setVisibility(0);
-        this.f11595c.clearAnimation();
-        this.f11595c.startAnimation();
-        this.f11596d.setVisibility(8);
-        this.f11602k = true;
-        if (this.f11603l.equals(this.f11598f.getUrl())) {
-            this.f11598f.reload();
+        this.f12387j = true;
+        this.f12380b.setVisibility(0);
+        this.f12381c.clearAnimation();
+        this.f12381c.startAnimation();
+        this.f12382d.setVisibility(8);
+        this.f12388k = true;
+        if (this.f12389l.equals(this.f12384f.getUrl())) {
+            this.f12384f.reload();
         } else {
-            this.f11598f.loadUrl(this.f11603l);
+            this.f12384f.loadUrl(this.f12389l);
         }
     }
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
-        if (view == this.f11600h) {
+        if (view == this.f12386h) {
             ATSDK.setGDPRUploadDataLevel(getContext(), 0);
             view.setTag(0);
-            a aVar = this.f11604m;
+            a aVar = this.f12390m;
             if (aVar != null) {
                 aVar.onLevelSelect(0);
                 return;
@@ -376,7 +376,7 @@ public class PrivacyPolicyView extends RelativeLayout implements View.OnClickLis
         if (view == this.i) {
             ATSDK.setGDPRUploadDataLevel(getContext(), 1);
             view.setTag(1);
-            a aVar2 = this.f11604m;
+            a aVar2 = this.f12390m;
             if (aVar2 != null) {
                 aVar2.onLevelSelect(1);
             }
@@ -384,7 +384,7 @@ public class PrivacyPolicyView extends RelativeLayout implements View.OnClickLis
     }
 
     public void setResultCallbackListener(a aVar) {
-        this.f11604m = aVar;
+        this.f12390m = aVar;
     }
 
     public static /* synthetic */ void a(Context context, String str) {

@@ -36,8 +36,8 @@ public final class SF implements RewardedInterstitialAd.RewardedInterstitialAdLo
     }
 
     @Override // com.facebook.ads.RewardedInterstitialAd.RewardedInterstitialAdLoadConfigBuilder
-    public final RewardedInterstitialAd.RewardedInterstitialAdLoadConfigBuilder withFailOnCacheFailureEnabled(boolean z3) {
-        this.A00.withFailOnCacheFailureEnabled(z3);
+    public final RewardedInterstitialAd.RewardedInterstitialAdLoadConfigBuilder withFailOnCacheFailureEnabled(boolean z6) {
+        this.A00.withFailOnCacheFailureEnabled(z6);
         return this;
     }
 

@@ -4,7 +4,7 @@ package com.anythink.basead.mraid;
 public class f extends com.anythink.core.express.d.a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static f f9625a;
+    private static f f10411a;
 
     private f() {
     }
@@ -22,17 +22,17 @@ public class f extends com.anythink.core.express.d.a {
     }
 
     public static f a() {
-        if (f9625a == null) {
+        if (f10411a == null) {
             synchronized (f.class) {
                 try {
-                    if (f9625a == null) {
-                        f9625a = new f();
+                    if (f10411a == null) {
+                        f10411a = new f();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f9625a;
+        return f10411a;
     }
 }

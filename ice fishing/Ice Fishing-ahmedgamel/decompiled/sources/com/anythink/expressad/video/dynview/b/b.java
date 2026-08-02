@@ -7,22 +7,22 @@ import com.anythink.expressad.video.dynview.c;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private static volatile b f21137a;
+    private static volatile b f21924a;
 
     private b() {
     }
 
     public static b a() {
         b bVar;
-        if (f21137a != null) {
-            return f21137a;
+        if (f21924a != null) {
+            return f21924a;
         }
         synchronized (b.class) {
             try {
-                if (f21137a == null) {
-                    f21137a = new b();
+                if (f21924a == null) {
+                    f21924a = new b();
                 }
-                bVar = f21137a;
+                bVar = f21924a;
             } catch (Throwable th) {
                 throw th;
             }
@@ -43,8 +43,8 @@ public class b {
     }
 
     public static void b() {
-        if (f21137a != null) {
-            f21137a = null;
+        if (f21924a != null) {
+            f21924a = null;
         }
     }
 
@@ -56,21 +56,21 @@ public class b {
         if (cVar == null) {
             return;
         }
-        int h9 = cVar.h();
-        if (h9 == 1) {
+        int h3 = cVar.h();
+        if (h3 == 1) {
             new com.anythink.expressad.video.dynview.j.b().a(view);
             return;
         }
-        if (h9 == 2) {
+        if (h3 == 2) {
             new com.anythink.expressad.video.dynview.j.b().a(view, cVar);
             return;
         }
-        if (h9 == 3) {
+        if (h3 == 3) {
             new com.anythink.expressad.video.dynview.j.b().b(view, cVar);
-        } else if (h9 == 4) {
+        } else if (h3 == 4) {
             new com.anythink.expressad.video.dynview.j.b().c(view, cVar);
         } else {
-            if (h9 != 5) {
+            if (h3 != 5) {
                 return;
             }
             new com.anythink.expressad.video.dynview.j.b();

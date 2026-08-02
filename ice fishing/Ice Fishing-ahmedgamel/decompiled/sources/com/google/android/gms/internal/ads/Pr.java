@@ -10,33 +10,33 @@ import android.os.Parcelable;
 import android.text.TextUtils;
 import java.util.ArrayList;
 import java.util.List;
-import o2.C4783a;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import p2.C4835j;
-import u2.C5069B;
+import q2.C4869a;
+import r2.C4906k;
+import w2.C5140B;
 
 /* loaded from: classes2.dex */
 public final class Pr implements Os {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f26872a;
+    public final /* synthetic */ int f27659a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Object f26873b;
+    public final Object f27660b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Object f26874c;
+    public final Object f27661c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final Object f26875d;
+    public final Object f27662d;
 
     public /* synthetic */ Pr(int i, Object obj, Object obj2, Object obj3) {
-        this.f26872a = i;
-        this.f26873b = obj;
-        this.f26874c = obj2;
-        this.f26875d = obj3;
+        this.f27659a = i;
+        this.f27660b = obj;
+        this.f27661c = obj2;
+        this.f27662d = obj3;
     }
 
     @Override // com.google.android.gms.internal.ads.Os
@@ -49,15 +49,15 @@ public final class Pr implements Os {
         JSONObject jSONObject;
         String str;
         JSONArray optJSONArray;
-        switch (this.f26872a) {
+        switch (this.f27659a) {
             case 0:
                 Bundle bundle = (Bundle) obj;
-                if (((Boolean) AbstractC2769Sa.f27485a.r()).booleanValue()) {
+                if (((Boolean) AbstractC2789Sa.f28277a.r()).booleanValue()) {
                     Bundle bundle2 = new Bundle();
-                    u2.D d2 = C4835j.f39733C.f39738c;
+                    w2.D d9 = C4906k.f40186C.f40191c;
                     String str2 = null;
                     try {
-                        ActivityManager activityManager = (ActivityManager) ((Context) this.f26873b).getSystemService("activity");
+                        ActivityManager activityManager = (ActivityManager) ((Context) this.f27660b).getSystemService("activity");
                         if (activityManager != null && (runningTasks = activityManager.getRunningTasks(1)) != null && !runningTasks.isEmpty() && (runningTaskInfo = runningTasks.get(0)) != null) {
                             componentName = runningTaskInfo.topActivity;
                             if (componentName != null) {
@@ -69,11 +69,11 @@ public final class Pr implements Os {
                     }
                     bundle2.putString("activity", str2);
                     Bundle bundle3 = new Bundle();
-                    q2.f1 f1Var = (q2.f1) this.f26874c;
-                    bundle3.putInt("width", f1Var.f40146x);
-                    bundle3.putInt("height", f1Var.f40143u);
+                    s2.f1 f1Var = (s2.f1) this.f27661c;
+                    bundle3.putInt("width", f1Var.f40445x);
+                    bundle3.putInt("height", f1Var.f40442u);
                     bundle2.putBundle("size", bundle3);
-                    ArrayList arrayList = (ArrayList) this.f26875d;
+                    ArrayList arrayList = (ArrayList) this.f27662d;
                     if (!arrayList.isEmpty()) {
                         bundle2.putParcelableArray("parents", (Parcelable[]) arrayList.toArray(new Parcelable[arrayList.size()]));
                     }
@@ -82,8 +82,8 @@ public final class Pr implements Os {
                 }
                 return;
             case 1:
-                C3052cu c3052cu = (C3052cu) this.f26873b;
-                ArrayList<String> arrayList2 = c3052cu.f29627h;
+                C3075cu c3075cu = (C3075cu) this.f27660b;
+                ArrayList<String> arrayList2 = c3075cu.f30397h;
                 Bundle bundle4 = (Bundle) obj;
                 if (arrayList2 == null) {
                     return;
@@ -94,98 +94,98 @@ public final class Pr implements Os {
                 }
                 bundle4.putInt("native_version", 3);
                 bundle4.putStringArrayList("native_templates", arrayList2);
-                bundle4.putStringArrayList("native_custom_templates", c3052cu.i);
-                C3462kb c3462kb = c3052cu.f29628j;
-                if (c3462kb != null) {
-                    if (c3462kb.f31471n > 3) {
+                bundle4.putStringArrayList("native_custom_templates", c3075cu.i);
+                C3485kb c3485kb = c3075cu.f30398j;
+                if (c3485kb != null) {
+                    if (c3485kb.f32248n > 3) {
                         bundle4.putBoolean("enable_native_media_orientation", true);
-                        int i6 = c3462kb.f31467A;
-                        String str3 = i6 != 1 ? i6 != 2 ? i6 != 3 ? i6 != 4 ? com.anythink.core.common.v.m.f16809e : "square" : "portrait" : "landscape" : "any";
-                        if (!com.anythink.core.common.v.m.f16809e.equals(str3)) {
+                        int i4 = c3485kb.f32244A;
+                        String str3 = i4 != 1 ? i4 != 2 ? i4 != 3 ? i4 != 4 ? com.anythink.core.common.v.m.f17596e : "square" : "portrait" : "landscape" : "any";
+                        if (!com.anythink.core.common.v.m.f17596e.equals(str3)) {
                             bundle4.putString("native_media_orientation", str3);
                         }
                     }
-                    int i9 = c3462kb.f31473v;
-                    String str4 = i9 != 0 ? i9 != 1 ? i9 != 2 ? com.anythink.core.common.v.m.f16809e : "landscape" : "portrait" : "any";
-                    if (!com.anythink.core.common.v.m.f16809e.equals(str4)) {
+                    int i6 = c3485kb.f32250v;
+                    String str4 = i6 != 0 ? i6 != 1 ? i6 != 2 ? com.anythink.core.common.v.m.f17596e : "landscape" : "portrait" : "any";
+                    if (!com.anythink.core.common.v.m.f17596e.equals(str4)) {
                         bundle4.putString("native_image_orientation", str4);
                     }
-                    bundle4.putBoolean("native_multiple_images", c3462kb.f31474w);
-                    bundle4.putBoolean("use_custom_mute", c3462kb.f31477z);
-                    int i10 = c3462kb.f31468B;
-                    if (i10 != 0) {
-                        bundle4.putBoolean("sccg_tap", c3462kb.f31469C);
-                        bundle4.putInt("sccg_dir", i10);
+                    bundle4.putBoolean("native_multiple_images", c3485kb.f32251w);
+                    bundle4.putBoolean("use_custom_mute", c3485kb.f32254z);
+                    int i9 = c3485kb.f32245B;
+                    if (i9 != 0) {
+                        bundle4.putBoolean("sccg_tap", c3485kb.f32246C);
+                        bundle4.putInt("sccg_dir", i9);
                     }
                 }
-                PackageInfo packageInfo = (PackageInfo) this.f26874c;
-                int i11 = packageInfo != null ? packageInfo.versionCode : 0;
-                C5069B c5069b = (C5069B) this.f26875d;
-                c5069b.i();
-                synchronized (c5069b.f41209a) {
-                    i = c5069b.f41225r;
+                PackageInfo packageInfo = (PackageInfo) this.f27661c;
+                int i10 = packageInfo != null ? packageInfo.versionCode : 0;
+                C5140B c5140b = (C5140B) this.f27662d;
+                c5140b.i();
+                synchronized (c5140b.f41599a) {
+                    i = c5140b.f41615r;
                 }
-                if (i11 > i) {
-                    c5069b.i();
-                    synchronized (c5069b.f41209a) {
+                if (i10 > i) {
+                    c5140b.i();
+                    synchronized (c5140b.f41599a) {
                         try {
-                            c5069b.f41227t = new JSONObject();
-                            SharedPreferences.Editor editor = c5069b.f41215g;
+                            c5140b.f41617t = new JSONObject();
+                            SharedPreferences.Editor editor = c5140b.f41605g;
                             if (editor != null) {
                                 editor.remove("native_advanced_settings");
-                                c5069b.f41215g.apply();
+                                c5140b.f41605g.apply();
                             }
-                            c5069b.j();
+                            c5140b.j();
                         } finally {
                         }
                     }
-                    c5069b.i();
-                    synchronized (c5069b.f41209a) {
+                    c5140b.i();
+                    synchronized (c5140b.f41599a) {
                         try {
-                            if (c5069b.f41225r != i11) {
-                                c5069b.f41225r = i11;
-                                SharedPreferences.Editor editor2 = c5069b.f41215g;
+                            if (c5140b.f41615r != i10) {
+                                c5140b.f41615r = i10;
+                                SharedPreferences.Editor editor2 = c5140b.f41605g;
                                 if (editor2 != null) {
-                                    editor2.putInt("version_code", i11);
-                                    c5069b.f41215g.apply();
+                                    editor2.putInt("version_code", i10);
+                                    c5140b.f41605g.apply();
                                 }
-                                c5069b.j();
+                                c5140b.j();
                             }
                         } finally {
                         }
                     }
                 }
-                c5069b.i();
-                synchronized (c5069b.f41209a) {
-                    jSONObject = c5069b.f41227t;
+                c5140b.i();
+                synchronized (c5140b.f41599a) {
+                    jSONObject = c5140b.f41617t;
                 }
                 String str5 = null;
-                if (jSONObject != null && (optJSONArray = jSONObject.optJSONArray(c3052cu.f29626g)) != null) {
+                if (jSONObject != null && (optJSONArray = jSONObject.optJSONArray(c3075cu.f30396g)) != null) {
                     str5 = optJSONArray.toString();
                 }
                 if (!TextUtils.isEmpty(str5)) {
                     bundle4.putString("native_advanced_settings", str5);
                 }
-                int i12 = c3052cu.f29630l;
-                if (i12 > 1) {
-                    bundle4.putInt("max_num_ads", i12);
+                int i11 = c3075cu.f30400l;
+                if (i11 > 1) {
+                    bundle4.putInt("max_num_ads", i11);
                 }
-                C2550Fc c2550Fc = c3052cu.f29621b;
-                if (c2550Fc != null) {
-                    String str6 = c2550Fc.f24808v;
+                C2570Fc c2570Fc = c3075cu.f30391b;
+                if (c2570Fc != null) {
+                    String str6 = c2570Fc.f25597v;
                     if (TextUtils.isEmpty(str6)) {
-                        if (c2550Fc.f24806n >= 2) {
-                            int i13 = c2550Fc.f24809w;
-                            str = i13 != 2 ? i13 != 3 ? "l" : "p" : "l";
+                        if (c2570Fc.f25595n >= 2) {
+                            int i12 = c2570Fc.f25598w;
+                            str = i12 != 2 ? i12 != 3 ? "l" : "p" : "l";
                         } else {
-                            int i14 = c2550Fc.f24807u;
-                            if (i14 != 1) {
-                                if (i14 != 2) {
-                                    StringBuilder sb = new StringBuilder(String.valueOf(i14).length() + 41);
+                            int i13 = c2570Fc.f25596u;
+                            if (i13 != 1) {
+                                if (i13 != 2) {
+                                    StringBuilder sb = new StringBuilder(String.valueOf(i13).length() + 41);
                                     sb.append("Instream ad video aspect ratio ");
-                                    sb.append(i14);
+                                    sb.append(i13);
                                     sb.append(" is wrong.");
-                                    v2.i.c(sb.toString());
+                                    x2.i.c(sb.toString());
                                 } else {
                                     str = "p";
                                 }
@@ -198,48 +198,48 @@ public final class Pr implements Os {
                     }
                     bundle4.putBoolean("instr", true);
                 }
-                if (!((Boolean) q2.r.f40207e.f40210c.a(AbstractC3569ma.od)).booleanValue() || c3462kb == null) {
+                if (!((Boolean) s2.r.f40506e.f40509c.a(AbstractC3592ma.od)).booleanValue() || c3485kb == null) {
                     return;
                 }
-                q2.Z0 z02 = c3462kb.f31476y;
+                s2.Z0 z02 = c3485kb.f32253y;
                 if (z02 != null) {
                     Bundle bundle5 = new Bundle();
-                    bundle5.putBoolean("startMuted", z02.f40086n);
-                    bundle5.putBoolean("clickToExpandRequested", z02.f40088v);
-                    bundle5.putBoolean("customControlsRequested", z02.f40087u);
-                    bundle4.putBundle(com.anythink.basead.exoplayer.k.o.f8444a, bundle5);
+                    bundle5.putBoolean("startMuted", z02.f40385n);
+                    bundle5.putBoolean("clickToExpandRequested", z02.f40387v);
+                    bundle5.putBoolean("customControlsRequested", z02.f40386u);
+                    bundle4.putBundle(com.anythink.basead.exoplayer.k.o.f9230a, bundle5);
                 }
-                bundle4.putBoolean("disable_image_loading", c3462kb.f31472u);
-                bundle4.putInt("preferred_ad_choices_position", c3462kb.f31475x);
+                bundle4.putBoolean("disable_image_loading", c3485kb.f32249u);
+                bundle4.putInt("preferred_ad_choices_position", c3485kb.f32252x);
                 return;
             default:
                 try {
-                    JSONObject N8 = A8.b.N("pii", (JSONObject) obj);
-                    C4783a c4783a = (C4783a) this.f26873b;
-                    if (c4783a != null) {
-                        String str7 = c4783a.f39556a;
+                    JSONObject v9 = d6.c.v("pii", (JSONObject) obj);
+                    C4869a c4869a = (C4869a) this.f27660b;
+                    if (c4869a != null) {
+                        String str7 = c4869a.f40039a;
                         if (!TextUtils.isEmpty(str7)) {
-                            N8.put("rdid", str7);
-                            N8.put("is_lat", c4783a.f39557b);
-                            N8.put("idtype", "adid");
-                            C3381j1 c3381j1 = (C3381j1) this.f26875d;
-                            String str8 = (String) c3381j1.f31157v;
-                            long j6 = c3381j1.f31156u;
+                            v9.put("rdid", str7);
+                            v9.put("is_lat", c4869a.f40040b);
+                            v9.put("idtype", "adid");
+                            C3404j1 c3404j1 = (C3404j1) this.f27662d;
+                            String str8 = (String) c3404j1.f31944v;
+                            long j6 = c3404j1.f31943u;
                             if (str8 != null && j6 > 0) {
-                                N8.put("paidv1_id_android_3p", str8);
-                                N8.put("paidv1_creation_time_android_3p", j6);
+                                v9.put("paidv1_id_android_3p", str8);
+                                v9.put("paidv1_creation_time_android_3p", j6);
                             }
                             return;
                         }
                     }
-                    String str9 = (String) this.f26874c;
+                    String str9 = (String) this.f27661c;
                     if (str9 != null) {
-                        N8.put("pdid", str9);
-                        N8.put("pdidtype", "ssaid");
+                        v9.put("pdid", str9);
+                        v9.put("pdidtype", "ssaid");
                     }
                     return;
                 } catch (JSONException e9) {
-                    u2.z.l("Failed putting Ad ID.", e9);
+                    w2.z.l("Failed putting Ad ID.", e9);
                     return;
                 }
         }

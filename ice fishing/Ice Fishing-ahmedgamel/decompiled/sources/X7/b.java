@@ -1,29 +1,30 @@
 package X7;
 
+import E2.C0316m;
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
 /* loaded from: classes2.dex */
 public abstract class b extends p {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final /* synthetic */ AtomicReferenceFieldUpdater f3826a = AtomicReferenceFieldUpdater.newUpdater(b.class, Object.class, "_consensus$volatile");
-    private volatile /* synthetic */ Object _consensus$volatile = a.f3820a;
+    public static final /* synthetic */ AtomicReferenceFieldUpdater f3781a = AtomicReferenceFieldUpdater.newUpdater(b.class, Object.class, "_consensus$volatile");
+    private volatile /* synthetic */ Object _consensus$volatile = a.f3775a;
 
     @Override // X7.p
     public final Object a(Object obj) {
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f3826a;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f3781a;
         Object obj2 = atomicReferenceFieldUpdater.get(this);
-        D2.b bVar = a.f3820a;
-        if (obj2 == bVar) {
-            D2.b c9 = c(obj);
+        C0316m c0316m = a.f3775a;
+        if (obj2 == c0316m) {
+            C0316m c9 = c(obj);
             obj2 = atomicReferenceFieldUpdater.get(this);
-            if (obj2 == bVar) {
+            if (obj2 == c0316m) {
                 while (true) {
-                    if (atomicReferenceFieldUpdater.compareAndSet(this, bVar, c9)) {
+                    if (atomicReferenceFieldUpdater.compareAndSet(this, c0316m, c9)) {
                         obj2 = c9;
                         break;
                     }
-                    if (atomicReferenceFieldUpdater.get(this) != bVar) {
+                    if (atomicReferenceFieldUpdater.get(this) != c0316m) {
                         obj2 = atomicReferenceFieldUpdater.get(this);
                         break;
                     }
@@ -36,5 +37,5 @@ public abstract class b extends p {
 
     public abstract void b(Object obj, Object obj2);
 
-    public abstract D2.b c(Object obj);
+    public abstract C0316m c(Object obj);
 }

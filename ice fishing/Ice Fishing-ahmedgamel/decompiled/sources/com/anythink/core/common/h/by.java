@@ -4,46 +4,46 @@ package com.anythink.core.common.h;
 public final class by {
 
     /* renamed from: a, reason: collision with root package name */
-    int f13836a;
+    int f14622a;
 
     /* renamed from: b, reason: collision with root package name */
-    int f13837b;
+    int f14623b;
 
     /* renamed from: c, reason: collision with root package name */
-    int f13838c;
+    int f14624c;
 
     /* renamed from: d, reason: collision with root package name */
-    int f13839d;
+    int f14625d;
 
     public final int a() {
-        return this.f13836a;
+        return this.f14622a;
     }
 
     public final int b() {
-        return this.f13837b;
+        return this.f14623b;
     }
 
     public final int c() {
-        return this.f13838c;
+        return this.f14624c;
     }
 
     public final int d() {
-        return this.f13839d;
+        return this.f14625d;
     }
 
     public final void a(int i) {
-        this.f13836a = i;
+        this.f14622a = i;
     }
 
     public final void b(int i) {
-        this.f13837b = i;
+        this.f14623b = i;
     }
 
     public final void c(int i) {
-        this.f13838c = i;
+        this.f14624c = i;
     }
 
     public final void d(int i) {
-        this.f13839d = i;
+        this.f14625d = i;
     }
 }

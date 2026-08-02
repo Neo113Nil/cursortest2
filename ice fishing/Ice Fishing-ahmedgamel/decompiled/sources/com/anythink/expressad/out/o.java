@@ -6,7 +6,7 @@ import java.io.Serializable;
 public abstract class o implements Serializable {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final long f20064a = 1;
+    private static final long f20851a = 1;
 
     public abstract void a();
 

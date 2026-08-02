@@ -1,7 +1,7 @@
 package P5;
 
-import a6.InterfaceC0439a;
-import b6.InterfaceC0520b;
+import a6.InterfaceC0443a;
+import b6.InterfaceC0528b;
 import java.util.Collection;
 import java.util.Map;
 
@@ -13,7 +13,7 @@ public interface a {
 
     void addEmail(String str);
 
-    void addObserver(InterfaceC0439a interfaceC0439a);
+    void addObserver(InterfaceC0443a interfaceC0443a);
 
     void addSms(String str);
 
@@ -25,7 +25,7 @@ public interface a {
 
     String getOnesignalId();
 
-    InterfaceC0520b getPushSubscription();
+    InterfaceC0528b getPushSubscription();
 
     Map<String, String> getTags();
 
@@ -35,7 +35,7 @@ public interface a {
 
     void removeEmail(String str);
 
-    void removeObserver(InterfaceC0439a interfaceC0439a);
+    void removeObserver(InterfaceC0443a interfaceC0443a);
 
     void removeSms(String str);
 

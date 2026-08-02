@@ -1,251 +1,302 @@
 package com.bumptech.glide;
 
-import B1.A;
-import D.y;
-import P2.w;
+import N3.C;
+import Q7.q;
+import android.content.Context;
+import android.database.Cursor;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
-import com.bumptech.glide.load.ImageHeaderParser$ImageType;
-import com.google.android.gms.internal.ads.C2941aq;
-import com.icefishingapp.icefishing.AbstractC4404f;
-import i8.u;
-import i8.v;
-import i8.x;
-import java.io.InputStream;
-import java.lang.reflect.Array;
-import java.lang.reflect.Field;
-import java.nio.ByteBuffer;
-import java.util.ArrayList;
-import java.util.HashMap;
+import android.os.IBinder;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.util.Log;
+import android.util.TypedValue;
+import android.widget.EditText;
+import com.google.android.gms.internal.ads.C3624n5;
+import java.util.ArrayDeque;
+import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
-import s1.InterfaceC4969d;
+import w.AbstractC5128c;
 
 /* loaded from: classes.dex */
-public abstract class e {
-
-    /* renamed from: a, reason: collision with root package name */
-    public static Field f23379a;
-
-    /* renamed from: b, reason: collision with root package name */
-    public static boolean f23380b;
-
-    /* renamed from: c, reason: collision with root package name */
-    public static Class f23381c;
-
-    /* renamed from: d, reason: collision with root package name */
-    public static boolean f23382d;
-
-    /* renamed from: e, reason: collision with root package name */
-    public static Field f23383e;
-
-    /* renamed from: f, reason: collision with root package name */
-    public static boolean f23384f;
-
-    /* renamed from: g, reason: collision with root package name */
-    public static Field f23385g;
-
-    /* renamed from: h, reason: collision with root package name */
-    public static boolean f23386h;
-
-    public static final C7.b b(Enum[] entries) {
-        kotlin.jvm.internal.h.e(entries, "entries");
-        return new C7.b(entries);
+public abstract class e implements U.j {
+    public static byte[] a(ArrayDeque arrayDeque, int i) {
+        if (arrayDeque.isEmpty()) {
+            return new byte[0];
+        }
+        byte[] bArr = (byte[]) arrayDeque.remove();
+        if (bArr.length == i) {
+            return bArr;
+        }
+        int length = i - bArr.length;
+        byte[] copyOf = Arrays.copyOf(bArr, i);
+        while (length > 0) {
+            byte[] bArr2 = (byte[]) arrayDeque.remove();
+            int min = Math.min(length, bArr2.length);
+            System.arraycopy(bArr2, 0, copyOf, i - length, min);
+            length -= min;
+        }
+        return copyOf;
     }
 
-    public static final S0.j c(S0.p pVar) {
-        kotlin.jvm.internal.h.e(pVar, "<this>");
-        return new S0.j(pVar.f2808a, pVar.f2826t);
+    public static final void b(c6.i iVar, String str) {
+        c6.d dVar = c6.d.f5754u;
+        c6.n nVar = c6.n.f5794u;
+        new c6.e(iVar, iVar.f5780b, iVar.f5782d);
     }
 
-    public static int d(ArrayList arrayList, InputStream inputStream, C2941aq c2941aq) {
-        if (inputStream != null) {
-            if (!inputStream.markSupported()) {
-                inputStream = new A(inputStream, c2941aq);
-            }
-            inputStream.mark(5242880);
-            int size = arrayList.size();
-            for (int i = 0; i < size; i++) {
-                try {
-                    int b9 = ((InterfaceC4969d) arrayList.get(i)).b(inputStream, c2941aq);
-                    if (b9 != -1) {
-                        return b9;
+    public static final int c(Cursor c9, String str) {
+        String str2;
+        kotlin.jvm.internal.h.e(c9, "c");
+        int columnIndex = c9.getColumnIndex(str);
+        if (columnIndex < 0) {
+            columnIndex = c9.getColumnIndex("`" + str + '`');
+            if (columnIndex < 0) {
+                if (Build.VERSION.SDK_INT <= 25 && str.length() != 0) {
+                    String[] columnNames = c9.getColumnNames();
+                    kotlin.jvm.internal.h.d(columnNames, "columnNames");
+                    String concat = com.anythink.core.common.d.j.f13164z.concat(str);
+                    String b9 = AbstractC5128c.b('`', com.anythink.core.common.d.j.f13164z, str);
+                    int length = columnNames.length;
+                    int i = 0;
+                    int i4 = 0;
+                    while (i4 < length) {
+                        String str3 = columnNames[i4];
+                        int i6 = i + 1;
+                        if (str3.length() >= str.length() + 2 && (q.a0(str3, concat) || (str3.charAt(0) == '`' && q.a0(str3, b9)))) {
+                            columnIndex = i;
+                            break;
+                        }
+                        i4++;
+                        i = i6;
                     }
-                } finally {
-                    inputStream.reset();
                 }
+                columnIndex = -1;
             }
         }
-        return -1;
-    }
-
-    public static ImageHeaderParser$ImageType e(ArrayList arrayList, InputStream inputStream, C2941aq c2941aq) {
-        if (inputStream == null) {
-            return ImageHeaderParser$ImageType.UNKNOWN;
+        if (columnIndex >= 0) {
+            return columnIndex;
         }
-        if (!inputStream.markSupported()) {
-            inputStream = new A(inputStream, c2941aq);
-        }
-        inputStream.mark(5242880);
-        int size = arrayList.size();
-        for (int i = 0; i < size; i++) {
-            try {
-                ImageHeaderParser$ImageType c9 = ((InterfaceC4969d) arrayList.get(i)).c(inputStream);
-                inputStream.reset();
-                if (c9 != ImageHeaderParser$ImageType.UNKNOWN) {
-                    return c9;
+        try {
+            String[] columnNames2 = c9.getColumnNames();
+            kotlin.jvm.internal.h.d(columnNames2, "c.columnNames");
+            StringBuilder sb = new StringBuilder();
+            sb.append((CharSequence) "");
+            int i9 = 0;
+            for (String str4 : columnNames2) {
+                i9++;
+                if (i9 > 1) {
+                    sb.append((CharSequence) ", ");
                 }
-            } catch (Throwable th) {
-                inputStream.reset();
-                throw th;
+                C.y(sb, str4, null);
             }
+            sb.append((CharSequence) "");
+            str2 = sb.toString();
+        } catch (Exception e9) {
+            Log.d("RoomCursorUtil", "Cannot collect column names for debug purposes", e9);
+            str2 = com.anythink.core.common.v.m.f17596e;
         }
-        return ImageHeaderParser$ImageType.UNKNOWN;
+        throw new IllegalArgumentException("column '" + str + "' does not exist. Available columns: " + str2);
     }
 
-    public static ImageHeaderParser$ImageType f(ArrayList arrayList, ByteBuffer byteBuffer) {
-        if (byteBuffer == null) {
-            return ImageHeaderParser$ImageType.UNKNOWN;
-        }
-        int size = arrayList.size();
-        for (int i = 0; i < size; i++) {
-            try {
-                ImageHeaderParser$ImageType a9 = ((InterfaceC4969d) arrayList.get(i)).a(byteBuffer);
-                AtomicReference atomicReference = N1.b.f1908a;
-                if (a9 != ImageHeaderParser$ImageType.UNKNOWN) {
-                    return a9;
-                }
-            } catch (Throwable th) {
-                AtomicReference atomicReference2 = N1.b.f1908a;
-                throw th;
-            }
-        }
-        return ImageHeaderParser$ImageType.UNKNOWN;
+    public static boolean e(EditText editText) {
+        return editText.getInputType() != 0;
     }
 
-    public static int g(int i) {
-        if (i == 1) {
-            return 0;
+    public static TypedValue f(Context context, int i) {
+        TypedValue typedValue = new TypedValue();
+        if (context.getTheme().resolveAttribute(i, typedValue, true)) {
+            return typedValue;
         }
-        if (i == 2) {
-            return 1;
-        }
-        if (i == 4) {
-            return 2;
-        }
-        if (i == 8) {
-            return 3;
-        }
-        if (i == 16) {
-            return 4;
-        }
-        if (i == 32) {
-            return 5;
-        }
-        if (i == 64) {
-            return 6;
-        }
-        if (i == 128) {
-            return 7;
-        }
-        if (i == 256) {
-            return 8;
-        }
-        throw new IllegalArgumentException(AbstractC4404f.e(i, "type needs to be >= FIRST and <= LAST, type="));
+        return null;
     }
 
-    public static void h(Drawable drawable, int i) {
+    public static boolean g(Context context, int i, boolean z6) {
+        TypedValue f2 = f(context, i);
+        return (f2 == null || f2.type != 18) ? z6 : f2.data != 0;
+    }
+
+    public static TypedValue h(Context context, String str, int i) {
+        TypedValue f2 = f(context, i);
+        if (f2 != null) {
+            return f2;
+        }
+        throw new IllegalArgumentException(String.format("%1$s requires a value for the %2$s attribute to be set in your app theme. You can either set the attribute in your theme or update your theme to inherit from Theme.MaterialComponents (or a descendant).", str, context.getResources().getResourceName(i)));
+    }
+
+    public static void l(Drawable drawable, int i) {
         H.a.g(drawable, i);
     }
 
-    public static final v i(v vVar) {
-        kotlin.jvm.internal.h.e(vVar, "<this>");
-        u b9 = vVar.b();
-        x xVar = vVar.f38258z;
-        b9.f38236g = new j8.a(xVar.j(), xVar.b());
-        return b9.a();
-    }
-
-    public static boolean j(Bundle bundle, Bundle bundle2) {
-        if (bundle != null && bundle2 != null) {
-            if (bundle.size() != bundle2.size()) {
-                return false;
-            }
-            for (String str : bundle.keySet()) {
-                if (!bundle2.containsKey(str)) {
-                    return false;
+    public static byte[] m(C3624n5 c3624n5) {
+        ArrayDeque arrayDeque = new ArrayDeque(20);
+        int min = Math.min(8192, Math.max(128, Integer.highestOneBit(0) * 2));
+        int i = 0;
+        while (i < 2147483639) {
+            int min2 = Math.min(min, 2147483639 - i);
+            byte[] bArr = new byte[min2];
+            arrayDeque.add(bArr);
+            int i4 = 0;
+            while (i4 < min2) {
+                int read = c3624n5.read(bArr, i4, min2 - i4);
+                if (read == -1) {
+                    return a(arrayDeque, i);
                 }
-                Object obj = bundle.get(str);
-                Object obj2 = bundle2.get(str);
-                if (obj == null || obj2 == null) {
-                    bundle2 = obj2;
-                    bundle = obj;
-                } else if (obj instanceof Bundle) {
-                    if (!(obj2 instanceof Bundle) || !j((Bundle) obj, (Bundle) obj2)) {
-                        return false;
-                    }
-                } else if (obj.getClass().isArray()) {
-                    int length = Array.getLength(obj);
-                    if (!obj2.getClass().isArray() || length != Array.getLength(obj2)) {
-                        return false;
-                    }
-                    for (int i = 0; i < length; i++) {
-                        if (!w.l(Array.get(obj, i), Array.get(obj2, i))) {
-                            return false;
-                        }
-                    }
-                } else if (!obj.equals(obj2)) {
-                    return false;
-                }
+                i4 += read;
+                i += read;
             }
-            return true;
+            long j6 = min * (min < 4096 ? 4 : 2);
+            min = j6 > 2147483647L ? Integer.MAX_VALUE : j6 < -2147483648L ? Integer.MIN_VALUE : (int) j6;
         }
-        return bundle == null && bundle2 == null;
-    }
-
-    public static HashMap k(Bundle bundle) {
-        HashMap hashMap = new HashMap();
-        if (bundle != null) {
-            for (String str : bundle.keySet()) {
-                String string = bundle.getString(str);
-                if (string != null) {
-                    hashMap.put(str, string);
-                }
-            }
+        if (c3624n5.read() == -1) {
+            return a(arrayDeque, 2147483639);
         }
-        return hashMap;
+        throw new OutOfMemoryError("input is too large to fit in a byte array");
     }
 
-    public static void l(int i, int i6) {
-        String B9;
-        if (i < 0 || i >= i6) {
-            if (i < 0) {
-                B9 = f.B("%s (%s) must not be negative", "index", Integer.valueOf(i));
+    public static void n(Parcel parcel, int i, Bundle bundle) {
+        if (bundle == null) {
+            return;
+        }
+        int x9 = x(parcel, i);
+        parcel.writeBundle(bundle);
+        z(parcel, x9);
+    }
+
+    public static void o(Parcel parcel, int i, byte[] bArr) {
+        if (bArr == null) {
+            return;
+        }
+        int x9 = x(parcel, i);
+        parcel.writeByteArray(bArr);
+        z(parcel, x9);
+    }
+
+    public static void p(Parcel parcel, int i, IBinder iBinder) {
+        if (iBinder == null) {
+            return;
+        }
+        int x9 = x(parcel, i);
+        parcel.writeStrongBinder(iBinder);
+        z(parcel, x9);
+    }
+
+    public static void q(Parcel parcel, int i, Parcelable parcelable, int i4) {
+        if (parcelable == null) {
+            return;
+        }
+        int x9 = x(parcel, i);
+        parcelable.writeToParcel(parcel, i4);
+        z(parcel, x9);
+    }
+
+    public static void r(Parcel parcel, int i, String str) {
+        if (str == null) {
+            return;
+        }
+        int x9 = x(parcel, i);
+        parcel.writeString(str);
+        z(parcel, x9);
+    }
+
+    public static void s(Parcel parcel, int i, String[] strArr) {
+        if (strArr == null) {
+            return;
+        }
+        int x9 = x(parcel, i);
+        parcel.writeStringArray(strArr);
+        z(parcel, x9);
+    }
+
+    public static void t(Parcel parcel, int i, List list) {
+        if (list == null) {
+            return;
+        }
+        int x9 = x(parcel, i);
+        parcel.writeStringList(list);
+        z(parcel, x9);
+    }
+
+    public static void u(Parcel parcel, int i, Parcelable[] parcelableArr, int i4) {
+        if (parcelableArr == null) {
+            return;
+        }
+        int x9 = x(parcel, i);
+        parcel.writeInt(parcelableArr.length);
+        for (Parcelable parcelable : parcelableArr) {
+            if (parcelable == null) {
+                parcel.writeInt(0);
             } else {
-                if (i6 < 0) {
-                    throw new IllegalArgumentException(y.m(i6, "negative size: ", new StringBuilder(String.valueOf(i6).length() + 15)));
-                }
-                B9 = f.B("%s (%s) must be less than size (%s)", "index", Integer.valueOf(i), Integer.valueOf(i6));
+                int dataPosition = parcel.dataPosition();
+                parcel.writeInt(1);
+                int dataPosition2 = parcel.dataPosition();
+                parcelable.writeToParcel(parcel, i4);
+                int dataPosition3 = parcel.dataPosition();
+                parcel.setDataPosition(dataPosition);
+                parcel.writeInt(dataPosition3 - dataPosition2);
+                parcel.setDataPosition(dataPosition3);
             }
-            throw new IndexOutOfBoundsException(B9);
+        }
+        z(parcel, x9);
+    }
+
+    public static void v(Parcel parcel, int i, List list) {
+        if (list == null) {
+            return;
+        }
+        int x9 = x(parcel, i);
+        int size = list.size();
+        parcel.writeInt(size);
+        for (int i4 = 0; i4 < size; i4++) {
+            Parcelable parcelable = (Parcelable) list.get(i4);
+            if (parcelable == null) {
+                parcel.writeInt(0);
+            } else {
+                int dataPosition = parcel.dataPosition();
+                parcel.writeInt(1);
+                int dataPosition2 = parcel.dataPosition();
+                parcelable.writeToParcel(parcel, 0);
+                int dataPosition3 = parcel.dataPosition();
+                parcel.setDataPosition(dataPosition);
+                parcel.writeInt(dataPosition3 - dataPosition2);
+                parcel.setDataPosition(dataPosition3);
+            }
+        }
+        z(parcel, x9);
+    }
+
+    public static void w(Parcel parcel, int i, int i4) {
+        parcel.writeInt(i | (i4 << 16));
+    }
+
+    public static int x(Parcel parcel, int i) {
+        parcel.writeInt(i | (-65536));
+        parcel.writeInt(0);
+        return parcel.dataPosition();
+    }
+
+    public static Z2.b y(Context context) {
+        try {
+            return Z2.b.c(context, Z2.b.f4122b);
+        } catch (Exception e9) {
+            throw new x2.j(e9);
         }
     }
 
-    public static void m(int i, int i6, int i9) {
-        if (i < 0 || i6 < i || i6 > i9) {
-            throw new IndexOutOfBoundsException((i < 0 || i > i9) ? n(i, i9, "start index") : (i6 < 0 || i6 > i9) ? n(i6, i9, "end index") : f.B("end index (%s) must not be less than start index (%s)", Integer.valueOf(i6), Integer.valueOf(i)));
-        }
+    public static void z(Parcel parcel, int i) {
+        int dataPosition = parcel.dataPosition();
+        parcel.setDataPosition(i - 4);
+        parcel.writeInt(dataPosition - i);
+        parcel.setDataPosition(dataPosition);
     }
 
-    public static String n(int i, int i6, String str) {
-        if (i < 0) {
-            return f.B("%s (%s) must not be negative", str, Integer.valueOf(i));
-        }
-        if (i6 >= 0) {
-            return f.B("%s (%s) must not be greater than size (%s)", str, Integer.valueOf(i), Integer.valueOf(i6));
-        }
-        throw new IllegalArgumentException(y.m(i6, "negative size: ", new StringBuilder(String.valueOf(i6).length() + 15)));
-    }
+    public abstract void d();
 
-    public abstract List a(String str, List list);
+    public abstract void j(boolean z6);
+
+    public abstract void k();
+
+    public void i(boolean z6) {
+    }
 }

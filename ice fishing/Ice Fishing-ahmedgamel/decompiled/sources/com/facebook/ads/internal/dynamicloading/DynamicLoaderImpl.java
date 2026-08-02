@@ -46,27 +46,27 @@ import com.facebook.ads.internal.api.NativeBannerAdViewApi;
 import com.facebook.ads.internal.api.NativeComponentTagApi;
 import com.facebook.ads.internal.api.RewardedInterstitialAdApi;
 import com.facebook.ads.internal.api.RewardedVideoAdApi;
-import com.instagram.common.viewpoint.core.AbstractC1198Ra;
-import com.instagram.common.viewpoint.core.C1200Rc;
-import com.instagram.common.viewpoint.core.C1201Rd;
-import com.instagram.common.viewpoint.core.C1202Re;
-import com.instagram.common.viewpoint.core.C1203Rf;
-import com.instagram.common.viewpoint.core.C1205Rh;
-import com.instagram.common.viewpoint.core.C1211Rn;
-import com.instagram.common.viewpoint.core.C1213Rp;
-import com.instagram.common.viewpoint.core.C1215Rr;
-import com.instagram.common.viewpoint.core.C1216Rs;
-import com.instagram.common.viewpoint.core.C1223Rz;
-import com.instagram.common.viewpoint.core.C1274Tz;
-import com.instagram.common.viewpoint.core.C1302Vb;
-import com.instagram.common.viewpoint.core.C1303Vc;
-import com.instagram.common.viewpoint.core.C1304Vd;
-import com.instagram.common.viewpoint.core.C1313Vn;
-import com.instagram.common.viewpoint.core.C1324Vz;
-import com.instagram.common.viewpoint.core.C1869hB;
-import com.instagram.common.viewpoint.core.C1870hC;
-import com.instagram.common.viewpoint.core.C1887hT;
-import com.instagram.common.viewpoint.core.InterfaceC1301Va;
+import com.instagram.common.viewpoint.core.AbstractC1218Ra;
+import com.instagram.common.viewpoint.core.C1220Rc;
+import com.instagram.common.viewpoint.core.C1221Rd;
+import com.instagram.common.viewpoint.core.C1222Re;
+import com.instagram.common.viewpoint.core.C1223Rf;
+import com.instagram.common.viewpoint.core.C1225Rh;
+import com.instagram.common.viewpoint.core.C1231Rn;
+import com.instagram.common.viewpoint.core.C1233Rp;
+import com.instagram.common.viewpoint.core.C1235Rr;
+import com.instagram.common.viewpoint.core.C1236Rs;
+import com.instagram.common.viewpoint.core.C1243Rz;
+import com.instagram.common.viewpoint.core.C1294Tz;
+import com.instagram.common.viewpoint.core.C1322Vb;
+import com.instagram.common.viewpoint.core.C1323Vc;
+import com.instagram.common.viewpoint.core.C1324Vd;
+import com.instagram.common.viewpoint.core.C1333Vn;
+import com.instagram.common.viewpoint.core.C1344Vz;
+import com.instagram.common.viewpoint.core.C1889hB;
+import com.instagram.common.viewpoint.core.C1890hC;
+import com.instagram.common.viewpoint.core.C1907hT;
+import com.instagram.common.viewpoint.core.InterfaceC1321Va;
 import com.instagram.common.viewpoint.core.S2;
 import com.instagram.common.viewpoint.core.S3;
 import com.instagram.common.viewpoint.core.S4;
@@ -90,56 +90,56 @@ public class DynamicLoaderImpl implements DynamicLoader, RemoteRenderingApi {
     public static AudienceNetworkAdsApi A01;
     public static NativeAdViewApi A02;
     public static NativeBannerAdViewApi A03;
-    public static C1211Rn A04;
+    public static C1231Rn A04;
     public static String[] A05 = {"FC7PnIQgfKJQfBdQKCurjH6JKIFxjroV", "Ez", "t7pjhhQGIazlhmf4UkwJSh", "Iyhtqk6gC8uyo8Dul94yaDEfv0PrNxAT", "5egoyUR4tSKxNoVVXreZdHvR7BDPW4Oi", "IYlCvOKkAZQkBJEI1e2UxVPIL3gdF2Y", "0QNvsKlwTsAv0tvLZz9yZ17i9BLNPSLj", "RauEdYPLg0wTIRL3lDclFm017FzJm5su"};
-    public static final InitApi A06 = new C1215Rr();
+    public static final InitApi A06 = new C1235Rr();
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public AdOptionsViewApi createAdOptionsView(Context context, NativeAdBase nativeAdBase, NativeAdLayout nativeAdLayout, AdOptionsView.Orientation orientation, int i, AdOptionsView adOptionsView) {
-        return new C1887hT(context, nativeAdBase, nativeAdLayout, orientation, i, adOptionsView);
+        return new C1907hT(context, nativeAdBase, nativeAdLayout, orientation, i, adOptionsView);
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public AdOptionsViewApi createAdOptionsView(Context context, NativeAdBase nativeAdBase, NativeAdLayout nativeAdLayout, AdOptionsView adOptionsView) {
-        return new C1887hT(context, nativeAdBase, nativeAdLayout, adOptionsView);
+        return new C1907hT(context, nativeAdBase, nativeAdLayout, adOptionsView);
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public AdSettingsApi createAdSettingsApi() {
         if (A00 == null) {
-            A00 = new C1200Rc();
+            A00 = new C1220Rc();
         }
         return A00;
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public AdSizeApi createAdSizeApi(int i) {
-        return new C1274Tz(this, XG.A02(i));
+        return new C1294Tz(this, XG.A02(i));
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public AdViewApi createAdViewApi(Context context, String str, AdSize adSize, AdViewParentApi adViewParentApi, AdView adView) {
-        return (AdViewApi) AbstractC1198Ra.A00(new C1201Rd(context, str, adSize, adViewParentApi, adView), AdViewApi.class);
+        return (AdViewApi) AbstractC1218Ra.A00(new C1221Rd(context, str, adSize, adViewParentApi, adView), AdViewApi.class);
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public AdViewApi createAdViewApi(Context context, String str, String str2, AdViewParentApi adViewParentApi, AdView adView) throws Exception {
         try {
-            return (AdViewApi) AbstractC1198Ra.A00(new C1201Rd(context, str, str2, adViewParentApi, adView), AdViewApi.class);
-        } catch (C1313Vn e9) {
+            return (AdViewApi) AbstractC1218Ra.A00(new C1221Rd(context, str, str2, adViewParentApi, adView), AdViewApi.class);
+        } catch (C1333Vn e9) {
             throw new Exception(e9.A01());
         }
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public AudienceNetworkActivityApi createAudienceNetworkActivity(AudienceNetworkActivity audienceNetworkActivity, AudienceNetworkActivityApi audienceNetworkActivityApi) {
-        return new C1203Rf(audienceNetworkActivity, audienceNetworkActivityApi, new C1202Re(audienceNetworkActivity, audienceNetworkActivityApi));
+        return new C1223Rf(audienceNetworkActivity, audienceNetworkActivityApi, new C1222Re(audienceNetworkActivity, audienceNetworkActivityApi));
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public AudienceNetworkAdsApi createAudienceNetworkAdsApi() {
         if (A01 == null) {
-            A01 = new C1205Rh();
+            A01 = new C1225Rh();
         }
         AudienceNetworkAdsApi audienceNetworkAdsApi = A01;
         if (A05[2].length() != 22) {
@@ -166,22 +166,22 @@ public class DynamicLoaderImpl implements DynamicLoader, RemoteRenderingApi {
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public DefaultMediaViewVideoRendererApi createDefaultMediaViewVideoRendererApi() {
-        return new C1324Vz();
+        return new C1344Vz();
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public InterstitialAdApi createInterstitialAd(Context context, String str, InterstitialAd interstitialAd) {
-        return (InterstitialAdApi) AbstractC1198Ra.A00(new C1216Rs(context, str, interstitialAd), InterstitialAdApi.class);
+        return (InterstitialAdApi) AbstractC1218Ra.A00(new C1236Rs(context, str, interstitialAd), InterstitialAdApi.class);
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public MediaViewApi createMediaViewApi() {
-        return new C1870hC();
+        return new C1890hC();
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public MediaViewVideoRendererApi createMediaViewVideoRendererApi() {
-        return new C1223Rz();
+        return new C1243Rz();
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
@@ -196,7 +196,7 @@ public class DynamicLoaderImpl implements DynamicLoader, RemoteRenderingApi {
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public NativeAdBaseApi createNativeAdBaseApi(Context context, String str) {
-        return new UK(context, str, (InterfaceC1301Va) UK.A0K(), false);
+        return new UK(context, str, (InterfaceC1321Va) UK.A0K(), false);
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
@@ -208,29 +208,29 @@ public class DynamicLoaderImpl implements DynamicLoader, RemoteRenderingApi {
     public NativeAdBase createNativeAdBaseFromBidPayload(Context context, String str, String str2) throws Exception {
         try {
             return UK.A0A(context, str, str2);
-        } catch (C1313Vn e9) {
+        } catch (C1333Vn e9) {
             throw new Exception(e9.A01());
         }
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public NativeAdImageApi createNativeAdImageApi(JSONObject jSONObject) {
-        return C1302Vb.A00(jSONObject);
+        return C1322Vb.A00(jSONObject);
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public NativeAdLayoutApi createNativeAdLayoutApi() {
-        return new C1869hB();
+        return new C1889hB();
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
-    public C1303Vc createNativeAdRatingApi(JSONObject jSONObject) {
-        return C1303Vc.A00(jSONObject);
+    public C1323Vc createNativeAdRatingApi(JSONObject jSONObject) {
+        return C1323Vc.A00(jSONObject);
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
-    public NativeAdScrollViewApi createNativeAdScrollViewApi(NativeAdScrollView nativeAdScrollView, Context context, NativeAdsManager nativeAdsManager, NativeAdScrollView.AdViewProvider adViewProvider, int i, NativeAdView.Type type, NativeAdViewAttributes nativeAdViewAttributes, int i6) {
-        return new S3(nativeAdScrollView, context, nativeAdsManager, adViewProvider, i, type, nativeAdViewAttributes, i6);
+    public NativeAdScrollViewApi createNativeAdScrollViewApi(NativeAdScrollView nativeAdScrollView, Context context, NativeAdsManager nativeAdsManager, NativeAdScrollView.AdViewProvider adViewProvider, int i, NativeAdView.Type type, NativeAdViewAttributes nativeAdViewAttributes, int i4) {
+        return new S3(nativeAdScrollView, context, nativeAdsManager, adViewProvider, i, type, nativeAdViewAttributes, i4);
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
@@ -243,7 +243,7 @@ public class DynamicLoaderImpl implements DynamicLoader, RemoteRenderingApi {
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public NativeAdViewAttributesApi createNativeAdViewAttributesApi() {
-        return new C1304Vd();
+        return new C1324Vd();
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
@@ -253,7 +253,7 @@ public class DynamicLoaderImpl implements DynamicLoader, RemoteRenderingApi {
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public NativeAdsManagerApi createNativeAdsManagerApi(Context context, String str, int i) {
-        return (NativeAdsManagerApi) AbstractC1198Ra.A00(new S6(context, str, i), NativeAdsManagerApi.class);
+        return (NativeAdsManagerApi) AbstractC1218Ra.A00(new S6(context, str, i), NativeAdsManagerApi.class);
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
@@ -276,17 +276,17 @@ public class DynamicLoaderImpl implements DynamicLoader, RemoteRenderingApi {
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public RewardedInterstitialAdApi createRewardedInterstitialAd(Context context, String str, RewardedInterstitialAd rewardedInterstitialAd) {
-        return (RewardedInterstitialAdApi) AbstractC1198Ra.A00(new SD(context, str, rewardedInterstitialAd), RewardedInterstitialAdApi.class);
+        return (RewardedInterstitialAdApi) AbstractC1218Ra.A00(new SD(context, str, rewardedInterstitialAd), RewardedInterstitialAdApi.class);
     }
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public RewardedVideoAdApi createRewardedVideoAd(Context context, String str, RewardedVideoAd rewardedVideoAd) {
-        return (RewardedVideoAdApi) AbstractC1198Ra.A00(new SH(context, str, rewardedVideoAd), RewardedVideoAdApi.class);
+        return (RewardedVideoAdApi) AbstractC1218Ra.A00(new SH(context, str, rewardedVideoAd), RewardedVideoAdApi.class);
     }
 
-    public static C1211Rn getBidderTokenProviderApi() {
+    public static C1231Rn getBidderTokenProviderApi() {
         if (A04 == null) {
-            A04 = new C1211Rn();
+            A04 = new C1231Rn();
         }
         return A04;
     }
@@ -298,6 +298,6 @@ public class DynamicLoaderImpl implements DynamicLoader, RemoteRenderingApi {
 
     @Override // com.facebook.ads.internal.dynamicloading.DynamicLoader
     public void maybeInitInternally(Context context) {
-        U2.A0A(C1213Rp.A09(context));
+        U2.A0A(C1233Rp.A09(context));
     }
 }

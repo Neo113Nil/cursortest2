@@ -10,7 +10,7 @@ public final class C9Q {
     public int A03 = 50000000;
     public int A00 = 2;
 
-    public final C2280oL A06() {
-        return new C2280oL(this);
+    public final C2300oL A06() {
+        return new C2300oL(this);
     }
 }

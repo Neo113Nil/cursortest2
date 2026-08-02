@@ -35,7 +35,7 @@ public class RPSecondEndCardView extends SecondEndCardView {
     @Override // com.anythink.basead.ui.component.emdcardimprove.SecondEndCardView
     public final void a() {
         super.a();
-        RoundImageView roundImageView = this.f10742b;
+        RoundImageView roundImageView = this.f11528b;
         if (roundImageView != null) {
             roundImageView.setRadiusInDip(12);
         }
@@ -43,24 +43,24 @@ public class RPSecondEndCardView extends SecondEndCardView {
 
     @Override // com.anythink.basead.ui.component.emdcardimprove.SecondEndCardView
     public final void b() {
-        RelativeLayout relativeLayout = this.f10741a;
+        RelativeLayout relativeLayout = this.f11527a;
         if (relativeLayout != null) {
             relativeLayout.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.component.emdcardimprove.RPSecondEndCardView.1
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    b.a aVar = RPSecondEndCardView.this.f10747g;
+                    b.a aVar = RPSecondEndCardView.this.f11533g;
                     if (aVar != null) {
                         aVar.a(15, 33);
                     }
                 }
             });
         }
-        ScanningAnimButton scanningAnimButton = this.f10746f;
+        ScanningAnimButton scanningAnimButton = this.f11532f;
         if (scanningAnimButton != null) {
             scanningAnimButton.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.component.emdcardimprove.RPSecondEndCardView.2
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    b.a aVar = RPSecondEndCardView.this.f10747g;
+                    b.a aVar = RPSecondEndCardView.this.f11533g;
                     if (aVar != null) {
                         aVar.a(15, 34);
                     }
@@ -70,7 +70,7 @@ public class RPSecondEndCardView extends SecondEndCardView {
         setOnClickListener(new View.OnClickListener() { // from class: com.anythink.basead.ui.component.emdcardimprove.RPSecondEndCardView.3
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                b.a aVar = RPSecondEndCardView.this.f10747g;
+                b.a aVar = RPSecondEndCardView.this.f11533g;
                 if (aVar != null) {
                     aVar.a(15, 35);
                 }
@@ -86,7 +86,7 @@ public class RPSecondEndCardView extends SecondEndCardView {
     @Override // com.anythink.basead.ui.component.emdcardimprove.SecondEndCardView, android.view.ViewGroup, android.view.View
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        ScanningAnimButton scanningAnimButton = this.f10746f;
+        ScanningAnimButton scanningAnimButton = this.f11532f;
         if (scanningAnimButton != null) {
             e eVar = this.i;
             if (eVar != null) {

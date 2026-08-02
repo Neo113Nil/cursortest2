@@ -7,10 +7,10 @@ import java.util.Map;
 public abstract class a {
 
     /* renamed from: a, reason: collision with root package name */
-    protected Map<String, Object> f20020a;
+    protected Map<String, Object> f20807a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected Context f20021b;
+    protected Context f20808b;
 
     public a() {
     }
@@ -20,7 +20,7 @@ public abstract class a {
     public abstract void b();
 
     private a(Map<String, Object> map, Context context) {
-        this.f20020a = map;
-        this.f20021b = context;
+        this.f20807a = map;
+        this.f20808b = context;
     }
 }

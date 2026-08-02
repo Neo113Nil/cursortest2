@@ -18,33 +18,33 @@ import java.util.Map;
 public class MyOfferATAdapter extends CustomNativeAdapter {
 
     /* renamed from: a, reason: collision with root package name */
-    e f23150a;
+    e f23937a;
 
     /* renamed from: b, reason: collision with root package name */
-    x f23151b;
+    x f23938b;
 
     /* renamed from: c, reason: collision with root package name */
-    private String f23152c = "";
+    private String f23939c = "";
 
     /* renamed from: d, reason: collision with root package name */
-    private boolean f23153d = false;
+    private boolean f23940d = false;
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void destory() {
-        e eVar = this.f23150a;
+        e eVar = this.f23937a;
         if (eVar != null) {
             eVar.a((a) null);
-            this.f23150a = null;
+            this.f23937a = null;
         }
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter
     public BaseAd getBaseAdObject(Context context) {
-        e eVar = this.f23150a;
+        e eVar = this.f23937a;
         if (eVar == null || !eVar.a()) {
             return null;
         }
-        return new MyOfferATNativeAd(context, this.f23150a);
+        return new MyOfferATNativeAd(context, this.f23937a);
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -54,7 +54,7 @@ public class MyOfferATAdapter extends CustomNativeAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        return this.f23152c;
+        return this.f23939c;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -65,36 +65,36 @@ public class MyOfferATAdapter extends CustomNativeAdapter {
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public boolean initNetworkObjectByPlacementId(Context context, Map<String, Object> map, Map<String, Object> map2) {
         if (map.containsKey("my_oid")) {
-            this.f23152c = map.get("my_oid").toString();
+            this.f23939c = map.get("my_oid").toString();
         }
-        if (map.containsKey(j.w.f12614a)) {
-            this.f23151b = (x) map.get(j.w.f12614a);
+        if (map.containsKey(j.w.f13400a)) {
+            this.f23938b = (x) map.get(j.w.f13400a);
         }
-        if (map.containsKey(r.f16038b)) {
-            this.f23153d = ((Boolean) map.get(r.f16038b)).booleanValue();
+        if (map.containsKey(r.f16825b)) {
+            this.f23940d = ((Boolean) map.get(r.f16825b)).booleanValue();
         }
-        this.f23150a = new e(context, this.f23151b, this.f23152c, this.f23153d);
+        this.f23937a = new e(context, this.f23938b, this.f23939c, this.f23940d);
         return true;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public void loadCustomNetworkAd(Context context, Map<String, Object> map, Map<String, Object> map2) {
         if (map.containsKey("my_oid")) {
-            this.f23152c = map.get("my_oid").toString();
+            this.f23939c = map.get("my_oid").toString();
         }
-        if (map.containsKey(j.w.f12614a)) {
-            this.f23151b = (x) map.get(j.w.f12614a);
+        if (map.containsKey(j.w.f13400a)) {
+            this.f23938b = (x) map.get(j.w.f13400a);
         }
-        this.f23150a = new e(context, this.f23151b, this.f23152c, this.f23153d);
+        this.f23937a = new e(context, this.f23938b, this.f23939c, this.f23940d);
         final Context applicationContext = context.getApplicationContext();
-        this.f23150a.a(new c() { // from class: com.anythink.network.myoffer.MyOfferATAdapter.1
+        this.f23937a.a(new c() { // from class: com.anythink.network.myoffer.MyOfferATAdapter.1
             @Override // com.anythink.basead.g.c
             public final void onAdCacheLoaded() {
                 if (MyOfferATAdapter.this.getTrackingInfo() != null) {
-                    MyOfferATAdapter.this.getTrackingInfo().M(MyOfferATAdapter.this.f23150a.f());
+                    MyOfferATAdapter.this.getTrackingInfo().M(MyOfferATAdapter.this.f23937a.f());
                 }
                 if (((ATBaseAdInternalAdapter) MyOfferATAdapter.this).mLoadListener != null) {
-                    ((ATBaseAdInternalAdapter) MyOfferATAdapter.this).mLoadListener.onAdCacheLoaded(new MyOfferATNativeAd(applicationContext, MyOfferATAdapter.this.f23150a));
+                    ((ATBaseAdInternalAdapter) MyOfferATAdapter.this).mLoadListener.onAdCacheLoaded(new MyOfferATNativeAd(applicationContext, MyOfferATAdapter.this.f23937a));
                 }
             }
 
@@ -112,6 +112,6 @@ public class MyOfferATAdapter extends CustomNativeAdapter {
     }
 
     private void a(Context context) {
-        this.f23150a = new e(context, this.f23151b, this.f23152c, this.f23153d);
+        this.f23937a = new e(context, this.f23938b, this.f23939c, this.f23940d);
     }
 }

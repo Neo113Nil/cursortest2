@@ -10,10 +10,10 @@ public final class H6 {
     public final int A01;
     public final String A02;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 55);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 55);
         }
         return new String(copyOfRange);
     }
@@ -26,18 +26,18 @@ public final class H6 {
         A02();
     }
 
-    public H6(int i, int i6, String str) {
+    public H6(int i, int i4, String str) {
         this.A01 = i;
-        this.A00 = i6;
+        this.A00 = i4;
         this.A02 = str;
     }
 
-    public static H6 A00(C06474v c06474v) {
+    public static H6 A00(C06674v c06674v) {
         String A01;
-        c06474v.A0g(2);
-        int profileData = c06474v.A0I();
+        c06674v.A0g(2);
+        int profileData = c06674v.A0I();
         int i = profileData >> 1;
-        int A0I = ((profileData & 1) << 5) | ((c06474v.A0I() >> 3) & 31);
+        int A0I = ((profileData & 1) << 5) | ((c06674v.A0I() >> 3) & 31);
         if (i == 4 || i == 5 || i == 7) {
             A01 = A01(7, 4, 12);
         } else if (i == 8) {

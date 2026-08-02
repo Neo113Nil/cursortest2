@@ -1,26 +1,42 @@
 package X3;
 
-import V3.f;
-import V3.g;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
-import java.util.TimeZone;
+import java.util.Collections;
+import java.util.Map;
 
 /* loaded from: classes2.dex */
-public final class c implements f {
+public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final SimpleDateFormat f3796a;
+    public final String f3764a;
 
-    static {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", Locale.US);
-        f3796a = simpleDateFormat;
-        simpleDateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
+    /* renamed from: b, reason: collision with root package name */
+    public final Map f3765b;
+
+    public c(String str, Map map) {
+        this.f3764a = str;
+        this.f3765b = map;
     }
 
-    @Override // V3.a
-    public final void a(Object obj, Object obj2) {
-        ((g) obj2).d(f3796a.format((Date) obj));
+    public static c a(String str) {
+        return new c(str, Collections.EMPTY_MAP);
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof c)) {
+            return false;
+        }
+        c cVar = (c) obj;
+        return this.f3764a.equals(cVar.f3764a) && this.f3765b.equals(cVar.f3765b);
+    }
+
+    public final int hashCode() {
+        return this.f3765b.hashCode() + (this.f3764a.hashCode() * 31);
+    }
+
+    public final String toString() {
+        return "FieldDescriptor{name=" + this.f3764a + ", properties=" + this.f3765b.values() + "}";
     }
 }

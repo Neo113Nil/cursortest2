@@ -4,5 +4,5 @@ package androidx.emoji2.text;
 public final class q extends g {
 
     /* renamed from: d, reason: collision with root package name */
-    public static final a4.e f4795d = new a4.e();
+    public static final G3.e f4763d = new G3.e(13);
 }

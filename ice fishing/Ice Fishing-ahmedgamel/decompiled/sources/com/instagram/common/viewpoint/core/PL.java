@@ -8,7 +8,7 @@ import android.view.accessibility.AccessibilityEvent;
 /* loaded from: assets/audience_network/classes2.dex */
 public abstract class PL {
     public final View.AccessibilityDelegate A00 = A02.A00(this);
-    public static final PK A02 = new C1922i4();
+    public static final PK A02 = new C1942i4();
     public static final View.AccessibilityDelegate A01 = new View.AccessibilityDelegate();
 
     public final View.AccessibilityDelegate A00() {

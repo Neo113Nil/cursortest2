@@ -13,7 +13,6 @@ import android.view.ViewParent;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.anythink.basead.exoplayer.f.f;
 import com.anythink.core.common.d.t;
 import com.anythink.core.common.v.h;
 import com.anythink.expressad.foundation.d.d;
@@ -28,141 +27,141 @@ import com.anythink.expressad.widget.FeedBackButton;
 public class BaseATSplashNativeView extends RelativeLayout {
 
     /* renamed from: s, reason: collision with root package name */
-    private static final String f20756s = "MBSplashNativeView";
+    private static final String f21543s = "MBSplashNativeView";
 
     /* renamed from: A, reason: collision with root package name */
-    private TextView f20757A;
+    private TextView f21544A;
 
     /* renamed from: B, reason: collision with root package name */
-    private MBNoRecycledCrashImageView f20758B;
+    private MBNoRecycledCrashImageView f21545B;
 
     /* renamed from: C, reason: collision with root package name */
-    private TextView f20759C;
+    private TextView f21546C;
 
     /* renamed from: D, reason: collision with root package name */
-    private TextView f20760D;
+    private TextView f21547D;
 
     /* renamed from: E, reason: collision with root package name */
-    private int f20761E;
+    private int f21548E;
 
     /* renamed from: F, reason: collision with root package name */
-    private int f20762F;
+    private int f21549F;
 
     /* renamed from: G, reason: collision with root package name */
-    private int f20763G;
+    private int f21550G;
 
     /* renamed from: H, reason: collision with root package name */
-    private int f20764H;
+    private int f21551H;
 
     /* renamed from: I, reason: collision with root package name */
-    private int f20765I;
+    private int f21552I;
     private int J;
 
     /* renamed from: K, reason: collision with root package name */
-    private int f20766K;
+    private int f21553K;
 
     /* renamed from: L, reason: collision with root package name */
-    private float f20767L;
+    private float f21554L;
 
     /* renamed from: M, reason: collision with root package name */
-    private float f20768M;
+    private float f21555M;
 
     /* renamed from: N, reason: collision with root package name */
-    private boolean f20769N;
+    private boolean f21556N;
 
     /* renamed from: O, reason: collision with root package name */
-    private boolean f20770O;
+    private boolean f21557O;
 
     /* renamed from: P, reason: collision with root package name */
-    private String f20771P;
+    private String f21558P;
 
     /* renamed from: Q, reason: collision with root package name */
-    private String f20772Q;
+    private String f21559Q;
 
     /* renamed from: R, reason: collision with root package name */
-    private String f20773R;
+    private String f21560R;
 
     /* renamed from: S, reason: collision with root package name */
-    private String f20774S;
+    private String f21561S;
 
     /* renamed from: T, reason: collision with root package name */
-    private String f20775T;
+    private String f21562T;
 
     /* renamed from: U, reason: collision with root package name */
-    private String f20776U;
+    private String f21563U;
 
     /* renamed from: a, reason: collision with root package name */
-    protected TextView f20777a;
+    protected TextView f21564a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected RelativeLayout f20778b;
+    protected RelativeLayout f21565b;
 
     /* renamed from: c, reason: collision with root package name */
-    protected TextView f20779c;
+    protected TextView f21566c;
 
     /* renamed from: d, reason: collision with root package name */
-    protected TextView f20780d;
+    protected TextView f21567d;
 
     /* renamed from: e, reason: collision with root package name */
-    protected TextView f20781e;
+    protected TextView f21568e;
 
     /* renamed from: f, reason: collision with root package name */
-    protected TextView f20782f;
+    protected TextView f21569f;
 
     /* renamed from: g, reason: collision with root package name */
-    protected MBSplashClickView f20783g;
+    protected MBSplashClickView f21570g;
 
     /* renamed from: h, reason: collision with root package name */
-    protected int f20784h;
+    protected int f21571h;
     protected int i;
 
     /* renamed from: j, reason: collision with root package name */
-    protected int f20785j;
+    protected int f21572j;
 
     /* renamed from: k, reason: collision with root package name */
-    protected int f20786k;
+    protected int f21573k;
 
     /* renamed from: l, reason: collision with root package name */
-    protected boolean f20787l;
+    protected boolean f21574l;
 
     /* renamed from: m, reason: collision with root package name */
-    protected boolean f20788m;
+    protected boolean f21575m;
 
     /* renamed from: n, reason: collision with root package name */
-    protected boolean f20789n;
+    protected boolean f21576n;
 
     /* renamed from: o, reason: collision with root package name */
-    protected ATSplashView f20790o;
+    protected ATSplashView f21577o;
 
     /* renamed from: p, reason: collision with root package name */
-    protected d f20791p;
+    protected d f21578p;
 
     /* renamed from: q, reason: collision with root package name */
-    protected MBShakeView f20792q;
+    protected MBShakeView f21579q;
 
     /* renamed from: r, reason: collision with root package name */
-    protected com.anythink.core.express.c.b f20793r;
+    protected com.anythink.core.express.c.b f21580r;
 
     /* renamed from: t, reason: collision with root package name */
-    private MBNoRecycledCrashImageView f20794t;
+    private MBNoRecycledCrashImageView f21581t;
 
     /* renamed from: u, reason: collision with root package name */
-    private MBNoRecycledCrashImageView f20795u;
+    private MBNoRecycledCrashImageView f21582u;
 
     /* renamed from: v, reason: collision with root package name */
-    private RelativeLayout f20796v;
+    private RelativeLayout f21583v;
 
     /* renamed from: w, reason: collision with root package name */
-    private ImageView f20797w;
+    private ImageView f21584w;
 
     /* renamed from: x, reason: collision with root package name */
-    private FeedBackButton f20798x;
+    private FeedBackButton f21585x;
 
     /* renamed from: y, reason: collision with root package name */
-    private RelativeLayout f20799y;
+    private RelativeLayout f21586y;
 
     /* renamed from: z, reason: collision with root package name */
-    private MBNoRecycledCrashImageView f20800z;
+    private MBNoRecycledCrashImageView f21587z;
 
     /* renamed from: com.anythink.expressad.splash.view.BaseATSplashNativeView$1, reason: invalid class name */
     public class AnonymousClass1 implements c {
@@ -182,31 +181,31 @@ public class BaseATSplashNativeView extends RelativeLayout {
                     }
                     if (bitmap.getWidth() < bitmap.getHeight()) {
                         BaseATSplashNativeView.a(BaseATSplashNativeView.this);
-                        BaseATSplashNativeView.this.f20799y.setVisibility(4);
-                        BaseATSplashNativeView.this.f20795u.setScaleType(ImageView.ScaleType.FIT_CENTER);
-                        BaseATSplashNativeView.this.f20795u.setImageBitmap(bitmap);
-                    } else if (BaseATSplashNativeView.this.f20765I == 1) {
-                        BaseATSplashNativeView.this.f20799y.setVisibility(0);
+                        BaseATSplashNativeView.this.f21586y.setVisibility(4);
+                        BaseATSplashNativeView.this.f21582u.setScaleType(ImageView.ScaleType.FIT_CENTER);
+                        BaseATSplashNativeView.this.f21582u.setImageBitmap(bitmap);
+                    } else if (BaseATSplashNativeView.this.f21552I == 1) {
+                        BaseATSplashNativeView.this.f21586y.setVisibility(0);
                         try {
                             Bitmap a9 = q.a(bitmap, v.b(t.b().g(), 10.0f));
                             if (a9 != null && !a9.isRecycled()) {
-                                BaseATSplashNativeView.this.f20758B.setScaleType(ImageView.ScaleType.FIT_XY);
-                                BaseATSplashNativeView.this.f20758B.setImageBitmap(a9);
+                                BaseATSplashNativeView.this.f21545B.setScaleType(ImageView.ScaleType.FIT_XY);
+                                BaseATSplashNativeView.this.f21545B.setImageBitmap(a9);
                             }
                         } catch (Throwable th) {
                             try {
                                 th.getMessage();
-                                BaseATSplashNativeView.this.f20758B.setImageBitmap(bitmap);
+                                BaseATSplashNativeView.this.f21545B.setImageBitmap(bitmap);
                             } catch (Throwable th2) {
                                 th2.getMessage();
                             }
                         }
-                        BaseATSplashNativeView.this.f20757A.setText(BaseATSplashNativeView.this.f20791p.bj());
+                        BaseATSplashNativeView.this.f21544A.setText(BaseATSplashNativeView.this.f21578p.bj());
                         BaseATSplashNativeView.g(BaseATSplashNativeView.this);
                     } else {
-                        BaseATSplashNativeView.this.f20799y.setVisibility(4);
-                        BaseATSplashNativeView.this.f20795u.setScaleType(ImageView.ScaleType.FIT_CENTER);
-                        BaseATSplashNativeView.this.f20795u.setImageBitmap(bitmap);
+                        BaseATSplashNativeView.this.f21586y.setVisibility(4);
+                        BaseATSplashNativeView.this.f21582u.setScaleType(ImageView.ScaleType.FIT_CENTER);
+                        BaseATSplashNativeView.this.f21582u.setImageBitmap(bitmap);
                     }
                     try {
                         h.a(t.b().g(), bitmap, new h.a() { // from class: com.anythink.expressad.splash.view.BaseATSplashNativeView.1.1
@@ -219,12 +218,12 @@ public class BaseATSplashNativeView extends RelativeLayout {
                                 if (bitmap2 == null || bitmap2.isRecycled()) {
                                     return;
                                 }
-                                BaseATSplashNativeView.this.f20794t.setScaleType(ImageView.ScaleType.CENTER_CROP);
-                                BaseATSplashNativeView.this.f20794t.setImageBitmap(bitmap2);
+                                BaseATSplashNativeView.this.f21581t.setScaleType(ImageView.ScaleType.CENTER_CROP);
+                                BaseATSplashNativeView.this.f21581t.setImageBitmap(bitmap2);
                             }
                         });
                     } catch (Throwable unused) {
-                        BaseATSplashNativeView.this.f20795u.setImageBitmap(bitmap);
+                        BaseATSplashNativeView.this.f21582u.setImageBitmap(bitmap);
                     }
                 } catch (Throwable th3) {
                     th3.getMessage();
@@ -263,12 +262,12 @@ public class BaseATSplashNativeView extends RelativeLayout {
         @Override // android.view.View.OnClickListener
         public final void onClick(View view) {
             BaseATSplashNativeView baseATSplashNativeView = BaseATSplashNativeView.this;
-            if (baseATSplashNativeView.f20787l) {
-                if (baseATSplashNativeView.f20790o.getSplashJSBridgeImpl() != null && BaseATSplashNativeView.this.f20790o.getSplashJSBridgeImpl().getSplashBridgeListener() != null) {
-                    BaseATSplashNativeView.this.f20790o.getSplashJSBridgeImpl().getSplashBridgeListener().c();
+            if (baseATSplashNativeView.f21574l) {
+                if (baseATSplashNativeView.f21577o.getSplashJSBridgeImpl() != null && BaseATSplashNativeView.this.f21577o.getSplashJSBridgeImpl().getSplashBridgeListener() != null) {
+                    BaseATSplashNativeView.this.f21577o.getSplashJSBridgeImpl().getSplashBridgeListener().c();
                 }
-                BaseATSplashNativeView.this.f20777a.setVisibility(4);
-                BaseATSplashNativeView.this.f20777a.setEnabled(false);
+                BaseATSplashNativeView.this.f21564a.setVisibility(4);
+                BaseATSplashNativeView.this.f21564a.setEnabled(false);
             }
         }
     }
@@ -281,80 +280,80 @@ public class BaseATSplashNativeView extends RelativeLayout {
         @Override // com.anythink.expressad.foundation.f.a
         public final void a() {
             BaseATSplashNativeView baseATSplashNativeView = BaseATSplashNativeView.this;
-            baseATSplashNativeView.f20789n = true;
+            baseATSplashNativeView.f21576n = true;
             BaseATSplashNativeView.a(baseATSplashNativeView, false);
         }
 
         @Override // com.anythink.expressad.foundation.f.a
         public final void b() {
             BaseATSplashNativeView baseATSplashNativeView = BaseATSplashNativeView.this;
-            baseATSplashNativeView.f20789n = false;
+            baseATSplashNativeView.f21576n = false;
             BaseATSplashNativeView.a(baseATSplashNativeView, true);
         }
 
         @Override // com.anythink.expressad.foundation.f.a
         public final void c() {
             BaseATSplashNativeView baseATSplashNativeView = BaseATSplashNativeView.this;
-            baseATSplashNativeView.f20789n = false;
+            baseATSplashNativeView.f21576n = false;
             BaseATSplashNativeView.a(baseATSplashNativeView, true);
         }
     }
 
     public BaseATSplashNativeView(Context context) {
         super(context);
-        this.f20788m = false;
-        this.f20789n = false;
+        this.f21575m = false;
+        this.f21576n = false;
     }
 
     private void g() {
         Drawable drawable;
-        v.a(this.f20797w, this.f20791p, getContext(), true);
+        v.a(this.f21584w, this.f21578p, getContext(), true);
         try {
-            drawable = getResources().getDrawable(k.a(getContext().getApplicationContext(), "anythink_splash_m_circle", k.f19632c));
+            drawable = getResources().getDrawable(k.a(getContext().getApplicationContext(), "anythink_splash_m_circle", k.f20419c));
             try {
                 drawable.setBounds(0, 0, v.b(getContext(), 10.0f), v.b(getContext(), 10.0f));
             } catch (Throwable th) {
                 th = th;
                 th.getMessage();
-                if (this.f20765I == 1) {
+                if (this.f21552I == 1) {
                 }
                 if (this.J != 0) {
-                    this.f20759C.setCompoundDrawables(drawable, null, null, null);
+                    this.f21546C.setCompoundDrawables(drawable, null, null, null);
                 }
-                this.f20759C.setText(k.a(t.b().g(), "anythink_splash_ad_text", k.f19636g));
-                this.f20760D.setVisibility(4);
+                this.f21546C.setText(k.a(t.b().g(), "anythink_splash_ad_text", k.f20423g));
+                this.f21547D.setVisibility(4);
                 return;
             }
         } catch (Throwable th2) {
             th = th2;
             drawable = null;
         }
-        if (this.f20765I == 1 || !this.f20770O) {
+        if (this.f21552I == 1 || !this.f21557O) {
             if (this.J != 0 && drawable != null) {
-                this.f20759C.setCompoundDrawables(drawable, null, null, null);
+                this.f21546C.setCompoundDrawables(drawable, null, null, null);
             }
-            this.f20759C.setText(k.a(t.b().g(), "anythink_splash_ad_text", k.f19636g));
-            this.f20760D.setVisibility(4);
+            this.f21546C.setText(k.a(t.b().g(), "anythink_splash_ad_text", k.f20423g));
+            this.f21547D.setVisibility(4);
             return;
         }
         if (this.J != 0 && drawable != null) {
-            this.f20760D.setCompoundDrawables(drawable, null, null, null);
+            this.f21547D.setCompoundDrawables(drawable, null, null, null);
         }
-        this.f20760D.setText(k.a(t.b().g(), "anythink_splash_ad_text", k.f19636g));
-        this.f20759C.setVisibility(4);
+        this.f21547D.setText(k.a(t.b().g(), "anythink_splash_ad_text", k.f20423g));
+        this.f21546C.setVisibility(4);
     }
 
     private void j() {
-        d dVar = this.f20791p;
+        d dVar = this.f21578p;
         if (dVar != null) {
-            dVar.l(this.f20771P);
+            dVar.l(this.f21558P);
         }
         if (com.anythink.expressad.foundation.f.b.a().b()) {
-            com.anythink.expressad.foundation.f.b.a().a(this.f20771P, new AnonymousClass6());
-            com.anythink.expressad.foundation.f.b.a().a(this.f20771P, this.f20798x);
-            com.anythink.expressad.foundation.f.b.a().a(this.f20771P, this.f20791p);
+            com.anythink.expressad.foundation.f.b.a().a(this.f21558P, new AnonymousClass6());
+            com.anythink.expressad.foundation.f.b.a().a(this.f21558P, this.f21585x);
+            com.anythink.expressad.foundation.f.b.a().a(this.f21558P, this.f21578p);
         } else {
-            FeedBackButton feedBackButton = this.f20798x;
+            FeedBackButton feedBackButton = this.f21585x;
             if (feedBackButton != null) {
                 feedBackButton.setVisibility(8);
             }
@@ -362,14 +361,14 @@ public class BaseATSplashNativeView extends RelativeLayout {
     }
 
     private void k() {
-        if (this.f20793r != null) {
-            com.anythink.core.express.c.a.a().a(this.f20793r);
+        if (this.f21580r != null) {
+            com.anythink.core.express.c.a.a().a(this.f21580r);
         }
     }
 
     private void l() {
-        if (this.f20793r != null) {
-            com.anythink.core.express.c.a.a().b(this.f20793r);
+        if (this.f21580r != null) {
+            com.anythink.core.express.c.a.a().b(this.f21580r);
         }
     }
 
@@ -383,7 +382,7 @@ public class BaseATSplashNativeView extends RelativeLayout {
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
         try {
-            if (this.i != 1 || this.f20792q == null || this.f20793r == null) {
+            if (this.i != 1 || this.f21579q == null || this.f21580r == null) {
                 return;
             }
             k();
@@ -400,42 +399,42 @@ public class BaseATSplashNativeView extends RelativeLayout {
 
     @Override // android.view.ViewGroup
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
-        this.f20767L = motionEvent.getRawX();
-        this.f20768M = motionEvent.getRawY();
+        this.f21554L = motionEvent.getRawX();
+        this.f21555M = motionEvent.getRawY();
         return super.onInterceptTouchEvent(motionEvent);
     }
 
     @Override // android.widget.RelativeLayout, android.view.ViewGroup, android.view.View
-    public void onLayout(boolean z3, int i, int i6, int i9, int i10) {
-        super.onLayout(z3, i, i6, i9, i10);
-        TextView textView = this.f20777a;
-        if (textView == null || textView.getParent() == null || !(this.f20777a.getParent() instanceof ViewGroup)) {
+    public void onLayout(boolean z6, int i, int i4, int i6, int i9) {
+        super.onLayout(z6, i, i4, i6, i9);
+        TextView textView = this.f21564a;
+        if (textView == null || textView.getParent() == null || !(this.f21564a.getParent() instanceof ViewGroup)) {
             return;
         }
-        ViewGroup.LayoutParams layoutParams = ((ViewGroup) this.f20777a.getParent()).getLayoutParams();
+        ViewGroup.LayoutParams layoutParams = ((ViewGroup) this.f21564a.getParent()).getLayoutParams();
         if (layoutParams instanceof RelativeLayout.LayoutParams) {
             int b9 = com.anythink.core.common.v.q.b(getContext()) + ((RelativeLayout.LayoutParams) layoutParams).topMargin;
             int[] iArr = new int[2];
-            this.f20777a.getLocationOnScreen(iArr);
-            int i11 = iArr[1];
-            if (i11 < b9) {
-                int i12 = b9 - i11;
-                ViewParent parent = this.f20777a.getParent();
+            this.f21564a.getLocationOnScreen(iArr);
+            int i10 = iArr[1];
+            if (i10 < b9) {
+                int i11 = b9 - i10;
+                ViewParent parent = this.f21564a.getParent();
                 if (parent instanceof ViewGroup) {
                     ViewGroup viewGroup = (ViewGroup) parent;
-                    viewGroup.setPadding(viewGroup.getPaddingLeft(), viewGroup.getPaddingTop() + i12, viewGroup.getPaddingRight(), viewGroup.getPaddingBottom() + i12);
+                    viewGroup.setPadding(viewGroup.getPaddingLeft(), viewGroup.getPaddingTop() + i11, viewGroup.getPaddingRight(), viewGroup.getPaddingBottom() + i11);
                 }
             }
         }
     }
 
     @Override // android.view.View
-    public void onVisibilityAggregated(boolean z3) {
-        super.onVisibilityAggregated(z3);
-        if (!z3) {
+    public void onVisibilityAggregated(boolean z6) {
+        super.onVisibilityAggregated(z6);
+        if (!z6) {
             l();
         } else {
-            if (this.i != 1 || this.f20792q == null || this.f20793r == null) {
+            if (this.i != 1 || this.f21579q == null || this.f21580r == null) {
                 return;
             }
             k();
@@ -448,12 +447,12 @@ public class BaseATSplashNativeView extends RelativeLayout {
     }
 
     @Override // android.view.View
-    public void onWindowFocusChanged(boolean z3) {
-        super.onWindowFocusChanged(z3);
-        if (!z3) {
+    public void onWindowFocusChanged(boolean z6) {
+        super.onWindowFocusChanged(z6);
+        if (!z6) {
             l();
         } else {
-            if (this.i != 1 || this.f20792q == null || this.f20793r == null) {
+            if (this.i != 1 || this.f21579q == null || this.f21580r == null) {
                 return;
             }
             k();
@@ -462,33 +461,33 @@ public class BaseATSplashNativeView extends RelativeLayout {
 
     public void release() {
         try {
-            if (this.f20793r != null) {
+            if (this.f21580r != null) {
                 l();
-                this.f20793r = null;
+                this.f21580r = null;
             }
-            com.anythink.expressad.foundation.f.b.a().c(this.f20771P);
+            com.anythink.expressad.foundation.f.b.a().c(this.f21558P);
             detachAllViewsFromParent();
         } catch (Exception e9) {
             e9.getMessage();
         }
     }
 
-    public void setIsPause(boolean z3) {
-        this.f20788m = z3;
+    public void setIsPause(boolean z6) {
+        this.f21575m = z6;
     }
 
-    public void setNotchPadding(int i, int i6, int i9, int i10) {
+    public void setNotchPadding(int i, int i4, int i6, int i9) {
         try {
-            RelativeLayout relativeLayout = this.f20796v;
+            RelativeLayout relativeLayout = this.f21583v;
             if (relativeLayout == null) {
                 return;
             }
             RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) relativeLayout.getLayoutParams();
-            int i11 = this.f20766K;
-            layoutParams.leftMargin = i + i11;
-            layoutParams.rightMargin = i6 + i11;
-            layoutParams.topMargin = i9 + i11;
-            layoutParams.bottomMargin = i11 + i10;
+            int i10 = this.f21553K;
+            layoutParams.leftMargin = i + i10;
+            layoutParams.rightMargin = i4 + i10;
+            layoutParams.topMargin = i6 + i10;
+            layoutParams.bottomMargin = i10 + i9;
         } catch (Throwable th) {
             th.getMessage();
         }
@@ -496,55 +495,55 @@ public class BaseATSplashNativeView extends RelativeLayout {
 
     public void updateCountDown(int i) {
         String str;
-        if (this.f20777a != null) {
-            this.f20762F = i;
+        if (this.f21564a != null) {
+            this.f21549F = i;
             if (i <= 0) {
-                str = this.f20776U;
-            } else if (this.f20787l) {
-                str = this.f20774S + " " + i + this.f20773R;
+                str = this.f21563U;
+            } else if (this.f21574l) {
+                str = this.f21561S + " " + i + this.f21560R;
             } else {
-                str = i + this.f20773R + " " + this.f20775T;
+                str = i + this.f21560R + " " + this.f21562T;
             }
-            this.f20777a.setText(str);
+            this.f21564a.setText(str);
         }
     }
 
     public static /* synthetic */ boolean a(BaseATSplashNativeView baseATSplashNativeView) {
-        baseATSplashNativeView.f20770O = true;
+        baseATSplashNativeView.f21557O = true;
         return true;
     }
 
     private void c() {
         try {
-            View inflate = LayoutInflater.from(getContext()).inflate(this.f20765I == 1 ? k.a(getContext().getApplicationContext(), "anythink_splash_portrait", "layout") : k.a(getContext().getApplicationContext(), "anythink_splash_landscape", "layout"), (ViewGroup) null);
+            View inflate = LayoutInflater.from(getContext()).inflate(this.f21552I == 1 ? k.a(getContext().getApplicationContext(), "anythink_splash_portrait", "layout") : k.a(getContext().getApplicationContext(), "anythink_splash_landscape", "layout"), (ViewGroup) null);
             addView(inflate);
-            this.f20794t = (MBNoRecycledCrashImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_image_bg", "id"));
-            this.f20795u = (MBNoRecycledCrashImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_image", "id"));
-            this.f20796v = (RelativeLayout) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_topcontroller", "id"));
-            this.f20797w = (ImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_link", "id"));
-            this.f20798x = (FeedBackButton) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_feedback", "id"));
-            this.f20777a = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_skip", "id"));
-            this.f20799y = (RelativeLayout) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_landscape_foreground", "id"));
-            this.f20800z = (MBNoRecycledCrashImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_icon", "id"));
-            this.f20757A = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_title", "id"));
-            this.f20758B = (MBNoRecycledCrashImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_foregroundimage", "id"));
-            this.f20759C = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_adrect", "id"));
-            this.f20778b = (RelativeLayout) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_layout_appinfo", "id"));
-            this.f20779c = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_appinfo", "id"));
-            this.f20780d = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_privacy", "id"));
-            this.f20781e = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_permission", "id"));
-            this.f20782f = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_app_desc", "id"));
-            this.f20783g = (MBSplashClickView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_click", "id"));
-            this.f20760D = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_adcircle", "id"));
-            int a9 = k.a(getContext().getApplicationContext(), "anythink_splash_count_time_can_skip", k.f19636g);
-            int a10 = k.a(getContext().getApplicationContext(), "anythink_splash_count_time_can_skip_not", k.f19636g);
-            int a11 = k.a(getContext().getApplicationContext(), "anythink_splash_count_time_can_skip_s", k.f19636g);
-            int a12 = k.a(getContext().getApplicationContext(), "anythink_splash_count_time_can_skip_action", k.f19636g);
-            this.f20774S = getContext().getResources().getString(a9);
-            this.f20775T = getContext().getResources().getString(a10);
-            this.f20773R = getContext().getResources().getString(a11);
-            this.f20776U = getContext().getResources().getString(a12);
-            this.f20766K = v.b(getContext(), 9.0f);
+            this.f21581t = (MBNoRecycledCrashImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_image_bg", "id"));
+            this.f21582u = (MBNoRecycledCrashImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_image", "id"));
+            this.f21583v = (RelativeLayout) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_topcontroller", "id"));
+            this.f21584w = (ImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_link", "id"));
+            this.f21585x = (FeedBackButton) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_feedback", "id"));
+            this.f21564a = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_skip", "id"));
+            this.f21586y = (RelativeLayout) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_landscape_foreground", "id"));
+            this.f21587z = (MBNoRecycledCrashImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_icon", "id"));
+            this.f21544A = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_title", "id"));
+            this.f21545B = (MBNoRecycledCrashImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_foregroundimage", "id"));
+            this.f21546C = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_adrect", "id"));
+            this.f21565b = (RelativeLayout) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_layout_appinfo", "id"));
+            this.f21566c = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_appinfo", "id"));
+            this.f21567d = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_privacy", "id"));
+            this.f21568e = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_permission", "id"));
+            this.f21569f = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_app_desc", "id"));
+            this.f21570g = (MBSplashClickView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_click", "id"));
+            this.f21547D = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_adcircle", "id"));
+            int a9 = k.a(getContext().getApplicationContext(), "anythink_splash_count_time_can_skip", k.f20423g);
+            int a10 = k.a(getContext().getApplicationContext(), "anythink_splash_count_time_can_skip_not", k.f20423g);
+            int a11 = k.a(getContext().getApplicationContext(), "anythink_splash_count_time_can_skip_s", k.f20423g);
+            int a12 = k.a(getContext().getApplicationContext(), "anythink_splash_count_time_can_skip_action", k.f20423g);
+            this.f21561S = getContext().getResources().getString(a9);
+            this.f21562T = getContext().getResources().getString(a10);
+            this.f21560R = getContext().getResources().getString(a11);
+            this.f21563U = getContext().getResources().getString(a12);
+            this.f21553K = v.b(getContext(), 9.0f);
         } catch (Throwable th) {
             th.getMessage();
         }
@@ -552,92 +551,92 @@ public class BaseATSplashNativeView extends RelativeLayout {
 
     private void d() {
         try {
-            this.f20769N = getContext().getResources().getConfiguration().locale.getLanguage().contains(com.anythink.expressad.video.dynview.a.a.f21096S);
+            this.f21556N = getContext().getResources().getConfiguration().locale.getLanguage().contains(com.anythink.expressad.video.dynview.a.a.f21883S);
         } catch (Throwable th) {
             th.getMessage();
         }
-        d dVar = this.f20791p;
+        d dVar = this.f21578p;
         if (dVar != null) {
-            dVar.l(this.f20771P);
+            dVar.l(this.f21558P);
         }
         if (com.anythink.expressad.foundation.f.b.a().b()) {
-            com.anythink.expressad.foundation.f.b.a().a(this.f20771P, new AnonymousClass6());
-            com.anythink.expressad.foundation.f.b.a().a(this.f20771P, this.f20798x);
-            com.anythink.expressad.foundation.f.b.a().a(this.f20771P, this.f20791p);
+            com.anythink.expressad.foundation.f.b.a().a(this.f21558P, new AnonymousClass6());
+            com.anythink.expressad.foundation.f.b.a().a(this.f21558P, this.f21585x);
+            com.anythink.expressad.foundation.f.b.a().a(this.f21558P, this.f21578p);
         } else {
-            FeedBackButton feedBackButton = this.f20798x;
+            FeedBackButton feedBackButton = this.f21585x;
             if (feedBackButton != null) {
                 feedBackButton.setVisibility(8);
             }
         }
-        if (TextUtils.isEmpty(this.f20791p.bm())) {
-            this.f20795u.setVisibility(4);
+        if (TextUtils.isEmpty(this.f21578p.bm())) {
+            this.f21582u.setVisibility(4);
         } else {
-            f.l().a(this.f20791p.bm(), new AnonymousClass1());
+            com.IceFishing.LiveIceFishing.k.m().a(this.f21578p.bm(), new AnonymousClass1());
         }
         g();
         a();
-        if (this.f20764H == 1) {
-            this.f20783g.setVisibility(8);
+        if (this.f21551H == 1) {
+            this.f21570g.setVisibility(8);
         } else if (this.i == 1) {
-            this.f20783g.setVisibility(8);
+            this.f21570g.setVisibility(8);
         } else {
-            this.f20783g.initView(this.f20791p.dj);
+            this.f21570g.initView(this.f21578p.dj);
         }
-        if (this.f20763G == 1) {
+        if (this.f21550G == 1) {
             setOnClickListener(new AnonymousClass3());
         } else {
-            this.f20783g.setOnClickListener(new AnonymousClass4());
+            this.f21570g.setOnClickListener(new AnonymousClass4());
         }
-        this.f20777a.setOnClickListener(new AnonymousClass5());
+        this.f21564a.setOnClickListener(new AnonymousClass5());
         b();
-        updateCountDown(this.f20761E);
+        updateCountDown(this.f21548E);
     }
 
     private void e() {
-        if (TextUtils.isEmpty(this.f20791p.bm())) {
-            this.f20795u.setVisibility(4);
+        if (TextUtils.isEmpty(this.f21578p.bm())) {
+            this.f21582u.setVisibility(4);
         } else {
-            f.l().a(this.f20791p.bm(), new AnonymousClass1());
+            com.IceFishing.LiveIceFishing.k.m().a(this.f21578p.bm(), new AnonymousClass1());
         }
     }
 
     private void f() {
-        if (TextUtils.isEmpty(this.f20791p.bl())) {
-            this.f20800z.setVisibility(4);
+        if (TextUtils.isEmpty(this.f21578p.bl())) {
+            this.f21587z.setVisibility(4);
         } else {
-            f.l().a(this.f20791p.bl(), new AnonymousClass2());
+            com.IceFishing.LiveIceFishing.k.m().a(this.f21578p.bl(), new AnonymousClass2());
         }
     }
 
     private void h() {
-        if (this.f20764H == 1) {
-            this.f20783g.setVisibility(8);
+        if (this.f21551H == 1) {
+            this.f21570g.setVisibility(8);
         } else if (this.i == 1) {
-            this.f20783g.setVisibility(8);
+            this.f21570g.setVisibility(8);
         } else {
-            this.f20783g.initView(this.f20791p.dj);
+            this.f21570g.initView(this.f21578p.dj);
         }
     }
 
     private void i() {
-        if (this.f20763G == 1) {
+        if (this.f21550G == 1) {
             setOnClickListener(new AnonymousClass3());
         } else {
-            this.f20783g.setOnClickListener(new AnonymousClass4());
+            this.f21570g.setOnClickListener(new AnonymousClass4());
         }
-        this.f20777a.setOnClickListener(new AnonymousClass5());
+        this.f21564a.setOnClickListener(new AnonymousClass5());
     }
 
     public final void a(int i) {
-        if (this.f20790o.getSplashJSBridgeImpl() == null || this.f20790o.getSplashJSBridgeImpl().getSplashBridgeListener() == null) {
+        if (this.f21577o.getSplashJSBridgeImpl() == null || this.f21577o.getSplashJSBridgeImpl().getSplashBridgeListener() == null) {
             return;
         }
         try {
-            this.f20790o.getSplashJSBridgeImpl().getSplashBridgeListener().a(com.anythink.expressad.splash.a.a.a.a(com.anythink.expressad.splash.a.a.a.a(i, this.f20767L, this.f20768M), this.f20791p));
+            this.f21577o.getSplashJSBridgeImpl().getSplashBridgeListener().a(com.anythink.expressad.splash.a.a.a.a(com.anythink.expressad.splash.a.a.a.a(i, this.f21554L, this.f21555M), this.f21578p));
         } catch (Throwable th) {
             th.getMessage();
-            this.f20790o.getSplashJSBridgeImpl().getSplashBridgeListener().a(this.f20791p);
+            this.f21577o.getSplashJSBridgeImpl().getSplashBridgeListener().a(this.f21578p);
         }
     }
 
@@ -647,8 +646,8 @@ public class BaseATSplashNativeView extends RelativeLayout {
 
     public BaseATSplashNativeView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f20788m = false;
-        this.f20789n = false;
+        this.f21575m = false;
+        this.f21576n = false;
     }
 
     /* renamed from: com.anythink.expressad.splash.view.BaseATSplashNativeView$2, reason: invalid class name */
@@ -665,13 +664,13 @@ public class BaseATSplashNativeView extends RelativeLayout {
                         return;
                     }
                     try {
-                        if (BaseATSplashNativeView.this.f20800z == null || (a9 = q.a(bitmap, v.b(t.b().g(), 40.0f))) == null || a9.isRecycled()) {
+                        if (BaseATSplashNativeView.this.f21587z == null || (a9 = q.a(bitmap, v.b(t.b().g(), 40.0f))) == null || a9.isRecycled()) {
                             return;
                         }
-                        BaseATSplashNativeView.this.f20800z.setImageBitmap(a9);
+                        BaseATSplashNativeView.this.f21587z.setImageBitmap(a9);
                     } catch (Throwable th) {
                         th.getMessage();
-                        BaseATSplashNativeView.this.f20800z.setImageBitmap(bitmap);
+                        BaseATSplashNativeView.this.f21587z.setImageBitmap(bitmap);
                     }
                 } catch (Throwable th2) {
                     th2.getMessage();
@@ -681,133 +680,133 @@ public class BaseATSplashNativeView extends RelativeLayout {
 
         @Override // com.anythink.expressad.foundation.g.d.c
         public final void a(String str, String str2) {
-            BaseATSplashNativeView.this.f20800z.setVisibility(4);
+            BaseATSplashNativeView.this.f21587z.setVisibility(4);
         }
     }
 
     public BaseATSplashNativeView(Context context, ATSplashView aTSplashView, com.anythink.expressad.splash.a.b bVar) {
         super(context);
         int a9;
-        this.f20788m = false;
-        this.f20789n = false;
+        this.f21575m = false;
+        this.f21576n = false;
         if (bVar != null) {
-            this.f20771P = bVar.b();
-            this.f20772Q = bVar.a();
-            this.f20791p = bVar.c();
-            this.f20790o = aTSplashView;
-            this.f20761E = bVar.e();
-            this.f20764H = bVar.f();
-            this.f20763G = bVar.g();
-            this.f20784h = bVar.h();
+            this.f21558P = bVar.b();
+            this.f21559Q = bVar.a();
+            this.f21578p = bVar.c();
+            this.f21577o = aTSplashView;
+            this.f21548E = bVar.e();
+            this.f21551H = bVar.f();
+            this.f21550G = bVar.g();
+            this.f21571h = bVar.h();
             this.i = bVar.i();
-            this.f20785j = bVar.j();
-            this.f20786k = bVar.k();
-            this.f20765I = bVar.l();
-            this.f20787l = bVar.d();
+            this.f21572j = bVar.j();
+            this.f21573k = bVar.k();
+            this.f21552I = bVar.l();
+            this.f21574l = bVar.d();
             this.J = bVar.m();
             try {
-                if (this.f20765I == 1) {
+                if (this.f21552I == 1) {
                     a9 = k.a(getContext().getApplicationContext(), "anythink_splash_portrait", "layout");
                 } else {
                     a9 = k.a(getContext().getApplicationContext(), "anythink_splash_landscape", "layout");
                 }
                 View inflate = LayoutInflater.from(getContext()).inflate(a9, (ViewGroup) null);
                 addView(inflate);
-                this.f20794t = (MBNoRecycledCrashImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_image_bg", "id"));
-                this.f20795u = (MBNoRecycledCrashImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_image", "id"));
-                this.f20796v = (RelativeLayout) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_topcontroller", "id"));
-                this.f20797w = (ImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_link", "id"));
-                this.f20798x = (FeedBackButton) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_feedback", "id"));
-                this.f20777a = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_skip", "id"));
-                this.f20799y = (RelativeLayout) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_landscape_foreground", "id"));
-                this.f20800z = (MBNoRecycledCrashImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_icon", "id"));
-                this.f20757A = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_title", "id"));
-                this.f20758B = (MBNoRecycledCrashImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_foregroundimage", "id"));
-                this.f20759C = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_adrect", "id"));
-                this.f20778b = (RelativeLayout) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_layout_appinfo", "id"));
-                this.f20779c = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_appinfo", "id"));
-                this.f20780d = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_privacy", "id"));
-                this.f20781e = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_permission", "id"));
-                this.f20782f = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_app_desc", "id"));
-                this.f20783g = (MBSplashClickView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_click", "id"));
-                this.f20760D = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_adcircle", "id"));
-                int a10 = k.a(getContext().getApplicationContext(), "anythink_splash_count_time_can_skip", k.f19636g);
-                int a11 = k.a(getContext().getApplicationContext(), "anythink_splash_count_time_can_skip_not", k.f19636g);
-                int a12 = k.a(getContext().getApplicationContext(), "anythink_splash_count_time_can_skip_s", k.f19636g);
-                int a13 = k.a(getContext().getApplicationContext(), "anythink_splash_count_time_can_skip_action", k.f19636g);
-                this.f20774S = getContext().getResources().getString(a10);
-                this.f20775T = getContext().getResources().getString(a11);
-                this.f20773R = getContext().getResources().getString(a12);
-                this.f20776U = getContext().getResources().getString(a13);
-                this.f20766K = v.b(getContext(), 9.0f);
+                this.f21581t = (MBNoRecycledCrashImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_image_bg", "id"));
+                this.f21582u = (MBNoRecycledCrashImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_image", "id"));
+                this.f21583v = (RelativeLayout) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_topcontroller", "id"));
+                this.f21584w = (ImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_link", "id"));
+                this.f21585x = (FeedBackButton) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_feedback", "id"));
+                this.f21564a = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_skip", "id"));
+                this.f21586y = (RelativeLayout) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_landscape_foreground", "id"));
+                this.f21587z = (MBNoRecycledCrashImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_icon", "id"));
+                this.f21544A = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_title", "id"));
+                this.f21545B = (MBNoRecycledCrashImageView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_iv_foregroundimage", "id"));
+                this.f21546C = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_adrect", "id"));
+                this.f21565b = (RelativeLayout) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_layout_appinfo", "id"));
+                this.f21566c = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_appinfo", "id"));
+                this.f21567d = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_privacy", "id"));
+                this.f21568e = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_permission", "id"));
+                this.f21569f = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_app_desc", "id"));
+                this.f21570g = (MBSplashClickView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_click", "id"));
+                this.f21547D = (TextView) inflate.findViewById(k.a(getContext().getApplicationContext(), "anythink_splash_tv_adcircle", "id"));
+                int a10 = k.a(getContext().getApplicationContext(), "anythink_splash_count_time_can_skip", k.f20423g);
+                int a11 = k.a(getContext().getApplicationContext(), "anythink_splash_count_time_can_skip_not", k.f20423g);
+                int a12 = k.a(getContext().getApplicationContext(), "anythink_splash_count_time_can_skip_s", k.f20423g);
+                int a13 = k.a(getContext().getApplicationContext(), "anythink_splash_count_time_can_skip_action", k.f20423g);
+                this.f21561S = getContext().getResources().getString(a10);
+                this.f21562T = getContext().getResources().getString(a11);
+                this.f21560R = getContext().getResources().getString(a12);
+                this.f21563U = getContext().getResources().getString(a13);
+                this.f21553K = v.b(getContext(), 9.0f);
             } catch (Throwable th) {
                 th.getMessage();
             }
             try {
-                this.f20769N = getContext().getResources().getConfiguration().locale.getLanguage().contains(com.anythink.expressad.video.dynview.a.a.f21096S);
+                this.f21556N = getContext().getResources().getConfiguration().locale.getLanguage().contains(com.anythink.expressad.video.dynview.a.a.f21883S);
             } catch (Throwable th2) {
                 th2.getMessage();
             }
-            d dVar = this.f20791p;
+            d dVar = this.f21578p;
             if (dVar != null) {
-                dVar.l(this.f20771P);
+                dVar.l(this.f21558P);
             }
             if (com.anythink.expressad.foundation.f.b.a().b()) {
-                com.anythink.expressad.foundation.f.b.a().a(this.f20771P, new AnonymousClass6());
-                com.anythink.expressad.foundation.f.b.a().a(this.f20771P, this.f20798x);
-                com.anythink.expressad.foundation.f.b.a().a(this.f20771P, this.f20791p);
+                com.anythink.expressad.foundation.f.b.a().a(this.f21558P, new AnonymousClass6());
+                com.anythink.expressad.foundation.f.b.a().a(this.f21558P, this.f21585x);
+                com.anythink.expressad.foundation.f.b.a().a(this.f21558P, this.f21578p);
             } else {
-                FeedBackButton feedBackButton = this.f20798x;
+                FeedBackButton feedBackButton = this.f21585x;
                 if (feedBackButton != null) {
                     feedBackButton.setVisibility(8);
                 }
             }
-            if (!TextUtils.isEmpty(this.f20791p.bm())) {
-                f.l().a(this.f20791p.bm(), new AnonymousClass1());
+            if (!TextUtils.isEmpty(this.f21578p.bm())) {
+                com.IceFishing.LiveIceFishing.k.m().a(this.f21578p.bm(), new AnonymousClass1());
             } else {
-                this.f20795u.setVisibility(4);
+                this.f21582u.setVisibility(4);
             }
             g();
             a();
-            if (this.f20764H == 1) {
-                this.f20783g.setVisibility(8);
+            if (this.f21551H == 1) {
+                this.f21570g.setVisibility(8);
             } else if (this.i == 1) {
-                this.f20783g.setVisibility(8);
+                this.f21570g.setVisibility(8);
             } else {
-                this.f20783g.initView(this.f20791p.dj);
+                this.f21570g.initView(this.f21578p.dj);
             }
-            if (this.f20763G == 1) {
+            if (this.f21550G == 1) {
                 setOnClickListener(new AnonymousClass3());
             } else {
-                this.f20783g.setOnClickListener(new AnonymousClass4());
+                this.f21570g.setOnClickListener(new AnonymousClass4());
             }
-            this.f20777a.setOnClickListener(new AnonymousClass5());
+            this.f21564a.setOnClickListener(new AnonymousClass5());
             b();
-            updateCountDown(this.f20761E);
+            updateCountDown(this.f21548E);
             return;
         }
         throw new IllegalArgumentException("Parameters is NULL, can't gen view.");
     }
 
-    private void a(boolean z3) {
-        if (this.f20790o.getSplashJSBridgeImpl() == null || this.f20790o.getSplashJSBridgeImpl().getSplashBridgeListener() == null) {
+    private void a(boolean z6) {
+        if (this.f21577o.getSplashJSBridgeImpl() == null || this.f21577o.getSplashJSBridgeImpl().getSplashBridgeListener() == null) {
             return;
         }
-        this.f20790o.getSplashJSBridgeImpl().getSplashBridgeListener().a(z3 ? 2 : 1, this.f20762F);
+        this.f21577o.getSplashJSBridgeImpl().getSplashBridgeListener().a(z6 ? 2 : 1, this.f21549F);
     }
 
-    public static /* synthetic */ void a(BaseATSplashNativeView baseATSplashNativeView, boolean z3) {
-        if (baseATSplashNativeView.f20790o.getSplashJSBridgeImpl() == null || baseATSplashNativeView.f20790o.getSplashJSBridgeImpl().getSplashBridgeListener() == null) {
+    public static /* synthetic */ void a(BaseATSplashNativeView baseATSplashNativeView, boolean z6) {
+        if (baseATSplashNativeView.f21577o.getSplashJSBridgeImpl() == null || baseATSplashNativeView.f21577o.getSplashJSBridgeImpl().getSplashBridgeListener() == null) {
             return;
         }
-        baseATSplashNativeView.f20790o.getSplashJSBridgeImpl().getSplashBridgeListener().a(z3 ? 2 : 1, baseATSplashNativeView.f20762F);
+        baseATSplashNativeView.f21577o.getSplashJSBridgeImpl().getSplashBridgeListener().a(z6 ? 2 : 1, baseATSplashNativeView.f21549F);
     }
 
     public static /* synthetic */ void g(BaseATSplashNativeView baseATSplashNativeView) {
-        if (!TextUtils.isEmpty(baseATSplashNativeView.f20791p.bl())) {
-            f.l().a(baseATSplashNativeView.f20791p.bl(), baseATSplashNativeView.new AnonymousClass2());
+        if (!TextUtils.isEmpty(baseATSplashNativeView.f21578p.bl())) {
+            com.IceFishing.LiveIceFishing.k.m().a(baseATSplashNativeView.f21578p.bl(), baseATSplashNativeView.new AnonymousClass2());
         } else {
-            baseATSplashNativeView.f20800z.setVisibility(4);
+            baseATSplashNativeView.f21587z.setVisibility(4);
         }
     }
 }

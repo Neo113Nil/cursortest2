@@ -17,15 +17,15 @@ public class ON implements ServiceConnection {
     @Override // android.content.ServiceConnection
     public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {
         Handler handler;
-        AbstractRunnableC1327Wc abstractRunnableC1327Wc;
-        C1836ge c1836ge;
+        AbstractRunnableC1347Wc abstractRunnableC1347Wc;
+        C1856ge c1856ge;
         Messenger messenger;
         handler = this.A00.A04;
-        abstractRunnableC1327Wc = this.A00.A08;
-        handler.removeCallbacks(abstractRunnableC1327Wc);
+        abstractRunnableC1347Wc = this.A00.A08;
+        handler.removeCallbacks(abstractRunnableC1347Wc);
         this.A00.A00 = new Messenger(iBinder);
-        c1836ge = this.A00.A07;
-        if (AbstractC1293Us.A09(c1836ge)) {
+        c1856ge = this.A00.A07;
+        if (AbstractC1313Us.A09(c1856ge)) {
             OO oo = this.A00;
             messenger = this.A00.A00;
             oo.A07(messenger);

@@ -8,5 +8,5 @@ public interface c extends com.anythink.core.express.web.c {
 
     void a(Object obj, String str);
 
-    void a(String str, int i, int i6);
+    void a(String str, int i, int i4);
 }

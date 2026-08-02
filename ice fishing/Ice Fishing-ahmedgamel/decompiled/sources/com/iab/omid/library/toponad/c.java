@@ -1,49 +1,49 @@
 package com.iab.omid.library.toponad;
 
-import D.y;
+import D.x;
 import com.iab.omid.library.toponad.utils.g;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import u1.h;
+import w.AbstractC5128c;
 
 /* loaded from: classes2.dex */
 class c {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final Pattern f36221a = Pattern.compile("<(head)( [^>]*)?>", 2);
+    private static final Pattern f36988a = Pattern.compile("<(head)( [^>]*)?>", 2);
 
     /* renamed from: b, reason: collision with root package name */
-    private static final Pattern f36222b = Pattern.compile("<(head)( [^>]*)?/>", 2);
+    private static final Pattern f36989b = Pattern.compile("<(head)( [^>]*)?/>", 2);
 
     /* renamed from: c, reason: collision with root package name */
-    private static final Pattern f36223c = Pattern.compile("<(body)( [^>]*?)?>", 2);
+    private static final Pattern f36990c = Pattern.compile("<(body)( [^>]*?)?>", 2);
 
     /* renamed from: d, reason: collision with root package name */
-    private static final Pattern f36224d = Pattern.compile("<(body)( [^>]*?)?/>", 2);
+    private static final Pattern f36991d = Pattern.compile("<(body)( [^>]*?)?/>", 2);
 
     /* renamed from: e, reason: collision with root package name */
-    private static final Pattern f36225e = Pattern.compile("<(html)( [^>]*?)?>", 2);
+    private static final Pattern f36992e = Pattern.compile("<(html)( [^>]*?)?>", 2);
 
     /* renamed from: f, reason: collision with root package name */
-    private static final Pattern f36226f = Pattern.compile("<(html)( [^>]*?)?/>", 2);
+    private static final Pattern f36993f = Pattern.compile("<(html)( [^>]*?)?/>", 2);
 
     /* renamed from: g, reason: collision with root package name */
-    private static final Pattern f36227g = Pattern.compile("<!DOCTYPE [^>]*>", 2);
+    private static final Pattern f36994g = Pattern.compile("<!DOCTYPE [^>]*>", 2);
 
     public static String a(String str, String str2) {
         g.a(str, "HTML is null or empty");
         int[][] a9 = a(str);
-        StringBuilder sb = new StringBuilder(h.a(str.length(), 16, str2));
-        if (!b(str, sb, f36222b, str2, a9) && !a(str, sb, f36221a, str2, a9) && !b(str, sb, f36224d, str2, a9) && !a(str, sb, f36223c, str2, a9) && !b(str, sb, f36226f, str2, a9) && !a(str, sb, f36225e, str2, a9) && !a(str, sb, f36227g, str2, a9)) {
+        StringBuilder sb = new StringBuilder(AbstractC5128c.j(str.length(), 16, str2));
+        if (!b(str, sb, f36989b, str2, a9) && !a(str, sb, f36988a, str2, a9) && !b(str, sb, f36991d, str2, a9) && !a(str, sb, f36990c, str2, a9) && !b(str, sb, f36993f, str2, a9) && !a(str, sb, f36992e, str2, a9) && !a(str, sb, f36994g, str2, a9)) {
             return str2.concat(str);
         }
         return sb.toString();
     }
 
     public static String b(String str, String str2) {
-        return a(str2, y.o("<script type=\"text/javascript\">", str, "</script>"));
+        return a(str2, x.l("<script type=\"text/javascript\">", str, "</script>"));
     }
 
     private static boolean a(int i, int[][] iArr) {

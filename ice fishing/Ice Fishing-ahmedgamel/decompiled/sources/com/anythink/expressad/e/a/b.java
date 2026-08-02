@@ -4,7 +4,7 @@ package com.anythink.expressad.e.a;
 public abstract class b implements d {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f18310a = "AppletSchemeCallBack";
+    private static final String f19097a = "AppletSchemeCallBack";
 
     public abstract void a();
 
@@ -17,7 +17,7 @@ public abstract class b implements d {
         try {
             a();
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.getMessage();
             }
         }
@@ -28,7 +28,7 @@ public abstract class b implements d {
         try {
             a(i, str, str2);
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.getMessage();
             }
         }
@@ -39,7 +39,7 @@ public abstract class b implements d {
         try {
             a(str);
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.getMessage();
             }
         }
@@ -50,7 +50,7 @@ public abstract class b implements d {
         try {
             a(i, str, str2);
         } catch (Exception e9) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 e9.getMessage();
             }
         }

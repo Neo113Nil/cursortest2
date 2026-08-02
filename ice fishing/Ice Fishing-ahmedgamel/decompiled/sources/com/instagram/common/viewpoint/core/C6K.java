@@ -10,26 +10,26 @@ import java.util.Arrays;
 
 /* renamed from: com.facebook.ads.redexgen.X.6K, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public final class C6K extends AbstractC1021Ka {
+public final class C6K extends AbstractC1041Ka {
     public static byte[] A09;
     public float A00;
-    public C1701eS A01;
+    public C1721eS A01;
     public boolean A02;
     public final Handler A03;
     public final View A04;
     public final RelativeLayout A05;
     public final RelativeLayout A06;
-    public final AbstractC1375Yb A07;
-    public final InterfaceC1381Yh A08;
+    public final AbstractC1395Yb A07;
+    public final InterfaceC1401Yh A08;
 
     static {
         A06();
     }
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A09, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 106);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A09, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 106);
         }
         return new String(copyOfRange);
     }
@@ -38,28 +38,28 @@ public final class C6K extends AbstractC1021Ka {
         A09 = new byte[]{112, 116, 120, 126, 124};
     }
 
-    public C6K(C1557c7 c1557c7) {
-        super(c1557c7, true);
+    public C6K(C1577c7 c1577c7) {
+        super(c1577c7, true);
         this.A03 = new Handler(Looper.getMainLooper());
         this.A02 = false;
-        this.A08 = c1557c7.A0C();
-        this.A07 = c1557c7.A0B();
-        this.A06 = new RelativeLayout(c1557c7.A06());
-        this.A05 = new RelativeLayout(c1557c7.A06());
+        this.A08 = c1577c7.A0C();
+        this.A07 = c1577c7.A0B();
+        this.A06 = new RelativeLayout(c1577c7.A06());
+        this.A05 = new RelativeLayout(c1577c7.A06());
         YB.A0K(this.A05);
         YB.A0K(this.A06);
-        this.A04 = c1557c7.A02();
+        this.A04 = c1577c7.A02();
         A04();
         this.A06.addView(this.A05, new RelativeLayout.LayoutParams(-2, -2));
         addView(this.A06, new RelativeLayout.LayoutParams(-1, -1));
-        AbstractC1541br.A00(c1557c7.A06(), this.A06, getAdInfo().A0H().A08());
+        AbstractC1561br.A00(c1577c7.A06(), this.A06, getAdInfo().A0H().A08());
         A03();
-        ((AbstractC1553c3) this).A07.A06().A0F().AKh(XL.A00(this.A00), getResources().getConfiguration().orientation, false, false, AbstractC1092Mt.A0C(((AbstractC1553c3) this).A07.A04()));
+        ((AbstractC1573c3) this).A07.A06().A0F().AKh(XL.A00(this.A00), getResources().getConfiguration().orientation, false, false, AbstractC1112Mt.A0C(((AbstractC1573c3) this).A07.A04()));
     }
 
     private void A02() {
         YB.A0d(this.A07, getAdDetailsView(), getCtaButton());
-        this.A01 = new C1701eS(((AbstractC1553c3) this).A07.A06(), getAdDataBundle(), this.A08, getCtaButton(), this.A03, ((AbstractC1553c3) this).A07.A08());
+        this.A01 = new C1721eS(((AbstractC1573c3) this).A07.A06(), getAdDataBundle(), this.A08, getCtaButton(), this.A03, ((AbstractC1573c3) this).A07.A08());
         addView(this.A01.A0W(), new RelativeLayout.LayoutParams(-1, -1));
     }
 
@@ -80,7 +80,7 @@ public final class C6K extends AbstractC1021Ka {
         this.A05.addView(this.A04, new RelativeLayout.LayoutParams(-2, -2));
         YB.A0K(this.A04);
         XR A02 = super.A08.A02(getAdDataBundle());
-        ((AbstractC1553c3) this).A07.A06().A0H().A00(A02.A01);
+        ((AbstractC1573c3) this).A07.A06().A0H().A00(A02.A01);
         getCtaButton().setCreativeAsCtaLoggingHelper(super.A08);
         if (A02.A00) {
             this.A04.setOnClickListener(new View.OnClickListener() { // from class: com.facebook.ads.redexgen.X.c1
@@ -90,10 +90,10 @@ public final class C6K extends AbstractC1021Ka {
                 }
             });
         } else {
-            if (!C1290Up.A1J(getAdContextWrapper())) {
+            if (!C1310Up.A1J(getAdContextWrapper())) {
                 return;
             }
-            AbstractC1500bC.A00(this.A04, C1290Up.A1K(getAdContextWrapper()), new ViewOnClickListenerC1552c2(this));
+            AbstractC1520bC.A00(this.A04, C1310Up.A1K(getAdContextWrapper()), new ViewOnClickListenerC1572c2(this));
         }
     }
 
@@ -107,11 +107,11 @@ public final class C6K extends AbstractC1021Ka {
         if (getAdInfo().A0K().A00() >= 0) {
             this.A02 = true;
             if (this.A07 != null) {
-                AbstractC1375Yb abstractC1375Yb = this.A07;
+                AbstractC1395Yb abstractC1395Yb = this.A07;
                 if (getAdDataBundle().A2P()) {
                     i = 8;
                 }
-                abstractC1375Yb.setToolbarActionMode(i);
+                abstractC1395Yb.setToolbarActionMode(i);
                 this.A07.setProgressImmediate(0.0f);
             }
             new XO((int) getAdInfo().A0K().A00(), 20.0f, 20L, new Handler(Looper.getMainLooper()), new KY(this)).A07();
@@ -150,17 +150,17 @@ public final class C6K extends AbstractC1021Ka {
         this.A04.setLayoutParams(layoutParams);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final boolean A0A() {
         return false;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final boolean A0B() {
         return false;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1021Ka, com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1041Ka, com.instagram.common.viewpoint.core.AbstractC1573c3
     public final void A1C() {
         super.A1C();
         this.A03.removeCallbacksAndMessages(null);
@@ -170,32 +170,32 @@ public final class C6K extends AbstractC1021Ka {
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1021Ka, com.instagram.common.viewpoint.core.AbstractC1553c3
-    public final void A1H(NR nr, String str, double d2, Bundle bundle) {
-        super.A1H(nr, str, d2, bundle);
+    @Override // com.instagram.common.viewpoint.core.AbstractC1041Ka, com.instagram.common.viewpoint.core.AbstractC1573c3
+    public final void A1H(NR nr, String str, double d9, Bundle bundle) {
+        super.A1H(nr, str, d9, bundle);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
-    public final void A1L(boolean z3) {
-        super.A1L(z3);
-        getAdDetailsView().A0m(z3);
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
+    public final void A1L(boolean z6) {
+        super.A1L(z6);
+        getAdDetailsView().A0m(z6);
         if (this.A01 != null) {
-            this.A01.A0e(z3);
+            this.A01.A0e(z6);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final boolean A1M() {
         return getAdInfo().A0V();
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public final boolean A1O() {
         return true;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
-    public final boolean A1P(boolean z3) {
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
+    public final boolean A1P(boolean z6) {
         if (getAdInfo().A0V() && !this.A09.get()) {
             A05();
             return true;
@@ -203,17 +203,17 @@ public final class C6K extends AbstractC1021Ka {
         return false;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1021Ka
-    public final AbstractC1503bF A1R(C1557c7 c1557c7, NR nr, String str) {
-        this.A00 = new C1246Sx(c1557c7.A06()).A0M(nr.A0H().A08());
-        return new C1542bs(this.A00, str, c1557c7.A06(), getColors(), c1557c7.A05(), c1557c7.A0C(), getCtaButton(), AbstractC1021Ka.A0G, false, c1557c7.A07(), c1557c7.A0F(), c1557c7.A0A(), c1557c7.A0E(), c1557c7.A08(), false).A03();
+    @Override // com.instagram.common.viewpoint.core.AbstractC1041Ka
+    public final AbstractC1523bF A1R(C1577c7 c1577c7, NR nr, String str) {
+        this.A00 = new C1266Sx(c1577c7.A06()).A0M(nr.A0H().A08());
+        return new C1562bs(this.A00, str, c1577c7.A06(), getColors(), c1577c7.A05(), c1577c7.A0C(), getCtaButton(), AbstractC1041Ka.A0G, false, c1577c7.A07(), c1577c7.A0F(), c1577c7.A0A(), c1577c7.A0E(), c1577c7.A08(), false).A03();
     }
 
     public final /* synthetic */ void A1X(View view) {
         getCtaButton().A0E(A01(0, 5, 115));
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1553c3
+    @Override // com.instagram.common.viewpoint.core.AbstractC1573c3
     public int getCloseButtonStyle() {
         if (this.A02) {
             if (getAdDataBundle().A2P()) {
@@ -227,7 +227,7 @@ public final class C6K extends AbstractC1021Ka {
         return super.getCloseButtonStyle();
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1021Ka, com.instagram.common.viewpoint.core.AbstractC1553c3, android.view.View
+    @Override // com.instagram.common.viewpoint.core.AbstractC1041Ka, com.instagram.common.viewpoint.core.AbstractC1573c3, android.view.View
     public final void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
         if (this.A01 != null && this.A09.get()) {

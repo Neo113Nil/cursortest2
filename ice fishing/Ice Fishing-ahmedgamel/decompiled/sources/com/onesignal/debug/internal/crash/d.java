@@ -1,17 +1,17 @@
 package com.onesignal.debug.internal.crash;
 
 import I7.p;
-import S0.s;
-import S7.AbstractC0406y;
-import S7.InterfaceC0404w;
+import S0.l;
+import S7.AbstractC0410y;
+import S7.InterfaceC0408w;
 import android.os.Handler;
 import android.os.Looper;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicLong;
 import kotlin.jvm.internal.h;
 import u7.v;
-import z7.C5273j;
-import z7.InterfaceC5267d;
+import z7.C5246j;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class d implements I5.a {
@@ -55,42 +55,42 @@ public final class d implements I5.a {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public c(Thread thread, a aVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public c(Thread thread, a aVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$mainThread = thread;
             this.$anrException = aVar;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return d.this.new c(this.$mainThread, this.$anrException, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return d.this.new c(this.$mainThread, this.$anrException, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((c) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((c) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 F5.b bVar = d.this.crashReporter;
                 Thread thread = this.$mainThread;
                 a aVar2 = this.$anrException;
                 this.label = 1;
-                if (((s) bVar).o(thread, aVar2, this) == aVar) {
+                if (((l) bVar).H(thread, aVar2, this) == aVar) {
                     return aVar;
                 }
             } else {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
             }
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
@@ -100,7 +100,7 @@ public final class d implements I5.a {
         this.logger = logger;
         this.anrThresholdMs = j6;
         this.checkIntervalMs = j9;
-        this.crashReporter = new s(2, openTelemetryCrash, logger);
+        this.crashReporter = new l(2, openTelemetryCrash, logger);
         this.mainHandler = new Handler(Looper.getMainLooper());
         this.isMonitoring = new AtomicBoolean(false);
         this.lastResponseTime = new AtomicLong(System.currentTimeMillis());
@@ -148,12 +148,12 @@ public final class d implements I5.a {
             h.d(thread, "getThread(...)");
             StackTraceElement[] stackTrace = thread.getStackTrace();
             h.b(stackTrace);
-            if (!X2.e.J(stackTrace)) {
+            if (!Q3.b.k(stackTrace)) {
                 this.logger.debug("OtelAnrDetector: ANR is not OneSignal-related, skipping report");
                 return;
             }
             this.logger.info("OtelAnrDetector: OneSignal-related ANR detected, reporting...");
-            AbstractC0406y.s(C5273j.f42272n, new c(thread, new a("Application Not Responding: Main thread blocked for " + j6 + "ms", stackTrace), null));
+            AbstractC0410y.s(C5246j.f42241n, new c(thread, new a("Application Not Responding: Main thread blocked for " + j6 + "ms", stackTrace), null));
             this.logger.info("OtelAnrDetector: ✅ ANR report saved successfully");
         } catch (Throwable th) {
             this.logger.error("OtelAnrDetector: Failed to report ANR: " + th.getMessage() + " - " + th.getClass().getSimpleName());
@@ -165,42 +165,42 @@ public final class d implements I5.a {
         this.mainThreadRunnable = new Runnable(this) { // from class: com.onesignal.debug.internal.crash.c
 
             /* renamed from: u, reason: collision with root package name */
-            public final /* synthetic */ d f36956u;
+            public final /* synthetic */ d f37109u;
 
             {
-                this.f36956u = this;
+                this.f37109u = this;
             }
 
             @Override // java.lang.Runnable
             public final void run() {
                 switch (i) {
                     case 0:
-                        d.setupRunnables$lambda$0(this.f36956u);
+                        d.setupRunnables$lambda$0(this.f37109u);
                         break;
                     default:
-                        d.setupRunnables$lambda$1(this.f36956u);
+                        d.setupRunnables$lambda$1(this.f37109u);
                         break;
                 }
             }
         };
-        final int i6 = 1;
+        final int i4 = 1;
         this.watchdogRunnable = new Runnable(this) { // from class: com.onesignal.debug.internal.crash.c
 
             /* renamed from: u, reason: collision with root package name */
-            public final /* synthetic */ d f36956u;
+            public final /* synthetic */ d f37109u;
 
             {
-                this.f36956u = this;
+                this.f37109u = this;
             }
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (i6) {
+                switch (i4) {
                     case 0:
-                        d.setupRunnables$lambda$0(this.f36956u);
+                        d.setupRunnables$lambda$0(this.f37109u);
                         break;
                     default:
-                        d.setupRunnables$lambda$1(this.f36956u);
+                        d.setupRunnables$lambda$1(this.f37109u);
                         break;
                 }
             }
@@ -272,6 +272,6 @@ public final class d implements I5.a {
     }
 
     public /* synthetic */ d(F5.d dVar, F5.c cVar, long j6, long j9, int i, kotlin.jvm.internal.e eVar) {
-        this(dVar, cVar, (i & 4) != 0 ? com.anythink.basead.exoplayer.f.f7187a : j6, (i & 8) != 0 ? com.anythink.basead.exoplayer.i.a.f7883f : j9);
+        this(dVar, cVar, (i & 4) != 0 ? com.anythink.basead.exoplayer.f.f7973a : j6, (i & 8) != 0 ? com.anythink.basead.exoplayer.i.a.f8669f : j9);
     }
 }

@@ -6,13 +6,13 @@ public interface a {
 
     void a(int i);
 
-    void a(int i, int i6);
+    void a(int i, int i4);
 
     void a(com.anythink.expressad.foundation.d.d dVar);
 
     void a(String str);
 
-    void a(boolean z3);
+    void a(boolean z6);
 
     void b();
 

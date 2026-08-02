@@ -6,21 +6,21 @@ import java.util.Arrays;
 public final class d0 extends K {
 
     /* renamed from: a, reason: collision with root package name */
-    public short[] f37286a;
+    public short[] f37362a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f37287b;
+    public int f37363b;
 
     @Override // e8.K
     public final Object a() {
-        short[] copyOf = Arrays.copyOf(this.f37286a, this.f37287b);
+        short[] copyOf = Arrays.copyOf(this.f37362a, this.f37363b);
         kotlin.jvm.internal.h.d(copyOf, "copyOf(...)");
         return new u7.u(copyOf);
     }
 
     @Override // e8.K
     public final void b(int i) {
-        short[] sArr = this.f37286a;
+        short[] sArr = this.f37362a;
         if (sArr.length < i) {
             int length = sArr.length * 2;
             if (i < length) {
@@ -28,12 +28,12 @@ public final class d0 extends K {
             }
             short[] copyOf = Arrays.copyOf(sArr, i);
             kotlin.jvm.internal.h.d(copyOf, "copyOf(...)");
-            this.f37286a = copyOf;
+            this.f37362a = copyOf;
         }
     }
 
     @Override // e8.K
     public final int d() {
-        return this.f37287b;
+        return this.f37363b;
     }
 }

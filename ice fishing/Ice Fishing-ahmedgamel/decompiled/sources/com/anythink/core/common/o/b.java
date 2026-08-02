@@ -41,7 +41,7 @@ public final class b {
             try {
                 BufferedReader bufferedReader2 = new BufferedReader(fileReader, 8192);
                 String str = "";
-                for (int i6 = 0; i6 < i; i6++) {
+                for (int i4 = 0; i4 < i; i4++) {
                     try {
                         str = bufferedReader2.readLine();
                     } catch (IOException unused) {
@@ -93,6 +93,6 @@ public final class b {
     }
 
     private static int a(Context context, ActivityManager activityManager) {
-        return (context.getApplicationContext().getApplicationInfo().flags & o.f7742d) == 1048576 ? activityManager.getLargeMemoryClass() : activityManager.getMemoryClass();
+        return (context.getApplicationContext().getApplicationInfo().flags & o.f8528d) == 1048576 ? activityManager.getLargeMemoryClass() : activityManager.getMemoryClass();
     }
 }

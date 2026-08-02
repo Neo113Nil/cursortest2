@@ -52,22 +52,22 @@ public final class FW {
         }
     }
 
-    private final void A04(int i, float f3) {
+    private final void A04(int i, float f2) {
         FV oldestSample;
         A02();
         if (this.A02 > 0) {
             FV[] fvArr = this.A06;
-            int i6 = this.A02 - 1;
-            this.A02 = i6;
-            oldestSample = fvArr[i6];
+            int i4 = this.A02 - 1;
+            this.A02 = i4;
+            oldestSample = fvArr[i4];
         } else {
             oldestSample = new FV();
         }
-        int i9 = this.A01;
-        this.A01 = i9 + 1;
-        oldestSample.A01 = i9;
+        int i6 = this.A01;
+        this.A01 = i6 + 1;
+        oldestSample.A01 = i6;
         oldestSample.A02 = i;
-        oldestSample.A00 = f3;
+        oldestSample.A00 = f2;
         this.A05.add(oldestSample);
         this.A03 += i;
         while (this.A03 > this.A04) {
@@ -89,11 +89,11 @@ public final class FW {
         }
     }
 
-    public final float A05(float f3) {
+    public final float A05(float f2) {
         A03();
-        float f9 = this.A03 * f3;
+        float f9 = this.A03 * f2;
         int i = 0;
-        int i6 = 0;
+        int i4 = 0;
         while (true) {
             int size = this.A05.size();
             int accumulatedWeight = A07[7].charAt(16);
@@ -101,15 +101,15 @@ public final class FW {
                 throw new RuntimeException();
             }
             A07[7] = "tMnKu67VMHjg0RGb1V9fdd44wq1tOS9W";
-            if (i6 < size) {
-                FV fv = this.A05.get(i6);
+            if (i4 < size) {
+                FV fv = this.A05.get(i4);
                 i += fv.A02;
                 float desiredWeight = i;
                 if (desiredWeight >= f9) {
                     float desiredWeight2 = fv.A00;
                     return desiredWeight2;
                 }
-                i6++;
+                i4++;
             } else {
                 if (this.A05.isEmpty()) {
                     return Float.NaN;
@@ -128,26 +128,26 @@ public final class FW {
     }
 
     @MetaExoPlayerCustomization("D20155618 Samples OutOfBounds Error Check Fix")
-    public final void A07(int i, float f3) {
+    public final void A07(int i, float f2) {
         FV oldestSample;
-        if (MetaExoPlayerUpgradeConfig.A03(EnumC2000jX.A1F)) {
-            A04(i, f3);
+        if (MetaExoPlayerUpgradeConfig.A03(EnumC2020jX.A1F)) {
+            A04(i, f2);
             return;
         }
         A02();
         if (this.A02 > 0) {
             FV[] fvArr = this.A06;
-            int i6 = this.A02 - 1;
-            this.A02 = i6;
-            oldestSample = fvArr[i6];
+            int i4 = this.A02 - 1;
+            this.A02 = i4;
+            oldestSample = fvArr[i4];
         } else {
             oldestSample = new FV();
         }
-        int i9 = this.A01;
-        this.A01 = i9 + 1;
-        oldestSample.A01 = i9;
+        int i6 = this.A01;
+        this.A01 = i6 + 1;
+        oldestSample.A01 = i6;
         oldestSample.A02 = i;
-        oldestSample.A00 = f3;
+        oldestSample.A00 = f2;
         this.A05.add(oldestSample);
         this.A03 += i;
         while (this.A03 > this.A04 && !this.A05.isEmpty()) {

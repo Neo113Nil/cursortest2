@@ -6,14 +6,14 @@ import java.io.IOException;
 public final class q implements I7.a {
 
     /* renamed from: n, reason: collision with root package name */
-    public final v f39875n;
+    public final v f39922n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final /* synthetic */ r f39876u;
+    public final /* synthetic */ r f39923u;
 
     public q(r rVar, v vVar) {
-        this.f39876u = rVar;
-        this.f39875n = vVar;
+        this.f39923u = rVar;
+        this.f39922n = vVar;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -29,9 +29,9 @@ public final class q implements I7.a {
     public final Object invoke() {
         Throwable th;
         EnumC4856b enumC4856b;
-        ?? r02 = this.f39876u;
-        v vVar = this.f39875n;
-        EnumC4856b enumC4856b2 = EnumC4856b.f39821x;
+        ?? r02 = this.f39923u;
+        v vVar = this.f39922n;
+        EnumC4856b enumC4856b2 = EnumC4856b.f39868x;
         ?? r32 = 1;
         IOException e9 = null;
         try {
@@ -60,21 +60,21 @@ public final class q implements I7.a {
                     throw th;
                 }
             } while (vVar.a(false, this));
-            enumC4856b = EnumC4856b.f39819v;
+            enumC4856b = EnumC4856b.f39866v;
             try {
-                enumC4856b2 = EnumC4856b.f39816A;
+                enumC4856b2 = EnumC4856b.f39863A;
                 r02.a(enumC4856b, enumC4856b2, null);
                 r32 = enumC4856b;
             } catch (IOException e11) {
                 e9 = e11;
-                enumC4856b2 = EnumC4856b.f39820w;
+                enumC4856b2 = EnumC4856b.f39867w;
                 r02.a(enumC4856b2, enumC4856b2, e9);
                 r32 = enumC4856b;
                 j8.c.a(vVar);
-                return u7.v.f41353a;
+                return u7.v.f41073a;
             }
             j8.c.a(vVar);
-            return u7.v.f41353a;
+            return u7.v.f41073a;
         } catch (Throwable th4) {
             th = th4;
         }

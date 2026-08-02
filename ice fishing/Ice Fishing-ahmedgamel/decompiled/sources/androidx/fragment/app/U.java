@@ -8,62 +8,62 @@ public final class U implements Parcelable {
     public static final Parcelable.Creator<U> CREATOR = new B8.d(24);
 
     /* renamed from: A, reason: collision with root package name */
-    public final boolean f4891A;
+    public final boolean f4859A;
 
     /* renamed from: B, reason: collision with root package name */
-    public final boolean f4892B;
+    public final boolean f4860B;
 
     /* renamed from: C, reason: collision with root package name */
-    public final boolean f4893C;
+    public final boolean f4861C;
 
     /* renamed from: D, reason: collision with root package name */
-    public final int f4894D;
+    public final int f4862D;
 
     /* renamed from: E, reason: collision with root package name */
-    public final String f4895E;
+    public final String f4863E;
 
     /* renamed from: F, reason: collision with root package name */
-    public final int f4896F;
+    public final int f4864F;
 
     /* renamed from: G, reason: collision with root package name */
-    public final boolean f4897G;
+    public final boolean f4865G;
 
     /* renamed from: n, reason: collision with root package name */
-    public final String f4898n;
+    public final String f4866n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final String f4899u;
+    public final String f4867u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final boolean f4900v;
+    public final boolean f4868v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final int f4901w;
+    public final int f4869w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final int f4902x;
+    public final int f4870x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final String f4903y;
+    public final String f4871y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final boolean f4904z;
+    public final boolean f4872z;
 
-    public U(AbstractComponentCallbacksC0475s abstractComponentCallbacksC0475s) {
-        this.f4898n = abstractComponentCallbacksC0475s.getClass().getName();
-        this.f4899u = abstractComponentCallbacksC0475s.f5066x;
-        this.f4900v = abstractComponentCallbacksC0475s.f5033F;
-        this.f4901w = abstractComponentCallbacksC0475s.f5041O;
-        this.f4902x = abstractComponentCallbacksC0475s.f5042P;
-        this.f4903y = abstractComponentCallbacksC0475s.f5043Q;
-        this.f4904z = abstractComponentCallbacksC0475s.f5046T;
-        this.f4891A = abstractComponentCallbacksC0475s.f5032E;
-        this.f4892B = abstractComponentCallbacksC0475s.f5045S;
-        this.f4893C = abstractComponentCallbacksC0475s.f5044R;
-        this.f4894D = abstractComponentCallbacksC0475s.f5057r0.ordinal();
-        this.f4895E = abstractComponentCallbacksC0475s.f5028A;
-        this.f4896F = abstractComponentCallbacksC0475s.f5029B;
-        this.f4897G = abstractComponentCallbacksC0475s.f5051Z;
+    public U(AbstractComponentCallbacksC0479s abstractComponentCallbacksC0479s) {
+        this.f4866n = abstractComponentCallbacksC0479s.getClass().getName();
+        this.f4867u = abstractComponentCallbacksC0479s.f5034x;
+        this.f4868v = abstractComponentCallbacksC0479s.f5001F;
+        this.f4869w = abstractComponentCallbacksC0479s.f5009O;
+        this.f4870x = abstractComponentCallbacksC0479s.f5010P;
+        this.f4871y = abstractComponentCallbacksC0479s.f5011Q;
+        this.f4872z = abstractComponentCallbacksC0479s.f5014T;
+        this.f4859A = abstractComponentCallbacksC0479s.f5000E;
+        this.f4860B = abstractComponentCallbacksC0479s.f5013S;
+        this.f4861C = abstractComponentCallbacksC0479s.f5012R;
+        this.f4862D = abstractComponentCallbacksC0479s.m0.ordinal();
+        this.f4863E = abstractComponentCallbacksC0479s.f4996A;
+        this.f4864F = abstractComponentCallbacksC0479s.f4997B;
+        this.f4865G = abstractComponentCallbacksC0479s.f5019Z;
     }
 
     @Override // android.os.Parcelable
@@ -74,43 +74,43 @@ public final class U implements Parcelable {
     public final String toString() {
         StringBuilder sb = new StringBuilder(128);
         sb.append("FragmentState{");
-        sb.append(this.f4898n);
+        sb.append(this.f4866n);
         sb.append(" (");
-        sb.append(this.f4899u);
+        sb.append(this.f4867u);
         sb.append(")}:");
-        if (this.f4900v) {
+        if (this.f4868v) {
             sb.append(" fromLayout");
         }
-        int i = this.f4902x;
+        int i = this.f4870x;
         if (i != 0) {
             sb.append(" id=0x");
             sb.append(Integer.toHexString(i));
         }
-        String str = this.f4903y;
+        String str = this.f4871y;
         if (str != null && !str.isEmpty()) {
             sb.append(" tag=");
             sb.append(str);
         }
-        if (this.f4904z) {
+        if (this.f4872z) {
             sb.append(" retainInstance");
         }
-        if (this.f4891A) {
+        if (this.f4859A) {
             sb.append(" removing");
         }
-        if (this.f4892B) {
+        if (this.f4860B) {
             sb.append(" detached");
         }
-        if (this.f4893C) {
+        if (this.f4861C) {
             sb.append(" hidden");
         }
-        String str2 = this.f4895E;
+        String str2 = this.f4863E;
         if (str2 != null) {
             sb.append(" targetWho=");
             sb.append(str2);
             sb.append(" targetRequestCode=");
-            sb.append(this.f4896F);
+            sb.append(this.f4864F);
         }
-        if (this.f4897G) {
+        if (this.f4865G) {
             sb.append(" userVisibleHint");
         }
         return sb.toString();
@@ -118,36 +118,36 @@ public final class U implements Parcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(this.f4898n);
-        parcel.writeString(this.f4899u);
-        parcel.writeInt(this.f4900v ? 1 : 0);
-        parcel.writeInt(this.f4901w);
-        parcel.writeInt(this.f4902x);
-        parcel.writeString(this.f4903y);
-        parcel.writeInt(this.f4904z ? 1 : 0);
-        parcel.writeInt(this.f4891A ? 1 : 0);
-        parcel.writeInt(this.f4892B ? 1 : 0);
-        parcel.writeInt(this.f4893C ? 1 : 0);
-        parcel.writeInt(this.f4894D);
-        parcel.writeString(this.f4895E);
-        parcel.writeInt(this.f4896F);
-        parcel.writeInt(this.f4897G ? 1 : 0);
+        parcel.writeString(this.f4866n);
+        parcel.writeString(this.f4867u);
+        parcel.writeInt(this.f4868v ? 1 : 0);
+        parcel.writeInt(this.f4869w);
+        parcel.writeInt(this.f4870x);
+        parcel.writeString(this.f4871y);
+        parcel.writeInt(this.f4872z ? 1 : 0);
+        parcel.writeInt(this.f4859A ? 1 : 0);
+        parcel.writeInt(this.f4860B ? 1 : 0);
+        parcel.writeInt(this.f4861C ? 1 : 0);
+        parcel.writeInt(this.f4862D);
+        parcel.writeString(this.f4863E);
+        parcel.writeInt(this.f4864F);
+        parcel.writeInt(this.f4865G ? 1 : 0);
     }
 
     public U(Parcel parcel) {
-        this.f4898n = parcel.readString();
-        this.f4899u = parcel.readString();
-        this.f4900v = parcel.readInt() != 0;
-        this.f4901w = parcel.readInt();
-        this.f4902x = parcel.readInt();
-        this.f4903y = parcel.readString();
-        this.f4904z = parcel.readInt() != 0;
-        this.f4891A = parcel.readInt() != 0;
-        this.f4892B = parcel.readInt() != 0;
-        this.f4893C = parcel.readInt() != 0;
-        this.f4894D = parcel.readInt();
-        this.f4895E = parcel.readString();
-        this.f4896F = parcel.readInt();
-        this.f4897G = parcel.readInt() != 0;
+        this.f4866n = parcel.readString();
+        this.f4867u = parcel.readString();
+        this.f4868v = parcel.readInt() != 0;
+        this.f4869w = parcel.readInt();
+        this.f4870x = parcel.readInt();
+        this.f4871y = parcel.readString();
+        this.f4872z = parcel.readInt() != 0;
+        this.f4859A = parcel.readInt() != 0;
+        this.f4860B = parcel.readInt() != 0;
+        this.f4861C = parcel.readInt() != 0;
+        this.f4862D = parcel.readInt();
+        this.f4863E = parcel.readString();
+        this.f4864F = parcel.readInt();
+        this.f4865G = parcel.readInt() != 0;
     }
 }

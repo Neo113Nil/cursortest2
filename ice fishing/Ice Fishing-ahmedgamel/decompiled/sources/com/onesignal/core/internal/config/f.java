@@ -35,8 +35,8 @@ public final class f extends i {
         return getBooleanProperty("isEnabled", a.INSTANCE);
     }
 
-    public final void setEnabled(boolean z3) {
-        i.setBooleanProperty$default(this, "isEnabled", z3, null, false, 12, null);
+    public final void setEnabled(boolean z6) {
+        i.setBooleanProperty$default(this, "isEnabled", z6, null, false, 12, null);
     }
 
     public final void setLogLevel(M4.c cVar) {

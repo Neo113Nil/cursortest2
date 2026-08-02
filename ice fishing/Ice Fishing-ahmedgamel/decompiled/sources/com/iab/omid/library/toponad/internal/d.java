@@ -10,16 +10,16 @@ import android.os.Bundle;
 public class d implements Application.ActivityLifecycleCallbacks {
 
     /* renamed from: a, reason: collision with root package name */
-    private boolean f36243a;
+    private boolean f37010a;
 
     /* renamed from: b, reason: collision with root package name */
-    protected boolean f36244b;
+    protected boolean f37011b;
 
     /* renamed from: c, reason: collision with root package name */
-    private a f36245c;
+    private a f37012c;
 
     public interface a {
-        void a(boolean z3);
+        void a(boolean z6);
     }
 
     public void a(Context context) {
@@ -35,7 +35,7 @@ public class d implements Application.ActivityLifecycleCallbacks {
     }
 
     public boolean c() {
-        return this.f36244b;
+        return this.f37011b;
     }
 
     public boolean d() {
@@ -43,15 +43,15 @@ public class d implements Application.ActivityLifecycleCallbacks {
     }
 
     public void e() {
-        this.f36243a = true;
+        this.f37010a = true;
         boolean a9 = a();
-        this.f36244b = a9;
+        this.f37011b = a9;
         b(a9);
     }
 
     public void f() {
-        this.f36243a = false;
-        this.f36245c = null;
+        this.f37010a = false;
+        this.f37012c = null;
     }
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
@@ -85,20 +85,20 @@ public class d implements Application.ActivityLifecycleCallbacks {
     }
 
     public void a(a aVar) {
-        this.f36245c = aVar;
+        this.f37012c = aVar;
     }
 
-    public void b(boolean z3) {
+    public void b(boolean z6) {
     }
 
-    private void a(boolean z3) {
-        if (this.f36244b != z3) {
-            this.f36244b = z3;
-            if (this.f36243a) {
-                b(z3);
-                a aVar = this.f36245c;
+    private void a(boolean z6) {
+        if (this.f37011b != z6) {
+            this.f37011b = z6;
+            if (this.f37010a) {
+                b(z6);
+                a aVar = this.f37012c;
                 if (aVar != null) {
-                    aVar.a(z3);
+                    aVar.a(z6);
                 }
             }
         }

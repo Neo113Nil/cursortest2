@@ -10,39 +10,39 @@ import java.util.Objects;
 public final class O4 implements ServiceConnection {
 
     /* renamed from: n, reason: collision with root package name */
-    public final C3657o7 f26587n;
+    public final C3680o7 f27369n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final /* synthetic */ C3918t f26588u;
+    public final /* synthetic */ C3941t f27370u;
 
-    public /* synthetic */ O4(C3918t c3918t, C3657o7 c3657o7) {
-        Objects.requireNonNull(c3918t);
-        this.f26588u = c3918t;
-        this.f26587n = c3657o7;
+    public /* synthetic */ O4(C3941t c3941t, C3680o7 c3680o7) {
+        Objects.requireNonNull(c3941t);
+        this.f27370u = c3941t;
+        this.f27369n = c3680o7;
     }
 
     @Override // android.content.ServiceConnection
     public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-        InterfaceC3550m8 c3442k8;
-        AbstractC3043cl.n("Install Referrer service connected.");
-        int i = AbstractBinderC3496l8.f31740n;
+        InterfaceC3573m8 c3465k8;
+        AbstractC3066cl.n("Install Referrer service connected.");
+        int i = AbstractBinderC3519l8.f32520n;
         if (iBinder == null) {
-            c3442k8 = null;
+            c3465k8 = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.finsky.externalreferrer.IGetInstallReferrerService");
-            c3442k8 = queryLocalInterface instanceof InterfaceC3550m8 ? (InterfaceC3550m8) queryLocalInterface : new C3442k8(iBinder, "com.google.android.finsky.externalreferrer.IGetInstallReferrerService", 2);
+            c3465k8 = queryLocalInterface instanceof InterfaceC3573m8 ? (InterfaceC3573m8) queryLocalInterface : new C3465k8(iBinder, "com.google.android.finsky.externalreferrer.IGetInstallReferrerService", 1);
         }
-        C3918t c3918t = this.f26588u;
-        c3918t.f34180w = c3442k8;
-        c3918t.f34177n = 2;
-        this.f26587n.h(0);
+        C3941t c3941t = this.f27370u;
+        c3941t.f34966w = c3465k8;
+        c3941t.f34963n = 2;
+        this.f27369n.l(0);
     }
 
     @Override // android.content.ServiceConnection
     public final void onServiceDisconnected(ComponentName componentName) {
-        AbstractC3043cl.v("Install Referrer service disconnected.");
-        C3918t c3918t = this.f26588u;
-        c3918t.f34180w = null;
-        c3918t.f34177n = 0;
+        AbstractC3066cl.v("Install Referrer service disconnected.");
+        C3941t c3941t = this.f27370u;
+        c3941t.f34966w = null;
+        c3941t.f34963n = 0;
     }
 }

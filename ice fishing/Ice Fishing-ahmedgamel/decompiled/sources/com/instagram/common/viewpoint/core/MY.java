@@ -4,10 +4,10 @@ package com.instagram.common.viewpoint.core;
 public interface MY {
     public static final MY A00 = new MY() { // from class: com.facebook.ads.redexgen.X.kR
         @Override // com.instagram.common.viewpoint.core.MY
-        public final String A4l(C06605i c06605i) {
-            return MX.A00(c06605i);
+        public final String A4l(C06805i c06805i) {
+            return MX.A00(c06805i);
         }
     };
 
-    String A4l(C06605i c06605i);
+    String A4l(C06805i c06805i);
 }

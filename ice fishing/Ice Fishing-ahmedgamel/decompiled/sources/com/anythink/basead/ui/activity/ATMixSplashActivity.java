@@ -16,27 +16,27 @@ import com.anythink.core.common.l.f.a.a;
 public class ATMixSplashActivity extends BaseATActivity {
 
     /* renamed from: o, reason: collision with root package name */
-    private String f10429o;
+    private String f11215o;
 
     /* renamed from: p, reason: collision with root package name */
-    private FrameLayout f10430p;
+    private FrameLayout f11216p;
 
     public static void b(Activity activity, c cVar) {
         if (cVar == null) {
             return;
         }
-        Context g4 = t.b().g();
+        Context g9 = t.b().g();
         if (activity == null || activity.isFinishing()) {
             Log.i("anythink_BaseATActivity", "Activity is null");
         } else {
-            g4 = activity;
+            g9 = activity;
         }
-        Intent intent = new Intent(g4, (Class<?>) ATMixSplashActivity.class);
-        intent.putExtra(a.C0072a.f11869d, cVar.f11920d);
-        if (!(g4 instanceof Activity)) {
+        Intent intent = new Intent(g9, (Class<?>) ATMixSplashActivity.class);
+        intent.putExtra(a.C0072a.f12655d, cVar.f12706d);
+        if (!(g9 instanceof Activity)) {
             intent.addFlags(268435456);
         }
-        g4.startActivity(intent);
+        g9.startActivity(intent);
         if (activity == null || activity.isFinishing()) {
             return;
         }
@@ -46,13 +46,13 @@ public class ATMixSplashActivity extends BaseATActivity {
     @Override // com.anythink.basead.ui.BaseATActivity
     public final void a(Bundle bundle) {
         FrameLayout frameLayout = new FrameLayout(this);
-        this.f10430p = frameLayout;
+        this.f11216p = frameLayout;
         setContentView(frameLayout);
         try {
-            this.f10429o = getIntent().getStringExtra(a.C0072a.f11869d);
-            a.InterfaceC0084a c9 = com.anythink.basead.mixad.a.a().c(this.f10429o);
+            this.f11215o = getIntent().getStringExtra(a.C0072a.f12655d);
+            a.InterfaceC0084a c9 = com.anythink.basead.mixad.a.a().c(this.f11215o);
             if (c9 != null) {
-                c9.a(this, this.f10430p);
+                c9.a(this, this.f11216p);
             }
         } catch (Throwable unused) {
         }
@@ -64,13 +64,13 @@ public class ATMixSplashActivity extends BaseATActivity {
     }
 
     private void a() {
-        this.f10429o = getIntent().getStringExtra(a.C0072a.f11869d);
+        this.f11215o = getIntent().getStringExtra(a.C0072a.f12655d);
     }
 
     private void b() {
-        a.InterfaceC0084a c9 = com.anythink.basead.mixad.a.a().c(this.f10429o);
+        a.InterfaceC0084a c9 = com.anythink.basead.mixad.a.a().c(this.f11215o);
         if (c9 != null) {
-            c9.a(this, this.f10430p);
+            c9.a(this, this.f11216p);
         }
     }
 }

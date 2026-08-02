@@ -8,36 +8,36 @@ import java.util.Map;
 public final class W4 {
 
     /* renamed from: a, reason: collision with root package name */
-    public byte[] f28313a;
+    public byte[] f29111a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f28314b;
+    public String f29112b;
 
     /* renamed from: c, reason: collision with root package name */
-    public long f28315c;
+    public long f29113c;
 
     /* renamed from: d, reason: collision with root package name */
-    public long f28316d;
+    public long f29114d;
 
     /* renamed from: e, reason: collision with root package name */
-    public long f28317e;
+    public long f29115e;
 
     /* renamed from: f, reason: collision with root package name */
-    public long f28318f;
+    public long f29116f;
 
     /* renamed from: g, reason: collision with root package name */
-    public Map f28319g;
+    public Map f29117g;
 
     /* renamed from: h, reason: collision with root package name */
-    public List f28320h;
+    public List f29118h;
 
     public W4(int i) {
         switch (i) {
             case 1:
-                this.f28319g = Collections.EMPTY_MAP;
+                this.f29117g = Collections.EMPTY_MAP;
                 break;
             default:
-                this.f28319g = Collections.EMPTY_MAP;
+                this.f29117g = Collections.EMPTY_MAP;
                 break;
         }
     }

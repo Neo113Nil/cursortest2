@@ -9,27 +9,27 @@ import java.util.concurrent.Executor;
 public final class E7 {
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String[] f24541e = {"android:establish_vpn_service", "android:establish_vpn_manager"};
+    public static final String[] f25302e = {"android:establish_vpn_service", "android:establish_vpn_manager"};
 
     /* renamed from: a, reason: collision with root package name */
-    public long f24542a;
+    public long f25303a;
 
     /* renamed from: b, reason: collision with root package name */
-    public long f24543b;
+    public long f25304b;
 
     /* renamed from: c, reason: collision with root package name */
-    public long f24544c;
+    public long f25305c;
 
     /* renamed from: d, reason: collision with root package name */
-    public boolean f24545d;
+    public boolean f25306d;
 
     public static E7 a(Context context, Executor executor) {
-        String[] strArr = f24541e;
+        String[] strArr = f25302e;
         E7 e72 = new E7();
-        e72.f24542a = 0L;
-        e72.f24543b = 0L;
-        e72.f24544c = -1L;
-        e72.f24545d = false;
+        e72.f25303a = 0L;
+        e72.f25304b = 0L;
+        e72.f25305c = -1L;
+        e72.f25306d = false;
         if (Build.VERSION.SDK_INT >= 30) {
             try {
                 ((AppOpsManager) context.getSystemService("appops")).startWatchingActive(strArr, executor, new D7(e72));

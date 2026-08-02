@@ -6,13 +6,13 @@ import android.window.OnBackInvokedCallback;
 public final class b implements OnBackInvokedCallback {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ AudienceNetworkActivity f23501a;
+    public final /* synthetic */ AudienceNetworkActivity f24286a;
 
     public b(AudienceNetworkActivity audienceNetworkActivity) {
-        this.f23501a = audienceNetworkActivity;
+        this.f24286a = audienceNetworkActivity;
     }
 
     public final void onBackInvoked() {
-        this.f23501a.onBackPressed();
+        this.f24286a.onBackPressed();
     }
 }

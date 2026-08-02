@@ -7,17 +7,17 @@ import androidx.emoji2.text.t;
 public final class a extends Editable.Factory {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Object f5474a = new Object();
+    public static final Object f5622a = new Object();
 
     /* renamed from: b, reason: collision with root package name */
-    public static volatile a f5475b;
+    public static volatile a f5623b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static Class f5476c;
+    public static Class f5624c;
 
     @Override // android.text.Editable.Factory
     public final Editable newEditable(CharSequence charSequence) {
-        Class cls = f5476c;
+        Class cls = f5624c;
         return cls != null ? new t(cls, charSequence) : super.newEditable(charSequence);
     }
 }

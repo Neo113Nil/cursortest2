@@ -7,7 +7,7 @@ import com.anythink.basead.exoplayer.z;
 public abstract class h {
 
     /* renamed from: a, reason: collision with root package name */
-    private a f7980a;
+    private a f8766a;
 
     public interface a {
         void c();
@@ -16,13 +16,13 @@ public abstract class h {
     public abstract i a(z[] zVarArr, af afVar);
 
     public final void a(a aVar) {
-        this.f7980a = aVar;
+        this.f8766a = aVar;
     }
 
     public abstract void a(Object obj);
 
     public final void b() {
-        a aVar = this.f7980a;
+        a aVar = this.f8766a;
         if (aVar != null) {
             aVar.c();
         }

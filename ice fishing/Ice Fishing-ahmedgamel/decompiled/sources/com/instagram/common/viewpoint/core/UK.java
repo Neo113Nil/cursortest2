@@ -43,8 +43,8 @@ import java.util.UUID;
 import java.util.WeakHashMap;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309Vi {
-    public static C1246Sx A0o;
+public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1329Vi {
+    public static C1266Sx A0o;
     public static byte[] A0p;
     public static String[] A0q = {"0QrYY16WpsBKaBkyPEA33iBIoR05UhVT", "YnnsFrkLVth43aFbA8XanJ7Af1ELV", "Oxqa2FUUnPLQ7GUfsty3Y0efzjvyqNtk", "SIKP4BEcnF1kam64buW5uj4ZKlEjFxDR", "vEVPI6RQ4lovzpZyrpWOxFDddvUHwWNp", "NGWOmnzpb", "djSS0JJWnZq1rlBsvyeXY9GnDKzed", "NhvbMWoFDj5W6o0bWnGe4dztWB8buZER"};
     public static final String A0r;
@@ -59,57 +59,57 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
     public AdClosedListener A07;
     public NativeAdLayout A08;
     public NE A09;
-    public C2011jj A0A;
-    public C07107g A0B;
-    public C1969iu A0C;
+    public C2031jj A0A;
+    public C07307g A0B;
+    public C1989iu A0C;
     public T3 A0D;
-    public C1272Tx A0E;
+    public C1292Tx A0E;
     public VI A0F;
     public VW A0G;
-    public ViewOnClickListenerC1278Ud A0H;
-    public InterfaceC1270Tv A0I;
-    public C1304Vd A0J;
-    public EnumC1305Ve A0K;
-    public EnumC1315Vq A0L;
+    public ViewOnClickListenerC1298Ud A0H;
+    public InterfaceC1290Tv A0I;
+    public C1324Vd A0J;
+    public EnumC1325Ve A0K;
+    public EnumC1335Vq A0L;
     public ZT A0M;
-    public InterfaceC1402Zc A0N;
-    public C1494b6 A0O;
-    public C1624dC A0P;
-    public C1688eF A0Q;
-    public AbstractC1784fo A0R;
-    public AbstractC1784fo A0S;
-    public C1785fp A0T;
-    public C1785fp A0U;
+    public InterfaceC1422Zc A0N;
+    public C1514b6 A0O;
+    public C1644dC A0P;
+    public C1708eF A0Q;
+    public AbstractC1804fo A0R;
+    public AbstractC1804fo A0S;
+    public C1805fp A0T;
+    public C1805fp A0U;
     public String A0V;
     public String A0W;
-    public WeakReference<C1887hT> A0X;
-    public WeakReference<AbstractC1784fo> A0Y;
+    public WeakReference<C1907hT> A0X;
+    public WeakReference<AbstractC1804fo> A0Y;
     public boolean A0Z;
     public boolean A0a;
     public boolean A0b;
     public boolean A0c;
     public boolean A0d;
-    public C2022ju A0e;
-    public final C1246Sx A0f;
-    public final C1840gi A0g;
-    public final InterfaceC1301Va A0h;
-    public final C1311Vk A0i;
+    public C2042ju A0e;
+    public final C1266Sx A0f;
+    public final C1860gi A0g;
+    public final InterfaceC1321Va A0h;
+    public final C1331Vk A0i;
     public final Y2 A0j;
     public final String A0k;
     public final String A0l;
     public final List<View> A0m;
     public volatile boolean A0n;
 
-    public static String A0W(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0p, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 112);
+    public static String A0W(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0p, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 112);
         }
         return new String(copyOfRange);
     }
 
     public static void A0e() {
-        A0p = new byte[]{-32, 26, 38, 31, 30, -19, -14, -13, -16, 30, -18, -15, -16, -24, -27, 22, -24, -26, -19, 23, -27, -74, -74, -71, -76, -70, -72, -29, -29, 38, 73, 5, 83, 84, 89, 5, 81, 84, 70, 73, 74, 73, -25, 10, -6, 11, 19, 22, 18, 7, 26, 11, -58, -51, -53, 25, -51, -58, 15, 25, -58, 20, 21, 26, -58, 7, -58, 20, 7, 26, 15, 28, 11, -58, 7, 10, -33, -37, -38, 14, -3, 2, -2, 7, -4, -2, -25, -2, 13, 16, 8, 11, 4, -27, 0, 8, 11, 4, 3, -65, 19, 14, -65, 11, 14, 0, 3, -65, -20, 4, 3, 8, 0, -51, -16, 11, 19, 22, 15, 14, -54, 30, 25, -54, 25, 12, 30, 11, 19, 24, -54, 30, 15, 23, 26, 22, 11, 30, 15, -54, -13, -18, -54, 16, 28, 25, 23, -54, 12, 19, 14, -54, 26, 11, 35, 22, 25, 11, 14, -54, -47, -49, 29, -47, -23, 14, 20, 5, 18, 14, 1, 12, -64, 5, 18, 18, 15, 18, -50, -86, 30, 67, 75, 54, 65, 62, 57, -11, 72, 58, 73, -11, 68, 59, -11, 56, 65, 62, 56, c.f16317b, 54, 55, 65, 58, -11, 75, 62, 58, 76, 72, 0, 24, 23, 28, 20, 9, 28, 24, 42, -45, 25, 34, 37, -45, 28, 22, 34, 33, -45, 28, 38, -45, 28, 38, -45, 32, 28, 38, 38, 28, 33, 26, -31, 29, 53, 52, 57, 49, 38, 57, 53, 71, -16, 57, 67, -16, 61, 57, 67, 67, 57, 62, 55, -2, 51, 91, 89, 90, 6, 86, 88, 85, 92, 79, 74, 75, 6, 71, 6, 60, 79, 75, 93, 35, 54, 73, 62, 75, 58, -11, 22, 57, -11, 76, 54, 72, -11, 54, 65, 71, 58, 54, 57, 78, -11, 71, 58, 60, 62, 72, 73, 58, 71, 58, 57, -11, 76, 62, 73, 61, -11, 54, -11, 43, 62, 58, 76, 3, -11, 22, 74, 73, 68, -11, 74, 67, 71, 58, 60, 62, 72, 73, 58, 71, 62, 67, 60, -11, 54, 67, 57, -11, 69, 71, 68, 56, 58, 58, 57, 62, 67, 60, 3, -55, -36, -17, -28, -15, -32, -101, -36, -33, -101, -33, -32, -18, -17, -19, -22, -12, -32, -33, -39, -20, -1, -12, 1, -16, -85, -20, -17, -85, -9, -6, -20, -17, -85, -3, -16, -4, 0, -16, -2, -1, -16, -17, -22, -3, -7, 11, -76, -11, 0, 6, -7, -11, -8, 13, -76, 6, -7, -5, -3, 7, 8, -7, 6, -7, -8, -76, 11, -3, 8, -4, -76, -11, -76, -30, -11, 8, -3, 10, -7, -43, -8, -62, -76, -43, 9, 8, 3, -76, 9, 2, 6, -7, -5, -3, 7, 8, -7, 6, -3, 2, -5, -76, -11, 2, -8, -76, 4, 6, 3, -9, -7, -7, -8, -3, 2, -5, -62, -1, 18, 14, 32, -55, 23, 24, 29, -55, 27, 14, 16, 18, 28, 29, 14, 27, 14, 13, -55, 32, 18, 29, 17, -55, 29, 17, 18, 28, -55, -9, 10, 29, 18, 31, 14, -22, 13, 46, 49, -19, 58, 50, 49, 54, 46, -19, 65, 70, 61, 50, -19, 54, c.f16317b, -19, 59, 60, 65, -19, c.f16317b, 66, 61, 61, 60, c.f16318c, 65, 50, 49, -5, 54, 69, 62, 51, 52, 66, 67, 65, 62, 72, 81, 84, 70, 73, 38, 73, 69, 72, 58, 61, 26, 61, 1, 2, -7, 60, 58, 69, 69, 62, 61, -7, 70, 72, 75, 62, -7, 77, 65, 58, 71, -7, 72, 71, 60, 62, -27, -40, -21, -32, -19, -36};
+        A0p = new byte[]{-32, 26, 38, 31, 30, -19, -14, -13, -16, 30, -18, -15, -16, -24, -27, 22, -24, -26, -19, 23, -27, -74, -74, -71, -76, -70, -72, -29, -29, 38, 73, 5, 83, 84, 89, 5, 81, 84, 70, 73, 74, 73, -25, 10, -6, 11, 19, 22, 18, 7, 26, 11, -58, -51, -53, 25, -51, -58, 15, 25, -58, 20, 21, 26, -58, 7, -58, 20, 7, 26, 15, 28, 11, -58, 7, 10, -33, -37, -38, 14, -3, 2, -2, 7, -4, -2, -25, -2, 13, 16, 8, 11, 4, -27, 0, 8, 11, 4, 3, -65, 19, 14, -65, 11, 14, 0, 3, -65, -20, 4, 3, 8, 0, -51, -16, 11, 19, 22, 15, 14, -54, 30, 25, -54, 25, 12, 30, 11, 19, 24, -54, 30, 15, 23, 26, 22, 11, 30, 15, -54, -13, -18, -54, 16, 28, 25, 23, -54, 12, 19, 14, -54, 26, 11, 35, 22, 25, 11, 14, -54, -47, -49, 29, -47, -23, 14, 20, 5, 18, 14, 1, 12, -64, 5, 18, 18, 15, 18, -50, -86, 30, 67, 75, 54, 65, 62, 57, -11, 72, 58, 73, -11, 68, 59, -11, 56, 65, 62, 56, c.f17104b, 54, 55, 65, 58, -11, 75, 62, 58, 76, 72, 0, 24, 23, 28, 20, 9, 28, 24, 42, -45, 25, 34, 37, -45, 28, 22, 34, 33, -45, 28, 38, -45, 28, 38, -45, 32, 28, 38, 38, 28, 33, 26, -31, 29, 53, 52, 57, 49, 38, 57, 53, 71, -16, 57, 67, -16, 61, 57, 67, 67, 57, 62, 55, -2, 51, 91, 89, 90, 6, 86, 88, 85, 92, 79, 74, 75, 6, 71, 6, 60, 79, 75, 93, 35, 54, 73, 62, 75, 58, -11, 22, 57, -11, 76, 54, 72, -11, 54, 65, 71, 58, 54, 57, 78, -11, 71, 58, 60, 62, 72, 73, 58, 71, 58, 57, -11, 76, 62, 73, 61, -11, 54, -11, 43, 62, 58, 76, 3, -11, 22, 74, 73, 68, -11, 74, 67, 71, 58, 60, 62, 72, 73, 58, 71, 62, 67, 60, -11, 54, 67, 57, -11, 69, 71, 68, 56, 58, 58, 57, 62, 67, 60, 3, -55, -36, -17, -28, -15, -32, -101, -36, -33, -101, -33, -32, -18, -17, -19, -22, -12, -32, -33, -39, -20, -1, -12, 1, -16, -85, -20, -17, -85, -9, -6, -20, -17, -85, -3, -16, -4, 0, -16, -2, -1, -16, -17, -22, -3, -7, 11, -76, -11, 0, 6, -7, -11, -8, 13, -76, 6, -7, -5, -3, 7, 8, -7, 6, -7, -8, -76, 11, -3, 8, -4, -76, -11, -76, -30, -11, 8, -3, 10, -7, -43, -8, -62, -76, -43, 9, 8, 3, -76, 9, 2, 6, -7, -5, -3, 7, 8, -7, 6, -3, 2, -5, -76, -11, 2, -8, -76, 4, 6, 3, -9, -7, -7, -8, -3, 2, -5, -62, -1, 18, 14, 32, -55, 23, 24, 29, -55, 27, 14, 16, 18, 28, 29, 14, 27, 14, 13, -55, 32, 18, 29, 17, -55, 29, 17, 18, 28, -55, -9, 10, 29, 18, 31, 14, -22, 13, 46, 49, -19, 58, 50, 49, 54, 46, -19, 65, 70, 61, 50, -19, 54, c.f17104b, -19, 59, 60, 65, -19, c.f17104b, 66, 61, 61, 60, c.f17105c, 65, 50, 49, -5, 54, 69, 62, 51, 52, 66, 67, 65, 62, 72, 81, 84, 70, 73, 38, 73, 69, 72, 58, 61, 26, 61, 1, 2, -7, 60, 58, 69, 69, 62, 61, -7, 70, 72, 75, 62, -7, 77, 65, 58, 71, -7, 72, 71, 60, 62, -27, -40, -21, -32, -19, -36};
         String[] strArr = A0q;
         if (strArr[6].length() != strArr[1].length()) {
             throw new RuntimeException();
@@ -124,7 +124,7 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
     /* JADX WARN: Code restructure failed: missing block: B:101:0x02cb, code lost:
     
         r12.A0R = new com.instagram.common.viewpoint.core.VE(r12);
-        r12.A0T = new com.instagram.common.viewpoint.core.C1785fp(r13, 1, new java.lang.ref.WeakReference(r12.A0R), r12.A0g);
+        r12.A0T = new com.instagram.common.viewpoint.core.C1805fp(r13, 1, new java.lang.ref.WeakReference(r12.A0R), r12.A0g);
         r12.A0T.A0Y(false);
         r12.A0T.A0X(r6.A09());
         r12.A0T.A0U();
@@ -190,7 +190,7 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
     /* JADX WARN: Code restructure failed: missing block: B:118:0x0353, code lost:
     
         r7 = A00();
-        r12.A0S = new com.instagram.common.viewpoint.core.C1296Uv(r12, r14, r5, r6);
+        r12.A0S = new com.instagram.common.viewpoint.core.C1316Uv(r12, r14, r5, r6);
      */
     /* JADX WARN: Code restructure failed: missing block: B:119:0x0360, code lost:
     
@@ -202,7 +202,7 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
      */
     /* JADX WARN: Code restructure failed: missing block: B:122:0x0370, code lost:
     
-        if (com.instagram.common.viewpoint.core.C1290Up.A1z(r12.A0g) == false) goto L127;
+        if (com.instagram.common.viewpoint.core.C1310Up.A1z(r12.A0g) == false) goto L127;
      */
     /* JADX WARN: Code restructure failed: missing block: B:123:0x0372, code lost:
     
@@ -220,22 +220,22 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
      */
     /* JADX WARN: Code restructure failed: missing block: B:126:0x038a, code lost:
     
-        r6.AKo(r5, r4, r12.A03 instanceof com.instagram.common.viewpoint.core.C1724eq, true);
+        r6.AKo(r5, r4, r12.A03 instanceof com.instagram.common.viewpoint.core.C1744eq, true);
      */
     /* JADX WARN: Code restructure failed: missing block: B:127:0x0392, code lost:
     
-        r12.A0U = new com.instagram.common.viewpoint.core.C1785fp(r12.A03, r7, A03(), true, new java.lang.ref.WeakReference(r12.A0S), r12.A0g);
+        r12.A0U = new com.instagram.common.viewpoint.core.C1805fp(r12.A03, r7, A03(), true, new java.lang.ref.WeakReference(r12.A0S), r12.A0g);
         r12.A0U.A0Y(!A0r());
         r12.A0U.A0W(A01());
         r12.A0U.A0X(A02());
      */
     /* JADX WARN: Code restructure failed: missing block: B:128:0x03ca, code lost:
     
-        if ((r12.A03 instanceof com.instagram.common.viewpoint.core.C1484aw) == false) goto L132;
+        if ((r12.A03 instanceof com.instagram.common.viewpoint.core.C1504aw) == false) goto L132;
      */
     /* JADX WARN: Code restructure failed: missing block: B:129:0x03cc, code lost:
     
-        r5 = (com.instagram.common.viewpoint.core.C1484aw) r12.A03;
+        r5 = (com.instagram.common.viewpoint.core.C1504aw) r12.A03;
         r4 = com.instagram.common.viewpoint.core.UK.A0q;
      */
     /* JADX WARN: Code restructure failed: missing block: B:130:0x03e2, code lost:
@@ -249,17 +249,17 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
      */
     /* JADX WARN: Code restructure failed: missing block: B:132:0x03f0, code lost:
     
-        r12.A0A = new com.instagram.common.viewpoint.core.C2011jj(r12.A0g, new com.instagram.common.viewpoint.core.UY(r12, null), r12.A0U, r12.A0e);
+        r12.A0A = new com.instagram.common.viewpoint.core.C2031jj(r12.A0g, new com.instagram.common.viewpoint.core.UY(r12, null), r12.A0U, r12.A0e);
         r12.A0A.A0H(r1);
         com.instagram.common.viewpoint.core.UK.A0s.put(r13, new java.lang.ref.WeakReference<>(r12));
      */
     /* JADX WARN: Code restructure failed: missing block: B:133:0x0418, code lost:
     
-        if (com.instagram.common.viewpoint.core.C1290Up.A1C(r12.A0g) == false) goto L164;
+        if (com.instagram.common.viewpoint.core.C1310Up.A1C(r12.A0g) == false) goto L164;
      */
     /* JADX WARN: Code restructure failed: missing block: B:134:0x041a, code lost:
     
-        r12.A0O = new com.instagram.common.viewpoint.core.C1494b6();
+        r12.A0O = new com.instagram.common.viewpoint.core.C1514b6();
         r12.A0O.A0C(r12.A0k);
         r12.A0O.A0B(r12.A0g.getPackageName());
         r12.A0O.A0A(r12.A0U);
@@ -378,7 +378,7 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
      */
     /* JADX WARN: Code restructure failed: missing block: B:96:0x029d, code lost:
     
-        r12.A0H = new com.instagram.common.viewpoint.core.ViewOnClickListenerC1278Ud(r12, r12.A0g, null);
+        r12.A0H = new com.instagram.common.viewpoint.core.ViewOnClickListenerC1298Ud(r12, r12.A0g, null);
         r12.A04 = r13;
         r12.A06 = r14;
      */
@@ -402,7 +402,7 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private void A0g(View view, View view2, List<View> list, boolean z3) {
+    private void A0g(View view, View view2, List<View> list, boolean z6) {
         if (!A0r()) {
             this.A0g.A0F().AHa();
         }
@@ -420,19 +420,19 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
             }
             throw new IllegalArgumentException(A0W2);
         }
-        C2022ju A0C = A0C();
+        C2042ju A0C = A0C();
         if (A0C == null) {
             String A0W3 = A0W(29, 13, 117);
             if (!A0r()) {
                 this.A0g.A0F().AHZ(A0W3);
             }
             Log.e(A0r, A0W3);
-            C1312Vm c1312Vm = new C1312Vm(AdErrorType.NATIVE_AD_IS_NOT_LOADED, A0W3);
-            A16().A0F().A3N(Y1.A01(this.A00), c1312Vm.A03().getErrorCode(), c1312Vm.A04());
-            if (!C1290Up.A2n(this.A0g) || this.A0I == null) {
+            C1332Vm c1332Vm = new C1332Vm(AdErrorType.NATIVE_AD_IS_NOT_LOADED, A0W3);
+            A16().A0F().A3N(Y1.A01(this.A00), c1332Vm.A03().getErrorCode(), c1332Vm.A04());
+            if (!C1310Up.A2n(this.A0g) || this.A0I == null) {
                 return;
             }
-            this.A0I.ADp(c1312Vm);
+            this.A0I.ADp(c1332Vm);
             return;
         }
         String str = this.A0W;
@@ -440,22 +440,22 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
             A0h((FrameLayout) view, str);
         }
         if (this.A08 != null) {
-            C1869hB c1869hB = (C1869hB) this.A08.getNativeAdLayoutApi();
-            c1869hB.A03();
-            c1869hB.A02();
+            C1889hB c1889hB = (C1889hB) this.A08.getNativeAdLayoutApi();
+            c1889hB.A03();
+            c1889hB.A02();
         }
-        C1887hT c1887hT = this.A0X.get();
-        if (c1887hT != null && A0C.A08() == 1) {
-            c1887hT.A0E(YM.AN_INFO_ICON);
+        C1907hT c1907hT = this.A0X.get();
+        if (c1907hT != null && A0C.A08() == 1) {
+            c1907hT.A0E(YM.AN_INFO_ICON);
         }
         if (view2 != null) {
-            boolean z6 = (view2 instanceof AdNativeComponentView) && ((AdNativeComponentView) view2).getAdContentsView() != null;
-            boolean z9 = z3 && (view2 instanceof ImageView);
-            if (!z6 && !z9) {
+            boolean z9 = (view2 instanceof AdNativeComponentView) && ((AdNativeComponentView) view2).getAdContentsView() != null;
+            boolean z10 = z6 && (view2 instanceof ImageView);
+            if (!z9 && !z10) {
                 if (this.A0I != null) {
-                    C1312Vm c1312Vm2 = new C1312Vm(AdErrorType.UNSUPPORTED_AD_ASSET_NATIVEAD, A0W(519, 31, 93));
-                    A16().A0F().A3N(Y1.A01(this.A00), c1312Vm2.A03().getErrorCode(), c1312Vm2.A04());
-                    this.A0I.ADp(c1312Vm2);
+                    C1332Vm c1332Vm2 = new C1332Vm(AdErrorType.UNSUPPORTED_AD_ASSET_NATIVEAD, A0W(519, 31, 93));
+                    A16().A0F().A3N(Y1.A01(this.A00), c1332Vm2.A03().getErrorCode(), c1332Vm2.A04());
+                    this.A0I.ADp(c1332Vm2);
                     return;
                 }
                 return;
@@ -469,13 +469,13 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
                 A0q[3] = "VFOGhBJepBYKNQ0g15YaI4y2lFqguygQ";
             }
         } else {
-            if (this.A0L != EnumC1315Vq.A06) {
+            if (this.A0L != EnumC1335Vq.A06) {
                 AdErrorType adErrorType = AdErrorType.NO_MEDIAVIEW_IN_NATIVEBANNERAD;
-                String A0W4 = A0W(BaseATView.a.f9773I, 33, 67);
-                C1312Vm c1312Vm3 = new C1312Vm(adErrorType, A0W4);
-                A16().A0F().A3N(Y1.A01(this.A00), c1312Vm3.A03().getErrorCode(), c1312Vm3.A04());
+                String A0W4 = A0W(BaseATView.a.f10559I, 33, 67);
+                C1332Vm c1332Vm3 = new C1332Vm(adErrorType, A0W4);
+                A16().A0F().A3N(Y1.A01(this.A00), c1332Vm3.A03().getErrorCode(), c1332Vm3.A04());
                 if (this.A0I != null) {
-                    this.A0I.ADp(c1312Vm3);
+                    this.A0I.ADp(c1332Vm3);
                 }
                 if (AdInternalSettings.isDebugBuild()) {
                     String str2 = A0r;
@@ -495,10 +495,10 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
             }
             AdErrorType adErrorType2 = AdErrorType.NO_MEDIAVIEW_IN_NATIVEAD;
             String A0W5 = A0W(243, 21, 96);
-            C1312Vm c1312Vm4 = new C1312Vm(adErrorType2, A0W5);
-            A16().A0F().A3N(Y1.A01(this.A00), c1312Vm4.A03().getErrorCode(), c1312Vm4.A04());
+            C1332Vm c1332Vm4 = new C1332Vm(adErrorType2, A0W5);
+            A16().A0F().A3N(Y1.A01(this.A00), c1332Vm4.A03().getErrorCode(), c1332Vm4.A04());
             if (this.A0I != null) {
-                this.A0I.ADp(c1312Vm4);
+                this.A0I.ADp(c1332Vm4);
             }
             if (!AdInternalSettings.isDebugBuild()) {
                 return;
@@ -521,9 +521,9 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
         A0s = new WeakHashMap<>();
     }
 
-    public UK(Context context, String str, InterfaceC1301Va interfaceC1301Va, boolean z3) {
+    public UK(Context context, String str, InterfaceC1321Va interfaceC1321Va, boolean z6) {
         this.A0l = UUID.randomUUID().toString();
-        this.A0L = EnumC1315Vq.A06;
+        this.A0L = EnumC1335Vq.A06;
         this.A0G = VW.A04;
         this.A09 = NE.A03;
         this.A0X = new WeakReference<>(null);
@@ -533,23 +533,23 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
         this.A0c = false;
         this.A00 = -1L;
         this.A0Z = false;
-        if (context instanceof C1840gi) {
-            this.A0g = (C1840gi) context;
-        } else if (!z3) {
-            this.A0g = C1213Rp.A04(context);
+        if (context instanceof C1860gi) {
+            this.A0g = (C1860gi) context;
+        } else if (!z6) {
+            this.A0g = C1233Rp.A04(context);
         } else {
-            this.A0g = C1213Rp.A03(context);
+            this.A0g = C1233Rp.A03(context);
         }
         this.A0g.A0O(this);
         this.A0k = str;
-        this.A0h = interfaceC1301Va;
+        this.A0h = interfaceC1321Va;
         if (A0o != null) {
             this.A0f = A0o;
         } else {
-            this.A0f = new C1246Sx(this.A0g);
+            this.A0f = new C1266Sx(this.A0g);
         }
         this.A05 = new View(context);
-        this.A0i = new C1311Vk(this.A0g, this);
+        this.A0i = new C1331Vk(this.A0g, this);
     }
 
     public UK(UK uk) {
@@ -561,17 +561,17 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
         this.A05 = new View(this.A0g);
     }
 
-    public UK(C1840gi c1840gi, C2022ju c2022ju, C1272Tx c1272Tx, InterfaceC1301Va interfaceC1301Va) {
-        this((Context) c1840gi, (String) null, interfaceC1301Va, true);
-        this.A0e = c2022ju;
-        this.A0E = c1272Tx;
+    public UK(C1860gi c1860gi, C2042ju c2042ju, C1292Tx c1292Tx, InterfaceC1321Va interfaceC1321Va) {
+        this((Context) c1860gi, (String) null, interfaceC1321Va, true);
+        this.A0e = c2042ju;
+        this.A0E = c1292Tx;
         this.A0n = true;
-        this.A05 = new View(c1840gi);
+        this.A05 = new View(c1860gi);
     }
 
-    public UK(C1840gi c1840gi, C2022ju c2022ju, C1272Tx c1272Tx, InterfaceC1301Va interfaceC1301Va, C1969iu c1969iu) {
-        this(c1840gi, c2022ju, c1272Tx, interfaceC1301Va);
-        this.A0C = c1969iu;
+    public UK(C1860gi c1860gi, C2042ju c2042ju, C1292Tx c1292Tx, InterfaceC1321Va interfaceC1321Va, C1989iu c1989iu) {
+        this(c1860gi, c2042ju, c1292Tx, interfaceC1321Va);
+        this.A0C = c1989iu;
     }
 
     private int A00() {
@@ -581,7 +581,7 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
         if (this.A0B == null || this.A0B.A0J() == null) {
             return 1;
         }
-        C1272Tx A0J = this.A0B.A0J();
+        C1292Tx A0J = this.A0B.A0J();
         String[] strArr = A0q;
         String str = strArr[6];
         String str2 = strArr[1];
@@ -626,68 +626,68 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
         if (this.A0E != null) {
             return this.A0E.A09();
         }
-        C07107g c07107g = this.A0B;
+        C07307g c07307g = this.A0B;
         if (A0q[3].charAt(5) != 'B') {
             throw new RuntimeException();
         }
         A0q[5] = "Xt";
-        if (c07107g == null || this.A0B.A0J() == null) {
+        if (c07307g == null || this.A0B.A0J() == null) {
             return 0;
         }
         return this.A0B.A0J().A09();
     }
 
-    public static Drawable A05(C1840gi c1840gi, Bitmap bitmap, boolean z3, String str) {
+    public static Drawable A05(C1860gi c1860gi, Bitmap bitmap, boolean z6, String str) {
         BitmapDrawable A00;
-        BitmapDrawable bitmapDrawable = new BitmapDrawable(c1840gi.getResources(), bitmap);
-        if (z3 && (A00 = AbstractC1687eE.A00(c1840gi, str)) != null) {
+        BitmapDrawable bitmapDrawable = new BitmapDrawable(c1860gi.getResources(), bitmap);
+        if (z6 && (A00 = AbstractC1707eE.A00(c1860gi, str)) != null) {
             Drawable iconViewDrawable = new LayerDrawable(new Drawable[]{bitmapDrawable, A00});
             return iconViewDrawable;
         }
         return bitmapDrawable;
     }
 
-    public static NativeAdBase A0A(Context context, String str, String str2) throws C1313Vn {
-        EnumC1315Vq A00 = C1319Vu.A00(str2);
+    public static NativeAdBase A0A(Context context, String str, String str2) throws C1333Vn {
+        EnumC1335Vq A00 = C1339Vu.A00(str2);
         if (A00 != null) {
-            EnumC1315Vq template = EnumC1315Vq.A05;
+            EnumC1335Vq template = EnumC1335Vq.A05;
             if (A00 == template) {
                 return new NativeBannerAd(context, str);
             }
-            EnumC1315Vq template2 = EnumC1315Vq.A06;
+            EnumC1335Vq template2 = EnumC1335Vq.A06;
             if (A00 == template2) {
                 return new NativeAd(context, str);
             }
-            throw new C1313Vn(AdErrorType.BID_PAYLOAD_ERROR, String.format(Locale.US, A0W(42, 34, 54), A00));
+            throw new C1333Vn(AdErrorType.BID_PAYLOAD_ERROR, String.format(Locale.US, A0W(42, 34, 54), A00));
         }
-        throw new C1313Vn(AdErrorType.BID_PAYLOAD_ERROR, String.format(Locale.US, A0W(114, 50, 58), str2));
+        throw new C1333Vn(AdErrorType.BID_PAYLOAD_ERROR, String.format(Locale.US, A0W(114, 50, 58), str2));
     }
 
-    private final C2022ju A0C() {
-        C2022ju c2022ju = this.A0e;
-        if (c2022ju != null && c2022ju.A0R()) {
-            return c2022ju;
+    private final C2042ju A0C() {
+        C2042ju c2042ju = this.A0e;
+        if (c2042ju != null && c2042ju.A0R()) {
+            return c2042ju;
         }
         return null;
     }
 
-    private C2010ji A0F() {
+    private C2030ji A0F() {
         return A0G(false);
     }
 
-    private C2010ji A0G(boolean z3) {
+    private C2030ji A0G(boolean z6) {
         if (this.A0e != null) {
-            C2022ju c2022ju = this.A0e;
+            C2042ju c2042ju = this.A0e;
             if (A0q[3].charAt(5) == 'B') {
                 String[] strArr = A0q;
                 strArr[0] = "rkQiEYXoMEhriwkmxTS9YqbekXjRctvV";
                 strArr[4] = "aQIgqL6bCxVEsMgFZvYj1f08oAvgjHgO";
-                if (c2022ju.A0R()) {
-                    if (z3) {
-                        C2022ju c2022ju2 = this.A0e;
+                if (c2042ju.A0R()) {
+                    if (z6) {
+                        C2042ju c2042ju2 = this.A0e;
                         if (A0q[3].charAt(5) == 'B') {
                             A0q[3] = "EWl26Bqfon8mX0lHHC6z05409Pwx5AXq";
-                            c2022ju2.A0I();
+                            c2042ju2.A0I();
                         }
                     }
                     return this.A0e.A0E();
@@ -695,11 +695,11 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
             }
             throw new RuntimeException();
         }
-        return new C2010ji();
+        return new C2030ji();
     }
 
-    public static C1285Uk A0K() {
-        return new C1285Uk();
+    public static C1305Uk A0K() {
+        return new C1305Uk();
     }
 
     public static UK A0L(NativeAdBaseApi nativeAdBaseApi) {
@@ -712,19 +712,19 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
     /* JADX INFO: Access modifiers changed from: private */
     @Override // com.facebook.ads.internal.api.NativeAdBaseApi
     /* renamed from: A0M, reason: merged with bridge method [inline-methods] */
-    public final C1302Vb getAdChoicesIcon() {
+    public final C1322Vb getAdChoicesIcon() {
         return A0F().A0G();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     @Override // com.facebook.ads.internal.api.NativeAdBaseApi
     /* renamed from: A0O, reason: merged with bridge method [inline-methods] */
-    public final C1303Vc getAdStarRating() {
+    public final C1323Vc getAdStarRating() {
         return A0F().A0J();
     }
 
     private AdPlacementType A0R() {
-        if (this.A0L == EnumC1315Vq.A06) {
+        if (this.A0L == EnumC1335Vq.A06) {
             return AdPlacementType.NATIVE;
         }
         return AdPlacementType.NATIVE_BANNER;
@@ -782,27 +782,27 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
         if (this.A0Q != null) {
             frameLayout.removeView(this.A0Q);
         }
-        this.A0Q = AbstractC1687eE.A01(C1213Rp.A03(this.A0g), str);
+        this.A0Q = AbstractC1707eE.A01(C1233Rp.A03(this.A0g), str);
         if (this.A0Q != null) {
             frameLayout.addView(this.A0Q, new FrameLayout.LayoutParams(-1, -1));
             frameLayout.bringChildToFront(this.A0Q);
         }
     }
 
-    private void A0i(C2022ju c2022ju, boolean z3) {
+    private void A0i(C2042ju c2042ju, boolean z6) {
         Iterator<UK> it;
-        if (c2022ju == null) {
+        if (c2042ju == null) {
             return;
         }
         boolean equals = this.A0G.equals(VW.A04);
         String A0W = A0W(596, 6, 7);
         if (equals) {
-            C2010ji A0E = c2022ju.A0E();
-            AbstractC2005jd A0F = A0E.A0F();
+            C2030ji A0E = c2042ju.A0E();
+            AbstractC2025jd A0F = A0E.A0F();
             if (A0F != null) {
                 O0.A00(A0F, this.A0f, A0W);
             }
-            String A7O = c2022ju.A7O();
+            String A7O = c2042ju.A7O();
             if (A0q[3].charAt(5) != 'B') {
                 throw new RuntimeException();
             }
@@ -814,17 +814,17 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
                 this.A0f.A0e(this.A0F);
             }
             if (A0E.A0I() != null) {
-                C1244Sv c1244Sv = new C1244Sv(A0E.A0I().getUrl(), A0E.A0I().getHeight(), A0E.A0I().getWidth(), c2022ju.A0G(), A0W(596, 6, 7));
-                c1244Sv.A01 = this.A0D;
+                C1264Sv c1264Sv = new C1264Sv(A0E.A0I().getUrl(), A0E.A0I().getHeight(), A0E.A0I().getWidth(), c2042ju.A0G(), A0W(596, 6, 7));
+                c1264Sv.A01 = this.A0D;
                 this.A0f.A0W();
-                this.A0f.A0c(c1244Sv);
+                this.A0f.A0c(c1264Sv);
             }
-            if (!this.A0L.equals(EnumC1315Vq.A05)) {
+            if (!this.A0L.equals(EnumC1335Vq.A05)) {
                 if (A0E.A0H() != null) {
-                    this.A0f.A0c(new C1244Sv(A0E.A0H().getUrl(), A0E.A0H().getHeight(), A0E.A0H().getWidth(), c2022ju.A0G(), A0W(596, 6, 7)));
+                    this.A0f.A0c(new C1264Sv(A0E.A0H().getUrl(), A0E.A0H().getHeight(), A0E.A0H().getWidth(), c2042ju.A0G(), A0W(596, 6, 7)));
                 }
-                if (c2022ju.A0H() != null) {
-                    List<UK> A0H = c2022ju.A0H();
+                if (c2042ju.A0H() != null) {
+                    List<UK> A0H = c2042ju.A0H();
                     String[] strArr2 = A0q;
                     String clientToken = strArr2[2];
                     if (clientToken.charAt(3) != strArr2[7].charAt(3)) {
@@ -841,23 +841,23 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
                     while (it.hasNext()) {
                         UK next = it.next();
                         if (next.getAdCoverImage() != null) {
-                            this.A0f.A0c(new C1244Sv(next.getAdCoverImage().getUrl(), next.getAdCoverImage().getHeight(), next.getAdCoverImage().getWidth(), c2022ju.A0G(), A0W(596, 6, 7)));
+                            this.A0f.A0c(new C1264Sv(next.getAdCoverImage().getUrl(), next.getAdCoverImage().getHeight(), next.getAdCoverImage().getWidth(), c2042ju.A0G(), A0W(596, 6, 7)));
                         }
                     }
                 }
                 String A0e = A0E.A0e();
                 if (!TextUtils.isEmpty(A0e)) {
-                    this.A0f.A0b(new C1242St(A0e, c2022ju.A0G(), A0W(596, 6, 7), A0E.A0D()));
+                    this.A0f.A0b(new C1262St(A0e, c2042ju.A0G(), A0W(596, 6, 7), A0E.A0D()));
                 }
             }
             if (A0F != null && A0F.A1g()) {
-                C1242St cacheFileData = new C1242St(A0F.A0x(), A0F.A1D(), A0W);
+                C1262St cacheFileData = new C1262St(A0F.A0x(), A0F.A1D(), A0W);
                 cacheFileData.A04 = true;
                 cacheFileData.A03 = A0W(0, 5, 66);
                 this.A0f.A0Y(cacheFileData);
             }
         }
-        this.A0f.A0X(new VZ(this, c2022ju, z3), new C1239Sq(c2022ju.A0G(), A0W));
+        this.A0f.A0X(new VZ(this, c2042ju, z6), new C1259Sq(c2042ju.A0G(), A0W));
     }
 
     private void A0j(NG ng) {
@@ -867,14 +867,14 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
         this.A0e.A0K(ng);
     }
 
-    public static void A0k(NativeAdImageApi nativeAdImageApi, ImageView imageView, C1840gi c1840gi) {
+    public static void A0k(NativeAdImageApi nativeAdImageApi, ImageView imageView, C1860gi c1860gi) {
         if (nativeAdImageApi != null && imageView != null) {
-            new LM(imageView, c1840gi).A05(nativeAdImageApi.getHeight(), nativeAdImageApi.getWidth()).A07(nativeAdImageApi.getUrl());
+            new LM(imageView, c1860gi).A05(nativeAdImageApi.getHeight(), nativeAdImageApi.getWidth()).A07(nativeAdImageApi.getUrl());
         }
     }
 
-    private final void A0n(InterfaceC1270Tv interfaceC1270Tv) {
-        this.A0I = interfaceC1270Tv;
+    private final void A0n(InterfaceC1290Tv interfaceC1290Tv) {
+        this.A0I = interfaceC1290Tv;
     }
 
     private final void A0o(String str) {
@@ -897,7 +897,7 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean A0q() {
-        return A1D() == EnumC1306Vf.A05 || A1D() == EnumC1306Vf.A03;
+        return A1D() == EnumC1326Vf.A05 || A1D() == EnumC1326Vf.A03;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -924,55 +924,55 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
         return this.A00;
     }
 
-    public final C2022ju A12() {
+    public final C2042ju A12() {
         return this.A0e;
     }
 
-    public final AbstractC2005jd A13() {
+    public final AbstractC2025jd A13() {
         return A0F().A0F();
     }
 
-    public final C1246Sx A14() {
+    public final C1266Sx A14() {
         return this.A0f;
     }
 
-    public final C1840gi A15() {
+    public final C1860gi A15() {
         return this.A0g;
     }
 
-    public final C1840gi A16() {
+    public final C1860gi A16() {
         return this.A0g;
     }
 
-    public final ViewOnClickListenerC1278Ud A17() {
+    public final ViewOnClickListenerC1298Ud A17() {
         return this.A0H;
     }
 
     @Override // com.facebook.ads.internal.api.NativeAdBaseApi
     /* renamed from: A18, reason: merged with bridge method [inline-methods] */
-    public final C1302Vb getAdCoverImage() {
+    public final C1322Vb getAdCoverImage() {
         return A0F().A0H();
     }
 
     @Override // com.facebook.ads.internal.api.NativeAdBaseApi
     /* renamed from: A19, reason: merged with bridge method [inline-methods] */
-    public final C1302Vb getAdIcon() {
+    public final C1322Vb getAdIcon() {
         return A0F().A0I();
     }
 
-    public final InterfaceC1270Tv A1A() {
+    public final InterfaceC1290Tv A1A() {
         return this.A0I;
     }
 
-    public final C1304Vd A1B() {
+    public final C1324Vd A1B() {
         return this.A0J;
     }
 
-    public final EnumC1305Ve A1C() {
+    public final EnumC1325Ve A1C() {
         return this.A0K;
     }
 
-    public final EnumC1306Vf A1D() {
+    public final EnumC1326Vf A1D() {
         return A0F().A0K();
     }
 
@@ -980,21 +980,21 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
         return this.A0j;
     }
 
-    public final C1431a5 A1F() {
+    public final C1451a5 A1F() {
         if (A13() == null || !A13().A2U()) {
             return null;
         }
-        C1431a5 c1431a5 = new C1431a5(this.A0g, EnumC1448aM.A05);
-        c1431a5.setOnClickListener(new View.OnClickListener() { // from class: com.facebook.ads.redexgen.X.VY
+        C1451a5 c1451a5 = new C1451a5(this.A0g, EnumC1468aM.A05);
+        c1451a5.setOnClickListener(new View.OnClickListener() { // from class: com.facebook.ads.redexgen.X.VY
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 UK.this.A1R(view);
             }
         });
-        return c1431a5;
+        return c1451a5;
     }
 
-    public final C1785fp A1G() {
+    public final C1805fp A1G() {
         return this.A0U;
     }
 
@@ -1036,7 +1036,7 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
     }
 
     public final void A1O() {
-        if (!AbstractC1131Oh.A00(this.A0g.A02()).A0O(this.A0g, false)) {
+        if (!AbstractC1151Oh.A00(this.A0g.A02()).A0O(this.A0g, false)) {
             A0b();
             if (A0q[5].length() == 3) {
                 throw new RuntimeException();
@@ -1044,14 +1044,14 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
             A0q[3] = "yREZ0BSYt8CSunaR9f1myx0zIAs3a5bO";
             return;
         }
-        AbstractC1403Zd A01 = AbstractC1404Ze.A01(this.A0g, this.A0g.A0A(), A1H(), this.A08);
+        AbstractC1423Zd A01 = AbstractC1424Ze.A01(this.A0g, this.A0g.A0A(), A1H(), this.A08);
         if (A01 == null) {
             A0b();
             return;
         }
-        ((C1869hB) this.A08.getNativeAdLayoutApi()).A05(A01);
-        if (!C1290Up.A22(this.A0g)) {
-            C1840gi A15 = A15();
+        ((C1889hB) this.A08.getNativeAdLayoutApi()).A05(A01);
+        if (!C1310Up.A22(this.A0g)) {
+            C1860gi A15 = A15();
             String[] strArr = A0q;
             if (strArr[6].length() != strArr[1].length()) {
                 A15.A0F().ABW();
@@ -1075,13 +1075,13 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
         this.A0m.add(view);
         view.setOnClickListener(this.A0H);
         view.setOnTouchListener(this.A0H);
-        if (C1290Up.A1C(view.getContext())) {
+        if (C1310Up.A1C(view.getContext())) {
             view.setOnLongClickListener(this.A0H);
         }
     }
 
     public final /* synthetic */ void A1R(View view) {
-        this.A0g.A0F().AAy(EnumC1448aM.A05.name().toLowerCase(Locale.US));
+        this.A0g.A0F().AAy(EnumC1468aM.A05.name().toLowerCase(Locale.US));
         A1O();
     }
 
@@ -1105,14 +1105,14 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
         A0g(view, adNativeComponentView, clickableViews, false);
     }
 
-    public final void A1W(View view, AdNativeComponentView adNativeComponentView, List<View> clickableViews, boolean z3) {
-        A0g(view, adNativeComponentView, clickableViews, z3);
+    public final void A1W(View view, AdNativeComponentView adNativeComponentView, List<View> clickableViews, boolean z6) {
+        A0g(view, adNativeComponentView, clickableViews, z6);
     }
 
-    public final void A1X(View view, AdNativeComponentView adNativeComponentView, boolean z3) {
+    public final void A1X(View view, AdNativeComponentView adNativeComponentView, boolean z6) {
         List<View> clickableViews = new ArrayList<>();
         A0p(clickableViews, view);
-        A0g(view, adNativeComponentView, clickableViews, z3);
+        A0g(view, adNativeComponentView, clickableViews, z6);
     }
 
     public final void A1Y(AdClosedListener adClosedListener) {
@@ -1136,31 +1136,31 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
         if (nativeAdListener == null) {
             return;
         }
-        A0n(new C07026y(nativeAdListener, nativeAdBase));
+        A0n(new C07226y(nativeAdListener, nativeAdBase));
     }
 
     public final void A1c(NativeAdLayout nativeAdLayout) {
         this.A08 = nativeAdLayout;
     }
 
-    public final void A1d(C2022ju c2022ju) {
-        A0i(c2022ju, true);
-        if (this.A0I != null && c2022ju.A0H() != null) {
-            C1320Vv c1320Vv = new C1320Vv(this);
-            for (UK uk : c2022ju.A0H()) {
+    public final void A1d(C2042ju c2042ju) {
+        A0i(c2042ju, true);
+        if (this.A0I != null && c2042ju.A0H() != null) {
+            C1340Vv c1340Vv = new C1340Vv(this);
+            for (UK uk : c2042ju.A0H()) {
                 if (A0q[3].charAt(5) != 'B') {
                     throw new RuntimeException();
                 }
                 String[] strArr = A0q;
                 strArr[0] = "7JUEXy8BV6wMe69mvRG8Hisl1h58kfsH";
                 strArr[4] = "Ag7M0cktqfZPxcWhbEyn8XCMGlxm5ALn";
-                uk.A0j(c1320Vv);
+                uk.A0j(c1340Vv);
             }
         }
     }
 
-    public final void A1e(C1887hT c1887hT) {
-        this.A0X = new WeakReference<>(c1887hT);
+    public final void A1e(C1907hT c1907hT) {
+        this.A0X = new WeakReference<>(c1907hT);
     }
 
     public final void A1f(VW vw, String str, T3 t32) {
@@ -1170,26 +1170,26 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
             this.A0g.A0F().A3P();
         }
         this.A00 = System.currentTimeMillis();
-        boolean z3 = this.A0n;
+        boolean z6 = this.A0n;
         String[] strArr = A0q;
         if (strArr[0].charAt(21) != strArr[4].charAt(21)) {
             String[] strArr2 = A0q;
             strArr2[0] = "knecuAJjZigTf7VsFCGhTGCW7dxKplKn";
             strArr2[4] = "uRrNlLGUJL1gxvEKewtOLFu1Ztix0dl1";
-            if (z3) {
+            if (z6) {
                 AdSettings.IntegrationErrorMode A00 = OA.A00(this.A0g);
                 String A0W = A0W(566, 30, 105);
                 AdSettings.IntegrationErrorMode integrationErrorMode = AdSettings.IntegrationErrorMode.INTEGRATION_ERROR_CRASH_DEBUG_MODE;
                 if (!integrationErrorMode.equals(A00)) {
-                    C1312Vm c1312Vm = new C1312Vm(AdErrorType.LOAD_AD_CALLED_MORE_THAN_ONCE, A0W(566, 30, 105));
-                    A16().A0F().A3N(Y1.A01(this.A00), c1312Vm.A03().getErrorCode(), c1312Vm.A04());
+                    C1332Vm c1332Vm = new C1332Vm(AdErrorType.LOAD_AD_CALLED_MORE_THAN_ONCE, A0W(566, 30, 105));
+                    A16().A0F().A3N(Y1.A01(this.A00), c1332Vm.A03().getErrorCode(), c1332Vm.A04());
                     if (this.A0I != null) {
-                        this.A0I.ADp(c1312Vm);
+                        this.A0I.ADp(c1332Vm);
                     } else {
                         Log.e(A0W(76, 17, 41), A0W);
                     }
-                    C1253Te c1253Te = new C1253Te(A0W);
-                    A16().A08().ABC(A0W(550, 3, 101), AbstractC1252Td.A0c, c1253Te);
+                    C1273Te c1273Te = new C1273Te(A0W);
+                    A16().A08().ABC(A0W(550, 3, 101), AbstractC1272Td.A0c, c1273Te);
                 } else {
                     throw new OF(A0W);
                 }
@@ -1204,60 +1204,60 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
                 }
             }
             this.A0D = t32;
-            O7 o72 = new O7(this.A0k, this.A0L, A0R(), null, 1, new C1959ij());
+            O7 o72 = new O7(this.A0k, this.A0L, A0R(), null, 1, new C1979ij());
             o72.A05(vw);
             o72.A06(this.A0V);
             o72.A07(this.A0W);
-            this.A0B = new C07107g(this.A0g, o72);
-            this.A0B.A0S(new C1321Vw(this));
+            this.A0B = new C07307g(this.A0g, o72);
+            this.A0B.A0S(new C1341Vw(this));
             this.A0B.A0W(str);
             return;
         }
         throw new RuntimeException();
     }
 
-    public final void A1g(C1304Vd c1304Vd) {
-        this.A0J = c1304Vd;
+    public final void A1g(C1324Vd c1324Vd) {
+        this.A0J = c1324Vd;
     }
 
-    public final void A1h(EnumC1305Ve enumC1305Ve) {
-        this.A0K = enumC1305Ve;
+    public final void A1h(EnumC1325Ve enumC1325Ve) {
+        this.A0K = enumC1325Ve;
     }
 
-    public final void A1i(EnumC1315Vq enumC1315Vq) {
+    public final void A1i(EnumC1335Vq enumC1335Vq) {
         if (!A0r()) {
-            if (EnumC1315Vq.A05.equals(enumC1315Vq)) {
+            if (EnumC1335Vq.A05.equals(enumC1335Vq)) {
                 this.A0g.A0F().A3T(AdPlacementType.NATIVE_BANNER.toString(), this.A0k);
             } else {
                 this.A0g.A0F().A3T(AdPlacementType.NATIVE.toString(), this.A0k);
             }
         }
-        this.A0L = enumC1315Vq;
+        this.A0L = enumC1335Vq;
     }
 
-    public final void A1j(InterfaceC1402Zc interfaceC1402Zc) {
-        this.A0N = interfaceC1402Zc;
+    public final void A1j(InterfaceC1422Zc interfaceC1422Zc) {
+        this.A0N = interfaceC1422Zc;
     }
 
-    public final void A1k(AbstractC1784fo abstractC1784fo) {
-        this.A0Y = new WeakReference<>(abstractC1784fo);
+    public final void A1k(AbstractC1804fo abstractC1804fo) {
+        this.A0Y = new WeakReference<>(abstractC1804fo);
     }
 
-    public final void A1l(boolean z3) {
-        this.A0a = z3;
+    public final void A1l(boolean z6) {
+        this.A0a = z6;
     }
 
-    public final void A1m(boolean z3) {
-        this.A0Z = z3;
+    public final void A1m(boolean z6) {
+        this.A0Z = z6;
     }
 
-    public final void A1n(boolean z3) {
-        this.A0b = z3;
+    public final void A1n(boolean z6) {
+        this.A0b = z6;
     }
 
-    public final void A1o(boolean z3, boolean z6) {
+    public final void A1o(boolean z6, boolean z9) {
         String A0W;
-        if (z3) {
+        if (z6) {
             if (this.A0G.equals(VW.A05)) {
                 boolean A0r2 = A0r();
                 if (A0q[3].charAt(5) != 'B') {
@@ -1278,7 +1278,7 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
             return;
         }
         if (this.A0U != null) {
-            C2022ju adapter = A12();
+            C2042ju adapter = A12();
             if (adapter != null) {
                 A0W = adapter.A0G();
             } else if (A0q[5].length() != 3) {
@@ -1295,8 +1295,8 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
             this.A0i.A0C(this.A0g, A0W);
             this.A0U.A0V();
         }
-        if (this.A0I != null && z6) {
-            C1312Vm A01 = C1312Vm.A01(AdErrorType.BROKEN_MEDIA_ERROR, A0W(93, 21, 47));
+        if (this.A0I != null && z9) {
+            C1332Vm A01 = C1332Vm.A01(AdErrorType.BROKEN_MEDIA_ERROR, A0W(93, 21, 47));
             A16().A0F().A3N(Y1.A01(this.A00), A01.A03().getErrorCode(), A01.A04());
             this.A0I.ADp(A01);
         }
@@ -1315,20 +1315,20 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
     }
 
     public final boolean A1s() {
-        return this.A0L == EnumC1315Vq.A05;
+        return this.A0L == EnumC1335Vq.A05;
     }
 
     public final boolean A1t() {
         return this.A08 == null;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1309Vi
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1329Vi
     public final int A7d() {
         View view = this.A06;
         if (view instanceof AdNativeComponentView) {
             View videoView = ((AdNativeComponentView) view).getAdContentsView();
-            if (videoView instanceof C1724eq) {
-                return ((C1724eq) videoView).getCurrentPosition();
+            if (videoView instanceof C1744eq) {
+                return ((C1744eq) videoView).getCurrentPosition();
             }
             return -1;
         }
@@ -1337,13 +1337,13 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
 
     @Override // com.facebook.ads.internal.api.NativeAdBaseApi
     public final NativeAdBase.NativeAdLoadConfigBuilder buildLoadAdConfig(NativeAdBase nativeAdBase) {
-        return new C1307Vg(this, nativeAdBase);
+        return new C1327Vg(this, nativeAdBase);
     }
 
     @Override // com.facebook.ads.Ad
     public final void destroy() {
-        AbstractC1323Vy.A05(A0W(553, 7, 95), A0W(363, 19, 11), A0W(21, 8, 17));
-        if (C1290Up.A1z(this.A0g)) {
+        AbstractC1343Vy.A05(A0W(553, 7, 95), A0W(363, 19, 11), A0W(21, 8, 17));
+        if (C1310Up.A1z(this.A0g)) {
             A16().A0B().AKU(this.A03);
         }
         if (!A0r()) {
@@ -1425,7 +1425,7 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
 
     @Override // com.facebook.ads.internal.api.NativeAdBaseApi
     public final float getAspectRatio() {
-        C1302Vb nativeAdImage;
+        C1322Vb nativeAdImage;
         if (this.A0e == null || (nativeAdImage = this.A0e.A0E().A0H()) == null) {
             return 0.0f;
         }
@@ -1434,14 +1434,14 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
         if (height <= 0) {
             return 0.0f;
         }
-        float f3 = width;
+        float f2 = width;
         float f9 = height;
         String[] strArr = A0q;
         if (strArr[0].charAt(21) == strArr[4].charAt(21)) {
             throw new RuntimeException();
         }
         A0q[3] = "OUTl4BjdLTzCi4kmpI6eA9pKBM08eKMp";
-        return f3 / f9;
+        return f2 / f9;
     }
 
     @Override // com.facebook.ads.internal.api.NativeAdBaseApi
@@ -1459,9 +1459,9 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
 
     @Override // com.facebook.ads.internal.api.NativeAdBaseApi
     public final Drawable getPreloadedIconViewDrawable() {
-        C1302Vb A0I;
+        C1322Vb A0I;
         Bitmap A0N;
-        C2022ju adapter = this.A0e;
+        C2042ju adapter = this.A0e;
         if (adapter != null && (A0I = A0F().A0I()) != null && (A0N = this.A0f.A0N(A0I.getUrl())) != null) {
             return A05(A16(), A0N, A1t(), A1I());
         }
@@ -1485,9 +1485,9 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
 
     @Override // com.facebook.ads.Ad
     public final boolean isAdInvalidated() {
-        boolean z3 = true;
+        boolean z6 = true;
         if (this.A0B != null) {
-            C07107g c07107g = this.A0B;
+            C07307g c07307g = this.A0B;
             String[] strArr = A0q;
             if (strArr[6].length() != strArr[1].length()) {
                 throw new RuntimeException();
@@ -1495,12 +1495,12 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
             String[] strArr2 = A0q;
             strArr2[2] = "gqyuy6F7WThaJUOfAsIyr4sziGGBhw0f";
             strArr2[7] = "L6lbko7Rv34huPFym8TvMBezY1vQkdWf";
-            z3 = c07107g.A0Z();
+            z6 = c07307g.A0Z();
         } else if (this.A0C != null) {
-            z3 = this.A0C.A0A();
+            z6 = this.A0C.A0A();
         }
-        this.A0g.A0F().A5f(z3);
-        return z3;
+        this.A0g.A0F().A5f(z6);
+        return z6;
     }
 
     @Override // com.facebook.ads.internal.api.NativeAdBaseApi
@@ -1510,14 +1510,14 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
 
     @Override // com.facebook.ads.Ad
     public final void loadAd() {
-        AbstractC1323Vy.A05(A0W(560, 6, 117), A0W(382, 24, 27), A0W(13, 8, 68));
+        AbstractC1343Vy.A05(A0W(560, 6, 117), A0W(382, 24, 27), A0W(13, 8, 68));
         A1f(VW.A00(NativeAdBase.MediaCacheFlag.ALL), null, new T3(false, -1, -1));
     }
 
     @Override // com.facebook.ads.internal.api.NativeAdBaseApi
     public final void loadAd(NativeAdBase.NativeLoadAdConfig nativeLoadAdConfig) {
-        AbstractC1323Vy.A05(A0W(560, 6, 117), A0W(382, 24, 27), A0W(5, 8, 76));
-        ((C1307Vg) nativeLoadAdConfig).A00();
+        AbstractC1343Vy.A05(A0W(560, 6, 117), A0W(382, 24, 27), A0W(5, 8, 76));
+        ((C1327Vg) nativeLoadAdConfig).A00();
     }
 
     @Override // com.facebook.ads.internal.api.NativeAdBaseApi
@@ -1530,12 +1530,12 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
     @Override // com.facebook.ads.internal.context.Repairable
     public final void repair(Throwable th) {
         if (this.A04 != null) {
-            this.A04.post(new C1322Vx(this));
+            this.A04.post(new C1342Vx(this));
         }
-        String str = A0W(164, 16, 48) + AbstractC1367Xt.A03(this.A0g, th);
+        String str = A0W(164, 16, 48) + AbstractC1387Xt.A03(this.A0g, th);
         A16().A0F().A3N(Y1.A01(this.A00), AdError.INTERNAL_ERROR_CODE, str);
         if (this.A0I != null) {
-            this.A0I.ADp(new C1312Vm(AdError.INTERNAL_ERROR_CODE, str));
+            this.A0I.ADp(new C1332Vm(AdError.INTERNAL_ERROR_CODE, str));
         }
     }
 
@@ -1555,11 +1555,11 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
 
     @Override // com.facebook.ads.internal.api.NativeAdBaseApi
     public final void unregisterView() {
-        C1688eF c1688eF = this.A0Q;
-        if (c1688eF != null) {
-            ViewParent parent = c1688eF.getParent();
+        C1708eF c1708eF = this.A0Q;
+        if (c1708eF != null) {
+            ViewParent parent = c1708eF.getParent();
             if (parent instanceof ViewGroup) {
-                ((ViewGroup) parent).removeView(c1688eF);
+                ((ViewGroup) parent).removeView(c1708eF);
             }
             this.A0Q = null;
         }
@@ -1567,7 +1567,7 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
             return;
         }
         if (!A0r()) {
-            InterfaceC1066Lt A0F = this.A0g.A0F();
+            InterfaceC1086Lt A0F = this.A0g.A0F();
             String[] strArr = A0q;
             if (strArr[0].charAt(21) != strArr[4].charAt(21)) {
                 A0q[3] = "w9n8TBisrss8zAM8EiwpgeUnlq2PaQ6F";
@@ -1575,7 +1575,7 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
             }
             throw new RuntimeException();
         }
-        if (C1290Up.A1z(this.A0g)) {
+        if (C1310Up.A1z(this.A0g)) {
             A16().A0B().AKU(this.A03);
         }
         if (A0s.containsKey(this.A04) && A0s.get(this.A04).get() == this) {
@@ -1592,7 +1592,7 @@ public final class UK implements Ad, NativeAdBaseApi, Repairable, InterfaceC1309
                 if (this.A0e != null) {
                     this.A0e.A0J();
                 }
-                if (this.A0O != null && C1290Up.A1C(this.A0g)) {
+                if (this.A0O != null && C1310Up.A1C(this.A0g)) {
                     this.A0O.A07();
                     View view2 = this.A04;
                     String[] strArr4 = A0q;

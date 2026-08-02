@@ -1,51 +1,108 @@
 package U2;
 
-import L3.u;
-import java.io.Serializable;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.atomic.AtomicInteger;
+import R2.G;
+import R2.w;
+import X2.b;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.ServiceConnection;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.util.Log;
+import java.util.NoSuchElementException;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.Executor;
 
 /* loaded from: classes.dex */
-public final class a implements ThreadFactory {
-
-    /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f3198a;
+public final class a {
 
     /* renamed from: b, reason: collision with root package name */
-    public final ThreadFactory f3199b;
+    public static final Object f3290b = new Object();
 
     /* renamed from: c, reason: collision with root package name */
-    public final Serializable f3200c;
+    public static volatile a f3291c;
 
-    public a() {
-        this.f3198a = 1;
-        this.f3199b = Executors.defaultThreadFactory();
-        this.f3200c = new AtomicInteger(1);
+    /* renamed from: a, reason: collision with root package name */
+    public final ConcurrentHashMap f3292a = new ConcurrentHashMap();
+
+    public static a a() {
+        if (f3291c == null) {
+            synchronized (f3290b) {
+                try {
+                    if (f3291c == null) {
+                        f3291c = new a();
+                    }
+                } finally {
+                }
+            }
+        }
+        a aVar = f3291c;
+        w.h(aVar);
+        return aVar;
     }
 
-    @Override // java.util.concurrent.ThreadFactory
-    public final Thread newThread(Runnable runnable) {
-        switch (this.f3198a) {
-            case 0:
-                Thread newThread = this.f3199b.newThread(new u(2, runnable));
-                newThread.setName((String) this.f3200c);
-                return newThread;
-            default:
-                AtomicInteger atomicInteger = (AtomicInteger) this.f3200c;
-                Thread newThread2 = this.f3199b.newThread(runnable);
-                int andIncrement = atomicInteger.getAndIncrement();
-                StringBuilder sb = new StringBuilder(String.valueOf(andIncrement).length() + 5);
-                sb.append("gads-");
-                sb.append(andIncrement);
-                newThread2.setName(sb.toString());
-                return newThread2;
+    public final void b(Context context, ServiceConnection serviceConnection) {
+        if (!(serviceConnection instanceof G)) {
+            ConcurrentHashMap concurrentHashMap = this.f3292a;
+            if (concurrentHashMap.containsKey(serviceConnection)) {
+                try {
+                    try {
+                        context.unbindService((ServiceConnection) concurrentHashMap.get(serviceConnection));
+                    } catch (IllegalArgumentException | IllegalStateException | NoSuchElementException unused) {
+                    }
+                    return;
+                } finally {
+                    concurrentHashMap.remove(serviceConnection);
+                }
+            }
+        }
+        try {
+            context.unbindService(serviceConnection);
+        } catch (IllegalArgumentException | IllegalStateException | NoSuchElementException unused2) {
         }
     }
 
-    public a(String str) {
-        this.f3198a = 0;
-        this.f3199b = Executors.defaultThreadFactory();
-        this.f3200c = str;
+    public final boolean c(Context context, String str, Intent intent, ServiceConnection serviceConnection, int i, Executor executor) {
+        boolean bindService;
+        ComponentName component = intent.getComponent();
+        if (component != null) {
+            String packageName = component.getPackageName();
+            "com.google.android.gms".equals(packageName);
+            try {
+                if ((b.a(context).f(0, packageName).flags & 2097152) != 0) {
+                    Log.w("ConnectionTracker", "Attempted to bind to a service in a STOPPED package.");
+                    return false;
+                }
+            } catch (PackageManager.NameNotFoundException unused) {
+            }
+        }
+        if (serviceConnection instanceof G) {
+            if (executor == null) {
+                executor = null;
+            }
+            if (Build.VERSION.SDK_INT < 29 || executor == null) {
+                return context.bindService(intent, serviceConnection, i);
+            }
+            bindService = context.bindService(intent, i, executor, serviceConnection);
+            return bindService;
+        }
+        ConcurrentHashMap concurrentHashMap = this.f3292a;
+        ServiceConnection serviceConnection2 = (ServiceConnection) concurrentHashMap.putIfAbsent(serviceConnection, serviceConnection);
+        if (serviceConnection2 != null && serviceConnection != serviceConnection2) {
+            Log.w("ConnectionTracker", String.format("Duplicate binding with the same ServiceConnection: %s, %s, %s.", serviceConnection, str, intent.getAction()));
+        }
+        if (executor == null) {
+            executor = null;
+        }
+        try {
+            boolean bindService2 = (Build.VERSION.SDK_INT < 29 || executor == null) ? context.bindService(intent, serviceConnection, i) : context.bindService(intent, i, executor, serviceConnection);
+            if (bindService2) {
+                return bindService2;
+            }
+            return false;
+        } finally {
+            concurrentHashMap.remove(serviceConnection, serviceConnection);
+        }
     }
 }

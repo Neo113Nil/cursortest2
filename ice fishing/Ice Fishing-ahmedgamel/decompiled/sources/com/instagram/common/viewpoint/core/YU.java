@@ -20,40 +20,40 @@ public final class YU implements SensorEventListener {
     public long A05;
     public long A06;
     public SensorManager A07;
-    public final C1840gi A08;
+    public final C1860gi A08;
     public int A03 = 0;
     public float A00 = -1.0f;
     public float A01 = -1.0f;
     public float A02 = -1.0f;
     public final Set<YT> A09 = new CopyOnWriteArraySet();
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0A, i, i + i6);
-        int i10 = 0;
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0A, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             if (A0B[5].length() != 16) {
                 throw new RuntimeException();
             }
             A0B[6] = "nz7up3lN";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 34);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 34);
+            i9++;
         }
     }
 
     public static void A02() {
-        A0A = new byte[]{122, 76, 71, 90, 70, 91, 90, 9, 71, 70, 93, 9, 90, 92, 89, 89, 70, 91, 93, 76, 77, 5, 62, 55, 61, c.f16318c, 56, 49, 118, 56, 57, 34, 118, 37, 35, 38, 38, 57, 36, 34, 51, 50, 25, 15, 4, 25, 5, 24};
+        A0A = new byte[]{122, 76, 71, 90, 70, 91, 90, 9, 71, 70, 93, 9, 90, 92, 89, 89, 70, 91, 93, 76, 77, 5, 62, 55, 61, c.f17105c, 56, 49, 118, 56, 57, 34, 118, 37, 35, 38, 38, 57, 36, 34, 51, 50, 25, 15, 4, 25, 5, 24};
     }
 
     static {
         A02();
     }
 
-    public YU(C1840gi c1840gi) {
-        this.A08 = c1840gi;
+    public YU(C1860gi c1860gi) {
+        this.A08 = c1860gi;
     }
 
     private void A01() {
@@ -61,13 +61,13 @@ public final class YU implements SensorEventListener {
         if (this.A07 == null) {
             Toast.makeText(this.A08, A00(0, 21, 11), 1).show();
         }
-        boolean z3 = false;
+        boolean z6 = false;
         try {
-            z3 = this.A07.registerListener(this, this.A07.getDefaultSensor(1), 3);
+            z6 = this.A07.registerListener(this, this.A07.getDefaultSensor(1), 3);
         } catch (Exception unused) {
             Toast.makeText(this.A08, A00(21, 21, 116), 1).show();
         }
-        if (!z3 && this.A07 != null) {
+        if (!z6 && this.A07 != null) {
             this.A07.unregisterListener(this);
         }
     }

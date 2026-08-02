@@ -7,78 +7,78 @@ import java.math.RoundingMode;
 public final class I4 implements J4 {
 
     /* renamed from: m, reason: collision with root package name */
-    public static final int[] f25441m = {-1, -1, -1, -1, 2, 4, 6, 8, -1, -1, -1, -1, 2, 4, 6, 8};
+    public static final int[] f26184m = {-1, -1, -1, -1, 2, 4, 6, 8, -1, -1, -1, -1, 2, 4, 6, 8};
 
     /* renamed from: n, reason: collision with root package name */
-    public static final int[] f25442n = {7, 8, 9, 10, 11, 12, 13, 14, 16, 17, 19, 21, 23, 25, 28, 31, 34, 37, 41, 45, 50, 55, 60, 66, 73, 80, 88, 97, 107, 118, com.anythink.expressad.video.module.a.a.f21731U, 143, 157, 173, 190, BaseATView.a.f9772H, 230, 253, com.anythink.expressad.foundation.g.a.aX, com.anythink.core.common.n.b.a.c.k.f15070a, 337, 371, 408, 449, 494, 544, 598, 658, 724, 796, 876, 963, 1060, 1166, 1282, 1411, 1552, 1707, 1878, 2066, 2272, 2499, 2749, 3024, 3327, 3660, 4026, 4428, 4871, 5358, 5894, 6484, 7132, 7845, 8630, 9493, 10442, 11487, 12635, 13899, 15289, 16818, 18500, 20350, 22385, 24623, 27086, 29794, 32767};
+    public static final int[] f26185n = {7, 8, 9, 10, 11, 12, 13, 14, 16, 17, 19, 21, 23, 25, 28, 31, 34, 37, 41, 45, 50, 55, 60, 66, 73, 80, 88, 97, 107, 118, com.anythink.expressad.video.module.a.a.f22518U, 143, 157, 173, 190, BaseATView.a.f10558H, 230, 253, com.anythink.expressad.foundation.g.a.aX, com.anythink.core.common.n.b.a.c.k.f15857a, 337, 371, 408, 449, 494, 544, 598, 658, 724, 796, 876, 963, 1060, 1166, 1282, 1411, 1552, 1707, 1878, 2066, 2272, 2499, 2749, 3024, 3327, 3660, 4026, 4428, 4871, 5358, 5894, 6484, 7132, 7845, 8630, 9493, 10442, 11487, 12635, 13899, 15289, 16818, 18500, 20350, 22385, 24623, 27086, 29794, 32767};
 
     /* renamed from: a, reason: collision with root package name */
-    public final CQ f25443a;
+    public final FQ f26186a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final InterfaceC3543m1 f25444b;
+    public final InterfaceC3566m1 f26187b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final M4 f25445c;
+    public final M4 f26188c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f25446d;
+    public final int f26189d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final byte[] f25447e;
+    public final byte[] f26190e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final Cr f25448f;
+    public final Cr f26191f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final int f25449g;
+    public final int f26192g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final DP f25450h;
+    public final DP f26193h;
     public int i;
 
     /* renamed from: j, reason: collision with root package name */
-    public long f25451j;
+    public long f26194j;
 
     /* renamed from: k, reason: collision with root package name */
-    public int f25452k;
+    public int f26195k;
 
     /* renamed from: l, reason: collision with root package name */
-    public long f25453l;
+    public long f26196l;
 
-    public I4(CQ cq, InterfaceC3543m1 interfaceC3543m1, M4 m4) {
-        this.f25443a = cq;
-        this.f25444b = interfaceC3543m1;
-        this.f25445c = m4;
-        int i = m4.f26240b;
+    public I4(FQ fq, InterfaceC3566m1 interfaceC3566m1, M4 m42) {
+        this.f26186a = fq;
+        this.f26187b = interfaceC3566m1;
+        this.f26188c = m42;
+        int i = m42.f27031b;
         int max = Math.max(1, i / 10);
-        this.f25449g = max;
-        Cr cr = new Cr((byte[]) m4.f26244f);
+        this.f26192g = max;
+        Cr cr = new Cr((byte[]) m42.f27035f);
         cr.M();
         int M8 = cr.M();
-        this.f25446d = M8;
-        int i6 = m4.f26239a;
-        int i9 = m4.f26241c;
-        int i10 = (((i9 - (i6 * 4)) * 8) / (m4.f26242d * i6)) + 1;
-        if (M8 != i10) {
-            throw U4.a(null, D.y.r(new StringBuilder(String.valueOf(i10).length() + 34 + String.valueOf(M8).length()), "Expected frames per block: ", i10, "; got: ", M8));
+        this.f26189d = M8;
+        int i4 = m42.f27030a;
+        int i6 = m42.f27032c;
+        int i9 = (((i6 - (i4 * 4)) * 8) / (m42.f27033d * i4)) + 1;
+        if (M8 != i9) {
+            throw U4.a(null, D.x.o(new StringBuilder(String.valueOf(i9).length() + 34 + String.valueOf(M8).length()), "Expected frames per block: ", i9, "; got: ", M8));
         }
-        String str = AbstractC3159eu.f29993a;
-        int i11 = ((max + M8) - 1) / M8;
-        this.f25447e = new byte[i11 * i9];
-        this.f25448f = new Cr((M8 + M8) * i6 * i11);
-        int i12 = ((i9 * i) * 8) / M8;
-        C3299hP c3299hP = new C3299hP();
-        c3299hP.e(com.anythink.basead.exoplayer.k.o.f8465w);
-        c3299hP.f30787h = i12;
-        c3299hP.i = i12;
-        c3299hP.f30793o = (max + max) * i6;
-        c3299hP.f30772G = i6;
-        int i13 = m4.f26243e;
-        c3299hP.f30773H = i13 != 0 ? i13 << 2 : -1;
-        c3299hP.f30774I = i;
-        c3299hP.J = 2;
-        this.f25450h = new DP(c3299hP);
+        String str = AbstractC3182eu.f30782a;
+        int i10 = ((max + M8) - 1) / M8;
+        this.f26190e = new byte[i10 * i6];
+        this.f26191f = new Cr((M8 + M8) * i4 * i10);
+        int i11 = ((i6 * i) * 8) / M8;
+        C3322hP c3322hP = new C3322hP();
+        c3322hP.e(com.anythink.basead.exoplayer.k.o.f9251w);
+        c3322hP.f31553h = i11;
+        c3322hP.i = i11;
+        c3322hP.f31559o = (max + max) * i4;
+        c3322hP.f31538G = i4;
+        int i12 = m42.f27034e;
+        c3322hP.f31539H = i12 != 0 ? i12 << 2 : -1;
+        c3322hP.f31540I = i;
+        c3322hP.J = 2;
+        this.f26193h = new DP(c3322hP);
     }
 
     /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
@@ -105,23 +105,23 @@ public final class I4 implements J4 {
     @Override // com.google.android.gms.internal.ads.J4
     public final void b(long j6) {
         this.i = 0;
-        this.f25451j = j6;
-        this.f25452k = 0;
-        this.f25453l = 0L;
+        this.f26194j = j6;
+        this.f26195k = 0;
+        this.f26196l = 0L;
     }
 
     @Override // com.google.android.gms.internal.ads.J4
     public final void c(int i, long j6) {
-        this.f25443a.D(new N4(this.f25445c, this.f25446d, i, j6));
-        this.f25444b.e(this.f25450h);
+        this.f26186a.D(new N4(this.f26188c, this.f26189d, i, j6));
+        this.f26187b.e(this.f26193h);
     }
 
     public final void d(int i) {
-        M4 m4 = this.f25445c;
-        long w6 = this.f25451j + AbstractC3159eu.w(this.f25453l, 1000000L, m4.f26240b, RoundingMode.DOWN);
-        int i6 = (i + i) * m4.f26239a;
-        this.f25444b.c(w6, 1, i6, this.f25452k - i6, null);
-        this.f25453l += i;
-        this.f25452k -= i6;
+        M4 m42 = this.f26188c;
+        long w3 = this.f26194j + AbstractC3182eu.w(this.f26196l, 1000000L, m42.f27031b, RoundingMode.DOWN);
+        int i4 = (i + i) * m42.f27030a;
+        this.f26187b.c(w3, 1, i4, this.f26195k - i4, null);
+        this.f26196l += i;
+        this.f26195k -= i4;
     }
 }

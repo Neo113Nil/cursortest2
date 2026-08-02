@@ -8,8 +8,8 @@ public final class b extends d {
     private AnythinkVideoView ai;
     private AnythinkContainerView aj;
 
-    public b(AnythinkVideoView anythinkVideoView, AnythinkContainerView anythinkContainerView, com.anythink.expressad.foundation.d.d dVar, com.anythink.expressad.videocommon.c.c cVar, com.anythink.expressad.videocommon.b.c cVar2, String str, String str2, com.anythink.expressad.video.module.a.a aVar, int i, boolean z3) {
-        super(dVar, cVar2, cVar, str, str2, aVar, i, z3);
+    public b(AnythinkVideoView anythinkVideoView, AnythinkContainerView anythinkContainerView, com.anythink.expressad.foundation.d.d dVar, com.anythink.expressad.videocommon.c.c cVar, com.anythink.expressad.videocommon.b.c cVar2, String str, String str2, com.anythink.expressad.video.module.a.a aVar, int i, boolean z6) {
+        super(dVar, cVar2, cVar, str, str2, aVar, i, z6);
         this.ai = anythinkVideoView;
         this.aj = anythinkContainerView;
         if (anythinkVideoView == null || anythinkContainerView == null) {

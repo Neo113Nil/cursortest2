@@ -3,45 +3,45 @@ package P;
 import android.os.Bundle;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.view.accessibility.AccessibilityNodeProvider;
-import g1.C4522b;
+import i1.C4585b;
 import java.util.List;
 
 /* loaded from: classes.dex */
 public class l extends AccessibilityNodeProvider {
 
     /* renamed from: a, reason: collision with root package name */
-    public final C4522b f2411a;
+    public final C4585b f2342a;
 
-    public l(C4522b c4522b) {
-        this.f2411a = c4522b;
+    public l(C4585b c4585b) {
+        this.f2342a = c4585b;
     }
 
     @Override // android.view.accessibility.AccessibilityNodeProvider
     public final AccessibilityNodeInfo createAccessibilityNodeInfo(int i) {
-        k y7 = this.f2411a.y(i);
-        if (y7 == null) {
+        k k9 = this.f2342a.k(i);
+        if (k9 == null) {
             return null;
         }
-        return y7.f2409a;
+        return k9.f2340a;
     }
 
     @Override // android.view.accessibility.AccessibilityNodeProvider
     public final List findAccessibilityNodeInfosByText(String str, int i) {
-        this.f2411a.getClass();
+        this.f2342a.getClass();
         return null;
     }
 
     @Override // android.view.accessibility.AccessibilityNodeProvider
     public final AccessibilityNodeInfo findFocus(int i) {
-        k B9 = this.f2411a.B(i);
-        if (B9 == null) {
+        k m9 = this.f2342a.m(i);
+        if (m9 == null) {
             return null;
         }
-        return B9.f2409a;
+        return m9.f2340a;
     }
 
     @Override // android.view.accessibility.AccessibilityNodeProvider
-    public final boolean performAction(int i, int i6, Bundle bundle) {
-        return this.f2411a.T(i, i6, bundle);
+    public final boolean performAction(int i, int i4, Bundle bundle) {
+        return this.f2342a.r(i, i4, bundle);
     }
 }

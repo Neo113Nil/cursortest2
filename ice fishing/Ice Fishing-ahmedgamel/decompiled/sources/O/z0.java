@@ -6,29 +6,29 @@ import android.view.WindowInsets;
 public abstract class z0 {
     public static int a(int i) {
         int statusBars;
-        int i6 = 0;
-        for (int i9 = 1; i9 <= 256; i9 <<= 1) {
-            if ((i & i9) != 0) {
-                if (i9 == 1) {
+        int i4 = 0;
+        for (int i6 = 1; i6 <= 256; i6 <<= 1) {
+            if ((i & i6) != 0) {
+                if (i6 == 1) {
                     statusBars = WindowInsets.Type.statusBars();
-                } else if (i9 == 2) {
+                } else if (i6 == 2) {
                     statusBars = WindowInsets.Type.navigationBars();
-                } else if (i9 == 4) {
+                } else if (i6 == 4) {
                     statusBars = WindowInsets.Type.captionBar();
-                } else if (i9 == 8) {
+                } else if (i6 == 8) {
                     statusBars = WindowInsets.Type.ime();
-                } else if (i9 == 16) {
+                } else if (i6 == 16) {
                     statusBars = WindowInsets.Type.systemGestures();
-                } else if (i9 == 32) {
+                } else if (i6 == 32) {
                     statusBars = WindowInsets.Type.mandatorySystemGestures();
-                } else if (i9 == 64) {
+                } else if (i6 == 64) {
                     statusBars = WindowInsets.Type.tappableElement();
-                } else if (i9 == 128) {
+                } else if (i6 == 128) {
                     statusBars = WindowInsets.Type.displayCutout();
                 }
-                i6 |= statusBars;
+                i4 |= statusBars;
             }
         }
-        return i6;
+        return i4;
     }
 }

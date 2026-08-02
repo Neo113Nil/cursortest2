@@ -9,13 +9,13 @@ import java.util.concurrent.ConcurrentHashMap;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f12219a = "1";
+    public static final String f13005a = "1";
 
     /* renamed from: c, reason: collision with root package name */
-    private static volatile b f12220c;
+    private static volatile b f13006c;
 
     /* renamed from: b, reason: collision with root package name */
-    ConcurrentHashMap<String, List<a>> f12221b = new ConcurrentHashMap<>();
+    ConcurrentHashMap<String, List<a>> f13007b = new ConcurrentHashMap<>();
 
     public interface a {
         void a(Object obj);
@@ -25,18 +25,18 @@ public class b {
     }
 
     public static b a() {
-        if (f12220c == null) {
+        if (f13006c == null) {
             synchronized (b.class) {
                 try {
-                    if (f12220c == null) {
-                        f12220c = new b();
+                    if (f13006c == null) {
+                        f13006c = new b();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f12220c;
+        return f13006c;
     }
 
     public final synchronized void b(final String str, final a aVar) {
@@ -46,7 +46,7 @@ public class b {
                 public final void run() {
                     synchronized (b.this) {
                         try {
-                            List<a> list = b.this.f12221b.get(str);
+                            List<a> list = b.this.f13007b.get(str);
                             if (list != null) {
                                 list.remove(aVar);
                             }
@@ -66,10 +66,10 @@ public class b {
                 public final void run() {
                     synchronized (b.this) {
                         try {
-                            List<a> list = b.this.f12221b.get(str);
+                            List<a> list = b.this.f13007b.get(str);
                             if (list == null) {
                                 list = new ArrayList<>();
-                                b.this.f12221b.put(str, list);
+                                b.this.f13007b.put(str, list);
                             }
                             list.add(aVar);
                         } catch (Throwable th) {
@@ -90,7 +90,7 @@ public class b {
             public final void run() {
                 synchronized (b.this) {
                     try {
-                        List<a> list = b.this.f12221b.get(str);
+                        List<a> list = b.this.f13007b.get(str);
                         if (list == null) {
                             return;
                         }

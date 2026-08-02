@@ -11,13 +11,13 @@ public final class J7 {
     public int A03;
     public J1 A04;
     public JO A05;
-    public final InterfaceC0947Hd A06;
+    public final InterfaceC0967Hd A06;
     public final JQ A07 = new JQ();
-    public final C06474v A09 = new C06474v(1);
-    public final C06474v A08 = new C06474v();
+    public final C06674v A09 = new C06674v(1);
+    public final C06674v A08 = new C06674v();
 
-    public J7(InterfaceC0947Hd interfaceC0947Hd) {
-        this.A06 = interfaceC0947Hd;
+    public J7(InterfaceC0967Hd interfaceC0967Hd) {
+        this.A06 = interfaceC0967Hd;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -41,38 +41,38 @@ public final class J7 {
         if (A00 == null) {
             return;
         }
-        C06474v c06474v = this.A07.A0H;
+        C06674v c06674v = this.A07.A0H;
         if (A00.A00 != 0) {
-            c06474v.A0g(A00.A00);
+            c06674v.A0g(A00.A00);
         }
         if (this.A07.A06(this.A01)) {
-            c06474v.A0g(c06474v.A0M() * 6);
+            c06674v.A0g(c06674v.A0M() * 6);
         }
     }
 
     public final int A04() {
-        C06474v c06474v;
+        C06674v c06674v;
         int vectorSize;
         JP A00 = A00();
         if (A00 == null) {
             return 0;
         }
         if (A00.A00 != 0) {
-            c06474v = this.A07.A0H;
+            c06674v = this.A07.A0H;
             vectorSize = A00.A00;
         } else {
             byte[] initVectorData = A00.A04;
             this.A08.A0j(initVectorData, initVectorData.length);
-            c06474v = this.A08;
+            c06674v = this.A08;
             vectorSize = initVectorData.length;
         }
         boolean A06 = this.A07.A06(this.A01);
         this.A09.A00[0] = (byte) ((A06 ? 128 : 0) | vectorSize);
         this.A09.A0f(0);
-        InterfaceC0947Hd interfaceC0947Hd = this.A06;
-        C06474v initializationVectorData = this.A09;
-        interfaceC0947Hd.AIr(initializationVectorData, 1);
-        this.A06.AIr(c06474v, vectorSize);
+        InterfaceC0967Hd interfaceC0967Hd = this.A06;
+        C06674v initializationVectorData = this.A09;
+        interfaceC0967Hd.AIr(initializationVectorData, 1);
+        this.A06.AIr(c06674v, vectorSize);
         if (!A06) {
             int vectorSize2 = vectorSize + 1;
             if (A0A[2].charAt(9) == '1') {
@@ -81,11 +81,11 @@ public final class J7 {
             A0A[3] = "cKav7mEAu9tQ2Y9RA5SJHOCCBpQ48rqR";
             return vectorSize2;
         }
-        C06474v c06474v2 = this.A07.A0H;
-        int A0M = c06474v2.A0M();
-        c06474v2.A0g(-2);
+        C06674v c06674v2 = this.A07.A0H;
+        int A0M = c06674v2.A0M();
+        c06674v2.A0g(-2);
         int i = (A0M * 6) + 2;
-        this.A06.AIr(c06474v2, i);
+        this.A06.AIr(c06674v2, i);
         return vectorSize + 1 + i;
     }
 
@@ -115,8 +115,8 @@ public final class J7 {
     }
 
     public final void A08(JO jo, J1 j12) {
-        this.A05 = (JO) AbstractC06243y.A01(jo);
-        this.A04 = (J1) AbstractC06243y.A01(j12);
+        this.A05 = (JO) AbstractC06443y.A01(jo);
+        this.A04 = (J1) AbstractC06443y.A01(j12);
         this.A06.A6e(jo.A07);
         A05();
     }

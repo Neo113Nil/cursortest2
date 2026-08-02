@@ -9,22 +9,22 @@ public interface m {
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public final int f7183a;
+        public final int f7969a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final byte[] f7184b;
+        public final byte[] f7970b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final int f7185c;
+        public final int f7971c;
 
         /* renamed from: d, reason: collision with root package name */
-        public final int f7186d;
+        public final int f7972d;
 
-        public a(int i, byte[] bArr, int i6, int i9) {
-            this.f7183a = i;
-            this.f7184b = bArr;
-            this.f7185c = i6;
-            this.f7186d = i9;
+        public a(int i, byte[] bArr, int i4, int i6) {
+            this.f7969a = i;
+            this.f7970b = bArr;
+            this.f7971c = i4;
+            this.f7972d = i6;
         }
 
         public final boolean equals(Object obj) {
@@ -33,7 +33,7 @@ public interface m {
             }
             if (obj != null && a.class == obj.getClass()) {
                 a aVar = (a) obj;
-                if (this.f7183a == aVar.f7183a && this.f7185c == aVar.f7185c && this.f7186d == aVar.f7186d && Arrays.equals(this.f7184b, aVar.f7184b)) {
+                if (this.f7969a == aVar.f7969a && this.f7971c == aVar.f7971c && this.f7972d == aVar.f7972d && Arrays.equals(this.f7970b, aVar.f7970b)) {
                     return true;
                 }
             }
@@ -41,13 +41,13 @@ public interface m {
         }
 
         public final int hashCode() {
-            return ((((Arrays.hashCode(this.f7184b) + (this.f7183a * 31)) * 31) + this.f7185c) * 31) + this.f7186d;
+            return ((((Arrays.hashCode(this.f7970b) + (this.f7969a * 31)) * 31) + this.f7971c) * 31) + this.f7972d;
         }
     }
 
-    int a(f fVar, int i, boolean z3);
+    int a(f fVar, int i, boolean z6);
 
-    void a(long j6, int i, int i6, int i9, a aVar);
+    void a(long j6, int i, int i4, int i6, a aVar);
 
     void a(s sVar, int i);
 

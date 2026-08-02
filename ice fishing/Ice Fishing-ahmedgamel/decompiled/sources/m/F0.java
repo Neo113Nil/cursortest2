@@ -7,60 +7,60 @@ import android.view.MotionEvent;
 import android.widget.HeaderViewListAdapter;
 import android.widget.ListAdapter;
 import androidx.appcompat.view.menu.ListMenuItemView;
-import l.C4653j;
+import l.C4664j;
 
 /* loaded from: classes.dex */
-public final class F0 extends C4706p0 {
+public final class F0 extends C4719p0 {
 
     /* renamed from: F, reason: collision with root package name */
-    public final int f39000F;
+    public final int f39068F;
 
     /* renamed from: G, reason: collision with root package name */
-    public final int f39001G;
+    public final int f39069G;
 
     /* renamed from: H, reason: collision with root package name */
-    public C0 f39002H;
+    public C0 f39070H;
 
     /* renamed from: I, reason: collision with root package name */
-    public l.o f39003I;
+    public l.o f39071I;
 
-    public F0(Context context, boolean z3) {
-        super(context, z3);
+    public F0(Context context, boolean z6) {
+        super(context, z6);
         if (1 == context.getResources().getConfiguration().getLayoutDirection()) {
-            this.f39000F = 21;
-            this.f39001G = 22;
+            this.f39068F = 21;
+            this.f39069G = 22;
         } else {
-            this.f39000F = 22;
-            this.f39001G = 21;
+            this.f39068F = 22;
+            this.f39069G = 21;
         }
     }
 
-    @Override // m.C4706p0, android.view.View
+    @Override // m.C4719p0, android.view.View
     public final boolean onHoverEvent(MotionEvent motionEvent) {
-        C4653j c4653j;
+        C4664j c4664j;
         int i;
         int pointToPosition;
-        int i6;
-        if (this.f39002H != null) {
+        int i4;
+        if (this.f39070H != null) {
             ListAdapter adapter = getAdapter();
             if (adapter instanceof HeaderViewListAdapter) {
                 HeaderViewListAdapter headerViewListAdapter = (HeaderViewListAdapter) adapter;
                 i = headerViewListAdapter.getHeadersCount();
-                c4653j = (C4653j) headerViewListAdapter.getWrappedAdapter();
+                c4664j = (C4664j) headerViewListAdapter.getWrappedAdapter();
             } else {
-                c4653j = (C4653j) adapter;
+                c4664j = (C4664j) adapter;
                 i = 0;
             }
-            l.o item = (motionEvent.getAction() == 10 || (pointToPosition = pointToPosition((int) motionEvent.getX(), (int) motionEvent.getY())) == -1 || (i6 = pointToPosition - i) < 0 || i6 >= c4653j.getCount()) ? null : c4653j.getItem(i6);
-            l.o oVar = this.f39003I;
+            l.o item = (motionEvent.getAction() == 10 || (pointToPosition = pointToPosition((int) motionEvent.getX(), (int) motionEvent.getY())) == -1 || (i4 = pointToPosition - i) < 0 || i4 >= c4664j.getCount()) ? null : c4664j.getItem(i4);
+            l.o oVar = this.f39071I;
             if (oVar != item) {
-                l.m mVar = c4653j.f38797a;
+                l.m mVar = c4664j.f38724a;
                 if (oVar != null) {
-                    this.f39002H.c(mVar, oVar);
+                    this.f39070H.c(mVar, oVar);
                 }
-                this.f39003I = item;
+                this.f39071I = item;
                 if (item != null) {
-                    this.f39002H.l(mVar, item);
+                    this.f39070H.p(mVar, item);
                 }
             }
         }
@@ -70,26 +70,26 @@ public final class F0 extends C4706p0 {
     @Override // android.widget.ListView, android.widget.AbsListView, android.view.View, android.view.KeyEvent.Callback
     public final boolean onKeyDown(int i, KeyEvent keyEvent) {
         ListMenuItemView listMenuItemView = (ListMenuItemView) getSelectedView();
-        if (listMenuItemView != null && i == this.f39000F) {
+        if (listMenuItemView != null && i == this.f39068F) {
             if (listMenuItemView.isEnabled() && listMenuItemView.getItemData().hasSubMenu()) {
                 performItemClick(listMenuItemView, getSelectedItemPosition(), getSelectedItemId());
             }
             return true;
         }
-        if (listMenuItemView == null || i != this.f39001G) {
+        if (listMenuItemView == null || i != this.f39069G) {
             return super.onKeyDown(i, keyEvent);
         }
         setSelection(-1);
         ListAdapter adapter = getAdapter();
-        (adapter instanceof HeaderViewListAdapter ? (C4653j) ((HeaderViewListAdapter) adapter).getWrappedAdapter() : (C4653j) adapter).f38797a.c(false);
+        (adapter instanceof HeaderViewListAdapter ? (C4664j) ((HeaderViewListAdapter) adapter).getWrappedAdapter() : (C4664j) adapter).f38724a.c(false);
         return true;
     }
 
     public void setHoverListener(C0 c02) {
-        this.f39002H = c02;
+        this.f39070H = c02;
     }
 
-    @Override // m.C4706p0, android.widget.AbsListView
+    @Override // m.C4719p0, android.widget.AbsListView
     public /* bridge */ /* synthetic */ void setSelector(Drawable drawable) {
         super.setSelector(drawable);
     }

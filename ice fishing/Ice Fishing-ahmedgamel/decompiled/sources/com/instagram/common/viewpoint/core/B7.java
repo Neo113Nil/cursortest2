@@ -28,10 +28,10 @@ public final class B7 {
     public int A00 = 0;
     public volatile long A05 = -1;
 
-    public static String A05(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A06, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 74);
+    public static String A05(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A06, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 74);
         }
         return new String(copyOfRange);
     }
@@ -43,30 +43,30 @@ public final class B7 {
     /* JADX WARN: Failed to parse debug info
     java.lang.ArrayIndexOutOfBoundsException
      */
-    private void A0C(boolean z3, C1996jQ c1996jQ, EnumC1993jL enumC1993jL, String str, B0 b02) {
-        if (A0I(z3, c1996jQ) && A0G(str, c1996jQ)) {
-            boolean z6 = true;
+    private void A0C(boolean z6, C2016jQ c2016jQ, EnumC2013jL enumC2013jL, String str, B0 b02) {
+        if (A0I(z6, c2016jQ) && A0G(str, c2016jQ)) {
+            boolean z9 = true;
             synchronized (this) {
-                if (this.A00 < c1996jQ.A07) {
+                if (this.A00 < c2016jQ.A07) {
                     Set<B0> set = this.A04.get(str);
                     if (set == null) {
                         set = A06();
                         this.A04.put(str, set);
                     }
                     if (set.contains(b02)) {
-                        z6 = false;
-                    } else if (((z3 && c1996jQ.A0N) || (!z3 && c1996jQ.A0M)) && set.size() < c1996jQ.A06) {
+                        z9 = false;
+                    } else if (((z6 && c2016jQ.A0N) || (!z6 && c2016jQ.A0M)) && set.size() < c2016jQ.A06) {
                         set.add(b02);
                         this.A00++;
-                        z6 = false;
+                        z9 = false;
                     }
                 }
-                if (!z6) {
+                if (!z9) {
                     try {
                         try {
                             this.A05 = SystemClock.elapsedRealtime();
                             b02.reset();
-                            A03().A09(enumC1993jL, b02.hashCode());
+                            A03().A09(enumC2013jL, b02.hashCode());
                             return;
                         } catch (IllegalStateException unused) {
                             A0B(str, b02);
@@ -78,13 +78,13 @@ public final class B7 {
             }
         }
         try {
-            if (!c1996jQ.A0R || (!z3 && !c1996jQ.A0Q)) {
+            if (!c2016jQ.A0R || (!z6 && !c2016jQ.A0Q)) {
                 b02.stop();
             }
         } finally {
-            A03().A08(enumC1993jL, b02.hashCode());
+            A03().A08(enumC2013jL, b02.hashCode());
             b02.AHb();
-            A03().A07(enumC1993jL, b02.hashCode());
+            A03().A07(enumC2013jL, b02.hashCode());
         }
     }
 
@@ -93,9 +93,9 @@ public final class B7 {
         A08 = new B7();
     }
 
-    private B0 A01(boolean z3, C1996jQ c1996jQ, EnumC1993jL enumC1993jL, String str) throws MediaCodecInitializationException {
+    private B0 A01(boolean z6, C2016jQ c2016jQ, EnumC2013jL enumC2013jL, String str) throws MediaCodecInitializationException {
         B0 A03;
-        if (A0I(z3, c1996jQ) && A0G(str, c1996jQ)) {
+        if (A0I(z6, c2016jQ) && A0G(str, c2016jQ)) {
             synchronized (this) {
                 Set<B0> set = this.A04.get(str);
                 if (set != null && !set.isEmpty()) {
@@ -103,14 +103,14 @@ public final class B7 {
                     Iterator<B0> it = set.iterator();
                     B0 ret = it.next();
                     it.remove();
-                    A03().A0A(z3, str, enumC1993jL, ret.hashCode());
+                    A03().A0A(z6, str, enumC2013jL, ret.hashCode());
                     return ret;
                 }
             }
         }
         try {
-            C1991jJ A05 = A03().A05(z3, str, enumC1993jL);
-            A03 = this.A03.A03(z3, str);
+            C2011jJ A05 = A03().A05(z6, str, enumC2013jL);
+            A03 = this.A03.A03(z6, str);
             A03().A06(A05, A03.hashCode());
             return A03;
         } catch (Exception e9) {
@@ -152,11 +152,11 @@ public final class B7 {
         }
     }
 
-    private void A0A(C1996jQ c1996jQ) {
+    private void A0A(C2016jQ c2016jQ) {
         if (this.A02 == null) {
             synchronized (this) {
                 if (this.A02 == null) {
-                    this.A02 = Boolean.valueOf(c1996jQ.A0S);
+                    this.A02 = Boolean.valueOf(c2016jQ.A0S);
                     if (this.A02.booleanValue()) {
                         this.A04 = new ConcurrentHashMap();
                     }
@@ -184,31 +184,31 @@ public final class B7 {
         return str.equals(A05(0, 22, 10));
     }
 
-    public static boolean A0G(String str, C1996jQ c1996jQ) {
-        if (A0E(str) && c1996jQ.A0C) {
+    public static boolean A0G(String str, C2016jQ c2016jQ) {
+        if (A0E(str) && c2016jQ.A0C) {
             return false;
         }
         return true;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public boolean A0I(boolean z3, C1996jQ c1996jQ) {
-        if (c1996jQ.A0E && this.A05 != -1 && SystemClock.elapsedRealtime() - this.A05 > f.f7187a) {
+    public boolean A0I(boolean z6, C2016jQ c2016jQ) {
+        if (c2016jQ.A0E && this.A05 != -1 && SystemClock.elapsedRealtime() - this.A05 > f.f7973a) {
             return false;
         }
-        return A0J(z3, c1996jQ);
+        return A0J(z6, c2016jQ);
     }
 
-    public static boolean A0J(boolean z3, C1996jQ c1996jQ) {
-        return (z3 && c1996jQ.A0N) || (!z3 && c1996jQ.A0M);
+    public static boolean A0J(boolean z6, C2016jQ c2016jQ) {
+        return (z6 && c2016jQ.A0N) || (!z6 && c2016jQ.A0M);
     }
 
-    public final B0 A0K(boolean z3, C1996jQ c1996jQ, MediaCodecPoolTracker mediaCodecPoolTracker, EnumC1993jL enumC1993jL, String str) throws MediaCodecInitializationException {
+    public final B0 A0K(boolean z6, C2016jQ c2016jQ, MediaCodecPoolTracker mediaCodecPoolTracker, EnumC2013jL enumC2013jL, String str) throws MediaCodecInitializationException {
         B0 A02;
         A09(mediaCodecPoolTracker);
-        A0A(c1996jQ);
-        if (c1996jQ.A0K) {
-            A02 = this.A03.A02(z3, c1996jQ, enumC1993jL, str);
+        A0A(c2016jQ);
+        if (c2016jQ.A0K) {
+            A02 = this.A03.A02(z6, c2016jQ, enumC2013jL, str);
             String[] strArr = A07;
             if (strArr[5].length() == strArr[0].length()) {
                 throw new RuntimeException();
@@ -218,15 +218,15 @@ public final class B7 {
             strArr2[1] = "BAFCEyHtTeugEvQpUcdazZ0OUcRhptwZ";
             return A02;
         }
-        return A01(z3, c1996jQ, enumC1993jL, str);
+        return A01(z6, c2016jQ, enumC2013jL, str);
     }
 
-    public final void A0L(boolean z3, C1996jQ c1996jQ, MediaCodecPoolTracker mediaCodecPoolTracker, EnumC1993jL enumC1993jL, String str, B0 b02) {
+    public final void A0L(boolean z6, C2016jQ c2016jQ, MediaCodecPoolTracker mediaCodecPoolTracker, EnumC2013jL enumC2013jL, String str, B0 b02) {
         A09(mediaCodecPoolTracker);
-        if (c1996jQ.A0K) {
-            this.A03.A0A(z3, c1996jQ, enumC1993jL, str, b02);
+        if (c2016jQ.A0K) {
+            this.A03.A0A(z6, c2016jQ, enumC2013jL, str, b02);
         } else {
-            A0C(z3, c1996jQ, enumC1993jL, str, b02);
+            A0C(z6, c2016jQ, enumC2013jL, str, b02);
         }
     }
 }

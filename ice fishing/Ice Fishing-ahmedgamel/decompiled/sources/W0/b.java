@@ -1,66 +1,67 @@
 package W0;
 
-import J0.s;
+import J0.r;
 import S0.g;
 import S0.i;
 import S0.l;
 import S0.p;
+import S0.s;
+import Z2.d;
 import android.database.Cursor;
 import androidx.work.impl.WorkDatabase_Impl;
-import com.bumptech.glide.e;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.ArrayList;
 import java.util.Iterator;
 import kotlin.jvm.internal.h;
-import u0.C5059i;
-import v7.AbstractC5129j;
+import u0.C5060i;
+import v7.AbstractC5119j;
 
 /* loaded from: classes.dex */
 public abstract class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f3402a;
+    public static final String f3532a;
 
     static {
-        String f3 = s.f("DiagnosticsWrkr");
-        h.d(f3, "tagWithPrefix(\"DiagnosticsWrkr\")");
-        f3402a = f3;
+        String f2 = r.f("DiagnosticsWrkr");
+        h.d(f2, "tagWithPrefix(\"DiagnosticsWrkr\")");
+        f3532a = f2;
     }
 
-    public static final String a(l lVar, S0.s sVar, i iVar, ArrayList arrayList) {
+    public static final String a(l lVar, s sVar, i iVar, ArrayList arrayList) {
         String str;
         StringBuilder sb = new StringBuilder("\n Id \t Class Name\t Job Id\t State\t Unique Name\t Tags\t");
         Iterator it = arrayList.iterator();
         while (it.hasNext()) {
             p pVar = (p) it.next();
-            g h9 = iVar.h(e.c(pVar));
-            Integer valueOf = h9 != null ? Integer.valueOf(h9.f2785c) : null;
+            g c9 = iVar.c(d.k(pVar));
+            Integer valueOf = c9 != null ? Integer.valueOf(c9.f2914c) : null;
             lVar.getClass();
-            C5059i a9 = C5059i.a(1, "SELECT name FROM workname WHERE work_spec_id=?");
-            String str2 = pVar.f2808a;
+            C5060i a9 = C5060i.a(1, "SELECT name FROM workname WHERE work_spec_id=?");
+            String str2 = pVar.f2937a;
             if (str2 == null) {
                 a9.o(1);
             } else {
                 a9.c(1, str2);
             }
-            WorkDatabase_Impl workDatabase_Impl = (WorkDatabase_Impl) lVar.f2797u;
+            WorkDatabase_Impl workDatabase_Impl = (WorkDatabase_Impl) lVar.f2926u;
             workDatabase_Impl.b();
-            Cursor m4 = workDatabase_Impl.m(a9);
+            Cursor m9 = workDatabase_Impl.m(a9);
             try {
-                ArrayList arrayList2 = new ArrayList(m4.getCount());
-                while (m4.moveToNext()) {
-                    arrayList2.add(m4.isNull(0) ? null : m4.getString(0));
+                ArrayList arrayList2 = new ArrayList(m9.getCount());
+                while (m9.moveToNext()) {
+                    arrayList2.add(m9.isNull(0) ? null : m9.getString(0));
                 }
-                m4.close();
+                m9.close();
                 a9.j();
-                String E8 = AbstractC5129j.E(arrayList2, ",", null, null, null, 62);
-                String E9 = AbstractC5129j.E(sVar.k(str2), ",", null, null, null, 62);
-                StringBuilder j6 = AbstractC4404f.j("\n", str2, "\t ");
-                j6.append(pVar.f2810c);
-                j6.append("\t ");
-                j6.append(valueOf);
-                j6.append("\t ");
-                switch (pVar.f2809b) {
+                String C8 = AbstractC5119j.C(arrayList2, ",", null, null, null, 62);
+                String C9 = AbstractC5119j.C(sVar.i(str2), ",", null, null, null, 62);
+                StringBuilder l9 = Wv.l("\n", str2, "\t ");
+                l9.append(pVar.f2939c);
+                l9.append("\t ");
+                l9.append(valueOf);
+                l9.append("\t ");
+                switch (pVar.f2938b) {
                     case 1:
                         str = "ENQUEUED";
                         break;
@@ -82,15 +83,15 @@ public abstract class b {
                     default:
                         throw null;
                 }
-                j6.append(str);
-                j6.append("\t ");
-                j6.append(E8);
-                j6.append("\t ");
-                j6.append(E9);
-                j6.append('\t');
-                sb.append(j6.toString());
+                l9.append(str);
+                l9.append("\t ");
+                l9.append(C8);
+                l9.append("\t ");
+                l9.append(C9);
+                l9.append('\t');
+                sb.append(l9.toString());
             } catch (Throwable th) {
-                m4.close();
+                m9.close();
                 a9.j();
                 throw th;
             }

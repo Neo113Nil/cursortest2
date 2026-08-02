@@ -21,46 +21,46 @@ import org.json.JSONObject;
 public class r {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f16873a = "r";
+    private static final String f17660a = "r";
 
     public static class a implements Comparable<a> {
 
         /* renamed from: a, reason: collision with root package name */
-        int f16874a;
+        int f17661a;
 
         /* renamed from: b, reason: collision with root package name */
-        ATCustomContentInfo f16875b;
+        ATCustomContentInfo f17662b;
 
         /* renamed from: c, reason: collision with root package name */
-        double f16876c;
+        double f17663c;
 
         /* renamed from: d, reason: collision with root package name */
-        com.anythink.core.common.h.c f16877d;
+        com.anythink.core.common.h.c f17664d;
 
-        public a(int i, ATCustomContentInfo aTCustomContentInfo, double d2, com.anythink.core.common.h.c cVar) {
-            this.f16874a = i;
-            this.f16875b = aTCustomContentInfo;
-            this.f16876c = d2;
-            this.f16877d = cVar;
+        public a(int i, ATCustomContentInfo aTCustomContentInfo, double d9, com.anythink.core.common.h.c cVar) {
+            this.f17661a = i;
+            this.f17662b = aTCustomContentInfo;
+            this.f17663c = d9;
+            this.f17664d = cVar;
         }
 
         private int a(a aVar) {
-            double d2 = this.f16876c;
-            double d9 = aVar.f16876c;
-            if (d2 > d9) {
+            double d9 = this.f17663c;
+            double d10 = aVar.f17663c;
+            if (d9 > d10) {
                 return -1;
             }
-            return d2 < d9 ? 1 : 0;
+            return d9 < d10 ? 1 : 0;
         }
 
         @Override // java.lang.Comparable
         public final /* bridge */ /* synthetic */ int compareTo(a aVar) {
-            double d2 = this.f16876c;
-            double d9 = aVar.f16876c;
-            if (d2 > d9) {
+            double d9 = this.f17663c;
+            double d10 = aVar.f17663c;
+            if (d9 > d10) {
                 return -1;
             }
-            return d2 < d9 ? 1 : 0;
+            return d9 < d10 ? 1 : 0;
         }
     }
 
@@ -95,7 +95,7 @@ public class r {
         Objects.toString(list);
         long elapsedRealtime = SystemClock.elapsedRealtime();
         if (list == null || list.size() == 0) {
-            Log.e(f16873a, "List<ATCustomContentInfo> can not be empty");
+            Log.e(f17660a, "List<ATCustomContentInfo> can not be empty");
             return null;
         }
         ArrayList arrayList = new ArrayList(list);
@@ -110,9 +110,9 @@ public class r {
                 try {
                     String customContentString = aTCustomContentInfo.getCustomContentString();
                     double customContentDouble = aTCustomContentInfo.getCustomContentDouble();
-                    double d2 = 0.0d;
+                    double d9 = 0.0d;
                     if (customContentDouble > 0.0d) {
-                        d2 = customContentDouble;
+                        d9 = customContentDouble;
                         i = 2;
                         cVar2 = null;
                     } else {
@@ -139,7 +139,7 @@ public class r {
                             try {
                                 cVar.toString();
                                 cVar2 = cVar;
-                                d2 = cVar.e().getUnitGroupInfo().D();
+                                d9 = cVar.e().getUnitGroupInfo().D();
                                 i = 1;
                             } catch (Throwable th2) {
                                 th = th2;
@@ -150,7 +150,7 @@ public class r {
                         cVar2 = cVar;
                         i = 0;
                     }
-                    linkedList.add(new a(i, aTCustomContentInfo, d2, cVar2));
+                    linkedList.add(new a(i, aTCustomContentInfo, d9, cVar2));
                 } catch (Throwable th3) {
                     th3.printStackTrace();
                 }
@@ -162,19 +162,19 @@ public class r {
         Collections.sort(linkedList);
         JSONArray jSONArray = new JSONArray();
         ArrayList arrayList2 = new ArrayList();
-        double d9 = -1.0d;
+        double d10 = -1.0d;
         String str = "";
-        int i6 = 0;
+        int i4 = 0;
         ATCustomContentInfo aTCustomContentInfo2 = null;
         for (a aVar : linkedList) {
             if (aVar != null) {
-                ATCustomContentInfo aTCustomContentInfo3 = aVar.f16875b;
-                double d10 = d9;
-                double d11 = aVar.f16876c;
-                com.anythink.core.common.h.c cVar3 = aVar.f16877d;
+                ATCustomContentInfo aTCustomContentInfo3 = aVar.f17662b;
+                double d11 = d10;
+                double d12 = aVar.f17663c;
+                com.anythink.core.common.h.c cVar3 = aVar.f17664d;
                 if (aTCustomContentInfo2 == null) {
-                    i6 = aVar.f16874a;
-                    d10 = d11;
+                    i4 = aVar.f17661a;
+                    d11 = d12;
                     str = aTCustomContentInfo3.getCustomContentString();
                     aTCustomContentInfo2 = aTCustomContentInfo3;
                 }
@@ -195,25 +195,25 @@ public class r {
                     } else {
                         j6 = elapsedRealtime;
                     }
-                    jSONObject.put(e.a.f12068h, String.valueOf(d11));
-                    if (aVar.f16874a != 2) {
+                    jSONObject.put(e.a.f12854h, String.valueOf(d12));
+                    if (aVar.f17661a != 2) {
                         jSONObject.put(com.anythink.core.common.m.e.bk, aTCustomContentInfo3.getCustomContentString());
-                        com.anythink.core.common.h.n i9 = cVar3 != null ? cVar3.i() : null;
-                        jSONObject.put("req_id", i9 != null ? i9.aJ() : "");
-                        jSONObject.put("network_firm_id", i9 != null ? i9.Y() : 0);
-                        jSONObject.put("adsource_id", i9 != null ? i9.M() : "");
-                        jSONObject.put("adsource_isheaderbidding", (i9 == null || !i9.K()) ? 0 : 1);
-                        jSONObject.put("network_placement_id", i9 != null ? i9.y() : "");
+                        com.anythink.core.common.h.n i6 = cVar3 != null ? cVar3.i() : null;
+                        jSONObject.put("req_id", i6 != null ? i6.aJ() : "");
+                        jSONObject.put("network_firm_id", i6 != null ? i6.Y() : 0);
+                        jSONObject.put("adsource_id", i6 != null ? i6.M() : "");
+                        jSONObject.put("adsource_isheaderbidding", (i6 == null || !i6.K()) ? 0 : 1);
+                        jSONObject.put("network_placement_id", i6 != null ? i6.y() : "");
                     }
                     jSONArray.put(jSONObject);
                 } catch (Throwable unused2) {
                     j6 = elapsedRealtime;
                 }
-                d9 = d10;
+                d10 = d11;
                 elapsedRealtime = j6;
             }
         }
-        com.anythink.core.common.h.e eVar = new com.anythink.core.common.h.e(jSONArray, i6, i6 == 2 ? String.valueOf(d9) : i6 == 1 ? str : null, SystemClock.elapsedRealtime() - elapsedRealtime);
+        com.anythink.core.common.h.e eVar = new com.anythink.core.common.h.e(jSONArray, i4, i4 == 2 ? String.valueOf(d10) : i4 == 1 ? str : null, SystemClock.elapsedRealtime() - elapsedRealtime);
         com.anythink.core.common.h.n nVar = new com.anythink.core.common.h.n();
         nVar.a(eVar);
         com.anythink.core.common.u.c.a(com.anythink.core.common.d.t.b().g()).a(26, nVar);

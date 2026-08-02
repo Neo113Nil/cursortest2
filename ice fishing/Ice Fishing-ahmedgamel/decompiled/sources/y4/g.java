@@ -2,12 +2,12 @@ package y4;
 
 import f8.y;
 import java.util.List;
-import v7.C5135p;
+import v7.C5125p;
 
 /* loaded from: classes2.dex */
 public final class g {
     public static final a Companion = new a(null);
-    private static final g EMPTY = new g(C5135p.f41442n, null);
+    private static final g EMPTY = new g(C5125p.f41221n, null);
     private final List<String> enabledKeys;
     private final y metadata;
 
@@ -76,7 +76,7 @@ public final class g {
     public int hashCode() {
         int hashCode = this.enabledKeys.hashCode() * 31;
         y yVar = this.metadata;
-        return hashCode + (yVar == null ? 0 : yVar.f37583n.hashCode());
+        return hashCode + (yVar == null ? 0 : yVar.f37545n.hashCode());
     }
 
     public String toString() {

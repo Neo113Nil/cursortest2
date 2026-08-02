@@ -8,10 +8,10 @@ import android.hardware.SensorEventListener;
 public abstract class d implements SensorEventListener {
 
     /* renamed from: a, reason: collision with root package name */
-    public long f6139a = 0;
+    public long f6925a = 0;
 
     /* renamed from: b, reason: collision with root package name */
-    private long f6140b = com.anythink.basead.exoplayer.i.a.f7883f;
+    private long f6926b = com.anythink.basead.exoplayer.i.a.f8669f;
 
     public abstract boolean a(SensorEvent sensorEvent);
 
@@ -22,9 +22,9 @@ public abstract class d implements SensorEventListener {
     @Override // android.hardware.SensorEventListener
     public void onSensorChanged(SensorEvent sensorEvent) {
         long currentTimeMillis = System.currentTimeMillis();
-        if (currentTimeMillis - this.f6139a <= this.f6140b || !a(sensorEvent)) {
+        if (currentTimeMillis - this.f6925a <= this.f6926b || !a(sensorEvent)) {
             return;
         }
-        this.f6139a = currentTimeMillis;
+        this.f6925a = currentTimeMillis;
     }
 }

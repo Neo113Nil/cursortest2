@@ -12,8 +12,8 @@ public class MgComparedResult {
     private final boolean isMgWin;
     private final MgAdInfo mgAdInfo;
 
-    private MgComparedResult(boolean z3) {
-        this(z3, null);
+    private MgComparedResult(boolean z6) {
+        this(z6, null);
     }
 
     public static MgComparedResult create() {
@@ -48,25 +48,25 @@ public class MgComparedResult {
         return "MgComparedResult{isMgWin=" + this.isMgWin + ", mgAdInfo=" + this.mgAdInfo + ", cpCostTime=" + this.cpCostTime + '}';
     }
 
-    private MgComparedResult(boolean z3, MgAdInfo mgAdInfo) {
-        this.isMgWin = z3;
+    private MgComparedResult(boolean z6, MgAdInfo mgAdInfo) {
+        this.isMgWin = z6;
         this.mgAdInfo = mgAdInfo;
     }
 
-    public static MgComparedResult create(bv bvVar, MgAdInfo mgAdInfo, long j6, boolean z3) {
+    public static MgComparedResult create(bv bvVar, MgAdInfo mgAdInfo, long j6, boolean z6) {
         try {
             double a9 = p.a(bvVar);
-            boolean z6 = (mgAdInfo != null ? mgAdInfo.getUSDEcpm() : 0.0d) > a9;
+            boolean z9 = (mgAdInfo != null ? mgAdInfo.getUSDEcpm() : 0.0d) > a9;
             if (bvVar != null && bvVar.br()) {
-                z6 = false;
+                z9 = false;
             }
             if (mgAdInfo != null) {
                 mgAdInfo.getCurrency();
             }
-            MgComparedResult mgComparedResult = new MgComparedResult(z6, mgAdInfo);
+            MgComparedResult mgComparedResult = new MgComparedResult(z9, mgAdInfo);
             mgComparedResult.isCompared = MgAdInfo.isMgAdInfoValid(mgAdInfo);
             mgComparedResult.cpCostTime = j6;
-            mgComparedResult.isCpTimeout = z3;
+            mgComparedResult.isCpTimeout = z6;
             mgComparedResult.cpPrice = a9;
             return mgComparedResult;
         } catch (Throwable th) {

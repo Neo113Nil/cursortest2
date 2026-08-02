@@ -1,53 +1,54 @@
 package com.google.android.gms.internal.ads;
 
 import java.util.concurrent.ExecutionException;
+import w.AbstractC5128c;
 
 /* loaded from: classes2.dex */
 public abstract class ZC extends HD implements Runnable {
 
     /* renamed from: D, reason: collision with root package name */
-    public static final /* synthetic */ int f28851D = 0;
+    public static final /* synthetic */ int f29631D = 0;
 
     /* renamed from: A, reason: collision with root package name */
-    public N3.a f28852A;
+    public P3.a f29632A;
 
     /* renamed from: B, reason: collision with root package name */
-    public Class f28853B;
+    public Class f29633B;
 
     /* renamed from: C, reason: collision with root package name */
-    public Object f28854C;
+    public Object f29634C;
 
-    public ZC(N3.a aVar, Class cls, Object obj) {
+    public ZC(P3.a aVar, Class cls, Object obj) {
         aVar.getClass();
-        this.f28852A = aVar;
-        this.f28853B = cls;
-        this.f28854C = obj;
+        this.f29632A = aVar;
+        this.f29633B = cls;
+        this.f29634C = obj;
     }
 
-    @Override // com.google.android.gms.internal.ads.AbstractC3287hD
+    @Override // com.google.android.gms.internal.ads.AbstractC3310hD
     public final void f() {
-        o(this.f28852A);
-        this.f28852A = null;
-        this.f28853B = null;
-        this.f28854C = null;
+        o(this.f29632A);
+        this.f29632A = null;
+        this.f29633B = null;
+        this.f29634C = null;
     }
 
-    @Override // com.google.android.gms.internal.ads.AbstractC3287hD
+    @Override // com.google.android.gms.internal.ads.AbstractC3310hD
     public final String g() {
         String str;
-        N3.a aVar = this.f28852A;
-        Class cls = this.f28853B;
-        Object obj = this.f28854C;
-        String g4 = super.g();
+        P3.a aVar = this.f29632A;
+        Class cls = this.f29633B;
+        Object obj = this.f29634C;
+        String g9 = super.g();
         if (aVar != null) {
             String obj2 = aVar.toString();
-            str = D.y.s(new StringBuilder(obj2.length() + 16), "inputFuture=[", obj2, "], ");
+            str = D.x.p(new StringBuilder(obj2.length() + 16), "inputFuture=[", obj2, "], ");
         } else {
             str = "";
         }
         if (cls == null || obj == null) {
-            if (g4 != null) {
-                return str.concat(g4);
+            if (g9 != null) {
+                return str.concat(g9);
             }
             return null;
         }
@@ -56,8 +57,8 @@ public abstract class ZC extends HD implements Runnable {
         int length2 = obj3.length();
         String obj4 = obj.toString();
         StringBuilder sb = new StringBuilder(obj4.length() + length + 15 + length2 + 13 + 1);
-        u1.h.i(sb, str, "exceptionType=[", obj3, "], fallback=[");
-        return u1.h.g(sb, obj4, "]");
+        AbstractC5128c.h(sb, str, "exceptionType=[", obj3, "], fallback=[");
+        return Wv.i(sb, obj4, "]");
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -69,22 +70,22 @@ public abstract class ZC extends HD implements Runnable {
     */
     public final void run() {
         Object obj;
-        N3.a aVar = this.f28852A;
-        Class cls = this.f28853B;
-        Object obj2 = this.f28854C;
-        if (((obj2 == null) || ((aVar == 0) | (cls == null))) || (this.f33220n instanceof C2911aD)) {
+        P3.a aVar = this.f29632A;
+        Class cls = this.f29633B;
+        Object obj2 = this.f29634C;
+        if (((obj2 == null) || ((aVar == 0) | (cls == null))) || (this.f34004n instanceof C2934aD)) {
             return;
         }
-        this.f28852A = null;
+        this.f29632A = null;
         try {
-            th = aVar instanceof AbstractC3019cE ? ((AbstractC3019cE) aVar).b() : null;
+            th = aVar instanceof AbstractC3042cE ? ((AbstractC3042cE) aVar).b() : null;
         } catch (ExecutionException e9) {
             Throwable cause = e9.getCause();
             if (cause == null) {
                 String valueOf = String.valueOf(aVar.getClass());
                 String valueOf2 = String.valueOf(e9.getClass());
                 StringBuilder sb = new StringBuilder(valueOf2.length() + valueOf.length() + 19 + 16);
-                u1.h.i(sb, "Future type ", valueOf, " threw ", valueOf2);
+                AbstractC5128c.h(sb, "Future type ", valueOf, " threw ", valueOf2);
                 sb.append(" without a cause");
                 cause = new NullPointerException(sb.toString());
             }
@@ -103,10 +104,10 @@ public abstract class ZC extends HD implements Runnable {
                 return;
             }
             try {
-                Object u3 = u(obj2, th);
-                this.f28853B = null;
-                this.f28854C = null;
-                t(u3);
+                Object u6 = u(obj2, th);
+                this.f29633B = null;
+                this.f29634C = null;
+                t(u6);
                 return;
             } catch (Throwable th2) {
                 try {
@@ -116,8 +117,8 @@ public abstract class ZC extends HD implements Runnable {
                     e(th2);
                     return;
                 } finally {
-                    this.f28853B = null;
-                    this.f28854C = null;
+                    this.f29633B = null;
+                    this.f29634C = null;
                 }
             }
         }

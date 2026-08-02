@@ -11,24 +11,24 @@ import java.util.List;
 public final class a extends Exception {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final long f17952a = 1;
+    private static final long f18739a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    private List<c.b.a> f17953b;
+    private List<c.b.a> f18740b;
 
     private a(String str) {
         super(str);
-        this.f17953b = new ArrayList();
+        this.f18740b = new ArrayList();
     }
 
     private void a(c.b.a aVar) {
-        this.f17953b.add(aVar);
+        this.f18740b.add(aVar);
     }
 
     @Override // java.lang.Throwable
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        for (c.b.a aVar : this.f17953b) {
+        for (c.b.a aVar : this.f18740b) {
             sb.append(aVar.toString());
             sb.append(";");
             try {
@@ -36,7 +36,7 @@ public final class a extends Exception {
                 if (aVar.getCause() instanceof NoSuchFieldException) {
                     Field[] declaredFields = aVar.a().getDeclaredFields();
                     sb.append(aVar.a().getName());
-                    sb.append(j.f12378z);
+                    sb.append(j.f13164z);
                     sb.append(aVar.c());
                     sb.append(";");
                     while (i < declaredFields.length) {
@@ -67,11 +67,11 @@ public final class a extends Exception {
     }
 
     private void a(List<c.b.a> list) {
-        this.f17953b.addAll(list);
+        this.f18740b.addAll(list);
     }
 
     private List<c.b.a> a() {
-        return this.f17953b;
+        return this.f18740b;
     }
 
     private static a a(a aVar, a aVar2) {
@@ -82,8 +82,8 @@ public final class a extends Exception {
             return aVar;
         }
         a aVar3 = new a(aVar.getMessage() + ";" + aVar2.getMessage());
-        aVar3.a(aVar.f17953b);
-        aVar3.a(aVar2.f17953b);
+        aVar3.a(aVar.f18740b);
+        aVar3.a(aVar2.f18740b);
         return aVar3;
     }
 }

@@ -4,21 +4,21 @@ package com.anythink.basead.f.c;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static volatile b f8909a;
+    private static volatile b f9695a;
 
     public static boolean a() {
         try {
-            return f8909a != null;
+            return f9695a != null;
         } catch (Throwable unused) {
             return false;
         }
     }
 
     public static b b() {
-        return f8909a;
+        return f9695a;
     }
 
     public static void a(b bVar) {
-        f8909a = bVar;
+        f9695a = bVar;
     }
 }

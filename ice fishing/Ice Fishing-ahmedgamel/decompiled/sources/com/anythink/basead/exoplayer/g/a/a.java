@@ -29,33 +29,33 @@ public final class a implements a.InterfaceC0025a {
     };
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f7272a;
+    public final String f8058a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f7273b;
+    public final String f8059b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final long f7274c;
+    public final long f8060c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final long f7275d;
+    public final long f8061d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final long f7276e;
+    public final long f8062e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final byte[] f7277f;
+    public final byte[] f8063f;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f7278g;
+    private int f8064g;
 
     public a(String str, String str2, long j6, long j9, byte[] bArr, long j10) {
-        this.f7272a = str;
-        this.f7273b = str2;
-        this.f7274c = j6;
-        this.f7276e = j9;
-        this.f7277f = bArr;
-        this.f7275d = j10;
+        this.f8058a = str;
+        this.f8059b = str2;
+        this.f8060c = j6;
+        this.f8062e = j9;
+        this.f8063f = bArr;
+        this.f8061d = j10;
     }
 
     @Override // android.os.Parcelable
@@ -69,7 +69,7 @@ public final class a implements a.InterfaceC0025a {
         }
         if (obj != null && a.class == obj.getClass()) {
             a aVar = (a) obj;
-            if (this.f7275d == aVar.f7275d && this.f7274c == aVar.f7274c && this.f7276e == aVar.f7276e && af.a((Object) this.f7272a, (Object) aVar.f7272a) && af.a((Object) this.f7273b, (Object) aVar.f7273b) && Arrays.equals(this.f7277f, aVar.f7277f)) {
+            if (this.f8061d == aVar.f8061d && this.f8060c == aVar.f8060c && this.f8062e == aVar.f8062e && af.a((Object) this.f8058a, (Object) aVar.f8058a) && af.a((Object) this.f8059b, (Object) aVar.f8059b) && Arrays.equals(this.f8063f, aVar.f8063f)) {
                 return true;
             }
         }
@@ -77,41 +77,41 @@ public final class a implements a.InterfaceC0025a {
     }
 
     public final int hashCode() {
-        if (this.f7278g == 0) {
-            String str = this.f7272a;
+        if (this.f8064g == 0) {
+            String str = this.f8058a;
             int hashCode = ((str != null ? str.hashCode() : 0) + 527) * 31;
-            String str2 = this.f7273b;
+            String str2 = this.f8059b;
             int hashCode2 = (hashCode + (str2 != null ? str2.hashCode() : 0)) * 31;
-            long j6 = this.f7275d;
+            long j6 = this.f8061d;
             int i = (hashCode2 + ((int) (j6 ^ (j6 >>> 32)))) * 31;
-            long j9 = this.f7274c;
-            int i6 = (i + ((int) (j9 ^ (j9 >>> 32)))) * 31;
-            long j10 = this.f7276e;
-            this.f7278g = Arrays.hashCode(this.f7277f) + ((i6 + ((int) (j10 ^ (j10 >>> 32)))) * 31);
+            long j9 = this.f8060c;
+            int i4 = (i + ((int) (j9 ^ (j9 >>> 32)))) * 31;
+            long j10 = this.f8062e;
+            this.f8064g = Arrays.hashCode(this.f8063f) + ((i4 + ((int) (j10 ^ (j10 >>> 32)))) * 31);
         }
-        return this.f7278g;
+        return this.f8064g;
     }
 
     public final String toString() {
-        return "EMSG: scheme=" + this.f7272a + ", id=" + this.f7276e + ", value=" + this.f7273b;
+        return "EMSG: scheme=" + this.f8058a + ", id=" + this.f8062e + ", value=" + this.f8059b;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(this.f7272a);
-        parcel.writeString(this.f7273b);
-        parcel.writeLong(this.f7275d);
-        parcel.writeLong(this.f7274c);
-        parcel.writeLong(this.f7276e);
-        parcel.writeByteArray(this.f7277f);
+        parcel.writeString(this.f8058a);
+        parcel.writeString(this.f8059b);
+        parcel.writeLong(this.f8061d);
+        parcel.writeLong(this.f8060c);
+        parcel.writeLong(this.f8062e);
+        parcel.writeByteArray(this.f8063f);
     }
 
     public a(Parcel parcel) {
-        this.f7272a = parcel.readString();
-        this.f7273b = parcel.readString();
-        this.f7275d = parcel.readLong();
-        this.f7274c = parcel.readLong();
-        this.f7276e = parcel.readLong();
-        this.f7277f = parcel.createByteArray();
+        this.f8058a = parcel.readString();
+        this.f8059b = parcel.readString();
+        this.f8061d = parcel.readLong();
+        this.f8060c = parcel.readLong();
+        this.f8062e = parcel.readLong();
+        this.f8063f = parcel.createByteArray();
     }
 }

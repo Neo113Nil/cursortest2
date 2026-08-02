@@ -2,10 +2,10 @@ package com.instagram.common.viewpoint.core;
 
 @Deprecated
 /* loaded from: assets/audience_network/classes2.dex */
-public final class AW extends C2394qC {
-    public static final AW A00 = new C05972v().A0B();
+public final class AW extends C2414qC {
+    public static final AW A00 = new C06172v().A0B();
 
-    public AW(C05972v c05972v) {
-        super(c05972v);
+    public AW(C06172v c06172v) {
+        super(c06172v);
     }
 }

@@ -13,5 +13,5 @@ public interface o {
 
     StaticsBoundaryInterface getStatics();
 
-    String[] r();
+    String[] h();
 }

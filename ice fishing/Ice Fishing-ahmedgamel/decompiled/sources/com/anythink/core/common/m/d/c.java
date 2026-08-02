@@ -6,24 +6,24 @@ import android.text.TextUtils;
 public final class c extends d {
 
     /* renamed from: a, reason: collision with root package name */
-    String f14591a;
+    String f15377a;
 
     /* renamed from: c, reason: collision with root package name */
-    int f14593c;
+    int f15379c;
 
     /* renamed from: l, reason: collision with root package name */
-    private final String f14594l = "c";
+    private final String f15380l = "c";
 
     /* renamed from: b, reason: collision with root package name */
-    boolean f14592b = true;
+    boolean f15378b = true;
 
     public c(String str, int i) {
-        this.f14593c = 1;
-        this.f14591a = str;
+        this.f15379c = 1;
+        this.f15377a = str;
         if (i == 1000) {
-            this.f14593c = 1;
+            this.f15379c = 1;
         } else if (i == 1001) {
-            this.f14593c = 2;
+            this.f15379c = 2;
         }
     }
 
@@ -33,7 +33,7 @@ public final class c extends d {
 
     @Override // com.anythink.core.common.m.d.d
     public final int c() {
-        return this.f14593c;
+        return this.f15379c;
     }
 
     @Override // com.anythink.core.common.m.d.d
@@ -43,11 +43,11 @@ public final class c extends d {
 
     @Override // com.anythink.core.common.m.d.d
     public final byte[] e() {
-        return !TextUtils.isEmpty(this.f14591a) ? d.a(this.f14591a) : new byte[0];
+        return !TextUtils.isEmpty(this.f15377a) ? d.a(this.f15377a) : new byte[0];
     }
 
     @Override // com.anythink.core.common.m.d.d
     public final boolean f() {
-        return this.f14592b;
+        return this.f15378b;
     }
 }

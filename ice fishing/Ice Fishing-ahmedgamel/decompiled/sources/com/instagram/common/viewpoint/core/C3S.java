@@ -8,23 +8,23 @@ import android.widget.RelativeLayout;
 public final class C3S extends ED {
     public static String[] A04 = {"hk0dnqphYZ0B2FA2HHbeoaEOUC9cHUBv", "tTD1hmxYdA3U5n9t8Z20NsAIS", "BfpeWRttIDT9n", "BdF5VvNpfNEd8dAFz8yBB3tju8j2QPKu", "opIRFI8OjkHX6xnIsWRzCqWD0", "Ob0oYr4gU4dgC4EVWukqT8XlG8BtSCcB", "HPuRIIJ62FmEL4YF0ip1f4WrSa12U9bK", "7SB"};
     public final ImageView A00;
-    public final C1840gi A01;
+    public final C1860gi A01;
     public final UN<C4K> A02;
     public final UN<E3> A03;
 
-    public C3S(C1840gi c1840gi) {
-        this(c1840gi, false);
+    public C3S(C1860gi c1860gi) {
+        this(c1860gi, false);
     }
 
-    public C3S(C1840gi c1840gi, boolean z3) {
-        super(c1840gi);
+    public C3S(C1860gi c1860gi, boolean z6) {
+        super(c1860gi);
         ImageView.ScaleType scaleType;
         int color;
-        this.A03 = new C0843Dc(this);
-        this.A02 = new C0842Db(this);
-        this.A01 = c1840gi;
-        this.A00 = new ImageView(c1840gi);
-        if (!z3) {
+        this.A03 = new C0863Dc(this);
+        this.A02 = new C0862Db(this);
+        this.A01 = c1860gi;
+        this.A00 = new ImageView(c1860gi);
+        if (!z6) {
             scaleType = ImageView.ScaleType.FIT_CENTER;
             color = -16777216;
         } else {
@@ -65,23 +65,23 @@ public final class C3S extends ED {
     }
 
     @Override // android.widget.RelativeLayout, android.view.ViewGroup, android.view.View
-    public final void onLayout(boolean z3, int i, int i6, int i9, int i10) {
-        this.A00.layout(0, 0, i9 - i, i10 - i6);
+    public final void onLayout(boolean z6, int i, int i4, int i6, int i9) {
+        this.A00.layout(0, 0, i6 - i, i9 - i4);
     }
 
     public void setImage(String str) {
         setImage(str, null);
     }
 
-    public void setImage(String str, InterfaceC1496b8 interfaceC1496b8) {
+    public void setImage(String str, InterfaceC1516b8 interfaceC1516b8) {
         if (str == null) {
             setVisibility(8);
             return;
         }
         setVisibility(0);
         LM downloadImageTask = new LM(this.A00, this.A01).A04();
-        if (interfaceC1496b8 != null) {
-            downloadImageTask.A06(interfaceC1496b8);
+        if (interfaceC1516b8 != null) {
+            downloadImageTask.A06(interfaceC1516b8);
         }
         downloadImageTask.A07(str);
     }

@@ -9,14 +9,14 @@ import com.anythink.core.api.ErrorCode;
 public final class e implements ATCommonImpressionListener {
 
     /* renamed from: a, reason: collision with root package name */
-    f f23346a;
+    f f24133a;
 
     public e(f fVar) {
-        this.f23346a = fVar;
+        this.f24133a = fVar;
     }
 
     public final void a(int i) {
-        f fVar = this.f23346a;
+        f fVar = this.f24133a;
         if (fVar != null) {
             fVar.a(i);
         }
@@ -24,7 +24,7 @@ public final class e implements ATCommonImpressionListener {
 
     @Override // com.anythink.core.api.ATCommonImpressionListener
     public final void onAdClick() {
-        f fVar = this.f23346a;
+        f fVar = this.f24133a;
         if (fVar != null) {
             fVar.onSplashAdClicked();
         }
@@ -32,7 +32,7 @@ public final class e implements ATCommonImpressionListener {
 
     @Override // com.anythink.core.api.ATCommonImpressionListener
     public final void onAdDismiss() {
-        f fVar = this.f23346a;
+        f fVar = this.f24133a;
         if (fVar != null) {
             fVar.onSplashAdDismiss();
         }
@@ -40,7 +40,7 @@ public final class e implements ATCommonImpressionListener {
 
     @Override // com.anythink.core.api.ATCommonImpressionListener
     public final void onAdImpression() {
-        f fVar = this.f23346a;
+        f fVar = this.f24133a;
         if (fVar != null) {
             fVar.onSplashAdShow();
         }
@@ -56,7 +56,7 @@ public final class e implements ATCommonImpressionListener {
 
     @Override // com.anythink.core.api.ATCommonImpressionListener
     public final void onAdShowFail(String str, String str2) {
-        f fVar = this.f23346a;
+        f fVar = this.f24133a;
         if (fVar != null) {
             fVar.onSplashAdShowFail(ErrorCode.getErrorCode(ErrorCode.adShowError, str, str2));
         }
@@ -71,16 +71,16 @@ public final class e implements ATCommonImpressionListener {
     }
 
     @Override // com.anythink.core.api.ATCommonImpressionListener
-    public final void onDeeplinkCallback(boolean z3) {
-        f fVar = this.f23346a;
+    public final void onDeeplinkCallback(boolean z6) {
+        f fVar = this.f24133a;
         if (fVar != null) {
-            fVar.onDeeplinkCallback(z3);
+            fVar.onDeeplinkCallback(z6);
         }
     }
 
     @Override // com.anythink.core.api.ATCommonImpressionListener
     public final void onDownloadConfirm(Context context, ATNetworkConfirmInfo aTNetworkConfirmInfo) {
-        f fVar = this.f23346a;
+        f fVar = this.f24133a;
         if (fVar != null) {
             fVar.onDownloadConfirm(context, aTNetworkConfirmInfo);
         }

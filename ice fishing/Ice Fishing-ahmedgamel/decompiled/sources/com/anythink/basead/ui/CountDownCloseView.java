@@ -12,121 +12,121 @@ import android.util.TypedValue;
 public class CountDownCloseView extends CloseImageView {
 
     /* renamed from: a, reason: collision with root package name */
-    private Paint f9985a;
+    private Paint f10771a;
 
     /* renamed from: b, reason: collision with root package name */
-    private Paint f9986b;
+    private Paint f10772b;
 
     /* renamed from: c, reason: collision with root package name */
-    private float f9987c;
+    private float f10773c;
 
     /* renamed from: d, reason: collision with root package name */
-    private int f9988d;
+    private int f10774d;
 
     /* renamed from: e, reason: collision with root package name */
-    private int f9989e;
+    private int f10775e;
 
     /* renamed from: f, reason: collision with root package name */
-    private int f9990f;
+    private int f10776f;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f9991g;
+    private int f10777g;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f9992h;
+    private int f10778h;
     private RectF i;
 
     /* renamed from: j, reason: collision with root package name */
-    private float f9993j;
+    private float f10779j;
 
     /* renamed from: k, reason: collision with root package name */
-    private long f9994k;
+    private long f10780k;
 
     public CountDownCloseView(Context context) {
         this(context, null);
     }
 
     private void a(Context context) {
-        this.f9987c = TypedValue.applyDimension(1, 2.5f, context.getResources().getDisplayMetrics());
-        this.f9988d = Color.parseColor("#FF57575A");
-        this.f9989e = -1;
+        this.f10773c = TypedValue.applyDimension(1, 2.5f, context.getResources().getDisplayMetrics());
+        this.f10774d = Color.parseColor("#FF57575A");
+        this.f10775e = -1;
         Paint paint = new Paint();
-        this.f9985a = paint;
+        this.f10771a = paint;
         paint.setAntiAlias(true);
-        this.f9985a.setStrokeCap(Paint.Cap.ROUND);
-        this.f9985a.setStyle(Paint.Style.STROKE);
-        this.f9985a.setStrokeWidth(this.f9987c);
+        this.f10771a.setStrokeCap(Paint.Cap.ROUND);
+        this.f10771a.setStyle(Paint.Style.STROKE);
+        this.f10771a.setStrokeWidth(this.f10773c);
         Paint paint2 = new Paint();
-        this.f9986b = paint2;
+        this.f10772b = paint2;
         paint2.setAntiAlias(true);
-        this.f9986b.setColor(this.f9989e);
+        this.f10772b.setColor(this.f10775e);
         this.i = new RectF();
     }
 
     @Override // android.widget.ImageView, android.view.View
     public void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        if (this.f9993j < 360.0f) {
-            this.f9985a.setColor(this.f9988d);
-            canvas.drawArc(this.i, 0.0f, 360.0f, false, this.f9985a);
-            this.f9985a.setColor(this.f9989e);
-            canvas.drawArc(this.i, -90.0f, this.f9993j, false, this.f9985a);
+        if (this.f10779j < 360.0f) {
+            this.f10771a.setColor(this.f10774d);
+            canvas.drawArc(this.i, 0.0f, 360.0f, false, this.f10771a);
+            this.f10771a.setColor(this.f10775e);
+            canvas.drawArc(this.i, -90.0f, this.f10779j, false, this.f10771a);
         }
     }
 
     @Override // android.view.View
-    public void onSizeChanged(int i, int i6, int i9, int i10) {
-        super.onSizeChanged(i, i6, i9, i10);
-        this.f9990f = i;
-        this.f9991g = i6;
+    public void onSizeChanged(int i, int i4, int i6, int i9) {
+        super.onSizeChanged(i, i4, i6, i9);
+        this.f10776f = i;
+        this.f10777g = i4;
         a();
     }
 
     public void refresh(long j6) {
-        long j9 = this.f9994k;
+        long j9 = this.f10780k;
         if (j9 > 0) {
-            this.f9993j = ((j6 * 1.0f) / j9) * 360.0f;
+            this.f10779j = ((j6 * 1.0f) / j9) * 360.0f;
             postInvalidate();
         }
     }
 
     public void setDuration(long j6) {
-        this.f9994k = j6;
+        this.f10780k = j6;
     }
 
     public void setThickInPx(int i) {
-        float f3 = i;
-        this.f9987c = f3;
-        this.f9985a.setStrokeWidth(f3);
+        float f2 = i;
+        this.f10773c = f2;
+        this.f10771a.setStrokeWidth(f2);
         a();
     }
 
     public void setUnderRingColor(int i) {
-        this.f9988d = i;
+        this.f10774d = i;
     }
 
     public CountDownCloseView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f9987c = TypedValue.applyDimension(1, 2.5f, context.getResources().getDisplayMetrics());
-        this.f9988d = Color.parseColor("#FF57575A");
-        this.f9989e = -1;
+        this.f10773c = TypedValue.applyDimension(1, 2.5f, context.getResources().getDisplayMetrics());
+        this.f10774d = Color.parseColor("#FF57575A");
+        this.f10775e = -1;
         Paint paint = new Paint();
-        this.f9985a = paint;
+        this.f10771a = paint;
         paint.setAntiAlias(true);
-        this.f9985a.setStrokeCap(Paint.Cap.ROUND);
-        this.f9985a.setStyle(Paint.Style.STROKE);
-        this.f9985a.setStrokeWidth(this.f9987c);
+        this.f10771a.setStrokeCap(Paint.Cap.ROUND);
+        this.f10771a.setStyle(Paint.Style.STROKE);
+        this.f10771a.setStrokeWidth(this.f10773c);
         Paint paint2 = new Paint();
-        this.f9986b = paint2;
+        this.f10772b = paint2;
         paint2.setAntiAlias(true);
-        this.f9986b.setColor(this.f9989e);
+        this.f10772b.setColor(this.f10775e);
         this.i = new RectF();
     }
 
     private void a() {
-        float f3 = this.f9987c * 0.5f;
-        float f9 = 0.0f + f3;
-        this.i.set(f9, f9, this.f9990f - f3, this.f9991g - f3);
-        this.f9992h = ((int) this.i.width()) >> 1;
+        float f2 = this.f10773c * 0.5f;
+        float f9 = 0.0f + f2;
+        this.i.set(f9, f9, this.f10776f - f2, this.f10777g - f2);
+        this.f10778h = ((int) this.i.width()) >> 1;
     }
 }

@@ -1,21 +1,51 @@
 package com.google.android.gms.internal.ads;
 
+import android.media.MediaCodec;
+import android.media.MediaFormat;
 import android.os.Bundle;
+import android.view.Surface;
+import java.nio.ByteBuffer;
+import java.util.ArrayList;
 
 /* loaded from: classes2.dex */
 public interface MP {
-    void b(int i, C3834rN c3834rN, long j6, int i6);
+    void A(int i, int i4, int i6, long j6);
 
-    /* renamed from: c */
-    void mo12c();
+    void B(int i, long j6);
 
-    void d();
+    ByteBuffer D(int i);
 
-    void e();
+    ByteBuffer b(int i);
 
-    void g(Bundle bundle);
+    int d();
 
-    void h();
+    void g(ArrayList arrayList);
 
-    void i(int i, int i6, int i9, long j6);
+    MediaFormat h();
+
+    void i(int i, C3857rN c3857rN, long j6, int i4);
+
+    void k();
+
+    void l();
+
+    void m(Bundle bundle);
+
+    void o(Surface surface);
+
+    default boolean p(C4042ut c4042ut) {
+        return false;
+    }
+
+    void s();
+
+    void t(int i);
+
+    default void u(RunnableC3214fP runnableC3214fP) {
+        runnableC3214fP.run();
+    }
+
+    int v(MediaCodec.BufferInfo bufferInfo);
+
+    void y(int i);
 }

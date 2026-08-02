@@ -9,52 +9,52 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public final class b implements c.a {
 
     /* renamed from: a, reason: collision with root package name */
-    c.a f5755a;
+    c.a f6541a;
 
     /* renamed from: b, reason: collision with root package name */
-    boolean f5756b = false;
+    boolean f6542b = false;
 
     /* renamed from: c, reason: collision with root package name */
-    boolean f5757c = false;
+    boolean f6543c = false;
 
     /* renamed from: d, reason: collision with root package name */
-    boolean f5758d = false;
+    boolean f6544d = false;
 
     /* renamed from: e, reason: collision with root package name */
-    private final AtomicBoolean f5759e;
+    private final AtomicBoolean f6545e;
 
     /* renamed from: f, reason: collision with root package name */
-    private boolean f5760f;
+    private boolean f6546f;
 
     public b() {
         AtomicBoolean atomicBoolean = new AtomicBoolean(false);
-        this.f5759e = atomicBoolean;
-        this.f5760f = false;
+        this.f6545e = atomicBoolean;
+        this.f6546f = false;
         atomicBoolean.set(false);
-        this.f5760f = false;
+        this.f6546f = false;
         g();
     }
 
     private void g() {
-        this.f5756b = false;
-        this.f5757c = false;
-        this.f5758d = false;
+        this.f6542b = false;
+        this.f6543c = false;
+        this.f6544d = false;
     }
 
     public final void a(c.a aVar) {
-        this.f5755a = aVar;
+        this.f6541a = aVar;
     }
 
     @Override // com.anythink.basead.b.c.a
     public final void b() {
-        if (this.f5760f || this.f5757c) {
+        if (this.f6546f || this.f6543c) {
             return;
         }
-        this.f5757c = true;
+        this.f6543c = true;
         t.b().b(new Runnable() { // from class: com.anythink.basead.b.b.b.1
             @Override // java.lang.Runnable
             public final void run() {
-                c.a aVar = b.this.f5755a;
+                c.a aVar = b.this.f6541a;
                 if (aVar != null) {
                     aVar.b();
                 }
@@ -64,15 +64,15 @@ public final class b implements c.a {
 
     @Override // com.anythink.basead.b.c.a
     public final void c() {
-        this.f5759e.set(false);
-        if (this.f5760f || this.f5758d) {
+        this.f6545e.set(false);
+        if (this.f6546f || this.f6544d) {
             return;
         }
-        this.f5758d = true;
+        this.f6544d = true;
         t.b().b(new Runnable() { // from class: com.anythink.basead.b.b.b.2
             @Override // java.lang.Runnable
             public final void run() {
-                c.a aVar = b.this.f5755a;
+                c.a aVar = b.this.f6541a;
                 if (aVar != null) {
                     aVar.c();
                 }
@@ -81,44 +81,44 @@ public final class b implements c.a {
     }
 
     public final void d() {
-        this.f5759e.set(true);
+        this.f6545e.set(true);
         g();
     }
 
     public final boolean e() {
-        return this.f5759e.get();
+        return this.f6545e.get();
     }
 
     public final void f() {
-        this.f5755a = null;
-        this.f5759e.set(false);
-        this.f5760f = true;
+        this.f6541a = null;
+        this.f6545e.set(false);
+        this.f6546f = true;
     }
 
     @Override // com.anythink.basead.b.c.a
     public final void a() {
-        if (this.f5760f || this.f5756b) {
+        if (this.f6546f || this.f6542b) {
             return;
         }
-        this.f5756b = true;
-        c.a aVar = this.f5755a;
+        this.f6542b = true;
+        c.a aVar = this.f6541a;
         if (aVar != null) {
             aVar.a();
         }
     }
 
     @Override // com.anythink.basead.b.c.a
-    public final void a(boolean z3) {
+    public final void a(boolean z6) {
         c.a aVar;
-        if (this.f5760f || (aVar = this.f5755a) == null) {
+        if (this.f6546f || (aVar = this.f6541a) == null) {
             return;
         }
-        aVar.a(z3);
+        aVar.a(z6);
     }
 
     @Override // com.anythink.basead.b.c.a
     public final boolean a(String str, IOfferClickHandler iOfferClickHandler) {
-        c.a aVar = this.f5755a;
+        c.a aVar = this.f6541a;
         if (aVar != null) {
             return aVar.a(str, iOfferClickHandler);
         }

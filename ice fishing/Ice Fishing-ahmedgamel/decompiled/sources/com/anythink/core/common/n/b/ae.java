@@ -65,7 +65,7 @@ public abstract class ae {
             return new ae() { // from class: com.anythink.core.common.n.b.ae.2
 
                 /* renamed from: d, reason: collision with root package name */
-                final /* synthetic */ int f15496d = 0;
+                final /* synthetic */ int f16283d = 0;
 
                 @Override // com.anythink.core.common.n.b.ae
                 public final x a() {
@@ -79,7 +79,7 @@ public abstract class ae {
 
                 @Override // com.anythink.core.common.n.b.ae
                 public final void a(com.anythink.core.common.n.c.d dVar) {
-                    dVar.c(bArr, this.f15496d, i);
+                    dVar.c(bArr, this.f16283d, i);
                 }
             };
         }

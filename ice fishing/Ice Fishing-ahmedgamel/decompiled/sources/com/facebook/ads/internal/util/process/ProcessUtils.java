@@ -4,7 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Build;
 import android.text.TextUtils;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.lang.reflect.Field;
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -72,14 +72,14 @@ public final class ProcessUtils {
         if (processName.contains(":")) {
             processName = processName.split(":")[1];
         }
-        return AbstractC4404f.g(str, "_", processName);
+        return Wv.h(str, "_", processName);
     }
 
     public static boolean isRemoteRenderingProcess() {
         return sRemoteRenderingProcess.get();
     }
 
-    public static void setRemoteRenderingProcess(boolean z3) {
-        sRemoteRenderingProcess.set(z3);
+    public static void setRemoteRenderingProcess(boolean z6) {
+        sRemoteRenderingProcess.set(z6);
     }
 }

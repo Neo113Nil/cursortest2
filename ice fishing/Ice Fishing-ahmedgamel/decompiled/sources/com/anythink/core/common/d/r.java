@@ -13,14 +13,14 @@ import java.util.Map;
 public final class r {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f12714a = "anythink_notice_handler";
+    public static final String f13500a = "anythink_notice_handler";
 
     public static void a(String str, String str2, Map<String, Object> map) {
         try {
             com.anythink.core.common.h.n a9 = a(str, str2);
             if (a9 != null) {
                 if (ATSDK.isNetworkLogDebug()) {
-                    Log.i(f12714a, "notifyWin, placementId: " + str + ", format: " + str2 + ", extra: " + map);
+                    Log.i(f13500a, "notifyWin, placementId: " + str + ", format: " + str2 + ", extra: " + map);
                 }
                 if (map != null) {
                     Object obj = map.get("second_price");
@@ -46,15 +46,15 @@ public final class r {
         }
     }
 
-    public static void a(String str, String str2, String str3, double d2, Map<String, Object> map) {
+    public static void a(String str, String str2, String str3, double d9, Map<String, Object> map) {
         try {
             com.anythink.core.common.h.n a9 = a(str, str2);
             if (a9 != null) {
                 if (ATSDK.isNetworkLogDebug()) {
-                    Log.i(f12714a, "notifyLoss, placementId: " + str + ", format: " + str2 + ", lossCode: " + str3 + ", winnerPrice: " + d2 + ", extra: " + map);
+                    Log.i(f13500a, "notifyLoss, placementId: " + str + ", format: " + str2 + ", lossCode: " + str3 + ", winnerPrice: " + d9 + ", extra: " + map);
                 }
                 if (map != null) {
-                    a9.a(d2);
+                    a9.a(d9);
                     try {
                         a9.c(Integer.parseInt(str3));
                     } catch (Throwable unused) {
@@ -83,30 +83,30 @@ public final class r {
     }
 
     private static com.anythink.core.common.h.n a(String str, String str2) {
-        if (!t.b().f12747d) {
-            Log.e(f12714a, "SDK should be inited first!");
+        if (!t.b().f13533d) {
+            Log.e(f13500a, "SDK should be inited first!");
             return null;
         }
         if (TextUtils.isEmpty(str)) {
-            Log.e(f12714a, "Please put placementId!");
+            Log.e(f13500a, "Please put placementId!");
             return null;
         }
         com.anythink.core.common.f a9 = com.anythink.core.common.u.a().a(str, str2);
         if (a9 == null) {
-            Log.e(f12714a, "The \"" + str + "\" object has not been created yet!");
+            Log.e(f13500a, "The \"" + str + "\" object has not been created yet!");
             return null;
         }
-        Context g4 = t.b().g();
-        com.anythink.core.common.h.c a10 = a9.a(g4, false, false, (ae) null);
+        Context g9 = t.b().g();
+        com.anythink.core.common.h.c a10 = a9.a(g9, false, false, (ae) null);
         if (a10 != null) {
             return a10.i().af();
         }
-        com.anythink.core.d.l a11 = com.anythink.core.d.n.a(g4).a(str);
-        String h9 = a9.h();
-        if (TextUtils.isEmpty(h9)) {
-            h9 = "";
+        com.anythink.core.d.l a11 = com.anythink.core.d.n.a(g9).a(str);
+        String h3 = a9.h();
+        if (TextUtils.isEmpty(h3)) {
+            h3 = "";
         }
-        com.anythink.core.common.h.n a12 = aj.a(h9, str, a11, 0, 0, null, null, 0, a9.i());
+        com.anythink.core.common.h.n a12 = aj.a(h3, str, a11, 0, 0, null, null, 0, a9.i());
         if (a11 == null) {
             a12.K(str2);
         }

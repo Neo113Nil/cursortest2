@@ -1,6 +1,6 @@
 package com.anythink.core.common.n.b.a.b;
 
-import com.anythink.core.common.n.b.C0546a;
+import com.anythink.core.common.n.b.C0565a;
 import com.anythink.core.common.n.b.ad;
 import com.anythink.core.common.n.b.r;
 import com.anythink.core.common.n.b.v;
@@ -19,59 +19,59 @@ import javax.net.ssl.SSLSocketFactory;
 public final class j {
 
     /* renamed from: b, reason: collision with root package name */
-    static final /* synthetic */ boolean f15019b = true;
+    static final /* synthetic */ boolean f15806b = true;
 
     /* renamed from: a, reason: collision with root package name */
-    public e f15020a;
+    public e f15807a;
 
     /* renamed from: c, reason: collision with root package name */
-    private final z f15021c;
+    private final z f15808c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final f f15022d;
+    private final f f15809d;
 
     /* renamed from: e, reason: collision with root package name */
-    private final com.anythink.core.common.n.b.e f15023e;
+    private final com.anythink.core.common.n.b.e f15810e;
 
     /* renamed from: f, reason: collision with root package name */
-    private final r f15024f;
+    private final r f15811f;
 
     /* renamed from: g, reason: collision with root package name */
-    private final com.anythink.core.common.n.c.a f15025g;
+    private final com.anythink.core.common.n.c.a f15812g;
 
     /* renamed from: h, reason: collision with root package name */
-    private Object f15026h;
+    private Object f15813h;
     private ad i;
 
     /* renamed from: j, reason: collision with root package name */
-    private d f15027j;
+    private d f15814j;
 
     /* renamed from: k, reason: collision with root package name */
-    private c f15028k;
+    private c f15815k;
 
     /* renamed from: l, reason: collision with root package name */
-    private boolean f15029l;
+    private boolean f15816l;
 
     /* renamed from: m, reason: collision with root package name */
-    private boolean f15030m;
+    private boolean f15817m;
 
     /* renamed from: n, reason: collision with root package name */
-    private boolean f15031n;
+    private boolean f15818n;
 
     /* renamed from: o, reason: collision with root package name */
-    private boolean f15032o;
+    private boolean f15819o;
 
     /* renamed from: p, reason: collision with root package name */
-    private boolean f15033p;
+    private boolean f15820p;
 
     public static final class a extends WeakReference<j> {
 
         /* renamed from: a, reason: collision with root package name */
-        final Object f15035a;
+        final Object f15822a;
 
         public a(j jVar, Object obj) {
             super(jVar);
-            this.f15035a = obj;
+            this.f15822a = obj;
         }
     }
 
@@ -82,46 +82,46 @@ public final class j {
                 j.this.i();
             }
         };
-        this.f15025g = aVar;
-        this.f15021c = zVar;
-        this.f15022d = com.anythink.core.common.n.b.a.a.f14869a.a(zVar.m());
-        this.f15023e = eVar;
-        this.f15024f = zVar.s().create(eVar);
+        this.f15812g = aVar;
+        this.f15808c = zVar;
+        this.f15809d = com.anythink.core.common.n.b.a.a.f15656a.a(zVar.m());
+        this.f15810e = eVar;
+        this.f15811f = zVar.s().create(eVar);
         aVar.a(zVar.a(), TimeUnit.MILLISECONDS);
     }
 
     public final x a() {
-        return this.f15025g;
+        return this.f15812g;
     }
 
     public final void b() {
-        this.f15025g.c();
+        this.f15812g.c();
     }
 
     public final void c() {
-        if (this.f15032o) {
+        if (this.f15819o) {
             throw new IllegalStateException();
         }
-        this.f15032o = true;
-        this.f15025g.d();
+        this.f15819o = true;
+        this.f15812g.d();
     }
 
     public final void d() {
-        this.f15026h = com.anythink.core.common.n.b.a.g.c.e().a("response.body().close()");
+        this.f15813h = com.anythink.core.common.n.b.a.g.c.e().a("response.body().close()");
     }
 
     public final Socket e() {
-        if (!f15019b && !Thread.holdsLock(this.f15022d)) {
+        if (!f15806b && !Thread.holdsLock(this.f15809d)) {
             throw new AssertionError();
         }
-        int size = this.f15020a.f14984e.size();
+        int size = this.f15807a.f15771e.size();
         int i = 0;
         while (true) {
             if (i >= size) {
                 i = -1;
                 break;
             }
-            if (this.f15020a.f14984e.get(i).get() == this) {
+            if (this.f15807a.f15771e.get(i).get() == this) {
                 break;
             }
             i++;
@@ -129,12 +129,12 @@ public final class j {
         if (i == -1) {
             throw new IllegalStateException();
         }
-        e eVar = this.f15020a;
-        eVar.f14984e.remove(i);
-        this.f15020a = null;
-        if (eVar.f14984e.isEmpty()) {
-            eVar.f14985f = System.nanoTime();
-            if (this.f15022d.b(eVar)) {
+        e eVar = this.f15807a;
+        eVar.f15771e.remove(i);
+        this.f15807a = null;
+        if (eVar.f15771e.isEmpty()) {
+            eVar.f15772f = System.nanoTime();
+            if (this.f15809d.b(eVar)) {
                 return eVar.b();
             }
         }
@@ -142,12 +142,12 @@ public final class j {
     }
 
     public final void f() {
-        synchronized (this.f15022d) {
+        synchronized (this.f15809d) {
             try {
-                if (this.f15033p) {
+                if (this.f15820p) {
                     throw new IllegalStateException();
                 }
-                this.f15028k = null;
+                this.f15815k = null;
             } catch (Throwable th) {
                 throw th;
             }
@@ -155,47 +155,47 @@ public final class j {
     }
 
     public final boolean g() {
-        return this.f15027j.c() && this.f15027j.d();
+        return this.f15814j.c() && this.f15814j.d();
     }
 
     public final boolean h() {
-        boolean z3;
-        synchronized (this.f15022d) {
-            z3 = this.f15028k != null;
+        boolean z6;
+        synchronized (this.f15809d) {
+            z6 = this.f15815k != null;
         }
-        return z3;
+        return z6;
     }
 
     public final void i() {
         c cVar;
         e a9;
-        synchronized (this.f15022d) {
+        synchronized (this.f15809d) {
             try {
-                this.f15031n = true;
-                cVar = this.f15028k;
-                d dVar = this.f15027j;
-                a9 = (dVar == null || dVar.a() == null) ? this.f15020a : this.f15027j.a();
+                this.f15818n = true;
+                cVar = this.f15815k;
+                d dVar = this.f15814j;
+                a9 = (dVar == null || dVar.a() == null) ? this.f15807a : this.f15814j.a();
             } catch (Throwable th) {
                 throw th;
             }
         }
         if (cVar != null) {
-            cVar.f14956e.e();
+            cVar.f15743e.e();
         } else if (a9 != null) {
             a9.f();
         }
     }
 
     public final boolean j() {
-        boolean z3;
-        synchronized (this.f15022d) {
-            z3 = this.f15031n;
+        boolean z6;
+        synchronized (this.f15809d) {
+            z6 = this.f15818n;
         }
-        return z3;
+        return z6;
     }
 
     private IOException b(IOException iOException) {
-        if (this.f15032o || !this.f15025g.d()) {
+        if (this.f15819o || !this.f15812g.d()) {
             return iOException;
         }
         InterruptedIOException interruptedIOException = new InterruptedIOException("timeout");
@@ -211,62 +211,62 @@ public final class j {
         com.anythink.core.common.n.b.g gVar;
         ad adVar2 = this.i;
         if (adVar2 != null) {
-            if (com.anythink.core.common.n.b.a.c.a(adVar2.a(), adVar.a()) && this.f15027j.d()) {
+            if (com.anythink.core.common.n.b.a.c.a(adVar2.a(), adVar.a()) && this.f15814j.d()) {
                 return;
             }
-            if (this.f15028k != null) {
+            if (this.f15815k != null) {
                 throw new IllegalStateException();
             }
-            if (this.f15027j != null) {
+            if (this.f15814j != null) {
                 a((IOException) null, true);
-                this.f15027j = null;
+                this.f15814j = null;
             }
         }
         this.i = adVar;
-        f fVar = this.f15022d;
+        f fVar = this.f15809d;
         v a9 = adVar.a();
         if (a9.c()) {
-            sSLSocketFactory = this.f15021c.h();
-            hostnameVerifier = this.f15021c.i();
-            gVar = this.f15021c.j();
+            sSLSocketFactory = this.f15808c.h();
+            hostnameVerifier = this.f15808c.i();
+            gVar = this.f15808c.j();
         } else {
             sSLSocketFactory = null;
             hostnameVerifier = null;
             gVar = null;
         }
-        this.f15027j = new d(this, fVar, new C0546a(a9.f(), a9.g(), this.f15021c.f(), this.f15021c.g(), sSLSocketFactory, hostnameVerifier, gVar, this.f15021c.l(), this.f15021c.c(), this.f15021c.q(), this.f15021c.r(), this.f15021c.d()), this.f15023e, this.f15024f);
+        this.f15814j = new d(this, fVar, new C0565a(a9.f(), a9.g(), this.f15808c.f(), this.f15808c.g(), sSLSocketFactory, hostnameVerifier, gVar, this.f15808c.l(), this.f15808c.c(), this.f15808c.q(), this.f15808c.r(), this.f15808c.d()), this.f15810e, this.f15811f);
     }
 
-    private C0546a a(v vVar) {
+    private C0565a a(v vVar) {
         SSLSocketFactory sSLSocketFactory;
         HostnameVerifier hostnameVerifier;
         com.anythink.core.common.n.b.g gVar;
         if (vVar.c()) {
-            sSLSocketFactory = this.f15021c.h();
-            hostnameVerifier = this.f15021c.i();
-            gVar = this.f15021c.j();
+            sSLSocketFactory = this.f15808c.h();
+            hostnameVerifier = this.f15808c.i();
+            gVar = this.f15808c.j();
         } else {
             sSLSocketFactory = null;
             hostnameVerifier = null;
             gVar = null;
         }
-        return new C0546a(vVar.f(), vVar.g(), this.f15021c.f(), this.f15021c.g(), sSLSocketFactory, hostnameVerifier, gVar, this.f15021c.l(), this.f15021c.c(), this.f15021c.q(), this.f15021c.r(), this.f15021c.d());
+        return new C0565a(vVar.f(), vVar.g(), this.f15808c.f(), this.f15808c.g(), sSLSocketFactory, hostnameVerifier, gVar, this.f15808c.l(), this.f15808c.c(), this.f15808c.q(), this.f15808c.r(), this.f15808c.d());
     }
 
-    public final c a(w.a aVar, boolean z3) {
-        synchronized (this.f15022d) {
+    public final c a(w.a aVar, boolean z6) {
+        synchronized (this.f15809d) {
             try {
             } catch (Throwable th) {
                 th = th;
             }
             try {
-                if (!this.f15033p) {
-                    if (this.f15028k == null) {
-                        c cVar = new c(this, this.f15023e, this.f15024f, this.f15027j, this.f15027j.a(this.f15021c, aVar, z3));
-                        synchronized (this.f15022d) {
-                            this.f15028k = cVar;
-                            this.f15029l = false;
-                            this.f15030m = false;
+                if (!this.f15820p) {
+                    if (this.f15815k == null) {
+                        c cVar = new c(this, this.f15810e, this.f15811f, this.f15814j, this.f15814j.a(this.f15808c, aVar, z6));
+                        synchronized (this.f15809d) {
+                            this.f15815k = cVar;
+                            this.f15816l = false;
+                            this.f15817m = false;
                         }
                         return cVar;
                     }
@@ -281,45 +281,45 @@ public final class j {
     }
 
     public final void a(e eVar) {
-        if (!f15019b && !Thread.holdsLock(this.f15022d)) {
+        if (!f15806b && !Thread.holdsLock(this.f15809d)) {
             throw new AssertionError();
         }
-        if (this.f15020a == null) {
-            this.f15020a = eVar;
-            eVar.f14984e.add(new a(this, this.f15026h));
+        if (this.f15807a == null) {
+            this.f15807a = eVar;
+            eVar.f15771e.add(new a(this, this.f15813h));
             return;
         }
         throw new IllegalStateException();
     }
 
-    public final IOException a(c cVar, boolean z3, boolean z6, IOException iOException) {
-        boolean z9;
-        synchronized (this.f15022d) {
+    public final IOException a(c cVar, boolean z6, boolean z9, IOException iOException) {
+        boolean z10;
+        synchronized (this.f15809d) {
             try {
-                c cVar2 = this.f15028k;
+                c cVar2 = this.f15815k;
                 if (cVar != cVar2) {
                     return iOException;
                 }
-                boolean z10 = true;
-                if (z3) {
-                    z9 = !this.f15029l;
-                    this.f15029l = true;
-                } else {
-                    z9 = false;
-                }
+                boolean z11 = true;
                 if (z6) {
-                    if (!this.f15030m) {
-                        z9 = true;
-                    }
-                    this.f15030m = true;
-                }
-                if (this.f15029l && this.f15030m && z9) {
-                    cVar2.a().f14983d++;
-                    this.f15028k = null;
+                    z10 = !this.f15816l;
+                    this.f15816l = true;
                 } else {
                     z10 = false;
                 }
-                return z10 ? a(iOException, false) : iOException;
+                if (z9) {
+                    if (!this.f15817m) {
+                        z10 = true;
+                    }
+                    this.f15817m = true;
+                }
+                if (this.f15816l && this.f15817m && z10) {
+                    cVar2.a().f15770d++;
+                    this.f15815k = null;
+                } else {
+                    z11 = false;
+                }
+                return z11 ? a(iOException, false) : iOException;
             } catch (Throwable th) {
                 throw th;
             }
@@ -327,30 +327,30 @@ public final class j {
     }
 
     public final IOException a(IOException iOException) {
-        synchronized (this.f15022d) {
-            this.f15033p = true;
+        synchronized (this.f15809d) {
+            this.f15820p = true;
         }
         return a(iOException, false);
     }
 
-    private IOException a(IOException iOException, boolean z3) {
+    private IOException a(IOException iOException, boolean z6) {
         Socket e9;
-        boolean z6;
-        synchronized (this.f15022d) {
-            if (z3) {
+        boolean z9;
+        synchronized (this.f15809d) {
+            if (z6) {
                 try {
-                    if (this.f15028k != null) {
+                    if (this.f15815k != null) {
                         throw new IllegalStateException("cannot release connection while it is in use");
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
-            e9 = (this.f15020a != null && this.f15028k == null && (z3 || this.f15033p)) ? e() : null;
-            z6 = this.f15033p && this.f15028k == null;
+            e9 = (this.f15807a != null && this.f15815k == null && (z6 || this.f15820p)) ? e() : null;
+            z9 = this.f15820p && this.f15815k == null;
         }
         com.anythink.core.common.n.b.a.c.a(e9);
-        if (!z6 || this.f15032o || !this.f15025g.d()) {
+        if (!z9 || this.f15819o || !this.f15812g.d()) {
             return iOException;
         }
         InterruptedIOException interruptedIOException = new InterruptedIOException("timeout");

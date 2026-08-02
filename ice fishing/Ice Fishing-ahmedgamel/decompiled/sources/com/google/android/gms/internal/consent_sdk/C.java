@@ -7,10 +7,10 @@ import android.os.Looper;
 public abstract class C {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Handler f35492a = new Handler(Looper.getMainLooper());
+    public static final Handler f36261a = new Handler(Looper.getMainLooper());
 
     /* renamed from: b, reason: collision with root package name */
-    public static final B f35493b = new B();
+    public static final B f36262b = new B();
 
     public static void a() {
         if (Looper.myLooper() != Looper.getMainLooper()) {

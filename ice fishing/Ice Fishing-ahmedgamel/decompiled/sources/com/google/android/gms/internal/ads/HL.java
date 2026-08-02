@@ -9,59 +9,59 @@ import java.util.Objects;
 public final class HL implements Iterator {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f25259n = 0;
+    public final /* synthetic */ int f26031n = 0;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f25260u;
+    public int f26032u;
 
     /* renamed from: v, reason: collision with root package name */
-    public boolean f25261v;
+    public boolean f26033v;
 
     /* renamed from: w, reason: collision with root package name */
-    public Iterator f25262w;
+    public Iterator f26034w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final /* synthetic */ AbstractMap f25263x;
+    public final /* synthetic */ AbstractMap f26035x;
 
     public /* synthetic */ HL(FL fl) {
         Objects.requireNonNull(fl);
-        this.f25263x = fl;
-        this.f25260u = -1;
+        this.f26035x = fl;
+        this.f26032u = -1;
     }
 
     public final Iterator a() {
-        switch (this.f25259n) {
+        switch (this.f26031n) {
             case 0:
-                if (this.f25262w == null) {
-                    this.f25262w = ((FL) this.f25263x).f24792v.entrySet().iterator();
+                if (this.f26034w == null) {
+                    this.f26034w = ((FL) this.f26035x).f25548v.entrySet().iterator();
                 }
                 break;
             default:
-                if (this.f25262w == null) {
-                    this.f25262w = ((com.google.android.gms.internal.consent_sdk.K2) this.f25263x).f35559v.entrySet().iterator();
+                if (this.f26034w == null) {
+                    this.f26034w = ((com.google.android.gms.internal.consent_sdk.K2) this.f26035x).f36328v.entrySet().iterator();
                 }
                 break;
         }
-        return this.f25262w;
+        return this.f26034w;
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        switch (this.f25259n) {
+        switch (this.f26031n) {
             case 0:
-                int i = this.f25260u + 1;
-                FL fl = (FL) this.f25263x;
-                if (i >= fl.f24791u) {
-                    if (fl.f24792v.isEmpty() || !a().hasNext()) {
+                int i = this.f26032u + 1;
+                FL fl = (FL) this.f26035x;
+                if (i >= fl.f25547u) {
+                    if (fl.f25548v.isEmpty() || !a().hasNext()) {
                         break;
                     }
                 }
                 break;
             default:
-                int i6 = this.f25260u + 1;
-                com.google.android.gms.internal.consent_sdk.K2 k22 = (com.google.android.gms.internal.consent_sdk.K2) this.f25263x;
-                if (i6 >= k22.f35558u) {
-                    if (k22.f35559v.isEmpty() || !a().hasNext()) {
+                int i4 = this.f26032u + 1;
+                com.google.android.gms.internal.consent_sdk.K2 k22 = (com.google.android.gms.internal.consent_sdk.K2) this.f26035x;
+                if (i4 >= k22.f36327u) {
+                    if (k22.f36328v.isEmpty() || !a().hasNext()) {
                         break;
                     }
                 }
@@ -72,23 +72,23 @@ public final class HL implements Iterator {
 
     @Override // java.util.Iterator
     public final /* synthetic */ Object next() {
-        switch (this.f25259n) {
+        switch (this.f26031n) {
             case 0:
-                this.f25261v = true;
-                int i = this.f25260u + 1;
-                this.f25260u = i;
-                FL fl = (FL) this.f25263x;
-                if (i >= fl.f24791u) {
+                this.f26033v = true;
+                int i = this.f26032u + 1;
+                this.f26032u = i;
+                FL fl = (FL) this.f26035x;
+                if (i >= fl.f25547u) {
                     break;
                 } else {
                     break;
                 }
             default:
-                this.f25261v = true;
-                int i6 = this.f25260u + 1;
-                this.f25260u = i6;
-                com.google.android.gms.internal.consent_sdk.K2 k22 = (com.google.android.gms.internal.consent_sdk.K2) this.f25263x;
-                if (i6 >= k22.f35558u) {
+                this.f26033v = true;
+                int i4 = this.f26032u + 1;
+                this.f26032u = i4;
+                com.google.android.gms.internal.consent_sdk.K2 k22 = (com.google.android.gms.internal.consent_sdk.K2) this.f26035x;
+                if (i4 >= k22.f36327u) {
                     break;
                 } else {
                     break;
@@ -99,55 +99,55 @@ public final class HL implements Iterator {
 
     @Override // java.util.Iterator
     public final void remove() {
-        AbstractMap abstractMap = this.f25263x;
-        switch (this.f25259n) {
+        AbstractMap abstractMap = this.f26035x;
+        switch (this.f26031n) {
             case 0:
-                if (!this.f25261v) {
+                if (!this.f26033v) {
                     throw new IllegalStateException("remove() was called before next()");
                 }
-                this.f25261v = false;
+                this.f26033v = false;
                 FL fl = (FL) abstractMap;
                 fl.e();
-                int i = this.f25260u;
-                if (i >= fl.f24791u) {
+                int i = this.f26032u;
+                if (i >= fl.f25547u) {
                     a().remove();
                     return;
                 }
-                this.f25260u = i - 1;
+                this.f26032u = i - 1;
                 fl.e();
-                Object[] objArr = fl.f24790n;
-                Object obj = ((GL) objArr[i]).f24968n;
-                System.arraycopy(objArr, i + 1, objArr, i, (fl.f24791u - i) - 1);
-                fl.f24791u--;
-                if (fl.f24792v.isEmpty()) {
+                Object[] objArr = fl.f25546n;
+                Object obj = ((GL) objArr[i]).f25758n;
+                System.arraycopy(objArr, i + 1, objArr, i, (fl.f25547u - i) - 1);
+                fl.f25547u--;
+                if (fl.f25548v.isEmpty()) {
                     return;
                 }
                 Iterator it = fl.f().entrySet().iterator();
-                Object[] objArr2 = fl.f24790n;
-                int i6 = fl.f24791u;
+                Object[] objArr2 = fl.f25546n;
+                int i4 = fl.f25547u;
                 Map.Entry entry = (Map.Entry) it.next();
                 if (entry.getKey() != null) {
                     throw new ClassCastException();
                 }
-                objArr2[i6] = new GL(fl, entry.getValue());
-                fl.f24791u++;
+                objArr2[i4] = new GL(fl, entry.getValue());
+                fl.f25547u++;
                 it.remove();
                 return;
             default:
-                if (!this.f25261v) {
+                if (!this.f26033v) {
                     throw new IllegalStateException("remove() was called before next()");
                 }
-                this.f25261v = false;
-                int i9 = com.google.android.gms.internal.consent_sdk.K2.f35556z;
+                this.f26033v = false;
+                int i6 = com.google.android.gms.internal.consent_sdk.K2.f36325z;
                 com.google.android.gms.internal.consent_sdk.K2 k22 = (com.google.android.gms.internal.consent_sdk.K2) abstractMap;
                 k22.g();
-                int i10 = this.f25260u;
-                if (i10 >= k22.f35558u) {
+                int i9 = this.f26032u;
+                if (i9 >= k22.f36327u) {
                     a().remove();
                     return;
                 } else {
-                    this.f25260u = i10 - 1;
-                    k22.e(i10);
+                    this.f26032u = i9 - 1;
+                    k22.e(i9);
                     return;
                 }
         }
@@ -155,7 +155,7 @@ public final class HL implements Iterator {
 
     public /* synthetic */ HL(com.google.android.gms.internal.consent_sdk.K2 k22) {
         Objects.requireNonNull(k22);
-        this.f25263x = k22;
-        this.f25260u = -1;
+        this.f26035x = k22;
+        this.f26032u = -1;
     }
 }

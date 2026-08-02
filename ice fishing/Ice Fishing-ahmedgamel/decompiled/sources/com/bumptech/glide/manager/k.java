@@ -1,6 +1,6 @@
 package com.bumptech.glide.manager;
 
-import B1.y;
+import D1.x;
 import S0.s;
 import android.app.Activity;
 import android.app.Application;
@@ -9,27 +9,28 @@ import android.content.ContextWrapper;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
-import androidx.fragment.app.AbstractActivityC0480x;
-import androidx.lifecycle.AbstractC0498p;
+import androidx.fragment.app.AbstractActivityC0484x;
+import androidx.fragment.app.N;
+import androidx.lifecycle.AbstractC0502p;
 import java.util.HashMap;
 
 /* loaded from: classes.dex */
 public final class k implements Handler.Callback {
 
     /* renamed from: w, reason: collision with root package name */
-    public static final E3.e f23456w = new E3.e();
+    public static final c4.e f24243w = new c4.e();
 
     /* renamed from: n, reason: collision with root package name */
-    public volatile com.bumptech.glide.p f23457n;
+    public volatile com.bumptech.glide.p f24244n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final f f23458u;
+    public final f f24245u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final s f23459v = new s(f23456w);
+    public final s f24246v = new s(f24243w);
 
     public k() {
-        this.f23458u = (y.f163f && y.f162e) ? new e() : new E3.e();
+        this.f24245u = (x.f576f && x.f575e) ? new e() : new c4.e();
     }
 
     public static Activity a(Context context) {
@@ -46,37 +47,37 @@ public final class k implements Handler.Callback {
         if (context == null) {
             throw new IllegalArgumentException("You cannot start a load on a null Context");
         }
-        char[] cArr = N1.p.f1932a;
+        char[] cArr = P1.p.f2376a;
         if (Looper.myLooper() == Looper.getMainLooper() && !(context instanceof Application)) {
-            if (context instanceof AbstractActivityC0480x) {
-                AbstractActivityC0480x abstractActivityC0480x = (AbstractActivityC0480x) context;
+            if (context instanceof AbstractActivityC0484x) {
+                AbstractActivityC0484x abstractActivityC0484x = (AbstractActivityC0484x) context;
                 if (!(Looper.myLooper() == Looper.getMainLooper())) {
-                    return b(abstractActivityC0480x.getApplicationContext());
+                    return b(abstractActivityC0484x.getApplicationContext());
                 }
-                if (abstractActivityC0480x.isDestroyed()) {
+                if (abstractActivityC0484x.isDestroyed()) {
                     throw new IllegalArgumentException("You cannot start a load for a destroyed activity");
                 }
-                this.f23458u.l(abstractActivityC0480x);
-                Activity a9 = a(abstractActivityC0480x);
-                boolean z3 = a9 == null || !a9.isFinishing();
-                com.bumptech.glide.c a10 = com.bumptech.glide.c.a(abstractActivityC0480x.getApplicationContext());
-                AbstractC0498p lifecycle = abstractActivityC0480x.getLifecycle();
-                abstractActivityC0480x.getSupportFragmentManager();
-                s sVar = this.f23459v;
+                this.f24245u.h(abstractActivityC0484x);
+                Activity a9 = a(abstractActivityC0484x);
+                boolean z6 = a9 == null || !a9.isFinishing();
+                com.bumptech.glide.c a10 = com.bumptech.glide.c.a(abstractActivityC0484x.getApplicationContext());
+                AbstractC0502p lifecycle = abstractActivityC0484x.getLifecycle();
+                N supportFragmentManager = abstractActivityC0484x.getSupportFragmentManager();
+                s sVar = this.f24246v;
                 sVar.getClass();
-                N1.p.a();
-                N1.p.a();
-                com.bumptech.glide.p pVar = (com.bumptech.glide.p) ((HashMap) sVar.f2840u).get(lifecycle);
+                P1.p.a();
+                P1.p.a();
+                com.bumptech.glide.p pVar = (com.bumptech.glide.p) ((HashMap) sVar.f2969u).get(lifecycle);
                 if (pVar != null) {
                     return pVar;
                 }
                 LifecycleLifecycle lifecycleLifecycle = new LifecycleLifecycle(lifecycle);
-                a4.e eVar = new a4.e();
-                ((E3.e) sVar.f2841v).getClass();
-                com.bumptech.glide.p pVar2 = new com.bumptech.glide.p(a10, lifecycleLifecycle, eVar, abstractActivityC0480x);
-                ((HashMap) sVar.f2840u).put(lifecycle, pVar2);
-                lifecycleLifecycle.c(new i(sVar, lifecycle));
-                if (z3) {
+                O2.i iVar = new O2.i(sVar, supportFragmentManager);
+                ((c4.e) sVar.f2970v).getClass();
+                com.bumptech.glide.p pVar2 = new com.bumptech.glide.p(a10, lifecycleLifecycle, iVar, abstractActivityC0484x);
+                ((HashMap) sVar.f2969u).put(lifecycle, pVar2);
+                lifecycleLifecycle.h(new i(sVar, lifecycle));
+                if (z6) {
                     pVar2.onStart();
                 }
                 return pVar2;
@@ -88,17 +89,17 @@ public final class k implements Handler.Callback {
                 }
             }
         }
-        if (this.f23457n == null) {
+        if (this.f24244n == null) {
             synchronized (this) {
                 try {
-                    if (this.f23457n == null) {
-                        this.f23457n = new com.bumptech.glide.p(com.bumptech.glide.c.a(context.getApplicationContext()), new M2.i(15), new M2.i(16), context.getApplicationContext());
+                    if (this.f24244n == null) {
+                        this.f24244n = new com.bumptech.glide.p(com.bumptech.glide.c.a(context.getApplicationContext()), new G3.e(17), new G3.e(18), context.getApplicationContext());
                     }
                 } finally {
                 }
             }
         }
-        return this.f23457n;
+        return this.f24244n;
     }
 
     @Override // android.os.Handler.Callback

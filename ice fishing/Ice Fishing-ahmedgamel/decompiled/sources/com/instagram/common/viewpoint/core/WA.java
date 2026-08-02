@@ -15,8 +15,8 @@ public final class WA {
     public static String[] A0D = {"u7auSF2QbA7keT455OtLfVATNnMuonV2", "9Ni6xyVwZaeKacoBimRjslH6Dei", "NGE2fLmKrMN6Gw2Fz9z7jAXvyfAydpGl", "srT3S5MN", "jMoNZ8Vk", "oZZQeSbHWWSZcPAQallJMC7N5h2", "GNfhbJ55AYf3nQ2lY9fIFOrmofPjrLRg", "qccEv4BxkjzqCatZiOtTgryF8DF84JXr"};
     public int A00;
     public T8 A01;
-    public EnumC1315Vq A02;
-    public C1361Xn A03;
+    public EnumC1335Vq A02;
+    public C1381Xn A03;
     public String A04;
     public String A05;
     public String A06;
@@ -24,12 +24,12 @@ public final class WA {
     public boolean A08;
     public final U3 A09;
     public final AdPlacementType A0A;
-    public final C1319Vu A0B;
+    public final C1339Vu A0B;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0C, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 78);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0C, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 78);
         }
         return new String(copyOfRange);
     }
@@ -42,18 +42,18 @@ public final class WA {
         A02();
     }
 
-    public WA(T8 t82, String str, C1361Xn c1361Xn, EnumC1315Vq enumC1315Vq, int i, C1319Vu c1319Vu, String str2, String str3, String str4, U3 u3) {
+    public WA(T8 t82, String str, C1381Xn c1381Xn, EnumC1335Vq enumC1335Vq, int i, C1339Vu c1339Vu, String str2, String str3, String str4, U3 u32) {
         this.A01 = t82;
         this.A06 = str;
-        this.A03 = c1361Xn;
-        this.A02 = enumC1315Vq;
+        this.A03 = c1381Xn;
+        this.A02 = enumC1335Vq;
         this.A00 = i;
-        this.A0B = c1319Vu;
-        this.A0A = enumC1315Vq.A05(this.A01);
+        this.A0B = c1339Vu;
+        this.A0A = enumC1335Vq.A05(this.A01);
         this.A07 = str2;
         this.A05 = str3;
         this.A04 = str4;
-        this.A09 = u3;
+        this.A09 = u32;
     }
 
     private long A00() {
@@ -65,7 +65,7 @@ public final class WA {
             return 0L;
         }
         if (lastSavedLocale.equals(Locale.getDefault().toString())) {
-            return AbstractC1131Oh.A00(this.A01.A02()).A09();
+            return AbstractC1151Oh.A00(this.A01.A02()).A09();
         }
         A00.edit().putString(A012, Locale.getDefault().toString()).apply();
         return 0L;
@@ -87,11 +87,11 @@ public final class WA {
         return this.A0A;
     }
 
-    public final EnumC1315Vq A07() {
+    public final EnumC1335Vq A07() {
         return this.A02;
     }
 
-    public final C1361Xn A08() {
+    public final C1381Xn A08() {
         return this.A03;
     }
 
@@ -236,9 +236,9 @@ public final class WA {
         } else {
             A01 = A01(1, 1, 34);
         }
-        A03(hashMap, A01(a.f21730T, 9, 51), A01);
+        A03(hashMap, A01(a.f22517T, 9, 51), A01);
         A03(hashMap, A01(93, 5, 2), String.valueOf(this.A09.AAa()));
-        String idfaFlag = A01(BaseATView.a.f9770F, 12, 21);
+        String idfaFlag = A01(BaseATView.a.f10556F, 12, 21);
         A03(hashMap, idfaFlag, this.A06);
         if (this.A0A != AdPlacementType.UNKNOWN) {
             A03(hashMap, A01(219, 14, 48), this.A0A.toString().toLowerCase());
@@ -247,14 +247,14 @@ public final class WA {
             A03(hashMap, A01(276, 5, 78), String.valueOf(this.A03.A01()));
             A03(hashMap, A01(119, 6, 97), String.valueOf(this.A03.A00()));
         }
-        EnumC1315Vq enumC1315Vq = this.A02;
+        EnumC1335Vq enumC1335Vq = this.A02;
         String[] strArr = A0D;
         String idfaFlag2 = strArr[3];
         if (idfaFlag2.length() == strArr[4].length()) {
             String[] strArr2 = A0D;
             strArr2[1] = "MtgCRt6raT7lLAmxmnhZWRhCoK6";
             strArr2[5] = "TefOAifnH3N8w6fQm3K3ucYxLzr";
-            if (enumC1315Vq != null) {
+            if (enumC1335Vq != null) {
                 String valueOf = String.valueOf(this.A02.A04());
                 String[] strArr3 = A0D;
                 String idfaFlag3 = strArr3[1];
@@ -268,7 +268,7 @@ public final class WA {
             if (this.A09.isTestMode(this.A01)) {
                 A03(hashMap, A01(267, 9, 36), A01(1, 1, 34));
             }
-            U3 u3 = this.A09;
+            U3 u32 = this.A09;
             String[] strArr5 = A0D;
             if (strArr5[2].charAt(1) != strArr5[6].charAt(1)) {
                 String[] strArr6 = A0D;

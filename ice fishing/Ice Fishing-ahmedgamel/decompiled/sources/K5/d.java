@@ -29,7 +29,7 @@ public final class d {
                     while (true) {
                         int i = length - 1;
                         dVar = values[length];
-                        if (q.L(dVar.name(), str)) {
+                        if (q.b0(dVar.name(), str)) {
                             break;
                         }
                         if (i < 0) {
@@ -57,7 +57,7 @@ public final class d {
     static {
         d[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = com.bumptech.glide.e.b($values);
+        $ENTRIES = X2.a.h($values);
         Companion = new a(null);
     }
 

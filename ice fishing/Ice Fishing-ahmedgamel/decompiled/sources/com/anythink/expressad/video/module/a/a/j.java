@@ -9,11 +9,11 @@ import java.lang.ref.WeakReference;
 public final class j extends e {
 
     /* renamed from: a, reason: collision with root package name */
-    private int f21766a;
+    private int f22553a;
 
     public j(ImageView imageView, int i) {
         super(imageView);
-        this.f21766a = i;
+        this.f22553a = i;
     }
 
     @Override // com.anythink.expressad.video.module.a.a.e, com.anythink.expressad.foundation.g.d.c
@@ -23,13 +23,13 @@ public final class j extends e {
             return;
         }
         try {
-            WeakReference<ImageView> weakReference = this.f21761c;
-            if (weakReference == null || weakReference.get() == null || bitmap.isRecycled() || (a9 = q.a(bitmap, this.f21766a)) == null) {
+            WeakReference<ImageView> weakReference = this.f22548c;
+            if (weakReference == null || weakReference.get() == null || bitmap.isRecycled() || (a9 = q.a(bitmap, this.f22553a)) == null) {
                 return;
             }
-            this.f21761c.get().setImageBitmap(a9);
+            this.f22548c.get().setImageBitmap(a9);
         } catch (Throwable th) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 th.printStackTrace();
             }
         }

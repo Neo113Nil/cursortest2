@@ -17,10 +17,10 @@ public final class ApicFrame extends Id3Frame {
     public final String A02;
     public final byte[] A03;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 126);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 126);
         }
         return new String(copyOfRange);
     }
@@ -92,7 +92,7 @@ public final class ApicFrame extends Id3Frame {
 
     @Override // com.facebook.ads.androidx.media3.extractor.metadata.id3.Id3Frame
     public final String toString() {
-        return super.A00 + A00(14, 11, 27) + this.A02 + A00(0, 14, a.f21756z) + this.A01;
+        return super.A00 + A00(14, 11, 27) + this.A02 + A00(0, 14, a.f22543z) + this.A01;
     }
 
     @Override // android.os.Parcelable

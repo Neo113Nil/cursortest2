@@ -1,72 +1,61 @@
 package a2;
 
-import android.content.Context;
-import i2.InterfaceC4581a;
-import u1.h;
-
 /* renamed from: a2.b, reason: case insensitive filesystem */
 /* loaded from: classes.dex */
-public final class C0430b extends AbstractC0431c {
+public final class C0430b implements X3.d {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Context f4316a;
+    public static final C0430b f4225a = new C0430b();
 
     /* renamed from: b, reason: collision with root package name */
-    public final InterfaceC4581a f4317b;
+    public static final X3.c f4226b = X3.c.a("sdkVersion");
 
     /* renamed from: c, reason: collision with root package name */
-    public final InterfaceC4581a f4318c;
+    public static final X3.c f4227c = X3.c.a("model");
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f4319d;
+    public static final X3.c f4228d = X3.c.a("hardware");
 
-    public C0430b(Context context, InterfaceC4581a interfaceC4581a, InterfaceC4581a interfaceC4581a2, String str) {
-        if (context == null) {
-            throw new NullPointerException("Null applicationContext");
-        }
-        this.f4316a = context;
-        if (interfaceC4581a == null) {
-            throw new NullPointerException("Null wallClock");
-        }
-        this.f4317b = interfaceC4581a;
-        if (interfaceC4581a2 == null) {
-            throw new NullPointerException("Null monotonicClock");
-        }
-        this.f4318c = interfaceC4581a2;
-        if (str == null) {
-            throw new NullPointerException("Null backendName");
-        }
-        this.f4319d = str;
-    }
+    /* renamed from: e, reason: collision with root package name */
+    public static final X3.c f4229e = X3.c.a("device");
 
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (obj instanceof AbstractC0431c) {
-            AbstractC0431c abstractC0431c = (AbstractC0431c) obj;
-            if (this.f4316a.equals(((C0430b) abstractC0431c).f4316a)) {
-                C0430b c0430b = (C0430b) abstractC0431c;
-                if (this.f4317b.equals(c0430b.f4317b) && this.f4318c.equals(c0430b.f4318c) && this.f4319d.equals(c0430b.f4319d)) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
+    /* renamed from: f, reason: collision with root package name */
+    public static final X3.c f4230f = X3.c.a("product");
 
-    public final int hashCode() {
-        return ((((((this.f4316a.hashCode() ^ 1000003) * 1000003) ^ this.f4317b.hashCode()) * 1000003) ^ this.f4318c.hashCode()) * 1000003) ^ this.f4319d.hashCode();
-    }
+    /* renamed from: g, reason: collision with root package name */
+    public static final X3.c f4231g = X3.c.a("osBuild");
 
-    public final String toString() {
-        StringBuilder sb = new StringBuilder("CreationContext{applicationContext=");
-        sb.append(this.f4316a);
-        sb.append(", wallClock=");
-        sb.append(this.f4317b);
-        sb.append(", monotonicClock=");
-        sb.append(this.f4318c);
-        sb.append(", backendName=");
-        return h.g(sb, this.f4319d, "}");
+    /* renamed from: h, reason: collision with root package name */
+    public static final X3.c f4232h = X3.c.a("manufacturer");
+    public static final X3.c i = X3.c.a("fingerprint");
+
+    /* renamed from: j, reason: collision with root package name */
+    public static final X3.c f4233j = X3.c.a("locale");
+
+    /* renamed from: k, reason: collision with root package name */
+    public static final X3.c f4234k = X3.c.a("country");
+
+    /* renamed from: l, reason: collision with root package name */
+    public static final X3.c f4235l = X3.c.a("mccMnc");
+
+    /* renamed from: m, reason: collision with root package name */
+    public static final X3.c f4236m = X3.c.a("applicationBuild");
+
+    @Override // X3.a
+    public final void a(Object obj, Object obj2) {
+        X3.e eVar = (X3.e) obj2;
+        h hVar = (h) ((AbstractC0429a) obj);
+        eVar.a(f4226b, hVar.f4261a);
+        eVar.a(f4227c, hVar.f4262b);
+        eVar.a(f4228d, hVar.f4263c);
+        eVar.a(f4229e, hVar.f4264d);
+        eVar.a(f4230f, hVar.f4265e);
+        eVar.a(f4231g, hVar.f4266f);
+        eVar.a(f4232h, hVar.f4267g);
+        eVar.a(i, hVar.f4268h);
+        eVar.a(f4233j, hVar.i);
+        eVar.a(f4234k, hVar.f4269j);
+        eVar.a(f4235l, hVar.f4270k);
+        eVar.a(f4236m, hVar.f4271l);
     }
 }

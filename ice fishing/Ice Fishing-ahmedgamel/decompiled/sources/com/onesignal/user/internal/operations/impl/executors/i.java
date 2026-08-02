@@ -11,15 +11,15 @@ import java.util.Map;
 import java.util.RandomAccess;
 import java.util.Set;
 import kotlin.jvm.internal.u;
-import q4.C4926b;
-import r4.EnumC4958a;
-import t4.C5040a;
-import u7.C5089g;
-import v7.AbstractC5129j;
-import v7.AbstractC5131l;
-import v7.C5135p;
+import q4.C4875b;
+import r4.EnumC4908a;
+import t4.C5041a;
+import u7.C5081g;
+import v7.AbstractC5119j;
+import v7.AbstractC5121l;
+import v7.C5125p;
 import v7.t;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class i implements H4.d {
@@ -55,8 +55,8 @@ public final class i implements H4.d {
         int label;
         /* synthetic */ Object result;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -74,8 +74,8 @@ public final class i implements H4.d {
         int label;
         /* synthetic */ Object result;
 
-        public c(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public c(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -114,10 +114,10 @@ public final class i implements H4.d {
     }
 
     private final Map<String, Q5.h> createSubscriptionsFromOperation(V5.p pVar, Map<String, Q5.h> map) {
-        LinkedHashMap V8 = t.V(map);
-        if (!V8.containsKey(pVar.getSubscriptionId())) {
-            V8.put(pVar.getSubscriptionId(), new Q5.h(pVar.getSubscriptionId(), null, null, null, null, null, null, null, null, null, null, null, 4094, null));
-            return V8;
+        LinkedHashMap z6 = t.z(map);
+        if (!z6.containsKey(pVar.getSubscriptionId())) {
+            z6.put(pVar.getSubscriptionId(), new Q5.h(pVar.getSubscriptionId(), null, null, null, null, null, null, null, null, null, null, null, 4094, null));
+            return z6;
         }
         String subscriptionId = pVar.getSubscriptionId();
         String subscriptionId2 = pVar.getSubscriptionId();
@@ -153,8 +153,8 @@ public final class i implements H4.d {
         String carrier = hVar10.getCarrier();
         Q5.h hVar11 = map.get(pVar.getSubscriptionId());
         kotlin.jvm.internal.h.b(hVar11);
-        V8.put(subscriptionId, new Q5.h(subscriptionId2, type, token, enabled, notificationTypes, sdk, deviceModel, deviceOS, rooted, netType, carrier, hVar11.getAppVersion()));
-        return V8;
+        z6.put(subscriptionId, new Q5.h(subscriptionId2, type, token, enabled, notificationTypes, sdk, deviceModel, deviceOS, rooted, netType, carrier, hVar11.getAppVersion()));
+        return z6;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -176,11 +176,11 @@ public final class i implements H4.d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object createUser(V5.f fVar, List<? extends H4.g> list, InterfaceC5267d interfaceC5267d) {
+    public final Object createUser(V5.f fVar, List<? extends H4.g> list, InterfaceC5240d interfaceC5240d) {
         b bVar;
         int i;
         Map<String, Q5.h> map;
-        List<C5089g> S8;
+        List<C5081g> w3;
         Object createUser;
         i iVar;
         LinkedHashMap linkedHashMap;
@@ -190,7 +190,7 @@ public final class i implements H4.d {
         String str2;
         List list2;
         LinkedHashMap linkedHashMap2;
-        C4926b rywData;
+        C4875b rywData;
         V5.f fVar2;
         Map<String, Q5.h> map2;
         LinkedHashMap linkedHashMap3;
@@ -201,27 +201,27 @@ public final class i implements H4.d {
         String token;
         V5.f fVar3 = fVar;
         try {
-            if (interfaceC5267d instanceof b) {
-                bVar = (b) interfaceC5267d;
-                int i6 = bVar.label;
-                if ((i6 & Integer.MIN_VALUE) != 0) {
-                    bVar.label = i6 - Integer.MIN_VALUE;
+            if (interfaceC5240d instanceof b) {
+                bVar = (b) interfaceC5240d;
+                int i4 = bVar.label;
+                if ((i4 & Integer.MIN_VALUE) != 0) {
+                    bVar.label = i4 - Integer.MIN_VALUE;
                     b bVar2 = bVar;
                     Object obj2 = bVar2.result;
-                    A7.a aVar3 = A7.a.f58n;
+                    A7.a aVar3 = A7.a.f215n;
                     i = bVar2.label;
                     if (i != 0) {
-                        com.bumptech.glide.d.k(obj2);
-                        Map<String, Q5.h> map3 = v7.q.f41443n;
+                        Q3.b.s(obj2);
+                        Map<String, Q5.h> map3 = v7.q.f41222n;
                         LinkedHashMap linkedHashMap4 = new LinkedHashMap();
                         linkedHashMap4.put("timezone_id", com.onesignal.common.l.INSTANCE.getTimeZoneId());
                         linkedHashMap4.put("language", this._languageContext.getLanguage());
                         if (fVar3.getExternalId() != null) {
-                            LinkedHashMap V8 = t.V(map3);
+                            LinkedHashMap z6 = t.z(map3);
                             String externalId = fVar3.getExternalId();
                             kotlin.jvm.internal.h.b(externalId);
-                            V8.put("external_id", externalId);
-                            map = V8;
+                            z6.put("external_id", externalId);
+                            map = z6;
                         } else {
                             map = map3;
                         }
@@ -239,19 +239,19 @@ public final class i implements H4.d {
                                 map3 = createSubscriptionsFromOperation((V5.c) gVar, map3);
                             }
                         }
-                        S8 = t.S(map3);
+                        w3 = t.w(map3);
                         String resolveJwt = com.onesignal.user.internal.operations.impl.executors.c.resolveJwt(fVar3, this._jwtTokenStore, this._identityVerificationService);
                         Q5.d dVar = this._userBackend;
                         String appId = fVar3.getAppId();
-                        ArrayList arrayList = new ArrayList(AbstractC5131l.y(S8, 10));
-                        Iterator it = S8.iterator();
+                        ArrayList arrayList = new ArrayList(AbstractC5121l.w(w3, 10));
+                        Iterator it = w3.iterator();
                         while (it.hasNext()) {
-                            arrayList.add((Q5.h) ((C5089g) it.next()).f41333u);
+                            arrayList.add((Q5.h) ((C5081g) it.next()).f41053u);
                         }
                         bVar2.L$0 = this;
                         bVar2.L$1 = fVar3;
                         bVar2.L$2 = map;
-                        bVar2.L$3 = S8;
+                        bVar2.L$3 = w3;
                         bVar2.label = 1;
                         createUser = dVar.createUser(appId, map, arrayList, linkedHashMap4, resolveJwt, bVar2);
                         if (createUser == aVar3) {
@@ -267,21 +267,21 @@ public final class i implements H4.d {
                             ?? r32 = (Map) bVar2.L$2;
                             map2 = (Map) bVar2.L$1;
                             fVar2 = (V5.f) bVar2.L$0;
-                            com.bumptech.glide.d.k(obj2);
+                            Q3.b.s(obj2);
                             list2 = null;
                             linkedHashMap3 = r32;
                             str2 = str3;
                             linkedHashMap2 = linkedHashMap3;
                             map = map2;
                             fVar3 = fVar2;
-                            return new H4.a(H4.b.SUCCESS, linkedHashMap2, map.isEmpty() ? d6.c.k(new V5.h(fVar3.getAppId(), str2, fVar3.getExternalId())) : list2, null, 8, null);
+                            return new H4.a(H4.b.SUCCESS, linkedHashMap2, map.isEmpty() ? Z2.d.n(new V5.h(fVar3.getAppId(), str2, fVar3.getExternalId())) : list2, null, 8, null);
                         }
                         List list3 = (List) bVar2.L$3;
                         Map<String, Q5.h> map4 = (Map) bVar2.L$2;
                         V5.f fVar4 = (V5.f) bVar2.L$1;
                         i iVar2 = (i) bVar2.L$0;
-                        com.bumptech.glide.d.k(obj2);
-                        S8 = list3;
+                        Q3.b.s(obj2);
+                        w3 = list3;
                         fVar3 = fVar4;
                         iVar = iVar2;
                         map = map4;
@@ -307,22 +307,22 @@ public final class i implements H4.d {
                         com.onesignal.common.modeling.i.setStringProperty$default(aVar2, "onesignalId", str, "HYDRATE", false, 8, null);
                         str2 = str;
                     }
-                    Set O8 = AbstractC5129j.O(aVar4.getSubscriptions());
-                    for (C5089g c5089g : S8) {
-                        Iterator it2 = O8.iterator();
+                    Set M8 = AbstractC5119j.M(aVar4.getSubscriptions());
+                    for (C5081g c5081g : w3) {
+                        Iterator it2 = M8.iterator();
                         while (true) {
                             if (!it2.hasNext()) {
                                 obj = null;
                                 break;
                             }
                             obj = it2.next();
-                            if (kotlin.jvm.internal.h.a(((Q5.h) obj).getId(), c5089g.f41332n)) {
+                            if (kotlin.jvm.internal.h.a(((Q5.h) obj).getId(), c5081g.f41052n)) {
                                 break;
                             }
                         }
                         Q5.h hVar3 = (Q5.h) obj;
                         if (hVar3 == null) {
-                            Iterator it3 = O8.iterator();
+                            Iterator it3 = M8.iterator();
                             while (true) {
                                 if (!it3.hasNext()) {
                                     hVar2 = 0;
@@ -330,21 +330,21 @@ public final class i implements H4.d {
                                 }
                                 hVar2 = it3.next();
                                 Q5.h hVar4 = (Q5.h) hVar2;
-                                if (kotlin.jvm.internal.h.a(hVar4.getToken(), ((Q5.h) c5089g.f41333u).getToken()) && (token = hVar4.getToken()) != null && !Q7.j.c0(token)) {
+                                if (kotlin.jvm.internal.h.a(hVar4.getToken(), ((Q5.h) c5081g.f41053u).getToken()) && (token = hVar4.getToken()) != null && !Q7.j.s0(token)) {
                                     break;
                                 }
                             }
                             hVar3 = hVar2;
                         }
                         if (hVar3 == null) {
-                            Iterator it4 = O8.iterator();
+                            Iterator it4 = M8.iterator();
                             while (true) {
                                 if (!it4.hasNext()) {
                                     hVar = null;
                                     break;
                                 }
                                 ?? next = it4.next();
-                                if (((Q5.h) next).getType() == ((Q5.h) c5089g.f41333u).getType()) {
+                                if (((Q5.h) next).getType() == ((Q5.h) c5081g.f41053u).getType()) {
                                     hVar = next;
                                     break;
                                 }
@@ -352,7 +352,7 @@ public final class i implements H4.d {
                             hVar3 = hVar;
                         }
                         if (hVar3 != null) {
-                            Object obj3 = c5089g.f41332n;
+                            Object obj3 = c5081g.f41052n;
                             String id = hVar3.getId();
                             kotlin.jvm.internal.h.b(id);
                             linkedHashMap.put(obj3, id);
@@ -366,24 +366,24 @@ public final class i implements H4.d {
                                 com.onesignal.common.modeling.i.setStringProperty$default(dVar2, "id", id2, "HYDRATE", false, 8, null);
                             }
                         } else {
-                            com.onesignal.debug.internal.logging.b.error$default("LoginUserOperationExecutor.createUser response is missing subscription data for " + ((String) c5089g.f41332n), null, 2, null);
+                            com.onesignal.debug.internal.logging.b.error$default("LoginUserOperationExecutor.createUser response is missing subscription data for " + ((String) c5081g.f41052n), null, 2, null);
                         }
-                        u.a(O8);
-                        O8.remove(hVar3);
+                        u.a(M8);
+                        M8.remove(hVar3);
                     }
                     list2 = null;
                     if (iVar._identityVerificationService.getNewCodePathsRun() || (rywData = aVar4.getRywData()) == null) {
                         linkedHashMap2 = linkedHashMap;
-                        return new H4.a(H4.b.SUCCESS, linkedHashMap2, map.isEmpty() ? d6.c.k(new V5.h(fVar3.getAppId(), str2, fVar3.getExternalId())) : list2, null, 8, null);
+                        return new H4.a(H4.b.SUCCESS, linkedHashMap2, map.isEmpty() ? Z2.d.n(new V5.h(fVar3.getAppId(), str2, fVar3.getExternalId())) : list2, null, 8, null);
                     }
                     s4.c cVar = iVar._consistencyManager;
-                    EnumC4958a enumC4958a = EnumC4958a.USER;
+                    EnumC4908a enumC4908a = EnumC4908a.USER;
                     bVar2.L$0 = fVar3;
                     bVar2.L$1 = map;
                     bVar2.L$2 = linkedHashMap;
                     bVar2.L$3 = str2;
                     bVar2.label = 2;
-                    if (cVar.setRywData(str2, enumC4958a, rywData, bVar2) != aVar3) {
+                    if (cVar.setRywData(str2, enumC4908a, rywData, bVar2) != aVar3) {
                         fVar2 = fVar3;
                         map2 = map;
                         linkedHashMap3 = linkedHashMap;
@@ -392,7 +392,7 @@ public final class i implements H4.d {
                         linkedHashMap2 = linkedHashMap3;
                         map = map2;
                         fVar3 = fVar2;
-                        return new H4.a(H4.b.SUCCESS, linkedHashMap2, map.isEmpty() ? d6.c.k(new V5.h(fVar3.getAppId(), str2, fVar3.getExternalId())) : list2, null, 8, null);
+                        return new H4.a(H4.b.SUCCESS, linkedHashMap2, map.isEmpty() ? Z2.d.n(new V5.h(fVar3.getAppId(), str2, fVar3.getExternalId())) : list2, null, 8, null);
                     }
                     return aVar3;
                 }
@@ -411,22 +411,22 @@ public final class i implements H4.d {
             }
             if (kotlin.jvm.internal.h.a(aVar2.getOnesignalId(), fVar3.getOnesignalId())) {
             }
-            Set O82 = AbstractC5129j.O(aVar42.getSubscriptions());
+            Set M82 = AbstractC5119j.M(aVar42.getSubscriptions());
             while (r2.hasNext()) {
             }
             list2 = null;
             if (iVar._identityVerificationService.getNewCodePathsRun()) {
             }
             linkedHashMap2 = linkedHashMap;
-            return new H4.a(H4.b.SUCCESS, linkedHashMap2, map.isEmpty() ? d6.c.k(new V5.h(fVar3.getAppId(), str2, fVar3.getExternalId())) : list2, null, 8, null);
-        } catch (C5040a e9) {
-            int i9 = j.$EnumSwitchMapping$1[com.onesignal.common.g.INSTANCE.getResponseStatusType(e9.getStatusCode()).ordinal()];
-            return i9 != 1 ? i9 != 2 ? new H4.a(H4.b.FAIL_PAUSE_OPREPO, null, null, null, 14, null) : new H4.a(H4.b.FAIL_UNAUTHORIZED, null, null, e9.getRetryAfterSeconds(), 6, null) : new H4.a(H4.b.FAIL_RETRY, null, null, e9.getRetryAfterSeconds(), 6, null);
+            return new H4.a(H4.b.SUCCESS, linkedHashMap2, map.isEmpty() ? Z2.d.n(new V5.h(fVar3.getAppId(), str2, fVar3.getExternalId())) : list2, null, 8, null);
+        } catch (C5041a e9) {
+            int i6 = j.$EnumSwitchMapping$1[com.onesignal.common.g.INSTANCE.getResponseStatusType(e9.getStatusCode()).ordinal()];
+            return i6 != 1 ? i6 != 2 ? new H4.a(H4.b.FAIL_PAUSE_OPREPO, null, null, null, 14, null) : new H4.a(H4.b.FAIL_UNAUTHORIZED, null, null, e9.getRetryAfterSeconds(), 6, null) : new H4.a(H4.b.FAIL_RETRY, null, null, e9.getRetryAfterSeconds(), 6, null);
         }
-        bVar = new b(interfaceC5267d);
+        bVar = new b(interfaceC5240d);
         b bVar22 = bVar;
         Object obj22 = bVar22.result;
-        A7.a aVar32 = A7.a.f58n;
+        A7.a aVar32 = A7.a.f215n;
         i = bVar22.label;
     }
 
@@ -438,24 +438,24 @@ public final class i implements H4.d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object loginUser(V5.f fVar, List<? extends H4.g> list, InterfaceC5267d interfaceC5267d) {
+    public final Object loginUser(V5.f fVar, List<? extends H4.g> list, InterfaceC5240d interfaceC5240d) {
         c cVar;
         int i;
         i iVar;
-        int i6;
+        int i4;
         String str;
         V5.f fVar2 = fVar;
         List<? extends H4.g> list2 = list;
-        if (interfaceC5267d instanceof c) {
-            cVar = (c) interfaceC5267d;
-            int i9 = cVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                cVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof c) {
+            cVar = (c) interfaceC5240d;
+            int i6 = cVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                cVar.label = i6 - Integer.MIN_VALUE;
                 Object obj = cVar.result;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 i = cVar.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     if (list2 == null || !list2.isEmpty()) {
                         for (H4.g gVar : list2) {
                             if ((gVar instanceof V5.a) || (gVar instanceof V5.p)) {
@@ -480,12 +480,12 @@ public final class i implements H4.d {
                         String externalId = fVar2.getExternalId();
                         String externalId2 = fVar2.getExternalId();
                         kotlin.jvm.internal.h.b(externalId2);
-                        List<? extends H4.g> k9 = d6.c.k(new V5.i(appId, existingOnesignalId, externalId, "external_id", externalId2));
+                        List<? extends H4.g> n9 = Z2.d.n(new V5.i(appId, existingOnesignalId, externalId, "external_id", externalId2));
                         cVar.L$0 = this;
                         cVar.L$1 = fVar2;
                         cVar.L$2 = list2;
                         cVar.label = 2;
-                        obj = dVar.execute(k9, cVar);
+                        obj = dVar.execute(n9, cVar);
                         if (obj != aVar) {
                             iVar = this;
                         }
@@ -493,29 +493,29 @@ public final class i implements H4.d {
                     return aVar;
                 }
                 if (i == 1) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     return obj;
                 }
                 if (i != 2) {
                     if (i == 3) {
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                         return obj;
                     }
                     if (i != 4) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     return obj;
                 }
                 List<? extends H4.g> list3 = (List) cVar.L$2;
                 V5.f fVar3 = (V5.f) cVar.L$1;
                 iVar = (i) cVar.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 list2 = list3;
                 fVar2 = fVar3;
                 H4.a aVar2 = (H4.a) obj;
-                i6 = j.$EnumSwitchMapping$0[aVar2.getResult().ordinal()];
-                if (i6 != 1) {
+                i4 = j.$EnumSwitchMapping$0[aVar2.getResult().ordinal()];
+                if (i4 != 1) {
                     String existingOnesignalId2 = fVar2.getExistingOnesignalId();
                     kotlin.jvm.internal.h.b(existingOnesignalId2);
                     if (kotlin.jvm.internal.h.a(((U5.a) iVar._identityModelStore.getModel()).getOnesignalId(), fVar2.getOnesignalId())) {
@@ -529,9 +529,9 @@ public final class i implements H4.d {
                         com.onesignal.common.modeling.i.setStringProperty$default(iVar._propertiesModelStore.getModel(), "onesignalId", str2, "HYDRATE", false, 8, null);
                         str = str2;
                     }
-                    return new H4.a(H4.b.SUCCESS_STARTING_ONLY, t.Q(new C5089g(fVar2.getOnesignalId(), str)), null, null, 12, null);
+                    return new H4.a(H4.b.SUCCESS_STARTING_ONLY, t.u(new C5081g(fVar2.getOnesignalId(), str)), null, null, 12, null);
                 }
-                if (i6 == 2) {
+                if (i4 == 2) {
                     com.onesignal.debug.internal.logging.b.debug$default("LoginUserOperationExecutor now handling 409 response with \"code\": \"user-2\" by switching to user with \"external_id\": \"" + fVar2.getExternalId() + '\"', null, 2, null);
                     cVar.L$0 = null;
                     cVar.L$1 = null;
@@ -542,7 +542,7 @@ public final class i implements H4.d {
                         return createUser2;
                     }
                 } else {
-                    if (i6 != 3) {
+                    if (i4 != 3) {
                         return new H4.a(aVar2.getResult(), null, null, null, 14, null);
                     }
                     com.onesignal.debug.internal.logging.b.error$default("LoginUserOperationExecutor encountered error. Attempt to recover by switching to user with \"external_id\": \"" + fVar2.getExternalId() + '\"', null, 2, null);
@@ -558,32 +558,32 @@ public final class i implements H4.d {
                 return aVar;
             }
         }
-        cVar = new c(interfaceC5267d);
+        cVar = new c(interfaceC5240d);
         Object obj2 = cVar.result;
-        A7.a aVar3 = A7.a.f58n;
+        A7.a aVar3 = A7.a.f215n;
         i = cVar.label;
         if (i != 0) {
         }
         H4.a aVar22 = (H4.a) obj2;
-        i6 = j.$EnumSwitchMapping$0[aVar22.getResult().ordinal()];
-        if (i6 != 1) {
+        i4 = j.$EnumSwitchMapping$0[aVar22.getResult().ordinal()];
+        if (i4 != 1) {
         }
     }
 
     @Override // H4.d
-    public Object execute(List<? extends H4.g> list, InterfaceC5267d interfaceC5267d) {
+    public Object execute(List<? extends H4.g> list, InterfaceC5240d interfaceC5240d) {
         List<? extends H4.g> list2;
         com.onesignal.debug.internal.logging.b.debug$default("LoginUserOperationExecutor(operation: " + list + ')', null, 2, null);
-        H4.g gVar = (H4.g) AbstractC5129j.A(list);
+        H4.g gVar = (H4.g) AbstractC5119j.y(list);
         if (!(gVar instanceof V5.f)) {
             throw new Exception("Unrecognized operation: " + gVar);
         }
         V5.f fVar = (V5.f) gVar;
         int size = list.size() - 1;
         if (size <= 0) {
-            list2 = C5135p.f41442n;
+            list2 = C5125p.f41221n;
         } else if (size == 1) {
-            list2 = d6.c.k(AbstractC5129j.F(list));
+            list2 = Z2.d.n(AbstractC5119j.D(list));
         } else {
             ArrayList arrayList = new ArrayList(size);
             if (list instanceof RandomAccess) {
@@ -599,17 +599,17 @@ public final class i implements H4.d {
             }
             list2 = arrayList;
         }
-        return loginUser(fVar, list2, interfaceC5267d);
+        return loginUser(fVar, list2, interfaceC5240d);
     }
 
     @Override // H4.d
     public List<String> getOperations() {
-        return d6.c.k(LOGIN_USER);
+        return Z2.d.n(LOGIN_USER);
     }
 
     private final Map<String, Q5.h> createSubscriptionsFromOperation(V5.a aVar, Map<String, Q5.h> map) {
         Q5.j jVar;
-        LinkedHashMap V8 = t.V(map);
+        LinkedHashMap z6 = t.z(map);
         int i = j.$EnumSwitchMapping$2[aVar.getType().ordinal()];
         if (i == 1) {
             jVar = Q5.j.SMS;
@@ -629,13 +629,13 @@ public final class i implements H4.d {
         String str2 = Build.VERSION.RELEASE;
         Boolean valueOf3 = Boolean.valueOf(com.onesignal.common.k.INSTANCE.isRooted());
         com.onesignal.common.c cVar = com.onesignal.common.c.INSTANCE;
-        V8.put(subscriptionId2, new Q5.h(subscriptionId, jVar2, address, valueOf, valueOf2, sdkVersion, str, str2, valueOf3, cVar.getNetType(this._application.getAppContext()), cVar.getCarrierName(this._application.getAppContext()), AndroidUtils.INSTANCE.getAppVersion(this._application.getAppContext())));
-        return V8;
+        z6.put(subscriptionId2, new Q5.h(subscriptionId, jVar2, address, valueOf, valueOf2, sdkVersion, str, str2, valueOf3, cVar.getNetType(this._application.getAppContext()), cVar.getCarrierName(this._application.getAppContext()), AndroidUtils.INSTANCE.getAppVersion(this._application.getAppContext())));
+        return z6;
     }
 
     private final Map<String, Q5.h> createSubscriptionsFromOperation(V5.q qVar, Map<String, Q5.h> map) {
-        LinkedHashMap V8 = t.V(map);
-        if (V8.containsKey(qVar.getSubscriptionId())) {
+        LinkedHashMap z6 = t.z(map);
+        if (z6.containsKey(qVar.getSubscriptionId())) {
             String subscriptionId = qVar.getSubscriptionId();
             Q5.h hVar = map.get(qVar.getSubscriptionId());
             kotlin.jvm.internal.h.b(hVar);
@@ -666,14 +666,14 @@ public final class i implements H4.d {
             String carrier = hVar8.getCarrier();
             Q5.h hVar9 = map.get(qVar.getSubscriptionId());
             kotlin.jvm.internal.h.b(hVar9);
-            V8.put(subscriptionId, new Q5.h(id, type, address, valueOf, valueOf2, sdk, deviceModel, deviceOS, rooted, netType, carrier, hVar9.getAppVersion()));
+            z6.put(subscriptionId, new Q5.h(id, type, address, valueOf, valueOf2, sdk, deviceModel, deviceOS, rooted, netType, carrier, hVar9.getAppVersion()));
         }
-        return V8;
+        return z6;
     }
 
     private final Map<String, Q5.h> createSubscriptionsFromOperation(V5.c cVar, Map<String, Q5.h> map) {
-        LinkedHashMap V8 = t.V(map);
-        V8.remove(cVar.getSubscriptionId());
-        return V8;
+        LinkedHashMap z6 = t.z(map);
+        z6.remove(cVar.getSubscriptionId());
+        return z6;
     }
 }

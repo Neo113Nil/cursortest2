@@ -12,7 +12,7 @@ import java.security.NoSuchAlgorithmException;
 final class ad {
 
     /* renamed from: a, reason: collision with root package name */
-    private final PackageManager f16655a;
+    private final PackageManager f17442a;
 
     public enum a {
         ENABLED,
@@ -25,12 +25,12 @@ final class ad {
     }
 
     public ad(Context context) {
-        this.f16655a = context.getPackageManager();
+        this.f17442a = context.getPackageManager();
     }
 
     private int c(String str) {
         try {
-            PackageInfo packageInfo = this.f16655a.getPackageInfo(str, 16);
+            PackageInfo packageInfo = this.f17442a.getPackageInfo(str, 16);
             if (packageInfo != null) {
                 return packageInfo.versionCode;
             }
@@ -41,7 +41,7 @@ final class ad {
 
     private String d(String str) {
         try {
-            PackageInfo packageInfo = this.f16655a.getPackageInfo(str, 16);
+            PackageInfo packageInfo = this.f17442a.getPackageInfo(str, 16);
             if (packageInfo != null) {
                 String str2 = packageInfo.versionName;
                 if (str2 != null) {
@@ -56,7 +56,7 @@ final class ad {
     private byte[] e(String str) {
         Signature[] signatureArr;
         try {
-            PackageInfo packageInfo = this.f16655a.getPackageInfo(str, 64);
+            PackageInfo packageInfo = this.f17442a.getPackageInfo(str, 64);
             if (packageInfo != null && (signatureArr = packageInfo.signatures) != null && signatureArr.length > 0) {
                 return signatureArr[0].toByteArray();
             }
@@ -70,7 +70,7 @@ final class ad {
             return a.NOT_INSTALLED;
         }
         try {
-            return this.f16655a.getApplicationInfo(str, 0).enabled ? a.ENABLED : a.DISABLED;
+            return this.f17442a.getApplicationInfo(str, 0).enabled ? a.ENABLED : a.DISABLED;
         } catch (PackageManager.NameNotFoundException unused) {
             return a.NOT_INSTALLED;
         }

@@ -4,7 +4,7 @@ package com.instagram.common.viewpoint.core;
 public abstract /* synthetic */ class A3 {
     public static String[] A00 = {"5T7TkW9NGOjGeZuW9Ub7Ngvet4faTjJs", "vXLo1EXN2QD8gRdr6G5yk0dd7Lrfqyin", "If52ql4YEPeGi3wksanu1qPsHEygHe92", "IECsDDwSt9NknKwakDs4yHwqx3zcyruS", "DosL7DgoA7WaW7VBT3", "G", "Bg", "N3GFLCvSDIijJXWDRku4zi5PstVgqnQW"};
 
-    public static A5 A00(A6 a62, A1 a12, C2400qI c2400qI) {
+    public static A5 A00(A6 a62, A1 a12, C2420qI c2420qI) {
         return A5.A00;
     }
 

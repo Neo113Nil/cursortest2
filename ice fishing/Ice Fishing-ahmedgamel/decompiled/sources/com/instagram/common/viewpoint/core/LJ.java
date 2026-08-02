@@ -7,23 +7,23 @@ import java.util.List;
 public final class LJ {
     public static byte[] A02;
     public static String[] A03 = {"5V45xVrzlJXesqnrbjrZeT76qkPwv", "706Txtts1K7q5FoHp33PEv9HaNMSsjAK", "qupHUySH2p9zJgxISfihn0myWA92wmd9", "5DvGIEuDVuIxxSW2dLmZtZYg2a6kN8VU", "n2fidlshYBQzN55WQs4Vi6", "kTscsm2f8c9DflsdA4bvXVbGUagx", "", "mbeoGjxKtAefmgmFA563kx"};
-    public final List<C2400qI> A00;
-    public final InterfaceC0947Hd[] A01;
+    public final List<C2420qI> A00;
+    public final InterfaceC0967Hd[] A01;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        int i10 = 0;
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             if (A03[5].length() == 31) {
                 throw new RuntimeException();
             }
             A03[0] = "BUpOOmvQBkZMcHt4Z";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 6);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 6);
+            i9++;
         }
     }
 
@@ -35,18 +35,18 @@ public final class LJ {
         A01();
     }
 
-    public LJ(List<C2400qI> list) {
+    public LJ(List<C2420qI> list) {
         this.A00 = list;
-        this.A01 = new InterfaceC0947Hd[list.size()];
+        this.A01 = new InterfaceC0967Hd[list.size()];
     }
 
-    public final void A02(long j6, C06474v c06474v) {
-        if (c06474v.A07() < 9) {
+    public final void A02(long j6, C06674v c06674v) {
+        if (c06674v.A07() < 9) {
             return;
         }
-        int userDataIdentifier = c06474v.A0C();
-        int A0C = c06474v.A0C();
-        int A0I = c06474v.A0I();
+        int userDataIdentifier = c06674v.A0C();
+        int A0C = c06674v.A0C();
+        int A0I = c06674v.A0I();
         if (userDataIdentifier == 434) {
             int userDataIdentifier2 = A03[3].charAt(2);
             if (userDataIdentifier2 != 118) {
@@ -56,7 +56,7 @@ public final class LJ {
             strArr[7] = "5ag0VzOfRdhx9UNauvnxAz";
             strArr[4] = "f0o3UWjxlhBFesYxHlhgg4";
             if (A0C == 1195456820 && A0I == 3) {
-                H3.A04(j6, c06474v, this.A01);
+                H3.A04(j6, c06674v, this.A01);
             }
         }
     }
@@ -68,15 +68,15 @@ public final class LJ {
     public final void A03(HA ha, LG lg) {
         for (int i = 0; i < i; i++) {
             lg.A05();
-            InterfaceC0947Hd AKS = ha.AKS(lg.A03(), 3);
-            C2400qI c2400qI = this.A00.get(i);
-            String str = c2400qI.A0W;
-            AbstractC06243y.A09(A00(43, 19, 115).equals(str) || A00(62, 19, 37).equals(str), A00(0, 43, 63) + str);
-            C05912p A11 = new C05912p().A0y(lg.A04()).A11(str);
-            int i6 = c2400qI.A0H;
-            C05912p A10 = A11.A0n(i6).A10(c2400qI.A0V);
-            int i9 = c2400qI.A03;
-            AKS.A6e(A10.A0Z(i9).A12(c2400qI.A0X).A14());
+            InterfaceC0967Hd AKS = ha.AKS(lg.A03(), 3);
+            C2420qI c2420qI = this.A00.get(i);
+            String str = c2420qI.A0W;
+            AbstractC06443y.A09(A00(43, 19, 115).equals(str) || A00(62, 19, 37).equals(str), A00(0, 43, 63) + str);
+            C06112p A11 = new C06112p().A0y(lg.A04()).A11(str);
+            int i4 = c2420qI.A0H;
+            C06112p A10 = A11.A0n(i4).A10(c2420qI.A0V);
+            int i6 = c2420qI.A03;
+            AKS.A6e(A10.A0Z(i6).A12(c2420qI.A0X).A14());
             this.A01[i] = AKS;
         }
     }

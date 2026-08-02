@@ -14,25 +14,25 @@ import org.json.JSONObject;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static String f19353a = "a";
+    public static String f20140a = "a";
 
     /* renamed from: b, reason: collision with root package name */
-    public static String f19354b = "d";
+    public static String f20141b = "d";
 
     /* renamed from: c, reason: collision with root package name */
-    public static String f19355c = "e";
+    public static String f20142c = "e";
 
     /* renamed from: d, reason: collision with root package name */
-    public static String f19356d = "coppa";
+    public static String f20143d = "coppa";
 
     /* renamed from: e, reason: collision with root package name */
-    private static final String f19357e = "b";
+    private static final String f20144e = "b";
 
     /* renamed from: f, reason: collision with root package name */
-    private Map<String, String> f19358f = new LinkedHashMap();
+    private Map<String, String> f20145f = new LinkedHashMap();
 
     /* renamed from: g, reason: collision with root package name */
-    private Map<String, com.anythink.expressad.foundation.g.f.c.b> f19359g = new LinkedHashMap();
+    private Map<String, com.anythink.expressad.foundation.g.f.c.b> f20146g = new LinkedHashMap();
 
     public b() {
     }
@@ -40,10 +40,10 @@ public final class b {
     private JSONObject c() {
         JSONObject jSONObject = new JSONObject();
         try {
-            for (Map.Entry<String, String> entry : this.f19358f.entrySet()) {
+            for (Map.Entry<String, String> entry : this.f20145f.entrySet()) {
                 jSONObject.put(URLEncoder.encode(entry.getKey(), "UTF-8"), URLEncoder.encode(entry.getValue(), "UTF-8"));
             }
-            for (Map.Entry<String, com.anythink.expressad.foundation.g.f.c.b> entry2 : this.f19359g.entrySet()) {
+            for (Map.Entry<String, com.anythink.expressad.foundation.g.f.c.b> entry2 : this.f20146g.entrySet()) {
                 jSONObject.put(URLEncoder.encode(entry2.getKey(), "UTF-8"), URLEncoder.encode("FILE_NAME_" + entry2.getValue().b().getName(), "UTF-8"));
             }
         } catch (UnsupportedEncodingException unused) {
@@ -57,17 +57,17 @@ public final class b {
         if (TextUtils.isEmpty(str) || str2 == null) {
             return;
         }
-        this.f19358f.put(str, str2);
+        this.f20145f.put(str, str2);
     }
 
     public final Map<String, String> b() {
-        return this.f19358f;
+        return this.f20145f;
     }
 
     public final String toString() {
         StringBuilder sb = new StringBuilder(28);
         try {
-            for (Map.Entry<String, String> entry : this.f19358f.entrySet()) {
+            for (Map.Entry<String, String> entry : this.f20145f.entrySet()) {
                 if (sb.length() > 0) {
                     sb.append('&');
                 }
@@ -75,7 +75,7 @@ public final class b {
                 sb.append('=');
                 sb.append(URLEncoder.encode(entry.getValue(), "UTF-8"));
             }
-            for (Map.Entry<String, com.anythink.expressad.foundation.g.f.c.b> entry2 : this.f19359g.entrySet()) {
+            for (Map.Entry<String, com.anythink.expressad.foundation.g.f.c.b> entry2 : this.f20146g.entrySet()) {
                 if (sb.length() > 0) {
                     sb.append('&');
                 }
@@ -97,14 +97,14 @@ public final class b {
             if (TextUtils.isEmpty(str)) {
                 return;
             }
-            this.f19359g.put(str, new com.anythink.expressad.foundation.g.f.c.b(str2, file, str2, str3));
+            this.f20146g.put(str, new com.anythink.expressad.foundation.g.f.c.b(str2, file, str2, str3));
             return;
         }
         throw new FileNotFoundException();
     }
 
     private b(String str, String str2) {
-        this.f19358f.put(str, str2);
+        this.f20145f.put(str, str2);
     }
 
     public b(Map<String, String> map) {
@@ -127,7 +127,7 @@ public final class b {
                     if (file != null && file.exists()) {
                         String name = TextUtils.isEmpty(null) ? file.getName() : null;
                         if (!TextUtils.isEmpty(key)) {
-                            this.f19359g.put(key, new com.anythink.expressad.foundation.g.f.c.b(name, file, name, null));
+                            this.f20146g.put(key, new com.anythink.expressad.foundation.g.f.c.b(name, file, name, null));
                         }
                     } else {
                         throw new FileNotFoundException();
@@ -152,7 +152,7 @@ public final class b {
     public final String a() {
         StringBuilder sb = new StringBuilder();
         try {
-            for (Map.Entry<String, String> entry : this.f19358f.entrySet()) {
+            for (Map.Entry<String, String> entry : this.f20145f.entrySet()) {
                 if (sb.length() > 0) {
                     sb.append('&');
                 }
@@ -167,8 +167,8 @@ public final class b {
     }
 
     private void a(String str) {
-        this.f19358f.remove(str);
-        this.f19359g.remove(str);
+        this.f20145f.remove(str);
+        this.f20146g.remove(str);
     }
 
     private void a(String str, File file) {
@@ -177,7 +177,7 @@ public final class b {
             if (TextUtils.isEmpty(str)) {
                 return;
             }
-            this.f19359g.put(str, new com.anythink.expressad.foundation.g.f.c.b(name, file, name, null));
+            this.f20146g.put(str, new com.anythink.expressad.foundation.g.f.c.b(name, file, name, null));
             return;
         }
         throw new FileNotFoundException();
@@ -191,7 +191,7 @@ public final class b {
             if (TextUtils.isEmpty(str)) {
                 return;
             }
-            this.f19359g.put(str, new com.anythink.expressad.foundation.g.f.c.b(str2, file, str2, null));
+            this.f20146g.put(str, new com.anythink.expressad.foundation.g.f.c.b(str2, file, str2, null));
             return;
         }
         throw new FileNotFoundException();

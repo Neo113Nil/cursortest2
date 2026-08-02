@@ -6,11 +6,11 @@ import java.io.IOException;
 public interface H9 {
     void AAC(HA ha);
 
-    int AHL(InterfaceC2191ms interfaceC2191ms, HV hv) throws IOException;
+    int AHL(InterfaceC2211ms interfaceC2211ms, HV hv) throws IOException;
 
     void AHb();
 
     void AJ6(long j6, long j9);
 
-    boolean AK5(InterfaceC2191ms interfaceC2191ms) throws IOException;
+    boolean AK5(InterfaceC2211ms interfaceC2211ms) throws IOException;
 }

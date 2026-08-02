@@ -18,27 +18,27 @@ import java.util.List;
 public class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f6026a = "f";
+    public static final String f6812a = "f";
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile f f6027b;
+    private static volatile f f6813b;
 
     private f() {
     }
 
     public static f a() {
-        if (f6027b == null) {
+        if (f6813b == null) {
             synchronized (f.class) {
                 try {
-                    if (f6027b == null) {
-                        f6027b = new f();
+                    if (f6813b == null) {
+                        f6813b = new f();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f6027b;
+        return f6813b;
     }
 
     private static FileInputStream b(int i, String str) {
@@ -56,12 +56,12 @@ public class f {
         int size = list.size();
         for (int i = 0; i < size; i++) {
             x xVar = new x();
-            xVar.f14168o = baVar;
-            ATAdRequest aTAdRequest = azVar.f13601a;
+            xVar.f14954o = baVar;
+            ATAdRequest aTAdRequest = azVar.f14387a;
             if (aTAdRequest != null) {
-                xVar.f14174u = aTAdRequest.getChannelSource();
+                xVar.f14960u = aTAdRequest.getChannelSource();
             }
-            a(azVar.f13602b, true, list.get(i), xVar, null);
+            a(azVar.f14388b, true, list.get(i), xVar, null);
         }
     }
 
@@ -69,8 +69,8 @@ public class f {
         a(str, false, wVar, xVar, bVar);
     }
 
-    public static void a(String str, boolean z3, w wVar, x xVar, c.b bVar) {
-        new com.anythink.basead.b.c.c(str, z3, wVar, xVar).a(bVar);
+    public static void a(String str, boolean z6, w wVar, x xVar, c.b bVar) {
+        new com.anythink.basead.b.c.c(str, z6, wVar, xVar).a(bVar);
     }
 
     public static boolean a(ay ayVar, x xVar) {

@@ -42,7 +42,7 @@ public final class b {
     static {
         b[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = com.bumptech.glide.e.b($values);
+        $ENTRIES = X2.a.h($values);
         Companion = new a(null);
     }
 

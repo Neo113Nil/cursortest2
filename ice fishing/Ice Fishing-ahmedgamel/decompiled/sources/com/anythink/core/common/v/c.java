@@ -12,27 +12,27 @@ import java.util.Objects;
 public class c {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f16722a = "anythink_event_listener";
+    private static final String f17509a = "anythink_event_listener";
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile c f16723b;
+    private static volatile c f17510b;
 
     private c() {
     }
 
     public static c a() {
-        if (f16723b == null) {
+        if (f17510b == null) {
             synchronized (c.class) {
                 try {
-                    if (f16723b == null) {
-                        f16723b = new c();
+                    if (f17510b == null) {
+                        f17510b = new c();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16723b;
+        return f17510b;
     }
 
     public final void b(com.anythink.core.common.d.f fVar) {
@@ -83,13 +83,13 @@ public class c {
                         a9.size();
                         for (com.anythink.core.common.h.c cVar : a9) {
                             if (cVar != null && cVar.c() == 0) {
-                                com.anythink.core.common.h.n i6 = cVar.i();
+                                com.anythink.core.common.h.n i4 = cVar.i();
                                 bv unitGroupInfo = cVar.e().getUnitGroupInfo();
                                 if (unitGroupInfo != null && unitGroupInfo.g() == 28 && unitGroupInfo.o()) {
                                     com.anythink.core.common.h.ad R8 = unitGroupInfo.R();
                                     Objects.toString(R8);
                                     if (R8 != null) {
-                                        aw awVar = new aw(8, unitGroupInfo, i6, p.a(unitGroupInfo));
+                                        aw awVar = new aw(8, unitGroupInfo, i4, p.a(unitGroupInfo));
                                         awVar.a(biddingInfo);
                                         awVar.a(i);
                                         com.anythink.core.b.d.c.a(R8, awVar, true, 32);

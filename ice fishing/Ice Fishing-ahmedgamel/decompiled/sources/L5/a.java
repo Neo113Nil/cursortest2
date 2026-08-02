@@ -1,6 +1,6 @@
 package L5;
 
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -153,9 +153,9 @@ public abstract class a implements b {
 
     @Override // L5.b
     public void saveLastId(String str) {
-        StringBuilder j6 = AbstractC4404f.j("ChannelTracker.saveLastId(id: ", str, "): idTag=");
-        j6.append(getIdTag());
-        com.onesignal.debug.internal.logging.b.debug$default(j6.toString(), null, 2, null);
+        StringBuilder l9 = Wv.l("ChannelTracker.saveLastId(id: ", str, "): idTag=");
+        l9.append(getIdTag());
+        com.onesignal.debug.internal.logging.b.debug$default(l9.toString(), null, 2, null);
         if (str == null || str.length() == 0) {
             return;
         }

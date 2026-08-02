@@ -10,22 +10,22 @@ import java.lang.ref.WeakReference;
 public final class c extends androidx.emoji2.text.h {
 
     /* renamed from: a, reason: collision with root package name */
-    public final WeakReference f5479a;
+    public final WeakReference f5627a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final WeakReference f5480b;
+    public final WeakReference f5628b;
 
     public c(TextView textView, d dVar) {
-        this.f5479a = new WeakReference(textView);
-        this.f5480b = new WeakReference(dVar);
+        this.f5627a = new WeakReference(textView);
+        this.f5628b = new WeakReference(dVar);
     }
 
     @Override // androidx.emoji2.text.h
     public final void a() {
         InputFilter[] filters;
         int length;
-        TextView textView = (TextView) this.f5479a.get();
-        InputFilter inputFilter = (InputFilter) this.f5480b.get();
+        TextView textView = (TextView) this.f5627a.get();
+        InputFilter inputFilter = (InputFilter) this.f5628b.get();
         if (inputFilter == null || textView == null || (filters = textView.getFilters()) == null) {
             return;
         }

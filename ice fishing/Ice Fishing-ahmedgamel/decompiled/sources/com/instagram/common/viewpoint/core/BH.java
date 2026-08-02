@@ -5,12 +5,12 @@ import java.util.Map;
 import javax.annotation.CheckForNull;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class BH<K, V> extends AbstractC2419qf<K> {
+public class BH<K, V> extends AbstractC2439qf<K> {
     public final Map<K, V> A00;
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BH != com.google.common.collect.Maps$KeySet<K, V> */
     public BH(Map<K, V> map) {
-        this.A00 = (Map) AbstractC2070ki.A04(map);
+        this.A00 = (Map) AbstractC2090ki.A04(map);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BH != com.google.common.collect.Maps$KeySet<K, V> */
@@ -26,8 +26,8 @@ public class BH<K, V> extends AbstractC2419qf<K> {
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BH != com.google.common.collect.Maps$KeySet<K, V> */
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean contains(@CheckForNull Object o6) {
-        return A00().containsKey(o6);
+    public boolean contains(@CheckForNull Object o4) {
+        return A00().containsKey(o4);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BH != com.google.common.collect.Maps$KeySet<K, V> */
@@ -39,14 +39,14 @@ public class BH<K, V> extends AbstractC2419qf<K> {
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BH != com.google.common.collect.Maps$KeySet<K, V> */
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public Iterator<K> iterator() {
-        return AbstractC2370po.A02(A00().entrySet().iterator());
+        return AbstractC2390po.A02(A00().entrySet().iterator());
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.BH != com.google.common.collect.Maps$KeySet<K, V> */
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean remove(@CheckForNull Object o6) {
-        if (contains(o6)) {
-            A00().remove(o6);
+    public boolean remove(@CheckForNull Object o4) {
+        if (contains(o4)) {
+            A00().remove(o4);
             return true;
         }
         return false;

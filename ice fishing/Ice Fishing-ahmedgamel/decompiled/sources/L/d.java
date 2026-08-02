@@ -1,6 +1,6 @@
 package L;
 
-import C2.N;
+import E2.M;
 import android.content.Context;
 import java.util.concurrent.Callable;
 
@@ -8,36 +8,36 @@ import java.util.concurrent.Callable;
 public final class d implements Callable {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f1585a;
+    public final /* synthetic */ int f1694a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final /* synthetic */ String f1586b;
+    public final /* synthetic */ String f1695b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final /* synthetic */ Context f1587c;
+    public final /* synthetic */ Context f1696c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final /* synthetic */ N f1588d;
+    public final /* synthetic */ M f1697d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final /* synthetic */ int f1589e;
+    public final /* synthetic */ int f1698e;
 
-    public /* synthetic */ d(String str, Context context, N n9, int i, int i6) {
-        this.f1585a = i6;
-        this.f1586b = str;
-        this.f1587c = context;
-        this.f1588d = n9;
-        this.f1589e = i;
+    public /* synthetic */ d(String str, Context context, M m9, int i, int i4) {
+        this.f1694a = i4;
+        this.f1695b = str;
+        this.f1696c = context;
+        this.f1697d = m9;
+        this.f1698e = i;
     }
 
     @Override // java.util.concurrent.Callable
     public final Object call() {
-        switch (this.f1585a) {
+        switch (this.f1694a) {
             case 0:
-                return g.a(this.f1586b, this.f1587c, this.f1588d, this.f1589e);
+                return g.a(this.f1695b, this.f1696c, this.f1697d, this.f1698e);
             default:
                 try {
-                    return g.a(this.f1586b, this.f1587c, this.f1588d, this.f1589e);
+                    return g.a(this.f1695b, this.f1696c, this.f1697d, this.f1698e);
                 } catch (Throwable unused) {
                     return new f(-3);
                 }

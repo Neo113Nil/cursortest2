@@ -21,31 +21,31 @@ import com.anythink.core.common.v.q;
 public class SimpleMediaATView extends FrameLayout {
 
     /* renamed from: a, reason: collision with root package name */
-    ImageView f10297a;
+    ImageView f11083a;
 
     /* renamed from: b, reason: collision with root package name */
-    ImageView f10298b;
+    ImageView f11084b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f10299c;
+    private int f11085c;
 
     /* renamed from: d, reason: collision with root package name */
-    private int f10300d;
+    private int f11086d;
 
     /* renamed from: e, reason: collision with root package name */
-    private int f10301e;
+    private int f11087e;
 
     /* renamed from: f, reason: collision with root package name */
-    private Bitmap f10302f;
+    private Bitmap f11088f;
 
     /* renamed from: com.anythink.basead.ui.SimpleMediaATView$1, reason: invalid class name */
     public class AnonymousClass1 implements b.a {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ String f10303a;
+        final /* synthetic */ String f11089a;
 
         public AnonymousClass1(String str) {
-            this.f10303a = str;
+            this.f11089a = str;
         }
 
         @Override // com.anythink.core.common.res.b.a
@@ -54,14 +54,14 @@ public class SimpleMediaATView extends FrameLayout {
 
         @Override // com.anythink.core.common.res.b.a
         public final void onSuccess(String str, final Bitmap bitmap) {
-            if (TextUtils.equals(str, this.f10303a)) {
+            if (TextUtils.equals(str, this.f11089a)) {
                 SimpleMediaATView.this.post(new Runnable() { // from class: com.anythink.basead.ui.SimpleMediaATView.1.1
                     @Override // java.lang.Runnable
                     public final void run() {
-                        SimpleMediaATView.this.f10302f = bitmap;
+                        SimpleMediaATView.this.f11088f = bitmap;
                         SimpleMediaATView.this.a(bitmap);
-                        SimpleMediaATView.this.f10297a.setImageBitmap(bitmap);
-                        SimpleMediaATView.this.f10297a.setVisibility(0);
+                        SimpleMediaATView.this.f11083a.setImageBitmap(bitmap);
+                        SimpleMediaATView.this.f11083a.setVisibility(0);
                         h.a(SimpleMediaATView.this.getContext(), bitmap, new h.a() { // from class: com.anythink.basead.ui.SimpleMediaATView.1.1.1
                             @Override // com.anythink.core.common.v.h.a
                             public final void a() {
@@ -69,8 +69,8 @@ public class SimpleMediaATView extends FrameLayout {
 
                             @Override // com.anythink.core.common.v.h.a
                             public final void a(Bitmap bitmap2) {
-                                SimpleMediaATView.this.f10298b.setImageBitmap(bitmap2);
-                                SimpleMediaATView.this.f10298b.setVisibility(0);
+                                SimpleMediaATView.this.f11084b.setImageBitmap(bitmap2);
+                                SimpleMediaATView.this.f11084b.setVisibility(0);
                             }
                         });
                     }
@@ -87,50 +87,50 @@ public class SimpleMediaATView extends FrameLayout {
         LayoutInflater.from(getContext()).inflate(q.a(getContext(), "myoffer_simple_media_ad_view", "layout"), this);
         DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
         int max = Math.max(displayMetrics.widthPixels, displayMetrics.heightPixels);
-        this.f10301e = max;
-        this.f10299c = max;
-        this.f10300d = max;
-        this.f10298b = (ImageView) findViewById(q.a(getContext(), "myoffer_simple_background", "id"));
+        this.f11087e = max;
+        this.f11085c = max;
+        this.f11086d = max;
+        this.f11084b = (ImageView) findViewById(q.a(getContext(), "myoffer_simple_background", "id"));
         ImageView imageView = (ImageView) findViewById(q.a(getContext(), "myoffer_simple_main_image", "id"));
-        this.f10297a = imageView;
+        this.f11083a = imageView;
         imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-        String B9 = wVar.B();
+        String B3 = wVar.B();
         try {
-            com.anythink.core.common.res.b.a(getContext()).a(new e(1, B9), new AnonymousClass1(B9));
+            com.anythink.core.common.res.b.a(getContext()).a(new e(1, B3), new AnonymousClass1(B3));
         } catch (Throwable unused) {
         }
     }
 
     @Override // android.widget.FrameLayout, android.view.View
-    public void onMeasure(int i, int i6) {
-        boolean z3;
-        super.onMeasure(i, i6);
+    public void onMeasure(int i, int i4) {
+        boolean z6;
+        super.onMeasure(i, i4);
         int size = View.MeasureSpec.getSize(i);
-        int size2 = View.MeasureSpec.getSize(i6);
-        Bitmap bitmap = this.f10302f;
+        int size2 = View.MeasureSpec.getSize(i4);
+        Bitmap bitmap = this.f11088f;
         if (bitmap == null) {
-            if (size != 0 && size < this.f10299c) {
-                this.f10299c = size;
+            if (size != 0 && size < this.f11085c) {
+                this.f11085c = size;
             }
-            if (size2 == 0 || size2 >= this.f10300d) {
+            if (size2 == 0 || size2 >= this.f11086d) {
                 return;
             }
-            this.f10300d = size2;
+            this.f11086d = size2;
             return;
         }
-        boolean z6 = true;
-        if (size == 0 || size >= this.f10299c) {
-            z3 = false;
+        boolean z9 = true;
+        if (size == 0 || size >= this.f11085c) {
+            z6 = false;
         } else {
-            this.f10299c = size;
-            z3 = true;
+            this.f11085c = size;
+            z6 = true;
         }
-        if (size2 == 0 || size2 >= this.f10300d) {
-            z6 = z3;
+        if (size2 == 0 || size2 >= this.f11086d) {
+            z9 = z6;
         } else {
-            this.f10300d = size2;
+            this.f11086d = size2;
         }
-        if (z6) {
+        if (z9) {
             a(bitmap);
         }
     }
@@ -142,44 +142,44 @@ public class SimpleMediaATView extends FrameLayout {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void setLayoutParams(ViewGroup.LayoutParams layoutParams) {
-        boolean z3;
+        boolean z6;
         int i;
         Bitmap bitmap;
         super.setLayoutParams(layoutParams);
-        int i6 = layoutParams.width;
-        boolean z6 = true;
-        if (i6 == -1 || i6 == -2) {
-            this.f10299c = this.f10301e;
-        } else if (this.f10299c != i6) {
-            this.f10299c = i6;
-            z3 = true;
+        int i4 = layoutParams.width;
+        boolean z9 = true;
+        if (i4 == -1 || i4 == -2) {
+            this.f11085c = this.f11087e;
+        } else if (this.f11085c != i4) {
+            this.f11085c = i4;
+            z6 = true;
             i = layoutParams.height;
             if (i != -1 || i == -2) {
-                this.f10300d = this.f10301e;
-            } else if (this.f10300d != i) {
-                this.f10300d = i;
-                bitmap = this.f10302f;
-                if (bitmap == null || !z6) {
+                this.f11086d = this.f11087e;
+            } else if (this.f11086d != i) {
+                this.f11086d = i;
+                bitmap = this.f11088f;
+                if (bitmap == null || !z9) {
                     return;
                 }
                 a(bitmap);
                 return;
             }
-            z6 = z3;
-            bitmap = this.f10302f;
+            z9 = z6;
+            bitmap = this.f11088f;
             if (bitmap == null) {
                 return;
             } else {
                 return;
             }
         }
-        z3 = false;
+        z6 = false;
         i = layoutParams.height;
         if (i != -1) {
         }
-        this.f10300d = this.f10301e;
-        z6 = z3;
-        bitmap = this.f10302f;
+        this.f11086d = this.f11087e;
+        z9 = z6;
+        bitmap = this.f11088f;
         if (bitmap == null) {
         }
     }
@@ -190,23 +190,23 @@ public class SimpleMediaATView extends FrameLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(Bitmap bitmap) {
-        int[] a9 = am.a(this.f10299c, this.f10300d, bitmap.getWidth() / bitmap.getHeight());
-        ViewGroup.LayoutParams layoutParams = this.f10297a.getLayoutParams();
+        int[] a9 = am.a(this.f11085c, this.f11086d, bitmap.getWidth() / bitmap.getHeight());
+        ViewGroup.LayoutParams layoutParams = this.f11083a.getLayoutParams();
         layoutParams.width = a9[0];
         layoutParams.height = a9[1];
-        this.f10297a.setLayoutParams(layoutParams);
+        this.f11083a.setLayoutParams(layoutParams);
         ViewGroup.LayoutParams layoutParams2 = getLayoutParams();
         if (layoutParams2 != null) {
-            int i = layoutParams2.width == -2 ? a9[0] : this.f10299c;
-            int i6 = layoutParams2.height == -2 ? a9[1] : this.f10300d;
-            for (int i9 = 0; i9 < getChildCount(); i9++) {
-                View childAt = getChildAt(i9);
-                if (!childAt.equals(this.f10297a)) {
+            int i = layoutParams2.width == -2 ? a9[0] : this.f11085c;
+            int i4 = layoutParams2.height == -2 ? a9[1] : this.f11086d;
+            for (int i6 = 0; i6 < getChildCount(); i6++) {
+                View childAt = getChildAt(i6);
+                if (!childAt.equals(this.f11083a)) {
                     ViewGroup.LayoutParams layoutParams3 = childAt.getLayoutParams();
                     layoutParams3.width = i;
                     childAt.setLayoutParams(layoutParams3);
                     ViewGroup.LayoutParams layoutParams4 = childAt.getLayoutParams();
-                    layoutParams4.height = i6;
+                    layoutParams4.height = i4;
                     childAt.setLayoutParams(layoutParams4);
                 }
             }

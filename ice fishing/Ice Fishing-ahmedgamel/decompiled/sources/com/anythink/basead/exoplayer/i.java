@@ -52,10 +52,10 @@ public final class i {
     }
 
     private static h a(y[] yVarArr, com.anythink.basead.exoplayer.i.h hVar) {
-        return new j(yVarArr, hVar, new d(), com.anythink.basead.exoplayer.k.c.f8365a);
+        return new j(yVarArr, hVar, new d(), com.anythink.basead.exoplayer.k.c.f9151a);
     }
 
     private static h a(y[] yVarArr, com.anythink.basead.exoplayer.i.h hVar, p pVar) {
-        return new j(yVarArr, hVar, pVar, com.anythink.basead.exoplayer.k.c.f8365a);
+        return new j(yVarArr, hVar, pVar, com.anythink.basead.exoplayer.k.c.f9151a);
     }
 }

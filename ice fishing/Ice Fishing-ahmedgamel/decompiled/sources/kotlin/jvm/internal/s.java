@@ -4,7 +4,7 @@ package kotlin.jvm.internal;
 public abstract class s {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final t f38718a;
+    public static final t f38645a;
 
     static {
         t tVar = null;
@@ -15,11 +15,11 @@ public abstract class s {
         if (tVar == null) {
             tVar = new t();
         }
-        f38718a = tVar;
+        f38645a = tVar;
     }
 
     public static d a(Class cls) {
-        f38718a.getClass();
+        f38645a.getClass();
         return new d(cls);
     }
 }

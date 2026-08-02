@@ -19,9 +19,9 @@ public enum C0L {
     public static byte[] A00;
     public static String[] A01 = {"CVksIG7y5BZQVcPhoXamOy9v2pD0potd", "Xn6utKyfTNVYc3eCIjnAGVNgvwBrE9Xf", "dHqsi4PTCBZc2EyjG9w0STzAzmdR9j4J", "IFMI3gZMa5xtRiC2", "EBxYrp08wkX", "KMJAc0xioojEycQ5bmQYCOSaUa0Lhe5Y", "gtisrmhgHuf94BeFMIL9gXdPHLnGvZTr", "pR6nardY27E"};
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        int i10 = 0;
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             String[] strArr = A01;
@@ -31,11 +31,11 @@ public enum C0L {
             String[] strArr2 = A01;
             strArr2[4] = "ql9lB5mRouY";
             strArr2[7] = "rRoQq0JVJfg";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 62);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 62);
+            i9++;
         }
     }
 

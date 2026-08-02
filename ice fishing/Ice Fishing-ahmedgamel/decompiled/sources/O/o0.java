@@ -8,30 +8,30 @@ import java.lang.reflect.Field;
 public abstract class o0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Field f2115a;
+    public static final Field f2203a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final Field f2116b;
+    public static final Field f2204b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final Field f2117c;
+    public static final Field f2205c;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final boolean f2118d;
+    public static final boolean f2206d;
 
     static {
         try {
             Field declaredField = View.class.getDeclaredField("mAttachInfo");
-            f2115a = declaredField;
+            f2203a = declaredField;
             declaredField.setAccessible(true);
             Class<?> cls = Class.forName("android.view.View$AttachInfo");
             Field declaredField2 = cls.getDeclaredField("mStableInsets");
-            f2116b = declaredField2;
+            f2204b = declaredField2;
             declaredField2.setAccessible(true);
             Field declaredField3 = cls.getDeclaredField("mContentInsets");
-            f2117c = declaredField3;
+            f2205c = declaredField3;
             declaredField3.setAccessible(true);
-            f2118d = true;
+            f2206d = true;
         } catch (ReflectiveOperationException e9) {
             Log.w("WindowInsetsCompat", "Failed to get visible insets from AttachInfo " + e9.getMessage(), e9);
         }

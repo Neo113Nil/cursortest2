@@ -1,5 +1,6 @@
 package m8;
 
+import i8.y;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
@@ -9,95 +10,95 @@ import java.util.TimeZone;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final q f39319a;
+    public final p f39478a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final f f39320b;
+    public final f f39479b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final n8.h f39321c;
+    public final n8.h f39480c;
 
-    public a(q call, f fVar, n8.h hVar) {
+    public a(p call, f fVar, n8.h hVar) {
         kotlin.jvm.internal.h.e(call, "call");
-        this.f39319a = call;
-        this.f39320b = fVar;
-        this.f39321c = hVar;
+        this.f39478a = call;
+        this.f39479b = fVar;
+        this.f39480c = hVar;
     }
 
-    public final void a(r connection) {
+    public final void a(q connection) {
         kotlin.jvm.internal.h.e(connection, "connection");
-        q qVar = this.f39319a;
-        qVar.getClass();
-        TimeZone timeZone = j8.d.f38483a;
-        if (qVar.f39378A != null) {
+        p pVar = this.f39478a;
+        pVar.getClass();
+        TimeZone timeZone = j8.d.f38495a;
+        if (pVar.f39535A != null) {
             throw new IllegalStateException("Check failed.");
         }
-        qVar.f39378A = connection;
-        connection.f39409r.add(new o(qVar, qVar.f39392y));
+        pVar.f39535A = connection;
+        connection.f39566r.add(new n(pVar, pVar.f39549y));
     }
 
     public final void b(e connectPlan) {
         kotlin.jvm.internal.h.e(connectPlan, "connectPlan");
-        this.f39319a.f39386I.add(connectPlan);
+        this.f39478a.f39543I.add(connectPlan);
     }
 
-    public final void c(i8.y route) {
+    public final void c(y route) {
         kotlin.jvm.internal.h.e(route, "route");
-        this.f39319a.getClass();
-        InetSocketAddress inetSocketAddress = route.f38264c;
+        this.f39478a.getClass();
+        InetSocketAddress inetSocketAddress = route.f38383c;
         kotlin.jvm.internal.h.e(inetSocketAddress, "inetSocketAddress");
     }
 
-    public final r d() {
-        return this.f39319a.f39378A;
+    public final q d() {
+        return this.f39478a.f39535A;
     }
 
-    public final void e(i8.y route, IOException iOException) {
+    public final void e(y route, IOException iOException) {
         kotlin.jvm.internal.h.e(route, "route");
-        this.f39319a.getClass();
-        InetSocketAddress inetSocketAddress = route.f38264c;
+        this.f39478a.getClass();
+        InetSocketAddress inetSocketAddress = route.f38383c;
         kotlin.jvm.internal.h.e(inetSocketAddress, "inetSocketAddress");
     }
 
-    public final void f(i8.y route) {
+    public final void f(y route) {
         kotlin.jvm.internal.h.e(route, "route");
-        this.f39319a.getClass();
-        InetSocketAddress inetSocketAddress = route.f38264c;
+        this.f39478a.getClass();
+        InetSocketAddress inetSocketAddress = route.f38383c;
         kotlin.jvm.internal.h.e(inetSocketAddress, "inetSocketAddress");
     }
 
-    public final void g(r connection) {
+    public final void g(q connection) {
         kotlin.jvm.internal.h.e(connection, "connection");
-        this.f39319a.getClass();
+        this.f39478a.getClass();
     }
 
-    public final void h(r connection) {
+    public final void h(q connection) {
         kotlin.jvm.internal.h.e(connection, "connection");
-        connection.f39401j.getClass();
-        q call = this.f39319a;
+        connection.f39558j.getClass();
+        p call = this.f39478a;
         kotlin.jvm.internal.h.e(call, "call");
     }
 
     public final boolean j() {
-        return !kotlin.jvm.internal.h.a((String) this.f39321c.f39521e.f40193v, "GET");
+        return !kotlin.jvm.internal.h.a((String) this.f39480c.f39688e.f40492v, "GET");
     }
 
     public final boolean k() {
-        return this.f39319a.f39384G;
+        return this.f39478a.f39541G;
     }
 
     public final Socket m() {
-        return this.f39319a.m();
+        return this.f39478a.m();
     }
 
     public final void n(e connectPlan) {
         kotlin.jvm.internal.h.e(connectPlan, "connectPlan");
-        this.f39319a.f39386I.remove(connectPlan);
+        this.f39478a.f39543I.remove(connectPlan);
     }
 
-    public final void i(r rVar) {
+    public final void i(q qVar) {
     }
 
-    public final void l(r rVar) {
+    public final void l(q qVar) {
     }
 }

@@ -11,16 +11,16 @@ public final class SN {
     public static String[] A08 = {"AnF1hfDBxlCdLbiDFLPUuTr8rEIYbsCs", "DcTEZsyKQaFycdRSUI2qHgy2Whp5epDQ", "oumPRRvCFD06iOY6OIziseOiJT3r0Y1F", "T68w1lZpg2aHhxWtuqshCv95QbfqOWN4", "NXTzrqYb1pzocIC4FPaomVlkuxRd4v50", "22ngLnp9x9FhYwfhJQ2wIkSm", "Bx3CPZoq94eNKBlojUhsqxvx", "nU7JTpeEhpBFqPr5yRkbJ9HjbOYUZCS7"};
     public final Handler A00;
     public final SM A01;
-    public final C1246Sx A02;
+    public final C1266Sx A02;
     public final String A03;
     public final String A04;
     public final JSONObject A05;
     public final boolean A06;
 
-    public static String A03(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 61);
+    public static String A03(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 61);
         }
         return new String(copyOfRange);
     }
@@ -33,33 +33,33 @@ public final class SN {
         A07();
     }
 
-    public SN(C1246Sx c1246Sx, JSONObject jSONObject, String str, String str2, boolean z3, SM sm) {
-        this.A02 = c1246Sx;
+    public SN(C1266Sx c1266Sx, JSONObject jSONObject, String str, String str2, boolean z6, SM sm) {
+        this.A02 = c1266Sx;
         this.A05 = jSONObject;
         this.A03 = str;
         this.A04 = str2;
-        this.A06 = z3 && A0A(this.A05);
+        this.A06 = z6 && A0A(this.A05);
         this.A01 = sm;
         this.A00 = new Handler(Looper.getMainLooper());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void A09(boolean z3, SL sl) {
+    public void A09(boolean z6, SL sl) {
         String A03 = A03(6, 4, 8);
         String A032 = A03(15, 5, 16);
         String A033 = A03(10, 5, 53);
-        if (z3) {
+        if (z6) {
             if (A033.equals(sl.A02)) {
-                this.A02.A0d(new C1244Sv(sl.A03, -1, -1, this.A04, this.A03));
+                this.A02.A0d(new C1264Sv(sl.A03, -1, -1, this.A04, this.A03));
                 return;
             } else if (A032.equals(sl.A02)) {
-                this.A02.A0a(new C1242St(sl.A03, this.A04, this.A03));
+                this.A02.A0a(new C1262St(sl.A03, this.A04, this.A03));
                 return;
             } else {
                 if (!A03.equals(sl.A02)) {
                     return;
                 }
-                this.A02.A0Z(new C1242St(sl.A03, this.A04, this.A03));
+                this.A02.A0Z(new C1262St(sl.A03, this.A04, this.A03));
                 return;
             }
         }
@@ -72,14 +72,14 @@ public final class SN {
         strArr2[1] = "flwbx6LrQCqeci7k9ke6latQGKdtr0Wf";
         strArr2[4] = "KvRVuDaSTwPscix8AFjTqHYTdR1zRqiC";
         if (equals) {
-            this.A02.A0c(new C1244Sv(sl.A03, -1, -1, this.A04, this.A03));
+            this.A02.A0c(new C1264Sv(sl.A03, -1, -1, this.A04, this.A03));
         } else if (A032.equals(sl.A02)) {
-            this.A02.A0b(new C1242St(sl.A03, this.A04, this.A03));
+            this.A02.A0b(new C1262St(sl.A03, this.A04, this.A03));
         } else {
             if (!A03.equals(sl.A02)) {
                 return;
             }
-            this.A02.A0Y(new C1242St(sl.A03, this.A04, this.A03));
+            this.A02.A0Y(new C1262St(sl.A03, this.A04, this.A03));
         }
     }
 
@@ -91,6 +91,6 @@ public final class SN {
         if (!this.A06) {
             this.A01.ACy();
         }
-        YG.A06.execute(new C1858h0(this));
+        YG.A06.execute(new C1878h0(this));
     }
 }

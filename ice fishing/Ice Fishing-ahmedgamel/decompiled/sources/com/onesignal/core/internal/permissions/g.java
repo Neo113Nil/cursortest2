@@ -4,5 +4,5 @@ package com.onesignal.core.internal.permissions;
 public interface g {
     void registerAsCallback(String str, f fVar);
 
-    void startPrompt(boolean z3, String str, String str2, Class<?> cls);
+    void startPrompt(boolean z6, String str, String str2, Class<?> cls);
 }

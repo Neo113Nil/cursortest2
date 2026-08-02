@@ -1,8 +1,9 @@
 package com.google.android.material.button;
 
-import E3.j;
-import G0.g;
-import J3.a;
+import A3.n;
+import G3.j;
+import G3.k;
+import L3.a;
 import O.X;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -16,9 +17,8 @@ import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.ToggleButton;
+import com.IceFishing.LiveIceFishing.C5248R;
 import com.google.android.material.timepicker.f;
-import com.icefishingapp.icefishing.C5275R;
-import g1.C4523c;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -28,63 +28,63 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.WeakHashMap;
-import k3.AbstractC4632a;
-import q3.C4924d;
-import q3.e;
-import y3.k;
+import m3.AbstractC4742a;
+import r2.C4900e;
+import s3.C4973d;
+import s3.e;
 
 /* loaded from: classes2.dex */
 public class MaterialButtonToggleGroup extends LinearLayout {
 
     /* renamed from: D, reason: collision with root package name */
-    public static final /* synthetic */ int f35898D = 0;
+    public static final /* synthetic */ int f36666D = 0;
 
     /* renamed from: A, reason: collision with root package name */
-    public boolean f35899A;
+    public boolean f36667A;
 
     /* renamed from: B, reason: collision with root package name */
-    public final int f35900B;
+    public final int f36668B;
 
     /* renamed from: C, reason: collision with root package name */
-    public HashSet f35901C;
+    public HashSet f36669C;
 
     /* renamed from: n, reason: collision with root package name */
-    public final ArrayList f35902n;
+    public final ArrayList f36670n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final C4523c f35903u;
+    public final C4900e f36671u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final LinkedHashSet f35904v;
+    public final LinkedHashSet f36672v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final C4924d f35905w;
+    public final C4973d f36673w;
 
     /* renamed from: x, reason: collision with root package name */
-    public Integer[] f35906x;
+    public Integer[] f36674x;
 
     /* renamed from: y, reason: collision with root package name */
-    public boolean f35907y;
+    public boolean f36675y;
 
     /* renamed from: z, reason: collision with root package name */
-    public boolean f35908z;
+    public boolean f36676z;
 
     public MaterialButtonToggleGroup(Context context, AttributeSet attributeSet) {
-        super(a.a(context, attributeSet, C5275R.attr.materialButtonToggleGroupStyle, C5275R.style.Widget_MaterialComponents_MaterialButtonToggleGroup), attributeSet, C5275R.attr.materialButtonToggleGroupStyle);
-        this.f35902n = new ArrayList();
-        this.f35903u = new C4523c(28, this);
-        this.f35904v = new LinkedHashSet();
-        this.f35905w = new C4924d(this);
-        this.f35907y = false;
-        this.f35901C = new HashSet();
-        TypedArray f3 = k.f(getContext(), attributeSet, AbstractC4632a.f38638k, C5275R.attr.materialButtonToggleGroupStyle, C5275R.style.Widget_MaterialComponents_MaterialButtonToggleGroup, new int[0]);
-        setSingleSelection(f3.getBoolean(3, false));
-        this.f35900B = f3.getResourceId(1, -1);
-        this.f35899A = f3.getBoolean(2, false);
+        super(a.a(context, attributeSet, C5248R.attr.materialButtonToggleGroupStyle, C5248R.style.Widget_MaterialComponents_MaterialButtonToggleGroup), attributeSet, C5248R.attr.materialButtonToggleGroupStyle);
+        this.f36670n = new ArrayList();
+        this.f36671u = new C4900e(this);
+        this.f36672v = new LinkedHashSet();
+        this.f36673w = new C4973d(this);
+        this.f36675y = false;
+        this.f36669C = new HashSet();
+        TypedArray f2 = n.f(getContext(), attributeSet, AbstractC4742a.f39427k, C5248R.attr.materialButtonToggleGroupStyle, C5248R.style.Widget_MaterialComponents_MaterialButtonToggleGroup, new int[0]);
+        setSingleSelection(f2.getBoolean(3, false));
+        this.f36668B = f2.getResourceId(1, -1);
+        this.f36667A = f2.getBoolean(2, false);
         setChildrenDrawingOrderEnabled(true);
-        setEnabled(f3.getBoolean(0, true));
-        f3.recycle();
-        WeakHashMap weakHashMap = X.f2054a;
+        setEnabled(f2.getBoolean(0, true));
+        f2.recycle();
+        WeakHashMap weakHashMap = X.f2142a;
         setImportantForAccessibility(1);
     }
 
@@ -109,8 +109,8 @@ public class MaterialButtonToggleGroup extends LinearLayout {
 
     private int getVisibleButtonCount() {
         int i = 0;
-        for (int i6 = 0; i6 < getChildCount(); i6++) {
-            if ((getChildAt(i6) instanceof MaterialButton) && c(i6)) {
+        for (int i4 = 0; i4 < getChildCount(); i4++) {
+            if ((getChildAt(i4) instanceof MaterialButton) && c(i4)) {
                 i++;
             }
         }
@@ -119,7 +119,7 @@ public class MaterialButtonToggleGroup extends LinearLayout {
 
     private void setGeneratedIdIfNeeded(MaterialButton materialButton) {
         if (materialButton.getId() == -1) {
-            WeakHashMap weakHashMap = X.f2054a;
+            WeakHashMap weakHashMap = X.f2142a;
             materialButton.setId(View.generateViewId());
         }
     }
@@ -128,7 +128,7 @@ public class MaterialButtonToggleGroup extends LinearLayout {
         materialButton.setMaxLines(1);
         materialButton.setEllipsize(TextUtils.TruncateAt.END);
         materialButton.setCheckable(true);
-        materialButton.setOnPressedChangeListenerInternal(this.f35903u);
+        materialButton.setOnPressedChangeListenerInternal(this.f36671u);
         materialButton.setShouldDrawSurfaceColorStroke(true);
     }
 
@@ -178,29 +178,29 @@ public class MaterialButtonToggleGroup extends LinearLayout {
         MaterialButton materialButton = (MaterialButton) view;
         setGeneratedIdIfNeeded(materialButton);
         setupButtonChild(materialButton);
-        b(materialButton.getId(), materialButton.f35892H);
-        E3.k shapeAppearanceModel = materialButton.getShapeAppearanceModel();
-        this.f35902n.add(new e(shapeAppearanceModel.f789e, shapeAppearanceModel.f792h, shapeAppearanceModel.f790f, shapeAppearanceModel.f791g));
+        b(materialButton.getId(), materialButton.f36660H);
+        k shapeAppearanceModel = materialButton.getShapeAppearanceModel();
+        this.f36670n.add(new e(shapeAppearanceModel.f1131e, shapeAppearanceModel.f1134h, shapeAppearanceModel.f1132f, shapeAppearanceModel.f1133g));
         materialButton.setEnabled(isEnabled());
-        X.o(materialButton, new g(2, this));
+        X.o(materialButton, new A3.a(4, this));
     }
 
-    public final void b(int i, boolean z3) {
+    public final void b(int i, boolean z6) {
         if (i == -1) {
             Log.e("MButtonToggleGroup", "Button ID is not valid: " + i);
             return;
         }
-        HashSet hashSet = new HashSet(this.f35901C);
-        if (z3 && !hashSet.contains(Integer.valueOf(i))) {
-            if (this.f35908z && !hashSet.isEmpty()) {
+        HashSet hashSet = new HashSet(this.f36669C);
+        if (z6 && !hashSet.contains(Integer.valueOf(i))) {
+            if (this.f36676z && !hashSet.isEmpty()) {
                 hashSet.clear();
             }
             hashSet.add(Integer.valueOf(i));
         } else {
-            if (z3 || !hashSet.contains(Integer.valueOf(i))) {
+            if (z6 || !hashSet.contains(Integer.valueOf(i))) {
                 return;
             }
-            if (!this.f35899A || hashSet.size() > 1) {
+            if (!this.f36667A || hashSet.size() > 1) {
                 hashSet.remove(Integer.valueOf(i));
             }
         }
@@ -212,20 +212,20 @@ public class MaterialButtonToggleGroup extends LinearLayout {
     }
 
     public final void d(Set set) {
-        HashSet hashSet = this.f35901C;
-        this.f35901C = new HashSet(set);
+        HashSet hashSet = this.f36669C;
+        this.f36669C = new HashSet(set);
         for (int i = 0; i < getChildCount(); i++) {
             int id = ((MaterialButton) getChildAt(i)).getId();
             boolean contains = set.contains(Integer.valueOf(id));
             View findViewById = findViewById(id);
             if (findViewById instanceof MaterialButton) {
-                this.f35907y = true;
+                this.f36675y = true;
                 ((MaterialButton) findViewById).setChecked(contains);
-                this.f35907y = false;
+                this.f36675y = false;
             }
             if (hashSet.contains(Integer.valueOf(id)) != set.contains(Integer.valueOf(id))) {
                 set.contains(Integer.valueOf(id));
-                Iterator it = this.f35904v.iterator();
+                Iterator it = this.f36672v.iterator();
                 while (it.hasNext()) {
                     ((f) it.next()).a();
                 }
@@ -236,12 +236,12 @@ public class MaterialButtonToggleGroup extends LinearLayout {
 
     @Override // android.view.ViewGroup, android.view.View
     public final void dispatchDraw(Canvas canvas) {
-        TreeMap treeMap = new TreeMap(this.f35905w);
+        TreeMap treeMap = new TreeMap(this.f36673w);
         int childCount = getChildCount();
         for (int i = 0; i < childCount; i++) {
             treeMap.put((MaterialButton) getChildAt(i), Integer.valueOf(i));
         }
-        this.f35906x = (Integer[]) treeMap.values().toArray(new Integer[0]);
+        this.f36674x = (Integer[]) treeMap.values().toArray(new Integer[0]);
         super.dispatchDraw(canvas);
     }
 
@@ -254,29 +254,29 @@ public class MaterialButtonToggleGroup extends LinearLayout {
             MaterialButton materialButton = (MaterialButton) getChildAt(i);
             if (materialButton.getVisibility() != 8) {
                 j e9 = materialButton.getShapeAppearanceModel().e();
-                e eVar2 = (e) this.f35902n.get(i);
+                e eVar2 = (e) this.f36670n.get(i);
                 if (firstVisibleChildIndex != lastVisibleChildIndex) {
-                    boolean z3 = getOrientation() == 0;
-                    E3.a aVar = e.f40239e;
+                    boolean z6 = getOrientation() == 0;
+                    G3.a aVar = e.f40538e;
                     if (i == firstVisibleChildIndex) {
-                        eVar = z3 ? k.e(this) ? new e(aVar, aVar, eVar2.f40241b, eVar2.f40242c) : new e(eVar2.f40240a, eVar2.f40243d, aVar, aVar) : new e(eVar2.f40240a, aVar, eVar2.f40241b, aVar);
+                        eVar = z6 ? n.e(this) ? new e(aVar, aVar, eVar2.f40540b, eVar2.f40541c) : new e(eVar2.f40539a, eVar2.f40542d, aVar, aVar) : new e(eVar2.f40539a, aVar, eVar2.f40540b, aVar);
                     } else if (i == lastVisibleChildIndex) {
-                        eVar = z3 ? k.e(this) ? new e(eVar2.f40240a, eVar2.f40243d, aVar, aVar) : new e(aVar, aVar, eVar2.f40241b, eVar2.f40242c) : new e(aVar, eVar2.f40243d, aVar, eVar2.f40242c);
+                        eVar = z6 ? n.e(this) ? new e(eVar2.f40539a, eVar2.f40542d, aVar, aVar) : new e(aVar, aVar, eVar2.f40540b, eVar2.f40541c) : new e(aVar, eVar2.f40542d, aVar, eVar2.f40541c);
                     } else {
                         eVar2 = null;
                     }
                     eVar2 = eVar;
                 }
                 if (eVar2 == null) {
-                    e9.f778e = new E3.a(0.0f);
-                    e9.f779f = new E3.a(0.0f);
-                    e9.f780g = new E3.a(0.0f);
-                    e9.f781h = new E3.a(0.0f);
+                    e9.f1120e = new G3.a(0.0f);
+                    e9.f1121f = new G3.a(0.0f);
+                    e9.f1122g = new G3.a(0.0f);
+                    e9.f1123h = new G3.a(0.0f);
                 } else {
-                    e9.f778e = eVar2.f40240a;
-                    e9.f781h = eVar2.f40243d;
-                    e9.f779f = eVar2.f40241b;
-                    e9.f780g = eVar2.f40242c;
+                    e9.f1120e = eVar2.f40539a;
+                    e9.f1123h = eVar2.f40542d;
+                    e9.f1121f = eVar2.f40540b;
+                    e9.f1122g = eVar2.f40541c;
                 }
                 materialButton.setShapeAppearanceModel(e9.a());
             }
@@ -284,17 +284,17 @@ public class MaterialButtonToggleGroup extends LinearLayout {
     }
 
     public int getCheckedButtonId() {
-        if (!this.f35908z || this.f35901C.isEmpty()) {
+        if (!this.f36676z || this.f36669C.isEmpty()) {
             return -1;
         }
-        return ((Integer) this.f35901C.iterator().next()).intValue();
+        return ((Integer) this.f36669C.iterator().next()).intValue();
     }
 
     public List<Integer> getCheckedButtonIds() {
         ArrayList arrayList = new ArrayList();
         for (int i = 0; i < getChildCount(); i++) {
             int id = ((MaterialButton) getChildAt(i)).getId();
-            if (this.f35901C.contains(Integer.valueOf(id))) {
+            if (this.f36669C.contains(Integer.valueOf(id))) {
                 arrayList.add(Integer.valueOf(id));
             }
         }
@@ -302,19 +302,19 @@ public class MaterialButtonToggleGroup extends LinearLayout {
     }
 
     @Override // android.view.ViewGroup
-    public final int getChildDrawingOrder(int i, int i6) {
-        Integer[] numArr = this.f35906x;
-        if (numArr != null && i6 < numArr.length) {
-            return numArr[i6].intValue();
+    public final int getChildDrawingOrder(int i, int i4) {
+        Integer[] numArr = this.f36674x;
+        if (numArr != null && i4 < numArr.length) {
+            return numArr[i4].intValue();
         }
         Log.w("MButtonToggleGroup", "Child order wasn't updated");
-        return i6;
+        return i4;
     }
 
     @Override // android.view.View
     public final void onFinishInflate() {
         super.onFinishInflate();
-        int i = this.f35900B;
+        int i = this.f36668B;
         if (i != -1) {
             d(Collections.singleton(Integer.valueOf(i)));
         }
@@ -323,14 +323,14 @@ public class MaterialButtonToggleGroup extends LinearLayout {
     @Override // android.view.View
     public final void onInitializeAccessibilityNodeInfo(AccessibilityNodeInfo accessibilityNodeInfo) {
         super.onInitializeAccessibilityNodeInfo(accessibilityNodeInfo);
-        accessibilityNodeInfo.setCollectionInfo(AccessibilityNodeInfo.CollectionInfo.obtain(1, getVisibleButtonCount(), false, this.f35908z ? 1 : 2));
+        accessibilityNodeInfo.setCollectionInfo(AccessibilityNodeInfo.CollectionInfo.obtain(1, getVisibleButtonCount(), false, this.f36676z ? 1 : 2));
     }
 
     @Override // android.widget.LinearLayout, android.view.View
-    public final void onMeasure(int i, int i6) {
+    public final void onMeasure(int i, int i4) {
         e();
         a();
-        super.onMeasure(i, i6);
+        super.onMeasure(i, i4);
     }
 
     @Override // android.view.ViewGroup
@@ -341,31 +341,31 @@ public class MaterialButtonToggleGroup extends LinearLayout {
         }
         int indexOfChild = indexOfChild(view);
         if (indexOfChild >= 0) {
-            this.f35902n.remove(indexOfChild);
+            this.f36670n.remove(indexOfChild);
         }
         e();
         a();
     }
 
     @Override // android.view.View
-    public void setEnabled(boolean z3) {
-        super.setEnabled(z3);
+    public void setEnabled(boolean z6) {
+        super.setEnabled(z6);
         for (int i = 0; i < getChildCount(); i++) {
-            ((MaterialButton) getChildAt(i)).setEnabled(z3);
+            ((MaterialButton) getChildAt(i)).setEnabled(z6);
         }
     }
 
-    public void setSelectionRequired(boolean z3) {
-        this.f35899A = z3;
+    public void setSelectionRequired(boolean z6) {
+        this.f36667A = z6;
     }
 
-    public void setSingleSelection(boolean z3) {
-        if (this.f35908z != z3) {
-            this.f35908z = z3;
+    public void setSingleSelection(boolean z6) {
+        if (this.f36676z != z6) {
+            this.f36676z = z6;
             d(new HashSet());
         }
         for (int i = 0; i < getChildCount(); i++) {
-            ((MaterialButton) getChildAt(i)).setA11yClassName((this.f35908z ? RadioButton.class : ToggleButton.class).getName());
+            ((MaterialButton) getChildAt(i)).setA11yClassName((this.f36676z ? RadioButton.class : ToggleButton.class).getName());
         }
     }
 

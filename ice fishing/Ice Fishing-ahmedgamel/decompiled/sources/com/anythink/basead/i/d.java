@@ -21,51 +21,51 @@ import org.json.JSONObject;
 public final class d extends com.anythink.core.common.m.a {
 
     /* renamed from: a, reason: collision with root package name */
-    String f9081a;
+    String f9867a;
 
     /* renamed from: b, reason: collision with root package name */
-    String f9082b;
+    String f9868b;
 
     /* renamed from: c, reason: collision with root package name */
-    String f9083c;
+    String f9869c;
 
     /* renamed from: d, reason: collision with root package name */
-    int f9084d;
+    int f9870d;
 
     /* renamed from: e, reason: collision with root package name */
-    int f9085e;
+    int f9871e;
 
     /* renamed from: f, reason: collision with root package name */
-    int f9086f;
+    int f9872f;
 
     /* renamed from: g, reason: collision with root package name */
-    int f9087g;
+    int f9873g;
 
     /* renamed from: h, reason: collision with root package name */
-    String[] f9088h;
+    String[] f9874h;
     int i;
 
     /* renamed from: j, reason: collision with root package name */
-    int f9089j;
+    int f9875j;
 
     /* renamed from: k, reason: collision with root package name */
-    String f9090k;
+    String f9876k;
 
     /* renamed from: l, reason: collision with root package name */
-    String f9091l = "OnlineOfferLoader";
+    String f9877l = "OnlineOfferLoader";
 
-    public d(x xVar, int i, int i6, String[] strArr, String str) {
-        this.f9081a = xVar.f14158d;
-        this.f9082b = xVar.f14156b;
-        this.f9083c = xVar.f14157c;
-        this.i = xVar.f14159e;
-        this.f9086f = i;
-        this.f9087g = i6;
-        this.f9088h = strArr;
-        this.f9084d = xVar.f14162h;
-        this.f9085e = xVar.i;
-        this.f9089j = xVar.f14163j;
-        this.f9090k = str;
+    public d(x xVar, int i, int i4, String[] strArr, String str) {
+        this.f9867a = xVar.f14944d;
+        this.f9868b = xVar.f14942b;
+        this.f9869c = xVar.f14943c;
+        this.i = xVar.f14945e;
+        this.f9872f = i;
+        this.f9873g = i4;
+        this.f9874h = strArr;
+        this.f9870d = xVar.f14948h;
+        this.f9871e = xVar.i;
+        this.f9875j = xVar.f14949j;
+        this.f9876k = str;
     }
 
     @Override // com.anythink.core.common.m.a
@@ -80,7 +80,7 @@ public final class d extends com.anythink.core.common.m.a {
     @Override // com.anythink.core.common.m.a
     public final Map<String, String> c() {
         HashMap hashMap = new HashMap();
-        hashMap.put("Content-Encoding", com.anythink.expressad.foundation.g.f.g.b.f19341d);
+        hashMap.put("Content-Encoding", com.anythink.expressad.foundation.g.f.g.b.f20128d);
         hashMap.put("Content-Type", "application/json;charset=utf-8");
         return hashMap;
     }
@@ -99,10 +99,10 @@ public final class d extends com.anythink.core.common.m.a {
         JSONObject e9 = super.e();
         try {
             e9.put("app_id", t.b().p());
-            e9.put(com.anythink.core.common.m.e.bk, this.f9082b);
-            e9.put("session_id", t.b().g(this.f9082b));
-            e9.put("t_g_id", this.f9084d);
-            e9.put("gro_id", this.f9085e);
+            e9.put(com.anythink.core.common.m.e.bk, this.f9868b);
+            e9.put("session_id", t.b().g(this.f9868b));
+            e9.put("t_g_id", this.f9870d);
+            e9.put("gro_id", this.f9871e);
             String C8 = t.b().C();
             if (!TextUtils.isEmpty(C8)) {
                 e9.put("sy_id", C8);
@@ -115,7 +115,7 @@ public final class d extends com.anythink.core.common.m.a {
                 e9.put("bk_id", D8);
             }
             e9.put("deny", m.q(t.b().g()));
-            JSONObject a9 = com.anythink.core.common.m.e.a(this.f9082b);
+            JSONObject a9 = com.anythink.core.common.m.e.a(this.f9868b);
             if (a9 != null) {
                 e9.put("customs", a9);
             }
@@ -136,32 +136,32 @@ public final class d extends com.anythink.core.common.m.a {
         String a9 = k.a(e().toString());
         String a10 = k.a(f().toString());
         hashMap.put("p", a9);
-        hashMap.put(com.anythink.core.common.m.e.f14631W, a10);
-        hashMap.put("request_id", this.f9081a);
-        hashMap.put("ad_source_id", Integer.valueOf(Integer.parseInt(this.f9083c)));
-        hashMap.put(com.anythink.expressad.a.f17625h, Integer.valueOf(this.i));
-        String[] strArr = this.f9088h;
+        hashMap.put(com.anythink.core.common.m.e.f15417W, a10);
+        hashMap.put("request_id", this.f9867a);
+        hashMap.put("ad_source_id", Integer.valueOf(Integer.parseInt(this.f9869c)));
+        hashMap.put(com.anythink.expressad.a.f18412h, Integer.valueOf(this.i));
+        String[] strArr = this.f9874h;
         char c9 = 0;
         if (strArr != null && strArr.length > 0) {
             JSONArray jSONArray = new JSONArray();
-            for (String str : this.f9088h) {
+            for (String str : this.f9874h) {
                 jSONArray.put(str);
             }
             hashMap.put("exclude_offers", jSONArray);
         }
         if (t.b().l() != null) {
-            hashMap.put(com.anythink.core.b.a.a.f11630c, k.a(t.b().l().toString()));
+            hashMap.put(com.anythink.core.b.a.a.f12416c, k.a(t.b().l().toString()));
         }
-        int i = this.f9086f;
-        if (i > 0 && this.f9087g > 0) {
+        int i = this.f9872f;
+        if (i > 0 && this.f9873g > 0) {
             hashMap.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_WIDTH, Integer.valueOf(i));
-            hashMap.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_HEIGHT, Integer.valueOf(this.f9087g));
+            hashMap.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_HEIGHT, Integer.valueOf(this.f9873g));
         }
         JSONObject jSONObject = new JSONObject(hashMap);
         try {
-            String valueOf = String.valueOf(this.f9089j);
+            String valueOf = String.valueOf(this.f9875j);
             switch (valueOf.hashCode()) {
-                case j.f5817X /* 49 */:
+                case j.f6603X /* 49 */:
                     if (valueOf.equals("1")) {
                         c9 = 3;
                         break;
@@ -223,7 +223,7 @@ public final class d extends com.anythink.core.common.m.a {
 
     @Override // com.anythink.core.common.m.a
     public final int l() {
-        return com.anythink.expressad.video.module.a.a.f21731U;
+        return com.anythink.expressad.video.module.a.a.f22518U;
     }
 
     @Override // com.anythink.core.common.m.a
@@ -244,18 +244,18 @@ public final class d extends com.anythink.core.common.m.a {
     @Override // com.anythink.core.common.m.a
     public final void a(int i, Object obj) {
         if (obj == null) {
-            a(i, o.f14702m, "Return Empty Ad.", ErrorCode.getErrorCode(ErrorCode.noADError, "", ""));
+            a(i, o.f15488m, "Return Empty Ad.", ErrorCode.getErrorCode(ErrorCode.noADError, "", ""));
             return;
         }
         try {
             JSONObject jSONObject = new JSONObject(obj.toString());
             if (TextUtils.isEmpty(jSONObject.optString("data"))) {
-                a(i, o.f14703n, obj.toString(), ErrorCode.getErrorCode(ErrorCode.noADError, "", obj.toString()));
+                a(i, o.f15489n, obj.toString(), ErrorCode.getErrorCode(ErrorCode.noADError, "", obj.toString()));
             } else {
                 super.a(i, jSONObject);
             }
         } catch (Throwable unused) {
-            a(i, o.f14704o, obj.toString(), ErrorCode.getErrorCode(ErrorCode.noADError, "", obj.toString()));
+            a(i, o.f15490o, obj.toString(), ErrorCode.getErrorCode(ErrorCode.noADError, "", obj.toString()));
         }
     }
 }

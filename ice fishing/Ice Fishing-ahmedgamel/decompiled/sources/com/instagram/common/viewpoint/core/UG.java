@@ -10,8 +10,8 @@ public final class UG {
         return A00;
     }
 
-    public final ZJ A01(T8 t82, boolean z3) {
-        return new ZJ(t82, z3, new C1236Sn());
+    public final ZJ A01(T8 t82, boolean z6) {
+        return new ZJ(t82, z6, new C1256Sn());
     }
 
     public final Map<String, String> A02(T8 t82) {

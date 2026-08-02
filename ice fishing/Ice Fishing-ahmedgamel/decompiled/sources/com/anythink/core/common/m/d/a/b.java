@@ -8,14 +8,14 @@ import java.nio.ByteBuffer;
 public class b extends c {
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f14576b = "b";
+    private static final String f15362b = "b";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final int f14577c = 2;
+    private static final int f15363c = 2;
 
     @Override // com.anythink.core.common.m.d.a.c
     public final synchronized void a(d dVar, d.a aVar) {
-        InputStream inputStream = this.f14580a.getInputStream();
+        InputStream inputStream = this.f15366a.getInputStream();
         if (a(inputStream) != 2) {
             if (aVar != null) {
                 aVar.a((Object) null);

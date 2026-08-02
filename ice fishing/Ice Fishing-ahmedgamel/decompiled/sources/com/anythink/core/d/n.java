@@ -17,42 +17,42 @@ import org.json.JSONObject;
 public class n {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f17440a = "n";
+    public static final String f18227a = "n";
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile n f17441b;
+    private static volatile n f18228b;
 
     /* renamed from: c, reason: collision with root package name */
-    private Context f17442c;
+    private Context f18229c;
 
     /* renamed from: e, reason: collision with root package name */
-    private final p f17444e;
+    private final p f18231e;
 
     /* renamed from: d, reason: collision with root package name */
-    private final s f17443d = new s();
+    private final s f18230d = new s();
 
     /* renamed from: f, reason: collision with root package name */
-    private final o f17445f = new o(this);
+    private final o f18232f = new o(this);
 
     public static class a implements b {
 
         /* renamed from: a, reason: collision with root package name */
-        private final String f17463a;
+        private final String f18250a;
 
         /* renamed from: b, reason: collision with root package name */
-        private b f17464b;
+        private b f18251b;
 
         /* renamed from: c, reason: collision with root package name */
-        private volatile boolean f17465c = false;
+        private volatile boolean f18252c = false;
 
         public a(String str, b bVar) {
-            this.f17463a = str;
-            this.f17464b = bVar;
+            this.f18250a = str;
+            this.f18251b = bVar;
         }
 
         @Override // com.anythink.core.d.n.b
         public final void b() {
-            b bVar = this.f17464b;
+            b bVar = this.f18251b;
             if (bVar != null) {
                 bVar.b();
             }
@@ -60,7 +60,7 @@ public class n {
 
         @Override // com.anythink.core.d.n.b
         public final void a() {
-            b bVar = this.f17464b;
+            b bVar = this.f18251b;
             if (bVar != null) {
                 bVar.a();
             }
@@ -68,7 +68,7 @@ public class n {
 
         @Override // com.anythink.core.d.n.b
         public final void b(l lVar) {
-            b bVar = this.f17464b;
+            b bVar = this.f18251b;
             if (bVar != null) {
                 bVar.b(lVar);
             }
@@ -76,21 +76,21 @@ public class n {
 
         @Override // com.anythink.core.d.n.b
         public final void a(l lVar) {
-            if (this.f17464b == null || this.f17465c) {
+            if (this.f18251b == null || this.f18252c) {
                 return;
             }
-            n.a(com.anythink.core.common.d.t.b().g()).b(this.f17463a, lVar.aZ());
-            this.f17465c = true;
-            this.f17464b.a(lVar);
+            n.a(com.anythink.core.common.d.t.b().g()).b(this.f18250a, lVar.aZ());
+            this.f18252c = true;
+            this.f18251b.a(lVar);
         }
 
         @Override // com.anythink.core.d.n.b
         public final void a(AdError adError) {
-            if (this.f17464b == null || this.f17465c) {
+            if (this.f18251b == null || this.f18252c) {
                 return;
             }
-            this.f17465c = true;
-            this.f17464b.a(adError);
+            this.f18252c = true;
+            this.f18251b.a(adError);
         }
     }
 
@@ -107,27 +107,27 @@ public class n {
     }
 
     private n(Context context) {
-        this.f17442c = context;
-        this.f17444e = new p(context);
+        this.f18229c = context;
+        this.f18231e = new p(context);
     }
 
     public final l d(String str) {
-        return this.f17444e.a(com.anythink.core.common.d.t.b().p(), str, 2);
+        return this.f18231e.a(com.anythink.core.common.d.t.b().p(), str, 2);
     }
 
     public final l e(String str) {
-        return this.f17444e.a(com.anythink.core.common.d.t.b().p(), str, 0);
+        return this.f18231e.a(com.anythink.core.common.d.t.b().p(), str, 0);
     }
 
     public final l f(String str) {
         String p9 = com.anythink.core.common.d.t.b().p();
-        if (this.f17444e.a(com.anythink.core.common.d.t.b().p(), str, 0) != null) {
-            this.f17444e.b(p9, str, 1);
+        if (this.f18231e.a(com.anythink.core.common.d.t.b().p(), str, 0) != null) {
+            this.f18231e.b(p9, str, 1);
             return null;
         }
-        l a9 = this.f17444e.a(p9, str, 1);
+        l a9 = this.f18231e.a(p9, str, 1);
         if (a9 == null) {
-            a9 = this.f17443d.b(str);
+            a9 = this.f18230d.b(str);
         }
         if (a9 != null) {
             a(str, a9, null, 1);
@@ -136,34 +136,34 @@ public class n {
     }
 
     public final void g(String str) {
-        this.f17444e.d(com.anythink.core.common.d.t.b().p(), str);
+        this.f18231e.d(com.anythink.core.common.d.t.b().p(), str);
     }
 
     public final boolean h(String str) {
-        return this.f17444e.b(com.anythink.core.common.d.t.b().p(), str);
+        return this.f18231e.b(com.anythink.core.common.d.t.b().p(), str);
     }
 
     public final void i(String str) {
-        this.f17443d.a(str);
+        this.f18230d.a(str);
     }
 
     public final int j(String str) {
-        return this.f17444e.e(com.anythink.core.common.d.t.b().p(), str);
+        return this.f18231e.e(com.anythink.core.common.d.t.b().p(), str);
     }
 
     public static n a(Context context) {
-        if (f17441b == null) {
+        if (f18228b == null) {
             synchronized (n.class) {
                 try {
-                    if (f17441b == null) {
-                        f17441b = new n(context);
+                    if (f18228b == null) {
+                        f18228b = new n(context);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f17441b;
+        return f18228b;
     }
 
     public final l b(String str) {
@@ -171,43 +171,43 @@ public class n {
     }
 
     public final l c(String str) {
-        return this.f17444e.a(com.anythink.core.common.d.t.b().p(), str);
+        return this.f18231e.a(com.anythink.core.common.d.t.b().p(), str);
     }
 
     public final void b(String str, int i) {
-        this.f17444e.a(str, i);
+        this.f18231e.a(str, i);
     }
 
     public final void a() {
-        af.a(this.f17442c, u.b.f12855j);
+        af.a(this.f18229c, u.b.f13641j);
     }
 
     public final void a(String str, l lVar, JSONObject jSONObject, int i) {
-        this.f17444e.a(com.anythink.core.common.d.t.b().p(), str, lVar, jSONObject, i);
+        this.f18231e.a(com.anythink.core.common.d.t.b().p(), str, lVar, jSONObject, i);
     }
 
     public final l a(String str) {
-        return this.f17444e.c(com.anythink.core.common.d.t.b().p(), str);
+        return this.f18231e.c(com.anythink.core.common.d.t.b().p(), str);
     }
 
     public final l a(String str, int i) {
-        return this.f17444e.a(com.anythink.core.common.d.t.b().p(), str, i);
+        return this.f18231e.a(com.anythink.core.common.d.t.b().p(), str, i);
     }
 
-    public final void a(final l lVar, final String str, final String str2, final String str3, final Map<String, Object> map, final b bVar, final int i, final boolean z3, final ATAdRequest aTAdRequest) {
+    public final void a(final l lVar, final String str, final String str2, final String str3, final Map<String, Object> map, final b bVar, final int i, final boolean z6, final ATAdRequest aTAdRequest) {
         com.anythink.core.common.v.b.b.a().c(new Runnable() { // from class: com.anythink.core.d.n.1
 
             /* renamed from: h, reason: collision with root package name */
-            final /* synthetic */ boolean f17453h = true;
+            final /* synthetic */ boolean f18240h = true;
 
             @Override // java.lang.Runnable
             public final void run() {
                 final a aVar = new a(str3, bVar);
                 l lVar2 = lVar;
                 String aj = lVar2 != null ? lVar2.aj() : "";
-                Map<String, Object> d2 = com.anythink.core.common.d.t.b().d(str3);
-                bm bmVar = new bm(str, str2, str3, aj, d2, map, com.anythink.core.common.u.a().g(str3), aTAdRequest);
-                bmVar.a(this.f17453h);
+                Map<String, Object> d9 = com.anythink.core.common.d.t.b().d(str3);
+                bm bmVar = new bm(str, str2, str3, aj, d9, map, com.anythink.core.common.u.a().g(str3), aTAdRequest);
+                bmVar.a(this.f18240h);
                 bmVar.a(i);
                 l lVar3 = lVar;
                 if (lVar3 != null) {
@@ -216,7 +216,7 @@ public class n {
                 l lVar4 = lVar;
                 com.anythink.core.common.t.b bVar2 = null;
                 if (lVar4 == null) {
-                    n.this.f17445f.a(n.this.f17442c, bmVar, new m(n.this, bmVar, aVar, null));
+                    n.this.f18232f.a(n.this.f18229c, bmVar, new m(n.this, bmVar, aVar, null));
                     return;
                 }
                 if (lVar4.br()) {
@@ -226,29 +226,29 @@ public class n {
                 }
                 lVar.b(3);
                 bmVar.a(lVar.bb());
-                if (z3) {
-                    n.this.f17445f.a(n.this.f17442c, bmVar, new m(n.this, bmVar, aVar, lVar));
+                if (z6) {
+                    n.this.f18232f.a(n.this.f18229c, bmVar, new m(n.this, bmVar, aVar, lVar));
                     return;
                 }
                 if (lVar.aR()) {
                     aVar.a(lVar);
                     bmVar.a((Map<String, String>) null);
-                    n.this.f17445f.a(n.this.f17442c, bmVar, new m(n.this, bmVar, aVar, lVar));
+                    n.this.f18232f.a(n.this.f18229c, bmVar, new m(n.this, bmVar, aVar, lVar));
                     return;
                 }
                 if (lVar.aT()) {
                     aVar.a(lVar);
-                    aVar.f17464b = null;
+                    aVar.f18251b = null;
                 }
                 l e9 = n.this.e(str3);
                 if (e9 == null) {
                     bmVar.a((Map<String, String>) null);
-                    n.this.f17445f.a(n.this.f17442c, bmVar, new m(n.this, bmVar, aVar, lVar));
+                    n.this.f18232f.a(n.this.f18229c, bmVar, new m(n.this, bmVar, aVar, lVar));
                     return;
                 }
                 bmVar.a(e9.bb());
-                boolean equals = d2.equals(e9.ag());
-                if (equals && !e9.bk() && !com.anythink.core.common.r.a().b(n.this.f17442c, str3) && !e9.bl()) {
+                boolean equals = d9.equals(e9.ag());
+                if (equals && !e9.bk() && !com.anythink.core.common.r.a().b(n.this.f18229c, str3) && !e9.bl()) {
                     aVar.a(lVar);
                     return;
                 }
@@ -271,7 +271,7 @@ public class n {
                 }
                 com.anythink.core.common.t.b bVar3 = bVar2;
                 com.anythink.core.c.b.a().b(str3);
-                n.this.f17445f.a(n.this.f17442c, bmVar, new m(n.this, bmVar, aVar, lVar, a9, bVar3, zArr));
+                n.this.f18232f.a(n.this.f18229c, bmVar, new m(n.this, bmVar, aVar, lVar, a9, bVar3, zArr));
             }
         }, 2);
     }
@@ -318,41 +318,41 @@ public class n {
                 a9.a(jSONObject, bmVar.d());
             }
         } catch (Throwable th) {
-            Log.e(f17440a, "parse place strategy error:" + th.getMessage());
+            Log.e(f18227a, "parse place strategy error:" + th.getMessage());
         }
         final l a10 = l.a(bmVar.d(), jSONObject);
-        final String d2 = bmVar.d();
+        final String d9 = bmVar.d();
         if (a10 != null) {
             a10.b(bmVar.o() ? 5 : 2);
             if (a10.at() != 1) {
                 jSONObject = null;
             }
-            a(d2, a10, jSONObject, a10.aZ());
-            int h9 = bmVar.h();
+            a(d9, a10, jSONObject, a10.aZ());
+            int h3 = bmVar.h();
             a10.aZ();
-            if (h9 == 3 && a10.aT()) {
+            if (h3 == 3 && a10.aT()) {
                 bmVar.a(2);
                 bmVar.a((Map<String, String>) null);
-                this.f17445f.a(this.f17442c, bmVar);
+                this.f18232f.a(this.f18229c, bmVar);
             } else if (a10.aU()) {
                 com.anythink.core.common.v.b.b.a().a(new Runnable() { // from class: com.anythink.core.d.n.2
                     @Override // java.lang.Runnable
                     public final void run() {
                         if (a10.ah() == 1) {
-                            com.anythink.core.common.r.a().a(n.this.f17442c, d2, bmVar.j());
+                            com.anythink.core.common.r.a().a(n.this.f18229c, d9, bmVar.j());
                         }
                         if (!a10.aS()) {
-                            n.this.f17444e.b(bmVar.b(), d2, 2);
+                            n.this.f18231e.b(bmVar.b(), d9, 2);
                             return;
                         }
                         bmVar.a(1);
-                        l d9 = n.this.d(d2);
-                        if (d9 != null) {
-                            bmVar.a(d9.bb());
+                        l d10 = n.this.d(d9);
+                        if (d10 != null) {
+                            bmVar.a(d10.bb());
                         } else {
                             bmVar.a((Map<String, String>) null);
                         }
-                        n.this.f17445f.a(n.this.f17442c, bmVar);
+                        n.this.f18232f.a(n.this.f18229c, bmVar);
                     }
                 });
             }
@@ -400,6 +400,6 @@ public class n {
         if (lVar == null) {
             return;
         }
-        this.f17444e.b(str, str2, lVar.aZ());
+        this.f18231e.b(str, str2, lVar.aZ());
     }
 }

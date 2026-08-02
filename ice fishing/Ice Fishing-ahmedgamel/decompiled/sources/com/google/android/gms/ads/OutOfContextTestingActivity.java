@@ -1,33 +1,33 @@
 package com.google.android.gms.ads;
 
-import W2.b;
+import Y2.b;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.widget.LinearLayout;
-import com.google.android.gms.internal.ads.BinderC3464kd;
-import com.icefishingapp.icefishing.C5275R;
-import q2.C4876d;
-import q2.C4896n;
-import q2.C4900p;
-import q2.InterfaceC4908t0;
+import com.IceFishing.LiveIceFishing.C5248R;
+import com.google.android.gms.internal.ads.BinderC3487kd;
+import s2.C4925d;
+import s2.C4945n;
+import s2.C4949p;
+import s2.InterfaceC4957t0;
 
 /* loaded from: classes.dex */
 public final class OutOfContextTestingActivity extends Activity {
     @Override // android.app.Activity
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        C4896n c4896n = C4900p.f40199g.f40201b;
-        BinderC3464kd binderC3464kd = new BinderC3464kd();
-        c4896n.getClass();
-        InterfaceC4908t0 interfaceC4908t0 = (InterfaceC4908t0) new C4876d(c4896n, this, binderC3464kd).d(this, false);
-        if (interfaceC4908t0 == null) {
+        C4945n c4945n = C4949p.f40498g.f40500b;
+        BinderC3487kd binderC3487kd = new BinderC3487kd();
+        c4945n.getClass();
+        InterfaceC4957t0 interfaceC4957t0 = (InterfaceC4957t0) new C4925d(c4945n, this, binderC3487kd).d(this, false);
+        if (interfaceC4957t0 == null) {
             finish();
             return;
         }
-        setContentView(C5275R.layout.admob_empty_layout);
-        LinearLayout linearLayout = (LinearLayout) findViewById(C5275R.id.layout);
+        setContentView(C5248R.layout.admob_empty_layout);
+        LinearLayout linearLayout = (LinearLayout) findViewById(C5248R.id.layout);
         Intent intent = getIntent();
         if (intent == null) {
             finish();
@@ -39,7 +39,7 @@ public final class OutOfContextTestingActivity extends Activity {
             return;
         }
         try {
-            interfaceC4908t0.U2(stringExtra, new b(this), new b(linearLayout));
+            interfaceC4957t0.E1(stringExtra, new b(this), new b(linearLayout));
         } catch (RemoteException unused) {
             finish();
         }

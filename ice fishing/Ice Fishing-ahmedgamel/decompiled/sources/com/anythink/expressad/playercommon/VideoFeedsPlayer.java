@@ -1,6 +1,6 @@
 package com.anythink.expressad.playercommon;
 
-import D.y;
+import D.x;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Handler;
@@ -10,6 +10,7 @@ import android.os.SystemClock;
 import android.text.TextUtils;
 import android.view.SurfaceHolder;
 import android.view.View;
+import com.IceFishing.LiveIceFishing.k;
 import com.anythink.basead.exoplayer.ad;
 import com.anythink.basead.exoplayer.ae;
 import com.anythink.basead.exoplayer.d;
@@ -26,12 +27,12 @@ import com.anythink.core.common.d.t;
 import com.anythink.core.common.u.e;
 import com.anythink.core.common.v.m;
 import com.anythink.expressad.reward.player.c;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.io.File;
 import java.lang.ref.WeakReference;
 import java.util.Timer;
 import java.util.TimerTask;
-import u.AbstractC5049e;
+import u.AbstractC5050e;
 
 /* loaded from: classes.dex */
 public class VideoFeedsPlayer implements w.c {
@@ -81,14 +82,14 @@ public class VideoFeedsPlayer implements w.c {
                 }
                 VideoFeedsPlayer videoFeedsPlayer = VideoFeedsPlayer.this;
                 videoFeedsPlayer.mCurrentPosition = videoFeedsPlayer.exoPlayer.t();
-                float f3 = VideoFeedsPlayer.this.mCurrentPosition % 1000;
+                float f2 = VideoFeedsPlayer.this.mCurrentPosition % 1000;
                 int round = Math.round(VideoFeedsPlayer.this.mCurrentPosition / 1000.0f);
                 long unused = VideoFeedsPlayer.this.mCurrentPosition;
                 if (VideoFeedsPlayer.this.exoPlayer == null || VideoFeedsPlayer.this.exoPlayer.s() <= 0) {
                     j6 = 0;
                 } else {
                     j6 = VideoFeedsPlayer.this.exoPlayer.s() / 1000;
-                    if (f3 > 0.0f && f3 < 500.0f) {
+                    if (f2 > 0.0f && f2 < 500.0f) {
                         round++;
                     }
                 }
@@ -113,7 +114,7 @@ public class VideoFeedsPlayer implements w.c {
     };
     private boolean mFlag = false;
     private long mCurBufferWaitingStartTime = 0;
-    private final long MAX_BUFFER_WAITING_TIME = f.f7187a;
+    private final long MAX_BUFFER_WAITING_TIME = f.f7973a;
 
     private void cancelBufferTimeoutTimer() {
         try {
@@ -275,7 +276,7 @@ public class VideoFeedsPlayer implements w.c {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void postOnPlayProgressOnMainThread(final int i, final int i6) {
+    public void postOnPlayProgressOnMainThread(final int i, final int i4) {
         try {
             Handler handler = this.mHandler;
             if (handler != null) {
@@ -284,14 +285,14 @@ public class VideoFeedsPlayer implements w.c {
                     public void run() {
                         if (VideoFeedsPlayer.this.mOutterVFListener != null) {
                             try {
-                                VideoFeedsPlayer.this.mOutterVFListener.onPlayProgress(i, i6);
+                                VideoFeedsPlayer.this.mOutterVFListener.onPlayProgress(i, i4);
                             } catch (Exception e9) {
                                 e9.getMessage();
                             }
                         }
                         if (VideoFeedsPlayer.this.mInnerVFPLisener != null) {
                             try {
-                                VideoFeedsPlayer.this.mInnerVFPLisener.onPlayProgress(i, i6);
+                                VideoFeedsPlayer.this.mInnerVFPLisener.onPlayProgress(i, i4);
                             } catch (Exception e10) {
                                 e10.getMessage();
                             }
@@ -423,12 +424,12 @@ public class VideoFeedsPlayer implements w.c {
                         } catch (Throwable th) {
                             th.printStackTrace();
                         }
-                        if (SystemClock.elapsedRealtime() - VideoFeedsPlayer.this.mCurBufferWaitingStartTime > f.f7187a && VideoFeedsPlayer.this.mCurBufferWaitingStartTime != 0) {
+                        if (SystemClock.elapsedRealtime() - VideoFeedsPlayer.this.mCurBufferWaitingStartTime > f.f7973a && VideoFeedsPlayer.this.mCurBufferWaitingStartTime != 0) {
                             t.b().b(new Runnable() { // from class: com.anythink.expressad.playercommon.VideoFeedsPlayer.13.1
                                 @Override // java.lang.Runnable
                                 public void run() {
                                     VideoFeedsPlayer.this.onError(10, "Video player error!Buffer timeout");
-                                    y.w("Video Play Fail:Express Play Buffer Timeout", "AdxPlayer videoUrl:" + VideoFeedsPlayer.this.mPlayUrl + ",readyRate:" + VideoFeedsPlayer.this.mVideoReadyRate + ",maxVideoCacheSize:" + o.a().c() + ",lastRecycleCheckDownloadedFileSize:" + o.a().d());
+                                    k.x("Video Play Fail:Express Play Buffer Timeout", "AdxPlayer videoUrl:" + VideoFeedsPlayer.this.mPlayUrl + ",readyRate:" + VideoFeedsPlayer.this.mVideoReadyRate + ",maxVideoCacheSize:" + o.a().c() + ",lastRecycleCheckDownloadedFileSize:" + o.a().d());
                                 }
                             });
                             VideoFeedsPlayer.this.stopProgressThread();
@@ -612,17 +613,17 @@ public class VideoFeedsPlayer implements w.c {
     }
 
     @Override // com.anythink.basead.exoplayer.w.c
-    public void onLoadingChanged(boolean z3) {
+    public void onLoadingChanged(boolean z6) {
     }
 
     @Override // com.anythink.basead.exoplayer.w.c
     public void onPlaybackParametersChanged(v vVar) {
-        float f3 = vVar.f8759b;
+        float f2 = vVar.f9545b;
     }
 
     @Override // com.anythink.basead.exoplayer.w.c
     public void onPlayerError(g gVar) {
-        boolean z3;
+        boolean z6;
         long j6;
         c cVar = this.tempEventListener;
         if (cVar != null) {
@@ -630,15 +631,15 @@ public class VideoFeedsPlayer implements w.c {
         }
         String str = "Play error and ExoPlayer have not message.";
         if (gVar != null) {
-            int i = gVar.f7269d;
-            z3 = true;
+            int i = gVar.f8055d;
+            z6 = true;
             if (i != 0) {
                 if (i == 1) {
                     str = "Play error, because have a RendererException.";
                 } else if (i == 2) {
                     str = "Play error, because have a UnexpectedException.";
                 }
-                z3 = false;
+                z6 = false;
             } else {
                 str = "Play error, because have a SourceException.";
             }
@@ -646,9 +647,9 @@ public class VideoFeedsPlayer implements w.c {
                 str = gVar.getCause().getMessage();
             }
         } else {
-            z3 = false;
+            z6 = false;
         }
-        if (this.needPrepareVideoPlayAgain && z3) {
+        if (this.needPrepareVideoPlayAgain && z6) {
             this.mPlayLocalVideoFileErrorStr = str;
             this.needPrepareVideoPlayAgain = false;
             rePrepareVideoSourceAgain();
@@ -660,11 +661,11 @@ public class VideoFeedsPlayer implements w.c {
             j6 = 0;
         }
         String str2 = "videoUrl" + this.mNetVideoUrl + ",readyRate:" + this.mVideoReadyRate + ",cdRate:0,play process:" + j6;
-        onError(gVar.f7269d, TextUtils.isEmpty(this.mPlayLocalVideoFileErrorStr) ? AbstractC4404f.g(str2, ",localFileErrorMsg:", str) : y.s(AbstractC5049e.c(str2, ",localFileErrorMsg:"), this.mPlayLocalVideoFileErrorStr, ",errorMsg:", str));
+        onError(gVar.f8055d, TextUtils.isEmpty(this.mPlayLocalVideoFileErrorStr) ? Wv.h(str2, ",localFileErrorMsg:", str) : x.p(AbstractC5050e.c(str2, ",localFileErrorMsg:"), this.mPlayLocalVideoFileErrorStr, ",errorMsg:", str));
     }
 
     @Override // com.anythink.basead.exoplayer.w.c
-    public void onPlayerStateChanged(boolean z3, int i) {
+    public void onPlayerStateChanged(boolean z6, int i) {
         if (i == 2) {
             this.mIsBuffering = true;
             showLoading();
@@ -699,8 +700,8 @@ public class VideoFeedsPlayer implements w.c {
             if (!this.mIsFrontDesk && this.exoPlayer != null) {
                 pause();
             }
-            boolean z3 = this.mIsFrontDesk;
-            if (z3 && z3) {
+            boolean z6 = this.mIsFrontDesk;
+            if (z6 && z6) {
                 hideLoading();
                 this.mHasPrepare = true;
                 if (this.exoPlayer != null) {
@@ -723,7 +724,7 @@ public class VideoFeedsPlayer implements w.c {
     }
 
     @Override // com.anythink.basead.exoplayer.w.c
-    public void onShuffleModeEnabledChanged(boolean z3) {
+    public void onShuffleModeEnabledChanged(boolean z6) {
     }
 
     @Override // com.anythink.basead.exoplayer.w.c
@@ -840,14 +841,14 @@ public class VideoFeedsPlayer implements w.c {
                 if (surfaceHolder != null) {
                     setDisplay(surfaceHolder);
                 }
-                boolean z3 = false;
+                boolean z6 = false;
                 this.mHasPrepare = false;
                 if (!TextUtils.equals(this.mMediaSourceUrl, this.mNetVideoUrl)) {
                     try {
-                        z3 = new File(this.mMediaSourceUrl).exists();
+                        z6 = new File(this.mMediaSourceUrl).exists();
                     } catch (Throwable unused) {
                     }
-                    if (!z3) {
+                    if (!z6) {
                         this.mediaSource = new o.c(new com.anythink.basead.exoplayer.j.o(this.mContext, "AnyThink_ExoPlayer")).b(Uri.parse(this.mNetVideoUrl));
                         this.mMediaSourceUrl = this.mNetVideoUrl;
                     }
@@ -887,24 +888,24 @@ public class VideoFeedsPlayer implements w.c {
         }
     }
 
-    public void setIsComplete(boolean z3) {
-        this.mIsComplete = z3;
+    public void setIsComplete(boolean z6) {
+        this.mIsComplete = z6;
     }
 
-    public void setIsFrontDesk(boolean z3) {
+    public void setIsFrontDesk(boolean z6) {
         try {
-            this.mIsFrontDesk = z3;
+            this.mIsFrontDesk = z6;
         } catch (Exception e9) {
             e9.getMessage();
         }
     }
 
-    public void setPlaybackParams(float f3) {
+    public void setPlaybackParams(float f2) {
         try {
             if (exoPlayerIsPlaying()) {
-                this.exoPlayer.a(new v(f3));
+                this.exoPlayer.a(new v(f2));
             } else {
-                this.exoPlayer.a(new v(f3));
+                this.exoPlayer.a(new v(f2));
                 this.exoPlayer.m();
             }
         } catch (Throwable th) {
@@ -924,7 +925,7 @@ public class VideoFeedsPlayer implements w.c {
         this.mOutterVFListener = videoPlayerStatusListener;
     }
 
-    public void setVolume(float f3, float f9) {
+    public void setVolume(float f2, float f9) {
         try {
             ad adVar = this.exoPlayer;
             if (adVar != null) {
@@ -954,7 +955,7 @@ public class VideoFeedsPlayer implements w.c {
         }
     }
 
-    public void start(boolean z3) {
+    public void start(boolean z6) {
         try {
             if (this.exoPlayer == null || exoPlayerIsPlaying()) {
                 return;
@@ -962,7 +963,7 @@ public class VideoFeedsPlayer implements w.c {
             showLoading();
             play();
             this.mIsPlaying = true;
-            if (z3) {
+            if (z6) {
                 startPlayProgressTimer();
             }
         } catch (Exception e9) {

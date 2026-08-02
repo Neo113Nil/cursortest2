@@ -10,10 +10,10 @@ import android.view.View;
 public class CircleIndicatorView extends View {
 
     /* renamed from: a, reason: collision with root package name */
-    private boolean f10581a;
+    private boolean f11367a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final Path f10582b;
+    private final Path f11368b;
 
     public CircleIndicatorView(Context context) {
         this(context, null);
@@ -26,15 +26,15 @@ public class CircleIndicatorView extends View {
         int width = getWidth() / 2;
         int height = getHeight() / 2;
         int min = Math.min(width, height);
-        this.f10582b.reset();
-        this.f10582b.addCircle(width, height, min, Path.Direction.CCW);
-        canvas.clipPath(this.f10582b);
-        canvas.drawColor(this.f10581a ? -7829368 : -1);
+        this.f11368b.reset();
+        this.f11368b.addCircle(width, height, min, Path.Direction.CCW);
+        canvas.clipPath(this.f11368b);
+        canvas.drawColor(this.f11367a ? -7829368 : -1);
         canvas.restore();
     }
 
-    public void setSelectStatus(boolean z3) {
-        this.f10581a = z3;
+    public void setSelectStatus(boolean z6) {
+        this.f11367a = z6;
         invalidate();
     }
 
@@ -44,6 +44,6 @@ public class CircleIndicatorView extends View {
 
     public CircleIndicatorView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f10582b = new Path();
+        this.f11368b = new Path();
     }
 }

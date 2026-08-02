@@ -15,6 +15,7 @@ import com.onesignal.user.internal.operations.impl.executors.p;
 import java.util.Set;
 import kotlin.jvm.internal.h;
 import org.json.JSONObject;
+import w.AbstractC5128c;
 
 /* loaded from: classes2.dex */
 public final class a extends k {
@@ -30,8 +31,8 @@ public final class a extends k {
             return false;
         }
         String string = jSONObject.getString("name");
-        Set s9 = A8.b.s(i.LOGIN_USER, g.LOGIN_USER_FROM_SUBSCRIPTION_USER);
-        if (jSONObject.has("onesignalId") || s9.contains(string)) {
+        Set G2 = com.bumptech.glide.d.G(i.LOGIN_USER, g.LOGIN_USER_FROM_SUBSCRIPTION_USER);
+        if (jSONObject.has("onesignalId") || G2.contains(string)) {
             return true;
         }
         com.onesignal.debug.internal.logging.b.error$default(string + " jsonObject must have 'onesignalId' attribute", null, 2, null);
@@ -177,6 +178,6 @@ public final class a extends k {
                     break;
             }
         }
-        throw new Exception(u1.h.f("Unrecognized operation: ", string));
+        throw new Exception(AbstractC5128c.f("Unrecognized operation: ", string));
     }
 }

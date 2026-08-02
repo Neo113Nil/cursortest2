@@ -4,16 +4,16 @@ package m;
 public final class Y extends X {
 
     /* renamed from: w, reason: collision with root package name */
-    public final /* synthetic */ Z f39095w;
+    public final /* synthetic */ Z f39150w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public Y(Z z3) {
-        super(z3);
-        this.f39095w = z3;
+    public Y(Z z6) {
+        super(z6);
+        this.f39150w = z6;
     }
 
-    @Override // g1.C4523c, m.W
-    public final void z(int i, float f3) {
-        super/*android.widget.TextView*/.setLineHeight(i, f3);
+    @Override // i1.C4586c, m.W
+    public final void m(int i, float f2) {
+        super/*android.widget.TextView*/.setLineHeight(i, f2);
     }
 }

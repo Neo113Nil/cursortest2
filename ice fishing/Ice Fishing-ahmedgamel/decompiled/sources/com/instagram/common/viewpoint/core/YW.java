@@ -15,9 +15,9 @@ public final class YW {
     public static String[] A01 = {"cuUzkH3QdbH3cJp2RF", "kphHRdIOrc0r15jsPfyG2Jy", "YnKzEWoXtdzuP95TROGjIP", "O6qhnuon9ci7avdCdn", "JszjlqJauoZ2AkEe", "2iwMqZkAQKEhQz1BEXGjAw", "tv2fwm9vcfvUl0RC5d9GYW3eB7CSJdU", "VWHYkG5jfvcYH9oXKfgyVS7MLxk2p9iO"};
     public static final String A02;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        int i10 = 0;
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             String[] strArr = A01;
@@ -27,11 +27,11 @@ public final class YW {
             String[] strArr2 = A01;
             strArr2[3] = "jOZxNa7dXP1jVDPJoO";
             strArr2[0] = "z9aGKGtKVlVAFuhw7X";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 48);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 48);
+            i9++;
         }
     }
 
@@ -44,15 +44,15 @@ public final class YW {
         A02 = YW.class.getSimpleName();
     }
 
-    public static Map<String, String> A01(@Nullable C1840gi c1840gi) {
+    public static Map<String, String> A01(@Nullable C1860gi c1860gi) {
         Window window;
         HashMap hashMap = new HashMap();
-        if (c1840gi == null) {
+        if (c1860gi == null) {
             return hashMap;
         }
         try {
-            hashMap.put(A00(40, 3, 0), String.valueOf(A04(c1840gi)));
-            Activity A0E = c1840gi.A0E();
+            hashMap.put(A00(40, 3, 0), String.valueOf(A04(c1860gi)));
+            Activity A0E = c1860gi.A0E();
             if (A0E != null && (window = A0E.getWindow()) != null) {
                 int i = window.getAttributes().flags;
                 int flags = window.getAttributes().type;
@@ -73,19 +73,19 @@ public final class YW {
             }
         } catch (Exception e9) {
             Log.e(A02, A00(2, 30, 15), e9);
-            InterfaceC1251Tc A08 = c1840gi.A08();
-            int type3 = AbstractC1252Td.A2T;
-            A08.ABC(A00(43, 5, 77), type3, new C1253Te(e9));
+            InterfaceC1271Tc A08 = c1860gi.A08();
+            int type3 = AbstractC1272Td.A2T;
+            A08.ABC(A00(43, 5, 77), type3, new C1273Te(e9));
         }
         return hashMap;
     }
 
-    public static boolean A03(C1840gi c1840gi) {
-        return !YC.A04(A01(c1840gi));
+    public static boolean A03(C1860gi c1860gi) {
+        return !YC.A04(A01(c1860gi));
     }
 
-    public static boolean A04(C1840gi c1840gi) {
-        KeyguardManager keyguardManager = (KeyguardManager) c1840gi.getSystemService(A00(32, 8, 57));
+    public static boolean A04(C1860gi c1860gi) {
+        KeyguardManager keyguardManager = (KeyguardManager) c1860gi.getSystemService(A00(32, 8, 57));
         return keyguardManager != null && keyguardManager.inKeyguardRestrictedInputMode();
     }
 }

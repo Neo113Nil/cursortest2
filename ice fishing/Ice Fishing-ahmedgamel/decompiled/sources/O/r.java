@@ -6,11 +6,11 @@ import android.view.View;
 public interface r {
     void a(int i, View view);
 
-    void c(View view, int i, int i6, int i9, int i10, int i11);
+    void c(View view, int i, int i4, int i6, int i9, int i10);
 
-    boolean d(View view, View view2, int i, int i6);
+    boolean d(View view, View view2, int i, int i4);
 
-    void e(View view, View view2, int i, int i6);
+    void e(View view, View view2, int i, int i4);
 
-    void f(View view, int i, int i6, int[] iArr, int i9);
+    void f(View view, int i, int i4, int[] iArr, int i6);
 }

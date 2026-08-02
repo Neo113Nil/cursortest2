@@ -20,12 +20,12 @@ public class AS extends Timeline {
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Timeline
-    public final C2367pl A0I(int i, C2367pl c2367pl, boolean z3) {
+    public final C2387pl A0I(int i, C2387pl c2387pl, boolean z6) {
         throw new IndexOutOfBoundsException();
     }
 
     @Override // com.facebook.ads.androidx.media3.common.Timeline
-    public final C2365pj A0L(int i, C2365pj c2365pj, long j6) {
+    public final C2385pj A0L(int i, C2385pj c2385pj, long j6) {
         throw new IndexOutOfBoundsException();
     }
 

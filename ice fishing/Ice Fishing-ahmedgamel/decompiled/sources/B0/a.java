@@ -1,10 +1,10 @@
 package B0;
 
-import a.AbstractC0422a;
+import S0.f;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Trace;
-import com.icefishingapp.icefishing.C5275R;
+import com.IceFishing.LiveIceFishing.C5248R;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -14,48 +14,48 @@ import java.util.List;
 public final class a {
 
     /* renamed from: d, reason: collision with root package name */
-    public static volatile a f92d;
+    public static volatile a f248d;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final Object f93e = new Object();
+    public static final Object f249e = new Object();
 
     /* renamed from: c, reason: collision with root package name */
-    public final Context f96c;
+    public final Context f252c;
 
     /* renamed from: b, reason: collision with root package name */
-    public final HashSet f95b = new HashSet();
+    public final HashSet f251b = new HashSet();
 
     /* renamed from: a, reason: collision with root package name */
-    public final HashMap f94a = new HashMap();
+    public final HashMap f250a = new HashMap();
 
     public a(Context context) {
-        this.f96c = context.getApplicationContext();
+        this.f252c = context.getApplicationContext();
     }
 
     public static a c(Context context) {
-        if (f92d == null) {
-            synchronized (f93e) {
+        if (f248d == null) {
+            synchronized (f249e) {
                 try {
-                    if (f92d == null) {
-                        f92d = new a(context);
+                    if (f248d == null) {
+                        f248d = new a(context);
                     }
                 } finally {
                 }
             }
         }
-        return f92d;
+        return f248d;
     }
 
     public final void a(Bundle bundle) {
         HashSet hashSet;
-        String string = this.f96c.getString(C5275R.string.androidx_startup);
+        String string = this.f252c.getString(C5248R.string.androidx_startup);
         if (bundle != null) {
             try {
                 HashSet hashSet2 = new HashSet();
                 Iterator<String> it = bundle.keySet().iterator();
                 while (true) {
                     boolean hasNext = it.hasNext();
-                    hashSet = this.f95b;
+                    hashSet = this.f251b;
                     if (!hasNext) {
                         break;
                     }
@@ -79,7 +79,7 @@ public final class a {
 
     public final Object b(Class cls, HashSet hashSet) {
         Object obj;
-        if (AbstractC0422a.o()) {
+        if (f.o()) {
             try {
                 Trace.beginSection(cls.getSimpleName());
             } catch (Throwable th) {
@@ -90,7 +90,7 @@ public final class a {
         if (hashSet.contains(cls)) {
             throw new IllegalStateException("Cannot initialize " + cls.getName() + ". Cycle detected.");
         }
-        HashMap hashMap = this.f94a;
+        HashMap hashMap = this.f250a;
         if (hashMap.containsKey(cls)) {
             obj = hashMap.get(cls);
         } else {
@@ -105,7 +105,7 @@ public final class a {
                         }
                     }
                 }
-                obj = bVar.create(this.f96c);
+                obj = bVar.create(this.f252c);
                 hashSet.remove(cls);
                 hashMap.put(cls, obj);
             } catch (Throwable th2) {

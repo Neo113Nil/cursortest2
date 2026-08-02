@@ -8,10 +8,10 @@ public abstract class XL {
     public static byte[] A00;
     public static String[] A01 = {"qSiXKiq1IG9lqM50Z2Mb9O8Z2LWgBu", "r2U8xUOmaYVPqVNF7ipuwqUkClKOL9fI", "t2SmaoScOMFcI6wk6u94gycUTd7TrCEv", "g958mvzQCDN4laMR6tofpj9QKe8MWy18", "srt0ITOyv23HblPPEDvfXyJdFCTOXScH", "yBqqog3SgBsnKDzcKk1fPvagOkeR5j", "3gR", "V2iGxa"};
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 95);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 95);
         }
         return new String(copyOfRange);
     }
@@ -24,14 +24,14 @@ public abstract class XL {
         A02();
     }
 
-    public static String A00(float f3) {
-        if (A03(f3)) {
+    public static String A00(float f2) {
+        if (A03(f2)) {
             return A01(10, 4, 69);
         }
-        if (A05(f3)) {
-            return A01(0, 4, a.f21727Q);
+        if (A05(f2)) {
+            return A01(0, 4, a.f22514Q);
         }
-        if (A04(f3)) {
+        if (A04(f2)) {
             return A01(4, 3, 96);
         }
         String A012 = A01(7, 3, 112);
@@ -43,15 +43,15 @@ public abstract class XL {
         return A012;
     }
 
-    public static boolean A03(float f3) {
-        return f3 <= 0.7f;
+    public static boolean A03(float f2) {
+        return f2 <= 0.7f;
     }
 
-    public static boolean A04(float f3) {
-        return f3 == 1.0f;
+    public static boolean A04(float f2) {
+        return f2 == 1.0f;
     }
 
-    public static boolean A05(float f3) {
-        return f3 >= 1.2f;
+    public static boolean A05(float f2) {
+        return f2 >= 1.2f;
     }
 }

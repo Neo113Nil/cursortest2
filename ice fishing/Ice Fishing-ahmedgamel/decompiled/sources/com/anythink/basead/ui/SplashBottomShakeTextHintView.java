@@ -28,11 +28,11 @@ public class SplashBottomShakeTextHintView extends ShakeTextHintView {
     @Override // com.anythink.basead.ui.ShakeTextHintView, com.anythink.basead.ui.BaseShakeView
     public void setShakeSetting(y yVar, int i) {
         super.setShakeSetting(yVar, i);
-        if (((ShakeTextHintView) this).f10272l != null) {
-            if (TextUtils.isEmpty(this.f9912h)) {
-                ((ShakeTextHintView) this).f10272l.setText(e.a(getContext(), i));
+        if (((ShakeTextHintView) this).f11058l != null) {
+            if (TextUtils.isEmpty(this.f10698h)) {
+                ((ShakeTextHintView) this).f11058l.setText(e.a(getContext(), i));
             } else {
-                ((ShakeTextHintView) this).f10272l.setText(this.f9912h);
+                ((ShakeTextHintView) this).f11058l.setText(this.f10698h);
             }
         }
     }
@@ -45,7 +45,7 @@ public class SplashBottomShakeTextHintView extends ShakeTextHintView {
         super(context, attributeSet, i);
     }
 
-    public SplashBottomShakeTextHintView(Context context, AttributeSet attributeSet, int i, int i6) {
-        super(context, attributeSet, i, i6);
+    public SplashBottomShakeTextHintView(Context context, AttributeSet attributeSet, int i, int i4) {
+        super(context, attributeSet, i, i4);
     }
 }

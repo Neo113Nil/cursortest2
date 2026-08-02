@@ -9,119 +9,119 @@ import java.util.zip.Inflater;
 public final class m implements w {
 
     /* renamed from: a, reason: collision with root package name */
-    private final e f15886a;
+    private final e f16673a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final Inflater f15887b;
+    private final Inflater f16674b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f15888c;
+    private int f16675c;
 
     /* renamed from: d, reason: collision with root package name */
-    private boolean f15889d;
+    private boolean f16676d;
 
     private m(w wVar, Inflater inflater) {
         this(n.a(wVar), inflater);
     }
 
     private boolean b() {
-        if (!this.f15887b.needsInput()) {
+        if (!this.f16674b.needsInput()) {
             return false;
         }
         c();
-        if (this.f15887b.getRemaining() != 0) {
+        if (this.f16674b.getRemaining() != 0) {
             throw new IllegalStateException("?");
         }
-        if (this.f15886a.g()) {
+        if (this.f16673a.g()) {
             return true;
         }
-        s sVar = this.f15886a.c().f15846b;
-        int i = sVar.f15916e;
-        int i6 = sVar.f15915d;
-        int i9 = i - i6;
-        this.f15888c = i9;
-        this.f15887b.setInput(sVar.f15914c, i6, i9);
+        s sVar = this.f16673a.c().f16633b;
+        int i = sVar.f16703e;
+        int i4 = sVar.f16702d;
+        int i6 = i - i4;
+        this.f16675c = i6;
+        this.f16674b.setInput(sVar.f16701c, i4, i6);
         return false;
     }
 
     private void c() {
-        int i = this.f15888c;
+        int i = this.f16675c;
         if (i == 0) {
             return;
         }
-        int remaining = i - this.f15887b.getRemaining();
-        this.f15888c -= remaining;
-        this.f15886a.i(remaining);
+        int remaining = i - this.f16674b.getRemaining();
+        this.f16675c -= remaining;
+        this.f16673a.i(remaining);
     }
 
     @Override // com.anythink.core.common.n.c.w
     public final x a() {
-        return this.f15886a.a();
+        return this.f16673a.a();
     }
 
     @Override // com.anythink.core.common.n.c.w
     public final long a_(c cVar, long j6) {
-        boolean z3;
+        boolean z6;
         if (j6 < 0) {
             throw new IllegalArgumentException("byteCount < 0: ".concat(String.valueOf(j6)));
         }
-        if (this.f15889d) {
+        if (this.f16676d) {
             throw new IllegalStateException("closed");
         }
         if (j6 == 0) {
             return 0L;
         }
         do {
-            z3 = false;
-            if (this.f15887b.needsInput()) {
+            z6 = false;
+            if (this.f16674b.needsInput()) {
                 c();
-                if (this.f15887b.getRemaining() != 0) {
+                if (this.f16674b.getRemaining() != 0) {
                     throw new IllegalStateException("?");
                 }
-                if (this.f15886a.g()) {
-                    z3 = true;
+                if (this.f16673a.g()) {
+                    z6 = true;
                 } else {
-                    s sVar = this.f15886a.c().f15846b;
-                    int i = sVar.f15916e;
-                    int i6 = sVar.f15915d;
-                    int i9 = i - i6;
-                    this.f15888c = i9;
-                    this.f15887b.setInput(sVar.f15914c, i6, i9);
+                    s sVar = this.f16673a.c().f16633b;
+                    int i = sVar.f16703e;
+                    int i4 = sVar.f16702d;
+                    int i6 = i - i4;
+                    this.f16675c = i6;
+                    this.f16674b.setInput(sVar.f16701c, i4, i6);
                 }
             }
             try {
-                s g4 = cVar.g(1);
-                int inflate = this.f15887b.inflate(g4.f15914c, g4.f15916e, (int) Math.min(j6, 8192 - g4.f15916e));
+                s g9 = cVar.g(1);
+                int inflate = this.f16674b.inflate(g9.f16701c, g9.f16703e, (int) Math.min(j6, 8192 - g9.f16703e));
                 if (inflate > 0) {
-                    g4.f15916e += inflate;
+                    g9.f16703e += inflate;
                     long j9 = inflate;
-                    cVar.f15847c += j9;
+                    cVar.f16634c += j9;
                     return j9;
                 }
-                if (!this.f15887b.finished() && !this.f15887b.needsDictionary()) {
+                if (!this.f16674b.finished() && !this.f16674b.needsDictionary()) {
                 }
                 c();
-                if (g4.f15915d != g4.f15916e) {
+                if (g9.f16702d != g9.f16703e) {
                     return -1L;
                 }
-                cVar.f15846b = g4.c();
-                t.a(g4);
+                cVar.f16633b = g9.c();
+                t.a(g9);
                 return -1L;
             } catch (DataFormatException e9) {
                 throw new IOException(e9);
             }
-        } while (!z3);
+        } while (!z6);
         throw new EOFException("source exhausted prematurely");
     }
 
     @Override // com.anythink.core.common.n.c.w, java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
-        if (this.f15889d) {
+        if (this.f16676d) {
             return;
         }
-        this.f15887b.end();
-        this.f15889d = true;
-        this.f15886a.close();
+        this.f16674b.end();
+        this.f16676d = true;
+        this.f16673a.close();
     }
 
     public m(e eVar, Inflater inflater) {
@@ -131,7 +131,7 @@ public final class m implements w {
         if (inflater == null) {
             throw new IllegalArgumentException("inflater == null");
         }
-        this.f15886a = eVar;
-        this.f15887b = inflater;
+        this.f16673a = eVar;
+        this.f16674b = inflater;
     }
 }

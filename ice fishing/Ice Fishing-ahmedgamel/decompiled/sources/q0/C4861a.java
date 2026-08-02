@@ -5,10 +5,10 @@ package q0;
 public final class C4861a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f39972a;
+    public final boolean f40019a;
 
-    public C4861a(boolean z3) {
-        this.f39972a = z3;
+    public C4861a(boolean z6) {
+        this.f40019a = z6;
     }
 
     public final boolean equals(Object obj) {
@@ -20,14 +20,14 @@ public final class C4861a {
         }
         C4861a c4861a = (C4861a) obj;
         c4861a.getClass();
-        return this.f39972a == c4861a.f39972a;
+        return this.f40019a == c4861a.f40019a;
     }
 
     public final int hashCode() {
-        return Boolean.hashCode(this.f39972a) + 1169068184;
+        return Boolean.hashCode(this.f40019a) + 1169068184;
     }
 
     public final String toString() {
-        return "GetTopicsRequest: adsSdkName=com.google.android.gms.ads, shouldRecordObservation=" + this.f39972a;
+        return "GetTopicsRequest: adsSdkName=com.google.android.gms.ads, shouldRecordObservation=" + this.f40019a;
     }
 }

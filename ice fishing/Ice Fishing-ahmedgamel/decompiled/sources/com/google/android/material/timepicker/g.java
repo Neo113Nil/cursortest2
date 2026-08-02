@@ -6,15 +6,15 @@ import android.view.View;
 public final class g implements View.OnClickListener {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ TimePickerView f36177n;
+    public final /* synthetic */ TimePickerView f36944n;
 
     public g(TimePickerView timePickerView) {
-        this.f36177n = timePickerView;
+        this.f36944n = timePickerView;
     }
 
     @Override // android.view.View.OnClickListener
     public final void onClick(View view) {
-        int i = TimePickerView.f36171K;
-        this.f36177n.getClass();
+        int i = TimePickerView.f36938K;
+        this.f36944n.getClass();
     }
 }

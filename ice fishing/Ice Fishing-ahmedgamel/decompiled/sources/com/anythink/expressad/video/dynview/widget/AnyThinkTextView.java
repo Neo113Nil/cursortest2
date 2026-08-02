@@ -9,7 +9,7 @@ import android.widget.TextView;
 public class AnyThinkTextView extends TextView {
 
     /* renamed from: a, reason: collision with root package name */
-    private ObjectAnimator f21413a;
+    private ObjectAnimator f22200a;
 
     public AnyThinkTextView(Context context) {
         super(context);
@@ -18,7 +18,7 @@ public class AnyThinkTextView extends TextView {
     @Override // android.widget.TextView, android.view.View
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        ObjectAnimator objectAnimator = this.f21413a;
+        ObjectAnimator objectAnimator = this.f22200a;
         if (objectAnimator != null) {
             try {
                 objectAnimator.start();
@@ -31,7 +31,7 @@ public class AnyThinkTextView extends TextView {
     @Override // android.view.View
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        ObjectAnimator objectAnimator = this.f21413a;
+        ObjectAnimator objectAnimator = this.f22200a;
         if (objectAnimator != null) {
             try {
                 objectAnimator.cancel();
@@ -42,7 +42,7 @@ public class AnyThinkTextView extends TextView {
     }
 
     public void setObjectAnimator(ObjectAnimator objectAnimator) {
-        this.f21413a = objectAnimator;
+        this.f22200a = objectAnimator;
     }
 
     public AnyThinkTextView(Context context, AttributeSet attributeSet) {

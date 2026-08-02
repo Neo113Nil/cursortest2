@@ -10,36 +10,36 @@ import java.lang.reflect.Method;
 public abstract class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final s.b f892a;
+    public final s.b f955a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final s.b f893b;
+    public final s.b f956b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final s.b f894c;
+    public final s.b f957c;
 
     public a(s.b bVar, s.b bVar2, s.b bVar3) {
-        this.f892a = bVar;
-        this.f893b = bVar2;
-        this.f894c = bVar3;
+        this.f955a = bVar;
+        this.f956b = bVar2;
+        this.f957c = bVar3;
     }
 
     public abstract b a();
 
     public final Class b(Class cls) {
         String name = cls.getName();
-        s.b bVar = this.f894c;
+        s.b bVar = this.f957c;
         Class cls2 = (Class) bVar.getOrDefault(name, null);
         if (cls2 != null) {
             return cls2;
         }
-        Class<?> cls3 = Class.forName(cls.getPackage().getName() + j.f12378z + cls.getSimpleName() + "Parcelizer", false, cls.getClassLoader());
+        Class<?> cls3 = Class.forName(cls.getPackage().getName() + j.f13164z + cls.getSimpleName() + "Parcelizer", false, cls.getClassLoader());
         bVar.put(cls.getName(), cls3);
         return cls3;
     }
 
     public final Method c(String str) {
-        s.b bVar = this.f892a;
+        s.b bVar = this.f955a;
         Method method = (Method) bVar.getOrDefault(str, null);
         if (method != null) {
             return method;
@@ -52,7 +52,7 @@ public abstract class a {
 
     public final Method d(Class cls) {
         String name = cls.getName();
-        s.b bVar = this.f893b;
+        s.b bVar = this.f956b;
         Method method = (Method) bVar.getOrDefault(name, null);
         if (method != null) {
             return method;
@@ -70,11 +70,11 @@ public abstract class a {
         if (!e(i)) {
             return parcelable;
         }
-        return ((b) this).f896e.readParcelable(b.class.getClassLoader());
+        return ((b) this).f959e.readParcelable(b.class.getClassLoader());
     }
 
     public final c g() {
-        String readString = ((b) this).f896e.readString();
+        String readString = ((b) this).f959e.readString();
         if (readString == null) {
             return null;
         }
@@ -98,21 +98,21 @@ public abstract class a {
 
     public final void i(c cVar) {
         if (cVar == null) {
-            ((b) this).f896e.writeString(null);
+            ((b) this).f959e.writeString(null);
             return;
         }
         try {
-            ((b) this).f896e.writeString(b(cVar.getClass()).getName());
+            ((b) this).f959e.writeString(b(cVar.getClass()).getName());
             b a9 = a();
             try {
                 d(cVar.getClass()).invoke(null, cVar, a9);
                 int i = a9.i;
                 if (i >= 0) {
-                    int i6 = a9.f895d.get(i);
-                    Parcel parcel = a9.f896e;
+                    int i4 = a9.f958d.get(i);
+                    Parcel parcel = a9.f959e;
                     int dataPosition = parcel.dataPosition();
-                    parcel.setDataPosition(i6);
-                    parcel.writeInt(dataPosition - i6);
+                    parcel.setDataPosition(i4);
+                    parcel.writeInt(dataPosition - i4);
                     parcel.setDataPosition(dataPosition);
                 }
             } catch (ClassNotFoundException e9) {

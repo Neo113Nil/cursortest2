@@ -6,5 +6,5 @@ import java.util.logging.Logger;
 public abstract class HC {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Logger f25243a = Logger.getLogger(HC.class.getName());
+    public static final Logger f26015a = Logger.getLogger(HC.class.getName());
 }

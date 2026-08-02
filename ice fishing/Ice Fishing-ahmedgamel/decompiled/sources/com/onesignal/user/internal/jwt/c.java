@@ -10,11 +10,11 @@ import kotlin.jvm.internal.i;
 import org.json.JSONException;
 import org.json.JSONObject;
 import p4.d;
-import u7.AbstractC5091i;
+import u7.AbstractC5083i;
 import u7.v;
-import v7.AbstractC5129j;
+import v7.AbstractC5119j;
 import v7.t;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class c {
@@ -46,22 +46,22 @@ public final class c {
                     throw new ClassCastException();
                 }
                 invoke((d) null);
-                return v.f41353a;
+                return v.f41073a;
             }
 
             public final void invoke(d listener) {
-                Object f3;
+                Object b9;
                 kotlin.jvm.internal.h.e(listener, "listener");
                 String externalId = this.$externalId;
                 try {
                     kotlin.jvm.internal.h.e(externalId, "externalId");
                     listener.a();
-                    f3 = v.f41353a;
+                    b9 = v.f41073a;
                 } catch (Throwable th) {
-                    f3 = com.bumptech.glide.d.f(th);
+                    b9 = Q3.b.b(th);
                 }
                 String str = this.$externalId;
-                Throwable a9 = AbstractC5091i.a(f3);
+                Throwable a9 = AbstractC5083i.a(b9);
                 if (a9 != null) {
                     com.onesignal.debug.internal.logging.b.warn("JwtTokenStore: IUserJwtInvalidatedListener threw for externalId=" + str, a9);
                 }
@@ -69,30 +69,30 @@ public final class c {
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public a(String str, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public a(String str, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$externalId = str;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return c.this.new a(this.$externalId, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return c.this.new a(this.$externalId, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             if (this.label != 0) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            com.bumptech.glide.d.k(obj);
+            Q3.b.s(obj);
             c.this.publicInvalidatedListeners.fire(new C0250a(c.this, this.$externalId));
-            return v.f41353a;
+            return v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((a) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((a) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -108,7 +108,7 @@ public final class c {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((com.onesignal.user.internal.jwt.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(com.onesignal.user.internal.jwt.a it) {
@@ -130,7 +130,7 @@ public final class c {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((com.onesignal.user.internal.jwt.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(com.onesignal.user.internal.jwt.a it) {
@@ -173,7 +173,7 @@ public final class c {
     }
 
     private final void persist() {
-        this._prefs.saveString(com.onesignal.common.threading.b.BASE_THREAD_NAME, "PREFS_OS_JWT_TOKENS", new JSONObject(t.U(this.tokens)).toString());
+        this._prefs.saveString(com.onesignal.common.threading.b.BASE_THREAD_NAME, "PREFS_OS_JWT_TOKENS", new JSONObject(t.y(this.tokens)).toString());
     }
 
     public final void addInternalUpdateListener(com.onesignal.user.internal.jwt.a listener) {
@@ -197,32 +197,32 @@ public final class c {
     }
 
     public final void invalidateJwt(String externalId) {
-        boolean z3;
+        boolean z6;
         kotlin.jvm.internal.h.e(externalId, "externalId");
         synchronized (this.tokens) {
             ensureLoaded();
-            z3 = this.tokens.remove(externalId) != null;
-            if (z3) {
+            z6 = this.tokens.remove(externalId) != null;
+            if (z6) {
                 persist();
             }
         }
-        if (z3) {
+        if (z6) {
             com.onesignal.common.threading.b.INSTANCE.launchOnDefault(new a(externalId, null));
         }
     }
 
     public final void pruneToExternalIds(Set<String> activeIds) {
-        Set P8;
+        Set N8;
         kotlin.jvm.internal.h.e(activeIds, "activeIds");
         synchronized (this.tokens) {
             ensureLoaded();
-            P8 = AbstractC5129j.P(A8.b.p(this.tokens.keySet(), activeIds));
-            if (!P8.isEmpty()) {
-                this.tokens.keySet().removeAll(P8);
+            N8 = AbstractC5119j.N(com.bumptech.glide.d.x(this.tokens.keySet(), activeIds));
+            if (!N8.isEmpty()) {
+                this.tokens.keySet().removeAll(N8);
                 persist();
             }
         }
-        Iterator it = P8.iterator();
+        Iterator it = N8.iterator();
         while (it.hasNext()) {
             this.internalUpdateListeners.fire(new b((String) it.next()));
         }

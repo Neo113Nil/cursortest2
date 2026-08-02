@@ -26,7 +26,7 @@ public final class g extends a {
     @Override // com.anythink.core.common.m.a
     public final Map<String, String> c() {
         HashMap hashMap = new HashMap();
-        hashMap.put("Content-Encoding", com.anythink.expressad.foundation.g.f.g.b.f19341d);
+        hashMap.put("Content-Encoding", com.anythink.expressad.foundation.g.f.g.b.f20128d);
         hashMap.put("Content-Type", "application/json;charset=utf-8");
         return hashMap;
     }
@@ -60,7 +60,7 @@ public final class g extends a {
     public final String g() {
         HashMap hashMap = new HashMap();
         String a9 = com.anythink.core.common.v.k.a(e().toString());
-        hashMap.put(e.f14624P, j.e.f12436a);
+        hashMap.put(e.f15410P, j.e.f13222a);
         hashMap.put("p", a9);
         ArrayList arrayList = new ArrayList(hashMap.size());
         arrayList.addAll(hashMap.keySet());
@@ -106,7 +106,7 @@ public final class g extends a {
 
     @Override // com.anythink.core.common.m.a
     public final com.anythink.core.common.m.b.d m() {
-        return com.anythink.core.common.m.b.d.a(com.anythink.core.common.m.b.g.f14521d);
+        return com.anythink.core.common.m.b.d.a(com.anythink.core.common.m.b.g.f15307d);
     }
 
     @Override // com.anythink.core.common.m.a
@@ -117,7 +117,7 @@ public final class g extends a {
     @Override // com.anythink.core.common.m.a
     public final String b() {
         com.anythink.core.common.i.a();
-        return com.anythink.core.common.g.c.a().a(com.anythink.core.common.i.l() ? j.e.f12434I : j.e.f12452r);
+        return com.anythink.core.common.g.c.a().a(com.anythink.core.common.i.l() ? j.e.f13220I : j.e.f13238r);
     }
 
     @Override // com.anythink.core.common.m.a

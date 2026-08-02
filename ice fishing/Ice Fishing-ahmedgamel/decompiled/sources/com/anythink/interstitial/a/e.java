@@ -13,24 +13,24 @@ import com.anythink.interstitial.api.ATInterstitialExListener;
 public final class e implements ATInterstitialExListener {
 
     /* renamed from: a, reason: collision with root package name */
-    ATInterstitialAutoEventListener f22705a;
+    ATInterstitialAutoEventListener f23492a;
 
     /* renamed from: b, reason: collision with root package name */
-    ATAdRevenueListener f22706b;
+    ATAdRevenueListener f23493b;
 
     public e(ATInterstitialAutoEventListener aTInterstitialAutoEventListener, ATAdRevenueListener aTAdRevenueListener) {
-        this.f22705a = aTInterstitialAutoEventListener;
-        this.f22706b = aTAdRevenueListener;
+        this.f23492a = aTInterstitialAutoEventListener;
+        this.f23493b = aTAdRevenueListener;
     }
 
     @Override // com.anythink.interstitial.api.ATInterstitialExListener
-    public final void onDeeplinkCallback(final ATAdInfo aTAdInfo, final boolean z3) {
+    public final void onDeeplinkCallback(final ATAdInfo aTAdInfo, final boolean z6) {
         t.b().b(new Runnable() { // from class: com.anythink.interstitial.a.e.1
             @Override // java.lang.Runnable
             public final void run() {
-                ATInterstitialAutoEventListener aTInterstitialAutoEventListener = e.this.f22705a;
+                ATInterstitialAutoEventListener aTInterstitialAutoEventListener = e.this.f23492a;
                 if (aTInterstitialAutoEventListener != null) {
-                    aTInterstitialAutoEventListener.onDeeplinkCallback(aTAdInfo, z3);
+                    aTInterstitialAutoEventListener.onDeeplinkCallback(aTAdInfo, z6);
                 }
             }
         });
@@ -41,7 +41,7 @@ public final class e implements ATInterstitialExListener {
         t.b().b(new Runnable() { // from class: com.anythink.interstitial.a.e.2
             @Override // java.lang.Runnable
             public final void run() {
-                ATInterstitialAutoEventListener aTInterstitialAutoEventListener = e.this.f22705a;
+                ATInterstitialAutoEventListener aTInterstitialAutoEventListener = e.this.f23492a;
                 if (aTInterstitialAutoEventListener != null) {
                     Context context2 = context;
                     if (context2 == null) {
@@ -58,7 +58,7 @@ public final class e implements ATInterstitialExListener {
         t.b().b(new Runnable() { // from class: com.anythink.interstitial.a.e.7
             @Override // java.lang.Runnable
             public final void run() {
-                ATInterstitialAutoEventListener aTInterstitialAutoEventListener = e.this.f22705a;
+                ATInterstitialAutoEventListener aTInterstitialAutoEventListener = e.this.f23492a;
                 if (aTInterstitialAutoEventListener != null) {
                     aTInterstitialAutoEventListener.onInterstitialAdClicked(aTAdInfo);
                 }
@@ -71,7 +71,7 @@ public final class e implements ATInterstitialExListener {
         t.b().b(new Runnable() { // from class: com.anythink.interstitial.a.e.6
             @Override // java.lang.Runnable
             public final void run() {
-                ATInterstitialAutoEventListener aTInterstitialAutoEventListener = e.this.f22705a;
+                ATInterstitialAutoEventListener aTInterstitialAutoEventListener = e.this.f23492a;
                 if (aTInterstitialAutoEventListener != null) {
                     aTInterstitialAutoEventListener.onInterstitialAdClose(aTAdInfo);
                 }
@@ -92,11 +92,11 @@ public final class e implements ATInterstitialExListener {
         t.b().b(new Runnable() { // from class: com.anythink.interstitial.a.e.8
             @Override // java.lang.Runnable
             public final void run() {
-                ATAdRevenueListener aTAdRevenueListener = e.this.f22706b;
+                ATAdRevenueListener aTAdRevenueListener = e.this.f23493b;
                 if (aTAdRevenueListener != null) {
                     aTAdRevenueListener.onAdRevenuePaid(aTAdInfo);
                 }
-                ATInterstitialAutoEventListener aTInterstitialAutoEventListener = e.this.f22705a;
+                ATInterstitialAutoEventListener aTInterstitialAutoEventListener = e.this.f23492a;
                 if (aTInterstitialAutoEventListener != null) {
                     aTInterstitialAutoEventListener.onInterstitialAdShow(aTAdInfo);
                 }
@@ -109,7 +109,7 @@ public final class e implements ATInterstitialExListener {
         t.b().b(new Runnable() { // from class: com.anythink.interstitial.a.e.4
             @Override // java.lang.Runnable
             public final void run() {
-                ATInterstitialAutoEventListener aTInterstitialAutoEventListener = e.this.f22705a;
+                ATInterstitialAutoEventListener aTInterstitialAutoEventListener = e.this.f23492a;
                 if (aTInterstitialAutoEventListener != null) {
                     aTInterstitialAutoEventListener.onInterstitialAdVideoEnd(aTAdInfo);
                 }
@@ -122,7 +122,7 @@ public final class e implements ATInterstitialExListener {
         t.b().b(new Runnable() { // from class: com.anythink.interstitial.a.e.5
             @Override // java.lang.Runnable
             public final void run() {
-                ATInterstitialAutoEventListener aTInterstitialAutoEventListener = e.this.f22705a;
+                ATInterstitialAutoEventListener aTInterstitialAutoEventListener = e.this.f23492a;
                 if (aTInterstitialAutoEventListener != null) {
                     aTInterstitialAutoEventListener.onInterstitialAdVideoError(adError);
                 }
@@ -135,7 +135,7 @@ public final class e implements ATInterstitialExListener {
         t.b().b(new Runnable() { // from class: com.anythink.interstitial.a.e.3
             @Override // java.lang.Runnable
             public final void run() {
-                ATInterstitialAutoEventListener aTInterstitialAutoEventListener = e.this.f22705a;
+                ATInterstitialAutoEventListener aTInterstitialAutoEventListener = e.this.f23492a;
                 if (aTInterstitialAutoEventListener != null) {
                     aTInterstitialAutoEventListener.onInterstitialAdVideoStart(aTAdInfo);
                 }

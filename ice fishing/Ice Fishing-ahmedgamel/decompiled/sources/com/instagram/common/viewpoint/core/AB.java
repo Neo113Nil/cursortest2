@@ -21,7 +21,7 @@ import java.util.Collections;
 import java.util.Iterator;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0888Ev, InterfaceC0837Cw, C6P, InterfaceC07057b {
+public final class AB implements Handler.Callback, InterfaceC2270nq, InterfaceC0908Ev, InterfaceC0857Cw, C6P, InterfaceC07257b {
     public static byte[] A0x;
     public static String[] A0y = {"EvYOBb0fNCsu7OcAaOZNwoEPwn2", "8jIqnMhTOhQ3fU", "vmW", "edZR1F4oYcKYyzs7tUfX3dHGMGqqrKBY", "TI8UsWNSVk9Jh7srInWeHwVEqkc209d4", "AVB8fiMNMM9Dy8Zuh880FwllBoFt5PF1", "1mkHXRje2n0Pvvw2j", "LF2w13BN71krhrKRtprOb2x3jYcy1FYO"};
     public int A00;
@@ -30,14 +30,14 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
     public int A03;
     public long A04;
     public long A06;
-    public C06876j A07;
-    public C06916n A08;
+    public C07076j A07;
+    public C07116n A08;
     public C7Z A0A;
 
     @MetaExoPlayerCustomization("D18870411: Adding start stall debug reason")
-    public InterfaceC2309oo A0B;
-    public C07247u A0C;
-    public InterfaceC0838Cx A0D;
+    public InterfaceC2329oo A0B;
+    public C07447u A0C;
+    public InterfaceC0858Cx A0D;
     public boolean A0G;
     public boolean A0H;
     public boolean A0I;
@@ -52,35 +52,35 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
     public boolean A0T;
     public boolean A0U;
     public boolean A0V;
-    public InterfaceC2309oo[] A0W;
+    public InterfaceC2329oo[] A0W;
     public final long A0Y;
     public final long A0Z;
     public final Handler A0a;
     public final HandlerThread A0b;
-    public final C2367pl A0c;
-    public final C2365pj A0d;
+    public final C2387pl A0c;
+    public final C2385pj A0d;
     public final AnonymousClass45 A0e;
     public final C4X A0f;
-    public final C2317ow A0g;
-    public final C06906m A0h;
+    public final C2337ow A0g;
+    public final C07106m A0h;
     public final AnonymousClass74 A0i;
-    public final C2305ok A0k;
-    public final AbstractC0889Ew A0l;
-    public final C0890Ex A0m;
+    public final C2325ok A0k;
+    public final AbstractC0909Ew A0l;
+    public final C0910Ex A0m;
     public final F6 A0n;
-    public final C07569g A0o;
-    public final ArrayList<C06896l> A0p;
+    public final C07769g A0o;
+    public final ArrayList<C07096l> A0p;
     public final boolean A0q;
     public final boolean A0r;
     public final boolean A0s;
     public final boolean A0t;
     public final boolean A0u;
-    public final InterfaceC2309oo[] A0v;
-    public final InterfaceC07197p[] A0w;
-    public long A05 = b.f6382b;
+    public final InterfaceC2329oo[] A0v;
+    public final InterfaceC07397p[] A0w;
+    public long A05 = b.f7168b;
 
     @MetaExoPlayerCustomization("D18870411: Adding start stall debug reason")
-    public EnumC1966ir A0E = EnumC1966ir.A09;
+    public EnumC1986ir A0E = EnumC1986ir.A09;
 
     @MetaExoPlayerCustomization("D63737392: Added for negative testing")
     public boolean A0J = false;
@@ -98,17 +98,17 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
     @MetaExoPlayerCustomization
     public final int A0X = A00();
 
-    public static String A0D(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0x, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            byte b9 = copyOfRange[i10];
+    public static String A0D(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0x, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            byte b9 = copyOfRange[i9];
             if (A0y[1].length() == 31) {
                 throw new RuntimeException();
             }
             String[] strArr = A0y;
             strArr[2] = "wOV";
             strArr[6] = "lGv9KfQpa0xBFnWlu";
-            copyOfRange[i10] = (byte) ((b9 - i9) - 57);
+            copyOfRange[i9] = (byte) ((b9 - i6) - 57);
         }
         return new String(copyOfRange);
     }
@@ -255,30 +255,30 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         A0Q();
         long elapsedRealtime = SystemClock.elapsedRealtime() * 1000;
         A0F.A07.A60(this.A0A.A0C - this.A0Y, this.A0r);
-        boolean z3 = false;
-        boolean z6 = true;
+        boolean z6 = false;
         boolean z9 = true;
-        boolean z10 = this.A0W.length > 1;
-        InterfaceC2309oo[] interfaceC2309ooArr = this.A0W;
-        int length = interfaceC2309ooArr.length;
+        boolean z10 = true;
+        boolean z11 = this.A0W.length > 1;
+        InterfaceC2329oo[] interfaceC2329ooArr = this.A0W;
+        int length = interfaceC2329ooArr.length;
         int i = 0;
         while (true) {
             String A0D = A0D(223, 35, 31);
             String A0D2 = A0D(0, 21, 22);
             if (i < length) {
-                InterfaceC2309oo interfaceC2309oo = interfaceC2309ooArr[i];
-                interfaceC2309oo.AIX(this.A06, elapsedRealtime);
+                InterfaceC2329oo interfaceC2329oo = interfaceC2329ooArr[i];
+                interfaceC2329oo.AIX(this.A06, elapsedRealtime);
                 if (A0G.A00.A05) {
-                    boolean z11 = this.A0O;
+                    boolean z12 = this.A0O;
                     if (A0y[0].length() == 16) {
                         break;
                     }
                     String[] strArr2 = A0y;
                     strArr2[4] = "S4Fyq0ZfVTRLxRTM4wwKz81RK4qT5SRq";
                     strArr2[3] = "dt9NVxX1YAgTPnpY37Axx0Ou68rzEGgN";
-                    if (z11) {
-                        if (!interfaceC2309oo.A9p()) {
-                            boolean z12 = this.A0H;
+                    if (z12) {
+                        if (!interfaceC2329oo.A9p()) {
+                            boolean z13 = this.A0H;
                             if (A0y[0].length() != 16) {
                                 A0y[5] = "eiShONRNAduVJjGMnbACFBBBapCf3AHm";
                             } else {
@@ -287,30 +287,30 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                                 strArr3[3] = "EHDY1dQAFQsMAYBzgGAEpHtmXIGNI89a";
                             }
                         }
-                        interfaceC2309oo.AJN();
+                        interfaceC2329oo.AJN();
                     } else if (A0y[5].charAt(1) != 'q') {
                         String[] strArr4 = A0y;
                         strArr4[4] = "usLdHWXdVdc1eYm8Xo8iItMQczfdPoTF";
                         strArr4[3] = "jdYe6RXL6unoORbHA5yicze0YAqR3j0n";
                     }
                 }
-                if (!(interfaceC2309oo instanceof C05531b)) {
-                    z10 = z10 && interfaceC2309oo.AAP();
+                if (!(interfaceC2329oo instanceof C05731b)) {
+                    z11 = z11 && interfaceC2329oo.AAP();
                 }
-                z6 = z6 && interfaceC2309oo.AAP();
-                boolean z13 = interfaceC2309oo.AAe() || interfaceC2309oo.AAP() || A17(interfaceC2309oo);
-                if (!z13) {
-                    z3 = true;
+                z9 = z9 && interfaceC2329oo.AAP();
+                boolean z14 = interfaceC2329oo.AAe() || interfaceC2329oo.AAP() || A17(interfaceC2329oo);
+                if (!z14) {
+                    z6 = true;
                     try {
-                        interfaceC2309oo.ACU();
-                    } catch (C2326p5 e9) {
-                        if (!e9.getClass().equals(C2326p5.class)) {
+                        interfaceC2329oo.ACU();
+                    } catch (C2346p5 e9) {
+                        if (!e9.getClass().equals(C2346p5.class)) {
                             throw e9;
                         }
                         if (!this.A0N) {
                             throw e9;
                         }
-                        if (this.A05 == b.f6382b) {
+                        if (this.A05 == b.f7168b) {
                             Log.w(A0D2, A0D + e9.getMessage());
                             this.A05 = System.currentTimeMillis();
                             if (this.A0q) {
@@ -320,30 +320,30 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                             throw e9;
                         }
                     }
-                    this.A0B = interfaceC2309oo;
+                    this.A0B = interfaceC2329oo;
                     if (A0y[7].charAt(12) == '2') {
                         break;
                     } else {
                         A0y[5] = "qlbqZn2WmIl9Oup3QtCZToOsAISM7SD4";
                     }
                 }
-                z9 = z9 && z13;
+                z10 = z10 && z14;
                 i++;
             } else {
-                if (!z9) {
+                if (!z10) {
                     A0I();
                 }
-                if (this.A0Q && z10 && !z6) {
-                    for (InterfaceC2309oo interfaceC2309oo2 : this.A0W) {
-                        if (interfaceC2309oo2 instanceof C05531b) {
-                            interfaceC2309oo2.AIX(9223372036854775806L, 9223372036854775806L);
-                            z6 = interfaceC2309oo2.AAP();
+                if (this.A0Q && z11 && !z9) {
+                    for (InterfaceC2329oo interfaceC2329oo2 : this.A0W) {
+                        if (interfaceC2329oo2 instanceof C05731b) {
+                            interfaceC2329oo2.AIX(9223372036854775806L, 9223372036854775806L);
+                            z9 = interfaceC2329oo2.AAP();
                         }
                     }
                 }
                 long j6 = A0F.A00.A00;
-                boolean z14 = false;
-                if (z6 && (j6 == b.f6382b || j6 <= this.A0A.A0C)) {
+                boolean z15 = false;
+                if (z9 && (j6 == b.f7168b || j6 <= this.A0A.A0C)) {
                     C7B c7b = A0F.A00;
                     String[] strArr5 = A0y;
                     if (strArr5[2].length() == strArr5[6].length()) {
@@ -356,21 +356,21 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                         A0V(4);
                         A0O();
                         if (this.A0A.A00 == 2) {
-                            for (InterfaceC2309oo interfaceC2309oo3 : this.A0W) {
-                                z3 = true;
+                            for (InterfaceC2329oo interfaceC2329oo3 : this.A0W) {
+                                z6 = true;
                                 try {
-                                    interfaceC2309oo3.ACU();
-                                } catch (C2326p5 e10) {
-                                    if (!e10.getClass().equals(C2326p5.class)) {
+                                    interfaceC2329oo3.ACU();
+                                } catch (C2346p5 e10) {
+                                    if (!e10.getClass().equals(C2346p5.class)) {
                                         throw e10;
                                     }
-                                    boolean z15 = this.A0N;
+                                    boolean z16 = this.A0N;
                                     if (A0y[1].length() != 31) {
                                         A0y[0] = "ROTBjRrt9pmtd4l9PrsJpq4cigEOLmNk";
-                                        if (!z15) {
+                                        if (!z16) {
                                             throw e10;
                                         }
-                                        if (this.A05 == b.f6382b) {
+                                        if (this.A05 == b.f7168b) {
                                             long currentTimeMillis = System.currentTimeMillis() - this.A05;
                                             long j9 = this.A0Z;
                                             if (A0y[5].charAt(1) != 'q') {
@@ -390,35 +390,35 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                                             this.A0a.obtainMessage(4, e10).sendToTarget();
                                         }
                                     } else {
-                                        if (!z15) {
+                                        if (!z16) {
                                             throw e10;
                                         }
-                                        if (this.A05 == b.f6382b) {
+                                        if (this.A05 == b.f7168b) {
                                         }
                                     }
                                 }
                             }
                         }
-                        boolean z16 = this.A0P;
+                        boolean z17 = this.A0P;
                         strArr = A0y;
                         if (strArr[4].charAt(1) != strArr[3].charAt(1)) {
                             A0y[0] = "CfnO3oWhmhBZYFdKQQ3";
-                            if ((z16 && this.A0A.A00 == 3) || this.A0A.A00 == 2) {
+                            if ((z17 && this.A0A.A00 == 3) || this.A0A.A00 == 2) {
                                 A0a(AKe, this.A0X);
                             } else if (this.A0W.length == 0 || this.A0A.A00 == 4) {
                                 this.A0f.AIT(2);
                             } else {
                                 A0a(AKe, 1000L);
                             }
-                            if (!z3) {
-                                this.A05 = b.f6382b;
+                            if (!z6) {
+                                this.A05 = b.f7168b;
                             }
                             AnonymousClass54.A00();
                             return;
                         }
                     }
                 }
-                if (this.A0A.A00 == 2 && A19(z9)) {
+                if (this.A0A.A00 == 2 && A19(z10)) {
                     if (this.A0J && !this.A0L) {
                         this.A0L = true;
                         this.A0F = A0B();
@@ -433,7 +433,7 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                             A0y[1] = "FUTTGuZgInj0HgAB4TKGqFNOnZ8TLHiw";
                         }
                     }
-                    A0t(this.A0E, z14);
+                    A0t(this.A0E, z15);
                     if (this.A0P) {
                         A0N();
                     }
@@ -444,7 +444,7 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                 }
                 if (this.A0A.A00 == 2) {
                 }
-                boolean z162 = this.A0P;
+                boolean z172 = this.A0P;
                 strArr = A0y;
                 if (strArr[4].charAt(1) != strArr[3].charAt(1)) {
                 }
@@ -474,10 +474,10 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         A0J();
         C7A A0E = this.A0j.A0E();
         if (A0E != null && !A0E.A0R()) {
-            boolean z3 = this.A0A.A0A;
+            boolean z6 = this.A0A.A0A;
             if (A0y[1].length() != 31) {
                 A0y[5] = "JakbFE5sCqyiHPWhcmq5QKrahWaBlD8R";
-                if (!z3) {
+                if (!z6) {
                     A0w(false);
                 }
             }
@@ -487,9 +487,9 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         if (this.A0j.A0N()) {
             C7A A0F = this.A0j.A0F();
             C7A A0G = this.A0j.A0G();
-            boolean z6 = false;
+            boolean z9 = false;
             while (this.A0P && A0F != A0G && this.A06 >= A0F.A0I().A0H(this.A0K)) {
-                if (z6) {
+                if (z9) {
                     A0H();
                 }
                 int i = A0F.A00.A07 ? 0 : 3;
@@ -497,7 +497,7 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                 A0F = this.A0j.A0B();
                 A0g(c7a);
                 C7Z c7z = this.A0A;
-                C2248no c2248no = A0F.A00.A04;
+                C2268no c2268no = A0F.A00.A04;
                 long j6 = A0F.A00.A03;
                 if (A0y[7].charAt(12) == '2') {
                     throw new RuntimeException();
@@ -505,21 +505,21 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                 String[] strArr = A0y;
                 strArr[4] = "OGZbExKcucXIKKZQBdHGOATJ9dYdrwhN";
                 strArr[3] = "TJxPjvISq11gHqp4fguKhlEOGAavfVmH";
-                this.A0A = c7z.A06(c2248no, j6, A0F.A00.A02, A01());
+                this.A0A = c7z.A06(c2268no, j6, A0F.A00.A02, A01());
                 this.A0h.A04(i);
                 A0Q();
-                z6 = true;
+                z9 = true;
             }
             C7B c7b = A0G.A00;
             String[] strArr2 = A0y;
             if (strArr2[4].charAt(1) != strArr2[3].charAt(1)) {
                 A0y[7] = "WHxPanRASNJPtq4bnE3dJm5Kco7OvEcN";
                 if (c7b.A05) {
-                    for (int i6 = 0; i6 < this.A0v.length; i6++) {
-                        InterfaceC2309oo interfaceC2309oo = this.A0v[i6];
-                        DT dt = A0G.A09[i6];
-                        if (dt != null && interfaceC2309oo.A9D() == dt && interfaceC2309oo.A9p()) {
-                            interfaceC2309oo.AJN();
+                    for (int i4 = 0; i4 < this.A0v.length; i4++) {
+                        InterfaceC2329oo interfaceC2329oo = this.A0v[i4];
+                        DT dt = A0G.A09[i4];
+                        if (dt != null && interfaceC2329oo.A9D() == dt && interfaceC2329oo.A9p()) {
+                            interfaceC2329oo.AJN();
                         }
                     }
                     return;
@@ -532,59 +532,59 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                 if (strArr3[4].charAt(1) != strArr3[3].charAt(1)) {
                     A0y[7] = "aMxVvZtAQBe9jxU0Z4NX1LXmsoJEfXr7";
                     if (A0I.A02) {
-                        for (int i9 = 0; i9 < this.A0v.length; i9++) {
-                            InterfaceC2309oo interfaceC2309oo2 = this.A0v[i9];
-                            DT dt2 = A0G.A09[i9];
-                            if (interfaceC2309oo2.A9D() != dt2) {
+                        for (int i6 = 0; i6 < this.A0v.length; i6++) {
+                            InterfaceC2329oo interfaceC2329oo2 = this.A0v[i6];
+                            DT dt2 = A0G.A09[i6];
+                            if (interfaceC2329oo2.A9D() != dt2) {
                                 return;
                             }
-                            if (dt2 != null && !interfaceC2309oo2.A9p()) {
+                            if (dt2 != null && !interfaceC2329oo2.A9p()) {
                                 return;
                             }
                         }
-                        C0890Ex A0K = A0G.A0K();
+                        C0910Ex A0K = A0G.A0K();
                         C7A A0C = this.A0j.A0C();
-                        C0890Ex A0K2 = A0C.A0K();
-                        boolean z9 = A0C.A07.AHQ() != b.f6382b;
-                        for (int i10 = 0; i10 < this.A0v.length; i10++) {
-                            InterfaceC2309oo interfaceC2309oo3 = this.A0v[i10];
-                            if (A0K.A00(i10)) {
-                                if (z9) {
-                                    interfaceC2309oo3.AJN();
+                        C0910Ex A0K2 = A0C.A0K();
+                        boolean z10 = A0C.A07.AHQ() != b.f7168b;
+                        for (int i9 = 0; i9 < this.A0v.length; i9++) {
+                            InterfaceC2329oo interfaceC2329oo3 = this.A0v[i9];
+                            if (A0K.A00(i9)) {
+                                if (z10) {
+                                    interfaceC2329oo3.AJN();
                                 } else {
-                                    boolean AAN = interfaceC2309oo3.AAN();
+                                    boolean AAN = interfaceC2329oo3.AAN();
                                     if (A0y[0].length() != 16) {
                                         A0y[1] = "9mAYXkFxI0mZazBGslnkswropOC4T";
                                         if (AAN) {
                                             continue;
                                         }
-                                        InterfaceC2212nE interfaceC2212nE = A0K2.A04[i10];
-                                        boolean A00 = A0K2.A00(i10);
-                                        boolean z10 = this.A0w[i10].A9N() != -2;
-                                        C07227s c07227s = A0K.A03[i10];
-                                        C07227s c07227s2 = A0K2.A03[i10];
+                                        InterfaceC2232nE interfaceC2232nE = A0K2.A04[i9];
+                                        boolean A00 = A0K2.A00(i9);
+                                        boolean z11 = this.A0w[i9].A9N() != -2;
+                                        C07427s c07427s = A0K.A03[i9];
+                                        C07427s c07427s2 = A0K2.A03[i9];
                                         if (A0y[1].length() != 31) {
                                             throw new RuntimeException();
                                         }
                                         A0y[1] = "R6UwS9N6ly40SGlMhcEQ765TyuQep";
-                                        if (A00 && c07227s2.equals(c07227s) && !z10) {
-                                            C2400qI[] A1A = A1A(interfaceC2212nE);
+                                        if (A00 && c07427s2.equals(c07427s) && !z11) {
+                                            C2420qI[] A1A = A1A(interfaceC2232nE);
                                             Log.e(A0D(0, 21, 22), A0D(392, 13, 67));
-                                            interfaceC2309oo3.AIa(A1A, A0C.A09[i10], A0C.A0H(this.A0K), A0C.A0B());
+                                            interfaceC2329oo3.AIa(A1A, A0C.A09[i9], A0C.A0H(this.A0K), A0C.A0B());
                                         } else {
-                                            interfaceC2309oo3.AJN();
+                                            interfaceC2329oo3.AJN();
                                         }
                                     } else {
                                         A0y[0] = "RavyRccOc8FddTyMpAZEZ";
                                         if (AAN) {
                                             continue;
                                         }
-                                        InterfaceC2212nE interfaceC2212nE2 = A0K2.A04[i10];
-                                        boolean A002 = A0K2.A00(i10);
-                                        if (this.A0w[i10].A9N() != -2) {
+                                        InterfaceC2232nE interfaceC2232nE2 = A0K2.A04[i9];
+                                        boolean A002 = A0K2.A00(i9);
+                                        if (this.A0w[i9].A9N() != -2) {
                                         }
-                                        C07227s c07227s3 = A0K.A03[i10];
-                                        C07227s c07227s22 = A0K2.A03[i10];
+                                        C07427s c07427s3 = A0K.A03[i9];
+                                        C07427s c07427s22 = A0K2.A03[i9];
                                         if (A0y[1].length() != 31) {
                                         }
                                     }
@@ -601,7 +601,7 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
     }
 
     public static void A0R() {
-        A0x = new byte[]{-108, -57, -66, -97, -69, -80, -56, -76, -63, -104, -68, -65, -69, -104, -67, -61, -76, -63, -67, -80, -69, -15, 36, 27, -4, 24, 13, 37, 17, 30, -11, 25, 28, 24, -11, 26, 32, 17, 30, 26, 13, 24, -26, -12, 13, 26, 16, 24, 17, 30, -87, -57, -50, -49, -46, -55, -50, -57, c.f16316a, -51, -59, -45, -45, -63, -57, -59, -45, c.f16316a, -45, -59, -50, -44, c.f16316a, -63, -58, -44, -59, -46, c.f16316a, -46, -59, -52, -59, -63, -45, -59, -114, -107, -70, -64, -79, -66, -70, -83, -72, 108, -66, -63, -70, -64, -75, -71, -79, 108, -79, -66, -66, -69, -66, 122, -54, -26, -37, -13, -36, -37, -35, -27, -102, -33, -20, -20, -23, -20, -88, -114, -86, -97, -73, -96, -97, -95, -87, -114, -83, -79, -89, -78, -89, -83, -84, -117, -79, 120, 94, 99, -94, 106, 94, -96, -77, -92, -92, -93, -80, -93, -94, -126, -77, -80, -97, -78, -89, -83, -84, -117, -79, 120, 94, 99, -94, 106, 94, -84, -93, -74, -78, -118, -83, -97, -94, -114, -83, -79, -89, -78, -89, -83, -84, -117, -79, 120, 94, 99, -94, -76, -48, -42, -45, -60, -58, -127, -58, -45, -45, -48, -45, -113, -72, -39, -44, -43, -123, -53, -58, -50, -47, -54, -55, -109, -78, -97, -91, -84, -67, -59, -56, -57, -54, -71, -54, -63, -60, -47, 120, -63, -65, -58, -57, -54, -63, -58, -65, 120, -53, -52, -54, -67, -71, -59, 120, -67, -54, -54, -57, -54, -110, 120, -108, -78, -71, -87, -82, -89, 96, -76, -81, 96, -77, -91, -82, -92, 96, -83, -91, -77, -77, -95, -89, -91, 96, -81, -82, 96, -95, 96, -92, -91, -95, -92, 96, -76, -88, -78, -91, -95, -92, 110, 5, 30, 21, 40, 32, 21, 19, 36, 21, 20, -48, 21, 34, 34, 31, 34, -48, 20, 21, 28, 25, 38, 21, 34, 25, 30, 23, -48, 29, 21, 35, 35, 17, 23, 21, -48, 31, 30, -48, 21, 40, 36, 21, 34, 30, 17, 28, -48, 36, 24, 34, 21, 17, 20, -34, -34, -23, -51, -23, -25, -33, -47, -23, -20, -27, 37, 29, 28, 33, 25, 8, 29, 42, 33, 39, 28, 1, 28, -70, -81, -68, -77, -71, -82, -102, -71, -67, -77, -66, -77, -71, -72, -97, -67, -18, -31, -20, -24, -35, -33, -31, -49, -16, -18, -31, -35, -23};
+        A0x = new byte[]{-108, -57, -66, -97, -69, -80, -56, -76, -63, -104, -68, -65, -69, -104, -67, -61, -76, -63, -67, -80, -69, -15, 36, 27, -4, 24, 13, 37, 17, 30, -11, 25, 28, 24, -11, 26, 32, 17, 30, 26, 13, 24, -26, -12, 13, 26, 16, 24, 17, 30, -87, -57, -50, -49, -46, -55, -50, -57, c.f17103a, -51, -59, -45, -45, -63, -57, -59, -45, c.f17103a, -45, -59, -50, -44, c.f17103a, -63, -58, -44, -59, -46, c.f17103a, -46, -59, -52, -59, -63, -45, -59, -114, -107, -70, -64, -79, -66, -70, -83, -72, 108, -66, -63, -70, -64, -75, -71, -79, 108, -79, -66, -66, -69, -66, 122, -54, -26, -37, -13, -36, -37, -35, -27, -102, -33, -20, -20, -23, -20, -88, -114, -86, -97, -73, -96, -97, -95, -87, -114, -83, -79, -89, -78, -89, -83, -84, -117, -79, 120, 94, 99, -94, 106, 94, -96, -77, -92, -92, -93, -80, -93, -94, -126, -77, -80, -97, -78, -89, -83, -84, -117, -79, 120, 94, 99, -94, 106, 94, -84, -93, -74, -78, -118, -83, -97, -94, -114, -83, -79, -89, -78, -89, -83, -84, -117, -79, 120, 94, 99, -94, -76, -48, -42, -45, -60, -58, -127, -58, -45, -45, -48, -45, -113, -72, -39, -44, -43, -123, -53, -58, -50, -47, -54, -55, -109, -78, -97, -91, -84, -67, -59, -56, -57, -54, -71, -54, -63, -60, -47, 120, -63, -65, -58, -57, -54, -63, -58, -65, 120, -53, -52, -54, -67, -71, -59, 120, -67, -54, -54, -57, -54, -110, 120, -108, -78, -71, -87, -82, -89, 96, -76, -81, 96, -77, -91, -82, -92, 96, -83, -91, -77, -77, -95, -89, -91, 96, -81, -82, 96, -95, 96, -92, -91, -95, -92, 96, -76, -88, -78, -91, -95, -92, 110, 5, 30, 21, 40, 32, 21, 19, 36, 21, 20, -48, 21, 34, 34, 31, 34, -48, 20, 21, 28, 25, 38, 21, 34, 25, 30, 23, -48, 29, 21, 35, 35, 17, 23, 21, -48, 31, 30, -48, 21, 40, 36, 21, 34, 30, 17, 28, -48, 36, 24, 34, 21, 17, 20, -34, -34, -23, -51, -23, -25, -33, -47, -23, -20, -27, 37, 29, 28, 33, 25, 8, 29, 42, 33, 39, 28, 1, 28, -70, -81, -68, -77, -71, -82, -102, -71, -67, -77, -66, -77, -71, -72, -97, -67, -18, -31, -20, -24, -35, -33, -31, -49, -16, -18, -31, -35, -23};
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:100:0x0231, code lost:
@@ -686,13 +686,13 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private void A0e(C06886k c06886k) throws AD {
-        C2248no c2248no;
-        if (c06886k.A01 != this.A0D) {
+    private void A0e(C07086k c07086k) throws AD {
+        C2268no c2268no;
+        if (c07086k.A01 != this.A0D) {
             return;
         }
         Timeline timeline = this.A0A.A03;
-        Timeline timeline2 = c06886k.A00;
+        Timeline timeline2 = c07086k.A00;
         this.A0A = this.A0A.A04(timeline2);
         A0M();
         if (this.A02 > 0) {
@@ -707,7 +707,7 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                 }
                 Object obj = A09.first;
                 long longValue = ((Long) A09.second).longValue();
-                C2248no A0K = this.A0j.A0K(timeline2, obj, longValue);
+                C2268no A0K = this.A0j.A0K(timeline2, obj, longValue);
                 this.A0A = this.A0A.A06(A0K, A0K.A00() ? 0L : longValue, longValue, this.A0A.A0D);
                 return;
             }
@@ -720,15 +720,15 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
             if (0 != 0) {
                 throw new NullPointerException(A0D(376, 16, 17));
             }
-            if (this.A0A.A02 == b.f6382b) {
+            if (this.A0A.A02 == b.f7168b) {
                 if (timeline2.A0N()) {
                     A0G();
                     return;
                 }
-                Pair<Object, Long> A08 = A08(timeline2, timeline2.A0B(this.A0V), b.f6382b);
+                Pair<Object, Long> A08 = A08(timeline2, timeline2.A0B(this.A0V), b.f7168b);
                 Object obj2 = A08.first;
                 long longValue2 = ((Long) A08.second).longValue();
-                C2248no A0K2 = this.A0j.A0K(timeline2, obj2, longValue2);
+                C2268no A0K2 = this.A0j.A0K(timeline2, obj2, longValue2);
                 C7Z c7z = this.A0A;
                 String[] strArr2 = A0y;
                 if (strArr2[2].length() == strArr2[6].length()) {
@@ -746,7 +746,7 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
             if (timeline2.A0N()) {
                 return;
             }
-            C2248no A0K3 = this.A0j.A0K(timeline2, obj3, j6);
+            C2268no A0K3 = this.A0j.A0K(timeline2, obj3, j6);
             this.A0A = this.A0A.A06(A0K3, A0K3.A00() ? 0L : j6, j6, this.A0A.A0D);
             return;
         }
@@ -759,10 +759,10 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                 A0G();
                 return;
             }
-            Pair<Object, Long> A082 = A08(timeline2, timeline2.A0J(A0C, this.A0c).A00, b.f6382b);
+            Pair<Object, Long> A082 = A08(timeline2, timeline2.A0J(A0C, this.A0c).A00, b.f7168b);
             Object obj5 = A082.first;
             long longValue3 = ((Long) A082.second).longValue();
-            C2248no A0K4 = this.A0j.A0K(timeline2, obj5, longValue3);
+            C2268no A0K4 = this.A0j.A0K(timeline2, obj5, longValue3);
             if (A0D != null) {
                 while (A0D.A0I() != null) {
                     A0D = A0D.A0I();
@@ -797,9 +797,9 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
             String[] strArr7 = A0y;
             strArr7[4] = "QYIV2IuM2tD6Cg4Dd0tvfiQK4IQ6icHf";
             strArr7[3] = "hXYkHU7O6zP410ynmzMqamHjkcWcTxII";
-            c2248no = c7z3.A05;
+            c2268no = c7z3.A05;
         } else {
-            c2248no = c7z3.A05;
+            c2268no = c7z3.A05;
         }
     }
 
@@ -816,35 +816,35 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private void A0f(C06916n c06916n) throws AD {
+    private void A0f(C07116n c07116n) throws AD {
         long longValue;
-        C2248no A0K;
+        C2268no A0K;
         long longValue2;
-        boolean z3;
+        boolean z6;
         this.A0h.A03(1);
-        Pair<Object, Long> A09 = A09(c06916n, true);
+        Pair<Object, Long> A09 = A09(c07116n, true);
         if (A09 == null) {
             A0K = A0A();
-            longValue2 = b.f6382b;
-            longValue = b.f6382b;
-            z3 = true;
+            longValue2 = b.f7168b;
+            longValue = b.f7168b;
+            z6 = true;
         } else {
             Object obj = A09.first;
             longValue = ((Long) A09.second).longValue();
             A0K = this.A0j.A0K(this.A0A.A03, obj, longValue);
             if (A0K.A00()) {
                 longValue2 = 0;
-                z3 = true;
+                z6 = true;
             } else {
                 longValue2 = ((Long) A09.second).longValue();
-                z3 = c06916n.A01 == b.f6382b;
+                z6 = c07116n.A01 == b.f7168b;
             }
         }
         try {
             try {
                 if (this.A0D != null && this.A02 <= 0) {
                     try {
-                        if (longValue2 == b.f6382b) {
+                        if (longValue2 == b.f7168b) {
                             A0V(4);
                             A13(false, true, false);
                         } else {
@@ -856,7 +856,7 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                                 }
                                 if (C2Y.A01(j6) == C2Y.A01(this.A0A.A0C)) {
                                     this.A0A = this.A0A.A06(A0K, this.A0A.A0C, longValue, A01());
-                                    if (z3) {
+                                    if (z6) {
                                         this.A0h.A04(2);
                                         return;
                                     }
@@ -864,11 +864,11 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                                 }
                             }
                             long A06 = A06(A0K, j6);
-                            z3 |= longValue2 != A06;
+                            z6 |= longValue2 != A06;
                             longValue2 = A06;
                         }
                         this.A0A = this.A0A.A06(A0K, longValue2, longValue, A01());
-                        if (z3) {
+                        if (z6) {
                             return;
                         }
                         this.A0h.A04(2);
@@ -876,16 +876,16 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                     } catch (Throwable th) {
                         th = th;
                         this.A0A = this.A0A.A06(A0K, longValue2, longValue, A01());
-                        if (z3) {
+                        if (z6) {
                             this.A0h.A04(2);
                         }
                         throw th;
                     }
                 }
-                this.A08 = c06916n;
+                this.A08 = c07116n;
                 this.A07 = null;
                 this.A0A = this.A0A.A06(A0K, longValue2, longValue, A01());
-                if (z3) {
+                if (z6) {
                 }
             } catch (Throwable th2) {
                 th = th2;
@@ -899,51 +899,51 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         A0R();
     }
 
-    public AB(InterfaceC2309oo[] interfaceC2309ooArr, AbstractC0889Ew abstractC0889Ew, C0890Ex c0890Ex, AnonymousClass74 anonymousClass74, F6 f62, boolean z3, int i, boolean z6, Handler handler, AnonymousClass45 anonymousClass45, boolean z9, boolean z10, boolean z11, boolean z12, boolean z13, boolean z14, long j6, boolean z15, int i6, boolean z16, boolean z17, boolean z18, boolean z19, boolean z20, boolean z21, C8O c8o) {
-        this.A0v = interfaceC2309ooArr;
-        this.A0l = abstractC0889Ew;
-        this.A0m = c0890Ex;
+    public AB(InterfaceC2329oo[] interfaceC2329ooArr, AbstractC0909Ew abstractC0909Ew, C0910Ex c0910Ex, AnonymousClass74 anonymousClass74, F6 f62, boolean z6, int i, boolean z9, Handler handler, AnonymousClass45 anonymousClass45, boolean z10, boolean z11, boolean z12, boolean z13, boolean z14, boolean z15, long j6, boolean z16, int i4, boolean z17, boolean z18, boolean z19, boolean z20, boolean z21, boolean z22, C8O c8o) {
+        this.A0v = interfaceC2329ooArr;
+        this.A0l = abstractC0909Ew;
+        this.A0m = c0910Ex;
         this.A0i = anonymousClass74;
         this.A0n = f62;
-        this.A0P = z3;
+        this.A0P = z6;
         this.A03 = i;
-        this.A0V = z6;
+        this.A0V = z9;
         this.A0a = handler;
         this.A0e = anonymousClass45;
-        this.A0U = z9;
-        this.A0H = z10;
-        this.A0G = z11;
-        this.A0M = z12;
-        this.A0I = z13;
-        this.A0T = z14;
+        this.A0U = z10;
+        this.A0H = z11;
+        this.A0G = z12;
+        this.A0M = z13;
+        this.A0I = z14;
+        this.A0T = z15;
         this.A0Z = j6;
-        this.A0q = z15;
-        this.A00 = i6;
-        this.A0u = z17;
-        this.A0s = z16;
-        this.A0O = z18;
-        this.A0Q = z19;
-        this.A0K = z20;
-        this.A0t = z21;
+        this.A0q = z16;
+        this.A00 = i4;
+        this.A0u = z18;
+        this.A0s = z17;
+        this.A0O = z19;
+        this.A0Q = z20;
+        this.A0K = z21;
+        this.A0t = z22;
         this.A0N = j6 > 0;
         this.A0Y = anonymousClass74.A70(c8o);
         this.A0r = anonymousClass74.AIn(c8o);
-        this.A0C = C07247u.A03;
-        this.A0A = new C7Z(Timeline.A02, b.f6382b, C2230nW.A06, c0890Ex);
-        this.A0h = new C06906m();
-        this.A0w = new InterfaceC07197p[interfaceC2309ooArr.length];
-        for (int i9 = 0; i9 < interfaceC2309ooArr.length; i9++) {
-            interfaceC2309ooArr[i9].AA9(i9, c8o);
-            this.A0w[i9] = interfaceC2309ooArr[i9].A7D();
+        this.A0C = C07447u.A03;
+        this.A0A = new C7Z(Timeline.A02, b.f7168b, C2250nW.A06, c0910Ex);
+        this.A0h = new C07106m();
+        this.A0w = new InterfaceC07397p[interfaceC2329ooArr.length];
+        for (int i6 = 0; i6 < interfaceC2329ooArr.length; i6++) {
+            interfaceC2329ooArr[i6].AA9(i6, c8o);
+            this.A0w[i6] = interfaceC2329ooArr[i6].A7D();
         }
-        this.A0g = new C2317ow(this, anonymousClass45);
-        this.A0k = new C2305ok(anonymousClass45);
-        this.A0o = z17 ? new C07569g(anonymousClass45) : null;
+        this.A0g = new C2337ow(this, anonymousClass45);
+        this.A0k = new C2325ok(anonymousClass45);
+        this.A0o = z18 ? new C07769g(anonymousClass45) : null;
         this.A0p = new ArrayList<>();
-        this.A0W = new InterfaceC2309oo[0];
-        this.A0d = new C2365pj();
-        this.A0c = new C2367pl();
-        abstractC0889Ew.A02(this, f62);
+        this.A0W = new InterfaceC2329oo[0];
+        this.A0d = new C2385pj();
+        this.A0c = new C2387pl();
+        abstractC0909Ew.A02(this, f62);
         this.A0b = new HandlerThread(A0D(21, 29, 115), -16);
         this.A0b.start();
         this.A0f = anonymousClass45.A5P(this.A0b.getLooper(), this);
@@ -951,7 +951,7 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
 
     @MetaExoPlayerCustomization
     private int A00() {
-        int exoplayerThreadPollingIntervalMs = MetaExoPlayerUpgradeConfig.A00(EnumC2001jY.A04);
+        int exoplayerThreadPollingIntervalMs = MetaExoPlayerUpgradeConfig.A00(EnumC2021jY.A04);
         if (exoplayerThreadPollingIntervalMs > 0) {
             return exoplayerThreadPollingIntervalMs;
         }
@@ -970,7 +970,7 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         } else {
             loadingPeriodStartPositionUs = A05(A0E);
         }
-        if (A0E == null || loadingPeriodStartPositionUs == b.f6382b) {
+        if (A0E == null || loadingPeriodStartPositionUs == b.f7168b) {
             return 0L;
         }
         return A0E.A0C(loadingPeriodStartPositionUs);
@@ -1004,14 +1004,14 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                 j6 = Math.min(j6, periodStartPositionUs);
             }
         }
-        return j6 == Long.MAX_VALUE ? b.f6382b : j6;
+        return j6 == Long.MAX_VALUE ? b.f7168b : j6;
     }
 
-    private long A06(C2248no c2248no, long j6) throws AD {
-        return A07(false, c2248no, j6, this.A0j.A0F() != this.A0j.A0G());
+    private long A06(C2268no c2268no, long j6) throws AD {
+        return A07(false, c2268no, j6, this.A0j.A0F() != this.A0j.A0G());
     }
 
-    private long A07(boolean z3, C2248no c2248no, long j6, boolean z6) throws AD {
+    private long A07(boolean z6, C2268no c2268no, long j6, boolean z9) throws AD {
         A0O();
         this.A0R = false;
         A0V(2);
@@ -1021,17 +1021,17 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
             if (c7a == null) {
                 break;
             }
-            if (A18(c2248no, j6, c7a)) {
+            if (A18(c2268no, j6, c7a)) {
                 this.A0j.A0S(c7a);
                 break;
             }
             c7a = this.A0j.A0B();
         }
-        if (A0F != c7a || z6) {
-            for (InterfaceC2309oo interfaceC2309oo : this.A0W) {
-                A0l(interfaceC2309oo);
+        if (A0F != c7a || z9) {
+            for (InterfaceC2329oo interfaceC2329oo : this.A0W) {
+                A0l(interfaceC2329oo);
             }
-            this.A0W = new InterfaceC2309oo[0];
+            this.A0W = new InterfaceC2329oo[0];
             if (A0y[1].length() == 31) {
                 throw new RuntimeException();
             }
@@ -1043,7 +1043,7 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         if (c7a != null) {
             A0g(A0F);
             if (c7a.A01) {
-                j6 = c7a.A07.AJ8(j6, z3);
+                j6 = c7a.A07.AJ8(j6, z6);
                 c7a.A07.A60(j6 - this.A0Y, this.A0r);
             }
             A0Y(j6);
@@ -1061,9 +1061,9 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         return timeline.A0D(this.A0d, this.A0c, i, j6);
     }
 
-    private Pair<Object, Long> A09(C06916n c06916n, boolean z3) {
+    private Pair<Object, Long> A09(C07116n c07116n, boolean z6) {
         Timeline timeline = this.A0A.A03;
-        Timeline timeline2 = c06916n.A02;
+        Timeline timeline2 = c07116n.A02;
         if (timeline.A0N()) {
             return null;
         }
@@ -1071,7 +1071,7 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
             timeline2 = timeline;
         }
         try {
-            Pair<Object, Long> periodPosition = timeline2.A0E(this.A0d, this.A0c, c06916n.A00, c06916n.A01);
+            Pair<Object, Long> periodPosition = timeline2.A0E(this.A0d, this.A0c, c07116n.A00, c07116n.A01);
             if (timeline == timeline2) {
                 return periodPosition;
             }
@@ -1079,21 +1079,21 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
             if (A0A != -1) {
                 return periodPosition;
             }
-            if (!z3 || A0C(periodPosition.first, timeline2, timeline) == null) {
+            if (!z6 || A0C(periodPosition.first, timeline2, timeline) == null) {
                 return null;
             }
-            return A08(timeline, timeline.A0H(A0A, this.A0c).A00, b.f6382b);
+            return A08(timeline, timeline.A0H(A0A, this.A0c).A00, b.f7168b);
         } catch (IndexOutOfBoundsException unused) {
-            throw new C05922q(timeline, c06916n.A00, c06916n.A01);
+            throw new C06122q(timeline, c07116n.A00, c07116n.A01);
         }
     }
 
-    private C2248no A0A() {
+    private C2268no A0A() {
         Timeline timeline = this.A0A.A03;
         if (timeline.A0N()) {
             return C7Z.A0E;
         }
-        return new C2248no(timeline.A0M(timeline.A0K(timeline.A0B(this.A0V), this.A0d).A00));
+        return new C2268no(timeline.A0M(timeline.A0K(timeline.A0B(this.A0V), this.A0d).A00));
     }
 
     @MetaExoPlayerCustomization(type = {"NEW_METHOD"}, value = "D71523094: Added for negative testing")
@@ -1149,18 +1149,18 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
 
     private void A0H() {
         int i;
-        boolean z3;
-        int i6;
+        boolean z6;
+        int i4;
         if (this.A0h.A06(this.A0A)) {
             Handler handler = this.A0a;
             i = this.A0h.A01;
-            z3 = this.A0h.A03;
-            if (z3) {
-                i6 = this.A0h.A00;
+            z6 = this.A0h.A03;
+            if (z6) {
+                i4 = this.A0h.A00;
             } else {
-                i6 = -1;
+                i4 = -1;
             }
-            handler.obtainMessage(0, i, i6, this.A0A).sendToTarget();
+            handler.obtainMessage(0, i, i4, this.A0A).sendToTarget();
             this.A0h.A05(this.A0A);
         }
     }
@@ -1175,8 +1175,8 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                     return;
                 }
             }
-            for (InterfaceC2309oo interfaceC2309oo : this.A0W) {
-                if (!interfaceC2309oo.A9p()) {
+            for (InterfaceC2329oo interfaceC2329oo : this.A0W) {
+                if (!interfaceC2329oo.A9p()) {
                     return;
                 }
             }
@@ -1210,17 +1210,17 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
     }
 
     private void A0L() throws AD {
-        boolean z3;
+        boolean z6;
         if (!this.A0j.A0N()) {
             return;
         }
-        float f3 = this.A0g.A8m().A01;
+        float f2 = this.A0g.A8m().A01;
         C7A periodHolder = this.A0j.A0G();
-        boolean z6 = true;
+        boolean z9 = true;
         for (C7A A0F = this.A0j.A0F(); A0F != null && A0F.A02; A0F = A0F.A0I()) {
-            C0890Ex A0L = A0F.A0L(f3, this.A0A.A03);
+            C0910Ex A0L = A0F.A0L(f2, this.A0A.A03);
             if (A0L != null) {
-                if (z6) {
+                if (z9) {
                     C7A A0F2 = this.A0j.A0F();
                     boolean A0S = this.A0j.A0S(A0F2);
                     boolean[] zArr = new boolean[this.A0v.length];
@@ -1232,41 +1232,41 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                     }
                     int i = 0;
                     boolean[] zArr2 = new boolean[this.A0v.length];
-                    for (int i6 = 0; i6 < this.A0v.length; i6++) {
-                        InterfaceC2309oo interfaceC2309oo = this.A0v[i6];
-                        zArr2[i6] = interfaceC2309oo.A9A() != 0;
-                        DT dt = A0F2.A09[i6];
+                    for (int i4 = 0; i4 < this.A0v.length; i4++) {
+                        InterfaceC2329oo interfaceC2329oo = this.A0v[i4];
+                        zArr2[i4] = interfaceC2329oo.A9A() != 0;
+                        DT dt = A0F2.A09[i4];
                         if (dt != null) {
                             i++;
                         }
-                        if (zArr2[i6]) {
-                            DT A9D = interfaceC2309oo.A9D();
+                        if (zArr2[i4]) {
+                            DT A9D = interfaceC2329oo.A9D();
                             if (A0y[7].charAt(12) == '2') {
                                 throw new RuntimeException();
                             }
                             A0y[1] = "PyyQ9suxdi7C";
                             if (dt != A9D) {
-                                A0l(interfaceC2309oo);
-                            } else if (zArr[i6]) {
-                                interfaceC2309oo.AIm(this.A06);
+                                A0l(interfaceC2329oo);
+                            } else if (zArr[i4]) {
+                                interfaceC2329oo.AIm(this.A06);
                             }
                         }
                     }
                     this.A0A = this.A0A.A07(A0F2.A0J(), A0F2.A0K());
                     A14(zArr2, i);
-                    z3 = false;
+                    z6 = false;
                 } else {
                     this.A0j.A0S(A0F);
                     if (A0F.A02) {
-                        z3 = false;
+                        z6 = false;
                         A0F.A0F(A0L, Math.max(A0F.A00.A03, A0F.A0D(this.A06)), false);
                     } else {
-                        z3 = false;
+                        z6 = false;
                     }
                 }
                 A0v(true);
                 if (this.A0A.A00 != 4) {
-                    A0w(z3);
+                    A0w(z6);
                     A0Q();
                     this.A0f.AJA(2);
                     return;
@@ -1274,7 +1274,7 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                 return;
             }
             if (A0F == periodHolder) {
-                z6 = false;
+                z9 = false;
             }
         }
     }
@@ -1296,8 +1296,8 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         if (this.A0u) {
             this.A0o.A00();
         }
-        for (InterfaceC2309oo interfaceC2309oo : this.A0W) {
-            interfaceC2309oo.start();
+        for (InterfaceC2329oo interfaceC2329oo : this.A0W) {
+            interfaceC2329oo.start();
         }
     }
 
@@ -1307,8 +1307,8 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         if (this.A0u) {
             this.A0o.A01();
         }
-        for (InterfaceC2309oo interfaceC2309oo : this.A0W) {
-            A0m(interfaceC2309oo);
+        for (InterfaceC2329oo interfaceC2329oo : this.A0W) {
+            A0m(interfaceC2329oo);
         }
     }
 
@@ -1318,16 +1318,16 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         }
         C7A A0F = this.A0j.A0F();
         long AHQ = A0F.A07.AHQ();
-        if (AHQ != b.f6382b) {
+        if (AHQ != b.f7168b) {
             A0Y(AHQ);
             if (AHQ != this.A0A.A0C) {
                 this.A0A = this.A0A.A06(this.A0A.A05, AHQ, this.A0A.A01, A01());
                 this.A0h.A04(4);
             }
         } else {
-            C2317ow c2317ow = this.A0g;
+            C2337ow c2337ow = this.A0g;
             C7A playingPeriodHolder = this.A0j.A0G();
-            this.A06 = c2317ow.A04(A0F != playingPeriodHolder);
+            this.A06 = c2337ow.A04(A0F != playingPeriodHolder);
             long A0D = A0F.A0D(this.A06);
             A0Z(this.A0A.A0C, A0D);
             this.A0A.A0C = A0D;
@@ -1345,11 +1345,11 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         }
     }
 
-    private void A0T(float f3) {
+    private void A0T(float f2) {
         for (C7A A0D = this.A0j.A0D(); A0D != null && A0D.A02; A0D = A0D.A0I()) {
-            for (InterfaceC2212nE interfaceC2212nE : A0D.A0K().A04) {
-                if (interfaceC2212nE != null) {
-                    interfaceC2212nE.AFJ(f3);
+            for (InterfaceC2232nE interfaceC2232nE : A0D.A0K().A04) {
+                if (interfaceC2232nE != null) {
+                    interfaceC2232nE.AFJ(f2);
                 }
             }
         }
@@ -1378,9 +1378,9 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         }
     }
 
-    private void A0W(int i, boolean z3) {
+    private void A0W(int i, boolean z6) {
         if (this.A0A.A00 != i) {
-            C7Z A03 = this.A0A.A03(i, z3);
+            C7Z A03 = this.A0A.A03(i, z6);
             if (A0y[1].length() == 31) {
                 throw new RuntimeException();
             }
@@ -1394,21 +1394,21 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         }
     }
 
-    private void A0X(int i, boolean playing, int i6) throws AD {
+    private void A0X(int i, boolean playing, int i4) throws AD {
         C7A A0F = this.A0j.A0F();
-        InterfaceC2309oo interfaceC2309oo = this.A0v[i];
-        this.A0W[i6] = interfaceC2309oo;
-        if (interfaceC2309oo.A9A() == 0) {
+        InterfaceC2329oo interfaceC2329oo = this.A0v[i];
+        this.A0W[i4] = interfaceC2329oo;
+        if (interfaceC2329oo.A9A() == 0) {
             C7A A0G = this.A0j.A0G();
             C7A playingPeriodHolder = this.A0j.A0F();
-            boolean z3 = A0G == playingPeriodHolder;
-            C07227s c07227s = A0F.A0K().A03[i];
-            C2400qI[] A1A = A1A(A0F.A0K().A04[i]);
-            boolean z6 = this.A0P && this.A0A.A00 == 3;
-            interfaceC2309oo.A6L(c07227s, A1A, A0F.A09[i], this.A06, !playing && z6, z3, A0G.A0H(this.A0K), A0F.A0B());
-            this.A0g.A09(interfaceC2309oo);
-            if (z6) {
-                interfaceC2309oo.start();
+            boolean z6 = A0G == playingPeriodHolder;
+            C07427s c07427s = A0F.A0K().A03[i];
+            C2420qI[] A1A = A1A(A0F.A0K().A04[i]);
+            boolean z9 = this.A0P && this.A0A.A00 == 3;
+            interfaceC2329oo.A6L(c07427s, A1A, A0F.A09[i], this.A06, !playing && z9, z6, A0G.A0H(this.A0K), A0F.A0B());
+            this.A0g.A09(interfaceC2329oo);
+            if (z9) {
+                interfaceC2329oo.start();
             }
         }
     }
@@ -1422,14 +1422,14 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         }
         this.A06 = A0E;
         this.A0g.A07(this.A06);
-        for (InterfaceC2309oo interfaceC2309oo : this.A0W) {
+        for (InterfaceC2329oo interfaceC2329oo : this.A0W) {
             long j9 = this.A06;
             String[] strArr = A0y;
             if (strArr[2].length() == strArr[6].length()) {
                 throw new RuntimeException();
             }
             A0y[5] = "3LWS1la82nevxXslk8B3HGv7gilut34u";
-            interfaceC2309oo.AIm(j9);
+            interfaceC2329oo.AIm(j9);
         }
     }
 
@@ -1491,8 +1491,8 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private void A0Z(long j6, long j9) throws AD {
-        C06896l c06896l;
-        C06896l nextInfo;
+        C07096l c07096l;
+        C07096l nextInfo;
         if (this.A0p.isEmpty() || this.A0A.A05.A00()) {
             return;
         }
@@ -1507,41 +1507,41 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
             int A0A = this.A0A.A03.A0A(this.A0A.A05.A04);
             int currentPeriodIndex = this.A01;
             if (currentPeriodIndex > 0) {
-                ArrayList<C06896l> arrayList = this.A0p;
+                ArrayList<C07096l> arrayList = this.A0p;
                 int currentPeriodIndex2 = this.A01;
                 int i = currentPeriodIndex2 - 1;
                 if (A0y[1].length() != 31) {
                     String[] strArr2 = A0y;
                     strArr2[2] = "q3c";
                     strArr2[6] = "HlTr3zIzL5MxTNWEN";
-                    c06896l = arrayList.get(i);
+                    c07096l = arrayList.get(i);
                 }
             } else {
-                c06896l = null;
+                c07096l = null;
             }
-            while (c06896l != null && (c06896l.A00 > A0A || (c06896l.A00 == A0A && c06896l.A01 > j6))) {
+            while (c07096l != null && (c07096l.A00 > A0A || (c07096l.A00 == A0A && c07096l.A01 > j6))) {
                 int currentPeriodIndex3 = this.A01;
                 this.A01 = currentPeriodIndex3 - 1;
                 int currentPeriodIndex4 = this.A01;
                 if (currentPeriodIndex4 > 0) {
-                    ArrayList<C06896l> arrayList2 = this.A0p;
+                    ArrayList<C07096l> arrayList2 = this.A0p;
                     int currentPeriodIndex5 = this.A01;
-                    c06896l = arrayList2.get(currentPeriodIndex5 - 1);
+                    c07096l = arrayList2.get(currentPeriodIndex5 - 1);
                 } else {
-                    c06896l = null;
+                    c07096l = null;
                 }
             }
-            int i6 = this.A01;
+            int i4 = this.A01;
             int currentPeriodIndex6 = this.A0p.size();
-            if (i6 < currentPeriodIndex6) {
-                ArrayList<C06896l> arrayList3 = this.A0p;
+            if (i4 < currentPeriodIndex6) {
+                ArrayList<C07096l> arrayList3 = this.A0p;
                 int currentPeriodIndex7 = this.A01;
                 nextInfo = arrayList3.get(currentPeriodIndex7);
             } else {
                 nextInfo = null;
             }
             while (nextInfo != null && nextInfo.A02 != null) {
-                int i9 = nextInfo.A00;
+                int i6 = nextInfo.A00;
                 if (A0y[5].charAt(1) != 'q') {
                     A0y[1] = "urcr7rEa5cce4ZESz6";
                 }
@@ -1559,19 +1559,19 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                     if (currentPeriodIndex8 == A0A && nextInfo.A01 > j6 && nextInfo.A01 <= j9) {
                         A0j(nextInfo.A03);
                         if (nextInfo.A03.A0B() || nextInfo.A03.A0D()) {
-                            ArrayList<C06896l> arrayList4 = this.A0p;
+                            ArrayList<C07096l> arrayList4 = this.A0p;
                             int currentPeriodIndex9 = this.A01;
                             arrayList4.remove(currentPeriodIndex9);
                         } else {
                             int currentPeriodIndex10 = this.A01;
                             this.A01 = currentPeriodIndex10 + 1;
                         }
-                        int i10 = this.A01;
+                        int i9 = this.A01;
                         int currentPeriodIndex11 = this.A0p.size();
-                        if (i10 < currentPeriodIndex11) {
-                            ArrayList<C06896l> arrayList5 = this.A0p;
+                        if (i9 < currentPeriodIndex11) {
+                            ArrayList<C07096l> arrayList5 = this.A0p;
                             int currentPeriodIndex12 = this.A01;
-                            C06896l nextInfo2 = arrayList5.get(currentPeriodIndex12);
+                            C07096l nextInfo2 = arrayList5.get(currentPeriodIndex12);
                             nextInfo = nextInfo2;
                         } else {
                             nextInfo = null;
@@ -1591,23 +1591,23 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         this.A0f.AJB(2, j6 + j9);
     }
 
-    private void A0b(C2379px c2379px) {
-        this.A0g.AJd(c2379px);
+    private void A0b(C2399px c2399px) {
+        this.A0g.AJd(c2399px);
         if (this.A0o != null) {
-            this.A0o.AJd(c2379px);
+            this.A0o.AJd(c2399px);
         }
         if (this.A0k != null) {
-            this.A0k.AJd(c2379px);
+            this.A0k.AJd(c2399px);
         }
     }
 
-    private void A0c(C06876j c06876j) throws AD {
+    private void A0c(C07076j c07076j) throws AD {
         throw new NullPointerException(A0D(376, 16, 17));
     }
 
-    private void A0d(C06876j c06876j, boolean z3) throws AD {
+    private void A0d(C07076j c07076j, boolean z6) throws AD {
         this.A0h.A03(1);
-        throw new NullPointerException(A0D(363, 13, a.f21728R));
+        throw new NullPointerException(A0D(363, 13, a.f22515R));
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0070, code lost:
@@ -1648,15 +1648,15 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
             throw new RuntimeException();
         }
         A0y[0] = "";
-        int i6 = 0;
-        while (i6 < this.A0v.length) {
-            InterfaceC2309oo interfaceC2309oo = this.A0v[i6];
-            zArr[i6] = interfaceC2309oo.A9A() != 0;
-            if (A0F.A0K().A00(i6)) {
+        int i4 = 0;
+        while (i4 < this.A0v.length) {
+            InterfaceC2329oo interfaceC2329oo = this.A0v[i4];
+            zArr[i4] = interfaceC2329oo.A9A() != 0;
+            if (A0F.A0K().A00(i4)) {
                 i++;
             }
-            if (zArr[i6]) {
-                C0890Ex A0K = A0F.A0K();
+            if (zArr[i4]) {
+                C0910Ex A0K = A0F.A0K();
                 int enabledRendererCount2 = A0y[5].charAt(1);
                 if (enabledRendererCount2 != 113) {
                     String[] strArr2 = A0y;
@@ -1664,95 +1664,95 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                     strArr2[3] = "spEmpaFlzQc3LcHeWE04rIrq6t30lchN";
                 }
             }
-            i6++;
+            i4++;
         }
         this.A0A = this.A0A.A07(A0F.A0J(), A0F.A0K());
         A14(zArr, i);
     }
 
-    private void A0h(C07077d c07077d) throws AD {
-        if (c07077d.A0D()) {
+    private void A0h(C07277d c07277d) throws AD {
+        if (c07277d.A0D()) {
             return;
         }
         try {
-            c07077d.A05().A9i(c07077d.A01(), c07077d.A09());
+            c07277d.A05().A9i(c07277d.A01(), c07277d.A09());
         } finally {
-            c07077d.A0A(true);
+            c07277d.A0A(true);
         }
     }
 
-    private void A0i(C07077d c07077d) throws AD {
-        if (c07077d.A02() == b.f6382b) {
-            A0j(c07077d);
+    private void A0i(C07277d c07277d) throws AD {
+        if (c07277d.A02() == b.f7168b) {
+            A0j(c07277d);
             return;
         }
         if (this.A0D == null || this.A02 > 0) {
-            this.A0p.add(new C06896l(c07077d));
+            this.A0p.add(new C07096l(c07277d));
             return;
         }
-        C06896l c06896l = new C06896l(c07077d);
-        if (A16(c06896l)) {
-            this.A0p.add(c06896l);
+        C07096l c07096l = new C07096l(c07277d);
+        if (A16(c07096l)) {
+            this.A0p.add(c07096l);
             Collections.sort(this.A0p);
         } else {
-            c07077d.A0A(false);
+            c07277d.A0A(false);
         }
     }
 
-    private void A0j(C07077d c07077d) throws AD {
-        if (c07077d.A03() == this.A0f.A8R()) {
-            A0h(c07077d);
+    private void A0j(C07277d c07277d) throws AD {
+        if (c07277d.A03() == this.A0f.A8R()) {
+            A0h(c07277d);
             if (this.A0A.A00 == 3 || this.A0A.A00 == 2) {
                 this.A0f.AJA(2);
                 return;
             }
             return;
         }
-        this.A0f.ACj(15, c07077d).A02();
+        this.A0f.ACj(15, c07277d).A02();
     }
 
-    private void A0k(final C07077d c07077d) {
-        Looper A03 = c07077d.A03();
+    private void A0k(final C07277d c07277d) {
+        Looper A03 = c07277d.A03();
         if (!A03.getThread().isAlive()) {
             Log.w(A0D(220, 3, 37), A0D(258, 40, 7));
-            c07077d.A0A(false);
+            c07277d.A0A(false);
         } else {
             this.A0e.A5P(A03, null).A03(new Runnable() { // from class: com.facebook.ads.redexgen.X.6h
                 @Override // java.lang.Runnable
                 public final void run() {
-                    AB.this.A1E(c07077d);
+                    AB.this.A1E(c07277d);
                 }
             });
         }
     }
 
-    private void A0l(InterfaceC2309oo interfaceC2309oo) throws AD {
-        this.A0g.A08(interfaceC2309oo);
-        A0m(interfaceC2309oo);
-        interfaceC2309oo.A5x();
+    private void A0l(InterfaceC2329oo interfaceC2329oo) throws AD {
+        this.A0g.A08(interfaceC2329oo);
+        A0m(interfaceC2329oo);
+        interfaceC2329oo.A5x();
     }
 
-    private void A0m(InterfaceC2309oo interfaceC2309oo) throws AD {
-        if (interfaceC2309oo.A9A() == 2) {
-            interfaceC2309oo.stop();
+    private void A0m(InterfaceC2329oo interfaceC2329oo) throws AD {
+        if (interfaceC2329oo.A9A() == 2) {
+            interfaceC2329oo.stop();
         }
     }
 
-    private void A0n(C07247u c07247u) {
-        this.A0C = c07247u;
+    private void A0n(C07447u c07447u) {
+        this.A0C = c07447u;
     }
 
-    private void A0o(InterfaceC2249np interfaceC2249np) {
-        if (!this.A0j.A0T(interfaceC2249np)) {
+    private void A0o(InterfaceC2269np interfaceC2269np) {
+        if (!this.A0j.A0T(interfaceC2269np)) {
             return;
         }
         this.A0j.A0L(this.A06);
         A0w(false);
     }
 
-    private void A0p(InterfaceC2249np interfaceC2249np) throws AD {
+    private void A0p(InterfaceC2269np interfaceC2269np) throws AD {
         byte b9;
-        if (!this.A0j.A0T(interfaceC2249np)) {
+        if (!this.A0j.A0T(interfaceC2269np)) {
             return;
         }
         C7A A0E = this.A0j.A0E();
@@ -1780,49 +1780,49 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
     /* JADX INFO: Access modifiers changed from: private */
     @Override // com.instagram.common.viewpoint.core.DW
     /* renamed from: A0q, reason: merged with bridge method [inline-methods] */
-    public final void ADV(InterfaceC2249np interfaceC2249np) {
-        this.A0f.ACj(10, interfaceC2249np).A02();
+    public final void ADV(InterfaceC2269np interfaceC2269np) {
+        this.A0f.ACj(10, interfaceC2269np).A02();
     }
 
-    private void A0r(InterfaceC0838Cx interfaceC0838Cx, boolean z3, boolean z6) {
+    private void A0r(InterfaceC0858Cx interfaceC0858Cx, boolean z6, boolean z9) {
         this.A02++;
-        A13(true, z3, z6);
+        A13(true, z6, z9);
         this.A0i.AFR(C8O.A03);
-        this.A0D = interfaceC0838Cx;
+        this.A0D = interfaceC0858Cx;
         A0V(2);
-        interfaceC0838Cx.AH7(this, null);
+        interfaceC0858Cx.AH7(this, null);
         this.A0f.AJA(2);
     }
 
-    private void A0s(C2230nW c2230nW, C0890Ex c0890Ex) {
-        this.A0i.AGF(new AnonymousClass73(C8O.A03, this.A0A.A03, this.A0A.A04, this.A0A.A0C, A01(), this.A0g.A8m().A01, this.A0P, this.A0R, b.f6382b, this.A04), c2230nW, c0890Ex.A04);
+    private void A0s(C2250nW c2250nW, C0910Ex c0910Ex) {
+        this.A0i.AGF(new AnonymousClass73(C8O.A03, this.A0A.A03, this.A0A.A04, this.A0A.A0C, A01(), this.A0g.A8m().A01, this.A0P, this.A0R, b.f7168b, this.A04), c2250nW, c0910Ex.A04);
     }
 
     @MetaExoPlayerCustomization("D18870411: Adding start stall debug reason")
-    private void A0t(EnumC1966ir enumC1966ir, boolean z3) {
+    private void A0t(EnumC1986ir enumC1986ir, boolean z6) {
         if (this.A0A.A00 != 3) {
-            this.A0A = this.A0A.A02(3, enumC1966ir, z3);
+            this.A0A = this.A0A.A02(3, enumC1986ir, z6);
             this.A04 = -1L;
         }
     }
 
     @MetaExoPlayerCustomization(type = {"NEW_METHOD"}, value = "D63737392: Added for negative testing")
     private void A0u(String str) {
-        boolean z3 = false;
+        boolean z6 = false;
         if (str == null) {
             this.A0J = false;
             this.A09 = null;
             return;
         }
         if (str != null && str.length() > 0) {
-            z3 = true;
+            z6 = true;
         }
-        this.A0J = z3;
+        this.A0J = z6;
         this.A09 = new C7W(str);
     }
 
-    private void A0v(boolean z3) {
-        C2248no c2248no;
+    private void A0v(boolean z6) {
+        C2268no c2268no;
         C7A A0E = this.A0j.A0E();
         if (A0E == null) {
             C7Z c7z = this.A0A;
@@ -1832,22 +1832,22 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
             String[] strArr = A0y;
             strArr[2] = "b0w";
             strArr[6] = "WyMJg745VdMbfing6";
-            c2248no = c7z.A05;
+            c2268no = c7z.A05;
         } else {
-            c2248no = A0E.A00.A04;
+            c2268no = A0E.A00.A04;
         }
-        C2248no loadingMediaPeriodId = this.A0A.A04;
-        boolean loadingMediaPeriodChanged = !loadingMediaPeriodId.equals(c2248no);
+        C2268no loadingMediaPeriodId = this.A0A.A04;
+        boolean loadingMediaPeriodChanged = !loadingMediaPeriodId.equals(c2268no);
         if (loadingMediaPeriodChanged) {
-            this.A0A = this.A0A.A05(c2248no);
+            this.A0A = this.A0A.A05(c2268no);
         }
-        if ((loadingMediaPeriodChanged || z3) && A0E != null && A0E.A02) {
+        if ((loadingMediaPeriodChanged || z6) && A0E != null && A0E.A02) {
             A0s(A0E.A0J(), A0E.A0K());
         }
     }
 
     @MetaExoPlayerCustomization("Customized Buffered Duration MS D23157182")
-    private void A0w(boolean z3) {
+    private void A0w(boolean z6) {
         long A0C;
         C7A A0E = this.A0j.A0E();
         long A0A = A0E.A0A();
@@ -1868,12 +1868,12 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
             A0C = A02();
         }
         Timeline timeline = this.A0A.A03;
-        C2248no c2248no = A0E.A00.A04;
-        float f3 = this.A0g.A8m().A01;
-        boolean z6 = this.A0P || z3;
-        boolean z9 = this.A0R;
+        C2268no c2268no = A0E.A00.A04;
+        float f2 = this.A0g.A8m().A01;
+        boolean z9 = this.A0P || z6;
+        boolean z10 = this.A0R;
         long nextLoadPositionUs2 = this.A04;
-        boolean AJv = this.A0i.AJv(new AnonymousClass73(null, timeline, c2248no, A0D, A0C, f3, z6, z9, b.f6382b, nextLoadPositionUs2));
+        boolean AJv = this.A0i.AJv(new AnonymousClass73(null, timeline, c2268no, A0D, A0C, f2, z9, z10, b.f7168b, nextLoadPositionUs2));
         if (this.A0T && this.A0P && this.A0R && !AJv && this.A0A.A00 == 2) {
             Long valueOf = Long.valueOf(A0D / 1000);
             Long valueOf2 = Long.valueOf(A0C / 1000);
@@ -1894,35 +1894,35 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         }
     }
 
-    private void A0x(boolean z3) throws AD {
-        C2248no c2248no = this.A0j.A0F().A00.A04;
-        long A07 = A07(false, c2248no, this.A0A.A0C, true);
+    private void A0x(boolean z6) throws AD {
+        C2268no c2268no = this.A0j.A0F().A00.A04;
+        long A07 = A07(false, c2268no, this.A0A.A0C, true);
         if (A07 != this.A0A.A0C) {
-            this.A0A = this.A0A.A06(c2248no, A07, this.A0A.A01, A01());
-            if (z3) {
-                C06906m c06906m = this.A0h;
+            this.A0A = this.A0A.A06(c2268no, A07, this.A0A.A01, A01());
+            if (z6) {
+                C07106m c07106m = this.A0h;
                 String[] strArr = A0y;
                 if (strArr[4].charAt(1) == strArr[3].charAt(1)) {
                     throw new RuntimeException();
                 }
                 A0y[5] = "dnthUoDEzHvBWSE2tp3YAJwgKJx1FOWZ";
-                c06906m.A04(4);
+                c07106m.A04(4);
             }
         }
     }
 
-    private void A0y(boolean z3) {
-        if (this.A0A.A0A != z3) {
-            this.A0A = this.A0A.A08(z3);
+    private void A0y(boolean z6) {
+        if (this.A0A.A0A != z6) {
+            this.A0A = this.A0A.A08(z6);
         }
     }
 
-    private void A0z(boolean z3) throws AD {
+    private void A0z(boolean z6) throws AD {
         try {
             this.A0R = false;
-            this.A0P = z3;
-            A10(z3);
-            if (!z3) {
+            this.A0P = z6;
+            A10(z6);
+            if (!z6) {
                 A0O();
                 A0Q();
                 A0S((byte) 2);
@@ -1941,39 +1941,39 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                 }
             }
         } finally {
-            this.A0a.obtainMessage(3, Boolean.valueOf(z3)).sendToTarget();
+            this.A0a.obtainMessage(3, Boolean.valueOf(z6)).sendToTarget();
         }
     }
 
     @MetaExoPlayerCustomization("D19875605 Prevent further error loading once pausing video")
-    private void A10(boolean z3) {
+    private void A10(boolean z6) {
         C7A loadingPeriod = this.A0j.A0E();
         if (loadingPeriod == null) {
             return;
         }
-        loadingPeriod.A07.AJc(z3);
+        loadingPeriod.A07.AJc(z6);
     }
 
-    private void A11(boolean z3) throws AD {
-        this.A0V = z3;
-        if (!this.A0j.A0R(this.A0A.A03, z3)) {
+    private void A11(boolean z6) throws AD {
+        this.A0V = z6;
+        if (!this.A0j.A0R(this.A0A.A03, z6)) {
             A0x(true);
         }
         A0v(false);
     }
 
-    private void A12(boolean z3, boolean z6) {
-        A13(true, z3, z3);
-        this.A0h.A03(this.A02 + (z6 ? 1 : 0));
+    private void A12(boolean z6, boolean z9) {
+        A13(true, z6, z6);
+        this.A0h.A03(this.A02 + (z9 ? 1 : 0));
         this.A02 = 0;
         this.A0i.AG6(C8O.A03);
         A0V(1);
     }
 
-    private void A13(boolean z3, boolean z6, boolean z9) {
+    private void A13(boolean z6, boolean z9, boolean z10) {
         long j6;
-        C2230nW c2230nW;
-        C0890Ex c0890Ex;
+        C2250nW c2250nW;
+        C0910Ex c0910Ex;
         this.A0f.AIT(2);
         this.A0R = false;
         this.A0g.A06();
@@ -1982,30 +1982,30 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
             this.A0o.A01();
         }
         this.A06 = this.A0t ? 60000000L : 0L;
-        for (InterfaceC2309oo interfaceC2309oo : this.A0W) {
+        for (InterfaceC2329oo interfaceC2329oo : this.A0W) {
             try {
-                A0l(interfaceC2309oo);
+                A0l(interfaceC2329oo);
             } catch (AD | RuntimeException e9) {
-                Log.e(A0D(0, 21, 22), A0D(BaseATView.a.f9771G, 12, 44), e9);
+                Log.e(A0D(0, 21, 22), A0D(BaseATView.a.f10557G, 12, 44), e9);
             }
         }
-        this.A0W = new InterfaceC2309oo[0];
-        this.A0j.A0M(!z6);
+        this.A0W = new InterfaceC2329oo[0];
+        this.A0j.A0M(!z9);
         A0y(false);
-        if (z6) {
+        if (z9) {
             this.A08 = null;
         }
-        if (z9) {
-            Iterator<C06896l> it = this.A0p.iterator();
+        if (z10) {
+            Iterator<C07096l> it = this.A0p.iterator();
             while (it.hasNext()) {
                 it.next().A03.A0A(false);
             }
             this.A0p.clear();
             this.A01 = 0;
         }
-        C2248no A0A = z6 ? A0A() : this.A0A.A05;
-        long j9 = b.f6382b;
-        if (z6) {
+        C2268no A0A = z9 ? A0A() : this.A0A.A05;
+        long j9 = b.f7168b;
+        if (z9) {
             j6 = -9223372036854775807L;
         } else {
             C7Z c7z = this.A0A;
@@ -2019,7 +2019,7 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                 j6 = c7z.A0C;
             }
         }
-        if (!z6) {
+        if (!z9) {
             C7Z c7z2 = this.A0A;
             if (A0y[5].charAt(1) == 'q') {
                 throw new RuntimeException();
@@ -2029,25 +2029,25 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
             strArr2[6] = "FwoZ6mA9qzJ4hrvJt";
             j9 = c7z2.A01;
         }
-        Timeline timeline = z9 ? Timeline.A02 : this.A0A.A03;
+        Timeline timeline = z10 ? Timeline.A02 : this.A0A.A03;
         int i = this.A0A.A00;
-        if (z9) {
-            c2230nW = C2230nW.A06;
+        if (z10) {
+            c2250nW = C2250nW.A06;
         } else {
             C7Z c7z3 = this.A0A;
             if (A0y[7].charAt(12) == '2') {
                 throw new RuntimeException();
             }
             A0y[5] = "yizxhFEcEwEbIh7DB6ScCbr86G64zHmf";
-            c2230nW = c7z3.A06;
+            c2250nW = c7z3.A06;
         }
-        if (z9) {
-            c0890Ex = this.A0m;
+        if (z10) {
+            c0910Ex = this.A0m;
         } else {
-            c0890Ex = this.A0A.A07;
+            c0910Ex = this.A0A.A07;
         }
-        this.A0A = new C7Z(timeline, A0A, j6, j9, i, false, c2230nW, c0890Ex, A0A, j6, 0L, j6);
-        if (z3 && this.A0D != null) {
+        this.A0A = new C7Z(timeline, A0A, j6, j9, i, false, c2250nW, c0910Ex, A0A, j6, 0L, j6);
+        if (z6 && this.A0D != null) {
             this.A0D.AHl(this);
             this.A0D = null;
         }
@@ -2058,12 +2058,12 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private void A14(boolean[] zArr, int i) throws AD {
-        this.A0W = new InterfaceC2309oo[i];
+        this.A0W = new InterfaceC2329oo[i];
         int enabledRendererCount = 0;
         C7A A0F = this.A0j.A0F();
-        for (int i6 = 0; i6 < enabledRendererCount; i6++) {
-            if (A0F.A0K().A00(i6)) {
-                A0X(i6, zArr[i6], enabledRendererCount);
+        for (int i4 = 0; i4 < enabledRendererCount; i4++) {
+            if (A0F.A0K().A00(i4)) {
+                A0X(i4, zArr[i4], enabledRendererCount);
                 enabledRendererCount++;
             }
         }
@@ -2073,53 +2073,53 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         C7A playingPeriodHolder = this.A0j.A0F();
         C7A A0I = playingPeriodHolder.A0I();
         long j6 = playingPeriodHolder.A00.A00;
-        return j6 == b.f6382b || this.A0A.A0C < j6 || (A0I != null && (A0I.A02 || A0I.A00.A04.A00()));
+        return j6 == b.f7168b || this.A0A.A0C < j6 || (A0I != null && (A0I.A02 || A0I.A00.A04.A00()));
     }
 
-    private boolean A16(C06896l c06896l) {
-        if (c06896l.A02 == null) {
-            Pair<Object, Long> A09 = A09(new C06916n(c06896l.A03.A04(), c06896l.A03.A00(), C2Y.A00(c06896l.A03.A02())), false);
+    private boolean A16(C07096l c07096l) {
+        if (c07096l.A02 == null) {
+            Pair<Object, Long> A09 = A09(new C07116n(c07096l.A03.A04(), c07096l.A03.A00(), C2Y.A00(c07096l.A03.A02())), false);
             if (A09 == null) {
                 return false;
             }
             int A0A = this.A0A.A03.A0A(A09.first);
             if (A0y[5].charAt(1) != 'q') {
                 A0y[5] = "NfGCtpMsHKBVYsn3O7a8Zqq9gxyOlhFa";
-                c06896l.A01(A0A, ((Long) A09.second).longValue(), A09.first);
+                c07096l.A01(A0A, ((Long) A09.second).longValue(), A09.first);
                 return true;
             }
             throw new RuntimeException();
         }
-        int A0A2 = this.A0A.A03.A0A(c06896l.A02);
+        int A0A2 = this.A0A.A03.A0A(c07096l.A02);
         if (A0A2 == -1) {
             return false;
         }
-        c06896l.A00 = A0A2;
+        c07096l.A00 = A0A2;
         return true;
     }
 
-    private boolean A17(InterfaceC2309oo interfaceC2309oo) {
+    private boolean A17(InterfaceC2329oo interfaceC2329oo) {
         C7A A0G = this.A0j.A0G();
         C7A readingPeriodHolder = A0G.A0I();
         if (readingPeriodHolder != null) {
             C7A readingPeriodHolder2 = A0G.A0I();
-            if (readingPeriodHolder2.A02 && interfaceC2309oo.A9p()) {
+            if (readingPeriodHolder2.A02 && interfaceC2329oo.A9p()) {
                 return true;
             }
         }
         return false;
     }
 
-    private boolean A18(C2248no c2248no, long j6, C7A c7a) {
-        if (!c2248no.equals(c7a.A00.A04)) {
+    private boolean A18(C2268no c2268no, long j6, C7A c7a) {
+        if (!c2268no.equals(c7a.A00.A04)) {
             return false;
         }
-        boolean z3 = c7a.A02;
+        boolean z6 = c7a.A02;
         if (A0y[1].length() == 31) {
             throw new RuntimeException();
         }
         A0y[1] = "z9";
-        if (z3) {
+        if (z6) {
             this.A0A.A03.A0J(this.A0A.A05.A04, this.A0c);
             int A07 = this.A0c.A07(j6);
             if (A07 != -1) {
@@ -2150,14 +2150,14 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private boolean A19(boolean z3) {
-        boolean z6;
-        long A0C;
+    private boolean A19(boolean z6) {
         boolean z9;
+        long A0C;
+        boolean z10;
         if (this.A0W.length == 0) {
             return A15();
         }
-        if (!z3) {
+        if (!z6) {
             if (this.A0B != null) {
                 this.A0E = this.A0B.A99();
             }
@@ -2174,37 +2174,37 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
             }
             A0y[5] = "JVFQROlQoWGuZTJ8G1Kf7NjovTqMHrup";
             if (c7b.A05) {
-                z6 = true;
+                z9 = true;
                 if (this.A0s || this.A0j.A0F() == this.A0j.A0E() || this.A0j.A0F() == null) {
                     A0C = A0E.A0C(A0E.A0D(this.A06));
                 } else {
                     A0C = A03();
                 }
-                z9 = !z6 || this.A0i.AJy(A0C, this.A0g.A8m().A01, this.A0R, this.A00 <= 0 && (this.A04 > 0L ? 1 : (this.A04 == 0L ? 0 : -1)) > 0 && ((System.currentTimeMillis() - this.A04) > ((long) this.A00) ? 1 : ((System.currentTimeMillis() - this.A04) == ((long) this.A00) ? 0 : -1)) < 0, b.f6382b);
-                if (!z9) {
-                    this.A0E = EnumC1966ir.A04;
+                z10 = !z9 || this.A0i.AJy(A0C, this.A0g.A8m().A01, this.A0R, this.A00 <= 0 && (this.A04 > 0L ? 1 : (this.A04 == 0L ? 0 : -1)) > 0 && ((System.currentTimeMillis() - this.A04) > ((long) this.A00) ? 1 : ((System.currentTimeMillis() - this.A04) == ((long) this.A00) ? 0 : -1)) < 0, b.f7168b);
+                if (!z10) {
+                    this.A0E = EnumC1986ir.A04;
                 }
-                return z9;
+                return z10;
             }
         }
-        z6 = false;
+        z9 = false;
         if (this.A0s) {
         }
         A0C = A0E.A0C(A0E.A0D(this.A06));
-        if (z6) {
+        if (z9) {
         }
-        if (!z9) {
+        if (!z10) {
         }
-        return z9;
+        return z10;
     }
 
-    public static C2400qI[] A1A(InterfaceC0883Eq interfaceC0883Eq) {
-        int length = interfaceC0883Eq != null ? interfaceC0883Eq.length() : 0;
-        C2400qI[] c2400qIArr = new C2400qI[length];
+    public static C2420qI[] A1A(InterfaceC0903Eq interfaceC0903Eq) {
+        int length = interfaceC0903Eq != null ? interfaceC0903Eq.length() : 0;
+        C2420qI[] c2420qIArr = new C2420qI[length];
         for (int i = 0; i < length; i++) {
-            c2400qIArr[i] = interfaceC0883Eq.A8B(i);
+            c2420qIArr[i] = interfaceC0903Eq.A8B(i);
         }
-        return c2400qIArr;
+        return c2420qIArr;
     }
 
     public final Looper A1B() {
@@ -2220,72 +2220,72 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
             return;
         }
         this.A0f.AJA(7);
-        boolean z3 = false;
+        boolean z6 = false;
         while (!wasInterrupted) {
             try {
                 wait();
             } catch (InterruptedException unused) {
-                z3 = true;
+                z6 = true;
             }
         }
-        if (z3) {
+        if (z6) {
             Thread.currentThread().interrupt();
         }
     }
 
     public final void A1D(Timeline timeline, int i, long j6) {
-        this.A0f.ACj(3, new C06916n(timeline, i, j6)).A02();
+        this.A0f.ACj(3, new C07116n(timeline, i, j6)).A02();
     }
 
-    public final /* synthetic */ void A1E(C07077d c07077d) {
+    public final /* synthetic */ void A1E(C07277d c07277d) {
         try {
-            A0h(c07077d);
+            A0h(c07277d);
         } catch (AD e9) {
             Log.e(A0D(0, 21, 22), A0D(com.anythink.expressad.foundation.g.a.bb, 55, 119), e9);
             throw new RuntimeException(e9);
         }
     }
 
-    public final void A1F(InterfaceC0838Cx interfaceC0838Cx, boolean z3, boolean z6) {
-        this.A0f.ACi(0, z3 ? 1 : 0, z6 ? 1 : 0, interfaceC0838Cx).A02();
+    public final void A1F(InterfaceC0858Cx interfaceC0858Cx, boolean z6, boolean z9) {
+        this.A0f.ACi(0, z6 ? 1 : 0, z9 ? 1 : 0, interfaceC0858Cx).A02();
     }
 
-    public final void A1G(boolean z3) {
-        this.A0f.ACh(1, z3 ? 1 : 0, 0).A02();
+    public final void A1G(boolean z6) {
+        this.A0f.ACh(1, z6 ? 1 : 0, 0).A02();
     }
 
-    public final void A1H(boolean z3) {
-        this.A0f.ACh(6, z3 ? 1 : 0, 0).A02();
+    public final void A1H(boolean z6) {
+        this.A0f.ACh(6, z6 ? 1 : 0, 0).A02();
     }
 
     @Override // com.instagram.common.viewpoint.core.C6P
-    public final void AFI(C2379px c2379px) {
-        this.A0a.obtainMessage(1, c2379px).sendToTarget();
-        A0T(c2379px.A01);
+    public final void AFI(C2399px c2399px) {
+        this.A0a.obtainMessage(1, c2399px).sendToTarget();
+        A0T(c2399px.A01);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2250nq
-    public final void AFS(InterfaceC2249np interfaceC2249np) {
-        this.A0f.ACj(9, interfaceC2249np).A02();
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2270nq
+    public final void AFS(InterfaceC2269np interfaceC2269np) {
+        this.A0f.ACj(9, interfaceC2269np).A02();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC0837Cw
-    public final void AG1(InterfaceC0838Cx interfaceC0838Cx, Timeline timeline) {
-        this.A0f.ACj(8, new C06886k(interfaceC0838Cx, timeline)).A02();
+    @Override // com.instagram.common.viewpoint.core.InterfaceC0857Cw
+    public final void AG1(InterfaceC0858Cx interfaceC0858Cx, Timeline timeline) {
+        this.A0f.ACj(8, new C07086k(interfaceC0858Cx, timeline)).A02();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC0888Ev
+    @Override // com.instagram.common.viewpoint.core.InterfaceC0908Ev
     public final void AGD() {
         this.A0f.AJA(11);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC07057b
-    public final synchronized void AJC(C07077d c07077d) {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC07257b
+    public final synchronized void AJC(C07277d c07277d) {
         if (this.A0S) {
             Log.w(A0D(0, 21, 22), A0D(50, 37, 39));
-            c07077d.A0A(false);
+            c07277d.A0A(false);
         } else {
-            this.A0f.ACj(14, c07077d).A02();
+            this.A0f.ACj(14, c07277d).A02();
         }
     }
 
@@ -2312,7 +2312,7 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
         }
         switch (message.what) {
             case 0:
-                A0r((InterfaceC0838Cx) message.obj, message.arg1 != 0, message.arg2 != 0);
+                A0r((InterfaceC0858Cx) message.obj, message.arg1 != 0, message.arg2 != 0);
                 A0H();
                 return true;
             case 1:
@@ -2324,15 +2324,15 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                 A0H();
                 return true;
             case 3:
-                A0f((C06916n) message.obj);
+                A0f((C07116n) message.obj);
                 A0H();
                 return true;
             case 4:
-                A0b((C2379px) message.obj);
+                A0b((C2399px) message.obj);
                 A0H();
                 return true;
             case 5:
-                A0n((C07247u) message.obj);
+                A0n((C07447u) message.obj);
                 A0H();
                 return true;
             case 6:
@@ -2343,15 +2343,15 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                 A0K();
                 return true;
             case 8:
-                A0e((C06886k) message.obj);
+                A0e((C07086k) message.obj);
                 A0H();
                 return true;
             case 9:
-                A0p((InterfaceC2249np) message.obj);
+                A0p((InterfaceC2269np) message.obj);
                 A0H();
                 return true;
             case 10:
-                A0o((InterfaceC2249np) message.obj);
+                A0o((InterfaceC2269np) message.obj);
                 A0H();
                 return true;
             case 11:
@@ -2367,11 +2367,11 @@ public final class AB implements Handler.Callback, InterfaceC2250nq, InterfaceC0
                 A0H();
                 return true;
             case 14:
-                A0i((C07077d) message.obj);
+                A0i((C07277d) message.obj);
                 A0H();
                 return true;
             case 15:
-                A0k((C07077d) message.obj);
+                A0k((C07277d) message.obj);
                 A0H();
                 return true;
             case 16:

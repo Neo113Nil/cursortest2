@@ -8,39 +8,39 @@ import com.anythink.basead.exoplayer.m;
 public abstract class c implements t.c {
 
     /* renamed from: b, reason: collision with root package name */
-    public final k f7526b;
+    public final k f8312b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f7527c = 1;
+    public final int f8313c = 1;
 
     /* renamed from: d, reason: collision with root package name */
-    public final m f7528d;
+    public final m f8314d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final int f7529e;
+    public final int f8315e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final Object f7530f;
+    public final Object f8316f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final long f7531g;
+    public final long f8317g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final long f7532h;
+    public final long f8318h;
     protected final com.anythink.basead.exoplayer.j.h i;
 
     public c(com.anythink.basead.exoplayer.j.h hVar, k kVar, m mVar, int i, Object obj, long j6, long j9) {
         this.i = (com.anythink.basead.exoplayer.j.h) com.anythink.basead.exoplayer.k.a.a(hVar);
-        this.f7526b = (k) com.anythink.basead.exoplayer.k.a.a(kVar);
-        this.f7528d = mVar;
-        this.f7529e = i;
-        this.f7530f = obj;
-        this.f7531g = j6;
-        this.f7532h = j9;
+        this.f8312b = (k) com.anythink.basead.exoplayer.k.a.a(kVar);
+        this.f8314d = mVar;
+        this.f8315e = i;
+        this.f8316f = obj;
+        this.f8317g = j6;
+        this.f8318h = j9;
     }
 
     private long c() {
-        return this.f7532h - this.f7531g;
+        return this.f8318h - this.f8317g;
     }
 
     public abstract long d();

@@ -14,32 +14,32 @@ import java.net.SocketException;
 public abstract class c {
 
     /* renamed from: c, reason: collision with root package name */
-    private static final int f14578c = 0;
+    private static final int f15364c = 0;
 
     /* renamed from: d, reason: collision with root package name */
-    private static final int f14579d = 7;
+    private static final int f15365d = 7;
 
     /* renamed from: a, reason: collision with root package name */
-    protected Socket f14580a;
+    protected Socket f15366a;
 
     /* renamed from: e, reason: collision with root package name */
-    private String f14582e;
+    private String f15368e;
 
     /* renamed from: f, reason: collision with root package name */
-    private int f14583f;
+    private int f15369f;
 
     /* renamed from: b, reason: collision with root package name */
-    private final String f14581b = getClass().getSimpleName();
+    private final String f15367b = getClass().getSimpleName();
 
     /* renamed from: g, reason: collision with root package name */
-    private byte[] f14584g = null;
+    private byte[] f15370g = null;
 
     /* renamed from: h, reason: collision with root package name */
-    private final byte[] f14585h = new byte[1];
+    private final byte[] f15371h = new byte[1];
 
     private boolean b() {
-        Socket socket = this.f14580a;
-        return (socket == null || !socket.isConnected() || this.f14580a.isClosed()) ? false : true;
+        Socket socket = this.f15366a;
+        return (socket == null || !socket.isConnected() || this.f15366a.isClosed()) ? false : true;
     }
 
     public abstract void a(d dVar, d.a aVar);
@@ -58,7 +58,7 @@ public abstract class c {
                     c.this.b(dVar);
                     c.this.a(dVar, aVar);
                 } catch (SocketException e9) {
-                    String unused = c.this.f14581b;
+                    String unused = c.this.f15367b;
                     e9.getMessage();
                     dVar.toString();
                     c.b(c.this);
@@ -66,13 +66,13 @@ public abstract class c {
                         c.this.b(dVar);
                         c.this.a(dVar, aVar);
                     } catch (Throwable th) {
-                        String unused2 = c.this.f14581b;
+                        String unused2 = c.this.f15367b;
                         e9.getMessage();
                         dVar.toString();
                         th = th;
                         String str = th.getMessage() + "," + q.a(th.getStackTrace());
-                        String unused3 = c.this.f14581b;
-                        dVar.a("", str, c.this.f14582e, c.this.f14583f);
+                        String unused3 = c.this.f15367b;
+                        dVar.a("", str, c.this.f15368e, c.this.f15369f);
                         aVar2 = aVar;
                         if (aVar2 == null) {
                             aVar2.a(th);
@@ -80,11 +80,11 @@ public abstract class c {
                     }
                 } catch (Throwable th2) {
                     th = th2;
-                    String unused4 = c.this.f14581b;
+                    String unused4 = c.this.f15367b;
                     th.getMessage();
                     String str2 = th.getMessage() + "," + q.a(th.getStackTrace());
-                    String unused32 = c.this.f14581b;
-                    dVar.a("", str2, c.this.f14582e, c.this.f14583f);
+                    String unused32 = c.this.f15367b;
+                    dVar.a("", str2, c.this.f15368e, c.this.f15369f);
                     aVar2 = aVar;
                     if (aVar2 == null) {
                     }
@@ -101,16 +101,16 @@ public abstract class c {
     private void a(d dVar) {
         synchronized (this) {
             try {
-                if (this.f14580a == null) {
+                if (this.f15366a == null) {
                     Socket socket = new Socket();
-                    this.f14580a = socket;
+                    this.f15366a = socket;
                     socket.setSoTimeout(60000);
                 }
                 h e_ = dVar.e_();
                 if (e_ != null) {
-                    this.f14582e = e_.a();
-                    this.f14583f = e_.b();
-                    this.f14580a.connect(new InetSocketAddress(this.f14582e, this.f14583f), 30000);
+                    this.f15368e = e_.a();
+                    this.f15369f = e_.b();
+                    this.f15366a.connect(new InetSocketAddress(this.f15368e, this.f15369f), 30000);
                 } else {
                     throw new IllegalArgumentException("The domain must not can be null or empty.");
                 }
@@ -123,20 +123,20 @@ public abstract class c {
     /* JADX INFO: Access modifiers changed from: private */
     public synchronized void b(d dVar) {
         try {
-            Socket socket = this.f14580a;
-            if (socket == null || !socket.isConnected() || this.f14580a.isClosed()) {
+            Socket socket = this.f15366a;
+            if (socket == null || !socket.isConnected() || this.f15366a.isClosed()) {
                 synchronized (this) {
                     try {
-                        if (this.f14580a == null) {
+                        if (this.f15366a == null) {
                             Socket socket2 = new Socket();
-                            this.f14580a = socket2;
+                            this.f15366a = socket2;
                             socket2.setSoTimeout(60000);
                         }
                         h e_ = dVar.e_();
                         if (e_ != null) {
-                            this.f14582e = e_.a();
-                            this.f14583f = e_.b();
-                            this.f14580a.connect(new InetSocketAddress(this.f14582e, this.f14583f), 30000);
+                            this.f15368e = e_.a();
+                            this.f15369f = e_.b();
+                            this.f15366a.connect(new InetSocketAddress(this.f15368e, this.f15369f), 30000);
                         } else {
                             throw new IllegalArgumentException("The domain must not can be null or empty.");
                         }
@@ -151,22 +151,22 @@ public abstract class c {
                     return;
                 }
                 int i = length + 7;
-                byte[] bArr = this.f14584g;
+                byte[] bArr = this.f15370g;
                 if (bArr == null || bArr.length < i) {
-                    this.f14584g = new byte[i];
+                    this.f15370g = new byte[i];
                 }
-                byte[] bArr2 = this.f14584g;
+                byte[] bArr2 = this.f15370g;
                 bArr2[0] = 0;
                 bArr2[1] = 3;
                 bArr2[2] = (byte) dVar.c();
-                byte[] bArr3 = this.f14584g;
-                bArr3[3] = (byte) ((length >>> 24) & p.f8473b);
-                bArr3[4] = (byte) ((length >>> 16) & p.f8473b);
-                bArr3[5] = (byte) ((length >>> 8) & p.f8473b);
-                bArr3[6] = (byte) (length & p.f8473b);
+                byte[] bArr3 = this.f15370g;
+                bArr3[3] = (byte) ((length >>> 24) & p.f9259b);
+                bArr3[4] = (byte) ((length >>> 16) & p.f9259b);
+                bArr3[5] = (byte) ((length >>> 8) & p.f9259b);
+                bArr3[6] = (byte) (length & p.f9259b);
                 System.arraycopy(e9, 0, bArr3, 7, e9.length);
-                OutputStream outputStream = this.f14580a.getOutputStream();
-                outputStream.write(this.f14584g, 0, i);
+                OutputStream outputStream = this.f15366a.getOutputStream();
+                outputStream.write(this.f15370g, 0, i);
                 outputStream.flush();
             }
         } catch (Throwable th) {
@@ -177,10 +177,10 @@ public abstract class c {
     private void a() {
         synchronized (this) {
             try {
-                Socket socket = this.f14580a;
+                Socket socket = this.f15366a;
                 if (socket != null) {
                     socket.close();
-                    this.f14580a = null;
+                    this.f15366a = null;
                 }
             } catch (Exception unused) {
             }
@@ -188,8 +188,8 @@ public abstract class c {
     }
 
     public final int a(InputStream inputStream) {
-        if (inputStream.read(this.f14585h, 0, 1) != -1) {
-            byte[] bArr = this.f14585h;
+        if (inputStream.read(this.f15371h, 0, 1) != -1) {
+            byte[] bArr = this.f15371h;
             byte b9 = bArr[0];
             bArr[0] = 0;
             return b9;
@@ -200,10 +200,10 @@ public abstract class c {
     public static /* synthetic */ void b(c cVar) {
         synchronized (cVar) {
             try {
-                Socket socket = cVar.f14580a;
+                Socket socket = cVar.f15366a;
                 if (socket != null) {
                     socket.close();
-                    cVar.f14580a = null;
+                    cVar.f15366a = null;
                 }
             } catch (Exception unused) {
             }

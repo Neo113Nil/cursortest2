@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.anythink.basead.exoplayer.b;
 import com.instagram.common.viewpoint.core.AnonymousClass53;
-import com.instagram.common.viewpoint.core.C06474v;
+import com.instagram.common.viewpoint.core.C06674v;
 import com.instagram.common.viewpoint.core.IW;
 import com.instagram.common.viewpoint.core.IX;
 import java.util.ArrayList;
@@ -37,20 +37,20 @@ public final class SpliceInsertCommand extends SpliceCommand {
     	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    public SpliceInsertCommand(long j6, boolean z3, boolean z6, boolean z9, boolean z10, long j9, long j10, List<IX> list, boolean z11, long j11, int i, int i6, int i9) {
+    public SpliceInsertCommand(long j6, boolean z6, boolean z9, boolean z10, boolean z11, long j9, long j10, List<IX> list, boolean z12, long j11, int i, int i4, int i6) {
         this.A06 = j6;
-        this.A0B = z3;
-        this.A09 = z6;
-        this.A0A = z9;
-        this.A0C = z10;
+        this.A0B = z6;
+        this.A09 = z9;
+        this.A0A = z10;
+        this.A0C = z11;
         this.A05 = j9;
         this.A04 = j10;
         this.A07 = Collections.unmodifiableList(list);
-        this.A08 = z11;
+        this.A08 = z12;
         this.A03 = j11;
         this.A02 = i;
-        this.A00 = i6;
-        this.A01 = i9;
+        this.A00 = i4;
+        this.A01 = i6;
     }
 
     public SpliceInsertCommand(Parcel parcel) {
@@ -82,54 +82,54 @@ public final class SpliceInsertCommand extends SpliceCommand {
         this(parcel);
     }
 
-    public static SpliceInsertCommand A00(C06474v c06474v, long j6, AnonymousClass53 anonymousClass53) {
-        long A0Q = c06474v.A0Q();
-        boolean z3 = (c06474v.A0I() & 128) != 0;
-        boolean z6 = false;
-        boolean outOfNetworkIndicator = false;
+    public static SpliceInsertCommand A00(C06674v c06674v, long j6, AnonymousClass53 anonymousClass53) {
+        long A0Q = c06674v.A0Q();
+        boolean z6 = (c06674v.A0I() & 128) != 0;
         boolean z9 = false;
-        long j9 = b.f6382b;
+        boolean outOfNetworkIndicator = false;
+        boolean z10 = false;
+        long j9 = b.f7168b;
         List emptyList = Collections.emptyList();
         if (A0D[6].length() == 19) {
             throw new RuntimeException();
         }
         A0D[4] = "mssbEGkdhdKHHgY1hMK2RaJspuJCG0bt";
         int i = 0;
+        int i4 = 0;
         int i6 = 0;
-        int i9 = 0;
-        boolean z10 = false;
-        long j10 = b.f6382b;
-        if (!z3) {
-            int A0I = c06474v.A0I();
-            z6 = (A0I & 128) != 0;
+        boolean z11 = false;
+        long j10 = b.f7168b;
+        if (!z6) {
+            int A0I = c06674v.A0I();
+            z9 = (A0I & 128) != 0;
             outOfNetworkIndicator = (A0I & 64) != 0;
             boolean autoReturn = (A0I & 32) != 0;
-            z9 = (A0I & 16) != 0;
-            if (outOfNetworkIndicator && !z9) {
-                j9 = TimeSignalCommand.A00(c06474v, j6);
+            z10 = (A0I & 16) != 0;
+            if (outOfNetworkIndicator && !z10) {
+                j9 = TimeSignalCommand.A00(c06674v, j6);
             }
             if (!outOfNetworkIndicator) {
-                int componentCount = c06474v.A0I();
+                int componentCount = c06674v.A0I();
                 emptyList = new ArrayList(componentCount);
-                for (int i10 = 0; i10 < componentCount; i10++) {
-                    int componentTag = c06474v.A0I();
-                    long j11 = b.f6382b;
-                    if (!z9) {
-                        j11 = TimeSignalCommand.A00(c06474v, j6);
+                for (int i9 = 0; i9 < componentCount; i9++) {
+                    int componentTag = c06674v.A0I();
+                    long j11 = b.f7168b;
+                    if (!z10) {
+                        j11 = TimeSignalCommand.A00(c06674v, j6);
                     }
                     emptyList.add(new IX(componentTag, j11, anonymousClass53.A06(j11), null));
                 }
             }
             if (autoReturn) {
-                long A0I2 = c06474v.A0I();
-                z10 = (A0I2 & 128) != 0;
-                j10 = (1000 * (((A0I2 & 1) << 32) | c06474v.A0Q())) / 90;
+                long A0I2 = c06674v.A0I();
+                z11 = (A0I2 & 128) != 0;
+                j10 = (1000 * (((A0I2 & 1) << 32) | c06674v.A0Q())) / 90;
             }
-            i = c06474v.A0M();
-            i6 = c06474v.A0I();
-            i9 = c06474v.A0I();
+            i = c06674v.A0M();
+            i4 = c06674v.A0I();
+            i6 = c06674v.A0I();
         }
-        return new SpliceInsertCommand(A0Q, z3, z6, outOfNetworkIndicator, z9, j9, anonymousClass53.A06(j9), emptyList, z10, j10, i, i6, i9);
+        return new SpliceInsertCommand(A0Q, z6, z9, outOfNetworkIndicator, z10, j9, anonymousClass53.A06(j9), emptyList, z11, j10, i, i4, i6);
     }
 
     @Override // android.os.Parcelable
@@ -143,8 +143,8 @@ public final class SpliceInsertCommand extends SpliceCommand {
         parcel.writeLong(this.A04);
         int size = this.A07.size();
         parcel.writeInt(size);
-        for (int i6 = 0; i6 < size; i6++) {
-            this.A07.get(i6).A01(parcel);
+        for (int i4 = 0; i4 < size; i4++) {
+            this.A07.get(i4).A01(parcel);
             String[] strArr = A0D;
             if (strArr[1].length() == strArr[2].length()) {
                 throw new RuntimeException();

@@ -6,33 +6,33 @@ import java.util.HashMap;
 import java.util.List;
 
 /* loaded from: classes2.dex */
-public final class HG implements InterfaceC4043vG {
+public final class HG implements InterfaceC4066vG {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final HG f25250a = new HG();
+    public static final HG f26022a = new HG();
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC4043vG
+    @Override // com.google.android.gms.internal.ads.InterfaceC4066vG
     public final Object a(S0.l lVar, S0.s sVar) {
-        C3240gK i;
+        C3263gK i;
         List list;
-        C3664oE N8 = lVar.N();
+        C3687oE N8 = lVar.N();
         HashMap hashMap = new HashMap();
-        for (int i6 = 0; i6 < ((List) lVar.f2797u).size(); i6++) {
-            C3664oE O8 = lVar.O(i6);
-            if (O8.f32879b.equals(C3556mE.f31925v)) {
+        for (int i4 = 0; i4 < ((List) lVar.f2926u).size(); i4++) {
+            C3687oE O8 = lVar.O(i4);
+            if (O8.f33666b.equals(C3579mE.f32705v)) {
                 SG sg = (SG) sVar.d(O8);
-                WC wc = O8.f32878a;
+                WC wc = O8.f33665a;
                 if (wc instanceof NG) {
                     i = ((NG) wc).i();
                 } else {
                     if (!(wc instanceof ZF)) {
                         String name = wc.getClass().getName();
                         String valueOf = String.valueOf(wc.b());
-                        throw new GeneralSecurityException(com.anythink.basead.exoplayer.f.f.o(new StringBuilder(name.length() + 59 + valueOf.length()), "Cannot get output prefix for key of class ", name, " with parameters ", valueOf));
+                        throw new GeneralSecurityException(com.IceFishing.LiveIceFishing.k.r(new StringBuilder(name.length() + 59 + valueOf.length()), "Cannot get output prefix for key of class ", name, " with parameters ", valueOf));
                     }
                     i = ((ZF) wc).i();
                 }
-                byte[] bArr = i.f30559a;
+                byte[] bArr = i.f31325a;
                 if (bArr.length != 0 && bArr.length != 5) {
                     throw new GeneralSecurityException("PrefixMap only supports 0 and 5 byte prefixes");
                 }
@@ -49,12 +49,12 @@ public final class HG implements InterfaceC4043vG {
         return new SG();
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC4043vG
+    @Override // com.google.android.gms.internal.ads.InterfaceC4066vG
     public final Class c() {
         return SG.class;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC4043vG
+    @Override // com.google.android.gms.internal.ads.InterfaceC4066vG
     public final Class f() {
         return SG.class;
     }

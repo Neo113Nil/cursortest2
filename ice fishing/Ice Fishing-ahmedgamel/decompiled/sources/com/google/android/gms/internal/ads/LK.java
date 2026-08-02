@@ -4,36 +4,37 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Iterator;
+import w.AbstractC5128c;
 
 /* loaded from: classes2.dex */
 public final class LK extends W7.b {
 
     /* renamed from: B, reason: collision with root package name */
-    public int f26099B;
+    public int f26899B;
 
     /* renamed from: w, reason: collision with root package name */
-    public final InputStream f26102w;
+    public final InputStream f26902w;
 
     /* renamed from: z, reason: collision with root package name */
-    public int f26105z;
+    public int f26905z;
 
     /* renamed from: D, reason: collision with root package name */
-    public int f26101D = Integer.MAX_VALUE;
+    public int f26901D = Integer.MAX_VALUE;
 
     /* renamed from: x, reason: collision with root package name */
-    public final byte[] f26103x = new byte[4096];
+    public final byte[] f26903x = new byte[4096];
 
     /* renamed from: y, reason: collision with root package name */
-    public int f26104y = 0;
+    public int f26904y = 0;
 
     /* renamed from: A, reason: collision with root package name */
-    public int f26098A = 0;
+    public int f26898A = 0;
 
     /* renamed from: C, reason: collision with root package name */
-    public int f26100C = 0;
+    public int f26900C = 0;
 
     public /* synthetic */ LK(InputStream inputStream) {
-        this.f26102w = inputStream;
+        this.f26902w = inputStream;
     }
 
     @Override // W7.b
@@ -57,29 +58,29 @@ public final class LK extends W7.b {
     }
 
     public final void E(int i) {
-        InputStream inputStream = this.f26102w;
-        int i6 = this.f26104y;
-        int i9 = this.f26098A;
-        int i10 = i6 - i9;
-        if (i <= i10 && i >= 0) {
-            this.f26098A = i9 + i;
+        InputStream inputStream = this.f26902w;
+        int i4 = this.f26904y;
+        int i6 = this.f26898A;
+        int i9 = i4 - i6;
+        if (i <= i9 && i >= 0) {
+            this.f26898A = i6 + i;
             return;
         }
         if (i < 0) {
-            throw new C3295hL("CodedInputStream encountered an embedded string or message which claimed to have negative size.");
+            throw new C3318hL("CodedInputStream encountered an embedded string or message which claimed to have negative size.");
         }
-        int i11 = this.f26100C;
-        int i12 = i11 + i9;
-        int i13 = this.f26101D;
-        if (i12 + i > i13) {
-            E((i13 - i11) - i9);
-            throw new C3295hL("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.");
+        int i10 = this.f26900C;
+        int i11 = i10 + i6;
+        int i12 = this.f26901D;
+        if (i11 + i > i12) {
+            E((i12 - i10) - i6);
+            throw new C3318hL("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.");
         }
-        this.f26100C = i12;
-        this.f26104y = 0;
-        this.f26098A = 0;
-        while (i10 < i) {
-            long j6 = i - i10;
+        this.f26900C = i11;
+        this.f26904y = 0;
+        this.f26898A = 0;
+        while (i9 < i) {
+            long j6 = i - i9;
             try {
                 try {
                     long skip = inputStream.skip(j6);
@@ -95,97 +96,97 @@ public final class LK extends W7.b {
                     if (skip == 0) {
                         break;
                     } else {
-                        i10 += (int) skip;
+                        i9 += (int) skip;
                     }
-                } catch (C3295hL e9) {
-                    e9.f30760n = true;
+                } catch (C3318hL e9) {
+                    e9.f31526n = true;
                     throw e9;
                 }
             } catch (Throwable th) {
-                this.f26100C += i10;
+                this.f26900C += i9;
                 F();
                 throw th;
             }
         }
-        this.f26100C += i10;
+        this.f26900C += i9;
         F();
-        if (i10 >= i) {
+        if (i9 >= i) {
             return;
         }
-        int i14 = this.f26104y;
-        int i15 = i14 - this.f26098A;
-        this.f26098A = i14;
+        int i13 = this.f26904y;
+        int i14 = i13 - this.f26898A;
+        this.f26898A = i13;
         G(1);
         while (true) {
-            int i16 = i - i15;
-            int i17 = this.f26104y;
-            if (i16 <= i17) {
-                this.f26098A = i16;
+            int i15 = i - i14;
+            int i16 = this.f26904y;
+            if (i15 <= i16) {
+                this.f26898A = i15;
                 return;
             } else {
-                i15 += i17;
-                this.f26098A = i17;
+                i14 += i16;
+                this.f26898A = i16;
                 G(1);
             }
         }
     }
 
     public final void F() {
-        int i = this.f26104y + this.f26105z;
-        this.f26104y = i;
-        int i6 = this.f26100C + i;
-        int i9 = this.f26101D;
-        if (i6 <= i9) {
-            this.f26105z = 0;
+        int i = this.f26904y + this.f26905z;
+        this.f26904y = i;
+        int i4 = this.f26900C + i;
+        int i6 = this.f26901D;
+        if (i4 <= i6) {
+            this.f26905z = 0;
             return;
         }
-        int i10 = i6 - i9;
-        this.f26105z = i10;
-        this.f26104y = i - i10;
+        int i9 = i4 - i6;
+        this.f26905z = i9;
+        this.f26904y = i - i9;
     }
 
     public final void G(int i) {
         if (H(i)) {
             return;
         }
-        if (i <= (Integer.MAX_VALUE - this.f26100C) - this.f26098A) {
-            throw new C3295hL("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.");
+        if (i <= (Integer.MAX_VALUE - this.f26900C) - this.f26898A) {
+            throw new C3318hL("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.");
         }
-        throw new C3295hL("Protocol message was too large.  May be malicious.  Use CodedInputStream.setSizeLimit() to increase the size limit. If reading multiple messages, consider resetting the counter between each message using CodedInputStream.resetSizeCounter().");
+        throw new C3318hL("Protocol message was too large.  May be malicious.  Use CodedInputStream.setSizeLimit() to increase the size limit. If reading multiple messages, consider resetting the counter between each message using CodedInputStream.resetSizeCounter().");
     }
 
     public final boolean H(int i) {
-        InputStream inputStream = this.f26102w;
-        int i6 = this.f26098A;
-        int i9 = i6 + i;
-        int i10 = this.f26104y;
-        if (i9 <= i10) {
-            throw new IllegalStateException(u1.h.d(i, "refillBuffer() called when ", " bytes were already available in buffer", new StringBuilder(String.valueOf(i).length() + 66)));
+        InputStream inputStream = this.f26902w;
+        int i4 = this.f26898A;
+        int i6 = i4 + i;
+        int i9 = this.f26904y;
+        if (i6 <= i9) {
+            throw new IllegalStateException(AbstractC5128c.d(i, "refillBuffer() called when ", " bytes were already available in buffer", new StringBuilder(String.valueOf(i).length() + 66)));
         }
-        int i11 = this.f26100C;
-        if (i > (Integer.MAX_VALUE - i11) - i6 || i11 + i6 + i > this.f26101D) {
+        int i10 = this.f26900C;
+        if (i > (Integer.MAX_VALUE - i10) - i4 || i10 + i4 + i > this.f26901D) {
             return false;
         }
-        byte[] bArr = this.f26103x;
-        if (i6 > 0) {
-            if (i10 > i6) {
-                System.arraycopy(bArr, i6, bArr, 0, i10 - i6);
+        byte[] bArr = this.f26903x;
+        if (i4 > 0) {
+            if (i9 > i4) {
+                System.arraycopy(bArr, i4, bArr, 0, i9 - i4);
             }
-            i11 = this.f26100C + i6;
-            this.f26100C = i11;
-            i10 = this.f26104y - i6;
-            this.f26104y = i10;
-            this.f26098A = 0;
+            i10 = this.f26900C + i4;
+            this.f26900C = i10;
+            i9 = this.f26904y - i4;
+            this.f26904y = i9;
+            this.f26898A = 0;
         }
         try {
-            int read = inputStream.read(bArr, i10, Math.min(4096 - i10, (Integer.MAX_VALUE - i11) - i10));
+            int read = inputStream.read(bArr, i9, Math.min(4096 - i9, (Integer.MAX_VALUE - i10) - i9));
             if (read != 0 && read >= -1 && read <= 4096) {
                 if (read <= 0) {
                     return false;
                 }
-                this.f26104y += read;
+                this.f26904y += read;
                 F();
-                return this.f26104y >= i || H(i);
+                return this.f26904y >= i || H(i);
             }
             String valueOf = String.valueOf(inputStream.getClass());
             StringBuilder sb = new StringBuilder(String.valueOf(read).length() + valueOf.length() + 39 + 41);
@@ -194,8 +195,8 @@ public final class LK extends W7.b {
             sb.append(read);
             sb.append("\nThe InputStream implementation is buggy.");
             throw new IllegalStateException(sb.toString());
-        } catch (C3295hL e9) {
-            e9.f30760n = true;
+        } catch (C3318hL e9) {
+            e9.f31526n = true;
             throw e9;
         }
     }
@@ -205,68 +206,68 @@ public final class LK extends W7.b {
         if (J != null) {
             return J;
         }
-        int i6 = this.f26098A;
-        int i9 = this.f26104y;
-        int i10 = i9 - i6;
-        this.f26100C += i9;
-        this.f26098A = 0;
-        this.f26104y = 0;
-        ArrayList K7 = K(i - i10);
+        int i4 = this.f26898A;
+        int i6 = this.f26904y;
+        int i9 = i6 - i4;
+        this.f26900C += i6;
+        this.f26898A = 0;
+        this.f26904y = 0;
+        ArrayList K7 = K(i - i9);
         byte[] bArr = new byte[i];
-        System.arraycopy(this.f26103x, i6, bArr, 0, i10);
+        System.arraycopy(this.f26903x, i4, bArr, 0, i9);
         Iterator it = K7.iterator();
         while (it.hasNext()) {
             byte[] bArr2 = (byte[]) it.next();
             int length = bArr2.length;
-            System.arraycopy(bArr2, 0, bArr, i10, length);
-            i10 += length;
+            System.arraycopy(bArr2, 0, bArr, i9, length);
+            i9 += length;
         }
         return bArr;
     }
 
     public final byte[] J(int i) {
         if (i == 0) {
-            return AbstractC3080dL.f29746a;
+            return AbstractC3103dL.f30518a;
         }
-        int i6 = this.f26100C;
-        int i9 = this.f26098A;
-        int i10 = i6 + i9 + i;
-        if ((-2147483647) + i10 > 0) {
-            throw new C3295hL("Protocol message was too large.  May be malicious.  Use CodedInputStream.setSizeLimit() to increase the size limit. If reading multiple messages, consider resetting the counter between each message using CodedInputStream.resetSizeCounter().");
+        int i4 = this.f26900C;
+        int i6 = this.f26898A;
+        int i9 = i4 + i6 + i;
+        if ((-2147483647) + i9 > 0) {
+            throw new C3318hL("Protocol message was too large.  May be malicious.  Use CodedInputStream.setSizeLimit() to increase the size limit. If reading multiple messages, consider resetting the counter between each message using CodedInputStream.resetSizeCounter().");
         }
-        int i11 = this.f26101D;
-        if (i10 > i11) {
-            E((i11 - i6) - i9);
-            throw new C3295hL("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.");
+        int i10 = this.f26901D;
+        if (i9 > i10) {
+            E((i10 - i4) - i6);
+            throw new C3318hL("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.");
         }
-        int i12 = this.f26104y - i9;
-        int i13 = i - i12;
-        InputStream inputStream = this.f26102w;
-        if (i13 >= 4096) {
+        int i11 = this.f26904y - i6;
+        int i12 = i - i11;
+        InputStream inputStream = this.f26902w;
+        if (i12 >= 4096) {
             try {
-                if (i13 > inputStream.available()) {
+                if (i12 > inputStream.available()) {
                     return null;
                 }
-            } catch (C3295hL e9) {
-                e9.f30760n = true;
+            } catch (C3318hL e9) {
+                e9.f31526n = true;
                 throw e9;
             }
         }
         byte[] bArr = new byte[i];
-        System.arraycopy(this.f26103x, this.f26098A, bArr, 0, i12);
-        this.f26100C += this.f26104y;
-        this.f26098A = 0;
-        this.f26104y = 0;
-        while (i12 < i) {
+        System.arraycopy(this.f26903x, this.f26898A, bArr, 0, i11);
+        this.f26900C += this.f26904y;
+        this.f26898A = 0;
+        this.f26904y = 0;
+        while (i11 < i) {
             try {
-                int read = inputStream.read(bArr, i12, i - i12);
+                int read = inputStream.read(bArr, i11, i - i11);
                 if (read == -1) {
-                    throw new C3295hL("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.");
+                    throw new C3318hL("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.");
                 }
-                this.f26100C += read;
-                i12 += read;
-            } catch (C3295hL e10) {
-                e10.f30760n = true;
+                this.f26900C += read;
+                i11 += read;
+            } catch (C3318hL e10) {
+                e10.f31526n = true;
                 throw e10;
             }
         }
@@ -278,17 +279,17 @@ public final class LK extends W7.b {
         while (i > 0) {
             int min = Math.min(i, 4096);
             byte[] bArr = new byte[min];
-            int i6 = 0;
-            while (i6 < min) {
+            int i4 = 0;
+            while (i4 < min) {
                 try {
-                    int read = this.f26102w.read(bArr, i6, min - i6);
+                    int read = this.f26902w.read(bArr, i4, min - i4);
                     if (read == -1) {
-                        throw new C3295hL("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.");
+                        throw new C3318hL("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.");
                     }
-                    this.f26100C += read;
-                    i6 += read;
-                } catch (C3295hL e9) {
-                    e9.f30760n = true;
+                    this.f26900C += read;
+                    i4 += read;
+                } catch (C3318hL e9) {
+                    e9.f31526n = true;
                     throw e9;
                 }
             }
@@ -300,62 +301,62 @@ public final class LK extends W7.b {
 
     public final int L() {
         int i;
-        int i6 = this.f26098A;
-        int i9 = this.f26104y;
-        if (i9 != i6) {
-            int i10 = i6 + 1;
-            byte[] bArr = this.f26103x;
-            byte b9 = bArr[i6];
+        int i4 = this.f26898A;
+        int i6 = this.f26904y;
+        if (i6 != i4) {
+            int i9 = i4 + 1;
+            byte[] bArr = this.f26903x;
+            byte b9 = bArr[i4];
             if (b9 >= 0) {
-                this.f26098A = i10;
+                this.f26898A = i9;
                 return b9;
             }
-            if (i9 - i10 >= 9) {
-                int i11 = i6 + 2;
-                int i12 = (bArr[i10] << 7) ^ b9;
-                if (i12 < 0) {
-                    i = i12 ^ (-128);
+            if (i6 - i9 >= 9) {
+                int i10 = i4 + 2;
+                int i11 = (bArr[i9] << 7) ^ b9;
+                if (i11 < 0) {
+                    i = i11 ^ (-128);
                 } else {
-                    int i13 = i6 + 3;
-                    int i14 = (bArr[i11] << 14) ^ i12;
-                    if (i14 >= 0) {
-                        i = i14 ^ 16256;
+                    int i12 = i4 + 3;
+                    int i13 = (bArr[i10] << 14) ^ i11;
+                    if (i13 >= 0) {
+                        i = i13 ^ 16256;
                     } else {
-                        int i15 = i6 + 4;
-                        int i16 = i14 ^ (bArr[i13] << 21);
-                        if (i16 < 0) {
-                            i = (-2080896) ^ i16;
+                        int i14 = i4 + 4;
+                        int i15 = i13 ^ (bArr[i12] << 21);
+                        if (i15 < 0) {
+                            i = (-2080896) ^ i15;
                         } else {
-                            i13 = i6 + 5;
-                            byte b10 = bArr[i15];
-                            int i17 = (i16 ^ (b10 << 28)) ^ 266354560;
+                            i12 = i4 + 5;
+                            byte b10 = bArr[i14];
+                            int i16 = (i15 ^ (b10 << 28)) ^ 266354560;
                             if (b10 < 0) {
-                                i15 = i6 + 6;
-                                if (bArr[i13] < 0) {
-                                    i13 = i6 + 7;
-                                    if (bArr[i15] < 0) {
-                                        i15 = i6 + 8;
-                                        if (bArr[i13] < 0) {
-                                            i13 = i6 + 9;
-                                            if (bArr[i15] < 0) {
-                                                int i18 = i6 + 10;
-                                                if (bArr[i13] >= 0) {
-                                                    i11 = i18;
-                                                    i = i17;
+                                i14 = i4 + 6;
+                                if (bArr[i12] < 0) {
+                                    i12 = i4 + 7;
+                                    if (bArr[i14] < 0) {
+                                        i14 = i4 + 8;
+                                        if (bArr[i12] < 0) {
+                                            i12 = i4 + 9;
+                                            if (bArr[i14] < 0) {
+                                                int i17 = i4 + 10;
+                                                if (bArr[i12] >= 0) {
+                                                    i10 = i17;
+                                                    i = i16;
                                                 }
                                             }
                                         }
                                     }
                                 }
-                                i = i17;
+                                i = i16;
                             }
-                            i = i17;
+                            i = i16;
                         }
-                        i11 = i15;
+                        i10 = i14;
                     }
-                    i11 = i13;
+                    i10 = i12;
                 }
-                this.f26098A = i11;
+                this.f26898A = i10;
                 return i;
             }
         }
@@ -366,78 +367,78 @@ public final class LK extends W7.b {
         long j6;
         long j9;
         long j10;
-        int i = this.f26098A;
-        int i6 = this.f26104y;
-        if (i6 != i) {
-            int i9 = i + 1;
-            byte[] bArr = this.f26103x;
+        int i = this.f26898A;
+        int i4 = this.f26904y;
+        if (i4 != i) {
+            int i6 = i + 1;
+            byte[] bArr = this.f26903x;
             byte b9 = bArr[i];
             if (b9 >= 0) {
-                this.f26098A = i9;
+                this.f26898A = i6;
                 return b9;
             }
-            if (i6 - i9 >= 9) {
-                int i10 = i + 2;
-                int i11 = (bArr[i9] << 7) ^ b9;
-                if (i11 < 0) {
-                    j6 = i11 ^ (-128);
+            if (i4 - i6 >= 9) {
+                int i9 = i + 2;
+                int i10 = (bArr[i6] << 7) ^ b9;
+                if (i10 < 0) {
+                    j6 = i10 ^ (-128);
                 } else {
-                    int i12 = i + 3;
-                    int i13 = (bArr[i10] << 14) ^ i11;
-                    if (i13 >= 0) {
-                        j6 = i13 ^ 16256;
+                    int i11 = i + 3;
+                    int i12 = (bArr[i9] << 14) ^ i10;
+                    if (i12 >= 0) {
+                        j6 = i12 ^ 16256;
                     } else {
-                        int i14 = i + 4;
-                        int i15 = i13 ^ (bArr[i12] << 21);
-                        if (i15 < 0) {
-                            long j11 = (-2080896) ^ i15;
-                            i10 = i14;
+                        int i13 = i + 4;
+                        int i14 = i12 ^ (bArr[i11] << 21);
+                        if (i14 < 0) {
+                            long j11 = (-2080896) ^ i14;
+                            i9 = i13;
                             j6 = j11;
                         } else {
-                            i12 = i + 5;
-                            long j12 = i15 ^ (bArr[i14] << 28);
+                            i11 = i + 5;
+                            long j12 = i14 ^ (bArr[i13] << 28);
                             if (j12 >= 0) {
                                 j9 = 266354560;
                             } else {
-                                int i16 = i + 6;
-                                long j13 = j12 ^ (bArr[i12] << 35);
+                                int i15 = i + 6;
+                                long j13 = j12 ^ (bArr[i11] << 35);
                                 if (j13 < 0) {
                                     j10 = -34093383808L;
                                 } else {
-                                    i12 = i + 7;
-                                    j12 = j13 ^ (bArr[i16] << 42);
+                                    i11 = i + 7;
+                                    j12 = j13 ^ (bArr[i15] << 42);
                                     if (j12 >= 0) {
                                         j9 = 4363953127296L;
                                     } else {
-                                        i16 = i + 8;
-                                        j13 = j12 ^ (bArr[i12] << 49);
+                                        i15 = i + 8;
+                                        j13 = j12 ^ (bArr[i11] << 49);
                                         if (j13 < 0) {
                                             j10 = -558586000294016L;
                                         } else {
-                                            i12 = i + 9;
-                                            j12 = j13 ^ (bArr[i16] << 56);
+                                            i11 = i + 9;
+                                            j12 = j13 ^ (bArr[i15] << 56);
                                             if (j12 >= 0) {
                                                 j9 = 71499008037633920L;
                                             } else {
-                                                int i17 = i + 10;
-                                                long j14 = j12 ^ (bArr[i12] << 63);
+                                                int i16 = i + 10;
+                                                long j14 = j12 ^ (bArr[i11] << 63);
                                                 if (j14 >= 0) {
                                                     j6 = j14 ^ (-9151873028817141888L);
-                                                    i10 = i17;
+                                                    i9 = i16;
                                                 }
                                             }
                                         }
                                     }
                                 }
                                 j6 = j13 ^ j10;
-                                i10 = i16;
+                                i9 = i15;
                             }
                             j6 = j12 ^ j9;
                         }
                     }
-                    i10 = i12;
+                    i9 = i11;
                 }
-                this.f26098A = i10;
+                this.f26898A = i9;
                 return j6;
             }
         }
@@ -447,41 +448,41 @@ public final class LK extends W7.b {
     public final long N() {
         long j6 = 0;
         for (int i = 0; i < 64; i += 7) {
-            if (this.f26098A == this.f26104y) {
+            if (this.f26898A == this.f26904y) {
                 G(1);
             }
-            int i6 = this.f26098A;
-            this.f26098A = i6 + 1;
+            int i4 = this.f26898A;
+            this.f26898A = i4 + 1;
             j6 |= (r3 & Byte.MAX_VALUE) << i;
-            if ((this.f26103x[i6] & com.anythink.core.common.s.a.c.f16316a) == 0) {
+            if ((this.f26903x[i4] & com.anythink.core.common.s.a.c.f17103a) == 0) {
                 return j6;
             }
         }
-        throw new C3295hL("CodedInputStream encountered a malformed varint.");
+        throw new C3318hL("CodedInputStream encountered a malformed varint.");
     }
 
     public final int O() {
-        int i = this.f26098A;
-        if (this.f26104y - i < 4) {
+        int i = this.f26898A;
+        if (this.f26904y - i < 4) {
             G(4);
-            i = this.f26098A;
+            i = this.f26898A;
         }
-        this.f26098A = i + 4;
-        byte[] bArr = this.f26103x;
-        int i6 = bArr[i] & 255;
-        int i9 = bArr[i + 1] & 255;
-        int i10 = bArr[i + 2] & 255;
-        return ((bArr[i + 3] & 255) << 24) | (i9 << 8) | i6 | (i10 << 16);
+        this.f26898A = i + 4;
+        byte[] bArr = this.f26903x;
+        int i4 = bArr[i] & 255;
+        int i6 = bArr[i + 1] & 255;
+        int i9 = bArr[i + 2] & 255;
+        return ((bArr[i + 3] & 255) << 24) | (i6 << 8) | i4 | (i9 << 16);
     }
 
     public final long P() {
-        int i = this.f26098A;
-        if (this.f26104y - i < 8) {
+        int i = this.f26898A;
+        if (this.f26904y - i < 8) {
             G(8);
-            i = this.f26098A;
+            i = this.f26898A;
         }
-        this.f26098A = i + 8;
-        byte[] bArr = this.f26103x;
+        this.f26898A = i + 8;
+        byte[] bArr = this.f26903x;
         long j6 = bArr[i];
         long j9 = bArr[i + 2];
         long j10 = bArr[i + 3];
@@ -491,126 +492,126 @@ public final class LK extends W7.b {
     @Override // W7.b
     public final int b(int i) {
         if (i < 0) {
-            throw new C3295hL("CodedInputStream encountered an embedded string or message which claimed to have negative size.");
+            throw new C3318hL("CodedInputStream encountered an embedded string or message which claimed to have negative size.");
         }
-        int i6 = this.f26100C + this.f26098A + i;
-        if (i6 < 0) {
-            throw new C3295hL("Protocol message was too large.  May be malicious.  Use CodedInputStream.setSizeLimit() to increase the size limit. If reading multiple messages, consider resetting the counter between each message using CodedInputStream.resetSizeCounter().");
+        int i4 = this.f26900C + this.f26898A + i;
+        if (i4 < 0) {
+            throw new C3318hL("Protocol message was too large.  May be malicious.  Use CodedInputStream.setSizeLimit() to increase the size limit. If reading multiple messages, consider resetting the counter between each message using CodedInputStream.resetSizeCounter().");
         }
-        int i9 = this.f26101D;
-        if (i6 > i9) {
-            throw new C3295hL("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.");
+        int i6 = this.f26901D;
+        if (i4 > i6) {
+            throw new C3318hL("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.");
         }
-        this.f26101D = i6;
+        this.f26901D = i4;
         F();
-        return i9;
+        return i6;
     }
 
     @Override // W7.b
     public final void c(int i) {
-        this.f26101D = i;
+        this.f26901D = i;
         F();
     }
 
     @Override // W7.b
     public final boolean d() {
-        return this.f26098A == this.f26104y && !H(1);
+        return this.f26898A == this.f26904y && !H(1);
     }
 
     @Override // W7.b
     public final int e() {
-        return this.f26100C + this.f26098A;
+        return this.f26900C + this.f26898A;
     }
 
     @Override // W7.b
     public final int j() {
         if (d()) {
-            this.f26099B = 0;
+            this.f26899B = 0;
             return 0;
         }
-        int L6 = L();
-        this.f26099B = L6;
-        if ((L6 >>> 3) != 0) {
-            return L6;
+        int L2 = L();
+        this.f26899B = L2;
+        if ((L2 >>> 3) != 0) {
+            return L2;
         }
-        throw new C3295hL("Protocol message contained an invalid tag (zero).");
+        throw new C3318hL("Protocol message contained an invalid tag (zero).");
     }
 
     @Override // W7.b
     public final void k(int i) {
-        if (this.f26099B != i) {
-            throw new C3295hL("Protocol message end-group tag did not match expected tag.");
+        if (this.f26899B != i) {
+            throw new C3318hL("Protocol message end-group tag did not match expected tag.");
         }
     }
 
     @Override // W7.b
-    public final boolean l(int i) {
-        int i6 = i & 7;
-        int i9 = 0;
-        if (i6 != 0) {
-            if (i6 == 1) {
+    public final boolean m(int i) {
+        int i4 = i & 7;
+        int i6 = 0;
+        if (i4 != 0) {
+            if (i4 == 1) {
                 E(8);
                 return true;
             }
-            if (i6 == 2) {
+            if (i4 == 2) {
                 E(L());
                 return true;
             }
-            if (i6 == 3) {
+            if (i4 == 3) {
                 g();
                 k(((i >>> 3) << 3) | 4);
                 return true;
             }
-            if (i6 == 4) {
-                if (this.f3415u == 0) {
+            if (i4 == 4) {
+                if (this.f3577u == 0) {
                     k(0);
                 }
                 return false;
             }
-            if (i6 != 5) {
-                throw new C3241gL();
+            if (i4 != 5) {
+                throw new C3264gL();
             }
             E(4);
             return true;
         }
-        int i10 = this.f26104y - this.f26098A;
-        byte[] bArr = this.f26103x;
-        if (i10 >= 10) {
-            while (i9 < 10) {
-                int i11 = this.f26098A;
-                this.f26098A = i11 + 1;
-                if (bArr[i11] < 0) {
-                    i9++;
+        int i9 = this.f26904y - this.f26898A;
+        byte[] bArr = this.f26903x;
+        if (i9 >= 10) {
+            while (i6 < 10) {
+                int i10 = this.f26898A;
+                this.f26898A = i10 + 1;
+                if (bArr[i10] < 0) {
+                    i6++;
                 }
             }
-            throw new C3295hL("CodedInputStream encountered a malformed varint.");
+            throw new C3318hL("CodedInputStream encountered a malformed varint.");
         }
-        while (i9 < 10) {
-            if (this.f26098A == this.f26104y) {
+        while (i6 < 10) {
+            if (this.f26898A == this.f26904y) {
                 G(1);
             }
-            int i12 = this.f26098A;
-            this.f26098A = i12 + 1;
-            if (bArr[i12] < 0) {
-                i9++;
+            int i11 = this.f26898A;
+            this.f26898A = i11 + 1;
+            if (bArr[i11] < 0) {
+                i6++;
             }
         }
-        throw new C3295hL("CodedInputStream encountered a malformed varint.");
+        throw new C3318hL("CodedInputStream encountered a malformed varint.");
         return true;
     }
 
     @Override // W7.b
-    public final double m() {
+    public final double n() {
         return Double.longBitsToDouble(P());
     }
 
     @Override // W7.b
-    public final float n() {
+    public final float o() {
         return Float.intBitsToFloat(O());
     }
 
     @Override // W7.b
-    public final long o() {
+    public final long p() {
         return M();
     }
 
@@ -641,101 +642,101 @@ public final class LK extends W7.b {
 
     @Override // W7.b
     public final String v() {
-        int L6 = L();
-        byte[] bArr = this.f26103x;
-        if (L6 > 0) {
-            int i = this.f26104y;
-            int i6 = this.f26098A;
-            if (L6 <= i - i6) {
-                String str = new String(bArr, i6, L6, StandardCharsets.UTF_8);
-                this.f26098A += L6;
+        int L2 = L();
+        byte[] bArr = this.f26903x;
+        if (L2 > 0) {
+            int i = this.f26904y;
+            int i4 = this.f26898A;
+            if (L2 <= i - i4) {
+                String str = new String(bArr, i4, L2, StandardCharsets.UTF_8);
+                this.f26898A += L2;
                 return str;
             }
         }
-        if (L6 == 0) {
+        if (L2 == 0) {
             return "";
         }
-        if (L6 < 0) {
-            throw new C3295hL("CodedInputStream encountered an embedded string or message which claimed to have negative size.");
+        if (L2 < 0) {
+            throw new C3318hL("CodedInputStream encountered an embedded string or message which claimed to have negative size.");
         }
-        if (L6 > this.f26104y) {
-            return new String(I(L6), StandardCharsets.UTF_8);
+        if (L2 > this.f26904y) {
+            return new String(I(L2), StandardCharsets.UTF_8);
         }
-        G(L6);
-        String str2 = new String(bArr, this.f26098A, L6, StandardCharsets.UTF_8);
-        this.f26098A += L6;
+        G(L2);
+        String str2 = new String(bArr, this.f26898A, L2, StandardCharsets.UTF_8);
+        this.f26898A += L2;
         return str2;
     }
 
     @Override // W7.b
     public final String w() {
-        int L6 = L();
-        int i = this.f26098A;
-        int i6 = this.f26104y;
-        int i9 = i6 - i;
-        byte[] bArr = this.f26103x;
-        if (L6 <= i9 && L6 > 0) {
-            this.f26098A = i + L6;
+        int L2 = L();
+        int i = this.f26898A;
+        int i4 = this.f26904y;
+        int i6 = i4 - i;
+        byte[] bArr = this.f26903x;
+        if (L2 <= i6 && L2 > 0) {
+            this.f26898A = i + L2;
         } else {
-            if (L6 == 0) {
+            if (L2 == 0) {
                 return "";
             }
-            if (L6 < 0) {
-                throw new C3295hL("CodedInputStream encountered an embedded string or message which claimed to have negative size.");
+            if (L2 < 0) {
+                throw new C3318hL("CodedInputStream encountered an embedded string or message which claimed to have negative size.");
             }
             i = 0;
-            if (L6 <= i6) {
-                G(L6);
-                this.f26098A = L6;
+            if (L2 <= i4) {
+                G(L2);
+                this.f26898A = L2;
             } else {
-                bArr = I(L6);
+                bArr = I(L2);
             }
         }
-        return RL.c(bArr, i, L6);
+        return RL.c(bArr, i, L2);
     }
 
     @Override // W7.b
     public final HK x() {
-        int L6 = L();
-        int i = this.f26104y;
-        int i6 = this.f26098A;
-        int i9 = i - i6;
-        byte[] bArr = this.f26103x;
-        if (L6 <= i9 && L6 > 0) {
-            HK t6 = JK.t(bArr, i6, L6);
-            this.f26098A += L6;
+        int L2 = L();
+        int i = this.f26904y;
+        int i4 = this.f26898A;
+        int i6 = i - i4;
+        byte[] bArr = this.f26903x;
+        if (L2 <= i6 && L2 > 0) {
+            HK t6 = JK.t(bArr, i4, L2);
+            this.f26898A += L2;
             return t6;
         }
-        if (L6 == 0) {
-            return JK.f25675u;
+        if (L2 == 0) {
+            return JK.f26428u;
         }
-        if (L6 < 0) {
-            throw new C3295hL("CodedInputStream encountered an embedded string or message which claimed to have negative size.");
+        if (L2 < 0) {
+            throw new C3318hL("CodedInputStream encountered an embedded string or message which claimed to have negative size.");
         }
-        byte[] J = J(L6);
+        byte[] J = J(L2);
         if (J != null) {
             return JK.t(J, 0, J.length);
         }
-        int i10 = this.f26098A;
-        int i11 = this.f26104y;
-        int i12 = i11 - i10;
-        this.f26100C += i11;
-        this.f26098A = 0;
-        this.f26104y = 0;
-        ArrayList K7 = K(L6 - i12);
-        byte[] bArr2 = new byte[L6];
-        System.arraycopy(bArr, i10, bArr2, 0, i12);
+        int i9 = this.f26898A;
+        int i10 = this.f26904y;
+        int i11 = i10 - i9;
+        this.f26900C += i10;
+        this.f26898A = 0;
+        this.f26904y = 0;
+        ArrayList K7 = K(L2 - i11);
+        byte[] bArr2 = new byte[L2];
+        System.arraycopy(bArr, i9, bArr2, 0, i11);
         Iterator it = K7.iterator();
         while (it.hasNext()) {
             byte[] bArr3 = (byte[]) it.next();
             int length = bArr3.length;
-            System.arraycopy(bArr3, 0, bArr2, i12, length);
-            i12 += length;
+            System.arraycopy(bArr3, 0, bArr2, i11, length);
+            i11 += length;
         }
-        HK hk = JK.f25675u;
+        HK hk = JK.f26428u;
         try {
-            return L6 == 0 ? JK.f25675u : new HK(bArr2);
-        } catch (C3295hL e9) {
+            return L2 == 0 ? JK.f26428u : new HK(bArr2);
+        } catch (C3318hL e9) {
             throw new AssertionError("Expected no InvalidProtocolBufferException as data UTF8 validity is not checked.", e9);
         }
     }

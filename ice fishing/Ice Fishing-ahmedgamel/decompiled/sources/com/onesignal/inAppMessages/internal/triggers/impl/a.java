@@ -42,7 +42,7 @@ public final class a implements com.onesignal.common.events.d {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Z4.b) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(Z4.b it) {
@@ -67,7 +67,7 @@ public final class a implements com.onesignal.common.events.d {
             @Override // I7.l
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 invoke((Z4.b) obj);
-                return v.f41353a;
+                return v.f41073a;
             }
 
             public final void invoke(Z4.b it) {
@@ -98,28 +98,28 @@ public final class a implements com.onesignal.common.events.d {
         this.scheduledMessages = new ArrayList();
     }
 
-    private final boolean evaluateTimeIntervalWithOperator(double d2, double d9, m.b bVar) {
+    private final boolean evaluateTimeIntervalWithOperator(double d9, double d10, m.b bVar) {
         switch (com.onesignal.inAppMessages.internal.triggers.impl.b.$EnumSwitchMapping$1[bVar.ordinal()]) {
             case 1:
-                return d9 < d2;
+                return d10 < d9;
             case 2:
-                return d9 <= d2 || roughlyEqual(d2, d9);
+                return d10 <= d9 || roughlyEqual(d9, d10);
             case 3:
-                return d9 >= d2;
+                return d10 >= d9;
             case 4:
-                return d9 >= d2 || roughlyEqual(d2, d9);
+                return d10 >= d9 || roughlyEqual(d9, d10);
             case 5:
-                return roughlyEqual(d2, d9);
+                return roughlyEqual(d9, d10);
             case 6:
-                return !roughlyEqual(d2, d9);
+                return !roughlyEqual(d9, d10);
             default:
                 com.onesignal.debug.internal.logging.b.error$default("Attempted to apply an invalid operator on a time-based in-app-message trigger: " + bVar, null, 2, null);
                 return false;
         }
     }
 
-    private final boolean roughlyEqual(double d2, double d9) {
-        return Math.abs(d2 - d9) < REQUIRED_ACCURACY;
+    private final boolean roughlyEqual(double d9, double d10) {
+        return Math.abs(d9 - d10) < REQUIRED_ACCURACY;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:19:0x0089 A[Catch: all -> 0x0057, TRY_LEAVE, TryCatch #0 {all -> 0x0057, blocks: (B:8:0x0014, B:12:0x001e, B:17:0x0067, B:19:0x0089, B:26:0x009c, B:30:0x00a6, B:33:0x0034, B:37:0x003e, B:41:0x004a, B:42:0x0065, B:43:0x0059), top: B:7:0x0014 }] */

@@ -6,5 +6,5 @@ import java.util.LinkedHashMap;
 public final class N extends S {
 
     /* renamed from: a, reason: collision with root package name */
-    public final LinkedHashMap f5131a = new LinkedHashMap();
+    public final LinkedHashMap f5098a = new LinkedHashMap();
 }

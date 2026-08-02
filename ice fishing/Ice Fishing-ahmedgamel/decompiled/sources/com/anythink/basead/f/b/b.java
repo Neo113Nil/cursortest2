@@ -13,15 +13,15 @@ import java.util.Map;
 public final class b implements c {
 
     /* renamed from: a, reason: collision with root package name */
-    protected com.anythink.basead.f.c.d f8890a;
+    protected com.anythink.basead.f.c.d f9676a;
 
     public b(com.anythink.basead.f.c.d dVar) {
-        this.f8890a = dVar;
+        this.f9676a = dVar;
     }
 
     @Override // com.anythink.basead.f.b.c
     public final boolean a() {
-        com.anythink.basead.f.c.d dVar = this.f8890a;
+        com.anythink.basead.f.c.d dVar = this.f9676a;
         if (dVar != null) {
             return dVar.a();
         }
@@ -30,7 +30,7 @@ public final class b implements c {
 
     @Override // com.anythink.basead.f.b.c
     public final void b() {
-        com.anythink.basead.f.c.d dVar = this.f8890a;
+        com.anythink.basead.f.c.d dVar = this.f9676a;
         if (dVar != null) {
             dVar.i();
         }
@@ -38,7 +38,7 @@ public final class b implements c {
 
     @Override // com.anythink.basead.f.b.c
     public final void a(com.anythink.basead.g.a aVar) {
-        com.anythink.basead.f.c.d dVar = this.f8890a;
+        com.anythink.basead.f.c.d dVar = this.f9676a;
         if (dVar != null) {
             dVar.a(aVar);
         }
@@ -46,7 +46,7 @@ public final class b implements c {
 
     @Override // com.anythink.basead.f.b.c
     public final void b(Activity activity, Map<String, Object> map, int i, String str, String str2, String str3) {
-        com.anythink.basead.f.c.d dVar = this.f8890a;
+        com.anythink.basead.f.c.d dVar = this.f9676a;
         if (dVar != null) {
             dVar.a(activity, map, str3, str2);
         }
@@ -54,15 +54,15 @@ public final class b implements c {
 
     @Override // com.anythink.basead.f.b.c
     public final void a(Activity activity, Map<String, Object> map, int i, String str, String str2, String str3) {
-        com.anythink.basead.f.c.d dVar = this.f8890a;
+        com.anythink.basead.f.c.d dVar = this.f9676a;
         if (dVar != null) {
             dVar.b(activity, map, str3, str2);
         }
     }
 
     @Override // com.anythink.basead.f.b.c
-    public final void a(ViewGroup viewGroup, Map<String, Object> map, boolean z3) {
-        com.anythink.basead.f.c.d dVar = this.f8890a;
+    public final void a(ViewGroup viewGroup, Map<String, Object> map, boolean z6) {
+        com.anythink.basead.f.c.d dVar = this.f9676a;
         if (dVar != null) {
             dVar.a(viewGroup, map);
         }
@@ -70,19 +70,19 @@ public final class b implements c {
 
     @Override // com.anythink.basead.f.b.c
     public final View a(Context context) {
-        com.anythink.basead.f.c.d dVar = this.f8890a;
+        com.anythink.basead.f.c.d dVar = this.f9676a;
         if (dVar == null) {
             return null;
         }
         dVar.h();
-        return this.f8890a.g();
+        return this.f9676a.g();
     }
 
     @Override // com.anythink.basead.f.b.c
-    public final com.anythink.basead.f.b.a.d a(Context context, bj bjVar, x xVar, boolean z3) {
-        com.anythink.basead.f.c.d dVar = this.f8890a;
+    public final com.anythink.basead.f.b.a.d a(Context context, bj bjVar, x xVar, boolean z6) {
+        com.anythink.basead.f.c.d dVar = this.f9676a;
         if (dVar != null) {
-            return new e(context, bjVar, xVar, dVar, z3);
+            return new e(context, bjVar, xVar, dVar, z6);
         }
         return null;
     }

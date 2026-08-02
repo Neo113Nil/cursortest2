@@ -4,7 +4,7 @@ import java.util.List;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public interface OB {
-    void ADp(C1312Vm c1312Vm);
+    void ADp(C1332Vm c1332Vm);
 
-    void AEy(List<C2022ju> list);
+    void AEy(List<C2042ju> list);
 }

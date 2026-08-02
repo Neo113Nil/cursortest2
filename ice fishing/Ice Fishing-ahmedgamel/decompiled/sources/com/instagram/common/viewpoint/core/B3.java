@@ -25,33 +25,33 @@ public final class B3 {
     public final boolean A09;
     public final boolean A0A;
 
-    public static String A03(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0B, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 26);
+    public static String A03(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0B, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 26);
         }
         return new String(copyOfRange);
     }
 
     public static void A04() {
-        A0B = new byte[]{73, 29, 6, 73, 29, 17, 65, 77, 54, 46, 48, 2, 2, 4, 28, 20, 21, 60, 16, 9, 50, 25, 16, 31, 31, 20, 29, 48, 21, 27, 4, 2, 5, 28, 20, 31, 5, 75, 81, 14, 60, 60, 58, 34, 42, 43, 28, 58, c.f16318c, c.f16318c, 32, 61, 59, 111, 20, 19, 58, 49, 48, 41, 48, Byte.MAX_VALUE, 11, 29, 114, 7, 105, 111, 106, 98, 75, c.f16317b, 65, 88, 65, 14, 122, 108, 3, 118, 24, 30, 24, 86, Byte.MAX_VALUE, 116, 117, 108, 117, 58, 78, 88, 55, 66, 44, 43, 44, 52, 28, 29, 16, 24, 58, 22, 29, 28, 26, 48, 23, 31, 22, 28, 55, 42, 39, 33, 114, 99, 98, 126, 95, 99, 69, c.f16317b, c.f16317b, 95, 66, 68, 16, 107, 11, 0, 22, 11, 13, 0, 105, 28, 17, 119, 32, 34, 55, 65, 42, 23, 22, 1, 0, 28, 65, 46, 57, 44, 65, 43, 10, 12, 0, 11, 10, 29, 31, 29, 8, 126, 21, 40, 41, 62, c.f16318c, 35, 126, 17, 6, 19, 126, 20, 53, 51, c.f16318c, 52, 53, 34, 126, 35, 53, 51, 37, 34, 53, 84, 86, 67, 53, 86, 90, 73, 77, 94, 87, 87, 53, 77, 82, 95, 94, 84, 53, 83, 76, 53, 88, 84, 95, 90, 44, 46, 47, 41, 95, 94, 88, 84, 95, 94, 73, 11, 9, 28, 106, 9, 16, 15, 106, 18, 13, 0, 1, 11, 106, 0, 1, 7, 11, 0, 1, 22, 106, 12, 1, 18, 7, 16, 14, 110, 23, 113, 112, 115, 15, 102, 27, 96, 90, 95, 90, 75, 79, 82, 77, 94, 22, 75, 87, 90, 66, 89, 90, 88, 80, 29, 9, 24, 21, 19, 83, 79, 27, 12, 12, 74, 94, 79, 66, 68, 4, 74, 72, 24, 110, 122, 107, 102, 96, 32, 110, 98, 125, 34, 120, 109, 44, 56, 41, 36, 34, 98, 40, 44, 46, 126, 7, 19, 2, 15, 9, 73, 0, 10, 7, 5, Byte.MAX_VALUE, 107, 122, 119, 113, 49, 121, 41, 47, 47, 51, Byte.MAX_VALUE, 114, Byte.MAX_VALUE, 105, 42, 62, 47, 34, 36, 100, 44, 124, 122, 122, 102, 38, 39, 42, 60, 24, 12, 29, 16, 22, 86, 30, 10, 20, 78, 90, 75, 70, c.f16317b, 0, 66, 95, 27, 78, 2, 67, 78, 91, 66, 85, 65, 80, 93, 91, 27, 89, 68, 81, 83, 79, 91, 74, 71, 65, 1, 65, 94, 91, 93, 84, c.f16317b, 81, 92, 90, 26, 71, 84, 66, 111, 123, 106, 103, 97, 33, 120, 97, 124, 108, 103, 125, 126, 115, 110, 121, 125, 112, 5, 14, 7, 8, 8, 3, 10, 37, 9, 19, 8, 18, 72, 7, 37, 7, 22, 21, 66, 73, c.f16317b, 79, 79, 68, 77, 98, 78, 84, 79, 85, 15, 66, c.f16317b, 81, 82, 55, 60, 53, 58, 58, 49, 56, 23, 59, 33, 58, 32, 122, 39, 33, 36, 36, 59, 38, 32, 120, 116, 53, 57, 50, 51, 53, 120, 59, c.f16318c, 59, 51, 118, 107, 103, 108, 109, 107, 38, 120, 122, 103, 110, 97, 100, 109, 68, 109, 126, 109, 100, 36, 40, 126, 114, 97, Byte.MAX_VALUE, 122, 125, 36, 42, c.f16318c, 124, 40, 87, 69, 70, 86, 77, 74, 69, 77, 95, 87, 82, 88, 87, 77, 86, 49, 35, 47, 50, 46, 39, 16, 35, 54, 39, 108, 35, 1, 35, 50, 49, 109, Byte.MAX_VALUE, 115, 110, 114, 123, 76, Byte.MAX_VALUE, 106, 123, 48, 125, Byte.MAX_VALUE, 110, 109, 2, 16, 28, 1, 29, 20, 35, 16, 5, 20, 95, 2, 4, 1, 1, 30, 3, 5, 93, 81, 1, 23, 17, 7, 0, 23, 95, 2, 30, 19, 11, 16, 19, 17, 25, 102, 124, 111, 112, 84, 123, 113, 71, 116, 97, 112, 59, 118, 116, 101, 102, c.f16317b, 90, 73, 86, 114, 93, 87, 97, 82, 71, 86, 29, 80, 92, 69, 86, 65, 31, 19, 108, 118, 101, 122, 94, 113, 123, 77, 126, 107, 122, 49, 109, 112, 107, 126, 107, 122, 123, 51, c.f16318c, 24, 2, 17, 14, 42, 5, 15, 57, 10, 31, 14, 69, 24, 30, 27, 27, 4, 25, 31, 71, 75, 100, 126, 109, 114, 86, 121, 115, 69, 118, 99, 114, 57, 97, 84, 118, 103, 100, 4, 5, 30, 30, 21, 28, 21, 20, 93, 0, 28, 17, 9, 18, 17, 19, 27, 48, 47, 34, 35, 41, 105, 39, 48, 37, 114, 109, 96, 97, 107, 43, 96, 107, 104, 102, 125, 41, 114, 109, 119, 109, 107, 106, 21, 10, 7, 6, 12, 76, 11, 6, 21, 0, 82, 77, c.f16317b, 65, 75, 11, 92, 9, 82, 74, c.f16317b, 10, 75, 74, 22, 10, 82, 84, 29, 92};
+        A0B = new byte[]{73, 29, 6, 73, 29, 17, 65, 77, 54, 46, 48, 2, 2, 4, 28, 20, 21, 60, 16, 9, 50, 25, 16, 31, 31, 20, 29, 48, 21, 27, 4, 2, 5, 28, 20, 31, 5, 75, 81, 14, 60, 60, 58, 34, 42, 43, 28, 58, c.f17105c, c.f17105c, 32, 61, 59, 111, 20, 19, 58, 49, 48, 41, 48, Byte.MAX_VALUE, 11, 29, 114, 7, 105, 111, 106, 98, 75, c.f17104b, 65, 88, 65, 14, 122, 108, 3, 118, 24, 30, 24, 86, Byte.MAX_VALUE, 116, 117, 108, 117, 58, 78, 88, 55, 66, 44, 43, 44, 52, 28, 29, 16, 24, 58, 22, 29, 28, 26, 48, 23, 31, 22, 28, 55, 42, 39, 33, 114, 99, 98, 126, 95, 99, 69, c.f17104b, c.f17104b, 95, 66, 68, 16, 107, 11, 0, 22, 11, 13, 0, 105, 28, 17, 119, 32, 34, 55, 65, 42, 23, 22, 1, 0, 28, 65, 46, 57, 44, 65, 43, 10, 12, 0, 11, 10, 29, 31, 29, 8, 126, 21, 40, 41, 62, c.f17105c, 35, 126, 17, 6, 19, 126, 20, 53, 51, c.f17105c, 52, 53, 34, 126, 35, 53, 51, 37, 34, 53, 84, 86, 67, 53, 86, 90, 73, 77, 94, 87, 87, 53, 77, 82, 95, 94, 84, 53, 83, 76, 53, 88, 84, 95, 90, 44, 46, 47, 41, 95, 94, 88, 84, 95, 94, 73, 11, 9, 28, 106, 9, 16, 15, 106, 18, 13, 0, 1, 11, 106, 0, 1, 7, 11, 0, 1, 22, 106, 12, 1, 18, 7, 16, 14, 110, 23, 113, 112, 115, 15, 102, 27, 96, 90, 95, 90, 75, 79, 82, 77, 94, 22, 75, 87, 90, 66, 89, 90, 88, 80, 29, 9, 24, 21, 19, 83, 79, 27, 12, 12, 74, 94, 79, 66, 68, 4, 74, 72, 24, 110, 122, 107, 102, 96, 32, 110, 98, 125, 34, 120, 109, 44, 56, 41, 36, 34, 98, 40, 44, 46, 126, 7, 19, 2, 15, 9, 73, 0, 10, 7, 5, Byte.MAX_VALUE, 107, 122, 119, 113, 49, 121, 41, 47, 47, 51, Byte.MAX_VALUE, 114, Byte.MAX_VALUE, 105, 42, 62, 47, 34, 36, 100, 44, 124, 122, 122, 102, 38, 39, 42, 60, 24, 12, 29, 16, 22, 86, 30, 10, 20, 78, 90, 75, 70, c.f17104b, 0, 66, 95, 27, 78, 2, 67, 78, 91, 66, 85, 65, 80, 93, 91, 27, 89, 68, 81, 83, 79, 91, 74, 71, 65, 1, 65, 94, 91, 93, 84, c.f17104b, 81, 92, 90, 26, 71, 84, 66, 111, 123, 106, 103, 97, 33, 120, 97, 124, 108, 103, 125, 126, 115, 110, 121, 125, 112, 5, 14, 7, 8, 8, 3, 10, 37, 9, 19, 8, 18, 72, 7, 37, 7, 22, 21, 66, 73, c.f17104b, 79, 79, 68, 77, 98, 78, 84, 79, 85, 15, 66, c.f17104b, 81, 82, 55, 60, 53, 58, 58, 49, 56, 23, 59, 33, 58, 32, 122, 39, 33, 36, 36, 59, 38, 32, 120, 116, 53, 57, 50, 51, 53, 120, 59, c.f17105c, 59, 51, 118, 107, 103, 108, 109, 107, 38, 120, 122, 103, 110, 97, 100, 109, 68, 109, 126, 109, 100, 36, 40, 126, 114, 97, Byte.MAX_VALUE, 122, 125, 36, 42, c.f17105c, 124, 40, 87, 69, 70, 86, 77, 74, 69, 77, 95, 87, 82, 88, 87, 77, 86, 49, 35, 47, 50, 46, 39, 16, 35, 54, 39, 108, 35, 1, 35, 50, 49, 109, Byte.MAX_VALUE, 115, 110, 114, 123, 76, Byte.MAX_VALUE, 106, 123, 48, 125, Byte.MAX_VALUE, 110, 109, 2, 16, 28, 1, 29, 20, 35, 16, 5, 20, 95, 2, 4, 1, 1, 30, 3, 5, 93, 81, 1, 23, 17, 7, 0, 23, 95, 2, 30, 19, 11, 16, 19, 17, 25, 102, 124, 111, 112, 84, 123, 113, 71, 116, 97, 112, 59, 118, 116, 101, 102, c.f17104b, 90, 73, 86, 114, 93, 87, 97, 82, 71, 86, 29, 80, 92, 69, 86, 65, 31, 19, 108, 118, 101, 122, 94, 113, 123, 77, 126, 107, 122, 49, 109, 112, 107, 126, 107, 122, 123, 51, c.f17105c, 24, 2, 17, 14, 42, 5, 15, 57, 10, 31, 14, 69, 24, 30, 27, 27, 4, 25, 31, 71, 75, 100, 126, 109, 114, 86, 121, 115, 69, 118, 99, 114, 57, 97, 84, 118, 103, 100, 4, 5, 30, 30, 21, 28, 21, 20, 93, 0, 28, 17, 9, 18, 17, 19, 27, 48, 47, 34, 35, 41, 105, 39, 48, 37, 114, 109, 96, 97, 107, 43, 96, 107, 104, 102, 125, 41, 114, 109, 119, 109, 107, 106, 21, 10, 7, 6, 12, 76, 11, 6, 21, 0, 82, 77, c.f17104b, 65, 75, 11, 92, 9, 82, 74, c.f17104b, 10, 75, 74, 22, 10, 82, 84, 29, 92};
     }
 
     static {
         A04();
     }
 
-    public B3(String str, String str2, String str3, MediaCodecInfo.CodecCapabilities codecCapabilities, boolean z3, boolean z6, boolean z9, boolean z10, boolean z11, boolean z12) {
-        this.A03 = (String) AbstractC06243y.A01(str);
+    public B3(String str, String str2, String str3, MediaCodecInfo.CodecCapabilities codecCapabilities, boolean z6, boolean z9, boolean z10, boolean z11, boolean z12, boolean z13) {
+        this.A03 = (String) AbstractC06443y.A01(str);
         this.A02 = str2;
         this.A01 = str3;
         this.A00 = codecCapabilities;
-        this.A05 = z3;
-        this.A07 = z6;
-        this.A09 = z9;
-        this.A04 = z10;
-        this.A08 = z11;
-        this.A06 = z12;
+        this.A05 = z6;
+        this.A07 = z9;
+        this.A09 = z10;
+        this.A04 = z11;
+        this.A08 = z12;
+        this.A06 = z13;
         this.A0A = C3J.A0F(str2);
     }
 
@@ -77,7 +77,7 @@ public final class B3 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:38:0x011c, code lost:
     
-        com.instagram.common.viewpoint.core.AbstractC06324g.A07(A03(97, 14, 99), A03(10, 29, 107) + r5 + A03(6, 3, 119) + r7 + A03(0, 4, 115) + r4 + A03(260, 1, 72));
+        com.instagram.common.viewpoint.core.AbstractC06524g.A07(A03(97, 14, 99), A03(10, 29, 107) + r5 + A03(6, 3, 119) + r7 + A03(0, 4, 115) + r4 + A03(260, 1, 72));
      */
     /* JADX WARN: Code restructure failed: missing block: B:39:0x0171, code lost:
     
@@ -126,39 +126,39 @@ public final class B3 {
         return i;
     }
 
-    public static Point A01(MediaCodecInfo.VideoCapabilities videoCapabilities, int i, int i6) {
+    public static Point A01(MediaCodecInfo.VideoCapabilities videoCapabilities, int i, int i4) {
         int heightAlignment = videoCapabilities.getWidthAlignment();
         int widthAlignment = videoCapabilities.getHeightAlignment();
-        return new Point(C5C.A05(i, heightAlignment) * heightAlignment, C5C.A05(i6, widthAlignment) * widthAlignment);
+        return new Point(C5C.A05(i, heightAlignment) * heightAlignment, C5C.A05(i4, widthAlignment) * widthAlignment);
     }
 
-    public static B3 A02(String str, String str2, String str3, MediaCodecInfo.CodecCapabilities codecCapabilities, boolean z3, boolean z6, boolean z9, boolean z10, boolean z11) {
-        boolean z12;
-        if (!z10 && codecCapabilities != null) {
+    public static B3 A02(String str, String str2, String str3, MediaCodecInfo.CodecCapabilities codecCapabilities, boolean z6, boolean z9, boolean z10, boolean z11, boolean z12) {
+        boolean z13;
+        if (!z11 && codecCapabilities != null) {
             boolean A09 = A09(codecCapabilities);
             if (A0C[2].length() != 8) {
                 throw new RuntimeException();
             }
             A0C[2] = "xqlBNWNY";
             if (A09 && !A0J(str)) {
-                z12 = true;
-                return new B3(str, str2, str3, codecCapabilities, z3, z6, z9, z12, codecCapabilities == null && A0D(codecCapabilities), !z11 || (codecCapabilities != null && A0B(codecCapabilities)));
+                z13 = true;
+                return new B3(str, str2, str3, codecCapabilities, z6, z9, z10, z13, codecCapabilities == null && A0D(codecCapabilities), !z12 || (codecCapabilities != null && A0B(codecCapabilities)));
             }
         }
-        z12 = false;
-        return new B3(str, str2, str3, codecCapabilities, z3, z6, z9, z12, codecCapabilities == null && A0D(codecCapabilities), !z11 || (codecCapabilities != null && A0B(codecCapabilities)));
+        z13 = false;
+        return new B3(str, str2, str3, codecCapabilities, z6, z9, z10, z13, codecCapabilities == null && A0D(codecCapabilities), !z12 || (codecCapabilities != null && A0B(codecCapabilities)));
     }
 
     private void A05(String str) {
         StringBuilder append = new StringBuilder().append(A03(39, 16, 85)).append(str);
         String A03 = A03(261, 3, 33);
-        AbstractC06324g.A04(A03(97, 14, 99), append.append(A03).append(this.A03).append(A03(4, 2, 43)).append(this.A02).append(A03).append(C5C.A04).append(A03(260, 1, 72)).toString());
+        AbstractC06524g.A04(A03(97, 14, 99), append.append(A03).append(this.A03).append(A03(4, 2, 43)).append(this.A02).append(A03).append(C5C.A04).append(A03(260, 1, 72)).toString());
     }
 
     private void A06(String str) {
         StringBuilder append = new StringBuilder().append(A03(119, 11, 42)).append(str);
         String A03 = A03(261, 3, 33);
-        AbstractC06324g.A04(A03(97, 14, 99), append.append(A03).append(this.A03).append(A03(4, 2, 43)).append(this.A02).append(A03).append(C5C.A04).append(A03(260, 1, 72)).toString());
+        AbstractC06524g.A04(A03(97, 14, 99), append.append(A03).append(this.A03).append(A03(4, 2, 43)).append(this.A02).append(A03).append(C5C.A04).append(A03(260, 1, 72)).toString());
     }
 
     public static boolean A07() {
@@ -189,19 +189,19 @@ public final class B3 {
         return codecCapabilities.isFeatureSupported(A03(707, 17, 106));
     }
 
-    public static boolean A0F(MediaCodecInfo.VideoCapabilities videoCapabilities, int i, int i6, double d2) {
-        Point alignedSize = A01(videoCapabilities, i, i6);
-        int i9 = alignedSize.x;
-        int i10 = alignedSize.y;
-        if (d2 == -1.0d || d2 < 1.0d) {
-            return videoCapabilities.isSizeSupported(i9, i10);
+    public static boolean A0F(MediaCodecInfo.VideoCapabilities videoCapabilities, int i, int i4, double d9) {
+        Point alignedSize = A01(videoCapabilities, i, i4);
+        int i6 = alignedSize.x;
+        int i9 = alignedSize.y;
+        if (d9 == -1.0d || d9 < 1.0d) {
+            return videoCapabilities.isSizeSupported(i6, i9);
         }
-        return videoCapabilities.areSizeAndRateSupported(i9, i10, Math.floor(d2));
+        return videoCapabilities.areSizeAndRateSupported(i6, i9, Math.floor(d9));
     }
 
     @MetaExoPlayerCustomization(type = {"FEATURE_LOGIC"}, value = "D46258033: [FBLite][Video] Solve tasks T154141530 T154151746 gating the call for SDK >=21")
-    private boolean A0G(C2400qI c2400qI, boolean z3) {
-        Pair<Integer, Integer> A0B2 = C0792Ba.A0B(c2400qI);
+    private boolean A0G(C2420qI c2420qI, boolean z6) {
+        Pair<Integer, Integer> A0B2 = C0812Ba.A0B(c2420qI);
         if (A0B2 == null) {
             return true;
         }
@@ -211,7 +211,7 @@ public final class B3 {
             A0C[2] = "XFIr8RM8";
             int intValue = num.intValue();
             int level = ((Integer) A0B2.second).intValue();
-            if (A03(733, 18, 30).equals(c2400qI.A0W)) {
+            if (A03(733, 18, 30).equals(c2420qI.A0W)) {
                 if (A03(724, 9, 92).equals(this.A02)) {
                     intValue = 8;
                     level = 0;
@@ -242,7 +242,7 @@ public final class B3 {
                     int i = codecProfileLevel.level;
                     if (A0C[0].charAt(21) == 'A') {
                         A0C[1] = "Tk1KZqXmKjuSsbjIU3mgahSyAhYoMHEk";
-                        if (i >= level || !z3) {
+                        if (i >= level || !z6) {
                             boolean A0L = A0L(this.A02, intValue);
                             if (A0C[1].charAt(21) != 'k') {
                                 A0C[0] = "B6qJQnb2cEtex6AQnXMJ6AJyRiBsPuck";
@@ -256,7 +256,7 @@ public final class B3 {
                     }
                 }
             }
-            A06(A03(501, 20, 18) + c2400qI.A0R + A03(4, 2, 43) + this.A01);
+            A06(A03(501, 20, 18) + c2420qI.A0R + A03(4, 2, 43) + this.A01);
             return false;
         }
         throw new RuntimeException();
@@ -272,7 +272,7 @@ public final class B3 {
 
     public static boolean A0J(String str) {
         if (C5C.A02 <= 22) {
-            if ((A03(a.f21731U, 10, 94).equals(C5C.A06) || A03(111, 8, 72).equals(C5C.A06)) && (A03(140, 22, 117).equals(str) || A03(162, 29, 74).equals(str))) {
+            if ((A03(a.f22518U, 10, 94).equals(C5C.A06) || A03(111, 8, 72).equals(C5C.A06)) && (A03(140, 22, 117).equals(str) || A03(162, 29, 74).equals(str))) {
                 return true;
             }
         }
@@ -344,12 +344,12 @@ public final class B3 {
         return new MediaCodecInfo.CodecProfileLevel[]{profileLevel};
     }
 
-    public final Point A0N(int i, int i6) {
+    public final Point A0N(int i, int i4) {
         MediaCodecInfo.VideoCapabilities videoCapabilities;
         if (this.A00 == null || (videoCapabilities = this.A00.getVideoCapabilities()) == null) {
             return null;
         }
-        return A01(videoCapabilities, i, i6);
+        return A01(videoCapabilities, i, i4);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x002a, code lost:
@@ -359,72 +359,72 @@ public final class B3 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final C6L A0O(C2400qI c2400qI, C2400qI c2400qI2) {
-        int i = C5C.A1E(c2400qI.A0W, c2400qI2.A0W) ? 0 : 0 | 8;
+    public final C6L A0O(C2420qI c2420qI, C2420qI c2420qI2) {
+        int i = C5C.A1E(c2420qI.A0W, c2420qI2.A0W) ? 0 : 0 | 8;
         if (this.A0A) {
-            int discardReasons = c2400qI.A0F;
-            if (discardReasons != c2400qI2.A0F) {
+            int discardReasons = c2420qI.A0F;
+            if (discardReasons != c2420qI2.A0F) {
                 i |= 1024;
             }
             if (!this.A04) {
-                int discardReasons2 = c2400qI.A0L;
-                if (discardReasons2 == c2400qI2.A0L) {
-                    int discardReasons3 = c2400qI.A0A;
+                int discardReasons2 = c2420qI.A0L;
+                if (discardReasons2 == c2420qI2.A0L) {
+                    int discardReasons3 = c2420qI.A0A;
                 }
                 i |= 512;
             }
-            if (!C5C.A1E(c2400qI.A0N, c2400qI2.A0N)) {
+            if (!C5C.A1E(c2420qI.A0N, c2420qI2.A0N)) {
                 i |= 2048;
             }
-            if (A0I(this.A03) && !c2400qI.A0A(c2400qI2)) {
+            if (A0I(this.A03) && !c2420qI.A0A(c2420qI2)) {
                 i |= 2;
             }
             if (i == 0) {
                 String str = this.A03;
-                int i6 = c2400qI.A0A(c2400qI2) ? 3 : 2;
+                int i4 = c2420qI.A0A(c2420qI2) ? 3 : 2;
                 if (A0C[0].charAt(21) != 'A') {
                     throw new RuntimeException();
                 }
                 String[] strArr = A0C;
                 strArr[7] = "2o9LDR7wht3djkkWSozFp";
                 strArr[5] = "xzNY8imEyNfCiAqEOIotcML";
-                return new C6L(str, c2400qI, c2400qI2, i6, 0);
+                return new C6L(str, c2420qI, c2420qI2, i4, 0);
             }
         } else {
-            int discardReasons4 = c2400qI.A06;
-            if (discardReasons4 != c2400qI2.A06) {
+            int discardReasons4 = c2420qI.A06;
+            if (discardReasons4 != c2420qI2.A06) {
                 i |= 4096;
             }
-            int discardReasons5 = c2400qI.A0G;
-            if (discardReasons5 != c2400qI2.A0G) {
+            int discardReasons5 = c2420qI.A0G;
+            if (discardReasons5 != c2420qI2.A0G) {
                 i |= 8192;
             }
-            int discardReasons6 = c2400qI.A0C;
-            if (discardReasons6 != c2400qI2.A0C) {
+            int discardReasons6 = c2420qI.A0C;
+            if (discardReasons6 != c2420qI2.A0C) {
                 i |= 16384;
             }
             if (i == 0 && A03(371, 15, 53).equals(this.A02)) {
-                Pair<Integer, Integer> A0B2 = C0792Ba.A0B(c2400qI);
-                Pair<Integer, Integer> A0B3 = C0792Ba.A0B(c2400qI2);
+                Pair<Integer, Integer> A0B2 = C0812Ba.A0B(c2420qI);
+                Pair<Integer, Integer> A0B3 = C0812Ba.A0B(c2420qI2);
                 if (A0B2 != null && A0B3 != null) {
                     int intValue = ((Integer) A0B2.first).intValue();
                     int intValue2 = ((Integer) A0B3.first).intValue();
                     if (intValue == 42 && intValue2 == 42) {
-                        return new C6L(this.A03, c2400qI, c2400qI2, 3, 0);
+                        return new C6L(this.A03, c2420qI, c2420qI2, 3, 0);
                     }
                 }
             }
-            if (!c2400qI.A0A(c2400qI2)) {
+            if (!c2420qI.A0A(c2420qI2)) {
                 i |= 32;
             }
             if (A0H(this.A02)) {
                 i |= 2;
             }
             if (i == 0) {
-                return new C6L(this.A03, c2400qI, c2400qI2, 1, 0);
+                return new C6L(this.A03, c2420qI, c2420qI2, 1, 0);
             }
         }
-        return new C6L(this.A03, c2400qI, c2400qI2, 0, i);
+        return new C6L(this.A03, c2420qI, c2420qI2, 0, i);
     }
 
     public final boolean A0P(int i) {
@@ -461,7 +461,7 @@ public final class B3 {
         return true;
     }
 
-    public final boolean A0R(int i, int i6, double d2) {
+    public final boolean A0R(int i, int i4, double d9) {
         if (this.A00 == null) {
             if (A0C[4].length() != 17) {
                 throw new RuntimeException();
@@ -475,33 +475,33 @@ public final class B3 {
             A06(A03(690, 17, 13));
             return false;
         }
-        int i9 = C5C.A02;
+        int i6 = C5C.A02;
         String A03 = A03(9, 1, 116);
         String A032 = A03(780, 1, 62);
-        if (i9 >= 29) {
-            int A00 = B1.A00(videoCapabilities, i, i6, d2);
+        if (i6 >= 29) {
+            int A00 = B1.A00(videoCapabilities, i, i4, d9);
             if (A00 == 2) {
                 return true;
             }
             if (A00 == 1) {
-                A06(A03(629, 19, 41) + i + A032 + i6 + A03 + d2);
+                A06(A03(629, 19, 41) + i + A032 + i4 + A03 + d9);
                 return false;
             }
         }
-        if (!A0F(videoCapabilities, i, i6, d2)) {
-            if (i >= i6 || !A0K(this.A03) || !A0F(videoCapabilities, i6, i, d2)) {
-                A06(A03(669, 21, 113) + i + A032 + i6 + A03 + d2);
+        if (!A0F(videoCapabilities, i, i4, d9)) {
+            if (i >= i4 || !A0K(this.A03) || !A0F(videoCapabilities, i4, i, d9)) {
+                A06(A03(669, 21, 113) + i + A032 + i4 + A03 + d9);
                 return false;
             }
-            A05(A03(648, 21, 5) + i + A032 + i6 + A03 + d2);
+            A05(A03(648, 21, 5) + i + A032 + i4 + A03 + d9);
         }
         return true;
     }
 
     @MetaExoPlayerCustomization(type = {"DEPRECATED_LOGIC"}, value = "D51676338: Control Renderer Support behavior")
-    public final boolean A0S(C2400qI c2400qI) {
+    public final boolean A0S(C2420qI c2420qI) {
         String A07;
-        if (c2400qI.A0R == null || this.A02 == null || (A07 = C3J.A07(c2400qI.A0R)) == null) {
+        if (c2420qI.A0R == null || this.A02 == null || (A07 = C3J.A07(c2420qI.A0R)) == null) {
             return true;
         }
         String codecMimeType = this.A02;
@@ -509,44 +509,44 @@ public final class B3 {
             StringBuilder sb = new StringBuilder();
             String codecMimeType2 = A03(490, 11, 76);
             StringBuilder append = sb.append(codecMimeType2);
-            String codecMimeType3 = c2400qI.A0R;
+            String codecMimeType3 = c2420qI.A0R;
             StringBuilder append2 = append.append(codecMimeType3);
             String codecMimeType4 = A03(4, 2, 43);
             A06(append2.append(codecMimeType4).append(A07).toString());
             return false;
         }
-        return A0G(c2400qI, true);
+        return A0G(c2420qI, true);
     }
 
-    public final boolean A0T(C2400qI c2400qI) {
+    public final boolean A0T(C2420qI c2420qI) {
         if (this.A0A) {
-            boolean z3 = this.A04;
+            boolean z6 = this.A04;
             if (A0C[1].charAt(21) == 'k') {
                 throw new RuntimeException();
             }
             String[] strArr = A0C;
             strArr[7] = "p6ujkjtFWGTlktsjRzxuv";
             strArr[5] = "iao6hIdGkkUEjHJmkTON0Ul";
-            return z3;
+            return z6;
         }
-        Pair<Integer, Integer> profileLevel = C0792Ba.A0B(c2400qI);
+        Pair<Integer, Integer> profileLevel = C0812Ba.A0B(c2420qI);
         return profileLevel != null && ((Integer) profileLevel.first).intValue() == 42;
     }
 
     @Deprecated
-    public final boolean A0U(C2400qI c2400qI, C2400qI c2400qI2, boolean z3) {
-        if (!z3 && c2400qI.A0N != null) {
-            ColorInfo colorInfo = c2400qI2.A0N;
+    public final boolean A0U(C2420qI c2420qI, C2420qI c2420qI2, boolean z6) {
+        if (!z6 && c2420qI.A0N != null) {
+            ColorInfo colorInfo = c2420qI2.A0N;
             String[] strArr = A0C;
             if (strArr[7].length() == strArr[5].length()) {
                 throw new RuntimeException();
             }
             A0C[2] = "CiueF8sE";
             if (colorInfo == null) {
-                c2400qI2 = c2400qI2.A07().A0t(c2400qI.A0N).A14();
+                c2420qI2 = c2420qI2.A07().A0t(c2420qI.A0N).A14();
             }
         }
-        int i = A0O(c2400qI, c2400qI2).A01;
+        int i = A0O(c2420qI, c2420qI2).A01;
         return i == 2 || i == 3;
     }
 

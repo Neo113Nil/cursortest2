@@ -9,13 +9,13 @@ import android.media.AudioTrack;
 public final class C8Q {
     public static final AudioAttributes A00 = new AudioAttributes.Builder().setUsage(1).setContentType(3).setFlags(0).build();
 
-    public static int A00(int i, int i6) {
-        for (int i9 = 8; i9 > 0; i9--) {
-            AudioFormat.Builder sampleRate = new AudioFormat.Builder().setEncoding(i).setSampleRate(i6);
-            int channelCount = C5C.A01(i9);
+    public static int A00(int i, int i4) {
+        for (int i6 = 8; i6 > 0; i6--) {
+            AudioFormat.Builder sampleRate = new AudioFormat.Builder().setEncoding(i).setSampleRate(i4);
+            int channelCount = C5C.A01(i6);
             AudioFormat audioFormat = sampleRate.setChannelMask(channelCount).build();
             if (AudioTrack.isDirectPlaybackSupported(audioFormat, A00)) {
-                return i9;
+                return i6;
             }
         }
         return 0;
@@ -24,10 +24,10 @@ public final class C8Q {
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.2K != com.google.common.collect.ImmutableList$Builder<java.lang.Integer> */
     /* JADX WARN: Multi-variable type inference failed */
     public static int[] A01() {
-        AbstractC2292oX abstractC2292oX;
+        AbstractC2312oX abstractC2312oX;
         C2K A01 = BP.A01();
-        abstractC2292oX = C8R.A06;
-        C4C it = abstractC2292oX.keySet().iterator();
+        abstractC2312oX = C8R.A06;
+        C4C it = abstractC2312oX.keySet().iterator();
         while (it.hasNext()) {
             int encoding = ((Integer) it.next()).intValue();
             if (AudioTrack.isDirectPlaybackSupported(new AudioFormat.Builder().setChannelMask(12).setEncoding(encoding).setSampleRate(48000).build(), A00)) {
@@ -35,6 +35,6 @@ public final class C8Q {
             }
         }
         A01.A04(2);
-        return AbstractC0784As.A0B(A01.A05());
+        return AbstractC0804As.A0B(A01.A05());
     }
 }

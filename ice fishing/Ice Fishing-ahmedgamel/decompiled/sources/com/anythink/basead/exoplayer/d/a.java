@@ -10,13 +10,13 @@ import org.json.JSONObject;
 final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f6785a = "ClearKeyUtil";
+    private static final String f7571a = "ClearKeyUtil";
 
     private a() {
     }
 
     public static byte[] a(byte[] bArr) {
-        if (af.f8346a >= 27) {
+        if (af.f9132a >= 27) {
             return bArr;
         }
         try {
@@ -39,13 +39,13 @@ final class a {
             sb.append("]}");
             return af.c(sb.toString());
         } catch (JSONException e9) {
-            Log.e(f6785a, "Failed to adjust response data: " + af.a(bArr), e9);
+            Log.e(f7571a, "Failed to adjust response data: " + af.a(bArr), e9);
             return bArr;
         }
     }
 
     private static byte[] b(byte[] bArr) {
-        return af.f8346a >= 27 ? bArr : af.c(af.a(bArr).replace('+', '-').replace('/', '_'));
+        return af.f9132a >= 27 ? bArr : af.c(af.a(bArr).replace('+', '-').replace('/', '_'));
     }
 
     private static String b(String str) {

@@ -21,7 +21,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.regex.Pattern;
-import v7.AbstractC5130k;
+import v7.AbstractC5120k;
 
 /* loaded from: classes2.dex */
 public final class AndroidUtils {
@@ -47,7 +47,7 @@ public final class AndroidUtils {
 
             public final a fromString(String str) {
                 for (a aVar : a.values()) {
-                    if (q.L(aVar.text, str)) {
+                    if (q.b0(aVar.text, str)) {
                         return aVar;
                     }
                 }
@@ -65,7 +65,7 @@ public final class AndroidUtils {
         static {
             a[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = com.bumptech.glide.e.b($values);
+            $ENTRIES = X2.a.h($values);
             Companion = new C0174a(null);
         }
 
@@ -96,10 +96,10 @@ public final class AndroidUtils {
         kotlin.jvm.internal.h.d(packageInfo, "getPackageInfo(...)");
         String[] requestedPermissions = packageInfo.requestedPermissions;
         kotlin.jvm.internal.h.d(requestedPermissions, "requestedPermissions");
-        List v9 = AbstractC5130k.v(Arrays.copyOf(requestedPermissions, requestedPermissions.length));
+        List t6 = AbstractC5120k.t(Arrays.copyOf(requestedPermissions, requestedPermissions.length));
         ArrayList arrayList = new ArrayList();
         for (Object obj : permissions) {
-            if (v9.contains((String) obj)) {
+            if (t6.contains((String) obj)) {
                 arrayList.add(obj);
             }
         }
@@ -162,14 +162,14 @@ public final class AndroidUtils {
         }
     }
 
-    public final int getRandomDelay(int i, int i6) {
-        return new Random().nextInt((i6 + 1) - i) + i;
+    public final int getRandomDelay(int i, int i4) {
+        return new Random().nextInt((i4 + 1) - i) + i;
     }
 
     public final String getResourceString(Context context, String str, String str2) {
         kotlin.jvm.internal.h.e(context, "context");
         Resources resources = context.getResources();
-        int identifier = resources.getIdentifier(str, com.anythink.expressad.foundation.h.k.f19636g, context.getPackageName());
+        int identifier = resources.getIdentifier(str, com.anythink.expressad.foundation.h.k.f20423g, context.getPackageName());
         return identifier != 0 ? resources.getString(identifier) : str2;
     }
 
@@ -213,7 +213,7 @@ public final class AndroidUtils {
         return true;
     }
 
-    public final boolean hasPermission(String permission, boolean z3, x4.f applicationService) {
+    public final boolean hasPermission(String permission, boolean z6, x4.f applicationService) {
         kotlin.jvm.internal.h.e(permission, "permission");
         kotlin.jvm.internal.h.e(applicationService, "applicationService");
         try {
@@ -221,10 +221,10 @@ public final class AndroidUtils {
             kotlin.jvm.internal.h.d(packageInfo, "getPackageInfo(...)");
             String[] requestedPermissions = packageInfo.requestedPermissions;
             kotlin.jvm.internal.h.d(requestedPermissions, "requestedPermissions");
-            if (!AbstractC5130k.v(Arrays.copyOf(requestedPermissions, requestedPermissions.length)).contains(permission)) {
+            if (!AbstractC5120k.t(Arrays.copyOf(requestedPermissions, requestedPermissions.length)).contains(permission)) {
                 return false;
             }
-            if (z3) {
+            if (z6) {
                 return E.e.a(applicationService.getAppContext(), permission) != -1;
             }
             return true;
@@ -236,10 +236,10 @@ public final class AndroidUtils {
 
     public final boolean isActivityFullyReady(Activity activity) {
         kotlin.jvm.internal.h.e(activity, "activity");
-        boolean z3 = activity.getWindow().getDecorView().getApplicationWindowToken() != null;
+        boolean z6 = activity.getWindow().getDecorView().getApplicationWindowToken() != null;
         View decorView = activity.getWindow().getDecorView();
         kotlin.jvm.internal.h.d(decorView, "getDecorView(...)");
-        return z3 && (decorView.getRootWindowInsets() != null);
+        return z6 && (decorView.getRootWindowInsets() != null);
     }
 
     public final boolean isAndroidUserUnlocked(Context appContext) {
@@ -289,7 +289,7 @@ public final class AndroidUtils {
             fromString = a.HTTP;
             String uri2 = uri.toString();
             kotlin.jvm.internal.h.d(uri2, "toString(...)");
-            if (!Q7.j.U(uri2, "://", false)) {
+            if (!Q7.j.k0(uri2, "://", false)) {
                 uri = Uri.parse("http://" + uri);
                 kotlin.jvm.internal.h.d(uri, "parse(...)");
             }
@@ -311,19 +311,19 @@ public final class AndroidUtils {
         kotlin.jvm.internal.h.e(url, "url");
         int length = url.length() - 1;
         int i = 0;
-        boolean z3 = false;
+        boolean z6 = false;
         while (i <= length) {
-            boolean z6 = kotlin.jvm.internal.h.f(url.charAt(!z3 ? i : length), 32) <= 0;
-            if (z3) {
-                if (!z6) {
+            boolean z9 = kotlin.jvm.internal.h.f(url.charAt(!z6 ? i : length), 32) <= 0;
+            if (z6) {
+                if (!z9) {
                     break;
                 } else {
                     length--;
                 }
-            } else if (z6) {
+            } else if (z9) {
                 i++;
             } else {
-                z3 = true;
+                z6 = true;
             }
         }
         Uri parse = Uri.parse(url.subSequence(i, length + 1).toString());

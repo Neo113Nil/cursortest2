@@ -7,20 +7,20 @@ import java.util.List;
 public final class c extends f {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19170a = "anythink_template/";
+    private static final String f19957a = "anythink_template/";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f19171c = "anythink_template/res/.anythink700";
+    private static final String f19958c = "anythink_template/res/.anythink700";
 
     /* renamed from: d, reason: collision with root package name */
-    private static final String f19172d = "anythink_template/res/res";
+    private static final String f19959d = "anythink_template/res/res";
 
     /* renamed from: e, reason: collision with root package name */
-    private static final String f19173e = "anythink_template/res/html";
+    private static final String f19960e = "anythink_template/res/html";
 
     private c(String str) {
         super(str);
-        this.f19184b.a(a.AD_ROOT_INTERNAL);
+        this.f19971b.a(a.AD_ROOT_INTERNAL);
     }
 
     @Override // com.anythink.expressad.foundation.g.c.f

@@ -1,10 +1,10 @@
 package androidx.savedstate;
 
-import D.y;
+import D.x;
 import android.os.Bundle;
-import androidx.lifecycle.EnumC0496n;
-import androidx.lifecycle.InterfaceC0501t;
-import androidx.lifecycle.InterfaceC0503v;
+import androidx.lifecycle.EnumC0500n;
+import androidx.lifecycle.InterfaceC0505t;
+import androidx.lifecycle.InterfaceC0507v;
 import androidx.lifecycle.L;
 import androidx.lifecycle.S;
 import androidx.lifecycle.X;
@@ -15,28 +15,29 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import kotlin.jvm.internal.h;
-import x0.C5181c;
-import x0.InterfaceC5179a;
-import x0.InterfaceC5183e;
+import w.AbstractC5128c;
+import x0.C5180c;
+import x0.InterfaceC5178a;
+import x0.InterfaceC5182e;
 
 /* loaded from: classes.dex */
-public final class Recreator implements InterfaceC0501t {
+public final class Recreator implements InterfaceC0505t {
 
     /* renamed from: n, reason: collision with root package name */
-    public final InterfaceC5183e f5301n;
+    public final InterfaceC5182e f5267n;
 
-    public Recreator(InterfaceC5183e interfaceC5183e) {
-        this.f5301n = interfaceC5183e;
+    public Recreator(InterfaceC5182e interfaceC5182e) {
+        this.f5267n = interfaceC5182e;
     }
 
-    @Override // androidx.lifecycle.InterfaceC0501t
-    public final void a(InterfaceC0503v interfaceC0503v, EnumC0496n enumC0496n) {
-        if (enumC0496n != EnumC0496n.ON_CREATE) {
+    @Override // androidx.lifecycle.InterfaceC0505t
+    public final void a(InterfaceC0507v interfaceC0507v, EnumC0500n enumC0500n) {
+        if (enumC0500n != EnumC0500n.ON_CREATE) {
             throw new AssertionError("Next event must be ON_CREATE");
         }
-        interfaceC0503v.getLifecycle().b(this);
-        InterfaceC5183e interfaceC5183e = this.f5301n;
-        Bundle a9 = interfaceC5183e.getSavedStateRegistry().a("androidx.savedstate.Restarter");
+        interfaceC0507v.getLifecycle().b(this);
+        InterfaceC5182e interfaceC5182e = this.f5267n;
+        Bundle a9 = interfaceC5182e.getSavedStateRegistry().a("androidx.savedstate.Restarter");
         if (a9 == null) {
             return;
         }
@@ -46,7 +47,7 @@ public final class Recreator implements InterfaceC0501t {
         }
         for (String str : stringArrayList) {
             try {
-                Class<? extends U> asSubclass = Class.forName(str, false, Recreator.class.getClassLoader()).asSubclass(InterfaceC5179a.class);
+                Class<? extends U> asSubclass = Class.forName(str, false, Recreator.class.getClassLoader()).asSubclass(InterfaceC5178a.class);
                 h.d(asSubclass, "{\n                Class.…class.java)\n            }");
                 try {
                     Constructor declaredConstructor = asSubclass.getDeclaredConstructor(new Class[0]);
@@ -54,32 +55,32 @@ public final class Recreator implements InterfaceC0501t {
                     try {
                         Object newInstance = declaredConstructor.newInstance(new Object[0]);
                         h.d(newInstance, "{\n                constr…wInstance()\n            }");
-                        if (!(interfaceC5183e instanceof Y)) {
+                        if (!(interfaceC5182e instanceof Y)) {
                             throw new IllegalStateException("Internal error: OnRecreation should be registered only on components that implement ViewModelStoreOwner");
                         }
-                        X viewModelStore = ((Y) interfaceC5183e).getViewModelStore();
-                        C5181c savedStateRegistry = interfaceC5183e.getSavedStateRegistry();
+                        X viewModelStore = ((Y) interfaceC5182e).getViewModelStore();
+                        C5180c savedStateRegistry = interfaceC5182e.getSavedStateRegistry();
                         viewModelStore.getClass();
-                        LinkedHashMap linkedHashMap = viewModelStore.f5153a;
+                        LinkedHashMap linkedHashMap = viewModelStore.f5120a;
                         Iterator it = new HashSet(linkedHashMap.keySet()).iterator();
                         while (it.hasNext()) {
                             String key = (String) it.next();
                             h.e(key, "key");
                             S s9 = (S) linkedHashMap.get(key);
                             h.b(s9);
-                            L.a(s9, savedStateRegistry, interfaceC5183e.getLifecycle());
+                            L.a(s9, savedStateRegistry, interfaceC5182e.getLifecycle());
                         }
                         if (!new HashSet(linkedHashMap.keySet()).isEmpty()) {
                             savedStateRegistry.d();
                         }
                     } catch (Exception e9) {
-                        throw new RuntimeException(u1.h.f("Failed to instantiate ", str), e9);
+                        throw new RuntimeException(AbstractC5128c.f("Failed to instantiate ", str), e9);
                     }
                 } catch (NoSuchMethodException e10) {
                     throw new IllegalStateException("Class " + asSubclass.getSimpleName() + " must have default constructor in order to be automatically recreated", e10);
                 }
             } catch (ClassNotFoundException e11) {
-                throw new RuntimeException(y.o("Class ", str, " wasn't found"), e11);
+                throw new RuntimeException(x.l("Class ", str, " wasn't found"), e11);
             }
         }
     }

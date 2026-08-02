@@ -4,81 +4,81 @@ package com.anythink.expressad.f.a;
 public final class b {
 
     /* renamed from: A, reason: collision with root package name */
-    public static final String f18387A = "plct";
+    public static final String f19174A = "plct";
 
     /* renamed from: B, reason: collision with root package name */
-    public static final String f18388B = "awct";
+    public static final String f19175B = "awct";
 
     /* renamed from: C, reason: collision with root package name */
-    public static final String f18389C = "rurl";
+    public static final String f19176C = "rurl";
 
     /* renamed from: D, reason: collision with root package name */
-    public static final String f18390D = "ad_source_timeout";
+    public static final String f19177D = "ad_source_timeout";
 
     /* renamed from: E, reason: collision with root package name */
-    public static final String f18391E = "ttc_type";
+    public static final String f19178E = "ttc_type";
 
     /* renamed from: F, reason: collision with root package name */
-    public static final String f18392F = "uct";
+    public static final String f19179F = "uct";
 
     /* renamed from: G, reason: collision with root package name */
-    public static final String f18393G = "ujds";
+    public static final String f19180G = "ujds";
 
     /* renamed from: H, reason: collision with root package name */
-    public static final String f18394H = "{android_id_md5_upper}";
+    public static final String f19181H = "{android_id_md5_upper}";
 
     /* renamed from: I, reason: collision with root package name */
-    public static final String f18395I = "{android_id}";
+    public static final String f19182I = "{android_id}";
     public static final String J = "tpqn";
 
     /* renamed from: K, reason: collision with root package name */
-    public static final String f18396K = "aqn";
+    public static final String f19183K = "aqn";
 
     /* renamed from: L, reason: collision with root package name */
-    public static final String f18397L = "acn";
+    public static final String f19184L = "acn";
 
     /* renamed from: M, reason: collision with root package name */
-    public static final String f18398M = "plctb";
+    public static final String f19185M = "plctb";
 
     /* renamed from: N, reason: collision with root package name */
-    public static final String f18399N = "hv";
+    public static final String f19186N = "hv";
 
     /* renamed from: O, reason: collision with root package name */
-    public static final String f18400O = "hl";
+    public static final String f19187O = "hl";
 
     /* renamed from: P, reason: collision with root package name */
-    public static final long f18401P = 3600;
+    public static final long f19188P = 3600;
 
     /* renamed from: Q, reason: collision with root package name */
-    public static final long f18402Q = 7200;
+    public static final long f19189Q = 7200;
 
     /* renamed from: R, reason: collision with root package name */
-    public static final String f18403R = "wt";
+    public static final String f19190R = "wt";
 
     /* renamed from: S, reason: collision with root package name */
-    public static final String f18404S = "iscasf";
+    public static final String f19191S = "iscasf";
 
     /* renamed from: T, reason: collision with root package name */
-    public static final String f18405T = "spmxrt";
+    public static final String f19192T = "spmxrt";
 
     /* renamed from: U, reason: collision with root package name */
-    public static final String f18406U = "ad_source_timeout";
+    public static final String f19193U = "ad_source_timeout";
 
     /* renamed from: V, reason: collision with root package name */
-    public static final String f18407V = "admobUnitId";
+    public static final String f19194V = "admobUnitId";
 
     /* renamed from: W, reason: collision with root package name */
-    public static final String f18408W = "myTargetSlotId";
+    public static final String f19195W = "myTargetSlotId";
 
     /* renamed from: X, reason: collision with root package name */
-    public static final String f18409X = "n2";
+    public static final String f19196X = "n2";
     public static final String Y = "n3";
 
     /* renamed from: Z, reason: collision with root package name */
-    public static final String f18410Z = "n4";
+    public static final String f19197Z = "n4";
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f18411a = "app_id";
+    public static final String f19198a = "app_id";
     public static final String aA = "pmax";
     public static final String aB = "pid";
     public static final long aC = 1800;
@@ -133,7 +133,7 @@ public final class b {
     public static final String az = "delete";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f18412b = "unit_ids";
+    public static final String f19199b = "unit_ids";
     public static final int bA = 20;
     public static final int bB = 1;
     public static final int bC = 0;
@@ -188,7 +188,7 @@ public final class b {
     public static final int bz = 900;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f18413c = "unitSetting";
+    public static final String f19200c = "unitSetting";
     public static final String cA = "offercachepacing";
     public static final String cB = "useexpriedcacheoffer";
     public static final String cC = "retryoffer";
@@ -243,7 +243,7 @@ public final class b {
     public static final String cz = "offercacheRate";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final String f18414d = "sign";
+    public static final String f19201d = "sign";
     public static final String dA = "hst";
     public static final String dB = "web_env_url";
     public static final String dC = "wvddt";
@@ -300,7 +300,7 @@ public final class b {
     public static final String dz = "ercd";
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f18415e = "data";
+    public static final String f19202e = "data";
     public static final String ea = "http_track_url";
     public static final String eb = "lg_wl";
     public static final String ec = "lg_bl";
@@ -318,63 +318,63 @@ public final class b {
     public static final String eo = "check_webview";
 
     /* renamed from: f, reason: collision with root package name */
-    public static final String f18416f = "status";
+    public static final String f19203f = "status";
 
     /* renamed from: g, reason: collision with root package name */
-    public static final String f18417g = "MSG";
+    public static final String f19204g = "MSG";
 
     /* renamed from: h, reason: collision with root package name */
-    public static final String f18418h = "cc";
+    public static final String f19205h = "cc";
     public static final String i = "apk_toast";
 
     /* renamed from: j, reason: collision with root package name */
-    public static final String f18419j = "mv_wildcard";
+    public static final String f19206j = "mv_wildcard";
 
     /* renamed from: k, reason: collision with root package name */
-    public static final String f18420k = "is_startup_crashsystem";
+    public static final String f19207k = "is_startup_crashsystem";
 
     /* renamed from: l, reason: collision with root package name */
-    public static final String f18421l = "upal";
+    public static final String f19208l = "upal";
 
     /* renamed from: m, reason: collision with root package name */
-    public static final String f18422m = "cfc";
+    public static final String f19209m = "cfc";
 
     /* renamed from: n, reason: collision with root package name */
-    public static final String f18423n = "getpf";
+    public static final String f19210n = "getpf";
 
     /* renamed from: o, reason: collision with root package name */
-    public static final String f18424o = "cfb";
+    public static final String f19211o = "cfb";
 
     /* renamed from: p, reason: collision with root package name */
-    public static final String f18425p = "uplc";
+    public static final String f19212p = "uplc";
 
     /* renamed from: q, reason: collision with root package name */
-    public static final String f18426q = "unitId";
+    public static final String f19213q = "unitId";
 
     /* renamed from: r, reason: collision with root package name */
-    public static final String f18427r = "adSourceList";
+    public static final String f19214r = "adSourceList";
 
     /* renamed from: s, reason: collision with root package name */
-    public static final String f18428s = "fbPlacementId";
+    public static final String f19215s = "fbPlacementId";
 
     /* renamed from: t, reason: collision with root package name */
-    public static final String f18429t = "current_time";
+    public static final String f19216t = "current_time";
 
     /* renamed from: u, reason: collision with root package name */
-    public static final String f18430u = "offset";
+    public static final String f19217u = "offset";
 
     /* renamed from: v, reason: collision with root package name */
-    public static final String f18431v = "jt";
+    public static final String f19218v = "jt";
 
     /* renamed from: w, reason: collision with root package name */
-    public static final String f18432w = "aa";
+    public static final String f19219w = "aa";
 
     /* renamed from: x, reason: collision with root package name */
-    public static final String f18433x = "domain";
+    public static final String f19220x = "domain";
 
     /* renamed from: y, reason: collision with root package name */
-    public static final String f18434y = "format";
+    public static final String f19221y = "format";
 
     /* renamed from: z, reason: collision with root package name */
-    public static final String f18435z = "reloadTime";
+    public static final String f19222z = "reloadTime";
 }

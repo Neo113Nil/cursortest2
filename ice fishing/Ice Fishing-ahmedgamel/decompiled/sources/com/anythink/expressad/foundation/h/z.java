@@ -10,7 +10,7 @@ import java.util.HashMap;
 public final class z {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19738a = "UriUtil";
+    private static final String f20525a = "UriUtil";
 
     public static String a(String str) {
         try {

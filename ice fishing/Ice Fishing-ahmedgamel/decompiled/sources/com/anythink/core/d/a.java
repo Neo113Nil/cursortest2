@@ -4,14 +4,14 @@ package com.anythink.core.d;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private final int f17143a;
+    private final int f17930a;
 
     public a(b bVar) {
-        this.f17143a = bVar != null ? bVar.aU() : 2;
+        this.f17930a = bVar != null ? bVar.aU() : 2;
     }
 
     public final void a(com.anythink.core.common.m.q qVar) {
-        int i = this.f17143a;
+        int i = this.f17930a;
         if (i == 1) {
             new com.anythink.core.common.m.k().a(0, qVar);
         } else {
@@ -26,6 +26,6 @@ public final class a {
     }
 
     public final int a() {
-        return this.f17143a;
+        return this.f17930a;
     }
 }

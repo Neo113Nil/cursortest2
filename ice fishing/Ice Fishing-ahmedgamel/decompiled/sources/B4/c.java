@@ -46,8 +46,8 @@ public class c extends SQLiteOpenHelper implements A4.c {
         }
     }
 
-    public /* synthetic */ c(o oVar, Context context, int i, int i6, e eVar) {
-        this(oVar, context, (i6 & 4) != 0 ? 9 : i);
+    public /* synthetic */ c(o oVar, Context context, int i, int i4, e eVar) {
+        this(oVar, context, (i4 & 4) != 0 ? 9 : i);
     }
 
     private final SQLiteDatabase getSQLiteDatabase() {
@@ -90,33 +90,33 @@ public class c extends SQLiteOpenHelper implements A4.c {
         return sQLiteDatabase;
     }
 
-    private final synchronized void internalOnUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i6) {
-        if (i < 2 && i6 >= 2) {
+    private final synchronized void internalOnUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i4) {
+        if (i < 2 && i4 >= 2) {
             try {
                 upgradeToV2(sQLiteDatabase);
             } catch (Throwable th) {
                 throw th;
             }
         }
-        if (i < 3 && i6 >= 3) {
+        if (i < 3 && i4 >= 3) {
             upgradeToV3(sQLiteDatabase);
         }
-        if (i < 4 && i6 >= 4) {
+        if (i < 4 && i4 >= 4) {
             upgradeToV4(sQLiteDatabase);
         }
-        if (i < 5 && i6 >= 5) {
+        if (i < 5 && i4 >= 5) {
             upgradeToV5(sQLiteDatabase);
         }
-        if (i == 5 && i6 >= 6) {
+        if (i == 5 && i4 >= 6) {
             upgradeFromV5ToV6(sQLiteDatabase);
         }
-        if (i < 7 && i6 >= 7) {
+        if (i < 7 && i4 >= 7) {
             upgradeToV7(sQLiteDatabase);
         }
-        if (i < 8 && i6 >= 8) {
+        if (i < 8 && i4 >= 8) {
             upgradeToV8(sQLiteDatabase);
         }
-        if (i < 9 && i6 >= 9) {
+        if (i < 9 && i4 >= 9) {
             upgradeToV9(sQLiteDatabase);
         }
     }
@@ -344,7 +344,7 @@ public class c extends SQLiteOpenHelper implements A4.c {
     }
 
     @Override // android.database.sqlite.SQLiteOpenHelper
-    public void onDowngrade(SQLiteDatabase db, int i, int i6) {
+    public void onDowngrade(SQLiteDatabase db, int i, int i4) {
         h.e(db, "db");
         com.onesignal.debug.internal.logging.b.warn$default("SDK version rolled back! Clearing OneSignal.db as it could be in an unexpected state.", null, 2, null);
         Cursor rawQuery = db.rawQuery("SELECT name FROM sqlite_master WHERE type='table'", null);
@@ -358,7 +358,7 @@ public class c extends SQLiteOpenHelper implements A4.c {
             Iterator it = arrayList.iterator();
             while (it.hasNext()) {
                 String str = (String) it.next();
-                if (!q.R(str, "sqlite_")) {
+                if (!q.h0(str, "sqlite_")) {
                     db.execSQL("DROP TABLE IF EXISTS " + str);
                 }
             }
@@ -369,11 +369,11 @@ public class c extends SQLiteOpenHelper implements A4.c {
     }
 
     @Override // android.database.sqlite.SQLiteOpenHelper
-    public void onUpgrade(SQLiteDatabase db, int i, int i6) {
+    public void onUpgrade(SQLiteDatabase db, int i, int i4) {
         h.e(db, "db");
-        com.onesignal.debug.internal.logging.b.debug$default("OneSignal Database onUpgrade from: " + i + " to: " + i6, null, 2, null);
+        com.onesignal.debug.internal.logging.b.debug$default("OneSignal Database onUpgrade from: " + i + " to: " + i4, null, 2, null);
         try {
-            internalOnUpgrade(db, i, i6);
+            internalOnUpgrade(db, i, i4);
         } catch (SQLiteException e9) {
             com.onesignal.debug.internal.logging.b.error("Error in upgrade, migration may have already run! Skipping!", e9);
         }

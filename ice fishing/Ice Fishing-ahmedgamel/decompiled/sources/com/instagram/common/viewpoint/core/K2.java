@@ -25,8 +25,8 @@ public final class K2 {
     public final Canvas A01;
     public final Paint A02 = new Paint();
     public final Paint A03;
-    public final C1015Ju A04;
-    public final C1016Jv A05;
+    public final C1035Ju A04;
+    public final C1036Jv A05;
     public final K1 A06;
 
     /* JADX WARN: Failed to parse debug info
@@ -37,41 +37,41 @@ public final class K2 {
     	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    public static C1015Ju A04(C06464u c06464u, int i) {
+    public static C1035Ju A04(C06664u c06664u, int i) {
         int A04;
         int A042;
         int A043;
         int A044;
-        int i6 = 8;
-        int A045 = c06464u.A04(8);
-        c06464u.A09(8);
-        int i9 = i - 2;
+        int i4 = 8;
+        int A045 = c06664u.A04(8);
+        c06664u.A09(8);
+        int i6 = i - 2;
         int[] A0F = A0F();
         int[] A0G = A0G();
         int[] A0H = A0H();
-        while (i9 > 0) {
-            int A046 = c06464u.A04(i6);
-            int A047 = c06464u.A04(i6);
-            int i10 = i9 - 2;
+        while (i6 > 0) {
+            int A046 = c06664u.A04(i4);
+            int A047 = c06664u.A04(i4);
+            int i9 = i6 - 2;
             int[] iArr = (A047 & 128) != 0 ? A0F : (A047 & 64) != 0 ? A0G : A0H;
-            int i11 = A047 & 1;
+            int i10 = A047 & 1;
             String[] strArr = A08;
             if (strArr[2].charAt(19) == strArr[6].charAt(19)) {
                 throw new RuntimeException();
             }
             A08[3] = "yhDNrhcDigDR24Kxe5BS389mQBs2ZM2v";
-            if (i11 != 0) {
-                A04 = c06464u.A04(i6);
-                A042 = c06464u.A04(i6);
-                A043 = c06464u.A04(i6);
-                A044 = c06464u.A04(i6);
-                i9 = i10 - 4;
+            if (i10 != 0) {
+                A04 = c06664u.A04(i4);
+                A042 = c06664u.A04(i4);
+                A043 = c06664u.A04(i4);
+                A044 = c06664u.A04(i4);
+                i6 = i9 - 4;
             } else {
-                A04 = c06464u.A04(6) << 2;
-                A042 = c06464u.A04(4) << 4;
-                A043 = c06464u.A04(4) << 4;
-                A044 = c06464u.A04(2) << 6;
-                i9 = i10 - 2;
+                A04 = c06664u.A04(6) << 2;
+                A042 = c06664u.A04(4) << 4;
+                A043 = c06664u.A04(4) << 4;
+                A044 = c06664u.A04(2) << 6;
+                i6 = i9 - 2;
             }
             if (A04 == 0) {
                 A042 = 0;
@@ -80,12 +80,12 @@ public final class K2 {
                 }
                 A08[7] = "NRFOfVblegIP33K9RsgAL0VferudmJOb";
                 A043 = 0;
-                A044 = p.f8473b;
+                A044 = p.f9259b;
             }
-            iArr[A046] = A00(255 - (A044 & p.f8473b), C5C.A07((int) (A04 + ((A042 - 128) * 1.402d)), 0, p.f8473b), C5C.A07((int) ((A04 - ((A043 - 128) * 0.34414d)) - ((A042 - 128) * 0.71414d)), 0, p.f8473b), C5C.A07((int) (A04 + ((A043 - 128) * 1.772d)), 0, p.f8473b));
-            i6 = 8;
+            iArr[A046] = A00(255 - (A044 & p.f9259b), C5C.A07((int) (A04 + ((A042 - 128) * 1.402d)), 0, p.f9259b), C5C.A07((int) ((A04 - ((A043 - 128) * 0.34414d)) - ((A042 - 128) * 0.71414d)), 0, p.f9259b), C5C.A07((int) (A04 + ((A043 - 128) * 1.772d)), 0, p.f9259b));
+            i4 = 8;
         }
-        return new C1015Ju(A045, A0F, A0G, A0H);
+        return new C1035Ju(A045, A0F, A0G, A0H);
     }
 
     /* JADX WARN: Failed to parse debug info
@@ -96,28 +96,28 @@ public final class K2 {
     	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    public static C1016Jv A05(C06464u c06464u) {
+    public static C1036Jv A05(C06664u c06664u) {
         int i;
+        int i4;
         int i6;
         int i9;
-        int i10;
-        c06464u.A09(4);
-        boolean A0H = c06464u.A0H();
-        c06464u.A09(3);
-        int A04 = c06464u.A04(16);
-        int A042 = c06464u.A04(16);
+        c06664u.A09(4);
+        boolean A0H = c06664u.A0H();
+        c06664u.A09(3);
+        int A04 = c06664u.A04(16);
+        int A042 = c06664u.A04(16);
         if (A0H) {
-            i = c06464u.A04(16);
-            i10 = c06464u.A04(16);
-            i6 = c06464u.A04(16);
-            i9 = c06464u.A04(16);
+            i = c06664u.A04(16);
+            i9 = c06664u.A04(16);
+            i4 = c06664u.A04(16);
+            i6 = c06664u.A04(16);
         } else {
             i = 0;
-            i6 = 0;
-            i9 = A042;
-            i10 = A04;
+            i4 = 0;
+            i6 = A042;
+            i9 = A04;
         }
-        return new C1016Jv(A04, A042, i, i10, i6, i9);
+        return new C1036Jv(A04, A042, i, i9, i4, i6);
     }
 
     /* JADX WARN: Failed to parse debug info
@@ -128,55 +128,55 @@ public final class K2 {
     	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    public static C1020Jz A08(C06464u c06464u, int i) {
-        int i6 = 8;
-        int A04 = c06464u.A04(8);
-        c06464u.A09(4);
-        boolean A0H = c06464u.A0H();
-        c06464u.A09(3);
-        int A042 = c06464u.A04(16);
-        int A043 = c06464u.A04(16);
-        int A044 = c06464u.A04(3);
-        int A045 = c06464u.A04(3);
-        c06464u.A09(2);
-        int A046 = c06464u.A04(8);
-        int A047 = c06464u.A04(8);
-        int A048 = c06464u.A04(4);
-        int A049 = c06464u.A04(2);
-        c06464u.A09(2);
-        int i9 = i - 10;
+    public static C1040Jz A08(C06664u c06664u, int i) {
+        int i4 = 8;
+        int A04 = c06664u.A04(8);
+        c06664u.A09(4);
+        boolean A0H = c06664u.A0H();
+        c06664u.A09(3);
+        int A042 = c06664u.A04(16);
+        int A043 = c06664u.A04(16);
+        int A044 = c06664u.A04(3);
+        int A045 = c06664u.A04(3);
+        c06664u.A09(2);
+        int A046 = c06664u.A04(8);
+        int A047 = c06664u.A04(8);
+        int A048 = c06664u.A04(4);
+        int A049 = c06664u.A04(2);
+        c06664u.A09(2);
+        int i6 = i - 10;
         SparseArray sparseArray = new SparseArray();
-        while (i9 > 0) {
-            int A0410 = c06464u.A04(16);
-            int A0411 = c06464u.A04(2);
-            int A0412 = c06464u.A04(2);
-            int A0413 = c06464u.A04(12);
-            c06464u.A09(4);
-            int A0414 = c06464u.A04(12);
-            i9 -= 6;
+        while (i6 > 0) {
+            int A0410 = c06664u.A04(16);
+            int A0411 = c06664u.A04(2);
+            int A0412 = c06664u.A04(2);
+            int A0413 = c06664u.A04(12);
+            c06664u.A09(4);
+            int A0414 = c06664u.A04(12);
+            i6 -= 6;
+            int i9 = 0;
             int i10 = 0;
-            int i11 = 0;
             if (A0411 == 1 || A0411 == 2) {
-                i10 = c06464u.A04(i6);
-                i11 = c06464u.A04(i6);
-                i9 -= 2;
+                i9 = c06664u.A04(i4);
+                i10 = c06664u.A04(i4);
+                i6 -= 2;
             }
-            sparseArray.put(A0410, new K0(A0411, A0412, A0413, A0414, i10, i11));
-            i6 = 8;
+            sparseArray.put(A0410, new K0(A0411, A0412, A0413, A0414, i9, i10));
+            i4 = 8;
         }
-        return new C1020Jz(A04, A0H, A042, A043, A044, A045, A046, A047, A048, A049, sparseArray);
+        return new C1040Jz(A04, A0H, A042, A043, A044, A045, A046, A047, A048, A049, sparseArray);
     }
 
-    public static String A09(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 22);
+    public static String A09(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 22);
         }
         return new String(copyOfRange);
     }
 
     public static void A0A() {
-        A07 = new byte[]{c.f16318c, 26, 15, 26, 91, 29, 18, 30, 23, 31, 91, 23, 30, 21, 28, 15, 19, 91, 30, 3, 24, 30, 30, 31, 8, 91, 23, 18, 22, 18, 15, 98, 80, 68, 118, 71, 84, 85, 67, 84};
+        A07 = new byte[]{c.f17105c, 26, 15, 26, 91, 29, 18, 30, 23, 31, 91, 23, 30, 21, 28, 15, 19, 91, 30, 3, 24, 30, 30, 31, 8, 91, 23, 18, 22, 18, 15, 98, 80, 68, 118, 71, 84, 85, 67, 84};
     }
 
     /* JADX WARN: Failed to parse debug info
@@ -187,54 +187,54 @@ public final class K2 {
     	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    public final List<C2350pT> A0I(byte[] bArr, int i) {
-        C06464u c06464u = new C06464u(bArr, i);
-        while (c06464u.A01() >= 48 && c06464u.A04(8) == 15) {
-            A0B(c06464u, this.A06);
+    public final List<C2370pT> A0I(byte[] bArr, int i) {
+        C06664u c06664u = new C06664u(bArr, i);
+        while (c06664u.A01() >= 48 && c06664u.A04(8) == 15) {
+            A0B(c06664u, this.A06);
         }
-        C1018Jx c1018Jx = this.A06.A01;
-        if (c1018Jx == null) {
+        C1038Jx c1038Jx = this.A06.A01;
+        if (c1038Jx == null) {
             return Collections.emptyList();
         }
-        C1016Jv c1016Jv = this.A06.A00 != null ? this.A06.A00 : this.A05;
-        if (this.A00 == null || c1016Jv.A05 + 1 != this.A00.getWidth() || c1016Jv.A00 + 1 != this.A00.getHeight()) {
-            this.A00 = Bitmap.createBitmap(c1016Jv.A05 + 1, c1016Jv.A00 + 1, Bitmap.Config.ARGB_8888);
+        C1036Jv c1036Jv = this.A06.A00 != null ? this.A06.A00 : this.A05;
+        if (this.A00 == null || c1036Jv.A05 + 1 != this.A00.getWidth() || c1036Jv.A00 + 1 != this.A00.getHeight()) {
+            this.A00 = Bitmap.createBitmap(c1036Jv.A05 + 1, c1036Jv.A00 + 1, Bitmap.Config.ARGB_8888);
             this.A01.setBitmap(this.A00);
         }
         ArrayList arrayList = new ArrayList();
-        SparseArray<C1019Jy> sparseArray = c1018Jx.A03;
-        for (int i6 = 0; i6 < sparseArray.size(); i6++) {
+        SparseArray<C1039Jy> sparseArray = c1038Jx.A03;
+        for (int i4 = 0; i4 < sparseArray.size(); i4++) {
             this.A01.save();
-            C1019Jy valueAt = sparseArray.valueAt(i6);
-            C1020Jz c1020Jz = this.A06.A08.get(sparseArray.keyAt(i6));
-            int i9 = valueAt.A00 + c1016Jv.A02;
-            int i10 = valueAt.A01 + c1016Jv.A04;
-            this.A01.clipRect(i9, i10, Math.min(c1020Jz.A08 + i9, c1016Jv.A01), Math.min(c1020Jz.A02 + i10, c1016Jv.A03));
-            C1015Ju c1015Ju = this.A06.A06.get(c1020Jz.A00);
-            if (c1015Ju == null && (c1015Ju = this.A06.A04.get(c1020Jz.A00)) == null) {
-                c1015Ju = this.A04;
+            C1039Jy valueAt = sparseArray.valueAt(i4);
+            C1040Jz c1040Jz = this.A06.A08.get(sparseArray.keyAt(i4));
+            int i6 = valueAt.A00 + c1036Jv.A02;
+            int i9 = valueAt.A01 + c1036Jv.A04;
+            this.A01.clipRect(i6, i9, Math.min(c1040Jz.A08 + i6, c1036Jv.A01), Math.min(c1040Jz.A02 + i9, c1036Jv.A03));
+            C1035Ju c1035Ju = this.A06.A06.get(c1040Jz.A00);
+            if (c1035Ju == null && (c1035Ju = this.A06.A04.get(c1040Jz.A00)) == null) {
+                c1035Ju = this.A04;
             }
-            SparseArray<K0> sparseArray2 = c1020Jz.A09;
-            for (int i11 = 0; i11 < sparseArray2.size(); i11++) {
-                int keyAt = sparseArray2.keyAt(i11);
-                K0 valueAt2 = sparseArray2.valueAt(i11);
-                C1017Jw c1017Jw = this.A06.A07.get(keyAt);
-                if (c1017Jw == null) {
-                    c1017Jw = this.A06.A05.get(keyAt);
+            SparseArray<K0> sparseArray2 = c1040Jz.A09;
+            for (int i10 = 0; i10 < sparseArray2.size(); i10++) {
+                int keyAt = sparseArray2.keyAt(i10);
+                K0 valueAt2 = sparseArray2.valueAt(i10);
+                C1037Jw c1037Jw = this.A06.A07.get(keyAt);
+                if (c1037Jw == null) {
+                    c1037Jw = this.A06.A05.get(keyAt);
                 }
-                if (c1017Jw != null) {
-                    A0C(c1017Jw, c1015Ju, c1020Jz.A01, i9 + valueAt2.A02, i10 + valueAt2.A05, c1017Jw.A01 ? null : this.A02, this.A01);
+                if (c1037Jw != null) {
+                    A0C(c1037Jw, c1035Ju, c1040Jz.A01, i6 + valueAt2.A02, i9 + valueAt2.A05, c1037Jw.A01 ? null : this.A02, this.A01);
                 }
             }
             if (A08[4].charAt(14) != '9') {
                 throw new RuntimeException();
             }
             A08[0] = "Y9Cu9eZ8R7HUBmBBCZ1DilUT";
-            if (c1020Jz.A0A) {
-                this.A03.setColor(c1020Jz.A01 == 3 ? c1015Ju.A03[c1020Jz.A07] : c1020Jz.A01 == 2 ? c1015Ju.A02[c1020Jz.A06] : c1015Ju.A01[c1020Jz.A05]);
-                this.A01.drawRect(i9, i10, c1020Jz.A08 + i9, c1020Jz.A02 + i10, this.A03);
+            if (c1040Jz.A0A) {
+                this.A03.setColor(c1040Jz.A01 == 3 ? c1035Ju.A03[c1040Jz.A07] : c1040Jz.A01 == 2 ? c1035Ju.A02[c1040Jz.A06] : c1035Ju.A01[c1040Jz.A05]);
+                this.A01.drawRect(i6, i9, c1040Jz.A08 + i6, c1040Jz.A02 + i9, this.A03);
             }
-            arrayList.add(new C06143o().A0D(Bitmap.createBitmap(this.A00, i9, i10, c1020Jz.A08, c1020Jz.A02)).A04(i9 / c1016Jv.A05).A0A(0).A07(i10 / c1016Jv.A00, 0).A09(0).A06(c1020Jz.A08 / c1016Jv.A05).A03(c1020Jz.A02 / c1016Jv.A00).A0H());
+            arrayList.add(new C06343o().A0D(Bitmap.createBitmap(this.A00, i6, i9, c1040Jz.A08, c1040Jz.A02)).A04(i6 / c1036Jv.A05).A0A(0).A07(i9 / c1036Jv.A00, 0).A09(0).A06(c1040Jz.A08 / c1036Jv.A05).A03(c1040Jz.A02 / c1036Jv.A00).A0H());
             this.A01.drawColor(0, PorterDuff.Mode.CLEAR);
             this.A01.restore();
         }
@@ -248,7 +248,7 @@ public final class K2 {
         A0B = new byte[]{0, 17, 34, 51, 68, 85, 102, 119, -120, -103, -86, -69, -52, -35, -18, -1};
     }
 
-    public K2(int i, int i6) {
+    public K2(int i, int i4) {
         this.A02.setStyle(Paint.Style.FILL_AND_STROKE);
         this.A02.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC));
         this.A02.setPathEffect(null);
@@ -257,66 +257,66 @@ public final class K2 {
         this.A03.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_OVER));
         this.A03.setPathEffect(null);
         this.A01 = new Canvas();
-        this.A05 = new C1016Jv(719, 575, 0, 719, 0, 575);
-        this.A04 = new C1015Ju(0, A0F(), A0G(), A0H());
-        this.A06 = new K1(i, i6);
+        this.A05 = new C1036Jv(719, 575, 0, 719, 0, 575);
+        this.A04 = new C1035Ju(0, A0F(), A0G(), A0H());
+        this.A06 = new K1(i, i4);
     }
 
-    public static int A00(int i, int i6, int i9, int i10) {
-        return (i << 24) | (i6 << 16) | (i9 << 8) | i10;
+    public static int A00(int i, int i4, int i6, int i9) {
+        return (i << 24) | (i4 << 16) | (i6 << 8) | i9;
     }
 
-    public static int A01(C06464u c06464u, int[] iArr, byte[] bArr, int i, int i6, Paint paint, Canvas canvas) {
-        boolean z3 = false;
+    public static int A01(C06664u c06664u, int[] iArr, byte[] bArr, int i, int i4, Paint paint, Canvas canvas) {
+        boolean z6 = false;
         do {
-            int i9 = 0;
-            int A04 = c06464u.A04(2);
+            int i6 = 0;
+            int A04 = c06664u.A04(2);
             if (A04 != 0) {
-                i9 = 1;
-            } else if (c06464u.A0H()) {
-                i9 = c06464u.A04(3) + 3;
-                A04 = c06464u.A04(2);
-            } else if (c06464u.A0H()) {
-                i9 = 1;
+                i6 = 1;
+            } else if (c06664u.A0H()) {
+                i6 = c06664u.A04(3) + 3;
+                A04 = c06664u.A04(2);
+            } else if (c06664u.A0H()) {
+                i6 = 1;
                 A04 = 0;
             } else {
-                switch (c06464u.A04(2)) {
+                switch (c06664u.A04(2)) {
                     case 0:
-                        z3 = true;
+                        z6 = true;
                         A04 = 0;
                         break;
                     case 1:
-                        i9 = 2;
+                        i6 = 2;
                         A04 = 0;
                         break;
                     case 2:
-                        int A042 = c06464u.A04(4);
+                        int A042 = c06664u.A04(4);
                         if (A08[7].charAt(9) != 'e') {
                             A08[7] = "PWQusWjmzTX1R8w37TeIuijcGSqhz46U";
-                            i9 = A042 + 12;
-                            A04 = c06464u.A04(2);
+                            i6 = A042 + 12;
+                            A04 = c06664u.A04(2);
                             break;
                         } else {
                             throw new RuntimeException();
                         }
                     case 3:
-                        i9 = c06464u.A04(8) + 29;
-                        A04 = c06464u.A04(2);
+                        i6 = c06664u.A04(8) + 29;
+                        A04 = c06664u.A04(2);
                         break;
                     default:
                         A04 = 0;
                         break;
                 }
             }
-            if (i9 != 0 && paint != null) {
+            if (i6 != 0 && paint != null) {
                 if (bArr != null) {
                     A04 = bArr[A04];
                 }
                 paint.setColor(iArr[A04]);
-                canvas.drawRect(i, i6, i + i9, i6 + 1, paint);
+                canvas.drawRect(i, i4, i + i6, i4 + 1, paint);
             }
-            i += i9;
-        } while (!z3);
+            i += i6;
+        } while (!z6);
         return i;
     }
 
@@ -341,21 +341,21 @@ public final class K2 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static int A02(C06464u c06464u, int[] iArr, byte[] bArr, int i, int i6, Paint paint, Canvas canvas) {
+    public static int A02(C06664u c06664u, int[] iArr, byte[] bArr, int i, int i4, Paint paint, Canvas canvas) {
         int A04;
-        int i9 = i;
-        boolean z3 = false;
+        int i6 = i;
+        boolean z6 = false;
         do {
             int peek = 0;
-            int A042 = c06464u.A04(4);
+            int A042 = c06664u.A04(4);
             if (A042 != 0) {
                 peek = 1;
-            } else if (c06464u.A0H()) {
-                if (!c06464u.A0H()) {
-                    peek = c06464u.A04(2) + 4;
-                    A042 = c06464u.A04(4);
+            } else if (c06664u.A0H()) {
+                if (!c06664u.A0H()) {
+                    peek = c06664u.A04(2) + 4;
+                    A042 = c06664u.A04(4);
                 } else {
-                    switch (c06464u.A04(2)) {
+                    switch (c06664u.A04(2)) {
                         case 0:
                             peek = 1;
                             A042 = 0;
@@ -365,12 +365,12 @@ public final class K2 {
                             A042 = 0;
                             break;
                         case 2:
-                            peek = c06464u.A04(4) + 9;
-                            A042 = c06464u.A04(4);
+                            peek = c06664u.A04(4) + 9;
+                            A042 = c06664u.A04(4);
                             break;
                         case 3:
-                            peek = c06464u.A04(8) + 25;
-                            A042 = c06464u.A04(4);
+                            peek = c06664u.A04(8) + 25;
+                            A042 = c06664u.A04(4);
                             break;
                         default:
                             A042 = 0;
@@ -379,18 +379,18 @@ public final class K2 {
                 }
             } else if (A08[0].length() != 24) {
                 A08[1] = "Jb849HVzYsbrcyVvorQRSzDXgxwzOwbS";
-                A04 = c06464u.A04(3);
+                A04 = c06664u.A04(3);
             } else {
                 A08[3] = "lCytI93sja9tcovqvw8Z3JcTVPPUQzad";
-                A04 = c06464u.A04(3);
+                A04 = c06664u.A04(3);
             }
             if (peek != 0 && paint != null) {
                 if (bArr != null) {
                     A042 = bArr[A042];
                 }
                 paint.setColor(iArr[A042]);
-                float f3 = i9;
-                float f9 = i6;
+                float f2 = i6;
+                float f9 = i4;
                 String[] strArr = A08;
                 if (strArr[2].charAt(19) == strArr[6].charAt(19)) {
                     throw new RuntimeException();
@@ -398,33 +398,33 @@ public final class K2 {
                 String[] strArr2 = A08;
                 strArr2[2] = "7zyAW2neZYMKALasLQ64ygc21beBnsUa";
                 strArr2[6] = "CykdyJVKnOvIvZ1RH2gJr9pO2NNGsRyJ";
-                canvas.drawRect(f3, f9, i9 + peek, i6 + 1, paint);
+                canvas.drawRect(f2, f9, i6 + peek, i4 + 1, paint);
             }
-            i9 += peek;
-        } while (!z3);
-        return i9;
+            i6 += peek;
+        } while (!z6);
+        return i6;
     }
 
-    public static int A03(C06464u c06464u, int[] iArr, byte[] bArr, int i, int i6, Paint paint, Canvas canvas) {
+    public static int A03(C06664u c06664u, int[] iArr, byte[] bArr, int i, int i4, Paint paint, Canvas canvas) {
         int runLength;
-        int i9 = i;
-        boolean z3 = false;
+        int i6 = i;
+        boolean z6 = false;
         do {
-            int A04 = c06464u.A04(8);
+            int A04 = c06664u.A04(8);
             if (A04 != 0) {
                 runLength = 1;
-            } else if (!c06464u.A0H()) {
-                runLength = c06464u.A04(7);
+            } else if (!c06664u.A0H()) {
+                runLength = c06664u.A04(7);
                 if (runLength != 0) {
                     A04 = 0;
                 } else {
-                    z3 = true;
+                    z6 = true;
                     runLength = 0;
                     A04 = 0;
                 }
             } else {
-                runLength = c06464u.A04(7);
-                A04 = c06464u.A04(8);
+                runLength = c06664u.A04(7);
+                A04 = c06664u.A04(8);
             }
             if (runLength != 0 && paint != null) {
                 if (bArr != null) {
@@ -435,27 +435,27 @@ public final class K2 {
                     throw new RuntimeException();
                 }
                 A08[3] = "mqxvpcZRbZaRJOXRSA703vBu0XWYN9Vd";
-                canvas.drawRect(i9, i6, i9 + runLength, i6 + 1, paint);
+                canvas.drawRect(i6, i4, i6 + runLength, i4 + 1, paint);
             }
-            i9 += runLength;
-        } while (!z3);
-        return i9;
+            i6 += runLength;
+        } while (!z6);
+        return i6;
     }
 
-    public static C1017Jw A06(C06464u c06464u) {
-        int A04 = c06464u.A04(16);
-        c06464u.A09(4);
-        int objectCodingMethod = c06464u.A04(2);
-        boolean A0H = c06464u.A0H();
-        c06464u.A09(1);
+    public static C1037Jw A06(C06664u c06664u) {
+        int A04 = c06664u.A04(16);
+        c06664u.A09(4);
+        int objectCodingMethod = c06664u.A04(2);
+        boolean A0H = c06664u.A0H();
+        c06664u.A09(1);
         byte[] bottomFieldData = C5C.A07;
         byte[] bArr = C5C.A07;
         if (objectCodingMethod == 1) {
-            int numberOfCodes = c06464u.A04(8);
-            c06464u.A09(numberOfCodes * 16);
+            int numberOfCodes = c06664u.A04(8);
+            c06664u.A09(numberOfCodes * 16);
         } else if (objectCodingMethod == 0) {
-            int A042 = c06464u.A04(16);
-            int topFieldDataLength = c06464u.A04(16);
+            int A042 = c06664u.A04(16);
+            int topFieldDataLength = c06664u.A04(16);
             int objectId = A08[4].charAt(14);
             if (objectId != 57) {
                 throw new RuntimeException();
@@ -463,34 +463,34 @@ public final class K2 {
             A08[7] = "H05iJqDXaQUoFjCcOPsdhLa69PYGJoEl";
             if (A042 > 0) {
                 bottomFieldData = new byte[A042];
-                c06464u.A0G(bottomFieldData, 0, A042);
+                c06664u.A0G(bottomFieldData, 0, A042);
             }
             if (topFieldDataLength > 0) {
                 bArr = new byte[topFieldDataLength];
-                c06464u.A0G(bArr, 0, topFieldDataLength);
+                c06664u.A0G(bArr, 0, topFieldDataLength);
             } else {
                 bArr = bottomFieldData;
             }
         }
-        return new C1017Jw(A04, A0H, bottomFieldData, bArr);
+        return new C1037Jw(A04, A0H, bottomFieldData, bArr);
     }
 
-    public static C1018Jx A07(C06464u c06464u, int i) {
-        int A04 = c06464u.A04(8);
-        int A042 = c06464u.A04(4);
-        int A043 = c06464u.A04(2);
-        c06464u.A09(2);
-        int i6 = i - 2;
+    public static C1038Jx A07(C06664u c06664u, int i) {
+        int A04 = c06664u.A04(8);
+        int A042 = c06664u.A04(4);
+        int A043 = c06664u.A04(2);
+        c06664u.A09(2);
+        int i4 = i - 2;
         SparseArray sparseArray = new SparseArray();
-        while (i6 > 0) {
-            int remainingLength = c06464u.A04(8);
-            c06464u.A09(8);
-            int version = c06464u.A04(16);
-            int timeoutSecs = c06464u.A04(16);
-            i6 -= 6;
-            sparseArray.put(remainingLength, new C1019Jy(version, timeoutSecs));
+        while (i4 > 0) {
+            int remainingLength = c06664u.A04(8);
+            c06664u.A09(8);
+            int version = c06664u.A04(16);
+            int timeoutSecs = c06664u.A04(16);
+            i4 -= 6;
+            sparseArray.put(remainingLength, new C1039Jy(version, timeoutSecs));
         }
-        return new C1018Jx(A04, A042, A043, sparseArray);
+        return new C1038Jx(A04, A042, A043, sparseArray);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:34:0x00d5, code lost:
@@ -566,17 +566,17 @@ public final class K2 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static void A0B(C06464u c06464u, K1 k12) {
-        int pageId = c06464u.A04(8);
-        int A04 = c06464u.A04(16);
-        int A042 = c06464u.A04(16);
-        int dataFieldLimit = c06464u.A02() + A042;
+    public static void A0B(C06664u c06664u, K1 k12) {
+        int pageId = c06664u.A04(8);
+        int A04 = c06664u.A04(16);
+        int A042 = c06664u.A04(16);
+        int dataFieldLimit = c06664u.A02() + A042;
         int dataFieldLength = A042 * 8;
-        int segmentType = c06464u.A01();
+        int segmentType = c06664u.A01();
         if (dataFieldLength > segmentType) {
-            AbstractC06324g.A07(A09(31, 9, 48), A09(0, 31, a.f21756z));
-            int segmentType2 = c06464u.A01();
-            c06464u.A09(segmentType2);
+            AbstractC06524g.A07(A09(31, 9, 48), A09(0, 31, a.f22543z));
+            int segmentType2 = c06664u.A01();
+            c06664u.A09(segmentType2);
             return;
         }
         switch (pageId) {
@@ -593,11 +593,11 @@ public final class K2 {
                     break;
                 }
             case 17:
-                C1018Jx c1018Jx = k12.A01;
+                C1038Jx c1038Jx = k12.A01;
                 int segmentType3 = k12.A03;
-                if (A04 == segmentType3 && c1018Jx != null) {
-                    C1020Jz A082 = A08(c06464u, A042);
-                    int i6 = c1018Jx.A00;
+                if (A04 == segmentType3 && c1038Jx != null) {
+                    C1040Jz A082 = A08(c06664u, A042);
+                    int i4 = c1038Jx.A00;
                     int dataFieldLength3 = A08[4].charAt(14);
                     if (dataFieldLength3 == 57) {
                         A08[0] = "ijH7h91dhg9QFNoxZPsrwXGu";
@@ -613,16 +613,16 @@ public final class K2 {
             case 18:
                 int segmentType4 = k12.A03;
                 if (A04 == segmentType4) {
-                    C1015Ju A043 = A04(c06464u, A042);
-                    SparseArray<C1015Ju> sparseArray = k12.A06;
+                    C1035Ju A043 = A04(c06664u, A042);
+                    SparseArray<C1035Ju> sparseArray = k12.A06;
                     int segmentType5 = A043.A00;
                     sparseArray.put(segmentType5, A043);
                     break;
                 } else {
                     int segmentType6 = k12.A02;
                     if (A04 == segmentType6) {
-                        C1015Ju A044 = A04(c06464u, A042);
-                        SparseArray<C1015Ju> sparseArray2 = k12.A04;
+                        C1035Ju A044 = A04(c06664u, A042);
+                        SparseArray<C1035Ju> sparseArray2 = k12.A04;
                         int segmentType7 = A044.A00;
                         sparseArray2.put(segmentType7, A044);
                         break;
@@ -632,21 +632,21 @@ public final class K2 {
             case 19:
                 int segmentType8 = k12.A03;
                 if (A04 == segmentType8) {
-                    C1017Jw A06 = A06(c06464u);
-                    SparseArray<C1017Jw> sparseArray3 = k12.A07;
+                    C1037Jw A06 = A06(c06664u);
+                    SparseArray<C1037Jw> sparseArray3 = k12.A07;
                     int segmentType9 = A06.A00;
                     sparseArray3.put(segmentType9, A06);
                     break;
                 } else {
                     int segmentType10 = k12.A02;
                     if (A04 == segmentType10) {
-                        C1017Jw A062 = A06(c06464u);
-                        SparseArray<C1017Jw> sparseArray4 = k12.A05;
-                        int i9 = A062.A00;
+                        C1037Jw A062 = A06(c06664u);
+                        SparseArray<C1037Jw> sparseArray4 = k12.A05;
+                        int i6 = A062.A00;
                         int dataFieldLength4 = A08[0].length();
                         if (dataFieldLength4 == 24) {
                             A08[3] = "cNAVN6CCWtYeoU1m0uPi3L7jVIjjgAwx";
-                            sparseArray4.put(i9, A062);
+                            sparseArray4.put(i6, A062);
                             break;
                         } else {
                             throw new RuntimeException();
@@ -657,39 +657,39 @@ public final class K2 {
             case 20:
                 int segmentType11 = k12.A03;
                 if (A04 == segmentType11) {
-                    k12.A00 = A05(c06464u);
+                    k12.A00 = A05(c06664u);
                     break;
                 }
                 break;
         }
-        int segmentType12 = c06464u.A02();
-        c06464u.A0A(dataFieldLimit - segmentType12);
+        int segmentType12 = c06664u.A02();
+        c06664u.A0A(dataFieldLimit - segmentType12);
     }
 
-    public static void A0C(C1017Jw c1017Jw, C1015Ju c1015Ju, int i, int i6, int i9, Paint paint, Canvas canvas) {
+    public static void A0C(C1037Jw c1037Jw, C1035Ju c1035Ju, int i, int i4, int i6, Paint paint, Canvas canvas) {
         int[] iArr;
         if (i == 3) {
-            iArr = c1015Ju.A03;
+            iArr = c1035Ju.A03;
         } else if (i == 2) {
-            iArr = c1015Ju.A02;
+            iArr = c1035Ju.A02;
         } else {
-            iArr = c1015Ju.A01;
+            iArr = c1035Ju.A01;
         }
-        A0D(c1017Jw.A03, iArr, i, i6, i9, paint, canvas);
-        A0D(c1017Jw.A02, iArr, i, i6, i9 + 1, paint, canvas);
+        A0D(c1037Jw.A03, iArr, i, i4, i6, paint, canvas);
+        A0D(c1037Jw.A02, iArr, i, i4, i6 + 1, paint, canvas);
     }
 
-    public static void A0D(byte[] bArr, int[] iArr, int i, int i6, int i9, Paint paint, Canvas canvas) {
+    public static void A0D(byte[] bArr, int[] iArr, int i, int i4, int i6, Paint paint, Canvas canvas) {
         byte[] bArr2;
         byte[] bArr3;
-        int i10 = i9;
-        C06464u c06464u = new C06464u(bArr);
+        int i9 = i6;
+        C06664u c06664u = new C06664u(bArr);
         byte[] clutMapTable2To8 = null;
         byte[] clutMapTable2To4 = null;
         byte[] bArr4 = null;
-        int line = i6;
-        while (c06464u.A01() != 0) {
-            switch (c06464u.A04(8)) {
+        int line = i4;
+        while (c06664u.A01() != 0) {
+            switch (c06664u.A04(8)) {
                 case 16:
                     if (i == 3) {
                         bArr2 = clutMapTable2To4 == null ? A0A : clutMapTable2To4;
@@ -698,8 +698,8 @@ public final class K2 {
                     } else {
                         bArr2 = null;
                     }
-                    line = A01(c06464u, iArr, bArr2, line, i10, paint, canvas);
-                    c06464u.A06();
+                    line = A01(c06664u, iArr, bArr2, line, i9, paint, canvas);
+                    c06664u.A06();
                     break;
                 case 17:
                     if (i == 3) {
@@ -707,33 +707,33 @@ public final class K2 {
                     } else {
                         bArr3 = null;
                     }
-                    line = A02(c06464u, iArr, bArr3, line, i10, paint, canvas);
-                    c06464u.A06();
+                    line = A02(c06664u, iArr, bArr3, line, i9, paint, canvas);
+                    c06664u.A06();
                     break;
                 case 18:
-                    line = A03(c06464u, iArr, null, line, i10, paint, canvas);
+                    line = A03(c06664u, iArr, null, line, i9, paint, canvas);
                     break;
                 case 32:
-                    clutMapTable2To8 = A0E(4, 4, c06464u);
+                    clutMapTable2To8 = A0E(4, 4, c06664u);
                     break;
                 case 33:
-                    clutMapTable2To4 = A0E(4, 8, c06464u);
+                    clutMapTable2To4 = A0E(4, 8, c06664u);
                     break;
                 case 34:
-                    bArr4 = A0E(16, 8, c06464u);
+                    bArr4 = A0E(16, 8, c06664u);
                     break;
                 case 240:
-                    i10 += 2;
-                    line = i6;
+                    i9 += 2;
+                    line = i4;
                     break;
             }
         }
     }
 
-    public static byte[] A0E(int i, int i6, C06464u c06464u) {
+    public static byte[] A0E(int i, int i4, C06664u c06664u) {
         byte[] bArr = new byte[i];
-        for (int i9 = 0; i9 < i; i9++) {
-            bArr[i9] = (byte) c06464u.A04(i6);
+        for (int i6 = 0; i6 < i; i6++) {
+            bArr[i6] = (byte) c06664u.A04(i4);
         }
         return bArr;
     }
@@ -757,22 +757,22 @@ public final class K2 {
         iArr[0] = 0;
         for (int i = 1; i < iArr.length; i++) {
             if (i < 8) {
-                int i6 = (i & 1) != 0 ? p.f8473b : 0;
-                iArr[i] = A00(p.f8473b, i6, (i & 2) != 0 ? p.f8473b : 0, (i & 4) != 0 ? p.f8473b : 0);
+                int i4 = (i & 1) != 0 ? p.f9259b : 0;
+                iArr[i] = A00(p.f9259b, i4, (i & 2) != 0 ? p.f9259b : 0, (i & 4) != 0 ? p.f9259b : 0);
             } else {
-                int i9 = i & 1;
-                int i10 = a.f21728R;
-                int i11 = i9 != 0 ? a.f21728R : 0;
-                int i12 = (i & 2) != 0 ? a.f21728R : 0;
-                int i13 = i & 4;
+                int i6 = i & 1;
+                int i9 = a.f22515R;
+                int i10 = i6 != 0 ? a.f22515R : 0;
+                int i11 = (i & 2) != 0 ? a.f22515R : 0;
+                int i12 = i & 4;
                 if (A08[4].charAt(14) != '9') {
                     throw new RuntimeException();
                 }
                 A08[3] = "UrHD9QQTZDyJKzMppguU3aPtXoZ0irSR";
-                if (i13 == 0) {
-                    i10 = 0;
+                if (i12 == 0) {
+                    i9 = 0;
                 }
-                iArr[i] = A00(p.f8473b, i11, i12, i10);
+                iArr[i] = A00(p.f9259b, i10, i11, i9);
             }
         }
         return iArr;
@@ -805,45 +805,45 @@ public final class K2 {
         int i;
         int[] iArr = new int[256];
         iArr[0] = 0;
-        for (int i6 = 0; i6 < iArr.length; i6++) {
-            int i9 = p.f8473b;
-            if (i6 < 8) {
-                int i10 = (i6 & 1) != 0 ? p.f8473b : 0;
-                int i11 = (i6 & 2) != 0 ? p.f8473b : 0;
-                if ((i6 & 4) == 0) {
-                    i9 = 0;
+        for (int i4 = 0; i4 < iArr.length; i4++) {
+            int i6 = p.f9259b;
+            if (i4 < 8) {
+                int i9 = (i4 & 1) != 0 ? p.f9259b : 0;
+                int i10 = (i4 & 2) != 0 ? p.f9259b : 0;
+                if ((i4 & 4) == 0) {
+                    i6 = 0;
                 }
-                iArr[i6] = A00(63, i10, i11, i9);
+                iArr[i4] = A00(63, i9, i10, i6);
             } else {
-                switch (i6 & 136) {
+                switch (i4 & 136) {
                     case 0:
-                        int i12 = (i6 & 1) != 0 ? 85 : 0;
-                        iArr[i6] = A00(p.f8473b, i12 + ((i6 & 16) != 0 ? 170 : 0), ((i6 & 2) != 0 ? 85 : 0) + ((i6 & 32) != 0 ? 170 : 0), ((i6 & 4) == 0 ? 0 : 85) + ((i6 & 64) == 0 ? 0 : 170));
+                        int i11 = (i4 & 1) != 0 ? 85 : 0;
+                        iArr[i4] = A00(p.f9259b, i11 + ((i4 & 16) != 0 ? 170 : 0), ((i4 & 2) != 0 ? 85 : 0) + ((i4 & 32) != 0 ? 170 : 0), ((i4 & 4) == 0 ? 0 : 85) + ((i4 & 64) == 0 ? 0 : 170));
                         break;
                     case 8:
-                        int i13 = ((i6 & 1) != 0 ? 85 : 0) + ((i6 & 16) != 0 ? 170 : 0);
-                        int i14 = i6 & 2;
+                        int i12 = ((i4 & 1) != 0 ? 85 : 0) + ((i4 & 16) != 0 ? 170 : 0);
+                        int i13 = i4 & 2;
                         if (A08[4].charAt(14) == '9') {
                             A08[0] = "s2RCWxPvpwpJ3GpvuxZigl51";
                             break;
                         }
-                        iArr[i6] = A00(a.f21728R, i13, i + ((i6 & 32) != 0 ? 170 : 0), ((i6 & 4) == 0 ? 0 : 85) + ((i6 & 64) == 0 ? 0 : 170));
+                        iArr[i4] = A00(a.f22515R, i12, i + ((i4 & 32) != 0 ? 170 : 0), ((i4 & 4) == 0 ? 0 : 85) + ((i4 & 64) == 0 ? 0 : 170));
                         break;
                     case 128:
-                        int i15 = ((i6 & 1) != 0 ? 43 : 0) + a.f21728R + ((i6 & 16) != 0 ? 85 : 0);
-                        int i16 = ((i6 & 2) != 0 ? 43 : 0) + a.f21728R + ((i6 & 32) != 0 ? 85 : 0);
-                        int i17 = ((i6 & 4) == 0 ? 0 : 43) + a.f21728R;
-                        int i18 = i6 & 64;
+                        int i14 = ((i4 & 1) != 0 ? 43 : 0) + a.f22515R + ((i4 & 16) != 0 ? 85 : 0);
+                        int i15 = ((i4 & 2) != 0 ? 43 : 0) + a.f22515R + ((i4 & 32) != 0 ? 85 : 0);
+                        int i16 = ((i4 & 4) == 0 ? 0 : 43) + a.f22515R;
+                        int i17 = i4 & 64;
                         if (A08[7].charAt(9) != 'e') {
                             A08[3] = "e63e4cS46GPtzp0vrxC333RpnvVdNaZZ";
-                            iArr[i6] = A00(p.f8473b, i15, i16, i17 + (i18 == 0 ? 0 : 85));
+                            iArr[i4] = A00(p.f9259b, i14, i15, i16 + (i17 == 0 ? 0 : 85));
                             break;
                         } else {
                             throw new RuntimeException();
                         }
                     case 136:
-                        int i19 = (i6 & 1) != 0 ? 43 : 0;
-                        iArr[i6] = A00(p.f8473b, i19 + ((i6 & 16) != 0 ? 85 : 0), ((i6 & 2) != 0 ? 43 : 0) + ((i6 & 32) != 0 ? 85 : 0), ((i6 & 4) == 0 ? 0 : 43) + ((i6 & 64) == 0 ? 0 : 85));
+                        int i18 = (i4 & 1) != 0 ? 43 : 0;
+                        iArr[i4] = A00(p.f9259b, i18 + ((i4 & 16) != 0 ? 85 : 0), ((i4 & 2) != 0 ? 43 : 0) + ((i4 & 32) != 0 ? 85 : 0), ((i4 & 4) == 0 ? 0 : 43) + ((i4 & 64) == 0 ? 0 : 85));
                         break;
                 }
             }

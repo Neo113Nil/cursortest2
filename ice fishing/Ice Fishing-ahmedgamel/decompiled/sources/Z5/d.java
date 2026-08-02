@@ -146,12 +146,12 @@ public final class d extends i {
         i.setStringProperty$default(this, "deviceOS", value, null, false, 12, null);
     }
 
-    public final void setDisabledInternally(boolean z3) {
-        i.setBooleanProperty$default(this, "isDisabledInternally", z3, null, false, 12, null);
+    public final void setDisabledInternally(boolean z6) {
+        i.setBooleanProperty$default(this, "isDisabledInternally", z6, null, false, 12, null);
     }
 
-    public final void setOptedIn(boolean z3) {
-        i.setBooleanProperty$default(this, "optedIn", z3, null, false, 12, null);
+    public final void setOptedIn(boolean z6) {
+        i.setBooleanProperty$default(this, "optedIn", z6, null, false, 12, null);
     }
 
     public final void setSdk(String value) {

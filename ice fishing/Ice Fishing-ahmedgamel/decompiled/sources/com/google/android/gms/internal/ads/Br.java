@@ -5,191 +5,199 @@ import android.os.Bundle;
 import android.os.RemoteException;
 import android.widget.FrameLayout;
 import java.util.Collections;
-import p2.C4835j;
-import q2.InterfaceC4868A;
-import q2.InterfaceC4871a0;
-import q2.InterfaceC4904r0;
-import q2.InterfaceC4909u;
-import q2.InterfaceC4914w0;
-import q2.InterfaceC4915x;
-import v2.C5110a;
+import r2.C4906k;
+import s2.InterfaceC4917A;
+import s2.InterfaceC4920a0;
+import s2.InterfaceC4953r0;
+import s2.InterfaceC4958u;
+import s2.InterfaceC4963w0;
+import s2.InterfaceC4964x;
+import x2.C5189a;
 
 /* loaded from: classes2.dex */
-public final class Br extends q2.J implements InterfaceC2843Wk {
+public final class Br extends s2.J implements InterfaceC2866Wk {
 
     /* renamed from: A, reason: collision with root package name */
-    public final C3153eo f23972A;
+    public final C3230fo f24735A;
 
     /* renamed from: B, reason: collision with root package name */
-    public C3524lj f23973B;
+    public C3547lj f24736B;
 
     /* renamed from: n, reason: collision with root package name */
-    public final Context f23974n;
+    public final Context f24737n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final C3696ot f23975u;
+    public final C3719ot f24738u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final String f23976v;
+    public final String f24739v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final Dr f23977w;
+    public final Dr f24740w;
 
     /* renamed from: x, reason: collision with root package name */
-    public q2.f1 f23978x;
+    public s2.f1 f24741x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final C2999bu f23979y;
+    public final C3022bu f24742y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final C5110a f23980z;
+    public final C5189a f24743z;
 
-    public Br(Context context, q2.f1 f1Var, String str, C3696ot c3696ot, Dr dr, C5110a c5110a, C3153eo c3153eo) {
-        this.f23974n = context;
-        this.f23975u = c3696ot;
-        this.f23978x = f1Var;
-        this.f23976v = str;
-        this.f23977w = dr;
-        this.f23979y = c3696ot.f32971k;
-        this.f23980z = c5110a;
-        this.f23972A = c3153eo;
-        c3696ot.f32969h.H1(this, c3696ot.f32963b);
+    public Br(Context context, s2.f1 f1Var, String str, C3719ot c3719ot, Dr dr, C5189a c5189a, C3230fo c3230fo) {
+        this.f24737n = context;
+        this.f24738u = c3719ot;
+        this.f24741x = f1Var;
+        this.f24739v = str;
+        this.f24740w = dr;
+        this.f24742y = c3719ot.f33757k;
+        this.f24743z = c5189a;
+        this.f24735A = c3230fo;
+        c3719ot.f33755h.I1(this, c3719ot.f33749b);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:12:0x0041 A[Catch: all -> 0x0036, TRY_LEAVE, TryCatch #0 {all -> 0x0036, blocks: (B:3:0x0001, B:5:0x000f, B:7:0x0021, B:10:0x003d, B:12:0x0041, B:19:0x0038), top: B:2:0x0001 }] */
     /* JADX WARN: Removed duplicated region for block: B:17:0x0052 A[DONT_GENERATE] */
-    @Override // q2.K
+    @Override // s2.K
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final synchronized void A() {
-        C3524lj c3524lj;
+        C3547lj c3547lj;
         try {
-            if (((Boolean) AbstractC2684Na.f26497e.r()).booleanValue()) {
-                C3301ha c3301ha = AbstractC3569ma.zc;
-                q2.r rVar = q2.r.f40207e;
-                if (((Boolean) rVar.f40210c.a(c3301ha)).booleanValue()) {
-                    if (this.f23980z.f41393v < ((Integer) rVar.f40210c.a(AbstractC3569ma.Ec)).intValue()) {
+            if (((Boolean) AbstractC2704Na.f27280e.r()).booleanValue()) {
+                C3324ha c3324ha = AbstractC3592ma.zc;
+                s2.r rVar = s2.r.f40506e;
+                if (((Boolean) rVar.f40509c.a(c3324ha)).booleanValue()) {
+                    if (this.f24743z.f41847v < ((Integer) rVar.f40509c.a(AbstractC3592ma.Ec)).intValue()) {
                     }
-                    c3524lj = this.f23973B;
-                    if (c3524lj == null) {
-                        C2558Fk c2558Fk = c3524lj.f24835c;
-                        c2558Fk.getClass();
-                        c2558Fk.M1(new C3193fa(null, false));
+                    c3547lj = this.f24736B;
+                    if (c3547lj == null) {
+                        C2578Fk c2578Fk = c3547lj.f25624c;
+                        c2578Fk.getClass();
+                        c2578Fk.M1(new C3216fa(null, false));
                         return;
                     }
                     return;
                 }
             }
-            P2.w.d("destroy must be called on the main UI thread.");
-            c3524lj = this.f23973B;
-            if (c3524lj == null) {
+            R2.w.d("destroy must be called on the main UI thread.");
+            c3547lj = this.f24736B;
+            if (c3547lj == null) {
             }
         } catch (Throwable th) {
             throw th;
         }
     }
 
-    @Override // q2.K
-    public final synchronized void A0(long j6) {
-        C3364ik c3364ik;
-        this.f23979y.f29362u.set(j6);
-        C3524lj c3524lj = this.f23973B;
-        if (c3524lj == null || (c3364ik = c3524lj.f24841j) == null) {
-            return;
-        }
-        c3364ik.a(j6);
+    @Override // s2.K
+    public final InterfaceC4964x B() {
+        return this.f24740w.a();
     }
 
-    @Override // q2.K
-    public final InterfaceC4915x B() {
-        return this.f23977w.c();
+    @Override // s2.K
+    public final synchronized void B0(s2.Y y7) {
+        R2.w.d("setCorrelationIdProvider must be called on the main UI thread");
+        this.f24742y.f30153x = y7;
     }
 
-    @Override // q2.K
-    public final void B3(InterfaceC4909u interfaceC4909u) {
-        if (V3()) {
-            P2.w.d("setAdListener must be called on the main UI thread.");
-        }
-        Fr fr = this.f23975u.f32966e;
-        synchronized (fr) {
-            fr.f24853n = interfaceC4909u;
-        }
-    }
-
-    @Override // q2.K
-    public final synchronized InterfaceC4914w0 C() {
-        C3524lj c3524lj;
-        if (((Boolean) q2.r.f40207e.f40210c.a(AbstractC3569ma.f32021F7)).booleanValue() && (c3524lj = this.f23973B) != null) {
-            return c3524lj.f24838f;
+    @Override // s2.K
+    public final synchronized InterfaceC4963w0 C() {
+        C3547lj c3547lj;
+        if (((Boolean) s2.r.f40506e.f40509c.a(AbstractC3592ma.f32802F7)).booleanValue() && (c3547lj = this.f24736B) != null) {
+            return c3547lj.f25627f;
         }
         return null;
     }
 
-    @Override // q2.K
-    public final synchronized boolean M() {
-        return this.f23975u.b();
+    @Override // s2.K
+    public final synchronized boolean D3(s2.c1 c1Var) {
+        s2.f1 f1Var = this.f24741x;
+        synchronized (this) {
+            C3022bu c3022bu = this.f24742y;
+            c3022bu.f30132b = f1Var;
+            c3022bu.f30146q = this.f24741x.f40438G;
+        }
+        return U3(c1Var);
+        return U3(c1Var);
     }
 
-    @Override // q2.K
+    @Override // s2.K
+    public final synchronized void F2(s2.f1 f1Var) {
+        InterfaceC4084vh interfaceC4084vh;
+        R2.w.d("setAdSize must be called on the main UI thread.");
+        this.f24742y.f30132b = f1Var;
+        this.f24741x = f1Var;
+        C3547lj c3547lj = this.f24736B;
+        if (c3547lj != null) {
+            FrameLayout frameLayout = this.f24738u.f33753f;
+            if (frameLayout != null && (interfaceC4084vh = c3547lj.f32606n) != null) {
+                interfaceC4084vh.f1(A3.r.a(f1Var));
+                frameLayout.setMinimumHeight(f1Var.f40443v);
+                frameLayout.setMinimumWidth(f1Var.f40446y);
+                c3547lj.f32613u = f1Var;
+            }
+        }
+    }
+
+    @Override // s2.K
+    public final void H1(InterfaceC4964x interfaceC4964x) {
+        if (V3()) {
+            R2.w.d("setAdListener must be called on the main UI thread.");
+        }
+        this.f24740w.f25237n.set(interfaceC4964x);
+    }
+
+    @Override // s2.K
+    public final synchronized boolean L() {
+        return this.f24738u.b();
+    }
+
+    @Override // s2.K
+    public final void M2(String str) {
+    }
+
+    @Override // s2.K
+    public final void M3(InterfaceC4953r0 interfaceC4953r0) {
+        if (V3()) {
+            R2.w.d("setPaidEventListener must be called on the main UI thread.");
+        }
+        try {
+            if (!interfaceC4953r0.e()) {
+                this.f24735A.b();
+            }
+        } catch (RemoteException e9) {
+            int i = w2.z.f41712b;
+            x2.i.b("Error in making CSI ping for reporting paid event callback", e9);
+        }
+        this.f24740w.f25239v.set(interfaceC4953r0);
+    }
+
+    @Override // s2.K
     public final synchronized String N() {
-        return this.f23976v;
+        return this.f24739v;
     }
 
-    @Override // q2.K
-    public final void O2(String str) {
-    }
-
-    @Override // q2.K
+    @Override // s2.K
     public final void P3(P8 p82) {
     }
 
-    @Override // q2.K
-    public final synchronized void U0(q2.Z0 z02) {
+    public final synchronized boolean U3(s2.c1 c1Var) {
         try {
             if (V3()) {
-                P2.w.d("setVideoOptions must be called on the main UI thread.");
+                R2.w.d("loadAd must be called on the main UI thread.");
             }
-            this.f23979y.f29346d = z02;
-        } catch (Throwable th) {
-            throw th;
-        }
-    }
-
-    @Override // q2.K
-    public final synchronized void U1(q2.f1 f1Var) {
-        InterfaceC4061vh interfaceC4061vh;
-        P2.w.d("setAdSize must be called on the main UI thread.");
-        this.f23979y.f29344b = f1Var;
-        this.f23978x = f1Var;
-        C3524lj c3524lj = this.f23973B;
-        if (c3524lj != null) {
-            FrameLayout frameLayout = this.f23975u.f32967f;
-            if (frameLayout != null && (interfaceC4061vh = c3524lj.f31828n) != null) {
-                interfaceC4061vh.o0(X2.b.a(f1Var));
-                frameLayout.setMinimumHeight(f1Var.f40144v);
-                frameLayout.setMinimumWidth(f1Var.f40147y);
-                c3524lj.f31835u = f1Var;
+            w2.D d9 = C4906k.f40186C.f40191c;
+            Context context = this.f24737n;
+            if (!w2.D.h(context) || c1Var.f40406L != null) {
+                AbstractC2991bG.r(context, c1Var.f40422y);
+                return this.f24738u.a(c1Var, this.f24739v, null, new Ux(this));
             }
-        }
-    }
-
-    public final synchronized boolean U3(q2.c1 c1Var) {
-        try {
-            if (V3()) {
-                P2.w.d("loadAd must be called on the main UI thread.");
-            }
-            u2.D d2 = C4835j.f39733C.f39738c;
-            Context context = this.f23974n;
-            if (!u2.D.h(context) || c1Var.f40107L != null) {
-                AbstractC2968bG.r(context, c1Var.f40123y);
-                return this.f23975u.a(c1Var, this.f23976v, null, new Ux(this));
-            }
-            int i = u2.z.f41322b;
-            v2.i.c("Failed to load the ad because app ID is missing.");
-            Dr dr = this.f23977w;
+            int i = w2.z.f41712b;
+            x2.i.c("Failed to load the ad because app ID is missing.");
+            Dr dr = this.f24740w;
             if (dr != null) {
-                dr.v(SK.F(4, null, null));
+                dr.I(SK.F(4, null, null));
             }
             return false;
         } catch (Throwable th) {
@@ -197,305 +205,297 @@ public final class Br extends q2.J implements InterfaceC2843Wk {
         }
     }
 
-    @Override // q2.K
-    public final synchronized q2.A0 V() {
-        P2.w.d("getVideoController must be called from the main thread.");
-        C3524lj c3524lj = this.f23973B;
-        q2.A0 a02 = null;
-        if (c3524lj == null) {
+    @Override // s2.K
+    public final synchronized s2.A0 V() {
+        R2.w.d("getVideoController must be called from the main thread.");
+        C3547lj c3547lj = this.f24736B;
+        s2.A0 a02 = null;
+        if (c3547lj == null) {
             return null;
         }
         try {
-            a02 = c3524lj.f31830p.mo13c();
-        } catch (C3267gu unused) {
+            a02 = c3547lj.f32608p.mo12c();
+        } catch (C3290gu unused) {
         }
         return a02;
     }
 
     public final boolean V3() {
-        boolean z3;
-        if (((Boolean) AbstractC2684Na.f26498f.r()).booleanValue()) {
-            if (((Boolean) q2.r.f40207e.f40210c.a(AbstractC3569ma.Cc)).booleanValue()) {
-                z3 = true;
-                return this.f23980z.f41393v >= ((Integer) q2.r.f40207e.f40210c.a(AbstractC3569ma.Dc)).intValue() || !z3;
+        boolean z6;
+        if (((Boolean) AbstractC2704Na.f27281f.r()).booleanValue()) {
+            if (((Boolean) s2.r.f40506e.f40509c.a(AbstractC3592ma.Cc)).booleanValue()) {
+                z6 = true;
+                return this.f24743z.f41847v >= ((Integer) s2.r.f40506e.f40509c.a(AbstractC3592ma.Dc)).intValue() || !z6;
             }
         }
-        z3 = false;
-        if (this.f23980z.f41393v >= ((Integer) q2.r.f40207e.f40210c.a(AbstractC3569ma.Dc)).intValue()) {
+        z6 = false;
+        if (this.f24743z.f41847v >= ((Integer) s2.r.f40506e.f40509c.a(AbstractC3592ma.Dc)).intValue()) {
         }
     }
 
-    @Override // q2.K
-    public final void Z2(InterfaceC4915x interfaceC4915x) {
+    @Override // s2.K
+    public final Y2.a c() {
         if (V3()) {
-            P2.w.d("setAdListener must be called on the main UI thread.");
+            R2.w.d("getAdFrame must be called on the main UI thread.");
         }
-        this.f23977w.f24476n.set(interfaceC4915x);
+        return new Y2.b(this.f24738u.f33753f);
     }
 
-    @Override // q2.K
-    public final W2.a c() {
-        if (V3()) {
-            P2.w.d("getAdFrame must be called on the main UI thread.");
+    @Override // s2.K
+    public final synchronized void c2(boolean z6) {
+        try {
+            if (V3()) {
+                R2.w.d("setManualImpressionsEnabled must be called from the main thread.");
+            }
+            this.f24742y.f30135e = z6;
+        } catch (Throwable th) {
+            throw th;
         }
-        return new W2.b(this.f23975u.f32967f);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:12:0x0041 A[Catch: all -> 0x0036, TRY_LEAVE, TryCatch #0 {all -> 0x0036, blocks: (B:3:0x0001, B:5:0x000f, B:7:0x0021, B:10:0x003d, B:12:0x0041, B:19:0x0038), top: B:2:0x0001 }] */
     /* JADX WARN: Removed duplicated region for block: B:17:0x0052 A[DONT_GENERATE] */
-    @Override // q2.K
+    @Override // s2.K
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final synchronized void d() {
-        C3524lj c3524lj;
+        C3547lj c3547lj;
         try {
-            if (((Boolean) AbstractC2684Na.f26499g.r()).booleanValue()) {
-                C3301ha c3301ha = AbstractC3569ma.Ac;
-                q2.r rVar = q2.r.f40207e;
-                if (((Boolean) rVar.f40210c.a(c3301ha)).booleanValue()) {
-                    if (this.f23980z.f41393v < ((Integer) rVar.f40210c.a(AbstractC3569ma.Ec)).intValue()) {
+            if (((Boolean) AbstractC2704Na.f27282g.r()).booleanValue()) {
+                C3324ha c3324ha = AbstractC3592ma.Ac;
+                s2.r rVar = s2.r.f40506e;
+                if (((Boolean) rVar.f40509c.a(c3324ha)).booleanValue()) {
+                    if (this.f24743z.f41847v < ((Integer) rVar.f40509c.a(AbstractC3592ma.Ec)).intValue()) {
                     }
-                    c3524lj = this.f23973B;
-                    if (c3524lj == null) {
-                        C2558Fk c2558Fk = c3524lj.f24835c;
-                        c2558Fk.getClass();
-                        c2558Fk.M1(new C3515la(null, 1));
+                    c3547lj = this.f24736B;
+                    if (c3547lj == null) {
+                        C2578Fk c2578Fk = c3547lj.f25624c;
+                        c2578Fk.getClass();
+                        c2578Fk.M1(new C3538la(null, 1));
                         return;
                     }
                     return;
                 }
             }
-            P2.w.d("pause must be called on the main UI thread.");
-            c3524lj = this.f23973B;
-            if (c3524lj == null) {
+            R2.w.d("pause must be called on the main UI thread.");
+            c3547lj = this.f24736B;
+            if (c3547lj == null) {
             }
         } catch (Throwable th) {
             throw th;
         }
     }
 
-    @Override // q2.K
-    public final synchronized boolean d3(q2.c1 c1Var) {
-        q2.f1 f1Var = this.f23978x;
-        synchronized (this) {
-            C2999bu c2999bu = this.f23979y;
-            c2999bu.f29344b = f1Var;
-            c2999bu.f29358q = this.f23978x.f40139G;
-        }
-        return U3(c1Var);
-        return U3(c1Var);
+    @Override // s2.K
+    public final void d2() {
+        R2.w.d("setAdMetadataListener must be called on the main UI thread.");
     }
 
     /* JADX WARN: Removed duplicated region for block: B:12:0x0041 A[Catch: all -> 0x0036, TRY_LEAVE, TryCatch #0 {all -> 0x0036, blocks: (B:3:0x0001, B:5:0x000f, B:7:0x0021, B:10:0x003d, B:12:0x0041, B:19:0x0038), top: B:2:0x0001 }] */
     /* JADX WARN: Removed duplicated region for block: B:17:0x0052 A[DONT_GENERATE] */
-    @Override // q2.K
+    @Override // s2.K
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final synchronized void e() {
-        C3524lj c3524lj;
+        C3547lj c3547lj;
         try {
-            if (((Boolean) AbstractC2684Na.f26500h.r()).booleanValue()) {
-                C3301ha c3301ha = AbstractC3569ma.yc;
-                q2.r rVar = q2.r.f40207e;
-                if (((Boolean) rVar.f40210c.a(c3301ha)).booleanValue()) {
-                    if (this.f23980z.f41393v < ((Integer) rVar.f40210c.a(AbstractC3569ma.Ec)).intValue()) {
+            if (((Boolean) AbstractC2704Na.f27283h.r()).booleanValue()) {
+                C3324ha c3324ha = AbstractC3592ma.yc;
+                s2.r rVar = s2.r.f40506e;
+                if (((Boolean) rVar.f40509c.a(c3324ha)).booleanValue()) {
+                    if (this.f24743z.f41847v < ((Integer) rVar.f40509c.a(AbstractC3592ma.Ec)).intValue()) {
                     }
-                    c3524lj = this.f23973B;
-                    if (c3524lj == null) {
-                        C2558Fk c2558Fk = c3524lj.f24835c;
-                        c2558Fk.getClass();
-                        c2558Fk.M1(new C2552Fe(null, 1));
+                    c3547lj = this.f24736B;
+                    if (c3547lj == null) {
+                        C2578Fk c2578Fk = c3547lj.f25624c;
+                        c2578Fk.getClass();
+                        c2578Fk.M1(new C2572Fe(null, 1));
                         return;
                     }
                     return;
                 }
             }
-            P2.w.d("resume must be called on the main UI thread.");
-            c3524lj = this.f23973B;
-            if (c3524lj == null) {
+            R2.w.d("resume must be called on the main UI thread.");
+            c3547lj = this.f24736B;
+            if (c3547lj == null) {
             }
         } catch (Throwable th) {
             throw th;
         }
     }
 
-    @Override // q2.K
-    public final synchronized long f0() {
-        C3364ik c3364ik;
-        C3524lj c3524lj = this.f23973B;
-        return (c3524lj == null || (c3364ik = c3524lj.f24841j) == null) ? this.f23979y.f29362u.get() : c3364ik.f31114a.get();
+    @Override // s2.K
+    public final synchronized long g0() {
+        C3387ik c3387ik;
+        C3547lj c3547lj = this.f24736B;
+        return (c3547lj == null || (c3387ik = c3547lj.f25630j) == null) ? this.f24742y.f30150u.get() : c3387ik.f31884a.get();
     }
 
-    @Override // q2.K
-    public final synchronized void f2(boolean z3) {
-        try {
-            if (V3()) {
-                P2.w.d("setManualImpressionsEnabled must be called from the main thread.");
-            }
-            this.f23979y.f29347e = z3;
-        } catch (Throwable th) {
-            throw th;
-        }
-    }
-
-    @Override // q2.K
+    @Override // s2.K
     public final boolean i() {
         return false;
     }
 
-    @Override // q2.K
+    @Override // s2.K
     public final Bundle j() {
-        P2.w.d("getAdMetadata must be called on the main UI thread.");
+        R2.w.d("getAdMetadata must be called on the main UI thread.");
         return new Bundle();
     }
 
-    @Override // q2.K
+    @Override // s2.K
     public final void k() {
     }
 
-    @Override // q2.K
-    public final void k2() {
-        P2.w.d("setAdMetadataListener must be called on the main UI thread.");
-    }
-
-    @Override // q2.K
+    @Override // s2.K
     public final synchronized void l() {
-        P2.w.d("recordManualImpression must be called on the main UI thread.");
-        C3524lj c3524lj = this.f23973B;
-        if (c3524lj != null) {
-            C2559Fl c2559Fl = c3524lj.f31832r;
-            synchronized (c2559Fl) {
-                c2559Fl.M1(C3472kl.f31607F);
+        R2.w.d("recordManualImpression must be called on the main UI thread.");
+        C3547lj c3547lj = this.f24736B;
+        if (c3547lj != null) {
+            C2596Gl c2596Gl = c3547lj.f32610r;
+            synchronized (c2596Gl) {
+                c2596Gl.M1(C3495kl.f32384F);
             }
         }
     }
 
-    @Override // q2.K
+    @Override // s2.K
     public final synchronized String m() {
-        BinderC3848rk binderC3848rk;
-        C3524lj c3524lj = this.f23973B;
-        if (c3524lj == null || (binderC3848rk = c3524lj.f24838f) == null) {
+        BinderC3871rk binderC3871rk;
+        C3547lj c3547lj = this.f24736B;
+        if (c3547lj == null || (binderC3871rk = c3547lj.f25627f) == null) {
             return null;
         }
-        return binderC3848rk.f33698n;
+        return binderC3871rk.f34470n;
     }
 
-    @Override // q2.K
-    public final void o0(boolean z3) {
+    @Override // s2.K
+    public final synchronized void m2(C3915sa c3915sa) {
+        R2.w.d("setOnCustomRenderedAdLoadedListener must be called on the main UI thread.");
+        this.f24738u.f33754g = c3915sa;
     }
 
-    @Override // q2.K
-    public final synchronized q2.f1 q() {
-        P2.w.d("getAdSize must be called on the main UI thread.");
-        C3524lj c3524lj = this.f23973B;
-        if (c3524lj != null) {
-            return AbstractC3043cl.k(this.f23974n, Collections.singletonList(c3524lj.c()));
-        }
-        return this.f23979y.f29344b;
+    @Override // s2.K
+    public final void n0(boolean z6) {
     }
 
-    @Override // q2.K
-    public final synchronized void r2(C3892sa c3892sa) {
-        P2.w.d("setOnCustomRenderedAdLoadedListener must be called on the main UI thread.");
-        this.f23975u.f32968g = c3892sa;
-    }
-
-    @Override // q2.K
-    public final synchronized void r3(q2.Y y7) {
-        P2.w.d("setCorrelationIdProvider must be called on the main UI thread");
-        this.f23979y.f29365x = y7;
-    }
-
-    @Override // q2.K
-    public final void s0(InterfaceC4904r0 interfaceC4904r0) {
+    @Override // s2.K
+    public final void o0(s2.V v9) {
         if (V3()) {
-            P2.w.d("setPaidEventListener must be called on the main UI thread.");
+            R2.w.d("setAppEventListener must be called on the main UI thread.");
         }
-        try {
-            if (!interfaceC4904r0.e()) {
-                this.f23972A.b();
-            }
-        } catch (RemoteException e9) {
-            int i = u2.z.f41322b;
-            v2.i.b("Error in making CSI ping for reporting paid event callback", e9);
-        }
-        this.f23977w.f24478v.set(interfaceC4904r0);
+        this.f24740w.n(v9);
     }
 
-    @Override // q2.K
+    @Override // s2.K
+    public final synchronized void o2(s2.Z0 z02) {
+        try {
+            if (V3()) {
+                R2.w.d("setVideoOptions must be called on the main UI thread.");
+            }
+            this.f24742y.f30134d = z02;
+        } catch (Throwable th) {
+            throw th;
+        }
+    }
+
+    @Override // s2.K
+    public final void p3(InterfaceC4958u interfaceC4958u) {
+        if (V3()) {
+            R2.w.d("setAdListener must be called on the main UI thread.");
+        }
+        Fr fr = this.f24738u.f33752e;
+        synchronized (fr) {
+            fr.f25643n = interfaceC4958u;
+        }
+    }
+
+    @Override // s2.K
+    public final synchronized s2.f1 q() {
+        R2.w.d("getAdSize must be called on the main UI thread.");
+        C3547lj c3547lj = this.f24736B;
+        if (c3547lj != null) {
+            return AbstractC3066cl.k(this.f24737n, Collections.singletonList(c3547lj.c()));
+        }
+        return this.f24742y.f30132b;
+    }
+
+    @Override // s2.K
     public final synchronized boolean u() {
-        C3524lj c3524lj = this.f23973B;
-        if (c3524lj != null) {
-            if (c3524lj.f24834b.f27637q0) {
+        C3547lj c3547lj = this.f24736B;
+        if (c3547lj != null) {
+            if (c3547lj.f25623b.f28420q0) {
                 return true;
             }
         }
         return false;
     }
 
-    @Override // q2.K
+    @Override // s2.K
     public final synchronized String w() {
-        BinderC3848rk binderC3848rk;
-        C3524lj c3524lj = this.f23973B;
-        if (c3524lj == null || (binderC3848rk = c3524lj.f24838f) == null) {
+        BinderC3871rk binderC3871rk;
+        C3547lj c3547lj = this.f24736B;
+        if (c3547lj == null || (binderC3871rk = c3547lj.f25627f) == null) {
             return null;
         }
-        return binderC3848rk.f33698n;
+        return binderC3871rk.f34470n;
     }
 
-    @Override // q2.K
-    public final void x1(q2.V v9) {
-        if (V3()) {
-            P2.w.d("setAppEventListener must be called on the main UI thread.");
+    @Override // s2.K
+    public final synchronized void w0(long j6) {
+        C3387ik c3387ik;
+        this.f24742y.f30150u.set(j6);
+        C3547lj c3547lj = this.f24736B;
+        if (c3547lj == null || (c3387ik = c3547lj.f25630j) == null) {
+            return;
         }
-        this.f23977w.n(v9);
+        c3387ik.a(j6);
     }
 
-    @Override // q2.K
-    public final q2.V y() {
-        q2.V v9;
-        Dr dr = this.f23977w;
+    @Override // s2.K
+    public final s2.V y() {
+        s2.V v9;
+        Dr dr = this.f24740w;
         synchronized (dr) {
-            v9 = (q2.V) dr.f24477u.get();
+            v9 = (s2.V) dr.f25238u.get();
         }
         return v9;
     }
 
-    @Override // q2.K
-    public final void K() {
+    @Override // s2.K
+    public final void J() {
     }
 
-    @Override // q2.K
-    public final void e1() {
+    @Override // s2.K
+    public final void c1() {
     }
 
-    @Override // q2.K
+    @Override // s2.K
     public final void r() {
     }
 
-    @Override // q2.K
+    @Override // s2.K
     public final void s() {
     }
 
-    @Override // q2.K
-    public final void C1(W2.a aVar) {
+    @Override // s2.K
+    public final void C0(C2892Ye c2892Ye) {
     }
 
-    @Override // q2.K
-    public final void E0(C2869Ye c2869Ye) {
+    @Override // s2.K
+    public final void E3(InterfaceC4920a0 interfaceC4920a0) {
     }
 
-    @Override // q2.K
-    public final void X0(InterfaceC4871a0 interfaceC4871a0) {
+    @Override // s2.K
+    public final void F3(s2.i1 i1Var) {
     }
 
-    @Override // q2.K
-    public final void Y2(q2.i1 i1Var) {
+    @Override // s2.K
+    public final void x0(Y2.a aVar) {
     }
 
-    @Override // q2.K
-    public final void m2(q2.c1 c1Var, InterfaceC4868A interfaceC4868A) {
+    @Override // s2.K
+    public final void I3(s2.c1 c1Var, InterfaceC4917A interfaceC4917A) {
     }
 }

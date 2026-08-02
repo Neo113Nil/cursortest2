@@ -1,6 +1,6 @@
 package K0;
 
-import J0.s;
+import J0.r;
 import androidx.work.impl.WorkDatabase;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -10,7 +10,7 @@ import java.util.List;
 public abstract class i {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f1516a = s.f("Schedulers");
+    public static final String f1625a = r.f("Schedulers");
 
     public static void a(J0.b bVar, WorkDatabase workDatabase, List list) {
         if (list == null || list.size() == 0) {
@@ -19,13 +19,13 @@ public abstract class i {
         S0.q t6 = workDatabase.t();
         workDatabase.c();
         try {
-            ArrayList b9 = t6.b(bVar.f1366c);
+            ArrayList b9 = t6.b(bVar.f1395c);
             ArrayList a9 = t6.a();
             if (b9.size() > 0) {
                 long currentTimeMillis = System.currentTimeMillis();
                 Iterator it = b9.iterator();
                 while (it.hasNext()) {
-                    t6.i(((S0.p) it.next()).f2808a, currentTimeMillis);
+                    t6.i(((S0.p) it.next()).f2937a, currentTimeMillis);
                 }
             }
             workDatabase.o();

@@ -4,21 +4,21 @@ package com.anythink.core.common.m.b;
 public final class h {
 
     /* renamed from: a, reason: collision with root package name */
-    private String f14529a;
+    private String f15315a;
 
     /* renamed from: b, reason: collision with root package name */
-    private int f14530b;
+    private int f15316b;
 
     public h(String str, int i) {
-        this.f14529a = str;
-        this.f14530b = i;
+        this.f15315a = str;
+        this.f15316b = i;
     }
 
     public final String a() {
-        return this.f14529a;
+        return this.f15315a;
     }
 
     public final int b() {
-        return this.f14530b;
+        return this.f15316b;
     }
 }

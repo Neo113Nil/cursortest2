@@ -19,149 +19,149 @@ import java.util.UUID;
 public final class Q2 implements Q0 {
 
     /* renamed from: N, reason: collision with root package name */
-    public static final byte[] f26919N = {-94, 57, 79, 82, 90, -101, 79, 20, -94, 68, 108, 66, 124, 100, -115, -12};
+    public static final byte[] f27706N = {-94, 57, 79, 82, 90, -101, 79, 20, -94, 68, 108, 66, 124, 100, -115, -12};
 
     /* renamed from: O, reason: collision with root package name */
-    public static final DP f26920O;
+    public static final DP f27707O;
 
     /* renamed from: A, reason: collision with root package name */
-    public P2 f26921A;
+    public P2 f27708A;
 
     /* renamed from: B, reason: collision with root package name */
-    public int f26922B;
+    public int f27709B;
 
     /* renamed from: C, reason: collision with root package name */
-    public int f26923C;
+    public int f27710C;
 
     /* renamed from: D, reason: collision with root package name */
-    public int f26924D;
+    public int f27711D;
 
     /* renamed from: E, reason: collision with root package name */
-    public boolean f26925E;
+    public boolean f27712E;
 
     /* renamed from: F, reason: collision with root package name */
-    public boolean f26926F;
+    public boolean f27713F;
 
     /* renamed from: G, reason: collision with root package name */
-    public S0 f26927G;
+    public S0 f27714G;
 
     /* renamed from: H, reason: collision with root package name */
-    public InterfaceC3543m1[] f26928H;
+    public InterfaceC3566m1[] f27715H;
 
     /* renamed from: I, reason: collision with root package name */
-    public InterfaceC3543m1[] f26929I;
+    public InterfaceC3566m1[] f27716I;
     public boolean J;
 
     /* renamed from: K, reason: collision with root package name */
-    public boolean f26930K;
+    public boolean f27717K;
 
     /* renamed from: L, reason: collision with root package name */
-    public long f26931L;
+    public long f27718L;
 
     /* renamed from: M, reason: collision with root package name */
-    public long f26932M;
+    public long f27719M;
 
     /* renamed from: a, reason: collision with root package name */
-    public final InterfaceC3814r3 f26933a;
+    public final InterfaceC3837r3 f27720a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f26934b;
+    public final int f27721b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final List f26935c;
+    public final List f27722c;
 
     /* renamed from: h, reason: collision with root package name */
-    public final byte[] f26940h;
+    public final byte[] f27727h;
     public final Cr i;
 
     /* renamed from: n, reason: collision with root package name */
-    public final C2712Ol f26945n;
+    public final C2749Pl f27732n;
 
     /* renamed from: o, reason: collision with root package name */
-    public final C3694or f26946o;
+    public final C3717or f27733o;
 
     /* renamed from: p, reason: collision with root package name */
-    public C3500lC f26947p;
+    public C3523lC f27734p;
 
     /* renamed from: q, reason: collision with root package name */
-    public int f26948q;
+    public int f27735q;
 
     /* renamed from: r, reason: collision with root package name */
-    public int f26949r;
+    public int f27736r;
 
     /* renamed from: s, reason: collision with root package name */
-    public long f26950s;
+    public long f27737s;
 
     /* renamed from: t, reason: collision with root package name */
-    public int f26951t;
+    public int f27738t;
 
     /* renamed from: u, reason: collision with root package name */
-    public Cr f26952u;
+    public Cr f27739u;
 
     /* renamed from: v, reason: collision with root package name */
-    public long f26953v;
+    public long f27740v;
 
     /* renamed from: w, reason: collision with root package name */
-    public int f26954w;
+    public int f27741w;
 
     /* renamed from: x, reason: collision with root package name */
-    public long f26955x;
+    public long f27742x;
 
     /* renamed from: y, reason: collision with root package name */
-    public long f26956y;
+    public long f27743y;
 
     /* renamed from: z, reason: collision with root package name */
-    public long f26957z;
+    public long f27744z;
 
     /* renamed from: j, reason: collision with root package name */
-    public final C2991bm f26941j = new C2991bm(8);
+    public final C3067cm f27728j = new C3067cm(10);
 
     /* renamed from: k, reason: collision with root package name */
-    public final Cr f26942k = new Cr(16);
+    public final Cr f27729k = new Cr(16);
 
     /* renamed from: e, reason: collision with root package name */
-    public final Cr f26937e = new Cr(SK.f27460r0);
+    public final Cr f27724e = new Cr(SK.m0);
 
     /* renamed from: f, reason: collision with root package name */
-    public final Cr f26938f = new Cr(6);
+    public final Cr f27725f = new Cr(6);
 
     /* renamed from: g, reason: collision with root package name */
-    public final Cr f26939g = new Cr();
+    public final Cr f27726g = new Cr();
 
     /* renamed from: l, reason: collision with root package name */
-    public final ArrayDeque f26943l = new ArrayDeque();
+    public final ArrayDeque f27730l = new ArrayDeque();
 
     /* renamed from: m, reason: collision with root package name */
-    public final ArrayDeque f26944m = new ArrayDeque();
+    public final ArrayDeque f27731m = new ArrayDeque();
 
     /* renamed from: d, reason: collision with root package name */
-    public final SparseArray f26936d = new SparseArray();
+    public final SparseArray f27723d = new SparseArray();
 
     static {
-        C3299hP c3299hP = new C3299hP();
-        c3299hP.e(com.anythink.basead.exoplayer.k.o.ai);
-        f26920O = new DP(c3299hP);
+        C3322hP c3322hP = new C3322hP();
+        c3322hP.e(com.anythink.basead.exoplayer.k.o.ai);
+        f27707O = new DP(c3322hP);
     }
 
-    public Q2(InterfaceC3814r3 interfaceC3814r3, int i, RB rb) {
-        this.f26933a = interfaceC3814r3;
-        this.f26934b = i;
-        this.f26935c = Collections.unmodifiableList(rb);
+    public Q2(InterfaceC3837r3 interfaceC3837r3, int i, RB rb) {
+        this.f27720a = interfaceC3837r3;
+        this.f27721b = i;
+        this.f27722c = Collections.unmodifiableList(rb);
         byte[] bArr = new byte[16];
-        this.f26940h = bArr;
+        this.f27727h = bArr;
         this.i = new Cr(bArr);
-        PB pb = RB.f27177u;
-        this.f26947p = C3500lC.f31745x;
-        this.f26956y = com.anythink.basead.exoplayer.b.f6382b;
-        this.f26955x = com.anythink.basead.exoplayer.b.f6382b;
-        this.f26957z = com.anythink.basead.exoplayer.b.f6382b;
-        this.f26927G = S0.f27391l0;
-        this.f26928H = new InterfaceC3543m1[0];
-        this.f26929I = new InterfaceC3543m1[0];
-        this.f26945n = new C2712Ol(new Ux(3, this));
-        this.f26946o = new C3694or(3);
-        this.f26931L = -1L;
-        this.f26932M = -1L;
+        PB pb = RB.f27933u;
+        this.f27734p = C3523lC.f32525x;
+        this.f27743y = com.anythink.basead.exoplayer.b.f7168b;
+        this.f27742x = com.anythink.basead.exoplayer.b.f7168b;
+        this.f27744z = com.anythink.basead.exoplayer.b.f7168b;
+        this.f27714G = S0.f28105g0;
+        this.f27715H = new InterfaceC3566m1[0];
+        this.f27716I = new InterfaceC3566m1[0];
+        this.f27732n = new C2749Pl(new Ux(3, this));
+        this.f27733o = new C3717or(3);
+        this.f27718L = -1L;
+        this.f27719M = -1L;
     }
 
     public static void i(int i) {
@@ -174,32 +174,32 @@ public final class Q2 implements Q0 {
         throw U4.a(null, sb.toString());
     }
 
-    public static void j(Cr cr, int i, C2955b3 c2955b3) {
+    public static void j(Cr cr, int i, C2978b3 c2978b3) {
         cr.E(i + 8);
         int b9 = cr.b();
-        byte[] bArr = J2.f25647a;
+        byte[] bArr = J2.f26400a;
         if ((b9 & 1) != 0) {
             throw U4.c("Overriding TrackEncryptionBox parameters is unsupported.");
         }
-        boolean z3 = (b9 & 2) != 0;
-        int h9 = cr.h();
-        if (h9 == 0) {
-            Arrays.fill(c2955b3.f29199l, 0, c2955b3.f29193e, false);
+        boolean z6 = (b9 & 2) != 0;
+        int h3 = cr.h();
+        if (h3 == 0) {
+            Arrays.fill(c2978b3.f29987l, 0, c2978b3.f29981e, false);
             return;
         }
-        int i6 = c2955b3.f29193e;
-        if (h9 != i6) {
-            throw U4.a(null, D.y.r(new StringBuilder(String.valueOf(h9).length() + 58 + String.valueOf(i6).length()), "Senc sample count ", h9, " is different from fragment sample count", i6));
+        int i4 = c2978b3.f29981e;
+        if (h3 != i4) {
+            throw U4.a(null, D.x.o(new StringBuilder(String.valueOf(h3).length() + 58 + String.valueOf(i4).length()), "Senc sample count ", h3, " is different from fragment sample count", i4));
         }
-        Arrays.fill(c2955b3.f29199l, 0, h9, z3);
-        int B9 = cr.B();
-        Cr cr2 = c2955b3.f29201n;
-        cr2.y(B9);
-        c2955b3.f29198k = true;
-        c2955b3.f29202o = true;
-        cr.H(cr2.f24252a, 0, cr2.f24254c);
+        Arrays.fill(c2978b3.f29987l, 0, h3, z6);
+        int B3 = cr.B();
+        Cr cr2 = c2978b3.f29989n;
+        cr2.y(B3);
+        c2978b3.f29986k = true;
+        c2978b3.f29990o = true;
+        cr.H(cr2.f24997a, 0, cr2.f24999c);
         cr2.E(0);
-        c2955b3.f29202o = false;
+        c2978b3.f29990o = false;
     }
 
     public static Pair k(long j6, Cr cr) {
@@ -218,17 +218,17 @@ public final class Q2 implements Q0 {
             j10 = cr2.j();
         }
         long j11 = j10 + j6;
-        long w6 = AbstractC3159eu.w(j9, 1000000L, P8, RoundingMode.DOWN);
+        long w3 = AbstractC3182eu.w(j9, 1000000L, P8, RoundingMode.DOWN);
         cr2.G(2);
-        int L6 = cr2.L();
-        int[] iArr = new int[L6];
-        long[] jArr = new long[L6];
-        long[] jArr2 = new long[L6];
-        long[] jArr3 = new long[L6];
+        int L2 = cr2.L();
+        int[] iArr = new int[L2];
+        long[] jArr = new long[L2];
+        long[] jArr2 = new long[L2];
+        long[] jArr3 = new long[L2];
         long j12 = j11;
-        long j13 = w6;
+        long j13 = w3;
         int i = 0;
-        while (i < L6) {
+        while (i < L2) {
             int b9 = cr2.b();
             if ((Integer.MIN_VALUE & b9) != 0) {
                 throw U4.a(null, "Unhandled indirect reference");
@@ -240,18 +240,18 @@ public final class Q2 implements Q0 {
             j9 += P9;
             long[] jArr4 = jArr2;
             long[] jArr5 = jArr3;
-            long w9 = AbstractC3159eu.w(j9, 1000000L, P8, RoundingMode.DOWN);
-            jArr4[i] = w9 - jArr5[i];
+            long w6 = AbstractC3182eu.w(j9, 1000000L, P8, RoundingMode.DOWN);
+            jArr4[i] = w6 - jArr5[i];
             cr2.G(4);
             j12 += iArr[i];
             i++;
-            L6 = L6;
+            L2 = L2;
             cr2 = cr;
-            j13 = w9;
+            j13 = w6;
             jArr2 = jArr4;
             jArr3 = jArr5;
         }
-        return Pair.create(Long.valueOf(w6), new J0(iArr, jArr, jArr2, jArr3));
+        return Pair.create(Long.valueOf(w3), new J0(iArr, jArr, jArr2, jArr3));
     }
 
     /* JADX WARN: Removed duplicated region for block: B:11:0x0114  */
@@ -264,77 +264,77 @@ public final class Q2 implements Q0 {
     public static EO l(ArrayList arrayList) {
         int i;
         UUID uuid;
-        C3657o7 c3657o7;
+        C3680o7 c3680o7;
         UUID uuid2;
         int size = arrayList.size();
-        int i6 = 0;
+        int i4 = 0;
         ArrayList arrayList2 = null;
-        while (i6 < size) {
-            Zw zw = (Zw) arrayList.get(i6);
-            if (zw.f31138b == 1886614376) {
+        while (i4 < size) {
+            Zw zw = (Zw) arrayList.get(i4);
+            if (zw.f31925b == 1886614376) {
                 if (arrayList2 == null) {
                     arrayList2 = new ArrayList();
                 }
-                byte[] bArr = zw.f28980c.f24252a;
+                byte[] bArr = zw.f29750c.f24997a;
                 Cr cr = new Cr(bArr);
-                if (cr.f24254c >= 32) {
+                if (cr.f24999c >= 32) {
                     cr.E(0);
-                    int B9 = cr.B();
+                    int B3 = cr.B();
                     int b9 = cr.b();
-                    if (b9 != B9) {
-                        AbstractC2968bG.y("PsshAtomUtil", D.y.r(new StringBuilder(String.valueOf(b9).length() + 52 + String.valueOf(B9).length()), "Advertised atom size (", b9, ") does not match buffer size: ", B9));
+                    if (b9 != B3) {
+                        AbstractC2991bG.y("PsshAtomUtil", D.x.o(new StringBuilder(String.valueOf(b9).length() + 52 + String.valueOf(B3).length()), "Advertised atom size (", b9, ") does not match buffer size: ", B3));
                     } else {
                         int b10 = cr.b();
                         if (b10 != 1886614376) {
-                            com.anythink.basead.exoplayer.f.f.q(b10, "Atom type is not pssh: ", "PsshAtomUtil", new StringBuilder(String.valueOf(b10).length() + 23));
+                            com.IceFishing.LiveIceFishing.k.t(b10, "Atom type is not pssh: ", "PsshAtomUtil", new StringBuilder(String.valueOf(b10).length() + 23));
                         } else {
                             int a9 = J2.a(cr.b());
                             if (a9 > 1) {
-                                com.anythink.basead.exoplayer.f.f.q(a9, "Unsupported pssh version: ", "PsshAtomUtil", new StringBuilder(String.valueOf(a9).length() + 26));
+                                com.IceFishing.LiveIceFishing.k.t(a9, "Unsupported pssh version: ", "PsshAtomUtil", new StringBuilder(String.valueOf(a9).length() + 26));
                             } else {
                                 UUID uuid3 = new UUID(cr.d(), cr.d());
                                 if (a9 == 1) {
-                                    int h9 = cr.h();
-                                    UUID[] uuidArr = new UUID[h9];
-                                    int i9 = 0;
-                                    while (i9 < h9) {
-                                        uuidArr[i9] = new UUID(cr.d(), cr.d());
-                                        i9++;
-                                        i6 = i6;
+                                    int h3 = cr.h();
+                                    UUID[] uuidArr = new UUID[h3];
+                                    int i6 = 0;
+                                    while (i6 < h3) {
+                                        uuidArr[i6] = new UUID(cr.d(), cr.d());
+                                        i6++;
+                                        i4 = i4;
                                     }
                                 }
-                                i = i6;
+                                i = i4;
                                 uuid = null;
-                                int h10 = cr.h();
-                                int B10 = cr.B();
-                                if (h10 != B10) {
-                                    AbstractC2968bG.y("PsshAtomUtil", D.y.r(new StringBuilder(String.valueOf(h10).length() + 49 + String.valueOf(B10).length()), "Atom data size (", h10, ") does not match the bytes left: ", B10));
-                                    c3657o7 = null;
+                                int h9 = cr.h();
+                                int B9 = cr.B();
+                                if (h9 != B9) {
+                                    AbstractC2991bG.y("PsshAtomUtil", D.x.o(new StringBuilder(String.valueOf(h9).length() + 49 + String.valueOf(B9).length()), "Atom data size (", h9, ") does not match the bytes left: ", B9));
+                                    c3680o7 = null;
                                 } else {
-                                    cr.H(new byte[h10], 0, h10);
-                                    c3657o7 = new C3657o7(4, uuid3);
+                                    cr.H(new byte[h9], 0, h9);
+                                    c3680o7 = new C3680o7(4, uuid3);
                                 }
-                                uuid2 = c3657o7 != null ? uuid : (UUID) c3657o7.f32862u;
+                                uuid2 = c3680o7 != null ? uuid : (UUID) c3680o7.f33649u;
                                 if (uuid2 != null) {
-                                    AbstractC2968bG.y("FragmentedMp4Extractor", "Skipped pssh atom (failed to extract uuid)");
+                                    AbstractC2991bG.y("FragmentedMp4Extractor", "Skipped pssh atom (failed to extract uuid)");
                                 } else {
-                                    arrayList2.add(new AO(uuid2, com.anythink.basead.exoplayer.k.o.f8448e, bArr));
+                                    arrayList2.add(new AO(uuid2, com.anythink.basead.exoplayer.k.o.f9234e, bArr));
                                 }
                             }
                         }
                     }
                 }
-                i = i6;
-                c3657o7 = null;
+                i = i4;
+                c3680o7 = null;
                 uuid = null;
-                if (c3657o7 != null) {
+                if (c3680o7 != null) {
                 }
                 if (uuid2 != null) {
                 }
             } else {
-                i = i6;
+                i = i4;
             }
-            i6 = i + 1;
+            i4 = i + 1;
         }
         if (arrayList2 == null) {
             return null;
@@ -344,10 +344,10 @@ public final class Q2 implements Q0 {
 
     /* JADX WARN: Code restructure failed: missing block: B:171:0x00e2, code lost:
     
-        r2 = r42.f26948q;
+        r2 = r42.f27735q;
         r4 = com.anythink.basead.exoplayer.k.o.i;
-        r7 = r3.f26716a;
-        r8 = r3.f26717b;
+        r7 = r3.f27499a;
+        r8 = r3.f27500b;
      */
     /* JADX WARN: Code restructure failed: missing block: B:172:0x00ed, code lost:
     
@@ -355,20 +355,20 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:174:0x00f1, code lost:
     
-        if (r3.f26728n != false) goto L56;
+        if (r3.f27511n != false) goto L56;
      */
     /* JADX WARN: Code restructure failed: missing block: B:175:0x00f3, code lost:
     
-        r2 = r3.f26719d.f29419d[r3.f26721f];
+        r2 = r3.f27502d.f30202d[r3.f27504f];
      */
     /* JADX WARN: Code restructure failed: missing block: B:176:0x0102, code lost:
     
-        r42.f26922B = r2;
-        r2 = r3.f26719d.f29416a.f28828g.f24431o;
+        r42.f27709B = r2;
+        r2 = r3.f27502d.f30199a.f29608g.f25176o;
      */
     /* JADX WARN: Code restructure failed: missing block: B:177:0x0110, code lost:
     
-        if (java.util.Objects.equals(r2, com.anythink.basead.exoplayer.k.o.f8451h) == false) goto L63;
+        if (java.util.Objects.equals(r2, com.anythink.basead.exoplayer.k.o.f9237h) == false) goto L63;
      */
     /* JADX WARN: Code restructure failed: missing block: B:179:0x0114, code lost:
     
@@ -380,15 +380,15 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:181:0x0126, code lost:
     
-        r42.f26925E = !r2;
+        r42.f27712E = !r2;
      */
     /* JADX WARN: Code restructure failed: missing block: B:182:0x012e, code lost:
     
-        if (r3.f26721f >= r3.i) goto L87;
+        if (r3.f27504f >= r3.i) goto L87;
      */
     /* JADX WARN: Code restructure failed: missing block: B:183:0x0130, code lost:
     
-        ((com.google.android.gms.internal.ads.K0) r0).a(r42.f26922B, false);
+        ((com.google.android.gms.internal.ads.K0) r0).a(r42.f27709B, false);
         r0 = r3.e();
      */
     /* JADX WARN: Code restructure failed: missing block: B:184:0x013c, code lost:
@@ -397,8 +397,8 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:185:0x013f, code lost:
     
-        r2 = r8.f29201n;
-        r0 = r0.f29013d;
+        r2 = r8.f29989n;
+        r0 = r0.f29783d;
      */
     /* JADX WARN: Code restructure failed: missing block: B:186:0x0143, code lost:
     
@@ -410,15 +410,15 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:188:0x0148, code lost:
     
-        r0 = r3.f26721f;
+        r0 = r3.f27504f;
      */
     /* JADX WARN: Code restructure failed: missing block: B:189:0x014c, code lost:
     
-        if (r8.f29198k == false) goto L81;
+        if (r8.f29986k == false) goto L81;
      */
     /* JADX WARN: Code restructure failed: missing block: B:191:0x0152, code lost:
     
-        if (r8.f29199l[r0] == false) goto L81;
+        if (r8.f29987l[r0] == false) goto L81;
      */
     /* JADX WARN: Code restructure failed: missing block: B:192:0x0154, code lost:
     
@@ -430,11 +430,11 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:195:0x0163, code lost:
     
-        r42.f26921A = null;
+        r42.f27708A = null;
      */
     /* JADX WARN: Code restructure failed: missing block: B:196:0x0166, code lost:
     
-        r42.f26948q = 3;
+        r42.f27735q = 3;
      */
     /* JADX WARN: Code restructure failed: missing block: B:197:0x0169, code lost:
     
@@ -442,37 +442,37 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:199:0x0174, code lost:
     
-        if (r3.f26719d.f29416a.f28829h != r29) goto L90;
+        if (r3.f27502d.f30199a.f29609h != r29) goto L90;
      */
     /* JADX WARN: Code restructure failed: missing block: B:200:0x0176, code lost:
     
-        r42.f26922B -= 8;
+        r42.f27709B -= 8;
         ((com.google.android.gms.internal.ads.K0) r0).a(8, false);
      */
     /* JADX WARN: Code restructure failed: missing block: B:202:0x0193, code lost:
     
-        if ("audio/ac4".equals(r3.f26719d.f29416a.f28828g.f24431o) == false) goto L93;
+        if ("audio/ac4".equals(r3.f27502d.f30199a.f29608g.f25176o) == false) goto L93;
      */
     /* JADX WARN: Code restructure failed: missing block: B:203:0x0195, code lost:
     
-        r42.f26923C = r3.d(r42.f26922B, 7);
-        com.google.android.gms.internal.ads.MA.z(r42.f26922B, r14);
+        r42.f27710C = r3.d(r42.f27709B, 7);
+        com.google.android.gms.internal.ads.MA.z(r42.f27709B, r14);
         r7.a(7, r14);
-        r2 = r42.f26923C + 7;
-        r42.f26923C = r2;
+        r2 = r42.f27710C + 7;
+        r42.f27710C = r2;
         r9 = 0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:204:0x01b6, code lost:
     
-        r42.f26922B += r2;
-        r42.f26948q = 4;
-        r42.f26924D = r9;
+        r42.f27709B += r2;
+        r42.f27735q = 4;
+        r42.f27711D = r9;
      */
     /* JADX WARN: Code restructure failed: missing block: B:205:0x01ad, code lost:
     
         r9 = 0;
-        r2 = r3.d(r42.f26922B, 0);
-        r42.f26923C = r2;
+        r2 = r3.d(r42.f27709B, 0);
+        r42.f27710C = r2;
      */
     /* JADX WARN: Code restructure failed: missing block: B:206:0x0119, code lost:
     
@@ -488,25 +488,25 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:211:0x00fc, code lost:
     
-        r2 = r8.f29196h[r3.f26721f];
+        r2 = r8.f29984h[r3.f27504f];
      */
     /* JADX WARN: Code restructure failed: missing block: B:212:0x01c0, code lost:
     
-        r2 = r3.f26719d;
+        r2 = r3.f27502d;
      */
     /* JADX WARN: Code restructure failed: missing block: B:213:0x01c4, code lost:
     
-        if (r3.f26728n != false) goto L98;
+        if (r3.f27511n != false) goto L98;
      */
     /* JADX WARN: Code restructure failed: missing block: B:214:0x01c6, code lost:
     
-        r9 = r2.f29421f[r3.f26721f];
+        r9 = r2.f30204f[r3.f27504f];
      */
     /* JADX WARN: Code restructure failed: missing block: B:215:0x01d3, code lost:
     
-        r2 = r2.f29416a;
-        r8 = r2.f28831k;
-        r2 = r2.f28828g;
+        r2 = r2.f30199a;
+        r8 = r2.f29611k;
+        r2 = r2.f29608g;
      */
     /* JADX WARN: Code restructure failed: missing block: B:216:0x01d9, code lost:
     
@@ -514,8 +514,8 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:217:0x01db, code lost:
     
-        r11 = r42.f26938f;
-        r12 = r11.f24252a;
+        r11 = r42.f27725f;
+        r12 = r11.f24997a;
         r12[0] = 0;
         r12[1] = 0;
         r12[2] = 0;
@@ -527,11 +527,11 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:219:0x01f1, code lost:
     
-        if (r42.f26923C >= r42.f26922B) goto L619;
+        if (r42.f27710C >= r42.f27709B) goto L619;
      */
     /* JADX WARN: Code restructure failed: missing block: B:220:0x01f3, code lost:
     
-        r8 = r42.f26924D;
+        r8 = r42.f27711D;
      */
     /* JADX WARN: Code restructure failed: missing block: B:221:0x01f5, code lost:
     
@@ -539,11 +539,11 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:223:0x01fa, code lost:
     
-        if (r42.f26929I.length > 0) goto L112;
+        if (r42.f27716I.length > 0) goto L112;
      */
     /* JADX WARN: Code restructure failed: missing block: B:225:0x01fe, code lost:
     
-        if (r42.f26925E != false) goto L111;
+        if (r42.f27712E != false) goto L111;
      */
     /* JADX WARN: Code restructure failed: missing block: B:226:0x0201, code lost:
     
@@ -553,7 +553,7 @@ public final class Q2 implements Q0 {
     
         r39 = r6;
         r17 = r3;
-        ((com.google.android.gms.internal.ads.K0) r0).z(r12, r13, r16 + r8, false);
+        ((com.google.android.gms.internal.ads.K0) r0).A(r12, r13, r16 + r8, false);
         r11.E(0);
         r6 = r11.b();
      */
@@ -563,16 +563,16 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:229:0x022e, code lost:
     
-        r42.f26924D = r6 - r8;
-        r6 = r42.f26937e;
+        r42.f27711D = r6 - r8;
+        r6 = r42.f27724e;
         r6.E(0);
         r7.a(4, r6);
-        r42.f26923C += 4;
-        r42.f26922B += r13;
+        r42.f27710C += 4;
+        r42.f27709B += r13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:230:0x0247, code lost:
     
-        if (r42.f26929I.length <= 0) goto L156;
+        if (r42.f27716I.length <= 0) goto L156;
      */
     /* JADX WARN: Code restructure failed: missing block: B:231:0x0249, code lost:
     
@@ -632,9 +632,9 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:251:0x02b6, code lost:
     
-        r42.f26926F = r3;
+        r42.f27713F = r3;
         r7.a(r8, r11);
-        r42.f26923C += r8;
+        r42.f27710C += r8;
      */
     /* JADX WARN: Code restructure failed: missing block: B:252:0x02c0, code lost:
     
@@ -642,7 +642,7 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:254:0x02c4, code lost:
     
-        if (r42.f26925E != false) goto L622;
+        if (r42.f27712E != false) goto L622;
      */
     /* JADX WARN: Code restructure failed: missing block: B:256:0x02ca, code lost:
     
@@ -650,7 +650,7 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:257:0x02cc, code lost:
     
-        r42.f26925E = true;
+        r42.f27712E = true;
      */
     /* JADX WARN: Code restructure failed: missing block: B:259:0x02cf, code lost:
     
@@ -674,7 +674,7 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:269:0x0276, code lost:
     
-        if (r3.equals(com.anythink.basead.exoplayer.k.o.f8451h) == false) goto L140;
+        if (r3.equals(com.anythink.basead.exoplayer.k.o.f9237h) == false) goto L140;
      */
     /* JADX WARN: Code restructure failed: missing block: B:270:0x0278, code lost:
     
@@ -702,7 +702,7 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:279:0x0213, code lost:
     
-        if ((r16 + r8) <= (r42.f26922B - r42.f26923C)) goto L115;
+        if ((r16 + r8) <= (r42.f27709B - r42.f27710C)) goto L115;
      */
     /* JADX WARN: Code restructure failed: missing block: B:280:0x0216, code lost:
     
@@ -715,20 +715,20 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:282:0x02e9, code lost:
     
-        if (r42.f26926F == false) goto L181;
+        if (r42.f27713F == false) goto L181;
      */
     /* JADX WARN: Code restructure failed: missing block: B:283:0x02eb, code lost:
     
-        r3 = r42.f26939g;
+        r3 = r42.f27726g;
         r3.y(r8);
         r44 = r4;
-        ((com.google.android.gms.internal.ads.K0) r0).z(r3.f24252a, 0, r42.f26924D, false);
-        r7.a(r42.f26924D, r3);
-        r6 = r42.f26924D;
-        r8 = com.google.android.gms.internal.ads.SK.b(r3.f24254c, r3.f24252a);
+        ((com.google.android.gms.internal.ads.K0) r0).A(r3.f24997a, 0, r42.f27711D, false);
+        r7.a(r42.f27711D, r3);
+        r6 = r42.f27711D;
+        r8 = com.google.android.gms.internal.ads.SK.b(r3.f24999c, r3.f24997a);
         r3.E(0);
         r3.C(r8);
-        r8 = r2.f24433q;
+        r8 = r2.f25178q;
      */
     /* JADX WARN: Code restructure failed: missing block: B:284:0x0315, code lost:
     
@@ -736,7 +736,7 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:286:0x0319, code lost:
     
-        if (r15.f26650a == 0) goto L177;
+        if (r15.f27642a == 0) goto L177;
      */
     /* JADX WARN: Code restructure failed: missing block: B:287:0x031b, code lost:
     
@@ -756,13 +756,13 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:291:0x0341, code lost:
     
-        r42.f26923C += r6;
-        r42.f26924D -= r6;
+        r42.f27710C += r6;
+        r42.f27711D -= r6;
         r4 = r44;
      */
     /* JADX WARN: Code restructure failed: missing block: B:295:0x0321, code lost:
     
-        if (r15.f26650a == r8) goto L177;
+        if (r15.f27642a == r8) goto L177;
      */
     /* JADX WARN: Code restructure failed: missing block: B:296:0x0323, code lost:
     
@@ -783,7 +783,7 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:301:0x0399, code lost:
     
-        if (r42.f26925E != false) goto L196;
+        if (r42.f27712E != false) goto L196;
      */
     /* JADX WARN: Code restructure failed: missing block: B:302:0x039b, code lost:
     
@@ -800,12 +800,12 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:305:0x03a6, code lost:
     
-        r38 = r0.f29012c;
+        r38 = r0.f29782c;
      */
     /* JADX WARN: Code restructure failed: missing block: B:306:0x03ad, code lost:
     
         r33 = r9;
-        r7.c(r33, r35, r42.f26922B, 0, r38);
+        r7.c(r33, r35, r42.f27709B, 0, r38);
      */
     /* JADX WARN: Code restructure failed: missing block: B:308:0x03be, code lost:
     
@@ -814,11 +814,11 @@ public final class Q2 implements Q0 {
     /* JADX WARN: Code restructure failed: missing block: B:309:0x03c0, code lost:
     
         r0 = (com.google.android.gms.internal.ads.N2) r39.removeFirst();
-        r2 = r42.f26954w;
-        r8 = r0.f26391c;
-        r42.f26954w = r2 - r8;
-        r2 = r0.f26390b;
-        r4 = r0.f26389a;
+        r2 = r42.f27741w;
+        r8 = r0.f27176c;
+        r42.f27741w = r2 - r8;
+        r2 = r0.f27175b;
+        r4 = r0.f27174a;
      */
     /* JADX WARN: Code restructure failed: missing block: B:310:0x03d1, code lost:
     
@@ -831,7 +831,7 @@ public final class Q2 implements Q0 {
     /* JADX WARN: Code restructure failed: missing block: B:312:0x03d5, code lost:
     
         r5 = r4;
-        r0 = r42.f26928H;
+        r0 = r42.f27715H;
         r2 = r0.length;
         r11 = 0;
      */
@@ -841,7 +841,7 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:315:0x03dc, code lost:
     
-        r0[r11].c(r5, 1, r8, r42.f26954w, null);
+        r0[r11].c(r5, 1, r8, r42.f27741w, null);
         r11 = r11 + 1;
      */
     /* JADX WARN: Code restructure failed: missing block: B:320:0x03ec, code lost:
@@ -850,11 +850,11 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:321:0x03ee, code lost:
     
-        r42.f26921A = null;
+        r42.f27708A = null;
      */
     /* JADX WARN: Code restructure failed: missing block: B:322:0x03f1, code lost:
     
-        r42.f26948q = 3;
+        r42.f27735q = 3;
      */
     /* JADX WARN: Code restructure failed: missing block: B:323:?, code lost:
     
@@ -867,7 +867,7 @@ public final class Q2 implements Q0 {
     /* JADX WARN: Code restructure failed: missing block: B:325:0x0351, code lost:
     
         r39 = r6;
-        r4 = r3.f26726l;
+        r4 = r3.f27509l;
      */
     /* JADX WARN: Code restructure failed: missing block: B:326:0x0355, code lost:
     
@@ -875,22 +875,22 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:328:0x035e, code lost:
     
-        if (com.google.android.gms.internal.ads.AbstractC2968bG.n(r2.f24431o) == false) goto L630;
+        if (com.google.android.gms.internal.ads.AbstractC2991bG.n(r2.f25176o) == false) goto L630;
      */
     /* JADX WARN: Code restructure failed: missing block: B:329:0x0360, code lost:
     
-        r2 = com.google.android.gms.internal.ads.AbstractC2968bG.P(r0, r42.f26922B, r3.f26727m);
-        r3.f26727m = r2;
+        r2 = com.google.android.gms.internal.ads.AbstractC2991bG.P(r0, r42.f27709B, r3.f27510m);
+        r3.f27510m = r2;
         r2.getClass();
-        r5 = new com.google.android.gms.internal.ads.C3299hP(r2);
-        r5.f30796r = r4.f24435s;
+        r5 = new com.google.android.gms.internal.ads.C3322hP(r2);
+        r5.f31562r = r4.f25180s;
         r7.e(new com.google.android.gms.internal.ads.DP(r5));
-        r3.f26726l = null;
+        r3.f27509l = null;
      */
     /* JADX WARN: Code restructure failed: missing block: B:331:0x0381, code lost:
     
-        r2 = r42.f26923C;
-        r4 = r42.f26922B;
+        r2 = r42.f27710C;
+        r4 = r42.f27709B;
      */
     /* JADX WARN: Code restructure failed: missing block: B:332:0x0385, code lost:
     
@@ -898,11 +898,11 @@ public final class Q2 implements Q0 {
      */
     /* JADX WARN: Code restructure failed: missing block: B:333:0x0387, code lost:
     
-        r42.f26923C += r7.d(r0, r4 - r2, false);
+        r42.f27710C += r7.d(r0, r4 - r2, false);
      */
     /* JADX WARN: Code restructure failed: missing block: B:335:0x01cd, code lost:
     
-        r9 = r8.i[r3.f26721f];
+        r9 = r8.i[r3.f27504f];
      */
     /* JADX WARN: Code restructure failed: missing block: B:607:0x093c, code lost:
     
@@ -922,7 +922,7 @@ public final class Q2 implements Q0 {
         long j9;
         long j10;
         long j11;
-        String m4;
+        String m9;
         long P8;
         String str;
         long j12;
@@ -930,85 +930,85 @@ public final class Q2 implements Q0 {
         long j14;
         char c9;
         char c10;
-        boolean z3;
+        boolean z6;
         int i;
+        int i4;
         int i6;
-        int i9;
         long j15;
         long j16;
         long P9;
+        int i9;
         int i10;
-        int i11;
         R0 r03 = r02;
         while (true) {
-            int i12 = this.f26948q;
-            ArrayDeque arrayDeque = this.f26943l;
-            SparseArray sparseArray = this.f26936d;
-            C3694or c3694or = this.f26946o;
-            int i13 = this.f26934b;
-            boolean z6 = true;
-            C2712Ol c2712Ol = this.f26945n;
+            int i11 = this.f27735q;
+            ArrayDeque arrayDeque = this.f27730l;
+            SparseArray sparseArray = this.f27723d;
+            C3717or c3717or = this.f27733o;
+            int i12 = this.f27721b;
+            boolean z9 = true;
+            C2749Pl c2749Pl = this.f27732n;
             Cr cr = this.i;
-            if (i12 != 0) {
-                ArrayDeque arrayDeque2 = this.f26944m;
-                if (i12 != 1) {
+            if (i11 != 0) {
+                ArrayDeque arrayDeque2 = this.f27731m;
+                if (i11 != 1) {
                     long j17 = Long.MAX_VALUE;
-                    if (i12 != 2) {
+                    if (i11 != 2) {
                         char c11 = 2;
-                        if (i12 == 5) {
+                        if (i11 == 5) {
                             cr.y(16);
                             K0 k02 = (K0) r02;
-                            if (k02.z(cr.f24252a, 0, 16, true)) {
+                            if (k02.A(cr.f24997a, 0, 16, true)) {
                                 cr.E(0);
                                 int b9 = cr.b();
                                 int b10 = cr.b();
                                 if (b9 == 16 && b10 == 1835430511) {
                                     cr.G(4);
                                     long P10 = cr.P();
-                                    long j18 = k02.f25818v - P10;
-                                    if (P10 <= 0 || P10 > 2147483647L || j18 < 0 || j18 < this.f26932M) {
-                                        m(new V0(this.f26956y, this.f26932M), u02);
+                                    long j18 = k02.f26570v - P10;
+                                    if (P10 <= 0 || P10 > 2147483647L || j18 < 0 || j18 < this.f27719M) {
+                                        m(new V0(this.f27743y, this.f27719M), u02);
                                     } else {
-                                        u02.f27844n = j18;
-                                        this.f26948q = 6;
+                                        u02.f28641n = j18;
+                                        this.f27735q = 6;
                                     }
                                 } else {
-                                    m(new V0(this.f26956y, this.f26932M), u02);
+                                    m(new V0(this.f27743y, this.f27719M), u02);
                                 }
                             } else {
-                                m(new V0(this.f26956y, this.f26932M), u02);
+                                m(new V0(this.f27743y, this.f27719M), u02);
                             }
-                            int i14 = this.f26948q;
-                            if (i14 == 6 || i14 == 0) {
+                            int i13 = this.f27735q;
+                            if (i13 == 6 || i13 == 0) {
                                 return 1;
                             }
-                        } else if (i12 != 6) {
-                            P2 p22 = this.f26921A;
+                        } else if (i11 != 6) {
+                            P2 p22 = this.f27708A;
                             if (p22 != null) {
                                 c9 = 5;
                                 c10 = 6;
-                                z3 = true;
+                                z6 = true;
                                 break;
                             }
                             int size = sparseArray.size();
                             c9 = 5;
                             c10 = 6;
                             P2 p23 = null;
-                            int i15 = 0;
-                            while (i15 < size) {
-                                P2 p24 = (P2) sparseArray.valueAt(i15);
-                                boolean z9 = z6;
-                                boolean z10 = p24.f26728n;
-                                if (z10 || p24.f26721f != p24.f26719d.f29417b) {
-                                    C2955b3 c2955b3 = p24.f26717b;
-                                    if (z10) {
+                            int i14 = 0;
+                            while (i14 < size) {
+                                P2 p24 = (P2) sparseArray.valueAt(i14);
+                                boolean z10 = z9;
+                                boolean z11 = p24.f27511n;
+                                if (z11 || p24.f27504f != p24.f27502d.f30200b) {
+                                    C2978b3 c2978b3 = p24.f27500b;
+                                    if (z11) {
                                         i = size;
-                                        if (p24.f26723h == c2955b3.f29192d) {
+                                        if (p24.f27506h == c2978b3.f29980d) {
                                         }
                                     } else {
                                         i = size;
                                     }
-                                    long j19 = !z10 ? p24.f26719d.f29418c[p24.f26721f] : c2955b3.f29194f[p24.f26723h];
+                                    long j19 = !z11 ? p24.f27502d.f30201c[p24.f27504f] : c2978b3.f29982f[p24.f27506h];
                                     if (j19 < j17) {
                                         p23 = p24;
                                         j17 = j19;
@@ -1016,46 +1016,46 @@ public final class Q2 implements Q0 {
                                 } else {
                                     i = size;
                                 }
-                                i15++;
+                                i14++;
                                 size = i;
-                                z6 = z9;
+                                z9 = z10;
                             }
-                            z3 = z6;
+                            z6 = z9;
                             if (p23 == null) {
-                                int i16 = (int) (this.f26953v - ((K0) r03).f25819w);
-                                if (i16 < 0) {
+                                int i15 = (int) (this.f27740v - ((K0) r03).f26571w);
+                                if (i15 < 0) {
                                     throw U4.a(null, "Offset to end of mdat was negative.");
                                 }
-                                ((K0) r03).a(i16, false);
+                                ((K0) r03).a(i15, false);
                                 g();
                             } else {
-                                int i17 = (int) ((!p23.f26728n ? p23.f26719d.f29418c[p23.f26721f] : p23.f26717b.f29194f[p23.f26723h]) - ((K0) r03).f25819w);
-                                if (i17 < 0) {
-                                    AbstractC2968bG.y("FragmentedMp4Extractor", "Ignoring negative offset to sample data.");
-                                    i17 = 0;
+                                int i16 = (int) ((!p23.f27511n ? p23.f27502d.f30201c[p23.f27504f] : p23.f27500b.f29982f[p23.f27506h]) - ((K0) r03).f26571w);
+                                if (i16 < 0) {
+                                    AbstractC2991bG.y("FragmentedMp4Extractor", "Ignoring negative offset to sample data.");
+                                    i16 = 0;
                                 }
-                                ((K0) r03).a(i17, false);
-                                this.f26921A = p23;
+                                ((K0) r03).a(i16, false);
+                                this.f27708A = p23;
                                 p22 = p23;
                             }
                         } else {
                             K0 k03 = (K0) r03;
-                            long j20 = ((K0) r03).f25818v - k03.f25819w;
+                            long j20 = ((K0) r03).f26570v - k03.f26571w;
                             cr.y(8);
-                            if (k03.A(cr.f24252a, 0, 8, true)) {
+                            if (k03.E(cr.f24997a, 0, 8, true)) {
                                 cr.E(0);
                                 int b11 = cr.b();
                                 if (cr.b() != 1835430497) {
-                                    m(new V0(this.f26956y, this.f26932M), u02);
+                                    m(new V0(this.f27743y, this.f27719M), u02);
                                 } else {
-                                    int i18 = (int) j20;
-                                    Cr cr2 = new Cr(i18);
-                                    k03.z(cr2.f24252a, 0, i18, false);
+                                    int i17 = (int) j20;
+                                    Cr cr2 = new Cr(i17);
+                                    k03.A(cr2.f24997a, 0, i17, false);
                                     cr2.E(b11 == 1 ? 16 : 8);
                                     SparseArray sparseArray2 = new SparseArray();
                                     SparseArray sparseArray3 = new SparseArray();
                                     while (cr2.B() >= 8) {
-                                        int i19 = cr2.f24253b;
+                                        int i18 = cr2.f24998b;
                                         long P11 = cr2.P();
                                         int b12 = cr2.b();
                                         if (P11 == 1) {
@@ -1064,21 +1064,21 @@ public final class Q2 implements Q0 {
                                             }
                                             P11 = cr2.d();
                                         } else if (P11 == 0) {
-                                            P11 = cr2.f24254c - i19;
+                                            P11 = cr2.f24999c - i18;
                                         }
-                                        int i20 = P11 == 1 ? 16 : 8;
-                                        if (P11 < i20) {
+                                        int i19 = P11 == 1 ? 16 : 8;
+                                        if (P11 < i19) {
                                             break;
                                         }
-                                        long j21 = i19;
-                                        int i21 = i20;
-                                        if (P11 > cr2.f24254c - j21) {
+                                        long j21 = i18;
+                                        int i20 = i19;
+                                        if (P11 > cr2.f24999c - j21) {
                                             break;
                                         }
                                         if (b12 != 1952871009) {
                                             j15 = P11;
                                             j16 = j21;
-                                        } else if (P11 < i21 + 16) {
+                                        } else if (P11 < i20 + 16) {
                                             cr2.E((int) (j21 + P11));
                                         } else {
                                             int a9 = J2.a(cr2.b());
@@ -1087,40 +1087,40 @@ public final class Q2 implements Q0 {
                                             if (p25 == null) {
                                                 cr2.E((int) (j21 + P11));
                                             } else {
-                                                long j22 = p25.f26719d.f29416a.f28824c;
+                                                long j22 = p25.f27502d.f30199a.f29604c;
                                                 int b14 = cr2.b();
-                                                int i22 = b14 >> 4;
-                                                int i23 = b14 >> 2;
-                                                int i24 = b14 & 3;
+                                                int i21 = b14 >> 4;
+                                                int i22 = b14 >> 2;
+                                                int i23 = b14 & 3;
                                                 long P12 = cr2.P();
-                                                int i25 = (i22 & 3) + 1;
+                                                int i24 = (i21 & 3) + 1;
                                                 j15 = P11;
-                                                int i26 = (i23 & 3) + 1;
-                                                int i27 = i24 + 1;
+                                                int i25 = (i22 & 3) + 1;
+                                                int i26 = i23 + 1;
                                                 j16 = j21;
-                                                if (((a9 == 1 ? 16L : 8L) + i25 + i26 + i27) * P12 > cr2.B()) {
+                                                if (((a9 == 1 ? 16L : 8L) + i24 + i25 + i26) * P12 > cr2.B()) {
                                                     cr2.E((int) (j16 + j15));
                                                 } else {
-                                                    int i28 = (int) P12;
-                                                    long[] jArr = new long[i28];
-                                                    long[] jArr2 = new long[i28];
-                                                    int i29 = 0;
-                                                    while (i29 < i28) {
+                                                    int i27 = (int) P12;
+                                                    long[] jArr = new long[i27];
+                                                    long[] jArr2 = new long[i27];
+                                                    int i28 = 0;
+                                                    while (i28 < i27) {
                                                         if (a9 == 1) {
                                                             P9 = cr2.j();
-                                                            i10 = i25;
-                                                            i11 = 1;
+                                                            i9 = i24;
+                                                            i10 = 1;
                                                         } else {
                                                             P9 = cr2.P();
-                                                            i10 = i25;
-                                                            i11 = a9;
+                                                            i9 = i24;
+                                                            i10 = a9;
                                                         }
-                                                        long j23 = i11 == 1 ? cr2.j() : cr2.P();
-                                                        cr2.G(i10 + i26 + i27);
-                                                        jArr[i29] = AbstractC3159eu.w(P9, 1000000L, j22, RoundingMode.DOWN);
-                                                        jArr2[i29] = j23;
-                                                        i29++;
-                                                        i25 = i10;
+                                                        long j23 = i10 == 1 ? cr2.j() : cr2.P();
+                                                        cr2.G(i9 + i25 + i26);
+                                                        jArr[i28] = AbstractC3182eu.w(P9, 1000000L, j22, RoundingMode.DOWN);
+                                                        jArr2[i28] = j23;
+                                                        i28++;
+                                                        i24 = i9;
                                                     }
                                                     sparseArray2.put(b13, jArr);
                                                     sparseArray3.put(b13, jArr2);
@@ -1130,141 +1130,141 @@ public final class Q2 implements Q0 {
                                         cr2.E((int) (j16 + j15));
                                     }
                                     if (sparseArray2.size() == 0) {
-                                        m(new V0(this.f26956y, this.f26932M), u02);
+                                        m(new V0(this.f27743y, this.f27719M), u02);
                                     } else {
+                                        int i29 = -1;
                                         int i30 = -1;
-                                        int i31 = -1;
-                                        for (int i32 = 0; i32 < sparseArray2.size(); i32++) {
-                                            int keyAt = sparseArray2.keyAt(i32);
+                                        for (int i31 = 0; i31 < sparseArray2.size(); i31++) {
+                                            int keyAt = sparseArray2.keyAt(i31);
                                             P2 p26 = (P2) sparseArray.get(keyAt);
                                             if (p26 != null) {
-                                                int i33 = p26.f26719d.f29416a.f28823b;
-                                                if (i30 != -1) {
-                                                    i9 = i30;
-                                                } else if (i33 == 2) {
-                                                    i30 = keyAt;
+                                                int i32 = p26.f27502d.f30199a.f29603b;
+                                                if (i29 != -1) {
+                                                    i6 = i29;
+                                                } else if (i32 == 2) {
+                                                    i29 = keyAt;
                                                 } else {
-                                                    i9 = -1;
+                                                    i6 = -1;
                                                 }
-                                                if (i31 == -1) {
-                                                    i31 = i33 == 1 ? keyAt : -1;
+                                                if (i30 == -1) {
+                                                    i30 = i32 == 1 ? keyAt : -1;
                                                 }
-                                                i30 = i9;
+                                                i29 = i6;
                                             }
                                         }
-                                        if (i30 == -1) {
-                                            if (i31 != -1) {
-                                                i6 = i31;
-                                                m(new O2(sparseArray2, sparseArray3, this.f26956y, this.f26932M, i6), u02);
+                                        if (i29 == -1) {
+                                            if (i30 != -1) {
+                                                i4 = i30;
+                                                m(new O2(sparseArray2, sparseArray3, this.f27743y, this.f27719M, i4), u02);
                                             } else {
-                                                i30 = sparseArray2.keyAt(0);
+                                                i29 = sparseArray2.keyAt(0);
                                             }
                                         }
-                                        i6 = i30;
-                                        m(new O2(sparseArray2, sparseArray3, this.f26956y, this.f26932M, i6), u02);
+                                        i4 = i29;
+                                        m(new O2(sparseArray2, sparseArray3, this.f27743y, this.f27719M, i4), u02);
                                     }
                                 }
                             } else {
-                                m(new V0(this.f26956y, this.f26932M), u02);
+                                m(new V0(this.f27743y, this.f27719M), u02);
                             }
-                            if (this.f26948q == 0) {
+                            if (this.f27735q == 0) {
                                 return 1;
                             }
                         }
                     } else {
                         int size2 = sparseArray.size();
                         P2 p27 = null;
-                        for (int i34 = 0; i34 < size2; i34++) {
-                            C2955b3 c2955b32 = ((P2) sparseArray.valueAt(i34)).f26717b;
-                            if (c2955b32.f29202o) {
-                                long j24 = c2955b32.f29191c;
+                        for (int i33 = 0; i33 < size2; i33++) {
+                            C2978b3 c2978b32 = ((P2) sparseArray.valueAt(i33)).f27500b;
+                            if (c2978b32.f29990o) {
+                                long j24 = c2978b32.f29979c;
                                 if (j24 < j17) {
-                                    p27 = (P2) sparseArray.valueAt(i34);
+                                    p27 = (P2) sparseArray.valueAt(i33);
                                     j17 = j24;
                                 }
                             }
                         }
                         if (p27 == null) {
-                            this.f26948q = 3;
+                            this.f27735q = 3;
                         } else {
-                            int i35 = (int) (j17 - ((K0) r02).f25819w);
-                            if (i35 < 0) {
+                            int i34 = (int) (j17 - ((K0) r02).f26571w);
+                            if (i34 < 0) {
                                 throw U4.a(null, "Offset to encryption data was negative.");
                             }
                             K0 k04 = (K0) r02;
-                            k04.a(i35, false);
-                            C2955b3 c2955b33 = p27.f26717b;
-                            Cr cr3 = c2955b33.f29201n;
-                            k04.z(cr3.f24252a, 0, cr3.f24254c, false);
+                            k04.a(i34, false);
+                            C2978b3 c2978b33 = p27.f27500b;
+                            Cr cr3 = c2978b33.f29989n;
+                            k04.A(cr3.f24997a, 0, cr3.f24999c, false);
                             cr3.E(0);
-                            c2955b33.f29202o = false;
+                            c2978b33.f29990o = false;
                         }
                     }
                 } else {
-                    long j25 = this.f26950s - this.f26951t;
-                    Cr cr4 = this.f26952u;
-                    int i36 = (int) j25;
+                    long j25 = this.f27737s - this.f27738t;
+                    Cr cr4 = this.f27739u;
+                    int i35 = (int) j25;
                     if (cr4 != null) {
-                        ((K0) r02).z(cr4.f24252a, 8, i36, false);
-                        int i37 = this.f26949r;
-                        Zw zw = new Zw(i37, cr4);
+                        ((K0) r02).A(cr4.f24997a, 8, i35, false);
+                        int i36 = this.f27736r;
+                        Zw zw = new Zw(i36, cr4);
                         if (!arrayDeque.isEmpty()) {
-                            ((Iw) arrayDeque.peek()).f25620d.add(zw);
-                        } else if (i37 == 1936286840) {
-                            Pair k9 = k(((K0) r02).f25819w, cr4);
-                            c3694or.A((J0) k9.second);
-                            this.f26957z = ((Long) k9.first).longValue();
-                            if (!this.f26930K) {
-                                this.f26927G.D(((LinkedHashMap) c3694or.f32954u).size() == 1 ? (InterfaceC3113e1) k9.second : c3694or.D());
+                            ((Iw) arrayDeque.peek()).f26373d.add(zw);
+                        } else if (i36 == 1936286840) {
+                            Pair k9 = k(((K0) r02).f26571w, cr4);
+                            c3717or.A((J0) k9.second);
+                            this.f27744z = ((Long) k9.first).longValue();
+                            if (!this.f27717K) {
+                                this.f27714G.D(((LinkedHashMap) c3717or.f33740u).size() == 1 ? (InterfaceC3136e1) k9.second : c3717or.D());
                                 this.J = true;
                             }
-                        } else if (i37 == 1701671783 && this.f26928H.length != 0) {
+                        } else if (i36 == 1701671783 && this.f27715H.length != 0) {
                             cr4.E(8);
                             int a10 = J2.a(cr4.b());
                             if (a10 == 0) {
-                                m4 = cr4.m();
-                                m4.getClass();
-                                String m9 = cr4.m();
+                                m9 = cr4.m();
                                 m9.getClass();
+                                String m10 = cr4.m();
+                                m10.getClass();
                                 long P13 = cr4.P();
                                 long P14 = cr4.P();
                                 RoundingMode roundingMode = RoundingMode.DOWN;
-                                long w6 = AbstractC3159eu.w(P14, 1000000L, P13, roundingMode);
-                                long j26 = this.f26957z;
-                                long j27 = j26 != com.anythink.basead.exoplayer.b.f6382b ? j26 + w6 : -9223372036854775807L;
-                                long w9 = AbstractC3159eu.w(cr4.P(), 1000L, P13, roundingMode);
+                                long w3 = AbstractC3182eu.w(P14, 1000000L, P13, roundingMode);
+                                long j26 = this.f27744z;
+                                long j27 = j26 != com.anythink.basead.exoplayer.b.f7168b ? j26 + w3 : -9223372036854775807L;
+                                long w6 = AbstractC3182eu.w(cr4.P(), 1000L, P13, roundingMode);
                                 P8 = cr4.P();
-                                str = m9;
+                                str = m10;
                                 j12 = j27;
-                                j13 = w9;
-                                j14 = w6;
+                                j13 = w6;
+                                j14 = w3;
                             } else if (a10 != 1) {
-                                com.anythink.basead.exoplayer.f.f.q(a10, "Skipping unsupported emsg version: ", "FragmentedMp4Extractor", new StringBuilder(String.valueOf(a10).length() + 35));
+                                com.IceFishing.LiveIceFishing.k.t(a10, "Skipping unsupported emsg version: ", "FragmentedMp4Extractor", new StringBuilder(String.valueOf(a10).length() + 35));
                             } else {
                                 long P15 = cr4.P();
                                 long j28 = cr4.j();
                                 RoundingMode roundingMode2 = RoundingMode.DOWN;
-                                long w10 = AbstractC3159eu.w(j28, 1000000L, P15, roundingMode2);
-                                long w11 = AbstractC3159eu.w(cr4.P(), 1000L, P15, roundingMode2);
+                                long w9 = AbstractC3182eu.w(j28, 1000000L, P15, roundingMode2);
+                                long w10 = AbstractC3182eu.w(cr4.P(), 1000L, P15, roundingMode2);
                                 long P16 = cr4.P();
-                                m4 = cr4.m();
-                                m4.getClass();
-                                String m10 = cr4.m();
-                                m10.getClass();
+                                m9 = cr4.m();
+                                m9.getClass();
+                                String m11 = cr4.m();
+                                m11.getClass();
                                 P8 = P16;
-                                str = m10;
-                                j13 = w11;
+                                str = m11;
+                                j13 = w10;
                                 j14 = -9223372036854775807L;
-                                j12 = w10;
+                                j12 = w9;
                             }
                             byte[] bArr = new byte[cr4.B()];
                             cr4.H(bArr, 0, cr4.B());
-                            C2991bm c2991bm = this.f26941j;
-                            ByteArrayOutputStream byteArrayOutputStream = (ByteArrayOutputStream) c2991bm.f29323u;
+                            C3067cm c3067cm = this.f27728j;
+                            ByteArrayOutputStream byteArrayOutputStream = (ByteArrayOutputStream) c3067cm.f30365u;
                             byteArrayOutputStream.reset();
                             try {
-                                DataOutputStream dataOutputStream = (DataOutputStream) c2991bm.f29324v;
-                                dataOutputStream.writeBytes(m4);
+                                DataOutputStream dataOutputStream = (DataOutputStream) c3067cm.f30366v;
+                                dataOutputStream.writeBytes(m9);
                                 dataOutputStream.writeByte(0);
                                 dataOutputStream.writeBytes(str);
                                 dataOutputStream.writeByte(0);
@@ -1273,167 +1273,167 @@ public final class Q2 implements Q0 {
                                 dataOutputStream.write(bArr);
                                 dataOutputStream.flush();
                                 Cr cr5 = new Cr(byteArrayOutputStream.toByteArray());
-                                int B9 = cr5.B();
-                                for (InterfaceC3543m1 interfaceC3543m1 : this.f26928H) {
+                                int B3 = cr5.B();
+                                for (InterfaceC3566m1 interfaceC3566m1 : this.f27715H) {
                                     cr5.E(0);
-                                    interfaceC3543m1.a(B9, cr5);
+                                    interfaceC3566m1.a(B3, cr5);
                                 }
-                                if (j12 == com.anythink.basead.exoplayer.b.f6382b) {
-                                    arrayDeque2.addLast(new N2(B9, j14, true));
-                                    this.f26954w += B9;
+                                if (j12 == com.anythink.basead.exoplayer.b.f7168b) {
+                                    arrayDeque2.addLast(new N2(B3, j14, true));
+                                    this.f27741w += B3;
                                 } else if (arrayDeque2.isEmpty()) {
-                                    for (InterfaceC3543m1 interfaceC3543m12 : this.f26928H) {
-                                        interfaceC3543m12.c(j12, 1, B9, 0, null);
+                                    for (InterfaceC3566m1 interfaceC3566m12 : this.f27715H) {
+                                        interfaceC3566m12.c(j12, 1, B3, 0, null);
                                     }
                                 } else {
-                                    arrayDeque2.addLast(new N2(B9, j12, false));
-                                    this.f26954w += B9;
+                                    arrayDeque2.addLast(new N2(B3, j12, false));
+                                    this.f27741w += B3;
                                 }
                             } catch (IOException e9) {
                                 throw new RuntimeException(e9);
                             }
                         }
                     } else {
-                        ((K0) r02).a(i36, false);
+                        ((K0) r02).a(i35, false);
                     }
-                    h(((K0) r02).f25819w);
+                    h(((K0) r02).f26571w);
                 }
             } else {
-                int i38 = this.f26951t;
-                Cr cr6 = this.f26942k;
-                if (i38 == 0) {
-                    if (!((K0) r02).z(cr6.f24252a, 0, 8, true)) {
-                        long j29 = this.f26931L;
+                int i37 = this.f27738t;
+                Cr cr6 = this.f27729k;
+                if (i37 == 0) {
+                    if (!((K0) r02).A(cr6.f24997a, 0, 8, true)) {
+                        long j29 = this.f27718L;
                         if (j29 == -1) {
-                            c2712Ol.l(0);
+                            c2749Pl.l(0);
                             return -1;
                         }
-                        u02.f27844n = j29;
-                        this.f26931L = -1L;
-                        this.f26927G.D(c3694or.D());
-                        this.f26930K = true;
+                        u02.f28641n = j29;
+                        this.f27718L = -1L;
+                        this.f27714G.D(c3717or.D());
+                        this.f27717K = true;
                         return 1;
                     }
-                    this.f26951t = 8;
+                    this.f27738t = 8;
                     cr6.E(0);
-                    this.f26950s = cr6.P();
-                    this.f26949r = cr6.b();
+                    this.f27737s = cr6.P();
+                    this.f27736r = cr6.b();
                 }
-                long j30 = this.f26950s;
+                long j30 = this.f27737s;
                 if (j30 == 1) {
-                    ((K0) r02).z(cr6.f24252a, 8, 8, false);
-                    this.f26951t += 8;
-                    this.f26950s = cr6.j();
+                    ((K0) r02).A(cr6.f24997a, 8, 8, false);
+                    this.f27738t += 8;
+                    this.f27737s = cr6.j();
                 } else if (j30 == 0) {
-                    long j31 = ((K0) r02).f25818v;
+                    long j31 = ((K0) r02).f26570v;
                     if (j31 == -1) {
-                        j31 = !arrayDeque.isEmpty() ? ((Iw) arrayDeque.peek()).f25619c : -1L;
+                        j31 = !arrayDeque.isEmpty() ? ((Iw) arrayDeque.peek()).f26372c : -1L;
                     }
                     if (j31 != -1) {
                         j6 = -1;
-                        this.f26950s = (j31 - ((K0) r02).f25819w) + this.f26951t;
-                        j9 = this.f26950s;
-                        int i39 = this.f26951t;
-                        j10 = i39;
+                        this.f27737s = (j31 - ((K0) r02).f26571w) + this.f27738t;
+                        j9 = this.f27737s;
+                        int i38 = this.f27738t;
+                        j10 = i38;
                         if (j9 < j10) {
                             j11 = j10;
                         } else {
-                            if (this.f26949r != 1718773093 || i39 != 8) {
+                            if (this.f27736r != 1718773093 || i38 != 8) {
                                 break;
                             }
-                            this.f26950s = j10;
+                            this.f27737s = j10;
                             j9 = j10;
                             j11 = j9;
                         }
-                        if (this.f26931L == j6) {
-                            if (this.f26949r == 1936286840) {
+                        if (this.f27718L == j6) {
+                            if (this.f27736r == 1936286840) {
                                 cr.y((int) j9);
-                                System.arraycopy(cr6.f24252a, 0, cr.f24252a, 0, 8);
-                                ((K0) r02).z(cr.f24252a, 8, (int) (this.f26950s - this.f26951t), false);
-                                c3694or.A((J0) k(((K0) r02).q(), cr).second);
+                                System.arraycopy(cr6.f24997a, 0, cr.f24997a, 0, 8);
+                                ((K0) r02).A(cr.f24997a, 8, (int) (this.f27737s - this.f27738t), false);
+                                c3717or.A((J0) k(((K0) r02).q(), cr).second);
                             } else {
                                 ((K0) r02).a((int) (j9 - j11), true);
                             }
                             g();
                         } else {
-                            long j32 = ((K0) r02).f25819w - j11;
-                            int i40 = this.f26949r;
-                            if ((i40 == 1836019558 || i40 == 1835295092) && !this.J) {
-                                long j33 = ((K0) r02).f25818v;
-                                if (j33 == j6 || this.f26932M != j6 || (i13 & 512) == 0) {
-                                    this.f26927G.D(new V0(this.f26956y, j32));
+                            long j32 = ((K0) r02).f26571w - j11;
+                            int i39 = this.f27736r;
+                            if ((i39 == 1836019558 || i39 == 1835295092) && !this.J) {
+                                long j33 = ((K0) r02).f26570v;
+                                if (j33 == j6 || this.f27719M != j6 || (i12 & 512) == 0) {
+                                    this.f27714G.D(new V0(this.f27743y, j32));
                                     this.J = true;
                                 } else {
-                                    this.f26932M = j32;
-                                    u02.f27844n = j33 - 16;
-                                    this.f26948q = 5;
+                                    this.f27719M = j32;
+                                    u02.f28641n = j33 - 16;
+                                    this.f27735q = 5;
                                 }
                             }
-                            if (this.f26949r == 1836019558) {
+                            if (this.f27736r == 1836019558) {
                                 int size3 = sparseArray.size();
-                                for (int i41 = 0; i41 < size3; i41++) {
-                                    C2955b3 c2955b34 = ((P2) sparseArray.valueAt(i41)).f26717b;
-                                    c2955b34.f29191c = j32;
-                                    c2955b34.f29190b = j32;
+                                for (int i40 = 0; i40 < size3; i40++) {
+                                    C2978b3 c2978b34 = ((P2) sparseArray.valueAt(i40)).f27500b;
+                                    c2978b34.f29979c = j32;
+                                    c2978b34.f29978b = j32;
                                 }
                             }
-                            int i42 = this.f26949r;
-                            if (i42 == 1835295092) {
-                                this.f26921A = null;
-                                this.f26953v = j32 + this.f26950s;
-                                this.f26948q = 2;
-                            } else if (i42 == 1836019574 || i42 == 1953653099 || i42 == 1835297121 || i42 == 1835626086 || i42 == 1937007212 || i42 == 1836019558 || i42 == 1953653094 || i42 == 1836475768 || i42 == 1701082227 || i42 == 1835365473) {
+                            int i41 = this.f27736r;
+                            if (i41 == 1835295092) {
+                                this.f27708A = null;
+                                this.f27740v = j32 + this.f27737s;
+                                this.f27735q = 2;
+                            } else if (i41 == 1836019574 || i41 == 1953653099 || i41 == 1835297121 || i41 == 1835626086 || i41 == 1937007212 || i41 == 1836019558 || i41 == 1953653094 || i41 == 1836475768 || i41 == 1701082227 || i41 == 1835365473) {
                                 K0 k05 = (K0) r02;
-                                long j34 = k05.f25819w;
-                                long j35 = this.f26950s;
+                                long j34 = k05.f26571w;
+                                long j35 = this.f27737s;
                                 long j36 = j34 + j35;
-                                if (j35 != this.f26951t && i42 == 1835365473) {
+                                if (j35 != this.f27738t && i41 == 1835365473) {
                                     cr.y(8);
-                                    k05.A(cr.f24252a, 0, 8, false);
+                                    k05.E(cr.f24997a, 0, 8, false);
                                     J2.f(cr);
-                                    k05.a(cr.f24253b, false);
-                                    k05.f25821y = 0;
+                                    k05.a(cr.f24998b, false);
+                                    k05.f26573y = 0;
                                 }
                                 long j37 = j36 - 8;
-                                arrayDeque.push(new Iw(this.f26949r, j37));
-                                if (this.f26950s == this.f26951t) {
+                                arrayDeque.push(new Iw(this.f27736r, j37));
+                                if (this.f27737s == this.f27738t) {
                                     h(j37);
                                 } else {
                                     g();
                                 }
-                            } else if (i42 == 1751411826 || i42 == 1835296868 || i42 == 1836476516 || i42 == 1936286840 || i42 == 1937011556 || i42 == 1937011827 || i42 == 1668576371 || i42 == 1937011555 || i42 == 1937011578 || i42 == 1937013298 || i42 == 1937007471 || i42 == 1668232756 || i42 == 1937011571 || i42 == 1952867444 || i42 == 1952868452 || i42 == 1953196132 || i42 == 1953654136 || i42 == 1953658222 || i42 == 1886614376 || i42 == 1935763834 || i42 == 1935763823 || i42 == 1936027235 || i42 == 1970628964 || i42 == 1935828848 || i42 == 1936158820 || i42 == 1701606260 || i42 == 1835362404 || i42 == 1701671783 || i42 == 1969517665 || i42 == 1801812339 || i42 == 1768715124) {
-                                if (this.f26951t != 8) {
+                            } else if (i41 == 1751411826 || i41 == 1835296868 || i41 == 1836476516 || i41 == 1936286840 || i41 == 1937011556 || i41 == 1937011827 || i41 == 1668576371 || i41 == 1937011555 || i41 == 1937011578 || i41 == 1937013298 || i41 == 1937007471 || i41 == 1668232756 || i41 == 1937011571 || i41 == 1952867444 || i41 == 1952868452 || i41 == 1953196132 || i41 == 1953654136 || i41 == 1953658222 || i41 == 1886614376 || i41 == 1935763834 || i41 == 1935763823 || i41 == 1936027235 || i41 == 1970628964 || i41 == 1935828848 || i41 == 1936158820 || i41 == 1701606260 || i41 == 1835362404 || i41 == 1701671783 || i41 == 1969517665 || i41 == 1801812339 || i41 == 1768715124) {
+                                if (this.f27738t != 8) {
                                     throw U4.c("Leaf atom defines extended atom size (unsupported).");
                                 }
-                                if (this.f26950s > 2147483647L) {
+                                if (this.f27737s > 2147483647L) {
                                     throw U4.c("Leaf atom with length > 2147483647 (unsupported).");
                                 }
-                                Cr cr7 = new Cr((int) this.f26950s);
-                                System.arraycopy(cr6.f24252a, 0, cr7.f24252a, 0, 8);
-                                this.f26952u = cr7;
-                                this.f26948q = 1;
+                                Cr cr7 = new Cr((int) this.f27737s);
+                                System.arraycopy(cr6.f24997a, 0, cr7.f24997a, 0, 8);
+                                this.f27739u = cr7;
+                                this.f27735q = 1;
                             } else {
-                                if (this.f26950s > 2147483647L) {
+                                if (this.f27737s > 2147483647L) {
                                     throw U4.c("Skipping atom with length > 2147483647 (unsupported).");
                                 }
-                                this.f26952u = null;
-                                this.f26948q = 1;
+                                this.f27739u = null;
+                                this.f27735q = 1;
                             }
                         }
-                        if (this.f26948q == 5) {
+                        if (this.f27735q == 5) {
                             return 1;
                         }
                     }
                 }
                 j6 = -1;
-                j9 = this.f26950s;
-                int i392 = this.f26951t;
-                j10 = i392;
+                j9 = this.f27737s;
+                int i382 = this.f27738t;
+                j10 = i382;
                 if (j9 < j10) {
                 }
-                if (this.f26931L == j6) {
+                if (this.f27718L == j6) {
                 }
-                if (this.f26948q == 5) {
+                if (this.f27735q == 5) {
                 }
             }
             r03 = r02;
@@ -1442,60 +1442,60 @@ public final class Q2 implements Q0 {
 
     @Override // com.google.android.gms.internal.ads.Q0
     public final void b(S0 s02) {
-        if ((this.f26934b & 32) == 0) {
-            s02 = new com.bumptech.glide.manager.o(s02, this.f26933a);
+        if ((this.f27721b & 32) == 0) {
+            s02 = new com.bumptech.glide.manager.n(s02, this.f27720a);
         }
-        this.f26927G = s02;
+        this.f27714G = s02;
         g();
-        InterfaceC3543m1[] interfaceC3543m1Arr = new InterfaceC3543m1[2];
-        this.f26928H = interfaceC3543m1Arr;
+        InterfaceC3566m1[] interfaceC3566m1Arr = new InterfaceC3566m1[2];
+        this.f27715H = interfaceC3566m1Arr;
         int i = 0;
-        InterfaceC3543m1[] interfaceC3543m1Arr2 = (InterfaceC3543m1[]) AbstractC3159eu.o(interfaceC3543m1Arr, 0);
-        this.f26928H = interfaceC3543m1Arr2;
-        for (InterfaceC3543m1 interfaceC3543m1 : interfaceC3543m1Arr2) {
-            interfaceC3543m1.e(f26920O);
+        InterfaceC3566m1[] interfaceC3566m1Arr2 = (InterfaceC3566m1[]) AbstractC3182eu.o(interfaceC3566m1Arr, 0);
+        this.f27715H = interfaceC3566m1Arr2;
+        for (InterfaceC3566m1 interfaceC3566m1 : interfaceC3566m1Arr2) {
+            interfaceC3566m1.e(f27707O);
         }
-        List list = this.f26935c;
-        this.f26929I = new InterfaceC3543m1[list.size()];
-        int i6 = 100;
-        while (i < this.f26929I.length) {
-            int i9 = i6 + 1;
-            InterfaceC3543m1 C8 = this.f26927G.C(i6, 3);
+        List list = this.f27722c;
+        this.f27716I = new InterfaceC3566m1[list.size()];
+        int i4 = 100;
+        while (i < this.f27716I.length) {
+            int i6 = i4 + 1;
+            InterfaceC3566m1 C8 = this.f27714G.C(i4, 3);
             C8.e((DP) list.get(i));
-            this.f26929I[i] = C8;
+            this.f27716I[i] = C8;
             i++;
-            i6 = i9;
+            i4 = i6;
         }
     }
 
     @Override // com.google.android.gms.internal.ads.Q0
     public final void c(long j6, long j9) {
-        SparseArray sparseArray = this.f26936d;
+        SparseArray sparseArray = this.f27723d;
         int size = sparseArray.size();
         for (int i = 0; i < size; i++) {
             ((P2) sparseArray.valueAt(i)).a();
         }
-        this.f26944m.clear();
-        this.f26954w = 0;
-        ((PriorityQueue) this.f26945n.f26654e).clear();
-        this.f26955x = j9;
-        this.f26943l.clear();
-        this.f26932M = -1L;
+        this.f27731m.clear();
+        this.f27741w = 0;
+        ((PriorityQueue) this.f27732n.f27646e).clear();
+        this.f27742x = j9;
+        this.f27730l.clear();
+        this.f27719M = -1L;
         g();
     }
 
     @Override // com.google.android.gms.internal.ads.Q0
     public final boolean d(R0 r02) {
-        C3500lC c3500lC;
-        InterfaceC3329i1 u3 = AbstractC2639Kg.u(r02, true);
-        if (u3 != null) {
-            c3500lC = RB.j(u3);
+        C3523lC c3523lC;
+        InterfaceC3352i1 u6 = AbstractC2659Kg.u(r02, true);
+        if (u6 != null) {
+            c3523lC = RB.j(u6);
         } else {
-            PB pb = RB.f27177u;
-            c3500lC = C3500lC.f31745x;
+            PB pb = RB.f27933u;
+            c3523lC = C3523lC.f32525x;
         }
-        this.f26947p = c3500lC;
-        return u3 == null;
+        this.f27734p = c3523lC;
+        return u6 == null;
     }
 
     @Override // com.google.android.gms.internal.ads.Q0
@@ -1504,12 +1504,12 @@ public final class Q2 implements Q0 {
 
     @Override // com.google.android.gms.internal.ads.Q0
     public final /* synthetic */ List f() {
-        return this.f26947p;
+        return this.f27734p;
     }
 
     public final void g() {
-        this.f26948q = 0;
-        this.f26951t = 0;
+        this.f27735q = 0;
+        this.f27738t = 0;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:400:0x0867, code lost:
@@ -1535,404 +1535,404 @@ public final class Q2 implements Q0 {
         ArrayList arrayList;
         int i;
         String str;
-        int i6;
-        boolean z3;
+        int i4;
+        boolean z6;
         ?? r32;
         K2 k22;
-        int i9;
+        int i6;
         K2 k23;
         ArrayList arrayList2;
+        int i9;
         int i10;
-        int i11;
         ArrayList arrayList3;
+        int i11;
         int i12;
         int i13;
-        int i14;
         byte[] bArr;
+        int i14;
+        boolean z9;
         int i15;
-        boolean z6;
         int i16;
         int i17;
         int i18;
-        int i19;
         P2 p22;
         ArrayList arrayList4;
+        int i19;
         int i20;
-        int i21;
         P2 p23;
         ArrayList arrayList5;
+        int i21;
         int i22;
         int i23;
         int i24;
-        int i25;
         boolean[] zArr;
+        int i25;
         int i26;
-        int i27;
         K2 k24;
-        int i28;
+        int i27;
         P2 p24;
         Z2 z22;
         SC sc;
-        int i29;
+        int i28;
         while (true) {
-            ArrayDeque arrayDeque = this.f26943l;
-            if (arrayDeque.isEmpty() || ((Iw) arrayDeque.peek()).f25619c != j6) {
+            ArrayDeque arrayDeque = this.f27730l;
+            if (arrayDeque.isEmpty() || ((Iw) arrayDeque.peek()).f26372c != j6) {
                 break;
             }
             Iw iw = (Iw) arrayDeque.pop();
-            int i30 = iw.f31138b;
-            SparseArray sparseArray = this.f26936d;
-            ArrayList arrayList6 = iw.f25620d;
-            int i31 = 12;
-            int i32 = 16;
-            int i33 = 2;
-            if (i30 == 1836019574) {
+            int i29 = iw.f31925b;
+            SparseArray sparseArray = this.f27723d;
+            ArrayList arrayList6 = iw.f26373d;
+            int i30 = 12;
+            int i31 = 16;
+            int i32 = 2;
+            if (i29 == 1836019574) {
                 EO l9 = l(arrayList6);
                 Iw j9 = iw.j(1836475768);
                 j9.getClass();
                 SparseArray sparseArray2 = new SparseArray();
-                ArrayList arrayList7 = j9.f25620d;
+                ArrayList arrayList7 = j9.f26373d;
                 int size = arrayList7.size();
-                long j10 = com.anythink.basead.exoplayer.b.f6382b;
-                int i34 = 0;
-                while (i34 < size) {
-                    Zw zw = (Zw) arrayList7.get(i34);
-                    int i35 = zw.f31138b;
-                    Cr cr = zw.f28980c;
-                    if (i35 == 1953654136) {
-                        cr.E(i31);
+                long j10 = com.anythink.basead.exoplayer.b.f7168b;
+                int i33 = 0;
+                while (i33 < size) {
+                    Zw zw = (Zw) arrayList7.get(i33);
+                    int i34 = zw.f31925b;
+                    Cr cr = zw.f29750c;
+                    if (i34 == 1953654136) {
+                        cr.E(i30);
                         Pair create = Pair.create(Integer.valueOf(cr.b()), new K2(cr.b() - 1, cr.b(), cr.b(), cr.b()));
                         sparseArray2.put(((Integer) create.first).intValue(), (K2) create.second);
-                    } else if (i35 == 1835362404) {
+                    } else if (i34 == 1835362404) {
                         cr.E(8);
                         j10 = J2.a(cr.b()) == 0 ? cr.P() : cr.j();
                     }
-                    i34++;
-                    i31 = 12;
+                    i33++;
+                    i30 = 12;
                 }
-                int i36 = 0;
+                int i35 = 0;
                 Iw j11 = iw.j(1835365473);
                 O3 e9 = j11 != null ? J2.e(j11) : null;
                 Z0 z02 = new Z0();
-                Zw i37 = iw.i(1969517665);
-                if (i37 != null) {
-                    o32 = J2.c(i37);
+                Zw i36 = iw.i(1969517665);
+                if (i36 != null) {
+                    o32 = J2.c(i36);
                     z02.a(o32);
                 } else {
                     o32 = null;
                 }
-                Zw i38 = iw.i(1836476516);
-                i38.getClass();
-                O3 o33 = new O3(J2.d(i38.f28980c));
+                Zw i37 = iw.i(1836476516);
+                i37.getClass();
+                O3 o33 = new O3(J2.d(i37.f29750c));
                 long j12 = j10;
-                boolean z9 = -1;
-                ArrayList b9 = J2.b(iw, z02, j12, l9, false, false, new L2(i36));
+                boolean z10 = -1;
+                ArrayList b9 = J2.b(iw, z02, j12, l9, false, false, new L2(i35));
                 int size2 = b9.size();
                 if (sparseArray.size() == 0) {
-                    String g4 = AbstractC2772Sd.g(b9);
-                    int i39 = 0;
-                    while (i39 < size2) {
-                        C3008c3 c3008c3 = (C3008c3) b9.get(i39);
-                        Z2 z23 = c3008c3.f29416a;
-                        if (z23.f28833m) {
-                            S0 s02 = this.f26927G;
-                            int i40 = z23.f28823b;
-                            InterfaceC3543m1 C8 = s02.C(i39, i40);
+                    String g9 = AbstractC2792Sd.g(b9);
+                    int i38 = 0;
+                    while (i38 < size2) {
+                        C3031c3 c3031c3 = (C3031c3) b9.get(i38);
+                        Z2 z23 = c3031c3.f30199a;
+                        if (z23.f29613m) {
+                            S0 s02 = this.f27714G;
+                            int i39 = z23.f29603b;
+                            InterfaceC3566m1 C8 = s02.C(i38, i39);
                             C8.getClass();
-                            DP dp = z23.f28828g;
+                            DP dp = z23.f29608g;
                             dp.getClass();
-                            i6 = i39;
-                            C3299hP c3299hP = new C3299hP(dp);
-                            c3299hP.d(g4);
-                            str = g4;
-                            if (i40 == 1) {
-                                int i41 = z02.f28816a;
+                            i4 = i38;
+                            C3322hP c3322hP = new C3322hP(dp);
+                            c3322hP.d(g9);
+                            str = g9;
+                            if (i39 == 1) {
+                                int i40 = z02.f29596a;
                                 arrayList = b9;
                                 r32 = -1;
                                 r32 = -1;
                                 r32 = -1;
                                 i = size2;
-                                if (i41 != -1 && (i9 = z02.f28817b) != -1) {
-                                    c3299hP.f30775K = i41;
-                                    c3299hP.f30776L = i9;
+                                if (i40 != -1 && (i6 = z02.f29597b) != -1) {
+                                    c3322hP.f31541K = i40;
+                                    c3322hP.f31542L = i6;
                                 }
                             } else {
                                 arrayList = b9;
                                 i = size2;
                                 r32 = -1;
                             }
-                            SK.l(i40, e9, c3299hP, dp.f24428l, o32, o33);
+                            SK.l(i39, e9, c3322hP, dp.f25173l, o32, o33);
                             int size3 = sparseArray2.size();
-                            int i42 = z23.f28822a;
+                            int i41 = z23.f29602a;
                             if (size3 == 1) {
                                 k22 = (K2) sparseArray2.valueAt(0);
                             } else {
-                                k22 = (K2) sparseArray2.get(i42);
+                                k22 = (K2) sparseArray2.get(i41);
                                 k22.getClass();
                             }
-                            sparseArray.put(i42, new P2(C8, c3008c3, k22, new DP(c3299hP)));
-                            this.f26956y = Math.max(this.f26956y, z23.f28826e);
-                            z3 = r32;
+                            sparseArray.put(i41, new P2(C8, c3031c3, k22, new DP(c3322hP)));
+                            this.f27743y = Math.max(this.f27743y, z23.f29606e);
+                            z6 = r32;
                         } else {
                             arrayList = b9;
                             i = size2;
-                            str = g4;
-                            i6 = i39;
-                            z3 = z9;
+                            str = g9;
+                            i4 = i38;
+                            z6 = z10;
                         }
-                        i39 = i6 + 1;
-                        z9 = z3;
+                        i38 = i4 + 1;
+                        z10 = z6;
                         size2 = i;
-                        g4 = str;
+                        g9 = str;
                         b9 = arrayList;
                     }
-                    this.f26927G.B();
+                    this.f27714G.B();
                 } else {
                     ArrayList arrayList8 = b9;
+                    int i42 = 0;
                     int i43 = 0;
-                    int i44 = 0;
-                    while (i43 < size2) {
+                    while (i42 < size2) {
                         ArrayList arrayList9 = arrayList8;
-                        if (((C3008c3) arrayList9.get(i43)).f29416a.f28833m) {
-                            i44++;
+                        if (((C3031c3) arrayList9.get(i42)).f30199a.f29613m) {
+                            i43++;
                         }
-                        i43++;
+                        i42++;
                         arrayList8 = arrayList9;
                     }
                     ArrayList arrayList10 = arrayList8;
-                    AbstractC2772Sd.H(sparseArray.size() == i44);
-                    for (int i45 = 0; i45 < size2; i45++) {
-                        C3008c3 c3008c32 = (C3008c3) arrayList10.get(i45);
-                        Z2 z24 = c3008c32.f29416a;
-                        if (z24.f28833m) {
-                            int i46 = z24.f28822a;
-                            P2 p25 = (P2) sparseArray.get(i46);
+                    AbstractC2792Sd.H(sparseArray.size() == i43);
+                    for (int i44 = 0; i44 < size2; i44++) {
+                        C3031c3 c3031c32 = (C3031c3) arrayList10.get(i44);
+                        Z2 z24 = c3031c32.f30199a;
+                        if (z24.f29613m) {
+                            int i45 = z24.f29602a;
+                            P2 p25 = (P2) sparseArray.get(i45);
                             if (sparseArray2.size() == 1) {
                                 k23 = (K2) sparseArray2.valueAt(0);
                             } else {
-                                k23 = (K2) sparseArray2.get(i46);
+                                k23 = (K2) sparseArray2.get(i45);
                                 k23.getClass();
                             }
-                            p25.f26719d = c3008c32;
-                            p25.f26720e = k23;
-                            if (p25.f26726l == null) {
-                                p25.f26716a.e(p25.f26727m);
+                            p25.f27502d = c3031c32;
+                            p25.f27503e = k23;
+                            if (p25.f27509l == null) {
+                                p25.f27499a.e(p25.f27510m);
                             }
                             p25.a();
                         }
                     }
                 }
             } else {
-                int i47 = 4;
-                if (i30 == 1836019558) {
-                    ArrayList arrayList11 = iw.f25621e;
+                int i46 = 4;
+                if (i29 == 1836019558) {
+                    ArrayList arrayList11 = iw.f26374e;
                     int size4 = arrayList11.size();
-                    int i48 = 0;
-                    while (i48 < size4) {
-                        Iw iw2 = (Iw) arrayList11.get(i48);
-                        if (iw2.f31138b == 1953653094) {
-                            Zw i49 = iw2.i(1952868452);
-                            i49.getClass();
-                            Cr cr2 = i49.f28980c;
+                    int i47 = 0;
+                    while (i47 < size4) {
+                        Iw iw2 = (Iw) arrayList11.get(i47);
+                        if (iw2.f31925b == 1953653094) {
+                            Zw i48 = iw2.i(1952868452);
+                            i48.getClass();
+                            Cr cr2 = i48.f29750c;
                             cr2.E(8);
                             int b10 = cr2.b();
-                            byte[] bArr2 = J2.f25647a;
+                            byte[] bArr2 = J2.f26400a;
                             P2 p26 = (P2) sparseArray.get(cr2.b());
                             if (p26 == null) {
                                 p26 = null;
                             } else {
-                                int i50 = b10 & 1;
-                                C2955b3 c2955b3 = p26.f26717b;
-                                if (i50 != 0) {
+                                int i49 = b10 & 1;
+                                C2978b3 c2978b3 = p26.f27500b;
+                                if (i49 != 0) {
                                     long j13 = cr2.j();
-                                    c2955b3.f29190b = j13;
-                                    c2955b3.f29191c = j13;
+                                    c2978b3.f29978b = j13;
+                                    c2978b3.f29979c = j13;
                                 }
-                                K2 k25 = p26.f26720e;
-                                c2955b3.f29189a = new K2((b10 & 2) != 0 ? cr2.b() - 1 : k25.f25829a, (b10 & 8) != 0 ? cr2.b() : k25.f25830b, (b10 & 16) != 0 ? cr2.b() : k25.f25831c, (b10 & 32) != 0 ? cr2.b() : k25.f25832d);
+                                K2 k25 = p26.f27503e;
+                                c2978b3.f29977a = new K2((b10 & 2) != 0 ? cr2.b() - 1 : k25.f26581a, (b10 & 8) != 0 ? cr2.b() : k25.f26582b, (b10 & 16) != 0 ? cr2.b() : k25.f26583c, (b10 & 32) != 0 ? cr2.b() : k25.f26584d);
                             }
                             if (p26 == null) {
                                 arrayList2 = arrayList11;
-                                i10 = size4;
-                                i11 = i48;
+                                i9 = size4;
+                                i10 = i47;
                                 arrayList3 = arrayList6;
+                                i11 = i31;
                                 i12 = i32;
-                                i13 = i33;
                             } else {
-                                C2955b3 c2955b32 = p26.f26717b;
-                                long j14 = c2955b32.f29203p;
-                                boolean z10 = c2955b32.f29204q;
+                                C2978b3 c2978b32 = p26.f27500b;
+                                long j14 = c2978b32.f29991p;
+                                boolean z11 = c2978b32.f29992q;
                                 p26.a();
-                                p26.f26728n = true;
-                                Zw i51 = iw2.i(1952867444);
-                                if (i51 != null) {
-                                    Cr cr3 = i51.f28980c;
+                                p26.f27511n = true;
+                                Zw i50 = iw2.i(1952867444);
+                                if (i50 != null) {
+                                    Cr cr3 = i50.f29750c;
                                     cr3.E(8);
-                                    c2955b32.f29203p = J2.a(cr3.b()) == 1 ? cr3.j() : cr3.P();
-                                    c2955b32.f29204q = true;
+                                    c2978b32.f29991p = J2.a(cr3.b()) == 1 ? cr3.j() : cr3.P();
+                                    c2978b32.f29992q = true;
                                 } else {
-                                    c2955b32.f29203p = j14;
-                                    c2955b32.f29204q = z10;
+                                    c2978b32.f29991p = j14;
+                                    c2978b32.f29992q = z11;
                                 }
-                                ArrayList arrayList12 = iw2.f25620d;
+                                ArrayList arrayList12 = iw2.f26373d;
                                 int size5 = arrayList12.size();
+                                int i51 = 0;
                                 int i52 = 0;
                                 int i53 = 0;
-                                int i54 = 0;
                                 while (true) {
-                                    i14 = 1953658222;
-                                    if (i52 >= size5) {
+                                    i13 = 1953658222;
+                                    if (i51 >= size5) {
                                         break;
                                     }
-                                    Zw zw2 = (Zw) arrayList12.get(i52);
+                                    Zw zw2 = (Zw) arrayList12.get(i51);
                                     ArrayList arrayList13 = arrayList11;
-                                    if (zw2.f31138b == 1953658222) {
-                                        Cr cr4 = zw2.f28980c;
+                                    if (zw2.f31925b == 1953658222) {
+                                        Cr cr4 = zw2.f29750c;
                                         cr4.E(12);
-                                        int h9 = cr4.h();
-                                        if (h9 > 0) {
-                                            i54 += h9;
-                                            i53++;
+                                        int h3 = cr4.h();
+                                        if (h3 > 0) {
+                                            i53 += h3;
                                             i52++;
+                                            i51++;
                                             arrayList11 = arrayList13;
                                         }
                                     }
-                                    i52++;
+                                    i51++;
                                     arrayList11 = arrayList13;
                                 }
                                 arrayList2 = arrayList11;
-                                p26.f26723h = 0;
-                                p26.f26722g = 0;
-                                p26.f26721f = 0;
-                                c2955b32.f29192d = i53;
-                                c2955b32.f29193e = i54;
-                                if (c2955b32.f29195g.length < i53) {
-                                    c2955b32.f29194f = new long[i53];
-                                    c2955b32.f29195g = new int[i53];
+                                p26.f27506h = 0;
+                                p26.f27505g = 0;
+                                p26.f27504f = 0;
+                                c2978b32.f29980d = i52;
+                                c2978b32.f29981e = i53;
+                                if (c2978b32.f29983g.length < i52) {
+                                    c2978b32.f29982f = new long[i52];
+                                    c2978b32.f29983g = new int[i52];
                                 }
-                                if (c2955b32.f29196h.length < i54) {
-                                    int i55 = (i54 * 125) / 100;
-                                    c2955b32.f29196h = new int[i55];
-                                    c2955b32.i = new long[i55];
-                                    c2955b32.f29197j = new boolean[i55];
-                                    c2955b32.f29199l = new boolean[i55];
+                                if (c2978b32.f29984h.length < i53) {
+                                    int i54 = (i53 * 125) / 100;
+                                    c2978b32.f29984h = new int[i54];
+                                    c2978b32.i = new long[i54];
+                                    c2978b32.f29985j = new boolean[i54];
+                                    c2978b32.f29987l = new boolean[i54];
                                 }
+                                int i55 = 0;
                                 int i56 = 0;
                                 int i57 = 0;
-                                int i58 = 0;
                                 while (true) {
                                     long j15 = 0;
-                                    if (i56 >= size5) {
+                                    if (i55 >= size5) {
                                         break;
                                     }
-                                    Zw zw3 = (Zw) arrayList12.get(i56);
-                                    if (zw3.f31138b == i14) {
-                                        int i59 = i57 + 1;
-                                        Cr cr5 = zw3.f28980c;
+                                    Zw zw3 = (Zw) arrayList12.get(i55);
+                                    if (zw3.f31925b == i13) {
+                                        int i58 = i56 + 1;
+                                        Cr cr5 = zw3.f29750c;
                                         cr5.E(8);
                                         int b11 = cr5.b();
-                                        i16 = i56;
-                                        C3008c3 c3008c33 = p26.f26719d;
-                                        i17 = size4;
-                                        K2 k26 = c2955b32.f29189a;
-                                        String str2 = AbstractC3159eu.f29993a;
-                                        i18 = i48;
-                                        c2955b32.f29195g[i57] = cr5.h();
-                                        long[] jArr = c2955b32.f29194f;
-                                        i19 = size5;
-                                        int i60 = i57;
-                                        long j16 = c2955b32.f29190b;
-                                        jArr[i60] = j16;
+                                        i15 = i55;
+                                        C3031c3 c3031c33 = p26.f27502d;
+                                        i16 = size4;
+                                        K2 k26 = c2978b32.f29977a;
+                                        String str2 = AbstractC3182eu.f30782a;
+                                        i17 = i47;
+                                        c2978b32.f29983g[i56] = cr5.h();
+                                        long[] jArr = c2978b32.f29982f;
+                                        i18 = size5;
+                                        int i59 = i56;
+                                        long j16 = c2978b32.f29978b;
+                                        jArr[i59] = j16;
                                         if ((b11 & 1) != 0) {
-                                            jArr[i60] = j16 + cr5.b();
+                                            jArr[i59] = j16 + cr5.b();
                                         }
-                                        boolean z11 = (b11 & 4) != 0;
-                                        int i61 = k26.f25832d;
-                                        int b12 = z11 ? cr5.b() : i61;
-                                        boolean z12 = z11;
-                                        int i62 = b11 & 256;
-                                        int i63 = b11 & 512;
-                                        int i64 = b11 & 1024;
-                                        int i65 = b11 & 2048;
-                                        Z2 z25 = c3008c33.f29416a;
+                                        boolean z12 = (b11 & 4) != 0;
+                                        int i60 = k26.f26584d;
+                                        int b12 = z12 ? cr5.b() : i60;
+                                        boolean z13 = z12;
+                                        int i61 = b11 & 256;
+                                        int i62 = b11 & 512;
+                                        int i63 = b11 & 1024;
+                                        int i64 = b11 & 2048;
+                                        Z2 z25 = c3031c33.f30199a;
                                         SC sc2 = z25.i;
                                         if (sc2 != null) {
-                                            i20 = i61;
-                                            i21 = b12;
-                                            if (sc2.f27424u == 1 && (sc = z25.f28830j) != null) {
+                                            i19 = i60;
+                                            i20 = b12;
+                                            if (sc2.f28138u == 1 && (sc = z25.f29610j) != null) {
                                                 if (sc2.a(0) == 0) {
                                                     p23 = p26;
                                                     arrayList5 = arrayList6;
-                                                    i22 = i58;
+                                                    i21 = i57;
                                                 } else {
                                                     long a9 = sc2.a(0);
                                                     RoundingMode roundingMode = RoundingMode.DOWN;
                                                     arrayList5 = arrayList6;
-                                                    i22 = i58;
-                                                    long w6 = AbstractC3159eu.w(a9, 1000000L, z25.f28825d, roundingMode);
+                                                    i21 = i57;
+                                                    long w3 = AbstractC3182eu.w(a9, 1000000L, z25.f29605d, roundingMode);
                                                     p23 = p26;
-                                                    i29 = w6 + AbstractC3159eu.w(sc.a(0), 1000000L, z25.f28824c, roundingMode) >= z25.f28826e ? 0 : 0;
-                                                    int[] iArr = c2955b32.f29196h;
-                                                    long[] jArr2 = c2955b32.i;
-                                                    boolean[] zArr2 = c2955b32.f29197j;
-                                                    i58 = i22 + c2955b32.f29195g[i60];
+                                                    i28 = w3 + AbstractC3182eu.w(sc.a(0), 1000000L, z25.f29604c, roundingMode) >= z25.f29606e ? 0 : 0;
+                                                    int[] iArr = c2978b32.f29984h;
+                                                    long[] jArr2 = c2978b32.i;
+                                                    boolean[] zArr2 = c2978b32.f29985j;
+                                                    i57 = i21 + c2978b32.f29983g[i59];
                                                     int[] iArr2 = iArr;
-                                                    long j17 = c2955b32.f29203p;
+                                                    long j17 = c2978b32.f29991p;
                                                     arrayList4 = arrayList5;
-                                                    i23 = i22;
-                                                    while (i23 < i58) {
+                                                    i22 = i21;
+                                                    while (i22 < i57) {
+                                                        if (i61 != 0) {
+                                                            i23 = i22;
+                                                            i24 = cr5.b();
+                                                        } else {
+                                                            i23 = i22;
+                                                            i24 = k26.f26582b;
+                                                        }
+                                                        i(i24);
                                                         if (i62 != 0) {
-                                                            i24 = i23;
+                                                            zArr = zArr2;
                                                             i25 = cr5.b();
                                                         } else {
-                                                            i24 = i23;
-                                                            i25 = k26.f25830b;
+                                                            zArr = zArr2;
+                                                            i25 = k26.f26583c;
                                                         }
                                                         i(i25);
                                                         if (i63 != 0) {
-                                                            zArr = zArr2;
                                                             i26 = cr5.b();
                                                         } else {
-                                                            zArr = zArr2;
-                                                            i26 = k26.f25831c;
-                                                        }
-                                                        i(i26);
-                                                        if (i64 != 0) {
-                                                            i27 = cr5.b();
-                                                        } else {
-                                                            if (i24 == 0) {
-                                                                if (z12) {
-                                                                    i27 = i21;
-                                                                    i24 = 0;
+                                                            if (i23 == 0) {
+                                                                if (z13) {
+                                                                    i26 = i20;
+                                                                    i23 = 0;
                                                                 } else {
-                                                                    i24 = 0;
+                                                                    i23 = 0;
                                                                 }
                                                             }
-                                                            i27 = i20;
+                                                            i26 = i19;
                                                         }
-                                                        if (i65 != 0) {
+                                                        if (i64 != 0) {
                                                             k24 = k26;
-                                                            i28 = cr5.b();
+                                                            i27 = cr5.b();
                                                         } else {
                                                             k24 = k26;
-                                                            i28 = 0;
+                                                            i27 = 0;
                                                         }
-                                                        int i66 = i26;
+                                                        int i65 = i25;
                                                         int[] iArr3 = iArr2;
-                                                        long w9 = AbstractC3159eu.w((i28 + j17) - j15, 1000000L, z25.f28824c, RoundingMode.DOWN);
-                                                        jArr2[i24] = w9;
-                                                        if (c2955b32.f29204q) {
+                                                        long w6 = AbstractC3182eu.w((i27 + j17) - j15, 1000000L, z25.f29604c, RoundingMode.DOWN);
+                                                        jArr2[i23] = w6;
+                                                        if (c2978b32.f29992q) {
                                                             p24 = p23;
                                                             z22 = z25;
                                                         } else {
                                                             p24 = p23;
                                                             z22 = z25;
-                                                            jArr2[i24] = w9 + p24.f26719d.i;
+                                                            jArr2[i23] = w6 + p24.f27502d.i;
                                                         }
-                                                        iArr3[i24] = i66;
-                                                        zArr[i24] = ((i27 >> 16) & 1) == 0;
-                                                        j17 += i25;
-                                                        i23 = i24 + 1;
+                                                        iArr3[i23] = i65;
+                                                        zArr[i23] = ((i26 >> 16) & 1) == 0;
+                                                        j17 += i24;
+                                                        i22 = i23 + 1;
                                                         z25 = z22;
                                                         zArr2 = zArr;
                                                         iArr2 = iArr3;
@@ -1940,139 +1940,139 @@ public final class Q2 implements Q0 {
                                                         k26 = k24;
                                                     }
                                                     p22 = p23;
-                                                    c2955b32.f29203p = j17;
-                                                    i57 = i59;
+                                                    c2978b32.f29991p = j17;
+                                                    i56 = i58;
                                                 }
-                                                j15 = sc.a(i29);
-                                                int[] iArr4 = c2955b32.f29196h;
-                                                long[] jArr22 = c2955b32.i;
-                                                boolean[] zArr22 = c2955b32.f29197j;
-                                                i58 = i22 + c2955b32.f29195g[i60];
+                                                j15 = sc.a(i28);
+                                                int[] iArr4 = c2978b32.f29984h;
+                                                long[] jArr22 = c2978b32.i;
+                                                boolean[] zArr22 = c2978b32.f29985j;
+                                                i57 = i21 + c2978b32.f29983g[i59];
                                                 int[] iArr22 = iArr4;
-                                                long j172 = c2955b32.f29203p;
+                                                long j172 = c2978b32.f29991p;
                                                 arrayList4 = arrayList5;
-                                                i23 = i22;
-                                                while (i23 < i58) {
+                                                i22 = i21;
+                                                while (i22 < i57) {
                                                 }
                                                 p22 = p23;
-                                                c2955b32.f29203p = j172;
-                                                i57 = i59;
+                                                c2978b32.f29991p = j172;
+                                                i56 = i58;
                                             }
                                         } else {
-                                            i20 = i61;
-                                            i21 = b12;
+                                            i19 = i60;
+                                            i20 = b12;
                                         }
                                         p23 = p26;
                                         arrayList5 = arrayList6;
-                                        i22 = i58;
-                                        int[] iArr42 = c2955b32.f29196h;
-                                        long[] jArr222 = c2955b32.i;
-                                        boolean[] zArr222 = c2955b32.f29197j;
-                                        i58 = i22 + c2955b32.f29195g[i60];
+                                        i21 = i57;
+                                        int[] iArr42 = c2978b32.f29984h;
+                                        long[] jArr222 = c2978b32.i;
+                                        boolean[] zArr222 = c2978b32.f29985j;
+                                        i57 = i21 + c2978b32.f29983g[i59];
                                         int[] iArr222 = iArr42;
-                                        long j1722 = c2955b32.f29203p;
+                                        long j1722 = c2978b32.f29991p;
                                         arrayList4 = arrayList5;
-                                        i23 = i22;
-                                        while (i23 < i58) {
+                                        i22 = i21;
+                                        while (i22 < i57) {
                                         }
                                         p22 = p23;
-                                        c2955b32.f29203p = j1722;
-                                        i57 = i59;
+                                        c2978b32.f29991p = j1722;
+                                        i56 = i58;
                                     } else {
-                                        i16 = i56;
-                                        i17 = size4;
-                                        i18 = i48;
-                                        i19 = size5;
+                                        i15 = i55;
+                                        i16 = size4;
+                                        i17 = i47;
+                                        i18 = size5;
                                         p22 = p26;
                                         arrayList4 = arrayList6;
                                     }
-                                    i56 = i16 + 1;
+                                    i55 = i15 + 1;
                                     p26 = p22;
-                                    size4 = i17;
-                                    i48 = i18;
-                                    size5 = i19;
+                                    size4 = i16;
+                                    i47 = i17;
+                                    size5 = i18;
                                     arrayList6 = arrayList4;
-                                    i14 = 1953658222;
+                                    i13 = 1953658222;
                                 }
-                                i10 = size4;
-                                i11 = i48;
+                                i9 = size4;
+                                i10 = i47;
                                 arrayList3 = arrayList6;
-                                C3008c3 c3008c34 = p26.f26719d;
-                                K2 k27 = c2955b32.f29189a;
+                                C3031c3 c3031c34 = p26.f27502d;
+                                K2 k27 = c2978b32.f29977a;
                                 k27.getClass();
-                                C2901a3[] c2901a3Arr = c3008c34.f29416a.f28834n;
-                                C2901a3 c2901a3 = c2901a3Arr == null ? null : c2901a3Arr[k27.f25829a];
-                                Zw i67 = iw2.i(1935763834);
-                                if (i67 != null) {
-                                    c2901a3.getClass();
-                                    Cr cr6 = i67.f28980c;
+                                C2924a3[] c2924a3Arr = c3031c34.f30199a.f29614n;
+                                C2924a3 c2924a3 = c2924a3Arr == null ? null : c2924a3Arr[k27.f26581a];
+                                Zw i66 = iw2.i(1935763834);
+                                if (i66 != null) {
+                                    c2924a3.getClass();
+                                    Cr cr6 = i66.f29750c;
                                     cr6.E(8);
                                     if ((cr6.b() & 1) == 1) {
                                         cr6.G(8);
                                     }
                                     int K7 = cr6.K();
-                                    int h10 = cr6.h();
-                                    int i68 = c2955b32.f29193e;
-                                    if (h10 > i68) {
-                                        throw U4.a(null, D.y.r(new StringBuilder(String.valueOf(h10).length() + 56 + String.valueOf(i68).length()), "Saiz sample count ", h10, " is greater than fragment sample count", i68));
+                                    int h9 = cr6.h();
+                                    int i67 = c2978b32.f29981e;
+                                    if (h9 > i67) {
+                                        throw U4.a(null, D.x.o(new StringBuilder(String.valueOf(h9).length() + 56 + String.valueOf(i67).length()), "Saiz sample count ", h9, " is greater than fragment sample count", i67));
                                     }
-                                    int i69 = c2901a3.f29013d;
+                                    int i68 = c2924a3.f29783d;
                                     if (K7 == 0) {
-                                        boolean[] zArr3 = c2955b32.f29199l;
-                                        i15 = 0;
-                                        for (int i70 = 0; i70 < h10; i70++) {
+                                        boolean[] zArr3 = c2978b32.f29987l;
+                                        i14 = 0;
+                                        for (int i69 = 0; i69 < h9; i69++) {
                                             int K8 = cr6.K();
-                                            i15 += K8;
-                                            zArr3[i70] = K8 > i69;
+                                            i14 += K8;
+                                            zArr3[i69] = K8 > i68;
                                         }
-                                        z6 = false;
+                                        z9 = false;
                                     } else {
-                                        boolean z13 = K7 > i69;
-                                        i15 = K7 * h10;
-                                        z6 = false;
-                                        Arrays.fill(c2955b32.f29199l, 0, h10, z13);
+                                        boolean z14 = K7 > i68;
+                                        i14 = K7 * h9;
+                                        z9 = false;
+                                        Arrays.fill(c2978b32.f29987l, 0, h9, z14);
                                     }
-                                    Arrays.fill(c2955b32.f29199l, h10, c2955b32.f29193e, z6);
-                                    if (i15 > 0) {
-                                        c2955b32.f29201n.y(i15);
-                                        c2955b32.f29198k = true;
-                                        c2955b32.f29202o = true;
+                                    Arrays.fill(c2978b32.f29987l, h9, c2978b32.f29981e, z9);
+                                    if (i14 > 0) {
+                                        c2978b32.f29989n.y(i14);
+                                        c2978b32.f29986k = true;
+                                        c2978b32.f29990o = true;
                                     }
                                 }
-                                Zw i71 = iw2.i(1935763823);
-                                if (i71 != null) {
-                                    Cr cr7 = i71.f28980c;
+                                Zw i70 = iw2.i(1935763823);
+                                if (i70 != null) {
+                                    Cr cr7 = i70.f29750c;
                                     cr7.E(8);
                                     int b13 = cr7.b();
                                     if ((b13 & 1) == 1) {
                                         cr7.G(8);
                                     }
-                                    int h11 = cr7.h();
-                                    if (h11 != 1) {
-                                        StringBuilder sb = new StringBuilder(String.valueOf(h11).length() + 29);
+                                    int h10 = cr7.h();
+                                    if (h10 != 1) {
+                                        StringBuilder sb = new StringBuilder(String.valueOf(h10).length() + 29);
                                         sb.append("Unexpected saio entry count: ");
-                                        sb.append(h11);
+                                        sb.append(h10);
                                         throw U4.a(null, sb.toString());
                                     }
-                                    c2955b32.f29191c += J2.a(b13) == 0 ? cr7.P() : cr7.j();
+                                    c2978b32.f29979c += J2.a(b13) == 0 ? cr7.P() : cr7.j();
                                 }
-                                Zw i72 = iw2.i(1936027235);
-                                if (i72 != null) {
-                                    j(i72.f28980c, 0, c2955b32);
+                                Zw i71 = iw2.i(1936027235);
+                                if (i71 != null) {
+                                    j(i71.f29750c, 0, c2978b32);
                                 }
-                                String str3 = c2901a3 != null ? c2901a3.f29011b : null;
+                                String str3 = c2924a3 != null ? c2924a3.f29781b : null;
                                 Cr cr8 = null;
                                 Cr cr9 = null;
-                                for (int i73 = 0; i73 < arrayList12.size(); i73++) {
-                                    Zw zw4 = (Zw) arrayList12.get(i73);
-                                    Cr cr10 = zw4.f28980c;
-                                    int i74 = zw4.f31138b;
-                                    if (i74 == 1935828848) {
+                                for (int i72 = 0; i72 < arrayList12.size(); i72++) {
+                                    Zw zw4 = (Zw) arrayList12.get(i72);
+                                    Cr cr10 = zw4.f29750c;
+                                    int i73 = zw4.f31925b;
+                                    if (i73 == 1935828848) {
                                         cr10.E(12);
                                         if (cr10.b() == 1936025959) {
                                             cr8 = cr10;
                                         }
-                                    } else if (i74 == 1936158820) {
+                                    } else if (i73 == 1936158820) {
                                         cr10.E(12);
                                         if (cr10.b() == 1936025959) {
                                             cr9 = cr10;
@@ -2080,45 +2080,45 @@ public final class Q2 implements Q0 {
                                     }
                                 }
                                 if (cr8 == null || cr9 == null) {
-                                    i13 = i33;
+                                    i12 = i32;
                                 } else {
                                     cr8.E(8);
                                     int a10 = J2.a(cr8.b());
-                                    int i75 = i47;
-                                    cr8.G(i75);
+                                    int i74 = i46;
+                                    cr8.G(i74);
                                     if (a10 == 1) {
-                                        cr8.G(i75);
+                                        cr8.G(i74);
                                     }
                                     if (cr8.b() != 1) {
                                         throw U4.c("Entry count in sbgp != 1 (unsupported).");
                                     }
                                     cr9.E(8);
                                     int a11 = J2.a(cr9.b());
-                                    cr9.G(i75);
+                                    cr9.G(i74);
                                     if (a11 != 1) {
-                                        i13 = i33;
-                                        if (a11 >= i13) {
-                                            cr9.G(i75);
+                                        i12 = i32;
+                                        if (a11 >= i12) {
+                                            cr9.G(i74);
                                         }
                                     } else {
                                         if (cr9.P() == 0) {
                                             throw U4.c("Variable length description in sgpd found (unsupported)");
                                         }
-                                        i13 = i33;
+                                        i12 = i32;
                                     }
                                     if (cr9.P() != 1) {
                                         throw U4.c("Entry count in sgpd != 1 (unsupported).");
                                     }
                                     cr9.G(1);
                                     int K9 = cr9.K();
-                                    int i76 = (K9 & 240) >> 4;
-                                    int i77 = K9 & 15;
-                                    i47 = i75;
+                                    int i75 = (K9 & 240) >> 4;
+                                    int i76 = K9 & 15;
+                                    i46 = i74;
                                     if (cr9.K() == 1) {
                                         int K10 = cr9.K();
-                                        int i78 = i32;
-                                        byte[] bArr3 = new byte[i78];
-                                        cr9.H(bArr3, 0, i78);
+                                        int i77 = i31;
+                                        byte[] bArr3 = new byte[i77];
+                                        cr9.H(bArr3, 0, i77);
                                         if (K10 == 0) {
                                             int K11 = cr9.K();
                                             byte[] bArr4 = new byte[K11];
@@ -2127,93 +2127,93 @@ public final class Q2 implements Q0 {
                                         } else {
                                             bArr = null;
                                         }
-                                        c2955b32.f29198k = true;
-                                        c2955b32.f29200m = new C2901a3(true, str3, K10, bArr3, i76, i77, bArr);
+                                        c2978b32.f29986k = true;
+                                        c2978b32.f29988m = new C2924a3(true, str3, K10, bArr3, i75, i76, bArr);
                                     }
                                 }
                                 int size6 = arrayList12.size();
-                                for (int i79 = 0; i79 < size6; i79++) {
-                                    Zw zw5 = (Zw) arrayList12.get(i79);
-                                    if (zw5.f31138b == 1970628964) {
-                                        Cr cr11 = zw5.f28980c;
+                                for (int i78 = 0; i78 < size6; i78++) {
+                                    Zw zw5 = (Zw) arrayList12.get(i78);
+                                    if (zw5.f31925b == 1970628964) {
+                                        Cr cr11 = zw5.f29750c;
                                         cr11.E(8);
-                                        byte[] bArr5 = this.f26940h;
+                                        byte[] bArr5 = this.f27727h;
                                         cr11.H(bArr5, 0, 16);
-                                        if (Arrays.equals(bArr5, f26919N)) {
-                                            j(cr11, 16, c2955b32);
+                                        if (Arrays.equals(bArr5, f27706N)) {
+                                            j(cr11, 16, c2978b32);
                                         }
                                     }
                                 }
-                                i12 = 16;
+                                i11 = 16;
                             }
                         } else {
                             arrayList2 = arrayList11;
-                            i10 = size4;
-                            i11 = i48;
+                            i9 = size4;
+                            i10 = i47;
                             arrayList3 = arrayList6;
+                            i11 = i31;
                             i12 = i32;
-                            i13 = i33;
                         }
-                        i48 = i11 + 1;
+                        i47 = i10 + 1;
+                        i31 = i11;
                         i32 = i12;
-                        i33 = i13;
                         arrayList11 = arrayList2;
-                        size4 = i10;
+                        size4 = i9;
                         arrayList6 = arrayList3;
                     }
                     EO l10 = l(arrayList6);
                     if (l10 != null) {
                         int size7 = sparseArray.size();
-                        for (int i80 = 0; i80 < size7; i80++) {
-                            P2 p27 = (P2) sparseArray.valueAt(i80);
-                            C3008c3 c3008c35 = p27.f26719d;
-                            K2 k28 = p27.f26717b.f29189a;
-                            String str4 = AbstractC3159eu.f29993a;
-                            int i81 = k28.f25829a;
-                            C2901a3[] c2901a3Arr2 = c3008c35.f29416a.f28834n;
-                            C2901a3 c2901a32 = c2901a3Arr2 == null ? null : c2901a3Arr2[i81];
-                            EO a12 = l10.a(c2901a32 != null ? c2901a32.f29011b : null);
-                            DP dp2 = p27.f26727m;
+                        for (int i79 = 0; i79 < size7; i79++) {
+                            P2 p27 = (P2) sparseArray.valueAt(i79);
+                            C3031c3 c3031c35 = p27.f27502d;
+                            K2 k28 = p27.f27500b.f29977a;
+                            String str4 = AbstractC3182eu.f30782a;
+                            int i80 = k28.f26581a;
+                            C2924a3[] c2924a3Arr2 = c3031c35.f30199a.f29614n;
+                            C2924a3 c2924a32 = c2924a3Arr2 == null ? null : c2924a3Arr2[i80];
+                            EO a12 = l10.a(c2924a32 != null ? c2924a32.f29781b : null);
+                            DP dp2 = p27.f27510m;
                             dp2.getClass();
-                            C3299hP c3299hP2 = new C3299hP(dp2);
-                            c3299hP2.f30796r = a12;
-                            DP dp3 = new DP(c3299hP2);
-                            if (p27.f26726l != null) {
-                                p27.f26726l = dp3;
+                            C3322hP c3322hP2 = new C3322hP(dp2);
+                            c3322hP2.f31562r = a12;
+                            DP dp3 = new DP(c3322hP2);
+                            if (p27.f27509l != null) {
+                                p27.f27509l = dp3;
                             } else {
-                                p27.f26716a.e(dp3);
+                                p27.f27499a.e(dp3);
                             }
                         }
                     }
-                    if (this.f26955x != com.anythink.basead.exoplayer.b.f6382b) {
+                    if (this.f27742x != com.anythink.basead.exoplayer.b.f7168b) {
                         int size8 = sparseArray.size();
-                        for (int i82 = 0; i82 < size8; i82++) {
-                            P2 p28 = (P2) sparseArray.valueAt(i82);
-                            long j18 = this.f26955x;
-                            int i83 = p28.f26721f;
+                        for (int i81 = 0; i81 < size8; i81++) {
+                            P2 p28 = (P2) sparseArray.valueAt(i81);
+                            long j18 = this.f27742x;
+                            int i82 = p28.f27504f;
                             while (true) {
-                                C2955b3 c2955b33 = p28.f26717b;
-                                if (i83 < c2955b33.f29193e && c2955b33.i[i83] <= j18) {
-                                    if (c2955b33.f29197j[i83]) {
-                                        p28.i = i83;
+                                C2978b3 c2978b33 = p28.f27500b;
+                                if (i82 < c2978b33.f29981e && c2978b33.i[i82] <= j18) {
+                                    if (c2978b33.f29985j[i82]) {
+                                        p28.i = i82;
                                     }
-                                    i83++;
+                                    i82++;
                                 }
                             }
                         }
-                        this.f26955x = com.anythink.basead.exoplayer.b.f6382b;
+                        this.f27742x = com.anythink.basead.exoplayer.b.f7168b;
                     }
                 } else if (!arrayDeque.isEmpty()) {
-                    ((Iw) arrayDeque.peek()).f25621e.add(iw);
+                    ((Iw) arrayDeque.peek()).f26374e.add(iw);
                 }
             }
         }
     }
 
-    public final void m(InterfaceC3113e1 interfaceC3113e1, U0 u02) {
-        this.f26927G.D(interfaceC3113e1);
+    public final void m(InterfaceC3136e1 interfaceC3136e1, U0 u02) {
+        this.f27714G.D(interfaceC3136e1);
         this.J = true;
-        u02.f27844n = this.f26932M;
+        u02.f28641n = this.f27719M;
         g();
     }
 }

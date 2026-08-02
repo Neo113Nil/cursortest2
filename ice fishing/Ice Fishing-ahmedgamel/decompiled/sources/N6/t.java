@@ -7,31 +7,31 @@ import java.util.concurrent.atomic.AtomicInteger;
 public abstract class t {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final i f2009a;
+    public static final i f2097a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final i f2010b;
+    public static final i f2098b;
 
     static {
-        AtomicInteger atomicInteger = j.f1975n;
-        f2009a = new i();
-        f2010b = new i();
+        AtomicInteger atomicInteger = j.f2063n;
+        f2097a = new i();
+        f2098b = new i();
     }
 
     public static int a(b bVar, f6.g gVar, j jVar) {
-        P6.a aVar = P6.a.f2560b;
+        P6.a aVar = P6.a.f2395b;
         int b9 = jVar.b();
-        int d2 = aVar.d(gVar, jVar);
-        int b10 = d.b(d2) + bVar.f1955c + d2;
-        jVar.f1978c[b9] = d2;
+        int d9 = aVar.d(gVar, jVar);
+        int b10 = d.b(d9) + bVar.f2043c + d9;
+        jVar.f2066c[b9] = d9;
         return b10;
     }
 
     public static int b(b bVar, Object obj, Object obj2, p pVar, j jVar) {
         int b9 = jVar.b();
         int a9 = pVar.a(obj, obj2, jVar);
-        int b10 = d.b(a9) + bVar.f1955c + a9;
-        jVar.f1978c[b9] = a9;
+        int b10 = d.b(a9) + bVar.f2043c + a9;
+        jVar.f2066c[b9] = a9;
         return b10;
     }
 
@@ -39,16 +39,16 @@ public abstract class t {
         if (list.isEmpty()) {
             return 0;
         }
-        int i = bVar.f1955c;
-        int i6 = 0;
-        for (int i9 = 0; i9 < list.size(); i9++) {
-            Object obj = list.get(i9);
+        int i = bVar.f2043c;
+        int i4 = 0;
+        for (int i6 = 0; i6 < list.size(); i6++) {
+            Object obj = list.get(i6);
             int b9 = jVar.b();
-            int d2 = qVar.d(obj, jVar);
-            jVar.f1978c[b9] = d2;
-            i6 += d.b(d2) + i + d2;
+            int d9 = qVar.d(obj, jVar);
+            jVar.f2066c[b9] = d9;
+            i4 += d.b(d9) + i + d9;
         }
-        return i6;
+        return i4;
     }
 
     public static int d(b bVar, String str, j jVar) {
@@ -56,94 +56,94 @@ public abstract class t {
         if (str == null || str.isEmpty()) {
             return 0;
         }
-        if (!jVar.f1976a) {
-            byte[] f3 = k.f(str);
-            jVar.a(f3);
-            int length = f3.length;
+        if (!jVar.f2064a) {
+            byte[] f2 = k.f(str);
+            jVar.a(f2);
+            int length = f2.length;
             if (length == 0) {
                 return 0;
             }
-            return d.b(length) + length + bVar.f1955c;
+            return d.b(length) + length + bVar.f2043c;
         }
-        if (jVar.f1977b && w.f2016d && v.b(str, w.f2014b) == 0) {
-            byte[] bArr = (byte[]) v.d(str, w.f2013a);
+        if (jVar.f2065b && w.f2104d && v.b(str, w.f2102b) == 0) {
+            byte[] bArr = (byte[]) v.d(str, w.f2101a);
             int length2 = str.length();
+            int i4 = 0;
             int i6 = 0;
-            int i9 = 0;
-            for (int i10 = 1; i10 <= (bArr.length / 2040) + 1; i10++) {
-                int min = Math.min(i10 * 2040, bArr.length & (-8));
+            for (int i9 = 1; i9 <= (bArr.length / 2040) + 1; i9++) {
+                int min = Math.min(i9 * 2040, bArr.length & (-8));
                 long j6 = 0;
-                while (i6 < min) {
-                    j6 += (v.c(w.f2015c + i6, bArr) & (-9187201950435737472L)) >>> 7;
-                    i6 += 8;
+                while (i4 < min) {
+                    j6 += (v.c(w.f2103c + i4, bArr) & (-9187201950435737472L)) >>> 7;
+                    i4 += 8;
                 }
                 if (j6 != 0) {
-                    for (int i11 = 0; i11 < 8; i11++) {
-                        i9 += (int) (255 & j6);
+                    for (int i10 = 0; i10 < 8; i10++) {
+                        i6 += (int) (255 & j6);
                         j6 >>>= 8;
                     }
                 }
             }
-            while (i6 < bArr.length) {
-                i9 += bArr[i6] >>> 31;
-                i6++;
+            while (i4 < bArr.length) {
+                i6 += bArr[i4] >>> 31;
+                i4++;
             }
-            i = length2 + i9;
+            i = length2 + i6;
         } else {
             int length3 = str.length();
-            int i12 = 0;
-            while (i12 < length3 && str.charAt(i12) < 128) {
-                i12++;
+            int i11 = 0;
+            while (i11 < length3 && str.charAt(i11) < 128) {
+                i11++;
             }
-            int i13 = length3;
+            int i12 = length3;
             while (true) {
-                if (i12 >= length3) {
+                if (i11 >= length3) {
                     break;
                 }
-                char charAt = str.charAt(i12);
+                char charAt = str.charAt(i11);
                 if (charAt < 2048) {
-                    i13 += (127 - charAt) >>> 31;
-                    i12++;
+                    i12 += (127 - charAt) >>> 31;
+                    i11++;
                 } else {
                     int length4 = str.length();
-                    int i14 = 0;
-                    while (i12 < length4) {
-                        char charAt2 = str.charAt(i12);
+                    int i13 = 0;
+                    while (i11 < length4) {
+                        char charAt2 = str.charAt(i11);
                         if (charAt2 < 2048) {
-                            i14 += (127 - charAt2) >>> 31;
+                            i13 += (127 - charAt2) >>> 31;
                         } else {
-                            int i15 = i14 + 2;
+                            int i14 = i13 + 2;
                             if (Character.isSurrogate(charAt2)) {
-                                if (Character.codePointAt(str, i12) != charAt2) {
-                                    i12++;
+                                if (Character.codePointAt(str, i11) != charAt2) {
+                                    i11++;
                                 }
                             }
-                            i14 = i15;
+                            i13 = i14;
                         }
-                        i12++;
+                        i11++;
                     }
-                    i13 += i14;
+                    i12 += i13;
                 }
             }
-            i = i13;
+            i = i12;
             if (i < length3) {
                 throw new IllegalArgumentException("UTF-8 length does not fit in int: " + (i + 4294967296L));
             }
         }
-        int i16 = jVar.f1980e;
-        int[] iArr = jVar.f1978c;
-        if (i16 == iArr.length) {
+        int i15 = jVar.f2068e;
+        int[] iArr = jVar.f2066c;
+        if (i15 == iArr.length) {
             int[] iArr2 = new int[iArr.length * 2];
             System.arraycopy(iArr, 0, iArr2, 0, iArr.length);
-            jVar.f1978c = iArr2;
+            jVar.f2066c = iArr2;
         }
-        int[] iArr3 = jVar.f1978c;
-        int i17 = jVar.f1980e;
-        jVar.f1980e = i17 + 1;
-        iArr3[i17] = i;
+        int[] iArr3 = jVar.f2066c;
+        int i16 = jVar.f2068e;
+        jVar.f2068e = i16 + 1;
+        iArr3[i16] = i;
         if (i == 0) {
             return 0;
         }
-        return d.b(i) + i + bVar.f1955c;
+        return d.b(i) + i + bVar.f2043c;
     }
 }

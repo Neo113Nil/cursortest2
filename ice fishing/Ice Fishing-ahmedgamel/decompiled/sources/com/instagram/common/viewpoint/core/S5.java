@@ -4,10 +4,10 @@ import com.facebook.ads.internal.api.NativeAdViewTypeApi;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public final class S5 implements NativeAdViewTypeApi {
-    public final EnumC1305Ve A00;
+    public final EnumC1325Ve A00;
 
     public S5(int i) {
-        this.A00 = EnumC1305Ve.A00(i);
+        this.A00 = EnumC1325Ve.A00(i);
     }
 
     @Override // com.facebook.ads.internal.api.NativeAdViewTypeApi

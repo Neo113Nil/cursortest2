@@ -6,11 +6,11 @@ import kotlin.jvm.internal.h;
 import kotlin.jvm.internal.i;
 import u7.v;
 import x4.f;
-import z4.InterfaceC5261b;
-import z7.InterfaceC5267d;
+import z4.InterfaceC5234b;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
-public final class b implements O5.b, com.onesignal.core.internal.startup.a, com.onesignal.core.internal.startup.b, InterfaceC5261b, x4.e {
+public final class b implements O5.b, com.onesignal.core.internal.startup.a, com.onesignal.core.internal.startup.b, InterfaceC5234b, x4.e {
     private final f _applicationService;
     private final com.onesignal.core.internal.config.c _configModelStore;
     private final O5.d _sessionModelStore;
@@ -33,7 +33,7 @@ public final class b implements O5.b, com.onesignal.core.internal.startup.a, com
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((O5.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(O5.a it) {
@@ -53,7 +53,7 @@ public final class b implements O5.b, com.onesignal.core.internal.startup.a, com
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((O5.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(O5.a it) {
@@ -72,7 +72,7 @@ public final class b implements O5.b, com.onesignal.core.internal.startup.a, com
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((O5.a) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(O5.a it) {
@@ -86,20 +86,20 @@ public final class b implements O5.b, com.onesignal.core.internal.startup.a, com
         final /* synthetic */ long $focusTimeMs;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public d(boolean z3, long j6) {
+        public d(boolean z6, long j6) {
             super(0);
-            this.$firedOnSubscribe = z3;
+            this.$firedOnSubscribe = z6;
             this.$focusTimeMs = j6;
         }
 
         @Override // I7.a
         public /* bridge */ /* synthetic */ Object invoke() {
-            m46invoke();
-            return v.f41353a;
+            m45invoke();
+            return v.f41073a;
         }
 
         /* renamed from: invoke, reason: collision with other method in class */
-        public final void m46invoke() {
+        public final void m45invoke() {
             b.this.handleOnFocus(this.$firedOnSubscribe, this.$focusTimeMs);
         }
     }
@@ -115,12 +115,12 @@ public final class b implements O5.b, com.onesignal.core.internal.startup.a, com
 
         @Override // I7.a
         public /* bridge */ /* synthetic */ Object invoke() {
-            m47invoke();
-            return v.f41353a;
+            m46invoke();
+            return v.f41073a;
         }
 
         /* renamed from: invoke, reason: collision with other method in class */
-        public final void m47invoke() {
+        public final void m46invoke() {
             b.this.handleOnUnfocused(this.$unfocusTimeMs);
         }
     }
@@ -149,8 +149,8 @@ public final class b implements O5.b, com.onesignal.core.internal.startup.a, com
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final void handleOnFocus(boolean z3, long j6) {
-        com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "SessionService.onFocus() - fired from start: " + z3);
+    public final void handleOnFocus(boolean z6, long j6) {
+        com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "SessionService.onFocus() - fired from start: " + z6);
         O5.c cVar = this.session;
         if (cVar == null) {
             com.onesignal.debug.internal.logging.b.warn$default("SessionService.onFocus called before bootstrap; ignoring.", null, 2, null);
@@ -165,7 +165,7 @@ public final class b implements O5.b, com.onesignal.core.internal.startup.a, com
             this.sessionLifeCycleNotifier.fire(c.INSTANCE);
             return;
         }
-        this.shouldFireOnSubscribe = z3;
+        this.shouldFireOnSubscribe = z6;
         String uuid = UUID.randomUUID().toString();
         h.d(uuid, "toString(...)");
         cVar.setSessionId(uuid);
@@ -188,10 +188,10 @@ public final class b implements O5.b, com.onesignal.core.internal.startup.a, com
         com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "SessionService.onUnfocused adding time " + focusTime + " for total: " + cVar.getActiveDuration());
     }
 
-    @Override // z4.InterfaceC5261b
-    public Object backgroundRun(InterfaceC5267d interfaceC5267d) {
+    @Override // z4.InterfaceC5234b
+    public Object backgroundRun(InterfaceC5240d interfaceC5240d) {
         endSession();
-        return v.f41353a;
+        return v.f41073a;
     }
 
     @Override // com.onesignal.core.internal.startup.a
@@ -205,7 +205,7 @@ public final class b implements O5.b, com.onesignal.core.internal.startup.a, com
         return this.sessionLifeCycleNotifier.getHasSubscribers();
     }
 
-    @Override // z4.InterfaceC5261b
+    @Override // z4.InterfaceC5234b
     public Long getScheduleBackgroundRunIn() {
         com.onesignal.core.internal.config.b bVar;
         O5.c cVar = this.session;
@@ -222,8 +222,8 @@ public final class b implements O5.b, com.onesignal.core.internal.startup.a, com
     }
 
     @Override // x4.e
-    public void onFocus(boolean z3) {
-        com.onesignal.common.threading.c.runOnSerialIOIfBackgroundThreading(new d(z3, this._time.getCurrentTimeMillis()));
+    public void onFocus(boolean z6) {
+        com.onesignal.common.threading.c.runOnSerialIOIfBackgroundThreading(new d(z6, this._time.getCurrentTimeMillis()));
     }
 
     @Override // x4.e

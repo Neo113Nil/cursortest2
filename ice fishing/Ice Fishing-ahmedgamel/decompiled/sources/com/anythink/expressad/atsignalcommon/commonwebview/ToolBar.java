@@ -24,103 +24,103 @@ public class ToolBar extends LinearLayout {
     public static class a {
 
         /* renamed from: c, reason: collision with root package name */
-        public static int f18006c = 40;
+        public static int f18793c = 40;
 
         /* renamed from: d, reason: collision with root package name */
-        public static int f18007d = 10;
+        public static int f18794d = 10;
 
         /* renamed from: a, reason: collision with root package name */
-        public int f18008a;
+        public int f18795a;
 
         /* renamed from: b, reason: collision with root package name */
-        public int f18009b;
+        public int f18796b;
 
         private void a(int i) {
-            this.f18008a = i;
+            this.f18795a = i;
         }
 
         private static void b() {
-            f18006c = 80;
+            f18793c = 80;
         }
 
         private int c() {
-            return this.f18008a;
+            return this.f18795a;
         }
 
         private int d() {
-            return this.f18009b;
+            return this.f18796b;
         }
 
         private static int e() {
-            return f18006c;
+            return f18793c;
         }
 
         private static int f() {
-            return f18007d;
+            return f18794d;
         }
 
         private void a() {
-            this.f18009b = 40;
+            this.f18796b = 40;
         }
 
         private static void b(int i) {
-            f18007d = i;
+            f18794d = i;
         }
     }
 
     public static class b {
 
         /* renamed from: a, reason: collision with root package name */
-        public String f18010a;
+        public String f18797a;
 
         /* renamed from: b, reason: collision with root package name */
-        public String f18011b;
+        public String f18798b;
 
         /* renamed from: c, reason: collision with root package name */
-        public String f18012c;
+        public String f18799c;
 
         /* renamed from: d, reason: collision with root package name */
-        public boolean f18013d;
+        public boolean f18800d;
 
         /* renamed from: e, reason: collision with root package name */
-        public View.OnClickListener f18014e;
+        public View.OnClickListener f18801e;
 
-        private b(String str, String str2, String str3, boolean z3, View.OnClickListener onClickListener) {
-            this.f18011b = str;
-            this.f18010a = str2;
-            this.f18012c = str3;
-            this.f18013d = z3;
-            this.f18014e = onClickListener;
+        private b(String str, String str2, String str3, boolean z6, View.OnClickListener onClickListener) {
+            this.f18798b = str;
+            this.f18797a = str2;
+            this.f18799c = str3;
+            this.f18800d = z6;
+            this.f18801e = onClickListener;
         }
 
         private b a(View.OnClickListener onClickListener) {
-            this.f18014e = onClickListener;
+            this.f18801e = onClickListener;
             return this;
         }
 
         private b b(String str) {
-            this.f18011b = str;
+            this.f18798b = str;
             return this;
         }
 
         private b c(String str) {
-            this.f18010a = str;
+            this.f18797a = str;
             return this;
         }
 
         private b a(String str) {
-            this.f18012c = str;
+            this.f18799c = str;
             return this;
         }
 
         private b a() {
-            this.f18013d = false;
+            this.f18800d = false;
             return this;
         }
 
         public b(String str) {
-            this.f18013d = true;
-            this.f18011b = str;
+            this.f18800d = true;
+            this.f18798b = str;
         }
     }
 
@@ -139,13 +139,13 @@ public class ToolBar extends LinearLayout {
         try {
             for (b bVar : list) {
                 ImageView imageView = (ImageView) b();
-                imageView.setTag(bVar.f18011b);
-                imageView.setImageDrawable(getResources().getDrawable(q.a(getContext(), bVar.f18012c, k.f19632c)));
-                LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(a.f18006c, -1);
+                imageView.setTag(bVar.f18798b);
+                imageView.setImageDrawable(getResources().getDrawable(q.a(getContext(), bVar.f18799c, k.f20419c)));
+                LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(a.f18793c, -1);
                 layoutParams.setMargins(32, 0, 32, 0);
                 imageView.setLayoutParams(layoutParams);
-                imageView.setOnClickListener(bVar.f18014e);
-                if (!bVar.f18013d) {
+                imageView.setOnClickListener(bVar.f18801e);
+                if (!bVar.f18800d) {
                     imageView.setVisibility(8);
                 }
                 addView(imageView);
@@ -164,10 +164,10 @@ public class ToolBar extends LinearLayout {
         try {
             for (b bVar : list) {
                 ImageView imageView = (ImageView) b();
-                imageView.setTag(bVar.f18011b);
-                imageView.setImageDrawable(getResources().getDrawable(q.a(getContext(), bVar.f18012c, k.f19632c)));
-                imageView.setOnClickListener(bVar.f18014e);
-                if (!bVar.f18013d) {
+                imageView.setTag(bVar.f18798b);
+                imageView.setImageDrawable(getResources().getDrawable(q.a(getContext(), bVar.f18799c, k.f20419c)));
+                imageView.setOnClickListener(bVar.f18801e);
+                if (!bVar.f18800d) {
                     imageView.setVisibility(8);
                 }
                 addView(imageView);
@@ -197,7 +197,7 @@ public class ToolBar extends LinearLayout {
     }
 
     public void setButtonIcon(String str, String str2) {
-        ((ImageView) findViewWithTag(str)).setImageDrawable(getResources().getDrawable(q.a(getContext(), str2, k.f19632c)));
+        ((ImageView) findViewWithTag(str)).setImageDrawable(getResources().getDrawable(q.a(getContext(), str2, k.f20419c)));
     }
 
     public void setOnItemClickListener(View.OnClickListener onClickListener) {
@@ -278,35 +278,35 @@ public class ToolBar extends LinearLayout {
         try {
             ImageView imageView = (ImageView) b();
             imageView.setTag(BACKWARD);
-            imageView.setImageDrawable(getResources().getDrawable(q.a(getContext(), "cm_backward", k.f19632c)));
+            imageView.setImageDrawable(getResources().getDrawable(q.a(getContext(), "cm_backward", k.f20419c)));
             addView(imageView);
         } catch (Exception unused2) {
         }
         try {
             ImageView imageView2 = (ImageView) b();
             imageView2.setTag(FORWARD);
-            imageView2.setImageDrawable(getResources().getDrawable(q.a(getContext(), "cm_forward", k.f19632c)));
+            imageView2.setImageDrawable(getResources().getDrawable(q.a(getContext(), "cm_forward", k.f20419c)));
             addView(imageView2);
         } catch (Exception unused3) {
         }
         try {
             ImageView imageView3 = (ImageView) b();
             imageView3.setTag(REFRESH);
-            imageView3.setImageDrawable(getResources().getDrawable(q.a(getContext(), "cm_refresh", k.f19632c)));
+            imageView3.setImageDrawable(getResources().getDrawable(q.a(getContext(), "cm_refresh", k.f20419c)));
             addView(imageView3);
         } catch (Exception unused4) {
         }
         try {
             ImageView imageView4 = (ImageView) b();
             imageView4.setTag(OPEN_BY_BROWSER);
-            imageView4.setImageDrawable(getResources().getDrawable(q.a(getContext(), "cm_browser", k.f19632c)));
+            imageView4.setImageDrawable(getResources().getDrawable(q.a(getContext(), "cm_browser", k.f20419c)));
             addView(imageView4);
         } catch (Exception unused5) {
         }
         try {
             ImageView imageView5 = (ImageView) b();
             imageView5.setTag(EXITS);
-            imageView5.setImageDrawable(getResources().getDrawable(q.a(getContext(), "cm_exits", k.f19632c)));
+            imageView5.setImageDrawable(getResources().getDrawable(q.a(getContext(), "cm_exits", k.f20419c)));
             addView(imageView5);
         } catch (Exception unused6) {
         }

@@ -4,102 +4,102 @@ package com.google.android.gms.internal.ads;
 public final class Y2 {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f28636a;
+    public int f29413a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f28637b;
+    public int f29414b;
 
     /* renamed from: c, reason: collision with root package name */
-    public long f28638c;
+    public long f29415c;
 
     /* renamed from: d, reason: collision with root package name */
-    public long f28639d;
+    public long f29416d;
 
     /* renamed from: e, reason: collision with root package name */
-    public long f28640e;
+    public long f29417e;
 
     /* renamed from: f, reason: collision with root package name */
-    public long f28641f;
+    public long f29418f;
 
     /* renamed from: g, reason: collision with root package name */
-    public DP f28642g;
+    public DP f29419g;
 
     /* renamed from: h, reason: collision with root package name */
-    public int f28643h;
-    public C2901a3[] i;
+    public int f29420h;
+    public C2924a3[] i;
 
     /* renamed from: j, reason: collision with root package name */
-    public int f28644j;
+    public int f29421j;
 
     /* renamed from: k, reason: collision with root package name */
-    public SC f28645k;
+    public SC f29422k;
 
     /* renamed from: l, reason: collision with root package name */
-    public SC f28646l;
+    public SC f29423l;
 
     /* renamed from: m, reason: collision with root package name */
-    public boolean f28647m;
+    public boolean f29424m;
 
     /* renamed from: n, reason: collision with root package name */
-    public int f28648n;
+    public int f29425n;
 
     public Y2() {
-        this.f28637b = -1;
-        this.f28638c = -1L;
-        this.f28639d = -1L;
-        this.f28640e = com.anythink.basead.exoplayer.b.f6382b;
-        this.f28641f = com.anythink.basead.exoplayer.b.f6382b;
-        this.f28643h = 0;
-        this.f28647m = true;
-        this.f28648n = -1;
+        this.f29414b = -1;
+        this.f29415c = -1L;
+        this.f29416d = -1L;
+        this.f29417e = com.anythink.basead.exoplayer.b.f7168b;
+        this.f29418f = com.anythink.basead.exoplayer.b.f7168b;
+        this.f29420h = 0;
+        this.f29424m = true;
+        this.f29425n = -1;
     }
 
     public final void a(DP dp) {
-        this.f28642g = dp;
+        this.f29419g = dp;
     }
 
     public final void b(int i) {
-        this.f28643h = i;
+        this.f29420h = i;
     }
 
-    public final void c(C2901a3[] c2901a3Arr) {
-        this.i = (C2901a3[]) c2901a3Arr.clone();
+    public final void c(C2924a3[] c2924a3Arr) {
+        this.i = (C2924a3[]) c2924a3Arr.clone();
     }
 
     public final void d(int i) {
-        this.f28644j = i;
+        this.f29421j = i;
     }
 
     public final void e(SC sc) {
-        this.f28645k = sc;
+        this.f29422k = sc;
     }
 
     public final void f(SC sc) {
-        this.f28646l = sc;
+        this.f29423l = sc;
     }
 
-    public final void g(boolean z3) {
-        this.f28647m = z3;
+    public final void g(boolean z6) {
+        this.f29424m = z6;
     }
 
     public final void h(int i) {
-        this.f28648n = i;
+        this.f29425n = i;
     }
 
     public /* synthetic */ Y2(Z2 z22) {
-        this.f28636a = z22.f28822a;
-        this.f28637b = z22.f28823b;
-        this.f28638c = z22.f28824c;
-        this.f28639d = z22.f28825d;
-        this.f28640e = z22.f28826e;
-        this.f28641f = z22.f28827f;
-        this.f28642g = z22.f28828g;
-        this.f28643h = z22.f28829h;
-        this.i = z22.f28834n;
-        this.f28644j = z22.f28831k;
-        this.f28645k = z22.i;
-        this.f28646l = z22.f28830j;
-        this.f28647m = z22.f28833m;
-        this.f28648n = z22.f28832l;
+        this.f29413a = z22.f29602a;
+        this.f29414b = z22.f29603b;
+        this.f29415c = z22.f29604c;
+        this.f29416d = z22.f29605d;
+        this.f29417e = z22.f29606e;
+        this.f29418f = z22.f29607f;
+        this.f29419g = z22.f29608g;
+        this.f29420h = z22.f29609h;
+        this.i = z22.f29614n;
+        this.f29421j = z22.f29611k;
+        this.f29422k = z22.i;
+        this.f29423l = z22.f29610j;
+        this.f29424m = z22.f29613m;
+        this.f29425n = z22.f29612l;
     }
 }

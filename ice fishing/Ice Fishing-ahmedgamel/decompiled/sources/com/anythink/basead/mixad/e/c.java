@@ -1,5 +1,6 @@
 package com.anythink.basead.mixad.e;
 
+import D.x;
 import com.anythink.core.common.h.y;
 import com.anythink.core.common.l.g.d;
 import java.io.Serializable;
@@ -8,16 +9,16 @@ import java.io.Serializable;
 public final class c extends y implements Serializable {
 
     /* renamed from: o, reason: collision with root package name */
-    private final int f9559o;
+    private final int f10345o;
 
     /* renamed from: p, reason: collision with root package name */
-    private final int f9560p;
+    private final int f10346p;
 
     /* renamed from: q, reason: collision with root package name */
-    private final int f9561q;
+    private final int f10347q;
 
     /* renamed from: r, reason: collision with root package name */
-    private boolean f9562r;
+    private boolean f10348r;
 
     public c(com.anythink.core.common.l.g.a aVar) {
         y(aVar.d());
@@ -27,59 +28,59 @@ public final class c extends y implements Serializable {
         A(aVar.e());
         z(aVar.f());
         e(aVar.n());
-        this.f9561q = aVar.j();
+        this.f10347q = aVar.j();
         int k9 = aVar.k();
-        this.f9559o = k9;
-        this.f9560p = aVar.m();
+        this.f10345o = k9;
+        this.f10346p = aVar.m();
         if (aVar instanceof d) {
-            this.f9562r = ((d) aVar).p();
+            this.f10348r = ((d) aVar).p();
         }
         f(String.valueOf(k9));
         ap(aVar.o());
     }
 
     public final boolean a() {
-        return this.f9561q == 1;
+        return this.f10347q == 1;
     }
 
     public final int b() {
-        return this.f9559o;
+        return this.f10345o;
     }
 
     public final int c() {
-        return this.f9560p;
+        return this.f10346p;
     }
 
     public final boolean d() {
-        return this.f9562r;
+        return this.f10348r;
     }
 
     public final String toString() {
         StringBuilder sb = new StringBuilder("ThirdPartyAdSetting{adSourceInterType=");
-        sb.append(this.f9559o);
+        sb.append(this.f10345o);
         sb.append(", adSourceShakeType=");
-        sb.append(this.f9560p);
+        sb.append(this.f10346p);
         sb.append(", nativeRenderingType=");
-        sb.append(this.f9561q);
+        sb.append(this.f10347q);
         sb.append(", isShowCloseButton=");
-        sb.append(this.f9562r);
+        sb.append(this.f10348r);
         sb.append(", probabilityForDelayShowCloseButtonInEndCard=");
-        sb.append(this.f14206e);
+        sb.append(this.f14992e);
         sb.append(", MinDelayTimeWhenShowCloseButton=");
-        sb.append(this.f14207f);
+        sb.append(this.f14993f);
         sb.append(", MaxDelayTimeWhenShowCloseButton=");
-        sb.append(this.f14208g);
+        sb.append(this.f14994g);
         sb.append(", interstitialType='");
-        sb.append(this.f14209h);
+        sb.append(this.f14995h);
         sb.append("', rewardTime=");
         sb.append(this.i);
         sb.append(", isRewardForPlayFail=");
-        sb.append(this.f14210j);
+        sb.append(this.f14996j);
         sb.append(", closeClickType=");
-        sb.append(this.f14211k);
+        sb.append(this.f14997k);
         sb.append(", splashImageScaleType=");
-        sb.append(this.f14212l);
+        sb.append(this.f14998l);
         sb.append(", impressionMonitorTime=");
-        return D.y.q(sb, this.f14213m, '}');
+        return x.n(sb, this.f14999m, '}');
     }
 }

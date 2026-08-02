@@ -12,36 +12,36 @@ import y8.r;
 public final class c extends a {
 
     /* renamed from: x, reason: collision with root package name */
-    public long f39661x;
+    public long f39769x;
 
     /* renamed from: y, reason: collision with root package name */
-    public boolean f39662y;
+    public boolean f39770y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final /* synthetic */ g f39663z;
+    public final /* synthetic */ g f39771z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public c(g gVar, n url) {
         super(gVar, url);
         h.e(url, "url");
-        this.f39663z = gVar;
-        this.f39661x = -1L;
-        this.f39662y = true;
+        this.f39771z = gVar;
+        this.f39769x = -1L;
+        this.f39770y = true;
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
-        if (this.f39656v) {
+        if (this.f39764v) {
             return;
         }
-        if (this.f39662y) {
+        if (this.f39770y) {
             TimeUnit timeUnit = TimeUnit.MILLISECONDS;
             if (!j8.d.d(this)) {
-                this.f39663z.f39672b.d();
-                a(g.f39670f);
+                this.f39771z.f39780b.d();
+                a(g.f39778f);
             }
         }
-        this.f39656v = true;
+        this.f39764v = true;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:43:0x0072, code lost:
@@ -50,7 +50,7 @@ public final class c extends a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:59:0x0075, code lost:
     
-        L3.F.g(16);
+        A8.b.f(16);
         r1 = java.lang.Integer.toString(r2, 16);
         kotlin.jvm.internal.h.d(r1, "toString(...)");
      */
@@ -66,27 +66,27 @@ public final class c extends a {
         y8.e eVar;
         long j9;
         h.e(sink, "sink");
-        if (this.f39656v) {
+        if (this.f39764v) {
             throw new IllegalStateException("closed");
         }
         long j10 = -1;
-        if (!this.f39662y) {
+        if (!this.f39770y) {
             return -1L;
         }
-        long j11 = this.f39661x;
-        g gVar = this.f39663z;
+        long j11 = this.f39769x;
+        g gVar = this.f39771z;
         if (j11 == 0 || j11 == -1) {
             if (j11 != -1) {
-                ((r) gVar.f39673c.f38405v).D(Long.MAX_VALUE);
+                ((r) gVar.f39781c.f38917v).D(Long.MAX_VALUE);
             }
             try {
-                r rVar = (r) gVar.f39673c.f38405v;
+                r rVar = (r) gVar.f39781c.f38917v;
                 rVar.E(1L);
                 int i = 0;
                 while (true) {
-                    int i6 = i + 1;
-                    boolean S8 = rVar.S(i6);
-                    eVar = rVar.f41985u;
+                    int i4 = i + 1;
+                    boolean S8 = rVar.S(i4);
+                    eVar = rVar.f41956u;
                     if (!S8) {
                         j9 = j10;
                         break;
@@ -97,18 +97,18 @@ public final class c extends a {
                         break;
                     }
                     j10 = j9;
-                    i = i6;
+                    i = i4;
                 }
-                this.f39661x = eVar.C();
-                String obj = j.q0(((r) gVar.f39673c.f38405v).D(Long.MAX_VALUE)).toString();
-                if (this.f39661x < 0 || (obj.length() > 0 && !q.R(obj, ";"))) {
-                    throw new ProtocolException("expected chunk size and optional extensions but was \"" + this.f39661x + obj + '\"');
+                this.f39769x = eVar.C();
+                String obj = j.G0(((r) gVar.f39781c.f38917v).D(Long.MAX_VALUE)).toString();
+                if (this.f39769x < 0 || (obj.length() > 0 && !q.h0(obj, ";"))) {
+                    throw new ProtocolException("expected chunk size and optional extensions but was \"" + this.f39769x + obj + '\"');
                 }
-                if (this.f39661x == 0) {
-                    this.f39662y = false;
-                    a(gVar.f39675e.h());
+                if (this.f39769x == 0) {
+                    this.f39770y = false;
+                    a(gVar.f39783e.h());
                 }
-                if (!this.f39662y) {
+                if (!this.f39770y) {
                     return j9;
                 }
             } catch (NumberFormatException e9) {
@@ -117,14 +117,14 @@ public final class c extends a {
         } else {
             j9 = -1;
         }
-        long d2 = super.d(Math.min(8192L, this.f39661x), sink);
-        if (d2 != j9) {
-            this.f39661x -= d2;
-            return d2;
+        long d9 = super.d(Math.min(8192L, this.f39769x), sink);
+        if (d9 != j9) {
+            this.f39769x -= d9;
+            return d9;
         }
-        gVar.f39672b.d();
+        gVar.f39780b.d();
         ProtocolException protocolException = new ProtocolException("unexpected end of stream");
-        a(g.f39670f);
+        a(g.f39778f);
         throw protocolException;
     }
 }

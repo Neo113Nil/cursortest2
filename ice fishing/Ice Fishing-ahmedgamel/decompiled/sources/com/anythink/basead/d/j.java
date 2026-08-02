@@ -7,68 +7,68 @@ import java.util.Map;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public x f6206a;
+    public x f6992a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f6207b;
+    public String f6993b;
 
     /* renamed from: c, reason: collision with root package name */
-    public String f6208c;
+    public String f6994c;
 
     /* renamed from: d, reason: collision with root package name */
-    public String f6209d;
+    public String f6995d;
 
     /* renamed from: e, reason: collision with root package name */
-    public int f6210e;
+    public int f6996e;
 
     /* renamed from: f, reason: collision with root package name */
-    public int f6211f;
+    public int f6997f;
 
     /* renamed from: g, reason: collision with root package name */
-    public int f6212g;
+    public int f6998g;
 
     /* renamed from: h, reason: collision with root package name */
-    public int f6213h;
+    public int f6999h;
     public a i;
 
     /* renamed from: j, reason: collision with root package name */
-    public k f6214j;
+    public k f7000j;
 
     /* renamed from: k, reason: collision with root package name */
-    public b f6215k;
+    public b f7001k;
 
     /* renamed from: l, reason: collision with root package name */
-    public boolean f6216l = false;
+    public boolean f7002l = false;
 
     /* renamed from: m, reason: collision with root package name */
-    public boolean f6217m = false;
+    public boolean f7003m = false;
 
     /* renamed from: n, reason: collision with root package name */
-    public int f6218n;
+    public int f7004n;
 
     /* renamed from: o, reason: collision with root package name */
-    public int f6219o;
+    public int f7005o;
 
     /* renamed from: p, reason: collision with root package name */
-    public int f6220p;
+    public int f7006p;
 
     /* renamed from: q, reason: collision with root package name */
-    public long f6221q;
+    public long f7007q;
 
     /* renamed from: r, reason: collision with root package name */
-    public Map<String, Object> f6222r;
+    public Map<String, Object> f7008r;
 
     public j(String str, String str2) {
-        this.f6207b = str;
-        this.f6208c = str2;
+        this.f6993b = str;
+        this.f6994c = str2;
     }
 
     public j(x xVar, String str) {
         if (xVar != null) {
-            this.f6206a = xVar;
-            this.f6207b = xVar.f14158d;
-            this.f6208c = xVar.f14156b;
+            this.f6992a = xVar;
+            this.f6993b = xVar.f14944d;
+            this.f6994c = xVar.f14942b;
         }
-        this.f6209d = str;
+        this.f6995d = str;
     }
 }

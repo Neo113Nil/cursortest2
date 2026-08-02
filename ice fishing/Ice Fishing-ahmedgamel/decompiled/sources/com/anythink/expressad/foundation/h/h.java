@@ -15,16 +15,16 @@ import java.net.URL;
 public final class h {
 
     /* renamed from: a, reason: collision with root package name */
-    public static int f19626a = 2048;
+    public static int f20413a = 2048;
 
     private static Bitmap a(String str, int i) {
         if (i <= 0) {
             i = 10;
         }
         try {
-            BufferedInputStream bufferedInputStream = new BufferedInputStream(new URL(str).openStream(), f19626a);
+            BufferedInputStream bufferedInputStream = new BufferedInputStream(new URL(str).openStream(), f20413a);
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-            BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(byteArrayOutputStream, f19626a);
+            BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(byteArrayOutputStream, f20413a);
             a(bufferedInputStream, bufferedOutputStream);
             bufferedOutputStream.flush();
             byte[] byteArray = byteArrayOutputStream.toByteArray();
@@ -39,136 +39,137 @@ public final class h {
     private static Bitmap b(Bitmap bitmap) {
         char c9;
         int i;
+        int i4;
         int i6;
-        int i9;
         int width = bitmap.getWidth();
         int height = bitmap.getHeight();
-        int i10 = width * height;
-        int[] iArr = new int[i10];
+        int i9 = width * height;
+        int[] iArr = new int[i9];
         bitmap.getPixels(iArr, 0, width, 0, 0, width, height);
-        int i11 = width - 1;
-        int i12 = height - 1;
-        int[] iArr2 = new int[i10];
-        int[] iArr3 = new int[i10];
-        int[] iArr4 = new int[i10];
+        int i10 = width - 1;
+        int i11 = height - 1;
+        int[] iArr2 = new int[i9];
+        int[] iArr3 = new int[i9];
+        int[] iArr4 = new int[i9];
         int[] iArr5 = new int[Math.max(width, height)];
         int[] iArr6 = new int[20736];
-        int i13 = 0;
-        for (int i14 = 0; i14 < 20736; i14++) {
-            iArr6[i14] = i14 / 81;
+        int i12 = 0;
+        for (int i13 = 0; i13 < 20736; i13++) {
+            iArr6[i13] = i13 / 81;
         }
         char c10 = 2;
-        boolean z3 = true;
+        boolean z6 = true;
         char c11 = 17;
         int[][] iArr7 = (int[][]) Array.newInstance((Class<?>) Integer.TYPE, 17, 3);
+        int i14 = 0;
         int i15 = 0;
         int i16 = 0;
-        int i17 = 0;
         while (true) {
             c9 = c10;
             i = 8;
-            if (i15 >= height) {
+            if (i14 >= height) {
                 break;
             }
-            int i18 = i13;
+            int i17 = i12;
+            int i18 = i17;
             int i19 = i18;
             int i20 = i19;
             int i21 = i20;
             int i22 = i21;
             int i23 = i22;
             int i24 = i23;
-            int i25 = i24;
-            boolean z6 = z3;
-            int i26 = -8;
-            int i27 = i25;
-            while (i26 <= 8) {
+            boolean z9 = z6;
+            int i25 = -8;
+            int i26 = i24;
+            while (i25 <= 8) {
                 char c12 = c11;
-                int i28 = iArr[Math.min(i11, Math.max(i26, i13)) + i16];
-                int[] iArr8 = iArr7[i26 + 8];
-                iArr8[i13] = (i28 & 16711680) >> 16;
-                iArr8[z6 ? 1 : 0] = (i28 & 65280) >> 8;
-                iArr8[c9] = i28 & com.anythink.basead.exoplayer.k.p.f8473b;
-                int abs = 9 - Math.abs(i26);
-                int i29 = iArr8[i13];
-                i27 = (i29 * abs) + i27;
-                int i30 = iArr8[z6 ? 1 : 0];
-                i18 = (i30 * abs) + i18;
-                int i31 = iArr8[c9];
-                i19 = (abs * i31) + i19;
-                if (i26 > 0) {
+                int i27 = iArr[Math.min(i10, Math.max(i25, i12)) + i15];
+                int[] iArr8 = iArr7[i25 + 8];
+                iArr8[i12] = (i27 & 16711680) >> 16;
+                iArr8[z9 ? 1 : 0] = (i27 & 65280) >> 8;
+                iArr8[c9] = i27 & com.anythink.basead.exoplayer.k.p.f9259b;
+                int abs = 9 - Math.abs(i25);
+                int i28 = iArr8[i12];
+                i26 = (i28 * abs) + i26;
+                int i29 = iArr8[z9 ? 1 : 0];
+                i17 = (i29 * abs) + i17;
+                int i30 = iArr8[c9];
+                i18 = (abs * i30) + i18;
+                if (i25 > 0) {
+                    i22 += i28;
                     i23 += i29;
                     i24 += i30;
-                    i25 += i31;
                 } else {
+                    i19 += i28;
                     i20 += i29;
                     i21 += i30;
-                    i22 += i31;
                 }
-                i26++;
+                i25++;
                 c11 = c12;
             }
             char c13 = c11;
-            int i32 = 8;
-            int i33 = i13;
-            while (i33 < width) {
-                iArr2[i16] = iArr6[i27];
-                iArr3[i16] = iArr6[i18];
-                iArr4[i16] = iArr6[i19];
-                int i34 = i27 - i20;
+            int i31 = 8;
+            int i32 = i12;
+            while (i32 < width) {
+                iArr2[i15] = iArr6[i26];
+                iArr3[i15] = iArr6[i17];
+                iArr4[i15] = iArr6[i18];
+                int i33 = i26 - i19;
+                int i34 = i17 - i20;
                 int i35 = i18 - i21;
-                int i36 = i19 - i22;
-                int[] iArr9 = iArr7[(i32 + 9) % 17];
-                int i37 = i20 - iArr9[i13];
-                int i38 = i21 - iArr9[z6 ? 1 : 0];
-                int i39 = i22 - iArr9[c9];
-                if (i15 == 0) {
-                    i9 = i13;
-                    iArr5[i33] = Math.min(i33 + 9, i11);
+                int[] iArr9 = iArr7[(i31 + 9) % 17];
+                int i36 = i19 - iArr9[i12];
+                int i37 = i20 - iArr9[z9 ? 1 : 0];
+                int i38 = i21 - iArr9[c9];
+                if (i14 == 0) {
+                    i6 = i12;
+                    iArr5[i32] = Math.min(i32 + 9, i10);
                 } else {
-                    i9 = i13;
+                    i6 = i12;
                 }
-                int i40 = iArr[i17 + iArr5[i33]];
-                int i41 = (i40 & 16711680) >> 16;
-                iArr9[i9] = i41;
-                int i42 = (i40 & 65280) >> 8;
-                iArr9[z6 ? 1 : 0] = i42;
-                int i43 = i40 & com.anythink.basead.exoplayer.k.p.f8473b;
-                iArr9[c9] = i43;
+                int i39 = iArr[i16 + iArr5[i32]];
+                int i40 = (i39 & 16711680) >> 16;
+                iArr9[i6] = i40;
+                int i41 = (i39 & 65280) >> 8;
+                iArr9[z9 ? 1 : 0] = i41;
+                int i42 = i39 & com.anythink.basead.exoplayer.k.p.f9259b;
+                iArr9[c9] = i42;
+                int i43 = i22 + i40;
                 int i44 = i23 + i41;
                 int i45 = i24 + i42;
-                int i46 = i25 + i43;
-                i27 = i34 + i44;
+                i26 = i33 + i43;
+                i17 = i34 + i44;
                 i18 = i35 + i45;
+                i31 = (i31 + 1) % 17;
+                int[] iArr10 = iArr7[i31 % 17];
+                int i46 = iArr10[i6];
                 i19 = i36 + i46;
-                i32 = (i32 + 1) % 17;
-                int[] iArr10 = iArr7[i32 % 17];
-                int i47 = iArr10[i9];
+                int i47 = iArr10[z9 ? 1 : 0];
                 i20 = i37 + i47;
-                int i48 = iArr10[z6 ? 1 : 0];
+                int i48 = iArr10[c9];
                 i21 = i38 + i48;
-                int i49 = iArr10[c9];
-                i22 = i39 + i49;
+                i22 = i43 - i46;
                 i23 = i44 - i47;
                 i24 = i45 - i48;
-                i25 = i46 - i49;
-                i16++;
-                i33++;
-                i13 = i9;
+                i15++;
+                i32++;
+                i12 = i6;
             }
-            i17 += width;
-            i15++;
+            i16 += width;
+            i14++;
             c10 = c9;
-            z3 = z6 ? 1 : 0;
+            z6 = z9 ? 1 : 0;
             c11 = c13;
         }
-        int i50 = i13;
-        boolean z9 = z3;
-        int i51 = i50;
-        while (i51 < width) {
-            int i52 = width * (-8);
-            int i53 = i51;
-            int i54 = -8;
-            int i55 = i50;
+        int i49 = i12;
+        boolean z10 = z6;
+        int i50 = i49;
+        while (i50 < width) {
+            int i51 = width * (-8);
+            int i52 = i50;
+            int i53 = -8;
+            int i54 = i49;
+            int i55 = i54;
             int i56 = i55;
             int i57 = i56;
             int i58 = i57;
@@ -176,89 +177,88 @@ public final class h {
             int i60 = i59;
             int i61 = i60;
             int i62 = i61;
-            int i63 = i62;
-            while (i54 <= i) {
-                int i64 = i;
-                int i65 = i50;
-                int max = Math.max(i65, i52) + i53;
-                int[] iArr11 = iArr7[i54 + 8];
-                iArr11[i65] = iArr2[max];
-                iArr11[z9 ? 1 : 0] = iArr3[max];
+            while (i53 <= i) {
+                int i63 = i;
+                int i64 = i49;
+                int max = Math.max(i64, i51) + i52;
+                int[] iArr11 = iArr7[i53 + 8];
+                iArr11[i64] = iArr2[max];
+                iArr11[z10 ? 1 : 0] = iArr3[max];
                 iArr11[c9] = iArr4[max];
-                int abs2 = 9 - Math.abs(i54);
-                i55 = (iArr2[max] * abs2) + i55;
-                i56 = (iArr3[max] * abs2) + i56;
-                i57 = (iArr4[max] * abs2) + i57;
-                if (i54 > 0) {
-                    i61 += iArr11[0];
-                    i62 += iArr11[z9 ? 1 : 0];
-                    i63 += iArr11[c9];
+                int abs2 = 9 - Math.abs(i53);
+                i54 = (iArr2[max] * abs2) + i54;
+                i55 = (iArr3[max] * abs2) + i55;
+                i56 = (iArr4[max] * abs2) + i56;
+                if (i53 > 0) {
+                    i60 += iArr11[0];
+                    i61 += iArr11[z10 ? 1 : 0];
+                    i62 += iArr11[c9];
                 } else {
-                    i58 += iArr11[0];
-                    i59 += iArr11[z9 ? 1 : 0];
-                    i60 += iArr11[c9];
+                    i57 += iArr11[0];
+                    i58 += iArr11[z10 ? 1 : 0];
+                    i59 += iArr11[c9];
                 }
-                if (i54 < i12) {
-                    i52 += width;
+                if (i53 < i11) {
+                    i51 += width;
                 }
-                i54++;
-                i = i64;
-                i50 = 0;
+                i53++;
+                i = i63;
+                i49 = 0;
             }
-            int i66 = i;
-            int i67 = i53;
-            int i68 = i66;
-            for (int i69 = 0; i69 < height; i69++) {
-                iArr[i67] = (iArr[i67] & (-16777216)) | (iArr6[i55] << 16) | (iArr6[i56] << 8) | iArr6[i57];
+            int i65 = i;
+            int i66 = i52;
+            int i67 = i65;
+            for (int i68 = 0; i68 < height; i68++) {
+                iArr[i66] = (iArr[i66] & (-16777216)) | (iArr6[i54] << 16) | (iArr6[i55] << 8) | iArr6[i56];
+                int i69 = i54 - i57;
                 int i70 = i55 - i58;
                 int i71 = i56 - i59;
-                int i72 = i57 - i60;
-                int[] iArr12 = iArr7[(i68 + 9) % 17];
-                int i73 = i58 - iArr12[0];
-                int i74 = i59 - iArr12[z9 ? 1 : 0];
-                int i75 = i60 - iArr12[c9];
-                if (i53 == 0) {
-                    i6 = i67;
-                    iArr5[i69] = Math.min(i69 + 9, i12) * width;
+                int[] iArr12 = iArr7[(i67 + 9) % 17];
+                int i72 = i57 - iArr12[0];
+                int i73 = i58 - iArr12[z10 ? 1 : 0];
+                int i74 = i59 - iArr12[c9];
+                if (i52 == 0) {
+                    i4 = i66;
+                    iArr5[i68] = Math.min(i68 + 9, i11) * width;
                 } else {
-                    i6 = i67;
+                    i4 = i66;
                 }
-                int i76 = i53 + iArr5[i69];
-                int i77 = iArr2[i76];
-                iArr12[0] = i77;
-                int i78 = iArr3[i76];
-                iArr12[z9 ? 1 : 0] = i78;
-                int i79 = iArr4[i76];
-                iArr12[c9] = i79;
+                int i75 = i52 + iArr5[i68];
+                int i76 = iArr2[i75];
+                iArr12[0] = i76;
+                int i77 = iArr3[i75];
+                iArr12[z10 ? 1 : 0] = i77;
+                int i78 = iArr4[i75];
+                iArr12[c9] = i78;
+                int i79 = i60 + i76;
                 int i80 = i61 + i77;
                 int i81 = i62 + i78;
-                int i82 = i63 + i79;
+                i54 = i69 + i79;
                 i55 = i70 + i80;
                 i56 = i71 + i81;
+                i67 = (i67 + 1) % 17;
+                int[] iArr13 = iArr7[i67];
+                int i82 = iArr13[0];
                 i57 = i72 + i82;
-                i68 = (i68 + 1) % 17;
-                int[] iArr13 = iArr7[i68];
-                int i83 = iArr13[0];
+                int i83 = iArr13[z10 ? 1 : 0];
                 i58 = i73 + i83;
-                int i84 = iArr13[z9 ? 1 : 0];
+                int i84 = iArr13[c9];
                 i59 = i74 + i84;
-                int i85 = iArr13[c9];
-                i60 = i75 + i85;
+                i60 = i79 - i82;
                 i61 = i80 - i83;
                 i62 = i81 - i84;
-                i63 = i82 - i85;
-                i67 = i6 + width;
+                i66 = i4 + width;
             }
-            i50 = 0;
-            i51 = i53 + 1;
-            i = i66;
+            i49 = 0;
+            i50 = i52 + 1;
+            i = i65;
         }
         bitmap.setPixels(iArr, 0, width, 0, 0, width, height);
         return bitmap;
     }
 
     private static void a(InputStream inputStream, OutputStream outputStream) {
-        byte[] bArr = new byte[f19626a];
+        byte[] bArr = new byte[f20413a];
         while (true) {
             int read = inputStream.read(bArr);
             if (read == -1) {

@@ -22,28 +22,28 @@ import java.util.concurrent.ConcurrentHashMap;
 public class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f5668a = "Bannera";
+    public static final String f6454a = "Bannera";
 
     /* renamed from: e, reason: collision with root package name */
-    private static final Map<String, a> f5669e = new ConcurrentHashMap(3);
+    private static final Map<String, a> f6455e = new ConcurrentHashMap(3);
 
     /* renamed from: b, reason: collision with root package name */
-    private final Context f5670b;
+    private final Context f6456b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final String f5671c;
+    private final String f6457c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final f f5672d;
+    private final f f6458d;
 
     private a(Context context, String str) {
-        this.f5670b = context.getApplicationContext();
-        this.f5671c = str;
-        this.f5672d = f.a(context, str, "2");
+        this.f6456b = context.getApplicationContext();
+        this.f6457c = str;
+        this.f6458d = f.a(context, str, "2");
     }
 
     public static a a(Context context, String str) {
-        Map<String, a> map = f5669e;
+        Map<String, a> map = f6455e;
         a aVar = map.get(str);
         if (aVar != null) {
             return aVar;
@@ -63,41 +63,41 @@ public class a {
 
     public final void a(Context context, int i, com.anythink.core.common.d.a aVar, com.anythink.core.common.d.c cVar, ATAdMultipleLoadedListener aTAdMultipleLoadedListener, Map<String, Object> map, ATAdRequest aTAdRequest) {
         ar arVar = new ar();
-        arVar.f13548d = cVar;
-        arVar.f13550f = aTAdMultipleLoadedListener;
+        arVar.f14334d = cVar;
+        arVar.f14336f = aTAdMultipleLoadedListener;
         arVar.a(context);
         arVar.a(aTAdRequest);
-        arVar.f13547c = i;
+        arVar.f14333c = i;
         if (map != null) {
             try {
-                arVar.f13551g = new HashMap(map);
+                arVar.f14337g = new HashMap(map);
             } catch (Throwable unused) {
             }
         }
         if (aTAdRequest != null) {
-            arVar.f13555l = aTAdRequest.getATAdxBidFloorInfo();
+            arVar.f14341l = aTAdRequest.getATAdxBidFloorInfo();
         }
-        this.f5672d.b(this.f5670b, "2", this.f5671c, arVar, aVar);
+        this.f6458d.b(this.f6456b, "2", this.f6457c, arVar, aVar);
     }
 
     public final List<ATAdInfo> a(Context context) {
-        return this.f5672d.a(context);
+        return this.f6458d.a(context);
     }
 
     public final ATAdStatusInfo a(Context context, Map<String, Object> map) {
-        return this.f5672d.a(context, map);
+        return this.f6458d.a(context, map);
     }
 
-    public final com.anythink.core.common.h.c a(Context context, boolean z3, ae aeVar) {
-        return this.f5672d.b(context, false, z3, aeVar);
+    public final com.anythink.core.common.h.c a(Context context, boolean z6, ae aeVar) {
+        return this.f6458d.b(context, false, z6, aeVar);
     }
 
     public final void a(com.anythink.core.common.h.c cVar) {
-        this.f5672d.a(cVar);
+        this.f6458d.a(cVar);
     }
 
     public final boolean a() {
-        return this.f5672d.g();
+        return this.f6458d.g();
     }
 
     public final View a(Context context, com.anythink.core.common.h.c cVar, CustomBannerAdapter customBannerAdapter, final b bVar, ATNativeAdCustomRender aTNativeAdCustomRender) {
@@ -136,10 +136,10 @@ public class a {
                 }
 
                 @Override // com.anythink.core.common.l.e.a, com.anythink.core.common.l.e.a.b
-                public final void onDeeplinkCallback(boolean z3) {
+                public final void onDeeplinkCallback(boolean z6) {
                     b bVar2 = bVar;
                     if (bVar2 != null) {
-                        bVar2.onDeeplinkCallback(z3);
+                        bVar2.onDeeplinkCallback(z6);
                     }
                 }
 
@@ -159,6 +159,6 @@ public class a {
     }
 
     public static void a(String str) {
-        f5669e.remove(str);
+        f6455e.remove(str);
     }
 }

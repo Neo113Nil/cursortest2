@@ -1,249 +1,249 @@
 package z;
 
 import android.view.ViewGroup;
-import w.C5139d;
+import w.C5130e;
 
 /* loaded from: classes.dex */
 public final class e extends ViewGroup.MarginLayoutParams {
 
     /* renamed from: A, reason: collision with root package name */
-    public int f42021A;
+    public int f41992A;
 
     /* renamed from: B, reason: collision with root package name */
-    public int f42022B;
+    public int f41993B;
 
     /* renamed from: C, reason: collision with root package name */
-    public int f42023C;
+    public int f41994C;
 
     /* renamed from: D, reason: collision with root package name */
-    public int f42024D;
+    public int f41995D;
 
     /* renamed from: E, reason: collision with root package name */
-    public float f42025E;
+    public float f41996E;
 
     /* renamed from: F, reason: collision with root package name */
-    public float f42026F;
+    public float f41997F;
 
     /* renamed from: G, reason: collision with root package name */
-    public String f42027G;
+    public String f41998G;
 
     /* renamed from: H, reason: collision with root package name */
-    public float f42028H;
+    public float f41999H;
 
     /* renamed from: I, reason: collision with root package name */
-    public float f42029I;
+    public float f42000I;
     public int J;
 
     /* renamed from: K, reason: collision with root package name */
-    public int f42030K;
+    public int f42001K;
 
     /* renamed from: L, reason: collision with root package name */
-    public int f42031L;
+    public int f42002L;
 
     /* renamed from: M, reason: collision with root package name */
-    public int f42032M;
+    public int f42003M;
 
     /* renamed from: N, reason: collision with root package name */
-    public int f42033N;
+    public int f42004N;
 
     /* renamed from: O, reason: collision with root package name */
-    public int f42034O;
+    public int f42005O;
 
     /* renamed from: P, reason: collision with root package name */
-    public int f42035P;
+    public int f42006P;
 
     /* renamed from: Q, reason: collision with root package name */
-    public int f42036Q;
+    public int f42007Q;
 
     /* renamed from: R, reason: collision with root package name */
-    public float f42037R;
+    public float f42008R;
 
     /* renamed from: S, reason: collision with root package name */
-    public float f42038S;
+    public float f42009S;
 
     /* renamed from: T, reason: collision with root package name */
-    public int f42039T;
+    public int f42010T;
 
     /* renamed from: U, reason: collision with root package name */
-    public int f42040U;
+    public int f42011U;
 
     /* renamed from: V, reason: collision with root package name */
-    public int f42041V;
+    public int f42012V;
 
     /* renamed from: W, reason: collision with root package name */
-    public boolean f42042W;
+    public boolean f42013W;
 
     /* renamed from: X, reason: collision with root package name */
-    public boolean f42043X;
+    public boolean f42014X;
     public String Y;
 
     /* renamed from: Z, reason: collision with root package name */
-    public int f42044Z;
+    public int f42015Z;
 
     /* renamed from: a, reason: collision with root package name */
-    public int f42045a;
+    public int f42016a;
 
     /* renamed from: a0, reason: collision with root package name */
-    public boolean f42046a0;
+    public boolean f42017a0;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f42047b;
+    public int f42018b;
 
     /* renamed from: b0, reason: collision with root package name */
-    public boolean f42048b0;
+    public boolean f42019b0;
 
     /* renamed from: c, reason: collision with root package name */
-    public float f42049c;
+    public float f42020c;
 
     /* renamed from: c0, reason: collision with root package name */
-    public boolean f42050c0;
+    public boolean f42021c0;
 
     /* renamed from: d, reason: collision with root package name */
-    public boolean f42051d;
+    public boolean f42022d;
 
     /* renamed from: d0, reason: collision with root package name */
-    public boolean f42052d0;
+    public boolean f42023d0;
 
     /* renamed from: e, reason: collision with root package name */
-    public int f42053e;
+    public int f42024e;
 
     /* renamed from: e0, reason: collision with root package name */
-    public boolean f42054e0;
+    public boolean f42025e0;
 
     /* renamed from: f, reason: collision with root package name */
-    public int f42055f;
+    public int f42026f;
 
     /* renamed from: f0, reason: collision with root package name */
-    public int f42056f0;
+    public int f42027f0;
 
     /* renamed from: g, reason: collision with root package name */
-    public int f42057g;
+    public int f42028g;
 
     /* renamed from: g0, reason: collision with root package name */
-    public int f42058g0;
+    public int f42029g0;
 
     /* renamed from: h, reason: collision with root package name */
-    public int f42059h;
+    public int f42030h;
 
     /* renamed from: h0, reason: collision with root package name */
-    public int f42060h0;
+    public int f42031h0;
     public int i;
 
     /* renamed from: i0, reason: collision with root package name */
-    public int f42061i0;
+    public int f42032i0;
 
     /* renamed from: j, reason: collision with root package name */
-    public int f42062j;
+    public int f42033j;
 
     /* renamed from: j0, reason: collision with root package name */
-    public int f42063j0;
+    public int f42034j0;
 
     /* renamed from: k, reason: collision with root package name */
-    public int f42064k;
+    public int f42035k;
 
     /* renamed from: k0, reason: collision with root package name */
-    public int f42065k0;
+    public int f42036k0;
 
     /* renamed from: l, reason: collision with root package name */
-    public int f42066l;
+    public int f42037l;
 
     /* renamed from: l0, reason: collision with root package name */
-    public float f42067l0;
+    public float f42038l0;
 
     /* renamed from: m, reason: collision with root package name */
-    public int f42068m;
+    public int f42039m;
     public int m0;
 
     /* renamed from: n, reason: collision with root package name */
-    public int f42069n;
+    public int f42040n;
 
     /* renamed from: n0, reason: collision with root package name */
-    public int f42070n0;
+    public int f42041n0;
 
     /* renamed from: o, reason: collision with root package name */
-    public int f42071o;
+    public int f42042o;
 
     /* renamed from: o0, reason: collision with root package name */
-    public float f42072o0;
+    public float f42043o0;
 
     /* renamed from: p, reason: collision with root package name */
-    public int f42073p;
+    public int f42044p;
 
     /* renamed from: p0, reason: collision with root package name */
-    public C5139d f42074p0;
+    public C5130e f42045p0;
 
     /* renamed from: q, reason: collision with root package name */
-    public int f42075q;
+    public int f42046q;
 
     /* renamed from: r, reason: collision with root package name */
-    public float f42076r;
+    public float f42047r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f42077s;
+    public int f42048s;
 
     /* renamed from: t, reason: collision with root package name */
-    public int f42078t;
+    public int f42049t;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f42079u;
+    public int f42050u;
 
     /* renamed from: v, reason: collision with root package name */
-    public int f42080v;
+    public int f42051v;
 
     /* renamed from: w, reason: collision with root package name */
-    public int f42081w;
+    public int f42052w;
 
     /* renamed from: x, reason: collision with root package name */
-    public int f42082x;
+    public int f42053x;
 
     /* renamed from: y, reason: collision with root package name */
-    public int f42083y;
+    public int f42054y;
 
     /* renamed from: z, reason: collision with root package name */
-    public int f42084z;
+    public int f42055z;
 
     public final void a() {
-        this.f42052d0 = false;
-        this.f42046a0 = true;
-        this.f42048b0 = true;
+        this.f42023d0 = false;
+        this.f42017a0 = true;
+        this.f42019b0 = true;
         int i = ((ViewGroup.MarginLayoutParams) this).width;
-        if (i == -2 && this.f42042W) {
-            this.f42046a0 = false;
-            if (this.f42031L == 0) {
-                this.f42031L = 1;
+        if (i == -2 && this.f42013W) {
+            this.f42017a0 = false;
+            if (this.f42002L == 0) {
+                this.f42002L = 1;
             }
         }
-        int i6 = ((ViewGroup.MarginLayoutParams) this).height;
-        if (i6 == -2 && this.f42043X) {
-            this.f42048b0 = false;
-            if (this.f42032M == 0) {
-                this.f42032M = 1;
+        int i4 = ((ViewGroup.MarginLayoutParams) this).height;
+        if (i4 == -2 && this.f42014X) {
+            this.f42019b0 = false;
+            if (this.f42003M == 0) {
+                this.f42003M = 1;
             }
         }
         if (i == 0 || i == -1) {
-            this.f42046a0 = false;
-            if (i == 0 && this.f42031L == 1) {
+            this.f42017a0 = false;
+            if (i == 0 && this.f42002L == 1) {
                 ((ViewGroup.MarginLayoutParams) this).width = -2;
-                this.f42042W = true;
+                this.f42013W = true;
             }
         }
-        if (i6 == 0 || i6 == -1) {
-            this.f42048b0 = false;
-            if (i6 == 0 && this.f42032M == 1) {
+        if (i4 == 0 || i4 == -1) {
+            this.f42019b0 = false;
+            if (i4 == 0 && this.f42003M == 1) {
                 ((ViewGroup.MarginLayoutParams) this).height = -2;
-                this.f42043X = true;
+                this.f42014X = true;
             }
         }
-        if (this.f42049c == -1.0f && this.f42045a == -1 && this.f42047b == -1) {
+        if (this.f42020c == -1.0f && this.f42016a == -1 && this.f42018b == -1) {
             return;
         }
-        this.f42052d0 = true;
-        this.f42046a0 = true;
-        this.f42048b0 = true;
-        if (!(this.f42074p0 instanceof w.h)) {
-            this.f42074p0 = new w.h();
+        this.f42023d0 = true;
+        this.f42017a0 = true;
+        this.f42019b0 = true;
+        if (!(this.f42045p0 instanceof w.i)) {
+            this.f42045p0 = new w.i();
         }
-        ((w.h) this.f42074p0).S(this.f42041V);
+        ((w.i) this.f42045p0).S(this.f42012V);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:12:0x004a  */
@@ -258,152 +258,152 @@ public final class e extends ViewGroup.MarginLayoutParams {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void resolveLayoutDirection(int i) {
+        int i4;
         int i6;
         int i9;
         int i10;
-        int i11;
-        int i12 = ((ViewGroup.MarginLayoutParams) this).leftMargin;
-        int i13 = ((ViewGroup.MarginLayoutParams) this).rightMargin;
+        int i11 = ((ViewGroup.MarginLayoutParams) this).leftMargin;
+        int i12 = ((ViewGroup.MarginLayoutParams) this).rightMargin;
         super.resolveLayoutDirection(i);
-        boolean z3 = false;
-        boolean z6 = 1 == getLayoutDirection();
-        this.f42060h0 = -1;
-        this.f42061i0 = -1;
-        this.f42056f0 = -1;
-        this.f42058g0 = -1;
-        this.f42063j0 = this.f42081w;
-        this.f42065k0 = this.f42083y;
-        float f3 = this.f42025E;
-        this.f42067l0 = f3;
-        int i14 = this.f42045a;
-        this.m0 = i14;
-        int i15 = this.f42047b;
-        this.f42070n0 = i15;
-        float f9 = this.f42049c;
-        this.f42072o0 = f9;
-        if (z6) {
-            int i16 = this.f42077s;
-            if (i16 != -1) {
-                this.f42060h0 = i16;
+        boolean z6 = false;
+        boolean z9 = 1 == getLayoutDirection();
+        this.f42031h0 = -1;
+        this.f42032i0 = -1;
+        this.f42027f0 = -1;
+        this.f42029g0 = -1;
+        this.f42034j0 = this.f42052w;
+        this.f42036k0 = this.f42054y;
+        float f2 = this.f41996E;
+        this.f42038l0 = f2;
+        int i13 = this.f42016a;
+        this.m0 = i13;
+        int i14 = this.f42018b;
+        this.f42041n0 = i14;
+        float f9 = this.f42020c;
+        this.f42043o0 = f9;
+        if (z9) {
+            int i15 = this.f42048s;
+            if (i15 != -1) {
+                this.f42031h0 = i15;
             } else {
-                int i17 = this.f42078t;
-                if (i17 != -1) {
-                    this.f42061i0 = i17;
+                int i16 = this.f42049t;
+                if (i16 != -1) {
+                    this.f42032i0 = i16;
                 }
-                i6 = this.f42079u;
+                i4 = this.f42050u;
+                if (i4 != -1) {
+                    this.f42029g0 = i4;
+                    z6 = true;
+                }
+                i6 = this.f42051v;
                 if (i6 != -1) {
-                    this.f42058g0 = i6;
-                    z3 = true;
+                    this.f42027f0 = i6;
+                    z6 = true;
                 }
-                i9 = this.f42080v;
-                if (i9 != -1) {
-                    this.f42056f0 = i9;
-                    z3 = true;
+                i9 = this.f41992A;
+                if (i9 != Integer.MIN_VALUE) {
+                    this.f42036k0 = i9;
                 }
-                i10 = this.f42021A;
+                i10 = this.f41993B;
                 if (i10 != Integer.MIN_VALUE) {
-                    this.f42065k0 = i10;
+                    this.f42034j0 = i10;
                 }
-                i11 = this.f42022B;
-                if (i11 != Integer.MIN_VALUE) {
-                    this.f42063j0 = i11;
+                if (z6) {
+                    this.f42038l0 = 1.0f - f2;
                 }
-                if (z3) {
-                    this.f42067l0 = 1.0f - f3;
-                }
-                if (this.f42052d0 && this.f42041V == 1 && this.f42051d) {
+                if (this.f42023d0 && this.f42012V == 1 && this.f42022d) {
                     if (f9 == -1.0f) {
-                        this.f42072o0 = 1.0f - f9;
+                        this.f42043o0 = 1.0f - f9;
                         this.m0 = -1;
-                        this.f42070n0 = -1;
+                        this.f42041n0 = -1;
+                    } else if (i13 != -1) {
+                        this.f42041n0 = i13;
+                        this.m0 = -1;
+                        this.f42043o0 = -1.0f;
                     } else if (i14 != -1) {
-                        this.f42070n0 = i14;
-                        this.m0 = -1;
-                        this.f42072o0 = -1.0f;
-                    } else if (i15 != -1) {
-                        this.m0 = i15;
-                        this.f42070n0 = -1;
-                        this.f42072o0 = -1.0f;
+                        this.m0 = i14;
+                        this.f42041n0 = -1;
+                        this.f42043o0 = -1.0f;
                     }
                 }
             }
-            z3 = true;
-            i6 = this.f42079u;
+            z6 = true;
+            i4 = this.f42050u;
+            if (i4 != -1) {
+            }
+            i6 = this.f42051v;
             if (i6 != -1) {
             }
-            i9 = this.f42080v;
-            if (i9 != -1) {
+            i9 = this.f41992A;
+            if (i9 != Integer.MIN_VALUE) {
             }
-            i10 = this.f42021A;
+            i10 = this.f41993B;
             if (i10 != Integer.MIN_VALUE) {
             }
-            i11 = this.f42022B;
-            if (i11 != Integer.MIN_VALUE) {
+            if (z6) {
             }
-            if (z3) {
-            }
-            if (this.f42052d0) {
+            if (this.f42023d0) {
                 if (f9 == -1.0f) {
                 }
             }
         } else {
-            int i18 = this.f42077s;
+            int i17 = this.f42048s;
+            if (i17 != -1) {
+                this.f42029g0 = i17;
+            }
+            int i18 = this.f42049t;
             if (i18 != -1) {
-                this.f42058g0 = i18;
+                this.f42027f0 = i18;
             }
-            int i19 = this.f42078t;
+            int i19 = this.f42050u;
             if (i19 != -1) {
-                this.f42056f0 = i19;
+                this.f42031h0 = i19;
             }
-            int i20 = this.f42079u;
+            int i20 = this.f42051v;
             if (i20 != -1) {
-                this.f42060h0 = i20;
+                this.f42032i0 = i20;
             }
-            int i21 = this.f42080v;
-            if (i21 != -1) {
-                this.f42061i0 = i21;
+            int i21 = this.f41992A;
+            if (i21 != Integer.MIN_VALUE) {
+                this.f42034j0 = i21;
             }
-            int i22 = this.f42021A;
+            int i22 = this.f41993B;
             if (i22 != Integer.MIN_VALUE) {
-                this.f42063j0 = i22;
-            }
-            int i23 = this.f42022B;
-            if (i23 != Integer.MIN_VALUE) {
-                this.f42065k0 = i23;
+                this.f42036k0 = i22;
             }
         }
-        if (this.f42079u == -1 && this.f42080v == -1 && this.f42078t == -1 && this.f42077s == -1) {
-            int i24 = this.f42057g;
-            if (i24 != -1) {
-                this.f42060h0 = i24;
-                if (((ViewGroup.MarginLayoutParams) this).rightMargin <= 0 && i13 > 0) {
-                    ((ViewGroup.MarginLayoutParams) this).rightMargin = i13;
+        if (this.f42050u == -1 && this.f42051v == -1 && this.f42049t == -1 && this.f42048s == -1) {
+            int i23 = this.f42028g;
+            if (i23 != -1) {
+                this.f42031h0 = i23;
+                if (((ViewGroup.MarginLayoutParams) this).rightMargin <= 0 && i12 > 0) {
+                    ((ViewGroup.MarginLayoutParams) this).rightMargin = i12;
                 }
             } else {
-                int i25 = this.f42059h;
-                if (i25 != -1) {
-                    this.f42061i0 = i25;
-                    if (((ViewGroup.MarginLayoutParams) this).rightMargin <= 0 && i13 > 0) {
-                        ((ViewGroup.MarginLayoutParams) this).rightMargin = i13;
+                int i24 = this.f42030h;
+                if (i24 != -1) {
+                    this.f42032i0 = i24;
+                    if (((ViewGroup.MarginLayoutParams) this).rightMargin <= 0 && i12 > 0) {
+                        ((ViewGroup.MarginLayoutParams) this).rightMargin = i12;
                     }
                 }
             }
-            int i26 = this.f42053e;
-            if (i26 != -1) {
-                this.f42056f0 = i26;
-                if (((ViewGroup.MarginLayoutParams) this).leftMargin > 0 || i12 <= 0) {
+            int i25 = this.f42024e;
+            if (i25 != -1) {
+                this.f42027f0 = i25;
+                if (((ViewGroup.MarginLayoutParams) this).leftMargin > 0 || i11 <= 0) {
                     return;
                 }
-                ((ViewGroup.MarginLayoutParams) this).leftMargin = i12;
+                ((ViewGroup.MarginLayoutParams) this).leftMargin = i11;
                 return;
             }
-            int i27 = this.f42055f;
-            if (i27 != -1) {
-                this.f42058g0 = i27;
-                if (((ViewGroup.MarginLayoutParams) this).leftMargin > 0 || i12 <= 0) {
+            int i26 = this.f42026f;
+            if (i26 != -1) {
+                this.f42029g0 = i26;
+                if (((ViewGroup.MarginLayoutParams) this).leftMargin > 0 || i11 <= 0) {
                     return;
                 }
-                ((ViewGroup.MarginLayoutParams) this).leftMargin = i12;
+                ((ViewGroup.MarginLayoutParams) this).leftMargin = i11;
             }
         }
     }

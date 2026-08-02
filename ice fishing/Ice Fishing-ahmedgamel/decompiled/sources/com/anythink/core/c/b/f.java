@@ -1,41 +1,41 @@
 package com.anythink.core.c.b;
 
-import D.y;
 import android.text.TextUtils;
+import com.IceFishing.LiveIceFishing.k;
 import com.anythink.core.c.b.e;
 import com.anythink.core.common.v.ah;
 import com.onesignal.notifications.internal.badges.impl.shortcutbadger.impl.AdwHomeBadger;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import q5.C4927a;
+import q5.C4876a;
 
 /* loaded from: classes.dex */
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final double f12074a = -1.0d;
+    public static final double f12860a = -1.0d;
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f12075b = "UserValueCalculator";
+    private static final String f12861b = "UserValueCalculator";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String[] f12076c = {"MAX", "MIN", "AVG", "SUM", AdwHomeBadger.COUNT};
+    private static final String[] f12862c = {"MAX", "MIN", "AVG", "SUM", AdwHomeBadger.COUNT};
 
     /* renamed from: d, reason: collision with root package name */
-    private static final String[] f12077d = {"=", ">", "<", "!=", ">=", "<="};
+    private static final String[] f12863d = {"=", ">", "<", "!=", ">=", "<="};
 
     /* renamed from: e, reason: collision with root package name */
-    private static final String[] f12078e = {"OR", "AND"};
+    private static final String[] f12864e = {"OR", "AND"};
 
     /* renamed from: f, reason: collision with root package name */
-    private static final String[] f12079f = {"DESC", "ASC"};
+    private static final String[] f12865f = {"DESC", "ASC"};
 
     /* renamed from: g, reason: collision with root package name */
-    private final e f12080g;
+    private final e f12866g;
 
     public f(e eVar) {
-        this.f12080g = eVar;
+        this.f12866g = eVar;
     }
 
     /* JADX WARN: Can't wrap try/catch for region: R(36:0|1|(3:122|123|(32:125|(1:5)|6|7|(2:9|(27:11|12|13|(3:17|18|(28:20|21|22|(7:26|(1:28)(2:40|(1:42)(1:43))|29|(2:34|35)|36|23|24)|44|45|46|47|48|(2:50|51)(1:104)|52|53|(1:55)|57|(1:61)|62|(1:64)|65|(3:67|(1:69)|70)|71|(3:73|(1:75)|76)|77|(1:79)|80|81|82|83|(4:85|(2:87|(1:89)(1:93))(1:94)|90|91)(1:95)))|117|111|47|48|(0)(0)|52|53|(0)|57|(2:59|61)|62|(0)|65|(0)|71|(0)|77|(0)|80|81|82|83|(0)(0)))|121|12|13|(3:17|18|(0))|117|111|47|48|(0)(0)|52|53|(0)|57|(0)|62|(0)|65|(0)|71|(0)|77|(0)|80|81|82|83|(0)(0)))|3|(0)|6|7|(0)|121|12|13|(0)|117|111|47|48|(0)(0)|52|53|(0)|57|(0)|62|(0)|65|(0)|71|(0)|77|(0)|80|81|82|83|(0)(0)|(1:(0))) */
@@ -74,9 +74,9 @@ public final class f {
     */
     public final double a(int i, String str) {
         JSONObject jSONObject;
-        double d2;
+        double d9;
         JSONObject jSONObject2;
-        int i6;
+        int i4;
         String str2;
         String str3;
         JSONArray optJSONArray;
@@ -85,49 +85,49 @@ public final class f {
         String str4;
         String str5;
         String sb;
-        double d9;
         double d10;
+        double d11;
         int optInt;
         int optInt2;
-        com.anythink.core.d.b g4 = y.g(y.h());
+        com.anythink.core.d.b k9 = k.k(k.l());
         try {
-            if (g4 != null) {
+            if (k9 != null) {
                 try {
-                    JSONObject Z8 = g4.Z();
+                    JSONObject Z8 = k9.Z();
                     if (Z8 != null) {
                         jSONObject = Z8.getJSONObject(String.valueOf(i));
                         if (jSONObject == null) {
                             jSONObject = a();
                         }
                         jSONObject2 = jSONObject;
-                        i6 = jSONObject2.getInt("f");
+                        i4 = jSONObject2.getInt("f");
                         str2 = "";
-                        if (i6 >= 0) {
-                            String[] strArr = f12076c;
-                            if (i6 < strArr.length) {
-                                str3 = strArr[i6];
+                        if (i4 >= 0) {
+                            String[] strArr = f12862c;
+                            if (i4 < strArr.length) {
+                                str3 = strArr[i4];
                                 String string = jSONObject2.getString("q_f");
                                 optJSONArray = jSONObject2.optJSONArray("w_c_f");
                                 JSONArray optJSONArray2 = jSONObject2.optJSONArray("w_c_o");
                                 JSONArray optJSONArray3 = jSONObject2.optJSONArray("w_c_v");
                                 JSONArray optJSONArray4 = jSONObject2.optJSONArray("w_o");
-                                d2 = -1.0d;
+                                d9 = -1.0d;
                                 if (optJSONArray != null && optJSONArray2 != null && optJSONArray3 != null) {
                                     try {
                                         if (optJSONArray.length() > 0) {
                                             try {
                                                 StringBuilder sb2 = new StringBuilder();
                                                 c9 = 1;
-                                                int i9 = 0;
+                                                int i6 = 0;
                                                 c10 = 0;
-                                                while (i9 < optJSONArray.length()) {
+                                                while (i6 < optJSONArray.length()) {
                                                     try {
-                                                        String string2 = optJSONArray.getString(i9);
-                                                        int i10 = optJSONArray2.getInt(i9);
+                                                        String string2 = optJSONArray.getString(i6);
+                                                        int i9 = optJSONArray2.getInt(i6);
                                                         JSONArray jSONArray = optJSONArray;
-                                                        String string3 = optJSONArray3.getString(i9);
+                                                        String string3 = optJSONArray3.getString(i6);
                                                         sb2.append(string2);
-                                                        sb2.append(f12077d[i10]);
+                                                        sb2.append(f12863d[i9]);
                                                         if (ah.a((CharSequence) string3)) {
                                                             sb2.append(string3);
                                                         } else if (string3.startsWith("strftime")) {
@@ -137,13 +137,13 @@ public final class f {
                                                             sb2.append(string3);
                                                             sb2.append("'");
                                                         }
-                                                        if (i9 != jSONArray.length() - 1 && optJSONArray4 != null && i9 < optJSONArray4.length()) {
-                                                            int i11 = optJSONArray4.getInt(i9);
+                                                        if (i6 != jSONArray.length() - 1 && optJSONArray4 != null && i6 < optJSONArray4.length()) {
+                                                            int i10 = optJSONArray4.getInt(i6);
                                                             sb2.append(" ");
-                                                            sb2.append(f12078e[i11]);
+                                                            sb2.append(f12864e[i10]);
                                                             sb2.append(" ");
                                                         }
-                                                        i9++;
+                                                        i6++;
                                                         optJSONArray = jSONArray;
                                                     } catch (Exception e9) {
                                                         e = e9;
@@ -152,7 +152,7 @@ public final class f {
                                                         String optString = jSONObject2.optString("o_f");
                                                         if (!TextUtils.isEmpty(optString)) {
                                                         }
-                                                        optInt2 = jSONObject2.optInt(C4927a.PUSH_MINIFIED_BUTTONS_LIST, -1);
+                                                        optInt2 = jSONObject2.optInt(C4876a.PUSH_MINIFIED_BUTTONS_LIST, -1);
                                                         if (optInt2 != -1) {
                                                         }
                                                         if (!jSONObject2.isNull("l")) {
@@ -168,9 +168,9 @@ public final class f {
                                                         String str6 = "SELECT " + string + " FROM user_value_placement";
                                                         if (!TextUtils.isEmpty(sb)) {
                                                         }
-                                                        double[] a9 = this.f12080g.a(new String[]{str3 + "(" + string + ")", "count(*)"}, "(" + str6 + ")");
-                                                        d9 = a9[c9];
-                                                        if (d9 > 0.0d) {
+                                                        double[] a9 = this.f12866g.a(new String[]{str3 + "(" + string + ")", "count(*)"}, "(" + str6 + ")");
+                                                        d10 = a9[c9];
+                                                        if (d10 > 0.0d) {
                                                         }
                                                     }
                                                 }
@@ -182,9 +182,9 @@ public final class f {
                                             }
                                             String optString2 = jSONObject2.optString("o_f");
                                             str5 = !TextUtils.isEmpty(optString2) ? "ORDER BY ".concat(String.valueOf(optString2)) : "";
-                                            optInt2 = jSONObject2.optInt(C4927a.PUSH_MINIFIED_BUTTONS_LIST, -1);
+                                            optInt2 = jSONObject2.optInt(C4876a.PUSH_MINIFIED_BUTTONS_LIST, -1);
                                             if (optInt2 != -1) {
-                                                str5 = str5 + " " + f12079f[optInt2];
+                                                str5 = str5 + " " + f12865f[optInt2];
                                             }
                                             if (!jSONObject2.isNull("l") && (optInt = jSONObject2.optInt("l")) > 0) {
                                                 str2 = "LIMIT ".concat(String.valueOf(optInt));
@@ -217,25 +217,25 @@ public final class f {
                                             if (!TextUtils.isEmpty(sb)) {
                                                 str62 = str62 + " " + sb;
                                             }
-                                            double[] a92 = this.f12080g.a(new String[]{str3 + "(" + string + ")", "count(*)"}, "(" + str62 + ")");
-                                            d9 = a92[c9];
-                                            if (d9 > 0.0d) {
+                                            double[] a92 = this.f12866g.a(new String[]{str3 + "(" + string + ")", "count(*)"}, "(" + str62 + ")");
+                                            d10 = a92[c9];
+                                            if (d10 > 0.0d) {
                                                 return -1.0d;
                                             }
                                             if (jSONObject2.isNull("l")) {
-                                                d10 = a92[c10];
+                                                d11 = a92[c10];
                                             } else {
-                                                if (d9 < jSONObject2.optInt("l")) {
+                                                if (d10 < jSONObject2.optInt("l")) {
                                                     return -1.0d;
                                                 }
-                                                d10 = a92[c10];
+                                                d11 = a92[c10];
                                             }
-                                            return d10;
+                                            return d11;
                                         }
                                     } catch (Exception e11) {
                                         e = e11;
                                         e.getMessage();
-                                        return d2;
+                                        return d9;
                                     }
                                 }
                                 c9 = 1;
@@ -244,7 +244,7 @@ public final class f {
                                 String optString22 = jSONObject2.optString("o_f");
                                 if (!TextUtils.isEmpty(optString22)) {
                                 }
-                                optInt2 = jSONObject2.optInt(C4927a.PUSH_MINIFIED_BUTTONS_LIST, -1);
+                                optInt2 = jSONObject2.optInt(C4876a.PUSH_MINIFIED_BUTTONS_LIST, -1);
                                 if (optInt2 != -1) {
                                 }
                                 if (!jSONObject2.isNull("l")) {
@@ -261,9 +261,9 @@ public final class f {
                                 String str622 = "SELECT " + string + " FROM user_value_placement";
                                 if (!TextUtils.isEmpty(sb)) {
                                 }
-                                double[] a922 = this.f12080g.a(new String[]{str3 + "(" + string + ")", "count(*)"}, "(" + str622 + ")");
-                                d9 = a922[c9];
-                                if (d9 > 0.0d) {
+                                double[] a922 = this.f12866g.a(new String[]{str3 + "(" + string + ")", "count(*)"}, "(" + str622 + ")");
+                                d10 = a922[c9];
+                                if (d10 > 0.0d) {
                                 }
                             }
                         }
@@ -273,7 +273,7 @@ public final class f {
                         JSONArray optJSONArray22 = jSONObject2.optJSONArray("w_c_o");
                         JSONArray optJSONArray32 = jSONObject2.optJSONArray("w_c_v");
                         JSONArray optJSONArray42 = jSONObject2.optJSONArray("w_o");
-                        d2 = -1.0d;
+                        d9 = -1.0d;
                         if (optJSONArray != null) {
                             if (optJSONArray.length() > 0) {
                             }
@@ -284,7 +284,7 @@ public final class f {
                         String optString222 = jSONObject2.optString("o_f");
                         if (!TextUtils.isEmpty(optString222)) {
                         }
-                        optInt2 = jSONObject2.optInt(C4927a.PUSH_MINIFIED_BUTTONS_LIST, -1);
+                        optInt2 = jSONObject2.optInt(C4876a.PUSH_MINIFIED_BUTTONS_LIST, -1);
                         if (optInt2 != -1) {
                         }
                         if (!jSONObject2.isNull("l")) {
@@ -300,34 +300,34 @@ public final class f {
                         String str6222 = "SELECT " + string4 + " FROM user_value_placement";
                         if (!TextUtils.isEmpty(sb)) {
                         }
-                        double[] a9222 = this.f12080g.a(new String[]{str3 + "(" + string4 + ")", "count(*)"}, "(" + str6222 + ")");
-                        d9 = a9222[c9];
-                        if (d9 > 0.0d) {
+                        double[] a9222 = this.f12866g.a(new String[]{str3 + "(" + string4 + ")", "count(*)"}, "(" + str6222 + ")");
+                        d10 = a9222[c9];
+                        if (d10 > 0.0d) {
                         }
                     }
                 } catch (Exception e12) {
                     e = e12;
-                    d2 = -1.0d;
+                    d9 = -1.0d;
                     e.getMessage();
-                    return d2;
+                    return d9;
                 }
             }
-            double[] a92222 = this.f12080g.a(new String[]{str3 + "(" + string4 + ")", "count(*)"}, "(" + str6222 + ")");
-            d9 = a92222[c9];
-            if (d9 > 0.0d) {
+            double[] a92222 = this.f12866g.a(new String[]{str3 + "(" + string4 + ")", "count(*)"}, "(" + str6222 + ")");
+            d10 = a92222[c9];
+            if (d10 > 0.0d) {
             }
         } catch (Exception e13) {
             e = e13;
             e.getMessage();
-            return d2;
+            return d9;
         }
         jSONObject = null;
         if (jSONObject == null) {
         }
         jSONObject2 = jSONObject;
-        i6 = jSONObject2.getInt("f");
+        i4 = jSONObject2.getInt("f");
         str2 = "";
-        if (i6 >= 0) {
+        if (i4 >= 0) {
         }
         str3 = "";
         String string42 = jSONObject2.getString("q_f");
@@ -335,7 +335,7 @@ public final class f {
         JSONArray optJSONArray222 = jSONObject2.optJSONArray("w_c_o");
         JSONArray optJSONArray322 = jSONObject2.optJSONArray("w_c_v");
         JSONArray optJSONArray422 = jSONObject2.optJSONArray("w_o");
-        d2 = -1.0d;
+        d9 = -1.0d;
         if (optJSONArray != null) {
         }
         c9 = 1;
@@ -344,7 +344,7 @@ public final class f {
         String optString2222 = jSONObject2.optString("o_f");
         if (!TextUtils.isEmpty(optString2222)) {
         }
-        optInt2 = jSONObject2.optInt(C4927a.PUSH_MINIFIED_BUTTONS_LIST, -1);
+        optInt2 = jSONObject2.optInt(C4876a.PUSH_MINIFIED_BUTTONS_LIST, -1);
         if (optInt2 != -1) {
         }
         if (!jSONObject2.isNull("l")) {
@@ -366,7 +366,7 @@ public final class f {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("f", 2);
-            jSONObject.put("q_f", e.a.f12068h);
+            jSONObject.put("q_f", e.a.f12854h);
             JSONArray jSONArray = new JSONArray();
             jSONArray.put("type");
             jSONObject.put("w_c_f", jSONArray);
@@ -377,7 +377,7 @@ public final class f {
             jSONArray3.put("4");
             jSONObject.put("w_c_v", jSONArray3);
             jSONObject.put("o_f", e.a.i);
-            jSONObject.put(C4927a.PUSH_MINIFIED_BUTTONS_LIST, 0);
+            jSONObject.put(C4876a.PUSH_MINIFIED_BUTTONS_LIST, 0);
             jSONObject.put("l", 3);
             return jSONObject;
         } catch (JSONException e9) {

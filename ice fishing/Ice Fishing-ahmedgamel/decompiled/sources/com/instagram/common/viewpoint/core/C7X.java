@@ -9,21 +9,21 @@ import com.facebook.ads.RewardedVideoAd;
 
 /* renamed from: com.facebook.ads.redexgen.X.7X, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public final class C7X extends AbstractC1960ik {
+public final class C7X extends AbstractC1980ik {
     public static String[] A02 = {"eAQfPHHoyWilLfBxOFaJj1G06pGOxPq", "94FVrmFRVghPmyms9ar5cFWRdDurlkVe", "0NqQX4CUu3LD8PHaDMvmRAbh4clEtoM7", "DpSRaNejvtQ52XA7I6oeLqqk6ldlwRKU", "AVeirdKHq7BiC91JmOFjEM59wAwHTkmS", "1THCMBeh6DIPctxeAaB65wntvUu4aFha", "yEsJBiLTEnojRHdtAiiv5fZXbmAhiMSc", "YuG6RWvr5fcVmyx3SnaQUPOafyGz2fG"};
-    public C1951iZ A00;
-    public final C1935iI A01;
+    public C1971iZ A00;
+    public final C1955iI A01;
 
-    public C7X(C1935iI c1935iI, String str) {
-        super(c1935iI.A0B, str, A00(c1935iI));
-        this.A01 = c1935iI;
+    public C7X(C1955iI c1955iI, String str) {
+        super(c1955iI.A0B, str, A00(c1955iI));
+        this.A01 = c1955iI;
     }
 
-    public static C1934iH A00(C1935iI c1935iI) {
-        return new C1934iH(c1935iI);
+    public static C1954iH A00(C1955iI c1955iI) {
+        return new C1954iH(c1955iI);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1960ik
+    @Override // com.instagram.common.viewpoint.core.AbstractC1980ik
     public final void A08() {
         if (super.A01.A01) {
             this.A05.A5v();
@@ -34,35 +34,35 @@ public final class C7X extends AbstractC1960ik {
         super.A00.AJM(OD.A03);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1960ik
+    @Override // com.instagram.common.viewpoint.core.AbstractC1980ik
     public final void A09() {
-        this.A00 = new C1951iZ(this.A01, this, A04());
+        this.A00 = new C1971iZ(this.A01, this, A04());
         this.A00.A0J(this.A01.A05, this.A01.A02, this.A01.A08);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC1960ik
-    public final void A0D(boolean z3) {
-        this.A05.AJn(z3);
+    @Override // com.instagram.common.viewpoint.core.AbstractC1980ik
+    public final void A0D(boolean z6) {
+        this.A05.AJn(z6);
     }
 
-    public final C1935iI A0E() {
+    public final C1955iI A0E() {
         return this.A01;
     }
 
-    public final void A0F(Ad ad, String str, AdExperienceType adExperienceType, boolean z3) {
+    public final void A0F(Ad ad, String str, AdExperienceType adExperienceType, boolean z6) {
         if (super.A00.A6U()) {
             return;
         }
         this.A01.A02(ad);
         if (this.A00 != null) {
-            this.A00.A0J(str, adExperienceType, z3);
+            this.A00.A0J(str, adExperienceType, z6);
             return;
         }
         this.A01.A05 = str;
         this.A01.A02 = adExperienceType;
-        this.A01.A08 = z3;
-        if (AbstractC1293Us.A09(this.A02) && AbstractC1293Us.A0B(this.A02)) {
-            if (AbstractC1293Us.A0M(str)) {
+        this.A01.A08 = z6;
+        if (AbstractC1313Us.A09(this.A02) && AbstractC1313Us.A0B(this.A02)) {
+            if (AbstractC1313Us.A0M(str)) {
                 A05();
                 return;
             } else {
@@ -116,7 +116,7 @@ public final class C7X extends AbstractC1960ik {
                 A0A(A00);
                 return true;
             }
-            C1951iZ c1951iZ = this.A00;
+            C1971iZ c1971iZ = this.A00;
             String[] strArr3 = A02;
             String str3 = strArr3[2];
             String str4 = strArr3[1];
@@ -126,10 +126,10 @@ public final class C7X extends AbstractC1960ik {
                 String[] strArr4 = A02;
                 strArr4[7] = "SVQKcBS7FHKRAHC3EplGepZBNeGcwFJ";
                 strArr4[0] = "IfCkczTPSOxE6DmqSLPQVuiWAstWVdL";
-                if (c1951iZ != null) {
+                if (c1971iZ != null) {
                     return this.A00.A0M(A00, A01);
                 }
-                this.A00 = new C1951iZ(this.A01, this, A04());
+                this.A00 = new C1971iZ(this.A01, this, A04());
                 this.A00.A0M(A00, A01);
                 return false;
             }

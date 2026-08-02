@@ -31,26 +31,26 @@ public final class X6 {
     public static byte[] A00;
     public static String[] A01 = {"T4dPy6oALRnRtXie0LYtNa7PXoaz5xNV", "GuB", "", "N5ZcwGbFLOfjQt8i7LOYdNhhAY9bfZ8J", "XGEF2r9HzP4eyBZiq0puzcaX55o", "r68Pu4BAqG0jUrZ19Ek7iVXcY822rh1q", "w97ZnD7u", "Y1Vl"};
 
-    public static String A07(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 79);
+    public static String A07(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 79);
         }
         return new String(copyOfRange);
     }
 
     public static void A09() {
-        A00 = new byte[]{77, 66, 83, 74, 78, 56, 77, 83, 95, 73, 79, 89, 94, 73, 83, 88, 67, 71, 73, 66, 84, 91, 74, 82, 69, 70, 74, 84, 81, 74, 86, 90, 91, 65, 80, 91, 65, 85, 87, 90, 90, 83, 68, 73, 82, 89, 91, 87, 95, 88, 88, 122, 117, 60, 111, 59, 104, 111, 122, 105, 111, 59, 90, 110, Byte.MAX_VALUE, 114, 126, 117, 120, 126, 85, 126, 111, 108, 116, 105, 112, 90, 120, 111, 114, 109, 114, 111, 98, 53, 59, 86, 122, 112, 126, 59, 104, 110, 105, 126, 59, 111, 115, 122, 111, 59, 114, 111, 60, 104, 59, 114, 117, 59, 98, 116, 110, 105, 59, 90, 117, Byte.MAX_VALUE, 105, 116, 114, Byte.MAX_VALUE, 86, 122, 117, 114, 125, 126, 104, 111, 53, 99, 118, 119, 59, 125, 114, 119, 126, 53, 28, 1, 13, 11, 24, 6, 12, 11, 21, 21, 17, 18, 38, 55, 58, 54, 61, 48, 54, 29, 54, 39, 36, 60, 33, 56, 26, 104, c.f16317b, 79, 126, c.f16317b, 66, 85, 72, 87, 72, 85, 88, 41, 38, 44, 58, 39, 33, 44, 36, 43, 33, 55, 42, 44, 33, 107, 44, 43, 49, 32, 43, 49, 107, 36, 38, 49, 44, 42, 43, 107, 19, 12, 0, 18, 58, 53, c.f16318c, 41, 52, 50, c.f16318c, 117, 50, 53, 47, 62, 53, 47, 117, 56, 58, 47, 62, 60, 52, 41, 34, 117, 25, 9, 20, 12, 8, 26, 25, 23, 30, 112, 125, 125, 126, 70, 86, 75, 83, 87, 65, 86, 113, 118, 104, 50, 48, 61, 61, 52, 35, 24, 53, 20, 22, 27, 27, 18, 5, 35, 14, 7, 18, 54, 57, 60, 48, 59, 33, 1, 58, 62, 48, 59, 113, 125, Byte.MAX_VALUE, 60, 115, 124, 118, 96, 125, 123, 118, 60, 112, 96, 125, 101, 97, 119, 96, 60, 115, 98, 98, 126, 123, 113, 115, 102, 123, 125, 124, 77, 123, 118, 15, 3, 1, 66, 13, 2, 8, 30, 3, 5, 8, 66, 26, 9, 2, 8, 5, 2, 11, 103, 107, 105, 42, 98, 101, 103, 97, 102, 107, 107, 111, 42, 99, 107, 107, 99, 104, 97, 116, 104, 101, 125, 119, 112, 107, 118, 97, 101, 106, 42, 67, 107, 107, 99, 104, 97, 84, 104, 101, 125, 87, 112, 107, 118, 97, 69, 74, 75, 114, 97, 118, 104, 101, 125, 65, 124, 112, 97, 118, 106, 101, 104, 69, 103, 112, 109, 114, 109, 112, 125, 109, 97, 99, 32, 104, 111, 109, 107, 108, 97, 97, 101, 32, 101, 111, 122, 111, 96, 111, 66, 78, 79, 71, 72, 70, 126, 82, 84, 81, 81, 78, 83, 85, 82, 108, 84, 77, 85, 72, 118, 72, 79, 69, 78, 86, 3, 15, 14, 6, 9, 7, c.f16318c, 19, 21, 16, 16, 15, 18, 20, 19, 51, 16, 12, 9, 20, 51, 3, 18, 5, 5, 14, 45, 21, 12, 20, 9, 55, 9, 14, 4, 15, 23, 5, 20, 3, 7, 18, 3, 57, 8, 3, 17, 57, 18, 7, 4, 75, 79, 4, 11, 14, 22, 7, 16, 7, 6, 61, 1, 14, 11, 1, 9, 61, 6, 7, 14, 3, 27, 61, 15, 17, 39, 46, 33, 43, 35, 42, 61, 27, 38, 34, 42, 23, 11, 11, 15, 36, 56, 56, 60, 118, 99, 99, 60, 32, 45, 53, 98, 43, 35, 35, 43, 32, 41, 98, 47, 35, 33, 99, c.f16318c, 56, 35, 62, 41, 99, 45, 60, 60, c.f16318c, 99, 38, 58, 58, 62, 61, 82, 78, 78, 74, 73, 0, 21, 21, 74, 86, 91, 67, 20, 93, 85, 85, 93, 86, 95, 20, 89, 85, 87, 21, 94, 5, 24, 21, c.f16317b, 71, 90, 93, 72, 71, 93, 118, 78, 72, 68, 76, 90, 61, 39, 11, 55, 53, 55, 11, 50, 61, 56, 32, 49, 38, 11, 55, 56, 61, 55, c.f16318c, 39, 11, 59, 58, 11, 55, 32, 53, 13, 23, 59, 7, 22, 1, 5, 16, 13, 18, 1, 59, 5, 23, 59, 7, 16, 5, 59, 18, 86, 110, 116, 88, 113, 53, 88, 99, 98, 116, 110, 96, 105, 87, 91, 72, 81, 95, 78, 38, c.f16318c, 44, 59, 37, 40, 48, 55, 43, 38, 62, 105, 32, 40, 40, 32, 43, 34, 105, 36, 40, 42, 36, 51, 37, c.f16318c, 44, 51, 27, 57, 50, 51, 66, 89, 94, 70, 66, 82, 126, 83, 125, 98, 110, 124, 95, 114, 123, 110};
+        A00 = new byte[]{77, 66, 83, 74, 78, 56, 77, 83, 95, 73, 79, 89, 94, 73, 83, 88, 67, 71, 73, 66, 84, 91, 74, 82, 69, 70, 74, 84, 81, 74, 86, 90, 91, 65, 80, 91, 65, 85, 87, 90, 90, 83, 68, 73, 82, 89, 91, 87, 95, 88, 88, 122, 117, 60, 111, 59, 104, 111, 122, 105, 111, 59, 90, 110, Byte.MAX_VALUE, 114, 126, 117, 120, 126, 85, 126, 111, 108, 116, 105, 112, 90, 120, 111, 114, 109, 114, 111, 98, 53, 59, 86, 122, 112, 126, 59, 104, 110, 105, 126, 59, 111, 115, 122, 111, 59, 114, 111, 60, 104, 59, 114, 117, 59, 98, 116, 110, 105, 59, 90, 117, Byte.MAX_VALUE, 105, 116, 114, Byte.MAX_VALUE, 86, 122, 117, 114, 125, 126, 104, 111, 53, 99, 118, 119, 59, 125, 114, 119, 126, 53, 28, 1, 13, 11, 24, 6, 12, 11, 21, 21, 17, 18, 38, 55, 58, 54, 61, 48, 54, 29, 54, 39, 36, 60, 33, 56, 26, 104, c.f17104b, 79, 126, c.f17104b, 66, 85, 72, 87, 72, 85, 88, 41, 38, 44, 58, 39, 33, 44, 36, 43, 33, 55, 42, 44, 33, 107, 44, 43, 49, 32, 43, 49, 107, 36, 38, 49, 44, 42, 43, 107, 19, 12, 0, 18, 58, 53, c.f17105c, 41, 52, 50, c.f17105c, 117, 50, 53, 47, 62, 53, 47, 117, 56, 58, 47, 62, 60, 52, 41, 34, 117, 25, 9, 20, 12, 8, 26, 25, 23, 30, 112, 125, 125, 126, 70, 86, 75, 83, 87, 65, 86, 113, 118, 104, 50, 48, 61, 61, 52, 35, 24, 53, 20, 22, 27, 27, 18, 5, 35, 14, 7, 18, 54, 57, 60, 48, 59, 33, 1, 58, 62, 48, 59, 113, 125, Byte.MAX_VALUE, 60, 115, 124, 118, 96, 125, 123, 118, 60, 112, 96, 125, 101, 97, 119, 96, 60, 115, 98, 98, 126, 123, 113, 115, 102, 123, 125, 124, 77, 123, 118, 15, 3, 1, 66, 13, 2, 8, 30, 3, 5, 8, 66, 26, 9, 2, 8, 5, 2, 11, 103, 107, 105, 42, 98, 101, 103, 97, 102, 107, 107, 111, 42, 99, 107, 107, 99, 104, 97, 116, 104, 101, 125, 119, 112, 107, 118, 97, 101, 106, 42, 67, 107, 107, 99, 104, 97, 84, 104, 101, 125, 87, 112, 107, 118, 97, 69, 74, 75, 114, 97, 118, 104, 101, 125, 65, 124, 112, 97, 118, 106, 101, 104, 69, 103, 112, 109, 114, 109, 112, 125, 109, 97, 99, 32, 104, 111, 109, 107, 108, 97, 97, 101, 32, 101, 111, 122, 111, 96, 111, 66, 78, 79, 71, 72, 70, 126, 82, 84, 81, 81, 78, 83, 85, 82, 108, 84, 77, 85, 72, 118, 72, 79, 69, 78, 86, 3, 15, 14, 6, 9, 7, c.f17105c, 19, 21, 16, 16, 15, 18, 20, 19, 51, 16, 12, 9, 20, 51, 3, 18, 5, 5, 14, 45, 21, 12, 20, 9, 55, 9, 14, 4, 15, 23, 5, 20, 3, 7, 18, 3, 57, 8, 3, 17, 57, 18, 7, 4, 75, 79, 4, 11, 14, 22, 7, 16, 7, 6, 61, 1, 14, 11, 1, 9, 61, 6, 7, 14, 3, 27, 61, 15, 17, 39, 46, 33, 43, 35, 42, 61, 27, 38, 34, 42, 23, 11, 11, 15, 36, 56, 56, 60, 118, 99, 99, 60, 32, 45, 53, 98, 43, 35, 35, 43, 32, 41, 98, 47, 35, 33, 99, c.f17105c, 56, 35, 62, 41, 99, 45, 60, 60, c.f17105c, 99, 38, 58, 58, 62, 61, 82, 78, 78, 74, 73, 0, 21, 21, 74, 86, 91, 67, 20, 93, 85, 85, 93, 86, 95, 20, 89, 85, 87, 21, 94, 5, 24, 21, c.f17104b, 71, 90, 93, 72, 71, 93, 118, 78, 72, 68, 76, 90, 61, 39, 11, 55, 53, 55, 11, 50, 61, 56, 32, 49, 38, 11, 55, 56, 61, 55, c.f17105c, 39, 11, 59, 58, 11, 55, 32, 53, 13, 23, 59, 7, 22, 1, 5, 16, 13, 18, 1, 59, 5, 23, 59, 7, 16, 5, 59, 18, 86, 110, 116, 88, 113, 53, 88, 99, 98, 116, 110, 96, 105, 87, 91, 72, 81, 95, 78, 38, c.f17105c, 44, 59, 37, 40, 48, 55, 43, 38, 62, 105, 32, 40, 40, 32, 43, 34, 105, 36, 40, 42, 36, 51, 37, c.f17105c, 44, 51, 27, 57, 50, 51, 66, 89, 94, 70, 66, 82, 126, 83, 125, 98, 110, 124, 95, 114, 123, 110};
     }
 
     static {
         A09();
     }
 
-    private int A00(C1840gi c1840gi) {
+    private int A00(C1860gi c1860gi) {
         PackageInfo packageInfo;
         try {
-            PackageManager packageManager = c1840gi.getPackageManager();
+            PackageManager packageManager = c1860gi.getPackageManager();
             if (packageManager != null && (packageInfo = packageManager.getPackageInfo(A07(412, 19, 65), 0)) != null && !TextUtils.isEmpty(packageInfo.versionName)) {
                 return Integer.parseInt(packageInfo.versionName.split(A07(166, 2, 9), 2)[0]);
             }
@@ -67,13 +67,13 @@ public final class X6 {
         return intent;
     }
 
-    public static Intent A02(C1840gi c1840gi, Uri uri) {
+    public static Intent A02(C1860gi c1860gi, Uri uri) {
         Intent A012 = A01(uri);
-        A012.addCategory(A07(BaseATView.a.f9774K, 33, 20));
+        A012.addCategory(A07(BaseATView.a.f10560K, 33, 20));
         A012.addFlags(268435456);
-        A012.putExtra(A07(a.ba, 34, 93), c1840gi.getPackageName());
+        A012.putExtra(A07(a.ba, 34, 93), c1860gi.getPackageName());
         A012.putExtra(A07(494, 14, 41), false);
-        if (C1290Up.A24(c1840gi)) {
+        if (C1310Up.A24(c1860gi)) {
             if (A07(508, 2, 98).equals(uri.getScheme())) {
                 A012.setPackage(A07(412, 19, 65));
             }
@@ -81,15 +81,15 @@ public final class X6 {
         return A012;
     }
 
-    public static Intent A03(C1840gi c1840gi, Uri uri) {
+    public static Intent A03(C1860gi c1860gi, Uri uri) {
         Intent A012 = A01(uri);
         A012.setPackage(A07(322, 19, 35));
-        A012.putExtra(A07(259, 8, 30), c1840gi.getPackageName());
+        A012.putExtra(A07(259, 8, 30), c1860gi.getPackageName());
         A012.putExtra(A07(694, 7, 6), true);
         return A012;
     }
 
-    public static Uri A04(C1840gi c1840gi, Uri uri) {
+    public static Uri A04(C1860gi c1860gi, Uri uri) {
         boolean equals = A07(688, 6, 117).equals(uri.getScheme());
         String A07 = A07(587, 26, 117);
         if (equals) {
@@ -98,40 +98,40 @@ public final class X6 {
         if (uri.toString().startsWith(A07)) {
             return uri;
         }
-        c1840gi.A0F().ABH(5);
+        c1860gi.A0F().ABH(5);
         return null;
     }
 
-    private final EnumC1089Mq A05(C1840gi c1840gi, Uri uri, String str, Map<String, String> map) throws C1342Ws {
-        boolean A05 = AbstractC1291Uq.A05(c1840gi);
+    private final EnumC1109Mq A05(C1860gi c1860gi, Uri uri, String str, Map<String, String> map) throws C1362Ws {
+        boolean A05 = AbstractC1311Uq.A05(c1860gi);
         boolean isInAppBrowserEnabled = A0F(uri);
         if (isInAppBrowserEnabled && A05) {
-            A0C(c1840gi, uri, str, map);
-            EnumC1089Mq enumC1089Mq = EnumC1089Mq.A08;
+            A0C(c1860gi, uri, str, map);
+            EnumC1109Mq enumC1109Mq = EnumC1109Mq.A08;
             if (A01[7].length() == 30) {
                 throw new RuntimeException();
             }
             String[] strArr = A01;
             strArr[2] = "";
             strArr[1] = "Q7p";
-            return enumC1089Mq;
+            return enumC1109Mq;
         }
-        c1840gi.A0F().A9x(A05);
-        A0A(c1840gi, uri);
-        return EnumC1089Mq.A07;
+        c1860gi.A0F().A9x(A05);
+        A0A(c1860gi, uri);
+        return EnumC1109Mq.A07;
     }
 
-    public static EnumC1089Mq A06(X6 x62, C1840gi c1840gi, Uri uri, String str, Map<String, String> extraData) throws C1342Ws {
-        boolean z3 = A0F(uri) && A07(701, 15, 8).equals(uri.getHost());
+    public static EnumC1109Mq A06(X6 x62, C1860gi c1860gi, Uri uri, String str, Map<String, String> extraData) throws C1362Ws {
+        boolean z6 = A0F(uri) && A07(701, 15, 8).equals(uri.getHost());
         boolean isGooglePlayWebLink = A07(688, 6, 117).equals(uri.getScheme());
-        if (!isGooglePlayWebLink && !z3) {
-            return x62.A05(c1840gi, uri, str, extraData);
+        if (!isGooglePlayWebLink && !z6) {
+            return x62.A05(c1860gi, uri, str, extraData);
         }
         try {
-            x62.A0B(c1840gi, uri, str);
-            return EnumC1089Mq.A03;
+            x62.A0B(c1860gi, uri, str);
+            return EnumC1109Mq.A03;
         } catch (X4 unused) {
-            return x62.A05(c1840gi, uri, str, extraData);
+            return x62.A05(c1860gi, uri, str, extraData);
         }
     }
 
@@ -139,13 +139,13 @@ public final class X6 {
         return Base64.encodeToString(str.getBytes(), 0);
     }
 
-    private void A0A(C1840gi c1840gi, Uri uri) throws C1342Ws {
-        C1344Wu.A0D(c1840gi, A02(c1840gi, uri));
+    private void A0A(C1860gi c1860gi, Uri uri) throws C1362Ws {
+        C1364Wu.A0D(c1860gi, A02(c1860gi, uri));
     }
 
-    private final void A0B(C1840gi c1840gi, Uri uri, String str) throws X4, C1342Ws {
-        if (A0H(c1840gi)) {
-            if (C1290Up.A1I(c1840gi)) {
+    private final void A0B(C1860gi c1860gi, Uri uri, String str) throws X4, C1362Ws {
+        if (A0H(c1860gi)) {
+            if (C1310Up.A1I(c1860gi)) {
                 String queryParameter = uri.getQueryParameter(A07(613, 2, 62));
                 if (!TextUtils.isEmpty(queryParameter)) {
                     if (A01[3].charAt(29) != 'Z') {
@@ -156,20 +156,20 @@ public final class X6 {
                     strArr[6] = "xSKC0PNk";
                     String A07 = A07(615, 13, 102);
                     String packageName = uri.toString();
-                    AbstractC1124Oa.A03(queryParameter, A07, packageName);
+                    AbstractC1144Oa.A03(queryParameter, A07, packageName);
                 }
             }
-            boolean z3 = (c1840gi.A0H().A01() && C1290Up.A1g(c1840gi)) || (C1290Up.A25(c1840gi) && A0I(c1840gi));
-            if (!z3) {
-                boolean shouldTryToOpenSplitScreen = C1290Up.A2S(c1840gi);
+            boolean z6 = (c1860gi.A0H().A01() && C1310Up.A1g(c1860gi)) || (C1310Up.A25(c1860gi) && A0I(c1860gi));
+            if (!z6) {
+                boolean shouldTryToOpenSplitScreen = C1310Up.A2S(c1860gi);
                 if (shouldTryToOpenSplitScreen) {
-                    boolean shouldTryToOpenSplitScreen2 = C1344Wu.A0E(c1840gi, A03(c1840gi, uri));
+                    boolean shouldTryToOpenSplitScreen2 = C1364Wu.A0E(c1860gi, A03(c1860gi, uri));
                     if (shouldTryToOpenSplitScreen2) {
                         return;
                     }
                 }
             }
-            boolean A0M = A0M(c1840gi, uri, str);
+            boolean A0M = A0M(c1860gi, uri, str);
             if (A01[3].charAt(29) != 'Z') {
                 A01[7] = "w5Gj6271lmeoEbiTTMEsWTdaWp";
                 if (A0M) {
@@ -181,23 +181,23 @@ public final class X6 {
                     return;
                 }
             }
-            boolean shouldTryToOpenSplitScreen3 = A0K(c1840gi, uri);
+            boolean shouldTryToOpenSplitScreen3 = A0K(c1860gi, uri);
             if (shouldTryToOpenSplitScreen3) {
                 return;
             }
-            Intent A02 = A02(c1840gi, uri);
+            Intent A02 = A02(c1860gi, uri);
             A02.setPackage(A07(322, 19, 35));
-            if (Build.VERSION.SDK_INT >= 24 && z3) {
+            if (Build.VERSION.SDK_INT >= 24 && z6) {
                 A02.addFlags(268472320);
             }
-            C1344Wu.A0D(c1840gi, A02);
+            C1364Wu.A0D(c1860gi, A02);
             return;
         }
         throw new X4();
     }
 
-    private void A0C(C1840gi c1840gi, Uri uri, String str, Map<String, String> map) {
-        AdActivityIntent A05 = C1344Wu.A05(c1840gi);
+    private void A0C(C1860gi c1860gi, Uri uri, String str, Map<String, String> map) {
+        AdActivityIntent A05 = C1364Wu.A05(c1860gi);
         if (!ProcessUtils.isRemoteRenderingProcess()) {
             A05.addFlags(268435456);
         }
@@ -233,24 +233,24 @@ public final class X6 {
             }
         }
         try {
-            C1344Wu.A0B(c1840gi, A05);
-        } catch (C1342Ws e9) {
+            C1364Wu.A0B(c1860gi, A05);
+        } catch (C1362Ws e9) {
             Throwable cause = e9.getCause();
             Throwable th = e9;
             if (cause != null) {
                 th = e9.getCause();
             }
-            c1840gi.A08().ABC(A07(168, 11, 110), AbstractC1252Td.A0D, new C1253Te(th));
+            c1860gi.A08().ABC(A07(168, 11, 110), AbstractC1272Td.A0D, new C1273Te(th));
             Log.e(A07(149, 17, 28), A07(50, 90, 84), th);
         }
     }
 
-    public static void A0D(X6 x62, C1840gi c1840gi, Uri uri, String str) {
-        x62.A0N(c1840gi, uri, str);
+    public static void A0D(X6 x62, C1860gi c1860gi, Uri uri, String str) {
+        x62.A0N(c1860gi, uri, str);
     }
 
-    public static void A0E(X6 x62, C1840gi c1840gi, Uri uri, String str) throws C1342Ws {
-        A06(x62, c1840gi, uri, str, null);
+    public static void A0E(X6 x62, C1860gi c1860gi, Uri uri, String str) throws C1362Ws {
+        A06(x62, c1860gi, uri, str, null);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0033, code lost:
@@ -270,12 +270,12 @@ public final class X6 {
         return isHttpPermitted3;
     }
 
-    private boolean A0G(C1840gi c1840gi) {
-        if (!C1290Up.A1F(c1840gi)) {
+    private boolean A0G(C1860gi c1860gi) {
+        if (!C1310Up.A1F(c1860gi)) {
             return false;
         }
-        int deviceFBVersion = C1290Up.A0E(c1840gi);
-        int A002 = A00(c1840gi);
+        int deviceFBVersion = C1310Up.A0E(c1860gi);
+        int A002 = A00(c1860gi);
         if (deviceFBVersion == -1 || A002 == -1 || deviceFBVersion > A002) {
             return false;
         }
@@ -306,9 +306,9 @@ public final class X6 {
         return true;
     }
 
-    private boolean A0H(C1840gi c1840gi) {
+    private boolean A0H(C1860gi c1860gi) {
         Intent playStoreIntent = new Intent(A07(186, 26, 10), XB.A00(A07(548, 34, 3)));
-        Iterator<ResolveInfo> it = c1840gi.getPackageManager().queryIntentActivities(playStoreIntent, 0).iterator();
+        Iterator<ResolveInfo> it = c1860gi.getPackageManager().queryIntentActivities(playStoreIntent, 0).iterator();
         do {
             boolean hasNext = it.hasNext();
             String[] strArr = A01;
@@ -376,13 +376,13 @@ public final class X6 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static boolean A0I(C1840gi c1840gi) {
+    public static boolean A0I(C1860gi c1860gi) {
         String A07;
         String A072;
         int identifier;
         boolean supportsSplitScreenMultiWindow = true;
-        boolean z3 = Build.VERSION.SDK_INT >= 24;
-        boolean A0J = A0J(c1840gi);
+        boolean z6 = Build.VERSION.SDK_INT >= 24;
+        boolean A0J = A0J(c1860gi);
         String[] strArr = A01;
         if (strArr[5].charAt(7) != strArr[0].charAt(7)) {
             throw new RuntimeException();
@@ -390,11 +390,11 @@ public final class X6 {
         String[] strArr2 = A01;
         strArr2[2] = "";
         strArr2[1] = "LeI";
-        boolean z6 = z3 && A0J;
-        boolean z9 = true;
+        boolean z9 = z6 && A0J;
+        boolean z10 = true;
         boolean supportsSplitScreenMultiWindow2 = true;
         boolean appResizingSupported = true;
-        boolean onAndAboveNOS = C1290Up.A2F(c1840gi);
+        boolean onAndAboveNOS = C1310Up.A2F(c1860gi);
         if (onAndAboveNOS) {
             Resources system = Resources.getSystem();
             String[] strArr3 = A01;
@@ -413,19 +413,19 @@ public final class X6 {
                 identifier = system.getIdentifier(A074, A07, A072);
             }
         }
-        c1840gi.A0F().AC6(A0J, z6, z9, supportsSplitScreenMultiWindow2, appResizingSupported);
-        return z6;
+        c1860gi.A0F().AC6(A0J, z9, z10, supportsSplitScreenMultiWindow2, appResizingSupported);
+        return z9;
     }
 
-    public static boolean A0J(C1840gi c1840gi) {
+    public static boolean A0J(C1860gi c1860gi) {
         Activity A0E;
         PackageManager packageManager;
         ActivityInfo activityInfo;
         try {
-            A0E = c1840gi.A0E();
-            packageManager = c1840gi.getPackageManager();
+            A0E = c1860gi.A0E();
+            packageManager = c1860gi.getPackageManager();
         } catch (PackageManager.NameNotFoundException | IllegalAccessException | NoSuchFieldException e9) {
-            c1840gi.A0F().AC5(e9.getMessage());
+            c1860gi.A0F().AC5(e9.getMessage());
         }
         if (A0E == null || packageManager == null) {
             return false;
@@ -444,16 +444,16 @@ public final class X6 {
         return false;
     }
 
-    public static boolean A0K(C1840gi c1840gi, Uri uri) {
+    public static boolean A0K(C1860gi c1860gi, Uri uri) {
         String A07 = A07(322, 19, 35);
-        if (!C1290Up.A1H(c1840gi)) {
+        if (!C1310Up.A1H(c1860gi)) {
             return false;
         }
         if (Build.VERSION.SDK_INT < 23) {
-            c1840gi.A0F().ABH(1);
+            c1860gi.A0F().ABH(1);
             return false;
         }
-        PackageManager packageManager = c1840gi.getPackageManager();
+        PackageManager packageManager = c1860gi.getPackageManager();
         if (packageManager == null) {
             return false;
         }
@@ -462,18 +462,18 @@ public final class X6 {
             if (packageInfo != null && !TextUtils.isEmpty(packageInfo.versionName)) {
                 String[] split = packageInfo.versionName.split(A07(166, 2, 9), 2);
                 if (split.length < 1) {
-                    c1840gi.A0F().ABH(2);
+                    c1860gi.A0F().ABH(2);
                     return false;
                 }
-                if (Integer.parseInt(split[0]) < C1290Up.A0G(c1840gi)) {
-                    c1840gi.A0F().ABH(3);
+                if (Integer.parseInt(split[0]) < C1310Up.A0G(c1860gi)) {
+                    c1860gi.A0F().ABH(3);
                     return false;
                 }
             }
             Intent intent = new Intent(A07(186, 26, 10));
-            String packageName = c1840gi.getPackageName();
+            String packageName = c1860gi.getPackageName();
             intent.setPackage(A07);
-            Uri hsdpUri = A04(c1840gi, uri);
+            Uri hsdpUri = A04(c1860gi, uri);
             if (hsdpUri == null) {
                 return false;
             }
@@ -481,19 +481,19 @@ public final class X6 {
             intent.putExtra(A07(694, 7, 6), true);
             intent.putExtra(A07(259, 8, 30), packageName);
             if (intent.resolveActivity(packageManager) != null) {
-                Activity A0E = c1840gi.A0E();
+                Activity A0E = c1860gi.A0E();
                 if (A0E == null) {
                     A0E = ActivityUtils.A00();
                 }
                 if (A0E != null) {
                     A0E.startActivityForResult(intent, 945321098);
-                    c1840gi.A0F().ABH(0);
+                    c1860gi.A0F().ABH(0);
                     return true;
                 }
-                c1840gi.A0F().ABH(7);
+                c1860gi.A0F().ABH(7);
                 return false;
             }
-            InterfaceC1066Lt A0F = c1840gi.A0F();
+            InterfaceC1086Lt A0F = c1860gi.A0F();
             String[] strArr = A01;
             if (strArr[2].length() == strArr[1].length()) {
                 throw new RuntimeException();
@@ -504,19 +504,19 @@ public final class X6 {
             A0F.ABH(6);
             return false;
         } catch (PackageManager.NameNotFoundException | NumberFormatException unused) {
-            c1840gi.A0F().ABH(4);
+            c1860gi.A0F().ABH(4);
             return false;
         }
     }
 
-    private boolean A0L(C1840gi c1840gi, Uri uri, String str) throws C1342Ws {
+    private boolean A0L(C1860gi c1860gi, Uri uri, String str) throws C1362Ws {
         try {
-            Activity A0E = c1840gi.A0E();
+            Activity A0E = c1860gi.A0E();
             String uri2 = uri.toString();
             if (A0E != null && !TextUtils.isEmpty(uri2)) {
                 Intent fbIntent = new Intent();
-                if (C1290Up.A1G(c1840gi)) {
-                    String A06 = AbstractC2005jd.A06(str);
+                if (C1310Up.A1G(c1860gi)) {
+                    String A06 = AbstractC2025jd.A06(str);
                     if (TextUtils.isEmpty(A06)) {
                         return false;
                     }
@@ -525,7 +525,7 @@ public final class X6 {
                 fbIntent.setComponent(new ComponentName(A07(412, 19, 65), A07(341, 71, 75)));
                 fbIntent.putExtra(A07(140, 9, 22), uri2);
                 fbIntent.putExtra(A07(37, 13, 89), A08(A07(20, 17, 90)));
-                if (!C1344Wu.A0E(c1840gi, fbIntent)) {
+                if (!C1364Wu.A0E(c1860gi, fbIntent)) {
                     A0E.startActivityForResult(fbIntent, 2);
                     return true;
                 }
@@ -533,30 +533,30 @@ public final class X6 {
             }
             return false;
         } catch (ActivityNotFoundException | IllegalStateException e9) {
-            c1840gi.A0F().ABG(e9.getMessage());
+            c1860gi.A0F().ABG(e9.getMessage());
             return false;
         }
     }
 
-    private boolean A0M(C1840gi c1840gi, Uri uri, String str) throws C1342Ws {
-        return A0G(c1840gi) && A0L(c1840gi, uri, str);
+    private boolean A0M(C1860gi c1860gi, Uri uri, String str) throws C1362Ws {
+        return A0G(c1860gi) && A0L(c1860gi, uri, str);
     }
 
-    private final boolean A0N(C1840gi c1840gi, Uri uri, String str) {
-        return C1344Wu.A0G(c1840gi, uri, str);
+    private final boolean A0N(C1860gi c1860gi, Uri uri, String str) {
+        return C1364Wu.A0G(c1860gi, uri, str);
     }
 
-    public static boolean A0O(X6 x62, C1840gi c1840gi, Uri uri, String str) {
+    public static boolean A0O(X6 x62, C1860gi c1860gi, Uri uri, String str) {
         try {
-            A0E(x62, c1840gi, uri, str);
+            A0E(x62, c1860gi, uri, str);
             return true;
-        } catch (C1342Ws e9) {
+        } catch (C1362Ws e9) {
             Throwable cause = e9.getCause();
             Throwable th = e9;
             if (cause != null) {
                 th = e9.getCause();
             }
-            c1840gi.A08().ABC(A07(168, 11, 110), AbstractC1252Td.A05, new C1253Te(th));
+            c1860gi.A08().ABC(A07(168, 11, 110), AbstractC1272Td.A05, new C1273Te(th));
             return false;
         }
     }

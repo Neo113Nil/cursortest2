@@ -14,28 +14,28 @@ import java.io.InputStream;
 public final class y implements h {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f8269a = "rawresource";
+    public static final String f9055a = "rawresource";
 
     /* renamed from: b, reason: collision with root package name */
-    private final Resources f8270b;
+    private final Resources f9056b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final aa<? super y> f8271c;
+    private final aa<? super y> f9057c;
 
     /* renamed from: d, reason: collision with root package name */
-    private Uri f8272d;
+    private Uri f9058d;
 
     /* renamed from: e, reason: collision with root package name */
-    private AssetFileDescriptor f8273e;
+    private AssetFileDescriptor f9059e;
 
     /* renamed from: f, reason: collision with root package name */
-    private InputStream f8274f;
+    private InputStream f9060f;
 
     /* renamed from: g, reason: collision with root package name */
-    private long f8275g;
+    private long f9061g;
 
     /* renamed from: h, reason: collision with root package name */
-    private boolean f8276h;
+    private boolean f9062h;
 
     public static class a extends IOException {
         public a(String str) {
@@ -57,17 +57,17 @@ public final class y implements h {
 
     @Override // com.anythink.basead.exoplayer.j.h
     public final void b() {
-        this.f8272d = null;
+        this.f9058d = null;
         try {
             try {
-                InputStream inputStream = this.f8274f;
+                InputStream inputStream = this.f9060f;
                 if (inputStream != null) {
                     inputStream.close();
                 }
-                this.f8274f = null;
+                this.f9060f = null;
                 try {
                     try {
-                        AssetFileDescriptor assetFileDescriptor = this.f8273e;
+                        AssetFileDescriptor assetFileDescriptor = this.f9059e;
                         if (assetFileDescriptor != null) {
                             assetFileDescriptor.close();
                         }
@@ -75,10 +75,10 @@ public final class y implements h {
                         throw new a(e9);
                     }
                 } finally {
-                    this.f8273e = null;
-                    if (this.f8276h) {
-                        this.f8276h = false;
-                        aa<? super y> aaVar = this.f8271c;
+                    this.f9059e = null;
+                    if (this.f9062h) {
+                        this.f9062h = false;
+                        aa<? super y> aaVar = this.f9057c;
                         if (aaVar != null) {
                             aaVar.c();
                         }
@@ -88,17 +88,17 @@ public final class y implements h {
                 throw new a(e10);
             }
         } catch (Throwable th) {
-            this.f8274f = null;
+            this.f9060f = null;
             try {
                 try {
-                    AssetFileDescriptor assetFileDescriptor2 = this.f8273e;
+                    AssetFileDescriptor assetFileDescriptor2 = this.f9059e;
                     if (assetFileDescriptor2 != null) {
                         assetFileDescriptor2.close();
                     }
-                    this.f8273e = null;
-                    if (this.f8276h) {
-                        this.f8276h = false;
-                        aa<? super y> aaVar2 = this.f8271c;
+                    this.f9059e = null;
+                    if (this.f9062h) {
+                        this.f9062h = false;
+                        aa<? super y> aaVar2 = this.f9057c;
                         if (aaVar2 != null) {
                             aaVar2.c();
                         }
@@ -108,10 +108,10 @@ public final class y implements h {
                     throw new a(e11);
                 }
             } finally {
-                this.f8273e = null;
-                if (this.f8276h) {
-                    this.f8276h = false;
-                    aa<? super y> aaVar3 = this.f8271c;
+                this.f9059e = null;
+                if (this.f9062h) {
+                    this.f9062h = false;
+                    aa<? super y> aaVar3 = this.f9057c;
                     if (aaVar3 != null) {
                         aaVar3.c();
                     }
@@ -121,43 +121,43 @@ public final class y implements h {
     }
 
     public y(Context context, aa<? super y> aaVar) {
-        this.f8270b = context.getResources();
-        this.f8271c = aaVar;
+        this.f9056b = context.getResources();
+        this.f9057c = aaVar;
     }
 
     @Override // com.anythink.basead.exoplayer.j.h
     public final long a(k kVar) {
         try {
-            Uri uri = kVar.f8137c;
-            this.f8272d = uri;
-            if (!TextUtils.equals(f8269a, uri.getScheme())) {
+            Uri uri = kVar.f8923c;
+            this.f9058d = uri;
+            if (!TextUtils.equals(f9055a, uri.getScheme())) {
                 throw new a("URI must use scheme rawresource");
             }
             try {
-                this.f8273e = this.f8270b.openRawResourceFd(Integer.parseInt(this.f8272d.getLastPathSegment()));
-                FileInputStream fileInputStream = new FileInputStream(this.f8273e.getFileDescriptor());
-                this.f8274f = fileInputStream;
-                fileInputStream.skip(this.f8273e.getStartOffset());
-                if (this.f8274f.skip(kVar.f8140f) < kVar.f8140f) {
+                this.f9059e = this.f9056b.openRawResourceFd(Integer.parseInt(this.f9058d.getLastPathSegment()));
+                FileInputStream fileInputStream = new FileInputStream(this.f9059e.getFileDescriptor());
+                this.f9060f = fileInputStream;
+                fileInputStream.skip(this.f9059e.getStartOffset());
+                if (this.f9060f.skip(kVar.f8926f) < kVar.f8926f) {
                     throw new EOFException();
                 }
-                long j6 = kVar.f8141g;
+                long j6 = kVar.f8927g;
                 long j9 = -1;
                 if (j6 != -1) {
-                    this.f8275g = j6;
+                    this.f9061g = j6;
                 } else {
-                    long length = this.f8273e.getLength();
+                    long length = this.f9059e.getLength();
                     if (length != -1) {
-                        j9 = length - kVar.f8140f;
+                        j9 = length - kVar.f8926f;
                     }
-                    this.f8275g = j9;
+                    this.f9061g = j9;
                 }
-                this.f8276h = true;
-                aa<? super y> aaVar = this.f8271c;
+                this.f9062h = true;
+                aa<? super y> aaVar = this.f9057c;
                 if (aaVar != null) {
                     aaVar.b();
                 }
-                return this.f8275g;
+                return this.f9061g;
             } catch (NumberFormatException unused) {
                 throw new a("Resource identifier must be an integer.");
             }
@@ -167,33 +167,33 @@ public final class y implements h {
     }
 
     @Override // com.anythink.basead.exoplayer.j.h
-    public final int a(byte[] bArr, int i, int i6) {
-        if (i6 == 0) {
+    public final int a(byte[] bArr, int i, int i4) {
+        if (i4 == 0) {
             return 0;
         }
-        long j6 = this.f8275g;
+        long j6 = this.f9061g;
         if (j6 == 0) {
             return -1;
         }
         if (j6 != -1) {
             try {
-                i6 = (int) Math.min(j6, i6);
+                i4 = (int) Math.min(j6, i4);
             } catch (IOException e9) {
                 throw new a(e9);
             }
         }
-        int read = this.f8274f.read(bArr, i, i6);
+        int read = this.f9060f.read(bArr, i, i4);
         if (read == -1) {
-            if (this.f8275g == -1) {
+            if (this.f9061g == -1) {
                 return -1;
             }
             throw new a(new EOFException());
         }
-        long j9 = this.f8275g;
+        long j9 = this.f9061g;
         if (j9 != -1) {
-            this.f8275g = j9 - read;
+            this.f9061g = j9 - read;
         }
-        aa<? super y> aaVar = this.f8271c;
+        aa<? super y> aaVar = this.f9057c;
         if (aaVar != null) {
             aaVar.a(read);
         }
@@ -202,6 +202,6 @@ public final class y implements h {
 
     @Override // com.anythink.basead.exoplayer.j.h
     public final Uri a() {
-        return this.f8272d;
+        return this.f9058d;
     }
 }

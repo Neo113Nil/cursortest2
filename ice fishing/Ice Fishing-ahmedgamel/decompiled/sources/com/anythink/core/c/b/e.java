@@ -11,55 +11,55 @@ import java.util.List;
 public class e extends com.anythink.core.common.e.c<com.anythink.core.c.a.a> {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f12058a = "PlacementStatisticsDao";
+    private static final String f12844a = "PlacementStatisticsDao";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final int f12059b = 50;
+    private static final int f12845b = 50;
 
     /* renamed from: c, reason: collision with root package name */
-    private static volatile e f12060c;
+    private static volatile e f12846c;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f12061a = "user_value_placement";
+        public static final String f12847a = "user_value_placement";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f12062b = "type";
+        public static final String f12848b = "type";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f12063c = "placement_id";
+        public static final String f12849c = "placement_id";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f12064d = "request_id";
+        public static final String f12850d = "request_id";
 
         /* renamed from: e, reason: collision with root package name */
-        public static final String f12065e = "network_firm_id";
+        public static final String f12851e = "network_firm_id";
 
         /* renamed from: f, reason: collision with root package name */
-        public static final String f12066f = "ad_source_id";
+        public static final String f12852f = "ad_source_id";
 
         /* renamed from: g, reason: collision with root package name */
-        public static final String f12067g = "dsp_id";
+        public static final String f12853g = "dsp_id";
 
         /* renamed from: h, reason: collision with root package name */
-        public static final String f12068h = "price";
+        public static final String f12854h = "price";
         public static final String i = "record_time";
 
         /* renamed from: j, reason: collision with root package name */
-        public static final String f12069j = "ps_id";
+        public static final String f12855j = "ps_id";
 
         /* renamed from: k, reason: collision with root package name */
-        public static final String f12070k = "segment_id";
+        public static final String f12856k = "segment_id";
 
         /* renamed from: l, reason: collision with root package name */
-        public static final String f12071l = "CREATE TABLE IF NOT EXISTS user_value_placement(type INTEGER, placement_id TEXT, request_id TEXT, network_firm_id INTEGER, ad_source_id TEXT, dsp_id TEXT, price DOUBLE, record_time INTEGER, ps_id TEXT )";
+        public static final String f12857l = "CREATE TABLE IF NOT EXISTS user_value_placement(type INTEGER, placement_id TEXT, request_id TEXT, network_firm_id INTEGER, ad_source_id TEXT, dsp_id TEXT, price DOUBLE, record_time INTEGER, ps_id TEXT )";
 
         /* renamed from: m, reason: collision with root package name */
-        public static final String f12072m = "ALTER TABLE user_value_placement ADD COLUMN segment_id INTEGER";
+        public static final String f12858m = "ALTER TABLE user_value_placement ADD COLUMN segment_id INTEGER";
 
         /* renamed from: n, reason: collision with root package name */
-        public static final String f12073n = "CREATE INDEX placement_id ON user_value_placement (placement_id)";
+        public static final String f12859n = "CREATE INDEX placement_id ON user_value_placement (placement_id)";
     }
 
     private e(com.anythink.core.common.e.d dVar) {
@@ -67,18 +67,18 @@ public class e extends com.anythink.core.common.e.c<com.anythink.core.c.a.a> {
     }
 
     public static e a() {
-        if (f12060c == null) {
+        if (f12846c == null) {
             synchronized (e.class) {
                 try {
-                    if (f12060c == null) {
-                        f12060c = new e(com.anythink.core.common.e.e.a(t.b().g()));
+                    if (f12846c == null) {
+                        f12846c = new e(com.anythink.core.common.e.e.a(t.b().g()));
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f12060c;
+        return f12846c;
     }
 
     public final synchronized void a(com.anythink.core.c.a.a aVar) {
@@ -88,7 +88,7 @@ public class e extends com.anythink.core.common.e.c<com.anythink.core.c.a.a> {
             try {
                 String j6 = aVar.j();
                 String b9 = aVar.b();
-                SQLiteDatabase d2 = d();
+                SQLiteDatabase d9 = d();
                 ContentValues contentValues = new ContentValues();
                 contentValues.put("type", Integer.valueOf(k9));
                 contentValues.put("placement_id", j6);
@@ -96,28 +96,28 @@ public class e extends com.anythink.core.common.e.c<com.anythink.core.c.a.a> {
                 contentValues.put("ad_source_id", aVar.d());
                 contentValues.put("network_firm_id", Integer.valueOf(aVar.c()));
                 contentValues.put("dsp_id", aVar.e());
-                contentValues.put(a.f12068h, Double.valueOf(aVar.f()));
+                contentValues.put(a.f12854h, Double.valueOf(aVar.f()));
                 contentValues.put(a.i, Long.valueOf(aVar.g()));
                 contentValues.put("ps_id", aVar.h());
                 contentValues.put("segment_id", Integer.valueOf(aVar.a()));
-                Cursor query = c().query(a.f12061a, new String[]{"placement_id", "request_id"}, "placement_id=? AND request_id=? AND type=?", new String[]{j6, b9, String.valueOf(k9)}, null, null, null);
+                Cursor query = c().query(a.f12847a, new String[]{"placement_id", "request_id"}, "placement_id=? AND request_id=? AND type=?", new String[]{j6, b9, String.valueOf(k9)}, null, null, null);
                 if (query != null && query.getCount() > 0) {
                     query.close();
-                    d().update(a.f12061a, contentValues, "placement_id = ? AND request_id = ? AND type = ?", new String[]{j6, b9, String.valueOf(k9)});
+                    d().update(a.f12847a, contentValues, "placement_id = ? AND request_id = ? AND type = ?", new String[]{j6, b9, String.valueOf(k9)});
                     return;
                 }
                 if (query != null) {
                     query.close();
                 }
-                Cursor query2 = d2.query(a.f12061a, new String[]{a.i}, "type = ? AND placement_id = ?", new String[]{String.valueOf(k9), j6}, null, null, "record_time ASC");
+                Cursor query2 = d9.query(a.f12847a, new String[]{a.i}, "type = ? AND placement_id = ?", new String[]{String.valueOf(k9), j6}, null, null, "record_time ASC");
                 try {
                     if (query2.getCount() > 50) {
                         long j9 = query2.moveToNext() ? query2.getLong(query2.getColumnIndexOrThrow(a.i)) : 0L;
                         if (j9 != 0) {
-                            d2.delete(a.f12061a, "record_time = ?", new String[]{String.valueOf(j9)});
+                            d9.delete(a.f12847a, "record_time = ?", new String[]{String.valueOf(j9)});
                         }
                     }
-                    d2.insertOrThrow(a.f12061a, null, contentValues);
+                    d9.insertOrThrow(a.f12847a, null, contentValues);
                     Thread.currentThread().getName();
                     query2.close();
                 } catch (Exception e9) {
@@ -145,7 +145,7 @@ public class e extends com.anythink.core.common.e.c<com.anythink.core.c.a.a> {
     }
 
     private boolean a(String str, String str2, int i) {
-        Cursor query = c().query(a.f12061a, new String[]{"placement_id", "request_id"}, "placement_id=? AND request_id=? AND type=?", new String[]{str, str2, String.valueOf(i)}, null, null, null);
+        Cursor query = c().query(a.f12847a, new String[]{"placement_id", "request_id"}, "placement_id=? AND request_id=? AND type=?", new String[]{str, str2, String.valueOf(i)}, null, null, null);
         if (query != null && query.getCount() > 0) {
             query.close();
             return true;
@@ -157,7 +157,7 @@ public class e extends com.anythink.core.common.e.c<com.anythink.core.c.a.a> {
         return false;
     }
 
-    public final synchronized List<com.anythink.core.c.a.a> a(String str, int i, long j6, int i6) {
+    public final synchronized List<com.anythink.core.c.a.a> a(String str, int i, long j6, int i4) {
         ArrayList arrayList;
         String[] strArr;
         String str2;
@@ -172,7 +172,7 @@ public class e extends com.anythink.core.common.e.c<com.anythink.core.c.a.a> {
                     strArr = new String[]{str, String.valueOf(i), String.valueOf(j6), "0"};
                     str2 = "placement_id = ? AND segment_id = ? AND record_time > ? AND price > ?";
                 }
-                cursor = c().query(a.f12061a, null, str2, strArr, null, null, null, String.valueOf(i6));
+                cursor = c().query(a.f12847a, null, str2, strArr, null, null, null, String.valueOf(i4));
                 while (cursor.moveToNext()) {
                     arrayList.add(a(cursor));
                     Thread.currentThread().getName();
@@ -197,7 +197,7 @@ public class e extends com.anythink.core.common.e.c<com.anythink.core.c.a.a> {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final synchronized List<com.anythink.core.c.a.a> a(int i, String str, int i6) {
+    public final synchronized List<com.anythink.core.c.a.a> a(int i, String str, int i4) {
         Throwable th;
         Exception exc;
         Cursor cursor;
@@ -205,7 +205,7 @@ public class e extends com.anythink.core.common.e.c<com.anythink.core.c.a.a> {
         try {
             try {
                 ArrayList arrayList = new ArrayList();
-                cursor = c().query(a.f12061a, null, "type = ? AND placement_id = ?", new String[]{String.valueOf(i), str}, null, null, "record_time DESC", String.valueOf(i6));
+                cursor = c().query(a.f12847a, null, "type = ? AND placement_id = ?", new String[]{String.valueOf(i), str}, null, null, "record_time DESC", String.valueOf(i4));
                 while (cursor.moveToNext()) {
                     try {
                         arrayList.add(a(cursor));
@@ -247,29 +247,29 @@ public class e extends com.anythink.core.common.e.c<com.anythink.core.c.a.a> {
         int i = cursor.getInt(cursor.getColumnIndexOrThrow("type"));
         String string = cursor.getString(cursor.getColumnIndexOrThrow("placement_id"));
         String string2 = cursor.getString(cursor.getColumnIndexOrThrow("request_id"));
-        int i6 = cursor.getInt(cursor.getColumnIndexOrThrow("network_firm_id"));
+        int i4 = cursor.getInt(cursor.getColumnIndexOrThrow("network_firm_id"));
         String string3 = cursor.getString(cursor.getColumnIndexOrThrow("ad_source_id"));
         String string4 = cursor.getString(cursor.getColumnIndexOrThrow("dsp_id"));
-        double d2 = cursor.getDouble(cursor.getColumnIndexOrThrow(a.f12068h));
+        double d9 = cursor.getDouble(cursor.getColumnIndexOrThrow(a.f12854h));
         long j6 = cursor.getLong(cursor.getColumnIndexOrThrow(a.i));
         String string5 = cursor.getString(cursor.getColumnIndexOrThrow("ps_id"));
-        int i9 = cursor.getInt(cursor.getColumnIndexOrThrow("segment_id"));
+        int i6 = cursor.getInt(cursor.getColumnIndexOrThrow("segment_id"));
         aVar.c(i);
         aVar.e(string);
         aVar.a(string2);
-        aVar.b(i6);
+        aVar.b(i4);
         aVar.b(string3);
         aVar.c(string4);
-        aVar.a(d2);
+        aVar.a(d9);
         aVar.a(j6);
         aVar.d(string5);
-        aVar.a(i9);
+        aVar.a(i6);
         return aVar;
     }
 
     public final synchronized void a(String str) {
         try {
-            d().delete(a.f12061a, "placement_id = ?", new String[]{str});
+            d().delete(a.f12847a, "placement_id = ?", new String[]{str});
         } catch (Exception e9) {
             e9.getMessage();
             Thread.currentThread().getName();

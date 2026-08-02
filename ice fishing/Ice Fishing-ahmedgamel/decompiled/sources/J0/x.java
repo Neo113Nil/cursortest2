@@ -1,11 +1,16 @@
 package J0;
 
+import java.util.Collections;
+import java.util.List;
+
 /* loaded from: classes.dex */
-public interface x {
-
-    /* renamed from: f0, reason: collision with root package name */
-    public static final w f1410f0 = new w();
-
-    /* renamed from: g0, reason: collision with root package name */
-    public static final v f1411g0 = new v();
+public abstract class x {
+    public final void a(s sVar) {
+        List singletonList = Collections.singletonList(sVar);
+        K0.p pVar = (K0.p) this;
+        if (singletonList.isEmpty()) {
+            throw new IllegalArgumentException("enqueue needs at least one WorkRequest.");
+        }
+        new K0.k(pVar, null, singletonList).s();
+    }
 }

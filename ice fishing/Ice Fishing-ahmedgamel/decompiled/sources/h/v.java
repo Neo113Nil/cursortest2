@@ -13,9 +13,9 @@ public abstract class v {
         return onBackInvokedDispatcher;
     }
 
-    public static OnBackInvokedCallback b(Object obj, LayoutInflaterFactory2C4533A layoutInflaterFactory2C4533A) {
-        Objects.requireNonNull(layoutInflaterFactory2C4533A);
-        androidx.activity.C c9 = new androidx.activity.C(1, layoutInflaterFactory2C4533A);
+    public static OnBackInvokedCallback b(Object obj, LayoutInflaterFactory2C4537A layoutInflaterFactory2C4537A) {
+        Objects.requireNonNull(layoutInflaterFactory2C4537A);
+        androidx.activity.C c9 = new androidx.activity.C(1, layoutInflaterFactory2C4537A);
         P.d.k(obj).registerOnBackInvokedCallback(1000000, c9);
         return c9;
     }

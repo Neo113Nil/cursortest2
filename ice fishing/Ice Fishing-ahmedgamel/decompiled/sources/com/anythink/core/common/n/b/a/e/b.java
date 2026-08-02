@@ -16,10 +16,10 @@ public enum b {
 
 
     /* renamed from: l, reason: collision with root package name */
-    public final int f15122l;
+    public final int f15909l;
 
     b(int i) {
-        this.f15122l = i;
+        this.f15909l = i;
     }
 
     private static /* synthetic */ b[] a() {
@@ -28,7 +28,7 @@ public enum b {
 
     public static b a(int i) {
         for (b bVar : values()) {
-            if (bVar.f15122l == i) {
+            if (bVar.f15909l == i) {
                 return bVar;
             }
         }

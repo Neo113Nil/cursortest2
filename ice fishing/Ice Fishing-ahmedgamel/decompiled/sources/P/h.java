@@ -4,12 +4,12 @@ import android.view.accessibility.AccessibilityNodeInfo;
 
 /* loaded from: classes.dex */
 public abstract class h {
-    public static j a(boolean z3, int i, int i6, int i9, int i10, boolean z6, String str, String str2) {
-        return new j(new AccessibilityNodeInfo.CollectionItemInfo.Builder().setHeading(z3).setColumnIndex(i).setRowIndex(i6).setColumnSpan(i9).setRowSpan(i10).setSelected(z6).setRowTitle(str).setColumnTitle(str2).build());
+    public static j a(boolean z6, int i, int i4, int i6, int i9, boolean z9, String str, String str2) {
+        return new j(new AccessibilityNodeInfo.CollectionItemInfo.Builder().setHeading(z6).setColumnIndex(i).setRowIndex(i4).setColumnSpan(i6).setRowSpan(i9).setSelected(z9).setRowTitle(str).setColumnTitle(str2).build());
     }
 
-    public static k b(AccessibilityNodeInfo accessibilityNodeInfo, int i, int i6) {
-        AccessibilityNodeInfo child = accessibilityNodeInfo.getChild(i, i6);
+    public static k b(AccessibilityNodeInfo accessibilityNodeInfo, int i, int i4) {
+        AccessibilityNodeInfo child = accessibilityNodeInfo.getChild(i, i4);
         if (child != null) {
             return new k(child, 0);
         }
@@ -44,8 +44,8 @@ public abstract class h {
         return accessibilityNodeInfo.isTextSelectable();
     }
 
-    public static void i(AccessibilityNodeInfo accessibilityNodeInfo, boolean z3) {
-        accessibilityNodeInfo.setTextSelectable(z3);
+    public static void i(AccessibilityNodeInfo accessibilityNodeInfo, boolean z6) {
+        accessibilityNodeInfo.setTextSelectable(z6);
     }
 
     public static void j(AccessibilityNodeInfo accessibilityNodeInfo, String str) {

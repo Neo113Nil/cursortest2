@@ -12,8 +12,8 @@ import java.util.Set;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import v7.AbstractC5129j;
-import v7.C5135p;
+import v7.AbstractC5119j;
+import v7.C5125p;
 import v7.q;
 
 /* loaded from: classes2.dex */
@@ -54,8 +54,8 @@ public final class a implements O4.a {
         kotlin.jvm.internal.h.e(messageId, "messageId");
         kotlin.jvm.internal.h.e(time, "time");
         this.messageId = messageId;
-        this.variants = q.f41443n;
-        this.triggers = C5135p.f41442n;
+        this.variants = q.f41222n;
+        this.triggers = C5125p.f41221n;
         this.clickedClickIds = new LinkedHashSet();
         this.redisplayStats = new h(time);
     }
@@ -84,8 +84,8 @@ public final class a implements O4.a {
             JSONArray jSONArray2 = jSONArray.getJSONArray(i);
             ArrayList<m> arrayList2 = new ArrayList<>();
             int length2 = jSONArray2.length();
-            for (int i6 = 0; i6 < length2; i6++) {
-                JSONObject jSONObject = jSONArray2.getJSONObject(i6);
+            for (int i4 = 0; i4 < length2; i4++) {
+                JSONObject jSONObject = jSONArray2.getJSONObject(i4);
                 kotlin.jvm.internal.h.d(jSONObject, "getJSONObject(...)");
                 arrayList2.add(new m(jSONObject));
             }
@@ -199,16 +199,16 @@ public final class a implements O4.a {
         this.clickedClickIds.remove(clickId);
     }
 
-    public final void setDisplayDuration(double d2) {
-        this.displayDuration = d2;
+    public final void setDisplayDuration(double d9) {
+        this.displayDuration = d9;
     }
 
-    public final void setDisplayedInSession(boolean z3) {
-        this.isDisplayedInSession = z3;
+    public final void setDisplayedInSession(boolean z6) {
+        this.isDisplayedInSession = z6;
     }
 
-    public final void setTriggerChanged(boolean z3) {
-        this.isTriggerChanged = z3;
+    public final void setTriggerChanged(boolean z6) {
+        this.isTriggerChanged = z6;
     }
 
     public final boolean takeActionAsUnique() {
@@ -263,21 +263,21 @@ public final class a implements O4.a {
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    public a(boolean z3, K4.a time) {
+    public a(boolean z6, K4.a time) {
         this("", time);
         kotlin.jvm.internal.h.e(time, "time");
-        this.isPreview = z3;
+        this.isPreview = z6;
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    public a(String messageId, Set<String> clickIds, boolean z3, h redisplayStats, K4.a time) {
+    public a(String messageId, Set<String> clickIds, boolean z6, h redisplayStats, K4.a time) {
         this(messageId, time);
         kotlin.jvm.internal.h.e(messageId, "messageId");
         kotlin.jvm.internal.h.e(clickIds, "clickIds");
         kotlin.jvm.internal.h.e(redisplayStats, "redisplayStats");
         kotlin.jvm.internal.h.e(time, "time");
-        this.clickedClickIds = AbstractC5129j.O(clickIds);
-        this.isDisplayedInSession = z3;
+        this.clickedClickIds = AbstractC5119j.M(clickIds);
+        this.isDisplayedInSession = z6;
         this.redisplayStats = redisplayStats;
     }
 

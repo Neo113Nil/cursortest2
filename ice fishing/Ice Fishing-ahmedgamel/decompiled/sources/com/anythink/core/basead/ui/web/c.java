@@ -10,17 +10,17 @@ import org.json.JSONObject;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    w f11996a;
+    w f12782a;
 
     /* renamed from: b, reason: collision with root package name */
-    JSONObject f11997b;
+    JSONObject f12783b;
 
     /* renamed from: c, reason: collision with root package name */
-    HashMap<String, Boolean> f11998c = new HashMap<>(3);
+    HashMap<String, Boolean> f12784c = new HashMap<>(3);
 
     public c(w wVar) {
         JSONObject jSONObject;
-        this.f11996a = wVar;
+        this.f12782a = wVar;
         if (wVar != null) {
             try {
                 jSONObject = new JSONObject(wVar.U());
@@ -30,11 +30,11 @@ public final class c {
         } else {
             jSONObject = null;
         }
-        this.f11997b = jSONObject;
+        this.f12783b = jSONObject;
     }
 
     public final void a(WebView webView, String str) {
-        JSONObject jSONObject = this.f11997b;
+        JSONObject jSONObject = this.f12783b;
         if (jSONObject == null) {
             return;
         }
@@ -42,9 +42,9 @@ public final class c {
             Iterator<String> keys = jSONObject.keys();
             while (keys.hasNext()) {
                 String next = keys.next();
-                if (next != null && str != null && str.contains(next) && this.f11998c.get(next) == null) {
-                    this.f11998c.put(next, Boolean.TRUE);
-                    webView.loadUrl(this.f11997b.optString(next));
+                if (next != null && str != null && str.contains(next) && this.f12784c.get(next) == null) {
+                    this.f12784c.put(next, Boolean.TRUE);
+                    webView.loadUrl(this.f12783b.optString(next));
                 }
             }
         } catch (Throwable unused) {

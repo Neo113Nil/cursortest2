@@ -6,7 +6,7 @@ import java.util.Arrays;
 public abstract class VC {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final byte[] f28098a;
+    public static final byte[] f28895a;
 
     static {
         byte[] bArr = new byte[128];
@@ -14,11 +14,11 @@ public abstract class VC {
         for (int i = 0; i < 10; i++) {
             bArr[i + 48] = (byte) i;
         }
-        for (int i6 = 0; i6 < 26; i6++) {
-            byte b9 = (byte) (i6 + 10);
-            bArr[i6 + 65] = b9;
-            bArr[i6 + 97] = b9;
+        for (int i4 = 0; i4 < 26; i4++) {
+            byte b9 = (byte) (i4 + 10);
+            bArr[i4 + 65] = b9;
+            bArr[i4 + 97] = b9;
         }
-        f28098a = bArr;
+        f28895a = bArr;
     }
 }

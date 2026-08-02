@@ -1,116 +1,116 @@
 package l8;
 
-import D.y;
+import D.x;
 import java.util.Iterator;
 import java.util.Map;
 import kotlin.jvm.internal.h;
+import m8.q;
 import m8.r;
-import m8.s;
 
 /* loaded from: classes2.dex */
 public final class b extends a {
 
     /* renamed from: e, reason: collision with root package name */
-    public final /* synthetic */ int f38938e = 0;
+    public final /* synthetic */ int f39006e = 0;
 
     /* renamed from: f, reason: collision with root package name */
-    public final /* synthetic */ Object f38939f;
+    public final /* synthetic */ Object f39007f;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public b(s sVar, String str) {
+    public b(r rVar, String str) {
         super(str);
-        this.f38939f = sVar;
+        this.f39007f = rVar;
     }
 
     @Override // l8.a
     public final long a() {
-        r rVar;
+        q qVar;
         long j6;
-        switch (this.f38938e) {
+        switch (this.f39006e) {
             case 0:
-                ((I7.a) this.f38939f).invoke();
+                ((I7.a) this.f39007f).invoke();
                 return -1L;
             default:
-                s sVar = (s) this.f38939f;
+                r rVar = (r) this.f39007f;
                 long nanoTime = System.nanoTime();
-                Map map = sVar.f39413c;
+                Map map = rVar.f39570c;
                 Iterator it = map.values().iterator();
                 if (it.hasNext()) {
-                    throw y.j(it);
+                    throw x.i(it);
                 }
-                Iterator it2 = sVar.f39416f.iterator();
+                Iterator it2 = rVar.f39573f.iterator();
                 h.d(it2, "iterator(...)");
                 while (it2.hasNext()) {
-                    if (map.get(((r) it2.next()).f39396d.f38262a) != null) {
+                    if (map.get(((q) it2.next()).f39553d.f38381a) != null) {
                         throw new ClassCastException();
                     }
                 }
-                long j9 = (nanoTime - sVar.f39412b) + 1;
-                Iterator it3 = sVar.f39416f.iterator();
+                long j9 = (nanoTime - rVar.f39569b) + 1;
+                Iterator it3 = rVar.f39573f.iterator();
                 h.d(it3, "iterator(...)");
                 int i = 0;
                 long j10 = Long.MAX_VALUE;
-                r rVar2 = null;
-                r rVar3 = null;
-                int i6 = 0;
+                q qVar2 = null;
+                q qVar3 = null;
+                int i4 = 0;
                 while (it3.hasNext()) {
-                    r rVar4 = (r) it3.next();
-                    h.b(rVar4);
-                    synchronized (rVar4) {
-                        if (sVar.a(rVar4, nanoTime) > 0) {
-                            i6++;
+                    q qVar4 = (q) it3.next();
+                    h.b(qVar4);
+                    synchronized (qVar4) {
+                        if (rVar.a(qVar4, nanoTime) > 0) {
+                            i4++;
                             j6 = nanoTime;
                         } else {
-                            int i9 = i;
-                            long j11 = rVar4.f39410s;
+                            int i6 = i;
+                            long j11 = qVar4.f39567s;
                             if (j11 < j9) {
                                 j9 = j11;
-                                rVar2 = rVar4;
+                                qVar2 = qVar4;
                             }
                             j6 = nanoTime;
-                            if (map.get(rVar4.f39396d.f38262a) != null) {
+                            if (map.get(qVar4.f39553d.f38381a) != null) {
                                 throw new ClassCastException();
                             }
-                            int i10 = i9 + 1;
+                            int i9 = i6 + 1;
                             if (j11 < j10) {
                                 j10 = j11;
-                                rVar3 = rVar4;
+                                qVar3 = qVar4;
                             }
-                            i = i10;
+                            i = i9;
                         }
                     }
                     nanoTime = j6;
                 }
                 long j12 = nanoTime;
-                int i11 = i;
-                if (rVar2 != null) {
-                    rVar = rVar2;
-                } else if (i11 > 5) {
+                int i10 = i;
+                if (qVar2 != null) {
+                    qVar = qVar2;
+                } else if (i10 > 5) {
                     j9 = j10;
-                    rVar = rVar3;
+                    qVar = qVar3;
                 } else {
                     j9 = -1;
-                    rVar = null;
+                    qVar = null;
                 }
-                if (rVar == null) {
-                    if (rVar3 != null) {
-                        return (j10 + sVar.f39412b) - j12;
+                if (qVar == null) {
+                    if (qVar3 != null) {
+                        return (j10 + rVar.f39569b) - j12;
                     }
-                    if (i6 > 0) {
-                        return sVar.f39412b;
+                    if (i4 > 0) {
+                        return rVar.f39569b;
                     }
                     return -1L;
                 }
-                synchronized (rVar) {
-                    if (rVar.f39409r.isEmpty() && rVar.f39410s == j9) {
-                        rVar.f39403l = true;
-                        sVar.f39416f.remove(rVar);
-                        if (map.get(rVar.f39396d.f38262a) != null) {
+                synchronized (qVar) {
+                    if (qVar.f39566r.isEmpty() && qVar.f39567s == j9) {
+                        qVar.f39560l = true;
+                        rVar.f39573f.remove(qVar);
+                        if (map.get(qVar.f39553d.f38381a) != null) {
                             throw new ClassCastException();
                         }
-                        j8.d.c(rVar.f39398f);
-                        if (sVar.f39416f.isEmpty()) {
-                            sVar.f39414d.a();
+                        j8.d.c(qVar.f39555f);
+                        if (rVar.f39573f.isEmpty()) {
+                            rVar.f39571d.a();
                         }
                     }
                 }
@@ -121,6 +121,6 @@ public final class b extends a {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public b(String str, I7.a aVar) {
         super(str);
-        this.f38939f = aVar;
+        this.f39007f = aVar;
     }
 }

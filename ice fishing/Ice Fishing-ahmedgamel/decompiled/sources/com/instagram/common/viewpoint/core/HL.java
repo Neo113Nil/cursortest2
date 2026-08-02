@@ -27,74 +27,74 @@ public final class HL {
     	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
-    public static HL A00(C06474v c06474v) throws C3K {
+    public static HL A00(C06674v c06674v) throws C3K {
         try {
-            c06474v.A0g(21);
-            int A0I = c06474v.A0I() & 3;
-            int A0I2 = c06474v.A0I();
+            c06674v.A0g(21);
+            int A0I = c06674v.A0I() & 3;
+            int A0I2 = c06674v.A0I();
             int i = 0;
-            int A092 = c06474v.A09();
-            for (int i6 = 0; i6 < A0I2; i6++) {
-                c06474v.A0g(1);
-                int A0M = c06474v.A0M();
-                for (int i9 = 0; i9 < A0M; i9++) {
-                    int A0M2 = c06474v.A0M();
+            int A092 = c06674v.A09();
+            for (int i4 = 0; i4 < A0I2; i4++) {
+                c06674v.A0g(1);
+                int A0M = c06674v.A0M();
+                for (int i6 = 0; i6 < A0M; i6++) {
+                    int A0M2 = c06674v.A0M();
                     i += A0M2 + 4;
-                    c06474v.A0g(A0M2);
+                    c06674v.A0g(A0M2);
                 }
             }
-            c06474v.A0f(A092);
+            c06674v.A0f(A092);
             byte[] bArr = new byte[i];
-            int i10 = 0;
+            int i9 = 0;
+            int i10 = -1;
             int i11 = -1;
             int i12 = -1;
             int i13 = -1;
             int i14 = -1;
-            int i15 = -1;
-            float f3 = 1.0f;
+            float f2 = 1.0f;
             String str = null;
-            for (int i16 = 0; i16 < A0I2; i16++) {
-                int A0I3 = c06474v.A0I() & 63;
-                int A0M3 = c06474v.A0M();
-                for (int i17 = 0; i17 < A0M3; i17++) {
-                    int A0M4 = c06474v.A0M();
-                    System.arraycopy(HS.A03, 0, bArr, i10, HS.A03.length);
-                    int length = i10 + HS.A03.length;
-                    System.arraycopy(c06474v.A0l(), c06474v.A09(), bArr, length, A0M4);
-                    if (A0I3 == 33 && i17 == 0) {
+            for (int i15 = 0; i15 < A0I2; i15++) {
+                int A0I3 = c06674v.A0I() & 63;
+                int A0M3 = c06674v.A0M();
+                for (int i16 = 0; i16 < A0M3; i16++) {
+                    int A0M4 = c06674v.A0M();
+                    System.arraycopy(HS.A03, 0, bArr, i9, HS.A03.length);
+                    int length = i9 + HS.A03.length;
+                    System.arraycopy(c06674v.A0l(), c06674v.A09(), bArr, length, A0M4);
+                    if (A0I3 == 33 && i16 == 0) {
                         HP A05 = HS.A05(bArr, length, length + A0M4);
-                        i11 = A05.A0A;
-                        i12 = A05.A08;
-                        i13 = A05.A02;
-                        i14 = A05.A01;
-                        i15 = A05.A03;
-                        f3 = A05.A00;
+                        i10 = A05.A0A;
+                        i11 = A05.A08;
+                        i12 = A05.A02;
+                        i13 = A05.A01;
+                        i14 = A05.A03;
+                        f2 = A05.A00;
                         str = AnonymousClass46.A03(A05.A07, A05.A0B, A05.A06, A05.A05, A05.A0C, A05.A04);
                     }
-                    i10 = length + A0M4;
-                    c06474v.A0g(A0M4);
+                    i9 = length + A0M4;
+                    c06674v.A0g(A0M4);
                 }
             }
-            return new HL(i == 0 ? Collections.emptyList() : Collections.singletonList(bArr), A0I + 1, i11, i12, f3, str, i13, i14, i15);
+            return new HL(i == 0 ? Collections.emptyList() : Collections.singletonList(bArr), A0I + 1, i10, i11, f2, str, i12, i13, i14);
         } catch (ArrayIndexOutOfBoundsException e9) {
-            throw C3K.A01(A01(0, 25, a.f21727Q), e9);
+            throw C3K.A01(A01(0, 25, a.f22514Q), e9);
         }
     }
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A09, i, i + i6);
-        int i10 = 0;
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A09, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             if (A0A[5].length() == 29) {
                 throw new RuntimeException();
             }
             A0A[5] = "YyBlh7kREcvGfk8zeLahZrRMr2fR36";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 68);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 68);
+            i9++;
         }
     }
 
@@ -106,15 +106,15 @@ public final class HL {
         A02();
     }
 
-    public HL(List<byte[]> initializationData, int i, int i6, int i9, float f3, String str, int i10, int i11, int i12) {
+    public HL(List<byte[]> initializationData, int i, int i4, int i6, float f2, String str, int i9, int i10, int i11) {
         this.A08 = initializationData;
         this.A05 = i;
-        this.A06 = i6;
-        this.A04 = i9;
-        this.A00 = f3;
+        this.A06 = i4;
+        this.A04 = i6;
+        this.A00 = f2;
         this.A07 = str;
-        this.A02 = i10;
-        this.A01 = i11;
-        this.A03 = i12;
+        this.A02 = i9;
+        this.A01 = i10;
+        this.A03 = i11;
     }
 }

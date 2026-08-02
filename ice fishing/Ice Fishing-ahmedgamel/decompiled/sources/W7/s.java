@@ -4,11 +4,11 @@ package W7;
 public abstract class s {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final r f3456a;
+    public static final r f3618a;
 
     static {
-        r rVar = r.f3455v;
+        r rVar = r.f3617v;
         kotlin.jvm.internal.u.b(3, rVar);
-        f3456a = rVar;
+        f3618a = rVar;
     }
 }

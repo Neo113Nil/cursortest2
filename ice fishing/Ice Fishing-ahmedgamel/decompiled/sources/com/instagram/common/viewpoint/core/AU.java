@@ -4,7 +4,7 @@ import android.os.Bundle;
 import java.util.Arrays;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class AU extends AbstractC2375pt {
+public final class AU extends AbstractC2395pt {
     public static byte[] A02;
     public static String[] A03 = {"Ze0y2PQb31vngbi38k5mfZCC", "5", "jLmR5cr6Hwks3p4PsKfIxGU921nipvRD", "Pp3qhBBlWU8bouyoK5QiOWA", "ww40dK", "331B", "UQZ2ltoBgBcCSgXWY09raSZ", "C"};
     public static final AnonymousClass23<AU> A04;
@@ -13,9 +13,9 @@ public final class AU extends AbstractC2375pt {
     public final float A00;
     public final int A01;
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        int i10 = 0;
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             String[] strArr = A03;
@@ -23,11 +23,11 @@ public final class AU extends AbstractC2375pt {
                 throw new RuntimeException();
             }
             A03[4] = "26ayShss4mhG1SZ6mAOlhU0";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 13);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 13);
+            i9++;
         }
     }
 
@@ -50,20 +50,20 @@ public final class AU extends AbstractC2375pt {
     }
 
     public AU(int i) {
-        AbstractC06243y.A09(i > 0, A02(0, 35, 26));
+        AbstractC06443y.A09(i > 0, A02(0, 35, 26));
         this.A01 = i;
         this.A00 = -1.0f;
     }
 
-    public AU(int i, float f3) {
-        AbstractC06243y.A09(i > 0, A02(0, 35, 26));
-        AbstractC06243y.A09(f3 >= 0.0f && f3 <= ((float) i), A02(35, 40, 60));
+    public AU(int i, float f2) {
+        AbstractC06443y.A09(i > 0, A02(0, 35, 26));
+        AbstractC06443y.A09(f2 >= 0.0f && f2 <= ((float) i), A02(35, 40, 60));
         this.A01 = i;
-        this.A00 = f3;
+        this.A00 = f2;
     }
 
     public static AU A00(Bundle bundle) {
-        AbstractC06243y.A07(bundle.getInt(AbstractC2375pt.A02, -1) == 2);
+        AbstractC06443y.A07(bundle.getInt(AbstractC2395pt.A02, -1) == 2);
         int i = bundle.getInt(A05, 5);
         float starRating = bundle.getFloat(A06, -1.0f);
         if (starRating == -1.0f) {

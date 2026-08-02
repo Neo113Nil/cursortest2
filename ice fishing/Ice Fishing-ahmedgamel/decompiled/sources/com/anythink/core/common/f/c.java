@@ -6,25 +6,25 @@ import android.content.Context;
 public class c extends a {
 
     /* renamed from: c, reason: collision with root package name */
-    private static volatile c f13173c;
+    private static volatile c f13959c;
 
     private c(Context context) {
         super(context);
-        this.f13171b = 1;
+        this.f13957b = 1;
     }
 
     public static c a(Context context) {
-        if (f13173c == null) {
+        if (f13959c == null) {
             synchronized (c.class) {
                 try {
-                    if (f13173c == null) {
-                        f13173c = new c(context);
+                    if (f13959c == null) {
+                        f13959c = new c(context);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f13173c;
+        return f13959c;
     }
 }

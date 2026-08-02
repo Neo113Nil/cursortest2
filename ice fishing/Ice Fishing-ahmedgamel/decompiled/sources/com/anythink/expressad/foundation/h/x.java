@@ -7,16 +7,16 @@ import android.content.SharedPreferences;
 public final class x {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f19734a = "H+tU+FeXHM==";
+    public static final String f20521a = "H+tU+FeXHM==";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f19735b = "cv";
+    public static final String f20522b = "cv";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f19736c = "anythink_share_date";
+    private static final String f20523c = "anythink_share_date";
 
     private static void a() {
-        SharedPreferences.Editor edit = com.anythink.expressad.foundation.b.a.c().e().getApplicationContext().getSharedPreferences(f19735b, 0).edit();
+        SharedPreferences.Editor edit = com.anythink.expressad.foundation.b.a.c().e().getApplicationContext().getSharedPreferences(f20522b, 0).edit();
         edit.clear();
         edit.commit();
     }
@@ -24,7 +24,7 @@ public final class x {
     public static Object b(Context context, String str, Object obj) {
         if (context != null) {
             String simpleName = obj != null ? obj.getClass().getSimpleName() : "";
-            SharedPreferences sharedPreferences = context.getSharedPreferences(f19736c, 0);
+            SharedPreferences sharedPreferences = context.getSharedPreferences(f20523c, 0);
             if ("String".equals(simpleName)) {
                 return sharedPreferences.getString(str, (String) obj);
             }
@@ -46,7 +46,7 @@ public final class x {
 
     private static void c(Context context, String str, Object obj) {
         String simpleName = obj.getClass().getSimpleName();
-        SharedPreferences.Editor edit = context.getApplicationContext().getSharedPreferences(f19735b, 0).edit();
+        SharedPreferences.Editor edit = context.getApplicationContext().getSharedPreferences(f20522b, 0).edit();
         if ("String".equals(simpleName)) {
             edit.putString(str, (String) obj);
         } else if ("Integer".equals(simpleName)) {
@@ -63,12 +63,12 @@ public final class x {
 
     private static Object d(Context context, String str, Object obj) {
         String simpleName = obj != null ? obj.getClass().getSimpleName() : "";
-        SharedPreferences sharedPreferences = context.getSharedPreferences(f19735b, 0);
+        SharedPreferences sharedPreferences = context.getSharedPreferences(f20522b, 0);
         return "String".equals(simpleName) ? sharedPreferences.getString(str, (String) obj) : "Integer".equals(simpleName) ? Integer.valueOf(sharedPreferences.getInt(str, ((Integer) obj).intValue())) : "Boolean".equals(simpleName) ? Boolean.valueOf(sharedPreferences.getBoolean(str, ((Boolean) obj).booleanValue())) : "Float".equals(simpleName) ? Float.valueOf(sharedPreferences.getFloat(str, ((Float) obj).floatValue())) : "Long".equals(simpleName) ? Long.valueOf(sharedPreferences.getLong(str, ((Long) obj).longValue())) : obj;
     }
 
     private static void a(String str) {
-        SharedPreferences.Editor edit = com.anythink.expressad.foundation.b.a.c().e().getApplicationContext().getSharedPreferences(f19735b, 0).edit();
+        SharedPreferences.Editor edit = com.anythink.expressad.foundation.b.a.c().e().getApplicationContext().getSharedPreferences(f20522b, 0).edit();
         edit.remove(str);
         edit.apply();
     }
@@ -78,7 +78,7 @@ public final class x {
         if (context == null) {
             return;
         }
-        SharedPreferences.Editor edit = context.getApplicationContext().getSharedPreferences(f19736c, 0).edit();
+        SharedPreferences.Editor edit = context.getApplicationContext().getSharedPreferences(f20523c, 0).edit();
         if ("String".equals(simpleName)) {
             edit.putString(str, (String) obj);
         } else if ("Integer".equals(simpleName)) {
@@ -94,13 +94,13 @@ public final class x {
     }
 
     private static void a(Context context, String str) {
-        SharedPreferences.Editor edit = context.getApplicationContext().getSharedPreferences(f19736c, 0).edit();
+        SharedPreferences.Editor edit = context.getApplicationContext().getSharedPreferences(f20523c, 0).edit();
         edit.remove(str);
         edit.apply();
     }
 
     private static void a(Context context, String... strArr) {
-        SharedPreferences.Editor edit = context.getApplicationContext().getSharedPreferences(f19736c, 0).edit();
+        SharedPreferences.Editor edit = context.getApplicationContext().getSharedPreferences(f20523c, 0).edit();
         for (String str : strArr) {
             edit.remove(str);
         }

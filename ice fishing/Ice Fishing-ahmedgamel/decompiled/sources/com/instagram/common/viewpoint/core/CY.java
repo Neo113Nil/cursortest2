@@ -4,7 +4,7 @@ package com.instagram.common.viewpoint.core;
 public interface CY extends TE {
     public static final String A00 = CY.class.getSimpleName();
 
-    InterfaceC1816gK A5U(EnumC1817gL enumC1817gL);
+    InterfaceC1836gK A5U(EnumC1837gL enumC1837gL);
 
     @Override // com.instagram.common.viewpoint.core.TE
     void A6d();

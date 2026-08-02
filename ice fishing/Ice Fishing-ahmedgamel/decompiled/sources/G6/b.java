@@ -10,20 +10,20 @@ import y8.h;
 public final class b extends f {
 
     /* renamed from: w, reason: collision with root package name */
-    public static final a f1080w;
+    public static final a f1183w;
 
     /* renamed from: v, reason: collision with root package name */
-    public final List f1081v;
+    public final List f1184v;
 
     static {
-        d dVar = d.f5578u;
-        n nVar = n.f5618u;
-        f1080w = new a(b.class);
+        d dVar = d.f5754u;
+        n nVar = n.f5794u;
+        f1183w = new a(b.class);
     }
 
     public b(d6.d dVar, h hVar) {
-        super(f1080w, hVar);
-        this.f1081v = V2.a.o("resource_logs", dVar);
+        super(f1183w, hVar);
+        this.f1184v = A8.b.m("resource_logs", dVar);
     }
 
     public final boolean equals(Object obj) {
@@ -34,22 +34,22 @@ public final class b extends f {
             return false;
         }
         b bVar = (b) obj;
-        return a().equals(bVar.a()) && this.f1081v.equals(bVar.f1081v);
+        return a().equals(bVar.a()) && this.f1184v.equals(bVar.f1184v);
     }
 
     public final int hashCode() {
-        int i = this.f5587u;
+        int i = this.f5763u;
         if (i != 0) {
             return i;
         }
-        int hashCode = this.f1081v.hashCode() + (a().hashCode() * 37);
-        this.f5587u = hashCode;
+        int hashCode = this.f1184v.hashCode() + (a().hashCode() * 37);
+        this.f5763u = hashCode;
         return hashCode;
     }
 
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        List list = this.f1081v;
+        List list = this.f1184v;
         if (!list.isEmpty()) {
             sb.append(", resource_logs=");
             sb.append(list);

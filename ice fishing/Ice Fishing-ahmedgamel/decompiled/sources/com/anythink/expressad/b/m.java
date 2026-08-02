@@ -8,7 +8,7 @@ import android.webkit.URLUtil;
 import com.anythink.expressad.b.l;
 import com.anythink.expressad.foundation.g.h.a;
 import com.anythink.expressad.foundation.h.u;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.net.URI;
 import java.util.concurrent.Semaphore;
 
@@ -16,71 +16,71 @@ import java.util.concurrent.Semaphore;
 public final class m extends d implements a.InterfaceC0124a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f18274a = 1;
+    public static final int f19061a = 1;
     public static final int i = 2;
 
     /* renamed from: j, reason: collision with root package name */
-    private static final String f18275j = "302";
+    private static final String f19062j = "302";
 
     /* renamed from: k, reason: collision with root package name */
-    private e f18276k;
+    private e f19063k;
 
     /* renamed from: l, reason: collision with root package name */
-    private com.anythink.expressad.b.a.b f18277l;
+    private com.anythink.expressad.b.a.b f19064l;
 
     /* renamed from: n, reason: collision with root package name */
-    private boolean f18279n;
+    private boolean f19066n;
 
     /* renamed from: o, reason: collision with root package name */
-    private Context f18280o;
+    private Context f19067o;
 
     /* renamed from: p, reason: collision with root package name */
-    private com.anythink.expressad.foundation.g.h.c f18281p;
+    private com.anythink.expressad.foundation.g.h.c f19068p;
 
     /* renamed from: q, reason: collision with root package name */
-    private com.anythink.expressad.b.a.a f18282q;
+    private com.anythink.expressad.b.a.a f19069q;
 
     /* renamed from: s, reason: collision with root package name */
-    private boolean f18284s;
+    private boolean f19071s;
 
     /* renamed from: m, reason: collision with root package name */
-    private boolean f18278m = true;
+    private boolean f19065m = true;
 
     /* renamed from: r, reason: collision with root package name */
-    private Handler f18283r = new Handler(Looper.getMainLooper());
+    private Handler f19070r = new Handler(Looper.getMainLooper());
 
     public class a extends com.anythink.expressad.foundation.g.h.a {
 
         /* renamed from: b, reason: collision with root package name */
-        private static final int f18287b = 10;
+        private static final int f19074b = 10;
 
         /* renamed from: g, reason: collision with root package name */
-        private final Context f18290g;
+        private final Context f19077g;
 
         /* renamed from: h, reason: collision with root package name */
-        private String f18291h;
+        private String f19078h;
         private String i;
 
         /* renamed from: j, reason: collision with root package name */
-        private String f18292j;
+        private String f19079j;
 
         /* renamed from: k, reason: collision with root package name */
-        private com.anythink.expressad.foundation.d.d f18293k;
+        private com.anythink.expressad.foundation.d.d f19080k;
 
         /* renamed from: l, reason: collision with root package name */
-        private boolean f18294l;
+        private boolean f19081l;
 
         /* renamed from: m, reason: collision with root package name */
-        private boolean f18295m;
+        private boolean f19082m;
 
         /* renamed from: n, reason: collision with root package name */
-        private int f18296n;
+        private int f19083n;
 
         /* renamed from: c, reason: collision with root package name */
-        private final Semaphore f18289c = new Semaphore(0);
+        private final Semaphore f19076c = new Semaphore(0);
 
         /* renamed from: o, reason: collision with root package name */
-        private l.a f18297o = new l.a() { // from class: com.anythink.expressad.b.m.a.1
+        private l.a f19084o = new l.a() { // from class: com.anythink.expressad.b.m.a.1
             @Override // com.anythink.expressad.b.l.a
             public final boolean a() {
                 return false;
@@ -106,7 +106,7 @@ public final class m extends d implements a.InterfaceC0124a {
 
             private void b() {
                 synchronized (m.this) {
-                    m.this.f18277l.a(true);
+                    m.this.f19064l.a(true);
                     a.a(a.this);
                 }
             }
@@ -114,32 +114,32 @@ public final class m extends d implements a.InterfaceC0124a {
             @Override // com.anythink.expressad.b.l.a
             public final void a(String str, String str2) {
                 a.a(a.this, str);
-                m.this.f18277l.c(str2);
+                m.this.f19064l.c(str2);
                 b();
             }
 
             @Override // com.anythink.expressad.b.l.a
             public final void a(String str, String str2, String str3) {
                 if (!TextUtils.isEmpty(str2)) {
-                    m.this.f18277l.b(str2);
+                    m.this.f19064l.b(str2);
                 }
                 if (!TextUtils.isEmpty(str3)) {
-                    m.this.f18277l.c(str3);
+                    m.this.f19064l.c(str3);
                 }
                 a.a(a.this, str);
                 b();
             }
         };
 
-        public a(Context context, String str, String str2, String str3, com.anythink.expressad.foundation.d.d dVar, boolean z3, boolean z6, int i) {
-            this.f18290g = context;
-            this.f18291h = str;
+        public a(Context context, String str, String str2, String str3, com.anythink.expressad.foundation.d.d dVar, boolean z6, boolean z9, int i) {
+            this.f19077g = context;
+            this.f19078h = str;
             this.i = str2;
-            this.f18292j = str3;
-            this.f18293k = dVar;
-            this.f18294l = z3;
-            this.f18295m = z6;
-            this.f18296n = i;
+            this.f19079j = str3;
+            this.f19080k = dVar;
+            this.f19081l = z6;
+            this.f19082m = z9;
+            this.f19083n = i;
         }
 
         private static boolean a(int i) {
@@ -147,11 +147,11 @@ public final class m extends d implements a.InterfaceC0124a {
         }
 
         private void d() {
-            this.f18289c.release();
+            this.f19076c.release();
         }
 
         private void h() {
-            this.f18289c.acquireUninterruptibly();
+            this.f19076c.acquireUninterruptibly();
         }
 
         @Override // com.anythink.expressad.foundation.g.h.a
@@ -176,25 +176,25 @@ public final class m extends d implements a.InterfaceC0124a {
 
         @Override // com.anythink.expressad.foundation.g.h.a
         public final void a() {
-            if (m.this.f18276k != null) {
-                e unused = m.this.f18276k;
+            if (m.this.f19063k != null) {
+                e unused = m.this.f19063k;
             }
-            m.this.f18277l = new com.anythink.expressad.b.a.b();
-            m.this.f18277l.e(this.f18291h);
-            m.this.f18277l = a(this.f18291h, this.f18294l, this.f18295m, this.f18293k, this.f18296n);
-            if (!TextUtils.isEmpty(m.this.f18277l.e())) {
-                m.this.f18277l.a(true);
+            m.this.f19064l = new com.anythink.expressad.b.a.b();
+            m.this.f19064l.e(this.f19078h);
+            m.this.f19064l = a(this.f19078h, this.f19081l, this.f19082m, this.f19080k, this.f19083n);
+            if (!TextUtils.isEmpty(m.this.f19064l.e())) {
+                m.this.f19064l.a(true);
             }
-            if (m.this.f18278m && m.this.f18277l.g()) {
-                if (m.this.f18282q != null) {
-                    m.this.f18277l.a(m.this.f18282q.f18122f);
+            if (m.this.f19065m && m.this.f19064l.g()) {
+                if (m.this.f19069q != null) {
+                    m.this.f19064l.a(m.this.f19069q.f18909f);
                 }
-                n.a(this.f18293k, m.this.f18277l, m.this.f18282q, this.i, this.f18292j, this.f18290g, this.f18297o, this.f18289c);
+                n.a(this.f19080k, m.this.f19064l, m.this.f19069q, this.i, this.f19079j, this.f19077g, this.f19084o, this.f19076c);
             }
         }
 
         private boolean b(String str) {
-            return n.a(str, this.f18293k, m.this.f18277l);
+            return n.a(str, this.f19080k, m.this.f19064l);
         }
 
         /* JADX WARN: Removed duplicated region for block: B:18:0x0049  */
@@ -202,15 +202,15 @@ public final class m extends d implements a.InterfaceC0124a {
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        private com.anythink.expressad.b.a.b a(String str, boolean z3, boolean z6, com.anythink.expressad.foundation.d.d dVar, int i) {
+        private com.anythink.expressad.b.a.b a(String str, boolean z6, boolean z9, com.anythink.expressad.foundation.d.d dVar, int i) {
             String str2;
             String str3;
-            int i6;
+            int i4;
             String str4 = "";
-            if (m.this.f18279n) {
+            if (m.this.f19066n) {
                 String c9 = com.anythink.expressad.f.a.c(str);
                 if (!TextUtils.isEmpty(c9)) {
-                    str = AbstractC4404f.f(str, c9);
+                    str = Wv.g(str, c9);
                 }
             }
             com.anythink.expressad.b.a.b bVar = new com.anythink.expressad.b.a.b();
@@ -224,11 +224,11 @@ public final class m extends d implements a.InterfaceC0124a {
                 str3 = "";
                 String str5 = str;
                 String str6 = str3;
-                i6 = 0;
+                i4 = 0;
                 while (true) {
-                    if (i6 >= 10) {
+                    if (i4 >= 10) {
                     }
-                    i6++;
+                    i4++;
                 }
                 return bVar;
             }
@@ -243,11 +243,11 @@ public final class m extends d implements a.InterfaceC0124a {
                 str4 = str2;
                 String str52 = str;
                 String str62 = str3;
-                i6 = 0;
+                i4 = 0;
                 while (true) {
-                    if (i6 >= 10) {
+                    if (i4 >= 10) {
                     }
-                    i6++;
+                    i4++;
                 }
                 return bVar;
             }
@@ -255,44 +255,44 @@ public final class m extends d implements a.InterfaceC0124a {
             str4 = str2;
             String str522 = str;
             String str622 = str3;
-            i6 = 0;
+            i4 = 0;
             while (true) {
-                if (i6 >= 10) {
+                if (i4 >= 10) {
                     break;
                 }
-                if (!m.this.f18278m) {
+                if (!m.this.f19065m) {
                     return null;
                 }
-                m.this.f18282q = fVar.a(str522, z3, z6, dVar);
-                if (m.this.f18282q != null) {
-                    if (!TextUtils.isEmpty(m.this.f18282q.f18124h)) {
+                m.this.f19069q = fVar.a(str522, z6, z9, dVar);
+                if (m.this.f19069q != null) {
+                    if (!TextUtils.isEmpty(m.this.f19069q.f18911h)) {
                         bVar.e(str522);
-                        bVar.b(m.this.f18282q.f18124h);
+                        bVar.b(m.this.f19069q.f18911h);
                         bVar.b(1);
-                        bVar.a(m.this.f18282q.a());
+                        bVar.a(m.this.f19069q.a());
                         bVar.a(false);
-                        if (i6 == 0) {
-                            com.anythink.expressad.b.b.a.a().a(str522, m.this.f18282q.f18124h, dVar, this.f18292j, z3, z6, i);
+                        if (i4 == 0) {
+                            com.anythink.expressad.b.b.a.a().a(str522, m.this.f19069q.f18911h, dVar, this.f19079j, z6, z9, i);
                         }
                     } else {
                         bVar.a(true);
-                        int i9 = m.this.f18282q.f18122f;
-                        if (i9 != 301 && i9 != 302 && i9 != 307) {
-                            if (m.this.f18282q.f18122f == 200) {
+                        int i6 = m.this.f19069q.f18909f;
+                        if (i6 != 301 && i6 != 302 && i6 != 307) {
+                            if (m.this.f19069q.f18909f == 200) {
                                 bVar.b(true);
                                 bVar.e(str522);
-                                bVar.c(m.this.f18282q.f18123g);
+                                bVar.c(m.this.f19069q.f18910g);
                             } else {
                                 bVar.b(false);
                                 bVar.e(str522);
-                                if (i6 == 0) {
-                                    com.anythink.expressad.b.b.a.a().a(str522, "error code:" + m.this.f18282q.f18122f, dVar, this.f18292j, z3, z6, i);
+                                if (i4 == 0) {
+                                    com.anythink.expressad.b.b.a.a().a(str522, "error code:" + m.this.f19069q.f18909f, dVar, this.f19079j, z6, z9, i);
                                 }
                             }
                         } else {
                             bVar.b();
-                            if (!TextUtils.isEmpty(m.this.f18282q.f18117a)) {
-                                str522 = m.this.f18282q.f18117a;
+                            if (!TextUtils.isEmpty(m.this.f19069q.f18904a)) {
+                                str522 = m.this.f19069q.f18904a;
                                 if (c(str522)) {
                                     if (!str522.startsWith("/") || TextUtils.isEmpty(str4) || TextUtils.isEmpty(str622)) {
                                         break;
@@ -310,13 +310,13 @@ public final class m extends d implements a.InterfaceC0124a {
                                     }
                                 }
                                 if (!u.a.a(str522)) {
-                                    if (m.this.f18279n) {
+                                    if (m.this.f19066n) {
                                         String c10 = com.anythink.expressad.f.a.c(str522);
                                         if (!TextUtils.isEmpty(c10)) {
-                                            str522 = AbstractC4404f.f(str522, c10);
+                                            str522 = Wv.g(str522, c10);
                                         }
                                     }
-                                    i6++;
+                                    i4++;
                                 } else {
                                     bVar.b(true);
                                     bVar.e(str522);
@@ -344,73 +344,73 @@ public final class m extends d implements a.InterfaceC0124a {
         }
 
         public static /* synthetic */ boolean a(a aVar, String str) {
-            return n.a(str, aVar.f18293k, m.this.f18277l);
+            return n.a(str, aVar.f19080k, m.this.f19064l);
         }
 
         public static /* synthetic */ void a(a aVar) {
-            aVar.f18289c.release();
+            aVar.f19076c.release();
         }
     }
 
     public m(Context context) {
-        this.f18280o = context;
-        this.f18281p = new com.anythink.expressad.foundation.g.h.c(context, 2);
+        this.f19067o = context;
+        this.f19068p = new com.anythink.expressad.foundation.g.h.c(context, 2);
     }
 
     @Override // com.anythink.expressad.b.d
     public final void b() {
-        this.f18278m = false;
+        this.f19065m = false;
     }
 
     private boolean a() {
-        return this.f18278m;
+        return this.f19065m;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    public final void a(String str, e eVar, boolean z3, String str2, String str3, com.anythink.expressad.foundation.d.d dVar, boolean z6, boolean z9, int i6) {
+    public final void a(String str, e eVar, boolean z6, String str2, String str3, com.anythink.expressad.foundation.d.d dVar, boolean z9, boolean z10, int i4) {
         a aVar;
-        this.f18276k = eVar;
-        this.f18279n = z3;
+        this.f19063k = eVar;
+        this.f19066n = z6;
         com.anythink.expressad.b.a.c cVar = new com.anythink.expressad.b.a.c();
-        cVar.a(this.f18280o);
+        cVar.a(this.f19067o);
         cVar.a(str);
-        cVar.c(z3);
+        cVar.c(z6);
         cVar.b(str2);
         cVar.c(str3);
         cVar.a(dVar);
-        cVar.a(z6);
-        cVar.b(z9);
-        cVar.a(i6);
+        cVar.a(z9);
+        cVar.b(z10);
+        cVar.a(i4);
         if (str.startsWith("tcp")) {
             i iVar = new i(cVar);
-            iVar.a(this.f18276k);
+            iVar.a(this.f19063k);
             iVar.a(new h() { // from class: com.anythink.expressad.b.m.1
                 @Override // com.anythink.expressad.b.h
                 public final void a(com.anythink.expressad.b.a.b bVar) {
-                    m.this.f18277l = bVar;
+                    m.this.f19064l = bVar;
                 }
             });
             aVar = iVar;
         } else {
-            aVar = new a(this.f18280o, str, str2, str3, dVar, z6, z9, i6);
+            aVar = new a(this.f19067o, str, str2, str3, dVar, z9, z10, i4);
         }
-        this.f18281p.a(aVar, this);
+        this.f19068p.a(aVar, this);
     }
 
     @Override // com.anythink.expressad.foundation.g.h.a.InterfaceC0124a
     public final void a(a.b bVar) {
-        if (bVar == a.b.FINISH && this.f18278m) {
-            this.f18283r.post(new Runnable() { // from class: com.anythink.expressad.b.m.2
+        if (bVar == a.b.FINISH && this.f19065m) {
+            this.f19070r.post(new Runnable() { // from class: com.anythink.expressad.b.m.2
                 @Override // java.lang.Runnable
                 public final void run() {
-                    if (m.this.f18276k != null) {
-                        if (m.this.f18277l.g()) {
-                            e unused = m.this.f18276k;
-                            com.anythink.expressad.b.a.b unused2 = m.this.f18277l;
+                    if (m.this.f19063k != null) {
+                        if (m.this.f19064l.g()) {
+                            e unused = m.this.f19063k;
+                            com.anythink.expressad.b.a.b unused2 = m.this.f19064l;
                         } else {
-                            e unused3 = m.this.f18276k;
-                            com.anythink.expressad.b.a.b unused4 = m.this.f18277l;
-                            m.this.f18277l.h();
+                            e unused3 = m.this.f19063k;
+                            com.anythink.expressad.b.a.b unused4 = m.this.f19064l;
+                            m.this.f19064l.h();
                         }
                     }
                 }

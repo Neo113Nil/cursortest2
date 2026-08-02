@@ -16,16 +16,16 @@ public final class UT implements Closeable {
     public boolean A01;
     public final RandomAccessFile A02;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 115);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 115);
         }
         return new String(copyOfRange);
     }
 
     public static void A02() {
-        A03 = new byte[]{26, 76, 73, 74, 70, 73, 29, c.f16317b, 67, 60, -9, c.f16317b, 74, -9, 56, 67, 73, 60, 56, 59, 80, -9, 58, 67, 70, 74, 60, 59, 39, 76, 84, c.f16318c, 74, 71, 66, -2, 78, 77, 81, 71, 82, 71, 77, 76, 24, -2, 6, 3, 66, 10, 3, 66, 7, 32, 37, 33};
+        A03 = new byte[]{26, 76, 73, 74, 70, 73, 29, c.f17104b, 67, 60, -9, c.f17104b, 74, -9, 56, 67, 73, 60, 56, 59, 80, -9, 58, 67, 70, 74, 60, 59, 39, 76, 84, c.f17105c, 74, 71, 66, -2, 78, 77, 81, 71, 82, 71, 77, 76, 24, -2, 6, 3, 66, 10, 3, 66, 7, 32, 37, 33};
     }
 
     static {

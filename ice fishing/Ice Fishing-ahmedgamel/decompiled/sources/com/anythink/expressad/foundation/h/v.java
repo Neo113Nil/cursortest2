@@ -31,54 +31,54 @@ import org.json.JSONObject;
 public final class v extends g {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f19717a = "SameTools";
+    public static final String f20504a = "SameTools";
 
     /* renamed from: b, reason: collision with root package name */
-    static List<String> f19718b;
+    static List<String> f20505b;
 
     /* renamed from: c, reason: collision with root package name */
-    private static char[] f19719c = {'A', 'p', 'p', 'l', 'i', 'c', 'a', 't', 'i', 'o', 'n', 'I', 'n', 'f', 'o'};
+    private static char[] f20506c = {'A', 'p', 'p', 'l', 'i', 'c', 'a', 't', 'i', 'o', 'n', 'I', 'n', 'f', 'o'};
 
     /* renamed from: d, reason: collision with root package name */
-    private static char[] f19720d = {'.', 'X'};
+    private static char[] f20507d = {'.', 'X'};
 
     /* renamed from: e, reason: collision with root package name */
-    private static int f19721e = 0;
+    private static int f20508e = 0;
 
     /* renamed from: f, reason: collision with root package name */
-    private static int f19722f = 1;
+    private static int f20509f = 1;
 
     /* renamed from: g, reason: collision with root package name */
-    private static int f19723g = 2;
+    private static int f20510g = 2;
 
     /* renamed from: h, reason: collision with root package name */
-    private static int f19724h = 3;
+    private static int f20511h = 3;
     private static int i = 0;
 
     /* renamed from: j, reason: collision with root package name */
-    private static int f19725j = 7;
+    private static int f20512j = 7;
 
     /* renamed from: k, reason: collision with root package name */
-    private static int f19726k = 14;
+    private static int f20513k = 14;
 
     /* renamed from: l, reason: collision with root package name */
-    private static int f19727l = 19;
+    private static int f20514l = 19;
 
     /* renamed from: m, reason: collision with root package name */
-    private static int f19728m = 16;
+    private static int f20515m = 16;
 
     /* renamed from: n, reason: collision with root package name */
-    private static int f19729n = 26;
+    private static int f20516n = 26;
 
     /* renamed from: o, reason: collision with root package name */
-    private static int f19730o = 1;
+    private static int f20517o = 1;
 
-    public static int a(int i6) {
-        if ((i6 > 100 && i6 < 199) || i6 == 2) {
+    public static int a(int i4) {
+        if ((i4 > 100 && i4 < 199) || i4 == 2) {
             return 1;
         }
-        if ((i6 <= 200 || i6 >= 299) && i6 != 4) {
-            return (i6 <= 500 || i6 >= 599) ? -1 : 5;
+        if ((i4 <= 200 || i4 >= 299) && i4 != 4) {
+            return (i4 <= 500 || i4 >= 599) ? -1 : 5;
         }
         return 2;
     }
@@ -95,11 +95,11 @@ public final class v extends g {
     public static float c(Context context) {
         if (context != null) {
             try {
-                float f3 = context.getResources().getDisplayMetrics().density;
-                if (f3 == 0.0f) {
+                float f2 = context.getResources().getDisplayMetrics().density;
+                if (f2 == 0.0f) {
                     return 2.5f;
                 }
-                return f3;
+                return f2;
             } catch (Exception e9) {
                 e9.printStackTrace();
             }
@@ -206,7 +206,7 @@ public final class v extends g {
             }
             return false;
         } catch (Exception unused) {
-            boolean z3 = com.anythink.expressad.a.f17618a;
+            boolean z6 = com.anythink.expressad.a.f18405a;
             return false;
         }
     }
@@ -362,7 +362,7 @@ public final class v extends g {
             if (parse != null) {
                 String queryParameter = parse.getQueryParameter("dyview");
                 if (TextUtils.isEmpty(queryParameter)) {
-                    queryParameter = parse.getQueryParameter(com.anythink.expressad.a.f17596C);
+                    queryParameter = parse.getQueryParameter(com.anythink.expressad.a.f18383C);
                 }
                 if (!TextUtils.isEmpty(queryParameter)) {
                     try {
@@ -378,7 +378,7 @@ public final class v extends g {
         }
     }
 
-    public static int a(Context context, float f3) {
+    public static int a(Context context, float f2) {
         float f9 = 2.5f;
         if (context != null) {
             try {
@@ -390,15 +390,15 @@ public final class v extends g {
                 e9.printStackTrace();
             }
         }
-        return (int) ((f3 / f9) + 0.5f);
+        return (int) ((f2 / f9) + 0.5f);
     }
 
-    public static int b(Context context, float f3) {
+    public static int b(Context context, float f2) {
         Resources resources;
         if (context == null || (resources = context.getResources()) == null) {
             return 0;
         }
-        return (int) ((f3 * resources.getDisplayMetrics().density) + 0.5f);
+        return (int) ((f2 * resources.getDisplayMetrics().density) + 0.5f);
     }
 
     private static boolean i(String str) {
@@ -408,7 +408,7 @@ public final class v extends g {
         try {
             Uri parse = Uri.parse(str);
             if (parse != null) {
-                String queryParameter = parse.getQueryParameter(com.anythink.expressad.a.f17602I);
+                String queryParameter = parse.getQueryParameter(com.anythink.expressad.a.f18389I);
                 if (!TextUtils.isEmpty(queryParameter)) {
                     if (queryParameter.equals("1")) {
                         return true;
@@ -422,9 +422,9 @@ public final class v extends g {
     }
 
     public static int a() {
-        int i6 = f19730o;
-        f19730o = i6 + 1;
-        return i6;
+        int i4 = f20517o;
+        f20517o = i4 + 1;
+        return i4;
     }
 
     public static double b(String str) {
@@ -446,7 +446,7 @@ public final class v extends g {
         try {
             Uri parse = Uri.parse(str);
             if (parse != null) {
-                String queryParameter = parse.getQueryParameter(com.anythink.expressad.a.f17594A);
+                String queryParameter = parse.getQueryParameter(com.anythink.expressad.a.f18381A);
                 if (!TextUtils.isEmpty(queryParameter)) {
                     return queryParameter.equals("1");
                 }
@@ -469,7 +469,7 @@ public final class v extends g {
         try {
             Uri parse = Uri.parse(str);
             if (parse != null) {
-                String queryParameter = parse.getQueryParameter(com.anythink.expressad.a.f17601H);
+                String queryParameter = parse.getQueryParameter(com.anythink.expressad.a.f18388H);
                 if (TextUtils.isEmpty(queryParameter)) {
                     return 0;
                 }
@@ -497,24 +497,24 @@ public final class v extends g {
     }
 
     public static synchronized int b(Context context, String str) {
-        int i6;
+        int i4;
         synchronized (v.class) {
             if (context != null) {
                 if (!TextUtils.isEmpty(str)) {
                     try {
-                        i6 = b(str, context) != null ? 1 : 0;
+                        i4 = b(str, context) != null ? 1 : 0;
                     } catch (Exception unused) {
-                        i6 = 3;
+                        i4 = 3;
                     }
                 }
             }
             if (context == null) {
-                i6 = 5;
+                i4 = 5;
             } else {
-                i6 = TextUtils.isEmpty(str) ? 2 : 4;
+                i4 = TextUtils.isEmpty(str) ? 2 : 4;
             }
         }
-        return i6;
+        return i4;
     }
 
     public static int a(Object obj) {
@@ -532,9 +532,9 @@ public final class v extends g {
         }
     }
 
-    public static double a(Double d2) {
+    public static double a(Double d9) {
         try {
-            String format = new DecimalFormat("0.00", DecimalFormatSymbols.getInstance(Locale.US)).format(d2);
+            String format = new DecimalFormat("0.00", DecimalFormatSymbols.getInstance(Locale.US)).format(d9);
             if (y.b(format)) {
                 return Double.parseDouble(format);
             }
@@ -547,40 +547,40 @@ public final class v extends g {
 
     private static Object b(String str, Context context) {
         try {
-            return Class.forName(String.valueOf(b(f19721e))).getMethod(String.valueOf(b(f19723g)), String.class, Integer.TYPE).invoke(Class.forName(String.valueOf(b(f19722f))).getMethod(String.valueOf(b(f19724h)), new Class[0]).invoke(context, new Object[0]), str, 8192);
+            return Class.forName(String.valueOf(b(f20508e))).getMethod(String.valueOf(b(f20510g)), String.class, Integer.TYPE).invoke(Class.forName(String.valueOf(b(f20509f))).getMethod(String.valueOf(b(f20511h)), new Class[0]).invoke(context, new Object[0]), str, 8192);
         } catch (Throwable unused) {
             return null;
         }
     }
 
-    private static final char[] b(int i6) {
+    private static final char[] b(int i4) {
         StringBuilder sb;
-        if (i6 == 0) {
+        if (i4 == 0) {
             sb = new StringBuilder();
-            sb.append(String.valueOf(Arrays.copyOf(u.f19706b, f19725j)));
-            sb.append(f19720d[i]);
-            sb.append(String.valueOf(Arrays.copyOfRange(u.f19706b, f19725j, f19726k)));
-            sb.append(f19720d[i]);
-            sb.append(String.valueOf(Arrays.copyOfRange(u.f19706b, f19726k, f19728m)));
-            sb.append(f19720d[i]);
-            sb.append(String.valueOf(t.f19697c));
-        } else if (i6 == 1) {
+            sb.append(String.valueOf(Arrays.copyOf(u.f20493b, f20512j)));
+            sb.append(f20507d[i]);
+            sb.append(String.valueOf(Arrays.copyOfRange(u.f20493b, f20512j, f20513k)));
+            sb.append(f20507d[i]);
+            sb.append(String.valueOf(Arrays.copyOfRange(u.f20493b, f20513k, f20515m)));
+            sb.append(f20507d[i]);
+            sb.append(String.valueOf(t.f20484c));
+        } else if (i4 == 1) {
             sb = new StringBuilder();
-            sb.append(String.valueOf(Arrays.copyOf(u.f19706b, f19725j)));
-            sb.append(f19720d[i]);
-            sb.append(String.valueOf(Arrays.copyOfRange(u.f19706b, f19725j, f19726k)));
-            sb.append(f19720d[i]);
-            sb.append(String.valueOf(Arrays.copyOfRange(u.f19706b, f19727l, f19729n)));
-        } else if (i6 == 2) {
+            sb.append(String.valueOf(Arrays.copyOf(u.f20493b, f20512j)));
+            sb.append(f20507d[i]);
+            sb.append(String.valueOf(Arrays.copyOfRange(u.f20493b, f20512j, f20513k)));
+            sb.append(f20507d[i]);
+            sb.append(String.valueOf(Arrays.copyOfRange(u.f20493b, f20514l, f20516n)));
+        } else if (i4 == 2) {
             sb = new StringBuilder();
-            sb.append(String.valueOf(Arrays.copyOfRange(u.f19706b, f19728m, f19727l)));
-            sb.append(String.valueOf(f19719c));
-        } else if (i6 != 3) {
+            sb.append(String.valueOf(Arrays.copyOfRange(u.f20493b, f20515m, f20514l)));
+            sb.append(String.valueOf(f20506c));
+        } else if (i4 != 3) {
             sb = null;
         } else {
             sb = new StringBuilder();
-            sb.append(String.valueOf(Arrays.copyOfRange(u.f19706b, f19728m, f19727l)));
-            sb.append(String.valueOf(t.f19697c));
+            sb.append(String.valueOf(Arrays.copyOfRange(u.f20493b, f20515m, f20514l)));
+            sb.append(String.valueOf(t.f20484c));
         }
         return sb.toString().toCharArray();
     }
@@ -601,8 +601,8 @@ public final class v extends g {
             try {
                 if (jSONArray.length() > 0) {
                     ArrayList arrayList = new ArrayList();
-                    for (int i6 = 0; i6 < jSONArray.length(); i6++) {
-                        String optString = jSONArray.optString(i6);
+                    for (int i4 = 0; i4 < jSONArray.length(); i4++) {
+                        String optString = jSONArray.optString(i4);
                         if (y.b(optString)) {
                             arrayList.add(optString);
                         }
@@ -621,21 +621,21 @@ public final class v extends g {
     }
 
     public static synchronized boolean a(Context context, String str) {
-        boolean z3;
+        boolean z6;
         synchronized (v.class) {
-            z3 = false;
+            z6 = false;
             if (context != null) {
                 if (!TextUtils.isEmpty(str)) {
                     try {
                         if (b(str, context) != null) {
-                            z3 = true;
+                            z6 = true;
                         }
                     } catch (Exception unused) {
                     }
                 }
             }
         }
-        return z3;
+        return z6;
     }
 
     public static String b(String str, String str2, String str3) {
@@ -723,7 +723,7 @@ public final class v extends g {
     }
 
     private static String b(com.anythink.expressad.foundation.d.d dVar) {
-        d.a w6;
+        d.a w3;
         String str = "";
         if (dVar != null) {
             try {
@@ -733,8 +733,8 @@ public final class v extends g {
                 return str;
             }
         }
-        if (TextUtils.isEmpty(str) && dVar != null && (w6 = dVar.w()) != null) {
-            str = w6.b();
+        if (TextUtils.isEmpty(str) && dVar != null && (w3 = dVar.w()) != null) {
+            str = w3.b();
         }
         if (TextUtils.isEmpty(str)) {
             com.anythink.expressad.f.b.a();
@@ -788,7 +788,7 @@ public final class v extends g {
         return (tArr == null || tArr.length == 0) ? false : true;
     }
 
-    public static int a(String str, String str2, int i6) {
+    public static int a(String str, String str2, int i4) {
         if (!TextUtils.isEmpty(str)) {
             try {
                 Uri parse = Uri.parse(str);
@@ -802,7 +802,7 @@ public final class v extends g {
                 e9.getMessage();
             }
         }
-        return i6;
+        return i4;
     }
 
     public static String a(String str, String str2, String str3) {
@@ -846,12 +846,12 @@ public final class v extends g {
         }
     }
 
-    public static final void a(ImageView imageView, com.anythink.expressad.foundation.d.d dVar, final Context context, boolean z3) {
+    public static final void a(ImageView imageView, com.anythink.expressad.foundation.d.d dVar, final Context context, boolean z6) {
         if (imageView == null || dVar == null) {
             return;
         }
-        boolean z6 = dVar.a() == 0;
-        if (!z3 && z6) {
+        boolean z9 = dVar.a() == 0;
+        if (!z6 && z9) {
             try {
                 imageView.setVisibility(8);
                 return;

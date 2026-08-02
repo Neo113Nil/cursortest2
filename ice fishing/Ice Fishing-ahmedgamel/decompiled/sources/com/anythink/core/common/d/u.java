@@ -4,184 +4,184 @@ package com.anythink.core.common.d;
 public final class u {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f12812a = "tkv";
+    public static final String f13598a = "tkv";
 
     public static class a {
 
         /* renamed from: A, reason: collision with root package name */
-        public static final String f12813A = "_win_notice";
+        public static final String f13599A = "_win_notice";
 
         /* renamed from: B, reason: collision with root package name */
-        public static final String f12814B = "SPU_INSPECT_INFO_OFFSET";
+        public static final String f13600B = "SPU_INSPECT_INFO_OFFSET";
 
         /* renamed from: C, reason: collision with root package name */
-        public static final String f12815C = "EXT_SY";
+        public static final String f13601C = "EXT_SY";
 
         /* renamed from: D, reason: collision with root package name */
-        public static final String f12816D = "anythink_plugin_forbid_";
+        public static final String f13602D = "anythink_plugin_forbid_";
 
         /* renamed from: E, reason: collision with root package name */
-        public static final String f12817E = "anythink_plugin_update";
+        public static final String f13603E = "anythink_plugin_update";
 
         /* renamed from: F, reason: collision with root package name */
-        public static final String f12818F = "cdn_request_time_key";
+        public static final String f13604F = "cdn_request_time_key";
 
         /* renamed from: G, reason: collision with root package name */
-        public static final String f12819G = "cur_using_domain_key";
+        public static final String f13605G = "cur_using_domain_key";
 
         /* renamed from: H, reason: collision with root package name */
-        public static final String f12820H = "cdn_domain_key";
+        public static final String f13606H = "cdn_domain_key";
 
         /* renamed from: I, reason: collision with root package name */
-        public static final String f12821I = "SPU_UPDATE_6450_TIME_KEY";
+        public static final String f13607I = "SPU_UPDATE_6450_TIME_KEY";
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f12822a = "is_migrated";
+        public static final String f13608a = "is_migrated";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f12823b = "anythink_appid";
+        public static final String f13609b = "anythink_appid";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f12824c = "anythink_appkey";
+        public static final String f13610c = "anythink_appkey";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f12825d = "anythink_gaid";
+        public static final String f13611d = "anythink_gaid";
 
         /* renamed from: e, reason: collision with root package name */
-        public static final String f12826e = "anythink_amazon_id";
+        public static final String f13612e = "anythink_amazon_id";
 
         /* renamed from: f, reason: collision with root package name */
-        public static final String f12827f = "anythink_aid";
+        public static final String f13613f = "anythink_aid";
 
         /* renamed from: g, reason: collision with root package name */
-        public static final String f12828g = "anythink_t_me";
+        public static final String f13614g = "anythink_t_me";
 
         /* renamed from: h, reason: collision with root package name */
-        public static final String f12829h = "anythink_c_nu";
+        public static final String f13615h = "anythink_c_nu";
         public static final String i = "anythink_t_st";
 
         /* renamed from: j, reason: collision with root package name */
-        public static final String f12830j = "AP_SY";
+        public static final String f13616j = "AP_SY";
 
         /* renamed from: k, reason: collision with root package name */
-        public static final String f12831k = "AP_SY_IN";
+        public static final String f13617k = "AP_SY_IN";
 
         /* renamed from: l, reason: collision with root package name */
-        public static final String f12832l = "PL_SY";
+        public static final String f13618l = "PL_SY";
 
         /* renamed from: m, reason: collision with root package name */
-        public static final String f12833m = "PL_SY_COLD_START";
+        public static final String f13619m = "PL_SY_COLD_START";
 
         /* renamed from: n, reason: collision with root package name */
-        public static final String f12834n = "SPU_PLACE_ID_TYPE";
+        public static final String f13620n = "SPU_PLACE_ID_TYPE";
 
         /* renamed from: o, reason: collision with root package name */
-        public static final String f12835o = "UPLOAD_DATA_LEVEL";
+        public static final String f13621o = "UPLOAD_DATA_LEVEL";
 
         /* renamed from: p, reason: collision with root package name */
-        public static final String f12836p = "NETWORK_VERSION_NAME";
+        public static final String f13622p = "NETWORK_VERSION_NAME";
 
         /* renamed from: q, reason: collision with root package name */
-        public static final String f12837q = "local_ua";
+        public static final String f13623q = "local_ua";
 
         /* renamed from: r, reason: collision with root package name */
-        public static final String f12838r = "local_os";
+        public static final String f13624r = "local_os";
 
         /* renamed from: s, reason: collision with root package name */
-        public static final String f12839s = "SPU_PSID_KEY";
+        public static final String f13625s = "SPU_PSID_KEY";
 
         /* renamed from: t, reason: collision with root package name */
-        public static final String f12840t = "SPU_SESSIONID_KEY";
+        public static final String f13626t = "SPU_SESSIONID_KEY";
 
         /* renamed from: u, reason: collision with root package name */
-        public static final String f12841u = "SPU_INIT_TIME_KEY";
+        public static final String f13627u = "SPU_INIT_TIME_KEY";
 
         /* renamed from: v, reason: collision with root package name */
-        public static final String f12842v = "UP_ID";
+        public static final String f13628v = "UP_ID";
 
         /* renamed from: w, reason: collision with root package name */
-        public static final String f12843w = "EU_INFO";
+        public static final String f13629w = "EU_INFO";
 
         /* renamed from: x, reason: collision with root package name */
-        public static final String f12844x = "AT_INIT_TIME";
+        public static final String f13630x = "AT_INIT_TIME";
 
         /* renamed from: y, reason: collision with root package name */
-        public static final String f12845y = "exc_sys";
+        public static final String f13631y = "exc_sys";
 
         /* renamed from: z, reason: collision with root package name */
-        public static final String f12846z = "exc_bk";
+        public static final String f13632z = "exc_bk";
     }
 
     public static class b {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f12847a = "anythink_sdk";
+        public static final String f13633a = "anythink_sdk";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f12848b = "anythink_uservalue";
+        public static final String f13634b = "anythink_uservalue";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f12849c = "anythink_placement_load";
+        public static final String f13635c = "anythink_placement_load";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f12850d = "anythink_crash";
+        public static final String f13636d = "anythink_crash";
 
         /* renamed from: e, reason: collision with root package name */
-        public static final String f12851e = "anythink_onlineapi_file";
+        public static final String f13637e = "anythink_onlineapi_file";
 
         /* renamed from: f, reason: collision with root package name */
-        public static final String f12852f = "exc_log";
+        public static final String f13638f = "exc_log";
 
         /* renamed from: g, reason: collision with root package name */
-        public static final String f12853g = "anythink_network_init_data";
+        public static final String f13639g = "anythink_network_init_data";
 
         /* renamed from: h, reason: collision with root package name */
-        public static final String f12854h = "anythinkadx_file";
+        public static final String f13640h = "anythinkadx_file";
         public static final String i = "anythinkown_offerid_impression";
 
         /* renamed from: j, reason: collision with root package name */
-        public static final String f12855j = "anythink_placement_strategy_update_check";
+        public static final String f13641j = "anythink_placement_strategy_update_check";
 
         /* renamed from: k, reason: collision with root package name */
-        public static final String f12856k = "anythink_wt_cache_info";
+        public static final String f13642k = "anythink_wt_cache_info";
 
         /* renamed from: l, reason: collision with root package name */
-        public static final String f12857l = "anythink_wf_first_load";
+        public static final String f13643l = "anythink_wf_first_load";
 
         /* renamed from: m, reason: collision with root package name */
-        public static final String f12858m = "anythink_proverb_price";
+        public static final String f13644m = "anythink_proverb_price";
 
         /* renamed from: n, reason: collision with root package name */
-        public static final String f12859n = "anythink_last_b_rec";
+        public static final String f13645n = "anythink_last_b_rec";
 
         /* renamed from: o, reason: collision with root package name */
-        public static final String f12860o = "anythink_adx_rpr";
+        public static final String f13646o = "anythink_adx_rpr";
 
         /* renamed from: p, reason: collision with root package name */
-        public static final String f12861p = "anythink_app_pl_cl_retry";
+        public static final String f13647p = "anythink_app_pl_cl_retry";
 
         /* renamed from: q, reason: collision with root package name */
-        public static final String f12862q = "anythink_place_data_tkv";
+        public static final String f13648q = "anythink_place_data_tkv";
     }
 
     public static class c {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final int f12863a = 0;
+        public static final int f13649a = 0;
 
         /* renamed from: b, reason: collision with root package name */
-        public static final int f12864b = 1;
+        public static final int f13650b = 1;
     }
 
     public static class d {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final int f12865a = 0;
+        public static final int f13651a = 0;
 
         /* renamed from: b, reason: collision with root package name */
-        public static final int f12866b = 1;
+        public static final int f13652b = 1;
 
         /* renamed from: c, reason: collision with root package name */
-        public static final int f12867c = 2;
+        public static final int f13653c = 2;
     }
 }

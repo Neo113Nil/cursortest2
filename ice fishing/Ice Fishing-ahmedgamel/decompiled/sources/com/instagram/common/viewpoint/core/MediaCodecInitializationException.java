@@ -4,7 +4,7 @@ import com.anythink.basead.b.b.j;
 import java.util.Arrays;
 import kotlin.Metadata;
 
-@Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0003\n\u0002\b\u0003\u0018\u00002\u00060\u0001j\u0002`\u0002B\u0019\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\u0004\b\u0007\u0010\bR\u0010\u0010\u0003\u001a\u00020\u00048\u0006X\u0087\u0004¢\u0006\u0002\n\u0000¨\u0006\t"}, d2 = {"Lcom/facebook/video/heroplayer/exocustom/MediaCodecInitializationException;", "Ljava/lang/Exception;", "Lkotlin/Exception;", "codecName", "", "cause", "", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", "fbandroid.java.com.facebook.video.heroplayer.exocustom.exocustom"}, k = 1, mv = {2, 1, 0}, xi = j.f5816W)
+@Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0003\n\u0002\b\u0003\u0018\u00002\u00060\u0001j\u0002`\u0002B\u0019\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\u0004\b\u0007\u0010\bR\u0010\u0010\u0003\u001a\u00020\u00048\u0006X\u0087\u0004¢\u0006\u0002\n\u0000¨\u0006\t"}, d2 = {"Lcom/facebook/video/heroplayer/exocustom/MediaCodecInitializationException;", "Ljava/lang/Exception;", "Lkotlin/Exception;", "codecName", "", "cause", "", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", "fbandroid.java.com.facebook.video.heroplayer.exocustom.exocustom"}, k = 1, mv = {2, 1, 0}, xi = j.f6602W)
 /* renamed from: com.facebook.ads.redexgen.X.jI, reason: from Kotlin metadata */
 /* loaded from: assets/audience_network/classes2.dex */
 public final class MediaCodecInitializationException extends Exception {
@@ -15,10 +15,10 @@ public final class MediaCodecInitializationException extends Exception {
         A01();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 81);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 81);
         }
         return new String(copyOfRange);
     }
@@ -30,7 +30,7 @@ public final class MediaCodecInitializationException extends Exception {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public MediaCodecInitializationException(String str, Throwable th) {
         super(th);
-        C2414qY.A09(str, A00(0, 9, 70));
+        C2434qY.A09(str, A00(0, 9, 70));
         this.A00 = str;
     }
 }

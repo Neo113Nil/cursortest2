@@ -378,8 +378,8 @@ public class CustomNativeAd extends a {
         this.mAppCommentNum = i;
     }
 
-    public void setAppPrice(double d2) {
-        this.mAppPrice = d2;
+    public void setAppPrice(double d9) {
+        this.mAppPrice = d9;
     }
 
     public void setCallToActionButton(View view) {
@@ -439,14 +439,14 @@ public class CustomNativeAd extends a {
         this.showId = str;
     }
 
-    public final void setStarRating(Double d2) {
-        if (d2 == null) {
+    public final void setStarRating(Double d9) {
+        if (d9 == null) {
             this.mStarRating = null;
         } else {
-            if (d2.doubleValue() < 0.0d || d2.doubleValue() > MAX_STAR_RATING) {
+            if (d9.doubleValue() < 0.0d || d9.doubleValue() > MAX_STAR_RATING) {
                 return;
             }
-            this.mStarRating = d2;
+            this.mStarRating = d9;
         }
     }
 
@@ -454,8 +454,8 @@ public class CustomNativeAd extends a {
         this.mTitle = str;
     }
 
-    public final void setVideoDuration(double d2) {
-        this.videoDuration = d2;
+    public final void setVideoDuration(double d9) {
+        this.videoDuration = d9;
     }
 
     public void setVideoHeight(int i) {
@@ -463,7 +463,7 @@ public class CustomNativeAd extends a {
     }
 
     @Override // com.anythink.core.api.BaseAd
-    public void setVideoMute(boolean z3) {
+    public void setVideoMute(boolean z6) {
     }
 
     public final void setVideoUrl(String str) {

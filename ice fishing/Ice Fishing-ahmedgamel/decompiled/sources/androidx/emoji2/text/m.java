@@ -7,14 +7,14 @@ public final class m implements Runnable {
     @Override // java.lang.Runnable
     public final void run() {
         try {
-            int i = K.n.f1485a;
+            int i = K.n.f1594a;
             Trace.beginSection("EmojiCompat.EmojiCompatInitializer.run");
-            if (j.f4772k != null) {
+            if (j.f4740k != null) {
                 j.a().c();
             }
             Trace.endSection();
         } catch (Throwable th) {
-            int i6 = K.n.f1485a;
+            int i4 = K.n.f1594a;
             Trace.endSection();
             throw th;
         }

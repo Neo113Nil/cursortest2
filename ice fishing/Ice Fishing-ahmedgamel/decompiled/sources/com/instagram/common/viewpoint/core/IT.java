@@ -10,12 +10,12 @@ public class IT implements XN {
 
     @Override // com.instagram.common.viewpoint.core.XN
     public final void ADS() {
-        AbstractC1375Yb abstractC1375Yb;
-        abstractC1375Yb = this.A00.A0M;
-        abstractC1375Yb.setToolbarActionMode(8);
+        AbstractC1395Yb abstractC1395Yb;
+        abstractC1395Yb = this.A00.A0M;
+        abstractC1395Yb.setToolbarActionMode(8);
     }
 
     @Override // com.instagram.common.viewpoint.core.XN
-    public final void AFV(float f3) {
+    public final void AFV(float f2) {
     }
 }

@@ -14,22 +14,22 @@ import javax.net.ssl.SSLSession;
 public final class t {
 
     /* renamed from: a, reason: collision with root package name */
-    private final ai f15716a;
+    private final ai f16503a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final i f15717b;
+    private final i f16504b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final List<Certificate> f15718c;
+    private final List<Certificate> f16505c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final List<Certificate> f15719d;
+    private final List<Certificate> f16506d;
 
     private t(ai aiVar, i iVar, List<Certificate> list, List<Certificate> list2) {
-        this.f15716a = aiVar;
-        this.f15717b = iVar;
-        this.f15718c = list;
-        this.f15719d = list2;
+        this.f16503a = aiVar;
+        this.f16504b = iVar;
+        this.f16505c = list;
+        this.f16506d = list2;
     }
 
     public static t a(SSLSession sSLSession) {
@@ -61,29 +61,29 @@ public final class t {
     }
 
     private Principal e() {
-        if (this.f15718c.isEmpty()) {
+        if (this.f16505c.isEmpty()) {
             return null;
         }
-        return ((X509Certificate) this.f15718c.get(0)).getSubjectX500Principal();
+        return ((X509Certificate) this.f16505c.get(0)).getSubjectX500Principal();
     }
 
     private Principal f() {
-        if (this.f15719d.isEmpty()) {
+        if (this.f16506d.isEmpty()) {
             return null;
         }
-        return ((X509Certificate) this.f15719d.get(0)).getSubjectX500Principal();
+        return ((X509Certificate) this.f16506d.get(0)).getSubjectX500Principal();
     }
 
     public final i b() {
-        return this.f15717b;
+        return this.f16504b;
     }
 
     public final List<Certificate> c() {
-        return this.f15718c;
+        return this.f16505c;
     }
 
     public final List<Certificate> d() {
-        return this.f15719d;
+        return this.f16506d;
     }
 
     public final boolean equals(Object obj) {
@@ -91,15 +91,15 @@ public final class t {
             return false;
         }
         t tVar = (t) obj;
-        return this.f15716a.equals(tVar.f15716a) && this.f15717b.equals(tVar.f15717b) && this.f15718c.equals(tVar.f15718c) && this.f15719d.equals(tVar.f15719d);
+        return this.f16503a.equals(tVar.f16503a) && this.f16504b.equals(tVar.f16504b) && this.f16505c.equals(tVar.f16505c) && this.f16506d.equals(tVar.f16506d);
     }
 
     public final int hashCode() {
-        return this.f15719d.hashCode() + ((this.f15718c.hashCode() + ((this.f15717b.hashCode() + ((this.f15716a.hashCode() + 527) * 31)) * 31)) * 31);
+        return this.f16506d.hashCode() + ((this.f16505c.hashCode() + ((this.f16504b.hashCode() + ((this.f16503a.hashCode() + 527) * 31)) * 31)) * 31);
     }
 
     public final String toString() {
-        return "Handshake{tlsVersion=" + this.f15716a + " cipherSuite=" + this.f15717b + " peerCertificates=" + a(this.f15718c) + " localCertificates=" + a(this.f15719d) + '}';
+        return "Handshake{tlsVersion=" + this.f16503a + " cipherSuite=" + this.f16504b + " peerCertificates=" + a(this.f16505c) + " localCertificates=" + a(this.f16506d) + '}';
     }
 
     public static t a(ai aiVar, i iVar, List<Certificate> list, List<Certificate> list2) {
@@ -113,7 +113,7 @@ public final class t {
     }
 
     public final ai a() {
-        return this.f15716a;
+        return this.f16503a;
     }
 
     private static List<String> a(List<Certificate> list) {

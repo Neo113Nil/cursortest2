@@ -6,14 +6,14 @@ import java.io.Closeable;
 public abstract class x implements Closeable {
 
     /* renamed from: n, reason: collision with root package name */
-    public static final w f38261n;
+    public static final w f38380n;
 
     static {
-        y8.h hVar = y8.h.f41954w;
+        y8.h hVar = y8.h.f41925w;
         kotlin.jvm.internal.h.e(hVar, "<this>");
         y8.e eVar = new y8.e();
         eVar.K(hVar);
-        f38261n = new w(hVar.f41955n.length, eVar);
+        f38380n = new w(hVar.f41926n.length, eVar);
     }
 
     public abstract long b();

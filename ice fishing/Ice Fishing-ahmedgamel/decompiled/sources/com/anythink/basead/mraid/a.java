@@ -19,58 +19,58 @@ import org.json.JSONObject;
 public class a implements Handler.Callback {
 
     /* renamed from: a, reason: collision with root package name */
-    Context f9607a;
+    Context f10393a;
 
     /* renamed from: c, reason: collision with root package name */
-    MraidBaseWebView f9609c;
+    MraidBaseWebView f10395c;
 
     /* renamed from: d, reason: collision with root package name */
-    protected Pattern f9610d;
+    protected Pattern f10396d;
 
     /* renamed from: e, reason: collision with root package name */
-    protected String f9611e;
+    protected String f10397e;
 
     /* renamed from: f, reason: collision with root package name */
-    List<String> f9612f = new ArrayList(Arrays.asList("open", com.anythink.expressad.foundation.d.d.cs, "unload", "useCustomClose", "expand"));
+    List<String> f10398f = new ArrayList(Arrays.asList("open", com.anythink.expressad.foundation.d.d.cs, "unload", "useCustomClose", "expand"));
 
     /* renamed from: b, reason: collision with root package name */
-    Handler f9608b = new Handler(Looper.getMainLooper(), this);
+    Handler f10394b = new Handler(Looper.getMainLooper(), this);
 
     /* renamed from: com.anythink.basead.mraid.a$a, reason: collision with other inner class name */
     public class C0044a {
 
         /* renamed from: a, reason: collision with root package name */
-        public Object f9613a;
+        public Object f10399a;
 
         /* renamed from: b, reason: collision with root package name */
-        public String f9614b;
+        public String f10400b;
 
         /* renamed from: c, reason: collision with root package name */
-        public String f9615c;
+        public String f10401c;
 
         /* renamed from: d, reason: collision with root package name */
-        public String f9616d;
+        public String f10402d;
 
         /* renamed from: e, reason: collision with root package name */
-        public String f9617e;
+        public String f10403e;
 
         /* renamed from: f, reason: collision with root package name */
-        public String f9618f;
+        public String f10404f;
 
         public C0044a() {
         }
     }
 
     public a(Context context) {
-        this.f9607a = context;
+        this.f10393a = context;
     }
 
     private void a(Pattern pattern) {
-        this.f9610d = pattern;
+        this.f10396d = pattern;
     }
 
     private void c(String str) {
-        this.f9611e = str;
+        this.f10397e = str;
     }
 
     private C0044a d(String str) {
@@ -81,16 +81,16 @@ public class a implements Handler.Callback {
         C0044a c0044a = new C0044a();
         Uri parse = Uri.parse(str);
         String scheme = parse.getScheme();
-        if (TextUtils.isEmpty(scheme) || !scheme.contains(com.anythink.expressad.foundation.d.d.f18594s)) {
+        if (TextUtils.isEmpty(scheme) || !scheme.contains(com.anythink.expressad.foundation.d.d.f19381s)) {
             return null;
         }
         String host = parse.getHost();
-        c0044a.f9615c = host;
-        if (!this.f9612f.contains(host) && this.f9609c != null) {
+        c0044a.f10401c = host;
+        if (!this.f10398f.contains(host) && this.f10395c != null) {
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.a(this.f9609c, host);
+            com.anythink.core.express.b.a.a(this.f10395c, host);
             com.anythink.core.express.b.a.a();
-            com.anythink.core.express.b.a.a(this.f9609c, host, "Specified command is not implemented");
+            com.anythink.core.express.b.a.a(this.f10395c, host, "Specified command is not implemented");
             return null;
         }
         String encodedQuery = parse.getEncodedQuery();
@@ -118,7 +118,7 @@ public class a implements Handler.Callback {
             for (String str2 : unmodifiableSet) {
                 jSONObject.put(str2, parse.getQueryParameter(str2));
             }
-            c0044a.f9616d = jSONObject.toString();
+            c0044a.f10402d = jSONObject.toString();
             return c0044a;
         } catch (Exception e9) {
             e9.printStackTrace();
@@ -127,14 +127,14 @@ public class a implements Handler.Callback {
     }
 
     public final void b(String str) {
-        C0044a d2;
+        C0044a d9;
         Object jsObject;
         char c9;
-        if (TextUtils.isEmpty(str) || (d2 = d(str)) == null || (jsObject = this.f9609c.getJsObject(d2.f9614b)) == null || !(jsObject instanceof h)) {
+        if (TextUtils.isEmpty(str) || (d9 = d(str)) == null || (jsObject = this.f10395c.getJsObject(d9.f10400b)) == null || !(jsObject instanceof h)) {
             return;
         }
         try {
-            String str2 = d2.f9615c;
+            String str2 = d9.f10401c;
             switch (str2.hashCode()) {
                 case -1289167206:
                     if (str2.equals("expand")) {
@@ -178,26 +178,26 @@ public class a implements Handler.Callback {
             String str3 = "{}";
             if (c9 == 0) {
                 h hVar = (h) jsObject;
-                if (!TextUtils.isEmpty(d2.f9616d)) {
-                    str3 = d2.f9616d;
+                if (!TextUtils.isEmpty(d9.f10402d)) {
+                    str3 = d9.f10402d;
                 }
                 hVar.a(str3);
                 return;
             }
             if (c9 == 1) {
-                TextUtils.isEmpty(d2.f9616d);
+                TextUtils.isEmpty(d9.f10402d);
                 ((h) jsObject).a();
                 return;
             }
             if (c9 == 2) {
-                TextUtils.isEmpty(d2.f9616d);
+                TextUtils.isEmpty(d9.f10402d);
                 ((h) jsObject).b();
                 return;
             }
             if (c9 == 3) {
                 h hVar2 = (h) jsObject;
-                if (!TextUtils.isEmpty(d2.f9616d)) {
-                    str3 = d2.f9616d;
+                if (!TextUtils.isEmpty(d9.f10402d)) {
+                    str3 = d9.f10402d;
                 }
                 hVar2.b(str3);
                 return;
@@ -206,8 +206,8 @@ public class a implements Handler.Callback {
                 return;
             }
             h hVar3 = (h) jsObject;
-            if (!TextUtils.isEmpty(d2.f9616d)) {
-                str3 = d2.f9616d;
+            if (!TextUtils.isEmpty(d9.f10402d)) {
+                str3 = d9.f10402d;
             }
             hVar3.c(str3);
         } catch (Throwable unused) {
@@ -220,20 +220,20 @@ public class a implements Handler.Callback {
     }
 
     private void a(MraidBaseWebView mraidBaseWebView) {
-        this.f9609c = mraidBaseWebView;
+        this.f10395c = mraidBaseWebView;
     }
 
     public final boolean a(String str) {
         if (!com.anythink.core.express.d.d.a(str)) {
             return false;
         }
-        this.f9610d = com.anythink.core.express.d.d.b(str);
-        this.f9611e = str;
+        this.f10396d = com.anythink.core.express.d.d.b(str);
+        this.f10397e = str;
         return true;
     }
 
     private String a() {
-        return this.f9611e;
+        return this.f10397e;
     }
 
     private static Set<String> a(Uri uri) {
@@ -260,10 +260,10 @@ public class a implements Handler.Callback {
 
     private void a(C0044a c0044a) {
         char c9;
-        Object jsObject = this.f9609c.getJsObject(c0044a.f9614b);
+        Object jsObject = this.f10395c.getJsObject(c0044a.f10400b);
         if (jsObject != null && (jsObject instanceof h)) {
             try {
-                String str = c0044a.f9615c;
+                String str = c0044a.f10401c;
                 switch (str.hashCode()) {
                     case -1289167206:
                         if (str.equals("expand")) {
@@ -307,26 +307,26 @@ public class a implements Handler.Callback {
                 String str2 = "{}";
                 if (c9 == 0) {
                     h hVar = (h) jsObject;
-                    if (!TextUtils.isEmpty(c0044a.f9616d)) {
-                        str2 = c0044a.f9616d;
+                    if (!TextUtils.isEmpty(c0044a.f10402d)) {
+                        str2 = c0044a.f10402d;
                     }
                     hVar.a(str2);
                     return;
                 }
                 if (c9 == 1) {
-                    TextUtils.isEmpty(c0044a.f9616d);
+                    TextUtils.isEmpty(c0044a.f10402d);
                     ((h) jsObject).a();
                     return;
                 }
                 if (c9 == 2) {
-                    TextUtils.isEmpty(c0044a.f9616d);
+                    TextUtils.isEmpty(c0044a.f10402d);
                     ((h) jsObject).b();
                     return;
                 }
                 if (c9 == 3) {
                     h hVar2 = (h) jsObject;
-                    if (!TextUtils.isEmpty(c0044a.f9616d)) {
-                        str2 = c0044a.f9616d;
+                    if (!TextUtils.isEmpty(c0044a.f10402d)) {
+                        str2 = c0044a.f10402d;
                     }
                     hVar2.b(str2);
                     return;
@@ -335,8 +335,8 @@ public class a implements Handler.Callback {
                     return;
                 }
                 h hVar3 = (h) jsObject;
-                if (!TextUtils.isEmpty(c0044a.f9616d)) {
-                    str2 = c0044a.f9616d;
+                if (!TextUtils.isEmpty(c0044a.f10402d)) {
+                    str2 = c0044a.f10402d;
                 }
                 hVar3.c(str2);
             } catch (Throwable unused) {

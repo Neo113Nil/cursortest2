@@ -11,11 +11,11 @@ import java.util.regex.Pattern;
 public final class k extends c {
 
     /* renamed from: d, reason: collision with root package name */
-    public final Pattern f1265d;
+    public final Pattern f1292d;
 
     public k() {
         super("ALGORITHMIC_DARKENING", "ALGORITHMIC_DARKENING");
-        this.f1265d = Pattern.compile("\\A\\d+");
+        this.f1292d = Pattern.compile("\\A\\d+");
     }
 
     @Override // I0.c
@@ -31,7 +31,7 @@ public final class k extends c {
         if (!b9 || (i = Build.VERSION.SDK_INT) >= 29) {
             return b9;
         }
-        int i6 = H0.e.f1084a;
+        int i4 = H0.e.f1187a;
         if (i >= 26) {
             packageInfo = WebView.getCurrentWebViewPackage();
         } else {
@@ -44,7 +44,7 @@ public final class k extends c {
         if (packageInfo == null) {
             return false;
         }
-        Matcher matcher = this.f1265d.matcher(packageInfo.versionName);
+        Matcher matcher = this.f1292d.matcher(packageInfo.versionName);
         return matcher.find() && Integer.parseInt(packageInfo.versionName.substring(matcher.start(), matcher.end())) >= 105;
     }
 }

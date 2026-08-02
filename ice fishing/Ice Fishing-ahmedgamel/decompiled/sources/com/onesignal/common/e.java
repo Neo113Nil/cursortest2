@@ -24,7 +24,7 @@ public abstract class e {
         @Override // I7.l
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((JSONObject) obj);
-            return v.f41353a;
+            return v.f41073a;
         }
 
         public final void invoke(JSONObject it) {

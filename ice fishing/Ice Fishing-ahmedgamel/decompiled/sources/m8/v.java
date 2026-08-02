@@ -1,47 +1,16 @@
 package m8;
 
 /* loaded from: classes2.dex */
-public final class v {
+public interface v {
+    v a();
 
-    /* renamed from: a, reason: collision with root package name */
-    public final w f39433a;
+    q b();
 
-    /* renamed from: b, reason: collision with root package name */
-    public final e f39434b;
+    u c();
 
-    /* renamed from: c, reason: collision with root package name */
-    public final Throwable f39435c;
+    void cancel();
 
-    public /* synthetic */ v(w wVar, Throwable th, int i) {
-        this(wVar, (e) null, (i & 4) != 0 ? null : th);
-    }
+    u e();
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof v)) {
-            return false;
-        }
-        v vVar = (v) obj;
-        return kotlin.jvm.internal.h.a(this.f39433a, vVar.f39433a) && kotlin.jvm.internal.h.a(this.f39434b, vVar.f39434b) && kotlin.jvm.internal.h.a(this.f39435c, vVar.f39435c);
-    }
-
-    public final int hashCode() {
-        int hashCode = this.f39433a.hashCode() * 31;
-        e eVar = this.f39434b;
-        int hashCode2 = (hashCode + (eVar == null ? 0 : eVar.hashCode())) * 31;
-        Throwable th = this.f39435c;
-        return hashCode2 + (th != null ? th.hashCode() : 0);
-    }
-
-    public final String toString() {
-        return "ConnectResult(plan=" + this.f39433a + ", nextPlan=" + this.f39434b + ", throwable=" + this.f39435c + ')';
-    }
-
-    public v(w wVar, e eVar, Throwable th) {
-        this.f39433a = wVar;
-        this.f39434b = eVar;
-        this.f39435c = th;
-    }
+    boolean isReady();
 }

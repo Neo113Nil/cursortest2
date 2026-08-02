@@ -3,16 +3,16 @@ package com.instagram.common.viewpoint.core;
 import java.util.Arrays;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class GT extends AbstractRunnableC1327Wc {
+public class GT extends AbstractRunnableC1347Wc {
     public static byte[] A02;
     public static String[] A03 = {"zQTxaAZtyj5Zf7xpyBa5Wo13", "ZyRPoqiC9PInhvt4VYdLIOd5Fjjwld3Q", "AJVcAlxtfo1o3uDwHkILc2qtWBcw5I", "qm4l90vWWtQXhhB5Cv7", "msnWA3qGYryppWjZvi7PZr4M3Bb415RH", "kQT0oRvSr6py", "zmROIVOKOovaIXaapuTgFe6PU", "TFR8Ke0ijybG7ZAZ7LbnVmkovmXx0N"};
     public final /* synthetic */ C4V A00;
     public final /* synthetic */ C4A A01;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 22);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 22);
         }
         return new String(copyOfRange);
     }
@@ -30,14 +30,14 @@ public class GT extends AbstractRunnableC1327Wc {
         this.A01 = c4a;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractRunnableC1327Wc
+    @Override // com.instagram.common.viewpoint.core.AbstractRunnableC1347Wc
     public final void A07() {
-        C0877Ek c0877Ek;
-        C0877Ek c0877Ek2;
-        c0877Ek = this.A00.A0M;
-        if (c0877Ek.getState() == EnumC1782fm.A02) {
-            c0877Ek2 = this.A00.A0M;
-            int currentPositionInMillis = c0877Ek2.getCurrentPositionInMillis();
+        C0897Ek c0897Ek;
+        C0897Ek c0897Ek2;
+        c0897Ek = this.A00.A0M;
+        if (c0897Ek.getState() == EnumC1802fm.A02) {
+            c0897Ek2 = this.A00.A0M;
+            int currentPositionInMillis = c0897Ek2.getCurrentPositionInMillis();
             if (A03[1].charAt(3) != 'P') {
                 throw new RuntimeException();
             }

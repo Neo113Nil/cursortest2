@@ -27,8 +27,8 @@ public abstract class R2 {
     public int A0B;
     public int A0C;
     public int A0D;
-    public final RN A0G = new C1902hj(this);
-    public final RN A0H = new C1900hh(this);
+    public final RN A0G = new C1922hj(this);
+    public final RN A0H = new C1920hh(this);
     public RP A04 = new RP(this.A0G);
     public RP A05 = new RP(this.A0H);
     public boolean A09 = false;
@@ -37,10 +37,10 @@ public abstract class R2 {
     public boolean A0F = true;
     public boolean A0E = true;
 
-    public static String A09(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0I, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 20);
+    public static String A09(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0I, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 20);
         }
         return new String(copyOfRange);
     }
@@ -73,7 +73,7 @@ public abstract class R2 {
 
     public abstract void A1r(int i);
 
-    public abstract void A1s(int i, int i6, RH rh, R0 r02);
+    public abstract void A1s(int i, int i4, RH rh, R0 r02);
 
     public abstract void A1t(int i, R0 r02);
 
@@ -95,12 +95,12 @@ public abstract class R2 {
         A0A();
     }
 
-    public static int A02(int i, int i6, int i9) {
+    public static int A02(int i, int i4, int i6) {
         int mode = View.MeasureSpec.getMode(i);
         int size = View.MeasureSpec.getSize(i);
         switch (mode) {
             case Integer.MIN_VALUE:
-                int max = Math.max(i6, i9);
+                int max = Math.max(i4, i6);
                 int size2 = A0J[1].length();
                 if (size2 != 8) {
                     throw new RuntimeException();
@@ -111,46 +111,46 @@ public abstract class R2 {
             case 1073741824:
                 return size;
             default:
-                int mode3 = Math.max(i6, i9);
+                int mode3 = Math.max(i4, i6);
                 return mode3;
         }
     }
 
-    public static int A03(int i, int i6, int i9, int i10, boolean z3) {
-        int max = Math.max(0, i - i9);
-        int i11 = 0;
+    public static int A03(int i, int i4, int i6, int i9, boolean z6) {
+        int max = Math.max(0, i - i6);
+        int i10 = 0;
         int resultMode = 0;
-        if (z3) {
-            if (i10 >= 0) {
-                i11 = i10;
+        if (z6) {
+            if (i9 >= 0) {
+                i10 = i9;
                 resultMode = 1073741824;
-            } else if (i10 == -1) {
-                switch (i6) {
+            } else if (i9 == -1) {
+                switch (i4) {
                     case Integer.MIN_VALUE:
                     case 1073741824:
-                        i11 = max;
-                        resultMode = i6;
+                        i10 = max;
+                        resultMode = i4;
                         break;
                     case 0:
-                        i11 = 0;
+                        i10 = 0;
                         resultMode = 0;
                         break;
                 }
-            } else if (i10 == -2) {
-                i11 = 0;
+            } else if (i9 == -2) {
+                i10 = 0;
                 resultMode = 0;
             }
-        } else if (i10 >= 0) {
-            i11 = i10;
+        } else if (i9 >= 0) {
+            i10 = i9;
             resultMode = 1073741824;
-        } else if (i10 == -1) {
-            i11 = max;
-            resultMode = i6;
-        } else if (i10 == -2) {
-            i11 = max;
-            resultMode = (i6 == Integer.MIN_VALUE || i6 == 1073741824) ? Integer.MIN_VALUE : 0;
+        } else if (i9 == -1) {
+            i10 = max;
+            resultMode = i4;
+        } else if (i9 == -2) {
+            i10 = max;
+            resultMode = (i4 == Integer.MIN_VALUE || i4 == 1073741824) ? Integer.MIN_VALUE : 0;
         }
-        int size = View.MeasureSpec.makeMeasureSpec(i11, resultMode);
+        int size = View.MeasureSpec.makeMeasureSpec(i10, resultMode);
         return size;
     }
 
@@ -185,11 +185,11 @@ public abstract class R2 {
         }
     }
 
-    private final void A0D(int i, int i6) {
+    private final void A0D(int i, int i4) {
         View view = A0v(i);
         if (view != null) {
             A0B(i);
-            A0G(view, i6);
+            A0G(view, i4);
             String[] strArr = A0J;
             if (strArr[2].charAt(30) != strArr[5].charAt(30)) {
                 throw new RuntimeException();
@@ -224,9 +224,9 @@ public abstract class R2 {
         this.A01.A0H(view, i, r32, A0F.A0g());
     }
 
-    private void A0I(View view, int i, boolean z3) {
+    private void A0I(View view, int i, boolean z6) {
         RK A0F = C7M.A0F(view);
-        if (z3 || A0F.A0g()) {
+        if (z6 || A0F.A0g()) {
             this.A03.A0t.A09(A0F);
         } else {
             this.A03.A0t.A0A(A0F);
@@ -314,11 +314,11 @@ public abstract class R2 {
         if (this.A03 == null || accessibilityEvent == null) {
             return;
         }
-        boolean z3 = true;
+        boolean z6 = true;
         if (!this.A03.canScrollVertically(1) && !this.A03.canScrollVertically(-1) && !this.A03.canScrollHorizontally(-1) && !this.A03.canScrollHorizontally(1)) {
-            z3 = false;
+            z6 = false;
         }
-        accessibilityEvent.setScrollable(z3);
+        accessibilityEvent.setScrollable(z6);
         if (this.A03.A04 != null) {
             accessibilityEvent.setItemCount(this.A03.A04.A0B());
         }
@@ -380,10 +380,10 @@ public abstract class R2 {
         return this.A02 != null && this.A02.A0F();
     }
 
-    public static boolean A0Q(int i, int i6, int i9) {
-        int mode = View.MeasureSpec.getMode(i6);
-        int size = View.MeasureSpec.getSize(i6);
-        if (i9 > 0 && i != i9) {
+    public static boolean A0Q(int i, int i4, int i6) {
+        int mode = View.MeasureSpec.getMode(i4);
+        int size = View.MeasureSpec.getSize(i4);
+        if (i6 > 0 && i != i6) {
             return false;
         }
         switch (mode) {
@@ -410,7 +410,7 @@ public abstract class R2 {
             return false;
         }
         int hScroll = 0;
-        int i6 = 0;
+        int i4 = 0;
         switch (i) {
             case 4096:
                 if (this.A03.canScrollVertically(1)) {
@@ -423,9 +423,9 @@ public abstract class R2 {
                 if (this.A03.canScrollHorizontally(1)) {
                     int A0j = A0j();
                     int vScroll3 = A0g();
-                    int i9 = A0j - vScroll3;
+                    int i6 = A0j - vScroll3;
                     int vScroll4 = A0h();
-                    i6 = i9 - vScroll4;
+                    i4 = i6 - vScroll4;
                     break;
                 }
                 break;
@@ -440,17 +440,17 @@ public abstract class R2 {
                 if (this.A03.canScrollHorizontally(-1)) {
                     int A0j2 = A0j();
                     int vScroll7 = A0g();
-                    int i10 = A0j2 - vScroll7;
+                    int i9 = A0j2 - vScroll7;
                     int vScroll8 = A0h();
-                    i6 = -(i10 - vScroll8);
+                    i4 = -(i9 - vScroll8);
                     break;
                 }
                 break;
         }
-        if (hScroll == 0 && i6 == 0) {
+        if (hScroll == 0 && i4 == 0) {
             return false;
         }
-        this.A03.scrollBy(i6, hScroll);
+        this.A03.scrollBy(i4, hScroll);
         return true;
     }
 
@@ -458,7 +458,7 @@ public abstract class R2 {
         return false;
     }
 
-    private boolean A0U(C7M c7m, int i, int i6) {
+    private boolean A0U(C7M c7m, int i, int i4) {
         View focusedChild = c7m.getFocusedChild();
         if (focusedChild == null) {
             return false;
@@ -471,7 +471,7 @@ public abstract class R2 {
         int parentLeft2 = parentLeft - A0f();
         Rect rect = this.A03.A0p;
         A0J(focusedChild, rect);
-        if (rect.left - i >= parentTop2 || rect.right - i <= parentBottom || rect.top - i6 >= parentLeft2 || rect.bottom - i6 <= parentRight) {
+        if (rect.left - i >= parentTop2 || rect.right - i <= parentBottom || rect.top - i4 >= parentLeft2 || rect.bottom - i4 <= parentRight) {
             return false;
         }
         return true;
@@ -531,7 +531,7 @@ public abstract class R2 {
     }
 
     public final int A0b() {
-        AbstractC1188Qq a9;
+        AbstractC1208Qq a9;
         if (this.A03 != null) {
             C7M c7m = this.A03;
             if (A0J[3].charAt(19) == 'k') {
@@ -697,23 +697,23 @@ public abstract class R2 {
         }
     }
 
-    public final void A13(int i, int i6) {
+    public final void A13(int i, int i4) {
         this.A0C = View.MeasureSpec.getSize(i);
         this.A0D = View.MeasureSpec.getMode(i);
         if (this.A0D == 0 && !C7M.A1B) {
             this.A0C = 0;
         }
-        this.A0A = View.MeasureSpec.getSize(i6);
-        this.A0B = View.MeasureSpec.getMode(i6);
+        this.A0A = View.MeasureSpec.getSize(i4);
+        this.A0B = View.MeasureSpec.getMode(i4);
         if (this.A0B == 0 && !C7M.A1B) {
             this.A0A = 0;
         }
     }
 
-    public final void A14(int i, int i6) {
+    public final void A14(int i, int i4) {
         int A0Y = A0Y();
         if (A0Y == 0) {
-            this.A03.A1c(i, i6);
+            this.A03.A1c(i, i4);
             String[] strArr = A0J;
             String str = strArr[2];
             String str2 = strArr[5];
@@ -725,37 +725,37 @@ public abstract class R2 {
             A0J[1] = "XwkGDyjU";
             return;
         }
+        int i6 = Integer.MAX_VALUE;
         int i9 = Integer.MAX_VALUE;
-        int i10 = Integer.MAX_VALUE;
         int maxY = Integer.MIN_VALUE;
         int maxX = Integer.MIN_VALUE;
-        for (int i11 = 0; i11 < A0Y; i11++) {
-            View A0v = A0v(i11);
+        for (int i10 = 0; i10 < A0Y; i10++) {
+            View A0v = A0v(i10);
             Rect rect = this.A03.A0p;
             A0J(A0v, rect);
             int count2 = rect.left;
-            if (count2 < i9) {
-                i9 = rect.left;
+            if (count2 < i6) {
+                i6 = rect.left;
             }
             int count3 = rect.right;
             if (count3 > maxY) {
                 maxY = rect.right;
             }
             int count4 = rect.top;
-            if (count4 < i10) {
-                i10 = rect.top;
+            if (count4 < i9) {
+                i9 = rect.top;
             }
             int count5 = rect.bottom;
             if (count5 > maxX) {
                 maxX = rect.bottom;
             }
         }
-        this.A03.A0p.set(i9, i10, maxY, maxX);
-        A17(this.A03.A0p, i, i6);
+        this.A03.A0p.set(i6, i9, maxY, maxX);
+        A17(this.A03.A0p, i, i4);
     }
 
-    public final void A15(int i, int i6) {
-        this.A03.setMeasuredDimension(i, i6);
+    public final void A15(int i, int i4) {
+        this.A03.setMeasuredDimension(i, i4);
     }
 
     public final void A16(int i, RA ra) {
@@ -764,17 +764,17 @@ public abstract class R2 {
         ra.A0T(view);
     }
 
-    public void A17(Rect rect, int i, int i6) {
+    public void A17(Rect rect, int i, int i4) {
         int usedHeight = rect.width() + A0g() + A0h();
         int height = rect.height();
         int usedWidth = A0i();
-        int i9 = height + usedWidth;
+        int i6 = height + usedWidth;
         int usedWidth2 = A0f();
-        int width = i9 + usedWidth2;
+        int width = i6 + usedWidth2;
         int usedWidth3 = A0e();
         int usedHeight2 = A02(i, usedHeight, usedWidth3);
         int usedWidth4 = A0d();
-        A15(usedHeight2, A02(i6, width, usedWidth4));
+        A15(usedHeight2, A02(i4, width, usedWidth4));
     }
 
     public final void A18(View view) {
@@ -793,25 +793,25 @@ public abstract class R2 {
         A0I(view, i, false);
     }
 
-    public final void A1C(View view, int i, int i6) {
+    public final void A1C(View view, int i, int i4) {
         R3 r32 = (R3) view.getLayoutParams();
         Rect A1D = this.A03.A1D(view);
-        int i9 = i + A1D.left + A1D.right;
-        int i10 = i6 + A1D.top + A1D.bottom;
-        int A03 = A03(A0j(), A0k(), A0g() + A0h() + r32.leftMargin + r32.rightMargin + i9, r32.width, A22());
+        int i6 = i + A1D.left + A1D.right;
+        int i9 = i4 + A1D.top + A1D.bottom;
+        int A03 = A03(A0j(), A0k(), A0g() + A0h() + r32.leftMargin + r32.rightMargin + i6, r32.width, A22());
         int A0Z = A0Z();
         int A0a = A0a();
         int widthSpec = A0i();
-        int A032 = A03(A0Z, A0a, widthSpec + A0f() + r32.topMargin + r32.bottomMargin + i10, r32.height, A23());
+        int A032 = A03(A0Z, A0a, widthSpec + A0f() + r32.topMargin + r32.bottomMargin + i9, r32.height, A23());
         if (A1Y(view, A03, A032, r32)) {
             view.measure(A03, A032);
         }
     }
 
-    public final void A1D(View view, int i, int i6, int i9, int i10) {
+    public final void A1D(View view, int i, int i4, int i6, int i9) {
         R3 r32 = (R3) view.getLayoutParams();
         Rect rect = r32.A03;
-        view.layout(rect.left + i + r32.leftMargin, rect.top + i6 + r32.topMargin, (i9 - rect.right) - r32.rightMargin, (i10 - rect.bottom) - r32.bottomMargin);
+        view.layout(rect.left + i + r32.leftMargin, rect.top + i4 + r32.topMargin, (i6 - rect.right) - r32.rightMargin, (i9 - rect.bottom) - r32.bottomMargin);
     }
 
     public final void A1E(View view, Q6 q62) {
@@ -833,9 +833,9 @@ public abstract class R2 {
         ra.A0T(view);
     }
 
-    public final void A1G(View view, boolean z3, Rect rect) {
+    public final void A1G(View view, boolean z6, Rect rect) {
         Matrix matrix;
-        if (z3) {
+        if (z6) {
             Rect rect2 = ((R3) view.getLayoutParams()).A03;
             rect.set(-rect2.left, -rect2.top, view.getWidth() + rect2.right, view.getHeight() + rect2.bottom);
         } else {
@@ -855,14 +855,14 @@ public abstract class R2 {
             matrix.mapRect(rectF);
             int floor = (int) Math.floor(rectF.left);
             int floor2 = (int) Math.floor(rectF.top);
-            double d2 = rectF.right;
+            double d9 = rectF.right;
             if (A0J[6].length() == 15) {
                 throw new RuntimeException();
             }
             String[] strArr3 = A0J;
             strArr3[0] = "AxZOVdXnwoPa2hByvRQIxFpOdsFmpigD";
             strArr3[7] = "eNbgBcin3tlOsNhY3b3xdMmObUbY1NrP";
-            rect.set(floor, floor2, (int) Math.ceil(d2), (int) Math.ceil(rectF.bottom));
+            rect.set(floor, floor2, (int) Math.ceil(d9), (int) Math.ceil(rectF.bottom));
         }
         rect.offset(view.getLeft(), view.getTop());
     }
@@ -909,8 +909,8 @@ public abstract class R2 {
         }
     }
 
-    public void A1L(RA ra, RH rh, int i, int i6) {
-        this.A03.A1c(i, i6);
+    public void A1L(RA ra, RH rh, int i, int i4) {
+        this.A03.A1c(i, i4);
     }
 
     public void A1M(RA ra, RH rh, View view, Q6 q62) {
@@ -974,8 +974,8 @@ public abstract class R2 {
         A1y(c7m, ra);
     }
 
-    public final void A1T(boolean z3) {
-        this.A06 = z3;
+    public final void A1T(boolean z6) {
+        this.A06 = z6;
     }
 
     public final boolean A1U() {
@@ -1009,15 +1009,15 @@ public abstract class R2 {
         return A0S(this.A03.A0r, this.A03.A0s, i, bundle);
     }
 
-    public final boolean A1Y(View view, int i, int i6, R3 r32) {
+    public final boolean A1Y(View view, int i, int i4, R3 r32) {
         if (!view.isLayoutRequested()) {
-            boolean z3 = this.A0F;
+            boolean z6 = this.A0F;
             String[] strArr = A0J;
             if (strArr[0].charAt(23) != strArr[7].charAt(23)) {
                 throw new RuntimeException();
             }
             A0J[4] = "WuiXnf3Uz62WBJXd3E4QIRzbwyGUV3fL";
-            if (z3 && A0Q(view.getWidth(), i, r32.width) && A0Q(view.getHeight(), i6, r32.height)) {
+            if (z6 && A0Q(view.getWidth(), i, r32.width) && A0Q(view.getHeight(), i4, r32.height)) {
                 return false;
             }
         }
@@ -1032,21 +1032,21 @@ public abstract class R2 {
         return r32 != null;
     }
 
-    public final boolean A1b(C7M c7m, View view, Rect rect, boolean z3) {
-        return A1c(c7m, view, rect, z3, false);
+    public final boolean A1b(C7M c7m, View view, Rect rect, boolean z6) {
+        return A1c(c7m, view, rect, z6, false);
     }
 
-    public final boolean A1c(C7M c7m, View view, Rect rect, boolean z3, boolean z6) {
+    public final boolean A1c(C7M c7m, View view, Rect rect, boolean z6, boolean z9) {
         int[] scrollAmount = A0W(view, rect);
         int i = scrollAmount[0];
-        int i6 = scrollAmount[1];
-        if ((z6 && !A0U(c7m, i, i6)) || (i == 0 && i6 == 0)) {
+        int i4 = scrollAmount[1];
+        if ((z9 && !A0U(c7m, i, i4)) || (i == 0 && i4 == 0)) {
             return false;
         }
-        if (z3) {
-            c7m.scrollBy(i, i6);
+        if (z6) {
+            c7m.scrollBy(i, i4);
         } else {
-            c7m.A1e(i, i6);
+            c7m.A1e(i, i4);
         }
         return true;
     }
@@ -1055,14 +1055,14 @@ public abstract class R2 {
         return A0V(c7m, view, view2);
     }
 
-    public final boolean A1e(C7M c7m, ArrayList<View> views, int i, int i6) {
+    public final boolean A1e(C7M c7m, ArrayList<View> views, int i, int i4) {
         return false;
     }
 
     public View A1o(int i) {
         int A0Y = A0Y();
-        for (int i6 = 0; i6 < A0Y; i6++) {
-            View child = A0v(i6);
+        for (int i4 = 0; i4 < A0Y; i4++) {
+            View child = A0v(i4);
             RK A0F = C7M.A0F(child);
             if (A0F != null) {
                 int childCount = A0F.A0O();

@@ -18,16 +18,16 @@ public class MraidWebView extends MraidBaseWebView {
     public static String TAG = "MraidWebView";
 
     /* renamed from: d, reason: collision with root package name */
-    e f9601d;
+    e f10387d;
 
     /* renamed from: e, reason: collision with root package name */
-    boolean f9602e;
+    boolean f10388e;
 
     /* renamed from: f, reason: collision with root package name */
-    com.anythink.core.express.b.c f9603f;
+    com.anythink.core.express.b.c f10389f;
 
     /* renamed from: g, reason: collision with root package name */
-    boolean f9604g;
+    boolean f10390g;
 
     /* renamed from: com.anythink.basead.mraid.MraidWebView$2, reason: invalid class name */
     public class AnonymousClass2 implements c.b {
@@ -35,11 +35,11 @@ public class MraidWebView extends MraidBaseWebView {
         }
 
         @Override // com.anythink.core.express.b.c.b
-        public final void a(double d2) {
+        public final void a(double d9) {
             String str = MraidWebView.TAG;
             try {
                 com.anythink.core.express.b.a.a();
-                com.anythink.core.express.b.a.a(MraidWebView.this, d2);
+                com.anythink.core.express.b.a.a(MraidWebView.this, d9);
             } catch (Exception e9) {
                 String str2 = MraidWebView.TAG;
                 e9.getMessage();
@@ -49,7 +49,7 @@ public class MraidWebView extends MraidBaseWebView {
 
     public MraidWebView(Context context) {
         super(context);
-        this.f9602e = false;
+        this.f10388e = false;
     }
 
     public static /* synthetic */ void a(MraidWebView mraidWebView) {
@@ -58,12 +58,12 @@ public class MraidWebView extends MraidBaseWebView {
         if (object instanceof d) {
             Context context = mraidWebView.getContext();
             if (context instanceof Activity) {
-                ((d) object).f9623b = new WeakReference<>((Activity) context);
+                ((d) object).f10409b = new WeakReference<>((Activity) context);
             }
-            ((d) object).a(mraidWebView.f9601d);
+            ((d) object).a(mraidWebView.f10387d);
         }
         if (baseWebViewClient instanceof k) {
-            ((k) baseWebViewClient).f9660c = mraidWebView.f9601d;
+            ((k) baseWebViewClient).f10446c = mraidWebView.f10387d;
         }
     }
 
@@ -73,42 +73,42 @@ public class MraidWebView extends MraidBaseWebView {
         if (object instanceof d) {
             Context context = getContext();
             if (context instanceof Activity) {
-                ((d) object).f9623b = new WeakReference<>((Activity) context);
+                ((d) object).f10409b = new WeakReference<>((Activity) context);
             }
-            ((d) object).a(this.f9601d);
+            ((d) object).a(this.f10387d);
         }
         if (baseWebViewClient instanceof k) {
-            ((k) baseWebViewClient).f9660c = this.f9601d;
+            ((k) baseWebViewClient).f10446c = this.f10387d;
         }
     }
 
     private void c() {
         com.anythink.core.express.b.c cVar = new com.anythink.core.express.b.c(getContext());
-        this.f9603f = cVar;
+        this.f10389f = cVar;
         cVar.c();
-        this.f9603f.a();
-        this.f9603f.a(new AnonymousClass2());
+        this.f10389f.a();
+        this.f10389f.a(new AnonymousClass2());
     }
 
     public void prepare(Context context, e eVar) {
-        this.f9601d = eVar;
+        this.f10387d = eVar;
         getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() { // from class: com.anythink.basead.mraid.MraidWebView.1
             @Override // android.view.ViewTreeObserver.OnPreDrawListener
             public final boolean onPreDraw() {
                 try {
                     MraidWebView mraidWebView = MraidWebView.this;
-                    if (!mraidWebView.f9602e) {
+                    if (!mraidWebView.f10388e) {
                         mraidWebView.getViewTreeObserver().removeOnPreDrawListener(this);
                         MraidWebView mraidWebView2 = MraidWebView.this;
-                        mraidWebView2.f9602e = true;
+                        mraidWebView2.f10388e = true;
                         int[] iArr = new int[2];
                         mraidWebView2.getLocationInWindow(iArr);
                         MraidWebView mraidWebView3 = MraidWebView.this;
-                        float f3 = iArr[0];
+                        float f2 = iArr[0];
                         float f9 = iArr[1];
                         try {
                             JSONObject jSONObject = new JSONObject();
-                            jSONObject.put("startX", f3);
+                            jSONObject.put("startX", f2);
                             jSONObject.put("startY", f9);
                             jSONObject.put("scale", q.h(t.b().g()));
                             String encodeToString = Base64.encodeToString(jSONObject.toString().getBytes(), 2);
@@ -118,27 +118,27 @@ public class MraidWebView extends MraidBaseWebView {
                         }
                         MraidWebView mraidWebView4 = MraidWebView.this;
                         int i = iArr[0];
-                        int i6 = iArr[1];
+                        int i4 = iArr[1];
                         int width = mraidWebView4.getWidth();
                         int height = MraidWebView.this.getHeight();
                         try {
-                            int i9 = t.b().g().getResources().getConfiguration().orientation;
+                            int i6 = t.b().g().getResources().getConfiguration().orientation;
                             JSONObject jSONObject2 = new JSONObject();
-                            jSONObject2.put("orientation", i9 == 2 ? "landscape" : i9 == 1 ? "portrait" : "undefined");
+                            jSONObject2.put("orientation", i6 == 2 ? "landscape" : i6 == 1 ? "portrait" : "undefined");
                             jSONObject2.put("locked", "true");
                             float e9 = q.e(t.b().g());
                             float f10 = q.f(t.b().g());
-                            HashMap g4 = q.g(t.b().g());
-                            int intValue = ((Integer) g4.get("width")).intValue();
-                            int intValue2 = ((Integer) g4.get("height")).intValue();
+                            HashMap g9 = q.g(t.b().g());
+                            int intValue = ((Integer) g9.get("width")).intValue();
+                            int intValue2 = ((Integer) g9.get("height")).intValue();
                             HashMap hashMap = new HashMap();
-                            hashMap.put(com.anythink.core.express.b.a.f17525a, com.anythink.core.express.b.a.f17534k);
-                            hashMap.put(com.anythink.core.express.b.a.f17526b, com.anythink.core.express.b.a.f17530f);
-                            hashMap.put(com.anythink.core.express.b.a.f17527c, "true");
-                            hashMap.put(com.anythink.core.express.b.a.f17528d, jSONObject2);
+                            hashMap.put(com.anythink.core.express.b.a.f18312a, com.anythink.core.express.b.a.f18321k);
+                            hashMap.put(com.anythink.core.express.b.a.f18313b, com.anythink.core.express.b.a.f18317f);
+                            hashMap.put(com.anythink.core.express.b.a.f18314c, "true");
+                            hashMap.put(com.anythink.core.express.b.a.f18315d, jSONObject2);
                             com.anythink.core.express.b.a.a();
                             float f11 = i;
-                            float f12 = i6;
+                            float f12 = i4;
                             float f13 = width;
                             float f14 = height;
                             com.anythink.core.express.b.a.a(mraidWebView4, f11, f12, f13, f14);
@@ -156,10 +156,10 @@ public class MraidWebView extends MraidBaseWebView {
                         }
                         MraidWebView.a(MraidWebView.this);
                         MraidWebView mraidWebView5 = MraidWebView.this;
-                        if (mraidWebView5.f9604g) {
+                        if (mraidWebView5.f10390g) {
                             MraidWebView.b(mraidWebView5);
                         }
-                        e eVar2 = MraidWebView.this.f9601d;
+                        e eVar2 = MraidWebView.this.f10387d;
                         if (eVar2 != null) {
                             eVar2.a();
                         }
@@ -176,31 +176,31 @@ public class MraidWebView extends MraidBaseWebView {
     public void release() {
         super.release();
         setWebViewListener(null);
-        com.anythink.core.express.b.c cVar = this.f9603f;
+        com.anythink.core.express.b.c cVar = this.f10389f;
         if (cVar != null) {
             cVar.d();
         }
     }
 
-    public void setNeedRegisterVolumeChangeReceiver(boolean z3) {
-        this.f9604g = z3;
+    public void setNeedRegisterVolumeChangeReceiver(boolean z6) {
+        this.f10390g = z6;
     }
 
     public MraidWebView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f9602e = false;
+        this.f10388e = false;
     }
 
     public MraidWebView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f9602e = false;
+        this.f10388e = false;
     }
 
     public static /* synthetic */ void b(MraidWebView mraidWebView) {
         com.anythink.core.express.b.c cVar = new com.anythink.core.express.b.c(mraidWebView.getContext());
-        mraidWebView.f9603f = cVar;
+        mraidWebView.f10389f = cVar;
         cVar.c();
-        mraidWebView.f9603f.a();
-        mraidWebView.f9603f.a(mraidWebView.new AnonymousClass2());
+        mraidWebView.f10389f.a();
+        mraidWebView.f10389f.a(mraidWebView.new AnonymousClass2());
     }
 }

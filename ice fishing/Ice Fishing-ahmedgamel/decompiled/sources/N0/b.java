@@ -1,7 +1,7 @@
 package N0;
 
-import D.y;
-import J0.s;
+import D.x;
+import J0.r;
 import K0.h;
 import K0.p;
 import S0.g;
@@ -18,48 +18,47 @@ import android.os.PersistableBundle;
 import androidx.work.impl.WorkDatabase;
 import androidx.work.impl.WorkDatabase_Impl;
 import androidx.work.impl.background.systemjob.SystemJobService;
-import com.bumptech.glide.e;
-import g1.C4522b;
+import i1.C4586c;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 import java.util.Set;
-import u.AbstractC5049e;
-import z0.C5253i;
+import u.AbstractC5050e;
+import z0.C5220i;
 
 /* loaded from: classes.dex */
 public final class b implements h {
 
     /* renamed from: x, reason: collision with root package name */
-    public static final String f1901x = s.f("SystemJobScheduler");
+    public static final String f1903x = r.f("SystemJobScheduler");
 
     /* renamed from: n, reason: collision with root package name */
-    public final Context f1902n;
+    public final Context f1904n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final JobScheduler f1903u;
+    public final JobScheduler f1905u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final p f1904v;
+    public final p f1906v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final a f1905w;
+    public final a f1907w;
 
     public b(Context context, p pVar) {
         JobScheduler jobScheduler = (JobScheduler) context.getSystemService("jobscheduler");
         a aVar = new a(context);
-        this.f1902n = context;
-        this.f1904v = pVar;
-        this.f1903u = jobScheduler;
-        this.f1905w = aVar;
+        this.f1904n = context;
+        this.f1906v = pVar;
+        this.f1905u = jobScheduler;
+        this.f1907w = aVar;
     }
 
     public static void b(JobScheduler jobScheduler, int i) {
         try {
             jobScheduler.cancel(i);
         } catch (Throwable th) {
-            s.d().c(f1901x, String.format(Locale.getDefault(), "Exception while trying to cancel job (%d)", Integer.valueOf(i)), th);
+            r.d().c(f1903x, String.format(Locale.getDefault(), "Exception while trying to cancel job (%d)", Integer.valueOf(i)), th);
         }
     }
 
@@ -68,7 +67,7 @@ public final class b implements h {
         try {
             list = jobScheduler.getAllPendingJobs();
         } catch (Throwable th) {
-            s.d().c(f1901x, "getAllPendingJobs() is not reliable on this device.", th);
+            r.d().c(f1903x, "getAllPendingJobs() is not reliable on this device.", th);
             list = null;
         }
         if (list == null) {
@@ -102,34 +101,34 @@ public final class b implements h {
     @Override // K0.h
     public final void a(S0.p... pVarArr) {
         int intValue;
-        p pVar = this.f1904v;
-        WorkDatabase workDatabase = pVar.f1534c;
-        C4522b c4522b = new C4522b(workDatabase);
+        p pVar = this.f1906v;
+        WorkDatabase workDatabase = pVar.f1643c;
+        C4586c c4586c = new C4586c(workDatabase);
         for (S0.p pVar2 : pVarArr) {
             workDatabase.c();
             try {
-                S0.p h9 = workDatabase.t().h(pVar2.f2808a);
-                String str = f1901x;
-                String str2 = pVar2.f2808a;
-                if (h9 == null) {
-                    s.d().g(str, "Skipping scheduling " + str2 + " because it's no longer in the DB");
+                S0.p h3 = workDatabase.t().h(pVar2.f2937a);
+                String str = f1903x;
+                String str2 = pVar2.f2937a;
+                if (h3 == null) {
+                    r.d().g(str, "Skipping scheduling " + str2 + " because it's no longer in the DB");
                     workDatabase.o();
-                } else if (h9.f2809b != 1) {
-                    s.d().g(str, "Skipping scheduling " + str2 + " because it is no longer enqueued");
+                } else if (h3.f2938b != 1) {
+                    r.d().g(str, "Skipping scheduling " + str2 + " because it is no longer enqueued");
                     workDatabase.o();
                 } else {
-                    j c9 = e.c(pVar2);
-                    g h10 = workDatabase.p().h(c9);
-                    if (h10 != null) {
-                        intValue = h10.f2785c;
+                    j k9 = Z2.d.k(pVar2);
+                    g c9 = workDatabase.p().c(k9);
+                    if (c9 != null) {
+                        intValue = c9.f2914c;
                     } else {
-                        pVar.f1533b.getClass();
-                        Object n9 = ((WorkDatabase) c4522b.f37625u).n(new f(c4522b, pVar.f1533b.f1365b, 0));
+                        pVar.f1642b.getClass();
+                        Object n9 = ((WorkDatabase) c4586c.f38154u).n(new f(c4586c, pVar.f1642b.f1394b, 0));
                         kotlin.jvm.internal.h.d(n9, "workDatabase.runInTransa…            id\n        })");
                         intValue = ((Number) n9).intValue();
                     }
-                    if (h10 == null) {
-                        pVar.f1534c.p().j(new g(c9.f2792a, c9.f2793b, intValue));
+                    if (c9 == null) {
+                        pVar.f1643c.p().d(new g(k9.f2921a, k9.f2922b, intValue));
                     }
                     g(pVar2, intValue);
                     workDatabase.o();
@@ -148,8 +147,8 @@ public final class b implements h {
     @Override // K0.h
     public final void d(String str) {
         ArrayList arrayList;
-        Context context = this.f1902n;
-        JobScheduler jobScheduler = this.f1903u;
+        Context context = this.f1904n;
+        JobScheduler jobScheduler = this.f1905u;
         ArrayList e9 = e(context, jobScheduler);
         if (e9 == null) {
             arrayList = null;
@@ -158,8 +157,8 @@ public final class b implements h {
             Iterator it = e9.iterator();
             while (it.hasNext()) {
                 JobInfo jobInfo = (JobInfo) it.next();
-                j f3 = f(jobInfo);
-                if (f3 != null && str.equals(f3.f2792a)) {
+                j f2 = f(jobInfo);
+                if (f2 != null && str.equals(f2.f2921a)) {
                     arrayList2.add(Integer.valueOf(jobInfo.getId()));
                 }
             }
@@ -172,11 +171,11 @@ public final class b implements h {
         while (it2.hasNext()) {
             b(jobScheduler, ((Integer) it2.next()).intValue());
         }
-        i p9 = this.f1904v.f1534c.p();
-        WorkDatabase_Impl workDatabase_Impl = (WorkDatabase_Impl) p9.f2788u;
+        i p9 = this.f1906v.f1643c.p();
+        WorkDatabase_Impl workDatabase_Impl = (WorkDatabase_Impl) p9.f2917u;
         workDatabase_Impl.b();
-        S0.h hVar = (S0.h) p9.f2791x;
-        C5253i a9 = hVar.a();
+        S0.h hVar = (S0.h) p9.f2920x;
+        C5220i a9 = hVar.a();
         if (str == null) {
             a9.o(1);
         } else {
@@ -193,112 +192,112 @@ public final class b implements h {
     }
 
     public final void g(S0.p pVar, int i) {
+        int i4;
         int i6;
-        int i9;
-        JobScheduler jobScheduler = this.f1903u;
-        a aVar = this.f1905w;
+        JobScheduler jobScheduler = this.f1905u;
+        a aVar = this.f1907w;
         aVar.getClass();
-        J0.d dVar = pVar.f2816j;
+        J0.d dVar = pVar.f2945j;
         PersistableBundle persistableBundle = new PersistableBundle();
-        String str = pVar.f2808a;
+        String str = pVar.f2937a;
         persistableBundle.putString("EXTRA_WORK_SPEC_ID", str);
-        persistableBundle.putInt("EXTRA_WORK_SPEC_GENERATION", pVar.f2826t);
+        persistableBundle.putInt("EXTRA_WORK_SPEC_GENERATION", pVar.f2955t);
         persistableBundle.putBoolean("EXTRA_IS_PERIODIC", pVar.c());
-        JobInfo.Builder requiresCharging = new JobInfo.Builder(i, aVar.f1900a).setRequiresCharging(dVar.f1375b);
-        boolean z3 = dVar.f1376c;
-        JobInfo.Builder extras = requiresCharging.setRequiresDeviceIdle(z3).setExtras(persistableBundle);
-        int i10 = Build.VERSION.SDK_INT;
-        int i11 = dVar.f1374a;
-        if (i10 < 30 || i11 != 6) {
-            int d2 = AbstractC5049e.d(i11);
-            if (d2 != 0) {
-                if (d2 != 1) {
-                    if (d2 != 2) {
-                        i6 = 3;
-                        if (d2 != 3) {
-                            i6 = 4;
-                            if (d2 != 4 || i10 < 26) {
-                                s.d().a(a.f1899b, "API version too low. Cannot convert network type value ".concat(y.y(i11)));
+        JobInfo.Builder requiresCharging = new JobInfo.Builder(i, aVar.f1902a).setRequiresCharging(dVar.f1404b);
+        boolean z6 = dVar.f1405c;
+        JobInfo.Builder extras = requiresCharging.setRequiresDeviceIdle(z6).setExtras(persistableBundle);
+        int i9 = Build.VERSION.SDK_INT;
+        int i10 = dVar.f1403a;
+        if (i9 < 30 || i10 != 6) {
+            int d9 = AbstractC5050e.d(i10);
+            if (d9 != 0) {
+                if (d9 != 1) {
+                    if (d9 != 2) {
+                        i4 = 3;
+                        if (d9 != 3) {
+                            i4 = 4;
+                            if (d9 != 4 || i9 < 26) {
+                                r.d().a(a.f1901b, "API version too low. Cannot convert network type value ".concat(x.y(i10)));
                             }
                         }
                     } else {
-                        i6 = 2;
+                        i4 = 2;
                     }
                 }
-                i6 = 1;
+                i4 = 1;
             } else {
-                i6 = 0;
+                i4 = 0;
             }
-            extras.setRequiredNetworkType(i6);
+            extras.setRequiredNetworkType(i4);
         } else {
             extras.setRequiredNetwork(new NetworkRequest.Builder().addCapability(25).build());
         }
-        if (!z3) {
-            extras.setBackoffCriteria(pVar.f2819m, pVar.f2818l == 2 ? 0 : 1);
+        if (!z6) {
+            extras.setBackoffCriteria(pVar.f2948m, pVar.f2947l == 2 ? 0 : 1);
         }
         long max = Math.max(pVar.a() - System.currentTimeMillis(), 0L);
-        if (i10 <= 28) {
+        if (i9 <= 28) {
             extras.setMinimumLatency(max);
         } else if (max > 0) {
             extras.setMinimumLatency(max);
-        } else if (!pVar.f2823q) {
+        } else if (!pVar.f2952q) {
             extras.setImportantWhileForeground(true);
         }
-        Set<J0.c> set = dVar.f1381h;
+        Set<J0.c> set = dVar.f1410h;
         if (!set.isEmpty()) {
             for (J0.c cVar : set) {
-                extras.addTriggerContentUri(new JobInfo.TriggerContentUri(cVar.f1372a, cVar.f1373b ? 1 : 0));
+                extras.addTriggerContentUri(new JobInfo.TriggerContentUri(cVar.f1401a, cVar.f1402b ? 1 : 0));
             }
-            extras.setTriggerContentUpdateDelay(dVar.f1379f);
-            extras.setTriggerContentMaxDelay(dVar.f1380g);
+            extras.setTriggerContentUpdateDelay(dVar.f1408f);
+            extras.setTriggerContentMaxDelay(dVar.f1409g);
         }
         extras.setPersisted(false);
-        int i12 = Build.VERSION.SDK_INT;
-        if (i12 >= 26) {
-            extras.setRequiresBatteryNotLow(dVar.f1377d);
-            extras.setRequiresStorageNotLow(dVar.f1378e);
+        int i11 = Build.VERSION.SDK_INT;
+        if (i11 >= 26) {
+            extras.setRequiresBatteryNotLow(dVar.f1406d);
+            extras.setRequiresStorageNotLow(dVar.f1407e);
         }
-        boolean z6 = pVar.f2817k > 0;
-        boolean z9 = max > 0;
-        if (i12 >= 31 && pVar.f2823q && !z6 && !z9) {
+        boolean z9 = pVar.f2946k > 0;
+        boolean z10 = max > 0;
+        if (i11 >= 31 && pVar.f2952q && !z9 && !z10) {
             extras.setExpedited(true);
         }
         JobInfo build = extras.build();
-        String str2 = f1901x;
-        s.d().a(str2, "Scheduling work ID " + str + "Job ID " + i);
+        String str2 = f1903x;
+        r.d().a(str2, "Scheduling work ID " + str + "Job ID " + i);
         try {
             try {
                 if (jobScheduler.schedule(build) == 0) {
-                    s.d().g(str2, "Unable to schedule work ID " + str);
-                    if (pVar.f2823q) {
-                        if (pVar.f2824r == 1) {
-                            i9 = 0;
+                    r.d().g(str2, "Unable to schedule work ID " + str);
+                    if (pVar.f2952q) {
+                        if (pVar.f2953r == 1) {
+                            i6 = 0;
                             try {
-                                pVar.f2823q = false;
-                                s.d().a(str2, "Scheduling a non-expedited job (work ID " + str + ")");
+                                pVar.f2952q = false;
+                                r.d().a(str2, "Scheduling a non-expedited job (work ID " + str + ")");
                                 g(pVar, i);
                             } catch (IllegalStateException e9) {
                                 e = e9;
-                                ArrayList e10 = e(this.f1902n, jobScheduler);
-                                int size = e10 != null ? e10.size() : i9;
+                                ArrayList e10 = e(this.f1904n, jobScheduler);
+                                int size = e10 != null ? e10.size() : i6;
                                 Locale locale = Locale.getDefault();
                                 Integer valueOf = Integer.valueOf(size);
-                                p pVar2 = this.f1904v;
-                                String format = String.format(locale, "JobScheduler 100 job limit exceeded.  We count %d WorkManager jobs in JobScheduler; we have %d tracked jobs in our DB; our Configuration limit is %d.", valueOf, Integer.valueOf(pVar2.f1534c.t().d().size()), Integer.valueOf(pVar2.f1533b.f1366c));
-                                s.d().b(str2, format);
+                                p pVar2 = this.f1906v;
+                                String format = String.format(locale, "JobScheduler 100 job limit exceeded.  We count %d WorkManager jobs in JobScheduler; we have %d tracked jobs in our DB; our Configuration limit is %d.", valueOf, Integer.valueOf(pVar2.f1643c.t().d().size()), Integer.valueOf(pVar2.f1642b.f1395c));
+                                r.d().b(str2, format);
                                 IllegalStateException illegalStateException = new IllegalStateException(format, e);
-                                pVar2.f1533b.getClass();
+                                pVar2.f1642b.getClass();
                                 throw illegalStateException;
                             }
                         }
                     }
                 }
             } catch (Throwable th) {
-                s.d().c(str2, "Unable to schedule " + pVar, th);
+                r.d().c(str2, "Unable to schedule " + pVar, th);
             }
         } catch (IllegalStateException e11) {
             e = e11;
-            i9 = 0;
+            i6 = 0;
         }
     }
 }

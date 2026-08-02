@@ -14,8 +14,8 @@ public class e extends a {
         com.iab.omid.library.toponad.internal.c c9 = com.iab.omid.library.toponad.internal.c.c();
         if (c9 != null) {
             for (com.iab.omid.library.toponad.adsession.a aVar : c9.b()) {
-                if (this.f36321c.contains(aVar.getAdSessionId())) {
-                    aVar.getAdSessionStatePublisher().a(str, this.f36323e);
+                if (this.f37088c.contains(aVar.getAdSessionId())) {
+                    aVar.getAdSessionStatePublisher().a(str, this.f37090e);
                 }
             }
         }
@@ -24,7 +24,7 @@ public class e extends a {
     @Override // android.os.AsyncTask
     /* renamed from: a, reason: merged with bridge method [inline-methods] */
     public String doInBackground(Object... objArr) {
-        return this.f36322d.toString();
+        return this.f37089d.toString();
     }
 
     @Override // com.iab.omid.library.toponad.walking.async.b, android.os.AsyncTask

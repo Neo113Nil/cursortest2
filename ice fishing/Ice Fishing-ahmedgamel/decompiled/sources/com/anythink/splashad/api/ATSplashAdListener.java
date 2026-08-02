@@ -11,7 +11,7 @@ public interface ATSplashAdListener {
 
     void onAdLoadTimeout();
 
-    void onAdLoaded(boolean z3);
+    void onAdLoaded(boolean z6);
 
     void onAdShow(ATAdInfo aTAdInfo);
 

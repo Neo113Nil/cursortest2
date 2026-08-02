@@ -19,28 +19,28 @@ import java.util.Map;
 public class FacebookATAdapter extends CustomNativeAdapter {
 
     /* renamed from: a, reason: collision with root package name */
-    String f23049a;
+    String f23836a;
 
     /* renamed from: b, reason: collision with root package name */
-    String f23050b = "";
+    String f23837b = "";
 
     /* renamed from: c, reason: collision with root package name */
-    String f23051c = "0";
+    String f23838c = "0";
 
     /* renamed from: d, reason: collision with root package name */
-    String f23052d = "";
+    String f23839d = "";
 
     /* renamed from: e, reason: collision with root package name */
-    boolean f23053e = false;
+    boolean f23840e = false;
 
     /* renamed from: com.anythink.network.facebook.FacebookATAdapter$1, reason: invalid class name */
     public class AnonymousClass1 implements FacebookATBaseNativeAd.a {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ FacebookATBaseNativeAd f23054a;
+        final /* synthetic */ FacebookATBaseNativeAd f23841a;
 
         public AnonymousClass1(FacebookATBaseNativeAd facebookATBaseNativeAd) {
-            this.f23054a = facebookATBaseNativeAd;
+            this.f23841a = facebookATBaseNativeAd;
         }
 
         @Override // com.anythink.network.facebook.FacebookATBaseNativeAd.a
@@ -55,7 +55,7 @@ public class FacebookATAdapter extends CustomNativeAdapter {
             if (((ATBaseAdInternalAdapter) FacebookATAdapter.this).mLoadListener == null || ((ATBaseAdInternalAdapter) FacebookATAdapter.this).mLoadListener == null) {
                 return;
             }
-            ((ATBaseAdInternalAdapter) FacebookATAdapter.this).mLoadListener.onAdCacheLoaded(this.f23054a);
+            ((ATBaseAdInternalAdapter) FacebookATAdapter.this).mLoadListener.onAdCacheLoaded(this.f23841a);
         }
     }
 
@@ -71,7 +71,7 @@ public class FacebookATAdapter extends CustomNativeAdapter {
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
     public void getBidRequestInfo(Context context, Map<String, Object> map, Map<String, Object> map2, ATBidRequestInfoListener aTBidRequestInfoListener) {
         try {
-            this.f23050b = (String) map.get("unit_id");
+            this.f23837b = (String) map.get("unit_id");
         } catch (Throwable th) {
             th.printStackTrace();
         }
@@ -90,7 +90,7 @@ public class FacebookATAdapter extends CustomNativeAdapter {
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
     public String getNetworkPlacementId() {
-        return this.f23050b;
+        return this.f23837b;
     }
 
     @Override // com.anythink.core.api.IATBaseAdAdapter
@@ -104,18 +104,18 @@ public class FacebookATAdapter extends CustomNativeAdapter {
         char c9;
         try {
             if (map.containsKey("unit_id")) {
-                this.f23050b = map.get("unit_id").toString();
+                this.f23837b = map.get("unit_id").toString();
             }
             if (map.containsKey("unit_type")) {
-                this.f23051c = map.get("unit_type").toString();
+                this.f23838c = map.get("unit_type").toString();
             }
             if (map.containsKey("height")) {
-                this.f23052d = map.get("height").toString();
+                this.f23839d = map.get("height").toString();
             }
         } catch (Exception e9) {
             e9.printStackTrace();
         }
-        if (TextUtils.isEmpty(this.f23050b)) {
+        if (TextUtils.isEmpty(this.f23837b)) {
             ATCustomLoadListener aTCustomLoadListener = this.mLoadListener;
             if (aTCustomLoadListener != null) {
                 aTCustomLoadListener.onAdLoadError("", "facebook unitId is empty.");
@@ -125,25 +125,25 @@ public class FacebookATAdapter extends CustomNativeAdapter {
         }
         if (map != null) {
             try {
-                this.f23053e = Boolean.parseBoolean(map.get(CustomNativeAd.IS_AUTO_PLAY_KEY).toString());
+                this.f23840e = Boolean.parseBoolean(map.get(CustomNativeAd.IS_AUTO_PLAY_KEY).toString());
             } catch (Exception unused) {
             }
         }
         Context applicationContext = context.getApplicationContext();
         FacebookATInitManager.getInstance().initSDK(applicationContext, map);
         if (map.containsKey("payload")) {
-            this.f23049a = map.get("payload").toString();
+            this.f23836a = map.get("payload").toString();
         }
-        String str = this.f23051c;
+        String str = this.f23838c;
         switch (str.hashCode()) {
-            case j.f5816W /* 48 */:
+            case j.f6602W /* 48 */:
                 if (str.equals("0")) {
                     c9 = 3;
                     break;
                 }
                 c9 = 65535;
                 break;
-            case j.f5817X /* 49 */:
+            case j.f6603X /* 49 */:
                 if (str.equals("1")) {
                     c9 = 0;
                     break;
@@ -168,12 +168,12 @@ public class FacebookATAdapter extends CustomNativeAdapter {
                 c9 = 65535;
                 break;
         }
-        FacebookATBaseNativeAd facebookATNativeAd = c9 != 0 ? c9 != 1 ? c9 != 2 ? new FacebookATNativeAd(applicationContext, new NativeAd(applicationContext, this.f23050b)) : new FacebookATNativeBannerAd(applicationContext, new NativeBannerAd(applicationContext, this.f23050b)) : new FacebookATNativeExpressAd(applicationContext, new NativeAd(applicationContext, this.f23050b)) : new FacebookATNativeBannerExpressAd(applicationContext, new NativeBannerAd(applicationContext, this.f23050b), this.f23052d);
-        facebookATNativeAd.loadAd(this.f23049a, new AnonymousClass1(facebookATNativeAd));
+        FacebookATBaseNativeAd facebookATNativeAd = c9 != 0 ? c9 != 1 ? c9 != 2 ? new FacebookATNativeAd(applicationContext, new NativeAd(applicationContext, this.f23837b)) : new FacebookATNativeBannerAd(applicationContext, new NativeBannerAd(applicationContext, this.f23837b)) : new FacebookATNativeExpressAd(applicationContext, new NativeAd(applicationContext, this.f23837b)) : new FacebookATNativeBannerExpressAd(applicationContext, new NativeBannerAd(applicationContext, this.f23837b), this.f23839d);
+        facebookATNativeAd.loadAd(this.f23836a, new AnonymousClass1(facebookATNativeAd));
     }
 
     @Override // com.anythink.core.api.ATBaseAdAdapter, com.anythink.core.api.IATBaseAdAdapter
-    public boolean setUserDataConsent(Context context, boolean z3, boolean z6) {
+    public boolean setUserDataConsent(Context context, boolean z6, boolean z9) {
         return false;
     }
 
@@ -181,18 +181,18 @@ public class FacebookATAdapter extends CustomNativeAdapter {
     private void a(Context context, Map<String, Object> map) {
         char c9;
         if (map.containsKey("payload")) {
-            this.f23049a = map.get("payload").toString();
+            this.f23836a = map.get("payload").toString();
         }
-        String str = this.f23051c;
+        String str = this.f23838c;
         switch (str.hashCode()) {
-            case j.f5816W /* 48 */:
+            case j.f6602W /* 48 */:
                 if (str.equals("0")) {
                     c9 = 3;
                     break;
                 }
                 c9 = 65535;
                 break;
-            case j.f5817X /* 49 */:
+            case j.f6603X /* 49 */:
                 if (str.equals("1")) {
                     c9 = 0;
                     break;
@@ -217,7 +217,7 @@ public class FacebookATAdapter extends CustomNativeAdapter {
                 c9 = 65535;
                 break;
         }
-        FacebookATBaseNativeAd facebookATNativeAd = c9 != 0 ? c9 != 1 ? c9 != 2 ? new FacebookATNativeAd(context, new NativeAd(context, this.f23050b)) : new FacebookATNativeBannerAd(context, new NativeBannerAd(context, this.f23050b)) : new FacebookATNativeExpressAd(context, new NativeAd(context, this.f23050b)) : new FacebookATNativeBannerExpressAd(context, new NativeBannerAd(context, this.f23050b), this.f23052d);
-        facebookATNativeAd.loadAd(this.f23049a, new AnonymousClass1(facebookATNativeAd));
+        FacebookATBaseNativeAd facebookATNativeAd = c9 != 0 ? c9 != 1 ? c9 != 2 ? new FacebookATNativeAd(context, new NativeAd(context, this.f23837b)) : new FacebookATNativeBannerAd(context, new NativeBannerAd(context, this.f23837b)) : new FacebookATNativeExpressAd(context, new NativeAd(context, this.f23837b)) : new FacebookATNativeBannerExpressAd(context, new NativeBannerAd(context, this.f23837b), this.f23839d);
+        facebookATNativeAd.loadAd(this.f23836a, new AnonymousClass1(facebookATNativeAd));
     }
 }

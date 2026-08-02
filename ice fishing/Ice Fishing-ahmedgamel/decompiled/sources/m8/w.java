@@ -1,16 +1,19 @@
 package m8;
 
+import i8.C4603a;
+import v7.C5117h;
+
 /* loaded from: classes2.dex */
 public interface w {
-    w a();
+    boolean d(i8.n nVar);
 
-    r b();
+    C4603a f();
 
-    v c();
+    boolean i();
 
-    void cancel();
+    boolean k(q qVar);
 
-    v e();
+    C5117h o();
 
-    boolean isReady();
+    v q();
 }

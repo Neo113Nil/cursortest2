@@ -36,47 +36,47 @@ import java.util.concurrent.ConcurrentHashMap;
 public class b extends com.anythink.core.common.v.b implements j.b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f11687a = "b";
+    public static final String f12473a = "b";
 
     /* renamed from: d, reason: collision with root package name */
-    protected com.anythink.core.common.h f11690d;
+    protected com.anythink.core.common.h f12476d;
 
     /* renamed from: e, reason: collision with root package name */
-    protected long f11691e;
+    protected long f12477e;
 
     /* renamed from: g, reason: collision with root package name */
-    private String f11693g;
+    private String f12479g;
 
     /* renamed from: h, reason: collision with root package name */
-    private j.a f11694h;
+    private j.a f12480h;
     private String i;
 
     /* renamed from: j, reason: collision with root package name */
-    private long f11695j;
+    private long f12481j;
 
     /* renamed from: k, reason: collision with root package name */
-    private boolean f11696k;
+    private boolean f12482k;
 
     /* renamed from: l, reason: collision with root package name */
-    private com.anythink.core.common.h.a f11697l;
+    private com.anythink.core.common.h.a f12483l;
 
     /* renamed from: m, reason: collision with root package name */
-    private Map<Integer, d> f11698m;
+    private Map<Integer, d> f12484m;
 
     /* renamed from: n, reason: collision with root package name */
-    private long f11699n;
+    private long f12485n;
 
     /* renamed from: o, reason: collision with root package name */
-    private List<bv> f11700o;
+    private List<bv> f12486o;
 
     /* renamed from: q, reason: collision with root package name */
-    private com.anythink.core.common.t.b f11702q;
+    private com.anythink.core.common.t.b f12488q;
 
     /* renamed from: b, reason: collision with root package name */
-    Map<String, n> f11688b = new ConcurrentHashMap(3);
+    Map<String, n> f12474b = new ConcurrentHashMap(3);
 
     /* renamed from: c, reason: collision with root package name */
-    com.anythink.core.common.t.b f11689c = new com.anythink.core.common.t.b() { // from class: com.anythink.core.b.b.1
+    com.anythink.core.common.t.b f12475c = new com.anythink.core.common.t.b() { // from class: com.anythink.core.b.b.1
         @Override // java.lang.Runnable
         public final void run() {
             com.anythink.core.common.v.b.b.a().a(new Runnable() { // from class: com.anythink.core.b.b.1.1
@@ -89,10 +89,10 @@ public class b extends com.anythink.core.common.v.b implements j.b {
     };
 
     /* renamed from: p, reason: collision with root package name */
-    private boolean f11701p = false;
+    private boolean f12487p = false;
 
     /* renamed from: f, reason: collision with root package name */
-    h.b f11692f = new h.b() { // from class: com.anythink.core.b.b.3
+    h.b f12478f = new h.b() { // from class: com.anythink.core.b.b.3
         @Override // com.anythink.core.common.h.b
         public final void a(d dVar, int i) {
             b.a(b.this, dVar, i);
@@ -103,10 +103,10 @@ public class b extends com.anythink.core.common.v.b implements j.b {
     public class AnonymousClass4 implements com.anythink.core.b.b.b {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ int f11709a;
+        final /* synthetic */ int f12495a;
 
         public AnonymousClass4(int i) {
-            this.f11709a = i;
+            this.f12495a = i;
         }
 
         @Override // com.anythink.core.b.b.b
@@ -116,8 +116,8 @@ public class b extends com.anythink.core.common.v.b implements j.b {
 
         @Override // com.anythink.core.b.b.b
         public final void a(List<bv> list, List<bv> list2) {
-            b.this.b(Integer.valueOf(this.f11709a), list, list2);
-            com.anythink.core.common.h hVar = b.this.f11690d;
+            b.this.b(Integer.valueOf(this.f12495a), list, list2);
+            com.anythink.core.common.h hVar = b.this.f12476d;
             if (hVar != null) {
                 hVar.b();
             }
@@ -144,26 +144,26 @@ public class b extends com.anythink.core.common.v.b implements j.b {
     public class AnonymousClass7 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ bv f11714a;
+        final /* synthetic */ bv f12500a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ n f11715b;
+        final /* synthetic */ n f12501b;
 
         public AnonymousClass7(bv bvVar, n nVar) {
-            this.f11714a = bvVar;
-            this.f11715b = nVar;
+            this.f12500a = bvVar;
+            this.f12501b = nVar;
         }
 
         @Override // java.lang.Runnable
         public final void run() {
-            AdError errorCode = ErrorCode.getErrorCode(ErrorCode.adSourceBidError, "", this.f11714a.F());
-            if (b.this.f11697l.f13328c.f13548d != null) {
-                if (this.f11715b != null) {
-                    b.this.f11697l.f13328c.f13548d.onAdSourceBiddingFail(this.f11715b, errorCode);
+            AdError errorCode = ErrorCode.getErrorCode(ErrorCode.adSourceBidError, "", this.f12500a.F());
+            if (b.this.f12483l.f14114c.f14334d != null) {
+                if (this.f12501b != null) {
+                    b.this.f12483l.f14114c.f14334d.onAdSourceBiddingFail(this.f12501b, errorCode);
                 }
-                b.this.f11688b.remove(this.f11714a.z());
+                b.this.f12474b.remove(this.f12500a.z());
             }
-            b.this.a(this.f11715b, errorCode, a.b.f16985c, this.f11714a);
+            b.this.a(this.f12501b, errorCode, a.b.f17772c, this.f12500a);
         }
     }
 
@@ -171,42 +171,42 @@ public class b extends com.anythink.core.common.v.b implements j.b {
     public class AnonymousClass8 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ n f11717a;
+        final /* synthetic */ n f12503a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ bv f11718b;
+        final /* synthetic */ bv f12504b;
 
         public AnonymousClass8(n nVar, bv bvVar) {
-            this.f11717a = nVar;
-            this.f11718b = bvVar;
+            this.f12503a = nVar;
+            this.f12504b = bvVar;
         }
 
         @Override // java.lang.Runnable
         public final void run() {
-            if (b.this.f11697l.f13328c.f13548d != null) {
-                n nVar = this.f11717a;
+            if (b.this.f12483l.f14114c.f14334d != null) {
+                n nVar = this.f12503a;
                 if (nVar != null) {
-                    aj.a(nVar, this.f11718b, 0, false);
-                    b.this.f11697l.f13328c.f13548d.onAdSourceBiddingFilled(this.f11717a);
+                    aj.a(nVar, this.f12504b, 0, false);
+                    b.this.f12483l.f14114c.f14334d.onAdSourceBiddingFilled(this.f12503a);
                 }
-                b.this.f11688b.remove(this.f11718b.z());
+                b.this.f12474b.remove(this.f12504b.z());
             }
         }
     }
 
     public b(com.anythink.core.common.h.a aVar) {
-        this.f11697l = aVar;
-        this.f11693g = aVar.f13330e;
-        this.i = aVar.f13329d;
-        this.f11695j = aVar.f13332g;
-        this.f11690d = aVar.f13326F;
-        List<bv> list = aVar.f13334j;
+        this.f12483l = aVar;
+        this.f12479g = aVar.f14116e;
+        this.i = aVar.f14115d;
+        this.f12481j = aVar.f14118g;
+        this.f12476d = aVar.f14112F;
+        List<bv> list = aVar.f14120j;
         int size = list.size();
-        List<bv> a9 = aVar.f13349y.a();
+        List<bv> a9 = aVar.f14135y.a();
         if (a9.size() > 0) {
-            this.f11697l.f13350z = a9.size() + size;
+            this.f12483l.f14136z = a9.size() + size;
         } else {
-            this.f11697l.f13350z = size;
+            this.f12483l.f14136z = size;
         }
         ArrayList arrayList = new ArrayList();
         ArrayList arrayList2 = new ArrayList();
@@ -217,7 +217,7 @@ public class b extends com.anythink.core.common.v.b implements j.b {
         for (int i = 0; i < size; i++) {
             bv bvVar = list.get(i);
             if (bvVar.q() == 1 || bvVar.q() == 3) {
-                if (this.f11697l.f13325E == 1 && bvVar.q() == 3) {
+                if (this.f12483l.f14111E == 1 && bvVar.q() == 3) {
                     list2 = list2 == null ? new ArrayList<>() : list2;
                     list2.add(bvVar);
                 } else {
@@ -236,57 +236,57 @@ public class b extends com.anythink.core.common.v.b implements j.b {
                 arrayList2.add(bvVar);
             }
         }
-        this.f11698m = new HashMap(5);
+        this.f12484m = new HashMap(5);
         if (arrayList.size() > 0 || arrayList2.size() > 0) {
-            this.f11698m.put(1, new c(aVar.a(arrayList, arrayList2), list));
+            this.f12484m.put(1, new c(aVar.a(arrayList, arrayList2), list));
         }
         if (list2 != null && list2.size() > 0) {
-            this.f11698m.put(3, new c(aVar.a(list2, null), list));
+            this.f12484m.put(3, new c(aVar.a(list2, null), list));
         }
         if (list3 != null && list3.size() > 0) {
-            this.f11698m.put(2, new a(aVar.a(list3)));
+            this.f12484m.put(2, new a(aVar.a(list3)));
         }
         if (list4 != null && list4.size() > 0) {
-            this.f11698m.put(5, new h(aVar.b(list4)));
+            this.f12484m.put(5, new h(aVar.b(list4)));
         }
         if (list5 == null || list5.size() <= 0) {
             return;
         }
-        this.f11698m.put(6, new g(aVar.c(list5)));
+        this.f12484m.put(6, new g(aVar.c(list5)));
     }
 
     private void e() {
-        boolean z3 = this.f11697l.f13324D > 0;
-        this.f11701p = z3;
-        if (z3) {
-            this.f11700o = Collections.synchronizedList(new ArrayList());
-            this.f11702q = new AnonymousClass5();
-            com.anythink.core.common.t.d.a().a(this.f11702q, this.f11697l.f13324D, false);
+        boolean z6 = this.f12483l.f14110D > 0;
+        this.f12487p = z6;
+        if (z6) {
+            this.f12486o = Collections.synchronizedList(new ArrayList());
+            this.f12488q = new AnonymousClass5();
+            com.anythink.core.common.t.d.a().a(this.f12488q, this.f12483l.f14110D, false);
         }
     }
 
     private void b(long j6) {
-        com.anythink.core.common.h.a aVar = this.f11697l;
-        this.f11691e = aVar.i;
-        ar arVar = aVar.f13328c;
-        if (arVar.f13553j) {
-            int i = arVar.f13552h;
-            int bw = aVar.f13338n.a().bw();
+        com.anythink.core.common.h.a aVar = this.f12483l;
+        this.f12477e = aVar.i;
+        ar arVar = aVar.f14114c;
+        if (arVar.f14339j) {
+            int i = arVar.f14338h;
+            int bw = aVar.f14124n.a().bw();
             if (bw > 0 && i > bw) {
-                this.f11691e = i - bw;
+                this.f12477e = i - bw;
             }
         }
-        if (this.f11691e <= 0) {
-            this.f11691e = com.anythink.basead.exoplayer.i.a.f7883f;
+        if (this.f12477e <= 0) {
+            this.f12477e = com.anythink.basead.exoplayer.i.a.f8669f;
         }
-        this.f11691e += j6;
-        com.anythink.core.common.t.d.a().a(this.f11689c, this.f11691e, false);
+        this.f12477e += j6;
+        com.anythink.core.common.t.d.a().a(this.f12475c, this.f12477e, false);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public synchronized void c() {
         try {
-            j.a aVar = this.f11694h;
+            j.a aVar = this.f12480h;
             if (aVar != null) {
                 aVar.a(this.i);
             }
@@ -298,14 +298,14 @@ public class b extends com.anythink.core.common.v.b implements j.b {
     /* JADX INFO: Access modifiers changed from: private */
     public synchronized void d() {
         try {
-            if (this.f11701p) {
-                this.f11701p = false;
-                List<bv> list = this.f11700o;
+            if (this.f12487p) {
+                this.f12487p = false;
+                List<bv> list = this.f12486o;
                 if (list != null && list.size() != 0) {
-                    Objects.toString(this.f11700o);
-                    ArrayList arrayList = new ArrayList(this.f11700o);
-                    this.f11700o.clear();
-                    j.a aVar = this.f11694h;
+                    Objects.toString(this.f12486o);
+                    ArrayList arrayList = new ArrayList(this.f12486o);
+                    this.f12486o.clear();
+                    j.a aVar = this.f12480h;
                     if (aVar != null) {
                         aVar.a(this.i, arrayList, new ArrayList(1), false);
                     }
@@ -317,43 +317,43 @@ public class b extends com.anythink.core.common.v.b implements j.b {
     }
 
     @Override // com.anythink.core.common.j.b
-    public final void a(boolean z3) {
-        this.f11696k = z3;
+    public final void a(boolean z6) {
+        this.f12482k = z6;
     }
 
     @Override // com.anythink.core.common.j.b
     public final void a(j.a aVar) {
-        this.f11694h = aVar;
-        com.anythink.core.common.h hVar = this.f11690d;
+        this.f12480h = aVar;
+        com.anythink.core.common.h hVar = this.f12476d;
         long c9 = hVar == null ? 0L : hVar.c();
-        a(this.f11695j + c9);
-        com.anythink.core.common.h.a aVar2 = this.f11697l;
-        this.f11691e = aVar2.i;
-        ar arVar = aVar2.f13328c;
-        if (arVar.f13553j) {
-            int i = arVar.f13552h;
-            int bw = aVar2.f13338n.a().bw();
+        a(this.f12481j + c9);
+        com.anythink.core.common.h.a aVar2 = this.f12483l;
+        this.f12477e = aVar2.i;
+        ar arVar = aVar2.f14114c;
+        if (arVar.f14339j) {
+            int i = arVar.f14338h;
+            int bw = aVar2.f14124n.a().bw();
             if (bw > 0 && i > bw) {
-                this.f11691e = i - bw;
+                this.f12477e = i - bw;
             }
         }
-        if (this.f11691e <= 0) {
-            this.f11691e = com.anythink.basead.exoplayer.i.a.f7883f;
+        if (this.f12477e <= 0) {
+            this.f12477e = com.anythink.basead.exoplayer.i.a.f8669f;
         }
-        this.f11691e += c9;
-        com.anythink.core.common.t.d.a().a(this.f11689c, this.f11691e, false);
-        boolean z3 = this.f11697l.f13324D > 0;
-        this.f11701p = z3;
-        if (z3) {
-            this.f11700o = Collections.synchronizedList(new ArrayList());
-            this.f11702q = new AnonymousClass5();
-            com.anythink.core.common.t.d.a().a(this.f11702q, this.f11697l.f13324D, false);
+        this.f12477e += c9;
+        com.anythink.core.common.t.d.a().a(this.f12475c, this.f12477e, false);
+        boolean z6 = this.f12483l.f14110D > 0;
+        this.f12487p = z6;
+        if (z6) {
+            this.f12486o = Collections.synchronizedList(new ArrayList());
+            this.f12488q = new AnonymousClass5();
+            com.anythink.core.common.t.d.a().a(this.f12488q, this.f12483l.f14110D, false);
         }
-        this.f11699n = System.currentTimeMillis();
-        HashMap hashMap = new HashMap(this.f11698m);
-        com.anythink.core.common.h hVar2 = this.f11690d;
+        this.f12485n = System.currentTimeMillis();
+        HashMap hashMap = new HashMap(this.f12484m);
+        com.anythink.core.common.h hVar2 = this.f12476d;
         if (hVar2 != null) {
-            hVar2.a(this.f11692f);
+            hVar2.a(this.f12478f);
         }
         for (Map.Entry entry : hashMap.entrySet()) {
             final Integer num = (Integer) entry.getKey();
@@ -363,10 +363,10 @@ public class b extends com.anythink.core.common.v.b implements j.b {
                 public final void run() {
                     d dVar2 = dVar;
                     if (dVar2 != null) {
-                        dVar2.a(b.this.f11691e);
-                        dVar.a(b.this.f11696k);
+                        dVar2.a(b.this.f12477e);
+                        dVar.a(b.this.f12482k);
                         b bVar = b.this;
-                        com.anythink.core.common.h hVar3 = bVar.f11690d;
+                        com.anythink.core.common.h hVar3 = bVar.f12476d;
                         if (hVar3 == null) {
                             b.a(bVar, dVar, num.intValue());
                             return;
@@ -391,7 +391,7 @@ public class b extends com.anythink.core.common.v.b implements j.b {
     public final void b() {
         HashMap hashMap;
         synchronized (this) {
-            hashMap = new HashMap(this.f11698m);
+            hashMap = new HashMap(this.f12484m);
         }
         Iterator it = hashMap.entrySet().iterator();
         while (it.hasNext()) {
@@ -403,7 +403,7 @@ public class b extends com.anythink.core.common.v.b implements j.b {
     }
 
     private void b(bv bvVar) {
-        n nVar = this.f11688b.get(bvVar.z());
+        n nVar = this.f12474b.get(bvVar.z());
         if (nVar != null) {
             com.anythink.core.common.v.b.b.a().a(new AnonymousClass8(nVar, bvVar));
         }
@@ -415,24 +415,24 @@ public class b extends com.anythink.core.common.v.b implements j.b {
     }
 
     private boolean a(Integer num) {
-        d dVar = this.f11698m.get(num);
+        d dVar = this.f12484m.get(num);
         if (dVar != null && dVar.c()) {
-            this.f11698m.remove(num);
+            this.f12484m.remove(num);
         }
-        boolean z3 = false;
-        if (this.f11698m.size() == 0) {
+        boolean z6 = false;
+        if (this.f12484m.size() == 0) {
             a();
-            com.anythink.core.common.t.d.a().b(this.f11689c);
-            this.f11701p = false;
-            z3 = true;
-            if (this.f11702q != null) {
-                com.anythink.core.common.t.d.a().b(this.f11702q);
+            com.anythink.core.common.t.d.a().b(this.f12475c);
+            this.f12487p = false;
+            z6 = true;
+            if (this.f12488q != null) {
+                com.anythink.core.common.t.d.a().b(this.f12488q);
             }
         }
-        return z3;
+        return z6;
     }
 
-    private void a(String str, bv bvVar, boolean z3) {
+    private void a(String str, bv bvVar, boolean z6) {
         bv bvVar2;
         Throwable th;
         String str2;
@@ -468,7 +468,7 @@ public class b extends com.anythink.core.common.v.b implements j.b {
                             th = th2;
                             bvVar2 = bvVar;
                             th.printStackTrace();
-                            bvVar2.a(cVar.e().getUnitGroupInfo(), 1, bvVar2.t(), z3 ? 1 : 0);
+                            bvVar2.a(cVar.e().getUnitGroupInfo(), 1, bvVar2.t(), z6 ? 1 : 0);
                         }
                     } else {
                         str2 = "";
@@ -478,19 +478,19 @@ public class b extends com.anythink.core.common.v.b implements j.b {
                     } else {
                         bvVar2 = bvVar;
                         try {
-                            com.anythink.core.b.d.c.a(R8, new aw(2, bvVar2, this.f11697l.f13343s, a11), true, 26);
+                            com.anythink.core.b.d.c.a(R8, new aw(2, bvVar2, this.f12483l.f14129s, a11), true, 26);
                         } catch (Throwable th3) {
                             th = th3;
                             th = th;
                             th.printStackTrace();
-                            bvVar2.a(cVar.e().getUnitGroupInfo(), 1, bvVar2.t(), z3 ? 1 : 0);
+                            bvVar2.a(cVar.e().getUnitGroupInfo(), 1, bvVar2.t(), z6 ? 1 : 0);
                         }
                     }
                 } catch (Throwable th4) {
                     th = th4;
                     bvVar2 = bvVar;
                 }
-                bvVar2.a(cVar.e().getUnitGroupInfo(), 1, bvVar2.t(), z3 ? 1 : 0);
+                bvVar2.a(cVar.e().getUnitGroupInfo(), 1, bvVar2.t(), z6 ? 1 : 0);
             } catch (Exception unused) {
             }
         }
@@ -499,11 +499,11 @@ public class b extends com.anythink.core.common.v.b implements j.b {
     private void a(bv bvVar, ATBaseAdAdapter aTBaseAdAdapter) {
         n nVar;
         try {
-            nVar = this.f11697l.f13343s.af();
+            nVar = this.f12483l.f14129s.af();
             try {
                 aj.a(nVar, bvVar, 0, false);
                 nVar.m(ak.a(bvVar, (ATBaseAdAdapter) null));
-                this.f11688b.put(bvVar.z(), nVar);
+                this.f12474b.put(bvVar.z(), nVar);
             } catch (Throwable unused) {
             }
         } catch (Throwable unused2) {
@@ -511,20 +511,20 @@ public class b extends com.anythink.core.common.v.b implements j.b {
         }
         if (bvVar.q() != 7 && aTBaseAdAdapter != null) {
             try {
-                if (this.f11697l.f13328c.f13548d != null) {
+                if (this.f12483l.f14114c.f14334d != null) {
                     aj.a(nVar);
-                    this.f11697l.f13328c.f13548d.onAdSourceBiddingAttempt(nVar);
+                    this.f12483l.f14114c.f14334d.onAdSourceBiddingAttempt(nVar);
                 }
             } catch (Throwable th) {
                 th.printStackTrace();
             }
         }
-        a(nVar, (AdError) null, a.b.f16983a, bvVar);
+        a(nVar, (AdError) null, a.b.f17770a, bvVar);
         com.anythink.core.common.v.d.a().a(nVar, bvVar, 1);
     }
 
     private void a(bv bvVar) {
-        n nVar = this.f11688b.get(bvVar.z());
+        n nVar = this.f12474b.get(bvVar.z());
         if (nVar != null) {
             com.anythink.core.common.v.b.b.a().a(new AnonymousClass7(bvVar, nVar));
         }
@@ -551,33 +551,33 @@ public class b extends com.anythink.core.common.v.b implements j.b {
             dVar.a(a9);
         }
         bvVar.z();
-        com.anythink.core.common.h.a aVar = this.f11697l;
-        Context g4 = aVar != null ? aVar.f13327b : t.b().g();
+        com.anythink.core.common.h.a aVar = this.f12483l;
+        Context g9 = aVar != null ? aVar.f14113b : t.b().g();
         com.anythink.core.a.c.a();
-        if (i == a.b.f16983a) {
-            com.anythink.core.a.c.a(g4, bvVar, nVar.aI());
-        } else if (i == a.b.f16985c) {
-            com.anythink.core.a.c.b(g4, bvVar, nVar.aI());
+        if (i == a.b.f17770a) {
+            com.anythink.core.a.c.a(g9, bvVar, nVar.aI());
+        } else if (i == a.b.f17772c) {
+            com.anythink.core.a.c.b(g9, bvVar, nVar.aI());
         }
     }
 
     private synchronized void a(Integer num, List<bv> list, List<bv> list2) {
-        boolean z3;
+        boolean z6;
         try {
-            d dVar = this.f11698m.get(num);
+            d dVar = this.f12484m.get(num);
             if (dVar != null && dVar.c()) {
-                this.f11698m.remove(num);
+                this.f12484m.remove(num);
             }
-            if (this.f11698m.size() == 0) {
+            if (this.f12484m.size() == 0) {
                 a();
-                com.anythink.core.common.t.d.a().b(this.f11689c);
-                this.f11701p = false;
-                if (this.f11702q != null) {
-                    com.anythink.core.common.t.d.a().b(this.f11702q);
+                com.anythink.core.common.t.d.a().b(this.f12475c);
+                this.f12487p = false;
+                if (this.f12488q != null) {
+                    com.anythink.core.common.t.d.a().b(this.f12488q);
                 }
-                z3 = true;
+                z6 = true;
             } else {
-                z3 = false;
+                z6 = false;
             }
             int size = list != null ? list.size() : 0;
             int size2 = list2 != null ? list2.size() : 0;
@@ -588,10 +588,10 @@ public class b extends com.anythink.core.common.v.b implements j.b {
                 if (size > 0) {
                     for (int i = 0; i < size; i++) {
                         bv bvVar = list.get(i);
-                        a(this.f11693g, bvVar, true);
+                        a(this.f12479g, bvVar, true);
                         arrayList.add(bvVar);
                         arrayList3.add(bvVar);
-                        n nVar = this.f11688b.get(bvVar.z());
+                        n nVar = this.f12474b.get(bvVar.z());
                         if (nVar != null) {
                             com.anythink.core.common.v.b.b.a().a(new AnonymousClass8(nVar, bvVar));
                         }
@@ -600,35 +600,35 @@ public class b extends com.anythink.core.common.v.b implements j.b {
                     list.clear();
                 }
                 if (size2 > 0) {
-                    for (int i6 = 0; i6 < size2; i6++) {
-                        bv bvVar2 = list2.get(i6);
+                    for (int i4 = 0; i4 < size2; i4++) {
+                        bv bvVar2 = list2.get(i4);
                         if (bvVar2 == null) {
                             try {
                                 com.anythink.core.common.u.e.b("Bid Fail AdSource Object is null, currentSize:" + list2.size() + "\n" + q.a(new Throwable().getStackTrace()), "Bidding inner error", t.b().r());
                             } catch (Throwable unused) {
                             }
                         }
-                        a(this.f11693g, bvVar2, false);
+                        a(this.f12479g, bvVar2, false);
                         if (p.a(bvVar2) > 0.0d && !TextUtils.isEmpty(bvVar2.E())) {
                             arrayList.add(bvVar2);
                         } else {
                             arrayList2.add(bvVar2);
                         }
                         arrayList3.add(bvVar2);
-                        n nVar2 = this.f11688b.get(bvVar2.z());
+                        n nVar2 = this.f12474b.get(bvVar2.z());
                         if (nVar2 != null) {
                             com.anythink.core.common.v.b.b.a().a(new AnonymousClass7(bvVar2, nVar2));
                         }
                     }
                     list2.clear();
                 }
-                n af = this.f11697l.f13343s.af();
-                long j6 = this.f11699n;
-                com.anythink.core.common.h.a aVar = this.f11697l;
-                com.anythink.core.b.d.c.a(af, arrayList3, j6, aVar.f13344t, aVar.f13331f);
-                if (this.f11701p) {
+                n af = this.f12483l.f14129s.af();
+                long j6 = this.f12485n;
+                com.anythink.core.common.h.a aVar = this.f12483l;
+                com.anythink.core.b.d.c.a(af, arrayList3, j6, aVar.f14130t, aVar.f14117f);
+                if (this.f12487p) {
                     if (arrayList.size() > 0) {
-                        List<bv> list3 = this.f11700o;
+                        List<bv> list3 = this.f12486o;
                         if (list3 != null) {
                             list3.addAll(arrayList);
                         }
@@ -639,13 +639,13 @@ public class b extends com.anythink.core.common.v.b implements j.b {
                         return;
                     }
                 }
-                if (z3) {
-                    List<bv> list4 = this.f11700o;
+                if (z6) {
+                    List<bv> list4 = this.f12486o;
                     if (list4 != null && list4.size() > 0) {
-                        arrayList.addAll(0, this.f11700o);
-                        this.f11700o.clear();
+                        arrayList.addAll(0, this.f12486o);
+                        this.f12486o.clear();
                     }
-                    com.anythink.core.common.h hVar = this.f11690d;
+                    com.anythink.core.common.h hVar = this.f12476d;
                     if (hVar != null) {
                         hVar.a();
                     }
@@ -662,12 +662,12 @@ public class b extends com.anythink.core.common.v.b implements j.b {
                         }
                     });
                 }
-                j.a aVar2 = this.f11694h;
+                j.a aVar2 = this.f12480h;
                 if (aVar2 != null) {
-                    aVar2.a(this.i, arrayList, arrayList2, z3);
+                    aVar2.a(this.i, arrayList, arrayList2, z6);
                 }
-                if (z3) {
-                    this.f11694h = null;
+                if (z6) {
+                    this.f12480h = null;
                 }
             }
         } finally {
@@ -681,11 +681,11 @@ public class b extends com.anythink.core.common.v.b implements j.b {
     public static /* synthetic */ void a(b bVar, bv bvVar, ATBaseAdAdapter aTBaseAdAdapter) {
         n nVar;
         try {
-            nVar = bVar.f11697l.f13343s.af();
+            nVar = bVar.f12483l.f14129s.af();
             try {
                 aj.a(nVar, bvVar, 0, false);
                 nVar.m(ak.a(bvVar, (ATBaseAdAdapter) null));
-                bVar.f11688b.put(bvVar.z(), nVar);
+                bVar.f12474b.put(bvVar.z(), nVar);
             } catch (Throwable unused) {
             }
         } catch (Throwable unused2) {
@@ -693,15 +693,15 @@ public class b extends com.anythink.core.common.v.b implements j.b {
         }
         if (bvVar.q() != 7 && aTBaseAdAdapter != null) {
             try {
-                if (bVar.f11697l.f13328c.f13548d != null) {
+                if (bVar.f12483l.f14114c.f14334d != null) {
                     aj.a(nVar);
-                    bVar.f11697l.f13328c.f13548d.onAdSourceBiddingAttempt(nVar);
+                    bVar.f12483l.f14114c.f14334d.onAdSourceBiddingAttempt(nVar);
                 }
             } catch (Throwable th) {
                 th.printStackTrace();
             }
         }
-        bVar.a(nVar, (AdError) null, a.b.f16983a, bvVar);
+        bVar.a(nVar, (AdError) null, a.b.f17770a, bvVar);
         com.anythink.core.common.v.d.a().a(nVar, bvVar, 1);
     }
 }

@@ -8,18 +8,18 @@ import java.util.Objects;
 public final class K implements Spatializer$OnSpatializerStateChangedListener {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ Runnable f25815a;
+    public final /* synthetic */ Runnable f26567a;
 
-    public K(M m4, Runnable runnable) {
-        this.f25815a = runnable;
-        Objects.requireNonNull(m4);
+    public K(M m9, Runnable runnable) {
+        this.f26567a = runnable;
+        Objects.requireNonNull(m9);
     }
 
-    public final void onSpatializerAvailableChanged(Spatializer spatializer, boolean z3) {
-        this.f25815a.run();
+    public final void onSpatializerAvailableChanged(Spatializer spatializer, boolean z6) {
+        this.f26567a.run();
     }
 
-    public final void onSpatializerEnabledChanged(Spatializer spatializer, boolean z3) {
-        this.f25815a.run();
+    public final void onSpatializerEnabledChanged(Spatializer spatializer, boolean z6) {
+        this.f26567a.run();
     }
 }

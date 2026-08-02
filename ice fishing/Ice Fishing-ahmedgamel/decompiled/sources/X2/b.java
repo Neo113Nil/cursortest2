@@ -1,42 +1,39 @@
 package X2;
 
-import q2.f1;
+import A1.C0266h;
+import android.content.Context;
 
 /* loaded from: classes.dex */
 public final class b {
 
-    /* renamed from: a, reason: collision with root package name */
-    public int f3771a;
-
     /* renamed from: b, reason: collision with root package name */
-    public int f3772b;
+    public static final b f3762b;
 
-    /* renamed from: c, reason: collision with root package name */
-    public int f3773c;
+    /* renamed from: a, reason: collision with root package name */
+    public C0266h f3763a;
 
-    public b() {
-        this.f3771a = 0;
-        this.f3772b = 0;
-        this.f3773c = 0;
+    static {
+        b bVar = new b();
+        bVar.f3763a = null;
+        f3762b = bVar;
     }
 
-    public static b a(f1 f1Var) {
-        return f1Var.f40145w ? new b(3, 0, 0) : f1Var.f40134B ? new b(2, 0, 0) : f1Var.f40133A ? new b(0, 0, 0) : new b(1, f1Var.f40147y, f1Var.f40144v);
-    }
-
-    public boolean b() {
-        return this.f3771a == 3;
-    }
-
-    public b(int i, int i6, int i9) {
-        this.f3771a = i;
-        this.f3773c = i6;
-        this.f3772b = i9;
-    }
-
-    public /* synthetic */ b(int i, int i6, int i9, boolean z3) {
-        this.f3771a = i;
-        this.f3772b = i6;
-        this.f3773c = i9;
+    public static C0266h a(Context context) {
+        C0266h c0266h;
+        b bVar = f3762b;
+        synchronized (bVar) {
+            try {
+                if (bVar.f3763a == null) {
+                    if (context.getApplicationContext() != null) {
+                        context = context.getApplicationContext();
+                    }
+                    bVar.f3763a = new C0266h(context, 2);
+                }
+                c0266h = bVar.f3763a;
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+        return c0266h;
     }
 }

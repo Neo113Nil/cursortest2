@@ -10,11 +10,11 @@ public abstract class c {
         return identityVerificationService.getNewCodePathsRun() ? resolveIvBackendParams(op, onesignalId, jwtTokenStore, identityVerificationService.getIvBehaviorActive()) : f.Companion.legacyFor(onesignalId);
     }
 
-    public static final f resolveIvBackendParams(H4.g op, String onesignalId, com.onesignal.user.internal.jwt.c jwtTokenStore, boolean z3) {
+    public static final f resolveIvBackendParams(H4.g op, String onesignalId, com.onesignal.user.internal.jwt.c jwtTokenStore, boolean z6) {
         kotlin.jvm.internal.h.e(op, "op");
         kotlin.jvm.internal.h.e(onesignalId, "onesignalId");
         kotlin.jvm.internal.h.e(jwtTokenStore, "jwtTokenStore");
-        if (!z3) {
+        if (!z6) {
             return f.Companion.legacyFor(onesignalId);
         }
         String externalId = op.getExternalId();
@@ -25,11 +25,11 @@ public abstract class c {
         return f.Companion.legacyFor(onesignalId);
     }
 
-    public static final String resolveIvJwt(H4.g op, com.onesignal.user.internal.jwt.c jwtTokenStore, boolean z3) {
+    public static final String resolveIvJwt(H4.g op, com.onesignal.user.internal.jwt.c jwtTokenStore, boolean z6) {
         String externalId;
         kotlin.jvm.internal.h.e(op, "op");
         kotlin.jvm.internal.h.e(jwtTokenStore, "jwtTokenStore");
-        if (z3 && (externalId = op.getExternalId()) != null) {
+        if (z6 && (externalId = op.getExternalId()) != null) {
             return jwtTokenStore.getJwt(externalId);
         }
         return null;
@@ -45,7 +45,7 @@ public abstract class c {
         return null;
     }
 
-    public static final boolean shouldFailLoginUserFromSubscription(boolean z3) {
-        return z3;
+    public static final boolean shouldFailLoginUserFromSubscription(boolean z6) {
+        return z6;
     }
 }

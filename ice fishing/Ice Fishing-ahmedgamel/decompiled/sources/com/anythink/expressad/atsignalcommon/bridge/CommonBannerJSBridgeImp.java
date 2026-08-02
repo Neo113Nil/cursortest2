@@ -19,7 +19,7 @@ import org.json.JSONObject;
 public abstract class CommonBannerJSBridgeImp implements IBannerJSBridge {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f17947a = "CommonBannerJSBridgeImp";
+    public static final String f18734a = "CommonBannerJSBridgeImp";
 
     @Override // com.anythink.expressad.atsignalcommon.bridge.IBannerJSBridge
     public void cai(Object obj, String str) {
@@ -39,7 +39,7 @@ public abstract class CommonBannerJSBridgeImp implements IBannerJSBridge {
                 int i = v.a(t.b().g(), optString) ? 1 : 2;
                 try {
                     JSONObject jSONObject = new JSONObject();
-                    jSONObject.put("code", CommonJSBridgeImpUtils.f17949b);
+                    jSONObject.put("code", CommonJSBridgeImpUtils.f18736b);
                     JSONObject jSONObject2 = new JSONObject();
                     jSONObject2.put("result", i);
                     jSONObject.put("data", jSONObject2);
@@ -71,26 +71,26 @@ public abstract class CommonBannerJSBridgeImp implements IBannerJSBridge {
             CommonJSBridgeImpUtils.callbackExcep(obj, "params is null");
             return;
         }
-        Context g4 = t.b().g();
+        Context g9 = t.b().g();
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        if (g4 == null) {
+        if (g9 == null) {
             try {
-                if ((obj instanceof b) && (windVaneWebView = ((b) obj).f18062a) != null) {
-                    g4 = windVaneWebView.getContext();
+                if ((obj instanceof b) && (windVaneWebView = ((b) obj).f18849a) != null) {
+                    g9 = windVaneWebView.getContext();
                 }
             } catch (Exception e9) {
                 e9.getMessage();
             }
         }
-        if (g4 == null) {
+        if (g9 == null) {
             h.a().a(obj, CommonJSBridgeImpUtils.codeToJsonString(1));
             return;
         }
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put(NativeAdvancedJsUtils.f17903m, n.b());
+            jSONObject.put(NativeAdvancedJsUtils.f18690m, n.b());
             String jSONObject2 = jSONObject.toString();
             if (!TextUtils.isEmpty(jSONObject2)) {
                 jSONObject2 = Base64.encodeToString(jSONObject2.getBytes(), 2);
@@ -106,7 +106,7 @@ public abstract class CommonBannerJSBridgeImp implements IBannerJSBridge {
     public void gial(Object obj, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", CommonJSBridgeImpUtils.f17949b);
+            jSONObject.put("code", CommonJSBridgeImpUtils.f18736b);
             jSONObject.put("data", new JSONObject());
             h.a().a(obj, Base64.encodeToString(jSONObject.toString().getBytes(), 2));
         } catch (Exception e9) {
@@ -150,7 +150,7 @@ public abstract class CommonBannerJSBridgeImp implements IBannerJSBridge {
         try {
             if (obj instanceof b) {
                 h.a();
-                a.a(((b) obj).f18062a);
+                a.a(((b) obj).f18849a);
             }
         } catch (Throwable unused) {
         }
@@ -163,20 +163,20 @@ public abstract class CommonBannerJSBridgeImp implements IBannerJSBridge {
             CommonJSBridgeImpUtils.callbackExcep(obj, "params is null");
             return;
         }
-        Context g4 = t.b().g();
+        Context g9 = t.b().g();
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        if (g4 == null) {
+        if (g9 == null) {
             try {
-                if ((obj instanceof b) && (windVaneWebView = ((b) obj).f18062a) != null) {
-                    g4 = windVaneWebView.getContext();
+                if ((obj instanceof b) && (windVaneWebView = ((b) obj).f18849a) != null) {
+                    g9 = windVaneWebView.getContext();
                 }
             } catch (Exception e9) {
                 e9.getMessage();
             }
         }
-        if (g4 == null) {
+        if (g9 == null) {
             return;
         }
         try {
@@ -186,7 +186,7 @@ public abstract class CommonBannerJSBridgeImp implements IBannerJSBridge {
             if (optInt == 1) {
                 y.a(optString);
             } else if (optInt == 2) {
-                y.a(g4, optString);
+                y.a(g9, optString);
             }
         } catch (JSONException e10) {
             e10.getMessage();

@@ -14,27 +14,27 @@ public abstract class P5 {
     }
 
     public static int A01(int i) {
-        int i6 = 4;
+        int i4 = 4;
         while (A00[5].length() == 20) {
             A00[5] = "sf2HjvEbKVwFe9jamb5q";
-            if (i6 >= 32) {
+            if (i4 >= 32) {
                 return i;
             }
-            int i9 = 1 << i6;
-            if (i <= i9 - 12) {
-                int i10 = (1 << i6) - 12;
-                return i10;
+            int i6 = 1 << i4;
+            if (i <= i6 - 12) {
+                int i9 = (1 << i4) - 12;
+                return i9;
             }
-            i6++;
+            i4++;
         }
         throw new RuntimeException();
     }
 
-    public static int A02(int[] iArr, int i, int i6) {
+    public static int A02(int[] iArr, int i, int i4) {
         int midVal = 0;
-        int i9 = i - 1;
-        while (midVal <= i9) {
-            int i10 = midVal + i9;
+        int i6 = i - 1;
+        while (midVal <= i6) {
+            int i9 = midVal + i6;
             String[] strArr = A00;
             String str = strArr[1];
             String str2 = strArr[2];
@@ -44,12 +44,12 @@ public abstract class P5 {
                 throw new RuntimeException();
             }
             A00[3] = "GyF3CdngjgIBS8WP";
-            int hi2 = i10 >>> 1;
+            int hi2 = i9 >>> 1;
             int lo2 = iArr[hi2];
-            if (lo2 < i6) {
+            if (lo2 < i4) {
                 midVal = hi2 + 1;
-            } else if (lo2 > i6) {
-                i9 = hi2 - 1;
+            } else if (lo2 > i4) {
+                i6 = hi2 - 1;
             } else {
                 return hi2;
             }
@@ -59,14 +59,14 @@ public abstract class P5 {
     }
 
     public static int A03(long[] jArr, int i, long j6) {
-        int i6 = 0;
-        int i9 = i - 1;
-        while (i6 <= i9) {
-            int lo = i6 + i9;
-            int i10 = lo >>> 1;
-            long j9 = jArr[i10];
+        int i4 = 0;
+        int i6 = i - 1;
+        while (i4 <= i6) {
+            int lo = i4 + i6;
+            int i9 = lo >>> 1;
+            long j9 = jArr[i9];
             if (j9 < j6) {
-                i6 = i10 + 1;
+                i4 = i9 + 1;
             } else {
                 String[] strArr = A00;
                 String str = strArr[4];
@@ -80,13 +80,13 @@ public abstract class P5 {
                 strArr2[4] = "jlrm";
                 strArr2[6] = "MXd0";
                 if (j9 > j6) {
-                    i9 = i10 - 1;
+                    i6 = i9 - 1;
                 } else {
-                    return i10;
+                    return i9;
                 }
             }
         }
-        int lo3 = ~i6;
+        int lo3 = ~i4;
         return lo3;
     }
 

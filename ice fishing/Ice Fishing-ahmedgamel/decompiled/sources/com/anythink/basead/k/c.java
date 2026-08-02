@@ -10,15 +10,15 @@ import com.iab.omid.library.toponad.Omid;
 public class c implements com.anythink.basead.j.c {
 
     /* renamed from: b, reason: collision with root package name */
-    private final String f9130b = "c";
+    private final String f9916b = "c";
 
     /* renamed from: a, reason: collision with root package name */
-    boolean f9129a = false;
+    boolean f9915a = false;
 
     @Override // com.anythink.basead.j.c
-    public final com.anythink.basead.j.b a(Context context, boolean z3, w wVar, x xVar) {
+    public final com.anythink.basead.j.b a(Context context, boolean z6, w wVar, x xVar) {
         if (a()) {
-            return e.a(context, z3, wVar, xVar);
+            return e.a(context, z6, wVar, xVar);
         }
         return null;
     }
@@ -47,12 +47,12 @@ public class c implements com.anythink.basead.j.c {
 
     @Override // com.anythink.basead.j.c
     public final boolean a() {
-        if (this.f9129a) {
+        if (this.f9915a) {
             return true;
         }
         try {
             Omid.getVersion();
-            this.f9129a = true;
+            this.f9915a = true;
             return true;
         } catch (Throwable th) {
             th.getMessage();

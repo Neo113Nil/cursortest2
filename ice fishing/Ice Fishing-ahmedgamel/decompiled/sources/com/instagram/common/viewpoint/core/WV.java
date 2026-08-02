@@ -13,19 +13,19 @@ public final class WV implements V8 {
     public static byte[] A02;
     public static String[] A03 = {"PqRb8CfCWHA5EhrxcZ9mRPllTh3oOSUW", "Zl9oGp2Iez0jLvuEYbnxsntptMxGBM4l", "l9LBk", "jZa6p3ci91eTCo5R2EOP7xEtghieA3uB", "FSDG0GiI6cZANIzlwvsJdjGaYqMqroq5", "1sDItVUeKrx9RbYz", "1qorAXgeX39shBtffGMCszMJDt6RFPN7", "u6hSYDgbJvcFisLakSyhfwTjAFON3iEs"};
     public static final String A04;
-    public C1836ge A00;
+    public C1856ge A00;
     public ZH A01;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 3);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 3);
         }
         return new String(copyOfRange);
     }
 
     public static void A05() {
-        A02 = new byte[]{85, -101, -92, -89, 85, -102, -85, -102, -93, -87, 126, -103, 85, -127, -44, -42, -60, -60, -58, -44, -44, -57, -42, -51, -51, -38, -113, 97, -123, -90, -83, -90, -75, -90, -91, 97, -90, -73, -90, -81, -75, -76, 97, -90, -71, -92, -90, -90, -91, -90, -91, 97, -77, -90, -75, -77, -70, 97, -83, -86, -82, -86, -75, 111, 97, -124, -80, -74, -81, -75, 123, 97, -80, -31, -48, -39, -33, -117, -33, -28, -37, -48, -117, -37, -35, -38, -50, -48, -34, -34, -48, -49, -117, -51, -28, -117, -33, -45, -48, -117, -34, -48, -35, -31, -48, -35, -91, -117, -81, -54, -46, -43, -50, -51, -119, -35, -40, -119, -39, -54, -37, -36, -50, -119, -54, -41, -119, -50, -33, -50, -41, -35, -119, -46, -41, -119, -50, -33, -50, -41, -35, -36, -119, -54, -37, -37, -54, -30, -119, -49, -40, -37, -119, -51, -46, -36, -39, -54, -35, -52, -47, -119, -49, -54, -46, -43, -34, -37, -50, -105, -102, -84, -71, -67, -84, -71, 103, -73, -71, -74, -86, -84, -70, -70, -84, -85, 103, -84, -67, -84, -75, -69, -112, -85, 103, -67, -49, -36, -32, -49, -36, -118, -36, -49, -34, -33, -36, -40, -49, -50, -118, -40, -39, -40, -105, -36, -49, -34, -36, -29, -53, -52, -42, -49, -118, -49, -36, -36, -39, -36, -118, -51, -39, -50, -49, -118, -101, -83, -70, -66, -83, -70, 104, -70, -83, -68, -67, -70, -74, -83, -84, 104, -70, -83, -68, -70, -63, -87, -86, -76, -83, 104, -83, -70, -70, -73, -70, 104, -85, -73, -84, -83, 104, -61, -36, -49, -48, -38, -45, -114, -30, -35, -114, -34, -49, -32, -31, -45, -114, -46, -45, -48, -29, -43, -70, -35, -43, -77, -28, -45, -36, -30, -114, -49, -30, -114, -82, -57, -70, -69, -59, -66, 121, -51, -56, 121, -55, -70, -53, -52, -66, 121, -66, -49, -66, -57, -51, 121, -70, -51, 121, 102, Byte.MAX_VALUE, 114, 115, 125, 118, 49, -123, c.f16316a, 49, -127, 114, -125, -124, 118, 49, -124, 118, -125, -121, 118, -125, 49, -125, 118, -124, -127, c.f16316a, Byte.MAX_VALUE, -124, 118, 49, 114, -123, 49, -127, c.f16316a, -124, 122, -123, 122, c.f16316a, Byte.MAX_VALUE, 49, -34, -22, -33, -32, -116, -119, -100, -119, -118, -119, -101, -115, -105, -88, -105, -96, -90, -91, -112, -113, -117, -98, -97, -100, -113, 87, -115, -103, -104, -112, -109, -111, 87, -113, -96, -113, -104, -98, 87, -105, -117, -111, -109, -115, 121, 120, 116, -121, -120, -123, 120, 114, 118, -126, -127, 121, 124, 122, 123, 118, -82, -93, -89, -97, 121, 116, 112, 106, 115, 120};
+        A02 = new byte[]{85, -101, -92, -89, 85, -102, -85, -102, -93, -87, 126, -103, 85, -127, -44, -42, -60, -60, -58, -44, -44, -57, -42, -51, -51, -38, -113, 97, -123, -90, -83, -90, -75, -90, -91, 97, -90, -73, -90, -81, -75, -76, 97, -90, -71, -92, -90, -90, -91, -90, -91, 97, -77, -90, -75, -77, -70, 97, -83, -86, -82, -86, -75, 111, 97, -124, -80, -74, -81, -75, 123, 97, -80, -31, -48, -39, -33, -117, -33, -28, -37, -48, -117, -37, -35, -38, -50, -48, -34, -34, -48, -49, -117, -51, -28, -117, -33, -45, -48, -117, -34, -48, -35, -31, -48, -35, -91, -117, -81, -54, -46, -43, -50, -51, -119, -35, -40, -119, -39, -54, -37, -36, -50, -119, -54, -41, -119, -50, -33, -50, -41, -35, -119, -46, -41, -119, -50, -33, -50, -41, -35, -36, -119, -54, -37, -37, -54, -30, -119, -49, -40, -37, -119, -51, -46, -36, -39, -54, -35, -52, -47, -119, -49, -54, -46, -43, -34, -37, -50, -105, -102, -84, -71, -67, -84, -71, 103, -73, -71, -74, -86, -84, -70, -70, -84, -85, 103, -84, -67, -84, -75, -69, -112, -85, 103, -67, -49, -36, -32, -49, -36, -118, -36, -49, -34, -33, -36, -40, -49, -50, -118, -40, -39, -40, -105, -36, -49, -34, -36, -29, -53, -52, -42, -49, -118, -49, -36, -36, -39, -36, -118, -51, -39, -50, -49, -118, -101, -83, -70, -66, -83, -70, 104, -70, -83, -68, -67, -70, -74, -83, -84, 104, -70, -83, -68, -70, -63, -87, -86, -76, -83, 104, -83, -70, -70, -73, -70, 104, -85, -73, -84, -83, 104, -61, -36, -49, -48, -38, -45, -114, -30, -35, -114, -34, -49, -32, -31, -45, -114, -46, -45, -48, -29, -43, -70, -35, -43, -77, -28, -45, -36, -30, -114, -49, -30, -114, -82, -57, -70, -69, -59, -66, 121, -51, -56, 121, -55, -70, -53, -52, -66, 121, -66, -49, -66, -57, -51, 121, -70, -51, 121, 102, Byte.MAX_VALUE, 114, 115, 125, 118, 49, -123, c.f17103a, 49, -127, 114, -125, -124, 118, 49, -124, 118, -125, -121, 118, -125, 49, -125, 118, -124, -127, c.f17103a, Byte.MAX_VALUE, -124, 118, 49, 114, -123, 49, -127, c.f17103a, -124, 122, -123, 122, c.f17103a, Byte.MAX_VALUE, 49, -34, -22, -33, -32, -116, -119, -100, -119, -118, -119, -101, -115, -105, -88, -105, -96, -90, -91, -112, -113, -117, -98, -97, -100, -113, 87, -115, -103, -104, -112, -109, -111, 87, -113, -96, -113, -104, -98, 87, -105, -117, -111, -109, -115, 121, 120, 116, -121, -120, -123, 120, 114, 118, -126, -127, 121, 124, 122, 123, 118, -82, -93, -89, -97, 121, 116, 112, 106, 115, 120};
     }
 
     static {
@@ -33,12 +33,12 @@ public final class WV implements V8 {
         A04 = WV.class.getSimpleName();
     }
 
-    public WV(C1836ge c1836ge, ZH zh) {
-        this.A00 = c1836ge;
+    public WV(C1856ge c1856ge, ZH zh) {
+        this.A00 = c1856ge;
         this.A01 = zh;
     }
 
-    public static JSONArray A01(C1836ge c1836ge, JSONArray jSONArray, JSONArray jSONArray2) {
+    public static JSONArray A01(C1856ge c1856ge, JSONArray jSONArray, JSONArray jSONArray2) {
         int i = 0;
         if (jSONArray != null) {
             int limit = jSONArray.length();
@@ -48,7 +48,7 @@ public final class WV implements V8 {
             int limit2 = jSONArray2.length();
             i += limit2;
         }
-        return A02(c1836ge, jSONArray, jSONArray2, i);
+        return A02(c1856ge, jSONArray, jSONArray2, i);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x00fa, code lost:
@@ -78,7 +78,7 @@ public final class WV implements V8 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static JSONArray A02(C1836ge c1836ge, JSONArray jSONArray, JSONArray jSONArray2, int i) {
+    public static JSONArray A02(C1856ge c1856ge, JSONArray jSONArray, JSONArray jSONArray2, int i) {
         if (jSONArray == null) {
             return jSONArray2;
         }
@@ -89,34 +89,34 @@ public final class WV implements V8 {
         int eventsIdx = jSONArray2.length();
         JSONArray jSONArray3 = new JSONArray();
         int limit = 0;
-        int i6 = 0;
+        int i4 = 0;
         JSONObject jSONObject = null;
         JSONObject jSONObject2 = null;
-        double d2 = Double.MAX_VALUE;
         double d9 = Double.MAX_VALUE;
+        double d10 = Double.MAX_VALUE;
         while (true) {
-            if ((limit < length || i6 < eventsIdx) && i > 0) {
+            if ((limit < length || i4 < eventsIdx) && i > 0) {
                 String A00 = A00(435, 4, 55);
                 if (limit < length && jSONObject == null) {
                     try {
                         jSONObject = jSONArray.getJSONObject(limit);
-                        d2 = jSONObject.getDouble(A00);
+                        d9 = jSONObject.getDouble(A00);
                     } catch (JSONException e9) {
-                        if (c1836ge.A05().AAO()) {
+                        if (c1856ge.A05().AAO()) {
                             Log.e(A04, A00(273, 33, 107) + limit, e9);
                         }
                         jSONObject = null;
-                        d2 = Double.MAX_VALUE;
+                        d9 = Double.MAX_VALUE;
                     }
                     limit++;
                 }
-                if (i6 < eventsIdx && jSONObject2 == null) {
+                if (i4 < eventsIdx && jSONObject2 == null) {
                     try {
-                        jSONObject2 = jSONArray2.getJSONObject(i6);
-                        d9 = jSONObject2.getDouble(A00);
+                        jSONObject2 = jSONArray2.getJSONObject(i4);
+                        d10 = jSONObject2.getDouble(A00);
                     } catch (JSONException e10) {
-                        if (c1836ge.A05().AAO()) {
-                            Log.e(A04, A00(306, 25, 86) + i6, e10);
+                        if (c1856ge.A05().AAO()) {
+                            Log.e(A04, A00(306, 25, 86) + i4, e10);
                         }
                         jSONObject2 = null;
                         String[] strArr = A03;
@@ -126,19 +126,19 @@ public final class WV implements V8 {
                         String[] strArr2 = A03;
                         strArr2[4] = "Ao7e4H6oauVu5gaKSpxLNRSSjr9efZyc";
                         strArr2[7] = "dweSflIkmec9RBGwLpK3xpB3h9wbJjrg";
-                        d9 = Double.MAX_VALUE;
+                        d10 = Double.MAX_VALUE;
                     }
-                    i6++;
+                    i4++;
                 }
                 if (jSONObject != null || jSONObject2 != null) {
-                    if (jSONObject == null || d9 < d2) {
+                    if (jSONObject == null || d10 < d9) {
                         jSONArray3.put(jSONObject2);
                         jSONObject2 = null;
-                        d9 = Double.MAX_VALUE;
+                        d10 = Double.MAX_VALUE;
                     } else {
                         jSONArray3.put(jSONObject);
                         jSONObject = null;
-                        d2 = Double.MAX_VALUE;
+                        d9 = Double.MAX_VALUE;
                     }
                     i--;
                 }
@@ -181,15 +181,15 @@ public final class WV implements V8 {
         JSONArray A032;
         JSONObject A6t = this.A01.A6t();
         JSONArray A6s = this.A01.A6s();
-        if (AbstractC1292Ur.A0P(this.A00) && (A032 = C1254Tf.A03(this.A00)) != null && A032.length() > 0) {
-            C1836ge c1836ge = this.A00;
+        if (AbstractC1312Ur.A0P(this.A00) && (A032 = C1274Tf.A03(this.A00)) != null && A032.length() > 0) {
+            C1856ge c1856ge = this.A00;
             if (A03[2].length() != 5) {
                 throw new RuntimeException();
             }
             String[] strArr = A03;
             strArr[4] = "qUVNbNwZZvYyuSz0SsvSYTyRsw3xu0Du";
             strArr[7] = "WlKgM87vtUujDuDqlOM5717cU9PyRF7c";
-            A6s = A01(c1836ge, A032, A6s);
+            A6s = A01(c1856ge, A032, A6s);
         }
         JSONObject jSONObject = null;
         String[] strArr2 = A03;
@@ -207,7 +207,7 @@ public final class WV implements V8 {
         Pair<JSONObject, JSONArray> tokensAndEvents = this.A01.A9I(i);
         JSONObject jSONObject = (JSONObject) tokensAndEvents.first;
         JSONArray jSONArray = (JSONArray) tokensAndEvents.second;
-        if (AbstractC1292Ur.A0P(this.A00) && (A042 = C1254Tf.A04(this.A00, (A08 = AbstractC1292Ur.A08(this.A00)))) != null && A042.length() > 0) {
+        if (AbstractC1312Ur.A0P(this.A00) && (A042 = C1274Tf.A04(this.A00, (A08 = AbstractC1312Ur.A08(this.A00)))) != null && A042.length() > 0) {
             jSONArray = A02(this.A00, A042, jSONArray, i + A08);
         }
         JSONObject jSONObject2 = null;
@@ -233,14 +233,14 @@ public final class WV implements V8 {
     }
 
     private void A06(String str) {
-        if (C1254Tf.A0I(str)) {
-            C1836ge c1836ge = this.A00;
+        if (C1274Tf.A0I(str)) {
+            C1856ge c1856ge = this.A00;
             String[] strArr = A03;
             if (strArr[4].charAt(22) == strArr[7].charAt(22)) {
                 throw new RuntimeException();
             }
             A03[2] = "U9Gor";
-            C1254Tf.A0B(c1836ge, str);
+            C1274Tf.A0B(c1856ge, str);
             return;
         }
         this.A01.AA5(str);
@@ -248,28 +248,28 @@ public final class WV implements V8 {
 
     @Override // com.instagram.common.viewpoint.core.V8
     public final JSONObject A5L() {
-        int eventLimit = AbstractC1292Ur.A0F(this.A00);
+        int eventLimit = AbstractC1312Ur.A0F(this.A00);
         return eventLimit > 0 ? A04(eventLimit) : A03();
     }
 
     @Override // com.instagram.common.viewpoint.core.V8
     public final boolean AAb() {
-        int eventCount = AbstractC1292Ur.A0F(this.A00);
+        int eventCount = AbstractC1312Ur.A0F(this.A00);
         if (eventCount < 1) {
             return false;
         }
         int A82 = this.A01.A82();
-        int eventLimit = C1254Tf.A00(this.A00);
+        int eventLimit = C1274Tf.A00(this.A00);
         return A82 + eventLimit > eventCount;
     }
 
     @Override // com.instagram.common.viewpoint.core.V8
     public final void ACu() {
-        int A50 = this.A01.A50(AbstractC1292Ur.A0G(this.A00));
+        int A50 = this.A01.A50(AbstractC1312Ur.A0G(this.A00));
         if (A50 > 0) {
-            this.A00.A08().ABC(A00(379, 8, 37), AbstractC1252Td.A10, new C1253Te(A00(28, 44, 62) + A50));
+            this.A00.A08().ABC(A00(379, 8, 37), AbstractC1272Td.A10, new C1273Te(A00(28, 44, 62) + A50));
         }
-        C1254Tf.A0F(this.A00);
+        C1274Tf.A0F(this.A00);
     }
 
     @Override // com.instagram.common.viewpoint.core.V8
@@ -290,14 +290,14 @@ public final class WV implements V8 {
     @Override // com.instagram.common.viewpoint.core.V8
     public final boolean ADf(JSONArray jSONArray) {
         String A00 = A00(27, 1, 48);
-        boolean z3 = true;
-        boolean A0P = AbstractC1292Ur.A0P(this.A00);
+        boolean z6 = true;
+        boolean A0P = AbstractC1312Ur.A0P(this.A00);
         for (int errorCode = 0; errorCode < jSONArray.length(); errorCode++) {
             try {
                 JSONObject jSONObject = jSONArray.getJSONObject(errorCode);
                 String eventId = jSONObject.getString(A00(433, 2, 15));
                 if (A00(393, 26, 39).equals(eventId)) {
-                    C1290Up.A0V(this.A00).A36(jSONObject.getString(A00(419, 14, 16)));
+                    C1310Up.A0V(this.A00).A36(jSONObject.getString(A00(419, 14, 16)));
                     this.A00.A04().ACP();
                 } else {
                     int i = jSONObject.getInt(A00(375, 4, 120));
@@ -310,7 +310,7 @@ public final class WV implements V8 {
                             }
                         }
                         if (!this.A01.A5q(eventId) && A0P) {
-                            C1254Tf.A0D(eventId);
+                            C1274Tf.A0D(eventId);
                         }
                     } else {
                         String[] strArr = A03;
@@ -326,7 +326,7 @@ public final class WV implements V8 {
                                 Log.e(A04, A00(236, 37, 69) + i + A002 + eventId + A00);
                             }
                             A06(eventId);
-                            z3 = false;
+                            z6 = false;
                         } else if (i >= 2000) {
                             if (A03[5].length() == 16) {
                                 A03[5] = "Te73kS0enGf3eAU6";
@@ -338,7 +338,7 @@ public final class WV implements V8 {
                                 Log.e(A04, A00(195, 41, 103) + i + A002 + eventId + A00);
                             }
                             if (!this.A01.A5q(eventId) && A0P) {
-                                C1254Tf.A0D(eventId);
+                                C1274Tf.A0D(eventId);
                             }
                         }
                     }
@@ -347,15 +347,15 @@ public final class WV implements V8 {
                 if (this.A00.A05().AAO()) {
                     Log.e(A04, A00(331, 44, 14) + errorCode + A00, e9);
                 }
-                z3 = false;
+                z6 = false;
             }
         }
-        return z3;
+        return z6;
     }
 
     @Override // com.instagram.common.viewpoint.core.V8
     public final void AFZ() {
         this.A01.A51();
-        C1254Tf.A07(this.A00);
+        C1274Tf.A07(this.A00);
     }
 }

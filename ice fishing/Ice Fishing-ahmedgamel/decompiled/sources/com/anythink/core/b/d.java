@@ -16,26 +16,26 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import u.AbstractC5049e;
+import u.AbstractC5050e;
 
 /* loaded from: classes.dex */
 public abstract class d {
 
     /* renamed from: f, reason: collision with root package name */
-    protected com.anythink.core.common.h.a f11736f;
+    protected com.anythink.core.common.h.a f12522f;
 
     /* renamed from: g, reason: collision with root package name */
-    protected boolean f11737g;
+    protected boolean f12523g;
     protected long i;
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f11735a = getClass().getSimpleName().concat(":");
+    private final String f12521a = getClass().getSimpleName().concat(":");
 
     /* renamed from: h, reason: collision with root package name */
-    protected AtomicBoolean f11738h = new AtomicBoolean(false);
+    protected AtomicBoolean f12524h = new AtomicBoolean(false);
 
     public d(com.anythink.core.common.h.a aVar) {
-        this.f11736f = aVar;
+        this.f12522f = aVar;
     }
 
     public static JSONArray b(List<JSONObject> list) {
@@ -60,12 +60,12 @@ public abstract class d {
 
     public abstract void a(bv bvVar, z zVar, long j6);
 
-    public void a(boolean z3) {
-        this.f11737g = z3;
+    public void a(boolean z6) {
+        this.f12523g = z6;
     }
 
     public final boolean c() {
-        return this.f11738h.get();
+        return this.f12524h.get();
     }
 
     public static JSONArray a(List<bv> list) {
@@ -87,7 +87,7 @@ public abstract class d {
     }
 
     public final void b(ad adVar, bv bvVar) {
-        com.anythink.core.b.d.c.a(adVar, new aw(9, bvVar, this.f11736f.f13343s, adVar.getSortPrice()), true, 33);
+        com.anythink.core.b.d.c.a(adVar, new aw(9, bvVar, this.f12522f.f14129s, adVar.getSortPrice()), true, 33);
     }
 
     public static void a(bv bvVar, String str, long j6, int i) {
@@ -103,9 +103,9 @@ public abstract class d {
         }
     }
 
-    public static boolean a(boolean z3, bv bvVar, z zVar) {
+    public static boolean a(boolean z6, bv bvVar, z zVar) {
         double ar = bvVar.ar();
-        if (z3 && ar > 0.0d) {
+        if (z6 && ar > 0.0d) {
             zVar.getPrice();
             if (zVar.getPrice() < ar) {
                 return true;
@@ -115,7 +115,7 @@ public abstract class d {
     }
 
     public final void a(ad adVar, bv bvVar) {
-        com.anythink.core.b.d.c.a(adVar, new aw(6, bvVar, this.f11736f.f13343s, bvVar.ar()), true, 23);
+        com.anythink.core.b.d.c.a(adVar, new aw(6, bvVar, this.f12522f.f14129s, bvVar.ar()), true, 23);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:11:0x0064  */
@@ -126,37 +126,37 @@ public abstract class d {
     public final void a(bv bvVar, ad adVar) {
         bv bvVar2;
         double sortPrice;
-        boolean z3;
-        double d2;
+        boolean z6;
         double d9;
+        double d10;
         if (adVar == null) {
             return;
         }
-        adVar.b(this.f11736f.f13329d);
-        adVar.setOriginRequestId(this.f11736f.f13329d);
-        ad a9 = f.a().a(this.f11736f.f13330e, bvVar);
+        adVar.b(this.f12522f.f14115d);
+        adVar.setOriginRequestId(this.f12522f.f14115d);
+        ad a9 = f.a().a(this.f12522f.f14116e, bvVar);
         if (a9 != null) {
             boolean a10 = a9.a();
             if (!a10 && adVar.getSortPrice() <= a9.getSortPrice()) {
-                d9 = a9.getSortPrice();
+                d10 = a9.getSortPrice();
                 bvVar2 = bvVar;
-                z3 = false;
+                z6 = false;
             } else {
                 sortPrice = adVar.getSortPrice();
                 if (a10) {
                     bvVar2 = bvVar;
-                    com.anythink.core.b.d.c.a(a9, new aw(1, bvVar, this.f11736f.f13343s, sortPrice), true, 25);
+                    com.anythink.core.b.d.c.a(a9, new aw(1, bvVar, this.f12522f.f14129s, sortPrice), true, 25);
                 } else {
                     bvVar2 = bvVar;
-                    z3 = true;
-                    d9 = sortPrice;
+                    z6 = true;
+                    d10 = sortPrice;
                 }
             }
-            d2 = d9;
-            if (!z3) {
+            d9 = d10;
+            if (!z6) {
                 if (a9 != null) {
                     try {
-                        com.anythink.core.b.d.c.a(a9, new aw(2, bvVar2, this.f11736f.f13343s, d2), true, 26);
+                        com.anythink.core.b.d.c.a(a9, new aw(2, bvVar2, this.f12522f.f14129s, d9), true, 26);
                     } catch (Throwable th) {
                         th.printStackTrace();
                     }
@@ -164,10 +164,10 @@ public abstract class d {
                 bvVar2.a(adVar, 2, 0, 1);
                 if (bvVar2.P() != 2) {
                     f a11 = f.a();
-                    String str = this.f11736f.f13330e;
-                    ConcurrentHashMap<String, ad> concurrentHashMap = a11.f11842a;
-                    StringBuilder b9 = AbstractC5049e.b(str);
-                    b9.append(adVar.f13428k);
+                    String str = this.f12522f.f14116e;
+                    ConcurrentHashMap<String, ad> concurrentHashMap = a11.f12628a;
+                    StringBuilder b9 = AbstractC5050e.b(str);
+                    b9.append(adVar.f14214k);
                     concurrentHashMap.put(b9.toString(), adVar);
                     if (bvVar2.am()) {
                         com.anythink.core.common.a.a.a().a(str, adVar);
@@ -178,7 +178,7 @@ public abstract class d {
                 return;
             }
             try {
-                com.anythink.core.b.d.c.a(adVar, new aw(2, bvVar2, this.f11736f.f13343s, d2), false, 27);
+                com.anythink.core.b.d.c.a(adVar, new aw(2, bvVar2, this.f12522f.f14129s, d9), false, 27);
             } catch (Throwable th2) {
                 th2.printStackTrace();
             }
@@ -187,9 +187,9 @@ public abstract class d {
         }
         bvVar2 = bvVar;
         sortPrice = adVar.getSortPrice();
-        z3 = true;
-        d2 = sortPrice;
-        if (!z3) {
+        z6 = true;
+        d9 = sortPrice;
+        if (!z6) {
         }
     }
 
@@ -197,19 +197,19 @@ public abstract class d {
         return a(bvVar, str, i, 0);
     }
 
-    public final boolean a(bv bvVar, String str, int i, int i6) {
-        if (ae.a(0, this.f11736f.f13343s, bvVar, (z) null) != null) {
+    public final boolean a(bv bvVar, String str, int i, int i4) {
+        if (ae.a(0, this.f12522f.f14129s, bvVar, (z) null) != null) {
             return false;
         }
-        ad a9 = f.a().a(this.f11736f.f13330e, bvVar);
+        ad a9 = f.a().a(this.f12522f.f14116e, bvVar);
         if (a9 != null && !a9.a()) {
-            bvVar.a(a9, 0, i, i6);
+            bvVar.a(a9, 0, i, i4);
             bvVar.h(str);
             return true;
         }
         if (a9 != null) {
             try {
-                n af = this.f11736f.f13343s.af();
+                n af = this.f12522f.f14129s.af();
                 af.J(a9.c());
                 af.D(a9.x());
                 af.L(a9.getOriginRequestId());
@@ -228,20 +228,20 @@ public abstract class d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void a(int i, z zVar, double d2, boolean z3) {
-        double d9;
+    public final void a(int i, z zVar, double d9, boolean z6) {
+        double d10;
         if (i != 28) {
             return;
         }
-        JSONObject C8 = this.f11736f.f13338n.a().C();
+        JSONObject C8 = this.f12522f.f14124n.a().C();
         if (C8 != null) {
-            d9 = C8.optDouble(String.valueOf(i));
-            if (d9 > 0.0d) {
+            d10 = C8.optDouble(String.valueOf(i));
+            if (d10 > 0.0d) {
             }
         }
-        d9 = 0.95d;
-        double d10 = zVar.originPrice * d9;
-        com.anythink.core.common.w.i iVar = this.f11736f.f13349y;
+        d10 = 0.95d;
+        double d11 = zVar.originPrice * d10;
+        com.anythink.core.common.w.i iVar = this.f12522f.f14135y;
         List<bv> a9 = iVar != null ? iVar.a() : null;
         if (a9 != null) {
             Iterator<bv> it = a9.iterator();
@@ -251,15 +251,15 @@ public abstract class d {
                 }
                 double a10 = p.a(it.next());
                 if (a10 < zVar.originPrice) {
-                    d10 = Math.max(d10, a10);
+                    d11 = Math.max(d11, a10);
                     break;
                 }
             }
         }
-        double max = Math.max(d10, d2);
+        double max = Math.max(d11, d9);
         double random = (Math.random() * (zVar.originPrice - max)) + max;
         zVar.setPrice(random);
-        if (z3) {
+        if (z6) {
             zVar.setSortPrice(random);
         }
     }
@@ -268,21 +268,21 @@ public abstract class d {
         if (bvVar.ap() == null) {
             return 1.0d;
         }
-        double a9 = a(this.f11736f.f13338n.a(), bvVar.ap());
+        double a9 = a(this.f12522f.f14124n.a(), bvVar.ap());
         bvVar.h();
         return a9;
     }
 
-    private double a(double d2, ATAdConst.CURRENCY currency) {
+    private double a(double d9, ATAdConst.CURRENCY currency) {
         if (currency == null) {
-            return d2;
+            return d9;
         }
-        double a9 = a(this.f11736f.f13338n.a(), currency);
-        String.valueOf(d2);
-        String.valueOf(a9);
-        double d9 = d2 * a9;
+        double a9 = a(this.f12522f.f14124n.a(), currency);
         String.valueOf(d9);
-        return d9;
+        String.valueOf(a9);
+        double d10 = d9 * a9;
+        String.valueOf(d10);
+        return d10;
     }
 
     private static double a(l lVar, ATAdConst.CURRENCY currency) {
@@ -298,19 +298,19 @@ public abstract class d {
         return 1.0d;
     }
 
-    public final double a(double d2, bv bvVar) {
-        double L6;
+    public final double a(double d9, bv bvVar) {
+        double L2;
         if (bvVar.ap() != null) {
-            l a9 = this.f11736f.f13338n.a();
+            l a9 = this.f12522f.f14124n.a();
             if (bvVar.ap() == ATAdConst.CURRENCY.RMB) {
-                L6 = a9.L();
+                L2 = a9.L();
             } else if (bvVar.ap() == ATAdConst.CURRENCY.RMB_CENT) {
-                d2 /= 100.0d;
-                L6 = a9.L();
+                d9 /= 100.0d;
+                L2 = a9.L();
             }
-            return L6 * d2;
+            return L2 * d9;
         }
-        return d2;
+        return d9;
     }
 
     public final void a(long j6) {

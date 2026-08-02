@@ -4,16 +4,16 @@ import android.util.Log;
 import java.util.Arrays;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class CI implements InterfaceC1890hW {
+public final class CI implements InterfaceC1910hW {
     public static byte[] A02;
     public static final CI A03;
     public String A01 = A01(1, 7, 98);
     public int A00 = 5;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 42);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 42);
         }
         return new String(copyOfRange);
     }
@@ -57,22 +57,22 @@ public final class CI implements InterfaceC1890hW {
         Log.println(i, A02(str), A03(str2, th));
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1890hW
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1910hW
     public final void A9t(String str, String str2) {
         A06(4, str, str2);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1890hW
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1910hW
     public final void A9u(String str, String str2, Throwable th) {
         A07(4, str, str2, th);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1890hW
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1910hW
     public final boolean AAY(int i) {
         return this.A00 <= i;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1890hW
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1910hW
     public final void AJY(int i) {
         this.A00 = i;
     }

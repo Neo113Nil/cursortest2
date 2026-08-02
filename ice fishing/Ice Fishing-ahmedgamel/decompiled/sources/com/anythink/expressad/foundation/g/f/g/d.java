@@ -9,7 +9,7 @@ import java.util.List;
 public class d {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19348a = "d";
+    private static final String f20135a = "d";
 
     public static String a(List<com.anythink.expressad.foundation.g.f.c.c> list) {
         com.anythink.expressad.foundation.g.f.c.c b9 = b(list, "Content-Type");
@@ -52,7 +52,7 @@ public class d {
     }
 
     public static boolean b(List<com.anythink.expressad.foundation.g.f.c.c> list) {
-        return TextUtils.equals(a(list, "Content-Encoding"), b.f19341d);
+        return TextUtils.equals(a(list, "Content-Encoding"), b.f20128d);
     }
 
     public static String a(List<com.anythink.expressad.foundation.g.f.c.c> list, String str) {

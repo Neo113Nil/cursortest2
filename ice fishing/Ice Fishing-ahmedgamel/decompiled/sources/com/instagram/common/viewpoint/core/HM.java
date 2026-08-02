@@ -6,14 +6,14 @@ import java.io.IOException;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public final class HM {
-    public final C06474v A00 = new C06474v(10);
+    public final C06674v A00 = new C06674v(10);
 
-    public final Metadata A00(InterfaceC2191ms interfaceC2191ms, IE ie) throws IOException {
+    public final Metadata A00(InterfaceC2211ms interfaceC2211ms, IE ie) throws IOException {
         int tagLength = 0;
         Metadata metadata = null;
         while (true) {
             try {
-                interfaceC2191ms.AGt(this.A00.A0l(), 0, 10);
+                interfaceC2211ms.AGt(this.A00.A0l(), 0, 10);
                 this.A00.A0f(0);
                 if (this.A00.A0K() != 4801587) {
                     break;
@@ -24,17 +24,17 @@ public final class HM {
                 if (metadata == null) {
                     byte[] bArr = new byte[framesLength];
                     System.arraycopy(this.A00.A0l(), 0, bArr, 0, 10);
-                    interfaceC2191ms.AGt(bArr, 10, A0H);
+                    interfaceC2211ms.AGt(bArr, 10, A0H);
                     metadata = new C9U(ie).A0S(bArr, framesLength);
                 } else {
-                    interfaceC2191ms.A47(A0H);
+                    interfaceC2211ms.A47(A0H);
                 }
                 tagLength += framesLength;
             } catch (EOFException unused) {
             }
         }
-        interfaceC2191ms.AIl();
-        interfaceC2191ms.A47(tagLength);
+        interfaceC2211ms.AIl();
+        interfaceC2211ms.A47(tagLength);
         return metadata;
     }
 }

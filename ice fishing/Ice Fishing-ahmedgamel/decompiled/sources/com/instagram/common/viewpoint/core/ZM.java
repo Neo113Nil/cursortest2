@@ -22,21 +22,21 @@ public final class ZM extends LinearLayout {
     public final LinearLayout A04;
     public final RelativeLayout A05;
     public final TextView A06;
-    public final AbstractC2005jd A07;
-    public final C1840gi A08;
+    public final AbstractC2025jd A07;
+    public final C1860gi A08;
     public final int A09;
 
-    public ZM(C1840gi c1840gi, AbstractC2005jd abstractC2005jd, int i) {
-        super(c1840gi);
+    public ZM(C1860gi c1860gi, AbstractC2025jd abstractC2025jd, int i) {
+        super(c1860gi);
         this.A01 = new GradientDrawable();
         this.A02 = new GradientDrawable();
-        this.A08 = c1840gi;
-        this.A07 = abstractC2005jd;
+        this.A08 = c1860gi;
+        this.A07 = abstractC2025jd;
         this.A09 = this.A07.A2D().A00();
-        this.A03 = new ImageView(c1840gi);
-        this.A04 = new LinearLayout(c1840gi);
-        this.A05 = new RelativeLayout(c1840gi);
-        this.A06 = new TextView(c1840gi);
+        this.A03 = new ImageView(c1860gi);
+        this.A04 = new LinearLayout(c1860gi);
+        this.A05 = new RelativeLayout(c1860gi);
+        this.A06 = new TextView(c1860gi);
         this.A00 = i;
         A00();
     }

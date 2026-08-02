@@ -9,17 +9,17 @@ import android.widget.Checkable;
 public final class i implements View.OnTouchListener {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ GestureDetector f36179n;
+    public final /* synthetic */ GestureDetector f36946n;
 
     public i(GestureDetector gestureDetector) {
-        this.f36179n = gestureDetector;
+        this.f36946n = gestureDetector;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     @Override // android.view.View.OnTouchListener
     public final boolean onTouch(View view, MotionEvent motionEvent) {
         if (((Checkable) view).isChecked()) {
-            return this.f36179n.onTouchEvent(motionEvent);
+            return this.f36946n.onTouchEvent(motionEvent);
         }
         return false;
     }

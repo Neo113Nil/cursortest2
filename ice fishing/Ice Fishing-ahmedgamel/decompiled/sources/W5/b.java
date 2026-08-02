@@ -35,10 +35,10 @@ public final class b extends I4.b {
         h.e(model, "model");
         h.e(path, "path");
         h.e(property, "property");
-        if (q.R(path, "locationTimestamp") || q.R(path, "locationBackground") || q.R(path, "locationType") || q.R(path, "locationAccuracy")) {
+        if (q.h0(path, "locationTimestamp") || q.h0(path, "locationBackground") || q.h0(path, "locationType") || q.h0(path, "locationAccuracy")) {
             return null;
         }
         String externalId = ((U5.a) this._identityModelStore.getModel()).getExternalId();
-        return q.R(path, "tags") ? (obj2 == null || !(obj2 instanceof String)) ? new d(((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getAppId(), model.getOnesignalId(), externalId, property) : new k(((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getAppId(), model.getOnesignalId(), externalId, property, (String) obj2) : new j(((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getAppId(), model.getOnesignalId(), externalId, property, obj2);
+        return q.h0(path, "tags") ? (obj2 == null || !(obj2 instanceof String)) ? new d(((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getAppId(), model.getOnesignalId(), externalId, property) : new k(((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getAppId(), model.getOnesignalId(), externalId, property, (String) obj2) : new j(((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getAppId(), model.getOnesignalId(), externalId, property, obj2);
     }
 }

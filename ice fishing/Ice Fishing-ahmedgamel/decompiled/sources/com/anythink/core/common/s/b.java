@@ -14,33 +14,33 @@ import java.util.concurrent.ConcurrentHashMap;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f16387a = 1;
+    public static final int f17174a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f16388b = 1;
+    public static final int f17175b = 1;
 
     /* renamed from: c, reason: collision with root package name */
-    private static volatile b f16389c;
+    private static volatile b f17176c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final Map<String, a> f16390d = new ConcurrentHashMap();
+    private final Map<String, a> f17177d = new ConcurrentHashMap();
 
     private b() {
     }
 
     public static b a() {
-        if (f16389c == null) {
+        if (f17176c == null) {
             synchronized (b.class) {
                 try {
-                    if (f16389c == null) {
-                        f16389c = new b();
+                    if (f17176c == null) {
+                        f17176c = new b();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16389c;
+        return f17176c;
     }
 
     private a c(Context context, String str) {
@@ -50,13 +50,13 @@ public class b {
         if (context instanceof Activity) {
             context = context.getApplicationContext();
         }
-        a aVar = this.f16390d.get(str);
+        a aVar = this.f17177d.get(str);
         if (aVar != null) {
             return aVar;
         }
-        a d2 = d(context, str);
-        this.f16390d.put(str, d2);
-        return d2;
+        a d9 = d(context, str);
+        this.f17177d.put(str, d9);
+        return d9;
     }
 
     private static a d(Context context, String str) {
@@ -75,11 +75,11 @@ public class b {
         if (TextUtils.isEmpty(str)) {
             return false;
         }
-        return str.endsWith(u.a.f12833m) || str.endsWith(u.a.f12832l);
+        return str.endsWith(u.a.f13619m) || str.endsWith(u.a.f13618l);
     }
 
     private void a(Context context) {
-        String[] strArr = {u.b.f12847a, u.b.f12848b, u.b.f12849c, u.b.f12851e, u.b.f12853g, u.b.f12854h, u.b.i, u.b.f12855j, u.b.f12856k, u.b.f12857l, u.b.f12858m, u.b.f12859n, u.b.f12860o, "anythink_app_pl_cl_retry"};
+        String[] strArr = {u.b.f13633a, u.b.f13634b, u.b.f13635c, u.b.f13637e, u.b.f13639g, u.b.f13640h, u.b.i, u.b.f13641j, u.b.f13642k, u.b.f13643l, u.b.f13644m, u.b.f13645n, u.b.f13646o, "anythink_app_pl_cl_retry"};
         for (int i = 0; i < 14; i++) {
             a c9 = c(context, strArr[i]);
             if (c9 instanceof e) {

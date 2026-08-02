@@ -1,328 +1,422 @@
 package m8;
 
-import com.google.android.gms.internal.ads.C3428jv;
-import i8.C4594a;
+import E2.M;
+import i1.C4586c;
+import i8.C4603a;
+import i8.y;
 import java.io.IOException;
-import java.io.InterruptedIOException;
-import java.lang.ref.Reference;
+import java.net.Proxy;
 import java.net.Socket;
+import java.net.SocketTimeoutException;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.TimeZone;
-import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicBoolean;
-import q2.C4896n;
-import v7.AbstractC5129j;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.net.ssl.SSLPeerUnverifiedException;
+import p8.A;
+import p8.C4855a;
+import p8.C4857c;
+import p8.D;
+import p8.E;
+import p8.EnumC4856b;
+import p8.z;
 
 /* loaded from: classes2.dex */
-public final class q implements Cloneable {
+public final class q extends p8.n implements n8.e {
 
-    /* renamed from: A, reason: collision with root package name */
-    public r f39378A;
+    /* renamed from: b, reason: collision with root package name */
+    public final l8.d f39551b;
 
-    /* renamed from: B, reason: collision with root package name */
-    public boolean f39379B;
+    /* renamed from: c, reason: collision with root package name */
+    public final r f39552c;
 
-    /* renamed from: C, reason: collision with root package name */
-    public C3428jv f39380C;
+    /* renamed from: d, reason: collision with root package name */
+    public final y f39553d;
 
-    /* renamed from: D, reason: collision with root package name */
-    public boolean f39381D;
+    /* renamed from: e, reason: collision with root package name */
+    public final Socket f39554e;
 
-    /* renamed from: E, reason: collision with root package name */
-    public boolean f39382E;
+    /* renamed from: f, reason: collision with root package name */
+    public final Socket f39555f;
 
-    /* renamed from: F, reason: collision with root package name */
-    public boolean f39383F;
+    /* renamed from: g, reason: collision with root package name */
+    public final i8.k f39556g;
 
-    /* renamed from: G, reason: collision with root package name */
-    public volatile boolean f39384G;
+    /* renamed from: h, reason: collision with root package name */
+    public final i8.s f39557h;
+    public final l4.g i;
 
-    /* renamed from: H, reason: collision with root package name */
-    public volatile C3428jv f39385H;
+    /* renamed from: j, reason: collision with root package name */
+    public final f f39558j;
 
-    /* renamed from: I, reason: collision with root package name */
-    public final CopyOnWriteArrayList f39386I;
+    /* renamed from: k, reason: collision with root package name */
+    public p8.r f39559k;
+
+    /* renamed from: l, reason: collision with root package name */
+    public boolean f39560l;
+
+    /* renamed from: m, reason: collision with root package name */
+    public boolean f39561m;
 
     /* renamed from: n, reason: collision with root package name */
-    public final i8.r f39387n;
+    public int f39562n;
 
-    /* renamed from: u, reason: collision with root package name */
-    public final C4896n f39388u;
+    /* renamed from: o, reason: collision with root package name */
+    public int f39563o;
 
-    /* renamed from: v, reason: collision with root package name */
-    public final s f39389v;
+    /* renamed from: p, reason: collision with root package name */
+    public int f39564p;
 
-    /* renamed from: w, reason: collision with root package name */
-    public final p f39390w;
+    /* renamed from: q, reason: collision with root package name */
+    public int f39565q;
 
-    /* renamed from: x, reason: collision with root package name */
-    public final AtomicBoolean f39391x;
+    /* renamed from: r, reason: collision with root package name */
+    public final ArrayList f39566r;
 
-    /* renamed from: y, reason: collision with root package name */
-    public Object f39392y;
+    /* renamed from: s, reason: collision with root package name */
+    public long f39567s;
 
-    /* renamed from: z, reason: collision with root package name */
-    public j f39393z;
+    public q(l8.d taskRunner, r connectionPool, y route, Socket rawSocket, Socket javaNetSocket, i8.k kVar, i8.s protocol, l4.g socket, f fVar) {
+        kotlin.jvm.internal.h.e(taskRunner, "taskRunner");
+        kotlin.jvm.internal.h.e(connectionPool, "connectionPool");
+        kotlin.jvm.internal.h.e(route, "route");
+        kotlin.jvm.internal.h.e(rawSocket, "rawSocket");
+        kotlin.jvm.internal.h.e(javaNetSocket, "javaNetSocket");
+        kotlin.jvm.internal.h.e(protocol, "protocol");
+        kotlin.jvm.internal.h.e(socket, "socket");
+        this.f39551b = taskRunner;
+        this.f39552c = connectionPool;
+        this.f39553d = route;
+        this.f39554e = rawSocket;
+        this.f39555f = javaNetSocket;
+        this.f39556g = kVar;
+        this.f39557h = protocol;
+        this.i = socket;
+        this.f39558j = fVar;
+        this.f39565q = 1;
+        this.f39566r = new ArrayList();
+        this.f39567s = Long.MAX_VALUE;
+    }
 
-    public q(i8.r client, C4896n c4896n) {
+    public static void c(i8.r client, y failedRoute, IOException failure) {
         kotlin.jvm.internal.h.e(client, "client");
-        this.f39387n = client;
-        this.f39388u = c4896n;
-        this.f39389v = (s) client.f38194B.f1264u;
-        client.f38198d.getClass();
-        p pVar = new p(this);
-        long j6 = client.f38215v;
-        TimeUnit timeUnit = TimeUnit.MILLISECONDS;
-        pVar.g(j6);
-        this.f39390w = pVar;
-        this.f39391x = new AtomicBoolean();
-        this.f39383F = true;
-        this.f39386I = new CopyOnWriteArrayList();
-    }
-
-    public static final String a(q qVar) {
-        StringBuilder sb = new StringBuilder();
-        sb.append(qVar.f39384G ? "canceled " : "");
-        sb.append("call");
-        sb.append(" to ");
-        sb.append(((i8.n) qVar.f39388u.f40192u).f());
-        return sb.toString();
-    }
-
-    public final IOException b(IOException iOException) {
-        IOException iOException2;
-        Socket m4;
-        TimeZone timeZone = j8.d.f38483a;
-        r rVar = this.f39378A;
-        if (rVar != null) {
-            synchronized (rVar) {
-                m4 = m();
-            }
-            if (this.f39378A == null) {
-                if (m4 != null) {
-                    j8.d.c(m4);
-                }
-            } else if (m4 != null) {
-                throw new IllegalStateException("Check failed.");
-            }
+        kotlin.jvm.internal.h.e(failedRoute, "failedRoute");
+        kotlin.jvm.internal.h.e(failure, "failure");
+        if (failedRoute.f38382b.type() != Proxy.Type.DIRECT) {
+            C4603a c4603a = failedRoute.f38381a;
+            c4603a.f38192g.connectFailed(c4603a.f38193h.g(), failedRoute.f38382b.address(), failure);
         }
-        if (!this.f39379B && this.f39390w.i()) {
-            iOException2 = new InterruptedIOException("timeout");
-            if (iOException != null) {
-                iOException2.initCause(iOException);
-            }
-        } else {
-            iOException2 = iOException;
-        }
-        if (iOException != null) {
-            kotlin.jvm.internal.h.b(iOException2);
-        }
-        return iOException2;
-    }
-
-    public final Object clone() {
-        return new q(this.f39387n, this.f39388u);
-    }
-
-    public final void h() {
-        if (this.f39384G) {
-            return;
-        }
-        this.f39384G = true;
-        C3428jv c3428jv = this.f39385H;
-        if (c3428jv != null) {
-            ((n8.f) c3428jv.f31349x).cancel();
-        }
-        Iterator it = this.f39386I.iterator();
-        kotlin.jvm.internal.h.d(it, "iterator(...)");
-        while (it.hasNext()) {
-            ((w) it.next()).cancel();
+        C4586c c4586c = client.f38338z;
+        synchronized (c4586c) {
+            ((LinkedHashSet) c4586c.f38154u).add(failedRoute);
         }
     }
 
-    public final void i(boolean z3) {
-        C3428jv c3428jv;
+    @Override // p8.n
+    public final void a(p8.r connection, D settings) {
+        kotlin.jvm.internal.h.e(connection, "connection");
+        kotlin.jvm.internal.h.e(settings, "settings");
         synchronized (this) {
-            if (!this.f39383F) {
-                throw new IllegalStateException("released");
-            }
-        }
-        if (z3 && (c3428jv = this.f39385H) != null) {
-            ((n8.f) c3428jv.f31349x).cancel();
-            ((q) c3428jv.f31347v).k(c3428jv, true, true, null);
-        }
-        this.f39380C = null;
-    }
-
-    public final i8.v j() {
-        ArrayList arrayList = new ArrayList();
-        AbstractC5129j.z(this.f39387n.f38196b, arrayList);
-        arrayList.add(new n8.a(this.f39387n));
-        arrayList.add(new n8.a(this.f39387n.f38203j));
-        this.f39387n.getClass();
-        arrayList.add(new k8.a());
-        arrayList.add(b.f39322a);
-        AbstractC5129j.z(this.f39387n.f38197c, arrayList);
-        arrayList.add(n8.c.f39515a);
-        C4896n c4896n = this.f39388u;
-        i8.r rVar = this.f39387n;
-        boolean z3 = false;
-        try {
             try {
-                i8.v b9 = new n8.h(this, arrayList, 0, null, c4896n, rVar.f38216w, rVar.f38217x, rVar.f38218y).b(this.f39388u);
-                if (this.f39384G) {
-                    j8.c.a(b9);
-                    throw new IOException("Canceled");
+                int i = this.f39565q;
+                int i4 = (settings.f39860a & 8) != 0 ? settings.f39861b[3] : Integer.MAX_VALUE;
+                this.f39565q = i4;
+                if (i4 < i) {
+                    r rVar = this.f39552c;
+                    C4603a address = this.f39553d.f38381a;
+                    rVar.getClass();
+                    kotlin.jvm.internal.h.e(address, "address");
+                    if (rVar.f39570c.get(address) != null) {
+                        throw new ClassCastException();
+                    }
+                } else if (i4 > i) {
+                    r rVar2 = this.f39552c;
+                    rVar2.f39571d.d(rVar2.f39572e, 0L);
                 }
-                l(null);
-                return b9;
-            } catch (IOException e9) {
-                z3 = true;
-                IOException l9 = l(e9);
-                kotlin.jvm.internal.h.c(l9, "null cannot be cast to non-null type kotlin.Throwable");
-                throw l9;
+            } finally {
             }
-        } catch (Throwable th) {
-            if (!z3) {
-                l(null);
-            }
-            throw th;
         }
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:10:0x0022 A[Catch: all -> 0x0018, TryCatch #1 {all -> 0x0018, blocks: (B:47:0x0013, B:10:0x0022, B:12:0x0026, B:13:0x0028, B:15:0x002c, B:19:0x0035, B:21:0x0039, B:7:0x001c), top: B:46:0x0013 }] */
-    /* JADX WARN: Removed duplicated region for block: B:12:0x0026 A[Catch: all -> 0x0018, TryCatch #1 {all -> 0x0018, blocks: (B:47:0x0013, B:10:0x0022, B:12:0x0026, B:13:0x0028, B:15:0x002c, B:19:0x0035, B:21:0x0039, B:7:0x001c), top: B:46:0x0013 }] */
-    /* JADX WARN: Removed duplicated region for block: B:23:0x003d  */
+    @Override // p8.n
+    public final void b(z zVar) {
+        zVar.c(EnumC4856b.f39870z, null);
+    }
+
+    @Override // n8.e
+    public final void cancel() {
+        j8.d.c(this.f39554e);
+    }
+
+    @Override // n8.e
+    public final void d() {
+        synchronized (this) {
+            this.f39560l = true;
+        }
+        this.f39558j.getClass();
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:40:0x00b2, code lost:
+    
+        if (w8.c.b(r1, (java.security.cert.X509Certificate) r11) != false) goto L52;
+     */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final IOException k(C3428jv exchange, boolean z3, boolean z6, IOException iOException) {
-        boolean z9;
-        boolean z10;
-        boolean z11;
-        kotlin.jvm.internal.h.e(exchange, "exchange");
-        if (exchange.equals(this.f39385H)) {
-            synchronized (this) {
-                z9 = false;
-                if (z3) {
-                    try {
-                        if (!this.f39381D) {
+    public final boolean e(C4603a address, ArrayList arrayList) {
+        kotlin.jvm.internal.h.e(address, "address");
+        TimeZone timeZone = j8.d.f38495a;
+        if (this.f39566r.size() < this.f39565q && !this.f39560l) {
+            y yVar = this.f39553d;
+            if (yVar.f38381a.a(address)) {
+                i8.n nVar = address.f38193h;
+                String str = nVar.f38281d;
+                C4603a c4603a = yVar.f38381a;
+                if (kotlin.jvm.internal.h.a(str, c4603a.f38193h.f38281d)) {
+                    return true;
+                }
+                if (this.f39559k != null && arrayList != null && !arrayList.isEmpty()) {
+                    Iterator it = arrayList.iterator();
+                    while (true) {
+                        if (!it.hasNext()) {
+                            break;
                         }
-                        if (z3) {
-                            this.f39381D = false;
-                        }
-                        if (z6) {
-                            this.f39382E = false;
-                        }
-                        z11 = this.f39381D;
-                        boolean z12 = z11 && !this.f39382E;
-                        if (!z11 && !this.f39382E) {
-                            if (!this.f39383F) {
-                                z9 = true;
+                        y yVar2 = (y) it.next();
+                        Proxy.Type type = yVar2.f38382b.type();
+                        Proxy.Type type2 = Proxy.Type.DIRECT;
+                        if (type == type2 && yVar.f38382b.type() == type2) {
+                            if (kotlin.jvm.internal.h.a(yVar.f38383c, yVar2.f38383c)) {
+                                if (address.f38189d == w8.c.f41752a) {
+                                    TimeZone timeZone2 = j8.d.f38495a;
+                                    i8.n nVar2 = c4603a.f38193h;
+                                    if (nVar.f38282e == nVar2.f38282e) {
+                                        String str2 = nVar2.f38281d;
+                                        String hostname = nVar.f38281d;
+                                        boolean a9 = kotlin.jvm.internal.h.a(hostname, str2);
+                                        i8.k kVar = this.f39556g;
+                                        if (!a9) {
+                                            if (!this.f39561m && kVar != null) {
+                                                List a10 = kVar.a();
+                                                if (!a10.isEmpty()) {
+                                                    Object obj = a10.get(0);
+                                                    kotlin.jvm.internal.h.c(obj, "null cannot be cast to non-null type java.security.cert.X509Certificate");
+                                                }
+                                            }
+                                        }
+                                        try {
+                                            i8.d dVar = address.f38190e;
+                                            kotlin.jvm.internal.h.b(dVar);
+                                            kotlin.jvm.internal.h.b(kVar);
+                                            List peerCertificates = kVar.a();
+                                            kotlin.jvm.internal.h.e(hostname, "hostname");
+                                            kotlin.jvm.internal.h.e(peerCertificates, "peerCertificates");
+                                            Iterator it2 = dVar.f38212a.iterator();
+                                            if (!it2.hasNext()) {
+                                                return true;
+                                            }
+                                            it2.next().getClass();
+                                            throw new ClassCastException();
+                                        } catch (SSLPeerUnverifiedException unused) {
+                                        }
+                                    }
+                                }
                             }
                         }
-                        z10 = z9;
-                        z9 = z12;
-                    } catch (Throwable th) {
-                        throw th;
                     }
                 }
-                if (!z6 || !this.f39382E) {
-                    z10 = false;
-                }
-                if (z3) {
-                }
-                if (z6) {
-                }
-                z11 = this.f39381D;
-                if (z11) {
-                }
-                if (!z11) {
-                    if (!this.f39383F) {
-                    }
-                }
-                z10 = z9;
-                z9 = z12;
-            }
-            if (z9) {
-                this.f39385H = null;
-                r rVar = this.f39378A;
-                if (rVar != null) {
-                    synchronized (rVar) {
-                        rVar.f39406o++;
-                    }
-                }
-            }
-            if (z10) {
-                return b(iOException);
             }
         }
-        return iOException;
+        return false;
     }
 
-    public final IOException l(IOException iOException) {
-        boolean z3;
+    @Override // n8.e
+    public final void f(p call, IOException iOException) {
+        kotlin.jvm.internal.h.e(call, "call");
         synchronized (this) {
-            z3 = false;
-            if (this.f39383F) {
-                this.f39383F = false;
-                if (!this.f39381D) {
-                    if (!this.f39382E) {
-                        z3 = true;
+            try {
+                if (!(iOException instanceof E)) {
+                    if (!(this.f39559k != null) || (iOException instanceof C4855a)) {
+                        this.f39560l = true;
+                        if (this.f39563o == 0) {
+                            if (iOException != null) {
+                                c(call.f39544n, this.f39553d, iOException);
+                            }
+                            this.f39562n++;
+                        }
                     }
+                } else if (((E) iOException).f39862n == EnumC4856b.f39870z) {
+                    int i = this.f39564p + 1;
+                    this.f39564p = i;
+                    if (i > 1) {
+                        this.f39560l = true;
+                        this.f39562n++;
+                    }
+                } else if (((E) iOException).f39862n != EnumC4856b.f39863A || !call.f39541G) {
+                    this.f39560l = true;
+                    this.f39562n++;
                 }
+            } catch (Throwable th) {
+                throw th;
             }
         }
-        return z3 ? b(iOException) : iOException;
     }
 
-    public final Socket m() {
-        r rVar = this.f39378A;
-        kotlin.jvm.internal.h.b(rVar);
-        TimeZone timeZone = j8.d.f38483a;
-        ArrayList arrayList = rVar.f39409r;
-        Iterator it = arrayList.iterator();
-        int i = 0;
-        while (true) {
-            if (!it.hasNext()) {
-                i = -1;
-                break;
+    @Override // n8.e
+    public final y g() {
+        return this.f39553d;
+    }
+
+    public final boolean h(boolean z6) {
+        long j6;
+        TimeZone timeZone = j8.d.f38495a;
+        long nanoTime = System.nanoTime();
+        if (this.f39554e.isClosed() || this.f39555f.isClosed() || this.f39555f.isInputShutdown() || this.f39555f.isOutputShutdown()) {
+            return false;
+        }
+        p8.r rVar = this.f39559k;
+        if (rVar != null) {
+            synchronized (rVar) {
+                if (rVar.f39947y) {
+                    return false;
+                }
+                if (rVar.f39931G < rVar.f39930F) {
+                    if (nanoTime >= rVar.f39932H) {
+                        return false;
+                    }
+                }
+                return true;
             }
-            if (kotlin.jvm.internal.h.a(((Reference) it.next()).get(), this)) {
-                break;
+        }
+        synchronized (this) {
+            j6 = nanoTime - this.f39567s;
+        }
+        if (j6 < 10000000000L || !z6) {
+            return true;
+        }
+        Socket socket = this.f39555f;
+        y8.r source = (y8.r) this.i.f38917v;
+        kotlin.jvm.internal.h.e(socket, "<this>");
+        kotlin.jvm.internal.h.e(source, "source");
+        try {
+            int soTimeout = socket.getSoTimeout();
+            try {
+                socket.setSoTimeout(1);
+                return !source.b();
+            } finally {
+                socket.setSoTimeout(soTimeout);
             }
-            i++;
+        } catch (SocketTimeoutException unused) {
+            return true;
+        } catch (IOException unused2) {
+            return false;
         }
-        if (i == -1) {
-            throw new IllegalStateException("Check failed.");
+    }
+
+    public final void i() {
+        this.f39567s = System.nanoTime();
+        i8.s sVar = this.f39557h;
+        if (sVar == i8.s.f38346y || sVar == i8.s.f38347z) {
+            this.f39555f.setSoTimeout(0);
+            C4857c c4857c = C4857c.f39872a;
+            M m9 = new M(this.f39551b);
+            l4.g socket = this.i;
+            String peerName = this.f39553d.f38381a.f38193h.f38281d;
+            kotlin.jvm.internal.h.e(socket, "socket");
+            kotlin.jvm.internal.h.e(peerName, "peerName");
+            m9.f762v = socket;
+            String str = j8.d.f38496b + ' ' + peerName;
+            kotlin.jvm.internal.h.e(str, "<set-?>");
+            m9.f763w = str;
+            m9.f764x = this;
+            m9.f765y = c4857c;
+            p8.r rVar = new p8.r(m9);
+            this.f39559k = rVar;
+            D d9 = p8.r.f39924S;
+            this.f39565q = (d9.f39860a & 8) != 0 ? d9.f39861b[3] : Integer.MAX_VALUE;
+            A a9 = rVar.f39939P;
+            synchronized (a9) {
+                try {
+                    if (a9.f39854w) {
+                        throw new IOException("closed");
+                    }
+                    Logger logger = A.f39850y;
+                    if (logger.isLoggable(Level.FINE)) {
+                        logger.fine(j8.d.e(">> CONNECTION " + p8.h.f39898a.c(), new Object[0]));
+                    }
+                    a9.f39851n.v(p8.h.f39898a);
+                    a9.f39851n.flush();
+                } catch (Throwable th) {
+                    throw th;
+                }
+            }
+            A a10 = rVar.f39939P;
+            D settings = rVar.J;
+            a10.getClass();
+            kotlin.jvm.internal.h.e(settings, "settings");
+            synchronized (a10) {
+                try {
+                    if (a10.f39854w) {
+                        throw new IOException("closed");
+                    }
+                    a10.i(0, Integer.bitCount(settings.f39860a) * 6, 4, 0);
+                    for (int i = 0; i < 10; i++) {
+                        boolean z6 = true;
+                        if (((1 << i) & settings.f39860a) == 0) {
+                            z6 = false;
+                        }
+                        if (z6) {
+                            y8.p pVar = a10.f39851n;
+                            if (pVar.f41953v) {
+                                throw new IllegalStateException("closed");
+                            }
+                            y8.e eVar = pVar.f41952u;
+                            y8.s J = eVar.J(2);
+                            int i4 = J.f41960c;
+                            byte b9 = (byte) ((i >>> 8) & com.anythink.basead.exoplayer.k.p.f9259b);
+                            byte[] bArr = J.f41958a;
+                            bArr[i4] = b9;
+                            bArr[i4 + 1] = (byte) (i & com.anythink.basead.exoplayer.k.p.f9259b);
+                            J.f41960c = i4 + 2;
+                            eVar.f41924u += 2;
+                            pVar.b();
+                            a10.f39851n.n(settings.f39861b[i]);
+                        }
+                    }
+                    a10.f39851n.flush();
+                } catch (Throwable th2) {
+                    throw th2;
+                }
+            }
+            if (rVar.J.a() != 65535) {
+                rVar.f39939P.n(0, r2 - 65535);
+            }
+            l8.c.c(rVar.f39948z.d(), rVar.f39944v, rVar.f39940Q);
         }
-        arrayList.remove(i);
-        this.f39378A = null;
-        if (!arrayList.isEmpty()) {
-            return null;
+    }
+
+    public final String toString() {
+        Object obj;
+        StringBuilder sb = new StringBuilder("Connection{");
+        y yVar = this.f39553d;
+        sb.append(yVar.f38381a.f38193h.f38281d);
+        sb.append(':');
+        sb.append(yVar.f38381a.f38193h.f38282e);
+        sb.append(", proxy=");
+        sb.append(yVar.f38382b);
+        sb.append(" hostAddress=");
+        sb.append(yVar.f38383c);
+        sb.append(" cipherSuite=");
+        i8.k kVar = this.f39556g;
+        if (kVar == null || (obj = kVar.f38265b) == null) {
+            obj = "none";
         }
-        rVar.f39410s = System.nanoTime();
-        s sVar = this.f39389v;
-        sVar.getClass();
-        TimeZone timeZone2 = j8.d.f38483a;
-        if (!rVar.f39403l) {
-            sVar.f39414d.d(sVar.f39415e, 0L);
-            return null;
-        }
-        rVar.f39403l = true;
-        ConcurrentLinkedQueue concurrentLinkedQueue = sVar.f39416f;
-        concurrentLinkedQueue.remove(rVar);
-        if (concurrentLinkedQueue.isEmpty()) {
-            sVar.f39414d.a();
-        }
-        C4594a address = rVar.f39396d.f38262a;
-        kotlin.jvm.internal.h.e(address, "address");
-        if (sVar.f39413c.get(address) == null) {
-            return rVar.f39398f;
-        }
-        throw new ClassCastException();
+        sb.append(obj);
+        sb.append(" protocol=");
+        sb.append(this.f39557h);
+        sb.append('}');
+        return sb.toString();
     }
 }

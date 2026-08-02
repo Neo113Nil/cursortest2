@@ -28,14 +28,14 @@ public final class C2 extends Handler {
     public final Handler A07;
     public final HandlerThread A08;
     public final CJ A09;
-    public final InterfaceC2256nw A0A;
-    public final ArrayList<C0802Bk> A0B;
-    public final HashMap<String, C2260o0> A0C;
+    public final InterfaceC2276nw A0A;
+    public final ArrayList<C0822Bk> A0B;
+    public final HashMap<String, C2280o0> A0C;
 
-    public static String A08(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0D, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 73);
+    public static String A08(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0D, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 73);
         }
         return new String(copyOfRange);
     }
@@ -53,12 +53,12 @@ public final class C2 extends Handler {
     	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
     private void A0Q(DownloadRequest downloadRequest, int i) {
-        C0802Bk A06 = A06(downloadRequest.A02, true);
+        C0822Bk A06 = A06(downloadRequest.A02, true);
         long currentTimeMillis = System.currentTimeMillis();
         if (A06 != null) {
             A03(C5.A00(A06, downloadRequest, i, currentTimeMillis));
         } else {
-            A03(new C0802Bk(downloadRequest, i != 0 ? 1 : 0, currentTimeMillis, currentTimeMillis, -1L, i, 0));
+            A03(new C0822Bk(downloadRequest, i != 0 ? 1 : 0, currentTimeMillis, currentTimeMillis, -1L, i, 0));
         }
         A0B();
     }
@@ -67,21 +67,21 @@ public final class C2 extends Handler {
         A0D();
     }
 
-    public C2(HandlerThread handlerThread, InterfaceC2256nw interfaceC2256nw, CJ cj, Handler handler, int i, int i6, boolean z3) {
+    public C2(HandlerThread handlerThread, InterfaceC2276nw interfaceC2276nw, CJ cj, Handler handler, int i, int i4, boolean z6) {
         super(handlerThread.getLooper());
         this.A08 = handlerThread;
-        this.A0A = interfaceC2256nw;
+        this.A0A = interfaceC2276nw;
         this.A09 = cj;
         this.A07 = handler;
         this.A02 = i;
-        this.A03 = i6;
-        this.A05 = z3;
+        this.A03 = i4;
+        this.A05 = z6;
         this.A0B = new ArrayList<>();
         this.A0C = new HashMap<>();
     }
 
-    public static int A00(C0802Bk c0802Bk, C0802Bk c0802Bk2) {
-        return C5C.A08(c0802Bk.A05, c0802Bk2.A05);
+    public static int A00(C0822Bk c0822Bk, C0822Bk c0822Bk2) {
+        return C5C.A08(c0822Bk.A05, c0822Bk2.A05);
     }
 
     /* JADX WARN: Incorrect condition in loop: B:3:0x0007 */
@@ -95,8 +95,8 @@ public final class C2 extends Handler {
             String str2 = strArr[4];
             String str3 = strArr[2];
             int length = str2.length();
-            int i6 = str3.length();
-            if (length == i6) {
+            int i4 = str3.length();
+            if (length == i4) {
                 throw new RuntimeException();
             }
             A0E[6] = "id4WW5MNYn317aHfBDbhwYGK6MIHb4Bm";
@@ -107,85 +107,85 @@ public final class C2 extends Handler {
         return -1;
     }
 
-    private C0802Bk A03(C0802Bk c0802Bk) {
-        AbstractC06243y.A08((c0802Bk.A02 == 3 || c0802Bk.A02 == 4) ? false : true);
-        int A02 = A02(c0802Bk.A07.A02);
+    private C0822Bk A03(C0822Bk c0822Bk) {
+        AbstractC06443y.A08((c0822Bk.A02 == 3 || c0822Bk.A02 == 4) ? false : true);
+        int A02 = A02(c0822Bk.A07.A02);
         if (A02 == -1) {
-            this.A0B.add(c0802Bk);
+            this.A0B.add(c0822Bk);
             Collections.sort(this.A0B, new C1());
         } else {
-            boolean z3 = c0802Bk.A05 != this.A0B.get(A02).A05;
-            this.A0B.set(A02, c0802Bk);
-            if (z3) {
+            boolean z6 = c0822Bk.A05 != this.A0B.get(A02).A05;
+            this.A0B.set(A02, c0822Bk);
+            if (z6) {
                 Collections.sort(this.A0B, new C1());
             }
         }
         try {
-            this.A0A.AHF(c0802Bk);
+            this.A0A.AHF(c0822Bk);
         } catch (IOException e9) {
-            AbstractC06324g.A08(A08(2, 15, 106), A08(223, 23, 46), e9);
+            AbstractC06524g.A08(A08(2, 15, 106), A08(223, 23, 46), e9);
         }
-        this.A07.obtainMessage(2, new C0(c0802Bk, false, new ArrayList(this.A0B), null)).sendToTarget();
-        return c0802Bk;
+        this.A07.obtainMessage(2, new C0(c0822Bk, false, new ArrayList(this.A0B), null)).sendToTarget();
+        return c0822Bk;
     }
 
-    private C0802Bk A04(C0802Bk c0802Bk, int i, int i6) {
-        AbstractC06243y.A08((i == 3 || i == 4) ? false : true);
-        return A03(A05(c0802Bk, i, i6));
+    private C0822Bk A04(C0822Bk c0822Bk, int i, int i4) {
+        AbstractC06443y.A08((i == 3 || i == 4) ? false : true);
+        return A03(A05(c0822Bk, i, i4));
     }
 
-    public static C0802Bk A05(C0802Bk c0802Bk, int i, int i6) {
-        return new C0802Bk(c0802Bk.A07, i, c0802Bk.A05, System.currentTimeMillis(), c0802Bk.A04, i6, 0, c0802Bk.A00);
+    public static C0822Bk A05(C0822Bk c0822Bk, int i, int i4) {
+        return new C0822Bk(c0822Bk.A07, i, c0822Bk.A05, System.currentTimeMillis(), c0822Bk.A04, i4, 0, c0822Bk.A00);
     }
 
-    private C0802Bk A06(String str, boolean z3) {
+    private C0822Bk A06(String str, boolean z6) {
         int A02 = A02(str);
         if (A02 != -1) {
             return this.A0B.get(A02);
         }
-        if (z3) {
+        if (z6) {
             try {
                 return this.A0A.A7q(str);
             } catch (IOException e9) {
-                AbstractC06324g.A08(A08(2, 15, 106), A08(17, 25, 52) + str, e9);
+                AbstractC06524g.A08(A08(2, 15, 106), A08(17, 25, 52) + str, e9);
                 return null;
             }
         }
         return null;
     }
 
-    private C2260o0 A07(C2260o0 c2260o0, C0802Bk c0802Bk) {
-        boolean z3;
-        if (c2260o0 == null) {
+    private C2280o0 A07(C2280o0 c2280o0, C0822Bk c0822Bk) {
+        boolean z6;
+        if (c2280o0 == null) {
             if (A0U() && this.A01 < this.A02) {
-                C0802Bk A04 = A04(c0802Bk, 2, 0);
-                C2260o0 c2260o02 = new C2260o0(A04.A07, this.A09.A5M(A04.A07), A04.A00, false, this.A03, this);
-                this.A0C.put(A04.A07.A02, c2260o02);
+                C0822Bk A04 = A04(c0822Bk, 2, 0);
+                C2280o0 c2280o02 = new C2280o0(A04.A07, this.A09.A5M(A04.A07), A04.A00, false, this.A03, this);
+                this.A0C.put(A04.A07.A02, c2280o02);
                 int i = this.A01;
                 this.A01 = i + 1;
                 if (i == 0) {
-                    sendEmptyMessageDelayed(11, f.f7187a);
+                    sendEmptyMessageDelayed(11, f.f7973a);
                 }
-                c2260o02.start();
-                return c2260o02;
+                c2280o02.start();
+                return c2280o02;
             }
             return null;
         }
-        z3 = c2260o0.A06;
-        AbstractC06243y.A08(!z3);
-        c2260o0.A05(false);
-        return c2260o0;
+        z6 = c2280o0.A06;
+        AbstractC06443y.A08(!z6);
+        c2280o0.A05(false);
+        return c2280o0;
     }
 
     private void A09() {
-        Iterator<C2260o0> it = this.A0C.values().iterator();
+        Iterator<C2280o0> it = this.A0C.values().iterator();
         while (it.hasNext()) {
             it.next().A05(true);
         }
         try {
             this.A0A.AJO();
         } catch (IOException e9) {
-            AbstractC06324g.A08(A08(2, 15, 106), A08(223, 23, 46), e9);
+            AbstractC06524g.A08(A08(2, 15, 106), A08(223, 23, 46), e9);
         }
         this.A0B.clear();
         this.A08.quit();
@@ -206,7 +206,7 @@ public final class C2 extends Handler {
         String A08 = A08(2, 15, 106);
         ArrayList arrayList = new ArrayList();
         try {
-            C2263o4 A7r = this.A0A.A7r(3, 4);
+            C2283o4 A7r = this.A0A.A7r(3, 4);
             while (A7r.A01()) {
                 try {
                     arrayList.add(A7r.A00());
@@ -217,12 +217,12 @@ public final class C2 extends Handler {
                 A7r.close();
             }
         } catch (IOException unused) {
-            AbstractC06324g.A05(A08, A08(42, 25, 4));
+            AbstractC06524g.A05(A08, A08(42, 25, 4));
         }
         for (int i = 0; i < this.A0B.size(); i++) {
             this.A0B.set(i, A05(this.A0B.get(i), 5, 0));
         }
-        int i6 = 0;
+        int i4 = 0;
         while (true) {
             int size = arrayList.size();
             if (A0E[6].charAt(14) != 'H') {
@@ -231,27 +231,27 @@ public final class C2 extends Handler {
             String[] strArr = A0E;
             strArr[1] = "XqOejHHacjjZLx98zpLnY1LZJhfsrk";
             strArr[7] = "zG4BgrMO4aUj";
-            if (i6 < size) {
-                ArrayList<C0802Bk> arrayList2 = this.A0B;
-                C0802Bk c0802Bk = (C0802Bk) arrayList.get(i6);
+            if (i4 < size) {
+                ArrayList<C0822Bk> arrayList2 = this.A0B;
+                C0822Bk c0822Bk = (C0822Bk) arrayList.get(i4);
                 String[] strArr2 = A0E;
                 if (strArr2[4].length() == strArr2[2].length()) {
                     break;
                 }
                 A0E[3] = "KT3y83B5rUupwCjllTydcOADIPFLf4ae";
-                arrayList2.add(A05(c0802Bk, 5, 0));
-                i6++;
+                arrayList2.add(A05(c0822Bk, 5, 0));
+                i4++;
             } else {
                 List<Download> terminalDownloads = this.A0B;
                 Collections.sort(terminalDownloads, new C1());
                 try {
                     this.A0A.AJp();
                 } catch (IOException e9) {
-                    AbstractC06324g.A08(A08, A08(223, 23, 46), e9);
+                    AbstractC06524g.A08(A08, A08(223, 23, 46), e9);
                 }
                 ArrayList arrayList3 = new ArrayList(this.A0B);
-                for (int i9 = 0; i9 < this.A0B.size(); i9++) {
-                    this.A07.obtainMessage(2, new C0(this.A0B.get(i9), false, arrayList3, null)).sendToTarget();
+                for (int i6 = 0; i6 < this.A0B.size(); i6++) {
+                    this.A07.obtainMessage(2, new C0(this.A0B.get(i6), false, arrayList3, null)).sendToTarget();
                 }
                 A0B();
                 return;
@@ -264,22 +264,22 @@ public final class C2 extends Handler {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private void A0B() {
-        boolean z3;
+        boolean z6;
         int i = 0;
-        for (int i6 = 0; i6 < accumulatingDownloadTaskCount; i6++) {
-            C0802Bk download = this.A0B.get(i6);
-            C2260o0 c2260o0 = this.A0C.get(download.A07.A02);
+        for (int i4 = 0; i4 < accumulatingDownloadTaskCount; i4++) {
+            C0822Bk download = this.A0B.get(i4);
+            C2280o0 c2280o0 = this.A0C.get(download.A07.A02);
             int accumulatingDownloadTaskCount = download.A02;
             switch (accumulatingDownloadTaskCount) {
                 case 0:
-                    c2260o0 = A07(c2260o0, download);
+                    c2280o0 = A07(c2280o0, download);
                     break;
                 case 1:
-                    A0M(c2260o0);
+                    A0M(c2280o0);
                     break;
                 case 2:
-                    AbstractC06243y.A01(c2260o0);
-                    A0P(c2260o0, download, i);
+                    AbstractC06443y.A01(c2280o0);
+                    A0P(c2280o0, download, i);
                     break;
                 case 3:
                 case 4:
@@ -288,12 +288,12 @@ public final class C2 extends Handler {
                     throw new IllegalStateException();
                 case 5:
                 case 7:
-                    A0O(c2260o0, download);
+                    A0O(c2280o0, download);
                     break;
             }
-            if (c2260o0 != null) {
-                z3 = c2260o0.A06;
-                if (!z3) {
+            if (c2280o0 != null) {
+                z6 = c2280o0.A06;
+                if (!z6) {
                     i++;
                 }
             }
@@ -306,37 +306,37 @@ public final class C2 extends Handler {
     */
     private void A0C() {
         for (int i = 0; i < i; i++) {
-            C0802Bk c0802Bk = this.A0B.get(i);
-            if (c0802Bk.A02 == 2) {
+            C0822Bk c0822Bk = this.A0B.get(i);
+            if (c0822Bk.A02 == 2) {
                 try {
-                    this.A0A.AHF(c0802Bk);
+                    this.A0A.AHF(c0822Bk);
                 } catch (IOException e9) {
-                    AbstractC06324g.A08(A08(2, 15, 106), A08(223, 23, 46), e9);
+                    AbstractC06524g.A08(A08(2, 15, 106), A08(223, 23, 46), e9);
                 }
             }
         }
-        sendEmptyMessageDelayed(11, f.f7187a);
+        sendEmptyMessageDelayed(11, f.f7973a);
     }
 
     private void A0E(int i) {
         this.A04 = i;
-        C2263o4 c2263o4 = null;
+        C2283o4 c2283o4 = null;
         try {
             try {
                 this.A0A.AJO();
-                c2263o4 = this.A0A.A7r(0, 1, 2, 5, 7);
-                while (c2263o4.A01()) {
-                    this.A0B.add(c2263o4.A00());
+                c2283o4 = this.A0A.A7r(0, 1, 2, 5, 7);
+                while (c2283o4.A01()) {
+                    this.A0B.add(c2283o4.A00());
                 }
             } catch (IOException e9) {
-                AbstractC06324g.A08(A08(2, 15, 106), A08(67, 21, 14), e9);
+                AbstractC06524g.A08(A08(2, 15, 106), A08(67, 21, 14), e9);
                 this.A0B.clear();
             }
-            C5C.A10(c2263o4);
+            C5C.A10(c2283o4);
             this.A07.obtainMessage(0, new ArrayList(this.A0B)).sendToTarget();
             A0B();
         } catch (Throwable th) {
-            C5C.A10(c2263o4);
+            C5C.A10(c2283o4);
             throw th;
         }
     }
@@ -355,17 +355,17 @@ public final class C2 extends Handler {
         A0B();
     }
 
-    private void A0I(C0802Bk c0802Bk) {
-        if (c0802Bk.A02 == 7) {
-            int i = c0802Bk.A03 == 0 ? 0 : 1;
-            int state = c0802Bk.A03;
-            A04(c0802Bk, i, state);
+    private void A0I(C0822Bk c0822Bk) {
+        if (c0822Bk.A02 == 7) {
+            int i = c0822Bk.A03 == 0 ? 0 : 1;
+            int state = c0822Bk.A03;
+            A04(c0822Bk, i, state);
             A0B();
             return;
         }
-        this.A0B.remove(A02(c0802Bk.A07.A02));
+        this.A0B.remove(A02(c0822Bk.A07.A02));
         try {
-            this.A0A.AIR(c0802Bk.A07.A02);
+            this.A0A.AIR(c0822Bk.A07.A02);
         } catch (IOException unused) {
             String A08 = A08(2, 15, 106);
             String[] strArr = A0E;
@@ -379,70 +379,70 @@ public final class C2 extends Handler {
             String[] strArr2 = A0E;
             strArr2[4] = "0mOws7zeqclkbY70VWtV8amCVjdjwc";
             strArr2[2] = "5byiBwQrvMTmrLaxdcHCyvzuNe0iHvcw";
-            AbstractC06324g.A05(A08, A08(88, 30, 26));
+            AbstractC06524g.A05(A08, A08(88, 30, 26));
         }
-        this.A07.obtainMessage(2, new C0(c0802Bk, true, new ArrayList(this.A0B), null)).sendToTarget();
+        this.A07.obtainMessage(2, new C0(c0822Bk, true, new ArrayList(this.A0B), null)).sendToTarget();
     }
 
-    private void A0J(C0802Bk c0802Bk, int i) {
+    private void A0J(C0822Bk c0822Bk, int i) {
         if (i == 0) {
-            if (c0802Bk.A02 == 1) {
-                A04(c0802Bk, 0, 0);
+            if (c0822Bk.A02 == 1) {
+                A04(c0822Bk, 0, 0);
                 return;
             }
             return;
         }
-        int i6 = c0802Bk.A03;
+        int i4 = c0822Bk.A03;
         if (A0E[6].charAt(14) != 'H') {
             throw new RuntimeException();
         }
         String[] strArr = A0E;
         strArr[4] = "qDoL4xVSTO8RDQU7ZVoZcH2BhkCOc4";
         strArr[2] = "ugBXxeG19GlyVlR2WcoXaVyqVtSsbrKH";
-        if (i == i6) {
+        if (i == i4) {
             return;
         }
-        int i9 = c0802Bk.A02;
-        if (i9 == 0 || i9 == 2) {
-            i9 = 1;
+        int i6 = c0822Bk.A02;
+        if (i6 == 0 || i6 == 2) {
+            i6 = 1;
         }
-        A03(new C0802Bk(c0802Bk.A07, i9, c0802Bk.A05, System.currentTimeMillis(), c0802Bk.A04, i, 0, c0802Bk.A00));
+        A03(new C0822Bk(c0822Bk.A07, i6, c0822Bk.A05, System.currentTimeMillis(), c0822Bk.A04, i, 0, c0822Bk.A00));
     }
 
-    private void A0K(C0802Bk c0802Bk, Exception exc) {
+    private void A0K(C0822Bk c0822Bk, Exception exc) {
         int i;
-        DownloadRequest downloadRequest = c0802Bk.A07;
-        int i6 = exc == null ? 3 : 4;
-        long j6 = c0802Bk.A05;
+        DownloadRequest downloadRequest = c0822Bk.A07;
+        int i4 = exc == null ? 3 : 4;
+        long j6 = c0822Bk.A05;
         long currentTimeMillis = System.currentTimeMillis();
-        long j9 = c0802Bk.A04;
-        int i9 = c0802Bk.A03;
+        long j9 = c0822Bk.A04;
+        int i6 = c0822Bk.A03;
         if (exc == null) {
             i = 0;
         } else {
             i = 1;
         }
-        C0802Bk c0802Bk2 = new C0802Bk(downloadRequest, i6, j6, currentTimeMillis, j9, i9, i, c0802Bk.A00);
-        this.A0B.remove(A02(c0802Bk2.A07.A02));
+        C0822Bk c0822Bk2 = new C0822Bk(downloadRequest, i4, j6, currentTimeMillis, j9, i6, i, c0822Bk.A00);
+        this.A0B.remove(A02(c0822Bk2.A07.A02));
         try {
-            this.A0A.AHF(c0802Bk2);
+            this.A0A.AHF(c0822Bk2);
         } catch (IOException e9) {
-            AbstractC06324g.A08(A08(2, 15, 106), A08(223, 23, 46), e9);
+            AbstractC06524g.A08(A08(2, 15, 106), A08(223, 23, 46), e9);
         }
-        this.A07.obtainMessage(2, new C0(c0802Bk2, false, new ArrayList(this.A0B), exc)).sendToTarget();
+        this.A07.obtainMessage(2, new C0(c0822Bk2, false, new ArrayList(this.A0B), exc)).sendToTarget();
     }
 
-    private void A0L(C2260o0 c2260o0) {
+    private void A0L(C2280o0 c2280o0) {
         DownloadRequest downloadRequest;
-        boolean z3;
         boolean z6;
+        boolean z9;
         Exception finalException;
         DownloadRequest downloadRequest2;
-        downloadRequest = c2260o0.A04;
+        downloadRequest = c2280o0.A04;
         String str = downloadRequest.A02;
         this.A0C.remove(str);
-        z3 = c2260o0.A06;
-        if (z3) {
+        z6 = c2280o0.A06;
+        if (z6) {
             this.A06 = false;
         } else {
             int i = this.A01 - 1;
@@ -451,35 +451,35 @@ public final class C2 extends Handler {
                 removeMessages(11);
             }
         }
-        z6 = c2260o0.A08;
-        if (z6) {
+        z9 = c2280o0.A08;
+        if (z9) {
             A0B();
             return;
         }
-        finalException = c2260o0.A01;
+        finalException = c2280o0.A01;
         if (finalException != null) {
             StringBuilder sb = new StringBuilder();
             String downloadId = A08(246, 13, 86);
             StringBuilder append = sb.append(downloadId);
-            downloadRequest2 = c2260o0.A04;
+            downloadRequest2 = c2280o0.A04;
             StringBuilder append2 = append.append(downloadRequest2);
             String downloadId2 = A08(0, 2, 97);
-            String sb2 = append2.append(downloadId2).append(z3).toString();
+            String sb2 = append2.append(downloadId2).append(z6).toString();
             String downloadId3 = A08(2, 15, 106);
-            AbstractC06324g.A08(downloadId3, sb2, finalException);
+            AbstractC06524g.A08(downloadId3, sb2, finalException);
         }
-        C0802Bk A06 = A06(str, false);
+        C0822Bk A06 = A06(str, false);
         if (A0E[3].charAt(4) != '8') {
             throw new RuntimeException();
         }
         String[] strArr = A0E;
         strArr[4] = "ylCSlCHYxJLig8GFragBjcnbyuXWai";
         strArr[2] = "OMWcFhgpmCCD5KtgAO70M2kgxcAld7fK";
-        C0802Bk c0802Bk = (C0802Bk) AbstractC06243y.A01(A06);
-        switch (c0802Bk.A02) {
+        C0822Bk c0822Bk = (C0822Bk) AbstractC06443y.A01(A06);
+        switch (c0822Bk.A02) {
             case 2:
-                AbstractC06243y.A08(!z3);
-                A0K(c0802Bk, finalException);
+                AbstractC06443y.A08(!z6);
+                A0K(c0822Bk, finalException);
                 break;
             case 3:
             case 4:
@@ -488,70 +488,70 @@ public final class C2 extends Handler {
                 throw new IllegalStateException();
             case 5:
             case 7:
-                AbstractC06243y.A08(z3);
-                A0I(c0802Bk);
+                AbstractC06443y.A08(z6);
+                A0I(c0822Bk);
                 break;
         }
         A0B();
     }
 
-    private void A0M(C2260o0 c2260o0) {
-        boolean z3;
-        if (c2260o0 == null) {
+    private void A0M(C2280o0 c2280o0) {
+        boolean z6;
+        if (c2280o0 == null) {
             return;
         }
-        z3 = c2260o0.A06;
-        AbstractC06243y.A08(!z3);
-        c2260o0.A05(false);
+        z6 = c2280o0.A06;
+        AbstractC06443y.A08(!z6);
+        c2280o0.A05(false);
     }
 
-    private void A0N(C2260o0 c2260o0, long j6) {
+    private void A0N(C2280o0 c2280o0, long j6) {
         DownloadRequest downloadRequest;
-        downloadRequest = c2260o0.A04;
-        C0802Bk c0802Bk = (C0802Bk) AbstractC06243y.A01(A06(downloadRequest.A02, false));
-        if (j6 == c0802Bk.A04 || j6 == -1) {
+        downloadRequest = c2280o0.A04;
+        C0822Bk c0822Bk = (C0822Bk) AbstractC06443y.A01(A06(downloadRequest.A02, false));
+        if (j6 == c0822Bk.A04 || j6 == -1) {
             return;
         }
-        A03(new C0802Bk(c0802Bk.A07, c0802Bk.A02, c0802Bk.A05, System.currentTimeMillis(), j6, c0802Bk.A03, c0802Bk.A01, c0802Bk.A00));
+        A03(new C0822Bk(c0822Bk.A07, c0822Bk.A02, c0822Bk.A05, System.currentTimeMillis(), j6, c0822Bk.A03, c0822Bk.A01, c0822Bk.A00));
     }
 
-    private void A0O(C2260o0 c2260o0, C0802Bk c0802Bk) {
-        boolean z3;
-        if (c2260o0 == null) {
-            boolean z6 = this.A06;
+    private void A0O(C2280o0 c2280o0, C0822Bk c0822Bk) {
+        boolean z6;
+        if (c2280o0 == null) {
+            boolean z9 = this.A06;
             if (A0E[3].charAt(4) != '8') {
                 throw new RuntimeException();
             }
             A0E[0] = "e4XXQnURg6mIpThj5jyh4wOBvzx0EgPt";
-            if (z6) {
+            if (z9) {
                 return;
             }
-            C2260o0 c2260o02 = new C2260o0(c0802Bk.A07, this.A09.A5M(c0802Bk.A07), c0802Bk.A00, true, this.A03, this);
-            this.A0C.put(c0802Bk.A07.A02, c2260o02);
+            C2280o0 c2280o02 = new C2280o0(c0822Bk.A07, this.A09.A5M(c0822Bk.A07), c0822Bk.A00, true, this.A03, this);
+            this.A0C.put(c0822Bk.A07.A02, c2280o02);
             this.A06 = true;
-            c2260o02.start();
+            c2280o02.start();
             return;
         }
-        z3 = c2260o0.A06;
-        if (!z3) {
-            c2260o0.A05(false);
+        z6 = c2280o0.A06;
+        if (!z6) {
+            c2280o0.A05(false);
         }
     }
 
-    private void A0P(C2260o0 c2260o0, C0802Bk c0802Bk, int i) {
-        boolean z3;
-        z3 = c2260o0.A06;
-        AbstractC06243y.A08(!z3);
+    private void A0P(C2280o0 c2280o0, C0822Bk c0822Bk, int i) {
+        boolean z6;
+        z6 = c2280o0.A06;
+        AbstractC06443y.A08(!z6);
         if (!A0U() || i >= this.A02) {
-            A04(c0802Bk, 0, 0);
-            c2260o0.A05(false);
+            A04(c0822Bk, 0, 0);
+            c2280o0.A05(false);
         }
     }
 
     private void A0R(String str) {
-        C0802Bk A06 = A06(str, true);
+        C0822Bk A06 = A06(str, true);
         if (A06 == null) {
-            AbstractC06324g.A05(A08(2, 15, 106), A08(118, 39, 4) + str);
+            AbstractC06524g.A05(A08(2, 15, 106), A08(118, 39, 4) + str);
         } else {
             A04(A06, 5, 0);
             A0B();
@@ -561,31 +561,31 @@ public final class C2 extends Handler {
     private void A0S(String str, int i) {
         String A08 = A08(2, 15, 106);
         if (str == null) {
-            for (int i6 = 0; i6 < this.A0B.size(); i6++) {
-                A0J(this.A0B.get(i6), i);
+            for (int i4 = 0; i4 < this.A0B.size(); i4++) {
+                A0J(this.A0B.get(i4), i);
             }
             try {
                 this.A0A.AJq(i);
             } catch (IOException e9) {
-                AbstractC06324g.A08(A08, A08(157, 32, 101), e9);
+                AbstractC06524g.A08(A08, A08(157, 32, 101), e9);
             }
         } else {
-            C0802Bk A06 = A06(str, false);
+            C0822Bk A06 = A06(str, false);
             if (A06 != null) {
                 A0J(A06, i);
             } else {
                 try {
                     this.A0A.AJr(str, i);
                 } catch (IOException e10) {
-                    AbstractC06324g.A08(A08, A08(189, 34, 0) + str, e10);
+                    AbstractC06524g.A08(A08, A08(189, 34, 0) + str, e10);
                 }
             }
         }
         A0B();
     }
 
-    private void A0T(boolean z3) {
-        this.A05 = z3;
+    private void A0T(boolean z6) {
+        this.A05 = z6;
         A0B();
     }
 
@@ -608,7 +608,7 @@ public final class C2 extends Handler {
         if (WU.A02(this)) {
             return;
         }
-        boolean z3 = true;
+        boolean z6 = true;
         try {
             switch (message.what) {
                 case 0:
@@ -639,11 +639,11 @@ public final class C2 extends Handler {
                     A0A();
                     break;
                 case 9:
-                    A0L((C2260o0) message.obj);
-                    z3 = false;
+                    A0L((C2280o0) message.obj);
+                    z6 = false;
                     break;
                 case 10:
-                    A0N((C2260o0) message.obj, C5C.A0N(message.arg1, message.arg2));
+                    A0N((C2280o0) message.obj, C5C.A0N(message.arg1, message.arg2));
                     return;
                 case 11:
                     A0C();
@@ -654,7 +654,7 @@ public final class C2 extends Handler {
                 default:
                     throw new IllegalStateException();
             }
-            this.A07.obtainMessage(1, z3 ? 1 : 0, this.A0C.size()).sendToTarget();
+            this.A07.obtainMessage(1, z6 ? 1 : 0, this.A0C.size()).sendToTarget();
         } catch (Throwable th) {
             WU.A00(th, this);
         }

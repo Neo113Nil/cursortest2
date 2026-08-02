@@ -91,8 +91,8 @@ public abstract class ATInitMediation {
     }
 
     public String getUserId() {
-        Map<String, Object> m4 = t.b().m();
-        return m4 != null ? getStringFromMap(m4, "user_id") : "";
+        Map<String, Object> m9 = t.b().m();
+        return m9 != null ? getStringFromMap(m9, "user_id") : "";
     }
 
     public abstract void initSDK(Context context, Map<String, Object> map, MediationInitCallback mediationInitCallback);
@@ -110,20 +110,20 @@ public abstract class ATInitMediation {
         t.c(runnable);
     }
 
-    public final void sendNetworkEvent(final int i, final int i6, final Map<String, Object> map) {
+    public final void sendNetworkEvent(final int i, final int i4, final Map<String, Object> map) {
         runOnThreadPool(new Runnable() { // from class: com.anythink.core.api.ATInitMediation.1
             @Override // java.lang.Runnable
             public final void run() {
-                int i9 = i;
-                int i10 = i6;
+                int i6 = i;
+                int i9 = i4;
                 Map map2 = map;
-                if (i9 == 2 && i10 == 10001 && map2 != null) {
+                if (i6 == 2 && i9 == 10001 && map2 != null) {
                     try {
                         long b9 = q.b((Map<String, Object>) map2, "init_st");
                         long b10 = q.b((Map<String, Object>) map2, "init_et");
                         long b11 = q.b((Map<String, Object>) map2, "token_st");
                         long b12 = q.b((Map<String, Object>) map2, "token_et");
-                        e.a(q.a((Map<String, Object>) map2, ATAdConst.NETWORK_REQUEST_PARAMS_KEY.FORMAT, "-1"), q.a((Map<String, Object>) map2, "admob_init_adsource_id", ""), q.a((Map<String, Object>) map2, "admob_token_adsource_id", ""), q.a((Map<String, Object>) map2, j.w.f12610G, 0), b9, b10, b11, b12, (b9 <= 0 || b10 <= 0 || b11 <= 0 || b12 <= 0 || b9 <= b11) ? -1L : b10 - b11);
+                        e.a(q.a((Map<String, Object>) map2, ATAdConst.NETWORK_REQUEST_PARAMS_KEY.FORMAT, "-1"), q.a((Map<String, Object>) map2, "admob_init_adsource_id", ""), q.a((Map<String, Object>) map2, "admob_token_adsource_id", ""), q.a((Map<String, Object>) map2, j.w.f13396G, 0), b9, b10, b11, b12, (b9 <= 0 || b10 <= 0 || b11 <= 0 || b12 <= 0 || b9 <= b11) ? -1L : b10 - b11);
                     } catch (Throwable unused) {
                     }
                 }
@@ -135,16 +135,16 @@ public abstract class ATInitMediation {
         this.devBundleName = str;
     }
 
-    public boolean setUserDataConsent(Context context, boolean z3, boolean z6) {
+    public boolean setUserDataConsent(Context context, boolean z6, boolean z9) {
         return false;
     }
 
-    public static boolean getBooleanFromMap(Map<String, Object> map, String str, boolean z3) {
-        return ((Boolean) q.a(map, str, Boolean.valueOf(z3))).booleanValue();
+    public static boolean getBooleanFromMap(Map<String, Object> map, String str, boolean z6) {
+        return ((Boolean) q.a(map, str, Boolean.valueOf(z6))).booleanValue();
     }
 
-    public static double getDoubleFromMap(Map<String, Object> map, String str, double d2) {
-        return ((Double) q.a(map, str, Double.valueOf(d2))).doubleValue();
+    public static double getDoubleFromMap(Map<String, Object> map, String str, double d9) {
+        return ((Double) q.a(map, str, Double.valueOf(d9))).doubleValue();
     }
 
     public static int getIntFromMap(Map<String, Object> map, String str, int i) {

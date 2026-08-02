@@ -31,7 +31,7 @@ public class LicenseResponseHelper {
             JSONObject base64ToJson = base64ToJson(jwsPartsForLicenseData[0]);
             JSONObject base64ToJson2 = base64ToJson(jwsPartsForLicenseData[1]);
             String str = jwsPartsForLicenseData[2];
-            String str2 = jwsPartsForLicenseData[0] + j.f12378z + jwsPartsForLicenseData[1];
+            String str2 = jwsPartsForLicenseData[0] + j.f13164z + jwsPartsForLicenseData[1];
             if (!base64ToJson.getString("alg").equals("RS256")) {
                 throw new LicenseCheckException("Response must be signed with RS256 algorithm.");
             }

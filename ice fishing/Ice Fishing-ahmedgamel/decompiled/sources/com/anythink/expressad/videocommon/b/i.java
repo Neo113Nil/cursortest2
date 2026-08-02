@@ -16,28 +16,28 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class i {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f22294a = "ending_page_source";
+    public static final String f23081a = "ending_page_source";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f22295b = "ending_page_save_time";
+    public static final String f23082b = "ending_page_save_time";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f22296c = "H5DownLoadManager";
+    private static final String f23083c = "H5DownLoadManager";
 
     /* renamed from: f, reason: collision with root package name */
-    private static volatile i f22297f;
+    private static volatile i f23084f;
 
     /* renamed from: d, reason: collision with root package name */
-    private CopyOnWriteArrayList<String> f22298d;
+    private CopyOnWriteArrayList<String> f23085d;
 
     /* renamed from: e, reason: collision with root package name */
-    private ConcurrentMap<String, com.anythink.expressad.videocommon.b.d> f22299e;
+    private ConcurrentMap<String, com.anythink.expressad.videocommon.b.d> f23086e;
 
     /* renamed from: g, reason: collision with root package name */
-    private n f22300g;
+    private n f23087g;
 
     /* renamed from: h, reason: collision with root package name */
-    private j f22301h;
+    private j f23088h;
     private boolean i = false;
 
     public interface a {
@@ -62,17 +62,17 @@ public class i {
 
     private i() {
         try {
-            this.f22300g = n.a();
-            this.f22301h = j.a.f22310a;
-            this.f22298d = new CopyOnWriteArrayList<>();
-            this.f22299e = new ConcurrentHashMap();
+            this.f23087g = n.a();
+            this.f23088h = j.a.f23097a;
+            this.f23085d = new CopyOnWriteArrayList<>();
+            this.f23086e = new ConcurrentHashMap();
         } catch (Throwable th) {
             th.getMessage();
         }
     }
 
     private String c(String str) {
-        j jVar = this.f22301h;
+        j jVar = this.f23088h;
         return jVar != null ? jVar.b(str) : str;
     }
 
@@ -82,7 +82,7 @@ public class i {
 
     private static String e(String str) {
         try {
-            Object b9 = x.b(com.anythink.expressad.foundation.b.a.c().e(), f22294a.concat(String.valueOf(str)), "");
+            Object b9 = x.b(com.anythink.expressad.foundation.b.a.c().e(), f23081a.concat(String.valueOf(str)), "");
             if (b9 == null || !(b9 instanceof String)) {
                 return null;
             }
@@ -99,7 +99,7 @@ public class i {
 
     private static long f(String str) {
         try {
-            Object b9 = x.b(com.anythink.expressad.foundation.b.a.c().e(), f22295b.concat(String.valueOf(str)), 0L);
+            Object b9 = x.b(com.anythink.expressad.foundation.b.a.c().e(), f23082b.concat(String.valueOf(str)), 0L);
             if (b9 != null && (b9 instanceof Long)) {
                 return ((Long) b9).longValue();
             }
@@ -111,7 +111,7 @@ public class i {
 
     private static void g(String str) {
         try {
-            x.a(com.anythink.expressad.foundation.b.a.c().e(), f22295b.concat(String.valueOf(str)), Long.valueOf(System.currentTimeMillis()));
+            x.a(com.anythink.expressad.foundation.b.a.c().e(), f23082b.concat(String.valueOf(str)), Long.valueOf(System.currentTimeMillis()));
         } catch (Exception e9) {
             e9.printStackTrace();
         }
@@ -122,34 +122,34 @@ public class i {
     }
 
     public static i a() {
-        if (f22297f == null) {
+        if (f23084f == null) {
             synchronized (i.class) {
                 try {
-                    if (f22297f == null) {
-                        f22297f = new i();
+                    if (f23084f == null) {
+                        f23084f = new i();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f22297f;
+        return f23084f;
     }
 
     private void b(String str, d dVar) {
         try {
-            String a9 = this.f22300g.a(str);
+            String a9 = this.f23087g.a(str);
             try {
-                if (!TextUtils.isEmpty(this.f22300g.b(str))) {
+                if (!TextUtils.isEmpty(this.f23087g.b(str))) {
                     if (dVar != null) {
                         dVar.a(str);
                     }
-                } else if (!this.f22299e.containsKey(a9)) {
-                    com.anythink.expressad.videocommon.b.d dVar2 = new com.anythink.expressad.videocommon.b.d(this.f22299e, this.f22300g, dVar, str, a9);
-                    this.f22299e.put(a9, dVar2);
+                } else if (!this.f23086e.containsKey(a9)) {
+                    com.anythink.expressad.videocommon.b.d dVar2 = new com.anythink.expressad.videocommon.b.d(this.f23086e, this.f23087g, dVar, str, a9);
+                    this.f23086e.put(a9, dVar2);
                     g.a(str, a9, dVar2);
                 } else {
-                    com.anythink.expressad.videocommon.b.d dVar3 = this.f22299e.get(a9);
+                    com.anythink.expressad.videocommon.b.d dVar3 = this.f23086e.get(a9);
                     if (dVar3 != null) {
                         dVar3.a(dVar);
                     }
@@ -159,7 +159,7 @@ public class i {
                 if (dVar != null) {
                     dVar.a(str, "downloadzip failed");
                 }
-                if (com.anythink.expressad.a.f17618a) {
+                if (com.anythink.expressad.a.f18405a) {
                     e.printStackTrace();
                 }
             }
@@ -170,15 +170,15 @@ public class i {
 
     private void c(final String str, final a aVar) {
         try {
-            if (this.f22298d.contains(str)) {
+            if (this.f23085d.contains(str)) {
                 return;
             }
-            this.f22298d.add(str);
-            h.a.f22293a.a(new com.anythink.expressad.foundation.g.h.a() { // from class: com.anythink.expressad.videocommon.b.i.1
+            this.f23085d.add(str);
+            h.a.f23080a.a(new com.anythink.expressad.foundation.g.h.a() { // from class: com.anythink.expressad.videocommon.b.i.1
                 @Override // com.anythink.expressad.foundation.g.h.a
                 public final void a() {
-                    if (TextUtils.isEmpty(i.this.f22301h.c(str))) {
-                        g.a(str, i.this.f22301h.a(str), new c() { // from class: com.anythink.expressad.videocommon.b.i.1.1
+                    if (TextUtils.isEmpty(i.this.f23088h.c(str))) {
+                        g.a(str, i.this.f23088h.a(str), new c() { // from class: com.anythink.expressad.videocommon.b.i.1.1
                             @Override // com.anythink.expressad.videocommon.b.i.c
                             public final void a() {
                             }
@@ -186,11 +186,11 @@ public class i {
                             @Override // com.anythink.expressad.videocommon.b.i.c
                             public final void a(String str2, String str3) {
                                 try {
-                                    i.this.f22298d.remove(str3);
+                                    i.this.f23085d.remove(str3);
                                     if (TextUtils.isEmpty(str2)) {
                                         return;
                                     }
-                                    if (i.this.f22301h.a(str3, str2)) {
+                                    if (i.this.f23088h.a(str3, str2)) {
                                         a aVar2 = aVar;
                                         if (aVar2 != null) {
                                             aVar2.a(str3);
@@ -203,7 +203,7 @@ public class i {
                                         aVar3.a(str3, "save file failed");
                                     }
                                 } catch (Exception e9) {
-                                    if (com.anythink.expressad.a.f17618a) {
+                                    if (com.anythink.expressad.a.f18405a) {
                                         e9.printStackTrace();
                                     }
                                     a aVar4 = aVar;
@@ -216,14 +216,14 @@ public class i {
                             @Override // com.anythink.expressad.videocommon.b.i.c
                             public final void a(String str2) {
                                 try {
-                                    i.this.f22298d.remove(str);
+                                    i.this.f23085d.remove(str);
                                     AnonymousClass1 anonymousClass1 = AnonymousClass1.this;
                                     a aVar2 = aVar;
                                     if (aVar2 != null) {
                                         aVar2.a(str, str2);
                                     }
                                 } catch (Exception e9) {
-                                    if (com.anythink.expressad.a.f17618a) {
+                                    if (com.anythink.expressad.a.f18405a) {
                                         e9.printStackTrace();
                                     }
                                     AnonymousClass1 anonymousClass12 = AnonymousClass1.this;
@@ -236,7 +236,7 @@ public class i {
                         });
                         return;
                     }
-                    i.this.f22298d.remove(str);
+                    i.this.f23085d.remove(str);
                     a aVar2 = aVar;
                     if (aVar2 != null) {
                         aVar2.a(str);
@@ -252,14 +252,14 @@ public class i {
                 }
             });
         } catch (Throwable th) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 th.printStackTrace();
             }
         }
     }
 
     public final String a(String str) {
-        n nVar = this.f22300g;
+        n nVar = this.f23087g;
         if (nVar != null) {
             return nVar.b(str);
         }
@@ -272,7 +272,7 @@ public class i {
 
     private static void a(String str, String str2) {
         try {
-            x.a(com.anythink.expressad.foundation.b.a.c().e(), f22294a.concat(String.valueOf(str2)), str);
+            x.a(com.anythink.expressad.foundation.b.a.c().e(), f23081a.concat(String.valueOf(str2)), str);
         } catch (Exception e9) {
             e9.printStackTrace();
         }
@@ -280,23 +280,23 @@ public class i {
 
     private void a(String str, d dVar) {
         try {
-            String a9 = this.f22300g.a(str);
+            String a9 = this.f23087g.a(str);
             try {
-                if (!TextUtils.isEmpty(this.f22300g.b(str))) {
+                if (!TextUtils.isEmpty(this.f23087g.b(str))) {
                     if (dVar != null) {
                         dVar.a(str);
                     }
                 } else {
-                    if (this.f22299e.containsKey(a9)) {
-                        com.anythink.expressad.videocommon.b.d dVar2 = this.f22299e.get(a9);
+                    if (this.f23086e.containsKey(a9)) {
+                        com.anythink.expressad.videocommon.b.d dVar2 = this.f23086e.get(a9);
                         if (dVar2 != null) {
                             dVar2.a(dVar);
                             return;
                         }
                         return;
                     }
-                    com.anythink.expressad.videocommon.b.d dVar3 = new com.anythink.expressad.videocommon.b.d(this.f22299e, this.f22300g, dVar, str, a9);
-                    this.f22299e.put(a9, dVar3);
+                    com.anythink.expressad.videocommon.b.d dVar3 = new com.anythink.expressad.videocommon.b.d(this.f23086e, this.f23087g, dVar, str, a9);
+                    this.f23086e.put(a9, dVar3);
                     g.a(str, a9, dVar3);
                 }
             } catch (Exception e9) {
@@ -304,7 +304,7 @@ public class i {
                 if (dVar != null) {
                     dVar.a(str, "downloadzip failed");
                 }
-                if (com.anythink.expressad.a.f17618a) {
+                if (com.anythink.expressad.a.f18405a) {
                     e.printStackTrace();
                 }
             }
@@ -362,7 +362,7 @@ public class i {
             if (path.toLowerCase().endsWith(".zip")) {
                 return a(str);
             }
-            j jVar = this.f22301h;
+            j jVar = this.f23088h;
             if (jVar != null) {
                 return jVar.b(str);
             }

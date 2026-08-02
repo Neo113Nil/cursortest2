@@ -7,19 +7,19 @@ import android.view.View;
 public final class G extends I {
 
     /* renamed from: x, reason: collision with root package name */
-    public final /* synthetic */ int f2040x;
+    public final /* synthetic */ int f2128x;
 
-    public G(int i, Class cls, int i6, int i9, int i10) {
-        this.f2040x = i10;
-        this.f2042n = i;
-        this.f2045w = cls;
-        this.f2044v = i6;
-        this.f2043u = i9;
+    public G(int i, Class cls, int i4, int i6, int i9) {
+        this.f2128x = i9;
+        this.f2130n = i;
+        this.f2133w = cls;
+        this.f2132v = i4;
+        this.f2131u = i6;
     }
 
     @Override // O.I
     public final Object c(View view) {
-        switch (this.f2040x) {
+        switch (this.f2128x) {
             case 0:
                 return Boolean.valueOf(P.d(view));
             case 1:
@@ -31,7 +31,7 @@ public final class G extends I {
 
     @Override // O.I
     public final void d(View view, Object obj) {
-        switch (this.f2040x) {
+        switch (this.f2128x) {
             case 0:
                 P.j(view, ((Boolean) obj).booleanValue());
                 break;
@@ -46,7 +46,7 @@ public final class G extends I {
 
     @Override // O.I
     public final boolean g(Object obj, Object obj2) {
-        switch (this.f2040x) {
+        switch (this.f2128x) {
             case 0:
                 Boolean bool = (Boolean) obj;
                 Boolean bool2 = (Boolean) obj2;

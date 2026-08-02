@@ -1,65 +1,65 @@
 package J0;
 
-import S7.InterfaceC0404w;
+import S7.InterfaceC0408w;
 import androidx.work.CoroutineWorker;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes.dex */
 public final class e extends B7.h implements I7.p {
 
     /* renamed from: n, reason: collision with root package name */
-    public m f1382n;
+    public l f1411n;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f1383u;
+    public int f1412u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final /* synthetic */ m f1384v;
+    public final /* synthetic */ l f1413v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final /* synthetic */ CoroutineWorker f1385w;
+    public final /* synthetic */ CoroutineWorker f1414w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public e(m mVar, CoroutineWorker coroutineWorker, InterfaceC5267d interfaceC5267d) {
-        super(2, interfaceC5267d);
-        this.f1384v = mVar;
-        this.f1385w = coroutineWorker;
+    public e(l lVar, CoroutineWorker coroutineWorker, InterfaceC5240d interfaceC5240d) {
+        super(2, interfaceC5240d);
+        this.f1413v = lVar;
+        this.f1414w = coroutineWorker;
     }
 
     @Override // B7.a
-    public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-        return new e(this.f1384v, this.f1385w, interfaceC5267d);
+    public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+        return new e(this.f1413v, this.f1414w, interfaceC5240d);
     }
 
     @Override // I7.p
     public final Object invoke(Object obj, Object obj2) {
-        return ((e) create((InterfaceC0404w) obj, (InterfaceC5267d) obj2)).invokeSuspend(u7.v.f41353a);
+        return ((e) create((InterfaceC0408w) obj, (InterfaceC5240d) obj2)).invokeSuspend(u7.v.f41073a);
     }
 
     @Override // B7.a
     public final Object invokeSuspend(Object obj) {
-        m mVar;
-        A7.a aVar = A7.a.f58n;
-        int i = this.f1383u;
+        l lVar;
+        A7.a aVar = A7.a.f215n;
+        int i = this.f1412u;
         if (i == 0) {
-            com.bumptech.glide.d.k(obj);
-            m mVar2 = this.f1384v;
-            this.f1382n = mVar2;
-            this.f1383u = 1;
-            Object foregroundInfo = this.f1385w.getForegroundInfo(this);
+            Q3.b.s(obj);
+            l lVar2 = this.f1413v;
+            this.f1411n = lVar2;
+            this.f1412u = 1;
+            Object foregroundInfo = this.f1414w.getForegroundInfo(this);
             if (foregroundInfo == aVar) {
                 return aVar;
             }
-            mVar = mVar2;
+            lVar = lVar2;
             obj = foregroundInfo;
         } else {
             if (i != 1) {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            mVar = this.f1382n;
-            com.bumptech.glide.d.k(obj);
+            lVar = this.f1411n;
+            Q3.b.s(obj);
         }
-        mVar.f1400n.j(obj);
-        return u7.v.f41353a;
+        lVar.f1428n.j(obj);
+        return u7.v.f41073a;
     }
 }

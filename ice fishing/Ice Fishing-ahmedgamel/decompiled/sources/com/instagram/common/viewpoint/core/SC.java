@@ -9,7 +9,7 @@ public final class SC implements NativeComponentTagApi {
     @Override // com.facebook.ads.internal.api.NativeComponentTagApi
     public final void tagView(View view, NativeAdBase.NativeComponentTag nativeComponentTag) {
         if (view != null && nativeComponentTag != null) {
-            EnumC1350Xc.A03(view, nativeComponentTag);
+            EnumC1370Xc.A03(view, nativeComponentTag);
         }
     }
 }

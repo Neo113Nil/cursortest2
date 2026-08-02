@@ -4,17 +4,17 @@ package com.google.android.gms.internal.ads;
 public abstract class UE {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final C3774qG f27913a = new C3774qG(XE.class, InterfaceC3394jE.class, C3586mr.f32611P);
+    public static final C3797qG f28710a = new C3797qG(XE.class, InterfaceC3417jE.class, C3609mr.f33389P);
 
     /* renamed from: b, reason: collision with root package name */
-    public static final XF f27914b;
+    public static final XF f28711b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final CE f27915c;
+    public static final CE f28712c;
 
     static {
-        C3829rI.E();
-        f27914b = new XF(InterfaceC3394jE.class, "type.googleapis.com/google.crypto.tink.KmsAeadKey", 6);
-        f27915c = CE.f24069g;
+        C3852rI.E();
+        f28711b = new XF(InterfaceC3417jE.class, "type.googleapis.com/google.crypto.tink.KmsAeadKey", 6);
+        f28712c = CE.f24832g;
     }
 }

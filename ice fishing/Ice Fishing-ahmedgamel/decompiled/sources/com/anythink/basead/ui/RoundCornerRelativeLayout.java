@@ -15,52 +15,52 @@ import com.anythink.core.common.v.q;
 public class RoundCornerRelativeLayout extends RelativeLayout {
 
     /* renamed from: a, reason: collision with root package name */
-    private Path f10237a;
+    private Path f11023a;
 
     /* renamed from: b, reason: collision with root package name */
-    private Paint f10238b;
+    private Paint f11024b;
 
     /* renamed from: c, reason: collision with root package name */
-    private RectF f10239c;
+    private RectF f11025c;
 
     /* renamed from: d, reason: collision with root package name */
-    private float[] f10240d;
+    private float[] f11026d;
 
     public RoundCornerRelativeLayout(Context context) {
         super(context);
-        this.f10240d = new float[8];
+        this.f11026d = new float[8];
         a();
     }
 
     private void a() {
         float a9 = q.a(getContext(), 12.0f);
         setRadius(a9, a9, a9, a9);
-        this.f10237a = new Path();
-        this.f10238b = new Paint(1);
-        this.f10239c = new RectF();
-        this.f10238b.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_IN));
+        this.f11023a = new Path();
+        this.f11024b = new Paint(1);
+        this.f11025c = new RectF();
+        this.f11024b.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_IN));
     }
 
     private Path b() {
-        this.f10237a.reset();
-        this.f10237a.addRoundRect(this.f10239c, this.f10240d, Path.Direction.CW);
-        return this.f10237a;
+        this.f11023a.reset();
+        this.f11023a.addRoundRect(this.f11025c, this.f11026d, Path.Direction.CW);
+        return this.f11023a;
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public void dispatchDraw(Canvas canvas) {
         canvas.save();
-        this.f10237a.reset();
-        this.f10237a.addRoundRect(this.f10239c, this.f10240d, Path.Direction.CW);
-        canvas.clipPath(this.f10237a);
+        this.f11023a.reset();
+        this.f11023a.addRoundRect(this.f11025c, this.f11026d, Path.Direction.CW);
+        canvas.clipPath(this.f11023a);
         super.dispatchDraw(canvas);
         canvas.restore();
     }
 
     @Override // android.view.View
-    public void onSizeChanged(int i, int i6, int i9, int i10) {
-        super.onSizeChanged(i, i6, i9, i10);
-        this.f10239c.set(0.0f, 0.0f, i, i6);
+    public void onSizeChanged(int i, int i4, int i6, int i9) {
+        super.onSizeChanged(i, i4, i6, i9);
+        this.f11025c.set(0.0f, 0.0f, i, i4);
     }
 
     public void setRadius(int i) {
@@ -68,10 +68,10 @@ public class RoundCornerRelativeLayout extends RelativeLayout {
         setRadius(a9, a9, a9, a9);
     }
 
-    public void setRadius(float f3, float f9, float f10, float f11) {
-        float[] fArr = this.f10240d;
-        fArr[1] = f3;
-        fArr[0] = f3;
+    public void setRadius(float f2, float f9, float f10, float f11) {
+        float[] fArr = this.f11026d;
+        fArr[1] = f2;
+        fArr[0] = f2;
         fArr[3] = f9;
         fArr[2] = f9;
         fArr[5] = f10;
@@ -83,19 +83,19 @@ public class RoundCornerRelativeLayout extends RelativeLayout {
 
     public RoundCornerRelativeLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f10240d = new float[8];
+        this.f11026d = new float[8];
         a();
     }
 
     public RoundCornerRelativeLayout(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f10240d = new float[8];
+        this.f11026d = new float[8];
         a();
     }
 
-    public RoundCornerRelativeLayout(Context context, AttributeSet attributeSet, int i, int i6) {
-        super(context, attributeSet, i, i6);
-        this.f10240d = new float[8];
+    public RoundCornerRelativeLayout(Context context, AttributeSet attributeSet, int i, int i4) {
+        super(context, attributeSet, i, i4);
+        this.f11026d = new float[8];
         a();
     }
 }

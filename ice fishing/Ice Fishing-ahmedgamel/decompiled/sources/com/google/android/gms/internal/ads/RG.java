@@ -6,54 +6,54 @@ import java.security.GeneralSecurityException;
 public abstract class RG {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final C3504lG f27187a;
+    public static final C3527lG f27943a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final C3396jG f27188b;
+    public static final C3419jG f27944b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final TF f27189c;
+    public static final TF f27945c;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final RF f27190d;
+    public static final RF f27946d;
 
     static {
-        C3240gK a9 = DG.a("type.googleapis.com/google.crypto.tink.AesCmacKey");
-        f27187a = new C3504lG(GG.class, C3880sF.f33941N);
-        f27188b = new C3396jG(a9, C3880sF.f33938K);
-        f27189c = new TF(EG.class, C3880sF.f33939L);
-        f27190d = new RF(a9, C3880sF.f33940M);
+        C3263gK a9 = DG.a("type.googleapis.com/google.crypto.tink.AesCmacKey");
+        f27943a = new C3527lG(GG.class, C3903sF.f34709N);
+        f27944b = new C3419jG(a9, C3903sF.f34706K);
+        f27945c = new TF(EG.class, C3903sF.f34707L);
+        f27946d = new RF(a9, C3903sF.f34708M);
     }
 
-    public static C3933tE a(C3933tE c3933tE) {
-        if (c3933tE.equals(C3933tE.f34243r)) {
-            return C3933tE.f34230d;
+    public static C3956tE a(C3956tE c3956tE) {
+        if (c3956tE.equals(C3956tE.f35029r)) {
+            return C3956tE.f35016d;
         }
-        if (c3933tE.equals(C3933tE.f34244s)) {
-            return C3933tE.f34233g;
+        if (c3956tE.equals(C3956tE.f35030s)) {
+            return C3956tE.f35019g;
         }
-        if (c3933tE.equals(C3933tE.f34246u)) {
-            return C3933tE.f34232f;
+        if (c3956tE.equals(C3956tE.f35032u)) {
+            return C3956tE.f35018f;
         }
-        if (c3933tE.equals(C3933tE.f34245t)) {
-            return C3933tE.f34231e;
+        if (c3956tE.equals(C3956tE.f35031t)) {
+            return C3956tE.f35017e;
         }
-        throw new GeneralSecurityException("Unable to serialize variant: ".concat(String.valueOf(c3933tE)));
+        throw new GeneralSecurityException("Unable to serialize variant: ".concat(String.valueOf(c3956tE)));
     }
 
-    public static C3933tE b(C3933tE c3933tE) {
-        if (c3933tE == C3933tE.f34230d) {
-            return C3933tE.f34243r;
+    public static C3956tE b(C3956tE c3956tE) {
+        if (c3956tE == C3956tE.f35016d) {
+            return C3956tE.f35029r;
         }
-        if (c3933tE == C3933tE.f34233g) {
-            return C3933tE.f34244s;
+        if (c3956tE == C3956tE.f35019g) {
+            return C3956tE.f35030s;
         }
-        if (c3933tE == C3933tE.f34231e) {
-            return C3933tE.f34245t;
+        if (c3956tE == C3956tE.f35017e) {
+            return C3956tE.f35031t;
         }
-        if (c3933tE == C3933tE.f34232f) {
-            return C3933tE.f34246u;
+        if (c3956tE == C3956tE.f35018f) {
+            return C3956tE.f35032u;
         }
-        throw new GeneralSecurityException("Unable to parse OutputPrefixType: ".concat(c3933tE.f34252b));
+        throw new GeneralSecurityException("Unable to parse OutputPrefixType: ".concat(c3956tE.f35038b));
     }
 }

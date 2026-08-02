@@ -11,19 +11,19 @@ import java.util.List;
 public abstract class b implements f {
 
     /* renamed from: a, reason: collision with root package name */
-    private final m[] f7904a;
+    private final m[] f8690a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final long[] f7905b;
+    private final long[] f8691b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f7906c;
+    private int f8692c;
 
     /* renamed from: g, reason: collision with root package name */
-    protected final ae f7907g;
+    protected final ae f8693g;
 
     /* renamed from: h, reason: collision with root package name */
-    protected final int f7908h;
+    protected final int f8694h;
     protected final int[] i;
 
     public static final class a implements Comparator<m> {
@@ -31,12 +31,12 @@ public abstract class b implements f {
         }
 
         private static int a(m mVar, m mVar2) {
-            return mVar2.f8661d - mVar.f8661d;
+            return mVar2.f9447d - mVar.f9447d;
         }
 
         @Override // java.util.Comparator
         public final /* bridge */ /* synthetic */ int compare(m mVar, m mVar2) {
-            return mVar2.f8661d - mVar.f8661d;
+            return mVar2.f9447d - mVar.f9447d;
         }
 
         public /* synthetic */ a(byte b9) {
@@ -49,22 +49,22 @@ public abstract class b implements f {
         int i = 0;
         Object[] objArr = 0;
         com.anythink.basead.exoplayer.k.a.b(iArr.length > 0);
-        this.f7907g = (ae) com.anythink.basead.exoplayer.k.a.a(aeVar);
+        this.f8693g = (ae) com.anythink.basead.exoplayer.k.a.a(aeVar);
         int length = iArr.length;
-        this.f7908h = length;
-        this.f7904a = new m[length];
-        for (int i6 = 0; i6 < iArr.length; i6++) {
-            this.f7904a[i6] = aeVar.a(iArr[i6]);
+        this.f8694h = length;
+        this.f8690a = new m[length];
+        for (int i4 = 0; i4 < iArr.length; i4++) {
+            this.f8690a[i4] = aeVar.a(iArr[i4]);
         }
-        Arrays.sort(this.f7904a, new a(objArr == true ? 1 : 0));
-        this.i = new int[this.f7908h];
+        Arrays.sort(this.f8690a, new a(objArr == true ? 1 : 0));
+        this.i = new int[this.f8694h];
         while (true) {
-            int i9 = this.f7908h;
-            if (i >= i9) {
-                this.f7905b = new long[i9];
+            int i6 = this.f8694h;
+            if (i >= i6) {
+                this.f8691b = new long[i6];
                 return;
             } else {
-                this.i[i] = aeVar.a(this.f7904a[i]);
+                this.i[i] = aeVar.a(this.f8690a[i]);
                 i++;
             }
         }
@@ -81,9 +81,9 @@ public abstract class b implements f {
 
     @Override // com.anythink.basead.exoplayer.i.f
     public final int c(int i) {
-        for (int i6 = 0; i6 < this.f7908h; i6++) {
-            if (this.i[i6] == i) {
-                return i6;
+        for (int i4 = 0; i4 < this.f8694h; i4++) {
+            if (this.i[i4] == i) {
+                return i4;
             }
         }
         return -1;
@@ -99,7 +99,7 @@ public abstract class b implements f {
         }
         if (obj != null && getClass() == obj.getClass()) {
             b bVar = (b) obj;
-            if (this.f7907g == bVar.f7907g && Arrays.equals(this.i, bVar.i)) {
+            if (this.f8693g == bVar.f8693g && Arrays.equals(this.i, bVar.i)) {
                 return true;
             }
         }
@@ -108,7 +108,7 @@ public abstract class b implements f {
 
     @Override // com.anythink.basead.exoplayer.i.f
     public final ae f() {
-        return this.f7907g;
+        return this.f8693g;
     }
 
     @Override // com.anythink.basead.exoplayer.i.f
@@ -118,14 +118,14 @@ public abstract class b implements f {
 
     @Override // com.anythink.basead.exoplayer.i.f
     public final m h() {
-        return this.f7904a[b()];
+        return this.f8690a[b()];
     }
 
     public int hashCode() {
-        if (this.f7906c == 0) {
-            this.f7906c = Arrays.hashCode(this.i) + (System.identityHashCode(this.f7907g) * 31);
+        if (this.f8692c == 0) {
+            this.f8692c = Arrays.hashCode(this.i) + (System.identityHashCode(this.f8693g) * 31);
         }
-        return this.f7906c;
+        return this.f8692c;
     }
 
     @Override // com.anythink.basead.exoplayer.i.f
@@ -134,22 +134,22 @@ public abstract class b implements f {
     }
 
     @Override // com.anythink.basead.exoplayer.i.f
-    public void a(float f3) {
+    public void a(float f2) {
     }
 
     public final boolean b(int i, long j6) {
-        return this.f7905b[i] > j6;
+        return this.f8691b[i] > j6;
     }
 
     @Override // com.anythink.basead.exoplayer.i.f
     public final m a(int i) {
-        return this.f7904a[i];
+        return this.f8690a[i];
     }
 
     @Override // com.anythink.basead.exoplayer.i.f
     public final int a(m mVar) {
-        for (int i = 0; i < this.f7908h; i++) {
-            if (this.f7904a[i] == mVar) {
+        for (int i = 0; i < this.f8694h; i++) {
+            if (this.f8690a[i] == mVar) {
                 return i;
             }
         }
@@ -165,15 +165,15 @@ public abstract class b implements f {
     public final boolean a(int i, long j6) {
         long elapsedRealtime = SystemClock.elapsedRealtime();
         boolean b9 = b(i, elapsedRealtime);
-        int i6 = 0;
-        while (i6 < this.f7908h && !b9) {
-            b9 = (i6 == i || b(i6, elapsedRealtime)) ? false : true;
-            i6++;
+        int i4 = 0;
+        while (i4 < this.f8694h && !b9) {
+            b9 = (i4 == i || b(i4, elapsedRealtime)) ? false : true;
+            i4++;
         }
         if (!b9) {
             return false;
         }
-        long[] jArr = this.f7905b;
+        long[] jArr = this.f8691b;
         jArr[i] = Math.max(jArr[i], elapsedRealtime + j6);
         return true;
     }

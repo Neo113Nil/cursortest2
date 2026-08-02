@@ -4,44 +4,44 @@ import android.content.Context;
 import java.util.concurrent.ExecutorService;
 
 /* loaded from: classes2.dex */
-public final class Fz implements InterfaceC3297hN {
+public final class Fz implements InterfaceC3320hN {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f24900a;
+    public final /* synthetic */ int f25690a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final C3351iN f24901b;
+    public final C3374iN f25691b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final C3351iN f24902c;
+    public final C3374iN f25692c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final C3243gN f24903d;
+    public final C3266gN f25693d;
 
-    public Fz(C3351iN c3351iN, C3243gN c3243gN, C3351iN c3351iN2) {
-        this.f24900a = 2;
-        this.f24901b = c3351iN;
-        this.f24903d = c3243gN;
-        this.f24902c = c3351iN2;
+    public Fz(C3374iN c3374iN, C3266gN c3266gN, C3374iN c3374iN2) {
+        this.f25690a = 2;
+        this.f25691b = c3374iN;
+        this.f25693d = c3266gN;
+        this.f25692c = c3374iN2;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3511lN
+    @Override // com.google.android.gms.internal.ads.InterfaceC3534lN
     public final Object f() {
-        switch (this.f24900a) {
+        switch (this.f25690a) {
             case 0:
-                return new Ez((Context) this.f24901b.f31039a, (C2949ay) this.f24902c.f31039a, (C3498lA) this.f24903d.f());
+                return new Ez((Context) this.f25691b.f31812a, (C2972ay) this.f25692c.f31812a, (C3521lA) this.f25693d.f());
             case 1:
-                return new Dz((Context) this.f24901b.f31039a, (ExecutorService) this.f24902c.f31039a, (Cy) this.f24903d.f());
+                return new Dz((Context) this.f25691b.f31812a, (ExecutorService) this.f25692c.f31812a, (Cy) this.f25693d.f());
             default:
-                Context context = (Context) this.f24901b.f31039a;
-                return new C3875sA(context, C3875sA.f33901g, (ExecutorService) this.f24902c.f31039a);
+                Context context = (Context) this.f25691b.f31812a;
+                return new C3898sA(context, C3898sA.f34669g, (ExecutorService) this.f25692c.f31812a);
         }
     }
 
-    public /* synthetic */ Fz(C3351iN c3351iN, C3351iN c3351iN2, C3243gN c3243gN, int i) {
-        this.f24900a = i;
-        this.f24901b = c3351iN;
-        this.f24902c = c3351iN2;
-        this.f24903d = c3243gN;
+    public /* synthetic */ Fz(C3374iN c3374iN, C3374iN c3374iN2, C3266gN c3266gN, int i) {
+        this.f25690a = i;
+        this.f25691b = c3374iN;
+        this.f25692c = c3374iN2;
+        this.f25693d = c3266gN;
     }
 }

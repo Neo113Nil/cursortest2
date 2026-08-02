@@ -4,35 +4,35 @@ package com.anythink.core.common.h;
 public final class at {
 
     /* renamed from: a, reason: collision with root package name */
-    private String f13567a;
+    private String f14353a;
 
     /* renamed from: b, reason: collision with root package name */
-    private int f13568b;
+    private int f14354b;
 
     /* renamed from: c, reason: collision with root package name */
-    private long f13569c;
+    private long f14355c;
 
     public final String a() {
-        return this.f13567a;
+        return this.f14353a;
     }
 
     public final int b() {
-        return this.f13568b;
+        return this.f14354b;
     }
 
     public final long c() {
-        return this.f13569c;
+        return this.f14355c;
     }
 
     public final void a(String str) {
-        this.f13567a = str;
+        this.f14353a = str;
     }
 
     public final void a(int i) {
-        this.f13568b = i;
+        this.f14354b = i;
     }
 
     public final void a(long j6) {
-        this.f13569c = j6;
+        this.f14355c = j6;
     }
 }

@@ -7,37 +7,37 @@ import com.iab.omid.library.toponad.adsession.FriendlyObstructionPurpose;
 public class e {
 
     /* renamed from: a, reason: collision with root package name */
-    private final com.iab.omid.library.toponad.weakreference.a f36246a;
+    private final com.iab.omid.library.toponad.weakreference.a f37013a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final String f36247b;
+    private final String f37014b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final FriendlyObstructionPurpose f36248c;
+    private final FriendlyObstructionPurpose f37015c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final String f36249d;
+    private final String f37016d;
 
     public e(View view, FriendlyObstructionPurpose friendlyObstructionPurpose, String str) {
-        this.f36246a = new com.iab.omid.library.toponad.weakreference.a(view);
-        this.f36247b = view.getClass().getCanonicalName();
-        this.f36248c = friendlyObstructionPurpose;
-        this.f36249d = str;
+        this.f37013a = new com.iab.omid.library.toponad.weakreference.a(view);
+        this.f37014b = view.getClass().getCanonicalName();
+        this.f37015c = friendlyObstructionPurpose;
+        this.f37016d = str;
     }
 
     public String a() {
-        return this.f36249d;
+        return this.f37016d;
     }
 
     public FriendlyObstructionPurpose b() {
-        return this.f36248c;
+        return this.f37015c;
     }
 
     public com.iab.omid.library.toponad.weakreference.a c() {
-        return this.f36246a;
+        return this.f37013a;
     }
 
     public String d() {
-        return this.f36247b;
+        return this.f37014b;
     }
 }

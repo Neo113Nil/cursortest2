@@ -6,7 +6,7 @@ import java.io.IOException;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public interface FI<T extends FL> {
-    void AEc(T t6, long j6, long j9, boolean z3);
+    void AEc(T t6, long j6, long j9, boolean z6);
 
     void AEe(T t6, long j6, long j9);
 

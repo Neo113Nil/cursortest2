@@ -47,7 +47,7 @@ public final class j {
         public final j fromString(String type) {
             kotlin.jvm.internal.h.e(type, "type");
             for (j jVar : j.values()) {
-                if (q.L(jVar.getValue(), type)) {
+                if (q.b0(jVar.getValue(), type)) {
                     return jVar;
                 }
             }
@@ -65,7 +65,7 @@ public final class j {
     static {
         j[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = com.bumptech.glide.e.b($values);
+        $ENTRIES = X2.a.h($values);
         Companion = new a(null);
     }
 

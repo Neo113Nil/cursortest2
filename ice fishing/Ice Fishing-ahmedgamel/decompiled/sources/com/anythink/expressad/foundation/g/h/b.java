@@ -7,29 +7,29 @@ import java.util.WeakHashMap;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19567a = "b";
+    private static final String f20354a = "b";
 
     /* renamed from: b, reason: collision with root package name */
-    private static WeakHashMap<Context, c> f19568b = new WeakHashMap<>();
+    private static WeakHashMap<Context, c> f20355b = new WeakHashMap<>();
 
     /* renamed from: c, reason: collision with root package name */
-    private c f19569c;
+    private c f20356c;
 
     /* renamed from: d, reason: collision with root package name */
-    private Context f19570d;
+    private Context f20357d;
 
     private b(Context context) {
-        this.f19570d = context;
-        if (f19568b.get(context) != null) {
-            this.f19569c = f19568b.get(this.f19570d);
+        this.f20357d = context;
+        if (f20355b.get(context) != null) {
+            this.f20356c = f20355b.get(this.f20357d);
             return;
         }
-        c cVar = new c(this.f19570d, 5);
-        this.f19569c = cVar;
-        f19568b.put(this.f19570d, cVar);
+        c cVar = new c(this.f20357d, 5);
+        this.f20356c = cVar;
+        f20355b.put(this.f20357d, cVar);
     }
 
     private void a(a aVar) {
-        this.f19569c.a(aVar);
+        this.f20356c.a(aVar);
     }
 }

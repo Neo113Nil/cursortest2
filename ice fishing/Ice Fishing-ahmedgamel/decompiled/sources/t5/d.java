@@ -126,8 +126,8 @@ public final class d {
         this.jsonPayload = jSONObject;
     }
 
-    public final void setNotificationToDisplay(boolean z3) {
-        this.isNotificationToDisplay = z3;
+    public final void setNotificationToDisplay(boolean z6) {
+        this.isNotificationToDisplay = z6;
     }
 
     public final void setOrgFlags(Integer num) {
@@ -154,8 +154,8 @@ public final class d {
         this.overriddenTitleFromExtender = charSequence;
     }
 
-    public final void setRestoring(boolean z3) {
-        this.isRestoring = z3;
+    public final void setRestoring(boolean z6) {
+        this.isRestoring = z6;
     }
 
     public final void setShownTimeStamp(Long l9) {

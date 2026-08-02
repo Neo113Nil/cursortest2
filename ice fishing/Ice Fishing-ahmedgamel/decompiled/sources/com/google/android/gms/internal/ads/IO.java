@@ -7,30 +7,30 @@ import android.os.Build;
 public final class IO {
 
     /* renamed from: c, reason: collision with root package name */
-    public static final IO f25498c;
+    public static final IO f26241c;
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f25499a;
+    public final String f26242a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final C3534lt f25500b;
+    public final C3557lt f26243b;
 
     static {
         new IO("");
-        f25498c = new IO("preload");
+        f26241c = new IO("preload");
     }
 
     public IO(String str) {
-        C3534lt c3534lt;
+        C3557lt c3557lt;
         LogSessionId logSessionId;
-        this.f25499a = str;
+        this.f26242a = str;
         if (Build.VERSION.SDK_INT >= 31) {
-            c3534lt = new C3534lt((byte) 0, 15);
+            c3557lt = new C3557lt((byte) 0, 15);
             logSessionId = LogSessionId.LOG_SESSION_ID_NONE;
-            c3534lt.f31863u = logSessionId;
+            c3557lt.f32643u = logSessionId;
         } else {
-            c3534lt = null;
+            c3557lt = null;
         }
-        this.f25500b = c3534lt;
+        this.f26243b = c3557lt;
     }
 }

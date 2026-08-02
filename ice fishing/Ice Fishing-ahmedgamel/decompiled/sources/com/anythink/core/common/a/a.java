@@ -15,19 +15,19 @@ import org.json.JSONObject;
 public class a {
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile a f12090b;
+    private static volatile a f12876b;
 
     /* renamed from: a, reason: collision with root package name */
-    ConcurrentHashMap<String, af> f12091a;
+    ConcurrentHashMap<String, af> f12877a;
 
     /* renamed from: c, reason: collision with root package name */
-    private com.anythink.core.common.e.o f12092c;
+    private com.anythink.core.common.e.o f12878c;
 
     private a() {
         if (t.b().g() != null) {
-            this.f12092c = com.anythink.core.common.e.o.a(com.anythink.core.common.e.e.a(t.b().g()));
+            this.f12878c = com.anythink.core.common.e.o.a(com.anythink.core.common.e.e.a(t.b().g()));
         }
-        this.f12091a = new ConcurrentHashMap<>(3);
+        this.f12877a = new ConcurrentHashMap<>(3);
     }
 
     private static void b(ad adVar) {
@@ -36,14 +36,14 @@ public class a {
         }
         try {
             JSONObject jSONObject = new JSONObject(adVar.i);
-            r a9 = e.a(adVar.token, jSONObject, adVar.f13422d, true);
+            r a9 = e.a(adVar.token, jSONObject, adVar.f14208d, true);
             if (a9 == null) {
                 adVar.i = "";
                 return;
             }
             adVar.i = jSONObject.toString();
-            a9.d(adVar.f13424f);
-            if (adVar.f13422d == 67) {
+            a9.d(adVar.f14210f);
+            if (adVar.f14208d == 67) {
                 com.anythink.core.common.f.c.a(t.b().g()).a(a9.v(), a9.az());
                 com.anythink.core.common.f.b.a(t.b().g()).a(a9.w(), a9.az());
             }
@@ -52,43 +52,43 @@ public class a {
     }
 
     public static void c(Context context, String str) {
-        com.anythink.core.common.v.af.a(context, u.b.f12854h, str + u.a.f12813A, 1);
+        com.anythink.core.common.v.af.a(context, u.b.f13640h, str + u.a.f13599A, 1);
     }
 
     private static boolean e(Context context, String str) {
         StringBuilder sb = new StringBuilder();
         sb.append(str);
-        sb.append(u.a.f12813A);
-        return com.anythink.core.common.v.af.b(context, u.b.f12854h, sb.toString(), 0) == 1;
+        sb.append(u.a.f13599A);
+        return com.anythink.core.common.v.af.b(context, u.b.f13640h, sb.toString(), 0) == 1;
     }
 
     public final String d(Context context, String str) {
-        if (this.f12092c == null) {
-            this.f12092c = com.anythink.core.common.e.o.a(com.anythink.core.common.e.e.a(context.getApplicationContext()));
+        if (this.f12878c == null) {
+            this.f12878c = com.anythink.core.common.e.o.a(com.anythink.core.common.e.e.a(context.getApplicationContext()));
         }
-        return this.f12092c.d(str);
+        return this.f12878c.d(str);
     }
 
     public static a a() {
-        if (f12090b == null) {
+        if (f12876b == null) {
             synchronized (a.class) {
                 try {
-                    if (f12090b == null) {
-                        f12090b = new a();
+                    if (f12876b == null) {
+                        f12876b = new a();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f12090b;
+        return f12876b;
     }
 
     public final ad a(String str, String str2) {
-        af afVar = this.f12091a.get(str);
+        af afVar = this.f12877a.get(str);
         if (afVar == null) {
-            afVar = this.f12092c.b(str);
-            this.f12091a.put(str, afVar);
+            afVar = this.f12878c.b(str);
+            this.f12877a.put(str, afVar);
         }
         return afVar.a(str2);
     }
@@ -97,29 +97,29 @@ public class a {
         com.anythink.core.common.v.b.b.a().b(new Runnable() { // from class: com.anythink.core.common.a.a.2
             @Override // java.lang.Runnable
             public final void run() {
-                if (a.this.f12092c == null) {
-                    a.this.f12092c = com.anythink.core.common.e.o.a(com.anythink.core.common.e.e.a(context.getApplicationContext()));
+                if (a.this.f12878c == null) {
+                    a.this.f12878c = com.anythink.core.common.e.o.a(com.anythink.core.common.e.e.a(context.getApplicationContext()));
                 }
-                a.this.f12092c.a(str);
+                a.this.f12878c.a(str);
             }
         }, 2);
-        com.anythink.core.common.v.af.a(context, u.b.f12854h, str + u.a.f12813A);
+        com.anythink.core.common.v.af.a(context, u.b.f13640h, str + u.a.f13599A);
     }
 
     public final void a(String str, ad adVar) {
-        if (this.f12092c == null) {
-            this.f12092c = com.anythink.core.common.e.o.a(com.anythink.core.common.e.e.a(t.b().g()));
+        if (this.f12878c == null) {
+            this.f12878c = com.anythink.core.common.e.o.a(com.anythink.core.common.e.e.a(t.b().g()));
         }
         if (!TextUtils.isEmpty(adVar.i)) {
             try {
                 JSONObject jSONObject = new JSONObject(adVar.i);
-                r a9 = e.a(adVar.token, jSONObject, adVar.f13422d, true);
+                r a9 = e.a(adVar.token, jSONObject, adVar.f14208d, true);
                 if (a9 == null) {
                     adVar.i = "";
                 } else {
                     adVar.i = jSONObject.toString();
-                    a9.d(adVar.f13424f);
-                    if (adVar.f13422d == 67) {
+                    a9.d(adVar.f14210f);
+                    if (adVar.f14208d == 67) {
                         com.anythink.core.common.f.c.a(t.b().g()).a(a9.v(), a9.az());
                         com.anythink.core.common.f.b.a(t.b().g()).a(a9.w(), a9.az());
                     }
@@ -127,39 +127,39 @@ public class a {
             } catch (Throwable unused) {
             }
         }
-        this.f12092c.a(str, adVar);
+        this.f12878c.a(str, adVar);
     }
 
     public final void a(final ad adVar) {
         com.anythink.core.common.v.b.b.a().b(new Runnable() { // from class: com.anythink.core.common.a.a.1
             @Override // java.lang.Runnable
             public final void run() {
-                if (a.this.f12092c == null) {
-                    a.this.f12092c = com.anythink.core.common.e.o.a(com.anythink.core.common.e.e.a(t.b().g()));
+                if (a.this.f12878c == null) {
+                    a.this.f12878c = com.anythink.core.common.e.o.a(com.anythink.core.common.e.e.a(t.b().g()));
                 }
-                a.this.f12092c.a(adVar);
+                a.this.f12878c.a(adVar);
             }
         }, 2);
     }
 
     public final void a(Context context, String str, String str2, String str3) {
-        if (this.f12092c == null) {
-            this.f12092c = com.anythink.core.common.e.o.a(com.anythink.core.common.e.e.a(context.getApplicationContext()));
+        if (this.f12878c == null) {
+            this.f12878c = com.anythink.core.common.e.o.a(com.anythink.core.common.e.e.a(context.getApplicationContext()));
         }
-        this.f12092c.a(str, str2, str3);
+        this.f12878c.a(str, str2, str3);
     }
 
     public final bg a(Context context, String str) {
-        if (this.f12092c == null) {
-            this.f12092c = com.anythink.core.common.e.o.a(com.anythink.core.common.e.e.a(context.getApplicationContext()));
+        if (this.f12878c == null) {
+            this.f12878c = com.anythink.core.common.e.o.a(com.anythink.core.common.e.e.a(context.getApplicationContext()));
         }
-        return this.f12092c.c(str);
+        return this.f12878c.c(str);
     }
 
     public final void a(Context context, String str, String str2) {
-        if (this.f12092c == null) {
-            this.f12092c = com.anythink.core.common.e.o.a(com.anythink.core.common.e.e.a(context.getApplicationContext()));
+        if (this.f12878c == null) {
+            this.f12878c = com.anythink.core.common.e.o.a(com.anythink.core.common.e.e.a(context.getApplicationContext()));
         }
-        this.f12092c.a(str, str2);
+        this.f12878c.a(str, str2);
     }
 }

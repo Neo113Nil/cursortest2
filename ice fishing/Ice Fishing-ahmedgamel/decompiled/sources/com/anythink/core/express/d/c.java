@@ -14,14 +14,14 @@ public enum c {
 
 
     /* renamed from: j, reason: collision with root package name */
-    private String f17567j;
+    private String f18354j;
 
     /* renamed from: k, reason: collision with root package name */
-    private String f17568k;
+    private String f18355k;
 
     c(String str, String str2) {
-        this.f17567j = str;
-        this.f17568k = str2;
+        this.f18354j = str;
+        this.f18355k = str2;
     }
 
     private static /* synthetic */ c[] c() {
@@ -29,18 +29,18 @@ public enum c {
     }
 
     public final String a() {
-        return this.f17567j;
+        return this.f18354j;
     }
 
     public final String b() {
-        return this.f17568k;
+        return this.f18355k;
     }
 
     private void a(String str) {
-        this.f17567j = str;
+        this.f18354j = str;
     }
 
     private void b(String str) {
-        this.f17568k = str;
+        this.f18355k = str;
     }
 }

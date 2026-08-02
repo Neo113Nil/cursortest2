@@ -1,35 +1,51 @@
 package W1;
 
-import u1.h;
-
 /* loaded from: classes.dex */
-public final class c {
+public final class c extends U1.a {
 
-    /* renamed from: a, reason: collision with root package name */
-    public final String f3406a;
+    /* renamed from: b, reason: collision with root package name */
+    public final /* synthetic */ int f3537b;
 
-    public c(String str) {
-        if (str == null) {
-            throw new NullPointerException("name is null");
-        }
-        this.f3406a = str;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public /* synthetic */ c(String str, int i) {
+        super(str, 0);
+        this.f3537b = i;
     }
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    @Override // U1.a
+    public final void b(Object obj, float f2) {
+        switch (this.f3537b) {
+            case 0:
+                ((e) obj).g(f2);
+                break;
+            case 1:
+                ((e) obj).f3552E = f2;
+                break;
+            case 2:
+                ((e) obj).f3553F = f2;
+                break;
+            case 3:
+                ((e) obj).f3559u = f2;
+                break;
+            default:
+                ((e) obj).f3560v = f2;
+                break;
         }
-        if (!(obj instanceof c)) {
-            return false;
-        }
-        return this.f3406a.equals(((c) obj).f3406a);
     }
 
-    public final int hashCode() {
-        return this.f3406a.hashCode() ^ 1000003;
-    }
-
-    public final String toString() {
-        return h.g(new StringBuilder("Encoding{name=\""), this.f3406a, "\"}");
+    @Override // android.util.Property
+    public final Object get(Object obj) {
+        switch (this.f3537b) {
+            case 0:
+                return Float.valueOf(((e) obj).f3558n);
+            case 1:
+                return Float.valueOf(((e) obj).f3552E);
+            case 2:
+                return Float.valueOf(((e) obj).f3553F);
+            case 3:
+                return Float.valueOf(((e) obj).f3559u);
+            default:
+                return Float.valueOf(((e) obj).f3560v);
+        }
     }
 }

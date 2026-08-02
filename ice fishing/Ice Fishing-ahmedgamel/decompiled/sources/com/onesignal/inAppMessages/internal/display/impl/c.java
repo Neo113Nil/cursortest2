@@ -1,15 +1,15 @@
 package com.onesignal.inAppMessages.internal.display.impl;
 
 import I7.p;
-import S7.AbstractC0406y;
+import S7.AbstractC0410y;
 import S7.F;
-import S7.InterfaceC0404w;
+import S7.InterfaceC0408w;
 import X7.o;
 import android.app.Activity;
 import android.util.Base64;
 import java.nio.charset.Charset;
 import u7.v;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class c implements R4.a {
@@ -40,8 +40,8 @@ public final class c implements R4.a {
         int label;
         /* synthetic */ Object result;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -59,8 +59,8 @@ public final class c implements R4.a {
         int label;
         /* synthetic */ Object result;
 
-        public C0204c(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public C0204c(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -75,8 +75,8 @@ public final class c implements R4.a {
         int label;
         /* synthetic */ Object result;
 
-        public d(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public d(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -95,8 +95,8 @@ public final class c implements R4.a {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public e(m mVar, Activity activity, String str, com.onesignal.inAppMessages.internal.d dVar, InterfaceC5267d interfaceC5267d) {
-            super(2, interfaceC5267d);
+        public e(m mVar, Activity activity, String str, com.onesignal.inAppMessages.internal.d dVar, InterfaceC5240d interfaceC5240d) {
+            super(2, interfaceC5240d);
             this.$webViewManager = mVar;
             this.$currentActivity = activity;
             this.$base64Str = str;
@@ -104,22 +104,22 @@ public final class c implements R4.a {
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(Object obj, InterfaceC5267d interfaceC5267d) {
-            return new e(this.$webViewManager, this.$currentActivity, this.$base64Str, this.$content, interfaceC5267d);
+        public final InterfaceC5240d create(Object obj, InterfaceC5240d interfaceC5240d) {
+            return new e(this.$webViewManager, this.$currentActivity, this.$base64Str, this.$content, interfaceC5240d);
         }
 
         @Override // I7.p
-        public final Object invoke(InterfaceC0404w interfaceC0404w, InterfaceC5267d interfaceC5267d) {
-            return ((e) create(interfaceC0404w, interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC0408w interfaceC0408w, InterfaceC5240d interfaceC5240d) {
+            return ((e) create(interfaceC0408w, interfaceC5240d)).invokeSuspend(v.f41073a);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             try {
                 if (i == 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     m mVar = this.$webViewManager;
                     Activity activity = this.$currentActivity;
                     String base64Str = this.$base64Str;
@@ -133,19 +133,19 @@ public final class c implements R4.a {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
             } catch (Exception e9) {
                 if (e9.getMessage() != null) {
                     String message = e9.getMessage();
                     kotlin.jvm.internal.h.b(message);
-                    if (Q7.j.U(message, "No WebView installed", false)) {
+                    if (Q7.j.k0(message, "No WebView installed", false)) {
                         com.onesignal.debug.internal.logging.b.info("Error setting up WebView: ", e9);
                     }
                 }
                 throw e9;
             }
-            return v.f41353a;
+            return v.f41073a;
         }
     }
 
@@ -157,8 +157,8 @@ public final class c implements R4.a {
         int label;
         /* synthetic */ Object result;
 
-        public f(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public f(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -203,21 +203,21 @@ public final class c implements R4.a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object initInAppMessage(Activity activity, com.onesignal.inAppMessages.internal.a aVar, com.onesignal.inAppMessages.internal.d dVar, InterfaceC5267d interfaceC5267d) {
+    public final Object initInAppMessage(Activity activity, com.onesignal.inAppMessages.internal.a aVar, com.onesignal.inAppMessages.internal.d dVar, InterfaceC5240d interfaceC5240d) {
         d dVar2;
         int i;
         Activity activity2;
         com.onesignal.inAppMessages.internal.d dVar3;
-        if (interfaceC5267d instanceof d) {
-            dVar2 = (d) interfaceC5267d;
-            int i6 = dVar2.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                dVar2.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof d) {
+            dVar2 = (d) interfaceC5240d;
+            int i4 = dVar2.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                dVar2.label = i4 - Integer.MIN_VALUE;
                 Object obj = dVar2.result;
-                A7.a aVar2 = A7.a.f58n;
+                A7.a aVar2 = A7.a.f215n;
                 i = dVar2.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     String contentHtml = dVar.getContentHtml();
                     kotlin.jvm.internal.h.b(contentHtml);
                     Charset forName = Charset.forName("UTF-8");
@@ -235,29 +235,29 @@ public final class c implements R4.a {
                         activity2 = activity;
                         dVar3 = dVar;
                     }
-                    Z7.e eVar = F.f2915a;
-                    T7.e eVar2 = o.f3856a;
+                    Z7.e eVar = F.f2998a;
+                    T7.e eVar2 = o.f3811a;
                     e eVar3 = new e(mVar, activity2, encodeToString, dVar3, null);
                     dVar2.label = 1;
-                    if (AbstractC0406y.y(eVar2, eVar3, dVar2) == aVar2) {
+                    if (AbstractC0410y.y(eVar2, eVar3, dVar2) == aVar2) {
                         return aVar2;
                     }
                 } else {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
-                return v.f41353a;
+                return v.f41073a;
             }
         }
-        dVar2 = new d(interfaceC5267d);
+        dVar2 = new d(interfaceC5240d);
         Object obj2 = dVar2.result;
-        A7.a aVar22 = A7.a.f58n;
+        A7.a aVar22 = A7.a.f215n;
         i = dVar2.label;
         if (i != 0) {
         }
-        return v.f41353a;
+        return v.f41073a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -269,24 +269,24 @@ public final class c implements R4.a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object showMessageContent(com.onesignal.inAppMessages.internal.a aVar, com.onesignal.inAppMessages.internal.d dVar, InterfaceC5267d interfaceC5267d) {
+    public final Object showMessageContent(com.onesignal.inAppMessages.internal.a aVar, com.onesignal.inAppMessages.internal.d dVar, InterfaceC5240d interfaceC5240d) {
         f fVar;
         int i;
         c cVar;
         c cVar2;
         com.onesignal.inAppMessages.internal.a aVar2;
         Activity activity;
-        if (interfaceC5267d instanceof f) {
-            fVar = (f) interfaceC5267d;
-            int i6 = fVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                fVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof f) {
+            fVar = (f) interfaceC5240d;
+            int i4 = fVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                fVar.label = i4 - Integer.MIN_VALUE;
                 Object obj = fVar.result;
-                A7.a aVar3 = A7.a.f58n;
+                A7.a aVar3 = A7.a.f215n;
                 i = fVar.label;
-                v vVar = v.f41353a;
+                v vVar = v.f41073a;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     Activity current = this._applicationService.getCurrent();
                     com.onesignal.debug.internal.logging.b.debug$default("InAppDisplayer.showMessageContent: in app message on currentActivity: " + current, null, 2, null);
                     if (current == null) {
@@ -294,7 +294,7 @@ public final class c implements R4.a {
                         fVar.L$1 = aVar;
                         fVar.L$2 = dVar;
                         fVar.label = 4;
-                        if (AbstractC0406y.f(200L, fVar) != aVar3) {
+                        if (AbstractC0410y.f(200L, fVar) != aVar3) {
                             cVar = this;
                             fVar.L$0 = null;
                             fVar.L$1 = null;
@@ -332,19 +332,19 @@ public final class c implements R4.a {
                 }
                 if (i != 1) {
                     if (i == 2 || i == 3) {
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                         return vVar;
                     }
                     if (i != 4) {
                         if (i == 5) {
-                            com.bumptech.glide.d.k(obj);
+                            Q3.b.s(obj);
                         }
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     dVar = (com.onesignal.inAppMessages.internal.d) fVar.L$2;
                     aVar = (com.onesignal.inAppMessages.internal.a) fVar.L$1;
                     cVar = (c) fVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     fVar.L$0 = null;
                     fVar.L$1 = null;
                     fVar.L$2 = null;
@@ -355,7 +355,7 @@ public final class c implements R4.a {
                 dVar = (com.onesignal.inAppMessages.internal.d) fVar.L$2;
                 aVar2 = (com.onesignal.inAppMessages.internal.a) fVar.L$1;
                 cVar2 = (c) fVar.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 cVar2.lastInstance = null;
                 fVar.L$0 = null;
                 fVar.L$1 = null;
@@ -367,11 +367,11 @@ public final class c implements R4.a {
                 }
             }
         }
-        fVar = new f(interfaceC5267d);
+        fVar = new f(interfaceC5240d);
         Object obj2 = fVar.result;
-        A7.a aVar32 = A7.a.f58n;
+        A7.a aVar32 = A7.a.f215n;
         i = fVar.label;
-        v vVar2 = v.f41353a;
+        v vVar2 = v.f41073a;
         if (i != 0) {
         }
     }
@@ -398,21 +398,21 @@ public final class c implements R4.a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object displayMessage(com.onesignal.inAppMessages.internal.a aVar, InterfaceC5267d interfaceC5267d) {
+    public Object displayMessage(com.onesignal.inAppMessages.internal.a aVar, InterfaceC5240d interfaceC5240d) {
         b bVar;
         int i;
         c cVar;
         P4.a aVar2;
-        if (interfaceC5267d instanceof b) {
-            bVar = (b) interfaceC5267d;
-            int i6 = bVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                bVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof b) {
+            bVar = (b) interfaceC5240d;
+            int i4 = bVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                bVar.label = i4 - Integer.MIN_VALUE;
                 Object obj = bVar.result;
-                A7.a aVar3 = A7.a.f58n;
+                A7.a aVar3 = A7.a.f215n;
                 i = bVar.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     P4.b bVar2 = this._backend;
                     String appId = ((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getAppId();
                     String messageId = aVar.getMessageId();
@@ -430,12 +430,12 @@ public final class c implements R4.a {
                     if (i != 2) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     return Boolean.TRUE;
                 }
                 aVar = (com.onesignal.inAppMessages.internal.a) bVar.L$1;
                 cVar = (c) bVar.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 aVar2 = (P4.a) obj;
                 if (aVar2.getContent() != null) {
                     if (aVar2.getShouldRetry()) {
@@ -456,9 +456,9 @@ public final class c implements R4.a {
                 bVar.label = 2;
             }
         }
-        bVar = new b(interfaceC5267d);
+        bVar = new b(interfaceC5240d);
         Object obj2 = bVar.result;
-        A7.a aVar32 = A7.a.f58n;
+        A7.a aVar32 = A7.a.f215n;
         i = bVar.label;
         if (i != 0) {
         }
@@ -479,23 +479,23 @@ public final class c implements R4.a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object displayPreviewMessage(String str, InterfaceC5267d interfaceC5267d) {
+    public Object displayPreviewMessage(String str, InterfaceC5240d interfaceC5240d) {
         C0204c c0204c;
         int i;
         com.onesignal.inAppMessages.internal.a aVar;
         c cVar;
         com.onesignal.inAppMessages.internal.d dVar;
-        if (interfaceC5267d instanceof C0204c) {
-            c0204c = (C0204c) interfaceC5267d;
-            int i6 = c0204c.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                c0204c.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof C0204c) {
+            c0204c = (C0204c) interfaceC5240d;
+            int i4 = c0204c.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                c0204c.label = i4 - Integer.MIN_VALUE;
                 Object obj = c0204c.result;
-                A7.a aVar2 = A7.a.f58n;
+                A7.a aVar2 = A7.a.f215n;
                 i = c0204c.label;
-                boolean z3 = true;
+                boolean z6 = true;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     com.onesignal.inAppMessages.internal.a aVar3 = new com.onesignal.inAppMessages.internal.a(true, this._time);
                     P4.b bVar = this._backend;
                     String appId = ((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getAppId();
@@ -514,15 +514,15 @@ public final class c implements R4.a {
                     if (i != 2) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
-                    com.bumptech.glide.d.k(obj);
-                    return Boolean.valueOf(z3);
+                    Q3.b.s(obj);
+                    return Boolean.valueOf(z6);
                 }
                 aVar = (com.onesignal.inAppMessages.internal.a) c0204c.L$1;
                 cVar = (c) c0204c.L$0;
-                com.bumptech.glide.d.k(obj);
+                Q3.b.s(obj);
                 dVar = (com.onesignal.inAppMessages.internal.d) obj;
                 if (dVar != null) {
-                    z3 = false;
+                    z6 = false;
                 } else {
                     Double displayDuration = dVar.getDisplayDuration();
                     kotlin.jvm.internal.h.b(displayDuration);
@@ -531,19 +531,19 @@ public final class c implements R4.a {
                     c0204c.L$1 = null;
                     c0204c.label = 2;
                 }
-                return Boolean.valueOf(z3);
+                return Boolean.valueOf(z6);
             }
         }
-        c0204c = new C0204c(interfaceC5267d);
+        c0204c = new C0204c(interfaceC5240d);
         Object obj2 = c0204c.result;
-        A7.a aVar22 = A7.a.f58n;
+        A7.a aVar22 = A7.a.f215n;
         i = c0204c.label;
-        boolean z32 = true;
+        boolean z62 = true;
         if (i != 0) {
         }
         dVar = (com.onesignal.inAppMessages.internal.d) obj2;
         if (dVar != null) {
         }
-        return Boolean.valueOf(z32);
+        return Boolean.valueOf(z62);
     }
 }

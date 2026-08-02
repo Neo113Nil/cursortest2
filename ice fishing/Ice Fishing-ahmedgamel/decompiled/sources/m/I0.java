@@ -8,46 +8,46 @@ import android.graphics.PorterDuffColorFilter;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.util.TypedValue;
-import com.icefishingapp.icefishing.C5275R;
+import com.IceFishing.LiveIceFishing.C5248R;
 import java.lang.ref.WeakReference;
 import java.util.WeakHashMap;
-import q2.C4896n;
+import s2.C4945n;
 
 /* loaded from: classes.dex */
 public final class I0 {
 
     /* renamed from: g, reason: collision with root package name */
-    public static I0 f39013g;
+    public static I0 f39081g;
 
     /* renamed from: a, reason: collision with root package name */
-    public WeakHashMap f39015a;
+    public WeakHashMap f39083a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final WeakHashMap f39016b = new WeakHashMap(0);
+    public final WeakHashMap f39084b = new WeakHashMap(0);
 
     /* renamed from: c, reason: collision with root package name */
-    public TypedValue f39017c;
+    public TypedValue f39085c;
 
     /* renamed from: d, reason: collision with root package name */
-    public boolean f39018d;
+    public boolean f39086d;
 
     /* renamed from: e, reason: collision with root package name */
-    public C4896n f39019e;
+    public C4945n f39087e;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final PorterDuff.Mode f39012f = PorterDuff.Mode.SRC_IN;
+    public static final PorterDuff.Mode f39080f = PorterDuff.Mode.SRC_IN;
 
     /* renamed from: h, reason: collision with root package name */
-    public static final H0 f39014h = new H0(6);
+    public static final H0 f39082h = new H0(6);
 
     public static synchronized I0 b() {
         I0 i02;
         synchronized (I0.class) {
             try {
-                if (f39013g == null) {
-                    f39013g = new I0();
+                if (f39081g == null) {
+                    f39081g = new I0();
                 }
-                i02 = f39013g;
+                i02 = f39081g;
             } catch (Throwable th) {
                 throw th;
             }
@@ -58,10 +58,10 @@ public final class I0 {
     public static synchronized PorterDuffColorFilter e(int i, PorterDuff.Mode mode) {
         PorterDuffColorFilter porterDuffColorFilter;
         synchronized (I0.class) {
-            H0 h02 = f39014h;
+            H0 h02 = f39082h;
             h02.getClass();
-            int i6 = (31 + i) * 31;
-            porterDuffColorFilter = (PorterDuffColorFilter) h02.a(Integer.valueOf(mode.hashCode() + i6));
+            int i4 = (31 + i) * 31;
+            porterDuffColorFilter = (PorterDuffColorFilter) h02.a(Integer.valueOf(mode.hashCode() + i4));
             if (porterDuffColorFilter == null) {
                 porterDuffColorFilter = new PorterDuffColorFilter(i, mode);
             }
@@ -71,14 +71,14 @@ public final class I0 {
 
     public final Drawable a(Context context, int i) {
         Drawable drawable;
-        if (this.f39017c == null) {
-            this.f39017c = new TypedValue();
+        if (this.f39085c == null) {
+            this.f39085c = new TypedValue();
         }
-        TypedValue typedValue = this.f39017c;
+        TypedValue typedValue = this.f39085c;
         context.getResources().getValue(i, typedValue, true);
         long j6 = (typedValue.assetCookie << 32) | typedValue.data;
         synchronized (this) {
-            s.e eVar = (s.e) this.f39016b.get(context);
+            s.e eVar = (s.e) this.f39084b.get(context);
             drawable = null;
             if (eVar != null) {
                 WeakReference weakReference = (WeakReference) eVar.j(j6, null);
@@ -87,14 +87,14 @@ public final class I0 {
                     if (constantState != null) {
                         drawable = constantState.newDrawable(context.getResources());
                     } else {
-                        int b9 = s.d.b(eVar.f40416u, eVar.f40418w, j6);
+                        int b9 = s.d.b(eVar.f40252u, eVar.f40254w, j6);
                         if (b9 >= 0) {
-                            Object[] objArr = eVar.f40417v;
+                            Object[] objArr = eVar.f40253v;
                             Object obj = objArr[b9];
-                            Object obj2 = s.e.f40414x;
+                            Object obj2 = s.e.f40250x;
                             if (obj != obj2) {
                                 objArr[b9] = obj2;
-                                eVar.f40415n = true;
+                                eVar.f40251n = true;
                             }
                         }
                     }
@@ -105,15 +105,15 @@ public final class I0 {
             return drawable;
         }
         LayerDrawable layerDrawable = null;
-        if (this.f39019e != null) {
-            if (i == C5275R.drawable.abc_cab_background_top_material) {
-                layerDrawable = new LayerDrawable(new Drawable[]{c(context, C5275R.drawable.abc_cab_background_internal_bg), c(context, 2131230777)});
-            } else if (i == C5275R.drawable.abc_ratingbar_material) {
-                layerDrawable = C4896n.g(this, context, C5275R.dimen.abc_star_big);
-            } else if (i == C5275R.drawable.abc_ratingbar_indicator_material) {
-                layerDrawable = C4896n.g(this, context, C5275R.dimen.abc_star_medium);
-            } else if (i == C5275R.drawable.abc_ratingbar_small_material) {
-                layerDrawable = C4896n.g(this, context, C5275R.dimen.abc_star_small);
+        if (this.f39087e != null) {
+            if (i == C5248R.drawable.abc_cab_background_top_material) {
+                layerDrawable = new LayerDrawable(new Drawable[]{c(context, C5248R.drawable.abc_cab_background_internal_bg), c(context, 2131230777)});
+            } else if (i == C5248R.drawable.abc_ratingbar_material) {
+                layerDrawable = C4945n.g(this, context, C5248R.dimen.abc_star_big);
+            } else if (i == C5248R.drawable.abc_ratingbar_indicator_material) {
+                layerDrawable = C4945n.g(this, context, C5248R.dimen.abc_star_medium);
+            } else if (i == C5248R.drawable.abc_ratingbar_small_material) {
+                layerDrawable = C4945n.g(this, context, C5248R.dimen.abc_star_small);
             }
         }
         if (layerDrawable == null) {
@@ -124,10 +124,10 @@ public final class I0 {
             try {
                 Drawable.ConstantState constantState2 = layerDrawable.getConstantState();
                 if (constantState2 != null) {
-                    s.e eVar2 = (s.e) this.f39016b.get(context);
+                    s.e eVar2 = (s.e) this.f39084b.get(context);
                     if (eVar2 == null) {
                         eVar2 = new s.e();
-                        this.f39016b.put(context, eVar2);
+                        this.f39084b.put(context, eVar2);
                     }
                     eVar2.k(j6, new WeakReference(constantState2));
                 }
@@ -142,14 +142,14 @@ public final class I0 {
         return d(context, i, false);
     }
 
-    public final synchronized Drawable d(Context context, int i, boolean z3) {
+    public final synchronized Drawable d(Context context, int i, boolean z6) {
         Drawable a9;
         try {
-            if (!this.f39018d) {
-                this.f39018d = true;
-                Drawable c9 = c(context, C5275R.drawable.abc_vector_test);
+            if (!this.f39086d) {
+                this.f39086d = true;
+                Drawable c9 = c(context, C5248R.drawable.abc_vector_test);
                 if (c9 == null || (!(c9 instanceof E0.p) && !"android.graphics.drawable.VectorDrawable".equals(c9.getClass().getName()))) {
-                    this.f39018d = false;
+                    this.f39086d = false;
                     throw new IllegalStateException("This app has been built with an incorrect configuration. Please configure your build for VectorDrawableCompat.");
                 }
             }
@@ -158,10 +158,10 @@ public final class I0 {
                 a9 = E.a.b(context, i);
             }
             if (a9 != null) {
-                a9 = g(context, i, z3, a9);
+                a9 = g(context, i, z6, a9);
             }
             if (a9 != null) {
-                AbstractC4694j0.a(a9);
+                AbstractC4707j0.a(a9);
             }
         } catch (Throwable th) {
             throw th;
@@ -172,22 +172,22 @@ public final class I0 {
     public final synchronized ColorStateList f(Context context, int i) {
         ColorStateList colorStateList;
         s.l lVar;
-        WeakHashMap weakHashMap = this.f39015a;
+        WeakHashMap weakHashMap = this.f39083a;
         ColorStateList colorStateList2 = null;
         colorStateList = (weakHashMap == null || (lVar = (s.l) weakHashMap.get(context)) == null) ? null : (ColorStateList) lVar.b(i, null);
         if (colorStateList == null) {
-            C4896n c4896n = this.f39019e;
-            if (c4896n != null) {
-                colorStateList2 = c4896n.h(context, i);
+            C4945n c4945n = this.f39087e;
+            if (c4945n != null) {
+                colorStateList2 = c4945n.h(context, i);
             }
             if (colorStateList2 != null) {
-                if (this.f39015a == null) {
-                    this.f39015a = new WeakHashMap();
+                if (this.f39083a == null) {
+                    this.f39083a = new WeakHashMap();
                 }
-                s.l lVar2 = (s.l) this.f39015a.get(context);
+                s.l lVar2 = (s.l) this.f39083a.get(context);
                 if (lVar2 == null) {
                     lVar2 = new s.l();
-                    this.f39015a.put(context, lVar2);
+                    this.f39083a.put(context, lVar2);
                 }
                 lVar2.a(i, colorStateList2);
             }
@@ -200,16 +200,16 @@ public final class I0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Drawable g(Context context, int i, boolean z3, Drawable drawable) {
-        int i6;
-        boolean z6;
+    public final Drawable g(Context context, int i, boolean z6, Drawable drawable) {
+        int i4;
+        boolean z9;
         int round;
-        ColorStateList f3 = f(context, i);
+        ColorStateList f2 = f(context, i);
         PorterDuff.Mode mode = null;
-        if (f3 != null) {
+        if (f2 != null) {
             Drawable mutate = drawable.mutate();
-            H.a.h(mutate, f3);
-            if (this.f39019e != null && i == C5275R.drawable.abc_switch_thumb_material) {
+            H.a.h(mutate, f2);
+            if (this.f39087e != null && i == C5248R.drawable.abc_switch_thumb_material) {
                 mode = PorterDuff.Mode.MULTIPLY;
             }
             if (mode != null) {
@@ -217,66 +217,66 @@ public final class I0 {
             }
             return mutate;
         }
-        if (this.f39019e != null) {
-            if (i == C5275R.drawable.abc_seekbar_track_material) {
+        if (this.f39087e != null) {
+            if (i == C5248R.drawable.abc_seekbar_track_material) {
                 LayerDrawable layerDrawable = (LayerDrawable) drawable;
                 Drawable findDrawableByLayerId = layerDrawable.findDrawableByLayerId(R.id.background);
-                int c9 = N0.c(context, C5275R.attr.colorControlNormal);
-                PorterDuff.Mode mode2 = C4710s.f39221b;
-                C4896n.m(findDrawableByLayerId, c9, mode2);
-                C4896n.m(layerDrawable.findDrawableByLayerId(R.id.secondaryProgress), N0.c(context, C5275R.attr.colorControlNormal), mode2);
-                C4896n.m(layerDrawable.findDrawableByLayerId(R.id.progress), N0.c(context, C5275R.attr.colorControlActivated), mode2);
+                int c9 = N0.c(context, C5248R.attr.colorControlNormal);
+                PorterDuff.Mode mode2 = C4723s.f39290b;
+                C4945n.m(findDrawableByLayerId, c9, mode2);
+                C4945n.m(layerDrawable.findDrawableByLayerId(R.id.secondaryProgress), N0.c(context, C5248R.attr.colorControlNormal), mode2);
+                C4945n.m(layerDrawable.findDrawableByLayerId(R.id.progress), N0.c(context, C5248R.attr.colorControlActivated), mode2);
                 return drawable;
             }
-            if (i == C5275R.drawable.abc_ratingbar_material || i == C5275R.drawable.abc_ratingbar_indicator_material || i == C5275R.drawable.abc_ratingbar_small_material) {
+            if (i == C5248R.drawable.abc_ratingbar_material || i == C5248R.drawable.abc_ratingbar_indicator_material || i == C5248R.drawable.abc_ratingbar_small_material) {
                 LayerDrawable layerDrawable2 = (LayerDrawable) drawable;
                 Drawable findDrawableByLayerId2 = layerDrawable2.findDrawableByLayerId(R.id.background);
-                int b9 = N0.b(context, C5275R.attr.colorControlNormal);
-                PorterDuff.Mode mode3 = C4710s.f39221b;
-                C4896n.m(findDrawableByLayerId2, b9, mode3);
-                C4896n.m(layerDrawable2.findDrawableByLayerId(R.id.secondaryProgress), N0.c(context, C5275R.attr.colorControlActivated), mode3);
-                C4896n.m(layerDrawable2.findDrawableByLayerId(R.id.progress), N0.c(context, C5275R.attr.colorControlActivated), mode3);
+                int b9 = N0.b(context, C5248R.attr.colorControlNormal);
+                PorterDuff.Mode mode3 = C4723s.f39290b;
+                C4945n.m(findDrawableByLayerId2, b9, mode3);
+                C4945n.m(layerDrawable2.findDrawableByLayerId(R.id.secondaryProgress), N0.c(context, C5248R.attr.colorControlActivated), mode3);
+                C4945n.m(layerDrawable2.findDrawableByLayerId(R.id.progress), N0.c(context, C5248R.attr.colorControlActivated), mode3);
                 return drawable;
             }
         }
-        C4896n c4896n = this.f39019e;
-        boolean z9 = false;
-        if (c4896n != null) {
-            PorterDuff.Mode mode4 = C4710s.f39221b;
-            if (C4896n.b((int[]) c4896n.f40192u, i)) {
-                i6 = C5275R.attr.colorControlNormal;
-            } else if (C4896n.b((int[]) c4896n.f40194w, i)) {
-                i6 = C5275R.attr.colorControlActivated;
+        C4945n c4945n = this.f39087e;
+        boolean z10 = false;
+        if (c4945n != null) {
+            PorterDuff.Mode mode4 = C4723s.f39290b;
+            if (C4945n.b((int[]) c4945n.f40491u, i)) {
+                i4 = C5248R.attr.colorControlNormal;
+            } else if (C4945n.b((int[]) c4945n.f40493w, i)) {
+                i4 = C5248R.attr.colorControlActivated;
             } else {
-                if (C4896n.b((int[]) c4896n.f40195x, i)) {
+                if (C4945n.b((int[]) c4945n.f40494x, i)) {
                     mode4 = PorterDuff.Mode.MULTIPLY;
                 } else if (i == 2131230797) {
                     round = Math.round(40.8f);
-                    i6 = 16842800;
-                    z6 = true;
-                    if (z6) {
+                    i4 = 16842800;
+                    z9 = true;
+                    if (z9) {
                         Drawable mutate2 = drawable.mutate();
-                        mutate2.setColorFilter(C4710s.c(N0.c(context, i6), mode4));
+                        mutate2.setColorFilter(C4723s.c(N0.c(context, i4), mode4));
                         if (round != -1) {
                             mutate2.setAlpha(round);
                         }
-                        z9 = true;
+                        z10 = true;
                     }
-                } else if (i != C5275R.drawable.abc_dialog_material_background) {
-                    i6 = 0;
-                    z6 = false;
+                } else if (i != C5248R.drawable.abc_dialog_material_background) {
+                    i4 = 0;
+                    z9 = false;
                     round = -1;
-                    if (z6) {
+                    if (z9) {
                     }
                 }
-                i6 = 16842801;
+                i4 = 16842801;
             }
-            z6 = true;
+            z9 = true;
             round = -1;
-            if (z6) {
+            if (z9) {
             }
         }
-        if (z9 || !z3) {
+        if (z10 || !z6) {
             return drawable;
         }
         return null;

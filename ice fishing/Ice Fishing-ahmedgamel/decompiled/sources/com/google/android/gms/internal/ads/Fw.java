@@ -1,7 +1,7 @@
 package com.google.android.gms.internal.ads;
 
-import P2.InterfaceC0372b;
-import P2.InterfaceC0373c;
+import R2.InterfaceC0376b;
+import R2.InterfaceC0377c;
 import android.content.Context;
 import android.os.DeadObjectException;
 import android.os.HandlerThread;
@@ -9,101 +9,101 @@ import android.os.Parcel;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /* loaded from: classes2.dex */
-public final class Fw implements InterfaceC0372b, InterfaceC0373c {
+public final class Fw implements InterfaceC0376b, InterfaceC0377c {
 
     /* renamed from: A, reason: collision with root package name */
-    public final long f24885A;
+    public final long f25675A;
 
     /* renamed from: n, reason: collision with root package name */
-    public final Qw f24886n;
+    public final Qw f25676n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final String f24887u;
+    public final String f25677u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final String f24888v;
+    public final String f25678v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final EnumC2960b8 f24889w;
+    public final EnumC2983b8 f25679w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final LinkedBlockingQueue f24890x;
+    public final LinkedBlockingQueue f25680x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final HandlerThread f24891y;
+    public final HandlerThread f25681y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final Cw f24892z;
+    public final Cw f25682z;
 
-    public Fw(Context context, EnumC2960b8 enumC2960b8, String str, String str2, Cw cw) {
-        this.f24887u = str;
-        this.f24889w = enumC2960b8;
-        this.f24888v = str2;
-        this.f24892z = cw;
+    public Fw(Context context, EnumC2983b8 enumC2983b8, String str, String str2, Cw cw) {
+        this.f25677u = str;
+        this.f25679w = enumC2983b8;
+        this.f25678v = str2;
+        this.f25682z = cw;
         HandlerThread handlerThread = new HandlerThread("GassDGClient");
-        this.f24891y = handlerThread;
+        this.f25681y = handlerThread;
         handlerThread.start();
-        this.f24885A = System.currentTimeMillis();
+        this.f25675A = System.currentTimeMillis();
         Qw qw = new Qw(context, handlerThread.getLooper(), this, this, 19621000);
-        this.f24886n = qw;
-        this.f24890x = new LinkedBlockingQueue();
+        this.f25676n = qw;
+        this.f25680x = new LinkedBlockingQueue();
         qw.o();
     }
 
     public final void a() {
-        Qw qw = this.f24886n;
+        Qw qw = this.f25676n;
         if (qw != null) {
-            if (qw.i() || qw.e()) {
-                qw.h();
+            if (qw.h() || qw.d()) {
+                qw.g();
             }
         }
     }
 
     public final void b(int i, long j6, Exception exc) {
-        Cw cw = this.f24892z;
+        Cw cw = this.f25682z;
         if (cw != null) {
             cw.c(i, System.currentTimeMillis() - j6, exc);
         }
     }
 
-    @Override // P2.InterfaceC0373c
-    public final void onConnectionFailed(M2.b bVar) {
+    @Override // R2.InterfaceC0377c
+    public final void onConnectionFailed(O2.b bVar) {
         try {
-            b(4012, this.f24885A, null);
-            this.f24890x.put(new Ww());
+            b(4012, this.f25675A, null);
+            this.f25680x.put(new Ww());
         } catch (InterruptedException unused) {
         }
     }
 
-    @Override // P2.InterfaceC0372b
+    @Override // R2.InterfaceC0376b
     public final void onConnectionSuspended(int i) {
         try {
-            b(4011, this.f24885A, null);
-            this.f24890x.put(new Ww());
+            b(4011, this.f25675A, null);
+            this.f25680x.put(new Ww());
         } catch (InterruptedException unused) {
         }
     }
 
-    @Override // P2.InterfaceC0372b
-    public final void r() {
+    @Override // R2.InterfaceC0376b
+    public final void z() {
         Tw tw;
-        long j6 = this.f24885A;
-        HandlerThread handlerThread = this.f24891y;
+        long j6 = this.f25675A;
+        HandlerThread handlerThread = this.f25681y;
         try {
-            tw = (Tw) this.f24886n.u();
+            tw = (Tw) this.f25676n.u();
         } catch (DeadObjectException | IllegalStateException unused) {
             tw = null;
         }
         if (tw != null) {
             try {
-                Vw vw = new Vw(1, 1, this.f24889w.f29227n, this.f24887u, this.f24888v);
-                Parcel H02 = tw.H0();
-                AbstractC3388j8.c(H02, vw);
-                Parcel M02 = tw.M0(H02, 3);
-                Ww ww = (Ww) AbstractC3388j8.b(M02, Ww.CREATOR);
-                M02.recycle();
+                Vw vw = new Vw(1, 1, this.f25679w.f30015n, this.f25677u, this.f25678v);
+                Parcel F02 = tw.F0();
+                AbstractC3411j8.c(F02, vw);
+                Parcel K02 = tw.K0(F02, 3);
+                Ww ww = (Ww) AbstractC3411j8.b(K02, Ww.CREATOR);
+                K02.recycle();
                 b(5011, j6, null);
-                this.f24890x.put(ww);
+                this.f25680x.put(ww);
             } finally {
                 try {
                 } finally {

@@ -10,64 +10,64 @@ import java.util.concurrent.ConcurrentHashMap;
 public class p extends c<bo> {
 
     /* renamed from: b, reason: collision with root package name */
-    private static volatile p f13074b;
+    private static volatile p f13860b;
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f13075a;
+    private final String f13861a;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public static final String f13076a = "placement_ad_impression";
+        public static final String f13862a = "placement_ad_impression";
 
         /* renamed from: b, reason: collision with root package name */
-        public static final String f13077b = "format";
+        public static final String f13863b = "format";
 
         /* renamed from: c, reason: collision with root package name */
-        public static final String f13078c = "placement_id";
+        public static final String f13864c = "placement_id";
 
         /* renamed from: d, reason: collision with root package name */
-        public static final String f13079d = "adsource_id";
+        public static final String f13865d = "adsource_id";
 
         /* renamed from: e, reason: collision with root package name */
-        public static final String f13080e = "hour_time";
+        public static final String f13866e = "hour_time";
 
         /* renamed from: f, reason: collision with root package name */
-        public static final String f13081f = "hour_imp";
+        public static final String f13867f = "hour_imp";
 
         /* renamed from: g, reason: collision with root package name */
-        public static final String f13082g = "date_time";
+        public static final String f13868g = "date_time";
 
         /* renamed from: h, reason: collision with root package name */
-        public static final String f13083h = "date_imp";
+        public static final String f13869h = "date_imp";
         public static final String i = "show_time";
 
         /* renamed from: j, reason: collision with root package name */
-        public static final String f13084j = "CREATE TABLE IF NOT EXISTS placement_ad_impression(format INTEGER ,placement_id TEXT ,adsource_id TEXT ,hour_time TEXT ,hour_imp INTEGER ,date_time TEXT ,date_imp INTEGER , show_time INTEGER)";
+        public static final String f13870j = "CREATE TABLE IF NOT EXISTS placement_ad_impression(format INTEGER ,placement_id TEXT ,adsource_id TEXT ,hour_time TEXT ,hour_imp INTEGER ,date_time TEXT ,date_imp INTEGER , show_time INTEGER)";
     }
 
     private p(d dVar) {
         super(dVar);
-        this.f13075a = p.class.getName();
+        this.f13861a = p.class.getName();
     }
 
     public static p a(d dVar) {
-        if (f13074b == null) {
+        if (f13860b == null) {
             synchronized (p.class) {
                 try {
-                    if (f13074b == null) {
-                        f13074b = new p(dVar);
+                    if (f13860b == null) {
+                        f13860b = new p(dVar);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f13074b;
+        return f13860b;
     }
 
     private boolean b(String str) {
-        Cursor query = c().query(a.f13076a, new String[]{"adsource_id"}, "adsource_id=?", new String[]{str}, "adsource_id", null, null);
+        Cursor query = c().query(a.f13862a, new String[]{"adsource_id"}, "adsource_id=?", new String[]{str}, "adsource_id", null, null);
         if (query != null && query.getCount() > 0) {
             query.close();
             return true;
@@ -89,7 +89,7 @@ public class p extends c<bo> {
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x005d, code lost:
     
-        r2 = c().query(com.anythink.core.common.e.p.a.f13076a, new java.lang.String[]{"sum(hour_imp)"}, "format=? AND hour_time=?", new java.lang.String[]{java.lang.String.valueOf(r12), r14}, null, null, null);
+        r2 = c().query(com.anythink.core.common.e.p.a.f13862a, new java.lang.String[]{"sum(hour_imp)"}, "format=? AND hour_time=?", new java.lang.String[]{java.lang.String.valueOf(r12), r14}, null, null, null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x007a, code lost:
     
@@ -165,7 +165,7 @@ public class p extends c<bo> {
         Cursor cursor = null;
         try {
             try {
-                cursor = c().query(a.f13076a, new String[]{"sum(date_imp)"}, "format=? AND date_time=?", new String[]{String.valueOf(i), str}, null, null, null);
+                cursor = c().query(a.f13862a, new String[]{"sum(date_imp)"}, "format=? AND date_time=?", new String[]{String.valueOf(i), str}, null, null, null);
                 if (cursor != null && cursor.getCount() > 0) {
                     cursor.moveToNext();
                     iArr[0] = cursor.getInt(0);
@@ -198,37 +198,37 @@ public class p extends c<bo> {
         Cursor cursor;
         bo boVar;
         try {
-            cursor = c().query(a.f13076a, null, "placement_id=? AND date_time=?", new String[]{str, str2}, null, null, null);
+            cursor = c().query(a.f13862a, null, "placement_id=? AND date_time=?", new String[]{str, str2}, null, null, null);
             if (cursor != null) {
                 try {
                     if (cursor.getCount() > 0) {
                         boVar = new bo();
-                        boVar.f13727h = new ConcurrentHashMap<>();
+                        boVar.f14513h = new ConcurrentHashMap<>();
                         while (cursor.moveToNext()) {
-                            boVar.f13720a = cursor.getInt(cursor.getColumnIndex("format"));
-                            boVar.f13721b = cursor.getString(cursor.getColumnIndex("placement_id"));
+                            boVar.f14506a = cursor.getInt(cursor.getColumnIndex("format"));
+                            boVar.f14507b = cursor.getString(cursor.getColumnIndex("placement_id"));
                             bo.a aVar = new bo.a();
-                            aVar.f13728a = cursor.getString(cursor.getColumnIndex("adsource_id"));
-                            aVar.f13729b = cursor.getString(cursor.getColumnIndex(a.f13080e));
-                            aVar.f13730c = cursor.getString(cursor.getColumnIndex(a.f13082g));
-                            if (!TextUtils.equals(aVar.f13729b, str3)) {
-                                aVar.f13732e = 0;
+                            aVar.f14514a = cursor.getString(cursor.getColumnIndex("adsource_id"));
+                            aVar.f14515b = cursor.getString(cursor.getColumnIndex(a.f13866e));
+                            aVar.f14516c = cursor.getString(cursor.getColumnIndex(a.f13868g));
+                            if (!TextUtils.equals(aVar.f14515b, str3)) {
+                                aVar.f14518e = 0;
                             } else {
-                                aVar.f13732e = cursor.getInt(cursor.getColumnIndex(a.f13081f));
+                                aVar.f14518e = cursor.getInt(cursor.getColumnIndex(a.f13867f));
                             }
-                            boVar.f13723d += aVar.f13732e;
-                            if (!TextUtils.equals(aVar.f13730c, str2)) {
-                                aVar.f13731d = 0;
+                            boVar.f14509d += aVar.f14518e;
+                            if (!TextUtils.equals(aVar.f14516c, str2)) {
+                                aVar.f14517d = 0;
                             } else {
-                                aVar.f13731d = cursor.getInt(cursor.getColumnIndex(a.f13083h));
+                                aVar.f14517d = cursor.getInt(cursor.getColumnIndex(a.f13869h));
                             }
-                            boVar.f13722c += aVar.f13731d;
+                            boVar.f14508c += aVar.f14517d;
                             long j6 = cursor.getLong(cursor.getColumnIndex("show_time"));
-                            aVar.f13733f = j6;
-                            if (j6 >= boVar.f13724e) {
-                                boVar.f13724e = j6;
+                            aVar.f14519f = j6;
+                            if (j6 >= boVar.f14510e) {
+                                boVar.f14510e = j6;
                             }
-                            boVar.f13727h.put(aVar.f13728a, aVar);
+                            boVar.f14513h.put(aVar.f14514a, aVar);
                         }
                         cursor.close();
                         cursor.close();
@@ -268,21 +268,21 @@ public class p extends c<bo> {
             ContentValues contentValues = new ContentValues();
             contentValues.put("format", Integer.valueOf(i));
             contentValues.put("placement_id", str);
-            contentValues.put("adsource_id", aVar.f13728a);
-            contentValues.put(a.f13080e, aVar.f13729b);
-            contentValues.put(a.f13081f, Integer.valueOf(aVar.f13732e));
-            contentValues.put(a.f13082g, aVar.f13730c);
-            contentValues.put(a.f13083h, Integer.valueOf(aVar.f13731d));
-            contentValues.put("show_time", Long.valueOf(aVar.f13733f));
-            Cursor query = c().query(a.f13076a, new String[]{"adsource_id"}, "adsource_id=?", new String[]{aVar.f13728a}, "adsource_id", null, null);
+            contentValues.put("adsource_id", aVar.f14514a);
+            contentValues.put(a.f13866e, aVar.f14515b);
+            contentValues.put(a.f13867f, Integer.valueOf(aVar.f14518e));
+            contentValues.put(a.f13868g, aVar.f14516c);
+            contentValues.put(a.f13869h, Integer.valueOf(aVar.f14517d));
+            contentValues.put("show_time", Long.valueOf(aVar.f14519f));
+            Cursor query = c().query(a.f13862a, new String[]{"adsource_id"}, "adsource_id=?", new String[]{aVar.f14514a}, "adsource_id", null, null);
             if (query != null && query.getCount() > 0) {
                 query.close();
-                return d().update(a.f13076a, contentValues, "adsource_id = ? ", new String[]{aVar.f13728a});
+                return d().update(a.f13862a, contentValues, "adsource_id = ? ", new String[]{aVar.f14514a});
             }
             if (query != null) {
                 query.close();
             }
-            return d().insert(a.f13076a, null, contentValues);
+            return d().insert(a.f13862a, null, contentValues);
         } catch (Exception unused) {
             return -1L;
         }
@@ -293,32 +293,32 @@ public class p extends c<bo> {
             return null;
         }
         bo boVar = new bo();
-        boVar.f13727h = new ConcurrentHashMap<>();
+        boVar.f14513h = new ConcurrentHashMap<>();
         while (cursor.moveToNext()) {
-            boVar.f13720a = cursor.getInt(cursor.getColumnIndex("format"));
-            boVar.f13721b = cursor.getString(cursor.getColumnIndex("placement_id"));
+            boVar.f14506a = cursor.getInt(cursor.getColumnIndex("format"));
+            boVar.f14507b = cursor.getString(cursor.getColumnIndex("placement_id"));
             bo.a aVar = new bo.a();
-            aVar.f13728a = cursor.getString(cursor.getColumnIndex("adsource_id"));
-            aVar.f13729b = cursor.getString(cursor.getColumnIndex(a.f13080e));
-            aVar.f13730c = cursor.getString(cursor.getColumnIndex(a.f13082g));
-            if (!TextUtils.equals(aVar.f13729b, str2)) {
-                aVar.f13732e = 0;
+            aVar.f14514a = cursor.getString(cursor.getColumnIndex("adsource_id"));
+            aVar.f14515b = cursor.getString(cursor.getColumnIndex(a.f13866e));
+            aVar.f14516c = cursor.getString(cursor.getColumnIndex(a.f13868g));
+            if (!TextUtils.equals(aVar.f14515b, str2)) {
+                aVar.f14518e = 0;
             } else {
-                aVar.f13732e = cursor.getInt(cursor.getColumnIndex(a.f13081f));
+                aVar.f14518e = cursor.getInt(cursor.getColumnIndex(a.f13867f));
             }
-            boVar.f13723d += aVar.f13732e;
-            if (!TextUtils.equals(aVar.f13730c, str)) {
-                aVar.f13731d = 0;
+            boVar.f14509d += aVar.f14518e;
+            if (!TextUtils.equals(aVar.f14516c, str)) {
+                aVar.f14517d = 0;
             } else {
-                aVar.f13731d = cursor.getInt(cursor.getColumnIndex(a.f13083h));
+                aVar.f14517d = cursor.getInt(cursor.getColumnIndex(a.f13869h));
             }
-            boVar.f13722c += aVar.f13731d;
+            boVar.f14508c += aVar.f14517d;
             long j6 = cursor.getLong(cursor.getColumnIndex("show_time"));
-            aVar.f13733f = j6;
-            if (j6 >= boVar.f13724e) {
-                boVar.f13724e = j6;
+            aVar.f14519f = j6;
+            if (j6 >= boVar.f14510e) {
+                boVar.f14510e = j6;
             }
-            boVar.f13727h.put(aVar.f13728a, aVar);
+            boVar.f14513h.put(aVar.f14514a, aVar);
         }
         return boVar;
     }
@@ -333,7 +333,7 @@ public class p extends c<bo> {
             if (d() == null) {
                 return;
             }
-            d().delete(a.f13076a, str2, null);
+            d().delete(a.f13862a, str2, null);
         }
     }
 }

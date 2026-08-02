@@ -39,7 +39,7 @@ public class InitializationProvider extends ContentProvider {
         }
         a c9 = a.c(context);
         Class<?> cls = getClass();
-        Context context2 = c9.f96c;
+        Context context2 = c9.f252c;
         try {
             try {
                 Trace.beginSection("Startup");

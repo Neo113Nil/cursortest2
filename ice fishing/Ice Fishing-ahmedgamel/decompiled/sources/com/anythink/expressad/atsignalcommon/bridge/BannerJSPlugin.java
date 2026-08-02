@@ -8,7 +8,7 @@ import com.anythink.expressad.atsignalcommon.windvane.WindVaneWebView;
 public class BannerJSPlugin extends AbsFeedBackForH5 {
 
     /* renamed from: a, reason: collision with root package name */
-    private final String f17946a = "BannerJSBridge";
+    private final String f18733a = "BannerJSBridge";
     private IBannerJSBridge i;
 
     public void cai(Object obj, String str) {

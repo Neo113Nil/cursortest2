@@ -4,17 +4,17 @@ import java.util.Arrays;
 
 /* renamed from: com.facebook.ads.redexgen.X.8I, reason: invalid class name */
 /* loaded from: assets/audience_network/classes2.dex */
-public class C8I extends AbstractC2061kY<EnumC1064Lr> {
+public class C8I extends AbstractC2081kY<EnumC1084Lr> {
     public static byte[] A00;
 
     static {
         A01();
     }
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 44);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 44);
         }
         return new String(copyOfRange);
     }
@@ -27,9 +27,9 @@ public class C8I extends AbstractC2061kY<EnumC1064Lr> {
         super(str);
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC2061kY
+    @Override // com.instagram.common.viewpoint.core.AbstractC2081kY
     /* renamed from: A05, reason: merged with bridge method [inline-methods] */
-    public final C1072Lz A04(EnumC1064Lr enumC1064Lr) {
-        return new C1072Lz(this, enumC1064Lr == null ? A00(0, 4, 46) : A00(0, 0, 18) + enumC1064Lr.A03());
+    public final C1092Lz A04(EnumC1084Lr enumC1084Lr) {
+        return new C1092Lz(this, enumC1084Lr == null ? A00(0, 4, 46) : A00(0, 0, 18) + enumC1084Lr.A03());
     }
 }

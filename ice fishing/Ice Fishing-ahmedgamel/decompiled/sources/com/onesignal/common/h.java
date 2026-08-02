@@ -1,16 +1,16 @@
 package com.onesignal.common;
 
-import a.AbstractC0422a;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import N3.C;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.List;
 import java.util.regex.Pattern;
-import u7.InterfaceC5087e;
-import v7.AbstractC5129j;
+import u7.InterfaceC5079e;
+import v7.AbstractC5119j;
 
 /* loaded from: classes2.dex */
 public final class h {
     public static final h INSTANCE = new h();
-    private static final InterfaceC5087e sdkVersion$delegate = AbstractC0422a.q(a.INSTANCE);
+    private static final InterfaceC5079e sdkVersion$delegate = C.O(a.INSTANCE);
 
     public static final class a extends kotlin.jvm.internal.i implements I7.a {
         public static final a INSTANCE = new a();
@@ -31,28 +31,28 @@ public final class h {
     public final String formatVersion$com_onesignal_core(String version) {
         String str;
         String str2;
-        String f02;
+        String v02;
         kotlin.jvm.internal.h.e(version, "version");
-        List k02 = Q7.j.k0(version, new String[]{"-"}, 2);
-        List k03 = Q7.j.k0((CharSequence) k02.get(0), new String[]{com.anythink.core.common.d.j.f12378z}, 6);
-        String str3 = (String) AbstractC5129j.B(0, k03);
+        List A02 = Q7.j.A0(version, new String[]{"-"}, 2);
+        List A03 = Q7.j.A0((CharSequence) A02.get(0), new String[]{com.anythink.core.common.d.j.f13164z}, 6);
+        String str3 = (String) AbstractC5119j.z(0, A03);
         String str4 = "00";
-        if (str3 == null || (str = Q7.j.f0(2, str3)) == null) {
+        if (str3 == null || (str = Q7.j.v0(2, str3)) == null) {
             str = "00";
         }
-        String str5 = (String) AbstractC5129j.B(1, k03);
-        if (str5 == null || (str2 = Q7.j.f0(2, str5)) == null) {
+        String str5 = (String) AbstractC5119j.z(1, A03);
+        if (str5 == null || (str2 = Q7.j.v0(2, str5)) == null) {
             str2 = "00";
         }
-        String str6 = (String) AbstractC5129j.B(2, k03);
-        if (str6 != null && (f02 = Q7.j.f0(2, str6)) != null) {
-            str4 = f02;
+        String str6 = (String) AbstractC5119j.z(2, A03);
+        if (str6 != null && (v02 = Q7.j.v0(2, str6)) != null) {
+            str4 = v02;
         }
-        String g4 = AbstractC4404f.g(str, str2, str4);
-        if (k02.size() <= 1) {
-            return g4;
+        String h3 = Wv.h(str, str2, str4);
+        if (A02.size() <= 1) {
+            return h3;
         }
-        return g4 + '-' + ((String) k02.get(1));
+        return h3 + '-' + ((String) A02.get(1));
     }
 
     public final String getSdkVersion() {

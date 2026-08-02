@@ -3,15 +3,15 @@ package com.instagram.common.viewpoint.core;
 import java.util.Arrays;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class GV extends AbstractRunnableC1327Wc {
+public class GV extends AbstractRunnableC1347Wc {
     public static byte[] A01;
     public static String[] A02 = {"ziFc1AxLwl06l9cm2ro8EEkTqcfxuLTc", "Ot3h47XlIqwqlb0VDKX34tYNREgAb88h", "XErmhi3UBKLFfekLEXmFG5T5AXnu", "x4ahbzSdp8w2tJq97wkZytqruvrbxvGd", "5eNtQA6JlDjBFR49aczWqHsgt2phfPFu", "5gzf4", "tgwS2khKEZgsCudiehRL6tpdm2kFQW", "Wy"};
     public final /* synthetic */ C4V A00;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 14);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 14);
             if (A02[5].length() != 5) {
                 throw new RuntimeException();
             }
@@ -32,11 +32,11 @@ public class GV extends AbstractRunnableC1327Wc {
         this.A00 = c4v;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractRunnableC1327Wc
+    @Override // com.instagram.common.viewpoint.core.AbstractRunnableC1347Wc
     public final void A07() {
-        boolean z3;
-        z3 = this.A00.A0F;
-        if (!z3) {
+        boolean z6;
+        z6 = this.A00.A0F;
+        if (!z6) {
             this.A00.A0Q(A00(0, 27, 102));
         }
     }

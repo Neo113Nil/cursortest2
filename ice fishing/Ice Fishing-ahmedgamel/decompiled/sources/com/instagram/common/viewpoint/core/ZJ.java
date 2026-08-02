@@ -21,14 +21,14 @@ public final class ZJ implements UF {
     public static boolean A03;
     public static byte[] A04;
     public static String[] A05 = {"txu4RBo63YQ5Q7SoAp", "BY8ga9ljLbuWBmJa1ktUn6UmPorDtudq", "oIcH05TUMC1H4eRB0f575BffOzLV6s", "RDV9o0Xs0wR3bMJwiMoqv", "Drf", "fWBbnfM052TaJjbz2mNIhyXx2yjBcv", "vwrAcDNdoQtjOaT8FPnJSektvmYH0bUo", "A7bgPIcOUjT1m5u12vt0AimohlYQKPcw"};
-    public static final EnumC1069Lw[] A06;
-    public final C1236Sn A00;
+    public static final EnumC1089Lw[] A06;
+    public final C1256Sn A00;
     public final T8 A01;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 63);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 63);
         }
         return new String(copyOfRange);
     }
@@ -61,8 +61,8 @@ public final class ZJ implements UF {
                     SZ.A07(this.A01);
                 }
                 A062.put(A01(a.aT, 4, 114), SZ.A00().A03());
-                A062.put(A01(587, 10, 2), UJ.A06(new C1263To(this.A01), this.A01, false));
-                if (C1290Up.A21(this.A01)) {
+                A062.put(A01(587, 10, 2), UJ.A06(new C1283To(this.A01), this.A01, false));
+                if (C1310Up.A21(this.A01)) {
                     A062.put(A01(119, 10, 53), N8.A01(this.A01).A0K());
                 }
                 Iterator it = A062.entrySet().iterator();
@@ -112,7 +112,7 @@ public final class ZJ implements UF {
 
     /* JADX WARN: Code restructure failed: missing block: B:59:0x037d, code lost:
     
-        if (com.instagram.common.viewpoint.core.AbstractC1293Us.A0D(r5) != false) goto L60;
+        if (com.instagram.common.viewpoint.core.AbstractC1313Us.A0D(r5) != false) goto L60;
      */
     /* JADX WARN: Code restructure failed: missing block: B:60:0x037f, code lost:
     
@@ -203,7 +203,7 @@ public final class ZJ implements UF {
      */
     /* JADX WARN: Code restructure failed: missing block: B:84:0x04ea, code lost:
     
-        if (com.instagram.common.viewpoint.core.C1290Up.A0y(r11.A01) == false) goto L99;
+        if (com.instagram.common.viewpoint.core.C1310Up.A0y(r11.A01) == false) goto L99;
      */
     /* JADX WARN: Code restructure failed: missing block: B:85:0x04ec, code lost:
     
@@ -215,7 +215,7 @@ public final class ZJ implements UF {
      */
     /* JADX WARN: Code restructure failed: missing block: B:87:0x04f8, code lost:
     
-        r3.put(A01(553, 17, 45), com.instagram.common.viewpoint.core.AbstractC1351Xd.A01(r4));
+        r3.put(A01(553, 17, 45), com.instagram.common.viewpoint.core.AbstractC1371Xd.A01(r4));
      */
     /* JADX WARN: Code restructure failed: missing block: B:88:0x0509, code lost:
     
@@ -231,7 +231,7 @@ public final class ZJ implements UF {
      */
     /* JADX WARN: Code restructure failed: missing block: B:93:0x041b, code lost:
     
-        if (com.instagram.common.viewpoint.core.AbstractC1293Us.A0D(r5) != false) goto L60;
+        if (com.instagram.common.viewpoint.core.AbstractC1313Us.A0D(r5) != false) goto L60;
      */
     /* JADX WARN: Failed to parse debug info
     java.lang.ArrayIndexOutOfBoundsException: Index 13 out of bounds for length 13
@@ -245,33 +245,33 @@ public final class ZJ implements UF {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Map<String, String> A7y(U3 u3) {
+    public final Map<String, String> A7y(U3 u32) {
         String A87;
-        String A79 = u3 != null ? u3.A79() : null;
+        String A79 = u32 != null ? u32.A79() : null;
         String packageName = A79 != null ? A79 : this.A01.getPackageName();
-        UB.A08(this.A01, ProcessUtils.isRemoteRenderingProcess() ? true : C1290Up.A0n(this.A01), A79);
-        C1262Tn.A0B(this.A01);
-        C1262Tn.A08(this.A01);
+        UB.A08(this.A01, ProcessUtils.isRemoteRenderingProcess() ? true : C1310Up.A0n(this.A01), A79);
+        C1282Tn.A0B(this.A01);
+        C1282Tn.A08(this.A01);
         HashMap hashMap = new HashMap();
         U8.A03(this.A01, hashMap, A79);
         hashMap.put(A01(332, 6, 13), Locale.getDefault().toString());
-        float f3 = XX.A02;
+        float f2 = XX.A02;
         int i = this.A01.getResources().getDisplayMetrics().widthPixels;
-        int i6 = this.A01.getResources().getDisplayMetrics().heightPixels;
-        hashMap.put(A01(219, 7, 54), String.valueOf(f3));
-        hashMap.put(A01(527, 12, 100), String.valueOf((int) (i / f3)));
-        hashMap.put(A01(514, 13, 93), String.valueOf((int) (i6 / f3)));
+        int i4 = this.A01.getResources().getDisplayMetrics().heightPixels;
+        hashMap.put(A01(219, 7, 54), String.valueOf(f2));
+        hashMap.put(A01(527, 12, 100), String.valueOf((int) (i / f2)));
+        hashMap.put(A01(514, 13, 93), String.valueOf((int) (i4 / f2)));
         hashMap.put(A01(57, 14, 114), SZ.A03());
         hashMap.put(A01(314, 9, 51), SZ.A00().A02().name());
         hashMap.put(A01(300, 14, 63), String.valueOf(SZ.A00().A01()));
-        C1263To c1263To = new C1263To(this.A01, A79);
-        hashMap.put(A01(108, 6, 101), UJ.A03(this.A01, c1263To));
-        hashMap.put(A01(com.anythink.expressad.video.module.a.a.f21730T, 7, 30), c1263To.A08());
-        hashMap.put(A01(338, 4, 117), c1263To.A09());
+        C1283To c1283To = new C1283To(this.A01, A79);
+        hashMap.put(A01(108, 6, 101), UJ.A03(this.A01, c1283To));
+        hashMap.put(A01(com.anythink.expressad.video.module.a.a.f22517T, 7, 30), c1283To.A08());
+        hashMap.put(A01(338, 4, 117), c1283To.A09());
         hashMap.put(A01(385, 6, 11), String.valueOf(UB.A00(this.A01).A00));
-        hashMap.put(A01(323, 9, 96), c1263To.A0B());
+        hashMap.put(A01(323, 9, 96), c1283To.A0B());
         hashMap.put(A01(539, 14, 83), XF.A01());
-        hashMap.put(A01(359, 12, 105), String.valueOf(AbstractC1373Xz.A00(this.A01).A00));
+        hashMap.put(A01(359, 12, 105), String.valueOf(AbstractC1393Xz.A00(this.A01).A00));
         hashMap.put(A01(570, 12, 101), Y1.A03(this.A01.A09().A01()));
         UB.A06(this.A01, packageName, hashMap);
         String A032 = XU.A03(this.A01, packageName);
@@ -279,8 +279,8 @@ public final class ZJ implements UF {
             hashMap.put(A01(48, 5, 90), A032);
         }
         String A01 = A01(582, 5, 125);
-        if (u3 != null && u3.AAk() != null) {
-            Boolean AAk = u3.AAk();
+        if (u32 != null && u32.AAk() != null) {
+            Boolean AAk = u32.AAk();
             String[] strArr = A05;
             if (strArr[7].charAt(0) != strArr[6].charAt(0)) {
                 String[] strArr2 = A05;
@@ -297,7 +297,7 @@ public final class ZJ implements UF {
         }
         A05[4] = "M1q";
         hashMap.put(A01, String.valueOf(A052));
-        String A8V = (u3 == null || u3.A8W() == null) ? this.A01.A05().A8V() : u3.A8W();
+        String A8V = (u32 == null || u32.A8W() == null) ? this.A01.A05().A8V() : u32.A8W();
         if (A8V != null) {
             String[] strArr4 = A05;
             if (strArr4[7].charAt(0) != strArr4[6].charAt(0)) {
@@ -309,13 +309,13 @@ public final class ZJ implements UF {
                 hashMap.put(A01(342, 17, 41), A8V);
             }
         }
-        hashMap.put(A01(2, 21, 43), String.valueOf(c1263To.A0C()));
-        if (c1263To.A03() != -1) {
-            hashMap.put(A01(29, 19, 59), String.valueOf(c1263To.A03()));
+        hashMap.put(A01(2, 21, 43), String.valueOf(c1283To.A0C()));
+        if (c1283To.A03() != -1) {
+            hashMap.put(A01(29, 19, 59), String.valueOf(c1283To.A03()));
         }
         hashMap.put(A01(597, 9, 48), U4.A05(this.A01, packageName));
-        hashMap.put(A01(23, 6, 102), AbstractC1351Xd.A01(C1262Tn.A02()));
-        if (AbstractC1289Uo.A05(this.A01) && (A87 = this.A01.A05().A87()) != null) {
+        hashMap.put(A01(23, 6, 102), AbstractC1371Xd.A01(C1282Tn.A02()));
+        if (AbstractC1309Uo.A05(this.A01) && (A87 = this.A01.A05().A87()) != null) {
             hashMap.put(A01(53, 4, 103), A87);
         }
         String A8c = this.A01.A05().A8c();
@@ -323,14 +323,14 @@ public final class ZJ implements UF {
             hashMap.put(A01(371, 14, 32), A8c);
         }
         TM tm = null;
-        if (u3 != null) {
+        if (u32 != null) {
             T8 t82 = this.A01;
             String[] strArr6 = A05;
             if (strArr6[7].charAt(0) != strArr6[6].charAt(0)) {
                 String[] strArr7 = A05;
                 strArr7[3] = "QL1vZoGO1wQ14zpGXE2Sg";
                 strArr7[0] = "5V9s84iDx7Ocfd5gsL";
-                tm = u3.A7m(t82);
+                tm = u32.A7m(t82);
             }
             throw new RuntimeException();
         }
@@ -375,20 +375,20 @@ public final class ZJ implements UF {
     static {
         A02();
         A03 = false;
-        A06 = new EnumC1069Lw[]{EnumC1069Lw.A1D, EnumC1069Lw.A0r, EnumC1069Lw.A1E, EnumC1069Lw.A1O, EnumC1069Lw.A18, EnumC1069Lw.A1A, EnumC1069Lw.A2h, EnumC1069Lw.A2i, EnumC1069Lw.A2j};
+        A06 = new EnumC1089Lw[]{EnumC1089Lw.A1D, EnumC1089Lw.A0r, EnumC1089Lw.A1E, EnumC1089Lw.A1O, EnumC1089Lw.A18, EnumC1089Lw.A1A, EnumC1089Lw.A2h, EnumC1089Lw.A2i, EnumC1089Lw.A2j};
     }
 
-    public ZJ(T8 t82, boolean z3, C1236Sn c1236Sn) {
+    public ZJ(T8 t82, boolean z6, C1256Sn c1256Sn) {
         this.A01 = t82;
-        this.A00 = c1236Sn;
-        UB.A08(t82, z3, null);
+        this.A00 = c1256Sn;
+        UB.A08(t82, z6, null);
     }
 
     public static synchronized PackageInfo A00(T8 t82) {
         PackageInfo packageInfo;
         synchronized (ZJ.class) {
             if (!A03) {
-                A02 = AbstractC1356Xi.A00(t82);
+                A02 = AbstractC1376Xi.A00(t82);
                 A03 = true;
             }
             packageInfo = A02;
@@ -396,15 +396,15 @@ public final class ZJ implements UF {
         return packageInfo;
     }
 
-    private void A03(U3 u3, Map<String, String> map) {
+    private void A03(U3 u32, Map<String, String> map) {
         String A01;
-        if (u3 != null && u3.AAg()) {
+        if (u32 != null && u32.AAg()) {
             map.put(A01(436, 18, 22), Boolean.TRUE.toString());
-            if (u3.A7N() != null) {
-                map.put(A01(391, 21, 37), u3.A7N());
+            if (u32.A7N() != null) {
+                map.put(A01(391, 21, 37), u32.A7N());
             }
         }
-        if (AbstractC1293Us.A09(this.A01)) {
+        if (AbstractC1313Us.A09(this.A01)) {
             T8 t82 = this.A01;
             if (A05[1].charAt(25) != 'o') {
                 throw new RuntimeException();
@@ -422,7 +422,7 @@ public final class ZJ implements UF {
                 String remoteRenderingSdkVersion2 = A01(427, 9, 105);
                 map.put(remoteRenderingSdkVersion2, A022);
             }
-            if (AbstractC1293Us.A0D(this.A01)) {
+            if (AbstractC1313Us.A0D(this.A01)) {
                 String A012 = U5.A01(this.A01.A02());
                 String[] strArr2 = A05;
                 String remoteRenderingExtras = strArr2[7];
@@ -438,7 +438,7 @@ public final class ZJ implements UF {
                 }
             }
         }
-        if (C1290Up.A0x(this.A01) && (A01 = U6.A01(this.A01.A02())) != null) {
+        if (C1310Up.A0x(this.A01) && (A01 = U6.A01(this.A01.A02())) != null) {
             String cache = A01(114, 5, 16);
             map.put(cache, A01);
         }

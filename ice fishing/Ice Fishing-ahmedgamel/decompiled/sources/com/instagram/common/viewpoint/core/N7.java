@@ -20,10 +20,10 @@ public final class N7 {
     public JSONObject A00 = new JSONObject();
     public final AtomicReference<String> A02 = new AtomicReference<>(A01(0, 2, 32));
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 66);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A03, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 66);
         }
         return new String(copyOfRange);
     }
@@ -35,7 +35,7 @@ public final class N7 {
     /* JADX WARN: Failed to parse debug info
     java.lang.ArrayIndexOutOfBoundsException
      */
-    public final synchronized void A0A(@Nullable String str) throws JSONException, C1253Te {
+    public final synchronized void A0A(@Nullable String str) throws JSONException, C1273Te {
         if (str != null) {
             if (!str.trim().isEmpty()) {
                 this.A00 = new JSONObject(str);
@@ -58,36 +58,36 @@ public final class N7 {
         A02();
     }
 
-    private final synchronized C1103Nf A00(String str, JSONObject jSONObject) throws JSONException, C1253Te {
-        C1103Nf frequencyCappingData;
+    private final synchronized C1123Nf A00(String str, JSONObject jSONObject) throws JSONException, C1273Te {
+        C1123Nf frequencyCappingData;
         if (str.equals(jSONObject.optString(A01(29, 12, 70), null))) {
-            frequencyCappingData = new C1103Nf(str);
+            frequencyCappingData = new C1123Nf(str);
             A03(frequencyCappingData, jSONObject);
         } else {
-            C1253Te c1253Te = new C1253Te(new IllegalArgumentException());
+            C1273Te c1273Te = new C1273Te(new IllegalArgumentException());
             jSONObject.put(A01(5, 24, 86), str);
-            c1253Te.A07(jSONObject);
-            c1253Te.A05(1);
-            throw c1253Te;
+            c1273Te.A07(jSONObject);
+            c1273Te.A05(1);
+            throw c1273Te;
         }
         return frequencyCappingData;
     }
 
-    private void A03(C1103Nf c1103Nf, JSONObject jSONObject) throws JSONException {
+    private void A03(C1123Nf c1123Nf, JSONObject jSONObject) throws JSONException {
         int optInt = jSONObject.optInt(A01(75, 6, 77));
         int optInt2 = jSONObject.optInt(A01(101, 11, 100));
         int maxCappedArrayLength = jSONObject.optInt(A01(41, 23, 106), 50);
         long optLong = jSONObject.optLong(A01(2, 3, 28));
-        String A01 = A01(64, 11, a.f21727Q);
+        String A01 = A01(64, 11, a.f22514Q);
         if (jSONObject.has(A01)) {
-            c1103Nf.A06((JSONArray) jSONObject.get(A01));
+            c1123Nf.A06((JSONArray) jSONObject.get(A01));
         }
         String A012 = A01(81, 20, 107);
         if (jSONObject.has(A012)) {
             int cappingTimeSecs = jSONObject.optInt(A012);
-            c1103Nf.A04(cappingTimeSecs);
+            c1123Nf.A04(cappingTimeSecs);
         }
-        c1103Nf.A05(optInt, optInt2, optLong, maxCappedArrayLength);
+        c1123Nf.A05(optInt, optInt2, optLong, maxCappedArrayLength);
     }
 
     public final String A04() {
@@ -116,21 +116,21 @@ public final class N7 {
     }
 
     public final synchronized void A07(String str) {
-        if (this.A01.size() >= C1103Nf.A00()) {
+        if (this.A01.size() >= C1123Nf.A00()) {
             Iterator<String> it = this.A01.iterator();
             if (it.hasNext()) {
                 this.A01.remove(it.next());
             }
         }
         this.A01.add(str);
-        C1237So.A03();
+        C1257So.A03();
     }
 
     public final synchronized void A08(@Nullable String str) throws JSONException {
         if (str != null) {
             if (!str.trim().isEmpty()) {
                 JSONArray jSONArray = new JSONArray(str);
-                for (int i = 0; i < jSONArray.length() && i < C1103Nf.A00(); i++) {
+                for (int i = 0; i < jSONArray.length() && i < C1123Nf.A00(); i++) {
                     this.A01.add(jSONArray.getString(i));
                 }
             }
@@ -139,19 +139,19 @@ public final class N7 {
 
     public final synchronized void A09(String str) {
         this.A01.remove(str);
-        C1237So.A03();
+        C1257So.A03();
     }
 
     public final synchronized void A0B(JSONObject jSONObject) throws JSONException {
-        C1103Nf frequencyCappingData;
+        C1123Nf frequencyCappingData;
         String optString = jSONObject.optString(A01(29, 12, 70), null);
         if (optString == null) {
             return;
         }
-        if (this.A00.has(optString) && (this.A00.get(optString) instanceof C1103Nf)) {
-            frequencyCappingData = (C1103Nf) this.A00.get(optString);
+        if (this.A00.has(optString) && (this.A00.get(optString) instanceof C1123Nf)) {
+            frequencyCappingData = (C1123Nf) this.A00.get(optString);
         } else {
-            frequencyCappingData = new C1103Nf(optString);
+            frequencyCappingData = new C1123Nf(optString);
         }
         A03(frequencyCappingData, jSONObject);
         this.A00.put(optString, frequencyCappingData);

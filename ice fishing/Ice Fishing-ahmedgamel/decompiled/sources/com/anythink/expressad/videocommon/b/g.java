@@ -13,21 +13,21 @@ import java.net.URL;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f22285a = "<anythinkloadend></anythinkloadend>";
+    public static final String f23072a = "<anythinkloadend></anythinkloadend>";
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f22286b = "DownLoadUtils";
+    private static final String f23073b = "DownLoadUtils";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final int f22287c = 20000;
+    private static final int f23074c = 20000;
 
     /* renamed from: d, reason: collision with root package name */
-    private static final int f22288d = 30000;
+    private static final int f23075d = 30000;
 
     public static void a(final String str, final String str2, final i.c cVar) {
         try {
             if (!y.a(str) && URLUtil.isNetworkUrl(str)) {
-                h.a.f22293a.a(new com.anythink.expressad.foundation.g.h.a() { // from class: com.anythink.expressad.videocommon.b.g.1
+                h.a.f23080a.a(new com.anythink.expressad.foundation.g.h.a() { // from class: com.anythink.expressad.videocommon.b.g.1
                     /* JADX WARN: Removed duplicated region for block: B:26:0x0099 A[Catch: all -> 0x00a1, TryCatch #0 {all -> 0x00a1, blocks: (B:24:0x0095, B:26:0x0099, B:29:0x00a3, B:31:0x00a7), top: B:23:0x0095 }] */
                     /* JADX WARN: Removed duplicated region for block: B:29:0x00a3 A[Catch: all -> 0x00a1, TryCatch #0 {all -> 0x00a1, blocks: (B:24:0x0095, B:26:0x0099, B:29:0x00a3, B:31:0x00a7), top: B:23:0x0095 }] */
                     /* JADX WARN: Removed duplicated region for block: B:55:0x008c A[Catch: all -> 0x0071, TRY_ENTER, TryCatch #1 {all -> 0x0071, blocks: (B:19:0x006d, B:21:0x0075, B:55:0x008c, B:57:0x0091), top: B:2:0x0002 }] */
@@ -44,14 +44,14 @@ public final class g {
                         String message;
                         Throwable th;
                         Exception e9;
-                        boolean z3;
+                        boolean z6;
                         FileOutputStream fileOutputStream2 = null;
-                        boolean z6 = false;
+                        boolean z9 = false;
                         try {
                             try {
                                 HttpURLConnection httpURLConnection = (HttpURLConnection) new URL(str).openConnection();
                                 httpURLConnection.setReadTimeout(30000);
-                                httpURLConnection.setConnectTimeout(g.f22287c);
+                                httpURLConnection.setConnectTimeout(g.f23074c);
                                 int responseCode = httpURLConnection.getResponseCode();
                                 if (responseCode == 200) {
                                     inputStream = httpURLConnection.getInputStream();
@@ -69,7 +69,7 @@ public final class g {
                                                     }
                                                 }
                                                 fileOutputStream.close();
-                                                z3 = true;
+                                                z6 = true;
                                                 message = "";
                                                 fileOutputStream2 = fileOutputStream;
                                             } catch (Exception e10) {
@@ -84,7 +84,7 @@ public final class g {
                                                 }
                                                 message = message2;
                                                 String str3 = str2;
-                                                if (z6) {
+                                                if (z9) {
                                                 }
                                             }
                                         } catch (Throwable th2) {
@@ -115,7 +115,7 @@ public final class g {
                                         }
                                         message = message22;
                                         String str32 = str2;
-                                        if (z6) {
+                                        if (z9) {
                                         }
                                     } catch (Throwable th4) {
                                         th = th4;
@@ -128,7 +128,7 @@ public final class g {
                                         throw th;
                                     }
                                 } else {
-                                    z3 = false;
+                                    z6 = false;
                                     message = "responseCode is ".concat(String.valueOf(responseCode));
                                     inputStream = null;
                                 }
@@ -139,7 +139,7 @@ public final class g {
                                 if (inputStream != null) {
                                     inputStream.close();
                                 }
-                                z6 = z3;
+                                z9 = z6;
                             } catch (Throwable th5) {
                                 th5.printStackTrace();
                                 message = th5.getMessage();
@@ -155,7 +155,7 @@ public final class g {
                         }
                         try {
                             String str322 = str2;
-                            if (z6) {
+                            if (z9) {
                                 i.c.this.a(str322, str);
                                 return;
                             }
@@ -164,7 +164,7 @@ public final class g {
                                 cVar2.a("content write failed:".concat(String.valueOf(message)));
                             }
                         } catch (Throwable th7) {
-                            if (com.anythink.expressad.a.f17618a) {
+                            if (com.anythink.expressad.a.f18405a) {
                                 th7.printStackTrace();
                             }
                             i.c cVar3 = i.c.this;
@@ -190,7 +190,7 @@ public final class g {
             }
             cVar.a("url is error");
         } catch (Throwable th) {
-            if (com.anythink.expressad.a.f17618a) {
+            if (com.anythink.expressad.a.f18405a) {
                 th.printStackTrace();
             }
         }

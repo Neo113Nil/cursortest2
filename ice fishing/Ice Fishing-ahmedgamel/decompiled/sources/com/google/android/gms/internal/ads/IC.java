@@ -9,16 +9,16 @@ import java.util.logging.Level;
 public final class IC implements Closeable {
 
     /* renamed from: n, reason: collision with root package name */
-    public final ArrayDeque f25468n = new ArrayDeque(4);
+    public final ArrayDeque f26211n = new ArrayDeque(4);
 
     /* renamed from: u, reason: collision with root package name */
-    public Throwable f25469u;
+    public Throwable f26212u;
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
-        Throwable th = this.f25469u;
+        Throwable th = this.f26212u;
         while (true) {
-            ArrayDeque arrayDeque = this.f25468n;
+            ArrayDeque arrayDeque = this.f26211n;
             if (arrayDeque.isEmpty()) {
                 break;
             }
@@ -32,15 +32,15 @@ public final class IC implements Closeable {
                     try {
                         th.addSuppressed(th2);
                     } catch (Throwable unused) {
-                        HC.f25243a.logp(Level.WARNING, "com.google.common.io.Closer", "<init>", "Suppressing exception thrown when closing ".concat(String.valueOf(closeable)), th2);
+                        HC.f26015a.logp(Level.WARNING, "com.google.common.io.Closer", "<init>", "Suppressing exception thrown when closing ".concat(String.valueOf(closeable)), th2);
                     }
                 }
             }
         }
-        if (this.f25469u != null || th == null) {
+        if (this.f26212u != null || th == null) {
             return;
         }
-        Object obj = AbstractC3391jB.f31212a;
+        Object obj = AbstractC3414jB.f31999a;
         if (IOException.class.isInstance(th)) {
             throw ((Throwable) IOException.class.cast(th));
         }

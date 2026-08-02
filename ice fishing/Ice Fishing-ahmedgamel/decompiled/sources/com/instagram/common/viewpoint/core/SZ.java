@@ -11,20 +11,20 @@ public abstract class SZ {
     public static final AtomicReference<SX> A02;
     public static final AtomicReference<String> A03;
 
-    public static String A04(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        int i10 = 0;
+    public static String A04(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             if (A01[7].length() != 4) {
                 throw new RuntimeException();
             }
             A01[6] = "PcSdqCtN9qYKSfDsPVWrfTZjyuiu0dLa";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 86);
-            i10++;
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 86);
+            i9++;
         }
     }
 
@@ -57,28 +57,28 @@ public abstract class SZ {
         if (sx != null) {
             try {
             } catch (Throwable t6) {
-                t82.A08().ABC(A04(12, 7, 84), AbstractC1252Td.A1Q, new C1253Te(t6));
+                t82.A08().ABC(A04(12, 7, 84), AbstractC1272Td.A1Q, new C1273Te(t6));
             }
         }
-        return AbstractC1228Sf.A00(t82);
+        return AbstractC1248Sf.A00(t82);
         return sx;
     }
 
     public static SX A02(T8 t82, SX sx, SY sy) {
-        C1224Sa c1224Sa = null;
+        C1244Sa c1244Sa = null;
         try {
-            if (AbstractC1289Uo.A06(t82) && (sx == null || TextUtils.isEmpty(sx.A03()))) {
-                c1224Sa = AbstractC1225Sb.A00(t82.getContentResolver());
+            if (AbstractC1309Uo.A06(t82) && (sx == null || TextUtils.isEmpty(sx.A03()))) {
+                c1244Sa = AbstractC1245Sb.A00(t82.getContentResolver());
             }
         } catch (Throwable th) {
-            t82.A08().ABC(A04(12, 7, 84), AbstractC1252Td.A1S, new C1253Te(th));
+            t82.A08().ABC(A04(12, 7, 84), AbstractC1272Td.A1S, new C1273Te(th));
         }
-        if (c1224Sa != null && c1224Sa.A01 != null) {
-            A03.set(c1224Sa.A01);
-            sy.A05(c1224Sa.A01);
+        if (c1244Sa != null && c1244Sa.A01 != null) {
+            A03.set(c1244Sa.A01);
+            sy.A05(c1244Sa.A01);
         }
-        if (sx == null && c1224Sa != null && !TextUtils.isEmpty(c1224Sa.A00)) {
-            return new SX(c1224Sa.A00, c1224Sa.A02, SW.A04);
+        if (sx == null && c1244Sa != null && !TextUtils.isEmpty(c1244Sa.A00)) {
+            return new SX(c1244Sa.A00, c1244Sa.A02, SW.A04);
         }
         return sx;
     }
@@ -111,10 +111,10 @@ public abstract class SZ {
             } else {
                 j6 = -1;
             }
-            if (j6 > 0 && System.currentTimeMillis() - j6 < AbstractC1289Uo.A00(t82)) {
+            if (j6 > 0 && System.currentTimeMillis() - j6 < AbstractC1309Uo.A00(t82)) {
                 return;
             }
-            if (AbstractC1289Uo.A07(t82)) {
+            if (AbstractC1309Uo.A07(t82)) {
                 advertisingIdInfo = A01(t82, A02(t82, null, sy));
             } else {
                 advertisingIdInfo = A02(t82, A01(t82, null), sy);
@@ -124,19 +124,19 @@ public abstract class SZ {
                 sy.A04(advertisingIdInfo);
             }
         } catch (Throwable t6) {
-            t82.A08().ABC(A04(12, 7, 84), AbstractC1252Td.A1R, new C1253Te(t6));
+            t82.A08().ABC(A04(12, 7, 84), AbstractC1272Td.A1R, new C1273Te(t6));
         }
     }
 
     public static boolean A08() {
-        boolean z3 = false;
+        boolean z6 = false;
         boolean updated = XD.A04();
         if (updated) {
             String A04 = A04(0, 12, 92);
             boolean updated2 = XD.A05(A04);
             if (updated2) {
                 A03.set(XD.A01(A04));
-                z3 = true;
+                z6 = true;
             }
         }
         boolean A042 = XD.A04();
@@ -145,7 +145,7 @@ public abstract class SZ {
         }
         A01[6] = "Cpq5b7Aomj18wFHDN8BPNJlk9AiHAVMm";
         if (!A042) {
-            return z3;
+            return z6;
         }
         String A043 = A04(19, 13, 108);
         boolean updated3 = XD.A05(A043);
@@ -164,6 +164,6 @@ public abstract class SZ {
             atomicReference.set(new SX(A012, false, SW.A03));
             return true;
         }
-        return z3;
+        return z6;
     }
 }

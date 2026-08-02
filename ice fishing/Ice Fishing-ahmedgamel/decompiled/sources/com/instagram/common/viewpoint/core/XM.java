@@ -9,14 +9,14 @@ public final class XM {
     public final Rect A01 = new Rect();
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.rN != com.instagram.common.viewpoint.core.ViewpointData<com.facebook.ads.internal.impressionsecondchannel.model.Impression, com.facebook.ads.internal.impressionsecondchannel.state.ImpressionState> */
-    public static boolean A00(C2449rN<C1297Uw, V1> c2449rN) {
-        if (c2449rN.A06.A05()) {
-            return c2449rN.A07.A07();
+    public static boolean A00(C2469rN<C1317Uw, V1> c2469rN) {
+        if (c2469rN.A06.A05()) {
+            return c2469rN.A07.A07();
         }
-        if (!c2449rN.A06.A06()) {
+        if (!c2469rN.A06.A06()) {
             return true;
         }
-        return c2449rN.A07.A06();
+        return c2469rN.A07.A06();
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:22:0x006e, code lost:
@@ -60,42 +60,42 @@ public final class XM {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private boolean A01(C2449rN<C1297Uw, V1> c2449rN, InterfaceC2440rD interfaceC2440rD) {
-        boolean z3;
-        float f3 = -1.0f;
+    private boolean A01(C2469rN<C1317Uw, V1> c2469rN, InterfaceC2460rD interfaceC2460rD) {
+        boolean z6;
+        float f2 = -1.0f;
         try {
-            f3 = interfaceC2440rD.A9X(c2449rN);
+            f2 = interfaceC2460rD.A9X(c2469rN);
         } catch (IllegalStateException unused) {
         }
         if (A02[6].length() == 7) {
             throw new RuntimeException();
         }
         A02[5] = "l0GJDJ6h98NWCV6pJLy8cxtVoo076bMe";
-        if (f3 > 0.0f && A00(c2449rN)) {
+        if (f2 > 0.0f && A00(c2469rN)) {
             return true;
         }
-        if (c2449rN.A06.A00().getGlobalVisibleRect(this.A01) && this.A01.bottom - this.A01.top > 0 && A00(c2449rN)) {
+        if (c2469rN.A06.A00().getGlobalVisibleRect(this.A01) && this.A01.bottom - this.A01.top > 0 && A00(c2469rN)) {
             return true;
         }
-        interfaceC2440rD.A9W(this.A00);
+        interfaceC2460rD.A9W(this.A00);
         if (A02[2].length() != 2) {
             A02[2] = "WH3ZGQ";
-            interfaceC2440rD.A8D(c2449rN, this.A01);
+            interfaceC2460rD.A8D(c2469rN, this.A01);
         } else {
-            interfaceC2440rD.A8D(c2449rN, this.A01);
+            interfaceC2460rD.A8D(c2469rN, this.A01);
         }
-        return z3 && A00(c2449rN);
+        return z6 && A00(c2469rN);
     }
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.rN != com.instagram.common.viewpoint.core.ViewpointData<com.facebook.ads.internal.impressionsecondchannel.model.Impression, com.facebook.ads.internal.impressionsecondchannel.state.ImpressionState> */
-    public final void A02(C2449rN<C1297Uw, V1> c2449rN, InterfaceC2440rD interfaceC2440rD) {
-        if (c2449rN.A07.A04() && A01(c2449rN, interfaceC2440rD)) {
-            c2449rN.A07.A01();
-            c2449rN.A06.A02().ABx(c2449rN.A06.A03(), c2449rN.A06.A04());
+    public final void A02(C2469rN<C1317Uw, V1> c2469rN, InterfaceC2460rD interfaceC2460rD) {
+        if (c2469rN.A07.A04() && A01(c2469rN, interfaceC2460rD)) {
+            c2469rN.A07.A01();
+            c2469rN.A06.A02().ABx(c2469rN.A06.A03(), c2469rN.A06.A04());
         }
-        if (c2449rN.A07.A05() && C1290Up.A1l(c2449rN.A06.A01())) {
-            c2449rN.A07.A02();
-            c2449rN.A06.A02().ABL(c2449rN.A06.A03(), c2449rN.A06.A04());
+        if (c2469rN.A07.A05() && C1310Up.A1l(c2469rN.A06.A01())) {
+            c2469rN.A07.A02();
+            c2469rN.A06.A02().ABL(c2469rN.A06.A03(), c2469rN.A06.A04());
         }
     }
 }

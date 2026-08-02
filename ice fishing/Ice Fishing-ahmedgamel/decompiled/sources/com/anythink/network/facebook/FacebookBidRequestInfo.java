@@ -12,24 +12,24 @@ import org.json.JSONObject;
 public class FacebookBidRequestInfo extends ATBidRequestInfo {
 
     /* renamed from: a, reason: collision with root package name */
-    String f23110a;
+    String f23897a;
 
     /* renamed from: b, reason: collision with root package name */
-    JSONObject f23111b = new JSONObject();
+    JSONObject f23898b = new JSONObject();
 
     public FacebookBidRequestInfo(Context context, Map<String, Object> map) {
         Object obj;
         try {
             String obj2 = map.get("app_id").toString();
             String obj3 = map.get("unit_id").toString();
-            this.f23110a = BidderTokenProvider.getBidderToken(context);
-            this.f23111b.put("app_id", obj2);
-            this.f23111b.put("unit_id", obj3);
-            this.f23111b.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.BUYERUID, this.f23110a);
+            this.f23897a = BidderTokenProvider.getBidderToken(context);
+            this.f23898b.put("app_id", obj2);
+            this.f23898b.put("unit_id", obj3);
+            this.f23898b.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.BUYERUID, this.f23897a);
             if (!map.containsKey("unit_type") || (obj = map.get("unit_type")) == null) {
                 return;
             }
-            this.f23111b.put("unit_type", Integer.parseInt(obj.toString()));
+            this.f23898b.put("unit_type", Integer.parseInt(obj.toString()));
         } catch (Throwable unused) {
         }
     }
@@ -53,18 +53,18 @@ public class FacebookBidRequestInfo extends ATBidRequestInfo {
                 } catch (Throwable th2) {
                     th2.printStackTrace();
                 }
-                this.f23111b.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_HEIGHT, i);
+                this.f23898b.put(ATAdConst.NETWORK_REQUEST_PARAMS_KEY.AD_HEIGHT, i);
             }
         } catch (Throwable unused) {
         }
     }
 
     public boolean isValid() {
-        return !TextUtils.isEmpty(this.f23110a);
+        return !TextUtils.isEmpty(this.f23897a);
     }
 
     @Override // com.anythink.core.api.ATBidRequestInfo
     public JSONObject toRequestJSONObject() {
-        return this.f23111b;
+        return this.f23898b;
     }
 }

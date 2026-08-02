@@ -4,7 +4,7 @@ package com.anythink.expressad.video.bt.module.b;
 public interface g {
     void a();
 
-    void a(boolean z3, String str, float f3);
+    void a(boolean z6, String str, float f2);
 
     void b();
 

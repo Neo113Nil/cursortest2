@@ -21,7 +21,7 @@ public abstract class AbsFeedBackForH5 extends BaseAbsFeedBackForH5 {
             if (!TextUtils.isEmpty(str)) {
                 JSONObject jSONObject = new JSONObject(str);
                 jSONObject.optInt("deviceMotionUpdateInterval", 1);
-                com.anythink.expressad.atsignalcommon.d.a.a().a(obj, ((b) obj).f18062a, jSONObject.optString("oldCache", ""), jSONObject.optString(com.anythink.expressad.foundation.g.g.a.b.f19421O, ""));
+                com.anythink.expressad.atsignalcommon.d.a.a().a(obj, ((b) obj).f18849a, jSONObject.optString("oldCache", ""), jSONObject.optString(com.anythink.expressad.foundation.g.g.a.b.f20208O, ""));
             }
             callbackSuccess(obj);
         } catch (Throwable th) {
@@ -33,7 +33,7 @@ public abstract class AbsFeedBackForH5 extends BaseAbsFeedBackForH5 {
     public void stopShake(Object obj, String str) {
         try {
             if (!TextUtils.isEmpty(str)) {
-                com.anythink.expressad.atsignalcommon.d.a.a().a(obj, ((b) obj).f18062a, new JSONObject(str).optString(com.anythink.expressad.foundation.g.g.a.b.f19421O, ""));
+                com.anythink.expressad.atsignalcommon.d.a.a().a(obj, ((b) obj).f18849a, new JSONObject(str).optString(com.anythink.expressad.foundation.g.g.a.b.f20208O, ""));
             }
             callbackSuccess(obj);
         } catch (Throwable th) {

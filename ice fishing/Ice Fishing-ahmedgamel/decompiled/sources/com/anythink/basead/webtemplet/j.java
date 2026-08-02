@@ -11,52 +11,52 @@ import java.util.Objects;
 public class j extends WebChromeClient {
 
     /* renamed from: a, reason: collision with root package name */
-    WTWebView f11516a;
+    WTWebView f12302a;
 
     /* renamed from: b, reason: collision with root package name */
-    g f11517b;
+    g f12303b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final String f11518c = com.anythink.expressad.foundation.d.j.cD;
+    private final String f12304c = com.anythink.expressad.foundation.d.j.cD;
 
     /* renamed from: d, reason: collision with root package name */
-    private c f11519d;
+    private c f12305d;
 
     /* renamed from: com.anythink.basead.webtemplet.j$1, reason: invalid class name */
     public static /* synthetic */ class AnonymousClass1 {
 
         /* renamed from: a, reason: collision with root package name */
-        static final /* synthetic */ int[] f11520a;
+        static final /* synthetic */ int[] f12306a;
 
         static {
             int[] iArr = new int[ConsoleMessage.MessageLevel.values().length];
-            f11520a = iArr;
+            f12306a = iArr;
             try {
                 iArr[ConsoleMessage.MessageLevel.LOG.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f11520a[ConsoleMessage.MessageLevel.WARNING.ordinal()] = 2;
+                f12306a[ConsoleMessage.MessageLevel.WARNING.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f11520a[ConsoleMessage.MessageLevel.ERROR.ordinal()] = 3;
+                f12306a[ConsoleMessage.MessageLevel.ERROR.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f11520a[ConsoleMessage.MessageLevel.TIP.ordinal()] = 4;
+                f12306a[ConsoleMessage.MessageLevel.TIP.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f11520a[ConsoleMessage.MessageLevel.DEBUG.ordinal()] = 5;
+                f12306a[ConsoleMessage.MessageLevel.DEBUG.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
         }
     }
 
     private void a(WTWebView wTWebView) {
-        this.f11516a = wTWebView;
-        this.f11517b = new g(wTWebView);
+        this.f12302a = wTWebView;
+        this.f12303b = new g(wTWebView);
     }
 
     @Override // android.webkit.WebChromeClient
@@ -64,7 +64,7 @@ public class j extends WebChromeClient {
         if (consoleMessage == null || consoleMessage.messageLevel() == null) {
             return super.onConsoleMessage(consoleMessage);
         }
-        int i = AnonymousClass1.f11520a[consoleMessage.messageLevel().ordinal()];
+        int i = AnonymousClass1.f12306a[consoleMessage.messageLevel().ordinal()];
         if (i == 1) {
             Objects.toString(consoleMessage.messageLevel());
             consoleMessage.message();
@@ -78,14 +78,14 @@ public class j extends WebChromeClient {
         if (consoleMessage.messageLevel() != ConsoleMessage.MessageLevel.LOG) {
             return super.onConsoleMessage(consoleMessage);
         }
-        if (this.f11517b == null) {
+        if (this.f12303b == null) {
             return super.onConsoleMessage(consoleMessage);
         }
         String message = consoleMessage.message();
-        if (TextUtils.isEmpty(message) || !message.startsWith(h.f11510a) || !this.f11517b.a(h.f11510a)) {
+        if (TextUtils.isEmpty(message) || !message.startsWith(h.f12296a) || !this.f12303b.a(h.f12296a)) {
             return super.onConsoleMessage(consoleMessage);
         }
-        this.f11517b.c(message);
+        this.f12303b.c(message);
         return true;
     }
 
@@ -100,6 +100,6 @@ public class j extends WebChromeClient {
     }
 
     public final void a(c cVar) {
-        this.f11519d = cVar;
+        this.f12305d = cVar;
     }
 }

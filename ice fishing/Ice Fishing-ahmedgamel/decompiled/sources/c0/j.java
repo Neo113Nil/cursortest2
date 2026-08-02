@@ -8,10 +8,10 @@ import android.view.View;
 public final class j implements TransformationMethod {
 
     /* renamed from: a, reason: collision with root package name */
-    public final TransformationMethod f5493a;
+    public final TransformationMethod f5641a;
 
     public j(TransformationMethod transformationMethod) {
-        this.f5493a = transformationMethod;
+        this.f5641a = transformationMethod;
     }
 
     @Override // android.text.method.TransformationMethod
@@ -19,7 +19,7 @@ public final class j implements TransformationMethod {
         if (view.isInEditMode()) {
             return charSequence;
         }
-        TransformationMethod transformationMethod = this.f5493a;
+        TransformationMethod transformationMethod = this.f5641a;
         if (transformationMethod != null) {
             charSequence = transformationMethod.getTransformation(charSequence, view);
         }
@@ -32,10 +32,10 @@ public final class j implements TransformationMethod {
     }
 
     @Override // android.text.method.TransformationMethod
-    public final void onFocusChanged(View view, CharSequence charSequence, boolean z3, int i, Rect rect) {
-        TransformationMethod transformationMethod = this.f5493a;
+    public final void onFocusChanged(View view, CharSequence charSequence, boolean z6, int i, Rect rect) {
+        TransformationMethod transformationMethod = this.f5641a;
         if (transformationMethod != null) {
-            transformationMethod.onFocusChanged(view, charSequence, z3, i, rect);
+            transformationMethod.onFocusChanged(view, charSequence, z6, i, rect);
         }
     }
 }

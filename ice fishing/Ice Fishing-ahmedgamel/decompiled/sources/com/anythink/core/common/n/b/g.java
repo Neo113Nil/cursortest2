@@ -11,69 +11,70 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 import javax.net.ssl.SSLPeerUnverifiedException;
+import w.AbstractC5128c;
 
 /* loaded from: classes.dex */
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final g f15605a = new a().a();
+    public static final g f16392a = new a().a();
 
     /* renamed from: b, reason: collision with root package name */
-    private final Set<b> f15606b;
+    private final Set<b> f16393b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final com.anythink.core.common.n.b.a.j.c f15607c;
+    private final com.anythink.core.common.n.b.a.j.c f16394c;
 
     public static final class b {
 
         /* renamed from: e, reason: collision with root package name */
-        private static final String f15609e = "*.";
+        private static final String f16396e = "*.";
 
         /* renamed from: a, reason: collision with root package name */
-        final String f15610a;
+        final String f16397a;
 
         /* renamed from: b, reason: collision with root package name */
-        final String f15611b;
+        final String f16398b;
 
         /* renamed from: c, reason: collision with root package name */
-        final String f15612c;
+        final String f16399c;
 
         /* renamed from: d, reason: collision with root package name */
-        final com.anythink.core.common.n.c.f f15613d;
+        final com.anythink.core.common.n.c.f f16400d;
 
         public b(String str, String str2) {
             String str3;
-            this.f15610a = str;
-            if (str.startsWith(f15609e)) {
-                str3 = v.d("http://" + str.substring(2)).f15734m;
+            this.f16397a = str;
+            if (str.startsWith(f16396e)) {
+                str3 = v.d("http://" + str.substring(2)).f16521m;
             } else {
-                str3 = v.d("http://".concat(str)).f15734m;
+                str3 = v.d("http://".concat(str)).f16521m;
             }
-            this.f15611b = str3;
+            this.f16398b = str3;
             if (str2.startsWith("sha1/")) {
-                this.f15612c = "sha1/";
-                this.f15613d = com.anythink.core.common.n.c.f.b(str2.substring(5));
+                this.f16399c = "sha1/";
+                this.f16400d = com.anythink.core.common.n.c.f.b(str2.substring(5));
             } else {
                 if (!str2.startsWith("sha256/")) {
                     throw new IllegalArgumentException("pins must start with 'sha256/' or 'sha1/': ".concat(str2));
                 }
-                this.f15612c = "sha256/";
-                this.f15613d = com.anythink.core.common.n.c.f.b(str2.substring(7));
+                this.f16399c = "sha256/";
+                this.f16400d = com.anythink.core.common.n.c.f.b(str2.substring(7));
             }
-            if (this.f15613d == null) {
+            if (this.f16400d == null) {
                 throw new IllegalArgumentException("pins must be base64: ".concat(str2));
             }
         }
 
         private boolean a(String str) {
-            if (!this.f15610a.startsWith(f15609e)) {
-                return str.equals(this.f15611b);
+            if (!this.f16397a.startsWith(f16396e)) {
+                return str.equals(this.f16398b);
             }
             int indexOf = str.indexOf(46);
-            if ((str.length() - indexOf) - 1 != this.f15611b.length()) {
+            if ((str.length() - indexOf) - 1 != this.f16398b.length()) {
                 return false;
             }
-            String str2 = this.f15611b;
+            String str2 = this.f16398b;
             return str.regionMatches(false, indexOf + 1, str2, 0, str2.length());
         }
 
@@ -82,21 +83,21 @@ public final class g {
                 return false;
             }
             b bVar = (b) obj;
-            return this.f15610a.equals(bVar.f15610a) && this.f15612c.equals(bVar.f15612c) && this.f15613d.equals(bVar.f15613d);
+            return this.f16397a.equals(bVar.f16397a) && this.f16399c.equals(bVar.f16399c) && this.f16400d.equals(bVar.f16400d);
         }
 
         public final int hashCode() {
-            return this.f15613d.hashCode() + u1.h.k(u1.h.k(527, 31, this.f15610a), 31, this.f15612c);
+            return this.f16400d.hashCode() + AbstractC5128c.a(AbstractC5128c.a(527, 31, this.f16397a), 31, this.f16399c);
         }
 
         public final String toString() {
-            return this.f15612c + this.f15613d.b();
+            return this.f16399c + this.f16400d.b();
         }
     }
 
     public g(Set<b> set, com.anythink.core.common.n.b.a.j.c cVar) {
-        this.f15606b = set;
-        this.f15607c = cVar;
+        this.f16393b = set;
+        this.f16394c = cVar;
     }
 
     private void a(String str, Certificate... certificateArr) {
@@ -115,11 +116,11 @@ public final class g {
             return false;
         }
         g gVar = (g) obj;
-        return Objects.equals(this.f15607c, gVar.f15607c) && this.f15606b.equals(gVar.f15606b);
+        return Objects.equals(this.f16394c, gVar.f16394c) && this.f16393b.equals(gVar.f16393b);
     }
 
     public final int hashCode() {
-        return this.f15606b.hashCode() + (Objects.hashCode(this.f15607c) * 31);
+        return this.f16393b.hashCode() + (Objects.hashCode(this.f16394c) * 31);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0042, code lost:
@@ -133,12 +134,12 @@ public final class g {
         String str2;
         boolean equals;
         List<b> list = Collections.EMPTY_LIST;
-        for (b bVar : this.f15606b) {
-            if (bVar.f15610a.startsWith("*.")) {
+        for (b bVar : this.f16393b) {
+            if (bVar.f16397a.startsWith("*.")) {
                 int indexOf = str.indexOf(46);
                 equals = true;
-                if ((str.length() - indexOf) - 1 == bVar.f15611b.length()) {
-                    String str3 = bVar.f15611b;
+                if ((str.length() - indexOf) - 1 == bVar.f16398b.length()) {
+                    String str3 = bVar.f16398b;
                     str2 = str;
                 } else {
                     str2 = str;
@@ -146,7 +147,7 @@ public final class g {
                 equals = false;
             } else {
                 str2 = str;
-                equals = str2.equals(bVar.f15611b);
+                equals = str2.equals(bVar.f16398b);
             }
             if (equals) {
                 if (list.isEmpty()) {
@@ -162,25 +163,25 @@ public final class g {
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private final List<b> f15608a = new ArrayList();
+        private final List<b> f16395a = new ArrayList();
 
         private a a(String str, String... strArr) {
             if (str == null) {
                 throw new NullPointerException("pattern == null");
             }
             for (String str2 : strArr) {
-                this.f15608a.add(new b(str, str2));
+                this.f16395a.add(new b(str, str2));
             }
             return this;
         }
 
         public final g a() {
-            return new g(new LinkedHashSet(this.f15608a), null);
+            return new g(new LinkedHashSet(this.f16395a), null);
         }
     }
 
     public final g a(com.anythink.core.common.n.b.a.j.c cVar) {
-        return Objects.equals(this.f15607c, cVar) ? this : new g(this.f15606b, cVar);
+        return Objects.equals(this.f16394c, cVar) ? this : new g(this.f16393b, cVar);
     }
 
     public static String a(Certificate certificate) {
@@ -197,7 +198,7 @@ public final class g {
     public final void a(String str, List<Certificate> list) {
         int i;
         List list2 = Collections.EMPTY_LIST;
-        Iterator<b> it = this.f15606b.iterator();
+        Iterator<b> it = this.f16393b.iterator();
         while (true) {
             r3 = false;
             boolean equals = false;
@@ -205,16 +206,16 @@ public final class g {
                 break;
             }
             b next = it.next();
-            if (next.f15610a.startsWith("*.")) {
+            if (next.f16397a.startsWith("*.")) {
                 int indexOf = str.indexOf(46);
-                if ((str.length() - indexOf) - 1 == next.f15611b.length()) {
-                    String str2 = next.f15611b;
+                if ((str.length() - indexOf) - 1 == next.f16398b.length()) {
+                    String str2 = next.f16398b;
                     if (str.regionMatches(false, indexOf + 1, str2, 0, str2.length())) {
                         equals = true;
                     }
                 }
             } else {
-                equals = str.equals(next.f15611b);
+                equals = str.equals(next.f16398b);
             }
             if (equals) {
                 if (list2.isEmpty()) {
@@ -226,39 +227,39 @@ public final class g {
         if (list2.isEmpty()) {
             return;
         }
-        com.anythink.core.common.n.b.a.j.c cVar = this.f15607c;
+        com.anythink.core.common.n.b.a.j.c cVar = this.f16394c;
         List<Certificate> a9 = cVar != null ? cVar.a(list, str) : list;
         int size = a9.size();
-        for (int i6 = 0; i6 < size; i6++) {
-            X509Certificate x509Certificate = (X509Certificate) a9.get(i6);
+        for (int i4 = 0; i4 < size; i4++) {
+            X509Certificate x509Certificate = (X509Certificate) a9.get(i4);
             int size2 = list2.size();
             com.anythink.core.common.n.c.f fVar = null;
             com.anythink.core.common.n.c.f fVar2 = null;
-            for (int i9 = 0; i9 < size2; i9++) {
-                b bVar = (b) list2.get(i9);
-                if (bVar.f15612c.equals("sha256/")) {
+            for (int i6 = 0; i6 < size2; i6++) {
+                b bVar = (b) list2.get(i6);
+                if (bVar.f16399c.equals("sha256/")) {
                     if (fVar == null) {
                         fVar = b(x509Certificate);
                     }
-                    if (bVar.f15613d.equals(fVar)) {
+                    if (bVar.f16400d.equals(fVar)) {
                         return;
                     }
-                } else if (bVar.f15612c.equals("sha1/")) {
+                } else if (bVar.f16399c.equals("sha1/")) {
                     if (fVar2 == null) {
                         fVar2 = com.anythink.core.common.n.c.f.a(x509Certificate.getPublicKey().getEncoded()).d();
                     }
-                    if (bVar.f15613d.equals(fVar2)) {
+                    if (bVar.f16400d.equals(fVar2)) {
                         return;
                     }
                 } else {
-                    throw new AssertionError("unsupported hashAlgorithm: " + bVar.f15612c);
+                    throw new AssertionError("unsupported hashAlgorithm: " + bVar.f16399c);
                 }
             }
         }
         StringBuilder sb = new StringBuilder("Certificate pinning failure!\n  Peer certificate chain:");
         int size3 = a9.size();
-        for (int i10 = 0; i10 < size3; i10++) {
-            X509Certificate x509Certificate2 = (X509Certificate) a9.get(i10);
+        for (int i9 = 0; i9 < size3; i9++) {
+            X509Certificate x509Certificate2 = (X509Certificate) a9.get(i9);
             sb.append("\n    ");
             sb.append(a((Certificate) x509Certificate2));
             sb.append(": ");

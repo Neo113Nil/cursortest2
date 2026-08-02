@@ -27,22 +27,22 @@ public final class ae implements Parcelable {
     };
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f7512a;
+    public final int f8298a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final com.anythink.basead.exoplayer.m[] f7513b;
+    private final com.anythink.basead.exoplayer.m[] f8299b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f7514c;
+    private int f8300c;
 
     public ae(com.anythink.basead.exoplayer.m... mVarArr) {
         com.anythink.basead.exoplayer.k.a.b(true);
-        this.f7513b = mVarArr;
-        this.f7512a = 1;
+        this.f8299b = mVarArr;
+        this.f8298a = 1;
     }
 
     public final com.anythink.basead.exoplayer.m a(int i) {
-        return this.f7513b[i];
+        return this.f8299b[i];
     }
 
     @Override // android.os.Parcelable
@@ -56,7 +56,7 @@ public final class ae implements Parcelable {
         }
         if (obj != null && ae.class == obj.getClass()) {
             ae aeVar = (ae) obj;
-            if (this.f7512a == aeVar.f7512a && Arrays.equals(this.f7513b, aeVar.f7513b)) {
+            if (this.f8298a == aeVar.f8298a && Arrays.equals(this.f8299b, aeVar.f8299b)) {
                 return true;
             }
         }
@@ -64,24 +64,24 @@ public final class ae implements Parcelable {
     }
 
     public final int hashCode() {
-        if (this.f7514c == 0) {
-            this.f7514c = Arrays.hashCode(this.f7513b) + 527;
+        if (this.f8300c == 0) {
+            this.f8300c = Arrays.hashCode(this.f8299b) + 527;
         }
-        return this.f7514c;
+        return this.f8300c;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeInt(this.f7512a);
-        for (int i6 = 0; i6 < this.f7512a; i6++) {
-            parcel.writeParcelable(this.f7513b[i6], 0);
+        parcel.writeInt(this.f8298a);
+        for (int i4 = 0; i4 < this.f8298a; i4++) {
+            parcel.writeParcelable(this.f8299b[i4], 0);
         }
     }
 
     public final int a(com.anythink.basead.exoplayer.m mVar) {
         int i = 0;
         while (true) {
-            com.anythink.basead.exoplayer.m[] mVarArr = this.f7513b;
+            com.anythink.basead.exoplayer.m[] mVarArr = this.f8299b;
             if (i >= mVarArr.length) {
                 return -1;
             }
@@ -94,10 +94,10 @@ public final class ae implements Parcelable {
 
     public ae(Parcel parcel) {
         int readInt = parcel.readInt();
-        this.f7512a = readInt;
-        this.f7513b = new com.anythink.basead.exoplayer.m[readInt];
-        for (int i = 0; i < this.f7512a; i++) {
-            this.f7513b[i] = (com.anythink.basead.exoplayer.m) parcel.readParcelable(com.anythink.basead.exoplayer.m.class.getClassLoader());
+        this.f8298a = readInt;
+        this.f8299b = new com.anythink.basead.exoplayer.m[readInt];
+        for (int i = 0; i < this.f8298a; i++) {
+            this.f8299b[i] = (com.anythink.basead.exoplayer.m) parcel.readParcelable(com.anythink.basead.exoplayer.m.class.getClassLoader());
         }
     }
 }

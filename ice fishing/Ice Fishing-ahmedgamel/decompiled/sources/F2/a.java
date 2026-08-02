@@ -1,32 +1,43 @@
 package F2;
 
-import C2.J;
+import D2.d;
 import android.content.Context;
-import com.google.android.gms.internal.ads.AbstractC2684Na;
-import com.google.android.gms.internal.ads.AbstractC3569ma;
-import com.google.android.gms.internal.ads.C4274ze;
-import k2.g;
-import q2.r;
-import v2.AbstractC5111b;
+import android.content.pm.PackageInfo;
+import com.google.android.gms.internal.ads.C3010bi;
+import com.google.android.gms.internal.ads.C3266gN;
+import com.google.android.gms.internal.ads.InterfaceC3320hN;
+import s2.C4945n;
+import x2.C5189a;
 
 /* loaded from: classes.dex */
-public final class a {
+public final class a implements InterfaceC3320hN {
 
     /* renamed from: a, reason: collision with root package name */
-    public final D2.b f951a;
+    public final C3010bi f971a;
 
-    public a(D2.b bVar) {
-        this.f951a = bVar;
+    /* renamed from: b, reason: collision with root package name */
+    public final C3010bi f972b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final C3266gN f973c;
+
+    /* renamed from: d, reason: collision with root package name */
+    public final C3266gN f974d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final C3266gN f975e;
+
+    public a(C3010bi c3010bi, C3010bi c3010bi2, C3266gN c3266gN, C3266gN c3266gN2, C3266gN c3266gN3) {
+        this.f971a = c3010bi;
+        this.f972b = c3010bi2;
+        this.f973c = c3266gN;
+        this.f974d = c3266gN2;
+        this.f975e = c3266gN3;
     }
 
-    public static void a(Context context, k2.b bVar, g gVar, b bVar2) {
-        AbstractC3569ma.a(context);
-        if (((Boolean) AbstractC2684Na.f26501j.r()).booleanValue()) {
-            if (((Boolean) r.f40207e.f40210c.a(AbstractC3569ma.Cc)).booleanValue()) {
-                AbstractC5111b.f41397b.execute(new J(context, bVar, gVar, bVar2, 1));
-                return;
-            }
-        }
-        new C4274ze(0, context, bVar, gVar.f38584a).n(bVar2);
+    @Override // com.google.android.gms.internal.ads.InterfaceC3534lN
+    /* renamed from: a, reason: merged with bridge method [inline-methods] */
+    public final C4945n f() {
+        return new C4945n((Context) this.f971a.f(), (C5189a) this.f972b.f(), (PackageInfo) this.f973c.f(), (String) this.f974d.f(), (d) this.f975e.f());
     }
 }

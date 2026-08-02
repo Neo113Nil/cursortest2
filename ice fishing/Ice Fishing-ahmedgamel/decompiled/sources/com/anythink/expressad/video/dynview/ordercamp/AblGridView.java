@@ -12,7 +12,7 @@ public class AblGridView extends GridView {
     }
 
     @Override // android.widget.GridView, android.widget.AbsListView, android.view.View
-    public void onMeasure(int i, int i6) {
+    public void onMeasure(int i, int i4) {
         super.onMeasure(i, View.MeasureSpec.makeMeasureSpec(536870911, Integer.MIN_VALUE));
     }
 

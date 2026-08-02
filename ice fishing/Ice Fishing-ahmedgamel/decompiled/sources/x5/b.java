@@ -8,7 +8,7 @@ import i5.m;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import t5.d;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public interface b {
@@ -16,21 +16,21 @@ public interface b {
 
     void addExternalForegroundLifecycleListener(j jVar);
 
-    Object canOpenNotification(Activity activity, JSONObject jSONObject, InterfaceC5267d interfaceC5267d);
+    Object canOpenNotification(Activity activity, JSONObject jSONObject, InterfaceC5240d interfaceC5240d);
 
-    Object canReceiveNotification(JSONObject jSONObject, InterfaceC5267d interfaceC5267d);
+    Object canReceiveNotification(JSONObject jSONObject, InterfaceC5240d interfaceC5240d);
 
     void externalNotificationWillShowInForeground(m mVar);
 
     void externalRemoteNotificationReceived(k kVar);
 
-    Object notificationOpened(Activity activity, JSONArray jSONArray, InterfaceC5267d interfaceC5267d);
+    Object notificationOpened(Activity activity, JSONArray jSONArray, InterfaceC5240d interfaceC5240d);
 
-    Object notificationReceived(d dVar, InterfaceC5267d interfaceC5267d);
+    Object notificationReceived(d dVar, InterfaceC5240d interfaceC5240d);
 
     void removeExternalClickListener(h hVar);
 
     void removeExternalForegroundLifecycleListener(j jVar);
 
-    void setInternalNotificationLifecycleCallback(InterfaceC5198a interfaceC5198a);
+    void setInternalNotificationLifecycleCallback(InterfaceC5193a interfaceC5193a);
 }

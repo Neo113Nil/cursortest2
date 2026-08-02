@@ -4,7 +4,7 @@ import android.view.Window;
 
 /* loaded from: classes.dex */
 public class u extends t {
-    @Override // com.bumptech.glide.f
+    @Override // com.bumptech.glide.g
     public void a(Window window) {
         kotlin.jvm.internal.h.e(window, "window");
         window.getAttributes().layoutInDisplayCutoutMode = 1;

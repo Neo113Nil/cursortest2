@@ -94,22 +94,22 @@ public final class P8<K, V> implements Set<Map.Entry<K, V>> {
             String[] strArr = A01;
             String str = strArr[6];
             String str2 = strArr[7];
-            int i6 = str.length();
+            int i4 = str.length();
             int result = str2.length();
-            if (i6 != result) {
+            if (i4 != result) {
                 throw new RuntimeException();
             }
             String[] strArr2 = A01;
             strArr2[6] = "tAEwYau76";
             strArr2[7] = "8QLk4N8pE";
-            int i9 = 0;
+            int i6 = 0;
             Object A0B = pc.A0B(A04, 0);
             Object A0B2 = this.A00.A0B(A04, 1);
-            int i10 = A0B == null ? 0 : A0B.hashCode();
+            int i9 = A0B == null ? 0 : A0B.hashCode();
             if (A0B2 != null) {
-                i9 = A0B2.hashCode();
+                i6 = A0B2.hashCode();
             }
-            i += i9 ^ i10;
+            i += i6 ^ i9;
         }
         return i;
     }

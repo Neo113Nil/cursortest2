@@ -4,36 +4,36 @@ package com.google.android.gms.internal.ads;
 public final class IG extends NG {
 
     /* renamed from: b, reason: collision with root package name */
-    public final LG f25476b;
+    public final LG f26219b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final C3105du f25477c;
+    public final C3128du f26220c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final C3240gK f25478d;
+    public final C3263gK f26221d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final Integer f25479e;
+    public final Integer f26222e;
 
-    public IG(LG lg, C3105du c3105du, C3240gK c3240gK, Integer num) {
-        this.f25476b = lg;
-        this.f25477c = c3105du;
-        this.f25478d = c3240gK;
-        this.f25479e = num;
+    public IG(LG lg, C3128du c3128du, C3263gK c3263gK, Integer num) {
+        this.f26219b = lg;
+        this.f26220c = c3128du;
+        this.f26221d = c3263gK;
+        this.f26222e = num;
     }
 
     @Override // com.google.android.gms.internal.ads.WC
-    public final /* synthetic */ AbstractC3825rE b() {
-        return this.f25476b;
+    public final /* synthetic */ AbstractC3848rE b() {
+        return this.f26219b;
     }
 
     @Override // com.google.android.gms.internal.ads.WC
     public final Integer e() {
-        return this.f25479e;
+        return this.f26222e;
     }
 
     @Override // com.google.android.gms.internal.ads.NG
-    public final C3240gK i() {
-        return this.f25478d;
+    public final C3263gK i() {
+        return this.f26221d;
     }
 }

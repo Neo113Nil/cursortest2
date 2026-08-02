@@ -8,17 +8,17 @@ import android.content.Intent;
 public final class r extends ContextWrapper {
 
     /* renamed from: a, reason: collision with root package name */
-    public Activity f35742a;
+    public Activity f36511a;
 
     @Override // android.content.ContextWrapper, android.content.Context
     public final Object getSystemService(String str) {
-        Activity activity = this.f35742a;
+        Activity activity = this.f36511a;
         return activity != null ? activity.getSystemService(str) : super.getSystemService(str);
     }
 
     @Override // android.content.ContextWrapper, android.content.Context
     public final void startActivity(Intent intent) {
-        Activity activity = this.f35742a;
+        Activity activity = this.f36511a;
         if (activity != null) {
             activity.startActivity(intent);
         } else {

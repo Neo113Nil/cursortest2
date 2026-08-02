@@ -10,7 +10,7 @@ import com.anythink.core.common.h.x;
 public abstract class BaseAmbienceView extends RelativeLayout {
 
     /* renamed from: a, reason: collision with root package name */
-    protected c.a f11109a;
+    protected c.a f11895a;
 
     public BaseAmbienceView(Context context) {
         super(context);

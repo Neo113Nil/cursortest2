@@ -15,13 +15,13 @@ import java.util.zip.GZIPInputStream;
 public final class b extends com.anythink.core.common.m.a.a {
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f14424b = "POST";
+    private static final String f15210b = "POST";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f14425c = "GET";
+    private static final String f15211c = "GET";
 
     /* renamed from: d, reason: collision with root package name */
-    private boolean f14426d;
+    private boolean f15212d;
 
     public b(com.anythink.core.common.m.a.f fVar) {
         super(fVar);
@@ -38,34 +38,34 @@ public final class b extends com.anythink.core.common.m.a.a {
             th = th;
             httpURLConnection = null;
         }
-        if (this.f14426d) {
+        if (this.f15212d) {
             a9.a(new InterruptedException("canceled"));
             return a9.a();
         }
-        httpURLConnection = (HttpURLConnection) new URL(iVar.f14462a).openConnection();
+        httpURLConnection = (HttpURLConnection) new URL(iVar.f15248a).openConnection();
         try {
-            String str = iVar.f14463b;
+            String str = iVar.f15249b;
             if (TextUtils.isEmpty(str)) {
-                str = f14425c;
+                str = f15211c;
             }
             httpURLConnection.setRequestMethod(str);
-            if (f14424b.equals(str)) {
+            if (f15210b.equals(str)) {
                 httpURLConnection.setDoInput(true);
                 httpURLConnection.setDoOutput(true);
                 httpURLConnection.setUseCaches(false);
-            } else if (f14425c.equals(str)) {
+            } else if (f15211c.equals(str)) {
                 httpURLConnection.setInstanceFollowRedirects(false);
             }
-            httpURLConnection.setConnectTimeout((int) this.f14417a.f14448e);
-            httpURLConnection.setReadTimeout((int) this.f14417a.f14444a);
-            Map<String, String> map = iVar.f14466e;
+            httpURLConnection.setConnectTimeout((int) this.f15203a.f15234e);
+            httpURLConnection.setReadTimeout((int) this.f15203a.f15230a);
+            Map<String, String> map = iVar.f15252e;
             if (map != null && !map.isEmpty()) {
-                for (Map.Entry<String, String> entry : iVar.f14466e.entrySet()) {
+                for (Map.Entry<String, String> entry : iVar.f15252e.entrySet()) {
                     httpURLConnection.addRequestProperty(entry.getKey(), entry.getValue());
                 }
             }
             httpURLConnection.connect();
-            if (f14424b.equals(str) && (bArr = iVar.f14464c) != null) {
+            if (f15210b.equals(str) && (bArr = iVar.f15250c) != null) {
                 OutputStream outputStream = httpURLConnection.getOutputStream();
                 outputStream.write(bArr);
                 outputStream.flush();
@@ -90,7 +90,7 @@ public final class b extends com.anythink.core.common.m.a.a {
             return a9.a();
         }
         if (responseCode == 200) {
-            if (!this.f14426d) {
+            if (!this.f15212d) {
                 a9.a(new c(httpURLConnection, a(httpURLConnection)));
                 return a9.a();
             }
@@ -103,12 +103,12 @@ public final class b extends com.anythink.core.common.m.a.a {
             httpURLConnection.disconnect();
             return a9.a();
         }
-        if (this.f14426d) {
+        if (this.f15212d) {
             a9.a(new InterruptedException("canceled"));
         } else {
             String headerField = httpURLConnection.getHeaderField("Location");
             if (headerField != null && headerField.toLowerCase().startsWith("http")) {
-                iVar.f14462a = headerField;
+                iVar.f15248a = headerField;
                 httpURLConnection.disconnect();
                 return b(iVar);
             }
@@ -128,7 +128,7 @@ public final class b extends com.anythink.core.common.m.a.a {
 
     @Override // com.anythink.core.common.m.a.b
     public final void a() {
-        this.f14426d = true;
+        this.f15212d = true;
     }
 
     private static InputStream a(HttpURLConnection httpURLConnection) {
@@ -140,7 +140,7 @@ public final class b extends com.anythink.core.common.m.a.a {
             inputStream = httpURLConnection.getInputStream();
         } catch (Exception unused) {
         }
-        if (!com.anythink.expressad.foundation.g.f.g.b.f19341d.equalsIgnoreCase(httpURLConnection.getHeaderField("Content-Encoding"))) {
+        if (!com.anythink.expressad.foundation.g.f.g.b.f20128d.equalsIgnoreCase(httpURLConnection.getHeaderField("Content-Encoding"))) {
             return inputStream;
         }
         try {

@@ -1,6 +1,6 @@
 package com.anythink.core.common.d;
 
-import D.y;
+import D.x;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.Application;
@@ -49,9 +49,9 @@ import com.anythink.core.common.v.ac;
 import com.anythink.core.common.v.af;
 import com.anythink.core.common.v.aj;
 import com.anythink.core.common.w;
-import com.anythink.core.common.x;
 import com.anythink.network.adx.AdxATInitManager;
 import com.anythink.network.facebook.FacebookATInitConfig;
+import com.google.android.gms.internal.ads.Wv;
 import dalvik.system.DexFile;
 import java.io.File;
 import java.lang.ref.WeakReference;
@@ -75,51 +75,51 @@ import org.json.JSONObject;
 public class t {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f12719a = 0;
+    public static final int f13505a = 0;
     private static final Object ak = new Object();
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f12720b = 1;
+    public static final int f13506b = 1;
 
     /* renamed from: k, reason: collision with root package name */
-    private static volatile t f12721k;
+    private static volatile t f13507k;
 
     /* renamed from: A, reason: collision with root package name */
-    private String f12722A;
+    private String f13508A;
 
     /* renamed from: B, reason: collision with root package name */
-    private String f12723B;
+    private String f13509B;
 
     /* renamed from: C, reason: collision with root package name */
-    private s f12724C;
+    private s f13510C;
 
     /* renamed from: I, reason: collision with root package name */
-    private String f12730I;
+    private String f13516I;
     private String J;
 
     /* renamed from: L, reason: collision with root package name */
-    private boolean f12732L;
+    private boolean f13518L;
 
     /* renamed from: P, reason: collision with root package name */
-    private com.anythink.core.common.k.e f12736P;
+    private com.anythink.core.common.k.e f13522P;
 
     /* renamed from: Q, reason: collision with root package name */
-    private Location f12737Q;
+    private Location f13523Q;
 
     /* renamed from: S, reason: collision with root package name */
-    private JSONArray f12739S;
+    private JSONArray f13525S;
 
     /* renamed from: T, reason: collision with root package name */
-    private List<String> f12740T;
+    private List<String> f13526T;
 
     /* renamed from: V, reason: collision with root package name */
-    private String f12742V;
+    private String f13528V;
 
     /* renamed from: W, reason: collision with root package name */
-    private ATDebuggerConfig f12743W;
+    private ATDebuggerConfig f13529W;
 
     /* renamed from: X, reason: collision with root package name */
-    private boolean f12744X;
+    private boolean f13530X;
     private ConcurrentHashMap<String, IATAdFilter> ab;
     private ATUserDeviceInfo ad;
     private by ae;
@@ -131,135 +131,135 @@ public class t {
     private Pair<Boolean, com.anythink.core.common.h.n> ap;
 
     /* renamed from: f, reason: collision with root package name */
-    IATDeviceRiskListener f12749f;
+    IATDeviceRiskListener f13535f;
 
     /* renamed from: g, reason: collision with root package name */
-    WeakReference<Activity> f12750g;
+    WeakReference<Activity> f13536g;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f12751h;
+    private int f13537h;
 
     /* renamed from: l, reason: collision with root package name */
-    private Context f12753l;
+    private Context f13539l;
 
     /* renamed from: m, reason: collision with root package name */
-    private String f12754m;
+    private String f13540m;
 
     /* renamed from: n, reason: collision with root package name */
-    private String f12755n;
+    private String f13541n;
 
     /* renamed from: p, reason: collision with root package name */
-    private ATNetworkConfig f12757p;
+    private ATNetworkConfig f13543p;
 
     /* renamed from: q, reason: collision with root package name */
-    private String f12758q;
+    private String f13544q;
 
     /* renamed from: t, reason: collision with root package name */
-    private ConcurrentHashMap<String, ATCustomAdapterConfig> f12761t;
+    private ConcurrentHashMap<String, ATCustomAdapterConfig> f13547t;
 
     /* renamed from: v, reason: collision with root package name */
-    private String f12763v;
+    private String f13549v;
 
     /* renamed from: y, reason: collision with root package name */
-    private BroadcastReceiver f12766y;
+    private BroadcastReceiver f13552y;
 
     /* renamed from: z, reason: collision with root package name */
-    private String f12767z;
+    private String f13553z;
     private final String i = "SDK.init";
 
     /* renamed from: j, reason: collision with root package name */
-    private boolean f12752j = false;
+    private boolean f13538j = false;
 
     /* renamed from: x, reason: collision with root package name */
-    private final Object f12765x = new Object();
+    private final Object f13551x = new Object();
 
     /* renamed from: E, reason: collision with root package name */
-    private boolean f12726E = false;
+    private boolean f13512E = false;
 
     /* renamed from: F, reason: collision with root package name */
-    private boolean f12727F = false;
+    private boolean f13513F = false;
 
     /* renamed from: G, reason: collision with root package name */
-    private long f12728G = 0;
+    private long f13514G = 0;
 
     /* renamed from: H, reason: collision with root package name */
-    private long f12729H = 0;
+    private long f13515H = 0;
 
     /* renamed from: M, reason: collision with root package name */
-    private boolean f12733M = false;
+    private boolean f13519M = false;
 
     /* renamed from: N, reason: collision with root package name */
-    private boolean f12734N = false;
+    private boolean f13520N = false;
 
     /* renamed from: O, reason: collision with root package name */
-    private final Object f12735O = new Object();
+    private final Object f13521O = new Object();
 
     /* renamed from: R, reason: collision with root package name */
-    private String f12738R = "";
+    private String f13524R = "";
     private int Y = 1;
 
     /* renamed from: Z, reason: collision with root package name */
-    private boolean f12745Z = false;
+    private boolean f13531Z = false;
     private boolean aa = false;
     private String ac = "";
     private final Object ag = new Object();
 
     /* renamed from: c, reason: collision with root package name */
-    public volatile boolean f12746c = false;
+    public volatile boolean f13532c = false;
 
     /* renamed from: d, reason: collision with root package name */
-    boolean f12747d = false;
+    boolean f13533d = false;
     private long am = -1;
 
     /* renamed from: e, reason: collision with root package name */
-    long f12748e = 0;
+    long f13534e = 0;
     private int an = -1;
     private final List<m> aq = new ArrayList();
     private final Map<String, ATAdFilter> ar = new HashMap();
 
     /* renamed from: o, reason: collision with root package name */
-    private Handler f12756o = new Handler(Looper.getMainLooper());
+    private Handler f13542o = new Handler(Looper.getMainLooper());
 
     /* renamed from: s, reason: collision with root package name */
-    private ConcurrentHashMap<String, Map<String, Object>> f12760s = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<String, Map<String, Object>> f13546s = new ConcurrentHashMap<>();
 
     /* renamed from: r, reason: collision with root package name */
-    private ConcurrentHashMap<String, Object> f12759r = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<String, Object> f13545r = new ConcurrentHashMap<>();
 
     /* renamed from: D, reason: collision with root package name */
-    private final String f12725D = u1.h.g(new StringBuilder(), File.separator, "anythink.test");
+    private final String f13511D = Wv.i(new StringBuilder(), File.separator, "anythink.test");
 
     /* renamed from: K, reason: collision with root package name */
-    private boolean f12731K = true;
+    private boolean f13517K = true;
 
     /* renamed from: U, reason: collision with root package name */
-    private ConcurrentHashMap<String, List<String>> f12741U = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<String, List<String>> f13527U = new ConcurrentHashMap<>();
 
     /* renamed from: w, reason: collision with root package name */
-    private JSONObject f12764w = new JSONObject();
+    private JSONObject f13550w = new JSONObject();
     private long af = System.currentTimeMillis();
 
     /* renamed from: u, reason: collision with root package name */
-    private final Map<String, Boolean> f12762u = new ConcurrentHashMap(2);
+    private final Map<String, Boolean> f13548u = new ConcurrentHashMap(2);
 
     /* renamed from: com.anythink.core.common.d.t$1, reason: invalid class name */
     public class AnonymousClass1 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ String f12768a;
+        final /* synthetic */ String f13554a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ String f12769b;
+        final /* synthetic */ String f13555b;
 
         public AnonymousClass1(String str, String str2) {
-            this.f12768a = str;
-            this.f12769b = str2;
+            this.f13554a = str;
+            this.f13555b = str2;
         }
 
         @Override // java.lang.Runnable
         public final void run() {
-            af.b(t.this.f12753l, u.b.f12847a, u.a.f12823b, this.f12768a);
-            af.b(t.this.f12753l, u.b.f12847a, u.a.f12824c, this.f12769b);
+            af.b(t.this.f13539l, u.b.f13633a, u.a.f13609b, this.f13554a);
+            af.b(t.this.f13539l, u.b.f13633a, u.a.f13610c, this.f13555b);
         }
     }
 
@@ -272,7 +272,7 @@ public class t {
         public final void run() {
             s c9 = t.b().c();
             if (c9 != null) {
-                c9.startPlugin(t.this.f12753l);
+                c9.startPlugin(t.this.f13539l);
             }
         }
     }
@@ -288,8 +288,8 @@ public class t {
                 t.this.a(new Runnable() { // from class: com.anythink.core.common.d.t.2.1
                     @Override // java.lang.Runnable
                     public final void run() {
-                        if (t.this.f12753l != null) {
-                            Toast.makeText(t.this.f12753l, "There is a problem with the integrated resources of AnyThink SDK, please check whether you have followed the steps of the integration document.", 1).show();
+                        if (t.this.f13539l != null) {
+                            Toast.makeText(t.this.f13539l, "There is a problem with the integrated resources of AnyThink SDK, please check whether you have followed the steps of the integration document.", 1).show();
                         }
                     }
                 }, 500L);
@@ -317,14 +317,14 @@ public class t {
                     }
                     com.anythink.core.common.u.d.a().b();
                     t.this.a(context, false);
-                    if (TextUtils.equals(intent.getAction(), j.f12374v)) {
-                        com.anythink.core.common.u.e.b(intent.getStringExtra(j.f12375w));
+                    if (TextUtils.equals(intent.getAction(), j.f13160v)) {
+                        com.anythink.core.common.u.e.b(intent.getStringExtra(j.f13161w));
                     }
                 }
             });
             try {
-                if (t.this.f12724C != null) {
-                    t.this.f12724C.resetSSID();
+                if (t.this.f13510C != null) {
+                    t.this.f13510C.resetSSID();
                 }
             } catch (Throwable unused) {
             }
@@ -335,33 +335,33 @@ public class t {
     public class AnonymousClass4 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ Context f12791a;
+        final /* synthetic */ Context f13577a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ String f12792b;
+        final /* synthetic */ String f13578b;
 
         public AnonymousClass4(Context context, String str) {
-            this.f12791a = context;
-            this.f12792b = str;
+            this.f13577a = context;
+            this.f13578b = str;
         }
 
         @Override // java.lang.Runnable
         public final void run() {
-            com.anythink.core.d.b b9 = com.anythink.core.d.d.a(this.f12791a.getApplicationContext()).b(this.f12792b);
+            com.anythink.core.d.b b9 = com.anythink.core.d.d.a(this.f13577a.getApplicationContext()).b(this.f13578b);
             if (b9 != null) {
                 if (!b9.S()) {
-                    com.anythink.core.common.q.a(t.this.f12753l).a(b9);
+                    com.anythink.core.common.q.a(t.this.f13539l).a(b9);
                     com.anythink.core.common.c.b.a().a(b9.u(), b9.aD(), b9.aE(), b9.aJ());
                     com.anythink.core.common.c.a().b(b9.j());
-                    com.anythink.core.a.b.a(this.f12791a.getApplicationContext()).a(b9.aI());
+                    com.anythink.core.a.b.a(this.f13577a.getApplicationContext()).a(b9.aI());
                     t.b().H();
                     t.b().a(b9);
                     com.anythink.core.common.v.e.a().a(b9.g());
                     com.anythink.core.common.b.a.a().a(b9);
                 }
                 w.a().a(b9.h());
-                if (!com.anythink.core.d.d.a(this.f12791a.getApplicationContext()).a(this.f12792b)) {
-                    com.anythink.core.d.d.a(this.f12791a.getApplicationContext());
+                if (!com.anythink.core.d.d.a(this.f13577a.getApplicationContext()).a(this.f13578b)) {
+                    com.anythink.core.d.d.a(this.f13577a.getApplicationContext());
                 }
                 com.anythink.core.common.o.e.a().a(b9);
             }
@@ -372,14 +372,14 @@ public class t {
     public class AnonymousClass9 implements Runnable {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ ATInitConfig f12809a;
+        final /* synthetic */ ATInitConfig f13595a;
 
         /* renamed from: b, reason: collision with root package name */
-        final /* synthetic */ Context f12810b;
+        final /* synthetic */ Context f13596b;
 
         public AnonymousClass9(ATInitConfig aTInitConfig, Context context) {
-            this.f12809a = aTInitConfig;
-            this.f12810b = context;
+            this.f13595a = aTInitConfig;
+            this.f13596b = context;
         }
 
         /* JADX WARN: Removed duplicated region for block: B:16:0x0075  */
@@ -391,61 +391,61 @@ public class t {
         */
         public final void run() {
             Map<String, Object> requestParamMap;
-            boolean z3;
             boolean z6;
+            boolean z9;
             com.anythink.core.d.b b9;
             try {
-                ATInitMediation initMediation = this.f12809a.getInitMediation();
+                ATInitMediation initMediation = this.f13595a.getInitMediation();
                 if (initMediation != null) {
                     String networkName = initMediation.getNetworkName();
-                    String c9 = af.c(t.this.f12753l, u.b.f12853g, networkName, "");
+                    String c9 = af.c(t.this.f13539l, u.b.f13639g, networkName, "");
                     if (TextUtils.isEmpty(c9)) {
-                        requestParamMap = this.f12809a.getRequestParamMap();
+                        requestParamMap = this.f13595a.getRequestParamMap();
                         requestParamMap.put(ATInitMediation.KEY_LOCAL, Boolean.TRUE);
                     } else {
                         requestParamMap = com.anythink.core.common.v.q.c(c9);
                     }
-                    boolean z9 = false;
+                    boolean z10 = false;
                     try {
-                        z3 = v.a(this.f12810b).c();
+                        z6 = v.a(this.f13596b).c();
                         try {
-                            z6 = v.a(this.f12810b).d();
+                            z9 = v.a(this.f13596b).d();
                             try {
-                                initMediation.setUserDataConsent(this.f12810b, z3, z6);
+                                initMediation.setUserDataConsent(this.f13596b, z6, z9);
                             } catch (Throwable th) {
                                 th = th;
                                 th.printStackTrace();
-                                b9 = com.anythink.core.d.d.a(this.f12810b).b(t.this.f12754m);
-                                requestParamMap.put(j.w.f12617d, Boolean.valueOf(b9.B() != 3));
+                                b9 = com.anythink.core.d.d.a(this.f13596b).b(t.this.f13540m);
+                                requestParamMap.put(j.w.f13403d, Boolean.valueOf(b9.B() != 3));
                                 boolean b10 = com.anythink.core.common.v.p.b();
                                 if (b9.C() == 2) {
-                                    z9 = true;
+                                    z10 = true;
                                 }
-                                requestParamMap.put(j.w.f12618e, Boolean.valueOf(z9));
+                                requestParamMap.put(j.w.f13404e, Boolean.valueOf(z10));
                                 if (t.b().F()) {
                                 }
-                                initMediation.initSDK(t.this.f12753l, requestParamMap, null);
+                                initMediation.initSDK(t.this.f13539l, requestParamMap, null);
                             }
                         } catch (Throwable th2) {
                             th = th2;
-                            z6 = false;
+                            z9 = false;
                         }
                     } catch (Throwable th3) {
                         th = th3;
-                        z3 = false;
                         z6 = false;
+                        z9 = false;
                     }
-                    b9 = com.anythink.core.d.d.a(this.f12810b).b(t.this.f12754m);
-                    requestParamMap.put(j.w.f12617d, Boolean.valueOf(b9.B() != 3));
+                    b9 = com.anythink.core.d.d.a(this.f13596b).b(t.this.f13540m);
+                    requestParamMap.put(j.w.f13403d, Boolean.valueOf(b9.B() != 3));
                     boolean b102 = com.anythink.core.common.v.p.b();
                     if (b9.C() == 2 && b102) {
-                        z9 = true;
+                        z10 = true;
                     }
-                    requestParamMap.put(j.w.f12618e, Boolean.valueOf(z9));
+                    requestParamMap.put(j.w.f13404e, Boolean.valueOf(z10));
                     if (t.b().F()) {
-                        Log.i("anythink", "pre init network: [" + networkName + "], params: " + new JSONObject(requestParamMap).toString() + ", gdpr: " + z3 + ", in eu: " + z6);
+                        Log.i("anythink", "pre init network: [" + networkName + "], params: " + new JSONObject(requestParamMap).toString() + ", gdpr: " + z6 + ", in eu: " + z9);
                     }
-                    initMediation.initSDK(t.this.f12753l, requestParamMap, null);
+                    initMediation.initSDK(t.this.f13539l, requestParamMap, null);
                 }
             } catch (Throwable th4) {
                 th4.printStackTrace();
@@ -462,54 +462,54 @@ public class t {
 
     private void ac() {
         if (this.am == -1) {
-            long b9 = af.b(this.f12753l, u.b.f12847a, u.a.f12821I, 0L);
+            long b9 = af.b(this.f13539l, u.b.f13633a, u.a.f13607I, 0L);
             this.am = b9;
             if (b9 == 0) {
                 long currentTimeMillis = System.currentTimeMillis();
                 this.am = currentTimeMillis;
-                af.a(this.f12753l, u.b.f12847a, u.a.f12821I, currentTimeMillis);
+                af.a(this.f13539l, u.b.f13633a, u.a.f13607I, currentTimeMillis);
             }
         }
     }
 
     private void ad() {
         try {
-            BroadcastReceiver broadcastReceiver = this.f12766y;
+            BroadcastReceiver broadcastReceiver = this.f13552y;
             if (broadcastReceiver != null) {
-                this.f12753l.unregisterReceiver(broadcastReceiver);
-                n.a(this.f12753l).a(this.f12766y);
+                this.f13539l.unregisterReceiver(broadcastReceiver);
+                n.a(this.f13539l).a(this.f13552y);
             }
-            this.f12766y = null;
+            this.f13552y = null;
         } catch (Throwable unused) {
         }
         try {
-            this.f12766y = new AnonymousClass3();
+            this.f13552y = new AnonymousClass3();
             IntentFilter intentFilter = new IntentFilter();
             intentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
-            intentFilter.addAction(j.f12374v);
-            this.f12753l.registerReceiver(this.f12766y, intentFilter);
-            n.a(this.f12753l).a(this.f12766y, intentFilter);
+            intentFilter.addAction(j.f13160v);
+            this.f13539l.registerReceiver(this.f13552y, intentFilter);
+            n.a(this.f13539l).a(this.f13552y, intentFilter);
         } catch (Throwable unused2) {
         }
     }
 
     private void ae() {
-        boolean z3 = false;
-        if (this.f12753l != null) {
+        boolean z6 = false;
+        if (this.f13539l != null) {
             try {
-                z3 = new File(this.f12753l.getExternalFilesDir(null), this.f12725D).exists();
-                if (!z3) {
-                    z3 = new File(this.f12753l.getFilesDir(), this.f12725D).exists();
+                z6 = new File(this.f13539l.getExternalFilesDir(null), this.f13511D).exists();
+                if (!z6) {
+                    z6 = new File(this.f13539l.getFilesDir(), this.f13511D).exists();
                 }
             } catch (Throwable th) {
                 th.printStackTrace();
             }
         }
-        this.f12726E = z3;
+        this.f13512E = z6;
     }
 
     private boolean af() {
-        return this.f12731K;
+        return this.f13517K;
     }
 
     private long ag() {
@@ -525,54 +525,54 @@ public class t {
     }
 
     public static t b() {
-        if (f12721k == null) {
+        if (f13507k == null) {
             synchronized (t.class) {
                 try {
-                    if (f12721k == null) {
-                        f12721k = new t();
+                    if (f13507k == null) {
+                        f13507k = new t();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f12721k;
+        return f13507k;
     }
 
     private Map<String, Object> v(String str) {
-        if (this.f12760s == null || TextUtils.isEmpty(str)) {
+        if (this.f13546s == null || TextUtils.isEmpty(str)) {
             return null;
         }
-        return this.f12760s.get(str);
+        return this.f13546s.get(str);
     }
 
     @Deprecated
     private void w(String str) {
-        this.f12742V = str;
+        this.f13528V = str;
     }
 
     private String x(String str) {
-        synchronized (this.f12765x) {
+        synchronized (this.f13551x) {
             try {
-                String optString = this.f12764w.optString(str);
+                String optString = this.f13550w.optString(str);
                 if (!TextUtils.isEmpty(optString)) {
                     return optString;
                 }
-                String B9 = B();
+                String B3 = B();
                 String str2 = "";
-                if (TextUtils.isEmpty(B9)) {
-                    B9 = com.anythink.core.common.v.m.d(this.f12753l) + com.anythink.core.common.v.m.f();
+                if (TextUtils.isEmpty(B3)) {
+                    B3 = com.anythink.core.common.v.m.d(this.f13539l) + com.anythink.core.common.v.m.f();
                     StringBuilder sb = new StringBuilder();
                     sb.append(new Random().nextInt(10000000));
                     str2 = sb.toString();
                 }
                 long currentTimeMillis = System.currentTimeMillis();
-                String a9 = com.anythink.core.common.v.o.a(B9 + str + str2 + currentTimeMillis);
+                String a9 = com.anythink.core.common.v.o.a(B3 + str + str2 + currentTimeMillis);
                 try {
-                    this.f12764w.put(str, a9);
+                    this.f13550w.put(str, a9);
                 } catch (Exception unused) {
                 }
-                af.b(this.f12753l, u.b.f12847a, u.a.f12840t, this.f12764w.toString());
+                af.b(this.f13539l, u.b.f13633a, u.a.f13626t, this.f13550w.toString());
                 if (!TextUtils.isEmpty(B())) {
                     str2 = null;
                 }
@@ -585,28 +585,28 @@ public class t {
     }
 
     public final ATDebuggerConfig A() {
-        return this.f12743W;
+        return this.f13529W;
     }
 
     public final String B() {
-        if (TextUtils.isEmpty(this.f12767z)) {
-            this.f12767z = af.c(this.f12753l, u.b.f12847a, u.a.f12842v, "");
+        if (TextUtils.isEmpty(this.f13553z)) {
+            this.f13553z = af.c(this.f13539l, u.b.f13633a, u.a.f13628v, "");
         }
-        return this.f12767z;
+        return this.f13553z;
     }
 
     public final String C() {
-        if (TextUtils.isEmpty(this.f12722A)) {
-            this.f12722A = af.c(this.f12753l, u.b.f12852f, u.a.f12845y, "");
+        if (TextUtils.isEmpty(this.f13508A)) {
+            this.f13508A = af.c(this.f13539l, u.b.f13638f, u.a.f13631y, "");
         }
-        return this.f12722A;
+        return this.f13508A;
     }
 
     public final String D() {
-        if (TextUtils.isEmpty(this.f12723B)) {
-            this.f12723B = af.c(this.f12753l, u.b.f12852f, u.a.f12846z, "");
+        if (TextUtils.isEmpty(this.f13509B)) {
+            this.f13509B = af.c(this.f13539l, u.b.f13638f, u.a.f13632z, "");
         }
-        return this.f12723B;
+        return this.f13509B;
     }
 
     public final int E() {
@@ -614,14 +614,14 @@ public class t {
     }
 
     public final boolean F() {
-        return this.f12726E || this.f12727F;
+        return this.f13512E || this.f13513F;
     }
 
     public final void H() {
         com.anythink.core.common.h.n nVar;
         try {
             if (this.ao != null) {
-                if (this.f12753l == null || TextUtils.isEmpty(this.f12754m)) {
+                if (this.f13539l == null || TextUtils.isEmpty(this.f13540m)) {
                     com.anythink.core.common.h.n nVar2 = new com.anythink.core.common.h.n();
                     nVar2.N(((Integer) this.ao.first).intValue());
                     Object obj = this.ao.second;
@@ -631,7 +631,7 @@ public class t {
                     this.ap = new Pair<>(Boolean.FALSE, nVar2);
                     return;
                 }
-                com.anythink.core.d.b b9 = com.anythink.core.d.d.a(this.f12753l).b(this.f12754m);
+                com.anythink.core.d.b b9 = com.anythink.core.d.d.a(this.f13539l).b(this.f13540m);
                 if (b9 == null) {
                     com.anythink.core.common.h.n nVar3 = new com.anythink.core.common.h.n();
                     nVar3.N(((Integer) this.ao.first).intValue());
@@ -655,7 +655,7 @@ public class t {
                         nVar = (com.anythink.core.common.h.n) this.ap.second;
                         this.ap = null;
                     }
-                    com.anythink.core.common.u.c.a(b().f12753l).a(27, nVar);
+                    com.anythink.core.common.u.c.a(b().f13539l).a(27, nVar);
                 }
             }
         } catch (Exception e9) {
@@ -668,11 +668,11 @@ public class t {
     }
 
     public final List<String> J() {
-        return this.f12741U.get("forbid_network_firm_list");
+        return this.f13527U.get("forbid_network_firm_list");
     }
 
     public final boolean K() {
-        return this.f12745Z;
+        return this.f13531Z;
     }
 
     public final boolean L() {
@@ -680,16 +680,16 @@ public class t {
     }
 
     public final Context M() {
-        WeakReference<Activity> weakReference = this.f12750g;
-        return (weakReference == null || weakReference.get() == null) ? this.f12753l : this.f12750g.get();
+        WeakReference<Activity> weakReference = this.f13536g;
+        return (weakReference == null || weakReference.get() == null) ? this.f13539l : this.f13536g.get();
     }
 
     public final Activity N() {
-        WeakReference<Activity> weakReference = this.f12750g;
+        WeakReference<Activity> weakReference = this.f13536g;
         if (weakReference == null || weakReference.get() == null) {
             return null;
         }
-        return this.f12750g.get();
+        return this.f13536g.get();
     }
 
     public final String O() {
@@ -697,7 +697,7 @@ public class t {
     }
 
     public final boolean P() {
-        return this.f12733M;
+        return this.f13519M;
     }
 
     public final ATUserDeviceInfo Q() {
@@ -709,7 +709,7 @@ public class t {
             this.ae = new by();
         }
         try {
-            this.ae.a(com.anythink.core.common.v.m.u(b().f12753l));
+            this.ae.a(com.anythink.core.common.v.m.u(b().f13539l));
             this.ae.b(com.anythink.core.common.v.m.l());
             this.ae.c(com.anythink.core.common.v.m.n());
             this.ae.d(com.anythink.core.common.v.m.c(com.anythink.core.common.v.m.m()));
@@ -723,23 +723,23 @@ public class t {
     }
 
     public final void T() {
-        Context context = this.f12753l;
-        if (context == null || this.f12734N) {
+        Context context = this.f13539l;
+        if (context == null || this.f13520N) {
             return;
         }
-        synchronized (this.f12735O) {
+        synchronized (this.f13521O) {
             try {
-                if (!this.f12734N) {
-                    long b9 = af.b(context, u.b.f12847a, u.a.f12844x, 0L);
-                    this.f12728G = b9;
+                if (!this.f13520N) {
+                    long b9 = af.b(context, u.b.f13633a, u.a.f13630x, 0L);
+                    this.f13514G = b9;
                     if (b9 == 0) {
                         long j6 = this.aj;
-                        this.f12728G = j6;
-                        af.a(context, u.b.f12847a, u.a.f12844x, j6);
+                        this.f13514G = j6;
+                        af.a(context, u.b.f13633a, u.a.f13630x, j6);
                     }
-                    this.f12729H = ((a(this.aj) - a(this.f12728G)) / 86400000) + 1;
+                    this.f13515H = ((a(this.aj) - a(this.f13514G)) / 86400000) + 1;
                     com.anythink.core.common.g.c.a().a(context);
-                    this.f12734N = true;
+                    this.f13520N = true;
                 }
             } catch (Throwable th) {
                 throw th;
@@ -752,7 +752,7 @@ public class t {
     }
 
     public final boolean V() {
-        return this.f12747d;
+        return this.f13533d;
     }
 
     public final boolean W() {
@@ -764,7 +764,7 @@ public class t {
             synchronized (ak) {
                 try {
                     if (this.al == null) {
-                        this.al = new com.anythink.core.common.m.c.g(this.f12753l);
+                        this.al = new com.anythink.core.common.m.c.g(this.f13539l);
                     }
                 } catch (Throwable th) {
                     throw th;
@@ -802,12 +802,12 @@ public class t {
         IExHandler iExHandler;
         IDlHandler iDlHandler;
         IOdHandler iOdHandler;
-        if (this.f12752j) {
-            return this.f12724C;
+        if (this.f13538j) {
+            return this.f13510C;
         }
         synchronized (this.ag) {
-            if (this.f12752j) {
-                return this.f12724C;
+            if (this.f13538j) {
+                return this.f13510C;
             }
             IOsExHandler iOsExHandler = null;
             try {
@@ -816,17 +816,17 @@ public class t {
                 iExHandler = null;
             }
             try {
-                iDlHandler = (IDlHandler) a((Class<?>) IDlHandler.class, j.g.f12465c);
+                iDlHandler = (IDlHandler) a((Class<?>) IDlHandler.class, j.g.f13251c);
             } catch (Throwable unused2) {
                 iDlHandler = null;
             }
             try {
-                iOdHandler = (IOdHandler) a((Class<?>) IOdHandler.class, j.g.f12466d);
+                iOdHandler = (IOdHandler) a((Class<?>) IOdHandler.class, j.g.f13252d);
             } catch (Throwable unused3) {
                 iOdHandler = null;
             }
             try {
-                iOsExHandler = (IOsExHandler) a((Class<?>) IOsExHandler.class, j.g.f12467e);
+                iOsExHandler = (IOsExHandler) a((Class<?>) IOsExHandler.class, j.g.f13253e);
             } catch (Throwable unused4) {
             }
             if (iExHandler != null || iDlHandler != null || iOdHandler != null || iOsExHandler != null) {
@@ -834,143 +834,143 @@ public class t {
                 Objects.toString(iDlHandler);
                 Objects.toString(iOdHandler);
                 Objects.toString(iOsExHandler);
-                this.f12724C = new s(iExHandler, iDlHandler, iOdHandler, iOsExHandler);
+                this.f13510C = new s(iExHandler, iDlHandler, iOdHandler, iOsExHandler);
             }
-            this.f12752j = true;
-            return this.f12724C;
+            this.f13538j = true;
+            return this.f13510C;
         }
     }
 
     public final long h() {
-        return this.f12728G;
+        return this.f13514G;
     }
 
     public final long i() {
-        return this.f12729H;
+        return this.f13515H;
     }
 
     public final int j() {
-        return this.f12751h;
+        return this.f13537h;
     }
 
     public final List<String> k() {
-        return this.f12740T;
+        return this.f13526T;
     }
 
     public final JSONArray l() {
-        return this.f12739S;
+        return this.f13525S;
     }
 
     public final Map<String, Object> m() {
-        return this.f12759r;
+        return this.f13545r;
     }
 
     public final String n() {
-        Object obj = this.f12759r.get("channel");
+        Object obj = this.f13545r.get("channel");
         return obj != null ? obj.toString() : "";
     }
 
     public final String o() {
-        Object obj = this.f12759r.get("sub_channel");
+        Object obj = this.f13545r.get("sub_channel");
         return obj != null ? obj.toString() : "";
     }
 
     public final String p() {
-        if (TextUtils.isEmpty(this.f12754m)) {
-            this.f12754m = af.c(this.f12753l, u.b.f12847a, u.a.f12823b, "");
+        if (TextUtils.isEmpty(this.f13540m)) {
+            this.f13540m = af.c(this.f13539l, u.b.f13633a, u.a.f13609b, "");
         }
-        return this.f12754m;
+        return this.f13540m;
     }
 
     public final String q() {
-        if (TextUtils.isEmpty(this.f12755n)) {
-            this.f12755n = af.c(this.f12753l, u.b.f12847a, u.a.f12824c, "");
+        if (TextUtils.isEmpty(this.f13541n)) {
+            this.f13541n = af.c(this.f13539l, u.b.f13633a, u.a.f13610c, "");
         }
-        return this.f12755n;
+        return this.f13541n;
     }
 
     public final String r() {
         try {
-            if (TextUtils.isEmpty(this.f12763v)) {
-                a(this.f12753l, p(), 0);
+            if (TextUtils.isEmpty(this.f13549v)) {
+                a(this.f13539l, p(), 0);
             }
         } catch (Exception unused) {
         }
-        return this.f12763v;
+        return this.f13549v;
     }
 
     public final Location s() {
-        return this.f12737Q;
+        return this.f13523Q;
     }
 
     public final String t() {
-        return this.f12738R;
+        return this.f13524R;
     }
 
     public final void u() {
         try {
-            com.anythink.core.common.v.m.a(this.f12753l);
-            com.anythink.core.common.v.m.s(this.f12753l);
+            com.anythink.core.common.v.m.a(this.f13539l);
+            com.anythink.core.common.v.m.s(this.f13539l);
         } catch (Exception unused) {
         }
         if (F()) {
-            String d2 = com.anythink.core.common.v.m.d(this.f12753l);
+            String d9 = com.anythink.core.common.v.m.d(this.f13539l);
             Log.i("anythink", "********************************** " + com.anythink.core.common.v.p.a() + " *************************************");
-            Log.i("anythink", "GAID(ADID): " + com.anythink.core.common.v.m.f() + " , AndroidID: " + d2 + ", OAID: " + com.anythink.core.common.v.m.G());
+            Log.i("anythink", "GAID(ADID): " + com.anythink.core.common.v.m.f() + " , AndroidID: " + d9 + ", OAID: " + com.anythink.core.common.v.m.G());
             StringBuilder sb = new StringBuilder("********************************** ");
             sb.append(com.anythink.core.common.v.p.a());
             sb.append(" *************************************");
             Log.i("anythink", sb.toString());
-            if (TextUtils.isEmpty(d2)) {
+            if (TextUtils.isEmpty(d9)) {
                 return;
             }
-            Log.i("anythink", "You can use \"ATSDK.setDebuggerConfig(context, \"" + d2 + "\",new ATDebuggerConfig.Builder(the NetworkFirmId you want to test).build());\" to open the debugger mode.");
+            Log.i("anythink", "You can use \"ATSDK.setDebuggerConfig(context, \"" + d9 + "\",new ATDebuggerConfig.Builder(the NetworkFirmId you want to test).build());\" to open the debugger mode.");
         }
     }
 
     public final boolean y() {
-        return this.f12744X;
+        return this.f13530X;
     }
 
     public final boolean z() {
-        return this.f12744X && this.f12743W != null;
+        return this.f13530X && this.f13529W != null;
     }
 
     private boolean h(Context context) {
-        String d2 = com.anythink.core.common.v.m.d(context);
-        if (!TextUtils.isEmpty(d2) && d2.equals(this.f12742V)) {
+        String d9 = com.anythink.core.common.v.m.d(context);
+        if (!TextUtils.isEmpty(d9) && d9.equals(this.f13528V)) {
             return true;
         }
-        String f3 = com.anythink.core.common.v.m.f();
-        if (!TextUtils.isEmpty(f3) && f3.equals(this.f12742V)) {
+        String f2 = com.anythink.core.common.v.m.f();
+        if (!TextUtils.isEmpty(f2) && f2.equals(this.f13528V)) {
             return true;
         }
         s c9 = b().c();
-        return c9 != null && c9.checkDebuggerDevice(context, this.f12742V);
+        return c9 != null && c9.checkDebuggerDevice(context, this.f13528V);
     }
 
     private void i(Context context) {
-        long j6 = this.f12748e;
+        long j6 = this.f13534e;
         try {
-            String c9 = af.c(b().f12753l, u.b.f12847a, b().p() + "playRecord", "");
+            String c9 = af.c(b().f13539l, u.b.f13633a, b().p() + "playRecord", "");
             if (!TextUtils.isEmpty(c9)) {
                 JSONObject jSONObject = new JSONObject(c9);
-                long optLong = jSONObject.optLong(g.f12329a);
-                long optLong2 = jSONObject.optLong(g.f12330b);
-                String optString = jSONObject.optString(g.f12331c);
-                int optInt = jSONObject.optInt(g.f12332d);
+                long optLong = jSONObject.optLong(g.f13115a);
+                long optLong2 = jSONObject.optLong(g.f13116b);
+                String optString = jSONObject.optString(g.f13117c);
+                int optInt = jSONObject.optInt(g.f13118d);
                 if (j6 != 0) {
                     com.anythink.core.common.u.e.a(optInt == 1 ? 4 : 2, optLong, optLong2, optString);
                 } else {
                     j6 = optLong;
                 }
-                af.b(b().f12753l, u.b.f12847a, b().p() + "playRecord", "");
+                af.b(b().f13539l, u.b.f13633a, b().p() + "playRecord", "");
             }
         } catch (Exception unused) {
-            af.b(b().f12753l, u.b.f12847a, b().p() + "playRecord", "");
+            af.b(b().f13539l, u.b.f13633a, b().p() + "playRecord", "");
         }
         if (j6 == 0) {
-            j6 = af.b(context, u.b.f12847a, u.a.f12841u, 0L);
+            j6 = af.b(context, u.b.f13633a, u.a.f13627u, 0L);
         }
         if (j6 == 0) {
             j6 = System.currentTimeMillis();
@@ -984,13 +984,13 @@ public class t {
 
     private static boolean y(String str) {
         String a9 = com.anythink.core.common.v.p.a();
-        boolean z3 = !TextUtils.isEmpty(str) && str.startsWith(a9);
-        if (z3) {
+        boolean z6 = !TextUtils.isEmpty(str) && str.startsWith(a9);
+        if (z6) {
             Log.i("anythink", "Adapter Version: VERIFIED");
-            return z3;
+            return z6;
         }
-        Log.e("anythink", y.p("Adapter Version: The current Adapter version(", str, ") does not apply to the SDK version(", a9, ")."));
-        return z3;
+        Log.e("anythink", x.m("Adapter Version: The current Adapter version(", str, ") does not apply to the SDK version(", a9, ")."));
+        return z6;
     }
 
     private static void z(String str) {
@@ -1008,11 +1008,11 @@ public class t {
     }
 
     public final boolean a() {
-        return this.f12732L;
+        return this.f13518L;
     }
 
     public final String d() {
-        return this.f12758q;
+        return this.f13544q;
     }
 
     public final int e() {
@@ -1020,8 +1020,8 @@ public class t {
     }
 
     public final String[] f() {
-        synchronized (this.f12762u) {
-            Set<String> keySet = this.f12762u.keySet();
+        synchronized (this.f13548u) {
+            Set<String> keySet = this.f13548u.keySet();
             int size = keySet.size();
             if (size <= 0) {
                 return null;
@@ -1033,21 +1033,21 @@ public class t {
     }
 
     public final Context g() {
-        return this.f12753l;
+        return this.f13539l;
     }
 
     public final void k(String str) {
-        this.f12723B = str;
-        af.b(this.f12753l, u.b.f12852f, u.a.f12846z, str);
+        this.f13509B = str;
+        af.b(this.f13539l, u.b.f13638f, u.a.f13632z, str);
     }
 
     public final void l(String str) {
-        af.b(this.f12753l, u.b.f12847a, u.a.f12842v, str);
-        this.f12767z = str;
+        af.b(this.f13539l, u.b.f13633a, u.a.f13628v, str);
+        this.f13553z = str;
     }
 
     public final List<String> m(String str) {
-        return this.f12741U.get(str);
+        return this.f13527U.get(str);
     }
 
     public final void s(String str) {
@@ -1065,8 +1065,8 @@ public class t {
     }
 
     public final void w() {
-        if (this.f12747d) {
-            b(this.f12753l);
+        if (this.f13533d) {
+            b(this.f13539l);
         } else {
             Log.e("anythink", "Please exec ATSDK.init before ATSDK.start");
         }
@@ -1087,8 +1087,8 @@ public class t {
 
     public final Map<String, Object> d(String str) {
         HashMap hashMap = new HashMap();
-        Map<String, Object> map = this.f12760s.get(str);
-        ConcurrentHashMap<String, Object> concurrentHashMap = this.f12759r;
+        Map<String, Object> map = this.f13546s.get(str);
+        ConcurrentHashMap<String, Object> concurrentHashMap = this.f13545r;
         if (concurrentHashMap != null) {
             com.anythink.core.common.v.j.a(hashMap, concurrentHashMap);
         }
@@ -1097,8 +1097,8 @@ public class t {
         }
         hashMap.remove("channel");
         hashMap.remove("sub_channel");
-        Object obj = this.f12759r.get("channel");
-        Object obj2 = this.f12759r.get("sub_channel");
+        Object obj = this.f13545r.get("channel");
+        Object obj2 = this.f13545r.get("sub_channel");
         if (obj != null) {
             hashMap.put("channel", obj);
         }
@@ -1109,8 +1109,8 @@ public class t {
     }
 
     public final void e(String str) {
-        this.f12730I = str;
-        this.f12759r.put("channel", str);
+        this.f13516I = str;
+        this.f13545r.put("channel", str);
     }
 
     public final String g(String str) {
@@ -1118,30 +1118,30 @@ public class t {
         if (TextUtils.isEmpty(str)) {
             return "";
         }
-        synchronized (this.f12765x) {
-            optString = this.f12764w.optString(str);
+        synchronized (this.f13551x) {
+            optString = this.f13550w.optString(str);
         }
         return TextUtils.isEmpty(optString) ? x(str) : optString;
     }
 
     public final void j(String str) {
-        this.f12722A = str;
-        af.b(this.f12753l, u.b.f12852f, u.a.f12845y, str);
+        this.f13508A = str;
+        af.b(this.f13539l, u.b.f13638f, u.a.f13631y, str);
     }
 
     public final List<String> n(String str) {
-        return this.f12741U.get(str + "_network_firm");
+        return this.f13527U.get(str + "_network_firm");
     }
 
     public final List<String> o(String str) {
-        return this.f12741U.get(str + "_network_firm_a_s");
+        return this.f13527U.get(str + "_network_firm_a_s");
     }
 
     public final boolean v() {
-        Context context = this.f12753l;
+        Context context = this.f13539l;
         if (context != null) {
             if (this.am == -1) {
-                this.am = af.b(context, u.b.f12847a, u.a.f12821I, 0L);
+                this.am = af.b(context, u.b.f13633a, u.a.f13607I, 0L);
             }
             if (this.am != 0 && System.currentTimeMillis() - this.am > 86400000) {
                 return true;
@@ -1155,18 +1155,18 @@ public class t {
     }
 
     private void l(Context context) {
-        long b9 = af.b(context, u.b.f12847a, u.a.f12844x, 0L);
-        this.f12728G = b9;
+        long b9 = af.b(context, u.b.f13633a, u.a.f13630x, 0L);
+        this.f13514G = b9;
         if (b9 == 0) {
             long j6 = this.aj;
-            this.f12728G = j6;
-            af.a(context, u.b.f12847a, u.a.f12844x, j6);
+            this.f13514G = j6;
+            af.a(context, u.b.f13633a, u.a.f13630x, j6);
         }
-        this.f12729H = ((a(this.aj) - a(this.f12728G)) / 86400000) + 1;
+        this.f13515H = ((a(this.aj) - a(this.f13514G)) / 86400000) + 1;
     }
 
     public final List<String> p(String str) {
-        return this.f12741U.get(str + "_network_firm_f_s");
+        return this.f13527U.get(str + "_network_firm_f_s");
     }
 
     public final IATAdFilter q(String str) {
@@ -1179,25 +1179,25 @@ public class t {
 
     public static boolean e(Context context, List<String> list) {
         int size;
-        boolean z3 = true;
+        boolean z6 = true;
         if (list == null || (size = list.size()) == 0) {
             return true;
         }
         StringBuilder sb = new StringBuilder();
-        boolean z6 = false;
+        boolean z9 = false;
         try {
             String[] strArr = context.getPackageManager().getPackageInfo(context.getPackageName(), 4096).requestedPermissions;
             if (strArr != null) {
                 for (int i = 0; i < size; i++) {
                     String str = list.get(i);
                     int length = strArr.length;
-                    int i6 = 0;
+                    int i4 = 0;
                     while (true) {
-                        if (i6 < length) {
-                            if (TextUtils.equals(str, strArr[i6])) {
+                        if (i4 < length) {
+                            if (TextUtils.equals(str, strArr[i4])) {
                                 break;
                             }
-                            i6++;
+                            i4++;
                         } else {
                             if (sb.length() == 0) {
                                 sb.append(str);
@@ -1205,15 +1205,15 @@ public class t {
                                 sb.append(", ");
                                 sb.append(str);
                             }
-                            z3 = false;
+                            z6 = false;
                         }
                     }
                 }
-                z6 = z3;
+                z9 = z6;
             } else {
-                for (int i9 = 0; i9 < size; i9++) {
-                    String str2 = list.get(i9);
-                    if (i9 == 0) {
+                for (int i6 = 0; i6 < size; i6++) {
+                    String str2 = list.get(i6);
+                    if (i6 == 0) {
                         sb.append(str2);
                     } else {
                         sb.append(", ");
@@ -1224,12 +1224,12 @@ public class t {
         } catch (Throwable th) {
             th.printStackTrace();
         }
-        if (z6) {
+        if (z9) {
             Log.i("anythink", "Permission: VERIFIED");
         } else {
             Log.e("anythink", "Permission: Missing " + sb.toString() + " declare in AndroidManifest");
         }
-        return z6;
+        return z9;
     }
 
     public final void r(String str) {
@@ -1237,32 +1237,32 @@ public class t {
     }
 
     public final ATCustomAdapterConfig b(String str) {
-        if (this.f12761t == null || TextUtils.isEmpty(str)) {
+        if (this.f13547t == null || TextUtils.isEmpty(str)) {
             return null;
         }
-        return this.f12761t.get(str);
+        return this.f13547t.get(str);
     }
 
     private void b(String str, String str2) {
-        this.f12754m = str;
-        this.f12755n = str2;
+        this.f13540m = str;
+        this.f13541n = str2;
         b();
         a(new AnonymousClass1(str, str2));
     }
 
     public final void a(String str) {
-        this.f12758q = str;
+        this.f13544q = str;
     }
 
     public static /* synthetic */ boolean u(String str) {
         String a9 = com.anythink.core.common.v.p.a();
-        boolean z3 = !TextUtils.isEmpty(str) && str.startsWith(a9);
-        if (z3) {
+        boolean z6 = !TextUtils.isEmpty(str) && str.startsWith(a9);
+        if (z6) {
             Log.i("anythink", "Adapter Version: VERIFIED");
-            return z3;
+            return z6;
         }
-        Log.e("anythink", y.p("Adapter Version: The current Adapter version(", str, ") does not apply to the SDK version(", a9, ")."));
-        return z3;
+        Log.e("anythink", x.m("Adapter Version: The current Adapter version(", str, ") does not apply to the SDK version(", a9, ")."));
+        return z6;
     }
 
     public final synchronized void a(String str, ATCustomAdapterConfig aTCustomAdapterConfig) {
@@ -1270,13 +1270,13 @@ public class t {
             if (TextUtils.isEmpty(str)) {
                 return;
             }
-            if (this.f12761t == null) {
-                this.f12761t = new ConcurrentHashMap<>();
+            if (this.f13547t == null) {
+                this.f13547t = new ConcurrentHashMap<>();
             }
             if (aTCustomAdapterConfig == null) {
-                this.f12761t.remove(str);
+                this.f13547t.remove(str);
             } else {
-                this.f12761t.put(str, aTCustomAdapterConfig);
+                this.f13547t.put(str, aTCustomAdapterConfig);
             }
         } catch (Throwable th) {
             throw th;
@@ -1285,17 +1285,17 @@ public class t {
 
     public final void f(String str) {
         this.J = str;
-        this.f12759r.put("sub_channel", str);
+        this.f13545r.put("sub_channel", str);
     }
 
     public final void h(String str) {
-        if (TextUtils.isEmpty(this.f12742V)) {
+        if (TextUtils.isEmpty(this.f13528V)) {
             return;
         }
-        if (TextUtils.equals(str, this.f12742V)) {
-            this.f12744X = true;
+        if (TextUtils.equals(str, this.f13528V)) {
+            this.f13530X = true;
         }
-        if (this.f12744X && F()) {
+        if (this.f13530X && F()) {
             Log.i("SDK.init", "Update Setting Debugger's device success.");
         }
     }
@@ -1323,7 +1323,7 @@ public class t {
         try {
             if (v.a(context).b()) {
                 String i = com.anythink.core.common.v.m.i();
-                String c9 = af.c(context, u.b.f12847a, u.a.f12838r, "");
+                String c9 = af.c(context, u.b.f13633a, u.a.f13624r, "");
                 if (TextUtils.isEmpty(i) || !Build.VERSION.RELEASE.equals(c9)) {
                     com.anythink.core.common.v.m.r(context);
                 }
@@ -1336,31 +1336,31 @@ public class t {
         if (context == null) {
             return;
         }
-        this.f12753l = context.getApplicationContext();
-        if (!TextUtils.isEmpty(this.f12754m) && !TextUtils.isEmpty(this.f12755n)) {
-            if (this.f12732L) {
+        this.f13539l = context.getApplicationContext();
+        if (!TextUtils.isEmpty(this.f13540m) && !TextUtils.isEmpty(this.f13541n)) {
+            if (this.f13518L) {
                 return;
             }
-            this.f12732L = true;
+            this.f13518L = true;
             try {
                 final Context applicationContext = context.getApplicationContext();
-                this.f12745Z = com.anythink.core.common.v.q.a();
+                this.f13531Z = com.anythink.core.common.v.q.a();
                 try {
-                    BroadcastReceiver broadcastReceiver = this.f12766y;
+                    BroadcastReceiver broadcastReceiver = this.f13552y;
                     if (broadcastReceiver != null) {
-                        this.f12753l.unregisterReceiver(broadcastReceiver);
-                        n.a(this.f12753l).a(this.f12766y);
+                        this.f13539l.unregisterReceiver(broadcastReceiver);
+                        n.a(this.f13539l).a(this.f13552y);
                     }
-                    this.f12766y = null;
+                    this.f13552y = null;
                 } catch (Throwable unused) {
                 }
                 try {
-                    this.f12766y = new AnonymousClass3();
+                    this.f13552y = new AnonymousClass3();
                     IntentFilter intentFilter = new IntentFilter();
                     intentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
-                    intentFilter.addAction(j.f12374v);
-                    this.f12753l.registerReceiver(this.f12766y, intentFilter);
-                    n.a(this.f12753l).a(this.f12766y, intentFilter);
+                    intentFilter.addAction(j.f13160v);
+                    this.f13539l.registerReceiver(this.f13552y, intentFilter);
+                    n.a(this.f13539l).a(this.f13552y, intentFilter);
                 } catch (Throwable unused2) {
                 }
                 a(new Runnable() { // from class: com.anythink.core.common.d.t.12
@@ -1370,7 +1370,7 @@ public class t {
                             t.this.T();
                             com.anythink.core.common.u.d.a().a(applicationContext);
                             t tVar = t.this;
-                            tVar.a(applicationContext, tVar.f12754m, 0);
+                            tVar.a(applicationContext, tVar.f13540m, 0);
                             t.b(t.this, context);
                             k.a(applicationContext).a();
                             com.anythink.core.common.a.o.a().b();
@@ -1395,22 +1395,22 @@ public class t {
                 a(new Runnable() { // from class: com.anythink.core.common.d.t.14
                     @Override // java.lang.Runnable
                     public final void run() {
-                        com.anythink.core.common.o.a().a(t.this.f12753l);
+                        com.anythink.core.common.o.a().a(t.this.f13539l);
                     }
                 });
-                b.b().a(new h(c(this.f12753l)));
+                b.b().a(new h(c(this.f13539l)));
                 a(new Runnable() { // from class: com.anythink.core.common.d.t.15
                     @Override // java.lang.Runnable
                     public final void run() {
                         t.this.c();
-                        if (t.this.f12724C != null) {
-                            t.this.f12724C.initDeviceInfo(context);
-                            t.this.f12724C.cleanExpiredInfo();
+                        if (t.this.f13510C != null) {
+                            t.this.f13510C.initDeviceInfo(context);
+                            t.this.f13510C.cleanExpiredInfo();
                         }
                         com.anythink.core.d.n.a(applicationContext).a();
-                        x.a(context);
+                        com.anythink.core.common.x.a(context);
                         com.anythink.core.common.d.a().a(context);
-                        String t6 = com.anythink.core.common.v.m.t(t.this.f12753l);
+                        String t6 = com.anythink.core.common.v.m.t(t.this.f13539l);
                         if (TextUtils.isEmpty(t6)) {
                             return;
                         }
@@ -1421,10 +1421,10 @@ public class t {
                     @Override // java.lang.Runnable
                     public final void run() {
                         t tVar = t.this;
-                        t.a(tVar, tVar.f12753l, t.this.f12757p);
+                        t.a(tVar, tVar.f13539l, t.this.f13543p);
                     }
                 });
-                String str = this.f12754m;
+                String str = this.f13540m;
                 a(context.getApplicationContext(), false);
                 a(new AnonymousClass4(context, str));
             } catch (Exception e9) {
@@ -1450,7 +1450,7 @@ public class t {
                 */
                 public final void run() {
                     Object obj;
-                    boolean z3;
+                    boolean z6;
                     AnonymousClass5 anonymousClass5 = this;
                     try {
                         ArrayList arrayList = new ArrayList();
@@ -1493,7 +1493,7 @@ public class t {
                                     boolean a9 = t.a(context, (List<String>) aTInitMediation.getActivityStatus());
                                     boolean b10 = t.b(context, (List<String>) aTInitMediation.getServiceStatus());
                                     boolean c9 = t.c(context, (List<String>) aTInitMediation.getProviderStatus());
-                                    boolean d2 = t.d(context, (List<String>) aTInitMediation.getMetaValutStatus());
+                                    boolean d9 = t.d(context, (List<String>) aTInitMediation.getMetaValutStatus());
                                     boolean e9 = t.e(context, aTInitMediation.getPermissionStatus());
                                     String a10 = t.this.a(context, aTInitMediation.getResourceStatus(), aTInitMediation.getDevBundleName());
                                     boolean isEmpty = TextUtils.isEmpty(a10);
@@ -1503,16 +1503,16 @@ public class t {
                                         Log.e("anythink", "Resource: The " + a10 + " resources are missing. If shrinkResources is enabled, the " + a10 + " resources must be added to the whitelist (keep.xml)");
                                     }
                                     if (aTInitMediation.needCheckAdapterVersion()) {
-                                        z3 = t.u(aTInitMediation.getAdapterVersion());
-                                        if (!i && b9 && a9 && b10 && c9 && d2 && e9 && isEmpty && z3) {
+                                        z6 = t.u(aTInitMediation.getAdapterVersion());
+                                        if (!i && b9 && a9 && b10 && c9 && d9 && e9 && isEmpty && z6) {
                                             Log.e("anythink", "Status: Fail");
                                         } else {
                                             Log.i("anythink", "Status: Success");
                                         }
                                         Log.i("anythink", "----------------------------------------");
                                     }
-                                    z3 = true;
-                                    if (!i && b9 && a9 && b10 && c9 && d2 && e9 && isEmpty && z3) {
+                                    z6 = true;
+                                    if (!i && b9 && a9 && b10 && c9 && d9 && e9 && isEmpty && z6) {
                                     }
                                     Log.i("anythink", "----------------------------------------");
                                 }
@@ -1529,19 +1529,19 @@ public class t {
 
     public final boolean c(String str) {
         boolean containsKey;
-        synchronized (this.f12762u) {
-            containsKey = this.f12762u.containsKey(str);
+        synchronized (this.f13548u) {
+            containsKey = this.f13548u.containsKey(str);
         }
         return containsKey;
     }
 
     public static boolean d(Context context, List<String> list) {
-        boolean z3 = true;
+        boolean z6 = true;
         if (list == null || list.size() == 0) {
             return true;
         }
         StringBuilder sb = new StringBuilder();
-        boolean z6 = false;
+        boolean z9 = false;
         try {
             ApplicationInfo applicationInfo = context.getPackageManager().getApplicationInfo(context.getPackageName(), 128);
             int size = list.size();
@@ -1551,26 +1551,26 @@ public class t {
                     sb.append(", \"");
                     sb.append(str);
                     sb.append("\"");
-                    z3 = false;
+                    z6 = false;
                 }
             }
             if (sb.length() > 2) {
                 sb.delete(0, 2);
             }
-            z6 = z3;
+            z9 = z6;
         } catch (Throwable th) {
             th.printStackTrace();
         }
-        if (z6) {
+        if (z9) {
             Log.i("anythink", "meta-data: VERIFIED");
         } else {
             Log.e("anythink", "meta-data: Missing " + sb.toString() + " declare in AndroidManifest");
         }
-        return z6;
+        return z9;
     }
 
     public final boolean x() {
-        return c(this.f12753l);
+        return c(this.f13539l);
     }
 
     public static boolean c(Context context) {
@@ -1589,8 +1589,8 @@ public class t {
         return false;
     }
 
-    private void f(boolean z3) {
-        this.f12745Z = z3;
+    private void f(boolean z6) {
+        this.f13531Z = z6;
     }
 
     public final void a(int i) {
@@ -1602,14 +1602,14 @@ public class t {
     }
 
     public final void a(String... strArr) {
-        synchronized (this.f12762u) {
+        synchronized (this.f13548u) {
             try {
                 if (strArr != null) {
                     for (String str : strArr) {
-                        this.f12762u.put(str, Boolean.TRUE);
+                        this.f13548u.put(str, Boolean.TRUE);
                     }
                 } else {
-                    this.f12762u.clear();
+                    this.f13548u.clear();
                 }
             } catch (Throwable th) {
                 throw th;
@@ -1628,15 +1628,15 @@ public class t {
         }
     }
 
-    public final void e(boolean z3) {
-        this.ai = z3;
+    public final void e(boolean z6) {
+        this.ai = z6;
         try {
             synchronized (this.aq) {
                 try {
                     if (!this.aq.isEmpty()) {
                         for (m mVar : this.aq) {
                             if (mVar != null) {
-                                mVar.a(z3);
+                                mVar.a(z6);
                             }
                         }
                     }
@@ -1649,7 +1649,7 @@ public class t {
 
     public static boolean c(Context context, List<String> list) {
         PackageInfo packageInfo;
-        boolean z3 = true;
+        boolean z6 = true;
         if (list == null) {
             return true;
         }
@@ -1660,7 +1660,7 @@ public class t {
             sb.append(", error: ");
             sb.append(th.getMessage());
             packageInfo = null;
-            z3 = false;
+            z6 = false;
         }
         if (packageInfo == null) {
             return false;
@@ -1678,7 +1678,7 @@ public class t {
                 } else {
                     sb.append(", ");
                     sb.append(str);
-                    z3 = false;
+                    z6 = false;
                     break;
                 }
             }
@@ -1686,19 +1686,19 @@ public class t {
         if (sb.length() > 2) {
             sb.delete(0, 2);
         }
-        if (z3) {
+        if (z6) {
             Log.i("anythink", "Providers : VERIFIED");
         } else {
             Log.e("anythink", "Providers : Missing " + sb.toString() + " declare in AndroidManifest");
         }
-        return z3;
+        return z6;
     }
 
     public final void a(Context context) {
         if (context == null) {
             Log.w("SDK.init", "ATSDK.setContext() is null!");
         } else {
-            this.f12753l = context;
+            this.f13539l = context;
         }
     }
 
@@ -1712,9 +1712,9 @@ public class t {
             } else {
                 str = obj.toString();
             }
-            this.f12730I = str;
+            this.f13516I = str;
             if (!com.anythink.core.common.v.p.a(str)) {
-                this.f12730I = null;
+                this.f13516I = null;
                 map.remove("channel");
             }
         }
@@ -1729,17 +1729,17 @@ public class t {
                 map.remove("sub_channel");
             }
         }
-        this.f12759r.clear();
+        this.f13545r.clear();
         if (map != null) {
-            com.anythink.core.common.v.j.a(this.f12759r, map);
+            com.anythink.core.common.v.j.a(this.f13545r, map);
         }
-        if (!TextUtils.isEmpty(this.f12730I)) {
-            this.f12759r.put("channel", this.f12730I);
+        if (!TextUtils.isEmpty(this.f13516I)) {
+            this.f13545r.put("channel", this.f13516I);
         }
         if (TextUtils.isEmpty(this.J)) {
             return;
         }
-        this.f12759r.put("sub_channel", this.J);
+        this.f13545r.put("sub_channel", this.J);
     }
 
     public static /* synthetic */ void e(Context context) {
@@ -1749,7 +1749,7 @@ public class t {
         try {
             if (v.a(context).b()) {
                 String i = com.anythink.core.common.v.m.i();
-                String c9 = af.c(context, u.b.f12847a, u.a.f12838r, "");
+                String c9 = af.c(context, u.b.f13633a, u.a.f13624r, "");
                 if (TextUtils.isEmpty(i) || !Build.VERSION.RELEASE.equals(c9)) {
                     com.anythink.core.common.v.m.r(context);
                 }
@@ -1759,7 +1759,7 @@ public class t {
     }
 
     public final void d(Runnable runnable) {
-        this.f12756o.removeCallbacks(runnable);
+        this.f13542o.removeCallbacks(runnable);
     }
 
     public final void d(String str, List<String> list) {
@@ -1769,7 +1769,7 @@ public class t {
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        this.f12741U.remove(str + "_network_firm_a_s");
+        this.f13527U.remove(str + "_network_firm_a_s");
         ArrayList arrayList = new ArrayList();
         if (list != null) {
             for (String str2 : list) {
@@ -1779,10 +1779,10 @@ public class t {
             }
         }
         if (arrayList.size() == 0) {
-            this.f12741U.remove(str + "_network_firm_f_s");
+            this.f13527U.remove(str + "_network_firm_f_s");
             return;
         }
-        this.f12741U.put(str + "_network_firm_f_s", arrayList);
+        this.f13527U.put(str + "_network_firm_f_s", arrayList);
     }
 
     public static void c(Runnable runnable) {
@@ -1793,8 +1793,8 @@ public class t {
         this.an = i;
     }
 
-    public final void c(boolean z3) {
-        this.f12731K = z3;
+    public final void c(boolean z6) {
+        this.f13517K = z6;
     }
 
     public final void c(String str, List<String> list) {
@@ -1804,7 +1804,7 @@ public class t {
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        this.f12741U.remove(str + "_network_firm_f_s");
+        this.f13527U.remove(str + "_network_firm_f_s");
         ArrayList arrayList = new ArrayList();
         if (list != null) {
             for (String str2 : list) {
@@ -1814,32 +1814,32 @@ public class t {
             }
         }
         if (arrayList.size() == 0) {
-            this.f12741U.remove(str + "_network_firm_a_s");
+            this.f13527U.remove(str + "_network_firm_a_s");
             return;
         }
-        this.f12741U.put(str + "_network_firm_a_s", arrayList);
+        this.f13527U.put(str + "_network_firm_a_s", arrayList);
     }
 
     public final void a(String str, Map<String, Object> map) {
         if (map != null) {
-            this.f12760s.put(str, map);
+            this.f13546s.put(str, map);
         }
     }
 
     public final void a(List<String> list) {
         try {
-            this.f12740T = list;
+            this.f13526T = list;
             if (list != null && !list.isEmpty()) {
-                this.f12739S = new JSONArray((Collection) list);
+                this.f13525S = new JSONArray((Collection) list);
             } else {
-                this.f12739S = null;
+                this.f13525S = null;
             }
         } catch (Exception unused) {
         }
     }
 
     public final void b(int i) {
-        this.f12751h = i;
+        this.f13537h = i;
     }
 
     private void b(Context context, String str) {
@@ -1847,20 +1847,20 @@ public class t {
         a(new AnonymousClass4(context, str));
     }
 
-    public final void d(boolean z3) {
-        this.aa = z3;
+    public final void d(boolean z6) {
+        this.aa = z6;
     }
 
     public final long d(int i) {
         if (i != 1 && i != 4 && i != 5) {
             return 26214400L;
         }
-        com.anythink.core.d.d.a(this.f12753l);
+        com.anythink.core.d.d.a(this.f13539l);
         return com.anythink.core.d.d.b() * 1024;
     }
 
     public static boolean b(Map<String, Boolean> map) {
-        boolean z3 = true;
+        boolean z6 = true;
         if (map == null) {
             return true;
         }
@@ -1869,27 +1869,27 @@ public class t {
             if (!map.get(str).booleanValue()) {
                 sb.append(", ");
                 sb.append(str);
-                z3 = false;
+                z6 = false;
             }
         }
         if (sb.length() > 2) {
             sb.delete(0, 2);
         }
-        if (z3) {
+        if (z6) {
             Log.i("anythink", "Dependence Plugin: VERIFIED");
-            return z3;
+            return z6;
         }
         Log.e("anythink", "Dependence Plugin: Missing ".concat(String.valueOf(sb)));
-        return z3;
+        return z6;
     }
 
     public final synchronized void a(Location location) {
-        this.f12737Q = location;
+        this.f13523Q = location;
     }
 
-    public final synchronized void a(boolean z3) {
+    public final synchronized void a(boolean z6) {
         try {
-            this.f12738R = z3 ? "1" : "2";
+            this.f13524R = z6 ? "1" : "2";
         } catch (Throwable th) {
             throw th;
         }
@@ -1897,37 +1897,37 @@ public class t {
 
     public static /* synthetic */ void c(t tVar) {
         if (tVar.am == -1) {
-            long b9 = af.b(tVar.f12753l, u.b.f12847a, u.a.f12821I, 0L);
+            long b9 = af.b(tVar.f13539l, u.b.f13633a, u.a.f13607I, 0L);
             tVar.am = b9;
             if (b9 == 0) {
                 long currentTimeMillis = System.currentTimeMillis();
                 tVar.am = currentTimeMillis;
-                af.a(tVar.f12753l, u.b.f12847a, u.a.f12821I, currentTimeMillis);
+                af.a(tVar.f13539l, u.b.f13633a, u.a.f13607I, currentTimeMillis);
             }
         }
     }
 
     public final synchronized void a(final Context context, String str, String str2, ATNetworkConfig aTNetworkConfig) {
         try {
-            if (this.f12747d) {
+            if (this.f13533d) {
                 return;
             }
-            this.f12747d = true;
-            this.f12753l = context.getApplicationContext();
+            this.f13533d = true;
+            this.f13539l = context.getApplicationContext();
             if (context instanceof Activity) {
                 a((Activity) context);
             }
-            this.f12757p = aTNetworkConfig;
+            this.f13543p = aTNetworkConfig;
             try {
                 this.aj = System.currentTimeMillis();
-                this.f12748e = 0L;
+                this.f13534e = 0L;
                 com.anythink.core.a.a.a(context.getApplicationContext()).a();
-                a(this.f12753l);
-                this.f12754m = str;
-                this.f12755n = str2;
+                a(this.f13539l);
+                this.f13540m = str;
+                this.f13541n = str2;
                 b();
                 a(new AnonymousClass1(str, str2));
-                b.b().a((Application) this.f12753l);
+                b.b().a((Application) this.f13539l);
             } catch (Throwable unused) {
             }
             a(new Runnable() { // from class: com.anythink.core.common.d.t.11
@@ -1935,11 +1935,11 @@ public class t {
                 public final void run() {
                     t.b(t.this);
                     t tVar = t.this;
-                    t.a(tVar, tVar.f12753l);
+                    t.a(tVar, tVar.f13539l);
                     com.anythink.core.common.a.i.a(context).a();
                     com.anythink.core.common.s.b a9 = com.anythink.core.common.s.b.a();
                     Context context2 = context;
-                    String[] strArr = {u.b.f12847a, u.b.f12848b, u.b.f12849c, u.b.f12851e, u.b.f12853g, u.b.f12854h, u.b.i, u.b.f12855j, u.b.f12856k, u.b.f12857l, u.b.f12858m, u.b.f12859n, u.b.f12860o, "anythink_app_pl_cl_retry"};
+                    String[] strArr = {u.b.f13633a, u.b.f13634b, u.b.f13635c, u.b.f13637e, u.b.f13639g, u.b.f13640h, u.b.i, u.b.f13641j, u.b.f13642k, u.b.f13643l, u.b.f13644m, u.b.f13645n, u.b.f13646o, "anythink_app_pl_cl_retry"};
                     for (int i = 0; i < 14; i++) {
                         com.anythink.core.common.s.a b9 = a9.b(context2, strArr[i]);
                         if (b9 instanceof com.anythink.core.common.s.b.e) {
@@ -1956,7 +1956,7 @@ public class t {
     }
 
     public static boolean b(Context context, List<String> list) {
-        boolean z3 = true;
+        boolean z6 = true;
         if (list == null) {
             return true;
         }
@@ -1971,18 +1971,18 @@ public class t {
             if (packageManager.queryIntentServices(new Intent(context, Class.forName(str)), 131072).size() <= 0) {
                 sb.append(", ");
                 sb.append(str);
-                z3 = false;
+                z6 = false;
             }
         }
         if (sb.length() > 2) {
             sb.delete(0, 2);
         }
-        if (z3) {
+        if (z6) {
             Log.i("anythink", "Services : VERIFIED");
         } else {
             Log.e("anythink", "Services : Missing " + sb.toString() + " declare in AndroidManifest");
         }
-        return z3;
+        return z6;
     }
 
     private boolean b(Context context, List<String> list, String str) {
@@ -1992,7 +1992,7 @@ public class t {
             Log.i("anythink", "Resource: VERIFIED");
             return isEmpty;
         }
-        Log.e("anythink", y.p("Resource: The ", a9, " resources are missing. If shrinkResources is enabled, the ", a9, " resources must be added to the whitelist (keep.xml)"));
+        Log.e("anythink", x.m("Resource: The ", a9, " resources are missing. If shrinkResources is enabled, the ", a9, " resources must be added to the whitelist (keep.xml)"));
         return isEmpty;
     }
 
@@ -2009,31 +2009,31 @@ public class t {
             }
             return;
         }
-        if (b().f12753l == null) {
+        if (b().f13539l == null) {
             b().a(context.getApplicationContext());
         }
-        this.f12742V = str;
-        this.f12743W = aTDebuggerConfig;
-        String d2 = com.anythink.core.common.v.m.d(context);
-        boolean z3 = true;
-        if (TextUtils.isEmpty(d2) || !d2.equals(this.f12742V)) {
-            String f3 = com.anythink.core.common.v.m.f();
-            if ((TextUtils.isEmpty(f3) || !f3.equals(this.f12742V)) && ((c9 = b().c()) == null || !c9.checkDebuggerDevice(context, this.f12742V))) {
-                z3 = false;
+        this.f13528V = str;
+        this.f13529W = aTDebuggerConfig;
+        String d9 = com.anythink.core.common.v.m.d(context);
+        boolean z6 = true;
+        if (TextUtils.isEmpty(d9) || !d9.equals(this.f13528V)) {
+            String f2 = com.anythink.core.common.v.m.f();
+            if ((TextUtils.isEmpty(f2) || !f2.equals(this.f13528V)) && ((c9 = b().c()) == null || !c9.checkDebuggerDevice(context, this.f13528V))) {
+                z6 = false;
             }
         }
-        this.f12744X = z3;
-        if (TextUtils.isEmpty(this.f12742V)) {
+        this.f13530X = z6;
+        if (TextUtils.isEmpty(this.f13528V)) {
             if (F()) {
                 Log.e("SDK.init", "Setting Debugger's device fail, because deviceId is empty.");
             }
-            this.f12744X = false;
+            this.f13530X = false;
         } else {
-            if (this.f12744X) {
+            if (this.f13530X) {
                 if (F()) {
                     Log.i("SDK.init", "Setting Debugger's device success.");
                 }
-                if (this.f12743W == null || !F()) {
+                if (this.f13529W == null || !F()) {
                     return;
                 }
                 Log.i("SDK.init", "Debugger config is in effect now.");
@@ -2049,7 +2049,7 @@ public class t {
         if (Looper.getMainLooper() == Looper.myLooper()) {
             runnable.run();
         } else {
-            this.f12756o.post(runnable);
+            this.f13542o.post(runnable);
         }
     }
 
@@ -2057,8 +2057,8 @@ public class t {
         com.anythink.core.common.v.b.b.a().a(runnable, j6);
     }
 
-    public final void b(boolean z3) {
-        this.f12727F = z3;
+    public final void b(boolean z6) {
+        this.f13513F = z6;
     }
 
     public final void b(String str, List<String> list) {
@@ -2069,10 +2069,10 @@ public class t {
             return;
         }
         if (list == null) {
-            this.f12741U.remove(str + "_network_firm");
+            this.f13527U.remove(str + "_network_firm");
             return;
         }
-        this.f12741U.put(str + "_network_firm", list);
+        this.f13527U.put(str + "_network_firm", list);
     }
 
     public final void b(List<String> list) {
@@ -2088,49 +2088,49 @@ public class t {
             }
         }
         if (arrayList.size() == 0) {
-            this.f12741U.remove("forbid_network_firm_list");
+            this.f13527U.remove("forbid_network_firm_list");
         } else {
-            this.f12741U.put("forbid_network_firm_list", arrayList);
+            this.f13527U.put("forbid_network_firm_list", arrayList);
         }
     }
 
     public final synchronized long a(Context context, String str, int i) {
         try {
             com.anythink.core.d.b b9 = com.anythink.core.d.d.a(context).b(str);
-            String c9 = af.c(context, u.b.f12847a, u.a.f12839s, "");
-            String c10 = af.c(context, u.b.f12847a, u.a.f12840t, "");
-            long b10 = af.b(context, u.b.f12847a, u.a.f12841u, 0L);
+            String c9 = af.c(context, u.b.f13633a, u.a.f13625s, "");
+            String c10 = af.c(context, u.b.f13633a, u.a.f13626t, "");
+            long b10 = af.b(context, u.b.f13633a, u.a.f13627u, 0L);
             long currentTimeMillis = System.currentTimeMillis();
             if (currentTimeMillis - b10 < 0) {
                 b10 = 0;
             }
             if (currentTimeMillis - b10 <= (i == 0 ? b9.ad() : b9.N())) {
                 b9.ad();
-                this.f12763v = c9;
+                this.f13549v = c9;
                 if (!TextUtils.isEmpty(c10)) {
-                    synchronized (this.f12765x) {
-                        this.f12764w = new JSONObject(c10);
+                    synchronized (this.f13551x) {
+                        this.f13550w = new JSONObject(c10);
                     }
                 }
                 return 0L;
             }
             b9.ad();
-            String B9 = B();
+            String B3 = B();
             String str2 = "";
-            if (TextUtils.isEmpty(B9)) {
-                B9 = com.anythink.core.common.v.m.d(context) + com.anythink.core.common.v.m.f();
+            if (TextUtils.isEmpty(B3)) {
+                B3 = com.anythink.core.common.v.m.d(context) + com.anythink.core.common.v.m.f();
                 str2 = String.valueOf(new Random().nextInt(10000000));
             }
-            this.f12763v = com.anythink.core.common.v.o.a(B9 + str + str2 + currentTimeMillis);
-            synchronized (this.f12765x) {
-                this.f12764w = new JSONObject();
+            this.f13549v = com.anythink.core.common.v.o.a(B3 + str + str2 + currentTimeMillis);
+            synchronized (this.f13551x) {
+                this.f13550w = new JSONObject();
             }
-            af.b(context, u.b.f12847a, u.a.f12839s, this.f12763v);
-            af.b(context, u.b.f12847a, u.a.f12840t, "");
-            af.a(context, u.b.f12847a, u.a.f12841u, currentTimeMillis);
+            af.b(context, u.b.f13633a, u.a.f13625s, this.f13549v);
+            af.b(context, u.b.f13633a, u.a.f13626t, "");
+            af.a(context, u.b.f13633a, u.a.f13627u, currentTimeMillis);
             com.anythink.core.common.u.e.a((String) null, "1", str2, String.valueOf(currentTimeMillis));
             if (i == 0) {
-                this.f12748e = currentTimeMillis;
+                this.f13534e = currentTimeMillis;
             }
             return currentTimeMillis;
         } catch (Throwable th) {
@@ -2151,42 +2151,42 @@ public class t {
     }
 
     public static /* synthetic */ void b(t tVar) {
-        boolean z3 = false;
-        if (tVar.f12753l != null) {
+        boolean z6 = false;
+        if (tVar.f13539l != null) {
             try {
-                z3 = new File(tVar.f12753l.getExternalFilesDir(null), tVar.f12725D).exists();
-                if (!z3) {
-                    z3 = new File(tVar.f12753l.getFilesDir(), tVar.f12725D).exists();
+                z6 = new File(tVar.f13539l.getExternalFilesDir(null), tVar.f13511D).exists();
+                if (!z6) {
+                    z6 = new File(tVar.f13539l.getFilesDir(), tVar.f13511D).exists();
                 }
             } catch (Throwable th) {
                 th.printStackTrace();
             }
         }
-        tVar.f12726E = z3;
+        tVar.f13512E = z6;
     }
 
     public static /* synthetic */ void b(t tVar, Context context) {
-        long j6 = tVar.f12748e;
+        long j6 = tVar.f13534e;
         try {
-            String c9 = af.c(b().f12753l, u.b.f12847a, b().p() + "playRecord", "");
+            String c9 = af.c(b().f13539l, u.b.f13633a, b().p() + "playRecord", "");
             if (!TextUtils.isEmpty(c9)) {
                 JSONObject jSONObject = new JSONObject(c9);
-                long optLong = jSONObject.optLong(g.f12329a);
-                long optLong2 = jSONObject.optLong(g.f12330b);
-                String optString = jSONObject.optString(g.f12331c);
-                int optInt = jSONObject.optInt(g.f12332d);
+                long optLong = jSONObject.optLong(g.f13115a);
+                long optLong2 = jSONObject.optLong(g.f13116b);
+                String optString = jSONObject.optString(g.f13117c);
+                int optInt = jSONObject.optInt(g.f13118d);
                 if (j6 != 0) {
                     com.anythink.core.common.u.e.a(optInt == 1 ? 4 : 2, optLong, optLong2, optString);
                 } else {
                     j6 = optLong;
                 }
-                af.b(b().f12753l, u.b.f12847a, b().p() + "playRecord", "");
+                af.b(b().f13539l, u.b.f13633a, b().p() + "playRecord", "");
             }
         } catch (Exception unused) {
-            af.b(b().f12753l, u.b.f12847a, b().p() + "playRecord", "");
+            af.b(b().f13539l, u.b.f13633a, b().p() + "playRecord", "");
         }
         if (j6 == 0) {
-            j6 = af.b(context, u.b.f12847a, u.a.f12841u, 0L);
+            j6 = af.b(context, u.b.f13633a, u.a.f13627u, 0L);
         }
         if (j6 == 0) {
             j6 = System.currentTimeMillis();
@@ -2195,7 +2195,7 @@ public class t {
     }
 
     public static boolean a(Context context, List<String> list) {
-        boolean z3 = true;
+        boolean z6 = true;
         if (list == null) {
             return true;
         }
@@ -2209,18 +2209,18 @@ public class t {
             if (context.getPackageManager().queryIntentActivities(new Intent(context, Class.forName(str)), 131072).size() <= 0) {
                 sb.append(", ");
                 sb.append(str);
-                z3 = false;
+                z6 = false;
             }
         }
         if (sb.length() > 2) {
             sb.delete(0, 2);
         }
-        if (z3) {
+        if (z6) {
             Log.i("anythink", "Activities : VERIFIED");
         } else {
             Log.e("anythink", "Activities : Missing " + sb.toString() + " declare in AndroidManifest");
         }
-        return z3;
+        return z6;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:71:0x00c1 A[RETURN] */
@@ -2233,15 +2233,15 @@ public class t {
         if (list == null || list.size() == 0) {
             return "";
         }
-        boolean z3 = false;
+        boolean z6 = false;
         try {
             int size = list.size();
             str2 = "";
             int i = 0;
-            boolean z6 = true;
+            boolean z9 = true;
             while (true) {
                 if (i >= size) {
-                    z3 = z6;
+                    z6 = z9;
                     break;
                 }
                 try {
@@ -2271,7 +2271,7 @@ public class t {
                                 if (next == 2) {
                                     if ("x".equalsIgnoreCase(xmlResourceParser.getName())) {
                                         if (xmlResourceParser.getAttributeCount() == 0) {
-                                            z6 = false;
+                                            z9 = false;
                                             break;
                                         }
                                     } else if (xmlResourceParser.getAttributeCount() >= 0) {
@@ -2296,7 +2296,7 @@ public class t {
                 } catch (Throwable th) {
                     th = th;
                     th.printStackTrace();
-                    if (!z3) {
+                    if (!z6) {
                     }
                 }
             }
@@ -2304,20 +2304,20 @@ public class t {
             th = th2;
             str2 = "";
         }
-        return !z3 ? "" : str2;
+        return !z6 ? "" : str2;
     }
 
-    public final void a(final Context context, boolean z3) {
+    public final void a(final Context context, boolean z6) {
         Runnable runnable = new Runnable() { // from class: com.anythink.core.common.d.t.6
             @Override // java.lang.Runnable
             public final void run() {
-                if (com.anythink.core.d.d.a(context).a(t.this.f12754m)) {
-                    com.anythink.core.d.d.a(context).a(t.this.f12754m, t.this.f12755n);
+                if (com.anythink.core.d.d.a(context).a(t.this.f13540m)) {
+                    com.anythink.core.d.d.a(context).a(t.this.f13540m, t.this.f13541n);
                 }
-                com.anythink.core.d.d.a(context).b(t.this.f12754m);
+                com.anythink.core.d.d.a(context).b(t.this.f13540m);
             }
         };
-        if (z3) {
+        if (z6) {
             com.anythink.core.common.v.b.b.a().b(runnable, 2);
         } else {
             com.anythink.core.common.v.b.b.a().c(runnable, 13);
@@ -2328,7 +2328,7 @@ public class t {
         if (j6 <= 0 && Looper.getMainLooper() == Looper.myLooper()) {
             runnable.run();
         } else {
-            this.f12756o.postDelayed(runnable, j6);
+            this.f13542o.postDelayed(runnable, j6);
         }
     }
 
@@ -2345,9 +2345,9 @@ public class t {
             return;
         }
         if (list == null) {
-            this.f12741U.remove(str);
+            this.f13527U.remove(str);
         } else {
-            this.f12741U.put(str, list);
+            this.f13527U.put(str, list);
         }
     }
 
@@ -2360,26 +2360,26 @@ public class t {
     }
 
     public final void a(IATDeviceRiskListener iATDeviceRiskListener) {
-        this.f12749f = iATDeviceRiskListener;
+        this.f13535f = iATDeviceRiskListener;
     }
 
     public final void a(com.anythink.core.d.b bVar) {
         if (bVar != null) {
             try {
                 if (F()) {
-                    Log.e("anythink", "notifyDeviceRisk:" + this.f12749f);
+                    Log.e("anythink", "notifyDeviceRisk:" + this.f13535f);
                 }
-                if (this.f12749f != null) {
+                if (this.f13535f != null) {
                     JSONObject jSONObject = new JSONObject();
-                    String B9 = B();
-                    if (!TextUtils.isEmpty(B9)) {
-                        jSONObject.put("device_upid", B9);
+                    String B3 = B();
+                    if (!TextUtils.isEmpty(B3)) {
+                        jSONObject.put("device_upid", B3);
                     }
-                    String f3 = bVar.f();
-                    if (!TextUtils.isEmpty(f3)) {
-                        jSONObject.put("device_risk_labels", f3);
+                    String f2 = bVar.f();
+                    if (!TextUtils.isEmpty(f2)) {
+                        jSONObject.put("device_risk_labels", f2);
                     }
-                    this.f12749f.onDeviceRiskInfo(jSONObject);
+                    this.f13535f.onDeviceRiskInfo(jSONObject);
                 }
             } catch (Exception e9) {
                 e9.printStackTrace();
@@ -2402,7 +2402,7 @@ public class t {
             return;
         }
         Log.e("anythink", "Note: The call to the \"ATSDK.testModeDeviceInfo()\" method must be removed after the test is completed!!!");
-        if (!this.f12747d) {
+        if (!this.f13533d) {
             Log.e("anythink", "You should init SDK first.");
             if (deviceInfoCallback != null) {
                 deviceInfoCallback.deviceInfo("You should init SDK first.");
@@ -2413,15 +2413,15 @@ public class t {
         com.anythink.core.common.v.b.b.a().b(new Runnable() { // from class: com.anythink.core.common.d.t.7
             @Override // java.lang.Runnable
             public final void run() {
-                com.anythink.core.d.b g4 = y.g(com.anythink.core.d.d.a(context));
-                String R8 = g4 != null ? g4.R() : "";
-                boolean z3 = true;
+                com.anythink.core.d.b k9 = com.IceFishing.LiveIceFishing.k.k(com.anythink.core.d.d.a(context));
+                String R8 = k9 != null ? k9.R() : "";
+                boolean z6 = true;
                 if (!TextUtils.isEmpty(R8)) {
                     try {
                         JSONObject jSONObject = new JSONObject(R8);
                         if (!jSONObject.isNull("a")) {
                             if (jSONObject.optInt("a") != 1) {
-                                z3 = false;
+                                z6 = false;
                             }
                         }
                     } catch (Exception unused) {
@@ -2431,10 +2431,10 @@ public class t {
                     JSONObject jSONObject2 = new JSONObject();
                     s c9 = t.b().c();
                     if (c9 != null) {
-                        c9.fillTestDeviceData(jSONObject2, g4);
+                        c9.fillTestDeviceData(jSONObject2, k9);
                     }
                     jSONObject2.put("GAID", com.anythink.core.common.v.m.t(context));
-                    jSONObject2.put("AndroidID", z3 ? com.anythink.core.common.v.m.d(context) : "");
+                    jSONObject2.put("AndroidID", z6 ? com.anythink.core.common.v.m.d(context) : "");
                     jSONObject2.put("How to config TestMode", "Please visit the document center and learn more through: Integration(Basic) -> How To Test");
                     ab.a("testModeDeviceInfo", jSONObject2.toString());
                     DeviceInfoCallback deviceInfoCallback2 = deviceInfoCallback;
@@ -2448,7 +2448,7 @@ public class t {
     }
 
     public final void a(final String str, final String str2, final String str3, final Map<String, Object> map) {
-        if (!this.f12747d) {
+        if (!this.f13533d) {
             Log.e("SDK.init", "SDK should be inited first!");
             return;
         }
@@ -2461,49 +2461,49 @@ public class t {
             Log.e("SDK.init", "The \"" + str + "\" object has not been created yet!");
             return;
         }
-        final boolean g4 = a9.g();
+        final boolean g9 = a9.g();
         ae aeVar = new ae();
         aeVar.a(map);
         aeVar.a(a9.i());
-        final com.anythink.core.common.h.c b9 = a9.b(this.f12753l, false, false, aeVar);
+        final com.anythink.core.common.h.c b9 = a9.b(this.f13539l, false, false, aeVar);
         com.anythink.core.common.v.b.b.a().b(new Runnable() { // from class: com.anythink.core.common.d.t.8
             @Override // java.lang.Runnable
             public final void run() {
-                com.anythink.core.d.l a10 = com.anythink.core.d.n.a(t.this.f12753l).a(str);
-                String h9 = a9.h();
-                String d2 = com.anythink.core.common.v.p.d(str2);
+                com.anythink.core.d.l a10 = com.anythink.core.d.n.a(t.this.f13539l).a(str);
+                String h3 = a9.h();
+                String d9 = com.anythink.core.common.v.p.d(str2);
                 com.anythink.core.common.h.c cVar = b9;
                 if (cVar != null) {
                     com.anythink.core.common.h.n af = cVar.i().af();
                     af.k(1);
-                    af.f14011F = d2;
+                    af.f14797F = d9;
                     if (w.a().a(a10)) {
                         aj.a(str, a10, af);
                     }
-                    com.anythink.core.common.u.c.a(t.this.f12753l).a(16, af);
+                    com.anythink.core.common.u.c.a(t.this.f13539l).a(16, af);
                     return;
                 }
-                if (TextUtils.isEmpty(h9)) {
-                    h9 = "";
+                if (TextUtils.isEmpty(h3)) {
+                    h3 = "";
                 }
-                com.anythink.core.common.h.n a11 = aj.a(h9, str, a10, 0, 0, map, null, 0, a9.i());
-                a11.k(g4 ? 3 : 2);
+                com.anythink.core.common.h.n a11 = aj.a(h3, str, a10, 0, 0, map, null, 0, a9.i());
+                a11.k(g9 ? 3 : 2);
                 if (a10 == null) {
                     a11.K(str3);
                 }
-                a11.f14011F = d2;
+                a11.f14797F = d9;
                 if (w.a().a(a10)) {
                     aj.a(str, a10, a11);
                 }
-                com.anythink.core.common.u.c.a(t.this.f12753l).a(16, a11);
+                com.anythink.core.common.u.c.a(t.this.f13539l).a(16, a11);
             }
         }, 2);
     }
 
     public final void a(Activity activity) {
-        WeakReference<Activity> weakReference = this.f12750g;
+        WeakReference<Activity> weakReference = this.f13536g;
         if (weakReference == null || weakReference.get() == null) {
-            this.f12750g = new WeakReference<>(activity);
+            this.f13536g = new WeakReference<>(activity);
         }
     }
 
@@ -2524,7 +2524,7 @@ public class t {
             aTInitConfigList = new ArrayList<>(2);
         }
         ATInitConfig aTInitConfig = null;
-        boolean z3 = false;
+        boolean z6 = false;
         if (Build.VERSION.SDK_INT != 29 && !a(b().J(), "1")) {
             try {
                 Constructor declaredConstructor = FacebookATInitConfig.class.asSubclass(ATInitConfig.class).getDeclaredConstructor(null);
@@ -2538,12 +2538,12 @@ public class t {
             } catch (Throwable unused2) {
             }
         }
-        this.f12733M = aTInitConfigList.size() > 0;
+        this.f13519M = aTInitConfigList.size() > 0;
         for (ATInitConfig aTInitConfig3 : aTInitConfigList) {
             if (aTInitConfig3 != null) {
                 if (aTInitConfig != null && TextUtils.equals(aTInitConfig.getClass().getSimpleName(), aTInitConfig3.getClass().getSimpleName())) {
-                    if (!z3) {
-                        z3 = true;
+                    if (!z6) {
+                        z6 = true;
                     }
                 }
                 a(new AnonymousClass9(aTInitConfig3, context));
@@ -2564,7 +2564,7 @@ public class t {
         map.remove(j.w.i);
         String jSONObject = new JSONObject(map).toString();
         Log.e("anythink", "Mismatched initialization parameters! server params: [" + str + "], " + jSONObject);
-        af.b(this.f12753l, u.b.f12853g, str, jSONObject);
+        af.b(this.f13539l, u.b.f13639g, str, jSONObject);
         if (nVar == null || strArr == null) {
             return;
         }
@@ -2638,12 +2638,12 @@ public class t {
 
     public final void a(Boolean bool) {
         if (bool != null) {
-            synchronized (this.f12762u) {
+            synchronized (this.f13548u) {
                 try {
                     if (!bool.booleanValue()) {
-                        this.f12762u.put("sensor_deny", Boolean.TRUE);
+                        this.f13548u.put("sensor_deny", Boolean.TRUE);
                     } else {
-                        this.f12762u.remove("sensor_deny");
+                        this.f13548u.remove("sensor_deny");
                     }
                 } catch (Throwable th) {
                     throw th;
@@ -2685,7 +2685,7 @@ public class t {
             aTInitConfigList = new ArrayList<>(2);
         }
         ATInitConfig aTInitConfig = null;
-        boolean z3 = false;
+        boolean z6 = false;
         if (Build.VERSION.SDK_INT != 29 && !a(b().J(), "1")) {
             try {
                 Constructor declaredConstructor = FacebookATInitConfig.class.asSubclass(ATInitConfig.class).getDeclaredConstructor(null);
@@ -2699,12 +2699,12 @@ public class t {
             } catch (Throwable unused2) {
             }
         }
-        tVar.f12733M = aTInitConfigList.size() > 0;
+        tVar.f13519M = aTInitConfigList.size() > 0;
         for (ATInitConfig aTInitConfig3 : aTInitConfigList) {
             if (aTInitConfig3 != null) {
                 if (aTInitConfig != null && TextUtils.equals(aTInitConfig.getClass().getSimpleName(), aTInitConfig3.getClass().getSimpleName())) {
-                    if (!z3) {
-                        z3 = true;
+                    if (!z6) {
+                        z6 = true;
                     }
                 }
                 a(tVar.new AnonymousClass9(aTInitConfig3, context));

@@ -10,10 +10,10 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 public abstract class t extends c {
 
     /* renamed from: A, reason: collision with root package name */
-    public boolean f42221A;
+    public boolean f42192A;
 
     /* renamed from: B, reason: collision with root package name */
-    public boolean f42222B;
+    public boolean f42193B;
 
     @Override // z.c
     public final void e(ConstraintLayout constraintLayout) {
@@ -24,38 +24,38 @@ public abstract class t extends c {
     public void g(AttributeSet attributeSet) {
         super.g(attributeSet);
         if (attributeSet != null) {
-            TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, r.f42213b);
+            TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, r.f42184b);
             int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i = 0; i < indexCount; i++) {
                 int index = obtainStyledAttributes.getIndex(i);
                 if (index == 6) {
-                    this.f42221A = true;
+                    this.f42192A = true;
                 } else if (index == 22) {
-                    this.f42222B = true;
+                    this.f42193B = true;
                 }
             }
             obtainStyledAttributes.recycle();
         }
     }
 
-    public abstract void j(w.g gVar, int i, int i6);
+    public abstract void j(w.h hVar, int i, int i4);
 
     @Override // z.c, android.view.View
     public final void onAttachedToWindow() {
         super.onAttachedToWindow();
-        if (this.f42221A || this.f42222B) {
+        if (this.f42192A || this.f42193B) {
             ViewParent parent = getParent();
             if (parent instanceof ConstraintLayout) {
                 ConstraintLayout constraintLayout = (ConstraintLayout) parent;
                 int visibility = getVisibility();
                 float elevation = getElevation();
-                for (int i = 0; i < this.f42014u; i++) {
-                    View view = (View) constraintLayout.f4652n.get(this.f42013n[i]);
+                for (int i = 0; i < this.f41985u; i++) {
+                    View view = (View) constraintLayout.f4620n.get(this.f41984n[i]);
                     if (view != null) {
-                        if (this.f42221A) {
+                        if (this.f42192A) {
                             view.setVisibility(visibility);
                         }
-                        if (this.f42222B && elevation > 0.0f) {
+                        if (this.f42193B && elevation > 0.0f) {
                             view.setTranslationZ(view.getTranslationZ() + elevation);
                         }
                     }
@@ -65,8 +65,8 @@ public abstract class t extends c {
     }
 
     @Override // android.view.View
-    public void setElevation(float f3) {
-        super.setElevation(f3);
+    public void setElevation(float f2) {
+        super.setElevation(f2);
         ViewParent parent = getParent();
         if (parent == null || !(parent instanceof ConstraintLayout)) {
             return;

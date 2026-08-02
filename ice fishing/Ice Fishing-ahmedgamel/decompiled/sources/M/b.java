@@ -6,31 +6,31 @@ import android.text.SpannableStringBuilder;
 public final class b {
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f1765b;
+    public static final String f1796b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f1766c;
+    public static final String f1797c;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final b f1767d;
+    public static final b f1798d;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final b f1768e;
+    public static final b f1799e;
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f1769a;
+    public final boolean f1800a;
 
     static {
-        L3.h hVar = h.f1777c;
-        f1765b = Character.toString((char) 8206);
-        f1766c = Character.toString((char) 8207);
-        f1767d = new b(false);
-        f1768e = new b(true);
+        h hVar = i.f1810c;
+        f1796b = Character.toString((char) 8206);
+        f1797c = Character.toString((char) 8207);
+        f1798d = new b(false);
+        f1799e = new b(true);
     }
 
-    public b(boolean z3) {
-        L3.h hVar = h.f1775a;
-        this.f1769a = z3;
+    public b(boolean z6) {
+        h hVar = i.f1808a;
+        this.f1800a = z6;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:33:0x0085, code lost:
@@ -51,7 +51,7 @@ public final class b {
      */
     /* JADX WARN: Code restructure failed: missing block: B:49:0x0076, code lost:
     
-        if (r0.f1763c <= 0) goto L63;
+        if (r0.f1794c <= 0) goto L63;
      */
     /* JADX WARN: Code restructure failed: missing block: B:51:0x007c, code lost:
     
@@ -90,50 +90,50 @@ public final class b {
     public static int a(CharSequence charSequence) {
         byte directionality;
         a aVar = new a(charSequence);
-        aVar.f1763c = 0;
+        aVar.f1794c = 0;
         int i = 0;
+        int i4 = 0;
         int i6 = 0;
-        int i9 = 0;
         while (true) {
-            int i10 = aVar.f1763c;
-            if (i10 < aVar.f1762b && i == 0) {
-                CharSequence charSequence2 = aVar.f1761a;
-                char charAt = charSequence2.charAt(i10);
-                aVar.f1764d = charAt;
+            int i9 = aVar.f1794c;
+            if (i9 < aVar.f1793b && i == 0) {
+                CharSequence charSequence2 = aVar.f1792a;
+                char charAt = charSequence2.charAt(i9);
+                aVar.f1795d = charAt;
                 if (Character.isHighSurrogate(charAt)) {
-                    int codePointAt = Character.codePointAt(charSequence2, aVar.f1763c);
-                    aVar.f1763c = Character.charCount(codePointAt) + aVar.f1763c;
+                    int codePointAt = Character.codePointAt(charSequence2, aVar.f1794c);
+                    aVar.f1794c = Character.charCount(codePointAt) + aVar.f1794c;
                     directionality = Character.getDirectionality(codePointAt);
                 } else {
-                    aVar.f1763c++;
-                    char c9 = aVar.f1764d;
-                    directionality = c9 < 1792 ? a.f1760e[c9] : Character.getDirectionality(c9);
+                    aVar.f1794c++;
+                    char c9 = aVar.f1795d;
+                    directionality = c9 < 1792 ? a.f1791e[c9] : Character.getDirectionality(c9);
                 }
                 if (directionality != 0) {
                     if (directionality == 1 || directionality == 2) {
-                        if (i9 == 0) {
+                        if (i6 == 0) {
                         }
                     } else if (directionality != 9) {
                         switch (directionality) {
                             case 14:
                             case 15:
-                                i9++;
-                                i6 = -1;
+                                i6++;
+                                i4 = -1;
                                 continue;
                             case 16:
                             case 17:
-                                i9++;
-                                i6 = 1;
+                                i6++;
+                                i4 = 1;
                                 continue;
                             case 18:
-                                i9--;
-                                i6 = 0;
+                                i6--;
+                                i4 = 0;
                                 continue;
                         }
                     }
-                } else if (i9 == 0) {
+                } else if (i6 == 0) {
                 }
-                i = i9;
+                i = i6;
             }
         }
         return -1;
@@ -148,16 +148,16 @@ public final class b {
     */
     public static int b(CharSequence charSequence) {
         a aVar = new a(charSequence);
-        aVar.f1763c = aVar.f1762b;
+        aVar.f1794c = aVar.f1793b;
         int i = 0;
         while (true) {
-            int i6 = i;
-            while (aVar.f1763c > 0) {
+            int i4 = i;
+            while (aVar.f1794c > 0) {
                 byte a9 = aVar.a();
                 if (a9 != 0) {
                     if (a9 == 1 || a9 == 2) {
                         if (i != 0) {
-                            if (i6 == 0) {
+                            if (i4 == 0) {
                                 break;
                             }
                         }
@@ -165,14 +165,14 @@ public final class b {
                         switch (a9) {
                             case 14:
                             case 15:
-                                if (i6 == i) {
+                                if (i4 == i) {
                                     return -1;
                                 }
                                 i--;
                                 break;
                             case 16:
                             case 17:
-                                if (i6 == i) {
+                                if (i4 == i) {
                                     break;
                                 }
                                 i--;
@@ -181,7 +181,7 @@ public final class b {
                                 i++;
                                 break;
                             default:
-                                if (i6 != 0) {
+                                if (i4 != 0) {
                                     break;
                                 } else {
                                     break;
@@ -195,7 +195,7 @@ public final class b {
                     if (i == 0) {
                         return -1;
                     }
-                    if (i6 == 0) {
+                    if (i4 == 0) {
                         break;
                     }
                 }
@@ -205,29 +205,29 @@ public final class b {
     }
 
     public final SpannableStringBuilder c(CharSequence charSequence) {
-        L3.h hVar = h.f1777c;
+        h hVar = i.f1810c;
         if (charSequence == null) {
             return null;
         }
-        boolean e9 = hVar.e(charSequence, charSequence.length());
+        boolean f2 = hVar.f(charSequence, charSequence.length());
         SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
-        boolean e10 = (e9 ? h.f1776b : h.f1775a).e(charSequence, charSequence.length());
+        boolean f9 = (f2 ? i.f1809b : i.f1808a).f(charSequence, charSequence.length());
         String str = "";
-        String str2 = f1766c;
-        String str3 = f1765b;
-        boolean z3 = this.f1769a;
-        spannableStringBuilder.append((CharSequence) ((z3 || !(e10 || a(charSequence) == 1)) ? (!z3 || (e10 && a(charSequence) != -1)) ? "" : str2 : str3));
-        if (e9 != z3) {
-            spannableStringBuilder.append(e9 ? (char) 8235 : (char) 8234);
+        String str2 = f1797c;
+        String str3 = f1796b;
+        boolean z6 = this.f1800a;
+        spannableStringBuilder.append((CharSequence) ((z6 || !(f9 || a(charSequence) == 1)) ? (!z6 || (f9 && a(charSequence) != -1)) ? "" : str2 : str3));
+        if (f2 != z6) {
+            spannableStringBuilder.append(f2 ? (char) 8235 : (char) 8234);
             spannableStringBuilder.append(charSequence);
             spannableStringBuilder.append((char) 8236);
         } else {
             spannableStringBuilder.append(charSequence);
         }
-        boolean e11 = (e9 ? h.f1776b : h.f1775a).e(charSequence, charSequence.length());
-        if (!z3 && (e11 || b(charSequence) == 1)) {
+        boolean f10 = (f2 ? i.f1809b : i.f1808a).f(charSequence, charSequence.length());
+        if (!z6 && (f10 || b(charSequence) == 1)) {
             str = str3;
-        } else if (z3 && (!e11 || b(charSequence) == -1)) {
+        } else if (z6 && (!f10 || b(charSequence) == -1)) {
             str = str2;
         }
         spannableStringBuilder.append((CharSequence) str);

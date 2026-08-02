@@ -7,13 +7,13 @@ public final class SX {
     public final String A02;
     public final boolean A03;
 
-    public SX(String str, boolean z3, SW sw) {
-        this(str, z3, sw, System.currentTimeMillis());
+    public SX(String str, boolean z6, SW sw) {
+        this(str, z6, sw, System.currentTimeMillis());
     }
 
-    public SX(String str, boolean z3, SW sw, long j6) {
+    public SX(String str, boolean z6, SW sw, long j6) {
         this.A02 = str;
-        this.A03 = z3;
+        this.A03 = z6;
         this.A01 = sw;
         this.A00 = j6;
     }

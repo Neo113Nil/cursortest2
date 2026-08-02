@@ -18,10 +18,10 @@ public abstract class XK {
     public static final AtomicReference<Boolean> A03;
     public static volatile XJ A04;
 
-    public static String A06(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 40);
+    public static String A06(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 40);
         }
         return new String(copyOfRange);
     }
@@ -75,13 +75,13 @@ public abstract class XK {
                         String str = strArr[0];
                         String str2 = strArr[1];
                         int charAt = str.charAt(20);
-                        int i6 = str2.charAt(20);
-                        if (charAt == i6) {
+                        int i4 = str2.charAt(20);
+                        if (charAt == i4) {
                             throw new RuntimeException();
                         }
                         A02[2] = "E9WdjcV1cB";
-                        int i9 = Integer.parseInt(attributeValue);
-                        return i9;
+                        int i6 = Integer.parseInt(attributeValue);
+                        return i6;
                     }
                 }
             }
@@ -101,11 +101,11 @@ public abstract class XK {
             return;
         }
         A04 = XJ.A03;
-        Executors.newSingleThreadExecutor().execute(new C1192Qu(context));
+        Executors.newSingleThreadExecutor().execute(new C1212Qu(context));
     }
 
     public static void A0A(T8 t82, Throwable th) {
-        t82.A08().ABC(A06(38, 7, 85), AbstractC1252Td.A1c, new C1253Te(th));
+        t82.A08().ABC(A06(38, 7, 85), AbstractC1272Td.A1c, new C1273Te(th));
     }
 
     public static boolean A0B() {
@@ -123,7 +123,7 @@ public abstract class XK {
             }
         } else {
             XmlResourceParser xmlResourceParser = null;
-            boolean z3 = true;
+            boolean z6 = true;
             try {
                 xmlResourceParser = t82.getAssets().openXmlResourceParser(A06(0, 19, 21));
                 loop0: while (true) {
@@ -133,7 +133,7 @@ public abstract class XK {
                     if (xmlResourceParser.getEventType() == 2 && (xmlResourceParser.getName().equals(A06(27, 11, 23)) || xmlResourceParser.getName().equals(A06(19, 8, 90)))) {
                         for (int i = 0; i < xmlResourceParser.getAttributeCount(); i++) {
                             if (xmlResourceParser.getAttributeName(i).equals(A06(58, 18, 8)) && !Boolean.parseBoolean(xmlResourceParser.getAttributeValue(i))) {
-                                z3 = false;
+                                z6 = false;
                                 break loop0;
                             }
                         }
@@ -153,8 +153,8 @@ public abstract class XK {
                     }
                 }
             }
-            A03.set(Boolean.valueOf(z3));
-            return z3;
+            A03.set(Boolean.valueOf(z6));
+            return z6;
         }
         throw new RuntimeException();
     }

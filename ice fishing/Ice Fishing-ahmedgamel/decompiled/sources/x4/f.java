@@ -2,7 +2,7 @@ package x4;
 
 import android.app.Activity;
 import android.content.Context;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public interface f {
@@ -24,7 +24,7 @@ public interface f {
 
     void setEntryState(b bVar);
 
-    Object waitUntilActivityReady(InterfaceC5267d interfaceC5267d);
+    Object waitUntilActivityReady(InterfaceC5240d interfaceC5240d);
 
-    Object waitUntilSystemConditionsAvailable(InterfaceC5267d interfaceC5267d);
+    Object waitUntilSystemConditionsAvailable(InterfaceC5240d interfaceC5240d);
 }

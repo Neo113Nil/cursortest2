@@ -11,14 +11,14 @@ public final /* synthetic */ class C4854b implements BiConsumer {
     @Override // java.util.function.BiConsumer
     public final void accept(Object obj, Object obj2) {
         e eVar = (e) obj;
-        boolean z3 = false;
-        if (!eVar.f38686b.isEmpty()) {
-            String str = eVar.f38686b;
+        boolean z6 = false;
+        if (!eVar.f38613b.isEmpty()) {
+            String str = eVar.f38613b;
             if (str.length() <= 255) {
                 int i = 0;
                 while (true) {
                     if (i >= str.length()) {
-                        z3 = true;
+                        z6 = true;
                         break;
                     }
                     char charAt = str.charAt(i);
@@ -30,7 +30,7 @@ public final /* synthetic */ class C4854b implements BiConsumer {
                 }
             }
         }
-        d.a("Attribute key should be a ASCII string with a length greater than 0 and not exceed 255 characters.", z3);
+        d.a("Attribute key should be a ASCII string with a length greater than 0 and not exceed 255 characters.", z6);
         Objects.requireNonNull(obj2, "Attribute value should be a ASCII string with a length not exceed 255 characters.");
     }
 }

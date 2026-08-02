@@ -14,20 +14,20 @@ import java.io.File;
 public class v {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String[] f16895a = {"/su", "/su/bin/su", "/sbin/su", "/data/local/xbin/su", "/data/local/bin/su", "/data/local/su", "/system/xbin/su", "/system/bin/su", "/system/sd/xbin/su", "/system/bin/failsafe/su", "/system/bin/cufsdosck", "/system/xbin/cufsdosck", "/system/bin/cufsmgr", "/system/xbin/cufsmgr", "/system/bin/cufaevdd", "/system/xbin/cufaevdd", "/system/bin/conbb", "/system/xbin/conbb"};
+    private static final String[] f17682a = {"/su", "/su/bin/su", "/sbin/su", "/data/local/xbin/su", "/data/local/bin/su", "/data/local/su", "/system/xbin/su", "/system/bin/su", "/system/sd/xbin/su", "/system/bin/failsafe/su", "/system/bin/cufsdosck", "/system/xbin/cufsdosck", "/system/bin/cufsmgr", "/system/xbin/cufsmgr", "/system/bin/cufaevdd", "/system/xbin/cufaevdd", "/system/bin/conbb", "/system/xbin/conbb"};
 
     public static String a() {
         try {
-            String[] strArr = f16895a;
+            String[] strArr = f17682a;
             int length = strArr.length;
-            boolean z3 = false;
+            boolean z6 = false;
             int i = 0;
             while (true) {
                 if (i >= length) {
                     break;
                 }
                 if (new File(strArr[i]).exists()) {
-                    z3 = true;
+                    z6 = true;
                     break;
                 }
                 i++;
@@ -38,7 +38,7 @@ public class v {
                     return "1";
                 }
             }
-            return z3 ? "1" : "2";
+            return z6 ? "1" : "2";
         } catch (Throwable unused) {
             return "";
         }
@@ -108,7 +108,7 @@ public class v {
     public static String b(Context context) {
         Intent registerReceiver;
         int intExtra;
-        boolean z3;
+        boolean z6;
         int i = 2;
         try {
             registerReceiver = context.registerReceiver(null, new IntentFilter("android.intent.action.BATTERY_CHANGED"));
@@ -116,22 +116,22 @@ public class v {
         } catch (Throwable unused) {
         }
         if (intExtra != 2 && intExtra != 5) {
-            z3 = false;
+            z6 = false;
             int intExtra2 = registerReceiver.getIntExtra("plugged", -1);
-            boolean z6 = intExtra2 != 2;
-            boolean z9 = intExtra2 == 1;
-            if (z3 && (z6 || z9)) {
+            boolean z9 = intExtra2 != 2;
+            boolean z10 = intExtra2 == 1;
+            if (z6 && (z9 || z10)) {
                 i = 1;
             }
             return String.valueOf(i);
         }
-        z3 = true;
+        z6 = true;
         int intExtra22 = registerReceiver.getIntExtra("plugged", -1);
         if (intExtra22 != 2) {
         }
         if (intExtra22 == 1) {
         }
-        if (z3) {
+        if (z6) {
             i = 1;
         }
         return String.valueOf(i);

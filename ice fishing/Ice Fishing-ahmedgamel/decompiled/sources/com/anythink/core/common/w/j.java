@@ -4,71 +4,71 @@ package com.anythink.core.common.w;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f17132a = "g";
+    public static final String f17919a = "g";
 
     /* renamed from: b, reason: collision with root package name */
-    boolean f17133b = false;
+    boolean f17920b = false;
 
     /* renamed from: c, reason: collision with root package name */
-    boolean f17134c = false;
+    boolean f17921c = false;
 
     /* renamed from: d, reason: collision with root package name */
-    boolean f17135d = false;
+    boolean f17922d = false;
 
     /* renamed from: e, reason: collision with root package name */
-    boolean f17136e = false;
+    boolean f17923e = false;
 
     /* renamed from: f, reason: collision with root package name */
-    boolean f17137f = false;
+    boolean f17924f = false;
 
     /* renamed from: g, reason: collision with root package name */
-    boolean f17138g = false;
+    boolean f17925g = false;
 
     private boolean i() {
-        return this.f17137f;
+        return this.f17924f;
     }
 
     private void j() {
-        this.f17137f = true;
+        this.f17924f = true;
     }
 
     private boolean k() {
-        return this.f17138g;
+        return this.f17925g;
     }
 
     private void l() {
-        this.f17138g = true;
+        this.f17925g = true;
     }
 
     public final void a() {
-        this.f17133b = true;
+        this.f17920b = true;
     }
 
     public final boolean b() {
-        return this.f17133b;
+        return this.f17920b;
     }
 
     public final boolean c() {
-        return this.f17134c;
+        return this.f17921c;
     }
 
     public final void d() {
-        this.f17134c = true;
+        this.f17921c = true;
     }
 
     public final boolean e() {
-        return this.f17135d;
+        return this.f17922d;
     }
 
     public final void f() {
-        this.f17135d = true;
+        this.f17922d = true;
     }
 
     public final boolean g() {
-        return this.f17136e;
+        return this.f17923e;
     }
 
     public final void h() {
-        this.f17136e = true;
+        this.f17923e = true;
     }
 }

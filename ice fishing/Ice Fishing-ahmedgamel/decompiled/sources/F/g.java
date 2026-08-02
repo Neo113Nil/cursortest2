@@ -4,9 +4,9 @@ package F;
 public final class g implements f {
 
     /* renamed from: a, reason: collision with root package name */
-    public final h[] f857a;
+    public final h[] f920a;
 
     public g(h[] hVarArr) {
-        this.f857a = hVarArr;
+        this.f920a = hVarArr;
     }
 }

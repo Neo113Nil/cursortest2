@@ -6,9 +6,9 @@ import com.onesignal.core.internal.application.impl.a;
 public final class C {
 
     /* renamed from: a, reason: collision with root package name */
-    public final a.m f4817a;
+    public final a.m f4785a;
 
     public C(a.m mVar) {
-        this.f4817a = mVar;
+        this.f4785a = mVar;
     }
 }

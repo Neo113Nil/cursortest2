@@ -2,7 +2,7 @@ package com.instagram.common.viewpoint.core;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public class WG {
-    public final C1271Tw A00;
+    public final C1291Tw A00;
     public final WF A01;
     public final String A02;
 
@@ -10,13 +10,13 @@ public class WG {
         this(wf, null, null);
     }
 
-    public WG(WF wf, C1271Tw c1271Tw, String str) {
+    public WG(WF wf, C1291Tw c1291Tw, String str) {
         this.A01 = wf;
-        this.A00 = c1271Tw;
+        this.A00 = c1291Tw;
         this.A02 = str;
     }
 
-    public C1271Tw A00() {
+    public C1291Tw A00() {
         return this.A00;
     }
 

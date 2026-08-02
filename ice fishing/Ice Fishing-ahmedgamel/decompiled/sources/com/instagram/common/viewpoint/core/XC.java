@@ -15,10 +15,10 @@ public final class XC {
         A04();
     }
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 32);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 32);
         }
         return new String(copyOfRange);
     }
@@ -27,12 +27,12 @@ public final class XC {
         A00 = new byte[]{-92, -90, -103, -102, -77, -94, -87, -95, -77, -107, -104, -89, -77, -94, -93, -77, -105, -100, -107, -99, -94, -115, -117, -99, -115, -117, -114, -113, -114, -119, -117, -114, -68, -49, -53, -55, -72, -74, -69, -72, -53, -72, -15, -14, -9, -3, -4, -60, -59, -60, -71, -66, -73, -65, -60, -69, -70, -75, -73, -70, -55, -8, -6};
     }
 
-    public static int A00(C1840gi c1840gi, int i) {
-        return WN.A00(c1840gi).getInt(A01(0, 21, 52), i);
+    public static int A00(C1860gi c1860gi, int i) {
+        return WN.A00(c1860gi).getInt(A01(0, 21, 52), i);
     }
 
-    public static String A02(C1840gi c1840gi, String str) {
-        int A002 = A00(c1840gi, -1);
+    public static String A02(C1860gi c1860gi, String str) {
+        int A002 = A00(c1860gi, -1);
         if (A002 == -1) {
             return null;
         }
@@ -62,12 +62,12 @@ public final class XC {
         return str != null && new JSONObject(new JSONObject(str).getJSONObject(A01(42, 5, 105)).optString(A01(32, 10, 55), A01(61, 2, 93))).optBoolean(A01(21, 11, 10), false);
     }
 
-    public final InterstitialAd A06(C1840gi c1840gi, String str, String str2) {
-        if (c1840gi == null) {
+    public final InterstitialAd A06(C1860gi c1860gi, String str, String str2) {
+        if (c1860gi == null) {
             return null;
         }
         try {
-            InterstitialAd interstitialAd = new InterstitialAd(c1840gi, str);
+            InterstitialAd interstitialAd = new InterstitialAd(c1860gi, str);
             interstitialAd.setExtraHints(new ExtraHints.Builder().extraData(A03(str2, A01(21, 11, 10), true)).build());
             return interstitialAd;
         } catch (JSONException unused) {
@@ -75,12 +75,12 @@ public final class XC {
         }
     }
 
-    public final RewardedVideoAd A07(C1840gi c1840gi, String str, String str2) {
-        if (c1840gi == null) {
+    public final RewardedVideoAd A07(C1860gi c1860gi, String str, String str2) {
+        if (c1860gi == null) {
             return null;
         }
         try {
-            RewardedVideoAd rewardedVideoAd = new RewardedVideoAd(c1840gi, str);
+            RewardedVideoAd rewardedVideoAd = new RewardedVideoAd(c1860gi, str);
             rewardedVideoAd.setExtraHints(new ExtraHints.Builder().extraData(A03(str2, A01(21, 11, 10), true)).build());
             return rewardedVideoAd;
         } catch (JSONException unused) {
@@ -88,23 +88,23 @@ public final class XC {
         }
     }
 
-    public final void A08(C1840gi c1840gi, boolean z3) {
+    public final void A08(C1860gi c1860gi, boolean z6) {
         int i = 0;
         String A01 = A01(0, 21, 52);
-        if (!z3) {
-            int lastNonChainedAds = WN.A00(c1840gi).getInt(A01, 0);
+        if (!z6) {
+            int lastNonChainedAds = WN.A00(c1860gi).getInt(A01, 0);
             i = lastNonChainedAds + 1;
         }
-        WN.A00(c1840gi).edit().putInt(A01, i).apply();
+        WN.A00(c1860gi).edit().putInt(A01, i).apply();
     }
 
-    public final boolean A09(C1840gi c1840gi, String str, int i) {
+    public final boolean A09(C1860gi c1860gi, String str, int i) {
         if (i <= 0) {
             return false;
         }
         try {
             if (!A05(str)) {
-                int lastNonChainedAds = A00(c1840gi, i - 1);
+                int lastNonChainedAds = A00(c1860gi, i - 1);
                 return lastNonChainedAds >= i + (-1);
             }
         } catch (JSONException unused) {

@@ -52,8 +52,8 @@ public final class CW extends ConnectivityManager.NetworkCallback {
     }
 
     @Override // android.net.ConnectivityManager.NetworkCallback
-    public final void onBlockedStatusChanged(Network network, boolean z3) {
-        if (!z3) {
+    public final void onBlockedStatusChanged(Network network, boolean z6) {
+        if (!z6) {
             A01();
         }
     }

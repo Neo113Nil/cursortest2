@@ -10,10 +10,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.anythink.basead.exoplayer.f.f;
+import com.IceFishing.LiveIceFishing.k;
 import com.anythink.expressad.foundation.d.d;
 import com.anythink.expressad.foundation.g.d.c;
-import com.anythink.expressad.foundation.h.k;
 import com.anythink.expressad.foundation.h.q;
 import com.anythink.expressad.foundation.h.v;
 import java.lang.annotation.Retention;
@@ -28,120 +27,120 @@ public class ATSplashPopView extends RelativeLayout {
     public static final int TYPE_POP_SMALL = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f20697c = "ATSplashPopView";
+    private static final String f21484c = "ATSplashPopView";
 
     /* renamed from: d, reason: collision with root package name */
-    private static final AtomicInteger f20698d = new AtomicInteger(1);
+    private static final AtomicInteger f21485d = new AtomicInteger(1);
 
     /* renamed from: a, reason: collision with root package name */
-    View.OnClickListener f20699a;
+    View.OnClickListener f21486a;
 
     /* renamed from: b, reason: collision with root package name */
-    View.OnClickListener f20700b;
+    View.OnClickListener f21487b;
 
     /* renamed from: e, reason: collision with root package name */
-    private String f20701e;
+    private String f21488e;
 
     /* renamed from: f, reason: collision with root package name */
-    private String f20702f;
+    private String f21489f;
 
     /* renamed from: g, reason: collision with root package name */
-    private int f20703g;
+    private int f21490g;
 
     /* renamed from: h, reason: collision with root package name */
-    private d f20704h;
+    private d f21491h;
     private com.anythink.expressad.splash.d.d i;
 
     /* renamed from: j, reason: collision with root package name */
-    private ImageView f20705j;
+    private ImageView f21492j;
 
     /* renamed from: k, reason: collision with root package name */
-    private ImageView f20706k;
+    private ImageView f21493k;
 
     /* renamed from: l, reason: collision with root package name */
-    private ImageView f20707l;
+    private ImageView f21494l;
 
     /* renamed from: m, reason: collision with root package name */
-    private ImageView f20708m;
+    private ImageView f21495m;
 
     /* renamed from: n, reason: collision with root package name */
-    private TextView f20709n;
+    private TextView f21496n;
 
     /* renamed from: o, reason: collision with root package name */
-    private TextView f20710o;
+    private TextView f21497o;
 
     /* renamed from: p, reason: collision with root package name */
-    private TextView f20711p;
+    private TextView f21498p;
 
     /* renamed from: q, reason: collision with root package name */
-    private int f20712q;
+    private int f21499q;
 
     /* renamed from: r, reason: collision with root package name */
-    private Handler f20713r;
+    private Handler f21500r;
 
     /* renamed from: s, reason: collision with root package name */
-    private boolean f20714s;
+    private boolean f21501s;
 
     /* renamed from: t, reason: collision with root package name */
-    private com.anythink.expressad.b.a f20715t;
+    private com.anythink.expressad.b.a f21502t;
 
     /* renamed from: u, reason: collision with root package name */
-    private Runnable f20716u;
+    private Runnable f21503u;
 
     /* renamed from: v, reason: collision with root package name */
-    private Runnable f20717v;
+    private Runnable f21504v;
 
     public static class a {
 
         /* renamed from: a, reason: collision with root package name */
-        private String f20726a;
+        private String f21513a;
 
         /* renamed from: b, reason: collision with root package name */
-        private String f20727b;
+        private String f21514b;
 
         /* renamed from: c, reason: collision with root package name */
-        private int f20728c;
+        private int f21515c;
 
         /* renamed from: d, reason: collision with root package name */
-        private d f20729d;
+        private d f21516d;
 
         public a(String str, String str2, int i, d dVar) {
-            this.f20726a = str;
-            this.f20727b = str2;
-            this.f20728c = i;
-            this.f20729d = dVar;
+            this.f21513a = str;
+            this.f21514b = str2;
+            this.f21515c = i;
+            this.f21516d = dVar;
         }
 
         public final String a() {
-            return this.f20726a;
+            return this.f21513a;
         }
 
         public final String b() {
-            return this.f20727b;
+            return this.f21514b;
         }
 
         public final int c() {
-            return this.f20728c;
+            return this.f21515c;
         }
 
         public final d d() {
-            return this.f20729d;
+            return this.f21516d;
         }
 
         private void a(String str) {
-            this.f20726a = str;
+            this.f21513a = str;
         }
 
         private void b(String str) {
-            this.f20727b = str;
+            this.f21514b = str;
         }
 
         private void a(int i) {
-            this.f20728c = i;
+            this.f21515c = i;
         }
 
         private void a(d dVar) {
-            this.f20729d = dVar;
+            this.f21516d = dVar;
         }
     }
 
@@ -151,22 +150,22 @@ public class ATSplashPopView extends RelativeLayout {
 
     public ATSplashPopView(Context context, a aVar, com.anythink.expressad.splash.d.d dVar) {
         super(context);
-        this.f20703g = 1;
-        this.f20712q = -1;
-        this.f20713r = new Handler();
-        this.f20714s = false;
-        this.f20716u = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.4
+        this.f21490g = 1;
+        this.f21499q = -1;
+        this.f21500r = new Handler();
+        this.f21501s = false;
+        this.f21503u = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.4
             @Override // java.lang.Runnable
             public final void run() {
-                if (ATSplashPopView.this.f20711p != null) {
-                    if (ATSplashPopView.this.f20712q != 0) {
+                if (ATSplashPopView.this.f21498p != null) {
+                    if (ATSplashPopView.this.f21499q != 0) {
                         ATSplashPopView.j(ATSplashPopView.this);
-                        ATSplashPopView.this.f20711p.setText(String.valueOf(ATSplashPopView.this.f20712q));
-                        ATSplashPopView.this.f20713r.postDelayed(ATSplashPopView.this.f20716u, 1000L);
+                        ATSplashPopView.this.f21498p.setText(String.valueOf(ATSplashPopView.this.f21499q));
+                        ATSplashPopView.this.f21500r.postDelayed(ATSplashPopView.this.f21503u, 1000L);
                     } else {
                         ATSplashPopView.e(ATSplashPopView.this);
                         ATSplashPopView.this.g();
-                        ATSplashPopView.this.f20713r.removeCallbacks(ATSplashPopView.this.f20716u);
+                        ATSplashPopView.this.f21500r.removeCallbacks(ATSplashPopView.this.f21503u);
                         if (ATSplashPopView.this.i != null) {
                             ATSplashPopView.this.i.a(5);
                         }
@@ -174,30 +173,30 @@ public class ATSplashPopView extends RelativeLayout {
                 }
             }
         };
-        this.f20717v = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.5
+        this.f21504v = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.5
             @Override // java.lang.Runnable
             public final void run() {
                 if (ATSplashPopView.this.i != null) {
                     com.anythink.expressad.splash.d.d unused = ATSplashPopView.this.i;
                     ATSplashPopView.this.getWidth();
                     ATSplashPopView.this.getHeight();
-                    int unused2 = ATSplashPopView.this.f20703g;
+                    int unused2 = ATSplashPopView.this.f21490g;
                 }
             }
         };
-        this.f20699a = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.6
+        this.f21486a = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.6
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 if (ATSplashPopView.this.i != null) {
                     ATSplashPopView aTSplashPopView = ATSplashPopView.this;
-                    ATSplashPopView.a(aTSplashPopView, aTSplashPopView.f20704h);
+                    ATSplashPopView.a(aTSplashPopView, aTSplashPopView.f21491h);
                 }
             }
         };
-        this.f20700b = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.7
+        this.f21487b = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.7
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                if (ATSplashPopView.this.f20712q <= 0 && ATSplashPopView.this.i != null) {
+                if (ATSplashPopView.this.f21499q <= 0 && ATSplashPopView.this.i != null) {
                     ATSplashPopView.this.i.a(4);
                 }
             }
@@ -205,16 +204,16 @@ public class ATSplashPopView extends RelativeLayout {
         if (aVar == null) {
             throw new IllegalArgumentException("Parameters is NULL, can't gen view.");
         }
-        this.f20702f = aVar.b();
-        this.f20701e = aVar.a();
-        this.f20703g = aVar.c();
-        this.f20704h = aVar.d();
+        this.f21489f = aVar.b();
+        this.f21488e = aVar.a();
+        this.f21490g = aVar.c();
+        this.f21491h = aVar.d();
         this.i = dVar;
         a();
     }
 
     private void a(String str) {
-        f.l().a(str, new c() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.2
+        k.m().a(str, new c() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.2
             @Override // com.anythink.expressad.foundation.g.d.c
             public final void a(Bitmap bitmap, String str2) {
             }
@@ -226,7 +225,7 @@ public class ATSplashPopView extends RelativeLayout {
     }
 
     private void b(String str) {
-        f.l().a(str, new c() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.3
+        k.m().a(str, new c() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.3
             @Override // com.anythink.expressad.foundation.g.d.c
             public final void a(String str2, String str3) {
             }
@@ -237,7 +236,7 @@ public class ATSplashPopView extends RelativeLayout {
                     if (bitmap.isRecycled()) {
                         return;
                     }
-                    ATSplashPopView.this.f20706k.setImageBitmap(q.a(bitmap, 16));
+                    ATSplashPopView.this.f21493k.setImageBitmap(q.a(bitmap, 16));
                 } catch (Throwable th) {
                     th.getMessage();
                 }
@@ -246,28 +245,28 @@ public class ATSplashPopView extends RelativeLayout {
     }
 
     public static /* synthetic */ int e(ATSplashPopView aTSplashPopView) {
-        aTSplashPopView.f20712q = -1;
+        aTSplashPopView.f21499q = -1;
         return -1;
     }
 
     public static int generateViewId() {
         AtomicInteger atomicInteger;
         int i;
-        int i6;
+        int i4;
         do {
-            atomicInteger = f20698d;
+            atomicInteger = f21485d;
             i = atomicInteger.get();
-            i6 = i + 1;
-            if (i6 > 16777215) {
-                i6 = 1;
+            i4 = i + 1;
+            if (i4 > 16777215) {
+                i4 = 1;
             }
-        } while (!atomicInteger.compareAndSet(i, i6));
+        } while (!atomicInteger.compareAndSet(i, i4));
         return i;
     }
 
     public static /* synthetic */ int j(ATSplashPopView aTSplashPopView) {
-        int i = aTSplashPopView.f20712q;
-        aTSplashPopView.f20712q = i - 1;
+        int i = aTSplashPopView.f21499q;
+        aTSplashPopView.f21499q = i - 1;
         return i;
     }
 
@@ -275,7 +274,7 @@ public class ATSplashPopView extends RelativeLayout {
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
         if (this.i != null) {
-            postDelayed(this.f20717v, 500L);
+            postDelayed(this.f21504v, 500L);
         }
     }
 
@@ -286,35 +285,35 @@ public class ATSplashPopView extends RelativeLayout {
     }
 
     public void pauseCountDown() {
-        this.f20714s = true;
-        if (this.f20711p != null) {
-            this.f20713r.removeCallbacks(this.f20716u);
+        this.f21501s = true;
+        if (this.f21498p != null) {
+            this.f21500r.removeCallbacks(this.f21503u);
         }
     }
 
     public void reStartCountDown() {
-        if (this.f20714s) {
-            this.f20714s = false;
-            int i = this.f20712q;
+        if (this.f21501s) {
+            this.f21501s = false;
+            int i = this.f21499q;
             if (i == -1 || i == 0) {
                 g();
                 return;
             }
-            TextView textView = this.f20711p;
+            TextView textView = this.f21498p;
             if (textView != null) {
                 textView.setText(String.valueOf(i));
-                this.f20713r.postDelayed(this.f20716u, 1000L);
+                this.f21500r.postDelayed(this.f21503u, 1000L);
             }
         }
     }
 
     public void release() {
         try {
-            this.f20713r.removeCallbacks(this.f20717v);
-            this.f20713r.removeCallbacks(this.f20716u);
-            this.f20716u = null;
+            this.f21500r.removeCallbacks(this.f21504v);
+            this.f21500r.removeCallbacks(this.f21503u);
+            this.f21503u = null;
             detachAllViewsFromParent();
-            this.f20704h = null;
+            this.f21491h = null;
             this.i = null;
         } catch (Exception e9) {
             e9.getMessage();
@@ -325,18 +324,18 @@ public class ATSplashPopView extends RelativeLayout {
         if (aVar == null) {
             throw new IllegalArgumentException("Parameters is NULL, can't gen view.");
         }
-        this.f20702f = aVar.b();
-        this.f20701e = aVar.a();
-        this.f20703g = aVar.c();
-        this.f20704h = aVar.d();
+        this.f21489f = aVar.b();
+        this.f21488e = aVar.a();
+        this.f21490g = aVar.c();
+        this.f21491h = aVar.d();
         this.i = dVar;
         a();
     }
 
     public void startCountDown() {
-        this.f20713r.removeCallbacks(this.f20716u);
-        d dVar = this.f20704h;
-        if (dVar == null || this.f20703g != 1) {
+        this.f21500r.removeCallbacks(this.f21503u);
+        d dVar = this.f21491h;
+        if (dVar == null || this.f21490g != 1) {
             return;
         }
         int v9 = dVar.v();
@@ -344,217 +343,217 @@ public class ATSplashPopView extends RelativeLayout {
             g();
             return;
         }
-        this.f20712q = v9;
-        TextView textView = this.f20711p;
+        this.f21499q = v9;
+        TextView textView = this.f21498p;
         if (textView != null) {
             textView.setText(String.valueOf(v9));
-            this.f20713r.postDelayed(this.f20716u, 1000L);
+            this.f21500r.postDelayed(this.f21503u, 1000L);
         }
     }
 
     private void c() {
         int b9 = v.b(getContext(), 4.0f);
-        this.f20705j = new ImageView(getContext());
+        this.f21492j = new ImageView(getContext());
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(v.b(getContext(), 28.0f), v.b(getContext(), 28.0f));
         layoutParams.addRule(9);
-        this.f20705j.setId(generateViewId());
-        this.f20705j.setLayoutParams(layoutParams);
-        this.f20705j.setPadding(b9, b9, b9, b9);
-        this.f20705j.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-        a(this.f20704h.bl(), false);
+        this.f21492j.setId(generateViewId());
+        this.f21492j.setLayoutParams(layoutParams);
+        this.f21492j.setPadding(b9, b9, b9, b9);
+        this.f21492j.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+        a(this.f21491h.bl(), false);
         TextView textView = new TextView(getContext());
-        this.f20709n = textView;
+        this.f21496n = textView;
         textView.setId(generateViewId());
         RelativeLayout.LayoutParams layoutParams2 = new RelativeLayout.LayoutParams(-2, -2);
-        layoutParams2.addRule(1, this.f20705j.getId());
-        layoutParams2.addRule(6, this.f20705j.getId());
-        layoutParams2.addRule(8, this.f20705j.getId());
+        layoutParams2.addRule(1, this.f21492j.getId());
+        layoutParams2.addRule(6, this.f21492j.getId());
+        layoutParams2.addRule(8, this.f21492j.getId());
         layoutParams2.leftMargin = v.b(getContext(), 4.0f);
         layoutParams2.rightMargin = v.b(getContext(), 40.0f);
-        this.f20709n.setLayoutParams(layoutParams2);
-        this.f20709n.setGravity(16);
-        this.f20709n.setTextSize(10.0f);
-        this.f20709n.setSelected(true);
-        this.f20709n.setEllipsize(TextUtils.TruncateAt.MARQUEE);
-        this.f20709n.setMarqueeRepeatLimit(-1);
-        this.f20709n.setSingleLine(true);
-        this.f20709n.setTextColor(-16777216);
-        this.f20709n.setText(this.f20704h.bj());
-        setBackgroundResource(k.a(getContext(), "anythink_shape_corners_bg", k.f19632c));
-        addView(this.f20705j);
-        addView(this.f20709n);
+        this.f21496n.setLayoutParams(layoutParams2);
+        this.f21496n.setGravity(16);
+        this.f21496n.setTextSize(10.0f);
+        this.f21496n.setSelected(true);
+        this.f21496n.setEllipsize(TextUtils.TruncateAt.MARQUEE);
+        this.f21496n.setMarqueeRepeatLimit(-1);
+        this.f21496n.setSingleLine(true);
+        this.f21496n.setTextColor(-16777216);
+        this.f21496n.setText(this.f21491h.bj());
+        setBackgroundResource(com.anythink.expressad.foundation.h.k.a(getContext(), "anythink_shape_corners_bg", com.anythink.expressad.foundation.h.k.f20419c));
+        addView(this.f21492j);
+        addView(this.f21496n);
         f();
-        setOnClickListener(this.f20699a);
+        setOnClickListener(this.f21486a);
     }
 
     private void d() {
         int b9 = v.b(getContext(), 4.0f);
-        this.f20705j = new ImageView(getContext());
+        this.f21492j = new ImageView(getContext());
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(v.b(getContext(), 50.0f), v.b(getContext(), 50.0f));
         layoutParams.addRule(9);
-        this.f20705j.setId(generateViewId());
-        this.f20705j.setLayoutParams(layoutParams);
-        this.f20705j.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-        this.f20705j.setPadding(b9, b9, b9, b9);
-        a(this.f20704h.bl(), false);
+        this.f21492j.setId(generateViewId());
+        this.f21492j.setLayoutParams(layoutParams);
+        this.f21492j.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+        this.f21492j.setPadding(b9, b9, b9, b9);
+        a(this.f21491h.bl(), false);
         RelativeLayout relativeLayout = new RelativeLayout(getContext());
         RelativeLayout.LayoutParams layoutParams2 = new RelativeLayout.LayoutParams(-1, -2);
-        layoutParams2.addRule(1, this.f20705j.getId());
-        layoutParams2.addRule(6, this.f20705j.getId());
-        layoutParams2.addRule(8, this.f20705j.getId());
+        layoutParams2.addRule(1, this.f21492j.getId());
+        layoutParams2.addRule(6, this.f21492j.getId());
+        layoutParams2.addRule(8, this.f21492j.getId());
         layoutParams2.leftMargin = v.b(getContext(), 8.0f);
         layoutParams2.rightMargin = v.b(getContext(), 8.0f);
         relativeLayout.setLayoutParams(layoutParams2);
         relativeLayout.setGravity(16);
         TextView textView = new TextView(getContext());
-        this.f20709n = textView;
+        this.f21496n = textView;
         textView.setId(generateViewId());
-        this.f20709n.setLayoutParams(new RelativeLayout.LayoutParams(-2, -2));
-        this.f20709n.setGravity(16);
-        this.f20709n.setTextSize(12.0f);
-        this.f20709n.setSelected(true);
-        TextView textView2 = this.f20709n;
+        this.f21496n.setLayoutParams(new RelativeLayout.LayoutParams(-2, -2));
+        this.f21496n.setGravity(16);
+        this.f21496n.setTextSize(12.0f);
+        this.f21496n.setSelected(true);
+        TextView textView2 = this.f21496n;
         TextUtils.TruncateAt truncateAt = TextUtils.TruncateAt.MARQUEE;
         textView2.setEllipsize(truncateAt);
-        this.f20709n.setMarqueeRepeatLimit(-1);
-        this.f20709n.setSingleLine(true);
-        this.f20709n.setTextColor(-16777216);
-        this.f20709n.setText(this.f20704h.bj());
+        this.f21496n.setMarqueeRepeatLimit(-1);
+        this.f21496n.setSingleLine(true);
+        this.f21496n.setTextColor(-16777216);
+        this.f21496n.setText(this.f21491h.bj());
         TextView textView3 = new TextView(getContext());
-        this.f20710o = textView3;
+        this.f21497o = textView3;
         textView3.setId(generateViewId());
         RelativeLayout.LayoutParams layoutParams3 = new RelativeLayout.LayoutParams(-2, -2);
-        layoutParams3.addRule(5, this.f20709n.getId());
-        layoutParams3.addRule(3, this.f20709n.getId());
+        layoutParams3.addRule(5, this.f21496n.getId());
+        layoutParams3.addRule(3, this.f21496n.getId());
         layoutParams3.topMargin = v.b(getContext(), 4.0f);
         layoutParams3.rightMargin = v.b(getContext(), 36.0f);
-        this.f20710o.setGravity(16);
-        this.f20710o.setLayoutParams(layoutParams3);
-        this.f20710o.setTextSize(8.0f);
-        this.f20710o.setTextColor(-10066330);
-        this.f20710o.setEllipsize(truncateAt);
-        this.f20710o.setMarqueeRepeatLimit(-1);
-        this.f20710o.setSelected(true);
-        this.f20710o.setSingleLine(true);
-        this.f20710o.setText(this.f20704h.bk());
-        relativeLayout.addView(this.f20709n);
-        relativeLayout.addView(this.f20710o);
-        setBackgroundResource(k.a(getContext(), "anythink_shape_corners_bg", k.f19632c));
-        addView(this.f20705j);
+        this.f21497o.setGravity(16);
+        this.f21497o.setLayoutParams(layoutParams3);
+        this.f21497o.setTextSize(8.0f);
+        this.f21497o.setTextColor(-10066330);
+        this.f21497o.setEllipsize(truncateAt);
+        this.f21497o.setMarqueeRepeatLimit(-1);
+        this.f21497o.setSelected(true);
+        this.f21497o.setSingleLine(true);
+        this.f21497o.setText(this.f21491h.bk());
+        relativeLayout.addView(this.f21496n);
+        relativeLayout.addView(this.f21497o);
+        setBackgroundResource(com.anythink.expressad.foundation.h.k.a(getContext(), "anythink_shape_corners_bg", com.anythink.expressad.foundation.h.k.f20419c));
+        addView(this.f21492j);
         addView(relativeLayout);
         f();
-        setOnClickListener(this.f20699a);
+        setOnClickListener(this.f21486a);
     }
 
     private void e() {
-        this.f20707l = new ImageView(getContext());
+        this.f21494l = new ImageView(getContext());
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, v.b(getContext(), 131.0f));
         layoutParams.addRule(10);
         layoutParams.addRule(14);
-        this.f20707l.setScaleType(ImageView.ScaleType.FIT_XY);
-        this.f20707l.setId(generateViewId());
-        this.f20707l.setLayoutParams(layoutParams);
-        a(this.f20704h.bm());
-        this.f20706k = new ImageView(getContext());
+        this.f21494l.setScaleType(ImageView.ScaleType.FIT_XY);
+        this.f21494l.setId(generateViewId());
+        this.f21494l.setLayoutParams(layoutParams);
+        a(this.f21491h.bm());
+        this.f21493k = new ImageView(getContext());
         RelativeLayout.LayoutParams layoutParams2 = new RelativeLayout.LayoutParams(-2, v.b(getContext(), 131.0f));
         layoutParams2.addRule(10);
         layoutParams2.addRule(14);
-        this.f20706k.setScaleType(ImageView.ScaleType.FIT_CENTER);
-        this.f20706k.setId(generateViewId());
-        this.f20706k.setLayoutParams(layoutParams2);
-        b(this.f20704h.bm());
-        this.f20705j = new ImageView(getContext());
+        this.f21493k.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        this.f21493k.setId(generateViewId());
+        this.f21493k.setLayoutParams(layoutParams2);
+        b(this.f21491h.bm());
+        this.f21492j = new ImageView(getContext());
         RelativeLayout.LayoutParams layoutParams3 = new RelativeLayout.LayoutParams(v.b(getContext(), 50.0f), v.b(getContext(), 50.0f));
         layoutParams3.addRule(9);
-        layoutParams3.addRule(3, this.f20707l.getId());
+        layoutParams3.addRule(3, this.f21494l.getId());
         layoutParams3.topMargin = 20;
-        this.f20705j.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-        this.f20705j.setId(generateViewId());
-        this.f20705j.setLayoutParams(layoutParams3);
-        a(this.f20704h.bl(), false);
+        this.f21492j.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+        this.f21492j.setId(generateViewId());
+        this.f21492j.setLayoutParams(layoutParams3);
+        a(this.f21491h.bl(), false);
         RelativeLayout relativeLayout = new RelativeLayout(getContext());
         RelativeLayout.LayoutParams layoutParams4 = new RelativeLayout.LayoutParams(-1, -2);
-        layoutParams4.addRule(1, this.f20705j.getId());
-        layoutParams4.addRule(6, this.f20705j.getId());
-        layoutParams4.addRule(8, this.f20705j.getId());
+        layoutParams4.addRule(1, this.f21492j.getId());
+        layoutParams4.addRule(6, this.f21492j.getId());
+        layoutParams4.addRule(8, this.f21492j.getId());
         layoutParams4.leftMargin = v.b(getContext(), 8.0f);
         layoutParams4.rightMargin = v.b(getContext(), 8.0f);
         relativeLayout.setLayoutParams(layoutParams4);
         relativeLayout.setGravity(16);
         TextView textView = new TextView(getContext());
-        this.f20709n = textView;
+        this.f21496n = textView;
         textView.setId(generateViewId());
-        this.f20709n.setGravity(16);
-        this.f20709n.setLayoutParams(new RelativeLayout.LayoutParams(-2, -2));
-        this.f20709n.setTextSize(12.0f);
-        this.f20709n.setTextColor(-16777216);
-        TextView textView2 = this.f20709n;
+        this.f21496n.setGravity(16);
+        this.f21496n.setLayoutParams(new RelativeLayout.LayoutParams(-2, -2));
+        this.f21496n.setTextSize(12.0f);
+        this.f21496n.setTextColor(-16777216);
+        TextView textView2 = this.f21496n;
         TextUtils.TruncateAt truncateAt = TextUtils.TruncateAt.MARQUEE;
         textView2.setEllipsize(truncateAt);
-        this.f20709n.setMarqueeRepeatLimit(-1);
-        this.f20709n.setSelected(true);
-        this.f20709n.setSingleLine(true);
-        this.f20709n.setText(this.f20704h.bj());
+        this.f21496n.setMarqueeRepeatLimit(-1);
+        this.f21496n.setSelected(true);
+        this.f21496n.setSingleLine(true);
+        this.f21496n.setText(this.f21491h.bj());
         TextView textView3 = new TextView(getContext());
-        this.f20710o = textView3;
+        this.f21497o = textView3;
         textView3.setId(generateViewId());
         RelativeLayout.LayoutParams layoutParams5 = new RelativeLayout.LayoutParams(-2, -2);
-        layoutParams5.addRule(5, this.f20709n.getId());
-        layoutParams5.addRule(3, this.f20709n.getId());
+        layoutParams5.addRule(5, this.f21496n.getId());
+        layoutParams5.addRule(3, this.f21496n.getId());
         layoutParams5.topMargin = v.b(getContext(), 4.0f);
         layoutParams5.rightMargin = v.b(getContext(), 36.0f);
-        this.f20710o.setGravity(16);
-        this.f20710o.setLayoutParams(layoutParams5);
-        this.f20710o.setTextSize(8.0f);
-        this.f20710o.setTextColor(-10066330);
-        this.f20710o.setEllipsize(truncateAt);
-        this.f20710o.setMarqueeRepeatLimit(-1);
-        this.f20710o.setSelected(true);
-        this.f20710o.setSingleLine(true);
-        this.f20710o.setText(this.f20704h.bk());
-        relativeLayout.addView(this.f20709n);
-        relativeLayout.addView(this.f20710o);
-        addView(this.f20707l);
-        addView(this.f20706k);
-        addView(this.f20705j);
+        this.f21497o.setGravity(16);
+        this.f21497o.setLayoutParams(layoutParams5);
+        this.f21497o.setTextSize(8.0f);
+        this.f21497o.setTextColor(-10066330);
+        this.f21497o.setEllipsize(truncateAt);
+        this.f21497o.setMarqueeRepeatLimit(-1);
+        this.f21497o.setSelected(true);
+        this.f21497o.setSingleLine(true);
+        this.f21497o.setText(this.f21491h.bk());
+        relativeLayout.addView(this.f21496n);
+        relativeLayout.addView(this.f21497o);
+        addView(this.f21494l);
+        addView(this.f21493k);
+        addView(this.f21492j);
         addView(relativeLayout);
         f();
-        setOnClickListener(this.f20699a);
+        setOnClickListener(this.f21486a);
     }
 
     private void f() {
         String str;
-        this.f20708m = new ImageView(getContext());
+        this.f21495m = new ImageView(getContext());
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(v.b(getContext(), 32.0f), v.b(getContext(), 13.0f));
         layoutParams.addRule(11);
-        layoutParams.addRule(8, this.f20705j.getId());
-        this.f20708m.setLayoutParams(layoutParams);
+        layoutParams.addRule(8, this.f21492j.getId());
+        this.f21495m.setLayoutParams(layoutParams);
         try {
             str = getResources().getConfiguration().locale.getLanguage();
         } catch (Throwable th) {
             th.getMessage();
             str = "ZH";
         }
-        this.f20708m.setBackgroundResource((str.toUpperCase().equals("CN") || str.toUpperCase().equals("ZH")) ? k.a(getContext(), "anythink_splash_pop_ad", k.f19632c) : k.a(getContext(), "anythink_splash_pop_ad_en", k.f19632c));
-        addView(this.f20708m);
+        this.f21495m.setBackgroundResource((str.toUpperCase().equals("CN") || str.toUpperCase().equals("ZH")) ? com.anythink.expressad.foundation.h.k.a(getContext(), "anythink_splash_pop_ad", com.anythink.expressad.foundation.h.k.f20419c) : com.anythink.expressad.foundation.h.k.a(getContext(), "anythink_splash_pop_ad_en", com.anythink.expressad.foundation.h.k.f20419c));
+        addView(this.f21495m);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void g() {
-        TextView textView = this.f20711p;
+        TextView textView = this.f21498p;
         if (textView != null) {
             ViewGroup.LayoutParams layoutParams = textView.getLayoutParams();
             layoutParams.width = v.b(getContext(), 16.0f);
             layoutParams.height = v.b(getContext(), 16.0f);
-            this.f20711p.setLayoutParams(layoutParams);
-            this.f20711p.setText("");
-            this.f20711p.setSelected(true);
-            this.f20711p.setBackgroundResource(k.a(getContext(), "anythink_splash_popview_close", k.f19632c));
+            this.f21498p.setLayoutParams(layoutParams);
+            this.f21498p.setText("");
+            this.f21498p.setSelected(true);
+            this.f21498p.setBackgroundResource(com.anythink.expressad.foundation.h.k.a(getContext(), "anythink_splash_popview_close", com.anythink.expressad.foundation.h.k.f20419c));
         }
     }
 
-    private void a(String str, final boolean z3) {
-        f.l().a(str, new c() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.1
+    private void a(String str, final boolean z6) {
+        k.m().a(str, new c() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.1
             @Override // com.anythink.expressad.foundation.g.d.c
             public final void a(String str2, String str3) {
             }
@@ -565,8 +564,8 @@ public class ATSplashPopView extends RelativeLayout {
                     if (bitmap.isRecycled()) {
                         return;
                     }
-                    Bitmap a9 = z3 ? q.a(bitmap) : q.a(bitmap, 16);
-                    ImageView imageView = ATSplashPopView.this.f20705j;
+                    Bitmap a9 = z6 ? q.a(bitmap) : q.a(bitmap, 16);
+                    ImageView imageView = ATSplashPopView.this.f21492j;
                     if (a9 != null) {
                         bitmap = a9;
                     }
@@ -585,50 +584,50 @@ public class ATSplashPopView extends RelativeLayout {
         layoutParams.topMargin = v.b(getContext(), 16.0f);
         imageView.setId(generateViewId());
         imageView.setLayoutParams(layoutParams);
-        imageView.setBackgroundResource(k.a(getContext(), "anythink_splash_popview_default", k.f19632c));
-        this.f20705j = new ImageView(getContext());
+        imageView.setBackgroundResource(com.anythink.expressad.foundation.h.k.a(getContext(), "anythink_splash_popview_default", com.anythink.expressad.foundation.h.k.f20419c));
+        this.f21492j = new ImageView(getContext());
         RelativeLayout.LayoutParams layoutParams2 = new RelativeLayout.LayoutParams(v.b(getContext(), 60.0f), v.b(getContext(), 60.0f));
         layoutParams2.addRule(6, imageView.getId());
         layoutParams2.topMargin = v.b(getContext(), 7.0f);
         layoutParams2.leftMargin = v.b(getContext(), 10.0f);
-        this.f20705j.setId(generateViewId());
-        this.f20705j.setLayoutParams(layoutParams2);
-        this.f20705j.setScaleType(ImageView.ScaleType.FIT_CENTER);
-        d dVar = this.f20704h;
+        this.f21492j.setId(generateViewId());
+        this.f21492j.setLayoutParams(layoutParams2);
+        this.f21492j.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        d dVar = this.f21491h;
         if (dVar != null && !TextUtils.isEmpty(dVar.bl())) {
-            a(this.f20704h.bl(), true);
+            a(this.f21491h.bl(), true);
         }
-        this.f20711p = new TextView(getContext());
+        this.f21498p = new TextView(getContext());
         RelativeLayout.LayoutParams layoutParams3 = new RelativeLayout.LayoutParams(-2, -2);
         layoutParams3.addRule(5, imageView.getId());
         layoutParams3.addRule(8, imageView.getId());
         layoutParams3.leftMargin = v.b(getContext(), 62.0f);
         layoutParams3.bottomMargin = v.b(getContext(), 70.0f);
-        this.f20711p.setId(generateViewId());
-        this.f20711p.setTextSize(10.0f);
-        this.f20711p.setTextColor(-1);
-        this.f20711p.setGravity(17);
-        this.f20711p.setMinWidth(v.b(getContext(), 16.0f));
-        this.f20711p.setMaxHeight(v.b(getContext(), 16.0f));
-        this.f20711p.setLayoutParams(layoutParams3);
-        this.f20711p.setBackgroundResource(k.a(getContext(), "anythink_cm_circle_50black", k.f19632c));
+        this.f21498p.setId(generateViewId());
+        this.f21498p.setTextSize(10.0f);
+        this.f21498p.setTextColor(-1);
+        this.f21498p.setGravity(17);
+        this.f21498p.setMinWidth(v.b(getContext(), 16.0f));
+        this.f21498p.setMaxHeight(v.b(getContext(), 16.0f));
+        this.f21498p.setLayoutParams(layoutParams3);
+        this.f21498p.setBackgroundResource(com.anythink.expressad.foundation.h.k.a(getContext(), "anythink_cm_circle_50black", com.anythink.expressad.foundation.h.k.f20419c));
         addView(imageView);
-        addView(this.f20711p);
-        addView(this.f20705j);
-        d dVar2 = this.f20704h;
+        addView(this.f21498p);
+        addView(this.f21492j);
+        d dVar2 = this.f21491h;
         if (dVar2 != null && dVar2.v() <= 0) {
             g();
         }
-        setOnClickListener(this.f20699a);
-        this.f20711p.setOnClickListener(this.f20700b);
+        setOnClickListener(this.f21486a);
+        this.f21498p.setOnClickListener(this.f21487b);
     }
 
     private void a() {
-        if (this.f20704h == null) {
+        if (this.f21491h == null) {
             return;
         }
         setLayoutParams(new RelativeLayout.LayoutParams(-1, -2));
-        int i = this.f20703g;
+        int i = this.f21490g;
         if (i == 1) {
             b();
             return;
@@ -647,22 +646,22 @@ public class ATSplashPopView extends RelativeLayout {
 
     public ATSplashPopView(Context context) {
         super(context);
-        this.f20703g = 1;
-        this.f20712q = -1;
-        this.f20713r = new Handler();
-        this.f20714s = false;
-        this.f20716u = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.4
+        this.f21490g = 1;
+        this.f21499q = -1;
+        this.f21500r = new Handler();
+        this.f21501s = false;
+        this.f21503u = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.4
             @Override // java.lang.Runnable
             public final void run() {
-                if (ATSplashPopView.this.f20711p != null) {
-                    if (ATSplashPopView.this.f20712q != 0) {
+                if (ATSplashPopView.this.f21498p != null) {
+                    if (ATSplashPopView.this.f21499q != 0) {
                         ATSplashPopView.j(ATSplashPopView.this);
-                        ATSplashPopView.this.f20711p.setText(String.valueOf(ATSplashPopView.this.f20712q));
-                        ATSplashPopView.this.f20713r.postDelayed(ATSplashPopView.this.f20716u, 1000L);
+                        ATSplashPopView.this.f21498p.setText(String.valueOf(ATSplashPopView.this.f21499q));
+                        ATSplashPopView.this.f21500r.postDelayed(ATSplashPopView.this.f21503u, 1000L);
                     } else {
                         ATSplashPopView.e(ATSplashPopView.this);
                         ATSplashPopView.this.g();
-                        ATSplashPopView.this.f20713r.removeCallbacks(ATSplashPopView.this.f20716u);
+                        ATSplashPopView.this.f21500r.removeCallbacks(ATSplashPopView.this.f21503u);
                         if (ATSplashPopView.this.i != null) {
                             ATSplashPopView.this.i.a(5);
                         }
@@ -670,35 +669,35 @@ public class ATSplashPopView extends RelativeLayout {
                 }
             }
         };
-        this.f20717v = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.5
+        this.f21504v = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.5
             @Override // java.lang.Runnable
             public final void run() {
                 if (ATSplashPopView.this.i != null) {
                     com.anythink.expressad.splash.d.d unused = ATSplashPopView.this.i;
                     ATSplashPopView.this.getWidth();
                     ATSplashPopView.this.getHeight();
-                    int unused2 = ATSplashPopView.this.f20703g;
+                    int unused2 = ATSplashPopView.this.f21490g;
                 }
             }
         };
-        this.f20699a = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.6
+        this.f21486a = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.6
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 if (ATSplashPopView.this.i != null) {
                     ATSplashPopView aTSplashPopView = ATSplashPopView.this;
-                    ATSplashPopView.a(aTSplashPopView, aTSplashPopView.f20704h);
+                    ATSplashPopView.a(aTSplashPopView, aTSplashPopView.f21491h);
                 }
             }
         };
-        this.f20700b = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.7
+        this.f21487b = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.7
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                if (ATSplashPopView.this.f20712q <= 0 && ATSplashPopView.this.i != null) {
+                if (ATSplashPopView.this.f21499q <= 0 && ATSplashPopView.this.i != null) {
                     ATSplashPopView.this.i.a(4);
                 }
             }
         };
-        this.f20703g = 1;
+        this.f21490g = 1;
     }
 
     private void a(d dVar) {
@@ -719,22 +718,22 @@ public class ATSplashPopView extends RelativeLayout {
 
     public ATSplashPopView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f20703g = 1;
-        this.f20712q = -1;
-        this.f20713r = new Handler();
-        this.f20714s = false;
-        this.f20716u = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.4
+        this.f21490g = 1;
+        this.f21499q = -1;
+        this.f21500r = new Handler();
+        this.f21501s = false;
+        this.f21503u = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.4
             @Override // java.lang.Runnable
             public final void run() {
-                if (ATSplashPopView.this.f20711p != null) {
-                    if (ATSplashPopView.this.f20712q != 0) {
+                if (ATSplashPopView.this.f21498p != null) {
+                    if (ATSplashPopView.this.f21499q != 0) {
                         ATSplashPopView.j(ATSplashPopView.this);
-                        ATSplashPopView.this.f20711p.setText(String.valueOf(ATSplashPopView.this.f20712q));
-                        ATSplashPopView.this.f20713r.postDelayed(ATSplashPopView.this.f20716u, 1000L);
+                        ATSplashPopView.this.f21498p.setText(String.valueOf(ATSplashPopView.this.f21499q));
+                        ATSplashPopView.this.f21500r.postDelayed(ATSplashPopView.this.f21503u, 1000L);
                     } else {
                         ATSplashPopView.e(ATSplashPopView.this);
                         ATSplashPopView.this.g();
-                        ATSplashPopView.this.f20713r.removeCallbacks(ATSplashPopView.this.f20716u);
+                        ATSplashPopView.this.f21500r.removeCallbacks(ATSplashPopView.this.f21503u);
                         if (ATSplashPopView.this.i != null) {
                             ATSplashPopView.this.i.a(5);
                         }
@@ -742,55 +741,55 @@ public class ATSplashPopView extends RelativeLayout {
                 }
             }
         };
-        this.f20717v = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.5
+        this.f21504v = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.5
             @Override // java.lang.Runnable
             public final void run() {
                 if (ATSplashPopView.this.i != null) {
                     com.anythink.expressad.splash.d.d unused = ATSplashPopView.this.i;
                     ATSplashPopView.this.getWidth();
                     ATSplashPopView.this.getHeight();
-                    int unused2 = ATSplashPopView.this.f20703g;
+                    int unused2 = ATSplashPopView.this.f21490g;
                 }
             }
         };
-        this.f20699a = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.6
+        this.f21486a = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.6
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 if (ATSplashPopView.this.i != null) {
                     ATSplashPopView aTSplashPopView = ATSplashPopView.this;
-                    ATSplashPopView.a(aTSplashPopView, aTSplashPopView.f20704h);
+                    ATSplashPopView.a(aTSplashPopView, aTSplashPopView.f21491h);
                 }
             }
         };
-        this.f20700b = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.7
+        this.f21487b = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.7
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                if (ATSplashPopView.this.f20712q <= 0 && ATSplashPopView.this.i != null) {
+                if (ATSplashPopView.this.f21499q <= 0 && ATSplashPopView.this.i != null) {
                     ATSplashPopView.this.i.a(4);
                 }
             }
         };
-        this.f20703g = 1;
+        this.f21490g = 1;
     }
 
     public ATSplashPopView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f20703g = 1;
-        this.f20712q = -1;
-        this.f20713r = new Handler();
-        this.f20714s = false;
-        this.f20716u = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.4
+        this.f21490g = 1;
+        this.f21499q = -1;
+        this.f21500r = new Handler();
+        this.f21501s = false;
+        this.f21503u = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.4
             @Override // java.lang.Runnable
             public final void run() {
-                if (ATSplashPopView.this.f20711p != null) {
-                    if (ATSplashPopView.this.f20712q != 0) {
+                if (ATSplashPopView.this.f21498p != null) {
+                    if (ATSplashPopView.this.f21499q != 0) {
                         ATSplashPopView.j(ATSplashPopView.this);
-                        ATSplashPopView.this.f20711p.setText(String.valueOf(ATSplashPopView.this.f20712q));
-                        ATSplashPopView.this.f20713r.postDelayed(ATSplashPopView.this.f20716u, 1000L);
+                        ATSplashPopView.this.f21498p.setText(String.valueOf(ATSplashPopView.this.f21499q));
+                        ATSplashPopView.this.f21500r.postDelayed(ATSplashPopView.this.f21503u, 1000L);
                     } else {
                         ATSplashPopView.e(ATSplashPopView.this);
                         ATSplashPopView.this.g();
-                        ATSplashPopView.this.f20713r.removeCallbacks(ATSplashPopView.this.f20716u);
+                        ATSplashPopView.this.f21500r.removeCallbacks(ATSplashPopView.this.f21503u);
                         if (ATSplashPopView.this.i != null) {
                             ATSplashPopView.this.i.a(5);
                         }
@@ -798,35 +797,35 @@ public class ATSplashPopView extends RelativeLayout {
                 }
             }
         };
-        this.f20717v = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.5
+        this.f21504v = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.5
             @Override // java.lang.Runnable
             public final void run() {
                 if (ATSplashPopView.this.i != null) {
                     com.anythink.expressad.splash.d.d unused = ATSplashPopView.this.i;
                     ATSplashPopView.this.getWidth();
                     ATSplashPopView.this.getHeight();
-                    int unused2 = ATSplashPopView.this.f20703g;
+                    int unused2 = ATSplashPopView.this.f21490g;
                 }
             }
         };
-        this.f20699a = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.6
+        this.f21486a = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.6
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 if (ATSplashPopView.this.i != null) {
                     ATSplashPopView aTSplashPopView = ATSplashPopView.this;
-                    ATSplashPopView.a(aTSplashPopView, aTSplashPopView.f20704h);
+                    ATSplashPopView.a(aTSplashPopView, aTSplashPopView.f21491h);
                 }
             }
         };
-        this.f20700b = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.7
+        this.f21487b = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.7
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                if (ATSplashPopView.this.f20712q <= 0 && ATSplashPopView.this.i != null) {
+                if (ATSplashPopView.this.f21499q <= 0 && ATSplashPopView.this.i != null) {
                     ATSplashPopView.this.i.a(4);
                 }
             }
         };
-        this.f20703g = 1;
+        this.f21490g = 1;
     }
 
     private void b(d dVar) {
@@ -837,24 +836,24 @@ public class ATSplashPopView extends RelativeLayout {
         }
     }
 
-    public ATSplashPopView(Context context, AttributeSet attributeSet, int i, int i6) {
-        super(context, attributeSet, i, i6);
-        this.f20703g = 1;
-        this.f20712q = -1;
-        this.f20713r = new Handler();
-        this.f20714s = false;
-        this.f20716u = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.4
+    public ATSplashPopView(Context context, AttributeSet attributeSet, int i, int i4) {
+        super(context, attributeSet, i, i4);
+        this.f21490g = 1;
+        this.f21499q = -1;
+        this.f21500r = new Handler();
+        this.f21501s = false;
+        this.f21503u = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.4
             @Override // java.lang.Runnable
             public final void run() {
-                if (ATSplashPopView.this.f20711p != null) {
-                    if (ATSplashPopView.this.f20712q != 0) {
+                if (ATSplashPopView.this.f21498p != null) {
+                    if (ATSplashPopView.this.f21499q != 0) {
                         ATSplashPopView.j(ATSplashPopView.this);
-                        ATSplashPopView.this.f20711p.setText(String.valueOf(ATSplashPopView.this.f20712q));
-                        ATSplashPopView.this.f20713r.postDelayed(ATSplashPopView.this.f20716u, 1000L);
+                        ATSplashPopView.this.f21498p.setText(String.valueOf(ATSplashPopView.this.f21499q));
+                        ATSplashPopView.this.f21500r.postDelayed(ATSplashPopView.this.f21503u, 1000L);
                     } else {
                         ATSplashPopView.e(ATSplashPopView.this);
                         ATSplashPopView.this.g();
-                        ATSplashPopView.this.f20713r.removeCallbacks(ATSplashPopView.this.f20716u);
+                        ATSplashPopView.this.f21500r.removeCallbacks(ATSplashPopView.this.f21503u);
                         if (ATSplashPopView.this.i != null) {
                             ATSplashPopView.this.i.a(5);
                         }
@@ -862,34 +861,34 @@ public class ATSplashPopView extends RelativeLayout {
                 }
             }
         };
-        this.f20717v = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.5
+        this.f21504v = new Runnable() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.5
             @Override // java.lang.Runnable
             public final void run() {
                 if (ATSplashPopView.this.i != null) {
                     com.anythink.expressad.splash.d.d unused = ATSplashPopView.this.i;
                     ATSplashPopView.this.getWidth();
                     ATSplashPopView.this.getHeight();
-                    int unused2 = ATSplashPopView.this.f20703g;
+                    int unused2 = ATSplashPopView.this.f21490g;
                 }
             }
         };
-        this.f20699a = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.6
+        this.f21486a = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.6
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 if (ATSplashPopView.this.i != null) {
                     ATSplashPopView aTSplashPopView = ATSplashPopView.this;
-                    ATSplashPopView.a(aTSplashPopView, aTSplashPopView.f20704h);
+                    ATSplashPopView.a(aTSplashPopView, aTSplashPopView.f21491h);
                 }
             }
         };
-        this.f20700b = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.7
+        this.f21487b = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashPopView.7
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                if (ATSplashPopView.this.f20712q <= 0 && ATSplashPopView.this.i != null) {
+                if (ATSplashPopView.this.f21499q <= 0 && ATSplashPopView.this.i != null) {
                     ATSplashPopView.this.i.a(4);
                 }
             }
         };
-        this.f20703g = 1;
+        this.f21490g = 1;
     }
 }

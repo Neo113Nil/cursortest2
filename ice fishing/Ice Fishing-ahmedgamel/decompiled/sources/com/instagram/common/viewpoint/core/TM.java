@@ -19,10 +19,10 @@ public final class TM {
     public final String A02;
     public final Set<String> A03;
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 61);
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 61);
         }
         return new String(copyOfRange);
     }
@@ -159,6 +159,6 @@ public final class TM {
     }
 
     public final int hashCode() {
-        return (this.A03.hashCode() * a.f21732V) + ((this.A00 == null ? -1 : this.A00.intValue()) * 137) + ((this.A01 != null ? this.A01.intValue() : -1) * 139);
+        return (this.A03.hashCode() * a.f22519V) + ((this.A00 == null ? -1 : this.A00.intValue()) * 137) + ((this.A01 != null ? this.A01.intValue() : -1) * 139);
     }
 }

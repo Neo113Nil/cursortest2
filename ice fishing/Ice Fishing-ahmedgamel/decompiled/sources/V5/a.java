@@ -16,11 +16,11 @@ public final class a extends H4.g {
     }
 
     private final void setAppId(String str) {
-        com.onesignal.common.modeling.i.setStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f22407u, str, null, false, 12, null);
+        com.onesignal.common.modeling.i.setStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f23194u, str, null, false, 12, null);
     }
 
-    private final void setEnabled(boolean z3) {
-        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "enabled", z3, null, false, 12, null);
+    private final void setEnabled(boolean z6) {
+        com.onesignal.common.modeling.i.setBooleanProperty$default(this, "enabled", z6, null, false, 12, null);
     }
 
     private final void setOnesignalId(String str) {
@@ -44,7 +44,7 @@ public final class a extends H4.g {
     }
 
     public final String getAppId() {
-        return com.onesignal.common.modeling.i.getStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f22407u, null, 2, null);
+        return com.onesignal.common.modeling.i.getStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f23194u, null, 2, null);
     }
 
     @Override // H4.g
@@ -116,7 +116,7 @@ public final class a extends H4.g {
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    public a(String appId, String onesignalId, String str, String subscriptionId, Z5.g type, boolean z3, String address, Z5.f status) {
+    public a(String appId, String onesignalId, String str, String subscriptionId, Z5.g type, boolean z6, String address, Z5.f status) {
         this();
         kotlin.jvm.internal.h.e(appId, "appId");
         kotlin.jvm.internal.h.e(onesignalId, "onesignalId");
@@ -129,7 +129,7 @@ public final class a extends H4.g {
         setExternalId$com_onesignal_core(str);
         setSubscriptionId(subscriptionId);
         setType(type);
-        setEnabled(z3);
+        setEnabled(z6);
         setAddress(address);
         setStatus(status);
     }

@@ -26,38 +26,38 @@ import com.anythink.expressad.foundation.h.k;
 public class PicVerifyG2CV2View extends BaseG2CV2View {
 
     /* renamed from: d, reason: collision with root package name */
-    PictureVerifyView f10962d;
+    PictureVerifyView f11748d;
 
     /* renamed from: e, reason: collision with root package name */
-    TextSeekbar f10963e;
+    TextSeekbar f11749e;
 
     /* renamed from: f, reason: collision with root package name */
-    String f10964f;
+    String f11750f;
 
     /* renamed from: g, reason: collision with root package name */
-    ValueAnimator f10965g;
+    ValueAnimator f11751g;
 
     /* renamed from: h, reason: collision with root package name */
-    ValueAnimator f10966h;
+    ValueAnimator f11752h;
     int i;
 
     /* renamed from: j, reason: collision with root package name */
-    private boolean f10967j;
+    private boolean f11753j;
 
     /* renamed from: k, reason: collision with root package name */
-    private boolean f10968k;
+    private boolean f11754k;
 
     /* renamed from: l, reason: collision with root package name */
-    private final int f10969l;
+    private final int f11755l;
 
     /* renamed from: m, reason: collision with root package name */
-    private final int f10970m;
+    private final int f11756m;
 
     /* renamed from: n, reason: collision with root package name */
-    private final int f10971n;
+    private final int f11757n;
 
     /* renamed from: o, reason: collision with root package name */
-    private final int f10972o;
+    private final int f11758o;
 
     /* renamed from: com.anythink.basead.ui.guidetoclickv2.PicVerifyG2CV2View$4, reason: invalid class name */
     public class AnonymousClass4 implements ValueAnimator.AnimatorUpdateListener {
@@ -66,7 +66,7 @@ public class PicVerifyG2CV2View extends BaseG2CV2View {
 
         @Override // android.animation.ValueAnimator.AnimatorUpdateListener
         public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-            PicVerifyG2CV2View.this.f10963e.setProgress(((Integer) valueAnimator.getAnimatedValue()).intValue());
+            PicVerifyG2CV2View.this.f11749e.setProgress(((Integer) valueAnimator.getAnimatedValue()).intValue());
         }
     }
 
@@ -81,41 +81,41 @@ public class PicVerifyG2CV2View extends BaseG2CV2View {
             PicVerifyG2CV2View picVerifyG2CV2View = PicVerifyG2CV2View.this;
             if (picVerifyG2CV2View.i != intValue) {
                 picVerifyG2CV2View.i = intValue;
-                picVerifyG2CV2View.f10963e.setProgress(intValue);
+                picVerifyG2CV2View.f11749e.setProgress(intValue);
             }
         }
     }
 
     public PicVerifyG2CV2View(Context context) {
         super(context);
-        this.f10969l = 30;
-        this.f10970m = 15;
-        this.f10971n = 500;
-        this.f10972o = 300;
+        this.f11755l = 30;
+        this.f11756m = 15;
+        this.f11757n = 500;
+        this.f11758o = 300;
         this.i = -1;
     }
 
     private void d() {
-        this.f10963e.setProgress(0);
+        this.f11749e.setProgress(0);
     }
 
     private void e() {
-        if (this.f10965g == null) {
+        if (this.f11751g == null) {
             ValueAnimator ofInt = ValueAnimator.ofInt(0, 15);
-            this.f10965g = ofInt;
+            this.f11751g = ofInt;
             ofInt.addUpdateListener(new AnonymousClass4());
-            this.f10965g.setRepeatMode(2);
-            this.f10965g.setRepeatCount(-1);
-            this.f10965g.setDuration(500L);
+            this.f11751g.setRepeatMode(2);
+            this.f11751g.setRepeatCount(-1);
+            this.f11751g.setDuration(500L);
         }
-        if (this.f10965g.isStarted() || this.f10966h != null) {
+        if (this.f11751g.isStarted() || this.f11752h != null) {
             return;
         }
-        this.f10965g.start();
+        this.f11751g.start();
     }
 
     private void f() {
-        ValueAnimator valueAnimator = this.f10965g;
+        ValueAnimator valueAnimator = this.f11751g;
         if (valueAnimator != null) {
             valueAnimator.cancel();
         }
@@ -123,11 +123,11 @@ public class PicVerifyG2CV2View extends BaseG2CV2View {
 
     @Override // com.anythink.basead.ui.guidetoclickv2.BaseG2CV2View
     public boolean canStartNextAnim() {
-        return this.f10966h == null;
+        return this.f11752h == null;
     }
 
     public void loadImage(String str) {
-        this.f10964f = str;
+        this.f11750f = str;
     }
 
     @Override // android.view.ViewGroup, android.view.View
@@ -139,34 +139,34 @@ public class PicVerifyG2CV2View extends BaseG2CV2View {
     @Override // com.anythink.basead.ui.guidetoclickv2.BaseG2CV2View
     public void release() {
         super.release();
-        ValueAnimator valueAnimator = this.f10965g;
+        ValueAnimator valueAnimator = this.f11751g;
         if (valueAnimator != null) {
             valueAnimator.cancel();
         }
-        ValueAnimator valueAnimator2 = this.f10966h;
+        ValueAnimator valueAnimator2 = this.f11752h;
         if (valueAnimator2 != null) {
             valueAnimator2.cancel();
         }
     }
 
     public static /* synthetic */ void d(PicVerifyG2CV2View picVerifyG2CV2View) {
-        ValueAnimator valueAnimator = picVerifyG2CV2View.f10965g;
+        ValueAnimator valueAnimator = picVerifyG2CV2View.f11751g;
         if (valueAnimator != null) {
             valueAnimator.cancel();
         }
     }
 
     @Override // com.anythink.basead.ui.guidetoclickv2.BaseG2CV2View
-    public final void a(int i, int i6) {
+    public final void a(int i, int i4) {
         LayoutInflater.from(getContext()).inflate(q.a(getContext(), "myoffer_g2c_v2_pic_vertify", "layout"), this);
-        this.f10962d = (PictureVerifyView) findViewById(q.a(getContext(), "myoffer_g2c_picvertify", "id"));
-        this.f10963e = (TextSeekbar) findViewById(q.a(getContext(), "myoffer_g2c_picvertify_seekbar", "id"));
+        this.f11748d = (PictureVerifyView) findViewById(q.a(getContext(), "myoffer_g2c_picvertify", "id"));
+        this.f11749e = (TextSeekbar) findViewById(q.a(getContext(), "myoffer_g2c_picvertify_seekbar", "id"));
         final int a9 = q.a(getContext(), 48.0f);
-        this.f10962d.setBlockSize(a9);
-        this.f10962d.callback(new PictureVerifyView.a() { // from class: com.anythink.basead.ui.guidetoclickv2.PicVerifyG2CV2View.1
+        this.f11748d.setBlockSize(a9);
+        this.f11748d.callback(new PictureVerifyView.a() { // from class: com.anythink.basead.ui.guidetoclickv2.PicVerifyG2CV2View.1
             @Override // com.anythink.basead.ui.guidetoclickv2.picverify.PictureVerifyView.a
             public final void a() {
-                c.a aVar = PicVerifyG2CV2View.this.f10834c;
+                c.a aVar = PicVerifyG2CV2View.this.f11620c;
                 if (aVar != null) {
                     aVar.a(11, 16);
                 }
@@ -176,20 +176,20 @@ public class PicVerifyG2CV2View extends BaseG2CV2View {
             public final void b() {
             }
         });
-        if (!TextUtils.isEmpty(this.f10964f)) {
-            com.anythink.core.common.res.b.a(getContext()).a(new e(1, this.f10964f), new b.a() { // from class: com.anythink.basead.ui.guidetoclickv2.PicVerifyG2CV2View.2
+        if (!TextUtils.isEmpty(this.f11750f)) {
+            com.anythink.core.common.res.b.a(getContext()).a(new e(1, this.f11750f), new b.a() { // from class: com.anythink.basead.ui.guidetoclickv2.PicVerifyG2CV2View.2
                 @Override // com.anythink.core.common.res.b.a
                 public final void onFail(String str, String str2) {
                 }
 
                 @Override // com.anythink.core.common.res.b.a
                 public final void onSuccess(String str, Bitmap bitmap) {
-                    if (TextUtils.equals(str, PicVerifyG2CV2View.this.f10964f)) {
+                    if (TextUtils.equals(str, PicVerifyG2CV2View.this.f11750f)) {
                         DisplayMetrics displayMetrics = PicVerifyG2CV2View.this.getContext().getResources().getDisplayMetrics();
                         int[] a10 = am.a(displayMetrics.widthPixels, displayMetrics.heightPixels, bitmap.getWidth() / bitmap.getHeight());
-                        int i9 = a9 * 2;
-                        if (bitmap.getWidth() < i9 || bitmap.getHeight() < i9) {
-                            BaseG2CV2View.b bVar = PicVerifyG2CV2View.this.f10832a;
+                        int i6 = a9 * 2;
+                        if (bitmap.getWidth() < i6 || bitmap.getHeight() < i6) {
+                            BaseG2CV2View.b bVar = PicVerifyG2CV2View.this.f11618a;
                             if (bVar != null) {
                                 bVar.a();
                                 return;
@@ -198,25 +198,25 @@ public class PicVerifyG2CV2View extends BaseG2CV2View {
                         }
                         int a11 = q.a(PicVerifyG2CV2View.this.getContext(), 180.0f);
                         if (a10[0] < a11 || a10[1] < a11) {
-                            BaseG2CV2View.b bVar2 = PicVerifyG2CV2View.this.f10832a;
+                            BaseG2CV2View.b bVar2 = PicVerifyG2CV2View.this.f11618a;
                             if (bVar2 != null) {
                                 bVar2.a();
                                 return;
                             }
                             return;
                         }
-                        ViewGroup.LayoutParams layoutParams = PicVerifyG2CV2View.this.f10962d.getLayoutParams();
+                        ViewGroup.LayoutParams layoutParams = PicVerifyG2CV2View.this.f11748d.getLayoutParams();
                         if (layoutParams != null) {
                             layoutParams.width = a10[0];
                             layoutParams.height = a10[1];
-                            PicVerifyG2CV2View.this.f10962d.setLayoutParams(layoutParams);
+                            PicVerifyG2CV2View.this.f11748d.setLayoutParams(layoutParams);
                         }
-                        PicVerifyG2CV2View.this.f10962d.setImageBitmap(bitmap);
+                        PicVerifyG2CV2View.this.f11748d.setImageBitmap(bitmap);
                         PicVerifyG2CV2View.this.post(new Runnable() { // from class: com.anythink.basead.ui.guidetoclickv2.PicVerifyG2CV2View.2.1
                             @Override // java.lang.Runnable
                             public final void run() {
-                                ((RelativeLayout.LayoutParams) PicVerifyG2CV2View.this.f10963e.getLayoutParams()).setMargins(0, (a9 / 2) + (PicVerifyG2CV2View.this.getMeasuredHeight() / 2), 0, 0);
-                                PicVerifyG2CV2View.this.f10963e.setVisibility(0);
+                                ((RelativeLayout.LayoutParams) PicVerifyG2CV2View.this.f11749e.getLayoutParams()).setMargins(0, (a9 / 2) + (PicVerifyG2CV2View.this.getMeasuredHeight() / 2), 0, 0);
+                                PicVerifyG2CV2View.this.f11749e.setVisibility(0);
                                 PicVerifyG2CV2View.a(PicVerifyG2CV2View.this);
                             }
                         });
@@ -224,50 +224,50 @@ public class PicVerifyG2CV2View extends BaseG2CV2View {
                 }
             });
         }
-        this.f10963e.setProgressDrawable(getResources().getDrawable(q.a(getContext(), "myoffer_g2c_seek_bar_bg", k.f19632c)));
-        TextSeekbar textSeekbar = this.f10963e;
+        this.f11749e.setProgressDrawable(getResources().getDrawable(q.a(getContext(), "myoffer_g2c_seek_bar_bg", k.f20419c)));
+        TextSeekbar textSeekbar = this.f11749e;
         Context context = getContext();
-        int a10 = q.a(getContext(), "myoffer_seek_bar_icon", k.f19632c);
+        int a10 = q.a(getContext(), "myoffer_seek_bar_icon", k.f20419c);
         textSeekbar.setThumb(new BitmapDrawable(getResources(), Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), a10), q.a(getContext(), 60.0f), q.a(getContext(), 24.0f), false)));
-        this.f10963e.setThumbOffset(0);
-        this.f10963e.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() { // from class: com.anythink.basead.ui.guidetoclickv2.PicVerifyG2CV2View.3
+        this.f11749e.setThumbOffset(0);
+        this.f11749e.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() { // from class: com.anythink.basead.ui.guidetoclickv2.PicVerifyG2CV2View.3
             @Override // android.widget.SeekBar.OnSeekBarChangeListener
-            public final void onProgressChanged(SeekBar seekBar, int i9, boolean z3) {
-                if (!z3) {
-                    PicVerifyG2CV2View.this.f10962d.move(i9);
-                    if (i9 == 100) {
-                        PicVerifyG2CV2View.this.f10962d.loose();
+            public final void onProgressChanged(SeekBar seekBar, int i6, boolean z6) {
+                if (!z6) {
+                    PicVerifyG2CV2View.this.f11748d.move(i6);
+                    if (i6 == 100) {
+                        PicVerifyG2CV2View.this.f11748d.loose();
                         return;
                     }
                     return;
                 }
-                if (PicVerifyG2CV2View.this.f10968k) {
-                    PicVerifyG2CV2View.this.f10968k = false;
-                    if (i9 > 30) {
-                        PicVerifyG2CV2View.this.f10967j = false;
+                if (PicVerifyG2CV2View.this.f11754k) {
+                    PicVerifyG2CV2View.this.f11754k = false;
+                    if (i6 > 30) {
+                        PicVerifyG2CV2View.this.f11753j = false;
                     } else {
-                        PicVerifyG2CV2View.this.f10967j = true;
+                        PicVerifyG2CV2View.this.f11753j = true;
                     }
                 }
-                if (!PicVerifyG2CV2View.this.f10967j) {
+                if (!PicVerifyG2CV2View.this.f11753j) {
                     seekBar.setProgress(0);
-                } else if (i9 > 30) {
-                    PicVerifyG2CV2View.a(PicVerifyG2CV2View.this, i9);
+                } else if (i6 > 30) {
+                    PicVerifyG2CV2View.a(PicVerifyG2CV2View.this, i6);
                 } else {
-                    PicVerifyG2CV2View.this.f10962d.move(i9);
+                    PicVerifyG2CV2View.this.f11748d.move(i6);
                 }
             }
 
             @Override // android.widget.SeekBar.OnSeekBarChangeListener
             public final void onStartTrackingTouch(SeekBar seekBar) {
-                PicVerifyG2CV2View.this.f10968k = true;
+                PicVerifyG2CV2View.this.f11754k = true;
                 PicVerifyG2CV2View.d(PicVerifyG2CV2View.this);
             }
 
             @Override // android.widget.SeekBar.OnSeekBarChangeListener
             public final void onStopTrackingTouch(SeekBar seekBar) {
-                if (PicVerifyG2CV2View.this.f10967j) {
-                    PicVerifyG2CV2View.this.f10962d.loose();
+                if (PicVerifyG2CV2View.this.f11753j) {
+                    PicVerifyG2CV2View.this.f11748d.loose();
                 }
                 PicVerifyG2CV2View.a(PicVerifyG2CV2View.this);
             }
@@ -275,47 +275,47 @@ public class PicVerifyG2CV2View extends BaseG2CV2View {
     }
 
     private void a(int i) {
-        this.f10963e.setClickable(false);
-        this.f10963e.setEnabled(false);
-        this.f10963e.getProgressDrawable().setAlpha(p.f8473b);
-        if (this.f10966h == null) {
+        this.f11749e.setClickable(false);
+        this.f11749e.setEnabled(false);
+        this.f11749e.getProgressDrawable().setAlpha(p.f9259b);
+        if (this.f11752h == null) {
             ValueAnimator ofInt = ValueAnimator.ofInt(i, 100);
-            this.f10966h = ofInt;
+            this.f11752h = ofInt;
             ofInt.addUpdateListener(new AnonymousClass5());
-            this.f10966h.setDuration(300L);
-            this.f10966h.start();
+            this.f11752h.setDuration(300L);
+            this.f11752h.start();
         }
     }
 
-    private BitmapDrawable a(Context context, int i, int i6, int i9) {
-        return new BitmapDrawable(getResources(), Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), i), i6, i9, false));
+    private BitmapDrawable a(Context context, int i, int i4, int i6) {
+        return new BitmapDrawable(getResources(), Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), i), i4, i6, false));
     }
 
     public static /* synthetic */ void a(PicVerifyG2CV2View picVerifyG2CV2View) {
-        if (picVerifyG2CV2View.f10965g == null) {
+        if (picVerifyG2CV2View.f11751g == null) {
             ValueAnimator ofInt = ValueAnimator.ofInt(0, 15);
-            picVerifyG2CV2View.f10965g = ofInt;
+            picVerifyG2CV2View.f11751g = ofInt;
             ofInt.addUpdateListener(picVerifyG2CV2View.new AnonymousClass4());
-            picVerifyG2CV2View.f10965g.setRepeatMode(2);
-            picVerifyG2CV2View.f10965g.setRepeatCount(-1);
-            picVerifyG2CV2View.f10965g.setDuration(500L);
+            picVerifyG2CV2View.f11751g.setRepeatMode(2);
+            picVerifyG2CV2View.f11751g.setRepeatCount(-1);
+            picVerifyG2CV2View.f11751g.setDuration(500L);
         }
-        if (picVerifyG2CV2View.f10965g.isStarted() || picVerifyG2CV2View.f10966h != null) {
+        if (picVerifyG2CV2View.f11751g.isStarted() || picVerifyG2CV2View.f11752h != null) {
             return;
         }
-        picVerifyG2CV2View.f10965g.start();
+        picVerifyG2CV2View.f11751g.start();
     }
 
     public static /* synthetic */ void a(PicVerifyG2CV2View picVerifyG2CV2View, int i) {
-        picVerifyG2CV2View.f10963e.setClickable(false);
-        picVerifyG2CV2View.f10963e.setEnabled(false);
-        picVerifyG2CV2View.f10963e.getProgressDrawable().setAlpha(p.f8473b);
-        if (picVerifyG2CV2View.f10966h == null) {
+        picVerifyG2CV2View.f11749e.setClickable(false);
+        picVerifyG2CV2View.f11749e.setEnabled(false);
+        picVerifyG2CV2View.f11749e.getProgressDrawable().setAlpha(p.f9259b);
+        if (picVerifyG2CV2View.f11752h == null) {
             ValueAnimator ofInt = ValueAnimator.ofInt(i, 100);
-            picVerifyG2CV2View.f10966h = ofInt;
+            picVerifyG2CV2View.f11752h = ofInt;
             ofInt.addUpdateListener(picVerifyG2CV2View.new AnonymousClass5());
-            picVerifyG2CV2View.f10966h.setDuration(300L);
-            picVerifyG2CV2View.f10966h.start();
+            picVerifyG2CV2View.f11752h.setDuration(300L);
+            picVerifyG2CV2View.f11752h.start();
         }
     }
 }

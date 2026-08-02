@@ -14,36 +14,36 @@ import com.anythink.basead.exoplayer.k.af;
 public final class PlatformScheduler implements c {
 
     /* renamed from: b, reason: collision with root package name */
-    private static final String f8721b = "PlatformScheduler";
+    private static final String f9507b = "PlatformScheduler";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final String f8722c = "service_action";
+    private static final String f9508c = "service_action";
 
     /* renamed from: d, reason: collision with root package name */
-    private static final String f8723d = "service_package";
+    private static final String f9509d = "service_package";
 
     /* renamed from: e, reason: collision with root package name */
-    private static final String f8724e = "requirements";
+    private static final String f9510e = "requirements";
 
     /* renamed from: f, reason: collision with root package name */
-    private final int f8725f;
+    private final int f9511f;
 
     /* renamed from: g, reason: collision with root package name */
-    private final ComponentName f8726g;
+    private final ComponentName f9512g;
 
     /* renamed from: h, reason: collision with root package name */
-    private final JobScheduler f8727h;
+    private final JobScheduler f9513h;
 
     public static final class PlatformSchedulerService extends JobService {
         @Override // android.app.job.JobService
         public final boolean onStartJob(JobParameters jobParameters) {
             PersistableBundle extras = jobParameters.getExtras();
-            if (!new a(extras.getInt(PlatformScheduler.f8724e)).a(this)) {
+            if (!new a(extras.getInt(PlatformScheduler.f9510e)).a(this)) {
                 jobFinished(jobParameters, true);
                 return false;
             }
-            String string = extras.getString(PlatformScheduler.f8722c);
-            af.a((Context) this, new Intent(string).setPackage(extras.getString(PlatformScheduler.f8723d)));
+            String string = extras.getString(PlatformScheduler.f9508c);
+            af.a((Context) this, new Intent(string).setPackage(extras.getString(PlatformScheduler.f9509d)));
             return false;
         }
 
@@ -54,9 +54,9 @@ public final class PlatformScheduler implements c {
     }
 
     private PlatformScheduler(Context context, int i) {
-        this.f8725f = i;
-        this.f8726g = new ComponentName(context, (Class<?>) PlatformSchedulerService.class);
-        this.f8727h = (JobScheduler) context.getSystemService("jobscheduler");
+        this.f9511f = i;
+        this.f9512g = new ComponentName(context, (Class<?>) PlatformSchedulerService.class);
+        this.f9513h = (JobScheduler) context.getSystemService("jobscheduler");
     }
 
     private static void b() {
@@ -68,7 +68,7 @@ public final class PlatformScheduler implements c {
     @Override // com.anythink.basead.exoplayer.scheduler.c
     public final boolean a(a aVar, String str, String str2) {
         int i;
-        JobInfo.Builder builder = new JobInfo.Builder(this.f8725f, this.f8726g);
+        JobInfo.Builder builder = new JobInfo.Builder(this.f9511f, this.f9512g);
         int a9 = aVar.a();
         if (a9 == 0) {
             i = 0;
@@ -81,10 +81,10 @@ public final class PlatformScheduler implements c {
                     if (a9 != 4) {
                         throw new UnsupportedOperationException();
                     }
-                    if (af.f8346a < 26) {
+                    if (af.f9132a < 26) {
                         throw new UnsupportedOperationException();
                     }
-                } else if (af.f8346a < 24) {
+                } else if (af.f9132a < 24) {
                     throw new UnsupportedOperationException();
                 }
             }
@@ -96,53 +96,53 @@ public final class PlatformScheduler implements c {
         builder.setRequiresCharging(aVar.b());
         builder.setPersisted(true);
         PersistableBundle persistableBundle = new PersistableBundle();
-        persistableBundle.putString(f8722c, str2);
-        persistableBundle.putString(f8723d, str);
-        persistableBundle.putInt(f8724e, aVar.d());
+        persistableBundle.putString(f9508c, str2);
+        persistableBundle.putString(f9509d, str);
+        persistableBundle.putInt(f9510e, aVar.d());
         builder.setExtras(persistableBundle);
-        return this.f8727h.schedule(builder.build()) == 1;
+        return this.f9513h.schedule(builder.build()) == 1;
     }
 
     @Override // com.anythink.basead.exoplayer.scheduler.c
     public final boolean a() {
-        this.f8727h.cancel(this.f8725f);
+        this.f9513h.cancel(this.f9511f);
         return true;
     }
 
     private static JobInfo a(int i, ComponentName componentName, a aVar, String str, String str2) {
-        int i6;
+        int i4;
         JobInfo.Builder builder = new JobInfo.Builder(i, componentName);
         int a9 = aVar.a();
         if (a9 == 0) {
-            i6 = 0;
+            i4 = 0;
         } else if (a9 != 1) {
-            i6 = 2;
+            i4 = 2;
             if (a9 != 2) {
-                i6 = 3;
+                i4 = 3;
                 if (a9 != 3) {
-                    i6 = 4;
+                    i4 = 4;
                     if (a9 == 4) {
-                        if (af.f8346a < 26) {
+                        if (af.f9132a < 26) {
                             throw new UnsupportedOperationException();
                         }
                     } else {
                         throw new UnsupportedOperationException();
                     }
-                } else if (af.f8346a < 24) {
+                } else if (af.f9132a < 24) {
                     throw new UnsupportedOperationException();
                 }
             }
         } else {
-            i6 = 1;
+            i4 = 1;
         }
-        builder.setRequiredNetworkType(i6);
+        builder.setRequiredNetworkType(i4);
         builder.setRequiresDeviceIdle(aVar.c());
         builder.setRequiresCharging(aVar.b());
         builder.setPersisted(true);
         PersistableBundle persistableBundle = new PersistableBundle();
-        persistableBundle.putString(f8722c, str);
-        persistableBundle.putString(f8723d, str2);
-        persistableBundle.putInt(f8724e, aVar.d());
+        persistableBundle.putString(f9508c, str);
+        persistableBundle.putString(f9509d, str2);
+        persistableBundle.putInt(f9510e, aVar.d());
         builder.setExtras(persistableBundle);
         return builder.build();
     }

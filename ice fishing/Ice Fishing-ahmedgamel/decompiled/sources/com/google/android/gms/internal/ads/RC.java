@@ -6,22 +6,22 @@ import java.io.Serializable;
 public final class RC implements Serializable {
 
     /* renamed from: v, reason: collision with root package name */
-    public static final RC f27178v = new RC(new int[0], 0);
+    public static final RC f27934v = new RC(new int[0], 0);
 
     /* renamed from: n, reason: collision with root package name */
-    public final int[] f27179n;
+    public final int[] f27935n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final int f27180u;
+    public final int f27936u;
 
     public RC(int[] iArr, int i) {
-        this.f27179n = iArr;
-        this.f27180u = i;
+        this.f27935n = iArr;
+        this.f27936u = i;
     }
 
     public final int a(int i) {
-        AbstractC2772Sd.K(i, this.f27180u);
-        return this.f27179n[i];
+        AbstractC2792Sd.K(i, this.f27936u);
+        return this.f27935n[i];
     }
 
     public final boolean equals(Object obj) {
@@ -32,13 +32,13 @@ public final class RC implements Serializable {
             return false;
         }
         RC rc = (RC) obj;
-        int i = rc.f27180u;
-        int i6 = this.f27180u;
-        if (i6 != i) {
+        int i = rc.f27936u;
+        int i4 = this.f27936u;
+        if (i4 != i) {
             return false;
         }
-        for (int i9 = 0; i9 < i6; i9++) {
-            if (a(i9) != rc.a(i9)) {
+        for (int i6 = 0; i6 < i4; i6++) {
+            if (a(i6) != rc.a(i6)) {
                 return false;
             }
         }
@@ -47,24 +47,24 @@ public final class RC implements Serializable {
 
     public final int hashCode() {
         int i = 1;
-        for (int i6 = 0; i6 < this.f27180u; i6++) {
-            i = (i * 31) + Integer.hashCode(this.f27179n[i6]);
+        for (int i4 = 0; i4 < this.f27936u; i4++) {
+            i = (i * 31) + Integer.hashCode(this.f27935n[i4]);
         }
         return i;
     }
 
     public final String toString() {
-        int i = this.f27180u;
+        int i = this.f27936u;
         if (i == 0) {
             return "[]";
         }
         StringBuilder sb = new StringBuilder(i * 5);
         sb.append('[');
-        int[] iArr = this.f27179n;
+        int[] iArr = this.f27935n;
         sb.append(iArr[0]);
-        for (int i6 = 1; i6 < i; i6++) {
+        for (int i4 = 1; i4 < i; i4++) {
             sb.append(", ");
-            sb.append(iArr[i6]);
+            sb.append(iArr[i4]);
         }
         sb.append(']');
         return sb.toString();

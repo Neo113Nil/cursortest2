@@ -55,11 +55,11 @@ public abstract class b {
         cVar.replaceAll(list, str);
     }
 
-    public static /* synthetic */ void add$default(c cVar, int i, i iVar, String str, int i6, Object obj) {
+    public static /* synthetic */ void add$default(c cVar, int i, i iVar, String str, int i4, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: add");
         }
-        if ((i6 & 4) != 0) {
+        if ((i4 & 4) != 0) {
             str = "NORMAL";
         }
         cVar.add(i, iVar, str);

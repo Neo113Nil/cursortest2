@@ -1,9 +1,9 @@
 package com.google.android.play.core.hsdp.service;
 
-import L3.E;
-import L3.F;
-import L3.g;
-import L3.r;
+import N3.B;
+import N3.C;
+import N3.g;
+import N3.o;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -13,24 +13,23 @@ import android.os.IBinder;
 import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
-import com.icefishingapp.icefishing.C5275R;
-import d6.c;
-import j4.q;
+import com.IceFishing.LiveIceFishing.C5248R;
 import java.util.HashMap;
 import java.util.Objects;
+import l4.q;
 
 /* loaded from: classes2.dex */
 public class HsdpShimActivity extends Activity {
 
     /* renamed from: n, reason: collision with root package name */
-    public String f36181n = null;
+    public String f36948n = null;
 
     /* renamed from: u, reason: collision with root package name */
-    public boolean f36182u = false;
+    public boolean f36949u = false;
 
-    public final void a(boolean z3) {
+    public final void a(boolean z6) {
         HashMap hashMap;
-        r rVar;
+        o oVar;
         IBinder windowToken = getWindow().getDecorView().getWindowToken();
         if (windowToken == null) {
             throw new IllegalStateException("windowToken is null");
@@ -40,16 +39,16 @@ public class HsdpShimActivity extends Activity {
         if (stringExtra == null) {
             throw new IllegalStateException("targetPackageName is null");
         }
-        E t6 = F.t(this, HsdpDeepLinkServiceFactory.createHsdpServiceIntent());
-        if (!z3 && stringExtra.equals(this.f36181n) && (rVar = (r) ((g) t6).f1694c.get(stringExtra)) != null && rVar.f1731a == 2) {
+        B U8 = C.U(this, HsdpDeepLinkServiceFactory.createHsdpServiceIntent());
+        if (!z6 && stringExtra.equals(this.f36948n) && (oVar = (o) ((g) U8).f1973c.get(stringExtra)) != null && oVar.f2004a == 2) {
             if (Log.isLoggable("HsdpShimActivity", 4)) {
                 Log.i("HsdpShimActivity", "HSDP is already showing for " + stringExtra + ", ignore.");
                 return;
             }
             return;
         }
-        this.f36181n = stringExtra;
-        this.f36182u = false;
+        this.f36948n = stringExtra;
+        this.f36949u = false;
         String stringExtra2 = intent.getStringExtra("referrer");
         if (stringExtra2 == null) {
             throw new IllegalStateException("referrer is null");
@@ -72,15 +71,15 @@ public class HsdpShimActivity extends Activity {
         } else {
             hashMap = null;
         }
-        int s9 = c.s(this, getResources().getConfiguration().screenWidthDp);
-        int t9 = c.t(this);
+        int T8 = C.T(this, getResources().getConfiguration().screenWidthDp);
+        int W3 = C.W(this);
         q qVar = new q();
-        qVar.f38433n = stringExtra;
-        qVar.f38434u = stringExtra2;
-        qVar.f38435v = hashMap;
+        qVar.f38945n = stringExtra;
+        qVar.f38946u = stringExtra2;
+        qVar.f38947v = hashMap;
         Objects.requireNonNull(this);
-        qVar.f38436w = this;
-        ((g) t6).a(stringExtra, stringExtra3, windowToken, s9, t9, booleanExtra, qVar);
+        qVar.f38948w = this;
+        ((g) U8).a(stringExtra, stringExtra3, windowToken, T8, W3, booleanExtra, qVar);
     }
 
     @Override // android.app.Activity, android.view.Window.Callback
@@ -100,7 +99,7 @@ public class HsdpShimActivity extends Activity {
     @Override // android.app.Activity
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        setContentView(C5275R.layout.hsdp_shim_activity);
+        setContentView(C5248R.layout.hsdp_shim_activity);
         Window window = getWindow();
         window.setLayout(-1, -1);
         if (Build.VERSION.SDK_INT >= 28) {

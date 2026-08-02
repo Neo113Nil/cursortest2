@@ -1,15 +1,15 @@
 package com.onesignal.user.internal.operations.impl.executors;
 
 import Z5.f;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import t4.C5040a;
-import u7.C5089g;
-import v7.AbstractC5129j;
-import z7.InterfaceC5267d;
+import t4.C5041a;
+import u7.C5081g;
+import v7.AbstractC5119j;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class l implements H4.d {
@@ -40,8 +40,8 @@ public final class l implements H4.d {
         int label;
         /* synthetic */ Object result;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -78,29 +78,29 @@ public final class l implements H4.d {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private final V5.q buildPushSelfHealOperationForStuckSubscription(V5.h hVar, Q5.h hVar2, String str) {
-        boolean z3;
+        boolean z6;
         Z5.d dVar = (Z5.d) this._subscriptionsModelStore.get(str);
         if (dVar != null && dVar.getType() == Z5.g.PUSH) {
-            C5089g subscriptionEnabledAndStatus = W5.c.Companion.getSubscriptionEnabledAndStatus(dVar);
-            boolean booleanValue = ((Boolean) subscriptionEnabledAndStatus.f41332n).booleanValue();
-            Z5.f fVar = (Z5.f) subscriptionEnabledAndStatus.f41333u;
+            C5081g subscriptionEnabledAndStatus = W5.c.Companion.getSubscriptionEnabledAndStatus(dVar);
+            boolean booleanValue = ((Boolean) subscriptionEnabledAndStatus.f41052n).booleanValue();
+            Z5.f fVar = (Z5.f) subscriptionEnabledAndStatus.f41053u;
             if (kotlin.jvm.internal.h.a(hVar2.getEnabled(), Boolean.TRUE)) {
                 Integer notificationTypes = hVar2.getNotificationTypes();
                 if ((notificationTypes != null ? notificationTypes.intValue() : 0) > 0) {
-                    z3 = true;
-                    if ((booleanValue || z3) ? false : true) {
-                        StringBuilder j6 = AbstractC4404f.j("RefreshUserOperationExecutor: push subscription ", str, " diverged from server (server enabled=");
-                        j6.append(hVar2.getEnabled());
-                        j6.append(" notificationTypes=");
-                        j6.append(hVar2.getNotificationTypes());
-                        j6.append("; local opted-in and SUBSCRIBED). Enqueuing follow-up update-subscription op to re-assert local truth via PATCH /subscriptions/{id}.");
-                        com.onesignal.debug.internal.logging.b.info$default(j6.toString(), null, 2, null);
+                    z6 = true;
+                    if ((booleanValue || z6) ? false : true) {
+                        StringBuilder l9 = Wv.l("RefreshUserOperationExecutor: push subscription ", str, " diverged from server (server enabled=");
+                        l9.append(hVar2.getEnabled());
+                        l9.append(" notificationTypes=");
+                        l9.append(hVar2.getNotificationTypes());
+                        l9.append("; local opted-in and SUBSCRIBED). Enqueuing follow-up update-subscription op to re-assert local truth via PATCH /subscriptions/{id}.");
+                        com.onesignal.debug.internal.logging.b.info$default(l9.toString(), null, 2, null);
                         return new V5.q(hVar.getAppId(), hVar.getOnesignalId(), ((U5.a) this._identityModelStore.getModel()).getExternalId(), str, dVar.getType(), booleanValue, dVar.getAddress(), fVar);
                     }
                 }
             }
-            z3 = false;
-            if ((booleanValue || z3) ? false : true) {
+            z6 = false;
+            if ((booleanValue || z6) ? false : true) {
             }
         }
         return null;
@@ -116,24 +116,24 @@ public final class l implements H4.d {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object getUser(V5.h hVar, InterfaceC5267d interfaceC5267d) {
+    public final Object getUser(V5.h hVar, InterfaceC5240d interfaceC5240d) {
         b bVar;
         int i;
         l lVar;
-        int i6;
+        int i4;
         Z5.d dVar;
         V5.h hVar2 = hVar;
-        if (interfaceC5267d instanceof b) {
-            bVar = (b) interfaceC5267d;
-            int i9 = bVar.label;
-            if ((i9 & Integer.MIN_VALUE) != 0) {
-                bVar.label = i9 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof b) {
+            bVar = (b) interfaceC5240d;
+            int i6 = bVar.label;
+            if ((i6 & Integer.MIN_VALUE) != 0) {
+                bVar.label = i6 - Integer.MIN_VALUE;
                 b bVar2 = bVar;
                 Object obj = bVar2.result;
-                A7.a aVar = A7.a.f58n;
+                A7.a aVar = A7.a.f215n;
                 i = bVar2.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     f resolveBackendParams = c.resolveBackendParams(hVar2, hVar2.getOnesignalId(), this._jwtTokenStore, this._identityVerificationService);
                     try {
                         Q5.d dVar2 = this._userBackend;
@@ -149,11 +149,11 @@ public final class l implements H4.d {
                             return aVar;
                         }
                         lVar = this;
-                    } catch (C5040a e9) {
+                    } catch (C5041a e9) {
                         e = e9;
                         lVar = this;
-                        i6 = m.$EnumSwitchMapping$1[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
-                        if (i6 != 1) {
+                        i4 = m.$EnumSwitchMapping$1[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
+                        if (i4 != 1) {
                         }
                     }
                 } else {
@@ -163,17 +163,17 @@ public final class l implements H4.d {
                     hVar2 = (V5.h) bVar2.L$1;
                     lVar = (l) bVar2.L$0;
                     try {
-                        com.bumptech.glide.d.k(obj);
-                    } catch (C5040a e10) {
+                        Q3.b.s(obj);
+                    } catch (C5041a e10) {
                         e = e10;
-                        i6 = m.$EnumSwitchMapping$1[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
-                        if (i6 != 1) {
+                        i4 = m.$EnumSwitchMapping$1[com.onesignal.common.g.INSTANCE.getResponseStatusType(e.getStatusCode()).ordinal()];
+                        if (i4 != 1) {
                             return new H4.a(H4.b.FAIL_RETRY, null, null, e.getRetryAfterSeconds(), 6, null);
                         }
-                        if (i6 == 2) {
+                        if (i4 == 2) {
                             return new H4.a(H4.b.FAIL_UNAUTHORIZED, null, null, e.getRetryAfterSeconds(), 6, null);
                         }
-                        if (i6 != 3) {
+                        if (i4 != 3) {
                             return new H4.a(H4.b.FAIL_NORETRY, null, null, null, 14, null);
                         }
                         if (e.getStatusCode() == 404 && lVar._newRecordState.isInMissingRetryWindow(hVar2.getOnesignalId())) {
@@ -233,8 +233,8 @@ public final class l implements H4.d {
                     dVar3.setStatus(fromInt);
                     Q5.j type = hVar3.getType();
                     kotlin.jvm.internal.h.b(type);
-                    int i10 = m.$EnumSwitchMapping$0[type.ordinal()];
-                    dVar3.setType(i10 != 1 ? i10 != 2 ? Z5.g.PUSH : Z5.g.SMS : Z5.g.EMAIL);
+                    int i9 = m.$EnumSwitchMapping$0[type.ordinal()];
+                    dVar3.setType(i9 != 1 ? i9 != 2 ? Z5.g.PUSH : Z5.g.SMS : Z5.g.EMAIL);
                     dVar3.setOptedIn((dVar3.getStatus() == Z5.f.UNSUBSCRIBE || dVar3.getStatus() == Z5.f.DISABLED_FROM_REST_API_DEFAULT_REASON) ? false : true);
                     String sdk = hVar3.getSdk();
                     if (sdk == null) {
@@ -268,13 +268,13 @@ public final class l implements H4.d {
                 lVar._identityModelStore.replace(aVar3, "HYDRATE");
                 lVar._propertiesModelStore.replace(aVar4, "HYDRATE");
                 lVar._subscriptionsModelStore.replaceAll(arrayList, "HYDRATE");
-                return new H4.a(H4.b.SUCCESS, null, qVar != null ? d6.c.k(qVar) : null, null, 10, null);
+                return new H4.a(H4.b.SUCCESS, null, qVar != null ? Z2.d.n(qVar) : null, null, 10, null);
             }
         }
-        bVar = new b(interfaceC5267d);
+        bVar = new b(interfaceC5240d);
         b bVar22 = bVar;
         Object obj2 = bVar22.result;
-        A7.a aVar6 = A7.a.f58n;
+        A7.a aVar6 = A7.a.f215n;
         i = bVar22.label;
         if (i != 0) {
         }
@@ -284,7 +284,7 @@ public final class l implements H4.d {
     }
 
     @Override // H4.d
-    public Object execute(List<? extends H4.g> list, InterfaceC5267d interfaceC5267d) {
+    public Object execute(List<? extends H4.g> list, InterfaceC5240d interfaceC5240d) {
         com.onesignal.debug.internal.logging.b.log(M4.c.DEBUG, "RefreshUserOperationExecutor(operation: " + list + ')');
         if (list == null || !list.isEmpty()) {
             Iterator<T> it = list.iterator();
@@ -294,15 +294,15 @@ public final class l implements H4.d {
                 }
             }
         }
-        H4.g gVar = (H4.g) AbstractC5129j.A(list);
+        H4.g gVar = (H4.g) AbstractC5119j.y(list);
         if (gVar instanceof V5.h) {
-            return getUser((V5.h) gVar, interfaceC5267d);
+            return getUser((V5.h) gVar, interfaceC5240d);
         }
         throw new Exception("Unrecognized operation: " + gVar);
     }
 
     @Override // H4.d
     public List<String> getOperations() {
-        return d6.c.k(REFRESH_USER);
+        return Z2.d.n(REFRESH_USER);
     }
 }

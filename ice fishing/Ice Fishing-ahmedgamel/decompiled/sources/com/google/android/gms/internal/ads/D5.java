@@ -10,7 +10,7 @@ public final class D5 extends Exception {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public D5(C5 c52, B5 b52, long j6) {
-        super(String.format(r0, L5.a("bk3t6gFTc30="), Long.valueOf(c52.f24041n), Long.valueOf(b52.f23849n), r5));
+        super(String.format(r0, L5.a("bk3t6gFTc30="), Long.valueOf(c52.f24804n), Long.valueOf(b52.f24620n), r5));
         Locale locale = Locale.US;
         Long valueOf = Long.valueOf(j6);
         Optional.of(b52);
@@ -18,7 +18,7 @@ public final class D5 extends Exception {
     }
 
     public D5(C5 c52, Exception exc) {
-        super(String.format(Locale.US, L5.a("bk0="), Long.valueOf(c52.f24041n)), exc);
+        super(String.format(Locale.US, L5.a("bk0="), Long.valueOf(c52.f24804n)), exc);
         Optional.empty();
         Optional.empty();
     }

@@ -9,7 +9,7 @@ import java.util.concurrent.Semaphore;
 /* loaded from: classes.dex */
 public final class n {
     public static void a(com.anythink.expressad.foundation.d.d dVar, com.anythink.expressad.b.a.b bVar, com.anythink.expressad.b.a.a aVar, String str, String str2, Context context, l.a aVar2, Semaphore semaphore) {
-        if (!a(bVar.i()) && !u.a.a(bVar.i()) && 200 == aVar.f18122f && !TextUtils.isEmpty(bVar.f()) && !bVar.f().contains(com.anythink.expressad.foundation.g.a.bY)) {
+        if (!a(bVar.i()) && !u.a.a(bVar.i()) && 200 == aVar.f18909f && !TextUtils.isEmpty(bVar.f()) && !bVar.f().contains(com.anythink.expressad.foundation.g.a.bY)) {
             bVar.b(2);
             if (TextUtils.isEmpty(bVar.f())) {
                 try {
@@ -24,10 +24,10 @@ public final class n {
         }
         if (aVar != null) {
             bVar.b(1);
-            bVar.b(aVar.f18124h);
-            bVar.a(aVar.f18122f);
+            bVar.b(aVar.f18911h);
+            bVar.a(aVar.f18909f);
             bVar.a(aVar.a());
-            bVar.c(aVar.f18123g);
+            bVar.c(aVar.f18910g);
         }
         a(bVar.i(), dVar, bVar);
     }

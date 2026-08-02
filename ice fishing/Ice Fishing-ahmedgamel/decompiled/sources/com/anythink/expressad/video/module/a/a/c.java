@@ -6,8 +6,8 @@ import com.anythink.expressad.video.signal.factory.IJSFactory;
 public final class c extends d {
     private IJSFactory ai;
 
-    public c(IJSFactory iJSFactory, com.anythink.expressad.foundation.d.d dVar, com.anythink.expressad.videocommon.c.c cVar, com.anythink.expressad.videocommon.b.c cVar2, String str, String str2, com.anythink.expressad.video.module.a.a aVar, int i, boolean z3) {
-        super(dVar, cVar2, cVar, str, str2, aVar, i, z3);
+    public c(IJSFactory iJSFactory, com.anythink.expressad.foundation.d.d dVar, com.anythink.expressad.videocommon.c.c cVar, com.anythink.expressad.videocommon.b.c cVar2, String str, String str2, com.anythink.expressad.video.module.a.a aVar, int i, boolean z6) {
+        super(dVar, cVar2, cVar, str, str2, aVar, i, z6);
         this.ai = iJSFactory;
         if (iJSFactory == null) {
             this.Y = false;

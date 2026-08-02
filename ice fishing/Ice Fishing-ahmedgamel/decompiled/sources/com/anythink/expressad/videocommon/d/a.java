@@ -10,7 +10,7 @@ public interface a {
 
     void a(String str);
 
-    void a(boolean z3, String str, float f3);
+    void a(boolean z6, String str, float f2);
 
     void b();
 

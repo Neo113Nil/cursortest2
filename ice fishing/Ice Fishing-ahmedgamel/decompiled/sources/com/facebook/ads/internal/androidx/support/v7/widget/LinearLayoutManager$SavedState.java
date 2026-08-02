@@ -2,11 +2,11 @@ package com.facebook.ads.internal.androidx.support.v7.widget;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import com.instagram.common.viewpoint.core.C1181Qi;
+import com.instagram.common.viewpoint.core.C1201Qi;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public class LinearLayoutManager$SavedState implements Parcelable {
-    public static final Parcelable.Creator<LinearLayoutManager$SavedState> CREATOR = new C1181Qi();
+    public static final Parcelable.Creator<LinearLayoutManager$SavedState> CREATOR = new C1201Qi();
     public int A00;
     public int A01;
     public boolean A02;

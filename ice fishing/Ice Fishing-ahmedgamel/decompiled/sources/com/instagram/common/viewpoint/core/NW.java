@@ -11,16 +11,16 @@ public enum NW {
     public static String[] A02 = {"wiqydbsLJDwKBvl8t", "43d9HmwIqa0UmHFIq", "pggHvImyjq29EoPdIbNPEyFQYY47zx5L", "Y7HVzfyHvrAyRWnGs1HIvpl", "hbOUIe", "Z6uWuqD1EDiaZecfB", "H4uwq6", "uO2zzJUzM8GpymnowP"};
     public final String A00;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            byte b9 = copyOfRange[i10];
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            byte b9 = copyOfRange[i9];
             String[] strArr = A02;
             if (strArr[0].length() != strArr[5].length()) {
                 throw new RuntimeException();
             }
             A02[7] = "YRQbc7SZzU6A3uauK9TIi077IJfJ6";
-            copyOfRange[i10] = (byte) ((b9 - i9) - 59);
+            copyOfRange[i9] = (byte) ((b9 - i6) - 59);
         }
         return new String(copyOfRange);
     }

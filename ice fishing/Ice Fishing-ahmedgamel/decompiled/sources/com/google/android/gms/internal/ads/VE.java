@@ -4,333 +4,333 @@ import java.security.GeneralSecurityException;
 import java.security.InvalidAlgorithmParameterException;
 
 /* loaded from: classes2.dex */
-public final /* synthetic */ class VE implements InterfaceC3827rG, InterfaceC3450kG, UF, SF, InterfaceC3558mG {
+public final /* synthetic */ class VE implements InterfaceC3850rG, InterfaceC3473kG, UF, SF, InterfaceC3581mG {
 
     /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f28129n;
+    public final /* synthetic */ int f28926n;
 
     /* renamed from: u, reason: collision with root package name */
-    public static final /* synthetic */ VE f28123u = new VE(0);
+    public static final /* synthetic */ VE f28920u = new VE(0);
 
     /* renamed from: v, reason: collision with root package name */
-    public static final /* synthetic */ VE f28124v = new VE(1);
+    public static final /* synthetic */ VE f28921v = new VE(1);
 
     /* renamed from: w, reason: collision with root package name */
-    public static final /* synthetic */ VE f28125w = new VE(2);
+    public static final /* synthetic */ VE f28922w = new VE(2);
 
     /* renamed from: x, reason: collision with root package name */
-    public static final /* synthetic */ VE f28126x = new VE(3);
+    public static final /* synthetic */ VE f28923x = new VE(3);
 
     /* renamed from: y, reason: collision with root package name */
-    public static final /* synthetic */ VE f28127y = new VE(4);
+    public static final /* synthetic */ VE f28924y = new VE(4);
 
     /* renamed from: z, reason: collision with root package name */
-    public static final /* synthetic */ VE f28128z = new VE(5);
+    public static final /* synthetic */ VE f28925z = new VE(5);
 
     /* renamed from: A, reason: collision with root package name */
-    public static final /* synthetic */ VE f28100A = new VE(6);
+    public static final /* synthetic */ VE f28897A = new VE(6);
 
     /* renamed from: B, reason: collision with root package name */
-    public static final /* synthetic */ VE f28101B = new VE(7);
+    public static final /* synthetic */ VE f28898B = new VE(7);
 
     /* renamed from: C, reason: collision with root package name */
-    public static final /* synthetic */ VE f28102C = new VE(8);
+    public static final /* synthetic */ VE f28899C = new VE(8);
 
     /* renamed from: D, reason: collision with root package name */
-    public static final /* synthetic */ VE f28103D = new VE(9);
+    public static final /* synthetic */ VE f28900D = new VE(9);
 
     /* renamed from: E, reason: collision with root package name */
-    public static final /* synthetic */ VE f28104E = new VE(10);
+    public static final /* synthetic */ VE f28901E = new VE(10);
 
     /* renamed from: F, reason: collision with root package name */
-    public static final /* synthetic */ VE f28105F = new VE(11);
+    public static final /* synthetic */ VE f28902F = new VE(11);
 
     /* renamed from: G, reason: collision with root package name */
-    public static final /* synthetic */ VE f28106G = new VE(12);
+    public static final /* synthetic */ VE f28903G = new VE(12);
 
     /* renamed from: H, reason: collision with root package name */
-    public static final /* synthetic */ VE f28107H = new VE(13);
+    public static final /* synthetic */ VE f28904H = new VE(13);
 
     /* renamed from: I, reason: collision with root package name */
-    public static final /* synthetic */ VE f28108I = new VE(14);
+    public static final /* synthetic */ VE f28905I = new VE(14);
     public static final /* synthetic */ VE J = new VE(15);
 
     /* renamed from: K, reason: collision with root package name */
-    public static final /* synthetic */ VE f28109K = new VE(16);
+    public static final /* synthetic */ VE f28906K = new VE(16);
 
     /* renamed from: L, reason: collision with root package name */
-    public static final /* synthetic */ VE f28110L = new VE(17);
+    public static final /* synthetic */ VE f28907L = new VE(17);
 
     /* renamed from: M, reason: collision with root package name */
-    public static final /* synthetic */ VE f28111M = new VE(18);
+    public static final /* synthetic */ VE f28908M = new VE(18);
 
     /* renamed from: N, reason: collision with root package name */
-    public static final /* synthetic */ VE f28112N = new VE(19);
+    public static final /* synthetic */ VE f28909N = new VE(19);
 
     /* renamed from: O, reason: collision with root package name */
-    public static final /* synthetic */ VE f28113O = new VE(20);
+    public static final /* synthetic */ VE f28910O = new VE(20);
 
     /* renamed from: P, reason: collision with root package name */
-    public static final /* synthetic */ VE f28114P = new VE(21);
+    public static final /* synthetic */ VE f28911P = new VE(21);
 
     /* renamed from: Q, reason: collision with root package name */
-    public static final /* synthetic */ VE f28115Q = new VE(22);
+    public static final /* synthetic */ VE f28912Q = new VE(22);
 
     /* renamed from: R, reason: collision with root package name */
-    public static final /* synthetic */ VE f28116R = new VE(23);
+    public static final /* synthetic */ VE f28913R = new VE(23);
 
     /* renamed from: S, reason: collision with root package name */
-    public static final /* synthetic */ VE f28117S = new VE(24);
+    public static final /* synthetic */ VE f28914S = new VE(24);
 
     /* renamed from: T, reason: collision with root package name */
-    public static final /* synthetic */ VE f28118T = new VE(25);
+    public static final /* synthetic */ VE f28915T = new VE(25);
 
     /* renamed from: U, reason: collision with root package name */
-    public static final /* synthetic */ VE f28119U = new VE(26);
+    public static final /* synthetic */ VE f28916U = new VE(26);
 
     /* renamed from: V, reason: collision with root package name */
-    public static final /* synthetic */ VE f28120V = new VE(27);
+    public static final /* synthetic */ VE f28917V = new VE(27);
 
     /* renamed from: W, reason: collision with root package name */
-    public static final /* synthetic */ VE f28121W = new VE(28);
+    public static final /* synthetic */ VE f28918W = new VE(28);
 
     /* renamed from: X, reason: collision with root package name */
-    public static final /* synthetic */ VE f28122X = new VE(29);
+    public static final /* synthetic */ VE f28919X = new VE(29);
 
     public /* synthetic */ VE(int i) {
-        this.f28129n = i;
+        this.f28926n = i;
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3558mG
-    public C4151xG a(AbstractC3825rE abstractC3825rE) {
-        switch (this.f28129n) {
+    @Override // com.google.android.gms.internal.ads.InterfaceC3581mG
+    public C4174xG a(AbstractC3848rE abstractC3848rE) {
+        switch (this.f28926n) {
             case 4:
-                YE ye = (YE) abstractC3825rE;
-                C3504lG c3504lG = ZE.f28857a;
-                C3933tE a9 = ZE.a(ye.f28661b);
-                C3883sI C8 = C3937tI.C();
+                YE ye = (YE) abstractC3848rE;
+                C3527lG c3527lG = ZE.f29637a;
+                C3956tE a9 = ZE.a(ye.f29438b);
+                C3906sI C8 = C3960tI.C();
                 C8.h();
-                ((C3937tI) C8.f27721u).E(ye.f28660a);
-                return C4151xG.a("type.googleapis.com/google.crypto.tink.KmsAeadKey", a9, ((C3937tI) C8.j()).a());
+                ((C3960tI) C8.f28504u).E(ye.f29437a);
+                return C4174xG.a("type.googleapis.com/google.crypto.tink.KmsAeadKey", a9, ((C3960tI) C8.j()).a());
             case 8:
-                C2967bF c2967bF = (C2967bF) abstractC3825rE;
-                C3504lG c3504lG2 = AbstractC3020cF.f29435a;
-                return C4151xG.a("type.googleapis.com/google.crypto.tink.KmsEnvelopeAeadKey", AbstractC3020cF.a(c2967bF.f29248a), AbstractC3020cF.b(c2967bF).a());
+                C2990bF c2990bF = (C2990bF) abstractC3848rE;
+                C3527lG c3527lG2 = AbstractC3043cF.f30218a;
+                return C4174xG.a("type.googleapis.com/google.crypto.tink.KmsEnvelopeAeadKey", AbstractC3043cF.a(c2990bF.f30036a), AbstractC3043cF.b(c2990bF).a());
             case 14:
-                GE ge = (GE) abstractC3825rE;
-                C3504lG c3504lG3 = AbstractC3449kF.f31384a;
-                C3933tE a10 = AbstractC3449kF.a(ge.f24958e);
-                C3345iH D8 = C3397jH.D();
-                C3559mH C9 = C3667oH.C();
-                C3721pH B9 = C3775qH.B();
-                B9.h();
-                ((C3775qH) B9.f27721u).D(ge.f24956c);
-                C3775qH c3775qH = (C3775qH) B9.j();
+                GE ge = (GE) abstractC3848rE;
+                C3527lG c3527lG3 = AbstractC3472kF.f32163a;
+                C3956tE a10 = AbstractC3472kF.a(ge.f25748e);
+                C3368iH D8 = C3420jH.D();
+                C3582mH C9 = C3690oH.C();
+                C3744pH B3 = C3798qH.B();
+                B3.h();
+                ((C3798qH) B3.f28504u).D(ge.f25746c);
+                C3798qH c3798qH = (C3798qH) B3.j();
                 C9.h();
-                ((C3667oH) C9.f27721u).E(c3775qH);
+                ((C3690oH) C9.f28504u).E(c3798qH);
                 C9.h();
-                ((C3667oH) C9.f27721u).F(ge.f24954a);
-                C3667oH c3667oH = (C3667oH) C9.j();
+                ((C3690oH) C9.f28504u).F(ge.f25744a);
+                C3690oH c3690oH = (C3690oH) C9.j();
                 D8.h();
-                ((C3397jH) D8.f27721u).E(c3667oH);
-                ZH E8 = C2916aI.E();
-                C3023cI d2 = AbstractC3449kF.d(ge);
+                ((C3420jH) D8.f28504u).E(c3690oH);
+                ZH E8 = C2939aI.E();
+                C3046cI d9 = AbstractC3472kF.d(ge);
                 E8.h();
-                ((C2916aI) E8.f27721u).G(d2);
+                ((C2939aI) E8.f28504u).G(d9);
                 E8.h();
-                ((C2916aI) E8.f27721u).H(ge.f24955b);
-                C2916aI c2916aI = (C2916aI) E8.j();
+                ((C2939aI) E8.f28504u).H(ge.f25745b);
+                C2939aI c2939aI = (C2939aI) E8.j();
                 D8.h();
-                ((C3397jH) D8.f27721u).F(c2916aI);
-                return C4151xG.a("type.googleapis.com/google.crypto.tink.AesCtrHmacAeadKey", a10, ((C3397jH) D8.j()).a());
+                ((C3420jH) D8.f28504u).F(c2939aI);
+                return C4174xG.a("type.googleapis.com/google.crypto.tink.AesCtrHmacAeadKey", a10, ((C3420jH) D8.j()).a());
             case 18:
-                JE je = (JE) abstractC3825rE;
-                C3504lG c3504lG4 = AbstractC3503lF.f31750a;
-                C3933tE a11 = AbstractC3503lF.a(je.f25660c);
-                C3936tH D9 = C3990uH.D();
-                C4044vH B10 = C4098wH.B();
-                B10.h();
-                ((C4098wH) B10.f27721u).D(je.f25659b);
-                C4098wH c4098wH = (C4098wH) B10.j();
+                JE je = (JE) abstractC3848rE;
+                C3527lG c3527lG4 = AbstractC3526lF.f32530a;
+                C3956tE a11 = AbstractC3526lF.a(je.f26413c);
+                C3959tH D9 = C4013uH.D();
+                C4067vH B9 = C4121wH.B();
+                B9.h();
+                ((C4121wH) B9.f28504u).D(je.f26412b);
+                C4121wH c4121wH = (C4121wH) B9.j();
                 D9.h();
-                ((C3990uH) D9.f27721u).E(c4098wH);
+                ((C4013uH) D9.f28504u).E(c4121wH);
                 D9.h();
-                ((C3990uH) D9.f27721u).F(je.f25658a);
-                return C4151xG.a("type.googleapis.com/google.crypto.tink.AesEaxKey", a11, ((C3990uH) D9.j()).a());
+                ((C4013uH) D9.f28504u).F(je.f26411a);
+                return C4174xG.a("type.googleapis.com/google.crypto.tink.AesEaxKey", a11, ((C4013uH) D9.j()).a());
             case 22:
-                NE ne = (NE) abstractC3825rE;
-                C3504lG c3504lG5 = AbstractC3665oF.f32884a;
-                C3933tE a12 = AbstractC3665oF.a(ne.f26477b);
-                C4260zH D10 = AH.D();
+                NE ne = (NE) abstractC3848rE;
+                C3527lG c3527lG5 = AbstractC3688oF.f33671a;
+                C3956tE a12 = AbstractC3688oF.a(ne.f27261b);
+                C4283zH D10 = AH.D();
                 D10.h();
-                ((AH) D10.f27721u).E(ne.f26476a);
-                return C4151xG.a("type.googleapis.com/google.crypto.tink.AesGcmKey", a12, ((AH) D10.j()).a());
+                ((AH) D10.f28504u).E(ne.f27260a);
+                return C4174xG.a("type.googleapis.com/google.crypto.tink.AesGcmKey", a12, ((AH) D10.j()).a());
             default:
-                QE qe = (QE) abstractC3825rE;
-                C3504lG c3504lG6 = AbstractC3773qF.f33223a;
-                C3933tE a13 = AbstractC3773qF.a(qe.f27007b);
+                QE qe = (QE) abstractC3848rE;
+                C3527lG c3527lG6 = AbstractC3796qF.f34007a;
+                C3956tE a13 = AbstractC3796qF.a(qe.f27794b);
                 DH D11 = EH.D();
                 D11.h();
-                ((EH) D11.f27721u).E(qe.f27006a);
-                return C4151xG.a("type.googleapis.com/google.crypto.tink.AesGcmSivKey", a13, ((EH) D11.j()).a());
+                ((EH) D11.f28504u).E(qe.f27793a);
+                return C4174xG.a("type.googleapis.com/google.crypto.tink.AesGcmSivKey", a13, ((EH) D11.j()).a());
         }
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3827rG, com.google.android.gms.internal.ads.UF
-    public C4097wG b(WC wc) {
-        switch (this.f28129n) {
+    @Override // com.google.android.gms.internal.ads.InterfaceC3850rG, com.google.android.gms.internal.ads.UF
+    public C4120wG b(WC wc) {
+        switch (this.f28926n) {
             case 2:
                 XE xe = (XE) wc;
-                C3504lG c3504lG = ZE.f28857a;
-                C3776qI D8 = C3829rI.D();
-                C3883sI C8 = C3937tI.C();
-                YE ye = xe.f28505b;
+                C3527lG c3527lG = ZE.f29637a;
+                C3799qI D8 = C3852rI.D();
+                C3906sI C8 = C3960tI.C();
+                YE ye = xe.f29285b;
                 C8.h();
-                ((C3937tI) C8.f27721u).E(ye.f28660a);
-                C3937tI c3937tI = (C3937tI) C8.j();
+                ((C3960tI) C8.f28504u).E(ye.f29437a);
+                C3960tI c3960tI = (C3960tI) C8.j();
                 D8.h();
-                ((C3829rI) D8.f27721u).F(c3937tI);
-                return C4097wG.a("type.googleapis.com/google.crypto.tink.KmsAeadKey", ((C3829rI) D8.j()).a(), C3879sE.f33913g, ZE.a(xe.f28505b.f28661b), xe.f28507d);
+                ((C3852rI) D8.f28504u).F(c3960tI);
+                return C4120wG.a("type.googleapis.com/google.crypto.tink.KmsAeadKey", ((C3852rI) D8.j()).a(), C3902sE.f34681g, ZE.a(xe.f29285b.f29438b), xe.f29287d);
             case 6:
-                C2913aF c2913aF = (C2913aF) wc;
-                C3504lG c3504lG2 = AbstractC3020cF.f29435a;
-                C3991uI D9 = C4045vI.D();
-                C4153xI b9 = AbstractC3020cF.b(c2913aF.f29043b);
+                C2936aF c2936aF = (C2936aF) wc;
+                C3527lG c3527lG2 = AbstractC3043cF.f30218a;
+                C4014uI D9 = C4068vI.D();
+                C4176xI b9 = AbstractC3043cF.b(c2936aF.f29813b);
                 D9.h();
-                ((C4045vI) D9.f27721u).F(b9);
-                return C4097wG.a("type.googleapis.com/google.crypto.tink.KmsEnvelopeAeadKey", ((C4045vI) D9.j()).a(), C3879sE.f33913g, AbstractC3020cF.a(c2913aF.f29043b.f29248a), c2913aF.f29045d);
+                ((C4068vI) D9.f28504u).F(b9);
+                return C4120wG.a("type.googleapis.com/google.crypto.tink.KmsEnvelopeAeadKey", ((C4068vI) D9.j()).a(), C3902sE.f34681g, AbstractC3043cF.a(c2936aF.f29813b.f30036a), c2936aF.f29815d);
             case 12:
                 BE be = (BE) wc;
-                C3504lG c3504lG3 = AbstractC3449kF.f31384a;
-                C3237gH E8 = C3291hH.E();
-                C3451kH D10 = C3505lH.D();
-                C3721pH B9 = C3775qH.B();
-                int i = be.f23861b.f24956c;
-                B9.h();
-                ((C3775qH) B9.f27721u).D(i);
-                C3775qH c3775qH = (C3775qH) B9.j();
+                C3527lG c3527lG3 = AbstractC3472kF.f32163a;
+                C3260gH E8 = C3314hH.E();
+                C3474kH D10 = C3528lH.D();
+                C3744pH B3 = C3798qH.B();
+                int i = be.f24632b.f25746c;
+                B3.h();
+                ((C3798qH) B3.f28504u).D(i);
+                C3798qH c3798qH = (C3798qH) B3.j();
                 D10.h();
-                ((C3505lH) D10.f27721u).F(c3775qH);
-                byte[] b10 = ((C3240gK) be.f23862c.f29859u).b();
+                ((C3528lH) D10.f28504u).F(c3798qH);
+                byte[] b10 = ((C3263gK) be.f24633c.f30647u).b();
                 HK s9 = JK.s(b10, 0, b10.length);
                 D10.h();
-                ((C3505lH) D10.f27721u).G(s9);
-                C3505lH c3505lH = (C3505lH) D10.j();
+                ((C3528lH) D10.f28504u).G(s9);
+                C3528lH c3528lH = (C3528lH) D10.j();
                 E8.h();
-                ((C3291hH) E8.f27721u).G(c3505lH);
+                ((C3314hH) E8.f28504u).G(c3528lH);
                 XH E9 = YH.E();
-                GE ge = be.f23861b;
-                C3023cI d2 = AbstractC3449kF.d(ge);
+                GE ge = be.f24632b;
+                C3046cI d9 = AbstractC3472kF.d(ge);
                 E9.h();
-                ((YH) E9.f27721u).H(d2);
-                byte[] b11 = ((C3240gK) be.f23863d.f29859u).b();
+                ((YH) E9.f28504u).H(d9);
+                byte[] b11 = ((C3263gK) be.f24634d.f30647u).b();
                 HK s10 = JK.s(b11, 0, b11.length);
                 E9.h();
-                ((YH) E9.f27721u).I(s10);
+                ((YH) E9.f28504u).I(s10);
                 YH yh = (YH) E9.j();
                 E8.h();
-                ((C3291hH) E8.f27721u).H(yh);
-                return C4097wG.a("type.googleapis.com/google.crypto.tink.AesCtrHmacAeadKey", ((C3291hH) E8.j()).a(), C3879sE.f33910d, AbstractC3449kF.a(ge.f24958e), be.f23865f);
+                ((C3314hH) E8.f28504u).H(yh);
+                return C4120wG.a("type.googleapis.com/google.crypto.tink.AesCtrHmacAeadKey", ((C3314hH) E8.j()).a(), C3902sE.f34678d, AbstractC3472kF.a(ge.f25748e), be.f24636f);
             case 16:
                 HE he = (HE) wc;
-                C3504lG c3504lG4 = AbstractC3503lF.f31750a;
-                C3828rH E10 = C3882sH.E();
-                JE je = he.f25244b;
-                C4044vH B10 = C4098wH.B();
-                int i6 = je.f25659b;
-                B10.h();
-                ((C4098wH) B10.f27721u).D(i6);
-                C4098wH c4098wH = (C4098wH) B10.j();
+                C3527lG c3527lG4 = AbstractC3526lF.f32530a;
+                C3851rH E10 = C3905sH.E();
+                JE je = he.f26016b;
+                C4067vH B9 = C4121wH.B();
+                int i4 = je.f26412b;
+                B9.h();
+                ((C4121wH) B9.f28504u).D(i4);
+                C4121wH c4121wH = (C4121wH) B9.j();
                 E10.h();
-                ((C3882sH) E10.f27721u).G(c4098wH);
-                byte[] b12 = ((C3240gK) he.f25245c.f29859u).b();
+                ((C3905sH) E10.f28504u).G(c4121wH);
+                byte[] b12 = ((C3263gK) he.f26017c.f30647u).b();
                 HK s11 = JK.s(b12, 0, b12.length);
                 E10.h();
-                ((C3882sH) E10.f27721u).H(s11);
-                return C4097wG.a("type.googleapis.com/google.crypto.tink.AesEaxKey", ((C3882sH) E10.j()).a(), C3879sE.f33910d, AbstractC3503lF.a(he.f25244b.f25660c), he.f25247e);
+                ((C3905sH) E10.f28504u).H(s11);
+                return C4120wG.a("type.googleapis.com/google.crypto.tink.AesEaxKey", ((C3905sH) E10.j()).a(), C3902sE.f34678d, AbstractC3526lF.a(he.f26016b.f26413c), he.f26019e);
             case 20:
                 KE ke = (KE) wc;
-                C3504lG c3504lG5 = AbstractC3665oF.f32884a;
-                C4152xH D11 = C4206yH.D();
-                byte[] b13 = ((C3240gK) ke.f25879c.f29859u).b();
+                C3527lG c3527lG5 = AbstractC3688oF.f33671a;
+                C4175xH D11 = C4229yH.D();
+                byte[] b13 = ((C3263gK) ke.f26631c.f30647u).b();
                 HK s12 = JK.s(b13, 0, b13.length);
                 D11.h();
-                ((C4206yH) D11.f27721u).F(s12);
-                return C4097wG.a("type.googleapis.com/google.crypto.tink.AesGcmKey", ((C4206yH) D11.j()).a(), C3879sE.f33910d, AbstractC3665oF.a(ke.f25878b.f26477b), ke.f25881e);
+                ((C4229yH) D11.f28504u).F(s12);
+                return C4120wG.a("type.googleapis.com/google.crypto.tink.AesGcmKey", ((C4229yH) D11.j()).a(), C3902sE.f34678d, AbstractC3688oF.a(ke.f26630b.f27261b), ke.f26633e);
             case 24:
                 OE oe = (OE) wc;
-                C3504lG c3504lG6 = AbstractC3773qF.f33223a;
+                C3527lG c3527lG6 = AbstractC3796qF.f34007a;
                 BH D12 = CH.D();
-                byte[] b14 = ((C3240gK) oe.f26592c.f29859u).b();
+                byte[] b14 = ((C3263gK) oe.f27374c.f30647u).b();
                 HK s13 = JK.s(b14, 0, b14.length);
                 D12.h();
-                ((CH) D12.f27721u).F(s13);
-                return C4097wG.a("type.googleapis.com/google.crypto.tink.AesGcmSivKey", ((CH) D12.j()).a(), C3879sE.f33910d, AbstractC3773qF.a(oe.f26591b.f27007b), oe.f26594e);
+                ((CH) D12.f28504u).F(s13);
+                return C4120wG.a("type.googleapis.com/google.crypto.tink.AesGcmSivKey", ((CH) D12.j()).a(), C3902sE.f34678d, AbstractC3796qF.a(oe.f27373b.f27794b), oe.f27376e);
             default:
                 RE re = (RE) wc;
-                C3504lG c3504lG7 = AbstractC3934tF.f34253a;
+                C3527lG c3527lG7 = AbstractC3957tF.f35039a;
                 FH D13 = GH.D();
-                byte[] b15 = ((C3240gK) re.f27182c.f29859u).b();
+                byte[] b15 = ((C3263gK) re.f27938c.f30647u).b();
                 HK s14 = JK.s(b15, 0, b15.length);
                 D13.h();
-                ((GH) D13.f27721u).F(s14);
-                return C4097wG.a("type.googleapis.com/google.crypto.tink.ChaCha20Poly1305Key", ((GH) D13.j()).a(), C3879sE.f33910d, AbstractC3934tF.a(re.f27181b.f27709a), re.f27184e);
+                ((GH) D13.f28504u).F(s14);
+                return C4120wG.a("type.googleapis.com/google.crypto.tink.ChaCha20Poly1305Key", ((GH) D13.j()).a(), C3902sE.f34678d, AbstractC3957tF.a(re.f27937b.f28492a), re.f27940e);
         }
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3450kG
-    public AbstractC3825rE c(C4151xG c4151xG) {
-        C3879sE c3879sE;
-        switch (this.f28129n) {
+    @Override // com.google.android.gms.internal.ads.InterfaceC3473kG
+    public AbstractC3848rE c(C4174xG c4174xG) {
+        C3902sE c3902sE;
+        switch (this.f28926n) {
             case 1:
-                C3504lG c3504lG = ZE.f28857a;
-                C3238gI c3238gI = c4151xG.f34969b;
-                if (!c3238gI.A().equals("type.googleapis.com/google.crypto.tink.KmsAeadKey")) {
-                    throw new IllegalArgumentException("Wrong type URL in call to LegacyKmsAeadProtoSerialization.parseParameters: ".concat(String.valueOf(c3238gI.A())));
+                C3527lG c3527lG = ZE.f29637a;
+                C3261gI c3261gI = c4174xG.f35750b;
+                if (!c3261gI.A().equals("type.googleapis.com/google.crypto.tink.KmsAeadKey")) {
+                    throw new IllegalArgumentException("Wrong type URL in call to LegacyKmsAeadProtoSerialization.parseParameters: ".concat(String.valueOf(c3261gI.A())));
                 }
                 try {
-                    JK B9 = c3238gI.B();
-                    PK pk = PK.f26757a;
-                    int i = BK.f23877a;
-                    String A9 = C3937tI.B(B9, PK.f26758b).A();
-                    C3933tE c3933tE = c4151xG.f34970c;
-                    if (c3933tE == C3933tE.f34230d) {
-                        c3879sE = C3879sE.f33916k;
+                    JK B3 = c3261gI.B();
+                    PK pk = PK.f27540a;
+                    int i = BK.f24648a;
+                    String A9 = C3960tI.B(B3, PK.f27541b).A();
+                    C3956tE c3956tE = c4174xG.f35751c;
+                    if (c3956tE == C3956tE.f35016d) {
+                        c3902sE = C3902sE.f34684k;
                     } else {
-                        if (c3933tE != C3933tE.f34232f) {
-                            throw new GeneralSecurityException("Unable to parse OutputPrefixType: ".concat(c3933tE.f34252b));
+                        if (c3956tE != C3956tE.f35018f) {
+                            throw new GeneralSecurityException("Unable to parse OutputPrefixType: ".concat(c3956tE.f35038b));
                         }
-                        c3879sE = C3879sE.f33917l;
+                        c3902sE = C3902sE.f34685l;
                     }
-                    return new YE(A9, c3879sE);
-                } catch (C3295hL e9) {
+                    return new YE(A9, c3902sE);
+                } catch (C3318hL e9) {
                     throw new GeneralSecurityException("Parsing KmsAeadKeyFormat failed: ", e9);
                 }
             case 5:
-                C3504lG c3504lG2 = AbstractC3020cF.f29435a;
-                C3238gI c3238gI2 = c4151xG.f34969b;
-                if (!c3238gI2.A().equals("type.googleapis.com/google.crypto.tink.KmsEnvelopeAeadKey")) {
-                    throw new IllegalArgumentException("Wrong type URL in call to LegacyKmsEnvelopeAeadProtoSerialization.parseParameters: ".concat(String.valueOf(c3238gI2.A())));
+                C3527lG c3527lG2 = AbstractC3043cF.f30218a;
+                C3261gI c3261gI2 = c4174xG.f35750b;
+                if (!c3261gI2.A().equals("type.googleapis.com/google.crypto.tink.KmsEnvelopeAeadKey")) {
+                    throw new IllegalArgumentException("Wrong type URL in call to LegacyKmsEnvelopeAeadProtoSerialization.parseParameters: ".concat(String.valueOf(c3261gI2.A())));
                 }
                 try {
-                    JK B10 = c3238gI2.B();
-                    PK pk2 = PK.f26757a;
-                    int i6 = BK.f23877a;
-                    return AbstractC3020cF.c(C4153xI.C(B10, PK.f26758b), c4151xG.f34970c);
-                } catch (C3295hL e10) {
+                    JK B9 = c3261gI2.B();
+                    PK pk2 = PK.f27540a;
+                    int i4 = BK.f24648a;
+                    return AbstractC3043cF.c(C4176xI.C(B9, PK.f27541b), c4174xG.f35751c);
+                } catch (C3318hL e10) {
                     throw new GeneralSecurityException("Parsing KmsEnvelopeAeadKeyFormat failed: ", e10);
                 }
             case 11:
-                C3504lG c3504lG3 = AbstractC3449kF.f31384a;
-                C3238gI c3238gI3 = c4151xG.f34969b;
-                if (!c3238gI3.A().equals("type.googleapis.com/google.crypto.tink.AesCtrHmacAeadKey")) {
-                    throw new IllegalArgumentException("Wrong type URL in call to AesCtrHmacAeadProtoSerialization.parseParameters: ".concat(String.valueOf(c3238gI3.A())));
+                C3527lG c3527lG3 = AbstractC3472kF.f32163a;
+                C3261gI c3261gI3 = c4174xG.f35750b;
+                if (!c3261gI3.A().equals("type.googleapis.com/google.crypto.tink.AesCtrHmacAeadKey")) {
+                    throw new IllegalArgumentException("Wrong type URL in call to AesCtrHmacAeadProtoSerialization.parseParameters: ".concat(String.valueOf(c3261gI3.A())));
                 }
                 try {
-                    JK B11 = c3238gI3.B();
-                    PK pk3 = PK.f26757a;
-                    int i9 = BK.f23877a;
-                    C3397jH C8 = C3397jH.C(B11, PK.f26758b);
+                    JK B10 = c3261gI3.B();
+                    PK pk3 = PK.f27540a;
+                    int i6 = BK.f24648a;
+                    C3420jH C8 = C3420jH.C(B10, PK.f27541b);
                     if (C8.B().C() != 0) {
                         throw new GeneralSecurityException("Only version 0 keys are accepted");
                     }
@@ -339,43 +339,43 @@ public final /* synthetic */ class VE implements InterfaceC3827rG, InterfaceC345
                     t82.h(C8.B().B());
                     t82.l(C8.A().A().A());
                     t82.m(C8.B().A().B());
-                    t82.f27699x = AbstractC3449kF.c(C8.B().A().A());
-                    t82.f27700y = AbstractC3449kF.b(c4151xG.f34970c);
+                    t82.f28482x = AbstractC3472kF.c(C8.B().A().A());
+                    t82.f28483y = AbstractC3472kF.b(c4174xG.f35751c);
                     return t82.p();
-                } catch (C3295hL e11) {
+                } catch (C3318hL e11) {
                     throw new GeneralSecurityException("Parsing AesCtrHmacAeadParameters failed: ", e11);
                 }
             case 15:
-                C3504lG c3504lG4 = AbstractC3503lF.f31750a;
-                C3238gI c3238gI4 = c4151xG.f34969b;
-                if (!c3238gI4.A().equals("type.googleapis.com/google.crypto.tink.AesEaxKey")) {
-                    throw new IllegalArgumentException("Wrong type URL in call to AesEaxProtoSerialization.parseParameters: ".concat(String.valueOf(c3238gI4.A())));
+                C3527lG c3527lG4 = AbstractC3526lF.f32530a;
+                C3261gI c3261gI4 = c4174xG.f35750b;
+                if (!c3261gI4.A().equals("type.googleapis.com/google.crypto.tink.AesEaxKey")) {
+                    throw new IllegalArgumentException("Wrong type URL in call to AesEaxProtoSerialization.parseParameters: ".concat(String.valueOf(c3261gI4.A())));
                 }
                 try {
-                    JK B12 = c3238gI4.B();
-                    PK pk4 = PK.f26757a;
-                    int i10 = BK.f23877a;
-                    C3990uH C9 = C3990uH.C(B12, PK.f26758b);
-                    C2570Gf c2570Gf = new C2570Gf(29);
-                    c2570Gf.i(C9.B());
-                    c2570Gf.p(C9.A().A());
-                    c2570Gf.s();
-                    c2570Gf.f25045x = AbstractC3503lF.b(c4151xG.f34970c);
-                    return c2570Gf.z();
-                } catch (C3295hL e12) {
+                    JK B11 = c3261gI4.B();
+                    PK pk4 = PK.f27540a;
+                    int i9 = BK.f24648a;
+                    C4013uH C9 = C4013uH.C(B11, PK.f27541b);
+                    C2590Gf c2590Gf = new C2590Gf(29);
+                    c2590Gf.h(C9.B());
+                    c2590Gf.o(C9.A().A());
+                    c2590Gf.r();
+                    c2590Gf.f25833x = AbstractC3526lF.b(c4174xG.f35751c);
+                    return c2590Gf.z();
+                } catch (C3318hL e12) {
                     throw new GeneralSecurityException("Parsing AesEaxParameters failed: ", e12);
                 }
             case 19:
-                C3504lG c3504lG5 = AbstractC3665oF.f32884a;
-                C3238gI c3238gI5 = c4151xG.f34969b;
-                if (!c3238gI5.A().equals("type.googleapis.com/google.crypto.tink.AesGcmKey")) {
-                    throw new IllegalArgumentException("Wrong type URL in call to AesGcmProtoSerialization.parseParameters: ".concat(String.valueOf(c3238gI5.A())));
+                C3527lG c3527lG5 = AbstractC3688oF.f33671a;
+                C3261gI c3261gI5 = c4174xG.f35750b;
+                if (!c3261gI5.A().equals("type.googleapis.com/google.crypto.tink.AesGcmKey")) {
+                    throw new IllegalArgumentException("Wrong type URL in call to AesGcmProtoSerialization.parseParameters: ".concat(String.valueOf(c3261gI5.A())));
                 }
                 try {
-                    JK B13 = c3238gI5.B();
-                    PK pk5 = PK.f26757a;
-                    int i11 = BK.f23877a;
-                    AH C10 = AH.C(B13, PK.f26758b);
+                    JK B12 = c3261gI5.B();
+                    PK pk5 = PK.f27540a;
+                    int i10 = BK.f24648a;
+                    AH C10 = AH.C(B12, PK.f27541b);
                     if (C10.B() != 0) {
                         throw new GeneralSecurityException("Only version 0 parameters are accepted");
                     }
@@ -383,67 +383,67 @@ public final /* synthetic */ class VE implements InterfaceC3827rG, InterfaceC345
                     me.a(C10.A());
                     me.c();
                     me.f();
-                    me.f26273e = AbstractC3665oF.b(c4151xG.f34970c);
+                    me.f27064e = AbstractC3688oF.b(c4174xG.f35751c);
                     return me.i();
-                } catch (C3295hL e13) {
+                } catch (C3318hL e13) {
                     throw new GeneralSecurityException("Parsing AesGcmParameters failed: ", e13);
                 }
             case 23:
-                C3504lG c3504lG6 = AbstractC3773qF.f33223a;
-                C3238gI c3238gI6 = c4151xG.f34969b;
-                if (!c3238gI6.A().equals("type.googleapis.com/google.crypto.tink.AesGcmSivKey")) {
-                    throw new IllegalArgumentException("Wrong type URL in call to AesGcmSivProtoSerialization.parseParameters: ".concat(String.valueOf(c3238gI6.A())));
+                C3527lG c3527lG6 = AbstractC3796qF.f34007a;
+                C3261gI c3261gI6 = c4174xG.f35750b;
+                if (!c3261gI6.A().equals("type.googleapis.com/google.crypto.tink.AesGcmSivKey")) {
+                    throw new IllegalArgumentException("Wrong type URL in call to AesGcmSivProtoSerialization.parseParameters: ".concat(String.valueOf(c3261gI6.A())));
                 }
                 try {
-                    JK B14 = c3238gI6.B();
-                    PK pk6 = PK.f26757a;
-                    int i12 = BK.f23877a;
-                    EH C11 = EH.C(B14, PK.f26758b);
+                    JK B13 = c3261gI6.B();
+                    PK pk6 = PK.f27540a;
+                    int i11 = BK.f24648a;
+                    EH C11 = EH.C(B13, PK.f27541b);
                     if (C11.B() != 0) {
                         throw new GeneralSecurityException("Only version 0 parameters are accepted");
                     }
                     int A10 = C11.A();
                     if (A10 == 16 || A10 == 32) {
-                        return new QE(A10, AbstractC3773qF.b(c4151xG.f34970c));
+                        return new QE(A10, AbstractC3796qF.b(c4174xG.f35751c));
                     }
                     throw new InvalidAlgorithmParameterException(String.format("Invalid key size %d; only 16-byte and 32-byte AES keys are supported", Integer.valueOf(A10)));
-                } catch (C3295hL e14) {
+                } catch (C3318hL e14) {
                     throw new GeneralSecurityException("Parsing AesGcmSivParameters failed: ", e14);
                 }
             default:
-                C3504lG c3504lG7 = AbstractC3934tF.f34253a;
-                C3238gI c3238gI7 = c4151xG.f34969b;
-                if (!c3238gI7.A().equals("type.googleapis.com/google.crypto.tink.ChaCha20Poly1305Key")) {
-                    throw new IllegalArgumentException("Wrong type URL in call to ChaCha20Poly1305ProtoSerialization.parseParameters: ".concat(String.valueOf(c3238gI7.A())));
+                C3527lG c3527lG7 = AbstractC3957tF.f35039a;
+                C3261gI c3261gI7 = c4174xG.f35750b;
+                if (!c3261gI7.A().equals("type.googleapis.com/google.crypto.tink.ChaCha20Poly1305Key")) {
+                    throw new IllegalArgumentException("Wrong type URL in call to ChaCha20Poly1305ProtoSerialization.parseParameters: ".concat(String.valueOf(c3261gI7.A())));
                 }
                 try {
-                    JK B15 = c3238gI7.B();
-                    PK pk7 = PK.f26757a;
-                    int i13 = BK.f23877a;
-                    HH.A(B15, PK.f26758b);
-                    return new TE(AbstractC3934tF.b(c4151xG.f34970c));
-                } catch (C3295hL e15) {
+                    JK B14 = c3261gI7.B();
+                    PK pk7 = PK.f27540a;
+                    int i12 = BK.f24648a;
+                    HH.A(B14, PK.f27541b);
+                    return new TE(AbstractC3957tF.b(c4174xG.f35751c));
+                } catch (C3318hL e15) {
                     throw new GeneralSecurityException("Parsing ChaCha20Poly1305Parameters failed: ", e15);
                 }
         }
     }
 
     @Override // com.google.android.gms.internal.ads.SF
-    public WC d(C4097wG c4097wG) {
-        C3879sE c3879sE;
+    public WC d(C4120wG c4120wG) {
+        C3902sE c3902sE;
         int i = 19;
-        boolean z3 = false;
-        switch (this.f28129n) {
+        boolean z6 = false;
+        switch (this.f28926n) {
             case 3:
-                C3504lG c3504lG = ZE.f28857a;
-                if (!c4097wG.f34818a.equals("type.googleapis.com/google.crypto.tink.KmsAeadKey")) {
+                C3527lG c3527lG = ZE.f29637a;
+                if (!c4120wG.f35587a.equals("type.googleapis.com/google.crypto.tink.KmsAeadKey")) {
                     throw new IllegalArgumentException("Wrong type URL in call to LegacyKmsAeadProtoSerialization.parseKey");
                 }
                 try {
-                    JK jk = c4097wG.f34820c;
-                    PK pk = PK.f26757a;
-                    int i6 = BK.f23877a;
-                    C3829rI C8 = C3829rI.C(jk, PK.f26758b);
+                    JK jk = c4120wG.f35589c;
+                    PK pk = PK.f27540a;
+                    int i4 = BK.f24648a;
+                    C3852rI C8 = C3852rI.C(jk, PK.f27541b);
                     if (C8.A() != 0) {
                         String valueOf = String.valueOf(C8);
                         StringBuilder sb = new StringBuilder(valueOf.length() + 49);
@@ -452,29 +452,29 @@ public final /* synthetic */ class VE implements InterfaceC3827rG, InterfaceC345
                         throw new GeneralSecurityException(sb.toString());
                     }
                     String A9 = C8.B().A();
-                    C3933tE c3933tE = c4097wG.f34822e;
-                    if (c3933tE == C3933tE.f34230d) {
-                        c3879sE = C3879sE.f33916k;
+                    C3956tE c3956tE = c4120wG.f35591e;
+                    if (c3956tE == C3956tE.f35016d) {
+                        c3902sE = C3902sE.f34684k;
                     } else {
-                        if (c3933tE != C3933tE.f34232f) {
-                            throw new GeneralSecurityException("Unable to parse OutputPrefixType: ".concat(c3933tE.f34252b));
+                        if (c3956tE != C3956tE.f35018f) {
+                            throw new GeneralSecurityException("Unable to parse OutputPrefixType: ".concat(c3956tE.f35038b));
                         }
-                        c3879sE = C3879sE.f33917l;
+                        c3902sE = C3902sE.f34685l;
                     }
-                    return XE.j(new YE(A9, c3879sE), c4097wG.f34823f);
-                } catch (C3295hL e9) {
+                    return XE.j(new YE(A9, c3902sE), c4120wG.f35592f);
+                } catch (C3318hL e9) {
                     throw new GeneralSecurityException("Parsing KmsAeadKey failed: ", e9);
                 }
             case 7:
-                C3504lG c3504lG2 = AbstractC3020cF.f29435a;
-                if (!c4097wG.f34818a.equals("type.googleapis.com/google.crypto.tink.KmsEnvelopeAeadKey")) {
+                C3527lG c3527lG2 = AbstractC3043cF.f30218a;
+                if (!c4120wG.f35587a.equals("type.googleapis.com/google.crypto.tink.KmsEnvelopeAeadKey")) {
                     throw new IllegalArgumentException("Wrong type URL in call to LegacyKmsEnvelopeAeadProtoSerialization.parseKey");
                 }
                 try {
-                    JK jk2 = c4097wG.f34820c;
-                    PK pk2 = PK.f26757a;
-                    int i9 = BK.f23877a;
-                    C4045vI C9 = C4045vI.C(jk2, PK.f26758b);
+                    JK jk2 = c4120wG.f35589c;
+                    PK pk2 = PK.f27540a;
+                    int i6 = BK.f24648a;
+                    C4068vI C9 = C4068vI.C(jk2, PK.f27541b);
                     if (C9.A() != 0) {
                         String valueOf2 = String.valueOf(C9);
                         StringBuilder sb2 = new StringBuilder(valueOf2.length() + 58);
@@ -482,26 +482,26 @@ public final /* synthetic */ class VE implements InterfaceC3827rG, InterfaceC345
                         sb2.append(valueOf2);
                         throw new GeneralSecurityException(sb2.toString());
                     }
-                    C4153xI B9 = C9.B();
-                    C3933tE c3933tE2 = c4097wG.f34822e;
-                    C3933tE c3933tE3 = C3933tE.f34230d;
-                    if (c3933tE2 != c3933tE3 && c3933tE2 != (c3933tE3 = C3933tE.f34232f)) {
-                        throw new GeneralSecurityException("Unable to parse OutputPrefixType: ".concat(c3933tE2.f34252b));
+                    C4176xI B3 = C9.B();
+                    C3956tE c3956tE2 = c4120wG.f35591e;
+                    C3956tE c3956tE3 = C3956tE.f35016d;
+                    if (c3956tE2 != c3956tE3 && c3956tE2 != (c3956tE3 = C3956tE.f35018f)) {
+                        throw new GeneralSecurityException("Unable to parse OutputPrefixType: ".concat(c3956tE2.f35038b));
                     }
-                    return C2913aF.j(AbstractC3020cF.c(B9, c3933tE3), c4097wG.f34823f);
-                } catch (C3295hL e10) {
+                    return C2936aF.j(AbstractC3043cF.c(B3, c3956tE3), c4120wG.f35592f);
+                } catch (C3318hL e10) {
                     throw new GeneralSecurityException("Parsing KmsEnvelopeAeadKey failed: ", e10);
                 }
             case 13:
-                C3504lG c3504lG3 = AbstractC3449kF.f31384a;
-                if (!c4097wG.f34818a.equals("type.googleapis.com/google.crypto.tink.AesCtrHmacAeadKey")) {
+                C3527lG c3527lG3 = AbstractC3472kF.f32163a;
+                if (!c4120wG.f35587a.equals("type.googleapis.com/google.crypto.tink.AesCtrHmacAeadKey")) {
                     throw new IllegalArgumentException("Wrong type URL in call to AesCtrHmacAeadProtoSerialization.parseKey");
                 }
                 try {
-                    JK jk3 = c4097wG.f34820c;
-                    PK pk3 = PK.f26757a;
-                    int i10 = BK.f23877a;
-                    C3291hH D8 = C3291hH.D(jk3, PK.f26758b);
+                    JK jk3 = c4120wG.f35589c;
+                    PK pk3 = PK.f27540a;
+                    int i9 = BK.f24648a;
+                    C3314hH D8 = C3314hH.D(jk3, PK.f27541b);
                     if (D8.A() != 0) {
                         throw new GeneralSecurityException("Only version 0 keys are accepted");
                     }
@@ -516,55 +516,55 @@ public final /* synthetic */ class VE implements InterfaceC3827rG, InterfaceC345
                     t82.h(D8.C().C().f());
                     t82.l(D8.B().B().A());
                     t82.m(D8.C().B().B());
-                    t82.f27699x = AbstractC3449kF.c(D8.C().B().A());
-                    t82.f27700y = AbstractC3449kF.b(c4097wG.f34822e);
+                    t82.f28482x = AbstractC3472kF.c(D8.C().B().A());
+                    t82.f28483y = AbstractC3472kF.b(c4120wG.f35591e);
                     GE p9 = t82.p();
-                    C2570Gf c2570Gf = new C2570Gf(28);
-                    c2570Gf.f25042u = p9;
-                    c2570Gf.f25043v = new C3105du(8, C3240gK.a(D8.B().C().a()));
-                    c2570Gf.f25044w = new C3105du(8, C3240gK.a(D8.C().C().a()));
-                    c2570Gf.f25045x = c4097wG.f34823f;
-                    return c2570Gf.y();
-                } catch (C3295hL unused) {
+                    C2590Gf c2590Gf = new C2590Gf(28);
+                    c2590Gf.f25830u = p9;
+                    c2590Gf.f25831v = new C3128du(8, C3263gK.a(D8.B().C().a()));
+                    c2590Gf.f25832w = new C3128du(8, C3263gK.a(D8.C().C().a()));
+                    c2590Gf.f25833x = c4120wG.f35592f;
+                    return c2590Gf.y();
+                } catch (C3318hL unused) {
                     throw new GeneralSecurityException("Parsing AesCtrHmacAeadKey failed");
                 }
             case 17:
-                C3504lG c3504lG4 = AbstractC3503lF.f31750a;
-                if (!c4097wG.f34818a.equals("type.googleapis.com/google.crypto.tink.AesEaxKey")) {
+                C3527lG c3527lG4 = AbstractC3526lF.f32530a;
+                if (!c4120wG.f35587a.equals("type.googleapis.com/google.crypto.tink.AesEaxKey")) {
                     throw new IllegalArgumentException("Wrong type URL in call to AesEaxProtoSerialization.parseKey");
                 }
                 try {
-                    JK jk4 = c4097wG.f34820c;
-                    PK pk4 = PK.f26757a;
-                    int i11 = BK.f23877a;
-                    C3882sH D9 = C3882sH.D(jk4, PK.f26758b);
+                    JK jk4 = c4120wG.f35589c;
+                    PK pk4 = PK.f27540a;
+                    int i10 = BK.f24648a;
+                    C3905sH D9 = C3905sH.D(jk4, PK.f27541b);
                     if (D9.A() != 0) {
                         throw new GeneralSecurityException("Only version 0 keys are accepted");
                     }
-                    C2570Gf c2570Gf2 = new C2570Gf(29);
-                    c2570Gf2.i(D9.C().f());
-                    c2570Gf2.p(D9.B().A());
-                    c2570Gf2.s();
-                    c2570Gf2.f25045x = AbstractC3503lF.b(c4097wG.f34822e);
-                    JE z6 = c2570Gf2.z();
-                    C4274ze c4274ze = new C4274ze(19, false);
-                    c4274ze.f35360u = z6;
-                    c4274ze.f35361v = new C3105du(8, C3240gK.a(D9.C().a()));
-                    c4274ze.f35362w = c4097wG.f34823f;
-                    return c4274ze.s();
-                } catch (C3295hL unused2) {
+                    C2590Gf c2590Gf2 = new C2590Gf(29);
+                    c2590Gf2.h(D9.C().f());
+                    c2590Gf2.o(D9.B().A());
+                    c2590Gf2.r();
+                    c2590Gf2.f25833x = AbstractC3526lF.b(c4120wG.f35591e);
+                    JE z9 = c2590Gf2.z();
+                    C4297ze c4297ze = new C4297ze(19, false);
+                    c4297ze.f36133u = z9;
+                    c4297ze.f36134v = new C3128du(8, C3263gK.a(D9.C().a()));
+                    c4297ze.f36135w = c4120wG.f35592f;
+                    return c4297ze.s();
+                } catch (C3318hL unused2) {
                     throw new GeneralSecurityException("Parsing AesEaxKey failed");
                 }
             case 21:
-                C3504lG c3504lG5 = AbstractC3665oF.f32884a;
-                if (!c4097wG.f34818a.equals("type.googleapis.com/google.crypto.tink.AesGcmKey")) {
+                C3527lG c3527lG5 = AbstractC3688oF.f33671a;
+                if (!c4120wG.f35587a.equals("type.googleapis.com/google.crypto.tink.AesGcmKey")) {
                     throw new IllegalArgumentException("Wrong type URL in call to AesGcmProtoSerialization.parseKey");
                 }
                 try {
-                    JK jk5 = c4097wG.f34820c;
-                    PK pk5 = PK.f26757a;
-                    int i12 = BK.f23877a;
-                    C4206yH C10 = C4206yH.C(jk5, PK.f26758b);
+                    JK jk5 = c4120wG.f35589c;
+                    PK pk5 = PK.f27540a;
+                    int i11 = BK.f24648a;
+                    C4229yH C10 = C4229yH.C(jk5, PK.f27541b);
                     if (C10.A() != 0) {
                         throw new GeneralSecurityException("Only version 0 keys are accepted");
                     }
@@ -572,81 +572,81 @@ public final /* synthetic */ class VE implements InterfaceC3827rG, InterfaceC345
                     me.a(C10.B().f());
                     me.c();
                     me.f();
-                    me.f26273e = AbstractC3665oF.b(c4097wG.f34822e);
-                    NE i13 = me.i();
-                    C3481ku c3481ku = new C3481ku(i, z3);
-                    c3481ku.f31663u = i13;
-                    c3481ku.f31664v = new C3105du(8, C3240gK.a(C10.B().a()));
-                    c3481ku.f31665w = c4097wG.f34823f;
-                    return c3481ku.v();
-                } catch (C3295hL unused3) {
+                    me.f27064e = AbstractC3688oF.b(c4120wG.f35591e);
+                    NE i12 = me.i();
+                    C3504ku c3504ku = new C3504ku(i, z6);
+                    c3504ku.f32445u = i12;
+                    c3504ku.f32446v = new C3128du(8, C3263gK.a(C10.B().a()));
+                    c3504ku.f32447w = c4120wG.f35592f;
+                    return c3504ku.u();
+                } catch (C3318hL unused3) {
                     throw new GeneralSecurityException("Parsing AesGcmKey failed");
                 }
             case 25:
-                C3504lG c3504lG6 = AbstractC3773qF.f33223a;
-                if (!c4097wG.f34818a.equals("type.googleapis.com/google.crypto.tink.AesGcmSivKey")) {
+                C3527lG c3527lG6 = AbstractC3796qF.f34007a;
+                if (!c4120wG.f35587a.equals("type.googleapis.com/google.crypto.tink.AesGcmSivKey")) {
                     throw new IllegalArgumentException("Wrong type URL in call to AesGcmSivProtoSerialization.parseKey");
                 }
                 try {
-                    JK jk6 = c4097wG.f34820c;
-                    PK pk6 = PK.f26757a;
-                    int i14 = BK.f23877a;
-                    CH C11 = CH.C(jk6, PK.f26758b);
+                    JK jk6 = c4120wG.f35589c;
+                    PK pk6 = PK.f27540a;
+                    int i13 = BK.f24648a;
+                    CH C11 = CH.C(jk6, PK.f27541b);
                     if (C11.A() != 0) {
                         throw new GeneralSecurityException("Only version 0 keys are accepted");
                     }
-                    int f3 = C11.B().f();
-                    if (f3 != 16 && f3 != 32) {
-                        throw new InvalidAlgorithmParameterException(String.format("Invalid key size %d; only 16-byte and 32-byte AES keys are supported", Integer.valueOf(f3)));
+                    int f2 = C11.B().f();
+                    if (f2 != 16 && f2 != 32) {
+                        throw new InvalidAlgorithmParameterException(String.format("Invalid key size %d; only 16-byte and 32-byte AES keys are supported", Integer.valueOf(f2)));
                     }
-                    QE qe = new QE(f3, AbstractC3773qF.b(c4097wG.f34822e));
-                    C4274ze c4274ze2 = new C4274ze(20, false);
-                    c4274ze2.f35360u = qe;
-                    c4274ze2.f35361v = new C3105du(8, C3240gK.a(C11.B().a()));
-                    c4274ze2.f35362w = c4097wG.f34823f;
-                    return c4274ze2.t();
-                } catch (C3295hL unused4) {
+                    QE qe = new QE(f2, AbstractC3796qF.b(c4120wG.f35591e));
+                    C4297ze c4297ze2 = new C4297ze(20, false);
+                    c4297ze2.f36133u = qe;
+                    c4297ze2.f36134v = new C3128du(8, C3263gK.a(C11.B().a()));
+                    c4297ze2.f36135w = c4120wG.f35592f;
+                    return c4297ze2.t();
+                } catch (C3318hL unused4) {
                     throw new GeneralSecurityException("Parsing AesGcmSivKey failed");
                 }
             default:
-                C3504lG c3504lG7 = AbstractC3934tF.f34253a;
-                if (!c4097wG.f34818a.equals("type.googleapis.com/google.crypto.tink.ChaCha20Poly1305Key")) {
+                C3527lG c3527lG7 = AbstractC3957tF.f35039a;
+                if (!c4120wG.f35587a.equals("type.googleapis.com/google.crypto.tink.ChaCha20Poly1305Key")) {
                     throw new IllegalArgumentException("Wrong type URL in call to ChaCha20Poly1305ProtoSerialization.parseKey");
                 }
                 try {
-                    JK jk7 = c4097wG.f34820c;
-                    PK pk7 = PK.f26757a;
-                    int i15 = BK.f23877a;
-                    GH C12 = GH.C(jk7, PK.f26758b);
+                    JK jk7 = c4120wG.f35589c;
+                    PK pk7 = PK.f27540a;
+                    int i14 = BK.f24648a;
+                    GH C12 = GH.C(jk7, PK.f27541b);
                     if (C12.A() == 0) {
-                        return RE.j(AbstractC3934tF.b(c4097wG.f34822e), new C3105du(8, C3240gK.a(C12.B().a())), c4097wG.f34823f);
+                        return RE.j(AbstractC3957tF.b(c4120wG.f35591e), new C3128du(8, C3263gK.a(C12.B().a())), c4120wG.f35592f);
                     }
                     throw new GeneralSecurityException("Only version 0 keys are accepted");
-                } catch (C3295hL unused5) {
+                } catch (C3318hL unused5) {
                     throw new GeneralSecurityException("Parsing ChaCha20Poly1305Key failed");
                 }
         }
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3827rG, com.google.android.gms.internal.ads.UF
+    @Override // com.google.android.gms.internal.ads.InterfaceC3850rG, com.google.android.gms.internal.ads.UF
     public Object b(WC wc) {
-        switch (this.f28129n) {
+        switch (this.f28926n) {
             case 0:
-                XF xf = WE.f28326a;
-                AbstractC3718pE.a(((C2913aF) wc).f29043b.f29249b);
+                XF xf = WE.f29124a;
+                AbstractC3741pE.a(((C2936aF) wc).f29813b.f30037b);
                 throw null;
             case 9:
-                C3127eF c3127eF = (C3127eF) wc;
-                c3127eF.getClass();
-                return new BF(((C3240gK) c3127eF.f29902c.f29859u).b(), c3127eF.f29903d, c3127eF.f29901b.f30550b);
+                C3150eF c3150eF = (C3150eF) wc;
+                c3150eF.getClass();
+                return new BF(((C3263gK) c3150eF.f30694c.f30647u).b(), c3150eF.f30695d, c3150eF.f30693b.f31316b);
             default:
-                C3289hF c3289hF = (C3289hF) wc;
-                C3774qG c3774qG = AbstractC3343iF.f31014a;
+                C3312hF c3312hF = (C3312hF) wc;
+                C3797qG c3797qG = AbstractC3366iF.f31787a;
                 try {
-                    C3826rF.b();
-                    return new DF(((C3240gK) c3289hF.f30751c.f29859u).b(), c3289hF.f30752d.b(), C3826rF.b().getProvider());
+                    C3849rF.b();
+                    return new DF(((C3263gK) c3312hF.f31517c.f30647u).b(), c3312hF.f31518d.b(), C3849rF.b().getProvider());
                 } catch (GeneralSecurityException unused) {
-                    return new C4204yF(3, ((C3240gK) c3289hF.f30751c.f29859u).b(), c3289hF.f30752d.b());
+                    return new C4227yF(3, ((C3263gK) c3312hF.f31517c.f30647u).b(), c3312hF.f31518d.b());
                 }
         }
     }

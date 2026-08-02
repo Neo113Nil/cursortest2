@@ -12,30 +12,30 @@ public final class i extends a {
 
     @Override // com.anythink.basead.b.b.a, com.anythink.basead.b.b.m
     public final n a() {
-        w wVar = this.f5744c;
+        w wVar = this.f6530c;
         String ar = wVar != null ? wVar.ar() : "";
         if (TextUtils.isEmpty(ar)) {
             return n.a(false, "MarketUrlClickAction execute fail with empty url");
         }
-        b bVar = this.f5747f;
+        b bVar = this.f6533f;
         if (bVar != null) {
             bVar.b();
-            this.f5747f.a();
+            this.f6533f.a();
         }
-        com.anythink.core.basead.a.d b9 = com.anythink.core.basead.a.e.b(this.f5743b, ar, this.f5744c, this.f5745d);
+        com.anythink.core.basead.a.d b9 = com.anythink.core.basead.a.e.b(this.f6529b, ar, this.f6530c, this.f6531d);
         if (b9.a() != 0) {
-            com.anythink.core.common.u.e.a(this.f5745d, this.f5744c, ar, "0", 2, 0, b9.b());
+            com.anythink.core.common.u.e.a(this.f6531d, this.f6530c, ar, "0", 2, 0, b9.b());
             return n.a(false, "MarketUrlClickAction execute fail");
         }
-        k kVar = this.f5746e;
+        k kVar = this.f6532e;
         if (kVar != null) {
             kVar.b();
         }
-        b bVar2 = this.f5747f;
+        b bVar2 = this.f6533f;
         if (bVar2 != null) {
             bVar2.c();
         }
-        com.anythink.core.common.u.e.a(this.f5745d, this.f5744c, ar, "1", 2, 0, b9.b());
+        com.anythink.core.common.u.e.a(this.f6531d, this.f6530c, ar, "1", 2, 0, b9.b());
         return n.a(true, "MarketUrlClickAction execute success");
     }
 }

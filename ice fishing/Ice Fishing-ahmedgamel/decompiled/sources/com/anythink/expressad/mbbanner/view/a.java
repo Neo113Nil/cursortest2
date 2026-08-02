@@ -17,21 +17,21 @@ import java.util.List;
 public final class a extends b {
 
     /* renamed from: a, reason: collision with root package name */
-    String f19998a;
+    String f20785a;
 
     /* renamed from: b, reason: collision with root package name */
-    List<d> f19999b;
+    List<d> f20786b;
 
     /* renamed from: c, reason: collision with root package name */
-    com.anythink.expressad.mbbanner.a.c.a f20000c;
+    com.anythink.expressad.mbbanner.a.c.a f20787c;
 
     /* renamed from: d, reason: collision with root package name */
-    private final String f20001d = "BannerWebViewClient";
+    private final String f20788d = "BannerWebViewClient";
 
     public a(String str, List<d> list, com.anythink.expressad.mbbanner.a.c.a aVar) {
-        this.f19998a = str;
-        this.f19999b = list;
-        this.f20000c = aVar;
+        this.f20785a = str;
+        this.f20786b = list;
+        this.f20787c = aVar;
     }
 
     @Override // android.webkit.WebViewClient
@@ -59,17 +59,17 @@ public final class a extends b {
     public final boolean shouldOverrideUrlLoading(WebView webView, String str) {
         try {
             BaseWebView baseWebView = (BaseWebView) webView;
-            if (System.currentTimeMillis() - baseWebView.lastTouchTime > com.anythink.expressad.b.c.a.f18198c) {
-                d dVar = this.f19999b.get(0);
+            if (System.currentTimeMillis() - baseWebView.lastTouchTime > com.anythink.expressad.b.c.a.f18985c) {
+                d dVar = this.f20786b.get(0);
                 baseWebView.getUrl();
                 com.anythink.expressad.b.c.a.a(dVar);
                 return false;
             }
-            if (this.f19999b.size() > 1) {
+            if (this.f20786b.size() > 1) {
                 t.b().g().startActivity(new Intent("android.intent.action.VIEW", Uri.parse(str)));
                 str = null;
             }
-            com.anythink.expressad.mbbanner.a.c.a aVar = this.f20000c;
+            com.anythink.expressad.mbbanner.a.c.a aVar = this.f20787c;
             if (aVar != null) {
                 aVar.a(false, str);
             }

@@ -8,5 +8,5 @@ public interface ProxyControllerBoundaryInterface {
 
     void setProxyOverride(String[][] strArr, String[] strArr2, Runnable runnable, Executor executor);
 
-    void setProxyOverride(String[][] strArr, String[] strArr2, Runnable runnable, Executor executor, boolean z3);
+    void setProxyOverride(String[][] strArr, String[] strArr2, Runnable runnable, Executor executor, boolean z6);
 }

@@ -15,7 +15,7 @@ public abstract class h implements a {
     }
 
     @Override // com.anythink.basead.g.a
-    public void onDeeplinkCallback(boolean z3) {
+    public void onDeeplinkCallback(boolean z6) {
     }
 
     @Override // com.anythink.basead.g.a

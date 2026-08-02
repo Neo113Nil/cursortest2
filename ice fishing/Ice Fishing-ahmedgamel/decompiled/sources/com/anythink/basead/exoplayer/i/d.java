@@ -7,10 +7,10 @@ import com.anythink.basead.exoplayer.i.f;
 public final class d extends b {
 
     /* renamed from: a, reason: collision with root package name */
-    private final int f7962a;
+    private final int f8748a;
 
     /* renamed from: b, reason: collision with root package name */
-    private final Object f7963b;
+    private final Object f8749b;
 
     public d(ae aeVar, int i) {
         this(aeVar, i, 0, null);
@@ -27,47 +27,47 @@ public final class d extends b {
 
     @Override // com.anythink.basead.exoplayer.i.f
     public final int c() {
-        return this.f7962a;
+        return this.f8748a;
     }
 
     @Override // com.anythink.basead.exoplayer.i.f
     public final Object d() {
-        return this.f7963b;
+        return this.f8749b;
     }
 
-    public d(ae aeVar, int i, int i6, Object obj) {
+    public d(ae aeVar, int i, int i4, Object obj) {
         super(aeVar, i);
-        this.f7962a = i6;
-        this.f7963b = obj;
+        this.f8748a = i4;
+        this.f8749b = obj;
     }
 
     public static final class a implements f.a {
 
         /* renamed from: a, reason: collision with root package name */
-        private final int f7964a;
+        private final int f8750a;
 
         /* renamed from: b, reason: collision with root package name */
-        private final Object f7965b;
+        private final Object f8751b;
 
         public a() {
-            this.f7964a = 0;
-            this.f7965b = null;
+            this.f8750a = 0;
+            this.f8751b = null;
         }
 
         private d b(ae aeVar, int... iArr) {
             com.anythink.basead.exoplayer.k.a.a(iArr.length == 1);
-            return new d(aeVar, iArr[0], this.f7964a, this.f7965b);
+            return new d(aeVar, iArr[0], this.f8750a, this.f8751b);
         }
 
         @Override // com.anythink.basead.exoplayer.i.f.a
         public final /* synthetic */ f a(ae aeVar, int[] iArr) {
             com.anythink.basead.exoplayer.k.a.a(iArr.length == 1);
-            return new d(aeVar, iArr[0], this.f7964a, this.f7965b);
+            return new d(aeVar, iArr[0], this.f8750a, this.f8751b);
         }
 
         private a(int i, Object obj) {
-            this.f7964a = i;
-            this.f7965b = obj;
+            this.f8750a = i;
+            this.f8751b = obj;
         }
     }
 }

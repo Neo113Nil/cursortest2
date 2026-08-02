@@ -9,26 +9,26 @@ import org.json.JSONObject;
 public abstract class bu {
 
     /* renamed from: S, reason: collision with root package name */
-    public static final String f13759S = "ofm_tid_key";
+    public static final String f14545S = "ofm_tid_key";
 
     /* renamed from: T, reason: collision with root package name */
-    public static final int f13760T = 1;
+    public static final int f14546T = 1;
 
     /* renamed from: U, reason: collision with root package name */
-    public static final int f13761U = 2;
+    public static final int f14547U = 2;
 
     /* renamed from: V, reason: collision with root package name */
-    public static final int f13762V = 3;
+    public static final int f14548V = 3;
 
     /* renamed from: W, reason: collision with root package name */
-    public static final int f13763W = 4;
+    public static final int f14549W = 4;
 
     /* renamed from: X, reason: collision with root package name */
-    public static final int f13764X = 5;
+    public static final int f14550X = 5;
     public static final int Y = 6;
 
     /* renamed from: Z, reason: collision with root package name */
-    public static final int f13765Z = 7;
+    public static final int f14551Z = 7;
     public static final int aA = 5;
     public static final int aB = 8;
     public static final int aC = 5;
@@ -68,7 +68,7 @@ public abstract class bu {
     public static final int az = 4;
 
     /* renamed from: a, reason: collision with root package name */
-    private String f13766a;
+    private String f14552a;
     protected String aL;
     protected String aM;
     protected String aN;
@@ -83,25 +83,25 @@ public abstract class bu {
     protected int aW = -1;
 
     /* renamed from: b, reason: collision with root package name */
-    private String f13767b;
+    private String f14553b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f13768c;
+    private int f14554c;
 
     /* renamed from: d, reason: collision with root package name */
-    private JSONObject f13769d;
+    private JSONObject f14555d;
 
     /* renamed from: e, reason: collision with root package name */
-    private int f13770e;
+    private int f14556e;
 
     /* renamed from: f, reason: collision with root package name */
-    private Object f13771f;
+    private Object f14557f;
 
     /* renamed from: g, reason: collision with root package name */
-    private JSONObject f13772g;
+    private JSONObject f14558g;
 
     /* renamed from: h, reason: collision with root package name */
-    private String f13773h;
+    private String f14559h;
     private String i;
 
     private int c() {
@@ -121,15 +121,15 @@ public abstract class bu {
     }
 
     public final void D(String str) {
-        this.f13773h = str;
+        this.f14559h = str;
     }
 
     public final void E(String str) {
-        this.f13766a = str;
+        this.f14552a = str;
     }
 
     public final void F(String str) {
-        this.f13767b = str;
+        this.f14553b = str;
     }
 
     public final void G(String str) {
@@ -166,36 +166,36 @@ public abstract class bu {
                 jSONObject.put("format", Integer.parseInt(this.aN));
             }
             jSONObject.put("ps_id", com.anythink.core.common.d.t.b().r());
-            String g4 = com.anythink.core.common.d.t.b().g(this.aL);
-            if (!TextUtils.isEmpty(g4)) {
-                jSONObject.put("sessionid", g4);
+            String g9 = com.anythink.core.common.d.t.b().g(this.aL);
+            if (!TextUtils.isEmpty(g9)) {
+                jSONObject.put("sessionid", g9);
             }
-            int i6 = this.aW;
-            if (i6 != -1) {
-                jSONObject.put("traffic_group_id", i6);
+            int i4 = this.aW;
+            if (i4 != -1) {
+                jSONObject.put("traffic_group_id", i4);
             }
             if (this.aV == 1) {
                 jSONObject.put("ofm_tid", this.aU);
                 jSONObject.put("ofm_system", this.aT);
-                jSONObject.put(com.anythink.core.common.m.e.f14622N, this.aV);
+                jSONObject.put(com.anythink.core.common.m.e.f15408N, this.aV);
             }
             jSONObject.put("asid", this.aO);
-            jSONObject.put(l.a.f17401T, this.f13766a);
-            jSONObject.put(com.anythink.core.common.m.e.ai, this.f13767b);
-            JSONObject jSONObject2 = this.f13769d;
+            jSONObject.put(l.a.f18188T, this.f14552a);
+            jSONObject.put(com.anythink.core.common.m.e.ai, this.f14553b);
+            JSONObject jSONObject2 = this.f14555d;
             if (jSONObject2 != null) {
                 jSONObject.put(l.a.aa, jSONObject2);
             }
-            int i9 = this.f13770e;
-            if (i9 > 0) {
-                jSONObject.put("wf2_mode", i9);
+            int i6 = this.f14556e;
+            if (i6 > 0) {
+                jSONObject.put("wf2_mode", i6);
             }
-            JSONObject jSONObject3 = this.f13772g;
+            JSONObject jSONObject3 = this.f14558g;
             if (jSONObject3 != null) {
                 jSONObject.put("adap_c", jSONObject3);
             }
-            if (!TextUtils.isEmpty(this.f13773h)) {
-                jSONObject.put("x_c", new JSONArray(this.f13773h));
+            if (!TextUtils.isEmpty(this.f14559h)) {
+                jSONObject.put("x_c", new JSONArray(this.f14559h));
             }
             if (!TextUtils.isEmpty(aM())) {
                 jSONObject.put("o_r", aM());
@@ -208,19 +208,19 @@ public abstract class bu {
     }
 
     public final void a(JSONObject jSONObject) {
-        this.f13772g = jSONObject;
+        this.f14558g = jSONObject;
     }
 
     public final int aA() {
-        return this.f13768c;
+        return this.f14554c;
     }
 
     public final String aB() {
-        return this.f13766a;
+        return this.f14552a;
     }
 
     public final String aC() {
-        return this.f13767b;
+        return this.f14553b;
     }
 
     public final void aD() {
@@ -260,15 +260,15 @@ public abstract class bu {
         str.getClass();
         switch (str) {
             case "0":
-                return com.anythink.expressad.foundation.g.a.f.f19119a;
+                return com.anythink.expressad.foundation.g.a.f.f19906a;
             case "1":
                 return "reward";
             case "2":
-                return com.anythink.expressad.foundation.g.a.f.f19123e;
+                return com.anythink.expressad.foundation.g.a.f.f19910e;
             case "3":
                 return "inter";
             case "4":
-                return com.anythink.expressad.foundation.g.a.f.f19124f;
+                return com.anythink.expressad.foundation.g.a.f.f19911f;
             case "50":
                 return "media_video";
             default:
@@ -281,11 +281,11 @@ public abstract class bu {
     }
 
     public final void al(int i) {
-        this.f13770e = i;
+        this.f14556e = i;
     }
 
     public final void am(int i) {
-        this.f13768c = i;
+        this.f14554c = i;
     }
 
     public final void an(int i) {
@@ -301,19 +301,19 @@ public abstract class bu {
     }
 
     public final JSONObject ax() {
-        return this.f13772g;
+        return this.f14558g;
     }
 
     public final Object ay() {
-        return this.f13771f;
+        return this.f14557f;
     }
 
     public final String az() {
-        return this.f13773h;
+        return this.f14559h;
     }
 
     public final void b(JSONObject jSONObject) {
-        this.f13769d = jSONObject;
+        this.f14555d = jSONObject;
     }
 
     private int b() {
@@ -321,11 +321,11 @@ public abstract class bu {
     }
 
     public final void a(Object obj) {
-        this.f13771f = obj;
+        this.f14557f = obj;
     }
 
     private JSONObject a() {
-        return this.f13769d;
+        return this.f14555d;
     }
 
     private void b(int i) {

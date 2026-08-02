@@ -4,25 +4,25 @@ package com.google.android.gms.internal.ads;
 public final class T6 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final byte[] f27694a;
+    public final byte[] f28477a;
 
     public T6(byte[] bArr, int i) {
         switch (i) {
             case 1:
-                this.f27694a = bArr;
+                this.f28477a = bArr;
                 break;
             default:
-                this.f27694a = new byte[256];
-                for (int i6 = 0; i6 < 256; i6++) {
-                    this.f27694a[i6] = (byte) i6;
+                this.f28477a = new byte[256];
+                for (int i4 = 0; i4 < 256; i4++) {
+                    this.f28477a[i4] = (byte) i4;
                 }
-                int i9 = 0;
-                for (int i10 = 0; i10 < 256; i10++) {
-                    byte[] bArr2 = this.f27694a;
-                    byte b9 = bArr2[i10];
-                    i9 = (i9 + b9 + bArr[i10 % bArr.length]) & com.anythink.basead.exoplayer.k.p.f8473b;
-                    bArr2[i10] = bArr2[i9];
-                    bArr2[i9] = b9;
+                int i6 = 0;
+                for (int i9 = 0; i9 < 256; i9++) {
+                    byte[] bArr2 = this.f28477a;
+                    byte b9 = bArr2[i9];
+                    i6 = (i6 + b9 + bArr[i9 % bArr.length]) & com.anythink.basead.exoplayer.k.p.f9259b;
+                    bArr2[i9] = bArr2[i6];
+                    bArr2[i6] = b9;
                 }
                 break;
         }

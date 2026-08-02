@@ -15,10 +15,10 @@ public final class TI extends SQLiteOpenHelper {
     public static final String A03;
     public final TH A00;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 67);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 67);
         }
         return new String(copyOfRange);
     }
@@ -38,8 +38,8 @@ public final class TI extends SQLiteOpenHelper {
         A03 = TI.class.getSimpleName();
     }
 
-    public TI(C1836ge c1836ge, TH th) {
-        super(c1836ge, A01(c1836ge), (SQLiteDatabase.CursorFactory) null, 4);
+    public TI(C1856ge c1856ge, TH th) {
+        super(c1856ge, A01(c1856ge), (SQLiteDatabase.CursorFactory) null, 4);
         if (th != null) {
             this.A00 = th;
             return;
@@ -47,16 +47,16 @@ public final class TI extends SQLiteOpenHelper {
         throw new IllegalArgumentException(A00(41, 32, 2));
     }
 
-    public static String A01(C1836ge c1836ge) {
+    public static String A01(C1856ge c1856ge) {
         Locale locale = Locale.US;
         Object[] objArr = {A00(0, 0, 19)};
-        String A00 = A00(a.f21727Q, 8, 41);
+        String A00 = A00(a.f22514Q, 8, 41);
         String format = String.format(locale, A00, objArr);
-        if (!C1290Up.A2k(c1836ge)) {
+        if (!C1310Up.A2k(c1856ge)) {
             return format;
         }
-        String defaultDbName = c1836ge.getPackageName();
-        String processName = ProcessUtils.getProcessName(c1836ge);
+        String defaultDbName = c1856ge.getPackageName();
+        String processName = ProcessUtils.getProcessName(c1856ge);
         if (!defaultDbName.equals(processName) && !TextUtils.isEmpty(processName)) {
             String defaultDbName2 = String.format(Locale.US, A00, '_' + processName);
             return defaultDbName2;
@@ -72,7 +72,7 @@ public final class TI extends SQLiteOpenHelper {
     }
 
     @Override // android.database.sqlite.SQLiteOpenHelper
-    public final void onDowngrade(SQLiteDatabase sQLiteDatabase, int i, int i6) {
+    public final void onDowngrade(SQLiteDatabase sQLiteDatabase, int i, int i4) {
         for (TL tl : this.A00.A0M()) {
             tl.A08(sQLiteDatabase);
             tl.A07(sQLiteDatabase);
@@ -88,12 +88,12 @@ public final class TI extends SQLiteOpenHelper {
     }
 
     @Override // android.database.sqlite.SQLiteOpenHelper
-    public final void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i6) {
-        if (i == 2 && i6 >= 3) {
+    public final void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i4) {
+        if (i == 2 && i4 >= 3) {
             sQLiteDatabase.execSQL(A00(73, 28, 105));
         }
-        if (i <= 3 && i6 >= 4) {
-            TF tf = C1788fs.A02;
+        if (i <= 3 && i4 >= 4) {
+            TF tf = C1808fs.A02;
             sQLiteDatabase.execSQL(A00(11, 30, 124) + tf.A01 + A00(0, 1, 52) + tf.A02 + A00(1, 10, 2));
         }
     }

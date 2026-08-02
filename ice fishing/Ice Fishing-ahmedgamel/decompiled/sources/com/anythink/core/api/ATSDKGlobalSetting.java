@@ -94,12 +94,12 @@ public class ATSDKGlobalSetting {
         return null;
     }
 
-    public static void needTraminiInfo(Context context, boolean z3) {
-        q.a(context).a(z3);
+    public static void needTraminiInfo(Context context, boolean z6) {
+        q.a(context).a(z6);
     }
 
-    public static void setDenyApi_getRunningAppProcesses(boolean z3) {
-        mDenyApi_getRunningAppProcesses = z3;
+    public static void setDenyApi_getRunningAppProcesses(boolean z6) {
+        mDenyApi_getRunningAppProcesses = z6;
     }
 
     public static void setDirectlySplashAdCTAButtongBgDrawable(Drawable drawable) {
@@ -116,8 +116,8 @@ public class ATSDKGlobalSetting {
         }
     }
 
-    public static void setDirectlySplashMuteIconVisible(boolean z3) {
-        mDirectlySplashMuteIconVisible = Boolean.valueOf(z3);
+    public static void setDirectlySplashMuteIconVisible(boolean z6) {
+        mDirectlySplashMuteIconVisible = Boolean.valueOf(z6);
     }
 
     public static void setDirectlySplashShakeButton(View view) {
@@ -126,12 +126,12 @@ public class ATSDKGlobalSetting {
         }
     }
 
-    public static void setEnableGetDeviceInfoInBg(boolean z3) {
-        enableGetDeviceInfoInBg = z3;
+    public static void setEnableGetDeviceInfoInBg(boolean z6) {
+        enableGetDeviceInfoInBg = z6;
     }
 
-    public static void setHideNavAndStatusBar(boolean z3) {
-        isHideNavAndStatusBar = z3;
+    public static void setHideNavAndStatusBar(boolean z6) {
+        isHideNavAndStatusBar = z6;
     }
 
     public static void setShakeControl(SHAKE_TYPE shake_type, List<String> list) {

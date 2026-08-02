@@ -21,56 +21,56 @@ import com.anythink.expressad.widget.ATImageView;
 public class RoundImageView extends ATImageView {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f22469a = "RoundImageView";
+    private static final String f23256a = "RoundImageView";
 
     /* renamed from: c, reason: collision with root package name */
-    private static final int f22470c = 0;
+    private static final int f23257c = 0;
 
     /* renamed from: d, reason: collision with root package name */
-    private static final int f22471d = 1;
+    private static final int f23258d = 1;
 
     /* renamed from: e, reason: collision with root package name */
-    private static final int f22472e = 5;
+    private static final int f23259e = 5;
 
     /* renamed from: m, reason: collision with root package name */
-    private static final String f22473m = "state_instance";
+    private static final String f23260m = "state_instance";
 
     /* renamed from: n, reason: collision with root package name */
-    private static final String f22474n = "state_type";
+    private static final String f23261n = "state_type";
 
     /* renamed from: o, reason: collision with root package name */
-    private static final String f22475o = "state_border_radius";
+    private static final String f23262o = "state_border_radius";
 
     /* renamed from: b, reason: collision with root package name */
-    private int f22476b;
+    private int f23263b;
 
     /* renamed from: f, reason: collision with root package name */
-    private int f22477f;
+    private int f23264f;
 
     /* renamed from: g, reason: collision with root package name */
-    private Paint f22478g;
+    private Paint f23265g;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f22479h;
+    private int f23266h;
     private Matrix i;
 
     /* renamed from: j, reason: collision with root package name */
-    private BitmapShader f22480j;
+    private BitmapShader f23267j;
 
     /* renamed from: k, reason: collision with root package name */
-    private int f22481k;
+    private int f23268k;
 
     /* renamed from: l, reason: collision with root package name */
-    private RectF f22482l;
+    private RectF f23269l;
 
     public RoundImageView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
         this.i = new Matrix();
         Paint paint = new Paint();
-        this.f22478g = paint;
+        this.f23265g = paint;
         paint.setAntiAlias(true);
-        this.f22477f = (int) TypedValue.applyDimension(1, 5.0f, getResources().getDisplayMetrics());
-        this.f22476b = 1;
+        this.f23264f = (int) TypedValue.applyDimension(1, 5.0f, getResources().getDisplayMetrics());
+        this.f23263b = 1;
     }
 
     private void a() {
@@ -81,17 +81,17 @@ public class RoundImageView extends ATImageView {
                 return;
             }
             Shader.TileMode tileMode = Shader.TileMode.CLAMP;
-            this.f22480j = new BitmapShader(a9, tileMode, tileMode);
-            int i = this.f22476b;
-            float f3 = 1.0f;
+            this.f23267j = new BitmapShader(a9, tileMode, tileMode);
+            int i = this.f23263b;
+            float f2 = 1.0f;
             if (i == 0) {
-                f3 = (this.f22481k * 1.0f) / Math.min(a9.getWidth(), a9.getHeight());
+                f2 = (this.f23268k * 1.0f) / Math.min(a9.getWidth(), a9.getHeight());
             } else if (i == 1) {
-                f3 = Math.max((getWidth() * 1.0f) / a9.getWidth(), (getHeight() * 1.0f) / a9.getHeight());
+                f2 = Math.max((getWidth() * 1.0f) / a9.getWidth(), (getHeight() * 1.0f) / a9.getHeight());
             }
-            this.i.setScale(f3, f3);
-            this.f22480j.setLocalMatrix(this.i);
-            this.f22478g.setShader(this.f22480j);
+            this.i.setScale(f2, f2);
+            this.f23267j.setLocalMatrix(this.i);
+            this.f23265g.setShader(this.f23267j);
         } catch (Throwable th) {
             th.getMessage();
         }
@@ -108,28 +108,28 @@ public class RoundImageView extends ATImageView {
                 Drawable drawable = getDrawable();
                 if (drawable != null && (a9 = a(drawable)) != null && !a9.isRecycled()) {
                     Shader.TileMode tileMode = Shader.TileMode.CLAMP;
-                    this.f22480j = new BitmapShader(a9, tileMode, tileMode);
-                    int i = this.f22476b;
-                    float f3 = 1.0f;
+                    this.f23267j = new BitmapShader(a9, tileMode, tileMode);
+                    int i = this.f23263b;
+                    float f2 = 1.0f;
                     if (i == 0) {
-                        f3 = (this.f22481k * 1.0f) / Math.min(a9.getWidth(), a9.getHeight());
+                        f2 = (this.f23268k * 1.0f) / Math.min(a9.getWidth(), a9.getHeight());
                     } else if (i == 1) {
-                        f3 = Math.max((getWidth() * 1.0f) / a9.getWidth(), (getHeight() * 1.0f) / a9.getHeight());
+                        f2 = Math.max((getWidth() * 1.0f) / a9.getWidth(), (getHeight() * 1.0f) / a9.getHeight());
                     }
-                    this.i.setScale(f3, f3);
-                    this.f22480j.setLocalMatrix(this.i);
-                    this.f22478g.setShader(this.f22480j);
+                    this.i.setScale(f2, f2);
+                    this.f23267j.setLocalMatrix(this.i);
+                    this.f23265g.setShader(this.f23267j);
                 }
             } catch (Throwable th) {
                 th.getMessage();
             }
-            if (this.f22476b != 1) {
-                int i6 = this.f22479h;
-                canvas.drawCircle(i6, i6, i6, this.f22478g);
+            if (this.f23263b != 1) {
+                int i4 = this.f23266h;
+                canvas.drawCircle(i4, i4, i4, this.f23265g);
             } else {
-                RectF rectF = this.f22482l;
-                int i9 = this.f22477f;
-                canvas.drawRoundRect(rectF, i9, i9, this.f22478g);
+                RectF rectF = this.f23269l;
+                int i6 = this.f23264f;
+                canvas.drawRoundRect(rectF, i6, i6, this.f23265g);
             }
         } catch (Throwable th2) {
             th2.getMessage();
@@ -137,12 +137,12 @@ public class RoundImageView extends ATImageView {
     }
 
     @Override // android.widget.ImageView, android.view.View
-    public void onMeasure(int i, int i6) {
-        super.onMeasure(i, i6);
-        if (this.f22476b == 0) {
+    public void onMeasure(int i, int i4) {
+        super.onMeasure(i, i4);
+        if (this.f23263b == 0) {
             int min = Math.min(getMeasuredWidth(), getMeasuredHeight());
-            this.f22481k = min;
-            this.f22479h = min / 2;
+            this.f23268k = min;
+            this.f23266h = min / 2;
             setMeasuredDimension(min, min);
         }
     }
@@ -154,46 +154,46 @@ public class RoundImageView extends ATImageView {
             return;
         }
         Bundle bundle = (Bundle) parcelable;
-        Parcelable parcelable2 = bundle.getParcelable(f22473m);
+        Parcelable parcelable2 = bundle.getParcelable(f23260m);
         if (parcelable2 == null) {
             super.onRestoreInstanceState(parcelable);
             return;
         }
         super.onRestoreInstanceState(parcelable2);
-        this.f22476b = bundle.getInt(f22474n);
-        this.f22477f = bundle.getInt(f22475o);
+        this.f23263b = bundle.getInt(f23261n);
+        this.f23264f = bundle.getInt(f23262o);
     }
 
     @Override // android.view.View
     public Parcelable onSaveInstanceState() {
         Bundle bundle = new Bundle();
-        bundle.putParcelable(f22473m, super.onSaveInstanceState());
-        bundle.putInt(f22474n, this.f22476b);
-        bundle.putInt(f22475o, this.f22477f);
+        bundle.putParcelable(f23260m, super.onSaveInstanceState());
+        bundle.putInt(f23261n, this.f23263b);
+        bundle.putInt(f23262o, this.f23264f);
         return bundle;
     }
 
     @Override // android.view.View
-    public void onSizeChanged(int i, int i6, int i9, int i10) {
-        super.onSizeChanged(i, i6, i9, i10);
-        if (this.f22476b == 1) {
-            this.f22482l = new RectF(0.0f, 0.0f, getWidth(), getHeight());
+    public void onSizeChanged(int i, int i4, int i6, int i9) {
+        super.onSizeChanged(i, i4, i6, i9);
+        if (this.f23263b == 1) {
+            this.f23269l = new RectF(0.0f, 0.0f, getWidth(), getHeight());
         }
     }
 
     public void setBorderRadius(int i) {
         int b9 = v.b(getContext(), i);
-        if (this.f22477f != b9) {
-            this.f22477f = b9;
+        if (this.f23264f != b9) {
+            this.f23264f = b9;
             invalidate();
         }
     }
 
     public void setType(int i) {
-        if (this.f22476b != i) {
-            this.f22476b = i;
+        if (this.f23263b != i) {
+            this.f23263b = i;
             if (i != 1 && i != 0) {
-                this.f22476b = 0;
+                this.f23263b = 0;
             }
             requestLayout();
         }
@@ -203,20 +203,20 @@ public class RoundImageView extends ATImageView {
         super(context, attributeSet);
         this.i = new Matrix();
         Paint paint = new Paint();
-        this.f22478g = paint;
+        this.f23265g = paint;
         paint.setAntiAlias(true);
-        this.f22477f = (int) TypedValue.applyDimension(1, 5.0f, getResources().getDisplayMetrics());
-        this.f22476b = 1;
+        this.f23264f = (int) TypedValue.applyDimension(1, 5.0f, getResources().getDisplayMetrics());
+        this.f23263b = 1;
     }
 
     public RoundImageView(Context context) {
         super(context);
         this.i = new Matrix();
         Paint paint = new Paint();
-        this.f22478g = paint;
+        this.f23265g = paint;
         paint.setAntiAlias(true);
-        this.f22477f = (int) TypedValue.applyDimension(1, 5.0f, getResources().getDisplayMetrics());
-        this.f22476b = 1;
+        this.f23264f = (int) TypedValue.applyDimension(1, 5.0f, getResources().getDisplayMetrics());
+        this.f23263b = 1;
     }
 
     private static Bitmap a(Drawable drawable) {

@@ -6,18 +6,18 @@ import android.graphics.Typeface;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Typeface f1592a;
+    public final Typeface f1701a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f1593b;
+    public final int f1702b;
 
     public f(int i) {
-        this.f1592a = null;
-        this.f1593b = i;
+        this.f1701a = null;
+        this.f1702b = i;
     }
 
     public f(Typeface typeface) {
-        this.f1592a = typeface;
-        this.f1593b = 0;
+        this.f1701a = typeface;
+        this.f1702b = 0;
     }
 }

@@ -6,13 +6,13 @@ import android.view.accessibility.AccessibilityNodeInfo;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public final AccessibilityNodeInfo.CollectionItemInfo f2407a;
+    public final AccessibilityNodeInfo.CollectionItemInfo f2338a;
 
     public j(AccessibilityNodeInfo.CollectionItemInfo collectionItemInfo) {
-        this.f2407a = collectionItemInfo;
+        this.f2338a = collectionItemInfo;
     }
 
-    public static j a(int i, int i6, int i9, int i10, boolean z3) {
-        return new j(AccessibilityNodeInfo.CollectionItemInfo.obtain(i, i6, i9, i10, false, z3));
+    public static j a(int i, int i4, int i6, int i9, boolean z6) {
+        return new j(AccessibilityNodeInfo.CollectionItemInfo.obtain(i, i4, i6, i9, false, z6));
     }
 }

@@ -8,7 +8,7 @@ import java.util.Iterator;
 public final class u implements Collection, J7.a {
 
     /* renamed from: n, reason: collision with root package name */
-    public final short[] f41352n;
+    public final short[] f41072n;
 
     @Override // java.util.Collection
     public final /* bridge */ /* synthetic */ boolean add(Object obj) {
@@ -30,8 +30,8 @@ public final class u implements Collection, J7.a {
         if (!(obj instanceof t)) {
             return false;
         }
-        short s9 = ((t) obj).f41351n;
-        short[] sArr = this.f41352n;
+        short s9 = ((t) obj).f41071n;
+        short[] sArr = this.f41072n;
         int length = sArr.length;
         int i = 0;
         while (true) {
@@ -53,8 +53,8 @@ public final class u implements Collection, J7.a {
         if (!elements.isEmpty()) {
             for (Object obj : elements) {
                 if (obj instanceof t) {
-                    short s9 = ((t) obj).f41351n;
-                    short[] sArr = this.f41352n;
+                    short s9 = ((t) obj).f41071n;
+                    short[] sArr = this.f41072n;
                     int length = sArr.length;
                     int i = 0;
                     while (true) {
@@ -79,24 +79,24 @@ public final class u implements Collection, J7.a {
     @Override // java.util.Collection
     public final boolean equals(Object obj) {
         if (obj instanceof u) {
-            return kotlin.jvm.internal.h.a(this.f41352n, ((u) obj).f41352n);
+            return kotlin.jvm.internal.h.a(this.f41072n, ((u) obj).f41072n);
         }
         return false;
     }
 
     @Override // java.util.Collection
     public final int hashCode() {
-        return Arrays.hashCode(this.f41352n);
+        return Arrays.hashCode(this.f41072n);
     }
 
     @Override // java.util.Collection
     public final boolean isEmpty() {
-        return this.f41352n.length == 0;
+        return this.f41072n.length == 0;
     }
 
     @Override // java.util.Collection, java.lang.Iterable
     public final Iterator iterator() {
-        return new c8.g(5, this.f41352n);
+        return new c8.g(5, this.f41072n);
     }
 
     @Override // java.util.Collection
@@ -116,7 +116,7 @@ public final class u implements Collection, J7.a {
 
     @Override // java.util.Collection
     public final int size() {
-        return this.f41352n.length;
+        return this.f41072n.length;
     }
 
     @Override // java.util.Collection
@@ -125,7 +125,7 @@ public final class u implements Collection, J7.a {
     }
 
     public final String toString() {
-        return "UShortArray(storage=" + Arrays.toString(this.f41352n) + ')';
+        return "UShortArray(storage=" + Arrays.toString(this.f41072n) + ')';
     }
 
     @Override // java.util.Collection

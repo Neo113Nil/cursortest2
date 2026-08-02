@@ -1,6 +1,6 @@
 package L;
 
-import C2.N;
+import E2.M;
 import android.content.ContentProviderClient;
 import android.content.ContentUris;
 import android.content.Context;
@@ -17,25 +17,26 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import w.AbstractC5128c;
 
 /* loaded from: classes.dex */
 public abstract class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final b f1584a = new b(0);
+    public static final b f1693a = new b(0);
 
-    public static G1.a a(Context context, N n9) {
+    public static I1.a a(Context context, M m9) {
         Cursor cursor;
         PackageManager packageManager = context.getPackageManager();
         Resources resources = context.getResources();
-        String str = (String) n9.f301u;
+        String str = (String) m9.f761u;
         int i = 0;
         ProviderInfo resolveContentProvider = packageManager.resolveContentProvider(str, 0);
         if (resolveContentProvider == null) {
-            throw new PackageManager.NameNotFoundException(u1.h.f("No package found for authority: ", str));
+            throw new PackageManager.NameNotFoundException(AbstractC5128c.f("No package found for authority: ", str));
         }
         String str2 = resolveContentProvider.packageName;
-        String str3 = (String) n9.f302v;
+        String str3 = (String) m9.f762v;
         if (!str2.equals(str3)) {
             throw new PackageManager.NameNotFoundException("Found content provider " + str + ", but package was not " + str3);
         }
@@ -44,34 +45,34 @@ public abstract class c {
         for (Signature signature : signatureArr) {
             arrayList.add(signature.toByteArray());
         }
-        b bVar = f1584a;
+        b bVar = f1693a;
         Collections.sort(arrayList, bVar);
-        List list = (List) n9.f304x;
+        List list = (List) m9.f764x;
         if (list == null) {
             list = F.b.j(resources, 0);
         }
-        int i6 = 0;
+        int i4 = 0;
         loop1: while (true) {
             cursor = null;
-            if (i6 >= list.size()) {
+            if (i4 >= list.size()) {
                 resolveContentProvider = null;
                 break;
             }
-            ArrayList arrayList2 = new ArrayList((Collection) list.get(i6));
+            ArrayList arrayList2 = new ArrayList((Collection) list.get(i4));
             Collections.sort(arrayList2, bVar);
             if (arrayList.size() == arrayList2.size()) {
-                for (int i9 = 0; i9 < arrayList.size(); i9++) {
-                    if (!Arrays.equals((byte[]) arrayList.get(i9), (byte[]) arrayList2.get(i9))) {
+                for (int i6 = 0; i6 < arrayList.size(); i6++) {
+                    if (!Arrays.equals((byte[]) arrayList.get(i6), (byte[]) arrayList2.get(i6))) {
                         break;
                     }
                 }
                 break loop1;
             }
-            i6++;
+            i4++;
         }
-        int i10 = 1;
+        int i9 = 1;
         if (resolveContentProvider == null) {
-            return new G1.a(i10, cursor, 1);
+            return new I1.a(i9, cursor, 1);
         }
         String str4 = resolveContentProvider.authority;
         ArrayList arrayList3 = new ArrayList();
@@ -80,7 +81,7 @@ public abstract class c {
         ContentProviderClient acquireUnstableContentProviderClient = context.getContentResolver().acquireUnstableContentProviderClient(build);
         try {
             String[] strArr = {"_id", "file_id", "font_ttc_index", "font_variation_settings", "font_weight", "font_italic", "result_code"};
-            String[] strArr2 = {(String) n9.f303w};
+            String[] strArr2 = {(String) m9.f763w};
             if (acquireUnstableContentProviderClient != null) {
                 try {
                     cursor = acquireUnstableContentProviderClient.query(build, strArr, "query = ?", strArr2, null, null);
@@ -106,7 +107,7 @@ public abstract class c {
             if (acquireUnstableContentProviderClient != null) {
                 acquireUnstableContentProviderClient.close();
             }
-            return new G1.a(i, (h[]) arrayList3.toArray(new h[0]), 1);
+            return new I1.a(i, (h[]) arrayList3.toArray(new h[0]), 1);
         } catch (Throwable th) {
             if (cursor != null) {
                 cursor.close();

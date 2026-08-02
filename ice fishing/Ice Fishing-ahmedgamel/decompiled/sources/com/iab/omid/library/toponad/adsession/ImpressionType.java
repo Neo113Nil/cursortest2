@@ -7,7 +7,7 @@ public enum ImpressionType {
     LOADED("loaded"),
     BEGIN_TO_RENDER("beginToRender"),
     ONE_PIXEL("onePixel"),
-    VIEWABLE(com.anythink.core.express.b.a.f17527c),
+    VIEWABLE(com.anythink.core.express.b.a.f18314c),
     AUDIBLE("audible"),
     OTHER("other");
 

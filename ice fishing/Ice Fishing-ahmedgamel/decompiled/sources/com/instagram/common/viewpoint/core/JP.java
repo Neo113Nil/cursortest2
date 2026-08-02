@@ -7,15 +7,15 @@ public final class JP {
     public static byte[] A05;
     public static String[] A06 = {"8Hrr", "h", "0Fdee0wg4hsenc5DHvlvwY", "0vqFlF7HyuYg3TUYlVTMC9xVo", "FyWFMrZuY5MlICM", "PN9pA9f0QUy", "hrYl81FOJTp7gpX67gLzFhurxBV", "ujvsBGrB8Jik"};
     public final int A00;
-    public final C0945Hb A01;
+    public final C0965Hb A01;
     public final String A02;
     public final boolean A03;
     public final byte[] A04;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 64);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 64);
         }
         return new String(copyOfRange);
     }
@@ -28,13 +28,13 @@ public final class JP {
         A02();
     }
 
-    public JP(boolean z3, String str, int i, byte[] bArr, int i6, int i9, byte[] bArr2) {
-        AbstractC06243y.A07((bArr2 == null) ^ (i == 0));
-        this.A03 = z3;
+    public JP(boolean z6, String str, int i, byte[] bArr, int i4, int i6, byte[] bArr2) {
+        AbstractC06443y.A07((bArr2 == null) ^ (i == 0));
+        this.A03 = z6;
         this.A02 = str;
         this.A00 = i;
         this.A04 = bArr2;
-        this.A01 = new C0945Hb(A00(str), bArr, i6, i9);
+        this.A01 = new C0965Hb(A00(str), bArr, i4, i6);
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -61,7 +61,7 @@ public final class JP {
                         case 3:
                             return 2;
                         default:
-                            AbstractC06324g.A07(A01(32, 18, 50), A01(50, 36, 74) + str + A01(0, 32, 79));
+                            AbstractC06524g.A07(A01(32, 18, 50), A01(50, 36, 74) + str + A01(0, 32, 79));
                             return 1;
                     }
                 }

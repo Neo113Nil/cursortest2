@@ -1,88 +1,90 @@
 package com.anythink.core.common.h;
 
+import com.google.android.gms.internal.ads.Wv;
+
 /* loaded from: classes.dex */
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f13944a;
+    public int f14730a;
 
     /* renamed from: b, reason: collision with root package name */
-    private String f13945b;
+    private String f14731b;
 
     /* renamed from: c, reason: collision with root package name */
-    private String f13946c;
+    private String f14732c;
 
     /* renamed from: d, reason: collision with root package name */
-    private String f13947d;
+    private String f14733d;
 
     /* renamed from: e, reason: collision with root package name */
-    private String f13948e;
+    private String f14734e;
 
     /* renamed from: f, reason: collision with root package name */
-    private String f13949f;
+    private String f14735f;
 
     /* renamed from: g, reason: collision with root package name */
-    private String f13950g;
+    private String f14736g;
 
     /* renamed from: h, reason: collision with root package name */
-    private int f13951h;
+    private int f14737h;
     private int i;
 
     /* renamed from: j, reason: collision with root package name */
-    private int f13952j;
+    private int f14738j;
 
     /* renamed from: k, reason: collision with root package name */
-    private long f13953k;
+    private long f14739k;
 
     /* renamed from: l, reason: collision with root package name */
-    private String f13954l;
+    private String f14740l;
 
     /* renamed from: m, reason: collision with root package name */
-    private String f13955m;
+    private String f14741m;
 
     /* renamed from: n, reason: collision with root package name */
-    private int f13956n;
+    private int f14742n;
 
     /* renamed from: o, reason: collision with root package name */
-    private int f13957o;
+    private int f14743o;
 
     /* renamed from: p, reason: collision with root package name */
-    private long f13958p;
+    private long f14744p;
 
     public f(String str) {
-        this.f13945b = str;
+        this.f14731b = str;
     }
 
     private String o() {
-        return this.f13950g;
+        return this.f14736g;
     }
 
     private int p() {
-        return this.f13944a;
+        return this.f14730a;
     }
 
     public final String a() {
-        return this.f13945b;
+        return this.f14731b;
     }
 
     public final String b() {
-        return this.f13946c;
+        return this.f14732c;
     }
 
     public final String c() {
-        return this.f13947d;
+        return this.f14733d;
     }
 
     public final String d() {
-        return this.f13948e;
+        return this.f14734e;
     }
 
     public final String e() {
-        return this.f13949f;
+        return this.f14735f;
     }
 
     public final int f() {
-        return this.f13951h;
+        return this.f14737h;
     }
 
     public final int g() {
@@ -90,124 +92,124 @@ public final class f {
     }
 
     public final int h() {
-        return this.f13952j;
+        return this.f14738j;
     }
 
     public final long i() {
-        return this.f13953k;
+        return this.f14739k;
     }
 
     public final String j() {
-        return this.f13954l;
+        return this.f14740l;
     }
 
     public final String k() {
-        return this.f13955m;
+        return this.f14741m;
     }
 
     public final int l() {
-        return this.f13956n;
+        return this.f14742n;
     }
 
     public final int m() {
-        return this.f13957o;
+        return this.f14743o;
     }
 
     public final long n() {
-        return this.f13958p;
+        return this.f14744p;
     }
 
     public final String toString() {
         StringBuilder sb = new StringBuilder("{eventType='");
-        sb.append(this.f13945b);
+        sb.append(this.f14731b);
         sb.append("', networkId='");
-        sb.append(this.f13946c);
+        sb.append(this.f14732c);
         sb.append("', format='");
-        sb.append(this.f13947d);
+        sb.append(this.f14733d);
         sb.append("', placementId='");
-        sb.append(this.f13948e);
+        sb.append(this.f14734e);
         sb.append("', sourceId='");
-        sb.append(this.f13949f);
+        sb.append(this.f14735f);
         sb.append("', extra='");
-        sb.append(this.f13950g);
+        sb.append(this.f14736g);
         sb.append("', month=");
-        sb.append(this.f13951h);
+        sb.append(this.f14737h);
         sb.append(", day=");
         sb.append(this.i);
         sb.append(", hour=");
-        sb.append(this.f13952j);
+        sb.append(this.f14738j);
         sb.append(", timeStamp=");
-        sb.append(this.f13953k);
+        sb.append(this.f14739k);
         sb.append(", reqNum=");
-        sb.append(this.f13944a);
+        sb.append(this.f14730a);
         sb.append(", app='");
-        sb.append(this.f13954l);
+        sb.append(this.f14740l);
         sb.append("', networkFormat='");
-        return u1.h.g(sb, this.f13955m, "'}");
+        return Wv.i(sb, this.f14741m, "'}");
     }
 
     private void c(int i) {
-        this.f13944a = i;
+        this.f14730a = i;
     }
 
     public final void a(long j6) {
-        this.f13953k = j6;
+        this.f14739k = j6;
     }
 
     public final void b(int i) {
-        this.f13957o = i;
+        this.f14743o = i;
     }
 
     public f(String str, String str2, String str3, long j6, int i) {
-        this.f13945b = str;
-        this.f13953k = j6;
-        this.f13944a = i;
+        this.f14731b = str;
+        this.f14739k = j6;
+        this.f14730a = i;
         str3.getClass();
         switch (str3) {
             case "network_format":
-                this.f13955m = str2;
+                this.f14741m = str2;
                 break;
             case "source_id":
-                this.f13949f = str2;
+                this.f14735f = str2;
                 break;
             case "format":
-                this.f13947d = str2;
+                this.f14733d = str2;
                 break;
             case "network_id":
-                this.f13946c = str2;
+                this.f14732c = str2;
                 break;
             case "app":
-                this.f13954l = str2;
+                this.f14740l = str2;
                 break;
             case "placement_id":
-                this.f13948e = str2;
+                this.f14734e = str2;
                 break;
         }
     }
 
     public final void a(String str) {
-        this.f13949f = str;
+        this.f14735f = str;
     }
 
     public final void b(long j6) {
-        this.f13958p = j6;
+        this.f14744p = j6;
     }
 
     public final void a(int i) {
-        this.f13956n = i;
+        this.f14742n = i;
     }
 
-    public f(String str, String str2, String str3, String str4, String str5, String str6, String str7, int i, int i6, int i9, long j6) {
-        this.f13945b = str;
-        this.f13954l = str2;
-        this.f13946c = str3;
-        this.f13947d = str4;
-        this.f13955m = str5;
-        this.f13948e = str6;
-        this.f13949f = str7;
-        this.f13951h = i;
-        this.i = i6;
-        this.f13952j = i9;
-        this.f13953k = j6;
+    public f(String str, String str2, String str3, String str4, String str5, String str6, String str7, int i, int i4, int i6, long j6) {
+        this.f14731b = str;
+        this.f14740l = str2;
+        this.f14732c = str3;
+        this.f14733d = str4;
+        this.f14741m = str5;
+        this.f14734e = str6;
+        this.f14735f = str7;
+        this.f14737h = i;
+        this.i = i4;
+        this.f14738j = i6;
+        this.f14739k = j6;
     }
 }

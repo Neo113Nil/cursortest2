@@ -19,7 +19,7 @@ public interface f {
 
     void a();
 
-    void a(float f3);
+    void a(float f2);
 
     void a(long j6, long j9);
 

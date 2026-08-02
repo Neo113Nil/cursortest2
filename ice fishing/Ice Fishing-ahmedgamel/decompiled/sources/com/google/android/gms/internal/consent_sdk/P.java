@@ -6,31 +6,31 @@ import java.util.Iterator;
 public final class P extends K {
 
     /* renamed from: v, reason: collision with root package name */
-    public final transient Object f35585v;
+    public final transient Object f36354v;
 
     public P(Object obj) {
-        this.f35585v = obj;
+        this.f36354v = obj;
     }
 
     @Override // com.google.android.gms.internal.consent_sdk.G
     public final int a(Object[] objArr) {
-        objArr[0] = this.f35585v;
+        objArr[0] = this.f36354v;
         return 1;
     }
 
     @Override // com.google.android.gms.internal.consent_sdk.G, java.util.AbstractCollection, java.util.Collection
     public final boolean contains(Object obj) {
-        return this.f35585v.equals(obj);
+        return this.f36354v.equals(obj);
     }
 
     @Override // com.google.android.gms.internal.consent_sdk.K, java.util.Collection, java.util.Set
     public final int hashCode() {
-        return this.f35585v.hashCode();
+        return this.f36354v.hashCode();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final /* synthetic */ Iterator iterator() {
-        return new L(this.f35585v);
+        return new L(this.f36354v);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
@@ -40,6 +40,6 @@ public final class P extends K {
 
     @Override // java.util.AbstractCollection
     public final String toString() {
-        return D.y.o("[", this.f35585v.toString(), "]");
+        return D.x.l("[", this.f36354v.toString(), "]");
     }
 }

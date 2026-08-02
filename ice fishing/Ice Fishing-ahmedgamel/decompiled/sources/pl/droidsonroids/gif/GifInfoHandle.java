@@ -1,6 +1,7 @@
 package pl.droidsonroids.gif;
 
-import M2.i;
+import O2.i;
+import S0.l;
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
 import android.graphics.Bitmap;
@@ -8,7 +9,7 @@ import android.os.Build;
 import android.system.Os;
 import android.util.Log;
 import com.anythink.core.common.d.j;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.io.File;
 import java.io.FileDescriptor;
 import java.io.FileNotFoundException;
@@ -19,66 +20,65 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
-import u1.h;
 
 /* loaded from: classes2.dex */
 final class GifInfoHandle {
 
     /* renamed from: b, reason: collision with root package name */
-    public static final /* synthetic */ int f39947b = 0;
+    public static final /* synthetic */ int f39994b = 0;
 
     /* renamed from: a, reason: collision with root package name */
-    public volatile long f39948a;
+    public volatile long f39995a;
 
     static {
-        S0.e v9;
+        l h3;
         String[] strArr;
         ZipFile zipFile;
         InputStream inputStream;
         InputStream inputStream2;
         FileOutputStream fileOutputStream;
         FileOutputStream fileOutputStream2;
-        S0.e eVar = null;
-        boolean z3 = true;
+        l lVar = null;
+        boolean z6 = true;
         try {
             System.loadLibrary("pl_droidsonroids_gif");
         } catch (UnsatisfiedLinkError unused) {
-            if (X2.e.f3788c == null) {
+            if (Q3.b.f2651a == null) {
                 try {
-                    X2.e.f3788c = (Context) Class.forName("android.app.ActivityThread").getDeclaredMethod("currentApplication", new Class[0]).invoke(null, new Object[0]);
+                    Q3.b.f2651a = (Context) Class.forName("android.app.ActivityThread").getDeclaredMethod("currentApplication", new Class[0]).invoke(null, new Object[0]);
                 } catch (Exception e9) {
                     throw new IllegalStateException("LibraryLoader not initialized. Call LibraryLoader.initialize() before using library classes.", e9);
                 }
             }
-            Context context = X2.e.f3788c;
-            Z2.e eVar2 = new Z2.e(13);
+            Context context = Q3.b.f2651a;
+            b3.e eVar = new b3.e(14);
             if (context == null) {
                 throw new IllegalArgumentException("Given context is null");
             }
-            Z2.e.A("Beginning load of %s...", "pl_droidsonroids_gif");
-            i iVar = (i) eVar2.f4171v;
-            HashSet hashSet = (HashSet) eVar2.f4170u;
+            b3.e.A("Beginning load of %s...", "pl_droidsonroids_gif");
+            c4.e eVar2 = (c4.e) eVar.f5558v;
+            HashSet hashSet = (HashSet) eVar.f5557u;
             if (hashSet.contains("pl_droidsonroids_gif")) {
-                Z2.e.A("%s already loaded previously!", "pl_droidsonroids_gif");
+                b3.e.A("%s already loaded previously!", "pl_droidsonroids_gif");
                 return;
             }
             try {
-                iVar.getClass();
+                eVar2.getClass();
                 System.loadLibrary("pl_droidsonroids_gif");
                 hashSet.add("pl_droidsonroids_gif");
-                Z2.e.A("%s (%s) was loaded normally!", "pl_droidsonroids_gif", null);
+                b3.e.A("%s (%s) was loaded normally!", "pl_droidsonroids_gif", null);
             } catch (UnsatisfiedLinkError e10) {
-                Z2.e.A("Loading the library normally failed: %s", Log.getStackTraceString(e10));
-                Z2.e.A("%s (%s) was not loaded normally, re-linking...", "pl_droidsonroids_gif", null);
-                File w6 = eVar2.w(context);
-                if (!w6.exists()) {
+                b3.e.A("Loading the library normally failed: %s", Log.getStackTraceString(e10));
+                b3.e.A("%s (%s) was not loaded normally, re-linking...", "pl_droidsonroids_gif", null);
+                File x9 = eVar.x(context);
+                if (!x9.exists()) {
                     File dir = context.getDir("lib", 0);
-                    File w9 = eVar2.w(context);
-                    iVar.getClass();
-                    File[] listFiles = dir.listFiles(new Q1.a(System.mapLibraryName("pl_droidsonroids_gif")));
+                    File x10 = eVar.x(context);
+                    eVar2.getClass();
+                    File[] listFiles = dir.listFiles(new S1.a(System.mapLibraryName("pl_droidsonroids_gif")));
                     if (listFiles != null) {
                         for (File file : listFiles) {
-                            if (!file.getAbsolutePath().equals(w9.getAbsolutePath())) {
+                            if (!file.getAbsolutePath().equals(x10.getAbsolutePath())) {
                                 file.delete();
                             }
                         }
@@ -89,96 +89,96 @@ final class GifInfoHandle {
                         strArr2 = (str == null || str.length() == 0) ? new String[]{Build.CPU_ABI} : new String[]{Build.CPU_ABI, str};
                     }
                     String mapLibraryName = System.mapLibraryName("pl_droidsonroids_gif");
-                    ((E3.e) eVar2.f4172w).getClass();
+                    ((i) eVar.f5559w).getClass();
                     try {
-                        v9 = E3.e.v(context, strArr2, mapLibraryName, eVar2);
+                        h3 = i.h(context, strArr2, mapLibraryName, eVar);
                     } catch (Throwable th) {
                         th = th;
                     }
                     try {
-                        if (v9 == null) {
+                        if (h3 == null) {
                             try {
-                                strArr = E3.e.x(context, mapLibraryName);
+                                strArr = i.l(context, mapLibraryName);
                             } catch (Exception e11) {
                                 strArr = new String[]{e11.toString()};
                             }
-                            StringBuilder j6 = AbstractC4404f.j("Could not find '", mapLibraryName, "'. Looked for: ");
-                            j6.append(Arrays.toString(strArr2));
-                            j6.append(", but only found: ");
-                            throw new B0.c(h.g(j6, Arrays.toString(strArr), j.f12378z));
+                            StringBuilder l9 = Wv.l("Could not find '", mapLibraryName, "'. Looked for: ");
+                            l9.append(Arrays.toString(strArr2));
+                            l9.append(", but only found: ");
+                            throw new B0.c(Wv.i(l9, Arrays.toString(strArr), j.f13164z));
                         }
                         int i = 0;
                         while (true) {
-                            int i6 = i + 1;
-                            zipFile = (ZipFile) v9.f2781u;
+                            int i4 = i + 1;
+                            zipFile = (ZipFile) h3.f2926u;
                             if (i < 5) {
-                                Z2.e.A("Found %s! Extracting...", mapLibraryName);
+                                b3.e.A("Found %s! Extracting...", mapLibraryName);
                                 try {
-                                    if (w6.exists() || w6.createNewFile()) {
+                                    if (x9.exists() || x9.createNewFile()) {
                                         try {
-                                            inputStream2 = zipFile.getInputStream((ZipEntry) v9.f2782v);
+                                            inputStream2 = zipFile.getInputStream((ZipEntry) h3.f2927v);
                                             try {
-                                                fileOutputStream2 = new FileOutputStream(w6);
+                                                fileOutputStream2 = new FileOutputStream(x9);
                                             } catch (FileNotFoundException unused2) {
                                                 fileOutputStream2 = null;
-                                                E3.e.u(inputStream2);
-                                                E3.e.u(fileOutputStream2);
-                                                i = i6;
-                                                z3 = true;
+                                                i.b(inputStream2);
+                                                i.b(fileOutputStream2);
+                                                i = i4;
+                                                z6 = true;
                                             } catch (IOException unused3) {
                                                 fileOutputStream2 = null;
-                                                E3.e.u(inputStream2);
-                                                E3.e.u(fileOutputStream2);
-                                                i = i6;
-                                                z3 = true;
+                                                i.b(inputStream2);
+                                                i.b(fileOutputStream2);
+                                                i = i4;
+                                                z6 = true;
                                             } catch (Throwable th2) {
                                                 th = th2;
                                                 inputStream = inputStream2;
                                                 fileOutputStream = null;
-                                                E3.e.u(inputStream);
-                                                E3.e.u(fileOutputStream);
+                                                i.b(inputStream);
+                                                i.b(fileOutputStream);
                                                 throw th;
                                             }
                                             try {
                                                 byte[] bArr = new byte[4096];
-                                                long j9 = 0;
+                                                long j6 = 0;
                                                 while (true) {
                                                     int read = inputStream2.read(bArr);
                                                     if (read == -1) {
                                                         break;
                                                     }
                                                     fileOutputStream2.write(bArr, 0, read);
-                                                    j9 += read;
-                                                    z3 = true;
+                                                    j6 += read;
+                                                    z6 = true;
                                                 }
                                                 fileOutputStream2.flush();
                                                 fileOutputStream2.getFD().sync();
-                                                if (j9 == w6.length()) {
-                                                    E3.e.u(inputStream2);
-                                                    E3.e.u(fileOutputStream2);
-                                                    w6.setReadable(z3, false);
-                                                    w6.setExecutable(z3, false);
-                                                    w6.setWritable(z3);
+                                                if (j6 == x9.length()) {
+                                                    i.b(inputStream2);
+                                                    i.b(fileOutputStream2);
+                                                    x9.setReadable(z6, false);
+                                                    x9.setExecutable(z6, false);
+                                                    x9.setWritable(z6);
                                                     break;
                                                 }
-                                                E3.e.u(inputStream2);
-                                                E3.e.u(fileOutputStream2);
+                                                i.b(inputStream2);
+                                                i.b(fileOutputStream2);
                                             } catch (FileNotFoundException unused4) {
-                                                E3.e.u(inputStream2);
-                                                E3.e.u(fileOutputStream2);
-                                                i = i6;
-                                                z3 = true;
+                                                i.b(inputStream2);
+                                                i.b(fileOutputStream2);
+                                                i = i4;
+                                                z6 = true;
                                             } catch (IOException unused5) {
-                                                E3.e.u(inputStream2);
-                                                E3.e.u(fileOutputStream2);
-                                                i = i6;
-                                                z3 = true;
+                                                i.b(inputStream2);
+                                                i.b(fileOutputStream2);
+                                                i = i4;
+                                                z6 = true;
                                             } catch (Throwable th3) {
                                                 th = th3;
                                                 inputStream = inputStream2;
                                                 fileOutputStream = fileOutputStream2;
-                                                E3.e.u(inputStream);
-                                                E3.e.u(fileOutputStream);
+                                                i.b(inputStream);
+                                                i.b(fileOutputStream);
                                                 throw th;
                                             }
                                         } catch (FileNotFoundException unused6) {
@@ -192,8 +192,8 @@ final class GifInfoHandle {
                                     }
                                 } catch (IOException unused8) {
                                 }
-                                i = i6;
-                                z3 = true;
+                                i = i4;
+                                z6 = true;
                             }
                         }
                         try {
@@ -203,21 +203,21 @@ final class GifInfoHandle {
                         }
                     } catch (Throwable th5) {
                         th = th5;
-                        eVar = v9;
-                        if (eVar != null) {
+                        lVar = h3;
+                        if (lVar != null) {
                             try {
-                                ((ZipFile) eVar.f2781u).close();
+                                ((ZipFile) lVar.f2926u).close();
                             } catch (IOException unused10) {
                             }
                         }
                         throw th;
                     }
                 }
-                String absolutePath = w6.getAbsolutePath();
-                iVar.getClass();
+                String absolutePath = x9.getAbsolutePath();
+                eVar2.getClass();
                 System.load(absolutePath);
                 hashSet.add("pl_droidsonroids_gif");
-                Z2.e.A("%s (%s) was re-linked!", "pl_droidsonroids_gif", null);
+                b3.e.A("%s (%s) was re-linked!", "pl_droidsonroids_gif", null);
             }
         }
     }
@@ -236,7 +236,7 @@ final class GifInfoHandle {
             } else {
                 createTempNativeFileDescriptor = extractNativeFileDescriptor(fileDescriptor, false);
             }
-            this.f39948a = openNativeFileDescriptor(createTempNativeFileDescriptor, startOffset);
+            this.f39995a = openNativeFileDescriptor(createTempNativeFileDescriptor, startOffset);
         } finally {
             try {
                 assetFileDescriptor.close();
@@ -247,7 +247,7 @@ final class GifInfoHandle {
 
     public static native int createTempNativeFileDescriptor();
 
-    public static native int extractNativeFileDescriptor(FileDescriptor fileDescriptor, boolean z3);
+    public static native int extractNativeFileDescriptor(FileDescriptor fileDescriptor, boolean z6);
 
     private static native void free(long j6);
 
@@ -292,34 +292,34 @@ final class GifInfoHandle {
     private static native void setLoopCount(long j6, char c9);
 
     public final synchronized int a() {
-        return getCurrentFrameIndex(this.f39948a);
+        return getCurrentFrameIndex(this.f39995a);
     }
 
     public final synchronized int b() {
-        return getCurrentLoop(this.f39948a);
+        return getCurrentLoop(this.f39995a);
     }
 
     public final synchronized int c() {
-        return getCurrentPosition(this.f39948a);
+        return getCurrentPosition(this.f39995a);
     }
 
     public final synchronized int d() {
-        return getDuration(this.f39948a);
+        return getDuration(this.f39995a);
     }
 
     public final synchronized int e() {
-        return getHeight(this.f39948a);
+        return getHeight(this.f39995a);
     }
 
     public final synchronized int f() {
-        return getLoopCount(this.f39948a);
+        return getLoopCount(this.f39995a);
     }
 
     public final void finalize() {
         try {
             synchronized (this) {
-                free(this.f39948a);
-                this.f39948a = 0L;
+                free(this.f39995a);
+                this.f39995a = 0L;
             }
         } finally {
             super.finalize();
@@ -327,47 +327,47 @@ final class GifInfoHandle {
     }
 
     public final synchronized int g() {
-        return getNativeErrorCode(this.f39948a);
+        return getNativeErrorCode(this.f39995a);
     }
 
     public final synchronized int h() {
-        return getNumberOfFrames(this.f39948a);
+        return getNumberOfFrames(this.f39995a);
     }
 
     public final synchronized long[] i() {
-        return getSavedState(this.f39948a);
+        return getSavedState(this.f39995a);
     }
 
     public final synchronized int j() {
-        return getWidth(this.f39948a);
+        return getWidth(this.f39995a);
     }
 
     public final synchronized boolean k() {
-        return isOpaque(this.f39948a);
+        return isOpaque(this.f39995a);
     }
 
     public final synchronized long l(Bitmap bitmap) {
-        return renderFrame(this.f39948a, bitmap);
+        return renderFrame(this.f39995a, bitmap);
     }
 
     public final synchronized boolean m() {
-        return reset(this.f39948a);
+        return reset(this.f39995a);
     }
 
     public final synchronized long n() {
-        return restoreRemainder(this.f39948a);
+        return restoreRemainder(this.f39995a);
     }
 
     public final synchronized int o(long[] jArr, Bitmap bitmap) {
-        return restoreSavedState(this.f39948a, jArr, bitmap);
+        return restoreSavedState(this.f39995a, jArr, bitmap);
     }
 
     public final synchronized void p() {
-        saveRemainder(this.f39948a);
+        saveRemainder(this.f39995a);
     }
 
     public final synchronized void q(Bitmap bitmap, int i) {
-        seekToTime(this.f39948a, i, bitmap);
+        seekToTime(this.f39995a, i, bitmap);
     }
 
     public final void r(int i) {
@@ -375,7 +375,7 @@ final class GifInfoHandle {
             throw new IllegalArgumentException("Loop count of range <0, 65535>");
         }
         synchronized (this) {
-            setLoopCount(this.f39948a, (char) i);
+            setLoopCount(this.f39995a, (char) i);
         }
     }
 }

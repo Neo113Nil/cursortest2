@@ -1,6 +1,6 @@
 package a0;
 
-import O.C0323b;
+import O.C0328b;
 import O.X;
 import P.k;
 import android.graphics.Rect;
@@ -12,53 +12,53 @@ import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.RecyclerView;
-import com.google.android.gms.internal.ads.C3675oP;
-import g1.C4522b;
+import com.google.android.gms.internal.ads.C3698oP;
+import i1.C4585b;
 import java.util.WeakHashMap;
-import t0.C5004T;
+import t0.C5001Q;
 
 /* loaded from: classes.dex */
-public final class b extends C0323b {
+public final class b extends C0328b {
 
     /* renamed from: d, reason: collision with root package name */
-    public final /* synthetic */ int f4231d;
+    public final /* synthetic */ int f4208d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final Object f4232e;
+    public final Object f4209e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final Object f4233f;
+    public final Object f4210f;
 
-    public b(C5004T c5004t) {
-        this.f4231d = 1;
-        this.f4233f = new WeakHashMap();
-        this.f4232e = c5004t;
+    public b(C5001Q c5001q) {
+        this.f4208d = 1;
+        this.f4210f = new WeakHashMap();
+        this.f4209e = c5001q;
     }
 
-    @Override // O.C0323b
+    @Override // O.C0328b
     public final boolean a(View view, AccessibilityEvent accessibilityEvent) {
-        View.AccessibilityDelegate accessibilityDelegate = this.f2062a;
-        Object obj = this.f4233f;
-        switch (this.f4231d) {
+        View.AccessibilityDelegate accessibilityDelegate = this.f2150a;
+        Object obj = this.f4210f;
+        switch (this.f4208d) {
             case 0:
                 if (accessibilityEvent.getEventType() != 32) {
                     break;
                 } else {
                     accessibilityEvent.getText();
                     DrawerLayout drawerLayout = (DrawerLayout) obj;
-                    View g4 = drawerLayout.g();
-                    if (g4 != null) {
-                        int j6 = drawerLayout.j(g4);
+                    View g9 = drawerLayout.g();
+                    if (g9 != null) {
+                        int j6 = drawerLayout.j(g9);
                         drawerLayout.getClass();
-                        WeakHashMap weakHashMap = X.f2054a;
+                        WeakHashMap weakHashMap = X.f2142a;
                         Gravity.getAbsoluteGravity(j6, drawerLayout.getLayoutDirection());
                         break;
                     }
                 }
                 break;
             default:
-                C0323b c0323b = (C0323b) ((WeakHashMap) obj).get(view);
-                if (c0323b == null) {
+                C0328b c0328b = (C0328b) ((WeakHashMap) obj).get(view);
+                if (c0328b == null) {
                     break;
                 } else {
                     break;
@@ -67,12 +67,12 @@ public final class b extends C0323b {
         return accessibilityDelegate.dispatchPopulateAccessibilityEvent(view, accessibilityEvent);
     }
 
-    @Override // O.C0323b
-    public C4522b b(View view) {
-        switch (this.f4231d) {
+    @Override // O.C0328b
+    public C4585b b(View view) {
+        switch (this.f4208d) {
             case 1:
-                C0323b c0323b = (C0323b) ((WeakHashMap) this.f4233f).get(view);
-                if (c0323b == null) {
+                C0328b c0328b = (C0328b) ((WeakHashMap) this.f4210f).get(view);
+                if (c0328b == null) {
                     break;
                 } else {
                     break;
@@ -81,41 +81,41 @@ public final class b extends C0323b {
         return super.b(view);
     }
 
-    @Override // O.C0323b
+    @Override // O.C0328b
     public final void c(View view, AccessibilityEvent accessibilityEvent) {
-        switch (this.f4231d) {
+        switch (this.f4208d) {
             case 0:
                 super.c(view, accessibilityEvent);
                 accessibilityEvent.setClassName("androidx.drawerlayout.widget.DrawerLayout");
                 break;
             default:
-                C0323b c0323b = (C0323b) ((WeakHashMap) this.f4233f).get(view);
-                if (c0323b == null) {
+                C0328b c0328b = (C0328b) ((WeakHashMap) this.f4210f).get(view);
+                if (c0328b == null) {
                     super.c(view, accessibilityEvent);
                     break;
                 } else {
-                    c0323b.c(view, accessibilityEvent);
+                    c0328b.c(view, accessibilityEvent);
                     break;
                 }
         }
     }
 
-    @Override // O.C0323b
+    @Override // O.C0328b
     public final void d(View view, k kVar) {
-        View.AccessibilityDelegate accessibilityDelegate = this.f2062a;
-        Object obj = this.f4232e;
-        switch (this.f4231d) {
+        View.AccessibilityDelegate accessibilityDelegate = this.f2150a;
+        Object obj = this.f4209e;
+        switch (this.f4208d) {
             case 0:
-                boolean z3 = DrawerLayout.f4729o0;
-                AccessibilityNodeInfo accessibilityNodeInfo = kVar.f2409a;
-                if (z3) {
+                boolean z6 = DrawerLayout.f4697j0;
+                AccessibilityNodeInfo accessibilityNodeInfo = kVar.f2340a;
+                if (z6) {
                     accessibilityDelegate.onInitializeAccessibilityNodeInfo(view, accessibilityNodeInfo);
                 } else {
                     AccessibilityNodeInfo obtain = AccessibilityNodeInfo.obtain(accessibilityNodeInfo);
                     accessibilityDelegate.onInitializeAccessibilityNodeInfo(view, obtain);
-                    kVar.f2410b = -1;
+                    kVar.f2341b = -1;
                     accessibilityNodeInfo.setSource(view);
-                    WeakHashMap weakHashMap = X.f2054a;
+                    WeakHashMap weakHashMap = X.f2142a;
                     Object parentForAccessibility = view.getParentForAccessibility();
                     if (parentForAccessibility instanceof View) {
                         accessibilityNodeInfo.setParent((View) parentForAccessibility);
@@ -144,20 +144,20 @@ public final class b extends C0323b {
                 kVar.i("androidx.drawerlayout.widget.DrawerLayout");
                 accessibilityNodeInfo.setFocusable(false);
                 accessibilityNodeInfo.setFocused(false);
-                accessibilityNodeInfo.removeAction((AccessibilityNodeInfo.AccessibilityAction) P.f.f2394e.f2403a);
-                accessibilityNodeInfo.removeAction((AccessibilityNodeInfo.AccessibilityAction) P.f.f2395f.f2403a);
+                accessibilityNodeInfo.removeAction((AccessibilityNodeInfo.AccessibilityAction) P.f.f2325e.f2334a);
+                accessibilityNodeInfo.removeAction((AccessibilityNodeInfo.AccessibilityAction) P.f.f2326f.f2334a);
                 break;
             default:
-                C5004T c5004t = (C5004T) obj;
-                boolean K7 = c5004t.f40610d.K();
-                AccessibilityNodeInfo accessibilityNodeInfo2 = kVar.f2409a;
+                C5001Q c5001q = (C5001Q) obj;
+                boolean K7 = c5001q.f40660d.K();
+                AccessibilityNodeInfo accessibilityNodeInfo2 = kVar.f2340a;
                 if (!K7) {
-                    RecyclerView recyclerView = c5004t.f40610d;
+                    RecyclerView recyclerView = c5001q.f40660d;
                     if (recyclerView.getLayoutManager() != null) {
                         recyclerView.getLayoutManager().U(view, kVar);
-                        C0323b c0323b = (C0323b) ((WeakHashMap) this.f4233f).get(view);
-                        if (c0323b != null) {
-                            c0323b.d(view, kVar);
+                        C0328b c0328b = (C0328b) ((WeakHashMap) this.f4210f).get(view);
+                        if (c0328b != null) {
+                            c0328b.d(view, kVar);
                             break;
                         } else {
                             accessibilityDelegate.onInitializeAccessibilityNodeInfo(view, accessibilityNodeInfo2);
@@ -170,16 +170,16 @@ public final class b extends C0323b {
         }
     }
 
-    @Override // O.C0323b
+    @Override // O.C0328b
     public void e(View view, AccessibilityEvent accessibilityEvent) {
-        switch (this.f4231d) {
+        switch (this.f4208d) {
             case 1:
-                C0323b c0323b = (C0323b) ((WeakHashMap) this.f4233f).get(view);
-                if (c0323b == null) {
+                C0328b c0328b = (C0328b) ((WeakHashMap) this.f4210f).get(view);
+                if (c0328b == null) {
                     super.e(view, accessibilityEvent);
                     break;
                 } else {
-                    c0323b.e(view, accessibilityEvent);
+                    c0328b.e(view, accessibilityEvent);
                     break;
                 }
             default:
@@ -188,36 +188,36 @@ public final class b extends C0323b {
         }
     }
 
-    @Override // O.C0323b
+    @Override // O.C0328b
     public final boolean f(ViewGroup viewGroup, View view, AccessibilityEvent accessibilityEvent) {
-        switch (this.f4231d) {
+        switch (this.f4208d) {
             case 0:
-                if (DrawerLayout.f4729o0 || DrawerLayout.l(view)) {
+                if (DrawerLayout.f4697j0 || DrawerLayout.l(view)) {
                     break;
                 }
                 break;
             default:
-                C0323b c0323b = (C0323b) ((WeakHashMap) this.f4233f).get(viewGroup);
-                if (c0323b == null) {
+                C0328b c0328b = (C0328b) ((WeakHashMap) this.f4210f).get(viewGroup);
+                if (c0328b == null) {
                     break;
                 } else {
                     break;
                 }
         }
-        return this.f2062a.onRequestSendAccessibilityEvent(viewGroup, view, accessibilityEvent);
+        return this.f2150a.onRequestSendAccessibilityEvent(viewGroup, view, accessibilityEvent);
     }
 
-    @Override // O.C0323b
+    @Override // O.C0328b
     public boolean g(View view, int i, Bundle bundle) {
-        switch (this.f4231d) {
+        switch (this.f4208d) {
             case 1:
-                C5004T c5004t = (C5004T) this.f4232e;
-                if (!c5004t.f40610d.K()) {
-                    RecyclerView recyclerView = c5004t.f40610d;
+                C5001Q c5001q = (C5001Q) this.f4209e;
+                if (!c5001q.f40660d.K()) {
+                    RecyclerView recyclerView = c5001q.f40660d;
                     if (recyclerView.getLayoutManager() != null) {
-                        C0323b c0323b = (C0323b) ((WeakHashMap) this.f4233f).get(view);
-                        if (c0323b == null ? !super.g(view, i, bundle) : !c0323b.g(view, i, bundle)) {
-                            C3675oP c3675oP = recyclerView.getLayoutManager().f40541b.f5264u;
+                        C0328b c0328b = (C0328b) ((WeakHashMap) this.f4210f).get(view);
+                        if (c0328b == null ? !super.g(view, i, bundle) : !c0328b.g(view, i, bundle)) {
+                            C3698oP c3698oP = recyclerView.getLayoutManager().f40591b.f5230u;
                             break;
                         }
                     }
@@ -227,16 +227,16 @@ public final class b extends C0323b {
         return super.g(view, i, bundle);
     }
 
-    @Override // O.C0323b
+    @Override // O.C0328b
     public void h(View view, int i) {
-        switch (this.f4231d) {
+        switch (this.f4208d) {
             case 1:
-                C0323b c0323b = (C0323b) ((WeakHashMap) this.f4233f).get(view);
-                if (c0323b == null) {
+                C0328b c0328b = (C0328b) ((WeakHashMap) this.f4210f).get(view);
+                if (c0328b == null) {
                     super.h(view, i);
                     break;
                 } else {
-                    c0323b.h(view, i);
+                    c0328b.h(view, i);
                     break;
                 }
             default:
@@ -245,16 +245,16 @@ public final class b extends C0323b {
         }
     }
 
-    @Override // O.C0323b
+    @Override // O.C0328b
     public void i(View view, AccessibilityEvent accessibilityEvent) {
-        switch (this.f4231d) {
+        switch (this.f4208d) {
             case 1:
-                C0323b c0323b = (C0323b) ((WeakHashMap) this.f4233f).get(view);
-                if (c0323b == null) {
+                C0328b c0328b = (C0328b) ((WeakHashMap) this.f4210f).get(view);
+                if (c0328b == null) {
                     super.i(view, accessibilityEvent);
                     break;
                 } else {
-                    c0323b.i(view, accessibilityEvent);
+                    c0328b.i(view, accessibilityEvent);
                     break;
                 }
             default:
@@ -264,8 +264,8 @@ public final class b extends C0323b {
     }
 
     public b(DrawerLayout drawerLayout) {
-        this.f4231d = 0;
-        this.f4233f = drawerLayout;
-        this.f4232e = new Rect();
+        this.f4208d = 0;
+        this.f4210f = drawerLayout;
+        this.f4209e = new Rect();
     }
 }

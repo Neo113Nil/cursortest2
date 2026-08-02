@@ -18,29 +18,29 @@ public abstract class VK {
     public static final Map<String, String> A02;
     public static final Map<String, List<String>> A03;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        int i10 = 0;
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        int i9 = 0;
         while (true) {
             int length = copyOfRange.length;
             if (A01[7].charAt(20) != 'n') {
                 throw new RuntimeException();
             }
             A01[7] = "VCgIGVaZR6LUurcUp8PRnu67FREgo2FS";
-            if (i10 >= length) {
+            if (i9 >= length) {
                 return new String(copyOfRange);
             }
-            int i11 = (copyOfRange[i10] - i9) - 84;
+            int i10 = (copyOfRange[i9] - i6) - 84;
             String[] strArr = A01;
             if (strArr[6].charAt(18) != strArr[4].charAt(18)) {
                 String[] strArr2 = A01;
                 strArr2[6] = "QUKDQrMYYXqh8JHMTaWZV6Ed8Qh6Q2ZU";
                 strArr2[4] = "Ahd0Yp7BAsSR93JTUpDMLzcJNLS2OMnc";
-                copyOfRange[i10] = (byte) i11;
-                i10++;
+                copyOfRange[i9] = (byte) i10;
+                i9++;
             } else {
-                copyOfRange[i10] = (byte) i11;
-                i10++;
+                copyOfRange[i9] = (byte) i10;
+                i9++;
             }
         }
     }
@@ -59,13 +59,13 @@ public abstract class VK {
         return A02.get(str);
     }
 
-    public static List<String> A02(C1840gi c1840gi, JSONArray jSONArray) {
+    public static List<String> A02(C1860gi c1860gi, JSONArray jSONArray) {
         ArrayList arrayList = new ArrayList();
         for (int eventIndex = 0; eventIndex < jSONArray.length(); eventIndex++) {
             try {
                 arrayList.add(jSONArray.getString(eventIndex));
             } catch (JSONException e9) {
-                c1840gi.A08().ABC(A00(39, 17, 76), AbstractC1252Td.A1C, new C1253Te(e9));
+                c1860gi.A08().ABC(A00(39, 17, 76), AbstractC1272Td.A1C, new C1273Te(e9));
             }
         }
         return arrayList;
@@ -75,8 +75,8 @@ public abstract class VK {
         view.addOnAttachStateChangeListener(new VJ(vi, vh));
     }
 
-    public static void A05(C1840gi c1840gi, String str, long j6) {
-        VA adEventManager = c1840gi.A0A();
+    public static void A05(C1860gi c1860gi, String str, long j6) {
+        VA adEventManager = c1860gi.A0A();
         VI vi = new VI(str, adEventManager);
         HashMap hashMap = new HashMap();
         hashMap.put(A00(24, 15, 67), Y1.A07(j6));
@@ -84,14 +84,14 @@ public abstract class VK {
         vi.A04(VH.A0D, hashMap);
     }
 
-    public static void A06(C1840gi c1840gi, JSONObject jSONObject, long j6, String str) {
+    public static void A06(C1860gi c1860gi, JSONObject jSONObject, long j6, String str) {
         JSONObject optJSONObject = jSONObject.optJSONObject(A00(2, 4, 47));
         if (optJSONObject == null) {
             return;
         }
         JSONArray optJSONArray = jSONObject.optJSONArray(A00(6, 6, 90));
         if (TextUtils.isEmpty(str) && optJSONArray != null) {
-            A07(c1840gi, optJSONObject, A02(c1840gi, optJSONArray), j6, null);
+            A07(c1860gi, optJSONObject, A02(c1860gi, optJSONArray), j6, null);
             return;
         }
         if (TextUtils.isEmpty(str)) {
@@ -105,16 +105,16 @@ public abstract class VK {
         if (!map.containsKey(str)) {
             return;
         }
-        A07(c1840gi, optJSONObject, A03.get(str), j6, str);
+        A07(c1860gi, optJSONObject, A03.get(str), j6, str);
     }
 
-    public static void A07(C1840gi c1840gi, JSONObject jSONObject, List<String> list, long j6, String str) {
+    public static void A07(C1860gi c1860gi, JSONObject jSONObject, List<String> list, long j6, String str) {
         String A002 = A00(0, 2, 106);
         if (jSONObject.has(A002)) {
             String clientToken = jSONObject.optString(A002);
             A08(clientToken, str);
             A09(clientToken, list);
-            A05(c1840gi, clientToken, j6);
+            A05(c1860gi, clientToken, j6);
         }
     }
 

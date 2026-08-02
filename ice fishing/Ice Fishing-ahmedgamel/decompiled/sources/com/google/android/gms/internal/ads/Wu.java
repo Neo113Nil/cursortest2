@@ -4,76 +4,76 @@ import android.content.Context;
 import android.os.Binder;
 import java.util.AbstractCollection;
 import java.util.HashMap;
-import p2.C4835j;
-import v2.C5110a;
+import r2.C4906k;
+import x2.C5189a;
 
 /* loaded from: classes2.dex */
 public final class Wu implements Runnable {
 
     /* renamed from: C, reason: collision with root package name */
-    public static final Object f28430C = new Object();
+    public static final Object f29212C = new Object();
 
     /* renamed from: D, reason: collision with root package name */
-    public static final Object f28431D = new Object();
+    public static final Object f29213D = new Object();
 
     /* renamed from: E, reason: collision with root package name */
-    public static final Object f28432E = new Object();
+    public static final Object f29214E = new Object();
 
     /* renamed from: F, reason: collision with root package name */
-    public static Boolean f28433F;
+    public static Boolean f29215F;
 
     /* renamed from: A, reason: collision with root package name */
-    public final C2824Vh f28434A;
+    public final C2847Vh f29216A;
 
     /* renamed from: n, reason: collision with root package name */
-    public final Context f28436n;
+    public final Context f29218n;
 
     /* renamed from: u, reason: collision with root package name */
-    public final C5110a f28437u;
+    public final C5189a f29219u;
 
     /* renamed from: x, reason: collision with root package name */
-    public int f28440x;
+    public int f29222x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final C2731Pn f28441y;
+    public final C2768Qn f29223y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final AbstractCollection f28442z;
+    public final AbstractCollection f29224z;
 
     /* renamed from: v, reason: collision with root package name */
-    public final Zu f28438v = C3053cv.B();
+    public final Zu f29220v = C3076cv.B();
 
     /* renamed from: w, reason: collision with root package name */
-    public String f28439w = "";
+    public String f29221w = "";
 
     /* renamed from: B, reason: collision with root package name */
-    public boolean f28435B = false;
+    public boolean f29217B = false;
 
-    public Wu(Context context, C5110a c5110a, C2731Pn c2731Pn, C2866Yb c2866Yb, C2824Vh c2824Vh) {
-        this.f28436n = context;
-        this.f28437u = c5110a;
-        this.f28441y = c2731Pn;
-        this.f28434A = c2824Vh;
-        if (((Boolean) q2.r.f40207e.f40210c.a(AbstractC3569ma.Z9)).booleanValue()) {
-            this.f28442z = u2.D.H();
+    public Wu(Context context, C5189a c5189a, C2768Qn c2768Qn, C2889Yb c2889Yb, C2847Vh c2847Vh) {
+        this.f29218n = context;
+        this.f29219u = c5189a;
+        this.f29223y = c2768Qn;
+        this.f29216A = c2847Vh;
+        if (((Boolean) s2.r.f40506e.f40509c.a(AbstractC3592ma.Z9)).booleanValue()) {
+            this.f29224z = w2.D.H();
         } else {
-            PB pb = RB.f27177u;
-            this.f28442z = C3500lC.f31745x;
+            PB pb = RB.f27933u;
+            this.f29224z = C3523lC.f32525x;
         }
     }
 
     public static boolean a() {
         boolean booleanValue;
-        synchronized (f28430C) {
+        synchronized (f29212C) {
             try {
-                if (f28433F == null) {
-                    if (((Boolean) AbstractC2633Ka.f25927b.r()).booleanValue()) {
-                        f28433F = Boolean.valueOf(Math.random() < ((Double) AbstractC2633Ka.f25926a.r()).doubleValue());
+                if (f29215F == null) {
+                    if (((Boolean) AbstractC2653Ka.f26705b.r()).booleanValue()) {
+                        f29215F = Boolean.valueOf(Math.random() < ((Double) AbstractC2653Ka.f26704a.r()).doubleValue());
                     } else {
-                        f28433F = Boolean.FALSE;
+                        f29215F = Boolean.FALSE;
                     }
                 }
-                booleanValue = f28433F.booleanValue();
+                booleanValue = f29215F.booleanValue();
             } catch (Throwable th) {
                 throw th;
             }
@@ -82,36 +82,36 @@ public final class Wu implements Runnable {
     }
 
     public final void b(Uu uu) {
-        AbstractC3413jg.f31268a.a(new RunnableC3048cq(13, this, uu));
+        AbstractC3436jg.f32055a.a(new RunnableC3071cq(13, this, uu));
     }
 
     @Override // java.lang.Runnable
     public final void run() {
         byte[] b9;
         if (a()) {
-            Object obj = f28431D;
+            Object obj = f29213D;
             synchronized (obj) {
                 try {
-                    if (((C3053cv) this.f28438v.f27721u).A() == 0) {
+                    if (((C3076cv) this.f29220v.f28504u).A() == 0) {
                         return;
                     }
                     try {
                         synchronized (obj) {
-                            Zu zu = this.f28438v;
-                            b9 = ((C3053cv) zu.j()).b();
+                            Zu zu = this.f29220v;
+                            b9 = ((C3076cv) zu.j()).b();
                             zu.h();
-                            ((C3053cv) zu.f27721u).D();
+                            ((C3076cv) zu.f28504u).D();
                         }
-                        C2597Hp c2597Hp = new C2597Hp((String) q2.r.f40207e.f40210c.a(AbstractC3569ma.T9), 60000, new HashMap(), b9, "application/x-protobuf");
-                        Context context = this.f28436n;
-                        String str = this.f28437u.f41391n;
+                        C2617Hp c2617Hp = new C2617Hp((String) s2.r.f40506e.f40509c.a(AbstractC3592ma.T9), 60000, new HashMap(), b9, "application/x-protobuf");
+                        Context context = this.f29218n;
+                        String str = this.f29219u.f41845n;
                         Binder.getCallingUid();
-                        new C4274ze(12, context, str, (Object) null).m(c2597Hp);
+                        new C4297ze(12, context, str, (Object) null).m(c2617Hp);
                     } catch (Exception e9) {
-                        if ((e9 instanceof C3208fp) && ((C3208fp) e9).f30455n == 3) {
+                        if ((e9 instanceof C3231fp) && ((C3231fp) e9).f31218n == 3) {
                             return;
                         }
-                        C4835j.f39733C.f39743h.e("CuiMonitor.sendCuiPing", e9);
+                        C4906k.f40186C.f40196h.e("CuiMonitor.sendCuiPing", e9);
                     }
                 } catch (Throwable th) {
                     throw th;

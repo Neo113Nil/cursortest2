@@ -6,7 +6,7 @@ import Z5.d;
 import Z5.f;
 import kotlin.jvm.internal.e;
 import kotlin.jvm.internal.h;
-import u7.C5089g;
+import u7.C5081g;
 
 /* loaded from: classes2.dex */
 public final class c extends I4.a {
@@ -19,24 +19,24 @@ public final class c extends I4.a {
             this();
         }
 
-        public final C5089g getSubscriptionEnabledAndStatus(d model) {
+        public final C5081g getSubscriptionEnabledAndStatus(d model) {
             f status;
-            boolean z3;
+            boolean z6;
             h.e(model, "model");
             if (model.isDisabledInternally()) {
-                return new C5089g(Boolean.FALSE, f.UNSUBSCRIBE);
+                return new C5081g(Boolean.FALSE, f.UNSUBSCRIBE);
             }
             if (model.getOptedIn()) {
                 f status2 = model.getStatus();
                 status = f.SUBSCRIBED;
                 if (status2 == status && model.getAddress().length() > 0) {
-                    z3 = true;
-                    return new C5089g(Boolean.valueOf(z3), status);
+                    z6 = true;
+                    return new C5081g(Boolean.valueOf(z6), status);
                 }
             }
             status = !model.getOptedIn() ? f.UNSUBSCRIBE : model.getStatus();
-            z3 = false;
-            return new C5089g(Boolean.valueOf(z3), status);
+            z6 = false;
+            return new C5081g(Boolean.valueOf(z6), status);
         }
 
         private a() {
@@ -57,8 +57,8 @@ public final class c extends I4.a {
     @Override // I4.a
     public g getAddOperation(d model) {
         h.e(model, "model");
-        C5089g subscriptionEnabledAndStatus = Companion.getSubscriptionEnabledAndStatus(model);
-        return new V5.a(((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getAppId(), ((U5.a) this._identityModelStore.getModel()).getOnesignalId(), ((U5.a) this._identityModelStore.getModel()).getExternalId(), model.getId(), model.getType(), ((Boolean) subscriptionEnabledAndStatus.f41332n).booleanValue(), model.getAddress(), (f) subscriptionEnabledAndStatus.f41333u);
+        C5081g subscriptionEnabledAndStatus = Companion.getSubscriptionEnabledAndStatus(model);
+        return new V5.a(((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getAppId(), ((U5.a) this._identityModelStore.getModel()).getOnesignalId(), ((U5.a) this._identityModelStore.getModel()).getExternalId(), model.getId(), model.getType(), ((Boolean) subscriptionEnabledAndStatus.f41052n).booleanValue(), model.getAddress(), (f) subscriptionEnabledAndStatus.f41053u);
     }
 
     @Override // I4.a
@@ -72,7 +72,7 @@ public final class c extends I4.a {
         h.e(model, "model");
         h.e(path, "path");
         h.e(property, "property");
-        C5089g subscriptionEnabledAndStatus = Companion.getSubscriptionEnabledAndStatus(model);
-        return new q(((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getAppId(), ((U5.a) this._identityModelStore.getModel()).getOnesignalId(), ((U5.a) this._identityModelStore.getModel()).getExternalId(), model.getId(), model.getType(), ((Boolean) subscriptionEnabledAndStatus.f41332n).booleanValue(), model.getAddress(), (f) subscriptionEnabledAndStatus.f41333u);
+        C5081g subscriptionEnabledAndStatus = Companion.getSubscriptionEnabledAndStatus(model);
+        return new q(((com.onesignal.core.internal.config.b) this._configModelStore.getModel()).getAppId(), ((U5.a) this._identityModelStore.getModel()).getOnesignalId(), ((U5.a) this._identityModelStore.getModel()).getExternalId(), model.getId(), model.getType(), ((Boolean) subscriptionEnabledAndStatus.f41052n).booleanValue(), model.getAddress(), (f) subscriptionEnabledAndStatus.f41053u);
     }
 }

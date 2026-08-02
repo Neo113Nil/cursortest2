@@ -7,40 +7,40 @@ import android.os.Build;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowInsets;
-import com.icefishingapp.icefishing.C5275R;
+import com.IceFishing.LiveIceFishing.C5248R;
 
 /* loaded from: classes.dex */
 public abstract class L {
     public static void a(WindowInsets windowInsets, View view) {
-        View.OnApplyWindowInsetsListener onApplyWindowInsetsListener = (View.OnApplyWindowInsetsListener) view.getTag(C5275R.id.tag_window_insets_animation_callback);
+        View.OnApplyWindowInsetsListener onApplyWindowInsetsListener = (View.OnApplyWindowInsetsListener) view.getTag(C5248R.id.tag_window_insets_animation_callback);
         if (onApplyWindowInsetsListener != null) {
             onApplyWindowInsetsListener.onApplyWindowInsets(view, windowInsets);
         }
     }
 
     public static A0 b(View view, A0 a02, Rect rect) {
-        WindowInsets g4 = a02.g();
-        if (g4 != null) {
-            return A0.h(view, view.computeSystemWindowInsets(g4, rect));
+        WindowInsets g9 = a02.g();
+        if (g9 != null) {
+            return A0.h(view, view.computeSystemWindowInsets(g9, rect));
         }
         rect.setEmpty();
         return a02;
     }
 
-    public static boolean c(View view, float f3, float f9, boolean z3) {
-        return view.dispatchNestedFling(f3, f9, z3);
+    public static boolean c(View view, float f2, float f9, boolean z6) {
+        return view.dispatchNestedFling(f2, f9, z6);
     }
 
-    public static boolean d(View view, float f3, float f9) {
-        return view.dispatchNestedPreFling(f3, f9);
+    public static boolean d(View view, float f2, float f9) {
+        return view.dispatchNestedPreFling(f2, f9);
     }
 
-    public static boolean e(View view, int i, int i6, int[] iArr, int[] iArr2) {
-        return view.dispatchNestedPreScroll(i, i6, iArr, iArr2);
+    public static boolean e(View view, int i, int i4, int[] iArr, int[] iArr2) {
+        return view.dispatchNestedPreScroll(i, i4, iArr, iArr2);
     }
 
-    public static boolean f(View view, int i, int i6, int i9, int i10, int[] iArr) {
-        return view.dispatchNestedScroll(i, i6, i9, i10, iArr);
+    public static boolean f(View view, int i, int i4, int i6, int i9, int[] iArr) {
+        return view.dispatchNestedScroll(i, i4, i6, i9, iArr);
     }
 
     public static ColorStateList g(View view) {
@@ -56,16 +56,16 @@ public abstract class L {
     }
 
     public static A0 j(View view) {
-        if (!o0.f2118d || !view.isAttachedToWindow()) {
+        if (!o0.f2206d || !view.isAttachedToWindow()) {
             return null;
         }
         try {
-            Object obj = o0.f2115a.get(view.getRootView());
+            Object obj = o0.f2203a.get(view.getRootView());
             if (obj == null) {
                 return null;
             }
-            Rect rect = (Rect) o0.f2116b.get(obj);
-            Rect rect2 = (Rect) o0.f2117c.get(obj);
+            Rect rect = (Rect) o0.f2204b.get(obj);
+            Rect rect2 = (Rect) o0.f2205c.get(obj);
             if (rect == null || rect2 == null) {
                 return null;
             }
@@ -74,8 +74,8 @@ public abstract class L {
             r0Var.e(G.e.b(rect.left, rect.top, rect.right, rect.bottom));
             r0Var.g(G.e.b(rect2.left, rect2.top, rect2.right, rect2.bottom));
             A0 b9 = r0Var.b();
-            b9.f2027a.p(b9);
-            b9.f2027a.d(view.getRootView());
+            b9.f2115a.p(b9);
+            b9.f2115a.d(view.getRootView());
             return b9;
         } catch (IllegalAccessException e9) {
             Log.w("WindowInsetsCompat", "Failed to get insets from AttachInfo. " + e9.getMessage(), e9);
@@ -115,22 +115,22 @@ public abstract class L {
         view.setBackgroundTintMode(mode);
     }
 
-    public static void s(View view, float f3) {
-        view.setElevation(f3);
+    public static void s(View view, float f2) {
+        view.setElevation(f2);
     }
 
-    public static void t(View view, boolean z3) {
-        view.setNestedScrollingEnabled(z3);
+    public static void t(View view, boolean z6) {
+        view.setNestedScrollingEnabled(z6);
     }
 
-    public static void u(View view, InterfaceC0345u interfaceC0345u) {
+    public static void u(View view, InterfaceC0350u interfaceC0350u) {
         if (Build.VERSION.SDK_INT < 30) {
-            view.setTag(C5275R.id.tag_on_apply_window_listener, interfaceC0345u);
+            view.setTag(C5248R.id.tag_on_apply_window_listener, interfaceC0350u);
         }
-        if (interfaceC0345u == null) {
-            view.setOnApplyWindowInsetsListener((View.OnApplyWindowInsetsListener) view.getTag(C5275R.id.tag_window_insets_animation_callback));
+        if (interfaceC0350u == null) {
+            view.setOnApplyWindowInsetsListener((View.OnApplyWindowInsetsListener) view.getTag(C5248R.id.tag_window_insets_animation_callback));
         } else {
-            view.setOnApplyWindowInsetsListener(new K(view, interfaceC0345u));
+            view.setOnApplyWindowInsetsListener(new K(view, interfaceC0350u));
         }
     }
 
@@ -138,12 +138,12 @@ public abstract class L {
         view.setTransitionName(str);
     }
 
-    public static void w(View view, float f3) {
-        view.setTranslationZ(f3);
+    public static void w(View view, float f2) {
+        view.setTranslationZ(f2);
     }
 
-    public static void x(View view, float f3) {
-        view.setZ(f3);
+    public static void x(View view, float f2) {
+        view.setZ(f2);
     }
 
     public static boolean y(View view, int i) {

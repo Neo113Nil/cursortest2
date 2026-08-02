@@ -92,17 +92,17 @@ public enum YM {
         this.A04 = str5;
     }
 
-    public final String A01(float f3) {
-        if (f3 <= 1.0f) {
+    public final String A01(float f2) {
+        if (f2 <= 1.0f) {
             return this.A01;
         }
-        if (f3 <= 1.5f) {
+        if (f2 <= 1.5f) {
             return this.A00;
         }
-        if (f3 <= 2.0f) {
+        if (f2 <= 2.0f) {
             return this.A02;
         }
-        if (f3 <= 3.0f) {
+        if (f2 <= 3.0f) {
             return this.A03;
         }
         return this.A04;

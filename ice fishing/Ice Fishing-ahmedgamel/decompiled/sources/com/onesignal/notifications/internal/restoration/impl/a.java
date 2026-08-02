@@ -1,21 +1,21 @@
 package com.onesignal.notifications.internal.restoration.impl;
 
 import B7.c;
-import S7.AbstractC0406y;
+import S7.AbstractC0410y;
 import android.service.notification.StatusBarNotification;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import kotlin.jvm.internal.e;
 import kotlin.jvm.internal.h;
-import m5.InterfaceC4733a;
+import m5.InterfaceC4747a;
 import org.json.JSONObject;
-import u5.C5082c;
+import u5.C5074c;
 import u5.d;
 import u7.v;
-import w5.InterfaceC5153b;
+import w5.InterfaceC5152b;
 import x4.f;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class a implements D5.b {
@@ -23,9 +23,9 @@ public final class a implements D5.b {
     public static final int DEFAULT_TTL_IF_NOT_IN_PAYLOAD = 259200;
     private static final int DELAY_BETWEEN_NOTIFICATION_RESTORES_MS = 200;
     private final f _applicationService;
-    private final InterfaceC4733a _badgeCountUpdater;
+    private final InterfaceC4747a _badgeCountUpdater;
     private final d _dataController;
-    private final InterfaceC5153b _workManager;
+    private final InterfaceC5152b _workManager;
 
     /* renamed from: com.onesignal.notifications.internal.restoration.impl.a$a, reason: collision with other inner class name */
     public static final class C0240a {
@@ -43,8 +43,8 @@ public final class a implements D5.b {
         int label;
         /* synthetic */ Object result;
 
-        public b(InterfaceC5267d interfaceC5267d) {
-            super(interfaceC5267d);
+        public b(InterfaceC5240d interfaceC5240d) {
+            super(interfaceC5240d);
         }
 
         @Override // B7.a
@@ -55,7 +55,7 @@ public final class a implements D5.b {
         }
     }
 
-    public a(f _applicationService, InterfaceC5153b _workManager, d _dataController, InterfaceC4733a _badgeCountUpdater) {
+    public a(f _applicationService, InterfaceC5152b _workManager, d _dataController, InterfaceC4747a _badgeCountUpdater) {
         h.e(_applicationService, "_applicationService");
         h.e(_workManager, "_workManager");
         h.e(_dataController, "_dataController");
@@ -94,22 +94,22 @@ public final class a implements D5.b {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object process(InterfaceC5267d interfaceC5267d) {
+    public Object process(InterfaceC5240d interfaceC5240d) {
         b bVar;
         int i;
         a aVar;
         a aVar2;
         Iterator it;
-        if (interfaceC5267d instanceof b) {
-            bVar = (b) interfaceC5267d;
-            int i6 = bVar.label;
-            if ((i6 & Integer.MIN_VALUE) != 0) {
-                bVar.label = i6 - Integer.MIN_VALUE;
+        if (interfaceC5240d instanceof b) {
+            bVar = (b) interfaceC5240d;
+            int i4 = bVar.label;
+            if ((i4 & Integer.MIN_VALUE) != 0) {
+                bVar.label = i4 - Integer.MIN_VALUE;
                 Object obj = bVar.result;
-                A7.a aVar3 = A7.a.f58n;
+                A7.a aVar3 = A7.a.f215n;
                 i = bVar.label;
                 if (i != 0) {
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                     com.onesignal.debug.internal.logging.b.info$default("Restoring notifications", null, 2, null);
                     List<Integer> visibleNotifications = getVisibleNotifications();
                     d dVar = this._dataController;
@@ -127,33 +127,33 @@ public final class a implements D5.b {
                         }
                         it = (Iterator) bVar.L$1;
                         aVar2 = (a) bVar.L$0;
-                        com.bumptech.glide.d.k(obj);
+                        Q3.b.s(obj);
                         while (it.hasNext()) {
-                            C5082c c5082c = (C5082c) it.next();
+                            C5074c c5074c = (C5074c) it.next();
                             bVar.L$0 = aVar2;
                             bVar.L$1 = it;
                             bVar.label = 2;
-                            if (aVar2.processNotification(c5082c, 200, bVar) == aVar3) {
+                            if (aVar2.processNotification(c5074c, 200, bVar) == aVar3) {
                                 return aVar3;
                             }
                         }
                         aVar2._badgeCountUpdater.update();
-                        return v.f41353a;
+                        return v.f41073a;
                     }
                     aVar = (a) bVar.L$0;
-                    com.bumptech.glide.d.k(obj);
+                    Q3.b.s(obj);
                 }
                 aVar2 = aVar;
                 it = ((List) obj).iterator();
                 while (it.hasNext()) {
                 }
                 aVar2._badgeCountUpdater.update();
-                return v.f41353a;
+                return v.f41073a;
             }
         }
-        bVar = new b(interfaceC5267d);
+        bVar = new b(interfaceC5240d);
         Object obj2 = bVar.result;
-        A7.a aVar32 = A7.a.f58n;
+        A7.a aVar32 = A7.a.f215n;
         i = bVar.label;
         if (i != 0) {
         }
@@ -162,13 +162,13 @@ public final class a implements D5.b {
         while (it.hasNext()) {
         }
         aVar2._badgeCountUpdater.update();
-        return v.f41353a;
+        return v.f41073a;
     }
 
     @Override // D5.b
-    public Object processNotification(C5082c c5082c, int i, InterfaceC5267d interfaceC5267d) {
-        Object f3;
-        this._workManager.beginEnqueueingWork(this._applicationService.getAppContext(), c5082c.getId(), c5082c.getAndroidId(), new JSONObject(c5082c.getFullData()), c5082c.getCreatedAt(), true, false);
-        return (i <= 0 || (f3 = AbstractC0406y.f((long) i, interfaceC5267d)) != A7.a.f58n) ? v.f41353a : f3;
+    public Object processNotification(C5074c c5074c, int i, InterfaceC5240d interfaceC5240d) {
+        Object f2;
+        this._workManager.beginEnqueueingWork(this._applicationService.getAppContext(), c5074c.getId(), c5074c.getAndroidId(), new JSONObject(c5074c.getFullData()), c5074c.getCreatedAt(), true, false);
+        return (i <= 0 || (f2 = AbstractC0410y.f((long) i, interfaceC5240d)) != A7.a.f215n) ? v.f41073a : f2;
     }
 }

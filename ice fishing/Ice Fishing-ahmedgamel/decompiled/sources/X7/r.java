@@ -29,14 +29,14 @@ public final class r {
             atomicReferenceArray.set(i, aVar);
             return;
         }
-        int i6 = i + 1;
-        int i9 = length * 2;
-        if (i6 < i9) {
-            i6 = i9;
+        int i4 = i + 1;
+        int i6 = length * 2;
+        if (i4 < i6) {
+            i4 = i6;
         }
-        AtomicReferenceArray<Object> atomicReferenceArray2 = new AtomicReferenceArray<>(i6);
-        for (int i10 = 0; i10 < length; i10++) {
-            atomicReferenceArray2.set(i10, atomicReferenceArray.get(i10));
+        AtomicReferenceArray<Object> atomicReferenceArray2 = new AtomicReferenceArray<>(i4);
+        for (int i9 = 0; i9 < length; i9++) {
+            atomicReferenceArray2.set(i9, atomicReferenceArray.get(i9));
         }
         atomicReferenceArray2.set(i, aVar);
         this.array = atomicReferenceArray2;

@@ -6,33 +6,33 @@ import java.io.Serializable;
 public final class o implements Serializable {
 
     /* renamed from: a, reason: collision with root package name */
-    private String f18843a;
+    private String f19630a;
 
     /* renamed from: b, reason: collision with root package name */
-    private String f18844b;
+    private String f19631b;
 
     /* renamed from: c, reason: collision with root package name */
-    private int f18845c;
+    private int f19632c;
 
     private o(String str, String str2, int i) {
-        this.f18844b = str;
-        this.f18843a = str2;
-        this.f18845c = i;
+        this.f19631b = str;
+        this.f19630a = str2;
+        this.f19632c = i;
     }
 
     private String a() {
-        return this.f18843a;
+        return this.f19630a;
     }
 
     private String b() {
-        return this.f18844b;
+        return this.f19631b;
     }
 
     private void a(String str) {
-        this.f18843a = str;
+        this.f19630a = str;
     }
 
     private void b(String str) {
-        this.f18844b = str;
+        this.f19631b = str;
     }
 }

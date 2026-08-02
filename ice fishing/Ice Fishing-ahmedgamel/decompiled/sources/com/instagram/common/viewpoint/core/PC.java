@@ -31,7 +31,7 @@ public abstract class PC<K, V> {
 
     public abstract Map<K, V> A07();
 
-    public abstract Object A0B(int i, int i6);
+    public abstract Object A0B(int i, int i4);
 
     public abstract V A0C(int i, V v9);
 
@@ -102,7 +102,7 @@ public abstract class PC<K, V> {
         if (set == obj) {
             return true;
         }
-        boolean z3 = obj instanceof Set;
+        boolean z6 = obj instanceof Set;
         String[] strArr = A03;
         if (strArr[5].length() != strArr[1].length()) {
             throw new RuntimeException();
@@ -110,7 +110,7 @@ public abstract class PC<K, V> {
         String[] strArr2 = A03;
         strArr2[4] = "EyqH2KYHB8yq5zU8TINZ2CMR";
         strArr2[0] = "l4DYdurHJXrazQVJZIOfW52E";
-        if (!z3) {
+        if (!z6) {
             return false;
         }
         Set set2 = (Set) obj;
@@ -162,8 +162,8 @@ public abstract class PC<K, V> {
     public final Object[] A0G(int i) {
         int A04 = A04();
         Object[] objArr = new Object[A04];
-        for (int i6 = 0; i6 < A04; i6++) {
-            objArr[i6] = A0B(i6, i);
+        for (int i4 = 0; i4 < A04; i4++) {
+            objArr[i4] = A0B(i4, i);
         }
         return objArr;
     }
@@ -174,8 +174,8 @@ public abstract class PC<K, V> {
         if (tArr.length < A04) {
             tArr = (T[]) ((Object[]) Array.newInstance(tArr.getClass().getComponentType(), A04));
         }
-        for (int i6 = 0; i6 < A04; i6++) {
-            tArr[i6] = A0B(i6, i);
+        for (int i4 = 0; i4 < A04; i4++) {
+            tArr[i4] = A0B(i4, i);
         }
         if (tArr.length > A04) {
             tArr[A04] = null;

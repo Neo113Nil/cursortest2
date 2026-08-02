@@ -5,11 +5,11 @@ import java.util.concurrent.Callable;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public class U9 implements Callable<Boolean> {
-    public final /* synthetic */ C1337Wn A00;
+    public final /* synthetic */ C1357Wn A00;
     public final /* synthetic */ String A01;
 
-    public U9(C1337Wn c1337Wn, String str) {
-        this.A00 = c1337Wn;
+    public U9(C1357Wn c1357Wn, String str) {
+        this.A00 = c1357Wn;
         this.A01 = str;
     }
 

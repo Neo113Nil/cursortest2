@@ -29,7 +29,7 @@ public final class S2 implements NativeAdApi {
     public S2(NativeAd nativeAd, NativeAdBaseApi nativeAdBaseApi) {
         this.A00 = nativeAd;
         this.A01 = nativeAdBaseApi;
-        UK.A0L(nativeAdBaseApi).A1i(EnumC1315Vq.A06);
+        UK.A0L(nativeAdBaseApi).A1i(EnumC1335Vq.A06);
     }
 
     public S2(NativeAdBase nativeAdBase, NativeAd nativeAd, NativeAdBaseApi nativeAdBaseApi) {
@@ -87,7 +87,7 @@ public final class S2 implements NativeAdApi {
 
     @Override // com.facebook.ads.internal.api.NativeAdApi
     public final VideoAutoplayBehavior getVideoAutoplayBehavior() {
-        return EnumC1306Vf.A00(A00().A1D());
+        return EnumC1326Vf.A00(A00().A1D());
     }
 
     @Override // com.facebook.ads.internal.api.NativeAdApi
@@ -103,8 +103,8 @@ public final class S2 implements NativeAdApi {
     @Override // com.facebook.ads.internal.api.NativeAdApi
     public final void registerViewForInteraction(View view, MediaView mediaView, ImageView imageView, List<View> clickableViews) {
         if (imageView != null) {
-            C1840gi A16 = A00().A16();
-            C1840gi downloadContext = C1213Rp.A03(imageView.getContext());
+            C1860gi A16 = A00().A16();
+            C1860gi downloadContext = C1233Rp.A03(imageView.getContext());
             downloadContext.A0L(A16);
             UK.A0k(A00().getAdIcon(), imageView, downloadContext);
         }
@@ -119,10 +119,10 @@ public final class S2 implements NativeAdApi {
     @Override // com.facebook.ads.internal.api.NativeAdApi
     public final void registerViewForInteraction(View view, MediaView mediaView, MediaView mediaView2, List<View> list) {
         if (mediaView != null) {
-            ((C1870hC) mediaView.getMediaViewApi()).A0W(this.A00);
+            ((C1890hC) mediaView.getMediaViewApi()).A0W(this.A00);
         }
         if (mediaView2 != null) {
-            ((C1870hC) mediaView2.getMediaViewApi()).A0X(this.A01, false);
+            ((C1890hC) mediaView2.getMediaViewApi()).A0X(this.A01, false);
         }
         if (list != null) {
             A00().A1V(view, mediaView, list);

@@ -4,9 +4,9 @@ import android.content.pm.PackageManager;
 import android.content.pm.Signature;
 
 /* loaded from: classes.dex */
-public final class c extends E3.e {
-    @Override // E3.e
-    public final Signature[] w(PackageManager packageManager, String str) {
+public final class c extends O2.i {
+    @Override // O2.i
+    public final Signature[] j(PackageManager packageManager, String str) {
         return packageManager.getPackageInfo(str, 64).signatures;
     }
 }

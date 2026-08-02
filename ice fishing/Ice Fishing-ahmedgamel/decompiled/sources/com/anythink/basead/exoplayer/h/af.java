@@ -8,16 +8,16 @@ import java.util.Arrays;
 public final class af implements Parcelable {
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f7516b;
+    public final int f8302b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final ae[] f7517c;
+    private final ae[] f8303c;
 
     /* renamed from: d, reason: collision with root package name */
-    private int f7518d;
+    private int f8304d;
 
     /* renamed from: a, reason: collision with root package name */
-    public static final af f7515a = new af(new ae[0]);
+    public static final af f8301a = new af(new ae[0]);
     public static final Parcelable.Creator<af> CREATOR = new Parcelable.Creator<af>() { // from class: com.anythink.basead.exoplayer.h.af.1
         private static af a(Parcel parcel) {
             return new af(parcel);
@@ -39,12 +39,12 @@ public final class af implements Parcelable {
     };
 
     public af(ae... aeVarArr) {
-        this.f7517c = aeVarArr;
-        this.f7516b = aeVarArr.length;
+        this.f8303c = aeVarArr;
+        this.f8302b = aeVarArr.length;
     }
 
     public final ae a(int i) {
-        return this.f7517c[i];
+        return this.f8303c[i];
     }
 
     @Override // android.os.Parcelable
@@ -58,7 +58,7 @@ public final class af implements Parcelable {
         }
         if (obj != null && af.class == obj.getClass()) {
             af afVar = (af) obj;
-            if (this.f7516b == afVar.f7516b && Arrays.equals(this.f7517c, afVar.f7517c)) {
+            if (this.f8302b == afVar.f8302b && Arrays.equals(this.f8303c, afVar.f8303c)) {
                 return true;
             }
         }
@@ -66,23 +66,23 @@ public final class af implements Parcelable {
     }
 
     public final int hashCode() {
-        if (this.f7518d == 0) {
-            this.f7518d = Arrays.hashCode(this.f7517c);
+        if (this.f8304d == 0) {
+            this.f8304d = Arrays.hashCode(this.f8303c);
         }
-        return this.f7518d;
+        return this.f8304d;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeInt(this.f7516b);
-        for (int i6 = 0; i6 < this.f7516b; i6++) {
-            parcel.writeParcelable(this.f7517c[i6], 0);
+        parcel.writeInt(this.f8302b);
+        for (int i4 = 0; i4 < this.f8302b; i4++) {
+            parcel.writeParcelable(this.f8303c[i4], 0);
         }
     }
 
     public final int a(ae aeVar) {
-        for (int i = 0; i < this.f7516b; i++) {
-            if (this.f7517c[i] == aeVar) {
+        for (int i = 0; i < this.f8302b; i++) {
+            if (this.f8303c[i] == aeVar) {
                 return i;
             }
         }
@@ -91,14 +91,14 @@ public final class af implements Parcelable {
 
     public af(Parcel parcel) {
         int readInt = parcel.readInt();
-        this.f7516b = readInt;
-        this.f7517c = new ae[readInt];
-        for (int i = 0; i < this.f7516b; i++) {
-            this.f7517c[i] = (ae) parcel.readParcelable(ae.class.getClassLoader());
+        this.f8302b = readInt;
+        this.f8303c = new ae[readInt];
+        for (int i = 0; i < this.f8302b; i++) {
+            this.f8303c[i] = (ae) parcel.readParcelable(ae.class.getClassLoader());
         }
     }
 
     private boolean a() {
-        return this.f7516b == 0;
+        return this.f8302b == 0;
     }
 }

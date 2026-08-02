@@ -8,10 +8,10 @@ import com.iab.omid.library.toponad.adsession.DeviceCategory;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    private static UiModeManager f36289a;
+    private static UiModeManager f37056a;
 
     public static DeviceCategory a() {
-        UiModeManager uiModeManager = f36289a;
+        UiModeManager uiModeManager = f37056a;
         if (uiModeManager == null) {
             return DeviceCategory.OTHER;
         }
@@ -21,7 +21,7 @@ public final class a {
 
     public static void a(Context context) {
         if (context != null) {
-            f36289a = (UiModeManager) context.getSystemService("uimode");
+            f37056a = (UiModeManager) context.getSystemService("uimode");
         }
     }
 }

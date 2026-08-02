@@ -7,13 +7,13 @@ import java.util.concurrent.Executors;
 public final class h {
 
     /* renamed from: b, reason: collision with root package name */
-    static volatile Executor f16351b;
+    static volatile Executor f17138b;
 
     /* renamed from: a, reason: collision with root package name */
-    static com.anythink.core.common.s.a.a.c f16350a = new d();
+    static com.anythink.core.common.s.a.a.c f17137a = new d();
 
     /* renamed from: c, reason: collision with root package name */
-    static int f16352c = 4096;
+    static int f17139c = 4096;
 
     private h() {
     }
@@ -22,31 +22,31 @@ public final class h {
         if (i < 2048 || i > 65535) {
             return;
         }
-        f16352c = i;
+        f17139c = i;
     }
 
     public static void a(com.anythink.core.common.s.a.a.c cVar) {
-        f16350a = cVar;
+        f17137a = cVar;
     }
 
     public static void a(Executor executor) {
         if (executor != null) {
-            f16351b = executor;
+            f17138b = executor;
         }
     }
 
     public static Executor a() {
-        if (f16351b == null) {
+        if (f17138b == null) {
             synchronized (h.class) {
                 try {
-                    if (f16351b == null) {
-                        f16351b = Executors.newCachedThreadPool();
+                    if (f17138b == null) {
+                        f17138b = Executors.newCachedThreadPool();
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f16351b;
+        return f17138b;
     }
 }

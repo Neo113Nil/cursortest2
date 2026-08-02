@@ -10,9 +10,9 @@ public interface VideoPlayerStatusListener {
 
     void onPlayError(String str);
 
-    void onPlayProgress(int i, int i6);
+    void onPlayProgress(int i, int i4);
 
-    void onPlayProgressMS(int i, int i6);
+    void onPlayProgressMS(int i, int i4);
 
     void onPlaySetDataSourceError(String str);
 

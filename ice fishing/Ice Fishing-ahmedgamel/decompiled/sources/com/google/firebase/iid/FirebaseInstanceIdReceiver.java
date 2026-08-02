@@ -1,14 +1,14 @@
 package com.google.firebase.iid;
 
-import L2.i;
-import U2.a;
-import X2.e;
+import N2.j;
+import W2.a;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import com.bumptech.glide.f;
 import java.lang.ref.SoftReference;
 import java.util.Objects;
 import java.util.concurrent.ExecutorService;
@@ -18,10 +18,10 @@ import java.util.concurrent.Executors;
 public final class FirebaseInstanceIdReceiver extends BroadcastReceiver {
 
     /* renamed from: a, reason: collision with root package name */
-    public static SoftReference f36187a;
+    public static SoftReference f36954a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static SoftReference f36188b;
+    public static SoftReference f36955b;
 
     public static int a(Intent intent) {
         PendingIntent pendingIntent = (PendingIntent) intent.getParcelableExtra("pending_intent");
@@ -43,10 +43,10 @@ public final class FirebaseInstanceIdReceiver extends BroadcastReceiver {
             return 500;
         }
         Intent putExtras = new Intent("com.google.firebase.messaging.NOTIFICATION_DISMISS").putExtras(extras);
-        if (!e.O(putExtras)) {
+        if (!f.u(putExtras)) {
             return -1;
         }
-        e.L("_nd", putExtras.getExtras());
+        f.p("_nd", putExtras.getExtras());
         return -1;
     }
 
@@ -60,17 +60,17 @@ public final class FirebaseInstanceIdReceiver extends BroadcastReceiver {
         BroadcastReceiver.PendingResult goAsync = goAsync();
         synchronized (FirebaseInstanceIdReceiver.class) {
             try {
-                SoftReference softReference = f36187a;
+                SoftReference softReference = f36954a;
                 ExecutorService executorService2 = softReference != null ? (ExecutorService) softReference.get() : null;
                 if (executorService2 == null) {
                     executorService2 = Executors.unconfigurableExecutorService(Executors.newCachedThreadPool(new a("firebase-iid-executor")));
-                    f36187a = new SoftReference(executorService2);
+                    f36954a = new SoftReference(executorService2);
                 }
                 executorService = executorService2;
             } catch (Throwable th) {
                 throw th;
             }
         }
-        executorService.execute(new i(this, intent, context, isOrderedBroadcast, goAsync));
+        executorService.execute(new j(this, intent, context, isOrderedBroadcast, goAsync));
     }
 }

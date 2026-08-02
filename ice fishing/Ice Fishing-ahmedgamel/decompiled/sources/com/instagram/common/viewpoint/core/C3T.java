@@ -7,7 +7,7 @@ import com.facebook.ads.androidx.media3.common.Timeline;
 public abstract /* synthetic */ class C3T {
     public static void A00(C3U c3u, Timeline timeline, int i) {
         if (timeline.A07() == 1) {
-            C2365pj window = new C2365pj();
+            C2385pj window = new C2385pj();
             timeline.A0K(0, window);
         }
     }

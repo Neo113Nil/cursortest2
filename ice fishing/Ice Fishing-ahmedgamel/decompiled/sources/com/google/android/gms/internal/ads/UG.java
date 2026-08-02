@@ -1,5 +1,5 @@
 package com.google.android.gms.internal.ads;
 
 /* loaded from: classes2.dex */
-public final class UG implements InterfaceC3772qE {
+public final class UG implements InterfaceC3795qE {
 }

@@ -3,7 +3,7 @@ package com.instagram.common.viewpoint.core;
 import java.lang.ref.WeakReference;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public abstract class Q9<T> extends AbstractRunnableC1327Wc {
+public abstract class Q9<T> extends AbstractRunnableC1347Wc {
     public final WeakReference<T> A00;
 
     /* JADX WARN: Generic types in debug info not equals: com.facebook.ads.redexgen.X.Q9 != com.facebook.ads.internal.util.common.WeakRunnable<T> */

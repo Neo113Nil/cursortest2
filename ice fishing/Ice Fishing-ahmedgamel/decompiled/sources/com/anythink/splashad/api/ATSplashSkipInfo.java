@@ -20,9 +20,9 @@ public class ATSplashSkipInfo {
         this.mCountDownDuration = j6;
         this.mCallbackInterval = j9;
         this.mATSplashSkipAdListener = aTSplashSkipAdListener;
-        if (j6 < a.f7883f) {
+        if (j6 < a.f8669f) {
             Log.e(TAG, "mCountDownDuration is less than or equal to 2000, reset to 2000");
-            this.mCountDownDuration = a.f7883f;
+            this.mCountDownDuration = a.f8669f;
         }
         long j10 = this.mCallbackInterval;
         if (j10 <= 0) {
@@ -72,6 +72,6 @@ public class ATSplashSkipInfo {
     }
 
     public ATSplashSkipInfo(View view, ATSplashSkipAdListener aTSplashSkipAdListener) {
-        this(view, f.f7187a, 1000L, aTSplashSkipAdListener);
+        this(view, f.f7973a, 1000L, aTSplashSkipAdListener);
     }
 }

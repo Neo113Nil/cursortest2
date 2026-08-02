@@ -57,7 +57,7 @@ public final class d extends i {
     }
 
     public final String getAppId() {
-        return getOptStringProperty(com.anythink.expressad.videocommon.e.b.f22407u, b.INSTANCE);
+        return getOptStringProperty(com.anythink.expressad.videocommon.e.b.f23194u, b.INSTANCE);
     }
 
     public final String getProjectId() {
@@ -69,7 +69,7 @@ public final class d extends i {
     }
 
     public final void setAppId(String str) {
-        i.setOptStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f22407u, str, null, false, 12, null);
+        i.setOptStringProperty$default(this, com.anythink.expressad.videocommon.e.b.f23194u, str, null, false, 12, null);
     }
 
     public final void setProjectId(String str) {

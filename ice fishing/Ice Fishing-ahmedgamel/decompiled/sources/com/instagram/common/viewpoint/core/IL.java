@@ -3,15 +3,15 @@ package com.instagram.common.viewpoint.core;
 import java.util.Arrays;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public class IL extends AbstractRunnableC1327Wc {
+public class IL extends AbstractRunnableC1347Wc {
     public static byte[] A01;
     public static String[] A02 = {"mPUp", "QaVG6HdjpkfaxAZj0g", "f", "awRGdU6dgRZhiPVlhe", "rFOzx0t9VnUrXKVKNhKeQ4JnbF82l9OW", "Jupus4hVDLzI", "SNB8L6kKTybUpjfk2kEtWCUyw", "zmy1APRNrfa5"};
     public final /* synthetic */ C5S A00;
 
-    public static String A00(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 26);
+    public static String A00(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 26);
         }
         return new String(copyOfRange);
     }
@@ -28,11 +28,11 @@ public class IL extends AbstractRunnableC1327Wc {
         this.A00 = c5s;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractRunnableC1327Wc
+    @Override // com.instagram.common.viewpoint.core.AbstractRunnableC1347Wc
     public final void A07() {
-        boolean z3;
-        z3 = this.A00.A0C;
-        if (!z3) {
+        boolean z6;
+        z6 = this.A00.A0C;
+        if (!z6) {
             C5S c5s = this.A00;
             String[] strArr = A02;
             if (strArr[2].length() == strArr[1].length()) {

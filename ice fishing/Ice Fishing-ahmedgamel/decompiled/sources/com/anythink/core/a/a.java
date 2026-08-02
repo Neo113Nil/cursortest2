@@ -17,44 +17,44 @@ import java.util.concurrent.ConcurrentHashMap;
 public class a {
 
     /* renamed from: g, reason: collision with root package name */
-    private static volatile a f11539g;
+    private static volatile a f12325g;
 
     /* renamed from: a, reason: collision with root package name */
-    p f11540a;
+    p f12326a;
 
     /* renamed from: d, reason: collision with root package name */
-    Context f11543d;
+    Context f12329d;
 
     /* renamed from: f, reason: collision with root package name */
-    private final String f11545f = getClass().getSimpleName();
+    private final String f12331f = getClass().getSimpleName();
 
     /* renamed from: e, reason: collision with root package name */
-    ConcurrentHashMap<String, bo> f11544e = new ConcurrentHashMap<>(3);
+    ConcurrentHashMap<String, bo> f12330e = new ConcurrentHashMap<>(3);
 
     /* renamed from: b, reason: collision with root package name */
-    SimpleDateFormat f11541b = new SimpleDateFormat("yyyyMMdd");
+    SimpleDateFormat f12327b = new SimpleDateFormat("yyyyMMdd");
 
     /* renamed from: c, reason: collision with root package name */
-    SimpleDateFormat f11542c = new SimpleDateFormat("yyyyMMddHH");
+    SimpleDateFormat f12328c = new SimpleDateFormat("yyyyMMddHH");
 
     private a(Context context) {
-        this.f11540a = p.a(com.anythink.core.common.e.e.a(context));
-        this.f11543d = context;
+        this.f12326a = p.a(com.anythink.core.common.e.e.a(context));
+        this.f12329d = context;
     }
 
     public static a a(Context context) {
-        if (f11539g == null) {
+        if (f12325g == null) {
             synchronized (a.class) {
                 try {
-                    if (f11539g == null) {
-                        f11539g = new a(context);
+                    if (f12325g == null) {
+                        f12325g = new a(context);
                     }
                 } catch (Throwable th) {
                     throw th;
                 }
             }
         }
-        return f11539g;
+        return f12325g;
     }
 
     public final void a() {
@@ -62,7 +62,7 @@ public class a {
             @Override // java.lang.Runnable
             public final void run() {
                 a aVar = a.this;
-                aVar.f11540a.a(aVar.f11541b.format(new Date(System.currentTimeMillis())));
+                aVar.f12326a.a(aVar.f12327b.format(new Date(System.currentTimeMillis())));
             }
         }, 2);
     }
@@ -73,23 +73,23 @@ public class a {
             th.printStackTrace();
         }
         if (lVar == null) {
-            return b.f11547n;
+            return b.f12333n;
         }
         int a9 = b.a(t.b().g()).a(str, String.valueOf(lVar.aq()), lVar.av(), lVar.aw());
-        if (a9 != b.f11547n) {
+        if (a9 != b.f12333n) {
             return a9;
         }
         if (!t.b().v()) {
             if (lVar.av() == -1 && lVar.aw() == -1) {
-                return b.f11547n;
+                return b.f12333n;
             }
             bo a10 = a(str, lVar.aq());
-            int i = a10 != null ? a10.f13722c : 0;
-            int i6 = a10 != null ? a10.f13723d : 0;
+            int i = a10 != null ? a10.f14508c : 0;
+            int i4 = a10 != null ? a10.f14509d : 0;
             Date date = new Date();
             int parseInt = Integer.parseInt(b.b(date));
             int parseInt2 = Integer.parseInt(b.c(date));
-            ConcurrentHashMap<String, Long> concurrentHashMap = b.a(t.b().g()).f11558j;
+            ConcurrentHashMap<String, Long> concurrentHashMap = b.a(t.b().g()).f12344j;
             if (concurrentHashMap != null && !concurrentHashMap.isEmpty()) {
                 Long l9 = concurrentHashMap.get("day_" + parseInt + "_" + str);
                 if (l9 != null) {
@@ -97,100 +97,100 @@ public class a {
                 }
                 Long l10 = concurrentHashMap.get("hour_" + parseInt2 + "_" + str);
                 if (l10 != null) {
-                    i6 += l10.intValue();
+                    i4 += l10.intValue();
                 }
             }
             if (lVar.av() != -1 && i >= lVar.av()) {
                 return 2;
             }
-            if (lVar.aw() != -1 && i6 >= lVar.aw()) {
+            if (lVar.aw() != -1 && i4 >= lVar.aw()) {
                 return 2;
             }
         }
-        return b.f11547n;
+        return b.f12333n;
     }
 
     public final int a(String str, bv bvVar, int i) {
-        String z3;
+        String z6;
         int a9;
         try {
-            int g4 = bvVar.g();
-            z3 = bvVar.z();
+            int g9 = bvVar.g();
+            z6 = bvVar.z();
             b a10 = b.a(t.b().g());
-            String valueOf = String.valueOf(g4);
+            String valueOf = String.valueOf(g9);
             String valueOf2 = String.valueOf(i);
-            long i6 = bvVar.i();
+            long i4 = bvVar.i();
             long j6 = bvVar.j();
             bvVar.y();
-            a9 = a10.a(valueOf, z3, valueOf2, i6, j6);
+            a9 = a10.a(valueOf, z6, valueOf2, i4, j6);
         } catch (Throwable th) {
             th.printStackTrace();
         }
-        if (a9 != b.f11547n) {
+        if (a9 != b.f12333n) {
             return a9;
         }
         if (!t.b().v()) {
             if (bvVar.j() == -1 && bvVar.i() == -1) {
-                return b.f11547n;
+                return b.f12333n;
             }
             bo.a a11 = a(str, bvVar.z(), i);
             if (a11 == null) {
-                return b.f11547n;
+                return b.f12333n;
             }
-            int i9 = a11.f13731d;
-            int i10 = a11.f13732e;
+            int i6 = a11.f14517d;
+            int i9 = a11.f14518e;
             Date date = new Date();
             int parseInt = Integer.parseInt(b.b(date));
             int parseInt2 = Integer.parseInt(b.c(date));
-            ConcurrentHashMap<String, Long> concurrentHashMap = b.a(t.b().g()).f11561m;
+            ConcurrentHashMap<String, Long> concurrentHashMap = b.a(t.b().g()).f12347m;
             if (concurrentHashMap != null && !concurrentHashMap.isEmpty()) {
-                Long l9 = concurrentHashMap.get("day_" + parseInt + "_" + z3);
+                Long l9 = concurrentHashMap.get("day_" + parseInt + "_" + z6);
                 if (l9 != null) {
-                    i9 += l9.intValue();
+                    i6 += l9.intValue();
                 }
-                Long l10 = concurrentHashMap.get("hour_" + parseInt2 + "_" + z3);
+                Long l10 = concurrentHashMap.get("hour_" + parseInt2 + "_" + z6);
                 if (l10 != null) {
-                    i10 += l10.intValue();
+                    i9 += l10.intValue();
                 }
             }
-            if (bvVar.j() != -1 && i10 >= bvVar.j()) {
+            if (bvVar.j() != -1 && i9 >= bvVar.j()) {
                 return 2;
             }
-            if (bvVar.i() != -1 && i9 >= bvVar.i()) {
+            if (bvVar.i() != -1 && i6 >= bvVar.i()) {
                 return 2;
             }
         }
-        return b.f11547n;
+        return b.f12333n;
     }
 
     public final bo a(String str, int i) {
         long currentTimeMillis = System.currentTimeMillis();
-        String format = this.f11541b.format(new Date(currentTimeMillis));
-        String format2 = this.f11542c.format(new Date(currentTimeMillis));
-        bo boVar = this.f11544e.get(str);
+        String format = this.f12327b.format(new Date(currentTimeMillis));
+        String format2 = this.f12328c.format(new Date(currentTimeMillis));
+        bo boVar = this.f12330e.get(str);
         if (boVar != null) {
-            if (!TextUtils.equals(boVar.f13726g, format)) {
-                boVar.f13722c = 0;
-                boVar.f13726g = format;
-                boVar.f13723d = 0;
-                boVar.f13725f = format2;
-            } else if (!TextUtils.equals(boVar.f13725f, format2)) {
-                boVar.f13723d = 0;
-                boVar.f13725f = format2;
+            if (!TextUtils.equals(boVar.f14512g, format)) {
+                boVar.f14508c = 0;
+                boVar.f14512g = format;
+                boVar.f14509d = 0;
+                boVar.f14511f = format2;
+            } else if (!TextUtils.equals(boVar.f14511f, format2)) {
+                boVar.f14509d = 0;
+                boVar.f14511f = format2;
             }
         }
         synchronized (u.a().a(str)) {
             if (boVar == null) {
                 try {
-                    boVar = this.f11540a.a(str, format, format2);
+                    boVar = this.f12326a.a(str, format, format2);
                     if (boVar == null) {
                         boVar = new bo();
-                        boVar.f13721b = str;
-                        boVar.f13720a = i;
+                        boVar.f14507b = str;
+                        boVar.f14506a = i;
                     }
-                    boVar.f13726g = format;
-                    boVar.f13725f = format2;
-                    this.f11544e.put(str, boVar);
+                    boVar.f14512g = format;
+                    boVar.f14511f = format2;
+                    this.f12330e.put(str, boVar);
                 } catch (Throwable th) {
                     throw th;
                 }
@@ -205,25 +205,25 @@ public class a {
         if (a10 == null || (a9 = a10.a(str2)) == null) {
             return null;
         }
-        if (!TextUtils.equals(a9.f13730c, a10.f13726g)) {
-            a9.f13730c = a10.f13726g;
-            a9.f13731d = 0;
-            a9.f13729b = a10.f13725f;
-            a9.f13732e = 0;
+        if (!TextUtils.equals(a9.f14516c, a10.f14512g)) {
+            a9.f14516c = a10.f14512g;
+            a9.f14517d = 0;
+            a9.f14515b = a10.f14511f;
+            a9.f14518e = 0;
             return a9;
         }
-        if (!TextUtils.equals(a9.f13729b, a10.f13725f)) {
-            a9.f13729b = a10.f13725f;
-            a9.f13732e = 0;
+        if (!TextUtils.equals(a9.f14515b, a10.f14511f)) {
+            a9.f14515b = a10.f14511f;
+            a9.f14518e = 0;
         }
         return a9;
     }
 
     public final int[] a(int i) {
         long currentTimeMillis = System.currentTimeMillis();
-        int[] a9 = this.f11540a.a(i, this.f11541b.format(new Date(currentTimeMillis)), this.f11542c.format(new Date(currentTimeMillis)));
-        int i6 = a9[0];
-        int i9 = a9[1];
+        int[] a9 = this.f12326a.a(i, this.f12327b.format(new Date(currentTimeMillis)), this.f12328c.format(new Date(currentTimeMillis)));
+        int i4 = a9[0];
+        int i6 = a9[1];
         return a9;
     }
 

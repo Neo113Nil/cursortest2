@@ -10,9 +10,9 @@ public interface AdComponentViewParentApi extends AdComponentView {
 
     void onDetachedFromWindow();
 
-    void onMeasure(int i, int i6);
+    void onMeasure(int i, int i4);
 
     void onVisibilityChanged(View view, int i);
 
-    void setMeasuredDimension(int i, int i6);
+    void setMeasuredDimension(int i, int i4);
 }

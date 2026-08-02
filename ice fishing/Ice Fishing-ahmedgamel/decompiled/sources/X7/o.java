@@ -9,11 +9,11 @@ import java.util.ServiceConfigurationError;
 public abstract class o {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final T7.e f3856a;
+    public static final T7.e f3811a;
 
     static {
         String str;
-        int i = v.f3862a;
+        int i = v.f3817a;
         Object obj = null;
         try {
             str = System.getProperty("kotlinx.coroutines.fast.service.loader");
@@ -26,7 +26,7 @@ public abstract class o {
         try {
             Iterator it = Arrays.asList(new T7.a()).iterator();
             kotlin.jvm.internal.h.e(it, "<this>");
-            Iterator it2 = P7.i.u(new P7.a(new P7.g(1, it))).iterator();
+            Iterator it2 = P7.i.A(new P7.a(new P7.g(1, it))).iterator();
             if (it2.hasNext()) {
                 obj = it2.next();
                 if (it2.hasNext()) {
@@ -43,7 +43,7 @@ public abstract class o {
             if (mainLooper == null) {
                 throw new IllegalStateException("The main looper is not available");
             }
-            f3856a = new T7.e(T7.f.a(mainLooper), false);
+            f3811a = new T7.e(T7.f.a(mainLooper), false);
         } catch (Throwable th) {
             throw new ServiceConfigurationError(th.getMessage(), th);
         }

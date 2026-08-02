@@ -4,7 +4,6 @@ import B7.h;
 import I7.l;
 import android.content.Context;
 import android.os.Bundle;
-import com.bumptech.glide.d;
 import com.huawei.hms.push.RemoteMessage;
 import com.onesignal.common.f;
 import com.onesignal.notifications.internal.registration.impl.c;
@@ -13,7 +12,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import p4.g;
 import u7.v;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class a {
@@ -29,24 +28,24 @@ public final class a {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public C0226a(Context context, RemoteMessage remoteMessage, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public C0226a(Context context, RemoteMessage remoteMessage, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$context = context;
             this.$message = remoteMessage;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return new C0226a(this.$context, this.$message, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return new C0226a(this.$context, this.$message, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
             Bundle jsonStringToBundle;
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                d.k(obj);
+                Q3.b.s(obj);
                 Context context = this.$context;
                 this.label = 1;
                 obj = g.b(context, this);
@@ -57,10 +56,10 @@ public final class a {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                d.k(obj);
+                Q3.b.s(obj);
             }
             boolean booleanValue = ((Boolean) obj).booleanValue();
-            v vVar = v.f41353a;
+            v vVar = v.f41073a;
             if (booleanValue) {
                 K4.a aVar2 = (K4.a) g.a().getService(K4.a.class);
                 p5.b bVar = (p5.b) g.a().getService(p5.b.class);
@@ -90,8 +89,8 @@ public final class a {
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((C0226a) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((C0226a) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 
@@ -100,22 +99,22 @@ public final class a {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public b(String str, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public b(String str, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$token = str;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return new b(this.$token, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return new b(this.$token, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                d.k(obj);
+                Q3.b.s(obj);
                 c cVar = (c) g.a().getService(c.class);
                 String str = this.$token;
                 this.label = 1;
@@ -126,14 +125,14 @@ public final class a {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                d.k(obj);
+                Q3.b.s(obj);
             }
-            return v.f41353a;
+            return v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((b) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((b) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 

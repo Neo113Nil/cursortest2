@@ -1,12 +1,12 @@
 package com.anythink.core.basead.a;
 
-import D.y;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.text.TextUtils;
+import com.IceFishing.LiveIceFishing.k;
 import com.anythink.core.basead.a.c;
 import com.anythink.core.basead.a.d;
 import com.anythink.core.common.d.s;
@@ -17,31 +17,32 @@ import com.anythink.core.common.h.w;
 import com.anythink.core.common.h.x;
 import com.anythink.core.common.v.ab;
 import com.anythink.core.common.v.m;
+import com.anythink.core.common.v.y;
 import java.util.List;
 
 /* loaded from: classes.dex */
 public class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f11901a = "play.google.com";
+    public static final String f12687a = "play.google.com";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f11902b = "market.android.com";
+    public static final String f12688b = "market.android.com";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f11903c = "details?";
+    public static final String f12689c = "details?";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final String f11904d = "market";
+    public static final String f12690d = "market";
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f11905e = "market://";
+    public static final String f12691e = "market://";
 
     /* renamed from: f, reason: collision with root package name */
-    private static final String f11906f = "e";
+    private static final String f12692f = "e";
 
     private static String a(Context context, Intent intent, String str) {
-        if (context == null || intent == null || !y.h().b(t.b().p()).aZ()) {
+        if (context == null || intent == null || !k.l().b(t.b().p()).aZ()) {
             return "";
         }
         if (TextUtils.isEmpty(str)) {
@@ -53,7 +54,7 @@ public class e {
                 str = "com.android.vending";
             }
         }
-        List<ResolveInfo> a9 = com.anythink.core.common.v.y.a(context, intent);
+        List<ResolveInfo> a9 = y.a(context, intent);
         if (a9 == null || a9.size() <= 1) {
             return "";
         }
@@ -68,7 +69,7 @@ public class e {
     }
 
     public static d b(Context context, String str, w wVar, x xVar) {
-        if (a(str, xVar != null ? xVar.f14168o : null)) {
+        if (a(str, xVar != null ? xVar.f14954o : null)) {
             com.anythink.core.common.u.e.a(wVar, xVar, 1, false, 0, "");
             if (wVar != null && TextUtils.isEmpty(wVar.H())) {
                 com.anythink.core.common.u.e.b(wVar, xVar, 2);
@@ -112,8 +113,8 @@ public class e {
         if (!d(str)) {
             return false;
         }
-        com.anythink.core.d.b g4 = y.g(y.h());
-        return (g4 == null || TextUtils.equals(g4.x(), "1")) && !TextUtils.isEmpty(m.p(t.b().g()));
+        com.anythink.core.d.b k9 = k.k(k.l());
+        return (k9 == null || TextUtils.equals(k9.x(), "1")) && !TextUtils.isEmpty(m.p(t.b().g()));
     }
 
     private static String f(String str) {
@@ -126,7 +127,7 @@ public class e {
 
     private static String g(String str) {
         try {
-            return "market://".concat(String.valueOf(str.substring(str.indexOf(f11903c))));
+            return "market://".concat(String.valueOf(str.substring(str.indexOf(f12689c))));
         } catch (Throwable unused) {
             return null;
         }
@@ -145,10 +146,10 @@ public class e {
 
     public static cc a(String str) {
         cc ccVar = new cc();
-        ccVar.f13905l = 8;
-        ccVar.f13907n = false;
-        ccVar.f13906m = true;
-        ccVar.f13908o = str;
+        ccVar.f14691l = 8;
+        ccVar.f14693n = false;
+        ccVar.f14692m = true;
+        ccVar.f14694o = str;
         try {
             if (Uri.parse(str).getScheme().equals("intent")) {
                 Intent parseUri = Intent.parseUri(str, 1);
@@ -157,23 +158,23 @@ public class e {
                 parseUri.setSelector(null);
                 String stringExtra = parseUri.getStringExtra("browser_fallback_url");
                 if (!TextUtils.isEmpty(stringExtra) && stringExtra.startsWith("http")) {
-                    ccVar.f13905l = 10;
-                    ccVar.f13908o = stringExtra;
+                    ccVar.f14691l = 10;
+                    ccVar.f14694o = stringExtra;
                     return ccVar;
                 }
             }
         } catch (Throwable unused) {
         }
         if (d(str)) {
-            String f3 = f(str);
-            ccVar.f13905l = 9;
-            ccVar.f13908o = f3;
+            String f2 = f(str);
+            ccVar.f14691l = 9;
+            ccVar.f14694o = f2;
         }
         return ccVar;
     }
 
     public static void b(String str) {
-        com.anythink.core.common.v.y.a(str);
+        y.a(str);
     }
 
     private static d b(Context context, c cVar) {
@@ -222,52 +223,52 @@ public class e {
 
     public static cc a(Context context, String str, w wVar) {
         cc ccVar = new cc();
-        ccVar.f13907n = !str.startsWith("http");
-        ccVar.f13908o = str;
-        ccVar.f13909p = false;
+        ccVar.f14693n = !str.startsWith("http");
+        ccVar.f14694o = str;
+        ccVar.f14695p = false;
         if (!a(str, wVar != null ? wVar.r() : null)) {
             String ax = wVar != null ? wVar.ax() : "";
             if (d(str)) {
-                ccVar.f13908o = str;
+                ccVar.f14694o = str;
                 boolean e9 = e(str);
                 if (a(context, new c.a().a(str).a(e9).b(ax).a())) {
-                    ccVar.f13906m = true;
+                    ccVar.f14692m = true;
                     if (e9) {
-                        ccVar.f13905l = 3;
+                        ccVar.f14691l = 3;
                         return ccVar;
                     }
-                    ccVar.f13905l = 4;
+                    ccVar.f14691l = 4;
                     return ccVar;
                 }
                 if (a(context, new c.a().a(str).a(false).b(ax).a())) {
-                    ccVar.f13906m = true;
-                    ccVar.f13905l = 4;
+                    ccVar.f14692m = true;
+                    ccVar.f14691l = 4;
                     return ccVar;
                 }
             } else if (!str.startsWith("http")) {
-                ccVar.f13908o = str;
+                ccVar.f14694o = str;
                 if (a(context, new c.a().a(str).a(false).b(ax).a())) {
-                    ccVar.f13906m = true;
-                    ccVar.f13905l = 5;
+                    ccVar.f14692m = true;
+                    ccVar.f14691l = 5;
                     return ccVar;
                 }
             } else if (c(str)) {
-                String g4 = g(str);
-                ccVar.f13907n = true;
-                ccVar.f13908o = g4;
-                if (a(context, new c.a().a(g4).a(true).b(ax).a())) {
-                    ccVar.f13906m = true;
-                    ccVar.f13905l = 1;
+                String g9 = g(str);
+                ccVar.f14693n = true;
+                ccVar.f14694o = g9;
+                if (a(context, new c.a().a(g9).a(true).b(ax).a())) {
+                    ccVar.f14692m = true;
+                    ccVar.f14691l = 1;
                     return ccVar;
                 }
-                if (a(context, new c.a().a(g4).a(false).b(ax).a())) {
-                    ccVar.f13906m = true;
-                    ccVar.f13905l = 2;
+                if (a(context, new c.a().a(g9).a(false).b(ax).a())) {
+                    ccVar.f14692m = true;
+                    ccVar.f14691l = 2;
                 }
             }
             return ccVar;
         }
-        ccVar.f13909p = true;
+        ccVar.f14695p = true;
         return ccVar;
     }
 
@@ -341,18 +342,18 @@ public class e {
             return false;
         }
         by R8 = t.b().R();
-        boolean z3 = R8.b() == 1;
-        boolean z6 = R8.a() == 1;
-        String m4 = m.m();
-        if (TextUtils.isEmpty(m4)) {
+        boolean z6 = R8.b() == 1;
+        boolean z9 = R8.a() == 1;
+        String m9 = m.m();
+        if (TextUtils.isEmpty(m9)) {
             com.anythink.core.common.u.e.a(xVar, wVar, 5);
             return false;
         }
-        if (!z3) {
+        if (!z6) {
             com.anythink.core.common.u.e.a(xVar, wVar, 3);
             return false;
         }
-        if (!z6) {
+        if (!z9) {
             com.anythink.core.common.u.e.a(xVar, wVar, 1);
             return false;
         }
@@ -360,13 +361,13 @@ public class e {
         String l9 = wVar.l();
         if (!TextUtils.isEmpty(k9) && !TextUtils.isEmpty(l9)) {
             try {
-                Object d2 = m.d(m4);
+                Object d9 = m.d(m9);
                 Class<?> cls = Class.forName("com.tencent.mm.opensdk.modelbiz.WXLaunchMiniProgram$Req");
                 Object newInstance = cls.newInstance();
                 cls.getField("userName").set(newInstance, k9);
-                cls.getField(com.anythink.expressad.a.f17603K).set(newInstance, l9);
+                cls.getField(com.anythink.expressad.a.f18390K).set(newInstance, l9);
                 cls.getField("miniprogramType").set(newInstance, cls.getField("MINIPTOGRAM_TYPE_RELEASE").get(null));
-                Class.forName("com.tencent.mm.opensdk.openapi.IWXAPI").getMethod("sendReq", Class.forName("com.tencent.mm.opensdk.modelbase.BaseReq")).invoke(d2, newInstance);
+                Class.forName("com.tencent.mm.opensdk.openapi.IWXAPI").getMethod("sendReq", Class.forName("com.tencent.mm.opensdk.modelbase.BaseReq")).invoke(d9, newInstance);
                 com.anythink.core.common.u.e.a(xVar, wVar, 0);
                 return true;
             } catch (Throwable th) {

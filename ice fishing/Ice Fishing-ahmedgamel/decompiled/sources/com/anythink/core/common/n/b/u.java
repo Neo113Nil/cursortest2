@@ -16,16 +16,16 @@ import java.util.TreeSet;
 public final class u {
 
     /* renamed from: a, reason: collision with root package name */
-    private final String[] f15720a;
+    private final String[] f16507a;
 
     public u(a aVar) {
-        List<String> list = aVar.f15721a;
-        this.f15720a = (String[]) list.toArray(new String[list.size()]);
+        List<String> list = aVar.f16508a;
+        this.f16507a = (String[]) list.toArray(new String[list.size()]);
     }
 
     private Set<String> c() {
         TreeSet treeSet = new TreeSet(String.CASE_INSENSITIVE_ORDER);
-        int length = this.f15720a.length / 2;
+        int length = this.f16507a.length / 2;
         for (int i = 0; i < length; i++) {
             treeSet.add(a(i));
         }
@@ -42,7 +42,7 @@ public final class u {
 
     private Map<String, List<String>> e() {
         TreeMap treeMap = new TreeMap(String.CASE_INSENSITIVE_ORDER);
-        int length = this.f15720a.length / 2;
+        int length = this.f16507a.length / 2;
         for (int i = 0; i < length; i++) {
             String lowerCase = a(i).toLowerCase(Locale.US);
             List list = (List) treeMap.get(lowerCase);
@@ -56,7 +56,7 @@ public final class u {
     }
 
     public final String a(String str) {
-        String[] strArr = this.f15720a;
+        String[] strArr = this.f16507a;
         for (int length = strArr.length - 2; length >= 0; length -= 2) {
             if (str.equalsIgnoreCase(strArr[length])) {
                 return strArr[length + 1];
@@ -66,20 +66,20 @@ public final class u {
     }
 
     public final String b(int i) {
-        return this.f15720a[(i * 2) + 1];
+        return this.f16507a[(i * 2) + 1];
     }
 
     public final boolean equals(Object obj) {
-        return (obj instanceof u) && Arrays.equals(((u) obj).f15720a, this.f15720a);
+        return (obj instanceof u) && Arrays.equals(((u) obj).f16507a, this.f16507a);
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(this.f15720a);
+        return Arrays.hashCode(this.f16507a);
     }
 
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        int length = this.f15720a.length / 2;
+        int length = this.f16507a.length / 2;
         for (int i = 0; i < length; i++) {
             sb.append(a(i));
             sb.append(": ");
@@ -92,7 +92,7 @@ public final class u {
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        final List<String> f15721a = new ArrayList(20);
+        final List<String> f16508a = new ArrayList(20);
 
         private a d(String str) {
             int indexOf = str.indexOf(":");
@@ -113,8 +113,8 @@ public final class u {
         }
 
         public final a c(String str, String str2) {
-            this.f15721a.add(str);
-            this.f15721a.add(str2.trim());
+            this.f16508a.add(str);
+            this.f16508a.add(str2.trim());
             return this;
         }
 
@@ -124,9 +124,9 @@ public final class u {
         }
 
         public final String c(String str) {
-            for (int size = this.f15721a.size() - 2; size >= 0; size -= 2) {
-                if (str.equalsIgnoreCase(this.f15721a.get(size))) {
-                    return this.f15721a.get(size + 1);
+            for (int size = this.f16508a.size() - 2; size >= 0; size -= 2) {
+                if (str.equalsIgnoreCase(this.f16508a.get(size))) {
+                    return this.f16508a.get(size + 1);
                 }
             }
             return null;
@@ -139,7 +139,7 @@ public final class u {
                 d(str, com.anythink.core.common.n.b.a.c.d.a(new Date(epochMilli)));
                 return this;
             }
-            throw new NullPointerException(D.y.o("value for name ", str, " == null"));
+            throw new NullPointerException(D.x.l("value for name ", str, " == null"));
         }
 
         public final a d(String str, String str2) {
@@ -175,15 +175,15 @@ public final class u {
                 epochMilli = instant.toEpochMilli();
                 return a(str, new Date(epochMilli));
             }
-            throw new NullPointerException(D.y.o("value for name ", str, " == null"));
+            throw new NullPointerException(D.x.l("value for name ", str, " == null"));
         }
 
         public final a b(String str) {
             int i = 0;
-            while (i < this.f15721a.size()) {
-                if (str.equalsIgnoreCase(this.f15721a.get(i))) {
-                    this.f15721a.remove(i);
-                    this.f15721a.remove(i);
+            while (i < this.f16508a.size()) {
+                if (str.equalsIgnoreCase(this.f16508a.get(i))) {
+                    this.f16508a.remove(i);
+                    this.f16508a.remove(i);
                     i -= 2;
                 }
                 i += 2;
@@ -198,25 +198,25 @@ public final class u {
 
     public final a b() {
         a aVar = new a();
-        Collections.addAll(aVar.f15721a, this.f15720a);
+        Collections.addAll(aVar.f16508a, this.f16507a);
         return aVar;
     }
 
     private u(String[] strArr) {
-        this.f15720a = strArr;
+        this.f16507a = strArr;
     }
 
     private long d() {
-        String[] strArr = this.f15720a;
+        String[] strArr = this.f16507a;
         long length = strArr.length * 2;
         for (int i = 0; i < strArr.length; i++) {
-            length += this.f15720a[i].length();
+            length += this.f16507a[i].length();
         }
         return length;
     }
 
     public final List<String> b(String str) {
-        int length = this.f15720a.length / 2;
+        int length = this.f16507a.length / 2;
         ArrayList arrayList = null;
         for (int i = 0; i < length; i++) {
             if (str.equalsIgnoreCase(a(i))) {
@@ -250,11 +250,11 @@ public final class u {
     }
 
     public final int a() {
-        return this.f15720a.length / 2;
+        return this.f16507a.length / 2;
     }
 
     public final String a(int i) {
-        return this.f15720a[i * 2];
+        return this.f16507a[i * 2];
     }
 
     private static String a(String[] strArr, String str) {
@@ -287,9 +287,9 @@ public final class u {
                 throw new IllegalArgumentException("Headers cannot be null");
             }
         }
-        for (int i6 = 0; i6 < strArr2.length; i6 += 2) {
-            String str2 = strArr2[i6];
-            String str3 = strArr2[i6 + 1];
+        for (int i4 = 0; i4 < strArr2.length; i4 += 2) {
+            String str2 = strArr2[i4];
+            String str3 = strArr2[i4 + 1];
             c(str2);
             a(str3, str2);
         }
@@ -329,6 +329,6 @@ public final class u {
             }
             return;
         }
-        throw new NullPointerException(D.y.o("value for name ", str2, " == null"));
+        throw new NullPointerException(D.x.l("value for name ", str2, " == null"));
     }
 }

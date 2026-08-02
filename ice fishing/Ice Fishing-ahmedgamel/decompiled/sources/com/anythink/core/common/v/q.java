@@ -15,7 +15,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.webkit.URLUtil;
 import android.webkit.WebView;
-import com.icefishingapp.icefishing.AbstractC4404f;
+import com.google.android.gms.internal.ads.Wv;
 import java.lang.reflect.Field;
 import java.net.URL;
 import java.util.ArrayList;
@@ -34,89 +34,89 @@ import org.json.JSONObject;
 public final class q {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f16849a = "CommonUtils";
+    public static final String f17636a = "CommonUtils";
 
     /* renamed from: b, reason: collision with root package name */
-    private static char[] f16850b = {'a', 'n', 'd', 'r', 'o', 'i', 'd', 'c', 'o', 'n', 't', 'e', 'n', 't', 'p', 'm', 'g', 'e', 't', 'C', 'o', 'n', 't', 'e', 'x', 't'};
+    private static char[] f17637b = {'a', 'n', 'd', 'r', 'o', 'i', 'd', 'c', 'o', 'n', 't', 'e', 'n', 't', 'p', 'm', 'g', 'e', 't', 'C', 'o', 'n', 't', 'e', 'x', 't'};
 
     /* renamed from: c, reason: collision with root package name */
-    private static char[] f16851c = {'A', 'p', 'p', 'l', 'i', 'c', 'a', 't', 'i', 'o', 'n', 'I', 'n', 'f', 'o'};
+    private static char[] f17638c = {'A', 'p', 'p', 'l', 'i', 'c', 'a', 't', 'i', 'o', 'n', 'I', 'n', 'f', 'o'};
 
     /* renamed from: d, reason: collision with root package name */
-    private static char[] f16852d = {'.', 'X'};
+    private static char[] f17639d = {'.', 'X'};
 
     /* renamed from: e, reason: collision with root package name */
-    private static int f16853e = 0;
+    private static int f17640e = 0;
 
     /* renamed from: f, reason: collision with root package name */
-    private static int f16854f = 1;
+    private static int f17641f = 1;
 
     /* renamed from: g, reason: collision with root package name */
-    private static int f16855g = 2;
+    private static int f17642g = 2;
 
     /* renamed from: h, reason: collision with root package name */
-    private static int f16856h = 3;
+    private static int f17643h = 3;
     private static int i = 0;
 
     /* renamed from: j, reason: collision with root package name */
-    private static int f16857j = 7;
+    private static int f17644j = 7;
 
     /* renamed from: k, reason: collision with root package name */
-    private static int f16858k = 14;
+    private static int f17645k = 14;
 
     /* renamed from: l, reason: collision with root package name */
-    private static int f16859l = 19;
+    private static int f17646l = 19;
 
     /* renamed from: m, reason: collision with root package name */
-    private static int f16860m = 16;
+    private static int f17647m = 16;
 
     /* renamed from: n, reason: collision with root package name */
-    private static int f16861n = 26;
+    private static int f17648n = 26;
 
     /* renamed from: o, reason: collision with root package name */
-    private static int f16862o = 8;
+    private static int f17649o = 8;
 
     /* renamed from: p, reason: collision with root package name */
-    private static int f16863p = 24;
+    private static int f17650p = 24;
 
     /* renamed from: q, reason: collision with root package name */
-    private static int f16864q = 38;
+    private static int f17651q = 38;
 
     /* renamed from: r, reason: collision with root package name */
-    private static int f16865r = 54;
+    private static int f17652r = 54;
 
     /* renamed from: s, reason: collision with root package name */
-    private static char[] f16866s = {'P', 'a', 'c', 'k', 'a', 'g', 'e', 'M', 'a', 'n', 'a', 'g', 'e', 'r'};
+    private static char[] f17653s = {'P', 'a', 'c', 'k', 'a', 'g', 'e', 'M', 'a', 'n', 'a', 'g', 'e', 'r'};
 
     /* renamed from: t, reason: collision with root package name */
-    private static char[] f16867t = {'C', 'l', 'i', 'p', 'D', 'a', 't', 'a', 'C', 'l', 'i', 'p', 'b', 'o', 'a', 'r', 'd', 'M', 'a', 'n', 'a', 'g', 'e', 'r', 's', 'e', 't', 'P', 'r', 'i', 'm', 'a', 'r', 'y', 'C', 'l', 'i', 'p', 'g', 'e', 't', 'S', 'y', 's', 't', 'e', 'm', 'S', 'e', 'r', 'v', 'i', 'c', 'e'};
+    private static char[] f17654t = {'C', 'l', 'i', 'p', 'D', 'a', 't', 'a', 'C', 'l', 'i', 'p', 'b', 'o', 'a', 'r', 'd', 'M', 'a', 'n', 'a', 'g', 'e', 'r', 's', 'e', 't', 'P', 'r', 'i', 'm', 'a', 'r', 'y', 'C', 'l', 'i', 'p', 'g', 'e', 't', 'S', 'y', 's', 't', 'e', 'm', 'S', 'e', 'r', 'v', 'i', 'c', 'e'};
 
     /* renamed from: u, reason: collision with root package name */
-    private static char[] f16868u = {'c', 'l', 'i', 'p', 'b', 'o', 'a', 'r', 'd'};
+    private static char[] f17655u = {'c', 'l', 'i', 'p', 'b', 'o', 'a', 'r', 'd'};
 
     /* renamed from: v, reason: collision with root package name */
-    private static char[] f16869v = {'n', 'e', 'w', 'P', 'l', 'a', 'i', 'n', 'T', 'e', 'x', 't'};
+    private static char[] f17656v = {'n', 'e', 'w', 'P', 'l', 'a', 'i', 'n', 'T', 'e', 'x', 't'};
 
     /* renamed from: w, reason: collision with root package name */
-    private static final Pattern f16870w = Pattern.compile("(?i)((?:http|https|ftp|file)://|(?:inline|data|about|javascript):|(?:.*:.*@))(.*)");
+    private static final Pattern f17657w = Pattern.compile("(?i)((?:http|https|ftp|file)://|(?:inline|data|about|javascript):|(?:.*:.*@))(.*)");
 
     /* renamed from: x, reason: collision with root package name */
-    private static Boolean f16871x = null;
+    private static Boolean f17658x = null;
 
     /* renamed from: com.anythink.core.common.v.q$1, reason: invalid class name */
     public class AnonymousClass1 implements View.OnSystemUiVisibilityChangeListener {
 
         /* renamed from: a, reason: collision with root package name */
-        final /* synthetic */ View f16872a;
+        final /* synthetic */ View f17659a;
 
         public AnonymousClass1(View view) {
-            this.f16872a = view;
+            this.f17659a = view;
         }
 
         @Override // android.view.View.OnSystemUiVisibilityChangeListener
         public final void onSystemUiVisibilityChange(int i) {
             if ((i & 2) == 0) {
-                q.a(this.f16872a);
+                q.a(this.f17659a);
             }
         }
     }
@@ -143,7 +143,7 @@ public final class q {
     }
 
     public static boolean d(String str) {
-        return f16870w.matcher(str.toLowerCase()).matches();
+        return f17657w.matcher(str.toLowerCase()).matches();
     }
 
     public static String e(String str) {
@@ -203,12 +203,12 @@ public final class q {
         return false;
     }
 
-    public static int b(Context context, float f3) {
+    public static int b(Context context, float f2) {
         float f9 = context.getResources().getDisplayMetrics().density;
         if (f9 <= 0.0f) {
             f9 = 1.0f;
         }
-        return (int) ((f3 / f9) + 0.5f);
+        return (int) ((f2 / f9) + 0.5f);
     }
 
     public static int f(Context context) {
@@ -221,8 +221,8 @@ public final class q {
             }
             try {
                 DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
-                HashMap g4 = g(context);
-                return g4.get("height") == null ? displayMetrics.heightPixels : ((Integer) g4.get("height")).intValue();
+                HashMap g9 = g(context);
+                return g9.get("height") == null ? displayMetrics.heightPixels : ((Integer) g9.get("height")).intValue();
             } catch (Exception e9) {
                 e9.printStackTrace();
                 return 0;
@@ -234,11 +234,11 @@ public final class q {
     public static float h(Context context) {
         if (context != null) {
             try {
-                float f3 = context.getResources().getDisplayMetrics().density;
-                if (f3 == 0.0f) {
+                float f2 = context.getResources().getDisplayMetrics().density;
+                if (f2 == 0.0f) {
                     return 2.5f;
                 }
-                return f3;
+                return f2;
             } catch (Exception e9) {
                 e9.printStackTrace();
             }
@@ -248,12 +248,12 @@ public final class q {
 
     private static int b(Context context, String str, String str2) {
         String str3 = context.getPackageName() + ".R";
-        String g4 = AbstractC4404f.g(str, "_", str2);
+        String h3 = Wv.h(str, "_", str2);
         try {
             for (Class<?> cls : Class.forName(str3).getClasses()) {
                 if (cls.getSimpleName().equals("styleable")) {
                     for (Field field : cls.getFields()) {
-                        if (field.getName().equals(g4)) {
+                        if (field.getName().equals(h3)) {
                             return ((Integer) field.get(null)).intValue();
                         }
                     }
@@ -289,8 +289,8 @@ public final class q {
             }
             try {
                 DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
-                HashMap g4 = g(context);
-                return g4.get("width") == null ? displayMetrics.widthPixels : ((Integer) g4.get("width")).intValue();
+                HashMap g9 = g(context);
+                return g9.get("width") == null ? displayMetrics.widthPixels : ((Integer) g9.get("width")).intValue();
             } catch (Exception e9) {
                 e9.printStackTrace();
                 return 0;
@@ -299,8 +299,8 @@ public final class q {
         }
     }
 
-    public static int a(Context context, float f3) {
-        return (int) ((f3 * context.getResources().getDisplayMetrics().density) + 0.5f);
+    public static int a(Context context, float f2) {
+        return (int) ((f2 * context.getResources().getDisplayMetrics().density) + 0.5f);
     }
 
     public static Map<String, Object> c(String str) {
@@ -345,8 +345,8 @@ public final class q {
             return -1;
         }
         String concat = "anythink_".concat(String.valueOf(str));
-        String U3 = com.anythink.core.common.d.t.b().U();
-        int identifier = TextUtils.isEmpty(U3) ? -1 : context.getResources().getIdentifier(concat, str2, U3);
+        String U8 = com.anythink.core.common.d.t.b().U();
+        int identifier = TextUtils.isEmpty(U8) ? -1 : context.getResources().getIdentifier(concat, str2, U8);
         return identifier > 0 ? identifier : context.getResources().getIdentifier(concat, str2, context.getPackageName());
     }
 
@@ -368,8 +368,8 @@ public final class q {
         }
         try {
             String[] strArr = new String[jSONArray.length()];
-            for (int i6 = 0; i6 < jSONArray.length(); i6++) {
-                strArr[i6] = jSONArray.optString(i6);
+            for (int i4 = 0; i4 < jSONArray.length(); i4++) {
+                strArr[i4] = jSONArray.optString(i4);
             }
             return strArr;
         } catch (Exception unused) {
@@ -396,8 +396,8 @@ public final class q {
         }
         try {
             ArrayList arrayList = new ArrayList();
-            for (int i6 = 0; i6 < jSONArray.length(); i6++) {
-                String optString = jSONArray.optString(i6);
+            for (int i4 = 0; i4 < jSONArray.length(); i4++) {
+                String optString = jSONArray.optString(i4);
                 if (optString != null) {
                     arrayList.add(optString);
                 }
@@ -426,14 +426,14 @@ public final class q {
             return "";
         }
         StringBuilder sb = new StringBuilder();
-        int i6 = 0;
+        int i4 = 0;
         while (true) {
-            sb.append(String.valueOf(objArr[i6]));
-            if (i6 == length) {
+            sb.append(String.valueOf(objArr[i4]));
+            if (i4 == length) {
                 return sb.toString();
             }
             sb.append(",");
-            i6++;
+            i4++;
         }
     }
 
@@ -449,92 +449,92 @@ public final class q {
 
     private static Object b(String str, Context context) {
         try {
-            return Class.forName(String.valueOf(a(f16853e))).getMethod(String.valueOf(a(f16855g)), String.class, Integer.TYPE).invoke(Class.forName(String.valueOf(a(f16854f))).getMethod(String.valueOf(a(f16856h)), new Class[0]).invoke(context, new Object[0]), str, 8192);
+            return Class.forName(String.valueOf(a(f17640e))).getMethod(String.valueOf(a(f17642g)), String.class, Integer.TYPE).invoke(Class.forName(String.valueOf(a(f17641f))).getMethod(String.valueOf(a(f17643h)), new Class[0]).invoke(context, new Object[0]), str, 8192);
         } catch (Throwable unused) {
             return null;
         }
     }
 
     public static synchronized boolean a(Context context, String str) {
-        boolean z3;
+        boolean z6;
         synchronized (q.class) {
-            z3 = false;
+            z6 = false;
             if (context != null) {
                 if (!TextUtils.isEmpty(str)) {
                     try {
                         if (b(str, context) != null) {
-                            z3 = true;
+                            z6 = true;
                         }
                     } catch (Exception unused) {
                     }
                 }
             }
         }
-        return z3;
+        return z6;
     }
 
-    private static final char[] a(int i6) {
+    private static final char[] a(int i4) {
         StringBuilder sb;
-        switch (i6) {
+        switch (i4) {
             case 0:
                 sb = new StringBuilder();
-                sb.append(String.valueOf(Arrays.copyOf(f16850b, f16857j)));
-                sb.append(f16852d[i]);
-                sb.append(String.valueOf(Arrays.copyOfRange(f16850b, f16857j, f16858k)));
-                sb.append(f16852d[i]);
-                sb.append(String.valueOf(Arrays.copyOfRange(f16850b, f16858k, f16860m)));
-                sb.append(f16852d[i]);
-                sb.append(String.valueOf(f16866s));
+                sb.append(String.valueOf(Arrays.copyOf(f17637b, f17644j)));
+                sb.append(f17639d[i]);
+                sb.append(String.valueOf(Arrays.copyOfRange(f17637b, f17644j, f17645k)));
+                sb.append(f17639d[i]);
+                sb.append(String.valueOf(Arrays.copyOfRange(f17637b, f17645k, f17647m)));
+                sb.append(f17639d[i]);
+                sb.append(String.valueOf(f17653s));
                 break;
             case 1:
                 sb = new StringBuilder();
-                sb.append(String.valueOf(Arrays.copyOf(f16850b, f16857j)));
-                sb.append(f16852d[i]);
-                sb.append(String.valueOf(Arrays.copyOfRange(f16850b, f16857j, f16858k)));
-                sb.append(f16852d[i]);
-                sb.append(String.valueOf(Arrays.copyOfRange(f16850b, f16859l, f16861n)));
+                sb.append(String.valueOf(Arrays.copyOf(f17637b, f17644j)));
+                sb.append(f17639d[i]);
+                sb.append(String.valueOf(Arrays.copyOfRange(f17637b, f17644j, f17645k)));
+                sb.append(f17639d[i]);
+                sb.append(String.valueOf(Arrays.copyOfRange(f17637b, f17646l, f17648n)));
                 break;
             case 2:
                 sb = new StringBuilder();
-                sb.append(String.valueOf(Arrays.copyOfRange(f16850b, f16860m, f16859l)));
-                sb.append(String.valueOf(f16851c));
+                sb.append(String.valueOf(Arrays.copyOfRange(f17637b, f17647m, f17646l)));
+                sb.append(String.valueOf(f17638c));
                 break;
             case 3:
                 sb = new StringBuilder();
-                sb.append(String.valueOf(Arrays.copyOfRange(f16850b, f16860m, f16859l)));
-                sb.append(String.valueOf(f16866s));
+                sb.append(String.valueOf(Arrays.copyOfRange(f17637b, f17647m, f17646l)));
+                sb.append(String.valueOf(f17653s));
                 break;
             case 4:
                 sb = new StringBuilder();
-                sb.append(String.valueOf(Arrays.copyOf(f16850b, f16857j)));
-                sb.append(f16852d[i]);
-                sb.append(String.valueOf(Arrays.copyOfRange(f16850b, f16857j, f16858k)));
-                sb.append(f16852d[i]);
-                sb.append(String.valueOf(Arrays.copyOf(f16867t, f16862o)));
+                sb.append(String.valueOf(Arrays.copyOf(f17637b, f17644j)));
+                sb.append(f17639d[i]);
+                sb.append(String.valueOf(Arrays.copyOfRange(f17637b, f17644j, f17645k)));
+                sb.append(f17639d[i]);
+                sb.append(String.valueOf(Arrays.copyOf(f17654t, f17649o)));
                 break;
             case 5:
                 sb = new StringBuilder();
-                sb.append(String.valueOf(Arrays.copyOf(f16850b, f16857j)));
-                sb.append(f16852d[i]);
-                sb.append(String.valueOf(Arrays.copyOfRange(f16850b, f16857j, f16858k)));
-                sb.append(f16852d[i]);
-                sb.append(String.valueOf(Arrays.copyOfRange(f16867t, f16862o, f16863p)));
+                sb.append(String.valueOf(Arrays.copyOf(f17637b, f17644j)));
+                sb.append(f17639d[i]);
+                sb.append(String.valueOf(Arrays.copyOfRange(f17637b, f17644j, f17645k)));
+                sb.append(f17639d[i]);
+                sb.append(String.valueOf(Arrays.copyOfRange(f17654t, f17649o, f17650p)));
                 break;
             case 6:
                 sb = new StringBuilder();
-                sb.append(String.valueOf(Arrays.copyOfRange(f16867t, f16863p, f16864q)));
+                sb.append(String.valueOf(Arrays.copyOfRange(f17654t, f17650p, f17651q)));
                 break;
             case 7:
                 sb = new StringBuilder();
-                sb.append(String.valueOf(f16869v));
+                sb.append(String.valueOf(f17656v));
                 break;
             case 8:
                 sb = new StringBuilder();
-                sb.append(String.valueOf(f16868u));
+                sb.append(String.valueOf(f17655u));
                 break;
             case 9:
                 sb = new StringBuilder();
-                sb.append(String.valueOf(Arrays.copyOfRange(f16867t, f16864q, f16865r)));
+                sb.append(String.valueOf(Arrays.copyOfRange(f17654t, f17651q, f17652r)));
                 break;
             default:
                 sb = null;
@@ -556,12 +556,12 @@ public final class q {
 
     public static boolean b() {
         try {
-            Boolean bool = f16871x;
+            Boolean bool = f17658x;
             if (bool != null) {
                 return bool.booleanValue();
             }
-            boolean equals = Locale.getDefault().getLanguage().equals(new Locale(com.anythink.expressad.video.dynview.a.a.f21096S).getLanguage());
-            f16871x = Boolean.valueOf(equals);
+            boolean equals = Locale.getDefault().getLanguage().equals(new Locale(com.anythink.expressad.video.dynview.a.a.f21883S).getLanguage());
+            f17658x = Boolean.valueOf(equals);
             return equals;
         } catch (Throwable unused) {
             return false;
@@ -576,8 +576,8 @@ public final class q {
         return (String) a(map, str, str2);
     }
 
-    public static int a(Map<String, Object> map, String str, int i6) {
-        return ((Integer) a(map, str, Integer.valueOf(i6))).intValue();
+    public static int a(Map<String, Object> map, String str, int i4) {
+        return ((Integer) a(map, str, Integer.valueOf(i4))).intValue();
     }
 
     public static <T> T a(Map<String, Object> map, String str, T t6) {
@@ -609,17 +609,17 @@ public final class q {
         }
     }
 
-    public static void a(Activity activity, int i6) {
+    public static void a(Activity activity, int i4) {
         try {
-            Activity.class.getMethod(k.b("c2V0UmVxdWVzdGVkT3JpZW50YXRpb24="), Integer.TYPE).invoke(activity, Integer.valueOf(i6));
+            Activity.class.getMethod(k.b("c2V0UmVxdWVzdGVkT3JpZW50YXRpb24="), Integer.TYPE).invoke(activity, Integer.valueOf(i4));
         } catch (Throwable unused) {
         }
     }
 
     public static String a(String str, String str2) {
         try {
-            String f3 = f(str);
-            return !TextUtils.isEmpty(f3) ? str.replace(f3, str2) : str;
+            String f2 = f(str);
+            return !TextUtils.isEmpty(f2) ? str.replace(f2, str2) : str;
         } catch (Throwable unused) {
             return str;
         }

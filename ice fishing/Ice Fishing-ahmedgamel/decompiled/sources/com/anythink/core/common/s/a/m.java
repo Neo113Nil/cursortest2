@@ -9,25 +9,25 @@ import java.util.Map;
 final class m {
 
     /* renamed from: a, reason: collision with root package name */
-    private final Map<String, a> f16375a = new HashMap();
+    private final Map<String, a> f17162a = new HashMap();
 
     /* renamed from: b, reason: collision with root package name */
-    private final ReferenceQueue<Object> f16376b = new ReferenceQueue<>();
+    private final ReferenceQueue<Object> f17163b = new ReferenceQueue<>();
 
     public static class a extends WeakReference<Object> {
 
         /* renamed from: a, reason: collision with root package name */
-        private final String f16377a;
+        private final String f17164a;
 
         public a(String str, Object obj, ReferenceQueue<Object> referenceQueue) {
             super(obj, referenceQueue);
-            this.f16377a = str;
+            this.f17164a = str;
         }
     }
 
     public final synchronized Object a(String str) {
         b();
-        a aVar = this.f16375a.get(str);
+        a aVar = this.f17162a.get(str);
         if (aVar == null) {
             return null;
         }
@@ -35,17 +35,17 @@ final class m {
     }
 
     public final synchronized void b(String str) {
-        this.f16375a.remove(str);
+        this.f17162a.remove(str);
     }
 
     private void b() {
-        a aVar = (a) this.f16376b.poll();
+        a aVar = (a) this.f17163b.poll();
         while (aVar != null) {
-            a aVar2 = this.f16375a.get(aVar.f16377a);
+            a aVar2 = this.f17162a.get(aVar.f17164a);
             if (aVar2 != null && aVar2.get() == null) {
-                this.f16375a.remove(aVar.f16377a);
+                this.f17162a.remove(aVar.f17164a);
             }
-            aVar = (a) this.f16376b.poll();
+            aVar = (a) this.f17163b.poll();
         }
     }
 
@@ -53,12 +53,12 @@ final class m {
         try {
             b();
             if (obj != null) {
-                a aVar = this.f16375a.get(str);
+                a aVar = this.f17162a.get(str);
                 if (aVar != null) {
                     if (aVar.get() != obj) {
                     }
                 }
-                this.f16375a.put(str, new a(str, obj, this.f16376b));
+                this.f17162a.put(str, new a(str, obj, this.f17163b));
             }
         } catch (Throwable th) {
             throw th;
@@ -66,7 +66,7 @@ final class m {
     }
 
     public final synchronized void a() {
-        this.f16375a.clear();
+        this.f17162a.clear();
         b();
     }
 }

@@ -14,7 +14,7 @@ import java.io.File;
 public class i {
 
     /* renamed from: a, reason: collision with root package name */
-    public static String f9644a = "i";
+    public static String f10430a = "i";
 
     public interface a {
         void a();
@@ -38,40 +38,40 @@ public class i {
         }
         File b9 = com.anythink.core.common.res.d.a(t.b().g()).b(xVar, wVar);
         if (b9 == null) {
-            Log.e(f9644a, "loadMraidResource: html no exists: ");
+            Log.e(f10430a, "loadMraidResource: html no exists: ");
             return com.anythink.core.common.res.d.a(t.b().g()).a(com.anythink.basead.j.f.a().a(wVar.o(), wVar, xVar), xVar, wVar);
         }
-        Log.e(f9644a, "loadMraidResource: html exists: " + b9.toURI().toString());
+        Log.e(f10430a, "loadMraidResource: html exists: " + b9.toURI().toString());
         return b9.toURI().toString();
     }
 
-    public static void a(final String str, final String str2, final MraidWebView mraidWebView, final a aVar, final w wVar, final x xVar, final int i, final boolean z3) {
+    public static void a(final String str, final String str2, final MraidWebView mraidWebView, final a aVar, final w wVar, final x xVar, final int i, final boolean z6) {
         if (mraidWebView == null) {
             return;
         }
         t.b().b(new Runnable() { // from class: com.anythink.basead.mraid.i.1
             @Override // java.lang.Runnable
             public final void run() {
-                com.anythink.core.common.u.e.a(x.this, wVar, i, z3);
+                com.anythink.core.common.u.e.a(x.this, wVar, i, z6);
                 d dVar = new d();
                 k kVar = new k(str2);
                 kVar.a(new b() { // from class: com.anythink.basead.mraid.i.1.1
 
                     /* renamed from: b, reason: collision with root package name */
-                    boolean f9653b = false;
+                    boolean f10439b = false;
 
                     @Override // com.anythink.basead.mraid.b, com.anythink.core.express.web.c
                     public final void onPageFinished(WebView webView, String str3) {
-                        if (this.f9653b) {
+                        if (this.f10439b) {
                             return;
                         }
-                        this.f9653b = true;
-                        if (com.anythink.core.common.res.d.f16215a.equals(str3)) {
+                        this.f10439b = true;
+                        if (com.anythink.core.common.res.d.f17002a.equals(str3)) {
                             AnonymousClass1 anonymousClass1 = AnonymousClass1.this;
                             String str4 = str2;
                             a aVar2 = aVar;
                             if (aVar2 != null) {
-                                aVar2.a(com.anythink.basead.d.g.a(com.anythink.basead.d.g.f6183o, com.anythink.basead.d.g.f6159O));
+                                aVar2.a(com.anythink.basead.d.g.a(com.anythink.basead.d.g.f6969o, com.anythink.basead.d.g.f6945O));
                                 return;
                             }
                             return;
@@ -92,13 +92,13 @@ public class i {
                     }
 
                     @Override // com.anythink.basead.mraid.b, com.anythink.core.express.web.c
-                    public final void onReceivedError(WebView webView, int i6, String str3, String str4) {
-                        if (this.f9653b) {
+                    public final void onReceivedError(WebView webView, int i4, String str3, String str4) {
+                        if (this.f10439b) {
                             return;
                         }
-                        this.f9653b = true;
-                        super.onReceivedError(webView, i6, str3, str4);
-                        com.anythink.basead.d.f a9 = com.anythink.basead.d.g.a(com.anythink.basead.d.g.f6171b, i6 + "_" + str3);
+                        this.f10439b = true;
+                        super.onReceivedError(webView, i4, str3, str4);
+                        com.anythink.basead.d.f a9 = com.anythink.basead.d.g.a(com.anythink.basead.d.g.f6957b, i4 + "_" + str3);
                         String str5 = str2;
                         a9.c();
                         a aVar2 = aVar;
@@ -109,12 +109,12 @@ public class i {
 
                     @Override // com.anythink.basead.mraid.b, com.anythink.core.express.web.c
                     public final void onReceivedSslError(WebView webView, SslErrorHandler sslErrorHandler, SslError sslError) {
-                        if (this.f9653b) {
+                        if (this.f10439b) {
                             return;
                         }
-                        this.f9653b = true;
+                        this.f10439b = true;
                         super.onReceivedSslError(webView, sslErrorHandler, sslError);
-                        com.anythink.basead.d.f a9 = com.anythink.basead.d.g.a(com.anythink.basead.d.g.f6171b, sslError != null ? sslError.toString() : "onReceivedSslError");
+                        com.anythink.basead.d.f a9 = com.anythink.basead.d.g.a(com.anythink.basead.d.g.f6957b, sslError != null ? sslError.toString() : "onReceivedSslError");
                         String str3 = str2;
                         a9.c();
                         a aVar2 = aVar;

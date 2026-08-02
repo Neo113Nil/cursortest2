@@ -4,59 +4,59 @@ import android.content.Context;
 import java.util.concurrent.ScheduledExecutorService;
 
 /* loaded from: classes2.dex */
-public final class Hs implements InterfaceC3297hN {
+public final class Hs implements InterfaceC3320hN {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ int f25398a;
+    public final /* synthetic */ int f26141a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final InterfaceC3297hN f25399b;
+    public final InterfaceC3320hN f26142b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final InterfaceC3511lN f25400c;
+    public final InterfaceC3534lN f26143c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final InterfaceC3511lN f25401d;
+    public final InterfaceC3534lN f26144d;
 
-    public Hs(C2987bi c2987bi, C2987bi c2987bi2, C3040ci c3040ci) {
-        this.f25398a = 1;
-        this.f25399b = c2987bi;
-        this.f25400c = c2987bi2;
-        this.f25401d = c3040ci;
+    public Hs(C3010bi c3010bi, C3010bi c3010bi2, C3063ci c3063ci) {
+        this.f26141a = 1;
+        this.f26142b = c3010bi;
+        this.f26143c = c3010bi2;
+        this.f26144d = c3063ci;
     }
 
-    public C2570Gf a() {
-        Context a9 = ((C2987bi) this.f25399b).a();
-        C3360ig c3360ig = AbstractC3413jg.f31268a;
-        AbstractC3341iD.j(c3360ig);
-        return new C2570Gf(a9, c3360ig, ((C3565mN) this.f25401d).f(), (Vu) ((C3243gN) this.f25400c).f());
+    public C2590Gf a() {
+        Context a9 = ((C3010bi) this.f26142b).a();
+        C3383ig c3383ig = AbstractC3436jg.f32055a;
+        AbstractC3364iD.j(c3383ig);
+        return new C2590Gf(a9, c3383ig, ((C3588mN) this.f26144d).f(), (Vu) ((C3266gN) this.f26143c).f());
     }
 
     public Or b() {
-        Context a9 = ((C2987bi) this.f25399b).a();
-        C3360ig c3360ig = AbstractC3413jg.f31268a;
-        AbstractC3341iD.j(c3360ig);
-        return new Or(a9, c3360ig, ((C3795qk) this.f25401d).a(), ((C2987bi) this.f25400c).b());
+        Context a9 = ((C3010bi) this.f26142b).a();
+        C3383ig c3383ig = AbstractC3436jg.f32055a;
+        AbstractC3364iD.j(c3383ig);
+        return new Or(a9, c3383ig, ((C3818qk) this.f26144d).a(), ((C3010bi) this.f26143c).b());
     }
 
     public Ur c() {
-        AbstractC3341iD.j(((C2739Qe) ((C2998bt) this.f25399b).f29342b.f1051v).f27044w);
-        C3038cg c3038cg = (C3038cg) ((C3243gN) this.f25401d).f();
-        ScheduledExecutorService scheduledExecutorService = (ScheduledExecutorService) ((C3243gN) this.f25400c).f();
-        C3360ig c3360ig = AbstractC3413jg.f31268a;
-        AbstractC3341iD.j(c3360ig);
-        return new Ur(c3038cg, scheduledExecutorService, c3360ig);
+        AbstractC3364iD.j(((C2759Qe) ((C3021bt) this.f26142b).f30130b.f1304v).f27829w);
+        C3061cg c3061cg = (C3061cg) ((C3266gN) this.f26144d).f();
+        ScheduledExecutorService scheduledExecutorService = (ScheduledExecutorService) ((C3266gN) this.f26143c).f();
+        C3383ig c3383ig = AbstractC3436jg.f32055a;
+        AbstractC3364iD.j(c3383ig);
+        return new Ur(c3061cg, scheduledExecutorService, c3383ig);
     }
 
     public Or d() {
-        C3360ig c3360ig = AbstractC3413jg.f31268a;
-        AbstractC3341iD.j(c3360ig);
-        return new Or(c3360ig, (Object) ((C2987bi) this.f25399b).a(), (Object) ((C2987bi) this.f25400c).b(), (Object) ((C3040ci) this.f25401d).c(), 7);
+        C3383ig c3383ig = AbstractC3436jg.f32055a;
+        AbstractC3364iD.j(c3383ig);
+        return new Or(c3383ig, (Object) ((C3010bi) this.f26142b).a(), (Object) ((C3010bi) this.f26143c).b(), (Object) ((C3063ci) this.f26144d).c(), 7);
     }
 
-    @Override // com.google.android.gms.internal.ads.InterfaceC3511lN
+    @Override // com.google.android.gms.internal.ads.InterfaceC3534lN
     public final /* bridge */ /* synthetic */ Object f() {
-        switch (this.f25398a) {
+        switch (this.f26141a) {
             case 0:
                 return b();
             case 1:
@@ -68,10 +68,10 @@ public final class Hs implements InterfaceC3297hN {
         }
     }
 
-    public /* synthetic */ Hs(InterfaceC3297hN interfaceC3297hN, InterfaceC3511lN interfaceC3511lN, InterfaceC3511lN interfaceC3511lN2, int i) {
-        this.f25398a = i;
-        this.f25399b = interfaceC3297hN;
-        this.f25401d = interfaceC3511lN;
-        this.f25400c = interfaceC3511lN2;
+    public /* synthetic */ Hs(InterfaceC3320hN interfaceC3320hN, InterfaceC3534lN interfaceC3534lN, InterfaceC3534lN interfaceC3534lN2, int i) {
+        this.f26141a = i;
+        this.f26142b = interfaceC3320hN;
+        this.f26144d = interfaceC3534lN;
+        this.f26143c = interfaceC3534lN2;
     }
 }

@@ -9,10 +9,10 @@ import java.util.logging.Level;
 public final class e extends y8.c {
 
     /* renamed from: n, reason: collision with root package name */
-    public final Socket f42284n;
+    public final Socket f42253n;
 
     public e(Socket socket) {
-        this.f42284n = socket;
+        this.f42253n = socket;
     }
 
     @Override // y8.c
@@ -26,16 +26,16 @@ public final class e extends y8.c {
 
     @Override // y8.c
     public final void k() {
-        Socket socket = this.f42284n;
+        Socket socket = this.f42253n;
         try {
             socket.close();
         } catch (AssertionError e9) {
             if (!f.a(e9)) {
                 throw e9;
             }
-            f.f42285a.log(Level.WARNING, "Failed to close timed out socket " + socket, (Throwable) e9);
+            f.f42254a.log(Level.WARNING, "Failed to close timed out socket " + socket, (Throwable) e9);
         } catch (Exception e10) {
-            f.f42285a.log(Level.WARNING, "Failed to close timed out socket " + socket, (Throwable) e10);
+            f.f42254a.log(Level.WARNING, "Failed to close timed out socket " + socket, (Throwable) e10);
         }
     }
 }

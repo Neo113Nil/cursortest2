@@ -19,61 +19,61 @@ import org.json.JSONObject;
 public class NativeAdvancedJsUtils {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final String f17892a = "onViewDisappeared";
+    public static final String f18679a = "onViewDisappeared";
 
     /* renamed from: b, reason: collision with root package name */
-    public static final String f17893b = "onViewAppeared";
+    public static final String f18680b = "onViewAppeared";
 
     /* renamed from: c, reason: collision with root package name */
-    public static final String f17894c = "onSystemDestory";
+    public static final String f18681c = "onSystemDestory";
 
     /* renamed from: d, reason: collision with root package name */
-    public static final String f17895d = "setStyleList";
+    public static final String f18682d = "setStyleList";
 
     /* renamed from: e, reason: collision with root package name */
-    public static final String f17896e = "params";
+    public static final String f18683e = "params";
 
     /* renamed from: f, reason: collision with root package name */
-    public static final String f17897f = "showCloseButton";
+    public static final String f18684f = "showCloseButton";
 
     /* renamed from: g, reason: collision with root package name */
-    public static final String f17898g = "hideCloseButton";
+    public static final String f18685g = "hideCloseButton";
 
     /* renamed from: h, reason: collision with root package name */
-    public static final String f17899h = "setVolume";
+    public static final String f18686h = "setVolume";
     public static final String i = "mute";
 
     /* renamed from: j, reason: collision with root package name */
-    public static final String f17900j = "setVideoPlayMode";
+    public static final String f18687j = "setVideoPlayMode";
 
     /* renamed from: k, reason: collision with root package name */
-    public static final String f17901k = "autoPlay";
+    public static final String f18688k = "autoPlay";
 
     /* renamed from: l, reason: collision with root package name */
-    public static final String f17902l = "onNetstatChanged";
+    public static final String f18689l = "onNetstatChanged";
 
     /* renamed from: m, reason: collision with root package name */
-    public static final String f17903m = "netstat";
+    public static final String f18690m = "netstat";
 
     /* renamed from: n, reason: collision with root package name */
-    public static final String f17904n = "sq";
+    public static final String f18691n = "sq";
 
     /* renamed from: o, reason: collision with root package name */
-    public static final String f17905o = "thirdPartyCalled";
+    public static final String f18692o = "thirdPartyCalled";
 
     /* renamed from: p, reason: collision with root package name */
-    public static final String f17906p = "action";
+    public static final String f18693p = "action";
 
     /* renamed from: q, reason: collision with root package name */
-    public static final String f17907q = "params";
+    public static final String f18694q = "params";
 
     /* renamed from: r, reason: collision with root package name */
-    private static String f17908r = "NativeAdvancedJsUtils";
+    private static String f18695r = "NativeAdvancedJsUtils";
 
     public static void callbackSuccess(Object obj) {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", CommonJSBridgeImpUtils.f17949b);
+            jSONObject.put("code", CommonJSBridgeImpUtils.f18736b);
             h.a().a(obj, Base64.encodeToString(jSONObject.toString().getBytes(), 2));
         } catch (Exception e9) {
             e9.getMessage();
@@ -86,13 +86,13 @@ public class NativeAdvancedJsUtils {
     }
 
     public static void getFileInfo(Object obj, JSONObject jSONObject) {
+        int i4;
         int i6;
-        int i9;
-        boolean z3;
+        boolean z6;
         String str;
         File file;
         JSONObject jSONObject2 = new JSONObject();
-        int i10 = 1;
+        int i9 = 1;
         if (jSONObject == null) {
             try {
                 jSONObject2.put("code", 1);
@@ -122,27 +122,27 @@ public class NativeAdvancedJsUtils {
                 }
                 JSONArray jSONArray2 = new JSONArray();
                 int length = jSONArray.length();
-                int i11 = 0;
-                while (i11 < length) {
-                    JSONObject jSONObject3 = jSONArray.getJSONObject(i11);
+                int i10 = 0;
+                while (i10 < length) {
+                    JSONObject jSONObject3 = jSONArray.getJSONObject(i10);
                     String optString = jSONObject3.optString("ref", "");
-                    int i12 = jSONObject3.getInt("type");
+                    int i11 = jSONObject3.getInt("type");
                     JSONObject jSONObject4 = new JSONObject();
-                    if (i12 != i10 || TextUtils.isEmpty(optString)) {
-                        i6 = length;
-                        i9 = i11;
-                        z3 = false;
-                        if (i12 == 2 && !TextUtils.isEmpty(optString)) {
+                    if (i11 != i9 || TextUtils.isEmpty(optString)) {
+                        i4 = length;
+                        i6 = i10;
+                        z6 = false;
+                        if (i11 == 2 && !TextUtils.isEmpty(optString)) {
                             JSONObject jSONObject5 = new JSONObject();
                             jSONObject5.put("type", 2);
-                            jSONObject5.put(com.anythink.expressad.a.f17603K, i.a().b(optString) == null ? "" : i.a().b(optString));
+                            jSONObject5.put(com.anythink.expressad.a.f18390K, i.a().b(optString) == null ? "" : i.a().b(optString));
                             jSONObject4.put(optString, jSONObject5);
                             jSONArray2.put(jSONObject4);
-                        } else if (i12 == 3 && !TextUtils.isEmpty(optString)) {
+                        } else if (i11 == 3 && !TextUtils.isEmpty(optString)) {
                             try {
                                 file = new File(optString);
                             } catch (Throwable th) {
-                                if (com.anythink.expressad.a.f17618a) {
+                                if (com.anythink.expressad.a.f18405a) {
                                     th.printStackTrace();
                                 }
                             }
@@ -150,20 +150,20 @@ public class NativeAdvancedJsUtils {
                                 str = "file:////".concat(String.valueOf(optString));
                                 JSONObject jSONObject6 = new JSONObject();
                                 jSONObject6.put("type", 3);
-                                jSONObject6.put(com.anythink.expressad.a.f17603K, str);
+                                jSONObject6.put(com.anythink.expressad.a.f18390K, str);
                                 jSONObject4.put(optString, jSONObject6);
                                 jSONArray2.put(jSONObject4);
                             }
                             str = "";
                             JSONObject jSONObject62 = new JSONObject();
                             jSONObject62.put("type", 3);
-                            jSONObject62.put(com.anythink.expressad.a.f17603K, str);
+                            jSONObject62.put(com.anythink.expressad.a.f18390K, str);
                             jSONObject4.put(optString, jSONObject62);
                             jSONArray2.put(jSONObject4);
-                        } else if (i12 == 4 && !TextUtils.isEmpty(optString)) {
+                        } else if (i11 == 4 && !TextUtils.isEmpty(optString)) {
                             JSONObject jSONObject7 = new JSONObject();
                             jSONObject7.put("type", 4);
-                            jSONObject7.put(com.anythink.expressad.a.f17603K, u.a(optString) == null ? "" : u.a(optString));
+                            jSONObject7.put(com.anythink.expressad.a.f18390K, u.a(optString) == null ? "" : u.a(optString));
                             jSONObject4.put(optString, jSONObject7);
                             jSONArray2.put(jSONObject4);
                         }
@@ -172,36 +172,36 @@ public class NativeAdvancedJsUtils {
                         com.anythink.expressad.videocommon.b.a.a();
                         n b9 = com.anythink.expressad.videocommon.b.a.b(optString);
                         if (b9 != null) {
-                            jSONObject8.put("type", i10);
-                            i6 = length;
-                            i9 = i11;
+                            jSONObject8.put("type", i9);
+                            i4 = length;
+                            i6 = i10;
                             jSONObject8.put("videoDataLength", b9.d());
                             String b10 = b9.b();
                             if (TextUtils.isEmpty(b10)) {
-                                jSONObject8.put(com.anythink.expressad.a.f17603K, "");
+                                jSONObject8.put(com.anythink.expressad.a.f18390K, "");
                                 jSONObject8.put("path4Web", "");
                             } else {
-                                jSONObject8.put(com.anythink.expressad.a.f17603K, b10);
+                                jSONObject8.put(com.anythink.expressad.a.f18390K, b10);
                                 jSONObject8.put("path4Web", b10);
                             }
                             if (b9.c() == 100) {
                                 jSONObject8.put("downloaded", 1);
-                                z3 = false;
+                                z6 = false;
                             } else {
-                                z3 = false;
+                                z6 = false;
                                 jSONObject8.put("downloaded", 0);
                             }
                             jSONObject4.put(optString, jSONObject8);
                             jSONArray2.put(jSONObject4);
                         } else {
-                            i6 = length;
-                            i9 = i11;
-                            z3 = false;
+                            i4 = length;
+                            i6 = i10;
+                            z6 = false;
                         }
                     }
-                    i11 = i9 + 1;
-                    length = i6;
-                    i10 = 1;
+                    i10 = i6 + 1;
+                    length = i4;
+                    i9 = 1;
                 }
                 jSONObject2.put("resource", jSONArray2);
                 h.a().a(obj, Base64.encodeToString(jSONObject2.toString().getBytes(), 2));
@@ -230,8 +230,8 @@ public class NativeAdvancedJsUtils {
     public static void sendThirdToH5(final WebView webView, String str, String str2, Object obj) {
         try {
             final JSONObject jSONObject = new JSONObject();
-            jSONObject.put(f17904n, 1);
-            jSONObject.put(f17906p, str);
+            jSONObject.put(f18691n, 1);
+            jSONObject.put(f18693p, str);
             if (!TextUtils.isEmpty(str2)) {
                 JSONObject jSONObject2 = new JSONObject();
                 jSONObject2.put(str2, obj);
@@ -244,7 +244,7 @@ public class NativeAdvancedJsUtils {
                 @Override // java.lang.Runnable
                 public void run() {
                     h.a();
-                    a.a(webView, NativeAdvancedJsUtils.f17905o, Base64.encodeToString(jSONObject.toString().getBytes(), 2));
+                    a.a(webView, NativeAdvancedJsUtils.f18692o, Base64.encodeToString(jSONObject.toString().getBytes(), 2));
                 }
             });
         } catch (JSONException e9) {

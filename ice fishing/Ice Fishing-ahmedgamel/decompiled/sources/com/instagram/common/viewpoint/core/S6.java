@@ -15,10 +15,10 @@ public final class S6 implements NativeAdsManagerApi {
     public static final String A0C = NativeAdsManager.class.getSimpleName();
     public NativeAd.NativeOptions A01;
     public NativeAdsManager.Listener A02;
-    public C1969iu A03;
+    public C1989iu A03;
     public String A04;
     public final int A07;
-    public final C1840gi A08;
+    public final C1860gi A08;
     public final String A09;
     public final List<NativeAd> A0A;
     public int A00 = -1;
@@ -26,7 +26,7 @@ public final class S6 implements NativeAdsManagerApi {
     public boolean A06 = false;
 
     public S6(Context context, String str, int i) {
-        this.A08 = C1213Rp.A03(context);
+        this.A08 = C1233Rp.A03(context);
         this.A09 = str;
         this.A07 = Math.max(i, 0);
         this.A0A = new ArrayList(i);
@@ -36,7 +36,7 @@ public final class S6 implements NativeAdsManagerApi {
         return this.A02;
     }
 
-    public final C1969iu A01() {
+    public final C1989iu A01() {
         return this.A03;
     }
 
@@ -52,8 +52,8 @@ public final class S6 implements NativeAdsManagerApi {
         this.A0A.add(nativeAd);
     }
 
-    public final void A05(boolean z3) {
-        this.A05 = z3;
+    public final void A05(boolean z6) {
+        this.A05 = z6;
     }
 
     @Override // com.facebook.ads.internal.api.NativeAdsManagerApi
@@ -81,15 +81,15 @@ public final class S6 implements NativeAdsManagerApi {
 
     @Override // com.facebook.ads.internal.api.NativeAdsManagerApi
     public final void loadAds(NativeAdBase.MediaCacheFlag mediaCacheFlag) {
-        EnumC1315Vq enumC1315Vq = EnumC1315Vq.A06;
+        EnumC1335Vq enumC1335Vq = EnumC1335Vq.A06;
         int i = this.A07;
-        C1969iu c1969iu = this.A03;
-        this.A03 = new C1969iu(this.A08, this.A09, enumC1315Vq, null, i);
+        C1989iu c1989iu = this.A03;
+        this.A03 = new C1989iu(this.A08, this.A09, enumC1335Vq, null, i);
         if (this.A06) {
             this.A03.A06();
         }
         this.A03.A09(this.A04);
-        this.A03.A08(new C1863h5(this, this.A08, mediaCacheFlag, this.A01));
+        this.A03.A08(new C1883h5(this, this.A08, mediaCacheFlag, this.A01));
         this.A03.A07();
     }
 

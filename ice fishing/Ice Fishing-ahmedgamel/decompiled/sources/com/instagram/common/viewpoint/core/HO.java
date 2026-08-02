@@ -14,10 +14,10 @@ public abstract class HO {
     public static final int[] A07;
     public static final String[] A08;
 
-    public static String A04(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 125);
+    public static String A04(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 125);
         }
         return new String(copyOfRange);
     }
@@ -38,33 +38,33 @@ public abstract class HO {
     }
 
     public static int A00(int i) {
-        int i6;
+        int i4;
         int layer;
         int padding;
-        int i9;
+        int i6;
         int samplingRate;
         int version;
-        if (!A06(i) || (i6 = (i >>> 19) & 3) == 1 || (layer = (i >>> 17) & 3) == 0 || (padding = (i >>> 12) & 15) == 0 || padding == 15 || (i9 = (i >>> 10) & 3) == 3) {
+        if (!A06(i) || (i4 = (i >>> 19) & 3) == 1 || (layer = (i >>> 17) & 3) == 0 || (padding = (i >>> 12) & 15) == 0 || padding == 15 || (i6 = (i >>> 10) & 3) == 3) {
             return -1;
         }
-        int i10 = A07[i9];
-        if (i6 == 2) {
-            i10 /= 2;
-        } else if (i6 == 0) {
-            i10 /= 4;
+        int i9 = A07[i6];
+        if (i4 == 2) {
+            i9 /= 2;
+        } else if (i4 == 0) {
+            i9 /= 4;
         }
-        int i11 = (i >>> 9) & 1;
+        int i10 = (i >>> 9) & 1;
         if (layer == 3) {
-            if (i6 == 3) {
+            if (i4 == 3) {
                 int version2 = padding - 1;
                 version = A02[version2];
             } else {
                 int version3 = padding - 1;
                 version = A06[version3];
             }
-            return (((version * 12) / i10) + i11) * 4;
+            return (((version * 12) / i9) + i10) * 4;
         }
-        if (i6 == 3) {
+        if (i4 == 3) {
             if (layer == 2) {
                 int version4 = padding - 1;
                 samplingRate = A03[version4];
@@ -86,32 +86,32 @@ public abstract class HO {
             int version7 = padding - 1;
             samplingRate = iArr[version7];
         }
-        if (i6 == 3) {
+        if (i4 == 3) {
             int version8 = samplingRate * 144;
-            return (version8 / i10) + i11;
+            return (version8 / i9) + i10;
         }
         int version9 = layer == 1 ? 72 : 144;
-        return ((version9 * samplingRate) / i10) + i11;
+        return ((version9 * samplingRate) / i9) + i10;
     }
 
     public static int A01(int i) {
-        int i6;
+        int i4;
         int layer;
-        if (!A06(i) || (i6 = (i >>> 19) & 3) == 1 || (layer = (i >>> 17) & 3) == 0) {
+        if (!A06(i) || (i4 = (i >>> 19) & 3) == 1 || (layer = (i >>> 17) & 3) == 0) {
             return -1;
         }
-        int i9 = (i >>> 12) & 15;
+        int i6 = (i >>> 12) & 15;
         int version = i >>> 10;
         int version2 = version & 3;
-        if (i9 == 0 || i9 == 15 || version2 == 3) {
+        if (i6 == 0 || i6 == 15 || version2 == 3) {
             return -1;
         }
-        int version3 = A02(i6, layer);
+        int version3 = A02(i4, layer);
         return version3;
     }
 
-    public static int A02(int i, int i6) {
-        switch (i6) {
+    public static int A02(int i, int i4) {
+        switch (i4) {
             case 1:
                 return i == 3 ? 1152 : 576;
             case 2:

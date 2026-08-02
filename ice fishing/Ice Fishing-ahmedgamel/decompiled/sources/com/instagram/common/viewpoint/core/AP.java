@@ -29,49 +29,49 @@ import java.util.Map;
 
 @MetaExoPlayerCustomization("OculusDefaultDataSource extends this class and hence cannot be final")
 /* loaded from: assets/audience_network/classes2.dex */
-public final class AP implements InterfaceC2336pF {
+public final class AP implements InterfaceC2356pF {
     public static byte[] A0B;
     public static String[] A0C = {"tGdrGbTKqUAyZjAtECCaXso437TIFtay", "xasvTmVCH4LeG7al8p8ObQF4UIpko", "linuVDi59rGKxPba8cSgrQfx0g5xcZS0", "EsZJycHVVsXuEv", "at8NLtJKkPgo1aJyGFOZsbSRJOLI96cu", "TOIRSmJtL8rNzzbss9LVqHyYWtEEJZpF", "R6ga9urJMlxgk01j3rMsq3yEpAD", "8pNo6y0"};
-    public InterfaceC2336pF A00;
-    public InterfaceC2336pF A01;
-    public InterfaceC2336pF A02;
-    public InterfaceC2336pF A03;
-    public InterfaceC2336pF A04;
-    public InterfaceC2336pF A05;
-    public InterfaceC2336pF A06;
+    public InterfaceC2356pF A00;
+    public InterfaceC2356pF A01;
+    public InterfaceC2356pF A02;
+    public InterfaceC2356pF A03;
+    public InterfaceC2356pF A04;
+    public InterfaceC2356pF A05;
+    public InterfaceC2356pF A06;
 
     @MetaExoPlayerCustomization("OculusDefaultDataSource accesses this field directly")
-    public InterfaceC2336pF A07;
-    public final InterfaceC2336pF A08;
+    public InterfaceC2356pF A07;
+    public final InterfaceC2356pF A08;
 
     @MetaExoPlayerCustomization("OculusDefaultDataSource accesses this field directly")
     public final Context A09;
 
     @MetaExoPlayerCustomization("OculusDefaultDataSource accesses this field directly")
-    public final List<InterfaceC06715t> A0A = new ArrayList();
+    public final List<InterfaceC06915t> A0A = new ArrayList();
 
-    public static String A07(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0B, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 6);
+    public static String A07(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0B, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 6);
         }
         return new String(copyOfRange);
     }
 
     public static void A08() {
-        A0B = new byte[]{24, 86, 89, 83, 69, 88, 94, 83, 104, 86, 68, 68, 82, 67, 24, 76, 121, 121, 104, 96, 125, 121, 100, 99, 106, 45, 121, 98, 45, 125, 97, 108, 116, 45, 95, 89, c.f16317b, 93, 45, 126, 121, Byte.MAX_VALUE, 104, 108, 96, 45, 122, 100, 121, 101, 98, 120, 121, 45, 105, 104, 125, 104, 99, 105, 100, 99, 106, 45, 98, 99, 45, 121, 101, 104, 45, 95, 89, c.f16317b, 93, 45, 104, 117, 121, 104, 99, 126, 100, 98, 99, 83, 114, 113, 118, 98, 123, 99, 83, 118, 99, 118, 68, 120, 98, 101, 116, 114, 7, 48, 48, 45, 48, 98, 43, 44, 49, 54, 35, 44, 54, 43, 35, 54, 43, 44, 37, 98, 16, 22, 15, 18, 98, 39, 58, 54, 39, 44, 49, 43, 45, 44, 70, 73, 67, 85, 72, 78, 67, 9, 85, 66, 84, 72, 82, 85, 68, 66, 48, 34, 34, 52, 37, 38, 42, 40, 107, 35, 36, 38, 32, 39, 42, 42, 46, 107, 36, 33, 54, 107, 34, 42, 42, 34, 41, 32, 107, 36, 43, 33, 55, 42, 44, 33, 107, 32, 61, 42, 53, 41, 36, 60, 32, 55, 119, 107, 32, 61, 49, 107, 55, 49, 40, 53, 107, 23, 49, 40, 53, 1, 36, 49, 36, 22, 42, 48, 55, 38, 32, 12, 0, 1, 27, 10, 1, 27, c.f16318c, 58, 47, 58, 51, 32, 54, 51, 36, 50, 46, 52, 51, 34, 36, 75, 77, 84, 73, 70, 87, 67};
+        A0B = new byte[]{24, 86, 89, 83, 69, 88, 94, 83, 104, 86, 68, 68, 82, 67, 24, 76, 121, 121, 104, 96, 125, 121, 100, 99, 106, 45, 121, 98, 45, 125, 97, 108, 116, 45, 95, 89, c.f17104b, 93, 45, 126, 121, Byte.MAX_VALUE, 104, 108, 96, 45, 122, 100, 121, 101, 98, 120, 121, 45, 105, 104, 125, 104, 99, 105, 100, 99, 106, 45, 98, 99, 45, 121, 101, 104, 45, 95, 89, c.f17104b, 93, 45, 104, 117, 121, 104, 99, 126, 100, 98, 99, 83, 114, 113, 118, 98, 123, 99, 83, 118, 99, 118, 68, 120, 98, 101, 116, 114, 7, 48, 48, 45, 48, 98, 43, 44, 49, 54, 35, 44, 54, 43, 35, 54, 43, 44, 37, 98, 16, 22, 15, 18, 98, 39, 58, 54, 39, 44, 49, 43, 45, 44, 70, 73, 67, 85, 72, 78, 67, 9, 85, 66, 84, 72, 82, 85, 68, 66, 48, 34, 34, 52, 37, 38, 42, 40, 107, 35, 36, 38, 32, 39, 42, 42, 46, 107, 36, 33, 54, 107, 34, 42, 42, 34, 41, 32, 107, 36, 43, 33, 55, 42, 44, 33, 107, 32, 61, 42, 53, 41, 36, 60, 32, 55, 119, 107, 32, 61, 49, 107, 55, 49, 40, 53, 107, 23, 49, 40, 53, 1, 36, 49, 36, 22, 42, 48, 55, 38, 32, 12, 0, 1, 27, 10, 1, 27, c.f17105c, 58, 47, 58, 51, 32, 54, 51, 36, 50, 46, 52, 51, 34, 36, 75, 77, 84, 73, 70, 87, 67};
     }
 
     static {
         A08();
     }
 
-    public AP(Context context, InterfaceC2336pF interfaceC2336pF) {
+    public AP(Context context, InterfaceC2356pF interfaceC2356pF) {
         this.A09 = context.getApplicationContext();
-        this.A08 = (InterfaceC2336pF) AbstractC06243y.A01(interfaceC2336pF);
+        this.A08 = (InterfaceC2356pF) AbstractC06443y.A01(interfaceC2356pF);
     }
 
-    private InterfaceC2336pF A00() {
+    private InterfaceC2356pF A00() {
         if (this.A00 == null) {
             final Context context = this.A09;
             this.A00 = new AQ(context) { // from class: com.facebook.ads.redexgen.X.1n
@@ -83,32 +83,32 @@ public final class AP implements InterfaceC2336pF {
                 public boolean A03;
                 public final AssetManager A04;
 
-                public static String A00(int i, int i6, int i9) {
-                    byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i6);
-                    for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-                        int i11 = (copyOfRange[i10] ^ i9) ^ 113;
+                public static String A00(int i, int i4, int i6) {
+                    byte[] copyOfRange = Arrays.copyOfRange(A05, i, i + i4);
+                    for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+                        int i10 = (copyOfRange[i9] ^ i6) ^ 113;
                         String[] strArr = A06;
                         if (strArr[2].length() != strArr[4].length()) {
                             throw new RuntimeException();
                         }
                         A06[1] = "rCVU";
-                        copyOfRange[i10] = (byte) i11;
+                        copyOfRange[i9] = (byte) i10;
                     }
                     return new String(copyOfRange);
                 }
 
                 public static void A01() {
-                    A05 = new byte[]{124, 116, 58, 53, c.f16318c, 41, 52, 50, c.f16318c, 4, 58, 40, 40, 62, 47, 116};
+                    A05 = new byte[]{124, 116, 58, 53, c.f17105c, 41, 52, 50, c.f17105c, 4, 58, 40, 40, 62, 47, 116};
                 }
 
                 /* JADX WARN: Failed to parse debug info
                 java.lang.ArrayIndexOutOfBoundsException
                  */
-                @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
-                public final long AGi(C06605i c06605i) throws C2338pH {
+                @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
+                public final long AGi(C06805i c06805i) throws C2358pH {
                     try {
-                        this.A01 = c06605i.A06;
-                        String str = (String) AbstractC06243y.A01(this.A01.getPath());
+                        this.A01 = c06805i.A06;
+                        String str = (String) AbstractC06443y.A01(this.A01.getPath());
                         boolean startsWith = str.startsWith(A00(1, 15, 42));
                         String[] strArr = A06;
                         if (strArr[2].length() == strArr[4].length()) {
@@ -120,13 +120,13 @@ public final class AP implements InterfaceC2336pF {
                             } else if (str.startsWith(A00(0, 1, 34))) {
                                 str = str.substring(1);
                             }
-                            A0G(c06605i);
+                            A0G(c06805i);
                             this.A02 = this.A04.open(str, 1);
-                            if (this.A02.skip(c06605i.A04) < c06605i.A04) {
-                                throw new C2338pH(null, AdError.REMOTE_ADS_SERVICE_ERROR);
+                            if (this.A02.skip(c06805i.A04) < c06805i.A04) {
+                                throw new C2358pH(null, AdError.REMOTE_ADS_SERVICE_ERROR);
                             }
-                            if (c06605i.A03 != -1) {
-                                this.A00 = c06605i.A03;
+                            if (c06805i.A03 != -1) {
+                                this.A00 = c06805i.A03;
                             } else {
                                 this.A00 = this.A02.available();
                                 if (this.A00 == 2147483647L) {
@@ -134,16 +134,16 @@ public final class AP implements InterfaceC2336pF {
                                 }
                             }
                             this.A03 = true;
-                            A0H(c06605i);
+                            A0H(c06805i);
                             return this.A00;
                         }
-                    } catch (C2338pH e9) {
+                    } catch (C2358pH e9) {
                         throw e9;
                     } catch (IOException e10) {
-                        boolean z3 = e10 instanceof FileNotFoundException;
+                        boolean z6 = e10 instanceof FileNotFoundException;
                         if (A06[6].length() == 13) {
                             A06[6] = "P3wDYI6sXfUMf";
-                            throw new C2338pH(e10, z3 ? 2005 : 2000);
+                            throw new C2358pH(e10, z6 ? 2005 : 2000);
                         }
                     }
                     throw new RuntimeException();
@@ -158,13 +158,13 @@ public final class AP implements InterfaceC2336pF {
                     this.A04 = context.getAssets();
                 }
 
-                @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
+                @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
                 public final Uri A9P() {
                     return this.A01;
                 }
 
-                @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
-                public final void close() throws C2338pH {
+                @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
+                public final void close() throws C2358pH {
                     this.A01 = null;
                     try {
                         try {
@@ -172,7 +172,7 @@ public final class AP implements InterfaceC2336pF {
                                 this.A02.close();
                             }
                         } catch (IOException e9) {
-                            throw new C2338pH(e9, 2000);
+                            throw new C2358pH(e9, 2000);
                         }
                     } finally {
                         this.A02 = null;
@@ -183,9 +183,9 @@ public final class AP implements InterfaceC2336pF {
                     }
                 }
 
-                @Override // com.instagram.common.viewpoint.core.InterfaceC05802c
-                public final int read(byte[] bArr, int i, int i6) throws C2338pH {
-                    if (i6 == 0) {
+                @Override // com.instagram.common.viewpoint.core.InterfaceC06002c
+                public final int read(byte[] bArr, int i, int i4) throws C2358pH {
+                    if (i4 == 0) {
                         return 0;
                     }
                     if (this.A00 == 0) {
@@ -193,9 +193,9 @@ public final class AP implements InterfaceC2336pF {
                     }
                     try {
                         if (this.A00 != -1) {
-                            i6 = (int) Math.min(this.A00, i6);
+                            i4 = (int) Math.min(this.A00, i4);
                         }
-                        int read = ((InputStream) C5C.A0f(this.A02)).read(bArr, i, i6);
+                        int read = ((InputStream) C5C.A0f(this.A02)).read(bArr, i, i4);
                         if (read == -1) {
                             return -1;
                         }
@@ -210,7 +210,7 @@ public final class AP implements InterfaceC2336pF {
                         A0F(read);
                         return read;
                     } catch (IOException e9) {
-                        throw new C2338pH(e9, 2000);
+                        throw new C2358pH(e9, 2000);
                     }
                 }
             };
@@ -219,7 +219,7 @@ public final class AP implements InterfaceC2336pF {
         return this.A00;
     }
 
-    private InterfaceC2336pF A01() {
+    private InterfaceC2356pF A01() {
         if (this.A01 == null) {
             final Context context = this.A09;
             this.A01 = new AQ(context) { // from class: com.facebook.ads.redexgen.X.1m
@@ -232,10 +232,10 @@ public final class AP implements InterfaceC2336pF {
                 public boolean A04;
                 public final ContentResolver A05;
 
-                public static String A00(int i, int i6, int i9) {
-                    byte[] copyOfRange = Arrays.copyOfRange(A06, i, i + i6);
-                    for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-                        copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 87);
+                public static String A00(int i, int i4, int i6) {
+                    byte[] copyOfRange = Arrays.copyOfRange(A06, i, i + i4);
+                    for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+                        copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 87);
                     }
                     return new String(copyOfRange);
                 }
@@ -250,7 +250,7 @@ public final class AP implements InterfaceC2336pF {
                  */
                 /* JADX WARN: Code restructure failed: missing block: B:48:0x016d, code lost:
                 
-                    throw new com.instagram.common.viewpoint.core.C2337pG(null, com.facebook.ads.AdError.REMOTE_ADS_SERVICE_ERROR);
+                    throw new com.instagram.common.viewpoint.core.C2357pG(null, com.facebook.ads.AdError.REMOTE_ADS_SERVICE_ERROR);
                  */
                 /* JADX WARN: Code restructure failed: missing block: B:50:0x012a, code lost:
                 
@@ -262,7 +262,7 @@ public final class AP implements InterfaceC2336pF {
                  */
                 /* JADX WARN: Code restructure failed: missing block: B:57:0x0176, code lost:
                 
-                    throw new com.instagram.common.viewpoint.core.C2337pG(null, com.facebook.ads.AdError.REMOTE_ADS_SERVICE_ERROR);
+                    throw new com.instagram.common.viewpoint.core.C2357pG(null, com.facebook.ads.AdError.REMOTE_ADS_SERVICE_ERROR);
                  */
                 /* JADX WARN: Code restructure failed: missing block: B:59:0x00ee, code lost:
                 
@@ -276,18 +276,18 @@ public final class AP implements InterfaceC2336pF {
                 	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
                 	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
                  */
-                @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
+                @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
                 /*
                     Code decompiled incorrectly, please refer to instructions dump.
                 */
-                public final long AGi(C06605i c06605i) throws C2337pG {
+                public final long AGi(C06805i c06805i) throws C2357pG {
                     AssetFileDescriptor openAssetFileDescriptor;
                     try {
                         try {
-                            Uri uri = c06605i.A06;
+                            Uri uri = c06805i.A06;
                             this.A02 = uri;
-                            A0G(c06605i);
-                            if (A00(90, 7, 0).equals(c06605i.A06.getScheme())) {
+                            A0G(c06805i);
+                            if (A00(90, 7, 0).equals(c06805i.A06.getScheme())) {
                                 Bundle bundle = new Bundle();
                                 bundle.putBoolean(A00(39, 51, 84), true);
                                 openAssetFileDescriptor = this.A05.openTypedAssetFileDescriptor(uri, A00(0, 3, 51), bundle);
@@ -297,28 +297,28 @@ public final class AP implements InterfaceC2336pF {
                             this.A01 = openAssetFileDescriptor;
                             if (openAssetFileDescriptor == null) {
                                 try {
-                                    throw new C2337pG(new IOException(A00(3, 36, 112) + uri), 2000);
+                                    throw new C2357pG(new IOException(A00(3, 36, 112) + uri), 2000);
                                 } catch (IOException e9) {
                                     e = e9;
-                                    throw new C2337pG(e, e instanceof FileNotFoundException ? 2005 : 2000);
+                                    throw new C2357pG(e, e instanceof FileNotFoundException ? 2005 : 2000);
                                 }
                             }
                             long length = openAssetFileDescriptor.getLength();
                             FileInputStream fileInputStream = new FileInputStream(openAssetFileDescriptor.getFileDescriptor());
                             this.A03 = fileInputStream;
-                            if (length != -1 && c06605i.A04 > length) {
-                                throw new C2337pG(null, AdError.REMOTE_ADS_SERVICE_ERROR);
+                            if (length != -1 && c06805i.A04 > length) {
+                                throw new C2357pG(null, AdError.REMOTE_ADS_SERVICE_ERROR);
                             }
                             long startOffset = openAssetFileDescriptor.getStartOffset();
-                            long skip = fileInputStream.skip(c06605i.A04 + startOffset) - startOffset;
-                            long j6 = c06605i.A04;
+                            long skip = fileInputStream.skip(c06805i.A04 + startOffset) - startOffset;
+                            long j6 = c06805i.A04;
                             String[] strArr = A07;
                             if (strArr[0].charAt(30) == strArr[3].charAt(30)) {
                                 String[] strArr2 = A07;
                                 strArr2[7] = "V2cYJorATJJITl96mEL4teMpahqL5My0";
                                 strArr2[2] = "81QpsL8o4R3JZzZywbg9Kxgu0WDTOmHd";
                                 if (skip != j6) {
-                                    throw new C2337pG(null, AdError.REMOTE_ADS_SERVICE_ERROR);
+                                    throw new C2357pG(null, AdError.REMOTE_ADS_SERVICE_ERROR);
                                 }
                                 if (length == -1) {
                                     FileChannel channel = fileInputStream.getChannel();
@@ -345,24 +345,24 @@ public final class AP implements InterfaceC2336pF {
                                         A07[1] = "HQINqvWzgwxijb9Tl3Os5Fu0qA3gaNYz";
                                     }
                                 }
-                                long j11 = c06605i.A03;
+                                long j11 = c06805i.A03;
                                 if (A07[5].charAt(20) == 'X') {
                                     String[] strArr4 = A07;
                                     strArr4[0] = "HMZNFKbBHMEnP71uJIxHqXthvd44tlRl";
                                     strArr4[3] = "eoHh6GrHY21TbtSwRzT9Dqoif9pbqNR5";
                                     if (j11 != -1) {
-                                        this.A00 = this.A00 == -1 ? c06605i.A03 : Math.min(this.A00, c06605i.A03);
+                                        this.A00 = this.A00 == -1 ? c06805i.A03 : Math.min(this.A00, c06805i.A03);
                                     }
                                     this.A04 = true;
-                                    A0H(c06605i);
-                                    return c06605i.A03 != -1 ? c06605i.A03 : this.A00;
+                                    A0H(c06805i);
+                                    return c06805i.A03 != -1 ? c06805i.A03 : this.A00;
                                 }
                             }
                             throw new RuntimeException();
                         } catch (IOException e10) {
                             e = e10;
                         }
-                    } catch (C2337pG e11) {
+                    } catch (C2357pG e11) {
                         throw e11;
                     }
                 }
@@ -376,13 +376,13 @@ public final class AP implements InterfaceC2336pF {
                     this.A05 = context.getContentResolver();
                 }
 
-                @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
+                @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
                 public final Uri A9P() {
                     return this.A02;
                 }
 
-                @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
-                public final void close() throws C2337pG {
+                @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
+                public final void close() throws C2357pG {
                     this.A02 = null;
                     try {
                         try {
@@ -396,7 +396,7 @@ public final class AP implements InterfaceC2336pF {
                                         this.A01.close();
                                     }
                                 } catch (IOException e9) {
-                                    throw new C2337pG(e9, 2000);
+                                    throw new C2357pG(e9, 2000);
                                 }
                             } finally {
                                 this.A01 = null;
@@ -406,7 +406,7 @@ public final class AP implements InterfaceC2336pF {
                                 }
                             }
                         } catch (IOException e10) {
-                            throw new C2337pG(e10, 2000);
+                            throw new C2357pG(e10, 2000);
                         }
                     } catch (Throwable th) {
                         this.A03 = null;
@@ -422,7 +422,7 @@ public final class AP implements InterfaceC2336pF {
                                 }
                                 throw th;
                             } catch (IOException e11) {
-                                throw new C2337pG(e11, 2000);
+                                throw new C2357pG(e11, 2000);
                             }
                         } finally {
                             this.A01 = null;
@@ -434,9 +434,9 @@ public final class AP implements InterfaceC2336pF {
                     }
                 }
 
-                @Override // com.instagram.common.viewpoint.core.InterfaceC05802c
-                public final int read(byte[] bArr, int i, int i6) throws C2337pG {
-                    if (i6 == 0) {
+                @Override // com.instagram.common.viewpoint.core.InterfaceC06002c
+                public final int read(byte[] bArr, int i, int i4) throws C2357pG {
+                    if (i4 == 0) {
                         return 0;
                     }
                     long j6 = this.A00;
@@ -451,9 +451,9 @@ public final class AP implements InterfaceC2336pF {
                     }
                     try {
                         if (this.A00 != -1) {
-                            i6 = (int) Math.min(this.A00, i6);
+                            i4 = (int) Math.min(this.A00, i4);
                         }
-                        int read = ((FileInputStream) C5C.A0f(this.A03)).read(bArr, i, i6);
+                        int read = ((FileInputStream) C5C.A0f(this.A03)).read(bArr, i, i4);
                         if (read == -1) {
                             return -1;
                         }
@@ -463,7 +463,7 @@ public final class AP implements InterfaceC2336pF {
                         A0F(read);
                         return read;
                     } catch (IOException e9) {
-                        throw new C2337pG(e9, 2000);
+                        throw new C2357pG(e9, 2000);
                     }
                 }
             };
@@ -472,23 +472,23 @@ public final class AP implements InterfaceC2336pF {
         return this.A01;
     }
 
-    private InterfaceC2336pF A02() {
+    private InterfaceC2356pF A02() {
         if (this.A02 == null) {
             this.A02 = new AQ() { // from class: com.facebook.ads.redexgen.X.1l
                 public static byte[] A04;
                 public int A00;
                 public int A01;
-                public C06605i A02;
+                public C06805i A02;
                 public byte[] A03;
 
                 static {
                     A01();
                 }
 
-                public static String A00(int i, int i6, int i9) {
-                    byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i6);
-                    for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-                        copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 120);
+                public static String A00(int i, int i4, int i6) {
+                    byte[] copyOfRange = Arrays.copyOfRange(A04, i, i + i4);
+                    for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+                        copyOfRange[i9] = (byte) ((copyOfRange[i9] - i6) - 120);
                     }
                     return new String(copyOfRange);
                 }
@@ -497,7 +497,7 @@ public final class AP implements InterfaceC2336pF {
                     A04 = new byte[]{-17, 48, 87, 86, 104, 90, 43, 41, 58, 103, 103, 100, 103, 21, 108, 93, 94, 97, 90, 21, 101, 86, 103, 104, 94, 99, 92, 21, 55, 86, 104, 90, 43, 41, 21, 90, 99, 88, 100, 89, 90, 89, 21, 104, 105, 103, 94, 99, 92, 47, 21, -23, 2, -7, 12, 4, -7, -9, 8, -7, -8, -76, -23, -26, -35, -76, -6, 3, 6, 1, -11, 8, -50, -76, 60, 85, 90, 92, 87, 87, 86, 89, 91, 76, 75, 7, 90, 74, 79, 76, 84, 76, 33, 7, 25, 22, 41, 22};
                 }
 
-                @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
+                @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
                 public final Uri A9P() {
                     if (this.A02 != null) {
                         return this.A02.A06;
@@ -505,13 +505,13 @@ public final class AP implements InterfaceC2336pF {
                     return null;
                 }
 
-                @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
-                public final long AGi(C06605i c06605i) throws IOException {
-                    A0G(c06605i);
-                    this.A02 = c06605i;
-                    Uri uri = c06605i.A06;
+                @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
+                public final long AGi(C06805i c06805i) throws IOException {
+                    A0G(c06805i);
+                    this.A02 = c06805i;
+                    Uri uri = c06805i.A06;
                     String scheme = uri.getScheme();
-                    AbstractC06243y.A09(A00(94, 4, 61).equals(scheme), A00(74, 20, 111) + scheme);
+                    AbstractC06443y.A09(A00(94, 4, 61).equals(scheme), A00(74, 20, 111) + scheme);
                     String[] uriParts = C5C.A1O(uri.getSchemeSpecificPart(), A00(0, 1, 75));
                     if (uriParts.length == 2) {
                         String str = uriParts[1];
@@ -523,24 +523,24 @@ public final class AP implements InterfaceC2336pF {
                                 throw C3K.A02(A00(8, 43, 125) + str, e9);
                             }
                         } else {
-                            this.A03 = C5C.A1G(URLDecoder.decode(str, AbstractC2037k9.A01.name()));
+                            this.A03 = C5C.A1G(URLDecoder.decode(str, AbstractC2057k9.A01.name()));
                         }
-                        if (c06605i.A04 <= this.A03.length) {
-                            this.A01 = (int) c06605i.A04;
+                        if (c06805i.A04 <= this.A03.length) {
+                            this.A01 = (int) c06805i.A04;
                             this.A00 = this.A03.length - this.A01;
-                            if (c06605i.A03 != -1) {
-                                this.A00 = (int) Math.min(this.A00, c06605i.A03);
+                            if (c06805i.A03 != -1) {
+                                this.A00 = (int) Math.min(this.A00, c06805i.A03);
                             }
-                            A0H(c06605i);
-                            return c06605i.A03 != -1 ? c06605i.A03 : this.A00;
+                            A0H(c06805i);
+                            return c06805i.A03 != -1 ? c06805i.A03 : this.A00;
                         }
                         this.A03 = null;
-                        throw new C06535b(AdError.REMOTE_ADS_SERVICE_ERROR);
+                        throw new C06735b(AdError.REMOTE_ADS_SERVICE_ERROR);
                     }
                     throw C3K.A02(A00(51, 23, 28) + uri, null);
                 }
 
-                @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
+                @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
                 public final void close() {
                     if (this.A03 != null) {
                         this.A03 = null;
@@ -549,15 +549,15 @@ public final class AP implements InterfaceC2336pF {
                     this.A02 = null;
                 }
 
-                @Override // com.instagram.common.viewpoint.core.InterfaceC05802c
-                public final int read(byte[] bArr, int i, int i6) {
-                    if (i6 == 0) {
+                @Override // com.instagram.common.viewpoint.core.InterfaceC06002c
+                public final int read(byte[] bArr, int i, int i4) {
+                    if (i4 == 0) {
                         return 0;
                     }
                     if (this.A00 == 0) {
                         return -1;
                     }
-                    int min = Math.min(i6, this.A00);
+                    int min = Math.min(i4, this.A00);
                     System.arraycopy(C5C.A0f(this.A03), this.A01, bArr, i, min);
                     this.A01 += min;
                     this.A00 -= min;
@@ -570,15 +570,15 @@ public final class AP implements InterfaceC2336pF {
         return this.A02;
     }
 
-    private InterfaceC2336pF A03() {
+    private InterfaceC2356pF A03() {
         if (this.A03 == null) {
-            this.A03 = new C05611j();
+            this.A03 = new C05811j();
             A09(this.A03);
         }
         return this.A03;
     }
 
-    private InterfaceC2336pF A04() {
+    private InterfaceC2356pF A04() {
         if (this.A04 == null) {
             final Context context = this.A09;
             this.A04 = new AQ(context) { // from class: com.facebook.ads.redexgen.X.1i
@@ -592,16 +592,16 @@ public final class AP implements InterfaceC2336pF {
                 public final Resources A05;
                 public final String A06;
 
-                public static String A00(int i, int i6, int i9) {
-                    byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i6);
-                    for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-                        copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ a.f21728R);
+                public static String A00(int i, int i4, int i6) {
+                    byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i4);
+                    for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+                        copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ a.f22515R);
                     }
                     return new String(copyOfRange);
                 }
 
                 public static void A01() {
-                    A07 = new byte[]{105, 54, 72, 99, 105, 45, 98, 107, 45, 126, 121, Byte.MAX_VALUE, 104, 108, 96, 45, Byte.MAX_VALUE, 104, 108, 110, 101, 104, 105, 45, 101, 108, 123, 100, 99, 106, 45, 99, 98, 121, 45, Byte.MAX_VALUE, 104, 108, 105, 45, 126, 120, 107, 107, 100, 110, 100, 104, 99, 121, 45, 105, 108, 121, 108, 35, 122, 77, 91, 71, 93, 90, 75, 77, 8, 65, 76, 77, 70, 92, 65, 78, 65, 77, 90, 8, 69, 93, 91, 92, 8, 74, 77, 8, 73, 70, 8, 65, 70, 92, 77, 79, 77, 90, 6, 27, 44, 58, 38, 60, 59, 42, 44, 105, 32, 58, 105, 42, 38, 36, 57, 59, 44, 58, 58, 44, 45, 115, 105, 50, 5, 19, 15, 21, 18, 3, 5, c.f16317b, 14, 15, 20, c.f16317b, 6, 15, 21, 14, 4, 78, 115, 116, 111, 6, 75, 83, 85, 82, 6, 67, 79, 82, 78, 67, 84, 6, 83, 85, 67, 6, 85, 69, 78, 67, 75, 67, 6, 84, 71, 81, 84, 67, 85, 73, 83, 84, 69, 67, 6, 73, 84, 6, 71, 72, 66, 84, 73, 79, 66, 8, 84, 67, 85, 73, 83, 84, 69, 67, 114, 74, 5, 98, 109, 103, 113, 108, 106, 103, 45, 113, 102, 112, 108, 118, 113, 96, 102, 69, 86, c.f16317b, 92, 79, 89, 92, 75, 93, 65, 91, 92, 77, 75};
+                    A07 = new byte[]{105, 54, 72, 99, 105, 45, 98, 107, 45, 126, 121, Byte.MAX_VALUE, 104, 108, 96, 45, Byte.MAX_VALUE, 104, 108, 110, 101, 104, 105, 45, 101, 108, 123, 100, 99, 106, 45, 99, 98, 121, 45, Byte.MAX_VALUE, 104, 108, 105, 45, 126, 120, 107, 107, 100, 110, 100, 104, 99, 121, 45, 105, 108, 121, 108, 35, 122, 77, 91, 71, 93, 90, 75, 77, 8, 65, 76, 77, 70, 92, 65, 78, 65, 77, 90, 8, 69, 93, 91, 92, 8, 74, 77, 8, 73, 70, 8, 65, 70, 92, 77, 79, 77, 90, 6, 27, 44, 58, 38, 60, 59, 42, 44, 105, 32, 58, 105, 42, 38, 36, 57, 59, 44, 58, 58, 44, 45, 115, 105, 50, 5, 19, 15, 21, 18, 3, 5, c.f17104b, 14, 15, 20, c.f17104b, 6, 15, 21, 14, 4, 78, 115, 116, 111, 6, 75, 83, 85, 82, 6, 67, 79, 82, 78, 67, 84, 6, 83, 85, 67, 6, 85, 69, 78, 67, 75, 67, 6, 84, 71, 81, 84, 67, 85, 73, 83, 84, 69, 67, 6, 73, 84, 6, 71, 72, 66, 84, 73, 79, 66, 8, 84, 67, 85, 73, 83, 84, 69, 67, 114, 74, 5, 98, 109, 103, 113, 108, 106, 103, 45, 113, 102, 112, 108, 118, 113, 96, 102, 69, 86, c.f17104b, 92, 79, 89, 92, 75, 93, 65, 91, 92, 77, 75};
                 }
 
                 /* JADX WARN: Code restructure failed: missing block: B:101:0x0116, code lost:
@@ -614,19 +614,19 @@ public final class AP implements InterfaceC2336pF {
                  */
                 /* JADX WARN: Code restructure failed: missing block: B:99:0x0260, code lost:
                 
-                    throw new com.instagram.common.viewpoint.core.C2324p3(A00(119, 19, 31), null, 2005);
+                    throw new com.instagram.common.viewpoint.core.C2344p3(A00(119, 19, 31), null, 2005);
                  */
                 /* JADX WARN: Failed to parse debug info
                 java.lang.ArrayIndexOutOfBoundsException
                  */
-                @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
+                @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
                 /*
                     Code decompiled incorrectly, please refer to instructions dump.
                 */
-                public final long AGi(C06605i c06605i) throws C2324p3 {
+                public final long AGi(C06805i c06805i) throws C2344p3 {
                     int parseInt;
-                    C05601i c05601i;
-                    Uri uri = c06605i.A06;
+                    C05801i c05801i;
+                    Uri uri = c06805i.A06;
                     this.A02 = uri;
                     try {
                         try {
@@ -638,11 +638,11 @@ public final class AP implements InterfaceC2336pF {
                                     strArr2[4] = "6WAfCQCC";
                                     strArr2[5] = "2bXUndVpRAzh6SBol";
                                     String A00 = A00(199, 16, 124);
-                                    if (!TextUtils.equals(A00, scheme) || uri.getPathSegments().size() != 1 || !((String) AbstractC06243y.A01(uri.getLastPathSegment())).matches(A00(196, 3, 81))) {
+                                    if (!TextUtils.equals(A00, scheme) || uri.getPathSegments().size() != 1 || !((String) AbstractC06443y.A01(uri.getLastPathSegment())).matches(A00(196, 3, 81))) {
                                         if (!TextUtils.equals(A00, uri.getScheme())) {
-                                            throw new C2324p3(A00(138, 58, 89), null, 1004);
+                                            throw new C2344p3(A00(138, 58, 89), null, 1004);
                                         }
-                                        String str = (String) AbstractC06243y.A01(uri.getPath());
+                                        String str = (String) AbstractC06443y.A01(uri.getPath());
                                         if (str.startsWith(A00(0, 1, 57))) {
                                             str = str.substring(1);
                                         }
@@ -668,85 +668,85 @@ public final class AP implements InterfaceC2336pF {
                             AssetFileDescriptor openRawResourceFd = this.A05.openRawResourceFd(parseInt);
                             this.A01 = openRawResourceFd;
                             if (openRawResourceFd == null) {
-                                throw new C2324p3(A00(95, 24, 54) + uri, null, 2000);
+                                throw new C2344p3(A00(95, 24, 54) + uri, null, 2000);
                             }
                             long length = openRawResourceFd.getLength();
                             FileInputStream fileInputStream = new FileInputStream(openRawResourceFd.getFileDescriptor());
                             this.A03 = fileInputStream;
                             if (length != -1) {
                                 try {
-                                    if (c06605i.A04 > length) {
-                                        throw new C2324p3(null, null, AdError.REMOTE_ADS_SERVICE_ERROR);
+                                    if (c06805i.A04 > length) {
+                                        throw new C2344p3(null, null, AdError.REMOTE_ADS_SERVICE_ERROR);
                                     }
-                                } catch (C2324p3 e9) {
+                                } catch (C2344p3 e9) {
                                     throw e9;
                                 } catch (IOException e10) {
                                     e = e10;
-                                    throw new C2324p3(null, e, 2000);
+                                    throw new C2344p3(null, e, 2000);
                                 }
                             }
                             try {
                                 long startOffset = openRawResourceFd.getStartOffset();
-                                long skip = fileInputStream.skip(c06605i.A04 + startOffset) - startOffset;
+                                long skip = fileInputStream.skip(c06805i.A04 + startOffset) - startOffset;
                                 try {
-                                } catch (C2324p3 e11) {
+                                } catch (C2344p3 e11) {
                                     throw e11;
                                 } catch (IOException e12) {
                                     e = e12;
                                 }
                                 try {
-                                    if (skip != c06605i.A04) {
-                                        throw new C2324p3(null, null, AdError.REMOTE_ADS_SERVICE_ERROR);
+                                    if (skip != c06805i.A04) {
+                                        throw new C2344p3(null, null, AdError.REMOTE_ADS_SERVICE_ERROR);
                                     }
                                     if (length == -1) {
                                         FileChannel channel = fileInputStream.getChannel();
                                         if (channel.size() == 0) {
-                                            c05601i = this;
-                                            c05601i.A00 = -1L;
+                                            c05801i = this;
+                                            c05801i.A00 = -1L;
                                         } else {
-                                            c05601i = this;
-                                            c05601i.A00 = channel.size() - channel.position();
-                                            if (c05601i.A00 < 0) {
-                                                throw new C2324p3(null, null, AdError.REMOTE_ADS_SERVICE_ERROR);
+                                            c05801i = this;
+                                            c05801i.A00 = channel.size() - channel.position();
+                                            if (c05801i.A00 < 0) {
+                                                throw new C2344p3(null, null, AdError.REMOTE_ADS_SERVICE_ERROR);
                                             }
                                         }
                                     } else {
-                                        c05601i = this;
-                                        c05601i.A00 = length - skip;
-                                        if (c05601i.A00 < 0) {
-                                            throw new C06535b(AdError.REMOTE_ADS_SERVICE_ERROR);
+                                        c05801i = this;
+                                        c05801i.A00 = length - skip;
+                                        if (c05801i.A00 < 0) {
+                                            throw new C06735b(AdError.REMOTE_ADS_SERVICE_ERROR);
                                         }
                                     }
-                                    long j6 = c06605i.A03;
+                                    long j6 = c06805i.A03;
                                     String[] strArr5 = A08;
                                     if (strArr5[7].length() != strArr5[2].length()) {
                                         A08[0] = "f";
                                         if (j6 != -1) {
-                                            c05601i.A00 = c05601i.A00 == -1 ? c06605i.A03 : Math.min(c05601i.A00, c06605i.A03);
+                                            c05801i.A00 = c05801i.A00 == -1 ? c06805i.A03 : Math.min(c05801i.A00, c06805i.A03);
                                         }
-                                        c05601i.A04 = true;
-                                        A0H(c06605i);
-                                        return c06605i.A03 != -1 ? c06605i.A03 : c05601i.A00;
+                                        c05801i.A04 = true;
+                                        A0H(c06805i);
+                                        return c06805i.A03 != -1 ? c06805i.A03 : c05801i.A00;
                                     }
                                     throw new RuntimeException();
-                                } catch (C2324p3 e13) {
+                                } catch (C2344p3 e13) {
                                     throw e13;
                                 } catch (IOException e14) {
                                     e = e14;
-                                    throw new C2324p3(null, e, 2000);
+                                    throw new C2344p3(null, e, 2000);
                                 }
-                            } catch (C2324p3 e15) {
+                            } catch (C2344p3 e15) {
                                 throw e15;
                             } catch (IOException e16) {
                                 e = e16;
                             }
                         } catch (Resources.NotFoundException e17) {
-                            throw new C2324p3(null, e17, 2005);
+                            throw new C2344p3(null, e17, 2005);
                         }
-                        parseInt = Integer.parseInt((String) AbstractC06243y.A01(uri.getLastPathSegment()));
-                        A0G(c06605i);
+                        parseInt = Integer.parseInt((String) AbstractC06443y.A01(uri.getLastPathSegment()));
+                        A0G(c06805i);
                     } catch (NumberFormatException unused) {
-                        throw new C2324p3(A00(56, 39, 87), null, 1004);
+                        throw new C2344p3(A00(56, 39, 87), null, 1004);
                     }
                 }
 
@@ -760,13 +760,13 @@ public final class AP implements InterfaceC2336pF {
                     this.A06 = context.getPackageName();
                 }
 
-                @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
+                @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
                 public final Uri A9P() {
                     return this.A02;
                 }
 
-                @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
-                public final void close() throws C2324p3 {
+                @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
+                public final void close() throws C2344p3 {
                     this.A02 = null;
                     try {
                         try {
@@ -780,7 +780,7 @@ public final class AP implements InterfaceC2336pF {
                                         this.A01.close();
                                     }
                                 } catch (IOException e9) {
-                                    throw new C2324p3(null, e9, 2000);
+                                    throw new C2344p3(null, e9, 2000);
                                 }
                             } catch (Throwable th) {
                                 this.A01 = null;
@@ -796,7 +796,7 @@ public final class AP implements InterfaceC2336pF {
                                 throw th;
                             }
                         } catch (IOException e10) {
-                            throw new C2324p3(null, e10, 2000);
+                            throw new C2344p3(null, e10, 2000);
                         }
                     } catch (Throwable th2) {
                         this.A03 = null;
@@ -812,7 +812,7 @@ public final class AP implements InterfaceC2336pF {
                                 }
                                 throw th2;
                             } catch (IOException e11) {
-                                throw new C2324p3(null, e11, 2000);
+                                throw new C2344p3(null, e11, 2000);
                             }
                         } finally {
                             this.A01 = null;
@@ -824,9 +824,9 @@ public final class AP implements InterfaceC2336pF {
                     }
                 }
 
-                @Override // com.instagram.common.viewpoint.core.InterfaceC05802c
-                public final int read(byte[] bArr, int i, int i6) throws C2324p3 {
-                    if (i6 == 0) {
+                @Override // com.instagram.common.viewpoint.core.InterfaceC06002c
+                public final int read(byte[] bArr, int i, int i4) throws C2344p3 {
+                    if (i4 == 0) {
                         return 0;
                     }
                     if (this.A00 == 0) {
@@ -834,14 +834,14 @@ public final class AP implements InterfaceC2336pF {
                     }
                     try {
                         if (this.A00 != -1) {
-                            i6 = (int) Math.min(this.A00, i6);
+                            i4 = (int) Math.min(this.A00, i4);
                         }
-                        int read = ((InputStream) C5C.A0f(this.A03)).read(bArr, i, i6);
+                        int read = ((InputStream) C5C.A0f(this.A03)).read(bArr, i, i4);
                         if (read == -1) {
                             if (this.A00 == -1) {
                                 return -1;
                             }
-                            throw new C2324p3(A00(2, 54, 114), new EOFException(), 2000);
+                            throw new C2344p3(A00(2, 54, 114), new EOFException(), 2000);
                         }
                         if (this.A00 != -1) {
                             this.A00 -= read;
@@ -849,7 +849,7 @@ public final class AP implements InterfaceC2336pF {
                         A0F(read);
                         return read;
                     } catch (IOException e9) {
-                        throw new C2324p3(null, e9, 2000);
+                        throw new C2344p3(null, e9, 2000);
                     }
                 }
             };
@@ -858,13 +858,13 @@ public final class AP implements InterfaceC2336pF {
         return this.A04;
     }
 
-    private InterfaceC2336pF A05() {
+    private InterfaceC2356pF A05() {
         if (this.A05 == null) {
             try {
-                this.A05 = (InterfaceC2336pF) Class.forName(A07(157, 66, 67)).getConstructor(new Class[0]).newInstance(new Object[0]);
+                this.A05 = (InterfaceC2356pF) Class.forName(A07(157, 66, 67)).getConstructor(new Class[0]).newInstance(new Object[0]);
                 A09(this.A05);
             } catch (ClassNotFoundException unused) {
-                AbstractC06324g.A07(A07(85, 17, 17), A07(15, 70, 11));
+                AbstractC06524g.A07(A07(85, 17, 17), A07(15, 70, 11));
             } catch (Exception e9) {
                 throw new RuntimeException(A07(102, 34, 68), e9);
             }
@@ -875,9 +875,9 @@ public final class AP implements InterfaceC2336pF {
         return this.A05;
     }
 
-    private InterfaceC2336pF A06() {
+    private InterfaceC2356pF A06() {
         if (this.A06 == null) {
-            this.A06 = new C05591h();
+            this.A06 = new C05791h();
             A09(this.A06);
         }
         return this.A06;
@@ -887,38 +887,38 @@ public final class AP implements InterfaceC2336pF {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private void A09(InterfaceC2336pF interfaceC2336pF) {
+    private void A09(InterfaceC2356pF interfaceC2356pF) {
         for (int i = 0; i < i; i++) {
-            interfaceC2336pF.A43(this.A0A.get(i));
+            interfaceC2356pF.A43(this.A0A.get(i));
         }
     }
 
-    private void A0A(InterfaceC2336pF interfaceC2336pF, InterfaceC06715t interfaceC06715t) {
-        if (interfaceC2336pF != null) {
-            interfaceC2336pF.A43(interfaceC06715t);
+    private void A0A(InterfaceC2356pF interfaceC2356pF, InterfaceC06915t interfaceC06915t) {
+        if (interfaceC2356pF != null) {
+            interfaceC2356pF.A43(interfaceC06915t);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
-    public final void A43(InterfaceC06715t interfaceC06715t) {
-        AbstractC06243y.A01(interfaceC06715t);
-        this.A08.A43(interfaceC06715t);
-        this.A0A.add(interfaceC06715t);
-        A0A(this.A03, interfaceC06715t);
-        A0A(this.A00, interfaceC06715t);
-        A0A(this.A01, interfaceC06715t);
-        A0A(this.A05, interfaceC06715t);
-        A0A(this.A06, interfaceC06715t);
-        A0A(this.A02, interfaceC06715t);
-        A0A(this.A04, interfaceC06715t);
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
+    public final void A43(InterfaceC06915t interfaceC06915t) {
+        AbstractC06443y.A01(interfaceC06915t);
+        this.A08.A43(interfaceC06915t);
+        this.A0A.add(interfaceC06915t);
+        A0A(this.A03, interfaceC06915t);
+        A0A(this.A00, interfaceC06915t);
+        A0A(this.A01, interfaceC06915t);
+        A0A(this.A05, interfaceC06915t);
+        A0A(this.A06, interfaceC06915t);
+        A0A(this.A02, interfaceC06915t);
+        A0A(this.A04, interfaceC06915t);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
     public final Map<String, List<String>> A8t() {
         return this.A07 == null ? Collections.emptyMap() : this.A07.A8t();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
     public final Uri A9P() {
         if (this.A07 == null) {
             return null;
@@ -926,12 +926,12 @@ public final class AP implements InterfaceC2336pF {
         return this.A07.A9P();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
-    public final long AGi(C06605i c06605i) throws IOException {
-        AbstractC06243y.A08(this.A07 == null);
-        String scheme = c06605i.A06.getScheme();
-        if (C5C.A1A(c06605i.A06)) {
-            String path = c06605i.A06.getPath();
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
+    public final long AGi(C06805i c06805i) throws IOException {
+        AbstractC06443y.A08(this.A07 == null);
+        String scheme = c06805i.A06.getScheme();
+        if (C5C.A1A(c06805i.A06)) {
+            String path = c06805i.A06.getPath();
             if (path != null) {
                 String[] strArr = A0C;
                 String uriPath = strArr[4];
@@ -943,7 +943,7 @@ public final class AP implements InterfaceC2336pF {
                 strArr2[0] = "klzvMTRWbU3yZvxB9bRoGsioUmbI9kjx";
                 String scheme2 = A07(0, 15, 49);
                 if (path.startsWith(scheme2)) {
-                    InterfaceC2336pF A00 = A00();
+                    InterfaceC2356pF A00 = A00();
                     String[] strArr3 = A0C;
                     String uriPath2 = strArr3[4];
                     if (uriPath2.charAt(27) != strArr3[0].charAt(27)) {
@@ -995,10 +995,10 @@ public final class AP implements InterfaceC2336pF {
                 }
             }
         }
-        return this.A07.AGi(c06605i);
+        return this.A07.AGi(c06805i);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC2336pF
+    @Override // com.instagram.common.viewpoint.core.InterfaceC2356pF
     public final void close() throws IOException {
         if (this.A07 != null) {
             try {
@@ -1009,8 +1009,8 @@ public final class AP implements InterfaceC2336pF {
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC05802c
-    public final int read(byte[] bArr, int i, int i6) throws IOException {
-        return ((InterfaceC2336pF) AbstractC06243y.A01(this.A07)).read(bArr, i, i6);
+    @Override // com.instagram.common.viewpoint.core.InterfaceC06002c
+    public final int read(byte[] bArr, int i, int i4) throws IOException {
+        return ((InterfaceC2356pF) AbstractC06443y.A01(this.A07)).read(bArr, i, i4);
     }
 }

@@ -1,43 +1,31 @@
 package W1;
 
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Rect;
+
 /* loaded from: classes.dex */
-public final class a {
+public abstract class a extends b {
 
-    /* renamed from: a, reason: collision with root package name */
-    public final k4.e f3403a;
+    /* renamed from: X, reason: collision with root package name */
+    public final /* synthetic */ int f3533X;
 
-    /* renamed from: b, reason: collision with root package name */
-    public final b f3404b;
-
-    public a(k4.e eVar, b bVar) {
-        this.f3403a = eVar;
-        this.f3404b = bVar;
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
+    @Override // W1.b
+    public final void h(Canvas canvas, Paint paint) {
+        switch (this.f3533X) {
+            case 0:
+                if (this.f3556I != null) {
+                    canvas.drawCircle(this.f3556I.centerX(), this.f3556I.centerY(), Math.min(r0.width(), this.f3556I.height()) / 2, paint);
+                    break;
+                }
+                break;
+            default:
+                Rect rect = this.f3556I;
+                if (rect != null) {
+                    canvas.drawRect(rect, paint);
+                    break;
+                }
+                break;
         }
-        if (!(obj instanceof a)) {
-            return false;
-        }
-        a aVar = (a) obj;
-        aVar.getClass();
-        if (!this.f3403a.equals(aVar.f3403a)) {
-            return false;
-        }
-        Object obj2 = d.f3407n;
-        if (obj2.equals(obj2)) {
-            return this.f3404b.equals(aVar.f3404b);
-        }
-        return false;
-    }
-
-    public final int hashCode() {
-        return this.f3404b.hashCode() ^ (((((1000003 * 1000003) ^ this.f3403a.hashCode()) * 1000003) ^ d.f3407n.hashCode()) * 1000003);
-    }
-
-    public final String toString() {
-        return "Event{code=null, payload=" + this.f3403a + ", priority=" + d.f3407n + ", productData=" + this.f3404b + "}";
     }
 }

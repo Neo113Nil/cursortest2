@@ -10,19 +10,19 @@ import com.anythink.basead.ui.a.a.f;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final int f10402a = 1;
+    public static final int f11188a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final int f10403b = 2;
+    public static final int f11189b = 2;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final int f10404c = 3;
+    public static final int f11190c = 3;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final int f10405d = 4;
+    public static final int f11191d = 4;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final int f10406e = 5;
+    public static final int f11192e = 5;
 
     private static b a(int i, View view) {
         return i != 2 ? i != 3 ? i != 4 ? i != 5 ? new e(view) : new com.anythink.basead.ui.a.a.b(view) : new c(view) : new d(view) : new f(view);

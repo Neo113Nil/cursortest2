@@ -31,7 +31,7 @@ public final class AnonymousClass19<K, V> extends C2L<K, V>.SortedAsMap implemen
         Collection<V> A0D = this.A00.A0D();
         A0D.addAll(next.getValue());
         entryIterator.remove();
-        return AbstractC2370po.A01(next.getKey(), this.A00.A0G(A0D));
+        return AbstractC2390po.A01(next.getKey(), this.A00.A0G(A0D));
     }
 
     /* JADX WARN: Failed to parse debug info

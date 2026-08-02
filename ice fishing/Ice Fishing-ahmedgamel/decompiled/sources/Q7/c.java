@@ -6,19 +6,19 @@ import java.util.Iterator;
 public final class c implements P7.h {
 
     /* renamed from: a, reason: collision with root package name */
-    public final CharSequence f2671a;
+    public final CharSequence f2708a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f2672b;
+    public final int f2709b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final I7.p f2673c;
+    public final I7.p f2710c;
 
     public c(CharSequence input, int i, I7.p pVar) {
         kotlin.jvm.internal.h.e(input, "input");
-        this.f2671a = input;
-        this.f2672b = i;
-        this.f2673c = pVar;
+        this.f2708a = input;
+        this.f2709b = i;
+        this.f2710c = pVar;
     }
 
     @Override // P7.h

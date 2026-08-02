@@ -9,7 +9,7 @@ public final class JW {
     public int A01;
     public boolean A02;
     public final JX A04 = new JX();
-    public final C06474v A03 = new C06474v(new byte[65025], 0);
+    public final C06674v A03 = new C06674v(new byte[65025], 0);
     public int A00 = -1;
 
     /* JADX WARN: Incorrect condition in loop: B:3:0x000b */
@@ -18,22 +18,22 @@ public final class JW {
     */
     private int A00(int i) {
         this.A01 = 0;
-        int i6 = 0;
+        int i4 = 0;
         while (r1 < size) {
             int[] iArr = this.A04.A09;
-            int i9 = this.A01;
-            int size = i9 + 1;
+            int i6 = this.A01;
+            int size = i6 + 1;
             this.A01 = size;
-            int segmentLength = iArr[i9 + i];
-            i6 += segmentLength;
+            int segmentLength = iArr[i6 + i];
+            i4 += segmentLength;
             if (segmentLength != 255) {
                 break;
             }
         }
-        return i6;
+        return i4;
     }
 
-    public final C06474v A01() {
+    public final C06674v A01() {
         return this.A03;
     }
 
@@ -55,8 +55,8 @@ public final class JW {
         this.A03.A0j(Arrays.copyOf(this.A03.A0l(), Math.max(65025, this.A03.A0A())), this.A03.A0A());
     }
 
-    public final boolean A05(InterfaceC2191ms interfaceC2191ms) throws IOException {
-        AbstractC06243y.A08(interfaceC2191ms != null);
+    public final boolean A05(InterfaceC2211ms interfaceC2211ms) throws IOException {
+        AbstractC06443y.A08(interfaceC2211ms != null);
         if (this.A02) {
             this.A02 = false;
             this.A03.A0d(0);
@@ -68,11 +68,11 @@ public final class JW {
                 strArr[4] = "11LtUWwuTljX7vpVMDmw91gP9qyXcF1F";
                 strArr[5] = "domIksdZFoGV1iSe2ioqlJ00HNTdFQYJ";
                 if (i < 0) {
-                    if (!this.A04.A03(interfaceC2191ms) || !this.A04.A05(interfaceC2191ms, true)) {
+                    if (!this.A04.A03(interfaceC2211ms) || !this.A04.A05(interfaceC2211ms, true)) {
                         return false;
                     }
                     int bytesToSkip = 0;
-                    int i6 = this.A04.A01;
+                    int i4 = this.A04.A01;
                     if ((this.A04.A04 & 1) == 1) {
                         int A0A = this.A03.A0A();
                         String[] strArr2 = A05;
@@ -83,11 +83,11 @@ public final class JW {
                         strArr3[6] = "Y9zvOFuJw9CJ8t2sOsvBkpDySrHa8OsK";
                         strArr3[0] = "XKYFbcbdBuLAcpGhFvzSCFSZpxBENLjQ";
                         if (A0A == 0) {
-                            i6 += A00(0);
+                            i4 += A00(0);
                             bytesToSkip = 0 + this.A01;
                         }
                     }
-                    if (!HB.A02(interfaceC2191ms, i6)) {
+                    if (!HB.A02(interfaceC2211ms, i4)) {
                         return false;
                     }
                     this.A00 = bytesToSkip;
@@ -101,16 +101,16 @@ public final class JW {
                     int segmentIndex = bytesToSkip3 + this.A01;
                     if (A00 > 0) {
                         this.A03.A0c(this.A03.A0A() + A00);
-                        if (!HB.A03(interfaceC2191ms, this.A03.A0l(), this.A03.A0A(), A00)) {
+                        if (!HB.A03(interfaceC2211ms, this.A03.A0l(), this.A03.A0A(), A00)) {
                             return false;
                         }
                         this.A03.A0e(this.A03.A0A() + A00);
-                        int i9 = this.A04.A09[segmentIndex - 1];
+                        int i6 = this.A04.A09[segmentIndex - 1];
                         if (A05[2].length() == 22) {
                             String[] strArr5 = A05;
                             strArr5[7] = "zAFVDFtFmf";
                             strArr5[3] = "FIDx8";
-                            this.A02 = i9 != 255;
+                            this.A02 = i6 != 255;
                         }
                     }
                     if (segmentIndex == this.A04.A02) {

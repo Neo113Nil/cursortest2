@@ -4,5 +4,5 @@ package K0;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final b f1487a = new b();
+    public static final b f1596a = new b();
 }

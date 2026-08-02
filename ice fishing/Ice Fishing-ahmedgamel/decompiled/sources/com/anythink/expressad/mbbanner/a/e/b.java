@@ -18,7 +18,7 @@ import org.json.JSONObject;
 public class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f19974a = "b";
+    private static final String f20761a = "b";
 
     public static void a() {
     }
@@ -35,7 +35,7 @@ public class b {
                 JSONObject jSONObject = new JSONObject();
                 com.anythink.expressad.foundation.g.e.a aVar = list.get(i);
                 jSONObject.put("cid", aVar.a());
-                jSONObject.put(com.anythink.expressad.foundation.g.g.a.b.f19443m, aVar.c());
+                jSONObject.put(com.anythink.expressad.foundation.g.g.a.b.f20230m, aVar.c());
                 jSONArray.put(jSONObject);
             }
             return jSONArray.toString();
@@ -138,8 +138,8 @@ public class b {
             JSONObject a10 = d.a(dVar);
             JSONObject jSONObject = new JSONObject(str);
             try {
-                if (!jSONObject.has(d.f18572U)) {
-                    a10.put(d.f18572U, "");
+                if (!jSONObject.has(d.f19359U)) {
+                    a10.put(d.f19359U, "");
                 }
             } catch (Exception unused2) {
             }

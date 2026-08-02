@@ -19,29 +19,29 @@ public class ATSplashNativeView extends BaseATSplashNativeView {
 
     @Override // com.anythink.expressad.splash.view.BaseATSplashNativeView
     public final void a() {
-        if (this.f20791p.aO() == null || this.f20784h != 0) {
-            this.f20778b.setVisibility(8);
+        if (this.f21578p.aO() == null || this.f21571h != 0) {
+            this.f21565b.setVisibility(8);
         } else {
-            com.anythink.expressad.foundation.d.b aO = this.f20791p.aO();
+            com.anythink.expressad.foundation.d.b aO = this.f21578p.aO();
             StringBuilder sb = new StringBuilder();
-            sb.append(getContext().getString(k.a(getContext(), "anythink_cm_app_info_app_name", k.f19636g)));
+            sb.append(getContext().getString(k.a(getContext(), "anythink_cm_app_info_app_name", k.f20423g)));
             sb.append(aO.b());
             sb.append("\n");
-            sb.append(getContext().getString(k.a(getContext(), "anythink_cm_app_info_version", k.f19636g)));
+            sb.append(getContext().getString(k.a(getContext(), "anythink_cm_app_info_version", k.f20423g)));
             sb.append(aO.e());
             sb.append("\n");
-            sb.append(getContext().getString(k.a(getContext(), "anythink_cm_app_info_publish", k.f19636g)));
+            sb.append(getContext().getString(k.a(getContext(), "anythink_cm_app_info_publish", k.f20423g)));
             sb.append(aO.f());
             sb.append("\n");
-            sb.append(getContext().getString(k.a(getContext(), "anythink_cm_app_info_update_time", k.f19636g)));
+            sb.append(getContext().getString(k.a(getContext(), "anythink_cm_app_info_update_time", k.f20423g)));
             sb.append(aO.d());
-            this.f20779c.setText(sb);
+            this.f21566c.setText(sb);
         }
-        this.f20780d.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashNativeView.1
+        this.f21567d.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashNativeView.1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                if (ATSplashNativeView.this.f20791p.aO() != null) {
-                    String c9 = ATSplashNativeView.this.f20791p.aO().c();
+                if (ATSplashNativeView.this.f21578p.aO() != null) {
+                    String c9 = ATSplashNativeView.this.f21578p.aO().c();
                     if (TextUtils.isEmpty(c9)) {
                         return;
                     }
@@ -52,30 +52,30 @@ public class ATSplashNativeView extends BaseATSplashNativeView {
         View.OnClickListener onClickListener = new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashNativeView.2
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                com.anythink.expressad.foundation.d.b aO2 = ATSplashNativeView.this.f20791p.aO();
+                com.anythink.expressad.foundation.d.b aO2 = ATSplashNativeView.this.f21578p.aO();
                 if (aO2 != null) {
                     y.a(t.b().g(), aO2.a());
                 }
             }
         };
-        TextView textView = this.f20781e;
+        TextView textView = this.f21568e;
         if (textView != null) {
             textView.setOnClickListener(onClickListener);
         }
-        TextView textView2 = this.f20782f;
+        TextView textView2 = this.f21569f;
         if (textView2 != null) {
             textView2.setOnClickListener(onClickListener);
         }
-        this.f20777a.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashNativeView.3
+        this.f21564a.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashNativeView.3
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 ATSplashNativeView aTSplashNativeView = ATSplashNativeView.this;
-                if (aTSplashNativeView.f20787l) {
-                    if (aTSplashNativeView.f20790o.getSplashJSBridgeImpl() != null && ATSplashNativeView.this.f20790o.getSplashJSBridgeImpl().getSplashBridgeListener() != null) {
-                        ATSplashNativeView.this.f20790o.getSplashJSBridgeImpl().getSplashBridgeListener().c();
+                if (aTSplashNativeView.f21574l) {
+                    if (aTSplashNativeView.f21577o.getSplashJSBridgeImpl() != null && ATSplashNativeView.this.f21577o.getSplashJSBridgeImpl().getSplashBridgeListener() != null) {
+                        ATSplashNativeView.this.f21577o.getSplashJSBridgeImpl().getSplashBridgeListener().c();
                     }
-                    ATSplashNativeView.this.f20777a.setVisibility(4);
-                    ATSplashNativeView.this.f20777a.setEnabled(false);
+                    ATSplashNativeView.this.f21564a.setVisibility(4);
+                    ATSplashNativeView.this.f21564a.setEnabled(false);
                 }
             }
         });
@@ -85,25 +85,25 @@ public class ATSplashNativeView extends BaseATSplashNativeView {
     public final void b() {
         if (this.i == 1) {
             MBShakeView mBShakeView = new MBShakeView(getContext());
-            this.f20792q = mBShakeView;
-            mBShakeView.initView(this.f20791p.dj);
+            this.f21579q = mBShakeView;
+            mBShakeView.initView(this.f21578p.dj);
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-2, -2);
             layoutParams.addRule(13);
-            this.f20792q.setLayoutParams(layoutParams);
-            addView(this.f20792q);
-            this.f20783g.setVisibility(4);
-            this.f20783g.setEnabled(false);
-            this.f20792q.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashNativeView.4
+            this.f21579q.setLayoutParams(layoutParams);
+            addView(this.f21579q);
+            this.f21570g.setVisibility(4);
+            this.f21570g.setEnabled(false);
+            this.f21579q.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.splash.view.ATSplashNativeView.4
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     ATSplashNativeView.this.a(0);
                 }
             });
-            this.f20793r = new com.anythink.core.express.c.b(this.f20785j, this.f20786k * 1000) { // from class: com.anythink.expressad.splash.view.ATSplashNativeView.5
+            this.f21580r = new com.anythink.core.express.c.b(this.f21572j, this.f21573k * 1000) { // from class: com.anythink.expressad.splash.view.ATSplashNativeView.5
                 @Override // com.anythink.core.express.c.b
                 public final void a() {
                     ATSplashNativeView aTSplashNativeView = ATSplashNativeView.this;
-                    if (aTSplashNativeView.f20789n || aTSplashNativeView.f20788m || !aTSplashNativeView.isShown()) {
+                    if (aTSplashNativeView.f21576n || aTSplashNativeView.f21575m || !aTSplashNativeView.isShown()) {
                         return;
                     }
                     ATSplashNativeView.this.a(4);

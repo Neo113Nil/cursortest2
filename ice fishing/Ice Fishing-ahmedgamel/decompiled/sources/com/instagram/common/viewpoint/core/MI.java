@@ -9,17 +9,17 @@ import com.anythink.expressad.video.module.a.a;
 import java.util.Arrays;
 
 /* loaded from: assets/audience_network/classes2.dex */
-public final class MI implements InterfaceC1382Yi {
+public final class MI implements InterfaceC1402Yi {
     public static byte[] A0D;
     public int A00;
-    public C0887Eu A01;
+    public C0907Eu A01;
     public C4L A02;
     public String A03;
-    public final C1840gi A04;
+    public final C1860gi A04;
     public final VA A05;
-    public final InterfaceC1381Yh A06;
+    public final InterfaceC1401Yh A06;
     public final ZP A07;
-    public final C0877Ek A08;
+    public final C0897Ek A08;
     public final E2 A0C = new E2() { // from class: com.facebook.ads.redexgen.X.6d
         public static byte[] A01;
 
@@ -27,25 +27,25 @@ public final class MI implements InterfaceC1382Yi {
             A01();
         }
 
-        public static String A00(int i, int i6, int i9) {
-            byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-            for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-                copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 58);
+        public static String A00(int i, int i4, int i6) {
+            byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+            for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+                copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 58);
             }
             return new String(copyOfRange);
         }
 
         public static void A01() {
-            A01 = new byte[]{115, 108, 97, 96, 106, 76, 107, 113, 96, 119, 118, 113, 108, 113, 100, 105, c.f16317b, 115, 96, 107, 113};
+            A01 = new byte[]{115, 108, 97, 96, 106, 76, 107, 113, 96, 119, 118, 113, 108, 113, 100, 105, c.f17104b, 115, 96, 107, 113};
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         @Override // com.instagram.common.viewpoint.core.UN
         /* renamed from: A02, reason: merged with bridge method [inline-methods] */
         public final void A03(E3 e32) {
-            InterfaceC1381Yh interfaceC1381Yh;
-            interfaceC1381Yh = MI.this.A06;
-            interfaceC1381Yh.A4k(A00(0, 21, 63), e32);
+            InterfaceC1401Yh interfaceC1401Yh;
+            interfaceC1401Yh = MI.this.A06;
+            interfaceC1401Yh.A4k(A00(0, 21, 63), e32);
         }
     };
     public final E4 A0B = new E4() { // from class: com.facebook.ads.redexgen.X.6a
@@ -55,40 +55,40 @@ public final class MI implements InterfaceC1382Yi {
             A01();
         }
 
-        public static String A00(int i, int i6, int i9) {
-            byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-            for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-                copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 120);
+        public static String A00(int i, int i4, int i6) {
+            byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+            for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+                copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 120);
             }
             return new String(copyOfRange);
         }
 
         public static void A01() {
-            A01 = new byte[]{38, 57, 52, 53, c.f16318c, 25, 62, 36, 53, 34, 35, 36, 57, 36, 49, 60, 21, 38, 53, 62, 36};
+            A01 = new byte[]{38, 57, 52, 53, c.f17105c, 25, 62, 36, 53, 34, 35, 36, 57, 36, 49, 60, 21, 38, 53, 62, 36};
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         @Override // com.instagram.common.viewpoint.core.UN
         /* renamed from: A02, reason: merged with bridge method [inline-methods] */
         public final void A03(C4B c4b) {
-            InterfaceC1381Yh interfaceC1381Yh;
-            interfaceC1381Yh = MI.this.A06;
-            interfaceC1381Yh.A4k(A00(0, 21, 40), c4b);
+            InterfaceC1401Yh interfaceC1401Yh;
+            interfaceC1401Yh = MI.this.A06;
+            interfaceC1401Yh.A4k(A00(0, 21, 40), c4b);
         }
     };
     public final EA A09 = new EA() { // from class: com.facebook.ads.redexgen.X.6Z
         public static byte[] A01;
         public static String[] A02 = {"cVYzzU3WDwilAiB6lBwH", "ltb11yKnDLf", "qD1l7ddw57WScFbFlpW6gLQQ4LJZYMm4", "7tmDLtuP1dSUokfmYRKMMhnjp75BOUEQ", "O1T", "OUAaXGhWo5xW6BfvCbr", "NPW6PnCzVK8iTd9b27h5", "ykk8Miz3Z2gvnB5Rb4Sxgn912BIo"};
 
-        public static String A00(int i, int i6, int i9) {
-            byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i6);
-            for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-                int i11 = copyOfRange[i10] ^ i9;
+        public static String A00(int i, int i4, int i6) {
+            byte[] copyOfRange = Arrays.copyOfRange(A01, i, i + i4);
+            for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+                int i10 = copyOfRange[i9] ^ i6;
                 if (A02[2].charAt(8) != '5') {
                     throw new RuntimeException();
                 }
                 A02[5] = "7KI0j9KfVtSFY3dF";
-                copyOfRange[i10] = (byte) (i11 ^ 70);
+                copyOfRange[i9] = (byte) (i10 ^ 70);
             }
             return new String(copyOfRange);
         }
@@ -105,9 +105,9 @@ public final class MI implements InterfaceC1382Yi {
         @Override // com.instagram.common.viewpoint.core.UN
         /* renamed from: A02, reason: merged with bridge method [inline-methods] */
         public final void A03(C4K c4k) {
-            InterfaceC1381Yh interfaceC1381Yh;
-            interfaceC1381Yh = MI.this.A06;
-            interfaceC1381Yh.A4k(A00(0, 21, 51), c4k);
+            InterfaceC1401Yh interfaceC1401Yh;
+            interfaceC1401Yh = MI.this.A06;
+            interfaceC1401Yh.A4k(A00(0, 21, 51), c4k);
         }
     };
     public final E8 A0A = new E8() { // from class: com.facebook.ads.redexgen.X.6Y
@@ -125,35 +125,35 @@ public final class MI implements InterfaceC1382Yi {
         A03();
     }
 
-    public static String A02(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0D, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 102);
+    public static String A02(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0D, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 102);
         }
         return new String(copyOfRange);
     }
 
     public static void A03() {
-        A0D = new byte[]{44, 56, 57, 34, 61, 33, 44, 52, 122, 117, 112, 124, 119, 109, 77, 118, 114, 124, 119, 20, 18, 4, 47, 0, 21, 8, 23, 4, 34, 21, 0, 35, 20, 21, 21, 14, 15, 55, 40, 37, 36, 46, 8, 47, 53, 36, 51, 50, 53, 40, 53, 32, 45, 4, 55, 36, 47, 53, 81, 78, 67, 66, 72, 107, 72, c.f16317b, c.f16317b, 66, 85, 116, 107, 102, 103, 109, 79, 82, 70, 103, 120, 117, 116, 126, 66, 116, 116, 122, 69, 120, 124, 116, c.f16318c, 32, 45, 44, 38, 28, 27, 5};
+        A0D = new byte[]{44, 56, 57, 34, 61, 33, 44, 52, 122, 117, 112, 124, 119, 109, 77, 118, 114, 124, 119, 20, 18, 4, 47, 0, 21, 8, 23, 4, 34, 21, 0, 35, 20, 21, 21, 14, 15, 55, 40, 37, 36, 46, 8, 47, 53, 36, 51, 50, 53, 40, 53, 32, 45, 4, 55, 36, 47, 53, 81, 78, 67, 66, 72, 107, 72, c.f17104b, c.f17104b, 66, 85, 116, 107, 102, 103, 109, 79, 82, 70, 103, 120, 117, 116, 126, 66, 116, 116, 122, 69, 120, 124, 116, c.f17105c, 32, 45, 44, 38, 28, 27, 5};
     }
 
-    public MI(C1840gi c1840gi, ZP zp, VA va, InterfaceC1381Yh interfaceC1381Yh) {
-        this.A04 = c1840gi;
+    public MI(C1860gi c1860gi, ZP zp, VA va, InterfaceC1401Yh interfaceC1401Yh) {
+        this.A04 = c1860gi;
         this.A05 = va;
         this.A07 = zp;
-        this.A08 = new C0877Ek(c1840gi);
-        this.A08.A0f(new C06163q(c1840gi));
+        this.A08 = new C0897Ek(c1860gi);
+        this.A08.A0f(new C06363q(c1860gi));
         this.A08.getEventBus().A03(this.A0C, this.A0B, this.A09, this.A0A);
-        this.A06 = interfaceC1381Yh;
+        this.A06 = interfaceC1401Yh;
         this.A08.setIsFullScreen(true);
         this.A08.setVolume(1.0f);
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -2);
         layoutParams.addRule(15);
-        interfaceC1381Yh.A45(this.A08, layoutParams);
-        C1389Yp closeButton = new C1389Yp(c1840gi);
+        interfaceC1401Yh.A45(this.A08, layoutParams);
+        C1409Yp closeButton = new C1409Yp(c1860gi);
         closeButton.setOnClickListener(new ZN(this));
         RelativeLayout.LayoutParams params = closeButton.getDefaultLayoutParams();
-        interfaceC1381Yh.A45(closeButton, params);
+        interfaceC1401Yh.A45(closeButton, params);
     }
 
     public final void A04(int i) {
@@ -164,9 +164,9 @@ public final class MI implements InterfaceC1382Yi {
         this.A08.setControlsAnchorView(view);
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1382Yi
-    public final void AAu(Intent intent, Bundle bundle, C1202Re c1202Re) {
-        String ctaText = A02(8, 11, a.f21728R);
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1402Yi
+    public final void AAu(Intent intent, Bundle bundle, C1222Re c1222Re) {
+        String ctaText = A02(8, 11, a.f22515R);
         if (bundle == null) {
             this.A03 = intent.getStringExtra(ctaText);
         } else {
@@ -174,19 +174,19 @@ public final class MI implements InterfaceC1382Yi {
         }
         String stringExtra = intent.getStringExtra(A02(19, 18, 7));
         if (stringExtra != null && !stringExtra.isEmpty()) {
-            C1676e3 c1676e3 = new C1676e3(this.A04, stringExtra);
+            C1696e3 c1696e3 = new C1696e3(this.A04, stringExtra);
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-2, -2);
             int i = (int) (16.0f * XX.A02);
             layoutParams.setMargins(i, i, i, i);
             layoutParams.addRule(10);
             layoutParams.addRule(9);
-            c1676e3.setOnClickListener(new ZO(this));
-            this.A06.A45(c1676e3, layoutParams);
+            c1696e3.setOnClickListener(new ZO(this));
+            this.A06.A45(c1696e3, layoutParams);
         }
         this.A00 = intent.getIntExtra(A02(77, 13, 119), 0);
         this.A02 = new C4L(this.A04, this.A05, this.A08, this.A03, intent.getBundleExtra(A02(58, 11, 65)), null);
-        if (C1290Up.A20(this.A04)) {
-            this.A01 = new C0887Eu(this.A04, this.A05, this.A08, this.A03, false, this.A02, null);
+        if (C1310Up.A20(this.A04)) {
+            this.A01 = new C0907Eu(this.A04, this.A05, this.A08, this.A03, false, this.A02, null);
         } else {
             this.A01 = null;
         }
@@ -196,41 +196,41 @@ public final class MI implements InterfaceC1382Yi {
             this.A08.A0a(this.A00);
         }
         if (intent.getBooleanExtra(A02(0, 8, 43), false)) {
-            this.A08.A0e(EnumC1727et.A04, 17);
+            this.A08.A0e(EnumC1747et.A04, 17);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1382Yi
-    public final void AFA(boolean z3) {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1402Yi
+    public final void AFA(boolean z6) {
         this.A06.A4k(A02(37, 21, 39), new E6());
         this.A08.A0X();
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1382Yi
-    public final void AFi(boolean z3) {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1402Yi
+    public final void AFi(boolean z6) {
         this.A06.A4k(A02(37, 21, 39), new E5());
         if (!this.A08.A0o()) {
-            this.A08.A0e(EnumC1727et.A04, 18);
+            this.A08.A0e(EnumC1747et.A04, 18);
         }
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1382Yi
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1402Yi
     public final void AIv(Bundle bundle) {
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1382Yi
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1402Yi
     public final String getCurrentClientToken() {
         return this.A03;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1382Yi
-    public final boolean onActivityResult(int i, int i6, Intent intent) {
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1402Yi
+    public final boolean onActivityResult(int i, int i4, Intent intent) {
         return false;
     }
 
-    @Override // com.instagram.common.viewpoint.core.InterfaceC1382Yi
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1402Yi
     public final void onDestroy() {
-        this.A06.A4k(A02(37, 21, 39), new C0865Dy(this.A00, this.A08.getCurrentPositionInMillis()));
+        this.A06.A4k(A02(37, 21, 39), new C0885Dy(this.A00, this.A08.getCurrentPositionInMillis()));
         this.A02.A0j(this.A08.getCurrentPositionInMillis());
         if (this.A01 != null) {
             this.A01.A08();

@@ -1,78 +1,215 @@
 package V2;
 
+import R2.w;
+import android.app.Application;
 import android.content.Context;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageInfo;
-import android.os.Binder;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Process;
-import androidx.emoji2.text.i;
-import androidx.emoji2.text.k;
-import java.util.concurrent.LinkedBlockingDeque;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
-import t8.g;
-import y1.C5219n;
-import y1.InterfaceC5223r;
-import y1.InterfaceC5224s;
-import y1.x;
+import android.os.StrictMode;
+import android.util.Log;
+import java.io.BufferedReader;
+import java.io.Closeable;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 
 /* loaded from: classes.dex */
-public final class b implements i, InterfaceC5224s {
+public abstract class b {
 
-    /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f3272n;
+    /* renamed from: a, reason: collision with root package name */
+    public static final char[] f3394a = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
-    /* renamed from: u, reason: collision with root package name */
-    public final Context f3273u;
+    /* renamed from: b, reason: collision with root package name */
+    public static final char[] f3395b = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
 
-    public /* synthetic */ b(Context context, int i) {
-        this.f3272n = i;
-        this.f3273u = context;
-    }
+    /* renamed from: c, reason: collision with root package name */
+    public static Boolean f3396c;
 
-    @Override // androidx.emoji2.text.i
-    public void a(g gVar) {
-        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(0, 1, 15L, TimeUnit.SECONDS, new LinkedBlockingDeque(), new androidx.emoji2.text.a("EmojiCompatInitializer"));
-        threadPoolExecutor.allowCoreThreadTimeOut(true);
-        threadPoolExecutor.execute(new k(0, this, gVar, threadPoolExecutor));
-    }
+    /* renamed from: d, reason: collision with root package name */
+    public static Boolean f3397d;
 
-    public ApplicationInfo b(int i, String str) {
-        return this.f3273u.getPackageManager().getApplicationInfo(str, i);
-    }
+    /* renamed from: e, reason: collision with root package name */
+    public static Boolean f3398e;
 
-    public PackageInfo c(int i, String str) {
-        return this.f3273u.getPackageManager().getPackageInfo(str, i);
-    }
+    /* renamed from: f, reason: collision with root package name */
+    public static Boolean f3399f;
 
-    public boolean d() {
-        String nameForUid;
-        boolean isInstantApp;
-        int callingUid = Binder.getCallingUid();
-        int myUid = Process.myUid();
-        Context context = this.f3273u;
-        if (callingUid == myUid) {
-            return a.q(context);
-        }
-        if (!T2.b.f() || (nameForUid = context.getPackageManager().getNameForUid(Binder.getCallingUid())) == null) {
-            return false;
-        }
-        isInstantApp = context.getPackageManager().isInstantApp(nameForUid);
-        return isInstantApp;
-    }
+    /* renamed from: g, reason: collision with root package name */
+    public static Boolean f3400g;
 
-    @Override // y1.InterfaceC5224s
-    public InterfaceC5223r i(x xVar) {
-        switch (this.f3272n) {
-            case 2:
-                return new C5219n(this.f3273u, 0);
-            default:
-                return new C5219n(this.f3273u, 1);
+    /* renamed from: h, reason: collision with root package name */
+    public static Boolean f3401h;
+    public static String i;
+
+    /* renamed from: j, reason: collision with root package name */
+    public static int f3402j;
+
+    /* renamed from: k, reason: collision with root package name */
+    public static Boolean f3403k;
+
+    public static void a(Context context, Throwable th) {
+        try {
+            w.h(context);
+        } catch (Exception e9) {
+            Log.e("CrashUtils", "Error adding exception to DropBox!", e9);
         }
     }
 
-    public b(Context context) {
-        this.f3272n = 1;
-        this.f3273u = context.getApplicationContext();
+    public static String b(byte[] bArr) {
+        int length = bArr.length;
+        char[] cArr = new char[length + length];
+        int i4 = 0;
+        for (byte b9 : bArr) {
+            char[] cArr2 = f3395b;
+            cArr[i4] = cArr2[(b9 & 255) >>> 4];
+            cArr[i4 + 1] = cArr2[b9 & 15];
+            i4 += 2;
+        }
+        return new String(cArr);
+    }
+
+    public static void c(Closeable closeable) {
+        if (closeable != null) {
+            try {
+                closeable.close();
+            } catch (IOException unused) {
+            }
+        }
+    }
+
+    public static long d(InputStream inputStream, OutputStream outputStream, boolean z6) {
+        byte[] bArr = new byte[1024];
+        long j6 = 0;
+        while (true) {
+            try {
+                int read = inputStream.read(bArr, 0, 1024);
+                if (read == -1) {
+                    break;
+                }
+                j6 += read;
+                outputStream.write(bArr, 0, read);
+            } catch (Throwable th) {
+                if (z6) {
+                    c(inputStream);
+                    c(outputStream);
+                }
+                throw th;
+            }
+        }
+        if (z6) {
+            c(inputStream);
+            c(outputStream);
+        }
+        return j6;
+    }
+
+    public static String e() {
+        BufferedReader bufferedReader;
+        String processName;
+        if (i == null) {
+            if (Build.VERSION.SDK_INT >= 28) {
+                processName = Application.getProcessName();
+                i = processName;
+            } else {
+                int i4 = f3402j;
+                if (i4 == 0) {
+                    i4 = Process.myPid();
+                    f3402j = i4;
+                }
+                String str = null;
+                str = null;
+                str = null;
+                BufferedReader bufferedReader2 = null;
+                if (i4 > 0) {
+                    try {
+                        StringBuilder sb = new StringBuilder(String.valueOf(i4).length() + 14);
+                        sb.append("/proc/");
+                        sb.append(i4);
+                        sb.append("/cmdline");
+                        String sb2 = sb.toString();
+                        StrictMode.ThreadPolicy allowThreadDiskReads = StrictMode.allowThreadDiskReads();
+                        try {
+                            bufferedReader = new BufferedReader(new FileReader(sb2));
+                        } finally {
+                            StrictMode.setThreadPolicy(allowThreadDiskReads);
+                        }
+                    } catch (IOException unused) {
+                        bufferedReader = null;
+                    } catch (Throwable th) {
+                        th = th;
+                    }
+                    try {
+                        String readLine = bufferedReader.readLine();
+                        w.h(readLine);
+                        str = readLine.trim();
+                    } catch (IOException unused2) {
+                    } catch (Throwable th2) {
+                        th = th2;
+                        bufferedReader2 = bufferedReader;
+                        c(bufferedReader2);
+                        throw th;
+                    }
+                    c(bufferedReader);
+                }
+                i = str;
+            }
+        }
+        return i;
+    }
+
+    public static boolean f() {
+        return Build.VERSION.SDK_INT >= 26;
+    }
+
+    public static boolean g() {
+        return Build.VERSION.SDK_INT >= 30;
+    }
+
+    public static boolean h(Context context) {
+        if (f3398e == null) {
+            PackageManager packageManager = context.getPackageManager();
+            boolean z6 = false;
+            if (packageManager.hasSystemFeature("com.google.android.feature.services_updater") && packageManager.hasSystemFeature("cn.google.services")) {
+                z6 = true;
+            }
+            f3398e = Boolean.valueOf(z6);
+        }
+        return f3398e.booleanValue();
+    }
+
+    public static boolean i(Context context) {
+        PackageManager packageManager = context.getPackageManager();
+        if (f3396c == null) {
+            f3396c = Boolean.valueOf(packageManager.hasSystemFeature("android.hardware.type.watch"));
+        }
+        f3396c.booleanValue();
+        if (k(context)) {
+            return !f() || g();
+        }
+        return false;
+    }
+
+    public static byte[] j(String str) {
+        int length = str.length();
+        if (length % 2 != 0) {
+            throw new IllegalArgumentException("Hex string has odd number of characters");
+        }
+        byte[] bArr = new byte[length / 2];
+        int i4 = 0;
+        while (i4 < length) {
+            int i6 = i4 + 2;
+            bArr[i4 / 2] = (byte) Integer.parseInt(str.substring(i4, i6), 16);
+            i4 = i6;
+        }
+        return bArr;
+    }
+
+    public static boolean k(Context context) {
+        if (f3397d == null) {
+            f3397d = Boolean.valueOf(context.getPackageManager().hasSystemFeature("cn.google"));
+        }
+        return f3397d.booleanValue();
     }
 }

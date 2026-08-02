@@ -1,181 +1,207 @@
 package X1;
 
-import android.graphics.Bitmap;
-import android.os.Bundle;
-import android.os.Parcel;
-import android.os.Parcelable;
-import android.text.Spanned;
-import com.google.android.gms.internal.ads.AbstractC2772Sd;
-import com.google.android.gms.internal.ads.AbstractC2989bk;
-import com.google.android.gms.internal.ads.C2609Ik;
-import com.google.android.gms.internal.ads.C2745Qk;
-import com.google.android.gms.internal.ads.C3149ek;
-import com.google.android.gms.internal.ads.C3653o3;
-import com.google.android.gms.internal.ads.C3741pk;
-import com.google.android.gms.internal.ads.C3976u3;
-import com.google.android.gms.internal.ads.C4159xO;
-import com.google.android.gms.internal.ads.C4279zj;
-import com.google.android.gms.internal.ads.Cr;
-import com.google.android.gms.internal.ads.InterfaceC2992bn;
-import com.google.android.gms.internal.ads.InterfaceC3529lo;
-import com.google.android.gms.internal.ads.InterfaceC3543m1;
-import com.google.android.gms.internal.ads.InterfaceC4213yO;
-import com.google.android.gms.internal.ads.PB;
-import com.google.android.gms.internal.ads.RB;
-import java.io.ByteArrayOutputStream;
-import java.net.URL;
-import java.util.ArrayList;
+import android.animation.ValueAnimator;
+import android.graphics.Canvas;
+import android.graphics.Rect;
+import android.view.animation.LinearInterpolator;
 
 /* loaded from: classes.dex */
-public final class b implements InterfaceC2992bn, InterfaceC3529lo {
+public final class b extends W1.f {
 
-    /* renamed from: n, reason: collision with root package name */
-    public final /* synthetic */ int f3760n = 3;
+    /* renamed from: W, reason: collision with root package name */
+    public final /* synthetic */ int f3754W;
 
-    /* renamed from: u, reason: collision with root package name */
-    public long f3761u;
-
-    /* renamed from: v, reason: collision with root package name */
-    public int f3762v;
-
-    /* renamed from: w, reason: collision with root package name */
-    public Object f3763w;
-
-    public /* synthetic */ b() {
+    @Override // W1.f, W1.e
+    public ValueAnimator d() {
+        switch (this.f3754W) {
+            case 0:
+                U1.e eVar = new U1.e(this);
+                eVar.d(new float[]{0.0f, 1.0f}, W1.e.f3541N, new Integer[]{0, 360});
+                eVar.f3287c = com.anythink.basead.exoplayer.i.a.f8669f;
+                eVar.f3286b = new LinearInterpolator();
+                return eVar.a();
+            default:
+                return super.d();
+        }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.google.android.gms.internal.ads.InterfaceC2992bn
-    /* renamed from: a */
-    public void mo10a(Object obj) {
-        int i;
-        switch (this.f3760n) {
-            case 1:
-                C3653o3 c3653o3 = (C3653o3) obj;
-                C3976u3 c3976u3 = (C3976u3) this.f3763w;
-                c3976u3.f34472h.getClass();
-                RB rb = c3653o3.f32846a;
-                ArrayList<? extends Parcelable> arrayList = new ArrayList<>(rb.size());
-                int i6 = 0;
-                PB listIterator = rb.listIterator(0);
-                while (listIterator.hasNext()) {
-                    C4279zj c4279zj = (C4279zj) listIterator.next();
-                    c4279zj.getClass();
-                    Bundle bundle = new Bundle();
-                    CharSequence charSequence = c4279zj.f35428a;
-                    if (charSequence != null) {
-                        bundle.putCharSequence(C4279zj.f35418q, charSequence);
-                        if (charSequence instanceof Spanned) {
-                            Spanned spanned = (Spanned) charSequence;
-                            String str = AbstractC2989bk.f29317a;
-                            ArrayList<? extends Parcelable> arrayList2 = new ArrayList<>();
-                            C3741pk[] c3741pkArr = (C3741pk[]) spanned.getSpans(i6, spanned.length(), C3741pk.class);
-                            int length = c3741pkArr.length;
-                            for (int i9 = i6; i9 < length; i9++) {
-                                C3741pk c3741pk = c3741pkArr[i9];
-                                c3741pk.getClass();
-                                Bundle bundle2 = new Bundle();
-                                bundle2.putString(C3741pk.f33120c, c3741pk.f33122a);
-                                bundle2.putInt(C3741pk.f33121d, c3741pk.f33123b);
-                                arrayList2.add(AbstractC2989bk.a(spanned, c3741pk, 1, bundle2));
-                            }
-                            for (C2609Ik c2609Ik : (C2609Ik[]) spanned.getSpans(0, spanned.length(), C2609Ik.class)) {
-                                c2609Ik.getClass();
-                                Bundle bundle3 = new Bundle();
-                                bundle3.putInt(C2609Ik.f25559d, c2609Ik.f25562a);
-                                bundle3.putInt(C2609Ik.f25560e, c2609Ik.f25563b);
-                                bundle3.putInt(C2609Ik.f25561f, c2609Ik.f25564c);
-                                arrayList2.add(AbstractC2989bk.a(spanned, c2609Ik, 2, bundle3));
-                            }
-                            for (C3149ek c3149ek : (C3149ek[]) spanned.getSpans(0, spanned.length(), C3149ek.class)) {
-                                arrayList2.add(AbstractC2989bk.a(spanned, c3149ek, 3, null));
-                            }
-                            for (C2745Qk c2745Qk : (C2745Qk[]) spanned.getSpans(0, spanned.length(), C2745Qk.class)) {
-                                c2745Qk.getClass();
-                                Bundle bundle4 = new Bundle();
-                                bundle4.putString(C2745Qk.f27060b, c2745Qk.f27061a);
-                                arrayList2.add(AbstractC2989bk.a(spanned, c2745Qk, 4, bundle4));
-                            }
-                            if (!arrayList2.isEmpty()) {
-                                bundle.putParcelableArrayList(C4279zj.f35419r, arrayList2);
-                            }
-                        }
-                    }
-                    bundle.putSerializable(C4279zj.f35420s, c4279zj.f35429b);
-                    bundle.putSerializable(C4279zj.f35421t, c4279zj.f35430c);
-                    bundle.putFloat(C4279zj.f35423v, c4279zj.f35432e);
-                    bundle.putInt(C4279zj.f35424w, c4279zj.f35433f);
-                    bundle.putInt(C4279zj.f35425x, c4279zj.f35434g);
-                    bundle.putFloat(C4279zj.f35426y, c4279zj.f35435h);
-                    bundle.putInt(C4279zj.f35427z, c4279zj.i);
-                    bundle.putInt(C4279zj.f35409A, c4279zj.f35438l);
-                    bundle.putFloat(C4279zj.f35410B, c4279zj.f35439m);
-                    bundle.putFloat(C4279zj.f35411C, c4279zj.f35436j);
-                    bundle.putFloat(C4279zj.f35412D, c4279zj.f35437k);
-                    bundle.putBoolean(C4279zj.f35414F, false);
-                    bundle.putInt(C4279zj.f35413E, -16777216);
-                    bundle.putInt(C4279zj.f35415G, c4279zj.f35440n);
-                    bundle.putFloat(C4279zj.f35416H, c4279zj.f35441o);
-                    bundle.putInt(C4279zj.f35417I, c4279zj.f35442p);
-                    Bitmap bitmap = c4279zj.f35431d;
-                    if (bitmap != null) {
-                        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-                        i = 0;
-                        AbstractC2772Sd.H(bitmap.compress(Bitmap.CompressFormat.PNG, 0, byteArrayOutputStream));
-                        bundle.putByteArray(C4279zj.f35422u, byteArrayOutputStream.toByteArray());
-                    } else {
-                        i = 0;
-                    }
-                    arrayList.add(bundle);
-                    i6 = i;
+    @Override // W1.f
+    public void h(Canvas canvas) {
+        switch (this.f3754W) {
+            case 3:
+                Rect a9 = W1.e.a(getBounds());
+                for (int i = 0; i < j(); i++) {
+                    int save = canvas.save();
+                    canvas.rotate((i * 90) + 45, a9.centerX(), a9.centerY());
+                    i(i).draw(canvas);
+                    canvas.restoreToCount(save);
                 }
-                boolean z3 = i6;
-                Bundle bundle5 = new Bundle();
-                bundle5.putParcelableArrayList("c", arrayList);
-                bundle5.putLong("d", c3653o3.f32848c);
-                Parcel obtain = Parcel.obtain();
-                obtain.writeBundle(bundle5);
-                byte[] marshall = obtain.marshall();
-                obtain.recycle();
-                int length2 = marshall.length;
-                Cr cr = c3976u3.f34467c;
-                cr.z(length2, marshall);
-                InterfaceC3543m1 interfaceC3543m1 = c3976u3.f34465a;
-                interfaceC3543m1.a(length2, cr);
-                long j6 = c3653o3.f32847b;
-                long j9 = this.f3761u;
-                if (j6 == com.anythink.basead.exoplayer.b.f6382b) {
-                    if (c3976u3.f34472h.f24436t == Long.MAX_VALUE) {
-                        z3 = 1;
-                    }
-                    AbstractC2772Sd.H(z3);
-                } else {
-                    long j10 = c3976u3.f34472h.f24436t;
-                    j9 = j10 == Long.MAX_VALUE ? j9 + j6 : j6 + j10;
-                }
-                interfaceC3543m1.c(j9, this.f3762v | 1, length2, 0, null);
                 break;
             default:
-                ((InterfaceC4213yO) obj).f((C4159xO) this.f3763w, this.f3762v, this.f3761u);
+                super.h(canvas);
                 break;
         }
     }
 
-    public /* synthetic */ b(C3976u3 c3976u3, long j6, int i) {
-        this.f3763w = c3976u3;
-        this.f3761u = j6;
-        this.f3762v = i;
+    @Override // W1.f
+    public void k(W1.e... eVarArr) {
+        switch (this.f3754W) {
+            case 0:
+                eVarArr[1].f3563y = 1000;
+                break;
+            case 2:
+                eVarArr[1].f3563y = 1000;
+                break;
+            case 4:
+                int i = 0;
+                while (i < eVarArr.length) {
+                    W1.e eVar = eVarArr[i];
+                    i++;
+                    eVar.f3563y = i * 200;
+                }
+                break;
+            case 5:
+                int i4 = 0;
+                while (i4 < eVarArr.length) {
+                    W1.e eVar2 = eVarArr[i4];
+                    i4++;
+                    eVar2.f3563y = i4 * 200;
+                }
+                break;
+            case 6:
+                eVarArr[1].f3563y = 160;
+                eVarArr[2].f3563y = 320;
+                break;
+        }
     }
 
-    public /* synthetic */ b(C4159xO c4159xO, int i, long j6, long j9) {
-        this.f3763w = c4159xO;
-        this.f3762v = i;
-        this.f3761u = j6;
+    @Override // W1.f
+    public final W1.e[] l() {
+        switch (this.f3754W) {
+            case 0:
+                return new W1.e[]{new a(0), new a(0)};
+            case 1:
+                int[] iArr = {200, 300, 400, 100, 200, 300, 0, 100, 200};
+                d[] dVarArr = new d[9];
+                for (int i = 0; i < 9; i++) {
+                    d dVar = new d(0);
+                    dVarArr[i] = dVar;
+                    dVar.f3563y = iArr[i];
+                }
+                return dVarArr;
+            case 2:
+                return new W1.e[]{new a(2), new a(2)};
+            case 3:
+                d[] dVarArr2 = new d[4];
+                for (int i4 = 0; i4 < 4; i4++) {
+                    d dVar2 = new d(1);
+                    dVar2.setAlpha(0);
+                    dVar2.f3564z = -180;
+                    dVarArr2[i4] = dVar2;
+                    dVar2.f3563y = i4 * 300;
+                }
+                return dVarArr2;
+            case 4:
+                return new W1.e[]{new a(4), new a(4), new a(4)};
+            case 5:
+                return new W1.e[]{new e(), new e(), new e()};
+            case 6:
+                return new W1.e[]{new a(6), new a(6), new a(6)};
+            case 7:
+                return new W1.e[]{new f(0), new f(3)};
+            default:
+                d[] dVarArr3 = new d[5];
+                for (int i6 = 0; i6 < 5; i6++) {
+                    d dVar3 = new d(3);
+                    dVar3.f3560v = 0.4f;
+                    dVarArr3[i6] = dVar3;
+                    dVar3.f3563y = (i6 * 100) + 600;
+                }
+                return dVarArr3;
+        }
     }
 
-    public b(int i, URL url, long j6) {
-        this.f3762v = i;
-        this.f3763w = url;
-        this.f3761u = j6;
+    @Override // W1.f, W1.e, android.graphics.drawable.Drawable
+    public void onBoundsChange(Rect rect) {
+        switch (this.f3754W) {
+            case 0:
+                super.onBoundsChange(rect);
+                Rect a9 = W1.e.a(rect);
+                int width = (int) (a9.width() * 0.6f);
+                W1.e i = i(0);
+                int i4 = a9.right;
+                int i6 = a9.top;
+                i.f(i4 - width, i6, i4, i6 + width);
+                W1.e i9 = i(1);
+                int i10 = a9.right;
+                int i11 = a9.bottom;
+                i9.f(i10 - width, i11 - width, i10, i11);
+                break;
+            case 1:
+                super.onBoundsChange(rect);
+                Rect a10 = W1.e.a(rect);
+                int width2 = (int) (a10.width() * 0.33f);
+                int height = (int) (a10.height() * 0.33f);
+                for (int i12 = 0; i12 < j(); i12++) {
+                    int i13 = ((i12 % 3) * width2) + a10.left;
+                    int i14 = ((i12 / 3) * height) + a10.top;
+                    i(i12).f(i13, i14, i13 + width2, i14 + height);
+                }
+                break;
+            case 2:
+            case 4:
+            case 5:
+            default:
+                super.onBoundsChange(rect);
+                break;
+            case 3:
+                super.onBoundsChange(rect);
+                Rect a11 = W1.e.a(rect);
+                int min = Math.min(a11.width(), a11.height()) / 2;
+                int i15 = a11.left + min + 1;
+                int i16 = a11.top + min + 1;
+                for (int i17 = 0; i17 < j(); i17++) {
+                    W1.e i18 = i(i17);
+                    i18.f(a11.left, a11.top, i15, i16);
+                    Rect rect2 = i18.f3556I;
+                    i18.f3561w = rect2.right;
+                    i18.f3562x = rect2.bottom;
+                }
+                break;
+            case 6:
+                super.onBoundsChange(rect);
+                Rect a12 = W1.e.a(rect);
+                int width3 = a12.width() / 8;
+                int centerY = a12.centerY() - width3;
+                int centerY2 = a12.centerY() + width3;
+                for (int i19 = 0; i19 < j(); i19++) {
+                    int width4 = ((a12.width() * i19) / 3) + a12.left;
+                    i(i19).f(width4, centerY, (width3 * 2) + width4, centerY2);
+                }
+                break;
+            case 7:
+                Rect a13 = W1.e.a(rect);
+                super.onBoundsChange(a13);
+                for (int i20 = 0; i20 < j(); i20++) {
+                    W1.e i21 = i(i20);
+                    int i22 = a13.left;
+                    i21.f(i22, a13.top, (a13.width() / 4) + i22, (a13.height() / 4) + a13.top);
+                }
+                break;
+            case 8:
+                super.onBoundsChange(rect);
+                Rect a14 = W1.e.a(rect);
+                int width5 = a14.width() / j();
+                int width6 = ((a14.width() / 5) * 3) / 5;
+                for (int i23 = 0; i23 < j(); i23++) {
+                    W1.e i24 = i(i23);
+                    int i25 = (width5 / 5) + (i23 * width5) + a14.left;
+                    i24.f(i25, a14.top, i25 + width6, a14.bottom);
+                }
+                break;
+        }
+    }
+
+    private final void m(W1.e... eVarArr) {
     }
 }

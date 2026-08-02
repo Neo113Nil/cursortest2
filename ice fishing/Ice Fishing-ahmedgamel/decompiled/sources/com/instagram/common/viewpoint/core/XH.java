@@ -6,16 +6,16 @@ import java.util.Set;
 /* loaded from: assets/audience_network/classes2.dex */
 public class XH implements Runnable {
     public static String[] A04 = {"nCRFoG2V5rxtp9CJ0zj2vqX2pOjohwfk", "4wjnoNx3VOTWdL7VvzY4PdOFwDa8aAyk", "NZwRvgeKfVOQj3OAbWBZydUCa0", "QhytIBUnuaSIq9HsTJzjLcd0Gyd", "BSNgfeEt9bBv41mFKDcPuiwW51mPbBL", "ThuVKQMdtpTlOVe04IgNONUKoYEgRLHM", "EXwZjrYuwLfsbcbpnacjwuDYCB43acny", "AVskEroBo8UlfYPInQ7Yx5KSddGfFQyi"};
-    public final /* synthetic */ C1836ge A00;
-    public final /* synthetic */ InterfaceC1355Xh A01;
+    public final /* synthetic */ C1856ge A00;
+    public final /* synthetic */ InterfaceC1375Xh A01;
     public final /* synthetic */ String A02;
     public final /* synthetic */ int[] A03;
 
-    public XH(int[] iArr, String str, C1836ge c1836ge, InterfaceC1355Xh interfaceC1355Xh) {
+    public XH(int[] iArr, String str, C1856ge c1856ge, InterfaceC1375Xh interfaceC1375Xh) {
         this.A03 = iArr;
         this.A02 = str;
-        this.A00 = c1836ge;
-        this.A01 = interfaceC1355Xh;
+        this.A00 = c1856ge;
+        this.A01 = interfaceC1375Xh;
     }
 
     @Override // java.lang.Runnable

@@ -13,18 +13,18 @@ import java.security.NoSuchAlgorithmException;
 public class o {
 
     /* renamed from: a, reason: collision with root package name */
-    protected static char[] f19664a = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
+    protected static char[] f20451a = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
 
     /* renamed from: b, reason: collision with root package name */
-    protected static MessageDigest f19665b = null;
+    protected static MessageDigest f20452b = null;
 
     /* renamed from: c, reason: collision with root package name */
-    private static String f19666c = "SameFileMD5";
+    private static String f20453c = "SameFileMD5";
 
     static {
-        f19665b = null;
+        f20452b = null;
         try {
-            f19665b = MessageDigest.getInstance("MD5");
+            f20452b = MessageDigest.getInstance("MD5");
         } catch (NoSuchAlgorithmException e9) {
             System.err.println(o.class.getName().concat("Init fail,MessageDigest not support MD5Util."));
             e9.printStackTrace();
@@ -41,8 +41,8 @@ public class o {
         try {
             FileInputStream fileInputStream2 = new FileInputStream(file);
             try {
-                f19665b.update(fileInputStream2.getChannel().map(FileChannel.MapMode.READ_ONLY, 0L, file.length()));
-                String a9 = a(f19665b.digest());
+                f20452b.update(fileInputStream2.getChannel().map(FileChannel.MapMode.READ_ONLY, 0L, file.length()));
+                String a9 = a(f20452b.digest());
                 fileInputStream2.close();
                 return a9;
             } catch (Exception unused) {
@@ -126,14 +126,14 @@ public class o {
 
     private static String a(byte[] bArr, int i) {
         StringBuffer stringBuffer = new StringBuffer(i * 2);
-        for (int i6 = 0; i6 < i; i6++) {
-            a(bArr[i6], stringBuffer);
+        for (int i4 = 0; i4 < i; i4++) {
+            a(bArr[i4], stringBuffer);
         }
         return stringBuffer.toString();
     }
 
     private static void a(byte b9, StringBuffer stringBuffer) {
-        char[] cArr = f19664a;
+        char[] cArr = f20451a;
         char c9 = cArr[(b9 & 240) >> 4];
         char c10 = cArr[b9 & 15];
         stringBuffer.append(c9);

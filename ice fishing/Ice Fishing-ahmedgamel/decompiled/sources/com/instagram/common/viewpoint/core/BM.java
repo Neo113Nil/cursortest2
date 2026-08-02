@@ -4,5 +4,5 @@ import com.google.common.collect.ElementTypesAreNonnullByDefault;
 
 @ElementTypesAreNonnullByDefault
 /* loaded from: assets/audience_network/classes2.dex */
-public interface BM<K, V> extends InterfaceC2385q3<K, V> {
+public interface BM<K, V> extends InterfaceC2405q3<K, V> {
 }

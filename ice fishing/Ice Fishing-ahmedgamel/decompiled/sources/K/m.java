@@ -6,21 +6,21 @@ import android.os.LocaleList;
 public final class m {
 
     /* renamed from: a, reason: collision with root package name */
-    public final LocaleList f1484a;
+    public final LocaleList f1593a;
 
     public m(LocaleList localeList) {
-        this.f1484a = localeList;
+        this.f1593a = localeList;
     }
 
     public final boolean equals(Object obj) {
-        return this.f1484a.equals(((m) obj).f1484a);
+        return this.f1593a.equals(((m) obj).f1593a);
     }
 
     public final int hashCode() {
-        return this.f1484a.hashCode();
+        return this.f1593a.hashCode();
     }
 
     public final String toString() {
-        return this.f1484a.toString();
+        return this.f1593a.toString();
     }
 }

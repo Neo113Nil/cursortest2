@@ -9,29 +9,29 @@ import java.util.HashMap;
 public final class G1 extends OK {
 
     /* renamed from: v, reason: collision with root package name */
-    public long f24904v;
+    public long f25694v;
 
     /* renamed from: w, reason: collision with root package name */
-    public long[] f24905w;
+    public long[] f25695w;
 
     /* renamed from: x, reason: collision with root package name */
-    public long[] f24906x;
+    public long[] f25696x;
 
-    public static String Q1(Cr cr) {
-        int L6 = cr.L();
-        int i = cr.f24253b;
-        cr.G(L6);
-        return new String(cr.f24252a, i, L6);
+    public static String R1(Cr cr) {
+        int L2 = cr.L();
+        int i = cr.f24998b;
+        cr.G(L2);
+        return new String(cr.f24997a, i, L2);
     }
 
     public static HashMap T1(Cr cr) {
-        int h9 = cr.h();
-        HashMap hashMap = new HashMap(h9);
-        for (int i = 0; i < h9; i++) {
-            String Q12 = Q1(cr);
+        int h3 = cr.h();
+        HashMap hashMap = new HashMap(h3);
+        for (int i = 0; i < h3; i++) {
+            String R1 = R1(cr);
             Serializable U12 = U1(cr.K(), cr);
             if (U12 != null) {
-                hashMap.put(Q12, U12);
+                hashMap.put(R1, U12);
             }
         }
         return hashMap;
@@ -45,7 +45,7 @@ public final class G1 extends OK {
             return Boolean.valueOf(cr.K() == 1);
         }
         if (i == 2) {
-            return Q1(cr);
+            return R1(cr);
         }
         if (i != 3) {
             if (i == 8) {
@@ -59,9 +59,9 @@ public final class G1 extends OK {
                 cr.G(2);
                 return date;
             }
-            int h9 = cr.h();
-            ArrayList arrayList = new ArrayList(h9);
-            for (int i6 = 0; i6 < h9; i6++) {
+            int h3 = cr.h();
+            ArrayList arrayList = new ArrayList(h3);
+            for (int i4 = 0; i4 < h3; i4++) {
                 Serializable U12 = U1(cr.K(), cr);
                 if (U12 != null) {
                     arrayList.add(U12);
@@ -71,14 +71,14 @@ public final class G1 extends OK {
         }
         HashMap hashMap = new HashMap();
         while (true) {
-            String Q12 = Q1(cr);
+            String R1 = R1(cr);
             int K7 = cr.K();
             if (K7 == 9) {
                 return hashMap;
             }
             Serializable U13 = U1(K7, cr);
             if (U13 != null) {
-                hashMap.put(Q12, U13);
+                hashMap.put(R1, U13);
             }
         }
     }

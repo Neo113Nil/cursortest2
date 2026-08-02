@@ -6,16 +6,16 @@ import java.util.Arrays;
 
 @ElementTypesAreNonnullByDefault
 /* loaded from: assets/audience_network/classes2.dex */
-public final class B8 extends AbstractC2402qK<Comparable<?>> implements Serializable {
+public final class B8 extends AbstractC2422qK<Comparable<?>> implements Serializable {
     public static byte[] A00;
     public static String[] A01 = {"VpDQNWoK0mmjrFci3J1ES8becoOn0yPT", "Vr", "", "dVgvDtkQ8cSY7jysLBul", "4dcdEYs2txrJkBrXjBMi1LqbKTa90ufq", "PVumC7zyVZC9p2BLxPfo", "qAFwV", ""};
     public static final B8 A02;
     public static final long serialVersionUID = 0;
 
-    public static String A01(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 113);
+    public static String A01(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 113);
         }
         return new String(copyOfRange);
     }
@@ -30,10 +30,10 @@ public final class B8 extends AbstractC2402qK<Comparable<?>> implements Serializ
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    @Override // com.instagram.common.viewpoint.core.AbstractC2402qK, java.util.Comparator
+    @Override // com.instagram.common.viewpoint.core.AbstractC2422qK, java.util.Comparator
     /* renamed from: A00, reason: merged with bridge method [inline-methods] */
     public final int compare(Comparable<?> left, Comparable<?> right) {
-        AbstractC2070ki.A04(left);
+        AbstractC2090ki.A04(left);
         if (left != right) {
             return right.compareTo(left);
         }
@@ -45,9 +45,9 @@ public final class B8 extends AbstractC2402qK<Comparable<?>> implements Serializ
         return 0;
     }
 
-    @Override // com.instagram.common.viewpoint.core.AbstractC2402qK
-    public final <S extends Comparable<?>> AbstractC2402qK<S> A06() {
-        return AbstractC2402qK.A03();
+    @Override // com.instagram.common.viewpoint.core.AbstractC2422qK
+    public final <S extends Comparable<?>> AbstractC2422qK<S> A06() {
+        return AbstractC2422qK.A03();
     }
 
     public final String toString() {

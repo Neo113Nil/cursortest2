@@ -5,11 +5,10 @@ import H4.f;
 import I7.l;
 import V5.n;
 import V5.o;
-import com.bumptech.glide.d;
 import com.onesignal.core.internal.config.c;
 import kotlin.jvm.internal.e;
 import u7.v;
-import z7.InterfaceC5267d;
+import z7.InterfaceC5240d;
 
 /* loaded from: classes2.dex */
 public final class a implements com.onesignal.core.internal.startup.b, O5.a {
@@ -37,22 +36,22 @@ public final class a implements com.onesignal.core.internal.startup.b, O5.a {
         int label;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public b(long j6, InterfaceC5267d interfaceC5267d) {
-            super(1, interfaceC5267d);
+        public b(long j6, InterfaceC5240d interfaceC5240d) {
+            super(1, interfaceC5240d);
             this.$durationInSeconds = j6;
         }
 
         @Override // B7.a
-        public final InterfaceC5267d create(InterfaceC5267d interfaceC5267d) {
-            return a.this.new b(this.$durationInSeconds, interfaceC5267d);
+        public final InterfaceC5240d create(InterfaceC5240d interfaceC5240d) {
+            return a.this.new b(this.$durationInSeconds, interfaceC5240d);
         }
 
         @Override // B7.a
         public final Object invokeSuspend(Object obj) {
-            A7.a aVar = A7.a.f58n;
+            A7.a aVar = A7.a.f215n;
             int i = this.label;
             if (i == 0) {
-                d.k(obj);
+                Q3.b.s(obj);
                 M5.b bVar = a.this._outcomeEventsController;
                 long j6 = this.$durationInSeconds;
                 this.label = 1;
@@ -63,14 +62,14 @@ public final class a implements com.onesignal.core.internal.startup.b, O5.a {
                 if (i != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                d.k(obj);
+                Q3.b.s(obj);
             }
-            return v.f41353a;
+            return v.f41073a;
         }
 
         @Override // I7.l
-        public final Object invoke(InterfaceC5267d interfaceC5267d) {
-            return ((b) create(interfaceC5267d)).invokeSuspend(v.f41353a);
+        public final Object invoke(InterfaceC5240d interfaceC5240d) {
+            return ((b) create(interfaceC5240d)).invokeSuspend(v.f41073a);
         }
     }
 

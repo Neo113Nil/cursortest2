@@ -6,17 +6,17 @@ import java.util.List;
 import java.util.RandomAccess;
 
 /* loaded from: classes2.dex */
-public abstract class AK extends AbstractList implements InterfaceC3026cL {
+public abstract class AK extends AbstractList implements InterfaceC3049cL {
 
     /* renamed from: n, reason: collision with root package name */
-    public boolean f23663n;
+    public boolean f24443n;
 
-    public AK(boolean z3) {
-        this.f23663n = z3;
+    public AK(boolean z6) {
+        this.f24443n = z6;
     }
 
     public final void a() {
-        if (!this.f23663n) {
+        if (!this.f24443n) {
             throw new UnsupportedOperationException();
         }
     }

@@ -7,7 +7,7 @@ public enum PlayerState {
     MINIMIZED("minimized"),
     COLLAPSED("collapsed"),
     NORMAL("normal"),
-    EXPANDED(a.f17531g),
+    EXPANDED(a.f18318g),
     FULLSCREEN("fullscreen");
 
     private final String playerState;

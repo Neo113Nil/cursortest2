@@ -7,7 +7,7 @@ import sun.misc.Unsafe;
 public abstract class u {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Unsafe f2011a = a();
+    public static final Unsafe f2099a = a();
 
     public static Unsafe a() {
         try {

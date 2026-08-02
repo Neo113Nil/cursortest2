@@ -20,10 +20,10 @@ public abstract class u {
     }
 
     public static void c(K.l lVar) {
-        LocaleList.setDefault(LocaleList.forLanguageTags(lVar.f1483a.f1484a.toLanguageTags()));
+        LocaleList.setDefault(LocaleList.forLanguageTags(lVar.f1592a.f1593a.toLanguageTags()));
     }
 
     public static void d(Configuration configuration, K.l lVar) {
-        configuration.setLocales(LocaleList.forLanguageTags(lVar.f1483a.f1484a.toLanguageTags()));
+        configuration.setLocales(LocaleList.forLanguageTags(lVar.f1592a.f1593a.toLanguageTags()));
     }
 }

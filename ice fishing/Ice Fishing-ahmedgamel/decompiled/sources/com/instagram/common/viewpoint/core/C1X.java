@@ -29,8 +29,8 @@ public final class C1X extends C8M {
     public int A02;
     public int A03;
     public long A05;
-    public List<C2350pT> A07;
-    public List<C2350pT> A08;
+    public List<C2370pT> A07;
+    public List<C2370pT> A08;
     public boolean A09;
     public boolean A0A;
     public boolean A0B;
@@ -38,15 +38,15 @@ public final class C1X extends C8M {
     public final int A0D;
     public final int A0E;
     public final long A0F;
-    public final C06474v A0G = new C06474v();
-    public final ArrayList<C1007Jm> A0H = new ArrayList<>();
-    public C1007Jm A06 = new C1007Jm(0, 4);
+    public final C06674v A0G = new C06674v();
+    public final ArrayList<C1027Jm> A0H = new ArrayList<>();
+    public C1027Jm A06 = new C1027Jm(0, 4);
     public int A04 = 0;
 
-    public static String A06(int i, int i6, int i9) {
-        byte[] copyOfRange = Arrays.copyOfRange(A0I, i, i + i6);
-        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
-            copyOfRange[i10] = (byte) ((copyOfRange[i10] ^ i9) ^ 50);
+    public static String A06(int i, int i4, int i6) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0I, i, i + i4);
+        for (int i9 = 0; i9 < copyOfRange.length; i9++) {
+            copyOfRange[i9] = (byte) ((copyOfRange[i9] ^ i6) ^ 50);
         }
         return new String(copyOfRange);
     }
@@ -60,10 +60,10 @@ public final class C1X extends C8M {
         A0M = new int[]{11, 1, 3, 12, 14, 5, 7, 9};
         A0L = new int[]{0, 4, 8, 12, 16, 20, 24, 28};
         A0Q = new int[]{-1, -16711936, -16776961, -16711681, -65536, -256, -65281};
-        A0K = new int[]{32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 225, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 233, 93, 237, 243, 250, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, a.f21756z, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 231, 247, BaseATView.a.f9772H, 241, 9632};
+        A0K = new int[]{32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 225, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 233, 93, 237, 243, 250, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, a.f22543z, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 231, 247, BaseATView.a.f10558H, 241, 9632};
         A0N = new int[]{174, 176, 189, 191, 8482, 162, 163, 9834, 224, 32, 232, 226, 234, 238, 244, 251};
-        A0O = new int[]{193, BaseATView.a.f9804z, BaseATView.a.J, 218, 220, 252, 8216, 161, 42, 39, 8212, 169, 8480, 8226, 8220, 8221, 192, 194, 199, 200, 202, BaseATView.a.f9766B, 235, BaseATView.a.f9769E, BaseATView.a.f9770F, 239, BaseATView.a.f9774K, 217, 249, 219, 171, 187};
-        A0P = new int[]{195, 227, BaseATView.a.f9768D, BaseATView.a.f9767C, 236, BaseATView.a.f9773I, 242, 213, 245, 123, 125, 92, 94, 95, 124, a.f21727Q, 196, 228, 214, 246, 223, 165, 164, 9474, 197, 229, 216, 248, 9484, 9488, 9492, 9496};
+        A0O = new int[]{193, BaseATView.a.f10590z, BaseATView.a.J, 218, 220, 252, 8216, 161, 42, 39, 8212, 169, 8480, 8226, 8220, 8221, 192, 194, 199, 200, 202, BaseATView.a.f10552B, 235, BaseATView.a.f10555E, BaseATView.a.f10556F, 239, BaseATView.a.f10560K, 217, 249, 219, 171, 187};
+        A0P = new int[]{195, 227, BaseATView.a.f10554D, BaseATView.a.f10553C, 236, BaseATView.a.f10559I, 242, 213, 245, 123, 125, 92, 94, 95, 124, a.f22514Q, 196, 228, 214, 246, 223, 165, 164, 9474, 197, 229, 216, 248, 9484, 9488, 9492, 9496};
         A0R = new boolean[]{false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false};
     }
 
@@ -88,7 +88,7 @@ public final class C1X extends C8M {
                 this.A0E = 1;
                 break;
             default:
-                AbstractC06324g.A07(A06(0, 13, 123), A06(13, 35, 33));
+                AbstractC06524g.A07(A06(0, 13, 123), A06(13, 35, 33));
                 this.A0D = 0;
                 this.A0E = 0;
                 break;
@@ -96,7 +96,7 @@ public final class C1X extends C8M {
         A0E(0);
         A08();
         this.A0A = true;
-        this.A05 = b.f6382b;
+        this.A05 = b.f7168b;
     }
 
     public static char A00(byte b9) {
@@ -130,12 +130,12 @@ public final class C1X extends C8M {
         return (b9 >> 3) & 1;
     }
 
-    private List<C2350pT> A07() {
+    private List<C2370pT> A07() {
         int i = 2;
         int size = this.A0H.size();
         ArrayList arrayList = new ArrayList(size);
-        for (int i6 = 0; i6 < size; i6++) {
-            C2350pT A08 = this.A0H.get(i6).A08(Integer.MIN_VALUE);
+        for (int i4 = 0; i4 < size; i4++) {
+            C2370pT A08 = this.A0H.get(i4).A08(Integer.MIN_VALUE);
             arrayList.add(A08);
             if (A08 != null) {
                 int positionAnchor = A08.A08;
@@ -143,14 +143,14 @@ public final class C1X extends C8M {
             }
         }
         List<Cue> displayCues = new ArrayList<>(size);
-        for (int i9 = 0; i9 < size; i9++) {
-            C2350pT c2350pT = (C2350pT) arrayList.get(i9);
-            if (c2350pT != null) {
-                int cueBuilderCount = c2350pT.A08;
+        for (int i6 = 0; i6 < size; i6++) {
+            C2370pT c2370pT = (C2370pT) arrayList.get(i6);
+            if (c2370pT != null) {
+                int cueBuilderCount = c2370pT.A08;
                 if (cueBuilderCount != i) {
-                    c2350pT = (C2350pT) AbstractC06243y.A01(this.A0H.get(i9).A08(i));
+                    c2370pT = (C2370pT) AbstractC06443y.A01(this.A0H.get(i6).A08(i));
                 }
-                displayCues.add(c2350pT);
+                displayCues.add(c2370pT);
             }
         }
         return displayCues;
@@ -177,7 +177,7 @@ public final class C1X extends C8M {
             case 34:
             case 35:
             case 36:
-            case j.f5808O /* 40 */:
+            case j.f6594O /* 40 */:
             default:
                 if (this.A02 == 0) {
                     return;
@@ -189,7 +189,7 @@ public final class C1X extends C8M {
                     case 36:
                     default:
                         return;
-                    case j.f5812S /* 44 */:
+                    case j.f6598S /* 44 */:
                         this.A07 = Collections.emptyList();
                         if (this.A02 != 1) {
                             int i = this.A02;
@@ -206,21 +206,21 @@ public final class C1X extends C8M {
                         }
                         A08();
                         return;
-                    case j.f5813T /* 45 */:
-                        int i6 = this.A02;
+                    case j.f6599T /* 45 */:
+                        int i4 = this.A02;
                         String[] strArr3 = A0J;
                         if (strArr3[0].length() != strArr3[2].length()) {
                             String[] strArr4 = A0J;
                             strArr4[3] = "HCAfJwwR1nZZ2pYCiapM";
                             strArr4[4] = "hVuFMnq3D5R8fxepiPSv";
-                            if (i6 != 1) {
+                            if (i4 != 1) {
                                 return;
                             }
                         } else {
                             String[] strArr5 = A0J;
                             strArr5[6] = "UkNz47z";
                             strArr5[5] = "ECTKBDG";
-                            if (i6 != 1) {
+                            if (i4 != 1) {
                                 return;
                             }
                         }
@@ -257,7 +257,7 @@ public final class C1X extends C8M {
                     A0F(2);
                     return;
                 }
-            case j.f5806M /* 38 */:
+            case j.f6592M /* 38 */:
                 A0E(1);
                 A0F(3);
                 return;
@@ -282,7 +282,7 @@ public final class C1X extends C8M {
         if (i != row3) {
             int row4 = this.A02;
             if (row4 != 1) {
-                C1007Jm c1007Jm = this.A06;
+                C1027Jm c1027Jm = this.A06;
                 String[] strArr = A0J;
                 String str = strArr[6];
                 String str2 = strArr[5];
@@ -292,8 +292,8 @@ public final class C1X extends C8M {
                     throw new RuntimeException();
                 }
                 A0J[7] = "S2lulK2aovW1jS0uX55S7WO6vUVtsAxG";
-                if (!c1007Jm.A0G()) {
-                    this.A06 = new C1007Jm(this.A02, this.A03);
+                if (!c1027Jm.A0G()) {
+                    this.A06 = new C1027Jm(this.A02, this.A03);
                     this.A0H.add(this.A06);
                 }
             }
@@ -303,14 +303,14 @@ public final class C1X extends C8M {
         int row6 = b10 & 1;
         boolean isCursor = row6 == 1;
         int row7 = b10 >> 1;
-        int i6 = row7 & 7;
-        C1007Jm c1007Jm2 = this.A06;
-        int row8 = cursorOrStyle != 0 ? 8 : i6;
-        c1007Jm2.A0F(row8, isCursor);
+        int i4 = row7 & 7;
+        C1027Jm c1027Jm2 = this.A06;
+        int row8 = cursorOrStyle != 0 ? 8 : i4;
+        c1027Jm2.A0F(row8, isCursor);
         if (cursorOrStyle != 0) {
-            C1007Jm c1007Jm3 = this.A06;
-            int row9 = A0L[i6];
-            c1007Jm3.A02 = row9;
+            C1027Jm c1027Jm3 = this.A06;
+            int row9 = A0L[i4];
+            c1027Jm3.A02 = row9;
         }
     }
 
@@ -324,14 +324,14 @@ public final class C1X extends C8M {
         switch (b10) {
             case 32:
             case 37:
-            case j.f5806M /* 38 */:
+            case j.f6592M /* 38 */:
             case 39:
             case 41:
             case 47:
                 this.A0A = true;
                 break;
             case 42:
-            case j.f5811R /* 43 */:
+            case j.f6597R /* 43 */:
                 this.A0A = false;
                 break;
         }
@@ -345,16 +345,16 @@ public final class C1X extends C8M {
         if (this.A02 == i) {
             return;
         }
-        int i6 = this.A02;
+        int i4 = this.A02;
         this.A02 = i;
         if (i == 3) {
-            for (int i9 = 0; i9 < oldCaptionMode; i9++) {
-                this.A0H.get(i9).A0D(i);
+            for (int i6 = 0; i6 < oldCaptionMode; i6++) {
+                this.A0H.get(i6).A0D(i);
             }
             return;
         }
         A08();
-        if (i6 == 3 || i == 1 || i == 0) {
+        if (i4 == 3 || i == 1 || i == 0) {
             this.A07 = Collections.emptyList();
         }
     }
@@ -365,7 +365,7 @@ public final class C1X extends C8M {
     }
 
     private boolean A0G() {
-        return (this.A0F == b.f6382b || this.A05 == b.f6382b || A0V() - this.A05 < this.A0F) ? false : true;
+        return (this.A0F == b.f7168b || this.A05 == b.f7168b || A0V() - this.A05 < this.A0F) ? false : true;
     }
 
     private boolean A0H(byte b9) {
@@ -430,8 +430,8 @@ public final class C1X extends C8M {
         return false;
     }
 
-    private boolean A0S(boolean z3, byte b9, byte b10) {
-        if (z3 && A0J(b9)) {
+    private boolean A0S(boolean z6, byte b9, byte b10) {
+        if (z6 && A0J(b9)) {
             if (this.A0B && this.A00 == b9 && this.A01 == b10) {
                 this.A0B = false;
                 return true;
@@ -447,13 +447,13 @@ public final class C1X extends C8M {
 
     @Override // com.instagram.common.viewpoint.core.C8M
     /* renamed from: A0W */
-    public final /* bridge */ /* synthetic */ C8S A5r() throws C2132lj {
+    public final /* bridge */ /* synthetic */ C8S A5r() throws C2152lj {
         return super.A5r();
     }
 
     @Override // com.instagram.common.viewpoint.core.C8M, com.instagram.common.viewpoint.core.AnonymousClass60
     /* renamed from: A0X, reason: merged with bridge method [inline-methods] */
-    public final C8P A5t() throws C2132lj {
+    public final C8P A5t() throws C2152lj {
         C8P A0Y;
         C8P outputBuffer = super.A5t();
         if (outputBuffer != null) {
@@ -461,7 +461,7 @@ public final class C1X extends C8M {
         }
         if (A0G() && (A0Y = A0Y()) != null) {
             this.A07 = Collections.emptyList();
-            this.A05 = b.f6382b;
+            this.A05 = b.f7168b;
             A0Y.A0C(A0V(), A0Z(), Long.MAX_VALUE);
             return A0Y;
         }
@@ -469,37 +469,37 @@ public final class C1X extends C8M {
     }
 
     @Override // com.instagram.common.viewpoint.core.C8M
-    public final C2130lh A0Z() {
+    public final C2150lh A0Z() {
         this.A08 = this.A07;
-        return new C2130lh((List) AbstractC06243y.A01(this.A07));
+        return new C2150lh((List) AbstractC06443y.A01(this.A07));
     }
 
     @Override // com.instagram.common.viewpoint.core.C8M
     /* renamed from: A0a */
-    public final /* bridge */ /* synthetic */ void AHJ(C8S c8s) throws C2132lj {
+    public final /* bridge */ /* synthetic */ void AHJ(C8S c8s) throws C2152lj {
         super.AHJ(c8s);
     }
 
     @Override // com.instagram.common.viewpoint.core.C8M
     public final void A0b(C8S c8s) {
-        ByteBuffer subtitleData = (ByteBuffer) AbstractC06243y.A01(c8s.A02);
+        ByteBuffer subtitleData = (ByteBuffer) AbstractC06443y.A01(c8s.A02);
         this.A0G.A0j(subtitleData.array(), subtitleData.limit());
-        boolean z3 = false;
+        boolean z6 = false;
         while (true) {
             if (this.A0G.A07() >= this.A0C) {
                 byte A0I2 = this.A0C == 2 ? (byte) -4 : (byte) this.A0G.A0I();
                 int A0I3 = this.A0G.A0I();
                 int A0I4 = this.A0G.A0I();
                 if ((A0I2 & 2) == 0 && (A0I2 & 1) == this.A0E) {
-                    byte b9 = (byte) (A0I3 & a.f21728R);
-                    byte ccHeader = (byte) (A0I4 & a.f21728R);
+                    byte b9 = (byte) (A0I3 & a.f22515R);
+                    byte ccHeader = (byte) (A0I4 & a.f22515R);
                     if (b9 != 0 || ccHeader != 0) {
-                        boolean z6 = this.A09;
+                        boolean z9 = this.A09;
                         this.A09 = (A0I2 & 4) == 4 && A0R[A0I3] && A0R[A0I4];
                         if (A0S(this.A09, b9, ccHeader)) {
                             continue;
                         } else if (!this.A09) {
-                            if (z6) {
+                            if (z9) {
                                 A08();
                                 String[] strArr = A0J;
                                 if (strArr[0].length() != strArr[2].length()) {
@@ -508,7 +508,7 @@ public final class C1X extends C8M {
                                 String[] strArr2 = A0J;
                                 strArr2[3] = "7LYQsBtV1mB8cg17zlGC";
                                 strArr2[4] = "4QeECkpa3Q5V1bGzM4Sw";
-                                z3 = true;
+                                z6 = true;
                             } else {
                                 continue;
                             }
@@ -538,13 +538,13 @@ public final class C1X extends C8M {
                                         this.A06.A0B(A00(ccHeader));
                                     }
                                 }
-                                z3 = true;
+                                z6 = true;
                             }
                         }
                     }
                 }
             } else {
-                if (z3) {
+                if (z6) {
                     if (this.A02 == 1 || this.A02 == 3) {
                         this.A07 = A07();
                         this.A05 = A0V();
@@ -566,7 +566,7 @@ public final class C1X extends C8M {
     public final void AHb() {
     }
 
-    @Override // com.instagram.common.viewpoint.core.C8M, com.instagram.common.viewpoint.core.InterfaceC2139lq
+    @Override // com.instagram.common.viewpoint.core.C8M, com.instagram.common.viewpoint.core.InterfaceC2159lq
     public final /* bridge */ /* synthetic */ void AJh(long j6) {
         super.AJh(j6);
     }
@@ -585,6 +585,6 @@ public final class C1X extends C8M {
         this.A01 = (byte) 0;
         this.A04 = 0;
         this.A0A = true;
-        this.A05 = b.f6382b;
+        this.A05 = b.f7168b;
     }
 }

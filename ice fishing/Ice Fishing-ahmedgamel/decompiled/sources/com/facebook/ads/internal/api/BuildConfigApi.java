@@ -2,7 +2,7 @@ package com.facebook.ads.internal.api;
 
 import android.content.Context;
 import com.facebook.ads.BuildConfig;
-import u1.h;
+import com.google.android.gms.internal.ads.Wv;
 
 /* loaded from: classes.dex */
 public class BuildConfigApi {
@@ -11,7 +11,7 @@ public class BuildConfigApi {
     static final String UNITY_VERSION_SUFIX = "-unity";
 
     public static String getVersionName(Context context) {
-        return isUnity(context) ? h.g(new StringBuilder(), BuildConfig.VERSION_NAME, UNITY_VERSION_SUFIX) : BuildConfig.VERSION_NAME;
+        return isUnity(context) ? Wv.i(new StringBuilder(), BuildConfig.VERSION_NAME, UNITY_VERSION_SUFIX) : BuildConfig.VERSION_NAME;
     }
 
     public static boolean isDebug() {

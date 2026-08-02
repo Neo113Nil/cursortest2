@@ -13,111 +13,111 @@ import java.io.OutputStream;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    private static final String f8356a = "AtomicFile";
+    private static final String f9142a = "AtomicFile";
 
     /* renamed from: b, reason: collision with root package name */
-    private final File f8357b;
+    private final File f9143b;
 
     /* renamed from: c, reason: collision with root package name */
-    private final File f8358c;
+    private final File f9144c;
 
     public static final class a extends OutputStream {
 
         /* renamed from: a, reason: collision with root package name */
-        private final FileOutputStream f8363a;
+        private final FileOutputStream f9149a;
 
         /* renamed from: b, reason: collision with root package name */
-        private boolean f8364b = false;
+        private boolean f9150b = false;
 
         public a(File file) {
-            this.f8363a = new FileOutputStream(file);
+            this.f9149a = new FileOutputStream(file);
         }
 
         @Override // java.io.OutputStream, java.io.Closeable, java.lang.AutoCloseable
         public final void close() {
-            if (this.f8364b) {
+            if (this.f9150b) {
                 return;
             }
-            this.f8364b = true;
+            this.f9150b = true;
             flush();
             try {
-                this.f8363a.getFD().sync();
+                this.f9149a.getFD().sync();
             } catch (IOException e9) {
-                Log.w(b.f8356a, "Failed to sync file descriptor:", e9);
+                Log.w(b.f9142a, "Failed to sync file descriptor:", e9);
             }
-            this.f8363a.close();
+            this.f9149a.close();
         }
 
         @Override // java.io.OutputStream, java.io.Flushable
         public final void flush() {
-            this.f8363a.flush();
+            this.f9149a.flush();
         }
 
         @Override // java.io.OutputStream
         public final void write(int i) {
-            this.f8363a.write(i);
+            this.f9149a.write(i);
         }
 
         @Override // java.io.OutputStream
         public final void write(byte[] bArr) {
-            this.f8363a.write(bArr);
+            this.f9149a.write(bArr);
         }
 
         @Override // java.io.OutputStream
-        public final void write(byte[] bArr, int i, int i6) {
-            this.f8363a.write(bArr, i, i6);
+        public final void write(byte[] bArr, int i, int i4) {
+            this.f9149a.write(bArr, i, i4);
         }
     }
 
     public b(File file) {
-        this.f8357b = file;
-        this.f8358c = new File(file.getPath() + ".bak");
+        this.f9143b = file;
+        this.f9144c = new File(file.getPath() + ".bak");
     }
 
     private void d() {
-        if (this.f8358c.exists()) {
-            this.f8357b.delete();
-            this.f8358c.renameTo(this.f8357b);
+        if (this.f9144c.exists()) {
+            this.f9143b.delete();
+            this.f9144c.renameTo(this.f9143b);
         }
     }
 
     public final void a() {
-        this.f8357b.delete();
-        this.f8358c.delete();
+        this.f9143b.delete();
+        this.f9144c.delete();
     }
 
     public final OutputStream b() {
-        if (this.f8357b.exists()) {
-            if (this.f8358c.exists()) {
-                this.f8357b.delete();
-            } else if (!this.f8357b.renameTo(this.f8358c)) {
-                Log.w(f8356a, "Couldn't rename file " + this.f8357b + " to backup file " + this.f8358c);
+        if (this.f9143b.exists()) {
+            if (this.f9144c.exists()) {
+                this.f9143b.delete();
+            } else if (!this.f9143b.renameTo(this.f9144c)) {
+                Log.w(f9142a, "Couldn't rename file " + this.f9143b + " to backup file " + this.f9144c);
             }
         }
         try {
-            return new a(this.f8357b);
+            return new a(this.f9143b);
         } catch (FileNotFoundException e9) {
-            if (!this.f8357b.getParentFile().mkdirs()) {
-                throw new IOException("Couldn't create directory " + this.f8357b, e9);
+            if (!this.f9143b.getParentFile().mkdirs()) {
+                throw new IOException("Couldn't create directory " + this.f9143b, e9);
             }
             try {
-                return new a(this.f8357b);
+                return new a(this.f9143b);
             } catch (FileNotFoundException e10) {
-                throw new IOException("Couldn't create " + this.f8357b, e10);
+                throw new IOException("Couldn't create " + this.f9143b, e10);
             }
         }
     }
 
     public final InputStream c() {
-        if (this.f8358c.exists()) {
-            this.f8357b.delete();
-            this.f8358c.renameTo(this.f8357b);
+        if (this.f9144c.exists()) {
+            this.f9143b.delete();
+            this.f9144c.renameTo(this.f9143b);
         }
-        return new FileInputStream(this.f8357b);
+        return new FileInputStream(this.f9143b);
     }
 
     public final void a(OutputStream outputStream) {
         outputStream.close();
-        this.f8358c.delete();
+        this.f9144c.delete();
     }
 }

@@ -35,12 +35,12 @@ public final class f implements k {
         preventDefault(false);
     }
 
-    public final void setDiscard(boolean z3) {
-        this.discard = z3;
+    public final void setDiscard(boolean z6) {
+        this.discard = z6;
     }
 
-    public final void setPreventDefault(boolean z3) {
-        this.isPreventDefault = z3;
+    public final void setPreventDefault(boolean z6) {
+        this.isPreventDefault = z6;
     }
 
     @Override // i5.k
@@ -49,12 +49,12 @@ public final class f implements k {
     }
 
     @Override // i5.k
-    public void preventDefault(boolean z3) {
-        com.onesignal.debug.internal.logging.b.debug$default("NotificationReceivedEvent.preventDefault(" + z3 + ')', null, 2, null);
-        if (this.isPreventDefault && z3) {
+    public void preventDefault(boolean z6) {
+        com.onesignal.debug.internal.logging.b.debug$default("NotificationReceivedEvent.preventDefault(" + z6 + ')', null, 2, null);
+        if (this.isPreventDefault && z6) {
             getNotification().getDisplayWaiter().wake(Boolean.FALSE);
         }
         this.isPreventDefault = true;
-        this.discard = z3;
+        this.discard = z6;
     }
 }

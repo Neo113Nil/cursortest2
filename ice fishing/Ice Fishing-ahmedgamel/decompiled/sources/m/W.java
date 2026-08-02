@@ -2,9 +2,9 @@ package m;
 
 /* loaded from: classes.dex */
 public interface W {
-    void o(int i);
+    void k(int i);
 
-    void y(int i);
+    void l(int i);
 
-    void z(int i, float f3);
+    void m(int i, float f2);
 }

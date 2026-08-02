@@ -1,27 +1,27 @@
 package X;
 
-import a8.InterfaceC0447a;
+import a8.InterfaceC0451a;
 
 /* loaded from: classes.dex */
 public final class v {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ InterfaceC0447a f3553a;
+    public final /* synthetic */ InterfaceC0451a f3715a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final /* synthetic */ kotlin.jvm.internal.p f3554b;
+    public final /* synthetic */ kotlin.jvm.internal.p f3716b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final /* synthetic */ kotlin.jvm.internal.r f3555c;
+    public final /* synthetic */ kotlin.jvm.internal.r f3717c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final /* synthetic */ D f3556d;
+    public final /* synthetic */ D f3718d;
 
-    public v(InterfaceC0447a interfaceC0447a, kotlin.jvm.internal.p pVar, kotlin.jvm.internal.r rVar, D d2) {
-        this.f3553a = interfaceC0447a;
-        this.f3554b = pVar;
-        this.f3555c = rVar;
-        this.f3556d = d2;
+    public v(InterfaceC0451a interfaceC0451a, kotlin.jvm.internal.p pVar, kotlin.jvm.internal.r rVar, D d9) {
+        this.f3715a = interfaceC0451a;
+        this.f3716b = pVar;
+        this.f3717c = rVar;
+        this.f3718d = d9;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -35,45 +35,45 @@ public final class v {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object a(C0412e c0412e, B7.c cVar) {
+    public final Object a(C0416e c0416e, B7.c cVar) {
         u uVar;
         int i;
-        D d2;
+        D d9;
         a8.d dVar;
         kotlin.jvm.internal.p pVar;
         kotlin.jvm.internal.r rVar;
         I7.p pVar2;
-        InterfaceC0447a interfaceC0447a;
-        InterfaceC0447a interfaceC0447a2;
-        D d9;
+        InterfaceC0451a interfaceC0451a;
+        InterfaceC0451a interfaceC0451a2;
+        D d10;
         Object obj;
         kotlin.jvm.internal.r rVar2;
         try {
             if (cVar instanceof u) {
                 uVar = (u) cVar;
-                int i6 = uVar.f3545A;
-                if ((i6 & Integer.MIN_VALUE) != 0) {
-                    uVar.f3545A = i6 - Integer.MIN_VALUE;
-                    Object obj2 = uVar.f3551y;
-                    A7.a aVar = A7.a.f58n;
-                    i = uVar.f3545A;
+                int i4 = uVar.f3707A;
+                if ((i4 & Integer.MIN_VALUE) != 0) {
+                    uVar.f3707A = i4 - Integer.MIN_VALUE;
+                    Object obj2 = uVar.f3713y;
+                    A7.a aVar = A7.a.f215n;
+                    i = uVar.f3707A;
                     if (i != 0) {
-                        com.bumptech.glide.d.k(obj2);
-                        uVar.f3546n = c0412e;
-                        InterfaceC0447a interfaceC0447a3 = this.f3553a;
-                        uVar.f3547u = interfaceC0447a3;
-                        kotlin.jvm.internal.p pVar3 = this.f3554b;
-                        uVar.f3548v = pVar3;
-                        kotlin.jvm.internal.r rVar3 = this.f3555c;
-                        uVar.f3549w = rVar3;
-                        d2 = this.f3556d;
-                        uVar.f3550x = d2;
-                        uVar.f3545A = 1;
-                        dVar = (a8.d) interfaceC0447a3;
+                        Q3.b.s(obj2);
+                        uVar.f3708n = c0416e;
+                        InterfaceC0451a interfaceC0451a3 = this.f3715a;
+                        uVar.f3709u = interfaceC0451a3;
+                        kotlin.jvm.internal.p pVar3 = this.f3716b;
+                        uVar.f3710v = pVar3;
+                        kotlin.jvm.internal.r rVar3 = this.f3717c;
+                        uVar.f3711w = rVar3;
+                        d9 = this.f3718d;
+                        uVar.f3712x = d9;
+                        uVar.f3707A = 1;
+                        dVar = (a8.d) interfaceC0451a3;
                         if (dVar.c(uVar) != aVar) {
                             pVar = pVar3;
                             rVar = rVar3;
-                            pVar2 = c0412e;
+                            pVar2 = c0416e;
                         }
                         return aVar;
                     }
@@ -82,97 +82,97 @@ public final class v {
                             if (i != 3) {
                                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                             }
-                            obj = uVar.f3548v;
-                            rVar2 = (kotlin.jvm.internal.r) uVar.f3547u;
-                            interfaceC0447a = (InterfaceC0447a) uVar.f3546n;
+                            obj = uVar.f3710v;
+                            rVar2 = (kotlin.jvm.internal.r) uVar.f3709u;
+                            interfaceC0451a = (InterfaceC0451a) uVar.f3708n;
                             try {
-                                com.bumptech.glide.d.k(obj2);
-                                rVar2.f38717n = obj;
+                                Q3.b.s(obj2);
+                                rVar2.f38644n = obj;
                                 rVar = rVar2;
-                                Object obj3 = rVar.f38717n;
-                                ((a8.d) interfaceC0447a).d(null);
+                                Object obj3 = rVar.f38644n;
+                                ((a8.d) interfaceC0451a).d(null);
                                 return obj3;
                             } catch (Throwable th) {
                                 th = th;
-                                ((a8.d) interfaceC0447a).d(null);
+                                ((a8.d) interfaceC0451a).d(null);
                                 throw th;
                             }
                         }
-                        d9 = (D) uVar.f3548v;
-                        rVar = (kotlin.jvm.internal.r) uVar.f3547u;
-                        interfaceC0447a2 = (InterfaceC0447a) uVar.f3546n;
+                        d10 = (D) uVar.f3710v;
+                        rVar = (kotlin.jvm.internal.r) uVar.f3709u;
+                        interfaceC0451a2 = (InterfaceC0451a) uVar.f3708n;
                         try {
-                            com.bumptech.glide.d.k(obj2);
-                            if (!kotlin.jvm.internal.h.a(obj2, rVar.f38717n)) {
-                                interfaceC0447a = interfaceC0447a2;
-                                Object obj32 = rVar.f38717n;
-                                ((a8.d) interfaceC0447a).d(null);
+                            Q3.b.s(obj2);
+                            if (!kotlin.jvm.internal.h.a(obj2, rVar.f38644n)) {
+                                interfaceC0451a = interfaceC0451a2;
+                                Object obj32 = rVar.f38644n;
+                                ((a8.d) interfaceC0451a).d(null);
                                 return obj32;
                             }
-                            uVar.f3546n = interfaceC0447a2;
-                            uVar.f3547u = rVar;
-                            uVar.f3548v = obj2;
-                            uVar.f3545A = 3;
-                            if (d9.j(obj2, uVar) != aVar) {
+                            uVar.f3708n = interfaceC0451a2;
+                            uVar.f3709u = rVar;
+                            uVar.f3710v = obj2;
+                            uVar.f3707A = 3;
+                            if (d10.j(obj2, uVar) != aVar) {
                                 obj = obj2;
                                 rVar2 = rVar;
-                                interfaceC0447a = interfaceC0447a2;
-                                rVar2.f38717n = obj;
+                                interfaceC0451a = interfaceC0451a2;
+                                rVar2.f38644n = obj;
                                 rVar = rVar2;
-                                Object obj322 = rVar.f38717n;
-                                ((a8.d) interfaceC0447a).d(null);
+                                Object obj322 = rVar.f38644n;
+                                ((a8.d) interfaceC0451a).d(null);
                                 return obj322;
                             }
                             return aVar;
                         } catch (Throwable th2) {
                             th = th2;
-                            interfaceC0447a = interfaceC0447a2;
-                            ((a8.d) interfaceC0447a).d(null);
+                            interfaceC0451a = interfaceC0451a2;
+                            ((a8.d) interfaceC0451a).d(null);
                             throw th;
                         }
                     }
-                    D d10 = uVar.f3550x;
-                    rVar = uVar.f3549w;
-                    pVar = (kotlin.jvm.internal.p) uVar.f3548v;
-                    ?? r72 = (InterfaceC0447a) uVar.f3547u;
-                    I7.p pVar4 = (I7.p) uVar.f3546n;
-                    com.bumptech.glide.d.k(obj2);
-                    d2 = d10;
+                    D d11 = uVar.f3712x;
+                    rVar = uVar.f3711w;
+                    pVar = (kotlin.jvm.internal.p) uVar.f3710v;
+                    ?? r72 = (InterfaceC0451a) uVar.f3709u;
+                    I7.p pVar4 = (I7.p) uVar.f3708n;
+                    Q3.b.s(obj2);
+                    d9 = d11;
                     pVar2 = pVar4;
                     dVar = r72;
-                    if (!pVar.f38715n) {
+                    if (!pVar.f38642n) {
                         throw new IllegalStateException("InitializerApi.updateData should not be called after initialization is complete.");
                     }
-                    Object obj4 = rVar.f38717n;
-                    uVar.f3546n = dVar;
-                    uVar.f3547u = rVar;
-                    uVar.f3548v = d2;
-                    uVar.f3549w = null;
-                    uVar.f3550x = null;
-                    uVar.f3545A = 2;
+                    Object obj4 = rVar.f38644n;
+                    uVar.f3708n = dVar;
+                    uVar.f3709u = rVar;
+                    uVar.f3710v = d9;
+                    uVar.f3711w = null;
+                    uVar.f3712x = null;
+                    uVar.f3707A = 2;
                     Object invoke = pVar2.invoke(obj4, uVar);
                     if (invoke != aVar) {
-                        interfaceC0447a2 = dVar;
+                        interfaceC0451a2 = dVar;
                         obj2 = invoke;
-                        d9 = d2;
-                        if (!kotlin.jvm.internal.h.a(obj2, rVar.f38717n)) {
+                        d10 = d9;
+                        if (!kotlin.jvm.internal.h.a(obj2, rVar.f38644n)) {
                         }
                     }
                     return aVar;
                 }
             }
-            if (!pVar.f38715n) {
+            if (!pVar.f38642n) {
             }
         } catch (Throwable th3) {
             th = th3;
-            interfaceC0447a = dVar;
-            ((a8.d) interfaceC0447a).d(null);
+            interfaceC0451a = dVar;
+            ((a8.d) interfaceC0451a).d(null);
             throw th;
         }
         uVar = new u(this, cVar);
-        Object obj22 = uVar.f3551y;
-        A7.a aVar2 = A7.a.f58n;
-        i = uVar.f3545A;
+        Object obj22 = uVar.f3713y;
+        A7.a aVar2 = A7.a.f215n;
+        i = uVar.f3707A;
         if (i != 0) {
         }
     }
